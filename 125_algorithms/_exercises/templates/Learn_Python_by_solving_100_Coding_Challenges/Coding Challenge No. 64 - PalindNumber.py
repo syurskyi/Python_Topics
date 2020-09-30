@@ -8,9 +8,9 @@ class Solution:
     :type x: int
     :rtype: bool
     """
-    def isPalindrome(self, x):
+    ___ isPalindrome(self, x):
         if x < 0:
-            return False
+            r_ False
         div = 1
         while int(x/div) >= 10:
             div = div * 10
@@ -18,10 +18,10 @@ class Solution:
             left = int(x / div)
             right = x % 10
             if left != right:
-                return False
+                r_ False
             x = int(( x % div ) / 10)
             div = int(div / 100)
-        return True
+        r_ True
 
 
 Solution().isPalindrome(16461)

@@ -12,7 +12,7 @@ class Solution(object
         image = A
         __ not image or not image[0]: r_
         m, n = le.(image), le.(image[0])
-        ___ i in range(m
+        ___ i __ range(m
             j, l = 0, n-1
             w___ j <= l:
                 image[i][j], image[i][l] = image[i][l], image[i][j]
@@ -27,9 +27,9 @@ class Solution(object
         testCases = [
             [[1,1,0],[1,0,1],[0,0,0]],
         ]
-        ___ image in testCases:
+        ___ image __ testCases:
             res = self.flipAndInvertImage(image)
             print('res: %s' % res)
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

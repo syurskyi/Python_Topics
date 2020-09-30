@@ -20,9 +20,9 @@ class BinaryIndexTree(object
     ___ __init__(self, nums
         """BIT 0 is dummy root"""
         n = le.(nums)
-        self.nums = [0 ___ _ in xrange(n+1)]
-        self.N = [0 ___ _ in xrange(n+1)]
-        ___ i, v in enumerate(nums
+        self.nums = [0 ___ _ __ xrange(n+1)]
+        self.N = [0 ___ _ __ xrange(n+1)]
+        ___ i, v __ enumerate(nums
             self.set(i+1, v)
 
     ___ _lowbit(self, a

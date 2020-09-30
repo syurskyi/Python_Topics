@@ -32,13 +32,13 @@ class AllYourBaseTests(unittest.TestCase
         self.assertEqual(rebase(97, [3, 46, 60], 73), [6, 10, 45])
 
     ___ test_empty_list(self
-        self.assertEqual(rebase(2, [], 10), [])
+        self.assertEqual(rebase(2,   # list, 10), [])
 
     ___ test_single_zero(self
-        self.assertEqual(rebase(10, [0], 2), [])
+        self.assertEqual(rebase(10, [0], 2),   # list)
 
     ___ test_multiple_zeroes(self
-        self.assertEqual(rebase(10, [0, 0, 0], 2), [])
+        self.assertEqual(rebase(10, [0, 0, 0], 2),   # list)
 
     ___ test_leading_zeros(self
         self.assertEqual(rebase(7, [0, 6, 0], 10), [4, 2])
@@ -49,7 +49,7 @@ class AllYourBaseTests(unittest.TestCase
 
     ___ test_input_base_is_zero(self
         with self.assertRaisesWithMessage(ValueError
-            rebase(0, [], 10)
+            rebase(0,   # list, 10)
 
     ___ test_input_base_is_negative(self
         with self.assertRaisesWithMessage(ValueError
@@ -90,5 +90,5 @@ class AllYourBaseTests(unittest.TestCase
         r_ self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

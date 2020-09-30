@@ -49,7 +49,7 @@ class Solution:
             r_ 1
 
         ret = 0
-        ___ c in candidates:
+        ___ c __ candidates:
             __ c % i __ 0 or i % c __ 0:
                 candidates.remove(c)
                 ret += self.dfs(candidates, i+1, N)
@@ -57,5 +57,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().countArrangement(2) __ 2

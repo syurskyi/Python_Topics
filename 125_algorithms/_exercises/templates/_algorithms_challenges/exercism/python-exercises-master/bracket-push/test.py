@@ -53,5 +53,5 @@ class BracketPushTests(unittest.TestCase
                  "x} &... x^2 \\end{array}\\right)")), True)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

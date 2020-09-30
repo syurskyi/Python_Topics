@@ -8,7 +8,7 @@ class TreeNode(object
         self.folder = folder
         self.content = ''
         self.children = {}
-        self.childFolders = []
+        self.childFolders =   # list
         self.isFile = False
 
 class FileSystem(object
@@ -19,9 +19,9 @@ class FileSystem(object
         path = path[1:]
         arr = path.split('/')
         __ arr[0] __ '':
-            arr = []
+            arr =   # list
         node = self.root
-        ___ folder in arr:
+        ___ folder __ arr:
             node = node.children[folder]
         node.childFolders.sort()
         __ node.isFile:
@@ -33,8 +33,8 @@ class FileSystem(object
         path = path[1:]
         arr = path.split('/')
         node = self.root
-        ___ folder in arr:
-            __ folder in node.children:
+        ___ folder __ arr:
+            __ folder __ node.children:
                 node = node.children[folder]
             ____
                 newNode = TreeNode(folder)
@@ -48,15 +48,15 @@ class FileSystem(object
         file = arr[-1]
         arr = arr[:-1]
         node = self.root
-        ___ folder in arr:
-            __ folder in node.children:
+        ___ folder __ arr:
+            __ folder __ node.children:
                 node = node.children[folder]
             ____
                 newNode = TreeNode(folder)
                 node.children[folder] = newNode
                 node.childFolders.append(folder)
                 node = newNode
-        __ file in node.children:
+        __ file __ node.children:
             node.children[file].content += content
         ____
             newNode = TreeNode(file)
@@ -69,6 +69,6 @@ class FileSystem(object
         filePath = filePath[1:]
         arr = filePath.split('/')
         node = self.root
-        ___ folder in arr:
+        ___ folder __ arr:
             node = node.children[folder]
         r_ node.content

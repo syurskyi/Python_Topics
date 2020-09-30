@@ -15,21 +15,21 @@ class Solution(object
         :type positions: List[List[int]]
         :rtype: List[int]
         """
-        res = []
-        intervals = []
+        res =   # list
+        intervals =   # list
         h = 0
-        ___ pos in positions:
+        ___ pos __ positions:
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
-            h = max(h, self.getHeight(intervals, cur))
+            h = ma.(h, self.getHeight(intervals, cur))
             res.append(h)
         r_ res
     
     ___ getHeight(self, intervals, cur
         preMaxHeight = 0
-        ___ i in intervals:
+        ___ i __ intervals:
             __ i.end <= cur.start: continue
             __ i.start >= cur.end: continue
-            preMaxHeight = max(preMaxHeight, i.height)
+            preMaxHeight = ma.(preMaxHeight, i.height)
         cur.height += preMaxHeight
         intervals.append(cur)
         r_ cur.height
@@ -40,11 +40,11 @@ class Solution(object
             [[100, 100], [200, 100]],
             [[6, 1], [9, 2], [2, 4]],
         ]
-        ___ positions in testCases:
+        ___ positions __ testCases:
             print('positions: %s' % positions)
             result = self.fallingSquares(positions)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

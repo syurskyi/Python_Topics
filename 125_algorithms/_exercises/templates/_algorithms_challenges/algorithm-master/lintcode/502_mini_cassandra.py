@@ -18,7 +18,7 @@ class MiniCassandra:
     @return: nothing
     """
     ___ insert(self, raw_key, column_key, column_value
-        __ raw_key not in self.storage:
+        __ raw_key not __ self.storage:
             self.storage[raw_key] = {}
 
         self.storage[raw_key][column_key] = Column(column_key, column_value)
@@ -30,12 +30,12 @@ class MiniCassandra:
     @return: a list of Columns
     """
     ___ query(self, raw_key, column_start, column_end
-        __ raw_key not in self.storage:
-            r_ []
+        __ raw_key not __ self.storage:
+            r_   # list
 
         result = [
             column
-            ___ column_key, column in self.storage[raw_key].items()
+            ___ column_key, column __ self.storage[raw_key].items()
             __ column_start <= column_key <= column_end
         ]
 

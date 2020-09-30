@@ -5,17 +5,17 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not a or not b:
             r_ ans
 
         freq = {}
 
-        ___ x in a:
+        ___ x __ a:
             freq[x] = freq.get(x, 0) + 1
 
-        ___ x in b:
+        ___ x __ b:
             __ not freq.get(x
                 continue
 
@@ -32,7 +32,7 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not a or not b:
             r_ ans

@@ -30,7 +30,7 @@ class Solution(object
             r_ 0
         leftHeight = self.getHeight(root.left)
         rightHeight = self.getHeight(root.right)
-        r_ max(leftHeight, rightHeight) + 1
+        r_ ma.(leftHeight, rightHeight) + 1
     
     ___ test(self
         pass

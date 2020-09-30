@@ -1,7 +1,7 @@
 class Solution(object
   ___ removeBoxes(self, A
     N = le.(A)
-    memo = [[[0] * N ___ _ in range(N)] ___ _ in range(N)]
+    memo = [[[0] * N ___ _ __ range(N)] ___ _ __ range(N)]
 
     ___ dp(i, j, k
       __ i > j: r_ 0
@@ -11,9 +11,9 @@ class Solution(object
           m += 1
         i, k = m, k + m - i
         ans = dp(i + 1, j, 0) + (k + 1) ** 2
-        ___ m in range(i + 1, j + 1
+        ___ m __ range(i + 1, j + 1
           __ A[i] __ A[m]:
-            ans = max(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1))
+            ans = ma.(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1))
         memo[i][j][k] = ans
       r_ memo[i][j][k]
 

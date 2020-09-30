@@ -39,15 +39,15 @@ class Solution:
         not dfs from any cell, but dfs from the edges
         """
         m, n = le.(A), le.(A[0])
-        visited = [[False ___ _ in range(n)] ___ _ in range(m)]
-        ___ i in range(m
-            ___ j in range(n
+        visited = [[False ___ _ __ range(n)] ___ _ __ range(m)]
+        ___ i __ range(m
+            ___ j __ range(n
                 __ not visited[i][j] and A[i][j] __ 1 and (i __ 0 or j __ 0 or i __ m - 1 or j __ n - 1
                     self.dfs(A, i, j, visited)
 
         ret = 0
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 __ A[i][j] __ 1 and not visited[i][j]:
                     ret += 1
         r_ ret
@@ -55,7 +55,7 @@ class Solution:
     ___ dfs(self, A, i, j, visited
         m, n = le.(A), le.(A[0])
         visited[i][j] = True
-        ___ di, dj in dirs:
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n and not visited[I][J] and A[I][J] __ 1:
@@ -71,9 +71,9 @@ class SolutionError:
         dfs coloring
         """
         m, n = le.(A), le.(A[0])
-        visited = [[None ___ _ in range(n)] ___ _ in range(m)]  # 0 not off, 1 off
-        ___ i in range(m
-            ___ j in range(n
+        visited = [[None ___ _ __ range(n)] ___ _ __ range(m)]  # 0 not off, 1 off
+        ___ i __ range(m
+            ___ j __ range(n
                 __ not visited[i][j] and A[i][j] __ 1:
                     self.dfs(A, i, j, visited)
         r_ self.ret
@@ -81,7 +81,7 @@ class SolutionError:
     ___ dfs(self, A, i, j, visited
         m, n = le.(A), le.(A[0])
         visited[i][j] = 0
-        ___ di, dj in dirs:
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ not (0 <= I < m and 0 <= J < n

@@ -46,8 +46,8 @@ class Solution:
         :rtype: List[int]
         """
         h = {}  # num -> next greater element
-        stk = []
-        ___ e in nums2[::-1]:
+        stk =   # list
+        ___ e __ nums2[::-1]:
             w___ stk and stk[-1] <= e:
                 # until stk[-1] > e
                 stk.p..
@@ -57,5 +57,5 @@ class Solution:
 
         r_ [
             h[q]
-            ___ q in nums1
+            ___ q __ nums1
         ]

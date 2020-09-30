@@ -20,15 +20,15 @@ class Solution:
     # @param triangle, a list of lists of integers
     # @return an integer
     ___ minimumTotal(self, triangle
-        t = [[0 ___ col in row] ___ row in triangle]  # Initialize t
+        t = [[0 ___ col __ row] ___ row __ triangle]  # Initialize t
         n = le.(triangle)
         row = n - 1
         w___ row >= 0:
             __ row __ n - 1:
-                ___ col in range(row + 1
+                ___ col __ range(row + 1
                     t[row][col] = triangle[row][col]
             ____
-                ___ col in range(row + 1
+                ___ col __ range(row + 1
                     minsum = min(t[row + 1][col], t[row + 1][col + 1])
                     t[row][col] = triangle[row][col] + minsum
             row -= 1

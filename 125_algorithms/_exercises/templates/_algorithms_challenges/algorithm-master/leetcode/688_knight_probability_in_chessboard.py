@@ -19,12 +19,12 @@ class Solution:
         dp = collections.defaultdict(int)
         dp[r, c] = 1.0
 
-        ___ _ in range(k
+        ___ _ __ range(k
             nxt = collections.defaultdict(int)
 
-            ___ x in range(n
-                ___ y in range(n
-                    ___ dx, dy in (
+            ___ x __ range(n
+                ___ y __ range(n
+                    ___ dx, dy __ (
                         (-1, -2),
                         ( 1, -2),
                         (-2, -1),
@@ -62,15 +62,15 @@ class Solution:
         __ n __ 1 and k __ 0:
             r_ 1.0
 
-        queue, _queue = [(r, c)], []
+        queue, _queue = [(r, c)],   # list
         total = 8 ** k
         valid = 0
 
         w___ queue and k:
             k -= 1
 
-            ___ x, y in queue:
-                ___ dx, dy in (
+            ___ x, y __ queue:
+                ___ dx, dy __ (
                     (-1, -2),
                     ( 1, -2),
                     (-2, -1),
@@ -92,6 +92,6 @@ class Solution:
                     __ k > 0:
                         _queue.append((_x, _y))
 
-            queue, _queue = _queue, []
+            queue, _queue = _queue,   # list
 
         r_ valid / total

@@ -25,7 +25,7 @@ ___ csv2dict(archive='tweets.csv'
         sys.exit(1)
 
     with open(archive, 'r') as csvfile:
-        ___ row in csv.DictReader(csvfile
+        ___ row __ csv.DictReader(csvfile
             yield row
 
 
@@ -40,15 +40,15 @@ ___ print_header(
 ___ print_results(title, counter
     print(title + ':')
     print('-' * width)
-    ___ key, count in counter.most_common(top
+    ___ key, count __ counter.most_common(top
         print(fmt.format(key, count))
     print()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     data = csv2dict()
 
-    ___ row in data:
+    ___ row __ data:
         __ row['in_reply_to_status_id']:
             tweet_type = 'Reply'
         ____ row['retweeted_status_id']:
@@ -59,19 +59,19 @@ __ __name__ __ '__main__':
 
         matching_handles = regex_handle.findall(row['text'])
         __ matching_handles:
-            ___ handle in matching_handles:
+            ___ handle __ matching_handles:
                 mentions[handle.lower()] += 1
 
         matching_hashtags = regex_hashtag.findall(row['text'])
         __ matching_hashtags:
-            ___ hashtag in matching_hashtags:
+            ___ hashtag __ matching_hashtags:
                 hashtags[hashtag.lower()] += 1
 
         month = row['timestamp'][:7]
         activity[month] += 1
 
         src = get_source(r'\1', row['source'])
-        __ bot in src:
+        __ bot __ src:
             src += ' (our bot)'
         sources[src] += 1
 

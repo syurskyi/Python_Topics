@@ -7,7 +7,7 @@ class Solution(object
     ans = 0
     points.sort(key=lambda p: p[1])
     end = float("-inf")
-    ___ s, e in points:
+    ___ s, e __ points:
       __ s > end:
         ans += 1
         end = e

@@ -24,7 +24,7 @@ class Solution:
         :return: integer
         """
         result = 0
-        ___ ind, val in enumerate(s
+        ___ ind, val __ enumerate(s
             __ ind > 0 and roman2int[val] > roman2int[s[ind-1]]:  # e.g. XIV
                 result -= roman2int[s[ind-1]]  # reverse last action
                 result += roman2int[val]-roman2int[s[ind-1]]

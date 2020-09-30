@@ -223,5 +223,5 @@ class TransposeTests(unittest.TestCase
         )
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

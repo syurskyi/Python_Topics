@@ -5,7 +5,7 @@ from prime_factors ______ prime_factors
 
 class PrimeFactorsTest(unittest.TestCase
     ___ test_1(self
-        self.assertEqual([], prime_factors(1))
+        self.assertEqual(  # list, prime_factors(1))
 
     ___ test_2(self
         self.assertEqual([2], prime_factors(2))
@@ -37,5 +37,5 @@ class PrimeFactorsTest(unittest.TestCase
     ___ test_93819012551(self
         self.assertEqual([11, 9539, 894119], prime_factors(93819012551))
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

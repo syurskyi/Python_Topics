@@ -11,14 +11,14 @@
 # Solutions:
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def preorderTraversal(root):
-        result = []
+    ___ preorderTraversal(root):
+        result =   # list
         stack = [root]
 
         while stack:
@@ -27,8 +27,8 @@ class Solution:
                 result.append(node.val)
                 stack.append(node.right)
                 stack.append(node.left)
-        return result
+        r_ result
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution.preorderTraversal(BT) )

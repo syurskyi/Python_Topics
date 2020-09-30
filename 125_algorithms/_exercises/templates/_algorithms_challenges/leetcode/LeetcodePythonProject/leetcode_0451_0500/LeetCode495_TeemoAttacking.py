@@ -13,7 +13,7 @@ class Solution(object
         """
         __ not timeSeries: r_ 0
         res = 0
-        ___ i in range(1, le.(timeSeries)):
+        ___ i __ range(1, le.(timeSeries)):
             res += min(timeSeries[i]-timeSeries[i-1], duration)
         res += duration
         r_ res
@@ -27,11 +27,11 @@ class Solution(object
         result = 0
         prev = 0
         maxTime = 0
-        ___ time in timeSeries:
+        ___ time __ timeSeries:
             __ maxTime < time:
                 result += maxTime - prev
                 prev = time
-            maxTime = max(maxTime, time+duration)
+            maxTime = ma.(maxTime, time+duration)
         result += maxTime-prev
         r_ result
     
@@ -46,12 +46,12 @@ class Solution(object
                 2,
             ],
         ]
-        ___ timeSeries, duration in testCases:
+        ___ timeSeries, duration __ testCases:
             print('timeSeries: %s' % timeSeries)
             print('duration: %s' % duration)
             result = self.findPoisonedDurationAnother(timeSeries, duration)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

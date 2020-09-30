@@ -7,7 +7,7 @@ from rectangles ______ count
 
 class WordTest(unittest.TestCase
     ___ test_no_rows(self
-        self.assertEqual(count([]), 0)
+        self.assertEqual(count(  # list), 0)
 
     ___ test_no_columns(self
         self.assertEqual(count(['']), 0)
@@ -89,5 +89,5 @@ class WordTest(unittest.TestCase
         self.assertEqual(count(lines), 60)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

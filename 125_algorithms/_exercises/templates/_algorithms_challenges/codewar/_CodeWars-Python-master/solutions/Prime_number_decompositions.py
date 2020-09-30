@@ -8,7 +8,7 @@ ___ getAllPrimeFactors(n
     __ n __ 1:
         r_ [1]
 
-    result = []
+    result =   # list
     __ isvalidparameter(n
         factor = 2
         w___ n > 1:
@@ -23,8 +23,8 @@ ___ getUniquePrimeFactorsWithCount(n
     result = [[], []]
     __ isvalidparameter(n
         factors = getAllPrimeFactors(n)
-        ___ f in factors:
-            __ f in result[0]:
+        ___ f __ factors:
+            __ f __ result[0]:
                 result[1][-1] += 1
             ____
                 result[0].append(f)
@@ -33,7 +33,7 @@ ___ getUniquePrimeFactorsWithCount(n
 
 
 ___ getUniquePrimeFactorsWithProducts(n
-    result = []
+    result =   # list
     __ isvalidparameter(n
         factors = getUniquePrimeFactorsWithCount(n)
         result = map(lambda x: x[0] ** x[1], zip(factors[0], factors[1]))

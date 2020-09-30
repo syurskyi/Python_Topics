@@ -20,7 +20,7 @@ class Solution:
         :type num2: str
         :rtype: str
         """
-        ret = []
+        ret =   # list
         # let num2 to be one has more digit
         __ le.(num1) > le.(num2
             num1, num2 = num2, num1
@@ -50,7 +50,7 @@ class Solution:
         r_ "".join(map(str, ret[::-1]))
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().addStrings("9999", "1") __ "10000"
     assert Solution().addStrings("9999", "9999") __ "19998"
     assert Solution().addStrings("23", "8") __ "31"

@@ -1,7 +1,7 @@
 # !/usr/bin/env python
 ______ datetime
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     age = (int(raw_input('Please enter your age:')))
     name = (str(raw_input('Please enter your name:')))
     year = (int(raw_input('Please enter the current year:')))

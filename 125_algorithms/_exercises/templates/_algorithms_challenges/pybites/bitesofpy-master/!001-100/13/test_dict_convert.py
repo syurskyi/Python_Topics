@@ -11,7 +11,7 @@ ___ test_dict2nt(
     assert nt.tags[2] __ 'Learn by Doing'
     assert nt.started.year __ 2016
 
-    assert nt.__class__.__base__ __ tuple
+    assert nt.__class__.__base__ __ tu..
     assert hasattr(nt, '_asdict')
 
 

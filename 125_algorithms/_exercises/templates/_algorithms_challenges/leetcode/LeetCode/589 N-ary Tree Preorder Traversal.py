@@ -26,7 +26,7 @@ class Solution:
         """
         reversely add the children to stk
         """
-        ret = []
+        ret =   # list
         __ not root:
             r_ ret
 
@@ -34,7 +34,7 @@ class Solution:
         w___ stk:
             cur = stk.p..
             ret.append(cur.val)
-            ___ c in reversed(cur.children
+            ___ c __ reversed(cur.children
                 stk.append(c)
 
         r_ ret

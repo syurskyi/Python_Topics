@@ -53,7 +53,7 @@ class Solution:
                 ____
                     break
 
-            ret = max(ret, j - i)
+            ret = ma.(ret, j - i)
             __ A[i] __ 0:
                 cnt_0 -= 1
             i += 1
@@ -61,5 +61,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) __ 6

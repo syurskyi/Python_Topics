@@ -58,5 +58,5 @@ class ProverbTest(unittest.TestCase
                 qualifier='horseshoe'), expected)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

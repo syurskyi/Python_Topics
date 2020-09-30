@@ -11,9 +11,9 @@ class Solution(object
         """
         code = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
         hashset = set()
-        ___ word in words:
+        ___ word __ words:
             tmp = ''
-            ___ c in word:
+            ___ c __ word:
                 tmp += code[ord(c)-ord('a')]
             hashset.add(tmp)
         r_ le.(hashset)
@@ -22,11 +22,11 @@ class Solution(object
         testCases = [
             ["gin", "zen", "gig", "msg"],
         ]
-        ___ words in testCases:
+        ___ words __ testCases:
             print('words: %s' % words)
             result = self.uniqueMorseRepresentations(words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

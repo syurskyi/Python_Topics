@@ -18,7 +18,7 @@ class Solution(object
         :rtype: List[TreeNode]
         """
         __ not root: r_ [None, None]
-        stack = []
+        stack =   # list
         root0 = root
         w___ root0:
             stack.append(root0)
@@ -41,7 +41,7 @@ class Solution(object
         root0 = root
         __ not node:
             r_ [root0, None]
-        stack = []
+        stack =   # list
         w___ node != root0:
             stack.append(root0)
             __ root0.val > node.val:
@@ -78,10 +78,10 @@ class Solution(object
                 3,
             ],
         ]
-        ___ root, v in testCases:
+        ___ root, v __ testCases:
             result = self.splitBST(root, v)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

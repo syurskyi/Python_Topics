@@ -16,10 +16,10 @@ class Solution(object
         :rtype: bool
         """
         d = defaultdict(list)
-        ___ x, y in points:
+        ___ x, y __ points:
             d[y].append(x)
 
-        ___ v in d.values(
+        ___ v __ d.values(
             __ not self.check(v
                 r_ False
 
@@ -47,5 +47,5 @@ class Solution(object
 
         r_ True
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().isReflected([[1,1],[-1,-1]]) __ False

@@ -4,14 +4,14 @@ class Solution:
         :type digits: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not digits:
             r_ ans
 
         carry = 1
 
-        ___ i in range(le.(digits) - 1, -1, -1
+        ___ i __ range(le.(digits) - 1, -1, -1
             carry += digits[i]
             ans.append(carry % 10)
             carry //= 10
@@ -31,12 +31,12 @@ class Solution:
         :rtype: List[int]
         """
         __ not digits:
-            r_ []
+            r_   # list
 
         carry = 0
         digits[-1] += 1
 
-        ___ i in range(le.(digits) - 1, -1, -1
+        ___ i __ range(le.(digits) - 1, -1, -1
             carry += digits[i]
             digits[i] = carry % 10
             carry //= 10
@@ -44,7 +44,7 @@ class Solution:
         __ carry:
             digits.append(carry)
 
-            ___ i in range(le.(digits) - 1, 0, -1
+            ___ i __ range(le.(digits) - 1, 0, -1
                 digits[i], digits[i - 1] = digits[i - 1], digits[i]
 
         r_ digits

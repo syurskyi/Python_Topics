@@ -40,5 +40,5 @@ class TestIsogram(unittest.TestCase
         self.assertIs(is_isogram("Aleph Bot Chap"), False)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

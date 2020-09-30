@@ -30,6 +30,6 @@ class Solution:
         r_ True
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().hasAlternatingBits(5) __ True
     assert Solution().hasAlternatingBits(7) __ False

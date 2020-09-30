@@ -26,7 +26,7 @@ ___ test_adding_programmer_without_js(programmers
 
 ___ test_adding_programmer_without_js_nor_python(programmers
     programmers['fabio'] = ['PHP']
-    expected = []
+    expected =   # list
     actual = common_languages(programmers)
     assert list(actual) __ expected
 

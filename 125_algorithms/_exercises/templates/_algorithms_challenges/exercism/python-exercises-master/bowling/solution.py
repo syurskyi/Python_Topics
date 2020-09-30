@@ -4,7 +4,7 @@ MAX_FRAME = 10
 class Frame(object
     ___ __init__(self, idx
         self.idx = idx
-        self.throws = []
+        self.throws =   # list
 
     @property
     ___ total_pins(self
@@ -41,8 +41,8 @@ class Frame(object
 class BowlingGame(object
     ___ __init__(self
         self.current_frame_idx = 0
-        self.bonus_throws = []
-        self.frames = [Frame(idx) ___ idx in range(MAX_FRAME)]
+        self.bonus_throws =   # list
+        self.frames = [Frame(idx) ___ idx __ range(MAX_FRAME)]
 
     @property
     ___ current_frame(self
@@ -50,8 +50,8 @@ class BowlingGame(object
 
     ___ next_throws(self, frame_idx
         """Return a frame's next throws in the form of a list."""
-        throws = []
-        ___ idx in range(frame_idx + 1, MAX_FRAME
+        throws =   # list
+        ___ idx __ range(frame_idx + 1, MAX_FRAME
             throws.extend(self.frames[idx].throws)
         throws.extend(self.bonus_throws)
         r_ throws
@@ -96,4 +96,4 @@ class BowlingGame(object
             raise IndexError(
                 "two bonuses must be rolled when the tenth frame is strike")
         r_ su.(frame.score(self.next_throws(frame.idx))
-                   ___ frame in self.frames)
+                   ___ frame __ self.frames)

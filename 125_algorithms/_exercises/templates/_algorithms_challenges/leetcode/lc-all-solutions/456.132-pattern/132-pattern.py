@@ -5,8 +5,8 @@ class Solution(object
     :rtype: bool
     """
     ak = float("-inf")
-    stack = []
-    ___ num in reversed(nums
+    stack =   # list
+    ___ num __ reversed(nums
       __ ak > num:
         r_ True
       w___ stack and stack[-1] < num:

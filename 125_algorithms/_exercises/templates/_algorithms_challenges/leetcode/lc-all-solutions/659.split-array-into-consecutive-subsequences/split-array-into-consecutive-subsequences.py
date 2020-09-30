@@ -5,9 +5,9 @@ class Solution(object
     :rtype: bool
     """
     d = collections.defaultdict(list)
-    ___ num in nums:
+    ___ num __ nums:
       __ d[num - 1]:
         heapq.heappush(d[num], heapq.heappop(d[num - 1]) + 1)
       ____
         heapq.heappush(d[num], 1)
-    r_ not any(length < 3 ___ length in su.(d.values(), []))
+    r_ not any(length < 3 ___ length __ su.(d.values(),   # list))

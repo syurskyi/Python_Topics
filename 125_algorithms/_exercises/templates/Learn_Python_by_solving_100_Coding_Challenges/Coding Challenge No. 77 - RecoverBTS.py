@@ -6,7 +6,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -15,7 +15,7 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return a tree node
-    def FindTwoNodes(self, root):
+    ___ FindTwoNodes(self, root):
         if root:
             self.FindTwoNodes(root.left)
             if self.prev and self.prev.val > root.val:
@@ -25,9 +25,9 @@ class Solution:
                 self.prev = root
                 self.FindTwoNodes(root.right)
 
-    def recoverTree(self, root):
+    ___ recoverTree(self, root):
         self.n1 = self.n2 = None
         self.prev = None
         self.FindTwoNodes(root)
         self.n1.val, self.n2.val = self.n2.val, self.n1.val
-        return root
+        r_ root

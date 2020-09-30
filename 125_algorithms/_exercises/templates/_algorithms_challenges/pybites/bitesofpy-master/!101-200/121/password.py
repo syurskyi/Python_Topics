@@ -5,7 +5,7 @@ ___ password_complexity(password: str
     """Input: password string, calculate score according to 5 criteria in bite,
        return: score int"""
     up = lo = num = spec = 0
-    ___ l in password:
+    ___ l __ password:
         __ l.isupper(
             up += 1
         ____ l.islower(

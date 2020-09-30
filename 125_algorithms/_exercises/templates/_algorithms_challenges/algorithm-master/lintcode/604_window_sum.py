@@ -5,13 +5,13 @@ class Solution:
     @return: the sum of the element inside the window at each moving.
     """
     ___ winSum(self, A, k
-        ans = []
+        ans =   # list
         __ (not A or not k or k <= 0 or
             le.(A) < k
             r_ ans
 
         _sum = 0
-        ___ i in range(le.(A)):
+        ___ i __ range(le.(A)):
             _sum += A[i]
 
             __ i < k - 1:

@@ -34,11 +34,11 @@ class Solution(object
             2453,
             100021,
         ]
-        ___ x in testCases:
+        ___ x __ testCases:
             print('x: %s' % (x))
             result = self.isPalindrome(x)
             print('result: %s' % (result))
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

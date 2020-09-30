@@ -5,7 +5,7 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not a or not b:
             r_ ans
@@ -13,8 +13,8 @@ class Solution:
         s = set(a)
         t = set(b)
 
-        ___ x in s:
-            __ x in t:
+        ___ x __ s:
+            __ x __ t:
                 ans.append(x)
 
         r_ ans
@@ -27,7 +27,7 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not a or not b:
             r_ ans

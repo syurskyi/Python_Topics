@@ -4,9 +4,9 @@ from nose.tools ______ assert_equal
 class TestPathExists(object
 
     ___ test_path_exists(self
-        nodes = []
+        nodes =   # list
         graph = GraphPathExists()
-        ___ id in range(0, 6
+        ___ id __ range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1, 5)
         graph.add_edge(0, 4, 3)
@@ -29,5 +29,5 @@ ___ main(
     test.test_path_exists()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

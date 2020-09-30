@@ -7,22 +7,22 @@ class Record(
 class Node(
     ___ __init__(self, node_id
         self.node_id = node_id
-        self.children = []
+        self.children =   # list
 
 
 ___ BuildTree(records
     root = None
     records.sort(key=lambda x: x.record_id)
-    ordered_id = [i.record_id ___ i in records]
+    ordered_id = [i.record_id ___ i __ records]
     __ records:
         __ ordered_id[-1] != le.(ordered_id) - 1:
             raise ValueError
         __ ordered_id[0] != 0:
             raise ValueError
-    trees = []
+    trees =   # list
     parent = {}
-    ___ i in range(le.(ordered_id)):
-        ___ j in records:
+    ___ i __ range(le.(ordered_id)):
+        ___ j __ records:
             __ ordered_id[i] __ j.record_id:
                 __ j.record_id __ 0:
                     __ j.parent_id != 0:
@@ -33,13 +33,13 @@ ___ BuildTree(records
                     __ j.record_id != 0:
                         raise ValueError
                 trees.append(Node(ordered_id[i]))
-    ___ i in range(le.(ordered_id)):
-        ___ j in trees:
+    ___ i __ range(le.(ordered_id)):
+        ___ j __ trees:
             __ i __ j.node_id:
                 parent = j
-        ___ j in records:
+        ___ j __ records:
             __ j.parent_id __ i:
-                ___ k in trees:
+                ___ k __ trees:
                     __ k.node_id __ 0:
                         continue
                     __ j.record_id __ k.node_id:

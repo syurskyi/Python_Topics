@@ -19,4 +19,4 @@ ___ athletes_most_medals(data=data
     df = csv.groupby(['Gender', 'Athlete'])['Medal'].count()
     male = df.loc['Men'].nlargest(1)
     female = df.loc['Women'].nlargest(1)
-    r_ {r[0]: r[1] ___ r in chain(male.items(),female.items())}
+    r_ {r[0]: r[1] ___ r __ chain(male.items(),female.items())}

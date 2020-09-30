@@ -33,7 +33,7 @@ class LFUCache(object
         :type key: int
         :rtype: int
         """
-        __ key not in self.hashmap:
+        __ key not __ self.hashmap:
             r_ -1
         ____
             value = self.hashmap[key].val
@@ -48,7 +48,7 @@ class LFUCache(object
         """
         __ self.capacity __ 0:
             r_
-        __ key in self.hashmap:
+        __ key __ self.hashmap:
             self.hashmap[key].val = value
             self.updateNode(self.hashmap[key])
         ____
@@ -57,7 +57,7 @@ class LFUCache(object
                 node = Node(key, value)
                 self.hashmap[key] = node
                 node.freq = 1
-                __ 1 in self.freqMap:
+                __ 1 __ self.freqMap:
                     tmp = self.freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
@@ -86,7 +86,7 @@ class LFUCache(object
                     self.head.next = firstNode.next
                     firstNode.next.prev = self.head
                 del self.hashmap[firstNode.key]
-                __ 1 in self.freqMap:
+                __ 1 __ self.freqMap:
                     tmp = self.freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
@@ -116,7 +116,7 @@ class LFUCache(object
                 self.freqMap[freq][1] = node.prev
         node.freq += 1
         freq += 1
-        __ freq in self.freqMap:
+        __ freq __ self.freqMap:
             tail = self.freqMap[freq][1]
             node.next = tail.next
             tail.next = node

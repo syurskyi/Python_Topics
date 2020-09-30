@@ -48,21 +48,21 @@ class Solution:
         DFS + coloring do a dfs all on nodes O(N) + O(M)
         """
         G = defaultdict(list)
-        ___ u, v in dislikes:
+        ___ u, v __ dislikes:
             G[u].append(v)
             G[v].append(u)
 
         visited = {}  # 0 color red, 1 color blue
-        ___ u in range(1, N+1
-            __ u not in visited:
+        ___ u __ range(1, N+1
+            __ u not __ visited:
                 __ not self.dfs(u, G, visited, 0
                     r_ False
         r_ True
 
     ___ dfs(self, u, G, visited, color
         visited[u] = color
-        ___ nbr in G[u]:
-            __ nbr in visited:
+        ___ nbr __ G[u]:
+            __ nbr __ visited:
                 __ visited[nbr] __ color:
                     r_ False
             ____

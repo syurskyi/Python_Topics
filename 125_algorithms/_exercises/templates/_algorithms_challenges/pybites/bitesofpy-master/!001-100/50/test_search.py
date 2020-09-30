@@ -57,7 +57,7 @@ ___ test_convert_struct_time_to_dt(arg, ret
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
 ___ test_get_feed_entries(inp
-    first, last = tuple(get_feed_entries())
+    first, last = tu..(get_feed_entries())
 
     assert first.date __ date(year=2018, month=2, day=18)
     assert first.title __ 'Twitter Digest 2018 Week 08'
@@ -104,7 +104,7 @@ ___ test_main(entries, inp, capfd
     main()
     out, _ = capfd.readouterr()
 
-    output = [line ___ line in out.split('\n') __ line.strip()]
+    output = [line ___ line __ out.split('\n') __ line.strip()]
     expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
@@ -113,5 +113,5 @@ ___ test_main(entries, inp, capfd
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Please provide a search term', 'Bye']
-    ___ line, exp in zip(output, expected
-        assert exp in line
+    ___ line, exp __ zip(output, expected
+        assert exp __ line

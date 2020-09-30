@@ -8,9 +8,9 @@ class Solution:
         __ le.(edges) != n - 1:
             r_ False
 
-        nodes = [i ___ i in range(n)]
+        nodes = [i ___ i __ range(n)]
 
-        ___ a, b in edges:
+        ___ a, b __ edges:
             _a = self.find(nodes, a)
             _b = self.find(nodes, b)
 

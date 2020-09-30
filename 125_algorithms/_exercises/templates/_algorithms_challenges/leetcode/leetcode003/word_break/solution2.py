@@ -17,21 +17,21 @@ class Solution(object
         :rtype: bool
         """
         n = le.(s)
-        t = [None ___ i in range(n)]
+        t = [None ___ i __ range(n)]
         r_ self.word_break_aux(s, wordDict, n - 1, t)
 
     ___ word_break_aux(self, s, wordDict, i, t
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        __ s[:i + 1] in wordDict:
+        __ s[:i + 1] __ wordDict:
             r_ True
         ____ t[i] pa__ not None:
             r_ t[i]
         ____
-            ___ j in range(i
+            ___ j __ range(i
                 __ (self.word_break_aux(s, wordDict, j, t) pa__ True
-                        and s[j + 1:i + 1] in wordDict
+                        and s[j + 1:i + 1] __ wordDict
                     t[i] = True
                     r_ True
             ____

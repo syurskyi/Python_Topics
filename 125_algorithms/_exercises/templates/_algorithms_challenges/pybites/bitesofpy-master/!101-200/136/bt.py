@@ -40,11 +40,11 @@ blood_type_text = {
 # complete :
 ___ _blood_int(b_type
     __ isinstance(b_type, int
-        __ b_type not in range(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1
+        __ b_type not __ range(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1
             raise ValueError(f'Bad blood integer {b_type}')
         r_ b_type
     ____ isinstance(b_type, str
-        __ b_type not in blood_type_text:
+        __ b_type not __ blood_type_text:
             raise ValueError(f'Bad blood type {b_type}')
         b_type = blood_type_text[b_type]
     ____ not isinstance(b_type, Bloodtype
@@ -60,11 +60,11 @@ ___ check_bt(donor, recipient
         Returns:
         bool: True for compatability, False otherwise.
     """
-    r_ all(a >= 0 ___ a in _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
+    r_ al.(a >= 0 ___ a __ _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
 
 
 # hint
-___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
+___ _particular_antigen_comp(donor: int, recipient: int) -> tu..:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

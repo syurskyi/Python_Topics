@@ -12,7 +12,7 @@ class Solution:
         ans = 0
         BASE = ord('A') - 1
 
-        ___ char in s:
+        ___ char __ s:
             ans = ans * 26 + ord(char) - BASE
 
         r_ ans

@@ -41,18 +41,18 @@ class Solution:
         Let F[i][j] be the longest arith subseq ending at A[i] with step j
         """
         F = defaultdict(lambda: defaultdict(lambda: 1))
-        ___ i in range(le.(A)):
-            ___ j in range(i
+        ___ i __ range(le.(A)):
+            ___ j __ range(i
                 delta = A[i] - A[j]
                 F[i][delta] = F[j][delta] + 1
 
         ret = 0
-        ___ d in F.values(
-            ___ v in d.values(
-                ret = max(ret, v)
+        ___ d __ F.values(
+            ___ v __ d.values(
+                ret = ma.(ret, v)
 
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().longestArithSeqLength([20,1,15,3,10,5,8]) __ 4

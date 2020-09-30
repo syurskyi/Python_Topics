@@ -42,5 +42,5 @@ class Solution:
         r_ sign*result
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().divide(5, -1) __ -5

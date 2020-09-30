@@ -13,7 +13,7 @@ __ not PATH.exists(
 
 ___ _get_data(path=PATH
     with open(path) as f:
-        r_ [line.rstrip() ___ line in f.readlines()]
+        r_ [line.rstrip() ___ line __ f.readlines()]
 
 
 ___ filter_killed_mutants(mutpy_output: list = None) -> list:
@@ -70,13 +70,13 @@ ___ filter_killed_mutants(mutpy_output: list = None) -> list:
     __ mutpy_output pa__ None:
         mutpy_output = _get_data()
 
-    output = []
-    test_result = []
+    output =   # list
+    test_result =   # list
     in_test = False
-    ___ line in mutpy_output:
+    ___ line __ mutpy_output:
         __ in_test:
             __ line.startswith('['
-                __ 'survived' in line:
+                __ 'survived' __ line:
                     output.extend(test_result)
                 test_result.clear()
                 output.append(line)

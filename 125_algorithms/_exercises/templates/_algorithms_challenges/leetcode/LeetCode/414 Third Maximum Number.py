@@ -21,8 +21,8 @@ class Solution:
         __ not nums:
             r_ None
 
-        h = []
-        ___ e in set(nums
+        h =   # list
+        ___ e __ set(nums
             __ le.(h) < 3:
                 heapq.heappush(h, e)
             ____ le.(h) __ 3 and e > h[0]:
@@ -32,11 +32,11 @@ class Solution:
         __ le.(h) __ 3:
             ret = min(h)
         ____
-            ret = max(h)
+            ret = ma.(h)
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().thirdMax([1, 2, 3, 4]) __ 2
     assert Solution().thirdMax([4, 3, 2, 1]) __ 2
     assert Solution().thirdMax([2, 2, 3, 1]) __ 1

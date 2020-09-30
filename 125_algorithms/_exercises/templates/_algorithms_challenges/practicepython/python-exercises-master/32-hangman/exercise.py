@@ -15,7 +15,7 @@ ___ getWord(
         word = random.choice(lines).strip()
         r_ word
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     word = getWord()
     hangmans = getHangMans()
     print(word)

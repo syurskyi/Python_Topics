@@ -7,15 +7,15 @@
 
 
 class Solution:
-    def combine(self,n, k):
-        def dfs(start, valuelist):
-            if self.count == k: ret.append(valuelist); return
-            for i in range(start, n + 1):
+    ___ combine(self,n, k):
+        ___ dfs(start, valuelist):
+            if self.count == k: ret.append(valuelist); r_
+            ___ i __ range(start, n + 1):
                 self.count += 1
                 dfs(i + 1, valuelist + [i])
                 self.count -= 1
-        ret = []; self.count = 0
-        dfs(1, [])
-        return ret
+        ret =   # list; self.count = 0
+        dfs(1,   # list)
+        r_ ret
 
 Solution().combine(4,2)

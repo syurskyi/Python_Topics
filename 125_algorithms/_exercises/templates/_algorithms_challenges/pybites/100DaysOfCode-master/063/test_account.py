@@ -42,5 +42,5 @@ ___ test_type_checking_on_isub_iadd(
         acc2 -= 'bar'
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     pytest.main()

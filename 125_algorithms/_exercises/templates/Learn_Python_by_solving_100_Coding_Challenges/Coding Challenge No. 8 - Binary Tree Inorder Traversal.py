@@ -11,16 +11,16 @@
 # Solutions:
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def inorderTraversal(root):
-        stack = []
+    ___ inorderTraversal(root):
+        stack =   # list
         node = root
-        solution = []
+        solution =   # list
         while node!= None or len(stack)>0:
             if node != None:
                 stack.append(node)
@@ -29,8 +29,8 @@ class Solution:
                 node = stack.pop()
                 solution.append(node.val)
                 node = node.right
-        return solution
+        r_ solution
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution.inorderTraversal(BT) )

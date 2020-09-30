@@ -38,7 +38,7 @@ ___ parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
                 region=prefix["region"],
                 cidr=IPv4Network(prefix["ip_prefix"]),
             )
-            ___ prefix in prefixes
+            ___ prefix __ prefixes
         ]
     r_ ipv4_service_ranges
 
@@ -55,5 +55,5 @@ ___ get_aws_service_range(address: str,
     except AddressValueError:
         raise ValueError("Address must be a valid IPv4 address")
 
-    r_ [range_ ___ range_ in service_ranges
-            __ ipv4_address in range_.cidr]
+    r_ [range_ ___ range_ __ service_ranges
+            __ ipv4_address __ range_.cidr]

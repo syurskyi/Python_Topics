@@ -5,4 +5,4 @@ class Solution(object
     :rtype: int
     """
     nums.sort()
-    r_ max(nums[0] * nums[1] * nums[-1], nums[-1] * nums[-2] * nums[-3])
+    r_ ma.(nums[0] * nums[1] * nums[-1], nums[-1] * nums[-2] * nums[-3])

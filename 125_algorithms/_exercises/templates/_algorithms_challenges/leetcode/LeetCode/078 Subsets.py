@@ -27,13 +27,13 @@ class Solution:
         :return: a list of lists of integer
         """
         S.sort()
-        result = []
-        self.generate_subsets(S, [], result)
+        result =   # list
+        self.generate_subsets(S,   # list, result)
         r_ result
 
     ___ generate_subsets(self, S, current, result
         result.append(current)
-        ___ ind, val in enumerate(S
+        ___ ind, val __ enumerate(S
             self.generate_subsets(S[ind+1:], current+[val], result)
 
 __ __name____"__main__":

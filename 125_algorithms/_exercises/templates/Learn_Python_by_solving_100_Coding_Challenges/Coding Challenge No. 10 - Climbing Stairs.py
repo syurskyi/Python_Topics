@@ -4,11 +4,11 @@
 # Solutions:
 
 class Solution:
-    def climbStairs(n):
+    ___ climbStairs(n):
         dp = [0] * (n + 1)
         dp[0] = dp[1] = 1
-        for x in range(2, n + 1):
+        ___ x __ range(2, n + 1):
             dp[x] = dp[x - 1] + dp[x - 2]
-        return dp[n]
+        r_ dp[n]
 
 Solution.climbStairs(10)

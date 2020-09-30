@@ -22,8 +22,8 @@ ___ import_data(
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
-    players = []
-    ___ row in reader:
+    players =   # list
+    ___ row __ reader:
         players.append(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],

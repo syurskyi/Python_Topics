@@ -5,7 +5,7 @@ class Solution(object
     :type k: int
     :rtype: int
     """
-    ___ c in set(s
+    ___ c __ set(s
       __ s.count(c) < k:
-        r_ max([self.longestSubstring(t, k) ___ t in s.split(c)])
+        r_ ma.([self.longestSubstring(t, k) ___ t __ s.split(c)])
     r_ le.(s)

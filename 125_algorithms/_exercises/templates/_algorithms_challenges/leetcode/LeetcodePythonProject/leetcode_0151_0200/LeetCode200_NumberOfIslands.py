@@ -13,8 +13,8 @@ class Solution(object
         __ not grid: r_ 0
         m, n = le.(grid), le.(grid[0])
         res = 0
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 __ grid[i][j] __ '1':
                     grid[i][j] = '#'
                     res += 1
@@ -26,7 +26,7 @@ class Solution(object
         m, n = le.(grid), le.(grid[0])
         w___ queue:
             i, j = queue.pop(0)
-            ___ x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
+            ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                 __ 0 <= x < m and 0 <= y < n and grid[x][y] __ '1':
                     grid[x][y] = '#'
                     queue.append([x, y])
@@ -46,11 +46,11 @@ class Solution(object
                 '00011',
             ],
         ]
-        ___ grid in testCases:
-            grid = [list(x) ___ x in grid]
+        ___ grid __ testCases:
+            grid = [list(x) ___ x __ grid]
             result = self.numIslands(grid)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

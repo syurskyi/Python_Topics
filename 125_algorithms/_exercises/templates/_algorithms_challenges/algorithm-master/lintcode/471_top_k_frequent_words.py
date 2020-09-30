@@ -6,13 +6,13 @@ class Solution:
     """
     ___ topKFrequentWords(self, words, k
         __ not words or not k:
-            r_ []
+            r_   # list
 
         F = {}
-        ___ word in words:
+        ___ word __ words:
             F[word] = F.get(word, 0) + 1
 
-        W = [(freq, word) ___ word, freq in F.items()]
+        W = [(freq, word) ___ word, freq __ F.items()]
         W.sort(key=lambda item: (-item[0], item[1]))
 
-        r_ [W[i][1] ___ i in range(k)]
+        r_ [W[i][1] ___ i __ range(k)]

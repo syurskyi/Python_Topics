@@ -21,9 +21,9 @@ class Solution:
         n = le.(A)
         factorial = 1
 
-        ___ i in range(n - 1, -1, -1
+        ___ i __ range(n - 1, -1, -1
             cnt = 0
-            ___ j in range(i + 1, n
+            ___ j __ range(i + 1, n
                 __ A[i] > A[j]:
                     cnt += 1
 

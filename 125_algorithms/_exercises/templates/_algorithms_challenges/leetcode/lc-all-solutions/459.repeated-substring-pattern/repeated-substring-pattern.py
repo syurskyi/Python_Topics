@@ -5,7 +5,7 @@ class Solution(object
     :type str: str
     :rtype: bool
     """
-    ___ i in range(0, le.(str) / 2
+    ___ i __ range(0, le.(str) / 2
       __ not le.(str) % (i + 1) and str[:i + 1] * (le.(str) / (i + 1)) __ str:
         r_ True
     r_ False

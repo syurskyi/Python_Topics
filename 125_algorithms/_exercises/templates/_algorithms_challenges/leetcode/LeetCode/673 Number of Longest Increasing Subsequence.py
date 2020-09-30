@@ -38,10 +38,10 @@ class Solution:
             r_ 0
 
         n = le.(A)
-        F = [LenCnt(l=1, c=1) ___ _ in A]
+        F = [LenCnt(l=1, c=1) ___ _ __ A]
         mx = LenCnt(l=1, c=1)
-        ___ i in range(1, n
-            ___ j in range(i
+        ___ i __ range(1, n
+            ___ j __ range(i
                 __ A[i] > A[j]:
                     __ F[i].l < F[j].l + 1:
                         F[i].l = F[j].l + 1
@@ -59,7 +59,7 @@ class Solution:
         r_ mx.c
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) __ 27
     assert Solution().findNumberOfLIS([1, 3, 5, 4, 7]) __ 2
     assert Solution().findNumberOfLIS([2, 2, 2, 2, 2]) __ 5

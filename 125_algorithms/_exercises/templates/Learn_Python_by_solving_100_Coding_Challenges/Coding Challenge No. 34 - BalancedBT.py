@@ -5,7 +5,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -14,18 +14,18 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return a boolean
-    def isBalanced(self, root):
-        return self.isBalancedInt(root)>=0
+    ___ isBalanced(self, root):
+        r_ self.isBalancedInt(root)>=0
 
-    def isBalancedInt(self, root):
+    ___ isBalancedInt(self, root):
         if root == None:
-            return 0;
+            r_ 0;
         left = self.isBalancedInt(root.left)
         right = self.isBalancedInt(root.right)
         if left<0 or right<0 or abs(left-right)>1:
-            return -1
-        return max(left,right)+1
+            r_ -1
+        r_ ma.(left,right)+1
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution().isBalanced(BT) )

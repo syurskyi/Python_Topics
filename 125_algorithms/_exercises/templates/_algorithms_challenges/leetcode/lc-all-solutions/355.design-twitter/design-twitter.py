@@ -28,12 +28,12 @@ class Twitter(object
     :type userId: int
     :rtype: List[int]
     """
-    ret = []
-    heap = []
+    ret =   # list
+    heap =   # list
     __ self.tweets[userId]:
       heapq.heappush(heap, self.tweets[userId][-1])
 
-    ___ followeeId in self.friendship[userId]:
+    ___ followeeId __ self.friendship[userId]:
       __ self.tweets[followeeId]:
         heapq.heappush(heap, self.tweets[followeeId][-1])
     cnt = 10

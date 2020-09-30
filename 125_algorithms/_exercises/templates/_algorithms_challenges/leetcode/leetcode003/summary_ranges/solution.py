@@ -11,11 +11,11 @@ class Solution(object
         :type nums: List[int]
         :rtype: List[str]
         """
-        res = []
+        res =   # list
         n = le.(nums)
         start = -1
         end = -1
-        ___ i, e in enumerate(nums
+        ___ i, e __ enumerate(nums
             __ i __ 0:
                 start = 0
                 end = 0

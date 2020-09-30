@@ -8,7 +8,7 @@ class Solution(object
     su. = 0
     j = 0
     ans = float("inf")
-    ___ i in range(0, le.(nums)):
+    ___ i __ range(0, le.(nums)):
       w___ j < le.(nums) and su. < target:
         su. += nums[j]
         j += 1

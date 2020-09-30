@@ -17,7 +17,7 @@ AUTHOR = "__author__ = 'PyBites'\n"
 
 ___ gen_days(
     '''Generate day range 001...100'''
-    ___ day in range(1, NUM_DAYS + 1
+    ___ day __ range(1, NUM_DAYS + 1
         yield str(day).zfill(NUM_WIDTH)
 
 
@@ -31,7 +31,7 @@ ___ create_log(
     '''Create progress log file with markdown table '''
     with open(LOG, 'w') as f:
         f.write(TABLE_HEADER)
-        ___ d in gen_days(
+        ___ d __ gen_days(
             date = get_date(d)
             f.write(DAY.format(d, date))
 
@@ -44,18 +44,18 @@ ___ create_init(path
         f.write(AUTHOR)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     __ os.path.isfile(LOG
         print('Logfile already created')
     ____
         print('Creating logfile')
         create_log()
 
-    dirs = [d ___ d in gen_days() __ not os.path.isdir(d)]
+    dirs = [d ___ d __ gen_days() __ not os.path.isdir(d)]
     __ not dirs:
         print('All 100 days directories already created')
     ____
         print('Creating missing day directories')
-        ___ d in dirs:
+        ___ d __ dirs:
             os.makedirs(d)
             create_init(d)

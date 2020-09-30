@@ -41,8 +41,8 @@ class DualHeap:
         ---- number line --->
         --- max heap --- |  --- min heap ---
         """
-        self.max_h = []  # List[Tuple[comparator, num]]
-        self.min_h = []
+        self.max_h =   # list  # List[Tuple[comparator, num]]
+        self.min_h =   # list
         self.max_sz = 0
         self.min_sz = 0
         self.to_remove = set()  # value, error mapping index in nums
@@ -65,10 +65,10 @@ class DualHeap:
         self.balance()
 
     ___ clean_top(self
-        w___ self.max_h and self.max_h[0][1] in self.to_remove:
+        w___ self.max_h and self.max_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.max_h)
             self.to_remove.remove(num)
-        w___ self.min_h and self.min_h[0][1] in self.to_remove:
+        w___ self.min_h and self.min_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.min_h)
             self.to_remove.remove(num)
 
@@ -114,14 +114,14 @@ class Solution:
 
         Calculating median also doesn't care about index, it only cares about value
         """
-        ret = []
+        ret =   # list
         dh = DualHeap()
-        ___ i in range(k
+        ___ i __ range(k
             dh.insert(nums[i])
 
         ret.append(dh.get_median(k))
 
-        ___ i in range(k, le.(nums)):
+        ___ i __ range(k, le.(nums)):
             dh.insert(nums[i])
             dh.pop(nums[i-k])
             ret.append(dh.get_median(k))
@@ -129,7 +129,7 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().medianSlidingWindow([-2147483648,-2147483648,2147483647,-2147483648,-2147483648,-2147483648,2147483647,2147483647,2147483647,2147483647,-2147483648,2147483647,-2147483648], 2)
     assert Solution().medianSlidingWindow([1,1,1,1], 2) __ [1, 1, 1]
     assert Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 3) __ [1,-1,-1,3,5,6]

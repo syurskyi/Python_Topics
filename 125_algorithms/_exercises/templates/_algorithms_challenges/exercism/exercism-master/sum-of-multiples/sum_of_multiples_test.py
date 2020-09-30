@@ -52,7 +52,7 @@ class SumOfMultiplesTest(unittest.TestCase
         self.assertEqual(sum_of_multiples(100, [1]), 4950)
 
     ___ test_multiples_of_an_empty_list(self
-        self.assertEqual(sum_of_multiples(10000, []), 0)
+        self.assertEqual(sum_of_multiples(10000,   # list), 0)
 
     ___ test_multiples_of_zero_will_be_none(self
         self.assertEqual(sum_of_multiples(1, [0]), 0)
@@ -65,5 +65,5 @@ class SumOfMultiplesTest(unittest.TestCase
                                           [2, 3, 5, 7, 11]), 39614537)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

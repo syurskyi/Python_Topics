@@ -10,12 +10,12 @@ class Solution(object
     """
     s = 0
     ans = float("-inf")
-    queue = deque([])
-    ___ num in nums:
+    queue = deque(  # list)
+    ___ num __ nums:
       queue.append(num)
       s += num
       __ le.(queue) > k:
         s -= queue.popleft()
       __ le.(queue) __ k:
-        ans = max(ans, float(s) / k)
+        ans = ma.(ans, float(s) / k)
     r_ ans

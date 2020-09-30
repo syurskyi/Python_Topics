@@ -29,5 +29,5 @@ class MatrixTest(unittest.TestCase
         self.assertEqual(matrix.columns[1], [1903, 3, 4])
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -33,14 +33,14 @@ class Solution(object
         __ amount __ 0:
             r_ 0
 
-        F = [sys.maxint ___ _ in xrange(amount+1)]
-        ___ k in coins:
+        F = [sys.maxint ___ _ __ xrange(amount+1)]
+        ___ k __ coins:
             __ k < amount+1:
                 F[k] = 1
 
-        ___ i in xrange(1, amount+1
+        ___ i __ xrange(1, amount+1
             __ F[i] != sys.maxint:
-                ___ k in coins:
+                ___ k __ coins:
                     __ i+k <= amount:
                         F[i+k] = min(F[i+k], F[i]+1)
 
@@ -57,18 +57,18 @@ class SolutionTLE(object
         :type amount: int
         :rtype: int
         """
-        F = [sys.maxint ___ _ in xrange(amount+1)]
-        ___ k in coins:
+        F = [sys.maxint ___ _ __ xrange(amount+1)]
+        ___ k __ coins:
             __ k < amount + 1:
                 F[k] = 1
 
-        ___ i in xrange(1, amount+1
-            ___ k in coins:
+        ___ i __ xrange(1, amount+1
+            ___ k __ coins:
                 __ i-k > 0 and F[i-k] != sys.maxint:
                     F[i] = min(F[i], F[i-k]+1)
 
         r_ F[amount] __ F[amount] != sys.maxint else -1
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) __ 23

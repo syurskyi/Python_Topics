@@ -33,5 +33,5 @@ class WordCountTests(unittest.TestCase
     ___ test_decode_unicode(self
         self.assertMultiLineEqual('⏰⚽⚽⚽⭐⭐⏰', decode('⏰3⚽2⭐⏰'))
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

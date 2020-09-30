@@ -10,14 +10,14 @@
 
 
 class Solution:
-    def fourSum(self, nums, target):
-        answer = []
+    ___ fourSum(self, nums, target):
+        answer =   # list
         nums.sort()
         length = len(nums)
-        for k in range(length-3):
+        ___ k __ range(length-3):
             if nums[k]+nums[k+1]+nums[k+2]+nums[k+3] > target:
                 break
-            for i in range(k+1,length-2):
+            ___ i __ range(k+1,length-2):
                 low = i+1
                 high = length - 1
                 while(low < high):
@@ -27,7 +27,7 @@ class Solution:
                         ans.sort()
                         low = low + 1
                         high = high - 1
-                        if ans not in answer:
+                        if ans not __ answer:
                             answer.append(ans)
                         while low < high and nums[high+1] == nums[high]: ##speed up, jump the same value
                             high -= 1
@@ -37,7 +37,7 @@ class Solution:
                         high = high -1
                     else:
                         low = low + 1
-        return answer
+        r_ answer
 
 
 Solution().fourSum([1, 0, -1, 0, -2, 2], 0)

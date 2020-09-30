@@ -20,7 +20,7 @@ DIGITS = {1:  "I",
 ___ numeral(num
     """Converts integers to roman numberals"""
     roman = ""
-    ___ digit in reversed(sorted(DIGITS.keys())):
+    ___ digit __ reversed(sorted(DIGITS.keys())):
         roman += DIGITS[digit] * (num // digit)
         num %= digit
     r_ roman

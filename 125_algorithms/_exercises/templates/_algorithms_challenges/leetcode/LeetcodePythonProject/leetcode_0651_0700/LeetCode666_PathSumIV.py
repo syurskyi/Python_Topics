@@ -11,7 +11,7 @@ class Solution(object
         """
         __ not nums: r_ 0
         hashmap = {}
-        ___ num in nums:
+        ___ num __ nums:
             key = num//10
             value = num%10
             hashmap[key] = value
@@ -25,12 +25,12 @@ class Solution(object
         left = (level+1)*10+pos*2-1
         right = (level+1)*10+pos*2
         curSum = preSum + hashmap[root]
-        __ left not in hashmap and right not in hashmap:
+        __ left not __ hashmap and right not __ hashmap:
             self.sumVal += curSum
             r_
-        __ left in hashmap:
+        __ left __ hashmap:
             self.traverse(left, curSum, hashmap)
-        __ right in hashmap:
+        __ right __ hashmap:
             self.traverse(right, curSum, hashmap)
     
     ___ test(self
@@ -39,11 +39,11 @@ class Solution(object
             [113, 221],
             [111,217,221,315,415],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.pathSum(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

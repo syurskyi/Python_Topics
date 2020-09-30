@@ -62,17 +62,17 @@ class Solution:
         """
         m = le.(word1)
         n = le.(word2)
-        d = [[-1 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
+        d = [[-1 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
 
 
-        ___ i in xrange(m+1
+        ___ i __ xrange(m+1
             d[i][0] = i
-        ___ j in xrange(n+1
+        ___ j __ xrange(n+1
             d[0][j] = j
 
 
-        ___ i in xrange(1, m+1
-            ___ j in xrange(1, n+1
+        ___ i __ xrange(1, m+1
+            ___ j __ xrange(1, n+1
                 __ word1[i-1]__word2[j-1]:
                     d[i][j] = d[i-1][j-1]
                 ____

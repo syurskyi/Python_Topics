@@ -11,21 +11,21 @@ class Solution(object
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] ___ _ in range(numCourses)]
+        graph = [[] ___ _ __ range(numCourses)]
         degree = [0]*numCourses
-        queue = []
+        queue =   # list
         count = 0
-        ___ prereq in prerequisites:
+        ___ prereq __ prerequisites:
             degree[prereq[0]] += 1
             graph[prereq[1]].append(prereq[0])
         print('degree: %s' % (degree))
-        ___ i in range(numCourses
+        ___ i __ range(numCourses
             __ degree[i] __ 0:
                 queue.append(i)
                 count += 1
         w___ queue:
             course = queue.pop(0)
-            ___ pointer in graph[course]:
+            ___ pointer __ graph[course]:
                 degree[pointer] -= 1
                 __ degree[pointer] __ 0:
                     queue.append(pointer)
@@ -43,11 +43,11 @@ class Solution(object
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] ___ _ in range(numCourses)]
+        graph = [[] ___ _ __ range(numCourses)]
         visited = [False]*numCourses
-        ___ i, prereq in enumerate(prerequisites
+        ___ i, prereq __ enumerate(prerequisites
             graph[prereq[1]].append(prereq[0])
-        ___ i in range(numCourses
+        ___ i __ range(numCourses
             __ not self.dfs(graph, visited, i
                 r_ False
         r_ True
@@ -57,7 +57,7 @@ class Solution(object
             r_ False
         ____
             visited[course] = True
-        ___ precourse in graph[course]:
+        ___ precourse __ graph[course]:
             __ not self.dfs(graph, visited, precourse
                 r_ False
         visited[course] = False
@@ -71,7 +71,7 @@ class Solution(object
             (5, [[0, 1], [1, 2], [2, 3], [4, 1], [4, 2], [4, 0], [1, 4]]),
             (3, [[0, 1], [1, 0], [2, 0]]),
         ]
-        ___ numCourses, prerequisites in testCases:
+        ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses))
             print('prerequisites: %s' % (prerequisites))
             result = self.canFinishDFS(numCourses, prerequisites)
@@ -80,5 +80,5 @@ class Solution(object
             print('BFS Result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

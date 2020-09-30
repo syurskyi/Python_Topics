@@ -20,7 +20,7 @@ class Solution(object
         n = le.(b)
         i = 0
         c = 0
-        res = ['0' ___ _ in range(max(m, n) + 1)]
+        res = ['0' ___ _ __ range(ma.(m, n) + 1)]
         w___ i < m or i < n or c > 0:
             tmp = c
             __ i < m:
@@ -32,7 +32,7 @@ class Solution(object
             res[i] = str(bit)
             i += 1
         res = res[::-1]
-        ___ i, c in enumerate(res
+        ___ i, c __ enumerate(res
             __ c != '0':
                 res = res[i:]
                 break

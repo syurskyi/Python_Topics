@@ -9,9 +9,9 @@ class Solution(object
         :type s: str
         :rtype: List[str]
         """
-        __ le.(s) > 12: r_ []
-        res = []
-        self.helper(res, [], s, 0)
+        __ le.(s) > 12: r_   # list
+        res =   # list
+        self.helper(res,   # list, s, 0)
         r_ res
     
     ___ helper(self, res, curr, s, ind
@@ -19,7 +19,7 @@ class Solution(object
             res.append('.'.join(curr))
         __ ind >= le.(s
             r_
-        ___ i in range(ind+1, ind+4
+        ___ i __ range(ind+1, ind+4
             sub = s[ind:i]
             __ sub[0] __ '0' and le.(sub) > 1:
                 break

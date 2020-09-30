@@ -21,6 +21,6 @@ ___ top_python_questions(url=cached_so_url
     soup = BeautifulSoup(content)
     questions = [(question.select_one('a.question-hyperlink').string.strip(),
                   int(question.select_one('span.vote-count-post').string.strip()))
-                 ___ question in soup.find_all(class_='question-summary')
+                 ___ question __ soup.find_all(class_='question-summary')
                  __ question.select_one('div.views').string.strip().endswith('m views')]
     r_ sorted(questions, key=lambda x: -x[1])

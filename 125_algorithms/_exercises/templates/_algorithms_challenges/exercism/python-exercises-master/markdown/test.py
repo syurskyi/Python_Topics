@@ -46,5 +46,5 @@ class MarkdownTest(unittest.TestCase
             '<li><em>Italic Item</em></li></ul>')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

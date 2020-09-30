@@ -54,28 +54,28 @@ class Solution:
         """
         bfs
         """
-        destination = tuple(int(c) ___ c in target)
+        destination = tu..(int(c) ___ c __ target)
         deadends_set = set(
-            tuple(int(c) ___ c in s)
-            ___ s in deadends
+            tu..(int(c) ___ c __ s)
+            ___ s __ deadends
         )
         q = [(0, 0, 0, 0)]
-        __ q[0] in deadends_set:
+        __ q[0] __ deadends_set:
             r_ -1
 
         step = 0
         visited = set(q)
         w___ q:
-            cur_q = []
-            ___ e in q:
+            cur_q =   # list
+            ___ e __ q:
                 __ e __ destination:
                     r_ step
-                ___ i in range(4
-                    ___ delta in (-1, 1
+                ___ i __ range(4
+                    ___ delta __ (-1, 1
                         nxt_lst = list(e)  # copy
                         nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
-                        nxt = tuple(nxt_lst)
-                        __ nxt not in visited and nxt not in deadends_set:
+                        nxt = tu..(nxt_lst)
+                        __ nxt not __ visited and nxt not __ deadends_set:
                             visited.add(nxt)
                             cur_q.append(nxt)
 
@@ -85,6 +85,6 @@ class Solution:
         r_ -1
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().openLock(["8888"], "0009") __ 1
     assert Solution().openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888") __ -1

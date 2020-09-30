@@ -7,14 +7,14 @@ class HangMan:
         os.system('clear')
         self.hangmans = hangmans
         self.word = word
-        self.state = []
+        self.state =   # list
         self.generateState()
         self.guessCount = 0
         self.welcome()
         self.startGame()
 
     ___ generateState(self
-        ___ char in self.word:
+        ___ char __ self.word:
             self.state.append('_')
 
     ___ startGame(self
@@ -50,7 +50,7 @@ class HangMan:
 
     ___ checkGuess(self, guess
         countCorrect = 0
-        ___ index, value in enumerate(self.word
+        ___ index, value __ enumerate(self.word
             __ guess __ value:
                 self.state[index] = value
                 countCorrect += 1
@@ -69,7 +69,7 @@ class HangMan:
         self.goOn()
 
     ___ displayState(self
-        ___ char in self.state:
+        ___ char __ self.state:
             print(" " + char + " ", end='')
         print('\n')
 
@@ -77,7 +77,7 @@ class HangMan:
         __ self.guessCount __ 6:
             sys.exit('You lose! The right word was: ' + self.word)
         countCorrect = 0
-        ___ index, value in enumerate(self.state
+        ___ index, value __ enumerate(self.state
             __ value __ self.word[index]:
                 countCorrect += 1
         __ countCorrect __ le.(self.word

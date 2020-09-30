@@ -29,9 +29,9 @@ class Solution:
         :param root: TreeNode
         :return: Integer
         """
-        result = []
+        result =   # list
         self.dfs(root, "", result)
-        result = [int(element) ___ element in result]
+        result = [int(element) ___ element __ result]
         r_ su.(result)
 
     ___ dfs(self, root, cur, result

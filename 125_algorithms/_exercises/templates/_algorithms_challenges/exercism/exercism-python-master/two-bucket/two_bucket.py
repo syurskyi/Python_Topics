@@ -13,7 +13,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
 
     w___ queue:
         steps, one, two = queue.pop(0)
-        __ (one, two) in seen:
+        __ (one, two) __ seen:
             continue
         seen.add((one, two))
 

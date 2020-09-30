@@ -33,5 +33,5 @@ ___ main(
     test.test_fizz_buzz()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

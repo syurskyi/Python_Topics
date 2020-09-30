@@ -31,7 +31,7 @@ class Solution:
         size = 1
         down = 0
 
-        ___ branch in ('left', 'right'
+        ___ branch __ ('left', 'right'
             child = getattr(node, branch)
 
             __ not child:
@@ -77,4 +77,4 @@ class Solution:
         left = self.divide_conquer(node.left, node.val, size)
         right = self.divide_conquer(node.right, node.val, size)
 
-        r_ max(size, left, right)
+        r_ ma.(size, left, right)

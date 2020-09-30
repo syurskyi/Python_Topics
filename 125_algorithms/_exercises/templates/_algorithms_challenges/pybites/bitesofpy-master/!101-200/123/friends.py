@@ -14,8 +14,8 @@ ___ get_friend_with_most_friends(friendships, users=users
        parse it to see who has most friends, return a tuple
        of (name_friend_with_most_friends, his_or_her_friends)"""
     user_friends = defaultdict(set)
-    ___ u, f in friendships:
+    ___ u, f __ friendships:
         user_friends[u].add(f)
         user_friends[f].add(u)
     res = sorted(user_friends.items(), key=lambda x: -le.(x[1]))
-    r_ users[res[0][0]], [users[id] ___ id in res[0][1]]
+    r_ users[res[0][0]], [users[id] ___ id __ res[0][1]]

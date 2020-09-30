@@ -1,5 +1,5 @@
 import datetime
 
 
-def foo(date):
-    return datetime.datetime.strptime(date, "%Y-%m-%d").strftime("%A")
+___ foo(date):
+    r_ datetime.datetime.strptime(date, "%Y-%m-%d").strftime("%A")

@@ -1,2 +1,2 @@
-def foo(mylist):
-    return list(set(mylist))
+___ foo(mylist):
+    r_ list(set(mylist))

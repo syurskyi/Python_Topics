@@ -6,12 +6,12 @@ ___ saddle_points(matrix
     """
     saddles = set()
     min_col = {}
-    ___ r, row in enumerate(matrix
-        max_row = max(row)
-        ___ c in range(le.(row)):
-            __ c not in min_col:
+    ___ r, row __ enumerate(matrix
+        max_row = ma.(row)
+        ___ c __ range(le.(row)):
+            __ c not __ min_col:
                 try:
-                    min_col[c] = min(_row[c] ___ _row in matrix)
+                    min_col[c] = min(_row[c] ___ _row __ matrix)
                 except IndexError:
                     raise ValueError
             __ max_row __ min_col[c]:

@@ -38,12 +38,12 @@ class Solution:
         Need to keep the smallest index
         """
         ret = -float("inf")
-        V = [(a, i) ___ i, a in enumerate(A)]
+        V = [(a, i) ___ i, a __ enumerate(A)]
         V.sort()
         min_idx = float("inf")
-        ___ _, i in V:
+        ___ _, i __ V:
             # V is sorted, guarantee a' > a
-            ret = max(ret, i - min_idx)
+            ret = ma.(ret, i - min_idx)
             min_idx = min(min_idx, i)
 
-        r_ max(ret, 0)
+        r_ ma.(ret, 0)

@@ -11,9 +11,9 @@ class Solution(object
         :type upper: int
         :rtype: List[str]
         """
-        res = []
+        res =   # list
         prev = lower
-        ___ num in nums:
+        ___ num __ nums:
             __ num __ prev+1:
                 res.append('%s' % prev)
             ____ num > prev+1:
@@ -34,7 +34,7 @@ class Solution(object
                 0, 99,
             ],
         ]
-        ___ nums, lower, upper in testCases:
+        ___ nums, lower, upper __ testCases:
             print('nums: %s' % nums)
             print('lower: %s' % lower)
             print('upper: %s' % upper)
@@ -42,5 +42,5 @@ class Solution(object
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

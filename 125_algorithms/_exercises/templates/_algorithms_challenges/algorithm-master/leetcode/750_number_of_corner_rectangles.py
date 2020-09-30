@@ -27,16 +27,16 @@ class Solution:
 
         n = 0
         count = {}
-        ___ R in G:
-            ___ end in range(1, le.(R)):
+        ___ R __ G:
+            ___ end __ range(1, le.(R)):
                 __ R[end] __ 0:
                     continue
 
-                ___ start in range(end
+                ___ start __ range(end
                     __ R[start] __ 0:
                         continue
 
-                    __ (start, end) not in count:
+                    __ (start, end) not __ count:
                         count[start, end] = 0
                         continue
 

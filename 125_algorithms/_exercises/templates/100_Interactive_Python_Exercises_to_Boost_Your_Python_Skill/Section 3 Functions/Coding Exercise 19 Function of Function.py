@@ -1,5 +1,5 @@
-def foo():
-    return "Hello"
-
-def hofoo():
-    return foo
+# ___ foo
+#     r_ "Hello"
+#
+# ___ hofoo
+#     r_ f..

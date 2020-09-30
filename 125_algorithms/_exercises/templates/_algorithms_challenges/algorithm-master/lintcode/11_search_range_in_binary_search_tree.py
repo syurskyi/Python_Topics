@@ -15,7 +15,7 @@ class Solution:
         :type b: int
         :rtype: list[int]
         """
-        ans = []
+        ans =   # list
 
         __ not root:
             r_ ans

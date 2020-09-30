@@ -33,7 +33,7 @@ class Solution:
         __ not root:
             r_ ''
         data = ''
-        ___ key, node in root.children.items(
+        ___ key, node __ root.children.items(
             data += key + self.serialize(node)
         r_ '<%s>' % data
 
@@ -53,8 +53,8 @@ class Solution:
             r_
         root = TrieNode()
         current = root
-        queue = []
-        ___ char in data:
+        queue =   # list
+        ___ char __ data:
             __ char __ '<':
                 queue.append(current)
             ____ char __ '>':

@@ -13,5 +13,5 @@ ___ main(
     test = TestFoo()
     test.test_foo()
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

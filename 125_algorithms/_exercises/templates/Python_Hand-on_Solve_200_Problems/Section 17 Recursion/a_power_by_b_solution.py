@@ -3,15 +3,15 @@
 # %%
 # Write a Python program to calculate the value of 'a' to the power 'b'.
 
-def power(a,b):
+___ power(a,b):
 	if b==0:
-		return 1
+		r_ 1
 	elif a==0:
-		return 0
+		r_ 0
 	elif b==1:
-		return a
+		r_ a
 	else:
-		return a*power(a,b-1)
+		r_ a*power(a,b-1)
 
 print(power(3,4))
 

@@ -65,5 +65,5 @@ class SayTest(unittest.TestCase
                          "one hundred and twenty-three",
                          say(987654321123))
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

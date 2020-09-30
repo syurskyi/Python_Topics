@@ -13,27 +13,27 @@ ___ zebra_puzzle(
     orderings = list(permutations(residents))
     first, _, middle, _, _ = (0, 1, 2, 3, 4)
 
-    ___ (red, green, ivory, yellow, blue) in orderings:
+    ___ (red, green, ivory, yellow, blue) __ orderings:
         __ red != 'Englishman':
             continue
-        ___ order in orderings:
+        ___ order __ orderings:
             __ abs(order.index('Norwegian') - order.index(blue)) != 1:
                 continue
             __ order[0] != 'Norwegian':
                 continue
             __ order.index(green) - order.index(ivory) != 1:
                 continue
-            ___ (dog, snails, fox, horse, ZEBRA) in orderings:
+            ___ (dog, snails, fox, horse, ZEBRA) __ orderings:
                 __ dog != 'Spaniard':
                     continue
-                ___ (coffee, tea, milk, oj, WATER) in orderings:
+                ___ (coffee, tea, milk, oj, WATER) __ orderings:
                     __ order.index(milk) != middle:
                         continue
                     __ coffee != green:
                         continue
                     __ tea != 'Ukranian':
                         continue
-                    ___ (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments) in orderings:
+                    ___ (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments) __ orderings:
                         __ OldGold != snails:
                             continue
                         __ Kools != yellow:

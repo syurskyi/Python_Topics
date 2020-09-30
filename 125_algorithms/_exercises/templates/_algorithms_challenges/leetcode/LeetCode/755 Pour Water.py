@@ -128,11 +128,11 @@ class Solution:
         Simulation?
         O(V * L)
         """
-        ___ _ in range(V
+        ___ _ __ range(V
             s = K
             # looking to the left
             optimal = s
-            ___ i in range(s-1, -1, -1
+            ___ i __ range(s-1, -1, -1
                 __ heights[i] <= heights[i+1]:
                     __ heights[i] < heights[optimal]:
                         optimal = i
@@ -140,7 +140,7 @@ class Solution:
                     break
             __ optimal __ s:
                 # looking to the right
-                ___ i in range(s+1, le.(heights)):
+                ___ i __ range(s+1, le.(heights)):
                     __ heights[i] <= heights[i-1]:
                         __ heights[i] < heights[optimal]:
                             optimal = i
@@ -151,5 +151,5 @@ class Solution:
         r_ heights
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().pourWater([2,1,1,2,1,2,2], 4, 3) __ [2,2,2,3,2,2,2]

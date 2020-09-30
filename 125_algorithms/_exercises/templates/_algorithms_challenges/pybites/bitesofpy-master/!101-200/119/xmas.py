@@ -5,4 +5,4 @@ ___ generate_xmas_tree(rows=10
          *
         ***
        *****"""
-    r_ '\n'.join(f'{" " * (rows - row - 1)}{"*" * (row * 2 + 1)}' ___ row in range(rows))
+    r_ '\n'.join(f'{" " * (rows - row - 1)}{"*" * (row * 2 + 1)}' ___ row __ range(rows))

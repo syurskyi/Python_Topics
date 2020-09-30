@@ -6,9 +6,9 @@ Created on Apr 8, 2017
 
 class Solution(object
     ___ readBinaryWatch(self, num
-        result = []
-        ___ i in range(12
-            ___ j in range(60
+        result =   # list
+        ___ i __ range(12
+            ___ j __ range(60
                 total = self.countDigits(i) + self.countDigits(j)
                 __ total __ num:
                     s = '%s:%02d' % (i, j)

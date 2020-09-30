@@ -19,18 +19,18 @@ class Solution:
         )
         m, n = le.(grid), le.(grid[0])
 
-        queue, _queue = [], None
+        queue, _queue =   # list, None
         days = -1
-        ___ x in range(m
-            ___ y in range(n
+        ___ x __ range(m
+            ___ y __ range(n
                 __ grid[x][y] __ self.ZOMBIE:
                     queue.append((x, y))
 
         w___ queue:
             days += 1
-            _queue = []
-            ___ x, y in queue:
-                ___ dx, dy in vector:
+            _queue =   # list
+            ___ x, y __ queue:
+                ___ dx, dy __ vector:
                     _x = x + dx
                     _y = y + dy
                     __ 0 <= _x < m and 0 <= _y < n \
@@ -39,8 +39,8 @@ class Solution:
                         _queue.append((_x, _y))
             queue = _queue
 
-        ___ x in range(m
-            ___ y in range(n
+        ___ x __ range(m
+            ___ y __ range(n
                 __ grid[x][y] __ self.PEOPLE:
                     r_ -1
 

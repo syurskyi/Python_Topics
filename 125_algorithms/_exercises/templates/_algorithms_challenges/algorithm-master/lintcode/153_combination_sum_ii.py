@@ -5,12 +5,12 @@ class Solution:
     @return: All the combinations that sum to target
     """
     ___ combinationSum2(self, A, target
-        ans = []
+        ans =   # list
         __ not A:
             r_ ans
 
         A.sort()
-        self.dfs(A, 0, target, ans, [])
+        self.dfs(A, 0, target, ans,   # list)
         r_ ans
 
     ___ dfs(self, A, start, remaining, ans, path
@@ -18,7 +18,7 @@ class Solution:
             ans.append(path[:])
             r_
 
-        ___ i in range(start, le.(A)):
+        ___ i __ range(start, le.(A)):
             __ remaining < A[i]:
                 r_
 

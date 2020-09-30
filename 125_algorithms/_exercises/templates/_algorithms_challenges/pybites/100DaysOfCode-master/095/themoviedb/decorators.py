@@ -31,10 +31,10 @@ ___ _get_release_date(item
 
 ___ _store(kind, listing, resp, overwrite=DEFAULT_OVERWRITE
     with shelve.open(CACHE) as sh:
-        ___ item in resp:
+        ___ item __ resp:
             key = str(item['id'])
 
-            __ overwrite and key in sh:
+            __ overwrite and key __ sh:
                 del sh[key]
 
             title = _get_title(item)

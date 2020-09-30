@@ -12,8 +12,8 @@ class Solution:
         costs = [float('inf')] * n
         min_cost[src] = costs[src] = 0
 
-        ___ _ in range(K + 1
-            ___ u, v, cost in flights:
+        ___ _ __ range(K + 1
+            ___ u, v, cost __ flights:
                 costs[v] = min(costs[v], min_cost[u] + cost)
             min_cost = costs
 
@@ -38,18 +38,18 @@ class Solution:
         """
         `dp[i][k]` means the cost when the end is `i` with `k` stop
         """
-        dp = [[INF] * (K + 1) ___ _ in range(n)]
+        dp = [[INF] * (K + 1) ___ _ __ range(n)]
         dp[src][0] = 0
 
-        ___ start, end, cost in flights:
+        ___ start, end, cost __ flights:
             __ start __ src and cost < dp[end][0]:
                 dp[end][0] = cost
 
-        ___ k in range(1, K + 1
-            ___ i in range(n
+        ___ k __ range(1, K + 1
+            ___ i __ range(n
                 dp[i][k] = dp[i][k - 1]
 
-            ___ start, end, cost in flights:
+            ___ start, end, cost __ flights:
                 dp[end][k] = min(
                     dp[end][k],
                     dp[start][k - 1] + cost

@@ -30,12 +30,12 @@ class Solution:
         m = le.(word1)
         n = le.(word2)
 
-        ___ i in range(1, m + 1
-            ___ j in range(1, n + 1
+        ___ i __ range(1, m + 1
+            ___ j __ range(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
                 ____
-                    F[i][j] = max(
+                    F[i][j] = ma.(
                         F[i-1][j],
                         F[i][j-1],
                     )
@@ -56,13 +56,13 @@ class Solution:
         n = le.(word2)
 
         # initialization is important
-        ___ i in range(1, m + 1
+        ___ i __ range(1, m + 1
             F[i][0] = i
-        ___ j in range(1, n + 1
+        ___ j __ range(1, n + 1
             F[0][j] = j
 
-        ___ i in range(1, m + 1
-            ___ j in range(1, n + 1
+        ___ i __ range(1, m + 1
+            ___ j __ range(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1]
                 ____
@@ -74,5 +74,5 @@ class Solution:
         r_ F[m][n]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minDistance("sea", "eat") __ 2

@@ -47,16 +47,16 @@ ______ bisect
 class MyCalendarThree:
 
     ___ __init__(self
-        self.lst = []
+        self.lst =   # list
 
     ___ book(self, start: int, end: int) -> int:
         bisect.insort(self.lst, (start, "start"))
         bisect.insort(self.lst, (end, "end"))
         ret = 0
         count = 0
-        ___ _, flag in self.lst:
+        ___ _, flag __ self.lst:
             count += 1 __ flag __ "start" else -1
-            ret = max(ret, count)
+            ret = ma.(ret, count)
 
         r_ ret
 

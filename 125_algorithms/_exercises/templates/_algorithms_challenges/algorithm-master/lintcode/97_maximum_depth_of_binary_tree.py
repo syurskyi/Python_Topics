@@ -16,7 +16,7 @@ class Solution:
         __ not root:
             r_ 0
 
-        r_ 1 + max(
+        r_ 1 + ma.(
             self.maxDepth(root.left),
             self.maxDepth(root.right)
         )

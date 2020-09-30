@@ -6,13 +6,13 @@
 class Solution:
     # @param prices, a list of integer
     # @return an integer
-    def maxProfit(self, prices):
+    ___ maxProfit(self, prices):
         maxProfit = 0
-        for index in range(len(prices)-1):
+        ___ index __ range(len(prices)-1):
             if prices[index+1] > prices[index]:
             # As long as we can earn money, do the transaction.
                 maxProfit += prices[index+1] - prices[index]
-        return maxProfit
+        r_ maxProfit
 
 
 Solution().maxProfit([1, 2, 3, 0, 2])

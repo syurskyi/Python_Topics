@@ -1,13 +1,13 @@
 ___ cleanData(data
-        array = []
-        ___ x in data:
+        array =   # list
+        ___ x __ data:
                 __ x != '0' or 0:
                         array.append(x)
         r_ array
 
 ___ average(amount
-        answer = []
-        ___ x in range(amount
+        answer =   # list
+        ___ x __ range(amount
                 array = raw_input().split()
                 array = cleanData(array)
                 total, average, y = 0,0,0

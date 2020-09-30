@@ -48,10 +48,10 @@ class Solution:
 
     ___ mergeKLists2(self, lists
         # Create a priority queue
-        h = []
+        h =   # list
         res = None
         end = None
-        ___ l in lists:
+        ___ l __ lists:
             __ l pa__ not None:
                 heapq.heappush(h, (l.val, l))
         w___ h:

@@ -14,13 +14,13 @@ class Solution(object
         set2 = set(list('asdfghjkl'))
         set3 = set(list('zxcvbnm'))
         sets = (set1, set2, set3)
-        result = []
-        ___ word in words:
+        result =   # list
+        ___ word __ words:
             ind = -1
             valid = True
-            ___ c in word:
-                ___ i, set0 in enumerate(sets
-                    __ c.lower() in set0:
+            ___ c __ word:
+                ___ i, set0 __ enumerate(sets
+                    __ c.lower() __ set0:
                         __ ind __ -1:
                             ind = i
                         ____ i != ind:

@@ -3,7 +3,7 @@ from random import random
 num = 20
 listitem = [0]*num
 
-for i in range(num):
+___ i __ range(num):
     listitem[i] = int(random()*50)
 print(listitem)
 
@@ -11,7 +11,7 @@ maxi = 1
 mylength = 1
 mycode = 0
 
-for i in range(1,num):
+___ i __ range(1,num):
     if listitem[i] > listitem[i-1]:
         mylength += 1
     else:

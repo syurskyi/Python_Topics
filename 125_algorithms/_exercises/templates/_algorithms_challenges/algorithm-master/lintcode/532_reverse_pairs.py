@@ -38,7 +38,7 @@ class Solution:
             right += 1
             i += 1
 
-        ___ i in range(start, end + 1
+        ___ i __ range(start, end + 1
             A[i] = tmp[i]
 
         r_ ans

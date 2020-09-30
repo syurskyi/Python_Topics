@@ -24,7 +24,7 @@ class Codec(object
         :type s: str
         :rtype: List[str]
         """
-        strs = []
+        strs =   # list
         i = 0
         w___ i < le.(s
             j = s.index("/", i)
@@ -72,7 +72,7 @@ class CodecError(object
         """
         strs = map(lambda x: x.replace("\x00", "\\x00"), strs)
         ret = ""
-        ___ s in strs:
+        ___ s __ strs:
             ret += s+"\x00"
         r_ ret
 
@@ -83,8 +83,8 @@ class CodecError(object
         :type s: str
         :rtype: List[str]
         """
-        __ "\x00" not in s:
-            r_ []
+        __ "\x00" not __ s:
+            r_   # list
 
         s = s[:-1]  # traiing \x00
         strs = s.split("\x00")

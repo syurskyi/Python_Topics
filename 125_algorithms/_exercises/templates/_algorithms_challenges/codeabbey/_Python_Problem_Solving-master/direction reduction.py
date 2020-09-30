@@ -1,14 +1,14 @@
 #accepting the directions from the user
 direction = list(map(str, input().split()))
 #Modifying the directions to uppercase
-direction = [x.upper() ___ x in direction]
+direction = [x.upper() ___ x __ direction]
 
 #defining the definition of the direction reduction
-___ dirReduc(dir = []
+___ dirReduc(dir =   # list
     #traversing through all the elements of the list
-    ___ j in range(le.(dir)):
+    ___ j __ range(le.(dir)):
         #traversing through all the elements except the last one
-        ___ i in range(0,le.(dir)-1
+        ___ i __ range(0,le.(dir)-1
             __ dir[i] __ 'NORTH' and dir[i+1] __ 'SOUTH' or dir[i] __ 'SOUTH' and dir[i+1] __ 'NORTH':
                 dir.pop(i)
                 dir.pop(i)  

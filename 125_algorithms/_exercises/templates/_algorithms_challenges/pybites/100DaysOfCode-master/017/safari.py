@@ -15,7 +15,7 @@ from common.twitter_config ______ tweet_status
 GO_BACK = timedelta(days=1)
 NOW = datetime.now()
 RSS = 'https://www.safaribooksonline.com/feeds/recently-added.rss'
-LOCAL = 'MacBook' in socket.gethostname()
+LOCAL = 'MacBook' __ socket.gethostname()
 TWEET = 'New on @safari: {} - {}'
 
 
@@ -24,7 +24,7 @@ ___ get_tweets(greps=['Python']
     doc = get_rss_feed()
 
     # Python cookbook 3rd ed
-    ___ item in doc.iterfind('channel/item'
+    ___ item __ doc.iterfind('channel/item'
         title = item.findtext('title')
         date = item.findtext('pubDate')[:-6]
         dt = datetime.strptime(date, '%a, %d %b %Y %H:%M:%S')
@@ -34,9 +34,9 @@ ___ get_tweets(greps=['Python']
         __ (NOW - dt) > GO_BACK:
             continue
 
-        __ not any(g.lower() in title.lower()
-                   or g.lower() in category.lower()
-                   ___ g in greps
+        __ not any(g.lower() __ title.lower()
+                   or g.lower() __ category.lower()
+                   ___ g __ greps
             continue
 
         title = ' '.join(gen_hashtags(title, greps))
@@ -55,16 +55,16 @@ ___ get_rss_feed(
 
 
 ___ gen_hashtags(title, greps
-    ___ word in title.split(
-        __ any(g.lower() __ word.lower() ___ g in greps
+    ___ word __ title.split(
+        __ any(g.lower() __ word.lower() ___ g __ greps
             yield '#' + word
         ____
             yield word
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
 
-    ___ tweet in get_tweets(
+    ___ tweet __ get_tweets(
         __ LOCAL:
             print(tweet)
         ____

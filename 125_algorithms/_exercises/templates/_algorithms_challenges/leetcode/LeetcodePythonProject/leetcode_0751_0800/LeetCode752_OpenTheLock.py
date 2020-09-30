@@ -14,15 +14,15 @@ class Solution(object
         level = 0
         visited = set(['0000'])
         deadends = set(deadends)
-        __ '0000' in deadends:
+        __ '0000' __ deadends:
             r_ -1
         w___ queue:
             n = le.(queue)
-            ___ _ in range(n
+            ___ _ __ range(n
                 s = queue.pop(0)
                 __ s __ target:
                     r_ level
-                ___ i in range(4
+                ___ i __ range(4
                     s01 = int(s[i])+1
                     __ s01 >= 10:
                         s01 -= 10
@@ -32,11 +32,11 @@ class Solution(object
                         s02 += 10
                     s02 = str(s02)
                     s0 = s[:i]+s01+s[i+1:]
-                    __ s0 not in visited and s0 not in deadends:
+                    __ s0 not __ visited and s0 not __ deadends:
                         queue.append(s0)
                         visited.add(s0)
                     s0 = s[:i]+s02+s[i+1:]
-                    __ s0 not in visited and s0 not in deadends:
+                    __ s0 not __ visited and s0 not __ deadends:
                         queue.append(s0)
                         visited.add(s0)
             level += 1
@@ -61,10 +61,10 @@ class Solution(object
                 "8888",
             ],
         ]
-        ___ deadends, target in testCases:
+        ___ deadends, target __ testCases:
             result = self.openLock(deadends, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

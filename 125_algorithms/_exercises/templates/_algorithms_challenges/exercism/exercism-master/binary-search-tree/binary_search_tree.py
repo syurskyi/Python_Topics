@@ -12,14 +12,14 @@ class TreeNode(object
 class BinarySearchTree(object
     ___ __init__(self, tree_data
         self.head = None
-        ___ node_data in tree_data:
+        ___ node_data __ tree_data:
             self.insert(node_data)
 
     ___ data(self
         r_ self.head
 
     ___ sorted_data(self
-        r_ [node.data ___ node in self.inorder_traversal(self.head)]
+        r_ [node.data ___ node __ self.inorder_traversal(self.head)]
 
     ___ insert(self, node_data
         new_node = TreeNode(node_data)

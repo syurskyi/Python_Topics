@@ -10,9 +10,9 @@
 # It can be practical if the input is usually in sort order but may occasionally have some out-of-order elements nearly 
 # in position.
 
-def bubbleSort(nlist):
-    for passnum in range(len(nlist)-1,0,-1):
-        for i in range(passnum):
+___ bubbleSort(nlist):
+    ___ passnum __ range(len(nlist)-1,0,-1):
+        ___ i __ range(passnum):
             if nlist[i]>nlist[i+1]:
                 temp = nlist[i]
                 nlist[i] = nlist[i+1]

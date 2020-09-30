@@ -1,13 +1,13 @@
 import random
 
-x = []
-for i in range(10):
+x =   # list
+___ i __ range(10):
     x.append(int(random.random()*1000))
 print(x)
 
 even = odd =0
 
-for i in x:
+___ i __ x:
     if i%2 == 0:
         even += 1
     else:

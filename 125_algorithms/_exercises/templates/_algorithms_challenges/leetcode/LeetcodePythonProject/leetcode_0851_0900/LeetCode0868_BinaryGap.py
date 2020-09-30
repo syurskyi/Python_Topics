@@ -17,7 +17,7 @@ class Solution(object
             d = n % 2
             __ d __ 1:
                 __ prev >= 0:
-                    res = max(res, i-prev)
+                    res = ma.(res, i-prev)
                 prev = i
             n //= 2
             i += 1

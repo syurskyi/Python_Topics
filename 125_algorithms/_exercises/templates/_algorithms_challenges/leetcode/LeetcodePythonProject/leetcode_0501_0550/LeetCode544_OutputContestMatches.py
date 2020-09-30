@@ -16,7 +16,7 @@ class Solution(object
     ___ helper(self, l
         __ le.(l) <= 2:
             r_ '(%s,%s)' % (l[0], l[1])
-        l0 = []
+        l0 =   # list
         w___ l:
             l0.append('(%s,%s)' % (l.pop(0), l.pop()))
         res = self.helper(l0)
@@ -28,11 +28,11 @@ class Solution(object
             4,
             8,
         ]
-        ___ n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             res = self.findContestMatch(n)
             print('result: %s' % res)
             print('-='*30+'-')
     
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -12,33 +12,33 @@
 class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of integers
-    def spiralOrder(self, matrix):
-        if matrix == []:
-            return []
-        res = []
+    ___ spiralOrder(self, matrix):
+        if matrix ==   # list:
+            r_   # list
+        res =   # list
         maxUp = maxLeft = 0
         maxDown = len(matrix) - 1
         maxRight = len(matrix[0]) - 1
         direct = 0 # 0 go right, 1 go down, 2 go left, 3 go up
         while True:
             if direct == 0: # go right
-                for i in range(maxLeft, maxRight + 1):
+                ___ i __ range(maxLeft, maxRight + 1):
                     res.append(matrix[maxUp][i])
                 maxUp += 1
             elif direct == 1: # go down
-                for i in range(maxUp, maxDown + 1):
+                ___ i __ range(maxUp, maxDown + 1):
                     res.append(matrix[i][maxRight])
                 maxRight -= 1
             elif direct == 2: # go left
-                for i in reversed(range(maxLeft, maxRight + 1)):
+                ___ i __ reversed(range(maxLeft, maxRight + 1)):
                     res.append(matrix[maxDown][i])
                 maxDown -= 1
             else: # go up
-                for i in reversed(range(maxUp, maxDown + 1)):
+                ___ i __ reversed(range(maxUp, maxDown + 1)):
                     res.append(matrix[i][maxLeft])
                 maxLeft += 1
             if maxUp > maxDown or maxLeft > maxRight:
-                return res
+                r_ res
             direct = (direct + 1) % 4
 
 

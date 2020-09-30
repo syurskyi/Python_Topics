@@ -17,10 +17,10 @@ Example:
 
 input_array = [2, 7, 11, 15]
 target = 26
-result = []
+result =   # list
 
-for i, num in enumerate(input_array):
-    for j in range(i+1, len(input_array)):
+___ i, num __ enumerate(input_array):
+    ___ j __ range(i+1, len(input_array)):
         print(i,j)
 
 

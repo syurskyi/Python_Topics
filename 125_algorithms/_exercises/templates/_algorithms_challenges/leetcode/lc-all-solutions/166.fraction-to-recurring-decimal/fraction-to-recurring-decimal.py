@@ -15,11 +15,11 @@ class Solution(object
     __ numerator __ 0:
       r_ ans
     d = {}
-    res = []
+    res =   # list
     w___ True:
       r = numerator % denominator
       v = numerator / denominator
-      __ numerator in d:
+      __ numerator __ d:
         idx = d[numerator]
         r_ ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
       res.append(str(v))

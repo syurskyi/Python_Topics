@@ -46,9 +46,9 @@ class Solution(object
         :rtype: int
         """
         input = input.split('\n')
-        F = []
+        F =   # list
         gmax = 0
-        ___ elt in input:
+        ___ elt __ input:
             idx = elt.count('\t')
             idx = min(idx, le.(F))
             e = elt.strip('\t')
@@ -58,10 +58,10 @@ class Solution(object
             ____
                 F[idx] = prev + 1 + le.(e)  # reset
 
-            __ '.' in elt:
-                gmax = max(gmax, F[idx])
+            __ '.' __ elt:
+                gmax = ma.(gmax, F[idx])
 
         r_ gmax
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().lengthLongestPath("dir\n    file.txt") __ 12

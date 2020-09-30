@@ -104,7 +104,7 @@ testcases = [
 
 class ConnectTest(unittest.TestCase
     ___ test_game(self
-        ___ testcase in testcases:
+        ___ testcase __ testcases:
             game = connect.ConnectGame(testcase["board"])
             winner = game.get_winner()
             expected = testcase["winner"] __ testcase["winner"] else "None"
@@ -114,5 +114,5 @@ class ConnectTest(unittest.TestCase
                              % (testcase["description"], expected, got))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

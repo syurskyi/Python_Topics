@@ -12,7 +12,7 @@ ___ rg_timer(
 	r_ random.randint(5,9)
 
 ___ light_rotation(rotation
-	___ colour in rotation:
+	___ colour __ rotation:
 		__ colour __ 'Amber':
 			print('Caution! The light is %s.\n' % colour)
 			sleep(5)
@@ -24,5 +24,5 @@ ___ light_rotation(rotation
 			sleep(rg_timer())
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
 	light_rotation(rotation)

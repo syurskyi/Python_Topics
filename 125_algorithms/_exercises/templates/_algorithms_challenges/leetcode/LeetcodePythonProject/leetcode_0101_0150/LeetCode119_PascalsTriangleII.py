@@ -10,9 +10,9 @@ class Solution(object
         :rtype: List[int]
         """
         res = [1]
-        ___ i in range(rowIndex
-            newRes = []
-            ___ j in range(i+2
+        ___ i __ range(rowIndex
+            newRes =   # list
+            ___ j __ range(i+2
                 __ j __ 0 or j __ i+1:
                     newRes.append(1)
                 ____

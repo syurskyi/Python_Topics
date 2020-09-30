@@ -6,7 +6,7 @@
 
 
 class RandomListNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
         self.random = None
@@ -16,7 +16,7 @@ class Solution:
     # @param ll, a RandomListNode
     # @return a RandomListNode
 
-    def copyRandomList(self, ll):
+    ___ copyRandomList(self, ll):
         # copy and combine copied list with original list
         current = ll
         while current:
@@ -39,10 +39,10 @@ class Solution:
             copied_current.next = current.next
             current.next = current.next.next
             copied_current, current = copied_current.next, current.next
-        return dummy.next
+        r_ dummy.next
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     ll, ll.next = RandomListNode(1), RandomListNode(2),
     ll.random = ll.next
     result = Solution().copyRandomList(ll)

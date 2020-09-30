@@ -4,9 +4,9 @@ ___ bitCount(
 
     numbers = input().split()
 
-    answer = []
+    answer =   # list
 
-    ___ num in numbers:
+    ___ num __ numbers:
 
         data = int(num) % 0x100000000
 

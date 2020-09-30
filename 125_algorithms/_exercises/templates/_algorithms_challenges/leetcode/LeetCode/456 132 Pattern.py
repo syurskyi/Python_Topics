@@ -33,9 +33,9 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        stack = []  # List[Interval]
+        stack =   # list  # List[Interval]
         mini = float('Inf')
-        ___ v in nums:
+        ___ v __ nums:
             w___ stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.p..
             __ stack and stack[-1][0] < v:
@@ -54,18 +54,18 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        ___ i in range(le.(nums)):
+        ___ i __ range(le.(nums)):
             maxa = nums[i]
-            ___ j in range(i + 1, le.(nums)):
+            ___ j __ range(i + 1, le.(nums)):
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
                         r_ True
-                    maxa = max(maxa, nums[j])
+                    maxa = ma.(maxa, nums[j])
 
         r_ False
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().find132pattern([1, 2, 3, 4]) __ False
     assert Solution().find132pattern([3, 1, 4, 2]) __ True
     assert Solution().find132pattern([-1, 3, 2, 0]) __ True

@@ -52,7 +52,7 @@ class Solution:
         n = le.(S)
         i = 0
         root = None
-        stk = []
+        stk =   # list
         w___ i < n:
             __ S[i] __ "-":
                 depth += 1
@@ -114,9 +114,9 @@ class Solution:
                 i = j
 
         # construct
-        stk = []
+        stk =   # list
         root = None
-        ___ k, v in depths.items(
+        ___ k, v __ depths.items(
             cur = TreeNode(k)
             __ v __ 0:
                 root = cur
@@ -138,6 +138,6 @@ class Solution:
         r_ root
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().recoverFromPreorder("5-4--4")
     assert Solution().recoverFromPreorder("1-2--3--4-5--6--7")

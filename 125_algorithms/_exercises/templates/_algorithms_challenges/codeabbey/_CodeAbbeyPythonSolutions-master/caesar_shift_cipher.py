@@ -1,9 +1,9 @@
 amount_values,shifter = map(int,(input().split()))
-results = []
+results =   # list
 
 ___ get_cipher(words, shifter
     cipher_word = ""
-    ___ i in words:
+    ___ i __ words:
         cipher_char = ord(i)
         __(cipher_char < 65
             cipher_word += chr(cipher_char)
@@ -16,7 +16,7 @@ ___ get_cipher(words, shifter
     r_ cipher_word
 
 
-___ i in range(amount_values
+___ i __ range(amount_values
     results.append(get_cipher(input(),shifter))
 
 print(*results)

@@ -14,7 +14,7 @@ class TestPriorityQueue(object
         priority_queue.insert(PriorityQueueNode('f', 3))
         priority_queue.decrease_key('f', 2)
         priority_queue.decrease_key('a', 19)
-        mins = []
+        mins =   # list
         w___ priority_queue.array:
             mins.append(priority_queue.extract_min().key)
         assert_equal(mins, [2, 5, 15, 19, 22, 40])
@@ -26,5 +26,5 @@ ___ main(
     test.test_priority_queue()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

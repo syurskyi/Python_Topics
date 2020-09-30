@@ -8,10 +8,10 @@
 # ![selection-short.png](attachment:selection-short.png)
 
 # %%
-def selectionSort(nlist):
-   for fillslot in range(len(nlist)-1,0,-1):
+___ selectionSort(nlist):
+   ___ fillslot __ range(len(nlist)-1,0,-1):
        maxpos=0
-       for location in range(1,fillslot+1):
+       ___ location __ range(1,fillslot+1):
            if nlist[location]>nlist[maxpos]:
                maxpos = location
 

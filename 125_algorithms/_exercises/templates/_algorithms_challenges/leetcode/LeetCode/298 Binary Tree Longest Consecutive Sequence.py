@@ -33,11 +33,11 @@ class Solution(object
         l = self.longest(cur.left)
         r = self.longest(cur.right)
         __ cur.left and cur.val+1 __ cur.left.val:
-            maxa = max(maxa, l+1)
+            maxa = ma.(maxa, l+1)
         __ cur.right and cur.val+1 __ cur.right.val:
-            maxa = max(maxa, r+1)
+            maxa = ma.(maxa, r+1)
 
-        self.gmax = max(self.gmax, maxa)
+        self.gmax = ma.(self.gmax, maxa)
         r_ maxa
 
     ___ longestConsecutive_error(self, root
@@ -51,10 +51,10 @@ class Solution(object
         maxa = 1
         l = self.longestConsecutive(root.left)
         r = self.longestConsecutive(root.right)
-        maxa = max(maxa, l, r)
+        maxa = ma.(maxa, l, r)
         __ root.left and root.val + 1 __ root.left.val:
-            maxa = max(maxa, l+1)
+            maxa = ma.(maxa, l+1)
         __ root.right and root.val + 1 __ root.right.val:
-            maxa = max(maxa, r+1)
+            maxa = ma.(maxa, r+1)
 
         r_ maxa

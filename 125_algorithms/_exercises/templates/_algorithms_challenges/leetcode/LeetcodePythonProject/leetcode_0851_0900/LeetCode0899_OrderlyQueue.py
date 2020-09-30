@@ -9,8 +9,8 @@ class Solution(object
             r_ ''.join(sorted(S))
         n = le.(S)
         minIdx = 0
-        ___ i in range(1, n
-            ___ i1 in range(n
+        ___ i __ range(1, n
+            ___ i1 __ range(n
                 __ S[(i+i1)%n] < S[(minIdx+i1)%n]:
                     minIdx = i
                     break
@@ -30,11 +30,11 @@ class Solution(object
                 "gxzv", 4,
             ],
         ]
-        ___ s, k in testCases:
+        ___ s, k __ testCases:
             res = self.orderlyQueue(s, k)
             print('res: %s' % res)
             print('-='*30+'-')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

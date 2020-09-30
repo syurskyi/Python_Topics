@@ -62,5 +62,5 @@ class MeetupTest(unittest.TestCase
         self.assertRaises(MeetupDayException, meetup_day,
                           2015, 2, 'Monday', '5th')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

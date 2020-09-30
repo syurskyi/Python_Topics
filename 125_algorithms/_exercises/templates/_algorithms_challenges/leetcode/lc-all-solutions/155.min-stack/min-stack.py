@@ -4,7 +4,7 @@ class MinStack(object
     """
     initialize your data structure here.
     """
-    self.stack = []
+    self.stack =   # list
 
   ___ push(self, x
     """

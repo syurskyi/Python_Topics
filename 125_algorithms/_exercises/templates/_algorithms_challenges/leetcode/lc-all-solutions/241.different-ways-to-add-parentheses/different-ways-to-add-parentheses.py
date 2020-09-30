@@ -8,10 +8,10 @@ class Solution(object
     :rtype: List[int]
     """
     ops = {"+": add, "-": sub, "*": mul, "/": div}
-    ans = []
-    ___ i, c in enumerate(input
-      __ c in ops:
+    ans =   # list
+    ___ i, c __ enumerate(input
+      __ c __ ops:
         left = self.diffWaysToCompute(input[:i])
         right = self.diffWaysToCompute(input[i + 1:])
-        ans.extend([ops[c](a, b) ___ a in left ___ b in right])
+        ans.extend([ops[c](a, b) ___ a __ left ___ b __ right])
     r_ ans __ ans else [int(input)]

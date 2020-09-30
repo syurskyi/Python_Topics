@@ -26,14 +26,14 @@ ___ get_movies_by_director(
         reader = csv.DictReader(f)
         films = [{'director': r['director_name'], 'title': r['movie_title'], 'year': r['title_year'],
                   'score': r['imdb_score']}
-                 ___ r in reader]
+                 ___ r __ reader]
     result = defaultdict()
-    ___ r in films:
+    ___ r __ films:
         yr = int(r['year'], 10) __ r['year'] else 0
         __ yr >= MIN_YEAR:
             score = float(r['score']) __ r['score'] else 0.0
             movie = Movie(r['title'], yr, score)
-            __ r['director'] in result:
+            __ r['director'] __ result:
                 result[r['director']].append(movie)
             ____
                 result[r['director']] = [movie]
@@ -43,7 +43,7 @@ ___ get_movies_by_director(
 ___ calc_mean_score(movies: list
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    r_ round(su.(x.score ___ x in movies) / le.(movies), 1)
+    r_ round(su.(x.score ___ x __ movies) / le.(movies), 1)
 
 
 ___ get_average_scores(directors: defaultdict
@@ -51,5 +51,5 @@ ___ get_average_scores(directors: defaultdict
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r_ sorted([(d, calc_mean_score(directors[d])) ___ d in directors.keys() __ le.(directors[d]) >= MIN_MOVIES],
+    r_ sorted([(d, calc_mean_score(directors[d])) ___ d __ directors.keys() __ le.(directors[d]) >= MIN_MOVIES],
                   key=lambda x: -x[1])

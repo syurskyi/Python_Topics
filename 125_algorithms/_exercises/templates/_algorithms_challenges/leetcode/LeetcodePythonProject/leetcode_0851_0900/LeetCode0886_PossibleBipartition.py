@@ -10,19 +10,19 @@ class Solution(object
         :type dislikes: List[List[int]]
         :rtype: bool
         """
-        graph = [[False]*N ___ _ in range(N)]
-        ___ d in dislikes:
+        graph = [[False]*N ___ _ __ range(N)]
+        ___ d __ dislikes:
             graph[d[0]-1][d[1]-1] = True
             graph[d[1]-1][d[0]-1] = True
         group = [0]*N
-        ___ i in range(N
+        ___ i __ range(N
             __ group[i] __ 0 and not self.dfs(graph, group, i, 1, N
                 r_ False
         r_ True
     
     ___ dfs(self, graph, group, idx, g, N
         group[idx] = g
-        ___ i in range(N
+        ___ i __ range(N
             __ graph[idx][i] __ 1:
                 __ group[i] __ g:
                     r_ False
@@ -37,24 +37,24 @@ class Solution(object
         :rtype: bool
         """
         hashmap = {}
-        ___ num in range(1, N+1
+        ___ num __ range(1, N+1
             hashmap[num] = set()
-        ___ d in dislikes:
+        ___ d __ dislikes:
             hashmap[d[0]].add(d[1])
             hashmap[d[1]].add(d[0])
-        g0, g1 = [1], []
+        g0, g1 = [1],   # list
         r_ self.dfs2(g0, g1, hashmap, 2, N)
     
     ___ dfs2(self, g0, g1, hashmap, n, N
         __ n > N:
             r_ True
         dislike0, dislike1 = False, False
-        ___ num in g0:
-            __ n in hashmap[num] or num in hashmap[n]:
+        ___ num __ g0:
+            __ n __ hashmap[num] or num __ hashmap[n]:
                 dislike0 = True
                 break
-        ___ num in g1:
-            __ n in hashmap[num] or num in hashmap[n]:
+        ___ num __ g1:
+            __ n __ hashmap[num] or num __ hashmap[n]:
                 dislike1 = True
                 break
         res = False
@@ -75,10 +75,10 @@ class Solution(object
                 [[1,2],[1,3],[2,3]],
             ],
         ]
-        ___ N, dislikes in testCases:
+        ___ N, dislikes __ testCases:
             res = self.possibleBipartition(N, dislikes)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -11,8 +11,8 @@ class Solution(object
         """
         m, n = le.(grid), le.(grid[0])
         res = 0
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 __ (grid[i][j]
                     res += 2+grid[i][j]*4
                 __ i > 0:
@@ -27,10 +27,10 @@ class Solution(object
             [[1,1,1],[1,0,1],[1,1,1]],
             [[2,2,2],[2,1,2],[2,2,2]],
         ]
-        ___ grid in testCases:
+        ___ grid __ testCases:
             res = self.surfaceArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

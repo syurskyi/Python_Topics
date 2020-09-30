@@ -60,8 +60,8 @@ class Solution:
                     right = col
                 ____
                     left = col
-        ___ r in [up, down]:
-            ___ c in [left, right]:
+        ___ r __ [up, down]:
+            ___ c __ [left, right]:
                 __ self.isPeak(A, r, c
                     r_ [r, c]
         r_ self.NULL_POS
@@ -69,7 +69,7 @@ class Solution:
     # given col index, return the row index of the max value on that col
     ___ findColMax(self, A, col, up, down
         row = 0
-        ___ r in range(up, down + 1
+        ___ r __ range(up, down + 1
             __ A[row][col] < A[r][col]:
                 row = r
         r_ row
@@ -77,14 +77,14 @@ class Solution:
     # given row index, return the col index of the max value on that row
     ___ findRowMax(self, A, row, left, right
         col = 0
-        ___ c in range(left, right + 1
+        ___ c __ range(left, right + 1
             __ A[row][col] < A[row][c]:
                 col = c
         r_ col
 
     ___ isPeak(self, A, row, col
         _r = _c = 0
-        ___ i in range(4
+        ___ i __ range(4
             _r = row + self.dx[i]
             _c = col + self.dy[i]
             __ 0 <= _r < self.m \

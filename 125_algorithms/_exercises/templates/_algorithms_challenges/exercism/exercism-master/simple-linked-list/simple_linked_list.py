@@ -11,11 +11,11 @@ class Node:
 
 
 class LinkedList:
-    ___ __init__(self, values=[]
+    ___ __init__(self, values=  # list
         self._size = 0
         self._head = None
 
-        ___ value in values:
+        ___ value __ values:
             self.push(value)
 
     ___ __len__(self

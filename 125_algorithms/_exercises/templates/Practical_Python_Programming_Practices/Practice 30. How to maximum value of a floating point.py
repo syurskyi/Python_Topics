@@ -8,7 +8,7 @@ x = float(input("Insert floating point numbers only: "))
 y = str(x)
 maxi = -1
 
-for i in range(len(y)):
+___ i __ range(len(y)):
     if y[i] == '.':
         continue
     elif maxi < int(y[i]):

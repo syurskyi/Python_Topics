@@ -7,7 +7,7 @@ class Solution:
     """
     ___ __init__(self, k
         self.k = k
-        self.tops = []
+        self.tops =   # list
 
     """
     @param: num: Number to be added

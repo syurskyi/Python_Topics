@@ -9,7 +9,7 @@ class Solution(object
     w___ start + 1 < end:
       mid = start + (end - start) / 2
       count = 0
-      ___ num in nums:
+      ___ num __ nums:
         __ num < mid:
           count += 1
       __ count >= mid:

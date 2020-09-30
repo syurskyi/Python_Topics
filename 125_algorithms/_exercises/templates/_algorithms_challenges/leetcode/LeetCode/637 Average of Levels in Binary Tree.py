@@ -32,7 +32,7 @@ class Solution:
         """
         BFS
         """
-        ret = []
+        ret =   # list
         __ not root:
             r_ ret
 
@@ -41,8 +41,8 @@ class Solution:
             n = le.(q)
             avg = su.(map(lambda node: node.val, q)) / n
             ret.append(avg)
-            cur_q = []
-            ___ node in q:
+            cur_q =   # list
+            ___ node __ q:
                 __ node.left:
                     cur_q.append(node.left)
                 __ node.right:

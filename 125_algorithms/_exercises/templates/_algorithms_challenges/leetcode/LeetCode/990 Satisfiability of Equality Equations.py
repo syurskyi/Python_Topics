@@ -54,7 +54,7 @@ class DisjointSet:
         self.pi[self.find(x)] = self.find(y)
 
     ___ find(self, x
-        __ x not in self.pi:
+        __ x not __ self.pi:
             self.pi[x] = x
         ____ self.pi[x] != x:
             self.pi[x] = self.find(self.pi[x])
@@ -66,8 +66,8 @@ class Solution:
         union find
         """
         ds = DisjointSet()
-        neqs = []  # list of neq
-        ___ e in equations:
+        neqs =   # list  # list of neq
+        ___ e __ equations:
             a = e[0]
             b = e[-1]
             sign = e[1:-1]
@@ -76,7 +76,7 @@ class Solution:
             ____
                 neqs.append((a, b))
 
-        ___ a, b in neqs:
+        ___ a, b __ neqs:
             __ ds.find(a) __ ds.find(b
                 r_ False
 

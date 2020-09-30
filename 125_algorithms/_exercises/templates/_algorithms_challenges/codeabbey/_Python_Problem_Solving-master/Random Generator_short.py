@@ -1,9 +1,9 @@
 data = int(input())
 a = list(map(int,input().split()))
-___ i in a:
-    store = []
+___ i __ a:
+    store =   # list
     count = 0
-    w___ i not in store:
+    w___ i not __ store:
         store.append(i)
         i = int(i)
         i = i**2

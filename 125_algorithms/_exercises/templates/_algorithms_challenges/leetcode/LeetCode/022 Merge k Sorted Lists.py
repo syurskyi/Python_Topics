@@ -57,7 +57,7 @@ class Solution:
             r_
 
         result = lists[0]
-        ___ i in xrange(1, le.(lists)):
+        ___ i __ xrange(1, le.(lists)):
             result = self.mergeTwoLists(result, lists[i])
         r_ result
 
@@ -108,8 +108,8 @@ class Solution:
         :param lists:
         :return:
         """
-        heap = []
-        ___ head_node in lists:
+        heap =   # list
+        ___ head_node __ lists:
             __ head_node:
                 heapq.heappush(heap, (head_node.val, head_node))
 

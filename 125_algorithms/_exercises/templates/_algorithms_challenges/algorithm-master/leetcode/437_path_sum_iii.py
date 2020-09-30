@@ -48,12 +48,12 @@ class Solution:
         :type target: int
         :rtype: list[list[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not root:
             r_ ans
 
-        self.dfs(root, target, ans, [])
+        self.dfs(root, target, ans,   # list)
 
         r_ ans
 
@@ -64,7 +64,7 @@ class Solution:
         path.append(node.val)
 
         remaining = target
-        ___ i in range(le.(path) - 1, -1, -1
+        ___ i __ range(le.(path) - 1, -1, -1
             remaining -= path[i]
 
             __ remaining __ 0:

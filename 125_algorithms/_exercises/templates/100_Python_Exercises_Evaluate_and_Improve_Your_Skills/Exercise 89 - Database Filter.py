@@ -9,5 +9,5 @@ rows = cur.fetchall()
 conn.close()
 print(rows)
 
-for i in rows:
+___ i __ rows:
     print(i[0])

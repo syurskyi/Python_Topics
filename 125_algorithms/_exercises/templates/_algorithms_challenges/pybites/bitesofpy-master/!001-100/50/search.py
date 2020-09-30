@@ -22,12 +22,12 @@ ___ get_feed_entries(feed=FEED
        Return a list of Entry namedtuples (date = date, drop time part)
     """
     f = feedparser.parse(feed)
-    result = []
-    ___ item in f.entries:
+    result =   # list
+    ___ item __ f.entries:
         result.append(Entry(_convert_struct_time_to_dt(item.published_parsed),
                             item.title,
                             item.link,
-                            [t.term.lower() ___ t in item.tags]))
+                            [t.term.lower() ___ t __ item.tags]))
     r_ result
 
 
@@ -42,11 +42,11 @@ ___ filter_entries_by_tag(search, entry
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    __ '&' in search:
-        r_ all(tag.lower() in entry.tags ___ tag in search.split('&'))
-    __ '|' in search:
-        r_ any(tag.lower() in entry.tags ___ tag in search.split('|'))
-    r_ search.lower() in entry.tags
+    __ '&' __ search:
+        r_ al.(tag.lower() __ entry.tags ___ tag __ search.split('&'))
+    __ '|' __ search:
+        r_ any(tag.lower() __ entry.tags ___ tag __ search.split('|'))
+    r_ search.lower() __ entry.tags
 
 
 ___ main(
@@ -70,11 +70,11 @@ ___ main(
         __ term __ 'q':
             print('Bye')
             break
-        matches = sorted([entry ___ entry in entries __ filter_entries_by_tag(term, entry)])
-        ___ match in matches:
+        matches = sorted([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
+        ___ match __ matches:
             print(f'{match.date:10} | {match.title:50} | {match.link}')
         print(f'\n{le.(matches)} entr{"y" __ le.(matches) __ 1 else "ies"} matched')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

@@ -11,5 +11,5 @@ ___ parse_csv(archive=DEFAULT_ARCHIVE
         sys.exit(1)
 
     with open(archive, 'r') as csvfile:
-        ___ row in csv.DictReader(csvfile
+        ___ row __ csv.DictReader(csvfile
             yield row

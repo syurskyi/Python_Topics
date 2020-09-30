@@ -15,7 +15,7 @@ class ValidWordAbbr(object
         self.abbrev = defaultdict(int)
         self.dictionary = set(dictionary)
 
-        ___ word in dictionary:
+        ___ word __ dictionary:
             self.abbrev[self.process(word)] += 1
 
     ___ process(self, word
@@ -30,5 +30,5 @@ class ValidWordAbbr(object
         :type word: str
         :rtype: bool
         """
-        r_ (word in self.dictionary and self.abbrev[self.process(word)] __ 1 or
-                not self.process(word) in self.abbrev)
+        r_ (word __ self.dictionary and self.abbrev[self.process(word)] __ 1 or
+                not self.process(word) __ self.abbrev)

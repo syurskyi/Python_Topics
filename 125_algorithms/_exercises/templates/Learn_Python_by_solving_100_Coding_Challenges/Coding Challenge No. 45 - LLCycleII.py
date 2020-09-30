@@ -5,7 +5,7 @@
 
 
 class ListNode:
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None):
         self.val = val
         self.next = next
 
@@ -16,9 +16,9 @@ class Solution:
     @return: the node where the cycle begins. If there is no cycle, return null
     """
 
-    def detectCycle(self, head):
+    ___ detectCycle(self, head):
         if head == None or head.next == None:
-            return None
+            r_ None
         slow = fast = head
         while fast and fast.next:
             slow = slow.next
@@ -30,11 +30,11 @@ class Solution:
             while slow != fast:
                 slow = slow.next
                 fast = fast.next
-            return slow
-        return None
+            r_ slow
+        r_ None
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     ll, ll.next, ll.next.next = ListNode(2), ListNode(4), ListNode(3),
     ll.next.next.next = ll.next
     print( Solution().detectCycle(ll).val )

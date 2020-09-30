@@ -5,10 +5,10 @@ class Solution(object
     :rtype: List[List[str]]
     """
     d = collections.defaultdict(list)
-    ___ path in paths:
+    ___ path __ paths:
       raw = path.split(" ")
       dirPath = raw[0]
-      ___ data in raw[1:]:
+      ___ data __ raw[1:]:
         name, sign = data.split("(")
         d[sign].append(dirPath + "/" + name)
     r_ filter(lambda x: le.(x) > 1, d.values())

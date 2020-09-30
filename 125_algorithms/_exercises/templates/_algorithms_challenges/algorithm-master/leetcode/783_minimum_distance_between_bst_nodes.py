@@ -53,7 +53,7 @@ class Solution:
         ans = float('inf')
         pre = None
 
-        stack = []
+        stack =   # list
         node = root
 
         w___ node or stack:

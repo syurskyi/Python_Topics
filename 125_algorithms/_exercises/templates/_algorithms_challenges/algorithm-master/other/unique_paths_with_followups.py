@@ -32,11 +32,11 @@ ___ find_unique_paths(m, n
     __ not m or not n:
         r_ 0
 
-    dp = [[0] * n ___ _ in range(m)]
+    dp = [[0] * n ___ _ __ range(m)]
     dp[0][0] = 1
 
-    ___ y in range(1, n
-        ___ x in range(m
+    ___ y __ range(1, n
+        ___ x __ range(m
             dp[x][y] = dp[x][y - 1]
 
             __ x > 0:
@@ -71,10 +71,10 @@ ___ find_unique_paths1(m, n
     dp[0] = 1
     pre = cur = 0
 
-    ___ y in range(1, n
+    ___ y __ range(1, n
         pre = cur = 0
 
-        ___ x in range(m
+        ___ x __ range(m
             pre, cur = cur, dp[x]
 
             __ x > 0:
@@ -114,10 +114,10 @@ ___ find_unique_paths2(m, n, points
         r_ False
 
     path = [(0, 0), (0, n - 1)]
-    path.extend(tuple(p) ___ p in points)
+    path.extend(tu..(p) ___ p __ points)
     path.sort(key=lambda p: (p[1], p[0]))
 
-    ___ i in range(1, le.(path)):
+    ___ i __ range(1, le.(path)):
         x, y = path[i]
         _x, _y = path[i - 1]
         delta = y - _y
@@ -159,7 +159,7 @@ ___ find_unique_paths3(m, n, points
 
     points.sort(key=lambda p: (p[1], p[0]))
 
-    dp = [[0] * n ___ _ in range(m)]
+    dp = [[0] * n ___ _ __ range(m)]
     dp[0][0] = 1
     k = le.(points)
     i = 0
@@ -170,8 +170,8 @@ ___ find_unique_paths3(m, n, points
     __ i >= k:
         r_ NOT_FOUND
 
-    ___ y in range(1, n
-        ___ x in range(m
+    ___ y __ range(1, n
+        ___ x __ range(m
             dp[x][y] = dp[x][y - 1]
 
             __ x > 0:
@@ -181,7 +181,7 @@ ___ find_unique_paths3(m, n, points
                 dp[x][y] += dp[x + 1][y - 1]
 
         __ i < k and y __ points[i][1]:
-            ___ x in range(m
+            ___ x __ range(m
                 __ x != points[i][0]:
                     dp[x][y] = 0
             i += 1
@@ -211,11 +211,11 @@ ___ find_unique_paths4(m, n, h
     __ not m or not n:
         r_ 0
 
-    dp = [[0] * n ___ _ in range(m)]
+    dp = [[0] * n ___ _ __ range(m)]
     dp[0][0] = 1
 
-    ___ y in range(1, n
-        ___ x in range(m
+    ___ y __ range(1, n
+        ___ x __ range(m
             dp[x][y] = dp[x][y - 1]
 
             __ x > 0:
@@ -227,12 +227,12 @@ ___ find_unique_paths4(m, n, h
     __ h < 1:
         r_ dp[0][n - 1]
 
-    ___ y in range(n
-        ___ x in range(h
+    ___ y __ range(n
+        ___ x __ range(h
             dp[x][y] = 0
 
-    ___ y in range(1, n
-        ___ x in range(h - 1, -1, -1
+    ___ y __ range(1, n
+        ___ x __ range(h - 1, -1, -1
             dp[x][y] = dp[x][y - 1]
 
             __ x > 0:
@@ -263,11 +263,11 @@ ___ find_unique_paths5(m, n
     __ not m or not n:
         r_ 0
 
-    dp = [[0] * n ___ _ in range(m)]
+    dp = [[0] * n ___ _ __ range(m)]
     dp[0][0] = 1
 
-    ___ x in range(1, m
-        ___ y in range(n
+    ___ x __ range(1, m
+        ___ y __ range(n
             dp[x][y] = dp[x - 1][y]
 
             __ y > 0:

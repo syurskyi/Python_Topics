@@ -16,7 +16,7 @@ CHOICE = 11
 
 
 ___ ns(number, dice
-    r_ su.(n ___ n in dice __ n __ number)
+    r_ su.(n ___ n __ dice __ n __ number)
 
 
 ___ full_house(dice

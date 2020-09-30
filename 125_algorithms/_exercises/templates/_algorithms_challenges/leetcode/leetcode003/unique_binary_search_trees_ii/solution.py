@@ -15,12 +15,12 @@ class Solution:
         __ not a:
             r_ [None]
         ____
-            res = []
-            ___ i, c in enumerate(a
+            res =   # list
+            ___ i, c __ enumerate(a
                 left = self.generate_bst(a[:i])
                 right = self.generate_bst(a[i + 1:])
-                ___ l in left:
-                    ___ r in right:
+                ___ l __ left:
+                    ___ r __ right:
                         root = TreeNode(c)
                         root.left = l
                         root.right = r

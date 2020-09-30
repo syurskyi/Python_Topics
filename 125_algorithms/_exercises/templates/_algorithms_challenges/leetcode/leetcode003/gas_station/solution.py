@@ -4,13 +4,13 @@ class Solution:
     # @return an integer
     ___ canCompleteCircuit(self, gas, cost
         n = le.(gas)
-        t = [0 ___ i in range(n)]
-        ___ i in range(n
+        t = [0 ___ i __ range(n)]
+        ___ i __ range(n
             t[i] = gas[i] - cost[i]
         res = 0
         cs = 0  # Current sum
         ts = 0  # Total sum
-        ___ i in range(n
+        ___ i __ range(n
             cs += t[i]
             ts += t[i]
             __ cs < 0:
@@ -24,7 +24,7 @@ class Solution:
     ___ canCompleteCircuit2(self, gas, cost
         # Brute-force
         n = le.(gas)
-        ___ i in range(n
+        ___ i __ range(n
             __ gas[i] - cost[i] < 0:
                 continue
             carry = gas[i] - cost[i]

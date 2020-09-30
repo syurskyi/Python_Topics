@@ -20,14 +20,14 @@ class Solution:
         :rtype: List[List[int]]
         """
         __ not root:
-            r_ []
+            r_   # list
 
         q = [root]
-        ret = []
+        ret =   # list
         w___ q:
-            cur = []
-            q_new = []
-            ___ e in q:
+            cur =   # list
+            q_new =   # list
+            ___ e __ q:
                 q_new.extend(e.children)
                 cur.append(e.val)
 

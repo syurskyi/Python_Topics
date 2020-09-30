@@ -6,8 +6,8 @@ class Solution(object
     """
     num = ""
     stack = [["", 1]]
-    ___ c in s:
-      __ c in "0123456789":
+    ___ c __ s:
+      __ c __ "0123456789":
         num += c
       ____ c __ "[":
         stack.append(["", int(num)])

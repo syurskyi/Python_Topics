@@ -23,8 +23,8 @@ class Solution:
 
         # if iterate num first, then the answer will become the number of unique set
         # see the last Solution in this file
-        ___ amount in range(1, target + 1
-            ___ num in nums:
+        ___ amount __ range(1, target + 1
+            ___ num __ nums:
                 __ amount >= num:
                     dp[amount] += dp[amount - num]
 
@@ -57,7 +57,7 @@ class Solution:
 
         res = 0
 
-        ___ a in nums:
+        ___ a __ nums:
             __ remain < a:
                 continue
 
@@ -80,9 +80,9 @@ class Solution:
         __ not nums:
             r_ 0
 
-        ans = []
+        ans =   # list
         nums.sort(reverse=True)
-        self.dfs(nums, target, ans, [])
+        self.dfs(nums, target, ans,   # list)
 
         r_ le.(ans)
 
@@ -91,7 +91,7 @@ class Solution:
             ans.append(path[::-1])
             r_
 
-        ___ a in nums:
+        ___ a __ nums:
             __ remain < a:
                 continue
 
@@ -121,8 +121,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        ___ num in nums:
-            ___ amount in range(num, target + 1
+        ___ num __ nums:
+            ___ amount __ range(num, target + 1
                 dp[amount] += dp[amount - num]
 
         r_ dp[target]

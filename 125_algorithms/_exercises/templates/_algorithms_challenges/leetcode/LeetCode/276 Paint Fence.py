@@ -29,7 +29,7 @@ class Solution(object
 
         num_diff = k
         num_same = 0
-        ___ _ in xrange(1, n
+        ___ _ __ xrange(1, n
             num_diff, num_same = (k-1)*(num_diff+num_same), num_diff
 
         r_ num_diff+num_same
@@ -45,20 +45,20 @@ class Solution(object
         __ n < 1:
             r_ 0
 
-        F = [[[0 ___ _ in xrange(k)] ___ _ in xrange(k)] ___ _ in xrange(2)]
+        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(2)]
         EMPTY = 0
 
-        ___ j0 in xrange(k
+        ___ j0 __ xrange(k
             F[1][j0][EMPTY] = 1
 
-        ___ i in xrange(2, n+1
-            ___ j0 in xrange(k
-                ___ j1 in xrange(k
+        ___ i __ xrange(2, n+1
+            ___ j0 __ xrange(k
+                ___ j1 __ xrange(k
                     F[i%2][j0][j1] = 0
 
-            ___ j0 in xrange(k
-                ___ j1 in xrange(k
-                    ___ j2 in xrange(k
+            ___ j0 __ xrange(k
+                ___ j1 __ xrange(k
+                    ___ j2 __ xrange(k
                         __ i __ 2:
                             F[i%2][j0][j1] = F[(i-1)%2][j1][EMPTY]
 
@@ -68,8 +68,8 @@ class Solution(object
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
 
         ret = 0
-        ___ j0 in xrange(k
-            ___ j1 in xrange(k
+        ___ j0 __ xrange(k
+            ___ j1 __ xrange(k
                 ret += F[n%2][j0][j1]
 
         r_ ret
@@ -85,16 +85,16 @@ class Solution(object
         __ n < 1:
             r_ 0
 
-        F = [[[0 ___ _ in xrange(k)] ___ _ in xrange(k)] ___ _ in xrange(n+1)]
+        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(n+1)]
         EMPTY = 0
 
-        ___ j0 in xrange(k
+        ___ j0 __ xrange(k
             F[1][j0][EMPTY] = 1
 
-        ___ i in xrange(2, n+1
-            ___ j0 in xrange(k
-                ___ j1 in xrange(k
-                    ___ j2 in xrange(k
+        ___ i __ xrange(2, n+1
+            ___ j0 __ xrange(k
+                ___ j1 __ xrange(k
+                    ___ j2 __ xrange(k
                         __ i __ 2:
                             F[i][j0][j1] = F[i-1][j1][EMPTY]
 
@@ -104,14 +104,14 @@ class Solution(object
                             F[i][j0][j1] += F[i-1][j1][j2]
 
         ret = 0
-        ___ j0 in xrange(k
-            ___ j1 in xrange(k
+        ___ j0 __ xrange(k
+            ___ j1 __ xrange(k
                 ret += F[n][j0][j1]
 
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().numWays(3, 2) __ 6
 
 

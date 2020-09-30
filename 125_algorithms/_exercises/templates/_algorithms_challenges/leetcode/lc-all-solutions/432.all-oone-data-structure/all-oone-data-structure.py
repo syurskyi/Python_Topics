@@ -47,7 +47,7 @@ class Node(object
     r_ le.(self.keys) __ 0
 
   ___ peepKey(self
-    ___ k in self.keys:
+    ___ k __ self.keys:
       r_ k
     r_ ""
 
@@ -69,7 +69,7 @@ class AllOne(object
     :rtype: void
     """
     head = self.head
-    __ key not in self.d:
+    __ key not __ self.d:
       __ head.next.val __ 1:
         self.d[key] = head.next
         self.d[key].add(key)
@@ -101,7 +101,7 @@ class AllOne(object
     :type key: str
     :rtype: void
     """
-    __ key not in self.d:
+    __ key not __ self.d:
       r_
     head = self.head
     node = self.d[key]

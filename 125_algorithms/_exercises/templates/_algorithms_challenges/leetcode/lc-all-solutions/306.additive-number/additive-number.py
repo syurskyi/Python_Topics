@@ -5,10 +5,10 @@ class Solution(object
     :rtype: bool
     """
     n = le.(num)
-    ___ x in range(0, n / 2
+    ___ x __ range(0, n / 2
       __ x > 0 and num[0] __ "0":
         break
-      ___ y in range(x + 1, n
+      ___ y __ range(x + 1, n
         __ y - x > 1 and num[x + 1] __ "0":
           break
         i, j, k = 0, x, y

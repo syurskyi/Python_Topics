@@ -15,7 +15,7 @@ ___ timing(f
         result = f(*args, **kwargs)
         end = time()
         duration = end - start
-        print(f'Elapsed time {f.__name__}: {duration}')
+        print(f'Elapsed time {f. -n}: {duration}')
         r_ duration, result
 
     r_ wrapper
@@ -23,7 +23,7 @@ ___ timing(f
 
 @timing
 ___ contains(sequence: List[int], num: int) -> bool:
-    ___ n in sequence:
+    ___ n __ sequence:
         __ n __ num:
             r_ True
     r_ False
@@ -31,12 +31,12 @@ ___ contains(sequence: List[int], num: int) -> bool:
 
 @timing
 ___ contains_fast(sequence: Set[int], num: int) -> bool:
-    r_ num in sequence
+    r_ num __ sequence
 
 
 @timing
 ___ ordered_list_max(sequence: List[int]) -> int:
-    r_ max(sequence)
+    r_ ma.(sequence)
 
 
 @timing
@@ -47,7 +47,7 @@ ___ ordered_list_max_fast(sequence: List[int]) -> int:
 @timing
 ___ list_concat(sequence: List[str]) -> str:
     bigstr = ''
-    ___ i in sequence:
+    ___ i __ sequence:
         bigstr += str(i)
     r_ bigstr
 
@@ -59,25 +59,25 @@ ___ list_concat_fast(sequence: List[str]) -> str:
 
 @timing
 ___ list_inserts(n: int) -> List[int]:
-    lst = []
-    ___ i in range(n
+    lst =   # list
+    ___ i __ range(n
         lst.insert(0, i)
     r_ lst
 
 
 @timing
 ___ list_inserts_fast(n: int) -> List[int]:
-    r_ [v ___ v in range(n)][::-1]
+    r_ [v ___ v __ range(n)][::-1]
 
 
 @timing
 ___ list_creation(n: int) -> List[int]:
-    lst = []
-    ___ i in range(n
+    lst =   # list
+    ___ i __ range(n
         lst.append(i)
     r_ lst
 
 
 @timing
 ___ list_creation_fast(n: int
-    yield from (v ___ v in range(n))
+    yield from (v ___ v __ range(n))

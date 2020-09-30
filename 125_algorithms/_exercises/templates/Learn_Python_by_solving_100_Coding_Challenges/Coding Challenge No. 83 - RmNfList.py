@@ -8,40 +8,40 @@
 
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
 
 class Solution:
-    def getlength(self,head):
+    ___ getlength(self,head):
         res = 0
         while(head):
             res += 1
             head = head.next
-        return res
+        r_ res
 
-    def removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd(self, head, n):
         """
         :type head: ListNode
         :type n: int
         :rtype: ListNode
         """
         if self.getlength(head)==n:
-            return head.next
+            r_ head.next
 
         node = head
-        for i in range(self.getlength(head)-n-1):
+        ___ i __ range(self.getlength(head)-n-1):
             node = node.next
         node.next = node.next.next
-        return head
+        r_ head
 
-    def printll(self, node):
+    ___ printll(self, node):
         while node:
             print ( node.val )
             node = node.next
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     ll1, ll1.next, ll1.next.next = ListNode(0), ListNode(1), ListNode(5)
     Solution().printll( Solution().removeNthFromEnd(ll1,2) )

@@ -1,7 +1,7 @@
 #Why is the error and how to fix it?
 
-def foo(a=1, b=2):
-    return a + b
+___ foo(a=1, b=2):
+    r_ a + b
 
 print(type(foo()))
 

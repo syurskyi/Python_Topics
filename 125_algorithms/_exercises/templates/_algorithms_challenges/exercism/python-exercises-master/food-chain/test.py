@@ -100,12 +100,12 @@ class FoodChainTest(unittest.TestCase
         self.assertEqual(recite(1, 3), expected)
 
     ___ test_full_song(self
-        expected = []
-        ___ n in range(1, 9
+        expected =   # list
+        ___ n __ range(1, 9
             expected += recite(n, n) + [""]
         expected.p..
         self.assertEqual(recite(1, 8), expected)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -5,7 +5,7 @@ class TestGraph(object
 
     ___ create_graph(self
         graph = Graph()
-        ___ key in range(0, 6
+        ___ key __ range(0, 6
             graph.add_node(key)
         r_ graph
 
@@ -69,5 +69,5 @@ ___ main(
     test.test_graph_undirected()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

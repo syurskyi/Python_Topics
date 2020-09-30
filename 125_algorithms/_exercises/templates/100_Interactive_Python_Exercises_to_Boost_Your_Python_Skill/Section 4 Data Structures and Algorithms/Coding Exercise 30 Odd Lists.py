@@ -1,3 +1,3 @@
-def foo(mylist):
+___ foo(mylist):
     middle_index = int(len(mylist)/2)
-    return mylist[middle_index]
+    r_ mylist[middle_index]

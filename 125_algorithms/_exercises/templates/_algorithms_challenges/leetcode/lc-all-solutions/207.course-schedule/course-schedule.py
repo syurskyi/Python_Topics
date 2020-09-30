@@ -8,7 +8,7 @@ class Solution(object
 
     ___ dfs(start, parent, visited, graph
       visited[start] = 1
-      ___ nbr in graph[start]:
+      ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
           r_ False
         __ dfs(nbr, start, visited, graph) __ False:
@@ -16,14 +16,14 @@ class Solution(object
       visited[start] = 2
       r_ True
 
-    graph = [[] ___ _ in range(0, numCourses)]
-    ___ pre in prerequisites:
+    graph = [[] ___ _ __ range(0, numCourses)]
+    ___ pre __ prerequisites:
       start, end = pre
       graph[start].append(end)
 
-    visited = [0 ___ _ in range(0, numCourses)]
+    visited = [0 ___ _ __ range(0, numCourses)]
 
-    ___ pre in prerequisites:
+    ___ pre __ prerequisites:
       start, end = pre
       __ visited[start] __ 0:
         __ dfs(start, None, visited, graph) __ False:

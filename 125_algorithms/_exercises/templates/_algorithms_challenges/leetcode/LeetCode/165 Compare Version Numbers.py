@@ -26,15 +26,15 @@ class Solution:
         n1 = le.(version1)
         n2 = le.(version2)
 
-        ___ i in xrange(min(n1, n2)):
+        ___ i __ xrange(min(n1, n2)):
             __ version1[i] __ version2[i]:
                 pass
             ____
                 r_ -1 __ version1[i] < version2[i] else 1
 
         # 1.0.0 and 1 
-        __ n1 __ n2 or n1 > n2 and all(map(lambda x: x __ 0, version1[n2:])) or \
-                                n1 < n2 and all(map(lambda x: x __ 0, version2[n1:])):
+        __ n1 __ n2 or n1 > n2 and al.(map(lambda x: x __ 0, version1[n2:])) or \
+                                n1 < n2 and al.(map(lambda x: x __ 0, version2[n1:])):
             r_ 0
 
         r_ -1 __ n1 < n2 else 1

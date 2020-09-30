@@ -18,7 +18,7 @@ class BSTIterator:
     @param: root: The root of binary tree.
     """
     ___ __init__(self, root
-        self.stack = []
+        self.stack =   # list
         self.node = root
 
     """

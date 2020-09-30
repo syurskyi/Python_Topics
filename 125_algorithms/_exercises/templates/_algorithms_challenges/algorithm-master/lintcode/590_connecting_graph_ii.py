@@ -7,7 +7,7 @@ class ConnectingGraph2:
             r_
         self.nodes = {}
         self.count = {}
-        ___ i in range(n
+        ___ i __ range(n
             self.nodes[i + 1] = i + 1
             self.count[i + 1] = 1
 

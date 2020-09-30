@@ -9,36 +9,36 @@ class Solution:
     @param prices: a list of integer
     @return: an integer which is maximum profit
     """
-    def maxProfit(self, k, prices):
+    ___ maxProfit(self, k, prices):
         if prices is None or len(prices) <= 1 or k <= 0:
-            return 0
+            r_ 0
         n = len(prices)
         # k >= prices.length / 2 ==> multiple transactions Stock II
         if k >= n / 2:
             profit_max = 0
-            for i in range(1, n):
+            ___ i __ range(1, n):
                 diff = prices[i] - prices[i - 1]
                 if diff > 0:
                     profit_max += diff
-            return profit_max
+            r_ profit_max
 
-        f = [[0 for i in range(k + 1)] for j in range(n + 1)]
-        for j in range(1, k + 1):
-            for i in range(1, n + 1):
-                for x in range(0, i + 1):
-                    f[i][j] = max(f[i][j], f[x][j - 1] + self.profit(prices, x + 1, i))
-        return f[n][k]
+        f = [[0 ___ i __ range(k + 1)] ___ j __ range(n + 1)]
+        ___ j __ range(1, k + 1):
+            ___ i __ range(1, n + 1):
+                ___ x __ range(0, i + 1):
+                    f[i][j] = ma.(f[i][j], f[x][j - 1] + self.profit(prices, x + 1, i))
+        r_ f[n][k]
 
         # calculate the profit of prices(l, u)
-        def profit(self, prices, l, u):
+        ___ profit(self, prices, l, u):
             if l >= u:
-                return 0
+                r_ 0
             valley = 2**31 - 1
             profit_max = 0
-        for price in prices[l - 1:u]:
-            profit_max = max(profit_max, price - valley)
+        ___ price __ prices[l - 1:u]:
+            profit_max = ma.(profit_max, price - valley)
             valley = min(valley, price)
-        return profit_max
+        r_ profit_max
 
 
 Solution().maxProfit(8,[1, 4, 8, 1, 2, 10, 20, 30, 5, 3])

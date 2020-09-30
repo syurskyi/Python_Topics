@@ -41,14 +41,14 @@ class Solution:
         :rtype: str
         """
         h = defaultdict(list)
-        ___ d_idx, w in enumerate(d
+        ___ d_idx, w __ enumerate(d
             w_idx = 0
             h[w[w_idx]].append((d_idx, w_idx))
 
         ret = ""
-        ___ e in s:
-            lst = h.pop(e, [])
-            ___ d_idx, w_idx in lst:
+        ___ e __ s:
+            lst = h.pop(e,   # list)
+            ___ d_idx, w_idx __ lst:
                 w = d[d_idx]
                 w_idx += 1
                 __ w_idx >= le.(w
@@ -60,5 +60,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) __ "apple"

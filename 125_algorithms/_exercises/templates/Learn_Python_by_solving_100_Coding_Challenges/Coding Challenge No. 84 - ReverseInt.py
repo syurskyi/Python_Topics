@@ -7,14 +7,14 @@
 
 class Solution:
     # @return an integer
-    def reverse(self, x):
+    ___ reverse(self, x):
         if x<0:
             sign = -1
         else:
             sign = 1
         strx=str(abs(x))
         r = strx[::-1]
-        return sign*int(r)
+        r_ sign*int(r)
 
 
 Solution().reverse(123)

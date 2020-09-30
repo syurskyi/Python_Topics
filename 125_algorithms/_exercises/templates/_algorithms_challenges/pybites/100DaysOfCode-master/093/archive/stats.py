@@ -17,14 +17,14 @@ ___ _get_tweet_type(row
 
 ___ _get_source(row
     src = get_source(r'\1', row['source'])
-    __ bot in src:
+    __ bot __ src:
         src += ' (our bot)'
     r_ src
 
 
 ___ _get_mentions_or_hashtags(row, regex
     matches = regex.findall(row['text'])
-    r_ [m.lower() ___ m in matches]
+    r_ [m.lower() ___ m __ matches]
 
 
 ___ calc_stats(data
@@ -36,14 +36,14 @@ ___ calc_stats(data
         'sources': Counter(),
     }
 
-    ___ row in data:
+    ___ row __ data:
         tweet_type = _get_tweet_type(row)
         ret['tweets'][tweet_type] += 1
 
-        ___ match in _get_mentions_or_hashtags(row, regex_handle
+        ___ match __ _get_mentions_or_hashtags(row, regex_handle
             ret['mentions'][match] += 1
 
-        ___ match in _get_mentions_or_hashtags(row, regex_hashtag
+        ___ match __ _get_mentions_or_hashtags(row, regex_hashtag
             ret['hashtags'][match] += 1
 
         month = row['timestamp'][:7]

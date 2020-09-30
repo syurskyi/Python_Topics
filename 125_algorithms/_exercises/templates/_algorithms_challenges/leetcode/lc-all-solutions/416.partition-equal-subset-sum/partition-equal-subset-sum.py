@@ -9,7 +9,7 @@ class Solution(object
       r_ True
     __ s % 2 __ 0:
       s, current = s / 2, 0
-      ___ num in nums:
+      ___ num __ nums:
         current |= ((current or 1) << num) % (1 << (s + 1))
         __ current >= 1 << s:
           r_ True

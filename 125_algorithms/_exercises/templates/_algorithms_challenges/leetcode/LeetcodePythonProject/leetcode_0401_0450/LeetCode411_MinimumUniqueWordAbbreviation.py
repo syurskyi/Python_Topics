@@ -6,26 +6,26 @@ Created on Apr 11, 2017
 
 class Solution(object
     ___ minAbbreviation(self, target, dictionary
-        diffs = []
+        diffs =   # list
         m = le.(target)
-        ___ word in dictionary:
+        ___ word __ dictionary:
             __ le.(word) != m: continue
             bits = 0
-            ___ i, c in enumerate(word
+            ___ i, c __ enumerate(word
                 __ c != target[i]:
                     bits += 2**i
             diffs.append(bits)
         __ not diffs:
             r_ str(m)
-        abbrs = []
-        ___ i in range(2**m
-            __ all(d&i ___ d in diffs
+        abbrs =   # list
+        ___ i __ range(2**m
+            __ al.(d&i ___ d __ diffs
                 abbrs.append(self.abbr(target, i))
         r_ min(abbrs, key=lambda x: le.(x))
     
     ___ abbr(self, target, num
         word, count = '', 0
-        ___ w in target:
+        ___ w __ target:
             __ num & 1 __ 1:
                 __ count:
                     word += str(count)
@@ -49,12 +49,12 @@ class Solution(object
                 ["plain", "amber", "blade"],
             ],
         ]
-        ___ target, dictionary in testCases:
+        ___ target, dictionary __ testCases:
             print('target: %s' % target)
             print('dictionary: %s' % dictionary)
             result = self.minAbbreviation(target, dictionary)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

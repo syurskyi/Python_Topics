@@ -13,6 +13,6 @@ ___ hanoi(n,rod_from,rod_middle,rod_to
 	#placing n-1 plates on the top of the largest one
 	hanoi(n-1,rod_middle,rod_from,rod_to)
         
-__ __name__ __ "__main__":
+__  -n __ "__main__":
 
 	hanoi(3,'A','B','C')

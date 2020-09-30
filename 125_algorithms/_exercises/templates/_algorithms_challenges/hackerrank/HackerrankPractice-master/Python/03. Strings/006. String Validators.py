@@ -3,8 +3,8 @@
 
 
 s = input()
-print(any([char.isalnum() ___ char in s]))
-print(any([char.isalpha() ___ char in s]))
-print(any([char.isdigit() ___ char in s]))
-print(any([char.islower() ___ char in s]))
-print(any([char.isupper() ___ char in s]))
+print(any([char.isalnum() ___ char __ s]))
+print(any([char.isalpha() ___ char __ s]))
+print(any([char.isdigit() ___ char __ s]))
+print(any([char.islower() ___ char __ s]))
+print(any([char.isupper() ___ char __ s]))

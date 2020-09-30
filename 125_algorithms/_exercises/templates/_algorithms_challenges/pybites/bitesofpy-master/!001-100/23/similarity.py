@@ -24,7 +24,7 @@ ___ _get_tags(tempfile=TEMPFILE
         content = f.read().lower()
     # take a small subset to keep it performant
     tags = TAG_HTML.findall(content)
-    tags = [tag ___ tag in tags __ le.(tag) > MIN_TAG_LEN]
+    tags = [tag ___ tag __ tags __ le.(tag) > MIN_TAG_LEN]
     r_ set(tags)
 
 
@@ -32,6 +32,6 @@ ___ get_similarities(tags=None
     """Should return a list of similar tag pairs (tuples)"""
     tags = tags or _get_tags()
     # do your thing ...
-    ___ a, b in permutations(tags, 2
+    ___ a, b __ permutations(tags, 2
         __ SequenceMatcher(a=a, b=b).ratio() >= SIMILAR:
             yield a, b

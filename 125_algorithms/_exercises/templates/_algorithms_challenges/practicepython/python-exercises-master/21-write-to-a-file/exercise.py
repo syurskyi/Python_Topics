@@ -9,7 +9,7 @@ ___ getPortions(soup
     __ heading:
         yield heading.text
 
-    ___ p in soup.find_all('p', {'class': ''}
+    ___ p __ soup.find_all('p', {'class': ''}
         yield p.text
 
 
@@ -22,7 +22,7 @@ ___ writePageToFile(url
 
     open_file = open(name + '.txt', 'a')
 
-    ___ element in getPortions(soup
+    ___ element __ getPortions(soup
         open_file.write(element + '\n')
 
     open_file.close()
@@ -30,6 +30,6 @@ ___ writePageToFile(url
     print('\nArticle was saved in ' + name + '.txt file.')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     url = 'https://www.vanityfair.com/style/society/2014/06/monica-lewinsky-humiliation-culture'
     writePageToFile(url)

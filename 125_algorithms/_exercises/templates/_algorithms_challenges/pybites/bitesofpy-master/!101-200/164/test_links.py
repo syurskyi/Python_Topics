@@ -8,7 +8,7 @@ ______ pytest
 
 TMP = '/tmp'
 SCRIPT = 'links.py'
-IS_LOCAL = platform.system() in ['Darwin', 'Linux']
+IS_LOCAL = platform.system() __ ['Darwin', 'Linux']
 MY_CODE = SCRIPT __ IS_LOCAL else path.join(TMP, SCRIPT)
 
 
@@ -24,7 +24,7 @@ ___ _create_and_verify_links(my_file, lines, expected_links
     my_file.write_bytes(b'\n'.join(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
     output = subprocess.check_output(cmd, shell=True).splitlines()
-    assert all(link in output ___ link in expected_links)
+    assert al.(link __ output ___ link __ expected_links)
 
 
 ___ test_make_html_links_first_data_set(my_file

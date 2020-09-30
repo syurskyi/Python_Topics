@@ -14,7 +14,7 @@ class TestStacks(object
     ___ test_push_on_full(self, num_stacks, stack_size
         print('Test: Push to full stack')
         stacks = Stacks(num_stacks, stack_size)
-        ___ i in range(0, stack_size
+        ___ i __ range(0, stack_size
             stacks.push(2, i)
         stacks.push(2, stack_size)
 
@@ -44,5 +44,5 @@ ___ main(
     test.test_stacks(num_stacks, stack_size)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

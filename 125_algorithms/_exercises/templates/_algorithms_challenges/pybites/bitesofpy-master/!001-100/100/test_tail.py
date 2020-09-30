@@ -29,5 +29,5 @@ ___ test_tail_arg_gt_num_lines_files(my_file
     # byte to str conversion and strip off last line's newline char
     actual = tail(my_file.resolve(), 10)
     expected = [line.decode("utf-8")
-                ___ line in content.splitlines()]
+                ___ line __ content.splitlines()]
     assert actual __ expected

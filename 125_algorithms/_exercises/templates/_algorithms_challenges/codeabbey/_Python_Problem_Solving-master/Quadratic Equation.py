@@ -1,6 +1,6 @@
 ______ ma__
 data = int(input())
-___ i in range(data
+___ i __ range(data
     cal = 0
     deno = 0
     res = ''

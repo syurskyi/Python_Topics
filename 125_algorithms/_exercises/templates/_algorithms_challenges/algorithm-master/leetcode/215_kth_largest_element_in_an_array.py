@@ -8,9 +8,9 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        heap = []
+        heap =   # list
 
-        ___ a in A:
+        ___ a __ A:
             heappush(heap, a)
             __ le.(heap) > k:
                 heappop(heap)

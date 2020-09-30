@@ -46,14 +46,14 @@ class Solution:
         j, k scan each element once
         """
         counter = defaultdict(int)
-        ___ a in A:
+        ___ a __ A:
             counter[a] += 1
 
         keys = list(counter.keys())
         keys.sort()
         n = le.(keys)
         ret = 0
-        ___ i in range(n
+        ___ i __ range(n
             j = i  # not i + 1
             k = n - 1
             w___ j <= k:  # not <
@@ -91,7 +91,7 @@ class Solution:
         A.sort()
         n = le.(A)
         ret = 0
-        ___ i in range(n
+        ___ i __ range(n
             j = i + 1
             k = n - 1
             w___ j < k:
@@ -126,14 +126,14 @@ class Solution:
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
         n = le.(A)
-        F = [[[0 ___ _ in range(3 + 1)] ___ _ in range(target + 1)] ___ _ in range(n+1)]
+        F = [[[0 ___ _ __ range(3 + 1)] ___ _ __ range(target + 1)] ___ _ __ range(n+1)]
 
-        ___ i in range(n+1
+        ___ i __ range(n+1
             F[i][0][0] = 1
 
-        ___ i in range(1, n + 1
-            ___ t in range(target + 1
-                ___ k in range(1, 3 + 1
+        ___ i __ range(1, n + 1
+            ___ t __ range(target + 1
+                ___ k __ range(1, 3 + 1
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] % MOD
                     __ t - A[i-1] >= 0:
@@ -149,12 +149,12 @@ class Solution:
         """
         F = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
         n = le.(A)
-        ___ i in range(n+1
+        ___ i __ range(n+1
             F[i][0][0] = 1
 
-        ___ i in range(1, n + 1
-            ___ t in range(target + 1
-                ___ k in range(1, 3 + 1
+        ___ i __ range(1, n + 1
+            ___ t __ range(target + 1
+                ___ k __ range(1, 3 + 1
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] + F[i-1][t-A[i-1]][k-1]
                     F[i][t][k] %= MOD
@@ -162,5 +162,5 @@ class Solution:
         r_ F[n][target][3]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().threeSumMulti([1,1,2,2,3,3,4,4,5,5], 8) __ 20

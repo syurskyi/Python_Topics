@@ -23,10 +23,10 @@ class Solution(object
         testCases = [
             
         ]
-        ___ p, q in testCases:
+        ___ p, q __ testCases:
             res = self.mirrorReflection(p, q)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

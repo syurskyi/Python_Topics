@@ -12,7 +12,7 @@ class Solution(object
         :rtype: TreeNode
         """
         __ not root: r_ None
-        stack = []
+        stack =   # list
         w___ root:
             stack.append(root)
             root = root.left

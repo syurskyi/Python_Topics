@@ -13,22 +13,22 @@ class Solution:
         __ not a or le.(a) <= 1:
             r_ 0
 
-        neibs = [[] ___ _ in range(le.(a) + 1)]  # neighbors
+        neibs = [[] ___ _ __ range(le.(a) + 1)]  # neighbors
 
         # to build the node connection
-        ___ i in range(0, le.(e), 2
+        ___ i __ range(0, le.(e), 2
             neibs[e[i]].append(e[i + 1])
             neibs[e[i + 1]].append(e[i])
 
         self.ans = 0
         res = self.dfs(0, 1, a, neibs)
 
-        r_ max(self.ans, res)
+        r_ ma.(self.ans, res)
 
     ___ dfs(self, root, curr, a, neibs
-        tmp = []
+        tmp =   # list
 
-        ___ neib in neibs[curr]:
+        ___ neib __ neibs[curr]:
             # ignore if the neib is curr's parent
             __ neib __ root:
                 continue
@@ -44,6 +44,6 @@ class Solution:
         tmp.extend((0, 0))
         tmp.sort(reverse=True)
 
-        self.ans = max(self.ans, tmp[0] + tmp[1])
+        self.ans = ma.(self.ans, tmp[0] + tmp[1])
 
         r_ tmp[0]

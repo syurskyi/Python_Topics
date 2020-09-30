@@ -26,7 +26,7 @@ class TreeNode(object
 class Solution(object
     ___ preorderTraversal(self, root
         """Morris"""
-        ret = []
+        ret =   # list
         cur = root
         w___ cur:
             __ not cur.left:
@@ -53,7 +53,7 @@ class Solution(object
         :param root:
         :return:
         """
-        lst = []
+        lst =   # list
         self.preTraverse_itr(root, lst)
         r_ lst
 

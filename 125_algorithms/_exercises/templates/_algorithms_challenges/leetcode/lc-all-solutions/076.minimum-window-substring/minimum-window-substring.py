@@ -9,9 +9,9 @@ class Solution(object
     wanted = collections.Counter(t)
     start, end = le.(s), 3 * le.(s)
     d = {}
-    deq = collections.deque([])
-    ___ i, c in enumerate(s
-      __ c in wanted:
+    deq = collections.deque(  # list)
+    ___ i, c __ enumerate(s
+      __ c __ wanted:
         deq.append(i)
         d[c] = d.get(c, 0) + 1
         __ d[c] <= wanted[c]:

@@ -2,11 +2,11 @@ ______ collections
 
 ___ dice_poker(
     rolls = int(input())
-    answer = []
+    answer =   # list
     
-    ___ roll in range(rolls
+    ___ roll __ range(rolls
         roll = input().split()
-        values = sorted([x ___ x in collections.Counter(roll).values()])
+        values = sorted([x ___ x __ collections.Counter(roll).values()])
 
         __ sorted(roll) __ ['2', '3', '4', '5', '6']:
             answer.append('big-straight')

@@ -36,13 +36,13 @@ class Solution(object
         __ abs(h1 - h2) > 1:
             r_ False
 
-        r_ all([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
+        r_ al.([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
 
     ___ fathom(self, root, depth
         __ not root:
             r_ depth-1
 
-        ret = max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        ret = ma.(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
         self.depth_bottom[root] = ret
         r_ ret
 
@@ -71,4 +71,4 @@ class SolutionSlow(object
         """
         __ not root:
             r_ depth-1  # test cases
-        r_ max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        r_ ma.(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))

@@ -43,10 +43,10 @@ class TopVotedCandidate:
         but time is too large to enumerate. Cannot have direct access, then
         query is binary search
         """
-        self.maxes = []  # [(t, i)]  at time t
+        self.maxes =   # list  # [(t, i)]  at time t
         counter = defaultdict(int)
         tp = sorted(zip(times, persons))
-        ___ t, p in tp:
+        ___ t, p __ tp:
             counter[p] += 1
             __ not self.maxes or counter[self.maxes[-1][1]] <= counter[p]:
                 self.maxes.append((t, p))

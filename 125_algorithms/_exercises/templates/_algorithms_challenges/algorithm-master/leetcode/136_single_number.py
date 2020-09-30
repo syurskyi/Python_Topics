@@ -5,6 +5,6 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        ___ num in nums:
+        ___ num __ nums:
             ans ^= num
         r_ ans

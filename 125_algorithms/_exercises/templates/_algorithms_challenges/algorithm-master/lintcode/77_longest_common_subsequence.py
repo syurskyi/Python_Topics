@@ -20,20 +20,20 @@ class Solution:
         dp[0][j] = 0
         dp[i][0] = 0
         """
-        dp = [[0] * (n + 1) ___ _ in range(2)]
+        dp = [[0] * (n + 1) ___ _ __ range(2)]
         # pi = [[0] * (n + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        ___ i in range(1, m + 1
+        ___ i __ range(1, m + 1
             prev = curr
             curr = 1 - curr
-            ___ j in range(1, n + 1
+            ___ j __ range(1, n + 1
                 """
                 case 1: `A[i]` is not one of pairs
                 case 2: `B[j]` is not one of pairs
                 case 3: `A[i]` and `B[j]` is just a pair
                 """
-                dp[curr][j] = max(dp[prev][j], dp[curr][j - 1])
+                dp[curr][j] = ma.(dp[prev][j], dp[curr][j - 1])
 
                 # if dp[curr][j] == dp[prev][j]:
                 #     pi[i][j] = 1
@@ -41,7 +41,7 @@ class Solution:
                 #     pi[i][j] = 2
 
                 __ A[i - 1] __ B[j - 1]:
-                    dp[curr][j] = max(dp[curr][j], dp[prev][j - 1] + 1)
+                    dp[curr][j] = ma.(dp[curr][j], dp[prev][j - 1] + 1)
 
                     # if dp[curr][j] == dp[prev][j - 1] + 1:
                     #     pi[i][j] = 3

@@ -16,16 +16,16 @@ class Board:
         r_ x >= 0 and x < self.width and y >= 0 and y < self.height
 
     ___ walk(self, x, y,
-             visited_territory=[],
-             visited_coords=[],
-             visited_stones=[]
-        __ not (x, y) in visited_coords and self.valid(x, y
+             visited_territory=  # list,
+             visited_coords=  # list,
+             visited_stones=  # list
+        __ not (x, y) __ visited_coords and self.valid(x, y
             s = self.board[y][x]
-            __ s in STONES:
-                __ s not in visited_stones:
+            __ s __ STONES:
+                __ s not __ visited_stones:
                     r_ (visited_territory, visited_stones + [s])
             ____  # s is empty
-                ___ d in DIRECTIONS:
+                ___ d __ DIRECTIONS:
                     visited = self.walk(x + d[0], y + d[1],
                                         visited_territory + [(x, y)],
                                         visited_coords + [(x, y)],
@@ -38,7 +38,7 @@ class Board:
     ___ territory(self, x, y
         __ not self.valid(x, y
             raise ValueError('invalid coordinate')
-        __ self.board[y][x] in STONES:
+        __ self.board[y][x] __ STONES:
             r_ (NONE, set())
 
         visited_territory, visited_stones = self.walk(x, y)
@@ -50,11 +50,11 @@ class Board:
 
     ___ territories(self
         owners = STONES + [NONE]
-        result = dict([(owner, set()) ___ owner in owners])
+        result = dict([(owner, set()) ___ owner __ owners])
         visited = set()
-        ___ y in range(self.height
-            ___ x in range(self.width
-                __ not (x, y) in visited:
+        ___ y __ range(self.height
+            ___ x __ range(self.width
+                __ not (x, y) __ visited:
                     owner, owned_territories = self.territory(x, y)
                     result[owner].update(owned_territories)
                     visited.update(owned_territories)

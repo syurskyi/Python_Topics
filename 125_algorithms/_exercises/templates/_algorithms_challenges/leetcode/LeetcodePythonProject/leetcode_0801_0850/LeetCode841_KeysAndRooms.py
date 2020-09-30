@@ -13,8 +13,8 @@ class Solution(object
         seen = set(dfs)
         w___ dfs:
             i = dfs.p..
-            ___ j in rooms[i]:
-                __ j not in seen:
+            ___ j __ rooms[i]:
+                __ j not __ seen:
                     dfs.append(j)
                     seen.add(j)
                     __ le.(seen) __ le.(rooms
@@ -25,14 +25,14 @@ class Solution(object
         testCases = [
             [[1],[2],[3],[]],
             [[1,3],[3,0,1],[2],[0]],
-            [[2,3],[],[2],[1,3,1]],
-            [[6,7,8],[5,4,9],[],[8],[4],[],[1,9,2,3],[7],[6,5],[2,3,1]],
+            [[2,3],  # list,[2],[1,3,1]],
+            [[6,7,8],[5,4,9],  # list,[8],[4],[],[1,9,2,3],[7],[6,5],[2,3,1]],
         ]
-        ___ rooms in testCases:
+        ___ rooms __ testCases:
             print('rooms: %s' % rooms)
             res = self.canVisitAllRooms(rooms)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

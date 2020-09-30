@@ -89,5 +89,5 @@ class YachtTest(unittest.TestCase
         self.assertEqual(score([2, 2, 2, 2, 2], yacht.CHOICE), 10)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

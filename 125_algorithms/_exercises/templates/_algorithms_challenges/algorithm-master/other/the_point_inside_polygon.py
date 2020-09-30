@@ -22,7 +22,7 @@ ___ get_random_point_inside_rectangle(rectangle
     :rtype: list[int]
     """
     __ not rectangle:
-        r_ []
+        r_   # list
 
     x1, y1, x2, y2 = rectangle
 
@@ -40,11 +40,11 @@ ___ get_random_point_inside_rectangle2(rectangles
     :rtype: list[int]
     """
     __ not rectangles:
-        r_ []
+        r_   # list
 
     k = total = 0
 
-    ___ i in range(le.(rectangles)):
+    ___ i __ range(le.(rectangles)):
         x1, y1, x2, y2 = rectangles[i]
         area = (x2 - x1) * (y1 - y2)
 
@@ -64,7 +64,7 @@ ___ get_random_point_inside_rectangle3(rectangles
     :rtype: list[int]
     """
     __ not rectangles:
-        r_ []
+        r_   # list
 
 # ======
 
@@ -81,29 +81,29 @@ ___ is_point_inside_polygon(polygon, point
 # ======
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     ______ collections
 
-    gotcha = []
+    gotcha =   # list
 
     # single-rec
     freq = collections.defaultdict(int)
-    ___ _ in range(10000
+    ___ _ __ range(10000
         x, y = get_random_point_inside_rectangle((0, 2, 3, 0))
         freq[x, y] += 1
     gotcha.append(le.(freq) __ 12)
-    gotcha.append(all(633 <= fq <= 1033 ___ fq in freq.values()))
+    gotcha.append(al.(633 <= fq <= 1033 ___ fq __ freq.values()))
 
     # multi-recs, no overlapping
     freq = collections.defaultdict(int)
-    ___ _ in range(10000
+    ___ _ __ range(10000
         x, y = get_random_point_inside_rectangle2((
             (0, 2, 1, 0),
             (2, 2, 3, 0),
         ))
         freq[x, y] += 1
     gotcha.append(le.(freq) __ 12)
-    gotcha.append(all(633 <= fq <= 1033 ___ fq in freq.values()))
+    gotcha.append(al.(633 <= fq <= 1033 ___ fq __ freq.values()))
 
     # # multi-recs, overlapping
     # freq = collections.defaultdict(int)
@@ -147,4 +147,4 @@ __ __name__ __ '__main__':
     #     if res != _out: print(_in, res)
     #     gotcha.append(res == _out)
 
-    print(bool(gotcha) and all(gotcha))
+    print(bool(gotcha) and al.(gotcha))

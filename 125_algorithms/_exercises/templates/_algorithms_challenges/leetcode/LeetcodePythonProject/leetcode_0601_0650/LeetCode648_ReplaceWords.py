@@ -11,10 +11,10 @@ class Solution(object
         :rtype: str
         """
         dict.sort(key=lambda x: le.(x))
-        resArr = []
+        resArr =   # list
         words = sentence.split(' ')
-        ___ i, word in enumerate(words
-            ___ s in dict:
+        ___ i, word __ enumerate(words
+            ___ s __ dict:
                 __ word[:le.(s)] __ s:
                     resArr.append(s)
                     break
@@ -29,12 +29,12 @@ class Solution(object
                 "the cattle was rattled by the battery",
             ],
         ]
-        ___ dict, sentence in testCases:
+        ___ dict, sentence __ testCases:
             print('dict: %s' % dict)
             print('sentence: %s' % sentence)
             result = self.replaceWords(dict, sentence)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

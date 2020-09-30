@@ -20,8 +20,8 @@ class Solution(object
 
         Time Limit Exceeded
         """
-        cand = []
-        res = []
+        cand =   # list
+        res =   # list
         self.word_break_aux(s, wordDict, cand, res)
         r_ res
 
@@ -32,10 +32,10 @@ class Solution(object
         __ not s:
             res.append(' '.join(cand))
         ____
-            ___ i, c in enumerate(s
+            ___ i, c __ enumerate(s
                 word = s[:i + 1]
                 rest = s[i + 1:]
-                __ word in wordDict:
+                __ word __ wordDict:
                     cand.append(word)
                     self.word_break_aux(rest, wordDict, cand, res)
                     cand.p..

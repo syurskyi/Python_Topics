@@ -12,9 +12,9 @@ class Solution(object
         :rtype: List[List[int]]
         """
         __ n <= 0 or n < k:
-            r_ []
-        result = []
-        elem = []
+            r_   # list
+        result =   # list
+        elem =   # list
         self.helper(elem, result, 1, n, k)
         r_ result
     
@@ -22,7 +22,7 @@ class Solution(object
         __ le.(elem) __ k:
             result.append(list(elem))
             r_
-        ___ i in range(start, n+1
+        ___ i __ range(start, n+1
             elem.append(i)
             self.helper(elem, result, i+1, n, k)
             del elem[-1]
@@ -31,11 +31,11 @@ class Solution(object
         testCases = [
             (4, 2),
         ]
-        ___ n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s, k: %s' % (n, k))
             result = self.combine(n, k)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

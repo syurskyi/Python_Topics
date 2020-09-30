@@ -6,7 +6,7 @@ from anagram ______ detect_anagrams
 class AnagramTests(unittest.TestCase
     ___ test_no_matches(self
         self.assertEqual(
-            [],
+              # list,
             detect_anagrams('diaper', 'hello world zombies pants'.split())
         )
 
@@ -24,13 +24,13 @@ class AnagramTests(unittest.TestCase
 
     ___ test_does_not_confuse_different_duplicates(self
         self.assertEqual(
-            [],
+              # list,
             detect_anagrams('galea', ['eagle'])
         )
 
     ___ test_eliminate_anagram_subsets(self
         self.assertEqual(
-            [],
+              # list,
             detect_anagrams('good', 'dog goody'.split())
         )
 
@@ -58,14 +58,14 @@ class AnagramTests(unittest.TestCase
 
     ___ test_same_word_isnt_anagram(self
         self.assertEqual(
-            [],
+              # list,
             detect_anagrams('banana', ['banana'])
         )
 
         self.assertEqual(
-            [],
+              # list,
             detect_anagrams('go', 'go Go GO'.split())
         )
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

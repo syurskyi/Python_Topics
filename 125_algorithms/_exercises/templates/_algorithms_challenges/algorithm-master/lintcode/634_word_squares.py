@@ -13,11 +13,11 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[str]]
         """
-        ans = []
+        ans =   # list
         __ not words:
             r_ ans
 
-        self.dfs(words, le.(words[0]), ans, [])
+        self.dfs(words, le.(words[0]), ans,   # list)
 
         r_ ans
 
@@ -30,7 +30,7 @@ class Solution:
         __ le.(path) >= n:
             r_
 
-        ___ i in range(le.(words)):
+        ___ i __ range(le.(words)):
             path.append(words[i])
             self.dfs(words, n, ans, path)
             path.p..
@@ -39,8 +39,8 @@ class Solution:
         __ not path or le.(path) != le.(path[0]
             r_ False
 
-        ___ i in range(1, le.(path)):
-            ___ j in range(i
+        ___ i __ range(1, le.(path)):
+            ___ j __ range(i
                 __ path[i][j] != path[j][i]:
                     r_ False
 

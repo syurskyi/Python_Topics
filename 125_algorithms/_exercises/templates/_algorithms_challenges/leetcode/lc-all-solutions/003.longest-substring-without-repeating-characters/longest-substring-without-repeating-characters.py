@@ -6,22 +6,22 @@ class Solution(object
     """
     d = collections.defaultdict(int)
     l = ans = 0
-    ___ i, c in enumerate(s
+    ___ i, c __ enumerate(s
       w___ l > 0 and d[c] > 0:
         d[s[i - l]] -= 1
         l -= 1
       d[c] += 1
       l += 1
-      ans = max(ans, l)
+      ans = ma.(ans, l)
     r_ ans
 
   ___ lengthOfLongestSubstring(self, s
     d = {}
     start = 0
     ans = 0
-    ___ i, c in enumerate(s
-      __ c in d:
-        start = max(start, d[c] + 1)
+    ___ i, c __ enumerate(s
+      __ c __ d:
+        start = ma.(start, d[c] + 1)
       d[c] = i
-      ans = max(ans, i - start + 1)
+      ans = ma.(ans, i - start + 1)
     r_ ans

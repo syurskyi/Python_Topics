@@ -7,7 +7,7 @@ Created on Apr 3, 2017
 class Solution(object
     ___ validUtf8(self, data
         count = 0
-        ___ v in data:
+        ___ v __ data:
             __ count __ 0:
                 __ v & 0b11110000 and v & 0b11111000 __ 0b11110000:
                     count = 3

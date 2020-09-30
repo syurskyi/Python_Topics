@@ -2,7 +2,7 @@
 #The app checks if the username exists and the password satisfies three conditions as in exercise 81
 from flask import Flask, render_template_string, request
 
-app = Flask(__name__)
+app = Flask( -n)
 
 html = """
   		      <div class="form">
@@ -16,30 +16,30 @@ html = """
 """
 
 @app.route("/")
-def index():
-    return render_template_string(html)
+___ index
+    r_ render_template_string(html)
 
 @app.route("/sent", methods=['GET', 'POST'])
-def sent():
+___ sent
     line = None
     if request.method == 'POST':
         while True:
             usr = request.form['username']
             with open("users.txt", "r") as file:
                 users = file.readlines()
-                users = [i.strip("\n") for i in users]
-            if usr in users:
-                return render_template_string(html, message="Username exists!"+"<br>")
+                users = [i.strip("\n") ___ i __ users]
+            if usr __ users:
+                r_ render_template_string(html, message="Username exists!"+"<br>")
                 continue
             else:
                 print("Username is fine!")
                 break
         while True:
-            notes = []
+            notes =   # list
             psw = request.form['password']
-            if not any(i.isdigit() for i in psw):
+            if not any(i.isdigit() ___ i __ psw):
                 notes.append("You need at least one number")
-            if not any(i.isupper() for i in psw):
+            if not any(i.isupper() ___ i __ psw):
                 notes.append("You need at least one uppercase letter")
             if len(psw) < 5:
                 notes.append("You need at least 5 characters")
@@ -47,7 +47,7 @@ def sent():
                 print("Password is fine"+"<br>")
                 break
             else:
-                return render_template_string(html, message="Please check password!")
-        return render_template_string(html, message="Success"+"<br>")
-if __name__ == "__main__":
+                r_ render_template_string(html, message="Please check password!")
+        r_ render_template_string(html, message="Success"+"<br>")
+if  -n == "__main__":
     app.run(debug=True)

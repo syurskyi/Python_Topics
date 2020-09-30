@@ -7,7 +7,7 @@ class Handshake:
 
     ___ commands(self, inp
         __ not self.valid_inp(inp
-            r_ []
+            r_   # list
         r_ self.commands_for_num(self.to_num(inp))
 
     ___ commands_for_num(self, num
@@ -16,7 +16,7 @@ class Handshake:
         r_ self.unreversed_commands(num)
 
     ___ unreversed_commands(self, num
-        r_ [self.EVENTS[bit] ___ bit in range(0, 4) __
+        r_ [self.EVENTS[bit] ___ bit __ range(0, 4) __
                 self.testBit(num, bit)]
 
     ___ code(self, handshake
@@ -33,7 +33,7 @@ class Handshake:
 
     ___ unreversed_code(self, handshake
         curr = 0
-        ___ event in handshake:
+        ___ event __ handshake:
             curr = self.setBit(curr, self.EVENTS.index(event))
         r_ curr
 

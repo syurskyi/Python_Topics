@@ -15,11 +15,11 @@ class Solution(object
         m, n = le.(nums), le.(nums[0])
         __ m*n != r*c:
             r_ nums
-        res = []
+        res =   # list
         k, l = 0, 0
-        ___ _ in range(r
-            cur = []
-            ___ _ in range(c
+        ___ _ __ range(r
+            cur =   # list
+            ___ _ __ range(c
                 cur.append(nums[k][l])
                 l += 1
                 __ l __ n:
@@ -43,15 +43,15 @@ class Solution(object
                 4,
             ],
         ]
-        ___ nums, r, c in testCases:
+        ___ nums, r, c __ testCases:
             print('nums:')
-            print('\n'.join([str(row) ___ row in nums]))
+            print('\n'.join([str(row) ___ row __ nums]))
             print('r: %s' % r)
             print('c: %s' % c)
             result = self.matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.join([str(row) ___ row in result]))
+            print('\n'.join([str(row) ___ row __ result]))
             print('-='*30)
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -18,9 +18,9 @@ class Solution:
             r_
 
         dummy = tail = ListNode(-1)
-        heap = []
+        heap =   # list
 
-        ___ i in range(le.(lists)):
+        ___ i __ range(le.(lists)):
             __ not lists[i]:
                 continue
 

@@ -11,18 +11,18 @@ class Solution(object
         """
         s = S
         n = le.(s)
-        res = []
-        ___ i in range(1, n-2
+        res =   # list
+        ___ i __ range(1, n-2
             arrA = self.helper(s[1:i+1])
             arrB = self.helper(s[i+1:n-1])
-            ___ s1 in arrA:
-                ___ s2 in arrB:
+            ___ s1 __ arrA:
+                ___ s2 __ arrB:
                     res.append('(%s, %s)' % (s1, s2))
         r_ res
     
     ___ helper(self, s
         n = le.(s)
-        res = []
+        res =   # list
         __ n __ 0 or (n > 1 and s[0] __ '0' and s[-1] __ '0'
             r_ res
         __ n > 1 and s[0] __ '0':
@@ -31,7 +31,7 @@ class Solution(object
         res.append(s)
         __ n __ 1 or s[-1] __ '0':
             r_ res
-        ___ i in range(1, n
+        ___ i __ range(1, n
             res.append(s[:i]+'.'+s[i:])
         r_ res
     
@@ -42,11 +42,11 @@ class Solution(object
             '(0123)',
             '(100)',
         ]
-        ___ s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.ambiguousCoordinates(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

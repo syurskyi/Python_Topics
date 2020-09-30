@@ -6,22 +6,22 @@
 # Solutions:
 
 class ListNode(object):
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
-    def to_list(self):
-        return [self.val] + self.next.to_list() if self.next else [self.val]
+    ___ to_list(self):
+        r_ [self.val] + self.next.to_list() if self.next else [self.val]
 
 class Solution:
     # @param head, a ListNode
     # @param k, an integer
     # @return a ListNode
-    def rotateRight(self, head, k):
+    ___ rotateRight(self, head, k):
         if head == None:
-            return None
+            r_ None
         temp = head
-        for i in range(0,k):
+        ___ i __ range(0,k):
             if temp.next == None:
                 temp = head
             else:
@@ -33,10 +33,10 @@ class Solution:
         temp.next = head
         newHead = newLast.next
         newLast.next = None
-        return newHead
+        r_ newHead
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     n1 = ListNode(1)
     n2 = ListNode(2)
     n3 = ListNode(3)

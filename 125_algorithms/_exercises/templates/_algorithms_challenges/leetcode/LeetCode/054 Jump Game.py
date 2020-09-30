@@ -23,20 +23,20 @@ class Solution:
         :return: a boolean
         """
         length = le.(A)
-        dp = [set([index]) ___ index in range(length)]
+        dp = [set([index]) ___ index __ range(length)]
 
-        ___ ind, val in enumerate(A
+        ___ ind, val __ enumerate(A
             __ ind!=0 and le.(dp[ind])<2:
                 continue
 
             # jump forward
-            ___ i in xrange(ind+1, ind+val+1
+            ___ i __ xrange(ind+1, ind+val+1
                 __ i>=length:
                     break
-                ___ item in dp[ind]:
+                ___ item __ dp[ind]:
                     dp[i].add(item)
 
-        r_ 0 in dp[-1]
+        r_ 0 __ dp[-1]
 
     ___ canJump_TLE2(self, A
         """
@@ -50,11 +50,11 @@ class Solution:
         :return:
         """
         l = le.(A)
-        dp = [False ___ _ in xrange(l+1)]  # last one is dummy
+        dp = [False ___ _ __ xrange(l+1)]  # last one is dummy
         dp[0] = True
-        ___ ind, val in enumerate(A
+        ___ ind, val __ enumerate(A
             __ dp[ind]:
-                ___ i in xrange(1, val+1  # now jumping
+                ___ i __ xrange(1, val+1  # now jumping
                     __ ind+i<l+1:
                         dp[ind+i] = True
                     ____
@@ -80,10 +80,10 @@ class Solution:
             r_ True
 
         # dp = [-1]*(l-1)  # normally starting from \phi
-        dp = [-1 ___ _ in xrange(l)]  # no need dummy here
+        dp = [-1 ___ _ __ xrange(l)]  # no need dummy here
 
         dp[0] = A[0]+0  # reachable index (absolute index)
-        ___ i in xrange(1, l
+        ___ i __ xrange(1, l
             # check terminal condition first
             # able to reach the end index
             __ dp[i-1]>=l-1:  # directly reach the end
@@ -94,7 +94,7 @@ class Solution:
                 r_ False
 
             # transition function
-            dp[i] = max(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
+            dp[i] = ma.(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
 
         r_ False
 

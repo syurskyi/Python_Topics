@@ -5,9 +5,9 @@ class Solution:
     ___ isIsomorphic(self, s, t
         ___ isomorphic(s,t
             d = {}
-            ___ k,v in zip(s,t
+            ___ k,v __ zip(s,t
                 d[k] = v
-            r_ ''.join([d[c] ___ c in s]) __ t
+            r_ ''.join([d[c] ___ c __ s]) __ t
         r_ isomorphic(s,t) and isomorphic(t,s)
 
 test = Solution()

@@ -4,9 +4,9 @@ class NumMatrix(object
     initialize your data structure here.
     :type matrix: List[List[int]]
     """
-    self.dp = [[0] * le.(matrix[0]) ___ i in range(0, le.(matrix))]
-    ___ i in range(0, le.(matrix)):
-      ___ j in range(0, le.(matrix[0])):
+    self.dp = [[0] * le.(matrix[0]) ___ i __ range(0, le.(matrix))]
+    ___ i __ range(0, le.(matrix)):
+      ___ j __ range(0, le.(matrix[0])):
         __ i __ 0:
           self.dp[0][j] = self.dp[0][j - 1] + matrix[i][j]
         ____ j __ 0:

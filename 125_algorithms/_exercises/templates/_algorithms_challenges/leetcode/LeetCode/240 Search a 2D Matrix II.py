@@ -65,13 +65,13 @@ class SolutionBinSearch(object
         m = le.(mat)
         n = le.(mat[0])
 
-        col = [mat[i][0] ___ i in xrange(m)]
+        col = [mat[i][0] ___ i __ xrange(m)]
         row_by_first = self.bin_search(col, target)
 
-        col = [mat[i][-1] ___ i in xrange(m)]
+        col = [mat[i][-1] ___ i __ xrange(m)]
         row_by_last = self.bin_search(col, target, False)
 
-        ___ i in range(row_by_first, row_by_last-1, -1
+        ___ i __ range(row_by_first, row_by_last-1, -1
             col = self.bin_search(mat[i], target)
             __ mat[i][col] __ target:
                 r_ True
@@ -95,6 +95,6 @@ class SolutionBinSearch(object
         ____
             r_ lo
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().searchMatrix([[1, 4], [2, 5]], 4) __ True
     assert SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ True

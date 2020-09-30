@@ -32,7 +32,7 @@ class Solution:
 
         ret = 0
         cur_end = -float("inf")
-        ___ i in range(n
+        ___ i __ range(n
             __ pairs[i][0] <= cur_end:
                 continue
 
@@ -70,16 +70,16 @@ class Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.sort(key=lambda x: tuple(x))
+        pairs.sort(key=lambda x: tu..(x))
         n = le.(pairs)
-        F = [1 ___ _ in range(n)]
-        ___ i in range(n
-            ___ j in range(i
+        F = [1 ___ _ __ range(n)]
+        ___ i __ range(n
+            ___ j __ range(i
                 __ pairs[j][1] < pairs[i][0]:
-                    F[i] = max(F[i], F[j] + 1)
+                    F[i] = ma.(F[i], F[j] + 1)
 
-        r_ max(F)
+        r_ ma.(F)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findLongestChain([[1,2], [2,3], [3,4]]) __ 2

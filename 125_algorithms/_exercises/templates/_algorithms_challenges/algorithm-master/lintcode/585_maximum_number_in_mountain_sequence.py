@@ -20,4 +20,4 @@ class Solution:
             ____
                 l = m
 
-        r_ max(nums[l], nums[r])
+        r_ ma.(nums[l], nums[r])

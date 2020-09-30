@@ -11,10 +11,10 @@ class Solution(object
       r_ "{}->{}".format(start, end)
 
     __ not nums:
-      r_ []
-    ans = []
+      r_   # list
+    ans =   # list
     start = 0
-    ___ i in range(0, le.(nums) - 1
+    ___ i __ range(0, le.(nums) - 1
       __ nums[i] + 1 != nums[i + 1]:
         ans.append(outputRange(nums[start], nums[i]))
         start = i + 1

@@ -8,8 +8,8 @@
 # [[-10, 2, 8], [-7, -3, 10]]
 
 class py_solution:
- def threeSum(self, nums):
-        nums, result, i = sorted(nums), [], 0
+ ___ threeSum(self, nums):
+        nums, result, i = sorted(nums),   # list, 0
         while i < len(nums) - 2:
             j, k = i + 1, len(nums) - 1
             while j < k:
@@ -27,7 +27,7 @@ class py_solution:
             i += 1
             while i < len(nums) - 2 and nums[i] == nums[i - 1]:
                 i += 1
-        return result
+        r_ result
 
 print(py_solution().threeSum([-25, -10, -7, -3, 2, 4, 8, 10]))
 

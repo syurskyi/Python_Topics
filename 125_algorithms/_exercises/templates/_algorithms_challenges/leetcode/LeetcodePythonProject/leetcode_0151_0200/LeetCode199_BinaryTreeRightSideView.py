@@ -16,9 +16,9 @@ class Solution(object
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ not root: r_ []
+        __ not root: r_   # list
         queue = [root]
-        nextQueue = []
+        nextQueue =   # list
         res = [root.val]
         w___ queue:
             node = queue.pop(0)
@@ -30,5 +30,5 @@ class Solution(object
                 __ nextQueue:
                     res.append(nextQueue[-1].val)
                     queue = nextQueue
-                    nextQueue = []
+                    nextQueue =   # list
         r_ res

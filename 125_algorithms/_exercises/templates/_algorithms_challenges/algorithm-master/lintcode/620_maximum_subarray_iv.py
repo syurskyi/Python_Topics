@@ -15,7 +15,7 @@ class Solution:
         Smin = 0
         S = [0] * (n + 1)
 
-        ___ i in range(1, n + 1
+        ___ i __ range(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             """

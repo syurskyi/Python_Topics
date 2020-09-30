@@ -13,7 +13,7 @@ class TreeNode(object
 
 class Solution(object
     ___ findLeaves(self, root
-        res = []
+        res =   # list
         self.helper(root, res)
         r_ res
     
@@ -21,7 +21,7 @@ class Solution(object
         __ not root: r_ -1
         left = self.helper(root.left, res)
         right = self.helper(root.right, res)
-        level = max(left, right)+1
+        level = ma.(left, right)+1
         __ level < le.(res
             res[level].append(root.val)
         ____
@@ -29,12 +29,12 @@ class Solution(object
         r_ level
     
     ___ findLeavesOwn(self, root
-        __ not root: r_ []
-        result = []
+        __ not root: r_   # list
+        result =   # list
         dummy = TreeNode(-1)
         dummy.left = root
         w___ dummy.left:
-            tmpResult = []
+            tmpResult =   # list
             self.getLeaves(dummy, root, tmpResult)
             result.append(tmpResult)
         r_ result
@@ -54,10 +54,10 @@ class Solution(object
         testCases = [
             TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)),
         ]
-        ___ root in testCases:
+        ___ root __ testCases:
             result = self.findLeaves(root)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

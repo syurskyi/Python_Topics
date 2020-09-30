@@ -10,9 +10,9 @@ class Trie:
 
   ___ addWord(self, word
     root = self.root
-    ___ i in range(0, le.(word)):
+    ___ i __ range(0, le.(word)):
       c = word[i]
-      __ c in root.neighbours:
+      __ c __ root.neighbours:
         root = root.neighbours[c]
       ____
         newnode = TrieNode()
@@ -24,14 +24,14 @@ class Trie:
 class WordDictionary:
   ___ __init__(self
     self.trie = Trie()
-    self.cache = set([])
+    self.cache = set(  # list)
 
   ___ addWord(self, word
     self.trie.addWord(word)
     self.cache.add(word)
 
   ___ search(self, word
-    __ word in self.cache:
+    __ word __ self.cache:
       r_ True
 
     ___ dfsHelper(root, word, index
@@ -47,7 +47,7 @@ class WordDictionary:
         __ dfsHelper(root.neighbours.get(word[index], None), word, index + 1
           r_ True
       ____
-        ___ nbr in root.neighbours:
+        ___ nbr __ root.neighbours:
           __ dfsHelper(root.neighbours[nbr], word, index + 1
             r_ True
       r_ False

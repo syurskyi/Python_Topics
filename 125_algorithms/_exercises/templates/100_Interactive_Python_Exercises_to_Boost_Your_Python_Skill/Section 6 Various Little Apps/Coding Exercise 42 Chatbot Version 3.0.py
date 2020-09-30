@@ -8,8 +8,8 @@ vocabulary = {
     "what time is it" : datetime.datetime.now().strftime("%H:%M")
 }
 
-def foo(query, vocabulary):
-    if query in vocabulary:
-        return vocabulary[query]
+___ foo(query, vocabulary):
+    if query __ vocabulary:
+        r_ vocabulary[query]
     else:
-        return "I don't understand that!"
+        r_ "I don't understand that!"

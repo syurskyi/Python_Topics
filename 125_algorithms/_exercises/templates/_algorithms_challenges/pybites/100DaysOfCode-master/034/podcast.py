@@ -49,7 +49,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 ___ dump_episodes_to_db(episodes
     records = [Podcast(id=ep.id, title=ep.title,
                link=ep.link, published=ep.published)
-               ___ ep in episodes.values()]
+               ___ ep __ episodes.values()]
     session.add_all(records)
     session.commit()
 
@@ -58,7 +58,7 @@ ___ parse_feed(feed
     output = feedparser.parse(feed)
 
     d = {}
-    ___ e in output['entries']:
+    ___ e __ output['entries']:
         id = e.get('id')
         title = e.get('title')
         link = e.get('link')
@@ -71,7 +71,7 @@ ___ _to_dt(struct
     r_ datetime.fromtimestamp(time.mktime(struct))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--feed', help='Podcast feed to parse')
     args = parser.parse_args()

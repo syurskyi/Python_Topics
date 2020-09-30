@@ -1,5 +1,5 @@
 amount_values = int(input())
-results = []
+results =   # list
 
 ___ rotate(index, string
     sub_string1 = string[:index]
@@ -8,7 +8,7 @@ ___ rotate(index, string
     rotated_string = sub_string2+sub_string1
     r_ rotated_string
 
-___ i in range(amount_values
+___ i __ range(amount_values
     index, string = map(str, input().split())
     index = int(index)
     results.append(rotate(index, string))

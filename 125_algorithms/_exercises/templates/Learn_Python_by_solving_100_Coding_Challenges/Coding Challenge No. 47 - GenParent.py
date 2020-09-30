@@ -7,9 +7,9 @@
 class Solution:
     # @param an integer
     # @return a list of string
-    def helpler(self, l, r, item, res):
+    ___ helpler(self, l, r, item, res):
         if r < l:
-            return
+            r_
         if l == 0 and r == 0:
             res.append(item)
         if l > 0:
@@ -17,12 +17,12 @@ class Solution:
         if r > 0:
             self.helpler(l, r - 1, item + ')', res)
 
-    def generateParenthesis(self, n):
+    ___ generateParenthesis(self, n):
         if n == 0:
-            return []
-        res = []
+            r_   # list
+        res =   # list
         self.helpler(n, n, '', res)
-        return res
+        r_ res
 
 
 Solution().generateParenthesis(3)

@@ -6,9 +6,9 @@
 
 import random
 
-def random_line(fname):
+___ random_line(fname):
     lines = open(fname).read().splitlines()
-    return random.choice(lines)
+    r_ random.choice(lines)
 print(random_line('test.txt'))
 
 

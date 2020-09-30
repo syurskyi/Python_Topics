@@ -12,18 +12,18 @@ class Solution(object
     n += 1
     ans = 0
     d = collections.Counter(tasks)
-    heap = [-c ___ c in d.values()]
+    heap = [-c ___ c __ d.values()]
     heapq.heapify(heap)
     w___ heap:
-      stack = []
+      stack =   # list
       cnt = 0
-      ___ _ in range(n
+      ___ _ __ range(n
         __ heap:
           c = heapq.heappop(heap)
           cnt += 1
           __ c < -1:
             stack.append(c + 1)
-      ___ item in stack:
+      ___ item __ stack:
         heapq.heappush(heap, item)
       ans += heap and n or cnt  # == if heap then n else cnt
     r_ ans
@@ -38,8 +38,8 @@ class Solution(object
   ___ leastInterval(self, tasks, n
     d = collections.Counter(tasks)
     counts = d.values()
-    longest = max(counts)
+    longest = ma.(counts)
     ans = (longest - 1) * (n + 1)
-    ___ count in counts:
+    ___ count __ counts:
       ans += count __ longest and 1 or 0
-    r_ max(le.(tasks), ans)
+    r_ ma.(le.(tasks), ans)

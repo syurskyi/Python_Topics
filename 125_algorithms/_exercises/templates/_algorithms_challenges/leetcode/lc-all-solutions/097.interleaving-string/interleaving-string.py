@@ -12,7 +12,7 @@ class Solution(object
       r_ False
 
     ___ dfs(s1, i, s2, j, d, path, s3
-      __ (i, j) in d:
+      __ (i, j) __ d:
         r_ d[(i, j)]
 
       __ path __ s3:
@@ -36,4 +36,4 @@ class Solution(object
 
       r_ False
 
-    r_ dfs(s1, 0, s2, 0, d, [], s3)
+    r_ dfs(s1, 0, s2, 0, d,   # list, s3)

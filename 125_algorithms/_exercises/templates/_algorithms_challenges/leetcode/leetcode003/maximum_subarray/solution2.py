@@ -15,9 +15,9 @@ class Solution:
         res = A[0]
         cur_sum = A[0]
         n = le.(A)
-        ___ i in range(1, n
-            cur_sum = max(cur_sum + A[i], A[i])
-            res = max(res, cur_sum)
+        ___ i __ range(1, n
+            cur_sum = ma.(cur_sum + A[i], A[i])
+            res = ma.(res, cur_sum)
         # If negative sum is not allowed, add the following line:
         # if res < 0: return 0
         r_ res

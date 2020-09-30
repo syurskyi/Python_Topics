@@ -24,7 +24,7 @@ class Solution(object
         __ b <= 0:
             r_ 0
         s = str(a)+':'+str(b)
-        __ s not in hashmap:
+        __ s not __ hashmap:
             hashmap[s] = 0.25*(
                     self.helper(hashmap, a-100, b)+\
                     self.helper(hashmap, a-25, b-75)+\
@@ -37,10 +37,10 @@ class Solution(object
         testCases = [
             50,
         ]
-        ___ n in testCases:
+        ___ n __ testCases:
             result = self.soupServings(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

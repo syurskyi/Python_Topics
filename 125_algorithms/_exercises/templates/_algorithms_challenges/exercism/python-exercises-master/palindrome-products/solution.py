@@ -1,5 +1,5 @@
 ___ largest_palindrome(max_factor, min_factor=0
-    r_ max(palindromes(max_factor, min_factor), key=lambda tup: tup[0])
+    r_ ma.(palindromes(max_factor, min_factor), key=lambda tup: tup[0])
 
 
 ___ smallest_palindrome(max_factor, min_factor
@@ -8,8 +8,8 @@ ___ smallest_palindrome(max_factor, min_factor
 
 ___ palindromes(max_factor, min_factor
     r_ ((a * b, (a, b))
-            ___ a in range(min_factor, max_factor + 1)
-            ___ b in range(min_factor, a + 1)
+            ___ a __ range(min_factor, max_factor + 1)
+            ___ b __ range(min_factor, a + 1)
             __ is_palindrome(a * b))
 
 

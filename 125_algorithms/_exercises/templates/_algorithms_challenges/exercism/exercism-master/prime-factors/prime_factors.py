@@ -1,5 +1,5 @@
 ___ prime_factors(num
-    factors = []
+    factors =   # list
     i = 2
     w___ i <= num:
         __ num % i __ 0:

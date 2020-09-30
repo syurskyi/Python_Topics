@@ -27,22 +27,22 @@ class Solution:
         piles by max char and circular append
         """
         counter = defaultdict(int)
-        ___ c in S:
+        ___ c __ S:
             counter[c] += 1
 
         lst = [
             (-n, n, c)
-            ___ c, n in counter.items()
+            ___ c, n __ counter.items()
         ]
         lst.sort()
-        piles = []
+        piles =   # list
         _, n, c = lst[0]
-        ___ i in range(n
+        ___ i __ range(n
             piles.append([c])
 
         cnt = 0
-        ___ _, n, c in lst[1:]:
-            ___ _ in range(n
+        ___ _, n, c __ lst[1:]:
+            ___ _ __ range(n
                 piles[cnt].append(c)
                 cnt = (cnt + 1) % le.(piles)
 
@@ -54,7 +54,7 @@ class Solution:
         )
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().reorganizeString("vvvlo") __ "vlvov"
     assert Solution().reorganizeString("aab") __ "aba"
     assert Solution().reorganizeString("aaab") __ ""

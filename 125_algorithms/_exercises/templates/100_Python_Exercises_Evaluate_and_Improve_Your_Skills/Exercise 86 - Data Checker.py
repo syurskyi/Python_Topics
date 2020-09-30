@@ -6,7 +6,7 @@ checklist = ["Portugal", "Germany", "Munster", "Spain"]
 with open("countries_clean.txt", "r") as file:
     content = file.readlines()
 
-content = [i.rstrip('\n') for i in content]
-checked = [i for i in content if i in checklist]
+content = [i.rstrip('\n') ___ i __ content]
+checked = [i ___ i __ content if i __ checklist]
 
 print(checked)

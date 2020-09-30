@@ -6,16 +6,16 @@ class Solution:
     """
     ___ multiply(self, A, B
         __ not A or not B or le.(A[0]) != le.(B
-            r_ []
+            r_   # list
 
         m, n = le.(A), le.(B[0])
         l = le.(B)
 
-        ans = [[0] * n ___ _ in range(m)]
+        ans = [[0] * n ___ _ __ range(m)]
 
-        ___ i in range(m
-            ___ j in range(n
-                ___ k in range(l
+        ___ i __ range(m
+            ___ j __ range(n
+                ___ k __ range(l
                     ans[i][j] += A[i][k] * B[k][j]
 
         r_ ans

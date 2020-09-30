@@ -8,21 +8,21 @@
 
 class Solution:
     # @return a list of lists of integers
-    def generate(self, numRows):
+    ___ generate(self, numRows):
         if numRows == 0:
-            return []
+            r_   # list
 
         result = [[1]]
         while len(result) < numRows:
             temp = [1] # Every row starts with 1
 
-            for index in range(len(result[-1])-1):
+            ___ index __ range(len(result[-1])-1):
                 temp.append(result[-1][index] + result[-1][index+1])
 
             temp.append(1) # Every row ends with 1
             result.append(temp)
 
-        return result
+        r_ result
 
 
 Solution().generate(5)

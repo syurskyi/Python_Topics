@@ -6,8 +6,8 @@ Created on Apr 11, 2017
 
 class Solution(object
     ___ fizzBuzz(self, n
-        result = []
-        ___ num in range(1, n+1
+        result =   # list
+        ___ num __ range(1, n+1
             __ num % 15 __ 0:
                 result.append('FizzBuzz')
             ____ num % 5 __ 0:

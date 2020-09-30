@@ -20,5 +20,5 @@ ___ main(
     test.test_find_val()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

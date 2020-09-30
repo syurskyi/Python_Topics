@@ -27,5 +27,5 @@ ___ test_generator_values(cd
 
 ___ test_going_beyond_one_hundred(cd
     with pytest.raises(StopIteration
-        ___ _ in range(101
+        ___ _ __ range(101
             next(cd)

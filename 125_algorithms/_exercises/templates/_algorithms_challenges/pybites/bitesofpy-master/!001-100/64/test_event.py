@@ -6,5 +6,5 @@ ___ test_get_attendees(capfd
     output = capfd.readouterr()[0].strip().split("\n")
 
     assert le.(output) __ 8
-    assert "('Kim', '-', '-')" in output
-    assert "('Andre', '-', '-')" in output
+    assert "('Kim', '-', '-')" __ output
+    assert "('Andre', '-', '-')" __ output

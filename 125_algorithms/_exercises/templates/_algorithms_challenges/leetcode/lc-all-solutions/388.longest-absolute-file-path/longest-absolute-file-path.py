@@ -6,13 +6,13 @@ class Solution(object
     """
     maxLen = 0
     curLen = 0
-    stack = []
+    stack =   # list
     dfa = {"init": 0, "char": 1, "escapeCMD": 2, "file": 3}
     state = 0
     start = 0
     level = 0
 
-    ___ i in range(0, le.(input)):
+    ___ i __ range(0, le.(input)):
       chr = input[i]
       __ chr __ '\n':
         curLen = 0 __ le.(stack) __ 0 else stack[-1][1]
@@ -20,7 +20,7 @@ class Solution(object
           curLen += i - start
           stack.append((input[start:i], curLen + 1, level))
         ____ state __ dfa["file"]:
-          maxLen = max(maxLen, curLen + (i - start))
+          maxLen = ma.(maxLen, curLen + (i - start))
         ____
           r_ -1
         state = dfa["escapeCMD"]
@@ -45,7 +45,7 @@ class Solution(object
           state = dfa["char"]
         ____ i __ le.(input) - 1:
           curLen = 0 __ le.(stack) __ 0 else stack[-1][1]
-          maxLen = max(maxLen, curLen + (i - start) + 1)
+          maxLen = ma.(maxLen, curLen + (i - start) + 1)
 
       # print 'state:', state
       # print 'stack:', stack

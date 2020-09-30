@@ -47,7 +47,7 @@ class Solution:
         counter = defaultdict(int)
         self.traverse(root, counter)
         ret = [[], 0]
-        ___ k, v in counter.items(
+        ___ k, v __ counter.items(
             __ v > ret[1]:
                 ret[0] = [k]
                 ret[1] = v

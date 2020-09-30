@@ -17,8 +17,8 @@ class Solution(object
     :rtype: int
     """
     now = 0
-    heap = []
-    ___ t, d in sorted(courses, key=lambda x: x[1]
+    heap =   # list
+    ___ t, d __ sorted(courses, key=lambda x: x[1]
       __ now + t <= d:
         now += t
         heapq.heappush(heap, -t)

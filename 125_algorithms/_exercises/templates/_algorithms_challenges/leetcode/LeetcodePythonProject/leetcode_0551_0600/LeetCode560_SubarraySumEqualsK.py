@@ -14,9 +14,9 @@ class Solution(object
         hashmap = {0:1}
         sumVal = 0
         res = 0
-        ___ num in nums:
+        ___ num __ nums:
             sumVal += num
-            __ sumVal-k in hashmap:
+            __ sumVal-k __ hashmap:
                 res += hashmap[sumVal-k]
             hashmap[sumVal] = hashmap.get(sumVal, 0)+1
         r_ res
@@ -44,12 +44,12 @@ class Solution(object
                 0,
             ],
         ]
-        ___ nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             res = self.subarraySum(nums, k)
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

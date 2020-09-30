@@ -38,11 +38,11 @@ class Solution(object
             'aba',
             'abca',
         ]
-        ___ s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.validPalindrome(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

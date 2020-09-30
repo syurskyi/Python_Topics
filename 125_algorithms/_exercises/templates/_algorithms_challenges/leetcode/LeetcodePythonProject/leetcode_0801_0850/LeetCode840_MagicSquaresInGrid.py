@@ -11,8 +11,8 @@ class Solution(object
         """
         m, n = le.(grid), le.(grid[0])
         res = 0
-        ___ i in range(m-2
-            ___ j in range(n-2
+        ___ i __ range(m-2
+            ___ j __ range(n-2
                 __ self.isValid(grid, i, j
                     res += 1
         r_ res
@@ -38,10 +38,10 @@ class Solution(object
         testCases = [
             [[4,3,8,4],[9,5,1,9],[2,7,6,2]],
         ]
-        ___ grid in testCases:
+        ___ grid __ testCases:
             result = self.numMagicSquaresInside(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

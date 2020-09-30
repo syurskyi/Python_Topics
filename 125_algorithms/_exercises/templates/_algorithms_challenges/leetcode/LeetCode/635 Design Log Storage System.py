@@ -42,7 +42,7 @@ class LogSystem:
         BST - TreeMap (java)
         binary search using time stamp
         """
-        self.lst = []
+        self.lst =   # list
 
     ___ put(self, id: int, timestamp: str) -> None:
         bisect.insort(self.lst, (timestamp, id))
@@ -67,7 +67,7 @@ class LogSystem:
         e = e[:pre] + hi[pre:]
         i = bisect.bisect_left(self.lst, (s, 0))
         j = bisect.bisect_right(self.lst, (e, float("inf")))
-        r_ [id ___ _, id in self.lst[i:j]]
+        r_ [id ___ _, id __ self.lst[i:j]]
 
 
 # Your LogSystem object will be instantiated and called as such:

@@ -2,8 +2,8 @@ class Solution:
     # @param an integer
     # @return a list of string
     ___ generateParenthesis(self, n
-        cand = []
-        res = []
+        cand =   # list
+        res =   # list
         self.generate_paren_aux(n, n, cand, res)
         r_ res
 

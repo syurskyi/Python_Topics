@@ -29,11 +29,11 @@ class Solution:
     # @return a list of lists of integers
     ___ zigzagLevelOrder(self, root
         __ root pa__ None:
-            r_ []
-        res = []
-        queue = []
+            r_   # list
+        res =   # list
+        queue =   # list
         rev = False  # Reverse direction
-        level = []
+        level =   # list
         queue.append(root)
         queue.append(None)
         w___ queue:
@@ -42,7 +42,7 @@ class Solution:
                 __ queue:
                     queue.append(None)
                 res.append(level)
-                level = []
+                level =   # list
                 rev = not rev  # Toggle direction
             ____
                 __ rev:

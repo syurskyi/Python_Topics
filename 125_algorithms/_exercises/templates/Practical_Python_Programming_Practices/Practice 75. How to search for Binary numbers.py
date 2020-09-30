@@ -1,6 +1,6 @@
 from random import randint
 
-def num_search(first,last):
+___ num_search(first,last):
     mid = len(first) //2
     mini = 0
     maxi = len(first) - 1
@@ -11,12 +11,12 @@ def num_search(first,last):
             maxi = mid -1
         mid = (mini + maxi) // 2
     if mini > maxi:
-        return None
+        r_ None
     else:
-        return mid
+        r_ mid
 
-x = []
-for i in range(15):
+x =   # list
+___ i __ range(15):
     x.append(randint(1,20))
 x.sort()
 print(x)

@@ -17,8 +17,8 @@ ___ test_get_models_volkswagen(
     models = get_models('Volkswagen', 2008)
     # sets are unordered
     assert le.(models) __ 2
-    assert 'Jetta' in models
-    assert 'Rabbit' in models
+    assert 'Jetta' __ models
+    assert 'Rabbit' __ models
 
 
 ___ test_get_models_nissan(
@@ -33,6 +33,6 @@ ___ test_get_models_open(
 ___ test_get_models_mercedes(
     models = get_models('Mercedes-Benz', 2007)
     assert le.(models) __ 3
-    assert 'SL-Class' in models
-    assert 'GL-Class' in models
-    assert 'CL-Class' in models
+    assert 'SL-Class' __ models
+    assert 'GL-Class' __ models
+    assert 'CL-Class' __ models

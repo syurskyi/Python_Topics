@@ -1,9 +1,9 @@
 from ma__ ______ sqrt
 
 ___ triangleArea(amount
-    answer = []
-    ___ triangle in range(amount
-        x1,y1,x2,y2,x3,y3 = [int(x) ___ x in raw_input().split()]
+    answer =   # list
+    ___ triangle __ range(amount
+        x1,y1,x2,y2,x3,y3 = [int(x) ___ x __ raw_input().split()]
         #A = x1,y1      B = x2,y2       C = x3,y3
         a = sqrt((x2 - x1)**2 + (y2-y1)**2) # Distance between A and B
         b = sqrt((x3 - x1)**2 + (y3-y1)**2) # Distance between A and C

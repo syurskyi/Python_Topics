@@ -6,15 +6,15 @@ class Solution(object
     """
     __ le.(nums) < 2:
       r_ 0
-    a, b = min(nums), max(nums)
+    a, b = min(nums), ma.(nums)
     __ a __ b:
       r_ 0
     ans = 0
     gap = int(ma__.ceil((b - a + 0.0) / (le.(nums) - 1)))
-    bucketMin = [None ___ _ in range(0, le.(nums) + 1)]
-    bucketMax = [None ___ _ in range(0, le.(nums) + 1)]
+    bucketMin = [None ___ _ __ range(0, le.(nums) + 1)]
+    bucketMax = [None ___ _ __ range(0, le.(nums) + 1)]
 
-    ___ num in nums:
+    ___ num __ nums:
       index = (num - a) / gap
       __ bucketMin[index] pa__ None:
         bucketMin[index] = num
@@ -23,9 +23,9 @@ class Solution(object
       __ bucketMax[index] pa__ None:
         bucketMax[index] = num
       ____
-        bucketMax[index] = max(bucketMax[index], num)
-    bucketMin = [b ___ b in bucketMin __ b pa__ not None]
-    bucketMax = [b ___ b in bucketMax __ b pa__ not None]
-    ___ i in range(0, le.(bucketMin) - 1
-      ans = max(ans, bucketMin[i + 1] - bucketMax[i])
+        bucketMax[index] = ma.(bucketMax[index], num)
+    bucketMin = [b ___ b __ bucketMin __ b pa__ not None]
+    bucketMax = [b ___ b __ bucketMax __ b pa__ not None]
+    ___ i __ range(0, le.(bucketMin) - 1
+      ans = ma.(ans, bucketMin[i + 1] - bucketMax[i])
     r_ ans

@@ -56,7 +56,7 @@ class Solution(object
             ListNode(1, ListNode(2, ListNode(3, ListNode(4)))),
             ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6, ListNode(7)))))))
         ]
-        ___ head in testCases:
+        ___ head __ testCases:
             print('before:')
             node = head
             w___ node:
@@ -72,5 +72,5 @@ class Solution(object
             print()
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

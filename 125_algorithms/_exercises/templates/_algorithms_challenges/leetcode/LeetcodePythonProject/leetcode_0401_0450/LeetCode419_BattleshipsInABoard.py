@@ -13,8 +13,8 @@ class Solution(object
         __ not board or not board[0]: r_ 0
         m, n = le.(board), le.(board[0])
         count = 0
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 __ board[i][j] __ 'X':
                     __ i __ 0:
                         __ j __ 0:

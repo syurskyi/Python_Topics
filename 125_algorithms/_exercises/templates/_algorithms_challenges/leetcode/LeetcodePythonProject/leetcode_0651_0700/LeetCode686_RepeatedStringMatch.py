@@ -26,12 +26,12 @@ class Solution(object
                 'cdabcdab',
             ]
         ]
-        ___ A, B in testCases:
+        ___ A, B __ testCases:
             print('A: %s' % A)
             print('B: %s' % B)
             result = self.repeatedStringMatch(A, B)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

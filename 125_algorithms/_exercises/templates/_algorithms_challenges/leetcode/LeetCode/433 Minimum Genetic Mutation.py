@@ -28,7 +28,7 @@ You may assume start and end string is not the same.
 class Solution:
     ___ is_neighbor(self, p, q
         diff = 0
-        ___ a, b in zip(p, q
+        ___ a, b __ zip(p, q
             __ a != b:
                 diff += 1
             __ diff > 1:
@@ -50,12 +50,12 @@ class Solution:
         visited = {start}
         lvl = 0
         w___ q:
-            cur_q = []
-            ___ e in q:
+            cur_q =   # list
+            ___ e __ q:
                 __ e __ end:
                     r_ lvl
-                ___ t in bank:
-                    __ t not in visited and self.is_neighbor(e, t
+                ___ t __ bank:
+                    __ t not __ visited and self.is_neighbor(e, t
                         visited.add(t)
                         cur_q.append(t)
 
@@ -65,6 +65,6 @@ class Solution:
         r_ -1
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) __ -1
     assert Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) __ 2

@@ -16,6 +16,6 @@ ___ handler(a
 
 
 _, a = input(), set(map(int, input().split()))
-___ i in range(int(input())):
+___ i __ range(int(input())):
     handler(a)
 print(su.(a))

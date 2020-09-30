@@ -16,7 +16,7 @@ Halbard,Davie,CN"""
 
 ___ group_names_by_country(data: str = data) -> defaultdict:
     countries = defaultdict(list)
-    ___ x in data.splitlines()[1:]:
+    ___ x __ data.splitlines()[1:]:
         l, f, c = x.split(',')
         countries[c].append(f'{f} {l}')
     r_ countries

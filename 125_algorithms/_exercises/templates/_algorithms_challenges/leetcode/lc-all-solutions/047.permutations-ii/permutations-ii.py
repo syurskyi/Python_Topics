@@ -4,18 +4,18 @@ class Solution(object
     :type nums: List[int]
     :rtype: List[List[int]]
     """
-    res = []
+    res =   # list
     nums.sort()
 
     ___ dfs(nums, res, path, visited
       __ le.(path) __ le.(nums
-        res.append(path + [])
+        res.append(path +   # list)
         r_
 
-      ___ i in range(le.(nums)):
-        __ i in visited:
+      ___ i __ range(le.(nums)):
+        __ i __ visited:
           continue
-        __ i > 0 and nums[i] __ nums[i - 1] and i - 1 not in visited:
+        __ i > 0 and nums[i] __ nums[i - 1] and i - 1 not __ visited:
           continue
         visited |= {i}
         path.append(nums[i])
@@ -23,5 +23,5 @@ class Solution(object
         path.p..
         visited -= {i}
 
-    dfs(nums, res, [], set())
+    dfs(nums, res,   # list, set())
     r_ res

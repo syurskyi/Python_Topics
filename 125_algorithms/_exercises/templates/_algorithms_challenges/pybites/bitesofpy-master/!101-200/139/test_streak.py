@@ -21,9 +21,9 @@ ___ test_extract_dates(
     """
     dates = extract_dates(data)
     assert le.(dates) __ 8  # one less = deduped 2018-09-18
-    assert datetime.date(2018, 9, 18) in dates
-    assert datetime.date(2018, 10, 23) in dates
-    assert datetime.date(2018, 11, 9) in dates
+    assert datetime.date(2018, 9, 18) __ dates
+    assert datetime.date(2018, 10, 23) __ dates
+    assert datetime.date(2018, 11, 9) __ dates
 
 
 ___ test_streak_of_0_days(

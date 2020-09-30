@@ -55,7 +55,7 @@ class Solution:
             r_ ""
         r_ "".join(
             chr(e + ord("a"))
-            ___ e in self.mn
+            ___ e __ self.mn
         )
 
     ___ dfs(self, node, cur_deque
@@ -64,7 +64,7 @@ class Solution:
 
         cur_deque.appendleft(node.val)
         __ not node.left and not node.right:
-            t = tuple(cur_deque)
+            t = tu..(cur_deque)
             __ not self.mn or t < self.mn:
                 self.mn = t
         ____

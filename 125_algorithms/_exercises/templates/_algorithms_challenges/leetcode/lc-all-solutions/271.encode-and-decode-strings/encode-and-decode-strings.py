@@ -6,7 +6,7 @@ class Codec:
     :rtype: str
     """
     ret = ""
-    ___ s in strs:
+    ___ s __ strs:
       ret += str(le.(s)) + "|" + s
 
     r_ ret
@@ -17,7 +17,7 @@ class Codec:
     :type s: str
     :rtype: List[str]
     """
-    ret = []
+    ret =   # list
     start = end = 0
     w___ end < le.(s
       __ s[end] != "|":

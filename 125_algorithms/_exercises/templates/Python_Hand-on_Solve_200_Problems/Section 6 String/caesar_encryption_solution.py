@@ -14,27 +14,27 @@
 # plaintext:  defend the east wall of the castle
 # ciphertext: efgfoe uif fbtu xbmm pg uif dbtumf
 
-def caesar_encrypt(realText, step):
-	outText = []
-	cryptText = []
+___ caesar_encrypt(realText, step):
+	outText =   # list
+	cryptText =   # list
 	
 	uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 	lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-	for eachLetter in realText:
-		if eachLetter in uppercase:
+	___ eachLetter __ realText:
+		if eachLetter __ uppercase:
 			index = uppercase.index(eachLetter)
 			crypting = (index + step) % 26
 			cryptText.append(crypting)
 			newLetter = uppercase[crypting]
 			outText.append(newLetter)
-		elif eachLetter in lowercase:
+		elif eachLetter __ lowercase:
 			index = lowercase.index(eachLetter)
 			crypting = (index + step) % 26
 			cryptText.append(crypting)
 			newLetter = lowercase[crypting]
 			outText.append(newLetter)
-	return outText
+	r_ outText
 
 code = caesar_encrypt('defend the east wall of the castle', 1)
 print()

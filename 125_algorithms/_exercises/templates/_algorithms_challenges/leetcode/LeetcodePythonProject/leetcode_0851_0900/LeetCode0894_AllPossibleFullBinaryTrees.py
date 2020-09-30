@@ -19,19 +19,19 @@ class Solution(object
         :type N: int
         :rtype: List[TreeNode]
         """
-        res = []
+        res =   # list
         __ N%2 __ 0:
             r_ res
-        __ N in self.cache:
+        __ N __ self.cache:
             r_ self.cache[N]
         __ N __ 1:
             res.append(TreeNode(0))
             r_ res
-        ___ i in range(N
+        ___ i __ range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
-            ___ leftNode in left:
-                ___ rightNode in right:
+            ___ leftNode __ left:
+                ___ rightNode __ right:
                     root = TreeNode(0)
                     root.left = leftNode
                     root.right = rightNode
@@ -44,15 +44,15 @@ class Solution(object
         :rtype: List[TreeNode]
         """
         __ N <= 0:
-            r_ []
+            r_   # list
         __ N __ 1:
             r_ [TreeNode(0)]
-        res = []
-        ___ i in range(N
+        res =   # list
+        ___ i __ range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
-            ___ leftNode in left:
-                ___ rightNode in right:
+            ___ leftNode __ left:
+                ___ rightNode __ right:
                     root = TreeNode(0)
                     root.left = leftNode
                     root.right = rightNode

@@ -1,14 +1,14 @@
 import random
 
-x = []
-for i in range(20):
+x =   # list
+___ i __ range(20):
     x.append(int(random.random()*20)-10)
 print(x)
 
-pos = []
-neg = []
+pos =   # list
+neg =   # list
 
-for i in x:
+___ i __ x:
     if i<0:
         neg.append(i)
     elif i>0:

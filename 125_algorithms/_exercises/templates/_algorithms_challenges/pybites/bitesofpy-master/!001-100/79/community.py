@@ -18,8 +18,8 @@ ___ create_user_bar_chart(content: str
        and their corresponding member counts in pluses (see Bite/tests)"""
     reader = csv.DictReader(content.splitlines())
     counter = Counter()
-    ___ row in reader:
+    ___ row __ reader:
         counter[row['tz']] += 1
     l = sorted(counter)
-    ___ timezone in l:
+    ___ timezone __ l:
         print(f'{timezone:25} | {"+" * counter[timezone]}')

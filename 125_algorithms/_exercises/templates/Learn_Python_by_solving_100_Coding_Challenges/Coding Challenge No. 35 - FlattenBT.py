@@ -13,7 +13,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -21,9 +21,9 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return nothing, do it in place
-    def flatten(self, root):
+    ___ flatten(self, root):
         if root == None:
-            return
+            r_
         stack = [root.right, root.left]
         current = root
         while len(stack) != 0:
@@ -37,9 +37,9 @@ class Solution:
                 stack.append(current.right)
                 stack.append(current.left)
 
-        return root
+        r_ root
 
-        def printtree(self, tree_node):
+        ___ printtree(self, tree_node):
             if tree_node.left is not None:
                 self.printtree(tree_node.left)
             print(tree_node.val)
@@ -47,7 +47,7 @@ class Solution:
             self.printtree(tree_node.right)
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left = TreeNode(1), TreeNode(5), TreeNode(6), TreeNode(2), TreeNode(4), TreeNode(3)
     LL = Solution().flatten(BT)
     Solution().printtree(LL)

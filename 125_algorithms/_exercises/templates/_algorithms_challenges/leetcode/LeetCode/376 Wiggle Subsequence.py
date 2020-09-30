@@ -41,13 +41,13 @@ class Solution(object
         """
         __ not A: r_ 0
         N = le.(A)
-        H = [1 ___ _ in xrange(N)]
-        L = [1 ___ _ in xrange(N)]
-        ___ i in xrange(1, N
+        H = [1 ___ _ __ xrange(N)]
+        L = [1 ___ _ __ xrange(N)]
+        ___ i __ xrange(1, N
             L[i] = H[i-1] + 1 __ A[i] < A[i-1] else L[i-1]
             H[i] = L[i-1] + 1 __ A[i] > A[i-1] else H[i-1]
 
-        r_ max(H[N-1], L[N-1])
+        r_ ma.(H[N-1], L[N-1])
 
     ___ wiggleMaxLengthSuboptimal(self, A
         """
@@ -60,16 +60,16 @@ class Solution(object
         __ not A: r_ 0
 
         N = le.(A)
-        H = [1 ___ _ in xrange(N)]
-        L = [1 ___ _ in xrange(N)]
+        H = [1 ___ _ __ xrange(N)]
+        L = [1 ___ _ __ xrange(N)]
         gmax = 1
-        ___ i in xrange(1, N
-            ___ j in xrange(i
+        ___ i __ xrange(1, N
+            ___ j __ xrange(i
                 __ A[i] > A[j]:
-                    H[i] = max(H[i], L[j] + 1)
+                    H[i] = ma.(H[i], L[j] + 1)
                 ____ A[i] < A[j]:
-                    L[i] = max(L[i], H[j] + 1)
+                    L[i] = ma.(L[i], H[j] + 1)
 
-                gmax = max(gmax, H[i], L[i])
+                gmax = ma.(gmax, H[i], L[i])
 
         r_ gmax

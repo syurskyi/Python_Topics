@@ -5,7 +5,7 @@ Unicode = {0: 9471, 1: 10102, 2: 10103, 3: 10104,
 x = input("Insert digits 0-9: ")
 num = " "
 
-for i in x:
+___ i __ x:
     i = int(i)
     i = chr(Unicode[i])
     num = num + i

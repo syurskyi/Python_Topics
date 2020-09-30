@@ -12,7 +12,7 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not words:
             r_ ans
@@ -20,25 +20,25 @@ class Solution:
         n = le.(words)
         w2i = {}
 
-        ___ i in range(n
+        ___ i __ range(n
             w2i[words[i]] = i
 
-        ___ i in range(n
-            ___ j in range(le.(words[i]) + 1
+        ___ i __ range(n
+            ___ j __ range(le.(words[i]) + 1
                 s = words[i][:j]
                 t = words[i][j:]
                 _s = ''.join(reversed(s))
                 _t = ''.join(reversed(t))
 
                 __ (self.is_palindrome(s) and
-                    _t in w2i and
+                    _t __ w2i and
                     w2i[_t] != i
 
                     ans.append([w2i[_t], i])
 
                 __ (self.is_palindrome(t) and
                     le.(t) != 0 and  # since le.(word) + 1, may empty here
-                    _s in w2i and
+                    _s __ w2i and
                     w2i[_s] != i
 
                     ans.append([i, w2i[_s]])
@@ -68,15 +68,15 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not words:
             r_ ans
 
         n = le.(words)
 
-        ___ i in range(n
-            ___ j in range(i
+        ___ i __ range(n
+            ___ j __ range(i
                 __ self.is_palindrome(words, i, j
                     ans.append([i, j])
 
@@ -114,15 +114,15 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not words:
             r_ ans
 
         n = le.(words)
 
-        ___ i in range(n
-            ___ j in range(n
+        ___ i __ range(n
+            ___ j __ range(n
                 __ i __ j:
                     continue
 

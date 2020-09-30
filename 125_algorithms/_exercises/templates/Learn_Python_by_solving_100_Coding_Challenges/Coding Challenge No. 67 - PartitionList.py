@@ -8,7 +8,7 @@
 
 
 class ListNode:
-    def __init__(self, x, next=None):
+    ___ __init__(self, x, next=None):
         self.val = x
         self.next = next
 
@@ -17,7 +17,7 @@ class Solution:
     # @param head, a ListNode
     # @param x, an integer
     # @return a ListNode
-    def partition(self, head, x):
+    ___ partition(self, head, x):
         smaller = ListNode(-1)
         others = ListNode(-1)
         smallerLast, othersLast = smaller, others
@@ -31,15 +31,15 @@ class Solution:
             head = head.next
         smallerLast.next = others.next
         othersLast.next = None
-        return smaller.next
+        r_ smaller.next
 
-    def printll(self, node):
+    ___ printll(self, node):
         while node:
             print ( node.val )
             node = node.next
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     node6 = ListNode(2)
     node5 = ListNode(5, node6)
     node4 = ListNode(2, node5)

@@ -23,4 +23,4 @@ class Solution(object
       cnt = 1
       dividend -= subsum
       subsum = divisor
-    r_ max(min(sign * ans, 0x7fffffff), -2147483648)
+    r_ ma.(min(sign * ans, 0x7fffffff), -2147483648)

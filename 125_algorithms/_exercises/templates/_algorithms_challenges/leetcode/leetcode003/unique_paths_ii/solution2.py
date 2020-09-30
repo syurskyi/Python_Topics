@@ -25,7 +25,7 @@ class Solution:
     ___ uniquePathsWithObstacles(self, obstacleGrid
         n = le.(obstacleGrid)
         m = le.(obstacleGrid[0])
-        t = [[-1 ___ i in range(m)] ___ j in range(n)]
+        t = [[-1 ___ i __ range(m)] ___ j __ range(n)]
         r_ self.unique_paths(obstacleGrid, m - 1, n - 1, t)
 
     ___ unique_paths(self, grid, x, y, t

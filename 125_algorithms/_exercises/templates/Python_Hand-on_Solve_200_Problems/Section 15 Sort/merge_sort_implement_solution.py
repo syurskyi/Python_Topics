@@ -14,7 +14,7 @@
 
 
 # %%
-def mergeSort(nlist):
+___ mergeSort(nlist):
     print("Splitting ",nlist)
     if len(nlist)>1:
         mid = len(nlist)//2

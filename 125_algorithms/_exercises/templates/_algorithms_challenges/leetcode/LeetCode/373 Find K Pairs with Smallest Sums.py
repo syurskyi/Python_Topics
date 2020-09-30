@@ -63,13 +63,13 @@ class Solution(object
                 raise StopIteration
 
         __ not nums1 or not nums2:
-            r_ []
+            r_   # list
 
-        h = []
-        ___ i in xrange(min(k, le.(nums1))):
+        h =   # list
+        ___ i __ xrange(min(k, le.(nums1))):
             heapq.heappush(h, Node(i, 0))
 
-        ret = []
+        ret =   # list
         w___ h and le.(ret) < k:
             node = heapq.heappop(h)
             ret.append([nums1[node.i], nums2[node.j]])
@@ -88,8 +88,8 @@ class Solution(object
         """
         i = 0
         j = 0
-        ret = []
-        ___ _ in xrange(k
+        ret =   # list
+        ___ _ __ xrange(k
             __ i < le.(nums1) and j < le.(nums2
                 ret.append([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:
@@ -102,6 +102,6 @@ class Solution(object
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().kSmallestPairs([1, 7, 11], [2, 4, 6], 9) __ [[1, 2], [1, 4], [1, 6], [7, 2], [7, 4], [11, 2],
                                                                    [7, 6], [11, 4], [11, 6]]

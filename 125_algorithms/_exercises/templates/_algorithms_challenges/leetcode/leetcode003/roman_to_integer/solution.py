@@ -21,7 +21,7 @@ class Solution(object
             'M': 1000,
         }
         res = 0
-        ___ i, c in enumerate(s
+        ___ i, c __ enumerate(s
             __ i < le.(s) - 1 and roman[c] < roman[s[i + 1]]:
                 res -= roman[c]
             ____

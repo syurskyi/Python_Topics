@@ -1,5 +1,5 @@
 fp = open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt")
-data = []
+data =   # list
 
 i = fp.readline()
 while i != '':

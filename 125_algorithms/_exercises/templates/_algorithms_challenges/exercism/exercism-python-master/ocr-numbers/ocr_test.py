@@ -102,5 +102,5 @@ class OcrTest(unittest.TestCase
     ___ test_invalid_grid(self
         self.assertRaises(ValueError, grid, '123a')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

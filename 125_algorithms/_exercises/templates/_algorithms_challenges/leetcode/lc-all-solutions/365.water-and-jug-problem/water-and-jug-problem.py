@@ -13,7 +13,7 @@ class Solution(object
     __ x __ z or y __ z or x + y __ z:
       r_ True
     __ min(x, y) __ 0:
-      r_ True __ max(x, y) __ z else False
+      r_ True __ ma.(x, y) __ z else False
     n = min(x, y)
     w___ n > 1:
       __ x % n __ 0 and y % n __ 0:

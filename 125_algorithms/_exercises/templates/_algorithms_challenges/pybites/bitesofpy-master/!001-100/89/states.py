@@ -35,7 +35,7 @@ NOT_FOUND = 'N/A'
 ___ get_every_nth_state(states=states, n=10
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
-    r_ [s ___ s in states[n - 1::n]]
+    r_ [s ___ s __ states[n - 1::n]]
 
 
 ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev

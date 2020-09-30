@@ -37,7 +37,7 @@ class Solution:
         ret = 0
         w___ any(nums  # any not 0
             z, o = 0, 0
-            ___ i in range(le.(nums)):
+            ___ i __ range(le.(nums)):
                 __ nums[i] & 1 __ 0:
                     o += 1
                 ____
@@ -49,5 +49,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().totalHammingDistance([4, 14, 2]) __ 6

@@ -3,11 +3,11 @@
 # %%
 #  Write a Python program to solve the Fibonacci sequence using recursion.
 
-def fibonacci(n):
+___ fibonacci(n):
   if n == 1 or n == 2:
-    return 1
+    r_ 1
   else:
-    return (fibonacci(n - 1) + (fibonacci(n - 2)))
+    r_ (fibonacci(n - 1) + (fibonacci(n - 2)))
 
 print(fibonacci(7))
 

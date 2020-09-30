@@ -15,7 +15,7 @@ class BookStoreTests(unittest.TestCase
                                places=2)
 
     ___ test_empty_basket(self
-        self.assertAlmostEqual(calculate_total([]), 0.00,
+        self.assertAlmostEqual(calculate_total(  # list), 0.00,
                                places=2)
 
     ___ test_two_different_books(self
@@ -68,5 +68,5 @@ class BookStoreTests(unittest.TestCase
             places=2)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

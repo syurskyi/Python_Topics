@@ -14,20 +14,20 @@ class Solution(object
         s = str(n)
         length = le.(s)
         nums = self.getNums(length)
-        ___ num in nums:
+        ___ num __ nums:
             __ self.matches(n, num
                 r_ True
         r_ False
     
     ___ matches(self, n, num
         hashmap = {}
-        ___ c in str(n
-            __ c in hashmap:
+        ___ c __ str(n
+            __ c __ hashmap:
                 hashmap[c] += 1
             ____
                 hashmap[c] = 1
-        ___ c in str(num
-            __ c in hashmap:
+        ___ c __ str(num
+            __ c __ hashmap:
                 hashmap[c] -= 1
                 __ hashmap[c] __ 0:
                     del hashmap[c]
@@ -36,7 +36,7 @@ class Solution(object
         r_ True
     
     ___ getNums(self, length
-        res = []
+        res =   # list
         num = 2
         w___ le.(str(num)) < length:
             num *= 2

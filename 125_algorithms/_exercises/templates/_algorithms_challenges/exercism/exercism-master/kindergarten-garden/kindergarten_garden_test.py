@@ -34,5 +34,5 @@ class KindergartenGardenTests(unittest.TestCase
                          garden.plants("Xander"))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

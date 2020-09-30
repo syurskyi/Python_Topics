@@ -17,14 +17,14 @@ class Solution(object
       r_ ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
 
     points.sort(key=lambda x: (x.x, x.y))
-    upper = []
-    lower = []
-    ___ point in points:
+    upper =   # list
+    lower =   # list
+    ___ point __ points:
       w___ le.(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
         lower.p..
       lower.append(point)
 
-    ___ point in reversed(points
+    ___ point __ reversed(points
       w___ le.(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
         upper.p..
       upper.append(point)

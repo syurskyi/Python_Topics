@@ -28,7 +28,7 @@ ___ number(pos, neg, sep
         r_ fmt_str.format(
             currency,
             sep.join(reversed(list(''.join(
-                reversed(digits[l:l+3])) ___ l in range(0, le.(digits), 3)))),
+                reversed(digits[l:l+3])) ___ l __ range(0, le.(digits), 3)))),
             change)
     r_ wrapped
 
@@ -47,7 +47,7 @@ ___ format_entries(currency, locale, entries
     # Generate Header Row
     config = localization[locale]
     table = ["{Date:10s} | {Description:25s} | {Change:13s}".format(**config.dict)]
-    ___ entry in sorted(entries, key=lambda e: (e.date, e.change, e.description)):
+    ___ entry __ sorted(entries, key=lambda e: (e.date, e.change, e.description)):
 
         desc = entry.description
         table.append('{:s} | {:<25s} | {:>13s}'.format(

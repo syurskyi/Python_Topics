@@ -16,13 +16,13 @@ class Solution(object
         dfs(p.right, i + 1, j + 1, res)
 
     self.leftMost = float("inf")
-    ans = []
+    ans =   # list
     res = defaultdict(list)
     dfs(root, 0, 0, res)
     i = self.leftMost
     w___ True:
       __ not res[i]:
         break
-      ans.append([item[0] ___ item in sorted(res[i], key=lambda a: a[1])])
+      ans.append([item[0] ___ item __ sorted(res[i], key=lambda a: a[1])])
       i += 1
     r_ ans

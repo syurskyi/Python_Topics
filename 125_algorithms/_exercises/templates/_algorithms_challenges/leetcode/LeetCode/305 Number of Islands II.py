@@ -12,8 +12,8 @@ class UnionFind(object
     """
     ___ __init__(self, rows, cols
         # hashing will cause TLE; use direct array access instead
-        self.pi = [-1 ___ _ in xrange(rows*cols)]  # item -> pi
-        self.sz = [-1 ___ _ in xrange(rows*cols)]  # root -> size
+        self.pi = [-1 ___ _ __ xrange(rows*cols)]  # item -> pi
+        self.sz = [-1 ___ _ __ xrange(rows*cols)]  # root -> size
         self.count = 0
 
     ___ add(self, item
@@ -56,14 +56,14 @@ class Solution:
         rows = n
         cols = m
         unroll = lambda x, y: x*cols + y  # hash will be slower
-        mat = [[0 ___ _ in xrange(cols)] ___ _ in xrange(rows)]
+        mat = [[0 ___ _ __ xrange(cols)] ___ _ __ xrange(rows)]
         uf = UnionFind(rows, cols)
-        ret = []
-        ___ op in operators:
+        ret =   # list
+        ___ op __ operators:
             op = Op(r=op[0], c=op[1])
             uf.add(unroll(op.r, op.c))
             mat[op.r][op.c] = 1
-            ___ dir in self.dirs:
+            ___ dir __ self.dirs:
                 x1 = op.r+dir[0]
                 y1 = op.c+dir[1]
                 __ 0 <= x1 < rows and 0 <= y1 < cols and mat[x1][y1] __ 1:

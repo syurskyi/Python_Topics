@@ -11,7 +11,7 @@ class Solution(object
         :rtype: List[int]
         """
         res = list(range(1, n-k))
-        ___ i in range(k+1
+        ___ i __ range(k+1
             __ i%2 __ 0:
                 res.append(n-k+i//2)
             ____
@@ -29,12 +29,12 @@ class Solution(object
                 2,
             ],
         ]
-        ___ n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.constructArray(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

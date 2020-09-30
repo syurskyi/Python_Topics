@@ -37,13 +37,13 @@ class Solution:
         F_new[i][j] can be constructed
         """
         ret = 0
-        F = [[0 ___ _ in range(n)] ___ _ in range(m)]
+        F = [[0 ___ _ __ range(n)] ___ _ __ range(m)]
         F[r][c] = 1
-        ___ _ in range(N  # epoch
-            F_new = [[0 ___ _ in range(n)] ___ _ in range(m)]
-            ___ i in range(m
-                ___ j in range(n
-                    ___ di, dj in dirs:
+        ___ _ __ range(N  # epoch
+            F_new = [[0 ___ _ __ range(n)] ___ _ __ range(m)]
+            ___ i __ range(m
+                ___ j __ range(n
+                    ___ di, dj __ dirs:
                         I = i + di
                         J = j + dj
                         __ 0 <= I < m and 0 <= J < n:
@@ -56,6 +56,6 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findPaths(2, 2, 2, 0, 0) __ 6
     assert Solution().findPaths(1, 3, 3, 0, 1) __ 12

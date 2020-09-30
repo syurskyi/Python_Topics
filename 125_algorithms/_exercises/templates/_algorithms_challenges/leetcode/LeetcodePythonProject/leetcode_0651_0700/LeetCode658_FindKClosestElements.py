@@ -17,12 +17,12 @@ class Solution(object
             r_ arr[:k]
         __ ind __ le.(arr
             r_ arr[-k:]
-        heap = []
-        ___ i in range(max(0, ind-k), min(le.(arr), ind+k)):
+        heap =   # list
+        ___ i __ range(ma.(0, ind-k), min(le.(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
-        res = []
-        ___ _ in range(k
+        res =   # list
+        ___ _ __ range(k
             res.append(heapq.heappop(heap)[1])
         r_ sorted(res)
     
@@ -44,7 +44,7 @@ class Solution(object
                 9,
             ],
         ]
-        ___ arr, k, x in testCases:
+        ___ arr, k, x __ testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             print('x: %s' % x)
@@ -52,5 +52,5 @@ class Solution(object
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

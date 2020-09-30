@@ -49,5 +49,5 @@ class TriangleTests(unittest.TestCase
         self.assertRaises(TriangleError, Triangle, 7, 3, 2)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

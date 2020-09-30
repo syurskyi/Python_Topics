@@ -8,10 +8,10 @@
 # Use test.txt file at same folder
 
 
-def file_size(fname):
+___ file_size(fname):
         import os
         statinfo = os.stat(fname)
-        return statinfo.st_size
+        r_ statinfo.st_size
 
 print("File size in bytes of a plain file: ",file_size("test.txt"))
 

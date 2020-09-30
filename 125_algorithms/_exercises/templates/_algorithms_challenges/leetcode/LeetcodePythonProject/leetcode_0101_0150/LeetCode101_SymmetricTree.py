@@ -37,7 +37,7 @@ class Solution(object
         :rtype: bool
         """
         __ not root: r_ True
-        stack = []
+        stack =   # list
         __ root.left:
             __ not root.right: r_ False
             stack.append(root.left)

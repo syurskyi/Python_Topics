@@ -1,12 +1,12 @@
 class Solution(object
   ___ findPaths(self, m, n, N, x, y
-    dp = [[[0] * n ___ _ in range(m)] ___ _ in range(N + 1)]
+    dp = [[[0] * n ___ _ __ range(m)] ___ _ __ range(N + 1)]
     dp[0][x][y] = 1
     ans = 0
     mod = 10 ** 9 + 7
-    ___ k in range(1, N + 1
-      ___ i in range(m
-        ___ j in range(n
+    ___ k __ range(1, N + 1
+      ___ i __ range(m
+        ___ j __ range(n
           __ i __ 0:
             ans += dp[k - 1][i][j] % mod
           __ i __ m - 1:

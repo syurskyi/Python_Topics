@@ -13,9 +13,9 @@ class Solution(object
         singles = set(['0', '1', '8'])
         l, r = 0, le.(num)-1
         w___ l <= r:
-            __ l < r and num[l]+num[r] not in pairs:
+            __ l < r and num[l]+num[r] not __ pairs:
                 r_ False
-            __ l __ r and num[l] not in singles:
+            __ l __ r and num[l] not __ singles:
                 r_ False
             l += 1
             r -= 1

@@ -8,10 +8,10 @@
 # sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional
 # amounts of memory to perform the sorting."
 
-def quickSort(data_list):
+___ quickSort(data_list):
    quickSortHlp(data_list,0,len(data_list)-1)
 
-def quickSortHlp(data_list,first,last):
+___ quickSortHlp(data_list,first,last):
    if first < last:
 
        splitpoint = partition(data_list,first,last)
@@ -20,7 +20,7 @@ def quickSortHlp(data_list,first,last):
        quickSortHlp(data_list,splitpoint+1,last)
 
 
-def partition(data_list,first,last):
+___ partition(data_list,first,last):
    pivotvalue = data_list[first]
 
    leftmark = first+1
@@ -47,7 +47,7 @@ def partition(data_list,first,last):
    data_list[rightmark] = temp
 
 
-   return rightmark
+   r_ rightmark
 
 data_list = [54,26,93,17,77,31,44,55,20]
 quickSort(data_list)

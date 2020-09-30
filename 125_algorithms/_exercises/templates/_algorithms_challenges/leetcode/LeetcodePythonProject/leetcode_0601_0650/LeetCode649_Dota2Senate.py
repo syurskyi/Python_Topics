@@ -9,10 +9,10 @@ class Solution(object
         :type senate: str
         :rtype: str
         """
-        queue1 = []
-        queue2 = []
+        queue1 =   # list
+        queue2 =   # list
         n = le.(senate)
-        ___ i in range(n
+        ___ i __ range(n
             __ senate[i] __ 'R':
                 queue1.append(i)
             ____
@@ -32,11 +32,11 @@ class Solution(object
             'RDD',
             'DDRRR',
         ]
-        ___ senate in testCases:
+        ___ senate __ testCases:
             print('senate: %s' % senate)
             result = self.predictPartyVictory(senate)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

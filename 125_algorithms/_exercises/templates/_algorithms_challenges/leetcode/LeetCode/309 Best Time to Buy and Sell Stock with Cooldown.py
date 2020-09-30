@@ -35,23 +35,23 @@ class Solution(object
         __ n __ 0 or n __ 1:
             r_ 0
         __ n __ 2:
-            r_ max(0, A[1]-A[0])
+            r_ ma.(0, A[1]-A[0])
 
         CD = 1  # cool down
-        F = [0 ___ _ in xrange(n)]
-        M = [0 ___ _ in xrange(n)]
+        F = [0 ___ _ __ xrange(n)]
+        M = [0 ___ _ __ xrange(n)]
         F[1] = A[1]-A[0]
-        M[1] = max(M[0], F[1])
-        F[2] = max(A[2]-A[2-1-i] ___ i in xrange(2))
-        M[2] = max(M[1], F[2])
+        M[1] = ma.(M[0], F[1])
+        F[2] = ma.(A[2]-A[2-1-i] ___ i __ xrange(2))
+        M[2] = ma.(M[1], F[2])
 
         # core
-        ___ i in xrange(3, n
-            F[i] = max(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
-            M[i] = max(M[i-1], F[i])
+        ___ i __ xrange(3, n
+            F[i] = ma.(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
+            M[i] = ma.(M[i-1], F[i])
 
         r_ M[-1]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().maxProfit([1, 2, 3, 0, 2]) __ 3

@@ -4,7 +4,7 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
 
         __ not matrix or not matrix[0]:
             r_ ans
@@ -17,7 +17,7 @@ class Solution:
         m, n = le.(matrix), le.(matrix[0])
         x = y = turn = 0
 
-        ___ _ in range(m * n
+        ___ _ __ range(m * n
             ans.append(matrix[x][y])
             matrix[x][y] = None
             _x = x + delta[turn][0]

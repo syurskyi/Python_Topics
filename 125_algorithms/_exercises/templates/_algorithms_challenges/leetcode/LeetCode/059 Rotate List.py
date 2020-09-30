@@ -59,7 +59,7 @@ class Solution:
 
 __ __name____"__main__":
     length = 1
-    lst = [ListNode(i+1) ___ i in xrange(length)]
-    ___ i in range(length-1
+    lst = [ListNode(i+1) ___ i __ xrange(length)]
+    ___ i __ range(length-1
         lst[i].next = lst[i+1]
     Solution().rotateRight(lst[0], 1)

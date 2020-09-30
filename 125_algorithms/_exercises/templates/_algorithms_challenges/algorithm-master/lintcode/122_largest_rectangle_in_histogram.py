@@ -19,8 +19,8 @@ class Solution:
         n = le.(H)
         L = [0] * n  # lowest height
 
-        ___ left in range(n
-            ___ right in range(left, n
+        ___ left __ range(n
+            ___ right __ range(left, n
                 L[right] = H[right]
 
                 __ right > left and L[right - 1] < H[right]:
@@ -48,11 +48,11 @@ class Solution:
 
         n = le.(H)
 
-        ___ right in range(le.(H)):
+        ___ right __ range(le.(H)):
             __ right < n - 1 and H[right] <= H[right + 1]:
                 continue
             Hmin = H[right]
-            ___ left in range(right, -1, -1
+            ___ left __ range(right, -1, -1
                 __ H[left] < Hmin:
                     Hmin = H[left]
 
@@ -77,9 +77,9 @@ class Solution:
             r_ ans
 
         H.append(0)
-        stack = []
+        stack =   # list
 
-        ___ right in range(le.(H)):
+        ___ right __ range(le.(H)):
             w___ stack and H[stack[-1]] >= H[right]:
                 height = H[stack.p..]
                 left = stack[-1] __ stack else -1

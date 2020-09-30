@@ -11,11 +11,11 @@ class Solution(object
         :rtype: List[List[str]]
         """
         hashmap = {}
-        ___ s in strings:
+        ___ s __ strings:
             hashStr = self.getHash(s)
-            hashmap[hashStr] = hashmap.get(hashStr, []) + [s]
-        res = []
-        ___ vals in hashmap.values(
+            hashmap[hashStr] = hashmap.get(hashStr,   # list) + [s]
+        res =   # list
+        ___ vals __ hashmap.values(
             res.append(vals)
         r_ res
     
@@ -23,7 +23,7 @@ class Solution(object
         __ not s: r_ '-2'
         __ le.(s) __ 1: r_ '-1'
         res = ''
-        ___ i in range(1, le.(s)):
+        ___ i __ range(1, le.(s)):
             diff = ord(s[i])-ord(s[i-1])
             __ diff < 0:
                 diff += 26
@@ -35,10 +35,10 @@ class Solution(object
         :type strings: List[str]
         :rtype: List[List[str]]
         """
-        result = []
-        ___ s in strings:
+        result =   # list
+        ___ s __ strings:
             added = False
-            ___ l in result:
+            ___ l __ result:
                 __ self.isSameGroup(l[0], s
                     l.append(s)
                     added = True
@@ -55,7 +55,7 @@ class Solution(object
         diff = ord(s1[0]) - ord(s2[0])
         __ diff < 0:
             diff += 26
-        ___ i in range(1, length
+        ___ i __ range(1, length
             d = ord(s1[i]) - ord(s2[i])
             __ d < 0:
                 d += 26
@@ -69,11 +69,11 @@ class Solution(object
         testCases = [
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
-        ___ strings in testCases:
+        ___ strings __ testCases:
             print('strs: %s' % (strings))
             result = self.groupStrings(strings)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

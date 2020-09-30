@@ -6,7 +6,7 @@ Created on Mar 1, 2017
 
 class Vector2D(object
     ___ __init__(self, vec2d
-        self.values = [row ___ row in vec2d __ row]
+        self.values = [row ___ row __ vec2d __ row]
         self.row = 0
         self.col = 0
     

@@ -81,7 +81,7 @@ class Solution(object
         A.sort(cmp=cmp)
         ret = [0]*n
         ret_cnt = defaultdict(int)  # handle duplicate element
-        ___ a in A:
+        ___ a __ A:
             val, inv = a
             idx = st.find_delete(st.root, inv+1-ret_cnt[val])
             ret_cnt[val] += 1
@@ -90,7 +90,7 @@ class Solution(object
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().reconstructQueue(
         [[9, 0], [7, 0], [1, 9], [3, 0], [2, 7], [5, 3], [6, 0], [3, 4], [6, 2], [5, 2]]) __ [[3, 0], [6, 0], [7, 0],
                                                                                               [5, 2], [3, 4], [5, 3],

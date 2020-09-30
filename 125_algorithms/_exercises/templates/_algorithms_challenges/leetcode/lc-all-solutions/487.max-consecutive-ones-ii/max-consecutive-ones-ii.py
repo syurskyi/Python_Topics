@@ -9,7 +9,7 @@ class Solution(object
     :type nums: List[int]
     :rtype: int
     """
-    ___ num in nums:
+    ___ num __ nums:
       self.readNum(num)  # stream the input
     r_ self.ans
 
@@ -22,4 +22,4 @@ class Solution(object
     ____
       self.count = self.count - self.lastCount + 1
       self.lastCount = self.count
-    self.ans = max(self.ans, self.count)
+    self.ans = ma.(self.ans, self.count)

@@ -25,7 +25,7 @@ class LRUCache(object
         """
         :rtype: int
         """
-        __ key in self.cache:
+        __ key __ self.cache:
             node = self.cache[key]
             self.times.touch(node)
             r_ node.value
@@ -37,7 +37,7 @@ class LRUCache(object
         :type value: int
         :rtype: nothing
         """
-        __ key in self.cache:
+        __ key __ self.cache:
             node = self.cache[key]
             node.value = value
             self.times.touch(node)

@@ -11,7 +11,7 @@ class Solution(object
         """
         prev = nums[0]
         modified = False
-        ___ i in range(1, le.(nums)):
+        ___ i __ range(1, le.(nums)):
             __ nums[i] < prev:
                 __ modified:
                     r_ False
@@ -27,7 +27,7 @@ class Solution(object
         :rtype: bool
         """
         modified = 0
-        ___ i in range(1, le.(nums)):
+        ___ i __ range(1, le.(nums)):
             __ nums[i-1] > nums[i]:
                 __ modified != 0: r_ False
                 modified += 1
@@ -47,11 +47,11 @@ class Solution(object
             [5, 1, 9, 8, 3],
             [1, 2, 3, 1, 3],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.checkPossibility(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

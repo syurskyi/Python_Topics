@@ -6,18 +6,18 @@
 class Solution:
     # @param grid, a list of lists of integers
     # @return an integer
-    def minPathSum(self, grid):
+    ___ minPathSum(self, grid):
         if len(grid)==0 or len(grid[0])==0:
-            return 0
-        for row in range(0, len(grid)):
-            for col in range(0, len(grid[0])):
+            r_ 0
+        ___ row __ range(0, len(grid)):
+            ___ col __ range(0, len(grid[0])):
                 if row>0 and col>0:
                     grid[row][col] += min(grid[row-1][col],grid[row][col-1])
                 elif row>0:
                     grid[row][col] += grid[row-1][col]
                 elif col>0:
                     grid[row][col] += grid[row][col-1]
-        return grid[len(grid)-1][len(grid[0])-1]
+        r_ grid[len(grid)-1][len(grid[0])-1]
 
 
 grid = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]

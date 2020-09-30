@@ -5,14 +5,14 @@ ___ from_base(digits, base
     result = 0
     __ base < 2:
         raise ValueError("Not a valid base: {}".format(base))
-    ___ digit in digits:
+    ___ digit __ digits:
         __ not (0 <= digit < base
             raise ValueError("Not a valid digit in base {}: {}".format(base, digit))
         result = result * base + digit
     r_ result
 
 ___ to_base(number, base
-    digits = []
+    digits =   # list
     __ base < 2:
         raise ValueError("Not a valid base: {}".format(base))
     w___ number > 0:

@@ -10,9 +10,9 @@ class Solution:
             r_ [[]]
         ____
             res = [[]]
-            ___ i, e in enumerate(S
+            ___ i, e __ enumerate(S
                 rest_subsets = self.subsets_aux(S[i + 1:])
-                ___ subset in rest_subsets:
+                ___ subset __ rest_subsets:
                     subset.insert(0, e)
                 res += rest_subsets
             r_ res

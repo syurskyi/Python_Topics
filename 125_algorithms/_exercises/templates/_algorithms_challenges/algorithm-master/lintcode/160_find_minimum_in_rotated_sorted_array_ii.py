@@ -11,7 +11,7 @@ class Solution:
             r_ -1
 
         _min = A[0]
-        ___ i in range(1, le.(A)):
+        ___ i __ range(1, le.(A)):
             __ A[i] < _min:
                 _min = A[i]
                 break

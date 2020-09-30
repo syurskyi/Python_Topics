@@ -4,7 +4,7 @@
 
 
 class ListNode:
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None):
         self.val = val
         self.next = next
 
@@ -13,7 +13,7 @@ class Solution:
     # @param {ListNode} head
     # @return {ListNode}
 
-    def reverseList(self, head):
+    ___ reverseList(self, head):
         result = None
         node = head
         while node != None:
@@ -21,9 +21,9 @@ class Solution:
             node.next = result
             result = node
             node = tmp
-        return result
+        r_ result
 
-    def printll(self, node):
+    ___ printll(self, node):
         while node:
             print ( node.val )
             node = node.next

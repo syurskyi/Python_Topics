@@ -39,8 +39,8 @@ class Solution:
             If "D", then put the largest as prev. Decrese from the max
         """
         mini, maxa = 0, le.(S)
-        ret = []
-        ___ c in S:
+        ret =   # list
+        ___ c __ S:
             __ c __ "I":
                 ret.append(mini)
                 mini += 1
@@ -58,7 +58,7 @@ class Solution:
         errror since cannot repeat
         """
         ret = [0]
-        ___ c in S:
+        ___ c __ S:
             __ c __ "I":
                 ret.append(ret[-1] + 1)
             ____
@@ -66,5 +66,5 @@ class Solution:
         mn = min(ret)
         r_ [
             e - mn
-            ___ e in ret
+            ___ e __ ret
         ]

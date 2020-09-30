@@ -42,13 +42,13 @@ class Solution:
         m, n = le.(grid), le.(grid[0])
         row, cols = 0, [0] * n
 
-        ___ x in range(m
-            ___ y in range(n
+        ___ x __ range(m
+            ___ y __ range(n
                 # calculate bomb in cur section [x, 'WALL' | m) in col
                 __ x __ 0 or grid[x - 1][y] __ self.WALL:
                     cols[y] = 0
 
-                    ___ i in range(x, m
+                    ___ i __ range(x, m
                         __ grid[i][y] __ self.WALL:
                             break
                         __ grid[i][y] __ self.ENEMY:
@@ -58,7 +58,7 @@ class Solution:
                 __ y __ 0 or grid[x][y - 1] __ self.WALL:
                     row = 0
 
-                    ___ i in range(y, n
+                    ___ i __ range(y, n
                         __ grid[x][i] __ self.WALL:
                             break
                         __ grid[x][i] __ self.ENEMY:
@@ -88,10 +88,10 @@ class Solution:
         __ not grid or not grid[0]:
             r_ ans
 
-        ___ x in range(le.(grid)):
-            ___ y in range(le.(grid[0])):
+        ___ x __ range(le.(grid)):
+            ___ y __ range(le.(grid[0])):
                 __ grid[x][y] __ self.EMPTY:
-                    ans = max(
+                    ans = ma.(
                         ans,
                         self.get_killed_cnt(grid, x, y)
                     )
@@ -103,28 +103,28 @@ class Solution:
         cnt = 0
 
         # up
-        ___ x in range(i, -1, -1
+        ___ x __ range(i, -1, -1
             __ grid[x][j] __ self.WALL:
                 break
             __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # down
-        ___ x in range(i, m
+        ___ x __ range(i, m
             __ grid[x][j] __ self.WALL:
                 break
             __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # left
-        ___ y in range(j, -1, -1
+        ___ y __ range(j, -1, -1
             __ grid[i][y] __ self.WALL:
                 break
             __ grid[i][y] __ self.ENEMY:
                 cnt += 1
 
         # right
-        ___ y in range(j, n
+        ___ y __ range(j, n
             __ grid[i][y] __ self.WALL:
                 break
             __ grid[i][y] __ self.ENEMY:

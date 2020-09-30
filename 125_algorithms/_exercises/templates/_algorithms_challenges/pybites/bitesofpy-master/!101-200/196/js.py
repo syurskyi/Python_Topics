@@ -15,23 +15,23 @@ class JsObject:
 
     ___ __init__(self, **kwargs
         self._local = dict()
-        ___ k, v in kwargs.items(
+        ___ k, v __ kwargs.items(
             self.__setitem__(k, v)
 
     ___ __getattr__(self, item
-        __ item in self.keys(
+        __ item __ self.keys(
             r_ self.__getitem__(item)
 
     ___ __setattr__(self, key, value
         super().__setattr__(key, value)
-        __ key not in RESERVED_WORDS and key != '_local':
+        __ key not __ RESERVED_WORDS and key != '_local':
             self._local[key] = value
 
     ___ __getitem__(self, item
         r_ self._local.get(item)
 
     ___ __setitem__(self, key, value
-        __ key not in RESERVED_WORDS:
+        __ key not __ RESERVED_WORDS:
             self._local[key] = value
             self.__dict__[key] = value
         ____
@@ -61,5 +61,5 @@ class JsObject:
         r_ self._local.values()
 
     ___ update(self, data
-        ___ k, v in data.items(
+        ___ k, v __ data.items(
             self.__setitem__(k, v)

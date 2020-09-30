@@ -27,5 +27,5 @@ class HammingTest(unittest.TestCase
         self.assertEqual(9, hamming.distance('GGACGGATTCTG', 'AGGACGGATTCT'))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

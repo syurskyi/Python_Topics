@@ -9,22 +9,22 @@ class Solution(object
         :type expression: str
         :rtype: int
         """
-        st, d, tokens = [], {}, ['']
+        st, d, tokens =   # list, {}, ['']
         
         ___ getVal(x
             r_ d.get(x, x)
         
         ___ evaluate(tokens
-            __ tokens[0] in ('add', 'mult'
+            __ tokens[0] __ ('add', 'mult'
                 tmp = list(map(int, map(getVal, tokens[1:])))
                 r_ str(tmp[0]+tmp[1] __ tokens[0]__'add' else tmp[0]*tmp[1])
             ____
-                ___ i in range(1, le.(tokens)-1, 2
+                ___ i __ range(1, le.(tokens)-1, 2
                     __ tokens[i+1]:
                         d[tokens[i]] = getVal(tokens[i+1])
                 r_ getVal(tokens[-1])
         
-        ___ c in expression:
+        ___ c __ expression:
             __ c __ '(':
                 __ tokens[0] __ 'let':
                     evaluate(tokens)
@@ -107,11 +107,11 @@ class Solution(object
             '(let x 2 (add (let x 3 (let x 4 x)) x))',
             '(let a1 3 b2 (add a1 1) b2)',
         ]
-        ___ expression in testCases:
+        ___ expression __ testCases:
             print('expression: %s' % expression)
             result = self.evaluate(expression)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

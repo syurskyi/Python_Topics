@@ -22,7 +22,7 @@ class Robot:
 
     ___ turn_left(self
         """turn_left turns the robot to the left"""
-        ___ _ in range(3
+        ___ _ __ range(3
             self.turn_right()
 
     ___ advance(self
@@ -39,6 +39,6 @@ class Robot:
 
     ___ simulate(self, commands
         """simulate give the robot a set of commands"""
-        ___ c in commands:
+        ___ c __ commands:
             getattr(self, Robot._valid_commdands[c])()
 

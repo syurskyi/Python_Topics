@@ -13,7 +13,7 @@ class Solution:
             r_ 2
 
         a, b, c = 1, 1, 2
-        ___ i in range(3, n + 1
+        ___ i __ range(3, n + 1
             a, b, c = b, c, a + b + c
 
         r_ c
@@ -37,7 +37,7 @@ class Solution:
         dp[0] = dp[1] = 1
         dp[2] = 2
 
-        ___ i in range(3, n + 1
+        ___ i __ range(3, n + 1
             dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
 
         r_ dp[n]

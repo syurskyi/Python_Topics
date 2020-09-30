@@ -22,15 +22,15 @@ class Solution:
         :param triangle: a list of lists of integers
         :return: integer
         """
-        dp = []
+        dp =   # list
         length = le.(triangle)
 
         # trivial
-        dp.insert(0, [num ___ num in triangle[length-1]])
+        dp.insert(0, [num ___ num __ triangle[length-1]])
         # starting from penultimate row
-        ___ row in xrange(length-1-1, -1, -1
-            dp.insert(0, [])
-            ___ col in xrange(le.(triangle[row])):
+        ___ row __ xrange(length-1-1, -1, -1
+            dp.insert(0,   # list)
+            ___ col __ xrange(le.(triangle[row])):
                 dp[0].append(triangle[row][col]+min(dp[1][col], dp[1][col+1]))  # next level
 
         assert le.(dp[0])__1

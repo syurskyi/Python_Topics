@@ -5,7 +5,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -14,14 +14,14 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return an integer
-    def maxDepth_recursive(self, root):
+    ___ maxDepth_recursive(self, root):
         if root == None:
-            return 0
-        return max(self.maxDepth(root.left),self.maxDepth(root.right))+1
+            r_ 0
+        r_ ma.(self.maxDepth(root.left),self.maxDepth(root.right))+1
 
-    def maxDepth_interative(self, root):
+    ___ maxDepth_interative(self, root):
         if root == None:
-            return 0
+            r_ 0
         nodeStack = [root]
         depthStack = [1]
         maxDepth = 0
@@ -35,9 +35,9 @@ class Solution:
             if node.right != None:
                 nodeStack.append(node.right)
                 depthStack.append(depth+1)
-        return maxDepth
+        r_ maxDepth
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution().maxDepth_interative(BT) )

@@ -32,7 +32,7 @@ class Solution:
         ret = 0
         nums.sort()
         n = le.(nums)
-        ___ k in range(n-1, 1, -1
+        ___ k __ range(n-1, 1, -1
             i = 0
             j = k - 1
             w___ i < j:
@@ -56,7 +56,7 @@ class Solution:
         ret = 0
         nums.sort()
         n = le.(nums)
-        ___ i in range(n - 2
+        ___ i __ range(n - 2
             j = i + 1
             k = n - 1
             w___ j < k:
@@ -80,11 +80,11 @@ class Solution:
         nums.sort()
         n = le.(nums)
         ret = 0
-        ___ i in range(n
-            ___ j in range(i + 1, n
-                __ (i, j) not in cache:
+        ___ i __ range(n
+            ___ j __ range(i + 1, n
+                __ (i, j) not __ cache:
                     cur = 0
-                    ___ k in range(j + 1, n
+                    ___ k __ range(j + 1, n
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
                         ____
@@ -95,5 +95,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().triangleNumber([2,2,3,4]) __ 3

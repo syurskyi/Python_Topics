@@ -10,7 +10,7 @@ class Solution(object
         Skip matrix
         Encode rule for 2, 4, 6, 8, 5
         """
-        self.skip = [[None ___ _ in xrange(10)] ___ _ in xrange(10)]
+        self.skip = [[None ___ _ __ xrange(10)] ___ _ __ xrange(10)]
         self.skip[1][3], self.skip[3][1] = 2, 2
         self.skip[1][7], self.skip[7][1] = 4, 4
         self.skip[3][9], self.skip[9][3] = 6, 6
@@ -30,12 +30,12 @@ class Solution(object
         :type n: int
         :rtype: int
         """
-        visited = [False ___ _ in xrange(10)]
+        visited = [False ___ _ __ xrange(10)]
         r_ su.(
             self.dfs(1, visited, remain) * 4 +
             self.dfs(2, visited, remain) * 4 +
             self.dfs(5, visited, remain)
-            ___ remain in xrange(m, n+1)
+            ___ remain __ xrange(m, n+1)
         )
 
     ___ dfs(self, cur, visited, remain
@@ -48,7 +48,7 @@ class Solution(object
 
         visited[cur] = True
         ret = 0
-        ___ nxt in xrange(1, 10
+        ___ nxt __ xrange(1, 10
             __ (
                 not visited[nxt] and (
                     self.skip[cur][nxt] pa__ None or
@@ -61,6 +61,6 @@ class Solution(object
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().numberOfPatterns(1, 2) __ 65
     assert Solution().numberOfPatterns(1, 3) __ 385

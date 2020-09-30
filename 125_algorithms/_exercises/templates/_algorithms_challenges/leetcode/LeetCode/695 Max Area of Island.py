@@ -41,11 +41,11 @@ class Solution:
 
         ret = 0
         m, n = le.(grid), le.(grid[0])
-        visited = [[False ___ _ in range(n)] ___ _ in range(m)]
-        ___ i in range(m
-            ___ j in range(n
+        visited = [[False ___ _ __ range(n)] ___ _ __ range(m)]
+        ___ i __ range(m
+            ___ j __ range(n
                 __ not visited[i][j] and grid[i][j] __ 1:
-                    ret = max(ret, self.dfs(grid, i, j, visited))
+                    ret = ma.(ret, self.dfs(grid, i, j, visited))
 
         r_ ret
 
@@ -53,7 +53,7 @@ class Solution:
         visited[i][j] = True
         ret = 1
         m, n = le.(grid), le.(grid[0])
-        ___ di, dj in dirs:
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n and not visited[I][J] and grid[I][J] __ 1:
@@ -62,7 +62,7 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],
             [0,0,0,0,0,0,0,1,1,1,0,0,0],
             [0,1,1,0,1,0,0,0,0,0,0,0,0],

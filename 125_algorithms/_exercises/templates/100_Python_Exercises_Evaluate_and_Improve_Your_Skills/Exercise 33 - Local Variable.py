@@ -1,8 +1,8 @@
 #What will the script output?
 
 c = 1
-def foo():
+___ foo
     c = 2
-    return c
+    r_ c
 c = 3
 print(foo())

@@ -4,7 +4,7 @@ class Solution:
         :type n: int
         :rtype: list[str]
         """
-        ans = []
+        ans =   # list
         __ not n:
             r_ ans
 

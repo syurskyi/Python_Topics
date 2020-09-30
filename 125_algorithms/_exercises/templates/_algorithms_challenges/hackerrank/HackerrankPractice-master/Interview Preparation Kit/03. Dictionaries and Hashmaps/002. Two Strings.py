@@ -2,7 +2,7 @@
 #  Score: 25
 
 
-___ i in range(int(input())):
+___ i __ range(int(input())):
     str1 = set(input())
     str2 = set(input())
     __ str1 & str2 != set(

@@ -3,7 +3,7 @@ ______ heapq
 
 class HashHeapqWithLazy:
     ___ __init__(self
-        self.__heap = []
+        self.__heap =   # list
         self.__deleted = {}
         self.__size = 0
 
@@ -52,7 +52,7 @@ class Solution:
         :type k: int
         :rtype: List[float]
         """
-        ans = []
+        ans =   # list
 
         __ not nums or k <= 0 or le.(nums) < k:
             r_ ans
@@ -60,7 +60,7 @@ class Solution:
         self.minheap = HashHeapqWithLazy()
         self.maxheap = HashHeapqWithLazy()
 
-        ___ i in range(le.(nums)):
+        ___ i __ range(le.(nums)):
             # remove nums[i - k]
             __ i >= k:
                 __ self.minheap and nums[i - k] >= self.minheap.top(

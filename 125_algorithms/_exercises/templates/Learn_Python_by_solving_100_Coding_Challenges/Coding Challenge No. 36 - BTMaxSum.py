@@ -11,7 +11,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -19,26 +19,26 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return an integer
-    def maxPathSum(self, root):
+    ___ maxPathSum(self, root):
         self.maxValue = float("-inf")
         self.maxPathSumRec(root)
-        return self.maxValue
+        r_ self.maxValue
 
-    def maxPathSumRec(self, root):
+    ___ maxPathSumRec(self, root):
         if root == None:
-            return 0
+            r_ 0
         leftSum = self.maxPathSumRec(root.left)
         rightSum = self.maxPathSumRec(root.right)
         if leftSum<0 and rightSum<0:
-            self.maxValue = max(self.maxValue, root.val)
-            return root.val
+            self.maxValue = ma.(self.maxValue, root.val)
+            r_ root.val
         if leftSum>0 and rightSum>0:
-            self.maxValue = max(self.maxValue, root.val+leftSum+rightSum)
-        maxValueUp = max(leftSum, rightSum) +root.val
-        self.maxValue = max(self.maxValue, maxValueUp)
-        return maxValueUp
+            self.maxValue = ma.(self.maxValue, root.val+leftSum+rightSum)
+        maxValueUp = ma.(leftSum, rightSum) +root.val
+        self.maxValue = ma.(self.maxValue, maxValueUp)
+        r_ maxValueUp
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution().maxPathSum(BT) )

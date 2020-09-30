@@ -4,7 +4,7 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not nums or le.(nums) < 3:
             r_ ans
@@ -12,7 +12,7 @@ class Solution:
         n = le.(nums)
         nums.sort()
 
-        ___ a in range(n - 2
+        ___ a __ range(n - 2
             __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 

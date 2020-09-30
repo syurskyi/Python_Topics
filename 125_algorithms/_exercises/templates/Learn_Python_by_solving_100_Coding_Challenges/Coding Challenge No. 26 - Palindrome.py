@@ -7,22 +7,22 @@
 class Solution:
     # @param s, a string
     # @return a boolean
-    def isPalindrome(self, s):
+    ___ isPalindrome(self, s):
         if len(s) < 2:
-            return True
+            r_ True
         head, tail = 0, len(s)-1
         while head < tail:
-            if not s[head].isalnum():
+            if not s[head].isalnum
                 head += 1
-            elif not s[tail].isalnum():
+            elif not s[tail].isalnum
                 tail -= 1
             else:
-                if s[head].lower() == s[tail].lower():
+                if s[head].lower() == s[tail].lower
                     head += 1
                     tail -= 1
                 else:
-                    return False
-        return True
+                    r_ False
+        r_ True
 
 
 Solution().isPalindrome(["racecar","race car","race, car"])

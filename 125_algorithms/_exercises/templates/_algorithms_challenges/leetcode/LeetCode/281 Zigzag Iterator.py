@@ -12,7 +12,7 @@ class ZigzagIterator(object
         :type v2: List[int]
         """
         self.mat = [v1, v2]
-        self.maxa = max((c, r) ___ r, c in enumerate(map(lambda x: le.(x)-1, self.mat)))
+        self.maxa = ma.((c, r) ___ r, c __ enumerate(map(lambda x: le.(x)-1, self.mat)))
         self.i = 0
         self.j = 0
         self._reposition()
@@ -48,7 +48,7 @@ class ZigzagIterator(object
         r_ self.j <= self.maxa[0]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     v1 = [1, 2]
     v2 = [3, 4, 5, 6]
     itr = ZigzagIterator(v1, v2)

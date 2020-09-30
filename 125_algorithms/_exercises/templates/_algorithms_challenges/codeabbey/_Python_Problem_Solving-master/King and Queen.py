@@ -1,4 +1,4 @@
-___ i in range(int(input())):
+___ i __ range(int(input())):
     K,Q = list(map(str,input().split()))
     # k and q consist of the character which K[0] and Q[0] holds respectively
     k = K[0]

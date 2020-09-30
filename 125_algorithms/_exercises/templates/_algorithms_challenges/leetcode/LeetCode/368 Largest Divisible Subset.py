@@ -32,22 +32,22 @@ class Solution(object
         :type A: List[int]
         :rtype: List[int]
         """
-        __ not A: r_ []
+        __ not A: r_   # list
 
         F = {}
         pi = {}
         A.sort()
-        ___ i in xrange(le.(A)):
+        ___ i __ xrange(le.(A)):
             F[i] = 1
             pi[i] = i
-            ___ j in xrange(i
+            ___ j __ xrange(i
                 __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]
                         pi[i] = j
 
         max_i, max_v = 0, 1
-        ___ k, v in F.items(
+        ___ k, v __ F.items(
             __ v > max_v:
                 max_i, max_v = k, v
 
@@ -61,5 +61,5 @@ class Solution(object
         r_ list(ret)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().largestDivisibleSubset([1, 2, 4, 8]) __ [1, 2, 4, 8]

@@ -9,8 +9,8 @@ class Solution(object
         n = le.(num)
         longest = n-k
         __ k >= n: r_ '0'
-        stack = []
-        ___ c in num:
+        stack =   # list
+        ___ c __ num:
             w___ k > 0 and stack and stack[-1] > c:
                 stack.p..
                 k -= 1
@@ -29,12 +29,12 @@ class Solution(object
             ("1234567890", 9),
             ("1173", 2),
         ]
-        ___ num, k in testCases:
+        ___ num, k __ testCases:
             print('num: %s' % num)
             print('k: %s' % k)
             result = self.removeKdigits(num, k)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

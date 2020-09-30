@@ -40,5 +40,5 @@ ___ test_task_descriptions(
            '2017-06-23 goal: reach 660 minutes (100.0% done)'
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     pytest.main()

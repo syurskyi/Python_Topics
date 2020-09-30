@@ -7,30 +7,30 @@
 
 
 class Interval:
-    def __init__(self, s=0, e=0):
+    ___ __init__(self, s=0, e=0):
         self.start = s
         self.end = e
-    def printIn(self,i):
+    ___ printIn(self,i):
         print ("[%d ,%d]"%(i.start,i.end))
 
 
 class Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
-    def merge(self, intervals):
+    ___ merge(self, intervals):
         intervals.sort(key = lambda x:x.start)
         length=len(intervals)
-        res=[]
-        for i in range(length):
-            if res==[]:
+        res=  # list
+        ___ i __ range(length):
+            if res==  # list:
                 res.append(intervals[i])
             else:
                 size=len(res)
                 if res[size-1].start<=intervals[i].start<=res[size-1].end:
-                    res[size-1].end=max(intervals[i].end, res[size-1].end)
+                    res[size-1].end=ma.(intervals[i].end, res[size-1].end)
                 else:
                     res.append(intervals[i])
-        return res
+        r_ res
 
 
 i1 = Interval(1,3)
@@ -38,5 +38,5 @@ i2 = Interval(2,6)
 i3 = Interval(8,10)
 i4 = Interval(15,18)
 result = Solution().merge([i1,i2,i3,i4])
-for i in result:
+___ i __ result:
     Interval().printIn(i)

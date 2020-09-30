@@ -39,29 +39,29 @@ class Solution:
         __ S __ T:
             r_ 0
 
-        routes = [set(e) ___ e in routes]
+        routes = [set(e) ___ e __ routes]
         G = defaultdict(set)
-        ___ i in range(le.(routes)):
-            ___ j in range(i + 1, le.(routes)):
+        ___ i __ range(le.(routes)):
+            ___ j __ range(i + 1, le.(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
-                ___ stop in stops_1:  # any(stop in stops_2 for stop in stops_1)
-                    __ stop in stops_2:
+                ___ stop __ stops_1:  # any(stop in stops_2 for stop in stops_1)
+                    __ stop __ stops_2:
                         G[i].add(j)
                         G[j].add(i)
                         break
 
-        q = [i ___ i, stops in enumerate(routes) __ S in stops]
-        target_set = set([i ___ i, stops in enumerate(routes) __ T in stops])
+        q = [i ___ i, stops __ enumerate(routes) __ S __ stops]
+        target_set = set([i ___ i, stops __ enumerate(routes) __ T __ stops])
         visited = defaultdict(bool)
-        ___ i in q:
+        ___ i __ q:
             visited[i] = True
         step = 1
         w___ q:
-            cur_q = []
-            ___ e in q:
-                __ e in target_set:
+            cur_q =   # list
+            ___ e __ q:
+                __ e __ target_set:
                     r_ step
-                ___ nbr in G[e]:
+                ___ nbr __ G[e]:
                     __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)
@@ -79,9 +79,9 @@ class Solution:
         Connect stops within in bus use one edge in G
         """
         G = defaultdict(set)
-        ___ stops in routes:
-            ___ i in range(le.(stops)):
-                ___ j in range(i + 1, le.(stops)):
+        ___ stops __ routes:
+            ___ i __ range(le.(stops)):
+                ___ j __ range(i + 1, le.(stops)):
                     u, v = stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)
@@ -91,11 +91,11 @@ class Solution:
         visited = defaultdict(bool)
         visited[S] = True  # avoid add duplicate
         w___ q:
-            cur_q = []
-            ___ e in q:
+            cur_q =   # list
+            ___ e __ q:
                 __ e __ T:
                     r_ step
-                ___ nbr in G[e]:
+                ___ nbr __ G[e]:
                     __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)
@@ -106,5 +106,5 @@ class Solution:
         r_ -1
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) __ 2

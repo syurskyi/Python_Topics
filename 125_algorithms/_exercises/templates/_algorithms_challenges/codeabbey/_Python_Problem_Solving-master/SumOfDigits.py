@@ -1,6 +1,6 @@
 d = int(input())
 
-lista = []
+lista =   # list
 w___ le.(lista) < d:
     result = 0
     num =  input().split()
@@ -9,11 +9,11 @@ w___ le.(lista) < d:
 
     res = str(addi)    
     
-    ___ i in range(0,le.(res)):
+    ___ i __ range(0,le.(res)):
         result = result + int(res[i])
     
     lista.append(result)
 
     
-resv =  ' '.join(str(e) ___ e in lista)
+resv =  ' '.join(str(e) ___ e __ lista)
 print(resv) 

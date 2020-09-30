@@ -172,5 +172,5 @@ class WordSearchTests(unittest.TestCase
         self.assertIsNone(self.example.search('haskell'))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

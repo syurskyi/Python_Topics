@@ -33,8 +33,8 @@ class Solution:
         dp[-1] = values[-1]
         dp[-2] = values[-1] + values[-2]
 
-        ___ i in range(n - 3, -1, -1
-            dp[i] = max((
+        ___ i __ range(n - 3, -1, -1
+            dp[i] = ma.((
                 values[i] - dp[i + 1],
                 values[i] + values[i + 1] - dp[i + 2],
             ))

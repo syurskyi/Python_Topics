@@ -20,17 +20,17 @@ class Solution:
         r_ self.eval_rpn(s)
 
     ___ to_rpn(self, s
-        stack, res = [], []
+        stack, res =   # list, []
 
-        ___ i in range(le.(s)):
+        ___ i __ range(le.(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit(
                 res[-1] += char
             ____ char.isdigit(
                 res.append(char)
-            ____ char in self.OP:
-                w___ stack and stack[-1] in self.OP:
+            ____ char __ self.OP:
+                w___ stack and stack[-1] __ self.OP:
                     res.append(stack.pop())
                 stack.append(char)
             ____ char __ '(':
@@ -46,12 +46,12 @@ class Solution:
         r_ res
 
     ___ eval_rpn(self, s
-        stack = []
+        stack =   # list
 
-        ___ char in s:
+        ___ char __ s:
             __ char.isdigit(
                 stack.append(int(char))
-            ____ char in self.OP:
+            ____ char __ self.OP:
                 b = stack.p..
                 a = stack.p..
                 stack.append(self.OP[char](a, b))
@@ -76,17 +76,17 @@ class Solution:
         r_ self.eval_rpn(s)
 
     ___ to_rpn(self, s
-        stack, res = [], []
+        stack, res =   # list, []
 
-        ___ i in range(le.(s)):
+        ___ i __ range(le.(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit(
                 res[-1] += char
             ____ char.isdigit(
                 res.append(char)
-            ____ char in '+-':
-                w___ stack and stack[-1] in '+-':
+            ____ char __ '+-':
+                w___ stack and stack[-1] __ '+-':
                     res.append(stack.pop())
                 stack.append(char)
             ____ char __ '(':
@@ -102,12 +102,12 @@ class Solution:
         r_ res
 
     ___ eval_rpn(self, s
-        stack = []
+        stack =   # list
 
-        ___ char in s:
+        ___ char __ s:
             __ char.isdigit(
                 stack.append(int(char))
-            ____ char in '+-':
+            ____ char __ '+-':
                 b = stack.p..
                 a = stack.p..
 

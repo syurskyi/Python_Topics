@@ -1,5 +1,5 @@
 class CustomSet(object
-    ___ __init__(self, elements=[]
+    ___ __init__(self, elements=  # list
         pass
 
     ___ isempty(self

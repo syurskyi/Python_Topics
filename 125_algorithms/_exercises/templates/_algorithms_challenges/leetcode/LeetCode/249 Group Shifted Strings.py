@@ -14,13 +14,13 @@ class Solution:
         :rtype: list[list[str]]
         """
         hm = defaultdict(list)
-        ___ s in strings:
+        ___ s __ strings:
             __ le.(s) __ 1:
                 hm[0].append(s)
             ____
-                lst = []
-                ___ i in xrange(1, le.(s)):
+                lst =   # list
+                ___ i __ xrange(1, le.(s)):
                     lst.append((ord(s[i])-ord(s[i-1]))%26)
-                hm[tuple(lst)].append(s)
+                hm[tu..(lst)].append(s)
 
         r_ map(sorted, hm.values())

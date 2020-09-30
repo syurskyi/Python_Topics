@@ -10,19 +10,19 @@ class Solution:
     # @param cost, a list of integers
     # @return an integer
 
-    def canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit(self, gas, cost):
         if sum(gas) < sum(cost):
-            return -1
+            r_ -1
         n = len(gas)
         diff = 0
         stationIndex = 0
-        for i in range(n):
+        ___ i __ range(n):
             if gas[i]+diff < cost[i]:
                 stationIndex = i+1; diff = 0
             else:
                 diff += gas[i]-cost[i]
 
-        return stationIndex
+        r_ stationIndex
 
 
 Solution().canCompleteCircuit([1,2,3,4,5],[5,4,3,2,1])

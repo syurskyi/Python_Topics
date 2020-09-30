@@ -3,7 +3,7 @@ class Solution:
     # @return {string}
     ___ convertToTitle(self, n
         times = 0
-        res = []
+        res =   # list
         w___ n >= 27:
             res.append(n % 27)
             n %= 27
@@ -14,5 +14,5 @@ class Solution:
         r_ res
 
 test = Solution()
-___ i in range(24,30
+___ i __ range(24,30
     print(test.convertToTitle(i))

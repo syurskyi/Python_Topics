@@ -8,16 +8,16 @@ class Solution:
             r_ ''
 
         times = 0
-        stack = []
+        stack =   # list
 
-        ___ c in s:
+        ___ c __ s:
             __ c.isdigit(
                 times = times * 10 + int(c)
             ____ c __ '[':
                 stack.append(times)
                 times = 0
             ____ c __ ']':
-                part = []
+                part =   # list
                 w___ stack and isinstance(stack[-1], str
                     part.append(stack.pop())
                 cnt = int(stack.pop()) __ stack else 1

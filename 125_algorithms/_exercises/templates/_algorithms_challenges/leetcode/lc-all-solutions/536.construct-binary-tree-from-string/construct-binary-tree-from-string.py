@@ -14,7 +14,7 @@ class Solution(object
     __ s:
       cnt = start = 0
       root = None
-      ___ i, c in enumerate(s
+      ___ i, c __ enumerate(s
         __ c __ "(":
           __ not root and cnt __ 0:
             root = TreeNode(s[:i])

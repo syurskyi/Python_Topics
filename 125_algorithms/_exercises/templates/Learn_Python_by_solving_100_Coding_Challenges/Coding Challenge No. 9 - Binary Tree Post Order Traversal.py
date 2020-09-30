@@ -11,18 +11,18 @@
 # Solutions:
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def postorderTraversal(root):
+    ___ postorderTraversal(root):
         if root == None:
-            return []
+            r_   # list
         stackPrepare = [root]
-        stackReady = []
-        result = []
+        stackReady =   # list
+        result =   # list
         while len(stackPrepare) != 0 :
             current = stackPrepare.pop()
             stackReady.append(current)
@@ -30,8 +30,8 @@ class Solution:
             if current.right != None: stackPrepare.append(current.right)
         while len(stackReady) != 0:
             result.append(stackReady.pop().val)
-        return result
+        r_ result
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution. postorderTraversal (BT) )

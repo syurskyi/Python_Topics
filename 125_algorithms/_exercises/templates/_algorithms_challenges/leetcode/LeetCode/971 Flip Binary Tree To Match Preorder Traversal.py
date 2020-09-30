@@ -51,7 +51,7 @@ class TreeNode:
 
 class Solution:
     ___ __init__(self
-        self.ret = []
+        self.ret =   # list
         self.i = 0  # currently scanning index of voyage
 
     ___ flipMatchVoyage(self, root: TreeNode, voyage: List[int]) -> List[int]:

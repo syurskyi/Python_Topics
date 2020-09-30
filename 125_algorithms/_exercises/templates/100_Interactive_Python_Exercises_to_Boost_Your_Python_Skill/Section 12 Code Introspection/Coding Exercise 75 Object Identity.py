@@ -1,2 +1,2 @@
-def foo(obj):
-    return id(obj)
+___ foo(obj):
+    r_ id(obj)

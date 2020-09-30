@@ -1,9 +1,0 @@
-class Solution(object
-  ___ medianSlidingWindow(self, nums, k
-    window = sorted(nums[:k])
-    medians = []
-    ___ a, b in zip(nums, nums[k:] + [0]
-      medians.append((window[k / 2] + window[~(k / 2)]) / 2.)
-      window.remove(a)
-      bisect.insort(window, b)
-    r_ medians

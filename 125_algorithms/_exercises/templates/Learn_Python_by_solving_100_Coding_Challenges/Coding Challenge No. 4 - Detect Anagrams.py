@@ -4,16 +4,16 @@
 # Solutions:
 
 class Solution:
-    def anagrams(strs):
+    ___ anagrams(strs):
         dict = {}
-        for word in strs:
+        ___ word __ strs:
             sortedword = ''.join(sorted(word))
-            dict[sortedword] = [word] if sortedword not in dict else dict[sortedword] + [word]
-        res = []
-        for item in dict:
+            dict[sortedword] = [word] if sortedword not __ dict else dict[sortedword] + [word]
+        res =   # list
+        ___ item __ dict:
             if len(dict[item]) >= 2:
                 res += dict[item]
-        return res
+        r_ res
 
 
 Solution.anagrams(["anagram", "nagaram", "racecar","carraces"])

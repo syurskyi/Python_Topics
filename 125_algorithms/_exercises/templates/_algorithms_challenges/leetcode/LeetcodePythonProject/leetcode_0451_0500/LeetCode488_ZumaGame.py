@@ -12,7 +12,7 @@ class Solution(object
         """
         self.MAXCOUNT = 6
         handCount = [0]*26
-        ___ c in hand:
+        ___ c __ hand:
             handCount[ord(c)-ord('A')] += 1
         res = self.helper(board+'#', handCount)
         r_ res __ res != float('inf') else -1
@@ -67,12 +67,12 @@ class Solution(object
                 "YRBGB",
             ],
         ]
-        ___ board, hand in testCases:
+        ___ board, hand __ testCases:
             print('board: %s' % board)
             print('hand: %s' % hand)
             result = self.findMinStep(board, hand)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

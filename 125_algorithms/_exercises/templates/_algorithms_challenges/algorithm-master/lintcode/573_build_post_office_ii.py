@@ -35,15 +35,15 @@ class Solution:
         times = collections.defaultdict(int)
         steps = collections.defaultdict(int)
 
-        ___ x in range(m
-            ___ y in range(n
+        ___ x __ range(m
+            ___ y __ range(n
                 __ grid[x][y] __ self.HOUSE:
                     cnt += 1
                     self.bfs(grid, x, y, times, steps)
 
         ans = INF = float('inf')
 
-        ___ (x, y), t in times.items(
+        ___ (x, y), t __ times.items(
             __ t __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -51,15 +51,15 @@ class Solution:
 
     ___ bfs(self, grid, x, y, times, steps
         m, n = le.(grid), le.(grid[0])
-        queue, _queue = [(x, y)], []
+        queue, _queue = [(x, y)],   # list
         visited = set(queue)
         step = 0
 
         w___ queue:
             step += 1
 
-            ___ x, y in queue:
-                ___ dx, dy in (
+            ___ x, y __ queue:
+                ___ dx, dy __ (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
 
@@ -70,7 +70,7 @@ class Solution:
                         continue
                     __ grid[_x][_y] != self.EMPTY:
                         continue
-                    __ (_x, _y) in visited:
+                    __ (_x, _y) __ visited:
                         continue
 
                     visited.add((_x, _y))
@@ -79,7 +79,7 @@ class Solution:
                     steps[_x, _y] += step
                     times[_x, _y] += 1
 
-            queue, _queue = _queue, []
+            queue, _queue = _queue,   # list
 
 
 ______ collections
@@ -110,8 +110,8 @@ class Solution:
         ids = collections.defaultdict(set)  # record house ids
         steps = collections.defaultdict(int)  # total steps for all houses
 
-        ___ x in range(m
-            ___ y in range(n
+        ___ x __ range(m
+            ___ y __ range(n
                 __ grid[x][y] != self.HOUSE:
                     continue
 
@@ -121,7 +121,7 @@ class Solution:
 
         ans = INF = float('inf')
 
-        ___ (x, y), hids in ids.items(
+        ___ (x, y), hids __ ids.items(
             __ le.(hids) __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -130,7 +130,7 @@ class Solution:
     ___ dfs(self, grid, x, y, id, ids, steps, step
         m, n = le.(grid), le.(grid[0])
 
-        ___ dx, dy in (
+        ___ dx, dy __ (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
 

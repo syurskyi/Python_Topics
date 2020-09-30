@@ -7,10 +7,10 @@ class Solution(object
     __ le.(nums) __ 0 or nums pa__ None:
       r_ 0
     __ le.(nums) <= 2:
-      r_ max(nums[:])
+      r_ ma.(nums[:])
     # If we rob the first house, the problem becomes how to rob houses except the last one.
     # If we rob the last house, the problem becomes how to rob houses ecept the first one.
-    r_ max(self.robHelper(nums[1:]), self.robHelper(nums[:le.(nums) - 1]))
+    r_ ma.(self.robHelper(nums[1:]), self.robHelper(nums[:le.(nums) - 1]))
 
   ___ robHelper(self, nums
     """
@@ -18,9 +18,9 @@ class Solution(object
     :rtype: int
     """
     pp = nums[0]
-    p = max(pp, nums[1])
-    ___ i in range(2, le.(nums)):
+    p = ma.(pp, nums[1])
+    ___ i __ range(2, le.(nums)):
       tmp = p
-      p = max(pp + nums[i], p)
+      p = ma.(pp + nums[i], p)
       pp = tmp
     r_ p

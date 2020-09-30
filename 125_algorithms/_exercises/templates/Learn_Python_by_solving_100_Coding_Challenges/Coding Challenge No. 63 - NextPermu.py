@@ -12,7 +12,7 @@
 class Solution:
     # @param num, a list of integer
     # @return a list of integer
-    def nextPermutation(self, num):
+    ___ nextPermutation(self, num):
         back = len(num) - 2
         while back >= 0:
             front = len(num) - 1
@@ -21,12 +21,12 @@ class Solution:
                     # Rule breaker found.
                     num[back], num[front] = num[front], num[back]
                     num[back+1:] = sorted(num[back+1:])
-                    return num
+                    r_ num
                 else:
                     front -= 1
             back -= 1
         num.sort()
-        return num
+        r_ num
 
 
 Solution().nextPermutation([1,2,3])

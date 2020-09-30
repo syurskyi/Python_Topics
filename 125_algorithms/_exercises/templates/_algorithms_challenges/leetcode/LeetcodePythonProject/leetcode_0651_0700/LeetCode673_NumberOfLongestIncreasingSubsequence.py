@@ -15,9 +15,9 @@ class Solution(object
         maxLen = 0
         lengths = [0]*n
         counts = [0]*n
-        ___ i in range(n
+        ___ i __ range(n
             lengths[i], counts[i] = 1, 1
-            ___ j in range(i
+            ___ j __ range(i
                 __ nums[i] > nums[j]:
                     __ lengths[i] __ lengths[j]+1:
                         counts[i] += counts[j]
@@ -37,11 +37,11 @@ class Solution(object
             [2, 2, 2, 2, 2],
             [1, 2, 4, 3, 5, 4, 7, 2],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findNumberOfLIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

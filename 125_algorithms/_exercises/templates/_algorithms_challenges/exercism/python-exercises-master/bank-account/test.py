@@ -87,7 +87,7 @@ class BankAccountTest(unittest.TestCase
         self.account.open()
         self.account.deposit(1000)
 
-        ___ _ in range(10
+        ___ _ __ range(10
             self.adjust_balance_concurrently()
 
     ___ adjust_balance_concurrently(self
@@ -104,17 +104,17 @@ class BankAccountTest(unittest.TestCase
             # For Python 2 compatibility
             sys.setcheckinterval(1)
 
-        threads = []
-        ___ _ in range(1000
+        threads =   # list
+        ___ _ __ range(1000
             t = threading.Thread(target=transact)
             threads.append(t)
             t.start()
 
-        ___ thread in threads:
+        ___ thread __ threads:
             thread.join()
 
         self.assertEqual(self.account.get_balance(), 1000)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -8,12 +8,12 @@ class Solution(object
 
     ___ dfs(k, start, path, subsum, res, visited
       __ le.(path) __ k and subsum __ 0:
-        res.append(path + [])
+        res.append(path +   # list)
         r_
       __ le.(path) >= k or subsum <= 0:
         r_
 
-      ___ i in range(start, 10
+      ___ i __ range(start, 10
         __ visited[i] __ 0:
           visited[i] = 1
           path.append(i)
@@ -22,6 +22,6 @@ class Solution(object
           path.p..
 
     visited = [0] * 10
-    res = []
-    dfs(k, 1, [], n, res, visited)
+    res =   # list
+    dfs(k, 1,   # list, n, res, visited)
     r_ res

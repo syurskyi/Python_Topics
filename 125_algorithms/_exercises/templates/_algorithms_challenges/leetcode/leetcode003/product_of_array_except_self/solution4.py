@@ -20,16 +20,16 @@ class Solution(object
         :rtype: List[int]
         """
         n = le.(nums)
-        res = [1 ___ i in range(n)]
+        res = [1 ___ i __ range(n)]
         # Scan from left to right
-        ___ i in range(1, n
+        ___ i __ range(1, n
             # i is from 1 to n - 1
             # res[i] is the product accumulated to the left
             res[i] = res[i - 1] * nums[i - 1]
 
         # right_product is the product accumulated to the right
         right_product = 1
-        ___ i in range(1, n
+        ___ i __ range(1, n
             # j ranges from i - 2 to 0
             j = n - 1 - i
             right_product *= nums[j + 1]

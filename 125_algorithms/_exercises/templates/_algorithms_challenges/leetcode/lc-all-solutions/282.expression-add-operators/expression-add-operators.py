@@ -1,7 +1,7 @@
 class Solution(object
   ___ addOperators(self, num, target
-    res, self.target = [], target
-    ___ i in range(1, le.(num) + 1
+    res, self.target =   # list, target
+    ___ i __ range(1, le.(num) + 1
       __ i __ 1 or (i > 1 and num[0] != "0"  # prevent "00*" as a number
         self.dfs(num[i:], num[:i], int(num[:i]), int(num[:i]), res)  # this step put first number in the string
     r_ res
@@ -11,7 +11,7 @@ class Solution(object
       __ cur __ self.target:
         res.append(temp)
       r_
-    ___ i in range(1, le.(num) + 1
+    ___ i __ range(1, le.(num) + 1
       val = num[:i]
       __ i __ 1 or (i > 1 and num[0] != "0"  # prevent "00*" as a number
         self.dfs(num[i:], temp + "+" + val, cur + int(val), int(val), res)

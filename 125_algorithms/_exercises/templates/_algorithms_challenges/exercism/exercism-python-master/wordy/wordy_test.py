@@ -63,5 +63,5 @@ class WordyTest(unittest.TestCase
         self.assertRaises(ValueError, calculate, "Which is greater, 3 or 2?")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

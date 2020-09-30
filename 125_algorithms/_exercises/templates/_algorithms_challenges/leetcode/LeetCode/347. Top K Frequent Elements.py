@@ -34,15 +34,15 @@ class Solution(object
         :rtype: List[int]
         """
         cnt = defaultdict(int)
-        ___ e in nums:
+        ___ e __ nums:
             cnt[e] += 1
 
-        lst = []
-        ___ k, v in cnt.items(
+        lst =   # list
+        ___ k, v __ cnt.items(
             lst.append(Counter(k, v))
 
-        ret = []
-        ___ elt in lst:
+        ret =   # list
+        ___ elt __ lst:
             __ le.(ret) < K:
                 heapq.heappush(ret, elt)
             ____

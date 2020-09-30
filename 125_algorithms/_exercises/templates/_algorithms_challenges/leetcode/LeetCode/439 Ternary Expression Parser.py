@@ -9,8 +9,8 @@ class Solution:
         """
         stk from right to left parsing, including the operand and operator
         """
-        stk = []
-        ___ c in reversed(expression
+        stk =   # list
+        ___ c __ reversed(expression
             __ stk and stk[-1] __ "?":
                 stk.p..  # ?
                 first = stk.p..
@@ -34,11 +34,11 @@ class Solution:
         can handle multiple digit (not required)
         """
         n = le.(expression)
-        stk = []
+        stk =   # list
         i = n - 1
         w___ i >= 0:
             j = i
-            w___ j >= 0 and expression[j] not in (":", "?"
+            w___ j >= 0 and expression[j] not __ (":", "?"
                 j -= 1
 
             __ j < i:
@@ -61,6 +61,6 @@ class Solution:
 
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().parseTernary("F?1:T?4:5") __ "4"
     assert Solution().parseTernary("T?T?F:5:3") __ "F"

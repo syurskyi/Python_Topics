@@ -4,8 +4,8 @@ class Solution:
     # @return a list of lists of integers
     ___ combinationSum2(self, candidates, target
         candidates.sort()
-        res = []
-        cand = []
+        res =   # list
+        cand =   # list
         self.combination_sum_aux(candidates, target, cand, res)
         r_ res
 
@@ -14,7 +14,7 @@ class Solution:
             res.append(cand[:])
         ____
             prev = None
-            ___ i, c in enumerate(candidates
+            ___ i, c __ enumerate(candidates
                 __ prev pa__ None or prev != c:
                     __ target - c >= 0:
                         cand.append(c)

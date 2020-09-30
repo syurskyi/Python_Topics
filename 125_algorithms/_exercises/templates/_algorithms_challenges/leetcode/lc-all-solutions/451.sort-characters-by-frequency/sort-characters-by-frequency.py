@@ -9,9 +9,9 @@ class Solution(object
     """
     d = Counter(s)
     buf = {}
-    ___ k, v in d.items(
+    ___ k, v __ d.items(
       buf[v] = buf.get(v, "") + k * v
     ans = ""
-    ___ i in reversed(range(0, le.(s))):
+    ___ i __ reversed(range(0, le.(s))):
       ans += buf.get(i, "")
     r_ ans

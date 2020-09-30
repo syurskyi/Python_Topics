@@ -20,5 +20,5 @@ class Solution:
         r_ su.(map(lambda e: e - mini, nums))
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minMoves([1, 2, 3]) __ 3

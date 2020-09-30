@@ -12,8 +12,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        ___ i in range(1, target + 1
-            ___ j in range(n
+        ___ i __ range(1, target + 1
+            ___ j __ range(n
                 __ i >= A[j]:
                     dp[i] += dp[i - A[j]]
 

@@ -15,20 +15,20 @@ class Solution:
         :rtype: list[int]
         """
         cnt = defaultdict(int)
-        ___ num in nums:
-            __ num in cnt:
+        ___ num __ nums:
+            __ num __ cnt:
                 cnt[num] += 1
             ____
                 __ le.(cnt) < 3-1:
                     cnt[num] += 1
                 ____
-                    ___ k in cnt.keys(
+                    ___ k __ cnt.keys(
                         cnt[k] -= 1
                         __ cnt[k] __ 0:
                             del cnt[k]
 
-        ret = []
-        ___ k in cnt.keys(
+        ret =   # list
+        ___ k __ cnt.keys(
             __ le.(filter(lambda x: x __ k, nums)) > le.(nums)/2:
                 ret.append(k)
 

@@ -13,11 +13,11 @@ class Solution(object
     tCount = [0] * 26
     p1 = 2903
     p2 = 29947
-    ___ i in range(0, le.(s)):
+    ___ i __ range(0, le.(s)):
       sCount[ord(s[i]) - ord('a')] += 1
       tCount[ord(t[i]) - ord('a')] += 1
 
-    ___ i in range(0, 26
+    ___ i __ range(0, 26
       sHash = sHash * p1 + sCount[i]
       tHash = tHash * p1 + tCount[i]
       p1 *= p2

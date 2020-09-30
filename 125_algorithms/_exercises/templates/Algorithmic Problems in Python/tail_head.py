@@ -24,7 +24,7 @@ ___ head(n
 	#do some operation after the recursive call
 	print(n)
 	
-__ __name__ __ "__main__":
+__  -n __ "__main__":
 
 	print("Tail recursion:\n")
 	tail(5)

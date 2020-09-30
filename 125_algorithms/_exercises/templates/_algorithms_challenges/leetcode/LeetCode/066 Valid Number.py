@@ -53,24 +53,24 @@ class Solution:
             [-1, 8,-1,-1,-1,-1], # 9
         ]
         state = 0
-        ___ char in s:
+        ___ char __ s:
             __ state__-1:
                 r_ False
             __ char__" ":
                 token = SPACE
-            ____ char in ("-", "+"
+            ____ char __ ("-", "+"
                 token = SIGN
-            ____ char in map(str, range(10)):
+            ____ char __ map(str, range(10)):
                 token = DIGIT
             ____ char__".":
                 token = DOT
-            ____ char in ("e", "E"
+            ____ char __ ("e", "E"
                 token = E
             ____
                 token = INVALID
 
             state = T[state][token]
-        __ state in (1, 4, 7, 8  # accept state
+        __ state __ (1, 4, 7, 8  # accept state
             r_ True
         ____
             r_ False

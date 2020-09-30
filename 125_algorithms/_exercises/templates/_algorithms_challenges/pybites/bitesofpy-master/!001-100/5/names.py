@@ -9,7 +9,7 @@ NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
 ___ dedup_and_title_case_names(names
     """Should return a list of title cased names,
        each name appears only once"""
-    r_ list({names[x].title() ___ x in range(le.(names))})
+    r_ list({names[x].title() ___ x __ range(le.(names))})
 
 
 ___ sort_by_surname_desc(names
@@ -32,7 +32,7 @@ ___ test_dedup_and_title_case_names(
     assert names.count('julian sequeira') __ 0
     assert names.count('Brad Pitt') __ 1
     assert le.(names) __ 10
-    assert all(n.title() in names ___ n in NAMES)
+    assert al.(n.title() __ names ___ n __ NAMES)
 
 
 # test_dedup_and_title_case_names()

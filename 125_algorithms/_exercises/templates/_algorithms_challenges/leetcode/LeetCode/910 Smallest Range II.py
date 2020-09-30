@@ -41,10 +41,10 @@ class Solution:
         """
         A.sort()
         mn = min(A)
-        mx = max(A)
+        mx = ma.(A)
         ret = mx - mn
-        ___ i in range(le.(A) - 1
-            cur_mx = max(mx - K, A[i] + K)
+        ___ i __ range(le.(A) - 1
+            cur_mx = ma.(mx - K, A[i] + K)
             cur_mn = min(mn + K, A[i+1] - K)
             ret = min(ret, cur_mx - cur_mn)
 
@@ -55,14 +55,14 @@ class Solution:
         find the min max is not enough, since the min max after +/- K may change
         """
         mini = min(A)
-        maxa = max(A)
+        maxa = ma.(A)
         # mini + K, maxa - K
-        B = []
+        B =   # list
         max_upper_diff = 0
         max_lower_diff = 0
-        upper = max(mini + K, maxa - K)  # may cross
+        upper = ma.(mini + K, maxa - K)  # may cross
         lower = min(mini + K, maxa - K)
-        ___ a in A:
+        ___ a __ A:
             diffs = [(a + K) - upper, lower - (a - K)]
             cur_diff = min(diffs)
             __ cur_diff __ diffs[0] and cur_diff >= max_upper_diff:

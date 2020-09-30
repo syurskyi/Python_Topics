@@ -24,7 +24,7 @@ class Solution(object
         :rtype: List[str]
         """
         rmcnt = self.minrm(s)
-        ret = []
+        ret =   # list
         self.dfs(s, "", 0, None, 0, rmcnt, ret)
         r_ ret
 
@@ -35,7 +35,7 @@ class Solution(object
         """
         rmcnt = 0
         left = 0
-        ___ c in s:
+        ___ c __ s:
             __ c __ "(":
                 left += 1
             ____ c __ ")":
@@ -66,7 +66,7 @@ class Solution(object
                 ret.append(cur)
             r_
 
-        __ s[i] not in ("(", ")"  # skip non-parenthesis
+        __ s[i] not __ ("(", ")"  # skip non-parenthesis
             self.dfs(s, cur+s[i], left, None, i+1, rmcnt, ret)
         ____
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
@@ -78,5 +78,5 @@ class Solution(object
                 self.dfs(s, cur+s[i], L, None, i+1, rmcnt, ret)  # put
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().removeInvalidParentheses("(a)())()") __ ['(a())()', '(a)()()']

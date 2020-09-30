@@ -14,19 +14,19 @@ dirname = os.path.dirname(path)
 
 
 ___ get_dirs(
-    ___ path in glob.glob('{}/[0-9]*'.format(dirname)):
+    ___ path __ glob.glob('{}/[0-9]*'.format(dirname)):
         yield path
 
 
 ___ get_files(path
-    ___ fi in os.listdir(path
+    ___ fi __ os.listdir(path
         __ fi.endswith('.py'
             yield os.path.join(path, fi)
 
 
 ___ get_lines(script
     with open(script) as f:
-        ___ line in f:
+        ___ line __ f:
             yield line
 
 
@@ -35,11 +35,11 @@ ___ _is_package(dirname, day, mod
     r_ os.path.isdir(mod_dir)
 
 
-__ __name__ __ '__main__':
-    ___ path in get_dirs(
+__  -n __ '__main__':
+    ___ path __ get_dirs(
         day = os.path.basename(path)
-        ___ script in get_files(path
-            ___ line in get_lines(script
+        ___ script __ get_files(path
+            ___ line __ get_lines(script
                 m = import_regex.match(line)
                 __ m:
                     mod = m.groupdict()['module']
@@ -49,14 +49,14 @@ __ __name__ __ '__main__':
 
     min_scripts = 1  # set to higher to limit output to most used modules
 
-    ___ mod, scripts in sorted(index.items()):
+    ___ mod, scripts __ sorted(index.items()):
         __ le.(scripts) < min_scripts:
             continue
 
         __ mod __ 'common' or \
             any(_is_package(dirname, day, mod) or
                 glob.glob(os.path.join(dirname, day, mod + '.py'))
-                ___ day in scripts
+                ___ day __ scripts
             source = 'own'
         ____
             source = 'stdlib' __ is_std_lib(mod) else 'pypi'
@@ -66,7 +66,7 @@ __ __name__ __ '__main__':
 
     total = su.(cnt.values())
     print()
-    ___ source, count in cnt.most_common(
+    ___ source, count __ cnt.most_common(
         print(f'{source:<10}: {count:>3} ({count/total*100:.1f}%)')
     print('-' * 30)
     print(f'Total: {total}')

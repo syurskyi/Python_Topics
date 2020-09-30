@@ -12,12 +12,12 @@ class Solution:
         :type target: int
         :rtype: List[str]
         """
-        ans = []
+        ans =   # list
 
         __ not s:
             r_ ans
 
-        self.dfs(s, 0, target, 0, 0, ans, [])
+        self.dfs(s, 0, target, 0, 0, ans,   # list)
         r_ ans
 
     ___ dfs(self, s, start, target, val, multi, ans, path
@@ -27,7 +27,7 @@ class Solution:
         __ start >= le.(s
             r_
 
-        ___ i in range(start, le.(s)):
+        ___ i __ range(start, le.(s)):
             __ i > start and s[start] __ '0':
                 # only allow i == start and its `0`
                 break

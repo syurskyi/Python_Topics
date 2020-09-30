@@ -34,7 +34,7 @@ class Solution(object
         right = filter(lambda x: x.start > e, itvls)
         __ le.(left)+le.(right) != le.(itvls
             s = min(s, itvls[le.(left)].start)
-            e = max(e, itvls[-le.(right)-1].end)
+            e = ma.(e, itvls[-le.(right)-1].end)
 
         r_ left + [Interval(s, e)] + right
 
@@ -63,20 +63,20 @@ class SolutionSlow(object
         itvls.sort(cmp=lambda a, b: a.start - b.start)
 
         ret = [itvls[0]]
-        ___ cur in itvls[1:]:
+        ___ cur __ itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
-                pre.end = max(pre.end, cur.end)
+                pre.end = ma.(pre.end, cur.end)
             ____
                 ret.append(cur)
 
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
     insert = [4, 9]
-    lst_interval = []
-    ___ item in lst:
+    lst_interval =   # list
+    ___ item __ lst:
         lst_interval.append(Interval(item[0], item[1]))
     print Solution().insert(lst_interval, Interval(insert[0], insert[1]))

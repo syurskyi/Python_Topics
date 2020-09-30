@@ -6,7 +6,7 @@ class Graph(object
     self.graph = {}
 
   ___ get(self, label
-    __ label not in self.graph:
+    __ label not __ self.graph:
       self.graph[label] = GraphNode(label)
     r_ self.graph[label]
 
@@ -20,8 +20,8 @@ class Graph(object
     visited = set([node1.label])
     w___ queue:
       node, ans = queue.popleft()
-      ___ nbr in node.nbrs:
-        __ nbr not in visited:
+      ___ nbr __ node.nbrs:
+        __ nbr not __ visited:
           w = node.nbrs[nbr]
           visited |= {nbr}
           nbrNode = g.get(nbr)
@@ -55,12 +55,12 @@ class Solution(object
     """
     visited = {}
     g = Graph()
-    ans = []
-    ___ i in range(0, le.(equations)):
+    ans =   # list
+    ___ i __ range(0, le.(equations)):
       label1, label2 = equations[i]
       node1, node2 = g.get(label1), g.get(label2)
       g.connect(node1, node2, values[i])
 
-    ___ query in queries:
+    ___ query __ queries:
       ans.append(g.query(g.get(query[0]), g.get(query[1])))
     r_ ans

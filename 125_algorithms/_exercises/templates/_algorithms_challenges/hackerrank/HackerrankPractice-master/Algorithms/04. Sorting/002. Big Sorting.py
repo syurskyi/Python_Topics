@@ -3,9 +3,9 @@
 
 
 n = int(input())
-arr = []
-___ i in range(n
+arr =   # list
+___ i __ range(n
     arr.append(input())
 arr.sort(key=int)
-___ _ in arr:
+___ _ __ arr:
     print(_)

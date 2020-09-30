@@ -40,7 +40,7 @@ class Solution:
         use a flag
         """
         incr = 0  # 0 undecided, 1 increasing, 2 decresing
-        ___ i in range(1, le.(A)):
+        ___ i __ range(1, le.(A)):
             __ A[i] __ A[i-1]:
                 r_ False
             ____ A[i] > A[i-1]:

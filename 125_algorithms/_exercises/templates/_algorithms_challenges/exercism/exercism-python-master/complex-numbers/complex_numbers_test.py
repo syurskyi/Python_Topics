@@ -174,5 +174,5 @@ class ComplexNumbersTest(unittest.TestCase
         self.assertEqual(input_number.exp().imaginary, expected.imaginary)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

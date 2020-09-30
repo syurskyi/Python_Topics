@@ -15,12 +15,12 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        ans = []
+        ans =   # list
 
         __ not root:
             r_ ans
 
-        self.dfs(root, target, ans, [])
+        self.dfs(root, target, ans,   # list)
 
         r_ ans
 

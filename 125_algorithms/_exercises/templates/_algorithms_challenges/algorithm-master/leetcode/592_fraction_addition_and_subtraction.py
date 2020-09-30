@@ -7,18 +7,18 @@ class Solution:
         :type E: str
         :rtype: str
         """
-        S = []  # signs
+        S =   # list  # signs
 
         __ E[0] != '-':
             S.append('+')
 
-        ___ c in E:
+        ___ c __ E:
             __ c __ '+' or c __ '-':
                 S.append(c)
 
         a, b = 0, 1
         i = 0
-        ___ frac in re.split('\+|-', E
+        ___ frac __ re.split('\+|-', E
             __ not frac:
                 continue
 

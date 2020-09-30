@@ -19,8 +19,8 @@
 first_array = [1,2,3,4,5,6,7]
 second_array = [3,7,2,1,4,6]
 
-def finder(first_array, second_array):
-    return(sum(first_array) - sum(second_array))
+___ finder(first_array, second_array):
+    r_(sum(first_array) - sum(second_array))
 
 missing_number = finder(first_array, second_array)
 

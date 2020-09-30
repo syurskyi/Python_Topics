@@ -5,7 +5,7 @@ class Solution(object
     :type nums2: List[int]
     :rtype: List[int]
     """
-    ans = []
+    ans =   # list
     nums1.sort()
     nums2.sort()
     i = j = 0

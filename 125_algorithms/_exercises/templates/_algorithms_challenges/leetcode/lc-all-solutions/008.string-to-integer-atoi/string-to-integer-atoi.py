@@ -8,12 +8,12 @@ class Solution(object
     sign = 1
     __ not s:
       r_ 0
-    __ s[0] in ["+", "-"]:
+    __ s[0] __ ["+", "-"]:
       __ s[0] __ "-":
         sign = -1
       s = s[1:]
     ans = 0
-    ___ c in s:
+    ___ c __ s:
       __ c.isdigit(
         ans = ans * 10 + int(c)
       ____

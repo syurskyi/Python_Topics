@@ -13,11 +13,11 @@ class Solution:
         :type root: TreeNode
         :rtype: list[str]
         """
-        ans = []
+        ans =   # list
         __ not root:
             r_ ans
 
-        self.dfs(root, ans, [])
+        self.dfs(root, ans,   # list)
 
         r_ ans
 

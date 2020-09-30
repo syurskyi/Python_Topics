@@ -15,8 +15,8 @@ class Solution(object
         j = le.(s) - 1
         i = 0
         w___ i < j:
-            __ s[i] in vowels:
-                w___ s[j] not in vowels: j -= 1
+            __ s[i] __ vowels:
+                w___ s[j] not __ vowels: j -= 1
                 s[i], s[j] = s[j], s[i]
                 j -= 1
 

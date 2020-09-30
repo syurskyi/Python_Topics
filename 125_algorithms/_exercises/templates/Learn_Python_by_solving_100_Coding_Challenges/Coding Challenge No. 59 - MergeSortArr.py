@@ -5,7 +5,7 @@
 
 
 class Solution(object):
-    def merge(self, A, m, B, n):
+    ___ merge(self, A, m, B, n):
         """
         :type A: List[int]
         :type m: int
@@ -26,7 +26,7 @@ class Solution(object):
             A[indexB] = B[indexB]
             indexB -= 1
 
-Solution().merge([1],1,[],0)
+Solution().merge([1],1,  # list,0)
 
 # All you need is understanding the algorithm, don't try other cases.
 # In case you're wondering, if the requirements do not include modifying an array in-place. This is how you merge arrays:

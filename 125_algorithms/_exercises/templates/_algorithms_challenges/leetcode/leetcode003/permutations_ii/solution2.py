@@ -19,13 +19,13 @@ class Solution(object
         __ not nums:
             r_ [[]]
         ____
-            res = []
+            res =   # list
             prev = None
-            ___ i, e in enumerate(nums
+            ___ i, e __ enumerate(nums
                 __ prev pa__ None or prev != e:
                     rest = nums[:i] + nums[i + 1:]
                     rest_perms = self.permute(rest)
-                    ___ perm in rest_perms:
+                    ___ perm __ rest_perms:
                         perm.append(e)
                     res += rest_perms
                     prev = e

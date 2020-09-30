@@ -49,9 +49,9 @@ class Solution:
         """
         i, j = 0, 0
         m, n = le.(A), le.(B)
-        ret = []
+        ret =   # list
         w___ i < m and j < n:
-            lo = max(A[i].start, B[j].start)
+            lo = ma.(A[i].start, B[j].start)
             hi = min(A[i].end, B[j].end)
             __ lo <= hi:
                 ret.append(Interval(lo, hi))
@@ -66,7 +66,7 @@ class Solution:
         """
         like merge
         """
-        ret = []
+        ret =   # list
         i = 0
         j = 0
         m, n = le.(A), le.(B)
@@ -74,10 +74,10 @@ class Solution:
             a = A[i]
             b = B[j]
             __ b.start <= a.end <= b.end:
-                ret.append(Interval(max(a.start, b.start), a.end))
+                ret.append(Interval(ma.(a.start, b.start), a.end))
                 i += 1
             ____ a.start <= b.end <= a.end:
-                ret.append(Interval(max(a.start, b.start), b.end))
+                ret.append(Interval(ma.(a.start, b.start), b.end))
                 j += 1
             ____
                 __ a.end < b.start:

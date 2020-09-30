@@ -29,13 +29,13 @@ class Solution:
         prefix_sum = 0
         counter = defaultdict(int)
         counter[0] = 1  # important trival case
-        ___ a in A:
+        ___ a __ A:
             prefix_sum += a
             prefix_sum %= K
             counter[prefix_sum] += 1
 
         ret = 0
-        ___ v in counter.values(
+        ___ v __ counter.values(
             ret += v * (v-1) // 2
 
         r_ ret
@@ -53,7 +53,7 @@ class Solution:
         counter = defaultdict(int)
         counter[0] = 1  # trival case. !important
         ret = 0
-        ___ a in A:
+        ___ a __ A:
             prefix_sum += a
             prefix_sum %= K
             ret += counter[prefix_sum]  # count of previously matching prefix sum

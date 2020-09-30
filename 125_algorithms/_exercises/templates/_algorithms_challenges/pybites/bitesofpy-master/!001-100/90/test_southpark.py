@@ -25,7 +25,7 @@ ___ test_get_words_spoken_season1_stan(words_spoken_s1
 ___ test_get_words_spoken_season1_cartman(words_spoken_s1
     expected = [('1', 735), ('10', 669), ('13', 621)]
     alt_expected = [('1', 738), ('10', 669), ('13', 621)]
-    assert words_spoken_s1['Cartman'].most_common()[:3] in (expected,
+    assert words_spoken_s1['Cartman'].most_common()[:3] __ (expected,
                                                             alt_expected)
 
 
@@ -35,7 +35,7 @@ ___ test_get_words_spoken_season1_cartman_least_talkative(words_spoken_s1
 
 
 ___ get_words_spoken_non_existing_character(words_spoken_s1
-    assert words_spoken_s1['bogus'].most_common() __ []
+    assert words_spoken_s1['bogus'].most_common() __   # list
 
 
 # let's look at another season and other characters

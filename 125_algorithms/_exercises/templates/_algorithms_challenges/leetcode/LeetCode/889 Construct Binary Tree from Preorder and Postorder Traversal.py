@@ -41,10 +41,10 @@ class Solution:
 
         O(N)
         """
-        stk = []
+        stk =   # list
         popped = None
         j = 0
-        ___ e in pre:
+        ___ e __ pre:
             stk.append(TreeNode(e))
             w___ stk and stk[-1].val __ post[j]:
                 popped = stk.p..
@@ -79,7 +79,7 @@ class Solution:
             right = self.constructFromPrePost(pre[1:], post[:-1])
         ____
             l = 0
-            ___ a in post:
+            ___ a __ post:
                 l += 1
                 __ a __ pre[1]:
                     break

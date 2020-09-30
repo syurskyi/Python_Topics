@@ -7,7 +7,7 @@ class TestPairParentheses(object
         parentheses = Parentheses()
         assert_raises(TypeError, parentheses.find_pair, None)
         assert_raises(ValueError, parentheses.find_pair, -1)
-        assert_equal(parentheses.find_pair(0), [])
+        assert_equal(parentheses.find_pair(0),   # list)
         assert_equal(parentheses.find_pair(1), ['()'])
         assert_equal(parentheses.find_pair(2), ['(())',
                                                 '()()'])
@@ -24,5 +24,5 @@ ___ main(
     test.test_pair_parentheses()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

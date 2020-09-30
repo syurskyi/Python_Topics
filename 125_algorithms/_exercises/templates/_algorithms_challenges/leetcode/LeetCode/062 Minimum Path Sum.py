@@ -21,11 +21,11 @@ class Solution:
         col_cnt = le.(grid[0])
 
 
-        dp = [[1<<31 ___ _ in xrange(col_cnt)] ___ _ in xrange(row_cnt)]
+        dp = [[1<<31 ___ _ __ xrange(col_cnt)] ___ _ __ xrange(row_cnt)]
 
         # dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
-        ___ i in xrange(row_cnt
-            ___ j in xrange(col_cnt
+        ___ i __ xrange(row_cnt
+            ___ j __ xrange(col_cnt
                 __ i__0 and j__0:
                     dp[i][j] = grid[i][j]
                 ____ i__0:

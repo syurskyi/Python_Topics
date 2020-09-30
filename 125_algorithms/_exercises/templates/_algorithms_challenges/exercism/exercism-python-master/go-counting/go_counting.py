@@ -12,7 +12,7 @@ class Board:
     """
 
     ___ __init__(self, board
-        self._board = tuple(tuple(row) ___ row in board)
+        self._board = tu..(tu..(row) ___ row __ board)
 
     ___ _valid_point(self, x, y
         r_ 0 <= y < le.(self._board) and 0 <= x < le.(self._board[y])
@@ -37,9 +37,9 @@ class Board:
         queue = [(x, y)]
         w___ queue:
             x, y = queue.p..
-            __ (x, y) in group or not self._valid_point(x, y
+            __ (x, y) __ group or not self._valid_point(x, y
                 continue
-            __ self._board[y][x] in (BLACK, WHITE
+            __ self._board[y][x] __ (BLACK, WHITE
                 owner.add(self._board[y][x])
             ____ self._board[y][x] __ ' ':
                 group.add((x, y))
@@ -57,8 +57,8 @@ class Board:
                         , i.e. "W", "B", "".  The value being a set
                         of coordinates owned by the owner.
         """
-        not_seen = set((c, r) ___ r, row in enumerate(self._board)
-                ___ c in range(le.(row)))
+        not_seen = set((c, r) ___ r, row __ enumerate(self._board)
+                ___ c __ range(le.(row)))
         groups = {BLACK: set(), WHITE: set(), NONE: set()}
         w___ not_seen:
             x, y = not_seen.p..

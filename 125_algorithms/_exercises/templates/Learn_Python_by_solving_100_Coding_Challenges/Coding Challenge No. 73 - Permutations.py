@@ -9,16 +9,16 @@
 class Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
-    def permute(self, num):
+    ___ permute(self, num):
         if len(num) == 0:
-            return []
+            r_   # list
         if len(num) == 1:
-            return [num]
-        res = []
-        for i in range(len(num)):
-            for j in self.permute(num[:i] + num[i+1:]):
+            r_ [num]
+        res =   # list
+        ___ i __ range(len(num)):
+            ___ j __ self.permute(num[:i] + num[i+1:]):
                 res.append([num[i]] + j)
-        return res
+        r_ res
 
 
 Solution().permute([1,2,3])

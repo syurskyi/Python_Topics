@@ -5,26 +5,26 @@
 
 class Solution:
     # @return a list of lists of string
-    def solveNQueens(self, n):
-        def check(k,j,board):
-            for i in range(k):
+    ___ solveNQueens(self, n):
+        ___ check(k,j,board):
+            ___ i __ range(k):
                 if board[i]==j or abs(k-i)==abs(board[i]-j):
-                    return False
-            return True
+                    r_ False
+            r_ True
 
-        def dfs(depth,board,valuelist,solution):
+        ___ dfs(depth,board,valuelist,solution):
             #for i in range(len(board)):
             if depth==len(board):
                 solution.append(valuelist)
-            for row in range(len(board)):
+            ___ row __ range(len(board)):
                 if check(depth,row,board):
                     s='.'*len(board)
                     board[depth]=row
                     dfs(depth+1,board,valuelist+[s[:row]+'Q'+s[row+1:]],solution)
-        board=[-1 for i in range(n)]
-        solution=[]
-        dfs(0,board,[],solution)
-        return solution
+        board=[-1 ___ i __ range(n)]
+        solution=  # list
+        dfs(0,board,  # list,solution)
+        r_ solution
 
 
 Solution().solveNQueens(4)

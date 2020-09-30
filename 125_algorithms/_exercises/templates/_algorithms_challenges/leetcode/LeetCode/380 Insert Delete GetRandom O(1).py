@@ -44,7 +44,7 @@ class RandomizedSet(object
         3. Use Map to get the location, move to end and pop
         Initialize your data structure here.
         """
-        self.lst = []
+        self.lst =   # list
         self.pos = {}
 
     ___ insert(self, val
@@ -53,7 +53,7 @@ class RandomizedSet(object
         :type val: int
         :rtype: bool
         """
-        __ val in self.pos:
+        __ val __ self.pos:
             r_ False
 
         self.lst.append(val)
@@ -67,7 +67,7 @@ class RandomizedSet(object
         :type val: int
         :rtype: bool
         """
-        __ val not in self.pos:
+        __ val not __ self.pos:
             r_ False
 
         idx, last = self.pos[val], le.(self.lst) - 1
@@ -102,7 +102,7 @@ class RandomizedSetTLE(object
         :type val: int
         :rtype: bool
         """
-        ret = val not in self.set
+        ret = val not __ self.set
         self.set.add(val)
         r_ ret
 
@@ -112,7 +112,7 @@ class RandomizedSetTLE(object
         :type val: int
         :rtype: bool
         """
-        ret = val in self.set
+        ret = val __ self.set
         self.set.discard(val)
         r_ ret
 

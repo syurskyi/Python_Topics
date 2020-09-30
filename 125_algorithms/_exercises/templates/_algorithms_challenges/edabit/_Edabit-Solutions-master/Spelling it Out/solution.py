@@ -1,7 +1,7 @@
 ___ spelling(txt
-    output = []
+    output =   # list
     s = ""
-    ___ i in txt:
+    ___ i __ txt:
         s += i
         output.append(s)
     r_ output

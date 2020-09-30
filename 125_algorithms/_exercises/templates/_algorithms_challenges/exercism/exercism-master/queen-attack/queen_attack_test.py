@@ -69,5 +69,5 @@ class QueenAttackTest(unittest.TestCase
             can_attack((2, 2), (2, 2))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

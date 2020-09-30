@@ -15,7 +15,7 @@ class Solution(object
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        ___ i in xrange(le.(digits)-1, -1, -1
+        ___ i __ xrange(le.(digits)-1, -1, -1
             digits[i] += 1
             __ digits[i] < 10:
                 r_ digits
@@ -36,7 +36,7 @@ class Solution(object
 
         digits[0] += 1
         carry = 0
-        ___ i in xrange(le.(digits)):  # for ind, val in enumerate(digits
+        ___ i __ xrange(le.(digits)):  # for ind, val in enumerate(digits
             digits[i] += carry
             __ digits[i] > 9:
                 digits[i] -= 10
@@ -52,6 +52,6 @@ class Solution(object
         r_ digits
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     digits = [9]
     assert Solution().plusOne(digits) __ [1, 0]

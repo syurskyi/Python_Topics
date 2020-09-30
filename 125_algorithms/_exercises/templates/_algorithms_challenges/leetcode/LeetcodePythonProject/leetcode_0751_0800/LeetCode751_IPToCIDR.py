@@ -12,9 +12,9 @@ class Solution(object
         """
         x = 0
         ips= ip.split('.')
-        ___ ip in ips:
+        ___ ip __ ips:
             x = int(ip) + x*256
-        res = []
+        res =   # list
         w___ n > 0:
             step = x &(-x)
             w___ step > n:
@@ -26,14 +26,14 @@ class Solution(object
     
     ___ long2ip(self, x, step
         res = [0]*4
-        ___ i in range(3, -1, -1
+        ___ i __ range(3, -1, -1
             res[i] = x&255
             x >>= 8
         n = 33
         w___ step > 0:
             n -= 1
             step //= 2
-        r_ '.'.join([str(s) ___ s in res])+'/'+str(n)
+        r_ '.'.join([str(s) ___ s __ res])+'/'+str(n)
     
     ___ test(self
         testCases = [
@@ -42,15 +42,15 @@ class Solution(object
                 10,
             ],
         ]
-        ___ ip, n in testCases:
+        ___ ip, n __ testCases:
             result = self.ipToCIDR(ip, n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()
     
-    ___ n in range(1, 20
+    ___ n __ range(1, 20
         print('n: %s' % n)
         print('{:b}'.format(n))
         print('{:b}'.format(-n))

@@ -18,7 +18,7 @@ class Solution:
 
         key = (depth, start)
 
-        __ key in memo:
+        __ key __ memo:
             r_ memo[key]
 
         memo[key] = min(
@@ -45,14 +45,14 @@ class Solution:
 
         INFINITY = float('inf')
         m = le.(triangle)
-        dp = [[INFINITY] * (m + 1) ___ _ in range(2)]
+        dp = [[INFINITY] * (m + 1) ___ _ __ range(2)]
 
         prev = curr = 0
-        ___ i in range(1, m + 1
+        ___ i __ range(1, m + 1
             prev = curr
             curr = 1 - curr
 
-            ___ j in range(1, i + 1
+            ___ j __ range(1, i + 1
                 """
                 dp[prev][j] == dp[i - 1][j]
                 dp[curr][j] == dp[i][j]
@@ -87,14 +87,14 @@ class Solution:
 
         INFINITY = float('inf')
         m = le.(triangle)
-        dp = [[INFINITY] * (m + 1) ___ _ in range(m + 1)]
+        dp = [[INFINITY] * (m + 1) ___ _ __ range(m + 1)]
 
         prev = curr = 0
-        ___ i in range(m - 1, -1, -1
+        ___ i __ range(m - 1, -1, -1
             prev = curr
             curr = 1 - curr
 
-            ___ j in range(i + 1
+            ___ j __ range(i + 1
                 """
                 dp[prev][j] == dp[i + 1][j]
                 dp[curr][j] == dp[i][j]

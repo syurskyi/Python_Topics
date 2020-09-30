@@ -6,14 +6,14 @@ class Solution(object
     """
     __ le.(nums) < 2:
       r_ nums
-    ans = []
+    ans =   # list
     nums.sort()
     dp = [1] * le.(nums)
     path = [-1] * le.(nums)
     finalMaxLen, finalMaxLenIdx = -1, -1
-    ___ i in range(1, le.(nums)):
+    ___ i __ range(1, le.(nums)):
       maxLen, maxLenIdx = -1, -1
-      ___ j in range(0, i
+      ___ j __ range(0, i
         __ nums[i] % nums[j] __ 0:
           __ dp[j] >= maxLen:
             maxLen = dp[j]

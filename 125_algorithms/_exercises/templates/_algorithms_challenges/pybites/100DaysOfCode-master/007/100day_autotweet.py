@@ -26,10 +26,10 @@ ___ get_log(
 
 ___ get_day_progress(html
     lines = [line.strip()
-             ___ line in html
+             ___ line __ html
              __ line.strip()]
 
-    ___ line in lines:
+    ___ line __ lines:
         day_entry = line.strip('|').split('|')[0].strip()
         __ day_entry __ CURRENT_CHALLENGE_DAY:
             r_ LOG_ENTRY.search(line).groupdict()
@@ -60,10 +60,10 @@ ___ tweet_status(tweet
         logging.error('Error posting to Twitter: {}'.format(exc))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     ______ socket
-    local = 'MacBook' in socket.gethostname()
-    test = local or 'dry' in sys.argv[1:]
+    local = 'MacBook' __ socket.gethostname()
+    test = local or 'dry' __ sys.argv[1:]
 
     __ test:
         log = os.path.basename(LOG)

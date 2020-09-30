@@ -8,13 +8,13 @@
 class Solution:
     # @param {integer[]} height
     # @return {integer}
-    def trap(self, height):
+    ___ trap(self, height):
         if not height or len(height)==1:
-            return 0
+            r_ 0
         max_left = height[0]
         AddVolume = [max_left]
 
-        for i in range(1,len(height)-1):
+        ___ i __ range(1,len(height)-1):
             if max_left < height[i-1]:
                 max_left = height[i-1]
             AddVolume.append(max_left)
@@ -22,13 +22,13 @@ class Solution:
         max_right = height[-1]
         AddVolume.append(max_right)
 
-        for i in reversed(range(1,len(height)-1)):
+        ___ i __ reversed(range(1,len(height)-1)):
             if max_right < height[i+1]:
                     max_right = height[i+1]
             AddVolume[i] = min(max_right,AddVolume[i])
-        for i in range(len(AddVolume)):
-            AddVolume[i] = max(AddVolume[i] - height[i],0)
-        return sum(AddVolume)
+        ___ i __ range(len(AddVolume)):
+            AddVolume[i] = ma.(AddVolume[i] - height[i],0)
+        r_ sum(AddVolume)
 
 
 Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1])

@@ -7,9 +7,9 @@ class Solution(object
     :type nums: List[int]
     :rtype: List[int]
     """
-    ans = []
-    bst = []
-    ___ num in reversed(nums
+    ans =   # list
+    bst =   # list
+    ___ num __ reversed(nums
       idx = bisect.bisect_left(bst, num)
       ans.append(idx)
       bisect.insort(bst, num)

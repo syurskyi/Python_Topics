@@ -53,26 +53,26 @@ class Solution:
         :rtype: List[List[int]]
         """
         __ not matrix or not matrix[0]:
-            r_ []
+            r_   # list
 
         m, n = le.(matrix), le.(matrix[0])  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
-        P = [[False ___ _ in range(n)] ___ _ in range(m)]
-        A = [[False ___ _ in range(n)] ___ _ in range(m)]
+        P = [[False ___ _ __ range(n)] ___ _ __ range(m)]
+        A = [[False ___ _ __ range(n)] ___ _ __ range(m)]
 
         # starting from edge point
-        ___ i in range(m
+        ___ i __ range(m
             self.dfs(matrix, i, 0, P)
             self.dfs(matrix, i, n-1, A)
 
-        ___ j in range(n
+        ___ j __ range(n
             self.dfs(matrix, 0, j, P)
             self.dfs(matrix, m-1, j, A)
 
         ret = [
             [i, j]
-            ___ i in range(m)
-            ___ j in range(n)
+            ___ i __ range(m)
+            ___ j __ range(n)
             __ P[i][j] and A[i][j]
         ]
         r_ ret
@@ -81,7 +81,7 @@ class Solution:
         # check before dfs (to be consistent)
         C[i][j] = True
         m, n = le.(matrix), le.(matrix[0])
-        ___ x, y in dirs:
+        ___ x, y __ dirs:
             I = i + x
             J = j + y
             __ 0 <= I < m and 0 <= J < n and matrix[i][j] <= matrix[I][J]:
@@ -97,26 +97,26 @@ class Solution:
         :rtype: List[List[int]]
         """
         __ not matrix or not matrix[0]:
-            r_ []
+            r_   # list
 
         m, n = le.(matrix), le.(matrix[0])  # row, col
         P = [[False] * n ] * m
         A = [[False] * n ] * m
 
         visisted = [[False] * n ] * m
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 self.dfs_error(matrix, i, j, visisted, P, lambda i, j: i < 0 or j <0)
 
         visisted = [[False] * n ] * m
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 self.dfs_error(matrix, i, j, visisted, A, lambda i, j: i >= m or j >= n)
 
         ret = [
             [i, j]
-            ___ i in range(m)
-            ___ j in range(n)
+            ___ i __ range(m)
+            ___ j __ range(n)
             __ P[i][j] and A[i][j]
         ]
         r_ ret
@@ -128,7 +128,7 @@ class Solution:
             r_ C[i][j]
 
         visisted[i][j] = True
-        ___ x, y in dirs:
+        ___ x, y __ dirs:
             i2 = i + x
             j2= j + y
             __ 0 <= i2 < m and 0 <= j2 < n:
@@ -140,7 +140,7 @@ class Solution:
         r_ C[i][j]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().pacificAtlantic([
         [1,2,2,3,5],
         [3,2,3,4,4],

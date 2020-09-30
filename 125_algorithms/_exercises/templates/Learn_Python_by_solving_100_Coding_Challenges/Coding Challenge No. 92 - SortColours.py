@@ -8,16 +8,16 @@
 class Solution:
     # @param A a list of integers
     # @return sorted A, sort in place
-    def sortColors(self, A):
+    ___ sortColors(self, A):
         color=[0]*3
-        for i in A:
+        ___ i __ A:
             color[i] += 1
         i = 0
-        for x in range(3):
-            for j in range(color[x]):
+        ___ x __ range(3):
+            ___ j __ range(color[x]):
                 A[i]=x
                 i+=1
-        return A
+        r_ A
 
 
 Solution().sortColors([1,2,0,1,2,0])

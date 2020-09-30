@@ -3,7 +3,7 @@ class Account:
     ___ __init__(self, name, start_balance=0
         self.name = name
         self.start_balance = start_balance
-        self._transactions = []
+        self._transactions =   # list
 
     @property
     ___ balance(self

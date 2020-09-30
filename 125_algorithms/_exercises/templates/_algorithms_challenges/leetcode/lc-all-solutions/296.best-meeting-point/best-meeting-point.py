@@ -4,9 +4,9 @@ class Solution(object
     :type grid: List[List[int]]
     :rtype: int
     """
-    iList, jList, ppl = [], [], []
-    ___ i in range(0, le.(grid)):
-      ___ j in range(0, le.(grid[0])):
+    iList, jList, ppl =   # list, [], []
+    ___ i __ range(0, le.(grid)):
+      ___ j __ range(0, le.(grid[0])):
         __ grid[i][j] __ 1:
           ppl.append((i, j))
           iList.append(i)

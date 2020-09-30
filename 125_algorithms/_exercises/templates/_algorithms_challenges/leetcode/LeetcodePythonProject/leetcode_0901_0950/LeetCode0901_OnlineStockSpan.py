@@ -1,8 +1,8 @@
 class StockSpanner(object
 
     ___ __init__(self
-        self.prices = []
-        self.dp = []
+        self.prices =   # list
+        self.dp =   # list
         self.idx = 0
 
     ___ next(self, price
@@ -25,7 +25,7 @@ class StockSpanner(object
 # obj = StockSpanner()
 # param_1 = obj.next(price)
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     stockSpanner = StockSpanner()
     # print(stockSpanner.next(100))
     # print(stockSpanner.next(80))

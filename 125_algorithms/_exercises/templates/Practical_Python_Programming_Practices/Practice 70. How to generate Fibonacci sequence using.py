@@ -1,4 +1,4 @@
-def fibonacci(list_item):
+___ fibonacci(list_item):
     f1 = f2 = 1
     print(f1, f2, end=' ')
     while list_item > 2:

@@ -8,36 +8,36 @@
 
 
 class ListNode(object):
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
-    def to_list(self):
-        return [self.val] + self.next.to_list() if self.next else [self.val]
+    ___ to_list(self):
+        r_ [self.val] + self.next.to_list() if self.next else [self.val]
 
 
 class Solution(object):
-    def reverseKGroup(self, head, k):
+    ___ reverseKGroup(self, head, k):
         """
         :type head: ListNode
         :type k: int
         :rtype: ListNode
         """
         if not head or k <= 1:
-            return head
+            r_ head
         dummy = ListNode(-1)
         dummy.next = head
         temp = dummy
         while temp:
             temp = self.reverseNextK(temp, k)
-        return dummy.next
+        r_ dummy.next
 
-    def reverseNextK(self, head, k):
+    ___ reverseNextK(self, head, k):
         # Check if there are k nodes left
         temp = head
-        for i in range(k):
+        ___ i __ range(k):
             if not temp.next:
-                return None
+                r_ None
             temp = temp.next
 
         # The last node when the k nodes reversed
@@ -45,7 +45,7 @@ class Solution(object):
         prev = head
         curr = head.next
         # Reverse k nodes
-        for i in range(k):
+        ___ i __ range(k):
             nextNode = curr.next
             curr.next = prev
             prev = curr
@@ -53,10 +53,10 @@ class Solution(object):
         # Connect with head and tail
         node.next = curr
         head.next = prev
-        return node
+        r_ node
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     n1 = ListNode(1)
     n2 = ListNode(2)
     n3 = ListNode(3)

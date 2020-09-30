@@ -1,2 +1,2 @@
-def foo(mylist):
-    return mylist[0]
+# ___ foo mylist
+#     r_ ? ?

@@ -1,7 +1,7 @@
 class Robot:
 
-    def __init__(self):
+    ___ __init__(self):
         pass
 
-    def speak(self):
+    ___ speak(self):
         pass

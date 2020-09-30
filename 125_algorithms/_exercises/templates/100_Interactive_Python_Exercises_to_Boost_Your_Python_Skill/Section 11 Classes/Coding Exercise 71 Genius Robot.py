@@ -2,11 +2,11 @@ import re
 
 class Robot:
 
-    def __init__(self):
+    ___ __init__(self):
         pass
 
-    def speak(self, query):
-        if 'sum' in query:
+    ___ speak(self, query):
+        if 'sum' __ query:
             numbers = re.findall(r'\b\d+\b', query)
-            numbers = [float(item) for item in numbers]
-            return sum(numbers)
+            numbers = [float(item) ___ item __ numbers]
+            r_ sum(numbers)

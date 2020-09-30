@@ -48,7 +48,7 @@ class Item:
 
     ___ __repr__(self
         en = [f'  [{chant.max_level}] {chant.id_name}'
-              ___ chant in sorted(self.enchantments, key=lambda x : x.id_name)]
+              ___ chant __ sorted(self.enchantments, key=lambda x : x.id_name)]
         r_ f'{self.name.replace("_"," ").title()}: \n' + '\n'.join(en)
 
 
@@ -66,7 +66,7 @@ ___ generate_enchantments(soup
     With the key being the id_name of the enchantment.
     """
     res = dict()
-    ___ row in soup.select('table#minecraft_items > tr'
+    ___ row __ soup.select('table#minecraft_items > tr'
         data_items = row.find_all('td')
         __ data_items pa__ None or le.(data_items) __ 0:
             continue
@@ -96,9 +96,9 @@ ___ generate_items(data
     With the key being the item name.
     """
     res = dict()
-    ___ enchantment in data.values(
-        ___ i in enchantment.items:
-            __ i in res.keys(
+    ___ enchantment __ data.values(
+        ___ i __ enchantment.items:
+            __ i __ res.keys(
                 res[i].enchantments.append(enchantment)
             ____
                 res[i] = Item(i, [enchantment])
@@ -126,11 +126,11 @@ ___ main(
     soup = get_soup()
     enchantment_data = generate_enchantments(soup)
     minecraft_items = generate_items(enchantment_data)
-    ___ item in minecraft_items:
+    ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     main()
 
 """

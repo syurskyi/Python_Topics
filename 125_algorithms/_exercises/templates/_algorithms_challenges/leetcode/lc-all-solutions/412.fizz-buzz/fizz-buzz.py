@@ -4,8 +4,8 @@ class Solution(object
     :type n: int
     :rtype: List[str]
     """
-    ans = []
-    ___ i in range(1, n + 1
+    ans =   # list
+    ___ i __ range(1, n + 1
       stmt1 = i % 3 __ 0
       stmt2 = i % 5 __ 0
       __ stmt1 and stmt2:

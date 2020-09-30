@@ -105,5 +105,5 @@ async ___ main(
     print(f"\nWork day completed at: {time.strftime('%X')}")
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     asyncio.run(main())

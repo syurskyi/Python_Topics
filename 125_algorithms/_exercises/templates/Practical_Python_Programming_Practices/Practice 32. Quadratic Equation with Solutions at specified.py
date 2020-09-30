@@ -10,11 +10,11 @@ x = range(x1, x2+1)
 y = range(y1, y2+1)
 z = range(z1, z2+1)
 
-for i in x:
+___ i __ x:
     if i == 0:
         continue
-    for j in y:
-        for k in z:
+    ___ j __ y:
+        ___ k __ z:
             print(i, j, k, end=' ')
             A = j*j-4*i*k
             if A >= 0:

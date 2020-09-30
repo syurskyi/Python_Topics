@@ -25,5 +25,5 @@ class TwoBucketTest(unittest.TestCase
         self.assertEqual(measure(2, 3, 3, "one"), (2, "two", 2))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -52,7 +52,7 @@ ___ extract_book_data_page(content
     description = descr_div.text.strip()
     summary_html = descr_div.find_next_sibling("div")
     # sometimes 2nd paragraph = form, then don't include it
-    __ 'dotd-main-book-form' in str(summary_html
+    __ 'dotd-main-book-form' __ str(summary_html
         summary_html = ''
     js_countdown = book_main.find('span', {'class': 'packt-js-countdown'})
     countdown = js_countdown.get('data-countdown-to')
@@ -97,7 +97,7 @@ ___ mail_html(recipients, subject, content
     s.quit()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     __ le.(sys.argv) < 2:
         print('Usage {} email1 email2 ...'.format(sys.argv[0]))
         sys.exit(1)

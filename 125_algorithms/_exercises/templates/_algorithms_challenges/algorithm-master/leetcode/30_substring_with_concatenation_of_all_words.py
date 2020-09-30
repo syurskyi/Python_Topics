@@ -5,23 +5,23 @@ class Solution:
         :type S: List[str]
         :rtype: List[int]
         """
-        ans = []
+        ans =   # list
         __ not s or not S or le.(s) < le.(S) * le.(S[0]
             r_ ans
 
         n, m, k = le.(s), le.(S), le.(S[0])
         F = {}
-        ___ c in S:
+        ___ c __ S:
             F[c] = F.get(c, 0) + 1
 
-        ___ start in range(k
+        ___ start __ range(k
             _F = {}
             cnt = 0
             left = start
 
-            ___ right in range(start, n - k + 1, k
+            ___ right __ range(start, n - k + 1, k
                 sr = s[right:right + k]
-                __ sr not in F:
+                __ sr not __ F:
                     _F = {}
                     cnt = 0
                     left = right + k

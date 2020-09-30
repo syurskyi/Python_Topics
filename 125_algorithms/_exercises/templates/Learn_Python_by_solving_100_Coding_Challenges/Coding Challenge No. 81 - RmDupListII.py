@@ -6,7 +6,7 @@
 # Solutions:
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
@@ -14,9 +14,9 @@ class ListNode:
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
-    def deleteDuplicates(self, head):
+    ___ deleteDuplicates(self, head):
         if head == None:
-            return None
+            r_ None
         dummy = ListNode(10**10)
         dummy.next, head = head, dummy # add a dummy node
         pprev, prev, curr, dupFlag = head, head.next, head.next.next, False
@@ -35,14 +35,14 @@ class Solution:
                 else:
                     pprev, prev = pprev.next, prev.next
             curr = curr.next
-        return head.next
+        r_ head.next
 
-    def printll(self, node):
+    ___ printll(self, node):
         while node:
             print ( node.val )
             node = node.next
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     ll1, ll1.next, ll1.next.next = ListNode(2), ListNode(2), ListNode(5)
     Solution().printll( Solution().deleteDuplicates(ll1) )

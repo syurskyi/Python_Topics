@@ -12,15 +12,15 @@ class Solution:
     visited = set()
 
     ___ dfs(node, visited, graph
-      __ not node or node.label in visited:
+      __ not node or node.label __ visited:
         r_
       visited |= {node.label}
-      __ node.label not in graph:
+      __ node.label not __ graph:
         graph[node.label] = UndirectedGraphNode(node.label)
       newNode = graph[node.label]
 
-      ___ nbr in node.neighbors:
-        __ nbr.label not in graph:
+      ___ nbr __ node.neighbors:
+        __ nbr.label not __ graph:
           graph[nbr.label] = UndirectedGraphNode(nbr.label)
         newNode.neighbors.append(graph[nbr.label])
         dfs(nbr, visited, graph)

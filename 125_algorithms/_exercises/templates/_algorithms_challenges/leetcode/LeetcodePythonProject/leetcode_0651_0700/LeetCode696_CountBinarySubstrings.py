@@ -33,11 +33,11 @@ class Solution(object
 #             '10101',
             "00100",
         ]
-        ___ s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.countBinarySubstrings(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

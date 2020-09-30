@@ -107,5 +107,5 @@ class TestAlphametics(unittest.TestCase
              "T": 9})
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

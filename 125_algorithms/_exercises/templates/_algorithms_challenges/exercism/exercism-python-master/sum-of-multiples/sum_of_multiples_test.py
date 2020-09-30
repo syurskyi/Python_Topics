@@ -48,5 +48,5 @@ class SumOfMultiplesTest(unittest.TestCase
         self.assertEqual(45, sum_of_multiples(10, [0, 1]))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

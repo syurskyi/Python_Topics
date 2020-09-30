@@ -17,10 +17,10 @@ class TestMathOps(object
         solution.insert(3)
         solution.insert(3)
         solution.insert(2)
-        assert_equal(solution.max, 9)
+        assert_equal(solution.ma., 9)
         assert_equal(solution.min, 2)
         assert_equal(solution.mean, 5)
-        assert_true(solution.mode in (2, 9))
+        assert_true(solution.mode __ (2, 9))
         print('Success: test_math_ops')
 
 
@@ -29,5 +29,5 @@ ___ main(
     test.test_math_ops()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

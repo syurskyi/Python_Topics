@@ -40,5 +40,5 @@ class WordTest(unittest.TestCase
         self.assertEqual(score("abcdefghijklmnopqrstuvwxyz"), 87)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

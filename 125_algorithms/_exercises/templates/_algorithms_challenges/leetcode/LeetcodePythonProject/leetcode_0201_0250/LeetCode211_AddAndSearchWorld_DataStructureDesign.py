@@ -16,8 +16,8 @@ class WordDictionary(object
     
     ___ addWord(self, word
         children = self.root.children
-        ___ i, c in enumerate(word
-            __ c in children:
+        ___ i, c __ enumerate(word
+            __ c __ children:
                 t = children[c]
             ____
                 t = TrieNode(c)
@@ -30,12 +30,12 @@ class WordDictionary(object
         __ startInd __ le.(word
             r_ bool(not children)
         c = word[startInd]
-        __ c in children:
+        __ c __ children:
             __ startInd __ le.(word)-1 and children[c].isLeaf:
                 r_ True
             r_ self.searchDFS(children[c].children, word, startInd+1)
         ____ c __ '.':
-            ___ key, node in children.iteritems(
+            ___ key, node __ children.iteritems(
                 __ startInd __ le.(word)-1 and node.isLeaf:
                     r_ True
                 __ self.searchDFS(children[key].children, word, startInd+1

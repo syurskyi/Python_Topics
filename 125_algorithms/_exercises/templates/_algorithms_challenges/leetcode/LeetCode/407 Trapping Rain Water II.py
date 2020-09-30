@@ -52,16 +52,16 @@ class Solution(object
         __ not mat: r_ 0
 
         m, n = le.(mat), le.(mat[0])
-        visited = [[False ___ _ in xrange(n)] ___ _ in xrange(m)]
-        h = []
+        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        h =   # list
         # add cells at the four edges
-        ___ i in xrange(m
+        ___ i __ xrange(m
             visited[i][0] = True
             heapq.heappush(h, Cell(i, 0, mat[i][0]))
             visited[i][n-1] = True
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
 
-        ___ j in xrange(1, n-1
+        ___ j __ xrange(1, n-1
             visited[0][j] = True
             heapq.heappush(h, Cell(0, j, mat[0][j]))
             visited[m-1][j] = True
@@ -71,7 +71,7 @@ class Solution(object
         trapped = 0
         w___ h:
             cur = heapq.heappop(h)
-            ___ dir in self.dirs:
+            ___ dir __ self.dirs:
                 I, J = cur.i+dir[0], cur.j+dir[1]
                 __ 0 <= I < m and 0 <= J < n and not visited[I][J]:
                     nxt = Cell(I, J, mat[I][J])
@@ -85,7 +85,7 @@ class Solution(object
         r_ trapped
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().trapRainWater([
         [12, 13, 0, 12],
         [13, 4, 13, 12],

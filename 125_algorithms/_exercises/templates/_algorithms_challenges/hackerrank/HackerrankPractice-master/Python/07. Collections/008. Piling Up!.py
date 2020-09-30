@@ -5,11 +5,11 @@
 from collections ______ deque
 
 
-___ i in range(int(input())):
+___ i __ range(int(input())):
     _, n = input(), deque(map(int, input().split()))
     ans = True
 
-    ___ j in range(le.(n) - 1
+    ___ j __ range(le.(n) - 1
         __ n[0] >= n[1]:
             n.popleft()
         ____ n[-1] >= n[-2]:

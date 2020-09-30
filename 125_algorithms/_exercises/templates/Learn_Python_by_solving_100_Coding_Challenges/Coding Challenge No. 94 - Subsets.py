@@ -9,18 +9,18 @@
 class Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
-    def subsets(self, nums):
+    ___ subsets(self, nums):
         if nums is None:
-            return []
-        result = []
+            r_   # list
+        result =   # list
         nums.sort()
-        self.dfs(nums, 0, [], result)
-        return result
+        self.dfs(nums, 0,   # list, result)
+        r_ result
 
-    def dfs(self, nums, pos, list_temp, ret):
+    ___ dfs(self, nums, pos, list_temp, ret):
         # append new object with []
-        ret.append([] + list_temp)
-        for i in range(pos, len(nums)):
+        ret.append(  # list + list_temp)
+        ___ i __ range(pos, len(nums)):
             list_temp.append(nums[i])
             self.dfs(nums, i + 1, list_temp, ret)
             list_temp.pop()

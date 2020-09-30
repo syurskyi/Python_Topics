@@ -14,18 +14,18 @@ class Solution(object
         s, t = S, T
         __ s __ t: r_ 0
         hashmap = {}
-        ___ i in range(le.(routes)):
-            ___ j in range(le.(routes[i])):
-                __ routes[i][j] not in hashmap:
-                    hashmap[routes[i][j]] = []
+        ___ i __ range(le.(routes)):
+            ___ j __ range(le.(routes[i])):
+                __ routes[i][j] not __ hashmap:
+                    hashmap[routes[i][j]] =   # list
                 hashmap[routes[i][j]].append(i)
-        queue = []
+        queue =   # list
         addedRoute = set()
         addedStop = set()
-        ___ r in hashmap[s]:
-            __ r in addedRoute: continue
-            ___ i in range(le.(routes[r])):
-                __ routes[r][i] not in addedStop:
+        ___ r __ hashmap[s]:
+            __ r __ addedRoute: continue
+            ___ i __ range(le.(routes[r])):
+                __ routes[r][i] not __ addedStop:
                     queue.append(routes[r][i])
                     addedStop.add(routes[r][i])
             addedRoute.add(r)
@@ -33,13 +33,13 @@ class Solution(object
         w___ queue:
             size = le.(queue)
             count += 1
-            ___ _ in range(size
+            ___ _ __ range(size
                 stop = queue.pop(0)
                 __ stop __ t: r_ count
-                ___ r in hashmap[stop]:
-                    __ r in addedRoute: continue
-                    ___ i in range(le.(routes[r])):
-                        __ routes[r][i] not in addedStop:
+                ___ r __ hashmap[stop]:
+                    __ r __ addedRoute: continue
+                    ___ i __ range(le.(routes[r])):
+                        __ routes[r][i] not __ addedStop:
                             queue.append(routes[r][i])
                     addedRoute.add(r)
         r_ -1
@@ -55,10 +55,10 @@ class Solution(object
                 15,12
             ],
         ]
-        ___ routes, s, t in testCases:
+        ___ routes, s, t __ testCases:
             result = self.numBusesToDestination(routes, s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

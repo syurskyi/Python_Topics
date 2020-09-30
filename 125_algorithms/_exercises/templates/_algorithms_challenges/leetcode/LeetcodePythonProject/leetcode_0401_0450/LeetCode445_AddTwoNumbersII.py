@@ -12,8 +12,8 @@ class ListNode(object
 
 class Solution(object
     ___ addTwoNumbers(self, l1, l2
-        stack1 = []
-        stack2 = []
+        stack1 =   # list
+        stack2 =   # list
         w___ l1:
             stack1.append(l1.val)
             l1 = l1.next

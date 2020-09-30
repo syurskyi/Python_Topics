@@ -5,4 +5,4 @@ class Solution(object
     :type b: str
     :rtype: int
     """
-    r_ max(le.(a), le.(b)) __ a != b else -1
+    r_ ma.(le.(a), le.(b)) __ a != b else -1

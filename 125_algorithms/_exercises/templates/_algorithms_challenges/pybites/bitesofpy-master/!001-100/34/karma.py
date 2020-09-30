@@ -8,7 +8,7 @@ Transaction.__new__.__defaults__ = (datetime.now(),)  # http://bit.ly/2rmiUrL
 class User:
     ___ __init__(self, name: str
         self._name = name
-        self._transactions = []
+        self._transactions =   # list
 
     ___ __str__(self
         r_ f"{self.name} has a karma of {self.karma} and {self.fans} fan{'s' __ self.fans > 1 else ''}"
@@ -24,11 +24,11 @@ class User:
 
     @property
     ___ fans(self) -> int:
-        r_ le.({x.giver ___ x in self._transactions})
+        r_ le.({x.giver ___ x __ self._transactions})
 
     @property
     ___ points(self) -> list:
-        r_ [x.points ___ x in self._transactions]
+        r_ [x.points ___ x __ self._transactions]
 
     @property
     ___ karma(self) -> int:

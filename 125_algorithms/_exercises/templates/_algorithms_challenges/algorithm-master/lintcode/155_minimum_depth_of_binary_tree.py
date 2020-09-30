@@ -19,10 +19,10 @@ class Solution:
 
         queue = [root]
         w___ queue:
-            _queue = []
+            _queue =   # list
             ans += 1
 
-            ___ node in queue:
+            ___ node __ queue:
                 __ not node.left and not node.right:
                     r_ ans
                 __ node.left:

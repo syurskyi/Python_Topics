@@ -2,7 +2,7 @@ infile = open("prob57.txt")
 n = infile.readline()
 data = infile.read().strip().split(" ")
 print(data[0],end=" ")
-___ i in range(int(n)):
+___ i __ range(int(n)):
     temp = data
     __ i __ 0 or i __int(n)-1:
         pass

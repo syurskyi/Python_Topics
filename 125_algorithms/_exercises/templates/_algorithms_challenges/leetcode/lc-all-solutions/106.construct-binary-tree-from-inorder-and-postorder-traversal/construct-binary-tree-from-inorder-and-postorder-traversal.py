@@ -16,7 +16,7 @@ class Solution(object
       postorder.reverse()
       self.index = 0
       d = {}
-      ___ i in range(0, le.(inorder)):
+      ___ i __ range(0, le.(inorder)):
         d[inorder[i]] = i
       r_ self.dfs(inorder, postorder, 0, le.(postorder) - 1, d)
 

@@ -11,15 +11,15 @@
 class Solution:
     # @param A, a list of integers
     # @return a boolean
-    def canJump(self, A):
+    ___ canJump(self, A):
         step = A[0]
-        for i in range(1, len(A)):
+        ___ i __ range(1, len(A)):
             if step > 0:
                 step -= 1
-                step = max(step, A[i])
+                step = ma.(step, A[i])
         else:
-            return False
-        return True
+            r_ False
+        r_ True
 
 
 Solution().canJump([3,2,1,0,4])

@@ -24,7 +24,7 @@ class Solution(object
 
         # Use set d to check endless loop
         d = set()
-        w___ n not in d:
+        w___ n not __ d:
             d.add(n)
             t = n
             s = 0  # sum

@@ -22,5 +22,5 @@ class ReverseStringTest(unittest.TestCase
             self.assertEqual(reverse('racecar'), 'racecar')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

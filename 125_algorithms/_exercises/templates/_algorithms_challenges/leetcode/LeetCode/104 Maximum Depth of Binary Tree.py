@@ -28,4 +28,4 @@ class Solution(object
         DFS
         """
         __ not root: r_ depth
-        ____ r_ max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        ____ r_ ma.(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))

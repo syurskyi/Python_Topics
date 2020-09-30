@@ -54,7 +54,7 @@ class MyCalendarTwo:
         boundary counting
         bisect.insort
         """
-        self.lst = []  # can be TreeMap(), ordered map
+        self.lst =   # list  # can be TreeMap(), ordered map
 
 
     ___ book(self, start: int, end: int) -> bool:
@@ -64,7 +64,7 @@ class MyCalendarTwo:
         bisect.insort(self.lst, (start, "start"))
         bisect.insort(self.lst, (end, "end"))
         count = 0
-        ___ _, flag in self.lst:
+        ___ _, flag __ self.lst:
             count += 1 __ flag __ "start" else -1
             __ count > 2:
                 self.lst.remove((start, "start"))

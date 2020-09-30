@@ -5,8 +5,8 @@ Created on Feb 23, 2017
 '''
 class Queue(object
     ___ __init__(self
-        self.stack1 = []
-        self.stack2 = []
+        self.stack1 =   # list
+        self.stack2 =   # list
     
     ___ push(self, x
         __ self.empty(

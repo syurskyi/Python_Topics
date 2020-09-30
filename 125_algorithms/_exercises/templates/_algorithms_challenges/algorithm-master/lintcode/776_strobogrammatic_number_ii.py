@@ -14,9 +14,9 @@ class Solution:
             n -= 1
 
         w___ n:
-            queue = []
+            queue =   # list
 
-            ___ s in ans:
+            ___ s __ ans:
                 __ n != 2:
                     queue.append('0' + s + '0')
 

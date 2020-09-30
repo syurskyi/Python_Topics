@@ -61,8 +61,8 @@ class Solution:
         right = self.find(node.right)
         left_path = left + 1 __ node.left and node.left.val __ node.val else 0
         right_path = right + 1 __ node.right and node.right.val __ node.val else 0
-        self.ret = max(self.ret, left_path + right_path)
-        r_ max(left_path, right_path)
+        self.ret = ma.(self.ret, left_path + right_path)
+        r_ ma.(left_path, right_path)
 
 
 class Solution_error:
@@ -93,5 +93,5 @@ class Solution_error:
             __ right > left:
                 cur = right + 1
 
-        self.ret = max(self.ret, path - 1)
+        self.ret = ma.(self.ret, path - 1)
         r_ cur

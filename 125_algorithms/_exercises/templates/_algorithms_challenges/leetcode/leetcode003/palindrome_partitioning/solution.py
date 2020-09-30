@@ -2,8 +2,8 @@ class Solution:
     # @param s, a string
     # @return a list of lists of string
     ___ partition(self, s
-        res = []
-        cand = []
+        res =   # list
+        cand =   # list
         self.partition_aux(s, cand, res)
         r_ res
 
@@ -11,7 +11,7 @@ class Solution:
         __ not s:
             res.append(cand[:])
         ____
-            ___ i, e in enumerate(s
+            ___ i, e __ enumerate(s
                 __ self.is_palindrome(s[:i + 1]
                     cand.append(s[:i + 1])
                     self.partition_aux(s[i + 1:], cand, res)

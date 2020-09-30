@@ -5,10 +5,10 @@
 
 class Solution:
     # @return an integer
-    def divide(dividend, divisor):
+    ___ divide(dividend, divisor):
         if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
             if abs(dividend) < abs(divisor):
-                return 0
+                r_ 0
         sum = 0; count = 0; res = 0
         a = abs(dividend); b = abs(divisor)
         while a >= b:
@@ -21,7 +21,7 @@ class Solution:
             res += count
         if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
             res = 0 - res
-        return res
+        r_ res
 
 
 Solution.divide(100,5)

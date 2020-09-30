@@ -8,7 +8,7 @@ from spiral_matrix ______ spiral
 
 class SpiralMatrixTest(unittest.TestCase
     ___ test_spiral_matrix_with_size_0(self
-        self.assertEqual(spiral(0), [])
+        self.assertEqual(spiral(0),   # list)
 
     ___ test_spiral_matrix_with_size_1(self
         self.assertEqual(spiral(1), [[1]])
@@ -36,5 +36,5 @@ class SpiralMatrixTest(unittest.TestCase
                                      [13, 12, 11, 10, 9]])
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

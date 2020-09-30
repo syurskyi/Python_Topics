@@ -23,12 +23,12 @@ class Solution:
         __ s[0] != " ":
             ret = 1
         prev = s[0]
-        ___ c in s[1:]:
+        ___ c __ s[1:]:
             __ c != " " and prev __ " ":
                 ret += 1
             prev = c
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().countSegments("Hello, my name is John") __ 5

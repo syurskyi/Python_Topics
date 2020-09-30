@@ -10,10 +10,10 @@ class Solution(object
         :rtype: List[int]
         """
         ______ heapq
-        pq = [(arr[0], i, 0) ___ i, arr in enumerate(nums)]
+        pq = [(arr[0], i, 0) ___ i, arr __ enumerate(nums)]
         heapq.heapify(pq)
         res = [float('-inf'), float('inf')]
-        right = max([arr[0] ___ arr in nums])
+        right = ma.([arr[0] ___ arr __ nums])
         w___ pq:
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
@@ -21,7 +21,7 @@ class Solution(object
             __ j+1 __ le.(nums[i]
                 r_ res
             v = nums[i][j+1]
-            right = max(right, v)
+            right = ma.(right, v)
             heapq.heappush(pq, (v, i, j+1))
         r_ res
     
@@ -33,11 +33,11 @@ class Solution(object
                 [5, 18, 22, 30],
             ],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.smallestRange(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

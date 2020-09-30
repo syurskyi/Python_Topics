@@ -22,7 +22,7 @@ class Solution(object
         r_ -1
       __ abs(left - right) > 1:
         r_ -1
-      r_ 1 + max(left, right)
+      r_ 1 + ma.(left, right)
 
     __ dfs(root) __ -1:
       r_ False

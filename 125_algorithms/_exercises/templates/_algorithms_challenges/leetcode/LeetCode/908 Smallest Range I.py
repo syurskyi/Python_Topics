@@ -38,4 +38,4 @@ class Solution:
         """
         only need the max and min
         """
-        r_ max(0, max(A) - K - (min(A) + K))
+        r_ ma.(0, ma.(A) - K - (min(A) + K))

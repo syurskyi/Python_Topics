@@ -8,9 +8,9 @@ class Solution(object
     """
     ans = float("inf")
     idx1 = idx2 = -1
-    ___ i in range(0, le.(words)):
+    ___ i __ range(0, le.(words)):
       word = words[i]
-      __ word in (word1, word2
+      __ word __ (word1, word2
         __ word __ word1:
           idx1 = i
           __ idx2 != -1 and idx1 != idx2:

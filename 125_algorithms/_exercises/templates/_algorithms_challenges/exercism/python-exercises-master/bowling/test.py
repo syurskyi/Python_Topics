@@ -8,7 +8,7 @@ from bowling ______ BowlingGame
 class BowlingTest(unittest.TestCase
 
     ___ roll(self, rolls
-        [self.game.roll(roll) ___ roll in rolls]
+        [self.game.roll(roll) ___ roll __ rolls]
 
     ___ roll_and_score(self, rolls
         self.roll(rolls)
@@ -225,5 +225,5 @@ class BowlingTest(unittest.TestCase
         r_ self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

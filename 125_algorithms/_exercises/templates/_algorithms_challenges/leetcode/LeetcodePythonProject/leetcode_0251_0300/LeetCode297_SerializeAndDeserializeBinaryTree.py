@@ -41,7 +41,7 @@ class Codec:
         root.right = self.helper(arr, ind)
         r_ root
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     root = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
     codec = Codec()
     s = codec.serialize(root)
@@ -49,8 +49,8 @@ __ __name__ __ '__main__':
     root = codec.deserialize(s)
     
     queue = [root]
-    line = []
-    nextQueue= []
+    line =   # list
+    nextQueue=   # list
     w___ queue:
         node = queue.pop(0)
         line.append(node.val)
@@ -60,8 +60,8 @@ __ __name__ __ '__main__':
             nextQueue.append(node.right)
         __ not queue:
             print(line)
-            line = []
+            line =   # list
             queue = nextQueue
-            nextQueue = []
+            nextQueue =   # list
         
     

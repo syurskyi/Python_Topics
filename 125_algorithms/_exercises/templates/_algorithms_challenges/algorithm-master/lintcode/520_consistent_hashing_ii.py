@@ -21,11 +21,11 @@ class Solution:
     @return: a list of shard ids
     """
     ___ addMachine(self, machine_id
-        item = self.l2p[machine_id] = []
+        item = self.l2p[machine_id] =   # list
         point = -1
-        ___ i in range(self.k
+        ___ i __ range(self.k
             point = random.randint(0, self.n - 1)
-            w___ point in self.p2l:
+            w___ point __ self.p2l:
                 point = random.randint(0, self.n - 1)
             self.p2l[point] = machine_id
             item.append(point)

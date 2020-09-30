@@ -45,20 +45,20 @@
 
 str = "abcbb"
 
-def longest_non_repeat(str):
+___ longest_non_repeat(str):
     
     # init start position and max length     
     i=0
     max_length = 1
 
-    for i,c in enumerate(str):
+    ___ i,c __ enumerate(str):
 
         # init counter and sub string value         
         start_at = i
-        sub_str=[]
+        sub_str=  # list
 
         # continue increase sub string if did not repeat character         
-        while (start_at < len(str)) and (str[start_at] not in sub_str):
+        while (start_at < len(str)) and (str[start_at] not __ sub_str):
             sub_str.append(str[start_at])
             start_at = start_at + 1
 
@@ -68,7 +68,7 @@ def longest_non_repeat(str):
 
         print(sub_str)
         
-    return max_length
+    r_ max_length
 
 longest_non_repeat(str)
 

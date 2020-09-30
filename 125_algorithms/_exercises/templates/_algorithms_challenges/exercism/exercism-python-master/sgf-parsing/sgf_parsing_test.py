@@ -90,5 +90,5 @@ class SgfParsingTest(unittest.TestCase
         r_ self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

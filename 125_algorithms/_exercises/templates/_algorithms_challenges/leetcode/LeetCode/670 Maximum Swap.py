@@ -21,15 +21,15 @@ class Solution:
         """
         stk maintain a increasing stack from right to left
         """
-        stk = []
+        stk =   # list
         nums = list(str(num))
         n = le.(nums)
-        ___ i in range(n-1, -1, -1
+        ___ i __ range(n-1, -1, -1
             __ stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 continue
             stk.append((i, nums[i]))
 
-        ___ i in range(n
+        ___ i __ range(n
             w___ stk and stk[-1][0] <= i:
                 stk.p..
             __ stk and stk[-1][1] > nums[i]:
@@ -40,6 +40,6 @@ class Solution:
         r_ int("".join(nums))
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().maximumSwap(2736) __ 7236
     assert Solution().maximumSwap(9973) __ 9973

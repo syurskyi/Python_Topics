@@ -2,14 +2,14 @@ from random import randint
 
 row = 6
 col = 6
-x = []
+x =   # list
 
-for i in range(row):
-    y = []
-    for j in range(col):
+___ i __ range(row):
+    y =   # list
+    ___ j __ range(col):
         y.append(randint(1,100))
     x.append(y)
-for i in x:
-    for j in i:
+___ i __ x:
+    ___ j __ i:
         print("%3d" % j, end=' ')
     print()

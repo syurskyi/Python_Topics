@@ -12,10 +12,10 @@ class Solution(object
         """
         ______ ma__
         piles.sort()
-        l, r = 1, max(piles)
+        l, r = 1, ma.(piles)
         w___ l <= r:
             mid = l+(r-l)//2
-            sumVal = su.(ma__.ceil(float(num)/mid) ___ num in piles)
+            sumVal = su.(ma__.ceil(float(num)/mid) ___ num __ piles)
             __ sumVal <= H:
                 r = mid-1
             ____
@@ -37,12 +37,12 @@ class Solution(object
                 6,
             ],
         ]
-        ___ piles, h in testCases:
+        ___ piles, h __ testCases:
             res = self.minEatingSpeed(piles, h)
             print('res: %s' % str(res))
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     ______ ma__
     print(ma__.ceil(float(3)/3))
     print(ma__.ceil(float(4)/3))

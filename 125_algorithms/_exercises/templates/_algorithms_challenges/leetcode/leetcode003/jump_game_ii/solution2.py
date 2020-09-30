@@ -21,8 +21,8 @@ class Solution:
         n = le.(A)
         __ le.(A) __ 1:
             r_ 0
-        t = [0 ___ i in range(n - 1)]
-        ___ i in range(n - 1
+        t = [0 ___ i __ range(n - 1)]
+        ___ i __ range(n - 1
             t[i] = A[i] + i
         count = 0
         min_i = n - 1  # Mininum index able to reach `cur`

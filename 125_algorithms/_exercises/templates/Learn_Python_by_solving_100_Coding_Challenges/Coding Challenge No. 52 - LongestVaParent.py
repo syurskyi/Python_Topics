@@ -9,21 +9,21 @@ class Solution:
     # @param s, a string
     # @return an integer
 
-    def longestValidParentheses(self, s):
-        maxlen, stack, last = 0, [], -1
-        for i in range(len(s)):
+    ___ longestValidParentheses(self, s):
+        maxlen, stack, last = 0,   # list, -1
+        ___ i __ range(len(s)):
             if s[i]=='(':
                 stack.append(i) # push the INDEX into the stack!!!!
             else:
-                if stack == []:
+                if stack ==   # list:
                     last = i
                 else:
                     stack.pop()
-                    if stack == []:
-                        maxlen = max(maxlen, i-last)
+                    if stack ==   # list:
+                        maxlen = ma.(maxlen, i-last)
                     else:
-                        maxlen = max(maxlen, i-stack[len(stack)-1])
-        return maxlen
+                        maxlen = ma.(maxlen, i-stack[len(stack)-1])
+        r_ maxlen
 
 
 Solution().longestValidParentheses(")()())")

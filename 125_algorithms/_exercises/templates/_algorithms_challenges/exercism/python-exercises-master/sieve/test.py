@@ -7,7 +7,7 @@ from sieve ______ sieve
 
 class SieveTest(unittest.TestCase
     ___ test_no_primes_under_two(self
-        self.assertEqual(sieve(1), [])
+        self.assertEqual(sieve(1),   # list)
 
     ___ test_find_first_prime(self
         self.assertEqual(sieve(2), [2])
@@ -38,5 +38,5 @@ class SieveTest(unittest.TestCase
             ])
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -12,14 +12,14 @@ class Solution(object
         """
         maxVal = 0
         mask = 0
-        ___ i in range(32, -1, -1
+        ___ i __ range(32, -1, -1
             mask = mask | (1<<i)
             hashset = set()
-            ___ num in nums:
+            ___ num __ nums:
                 hashset.add(num&mask)
             tmp = maxVal | (1<<i)
-            ___ prefix in hashset:
-                __ tmp ^ prefix in hashset:
+            ___ prefix __ hashset:
+                __ tmp ^ prefix __ hashset:
                     maxVal = tmp
                     break
         r_ maxVal

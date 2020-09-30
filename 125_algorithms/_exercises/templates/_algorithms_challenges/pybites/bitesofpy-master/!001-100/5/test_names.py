@@ -12,7 +12,7 @@ ___ test_dedup_and_title_case_names(
     assert names.count('julian sequeira') __ 0
     assert names.count('Brad Pitt') __ 1
     assert le.(names) __ 10
-    assert all(n.title() in names ___ n in NAMES)
+    assert al.(n.title() __ names ___ n __ NAMES)
 
 
 ___ test_dedup_and_title_case_names_different_names_list(

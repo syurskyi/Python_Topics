@@ -40,7 +40,7 @@ class Solution:
         c = Counter(A.split()) + Counter(B.split())
         ret = [
             k
-            ___ k, v in c.items()
+            ___ k, v __ c.items()
             __ v __ 1
         ]
         r_ ret
@@ -50,13 +50,13 @@ class Solution:
         need counter
         """
         c_A, c_B = Counter(A.split()), Counter(B.split())
-        ret = []
-        ___ k, v in c_A.items(
-            __ v __ 1 and k not in c_B:
+        ret =   # list
+        ___ k, v __ c_A.items(
+            __ v __ 1 and k not __ c_B:
                 ret.append(k)
 
-        ___ k, v in c_B.items(
-            __ v __ 1 and k not in c_A:
+        ___ k, v __ c_B.items(
+            __ v __ 1 and k not __ c_A:
                 ret.append(k)
 
         r_ ret

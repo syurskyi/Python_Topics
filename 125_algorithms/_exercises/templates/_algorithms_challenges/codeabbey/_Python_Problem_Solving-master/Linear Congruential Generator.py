@@ -1,5 +1,5 @@
 #run the for loop for the number of elements
-___ i in range(int(input())):
+___ i __ range(int(input())):
     
     #accept the value of a,c,m,x,n in a list
     listo = list(map(int,input().split()))
@@ -8,7 +8,7 @@ ___ i in range(int(input())):
     a,c,m,x,n = listo
     
     #run the loop to get the value of the nth number
-    ___ j in range(n
+    ___ j __ range(n
         x = (a*x + c) % m
         
     #print the output

@@ -91,7 +91,7 @@ ___ get_num_posts(
         r'<a href="%s/author/[^"]+">\w+</a>\s\((\d+)\)'
         % BASE_URL)
     html = requests.get(AUTHORS_URL).text
-    r_ su.(int(num) ___ num in posts.findall(html))
+    r_ su.(int(num) ___ num __ posts.findall(html))
 
 
 ___ write_template(slug, content
@@ -141,14 +141,14 @@ ___ main(
     post_time = get_future_time(hours)
 
     tags = input('Select tags (comma seperated) [used: {}]: '.format(TAG_URL))
-    tags = ', '.join([tag.strip() ___ tag in tags.split(',')])
+    tags = ', '.join([tag.strip() ___ tag __ tags.split(',')])
 
     summary = input('A compelling summary please (this shows up in Google! ')
     title = input('A gripping title (make it awesome, ok? ')
     title = title.replace(':', '')  # pelican does not like colons in title
     slug = input('And lastly make the slug (= filename) - SEO counts, ok? ')
 
-    __ special_day and SPECIAL_SLUG_PREFIX not in slug:
+    __ special_day and SPECIAL_SLUG_PREFIX not __ slug:
         print('No {} in slug, prepending it'.format(SPECIAL_SLUG_PREFIX))
         slug = '{}-{}'.format(SPECIAL_SLUG_PREFIX, slug)
 
@@ -160,11 +160,11 @@ ___ main(
                                   author=author,
                                   summary=summary,
                                   image=image)]
-    content += ['## header {}\n\n'.format(i) ___ i in range(1, 6)]
+    content += ['## header {}\n\n'.format(i) ___ i __ range(1, 6)]
     content += [POST_END.format(author=author)]
 
     write_template(slug, content)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

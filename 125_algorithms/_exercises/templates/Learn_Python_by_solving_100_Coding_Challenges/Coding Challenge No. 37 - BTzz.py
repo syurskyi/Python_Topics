@@ -12,7 +12,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -21,15 +21,15 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
-    def zigzagLevelOrder(self, root):
-        solution = []
-        thisLevel =[]
+    ___ zigzagLevelOrder(self, root):
+        solution =   # list
+        thisLevel =  # list
         if root != None:
             thisLevel.append(root)
         leftToRight = True
         while len(thisLevel)>0:
-            levelSolution = []
-            nextLevel = []
+            levelSolution =   # list
+            nextLevel =   # list
             while len(thisLevel)>0:
                 node = thisLevel.pop()
                 levelSolution.append(node.val)
@@ -46,9 +46,9 @@ class Solution:
             thisLevel = nextLevel
             solution.append(levelSolution)
             leftToRight = not leftToRight
-        return solution
+        r_ solution
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.left, BT.right, BT.right.left, BT.right.right = TreeNode(3), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
     print ( Solution().zigzagLevelOrder(BT) )

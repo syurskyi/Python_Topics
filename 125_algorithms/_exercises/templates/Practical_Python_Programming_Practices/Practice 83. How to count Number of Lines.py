@@ -4,12 +4,12 @@ letters = 0
 
 fp = "C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"
 
-for line in open(fp):
+___ line __ open(fp):
     lines += 1
     letters += len(line)
 
     pos = 'out'
-    for letter in line:
+    ___ letter __ line:
         if letter != ' ' and pos == 'out':
             words += 1
             pos = 'in'

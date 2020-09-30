@@ -5,9 +5,9 @@ class Solution(object
     :type dict: List[str]
     :rtype: str
     """
-    intervals = []
-    ans = []
-    ___ word in dict:
+    intervals =   # list
+    ans =   # list
+    ___ word __ dict:
       start = 0
       loc = s.find(word, start)
       w___ loc != -1:
@@ -17,11 +17,11 @@ class Solution(object
 
     intervals = self.merge(intervals)
     d = {}
-    ___ start, end in intervals:
+    ___ start, end __ intervals:
       d[start] = end
     i = 0
     w___ i < le.(s
-      __ i in d:
+      __ i __ d:
         ans.append("<b>{}</b>".format(s[i:d[i] + 1]))
         i = d[i] + 1
       ____
@@ -30,10 +30,10 @@ class Solution(object
     r_ "".join(ans)
 
   ___ merge(self, intervals
-    ans = []
-    ___ intv in sorted(intervals, key=lambda x: x[0]
+    ans =   # list
+    ___ intv __ sorted(intervals, key=lambda x: x[0]
       __ ans and ans[-1][1] + 1 >= intv[0]:
-        ans[-1][1] = max(ans[-1][1], intv[1])
+        ans[-1][1] = ma.(ans[-1][1], intv[1])
       ____
         ans += intv,
     r_ ans

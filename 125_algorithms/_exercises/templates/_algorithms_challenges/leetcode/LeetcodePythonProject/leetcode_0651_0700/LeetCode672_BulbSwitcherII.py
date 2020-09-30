@@ -34,12 +34,12 @@ class Solution(object
                 1,
             ],
         ]
-        ___ n, m in testCases:
+        ___ n, m __ testCases:
             print('n: %s' % n)
             print('m: %s' % m)
             result = self.flipLights(n, m)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

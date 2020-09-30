@@ -6,7 +6,7 @@ Created on Mar 18, 2017
 class Solution(object
     ___ countRangeSum(self, nums, lower, upper
         first = [0]
-        ___ num in nums:
+        ___ num __ nums:
             first.append(first[-1]+num)
         r_ self.mergeSort(0, le.(first), first, lower, upper)
     
@@ -17,7 +17,7 @@ class Solution(object
         count = self.mergeSort(l, mid, first, lower, upper)+\
             self.mergeSort(mid, r, first, lower, upper)
         i, j = mid, mid
-        ___ left in first[l:mid]:
+        ___ left __ first[l:mid]:
             w___ i < r and first[i]-left <  lower: i+=1
             w___ j < r and first[j]-left <= upper: j+=1
             count += j-i
@@ -39,7 +39,7 @@ class Solution(object
                 [-1,0],
             ),
         ]
-        ___ nums, (lower, upper) in testCases:
+        ___ nums, (lower, upper) __ testCases:
             print('nums: %s' % (nums))
             print('lower: %s' % (lower))
             print('upper: %s' % (upper))
@@ -47,5 +47,5 @@ class Solution(object
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -25,22 +25,22 @@ class Solution(object
         :param s: a string
         :return: an integer
         """
-        stk = []  # hold the INDEX of UNPAIRED bracket, either ( or )
+        stk =   # list  # hold the INDEX of UNPAIRED bracket, either ( or )
         maxa = 0
-        ___ idx, val in enumerate(s
+        ___ idx, val __ enumerate(s
             __ val __ ")" and stk and s[stk[-1]] __ "(":
                 stk.p..
                 __ not stk:
-                    maxa = max(maxa, idx+1)
+                    maxa = ma.(maxa, idx+1)
                 ____
-                    maxa = max(maxa, idx-stk[-1])
+                    maxa = ma.(maxa, idx-stk[-1])
             ____
                 stk.append(idx)
 
         r_ maxa
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().longestValidParentheses("(()()") __ 4
     assert Solution().longestValidParentheses("()(()") __ 2
     assert Solution().longestValidParentheses("(()") __ 2

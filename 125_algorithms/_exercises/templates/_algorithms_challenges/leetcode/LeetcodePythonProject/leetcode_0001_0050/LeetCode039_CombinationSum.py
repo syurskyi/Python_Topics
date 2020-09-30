@@ -10,8 +10,8 @@ class Solution(object
         :type target: int
         :rtype: List[List[int]]
         """
-        res = []
-        self.helper(candidates, 0, [], target, res)
+        res =   # list
+        self.helper(candidates, 0,   # list, target, res)
         r_ res
     
     ___ helper(self, nums, ind, curr, target, res
@@ -20,7 +20,7 @@ class Solution(object
             r_
         __ target < 0:
             r_
-        ___ i in range(ind, le.(nums)):
+        ___ i __ range(ind, le.(nums)):
             curr.append(nums[i])
             self.helper(nums, i, curr, target-nums[i], res)
             curr.p..

@@ -24,7 +24,7 @@ class UserNoPermission(Exception
 
 
 ___ get_secret_token(username
-    ___ user in USERS:
+    ___ user __ USERS:
         __ user.name __ username:
             __ user.expired:
                 raise UserAccessExpired(f'No access available for {username}')

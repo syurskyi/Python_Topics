@@ -5,11 +5,11 @@ class Solution(object
     :rtype: int
     """
     complexBal = 3
-    __ any(c in string.lowercase ___ c in s
+    __ any(c __ string.lowercase ___ c __ s
       complexBal -= 1
-    __ any(c in string.uppercase ___ c in s
+    __ any(c __ string.uppercase ___ c __ s
       complexBal -= 1
-    __ any(c.isdigit() ___ c in s
+    __ any(c.isdigit() ___ c __ s
       complexBal -= 1
 
     one = 0
@@ -31,12 +31,12 @@ class Solution(object
         p += 1
 
     __ le.(s) < 6:
-      r_ max(complexBal, 6 - le.(s))
+      r_ ma.(complexBal, 6 - le.(s))
     ____ le.(s) <= 20:
-      r_ max(complexBal, replace)
+      r_ ma.(complexBal, replace)
     ____
       redundant = le.(s) - 20
       replace -= min(redundant, one)
-      replace -= min(max(redundant - one, 0), two * 2) / 2
-      replace -= max(redundant - one - two * 2, 0) / 3
-      r_ redundant + max(complexBal, replace)
+      replace -= min(ma.(redundant - one, 0), two * 2) / 2
+      replace -= ma.(redundant - one - two * 2, 0) / 3
+      r_ redundant + ma.(complexBal, replace)

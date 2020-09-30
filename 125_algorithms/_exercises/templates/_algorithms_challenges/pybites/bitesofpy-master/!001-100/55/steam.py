@@ -10,4 +10,4 @@ Game = namedtuple('Game', 'title link')
 
 ___ get_games(
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
-    r_ [Game(f.title, f.link) ___ f in feedparser.parse(FEED_URL).entries]
+    r_ [Game(f.title, f.link) ___ f __ feedparser.parse(FEED_URL).entries]

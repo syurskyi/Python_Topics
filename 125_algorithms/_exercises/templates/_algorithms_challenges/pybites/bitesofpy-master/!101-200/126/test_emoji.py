@@ -15,15 +15,15 @@ ___ test_find_matches(capfd
     find_emoji('sun')
     output = capfd.readouterr()[0].lower()
     # some of the results you should get back
-    assert 'sunrise' in output
-    assert '🌅' in output
-    assert 'sunset over buildings' in output
-    assert '🌇' in output
-    assert 'sun with face' in output
-    assert '🌻' in output
+    assert 'sunrise' __ output
+    assert '🌅' __ output
+    assert 'sunset over buildings' __ output
+    assert '🌇' __ output
+    assert 'sun with face' __ output
+    assert '🌻' __ output
 
 
 ___ test_find_no_match(capfd
     find_emoji('awesome')
     output = capfd.readouterr()[0].lower()
-    assert not output.strip() or 'no matches' in output.lower()
+    assert not output.strip() or 'no matches' __ output.lower()

@@ -7,8 +7,8 @@ a = list(map(int, input().split()))
 
 count = 0
 
-___ i in range(n
-    ___ j in range(n-1
+___ i __ range(n
+    ___ j __ range(n-1
         __ a[j] > a[j+1]:
             a[j], a[j+1] = a[j+1], a[j]
             count += 1

@@ -78,14 +78,14 @@ class SimpleLinkedListTest(unittest.TestCase
     ___ test_non_empty_list_traverse(self
         sut = LinkedList(range(10))
         current = sut.head()
-        ___ i in range(10
+        ___ i __ range(10
             self.assertEqual(current.value(), 9 - i)
             current = current.next()
         self.assertIsNone(current)
 
     ___ test_empty_linked_list_to_list_is_empty(self
         sut = LinkedList()
-        self.assertEqual(list(sut), [])
+        self.assertEqual(list(sut),   # list)
 
     ___ test_singleton_linked_list_to_list_list_with_singular_element(self
         sut = LinkedList([1])
@@ -96,8 +96,8 @@ class SimpleLinkedListTest(unittest.TestCase
         self.assertEqual(list(sut), [3, 2, 1])
 
     ___ test_reversed_empty_list_is_empty_list(self
-        sut = LinkedList([])
-        self.assertEqual(list(sut.reversed()), [])
+        sut = LinkedList(  # list)
+        self.assertEqual(list(sut.reversed()),   # list)
 
     ___ test_reversed_singleton_list_is_same_list(self
         sut = LinkedList([1])
@@ -118,5 +118,5 @@ class SimpleLinkedListTest(unittest.TestCase
         r_ self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

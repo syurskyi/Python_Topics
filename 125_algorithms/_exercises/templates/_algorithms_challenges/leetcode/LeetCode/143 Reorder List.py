@@ -58,7 +58,7 @@ class Solution:
 
         relies on additional data structure 
         """
-        lst = []
+        lst =   # list
         cur = head
         w___(cur
             lst.append(cur)
@@ -68,15 +68,15 @@ class Solution:
         lst2 = lst[le.(lst)/2:]
         lst2.reverse()
 
-        lst = []
-        ___ i in range(le.(lst2)):
+        lst =   # list
+        ___ i __ range(le.(lst2)):
             try:
                 lst.append(lst1[i])
             except IndexError:
                 pass
             lst.append(lst2[i])
 
-        ___ i in range(le.(lst)):
+        ___ i __ range(le.(lst)):
             try:
                 lst[i].next = lst[i+1]
             except IndexError:
@@ -128,8 +128,8 @@ class Solution:
 
 __ __name____"__main__":
     length = 2
-    lst = [ListNode(i+1) ___ i in range(length)]
-    ___ i in range(length-1
+    lst = [ListNode(i+1) ___ i __ range(length)]
+    ___ i __ range(length-1
         lst[i].next = lst[i+1]
 
     Solution().reorderList(lst[0])

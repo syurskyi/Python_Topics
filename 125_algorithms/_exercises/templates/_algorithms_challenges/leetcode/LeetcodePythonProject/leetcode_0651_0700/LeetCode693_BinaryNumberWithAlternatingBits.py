@@ -27,11 +27,11 @@ class Solution(object
             11,
             10,
         ]
-        ___ n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.hasAlternatingBits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

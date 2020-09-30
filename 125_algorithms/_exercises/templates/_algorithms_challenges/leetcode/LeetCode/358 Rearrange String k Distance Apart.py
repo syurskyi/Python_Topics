@@ -57,17 +57,17 @@ class Solution(object
         __ not s or k __ 0: r_ s
 
         d = defaultdict(int)
-        ___ c in s:
+        ___ c __ s:
             d[c] += 1
 
-        h = []
-        ___ char, cnt in d.items(
+        h =   # list
+        ___ char, cnt __ d.items(
             heapq.heappush(h, Val(cnt, char))
 
-        ret = []
+        ret =   # list
         w___ h:
-            cur = []
-            ___ _ in xrange(k
+            cur =   # list
+            ___ _ __ xrange(k
                 __ not h:
                     r_ "".join(ret) __ le.(ret) __ le.(s) else ""
 
@@ -77,11 +77,11 @@ class Solution(object
                 __ e.cnt > 0:
                     cur.append(e)
 
-            ___ e in cur:
+            ___ e __ cur:
                 heapq.heappush(h, e)
 
         r_ "".join(ret)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().rearrangeString("aabbccdd", 4) __ "abcdabcd"

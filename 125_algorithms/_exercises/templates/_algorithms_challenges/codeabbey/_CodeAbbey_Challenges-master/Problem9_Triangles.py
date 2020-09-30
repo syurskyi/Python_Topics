@@ -2,11 +2,11 @@ with open("prob9.txt") as infile:
     infile.readline()
     data = infile.readlines()
 
-    ___ line in data:
+    ___ line __ data:
         line = line.strip().split(" ")
-        line = [int(i) ___ i in line]
+        line = [int(i) ___ i __ line]
         flag = True
-        ___ side in line:
+        ___ side __ line:
             __ int(side) > su.(line)-int(side
                 flag = False
                 break

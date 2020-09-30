@@ -1,2 +1,2 @@
-def foo(mydict):
-    return sum(mydict.values())
+___ foo(mydict):
+    r_ sum(mydict.values())

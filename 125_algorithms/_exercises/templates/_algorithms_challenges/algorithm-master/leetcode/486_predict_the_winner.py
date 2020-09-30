@@ -15,9 +15,9 @@ class Solution:
         n = le.(nums)
         dp = [0] * n
 
-        ___ i in range(n - 1, -1, -1
-            ___ j in range(i + 1, n
-                dp[j] = max(
+        ___ i __ range(n - 1, -1, -1
+            ___ j __ range(i + 1, n
+                dp[j] = ma.(
                     nums[i] - dp[j],
                     nums[j] - dp[j - 1]
                 )
@@ -40,11 +40,11 @@ class Solution:
             r_ False
 
         n = le.(nums)
-        dp = [[0] * n ___ _ in range(n)]
+        dp = [[0] * n ___ _ __ range(n)]
 
-        ___ i in range(n - 1, -1, -1
-            ___ j in range(i + 1, n
-                dp[i][j] = max(
+        ___ i __ range(n - 1, -1, -1
+            ___ j __ range(i + 1, n
+                dp[i][j] = ma.(
                     nums[i] - dp[i + 1][j],
                     nums[j] - dp[i][j - 1]
                 )

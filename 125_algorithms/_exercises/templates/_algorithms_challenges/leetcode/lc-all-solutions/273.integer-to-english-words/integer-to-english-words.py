@@ -12,17 +12,17 @@ class Solution(object
     :rtype: str
     """
     global units, tenToTwenty, tens, digit
-    ans = []
+    ans =   # list
 
     ___ getNum(number
       global units, tenToTwenty, tens, digit
       divider = 1000
-      ans = []
+      ans =   # list
       h = number / 100
       __ h != 0:
         ans.append(digit[h] + " Hundred")
       number = number % 100
-      __ number in tenToTwenty:
+      __ number __ tenToTwenty:
         ans.append(tenToTwenty[number])
       ____
         t = number / 10

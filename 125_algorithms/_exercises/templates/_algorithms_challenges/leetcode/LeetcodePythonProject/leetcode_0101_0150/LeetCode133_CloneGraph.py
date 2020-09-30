@@ -7,7 +7,7 @@ Created on Feb 8, 2017
 class UndirectedGraphNode:
     ___ __init__(self, x
         self.label = x
-        self.neighbors = []
+        self.neighbors =   # list
 
 class Solution:
     # @param node, a undirected graph node
@@ -20,8 +20,8 @@ class Solution:
         w___ queue:
             node = queue.pop(0)
             nodeCopy = hashmap[node]
-            ___ node0 in node.neighbors:
-                __ node0 in hashmap:
+            ___ node0 __ node.neighbors:
+                __ node0 __ hashmap:
                     nodeCopy.neighbors.append(hashmap[node0])
                 ____
                     node0Copy = UndirectedGraphNode(node0.label)

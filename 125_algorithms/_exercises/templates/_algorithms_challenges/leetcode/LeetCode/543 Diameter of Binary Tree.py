@@ -46,5 +46,5 @@ class Solution:
 
         l = self.dfs(node.left)
         r = self.dfs(node.right)
-        self.ret = max(self.ret, l + 1 + r - 1)  # path length is the #nodes - 1
-        r_ max(l, r) + 1
+        self.ret = ma.(self.ret, l + 1 + r - 1)  # path length is the #nodes - 1
+        r_ ma.(l, r) + 1

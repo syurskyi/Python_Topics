@@ -67,5 +67,5 @@ class PigLatinTests(unittest.TestCase
         self.assertEqual(translate("quick fast run"), "ickquay astfay unray")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

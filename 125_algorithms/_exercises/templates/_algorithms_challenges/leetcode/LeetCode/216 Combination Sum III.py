@@ -33,8 +33,8 @@ class Solution:
         :type n: int
         :rtype: list[list[int]]
         """
-        ret = []
-        self.dfs(k, n, [], ret)
+        ret =   # list
+        self.dfs(k, n,   # list, ret)
         r_ ret
 
     ___ dfs(self, remain_k, remain_n, cur, ret
@@ -49,11 +49,11 @@ class Solution:
         start = 1
         __ cur:
             start = cur[-1] + 1  # unique
-        ___ i in xrange(start, 10
+        ___ i __ xrange(start, 10
             cur.append(i)
             self.dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.p..
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().combinationSum3(3, 9) __ [[1, 2, 6], [1, 3, 5], [2, 3, 4]]

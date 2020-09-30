@@ -34,7 +34,7 @@ class Solution:
         r_ i
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     data = 'abcdferrdsjfklsdjfdsr'
     n = le.(data)
     i = 0

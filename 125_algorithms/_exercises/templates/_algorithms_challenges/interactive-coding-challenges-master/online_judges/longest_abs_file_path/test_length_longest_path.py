@@ -18,5 +18,5 @@ ___ main(
     test.test_length_longest_path()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

@@ -11,10 +11,10 @@ class Solution(object
         """
         res = 0
         n = le.(points)
-        ___ i in range(n
-            ___ j in range(n
-                ___ k in range(n
-                    res = max(res, self.getArea(points[i], points[j], points[k]))
+        ___ i __ range(n
+            ___ j __ range(n
+                ___ k __ range(n
+                    res = ma.(res, self.getArea(points[i], points[j], points[k]))
         r_ res
     
     ___ getArea(self, p1, p2, p3
@@ -30,11 +30,11 @@ class Solution(object
             [[0,0],[0,1],[1,0],[0,2],[2,0]],
             [[4,6],[6,5],[3,1]],
         ]
-        ___ points in testCases:
+        ___ points __ testCases:
             print('points: %s' % points)
             result = self.largestTriangleArea(points)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -7,15 +7,15 @@
 
 class Solution:
     # @return a list of integers
-    def getRow(self, rowIndex):
+    ___ getRow(self, rowIndex):
         if rowIndex == 0:
-            return [1]
+            r_ [1]
         if rowIndex == 1:
-            return [1, 1]
+            r_ [1, 1]
         result = [1]
         nextDivisor = 1
         nextMultiplier = rowIndex
-        for _ in range(rowIndex // 2):
+        ___ _ __ range(rowIndex // 2):
             nextVal = int((result[-1] * nextMultiplier) / nextDivisor)
             result.append(nextVal)
             nextDivisor += 1
@@ -24,7 +24,7 @@ class Solution:
             result.extend(result[::-1])
         else:
             result.extend(result[-2::-1])
-        return result
+        r_ result
 
 
 Solution().getRow(3)

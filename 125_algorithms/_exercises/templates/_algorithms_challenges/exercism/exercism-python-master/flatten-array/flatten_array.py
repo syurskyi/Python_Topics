@@ -1,8 +1,8 @@
 ___ flatten(iterable
     __ type(iterable) pa__ str:
         r_ list(iterable)
-    flat = []
-    ___ item in iterable:
+    flat =   # list
+    ___ item __ iterable:
         try:
             flat.extend(flatten(item))
         except TypeError:

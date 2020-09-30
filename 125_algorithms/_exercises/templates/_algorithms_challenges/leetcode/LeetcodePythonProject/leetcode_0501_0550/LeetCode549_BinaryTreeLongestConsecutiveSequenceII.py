@@ -32,10 +32,10 @@ class Solution(object
                 decrease = deLeft+1
         __ root.right:
             __ root.right.val+1 __ root.val:
-                increase = max(increase, inRight+1)
+                increase = ma.(increase, inRight+1)
             ____ root.right.val-1 __ root.val:
-                decrease = max(decrease, deRight+1)
-        self.maxLen = max(self.maxLen, increase+decrease-1)
+                decrease = ma.(decrease, deRight+1)
+        self.maxLen = ma.(self.maxLen, increase+decrease-1)
         r_ increase, decrease
     
     ___ test(self
@@ -43,10 +43,10 @@ class Solution(object
             TreeNode(1, TreeNode(2), TreeNode(3)),
             TreeNode(2, TreeNode(1), TreeNode(3)),
         ]
-        ___ root in testCases:
+        ___ root __ testCases:
             result = self.longestConsecutive(root)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

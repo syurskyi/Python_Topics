@@ -24,4 +24,4 @@ class Solution(object
 
     count = collections.defaultdict(list)
     merkle(root)
-    r_ [nodes.p.. ___ nodes in count.values() __ le.(nodes) >= 2]
+    r_ [nodes.p.. ___ nodes __ count.values() __ le.(nodes) >= 2]

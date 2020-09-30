@@ -19,7 +19,7 @@ class Solution(object
         :rtype: bool
         """
         n = le.(s)
-        t = [None ___ i in range(n)]
+        t = [None ___ i __ range(n)]
         res = self.word_break_aux(s, wordDict, n - 1, t)
         r_ res
 
@@ -27,18 +27,18 @@ class Solution(object
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        __ s[:i + 1] in wordDict:
+        __ s[:i + 1] __ wordDict:
             t[i] = [s[:i + 1]]
             r_ t[i]
         ____ t[i] pa__ not None:
             r_ t[i]
         ____
-            res = []
-            ___ j in range(i
+            res =   # list
+            ___ j __ range(i
                 rest = self.word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
-                __ rest and word in wordDict:
-                    ___ r in rest:
+                __ rest and word __ wordDict:
+                    ___ r __ rest:
                         res.append(r + ' ' + word)
             t[i] = res
             r_ t[i]

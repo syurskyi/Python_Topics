@@ -8,23 +8,23 @@
 class Solution:
     # @param s, a string
     # @return a list of strings
-    def restoreIpAddresses(self, s):
-        solution = []
-        self.restoreIpAddressesRec(s,0,0,[],solution)
-        return solution
+    ___ restoreIpAddresses(self, s):
+        solution =   # list
+        self.restoreIpAddressesRec(s,0,0,  # list,solution)
+        r_ solution
 
-    def restoreIpAddressesRec(self, s, index, octets, tempSolution, solution):
+    ___ restoreIpAddressesRec(self, s, index, octets, tempSolution, solution):
         if len(s)-index<4-octets:
-            return
+            r_
         if len(s)-index>3*(4-octets):
-            return
+            r_
         if octets==4:
             if index== len(s):
                 tempSolution.pop()
                 solution.append("".join(tempSolution))
                 tempSolution.append('.')
-            return
-        for size in range(1,4):
+            r_
+        ___ size __ range(1,4):
             if s[index]=='0' and size>1:
                 break
             if int(s[index:index+size])>255:

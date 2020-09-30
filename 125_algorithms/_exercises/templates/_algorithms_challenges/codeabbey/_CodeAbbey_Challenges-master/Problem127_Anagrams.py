@@ -26,13 +26,13 @@ infile2.close()
 
 # ALT USING SORTED WORDS
 
-___ word in data:
+___ word __ data:
     word = word.strip()
     word_s = sorted(list(word))
-    temp_d = [string.strip() ___ string in dictionary __ le.(string.strip())__le.(word)]
+    temp_d = [string.strip() ___ string __ dictionary __ le.(string.strip())__le.(word)]
     count = 0
 ##    word_d = dict()
-    ___ each in temp_d:
+    ___ each __ temp_d:
         flag = True
         __ each != word:
             each = sorted(list(each))

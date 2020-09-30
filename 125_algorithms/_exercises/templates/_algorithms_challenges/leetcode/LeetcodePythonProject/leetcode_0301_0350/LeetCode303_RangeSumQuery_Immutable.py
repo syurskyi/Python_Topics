@@ -7,7 +7,7 @@ Created on Mar 11, 2017
 class NumArray(object
     ___ __init__(self, nums
         self.dp = [0]
-        ___ num in nums:
+        ___ num __ nums:
             self.dp.append(self.dp[-1] + num)
     
     ___ sumRange(self, i, j

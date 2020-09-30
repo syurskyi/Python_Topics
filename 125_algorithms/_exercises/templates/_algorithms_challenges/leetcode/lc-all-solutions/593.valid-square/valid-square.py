@@ -9,6 +9,6 @@ class Solution(object
     """
     dist = lambda a, b: ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
     sideLens = set([dist(p1, p2), dist(p1, p3), dist(p1, p4), dist(p2, p3), dist(p2, p4), dist(p3, p4)])
-    __ le.(sideLens) != 2 or 0 in sideLens:
+    __ le.(sideLens) != 2 or 0 __ sideLens:
       r_ False
     r_ True

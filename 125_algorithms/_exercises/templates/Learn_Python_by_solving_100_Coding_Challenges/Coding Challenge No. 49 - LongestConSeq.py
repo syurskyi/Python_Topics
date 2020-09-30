@@ -11,32 +11,32 @@ class Solution:
     # @param num, a list of integer
     # @return an integer
 
-    def longestConsecutive(self, num):
+    ___ longestConsecutive(self, num):
         startToEnd = {}
         endToStart = {}
         longest = 0
-        for i in range(0, len(num)):
+        ___ i __ range(0, len(num)):
             start = num[i]
             end = num[i]
-            if num[i] in startToEnd:
+            if num[i] __ startToEnd:
                 end = startToEnd[num[i]]
                 del startToEnd[num[i]]
                 del endToStart[end]
-            if num[i] in endToStart:
+            if num[i] __ endToStart:
                 start = endToStart[num[i]]
                 del startToEnd[start]
                 del endToStart[num[i]]
-            if num[i]-1 in endToStart:
+            if num[i]-1 __ endToStart:
                 start = min(start, endToStart[num[i]-1])
                 del startToEnd[endToStart[num[i]-1]]
                 del endToStart[num[i]-1]
-            if num[i]+1 in startToEnd:
-                end = max(end, startToEnd[num[i]+1])
+            if num[i]+1 __ startToEnd:
+                end = ma.(end, startToEnd[num[i]+1])
                 del endToStart[startToEnd[num[i]+1]]
                 del startToEnd[num[i]+1]
             startToEnd[start] = end
             endToStart[end] = start
-            longest = max(longest, end-start+1)
-        return longest
+            longest = ma.(longest, end-start+1)
+        r_ longest
 
 Solution().longestConsecutive( [100, 4, 200, 1, 3, 2] )

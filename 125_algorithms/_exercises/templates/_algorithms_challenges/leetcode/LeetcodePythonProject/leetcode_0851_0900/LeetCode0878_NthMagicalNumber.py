@@ -27,10 +27,10 @@ class Solution(object
         testCases = [
             [5, 2, 4],
         ]
-        ___ n, a, b in testCases:
+        ___ n, a, b __ testCases:
             res = self.nthMagicalNumber(n, a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

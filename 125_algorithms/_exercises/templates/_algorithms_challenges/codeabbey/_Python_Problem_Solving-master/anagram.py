@@ -4,8 +4,8 @@ ___ anagram(s,t
     t = t.lower().replace(' ','')
     __ le.(s) != le.(t
         r_ False
-    ___ i in t:
-        __ i in s:
+    ___ i __ t:
+        __ i __ s:
             continue
         r_ False
 

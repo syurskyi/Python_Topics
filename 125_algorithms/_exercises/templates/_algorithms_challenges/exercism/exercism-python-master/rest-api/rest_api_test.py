@@ -8,13 +8,13 @@ from rest_api ______ RestAPI
 
 class RestAPITest(unittest.TestCase
     ___ test_no_users(self
-        database = {"users": []}
+        database = {"users":   # list}
         api = RestAPI(database)
         response = api.get('/users')
         self.assertDictEqual(json.loads(response), database)
 
     ___ test_add_user(self
-        database = {"users": []}
+        database = {"users":   # list}
         api = RestAPI(database)
         payload = json.dumps({
             'user': 'Adam'
@@ -326,5 +326,5 @@ class RestAPITest(unittest.TestCase
         self.assertDictEqual(json.loads(response), expected)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

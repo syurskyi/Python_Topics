@@ -29,7 +29,7 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        ___ i in range(le.(A)):
+        ___ i __ range(le.(A)):
             t = self.idx(A[i])
             w___ i != t:
                 __ A[i] __ A[t]:
@@ -38,13 +38,13 @@ class Solution:
                     A[i], A[t] = A[t], A[i]
                     t = self.idx(A[i])
 
-        ret = []
-        ___ i in range(le.(A)):
+        ret =   # list
+        ___ i __ range(le.(A)):
             __ self.idx(A[i]) != i:
                 ret.append(A[i])
 
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert set(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ set([2,3])

@@ -23,7 +23,7 @@ class Solution(object
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        leaves = []
+        leaves =   # list
         self.dfs(root, leaves)
         r_ leaves
 
@@ -34,9 +34,9 @@ class Solution(object
         __ not node:
             r_ -1  # leaves index start from 0
 
-        height = 1 + max(self.dfs(node.left, leaves), self.dfs(node.right, leaves))
+        height = 1 + ma.(self.dfs(node.left, leaves), self.dfs(node.right, leaves))
         __ height >= le.(leaves
-            leaves.append([])  # grow
+            leaves.append(  # list)  # grow
 
         leaves[height].append(node.val)
         r_ height

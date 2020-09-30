@@ -22,11 +22,11 @@ ___ find_ways_in_board_game(n
     dp = [0] * (n + 1)
     dp[0] = 1
 
-    ___ i in range(1, min(n + 1, 6)):
-        ___ j in range(i
+    ___ i __ range(1, min(n + 1, 6)):
+        ___ j __ range(i
             dp[i] += dp[j]
 
-    ___ i in range(6, n + 1
+    ___ i __ range(6, n + 1
         dp[i] = su.((
             dp[i - 1],
             dp[i - 2],

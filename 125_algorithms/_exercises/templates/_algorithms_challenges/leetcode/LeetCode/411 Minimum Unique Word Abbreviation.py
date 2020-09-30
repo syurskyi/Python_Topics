@@ -12,7 +12,7 @@ class Solution(object
         :rtype: str
         """
         ret = (target, le.(target))
-        ___ abbr, abbr_l in self.dfs(target
+        ___ abbr, abbr_l __ self.dfs(target
             __ self.validate(dictionary, abbr) and ret[1] > abbr_l:
                 ret = (abbr, abbr_l)
 
@@ -27,20 +27,20 @@ class Solution(object
         __ not word:
             r_ [("", 0)]
 
-        ret = []
-        ___ l in xrange(le.(word)+1
+        ret =   # list
+        ___ l __ xrange(le.(word)+1
             left_num = str(l) __ l else ""
             left_l = 1 __ left_num != "" else 0
             left_l += 1 __ l < le.(word) else 0
 
-            ___ right, right_l in self.dfs(word[l+1:]
+            ___ right, right_l __ self.dfs(word[l+1:]
                 cur = left_num + word[l:l+1] + right  # word[l:l+1] possible ""
                 ret.append((cur, left_l + right_l))
 
         r_ ret
 
     ___ validate(self, dictionary, abbr
-        ___ w in dictionary:
+        ___ w __ dictionary:
             __ self.validWordAbbreviation(w, abbr
                 r_ False
 
@@ -72,5 +72,5 @@ class Solution(object
         r_ w __ le.(word) and a __ le.(abbr)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minAbbreviation("apple", ["blade"]) __ "a4"

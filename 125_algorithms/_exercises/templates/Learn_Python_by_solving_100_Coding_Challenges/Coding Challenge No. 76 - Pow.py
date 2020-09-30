@@ -8,21 +8,21 @@ class Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
-    def pow_recursive(self, x, n):
+    ___ pow_recursive(self, x, n):
         if n==0:
-            return 1
+            r_ 1
         if n<0:
-            return 1.0/self.pow_recursive(x,-n)
+            r_ 1.0/self.pow_recursive(x,-n)
         if n%2==1:
-            return x*self.pow_recursive(x*x,int(n/2))
+            r_ x*self.pow_recursive(x*x,int(n/2))
         else:
-            return self.pow_recursive(x*x,int(n/2))
+            r_ self.pow_recursive(x*x,int(n/2))
 
     # @param x, a float
     # @param n, a integer
     # @return a float
 
-    def pow_iterative(self, x, n):
+    ___ pow_iterative(self, x, n):
         result=1
         if n<0:
             n=-n
@@ -35,9 +35,9 @@ class Solution:
             x=x*x
             n/=2
         if flag==0:
-            return result
+            r_ result
         else:
-            return 1.0/result
+            r_ 1.0/result
 
 
 Solution().pow_recursive(3.0,2)

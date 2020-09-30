@@ -7,8 +7,8 @@ Created on Apr 10, 2017
 class Solution(object
     ___ splitArray(self, nums, m
         left, right = 0, 0
-        ___ num in nums:
-            left = max(left, num)
+        ___ num __ nums:
+            left = ma.(left, num)
             right += num
         w___ left < right:
             mid = (left+right)//2
@@ -20,7 +20,7 @@ class Solution(object
     
     ___ doable(self, nums, cuts, maxVal
         acc = 0
-        ___ num in nums:
+        ___ num __ nums:
             __ num > maxVal:
                 r_ False
             ____ acc+num <= maxVal:
@@ -39,12 +39,12 @@ class Solution(object
                 2,
             ],
         ]
-        ___ nums, m in testCases:
+        ___ nums, m __ testCases:
             print('nums: %s' % nums)
             print('m: %s' % m)
             result = self.splitArray(nums, m)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

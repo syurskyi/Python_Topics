@@ -18,7 +18,7 @@ URL = re.compile(r"""
 # https://pybit.es/pyperclip.html
 url = pyperclip.paste()
 
-__ AMAZON not in url or '/dp/' not in url:
+__ AMAZON not __ url or '/dp/' not __ url:
     sys.exit('Copy URL and run this script again')
 
 print('Grabbed link from clipboard: \n'.format(url))

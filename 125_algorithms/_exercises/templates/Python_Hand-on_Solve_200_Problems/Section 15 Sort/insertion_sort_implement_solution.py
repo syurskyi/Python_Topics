@@ -10,8 +10,8 @@
 # ![insertion-sort.png](attachment:insertion-sort.png)
 
 # %%
-def insertionSort(nlist):
-   for index in range(1,len(nlist)):
+___ insertionSort(nlist):
+   ___ index __ range(1,len(nlist)):
 
      currentvalue = nlist[index]
      position = index

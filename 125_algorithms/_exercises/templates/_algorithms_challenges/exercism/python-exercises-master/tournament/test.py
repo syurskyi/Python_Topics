@@ -113,5 +113,5 @@ class TestTournament(unittest.TestCase
         self.assertEqual(tally(results), table)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

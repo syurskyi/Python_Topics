@@ -1,5 +1,5 @@
 ___ recite(start_verse, end_verse
-    r_ [verse(v) ___ v in range(start_verse-1, end_verse)]
+    r_ [verse(v) ___ v __ range(start_verse-1, end_verse)]
 
 
 animals = (
@@ -24,7 +24,7 @@ ___ verse(v
     __ v __ 7:
         r_ ''.join(words)
 
-    ___ i in reversed(range(0, v)):
+    ___ i __ reversed(range(0, v)):
         words.append("She swallowed the {} to catch the {}{}.".format(
             animals[i+1][0], animals[i][0], animals[i][2]))
 

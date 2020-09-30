@@ -1,2 +1,2 @@
-def foo(*args):
-    return all(args)
+# ___ foo $
+#     r_ al. a..

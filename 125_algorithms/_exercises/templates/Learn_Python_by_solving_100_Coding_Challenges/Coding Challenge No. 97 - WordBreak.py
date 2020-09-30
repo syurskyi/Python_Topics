@@ -11,17 +11,17 @@ class Solution:
     # @param s, a string
     # @param dict, a set of string
     # @return a boolean
-    def wordBreak(self, s, dict):
+    ___ wordBreak(self, s, dict):
         if len( s ) == 0 or len(dict) == 0:
-            return False
+            r_ False
         dp = [ 0 ]
-        for i in range(1, len( s ) + 1):
-            for j in range( len( dp ) - 1, -1, -1):
+        ___ i __ range(1, len( s ) + 1):
+            ___ j __ range( len( dp ) - 1, -1, -1):
                 substr = s[dp[j] : i]
-                if substr in dict:
+                if substr __ dict:
                     dp.append(i)
                     break
-        return dp[-1] == len( s )
+        r_ dp[-1] == len( s )
 
 
 dict = ["hall", "mark"]

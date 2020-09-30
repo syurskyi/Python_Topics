@@ -6,7 +6,7 @@ class RestAPI(object
         self.database = database
 
     ___ _select_username(self, username
-        ___ user in self.database['users']:
+        ___ user __ self.database['users']:
             __ user['name'] __ username:
                 r_ user
     
@@ -14,7 +14,7 @@ class RestAPI(object
         borrower = self._select_username(borrower_name)
         lender = self._select_username(lender_name)
 
-        __ lender_name in borrower['owed_by']:
+        __ lender_name __ borrower['owed_by']:
             __ amount < borrower['owed_by'][lender_name]:
                 borrower['owed_by'][lender_name] -= amount
             ____
@@ -25,7 +25,7 @@ class RestAPI(object
             borrower['owes'][lender_name] = borrower['owes'].get(lender_name, 0) + amount
         borrower['balance'] -= amount
 
-        __ borrower_name in lender['owes']:
+        __ borrower_name __ lender['owes']:
             __ amount < lender['owes'][borrower_name]:
                 lender['owes'][borrower_name] -= amount
             ____

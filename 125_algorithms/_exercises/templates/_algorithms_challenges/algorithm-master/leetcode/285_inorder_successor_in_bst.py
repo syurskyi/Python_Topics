@@ -116,7 +116,7 @@ class Solution2:
         __ not root or not target:
             r_
 
-        stack = []
+        stack =   # list
         node = root
         got_target = False
 

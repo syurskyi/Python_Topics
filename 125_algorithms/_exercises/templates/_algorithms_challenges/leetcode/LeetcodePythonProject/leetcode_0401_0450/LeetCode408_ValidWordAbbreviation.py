@@ -30,12 +30,12 @@ class Solution(object
             ('internationalization', 'i12iz4n'),
             ('apple', 'a2e'),
         ]
-        ___ word, abbr in testCases:
+        ___ word, abbr __ testCases:
             print('word: %s' % word)
             print('abbr: %s' % abbr)
             result = self.validWordAbbreviation(word, abbr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

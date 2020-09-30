@@ -13,7 +13,7 @@ class Solution(object
     :rtype: TreeNode
     """
     __ nums:
-      pos = nums.index(max(nums))
+      pos = nums.index(ma.(nums))
       root = TreeNode(nums[pos])
       root.left = self.constructMaximumBinaryTree(nums[:pos])
       root.right = self.constructMaximumBinaryTree(nums[pos + 1:])
@@ -21,8 +21,8 @@ class Solution(object
 
   # decreasing stack
   ___ constructMaximumBinaryTree(self, nums
-    stack = []
-    ___ num in nums:
+    stack =   # list
+    ___ num __ nums:
       root = TreeNode(num)
       w___ stack and stack[-1].val < num:
         root.left = stack.p..

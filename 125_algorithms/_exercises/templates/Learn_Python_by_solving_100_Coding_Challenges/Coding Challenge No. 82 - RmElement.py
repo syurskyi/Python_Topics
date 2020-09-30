@@ -9,13 +9,13 @@ class Solution:
     # @param A a list of integers
     # @param elem an integer, value need to be removed
     # @return an integer
-    def removeElement(self, A, elem):
+    ___ removeElement(self, A, elem):
         k = 0
-        for i in A:
+        ___ i __ A:
             if i != elem:
                 A[k] = i
                 k += 1
-        return k
+        r_ k
 
 
 Solution().removeElement([1,2,4,3,3],3)

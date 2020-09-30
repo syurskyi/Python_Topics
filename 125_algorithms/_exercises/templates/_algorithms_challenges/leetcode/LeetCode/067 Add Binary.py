@@ -27,7 +27,7 @@ class Solution:
         a.reverse()
         b.reverse()
         # b as the base number
-        ___ i in xrange(le.(a)):
+        ___ i __ xrange(le.(a)):
             __ a[i]__"0":  # 0
                 continue
             ____ b[i]__"0":  # 0+1
@@ -40,7 +40,7 @@ class Solution:
                 __ i__le.(b)-1:
                     b.append("1")
                 ____
-                    ___ j in range(i+1, le.(b)):
+                    ___ j __ range(i+1, le.(b)):
                         __ b[j]__"0":
                             b[j] = "1"
                             break

@@ -18,7 +18,7 @@ ___ test_len_iterator_is_limit_input_arg(
 ___ test_call_next_on_iterator(
     ec = EggCreator(2)
     next_egg = next(ec)
-    assert next_egg.split()[0] in COLORS
+    assert next_egg.split()[0] __ COLORS
 
 
 ___ test_iterator_raises_stop_iteration_exception(

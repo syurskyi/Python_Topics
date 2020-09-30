@@ -1,6 +1,6 @@
 class Cell(object
     ___ __init__(self
-        self._watchers = []
+        self._watchers =   # list
         self._value = None
         self.counter = 0
 
@@ -15,7 +15,7 @@ class Cell(object
     ___ value(self, new_value
         self._value = new_value
         self.counter += 1
-        ___ cell in self._watchers:
+        ___ cell __ self._watchers:
             cell.compute()
 
 
@@ -35,22 +35,22 @@ class ComputeCell(Cell
         self._register_inputs()
 
     ___ _register_inputs(self
-        ___ inp in self.inputs:
+        ___ inp __ self.inputs:
             inp.add_watcher(self)
 
     ___ compute(self
         # Only compute this cell when all inputs have same counters
-        __ le.(set([inp.counter ___ inp in self.inputs])) > 1:
+        __ le.(set([inp.counter ___ inp __ self.inputs])) > 1:
             r_
-        new_val = self.func([inp.value ___ inp in self.inputs])
+        new_val = self.func([inp.value ___ inp __ self.inputs])
         __ new_val != self._value:
             self.value = new_val
-            ___ cb in self.callbacks:
+            ___ cb __ self.callbacks:
                 cb(new_val)
 
     ___ add_callback(self, callback
         self.callbacks.add(callback)
 
     ___ remove_callback(self, callback
-        __ callback in self.callbacks:
+        __ callback __ self.callbacks:
             self.callbacks.remove(callback)

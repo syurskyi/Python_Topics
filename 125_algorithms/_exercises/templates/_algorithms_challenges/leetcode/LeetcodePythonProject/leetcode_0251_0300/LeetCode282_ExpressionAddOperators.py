@@ -10,7 +10,7 @@ class Solution(object
         :type target: int
         :rtype: List[str]
         """
-        res = []
+        res =   # list
         self.helper(num, 0, target, '', 0, 0, res)
         r_ res
     
@@ -20,7 +20,7 @@ class Solution(object
             __ target __ evalVal:
                 res.append(curr)
             r_
-        ___ i in range(pos+1, le.(num)+1
+        ___ i __ range(pos+1, le.(num)+1
             __ i > pos+1 and num[pos] __ '0':
                 break
             numStr = num[pos:i]
@@ -39,12 +39,12 @@ class Solution(object
             ('00', 0),
             ('3456237490', 9191),
         ]
-        ___ num, target in testCases:
+        ___ num, target __ testCases:
             print('num: %s' % (num))
             print('target: %s' % (target))
             result = self.addOperators(num, target)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

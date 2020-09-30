@@ -8,10 +8,10 @@ class NumMatrix_BinaryIndexTree_TLE(object
         m, n = le.(matrix), le.(matrix[0])
         self.m, self.n = m, n
         __ not m or not n: r_
-        self.tree = [[0]*(n+1) ___ _ in range(m+1)]
-        self.nums = [[0]*n ___ _ in range(m)]
-        ___ i in range(m
-            ___ j in range(n
+        self.tree = [[0]*(n+1) ___ _ __ range(m+1)]
+        self.nums = [[0]*n ___ _ __ range(m)]
+        ___ i __ range(m
+            ___ j __ range(n
                 self.update(i, j, matrix[i][j])
     
     ___ update(self, row, col, val
@@ -53,19 +53,19 @@ class NumMatrix(object
             r_
         self.matrix = matrix
         m, n = le.(matrix), le.(matrix[0])
-        colSums = [[0]*n ___ _ in range(m+1)]
-        ___ i in range(m+1
-            ___ j in range(n
+        colSums = [[0]*n ___ _ __ range(m+1)]
+        ___ i __ range(m+1
+            ___ j __ range(n
                 colSums[i][j] = colSums[i-1][j] + matrix[i-1][j]
         self.colSums = colSums
     
     ___ update(self, row, col, val
-        ___ i in range(row+1, le.(self.colSums)):
+        ___ i __ range(row+1, le.(self.colSums)):
             self.colSums[i][col] = self.colSums[i][col]+val-self.matrix[row][col]
         self.matrix[row][col] = val
     
     ___ sumRegion(self, row1, col1, row2, col2
         result = 0
-        ___ j in range(col1, col2+1
+        ___ j __ range(col1, col2+1
             result += self.colSums[row2+1][j] - self.colSums[row1][j]
         r_ result

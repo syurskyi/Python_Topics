@@ -48,13 +48,13 @@ class Solution(object
         __ n < 2:
             r_ n
 
-        dp = [0 ___ _ in xrange(n+1)]
+        dp = [0 ___ _ __ xrange(n+1)]
         dp[0] = 1
-        ___ i in xrange(1, n+1
-            ___ j in xrange(i
+        ___ i __ xrange(1, n+1
+            ___ j __ xrange(i
                 dp[i] += dp[j]*dp[i-j-1]
         r_ dp[-1]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().numTrees(100) __ Solution().numTrees_math(100)

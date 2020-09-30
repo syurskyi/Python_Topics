@@ -21,6 +21,6 @@ class Solution:
         )
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().arrangeCoins(5) __ 2
     assert Solution().arrangeCoins(8) __ 3

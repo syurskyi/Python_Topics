@@ -12,8 +12,8 @@ class Solution(object
         :rtype: bool
         """
         d = {}
-        ___ i, e in enumerate(nums
-            __ e in d:
+        ___ i, e __ enumerate(nums
+            __ e __ d:
                 __ i - d[e] <= k:
                     r_ True
             d[e] = i

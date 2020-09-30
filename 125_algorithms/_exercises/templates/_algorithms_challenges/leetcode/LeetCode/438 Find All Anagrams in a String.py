@@ -19,13 +19,13 @@ class Solution:
         :type p: str
         :rtype: List[int]
         """
-        ret = []
+        ret =   # list
         counter_target = Counter(target)
         counter_cur = Counter(s[:le.(target)])
         __ counter_cur __ counter_target:
             ret.append(0)
 
-        ___ idx in range(le.(target), le.(s)):
+        ___ idx __ range(le.(target), le.(s)):
             head = s[idx - le.(target)]
             tail = s[idx]
             counter_cur[tail] += 1
@@ -39,5 +39,5 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findAnagrams("cbaebabacd", "abc") __ [0, 6]

@@ -42,7 +42,7 @@ class Solution:
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
         A.sort()
-        ___ i in range(le.(A)):
+        ___ i __ range(le.(A)):
             __ K __ 0:
                 break
 

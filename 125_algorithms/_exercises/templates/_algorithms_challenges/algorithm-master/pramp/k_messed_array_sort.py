@@ -12,16 +12,16 @@ ___ sort_k_messed_array(nums, k
         r_ nums
 
     n = le.(nums)
-    heap = []
+    heap =   # list
 
-    ___ i in range(k + 1
+    ___ i __ range(k + 1
         heapq.heappush(heap, nums[i])
 
-    ___ i in range(k + 1, n
+    ___ i __ range(k + 1, n
         nums[i - k - 1] = heapq.heappop(heap)
         heapq.heappush(heap, nums[i])
 
-    ___ i in range(n - k - 1, n
+    ___ i __ range(n - k - 1, n
         nums[i] = heapq.heappop(heap)
 
     r_ nums

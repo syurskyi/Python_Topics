@@ -7,7 +7,7 @@ class Luhn:
         r_ su.(self.addends()) % 10
 
     ___ addends(self
-        r_ [self.addend(idx, int(val)) ___ idx, val in
+        r_ [self.addend(idx, int(val)) ___ idx, val __
                 enumerate(reversed(str(self.number)))]
 
     ___ addend(self, idx, val
@@ -24,6 +24,6 @@ class Luhn:
 
     @classmethod
     ___ create(cls, num
-        ___ i in range(0, 10
+        ___ i __ range(0, 10
             __ cls(int(str(num) + str(i))).is_valid(
                 r_ int(str(num) + str(i))

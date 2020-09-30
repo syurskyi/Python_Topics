@@ -10,9 +10,9 @@
 # print(is_Sublist(a, c))
 # Output
 
-def is_Sublist(l, s):
+___ is_Sublist(l, s):
 	sub_set = False
-	if s == []:
+	if s ==   # list:
 		sub_set = True
 	elif s == l:
 		sub_set = True
@@ -20,7 +20,7 @@ def is_Sublist(l, s):
 		sub_set = False
 
 	else:
-		for i in range(len(l)):
+		___ i __ range(len(l)):
 			if l[i] == s[0]:
 				n = 1
 				while (n < len(s)) and (l[i+n] == s[n]):
@@ -29,7 +29,7 @@ def is_Sublist(l, s):
 				if n == len(s):
 					sub_set = True
 
-	return sub_set
+	r_ sub_set
 
 a = [2,4,3,5,7]
 b = [4,3]

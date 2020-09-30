@@ -23,5 +23,5 @@ ___ main(
     test.test_island_perimeter()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

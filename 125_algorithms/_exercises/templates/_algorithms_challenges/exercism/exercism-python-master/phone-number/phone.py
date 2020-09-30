@@ -20,7 +20,7 @@ class Phone(object
     @staticmethod
     ___ clean(number
         """Tries to identify a phone number"""
-        digits = [c ___ c in number __ c.isdigit()]
+        digits = [c ___ c __ number __ c.isdigit()]
         __ le.(digits) __ 11 and digits[0] __ "1":
             r_ ''.join(digits[1:])
         ____ le.(digits) != 10:

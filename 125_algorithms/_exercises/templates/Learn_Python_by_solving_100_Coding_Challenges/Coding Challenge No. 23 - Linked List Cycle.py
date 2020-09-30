@@ -4,7 +4,7 @@
 
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
@@ -12,18 +12,18 @@ class ListNode:
 class Solution:
     # @param head, a ListNode
     # @return a boolean
-    def hasCycle(self, head):
+    ___ hasCycle(self, head):
         if head == None or head.next == None:
-            return False
+            r_ False
         slow = fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
             if slow == fast:
-                return True
-        return False
+                r_ True
+        r_ False
 
-if __name__ == '__main__':
+if  -n == '__main__':
     ll, ll.next, ll.next.next = ListNode(2), ListNode(4), ListNode(3),
     ll.next.next.next = ll.next
     print( Solution().hasCycle(ll) )

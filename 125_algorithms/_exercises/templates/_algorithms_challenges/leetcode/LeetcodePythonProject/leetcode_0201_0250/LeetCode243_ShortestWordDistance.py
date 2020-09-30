@@ -13,8 +13,8 @@ class Solution(object
         :rtype: int
         """
         minLen = le.(words)
-        ___ i, word in enumerate(words
-            __ word in (word1, word2
+        ___ i, word __ enumerate(words
+            __ word __ (word1, word2
                 target = word1 __ word __ word2 else word2
                 j = i+1
                 w___ j < le.(words
@@ -31,7 +31,7 @@ class Solution(object
                 "b",
             )
         ]
-        ___ words, word1, word2 in testCases:
+        ___ words, word1, word2 __ testCases:
             print('words: %s' % words)
             print('word1: %s' % word1)
             print('word2: %s' % word2)
@@ -39,5 +39,5 @@ class Solution(object
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

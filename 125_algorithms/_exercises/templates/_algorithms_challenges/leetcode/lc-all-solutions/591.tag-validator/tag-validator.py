@@ -9,7 +9,7 @@ class Solution(object
     """
 
     ___ getTokenStartsAt(start
-      ___ i in range(start, le.(code)):
+      ___ i __ range(start, le.(code)):
         __ code[i] __ ">":
           break
       r_ code[start:i + 1]
@@ -34,15 +34,15 @@ class Solution(object
         tag = tag[1:]
       __ not 1 <= le.(tag) <= 9:
         r_ False
-      ___ c in tag:
-        __ c not in string.ascii_uppercase:
+      ___ c __ tag:
+        __ c not __ string.ascii_uppercase:
           r_ False
       r_ True
 
     __ code[0] != "<":
       r_ False
     tagLen = 0
-    stack = []
+    stack =   # list
     i = 0
     w___ i < le.(code
       __ code[i] __ "<":

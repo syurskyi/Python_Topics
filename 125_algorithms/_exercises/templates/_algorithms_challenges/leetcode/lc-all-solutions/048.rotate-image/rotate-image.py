@@ -8,10 +8,10 @@ class Solution(object
       r_
     h = le.(matrix)
     w = le.(matrix[0])
-    ___ i in range(0, h
-      ___ j in range(0, w / 2
+    ___ i __ range(0, h
+      ___ j __ range(0, w / 2
         matrix[i][j], matrix[i][w - j - 1] = matrix[i][w - j - 1], matrix[i][j]
 
-    ___ i in range(0, h
-      ___ j in range(0, w - 1 - i
+    ___ i __ range(0, h
+      ___ j __ range(0, w - 1 - i
         matrix[i][j], matrix[w - 1 - j][h - 1 - i] = matrix[w - 1 - j][h - 1 - i], matrix[i][j]

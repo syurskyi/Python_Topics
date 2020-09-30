@@ -30,13 +30,13 @@ class Solution:
         HashMap + Iterator
         """
         itrs_m = defaultdict(list)
-        ___ w in words:
+        ___ w __ words:
             itrs_m[w[0]].append(
                 iter(w[1:])
             )
-        ___ a in S:
-            itrs = itrs_m.pop(a, [])
-            ___ itr in itrs:
+        ___ a __ S:
+            itrs = itrs_m.pop(a,   # list)
+            ___ itr __ itrs:
                 v = next(itr, None)
                 itrs_m[v].append(itr)
 
@@ -52,18 +52,18 @@ class Solution:
         go through all words parallel
         O(|S| |Words|)
         """
-        I = [0 ___ _ in words]
-        ___ a in S:
-            ___ wi, i in enumerate(I
+        I = [0 ___ _ __ words]
+        ___ a __ S:
+            ___ wi, i __ enumerate(I
                 __ i < le.(words[wi]) and words[wi][i] __ a:
                     I[wi] += 1
 
         r_ su.(
             1
-            ___ wi, i in enumerate(I)
+            ___ wi, i __ enumerate(I)
             __ i __ le.(words[wi])
         )
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) __ 3

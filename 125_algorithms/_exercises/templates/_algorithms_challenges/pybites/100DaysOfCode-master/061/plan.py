@@ -31,7 +31,7 @@ class Resource:
 
     ___ _get_daily_task(self
         days = range(self.num_days)
-        ___ day in days:
+        ___ day __ days:
             dt = self.start + timedelta(days=day)
             till = min((day+1) * self.day_task, self.units)
             yield '{} goal: reach {} {} ({:.1f}% done)'.format(
@@ -72,8 +72,8 @@ class Video(Resource
 
 
 ___ send_sms(msg, to_phones
-    sids = []
-    ___ phone in to_phones:
+    sids =   # list
+    ___ phone __ to_phones:
         message = CLIENT.messages.create(
             from_=FROM_PHONE,
             to=phone,
@@ -102,7 +102,7 @@ ___ main(resource, title, total_units,
     ____
         start_date = date.today()
 
-    __ ' ' in to_phones:
+    __ ' ' __ to_phones:
         to_phones = to_phones.split()
     ____
         to_phones = [to_phones]
@@ -118,13 +118,13 @@ ___ main(resource, title, total_units,
     resource = Resource_(title, total_units,
                          units_per_day, start=start_date)
 
-    welcome = 'Welcome to the {} challenge: \n\n{}\n\nEnjoy!'.format(resource.__class__.__name__, resource)
+    welcome = 'Welcome to the {} challenge: \n\n{}\n\nEnjoy!'.format(resource.__class__. -n, resource)
     print(welcome)
     send_sms(welcome, to_phones)
 
     ___ gen_sms(tasks
         tasks = list(tasks)
-        ___ week, i in enumerate(range(0, le.(tasks), SMS_FREQ), 1
+        ___ week, i __ enumerate(range(0, le.(tasks), SMS_FREQ), 1
             yield week, '\n'.join(tasks[i:i+SMS_FREQ])
 
     sms_msgs = gen_sms(resource.tasks)
@@ -149,7 +149,7 @@ ___ main(resource, title, total_units,
         time.sleep(1)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
 
     __ datetime.today().weekday() != 0:
         print('Run on Monday')

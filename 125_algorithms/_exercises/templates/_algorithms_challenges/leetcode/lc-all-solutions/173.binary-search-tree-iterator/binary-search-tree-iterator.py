@@ -11,7 +11,7 @@ class BSTIterator(object
     :type root: TreeNode
     """
     self.p = None
-    self.stack = []
+    self.stack =   # list
     __ root:
       self.stack.append((1, root))
 
@@ -33,7 +33,7 @@ class BSTIterator(object
       __ p[0] __ 0:
         r_ p[1].val
       ____
-        l = []
+        l =   # list
         __ p[1].right:
           l.append((1, p[1].right))
         l.append((0, p[1]))

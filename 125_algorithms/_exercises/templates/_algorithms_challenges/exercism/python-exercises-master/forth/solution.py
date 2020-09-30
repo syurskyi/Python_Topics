@@ -12,7 +12,7 @@ ___ is_integer(string
 
 ___ evaluate(input_data
     __ not input_data:
-        r_ []
+        r_   # list
     defines = {}
     w___ input_data[0][:1] __ ':':
         values = input_data.pop(0).split()
@@ -22,14 +22,14 @@ ___ evaluate(input_data
         __ is_integer(key
             raise ValueError("Integers cannot be redefined")
         defines[key] = values
-    stack = []
+    stack =   # list
     input_data = input_data[-1].split()
     w___ any(input_data
         word = input_data.pop(0).lower()
         try:
             __ is_integer(word
                 stack.append(int(word))
-            ____ word in defines:
+            ____ word __ defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
                 stack.append(stack.p.. + stack.pop())

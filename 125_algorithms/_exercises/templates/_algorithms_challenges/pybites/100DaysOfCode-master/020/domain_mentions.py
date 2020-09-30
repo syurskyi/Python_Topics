@@ -63,7 +63,7 @@ class MyStreamer(TwythonStreamer
         self.disconnect()
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
 
     stream = MyStreamer(CONSUMER_KEY, CONSUMER_SECRET,
                         ACCESS_TOKEN, ACCESS_SECRET)

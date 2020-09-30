@@ -16,13 +16,13 @@ class Solution:
             r_ 0
 
         ans = Pmin = Pmax = A[0]
-        ___ i in range(1, le.(A)):
+        ___ i __ range(1, le.(A)):
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest
             """
             C = (A[i], Pmin * A[i], Pmax * A[i])
-            Pmin, Pmax = min(C), max(C)
+            Pmin, Pmax = min(C), ma.(C)
 
             __ Pmax > ans:
                 ans = Pmax

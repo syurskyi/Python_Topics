@@ -11,9 +11,9 @@ class Solution(object
         :rtype: List[int]
         """
         hashmap = {}
-        res = []
-        ___ i, num in enumerate(nums
-            __ target-num in hashmap:
+        res =   # list
+        ___ i, num __ enumerate(nums
+            __ target-num __ hashmap:
                 r_ [hashmap[target-num], i]
             hashmap[num] = i
         r_ res

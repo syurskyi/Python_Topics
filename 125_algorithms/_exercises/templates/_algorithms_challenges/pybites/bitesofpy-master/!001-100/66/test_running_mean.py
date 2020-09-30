@@ -9,7 +9,7 @@ from Previous.running_mean ______ running_mean
      [2.0, 4.0, 6.0, 6.5, 7.4, 7.83]),
     ([3, 4, 6, 2, 1, 9, 0, 7, 5, 8],
      [3.0, 3.5, 4.33, 3.75, 3.2, 4.17, 3.57, 4.0, 4.11, 4.5]),
-    ([], []),
+    (  # list, []),
 ])
 ___ test_running_mean(input_argument, expected_return
     ret = list(running_mean(input_argument))

@@ -42,5 +42,5 @@ class RobotTest(unittest.TestCase
         self.assertRegex(name2, self.name_re)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

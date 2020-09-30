@@ -15,11 +15,11 @@ ___ calculate_total(books, price_so_far=0.
     groups = list(set(books))
     min_price = float('inf')
 
-    ___ i in range(le.(groups)):
+    ___ i __ range(le.(groups)):
 
         remaining_books = books[:]
 
-        ___ v in groups[:i + 1]:
+        ___ v __ groups[:i + 1]:
             remaining_books.remove(v)
 
         price = calculate_total(remaining_books,

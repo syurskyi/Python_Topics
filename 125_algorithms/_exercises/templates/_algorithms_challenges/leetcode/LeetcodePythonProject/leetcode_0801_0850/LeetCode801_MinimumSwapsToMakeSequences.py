@@ -12,10 +12,10 @@ class Solution(object
         """
         arr1, arr2 = A, B
         n = le.(arr1)
-        dp = [[0]*2 ___ _ in range(n)]
+        dp = [[0]*2 ___ _ __ range(n)]
         dp[-1][0] = 0
         dp[-1][1] = 1
-        ___ i in range(n-2, -1, -1
+        ___ i __ range(n-2, -1, -1
             __ arr1[i] < arr1[i+1] and arr2[i] < arr2[i+1]:
                 __ arr1[i] < arr2[i+1] and arr2[i] < arr1[i+1]:
                     dp[i][0] = min(dp[i+1][0], dp[i+1][1])
@@ -62,12 +62,12 @@ class Solution(object
                 [1,7,4,6,8],
             ],
         ]
-        ___ arr1, arr2 in testCases:
+        ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
             result = self.minSwap(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

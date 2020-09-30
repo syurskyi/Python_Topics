@@ -1,7 +1,7 @@
 class Results(object
 
     ___ __init__(self
-        self.results = []
+        self.results =   # list
 
     ___ add_result(self, result
         # TODO: Clean this up
@@ -10,7 +10,7 @@ class Results(object
         self.results.append(int(str(result)))
 
     ___ clear_results(self
-        self.results = []
+        self.results =   # list
 
     ___ __str__(self
         r_ str(self.results)

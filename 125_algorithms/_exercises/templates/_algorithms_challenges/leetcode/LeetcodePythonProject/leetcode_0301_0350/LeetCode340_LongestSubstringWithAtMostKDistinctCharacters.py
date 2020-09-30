@@ -10,13 +10,13 @@ class Solution(object
         hashmap = {}
         maxLen = 0
         left = 0
-        ___ i, c in enumerate(s
+        ___ i, c __ enumerate(s
             hashmap[c] = i
             w___ left <= i and le.(hashmap) > k:
-                __ s[left] in hashmap and left __ hashmap[s[left]]:
+                __ s[left] __ hashmap and left __ hashmap[s[left]]:
                     del hashmap[s[left]]
                 left+=1
-            maxLen = max(maxLen, i-left+1)
+            maxLen = ma.(maxLen, i-left+1)
         r_ maxLen
     
     ___ test(self
@@ -24,11 +24,11 @@ class Solution(object
             ('eceba', 2),
             ('abddebddesbaddes', 3),
         ]
-        ___ s, k in testCases:
+        ___ s, k __ testCases:
             print('s: %s, k: %s' % (s, k))
             result = self.lengthOfLongestSubstringKDistinct(s, k)
             print('result: %s' % (str(result)))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

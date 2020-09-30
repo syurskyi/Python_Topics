@@ -7,7 +7,7 @@
 
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.next = None
 
@@ -15,23 +15,23 @@ class ListNode:
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
-    def deleteDuplicates(self, head):
+    ___ deleteDuplicates(self, head):
         if head == None or head.next == None:
-            return head
+            r_ head
         p = head
         while p.next:
             if p.val == p.next.val:
                 p.next = p.next.next
             else:
                 p = p.next
-        return head
+        r_ head
 
-    def printll(self, node):
+    ___ printll(self, node):
         while node:
             print ( node.val )
             node = node.next
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     ll1, ll1.next, ll1.next.next = ListNode(2), ListNode(2), ListNode(5)
     Solution().printll( Solution().deleteDuplicates(ll1) )

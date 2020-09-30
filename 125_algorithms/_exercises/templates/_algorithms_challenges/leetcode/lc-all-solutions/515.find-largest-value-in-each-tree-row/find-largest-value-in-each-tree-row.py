@@ -11,18 +11,18 @@ class Solution(object
     :type root: TreeNode
     :rtype: List[int]
     """
-    ans = []
+    ans =   # list
     d = {}
 
     ___ dfs(root, h, d
       __ root:
         dfs(root.left, h + 1, d)
         dfs(root.right, h + 1, d)
-        d[h] = max(d.get(h, float("-inf")), root.val)
+        d[h] = ma.(d.get(h, float("-inf")), root.val)
 
     dfs(root, 0, d)
     level = 0
-    w___ level in d:
+    w___ level __ d:
       ans += d[level],
       level += 1
     r_ ans

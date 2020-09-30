@@ -39,7 +39,7 @@ class Solution:
         :param L: int
         :return: a list of str
         """
-        result = []
+        result =   # list
         self.break_line(words, L, result)
         r_ self.distribute_space(L, result)
 
@@ -48,7 +48,7 @@ class Solution:
             r_
 
         cur_length = -1
-        lst = []
+        lst =   # list
         i = 0
         w___ i<le.(words
             word = words[i]
@@ -63,18 +63,18 @@ class Solution:
 
 
     ___ distribute_space(self, L, result
-        new_result = []
-        ___ ind, line in enumerate(result
+        new_result =   # list
+        ___ ind, line __ enumerate(result
             word_cnt = le.(line)
-            str_builder = []
-            space_cnt = L-su.(le.(word) ___ word in line)
+            str_builder =   # list
+            space_cnt = L-su.(le.(word) ___ word __ line)
             hole_cnt = word_cnt-1
             __ ind<le.(result)-1:
                 __ hole_cnt>0:
                     space = space_cnt/hole_cnt
                     remain = space_cnt%hole_cnt
 
-                    ___ word in line[:-1]:
+                    ___ word __ line[:-1]:
                         str_builder.append(word)
                         str_builder.append(" "*space)
                         __ remain>0:

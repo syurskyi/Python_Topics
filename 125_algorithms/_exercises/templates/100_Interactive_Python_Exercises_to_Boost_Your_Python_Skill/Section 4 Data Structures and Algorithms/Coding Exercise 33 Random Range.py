@@ -1,3 +1,3 @@
 import random
-def foo():
-    return [random.randint(1,10) for i in range(1000)]
+___ foo
+    r_ [random.randint(1,10) ___ i __ range(1000)]

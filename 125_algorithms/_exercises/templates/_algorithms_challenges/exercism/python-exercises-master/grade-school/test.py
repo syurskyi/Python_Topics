@@ -13,7 +13,7 @@ class SchoolTest(unittest.TestCase
         self.school = School("Haleakala Hippy School")
 
     ___ test_an_empty_school(self
-        ___ n in range(1, 9
+        ___ n __ range(1, 9
             self.assertCountEqual(self.school.grade(n), set())
 
     ___ test_add_student(self
@@ -45,8 +45,8 @@ class SchoolTest(unittest.TestCase
         students = [(3, ("Kyle", )), (4, ("Christopher", "Jennifer", )),
                     (6, ("Kareem", ))]
 
-        ___ grade, students_in_grade in students[::-1]:
-            ___ student in students_in_grade[::-1]:
+        ___ grade, students_in_grade __ students[::-1]:
+            ___ student __ students_in_grade[::-1]:
                 self.school.add(student, grade)
 
         result = self.school.sort()
@@ -63,5 +63,5 @@ class SchoolTest(unittest.TestCase
         self.assertEqual(students, result_list)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

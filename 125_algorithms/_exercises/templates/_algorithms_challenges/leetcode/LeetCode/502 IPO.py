@@ -45,10 +45,10 @@ class Solution:
         O(N logN) + O(N log N)
         """
         capital_q = list(zip(Capital, Profits))
-        profit_q = []
+        profit_q =   # list
         heapq.heapify(capital_q)
         capital = W
-        ___ _ in range(k
+        ___ _ __ range(k
             w___ capital_q and capital_q[0][0] <= capital:
                 _, pro = heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro))
@@ -77,11 +77,11 @@ class Solution:
         """
         capital = W
         n = le.(Profits)
-        visited = [False ___ _ in range(n)]
-        ___ _ in range(k
+        visited = [False ___ _ __ range(n)]
+        ___ _ __ range(k
             maxa = 0
             maxa_i = 0
-            ___ i in range(n
+            ___ i __ range(n
                 __ not visited[i] and Profits[i] >= maxa and Capital[i] <= capital:
                     maxa = Profits[i]
                     maxa_i = i

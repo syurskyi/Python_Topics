@@ -13,7 +13,7 @@ class Solution:
 
         m, n = le.(haystack), le.(needle)
 
-        ___ i in range(m - n + 1
+        ___ i __ range(m - n + 1
             __ haystack[i:i + n] __ needle:
                 r_ i
 

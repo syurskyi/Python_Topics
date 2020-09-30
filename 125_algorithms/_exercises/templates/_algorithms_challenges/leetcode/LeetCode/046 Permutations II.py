@@ -14,9 +14,9 @@ class Solution:
         :param num: a list of integer
         :return: a list of lists of integers
         """
-        result = []
-        self.get_permute(num, [], result)
-        r_ map(list, set(map(tuple, result)))
+        result =   # list
+        self.get_permute(num,   # list, result)
+        r_ map(list, set(map(tu.., result)))
 
 
     ___ get_permute_TLE(self, nums, current, result
@@ -24,7 +24,7 @@ class Solution:
         __ length__0:
             result.append(current)
 
-        ___ ind, val in enumerate(nums
+        ___ ind, val __ enumerate(nums
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
@@ -35,16 +35,16 @@ class Solution:
         :param num: a list of integer
         :return: a list of lists of integers
         """
-        result = []
+        result =   # list
         num.sort()
-        self.get_permute(num, [], result)
+        self.get_permute(num,   # list, result)
         r_ result
 
     ___ get_permute(self, nums, current, result
         __ not nums:
             result.append(current)
 
-        ___ ind, val in enumerate(nums
+        ___ ind, val __ enumerate(nums
             __ ind-1>=0 and val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 

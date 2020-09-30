@@ -11,7 +11,7 @@ class HashFunc:
         __ not key:
             r_ code
 
-        ___ char in key:
+        ___ char __ key:
             code = (self.seed * code + ord(char)) % self.cap
 
         r_ code
@@ -25,9 +25,9 @@ class CountingBloomFilter:
         CAP = 20000
 
         self.bits = [0] * CAP
-        self.hashs = []
+        self.hashs =   # list
 
-        ___ i in range(k
+        ___ i __ range(k
             self.hashs.append(HashFunc(
                 randint(CAP // 2, CAP),
                 i * 2 + 3
@@ -38,7 +38,7 @@ class CountingBloomFilter:
         :type word: str
         :rtype: None
         """
-        ___ f in self.hashs:
+        ___ f __ self.hashs:
             index = f.hash(word)
             self.bits[index] += 1
 
@@ -47,7 +47,7 @@ class CountingBloomFilter:
         :type word: str
         :rtype: None
         """
-        ___ f in self.hashs:
+        ___ f __ self.hashs:
             index = f.hash(word)
             self.bits[index] -= 1
 
@@ -56,7 +56,7 @@ class CountingBloomFilter:
         :type word: str
         :rtype: bool
         """
-        ___ f in self.hashs:
+        ___ f __ self.hashs:
             index = f.hash(word)
             __ self.bits[index] <= 0:
                 r_ False

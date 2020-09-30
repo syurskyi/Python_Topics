@@ -25,7 +25,7 @@ class Solution:
         """
         counter = defaultdict(int)
         s1_set = set(s1)
-        ___ c in s1:
+        ___ c __ s1:
             counter[c] += 1
 
         i = 0
@@ -37,7 +37,7 @@ class Solution:
                     r_ True
                 j += 1
             ____
-                __ s2[i] in s1_set:
+                __ s2[i] __ s1_set:
                     # not check s2[i] in counter, dangerous to check defaultdict
                     counter[s2[i]] += 1
                 i += 1
@@ -47,6 +47,6 @@ class Solution:
         r_ False
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().checkInclusion("ab", "eidbaooo") __ True
     assert Solution().checkInclusion("ab", "eidboaoo") __ False

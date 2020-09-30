@@ -1,6 +1,6 @@
 ___ tickets(people
     cashier = {100:0,50:0,25:0}
-    ___ pay in people:
+    ___ pay __ people:
         __ pay __ 25:
             cashier[25] += 1
         ____ pay __ 50:

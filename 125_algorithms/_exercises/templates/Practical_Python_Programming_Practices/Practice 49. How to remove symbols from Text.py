@@ -4,11 +4,11 @@ symbols = ['.',',',':',';','!','?','(',')']
 listitem = str.split()
 
 x = 0
-for i in listitem:
-    if i[-1] in symbols:
+___ i __ listitem:
+    if i[-1] __ symbols:
         listitem[x] = i[:-1]
         i = listitem[x]
-    if i[0] in symbols:
+    if i[0] __ symbols:
         listitem[x] = i[1:]
     x += 1
 

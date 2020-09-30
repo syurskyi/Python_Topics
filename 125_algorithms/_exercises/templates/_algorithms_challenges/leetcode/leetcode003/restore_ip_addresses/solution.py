@@ -12,8 +12,8 @@ class Solution:
     # @param {string} s
     # @return {string[]}
     ___ restoreIpAddresses(self, s
-        res = []
-        cand = []
+        res =   # list
+        cand =   # list
         self.restore_ip(s, cand, res)
         r_ res
 
@@ -26,7 +26,7 @@ class Solution:
                 res.append('.'.join(cand))
         ____
             k = min(3, le.(s))  # Ensures s[:j + 1] won't be duplicate
-            ___ j in range(k
+            ___ j __ range(k
                 b = s[:j + 1]
                 __ self.is_valid_byte(b
                     cand.append(b)

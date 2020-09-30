@@ -11,9 +11,9 @@ class Solution:
     # @return a list of lists of integers
     ___ pathSum(self, root, su.
         __ root pa__ None:
-            r_ []
-        one = []
-        res = []
+            r_   # list
+        one =   # list
+        res =   # list
         self.ps(root, su., one, res)
         r_ res
 

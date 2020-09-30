@@ -1,16 +1,16 @@
 from random import randint
 
 x = 20
-y = []
+y =   # list
 
-for i in range(20):
+___ i __ range(20):
     y.append(randint(1,20))
 print(y)
 
 j = x-1
 while j != 0:
     k = 0
-    for i in range(1, j+1):
+    ___ i __ range(1, j+1):
         if y[i] > y[k]:
             k = i
     z = y[k]

@@ -19,4 +19,4 @@ class Solution:
         left = self.maxPathSum2(root.left)
         right = self.maxPathSum2(root.right)
 
-        r_ root.val + max(0, left, right)
+        r_ root.val + ma.(0, left, right)

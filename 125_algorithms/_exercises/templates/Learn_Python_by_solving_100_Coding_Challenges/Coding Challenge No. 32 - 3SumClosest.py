@@ -7,10 +7,10 @@
 
 
 class Solution:
-    def threeSumClosest(self, numbers, target):
+    ___ threeSumClosest(self, numbers, target):
         numbers.sort()
         ans = None
-        for i in range(len(numbers)):
+        ___ i __ range(len(numbers)):
             l, r = i + 1, len(numbers) - 1
             while (l < r):
                 sum = numbers[l] + numbers[r] + numbers[i]
@@ -20,7 +20,7 @@ class Solution:
                     l = l + 1
                 else:
                     r = r - 1
-        return ans
+        r_ ans
 
 
 Solution().threeSumClosest([-1, 2, 1, -4], 1)

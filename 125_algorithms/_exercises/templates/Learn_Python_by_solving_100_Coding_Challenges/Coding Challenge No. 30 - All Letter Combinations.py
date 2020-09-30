@@ -10,12 +10,12 @@
 
 class Solution:
     # @return a list of strings, [s1, s2]
-    def letterCombinations(self, digits):
-        def dfs(num, string, res):
+    ___ letterCombinations(self, digits):
+        ___ dfs(num, string, res):
             if num == length:
                 res.append(string)
-                return
-            for letter in dict[digits[num]]:
+                r_
+            ___ letter __ dict[digits[num]]:
                 dfs(num+1, string+letter, res)
         dict = {'2':['a','b','c'],
         '3':['d','e','f'],
@@ -26,10 +26,10 @@ class Solution:
         '8':['t','u','v'],
         '9':['w','x','y','z']
         }
-        res = []
+        res =   # list
         length = len(digits)
         dfs(0, '', res)
-        return res
+        r_ res
 
 
 Solution().letterCombinations("43556")

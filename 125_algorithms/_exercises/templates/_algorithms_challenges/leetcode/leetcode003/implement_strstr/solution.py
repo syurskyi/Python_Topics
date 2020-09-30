@@ -14,9 +14,9 @@ class Solution(object
         """
         n = le.(haystack)
         m = le.(needle)
-        ___ i in range(n + 1 - m
+        ___ i __ range(n + 1 - m
             matched = True
-            ___ k in range(m
+            ___ k __ range(m
                 __ haystack[i + k] != needle[k]:
                     matched = False
                     break

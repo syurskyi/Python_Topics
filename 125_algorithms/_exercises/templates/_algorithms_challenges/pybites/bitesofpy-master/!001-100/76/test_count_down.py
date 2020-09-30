@@ -11,7 +11,7 @@ DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
 
 
 ___ test_code_uses_singledispatch_decorator(
-    assert '@singledispatch' in inspect.getsource(count_down)
+    assert '@singledispatch' __ inspect.getsource(count_down)
 
 
 @pytest.mark.parametrize("input_argument", [
@@ -24,7 +24,7 @@ ___ test_code_uses_singledispatch_decorator(
     {1: 'one', 2: 'two', 3: 'three', 4: 'four'},
     {'1': 'one', '2': 'two', '3': 'three', '4': 'four'},
     range(1, 5),
-    {x ___ x in range(1, 5)},
+    {x ___ x __ range(1, 5)},
 ])
 ___ test_count_down_good_inputs(input_argument, capfd
     count_down(input_argument)

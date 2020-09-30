@@ -44,7 +44,7 @@ ___ match_first_paragraph(html=HTML
     result = re.search(r'<p>(.+?)</p>', html)
     r_ result.group(1) __ result else ''
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     pprint(extract_course_times())
     pprint(get_all_hashtags_and_links())
     pprint(match_first_paragraph())

@@ -49,19 +49,19 @@ class Solution:
         """
         l = le.(nums)
         gross = [0]  # sum [0:i]
-        ___ e in nums:
+        ___ e __ nums:
             gross.append(gross[-1] + e)
 
         F = defaultdict(lambda: defaultdict(int))
-        ___ i in range(l-1, -1, -1
-            ___ j in range(i+1, l+1
-                F[i][j] = max(
+        ___ i __ range(l-1, -1, -1
+            ___ j __ range(i+1, l+1
+                F[i][j] = ma.(
                     gross[j] - gross[i] - F[i+1][j],
                     gross[j] - gross[i] - F[i][j-1]
                 )
         r_ F[0][l] >= (gross[-1] - F[0][l])
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().PredictTheWinner([1, 5, 2]) __ False
     assert Solution().PredictTheWinner([1, 5, 233, 7]) __ True

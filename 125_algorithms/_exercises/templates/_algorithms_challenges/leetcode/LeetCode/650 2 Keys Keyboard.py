@@ -40,7 +40,7 @@ class Solution:
         We need to copy 1 (* 2)
         """
         ret = 0
-        ___ i in range(2, n+1
+        ___ i __ range(2, n+1
             w___ n % i __ 0:
                 ret += i
                 n //= i
@@ -57,11 +57,11 @@ class Solution:
         Better dp:
         F[i] = F[j] + j / i   # copy j / i times
         """
-        F = [[float('inf') ___ _ in range(n+1)] ___ _ in range(n+1)]
+        F = [[float('inf') ___ _ __ range(n+1)] ___ _ __ range(n+1)]
         F[1][0] = 0
         F[1][1] = 1
-        ___ i in range(2, n + 1
-            ___ j in range(i+1
+        ___ i __ range(2, n + 1
+            ___ j __ range(i+1
                 F[i][j] = min(
                     F[i][j],
                     F[i-j][j] + 1,
@@ -77,7 +77,7 @@ class Solution:
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minSteps(7) __ 7
     assert Solution().minSteps(3) __ 3
     assert Solution().minSteps(4) __ 4

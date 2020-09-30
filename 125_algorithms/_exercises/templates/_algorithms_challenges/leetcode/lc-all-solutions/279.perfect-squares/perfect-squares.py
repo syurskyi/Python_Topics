@@ -4,7 +4,7 @@ class Solution(object
     :type n: int
     :rtype: int
     """
-    squares = []
+    squares =   # list
     j = 1
     w___ j * j <= n:
       squares.append(j * j)
@@ -14,9 +14,9 @@ class Solution(object
     visited = [False] * (n + 1)
     w___ queue:
       level += 1
-      temp = []
-      ___ q in queue:
-        ___ factor in squares:
+      temp =   # list
+      ___ q __ queue:
+        ___ factor __ squares:
           __ q - factor __ 0:
             r_ level
           __ q - factor < 0:

@@ -24,12 +24,12 @@ class Solution(object
             r_ 0, float('-inf')
         left  = self.helper(root.left)
         right = self.helper(root.right)
-        single = max([left[0]+root.val, right[0]+root.val, 0])
-        gbl = max([left[1], right[1], left[0]+right[0]+root.val])
+        single = ma.([left[0]+root.val, right[0]+root.val, 0])
+        gbl = ma.([left[1], right[1], left[0]+right[0]+root.val])
         r_ single, gbl
     
     ___ test(self
         pass
     
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

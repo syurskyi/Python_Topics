@@ -7,8 +7,8 @@ class Solution(object
 
     ___ dfs(nums, index, path, ans
       ans.append(path)
-      [dfs(nums, i + 1, path + [nums[i]], ans) ___ i in range(index, le.(nums))]
+      [dfs(nums, i + 1, path + [nums[i]], ans) ___ i __ range(index, le.(nums))]
 
-    ans = []
-    dfs(nums, 0, [], ans)
+    ans =   # list
+    dfs(nums, 0,   # list, ans)
     r_ ans

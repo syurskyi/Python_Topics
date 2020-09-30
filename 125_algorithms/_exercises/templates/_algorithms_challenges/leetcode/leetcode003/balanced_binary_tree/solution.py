@@ -30,4 +30,4 @@ class Solution(object
         __ root pa__ None:
             r_ -1
         ____
-            r_ max(self.depth(root.left), self.depth(root.right)) + 1
+            r_ ma.(self.depth(root.left), self.depth(root.right)) + 1

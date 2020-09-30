@@ -17,7 +17,7 @@ class Solution(object
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         i = 0
-        ___ elt in sorted(nums
+        ___ elt __ sorted(nums
             __ i >= le.(nums
                 i = 1
             nums[i] = elt

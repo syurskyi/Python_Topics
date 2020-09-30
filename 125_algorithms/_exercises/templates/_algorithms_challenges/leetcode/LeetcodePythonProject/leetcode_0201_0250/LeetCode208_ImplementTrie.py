@@ -16,8 +16,8 @@ class Trie(object
     
     ___ insert(self, word
         children = self.root.children
-        ___ i, c in enumerate(word
-            __ c in children:
+        ___ i, c __ enumerate(word
+            __ c __ children:
                 t = children[c]
             ____
                 t = TrieNode(c)
@@ -28,8 +28,8 @@ class Trie(object
     
     ___ searchNode(self, word
         children = self.root.children
-        ___ c in word:
-            __ c in children:
+        ___ c __ word:
+            __ c __ children:
                 t = children[c]
                 children = t.children
             ____

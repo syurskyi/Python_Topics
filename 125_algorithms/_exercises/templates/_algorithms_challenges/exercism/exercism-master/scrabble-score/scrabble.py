@@ -11,7 +11,7 @@ class Scrabble:
     ___ score(cls, word
         __ not cls.valid(word
             r_ 0
-        r_ su.([cls.LETTER_VALUES[c.lower()] ___ c in word])
+        r_ su.([cls.LETTER_VALUES[c.lower()] ___ c __ word])
 
     @classmethod
     ___ valid(cls, word

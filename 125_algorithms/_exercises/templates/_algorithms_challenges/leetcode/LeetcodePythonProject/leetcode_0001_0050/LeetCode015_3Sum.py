@@ -11,8 +11,8 @@ class Solution(object
         """
         nums.sort()
         n = le.(nums)
-        res = []
-        ___ i in range(n-2
+        res =   # list
+        ___ i __ range(n-2
             __ i > 0 and nums[i] __ nums[i-1]:
                 continue
             j, k = i+1, n-1

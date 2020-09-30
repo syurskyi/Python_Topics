@@ -17,10 +17,10 @@ class Solution(object
         :rtype: bool
         """
         __ not edges:
-            r_ n in (0, 1)
+            r_ n __ (0, 1)
 
         V = defaultdict(list)
-        ___ e in edges:
+        ___ e __ edges:
             V[e[0]].append(e[1])
             V[e[1]].append(e[0])
 
@@ -32,11 +32,11 @@ class Solution(object
         r_ le.(visited) __ n
 
     ___ dfs(self, V, v, pi, pathset, visited
-        __ v in pathset:
+        __ v __ pathset:
             r_ False
 
         pathset.add(v)
-        ___ nbr in V[v]:
+        ___ nbr __ V[v]:
             __ nbr != pi:  # since undirected graph
                 __ not self.dfs(V, nbr, v, pathset, visited
                     r_ False

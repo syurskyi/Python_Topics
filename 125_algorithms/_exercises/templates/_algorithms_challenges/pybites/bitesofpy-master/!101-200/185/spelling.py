@@ -10,7 +10,7 @@ __ not path.isfile(DICTIONARY
 ___ load_words(
     """Return a set of words from DICTIONARY"""
     with open(DICTIONARY) as f:
-        r_ {word.strip().lower() ___ word in f.readlines()}
+        r_ {word.strip().lower() ___ word __ f.readlines()}
 
 
 ___ suggest_word(misspelled_word: str, words: set = None) -> str:

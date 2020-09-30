@@ -7,7 +7,7 @@ print("Enter a network in the following format xxx.xxx.xxx.0/xx:")
 network = input()
 netobj = ipaddress.ip_network(network)
 
-___ i in netobj.hosts(
+___ i __ netobj.hosts(
 	print(i)
 
 print('\nHit enter to escape.')

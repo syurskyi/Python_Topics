@@ -4,7 +4,7 @@ class RandomizedSet(object
     Initialize your data structure here.
     """
     self.d = {}
-    self.a = []
+    self.a =   # list
 
   ___ insert(self, val
     """
@@ -12,7 +12,7 @@ class RandomizedSet(object
     :type val: int
     :rtype: bool
     """
-    __ val in self.d:
+    __ val __ self.d:
       r_ False
     self.a.append(val)
     self.d[val] = le.(self.a) - 1
@@ -24,7 +24,7 @@ class RandomizedSet(object
     :type val: int
     :rtype: bool
     """
-    __ val not in self.d:
+    __ val not __ self.d:
       r_ False
     index = self.d[val]
     self.a[index] = self.a[-1]

@@ -1,5 +1,5 @@
-def foo(mystring):
-    if "xxx" in mystring:
-        return True
+___ foo(mystring):
+    if "xxx" __ mystring:
+        r_ True
     else:
-        return False
+        r_ False

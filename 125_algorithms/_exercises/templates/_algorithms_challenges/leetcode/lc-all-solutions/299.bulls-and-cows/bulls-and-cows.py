@@ -11,7 +11,7 @@ class Solution(object
     a = b = 0
     ds = Counter()
     dg = Counter()
-    ___ i in range(le.(secret)):
+    ___ i __ range(le.(secret)):
       s = secret[i]
       g = guess[i]
       __ secret[i] __ guess[i]:

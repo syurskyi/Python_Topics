@@ -6,10 +6,10 @@ class Solution(object
     """
     ans = 0
     __ le.(nums) > 2:
-      diff = [nums[i] - nums[i - 1] ___ i in range(1, le.(nums))]
+      diff = [nums[i] - nums[i - 1] ___ i __ range(1, le.(nums))]
       count = 1
       pre = diff[0]
-      ___ i in range(1, le.(diff)):
+      ___ i __ range(1, le.(diff)):
         __ diff[i] __ pre:
           count += 1
         ____

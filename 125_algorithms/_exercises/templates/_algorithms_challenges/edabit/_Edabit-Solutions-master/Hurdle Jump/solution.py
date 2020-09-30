@@ -1,5 +1,5 @@
 ___ hurdle_jump(hurdles, jump_height
-    __ hurdles __ []:
+    __ hurdles __   # list:
         r_ True
     hurdles.sort()
     __ hurdles[-1] <= jump_height:
@@ -14,5 +14,5 @@ ___ test(
         print("error1")
     __ hurdle_jump([1, 2, 3, 4, 5], 5) != True:
         print("error2")
-    __ hurdle_jump([], 4) != True:
+    __ hurdle_jump(  # list, 4) != True:
         print("error3")

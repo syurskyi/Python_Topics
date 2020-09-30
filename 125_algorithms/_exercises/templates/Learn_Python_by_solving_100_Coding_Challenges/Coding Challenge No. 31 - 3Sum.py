@@ -8,15 +8,15 @@
 
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
-    def threeSum(self, num):
+    ___ threeSum(self, num):
         length = len(num)
-        result = []
+        result =   # list
 
         if length < 3:
-            return result
+            r_ result
         num.sort()
 
-        for i in range(length - 2):
+        ___ i __ range(length - 2):
             if i > 0 and num[i] == num[i - 1]:
                 continue
             low = i + 1
@@ -41,7 +41,7 @@ class Solution:
 
                 while low < high and num[high] == num[high + 1]:
                     high -= 1
-        return result
+        r_ result
 
 
 Solution().threeSum([-1, 0, 1, 2, -1, -4])

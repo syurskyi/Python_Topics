@@ -23,5 +23,5 @@ class Solution:
         r_ mask & ~num
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findComplement(5) __ 2

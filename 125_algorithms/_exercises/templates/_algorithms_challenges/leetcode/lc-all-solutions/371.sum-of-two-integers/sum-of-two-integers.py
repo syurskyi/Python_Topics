@@ -8,7 +8,7 @@ class Solution(object
     ans = 0
     mask = 0x01
     carry = 0
-    ___ i in range(0, 32
+    ___ i __ range(0, 32
       a = num1 & mask
       b = num2 & mask
       c = carry

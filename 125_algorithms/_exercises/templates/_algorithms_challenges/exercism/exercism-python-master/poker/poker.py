@@ -2,8 +2,8 @@ from collections ______ defaultdict
 
 ___ poker(hands
     """poker determines the best poker hand from a set of hands"""
-    best_hands, best_score = [], None
-    ___ hand in hands:
+    best_hands, best_score =   # list, None
+    ___ hand __ hands:
         score = score_hand(hand)
         __ best_score __ None or best_score < score:
             best_hands, best_score = [hand], score
@@ -17,8 +17,8 @@ ___ score_hand(hand
     sorted_ranks = sorted(ranks.keys())
     kinds = sorted(list(ranks.values()), reverse=True)
 
-    flush = all(suit __ suits[0] ___ suit in suits)
-    straight = all(sorted_ranks[0] + i __ rank ___ i, rank in enumerate(sorted_ranks))
+    flush = al.(suit __ suits[0] ___ suit __ suits)
+    straight = al.(sorted_ranks[0] + i __ rank ___ i, rank __ enumerate(sorted_ranks))
 
     __ sorted_ranks __ [2,3,4,5,14]:
         straight, ranks = True, {1:1, 2:1, 3:1, 4:1, 5:1}
@@ -43,12 +43,12 @@ ___ score_hand(hand
         score = 0
 
     hand = sorted(ranks.items(), key=lambda r: (-r[1], -r[0]))
-    r_ [score] + [v ___ v,c in hand ___ _ in range(c)]
+    r_ [score] + [v ___ v,c __ hand ___ _ __ range(c)]
 
 ___ get_suits_and_ranks(hand
     """get_suits_and_ranks splits a hand into suits and ranks"""
-    suits, ranks = [], defaultdict(int)
-    ___ card in hand:
+    suits, ranks =   # list, defaultdict(int)
+    ___ card __ hand:
         suit, rank = card[-1], card[:-1]
         suits.append(suit)
         ranks[ convert_rank(rank) ] += 1

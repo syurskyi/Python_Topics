@@ -5,7 +5,7 @@ birtdays = {
     'einstein' : '14.03.1879'
 }
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     print('We know birthdays of: ' + str(list(birtdays.keys())))
     name = str(input("Who's  birthday you want to know ?"))
     print('This guy birthday is ' + birtdays.get(name, ' ---  No such guy ---'))

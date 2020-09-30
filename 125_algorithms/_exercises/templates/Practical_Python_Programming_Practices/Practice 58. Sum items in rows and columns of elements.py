@@ -2,23 +2,23 @@ from random import randint
 
 col = 6
 row = 6
-matrix = []
+matrix =   # list
 
 sum_col = [0]*col
 sum_row = [0]*row
 
-for i in range(row):
-    myrow = []
-    for j in range(col):
+___ i __ range(row):
+    myrow =   # list
+    ___ j __ range(col):
         myrow.append(randint(0,3))
     matrix.append(myrow)
 
-for i in range(row):
-    for j in range(col):
+___ i __ range(row):
+    ___ j __ range(col):
         sum_row[i] += matrix[i][j]
         sum_col[j] += matrix[i][j]
 
-for i in range(row):
+___ i __ range(row):
     print(matrix[i], "|", sum_row[i])
 
 print("_" *col*4)

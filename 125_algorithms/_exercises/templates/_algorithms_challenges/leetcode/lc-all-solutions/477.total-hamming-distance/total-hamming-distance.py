@@ -6,9 +6,9 @@ class Solution(object
     """
     ans = 0
     mask = 1
-    ___ j in range(0, 32
+    ___ j __ range(0, 32
       ones = zeros = 0
-      ___ num in nums:
+      ___ num __ nums:
         __ num & mask:
           ones += 1
         ____

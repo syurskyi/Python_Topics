@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ _ in range(int(input())):
+___ _ __ range(int(input())):
     a, b = input().split()
     try:
         print(int(a) // int(b))

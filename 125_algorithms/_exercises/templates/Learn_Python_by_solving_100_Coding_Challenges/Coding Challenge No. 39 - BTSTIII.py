@@ -6,24 +6,24 @@
 class Solution:
     # @param prices, a list of integer
     # @return an integer
-    def maxProfit(self, prices):
+    ___ maxProfit(self, prices):
         length=len(prices)
         if length==0:
-            return 0
-        f1=[0 for i in range(length)]
-        f2=[0 for i in range(length)]
+            r_ 0
+        f1=[0 ___ i __ range(length)]
+        f2=[0 ___ i __ range(length)]
         minV = prices[0]; f1[0]=0
-        for i in range(1,length):
+        ___ i __ range(1,length):
             minV=min(minV, prices[i])
-            f1[i]=max(f1[i-1],prices[i]-minV)
+            f1[i]=ma.(f1[i-1],prices[i]-minV)
         maxV=prices[length-1]; f2[length-1]=0
-        for i in range(length-2,-1,-1):
-            maxV=max(maxV,prices[i])
-            f2[i]=max(f2[i+1],maxV-prices[i])
+        ___ i __ range(length-2,-1,-1):
+            maxV=ma.(maxV,prices[i])
+            f2[i]=ma.(f2[i+1],maxV-prices[i])
         res=0
-        for i in range(length):
+        ___ i __ range(length):
             if f1[i]+f2[i]>res: res=f1[i]+f2[i]
-        return res
+        r_ res
 
 
 Solution().maxProfit([1, 4, 8, 1, 2])

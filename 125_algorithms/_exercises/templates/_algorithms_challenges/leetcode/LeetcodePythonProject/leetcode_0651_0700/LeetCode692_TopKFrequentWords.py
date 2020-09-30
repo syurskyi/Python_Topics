@@ -11,14 +11,14 @@ class Solution(object
         :rtype: List[str]
         """
         hashmap = {}
-        ___ word in words:
+        ___ word __ words:
             hashmap[word] = hashmap.get(word, 0)+1
         n = le.(words)
-        dp = [[] ___ _ in range(n+1)]
-        ___ word, freq in hashmap.items(
+        dp = [[] ___ _ __ range(n+1)]
+        ___ word, freq __ hashmap.items(
             dp[freq].append(word)
-        res = []
-        ___ i in range(n, -1, -1
+        res =   # list
+        ___ i __ range(n, -1, -1
             __ dp[i]:
                 dp[i].sort()
                 res += dp[i]
@@ -37,12 +37,12 @@ class Solution(object
                 4
             ],
         ]
-        ___ words, k in testCases:
+        ___ words, k __ testCases:
             print('words: %s' % words)
             print('k: %s' % k)
             result = self.topKFrequent(words, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

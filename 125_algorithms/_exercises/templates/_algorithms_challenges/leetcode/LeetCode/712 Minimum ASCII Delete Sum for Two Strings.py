@@ -36,14 +36,14 @@ class Solution:
            F[i-1][j-1] if (s1[i-1] == s2[j-1])
         """
         m, n = le.(s1), le.(s2)
-        F = [[float('inf') ___ _ in range(n + 1)] ___ _ in range(m + 1)]
+        F = [[float('inf') ___ _ __ range(n + 1)] ___ _ __ range(m + 1)]
         F[0][0] = 0
-        ___ i in range(1, m + 1
+        ___ i __ range(1, m + 1
             F[i][0] = F[i-1][0] + ord(s1[i-1])
-        ___ j in range(1, n + 1
+        ___ j __ range(1, n + 1
             F[0][j] = F[0][j-1] + ord(s2[j-1])
-        ___ i in range(1, m + 1
-            ___ j in range(1, n + 1
+        ___ i __ range(1, m + 1
+            ___ j __ range(1, n + 1
                 F[i][j] = min(
                     F[i][j],
                     F[i][j-1] + ord(s2[j-1]),
@@ -68,12 +68,12 @@ class Solution:
         Error at initial conditions
         """
         m, n = le.(s1), le.(s2)
-        F = [[float('inf') ___ _ in range(n + 1)] ___ _ in range(m + 1)]
+        F = [[float('inf') ___ _ __ range(n + 1)] ___ _ __ range(m + 1)]
         F[0][0] = 0
         F[1][0] = ord(s1[0])
         F[0][1] = ord(s2[0])
-        ___ i in range(1, m + 1
-            ___ j in range(1, n + 1
+        ___ i __ range(1, m + 1
+            ___ j __ range(1, n + 1
                 F[i][j] = min(
                     F[i][j],
                     F[i][j-1] + ord(s2[j-1]),
@@ -88,6 +88,6 @@ class Solution:
         r_ F[m][n]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minimumDeleteSum("sea", "eat") __ 231
     assert Solution().minimumDeleteSum("delete", "leet") __ 403

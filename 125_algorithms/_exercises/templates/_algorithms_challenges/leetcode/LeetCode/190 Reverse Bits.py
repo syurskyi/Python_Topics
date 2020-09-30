@@ -14,7 +14,7 @@ class Solution:
         """
         ret = 0
         BITS = 32
-        ___ i in xrange(BITS
+        ___ i __ xrange(BITS
             ret += n&1
             __ i __ BITS-1: break
             ret <<= 1

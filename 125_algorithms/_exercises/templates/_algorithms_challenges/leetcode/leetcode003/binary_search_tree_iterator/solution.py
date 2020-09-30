@@ -7,7 +7,7 @@
 
 class BSTIterator(object
     ___ __init__(self, root
-        self._arr = []
+        self._arr =   # list
         self._inorder(root)
         self._cur = -1
 

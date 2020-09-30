@@ -21,8 +21,8 @@ ___ test_get_longest_state(
     # depending the direction of the sort (reversed or not)
     # both North and South Carolina are correct
     correct_answers = ('North Carolina', 'South Carolina')
-    assert get_longest_state(us_state_abbrev) in correct_answers
-    assert get_longest_state(states) in correct_answers
+    assert get_longest_state(us_state_abbrev) __ correct_answers
+    assert get_longest_state(states) __ correct_answers
 
 
 ___ test_combine_state_names_and_abbreviations(

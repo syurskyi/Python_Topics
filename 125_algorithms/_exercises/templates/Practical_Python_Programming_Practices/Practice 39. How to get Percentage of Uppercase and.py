@@ -4,7 +4,7 @@ len_str = len(str)
 
 upper = lower = 0
 
-for i in str:
+___ i __ str:
     if 'a' <= i <= 'z':
         lower += 1
     elif 'A' <= i <= 'Z':

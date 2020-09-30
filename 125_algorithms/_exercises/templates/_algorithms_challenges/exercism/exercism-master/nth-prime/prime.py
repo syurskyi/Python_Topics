@@ -5,7 +5,7 @@ class prime:
 
     @classmethod
     ___ nth_prime(cls, n
-        primes = []
+        primes =   # list
         possible = cls.possible_primes()
         w___ le.(primes) < n:
             x = next(possible)
@@ -15,7 +15,7 @@ class prime:
 
     @staticmethod
     ___ is_prime(x
-        ___ i in range(2, int(ma__.sqrt(x)) + 1
+        ___ i __ range(2, int(ma__.sqrt(x)) + 1
             __ x % i __ 0:
                 r_ False
         r_ True

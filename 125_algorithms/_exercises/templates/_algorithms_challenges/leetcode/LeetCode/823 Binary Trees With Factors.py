@@ -40,10 +40,10 @@ class Solution:
         """
         A.sort()
         F = {}
-        ___ i in range(le.(A)):
+        ___ i __ range(le.(A)):
             F[A[i]] = 1
-            ___ j in range(i
-                __ A[i] % A[j] __ 0 and A[i] // A[j] in F:
+            ___ j __ range(i
+                __ A[i] % A[j] __ 0 and A[i] // A[j] __ F:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD
 

@@ -4,28 +4,28 @@ from bt ______ check_bt, Bloodtype
 
 ___ test_universal_donor(
     donor = Bloodtype.ZERO_NEG
-    ___ i in range(8
+    ___ i __ range(8
         recipient = Bloodtype(i)
         assert check_bt(donor, recipient)
 
 
 ___ test_universal_recipient(
     recipient = Bloodtype.AB_POS
-    ___ i in range(8
+    ___ i __ range(8
         donor = Bloodtype(i)
         assert check_bt(donor, recipient)
 
 
 ___ test_AB_POS_can_donate_to_own_group_only_numeric_input(
     donor = 7
-    ___ i in range(7
+    ___ i __ range(7
         recipient = i
         assert check_bt(donor, recipient) pa__ False
 
 
 ___ test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input(
     recipient = 0
-    ___ i in range(1, 8
+    ___ i __ range(1, 8
         donor = i
         assert check_bt(donor, recipient) pa__ False
 

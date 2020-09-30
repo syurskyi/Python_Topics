@@ -33,9 +33,9 @@ class Solution:
         l = le.(L)
 
         working_list = list(L)
-        result = []
+        result =   # list
         window_t = -1  # [0, t)
-        window = []
+        window =   # list
         i = 0
         w___ i<=le.(S)-3:
             # test window
@@ -43,24 +43,24 @@ class Solution:
                 result.append(window_t-l*k)
 
             word = S[i:i+3]
-            __ word in working_list:
+            __ word __ working_list:
                 window.append(word)
                 working_list.remove(word)
                 window_t = i+3
                 i += 3
 
-            ____ word not in L:
+            ____ word not __ L:
                 __ window:
                     i = window_t-le.(window)*k+1  # going to original point plus 1
                 ____
                     i += 1
 
-                window = []
+                window =   # list
                 window_t = -1
                 working_list = list(L)
 
 
-            ____ word in L and word not in working_list:
+            ____ word __ L and word not __ working_list:
                 window = window[window.index(word)+1:]
                 window.append(word)
                 # working_list.remove(word)
@@ -99,51 +99,51 @@ class Solution:
         l = le.(L)
 
         Lmap = {}  # map of L
-        ___ item in L:
-            __ item in Lmap:
+        ___ item __ L:
+            __ item __ Lmap:
                 Lmap[item] += 1
             ____
                 Lmap[item] = 1
 
         Lmap_original = dict(Lmap)
 
-        ret = []
+        ret =   # list
         win_e = -1  # [0, t), no need start_ptr
-        working_win = []
+        working_win =   # list
         i = 0
         w___ i<le.(S
             # test window
             __ le.(working_win)__l:
                 ret.append(win_e-l*k)
                 candidate = win_e-l*k+1
-                __ S[candidate:candidate+k] in Lmap:
+                __ S[candidate:candidate+k] __ Lmap:
                     win_e = -1
                     i = candidate
                     Lmap = dict(Lmap_original)
-                    working_win = []
+                    working_win =   # list
 
             word = S[i:i+k]
             # case 1, match one in L
-            __ word in Lmap and Lmap[word]>0:
+            __ word __ Lmap and Lmap[word]>0:
                 working_win.append(word)
                 Lmap[word] -= 1
                 win_e = i+k
                 i += k
 
             # case 2, no match
-            ____ word not in Lmap:
+            ____ word not __ Lmap:
                 __ working_win:
                     i = win_e-le.(working_win)*k+1  # going to window start+1  # cannot jump
                 ____
                     i += 1
 
-                working_win = []
+                working_win =   # list
                 win_e = -1
                 Lmap = dict(Lmap_original)
 
             # case 3, mach one in L not used up
-            ____ word in Lmap and Lmap[word]__0:
-                ___ j in xrange(0, working_win.index(word)+1  # kind of prefix suffix concepts
+            ____ word __ Lmap and Lmap[word]__0:
+                ___ j __ xrange(0, working_win.index(word)+1  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
                 working_win.append(word)

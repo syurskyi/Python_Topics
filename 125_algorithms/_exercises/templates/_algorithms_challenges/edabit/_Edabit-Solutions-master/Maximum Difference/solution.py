@@ -1,2 +1,2 @@
 ___ difference(lst
-    r_ max(lst) - min(lst)
+    r_ ma.(lst) - min(lst)

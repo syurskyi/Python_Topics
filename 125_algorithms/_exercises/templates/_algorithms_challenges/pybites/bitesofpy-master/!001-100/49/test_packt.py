@@ -4,7 +4,7 @@ book = get_book()
 
 
 ___ test_type(
-    assert isinstance(book, tuple)
+    assert isinstance(book, tu..)
 
 
 ___ test_book_title(

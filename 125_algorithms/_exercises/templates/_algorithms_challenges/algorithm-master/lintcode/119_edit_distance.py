@@ -15,15 +15,15 @@ class Solution:
         the substr end at `A[i - 1]` to
         the substr end at `B[j - 1]`
         """
-        dp = [[0] * (n + 1) ___ _ in range(m + 1)]
+        dp = [[0] * (n + 1) ___ _ __ range(m + 1)]
 
-        ___ i in range(1, m + 1
+        ___ i __ range(1, m + 1
             dp[i][0] = i
-        ___ j in range(1, n + 1
+        ___ j __ range(1, n + 1
             dp[0][j] = j
 
-        ___ i in range(1, m + 1
-            ___ j in range(1, n + 1
+        ___ i __ range(1, m + 1
+            ___ j __ range(1, n + 1
                 """
                 no need to init dp[curr][j]
 

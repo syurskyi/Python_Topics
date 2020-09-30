@@ -13,7 +13,7 @@ class Solution(object
         :rtype: int
         """
         minA, minB = float('inf'), float('inf')
-        ___ a, b in ops:
+        ___ a, b __ ops:
             minA = min(minA, a)
             minB = min(minB, b)
         r_ min(minA, m)*min(minB, n)
@@ -24,5 +24,5 @@ class Solution(object
         ]
         
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -4,11 +4,11 @@ class Solution:
         res = 0
         cur = 0
         d = {}
-        ___ i, c in enumerate(s
-            __ c not in d:
+        ___ i, c __ enumerate(s
+            __ c not __ d:
                 cur += 1
             ____
                 cur = min(i - d[c], cur + 1)
             d[c] = i
-            res = max(res, cur)
+            res = ma.(res, cur)
         r_ res

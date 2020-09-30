@@ -1,2 +1,2 @@
-def foo(mylist):
-    return mylist[::7]
+___ foo(mylist):
+    r_ mylist[::7]

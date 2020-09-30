@@ -17,7 +17,7 @@ ___ extract_date(reboots
         'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12,
     }
     lines = reboots.splitlines(keepends=False)
-    ___ line in lines:
+    ___ line __ lines:
         __ le.(line.strip()) __ 0:
             continue
         line_parts = line.strip().split()
@@ -43,8 +43,8 @@ ___ calc_max_uptime(reboots
        but we use different outputs in the tests as well ...
     """
     previous = None
-    records = []
-    ___ this_date in extract_date(reboots
+    records =   # list
+    ___ this_date __ extract_date(reboots
         __ previous pa__ None:
             previous = this_date
             continue

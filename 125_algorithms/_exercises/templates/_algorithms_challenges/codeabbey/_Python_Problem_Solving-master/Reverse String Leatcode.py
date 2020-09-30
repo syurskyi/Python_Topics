@@ -7,7 +7,7 @@ class Solution:
         
         mini = -2**31
         maxi = 2**31 -1
-        __ ans not in range(mini,maxi
+        __ ans not __ range(mini,maxi
             r_ 0
         ____
             r_ ans

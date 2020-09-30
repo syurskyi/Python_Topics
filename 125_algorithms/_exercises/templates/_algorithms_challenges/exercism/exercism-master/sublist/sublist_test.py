@@ -5,13 +5,13 @@ from sublist ______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 class SublistTest(unittest.TestCase
     ___ test_empty_lists(self
-        self.assertEqual(EQUAL, check_lists([], []))
+        self.assertEqual(EQUAL, check_lists(  # list, []))
 
     ___ test_empty_list_within(self
-        self.assertEqual(SUBLIST, check_lists([], [1, 2, 3]))
+        self.assertEqual(SUBLIST, check_lists(  # list, [1, 2, 3]))
 
     ___ test_within_empty_list(self
-        self.assertEqual(SUPERLIST, check_lists([1], []))
+        self.assertEqual(SUPERLIST, check_lists([1],   # list))
 
     ___ test_equal_lists(self
         l1 = [0, 1, 2]
@@ -80,5 +80,5 @@ class SublistTest(unittest.TestCase
         self.assertEqual(UNEQUAL, check_lists([1, 2, 3], [3, 2, 1]))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -49,7 +49,7 @@ class Solution:
 
         O(N), vist each node 2 times
         """
-        ret = []
+        ret =   # list
         self.ancestor_dist(root, K, target, ret)
         r_ ret
 
@@ -93,7 +93,7 @@ class SolutionComplicated:
         1st problem: target's subtree - easy to solve
         2nd problem:  mark parent, ancestor path length
         """
-        ret = []
+        ret =   # list
         self.dfs1(target, K, ret)
         hm = {}
         self.ancestor_dist(root, target, hm)

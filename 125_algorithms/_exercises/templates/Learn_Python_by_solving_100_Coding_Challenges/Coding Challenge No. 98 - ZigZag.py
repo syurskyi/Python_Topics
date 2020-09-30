@@ -17,19 +17,19 @@ class Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}
-    def convert(self, s, numRows):
+    ___ convert(self, s, numRows):
         if numRows == 1 or numRows >= len(s):
-            return s
-        zigzag = [[] for x in range(numRows)]
+            r_ s
+        zigzag = [[] ___ x __ range(numRows)]
         row, step = 0, 1
-        for c in s:
+        ___ c __ s:
             zigzag[row] += c,
             if row == 0:
                 step = 1
             elif row == numRows - 1:
                 step = -1
             row += step
-        return ''.join(functools.reduce(operator.add, zigzag))
+        r_ ''.join(functools.reduce(operator.add, zigzag))
 
 
 Solution().convert("PAYPALISHIRING", 3)

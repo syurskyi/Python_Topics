@@ -11,15 +11,15 @@ class Solution(object
         :rtype: List[List[int]]
         """
         __ not nums:
-            r_ []
-        result = []
-        elem = []
+            r_   # list
+        result =   # list
+        elem =   # list
         self.helper(nums, elem, 0, result)
         r_ result
     
     ___ helper(self, nums, elem, start, result
         result.append(list(elem))
-        ___ i in range(start, le.(nums)):
+        ___ i __ range(start, le.(nums)):
             elem.append(nums[i])
             self.helper(nums, elem, i+1, result)
             elem.p..
@@ -28,11 +28,11 @@ class Solution(object
         testCases = [
             [1, 2, 3],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.subsets(nums)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

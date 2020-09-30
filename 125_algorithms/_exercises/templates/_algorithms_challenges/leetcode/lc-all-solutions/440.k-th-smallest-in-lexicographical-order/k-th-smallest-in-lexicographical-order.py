@@ -12,14 +12,14 @@ class Solution(object
         r_ cur
       self.k -= 1
       __ cur __ 0:
-        ___ i in range(1, 10
+        ___ i __ range(1, 10
           __ i > n:
             break
           ret = dfs(i, n)
           __ ret:
             r_ ret
       ____
-        ___ i in range(0, 10
+        ___ i __ range(0, 10
           __ cur * 10 + i > n:
             break
           ret = dfs(cur * 10 + i, n)
@@ -36,7 +36,7 @@ class Solution(object
       start = ans
       end = start + 1
       w___ start <= n:
-        gap += max(0, min(n + 1, end) - start)
+        gap += ma.(0, min(n + 1, end) - start)
         start *= 10
         end *= 10
       r_ gap

@@ -1,7 +1,7 @@
 #Ask for how number to be entered
 data = int(input())
 result = 0
-arr = []
+arr =   # list
 
 w___ le.(arr) < data:
     arr = input().split()
@@ -9,7 +9,7 @@ w___ le.(arr) < data:
     #print('values is in arr are :', arr)
     
     #traversing through each element of the array
-    ___ x in range(le.(arr)):
+    ___ x __ range(le.(arr)):
         
         #print('current array is :', currarr)
         result =  (result + int(arr[x])) * 113

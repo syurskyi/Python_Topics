@@ -11,8 +11,8 @@ class Solution(object
         :rtype: int
         """
         ______ operator
-        stack = []
-        ___ token in tokens:
+        stack =   # list
+        ___ token __ tokens:
             __ token __ '+':
                 num1 = stack.p..
                 num2 = stack.p..
@@ -39,11 +39,11 @@ class Solution(object
 #             ["4", "13", "5", "/", "+"],
             ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"],
         ]
-        ___ tokens in testCases:
+        ___ tokens __ testCases:
             print('tokens: %s' % (tokens))
             result = self.evalRPN(tokens)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

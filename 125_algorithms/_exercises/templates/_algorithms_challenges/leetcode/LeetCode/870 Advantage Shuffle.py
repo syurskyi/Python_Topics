@@ -40,16 +40,16 @@ class Solution:
         then keep a list
         """
         idxes = defaultdict(list)
-        ___ i, b in enumerate(B
+        ___ i, b __ enumerate(B
             idxes[b].append(i)
 
         n = le.(A)
         A.sort()
         B.sort()
-        ret = [None ___ _ in range(n)]
-        not_used = []
+        ret = [None ___ _ __ range(n)]
+        not_used =   # list
         j = 0
-        ___ a in A:
+        ___ a __ A:
             __ a > B[j]:
                 i = idxes[B[j]].p..
                 ret[i] = a
@@ -57,12 +57,12 @@ class Solution:
             ____
                 not_used.append(a)
 
-        ___ i in range(n
+        ___ i __ range(n
             __ ret[i] pa__ None:
                 ret[i] = not_used.p..
 
         r_ ret
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().advantageCount([2,7,11,15], [1,10,4,11]) __ [2,11,7,15]

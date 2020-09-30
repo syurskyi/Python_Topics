@@ -4,15 +4,15 @@
 # Solutions:
 
 class Solution:
-    def maxProfit(prices):
+    ___ maxProfit(prices):
         minValue = float("inf")
         maxBenefit = 0
-        for price in prices:
+        ___ price __ prices:
             if minValue > price:
                 minValue = price
             if maxBenefit < price - minValue:
                 maxBenefit = price - minValue
-        return maxBenefit
+        r_ maxBenefit
 
 print (Solution.maxProfit([7, 1, 5, 3, 6, 4]) )
 print (Solution.maxProfit([7, 6, 4, 3, 1]) )

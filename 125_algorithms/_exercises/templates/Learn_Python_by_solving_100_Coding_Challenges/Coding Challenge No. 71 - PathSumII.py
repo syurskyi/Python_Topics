@@ -15,7 +15,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -25,14 +25,14 @@ class Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
-    def pathSum(self, root, sum):
-        solution = []
-        self.pathSumRec(root, sum, 0, [], solution)
-        return solution
+    ___ pathSum(self, root, sum):
+        solution =   # list
+        self.pathSumRec(root, sum, 0,   # list, solution)
+        r_ solution
 
-    def pathSumRec(self, root, sum, tempSum, tempList, solution):
+    ___ pathSumRec(self, root, sum, tempSum, tempList, solution):
         if root == None:
-            return
+            r_
         tempList.append(root.val)
         tempSum += root.val
         if root.left == None and root.right == None:
@@ -44,6 +44,6 @@ class Solution:
         tempList.pop()
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left, BT.left = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
     print ( Solution().pathSum(BT, 6) )

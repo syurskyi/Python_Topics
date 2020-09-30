@@ -11,13 +11,13 @@ class Solution(object
         :rtype: int
         """
         hashmap = {}
-        ___ vals in wall:
+        ___ vals __ wall:
             sumVal = 0
-            ___ val in vals:
+            ___ val __ vals:
                 sumVal += val
                 hashmap[sumVal] = hashmap.get(sumVal, 0)+1
         minRes = le.(wall)
-        ___ val, count in hashmap.items(
+        ___ val, count __ hashmap.items(
             __ 1 <= val < su.(wall[0] # not the start and end
                 minRes = min(minRes, le.(wall)-count)
         r_ minRes
@@ -33,12 +33,12 @@ class Solution(object
                 [1,3,1,1],
             ],
         ]
-        ___ wall in testCases:
+        ___ wall __ testCases:
             print('wall:')
-            print('\n'.join([str(row) ___ row in wall]))
+            print('\n'.join([str(row) ___ row __ wall]))
             result = self.leastBricks(wall)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

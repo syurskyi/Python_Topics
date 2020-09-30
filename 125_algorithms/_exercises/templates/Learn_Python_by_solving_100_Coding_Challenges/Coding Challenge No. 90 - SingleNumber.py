@@ -8,11 +8,11 @@
 class Solution:
     # @param A, a list of integer
     # @return an integer
-    def singleNumber(self, A):
+    ___ singleNumber(self, A):
         result = 0
-        for i in A:
+        ___ i __ A:
             result ^= i
-        return result
+        r_ result
 
 
 Solution().singleNumber([1, 2, 1, 2, 0])

@@ -24,10 +24,10 @@ class MagicDictionary(object
         :rtype: void
         """
         self.root = TreeNode(None)
-        ___ word in dict:
+        ___ word __ dict:
             node = self.root
-            ___ c in word:
-                __ c not in node.children:
+            ___ c __ word:
+                __ c not __ node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
@@ -48,7 +48,7 @@ class MagicDictionary(object
                 r_ True
             r_ False
         c = word[ind]
-        ___ c0 in node.children:
+        ___ c0 __ node.children:
             __ c0 != c and diffFlag:
                 continue
             __ self.helper(node.children.get(c, None), word, ind+1, diffFlag) or\
@@ -56,7 +56,7 @@ class MagicDictionary(object
                 r_ True
         r_ False
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     magicDict = MagicDictionary()
     magicDict.buildDict(['hello', 'leetcode', 'hallo'])
     print(magicDict.search('hello'))

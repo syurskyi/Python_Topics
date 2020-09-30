@@ -44,7 +44,7 @@ class StringIterator(object
         """
         r_ self.c != ' '
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     it = StringIterator('L1e2t1C1o1d1e1')
     w___ it.hasNext(
         print(it.next())

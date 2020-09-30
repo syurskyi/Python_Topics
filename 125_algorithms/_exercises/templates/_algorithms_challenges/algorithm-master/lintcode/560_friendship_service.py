@@ -14,20 +14,20 @@ class FriendshipService:
     @return: all followers and sort by user_id
     """
     ___ get_followers(self, user_id
-        __ user_id in self.followers:
+        __ user_id __ self.followers:
             r_ sorted(self.followers[user_id])
 
-        r_ []
+        r_   # list
 
     """
     @param: user_id: An integer
     @return: all followings and sort by user_id
     """
     ___ get_followings(self, user_id
-        __ user_id in self.followings:
+        __ user_id __ self.followings:
             r_ sorted(self.followings[user_id])
 
-        r_ []
+        r_   # list
 
     """
     @param: to_id: An integer
@@ -35,11 +35,11 @@ class FriendshipService:
     @return: nothing
     """
     ___ follow(self, to_id, from_id
-        __ from_id not in self.followings:
+        __ from_id not __ self.followings:
             self.followings[from_id] = set()
         self.followings[from_id].add(to_id)
 
-        __ to_id not in self.followers:
+        __ to_id not __ self.followers:
             self.followers[to_id] = set()
         self.followers[to_id].add(from_id)
 
@@ -49,8 +49,8 @@ class FriendshipService:
     @return: nothing
     """
     ___ unfollow(self, to_id, from_id
-        __ from_id in self.followings:
+        __ from_id __ self.followings:
             self.followings[from_id].discard(to_id)
 
-        __ to_id in self.followers:
+        __ to_id __ self.followers:
             self.followers[to_id].discard(from_id)

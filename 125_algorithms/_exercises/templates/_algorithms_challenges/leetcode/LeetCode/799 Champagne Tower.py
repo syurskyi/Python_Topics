@@ -58,9 +58,9 @@ class Solution:
         """
         G = defaultdict(lambda: defaultdict(int))
         G[0][0] = poured
-        ___ i in range(query_row
-            ___ j in range(i+1  # i + 1 glasses at row i
-                excess = max(0, G[i][j] - 1)
+        ___ i __ range(query_row
+            ___ j __ range(i+1  # i + 1 glasses at row i
+                excess = ma.(0, G[i][j] - 1)
                 G[i+1][j] += excess / 2
                 G[i+1][j+1] += excess / 2
 

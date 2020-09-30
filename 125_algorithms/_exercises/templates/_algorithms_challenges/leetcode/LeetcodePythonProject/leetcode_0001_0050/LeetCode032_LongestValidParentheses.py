@@ -7,18 +7,18 @@ Created on Mar 14, 2017
 class Solution(object
     ___ longestValidParentheses(self, s
         left = -1
-        stack = []
+        stack =   # list
         res = 0
-        ___ i, c in enumerate(s
+        ___ i, c __ enumerate(s
             __ c __ '(':
                 stack.append(i)
             ____
                 __ stack:
                     stack.p..
                     __ stack:
-                        res = max(res, i-stack[-1])
+                        res = ma.(res, i-stack[-1])
                     ____
-                        res = max(res, i-left)
+                        res = ma.(res, i-left)
                 ____
                     left = i
         r_ res
@@ -29,11 +29,11 @@ class Solution(object
             '(()',
             ')()())',
         ]
-        ___ s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.longestValidParentheses(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

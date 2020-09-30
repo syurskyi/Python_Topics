@@ -11,20 +11,20 @@
 
 
 class Solution:
-    def combinationSum2(self, candidates, target):
+    ___ combinationSum2(self, candidates, target):
         if not candidates:
-            return []
+            r_   # list
         candidates.sort()
-        result = []
-        self.combination(candidates, target, [], result)
-        return result
-    def combination(self, candidates, target, current, result):
+        result =   # list
+        self.combination(candidates, target,   # list, result)
+        r_ result
+    ___ combination(self, candidates, target, current, result):
         s = sum(current) if current else 0
         if s > target:
-            return
+            r_
         elif s == target:
             result.append(current)
-            return
+            r_
         else:
             i = 0
             while i < len(candidates):

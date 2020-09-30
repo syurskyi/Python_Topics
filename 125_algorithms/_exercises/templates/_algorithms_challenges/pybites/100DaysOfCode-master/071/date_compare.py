@@ -23,6 +23,6 @@ ___ date_calc(d1, d2
     r_ days  
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     days = date_entry()
     print("\n %s day(s) between these two dates." % (days.days))

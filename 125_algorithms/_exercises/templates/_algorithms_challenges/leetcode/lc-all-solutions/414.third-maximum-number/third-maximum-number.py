@@ -5,8 +5,8 @@ class Solution(object
     :rtype: int
     """
     first = second = third = float("-inf")
-    ___ num in nums:
-      __ num in [first, second, third]:
+    ___ num __ nums:
+      __ num __ [first, second, third]:
         continue
       __ num > first:
         third = second

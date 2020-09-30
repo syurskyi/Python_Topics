@@ -114,7 +114,7 @@ class BinaryTree (object
 
 	___ printPostOrder (self
 		global postOrder
-		postOrder = []
+		postOrder =   # list
 
 		___ PostOrder(node
 			__ node pa__ not None:
@@ -127,7 +127,7 @@ class BinaryTree (object
 
 	___ printInOrder (self
 		global inOrder 
-		inOrder = []
+		inOrder =   # list
 
 		___ InOrder (node
 			__ node pa__ not None:
@@ -140,7 +140,7 @@ class BinaryTree (object
 
 	___ printPreOrder (self
 		global preOrder
-		preOrder = []
+		preOrder =   # list
 
 		___ PreOrder (node
 			__ node pa__ not None:

@@ -17,10 +17,10 @@ class Solution(object
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ not root: r_ []
+        __ not root: r_   # list
         __ not root.left and not root.right: r_ [root.val]
         leftBoundary = self.getLeft(root)
-        leaves = []
+        leaves =   # list
         self.getLeaves(root, leaves)
         rightBoundary = self.getRight(root)
         r_ leftBoundary + leaves + rightBoundary
@@ -46,7 +46,7 @@ class Solution(object
         self.getLeaves(root.right, leaves)
     
     ___ getRight(self, root
-        result = []
+        result =   # list
         root = root.right
         w___ root:
             __ root.left or root.right:
@@ -62,10 +62,10 @@ class Solution(object
         testCases = [
             TreeNode(1, None, TreeNode(2, TreeNode(3), TreeNode(4))),
         ]
-        ___ root in testCases:
+        ___ root __ testCases:
             res = self.boundaryOfBinaryTree(root)
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

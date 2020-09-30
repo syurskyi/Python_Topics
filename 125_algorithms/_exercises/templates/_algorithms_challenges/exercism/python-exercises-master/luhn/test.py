@@ -57,5 +57,5 @@ class LuhnTests(unittest.TestCase
         self.assertTrue(number.is_valid())
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

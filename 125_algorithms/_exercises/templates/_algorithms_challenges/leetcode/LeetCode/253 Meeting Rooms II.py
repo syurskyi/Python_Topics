@@ -25,12 +25,12 @@ class Solution(object
         maxa = 0
 
         intervals.sort(key=operator.attrgetter("start"))
-        h_end = []
-        ___ itvl in intervals:
+        h_end =   # list
+        ___ itvl __ intervals:
             heapq.heappush(h_end, itvl.end)
             w___ h_end and h_end[0] <= itvl.start:
                 heapq.heappop(h_end)
 
-            maxa = max(maxa, le.(h_end))
+            maxa = ma.(maxa, le.(h_end))
 
         r_ maxa

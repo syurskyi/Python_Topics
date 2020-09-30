@@ -1,10 +1,10 @@
 class Robot:
 
-    def __init__(self):
+    ___ __init__(self):
         pass
 
-    def speak(self, query):
+    ___ speak(self, query):
         if query == 'hi robot':
-            return 'hi human'
+            r_ 'hi human'
         else:
-            return "I don't know"
+            r_ "I don't know"

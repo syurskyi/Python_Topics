@@ -17,16 +17,16 @@ class Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {ListNode[]} a lists of linked list
     ___ binaryTreeToLists(self, root
-        ans = []
+        ans =   # list
         __ not root:
             r_ ans
 
         queue = [root]
         w___ queue:
-            _queue = []
+            _queue =   # list
             dummy = tail = ListNode(-1)
 
-            ___ node in queue:
+            ___ node __ queue:
                 tail.next = ListNode(node.val)
                 tail = tail.next
 

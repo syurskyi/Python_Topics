@@ -7,11 +7,11 @@ ___ count_down(data_type
     try:
         __ le.(data_type) != 4:
             raise ValueError
-        ___ i in data_type:
+        ___ i __ data_type:
             d += f'{i}'
     except TypeError:
         raise ValueError
-    ___ i in range(4, 0, -1
+    ___ i __ range(4, 0, -1
         print(d[:i])
 
 

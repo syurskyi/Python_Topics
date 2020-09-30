@@ -17,10 +17,10 @@ class Solution:
         :return: NIL
         """
         # break board
-        ___ row in xrange(le.(board)):
+        ___ row __ xrange(le.(board)):
             board[row] = list(board[row])
         self.solve(board, 0, 0)
-        ___ row in xrange(le.(board)):
+        ___ row __ xrange(le.(board)):
             board[row] = "".join(board[row])
 
     ___ solve_TLE(self, board
@@ -30,20 +30,20 @@ class Solution:
         :return: Boolean
         """
         n = le.(board)
-        __ all([board[i/n][i%n]!="." ___ i in xrange(n*n)]
+        __ al.([board[i/n][i%n]!="." ___ i __ xrange(n*n)]
             r_ True
 
-        ___ i in xrange(n
-            ___ j in xrange(n
+        ___ i __ xrange(n
+            ___ j __ xrange(n
                 __ board[i][j]__".":
-                    ___ num in range(1, 10
+                    ___ num __ range(1, 10
                         num_str = str(num)
                         # row
-                        condition_row = all([board[i][col]!=num_str ___ col in xrange(n)])
+                        condition_row = al.([board[i][col]!=num_str ___ col __ xrange(n)])
                         # col
-                        condition_col = all([board[row][j]!=num_str ___ row in xrange(n)])
+                        condition_col = al.([board[row][j]!=num_str ___ row __ xrange(n)])
                         # square
-                        condition_square = all([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count in xrange(n)])
+                        condition_square = al.([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(n)])
 
                         __ condition_col and condition_row and condition_square:
                             board[i][j] = num_str
@@ -66,13 +66,13 @@ class Solution:
             r_ True
 
         __ board[i][j]__".":
-            ___ num in range(1, 10
+            ___ num __ range(1, 10
                 num_str = str(num)  # try number
                 # To speed up, use condition short-curcit.
                 # row, col, square
-                __ all([board[i][col]!=num_str ___ col in xrange(9)]) and \
-                        all([board[row][j]!=num_str ___ row in xrange(9)]) and \
-                        all([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count in xrange(9)]
+                __ al.([board[i][col]!=num_str ___ col __ xrange(9)]) and \
+                        al.([board[row][j]!=num_str ___ row __ xrange(9)]) and \
+                        al.([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(9)]
                     board[i][j] = num_str
                     __ not self.solve(board, i, j+1
                         board[i][j] = "."  # restore, backtrack, save space

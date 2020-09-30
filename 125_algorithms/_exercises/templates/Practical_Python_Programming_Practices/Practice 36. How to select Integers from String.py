@@ -1,7 +1,7 @@
 str = input("Insert strings with integer values: ")
 lenstr = len(str)
 
-mynum = []
+mynum =   # list
 
 x = 0
 while x < lenstr:

@@ -9,7 +9,7 @@ ___ count_array(n, k, x
     ____
         dp = [[1], [1]]
 
-    ___ x in range(n - 2
+    ___ x __ range(n - 2
         dp[0].append(dp[0][-1] * (k - 1) % (10 ** 9 + 7))
         dp[1].append((dp[0][-1] - dp[1][-1]) % (10 ** 9 + 7))
     r_ dp[1][-1]

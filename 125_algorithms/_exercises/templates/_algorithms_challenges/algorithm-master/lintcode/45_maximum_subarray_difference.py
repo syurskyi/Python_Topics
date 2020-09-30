@@ -8,15 +8,15 @@ class Solution:
             r_ 0
 
         n = le.(A)
-        B = [-1 * num ___ num in A]
+        B = [-1 * num ___ num __ A]
         Lmin = self.get_sum(B, range(n), factor=-1)
         Lmax = self.get_sum(A, range(n), factor=1)
         Rmin = self.get_sum(B, range(n - 1, -1, -1), factor=-1)
         Rmax = self.get_sum(A, range(n - 1, -1, -1), factor=1)
 
         ans = float('-inf')
-        ___ i in range(n - 1
-            ans = max(
+        ___ i __ range(n - 1
+            ans = ma.(
                 ans,
                 Lmax[i] - Rmin[i + 1],
                 Rmax[i + 1] - Lmin[i]
@@ -34,7 +34,7 @@ class Solution:
         Smax = float('-inf')
         S = Smin = 0
 
-        ___ i in scope:
+        ___ i __ scope:
             S += A[i]
             __ S - Smin > Smax:
                 Smax = S - Smin

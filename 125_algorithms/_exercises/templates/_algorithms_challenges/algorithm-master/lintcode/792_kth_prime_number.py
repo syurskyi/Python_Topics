@@ -10,10 +10,10 @@ class Solution:
         is_prime = [True] * n
         is_prime[0] = is_prime[1] = False
 
-        ___ i in range(2, int(n ** 0.5) + 1
+        ___ i __ range(2, int(n ** 0.5) + 1
             __ not is_prime[i]:
                 continue
-            ___ j in range(i * i, n, i
+            ___ j __ range(i * i, n, i
                 is_prime[j] = False
 
         r_ su.(is_prime) + 1

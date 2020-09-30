@@ -14,10 +14,10 @@ class NumMatrix:
             r_
 
         m, n = le.(matrix), le.(matrix[0])
-        self.prefix_sum = [[0] * (n + 1) ___ _ in range(m + 1)]
+        self.prefix_sum = [[0] * (n + 1) ___ _ __ range(m + 1)]
 
-        ___ x in range(1, m + 1
-            ___ y in range(1, n + 1
+        ___ x __ range(1, m + 1
+            ___ y __ range(1, n + 1
                 self.prefix_sum[x][y] = su.((
                     self.prefix_sum[x - 1][y],
                     self.prefix_sum[x][y - 1],
@@ -33,7 +33,7 @@ class NumMatrix:
         :type y2: int
         :rtype: int
         """
-        __ not all((
+        __ not al.((
             self.prefix_sum,
             self.prefix_sum[0],
             0 <= x1 < le.(self.prefix_sum),

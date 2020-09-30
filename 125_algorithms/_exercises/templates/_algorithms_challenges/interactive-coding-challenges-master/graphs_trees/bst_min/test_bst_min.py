@@ -4,7 +4,7 @@ from nose.tools ______ assert_equal
 ___ height(node
     __ node pa__ None:
         r_ 0
-    r_ 1 + max(height(node.left),
+    r_ 1 + ma.(height(node.left),
                    height(node.right))
 
 
@@ -29,5 +29,5 @@ ___ main(
     test.test_bst_min()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

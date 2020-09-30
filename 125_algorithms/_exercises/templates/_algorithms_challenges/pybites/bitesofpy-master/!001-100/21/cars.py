@@ -15,17 +15,17 @@ ___ get_all_jeeps(cars=cars
 
 ___ get_first_model_each_manufacturer(cars=cars
     """return a list of matching models (original ordering)"""
-    r_ [x[1][0] ___ x in cars.items()]
+    r_ [x[1][0] ___ x __ cars.items()]
 
 
 ___ get_all_matching_models(cars=cars, grep='trail'
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    r_ sorted([x ___ y in cars.items() ___ x in y[1] __ grep.lower() in x.lower()])
+    r_ sorted([x ___ y __ cars.items() ___ x __ y[1] __ grep.lower() __ x.lower()])
 
 
 ___ sort_car_models(cars=cars
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
-    r_ dict(sorted([(x[0], sorted(x[1])) ___ x in cars.items()]))
+    r_ dict(sorted([(x[0], sorted(x[1])) ___ x __ cars.items()]))

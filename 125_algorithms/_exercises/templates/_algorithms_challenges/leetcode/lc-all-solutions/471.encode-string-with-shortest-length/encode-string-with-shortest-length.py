@@ -6,13 +6,13 @@ class Solution(object
     """
     __ le.(s) < 5:
       r_ s
-    ____ s in dp:
+    ____ s __ dp:
       r_ dp[s]
     dp[s] = s
     idx = (2 * s).find(s, 1)
     __ 0 <= idx < le.(s
       dp[s] = str(le.(s) / idx) + "[" + self.encode(s[:idx], dp) + "]"
-    ___ i in range(1, le.(s)):
+    ___ i __ range(1, le.(s)):
       left = self.encode(s[:i], dp)
       right = self.encode(s[i:], dp)
       __ le.(left) + le.(right) < le.(dp[s]

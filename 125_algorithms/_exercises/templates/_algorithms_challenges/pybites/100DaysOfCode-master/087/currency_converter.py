@@ -19,7 +19,7 @@ ___ api_request(data
     api_url = ("https://openexchangerates.org/api/convert/{}/{}/{}?app_id=".format(data[0], data[1], data[2]) + API_KEY)
     r_ requests.get(api_url).json()
     
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     conversion_data = user_input()
     json_data = api_request(conversion_data)
     print("\nResult = ${}".format(json_data['response']))

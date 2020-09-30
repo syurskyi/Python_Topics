@@ -13,16 +13,16 @@ class TreeNode(object
 
 class Solution(object
     ___ verticalOrder(self, root
-        __ not root: r_ []
+        __ not root: r_   # list
         hashmap = {}
-        result = []
+        result =   # list
         queue = [(0, root)]
         minLevel, maxLevel = 0, 0
         w___ queue:
             level, node = queue.pop(0)
-            maxLevel = max(maxLevel, level)
+            maxLevel = ma.(maxLevel, level)
             minLevel = min(minLevel, level)
-            __ level not in hashmap:
+            __ level not __ hashmap:
                 hashmap[level] = [node.val]
             ____
                 hashmap[level].append(node.val)
@@ -30,7 +30,7 @@ class Solution(object
                 queue.append((level-1, node.left))
             __ node.right:
                 queue.append((level+1, node.right))
-        ___ i in range(minLevel, maxLevel+1
+        ___ i __ range(minLevel, maxLevel+1
             result.append(hashmap[i])
         r_ result
     

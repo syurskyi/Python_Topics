@@ -21,7 +21,7 @@ class BSTIterator:
         :type root: TreeNode
         """
         self.cur = root
-        self.stk = []
+        self.stk =   # list
 
     ___ hasNext(self
         """

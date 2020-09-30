@@ -12,11 +12,11 @@ class NthPrimeTests(unittest.TestCase
     ___ test_first_twenty_primes(self
         self.assertEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
                           37, 41, 43, 47, 53, 59, 61, 67, 71],
-                         [nth_prime(n) ___ n in range(1, 21)])
+                         [nth_prime(n) ___ n __ range(1, 21)])
 
     ___ test_prime_no_10000(self
         self.assertEqual(104729, nth_prime(10000))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

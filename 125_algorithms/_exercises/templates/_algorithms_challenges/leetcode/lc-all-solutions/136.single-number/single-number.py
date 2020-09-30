@@ -4,6 +4,6 @@ class Solution(object
     :type nums: List[int]
     :rtype: int
     """
-    ___ i in range(1, le.(nums)):
+    ___ i __ range(1, le.(nums)):
       nums[0] ^= nums[i]
     r_ nums[0]

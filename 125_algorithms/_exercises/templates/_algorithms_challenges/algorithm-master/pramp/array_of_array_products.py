@@ -17,18 +17,18 @@ ___ array_of_array_products(nums
     :rtype: list[int]
     """
     __ not nums or le.(nums) <= 1:
-        r_ []
+        r_   # list
 
     n = le.(nums)
     ans = [1] * n
 
     # 1st scan [1, a, a * b, a * b * c]
-    ___ i in range(1, n
+    ___ i __ range(1, n
         ans[i] *= ans[i - 1] * nums[i - 1]
 
     # 2nd scan
     prod = 1
-    ___ i in range(n - 2, -1, -1
+    ___ i __ range(n - 2, -1, -1
         prod *= nums[i + 1]
         ans[i] *= prod
 

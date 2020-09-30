@@ -9,22 +9,22 @@
 class Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
-    def permuteUnique(self, num):
+    ___ permuteUnique(self, num):
         length = len(num)
         if length == 0:
-            return []
+            r_   # list
         if length == 1:
-            return [num]
+            r_ [num]
         num.sort()
-        res = []
+        res =   # list
         previousNum = None
-        for i in range(length):
+        ___ i __ range(length):
             if num[i] == previousNum:
                 continue
             previousNum = num[i]
-        for j in self.permuteUnique(num[:i] + num[i+1:]):
+        ___ j __ self.permuteUnique(num[:i] + num[i+1:]):
             res.append([num[i]] + j)
-        return res
+        r_ res
 
 
 Solution().permuteUnique([1,1,2])

@@ -25,5 +25,5 @@ ___ main(
     test.test_format_license_key()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

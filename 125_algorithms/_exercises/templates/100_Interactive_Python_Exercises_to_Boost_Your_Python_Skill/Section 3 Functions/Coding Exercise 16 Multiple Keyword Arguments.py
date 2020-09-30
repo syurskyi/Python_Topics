@@ -1,2 +1,2 @@
-def foo(**kwargs):
-    return kwargs
+# ___ foo $$
+#     r_ k..

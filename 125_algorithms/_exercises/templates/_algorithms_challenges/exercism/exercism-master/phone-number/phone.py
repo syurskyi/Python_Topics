@@ -38,4 +38,4 @@ class Phone:
 
     @staticmethod
     ___ strip(inp
-        r_ ''.join(char ___ char in inp __ char.isdigit())
+        r_ ''.join(char ___ char __ inp __ char.isdigit())

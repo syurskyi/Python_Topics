@@ -13,7 +13,7 @@ class Solution:
     @return: Inorder in ArrayList which contains node values.
     """
     ___ inorderTraversal(self, root
-        ans = []
+        ans =   # list
         __ not root:
             r_ ans
         self._traversal(root, ans)

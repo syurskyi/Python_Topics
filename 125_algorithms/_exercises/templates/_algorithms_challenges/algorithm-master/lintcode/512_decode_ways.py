@@ -19,7 +19,7 @@ class Solution:
         dp[0] = 1
         dp[1] = 0 __ s[0] __ '0' else 1
 
-        ___ i in range(2, n + 1
+        ___ i __ range(2, n + 1
             __ s[i - 1] != '0':
                 dp[i] += dp[i - 1]
 

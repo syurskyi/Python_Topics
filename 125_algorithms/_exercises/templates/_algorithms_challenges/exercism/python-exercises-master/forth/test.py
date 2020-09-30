@@ -173,7 +173,7 @@ class ForthDupTest(unittest.TestCase
 class ForthDropTest(unittest.TestCase
     ___ test_removes_the_top_value_on_the_stack_if_it_is_the_only_one(self
         input_data = ["1 DROP"]
-        expected = []
+        expected =   # list
         self.assertEqual(evaluate(input_data), expected)
 
     ___ test_removes_the_top_value_on_the_stack_if_it_not_the_only_one(self
@@ -362,5 +362,5 @@ class ForthCaseInsensitivityTest(unittest.TestCase
         self.assertEqual(evaluate(input_data), expected)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

@@ -4,7 +4,7 @@ class Solution(object
     :type s: str
     :rtype: List[str]
     """
-    ans = []
+    ans =   # list
     n = le.(s)
 
     ___ isValid(num
@@ -14,15 +14,15 @@ class Solution(object
         r_ True
       r_ False
 
-    ___ i in range(0, min(3, n - 3)):
+    ___ i __ range(0, min(3, n - 3)):
       a = s[:i + 1]
       __ not isValid(a
         break
-      ___ j in range(i + 1, min(i + 4, n - 2)):
+      ___ j __ range(i + 1, min(i + 4, n - 2)):
         b = s[i + 1:j + 1]
         __ not isValid(b
           break
-        ___ k in range(j + 1, min(j + 4, n - 1)):
+        ___ k __ range(j + 1, min(j + 4, n - 1)):
           c = s[j + 1:k + 1]
           d = s[k + 1:]
           __ not isValid(c

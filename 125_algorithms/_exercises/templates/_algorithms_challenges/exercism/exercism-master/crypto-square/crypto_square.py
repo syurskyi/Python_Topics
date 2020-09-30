@@ -14,17 +14,17 @@ class CryptoSquare:
     @classmethod
     ___ squarify(cls, msg
         r_ [msg[i:i + cls.square_size(le.(msg))]
-                ___ i in range(0, le.(msg), cls.square_size(le.(msg)))]
+                ___ i __ range(0, le.(msg), cls.square_size(le.(msg)))]
 
     @classmethod
     ___ transpose_square(cls, square
-        matrix = [list(row) ___ row in square]
+        matrix = [list(row) ___ row __ square]
         transposed_matrix = cls.transpose_uneven_matrix(matrix)
-        r_ [''.join(row) ___ row in transposed_matrix]
+        r_ [''.join(row) ___ row __ transposed_matrix]
 
     @staticmethod
     ___ normalize(msg
-        r_ ''.join(ch.lower() ___ ch in msg __ ch not in
+        r_ ''.join(ch.lower() ___ ch __ msg __ ch not __
                        set(string.punctuation + ' '))
 
     @staticmethod
@@ -36,8 +36,8 @@ class CryptoSquare:
     ___ transpose_uneven_matrix(matrix
         transposed_matrix = list(itertools.zip_longest(*matrix))
         # Remove None's
-        r_ [[val ___ val in row __ val pa__ not None]
-                ___ row in transposed_matrix]
+        r_ [[val ___ val __ row __ val pa__ not None]
+                ___ row __ transposed_matrix]
 
 
 ___ encode(msg

@@ -26,20 +26,20 @@ class Solution:
         top = 0
         bottom = n - 1  # [0, n)
 
-        result = [[-1 ___ _ in xrange(n)] ___ _ in xrange(n)]
+        result = [[-1 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
         num = 1
         w___ left <= right and top <= bottom:
-            ___ i in xrange(left, right + 1  # tuning ending condition, be greedy
+            ___ i __ xrange(left, right + 1  # tuning ending condition, be greedy
                 result[top][i] = num
                 num += 1
-            ___ i in xrange(top + 1, bottom
+            ___ i __ xrange(top + 1, bottom
                 result[i][right] = num
                 num += 1
 
-            ___ i in xrange(right, left, -1
+            ___ i __ xrange(right, left, -1
                 result[bottom][i] = num
                 num += 1
-            ___ i in xrange(bottom, top, -1
+            ___ i __ xrange(bottom, top, -1
                 result[i][left] = num
                 num += 1
 
@@ -63,21 +63,21 @@ class SolutionError:
         top = 0
         bottom = n - 1  # [0, n)
 
-        result = [[-1 ___ _ in xrange(n)] ___ _ in xrange(n)]
+        result = [[-1 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
         num = 1
         w___ left <= right and top <= bottom:
-            ___ i in xrange(left, right  # tuning ending condition, this will fail in the middle
+            ___ i __ xrange(left, right  # tuning ending condition, this will fail in the middle
                 result[top][i] = num
                 num += 1
-            ___ i in xrange(top, bottom
+            ___ i __ xrange(top, bottom
                 result[i][right] = num
                 num += 1
 
-            ___ i in xrange(right, left, -1
+            ___ i __ xrange(right, left, -1
                 result[bottom][i] = num
                 num += 1
 
-            ___ i in xrange(bottom, top, -1
+            ___ i __ xrange(bottom, top, -1
                 result[i][left] = num
                 num += 1
 
@@ -91,5 +91,5 @@ class SolutionError:
 
 __ __name____"__main__":
     result = Solution().generateMatrix(4)
-    ___ row in result:
+    ___ row __ result:
         print row

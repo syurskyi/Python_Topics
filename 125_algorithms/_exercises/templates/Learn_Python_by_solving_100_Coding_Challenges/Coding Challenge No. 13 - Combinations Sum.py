@@ -11,18 +11,18 @@
 # Solutions:
 
 class Solution:
-    def combinationSum(self, candidates, target):
+    ___ combinationSum(self, candidates, target):
         candidates.sort()
-        res=[]
-        self.DFS(candidates,target,0,res,[])
-        return res
+        res=  # list
+        self.DFS(candidates,target,0,res,  # list)
+        r_ res
 
-    def DFS(self,candidates,target,start,res,intermedia):
+    ___ DFS(self,candidates,target,start,res,intermedia):
         if target==0:
             res.append(intermedia)
-            return
-        for i in range(start,len(candidates)):
+            r_
+        ___ i __ range(start,len(candidates)):
             if target<candidates[i]:
-                return
+                r_
             self.DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])
         print(Solution().combinationSum([2,3,6,7],7) )

@@ -5,7 +5,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -14,16 +14,16 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return an integer
-    def minDepth(self, root):
+    ___ minDepth(self, root):
         if root == None:
-            return 0
+            r_ 0
         if root.left == None:
-            return self.minDepth(root.right) + 1
+            r_ self.minDepth(root.right) + 1
         if root.right == None:
-            return self.minDepth(root.left) + 1
-        return min(self.minDepth(root.left),self.minDepth(root.right))+1
+            r_ self.minDepth(root.left) + 1
+        r_ min(self.minDepth(root.left),self.minDepth(root.right))+1
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left, BT.left = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
     print ( Solution().minDepth(BT) )

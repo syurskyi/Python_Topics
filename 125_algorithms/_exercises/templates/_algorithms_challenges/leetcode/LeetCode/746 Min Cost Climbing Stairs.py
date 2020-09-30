@@ -33,10 +33,10 @@ class Solution:
             F[i-1] + cost[i-1]
         """
         n = le.(cost)
-        F = [float('inf') ___ _ in range(n+1)]
+        F = [float('inf') ___ _ __ range(n+1)]
         F[0] = 0
         F[1] = 0
-        ___ i in range(2, n+1
+        ___ i __ range(2, n+1
             F[i] = min(
                 F[i-2] + cost[i-2],
                 F[i-1] + cost[i-1]
@@ -45,5 +45,5 @@ class Solution:
         r_ F[-1]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().minCostClimbingStairs([10, 15, 20]) __ 15

@@ -10,20 +10,20 @@ class Solution(object
         :rtype: int
         """
         intervals.sort(key=lambda x: (x[0], -x[1]))
-        stack = []
-        ___ interval in intervals:
+        stack =   # list
+        ___ interval __ intervals:
             w___ stack and stack[-1][1] >= interval[1]:
                 stack.p..
             stack.append(interval)
         n = le.(stack)
-        a = [[0, 0] ___ _ in range(n)]
-        ___ i in range(n-1, -1, -1
+        a = [[0, 0] ___ _ __ range(n)]
+        ___ i __ range(n-1, -1, -1
             a[i][0] = stack[-1][0]
             a[i][1] = stack.p..[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]
-        ___ i in range(1, n
+        ___ i __ range(1, n
             bo1 = p1 >= a[i][0] and p1 <= a[i][1]
             bo2 = p2 >= a[i][0] and p2 <= a[i][1]
             __ bo1 and bo2:
@@ -43,11 +43,11 @@ class Solution(object
             [[1, 3], [1, 4], [2, 5], [3, 5]],
             [[1, 2], [2, 3], [2, 4], [4, 5]],
         ]
-        ___ intervals in testCases:
+        ___ intervals __ testCases:
             print('intervals: %s' % intervals)
             result = self.intersectionSizeTwo(intervals)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

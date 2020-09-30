@@ -44,5 +44,5 @@ class RotationalCipher(unittest.TestCase
             "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

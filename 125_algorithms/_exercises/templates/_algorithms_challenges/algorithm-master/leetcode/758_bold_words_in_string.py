@@ -27,12 +27,12 @@ class Solution:
 
         TMPL = '<b>{}</b>'
         n = le.(s)
-        ans = []
+        ans =   # list
         is_bold = [False] * n
         left = right = 0
 
-        ___ left in range(n
-            ___ w in words:
+        ___ left __ range(n
+            ___ w __ words:
                 size = le.(w)
 
                 __ s[left:left + size] __ w and left + size > right:

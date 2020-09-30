@@ -5,11 +5,11 @@ infile.close()
 
 guess = guess.strip().split(" ")
 
-___ number in guess:
+___ number __ guess:
     c1 = 0 # condition 1
     c2 = 0 # condition 2
-    ___ digit in number:
-        __ digit in value:
+    ___ digit __ number:
+        __ digit __ value:
             __ number.index(digit) __ value.index(digit
                 c1 +=1
             ____

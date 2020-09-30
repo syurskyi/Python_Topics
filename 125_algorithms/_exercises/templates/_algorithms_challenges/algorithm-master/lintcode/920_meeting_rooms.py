@@ -18,9 +18,9 @@ class Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        timeline = []
+        timeline =   # list
 
-        ___ interval in intervals:
+        ___ interval __ intervals:
             timeline.append((interval.start, True))
             timeline.append((interval.end, False))
 
@@ -28,7 +28,7 @@ class Solution:
 
         cnt = 0
 
-        ___ time, is_start in timeline:
+        ___ time, is_start __ timeline:
             __ is_start:
                 cnt += 1
             ____
@@ -53,7 +53,7 @@ class Solution:
         """
         intervals.sort(key=lambda x: (x.start, x.end))
 
-        ___ i in range(1, le.(intervals)):
+        ___ i __ range(1, le.(intervals)):
             __ intervals[i].start < intervals[i - 1].end:
                 r_ False
 

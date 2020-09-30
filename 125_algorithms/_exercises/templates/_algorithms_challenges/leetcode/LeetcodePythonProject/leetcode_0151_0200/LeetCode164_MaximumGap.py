@@ -13,36 +13,36 @@ class Solution(object
         __ not nums or le.(nums) < 2:
             r_ 0
         minVal = min(nums)
-        maxVal = max(nums)
+        maxVal = ma.(nums)
         n = le.(nums)
         gap = ma__.ceil(float(maxVal-minVal)/(n-1))
         bucketsMin = [float('inf')]*(n-1)
         bucketsMax = [float('-inf')]*(n-1)
-        ___ num in nums:
+        ___ num __ nums:
             __ num __ minVal or num __ maxVal:
                 continue
             idx = int((num-minVal)//gap)
             bucketsMin[idx] = min(bucketsMin[idx], num)
-            bucketsMax[idx] = max(bucketsMax[idx], num)
+            bucketsMax[idx] = ma.(bucketsMax[idx], num)
         maxGap = float('-inf')
         prev = minVal
-        ___ i in range(n-1
+        ___ i __ range(n-1
             __ bucketsMin[i] __ float('inf') and bucketsMax[i] __ float('-inf'
                 continue
-            maxGap = max(maxGap, bucketsMin[i]-prev)
+            maxGap = ma.(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]
-        maxGap = max(maxGap, maxVal-prev)
+        maxGap = ma.(maxGap, maxVal-prev)
         r_ maxGap
     
     ___ test(self
         testCases = [
             [1, 1000],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.maximumGap(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

@@ -21,5 +21,5 @@ class DNATests(unittest.TestCase
         self.assertMultiLineEqual('UGCACCAGAAUU', to_rna('ACGTGGTCTTAA'))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

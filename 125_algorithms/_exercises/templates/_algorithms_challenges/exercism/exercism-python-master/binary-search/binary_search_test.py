@@ -42,7 +42,7 @@ class BinarySearchTests(unittest.TestCase
 
     ___ test_empty_array(self
         with self.assertRaisesWithMessage(ValueError
-            binary_search([], 1)
+            binary_search(  # list, 1)
 
     # Utility functions
     ___ setUp(self
@@ -55,5 +55,5 @@ class BinarySearchTests(unittest.TestCase
         r_ self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

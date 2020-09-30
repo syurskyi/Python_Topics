@@ -13,7 +13,7 @@
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
@@ -23,24 +23,24 @@ class Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    def hasPathSum(self, root, sum):
+    ___ hasPathSum(self, root, sum):
         if root == None:
             # Empty tree will always result in False
-            return False
+            r_ False
         elif root.left == None and root.right == None:
             # Reach the leaf.
-            return root.val == sum
+            r_ root.val == sum
         elif root.left == None:
             # Only has right child.
-            return self.hasPathSum(root.right, sum-root.val)
+            r_ self.hasPathSum(root.right, sum-root.val)
         elif root.right == None:
             # Only has left child.
-            return self.hasPathSum(root.left, sum-root.val)
+            r_ self.hasPathSum(root.left, sum-root.val)
         else:
             # Has two children.
-            return self.hasPathSum(root.left, sum-root.val) or self.hasPathSum(root.right, sum-root.val)
+            r_ self.hasPathSum(root.left, sum-root.val) or self.hasPathSum(root.right, sum-root.val)
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     BT, BT.right, BT.right.left, BT.left = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
     print ( Solution().hasPathSum(BT, 6) )

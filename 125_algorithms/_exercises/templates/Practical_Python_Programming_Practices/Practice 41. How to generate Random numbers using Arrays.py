@@ -1,10 +1,10 @@
 from random import randint
 
 x = 20
-array = []
+array =   # list
 
-for i in range(x):
+___ i __ range(x):
     array.append(randint(1,10))
-for i in array:
+___ i __ array:
     print(i,end=' ')
 print()

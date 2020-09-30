@@ -8,11 +8,11 @@ ___ fence_pattern(rails, size
 
 ___ encode(msg, rails
     fence = fence_pattern(rails, le.(msg))
-    r_ ''.join(msg[i] ___ _, i in sorted(fence))
+    r_ ''.join(msg[i] ___ _, i __ sorted(fence))
 
 
 ___ decode(msg, rails
     fence = fence_pattern(rails, le.(msg))
     fence_msg = zip(msg, sorted(fence))
     r_ ''.join(
-        char ___ char, _ in sorted(fence_msg, key=lambda item: item[1][1]))
+        char ___ char, _ __ sorted(fence_msg, key=lambda item: item[1][1]))

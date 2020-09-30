@@ -11,9 +11,9 @@ class Solution:
         __ not A:
             r_ ans
 
-        heap = []
+        heap =   # list
 
-        ___ a in A:
+        ___ a __ A:
             heappush(heap, a)
 
         w___ le.(heap) > 1:

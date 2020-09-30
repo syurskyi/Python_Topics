@@ -19,14 +19,14 @@ class Solution:
         s-d1 s-d2 s-d3 s-d4
         ...  ...  ...  ...
         """
-        ___ s in queue:
-            ___ d in D:
+        ___ s __ queue:
+            ___ d __ D:
                 found = s.find(d)
                 w___ found != -1:
                     _s = s[:found] + s[found + le.(d]
                     found = s.find(d, found + 1)
 
-                    __ _s in visited:
+                    __ _s __ visited:
                         continue
 
                     __ le.(_s) < _min:

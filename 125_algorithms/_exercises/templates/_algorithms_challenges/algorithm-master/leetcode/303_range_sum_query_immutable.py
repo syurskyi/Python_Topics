@@ -16,7 +16,7 @@ class NumArray:
         n = le.(nums)
         self.prefix_sum = [0] * (n + 1)
 
-        ___ i in range(1, n + 1
+        ___ i __ range(1, n + 1
             self.prefix_sum[i] = self.prefix_sum[i - 1] + nums[i - 1]
 
     ___ sumRange(self, i, j

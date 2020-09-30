@@ -42,5 +42,5 @@ class PangramTests(unittest.TestCase
             is_pangram('the quick brown fox jumped over the lazy FOX'))
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

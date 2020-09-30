@@ -13,10 +13,10 @@ class Solution(object
         __ k <= 0: r_ 0
         sumVal = 0
         maxVal = float('-inf')
-        ___ i, num in enumerate(nums
+        ___ i, num __ enumerate(nums
             sumVal += num
             __ i >= k-1:
-                maxVal = max(maxVal, sumVal)
+                maxVal = ma.(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
         r_ float(maxVal)/k
     
@@ -31,12 +31,12 @@ class Solution(object
                 3,
             ],
         ]
-        ___ nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.findMaxAverage(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

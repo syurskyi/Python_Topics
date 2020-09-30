@@ -14,7 +14,7 @@ org = [1,2,3,4,5,6,7]
 result = org[:]
 steps = 3
 
-for idx,num in enumerate(org):
+___ idx,num __ enumerate(org):
     if idx+steps < len(org):
         result[idx+steps] = org[idx]
     else:

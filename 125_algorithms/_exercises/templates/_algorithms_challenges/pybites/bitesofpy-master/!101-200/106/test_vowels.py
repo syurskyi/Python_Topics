@@ -6,10 +6,10 @@ ___ test_strip_vowels_on_zen(
 
     assert number_replacements __ 262
 
-    assert 'Th* Z*n *f Pyth*n, by T*m P*t*rs' in output
-    assert 'B***t*f*l *s b*tt*r th*n *gly' in output
-    assert 'N*m*sp*c*s *r* *n* h*nk*ng gr**t *d**' in output
-    assert '*lth**gh pr*ct*c*l*ty b**ts p*r*ty.' in output
+    assert 'Th* Z*n *f Pyth*n, by T*m P*t*rs' __ output
+    assert 'B***t*f*l *s b*tt*r th*n *gly' __ output
+    assert 'N*m*sp*c*s *r* *n* h*nk*ng gr**t *d**' __ output
+    assert '*lth**gh pr*ct*c*l*ty b**ts p*r*ty.' __ output
 
 
 ___ test_strip_vowels_on_other_text(
@@ -24,7 +24,7 @@ ___ test_strip_vowels_on_other_text(
 
     assert number_replacements __ 46
 
-    assert 'H*ll* w*rld!' in output
-    assert 'H*v* f*n w*th **r B*t*s *f Py' in output
-    assert 'B*c*m* * PyB*t*s n*nj*!' in output
-    assert '*ll th* w*y' in output
+    assert 'H*ll* w*rld!' __ output
+    assert 'H*v* f*n w*th **r B*t*s *f Py' __ output
+    assert 'B*c*m* * PyB*t*s n*nj*!' __ output
+    assert '*ll th* w*y' __ output

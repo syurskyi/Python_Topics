@@ -13,7 +13,7 @@ class TreeNode:
 
 class Solution:
     ___ __init__(self
-        self.sums = []
+        self.sums =   # list
 
     ___ checkEqualTree(self, root: TreeNode) -> bool:
         """
@@ -22,7 +22,7 @@ class Solution:
         """
         self.dfs(root)
         total = self.sums.p..
-        r_ total % 2 __ 0 and total // 2 in self.sums
+        r_ total % 2 __ 0 and total // 2 __ self.sums
 
     ___ dfs(self, node
         __ not node:

@@ -54,11 +54,11 @@ class Solution:
         of the path, so we are only considering two paths from the beginning to
         the end.
         """
-        r_ max(0, self.F(grid, 0, 0, 0))
+        r_ ma.(0, self.F(grid, 0, 0, 0))
 
     ___ F(self, grid, r1, c1, r2
         n = le.(grid)
-        __ (r1, c1, r2) not in self.cache:
+        __ (r1, c1, r2) not __ self.cache:
             ret = float("-inf")
             c2 = r1 + c1 - r2   # r1 + c1 == r2 + c2
             __ 0 <= r1 < n and 0 <= c1 < n and 0 <= r2 < n and 0 <= c2 < n:
@@ -71,7 +71,7 @@ class Solution:
                     __ r1 __ n - 1 and c1 __ n - 1:
                         pass  # seed, otherwise -inf 
                     ____
-                        ret += max(
+                        ret += ma.(
                             self.F(grid, r1+1, c1, r2+1),   # down, down
                             self.F(grid, r1+1, c1, r2),  # down, right
                             self.F(grid, r1, c1+1, r2+1),  # right, down
@@ -83,7 +83,7 @@ class Solution:
         r_ self.cache[r1, c1, r2]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().cherryPickup(
         [[0, 1, -1],
          [1, 0, -1],

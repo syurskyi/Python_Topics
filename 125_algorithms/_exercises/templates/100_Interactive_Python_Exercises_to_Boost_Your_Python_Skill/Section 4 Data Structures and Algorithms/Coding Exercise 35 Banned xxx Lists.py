@@ -1,2 +1,2 @@
-def foo(mylist):
-    return [string for string in mylist if isinstance(string, str) and "xxx" in string ]
+___ foo(mylist):
+    r_ [string ___ string __ mylist if isinstance(string, str) and "xxx" __ string ]

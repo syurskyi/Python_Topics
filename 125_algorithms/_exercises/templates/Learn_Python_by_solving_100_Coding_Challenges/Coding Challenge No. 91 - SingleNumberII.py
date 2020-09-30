@@ -7,22 +7,22 @@
 class Solution:
     # @param A, a list of integer
     # @return an integer
-    def singleNumber(self, A):
-        bit = [0 for i in range(32)]
-        for number in A:
-            for i in range(32):
+    ___ singleNumber(self, A):
+        bit = [0 ___ i __ range(32)]
+        ___ number __ A:
+            ___ i __ range(32):
                 if (1 << i) & number == 1 << i:
                     bit[i] += 1
         res = 0
         if bit[31] % 3 == 0:
-            for i in range(31):
+            ___ i __ range(31):
                 if bit[i] % 3 == 1:
                     res += 1 << i
         else:
-            for i in range(31):
+            ___ i __ range(31):
                 if bit[i] % 3 == 0: res += 1 << i
             res = -(res + 1)
-        return res
+        r_ res
 
 
 Solution().singleNumber([1, 2, 1, 2, 1, 2, 0, 0])

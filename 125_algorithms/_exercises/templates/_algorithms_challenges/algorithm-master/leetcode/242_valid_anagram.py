@@ -12,13 +12,13 @@ class Solution:
 
         freq = {}
 
-        ___ c in s:
+        ___ c __ s:
             freq[c] = freq.get(c, 0) + 1
 
-        ___ c in t:
-            __ c not in freq:
+        ___ c __ t:
+            __ c not __ freq:
                 r_ False
 
             freq[c] -= 1
 
-        r_ all(v __ 0 ___ v in freq.values())
+        r_ al.(v __ 0 ___ v __ freq.values())

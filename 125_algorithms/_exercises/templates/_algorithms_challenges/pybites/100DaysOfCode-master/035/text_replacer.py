@@ -19,7 +19,7 @@ ___ replace_text(old_text
 	new_text = old_text.replace(target, replacement)
 	r_ new_text
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
 	old_text = paste_from_clipboard()
 	new_text = replace_text(old_text)
 	copy_to_clipboard(new_text)

@@ -10,8 +10,8 @@ class Solution:
         __ not A:
             r_ [[]]
 
-        ans = []
-        self.dfs(sorted(A), 0, ans, [])
+        ans =   # list
+        self.dfs(sorted(A), 0, ans,   # list)
         r_ ans
 
     ___ dfs(self, A, start, ans, subset
@@ -20,7 +20,7 @@ class Solution:
         __ start >= le.(A
             r_
 
-        ___ i in range(start, le.(A)):
+        ___ i __ range(start, le.(A)):
             __ i - 1 >= start and A[i] __ A[i - 1]:
                 continue
 

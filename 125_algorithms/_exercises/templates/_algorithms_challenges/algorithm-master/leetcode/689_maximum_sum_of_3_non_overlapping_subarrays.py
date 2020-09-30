@@ -19,12 +19,12 @@ class Solution:
         L = [0] * n  # the starting index of the maximum interval sum with length k in [0, i]
         R = [n - k] * n  # the starting index of the maximum interval sum with length k in [i, n - 1]
 
-        ___ i in range(1, n + 1
+        ___ i __ range(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
         max_sum = S[k] - S[0]  # maximum interval sum
         _sum = 0
-        ___ i in range(k, n
+        ___ i __ range(k, n
             L[i] = L[i - 1]
             _sum = S[i + 1] - S[i + 1 - k]
             __ _sum > max_sum:
@@ -33,7 +33,7 @@ class Solution:
 
         max_sum = S[n] - S[n - k]
         _sum = 0
-        ___ i in range(n - k - 1, -1, -1
+        ___ i __ range(n - k - 1, -1, -1
             R[i] = R[i + 1]
             _sum = S[i + k] - S[i]
             __ _sum >= max_sum:
@@ -41,7 +41,7 @@ class Solution:
                 max_sum = _sum
 
         max_sum = _sum = 0
-        ___ i in range(k, n - 2 * k + 1
+        ___ i __ range(k, n - 2 * k + 1
             left = L[i - 1]
             right = R[i + k]
             _sum = S[i + k] - S[i] + S[left + k] - S[left] + S[right + k] - S[right]

@@ -1,6 +1,6 @@
 ___ fibonacci_search(amount
-        answer = []
-        ___ x in range(amount
+        answer =   # list
+        ___ x __ range(amount
                 fibNum = input()
                 a,b,c,count = 0,1,0,0
                 w___(c <= fibNum and fibNum != 0

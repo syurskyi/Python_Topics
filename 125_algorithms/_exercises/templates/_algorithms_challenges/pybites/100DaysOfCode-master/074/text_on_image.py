@@ -22,7 +22,7 @@ ___ download_url(url, in_file=IN_FILE, chunk_size=2000
     print('Saving as {}'.format(in_file))
 
     with open(in_file, 'wb') as fd:
-        ___ chunk in r.iter_content(chunk_size
+        ___ chunk __ r.iter_content(chunk_size
             fd.write(chunk)
 
     r_ in_file
@@ -31,7 +31,7 @@ ___ download_url(url, in_file=IN_FILE, chunk_size=2000
 ___ get_input(prompt
     # https://stackoverflow.com/questions/30239092/how-to-get-multiline-input-from-user
     print(prompt)
-    lines = []
+    lines =   # list
     w___ True:
         line = input()
         __ line:
@@ -64,7 +64,7 @@ ___ create_img_with_text(base_img, input_text, out_file=OUT_FILE
     r_ out_file
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     resource = input('Image file (local or url to download ')
 
     __ os.path.isfile(resource

@@ -31,10 +31,10 @@ class Solution:
         :rtype: list[str]
         """
         __ not root:
-            r_ []
+            r_   # list
 
-        ret = []
-        self.dfs(root, [], ret)
+        ret =   # list
+        self.dfs(root,   # list, ret)
         r_ ret
 
     ___ dfs(self, cur, path, ret

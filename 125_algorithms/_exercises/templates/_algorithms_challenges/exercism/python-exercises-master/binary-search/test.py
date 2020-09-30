@@ -37,8 +37,8 @@ class BinarySearchTests(unittest.TestCase
                           13)
 
     ___ test_empty_array(self
-        self.assertRaises(ValueError, binary_search, [], 1)
+        self.assertRaises(ValueError, binary_search,   # list, 1)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

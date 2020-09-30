@@ -5,9 +5,9 @@ ___ longest_palindrome (s
         r_ 0
     ___ isPalindrome(string
         r_ string __ ''.join(string[::-1])
-    ___ i in range(le.(s)-1,-1,-1
-        print([i ___ i in range(le.(s)-i)],i)
-        ___ j in [i ___ i in range(le.(s)-i)]:
+    ___ i __ range(le.(s)-1,-1,-1
+        print([i ___ i __ range(le.(s)-i)],i)
+        ___ j __ [i ___ i __ range(le.(s)-i)]:
             __ isPalindrome(s[j:i+j+1]
                 r_ le.(s[j:i+j+1])
 

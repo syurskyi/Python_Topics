@@ -14,8 +14,8 @@ class Solution:
     @return: all valid paths
     """
     ___ binaryTreePathSum(self, root, target
-        ans = []
-        self.dfs(root, target, ans, [])
+        ans =   # list
+        self.dfs(root, target, ans,   # list)
         r_ ans
 
     ___ dfs(self, node, remaining, ans, path

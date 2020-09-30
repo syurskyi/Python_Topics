@@ -9,16 +9,16 @@
 class Solution:
     # @param A a list of integers
     # @return an integer
-    def removeDuplicates(self, A):
+    ___ removeDuplicates(self, A):
         if len(A) < 2:
-            return len(A)
+            r_ len(A)
         index = 2
 
-        for i in range(2, len(A)):
+        ___ i __ range(2, len(A)):
             if A[i] != A[index - 2]:
                 A[index] = A[i]
                 index += 1
-        return index
+        r_ index
 
 
 Solution().removeDuplicates([1,1,1,2,2,3])

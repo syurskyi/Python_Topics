@@ -5,16 +5,16 @@ PYTHON = 'python'
 ___ contains_only_vowels(input_str
     """Receives input string and checks if all chars are
        VOWELS. Match is case insensitive."""
-    r_ all(x in VOWELS ___ x in input_str.lower())
+    r_ al.(x __ VOWELS ___ x __ input_str.lower())
 
 
 ___ contains_any_py_chars(input_str
     """Receives input string and checks if any of the PYTHON
        chars are in it. Match is case insensitive."""
-    r_ any(x in PYTHON ___ x in input_str.lower())
+    r_ any(x __ PYTHON ___ x __ input_str.lower())
 
 
 ___ contains_digits(input_str
     """Receives input string and checks if it contains
        one or more digits."""
-    r_ any(x.isdigit() ___ x in input_str)
+    r_ any(x.isdigit() ___ x __ input_str)

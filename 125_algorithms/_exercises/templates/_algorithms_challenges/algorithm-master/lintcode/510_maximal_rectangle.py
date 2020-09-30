@@ -11,25 +11,25 @@ class Solution:
         m, n = le.(G), le.(G[0])
         L, R, H = {}, {}, {}
 
-        ___ i in range(m
+        ___ i __ range(m
             curr = 0  # left boundary
-            ___ j in range(n
+            ___ j __ range(n
                 __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
-                    L[j] = max(L.get(j, 0), curr)
+                    L[j] = ma.(L.get(j, 0), curr)
                 ____
                     H[j] = L[j] = 0
                     curr = j + 1
 
             curr = n  # right boundary
-            ___ j in range(n - 1, -1, -1
+            ___ j __ range(n - 1, -1, -1
                 __ G[i][j] __ '1':
                     R[j] = min(R.get(j, n), curr)
                 ____
                     R[j] = n
                     curr = j
 
-                ans = max(
+                ans = ma.(
                     ans,
                     H[j] * (R[j] - L[j])
                 )
@@ -99,14 +99,14 @@ class Solution:
         m, n = le.(G), le.(G[0])
         H = [0] * n
 
-        ___ i in range(m
-            ___ j in range(n
+        ___ i __ range(m
+            ___ j __ range(n
                 __ G[i][j] __ '1':
                     H[j] += 1
                 ____
                     H[j] = 0
 
-            ans = max(ans, self.largestRectangleArea(H))
+            ans = ma.(ans, self.largestRectangleArea(H))
 
             # To remove the trick `0`
             H.p..
@@ -121,14 +121,14 @@ class Solution:
         # To ensure the last element in monostack will be handled
         H.append(0)
 
-        I = []
+        I =   # list
         left = height = 0
 
-        ___ right in range(le.(H)):
+        ___ right __ range(le.(H)):
             w___ I and H[I[-1]] >= H[right]:
                 height = H[I.p..]
                 left = I[-1] __ I else -1
-                area = max(
+                area = ma.(
                     area,
                     height * (right - left - 1)
                 )

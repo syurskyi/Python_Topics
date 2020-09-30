@@ -5,9 +5,9 @@ infile.readline()
 data = infile.readlines()
 infile.close()
 
-___ eq in data:
+___ eq __ data:
     output = ""
-    A,B,C = [int(i) ___ i in eq.strip().split(" ")]
+    A,B,C = [int(i) ___ i __ eq.strip().split(" ")]
     x1 = (-B + cmath.sqrt(B**2 - (4*A*C))) / (2*A)
     x2 = (-B - cmath.sqrt(B**2 - (4*A*C))) / (2*A)
     __ x1.imag __ float(0.0

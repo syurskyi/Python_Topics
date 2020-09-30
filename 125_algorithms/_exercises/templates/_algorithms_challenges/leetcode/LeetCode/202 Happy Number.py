@@ -34,7 +34,7 @@ class Solution:
             __ n __ 0:
                 __ nxt __ 1:
                     r_ True
-                __ nxt in appeared:
+                __ nxt __ appeared:
                     r_ False
 
                 appeared.add(nxt)

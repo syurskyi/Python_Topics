@@ -44,6 +44,6 @@ ___ test_calc_exception(t3, capfd
 
 ___ test_table_str(t3
     output = str(t3)
-    assert '1 | 2 | 3' in output
-    assert '2 | 4 | 6' in output
-    assert '3 | 6 | 9' in output
+    assert '1 | 2 | 3' __ output
+    assert '2 | 4 | 6' __ output
+    assert '3 | 6 | 9' __ output

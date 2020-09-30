@@ -26,8 +26,8 @@ class Solution(object
         :type root: TreeNode
         :rtype: List[str]
         """
-        res = []
-        cand = []
+        res =   # list
+        cand =   # list
         self.binary_tree_paths(root, cand, res)
         r_ res
 

@@ -32,5 +32,5 @@ class ArmstrongNumbersTest(unittest.TestCase
         self.assertIs(is_armstrong(9926314), False)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

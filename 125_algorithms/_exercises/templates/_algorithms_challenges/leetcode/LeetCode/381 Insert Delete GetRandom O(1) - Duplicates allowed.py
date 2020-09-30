@@ -41,7 +41,7 @@ class RandomizedCollection(object
         pop set is O(1), deterministic depends on hash value
         Initialize your data structure here.
         """
-        self.lst = []
+        self.lst =   # list
         self.pos = defaultdict(set)
 
     ___ insert(self, val

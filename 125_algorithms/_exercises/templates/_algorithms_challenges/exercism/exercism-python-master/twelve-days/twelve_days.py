@@ -6,7 +6,7 @@ ___ sing(
 
 ___ verses(start, stop
     """Sings several verses of the twelve days of christmas"""
-    r_ "\n".join(verse(n) ___ n in range(start, stop+1)) + "\n"
+    r_ "\n".join(verse(n) ___ n __ range(start, stop+1)) + "\n"
 
 ___ verse(v
     """Sings a verse of the twelve days of christmas"""

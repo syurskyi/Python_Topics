@@ -19,11 +19,11 @@ class MagicDictionary:
         :type words: List[str]
         :rtype: void
         """
-        ___ word in words:
-            ___ i in range(le.(word)):
+        ___ word __ words:
+            ___ i __ range(le.(word)):
                 key = '{0},{1}'.format(word[:i], word[i + 1:])
 
-                __ key not in self.words:
+                __ key not __ self.words:
                     self.words[key] = set()
 
                 # add char to distinct word if its same
@@ -35,17 +35,17 @@ class MagicDictionary:
         :type word: str
         :rtype: bool
         """
-        ___ i in range(le.(word)):
+        ___ i __ range(le.(word)):
             key = '{0},{1}'.format(word[:i], word[i + 1:])
 
-            __ key not in self.words:
+            __ key not __ self.words:
                 continue
 
             words = self.words[key]
 
             # 1. word[i] not in words => means not same word
             # 2. le.(words) > 1 => if got same but still can mapping other
-            __ word[i] not in words or le.(words) > 1:
+            __ word[i] not __ words or le.(words) > 1:
                 r_ True
 
         r_ False

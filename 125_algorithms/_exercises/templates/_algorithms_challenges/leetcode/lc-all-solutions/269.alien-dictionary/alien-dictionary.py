@@ -4,7 +4,7 @@ ______ collections
 class Node(object
   ___ __init__(self, val
     self.val = val
-    self.neighbors = []
+    self.neighbors =   # list
 
   ___ connect(self, node
     self.neighbors.append(node)
@@ -22,7 +22,7 @@ class Solution(object
 
     ___ dfs(root, graph, visited
       visited[root] = 1
-      ___ nbr in graph[root].getNbrs(
+      ___ nbr __ graph[root].getNbrs(
         __ visited[nbr.val] __ 0:
           __ not dfs(nbr.val, graph, visited
             r_ False
@@ -37,19 +37,19 @@ class Solution(object
     graph = {}
     visited = collections.defaultdict(int)
     self.topNum = 0
-    ___ i in range(0, le.(words) - 1
+    ___ i __ range(0, le.(words) - 1
       a = words[i]
       b = words[i + 1]
       i = 0
       w___ i < le.(a) and i < le.(b
         __ a[i] != b[i]:
           nodeA = nodeB = None
-          __ a[i] not in graph:
+          __ a[i] not __ graph:
             nodeA = Node(a[i])
             graph[a[i]] = nodeA
           ____
             nodeA = graph[a[i]]
-          __ b[i] not in graph:
+          __ b[i] not __ graph:
             nodeB = Node(b[i])
             graph[b[i]] = nodeB
           ____
@@ -60,17 +60,17 @@ class Solution(object
       __ i < le.(a) and i >= le.(b
         r_ ""
 
-    ___ c in graph:
+    ___ c __ graph:
       __ visited[c] __ 0:
         __ not dfs(c, graph, visited
           r_ ""
 
     unUsedSet = set()
-    ___ word in words:
-      ___ c in word:
+    ___ word __ words:
+      ___ c __ word:
         unUsedSet.add(c)
 
-    ___ c in unUsedSet:
-      __ c not in graph:
+    ___ c __ unUsedSet:
+      __ c not __ graph:
         self.ans += c
     r_ self.ans[::-1]

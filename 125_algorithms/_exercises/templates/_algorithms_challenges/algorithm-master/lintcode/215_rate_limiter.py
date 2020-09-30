@@ -30,7 +30,7 @@ class Solution:
         :type increment: bool
         :rtype: bool
         """
-        __ '/' not in rate:
+        __ '/' not __ rate:
             r_ False
 
         freq, t = rate.split('/')

@@ -6,7 +6,7 @@ class Warrior:
         
     ___ strike(self,enemy,swings
         #health cannot go below zero
-        enemy.health = max([0,enemy.health-(swings*10)]) __ enemy.visible else enemy.health
+        enemy.health = ma.([0,enemy.health-(swings*10)]) __ enemy.visible else enemy.health
 
     ___ hide(self
         self.visible = not(self.visible)

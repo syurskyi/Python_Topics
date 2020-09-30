@@ -41,11 +41,11 @@ class Solution(object
         __ not matrix: r_ 0
 
         m, n = le.(matrix), le.(matrix[0])
-        self.cache = [[None ___ _ in xrange(n)] ___ _ in xrange(m)]
+        self.cache = [[None ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         gmax = 1
-        ___ i in xrange(m
-            ___ j in xrange(n
-                gmax = max(gmax, self.longest(matrix, i, j))
+        ___ i __ xrange(m
+            ___ j __ xrange(n
+                gmax = ma.(gmax, self.longest(matrix, i, j))
 
         r_ gmax
 
@@ -56,17 +56,17 @@ class Solution(object
         __ not self.cache[i][j]:
             m, n = le.(matrix), le.(matrix[0])
             maxa = 1
-            ___ d in self.dirs:
+            ___ d __ self.dirs:
                 I, J = i + d[0], j + d[1]
                 __ 0 <= I < m and 0 <= J < n and matrix[I][J] > matrix[i][j]:
-                    maxa = max(maxa, 1 + self.longest(matrix, I, J))
+                    maxa = ma.(maxa, 1 + self.longest(matrix, I, J))
 
             self.cache[i][j] = maxa
 
         r_ self.cache[i][j]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().longestIncreasingPath([
         [9, 9, 4],
         [6, 6, 8],

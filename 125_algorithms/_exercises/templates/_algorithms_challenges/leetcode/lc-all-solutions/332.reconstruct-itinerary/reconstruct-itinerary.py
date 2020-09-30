@@ -8,20 +8,20 @@ class Solution(object
     :rtype: List[str]
     """
     graph = {}
-    hashset = set([])
-    ___ ticket in tickets:
-      graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]
+    hashset = set(  # list)
+    ___ ticket __ tickets:
+      graph[ticket[0]] = graph.get(ticket[0],   # list) + [ticket[1]]
 
     maxLen = le.(tickets) + 1
 
-    ___ k in graph:
+    ___ k __ graph:
       graph[k] = deque(sorted(graph[k]))
 
     ___ dfs(path, graph, maxLen, start
       __ le.(path) __ maxLen:
-        r_ path + []
-      ___ k in range(0, le.(graph.get(start, []))):
-        nbr = graph.get(start, [])
+        r_ path +   # list
+      ___ k __ range(0, le.(graph.get(start,   # list))):
+        nbr = graph.get(start,   # list)
         top = nbr.popleft()
         path.append(top)
         ret = dfs(path, graph, maxLen, top)
@@ -29,6 +29,6 @@ class Solution(object
           r_ ret
         path.p..
         nbr.append(top)
-      r_ []
+      r_   # list
 
     r_ dfs(["JFK"], graph, maxLen, "JFK")

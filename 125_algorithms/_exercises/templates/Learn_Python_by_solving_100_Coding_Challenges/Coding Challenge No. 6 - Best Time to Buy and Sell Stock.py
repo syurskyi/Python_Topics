@@ -5,18 +5,18 @@
 # Solutions:
 
 class Solution:
-    def maxProfit(prices):
+    ___ maxProfit(prices):
         size = len(prices)
         if size < 2:
-            return 0
+            r_ 0
         buys = [None] * size
         sells = [None] * size
-        sells[0], sells[1] = 0, max(0, prices[1] - prices[0])
-        buys[0], buys[1] = -prices[0], max(-prices[0], -prices[1])
-        for x in range(2, size):
-            sells[x] = max(sells[x - 1], buys[x - 1] + prices[x])
-            buys[x] = max(buys[x - 1], sells[x - 2] - prices[x])
-        return sells[-1]
+        sells[0], sells[1] = 0, ma.(0, prices[1] - prices[0])
+        buys[0], buys[1] = -prices[0], ma.(-prices[0], -prices[1])
+        ___ x __ range(2, size):
+            sells[x] = ma.(sells[x - 1], buys[x - 1] + prices[x])
+            buys[x] = ma.(buys[x - 1], sells[x - 2] - prices[x])
+        r_ sells[-1]
 
 
 Solution.maxProfit([1, 2, 3, 0, 2])

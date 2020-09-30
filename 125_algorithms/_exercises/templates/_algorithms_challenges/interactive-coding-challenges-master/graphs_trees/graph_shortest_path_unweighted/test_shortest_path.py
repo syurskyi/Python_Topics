@@ -4,9 +4,9 @@ from nose.tools ______ assert_equal
 class TestShortestPath(object
 
     ___ test_shortest_path(self
-        nodes = []
+        nodes =   # list
         graph = GraphShortestPath()
-        ___ id in range(0, 6
+        ___ id __ range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1)
         graph.add_edge(0, 4)
@@ -29,5 +29,5 @@ ___ main(
     test.test_shortest_path()
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     main()

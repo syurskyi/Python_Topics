@@ -10,6 +10,6 @@ class BirthdayDict(dict
         self.update(*args, **kwargs)
 
     ___ __setitem__(self, name, birthday
-        __ any((birthday.day __ x.day and birthday.month __ x.month) ___ (_, x) in self.items()):
+        __ any((birthday.day __ x.day and birthday.month __ x.month) ___ (_, x) __ self.items()):
             print(MSG.format(name))
         dict.__setitem__(self, name, birthday)

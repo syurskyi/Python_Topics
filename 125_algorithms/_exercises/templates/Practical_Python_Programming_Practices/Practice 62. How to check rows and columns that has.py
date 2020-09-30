@@ -2,27 +2,27 @@ from random import random
 
 row = 5
 col = 10
-matrix = []
-for i in range(row):
-    myrow = []
-    for j in range(col):
+matrix =   # list
+___ i __ range(row):
+    myrow =   # list
+    ___ j __ range(col):
         myrow.append(int(random()*50)+10)
     matrix.append(myrow)
 
-for myrow in matrix:
+___ myrow __ matrix:
     print(myrow)
 
 num = int(input("Range of numbers(10-50): "))
 
 print("Rows: ", end=' ')
-for i in range(row):
-    if num in matrix[i]:
+___ i __ range(row):
+    if num __ matrix[i]:
         print(i,end=' ')
 print()
 
 print("Columns: ",end=' ')
-for j in range(col):
-    for i in range(row):
+___ j __ range(col):
+    ___ i __ range(row):
         if matrix[i][j] == num:
             print(j, end=' ')
             break

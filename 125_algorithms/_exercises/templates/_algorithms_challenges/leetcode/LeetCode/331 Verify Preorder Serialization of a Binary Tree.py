@@ -63,7 +63,7 @@ class Solution(object
         :rtype: bool
         """
         stk = preorder.split(',')
-        child_stk = []
+        child_stk =   # list
         w___ stk:
             __ stk[-1] __ '#':
                 child_stk.append(stk.pop())  # a counter is enough
@@ -79,7 +79,7 @@ class Solution(object
         r_ not stk and le.(child_stk) __ 1
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#")
 
 

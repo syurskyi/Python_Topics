@@ -17,14 +17,14 @@ class HangMan:
 
     ___ __init__(self, word
         self.word = word
-        self.state = []
+        self.state =   # list
         self.generateState()
         self.guessCount = 0
         self.welcome()
         self.startGame()
 
     ___ generateState(self
-        ___ char in self.word:
+        ___ char __ self.word:
             self.state.append('_')
 
     ___ startGame(self
@@ -52,7 +52,7 @@ class HangMan:
 
     ___ checkGuess(self, guess
         countCorrect = 0
-        ___ index, value in enumerate(self.word
+        ___ index, value __ enumerate(self.word
             __ guess __ value:
                 self.state[index] = value
                 countCorrect += 1
@@ -69,20 +69,20 @@ class HangMan:
         self.goOn()
 
     ___ displayState(self
-        ___ char in self.state:
+        ___ char __ self.state:
             print(char, end='')
         print('\n')
 
     ___ checkIfWon(self
         countCorrect = 0
-        ___ index, value in enumerate(self.state
+        ___ index, value __ enumerate(self.state
             __ value __ self.word[index]:
                 countCorrect += 1
         __ countCorrect __ le.(self.word
             sys.exit('You won!')
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     word = getWord()
     print(word)
     game = HangMan(word)

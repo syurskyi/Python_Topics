@@ -43,11 +43,11 @@ class Solution:
         """
         h = defaultdict(int)
         m = le.(wall)
-        ___ i in range(m
+        ___ i __ range(m
             s = 0
-            ___ j in range(le.(wall[i]) - 1
+            ___ j __ range(le.(wall[i]) - 1
                 # don't count the two endings
                 s += wall[i][j]
                 h[s] += 1
 
-        r_ m - max(h.values() or [0])
+        r_ m - ma.(h.values() or [0])

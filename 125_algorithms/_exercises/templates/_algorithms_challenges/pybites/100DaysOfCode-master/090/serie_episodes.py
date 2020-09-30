@@ -15,5 +15,5 @@ pp(first_hit)
 showid = first_hit['id']
 show = tvdb.Series(showid)
 
-episodes = show.Episodes.all()
+episodes = show.Episodes.al.()
 pp(episodes)

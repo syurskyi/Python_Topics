@@ -10,5 +10,5 @@ class ZebraPuzzleTest(unittest.TestCase
                          solution())
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     unittest.main()

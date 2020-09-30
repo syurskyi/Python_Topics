@@ -29,11 +29,11 @@ class Solution(object
             4,
             5,
         ]
-        ___ c in testCases:
+        ___ c __ testCases:
             print(c)
             result = self.judgeSquareSum(c)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

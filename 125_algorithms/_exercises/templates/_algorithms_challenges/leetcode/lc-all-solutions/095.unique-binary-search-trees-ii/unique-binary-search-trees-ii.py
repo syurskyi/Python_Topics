@@ -15,14 +15,14 @@ class Solution(object
         r_ newRoot
 
     __ not n:
-      r_ []
+      r_   # list
     dp = [[]] * (n + 1)
     dp[0] = [None]
-    ___ i in range(1, n + 1
-      dp[i] = []
-      ___ j in range(1, i + 1
-        ___ left in dp[j - 1]:
-          ___ right in dp[i - j]:
+    ___ i __ range(1, n + 1
+      dp[i] =   # list
+      ___ j __ range(1, i + 1
+        ___ left __ dp[j - 1]:
+          ___ right __ dp[i - j]:
             root = TreeNode(j)
             root.left = left
             root.right = clone(right, j)

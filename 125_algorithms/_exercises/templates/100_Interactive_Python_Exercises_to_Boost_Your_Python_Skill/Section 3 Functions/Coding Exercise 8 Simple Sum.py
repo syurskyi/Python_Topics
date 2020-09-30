@@ -1,2 +1,2 @@
-def foo(x1, x2):
-    return x1 + x2
+# ___ foo x1 x2
+#     r_ ? + ?

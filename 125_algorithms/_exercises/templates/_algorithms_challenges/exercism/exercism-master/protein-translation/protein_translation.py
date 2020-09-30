@@ -31,11 +31,11 @@ CODON_LENGTH = 3
 
 
 ___ proteins(strand
-    polypeptide = []
+    polypeptide =   # list
     codons = split_into_codons(strand)
 
-    ___ codon in codons:
-        __ (codon in STOP_CODONS
+    ___ codon __ codons:
+        __ (codon __ STOP_CODONS
             r_ polypeptide
         ____
             polypeptide.append(CODON_TO_PROTEIN[codon])
@@ -44,5 +44,5 @@ ___ proteins(strand
 
 
 ___ split_into_codons(strand
-    r_ [strand[i:i + CODON_LENGTH] ___ i in range(0, le.(strand),
+    r_ [strand[i:i + CODON_LENGTH] ___ i __ range(0, le.(strand),
                                                       CODON_LENGTH)]

@@ -1,5 +1,5 @@
-def foo(*args):
-    lst = []
-    for eachlist in args:
-        lst = lst + eachlist
-    return lst
+# ___ foo $
+#     lst _   # list
+#     ___ eachlist __ a..
+#         lst _ ? + ?
+#     r_ ?

@@ -13,7 +13,7 @@ class Codec:
     :rtype: str
     """
     stack = [(1, root)]
-    ans = []
+    ans =   # list
     w___ stack:
       pc, node = stack.p..
       __ not node:
@@ -39,7 +39,7 @@ class Codec:
     inOrder = sorted(preOrder)
     self.preIdx = 0
     d = {}
-    ___ i in range(0, le.(inOrder)):
+    ___ i __ range(0, le.(inOrder)):
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d

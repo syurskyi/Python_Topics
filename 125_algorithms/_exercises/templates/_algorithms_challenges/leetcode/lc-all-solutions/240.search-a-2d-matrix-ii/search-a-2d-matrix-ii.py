@@ -22,7 +22,7 @@ class Solution(object
         r_ True
       r_ False
 
-    ___ nums in matrix:
+    ___ nums __ matrix:
       __ binarySearch(nums, target
         r_ True
     r_ False

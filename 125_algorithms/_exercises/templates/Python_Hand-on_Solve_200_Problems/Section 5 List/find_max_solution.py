@@ -5,12 +5,12 @@
 # max_num_in_list([1, 2, -8, 0])
 # return 2
 
-def max_num_in_list( list ):
-    max = list[ 0 ]
-    for a in list:
-        if a > max:
-            max = a
-    return max
+___ max_num_in_list( list ):
+    ma. = list[ 0 ]
+    ___ a __ list:
+        if a > ma.:
+            ma. = a
+    r_ ma.
 print(max_num_in_list([1, 2, -8, 0]))
 
 

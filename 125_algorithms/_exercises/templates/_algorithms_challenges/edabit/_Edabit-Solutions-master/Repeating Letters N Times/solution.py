@@ -1,6 +1,6 @@
 ___ repeat(txt, n
     s = ""
-    ___ i in txt:
+    ___ i __ txt:
         s += i * n
 
     r_ s

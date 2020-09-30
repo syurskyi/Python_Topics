@@ -10,7 +10,7 @@ vocabulary = {
     "what time is it" : datetime.datetime.now().strftime("%H:%M")
 }
 
-def foo(query, vocabulary):
+___ foo(query, vocabulary):
     new_vocabulary = {key:[value, difflib.SequenceMatcher(None, query, key).ratio()]
-    for (key,value) in vocabulary.items()}
-    return new_vocabulary[max(new_vocabulary, key=lambda k: new_vocabulary[k][1])][0]
+    ___ (key,value) __ vocabulary.items()}
+    r_ new_vocabulary[ma.(new_vocabulary, key=lambda k: new_vocabulary[k][1])][0]

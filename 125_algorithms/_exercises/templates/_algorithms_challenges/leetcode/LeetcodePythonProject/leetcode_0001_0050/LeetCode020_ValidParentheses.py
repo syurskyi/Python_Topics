@@ -9,9 +9,9 @@ class Solution(object
         :type s: str
         :rtype: bool
         """
-        stack = []
-        ___ c in s:
-            __ c in ['(', '{', '[']:
+        stack =   # list
+        ___ c __ s:
+            __ c __ ['(', '{', '[']:
                 stack.append(c)
             ____
                 __  (c __ ')' and stack and stack[-1]__'(') or\
@@ -20,17 +20,17 @@ class Solution(object
                     stack.p..
                 ____
                     r_ False
-        r_ stack __ []
+        r_ stack __   # list
     
     ___ test(self
         testCases = [
             '(){}[]',
         ]
-        ___ s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.isValid(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

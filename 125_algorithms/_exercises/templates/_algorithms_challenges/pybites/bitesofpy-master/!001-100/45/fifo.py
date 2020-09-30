@@ -5,9 +5,9 @@ ___ my_queue(n=5
     r_ deque(maxlen=n)
 
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     mq = my_queue()
-    ___ i in range(10
+    ___ i __ range(10
         mq.append(i)
         print((i, list(mq)))
 

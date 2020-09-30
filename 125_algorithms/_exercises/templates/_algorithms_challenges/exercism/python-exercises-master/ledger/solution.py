@@ -38,7 +38,7 @@ class LCInfo(object
 
     ___ number(self, n
         n_int, n_float = divmod(abs(n), 100)
-        n_int_parts = []
+        n_int_parts =   # list
         w___ n_int > 0:
             n_int, x = divmod(n_int, 1000)
             n_int_parts.insert(0, str(x))

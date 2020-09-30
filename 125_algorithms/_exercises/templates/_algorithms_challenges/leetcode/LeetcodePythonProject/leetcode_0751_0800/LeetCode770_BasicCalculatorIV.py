@@ -27,24 +27,24 @@ class Solution(object
             ],
             [
                 "7 - 7",
-                [],
-                [],
+                  # list,
+                  # list,
             ],
             [
                 "a * b * c + b * a * c * 4",
-                [],
-                [],
+                  # list,
+                  # list,
             ],
             [
                 "((a - b) * (b - c) + (c - a)) * ((a - b) + (b - c) * (c - a))",
-                [],
-                [],
+                  # list,
+                  # list,
             ],
         ]
-        ___ expression, evalvars, evalints in testCases:
+        ___ expression, evalvars, evalints __ testCases:
             result = self.basicCalculatorIV(expression, evalvars, evalints)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

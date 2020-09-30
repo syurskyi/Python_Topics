@@ -20,7 +20,7 @@ class Solution(object
       numBST = -1
       __ lmax < root.val < rmin and lnumBST != -1 and rnumBST != -1:
         numBST = 1 + lnumBST + rnumBST
-      maxNumBST = max(1, lmaxNumBST, rmaxNumBST, numBST)
-      r_ numBST, maxNumBST, min(lmin, rmin, root.val), max(lmax, rmax, root.val)
+      maxNumBST = ma.(1, lmaxNumBST, rmaxNumBST, numBST)
+      r_ numBST, maxNumBST, min(lmin, rmin, root.val), ma.(lmax, rmax, root.val)
 
     r_ helper(root)[1]

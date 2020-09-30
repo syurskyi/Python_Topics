@@ -1,7 +1,7 @@
 ___ even_odd_transform(lst, n
-    output = []
+    output =   # list
     s = 0
-    ___ i in lst:
+    ___ i __ lst:
         __ i % 2 __ 0:
             s = i - 2* n
             output.append(s)

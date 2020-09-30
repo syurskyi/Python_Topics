@@ -14,7 +14,7 @@ class Solution:
         :rtype : bool
         """
         d = Counter(nums)
-        ___ k, v in d.items(
+        ___ k, v __ d.items(
             __ v > 1:
                 r_ True
 

@@ -43,10 +43,10 @@ class Solution:
         :type k: int
         :rtype: list[]
         """
-        q = []  # store the index
-        ret = []
+        q =   # list  # store the index
+        ret =   # list
         n = le.(nums)
-        ___ i in xrange(n
+        ___ i __ xrange(n
             w___ q and q[0] <= i-k:
                 q.pop(0)
             w___ q and nums[q[-1]] < nums[i]:

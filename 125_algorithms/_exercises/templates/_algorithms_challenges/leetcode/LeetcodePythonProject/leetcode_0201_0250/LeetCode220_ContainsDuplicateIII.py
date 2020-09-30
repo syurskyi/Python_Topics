@@ -14,13 +14,13 @@ class Solution(object
         __ t < 0: r_ False
         w = t+1
         hashmap = {}
-        ___ i, num in enumerate(nums
+        ___ i, num __ enumerate(nums
             m = num//w
-            __ m in hashmap:
+            __ m __ hashmap:
                 r_ True
-            __ m+1 in hashmap and abs(hashmap[m+1]-num) < w:
+            __ m+1 __ hashmap and abs(hashmap[m+1]-num) < w:
                 r_ True
-            __ m-1 in hashmap and abs(hashmap[m-1]-num) < w:
+            __ m-1 __ hashmap and abs(hashmap[m-1]-num) < w:
                 r_ True
             hashmap[m] = num
             __ i>=k:

@@ -40,8 +40,8 @@ ___ _maybe_DateFormats(date_str
     a possible date format for the input date_str
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
-    maybe_formats = []
-    ___ idx, d_parse_fmt in enumerate(d_parse_formats
+    maybe_formats =   # list
+    ___ idx, d_parse_fmt __ enumerate(d_parse_formats
         try:
             _parsed_date = datetime.strptime(date_str, d_parse_fmt)  # pylint: disable=W0612
             maybe_formats.append(DateFormat(idx))
@@ -62,13 +62,13 @@ ___ get_dates(dates
     inferred based on the most prevalent format in the dates list.
     Alowed/supported date formats are defined in a DF enum class.
     """
-    result = []
-    fmts = Counter(maybe ___ dt in dates ___ maybe in _maybe_DateFormats(dt)).most_common(2)
+    result =   # list
+    fmts = Counter(maybe ___ dt __ dates ___ maybe __ _maybe_DateFormats(dt)).most_common(2)
     __ fmts[0][0] __ DateFormat.NONPARSABLE or fmts[0][1] __ fmts[1][1]:
         raise InfDateFmtError()
     fmt = DateFormat.get_d_parse_formats(fmts[0][0].value)
 
-    ___ dt in dates:
+    ___ dt __ dates:
         try:
             result.append(datetime.strptime(dt, fmt).strftime('%Y-%m-%d'))
         except ValueError:

@@ -15,7 +15,7 @@ class Logger(object
     :type message: str
     :rtype: bool
     """
-    __ message not in self.d:
+    __ message not __ self.d:
       self.d[message] = timestamp
       r_ True
     ____ timestamp - self.d[message] >= 10:

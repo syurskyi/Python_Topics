@@ -18,18 +18,18 @@ class Solution:
         `dp[i][j]` means the maximum value when
         all the balloons in [i+1, j-1] was bursted
         """
-        dp = [[0] * n ___ _ in range(n)]
+        dp = [[0] * n ___ _ __ range(n)]
         # pi = [[0] * n for _ in range(n)]
 
-        ___ i in range(n - 1 - 2, -1, -1
-            ___ j in range(i + 2, n
+        ___ i __ range(n - 1 - 2, -1, -1
+            ___ j __ range(i + 2, n
 
                 """
                 leave last balloon `k` to burst
                 `i + 1 <= k <= j - 1`
                 """
-                ___ k in range(i + 1, j
-                    dp[i][j] = max(
+                ___ k __ range(i + 1, j
+                    dp[i][j] = ma.(
                         dp[i][j],
                         dp[i][k] + dp[k][j] + V[i] * V[k] * V[j]
                     )

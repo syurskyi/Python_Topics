@@ -11,7 +11,7 @@ class Solution(object
         """
         n = le.(graph)
         colors = [-1]*n
-        ___ i in range(n
+        ___ i __ range(n
             __ colors[i] __ -1 and not self.validColor(graph, colors, 0, i
                 r_ False
         r_ True
@@ -20,7 +20,7 @@ class Solution(object
         __ colors[node] != -1:
             r_ colors[node] __ color
         colors[node] = color
-        ___ nextNode in graph[node]:
+        ___ nextNode __ graph[node]:
             __ not self.validColor(graph, colors, 1-color, nextNode
                 r_ False
         r_ True
@@ -30,11 +30,11 @@ class Solution(object
             [[1,3], [0,2], [1,3], [0,2]],
             [[1,2,3], [0,2], [0,1,3], [0,2]],
         ]
-        ___ graph in testCases:
+        ___ graph __ testCases:
             print('graph: %s' % graph)
             result = self.isBipartite(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

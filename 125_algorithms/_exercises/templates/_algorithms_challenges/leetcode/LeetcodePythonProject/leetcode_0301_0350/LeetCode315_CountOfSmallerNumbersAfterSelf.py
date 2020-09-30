@@ -19,10 +19,10 @@ class TreeNode(object
 
 class Solution(object
     ___ countSmaller(self, nums
-        __ not nums: r_ []
+        __ not nums: r_   # list
         root = TreeNode(nums[-1])
         result = [0]
-        ___ i in range(le.(nums)-2, -1, -1
+        ___ i __ range(le.(nums)-2, -1, -1
             result.insert(0, self.getVal(root, nums[i], 0))
         r_ result, root
     
@@ -48,15 +48,15 @@ class Solution(object
             [-1, -1],
             [3, 2, 2, 6, 1],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result, root = self.countSmaller(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
             
             queue= [root]
-            line = []
-            nextQueue = []
+            line =   # list
+            nextQueue =   # list
             w___ queue:
                 node = queue.pop(0)
                 line.append(node)
@@ -66,11 +66,11 @@ class Solution(object
                     nextQueue.append(node.right)
                 __ not queue:
                     queue = nextQueue
-                    nextQueue = []
+                    nextQueue =   # list
                     print(line)
-                    line = []
+                    line =   # list
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()
 

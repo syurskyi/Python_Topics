@@ -12,5 +12,5 @@ ___ test_print_game_stats(capfd
     output = capfd.readouterr()[0].splitlines()
 
     # dict + Python 3.7 = insert order should be retained
-    ___ line in winner_prints:
-        assert line in output
+    ___ line __ winner_prints:
+        assert line __ output

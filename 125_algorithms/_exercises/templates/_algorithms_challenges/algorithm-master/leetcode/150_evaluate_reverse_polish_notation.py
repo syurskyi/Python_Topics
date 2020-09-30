@@ -7,7 +7,7 @@ class Solution:
         __ not E:
             r_ 0
 
-        stack = []
+        stack =   # list
         operation = {
             '+': lambda a, b: a + b,
             '-': lambda a, b: a - b,
@@ -15,8 +15,8 @@ class Solution:
             '/': lambda a, b: a / b,
         }
 
-        ___ char in E:
-            __ char not in operation:
+        ___ char __ E:
+            __ char not __ operation:
                 stack.append(int(char))
                 continue
 

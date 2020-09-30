@@ -10,7 +10,7 @@ sizes_in_stock = collections.Counter(map(int, input().split()))
 
 total_revenue = 0
 
-___ _ in range(int(input())):
+___ _ __ range(int(input())):
     size, price = map(int, input().split())
     __ sizes_in_stock[size]:
         total_revenue += price

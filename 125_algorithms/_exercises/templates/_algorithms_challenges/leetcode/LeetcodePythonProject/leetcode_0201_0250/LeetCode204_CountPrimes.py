@@ -12,7 +12,7 @@ class Solution(object
         """
         notPrime = [False]*(n)
         count = 0
-        ___ i in range(2, n
+        ___ i __ range(2, n
             __ not notPrime[i]:
                 count += 1
                 j = 2
@@ -30,12 +30,12 @@ class Solution(object
         __ n <= 2:
             r_ 0
         primes = [False,]*2 + [True,]*(n-2)
-        ___ i in range(2, int(ma__.sqrt(n-1))+1
+        ___ i __ range(2, int(ma__.sqrt(n-1))+1
             __ primes[i]:
-                ___ j in range(i+i, n, i
+                ___ j __ range(i+i, n, i
                     primes[j] = False
         count = 0
-        ___ i in range(2, n
+        ___ i __ range(2, n
             __ primes[i]: count += 1
         print(primes)
         r_ count
@@ -44,11 +44,11 @@ class Solution(object
         testCases = [
             6,
         ]
-        ___ n in testCases:
+        ___ n __ testCases:
             print('n: %s' % (n))
             result = self.countPrimes(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

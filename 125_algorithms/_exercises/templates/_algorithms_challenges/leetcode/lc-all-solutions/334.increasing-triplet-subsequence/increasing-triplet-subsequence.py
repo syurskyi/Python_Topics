@@ -5,7 +5,7 @@ class Solution(object
     :rtype: bool
     """
     a = b = float("inf")
-    ___ num in nums:
+    ___ num __ nums:
       __ num <= a:
         a = num
       ____ num <= b:

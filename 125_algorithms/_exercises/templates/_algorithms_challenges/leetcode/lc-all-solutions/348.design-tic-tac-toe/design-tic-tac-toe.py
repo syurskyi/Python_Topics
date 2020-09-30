@@ -11,7 +11,7 @@ class TicTacToe(object
       self.cols[col] += delta
       self.diag += row __ col and delta
       self.antiDiag += row + col __ self.n - 1 and delta
-      __ delta * self.n in [self.rows[row], self.cols[col], self.diag, self.antiDiag]:
+      __ delta * self.n __ [self.rows[row], self.cols[col], self.diag, self.antiDiag]:
         r_ player
       r_ 0
 

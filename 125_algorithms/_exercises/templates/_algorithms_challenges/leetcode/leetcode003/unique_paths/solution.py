@@ -14,8 +14,8 @@ class Solution:
     ___ uniquePaths(self, m, n
         t = [[1] * m] * n
         i = j = 0
-        ___ i in range(n
-            ___ j in range(m
+        ___ i __ range(n
+            ___ j __ range(m
                 __ i __ 0 and j __ 0:
                     continue
                 ____ i __ 0:

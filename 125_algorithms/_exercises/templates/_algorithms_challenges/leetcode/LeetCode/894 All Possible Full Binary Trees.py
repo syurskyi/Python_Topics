@@ -34,20 +34,20 @@ class Solution:
         """
         recursive + memoization
         """
-        __ N not in self.cache:
+        __ N not __ self.cache:
             __ N __ 0:
-                ret = []
+                ret =   # list
             ____ N __ 1:
                 ret = [TreeNode(0)]
             ____
-                ret = []
-                ___ i in range(N
+                ret =   # list
+                ___ i __ range(N
                     lefts = self.allPossibleFBT(i)
                     rights = self.allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
                     __ lefts and rights:
-                        ___ left in lefts:
-                            ___ right in rights:
+                        ___ left __ lefts:
+                            ___ right __ rights:
                                 node = TreeNode(0)
                                 node.left = left
                                 node.right = right

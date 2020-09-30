@@ -6,9 +6,9 @@
 # Return "100".
 # Solutions:
 class Solution:
-    def addBinary( a, b):
-        length = max(len(a),len(b)) + 1
-        sum = ['0' for i in range(length)]
+    ___ addBinary( a, b):
+        length = ma.(len(a),len(b)) + 1
+        sum = ['0' ___ i __ range(length)]
         if len(a) <= len(b):
             a = '0' * ( len(b) - len(a) ) + a
         if len(a) > len(b):
@@ -34,16 +34,16 @@ class Solution:
         if Carry == 0:
             sum = sum[1:length]
         sum = ''.join(sum)
-        return sum
+        r_ sum
 
 Solution.addBinary("11","1")
 
 class Solution:
-    def addBinary(a, b):
+    ___ addBinary(a, b):
         bia = int(a, 2)
         bib = int(b, 2)
         sum = bia + bib
-        return str("{0:b}".format(sum))
+        r_ str("{0:b}".format(sum))
 
 Solution.addBinary("1","11")
 # *Should only use if asked for shorter solution. It converts binary to integers; sum the integers. And finally formats the answer as binary.

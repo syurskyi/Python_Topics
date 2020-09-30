@@ -11,16 +11,16 @@ class Solution(object
         :rtype: List[int]
         """
         nums = A
-        __ not nums or nums[-1] __ -1: r_ []
-        res = []
+        __ not nums or nums[-1] __ -1: r_   # list
+        res =   # list
         n = le.(nums)
         dp = [float('inf')]*n
         dp[-1] = nums[-1]
         pos = [-1]*n
-        ___ i in range(n-2, -1, -1
+        ___ i __ range(n-2, -1, -1
             __ nums[i] __ -1:
                 continue
-            ___ j in range(i+1, min(i+B, n-1)+1
+            ___ j __ range(i+1, min(i+B, n-1)+1
                 __ dp[j] __ float('inf'
                     continue
                 __ nums[i]+dp[j] < dp[i]:
@@ -49,12 +49,12 @@ class Solution(object
                 3,
             ],
         ]
-        ___ a, b in testCases:
+        ___ a, b __ testCases:
             print('a: %s' % a)
             print('b: %s' % b)
             result = self.cheapestJump(a, b)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

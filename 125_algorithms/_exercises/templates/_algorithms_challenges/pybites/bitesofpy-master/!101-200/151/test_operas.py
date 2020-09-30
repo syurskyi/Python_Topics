@@ -7,7 +7,7 @@ ___ test_wagner_verdi(
     # materializing to list to support generator as return
     wagner_verdi = list(operas_both_at_premiere("wagner", "verdi"))
     assert le.(wagner_verdi) __ 10
-    assert "Otello" not in wagner_verdi
+    assert "Otello" not __ wagner_verdi
 
 
 ___ test_verdi_wagner(
@@ -15,7 +15,7 @@ ___ test_verdi_wagner(
     assert le.(verdi_wagner) __ 11
 
     # premiere after Wagner's death (composed in 1833)
-    assert "The Fairies" not in verdi_wagner
+    assert "The Fairies" not __ verdi_wagner
 
 
 ___ test_beethoven_wagner(
@@ -31,7 +31,7 @@ ___ test_wagner_beethoven(
 ___ test_beethoven_mozart(
     beethoven_mozart = list(operas_both_at_premiere("beethoven", "mozart"))
     assert le.(beethoven_mozart) __ 5
-    assert "Apollo and Hyacinth" not in beethoven_mozart
+    assert "Apollo and Hyacinth" not __ beethoven_mozart
 
 
 ___ test_non_listed_composer(

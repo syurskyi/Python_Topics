@@ -16,10 +16,10 @@ class Solution(object
         __ le.(nums) __ 1:
             r_ abs(nums[0]-24) <= 0.0001
         nums = sorted(nums)
-        __ ''.join(str(nums) + ',') in hashmap:
+        __ ''.join(str(nums) + ',') __ hashmap:
             r_ False
-        ___ i in range(le.(nums)-1
-            ___ j in range(i+1, le.(nums)):
+        ___ i __ range(le.(nums)-1
+            ___ j __ range(i+1, le.(nums)):
                 a = nums[i]
                 b = nums[j]
                 nums1 = nums[:i]+nums[i+1:j]+nums[j+1:]
@@ -42,11 +42,11 @@ class Solution(object
             [8, 1, 6, 6],
             [3, 3, 8, 8],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.judgePoint24(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

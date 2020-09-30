@@ -33,9 +33,9 @@ class Solution:
         """
         ret = -float("inf")
         prev_max = A[0]
-        ___ a in A[1:]:
-            ret = max(ret, prev_max - 1 + a)
-            prev_max = max(prev_max - 1, a)
+        ___ a __ A[1:]:
+            ret = ma.(ret, prev_max - 1 + a)
+            prev_max = ma.(prev_max - 1, a)
 
         r_ ret
 
@@ -47,13 +47,13 @@ class Solution:
         error, no direction
         """
         n = le.(A)
-        B = []
-        ___ i in range(n
+        B =   # list
+        ___ i __ range(n
             B.append(A[i] - i)
 
         # find top 2
         m1, m2 = None, None
-        ___ i in range(n
+        ___ i __ range(n
             __ m1 pa__ None:
                 m1 = i
             ____ m2 pa__ None:
@@ -65,5 +65,5 @@ class Solution:
         r_ A[m2] + A[m1] - abs(m2 - m1)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().maxScoreSightseeingPair([8,1,5,2,6]) __ 11

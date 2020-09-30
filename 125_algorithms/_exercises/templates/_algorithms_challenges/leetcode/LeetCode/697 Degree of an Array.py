@@ -38,8 +38,8 @@ class Solution:
         counter = defaultdict(int)
         first = {}  # map from number to index
         mx = [0, 0]  #  [degree, length]
-        ___ i, n in enumerate(nums
-            __ n not in first:
+        ___ i, n __ enumerate(nums
+            __ n not __ first:
                 first[n] = i  # setdefault
             counter[n] += 1
             __ counter[n] > mx[0]:
@@ -52,5 +52,5 @@ class Solution:
         r_ mx[1]
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().findShortestSubArray([1, 2, 2, 3, 1]) __ 2

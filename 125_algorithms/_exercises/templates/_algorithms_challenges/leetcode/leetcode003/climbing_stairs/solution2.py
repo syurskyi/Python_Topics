@@ -11,7 +11,7 @@ class Solution(object
         :type n: int
         :rtype: int
         """
-        t = [0 ___ i in range(n + 1)]
+        t = [0 ___ i __ range(n + 1)]
         r_ self.climb(n, t)
 
     ___ climb(self, n, t

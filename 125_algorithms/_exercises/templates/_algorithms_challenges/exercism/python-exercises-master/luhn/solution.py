@@ -5,9 +5,9 @@ class Luhn(object
     ___ addends(self
         ___ luhn_transform(n
             r_ (2 * n - 9) __ (n > 4) else (2 * n)
-        old_digits = [int(d) ___ d in str(self.string)]
+        old_digits = [int(d) ___ d __ str(self.string)]
         r_ [(luhn_transform(n) __ (i % 2 __ 0) else n)
-                ___ i, n in enumerate(old_digits, start=le.(old_digits) % 2)]
+                ___ i, n __ enumerate(old_digits, start=le.(old_digits) % 2)]
 
     ___ checksum(self
         r_ su.(self.addends())

@@ -6,19 +6,19 @@ class Solution(object
     """
     ans = 0
     s = set(nums)
-    ___ num in nums:
-      __ num in s:
+    ___ num __ nums:
+      __ num __ s:
         s.discard(num)
         cnt = 1
         right = num + 1
         left = num - 1
-        w___ left in s:
+        w___ left __ s:
           s.discard(left)
           cnt += 1
           left -= 1
-        w___ right in s:
+        w___ right __ s:
           s.discard(right)
           cnt += 1
           right += 1
-        ans = max(ans, cnt)
+        ans = ma.(ans, cnt)
     r_ ans

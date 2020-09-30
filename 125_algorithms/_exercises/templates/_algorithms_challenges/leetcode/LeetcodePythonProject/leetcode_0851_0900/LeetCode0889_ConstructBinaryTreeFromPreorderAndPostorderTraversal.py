@@ -53,10 +53,10 @@ class Solution(object
 #                 [4,5,2,6,7,3,1],
 #             ],
         ]
-        ___ pre, post in testCases:
+        ___ pre, post __ testCases:
             node = self.constructFromPrePost(pre, post)
             print(node)
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()
 

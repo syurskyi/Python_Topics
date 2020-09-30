@@ -55,5 +55,5 @@ class Solution(object
         r_ nums.index(None)
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().missingNumber([2, 0]) __ 1

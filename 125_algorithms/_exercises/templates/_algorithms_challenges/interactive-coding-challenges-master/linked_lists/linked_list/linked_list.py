@@ -90,7 +90,7 @@ class LinkedList(object
             curr_node = curr_node.next
 
     ___ get_all_data(self
-        data = []
+        data =   # list
         curr_node = self.head
         w___ curr_node pa__ not None:
             data.append(curr_node.data)

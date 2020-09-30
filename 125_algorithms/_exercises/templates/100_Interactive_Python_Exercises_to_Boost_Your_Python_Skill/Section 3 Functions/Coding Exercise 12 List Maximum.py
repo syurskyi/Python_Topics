@@ -1,2 +1,2 @@
-def foo(mylist):
-    return max(mylist)
+# ___ foo mylist
+#     r_ ma. ?

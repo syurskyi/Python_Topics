@@ -11,8 +11,8 @@ class Solution(object
         """
         hashmap = {}
         maxLen = 0
-        ___ num in nums:
-            __ num not in hashmap:
+        ___ num __ nums:
+            __ num not __ hashmap:
                 hashset = set()
                 count = 0
                 num0 = num
@@ -20,9 +20,9 @@ class Solution(object
                     count += 1
                     num0 = nums[num0]
                     hashset.add(num0)
-                ___ num0 in hashset:
+                ___ num0 __ hashset:
                     hashmap[num0] = count
-                maxLen = max(maxLen, count)
+                maxLen = ma.(maxLen, count)
         r_ maxLen
     
     ___ test(self
@@ -30,11 +30,11 @@ class Solution(object
             [5,4,0,3,1,6,2],
             [0],
         ]
-        ___ nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.arrayNesting(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

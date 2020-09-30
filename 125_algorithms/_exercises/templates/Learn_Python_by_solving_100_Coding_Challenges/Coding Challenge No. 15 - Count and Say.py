@@ -11,17 +11,17 @@
 
 class Solution:
     # @return a string
-    def countAndSay(n):
+    ___ countAndSay(n):
         result = "1"
         if n == 0:
-            return None
+            r_ None
         else:
             print ( "1" )
-            for i in range(n-1):
+            ___ i __ range(n-1):
                 temp = ""
                 current = result[0]
                 currentCount = 1
-                for item in result[1:]:
+                ___ item __ result[1:]:
                     if item == current:
                         currentCount += 1
                     else:

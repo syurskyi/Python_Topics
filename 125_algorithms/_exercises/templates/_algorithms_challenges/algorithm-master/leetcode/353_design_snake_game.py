@@ -75,7 +75,7 @@ class SnakeGame:
 
         Game over when snake crosses the screen boundary or bites its body.
         """
-        __ direction not in self.dn:
+        __ direction not __ self.dn:
             # treat this move as invalid action
             r_ le.(self.snake) - 1
 
@@ -112,7 +112,7 @@ class SnakeGame:
         new head will hit its self?
         this detection MUST AFTER removing tail
         """
-        __ (hx, hy) in self.body:
+        __ (hx, hy) __ self.body:
             self.is_over = True
             r_ self.SCORE_IN_OVER
 

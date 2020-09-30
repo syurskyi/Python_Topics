@@ -11,7 +11,7 @@ input_array = [0,1,2,4,5,7]
 # input_array = [1,2,3,6,9,11,12,13,14,19,20]
 
 start=0
-result = []
+result =   # list
 
 # i=0
 # while i <= len(input_array)-1:

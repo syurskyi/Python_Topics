@@ -32,7 +32,7 @@ class Solution(object
             ListNode(3, ListNode(2, ListNode(5, ListNode(-1)))),
             ListNode(2, ListNode(1, ListNode(-3))),
         ]
-        ___ head in testCases:
+        ___ head __ testCases:
             node = self.insertionSortList(head)
             w___ node:
                 print('%s, ' % node.val, end='')
@@ -40,5 +40,5 @@ class Solution(object
             print()
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()

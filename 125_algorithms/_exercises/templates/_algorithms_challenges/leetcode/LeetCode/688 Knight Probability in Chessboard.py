@@ -48,15 +48,15 @@ class Solution:
         with memory, it is considered dp
         """
         q = set([(r, c)])  # working que
-        P = [[0 ___ _ in range(N)] ___ _ in range(N)]
+        P = [[0 ___ _ __ range(N)] ___ _ __ range(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         w___ k < K:
             k += 1
             cur_q = set()
-            cur_P = [[0 ___ _ in range(N)] ___ _ in range(N)]
-            ___ i, j in q:
-                ___ di, dj in dirs:
+            cur_P = [[0 ___ _ __ range(N)] ___ _ __ range(N)]
+            ___ i, j __ q:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
@@ -68,8 +68,8 @@ class Solution:
 
         r_ su.([
             P[i][j]
-            ___ i in range(N)
-            ___ j in range(N)
+            ___ i __ range(N)
+            ___ j __ range(N)
         ])
 
 
@@ -78,15 +78,15 @@ class Solution:
         brute force K step
         """
         q = [(r, c)]  # working que
-        P = [[0 ___ _ in range(N)] ___ _ in range(N)]
+        P = [[0 ___ _ __ range(N)] ___ _ __ range(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         w___ k < K:
             k += 1
-            cur_q = []
-            cur_P = [[0 ___ _ in range(N)] ___ _ in range(N)]
-            ___ i, j in q:
-                ___ di, dj in dirs:
+            cur_q =   # list
+            cur_P = [[0 ___ _ __ range(N)] ___ _ __ range(N)]
+            ___ i, j __ q:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
@@ -98,11 +98,11 @@ class Solution:
 
         r_ su.([
             P[i][j]
-            ___ i in range(N)
-            ___ j in range(N)
+            ___ i __ range(N)
+            ___ j __ range(N)
         ])
 
 
-__ __name__ __ "__main__":
+__  -n __ "__main__":
     assert Solution().knightProbability(3, 2, 0, 0)  __ 0.0625
     assert Solution().knightProbability(3, 3, 0, 0)  __ 0.015625

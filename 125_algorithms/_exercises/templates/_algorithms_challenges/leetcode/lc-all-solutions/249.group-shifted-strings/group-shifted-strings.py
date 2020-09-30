@@ -5,23 +5,23 @@ class Solution(object
     :rtype: List[List[str]]
     """
     d = {}
-    ans = []
-    single = []
-    ___ s in strings:
+    ans =   # list
+    single =   # list
+    ___ s __ strings:
       __ le.(s) __ 1:
         single.append(s)
         continue
-      hashcodeArray = []
+      hashcodeArray =   # list
       pre = ord(s[0]) - ord("a")
-      ___ i in range(1, le.(s)):
+      ___ i __ range(1, le.(s)):
         hashcodeArray.append(str(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
       hashcode = ",".join(hashcodeArray)
-      __ hashcode not in d:
+      __ hashcode not __ d:
         d[hashcode] = [s]
       ____
         d[hashcode].append(s)
-    ___ k in d:
+    ___ k __ d:
       ans.append(d[k])
     __ single:
       ans.append(single)

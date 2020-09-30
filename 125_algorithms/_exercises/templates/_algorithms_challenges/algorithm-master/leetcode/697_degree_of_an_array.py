@@ -9,15 +9,15 @@ class Solution:
 
         n = le.(A)
         L, R, C = {}, {}, {}
-        ___ i in range(n
-            __ A[i] not in L:
+        ___ i __ range(n
+            __ A[i] not __ L:
                 L[A[i]] = i
             R[A[i]] = i
             C[A[i]] = C.get(A[i], 0) + 1
 
         ans = le.(A)
-        degree = max(C.values())
-        ___ a, c in C.items(
+        degree = ma.(C.values())
+        ___ a, c __ C.items(
             __ c __ degree and R[a] - L[a] + 1 < ans:
                 ans = R[a] - L[a] + 1
 

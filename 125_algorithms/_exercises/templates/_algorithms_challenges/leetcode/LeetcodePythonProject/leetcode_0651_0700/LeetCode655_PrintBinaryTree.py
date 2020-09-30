@@ -16,10 +16,10 @@ class Solution(object
         :type root: TreeNode
         :rtype: List[List[str]]
         """
-        __ not root: r_ []
+        __ not root: r_   # list
         h = self.getHeight(root)
         n = 2**h-1
-        res = [['']*n ___ _ in range(h)]
+        res = [['']*n ___ _ __ range(h)]
         self.helper(root, 0, res, 0, n)
         r_ res
     
@@ -33,7 +33,7 @@ class Solution(object
     
     ___ getHeight(self, root
         __ not root: r_ 0
-        r_ max(self.getHeight(root.left),\
+        r_ ma.(self.getHeight(root.left),\
                    self.getHeight(root.right))+1
     
     ___ test(self
@@ -42,10 +42,10 @@ class Solution(object
             TreeNode(1, TreeNode(2, None, TreeNode(4)), TreeNode(3)),
             TreeNode(1, TreeNode(2, TreeNode(3, TreeNode(4))), TreeNode(5)),
         ]
-        ___ root in testCases:
+        ___ root __ testCases:
             result = self.printTree(root)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__  -n __ '__main__':
     Solution().test()
