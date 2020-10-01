@@ -5,6 +5,6 @@ print(x)
 
 keys _ li..(x.keys
 del_keys _ ra__.choice(keys)
-del x[del_keys]
+? x[del_keys]
 
 print(x)

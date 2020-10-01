@@ -20,20 +20,20 @@ c_ Solution:
             end _ num[i]
             __ num[i] __ startToEnd:
                 end _ startToEnd[num[i]]
-                del startToEnd[num[i]]
-                del endToStart[end]
+                ? startToEnd[num[i]]
+                ? endToStart[end]
             __ num[i] __ endToStart:
                 start _ endToStart[num[i]]
-                del startToEnd[start]
-                del endToStart[num[i]]
+                ? startToEnd[start]
+                ? endToStart[num[i]]
             __ num[i]-1 __ endToStart:
                 start _ mi.(start, endToStart[num[i]-1])
-                del startToEnd[endToStart[num[i]-1]]
-                del endToStart[num[i]-1]
+                ? startToEnd[endToStart[num[i]-1]]
+                ? endToStart[num[i]-1]
             __ num[i]+1 __ startToEnd:
                 end _ ma.(end, startToEnd[num[i]+1])
-                del endToStart[startToEnd[num[i]+1]]
-                del startToEnd[num[i]+1]
+                ? endToStart[startToEnd[num[i]+1]]
+                ? startToEnd[num[i]+1]
             startToEnd[start] _ end
             endToStart[end] _ start
             longest _ ma.(longest, end-start+1)

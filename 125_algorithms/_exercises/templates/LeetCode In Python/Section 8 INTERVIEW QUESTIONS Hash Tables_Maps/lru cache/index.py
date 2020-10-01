@@ -26,7 +26,7 @@ c_ LRUCache:
         __ key no. __ .m:
             __ le.(.deq) __ .c:
                 oldest _ .deq.popleft()
-                del .m[oldest]
+                ? .m[oldest]
         ____
             .deq.r..(key)
 
