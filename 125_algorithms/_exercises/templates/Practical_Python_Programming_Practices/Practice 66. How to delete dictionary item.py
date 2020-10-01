@@ -3,8 +3,8 @@ ______ ra__
 x _ {1:"a", 2: "b", 3: "c", 4: "d", 5: "e"}
 print(x)
 
-keys _ li..(x.keys
-del_keys _ ra__.choice(keys)
+k.. _ li..(x.k..
+del_keys _ ra__.choice(k..)
 ? x[del_keys]
 
 print(x)
