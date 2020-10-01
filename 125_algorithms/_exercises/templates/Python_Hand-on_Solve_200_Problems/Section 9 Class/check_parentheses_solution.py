@@ -14,7 +14,7 @@ c_ py_solution:
         ___ parenthese __ str1:
             __ parenthese __ pchar:
                 stack.ap..(parenthese)
-            ____ le.(stack) __ 0 or pchar[stack.p..()] !_ parenthese:
+            ____ le.(stack) __ 0 o. pchar[stack.p..()] !_ parenthese:
                 r_ F..
         r_ le.(stack) __ 0
 

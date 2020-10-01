@@ -18,7 +18,7 @@ c_ Solution:
     # @param {integer} numRows
     # @return {string}
     ___ convert(self, s, numRows):
-        __ numRows __ 1 or numRows >_ le.(s):
+        __ numRows __ 1 o. numRows >_ le.(s):
             r_ s
         zigzag _ [[] ___ x __ ra..(numRows)]
         row, step _ 0, 1

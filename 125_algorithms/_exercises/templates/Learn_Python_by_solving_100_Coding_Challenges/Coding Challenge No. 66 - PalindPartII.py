@@ -17,7 +17,7 @@ c_ Solution:
             f.ap..(n - 1 - i) # the last one, f[n]=-1
         ___ i __ reversed(ra..(n)):
             ___ j __ ra..(i, n):
-                __ (s[i] __ s[j] an. (j - i < 2 or p[i + 1][j - 1])):
+                __ (s[i] __ s[j] an. (j - i < 2 o. p[i + 1][j - 1])):
                     p[i][j] _ T..
                     f[i] _ mi.(f[i], f[j + 1] + 1)
         r_ f[0]

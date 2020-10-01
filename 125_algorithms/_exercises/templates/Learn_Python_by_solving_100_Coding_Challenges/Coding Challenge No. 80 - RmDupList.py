@@ -16,7 +16,7 @@ c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):
-        __ head __ N.. or head.next __ N..:
+        __ head __ N.. o. head.next __ N..:
             r_ head
         p _ head
         w___ p.next:

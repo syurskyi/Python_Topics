@@ -23,7 +23,7 @@ c_ Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        __ no. head or k <_ 1:
+        __ no. head o. k <_ 1:
             r_ head
         dummy _ ListNode(-1)
         dummy.next _ head

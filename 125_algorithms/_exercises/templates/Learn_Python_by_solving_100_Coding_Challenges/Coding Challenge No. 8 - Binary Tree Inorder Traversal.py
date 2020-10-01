@@ -21,7 +21,7 @@ c_ Solution:
         stack _   # list
         node _ root
         solution _   # list
-        w___ node!_ N.. or le.(stack)>0:
+        w___ node!_ N.. o. le.(stack)>0:
             __ node !_ N..:
                 stack.ap..(node)
                 node _ node.left

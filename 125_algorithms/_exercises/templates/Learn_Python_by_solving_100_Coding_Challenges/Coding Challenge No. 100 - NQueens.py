@@ -8,7 +8,7 @@ c_ Solution:
     ___ solveNQueens(self, n):
         ___ check(k,j,board):
             ___ i __ ra..(k):
-                __ board[i]__j or abs(k-i)__abs(board[i]-j):
+                __ board[i]__j o. abs(k-i)__abs(board[i]-j):
                     r_ F..
             r_ T..
 

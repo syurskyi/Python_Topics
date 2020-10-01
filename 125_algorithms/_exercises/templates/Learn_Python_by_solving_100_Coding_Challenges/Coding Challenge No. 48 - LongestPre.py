@@ -14,7 +14,7 @@ c_ Solution:
             prefix _ strs[0][:i+1]
             validPrefix _ T..
             ___ j __ ra..(1,le.(strs)):
-                __ le.(strs[j])<_i or strs[j][:i+1]!_prefix:
+                __ le.(strs[j])<_i o. strs[j][:i+1]!_prefix:
                     validPrefix _ F..
                     b..
             __ validPrefix:

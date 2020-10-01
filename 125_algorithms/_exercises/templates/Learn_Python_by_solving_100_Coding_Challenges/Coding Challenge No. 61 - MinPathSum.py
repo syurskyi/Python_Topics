@@ -7,7 +7,7 @@ c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):
-        __ le.(grid)__0 or le.(grid[0])__0:
+        __ le.(grid)__0 o. le.(grid[0])__0:
             r_ 0
         ___ row __ ra..(0, le.(grid)):
             ___ col __ ra..(0, le.(grid[0])):

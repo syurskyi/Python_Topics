@@ -17,7 +17,7 @@ c_ Solution:
     """
 
     ___ detectCycle(self, head):
-        __ head __ N.. or head.next __ N..:
+        __ head __ N.. o. head.next __ N..:
             r_ N..
         slow _ fast _ head
         w___ fast an. fast.next:

@@ -37,7 +37,7 @@ c_ Solution:
                 ___ i __ reversed(ra..(maxUp, maxDown + 1)):
                     res.ap..(matrix[i][maxLeft])
                 maxLeft +_ 1
-            __ maxUp > maxDown or maxLeft > maxRight:
+            __ maxUp > maxDown o. maxLeft > maxRight:
                 r_ res
             direct _ (direct + 1) % 4
 

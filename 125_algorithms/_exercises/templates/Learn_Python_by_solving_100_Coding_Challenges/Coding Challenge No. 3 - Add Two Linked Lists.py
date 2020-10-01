@@ -13,7 +13,7 @@ c_ Solution:
     ___ addTwoNumbers(l1, l2):
         dummy _ ListNode(0)
         current, carry _ dummy, 0
-        w___ l1 or l2:
+        w___ l1 o. l2:
             val _ carry
             __ l1:
                 val +_ l1.val

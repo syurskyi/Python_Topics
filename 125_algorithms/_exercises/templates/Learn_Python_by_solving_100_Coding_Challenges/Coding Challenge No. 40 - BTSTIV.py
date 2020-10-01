@@ -10,7 +10,7 @@ c_ Solution:
     @return: an integer which is maximum profit
     """
     ___ maxProfit(self, k, prices):
-        __ prices is N.. or le.(prices) <_ 1 or k <_ 0:
+        __ prices is N.. o. le.(prices) <_ 1 o. k <_ 0:
             r_ 0
         n _ le.(prices)
         # k >= prices.length / 2 ==> multiple transactions Stock II

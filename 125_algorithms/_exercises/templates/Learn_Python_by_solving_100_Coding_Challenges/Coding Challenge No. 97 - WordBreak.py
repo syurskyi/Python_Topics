@@ -12,7 +12,7 @@ c_ Solution:
     # @param dict, a set of string
     # @return a boolean
     ___ wordBreak(self, s, di..):
-        __ le.( s ) __ 0 or le.(di..) __ 0:
+        __ le.( s ) __ 0 o. le.(di..) __ 0:
             r_ F..
         dp _ [ 0 ]
         ___ i __ ra..(1, le.( s ) + 1):

@@ -38,7 +38,7 @@ c_ Solution:
             r_ hasPathSum(root.left, su.-root.val)
         ____
             # Has two children.
-            r_ hasPathSum(root.left, su.-root.val) or hasPathSum(root.right, su.-root.val)
+            r_ hasPathSum(root.left, su.-root.val) o. hasPathSum(root.right, su.-root.val)
 
 
 __  -n __ '__main__':

@@ -13,7 +13,7 @@ c_ Solution:
     # @param head, a ListNode
     # @return a boolean
     ___ hasCycle(self, head):
-        __ head __ N.. or head.next __ N..:
+        __ head __ N.. o. head.next __ N..:
             r_ F..
         slow _ fast _ head
         w___ fast an. fast.next:

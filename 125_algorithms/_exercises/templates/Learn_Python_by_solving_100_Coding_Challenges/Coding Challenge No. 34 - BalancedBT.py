@@ -22,7 +22,7 @@ c_ Solution:
             r_ 0;
         left _ isBalancedInt(root.left)
         right _ isBalancedInt(root.right)
-        __ left<0 or right<0 or abs(left-right)>1:
+        __ left<0 o. right<0 o. abs(left-right)>1:
             r_ -1
         r_ ma.(left,right)+1
 

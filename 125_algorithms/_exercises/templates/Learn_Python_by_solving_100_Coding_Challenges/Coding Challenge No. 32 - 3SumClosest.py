@@ -14,7 +14,7 @@ c_ Solution:
             l, r _ i + 1, le.(numbers) - 1
             w___ (l < r):
                 su. _ numbers[l] + numbers[r] + numbers[i]
-                __ ans is N.. or abs(su.- target) < abs(ans - target):
+                __ ans is N.. o. abs(su.- target) < abs(ans - target):
                     ans _ su.
                 __ su. <_ target:
                     l _ l + 1
