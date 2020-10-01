@@ -8,7 +8,7 @@
 
 c_ Solution:
     # @return a list of lists of integers
-    ___ generate(self, numRows):
+    ___ generate(, numRows):
         __ numRows __ 0:
             r_   # list
 

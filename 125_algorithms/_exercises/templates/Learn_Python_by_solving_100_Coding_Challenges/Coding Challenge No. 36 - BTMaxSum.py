@@ -11,7 +11,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -19,12 +19,12 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ maxPathSum(self, root):
+    ___ maxPathSum(, root):
         maxValue _ fl..("-inf")
         maxPathSumRec(root)
         r_ maxValue
 
-    ___ maxPathSumRec(self, root):
+    ___ maxPathSumRec(, root):
         __ root __ N..:
             r_ 0
         leftSum _ maxPathSumRec(root.left)

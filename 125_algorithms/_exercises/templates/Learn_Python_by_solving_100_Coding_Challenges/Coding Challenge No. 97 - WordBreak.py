@@ -11,7 +11,7 @@ c_ Solution:
     # @param s, a string
     # @param dict, a set of string
     # @return a boolean
-    ___ wordBreak(self, s, di..):
+    ___ wordBreak(, s, di..):
         __ le.( s ) __ 0 o. le.(di..) __ 0:
             r_ F..
         dp _ [ 0 ]

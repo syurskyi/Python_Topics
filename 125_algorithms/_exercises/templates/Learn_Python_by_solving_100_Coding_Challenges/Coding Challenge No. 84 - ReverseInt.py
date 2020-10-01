@@ -7,7 +7,7 @@
 
 c_ Solution:
     # @return an integer
-    ___ reverse(self, x):
+    ___ reverse(, x):
         __ x<0:
             sign _ -1
         ____

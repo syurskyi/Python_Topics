@@ -12,7 +12,7 @@
 c_ Solution:
     # @param matrix, a list of lists of integers
     # @return a list of integers
-    ___ spiralOrder(self, matrix):
+    ___ spiralOrder(, matrix):
         __ matrix __   # list:
             r_   # list
         res _   # list
@@ -30,11 +30,11 @@ c_ Solution:
                     res.ap..(matrix[i][maxRight])
                 maxRight -_ 1
             ____ direct __ 2: # go left
-                ___ i __ reversed(ra..(maxLeft, maxRight + 1)):
+                ___ i __ r..(ra..(maxLeft, maxRight + 1)):
                     res.ap..(matrix[maxDown][i])
                 maxDown -_ 1
             ____ # go up
-                ___ i __ reversed(ra..(maxUp, maxDown + 1)):
+                ___ i __ r..(ra..(maxUp, maxDown + 1)):
                     res.ap..(matrix[i][maxLeft])
                 maxLeft +_ 1
             __ maxUp > maxDown o. maxLeft > maxRight:

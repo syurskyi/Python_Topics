@@ -8,7 +8,7 @@
 c_ Solution:
     # @param {integer[]} height
     # @return {integer}
-    ___ trap(self, height):
+    ___ trap(, height):
         __ no. height o. le.(height)__1:
             r_ 0
         max_left _ height[0]
@@ -22,7 +22,7 @@ c_ Solution:
         max_right _ height[-1]
         AddVolume.ap..(max_right)
 
-        ___ i __ reversed(ra..(1,le.(height)-1)):
+        ___ i __ r..(ra..(1,le.(height)-1)):
             __ max_right < height[i+1]:
                     max_right _ height[i+1]
             AddVolume[i] _ mi.(max_right,AddVolume[i])

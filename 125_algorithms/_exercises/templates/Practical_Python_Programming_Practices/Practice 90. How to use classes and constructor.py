@@ -1,5 +1,5 @@
 c_ company:
-    ___  -(self, employee_firstname, employee_surname):
+    ___  -(, employee_firstname, employee_surname):
         firstname _ employee_firstname
         surname _ employee_surname
 

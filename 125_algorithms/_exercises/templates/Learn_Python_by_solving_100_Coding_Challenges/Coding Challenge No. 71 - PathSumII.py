@@ -15,7 +15,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -25,12 +25,12 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
-    ___ pathSum(self, root, su.):
+    ___ pathSum(, root, su.):
         solution _   # list
         pathSumRec(root, su., 0,   # list, solution)
         r_ solution
 
-    ___ pathSumRec(self, root, su., tempSum, tempList, solution):
+    ___ pathSumRec(, root, su., tempSum, tempList, solution):
         __ root __ N..:
             r_
         tempList.ap..(root.val)

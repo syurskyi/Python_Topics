@@ -10,13 +10,13 @@ c_ Solution:
     # @param s, a string
     # @return an integer
 
-    ___ lengthOfLastWord1(self, s):
+    ___ lengthOfLastWord1(, s):
         r_ le.(s.sp..()[le.(s.sp..-1]) __ s.sp..() !_   # list else 0
 
     # @param s, a string
     # @return an integer
 
-    ___ lengthOfLastWord2(self, s):
+    ___ lengthOfLastWord2(, s):
         s _ s.s..() # Remove the spaces at the beginning and end
         length _ 0
         ___ letter __ s:
@@ -28,7 +28,7 @@ c_ Solution:
         # @param s, a string
         # @return an integer
 
-    ___ lengthOfLastWord3(self, s):
+    ___ lengthOfLastWord3(, s):
         preLength _ 0 # Length of previous word
         length _ 0 # Length of current word
         ___ letter __ s:

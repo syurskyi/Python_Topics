@@ -13,7 +13,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -23,7 +23,7 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    ___ hasPathSum(self, root, su.):
+    ___ hasPathSum(, root, su.):
         __ root __ N..:
             # Empty tree will always result in False
             r_ F..

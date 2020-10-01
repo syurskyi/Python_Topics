@@ -5,7 +5,7 @@
 
 
 c_ Solution(object):
-    ___ merge(self, A, m, B, n):
+    ___ merge(, A, m, B, n):
         """
         :type A: List[int]
         :type m: int

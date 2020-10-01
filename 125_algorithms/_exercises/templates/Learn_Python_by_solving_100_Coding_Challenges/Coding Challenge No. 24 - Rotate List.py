@@ -6,7 +6,7 @@
 # Solutions:
 
 c_ ListNode(object):
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -17,7 +17,7 @@ c_ Solution:
     # @param head, a ListNode
     # @param k, an integer
     # @return a ListNode
-    ___ rotateRight(self, head, k):
+    ___ rotateRight(, head, k):
         __ head __ N..:
             r_ N..
         temp _ head

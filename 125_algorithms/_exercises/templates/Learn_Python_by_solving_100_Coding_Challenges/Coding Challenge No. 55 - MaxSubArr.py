@@ -8,7 +8,7 @@
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ maxSubArray(self, A):
+    ___ maxSubArray(, A):
         __ le.(A)__0:
             r_ 0
         temp _ 0

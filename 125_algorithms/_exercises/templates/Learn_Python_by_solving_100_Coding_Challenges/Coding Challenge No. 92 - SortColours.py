@@ -8,7 +8,7 @@
 c_ Solution:
     # @param A a list of integers
     # @return sorted A, sort in place
-    ___ sortColors(self, A):
+    ___ sortColors(, A):
         color_[0]*3
         ___ i __ A:
             color[i] +_ 1

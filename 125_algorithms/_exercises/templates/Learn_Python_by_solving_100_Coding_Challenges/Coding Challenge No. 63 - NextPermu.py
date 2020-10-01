@@ -12,7 +12,7 @@
 c_ Solution:
     # @param num, a list of integer
     # @return a list of integer
-    ___ nextPermutation(self, num):
+    ___ nextPermutation(, num):
         back _ le.(num) - 2
         w___ back >_ 0:
             front _ le.(num) - 1

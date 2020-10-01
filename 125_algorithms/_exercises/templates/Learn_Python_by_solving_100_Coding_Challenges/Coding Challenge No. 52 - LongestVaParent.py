@@ -9,7 +9,7 @@ c_ Solution:
     # @param s, a string
     # @return an integer
 
-    ___ longestValidParentheses(self, s):
+    ___ longestValidParentheses(, s):
         maxlen, stack, last _ 0,   # list, -1
         ___ i __ ra..(le.(s)):
             __ s[i]__'(':

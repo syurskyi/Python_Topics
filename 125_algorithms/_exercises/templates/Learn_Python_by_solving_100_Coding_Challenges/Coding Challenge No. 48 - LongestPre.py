@@ -7,7 +7,7 @@
 
 c_ Solution:
     # @return a string
-    ___ longestCommonPrefix(self, strs):
+    ___ longestCommonPrefix(, strs):
         __ le.(strs) __ 0:
             r_ ""
         ___ i __ ra..(le.(strs[0])-1,-1,-1):

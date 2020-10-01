@@ -8,7 +8,7 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber(self, A):
+    ___ singleNumber(, A):
         result _ 0
         ___ i __ A:
             result ^_ i

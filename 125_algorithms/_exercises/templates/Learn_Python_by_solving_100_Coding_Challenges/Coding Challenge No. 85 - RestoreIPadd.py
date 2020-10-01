@@ -8,12 +8,12 @@
 c_ Solution:
     # @param s, a string
     # @return a list of strings
-    ___ restoreIpAddresses(self, s):
+    ___ restoreIpAddresses(, s):
         solution _   # list
         restoreIpAddressesRec(s,0,0,  # list,solution)
         r_ solution
 
-    ___ restoreIpAddressesRec(self, s, index, octets, tempSolution, solution):
+    ___ restoreIpAddressesRec(, s, index, octets, tempSolution, solution):
         __ le.(s)-index<4-octets:
             r_
         __ le.(s)-index>3*(4-octets):

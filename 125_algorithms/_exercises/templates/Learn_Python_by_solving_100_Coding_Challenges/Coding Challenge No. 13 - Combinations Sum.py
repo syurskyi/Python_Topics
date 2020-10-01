@@ -11,13 +11,13 @@
 # Solutions:
 
 c_ Solution:
-    ___ combinationSum(self, candidates, target):
+    ___ combinationSum(, candidates, target):
         candidates.sort()
         res_  # list
         DFS(candidates,target,0,res,  # list)
         r_ res
 
-    ___ DFS(self,candidates,target,start,res,intermedia):
+    ___ DFS(,candidates,target,start,res,intermedia):
         __ target__0:
             res.ap..(intermedia)
             r_

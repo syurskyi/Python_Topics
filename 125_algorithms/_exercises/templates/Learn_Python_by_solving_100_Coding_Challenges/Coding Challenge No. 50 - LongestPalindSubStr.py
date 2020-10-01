@@ -7,7 +7,7 @@ c_ Solution:
     # @param {string} s
     # @return {string}
 
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome(, s):
         l _ le.(s)
         __ l <_ 2:
             __ (s[0] !_ s[l-1]):
@@ -24,7 +24,7 @@ c_ Solution:
                 result _ palindrome
         r_ result
 
-    ___ SearchPalindrome(self, string, start, end):
+    ___ SearchPalindrome(, string, start, end):
         w___(start>_0 an. end < le.(string) an. string[start]__string[end]):
             start -_ 1
             end +_ 1

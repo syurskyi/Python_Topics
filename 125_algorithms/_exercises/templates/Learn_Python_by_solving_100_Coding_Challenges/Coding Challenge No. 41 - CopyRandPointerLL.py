@@ -6,7 +6,7 @@
 
 
 c_ RandomListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
         ra__ _ N..
@@ -16,7 +16,7 @@ c_ Solution:
     # @param ll, a RandomListNode
     # @return a RandomListNode
 
-    ___ copyRandomList(self, ll):
+    ___ copyRandomList(, ll):
         # copy and combine copied list with original list
         current _ ll
         w___ current:

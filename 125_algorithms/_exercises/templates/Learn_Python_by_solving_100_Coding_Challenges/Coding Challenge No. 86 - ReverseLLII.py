@@ -9,7 +9,7 @@
 
 
 c_ ListNode(object):
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -18,7 +18,7 @@ c_ ListNode(object):
 
 
 c_ Solution(object):
-    ___ reverseBetween(self, head, m, n):
+    ___ reverseBetween(, head, m, n):
         """
         :type head: ListNode
         :type m: int

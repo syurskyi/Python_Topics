@@ -11,7 +11,7 @@ c_ Solution:
     # @param num, a list of integer
     # @return an integer
 
-    ___ longestConsecutive(self, num):
+    ___ longestConsecutive(, num):
         startToEnd _ {}
         endToStart _ {}
         longest _ 0

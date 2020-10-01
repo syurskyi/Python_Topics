@@ -11,7 +11,7 @@
 # Solutions:
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..

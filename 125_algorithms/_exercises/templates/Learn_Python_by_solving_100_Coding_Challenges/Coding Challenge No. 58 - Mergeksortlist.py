@@ -4,7 +4,7 @@
 
 
 c_ ListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -12,7 +12,7 @@ c_ ListNode:
 c_ Solution:
     # @param a list of ListNode
     # @return a ListNode
-    ___ mergeKLists(self, lists):
+    ___ mergeKLists(, lists):
         __ le.(lists)__0:
             r_ N..
         w___ le.(lists)>1:
@@ -24,7 +24,7 @@ c_ Solution:
             lists _ nextLists
         r_ lists[0]
 
-    ___ mergeLists(self, list1, list2):
+    ___ mergeLists(, list1, list2):
         dummy _ ListNode(0)
         li.. _ dummy
         w___ list1 !_ N.. an. list2 !_ N..:
@@ -41,7 +41,7 @@ c_ Solution:
             li...next _ list1
         r_ dummy.next
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

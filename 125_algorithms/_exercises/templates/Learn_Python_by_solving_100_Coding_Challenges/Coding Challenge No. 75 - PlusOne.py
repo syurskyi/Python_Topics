@@ -7,7 +7,7 @@
 c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    ___ plusOne(self, digits):
+    ___ plusOne(, digits):
         flag _ 1
         ___ i __ ra..(le.(digits)-1, -1, -1):
             __ digits[i] + flag __ 10:

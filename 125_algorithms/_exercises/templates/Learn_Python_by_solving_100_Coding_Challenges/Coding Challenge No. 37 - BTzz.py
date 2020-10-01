@@ -12,7 +12,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -21,7 +21,7 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return a list of lists of integers
-    ___ zigzagLevelOrder(self, root):
+    ___ zigzagLevelOrder(, root):
         solution _   # list
         thisLevel _  # list
         __ root !_ N..:

@@ -8,7 +8,7 @@ c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
-    ___ pow_recursive(self, x, n):
+    ___ pow_recursive(, x, n):
         __ n__0:
             r_ 1
         __ n<0:
@@ -22,7 +22,7 @@ c_ Solution:
     # @param n, a integer
     # @return a float
 
-    ___ pow_iterative(self, x, n):
+    ___ pow_iterative(, x, n):
         result_1
         __ n<0:
             n_-n

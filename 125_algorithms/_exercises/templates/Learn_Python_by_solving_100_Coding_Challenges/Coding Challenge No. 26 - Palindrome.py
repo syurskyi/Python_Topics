@@ -7,7 +7,7 @@
 c_ Solution:
     # @param s, a string
     # @return a boolean
-    ___ isPalindrome(self, s):
+    ___ isPalindrome(, s):
         __ le.(s) < 2:
             r_ T..
         head, tail _ 0, le.(s)-1

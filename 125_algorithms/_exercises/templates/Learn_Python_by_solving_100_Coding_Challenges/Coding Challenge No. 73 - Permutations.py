@@ -9,7 +9,7 @@
 c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
-    ___ permute(self, num):
+    ___ permute(, num):
         __ le.(num) __ 0:
             r_   # list
         __ le.(num) __ 1:

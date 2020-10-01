@@ -11,7 +11,7 @@ c_ Solution:
     @param A: a list of integers
     @return an integer
     """
-    ___ removeDuplicates(self, A):
+    ___ removeDuplicates(, A):
         # write your code here
         __ A __   # list:
             r_ 0

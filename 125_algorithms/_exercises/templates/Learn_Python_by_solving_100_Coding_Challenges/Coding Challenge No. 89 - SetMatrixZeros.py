@@ -5,7 +5,7 @@
 c_ Solution:
     # @param matrix, a list of lists of integers
     # RETURN NOTHING, MODIFY matrix IN PLACE.
-    ___ setZeroes(self, matrix):
+    ___ setZeroes(, matrix):
         m , n _ le.(matrix), le.(matrix[0])
         temp _ [[matrix[i][j] ___ j __ ra..(n)] ___ i __ ra..(m)]
         ___ i __ ra..(m):
@@ -13,7 +13,7 @@ c_ Solution:
                 __ no. temp[i][j]:
                     setZero(i,j,n,m,matrix)
 
-    ___ setZero(self,row,col,n,m,matrix):
+    ___ setZero(,row,col,n,m,matrix):
         ___ i __ ra..(m):
             matrix[i][col]_0
         ___ j __ ra..(n):

@@ -10,7 +10,7 @@
 
 
 c_ Solution:
-    ___ fourSum(self, nums, target):
+    ___ fourSum(, nums, target):
         answer _   # list
         nums.sort()
         length _ le.(nums)

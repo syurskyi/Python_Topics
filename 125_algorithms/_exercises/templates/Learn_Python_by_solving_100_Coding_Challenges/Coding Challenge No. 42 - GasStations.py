@@ -10,7 +10,7 @@ c_ Solution:
     # @param cost, a list of integers
     # @return an integer
 
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit(, gas, cost):
         __ su.(gas) < su.(cost):
             r_ -1
         n _ le.(gas)

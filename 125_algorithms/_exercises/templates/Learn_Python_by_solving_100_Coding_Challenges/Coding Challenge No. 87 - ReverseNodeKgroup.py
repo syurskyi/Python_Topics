@@ -8,7 +8,7 @@
 
 
 c_ ListNode(object):
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -17,7 +17,7 @@ c_ ListNode(object):
 
 
 c_ Solution(object):
-    ___ reverseKGroup(self, head, k):
+    ___ reverseKGroup(, head, k):
         """
         :type head: ListNode
         :type k: int
@@ -32,7 +32,7 @@ c_ Solution(object):
             temp _ reverseNextK(temp, k)
         r_ dummy.next
 
-    ___ reverseNextK(self, head, k):
+    ___ reverseNextK(, head, k):
         # Check if there are k nodes left
         temp _ head
         ___ i __ ra..(k):

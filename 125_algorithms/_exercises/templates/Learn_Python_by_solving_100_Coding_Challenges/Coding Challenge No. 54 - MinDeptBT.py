@@ -5,7 +5,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -14,7 +14,7 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ minDepth(self, root):
+    ___ minDepth(, root):
         __ root __ N..:
             r_ 0
         __ root.left __ N..:

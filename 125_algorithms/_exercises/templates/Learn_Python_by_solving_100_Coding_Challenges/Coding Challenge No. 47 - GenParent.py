@@ -7,7 +7,7 @@
 c_ Solution:
     # @param an integer
     # @return a list of string
-    ___ helpler(self, l, r, item, res):
+    ___ helpler(, l, r, item, res):
         __ r < l:
             r_
         __ l __ 0 an. r __ 0:
@@ -17,7 +17,7 @@ c_ Solution:
         __ r > 0:
             helpler(l, r - 1, item + ')', res)
 
-    ___ generateParenthesis(self, n):
+    ___ generateParenthesis(, n):
         __ n __ 0:
             r_   # list
         res _   # list

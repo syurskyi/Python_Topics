@@ -7,17 +7,17 @@
 
 
 c_ Interval:
-    ___  -(self, s_0, e_0):
+    ___  -(, s_0, e_0):
         start _ s
         end _ e
-    ___ printIn(self,i):
+    ___ printIn(,i):
         print ("[%d ,%d]"%(i.start,i.end))
 
 
 c_ Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
-    ___ merge(self, intervals):
+    ___ merge(, intervals):
         intervals.sort(key _ lambda x:x.start)
         length_len(intervals)
         res_  # list

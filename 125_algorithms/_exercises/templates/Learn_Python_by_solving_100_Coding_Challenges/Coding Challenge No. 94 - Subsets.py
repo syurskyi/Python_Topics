@@ -9,7 +9,7 @@
 c_ Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
-    ___ subsets(self, nums):
+    ___ subsets(, nums):
         __ nums is N..:
             r_   # list
         result _   # list
@@ -17,7 +17,7 @@ c_ Solution:
         dfs(nums, 0,   # list, result)
         r_ result
 
-    ___ dfs(self, nums, pos, list_temp, ret):
+    ___ dfs(, nums, pos, list_temp, ret):
         # append new object with []
         ret.ap..(  # list + list_temp)
         ___ i __ ra..(pos, le.(nums)):

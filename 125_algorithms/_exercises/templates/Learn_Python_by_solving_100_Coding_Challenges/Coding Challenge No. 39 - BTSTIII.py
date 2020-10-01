@@ -6,7 +6,7 @@
 c_ Solution:
     # @param prices, a list of integer
     # @return an integer
-    ___ maxProfit(self, prices):
+    ___ maxProfit(, prices):
         length_len(prices)
         __ length__0:
             r_ 0

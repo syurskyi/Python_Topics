@@ -5,7 +5,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -15,13 +15,13 @@ c_ Solution:
     # @param inorder, a list of integers
     # @param postorder, a list of integers
     # @return a tree node
-    ___ buildTree(self, inorder, postorder):
+    ___ buildTree(, inorder, postorder):
         __ no. inorder:
             r_ N.. # inorder is empty
         inorder, postorder _ inorder, postorder
         r_ dfs(0, 0, le.(inorder))
 
-    ___ dfs(self, inLeft, postLeft, Len):
+    ___ dfs(, inLeft, postLeft, Len):
         __ Len <_ 0:
             r_ N..
         root _ TreeNode(postorder[postLeft + Len - 1])

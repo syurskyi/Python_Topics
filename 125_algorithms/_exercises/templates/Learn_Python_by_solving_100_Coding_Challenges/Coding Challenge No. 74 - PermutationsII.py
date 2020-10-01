@@ -9,7 +9,7 @@
 c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
-    ___ permuteUnique(self, num):
+    ___ permuteUnique(, num):
         length _ le.(num)
         __ length __ 0:
             r_   # list

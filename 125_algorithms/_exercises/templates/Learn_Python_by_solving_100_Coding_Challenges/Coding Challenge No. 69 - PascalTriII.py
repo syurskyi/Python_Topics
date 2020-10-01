@@ -7,7 +7,7 @@
 
 c_ Solution:
     # @return a list of integers
-    ___ getRow(self, rowIndex):
+    ___ getRow(, rowIndex):
         __ rowIndex __ 0:
             r_ [1]
         __ rowIndex __ 1:

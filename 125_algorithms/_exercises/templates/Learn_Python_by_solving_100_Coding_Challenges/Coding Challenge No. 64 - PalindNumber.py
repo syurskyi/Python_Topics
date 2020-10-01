@@ -8,7 +8,7 @@ c_ Solution:
     :type x: int
     :rtype: bool
     """
-    ___ isPalindrome(self, x):
+    ___ isPalindrome(, x):
         __ x < 0:
             r_ F..
         div _ 1

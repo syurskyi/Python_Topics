@@ -5,7 +5,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -14,12 +14,12 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ maxDepth_recursive(self, root):
+    ___ maxDepth_recursive(, root):
         __ root __ N..:
             r_ 0
         r_ ma.(maxDepth(root.left),maxDepth(root.right))+1
 
-    ___ maxDepth_interative(self, root):
+    ___ maxDepth_interative(, root):
         __ root __ N..:
             r_ 0
         nodeStack _ [root]

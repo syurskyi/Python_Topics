@@ -8,7 +8,7 @@
 
 c_ Solution:
     # @return an integer
-    ___ lengthOfLongestSubstring(self, s):
+    ___ lengthOfLongestSubstring(, s):
         lastRepeating _ -1
         longestSubstring _ 0
         positions _ {}

@@ -8,20 +8,20 @@
 
 
 c_ ListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
 
 c_ Solution:
-    ___ getlength(self,head):
+    ___ getlength(,head):
         res _ 0
         w___(head):
             res +_ 1
             head _ head.next
         r_ res
 
-    ___ removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd(, head, n):
         """
         :type head: ListNode
         :type n: int
@@ -36,7 +36,7 @@ c_ Solution:
         node.next _ node.next.next
         r_ head
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

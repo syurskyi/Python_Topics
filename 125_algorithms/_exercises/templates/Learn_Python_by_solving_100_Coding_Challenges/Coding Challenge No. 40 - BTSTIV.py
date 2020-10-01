@@ -9,7 +9,7 @@ c_ Solution:
     @param prices: a list of integer
     @return: an integer which is maximum profit
     """
-    ___ maxProfit(self, k, prices):
+    ___ maxProfit(, k, prices):
         __ prices is N.. o. le.(prices) <_ 1 o. k <_ 0:
             r_ 0
         n _ le.(prices)
@@ -30,7 +30,7 @@ c_ Solution:
         r_ f[n][k]
 
         # calculate the profit of prices(l, u)
-        ___ profit(self, prices, l, u):
+        ___ profit(, prices, l, u):
             __ l >_ u:
                 r_ 0
             valley _ 2**31 - 1

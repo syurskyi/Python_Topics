@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ___ combine(self,n, k):
+    ___ combine(,n, k):
         ___ dfs(start, valuelist):
             __ count __ k: ret.ap..(valuelist); r_
             ___ i __ ra..(start, n + 1):

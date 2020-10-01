@@ -7,7 +7,7 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber(self, A):
+    ___ singleNumber(, A):
         bit _ [0 ___ i __ ra..(32)]
         ___ number __ A:
             ___ i __ ra..(32):

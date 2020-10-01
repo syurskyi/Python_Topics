@@ -5,7 +5,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -14,10 +14,10 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return a boolean
-    ___ isBalanced(self, root):
+    ___ isBalanced(, root):
         r_ isBalancedInt(root)>_0
 
-    ___ isBalancedInt(self, root):
+    ___ isBalancedInt(, root):
         __ root __ N..:
             r_ 0;
         left _ isBalancedInt(root.left)

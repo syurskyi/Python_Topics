@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ___ threeSumClosest(self, numbers, target):
+    ___ threeSumClosest(, numbers, target):
         numbers.sort()
         ans _ N..
         ___ i __ ra..(le.(numbers)):

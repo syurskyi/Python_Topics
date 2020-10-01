@@ -10,7 +10,7 @@
 
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations(self, digits):
+    ___ letterCombinations(, digits):
         ___ dfs(num, string, res):
             __ num __ length:
                 res.ap..(string)

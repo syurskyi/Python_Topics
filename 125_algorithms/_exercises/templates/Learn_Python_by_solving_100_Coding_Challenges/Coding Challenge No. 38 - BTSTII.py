@@ -6,7 +6,7 @@
 c_ Solution:
     # @param prices, a list of integer
     # @return an integer
-    ___ maxProfit(self, prices):
+    ___ maxProfit(, prices):
         maxProfit _ 0
         ___ index __ ra..(le.(prices)-1):
             __ prices[index+1] > prices[index]:

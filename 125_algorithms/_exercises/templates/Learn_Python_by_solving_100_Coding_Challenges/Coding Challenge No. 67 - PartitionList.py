@@ -8,7 +8,7 @@
 
 
 c_ ListNode:
-    ___  -(self, x, next_None):
+    ___  -(, x, next_None):
         val _ x
         next _ next
 
@@ -17,7 +17,7 @@ c_ Solution:
     # @param head, a ListNode
     # @param x, an integer
     # @return a ListNode
-    ___ partition(self, head, x):
+    ___ partition(, head, x):
         smaller _ ListNode(-1)
         others _ ListNode(-1)
         smallerLast, othersLast _ smaller, others
@@ -33,7 +33,7 @@ c_ Solution:
         othersLast.next _ N..
         r_ smaller.next
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

@@ -11,7 +11,7 @@
 c_ Solution:
     # @param A, a list of integers
     # @return a boolean
-    ___ canJump(self, A):
+    ___ canJump(, A):
         step _ A[0]
         ___ i __ ra..(1, le.(A)):
             __ step > 0:

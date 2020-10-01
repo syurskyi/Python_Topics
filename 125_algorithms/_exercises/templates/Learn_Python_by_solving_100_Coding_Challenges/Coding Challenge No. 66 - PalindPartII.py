@@ -8,14 +8,14 @@ c_ Solution:
     # @param s, a string
     # @return an integer
 
-    ___ partitionII(self, s):
+    ___ partitionII(, s):
         n _ le.(s)
         f _   # list
         p _ [[F.. ___ x __ ra..(n)] ___ x __ ra..(n)]
         #the worst case is cutting by each char
         ___ i __ ra..(n+1):
             f.ap..(n - 1 - i) # the last one, f[n]=-1
-        ___ i __ reversed(ra..(n)):
+        ___ i __ r..(ra..(n)):
             ___ j __ ra..(i, n):
                 __ (s[i] __ s[j] an. (j - i < 2 o. p[i + 1][j - 1])):
                     p[i][j] _ T..

@@ -11,14 +11,14 @@
 
 
 c_ Solution:
-    ___ combinationSum2(self, candidates, target):
+    ___ combinationSum2(, candidates, target):
         __ no. candidates:
             r_   # list
         candidates.sort()
         result _   # list
         combination(candidates, target,   # list, result)
         r_ result
-    ___ combination(self, candidates, target, current, result):
+    ___ combination(, candidates, target, current, result):
         s _ su.(current) __ current ____ 0
         __ s > target:
             r_

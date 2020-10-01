@@ -13,7 +13,7 @@
 
 
 c_ TreeNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         left _ N..
         right _ N..
@@ -21,7 +21,7 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return nothing, do it in place
-    ___ flatten(self, root):
+    ___ flatten(, root):
         __ root __ N..:
             r_
         stack _ [root.right, root.left]
@@ -39,7 +39,7 @@ c_ Solution:
 
         r_ root
 
-        ___ printtree(self, tree_node):
+        ___ printtree(, tree_node):
             __ tree_node.left is no. N..:
                 printtree(tree_node.left)
             print(tree_node.val)

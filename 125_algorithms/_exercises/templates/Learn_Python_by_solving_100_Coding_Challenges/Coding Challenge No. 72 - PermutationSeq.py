@@ -9,13 +9,13 @@
 c_ Solution:
     # @param n,k: integers with 1 <= n <= 9
     # @return a string
-    ___ getPermutation(self, n, k):
+    ___ getPermutation(, n, k):
         res _ ''
         k -_ 1
         fac _ 1
         ___ i __ ra..(1, n): fac *_ i
         num _ [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        ___ i __ reversed(ra..(n)):
+        ___ i __ r..(ra..(n)):
             curr _ num[in.(k/fac)]
             res +_ st.(curr)
             num.r..(curr)

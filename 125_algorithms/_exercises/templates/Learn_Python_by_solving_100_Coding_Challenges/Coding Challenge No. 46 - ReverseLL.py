@@ -4,7 +4,7 @@
 
 
 c_ ListNode:
-    ___  -(self, val, next_None):
+    ___  -(, val, next_None):
         val _ val
         next _ next
 
@@ -13,7 +13,7 @@ c_ Solution:
     # @param {ListNode} head
     # @return {ListNode}
 
-    ___ reverseList(self, head):
+    ___ reverseList(, head):
         result _ N..
         node _ head
         w___ node !_ N..:
@@ -23,7 +23,7 @@ c_ Solution:
             node _ tmp
         r_ result
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

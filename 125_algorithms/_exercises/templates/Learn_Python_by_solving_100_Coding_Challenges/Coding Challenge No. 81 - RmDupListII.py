@@ -6,7 +6,7 @@
 # Solutions:
 
 c_ ListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -14,7 +14,7 @@ c_ ListNode:
 c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
-    ___ deleteDuplicates(self, head):
+    ___ deleteDuplicates(, head):
         __ head __ N..:
             r_ N..
         dummy _ ListNode(10**10)
@@ -37,7 +37,7 @@ c_ Solution:
             curr _ curr.next
         r_ head.next
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

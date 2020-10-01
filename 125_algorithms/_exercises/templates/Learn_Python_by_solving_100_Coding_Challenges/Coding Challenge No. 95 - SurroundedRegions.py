@@ -16,7 +16,7 @@
 
 ______ collections
 c_ Solution:
-    ___ solve(self, board):
+    ___ solve(, board):
         __ board __   # list:
             r_   # list
         lineNum _ le.(board)

@@ -9,7 +9,7 @@
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ jump(self, A):
+    ___ jump(, A):
         p _ [0]
         ___ i __ ra..(le.(A) - 1):
             w___(i + A[i] >_ le.(p) an. le.(p) < le.(A)):

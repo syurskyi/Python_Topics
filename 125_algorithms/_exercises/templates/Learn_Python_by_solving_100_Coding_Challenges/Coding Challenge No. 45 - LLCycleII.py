@@ -5,7 +5,7 @@
 
 
 c_ ListNode:
-    ___  -(self, val, next_None):
+    ___  -(, val, next_None):
         val _ val
         next _ next
 
@@ -16,7 +16,7 @@ c_ Solution:
     @return: the node where the cycle begins. If there is no cycle, return null
     """
 
-    ___ detectCycle(self, head):
+    ___ detectCycle(, head):
         __ head __ N.. o. head.next __ N..:
             r_ N..
         slow _ fast _ head

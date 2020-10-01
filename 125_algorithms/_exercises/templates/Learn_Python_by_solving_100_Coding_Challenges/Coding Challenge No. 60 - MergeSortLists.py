@@ -4,7 +4,7 @@
 
 
 c_ ListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
@@ -12,7 +12,7 @@ c_ ListNode:
 c_ Solution:
     # @param two ListNodes
     # @return a ListNode
-    ___ mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists(, l1, l2):
         dummy _ ListNode(0)
         pointer _ dummy
         w___ l1 !_None an. l2 !_None:
@@ -29,7 +29,7 @@ c_ Solution:
             pointer.next _ l1
             r_ dummy.next
 
-    ___ printll(self, node):
+    ___ printll(, node):
         w___ node:
             print ( node.val )
             node _ node.next

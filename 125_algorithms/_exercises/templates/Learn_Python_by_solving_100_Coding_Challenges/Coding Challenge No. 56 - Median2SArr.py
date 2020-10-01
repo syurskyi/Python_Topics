@@ -7,7 +7,7 @@ c_ Solution:
     @param A, B: integer arrays.
     @return: a double whose format is *.5 or *.0
     """
-    ___ findMedianSortedArrays(self, A, B):
+    ___ findMedianSortedArrays(, A, B):
         n _ le.(A) + le.(B)
         __ n % 2 __ 1:
             r_ findKth(A, B, in.(n / 2 + 1))
@@ -16,7 +16,7 @@ c_ Solution:
             bigger _ findKth(A, B, in.(n / 2 + 1))
             r_ (smaller + bigger) / 2.0
 
-    ___ findKth(self, A, B, k):
+    ___ findKth(, A, B, k):
         __ le.(A) __ 0:
             r_ B[k - 1]
         __ le.(B) __ 0:

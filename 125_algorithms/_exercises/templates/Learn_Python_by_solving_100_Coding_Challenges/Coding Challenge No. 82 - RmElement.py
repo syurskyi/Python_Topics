@@ -9,7 +9,7 @@ c_ Solution:
     # @param A a list of integers
     # @param elem an integer, value need to be removed
     # @return an integer
-    ___ removeElement(self, A, elem):
+    ___ removeElement(, A, elem):
         k _ 0
         ___ i __ A:
             __ i !_ elem:

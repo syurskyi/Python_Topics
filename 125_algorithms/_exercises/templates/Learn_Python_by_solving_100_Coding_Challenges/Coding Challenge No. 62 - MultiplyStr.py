@@ -7,7 +7,7 @@ c_ Solution:
     # @param num1, a string
     # @param num2, a string
     # @return a string
-    ___ multiply(self, num1, num2):
+    ___ multiply(, num1, num2):
         r_ st.(in.(num1)*in.(num2))
 
 

@@ -8,7 +8,7 @@
 c_ Solution:
     # @param s, a string
     # @return a boolean
-    ___ _isPalindrome(self, s):
+    ___ _isPalindrome(, s):
         begin, end _ 0, le.(s)-1
         w___ begin < end:
             __ s[begin] !_ s[end]:
@@ -21,7 +21,7 @@ c_ Solution:
     # @param s, a string
     # @return a list of lists of string
 
-    ___ partition(self, s):
+    ___ partition(, s):
         __ le.(s) __ 0:
             r_   # list
         __ le.(s) __ 1:

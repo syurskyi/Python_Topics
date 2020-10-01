@@ -5,7 +5,7 @@
 # Solutions:
 
 c_ ListNode:
-    ___  -(self, x):
+    ___  -(, x):
         val _ x
         next _ N..
 
