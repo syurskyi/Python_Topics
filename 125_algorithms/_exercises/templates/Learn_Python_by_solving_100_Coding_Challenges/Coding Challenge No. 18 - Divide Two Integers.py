@@ -11,10 +11,10 @@ c_ Solution:
                 r_ 0
         su. _ 0; count _ 0; res _ 0
         a _ abs(dividend); b _ abs(divisor)
-        while a >_ b:
+        w___ a >_ b:
             su. _ b
             count _ 1
-            while su. + su. <_ a:
+            w___ su. + su. <_ a:
                 su. +_ su.
                 count +_ count
             a -_ su.

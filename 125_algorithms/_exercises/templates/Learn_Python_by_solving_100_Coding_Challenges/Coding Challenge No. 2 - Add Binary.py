@@ -15,14 +15,14 @@ c_ Solution:
             b _ '0' * ( le.(a) - le.(b) ) + b
         Carry _ 0
         i _ le.(a) - 1
-        while i >_ 0:
+        w___ i >_ 0:
             __ in.(a[i]) + in.(b[i]) + Carry __ 3:
                 su.[i+1] _ '1'
                 Carry _ 1
-            elif in.(a[i]) + in.(b[i]) + Carry __ 2:
+            ____ in.(a[i]) + in.(b[i]) + Carry __ 2:
                 su.[i+1] _ '0'
                 Carry _ 1
-            elif in.(a[i]) + in.(b[i]) + Carry __ 1:
+            ____ in.(a[i]) + in.(b[i]) + Carry __ 1:
                 su.[i+1] _ '1'
                 Carry _ 0
             ____
@@ -33,7 +33,7 @@ c_ Solution:
             su.[0] _ '1'
         __ Carry __ 0:
             su. _ su.[1:length]
-        su. _ ''.join(su.)
+        su. _ ''.j..(su.)
         r_ su.
 
 Solution.addBinary("11","1")

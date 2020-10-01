@@ -28,7 +28,7 @@ c_ Solution(object):
         dummy _ ListNode(-1)
         dummy.next _ head
         temp _ dummy
-        while temp:
+        w___ temp:
             temp _ reverseNextK(temp, k)
         r_ dummy.next
 

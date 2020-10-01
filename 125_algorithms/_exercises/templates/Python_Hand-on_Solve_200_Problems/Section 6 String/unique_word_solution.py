@@ -3,8 +3,8 @@
 # %%
 # Write a Python program that accepts a comma separated sequence of words as input and prints the unique words in sorted form (alphanumerically)
 
-i.. _ input("Input comma separated sequence of words")
-words _ [word ___ word __ i...split(",")]
-print(",".join(sorted(li..(set(words)))))
+i.. _ i..("Input comma separated sequence of words")
+words _ [word ___ word __ i...sp..(",")]
+print(",".j..(s..(li..(se.(words)))))
 
 

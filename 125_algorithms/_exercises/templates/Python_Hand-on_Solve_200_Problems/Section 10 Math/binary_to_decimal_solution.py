@@ -4,7 +4,7 @@
 # Write a Python program to convert a binary number to decimal number.
 
 
-b_num _ li..(input("Input a binary number: "))
+b_num _ li..(i..("Input a binary number: "))
 value _ 0
 
 ___ i __ ra..(le.(b_num)):

@@ -27,12 +27,12 @@ ___ partition(data_list,first,last):
    rightmark _ last
 
    done _ F..
-   while no. done:
+   w___ no. done:
 
-       while leftmark <_ rightmark an. data_list[leftmark] <_ pivotvalue:
+       w___ leftmark <_ rightmark an. data_list[leftmark] <_ pivotvalue:
            leftmark _ leftmark + 1
 
-       while data_list[rightmark] >_ pivotvalue an. rightmark >_ leftmark:
+       w___ data_list[rightmark] >_ pivotvalue an. rightmark >_ leftmark:
            rightmark _ rightmark -1
 
        __ rightmark < leftmark:

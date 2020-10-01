@@ -10,7 +10,7 @@ ___ binary_search(item_listac,item):
 	first _ 0
 	last _ le.(item_list)-1
 	found _ F..
-	while( first<_last an. no. found):
+	w___( first<_last an. no. found):
 		mid _ (first + last)//2
 		__ item_list[mid] __ item :
 			found _ T..

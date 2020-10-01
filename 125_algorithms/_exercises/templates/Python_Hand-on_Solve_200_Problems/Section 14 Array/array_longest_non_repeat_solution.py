@@ -51,14 +51,14 @@ ___ longest_non_repeat(st.):
     i_0
     max_length _ 1
 
-    ___ i,c __ enumerate(st.):
+    ___ i,c __ en..(st.):
 
         # init counter and sub string value         
         start_at _ i
         sub_str_  # list
 
         # continue increase sub string if did not repeat character         
-        while (start_at < le.(st.)) an. (st.[start_at] no. __ sub_str):
+        w___ (start_at < le.(st.)) an. (st.[start_at] no. __ sub_str):
             sub_str.ap..(st.[start_at])
             start_at _ start_at + 1
 

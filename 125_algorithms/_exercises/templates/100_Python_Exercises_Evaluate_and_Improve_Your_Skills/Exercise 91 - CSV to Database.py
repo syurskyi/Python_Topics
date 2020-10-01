@@ -1,13 +1,13 @@
-#Please download the database file database.db and and the ten_more_countries.txt file. Then, add the rows of the text file to the database file.
-______ sqlite3
-______ pandas
-
-data _ pandas.read_csv("ten_more_countries.txt")
-
-conn _ sqlite3.connect("database.db")
-cur _ conn.cursor()
-___ index, row __ data.iterrows
-    print(row["Country"], row["Area"])
-    cur.execute("INSERT INTO countries VALUES (NULL,?,?,NULL)",(row["Country"], row["Area"]))
-conn.commit()
-conn.c..
+# #Please download the database file database.db and and the ten_more_countries.txt file. Then, add the rows of the text file to the database file.
+# ______ ?
+# ______ pandas
+#
+# data _ pandas.read_csv "ten_more_countries.txt"
+#
+# conn _ ?.c.. "database.db"
+# cur _ ?.c..
+# ___ index, row __ ?.i_r..
+#     print r.. "C.."  r.. "A.."
+#     ?.e.. I.. I.. countries V.. (N.. @ @ N..  r.. "C.." r.. "A.."
+# ?.c..
+# ?.c..

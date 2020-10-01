@@ -12,9 +12,9 @@ c_ Solution:
         __ x < 0:
             r_ F..
         div _ 1
-        while in.(x/div) >_ 10:
+        w___ in.(x/div) >_ 10:
             div _ div * 10
-        while x:
+        w___ x:
             left _ in.(x / div)
             right _ x % 10
             __ left !_ right:

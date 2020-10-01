@@ -1,4 +1,4 @@
-fp _ input("Enter file path: ")
+fp _ i..("Enter file path: ")
 
 ___
     file _ o..(fp)

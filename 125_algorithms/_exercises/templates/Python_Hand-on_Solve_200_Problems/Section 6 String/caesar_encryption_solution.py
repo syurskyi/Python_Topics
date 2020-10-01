@@ -28,7 +28,7 @@ ___ caesar_encrypt(realText, step):
 			cryptText.ap..(crypting)
 			newLetter _ uppercase[crypting]
 			outText.ap..(newLetter)
-		elif eachLetter __ lowercase:
+		____ eachLetter __ lowercase:
 			index _ lowercase.index(eachLetter)
 			crypting _ (index + step) % 26
 			cryptText.ap..(crypting)

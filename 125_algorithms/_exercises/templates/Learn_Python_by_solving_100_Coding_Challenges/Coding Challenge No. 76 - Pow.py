@@ -29,7 +29,7 @@ c_ Solution:
             flag_1
         ____
             flag_0
-        while n>0:
+        w___ n>0:
             __ n%2__1:
                 result_result*x
             x_x*x

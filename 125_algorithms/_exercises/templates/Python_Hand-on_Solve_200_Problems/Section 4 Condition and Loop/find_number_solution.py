@@ -6,6 +6,6 @@ nl_  # list
 ___ x __ ra..(1500, 2700):
     __ (x%7__0) an. (x%5__0):
         nl.ap..(st.(x))
-print (','.join(nl))
+print (','.j..(nl))
 
 

@@ -1,5 +1,5 @@
-x _ in.(input("Insert the numerator: "))
-y _ in.(input("Insert the denomiator: "))
+x _ in.(i..("Insert the numerator: "))
+y _ in.(i..("Insert the denomiator: "))
 
 __ x%y __ 0:
     print(x, " is divisible by ", y)

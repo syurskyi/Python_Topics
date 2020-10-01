@@ -14,16 +14,16 @@ ___ is_Sublist(l, s):
 	sub_set _ F..
 	__ s __   # list:
 		sub_set _ T..
-	elif s __ l:
+	____ s __ l:
 		sub_set _ T..
-	elif le.(s) > le.(l):
+	____ le.(s) > le.(l):
 		sub_set _ F..
 
 	____
 		___ i __ ra..(le.(l)):
 			__ l[i] __ s[0]:
 				n _ 1
-				while (n < le.(s)) an. (l[i+n] __ s[n]):
+				w___ (n < le.(s)) an. (l[i+n] __ s[n]):
 					n +_ 1
 				
 				__ n __ le.(s):

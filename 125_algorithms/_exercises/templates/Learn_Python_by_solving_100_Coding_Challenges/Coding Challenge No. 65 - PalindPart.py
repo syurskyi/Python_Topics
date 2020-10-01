@@ -10,7 +10,7 @@ c_ Solution:
     # @return a boolean
     ___ _isPalindrome(self, s):
         begin, end _ 0, le.(s)-1
-        while begin < end:
+        w___ begin < end:
             __ s[begin] !_ s[end]:
                 r_ F..
             ____
@@ -33,7 +33,7 @@ c_ Solution:
         ___ i __ ra..(1, le.(s)):
             head _ s[:i]
             __ no. _isPalindrome(head):
-                continue
+                c..
             tailPartition _ partition(s[i:])
             result.extend([[head] + item ___ item __ tailPartition])
         r_ result

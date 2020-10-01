@@ -16,7 +16,7 @@ c_ Solution:
     ___ reverseList(self, head):
         result _ N..
         node _ head
-        while node !_ N..:
+        w___ node !_ N..:
             tmp _ node.next
             node.next _ result
             result _ node
@@ -24,7 +24,7 @@ c_ Solution:
         r_ result
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 

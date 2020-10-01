@@ -5,7 +5,7 @@
 
 ___ word_count(st.):
     counts _ di..()
-    words _ st..split()
+    words _ st..sp..()
 
     ___ word __ words:
         __ word __ counts:

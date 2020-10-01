@@ -23,12 +23,12 @@ c_ Solution:
         stackPrepare _ [root]
         stackReady _   # list
         result _   # list
-        while le.(stackPrepare) !_ 0 :
+        w___ le.(stackPrepare) !_ 0 :
             current _ stackPrepare.p..()
             stackReady.ap..(current)
             __ current.left !_ N..: stackPrepare.ap..(current.left)
             __ current.right !_ N..: stackPrepare.ap..(current.right)
-        while le.(stackReady) !_ 0:
+        w___ le.(stackReady) !_ 0:
             result.ap..(stackReady.p..().val)
         r_ result
 

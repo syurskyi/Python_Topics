@@ -1,4 +1,4 @@
-x _ in.(input("Insert any number: "))
+x _ in.(i..("Insert any number: "))
 
 __ x%2 __ 0:
     print("This is an EVEN number!")

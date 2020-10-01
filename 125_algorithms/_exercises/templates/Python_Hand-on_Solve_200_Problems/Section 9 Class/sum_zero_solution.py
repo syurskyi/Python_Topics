@@ -9,23 +9,23 @@
 
 c_ py_solution:
  ___ threeSum(self, nums):
-        nums, result, i _ sorted(nums),   # list, 0
-        while i < le.(nums) - 2:
+        nums, result, i _ s..(nums),   # list, 0
+        w___ i < le.(nums) - 2:
             j, k _ i + 1, le.(nums) - 1
-            while j < k:
+            w___ j < k:
                 __ nums[i] + nums[j] + nums[k] < 0:
                     j +_ 1
-                elif nums[i] + nums[j] + nums[k] > 0:
+                ____ nums[i] + nums[j] + nums[k] > 0:
                     k -_ 1
                 ____
                     result.ap..([nums[i], nums[j], nums[k]])
                     j, k _ j + 1, k - 1
-                    while j < k an. nums[j] __ nums[j - 1]:
+                    w___ j < k an. nums[j] __ nums[j - 1]:
                         j +_ 1
-                    while j < k an. nums[k] __ nums[k + 1]:
+                    w___ j < k an. nums[k] __ nums[k + 1]:
                         k -_ 1
             i +_ 1
-            while i < le.(nums) - 2 an. nums[i] __ nums[i - 1]:
+            w___ i < le.(nums) - 2 an. nums[i] __ nums[i - 1]:
                 i +_ 1
         r_ result
 

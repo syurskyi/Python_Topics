@@ -12,7 +12,7 @@
 # g) Day of the month
 # h) Day of week
 
-______ time
+______ ti__
 ______ d_t_
 print("Current date and time: " , d_t_.d_t_.now
 print("Current year: ", d_t_.date.today().s_t_("%Y"))

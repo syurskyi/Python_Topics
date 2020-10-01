@@ -20,7 +20,7 @@ c_ Solution:
         previousNum _ N..
         ___ i __ ra..(length):
             __ num[i] __ previousNum:
-                continue
+                c..
             previousNum _ num[i]
         ___ j __ permuteUnique(num[:i] + num[i+1:]):
             res.ap..([num[i]] + j)

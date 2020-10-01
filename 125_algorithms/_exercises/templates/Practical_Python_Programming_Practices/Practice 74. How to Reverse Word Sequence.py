@@ -1,6 +1,6 @@
 ___ string_rev(st.):
-    st. _ st..split()
+    st. _ st..sp..()
     st..reverse()
-    r_ ' '.join(st.)
+    r_ ' '.j..(st.)
 
-print(string_rev(input("Insert some strings: ")))
+print(string_rev(i..("Insert some strings: "

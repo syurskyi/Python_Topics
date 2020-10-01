@@ -25,7 +25,7 @@ c_ Solution:
         r_ result
 
     ___ SearchPalindrome(self, string, start, end):
-        while(start>_0 an. end < le.(string) an. string[start]__string[end]):
+        w___(start>_0 an. end < le.(string) an. string[start]__string[end]):
             start -_ 1
             end +_ 1
         r_ string[start+1:end]

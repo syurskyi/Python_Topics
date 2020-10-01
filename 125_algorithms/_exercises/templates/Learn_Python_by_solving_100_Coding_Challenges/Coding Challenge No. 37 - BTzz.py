@@ -27,10 +27,10 @@ c_ Solution:
         __ root !_ N..:
             thisLevel.ap..(root)
         leftToRight _ T..
-        while le.(thisLevel)>0:
+        w___ le.(thisLevel)>0:
             levelSolution _   # list
             nextLevel _   # list
-            while le.(thisLevel)>0:
+            w___ le.(thisLevel)>0:
                 node _ thisLevel.p..()
                 levelSolution.ap..(node.val)
                 __ leftToRight:

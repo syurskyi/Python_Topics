@@ -16,7 +16,7 @@ c_ ListNode:
 c_ Solution:
     ___ getlength(self,head):
         res _ 0
-        while(head):
+        w___(head):
             res +_ 1
             head _ head.next
         r_ res
@@ -37,7 +37,7 @@ c_ Solution:
         r_ head
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 

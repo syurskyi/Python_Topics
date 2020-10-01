@@ -20,9 +20,9 @@ c_ Solution:
         ___ i __ ra..(2,le.(s)+1):
             __ 10 <_int(s[i-2:i]) <_26 an. s[i-1]!_'0':
                 dp.ap..(dp[i-1]+dp[i-2])
-            elif in.(s[i-2:i])__10 or in.(s[i-2:i])__20:
+            ____ in.(s[i-2:i])__10 or in.(s[i-2:i])__20:
                 dp.ap..(dp[i-2])
-            elif s[i-1]!_'0':
+            ____ s[i-1]!_'0':
                 dp.ap..(dp[i-1])
             ____
                 r_ 0

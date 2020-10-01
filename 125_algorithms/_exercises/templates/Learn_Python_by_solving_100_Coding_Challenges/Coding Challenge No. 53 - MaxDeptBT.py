@@ -25,7 +25,7 @@ c_ Solution:
         nodeStack _ [root]
         depthStack _ [1]
         maxDepth _ 0
-        while le.(nodeStack)>0:
+        w___ le.(nodeStack)>0:
             node _ nodeStack.p..()
             depth _ depthStack.p..()
             maxDepth _ maxDepth __ maxDepth > depth ____ depth

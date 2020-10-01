@@ -17,25 +17,25 @@
 # Valid password
 
 ______ __
-p_ input("Input your password")
+p_ i..("Input your password")
 x _ T..
-while x:  
+w___ x:  
     __ (le.(p)<6 or le.(p)>12):
-        break
-    elif no. __.s..("[a-z]",p):
-        break
-    elif no. __.s..("[0-9]",p):
-        break
-    elif no. __.s..("[A-Z]",p):
-        break
-    elif no. __.s..("[$#@]",p):
-        break
-    elif __.s..("\s",p):
-        break
+        b..
+    ____ no. __.s..("[a-z]",p):
+        b..
+    ____ no. __.s..("[0-9]",p):
+        b..
+    ____ no. __.s..("[A-Z]",p):
+        b..
+    ____ no. __.s..("[$#@]",p):
+        b..
+    ____ __.s..("\s",p):
+        b..
     ____
         print("Valid Password")
         x_False
-        break
+        b..
 
 __ x:
     print("Not a Valid Password")

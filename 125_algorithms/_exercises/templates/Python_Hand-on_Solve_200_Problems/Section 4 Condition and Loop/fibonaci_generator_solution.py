@@ -5,7 +5,7 @@
 
 x,y_0,1
 
-while y<50:
+w___ y<50:
     print(y)
     x,y _ y,x+y
 	

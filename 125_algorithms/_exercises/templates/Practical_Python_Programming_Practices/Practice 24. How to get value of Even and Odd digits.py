@@ -1,9 +1,9 @@
-x _ in.(input("Insert some numbers: "))
+x _ in.(i..("Insert some numbers: "))
 
 ev _ 0
 od _ 0
 
-while x > 0:
+w___ x > 0:
     __ x%2 __0:
         ev +_ 1
     ____

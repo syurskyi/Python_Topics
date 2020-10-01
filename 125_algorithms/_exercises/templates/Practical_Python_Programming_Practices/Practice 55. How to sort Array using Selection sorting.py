@@ -1,4 +1,4 @@
-from random ______ r_i..
+____ ra__ ______ r_i..
 
 x _ 20
 y _   # list
@@ -8,7 +8,7 @@ ___ i __ ra..(20):
 print(y)
 
 j _ x-1
-while j !_ 0:
+w___ j !_ 0:
     k _ 0
     ___ i __ ra..(1, j+1):
         __ y[i] > y[k]:

@@ -1,7 +1,7 @@
-from math ______ pi
+____ math ______ pi
 
-r _ fl..(input("Insert radius of the orbit(million km): "))
-v _ fl..(input("Insert orbital speed(km/s): "))
+r _ fl..(i..("Insert radius of the orbit(million km): "))
+v _ fl..(i..("Insert orbital speed(km/s): "))
 
 r _ r*1000000
 

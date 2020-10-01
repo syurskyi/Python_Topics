@@ -1,4 +1,4 @@
-#Count files with a .py extension inside the root1 directory]
-______ g__
-file_list_glob.glob1("files","*.py")
-print(le.(file_list))
+# #Count files with a .py extension inside the root1 directory]
+# ______ g__
+# file_list _ g__.g_1 "files","*.py"
+# print(le. ?

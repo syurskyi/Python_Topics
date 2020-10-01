@@ -10,6 +10,6 @@
 
 color1 _ "Red", "Green", "Orange", "White"
 color2 _ "Black", "Green", "White", "Pink"
-print(set(color1) & set(color2))
+print(se.(color1) & se.(color2))
 
 

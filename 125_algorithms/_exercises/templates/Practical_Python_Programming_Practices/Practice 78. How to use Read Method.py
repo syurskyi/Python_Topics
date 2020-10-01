@@ -4,5 +4,5 @@ fp.c..
 
 print(repr(data))
 
-data _ data.split('\n')
+data _ data.sp..('\n')
 print(data)

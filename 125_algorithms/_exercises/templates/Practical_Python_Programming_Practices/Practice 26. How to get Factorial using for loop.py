@@ -1,4 +1,4 @@
-x _ abs(in.(input("Insert any number: ")))
+x _ abs(in.(i..("Insert any number: "
 
 factorial _ 1
 ___ i __ ra..(2, x+1):

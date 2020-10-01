@@ -9,7 +9,7 @@
 # Output abcd
 
 s _ ['a', 'b', 'c', 'd']
-str1 _ ''.join(s)
+str1 _ ''.j..(s)
 print(str1)
 
 

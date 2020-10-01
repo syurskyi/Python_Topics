@@ -13,7 +13,7 @@ ___ line __ o..(fp):
         __ letter !_ ' ' an. pos __ 'out':
             words +_ 1
             pos _ 'in'
-        elif letter __ ' ':
+        ____ letter __ ' ':
             pos _ 'out'
 print("Lines: ",lines)
 print("Words: ",words)

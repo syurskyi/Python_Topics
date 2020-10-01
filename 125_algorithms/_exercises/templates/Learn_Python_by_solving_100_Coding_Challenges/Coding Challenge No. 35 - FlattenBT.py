@@ -26,10 +26,10 @@ c_ Solution:
             r_
         stack _ [root.right, root.left]
         current _ root
-        while le.(stack) !_ 0:
+        w___ le.(stack) !_ 0:
             nextNode _ stack.p..()
             __ nextNode __ N..:
-                continue
+                c..
             ____
                 current.left _ N..
                 current.right _ nextNode

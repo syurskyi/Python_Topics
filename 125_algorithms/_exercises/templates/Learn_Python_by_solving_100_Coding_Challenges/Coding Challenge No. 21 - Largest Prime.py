@@ -8,7 +8,7 @@ c_ Solution:
     # @return an integer
     ___ largest_prime_of(n):
         i _ 2
-        while i * i <_ n:
+        w___ i * i <_ n:
             __ n % i:
                 i +_ 1
             ____

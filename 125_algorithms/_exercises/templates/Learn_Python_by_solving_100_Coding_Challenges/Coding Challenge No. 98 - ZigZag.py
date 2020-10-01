@@ -26,10 +26,10 @@ c_ Solution:
             zigzag[row] +_ c,
             __ row __ 0:
                 step _ 1
-            elif row __ numRows - 1:
+            ____ row __ numRows - 1:
                 step _ -1
             row +_ step
-        r_ ''.join(functools.reduce(operator.add, zigzag))
+        r_ ''.j..(functools.reduce(operator.add, zigzag))
 
 
 Solution().convert("PAYPALISHIRING", 3)

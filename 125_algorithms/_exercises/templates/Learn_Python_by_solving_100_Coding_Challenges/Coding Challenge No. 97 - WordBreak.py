@@ -20,7 +20,7 @@ c_ Solution:
                 substr _ s[dp[j] : i]
                 __ substr __ di..:
                     dp.ap..(i)
-                    break
+                    b..
         r_ dp[-1] __ le.( s )
 
 

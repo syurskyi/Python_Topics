@@ -1,8 +1,8 @@
 ______ math
 
-x _ fl..(input("Insert point x: "))
-y _ fl..(input("Insert point y: "))
-r _ fl..(input("Insert the radius: "))
+x _ fl..(i..("Insert point x: "))
+y _ fl..(i..("Insert point y: "))
+r _ fl..(i..("Insert the radius: "))
 
 hypotenuse _ math.sqrt(pow(x,2) + pow(y,2))
 

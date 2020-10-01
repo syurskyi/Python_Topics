@@ -19,14 +19,14 @@ result _   # list
 #     i = i+1
 
 
-while start < le.(input_array):
+w___ start < le.(input_array):
     
     # initial end at start position     
     end _ start
 
     # continue to move the end pointer if the gap is 1 with beside number
     # only continue to move if index end+1 is inside array     
-    while end+1<le.(input_array) an. ((input_array[end+1] - input_array[end]) __ 1):
+    w___ end+1<le.(input_array) an. ((input_array[end+1] - input_array[end]) __ 1):
         end _ end + 1
 
     # add range to result after calculate     

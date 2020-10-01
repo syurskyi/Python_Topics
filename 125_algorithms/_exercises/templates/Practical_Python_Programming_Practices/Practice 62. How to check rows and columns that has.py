@@ -1,4 +1,4 @@
-from random ______ random
+____ ra__ ______ ra__
 
 row _ 5
 col _ 10
@@ -6,13 +6,13 @@ matrix _   # list
 ___ i __ ra..(row):
     myrow _   # list
     ___ j __ ra..(col):
-        myrow.ap..(in.(random()*50)+10)
+        myrow.ap..(in.(ra__()*50)+10)
     matrix.ap..(myrow)
 
 ___ myrow __ matrix:
     print(myrow)
 
-num _ in.(input("Range of numbers(10-50): "))
+num _ in.(i..("Range of numbers(10-50): "))
 
 print("Rows: ", end_' ')
 ___ i __ ra..(row):
@@ -25,5 +25,5 @@ ___ j __ ra..(col):
     ___ i __ ra..(row):
         __ matrix[i][j] __ num:
             print(j, end_' ')
-            break
+            b..
 print()

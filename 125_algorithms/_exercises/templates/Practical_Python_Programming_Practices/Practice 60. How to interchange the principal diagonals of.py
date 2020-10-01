@@ -1,4 +1,4 @@
-from random ______ r_i..
+____ ra__ ______ r_i..
 
 row _ 5
 matrix _   # list

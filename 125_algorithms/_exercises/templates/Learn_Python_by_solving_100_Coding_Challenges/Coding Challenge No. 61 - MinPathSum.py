@@ -13,9 +13,9 @@ c_ Solution:
             ___ col __ ra..(0, le.(grid[0])):
                 __ row>0 an. col>0:
                     grid[row][col] +_ mi.(grid[row-1][col],grid[row][col-1])
-                elif row>0:
+                ____ row>0:
                     grid[row][col] +_ grid[row-1][col]
-                elif col>0:
+                ____ col>0:
                     grid[row][col] +_ grid[row][col-1]
         r_ grid[le.(grid)-1][le.(grid[0])-1]
 

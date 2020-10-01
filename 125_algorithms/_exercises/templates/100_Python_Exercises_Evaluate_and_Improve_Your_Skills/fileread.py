@@ -1,3 +1,3 @@
-file _ o..("lines.txt","r")
-a _ file.r__
-print(a)
+# file _ o..("lines.txt",_
+# a _ file.r__
+# print(a)

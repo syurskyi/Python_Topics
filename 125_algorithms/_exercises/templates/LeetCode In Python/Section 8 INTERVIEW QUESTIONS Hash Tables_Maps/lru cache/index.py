@@ -8,7 +8,7 @@ c_ LRUCache:
         .m _ di..()
         .deq _ deque()
 
-    ___ get key: __.)  __.:
+    ___ g.. key: __.)  __.:
         __ key __ .m:
             value _ .m[key]
             .deq.r..(key)

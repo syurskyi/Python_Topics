@@ -24,7 +24,7 @@ ___ mergeSort(nlist):
         mergeSort(lefthalf)
         mergeSort(righthalf)
         i_j_k_0
-        while i < le.(lefthalf) an. j < le.(righthalf):
+        w___ i < le.(lefthalf) an. j < le.(righthalf):
             __ lefthalf[i] < righthalf[j]:
                 nlist[k]_lefthalf[i]
                 i_i+1
@@ -33,12 +33,12 @@ ___ mergeSort(nlist):
                 j_j+1
             k_k+1
 
-        while i < le.(lefthalf):
+        w___ i < le.(lefthalf):
             nlist[k]_lefthalf[i]
             i_i+1
             k_k+1
 
-        while j < le.(righthalf):
+        w___ j < le.(righthalf):
             nlist[k]_righthalf[j]
             j_j+1
             k_k+1

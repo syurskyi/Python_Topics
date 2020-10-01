@@ -10,12 +10,12 @@
 # Letters 6 
 # Digits 2
 
-s _ input("Input a string")
+s _ i..("Input a string")
 d_l_0
 ___ c __ s:
     __ c.isdigit
         d_d+1
-    elif c.isalpha
+    ____ c.isalpha
         l_l+1
     ____
         p_

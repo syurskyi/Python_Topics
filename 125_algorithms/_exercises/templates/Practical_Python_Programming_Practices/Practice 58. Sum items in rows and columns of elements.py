@@ -1,4 +1,4 @@
-from random ______ r_i..
+____ ra__ ______ r_i..
 
 col _ 6
 row _ 6

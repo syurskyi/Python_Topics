@@ -19,7 +19,7 @@ c_ Solution:
         __ head __ N.. or head.next __ N..:
             r_ head
         p _ head
-        while p.next:
+        w___ p.next:
             __ p.val __ p.next.val:
                 p.next _ p.next.next
             ____
@@ -27,7 +27,7 @@ c_ Solution:
         r_ head
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 

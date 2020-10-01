@@ -11,13 +11,13 @@ c_ Solution:
     # @return an integer
 
     ___ lengthOfLastWord1(self, s):
-        r_ le.(s.split()[le.(s.split-1]) __ s.split() !_   # list else 0
+        r_ le.(s.sp..()[le.(s.sp..-1]) __ s.sp..() !_   # list else 0
 
     # @param s, a string
     # @return an integer
 
     ___ lengthOfLastWord2(self, s):
-        s _ s.strip() # Remove the spaces at the beginning and end
+        s _ s.s..() # Remove the spaces at the beginning and end
         length _ 0
         ___ letter __ s:
             __ letter __ " ":

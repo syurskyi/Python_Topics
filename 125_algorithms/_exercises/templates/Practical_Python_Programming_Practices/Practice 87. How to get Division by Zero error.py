@@ -1,5 +1,5 @@
-x _ fl..(input("Insert first number: "))
-y _ fl..(input("Insert second number: "))
+x _ fl..(i..("Insert first number: "))
+y _ fl..(i..("Insert second number: "))
 
 ___
     z _ x/y

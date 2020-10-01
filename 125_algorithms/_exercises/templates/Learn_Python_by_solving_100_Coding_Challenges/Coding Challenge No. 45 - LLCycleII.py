@@ -20,14 +20,14 @@ c_ Solution:
         __ head __ N.. or head.next __ N..:
             r_ N..
         slow _ fast _ head
-        while fast an. fast.next:
+        w___ fast an. fast.next:
             slow _ slow.next
             fast _ fast.next.next
             __ fast __ slow:
-                break
+                b..
         __ slow __ fast:
             slow _ head
-            while slow !_ fast:
+            w___ slow !_ fast:
                 slow _ slow.next
                 fast _ fast.next
             r_ slow

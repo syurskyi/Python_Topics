@@ -6,9 +6,9 @@
 ___ power(a,b):
 	__ b__0:
 		r_ 1
-	elif a__0:
+	____ a__0:
 		r_ 0
-	elif b__1:
+	____ b__1:
 		r_ a
 	____
 		r_ a*power(a,b-1)

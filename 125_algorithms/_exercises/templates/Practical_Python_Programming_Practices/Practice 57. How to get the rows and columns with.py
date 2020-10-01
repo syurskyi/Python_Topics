@@ -1,11 +1,11 @@
-from random ______ random
+____ ra__ ______ ra__
 
 matrix _   # list
 
 ___ i __ ra..(6):
     row _   # list
     ___ j __ ra..(6):
-        row.ap..(in.(random()*10))
+        row.ap..(in.(ra__()*10))
     matrix.ap..(row)
 
 ___ row __ matrix:

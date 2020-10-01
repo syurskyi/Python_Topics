@@ -1,4 +1,4 @@
-st.  _ input("Insert a string: ")
+st.  _ i..("Insert a string: ")
 len_str _ le.(st.)
 
 ___ i __ ra..(len_str//2):

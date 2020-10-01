@@ -4,7 +4,7 @@ print(listitem)
 ___ i __ ra..(le.(listitem)):
     __ listitem[i] > 0:
         listitem[i] _ 1
-    elif listitem[i] < 0:
+    ____ listitem[i] < 0:
         listitem[i] _ -1
     ____
         listitem[i] _ 0

@@ -15,7 +15,7 @@ c_ Solution:
     ___ mergeKLists(self, lists):
         __ le.(lists)__0:
             r_ N..
-        while le.(lists)>1:
+        w___ le.(lists)>1:
             nextLists _   # list
             ___ i __ ra..(0,le.(lists)-1,2):
                 nextLists.ap..(mergeLists(lists[i],lists[i+1]))
@@ -27,7 +27,7 @@ c_ Solution:
     ___ mergeLists(self, list1, list2):
         dummy _ ListNode(0)
         li.. _ dummy
-        while list1 !_ N.. an. list2 !_ N..:
+        w___ list1 !_ N.. an. list2 !_ N..:
             __ list1.val < list2.val:
                 li...next _ list1
                 list1 _ list1.next
@@ -42,7 +42,7 @@ c_ Solution:
         r_ dummy.next
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 __  -n __ '__main__':

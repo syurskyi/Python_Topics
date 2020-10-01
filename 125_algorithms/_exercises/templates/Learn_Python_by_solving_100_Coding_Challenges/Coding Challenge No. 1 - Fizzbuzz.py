@@ -8,9 +8,9 @@ c_ Solution:
         ___ i __ ra..(x,z):
             __ i % 3 __ 0 an. i % 5 __ 0:
                 print ("FizzBuzz")
-            elif i % 3 __ 0:
+            ____ i % 3 __ 0:
                 print ("Fizz")
-            elif i % 5 __ 0:
+            ____ i % 5 __ 0:
                 print ("Buzz")
             ____
                 print (i)

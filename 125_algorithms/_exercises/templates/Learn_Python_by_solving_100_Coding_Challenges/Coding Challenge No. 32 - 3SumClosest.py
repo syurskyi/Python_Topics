@@ -12,7 +12,7 @@ c_ Solution:
         ans _ N..
         ___ i __ ra..(le.(numbers)):
             l, r _ i + 1, le.(numbers) - 1
-            while (l < r):
+            w___ (l < r):
                 su. _ numbers[l] + numbers[r] + numbers[i]
                 __ ans is N.. or abs(su.- target) < abs(ans - target):
                     ans _ su.

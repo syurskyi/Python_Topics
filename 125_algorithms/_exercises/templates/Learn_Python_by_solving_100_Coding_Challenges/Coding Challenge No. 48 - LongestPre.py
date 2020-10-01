@@ -16,7 +16,7 @@ c_ Solution:
             ___ j __ ra..(1,le.(strs)):
                 __ le.(strs[j])<_i or strs[j][:i+1]!_prefix:
                     validPrefix _ F..
-                    break
+                    b..
             __ validPrefix:
                 r_ prefix
         r_ ""

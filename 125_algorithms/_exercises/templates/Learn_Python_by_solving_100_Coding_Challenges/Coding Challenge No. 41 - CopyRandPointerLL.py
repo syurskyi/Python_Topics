@@ -9,7 +9,7 @@ c_ RandomListNode:
     ___  -(self, x):
         val _ x
         next _ N..
-        random _ N..
+        ra__ _ N..
 
 
 c_ Solution:
@@ -19,7 +19,7 @@ c_ Solution:
     ___ copyRandomList(self, ll):
         # copy and combine copied list with original list
         current _ ll
-        while current:
+        w___ current:
             copied _ RandomListNode(current.val)
             copied.next _ current.next
             current.next _ copied
@@ -27,15 +27,15 @@ c_ Solution:
 
         # update random node in copied list
         current _ ll
-        while current:
-            __ current.random:
-                current.next.random _ current.random.next
+        w___ current:
+            __ current.ra__:
+                current.next.ra__ _ current.ra__.next
             current _ current.next.next
 
         # split copied list from combined one
         dummy _ RandomListNode(0)
         copied_current, current _ dummy, ll
-        while current:
+        w___ current:
             copied_current.next _ current.next
             current.next _ current.next.next
             copied_current, current _ copied_current.next, current.next
@@ -44,8 +44,8 @@ c_ Solution:
 
 __  -n __ "__main__":
     ll, ll.next _ RandomListNode(1), RandomListNode(2),
-    ll.random _ ll.next
+    ll.ra__ _ ll.next
     result _ Solution().copyRandomList(ll)
     print ( result.val )
     print ( result.next.val )
-    print ( result.random.val )
+    print ( result.ra__.val )

@@ -1,7 +1,7 @@
-st. _ input("Insert some text with punctuation marks: \n")
+st. _ i..("Insert some text with punctuation marks: \n")
 symbols _ ['.',',',':',';','!','?','(',')']
 
-listitem _ st..split()
+listitem _ st..sp..()
 
 x _ 0
 ___ i __ listitem:
@@ -13,7 +13,7 @@ ___ i __ listitem:
     x +_ 1
 
 x _ 0
-while x < le.(listitem):
+w___ x < le.(listitem):
     print(listitem[x], end_' ')
     x +_ 1
     __ x%5 __ 0:

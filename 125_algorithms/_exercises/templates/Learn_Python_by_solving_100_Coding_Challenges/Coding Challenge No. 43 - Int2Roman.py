@@ -12,7 +12,7 @@ c_ Solution:
         numerals _ [ "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" ]
         li.. _ ''
         ___ i __ ra..(0, le.(v..)):
-            while num >_ v..[i]:
+            w___ num >_ v..[i]:
                 num -_ v..[i]
                 li.. +_ numerals[i]
         r_ li..

@@ -1,10 +1,10 @@
-from random ______ random
+____ ra__ ______ ra__
 
 num _ 20
 listitem _ [0]*num
 
 ___ i __ ra..(num):
-    listitem[i] _ in.(random()*50)
+    listitem[i] _ in.(ra__()*50)
 print(listitem)
 
 maxi _ 1

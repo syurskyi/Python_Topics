@@ -1,9 +1,9 @@
-from random ______ random
+____ ra__ ______ ra__
 
-x _ [in.(random()*100)___ i __ ra..(20)]
+x _ [in.(ra__()*100)___ i __ ra..(20)]
 print(x)
 
-myset _ set(x)
+myset _ se.(x)
 
 highest _ N..
 frequent _ 0

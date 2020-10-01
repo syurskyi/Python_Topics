@@ -33,7 +33,7 @@ c_ Solution:
                 queue.ap..((i, 0))
             __ board[i][colNum-1] __ 'O':
                 queue.ap..((i, colNum - 1))
-        while queue:
+        w___ queue:
             t _ queue.popleft()
             __ board[t[0]][t[1]] __ 'O': board[t[0]][t[1]] _ '$'
             visited[t[0]][t[1]] _ T..

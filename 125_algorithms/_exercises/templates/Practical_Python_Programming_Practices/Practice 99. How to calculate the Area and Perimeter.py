@@ -1,9 +1,9 @@
 ______ math
 
-x _ fl..(input("Insert length of x: "))
-y _ fl..(input("Insert length of y: "))
+x _ fl..(i..("Insert length of x: "))
+y _ fl..(i..("Insert length of y: "))
 
-z _ math.sqrt((pow(x,2)+pow(y,2)))
+z _ math.sqrt((pow(x,2)+pow(y,2
 
 Area _ (x*y)/2
 Perimeter _ x+y+z

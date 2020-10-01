@@ -1,4 +1,4 @@
-from random ______ r_i..
+____ ra__ ______ r_i..
 col _ 6
 row _ 3
 matrix _   # list
@@ -11,7 +11,7 @@ ___ i __ matrix:
     print(i)
 print()
 k _ col-1
-while k !_ 0:
+w___ k !_ 0:
     z _ 0
     ___ j __ ra..(1, k+1):
         __ matrix[0][j] > matrix[0][z]:

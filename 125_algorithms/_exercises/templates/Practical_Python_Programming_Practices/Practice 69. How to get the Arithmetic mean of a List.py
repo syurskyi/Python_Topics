@@ -5,8 +5,8 @@ ___ avg_list(first):
         su. +_ i
     r_ su./last
 
-x _ input("Insert some integer values: ")
-x _ x.split()
+x _ i..("Insert some integer values: ")
+x _ x.sp..()
 ___ i __ ra..(le.(x)):
     x[i] _ in.(x[i])
 

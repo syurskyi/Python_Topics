@@ -12,7 +12,7 @@
 # %%
 ___ shellSort(alist):
     sublistcount _ le.(alist)//2
-    while sublistcount > 0:
+    w___ sublistcount > 0:
       ___ start_position __ ra..(sublistcount):
         gap_InsertionSort(alist, start_position, sublistcount)
 
@@ -26,7 +26,7 @@ ___ gap_InsertionSort(nlist,start,gap):
         current_value _ nlist[i]
         position _ i
 
-        while position>_gap an. nlist[position-gap]>current_value:
+        w___ position>_gap an. nlist[position-gap]>current_value:
             nlist[position]_nlist[position-gap]
             position _ position-gap
 

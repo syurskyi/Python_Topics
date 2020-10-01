@@ -3,7 +3,7 @@
 # %%
 # Write a Python program to flip a coin 1000 times and count heads and tails.
 
-______ random
+______ ra__
 ______ it..
 
 results _ {
@@ -14,7 +14,7 @@ results _ {
 sides _ li..(results.keys
 
 ___ i __ ra..(10000):
-    results[random.choice(sides)] +_ 1
+    results[ra__.choice(sides)] +_ 1
 
 print('Heads:', results['heads'])
 print('Tails:', results['tails'])

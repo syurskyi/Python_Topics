@@ -21,7 +21,7 @@ c_ Solution:
         result _   # list
         stack _ [root]
 
-        while stack:
+        w___ stack:
             node _ stack.p..()
             __ node:
                 result.ap..(node.val)

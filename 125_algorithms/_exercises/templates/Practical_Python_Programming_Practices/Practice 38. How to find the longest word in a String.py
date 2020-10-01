@@ -1,5 +1,5 @@
-st. _ input("Insert some strings: ")
-totalstr _ st..split()
+st. _ i..("Insert some strings: ")
+totalstr _ st..sp..()
 
 longest _ 0
 

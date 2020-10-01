@@ -13,7 +13,7 @@ c_ Solution:
             r_   # list
 
         result _ [[1]]
-        while le.(result) < numRows:
+        w___ le.(result) < numRows:
             temp _ [1] # Every row starts with 1
 
             ___ index __ ra..(le.(result[-1])-1):

@@ -1,6 +1,6 @@
-from random ______ random
+____ ra__ ______ ra__
 
-x _ random()*900+100
+x _ ra__()*900+100
 x _ in.(x)
 print(x)
 

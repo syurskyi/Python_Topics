@@ -7,7 +7,7 @@ c_ Solution:
     ___ anagrams(strs):
         di.. _ {}
         ___ word __ strs:
-            sortedword _ ''.join(sorted(word))
+            sortedword _ ''.j..(s..(word))
             di..[sortedword] _ [word] __ sortedword no. __ di.. ____ di..[sortedword] + [word]
         res _   # list
         ___ item __ di..:

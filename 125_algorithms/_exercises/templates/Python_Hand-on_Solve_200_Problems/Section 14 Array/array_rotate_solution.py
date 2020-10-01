@@ -14,7 +14,7 @@ org _ [1,2,3,4,5,6,7]
 result _ org[:]
 steps _ 3
 
-___ idx,num __ enumerate(org):
+___ idx,num __ en..(org):
     __ idx+steps < le.(org):
         result[idx+steps] _ org[idx]
     ____

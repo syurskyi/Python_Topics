@@ -10,6 +10,6 @@
 
 list1 _ [1, 2, 3, 4]
 list2 _ [1, 2]
-print(li..(set(list1) - set(list2)))
+print(li..(se.(list1) - se.(list2
 
 

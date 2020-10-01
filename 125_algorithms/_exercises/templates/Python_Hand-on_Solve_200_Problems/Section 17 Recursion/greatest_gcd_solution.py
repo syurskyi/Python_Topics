@@ -9,7 +9,7 @@ ___ Recurgcd(a, b):
 
 	__ low __ 0:
 		r_ high
-	elif low __ 1:
+	____ low __ 1:
 		r_ 1
 	____
 		r_ Recurgcd(low, high%low)

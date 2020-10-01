@@ -18,28 +18,28 @@ c_ Solution:
 
         ___ i __ ra..(length - 2):
             __ i > 0 an. num[i] __ num[i - 1]:
-                continue
+                c..
             low _ i + 1
             high _ length - 1
             target_gap _ 0 - num[i]
 
-            while low < high:
+            w___ low < high:
                 __ num[low] + num[high] < target_gap:
                     low +_ 1
-                    while low < high an. num[low] __ num[i - 1]:
+                    w___ low < high an. num[low] __ num[i - 1]:
                         low +_ 1
-                elif num[low] + num[high] > target_gap:
+                ____ num[low] + num[high] > target_gap:
                     high -_ 1
-                    while low < high an. num[high] __ num[high + 1]:
+                    w___ low < high an. num[high] __ num[high + 1]:
                         high -_ 1
                 ____
                     result.ap..([num[i], num[low], num[high]])
                     low +_ 1
-                    while low < high an. num[low] __ num[low - 1]:
+                    w___ low < high an. num[low] __ num[low - 1]:
                         low +_ 1
                     high -_ 1
 
-                while low < high an. num[high] __ num[high + 1]:
+                w___ low < high an. num[high] __ num[high + 1]:
                     high -_ 1
         r_ result
 

@@ -27,13 +27,13 @@ c_ Solution:
         __ root __ N..:
             # Empty tree will always result in False
             r_ F..
-        elif root.left __ N.. an. root.right __ N..:
+        ____ root.left __ N.. an. root.right __ N..:
             # Reach the leaf.
             r_ root.val __ su.
-        elif root.left __ N..:
+        ____ root.left __ N..:
             # Only has right child.
             r_ hasPathSum(root.right, su.-root.val)
-        elif root.right __ N..:
+        ____ root.right __ N..:
             # Only has left child.
             r_ hasPathSum(root.left, su.-root.val)
         ____

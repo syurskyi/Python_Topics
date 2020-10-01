@@ -12,7 +12,7 @@ ___ second_smallest(numbers):
     ___ x __ numbers:
         __ x <_ a1:
             a1, a2 _ x, a1
-        elif x < a2:
+        ____ x < a2:
             a2 _ x
     r_ a2
 

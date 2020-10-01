@@ -22,14 +22,14 @@ c_ Solution:
         s _ su.(current) __ current ____ 0
         __ s > target:
             r_
-        elif s __ target:
+        ____ s __ target:
             result.ap..(current)
             r_
         ____
             i _ 0
-            while i < le.(candidates):
+            w___ i < le.(candidates):
                 combination(candidates[i + 1:], target, current + [candidates[i]], result)
-                while i + 1 < le.(candidates) an. candidates[i] __ candidates[i + 1]:
+                w___ i + 1 < le.(candidates) an. candidates[i] __ candidates[i + 1]:
                     i +_ 1
             i +_ 1
 

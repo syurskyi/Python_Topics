@@ -10,7 +10,7 @@ c_ Solution:
         hashStr _ {}
 
         ___ i __ ra..(0, len2
-            __(hashPat.get(t[i]) pa__ N..
+            __(hashPat.g..(t[i]) pa__ N..
                 hashPat[t[i]] _ 0
             hashPat[t[i]] +_ 1
 
@@ -21,31 +21,31 @@ c_ Solution:
 
         ___ right __ ra..(0, len1
 
-            __(hashStr.get(s[right]) pa__ N..
+            __(hashStr.g..(s[right]) pa__ N..
                 hashStr[s[right]] _ 0
             hashStr[s[right]] +_ 1
-            __(hashPat.get(s[right]) pa__ N..
+            __(hashPat.g..(s[right]) pa__ N..
                 hashPat[s[right]] _ 0
             __ (
 
-                hashPat.get(s[right]) !_ 0 a..
-                hashStr.get(s[right]) <_ hashPat.get(s[right])
+                hashPat.g..(s[right]) !_ 0 a..
+                hashStr.g..(s[right]) <_ hashPat.g..(s[right])
 
                 count +_ 1  # keep incrementing the count if string hash is less then pattern hash
             # count==len2 means a window is found that contains all character of pattern string
             __ (count __ len2
 
-                __(hashStr.get(s[left]) pa__ N..
+                __(hashStr.g..(s[left]) pa__ N..
                     hashStr[s[right]] _ 0
-                __(hashPat.get(s[left]) pa__ N..
+                __(hashPat.g..(s[left]) pa__ N..
                     hashPat[s[right]] _ 0
                 w___ (
-                    hashStr.get(s[left]) > hashPat.get(s[left]) o..
-                    hashPat.get(s[left]) __ 0
+                    hashStr.g..(s[left]) > hashPat.g..(s[left]) o..
+                    hashPat.g..(s[left]) __ 0
 
                     #minimizing the windows range from left side
 
-                    __ (hashStr.get(s[left]) > hashPat.get(s[left])):
+                    __ (hashStr.g..(s[left]) > hashPat.g..(s[left])):
                         hashStr[s[left]] -_ 1
                     left +_ 1  # incrementing the left pointer
 

@@ -1,9 +1,9 @@
-x _ abs(in.(input("Insert integer values only: ")))
+x _ abs(in.(i..("Insert integer values only: "
 
 su. _ 0
 mul _ 1
 
-while x !_ 0:
+w___ x !_ 0:
     digit _ x%10
     su. +_ digit
     mul *_ digit

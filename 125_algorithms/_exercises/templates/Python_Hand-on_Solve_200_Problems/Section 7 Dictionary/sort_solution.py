@@ -10,9 +10,9 @@ ______ operator
 
 d _ {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 print('Original dictionary : ',d)
-sorted_d _ sorted(d.i..(), key_operator.itemgetter(0))
+sorted_d _ s..(d.i..(), key_operator.itemgetter(0))
 print('Dictionary in ascending order by value : ',sorted_d)
-sorted_d _ sorted(d.i..(), key_operator.itemgetter(0),reverse_True)
+sorted_d _ s..(d.i..(), key_operator.itemgetter(0),reverse_True)
 print('Dictionary in descending order by value : ',sorted_d)
 
 

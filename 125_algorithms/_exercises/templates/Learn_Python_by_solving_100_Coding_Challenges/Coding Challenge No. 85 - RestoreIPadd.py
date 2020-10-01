@@ -21,14 +21,14 @@ c_ Solution:
         __ octets__4:
             __ index__ le.(s):
                 tempSolution.p..()
-                solution.ap..("".join(tempSolution))
+                solution.ap..("".j..(tempSolution))
                 tempSolution.ap..('.')
             r_
         ___ size __ ra..(1,4):
             __ s[index]__'0' an. size>1:
-                break
+                b..
             __ in.(s[index:index+size])>255:
-                break
+                b..
             tempSolution.ap..(s[index:index+size])
             tempSolution.ap..('.')
             restoreIpAddressesRec(s,index+size,octets+1,tempSolution, solution)

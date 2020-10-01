@@ -1,10 +1,10 @@
-#Add a new employee to the json file.
-
-______ ____
-
-w__ o..("company1.json", "r+") __ file:
-    d _ ____.loads(file.read
-    d["employees"].ap..(di..(firstName _ "Albert", lastName _ "Bert"))
-    file.seek(0)
-    ____.d..(d, file, indent_4, sort_keys_True)
-    file.truncate()
+# #Add a new employee to the json file.
+#
+# ______ ____
+#
+# w__ o.. "company1.json" __ __ file   # read and
+#     d _ ____.l.. ?.r..
+#     ? "e.." .ap.. di.. ? _ "Albert" ? _ "Bert"
+#     ?.s.. 0
+#     ____.d.. ? ? i.._4, s_k.._T..
+#     ?.tr..

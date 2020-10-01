@@ -7,7 +7,7 @@
 
 c_ py_solution:
     ___ reverse_words(self, s):
-        r_ ' '.join(reversed(s.split()))
+        r_ ' '.j..(reversed(s.sp..(
 
 
 print(py_solution().reverse_words('hello world'))

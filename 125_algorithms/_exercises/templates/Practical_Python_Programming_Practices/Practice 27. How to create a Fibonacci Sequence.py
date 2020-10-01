@@ -1,4 +1,4 @@
-x _ abs(in.(input("Insert range of sequence: ")))
+x _ abs(in.(i..("Insert range of sequence: "
 
 f1 _ f2 _ 1
 print(f1,f2,end_" ")

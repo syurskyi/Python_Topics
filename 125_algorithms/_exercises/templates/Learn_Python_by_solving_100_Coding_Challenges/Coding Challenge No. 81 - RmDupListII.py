@@ -20,16 +20,16 @@ c_ Solution:
         dummy _ ListNode(10**10)
         dummy.next, head _ head, dummy # add a dummy node
         pprev, prev, curr, dupFlag _ head, head.next, head.next.next, F..
-        while T..:
+        w___ T..:
             __ dupFlag __ T..:
                 __ curr __ N..:
                     pprev.next _ N..
-                    break
+                    b..
                 __ prev.val !_ curr.val:
                     pprev.next, prev, dupFlag _ curr, curr, F..
             ____
                 __ curr __ N..:
-                    break
+                    b..
                 __ prev.val __ curr.val:
                     dupFlag _ T..
                 ____
@@ -38,7 +38,7 @@ c_ Solution:
         r_ head.next
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 

@@ -17,8 +17,8 @@
 # Output
 # [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]]
 
-row_num _ in.(input("Input number of rows: "))
-col_num _ in.(input("Input number of columns: "))
+row_num _ in.(i..("Input number of rows: "))
+col_num _ in.(i..("Input number of columns: "))
 multi_list _ [[0 ___ col __ ra..(col_num)] ___ row __ ra..(row_num)]
 
 ___ row __ ra..(row_num):

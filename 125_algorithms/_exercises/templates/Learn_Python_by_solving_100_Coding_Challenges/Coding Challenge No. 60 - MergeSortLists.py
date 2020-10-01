@@ -15,7 +15,7 @@ c_ Solution:
     ___ mergeTwoLists(self, l1, l2):
         dummy _ ListNode(0)
         pointer _ dummy
-        while l1 !_None an. l2 !_None:
+        w___ l1 !_None an. l2 !_None:
             __ l1.val<l2.val:
                 pointer.next _ l1
                 l1 _ l1.next
@@ -30,7 +30,7 @@ c_ Solution:
             r_ dummy.next
 
     ___ printll(self, node):
-        while node:
+        w___ node:
             print ( node.val )
             node _ node.next
 

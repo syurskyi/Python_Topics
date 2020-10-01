@@ -27,7 +27,7 @@ c_ Solution:
             ____
                 temp _ temp.next
         newLast _ head
-        while temp.next !_ N..:
+        w___ temp.next !_ N..:
             temp _ temp.next
             newLast _ newLast.next
         temp.next _ head

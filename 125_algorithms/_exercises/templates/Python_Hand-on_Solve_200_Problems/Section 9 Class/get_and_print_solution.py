@@ -9,7 +9,7 @@ c_ IOString
         str1 _ ""
 
     ___ get_String
-        str1 _ input()
+        str1 _ i..()
 
     ___ print_String
         print(str1.upper

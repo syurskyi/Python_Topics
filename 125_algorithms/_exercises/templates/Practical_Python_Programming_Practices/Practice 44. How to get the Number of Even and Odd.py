@@ -1,8 +1,8 @@
-______ random
+______ ra__
 
 x _   # list
 ___ i __ ra..(10):
-    x.ap..(in.(random.random()*1000))
+    x.ap..(in.(ra__.ra__()*1000))
 print(x)
 
 even _ odd _0

@@ -16,7 +16,7 @@ c_ Solution:
         __ head __ N.. or head.next __ N..:
             r_ F..
         slow _ fast _ head
-        while fast an. fast.next:
+        w___ fast an. fast.next:
             slow _ slow.next
             fast _ fast.next.next
             __ slow __ fast:

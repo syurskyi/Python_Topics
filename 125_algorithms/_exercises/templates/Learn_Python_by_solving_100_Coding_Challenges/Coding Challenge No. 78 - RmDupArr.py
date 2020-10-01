@@ -18,7 +18,7 @@ c_ Solution:
         count _ 0
         ___ i __ ra..(0, le.(A)):
             __ A[i] __ A[i-1]:
-                continue
+                c..
             ____
                 A[count] _ A[i]
                 count +_ 1

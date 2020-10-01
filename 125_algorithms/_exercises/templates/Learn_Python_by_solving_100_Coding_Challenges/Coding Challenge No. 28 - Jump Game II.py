@@ -12,7 +12,7 @@ c_ Solution:
     ___ jump(self, A):
         p _ [0]
         ___ i __ ra..(le.(A) - 1):
-            while(i + A[i] >_ le.(p) an. le.(p) < le.(A)):
+            w___(i + A[i] >_ le.(p) an. le.(p) < le.(A)):
                 p.ap..(p[i] + 1)
         r_ p[-1]
 

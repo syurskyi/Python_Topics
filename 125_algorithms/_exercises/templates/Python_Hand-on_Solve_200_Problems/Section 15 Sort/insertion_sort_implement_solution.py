@@ -16,7 +16,7 @@ ___ insertionSort(nlist):
      currentvalue _ nlist[index]
      position _ index
 
-     while position>0 an. nlist[position-1]>currentvalue:
+     w___ position>0 an. nlist[position-1]>currentvalue:
          nlist[position]_nlist[position-1]
          position _ position-1
 

@@ -6,8 +6,8 @@
 # output : "dog. lazy the over jumps fox brown quick The "
 
 ___ reverse_string_words(text):
-    ___ line __ text.split('\n'):
-        r_(' '.join(line.split()[::-1]))
+    ___ line __ text.sp..('\n'):
+        r_(' '.j..(line.sp..()[::-1]))
     
 print(reverse_string_words("The quick brown fox jumps over the lazy dog."))
 print(reverse_string_words("Python Exercises."))

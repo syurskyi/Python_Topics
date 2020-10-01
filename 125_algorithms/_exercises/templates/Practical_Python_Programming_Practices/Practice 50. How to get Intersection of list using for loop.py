@@ -6,5 +6,5 @@ ___ i __ x:
     ___ j __ y:
         __ i __ j:
             z.ap..(i)
-            break
+            b..
 print(z)

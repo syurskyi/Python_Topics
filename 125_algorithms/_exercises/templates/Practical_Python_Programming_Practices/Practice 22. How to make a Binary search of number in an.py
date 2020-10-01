@@ -1,25 +1,25 @@
-from random ______ random
+____ ra__ ______ ra__
 N _ 20
 array _   # list
 ___ x __ ra..(N):
-    array.ap..(in.(random()*100))
+    array.ap..(in.(ra__()*100))
 
 array.sort()
 print(array)
 
-number _ in.(input("Search for any number in the array: "))
+number _ in.(i..("Search for any number in the array: "))
 
 mini _ 0
 maxi _ N-1
 
-while mini <_ maxi:
+w___ mini <_ maxi:
     mid _ (mini + maxi) // 2
     __ number < array[mid]:
         maxi _ mid-1
-    elif number > array[mid]:
+    ____ number > array[mid]:
         mini _ mid+1
     ____
         print("The number is located at index: ", mid)
-        break
+        b..
 ____
     print("There is no number!")

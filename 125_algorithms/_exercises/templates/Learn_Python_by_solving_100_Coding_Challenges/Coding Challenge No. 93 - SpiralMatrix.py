@@ -20,16 +20,16 @@ c_ Solution:
         maxDown _ le.(matrix) - 1
         maxRight _ le.(matrix[0]) - 1
         direct _ 0 # 0 go right, 1 go down, 2 go left, 3 go up
-        while T..:
+        w___ T..:
             __ direct __ 0: # go right
                 ___ i __ ra..(maxLeft, maxRight + 1):
                     res.ap..(matrix[maxUp][i])
                 maxUp +_ 1
-            elif direct __ 1: # go down
+            ____ direct __ 1: # go down
                 ___ i __ ra..(maxUp, maxDown + 1):
                     res.ap..(matrix[i][maxRight])
                 maxRight -_ 1
-            elif direct __ 2: # go left
+            ____ direct __ 2: # go left
                 ___ i __ reversed(ra..(maxLeft, maxRight + 1)):
                     res.ap..(matrix[maxDown][i])
                 maxDown -_ 1
