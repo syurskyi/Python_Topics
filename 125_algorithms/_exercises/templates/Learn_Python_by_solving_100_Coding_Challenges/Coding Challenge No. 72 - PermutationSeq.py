@@ -9,20 +9,20 @@
 c_ Solution:
     # @param n,k: integers with 1 <= n <= 9
     # @return a string
-    ___ getPermutation(, n, k):
+    ___ getPermutation , n, k:
         res _ ''
         k -_ 1
         fac _ 1
-        ___ i __ ra..(1, n): fac *_ i
+        ___ i __ ra.. 1, n: fac *_ i
         num _ [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        ___ i __ r..(ra..(n)):
-            curr _ num[in.(k/fac)]
-            res +_ st.(curr)
-            num.r..(curr)
+        ___ i __ r.. ra.. n:
+            curr _ num[in. k/fac]
+            res +_ st. curr
+            num.r.. curr
             __ i !_0:
                 k %_ fac
                 fac /_ i
         r_ res
 
 
-Solution().getPermutation(3,6)
+Solution .getPermutation 3,6

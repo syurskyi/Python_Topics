@@ -9,16 +9,16 @@
 c_ Solution:
     # @param A a list of integers
     # @return an integer
-    ___ removeDuplicates(, A):
-        __ le.(A) < 2:
-            r_ le.(A)
+    ___ removeDuplicates , A:
+        __ le. A < 2:
+            r_ le. A
         index _ 2
 
-        ___ i __ ra..(2, le.(A)):
+        ___ i __ ra.. 2, le. A:
             __ A[i] !_ A[index - 2]:
                 A[index] _ A[i]
                 index +_ 1
         r_ index
 
 
-Solution().removeDuplicates([1,1,1,2,2,3])
+Solution .removeDuplicates [1,1,1,2,2,3]

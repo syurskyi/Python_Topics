@@ -7,15 +7,15 @@
 c_ Solution:
     # @return a string
 
-    ___ intToRoman(, num):
+    ___ intToRoman , num:
         v.. _ [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ]
         numerals _ [ "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" ]
         li.. _ ''
-        ___ i __ ra..(0, le.(v..)):
+        ___ i __ ra.. 0, le. v..:
             w___ num >_ v..[i]:
                 num -_ v..[i]
                 li.. +_ numerals[i]
         r_ li..
 
 
-Solution().intToRoman(1001)
+Solution .intToRoman 1001

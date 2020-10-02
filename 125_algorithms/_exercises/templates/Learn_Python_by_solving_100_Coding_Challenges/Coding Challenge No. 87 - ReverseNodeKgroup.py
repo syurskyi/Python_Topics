@@ -7,17 +7,17 @@
 # Solutions:
 
 
-c_ ListNode(object):
-    ___  -(, x):
+c_ ListNode object:
+    ___  - , x:
         val _ x
         next _ N..
 
     ___ to_list
-        r_ [val] + next.to_list() __ next ____ [val]
+        r_ [val] + next.to_list  __ next ____ [val]
 
 
-c_ Solution(object):
-    ___ reverseKGroup(, head, k):
+c_ Solution object:
+    ___ reverseKGroup , head, k:
         """
         :type head: ListNode
         :type k: int
@@ -25,17 +25,17 @@ c_ Solution(object):
         """
         __ no. head o. k <_ 1:
             r_ head
-        dummy _ ListNode(-1)
+        dummy _ ListNode -1
         dummy.next _ head
         temp _ dummy
         w___ temp:
-            temp _ reverseNextK(temp, k)
+            temp _ reverseNextK temp, k
         r_ dummy.next
 
-    ___ reverseNextK(, head, k):
+    ___ reverseNextK , head, k:
         # Check if there are k nodes left
         temp _ head
-        ___ i __ ra..(k):
+        ___ i __ ra.. k:
             __ no. temp.next:
                 r_ N..
             temp _ temp.next
@@ -45,7 +45,7 @@ c_ Solution(object):
         prev _ head
         curr _ head.next
         # Reverse k nodes
-        ___ i __ ra..(k):
+        ___ i __ ra.. k:
             nextNode _ curr.next
             curr.next _ prev
             prev _ curr
@@ -57,14 +57,14 @@ c_ Solution(object):
 
 
 __  -n __ "__main__":
-    n1 _ ListNode(1)
-    n2 _ ListNode(2)
-    n3 _ ListNode(3)
-    n4 _ ListNode(4)
-    n5 _ ListNode(5)
+    n1 _ ListNode 1
+    n2 _ ListNode 2
+    n3 _ ListNode 3
+    n4 _ ListNode 4
+    n5 _ ListNode 5
     n1.next _ n2
     n2.next _ n3
     n3.next _ n4
     n4.next _ n5
-    r _ Solution().reverseKGroup(n1, 3)
-    print ( r.to_list() )
+    r _ Solution .reverseKGroup n1, 3
+    print   r.to_list

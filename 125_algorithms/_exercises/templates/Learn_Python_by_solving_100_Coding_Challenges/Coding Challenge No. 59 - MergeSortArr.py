@@ -4,8 +4,8 @@
 # Solutions:
 
 
-c_ Solution(object):
-    ___ merge(, A, m, B, n):
+c_ Solution object:
+    ___ merge , A, m, B, n:
         """
         :type A: List[int]
         :type m: int
@@ -26,12 +26,12 @@ c_ Solution(object):
             A[indexB] _ B[indexB]
             indexB -_ 1
 
-Solution().merge([1],1,  # list,0)
+Solution .merge [1],1,  # list,0)
 
 # All you need is understanding the algorithm, don't try other cases.
 # In case you're wondering, if the requirements do not include modifying an array in-place. This is how you merge arrays:
 
 arr1 _ [1,2,3,10,20]
 arr2 _ [2,2,10,60]
-result _ s..(arr1 + arr2)
-print ( result )
+result _ s.. arr1 + arr2
+print   result

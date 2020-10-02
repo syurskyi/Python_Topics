@@ -10,13 +10,13 @@ c_ Solution:
     # @param cost, a list of integers
     # @return an integer
 
-    ___ canCompleteCircuit(, gas, cost):
-        __ su.(gas) < su.(cost):
+    ___ canCompleteCircuit , gas, cost:
+        __ su. gas < su. cost:
             r_ -1
-        n _ le.(gas)
+        n _ le. gas
         diff _ 0
         stationIndex _ 0
-        ___ i __ ra..(n):
+        ___ i __ ra.. n:
             __ gas[i]+diff < cost[i]:
                 stationIndex _ i+1; diff _ 0
             ____
@@ -25,4 +25,4 @@ c_ Solution:
         r_ stationIndex
 
 
-Solution().canCompleteCircuit([1,2,3,4,5],[5,4,3,2,1])
+Solution .canCompleteCircuit [1,2,3,4,5],[5,4,3,2,1]

@@ -4,7 +4,7 @@
 
 
 c_ ListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
 
@@ -12,7 +12,7 @@ c_ ListNode:
 c_ Solution:
     # @param head, a ListNode
     # @return a boolean
-    ___ hasCycle(, head):
+    ___ hasCycle , head:
         __ head __ N.. o. head.next __ N..:
             r_ F..
         slow _ fast _ head
@@ -24,6 +24,6 @@ c_ Solution:
         r_ F..
 
 __  -n __ '__main__':
-    ll, ll.next, ll.next.next _ ListNode(2), ListNode(4), ListNode(3),
+    ll, ll.next, ll.next.next _ ListNode 2, ListNode 4, ListNode 3,
     ll.next.next.next _ ll.next
-    print( Solution().hasCycle(ll) )
+    print  Solution .hasCycle ll 

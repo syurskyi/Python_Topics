@@ -5,7 +5,7 @@
 
 
 c_ ListNode:
-    ___  -(, val, next_None):
+    ___  - , val, next_None:
         val _ val
         next _ next
 
@@ -16,7 +16,7 @@ c_ Solution:
     @return: the node where the cycle begins. If there is no cycle, return null
     """
 
-    ___ detectCycle(, head):
+    ___ detectCycle , head:
         __ head __ N.. o. head.next __ N..:
             r_ N..
         slow _ fast _ head
@@ -35,6 +35,6 @@ c_ Solution:
 
 
 __  -n __ '__main__':
-    ll, ll.next, ll.next.next _ ListNode(2), ListNode(4), ListNode(3),
+    ll, ll.next, ll.next.next _ ListNode 2, ListNode 4, ListNode 3,
     ll.next.next.next _ ll.next
-    print( Solution().detectCycle(ll).val )
+    print  Solution .detectCycle ll.val

@@ -4,9 +4,9 @@
 
 
 c_ Solution:
-    ___ fibR(,n):
+    ___ fibR ,n:
         __ n__1 o. n__2:
             r_ 1
-        r_ fibR(n-1)+ fibR(n-2)
+        r_ fibR n-1+ fibR n-2
 
-Solution().fibR(6)
+Solution .fibR 6

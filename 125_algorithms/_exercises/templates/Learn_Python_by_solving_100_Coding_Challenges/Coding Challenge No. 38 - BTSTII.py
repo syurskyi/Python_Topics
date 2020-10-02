@@ -6,13 +6,13 @@
 c_ Solution:
     # @param prices, a list of integer
     # @return an integer
-    ___ maxProfit(, prices):
+    ___ maxProfit , prices:
         maxProfit _ 0
-        ___ index __ ra..(le.(prices)-1):
+        ___ index __ ra.. le. prices-1:
             __ prices[index+1] > prices[index]:
             # As long as we can earn money, do the transaction.
                 maxProfit +_ prices[index+1] - prices[index]
         r_ maxProfit
 
 
-Solution().maxProfit([1, 2, 3, 0, 2])
+Solution .maxProfit [1, 2, 3, 0, 2]

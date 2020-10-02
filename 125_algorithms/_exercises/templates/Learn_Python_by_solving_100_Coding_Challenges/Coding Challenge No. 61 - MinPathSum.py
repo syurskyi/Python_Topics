@@ -6,19 +6,19 @@
 c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
-    ___ minPathSum(, grid):
-        __ le.(grid)__0 o. le.(grid[0])__0:
+    ___ minPathSum , grid:
+        __ le. grid__0 o. le. grid[0]__0:
             r_ 0
-        ___ row __ ra..(0, le.(grid)):
-            ___ col __ ra..(0, le.(grid[0])):
+        ___ row __ ra.. 0, le. grid:
+            ___ col __ ra.. 0, le. grid[0]:
                 __ row>0 an. col>0:
-                    grid[row][col] +_ mi.(grid[row-1][col],grid[row][col-1])
+                    grid[row][col] +_ mi. grid[row-1][col],grid[row][col-1]
                 ____ row>0:
                     grid[row][col] +_ grid[row-1][col]
                 ____ col>0:
                     grid[row][col] +_ grid[row][col-1]
-        r_ grid[le.(grid)-1][le.(grid[0])-1]
+        r_ grid[le. grid-1][le. grid[0]-1]
 
 
 grid _ [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
-Solution().minPathSum(grid)
+Solution .minPathSum grid

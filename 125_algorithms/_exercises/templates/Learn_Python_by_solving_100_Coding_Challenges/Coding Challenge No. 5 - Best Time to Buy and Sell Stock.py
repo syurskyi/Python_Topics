@@ -4,8 +4,8 @@
 # Solutions:
 
 c_ Solution:
-    ___ maxProfit(prices):
-        minValue _ fl..("inf")
+    ___ maxProfit prices:
+        minValue _ fl.. "inf"
         maxBenefit _ 0
         ___ price __ prices:
             __ minValue > price:
@@ -14,5 +14,5 @@ c_ Solution:
                 maxBenefit _ price - minValue
         r_ maxBenefit
 
-print (Solution.maxProfit([7, 1, 5, 3, 6, 4]) )
-print (Solution.maxProfit([7, 6, 4, 3, 1]) )
+print  Solution.maxProfit [7, 1, 5, 3, 6, 4]
+print  Solution.maxProfit [7, 6, 4, 3, 1]

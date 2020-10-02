@@ -8,15 +8,15 @@
 
 c_ Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
-    ___ threeSum(, num):
-        length _ le.(num)
+    ___ threeSum , num:
+        length _ le. num
         result _   # list
 
         __ length < 3:
             r_ result
-        num.sort()
+        num.s..
 
-        ___ i __ ra..(length - 2):
+        ___ i __ ra.. length - 2:
             __ i > 0 an. num[i] __ num[i - 1]:
                 c..
             low _ i + 1
@@ -33,7 +33,7 @@ c_ Solution:
                     w___ low < high an. num[high] __ num[high + 1]:
                         high -_ 1
                 ____
-                    result.ap..([num[i], num[low], num[high]])
+                    result.ap.. [num[i], num[low], num[high]]
                     low +_ 1
                     w___ low < high an. num[low] __ num[low - 1]:
                         low +_ 1
@@ -44,4 +44,4 @@ c_ Solution:
         r_ result
 
 
-Solution().threeSum([-1, 0, 1, 2, -1, -4])
+Solution .threeSum [-1, 0, 1, 2, -1, -4]

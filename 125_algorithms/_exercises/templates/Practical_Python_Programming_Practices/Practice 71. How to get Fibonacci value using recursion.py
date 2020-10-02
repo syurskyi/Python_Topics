@@ -1,5 +1,5 @@
-___ fibinacci(x):
-    __ x __ 1 o. x __ 2:
-        r_ 1
-    r_ fibinacci(x-1) + fibinacci(x-2)
-print(fibinacci(10))
+# ___ fibinacci x
+#     __ ? __ 1 o. ? __ 2
+#         r_ 1
+#     r_ ? ? - 1 + ? x - 2
+# print ? 10

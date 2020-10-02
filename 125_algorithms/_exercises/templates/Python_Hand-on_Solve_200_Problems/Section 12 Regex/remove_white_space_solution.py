@@ -10,7 +10,7 @@
 
 ______ __
 text1 _ ' Python    Exercises '
-print("Original string:",text1)
-print("Without extra spaces:",__.sub(r'\s+', '',text1))
+print "Original string:",text1
+print "Without extra spaces:",__.sub r'\s+', '',text1
 
 

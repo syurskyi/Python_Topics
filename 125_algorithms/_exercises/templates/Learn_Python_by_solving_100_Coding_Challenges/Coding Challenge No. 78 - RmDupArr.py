@@ -11,12 +11,12 @@ c_ Solution:
     @param A: a list of integers
     @return an integer
     """
-    ___ removeDuplicates(, A):
+    ___ removeDuplicates , A:
         # write your code here
         __ A __   # list:
             r_ 0
         count _ 0
-        ___ i __ ra..(0, le.(A)):
+        ___ i __ ra.. 0, le. A:
             __ A[i] __ A[i-1]:
                 c..
             ____
@@ -25,4 +25,4 @@ c_ Solution:
         r_ count
 
 
-Solution().removeDuplicates([1,1,2])
+Solution .removeDuplicates [1,1,2]

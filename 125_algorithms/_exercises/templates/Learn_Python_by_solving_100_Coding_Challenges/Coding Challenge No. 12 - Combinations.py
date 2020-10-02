@@ -7,15 +7,15 @@
 
 
 c_ Solution:
-    ___ combine(,n, k):
-        ___ dfs(start, valuelist):
-            __ count __ k: ret.ap..(valuelist); r_
-            ___ i __ ra..(start, n + 1):
+    ___ combine ,n, k:
+        ___ dfs start, valuelist:
+            __ count __ k: ret.ap.. valuelist; r_
+            ___ i __ ra.. start, n + 1:
                 count +_ 1
-                dfs(i + 1, valuelist + [i])
+                dfs i + 1, valuelist + [i]
                 count -_ 1
         ret _   # list; self.count = 0
-        dfs(1,   # list)
+        dfs 1,   # list)
         r_ ret
 
-Solution().combine(4,2)
+Solution .combine 4,2

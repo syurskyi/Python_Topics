@@ -8,11 +8,11 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber(, A):
+    ___ singleNumber , A:
         result _ 0
         ___ i __ A:
             result ^_ i
         r_ result
 
 
-Solution().singleNumber([1, 2, 1, 2, 0])
+Solution .singleNumber [1, 2, 1, 2, 0]

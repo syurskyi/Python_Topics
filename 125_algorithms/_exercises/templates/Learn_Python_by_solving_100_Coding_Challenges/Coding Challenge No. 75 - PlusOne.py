@@ -7,9 +7,9 @@
 c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    ___ plusOne(, digits):
+    ___ plusOne , digits:
         flag _ 1
-        ___ i __ ra..(le.(digits)-1, -1, -1):
+        ___ i __ ra.. le. digits-1, -1, -1:
             __ digits[i] + flag __ 10:
                 digits[i] _ 0
                 flag _ 1
@@ -17,8 +17,8 @@ c_ Solution:
                 digits[i] _ digits[i] + flag
                 flag _ 0
         __ flag __ 1:
-            digits.insert(0, 1)
+            digits.i.. 0, 1
         r_ digits
 
 
-Solution().plusOne([4,0,0])
+Solution .plusOne [4,0,0]

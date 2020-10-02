@@ -7,10 +7,10 @@
 c_ Solution:
     # @param s, a string
     # @return a boolean
-    ___ isPalindrome(, s):
-        __ le.(s) < 2:
+    ___ isPalindrome , s:
+        __ le. s < 2:
             r_ T..
-        head, tail _ 0, le.(s)-1
+        head, tail _ 0, le. s-1
         w___ head < tail:
             __ no. s[head].isalnum
                 head +_ 1
@@ -25,4 +25,4 @@ c_ Solution:
         r_ T..
 
 
-Solution().isPalindrome(["racecar","race car","race, car"])
+Solution .isPalindrome ["racecar","race car","race, car"]

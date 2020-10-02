@@ -4,11 +4,11 @@
 # Solutions:
 
 c_ Solution:
-    ___ climbStairs(n):
-        dp _ [0] * (n + 1)
+    ___ climbStairs n:
+        dp _ [0] *  n + 1
         dp[0] _ dp[1] _ 1
-        ___ x __ ra..(2, n + 1):
+        ___ x __ ra.. 2, n + 1:
             dp[x] _ dp[x - 1] + dp[x - 2]
         r_ dp[n]
 
-Solution.climbStairs(10)
+Solution.climbStairs 10

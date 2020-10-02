@@ -1,1 +1,1 @@
-______ ?                   r _ ?.g..("http://www.pythonhow.com")                     print(r.text[:100])
+______ ?                   r _ ?.g.. "http://www.pythonhow.com"                     print r.text[:100]

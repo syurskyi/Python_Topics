@@ -11,18 +11,18 @@
 # Solutions:
 
 c_ Solution:
-    ___ combinationSum(, candidates, target):
-        candidates.sort()
+    ___ combinationSum , candidates, target:
+        candidates.s..
         res_  # list
-        DFS(candidates,target,0,res,  # list)
+        DFS candidates,target,0,res,  # list)
         r_ res
 
-    ___ DFS(,candidates,target,start,res,intermedia):
+    ___ DFS ,candidates,target,start,res,intermedia:
         __ target__0:
-            res.ap..(intermedia)
+            res.ap.. intermedia
             r_
-        ___ i __ ra..(start,le.(candidates)):
+        ___ i __ ra.. start,le. candidates:
             __ target<candidates[i]:
                 r_
-            DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])
-        print(Solution().combinationSum([2,3,6,7],7) )
+            DFS candidates,target-candidates[i],i,res,intermedia+[candidates[i]]
+        print Solution .combinationSum [2,3,6,7],7 

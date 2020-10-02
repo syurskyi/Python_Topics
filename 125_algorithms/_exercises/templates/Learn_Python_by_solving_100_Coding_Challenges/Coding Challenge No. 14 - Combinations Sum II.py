@@ -11,27 +11,27 @@
 
 
 c_ Solution:
-    ___ combinationSum2(, candidates, target):
+    ___ combinationSum2 , candidates, target:
         __ no. candidates:
             r_   # list
-        candidates.sort()
+        candidates.s..
         result _   # list
-        combination(candidates, target,   # list, result)
+        combination candidates, target,   # list, result)
         r_ result
-    ___ combination(, candidates, target, current, result):
-        s _ su.(current) __ current ____ 0
+    ___ combination , candidates, target, current, result:
+        s _ su. current __ current ____ 0
         __ s > target:
             r_
         ____ s __ target:
-            result.ap..(current)
+            result.ap.. current
             r_
         ____
             i _ 0
-            w___ i < le.(candidates):
-                combination(candidates[i + 1:], target, current + [candidates[i]], result)
-                w___ i + 1 < le.(candidates) an. candidates[i] __ candidates[i + 1]:
+            w___ i < le. candidates:
+                combination candidates[i + 1:], target, current + [candidates[i]], result
+                w___ i + 1 < le. candidates an. candidates[i] __ candidates[i + 1]:
                     i +_ 1
             i +_ 1
 
 
-Solution().combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
+Solution .combinationSum2 [10, 1, 2, 7, 6, 1, 5], 8

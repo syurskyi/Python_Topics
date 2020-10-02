@@ -17,10 +17,10 @@ c_ Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}
-    ___ convert(, s, numRows):
-        __ numRows __ 1 o. numRows >_ le.(s):
+    ___ convert , s, numRows:
+        __ numRows __ 1 o. numRows >_ le. s:
             r_ s
-        zigzag _ [[] ___ x __ ra..(numRows)]
+        zigzag _ [[] ___ x __ ra.. numRows]
         row, step _ 0, 1
         ___ c __ s:
             zigzag[row] +_ c,
@@ -29,7 +29,7 @@ c_ Solution:
             ____ row __ numRows - 1:
                 step _ -1
             row +_ step
-        r_ ''.j..(functools.reduce(operator.add, zigzag))
+        r_ ''.j.. functools.reduce operator.add, zigzag
 
 
-Solution().convert("PAYPALISHIRING", 3)
+Solution .convert "PAYPALISHIRING", 3

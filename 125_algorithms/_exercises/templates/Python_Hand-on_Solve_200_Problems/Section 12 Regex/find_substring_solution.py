@@ -15,10 +15,10 @@
 ______ __
 text _ 'Python exercises, PHP exercises, C# exercises'
 pattern _ 'exercises'
-___ m.. __ __.finditer(pattern, text):
-    s _ m...start()
-    e _ m...end()
-    print('Found "%s" at %d:%d' % (text[s:e], s, e))
+___ m.. __ __.finditer pattern, text:
+    s _ m...start 
+    e _ m...end 
+    print 'Found "%s" at %d:%d' %  text[s:e], s, e
 	
 
 

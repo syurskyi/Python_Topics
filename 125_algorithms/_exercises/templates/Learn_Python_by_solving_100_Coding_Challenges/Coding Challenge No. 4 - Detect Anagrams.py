@@ -4,16 +4,16 @@
 # Solutions:
 
 c_ Solution:
-    ___ anagrams(strs):
+    ___ anagrams strs:
         di.. _ {}
         ___ word __ strs:
-            sortedword _ ''.j..(s..(word))
+            sortedword _ ''.j.. s.. word
             di..[sortedword] _ [word] __ sortedword no. __ di.. ____ di..[sortedword] + [word]
         res _   # list
         ___ item __ di..:
-            __ le.(di..[item]) >_ 2:
+            __ le. di..[item] >_ 2:
                 res +_ di..[item]
         r_ res
 
 
-Solution.anagrams(["anagram", "nagaram", "racecar","carraces"])
+Solution.anagrams ["anagram", "nagaram", "racecar","carraces"]

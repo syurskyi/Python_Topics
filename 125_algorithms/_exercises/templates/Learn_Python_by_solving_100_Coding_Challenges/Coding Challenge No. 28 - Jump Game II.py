@@ -9,12 +9,12 @@
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ jump(, A):
+    ___ jump , A:
         p _ [0]
-        ___ i __ ra..(le.(A) - 1):
-            w___(i + A[i] >_ le.(p) an. le.(p) < le.(A)):
-                p.ap..(p[i] + 1)
+        ___ i __ ra.. le. A - 1:
+            w___ i + A[i] >_ le. p an. le. p < le. A:
+                p.ap.. p[i] + 1
         r_ p[-1]
 
 
-Solution().jump([2,3,1,1,4])
+Solution .jump [2,3,1,1,4]

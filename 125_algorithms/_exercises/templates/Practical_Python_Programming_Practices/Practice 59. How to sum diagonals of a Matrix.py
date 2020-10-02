@@ -1,22 +1,22 @@
-____ ra__ ______ ra__
-row _ 5
-matrix _   # list
-
-___ i __ ra..(row):
-    myrow _   # list
-    ___ j __ ra..(row):
-        myrow.ap..(in.(ra__()*10))
-    matrix.ap..(myrow)
-
-___ myrow __ matrix:
-    print(myrow)
-
-sum_diagonal1 _ 0
-sum_diagonal2 _ 0
-
-___ i __ ra..(row):
-    sum_diagonal1 +_ matrix[i][i]
-    sum_diagonal2 +_ matrix[i][row-i-1]
-
-print(sum_diagonal1)
-print(sum_diagonal2)
+# ____ ra__ ______ ra__
+# row _ 5
+# matrix _   # list
+#
+# ___ i __ ra.. ?
+#     myrow _   # list
+#     ___ j __ ra.. ?
+#         ?.ap.. in. ra__ *10
+#     ?.ap.. ?
+#
+# ___ m.. __ ?
+#     print ?
+#
+# sum_diagonal1 _ 0
+# sum_diagonal2 _ 0
+#
+# ___ i __ ra.. ?
+#     ? +_ ? ? ?
+#     ? +_ ? ? ? - ? - 1
+#
+# print ?
+# print ?

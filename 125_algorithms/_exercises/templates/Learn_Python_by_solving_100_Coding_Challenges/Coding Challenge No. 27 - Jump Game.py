@@ -11,15 +11,15 @@
 c_ Solution:
     # @param A, a list of integers
     # @return a boolean
-    ___ canJump(, A):
+    ___ canJump , A:
         step _ A[0]
-        ___ i __ ra..(1, le.(A)):
+        ___ i __ ra.. 1, le. A:
             __ step > 0:
                 step -_ 1
-                step _ ma.(step, A[i])
+                step _ ma. step, A[i]
         ____
             r_ F..
         r_ T..
 
 
-Solution().canJump([3,2,1,0,4])
+Solution .canJump [3,2,1,0,4]

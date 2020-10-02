@@ -7,8 +7,8 @@ c_ Solution:
     # @param num1, a string
     # @param num2, a string
     # @return a string
-    ___ multiply(, num1, num2):
-        r_ st.(in.(num1)*in.(num2))
+    ___ multiply , num1, num2:
+        r_ st. in. num1*in. num2
 
 
-Solution().multiply("122326161616161616","-161651616161616")
+Solution .multiply "122326161616161616","-161651616161616"

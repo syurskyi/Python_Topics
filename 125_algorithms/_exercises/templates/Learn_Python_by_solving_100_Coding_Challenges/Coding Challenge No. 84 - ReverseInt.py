@@ -7,14 +7,14 @@
 
 c_ Solution:
     # @return an integer
-    ___ reverse(, x):
+    ___ reverse , x:
         __ x<0:
             sign _ -1
         ____
             sign _ 1
-        strx_str(abs(x))
+        strx_str ab. x
         r _ strx[::-1]
-        r_ sign*in.(r)
+        r_ sign*in. r
 
 
-Solution().reverse(123)
+Solution .reverse 123

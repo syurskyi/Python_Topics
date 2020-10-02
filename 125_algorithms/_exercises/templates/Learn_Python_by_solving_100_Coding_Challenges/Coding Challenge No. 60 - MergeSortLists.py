@@ -4,7 +4,7 @@
 
 
 c_ ListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
 
@@ -12,8 +12,8 @@ c_ ListNode:
 c_ Solution:
     # @param two ListNodes
     # @return a ListNode
-    ___ mergeTwoLists(, l1, l2):
-        dummy _ ListNode(0)
+    ___ mergeTwoLists , l1, l2:
+        dummy _ ListNode 0
         pointer _ dummy
         w___ l1 !_None an. l2 !_None:
             __ l1.val<l2.val:
@@ -29,13 +29,13 @@ c_ Solution:
             pointer.next _ l1
             r_ dummy.next
 
-    ___ printll(, node):
+    ___ printll , node:
         w___ node:
-            print ( node.val )
+            print   node.val 
             node _ node.next
 
 
 __  -n __ '__main__':
-    ll1, ll1.next, ll1.next.next _ ListNode(2), ListNode(3), ListNode(5)
-    ll2, ll2.next, ll2.next.next _ ListNode(4), ListNode(7), ListNode(15)
-    Solution().printll( Solution().mergeTwoLists(ll1,ll2) )
+    ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 3, ListNode 5
+    ll2, ll2.next, ll2.next.next _ ListNode 4, ListNode 7, ListNode 15
+    Solution .printll  Solution .mergeTwoLists ll1,ll2 

@@ -14,18 +14,18 @@
 c_ Solution:
     # @param s is a string
     # @return an integer
-    ___ numDecodings(s):
+    ___ numDecodings s:
         __ s__"" o. s[0]__'0': r_ 0
         dp_[1,1]
-        ___ i __ ra..(2,le.(s)+1):
-            __ 10 <_int(s[i-2:i]) <_26 an. s[i-1]!_'0':
-                dp.ap..(dp[i-1]+dp[i-2])
-            ____ in.(s[i-2:i])__10 o. in.(s[i-2:i])__20:
-                dp.ap..(dp[i-2])
+        ___ i __ ra.. 2,le. s+1:
+            __ 10 <_int s[i-2:i] <_26 an. s[i-1]!_'0':
+                dp.ap.. dp[i-1]+dp[i-2]
+            ____ in. s[i-2:i]__10 o. in. s[i-2:i]__20:
+                dp.ap.. dp[i-2]
             ____ s[i-1]!_'0':
-                dp.ap..(dp[i-1])
+                dp.ap.. dp[i-1]
             ____
                 r_ 0
-        r_ dp[le.(s)]
+        r_ dp[le. s]
 
-Solution.numDecodings("12")
+Solution.numDecodings "12"

@@ -12,7 +12,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -21,34 +21,34 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return a list of lists of integers
-    ___ zigzagLevelOrder(, root):
+    ___ zigzagLevelOrder , root:
         solution _   # list
         thisLevel _  # list
         __ root !_ N..:
-            thisLevel.ap..(root)
+            thisLevel.ap.. root
         leftToRight _ T..
-        w___ le.(thisLevel)>0:
+        w___ le. thisLevel>0:
             levelSolution _   # list
             nextLevel _   # list
-            w___ le.(thisLevel)>0:
-                node _ thisLevel.p..()
-                levelSolution.ap..(node.val)
+            w___ le. thisLevel>0:
+                node _ thisLevel.p.. 
+                levelSolution.ap.. node.val
                 __ leftToRight:
                     __ node.left !_ N..:
-                        nextLevel.ap..(node.left)
+                        nextLevel.ap.. node.left
                     __ node.right !_ N..:
-                        nextLevel.ap..(node.right)
+                        nextLevel.ap.. node.right
                 ____
                     __ node.right !_ N..:
-                        nextLevel.ap..(node.right)
+                        nextLevel.ap.. node.right
                     __ node.left !_ N..:
-                        nextLevel.ap..(node.left)
+                        nextLevel.ap.. node.left
             thisLevel _ nextLevel
-            solution.ap..(levelSolution)
+            solution.ap.. levelSolution
             leftToRight _ no. leftToRight
         r_ solution
 
 
 __  -n __ '__main__':
-    BT, BT.left, BT.right, BT.right.left, BT.right.right _ TreeNode(3), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
-    print ( Solution().zigzagLevelOrder(BT) )
+    BT, BT.left, BT.right, BT.right.left, BT.right.right _ TreeNode 3, TreeNode 9, TreeNode 20, TreeNode 15, TreeNode 7
+    print   Solution .zigzagLevelOrder BT 

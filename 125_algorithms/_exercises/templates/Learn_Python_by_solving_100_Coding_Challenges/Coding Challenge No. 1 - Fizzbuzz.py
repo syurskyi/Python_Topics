@@ -4,15 +4,15 @@
 # Solution:
 
 c_ Solution:
-    ___ Fizzbuzz(x,z):
-        ___ i __ ra..(x,z):
+    ___ Fizzbuzz x,z:
+        ___ i __ ra.. x,z:
             __ i % 3 __ 0 an. i % 5 __ 0:
-                print ("FizzBuzz")
+                print  "FizzBuzz"
             ____ i % 3 __ 0:
-                print ("Fizz")
+                print  "Fizz"
             ____ i % 5 __ 0:
-                print ("Buzz")
+                print  "Buzz"
             ____
-                print (i)
+                print  i
 
-Solution.Fizzbuzz(1,100)
+Solution.Fizzbuzz 1,100

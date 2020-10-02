@@ -7,22 +7,22 @@
 c_ Solution:
     # @param an integer
     # @return a list of string
-    ___ helpler(, l, r, item, res):
+    ___ helpler , l, r, item, res:
         __ r < l:
             r_
         __ l __ 0 an. r __ 0:
-            res.ap..(item)
+            res.ap.. item
         __ l > 0:
-            helpler(l - 1, r, item + '(', res)
+            helpler l - 1, r, item + '(', res
         __ r > 0:
-            helpler(l, r - 1, item + ')', res)
+            helpler l, r - 1, item + ')', res
 
-    ___ generateParenthesis(, n):
+    ___ generateParenthesis , n:
         __ n __ 0:
             r_   # list
         res _   # list
-        helpler(n, n, '', res)
+        helpler n, n, '', res
         r_ res
 
 
-Solution().generateParenthesis(3)
+Solution .generateParenthesis 3

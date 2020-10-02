@@ -15,7 +15,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -25,25 +25,25 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
-    ___ pathSum(, root, su.):
+    ___ pathSum , root, su.:
         solution _   # list
-        pathSumRec(root, su., 0,   # list, solution)
+        pathSumRec root, su., 0,   # list, solution)
         r_ solution
 
-    ___ pathSumRec(, root, su., tempSum, tempList, solution):
+    ___ pathSumRec , root, su., tempSum, tempList, solution:
         __ root __ N..:
             r_
-        tempList.ap..(root.val)
+        tempList.ap.. root.val
         tempSum +_ root.val
         __ root.left __ N.. an. root.right __ N..:
             __ tempSum __ su.:
-                solution.ap..(li..(tempList))
+                solution.ap.. li.. tempList
             ____
-                pathSumRec(root.left, su., tempSum, tempList, solution)
-                pathSumRec(root.right, su., tempSum, tempList, solution)
-        tempList.p..()
+                pathSumRec root.left, su., tempSum, tempList, solution
+                pathSumRec root.right, su., tempSum, tempList, solution
+        tempList.p..
 
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.left, BT.left _ TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
-    print ( Solution().pathSum(BT, 6) )
+    BT, BT.right, BT.right.left, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3, TreeNode 10
+    print   Solution .pathSum BT, 6

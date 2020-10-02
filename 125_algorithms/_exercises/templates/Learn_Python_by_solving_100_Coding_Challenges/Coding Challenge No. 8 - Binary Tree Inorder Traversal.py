@@ -11,26 +11,26 @@
 # Solutions:
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
 
 c_ Solution:
-    ___ inorderTraversal(root):
+    ___ inorderTraversal root:
         stack _   # list
         node _ root
         solution _   # list
-        w___ node!_ N.. o. le.(stack)>0:
+        w___ node!_ N.. o. le. stack>0:
             __ node !_ N..:
-                stack.ap..(node)
+                stack.ap.. node
                 node _ node.left
             ____
-                node _ stack.p..()
-                solution.ap..(node.val)
+                node _ stack.p.. 
+                solution.ap.. node.val
                 node _ node.right
         r_ solution
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
-    print ( Solution.inorderTraversal(BT) )
+    BT, BT.right, BT.right.left _ TreeNode 1, TreeNode 2, TreeNode 3
+    print   Solution.inorderTraversal BT 

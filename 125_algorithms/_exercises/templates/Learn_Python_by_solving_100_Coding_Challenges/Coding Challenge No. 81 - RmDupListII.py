@@ -6,7 +6,7 @@
 # Solutions:
 
 c_ ListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
 
@@ -14,10 +14,10 @@ c_ ListNode:
 c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
-    ___ deleteDuplicates(, head):
+    ___ deleteDuplicates , head:
         __ head __ N..:
             r_ N..
-        dummy _ ListNode(10**10)
+        dummy _ ListNode 10**10
         dummy.next, head _ head, dummy # add a dummy node
         pprev, prev, curr, dupFlag _ head, head.next, head.next.next, F..
         w___ T..:
@@ -37,12 +37,12 @@ c_ Solution:
             curr _ curr.next
         r_ head.next
 
-    ___ printll(, node):
+    ___ printll , node:
         w___ node:
-            print ( node.val )
+            print   node.val 
             node _ node.next
 
 
 __  -n __ '__main__':
-    ll1, ll1.next, ll1.next.next _ ListNode(2), ListNode(2), ListNode(5)
-    Solution().printll( Solution().deleteDuplicates(ll1) )
+    ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 2, ListNode 5
+    Solution .printll  Solution .deleteDuplicates ll1 

@@ -8,40 +8,40 @@
 
 
 c_ ListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
 
 
 c_ Solution:
-    ___ getlength(,head):
+    ___ getlength ,head:
         res _ 0
-        w___(head):
+        w___ head:
             res +_ 1
             head _ head.next
         r_ res
 
-    ___ removeNthFromEnd(, head, n):
+    ___ removeNthFromEnd , head, n:
         """
         :type head: ListNode
         :type n: int
         :rtype: ListNode
         """
-        __ getlength(head)__n:
+        __ getlength head__n:
             r_ head.next
 
         node _ head
-        ___ i __ ra..(getlength(head)-n-1):
+        ___ i __ ra.. getlength head-n-1:
             node _ node.next
         node.next _ node.next.next
         r_ head
 
-    ___ printll(, node):
+    ___ printll , node:
         w___ node:
-            print ( node.val )
+            print   node.val 
             node _ node.next
 
 
 __  -n __ '__main__':
-    ll1, ll1.next, ll1.next.next _ ListNode(0), ListNode(1), ListNode(5)
-    Solution().printll( Solution().removeNthFromEnd(ll1,2) )
+    ll1, ll1.next, ll1.next.next _ ListNode 0, ListNode 1, ListNode 5
+    Solution .printll  Solution .removeNthFromEnd ll1,2 

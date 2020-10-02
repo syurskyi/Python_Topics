@@ -8,21 +8,21 @@
 
 c_ Solution:
     # @return a list of lists of integers
-    ___ generate(, numRows):
+    ___ generate , numRows:
         __ numRows __ 0:
             r_   # list
 
         result _ [[1]]
-        w___ le.(result) < numRows:
+        w___ le. result < numRows:
             temp _ [1] # Every row starts with 1
 
-            ___ index __ ra..(le.(result[-1])-1):
-                temp.ap..(result[-1][index] + result[-1][index+1])
+            ___ index __ ra.. le. result[-1]-1:
+                temp.ap.. result[-1][index] + result[-1][index+1]
 
-            temp.ap..(1) # Every row ends with 1
-            result.ap..(temp)
+            temp.ap.. 1 # Every row ends with 1
+            result.ap.. temp
 
         r_ result
 
 
-Solution().generate(5)
+Solution .generate 5

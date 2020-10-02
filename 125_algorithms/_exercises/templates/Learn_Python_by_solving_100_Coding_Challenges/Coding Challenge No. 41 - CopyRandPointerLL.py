@@ -6,7 +6,7 @@
 
 
 c_ RandomListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
         ra__ _ N..
@@ -16,11 +16,11 @@ c_ Solution:
     # @param ll, a RandomListNode
     # @return a RandomListNode
 
-    ___ copyRandomList(, ll):
+    ___ copyRandomList , ll:
         # copy and combine copied list with original list
         current _ ll
         w___ current:
-            copied _ RandomListNode(current.val)
+            copied _ RandomListNode current.val
             copied.next _ current.next
             current.next _ copied
             current _ copied.next
@@ -33,7 +33,7 @@ c_ Solution:
             current _ current.next.next
 
         # split copied list from combined one
-        dummy _ RandomListNode(0)
+        dummy _ RandomListNode 0
         copied_current, current _ dummy, ll
         w___ current:
             copied_current.next _ current.next
@@ -43,9 +43,9 @@ c_ Solution:
 
 
 __  -n __ "__main__":
-    ll, ll.next _ RandomListNode(1), RandomListNode(2),
+    ll, ll.next _ RandomListNode 1, RandomListNode 2,
     ll.ra__ _ ll.next
-    result _ Solution().copyRandomList(ll)
-    print ( result.val )
-    print ( result.next.val )
-    print ( result.ra__.val )
+    result _ Solution .copyRandomList ll
+    print   result.val
+    print   result.next.val
+    print   result.ra__.val

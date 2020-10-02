@@ -5,7 +5,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -14,18 +14,18 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return a boolean
-    ___ isBalanced(, root):
-        r_ isBalancedInt(root)>_0
+    ___ isBalanced , root:
+        r_ isBalancedInt root>_0
 
-    ___ isBalancedInt(, root):
+    ___ isBalancedInt , root:
         __ root __ N..:
             r_ 0;
-        left _ isBalancedInt(root.left)
-        right _ isBalancedInt(root.right)
-        __ left<0 o. right<0 o. abs(left-right)>1:
+        left _ isBalancedInt root.left
+        right _ isBalancedInt root.right
+        __ left<0 o. right<0 o. ab. left-right>1:
             r_ -1
-        r_ ma.(left,right)+1
+        r_ ma. left,right+1
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
-    print ( Solution().isBalanced(BT) )
+    BT, BT.right, BT.right.left _ TreeNode 1, TreeNode 2, TreeNode 3
+    print   Solution .isBalanced BT 

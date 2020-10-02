@@ -13,7 +13,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -23,7 +23,7 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    ___ hasPathSum(, root, su.):
+    ___ hasPathSum , root, su.:
         __ root __ N..:
             # Empty tree will always result in False
             r_ F..
@@ -32,15 +32,15 @@ c_ Solution:
             r_ root.val __ su.
         ____ root.left __ N..:
             # Only has right child.
-            r_ hasPathSum(root.right, su.-root.val)
+            r_ hasPathSum root.right, su.-root.val
         ____ root.right __ N..:
             # Only has left child.
-            r_ hasPathSum(root.left, su.-root.val)
+            r_ hasPathSum root.left, su.-root.val
         ____
             # Has two children.
-            r_ hasPathSum(root.left, su.-root.val) o. hasPathSum(root.right, su.-root.val)
+            r_ hasPathSum root.left, su.-root.val o. hasPathSum root.right, su.-root.val
 
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.left, BT.left _ TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
-    print ( Solution().hasPathSum(BT, 6) )
+    BT, BT.right, BT.right.left, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3, TreeNode 10
+    print   Solution .hasPathSum BT, 6

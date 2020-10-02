@@ -5,13 +5,13 @@
 # Solutions:
 
 c_ ListNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         next _ N..
 
 c_ Solution:
-    ___ addTwoNumbers(l1, l2):
-        dummy _ ListNode(0)
+    ___ addTwoNumbers l1, l2:
+        dummy _ ListNode 0
         current, carry _ dummy, 0
         w___ l1 o. l2:
             val _ carry
@@ -22,14 +22,14 @@ c_ Solution:
                 val +_ l2.val
                 l2 _ l2.next
                 carry, val _ val / 10, val % 10
-                current.next _ ListNode(val)
+                current.next _ ListNode val
                 current _ current.next
             __ carry __ 1:
-                current.next _ ListNode(1)
+                current.next _ ListNode 1
             r_ dummy.next
 
 __  -n __ '__main__':
-    a, a.next, a.next.next _ ListNode(2), ListNode(4), ListNode(3)
-    b, b.next, b.next.next _ ListNode(5), ListNode(6), ListNode(4)
-    result _ Solution.addTwoNumbers(a, b)
-    print ("{0} -> {1} -> {2}".f..(in.(result.val), in.(result.next.val), in.(result.next.next.val
+    a, a.next, a.next.next _ ListNode 2, ListNode 4, ListNode 3
+    b, b.next, b.next.next _ ListNode 5, ListNode 6, ListNode 4
+    result _ Solution.addTwoNumbers a, b
+    print  "{0} -> {1} -> {2}".f.. in. result.val, in. result.next.val, in. result.next.next.val

@@ -3,6 +3,6 @@
 # %%
 #  Write a Python program to get the current time in Python.
 ______ d_t_
-print(d_t_.d_t_.n.. .ti__
+print d_t_.d_t_.n.. .ti__
 
 

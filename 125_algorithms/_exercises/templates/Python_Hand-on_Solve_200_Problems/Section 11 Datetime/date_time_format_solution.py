@@ -14,13 +14,13 @@
 
 ______ ti__
 ______ d_t_
-print("Current date and time: " , d_t_.d_t_.now
-print("Current year: ", d_t_.date.today().s_t_("%Y"))
-print("Month of year: ", d_t_.date.today().s_t_("%B"))
-print("Week number of the year: ", d_t_.date.today().s_t_("%W"))
-print("Weekday of the week: ", d_t_.date.today().s_t_("%w"))
-print("Day of year: ", d_t_.date.today().s_t_("%j"))
-print("Day of the month : ", d_t_.date.today().s_t_("%d"))
-print("Day of week: ", d_t_.date.today().s_t_("%A"))
+print "Current date and time: " , d_t_.d_t_.now
+print "Current year: ", d_t_.date.today .s_t_ "%Y"
+print "Month of year: ", d_t_.date.today .s_t_ "%B"
+print "Week number of the year: ", d_t_.date.today .s_t_ "%W"
+print "Weekday of the week: ", d_t_.date.today .s_t_ "%w"
+print "Day of year: ", d_t_.date.today .s_t_ "%j"
+print "Day of the month : ", d_t_.date.today .s_t_ "%d"
+print "Day of week: ", d_t_.date.today .s_t_ "%A"
 
 

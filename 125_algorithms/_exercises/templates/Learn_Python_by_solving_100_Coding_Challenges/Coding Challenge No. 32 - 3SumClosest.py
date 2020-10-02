@@ -7,14 +7,14 @@
 
 
 c_ Solution:
-    ___ threeSumClosest(, numbers, target):
-        numbers.sort()
+    ___ threeSumClosest , numbers, target:
+        numbers.s..
         ans _ N..
-        ___ i __ ra..(le.(numbers)):
-            l, r _ i + 1, le.(numbers) - 1
-            w___ (l < r):
+        ___ i __ ra.. le. numbers:
+            l, r _ i + 1, le. numbers - 1
+            w___  l < r:
                 su. _ numbers[l] + numbers[r] + numbers[i]
-                __ ans is N.. o. abs(su.- target) < abs(ans - target):
+                __ ans is N.. o. ab. su.- target < ab. ans - target:
                     ans _ su.
                 __ su. <_ target:
                     l _ l + 1
@@ -23,4 +23,4 @@ c_ Solution:
         r_ ans
 
 
-Solution().threeSumClosest([-1, 2, 1, -4], 1)
+Solution .threeSumClosest [-1, 2, 1, -4], 1

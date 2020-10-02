@@ -8,11 +8,11 @@
 
 c_ Solution:
     # @return an integer
-    ___ lengthOfLongestSubstring(, s):
+    ___ lengthOfLongestSubstring , s:
         lastRepeating _ -1
         longestSubstring _ 0
         positions _ {}
-        ___ i __ ra..(0, le.(s)):
+        ___ i __ ra.. 0, le. s:
             __ s[i] __ positions an. lastRepeating<positions[s[i]]:
                 lastRepeating _ positions[s[i]]
             __ i-lastRepeating > longestSubstring:
@@ -21,4 +21,4 @@ c_ Solution:
         r_ longestSubstring
 
 
-Solution().lengthOfLongestSubstring("abcabcbb")
+Solution .lengthOfLongestSubstring "abcabcbb"

@@ -9,6 +9,6 @@
 
 ______ __
 text _ 'The quick brown fox jumps over the lazy dog.'
-print(__.f_a_(r"\b\w{5}\b", text))
+print __.f_a_ r"\b\w{5}\b", text
 
 

@@ -4,7 +4,7 @@
 # Write a Python program to get current time in milliseconds in Python
 
 ______ ti__
-milli_sec _ in.(round(ti__.ti__() * 1000))
-print(milli_sec)
+milli_sec _ in. ro.. ti__.ti__  * 1000
+print milli_sec
 
 

@@ -9,7 +9,7 @@
 
 ______ __
 text1 _ '**//Python Exercises// - 12. '
-pattern _ __.c..('[\W_]+')
-print(pattern.sub('', text1))
+pattern _ __.c.. '[\W_]+'
+print pattern.sub '', text1
 
 

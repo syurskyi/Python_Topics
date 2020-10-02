@@ -9,36 +9,36 @@ c_ Solution:
     @param prices: a list of integer
     @return: an integer which is maximum profit
     """
-    ___ maxProfit(, k, prices):
-        __ prices is N.. o. le.(prices) <_ 1 o. k <_ 0:
+    ___ maxProfit , k, prices:
+        __ prices is N.. o. le. prices <_ 1 o. k <_ 0:
             r_ 0
-        n _ le.(prices)
+        n _ le. prices
         # k >= prices.length / 2 ==> multiple transactions Stock II
         __ k >_ n / 2:
             profit_max _ 0
-            ___ i __ ra..(1, n):
+            ___ i __ ra.. 1, n:
                 diff _ prices[i] - prices[i - 1]
                 __ diff > 0:
                     profit_max +_ diff
             r_ profit_max
 
-        f _ [[0 ___ i __ ra..(k + 1)] ___ j __ ra..(n + 1)]
-        ___ j __ ra..(1, k + 1):
-            ___ i __ ra..(1, n + 1):
-                ___ x __ ra..(0, i + 1):
-                    f[i][j] _ ma.(f[i][j], f[x][j - 1] + profit(prices, x + 1, i))
+        f _ [[0 ___ i __ ra.. k + 1] ___ j __ ra.. n + 1]
+        ___ j __ ra.. 1, k + 1:
+            ___ i __ ra.. 1, n + 1:
+                ___ x __ ra.. 0, i + 1:
+                    f[i][j] _ ma. f[i][j], f[x][j - 1] + profit prices, x + 1, i
         r_ f[n][k]
 
         # calculate the profit of prices(l, u)
-        ___ profit(, prices, l, u):
+        ___ profit , prices, l, u:
             __ l >_ u:
                 r_ 0
             valley _ 2**31 - 1
             profit_max _ 0
         ___ price __ prices[l - 1:u]:
-            profit_max _ ma.(profit_max, price - valley)
-            valley _ mi.(valley, price)
+            profit_max _ ma. profit_max, price - valley
+            valley _ mi. valley, price
         r_ profit_max
 
 
-Solution().maxProfit(8,[1, 4, 8, 1, 2, 10, 20, 30, 5, 3])
+Solution .maxProfit 8,[1, 4, 8, 1, 2, 10, 20, 30, 5, 3]

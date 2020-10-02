@@ -5,18 +5,18 @@
 # Solutions:
 
 c_ Solution:
-    ___ maxProfit(prices):
-        size _ le.(prices)
+    ___ maxProfit prices:
+        size _ le. prices
         __ size < 2:
             r_ 0
         buys _ [N..] * size
         sells _ [N..] * size
-        sells[0], sells[1] _ 0, ma.(0, prices[1] - prices[0])
-        buys[0], buys[1] _ -prices[0], ma.(-prices[0], -prices[1])
-        ___ x __ ra..(2, size):
-            sells[x] _ ma.(sells[x - 1], buys[x - 1] + prices[x])
-            buys[x] _ ma.(buys[x - 1], sells[x - 2] - prices[x])
+        sells[0], sells[1] _ 0, ma. 0, prices[1] - prices[0]
+        buys[0], buys[1] _ -prices[0], ma. -prices[0], -prices[1]
+        ___ x __ ra.. 2, size:
+            sells[x] _ ma. sells[x - 1], buys[x - 1] + prices[x]
+            buys[x] _ ma. buys[x - 1], sells[x - 2] - prices[x]
         r_ sells[-1]
 
 
-Solution.maxProfit([1, 2, 3, 0, 2])
+Solution.maxProfit [1, 2, 3, 0, 2]

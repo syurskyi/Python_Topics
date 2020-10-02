@@ -1,6 +1,6 @@
-___ string_rev(st.):
-    st. _ st..sp..()
-    st..reverse()
-    r_ ' '.j..(st.)
-
-print(string_rev(i..("Insert some strings: "
+# ___ string_rev st.
+#     st. _ st..sp..
+#     st..re..
+#     r_ ' '.j.. st.
+#
+# print ? i.. "Insert some strings: "

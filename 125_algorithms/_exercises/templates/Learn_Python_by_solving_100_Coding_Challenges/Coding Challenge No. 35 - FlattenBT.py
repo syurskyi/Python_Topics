@@ -13,7 +13,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -21,33 +21,33 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return nothing, do it in place
-    ___ flatten(, root):
+    ___ flatten , root:
         __ root __ N..:
             r_
         stack _ [root.right, root.left]
         current _ root
-        w___ le.(stack) !_ 0:
-            nextNode _ stack.p..()
+        w___ le. stack !_ 0:
+            nextNode _ stack.p..
             __ nextNode __ N..:
                 c..
             ____
                 current.left _ N..
                 current.right _ nextNode
                 current _ current.right
-                stack.ap..(current.right)
-                stack.ap..(current.left)
+                stack.ap.. current.right
+                stack.ap.. current.left
 
         r_ root
 
-        ___ printtree(, tree_node):
+        ___ printtree , tree_node:
             __ tree_node.left is no. N..:
-                printtree(tree_node.left)
-            print(tree_node.val)
+                printtree tree_node.left
+            print tree_node.val
         __ tree_node.right is no. N..:
-            printtree(tree_node.right)
+            printtree tree_node.right
 
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left _ TreeNode(1), TreeNode(5), TreeNode(6), TreeNode(2), TreeNode(4), TreeNode(3)
-    LL _ Solution().flatten(BT)
-    Solution().printtree(LL)
+    BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left _ TreeNode 1, TreeNode 5, TreeNode 6, TreeNode 2, TreeNode 4, TreeNode 3
+    LL _ Solution .flatten BT
+    Solution .printtree LL

@@ -8,8 +8,8 @@
 c_ Solution:
     # @param s, a string
     # @return a boolean
-    ___ _isPalindrome(, s):
-        begin, end _ 0, le.(s)-1
+    ___ _isPalindrome , s:
+        begin, end _ 0, le. s-1
         w___ begin < end:
             __ s[begin] !_ s[end]:
                 r_ F..
@@ -21,22 +21,22 @@ c_ Solution:
     # @param s, a string
     # @return a list of lists of string
 
-    ___ partition(, s):
-        __ le.(s) __ 0:
+    ___ partition , s:
+        __ le. s __ 0:
             r_   # list
-        __ le.(s) __ 1:
+        __ le. s __ 1:
             r_ [[s]]
         result _   # list
-        __ _isPalindrome(s):
-            result.ap..([s])
+        __ _isPalindrome s:
+            result.ap.. [s]
 
-        ___ i __ ra..(1, le.(s)):
+        ___ i __ ra.. 1, le. s:
             head _ s[:i]
-            __ no. _isPalindrome(head):
+            __ no. _isPalindrome head:
                 c..
-            tailPartition _ partition(s[i:])
-            result.extend([[head] + item ___ item __ tailPartition])
+            tailPartition _ partition s[i:]
+            result.extend [[head] + item ___ item __ tailPartition]
         r_ result
 
 
-Solution().partition("aab")
+Solution .partition "aab"

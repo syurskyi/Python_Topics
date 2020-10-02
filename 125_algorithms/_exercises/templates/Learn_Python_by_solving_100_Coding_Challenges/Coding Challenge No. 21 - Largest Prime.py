@@ -6,7 +6,7 @@
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ largest_prime_of(n):
+    ___ largest_prime_of n:
         i _ 2
         w___ i * i <_ n:
             __ n % i:
@@ -16,4 +16,4 @@ c_ Solution:
         r_ n
 
 
-Solution.largest_prime_of(255)
+Solution.largest_prime_of 255

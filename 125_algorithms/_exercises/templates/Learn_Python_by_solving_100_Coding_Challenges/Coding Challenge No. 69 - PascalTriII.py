@@ -7,7 +7,7 @@
 
 c_ Solution:
     # @return a list of integers
-    ___ getRow(, rowIndex):
+    ___ getRow , rowIndex:
         __ rowIndex __ 0:
             r_ [1]
         __ rowIndex __ 1:
@@ -15,16 +15,16 @@ c_ Solution:
         result _ [1]
         nextDivisor _ 1
         nextMultiplier _ rowIndex
-        ___ _ __ ra..(rowIndex // 2):
-            nextVal _ in.((result[-1] * nextMultiplier) / nextDivisor)
-            result.ap..(nextVal)
+        ___ _ __ ra.. rowIndex // 2:
+            nextVal _ in.((result[-1] * nextMultiplier / nextDivisor
+            result.ap.. nextVal
             nextDivisor +_ 1
             nextMultiplier -_ 1
         __ rowIndex % 2 __ 1:
-            result.extend(result[::-1])
+            result.extend result[::-1]
         ____
-            result.extend(result[-2::-1])
+            result.extend result[-2::-1]
         r_ result
 
 
-Solution().getRow(3)
+Solution .getRow 3

@@ -6,7 +6,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -15,19 +15,19 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return a tree node
-    ___ FindTwoNodes(, root):
+    ___ FindTwoNodes , root:
         __ root:
-            FindTwoNodes(root.left)
+            FindTwoNodes root.left
             __ prev an. prev.val > root.val:
                 n2 _ root
                 __ n1 __ N..:
                     n1 _ prev
                 prev _ root
-                FindTwoNodes(root.right)
+                FindTwoNodes root.right
 
-    ___ recoverTree(, root):
+    ___ recoverTree , root:
         n1 _ n2 _ N..
         prev _ N..
-        FindTwoNodes(root)
+        FindTwoNodes root
         n1.val, n2.val _ n2.val, n1.val
         r_ root

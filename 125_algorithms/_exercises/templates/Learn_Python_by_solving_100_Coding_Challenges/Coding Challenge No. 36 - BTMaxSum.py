@@ -11,7 +11,7 @@
 
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
@@ -19,26 +19,26 @@ c_ TreeNode:
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ maxPathSum(, root):
-        maxValue _ fl..("-inf")
-        maxPathSumRec(root)
+    ___ maxPathSum , root:
+        maxValue _ fl.. "-inf"
+        maxPathSumRec root
         r_ maxValue
 
-    ___ maxPathSumRec(, root):
+    ___ maxPathSumRec , root:
         __ root __ N..:
             r_ 0
-        leftSum _ maxPathSumRec(root.left)
-        rightSum _ maxPathSumRec(root.right)
+        leftSum _ maxPathSumRec root.left
+        rightSum _ maxPathSumRec root.right
         __ leftSum<0 an. rightSum<0:
-            maxValue _ ma.(maxValue, root.val)
+            maxValue _ ma. maxValue, root.val
             r_ root.val
         __ leftSum>0 an. rightSum>0:
-            maxValue _ ma.(maxValue, root.val+leftSum+rightSum)
-        maxValueUp _ ma.(leftSum, rightSum) +root.val
-        maxValue _ ma.(maxValue, maxValueUp)
+            maxValue _ ma. maxValue, root.val+leftSum+rightSum
+        maxValueUp _ ma. leftSum, rightSum +root.val
+        maxValue _ ma. maxValue, maxValueUp
         r_ maxValueUp
 
 
 __  -n __ '__main__':
-    BT, BT.right, BT.left _ TreeNode(1), TreeNode(2), TreeNode(3)
-    print ( Solution().maxPathSum(BT) )
+    BT, BT.right, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3
+    print   Solution .maxPathSum BT

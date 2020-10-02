@@ -12,21 +12,21 @@
 c_ Solution:
     # @param num, a list of integer
     # @return a list of integer
-    ___ nextPermutation(, num):
-        back _ le.(num) - 2
+    ___ nextPermutation , num:
+        back _ le. num - 2
         w___ back >_ 0:
-            front _ le.(num) - 1
+            front _ le. num - 1
             w___ front > back :
                 __ num[back] < num[front]:
                     # Rule breaker found.
                     num[back], num[front] _ num[front], num[back]
-                    num[back+1:] _ s..(num[back+1:])
+                    num[back+1:] _ s.. num[back+1:]
                     r_ num
                 ____
                     front -_ 1
             back -_ 1
-        num.sort()
+        num.s..
         r_ num
 
 
-Solution().nextPermutation([1,2,3])
+Solution .nextPermutation [1,2,3]

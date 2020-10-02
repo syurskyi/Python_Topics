@@ -8,21 +8,21 @@ c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
-    ___ pow_recursive(, x, n):
+    ___ pow_recursive , x, n:
         __ n__0:
             r_ 1
         __ n<0:
-            r_ 1.0/pow_recursive(x,-n)
+            r_ 1.0/pow_recursive x,-n
         __ n%2__1:
-            r_ x*pow_recursive(x*x,in.(n/2))
+            r_ x*pow_recursive x*x,in. n/2
         ____
-            r_ pow_recursive(x*x,in.(n/2))
+            r_ pow_recursive x*x,in. n/2
 
     # @param x, a float
     # @param n, a integer
     # @return a float
 
-    ___ pow_iterative(, x, n):
+    ___ pow_iterative , x, n:
         result_1
         __ n<0:
             n_-n
@@ -40,4 +40,4 @@ c_ Solution:
             r_ 1.0/result
 
 
-Solution().pow_recursive(3.0,2)
+Solution .pow_recursive 3.0,2

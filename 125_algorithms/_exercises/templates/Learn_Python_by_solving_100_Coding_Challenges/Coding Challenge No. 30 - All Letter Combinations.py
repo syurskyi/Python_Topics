@@ -10,13 +10,13 @@
 
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations(, digits):
-        ___ dfs(num, string, res):
+    ___ letterCombinations , digits:
+        ___ dfs num, string, res:
             __ num __ length:
-                res.ap..(string)
+                res.ap.. string
                 r_
             ___ letter __ di..[digits[num]]:
-                dfs(num+1, string+letter, res)
+                dfs num+1, string+letter, res
         di.. _ {'2':['a','b','c'],
         '3':['d','e','f'],
         '4':['g','h','i'],
@@ -27,9 +27,9 @@ c_ Solution:
         '9':['w','x','y','z']
         }
         res _   # list
-        length _ le.(digits)
-        dfs(0, '', res)
+        length _ le. digits
+        dfs 0, '', res
         r_ res
 
 
-Solution().letterCombinations("43556")
+Solution .letterCombinations "43556"

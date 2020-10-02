@@ -8,32 +8,32 @@
 c_ Solution:
     # @param s, a string
     # @return a list of strings
-    ___ restoreIpAddresses(, s):
+    ___ restoreIpAddresses , s:
         solution _   # list
-        restoreIpAddressesRec(s,0,0,  # list,solution)
+        restoreIpAddressesRec s,0,0,  # list,solution)
         r_ solution
 
-    ___ restoreIpAddressesRec(, s, index, octets, tempSolution, solution):
-        __ le.(s)-index<4-octets:
+    ___ restoreIpAddressesRec , s, index, octets, tempSolution, solution:
+        __ le. s-index<4-octets:
             r_
-        __ le.(s)-index>3*(4-octets):
+        __ le. s-index>3* 4-octets:
             r_
         __ octets__4:
-            __ index__ le.(s):
-                tempSolution.p..()
-                solution.ap..("".j..(tempSolution))
-                tempSolution.ap..('.')
+            __ index__ le. s:
+                tempSolution.p.. 
+                solution.ap.. "".j.. tempSolution
+                tempSolution.ap.. '.'
             r_
-        ___ size __ ra..(1,4):
+        ___ size __ ra.. 1,4:
             __ s[index]__'0' an. size>1:
                 b..
-            __ in.(s[index:index+size])>255:
+            __ in. s[index:index+size]>255:
                 b..
-            tempSolution.ap..(s[index:index+size])
-            tempSolution.ap..('.')
-            restoreIpAddressesRec(s,index+size,octets+1,tempSolution, solution)
-            tempSolution.p..()
-            tempSolution.p..()
+            tempSolution.ap.. s[index:index+size]
+            tempSolution.ap.. '.'
+            restoreIpAddressesRec s,index+size,octets+1,tempSolution, solution
+            tempSolution.p.. 
+            tempSolution.p.. 
 
 
-Solution().restoreIpAddresses("25525511135")
+Solution .restoreIpAddresses "25525511135"

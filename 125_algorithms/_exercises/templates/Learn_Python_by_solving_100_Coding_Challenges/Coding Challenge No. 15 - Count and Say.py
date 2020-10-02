@@ -11,13 +11,13 @@
 
 c_ Solution:
     # @return a string
-    ___ countAndSay(n):
+    ___ countAndSay n:
         result _ "1"
         __ n __ 0:
             r_ N..
         ____
-            print ( "1" )
-            ___ i __ ra..(n-1):
+            print   "1" 
+            ___ i __ ra.. n-1:
                 temp _ ""
                 current _ result[0]
                 currentCount _ 1
@@ -25,11 +25,11 @@ c_ Solution:
                     __ item __ current:
                         currentCount +_ 1
                     ____
-                        temp +_ st.(currentCount) + current
+                        temp +_ st. currentCount + current
                         current _ item
                         currentCount _ 1
-                temp +_ st.(currentCount) + current
+                temp +_ st. currentCount + current
                 result _ temp
-                print(result)
+                print result
 
-Solution.countAndSay(8)
+Solution.countAndSay 8

@@ -11,24 +11,24 @@
 # Solutions:
 
 c_ TreeNode:
-    ___  -(, x):
+    ___  - , x:
         val _ x
         left _ N..
         right _ N..
 
 c_ Solution:
-    ___ preorderTraversal(root):
+    ___ preorderTraversal root:
         result _   # list
         stack _ [root]
 
         w___ stack:
-            node _ stack.p..()
+            node _ stack.p.. 
             __ node:
-                result.ap..(node.val)
-                stack.ap..(node.right)
-                stack.ap..(node.left)
+                result.ap.. node.val
+                stack.ap.. node.right
+                stack.ap.. node.left
         r_ result
 
 __  -n __ '__main__':
-    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
-    print ( Solution.preorderTraversal(BT) )
+    BT, BT.right, BT.right.left _ TreeNode 1, TreeNode 2, TreeNode 3
+    print   Solution.preorderTraversal BT 

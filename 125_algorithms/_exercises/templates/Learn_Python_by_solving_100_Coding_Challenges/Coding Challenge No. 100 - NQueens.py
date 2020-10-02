@@ -5,26 +5,26 @@
 
 c_ Solution:
     # @return a list of lists of string
-    ___ solveNQueens(, n):
-        ___ check(k,j,board):
-            ___ i __ ra..(k):
-                __ board[i]__j o. abs(k-i)__abs(board[i]-j):
+    ___ solveNQueens , n:
+        ___ check k,j,board:
+            ___ i __ ra.. k:
+                __ board[i]__j o. ab. k-i__abs board[i]-j:
                     r_ F..
             r_ T..
 
-        ___ dfs(depth,board,valuelist,solution):
+        ___ dfs depth,board,valuelist,solution:
             #for i in range(len(board)):
-            __ depth__len(board):
-                solution.ap..(valuelist)
-            ___ row __ ra..(le.(board)):
-                __ check(depth,row,board):
-                    s_'.'*le.(board)
+            __ depth__len board:
+                solution.ap.. valuelist
+            ___ row __ ra.. le. board:
+                __ check depth,row,board:
+                    s_'.'*le. board
                     board[depth]_row
-                    dfs(depth+1,board,valuelist+[s[:row]+'Q'+s[row+1:]],solution)
-        board_[-1 ___ i __ ra..(n)]
+                    dfs depth+1,board,valuelist+[s[:row]+'Q'+s[row+1:]],solution
+        board_[-1 ___ i __ ra.. n]
         solution_  # list
-        dfs(0,board,  # list,solution)
+        dfs 0,board,  # list,solution)
         r_ solution
 
 
-Solution().solveNQueens(4)
+Solution .solveNQueens 4
