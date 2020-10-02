@@ -1,19 +1,19 @@
-# Anagrams
-# Question: Given an array of strings, return all groups of strings that are anagrams.
-# Note: All inputs will be in lower-case.
-# Solutions:
-
-c_ Solution:
-    ___ anagrams strs:
-        di.. _ {}
-        ___ word __ strs:
-            sortedword _ ''.j.. s.. word
-            di..[sortedword] _ [word] __ sortedword no. __ di.. ____ di..[sortedword] + [word]
-        res _   # list
-        ___ item __ di..:
-            __ le. di..[item] >_ 2:
-                res +_ di..[item]
-        r_ res
-
-
-Solution.anagrams ["anagram", "nagaram", "racecar","carraces"]
+# # Anagrams
+# # Question: Given an array of strings, return all groups of strings that are anagrams.
+# # Note: All inputs will be in lower-case.
+# # Solutions:
+#
+# c_ Solution
+#     ___ anagrams strs
+#         di.. _  #d ict
+#         ___ word __ ?
+#             sortedword _ ''.j.. s.. ?
+#             di.. ? _ ? __ ? no. __ di.. ____ di.. ? + ?
+#         res _   # list
+#         ___ item __ di..
+#             __ le. di.. ? >_ 2
+#                 ? +_ di.. ?
+#         r_ ?
+#
+#
+# ?.? ["anagram", "nagaram", "racecar","carraces"]
