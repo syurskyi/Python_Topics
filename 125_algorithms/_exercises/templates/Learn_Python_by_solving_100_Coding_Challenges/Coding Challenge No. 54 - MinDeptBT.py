@@ -24,6 +24,6 @@ c_ Solution:
         r_ mi. minDepth root.left,minDepth root.right+1
 
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.right.left, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3, TreeNode 10
     print   Solution .minDepth BT 

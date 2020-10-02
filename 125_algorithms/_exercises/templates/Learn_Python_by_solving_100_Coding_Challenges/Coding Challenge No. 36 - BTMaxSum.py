@@ -39,6 +39,6 @@ c_ Solution:
         r_ maxValueUp
 
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3
     print   Solution .maxPathSum BT

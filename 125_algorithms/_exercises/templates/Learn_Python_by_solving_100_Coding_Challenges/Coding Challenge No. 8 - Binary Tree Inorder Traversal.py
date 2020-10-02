@@ -31,6 +31,6 @@ c_ Solution:
                 node _ node.right
         r_ solution
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.right.left _ TreeNode 1, TreeNode 2, TreeNode 3
     print   Solution.inorderTraversal BT 

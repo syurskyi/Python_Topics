@@ -43,6 +43,6 @@ c_ Solution:
             node _ node.next
 
 
-__  -n __ '__main__':
+__  -n __ ______
     ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 2, ListNode 5
     Solution .printll  Solution .deleteDuplicates ll1 

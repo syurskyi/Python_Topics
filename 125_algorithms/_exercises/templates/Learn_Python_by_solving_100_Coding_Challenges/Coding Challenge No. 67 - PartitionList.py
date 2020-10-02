@@ -39,7 +39,7 @@ c_ Solution:
             node _ node.next
 
 
-__  -n __ '__main__':
+__  -n __ ______
     node6 _ ListNode 2
     node5 _ ListNode 5, node6
     node4 _ ListNode 2, node5

@@ -41,6 +41,6 @@ c_ Solution:
             r_ hasPathSum root.left, su.-root.val o. hasPathSum root.right, su.-root.val
 
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.right.left, BT.left _ TreeNode 1, TreeNode 2, TreeNode 3, TreeNode 10
     print   Solution .hasPathSum BT, 6

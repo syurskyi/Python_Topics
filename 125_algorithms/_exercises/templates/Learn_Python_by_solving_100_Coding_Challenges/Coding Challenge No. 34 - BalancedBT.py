@@ -26,6 +26,6 @@ c_ Solution:
             r_ -1
         r_ ma. left,right+1
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.right.left _ TreeNode 1, TreeNode 2, TreeNode 3
     print   Solution .isBalanced BT 

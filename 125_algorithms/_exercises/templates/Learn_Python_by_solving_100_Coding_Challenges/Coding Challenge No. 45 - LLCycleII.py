@@ -34,7 +34,7 @@ c_ Solution:
         r_ N..
 
 
-__  -n __ '__main__':
+__  -n __ ______
     ll, ll.next, ll.next.next _ ListNode 2, ListNode 4, ListNode 3,
     ll.next.next.next _ ll.next
     print  Solution .detectCycle ll.val

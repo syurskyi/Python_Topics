@@ -49,6 +49,6 @@ c_ Solution:
         r_ solution
 
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.left, BT.right, BT.right.left, BT.right.right _ TreeNode 3, TreeNode 9, TreeNode 20, TreeNode 15, TreeNode 7
     print   Solution .zigzagLevelOrder BT 

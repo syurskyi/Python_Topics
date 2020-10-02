@@ -35,7 +35,7 @@ c_ Solution:
             node _ node.next
 
 
-__  -n __ '__main__':
+__  -n __ ______
     ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 3, ListNode 5
     ll2, ll2.next, ll2.next.next _ ListNode 4, ListNode 7, ListNode 15
     Solution .printll  Solution .mergeTwoLists ll1,ll2 

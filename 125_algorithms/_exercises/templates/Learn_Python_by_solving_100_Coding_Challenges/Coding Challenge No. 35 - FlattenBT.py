@@ -47,7 +47,7 @@ c_ Solution:
             printtree tree_node.right
 
 
-__  -n __ '__main__':
+__  -n __ ______
     BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left _ TreeNode 1, TreeNode 5, TreeNode 6, TreeNode 2, TreeNode 4, TreeNode 3
     LL _ Solution .flatten BT
     Solution .printtree LL
