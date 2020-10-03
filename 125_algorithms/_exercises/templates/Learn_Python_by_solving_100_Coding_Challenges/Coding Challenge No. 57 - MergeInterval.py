@@ -1,42 +1,42 @@
-# Merge Intervals
-# Question: Given a collection of intervals, merge all overlapping intervals.
-# For example:
-# Given [1,3],[2,6],[8,10],[15,18],
-# return [1,6],[8,10],[15,18].
-# Solutions:
-
-
-c_ Interval:
-    ___  - , s_0, e_0:
-        start _ s
-        end _ e
-    ___ printIn ,i:
-        print  "[%d ,%d]"% i.start,i.end
-
-
-c_ Solution:
-    # @param intervals, a list of Interval
-    # @return a list of Interval
-    ___ merge , intervals:
-        intervals.sort key _ lambda x:x.start
-        length_len intervals
-        res_  # list
-        ___ i __ ra.. length:
-            __ res__  # list:
-                res.ap.. intervals[i]
-            ____
-                size_len res
-                __ res[size-1].start<_intervals[i].start<_res[size-1].end:
-                    res[size-1].end_ma. intervals[i].end, res[size-1].end
-                ____
-                    res.ap.. intervals[i]
-        r_ res
-
-
-i1 _ Interval 1,3
-i2 _ Interval 2,6
-i3 _ Interval 8,10
-i4 _ Interval 15,18
-result _ Solution .merge [i1,i2,i3,i4]
-___ i __ result:
-    Interval .printIn i
+# # Merge Intervals
+# # Question: Given a collection of intervals, merge all overlapping intervals.
+# # For example:
+# # Given [1,3],[2,6],[8,10],[15,18],
+# # return [1,6],[8,10],[15,18].
+# # Solutions:
+#
+#
+# c_ Interval
+#     ___  -  s_0 e_0
+#         start _ ?
+#         end _ ?
+#     ___ printIn i
+#         print  "[@ ,@]"  ?.s.. ?.e..
+#
+#
+# c_ Solution
+#     # @param intervals, a list of Interval
+#     # @return a list of Interval
+#     ___ merge  intervals
+#         ?.s.. key _ l___ x ?.s..
+#         length _ le. ?
+#         res_  # list
+#         ___ i __ ra.. l..
+#             __ ? __  # list:
+#                 ?.ap.. ? ?
+#             ____
+#                 size_len ?
+#                 __ ? ? - 1 .s.. <_ ? ? .s.. <_ ? ? - 1 .e..
+#                     ? ?-1 .end _ ma. ? ? .e.. ? ? - 1 .e..
+#                 ____
+#                     ?.ap.. ? ?
+#         r_ ?
+#
+#
+# i1 _ ? 1,3
+# i2 _ ? 2,6
+# i3 _ ? 8,10
+# i4 _ ? 15,18
+# result _ ? .? ? ? ? ?
+# ___ i __ ?
+#     ? . ? ?

@@ -1,33 +1,33 @@
-# Median of Two Sorted Arrays
-# Question: There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
-# Solutions:
-
-c_ Solution:
-    """
-    @param A, B: integer arrays.
-    @return: a double whose format is *.5 or *.0
-    """
-    ___ findMedianSortedArrays , A, B:
-        n _ le. A + le. B
-        __ n % 2 __ 1:
-            r_ findKth A, B, in. n / 2 + 1
-        ____
-            smaller _ findKth A, B, in. n / 2
-            bigger _ findKth A, B, in. n / 2 + 1
-            r_  smaller + bigger / 2.0
-
-    ___ findKth , A, B, k:
-        __ le. A __ 0:
-            r_ B[k - 1]
-        __ le. B __ 0:
-            r_ A[k - 1]
-        __ k __ 1:
-            r_ mi. A[0], B[0]
-        a _ A[in. k / 2 - 1] __ le. A >_ in. k / 2 ____ N..
-        b _ B[in. k / 2 - 1] __ le. B >_ in. k / 2 ____ N..
-        __ b __ N.. o.  a __ no. N.. an. a < b:
-            r_ findKth A[in. k / 2:], B, k - in. k / 2
-        r_ findKth A, B[in. k / 2:], k - in. k / 2
-
-
-Solution .findMedianSortedArrays [1,2,3,4],[7,8,9,10]
+# # Median of Two Sorted Arrays
+# # Question: There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+# # Solutions:
+#
+# c_ Solution
+#     """
+#     @param A, B: integer arrays.
+#     @return: a double whose format is *.5 or *.0
+#     """
+#     ___ findMedianSortedArrays  A B
+#         n _ le. ? + le. ?
+#         __ ? % 2 __ 1
+#             r_ ? ? ? in. ? / 2 + 1
+#         ____
+#             smaller _ ? ? ? in. ? / 2
+#             bigger _ ? ? ? in. ? / 2 + 1
+#             r_  ? + ? / 2.0
+#
+#     ___ findKth  A B k
+#         __ le. ? __ 0
+#             r_ ? ? - 1
+#         __ le. ? __ 0
+#             r_ ? ? - 1
+#         __ ? __ 1
+#             r_ mi. ? 0 ? 0
+#         a _ ? in. ? / 2 - 1 __ le. ? >_ in. ? / 2 ____ N..
+#         b _ ? in. ? / 2 - 1 __ le. ? >_ in. ? / 2 ____ N..
+#         __ ? __ N.. o.  ? __ no. N.. an. ? < ?
+#             r_ ? ? in. ? / 2| ? ? - in. ? / 2
+#         r_ ? ? ? in. ? / 2| ? - in. ? / 2
+#
+#
+# ? .? [1,2,3,4],[7,8,9,10]

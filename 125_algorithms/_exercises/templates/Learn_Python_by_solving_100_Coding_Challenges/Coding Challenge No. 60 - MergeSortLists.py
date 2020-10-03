@@ -1,41 +1,41 @@
-# Merge Sorted Lists
-# Question: Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
-# Solutions:
-
-
-c_ ListNode:
-    ___  - , x:
-        val _ x
-        next _ N..
-
-
-c_ Solution:
-    # @param two ListNodes
-    # @return a ListNode
-    ___ mergeTwoLists , l1, l2:
-        dummy _ ListNode 0
-        pointer _ dummy
-        w___ l1 !_None an. l2 !_None:
-            __ l1.val<l2.val:
-                pointer.next _ l1
-                l1 _ l1.next
-            ____
-                pointer.next _ l2
-                l2 _ l2.next
-            pointer _ pointer.next
-        __ l1 __ N..:
-            pointer.next _ l2
-        ____
-            pointer.next _ l1
-            r_ dummy.next
-
-    ___ printll , node:
-        w___ node:
-            print   node.val 
-            node _ node.next
-
-
-__  -n __ ______
-    ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 3, ListNode 5
-    ll2, ll2.next, ll2.next.next _ ListNode 4, ListNode 7, ListNode 15
-    Solution .printll  Solution .mergeTwoLists ll1,ll2 
+# # Merge Sorted Lists
+# # Question: Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+# # Solutions:
+#
+#
+# c_ ListNode
+#     ___  -  x
+#         val _ x
+#         next _ N..
+#
+#
+# c_ Solution
+#     # @param two ListNodes
+#     # @return a ListNode
+#     ___ mergeTwoLists  l1 l2
+#         dummy _ ? 0
+#         pointer _ ?
+#         w___ l1 !_N.. an. l2 !_N..
+#             __ ?.v.. < ?.v..
+#                 ?.n.. _ ?
+#                 l1 _ ?.n..
+#             ____
+#                 ?.n.. _ ?
+#                 l2 _ ?.n..
+#             ? _ ?.n..
+#         __ l1 __ N..
+#             ?.n.. _ ?
+#         ____
+#             ?.n.. _ l1
+#             r_ d__.n..
+#
+#     ___ printll  node
+#         w___ ?
+#             print ?.v..
+#             n.. _ ?.n..
+#
+#
+# __  -n __ ______
+#     ll1 ?.n.. ?.n...n.. _ ? 2 ? 3 ? 5
+#     ll2 ?.n.. ?.n...n.. _ ? 4 ? 7 ? 15
+#     ? .p..  ? .? ? ?
