@@ -6,7 +6,7 @@
 # return 5.
 # Solutions:
 
-c_ Solution:
+c_ Solution
     # @param s, a string
     # @return an integer
 

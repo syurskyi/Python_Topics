@@ -10,7 +10,7 @@ c_ Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
     ___ subsets , nums:
-        __ nums is N..:
+        __ nums __ N..:
             r_   # list
         result _   # list
         nums.s..

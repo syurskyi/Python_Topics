@@ -42,7 +42,7 @@ c_ Solution object:
         r_ dummy.next
 
 
-__  -n __ "__main__":
+__  -n __ _____
     n1 _ ListNode 1
     n2 _ ListNode 2
     n3 _ ListNode 3
