@@ -1,40 +1,40 @@
-# Linked List Cycle II
-# Question: Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
-# Solutions:
-
-
-
-c_ ListNode:
-    ___  - , val, next_None:
-        val _ val
-        next _ next
-
-
-c_ Solution:
-    """
-    @param head: The first node of the linked list.
-    @return: the node where the cycle begins. If there is no cycle, return null
-    """
-
-    ___ detectCycle , head:
-        __ head __ N.. o. head.next __ N..:
-            r_ N..
-        slow _ fast _ head
-        w___ fast an. fast.next:
-            slow _ slow.next
-            fast _ fast.next.next
-            __ fast __ slow:
-                b..
-        __ slow __ fast:
-            slow _ head
-            w___ slow !_ fast:
-                slow _ slow.next
-                fast _ fast.next
-            r_ slow
-        r_ N..
-
-
-__  -n __ ______
-    ll, ll.next, ll.next.next _ ListNode 2, ListNode 4, ListNode 3,
-    ll.next.next.next _ ll.next
-    print  Solution .detectCycle ll.val
+# # Linked List Cycle II
+# # Question: Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+# # Solutions:
+#
+#
+#
+# c_ ListNode
+#     ___  -  val next_None
+#         ? _ ?
+#         ? _ ?
+#
+#
+# c_ Solution
+#     """
+#     @param head: The first node of the linked list.
+#     @return: the node where the cycle begins. If there is no cycle, return null
+#     """
+#
+#     ___ detectCycle head
+#         __ ? __ N.. o. ?.n.. __ N..
+#             r_ N..
+#         slow _ fast _ ?
+#         w___ f.. an. f__.n..
+#             s.. _ s__.n..
+#             f.. _ f__.n...n..
+#             __ f.. __ s..
+#                 b..
+#         __ s.. __ f...
+#             s.. _ ?
+#             w___ ? !_ ?
+#                 s.. _ ?.n..
+#                 f.. _ ?.n..
+#             r_ ?
+#         r_ N..
+#
+#
+# __  -n __ ______
+#     ll, ?.n.., ?.n...n.. _ ? 2 ? 4 ? 3
+#     ?.n...n...n.. _ ?.n..
+#     print ? .? ?.v..
