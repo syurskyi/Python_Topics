@@ -1,37 +1,37 @@
-# Remove Duplicates from Sorted List
-# Question: Given a sorted linked list, delete all duplicates such that each element appear only once.
-# For example:
-# Given 1->1->2, return 1->2.
-# Given 1->1->2->3->3, return 1->2->3.
-# Solutions:
-
-
-c_ ListNode:
-    ___  - , x:
-        val _ x
-        next _ N..
-
-
-c_ Solution:
-    # @param head, a ListNode
-    # @return a ListNode
-    ___ deleteDuplicates , head:
-        __ head __ N.. o. head.next __ N..:
-            r_ head
-        p _ head
-        w___ p.next:
-            __ p.val __ p.next.val:
-                p.next _ p.next.next
-            ____
-                p _ p.next
-        r_ head
-
-    ___ printll , node:
-        w___ node:
-            print   node.val
-            node _ node.next
-
-
-__  -n __ ______
-    ll1, ll1.next, ll1.next.next _ ListNode 2, ListNode 2, ListNode 5
-    Solution .printll  Solution .deleteDuplicates ll1
+# # Remove Duplicates from Sorted List
+# # Question: Given a sorted linked list, delete all duplicates such that each element appear only once.
+# # For example:
+# # Given 1->1->2, return 1->2.
+# # Given 1->1->2->3->3, return 1->2->3.
+# # Solutions:
+#
+#
+# c_ ListNode
+#     ___  -  x
+#         val _ x
+#         next _ N..
+#
+#
+# c_ Solution
+#     # @param head, a ListNode
+#     # @return a ListNode
+#     ___ deleteDuplicates  head
+#         __ ? __ N.. o. ?.n.. __ N..
+#             r_ ?
+#         p _ ?
+#         w___ p.n..
+#             __ p.v.. __ p.n...v..
+#                 p.n.. _ p.n...n..
+#             ____
+#                 p _ p.n..
+#         r_ ?
+#
+#     ___ printll  node
+#         w___ ?
+#             print   ?.v..
+#             ? _ ?.n..
+#
+#
+# __  -n __ ______
+#     ll1 ?.n.. ?.n...n.. _ ? 2 ? 2 ? 5
+#     > .p.. ? .d.. ?
