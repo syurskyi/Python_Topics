@@ -3,12 +3,12 @@
 # Solutions:
 
 
-c_ Solution:
+c_ Solution
     # @param {string} s
     # @return {string}
 
-    ___ longestPalindrome , s:
-        l _ le. s
+    ___ longestPalindrome  s
+        l _ le. ?
         __ l <_ 2:
             __  s[0] !_ s[l-1]:
                 r_ ''
