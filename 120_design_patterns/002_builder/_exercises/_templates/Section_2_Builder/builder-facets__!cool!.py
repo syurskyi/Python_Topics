@@ -71,14 +71,14 @@
 # __ ______ __ _____
 #     pb _ PB..
 #     p _ ?\
-#         .lives\
-#             .at('123 London Road')\
-#             .in_city('London')\
-#             .with_postcode('SW12BC')\
-#         .works\
-#             .at('Fabrikam')\
-#             .as_a('Engineer')\
-#             .earning(123000)\
+#         .l..\
+#             .a.('123 London Road')\
+#             .i..('London')\
+#             .w..('SW12BC')\
+#         .w..\
+#             .a.('Fabrikam')\
+#             .as_.('Engineer')\
+#             .e..(123000)\
 #         .b..
 #     print ?
 #     person2 _ PB__.b..

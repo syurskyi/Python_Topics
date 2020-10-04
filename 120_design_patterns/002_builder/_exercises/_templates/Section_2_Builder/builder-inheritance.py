@@ -40,8 +40,8 @@
 # __ _______ __ ______
 #     pb _ PBDB
 #     me _ ?\
-#         .called('Dmitri')\
-#         .works_as_a('quant')\
-#         .born('1/1/1980')\
-#         .build()  # this does NOT work in C#/C++/Java/...
+#         .c..('Dmitri')\
+#         .w..('quant')\
+#         .b..('1/1/1980')\
+#         .b..  # this does NOT work in C#/C++/Java/...
 #     print ?
