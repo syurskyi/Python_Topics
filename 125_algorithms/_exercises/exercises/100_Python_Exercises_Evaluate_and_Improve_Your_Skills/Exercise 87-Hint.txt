@@ -1,0 +1,1 @@
+Hint: We have two lists. We just need to concatenate them and then sort the concatenated list.

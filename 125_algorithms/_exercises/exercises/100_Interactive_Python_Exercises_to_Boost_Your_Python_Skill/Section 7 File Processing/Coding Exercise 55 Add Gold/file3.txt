@@ -1,0 +1,21 @@
+     "gold":
+
+      {
+
+         "conductivity": 33.5,
+
+         "density": 0.255,
+
+         "heat": 0.129,
+
+         "melting point": 2171,
+
+         "thermal expansion": 4.7,
+
+         "yield strength": 288,
+
+         "tensile strength": 441,
+
+         "minimum impact energy": 22
+
+     }

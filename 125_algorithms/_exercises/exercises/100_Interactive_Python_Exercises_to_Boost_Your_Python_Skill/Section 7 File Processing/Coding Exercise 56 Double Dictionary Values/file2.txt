@@ -1,0 +1,10 @@
+{
+"conductivity": 30.1,
+"density": 0.284,
+"heat": 0.122,
+"melting point": 2570,
+"thermal expansion": 6.7,
+"yield strength": 255,
+"tensile strength": 410,
+"minimum impact energy": 20
+}

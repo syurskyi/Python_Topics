@@ -1,0 +1,1 @@
+Hint: Use glob.glob to create a list of file paths and then iterate through that list reading the content of each file.
