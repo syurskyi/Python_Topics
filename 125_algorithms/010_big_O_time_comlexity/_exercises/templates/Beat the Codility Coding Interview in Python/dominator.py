@@ -5,7 +5,7 @@
 # ___ solution A
 #     consecutive_size _ 0
 #     candidate _ 0
-#     ___ item __ A
+#     ___ item __ ?
 #         __ co.. __ 0
 #             ca.. _ ?
 #             ? +_ 1
