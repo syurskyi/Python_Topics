@@ -1,7 +1,7 @@
 # ___ checkdupsorting myarray
 # 	?.so..
 # 	print ?
-# 	___ i __ ra.. 0 le. ?) - 1):
+# 	___ i __ ra.. 0 le. ?) - 1)
 # 		#print "in for loop:", myarray
 # 		# #print "comparing", myarray[i],"and",myarray[i + 1]
 # 		__(?|? __ ?|? + 1
