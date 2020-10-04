@@ -14,12 +14,12 @@
 #
 #     n _ le. ?
 #     max_sum _ ? 0
-#     ___ start __ ra.. n
+#     ___ start __ ra.. ?
 #         current_sum _ 0
 #         ___ end __ ra.. s.. ?
 #             c_s.. +_ ?|?
 #             __ c_s.. > m_s..
-#                 m_s.. _ c_s..
+#                 ? _ ?
 #
 #     r_ ?
 #
@@ -30,9 +30,9 @@
 #     current_sum _ ? 0
 #     ___ i __ ra.. 1 ?
 #         current_sum _ ma.  c_s.. + a.. ? a.. ?
-#         max_sum _ ma. m_s.. c_s..
+#         max_sum _ ma. ? ?
 #
-#     r_  m_s..
+#     r_  ?
 #
 # arr1 _ [3,4,-9,1,2]
 # arr2 _ [1,2,3]
