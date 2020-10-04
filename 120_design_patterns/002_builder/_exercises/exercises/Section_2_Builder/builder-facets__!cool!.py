@@ -67,6 +67,7 @@ class PersonAddressBuilder(PersonBuilder):
         self.person.city = city
         return self
 
+
 if __name__ == '__main__':
     pb = PersonBuilder()
     p = pb\
