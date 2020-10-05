@@ -1,18 +1,22 @@
-# ___ getrepeatedelement A
-# 	print("given array:" ?
-# 	tab   # hash
-# 		# print "created a new tab:", tab
-# 	___ element __ ?.l..
-# 		__ ? __ ?
-# 			t.. ? +_ 1
-# 			print("the first repeated element is: @" ?
-# 			# print "in loop: tab",tab,"for element '",element,"' in array ",A
-# 			r_ ?
-# 		____ ? !_ " "
-# 			t.. ? _ 1
-# 		____
-# 			t.. ? _ 0
-# 		# print "in loop: tab",tab,"for element '",element,"' in array ",A
-# 	r_
+# ___ getfirstnonrepeated myarray
+#     print("Given array:" ?
+#     tab _ ?   # hash
+#     # #print "tab created:", tab
+#     ___ ele __ ?.l..
+#         __ ? __ ?
+#             ? ? +_ 1
+#         ____ ? !_ " "
+#             ? ? _ 1
+#         ____
+#             ? ? = 0
+#     # print "in loop:",tab,"for","'",ele,"'","in",myarray
 #
-# ?("abcdefd")
+#     ___ ele __ ?.l..
+#         __ ? ? __ 1
+#             print("the first non repeated character is: @" ?
+#             r_ ?
+#
+#     r_
+#
+#
+# ? "abccdef"
