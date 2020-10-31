@@ -22,7 +22,7 @@ class SetIconSize(QtWidgets.QWidget):
             QtWidgets.QStyle.SP_MessageBoxCritical)
         self.comboBox.insertItem(0, ico, "Пункт 11")
         button = QtWidgets.QPushButton("Получить индекс")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
         box.addWidget(self.comboBox)
         box.addWidget(button)
@@ -30,10 +30,8 @@ class SetIconSize(QtWidgets.QWidget):
         self.show()
         sys.exit(app.exec_())
 
-
-    def on_clicked():
+    def on_clicked(self):
         print(self.comboBox.currentIndex())
-
 
 
 if __name__ == '__main__':
