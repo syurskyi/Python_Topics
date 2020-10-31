@@ -11,29 +11,28 @@ class Find(QtWidgets.QWidget):
         self.initUI()
 
     def initUI(self):
-        app = QtWidgets.QApplication(sys.argv)
-        window = QtWidgets.QWidget()
-        window.setWindowTitle("Класс QComboBox")
-        window.resize(300, 90)
-        comboBox = QtWidgets.QComboBox()
+       
+        self.setWindowTitle("Класс QComboBox")
+        self.resize(300, 90)
+        self.comboBox = QtWidgets.QComboBox()
         for i in range(1, 11):
-            comboBox.addItem("Пункт {0}".format(i), i)
-        comboBox.addItem("Пункт".format(i), 11)
+            self.comboBox.addItem("Пункт {0}".format(i), i)
+        self.comboBox.addItem("Пункт".format(i), 11)
         button = QtWidgets.QPushButton("Найти элементы")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
-        box.addWidget(comboBox)
+        box.addWidget(self.comboBox)
         box.addWidget(button)
-        window.setLayout(box)
-        window.show()
+        self.setLayout(box)
+        self.show()
 
-    def on_clicked():
-        print(comboBox.findText("пункт 3",
+    def on_clicked(self):
+        print(self.comboBox.findText("пункт 3",
                             flags=QtCore.Qt.MatchFixedString))
-        print(comboBox.findText("[а-яёА-ЯЁ]+",
+        print(self.comboBox.findText("[а-яёА-ЯЁ]+",
                                  flags=QtCore.Qt.MatchRegExp))
-        print(comboBox.findText("Пункт 80"))
-        print(comboBox.findData(10))
+        print(self.comboBox.findText("Пункт 80"))
+        print(self.comboBox.findData(10))
 
 
 
