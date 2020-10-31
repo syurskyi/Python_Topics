@@ -41,7 +41,7 @@ class SetValidator(QtWidgets.QWidget):
         self.comboBox.setItemData(0, "Это текст всплывающей подсказки",
                              role=QtCore.Qt.ToolTipRole)
         button = QtWidgets.QPushButton("Получить значение")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
         box.addWidget(self.comboBox)
         box.addWidget(button)
@@ -49,7 +49,7 @@ class SetValidator(QtWidgets.QWidget):
         self.show()
 
 
-    def on_clicked():
+    def on_clicked(self):
         print("Текст:", self.comboBox.currentText())
         print("Данные:", self.comboBox.itemData(self.comboBox.currentIndex(),
                                            role=QtCore.Qt.DisplayRole))
