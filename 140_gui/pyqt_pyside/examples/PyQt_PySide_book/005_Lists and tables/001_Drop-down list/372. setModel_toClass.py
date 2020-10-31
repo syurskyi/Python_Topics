@@ -21,15 +21,14 @@ class SetModel(QtWidgets.QWidget):
         model = QtCore.QStringListModel(L)
         self.comboBox.setModel(model)
         button = QtWidgets.QPushButton("Получить значение")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
         box.addWidget(self.comboBox)
         box.addWidget(button)
         self.setLayout(box)
         self.show()
 
-
-    def on_clicked():
+    def on_clicked(self):
         print("Текст:", self.comboBox.currentText())
 
 
