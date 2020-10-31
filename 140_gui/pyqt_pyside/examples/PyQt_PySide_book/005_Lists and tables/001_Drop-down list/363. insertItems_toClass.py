@@ -32,6 +32,7 @@ class InsertItems(QtWidgets.QWidget):
     def on_clicked(self):
         print("Текст:", self.comboBox.currentText())
 
+
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     ex = InsertItems()
