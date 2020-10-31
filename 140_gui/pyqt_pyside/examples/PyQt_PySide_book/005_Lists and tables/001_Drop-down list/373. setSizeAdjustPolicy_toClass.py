@@ -12,29 +12,28 @@ class SetSizeAdjustPolicy(QtWidgets.QWidget):
 
     def initUI(self):
 
-def on_clicked():
-    print(comboBox.currentIndex())
+        self.setWindowTitle("Класс QComboBox")
+        self.resize(300, 90)
+        self.comboBox = QtWidgets.QComboBox()
+        self.comboBox.setEditable(True)
+        self.comboBox.setInsertPolicy(QtWidgets.QComboBox.InsertAtTop)
+        self.comboBox.setSizeAdjustPolicy(
+            QtWidgets.QComboBox.AdjustToMinimumContentsLengthWithIcon)
+        self.comboBox.setMinimumContentsLength(30)
+        for i in range(1, 11):
+            self.comboBox.addItem("Пункт {0}".format(i))
+        button = QtWidgets.QPushButton("Получить индекс")
+        button.clicked.connect(on_clicked)
+        box = QtWidgets.QVBoxLayout()
+        box.addWidget(self.comboBox)
+        box.addWidget(button)
+        self.setLayout(box)
+        self.show()
+        sys.exit(app.exec_())
 
-app = QtWidgets.QApplication(sys.argv)
-window = QtWidgets.QWidget()
-window.setWindowTitle("Класс QComboBox")
-window.resize(300, 90)
-comboBox = QtWidgets.QComboBox()
-comboBox.setEditable(True)
-comboBox.setInsertPolicy(QtWidgets.QComboBox.InsertAtTop)
-comboBox.setSizeAdjustPolicy(
-    QtWidgets.QComboBox.AdjustToMinimumContentsLengthWithIcon)
-comboBox.setMinimumContentsLength(30)
-for i in range(1, 11):
-    comboBox.addItem("Пункт {0}".format(i))
-button = QtWidgets.QPushButton("Получить индекс")
-button.clicked.connect(on_clicked)
-box = QtWidgets.QVBoxLayout()
-box.addWidget(comboBox)
-box.addWidget(button)
-window.setLayout(box)
-window.show()
-sys.exit(app.exec_())
+    def on_clicked():
+        print(self.comboBox.currentIndex())
+        
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
