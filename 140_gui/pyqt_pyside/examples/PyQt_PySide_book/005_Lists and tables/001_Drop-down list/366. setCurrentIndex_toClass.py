@@ -18,17 +18,15 @@ class SetCurrentIndex(QtWidgets.QWidget):
         for i in range(1, 11):
             self.comboBox.addItem("Пункт {0}".format(i))
         button = QtWidgets.QPushButton("Сделать элемент с индексом 5 текущим")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
         box.addWidget(self.comboBox)
         box.addWidget(button)
         self.setLayout(box)
         self.show()
 
-
-    def on_clicked():
+    def on_clicked(self):
         self.comboBox.setCurrentIndex(5)
-
 
 
 if __name__ == '__main__':
