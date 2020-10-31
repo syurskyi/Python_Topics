@@ -2,6 +2,16 @@
 from PyQt5 import QtCore, QtWidgets
 import sys
 
+
+class SetIconSize(QtWidgets.QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
 def on_clicked():
     print(comboBox.currentIndex())
 
@@ -24,3 +34,8 @@ box.addWidget(button)
 window.setLayout(box)
 window.show()
 sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    ex = SetIconSize()
+    sys.exit(app.exec_())

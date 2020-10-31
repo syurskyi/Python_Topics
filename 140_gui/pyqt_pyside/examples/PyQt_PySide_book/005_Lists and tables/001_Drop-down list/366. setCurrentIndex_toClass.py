@@ -2,6 +2,16 @@
 from PyQt5 import QtWidgets
 import sys
 
+
+class SetCurrentIndex(QtWidgets.QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
 def on_clicked():
     comboBox.setCurrentIndex(5)
 
@@ -19,4 +29,9 @@ box.addWidget(comboBox)
 box.addWidget(button)
 window.setLayout(box)
 window.show()
-sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    ex = SetCurrentIndex()
+    sys.exit(app.exec_())

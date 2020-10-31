@@ -2,6 +2,16 @@
 from PyQt5 import QtCore, QtWidgets
 import sys
 
+
+class SetCompleter(QtWidgets.QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
 def on_clicked():
     print(comboBox.currentIndex())
 
@@ -24,4 +34,9 @@ box.addWidget(comboBox)
 box.addWidget(button)
 window.setLayout(box)
 window.show()
-sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    ex = SetCompleter()
+    sys.exit(app.exec_())
