@@ -23,7 +23,7 @@ class SetSizeAdjustPolicy(QtWidgets.QWidget):
         for i in range(1, 11):
             self.comboBox.addItem("Пункт {0}".format(i))
         button = QtWidgets.QPushButton("Получить индекс")
-        button.clicked.connect(on_clicked)
+        button.clicked.connect(self.on_clicked)
         box = QtWidgets.QVBoxLayout()
         box.addWidget(self.comboBox)
         box.addWidget(button)
@@ -31,7 +31,7 @@ class SetSizeAdjustPolicy(QtWidgets.QWidget):
         self.show()
         sys.exit(app.exec_())
 
-    def on_clicked():
+    def on_clicked(self):
         print(self.comboBox.currentIndex())
         
 
