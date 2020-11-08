@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtWidgets
 import sys
 
 def on_clicked():
@@ -15,16 +15,15 @@ class MyClass():
         print("Кнопка нажата. Метод MyClass.on_clicked()")
 
 obj = MyClass()
-app = QtGui.QApplication(sys.argv)
-button = QtGui.QPushButton("Push me")
+app = QtWidgets.QApplication(sys.argv)
+button = QtWidgets.QPushButton("Нажми меня")
 # Назначаем обработчиком функцию
-
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"), on_clicked)
+button.clicked.connect(on_clicked)
 # Назначаем обработчиком метод класса
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"),
-                       obj.on_clicked)
-# Передача параметра в обработчик
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"), MyClass(10))
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"), MyClass(5))
+button.clicked.connect(obj.on_clicked)
+# Назначаем обработчиком ссылку на экземпляр класса
+button.clicked.connect(MyClass(10))
+# Назначаем обработчиком анонимную функцию
+button.clicked.connect(lambda: MyClass(5)())
 button.show()
 sys.exit(app.exec_())

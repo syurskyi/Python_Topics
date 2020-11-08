@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.resize(300, 100)
-
     def changeEvent(self, e):
         if e.type() == QtCore.QEvent.WindowStateChange:
             if self.isMinimized():
@@ -17,19 +15,17 @@ class MyWindow(QtGui.QWidget):
                 print("Полноэкранный режим")
             elif self.isActiveWindow():
                 print("Окно находится в фокусе ввода")
-        QtGui.QWidget.changeEvent(self, e) # Отправляем дальше
-
+        QtWidgets.QWidget.changeEvent(self, e) # Отправляем дальше
     def showEvent(self, e):
         print("Окно отображено")
-        QtGui.QWidget.showEvent(self, e)   # Отправляем дальше
-
+        QtWidgets.QWidget.showEvent(self, e)   # Отправляем дальше
     def hideEvent(self, e):
         print("Окно скрыто")
-        QtGui.QWidget.hideEvent(self, e)   # Отправляем дальше
+        QtWidgets.QWidget.hideEvent(self, e)   # Отправляем дальше
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.show()
     sys.exit(app.exec_())

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from PySide import QtGui
+from PyQt5 import QtGui, QtWidgets
 import sys
 
 
-class SampleWindow(QtGui.QWidget):
+class SampleWindow(QtWidgets.QWidget):
     def __init__(self):
         super(SampleWindow, self).__init__()
 
@@ -37,7 +37,7 @@ class SampleWindow(QtGui.QWidget):
 def main():
     app = None
 
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     ex = SampleWindow()
     sys.exit(app.exec_())
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 import sys
 
 class MyClass(QtCore.QObject):
@@ -13,11 +13,21 @@ class MyClass(QtCore.QObject):
         print("Кнопка нажата. Слот myslot(bool)", status)
 
 obj = MyClass()
-app = QtGui.QApplication(sys.argv)
-button = QtGui.QPushButton("Нажми меня")
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"),
-                       obj, QtCore.SLOT("on_clicked()"))
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked(bool)"),
-                       obj, QtCore.SLOT("myslot(bool)"))
+app = QtWidgets.QApplication(sys.argv)
+button = QtWidgets.QPushButton("Нажми меня")
+button.clicked.connect(obj.on_clicked)
+button.clicked.connect(obj.myslot)
 button.show()
 sys.exit(app.exec_())
+
+
+# Эти два обработчика будут успешно назначены и выполнены
+button.clicked.connect(on_clicked)
+button.clicked.connect(on_clicked)
+# А эти два обработчика назначены не будут
+button.clicked.connect(on_clicked, Qt.Core.Qt.AutoConnection | QtCore.Qt.UniqueConnection)
+button.clicked.connect(on_clicked, Qt.Core.Qt.AutoConnection | QtCore.Qt.UniqueConnection)
+# Тем не менее, эти два обработчика будут назначены,
+# поскольку они разные
+button.clicked.connect(on_clicked, Qt.Core.Qt.AutoConnection | QtCore.Qt.UniqueConnection)
+button.clicked.connect(obj.on_clicked, Qt.Core.Qt.AutoConnection | QtCore.Qt.UniqueConnection)

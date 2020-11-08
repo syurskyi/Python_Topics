@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget(flags=QtCore.Qt.Dialog)
-window.setWindowTitle("Tooltips")
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget(flags=QtCore.Qt.Dialog)
+window.setWindowTitle("Всплывающие подсказки")
 window.resize(300, 70)
-button = QtGui.QPushButton("Close Window", window)
+button = QtWidgets.QPushButton("Закрыть окно", window)
 button.setFixedSize(150, 30)
 button.move(75, 20)
-button.setToolTip("This is a tooltip for the button.")
-window.setToolTip("This is a tooltip for a window.")
-button.setWhatsThis("This is the help for the button.")
-window.setWhatsThis("This is the help for the window.")
-QtCore.QObject.connect(button, QtCore.SIGNAL("clicked()"),
-                       QtGui.qApp, QtCore.SLOT("quit()"))
+button.setToolTip("Это всплывающая подсказка для кнопки")
+button.setToolTipDuration(3000)
+window.setToolTip("Это всплывающая подсказка для окна")
+button.setToolTipDuration(5000)
+button.setWhatsThis("Это справка для кнопки")
+window.setWhatsThis("Это справка для окна")
+button.clicked.connect(QtWidgets.qApp.quit)
 window.show()
 sys.exit(app.exec_())
