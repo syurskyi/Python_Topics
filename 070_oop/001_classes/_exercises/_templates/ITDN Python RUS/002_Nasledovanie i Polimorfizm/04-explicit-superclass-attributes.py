@@ -22,8 +22,8 @@
 # c_ Base
 #     attr _ 'Base attribute'
 #
-#     ___ method ____
-#         print('Base method, current class is', ____. -c .-n
+#     ___ method
+#         print('Base method, current class is', . -c .-n
 #
 #
 # c_ Child B..
@@ -33,9 +33,9 @@
 #     ___ get_superclass_attr
 #         r_ B___.a..  # получение атрибута класса Base
 #
-#     ___ method ____  # переопределение метода
-#         B__.m.. ____  # вызов метода суперкласса
-#         print('Child method, current class is', ____. -c .-n
+#     ___ method   # переопределение метода
+#         B__.m..?   # вызов метода суперкласса
+#         print('Child method, current class is', . -c .-n
 #
 #
 # ___ m..

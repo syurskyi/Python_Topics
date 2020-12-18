@@ -18,7 +18,7 @@
 # """
 #
 # c_ A
-#     ___ method ____
+#     ___ method
 #         print('A method')
 #
 #
@@ -27,7 +27,7 @@
 #
 #
 # c_ C ?
-#     ___ method ____
+#     ___ method
 #         print('C method')
 #
 #

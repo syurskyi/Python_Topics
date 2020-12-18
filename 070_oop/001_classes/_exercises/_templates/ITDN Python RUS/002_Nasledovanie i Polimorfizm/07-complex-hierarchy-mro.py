@@ -39,7 +39,7 @@
 #     :return:    класс с добавленным конструктором
 #     """
 #
-#     ___ init ____
+#     ___ -
 #         print('Entered' ___. -n  "constructor")
 #         s... ___ ____. -
 #         print('Quit', ___. -n "constructor")

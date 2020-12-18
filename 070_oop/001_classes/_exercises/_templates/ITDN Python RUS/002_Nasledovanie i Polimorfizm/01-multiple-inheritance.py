@@ -5,12 +5,12 @@
 # """
 #
 # c_ Bird o..
-#     ___ fly ____
+#     ___ fly
 #         print('I am flying.')
 #
 #
 # c_ Horse o..
-#     ___ run ____
+#     ___ run
 #         print('I am running.')
 #
 #

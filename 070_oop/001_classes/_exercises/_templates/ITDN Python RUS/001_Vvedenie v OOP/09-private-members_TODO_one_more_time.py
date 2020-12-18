@@ -15,8 +15,8 @@
 #     ___ -
 #         ____.__private_attribute = 42
 #
-#     ___ get_private ____
-#         r_ ____.__p...
+#     ___ get_private
+#         r_ .__p...
 #
 #
 # obj = ?

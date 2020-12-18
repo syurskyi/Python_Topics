@@ -5,19 +5,19 @@
 # """
 #
 # c_ Figure o..
-#     ___ - ____ side
-#         ____.s.. _ s..
+#     ___ -  side
+#         .s.. _ s..
 #
 #
 # c_ Square ?
-#     ___ draw ____
-#         _ i i_ ra__ ____.s..
-#             print('*' * ____.s..
+#     ___ draw
+#         _ i i_ ra__ .s..
+#             print('*' * .s..
 #
 #
 # c_ Triangle ?
-#     ___ draw ____
-#         ___ i i_ ra.. ____.s..
+#     ___ draw
+#         ___ i i_ ra.. .s..
 #             print '*' * _
 #
 #

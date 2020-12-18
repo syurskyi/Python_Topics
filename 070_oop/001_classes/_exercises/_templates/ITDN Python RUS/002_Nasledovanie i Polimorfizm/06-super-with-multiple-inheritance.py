@@ -6,27 +6,27 @@
 #
 #
 # c_ Animal o..
-#     ___ -  ____
-#         ____.can_fly _ F...
-#         ____.can_run _ F...
+#     ___ -
+#         .can_fly _ F...
+#         .can_run _ F...
 #
-#     ___ print_abilities ____
-#         print(____. -c . -n
-#         print('Can fly:', ____._f
-#         print('Can run:', ____._r
+#     ___ print_abilities _
+#         print . -c . -n
+#         print('Can fly:', ._f
+#         print('Can run:', ._r
 #         print()
 #
 #
 # c_ Bird A..
-#     ___ -  ____
+#     ___ -
 #         s... .-
-#         ____._f _ T...
+#         ._f _ T...
 #
 #
 # c_ Horse A..
-#     ___ -  ____
+#     ___ -
 #         s....-
-#         ____._r _ T...
+#         ._r _ T...
 #
 #
 # c_ Pegasus H.. B..

@@ -5,8 +5,8 @@
 # # следующем примере.
 #
 #
-# ___ outer_method ____
-#     print('I am a method of object' ____
+# ___ outer_method
+#     print('I am a method of object' ?
 #
 #
 # c_ MyClass
