@@ -21,5 +21,5 @@ class MyClass:
 
 obj = MyClass()
 print(obj.get_private())  # 42
-print(obj.__private_attribute)  # ошибка
-# print(obj._MyClass__private_attribute)  # 42
+# print(obj.__private_attribute)  # ошибка
+print(obj._MyClass__private_attribute)  # 42
