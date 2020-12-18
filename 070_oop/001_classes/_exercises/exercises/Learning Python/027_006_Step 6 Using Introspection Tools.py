@@ -1,77 +1,77 @@
-# # from person_composite import Person
-# from person_department import Person
-# bob = P... Bob Smith
+# from person_composite import Person
+from person_department import Person
+bob = Person('Bob Smith')
 #
-# # print('#' * 22)
-# print('#' * 23 + ' Show bob __str__')
-# print(bob)  # Show bob's __str__
-#
-# print('#' * 23 + ' Show bobs class and its name')
-# print(?.-c   # Show bob's class and its name
-# print(bob.-c .-n )
-#
-# print('#' * 23 + ' Attributes are really dict keys')
-# print('#' * 23 + ' Use list() to force list in 3.0')
-# print(li..(bob.-d .ke..  # Attributes are really dict keys
-# # ['pay', 'job', 'name']     # Use list() to force list in 3.0
-#
-# print('#' * 23 + ' Index manually')
-# ___ key i_ bob.-d
-#     print ke. '=>', bob.-d ke.  # Index manually
-#
-# print('#' * 23 + ' obj.attr, but attr is a var')
-# ___ key i_ bob.-d
-#     print key '=>' g..a.. bob, ke.  # obj.attr, but attr is a var
-#
-# # ## File: classtools.py (new)
-#
-# "Assorted class utilities and tools"
-#
-#
-# c_ AttrDisplay
-#     """
-#     Provides an inheritable print overload method that displays
-#     instances with their class names and a name=value pair for
-#     each attribute stored on the instance itself (but not attrs
-#     inherited from its classes). Can be mixed into any class,
-#     and will work on any instance.
-#     """
-#
-#     ___ gatherAttrs ___
-#         attrs =
-#         ___ key i_ so.. ___.-d
-#             ?.ap.. '/_ _ /_' / ke. g.a. ___ ke.
-#         r_ ', '.jo.. ?
-#
-#     ___ -s ___
-#         r_ '[/_: /_]' / ___.-c .-n , ___.g..
-#
-#
-# __ _____ __ _____
-#     c_ TopTest A..
-#         count = 0
-#
-#         ___ - ___
-#             ___.attr1 = T__.c..
-#             ___.attr2 = T___.c.. + 1
-#             T___.c.. += 2
-#
-#
-#     c_ SubTest T..
-#         p...
-#
-#
-#     X, Y = TopTest(), SubTest()
-#     print('#' * 22)
-#     print('#' * 22)
-#     print('#' * 23 + ' Show all instance attrs')
-#     print(X)  # Show all instance attrs
-#     print('#' * 23 + ' Show lowest class name')
-#     print(Y)  # Show lowest class name
-#
-#
-#
-# # from person import Person
+# print('#' * 22)
+print('#' * 23 + ' Show bob __str__')
+print(bob)  # Show bob's __str__
+
+print('#' * 23 + ' Show bobs class and its name')
+print(bob.__class__)   # Show bob's class and its name
+print(bob.__class__.__name__ )
+
+print('#' * 23 + ' Attributes are really dict keys')
+print('#' * 23 + ' Use list() to force list in 3.0')
+print(list(bob.__dict__.keys()))  # Attributes are really dict keys
+# ['pay', 'job', 'name']     # Use list() to force list in 3.0
+
+print('#' * 23 + ' Index manually')
+for key in bob.__dict__:
+    print(key, '=>', bob.__dict__[key])  # Index manually
+
+print('#' * 23 + ' obj.attr, but attr is a var')
+for key in bob.__dict__:
+    print(key, '=>', getattr(bob, key))  # obj.attr, but attr is a var
+
+# ## File: classtools.py (new)
+
+"Assorted class utilities and tools"
+
+
+class AttrDisplay:
+    """
+    Provides an inheritable print overload method that displays
+    instances with their class names and a name=value pair for
+    each attribute stored on the instance itself (but not attrs
+    inherited from its classes). Can be mixed into any class,
+    and will work on any instance.
+    """
+
+    def gatherAttrs(self):
+        attrs = []
+        for key in sorted(self.__dict):
+            attrs.append('%s = %s' % (key, getattr(self, key)))
+        return ', '.join(attrs)
+
+    def __str__(self):
+        return '[%s: %s]' % self.__class__.__name__, self.gatherAttrs())
+
+
+__ _____ __ _____
+    c_ TopTest A..
+        count = 0
+
+        ___ - ___
+            ___.attr1 = T__.c..
+            ___.attr2 = T___.c.. + 1
+            T___.c.. += 2
+
+
+    c_ SubTest T..
+        p...
+
+
+    X, Y = TopTest(), SubTest()
+    print('#' * 22)
+    print('#' * 22)
+    print('#' * 23 + ' Show all instance attrs')
+    print(X)  # Show all instance attrs
+    print('#' * 23 + ' Show lowest class name')
+    print(Y)  # Show lowest class name
+
+
+
+# from person import Person
 # # from person_composite import Person
 # from person_department import Person
 # bob = Person('Bob Smith')
