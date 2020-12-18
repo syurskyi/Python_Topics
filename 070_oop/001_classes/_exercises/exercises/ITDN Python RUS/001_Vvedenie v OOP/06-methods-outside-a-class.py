@@ -1,17 +1,17 @@
-# # -*- coding: utf-8 -*-
-#
-# # Атрибуты класса, которые являются функциями, -- это такие же
-# # атрибуты класса, как и переменные. Это можно увидеть на
-# # следующем примере.
-#
-#
-# ___ outer_method ____
-#     print('I am a method of object' ____
-#
-#
-# c_ MyClass
-#     method = o...
-#
-#
-# obj = ?
-# ?.m...
+# -*- coding: utf-8 -*-
+
+# Атрибуты класса, которые являются функциями, -- это такие же
+# атрибуты класса, как и переменные. Это можно увидеть на
+# следующем примере.
+
+
+def outer_method(self):
+    print('I am a method of object', self)
+
+
+class MyClass:
+    method = outer_method
+
+
+obj = MyClass()
+obj.method()
