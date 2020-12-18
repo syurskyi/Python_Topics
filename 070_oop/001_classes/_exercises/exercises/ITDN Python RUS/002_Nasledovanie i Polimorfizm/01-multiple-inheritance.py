@@ -1,39 +1,39 @@
-# # -*- coding: utf-8 -*-
-#
-# """
-# Пример множественного наследования
-# """
-#
-# c_ Bird o..
-#     ___ fly ____
-#         print('I am flying.')
-#
-#
-# c_ Horse o..
-#     ___ run ____
-#         print('I am running.')
-#
-#
-# c_ Pegasus H.. B..
-#     p_
-#
-#
-# ___ m..
-#     bird = B..
-#     horse = H..
-#     pegasus = P..
-#
-#     b_.f..
-#     # bird.run()  # ошибка
-#     print()
-#
-#     # horse.fly()  # ошибка
-#     h_.r.
-#     print()
-#
-#     p_.f.
-#     p_.r.
-#
-#
-# __ ______ __ _______
-#     m..
+# -*- coding: utf-8 -*-
+
+"""
+Пример множественного наследования
+"""
+
+class Bird(object):
+    def fly(self):
+        print('I am flying.')
+
+
+class Horse(object):
+    def run(self):
+        print('I am running.')
+
+
+class Pegasus(Horse, Bird):
+    pass
+
+
+def main():
+    bird = Bird()
+    horse = Horse()
+    pegasus = Pegasus()
+
+    bird.fly()
+    # bird.run()  # ошибка
+    print()
+
+    # horse.fly()  # ошибка
+    horse.run()
+    print()
+
+    pegasus.fly()
+    pegasus.run()
+
+
+if __name__ == '__main__':
+    main()
