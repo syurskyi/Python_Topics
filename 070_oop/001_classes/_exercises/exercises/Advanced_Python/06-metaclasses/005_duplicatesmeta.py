@@ -1,42 +1,44 @@
-class OneShotDict(dict):
-
-    def __init__(self, existing=None):
-        super().__init__()
-        if existing is not None:
-            for k, v in existing:
-                self[k] = v
-
-    def __setitem__(self, key, value):
-        if key in self:
-            raise ValueError("Cannot assign to existing key {!r}".format(key))
-        super().__setitem__(key, value)
-
-
-class OneShotClassNamespace(dict):
-
-    def __init__(self, name, existing=None):
-        super().__init__()
-        self._name = name
-        if existing is not None:
-            for k, v in existing:
-                self[k] = v
-
-    def __setitem__(self, key, value):
-        if key in self:
-            raise TypeError("Cannot reassign existing class attribute {!r} of {!r}".format(key, self._name))
-        super().__setitem__(key, value)
-
-class ProhibitDuplicatesMeta(type):
-
-    @classmethod
-    def __prepare__(mcs, name, bases):
-        return OneShotClassNamespace(name)
-
-
-class Dodgy(metaclass=ProhibitDuplicatesMeta):
-
-    def method(self):
-        return "first definition"
-
-    def method(self):
-        return "second definition"
+#
+# c_ OneShotDict di..
+#
+#     ___  - existing_N..
+#         s___ . -
+#         __ e.. __ no. N..
+#             ___ k, v __ e..:
+#                 ?|? _ ?
+#
+#     ___ -s_i.. key value
+#         __ ? __ ?
+#             r_ V...("Cannot assign to existing key @".f... ?
+#         s___ . -s ?  ?
+#
+#
+# c_ OneShotClassNamespace di..
+#
+#     ___  - name existing_N..
+#         s___ . -
+#         _?  ?
+#         __ e.. __ no. N...
+#             ___ k, v __ e..
+#                 ?|? _ ?
+#
+#     ___ -s_i.. key value
+#         __ key __ ?
+#             r_ T...("Cannot reassign existing c_ attribute @ of @".f.. ? _n..
+#         s___ . -s_i.. ?  ?
+#
+#
+# c_ ProhibitDuplicatesMeta ty..
+#
+#     ??
+#     ___ -p ___ name bases
+#         r_ O.. ?
+#
+#
+# c_ Dodgy m.._P..
+#
+#     ___ method
+#         r_ "first definition"
+#
+#     ___ method
+#         r_ "second definition"

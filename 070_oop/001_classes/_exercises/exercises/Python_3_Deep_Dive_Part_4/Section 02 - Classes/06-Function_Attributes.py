@@ -10,15 +10,15 @@
 # '''
 #
 # # %%
-class Person:
-    def say_hello():
-        print('Hello!')
+# c_ Person
+#     ___ say_hello
+#         print('Hello!')
 #
 # # %%
-print(Person.say_hello)
+# print ?.s..
 #
 # # %%
-print(type(Person.say_hello))
+# print(ty..(?.s...
 #
 # # %%
 # '''
@@ -26,7 +26,7 @@ print(type(Person.say_hello))
 # '''
 #
 # # %%
-Person.say_hello()
+# print ?.s..
 #
 # # %%
 # '''
@@ -34,10 +34,10 @@ Person.say_hello()
 # '''
 #
 # # %%
-p = Person()
+# p = ?
 #
 # # %%
-print(hex(id(p)))
+# print h. i. ?
 #
 # # %%
 # '''
@@ -46,7 +46,7 @@ print(hex(id(p)))
 # '''
 #
 # # %%
-print(p.say_hello)
+# ?.s..
 #
 # # %%
 # print ty.. ?.s.
@@ -63,11 +63,11 @@ print(p.say_hello)
 # '''
 #
 # # %%
-# try:
-#     p.say_hello()
-# except  Exception as ex:
-#     print(type(ex).__name__, ex)
-
+# t__
+#     ?.s..
+# e__ E.. a_ ex
+#     print ty.. e. .-n e.
+#
 # # %%
 # '''
 # `method` is an actual type in Python, and, like functions, they are callables, but they have one distinguishing feature.
@@ -83,12 +83,12 @@ print(p.say_hello)
 # '''
 #
 # # %%
-class Person:
-    def say_hello(*args):
-        print('say_hello args:',  args)
-
+# c_ Person
+#     ___ say_hello 0a..
+#         print 'say_hello args:'  a..
+#
 # # %%
-Person.say_hello()
+# ?.s..
 #
 # # %%
 # '''
@@ -97,11 +97,11 @@ Person.say_hello()
 # '''
 #
 # # %%
-p = Person()
-hex(id(p))
+# p = ?()
+# he. i. ?
 #
 # # %%
-p.say_hello()
+# ?.s..
 #
 # # %%
 # '''
@@ -110,20 +110,20 @@ p.say_hello()
 # '''
 #
 # # %%
-class Person:
-    def set_name(instance_obj, new_name):
-        instance_obj.name = new_name  # or setattr(instance_obj, 'name', new_name)
+# c_ Person
+#     ___ set_name instance_obj new_name
+#         i__.n__ = n._n.  # or setattr(instance_obj, 'name', new_name)
 #
 #
 # # %%
-p = Person()
+# p = ?
 #
 # # %%
-p.set_name('Alex')
+# ?.s.. Alex
 #
 # # %%
 #
-print(p.__dict__)
+# print ?.-d
 #
 # # %%
 # '''
@@ -131,10 +131,10 @@ print(p.__dict__)
 # '''
 #
 # # %%
-Person.set_name(p, 'John')
+# ?.s.. ? John
 #
 # # %%
-print(p.__dict__)
+# print ?.-d
 # # %%
 # '''
 # By convention, the first argument is usually named `self`, but asd you just saw we can name it whatever we want -
@@ -149,16 +149,15 @@ print(p.__dict__)
 # '''
 #
 # # %%
-
-class Person:
-    def say_hello(self):
-        print(f"{self} says hello")
-
-# # %%
-p = Person()
+# c_ Person
+#     ___ say_hello ____
+#         print _ |self says hello
 #
 # # %%
-print(p.say_hello)
+# p = ?
+#
+# # %%
+# print ?.s..
 #
 # # %%
 # m_hello = ?.s..

@@ -10,31 +10,31 @@
 # '''
 #
 # # %%
-class Program:
-    language = 'Python'
-
-    def say_hello(self):
-        print(f"Hello from {self.language}!")
-
-# %%
-p = Program()
+# c_ Program
+#     language = 'Python'
+#
+#     def say_hello
+#         print _*Hello from |?.l.. !*
 #
 # # %%
-print(type(p))
-
-# %%
-print(isinstance(p, Program))
-
-# %%
+# p _ ?
+#
+# # %%
+# print ty.. ?
+#
+# # %%
+# print isi.. ? ?
+#
+# # %%
 # '''
 # These instances have their own namespace, and their own `__dict__` that is distinct from the class `__dict__`:
 # '''
 #
 # # %%
-print(p.__dict__)
+# print(p.-d)
 #
 # # %%
-print(Program.__dict__)
+# print(?.-d)
 #
 # # %%
 # '''
@@ -43,7 +43,7 @@ print(Program.__dict__)
 # '''
 #
 # # %%
-print(p.__class__)
+# print(?.-c)
 #
 # # %%
 # '''
@@ -51,7 +51,7 @@ print(p.__class__)
 # '''
 #
 # # %%
-print(type(p) is p.__class__)
+# print(ty.. ? i_ p.-c
 #
 # # %%
 # '''
@@ -64,14 +64,14 @@ print(type(p) is p.__class__)
 # '''
 #
 # # %%
-class MyClass:
-    pass
+# c_ MyClass
+#     p__
 #
 # # %%
-m = MyClass()
+# m = ?
 #
 # # %%
-print(type(m), m.__class__)
+# print ty.. ? ?.-c
 #
 # # %%
 # '''
@@ -79,14 +79,14 @@ print(type(m), m.__class__)
 # '''
 #
 # # %%
-class MyClass:
-    __class__ = str
+# c_ MyClass
+#     -c _ st.
 #
 # # %%
-m = MyClass()
+# m _ MyClass
 #
 # # %%
-print(type(m), m.__class__)
+# print ty.. ? ?.-c
 #
 # # %%
 # '''

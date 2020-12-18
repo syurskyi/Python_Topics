@@ -19,10 +19,10 @@
 #     ??.?
 #     ___ age ? value
 #         __ no isi.. ? I..
-#             r... V...('age: must be an integer.')
+#             r... V... age: must be an integer.
 #         __ ? < 0
-#             r... V...('age: must be a non-negative integer.')
-#         ?._a.. ?
+#             r... V... age: must be a non-negative integer.
+#         ?._a.. _ ?
 #
 # # %%
 # p = ?
@@ -56,9 +56,9 @@
 #
 #     ___ set_age  value
 #         __ no. isi..(?, I..
-#             r... V...('age: must be an integer.')
+#             r... V... 'age: must be an integer.'
 #         __ ? < 0
-#             r... V...('age: must be a non-negative integer.')
+#             r... V... 'age: must be a non-negative integer.'
 #         ?._a..  ?
 #
 #     age = ? fget_g.. fset_s..
@@ -92,7 +92,7 @@
 # prop = Person.age
 #
 # # %%
-# prop
+# print prop
 #
 # # %%
 # '''
@@ -100,10 +100,10 @@
 # '''
 #
 # # %%
-# hasattr(prop, '__set__')
+# print hasattr(prop, '__set__')
 #
 # # %%
-# hasattr(prop, '__get__')
+# print hasattr(prop, '__get__')
 #
 # # %%
 # '''
@@ -131,10 +131,10 @@
 # prop = T__.c..
 #
 # # %%
-# hasattr(prop, '__get__')
+# print hasattr(prop, '__get__')
 #
 # # %%
-# hasattr(prop, '__set__')
+# print hasattr(prop, '__set__')
 #
 # # %%
 # '''
@@ -184,19 +184,19 @@
 #     ___ __set_name__  owner_class prop_name
 #         ?p.. _ p..
 #
-#     ___ __get__ instance owner_class
+#     ___ -g instance owner_class
 #         print('__get__ called...')
 #         __ ins.. i. N..
 #             r_ ?
 #         __ ?f.. __ N..
-#             r... A_ _*|?p.. i. no. readable.')
+#             r... A_ _*|?p.. is not readable.')
 #         r_ ?f.. i..
 #
-#     ___ __set__ instance value
+#     ___ -s instance value
 #         print('__set__ called...')
 #         __ ?f.. __ N..
-#             r... A.. _*?p..| i. no. writable.')
-#         ?f.. i.. ?
+#             r... A.. _*?p..| is not writable.')
+#         r_ ?f.. i.. ?
 #
 # # %%
 # '''
@@ -262,7 +262,7 @@
 #     ___ __set_name__  owner_class prop_name
 #         ?p.. _ p..
 #
-#     ___ __get__  instance owner_class
+#     ___ -g  instance owner_class
 #         print('__get__ called...')
 #         __ i.. i. N..
 #             r_ ?
@@ -270,11 +270,11 @@
 #             r... A.. _* ?p..| i. no. readable.')
 #         r_ ?f.. i..
 #
-#     ___ __set__ instance, value
+#     ___ -s instance, value
 #         print('__set__ called...')
 #         __ ?f.. i. N..
 #             r... A.. _*|?p.. i. no. writable.')
-#         ?f.. i.. ?
+#         r_ ?f.. i.. ?
 #
 #     ___ setter  fset
 #         ?  ?

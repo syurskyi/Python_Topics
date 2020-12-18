@@ -10,14 +10,14 @@
 # '''
 #
 # # %%
-class BankAccount:
-    apr = 1.2
+# c_ BankAccount
+#     apr _ 1.2
 #
 # # %%
-print(BankAccount.__dict__)
+# print ?.-d
 #
 # # %%
-print(BankAccount.apr)
+# print ?.a..
 #
 # # %%
 # '''
@@ -25,8 +25,8 @@ print(BankAccount.apr)
 # '''
 #
 # # %%
-acc_1 = BankAccount()
-acc_2 = BankAccount()
+# acc_1 _ ?
+# ._2 _ ?
 #
 # # %%
 # '''
@@ -34,7 +34,7 @@ acc_2 = BankAccount()
 # '''
 #
 # # %%
-print(acc_1.__dict__, acc_2.__dict__)
+# print ._1.-d ._2.-d
 #
 # # %%
 # '''
@@ -42,7 +42,7 @@ print(acc_1.__dict__, acc_2.__dict__)
 # '''
 #
 # # %%
-print(acc_1.apr, acc_2.apr)
+# print ._1.a__ a_2.a__
 #
 # # %%
 # '''
@@ -55,7 +55,7 @@ print(acc_1.apr, acc_2.apr)
 # '''
 #
 # # %%
-BankAccount.apr = 2.5
+# ?.a.. _ 2.5
 #
 # # %%
 # '''
@@ -63,7 +63,7 @@ BankAccount.apr = 2.5
 # '''
 #
 # # %%
-print(acc_1.apr, acc_2.apr )
+# print._1.a__ ._2.a__
 #
 # # %%
 # '''
@@ -71,10 +71,10 @@ print(acc_1.apr, acc_2.apr )
 # '''
 #
 # # %%
-BankAccount.account_type = 'Savings'
+# ?.account_type _ 'Savings'
 #
 # # %%
-print(acc_1.account_type, acc_2.account_type )
+# print ._1.a.. ._2.a..
 #
 # # %%
 # '''
@@ -85,7 +85,7 @@ print(acc_1.account_type, acc_2.account_type )
 # '''
 #
 # # %%
-acc_1.apr = 0
+# ._1.a__ _ 0
 #
 # # %%
 # '''
@@ -93,7 +93,7 @@ acc_1.apr = 0
 # '''
 #
 # # %%
-print(acc_1.__dict__, acc_2.__dict__)
+# print ._1.-d ._2.-d
 #
 # # %%
 # '''

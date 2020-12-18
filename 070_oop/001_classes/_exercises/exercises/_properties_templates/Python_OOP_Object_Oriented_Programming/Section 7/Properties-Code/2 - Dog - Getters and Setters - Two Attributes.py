@@ -20,7 +20,7 @@
 #         r_ ?_?
 #
 #     ___ set_age ____ age
-#         __ isi.. ? in. an. 0 < ? < 30
+#         __ isi.. ? in.| an. 0 < ? < 30
 #             ?_? _ ?
 #         ____
 #             print("Please enter a valid age")
