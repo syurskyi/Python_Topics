@@ -24,50 +24,50 @@
 # эквивалентен
 #                super(-c , self).method()
 # """
-#
-#
-# c_ Base o..
-#     attr _ 'Base attribute'
-#
-#     ___ method ____
-#         print('Base method, current class is', ____.-c .-n
-#
-#
-# c_ Child ?
-#     attr _ 'Redefined attribute'
-#
-#     ___ get_superclass_attr ____
-#         r_ s___.a..  # получение атрибута класса Base
-#
-#     ___ method ____  # переопределение метода
-#         s___.m..  # вызов метода суперкласса
-#         print('Child method, current class is', ____.-c .-n
-#
-#
-# ___ m..
-#     print('Base:')
-#     print(B___.a..
-#     base_instance = B..
-#     ?.m..
-#
-#     print()
-#
-#     print('Child:')
-#     print(C__.a..
-#     child_instance = C__
-#     print(?.g..
-#     ?.m..
-#
-#     print()
-#
-#     # В большинстве языков программирования, в которых есть конструкция,
-#     # аналогичная super(), она может вызвана только внутри соответсвующего
-#     # метода подкласса, причём часто только в качестве его первого оператора
-#     # (впрочем, это наиболее типичный сценарий её использования).
-#     # В Python, как "побочный эффект" того, как работает его реализация super,
-#     # её можно вызвать где угодно, даже за пределами класса.
-#     s___ C... ?.m..
-#
-#
-# __ ______ __ ____
-#     m...
+
+
+class Base(object):
+    attr = 'Base attribute'
+
+    def method(self):
+        print('Base method, current class is', self.__class__.__name__)
+
+
+class Child(Base):
+    attr = 'Redefined attribute'
+
+    def get_superclass_attr(self):
+        return super().attr  # получение атрибута класса Base
+
+    def method(self):   # переопределение метода
+        super().method()  # вызов метода суперкласса
+        print('Child method, current class is', self.__class__.__name__)
+
+
+def main():
+    print('Base:')
+    print(Base.attr)
+    base_instance = Base()
+    base_instance.method()
+
+    print()
+
+    print('Child:')
+    print(Child.attr)
+    child_instance = Child()
+    print(child_instance.get_superclass_attr())
+    child_instance.method()
+
+    print()
+
+    # В большинстве языков программирования, в которых есть конструкция,
+    # аналогичная super(), она может вызвана только внутри соответсвующего
+    # метода подкласса, причём часто только в качестве его первого оператора
+    # (впрочем, это наиболее типичный сценарий её использования).
+    # В Python, как "побочный эффект" того, как работает его реализация super,
+    # её можно вызвать где угодно, даже за пределами класса.
+    super(Child, child_instance).method()
+
+
+if __name__ == '__main__':
+    main()
