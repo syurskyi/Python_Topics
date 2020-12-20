@@ -162,5 +162,5 @@ def testPenFactory():
     print("created %s，Object id: %s， Types of: %s" % (ellipsePen.getName(), id(ellipsePen), ellipsePen.getType()) )
 
 
-# testCoffeeMaker()
-testPenFactory()
+testCoffeeMaker()
+# testPenFactory()

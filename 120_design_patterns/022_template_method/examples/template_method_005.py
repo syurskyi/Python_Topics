@@ -26,13 +26,13 @@ class ExampleBase(object):
 
 class Example(ExampleBase):
     def step_one(self):
-        print 'Первый шаг алгоритма'
+        print('Первый шаг алгоритма')
 
     def step_two(self):
-        print 'Второй шаг алгоритма'
+        print('Второй шаг алгоритма')
 
     def step_three(self):
-        print 'Третий шаг алгоритма'
+        print('Третий шаг алгоритма')
 
 
 example = Example()
