@@ -1,17 +1,17 @@
-__author__ = 'Chetan'
+import abc
 
-from abc import  ABCMeta, abstractmethod
+class Compiler(object):
+    __metaclass__ = abc.ABCMeta
 
-class Compiler(metaclass=ABCMeta):
-    @abstractmethod
+    @abc.abstractmethod
     def collectSource(self):
         pass
 
-    @abstractmethod
+    @abc.abstractmethod
     def compileToObject(self):
         pass
 
-    @abstractmethod
+    @abc.abstractmethod
     def run(self):
         pass
 

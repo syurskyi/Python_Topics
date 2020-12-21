@@ -1,5 +1,3 @@
-__author__ = 'Chetan'
-
 from abc import abstractmethod, ABCMeta
 
 class Trip(metaclass=ABCMeta):
