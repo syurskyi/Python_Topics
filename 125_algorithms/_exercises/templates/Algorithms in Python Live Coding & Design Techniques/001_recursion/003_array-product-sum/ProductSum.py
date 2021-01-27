@@ -1,14 +1,14 @@
-
-___ product_sum(li, depth
-    sum_is = 0
-
-    ___ ele __ li:
-        __ isinstance(ele, list
-            sum_is += product_sum(ele, depth+1)
-        ____
-            sum_is += ele
-    r_ sum_is * depth
-
-
-arr = [1, 2, [2,3], 6, [[2,3], 1], 7]
-print(product_sum(arr, 1))
+#
+# ___ product_sum li depth
+#     sum_is _ 0
+#
+#     ___ ele __ li
+#         __ isi.. ? list
+#             ? +_ ? ? ? + 1
+#         ____
+#             ? +_ ?
+#     r_ ? * ?
+#
+#
+# arr = [1, 2, [2,3], 6, [[2,3], 1], 7]
+# print(product_sum(arr, 1))
