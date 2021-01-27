@@ -1,12 +1,12 @@
 # ___ fun
-#     val = 10
+#     val _ 10
 #     r_ ?
 #
 # ___ example
 #     print("UL")
 #     x _ f..
 #     y _ 20
-#     result = x + y
+#     result _ x + y
 #     r_ ?
 #
 # example()
