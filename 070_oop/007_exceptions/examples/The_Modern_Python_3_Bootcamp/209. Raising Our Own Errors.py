@@ -7,5 +7,5 @@ def colorize(text, color):
     print(f"Printed {text} in {color}")
 
 
-colorize([], 'cyan')
+# colorize([], 'cyan')
 # colorize(34, "red")

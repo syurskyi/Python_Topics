@@ -1,9 +1,10 @@
 import abc
 
-class AbsTransport(metaclass=abc.ABCMeta):
+class AbsNode(object):
+    __metaclass__ = abc.ABCMeta
 
-    def __init__(self, destination):
-        self._destination = destination
+    def __init__(self, node_set):
+        self._node_set = node_set
 
     def take_trip(self):
         self.start_engine()

@@ -13,7 +13,7 @@ class simpleWindow(QWidget):
         self.table = QTableWidget()
         ly.addWidget(self.table)
         self.table.verticalHeader().hide()
-        self.table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
+        # self.table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
         # start
         self.resize(500,400)
         self.fillTable()
