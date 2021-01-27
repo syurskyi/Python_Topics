@@ -17,7 +17,7 @@ def test_ipinfo_mexican_ip(mockget):
                                 text=content.decode("utf-8"),
                                 json=lambda: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('187.190.38.36') == 'MX'
+    a__ get_ip_country('187.190.38.36') == 'MX'
 
 
 @patch.object(requests, 'get')
@@ -31,4 +31,4 @@ def test_ipinfo_japan_ip(mockget):
                                 text=content.decode("utf-8"),
                                 json=lambda: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('185.161.200.10') == 'JP'
+    a__ get_ip_country('185.161.200.10') == 'JP'

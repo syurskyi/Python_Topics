@@ -36,9 +36,9 @@ def main():
     command_stack.append(MoveFileCommand('bar.txt', 'baz.txt'))
 
     # verify that none of the target files exist
-    assert(not lexists("foo.txt"))
-    assert(not lexists("bar.txt"))
-    assert(not lexists("baz.txt"))
+    a__(not lexists("foo.txt"))
+    a__(not lexists("bar.txt"))
+    a__(not lexists("baz.txt"))
     try:
         with open("foo.txt", "w"):  # Creating the file
             pass

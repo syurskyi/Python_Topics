@@ -113,5 +113,5 @@ if __name__=="__main__":
         [1]
     ]
     for A in tests:
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber_array(A)
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber(A)
+        a__ Solution().singleNumber_optimal(A)==Solution().singleNumber_array(A)
+        a__ Solution().singleNumber_optimal(A)==Solution().singleNumber(A)

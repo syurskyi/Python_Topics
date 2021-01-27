@@ -124,5 +124,5 @@ class Solution2:
 
 
 if __name__ == "__main__":
-    assert Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16) == ["This    is    an","example  of text","justification.  "]
-    assert Solution().fullJustify(["What","must","be","acknowledgment","shall","be"], 16) == ["What   must   be","acknowledgment  ","shall be        "]
+    a__ Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16) == ["This    is    an","example  of text","justification.  "]
+    a__ Solution().fullJustify(["What","must","be","acknowledgment","shall","be"], 16) == ["What   must   be","acknowledgment  ","shall be        "]

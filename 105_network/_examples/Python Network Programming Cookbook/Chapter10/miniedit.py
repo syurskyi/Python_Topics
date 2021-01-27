@@ -741,7 +741,7 @@ class SwitchDialog(CustomDialog):
 
     def defaultDpid( self, name):
         "Derive dpid from switch name, s1 -> 1"
-        assert self  # satisfy pylint and allow contextual override
+        a__ self  # satisfy pylint and allow contextual override
         try:
             dpid = int( re.findall( r'\d+', name )[ 0 ] )
             dpid = hex( dpid )[ 2: ]

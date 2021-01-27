@@ -9,9 +9,9 @@ c_ Node(
         next = next
     
     ___ __str__(self
-        string = str(value)
+        string = st.(value)
         __ next:
-            string += ',' + str(next)
+            string += ',' + st.(next)
         r_ string
 
 c_ Stack(
@@ -25,7 +25,7 @@ c_ Stack(
         r_ minNode.value
     
     ___ push  item
-        __ minNode and (minNode.value < item
+        __ minNode a__ (minNode.value < item
             minNode = Node(value = minNode.value, next=minNode)
         ____
             minNode = Node(value = item, next=minNode)

@@ -49,4 +49,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().generatePalindromes("aabb") == ['baab', 'abba']
+    a__ Solution().generatePalindromes("aabb") == ['baab', 'abba']

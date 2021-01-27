@@ -12,9 +12,9 @@ Strip the trailing dot (.) and exclamation mark (!) from the word first.
 
 def test_slice_and_dice_default_text():
     expected = ['objects', 'y', 'too', ':)', 'bites']
-    assert slice_and_dice(text) == expected
+    a__ slice_and_dice(text) == expected
 
 
 def test_slice_and_dice_other_text():
     expected = ['word', 'list', 'list']
-    assert slice_and_dice(another_text) == expected
+    a__ slice_and_dice(another_text) == expected

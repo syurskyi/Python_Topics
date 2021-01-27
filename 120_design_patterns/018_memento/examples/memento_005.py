@@ -55,11 +55,11 @@ def main():
     originator.state = "State4"
 
     originator.restore(memento1)
-    assert originator.state == "State1"
+    a__ originator.state == "State1"
     print(originator.state)
 
     originator.restore(memento2)
-    assert originator.state == "State2"
+    a__ originator.state == "State2"
     print(originator.state)
 
 

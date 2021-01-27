@@ -21,4 +21,4 @@ from workouts import (get_workout_motd,
     ('monday2', INVALID_DAY),
 ])
 def test_get_workout_valid_case_insensitive_dict_lookups(day, expected):
-    assert get_workout_motd(day) == expected
+    a__ get_workout_motd(day) == expected

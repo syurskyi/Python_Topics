@@ -16,7 +16,7 @@ c_ QuickSelect:
 
         # because we decrement the k value (k'=k-1) this is why
         # we have to use range() like that
-        ___ i __ range(1, le_(nums) + 1
+        ___ i __ ra__(1, le_(nums) + 1
             sorted_list.ap..(run(i))
 
         r_ sorted_list
@@ -30,7 +30,7 @@ c_ QuickSelect:
 
         __ pivot_index < k:
             r_ select(pivot_index + 1, last_index, k)
-        elif pivot_index > k:
+        ____ pivot_index > k:
             r_ select(first_index, pivot_index - 1, k)
 
         r_ nums[pivot_index]
@@ -41,7 +41,7 @@ c_ QuickSelect:
 
         swap(pivot_index, last_index)
 
-        ___ i __ range(first_index, last_index
+        ___ i __ ra__(first_index, last_index
             __ nums[i] > nums[last_index]:
                 swap(i, first_index)
                 first_index += 1

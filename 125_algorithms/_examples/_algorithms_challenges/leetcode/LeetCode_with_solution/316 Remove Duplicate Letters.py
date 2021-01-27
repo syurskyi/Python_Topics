@@ -42,4 +42,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().removeDuplicateLetters("cbacdcbc") == "acdb"
+    a__ Solution().removeDuplicateLetters("cbacdcbc") == "acdb"

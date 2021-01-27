@@ -88,7 +88,7 @@ class VehicleManufacturer(object):
         Creates and returns a Vehicle using self.builder
         Precondition: not self.builder is None
         """
-        assert not self.builder is None, "No defined builder"
+        a__ not self.builder is None, "No defined builder"
         self.builder.make_wheels()
         self.builder.make_doors()
         self.builder.make_seats()

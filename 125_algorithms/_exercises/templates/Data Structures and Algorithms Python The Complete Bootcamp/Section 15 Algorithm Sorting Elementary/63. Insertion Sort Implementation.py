@@ -1,9 +1,9 @@
 ___ insertionSort(arr):
-    ___ i __ range(1, le.(arr)):
+    ___ i __ ra__(1, le.(arr)):
         key = arr[i]
         last = i - 1
 
-        w__ last >= 0 and key < arr[last]:
+        w__ last >= 0 a__ key < arr[last]:
             arr[last + 1] = arr[last]
             last = last - 1
 

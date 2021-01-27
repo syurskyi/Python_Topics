@@ -9,7 +9,7 @@ c_ Node:
         prev = N..
     
     ___ __str__(self
-        r_ str(value)
+        r_ st.(value)
 
 c_ LinkedList:
     ___  -   values = N..
@@ -23,7 +23,7 @@ c_ LinkedList:
             curNode = curNode.next
     
     ___ __str__(self
-        values = [str(x.value) ___ x __ self]
+        values = [st.(x.value) ___ x __ self]
         r_ ' -> '.j..(values)
     
     ___ __len__(self
@@ -47,7 +47,7 @@ c_ LinkedList:
     ___ generate  n, min_value, max_value
         head = N..
         tail = N..
-        ___ i __ range(n
+        ___ i __ ra__(n
             add(randint(min_value,max_value))
         r_ self
 

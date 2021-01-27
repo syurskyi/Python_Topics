@@ -108,7 +108,7 @@ if __name__ == "__main__":
     print("alien_model_identities:\n{}".format(set(alien_model_identities)))
     print("intelligence_identities:\n{}".format(set(intelligence_identities)))
     print("high_intelligence_identities:\n{}".format(set(high_intelligence_identities)))
-    assert len(set(ork_model_identities)) == 1
-    assert len(set(alien_model_identities)) == 1
-    assert len(set(intelligence_identities)) == 1
-    assert len(set(high_intelligence_identities)) == 1
+    a__ len(set(ork_model_identities)) == 1
+    a__ len(set(alien_model_identities)) == 1
+    a__ len(set(intelligence_identities)) == 1
+    a__ len(set(high_intelligence_identities)) == 1

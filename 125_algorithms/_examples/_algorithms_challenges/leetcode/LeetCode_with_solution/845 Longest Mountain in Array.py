@@ -110,5 +110,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().longestMountain([2,1,4,7,3,2,5]) == 5
-    assert Solution().longestMountain([9,8,7,6,5,4,3,2,1,0]) == 0
+    a__ Solution().longestMountain([2,1,4,7,3,2,5]) == 5
+    a__ Solution().longestMountain([9,8,7,6,5,4,3,2,1,0]) == 0

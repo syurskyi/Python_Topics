@@ -127,7 +127,7 @@ class EqualizerBar(QtWidgets.QWidget):
         return self._values
 
     def setRange(self, vmin, vmax):
-        assert float(vmin) < float(vmax)
+        a__ float(vmin) < float(vmax)
         self._vmin, self._vmax = float(vmin), float(vmax)
 
     def setColor(self, color):

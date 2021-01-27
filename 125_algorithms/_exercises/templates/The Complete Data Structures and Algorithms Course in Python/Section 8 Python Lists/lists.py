@@ -5,7 +5,7 @@
 
 shoppingList = ['Milk', 'Cheese', 'Butter']
 
-___ i __ range(le_(shoppingList)):
+___ i __ ra__(le_(shoppingList)):
     shoppingList[i] = shoppingList[i]+"+"
     # print(shoppingList[i])
 empty = []

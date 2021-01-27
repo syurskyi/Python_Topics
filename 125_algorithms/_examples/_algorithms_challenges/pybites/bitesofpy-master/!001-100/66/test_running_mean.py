@@ -13,4 +13,4 @@ from Previous.running_mean import running_mean
 ])
 def test_running_mean(input_argument, expected_return):
     ret = list(running_mean(input_argument))
-    assert ret == expected_return
+    a__ ret == expected_return

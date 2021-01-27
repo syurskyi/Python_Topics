@@ -53,4 +53,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findShortestSubArray([1, 2, 2, 3, 1]) == 2
+    a__ Solution().findShortestSubArray([1, 2, 2, 3, 1]) == 2

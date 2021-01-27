@@ -126,4 +126,4 @@ if __name__=="__main__":
 
     points = [Point(point[0], point[1]) for point in points]
     print Solution().maxPoints(points)
-    assert Solution().maxPoints(points)==22
+    a__ Solution().maxPoints(points)==22

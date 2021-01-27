@@ -148,5 +148,5 @@ class SolutionTLE:
 
 
 if __name__ == "__main__":
-    assert Solution().splitArray([1, 4, 4], 3) == 4
-    assert Solution().splitArray([7,2,5,10,8], 2) == 18
+    a__ Solution().splitArray([1, 4, 4], 3) == 4
+    a__ Solution().splitArray([7,2,5,10,8], 2) == 18

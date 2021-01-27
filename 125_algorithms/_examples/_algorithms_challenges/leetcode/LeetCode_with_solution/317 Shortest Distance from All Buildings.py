@@ -79,8 +79,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().shortestDistance(
+    a__ Solution().shortestDistance(
         [[1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 1], [0, 1, 1, 0, 0, 1], [1, 0, 0, 1, 0, 1], [1, 0, 1, 0, 0, 1],
          [1, 0, 0, 0, 0, 1], [0, 1, 1, 1, 1, 0]]) == 88
-    assert Solution().shortestDistance([[1, 2, 0]]) == -1
-    assert Solution().shortestDistance([[1, 0, 2, 0, 1], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0]]) == 7
+    a__ Solution().shortestDistance([[1, 2, 0]]) == -1
+    a__ Solution().shortestDistance([[1, 0, 2, 0, 1], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0]]) == 7

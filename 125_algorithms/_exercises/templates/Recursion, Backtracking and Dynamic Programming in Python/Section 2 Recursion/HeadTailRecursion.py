@@ -1,7 +1,7 @@
 
 ___ tail(n
 
-    print('Calling tail with n=' + str(n))
+    print('Calling tail with n=' + st.(n))
 
     # BASE CASE
     __ n __ 0:
@@ -17,7 +17,7 @@ ___ tail(n
 
 ___ head(n
 
-    print('Calling head() with n=' + str(n))
+    print('Calling head() with n=' + st.(n))
 
     __ n __ 0:
         r_

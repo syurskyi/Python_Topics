@@ -43,7 +43,7 @@ class Solution:
     def dfs_eval(self, nums, ops):
         ret = []
         if not ops:
-            assert len(nums) == 1
+            a__ len(nums) == 1
             return nums
 
         for i, op in enumerate(ops):
@@ -64,4 +64,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().diffWaysToCompute("1+1") == [2]
+    a__ Solution().diffWaysToCompute("1+1") == [2]

@@ -19,7 +19,7 @@ ___ teardown_test():
 
 
 ___ test_price_of_a_new_stock_class_should_be_None():
-    assert goog.price is N..
+    a__ goog.price is N..
 test_price_of_a_new_stock_class_should_be_None.setup = setup_test
 test_price_of_a_new_stock_class_should_be_None.teardown = teardown_test
 
@@ -39,7 +39,7 @@ ___ given_a_series_of_prices(stock, prices):
 ___ test_stock_trends(prices, expected_output):
     goog = Stock("GOOG")
     given_a_series_of_prices(goog, prices)
-    assert goog.is_increasing_trend() == expected_output
+    a__ goog.is_increasing_trend() == expected_output
 
 
 ___ test_trend_with_all_consecutive_values_upto_100():
@@ -50,7 +50,7 @@ ___ test_trend_with_all_consecutive_values_upto_100():
 ___ stock_trends_with_consecutive_prices(prices):
     goog = Stock("GOOG")
     given_a_series_of_prices(goog, prices)
-    assert goog.is_increasing_trend()
+    a__ goog.is_increasing_trend()
 
 
 w__ such.A("Stock class") as it:
@@ -66,12 +66,12 @@ w__ such.A("Stock class") as it:
 
         @it.should("return the price")
         ___ test(case):
-            assert it.goog.price == 10
+            a__ it.goog.price == 10
 
         @it.should("return the latest price")
         ___ test(case):
             it.goog.u..(d_t_(2014, 2, 11), price=15)
-            assert it.goog.price == 10
+            a__ it.goog.price == 10
 
     w__ it.having("a trend method"):
         @it.should("return True if the last three updates were increasing")
@@ -79,7 +79,7 @@ w__ such.A("Stock class") as it:
             it.goog.u..(d_t_(2014, 2, 11), price=12)
             it.goog.u..(d_t_(2014, 2, 12), price=13)
             it.goog.u..(d_t_(2014, 2, 13), price=14)
-            assert it.goog.is_increasing_trend()
+            a__ it.goog.is_increasing_trend()
 
     it.createTests(globals())
 

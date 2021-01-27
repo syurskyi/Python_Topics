@@ -25,7 +25,7 @@ from roman import romanize
     (3500, 'MMMD'),
 ])
 def test_romanize(number, numeral):
-    assert romanize(number) == numeral
+    a__ romanize(number) == numeral
 
 
 def test_boundaries():

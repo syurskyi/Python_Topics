@@ -7,7 +7,7 @@ timestamp1 = time.time()
 number = 100
 total = 0
 
-___ value __ range(1, number + 1):
+___ value __ ra__(1, number + 1):
     total = total + value
 
 print("The sum is", total)

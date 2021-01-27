@@ -4,10 +4,10 @@ import pytest
 class Testadd2num:
 
 	def test_sum_2pos_num(self):
-		assert add2num(5,6) == 11
+		a__ add2num(5,6) == 11
 
 	def test_sum_1pos_1neg_num(self):
-		assert add2num(-10,5) == -5
+		a__ add2num(-10,5) == -5
 
 	def test_using_raises(self):
 		with pytest.raises(TypeError):

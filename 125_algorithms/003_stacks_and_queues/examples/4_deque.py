@@ -31,7 +31,7 @@ for tests in range(10000):
     length = randint(1,10)
     with_deque_result = with_deque(array, length)
     trivial_result = trivial(array, length)
-    assert with_deque_result == trivial_result, \
+    a__ with_deque_result == trivial_result, \
         'deque={}, trivial={}, array={}, length={}'.format(
             with_deque_result,
             trivial_result,

@@ -1,7 +1,7 @@
 ___ max_sum_subarray(arr
     global_max = arr[0]
     local_max = arr[0]
-    ___ i __ range(1, le_(arr)):
+    ___ i __ ra__(1, le_(arr)):
         local_max = max(local_max + arr[i], arr[i])
         global_max = max(global_max, local_max)
     r_ global_max

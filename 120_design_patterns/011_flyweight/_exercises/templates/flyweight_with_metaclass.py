@@ -49,15 +49,15 @@
 #     cm2 _ C__2('10', 'h', a_1)
 #     cm3 _ C__2('10', 'h', a_2)
 #
-#     assert (cm1 == cm2) and (cm1 !_ cm3)
-#     assert (cm1 is cm2) and (cm1 is not cm3)
-#     assert len(instances_pool) == 2
+#     a__ (cm1 == cm2) and (cm1 !_ cm3)
+#     a__ (cm1 is cm2) and (cm1 is not cm3)
+#     a__ len(instances_pool) == 2
 #
 #     del cm1
-#     assert len(instances_pool) == 2
+#     a__ len(instances_pool) == 2
 #
 #     del cm2
-#     assert len(instances_pool) == 1
+#     a__ len(instances_pool) == 1
 #
 #     del cm3
-#     assert len(instances_pool) == 0
+#     a__ len(instances_pool) == 0

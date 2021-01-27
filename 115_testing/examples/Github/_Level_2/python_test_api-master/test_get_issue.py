@@ -26,7 +26,7 @@ class TestGetIssue(unittest.TestCase):
         r_dict = xmltodict.parse(r.text)
 
         self.assertEquals(r.status_code, 404)
-        # assert r.status_code == 403
+        # a__ r.status_code == 403
         self.assertEquals(r_dict['error'], 'Issue not found.')
         self.assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 

@@ -9,13 +9,13 @@ c_ Queue:
         top = -1 
     
     ___ __str__(self
-        values = [str(x) ___ x __ items]
+        values = [st.(x) ___ x __ items]
         r_ ' '.j..(values)
     
     ___ isFull(self
         __ top + 1 __ start:
             r_ T..
-        elif start __ 0 and top + 1 __ maxSize:
+        ____ start __ 0 a__ top + 1 __ maxSize:
             r_ T..
         ____
             r_ F..
@@ -48,7 +48,7 @@ c_ Queue:
             __ start __ top:
                 start = -1
                 top = -1
-            elif start + 1 __ maxSize:
+            ____ start + 1 __ maxSize:
                 start = 0
             ____
                 start += 1

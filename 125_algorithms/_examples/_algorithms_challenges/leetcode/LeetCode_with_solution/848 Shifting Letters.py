@@ -48,4 +48,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().shiftingLetters("abc", [3, 5, 9]) == "rpl"
+    a__ Solution().shiftingLetters("abc", [3, 5, 9]) == "rpl"

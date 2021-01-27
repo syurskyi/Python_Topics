@@ -79,7 +79,7 @@ something.backend _ mock_backend
 something.method()
 
 # 
-# Using mock_calls we can check the chained call with a single assert.
+# Using mock_calls we can check the chained call with a single a__.
 # A chained call is several calls in one line of code, so there will be several entries in mock_calls.
 # We can use call.call_list() to create this list of calls for us:
 # 

@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,13 +9,13 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
 #
 # Mocking Magic Methods:
-# Mock supports mocking the Python protocol methods, also known as “magic methods”.
+# Mock supports mocking the Python protocol methods, also known as ï¿½magic methodsï¿½.
 # This allows mock objects to replace containers or other objects that implement Python protocols.
 # Because magic methods are looked up differently from normal methods, this support has been specially implemented. This means that only specific magic
 # methods are supported.
@@ -66,7 +66,7 @@ mock.__enter__ = Mock(return_value='foo')
 mock.__exit__ = Mock(return_value=False)
 
 with mock as m:
-        assert m == 'foo'
+        a__ m == 'foo'
 
 mock.__enter__.assert_called_with()
 

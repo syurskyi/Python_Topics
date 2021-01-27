@@ -116,6 +116,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().deleteAndEarn([1,1,1,2,4,5,5,5,6]) == 18
-    assert Solution().deleteAndEarn([3, 4, 2]) == 6
-    assert Solution().deleteAndEarn([2, 2, 3, 3, 3, 4]) == 9
+    a__ Solution().deleteAndEarn([1,1,1,2,4,5,5,5,6]) == 18
+    a__ Solution().deleteAndEarn([3, 4, 2]) == 6
+    a__ Solution().deleteAndEarn([2, 2, 3, 3, 3, 4]) == 9

@@ -79,7 +79,7 @@ def test_mmddyy():
         "Invalid",
         "Invalid",
     ]
-    assert get_dates(dates) == results
+    a__ get_dates(dates) == results
 
 
 def test_yymmdd():
@@ -114,7 +114,7 @@ def test_yymmdd():
         "1971-04-19",
         "1985-08-09",
     ]
-    assert get_dates(dates) == results
+    a__ get_dates(dates) == results
 
 
 def test_ddmmyy():
@@ -149,7 +149,7 @@ def test_ddmmyy():
         "2024-11-30",
         "2051-01-08",
     ]
-    assert get_dates(dates) == results
+    a__ get_dates(dates) == results
 
 
 def test_different_enum():
@@ -206,4 +206,4 @@ def test_different_enum():
         "Invalid",
         "1951-01-08",
     ]
-    assert get_dates(dates) == results
+    a__ get_dates(dates) == results

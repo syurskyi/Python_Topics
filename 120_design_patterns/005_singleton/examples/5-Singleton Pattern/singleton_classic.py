@@ -10,10 +10,10 @@ class Singleton(object):
 s1 = Singleton.instance()
 s2 = Singleton.instance()
 
-assert s1 is s2
+a__ s1 is s2
 
 s1.ans = 42
 
-assert s2.ans == s1.ans
+a__ s2.ans == s1.ans
 print('Assertions passed.')
      

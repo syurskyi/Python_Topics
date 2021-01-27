@@ -47,4 +47,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) == 16
+    a__ Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) == 16

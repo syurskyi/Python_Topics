@@ -30,7 +30,7 @@ class Solution:
         }
         lo = 0
         ret = 0
-        assert k > 0
+        a__ k > 0
         for hi in range(len(s)):
             counter[s[hi]] += 1
             while True:
@@ -47,5 +47,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().characterReplacement("AABABBA", 1) == 4
-    assert Solution().characterReplacement("ABAB", 2) == 4
+    a__ Solution().characterReplacement("AABABBA", 1) == 4
+    a__ Solution().characterReplacement("ABAB", 2) == 4

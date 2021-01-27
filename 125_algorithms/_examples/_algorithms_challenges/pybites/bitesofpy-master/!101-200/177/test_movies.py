@@ -10,18 +10,18 @@ def df():
 
 
 def test_df_type(df):
-    assert type(df) == DataFrame
+    a__ type(df) == DataFrame
 
 
 def test_df_shape(df):
-    assert df.shape == (19, 1)
+    a__ df.shape == (19, 1)
 
 
 def test_first_genre_and_count(df):
-    assert df.index[0] == 'Drama'
-    assert df.iloc[0].movie == 485
+    a__ df.index[0] == 'Drama'
+    a__ df.iloc[0].movie == 485
 
 
 def test_last_genre_and_count(df):
-    assert df.index[-1] == 'IMAX'
-    assert df.iloc[-1].movie == 9
+    a__ df.index[-1] == 'IMAX'
+    a__ df.iloc[-1].movie == 9

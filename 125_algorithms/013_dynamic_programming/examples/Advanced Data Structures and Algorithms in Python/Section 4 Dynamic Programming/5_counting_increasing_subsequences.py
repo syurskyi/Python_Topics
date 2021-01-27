@@ -40,7 +40,7 @@ for tests in range(1000):
     k = randint(5, 20)
     with_first = first_dp(array, k)
     with_second = second_dp(array, k)
-    assert with_first == with_second, \
+    a__ with_first == with_second, \
         'first={}, second={},\narray={},\nk={}'.format(
             with_first,
             with_second,

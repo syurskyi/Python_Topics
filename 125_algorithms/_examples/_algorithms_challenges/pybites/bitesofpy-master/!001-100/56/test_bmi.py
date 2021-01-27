@@ -38,18 +38,18 @@ def test_two_arg(parser, capfd):
     args = parser.parse_args(['-w', '80', '-l', '187'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 22.88" in output
+    a__ "Your BMI is: 22.88" in output
 
 
 def test_two_arg_reversed_order(parser, capfd):
     args = parser.parse_args(['-l', '187', '-w', '80'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 22.88" in output
+    a__ "Your BMI is: 22.88" in output
 
 
 def test_different_args(parser, capfd):
     args = parser.parse_args(['-l', '200', '-w', '100'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 25.0" in output
+    a__ "Your BMI is: 25.0" in output

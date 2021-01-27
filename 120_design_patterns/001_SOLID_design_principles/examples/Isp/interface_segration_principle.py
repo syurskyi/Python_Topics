@@ -52,7 +52,7 @@ class Manager(object):
         self.worker = None
 
     def set_worker(self, worker):
-        assert isinstance(worker, AbstractWorker), "`worker` must be of type {}".format(AbstractWorker)
+        a__ isinstance(worker, AbstractWorker), "`worker` must be of type {}".format(AbstractWorker)
 
         self.worker = worker
 
@@ -151,7 +151,7 @@ class Manager(object):
 class WorkManager(Manager):
 
     def set_worker(self, worker):
-        assert isinstance(worker, Workable), "`worker` must be of type {}".format(Workable)
+        a__ isinstance(worker, Workable), "`worker` must be of type {}".format(Workable)
 
         self.worker = worker
 
@@ -162,7 +162,7 @@ class WorkManager(Manager):
 class BreakManager(Manager):
 
     def set_worker(self, worker):
-        assert isinstance(worker, Eatable), "`worker` must be of type {}".format(Eatable)
+        a__ isinstance(worker, Eatable), "`worker` must be of type {}".format(Eatable)
         self.worker = worker
 
     def lunch_break(self):

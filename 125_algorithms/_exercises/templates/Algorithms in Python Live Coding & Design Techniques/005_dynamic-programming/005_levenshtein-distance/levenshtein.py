@@ -39,14 +39,14 @@ ___ get_edit_dist_td(str1, str2, m, n, dp
 
 # DP : Bottom Up Approach
 ___ get_edit_dist_bu(str1, str2, m, n
-    l_dist = [[0 ___ i __ range(n+1)]___ i __ range(m+1)]
+    l_dist = [[0 ___ i __ ra__(n+1)]___ i __ ra__(m+1)]
 
-    ___ i __ range(m
+    ___ i __ ra__(m
         l_dist[0][i] = i
-    ___ j __ range(n
+    ___ j __ ra__(n
         l_dist[j][0] = j
-    ___ i __ range(1, m+1
-        ___ j __ range(1, n+1
+    ___ i __ ra__(1, m+1
+        ___ j __ ra__(1, n+1
             __ str1[i - 1] __ str2[j - 1]:
                 l_dist[i][j] = l_dist[i - 1][j - 1]
             ____
@@ -57,11 +57,11 @@ ___ get_edit_dist_bu(str1, str2, m, n
 
 ___ editDistDP(str1, str2, m, n 
     # Create a table to store results of subproblems 
-    dp = [[0 ___ x __ range(n + 1)] ___ x __ range(m + 1)]
+    dp = [[0 ___ x __ ra__(n + 1)] ___ x __ ra__(m + 1)]
   
     # Fill d[][] in bottom up manner 
-    ___ i __ range(m + 1
-        ___ j __ range(n + 1
+    ___ i __ ra__(m + 1
+        ___ j __ ra__(n + 1
   
             # If first string is empty, only option is to 
             # insert all characters of second string 
@@ -70,12 +70,12 @@ ___ editDistDP(str1, str2, m, n
   
             # If second string is empty, only option is to 
             # remove all characters of second string 
-            elif j __ 0: 
+            ____ j __ 0: 
                 dp[i][j] = i    # Min. operations = i 
   
             # If last characters are same, ignore last char 
             # and recur for remaining string 
-            elif str1[i-1] __ str2[j-1]: 
+            ____ str1[i-1] __ str2[j-1]: 
                 dp[i][j] = dp[i-1][j-1] 
   
             # If last character are different, consider all 
@@ -95,7 +95,7 @@ __ ___ __ '__main__':
     n = le_(str2)
     print(get_edit_dist(str1, str2, m, n))
 
-    dp = [[-1 ___ i __ range(n)]___ i __ range(m)]
+    dp = [[-1 ___ i __ ra__(n)]___ i __ ra__(m)]
     print('top down: ', get_edit_dist_td(str1, str2, m, n, dp))
 
     print('bottom up: ', get_edit_dist_bu(str1, str2, m, n))

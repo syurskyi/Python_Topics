@@ -43,7 +43,7 @@ c_ PhoneBookTest?.?
     ___ test_is_consistent_with_different_entries
         # Arrange step to add entries
         # Act step where we check for consistency
-        # Assert whether it is or not
+        # a__ whether it is or not
         phonebook.add("Bob", "12345")
         phonebook.add("Anna", "012345")
         aT..(phonebook.i_c..())

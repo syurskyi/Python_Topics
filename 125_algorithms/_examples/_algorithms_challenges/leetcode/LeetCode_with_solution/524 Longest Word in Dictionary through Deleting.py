@@ -61,4 +61,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) == "apple"
+    a__ Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) == "apple"

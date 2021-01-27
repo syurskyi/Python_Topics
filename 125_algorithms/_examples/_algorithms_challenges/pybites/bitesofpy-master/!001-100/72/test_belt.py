@@ -23,4 +23,4 @@ from Previous.belt import get_belt
     (1200, 'red'),
 ])
 def test_get_belt(input_argument, expected_return):
-    assert get_belt(input_argument) == expected_return
+    a__ get_belt(input_argument) == expected_return

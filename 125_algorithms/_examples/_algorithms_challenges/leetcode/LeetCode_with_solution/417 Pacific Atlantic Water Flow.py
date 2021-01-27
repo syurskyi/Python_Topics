@@ -141,7 +141,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().pacificAtlantic([
+    a__ Solution().pacificAtlantic([
         [1,2,2,3,5],
         [3,2,3,4,4],
         [2,4,5,3,1],

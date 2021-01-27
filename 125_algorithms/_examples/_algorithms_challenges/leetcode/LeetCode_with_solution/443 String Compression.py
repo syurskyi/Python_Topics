@@ -62,6 +62,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().compress(["a"]) == 1
-    assert Solution().compress(["a","a","b","b","c","c","c"]) == 6
-    assert Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) == 4
+    a__ Solution().compress(["a"]) == 1
+    a__ Solution().compress(["a","a","b","b","c","c","c"]) == 6
+    a__ Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) == 4

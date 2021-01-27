@@ -4,27 +4,27 @@
 import math
 
 ___ bubbleSort(customList
-    ___ i __ range(le_(customList)-1
-        ___ j __ range(le_(customList)-i-1
+    ___ i __ ra__(le_(customList)-1
+        ___ j __ ra__(le_(customList)-i-1
             __ customList[j] > customList[j+1]:
                 customList[j], customList[j+1] = customList[j+1], customList[j]
     print(customList)
 
 
 ___ selectionSort(customList
-    ___ i __ range(le_(customList)):
+    ___ i __ ra__(le_(customList)):
         min_index = i
-        ___ j __ range(i+1, le_(customList)):
+        ___ j __ ra__(i+1, le_(customList)):
             __ customList[min_index] > customList[j]:
                 min_index = j
         customList[i], customList[min_index] = customList[min_index], customList[i]
     print(customList)
 
 ___ insertionSort(customList
-    ___ i __ range(1, le_(customList)):
+    ___ i __ ra__(1, le_(customList)):
         key = customList[i]
         j = i-1
-        w__ j>=0 and key < customList[j]:
+        w__ j>=0 a__ key < customList[j]:
             customList[j+1] = customList[j]
             j -= 1
         customList[j+1] = key
@@ -36,18 +36,18 @@ ___ bucketSort(customList
     maxValue = max(customList)
     arr = []
 
-    ___ i __ range(numberofBuckets
+    ___ i __ ra__(numberofBuckets
         arr.ap..([])
     ___ j __ customList:
         index_b = math.ceil(j*numberofBuckets/maxValue)
         arr[index_b-1].ap..(j)
     
-    ___ i __ range(numberofBuckets
+    ___ i __ ra__(numberofBuckets
         arr[i] = insertionSort(arr[i])
     
     k = 0
-    ___ i __ range(numberofBuckets
-        ___ j __ range(le_(arr[i])):
+    ___ i __ ra__(numberofBuckets
+        ___ j __ ra__(le_(arr[i])):
             customList[k] = arr[i][j]
             k += 1
     r_ customList
@@ -59,16 +59,16 @@ ___ merge(customList, l, m, r
     L = [0] * (n1)
     R = [0] * (n2)
 
-    ___ i __ range(0, n1
+    ___ i __ ra__(0, n1
         L[i] = customList[l+i]
     
-    ___ j __ range(0, n2
+    ___ j __ ra__(0, n2
         R[j] = customList[m+1+j]
     
     i = 0 
     j = 0
     k = l
-    w__ i < n1 and j < n2:
+    w__ i < n1 a__ j < n2:
         __ L[i] <= R[j]:
             customList[k] = L[i]
             i += 1
@@ -97,7 +97,7 @@ ___ mergeSort(customList, l, r
 ___ partition(customList, low, high
     i = low - 1
     pivot = customList[high]
-    ___ j __ range(low,high
+    ___ j __ ra__(low,high
         __ customList[j] <= pivot:
             i += 1
             customList[i], customList[j] = customList[j], customList[i]
@@ -115,10 +115,10 @@ ___ heapify(customList, n, i
     smallest = i
     l = 2*i + 1
     r = 2*i + 2
-    __ l < n and customList[l] < customList[smallest]:
+    __ l < n a__ customList[l] < customList[smallest]:
         smallest = l
     
-    __ r < n and customList[r] < customList[smallest]:
+    __ r < n a__ customList[r] < customList[smallest]:
         smallest = r
     
     __ smallest != i:
@@ -128,10 +128,10 @@ ___ heapify(customList, n, i
 
 ___ heapSort(customList
     n = le_(customList)
-    ___ i __ range(int(n/2)-1, -1, -1
+    ___ i __ ra__(in.(n/2)-1, -1, -1
         heapify(customList, n, i)
     
-    ___ i __ range(n-1,0,-1
+    ___ i __ ra__(n-1,0,-1
         customList[i], customList[0] = customList[0], customList[i]
         heapify(customList, i, 0)
     # customList.reverse()

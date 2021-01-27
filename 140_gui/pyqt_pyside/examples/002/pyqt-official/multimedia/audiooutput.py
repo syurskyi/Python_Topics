@@ -87,7 +87,7 @@ class Generator(QIODevice):
                 scaler = lambda x: x * 32767
                 pack_format = '<h' if format.byteOrder() == QAudioFormat.LittleEndian else '>h'
 
-        assert(pack_format != '')
+        a__(pack_format != '')
 
         channelBytes = format.sampleSize() // 8
         sampleBytes = format.channelCount() * channelBytes

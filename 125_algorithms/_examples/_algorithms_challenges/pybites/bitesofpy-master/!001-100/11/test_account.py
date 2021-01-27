@@ -7,41 +7,41 @@ saving = Account('Saving', 10)
 
 
 def test_account_balance():
-    assert checking.start_balance == 0
+    a__ checking.start_balance == 0
     checking + 10
-    assert checking.balance == 10
+    a__ checking.balance == 10
 
-    assert saving.start_balance == 10
+    a__ saving.start_balance == 10
     with pytest.raises(ValueError):
         saving - 'a'
     saving - 5
-    assert saving.balance == 5
+    a__ saving.balance == 5
 
 
 def test_account_comparison():
-    assert checking > saving
-    assert checking >= saving
-    assert saving < checking
-    assert saving <= checking
+    a__ checking > saving
+    a__ checking >= saving
+    a__ saving < checking
+    a__ saving <= checking
     saving + 5
-    assert checking == saving
+    a__ checking == saving
 
 
 def test_account_len():
     checking + 10
     checking + 3
     checking - 8
-    assert len(checking) == 4
+    a__ len(checking) == 4
 
 
 def test_account_indexing_iter():
-    assert checking[0] == 10
-    assert checking[-1] == -8
-    assert list(checking) == [10, 10, 3, -8]
+    a__ checking[0] == 10
+    a__ checking[-1] == -8
+    a__ list(checking) == [10, 10, 3, -8]
 
 
 def test_account_str():
-    assert str(checking) == 'Checking account - balance: 15'
-    assert str(saving) == 'Saving account - balance: 10'
+    a__ str(checking) == 'Checking account - balance: 15'
+    a__ str(saving) == 'Saving account - balance: 10'
     saving + 5
-    assert str(saving) == 'Saving account - balance: 15'
+    a__ str(saving) == 'Saving account - balance: 15'

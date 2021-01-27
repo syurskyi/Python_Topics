@@ -58,8 +58,8 @@ if __name__ == '__main__':
     print('The sample game winner is player: %s\n' % winner)
 
     print('Tests: \n')
-    print('Assert "2" --> %s\n'%ticTacToe(winner_is_2))
-    print('Assert "1" --> %s\n'%ticTacToe(winner_is_1))
-    print('Assert "1" --> %s\n'%ticTacToe(winner_is_also_1))
-    print('Assert "0" --> %s\n'%ticTacToe(no_winner))
-    print('Assert "0" --> %s\n'%ticTacToe(also_no_winner))
+    print('a__ "2" --> %s\n'%ticTacToe(winner_is_2))
+    print('a__ "1" --> %s\n'%ticTacToe(winner_is_1))
+    print('a__ "1" --> %s\n'%ticTacToe(winner_is_also_1))
+    print('a__ "0" --> %s\n'%ticTacToe(no_winner))
+    print('a__ "0" --> %s\n'%ticTacToe(also_no_winner))

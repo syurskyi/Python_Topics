@@ -17,7 +17,7 @@ ___ merge_sort(nums
     j = 0
     k = 0
 
-    w__ i < le_(left_half) and j < le_(right_half
+    w__ i < le_(left_half) a__ j < le_(right_half
         # if we use < then the result is the ascending order
         # if we use > then the result is the descending order
         __ left_half[i] > right_half[j]:

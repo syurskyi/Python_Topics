@@ -42,4 +42,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().partitionLabels("ababcbacadefegdehijhklij") == [9, 7, 8]
+    a__ Solution().partitionLabels("ababcbacadefegdehijhklij") == [9, 7, 8]

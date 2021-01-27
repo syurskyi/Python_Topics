@@ -88,14 +88,14 @@
 #     with_binary_search = efficient(array, k)
 #     trivial_result = trivial(array, k)
 #     optimal_result = optimal(array, k)
-#     assert with_binary_search == trivial_result, \
+#     a__ with_binary_search == trivial_result, \
 #         'binary search={}, trivial={}, array={}, k={}'.format(
 #             with_binary_search,
 #             trivial_result,
 #             array,
 #             k
 #         )
-#     assert optimal_result == trivial_result, \
+#     a__ optimal_result == trivial_result, \
 #         'optimal={}, trivial={}, array={}, k={}'.format(
 #             optimal_result,
 #             trivial_result,

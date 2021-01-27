@@ -197,7 +197,7 @@ class NameFinder(object):
 
     def _names_to_types(self, names, resolve_decorator):
         types = []
-        # Add isinstance and other if/assert knowledge.
+        # Add isinstance and other if/a__ knowledge.
         flow_scope = self.scope
         evaluator = self._evaluator
         while flow_scope:
@@ -348,7 +348,7 @@ class NameFinder(object):
 
 def check_flow_information(evaluator, flow, search_name_part, pos):
     """ Try to find out the type of a variable just with the information that
-    is given by the flows: e.g. It is also responsible for assert checks.::
+    is given by the flows: e.g. It is also responsible for a__ checks.::
 
         if isinstance(k, str):
             k.  # <- completion here
@@ -377,22 +377,22 @@ def _check_isinstance_type(evaluator, stmt, search_name_part):
     try:
         expression_list = stmt.expression_list()
         # this might be removed if we analyze and, etc
-        assert len(expression_list) == 1
+        a__ len(expression_list) == 1
         call = expression_list[0]
-        assert isinstance(call, pr.Call) and str(call.name) == 'isinstance'
-        assert bool(call.execution)
+        a__ isinstance(call, pr.Call) and str(call.name) == 'isinstance'
+        a__ bool(call.execution)
 
         # isinstance check
         isinst = call.execution.values
-        assert len(isinst) == 2  # has two params
+        a__ len(isinst) == 2  # has two params
         obj, classes = [statement.expression_list() for statement in isinst]
-        assert len(obj) == 1
-        assert len(classes) == 1
-        assert isinstance(obj[0], pr.Call)
+        a__ len(obj) == 1
+        a__ len(classes) == 1
+        a__ isinstance(obj[0], pr.Call)
 
         # names fit?
-        assert unicode(obj[0].name) == unicode(search_name_part)
-        assert isinstance(classes[0], pr.StatementElement)  # can be type or tuple
+        a__ unicode(obj[0].name) == unicode(search_name_part)
+        a__ isinstance(classes[0], pr.StatementElement)  # can be type or tuple
     except AssertionError:
         return []
 

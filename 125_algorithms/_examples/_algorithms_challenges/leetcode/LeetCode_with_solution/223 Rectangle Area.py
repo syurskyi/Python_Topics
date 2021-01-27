@@ -25,4 +25,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2) == 16
+    a__ Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2) == 16

@@ -2,7 +2,7 @@ class Solution:
 
     ___ longestPalindrome(self, s):
         result = ""
-        ___ i __ range(le.(s)):
+        ___ i __ ra__(le.(s)):
             word1 = self.checkPalindrome(s, i, i)
             word2 = self.checkPalindrome(s, i, i + 1)
 
@@ -20,7 +20,7 @@ class Solution:
 
     ___ checkPalindrome(self, s, left, right):
 
-        w__ left >= 0 and right < le.(s) and s[left] __ s[right]:
+        w__ left >= 0 a__ right < le.(s) a__ s[left] __ s[right]:
             left -= 1
             right += 1
 

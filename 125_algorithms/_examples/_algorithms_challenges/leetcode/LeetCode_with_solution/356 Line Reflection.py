@@ -48,4 +48,4 @@ class Solution(object):
         return True
 
 if __name__ == "__main__":
-    assert Solution().isReflected([[1,1],[-1,-1]]) == False
+    a__ Solution().isReflected([[1,1],[-1,-1]]) == False

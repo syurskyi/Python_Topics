@@ -56,6 +56,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) == [-1, 0, 1]
-    assert Solution().findRightInterval(Interval.new([ [1,2] ])) == [-1]
-    assert Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) == [-1, 2, -1]
+    a__ Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) == [-1, 0, 1]
+    a__ Solution().findRightInterval(Interval.new([ [1,2] ])) == [-1]
+    a__ Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) == [-1, 2, -1]

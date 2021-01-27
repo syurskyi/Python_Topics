@@ -48,4 +48,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().addOperators("232", 8) == ["2+3*2", "2*3+2"]
+    a__ Solution().addOperators("232", 8) == ["2+3*2", "2*3+2"]

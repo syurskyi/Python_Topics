@@ -61,6 +61,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().checkPossibility([4,2,3]) == True
-    assert Solution().checkPossibility([3,4,2,3]) == False
-    assert Solution().checkPossibility([2,3,3,2,4]) == True
+    a__ Solution().checkPossibility([4,2,3]) == True
+    a__ Solution().checkPossibility([3,4,2,3]) == False
+    a__ Solution().checkPossibility([2,3,3,2,4]) == True

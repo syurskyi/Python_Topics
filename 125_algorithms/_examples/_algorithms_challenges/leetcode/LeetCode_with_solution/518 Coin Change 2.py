@@ -106,4 +106,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().change(5, [1, 2, 5]) == 4
+    a__ Solution().change(5, [1, 2, 5]) == 4

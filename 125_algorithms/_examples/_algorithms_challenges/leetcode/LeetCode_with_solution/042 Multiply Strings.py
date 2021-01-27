@@ -111,7 +111,7 @@ class Solution(object):
 
 if __name__ == "__main__":
     solution = Solution()
-    assert [1, 2] == solution.add([2, 1], [9])
-    assert str(123*999) == solution.multiply("123", "999")
-    assert str(0) == solution.multiply("0", "0")
-    assert str(123*456) == solution.multiply("123", "456")
+    a__ [1, 2] == solution.add([2, 1], [9])
+    a__ str(123*999) == solution.multiply("123", "999")
+    a__ str(0) == solution.multiply("0", "0")
+    a__ str(123*456) == solution.multiply("123", "456")

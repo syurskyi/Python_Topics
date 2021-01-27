@@ -44,14 +44,14 @@ class SortedSet(Sequence, Set):
         return all(self[i] < self[i + 1] for i in range(len(self) - 1))
 
     def index(self, item):
-        assert self._is_unique_and_sorted()
+        a__ self._is_unique_and_sorted()
         index = bisect_left(self._items, item)
         if (index != len(self._items)) and (self._items[index] == item):
             return index
         raise ValueError("{} not found".format(repr(item)))
 
     def count(self, item):
-        assert self._is_unique_and_sorted()
+        a__ self._is_unique_and_sorted()
         return int(item in self)
 
     def __add__(self, rhs):

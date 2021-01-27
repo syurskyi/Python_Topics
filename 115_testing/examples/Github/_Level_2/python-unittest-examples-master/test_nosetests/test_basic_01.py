@@ -21,7 +21,7 @@ def teardown_func():
 
 @with_setup(setup_func, teardown_func)
 def test_fixture():
-    assert global_a + global_b == 2
+    a__ global_a + global_b == 2
 
 #--------------------------------------
 # nose supports test functions and methods that are generators.
@@ -38,13 +38,13 @@ def test_evens():
 # method check_even, then setup and teardown functions will be executed five
 # times.
 def check_even(n):
-    assert n < 5
+    a__ n < 5
 
 
 def test_basic_assertion():
-    assert (1,2,3) == (1,2,3)
-    assert [1,2,3] == [1,2,3]
-    assert {'key1': 1, 'key2': 2} == {'key1': 1, 'key2': 2}
+    a__ (1,2,3) == (1,2,3)
+    a__ [1,2,3] == [1,2,3]
+    a__ {'key1': 1, 'key2': 2} == {'key1': 1, 'key2': 2}
 
 def test_deprecated_test_case():
     raise DeprecatedTest

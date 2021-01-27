@@ -23,7 +23,7 @@ ___ fibonacci_memoization(n, table
 # bottom-up approach
 ___ fibonacci_tabulation(n, table
 
-    ___ i __ range(2, n+1
+    ___ i __ ra__(2, n+1
         table[i] = table[i-1] + table[i-2]
 
     r_ table[n]

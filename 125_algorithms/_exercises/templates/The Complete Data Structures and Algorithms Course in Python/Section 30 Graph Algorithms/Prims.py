@@ -21,10 +21,10 @@ c_ Graph:
         visited[0]=T..
         w__ edgeNum<vertexNum-1:
             min = sys.maxsize
-            ___ i __ range(vertexNum
+            ___ i __ ra__(vertexNum
                 __ visited[i]:
-                    ___ j __ range(vertexNum
-                        __ ((not visited[j]) and edges[i][j]
+                    ___ j __ ra__(vertexNum
+                        __ ((not visited[j]) a__ edges[i][j]
                             __ min > edges[i][j]:
                                 min = edges[i][j]
                                 s = i

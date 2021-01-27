@@ -57,4 +57,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().numTrees(100) == Solution().numTrees_math(100)
+    a__ Solution().numTrees(100) == Solution().numTrees_math(100)

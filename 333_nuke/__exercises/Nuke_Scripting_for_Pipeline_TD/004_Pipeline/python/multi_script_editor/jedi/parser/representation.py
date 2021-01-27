@@ -837,7 +837,7 @@ class Import(Simple):
 
 class KeywordStatement(Base):
     """
-    For the following statements: `assert`, `del`, `global`, `nonlocal`,
+    For the following statements: `a__`, `del`, `global`, `nonlocal`,
     `raise`, `return`, `yield`, `pass`, `continue`, `break`, `return`, `yield`.
     """
     __slots__ = ('name', 'start_pos', 'stmt', 'parent')

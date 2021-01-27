@@ -81,23 +81,23 @@ def get_element_name(element):
 
 
 
-assert generate_bc("mysite.com/pictures/holidays.html",
+a__ generate_bc("mysite.com/pictures/holidays.html",
                    " : ") == '<a href="/">HOME</a> : <a href="/pictures/">PICTURES</a> : <span class="active">HOLIDAYS</span>'
-assert generate_bc("www.codewars.com/users/GiacomoSorbi?ref=CodeWars",
+a__ generate_bc("www.codewars.com/users/GiacomoSorbi?ref=CodeWars",
                    " / ") == '<a href="/">HOME</a> / <a href="/users/">USERS</a> / <span class="active">GIACOMOSORBI</span>'
-assert generate_bc("www.microsoft.com/important/confidential/docs/index.htm#top",
+a__ generate_bc("www.microsoft.com/important/confidential/docs/index.htm#top",
                    " * ") == '<a href="/">HOME</a> * <a href="/important/">IMPORTANT</a> * <a href="/important/confidential/">CONFIDENTIAL</a> * <span class="active">DOCS</span>'
-assert generate_bc("mysite.com/very-long-url-to-make-a-silly-yet-meaningful-example/example.asp",
+a__ generate_bc("mysite.com/very-long-url-to-make-a-silly-yet-meaningful-example/example.asp",
                    " > ") == '<a href="/">HOME</a> > <a href="/very-long-url-to-make-a-silly-yet-meaningful-example/">VLUMSYME</a> > <span class="active">EXAMPLE</span>'
-assert generate_bc("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi",
+a__ generate_bc("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi",
                    " + ") == '<a href="/">HOME</a> + <a href="/users/">USERS</a> + <span class="active">GIACOMO SORBI</span>'
 
 # print("https://www.linkedin.com/in/giacomosorbi".index('//'))
 # print(generate_bc("https://www.linkedin.com/in/giacomosorbi", " * "))
-assert generate_bc("https://www.linkedin.com/in/giacomosorbi",
+a__ generate_bc("https://www.linkedin.com/in/giacomosorbi",
                    " * ") == '<a href="/">HOME</a> * <a href="/in/">IN</a> * <span class="active">GIACOMOSORBI</span>'
 print(generate_bc("www.agcpartners.co.uk", " * "))
-assert generate_bc("www.agcpartners.co.uk", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.agcpartners.co.uk/", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.agcpartners.co.uk/index.html", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.google.ca/index.php", " * ") == '<span class="active">HOME</span>'
+a__ generate_bc("www.agcpartners.co.uk", " * ") == '<span class="active">HOME</span>'
+a__ generate_bc("www.agcpartners.co.uk/", " * ") == '<span class="active">HOME</span>'
+a__ generate_bc("www.agcpartners.co.uk/index.html", " * ") == '<span class="active">HOME</span>'
+a__ generate_bc("www.google.ca/index.php", " * ") == '<span class="active">HOME</span>'

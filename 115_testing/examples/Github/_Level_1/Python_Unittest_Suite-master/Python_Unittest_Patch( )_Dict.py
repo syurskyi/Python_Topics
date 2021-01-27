@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -22,6 +22,6 @@ foo = {'key': 'value'}
 original = foo.copy()
 
 with patch.dict(foo, {'newkey': 'newvalue'}, clear=True):
-        assert foo == {'newkey': 'newvalue'}
+        a__ foo == {'newkey': 'newvalue'}
    
-assert foo == original
+a__ foo == original

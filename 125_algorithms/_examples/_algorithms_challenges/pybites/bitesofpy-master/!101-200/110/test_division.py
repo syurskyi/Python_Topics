@@ -13,7 +13,7 @@ from division import divide_numbers
     (1, 2.9, 0.5),
 ])
 def test_divide_numbers_good_inputs(numerator, denominator, expected):
-    assert divide_numbers(numerator, denominator) == expected
+    a__ divide_numbers(numerator, denominator) == expected
 
 
 @pytest.mark.parametrize("numerator, denominator", [
@@ -29,4 +29,4 @@ def test_divide_numbers_raises_value_error(numerator, denominator):
 
 
 def test_divide_by_zero_does_not_raise_zero_division_exception():
-    assert divide_numbers(10, 0) == 0
+    a__ divide_numbers(10, 0) == 0

@@ -30,20 +30,20 @@ Su Mo Tu We Th Fr Sa
 
 def test_april_1981():
     weekdays = get_weekdays(april_1981)
-    assert len(weekdays) == 30
-    assert weekdays[25] == 'Sa'
-    assert weekdays[22] == 'We'
+    a__ len(weekdays) == 30
+    a__ weekdays[25] == 'Sa'
+    a__ weekdays[22] == 'We'
 
 
 def test_jan_1986():
     weekdays = get_weekdays(jan_1986)
-    assert len(weekdays) == 31
-    assert weekdays[20] == 'Mo'
-    assert weekdays[16] == 'Th'
+    a__ len(weekdays) == 31
+    a__ weekdays[20] == 'Mo'
+    a__ weekdays[16] == 'Th'
 
 
 def test_jan_1956():
     weekdays = get_weekdays(jan_1956)
-    assert len(weekdays) == 31
-    assert weekdays[13] == 'Fr'
-    assert weekdays[31] == 'Tu'
+    a__ len(weekdays) == 31
+    a__ weekdays[13] == 'Fr'
+    a__ weekdays[31] == 'Tu'

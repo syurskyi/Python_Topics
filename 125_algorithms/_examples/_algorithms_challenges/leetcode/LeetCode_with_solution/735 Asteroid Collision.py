@@ -106,6 +106,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().asteroidCollision([10, 2, -5]) == [10]
-    assert Solution().asteroidCollision([5, 10, -5]) == [5, 10]
-    assert Solution().asteroidCollision([8, -8]) == []
+    a__ Solution().asteroidCollision([10, 2, -5]) == [10]
+    a__ Solution().asteroidCollision([5, 10, -5]) == [5, 10]
+    a__ Solution().asteroidCollision([8, -8]) == []

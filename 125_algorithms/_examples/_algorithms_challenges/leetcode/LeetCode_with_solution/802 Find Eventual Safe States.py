@@ -72,4 +72,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) == [2,4,5,6]
+    a__ Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) == [2,4,5,6]

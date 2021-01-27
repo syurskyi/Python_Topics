@@ -86,14 +86,14 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().trapRainWater([
+    a__ Solution().trapRainWater([
         [12, 13, 0, 12],
         [13, 4, 13, 12],
         [13, 8, 10, 12],
         [12, 13, 12, 12],
         [13, 13, 13, 13]]
     ) == 14
-    assert Solution().trapRainWater([
+    a__ Solution().trapRainWater([
         [9, 1, 10, 10],
         [9, 1, 2, 8],
         [2, 6, 5, 0],

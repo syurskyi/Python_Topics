@@ -19,28 +19,28 @@ def promo():
 
 
 def test_bites_not_done_start(promo):
-    assert len(BITES) == 15
-    assert len(promo.bites_done) == 5
+    a__ len(BITES) == 15
+    a__ len(promo.bites_done) == 5
 
 
 def test_pick_random_bite_returns_not_done_bite(promo):
     for _ in range(10):
         bite = promo._pick_random_bite()
-        assert type(bite) == int
-        assert bite in BITES
-        assert bite not in promo.bites_done
+        a__ type(bite) == int
+        a__ bite in BITES
+        a__ bite not in promo.bites_done
 
 
 def test_internal_data_structures(promo):
     # fixture = new data = start over
-    assert len(promo.bites_done) == 5
+    a__ len(promo.bites_done) == 5
     grab_bites(promo, amount=7)
     # bites_done incremented with 7
-    assert len(promo.bites_done) == 12
+    a__ len(promo.bites_done) == 12
 
 
 def test_raise_exception_if_no_more_bites(promo):
-    assert len(promo.bites_done) == 5
+    a__ len(promo.bites_done) == 5
     grab_bites(promo)
     # exhausted bites
     with pytest.raises(NoBitesAvailable):

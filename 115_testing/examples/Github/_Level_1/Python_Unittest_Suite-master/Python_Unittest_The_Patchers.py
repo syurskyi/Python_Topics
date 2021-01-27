@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -57,9 +57,9 @@ with patch('__main__.Class') as MockClass:
         instance = MockClass.return_value
         instance.method.return_value = 'foo'
 
-        assert Class() is instance
+        a__ Class() is instance
 
-     assert Class().method() == 'foo'
+     a__ Class().method() == 'foo'
 
 # 
 # If you use spec or spec_set and patch() is replacing a class, then the return value of the created mock will have the same spec.
@@ -72,7 +72,7 @@ MockClass = patcher.start()
 
 instance = MockClass()
 
-assert isinstance(instance, Original)
+a__ isinstance(instance, Original)
 
 patcher.stop()
 
@@ -85,7 +85,7 @@ patcher.stop()
 thing = object()
 
 with patch('__main__.thing', new_callable=NonCallableMock) as mock_thing:
-        assert thing is mock_thing
+        a__ thing is mock_thing
 
         thing()
 
@@ -104,7 +104,7 @@ from io import StringIO
 
        foo()
 
-       assert mock_stdout.getvalue() == 'Something\n'
+       a__ mock_stdout.getvalue() == 'Something\n'
 
 test()
 
@@ -127,7 +127,7 @@ mock_thing.second
 
 # 
 # As well as attributes on the created mock attributes, like the return_value and side_effect, of child mocks can also be configured.
-# These aren’t syntactically valid to pass in directly as keyword arguments, but a dictionary with these as keys can still be expanded into a patch() call
+# These arenï¿½t syntactically valid to pass in directly as keyword arguments, but a dictionary with these as keys can still be expanded into a patch() call
 # using **:
 # 
 

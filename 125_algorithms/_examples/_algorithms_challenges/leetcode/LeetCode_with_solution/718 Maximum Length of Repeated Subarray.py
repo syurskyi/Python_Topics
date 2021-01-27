@@ -44,4 +44,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findLength([1,2,3,2,1], [3,2,1,4,7]) == 3
+    a__ Solution().findLength([1,2,3,2,1], [3,2,1,4,7]) == 3

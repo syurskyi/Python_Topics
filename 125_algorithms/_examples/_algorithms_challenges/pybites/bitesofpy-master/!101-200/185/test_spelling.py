@@ -25,4 +25,4 @@ def a_words():
     ('accidentaly', 'accidentally'),
 ])
 def test_suggest_word(word, expected, a_words):
-    assert suggest_word(word, words=a_words) == expected
+    a__ suggest_word(word, words=a_words) == expected

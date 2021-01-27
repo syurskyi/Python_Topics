@@ -48,7 +48,7 @@ check_warnings(("", Warning), quiet_True)
 w__ check_warnings(("assertion is always true", SyntaxWarning),
                     ("", UserWarning)):
 
-    exec('assert(False, "Hey!")')
+    exec('a__(False, "Hey!")')
 
     warnings.warn(UserWarning("Hide me!"))
 

@@ -19,7 +19,7 @@ ___ merge_sort(nums
     j = 0
     k = 0
 
-    w__ i < le_(left_half) and j < le_(right_half
+    w__ i < le_(left_half) a__ j < le_(right_half
         __ left_half[i] > right_half[j]:
             nums[k] = left_half[i]
             i = i + 1

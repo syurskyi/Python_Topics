@@ -64,4 +64,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2)
+    a__ Solution().topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2)

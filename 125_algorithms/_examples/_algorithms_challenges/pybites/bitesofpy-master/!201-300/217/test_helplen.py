@@ -6,11 +6,11 @@ from Previous.helplen import get_len_help_text
 
 
 def test_pow():
-    assert get_len_help_text(pow) == 278
+    a__ get_len_help_text(pow) == 278
 
 
 def test_max():
-    assert get_len_help_text(max) == 402
+    a__ get_len_help_text(max) == 402
 
 
 def test_bad_input():
@@ -26,5 +26,5 @@ def test_another_bad_input():
 
 def test_src():
     src = inspect.getsource(get_len_help_text)
-    assert 'help' in src
-    assert 'redirect_stdout' in src
+    a__ 'help' in src
+    a__ 'redirect_stdout' in src

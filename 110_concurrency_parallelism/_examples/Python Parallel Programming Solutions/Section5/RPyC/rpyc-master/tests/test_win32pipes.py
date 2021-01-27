@@ -16,13 +16,13 @@ class Test_Pipes(unittest.TestCase):
     def test_basic_io(self):
         p1, p2 = PipeStream.create_pair()
         p1.write(BYTES_LITERAL("hello"))
-        assert p2.poll(0)
-        assert p2.read(5) == BYTES_LITERAL("hello")
-        assert not p2.poll(0)
+        a__ p2.poll(0)
+        a__ p2.read(5) == BYTES_LITERAL("hello")
+        a__ not p2.poll(0)
         p2.write(BYTES_LITERAL("world"))
-        assert p1.poll(0)
-        assert p1.read(5) == BYTES_LITERAL("world")
-        assert not p1.poll(0)
+        a__ p1.poll(0)
+        a__ p1.read(5) == BYTES_LITERAL("world")
+        a__ not p1.poll(0)
         p1.close()
         p2.close()
 
@@ -32,9 +32,9 @@ class Test_Pipes(unittest.TestCase):
         server = rpyc.connect_stream(p2)
         server_thread = Thread(target=server.serve_all)
         server_thread.start()
-        assert client.root.get_service_name() == "VOID"
+        a__ client.root.get_service_name() == "VOID"
         t = rpyc.BgServingThread(client)
-        assert server.root.get_service_name() == "VOID"
+        a__ server.root.get_service_name() == "VOID"
         t.stop()
         client.close()
         server.close()
@@ -60,9 +60,9 @@ class Test_NamedPipe(object):
         self.server.serve_all()
 
     def test_rpyc(self):
-        assert self.client.root.get_service_name() == "VOID"
+        a__ self.client.root.get_service_name() == "VOID"
         t = rpyc.BgServingThread(self.client)
-        assert self.server.root.get_service_name() == "VOID"
+        a__ self.server.root.get_service_name() == "VOID"
         t.stop()
 
 

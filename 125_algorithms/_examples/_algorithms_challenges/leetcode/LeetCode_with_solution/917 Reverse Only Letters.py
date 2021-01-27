@@ -47,4 +47,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().reverseOnlyLetters("Test1ng-Leet=code-Q!") == "Qedo1ct-eeLg=ntse-T!"
+    a__ Solution().reverseOnlyLetters("Test1ng-Leet=code-Q!") == "Qedo1ct-eeLg=ntse-T!"

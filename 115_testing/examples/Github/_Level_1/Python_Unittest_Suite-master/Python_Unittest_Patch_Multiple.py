@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -25,8 +25,8 @@ other = object()
 @patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
 
     def test_function(thing, other):
-        assert isinstance(thing, MagicMock)
-        assert isinstance(other, MagicMock)
+        a__ isinstance(thing, MagicMock)
+        a__ isinstance(other, MagicMock)
 
 test_function()
  
@@ -38,10 +38,10 @@ test_function()
 @patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
 
 def test_function(mock_exit, other, thing):
-        assert 'other' in repr(other)
-        assert 'thing' in repr(thing)
+        a__ 'other' in repr(other)
+        a__ 'thing' in repr(thing)
 
-        assert 'exit' in repr(mock_exit)
+        a__ 'exit' in repr(mock_exit)
 
 test_function()
 
@@ -50,8 +50,8 @@ test_function()
 # 
 
 with patch.multiple('__main__', thing=DEFAULT, other=DEFAULT) as values:
-        assert 'other' in repr(values['other'])
-        assert 'thing' in repr(values['thing'])
+        a__ 'other' in repr(values['other'])
+        a__ 'thing' in repr(values['thing'])
 
-        assert values['thing'] is thing
-        assert values['other'] is other
+        a__ values['thing'] is thing
+        a__ values['other'] is other

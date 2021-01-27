@@ -12,7 +12,7 @@ def my_teardown_function():
 
 @with_setup(my_setup_function, my_teardown_function)
 def test_numbers_3_4():
-    assert multiply(3, 4) == 12
+    a__ multiply(3, 4) == 12
 
 
 test_numbers_3_4.setup = my_setup_function

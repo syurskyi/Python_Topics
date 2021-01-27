@@ -84,13 +84,13 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().cherryPickup(
+    a__ Solution().cherryPickup(
         [[0, 1, -1],
          [1, 0, -1],
          [1, 1,  1]]
     ) == 5
 
-    assert Solution().cherryPickup(
+    a__ Solution().cherryPickup(
         [[1, 1, -1],
          [1, -1, 1],
          [-1, 1, 1]]

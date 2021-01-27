@@ -114,4 +114,4 @@ class Solution:
 
 
 if __name__=="__main__":
-    assert Solution().solveNQueens(4)==[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]
+    a__ Solution().solveNQueens(4)==[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]

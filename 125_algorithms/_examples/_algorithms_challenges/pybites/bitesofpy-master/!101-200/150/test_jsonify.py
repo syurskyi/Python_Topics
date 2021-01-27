@@ -11,13 +11,13 @@ def output():
 
 
 def test_return_type(output):
-    assert type(output) == str
+    a__ type(output) == str
 
 
 def test_extracted_data_is_correct(output):
     data = json.loads(output)
-    assert type(data) == list
-    assert len(data) == 10
+    a__ type(data) == list
+    a__ len(data) == 10
     for row in [{'id': '1', 'first_name': 'Junie', 'last_name': 'Kybert',
                  'email': 'jkybert0@army.mil'},
                 {'id': '2', 'first_name': 'Sid', 'last_name': 'Churching',
@@ -38,4 +38,4 @@ def test_extracted_data_is_correct(output):
                  'Berwick', 'email': 'aberwick8@symantec.com'},
                 {'id': '10', 'first_name': 'Wyn', 'last_name': 'Serginson',
                  'email': 'wserginson9@naver.com'}]:
-        assert row in data, f'{row} not in output of convert_to_json'
+        a__ row in data, f'{row} not in output of convert_to_json'

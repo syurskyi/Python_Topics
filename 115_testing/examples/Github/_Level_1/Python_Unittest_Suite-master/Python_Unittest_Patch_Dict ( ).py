@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -36,9 +36,9 @@
 foo = {}
 
 with patch.dict(foo, {'newkey': 'newvalue'}):
-        assert foo == {'newkey': 'newvalue'}
+        a__ foo == {'newkey': 'newvalue'}
 
-assert foo == {}
+a__ foo == {}
  
 
 import os
@@ -49,7 +49,7 @@ with patch.dict('os.environ', {'newkey': 'newvalue'}):
 
 # OUTPUT: 'newvalue'
 
-assert 'newkey' not in os.environ
+a__ 'newkey' not in os.environ
 
 # 
 # Keywords can be used in the patch.dict() call to set values in the dictionary:
@@ -66,7 +66,7 @@ with patch.dict('sys.modules', mymodule=mymodule):
 # OUTPUT: 'fish'
  
 #
-# patch.dict() can be used with dictionary like objects that aren’t actually dictionaries.
+# patch.dict() can be used with dictionary like objects that arenï¿½t actually dictionaries.
 # At the very minimum they must support item getting, setting, deleting and either iteration or membership test.
 # This corresponds to the magic methods __getitem__(), __setitem__(), __delitem__() and either __iter__() or __contains__().
 # 
@@ -91,9 +91,9 @@ thing = Container()
 thing['one'] = 1
 
 with patch.dict(thing, one=2, two=3):
-        assert thing['one'] == 2
+        a__ thing['one'] == 2
 
-       assert thing['two'] == 3
+       a__ thing['two'] == 3
 
-assert thing['one'] == 1
-assert list(thing) == ['one']
+a__ thing['one'] == 1
+a__ list(thing) == ['one']

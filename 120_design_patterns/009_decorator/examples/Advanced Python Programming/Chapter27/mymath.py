@@ -15,7 +15,7 @@ def memoize(fn):
 @memoize 
 def number_sum(n): 
     '''Returns the sum of the first n numbers''' 
-    assert(n >= 0), 'n must be >= 0' 
+    a__(n >= 0), 'n must be >= 0'
     if n == 0:
         return 0
     else:
@@ -24,7 +24,7 @@ def number_sum(n):
 @memoize 
 def fibonacci(n): 
     '''Returns the suite of Fibonacci numbers''' 
-    assert(n >= 0), 'n must be >= 0'
+    a__(n >= 0), 'n must be >= 0'
     if n in (0, 1):
         return n
     else:

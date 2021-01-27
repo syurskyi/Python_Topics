@@ -26,56 +26,56 @@ def child():
 
 
 def test_string_repr_person(person):
-    assert str(person) == 'I am a person'
+    a__ str(person) == 'I am a person'
 
 
 def test_string_repr_dad(dad):
-    assert str(dad) == 'I am a person and cool daddy'
+    a__ str(dad) == 'I am a person and cool daddy'
 
 
 def test_string_repr_mom(mom):
-    assert str(mom) == 'I am a person and awesome mom'
+    a__ str(mom) == 'I am a person and awesome mom'
 
 
 def test_string_repr_child(child):
-    assert str(child) == 'I am the coolest kid'
+    a__ str(child) == 'I am the coolest kid'
 
 
 def test_mro_of_person():
-    assert Person.__mro__ == (Person, object)
+    a__ Person.__mro__ == (Person, object)
 
 
 def test_mro_of_dad():
-    assert Father.__mro__ == (Father, Person, object)
+    a__ Father.__mro__ == (Father, Person, object)
 
 
 def test_mro_of_mom():
-    assert Mother.__mro__ == (Mother, Person, object)
+    a__ Mother.__mro__ == (Mother, Person, object)
 
 
 def test_mro_of_child():
-    assert Child.__mro__ == (Child, Father, Mother, Person, object)
+    a__ Child.__mro__ == (Child, Father, Mother, Person, object)
 
 
 def test_subclass_person():
-    assert issubclass(Person, object)
+    a__ issubclass(Person, object)
 
 
 def test_subclass_dad():
-    assert issubclass(Father, Person)
-    assert issubclass(Father, object)
+    a__ issubclass(Father, Person)
+    a__ issubclass(Father, object)
 
 
 def test_subclass_mom():
-    assert issubclass(Mother, Person)
-    assert issubclass(Mother, object)
+    a__ issubclass(Mother, Person)
+    a__ issubclass(Mother, object)
 
 
 def test_subclass_child():
-    assert issubclass(Child, Father)
-    assert issubclass(Child, Mother)
-    assert issubclass(Child, Person)
-    assert issubclass(Child, object)
+    a__ issubclass(Child, Father)
+    a__ issubclass(Child, Mother)
+    a__ issubclass(Child, Person)
+    a__ issubclass(Child, object)
 
 
 def test_use_inheritance():
@@ -84,4 +84,4 @@ def test_use_inheritance():
     substr = 'I am a person'
     for src in (inspect.getsource(Father),
                 inspect.getsource(Mother)):
-        assert substr not in src
+        a__ substr not in src

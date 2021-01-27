@@ -3,7 +3,7 @@
 # ____ n__.t.. ______ with_setup raises
 # ____ myfunc ______ add
 #
-# # test with assert
+# # test with a__
 # ___ test_add_nums
 #   actual _ a.. 1 10
 #   a.. a.. __ 11

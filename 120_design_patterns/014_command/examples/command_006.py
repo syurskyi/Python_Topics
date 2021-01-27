@@ -36,9 +36,9 @@ def main():
     ]
 
     # Verify that none of the target files exist
-    assert not lexists("foo.txt")
-    assert not lexists("bar.txt")
-    assert not lexists("baz.txt")
+    a__ not lexists("foo.txt")
+    a__ not lexists("bar.txt")
+    a__ not lexists("baz.txt")
 
     # Create empty file
     open("foo.txt", "w").close()

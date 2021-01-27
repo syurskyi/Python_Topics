@@ -41,7 +41,7 @@ c_ DoublyLinkedList:
                 newNode.next = head
                 head.prev = newNode
                 head = newNode
-            elif location __ 1:
+            ____ location __ 1:
                 newNode.next = N..
                 newNode.prev = tail
                 tail.next = newNode
@@ -101,7 +101,7 @@ c_ DoublyLinkedList:
                 ____
                     head = head.next
                     head.prev = N..
-            elif location __ 1:
+            ____ location __ 1:
                 __ head __ tail:
                     head = N..
                     tail = N..

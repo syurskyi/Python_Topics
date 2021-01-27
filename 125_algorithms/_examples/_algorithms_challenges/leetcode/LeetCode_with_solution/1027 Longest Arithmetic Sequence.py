@@ -55,4 +55,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().longestArithSeqLength([20,1,15,3,10,5,8]) == 4
+    a__ Solution().longestArithSeqLength([20,1,15,3,10,5,8]) == 4

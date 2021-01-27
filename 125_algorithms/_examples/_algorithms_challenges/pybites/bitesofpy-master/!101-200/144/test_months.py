@@ -4,31 +4,31 @@ from months import calc_months_passed
 
 
 def test_same_date():
-    assert calc_months_passed(2018, 11, 1) == 0
+    a__ calc_months_passed(2018, 11, 1) == 0
 
 
 def test_nine_days_later():
-    assert calc_months_passed(2018, 11, 10) == 0
+    a__ calc_months_passed(2018, 11, 10) == 0
 
 
 def test_ten_days_later():
-    assert calc_months_passed(2018, 11, 11) == 1
+    a__ calc_months_passed(2018, 11, 11) == 1
 
 
 def test_one_month_and_nine_days_later():
-    assert calc_months_passed(2018, 12, 10) == 1
+    a__ calc_months_passed(2018, 12, 10) == 1
 
 
 def test_one_month_and_ten_day_later():
-    assert calc_months_passed(2018, 12, 11) == 2
+    a__ calc_months_passed(2018, 12, 11) == 2
 
 
 def test_one_year_one_month_and_nine_days_later():
-    assert calc_months_passed(2019, 12, 10) == 13
+    a__ calc_months_passed(2019, 12, 10) == 13
 
 
 def test_one_year_one_month_and_ten_days_later():
-    assert calc_months_passed(2019, 12, 11) == 14
+    a__ calc_months_passed(2019, 12, 11) == 14
 
 
 def test_non_int_input_args():

@@ -98,6 +98,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().isInterleave("aa", "ab", "abaa") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") == False
+    a__ Solution().isInterleave("aa", "ab", "abaa") == True
+    a__ Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") == True
+    a__ Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") == False

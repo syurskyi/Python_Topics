@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -24,7 +24,7 @@
 # 
 
 #
-# After the MagicMock has been used we can use attributes like call_args_list to assert about how the dictionary was used:
+# After the MagicMock has been used we can use attributes like call_args_list to a__ about how the dictionary was used:
 # 
 
 my_dict = {'a': 1, 'b': 2, 'c': 3}
@@ -63,7 +63,7 @@ mock.__setitem__.side_effect = setitem
  
 #
 # With these side effect functions in place, the mock will behave like a normal dictionary but recording the access.
-# It even raises a KeyError if you try to access a key that doesn’t exist.
+# It even raises a KeyError if you try to access a key that doesnï¿½t exist.
 # 
 
 mock['a']

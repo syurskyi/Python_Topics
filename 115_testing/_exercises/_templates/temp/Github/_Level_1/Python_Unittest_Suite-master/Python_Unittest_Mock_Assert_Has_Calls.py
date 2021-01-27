@@ -15,7 +15,7 @@
 
 #
 # assert_has_calls(calls, any_order=False). 
-# assert the mock has been called with the specified calls. The mock_calls list is checked for the calls.
+# a__ the mock has been called with the specified calls. The mock_calls list is checked for the calls.
 # If any_order is false (the default) then the calls must be sequential. There can be extra calls before or after the specified calls.
 # If any_order is true then the calls can be in any order, but they must all appear in mock_calls.
 # 

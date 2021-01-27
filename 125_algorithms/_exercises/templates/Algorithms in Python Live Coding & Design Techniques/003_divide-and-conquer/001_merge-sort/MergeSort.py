@@ -13,17 +13,17 @@ ___ merge(arr, l, m, u
     left = [0] * n1
     right = [0] * n2
 
-    ___ x __ range(0, n1
+    ___ x __ ra__(0, n1
         left[x] = arr[l + x]
 
-    ___ y __ range(0, n2
+    ___ y __ ra__(0, n2
         right[y] = arr[m + 1 + y]
 
     i = 0
     j = 0
     k = l
 
-    w__ i < n1 and j < n2:
+    w__ i < n1 a__ j < n2:
         __ left[i] < right[j]:
             arr[k] = left[i]
             i += 1
@@ -48,5 +48,5 @@ n = le_(arr)
 
 merge_sort(arr, 0, n - 1)
 
-___ i __ range(n
+___ i __ ra__(n
     print ("%d" % arr[i])

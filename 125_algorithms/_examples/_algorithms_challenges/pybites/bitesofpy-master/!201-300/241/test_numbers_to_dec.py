@@ -8,7 +8,7 @@ from numbers_to_dec import list_to_decimal
     ([1, 0, 2], 102)
 ])
 def test_numbers_to_dec(good_seq, expected_result):
-    assert list_to_decimal(good_seq) == expected_result
+    a__ list_to_decimal(good_seq) == expected_result
 
 
 @pytest.mark.parametrize("bad_seq", [

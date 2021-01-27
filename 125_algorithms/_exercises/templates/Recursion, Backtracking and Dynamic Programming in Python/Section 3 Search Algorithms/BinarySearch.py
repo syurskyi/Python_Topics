@@ -14,13 +14,13 @@ ___ binary_search(container, item, left, right
 
     # have to check whether the middle_item is smaller or greater
     # the item is in the left sub-array
-    elif container[middle_index] > item:
+    ____ container[middle_index] > item:
         print('Checking items on the left...')
         # we can discard the right side of the array (items greater than the middle item)
         r_ binary_search(container, item, left, middle_index-1)
 
     # the item is in the right sub-array
-    elif container[middle_index] < item:
+    ____ container[middle_index] < item:
         print('Checking items on the right...')
         r_ binary_search(container, item, middle_index+1, right)
 

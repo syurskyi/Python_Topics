@@ -3,10 +3,10 @@
 # exactly as shown.
 #
 #  There are several common ways to use doctest:
-# > To check that a module’s docstrings are up-to-date by verifying that all interactive examples still work as documented.
+# > To check that a moduleï¿½s docstrings are up-to-date by verifying that all interactive examples still work as documented.
 # > To perform regression testing by verifying that interactive examples from a test file or a test object work as expected.
 # > To write tutorial documentation for a package, liberally illustrated with input-output examples.
-#   Depending on whether the examples or the expository text are emphasized, this has the flavor of “literate testing” or “executable documentation”.
+#   Depending on whether the examples or the expository text are emphasized, this has the flavor of ï¿½literate testingï¿½ or ï¿½executable documentationï¿½.
 #
 
 #
@@ -14,7 +14,7 @@
 #
 
 # 
-# In most cases a copy-and-paste of an interactive console session works fine, but doctest isn’t trying to do an exact emulation of any specific Python
+# In most cases a copy-and-paste of an interactive console session works fine, but doctest isnï¿½t trying to do an exact emulation of any specific Python
 # shell.
 # 
 
@@ -62,10 +62,10 @@ print(f.__doc__)
 # 
 
 #
-# The starting column doesn’t matter:
+# The starting column doesnï¿½t matter:
 # 
 
-assert "Easy!"
+a__ "Easy!"
 
 import math
 

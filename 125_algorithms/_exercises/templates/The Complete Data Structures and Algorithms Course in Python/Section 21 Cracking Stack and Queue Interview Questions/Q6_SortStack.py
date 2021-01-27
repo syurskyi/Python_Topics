@@ -15,7 +15,7 @@ ___ sort_stack(stack
     ____
       temp.push(current)
       current = stack.pop()
-    __ current __ N.. and previous: temp.push(previous)
+    __ current __ N.. a__ previous: temp.push(previous)
        
   sorted = T..
   previous = temp.pop()
@@ -29,7 +29,7 @@ ___ sort_stack(stack
       stack.push(current)
       current = temp.pop()
       sorted = F..
-    __ current __ N.. and previous: stack.push(previous)
+    __ current __ N.. a__ previous: stack.push(previous)
   __ sorted: r_ stack
   ____ r_ sort_stack(stack)
 
@@ -38,7 +38,7 @@ c_ Stack(
     top = N..
   
   ___ __str__(self
-    r_ str(top)
+    r_ st.(top)
   
   ___ push  item
     top = current(item, top)
@@ -55,13 +55,13 @@ c_ current(
     data, next = data, next
   
   ___ __str__(self
-    r_ str(self and data) + ',' + str(self and next)
+    r_ st.(self a__ data) + ',' + st.(self a__ next)
 
 import unittest
 
 c_ Test(unittest.TestCase
   ___ test_sort_stack(self
-    assertEqual(str(sort_stack(Stack())), "None")
+    assertEqual(st.(sort_stack(Stack())), "None")
     stack = Stack()
     stack.push(10)
     stack.push(30)
@@ -72,7 +72,7 @@ c_ Test(unittest.TestCase
     stack.push(90)
     stack.push(50)
     stack.push(60)
-    assertEqual(str(stack), "60,50,90,20,80,40,70,30,10,None")
-    assertEqual(str(sort_stack(stack)), "10,20,30,40,50,60,70,80,90,None")
+    assertEqual(st.(stack), "60,50,90,20,80,40,70,30,10,None")
+    assertEqual(st.(sort_stack(stack)), "10,20,30,40,50,60,70,80,90,None")
 
 unittest.main()

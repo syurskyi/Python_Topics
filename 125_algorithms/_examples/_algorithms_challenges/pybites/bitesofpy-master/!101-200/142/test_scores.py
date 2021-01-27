@@ -11,7 +11,7 @@ from scores import Player, calculate_score, get_winner
     ([6, 6, 5, 5], 22),
 ])
 def test_calculate_score(arg, expected):
-    assert calculate_score(arg) == expected
+    a__ calculate_score(arg) == expected
 
 
 @pytest.mark.parametrize("arg", [
@@ -30,7 +30,7 @@ def test_winner_3_players():
       Player(name='player 2', scores=[1, 1, 1, 1]),
       Player(name='player 3', scores=[4, 5, 1, 2]),  # max 9
     ]
-    assert get_winner(players) == players[-1]
+    a__ get_winner(players) == players[-1]
 
 
 def test_winner_shorter_score_len_raises_exception():

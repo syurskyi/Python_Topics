@@ -18,7 +18,7 @@ class PhoneBookTest(unittest.TestCase):
     def test_lookup_by_name(self): # Test case name
         self.phonebook.add("Bob", "12345") # Arrange
         number = self.phonebook.lookup("Bob") # Act
-        self.assertEqual("12345", number) # Assert
+        self.assertEqual("12345", number) # a__
 
     def test_missing_name(self):
         with self.assertRaises(KeyError):
@@ -58,5 +58,5 @@ class PhoneBookTest(unittest.TestCase):
 
     def test_phonebook_adds_names_and_numbers(self):
         self.phonebook.add("Sue", "123343") # Act
-        self.assertIn("Sue", self.phonebook.get_names()) # Assert made on the same Act
-        self.assertIn("123343", self.phonebook.get_numbers()) # Assert made on the same Act
+        self.assertIn("Sue", self.phonebook.get_names()) # a__ made on the same Act
+        self.assertIn("123343", self.phonebook.get_numbers()) # a__ made on the same Act

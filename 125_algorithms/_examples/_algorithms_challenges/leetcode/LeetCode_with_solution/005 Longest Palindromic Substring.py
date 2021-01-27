@@ -107,4 +107,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().longestPalindrome("dfaaabbbaaac") == "aaabbbaaa"
+    a__ Solution().longestPalindrome("dfaaabbbaaac") == "aaabbbaaa"

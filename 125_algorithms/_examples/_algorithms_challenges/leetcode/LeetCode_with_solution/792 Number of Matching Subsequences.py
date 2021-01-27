@@ -66,4 +66,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) == 3
+    a__ Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) == 3

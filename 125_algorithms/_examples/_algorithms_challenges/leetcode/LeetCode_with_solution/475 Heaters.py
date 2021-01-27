@@ -65,4 +65,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findRadius([1,2,3,4], [1,4]) == 1
+    a__ Solution().findRadius([1,2,3,4], [1,4]) == 1

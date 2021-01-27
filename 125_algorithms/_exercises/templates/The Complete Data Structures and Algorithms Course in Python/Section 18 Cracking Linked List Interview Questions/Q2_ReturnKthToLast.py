@@ -7,7 +7,7 @@ ___ nthToLast(ll, n
     pointer1 = ll.head
     pointer2 = ll.head
 
-    ___ i __ range(n
+    ___ i __ ra__(n
         __ pointer2 __ N..:
             r_ N..
         pointer2 = pointer2.next

@@ -54,4 +54,4 @@ class Solution(object):
 
 if __name__ == "__main__":
     digits = [9]
-    assert Solution().plusOne(digits) == [1, 0]
+    a__ Solution().plusOne(digits) == [1, 0]

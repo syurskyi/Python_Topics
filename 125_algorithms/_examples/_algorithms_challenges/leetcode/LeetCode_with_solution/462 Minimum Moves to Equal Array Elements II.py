@@ -81,5 +81,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().minMoves2([1,2,3]) == 2
-    assert Solution().minMoves2([1,0,0,8,6]) == 14
+    a__ Solution().minMoves2([1,2,3]) == 2
+    a__ Solution().minMoves2([1,0,0,8,6]) == 14

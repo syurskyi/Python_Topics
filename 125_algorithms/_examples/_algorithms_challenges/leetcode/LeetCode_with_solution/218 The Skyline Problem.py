@@ -42,7 +42,7 @@ class Building(object):
 
     def __cmp__(self, other):
         # Reverse order by height to get max-heap
-        assert isinstance(other, Building)
+        a__ isinstance(other, Building)
         return other.h - self.h
 
 # An event represents the buildings that start and end at a particular
@@ -94,5 +94,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) == \
+    a__ Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) == \
            [[2, 10], [3, 15], [7, 12], [12, 0], [15, 10], [20, 8], [24, 0]]

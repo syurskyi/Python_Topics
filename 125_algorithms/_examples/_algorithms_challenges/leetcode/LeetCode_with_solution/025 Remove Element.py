@@ -53,4 +53,4 @@ if __name__=="__main__":
     A = [1, 3, 4, 2, 5, 4]
     elem = 4
     solution = Solution()
-    assert solution.removeElement(A, elem)==solution.removeElement_negative_index(A, elem)
+    a__ solution.removeElement(A, elem)==solution.removeElement_negative_index(A, elem)

@@ -53,5 +53,5 @@ def actual():
 
 @pytest.mark.parametrize("income, countries", EXPECTED.items())
 def test_return_function(actual, income, countries):
-    assert income in actual
-    assert sorted(actual[income]) == sorted(countries)
+    a__ income in actual
+    a__ sorted(actual[income]) == sorted(countries)

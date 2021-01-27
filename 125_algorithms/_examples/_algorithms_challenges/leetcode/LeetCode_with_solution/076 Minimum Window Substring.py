@@ -61,4 +61,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().minWindow("ADOBECODEBANC", "ABC") == "BANC"
+    a__ Solution().minWindow("ADOBECODEBANC", "ABC") == "BANC"

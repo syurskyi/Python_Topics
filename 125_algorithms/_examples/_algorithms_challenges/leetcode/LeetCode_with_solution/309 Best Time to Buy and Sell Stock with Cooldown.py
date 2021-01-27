@@ -54,4 +54,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().maxProfit([1, 2, 3, 0, 2]) == 3
+    a__ Solution().maxProfit([1, 2, 3, 0, 2]) == 3

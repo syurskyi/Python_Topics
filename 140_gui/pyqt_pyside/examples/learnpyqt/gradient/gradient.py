@@ -89,7 +89,7 @@ class Gradient(QtWidgets.QWidget):
         ]
 
     def setGradient(self, gradient):
-        assert all([0.0 <= stop <= 1.0 for stop, _ in gradient])
+        a__ all([0.0 <= stop <= 1.0 for stop, _ in gradient])
         self._gradient = gradient
         self._constrain_gradient()
         self._sort_gradient()
@@ -105,7 +105,7 @@ class Gradient(QtWidgets.QWidget):
     def addStop(self, stop, color=None):
         # Stop is a value 0...1, find the point to insert this stop
         # in the list.
-        assert 0.0 <= stop <= 1.0
+        a__ 0.0 <= stop <= 1.0
 
         for n, g in enumerate(self._gradient):
             if g[0] > stop:

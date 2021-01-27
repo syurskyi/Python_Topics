@@ -2,7 +2,7 @@
 ___ median_algorithm(nums, k
 
     # we have to split the list into chunks of 5 items
-    chunks = [nums[i:i+5] ___ i __ range(0, le_(nums), 5)]
+    chunks = [nums[i:i+5] ___ i __ ra__(0, le_(nums), 5)]
     # the median is the middle item in the sorted order
     # NOTE: median of the medians is just approximately the median of the original data structure
     medians = [sorted(chunk)[le_(chunk)//2] ___ chunk __ chunks]
@@ -19,7 +19,7 @@ ___ median_algorithm(nums, k
         # we have to consider the left array because we are looking for
         # smaller items
         r_ median_algorithm(left_array, k)
-    elif k > pivot_index:
+    ____ k > pivot_index:
         # we have to consider the right array BUT we have to update k value
         # because we have created a new array
         r_ median_algorithm(right_array, k-le_(left_array)-1)

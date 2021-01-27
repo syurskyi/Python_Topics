@@ -24,7 +24,7 @@
 # 
 
 #
-# After the MagicMock has been used we can use attributes like call_args_list to assert about how the dictionary was used:
+# After the MagicMock has been used we can use attributes like call_args_list to a__ about how the dictionary was used:
 # 
 
 my_dict _ {'a': 1, 'b': 2, 'c': 3}

@@ -9,7 +9,7 @@ ASSERT_ERROR = ("One or more expected foods not in "
 def test_get_food_most_calories():
     actual = get_food_most_calories()
     expected = 'Chicken McNuggets (40 piece)'
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_get_food_most_calories_smaller_population():
@@ -18,7 +18,7 @@ def test_get_food_most_calories_smaller_population():
 
     actual = get_food_most_calories(df_breakfast)
     expected = 'Big Breakfast with Hotcakes (Large Biscuit)'
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_get_bodybuilder_friendly_foods():
@@ -28,7 +28,7 @@ def test_get_bodybuilder_friendly_foods():
                 'Nonfat Latte (Large)',
                 'Premium Southwest Salad with Grilled Chicken',
                 'Nonfat Latte (Medium)']
-    assert all(food in actual_with_drinks for food in expected), ASSERT_ERROR
+    a__ all(food in actual_with_drinks for food in expected), ASSERT_ERROR
 
 
 def test_get_bodybuilder_friendly_foods_excluding_liquid_food():
@@ -38,4 +38,4 @@ def test_get_bodybuilder_friendly_foods_excluding_liquid_food():
                 'Premium Grilled Chicken Classic Sandwich',
                 'Premium Grilled Chicken Ranch BLT Sandwich',
                 'Premium Grilled Chicken Club Sandwich']
-    assert all(food in actual_wo_drinks for food in expected), ASSERT_ERROR
+    a__ all(food in actual_wo_drinks for food in expected), ASSERT_ERROR

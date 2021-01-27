@@ -21,7 +21,7 @@ c_ Stack:
         LinkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x.value) ___ x __ LinkedList]
+        values = [st.(x.value) ___ x __ LinkedList]
         r_ '\n'.j..(values)
     
     ___ isEmpty(self

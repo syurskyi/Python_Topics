@@ -15,18 +15,18 @@ class TestUserModel:
 
     def test_constructor(self):
         user = User('e@example.com', 't1', 't2')
-        assert user.first_name == 't1'
-        assert user.last_name == 't2'
-        assert user.email == 'e@example.com'
+        a__ user.first_name == 't1'
+        a__ user.last_name == 't2'
+        a__ user.email == 'e@example.com'
 
     def test_str(self, user):
         pattern = 'User: <{id}: {name}>'
-        assert str(user) == pattern.format(id=user.id,
+        a__ str(user) == pattern.format(id=user.id,
                                            name=user.get_full_name())
 
     def test_full_name(self, user):
         pattern = '{} {}'
-        assert user.get_full_name() == \
+        a__ user.get_full_name() == \
                pattern.format(user.first_name, user.last_name)
 
 

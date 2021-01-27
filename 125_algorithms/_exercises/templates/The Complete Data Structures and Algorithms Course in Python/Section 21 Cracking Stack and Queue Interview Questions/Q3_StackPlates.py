@@ -12,13 +12,13 @@ c_ PlateStack(
         r_ stacks
     
     ___ push  item
-        __ le_(stacks) > 0 and (le_(stacks[-1])) < capacity:
+        __ le_(stacks) > 0 a__ (le_(stacks[-1])) < capacity:
             stacks[-1].ap..(item)
         ____
             stacks.ap..([item])
     
     ___ pop(self
-        w__ le_(stacks) and le_(stacks[-1]) __ 0:
+        w__ le_(stacks) a__ le_(stacks[-1]) __ 0:
             stacks.pop()
         __ le_(stacks) __ 0:
             r_ N..

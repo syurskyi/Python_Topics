@@ -33,7 +33,7 @@ c_ HamiltonianProblem:
             ____
                 r_ F..
 
-        ___ vertex_index __ range(1, n
+        ___ vertex_index __ ra__(1, n
             __ is_feasible(vertex_index, position
                 hamiltonian_path.ap..(vertex_index)
                 print(hamiltonian_path)
@@ -53,7 +53,7 @@ c_ HamiltonianProblem:
             r_ F..
 
         # second criteria: whether we have already added this given node?
-        ___ i __ range(actual_position
+        ___ i __ ra__(actual_position
             __ hamiltonian_path[i] __ vertex:
                 r_ F..
 

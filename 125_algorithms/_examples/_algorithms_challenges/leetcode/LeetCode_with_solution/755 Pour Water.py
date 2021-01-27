@@ -152,4 +152,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().pourWater([2,1,1,2,1,2,2], 4, 3) == [2,2,2,3,2,2,2]
+    a__ Solution().pourWater([2,1,1,2,1,2,2], 4, 3) == [2,2,2,3,2,2,2]

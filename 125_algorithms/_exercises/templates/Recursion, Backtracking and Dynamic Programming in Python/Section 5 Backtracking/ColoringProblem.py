@@ -5,7 +5,7 @@ c_ ColoringProblem:
         n = le_(adjacency_matrix)
         adjacency_matrix = adjacency_matrix
         num_colors = num_colors
-        colors = [0 ___ _ __ range(n)]
+        colors = [0 ___ _ __ ra__(n)]
 
     ___ coloring_problem(self
 
@@ -21,7 +21,7 @@ c_ ColoringProblem:
             r_ T..
 
         # consider the colors
-        ___ color_index __ range(1, num_colors+1
+        ___ color_index __ ra__(1, num_colors+1
             __ is_color_valid(node_index, color_index
                 colors[node_index] = color_index
 
@@ -38,14 +38,14 @@ c_ ColoringProblem:
         # we have to check that the nodes are connected
         # AND we have to check that the given color is not shared
         # with these adjacent nodes
-        ___ i __ range(n
-            __ adjacency_matrix[node_index][i] __ 1 and color_index __ colors[i]:
+        ___ i __ ra__(n
+            __ adjacency_matrix[node_index][i] __ 1 a__ color_index __ colors[i]:
                 r_ F..
 
         r_ T..
 
     ___ show_result(self
-        ___ v, c __ zip(range(n), colors
+        ___ v, c __ zip(ra__(n), colors
             print('Node %d has color value %d' % (v, c))
 
 

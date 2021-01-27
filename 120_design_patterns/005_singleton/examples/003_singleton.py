@@ -31,7 +31,7 @@ class MyClass(metaclass=Singleton):
 def main():
     m1 = MyClass()
     m2 = MyClass()
-    assert m1 is m2
+    a__ m1 is m2
 
 
 if __name__ == "__main__":

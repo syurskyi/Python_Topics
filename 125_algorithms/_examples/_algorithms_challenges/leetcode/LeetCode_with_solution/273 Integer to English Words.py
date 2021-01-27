@@ -88,5 +88,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().numberToWords(1234567891) == "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
+    a__ Solution().numberToWords(1234567891) == "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
                                                    "Seven Thousand Eight Hundred Ninety One"

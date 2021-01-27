@@ -5,9 +5,9 @@ c_ HuffmanNode:
         left = left;
         right = right;
 
-global charBinaryMapping, str
+global charBinaryMapping, st.
 charBinaryMapping = {}
-str = 'ABBCCCCGGGGDEAAAEDBBBDFAGG'
+st. = 'ABBCCCCGGGGDEAAAEDBBBDFAGG'
 
 
 ___ generate_tree(mapping
@@ -30,23 +30,23 @@ ___ generate_tree(mapping
     r_ priorityQ.pop();
 
 
-___ set_binary_code(node, str
+___ set_binary_code(node, st.
     __ not node __ N..:
-        __ node.left __ N.. and node.right __ N..:
-            charBinaryMapping[node.data] = str
+        __ node.left __ N.. a__ node.right __ N..:
+            charBinaryMapping[node.data] = st.
 
-        str += '0'
-        set_binary_code(node.left, str)
-        str = str[:-1]
+        st. += '0'
+        set_binary_code(node.left, st.)
+        st. = st.[:-1]
 
-        str += '1'
-        set_binary_code(node.right, str)
-        str = str[:-1]
+        st. += '1'
+        set_binary_code(node.right, st.)
+        st. = st.[:-1]
 
 
-___ encode(str
+___ encode(st.
     mapping = {}
-    ___ c __ str:
+    ___ c __ st.:
         __ not c __ mapping:
             mapping[c] = 1
         ____
@@ -63,10 +63,10 @@ ___ encode(str
         print(' %-4r |%12s' % (char, charBinaryMapping[char]))
 
     s = ''
-    ___ c __ str:
+    ___ c __ st.:
         s += charBinaryMapping[c]
     r_ s
 
 
-code = encode(str)
+code = encode(st.)
 print(code)

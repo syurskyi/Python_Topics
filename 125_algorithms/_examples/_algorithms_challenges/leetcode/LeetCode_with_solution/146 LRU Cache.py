@@ -75,7 +75,7 @@ class LRUCache(object):
         if not pre:
             return
         elif not nxt:
-            assert self.tail == cur
+            a__ self.tail == cur
             self._pop()
         else:
             pre.next, nxt.pre = nxt, pre

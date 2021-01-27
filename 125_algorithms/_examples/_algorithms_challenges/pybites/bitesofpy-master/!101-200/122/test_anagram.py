@@ -23,7 +23,7 @@ from anagram import is_anagram
     ("Madam Curie", "Radium came"),
 ])
 def test_is_anagram(word1, word2):
-    assert is_anagram(word1, word2)
+    a__ is_anagram(word1, word2)
 
 
 @pytest.mark.parametrize("word1, word2", [
@@ -38,4 +38,4 @@ def test_is_anagram(word1, word2):
     ("Madam Curie", "Radium come"),
 ])
 def test_is_not_anagram(word1, word2):
-    assert not is_anagram(word1, word2)
+    a__ not is_anagram(word1, word2)

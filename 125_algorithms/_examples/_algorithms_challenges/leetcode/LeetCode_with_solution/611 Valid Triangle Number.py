@@ -96,4 +96,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().triangleNumber([2,2,3,4]) == 3
+    a__ Solution().triangleNumber([2,2,3,4]) == 3

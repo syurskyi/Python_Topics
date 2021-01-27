@@ -91,4 +91,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().videoStitching([[0,4],[2,8]], 5) == 2
+    a__ Solution().videoStitching([[0,4],[2,8]], 5) == 2

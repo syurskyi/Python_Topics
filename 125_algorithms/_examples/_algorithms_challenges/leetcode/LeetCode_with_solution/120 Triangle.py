@@ -33,7 +33,7 @@ class Solution:
             for col in xrange(len(triangle[row])):
                 dp[0].append(triangle[row][col]+min(dp[1][col], dp[1][col+1]))  # next level
 
-        assert len(dp[0])==1
+        a__ len(dp[0])==1
 
         return dp[0][0]
 

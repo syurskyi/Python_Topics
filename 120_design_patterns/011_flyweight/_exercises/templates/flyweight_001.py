@@ -104,18 +104,18 @@
 #     cm2 _ Card2('10', 'h', a_1)
 #     cm3 _ Card2('10', 'h', a_2)
 #
-#     assert (cm1 == cm2) !_ cm3
-#     assert (cm1 is cm2) is not cm3
-#     assert len(instances_pool) == 2
+#     a__ (cm1 == cm2) !_ cm3
+#     a__ (cm1 is cm2) is not cm3
+#     a__ len(instances_pool) == 2
 #
 #     del cm1
-#     assert len(instances_pool) == 2
+#     a__ len(instances_pool) == 2
 #
 #     del cm2
-#     assert len(instances_pool) == 1
+#     a__ len(instances_pool) == 1
 #
 #     del cm3
-#     assert len(instances_pool) == 0
+#     a__ len(instances_pool) == 0
 #
 # ### OUTPUT ###
 # # (<Card: 9h>, <Card: 9h>)

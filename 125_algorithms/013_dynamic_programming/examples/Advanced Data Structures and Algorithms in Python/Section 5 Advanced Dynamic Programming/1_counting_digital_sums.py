@@ -75,7 +75,7 @@ for tests in range(100):
     d = randint(1, 100)
     with_naive_dp = dp_naive(n, d)
     with_efficient_dp = dp_efficient(n, d)
-    assert with_naive_dp == with_efficient_dp, \
+    a__ with_naive_dp == with_efficient_dp, \
         'naive dp={}, efficient dp={},\nn={},\nd={}'.format(
             with_naive_dp,
             with_efficient_dp,

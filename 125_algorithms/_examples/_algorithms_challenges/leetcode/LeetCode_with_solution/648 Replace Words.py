@@ -90,4 +90,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery") == "the cat was rat by the bat"
+    a__ Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery") == "the cat was rat by the bat"

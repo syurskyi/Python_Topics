@@ -20,7 +20,7 @@ def test_win(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'rock'
     my_game.send('paper')
     output = capfd.readouterr()[0].strip()
-    assert output == win.format('paper', 'rock')
+    a__ output == win.format('paper', 'rock')
 
 
 @patch('rps._get_computer_move')
@@ -28,7 +28,7 @@ def test_loose(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'rock'
     my_game.send('scissors')
     output = capfd.readouterr()[0].strip()
-    assert output == lose.format('rock', 'scissors')
+    a__ output == lose.format('rock', 'scissors')
 
 
 @patch('rps._get_computer_move')
@@ -36,14 +36,14 @@ def test_tie(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'paper'
     my_game.send('paper')
     output = capfd.readouterr()[0].strip()
-    assert output == tie
+    a__ output == tie
 
 
 @patch('rps._get_computer_move')
 def test_invalid_choice(computerMoveMock, my_game, capfd):
     my_game.send('spam')
     output = capfd.readouterr()[0].strip()
-    assert 'Invalid' in output
+    a__ 'Invalid' in output
 
 
 @pytest.mark.parametrize("player1, player2, result", [
@@ -58,7 +58,7 @@ def test_invalid_choice(computerMoveMock, my_game, capfd):
     ('paper', 'paper', 'tie'),
 ])
 def test_get_winner(player1, player2, result):
-    assert result in _get_winner(player1, player2)
+    a__ result in _get_winner(player1, player2)
 
 
 def test_stop_iteration(my_game):

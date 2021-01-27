@@ -100,5 +100,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().sumSubarrayMins([71,55,82,55]) == 593
-    assert Solution().sumSubarrayMins([3,1,2,4]) == 17
+    a__ Solution().sumSubarrayMins([71,55,82,55]) == 593
+    a__ Solution().sumSubarrayMins([3,1,2,4]) == 17

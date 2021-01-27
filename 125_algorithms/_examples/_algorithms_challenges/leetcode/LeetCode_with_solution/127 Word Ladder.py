@@ -193,7 +193,7 @@ class Solution:
 
 
 if __name__=="__main__":
-    assert Solution().ladderLength("sand", "acne", set(
+    a__ Solution().ladderLength("sand", "acne", set(
         ["slit", "bunk", "wars", "ping", "viva", "wynn", "wows", "irks", "gang", "pool", "mock", "fort", "heel", "send",
          "ship", "cols", "alec", "foal", "nabs", "gaze", "giza", "mays", "dogs", "karo", "cums", "jedi", "webb", "lend",
          "mire", "jose", "catt", "grow", "toss", "magi", "leis", "bead", "kara", "hoof", "than", "ires", "baas", "vein",

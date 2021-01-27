@@ -61,6 +61,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().shortestPalindrome("abcd") == "dcbabcd"
+    a__ Solution().shortestPalindrome("abcd") == "dcbabcd"
 
 

@@ -61,4 +61,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().searchMatrix([[1], [3]], 3) == True
+    a__ Solution().searchMatrix([[1], [3]], 3) == True

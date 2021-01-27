@@ -47,7 +47,7 @@ class Solution:
                 elif prev_op == "*":
                     cur = stk.pop() * operand
                 else:
-                    assert prev_op == "/"
+                    a__ prev_op == "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                     cur = int(stk.pop() / operand)
 
@@ -86,4 +86,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().calculate("3+2*2") == 7
+    a__ Solution().calculate("3+2*2") == 7

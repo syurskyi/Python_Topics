@@ -156,4 +156,4 @@ class BaseApi(unittest.TestCase):
                     print 'message: ' + error.message  # a unicode string that lists the message.
                     print 'type: ' + str(error.type)  # an integer
                     print 'type_name: ' + error.type_name
-            assert False, "Test failed due to XSD validation error" # otherwise test is marked as passed even when schema failed validation
+            a__ False, "Test failed due to XSD validation error" # otherwise test is marked as passed even when schema failed validation

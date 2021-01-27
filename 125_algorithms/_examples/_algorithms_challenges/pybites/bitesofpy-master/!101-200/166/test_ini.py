@@ -332,6 +332,6 @@ def test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path):
 
     tip = ToxIniParser(f.resolve())
 
-    assert tip.number_of_sections == num_sections
-    assert sorted(tip.environments) == sorted(envs)
-    assert sorted(tip.base_python_versions) == sorted(base_pys)
+    a__ tip.number_of_sections == num_sections
+    a__ sorted(tip.environments) == sorted(envs)
+    a__ sorted(tip.base_python_versions) == sorted(base_pys)

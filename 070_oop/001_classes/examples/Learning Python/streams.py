@@ -11,4 +11,4 @@ class Processor:
             self.writer.write(data)
 
     def converter(self, data):
-        assert False, 'converter must be defined'       # Or raise exception
+        a__ False, 'converter must be defined'       # Or raise exception

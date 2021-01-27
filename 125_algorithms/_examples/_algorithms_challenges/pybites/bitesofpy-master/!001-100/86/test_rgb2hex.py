@@ -23,7 +23,7 @@ from rgb2hex import rgb_to_hex
     ((0, 0, 128), '#000080'),  # navy
 ])
 def test_rgb_to_hex(rgb, hex_):
-    assert rgb_to_hex(rgb) == hex_
+    a__ rgb_to_hex(rgb) == hex_
 
 
 def test_wrong_values():

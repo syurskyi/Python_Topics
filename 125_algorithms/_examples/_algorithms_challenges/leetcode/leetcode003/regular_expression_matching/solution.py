@@ -13,7 +13,7 @@ class Solution:
         # Next char is not *
         # pi may be the last char
         if pi < len(p) - 1 and p[pi + 1] != '*' or pi == len(p) - 1:
-            assert p[pi] != '*'
+            a__ p[pi] != '*'
             # si must be in bound
             is_cur_matched = si < len(s) and (p[pi] == s[si] or p[pi] == '.')
             is_next_matched = self.is_match_aux(s, p, si + 1, pi + 1)

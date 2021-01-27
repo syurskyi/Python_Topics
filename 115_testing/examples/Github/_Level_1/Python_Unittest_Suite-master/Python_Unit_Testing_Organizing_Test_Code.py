@@ -1,5 +1,5 @@
 # Python Unit Testing
-# unittest — Unit testing framework.
+# unittest ï¿½ Unit testing framework.
 # Unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from
 # the reporting framework.
 # 
@@ -20,7 +20,7 @@
 
 #
 # Organizing test code:
-# The basic building blocks of unit testing are test cases — single scenarios that must be set up and checked for correctness.
+# The basic building blocks of unit testing are test cases ï¿½ single scenarios that must be set up and checked for correctness.
 # In unittest, test cases are represented by unittest.TestCase instances.
 # To make your own test cases you must write subclasses of TestCase or use FunctionTestCase.
 # The testing code of a TestCase instance should be entirely self contained, such that it can be run either in isolation or in arbitrary combination with
@@ -38,7 +38,7 @@ class DefaultWidgetSizeTestCase(unittest.TestCase):
         self.assertEqual(widget.size(), (50, 50))
 
 #
-# Note that in order to test something, we use one of the assert*() methods provided by the TestCase base class.
+# Note that in order to test something, we use one of the a__*() methods provided by the TestCase base class.
 # If the test fails, an exception will be raised with an explanatory message, and unittest will identify the test case as a failure.
 # Any other exceptions will be treated as errors.
 # 
@@ -98,8 +98,8 @@ class WidgetTestCase(unittest.TestCase):
 
 #
 # It is recommended that you use TestCase implementations to group tests together according to the features they test.
-# unittest provides a mechanism for this: the test suite, represented by unittest’s TestSuite class.
-# In most cases, calling unittest.main() will do the right thing and collect all the module’s test cases for you and execute them.
+# unittest provides a mechanism for this: the test suite, represented by unittestï¿½s TestSuite class.
+# In most cases, calling unittest.main() will do the right thing and collect all the moduleï¿½s test cases for you and execute them.
 # 
 
 #

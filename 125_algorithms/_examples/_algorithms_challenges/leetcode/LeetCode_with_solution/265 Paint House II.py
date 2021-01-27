@@ -35,4 +35,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().minCostII([[8]]) == 8
+    a__ Solution().minCostII([[8]]) == 8

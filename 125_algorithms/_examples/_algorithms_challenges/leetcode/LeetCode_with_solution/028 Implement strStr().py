@@ -84,5 +84,5 @@ if __name__=="__main__":
     needle = "aaa"
     haystack = "aaa"
     solution = Solution()
-    assert solution.strStr_brute_force(haystack, needle)==solution.strStr(haystack, needle)
+    a__ solution.strStr_brute_force(haystack, needle)==solution.strStr(haystack, needle)
 

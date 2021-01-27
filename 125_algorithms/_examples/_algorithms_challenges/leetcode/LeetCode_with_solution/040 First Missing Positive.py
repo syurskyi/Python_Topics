@@ -39,4 +39,4 @@ class Solution:
 
 
 if __name__=="__main__":
-    assert Solution().firstMissingPositive([3,4,-1,1])==2
+    a__ Solution().firstMissingPositive([3,4,-1,1])==2

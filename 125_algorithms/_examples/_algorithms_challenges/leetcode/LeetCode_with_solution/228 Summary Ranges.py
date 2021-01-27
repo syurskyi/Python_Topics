@@ -39,4 +39,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().summaryRanges([0, 1, 2, 4, 5, 7]) == ['0->2', '4->5', '7']
+    a__ Solution().summaryRanges([0, 1, 2, 4, 5, 7]) == ['0->2', '4->5', '7']

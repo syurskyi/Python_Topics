@@ -43,4 +43,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().divide(5, -1) == -5
+    a__ Solution().divide(5, -1) == -5

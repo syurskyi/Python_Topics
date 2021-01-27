@@ -10,4 +10,4 @@ from Previous.indents import count_indents
    ('            string', 12),
 ])
 def test_count_indents(input_string, count):
-    assert count_indents(input_string) == count
+    a__ count_indents(input_string) == count

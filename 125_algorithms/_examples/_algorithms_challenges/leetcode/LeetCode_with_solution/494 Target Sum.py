@@ -50,4 +50,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) == 5
+    a__ Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) == 5

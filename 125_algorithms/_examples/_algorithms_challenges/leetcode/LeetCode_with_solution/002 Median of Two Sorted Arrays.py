@@ -59,7 +59,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [3]) == 2
-    assert Solution().findMedianSortedArrays([1], [2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2]) == 1.5
+    a__ Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) == 2
+    a__ Solution().findMedianSortedArrays([1, 2], [3]) == 2
+    a__ Solution().findMedianSortedArrays([1], [2, 3]) == 2
+    a__ Solution().findMedianSortedArrays([1, 2], [1, 2]) == 1.5

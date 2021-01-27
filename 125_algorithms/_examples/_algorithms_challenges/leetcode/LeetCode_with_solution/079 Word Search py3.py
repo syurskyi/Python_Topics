@@ -56,7 +56,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().exist([
+    a__ Solution().exist([
         ["A","B","C","E"],
         ["S","F","E","S"],
         ["A","D","E","E"]

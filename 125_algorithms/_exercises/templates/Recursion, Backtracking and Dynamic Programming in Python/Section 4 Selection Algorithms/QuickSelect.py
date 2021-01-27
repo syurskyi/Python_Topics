@@ -19,7 +19,7 @@ c_ QuickSelect:
 
         swap(pivot_index, last_index)
 
-        ___ i __ range(first_index, last_index
+        ___ i __ ra__(first_index, last_index
             __ nums[i] > nums[last_index]:
                 swap(i, first_index)
                 first_index += 1
@@ -42,7 +42,7 @@ c_ QuickSelect:
             # we have to discard the left sub-array and keep
             # considering the items on the right
             r_ select(pivot_index + 1, last_index, k)
-        elif pivot_index > k:
+        ____ pivot_index > k:
             # we have to discard the right sub-array
             r_ select(first_index, pivot_index - 1, k)
 

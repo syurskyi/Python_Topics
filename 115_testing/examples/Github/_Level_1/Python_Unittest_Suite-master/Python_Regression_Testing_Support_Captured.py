@@ -1,12 +1,12 @@
 # Python Regression Testing
-# test — Regression tests package for Python
+# test ï¿½ Regression tests package for Python
 # 
 ##########################################################################################################################################################
 #
 # NOTE:
 #
 # The test package is meant for internal use by Python only. It is documented for the benefit of the core developers of Python.
-# Any use of this package outside of Python’s standard library is discouraged as code mentioned here can change or be removed without notice between
+# Any use of this package outside of Pythonï¿½s standard library is discouraged as code mentioned here can change or be removed without notice between
 # releases of Python.
 #
 ########################################################################################################################################################## 
@@ -15,7 +15,7 @@
 # test.support is used to enhance your tests while test.regrtest drives the testing suite.
 # 
 # Each module in the test package whose name starts with test_ is a testing suite for a specific module or feature.
-# All new tests should be written using the unittest or doctest module. Some older tests are written using a “traditional” testing style that compares
+# All new tests should be written using the unittest or doctest module. Some older tests are written using a ï¿½traditionalï¿½ testing style that compares
 # output printed to sys.stdout; this style of test is considered deprecated.
 #
 
@@ -35,8 +35,8 @@ with captured_stdout() as stdout, captured_stderr() as stderr:
 
     print("error", file=sys.stderr)
 
-assert stdout.getvalue() == "hello\n"
-assert stderr.getvalue() == "error\n"
+a__ stdout.getvalue() == "hello\n"
+a__ stderr.getvalue() == "error\n"
  
 #
 # Example use with input stream:

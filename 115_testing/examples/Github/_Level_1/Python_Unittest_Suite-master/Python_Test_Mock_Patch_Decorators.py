@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -30,7 +30,7 @@
 # mock provides three convenient decorators for this: patch(), patch.object() and patch.dict().
 # patch takes a single string, of the form package.module.Class.attribute to specify the attribute you are patching.
 # It also optionally takes a value that you want the attribute (or class or whatever) to be replaced with.
-# ‘patch.object’ takes an object and the name of the attribute you would like patched, plus optionally the value to patch it with.
+# ï¿½patch.objectï¿½ takes an object and the name of the attribute you would like patched, plus optionally the value to patch it with.
 #
 
 # 
@@ -42,17 +42,17 @@ original = SomeClass.attribute
 @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
       def test():
-         assert SomeClass.attribute == sentinel.attribute
+         a__ SomeClass.attribute == sentinel.attribute
 
       test()
-         assert SomeClass.attribute == original
+         a__ SomeClass.attribute == original
  
 
 @patch('package.module.attribute', sentinel.attribute)
      def test():
 
         from package.module import attribute
-          assert attribute is sentinel.attribute
+          a__ attribute is sentinel.attribute
 
      test()
  
@@ -67,10 +67,10 @@ mock = MagicMock(return_value=sentinel.file_handle)
 
 mock.assert_called_with('filename', 'r')
 
-assert handle == sentinel.file_handle, "incorrect file handle returned"
+a__ handle == sentinel.file_handle, "incorrect file handle returned"
 
 # 
-# The module name can be ‘dotted’, in the form package.module if needed:
+# The module name can be ï¿½dottedï¿½, in the form package.module if needed:
 # 
 
 @patch('package.module.ClassName.attribute', sentinel.attribute)
@@ -78,7 +78,7 @@ assert handle == sentinel.file_handle, "incorrect file handle returned"
     def test():
         from package.module import ClassName
 
-        assert ClassName.attribute == sentinel.attribute
+        a__ ClassName.attribute == sentinel.attribute
 
     test()
  
@@ -97,7 +97,7 @@ original = SomeClass.attribute
 
 MyTest('test_something').test_something()
 
-assert SomeClass.attribute == original
+a__ SomeClass.attribute == original
  
 #
 # If you want to patch with a Mock, you can use patch() with only one argument (or patch.object() with two arguments).
@@ -142,16 +142,16 @@ foo = {'key': 'value'}
 original = foo.copy()
 
    with patch.dict(foo, {'newkey': 'newvalue'}, clear=True):
-        assert foo == {'newkey': 'newvalue'}
+        a__ foo == {'newkey': 'newvalue'}
 
-assert foo == original
+a__ foo == original
 
 # 
 # patch, patch.object and patch.dict can all be used as context managers.
 #
 
 # 
-# Where you use patch() to create a mock for you, you can get a reference to the mock using the “as” form of the with statement:
+# Where you use patch() to create a mock for you, you can get a reference to the mock using the ï¿½asï¿½ form of the with statement:
 # 
 
 class ProductionClass:
@@ -168,5 +168,5 @@ mock_method.assert_called_with(1, 2, 3)
  
 #
 # As an alternative patch, patch.object and patch.dict can be used as class decorators.
-# When used in this way it is the same as applying the decorator individually to every method whose name starts with “test”.
+# When used in this way it is the same as applying the decorator individually to every method whose name starts with ï¿½testï¿½.
 #

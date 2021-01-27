@@ -80,4 +80,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findOrder(2, [[0, 1], [1, 0]]) == []
+    a__ Solution().findOrder(2, [[0, 1], [1, 0]]) == []

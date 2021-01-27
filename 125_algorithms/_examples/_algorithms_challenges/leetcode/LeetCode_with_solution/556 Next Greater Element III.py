@@ -87,4 +87,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().nextGreaterElement(12) == 21
+    a__ Solution().nextGreaterElement(12) == 21

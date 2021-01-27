@@ -54,4 +54,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().minimumLengthEncoding(["time", "me", "bell"]) == 10
+    a__ Solution().minimumLengthEncoding(["time", "me", "bell"]) == 10

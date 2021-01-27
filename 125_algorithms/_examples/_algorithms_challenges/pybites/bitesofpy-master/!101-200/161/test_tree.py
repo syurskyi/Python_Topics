@@ -14,7 +14,7 @@ def test_only_files():
             with open(path, 'w') as f:
                 f.write('hello')
 
-        assert count_dirs_and_files(dirname) == (0, 5)
+        a__ count_dirs_and_files(dirname) == (0, 5)
 
 
 def test_only_dirs():
@@ -22,7 +22,7 @@ def test_only_dirs():
         for i in range(5):
             os.makedirs(os.path.join(dirname, str(i)))
 
-        assert count_dirs_and_files(dirname) == (5, 0)
+        a__ count_dirs_and_files(dirname) == (5, 0)
 
 
 def test_files_and_dirs():
@@ -37,4 +37,4 @@ def test_files_and_dirs():
                     with open(path, 'w') as f:
                         f.write('hello')
 
-        assert count_dirs_and_files(dirname) == (5, 25)
+        a__ count_dirs_and_files(dirname) == (5, 25)

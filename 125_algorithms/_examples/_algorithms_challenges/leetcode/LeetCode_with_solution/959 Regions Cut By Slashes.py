@@ -144,11 +144,11 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().regionsBySlashes([
+    a__ Solution().regionsBySlashes([
           " /",
           "/ "
         ]) == 2
-    assert Solution().regionsBySlashes([
+    a__ Solution().regionsBySlashes([
           "//",
           "/ "
         ]) == 3

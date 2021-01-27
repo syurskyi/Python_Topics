@@ -62,5 +62,5 @@ class SolutionTLE(object):
 
 
 if __name__ == "__main__":
-    assert Solution().generateAbbreviations("word") == ['word', 'wor1', 'wo1d', 'wo2', 'w1rd', 'w1r1', 'w2d', 'w3',
+    a__ Solution().generateAbbreviations("word") == ['word', 'wor1', 'wo1d', 'wo2', 'w1rd', 'w1r1', 'w2d', 'w3',
                                                         '1ord', '1or1', '1o1d', '1o2', '2rd', '2r1', '3d', '4']

@@ -122,4 +122,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) == 11
+    a__ Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) == 11

@@ -31,5 +31,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().hasAlternatingBits(5) == True
-    assert Solution().hasAlternatingBits(7) == False
+    a__ Solution().hasAlternatingBits(5) == True
+    a__ Solution().hasAlternatingBits(7) == False

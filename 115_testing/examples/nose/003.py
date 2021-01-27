@@ -23,13 +23,13 @@ def my_teardown_function():
 @with_setup(my_setup_function, my_teardown_function)
 def test_numbers_3_4():
     print('test_numbers_3_4  <============================ actual test code')
-    assert multiply(3, 4) == 12
+    a__ multiply(3, 4) == 12
 
 
 @with_setup(my_setup_function, my_teardown_function)
 def test_strings_a_3():
     print('test_strings_a_3  <============================ actual test code')
-    assert multiply('a', 3) == 'aaa'
+    a__ multiply('a', 3) == 'aaa'
 
 
 class TestUM:
@@ -51,9 +51,9 @@ class TestUM:
     def test_numbers_5_6(self):
         print
         'test_numbers_5_6()  <============================ actual test code'
-        assert multiply(5, 6) == 30
+        a__ multiply(5, 6) == 30
 
     def test_strings_b_2(self):
         print
         'test_strings_b_2()  <============================ actual test code'
-        assert multiply('b', 2) == 'bb'
+        a__ multiply('b', 2) == 'bb'

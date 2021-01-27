@@ -19,7 +19,7 @@ c_ Graph:
 
         # creating queue
         q = []
-        ___ i __ range(v
+        ___ i __ ra__(v
             __ in_degree[i] __ 0:
                 q.ap..(i)
 

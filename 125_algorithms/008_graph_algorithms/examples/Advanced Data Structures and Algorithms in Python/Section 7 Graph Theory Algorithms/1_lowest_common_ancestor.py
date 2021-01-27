@@ -118,7 +118,7 @@ def get_random_tree(n):
         return node
 
     ret = inner(Node(1, parent=None))
-    assert label - 1 == n, 'label={}, n={}'.format(label, n)
+    a__ label - 1 == n, 'label={}, n={}'.format(label, n)
     return ret
 
 
@@ -173,7 +173,7 @@ for t in range(100):
             if t2:
                 t2 = t2.parent
 
-        assert answer == euler[q], \
+        a__ answer == euler[q], \
             'euler_depth[q]={}\n' \
             'euler[q]={}\n' \
             'depth[euler[q]]={}\n' \

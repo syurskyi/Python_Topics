@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -29,7 +29,7 @@ mock.return_value.foo.assert_called_with(a=2, b=3)
 
 # 
 # From here it is a simple step to configure and then make assertions about chained calls.
-# Of course another alternative is writing your code in a more testable way in the first place…
+# Of course another alternative is writing your code in a more testable way in the first placeï¿½
 #
 
 # 
@@ -50,8 +50,8 @@ class Something:
 # Assuming that BackendProvider is already well tested, how do we test method()? Specifically, we want to test that the code section # more code uses the
 # response object in the correct way.
 # As this chain of calls is made from an instance attribute we can monkey patch the backend attribute on a Something instance.
-# In this particular case we are only interested in the return value from the final call to start_call so we don’t have much configuration to do.
-# Let’s assume the object it returns is ‘file-like’, so we’ll ensure that our response object uses the builtin open() as its spec.
+# In this particular case we are only interested in the return value from the final call to start_call so we donï¿½t have much configuration to do.
+# Letï¿½s assume the object it returns is ï¿½file-likeï¿½, so weï¿½ll ensure that our response object uses the builtin open() as its spec.
 # To do this we create a mock instance as our mock backend and create a mock response object for it. To set the response as the return value for that final
 # start_call we could do this:
 # 
@@ -71,7 +71,7 @@ config = {'get_endpoint.return_value.create_call.return_value.start_call.return_
 mock_backend.configure_mock(**config)
 
 # 
-# With these we monkey patch the “mock backend” in place and can make the real call:
+# With these we monkey patch the ï¿½mock backendï¿½ in place and can make the real call:
 # 
 
 something.backend = mock_backend
@@ -79,7 +79,7 @@ something.backend = mock_backend
 something.method()
 
 # 
-# Using mock_calls we can check the chained call with a single assert.
+# Using mock_calls we can check the chained call with a single a__.
 # A chained call is several calls in one line of code, so there will be several entries in mock_calls.
 # We can use call.call_list() to create this list of calls for us:
 # 
@@ -87,4 +87,4 @@ something.method()
 chained = call.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
 call_list = chained.call_list()
 
-assert mock_backend.mock_calls == call_list
+a__ mock_backend.mock_calls == call_list

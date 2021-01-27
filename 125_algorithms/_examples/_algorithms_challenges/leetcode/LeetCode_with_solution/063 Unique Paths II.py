@@ -59,5 +59,5 @@ class Solution:
 
 if __name__=="__main__":
     grid = [[0, 0], [1, 1], [0, 0]]
-    assert Solution().uniquePathsWithObstacles(grid)==0
+    a__ Solution().uniquePathsWithObstacles(grid)==0
 

@@ -162,7 +162,7 @@ class Solution:
 if __name__=="__main__":
     # height = [2, 1, 2]
     height = [4, 2, 0, 3, 2, 5]
-    assert Solution().largestRectangleArea(height) == Solution().largestRectangleArea_complex(height)
+    a__ Solution().largestRectangleArea(height) == Solution().largestRectangleArea_complex(height)
 
 
 

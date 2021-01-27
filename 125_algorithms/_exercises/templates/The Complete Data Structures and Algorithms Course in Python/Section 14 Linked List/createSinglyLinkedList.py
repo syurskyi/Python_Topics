@@ -25,7 +25,7 @@ c_ SLinkedList:
             __ location __ 0:
                 newNode.next = head
                 head = newNode
-            elif location __ 1:
+            ____ location __ 1:
                 newNode.next = N..
                 tail.next = newNode
                 tail = newNode
@@ -72,7 +72,7 @@ c_ SLinkedList:
                     tail = N..
                 ____
                     head = head.next
-            elif location __ 1:
+            ____ location __ 1:
                 __ head __ tail:
                     head = N..
                     tail = N..

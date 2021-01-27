@@ -62,6 +62,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().canIWin(10, 11) == False
-    assert Solution().canIWin(10, 0) == True
-    assert Solution().canIWin(13, 11) == True
+    a__ Solution().canIWin(10, 11) == False
+    a__ Solution().canIWin(10, 0) == True
+    a__ Solution().canIWin(13, 11) == True

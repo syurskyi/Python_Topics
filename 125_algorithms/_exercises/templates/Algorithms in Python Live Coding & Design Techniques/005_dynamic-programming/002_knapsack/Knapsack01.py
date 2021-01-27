@@ -22,10 +22,10 @@ ___ get_max_profit_td(weight, price, n, capacity, values
 # DP : Bottom Up Approach
 ___ get_max_profit_bu(weight, price, n, capacity
 
-    values = [[0 ___ i __ range(capacity+1)] ___ i __ range(n+1)]
+    values = [[0 ___ i __ ra__(capacity+1)] ___ i __ ra__(n+1)]
 
-    ___ i __ range(n+1
-        ___ j __ range(capacity+1
+    ___ i __ ra__(n+1
+        ___ j __ ra__(capacity+1
             __ i __ 0 or j __ 0 :
                 values[i][j] = 0
             ____
@@ -43,5 +43,5 @@ price = [15, 8, 8]
 capacity = 10
 n = le_(weight)
 
-values = [[-1 ___ i __ range(capacity+1)] ___ i __ range(n+1)]
+values = [[-1 ___ i __ ra__(capacity+1)] ___ i __ ra__(n+1)]
 print(get_max_profit_bu(weight, price, n, capacity))

@@ -42,7 +42,7 @@ def reload_tools_menu(notify=True):
 def get_all_tools():
     """
     scan tools dir and get a list of all tools
-    assert that all tools menus are uppercase
+    a__ that all tools menus are uppercase
     :return: list list of all tools
     """
 

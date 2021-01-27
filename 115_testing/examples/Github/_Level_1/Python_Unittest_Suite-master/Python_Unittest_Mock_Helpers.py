@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 # Helpers:
@@ -38,7 +38,7 @@ real.method.return_value = sentinel.some_object
 
 result = real.method()
 
-assert result is sentinel.some_object
+a__ result is sentinel.some_object
 
 sentinel.some_object
 
@@ -70,7 +70,7 @@ m.call_args_list == [call(1, 2, a='foo', b='bar'), call()]
 #
 # call.call_list(): 
 # For a call object that represents multiple calls, call_list() returns a list of all the intermediate calls as well as the final call.
-# call_list is particularly useful for making assertions on “chained calls”. A chained call is multiple calls on a single line of code.
+# call_list is particularly useful for making assertions on ï¿½chained callsï¿½. A chained call is multiple calls on a single line of code.
 # This results in multiple entries in mock_calls on a mock. Manually constructing the sequence of calls can be tedious.
 # call_list() can construct the sequence of calls from the same chained call:
 # 
@@ -90,13 +90,13 @@ m.mock_calls == kall.call_list()
  
 #
 # A call object is either a tuple of (positional args, keyword args) or (name, positional args, keyword args) depending on how it was constructed.
-# When you construct them yourself this isn’t particularly interesting, but the call objects that are in the Mock.call_args, Mock.call_args_list and
+# When you construct them yourself this isnï¿½t particularly interesting, but the call objects that are in the Mock.call_args, Mock.call_args_list and
 # Mock.mock_calls attributes can be introspected to get at the individual arguments they contain.
 # 
 # The call objects in Mock.call_args and Mock.call_args_list are two-tuples of (positional args, keyword args) whereas the call objects in Mock.mock_calls, 
 # along with ones you construct yourself, are three-tuples of (name, positional args, keyword args).
 # 
-# You can use their “tupleness” to pull out the individual arguments for more complex introspection and assertions.
+# You can use their ï¿½tuplenessï¿½ to pull out the individual arguments for more complex introspection and assertions.
 # The positional arguments are a tuple (an empty tuple if there are no positional arguments) and the keyword arguments are a dictionary:
 # 
 
@@ -155,7 +155,7 @@ name is m.mock_calls[0][0]
  
 #
 # Functions or methods being mocked will have their arguments checked to ensure that they are called with the correct signature.
-# If spec_set is True then attempting to set attributes that don’t exist on the spec object will raise an AttributeError.
+# If spec_set is True then attempting to set attributes that donï¿½t exist on the spec object will raise an AttributeError.
 # 
 # If a class is used as a spec then the return value of the mock (the instance of the class) will have the same spec.
 # You can use a class as the spec for an instance object by passing instance=True.

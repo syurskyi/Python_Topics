@@ -15,7 +15,7 @@ c_ BinaryTree:
         r_ "The value has been successfully inserted"
 
     ___ searchNode  nodeValue
-        ___ i __ range(le_(customList)):
+        ___ i __ ra__(le_(customList)):
             __ customList[i] __ nodeValue:
                 r_ "Success"
         r_ "Not found"
@@ -42,13 +42,13 @@ c_ BinaryTree:
         print(customList[index])
     
     ___ levelOrderTraversal  index
-        ___ i __ range(index, lastUsedIndex+1
+        ___ i __ ra__(index, lastUsedIndex+1
             print(customList[i])
     
     ___ deleteNode  value
         __ lastUsedIndex __ 0:
             r_ "There is not any node to delete"
-        ___ i __ range(1, lastUsedIndex+1
+        ___ i __ ra__(1, lastUsedIndex+1
             __ customList[i] __ value:
                 customList[i] = customList[lastUsedIndex]
                 customList[lastUsedIndex] = N..

@@ -1,12 +1,12 @@
 # Python Regression Testing
-# test — Regression tests package for Python
+# test ï¿½ Regression tests package for Python
 # 
 ##########################################################################################################################################################
 #
 # NOTE:
 #
 # The test package is meant for internal use by Python only. It is documented for the benefit of the core developers of Python.
-# Any use of this package outside of Python’s standard library is discouraged as code mentioned here can change or be removed without notice between
+# Any use of this package outside of Pythonï¿½s standard library is discouraged as code mentioned here can change or be removed without notice between
 # releases of Python.
 #
 ########################################################################################################################################################## 
@@ -15,19 +15,19 @@
 # test.support is used to enhance your tests while test.regrtest drives the testing suite.
 # 
 # Each module in the test package whose name starts with test_ is a testing suite for a specific module or feature.
-# All new tests should be written using the unittest or doctest module. Some older tests are written using a “traditional” testing style that compares
+# All new tests should be written using the unittest or doctest module. Some older tests are written using a ï¿½traditionalï¿½ testing style that compares
 # output printed to sys.stdout; this style of test is considered deprecated.
 #
 
 #
 # test.support.check__all__(test_case, module, name_of_module=None, extra=(), blacklist=()):
-# Assert that the __all__ variable of module contains all public names.
+# a__ that the __all__ variable of module contains all public names.
 #
-# The module’s public names (its API) are detected automatically based on whether they match the public name convention and were defined in module.
+# The moduleï¿½s public names (its API) are detected automatically based on whether they match the public name convention and were defined in module.
 # The 'name_of_module' argument can specify (as a string or tuple thereof) what module(s) an API could be defined in order to be detected as a public API.
 # One case for this is when module imports part of its public API from other modules, possibly a C backend (like csv and its _csv).
 #
-# The 'extra' argument can be a set of names that wouldn’t otherwise be automatically detected as “public”, like objects without a proper __module__ attribute.
+# The 'extra' argument can be a set of names that wouldnï¿½t otherwise be automatically detected as ï¿½publicï¿½, like objects without a proper __module__ attribute.
 # If provided, it will be added to the automatically detected ones.
 #
 # The 'blacklist' argument can be a set of names that must not be treated as part of the public API even though their names indicate otherwise.

@@ -86,5 +86,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().openLock(["8888"], "0009") == 1
-    assert Solution().openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888") == -1
+    a__ Solution().openLock(["8888"], "0009") == 1
+    a__ Solution().openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888") == -1

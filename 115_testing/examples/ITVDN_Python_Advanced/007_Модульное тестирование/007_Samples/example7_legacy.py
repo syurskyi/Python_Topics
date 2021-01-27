@@ -3,12 +3,12 @@ import unittest
 
 def legacy_test_function1():
     result = 1 + 2
-    assert result == 3
+    a__ result == 3
 
 
 def legacy_test_function2():
     result = 1 * 2
-    assert result == 2
+    a__ result == 2
 
 
 test_case1 = unittest.FunctionTestCase(testFunc=legacy_test_function1)

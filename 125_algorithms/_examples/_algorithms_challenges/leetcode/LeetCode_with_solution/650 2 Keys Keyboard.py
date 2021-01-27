@@ -78,6 +78,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().minSteps(7) == 7
-    assert Solution().minSteps(3) == 3
-    assert Solution().minSteps(4) == 4
+    a__ Solution().minSteps(7) == 7
+    a__ Solution().minSteps(3) == 3
+    a__ Solution().minSteps(4) == 4

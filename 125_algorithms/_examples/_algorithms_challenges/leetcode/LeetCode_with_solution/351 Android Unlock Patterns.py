@@ -62,5 +62,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().numberOfPatterns(1, 2) == 65
-    assert Solution().numberOfPatterns(1, 3) == 385
+    a__ Solution().numberOfPatterns(1, 2) == 65
+    a__ Solution().numberOfPatterns(1, 3) == 385

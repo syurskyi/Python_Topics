@@ -3,7 +3,7 @@ c_ MazeProblem:
     ___  -   maze_matrix
         maze_matrix = maze_matrix
         maze_size = le_(maze_matrix)
-        solution_matrix = [[' - ' ___ _ __ range(maze_size)] ___ _ __ range(maze_size)]
+        solution_matrix = [[' - ' ___ _ __ ra__(maze_size)] ___ _ __ ra__(maze_size)]
         moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     ___ solve_problem(self
@@ -59,12 +59,12 @@ c_ MazeProblem:
         r_ T..
 
     ___ is_finished  x, y
-        __ x __ maze_size - 1 and y __ maze_size - 1:
+        __ x __ maze_size - 1 a__ y __ maze_size - 1:
             r_ T..
 
     ___ show_result(self
-        ___ x __ range(maze_size
-            ___ y __ range(maze_size
+        ___ x __ ra__(maze_size
+            ___ y __ ra__(maze_size
                 print(solution_matrix[x][y], end=' ')
             print('\n')
 

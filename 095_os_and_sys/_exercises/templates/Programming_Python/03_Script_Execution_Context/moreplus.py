@@ -22,7 +22,7 @@ ___ getreply():
             msvcrt.putch(b'\n')                  # getch() does not echo key
             r_ key
         ____
-            assert False, 'platform not supported'
+            a__ False, 'platform not supported'
             #linux?: open('/dev/tty').readline()[:-1]
             
 ___ more(text, numlines_10):

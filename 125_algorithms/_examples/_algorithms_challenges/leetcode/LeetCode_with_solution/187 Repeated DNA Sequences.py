@@ -79,4 +79,4 @@ class Solution:
         return dic[a]
 
 if __name__ == "__main__":
-    assert Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") == ['CCCCCAAAAA', 'AAAAACCCCC']
+    a__ Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") == ['CCCCCAAAAA', 'AAAAACCCCC']

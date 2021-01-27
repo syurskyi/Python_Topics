@@ -34,8 +34,8 @@ ___ get_lds_bottom_up(nums
     max_lds = [1] * le_(nums)
 
     max_so_far = 1
-    ___ j __ range(1, le_(nums)):
-        ___ i __ range(j
+    ___ j __ ra__(1, le_(nums)):
+        ___ i __ ra__(j
             __ nums[j] < nums[i]:
                 max_lds[j] = max(max_lds[j], max_lds[i]+1)
         max_so_far = max(max_so_far, max_lds[j])
@@ -46,7 +46,7 @@ __ ___ __ '__main__':
     nums = [20, 8, 12, 16, 10, 9, 18, 7]
     print(get_lds(nums, 0, sys.maxsize))
 
-    dp = [[-1 ___ i __ range(le_(nums))] ___ i __ range(le_(nums) + 1)]
+    dp = [[-1 ___ i __ ra__(le_(nums))] ___ i __ ra__(le_(nums) + 1)]
     print(get_lds_top_down(nums, -1, 0, dp))
 
     print(get_lds_bottom_up(nums))

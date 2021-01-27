@@ -38,7 +38,7 @@ for tests in range(100):
     s = randint(1, 10)
     naive_result = naive(array, s)
     efficient_result = efficient(array, s)
-    assert naive_result== efficient_result, \
+    a__ naive_result== efficient_result, \
         'naive_res={}, efficient_res={}, array={}, s={}'.format(
             naive_result,
             efficient_result,

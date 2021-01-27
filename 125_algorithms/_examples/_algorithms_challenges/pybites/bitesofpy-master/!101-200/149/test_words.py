@@ -8,7 +8,7 @@ def test_sort_words_case_insensitively():
     expected = ['a', 'a', 'almost', 'and', 'and', 'Christmas',
                 'Happy', 'Holidays', "It's", 'Merry', 'PyBites',
                 'wishes', 'You', '2019']
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_sort_words_case_insensitively_another_phrase():
@@ -22,4 +22,4 @@ def test_sort_words_case_insensitively_another_phrase():
                 'into', 'Museum', 'National', 'of', 'Smithsonian',
                 'Street', 'the', 'the', 'the', 'was', "1970's", '2',
                 '64-room', '91st']
-    assert actual == expected
+    a__ actual == expected

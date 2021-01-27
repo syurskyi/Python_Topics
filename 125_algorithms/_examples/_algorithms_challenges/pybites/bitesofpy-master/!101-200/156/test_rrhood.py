@@ -31,7 +31,7 @@ def test_make_character_index_with_default_args():
     )
     expected = dict(zip(keys, values))
     actual = make_character_index()
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_make_character_index_with_other_args():
@@ -44,4 +44,4 @@ def test_make_character_index_with_other_args():
     actual = make_character_index(text=the_neetle_tree,
                                   characters=characters)
     expected = dict(zip(keys, values))
-    assert actual == expected
+    a__ actual == expected

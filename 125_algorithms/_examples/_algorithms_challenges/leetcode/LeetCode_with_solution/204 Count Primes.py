@@ -29,4 +29,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().countPrimes(1500000) == 114155
+    a__ Solution().countPrimes(1500000) == 114155

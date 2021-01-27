@@ -76,11 +76,11 @@ class Solution:
             return False
 
 if __name__=="__main__":
-    assert Solution().isNumber(".2e81")==True
-    assert Solution().isNumber("6+1")==False
-    assert Solution().isNumber("1 a")==False
-    assert Solution().isNumber("1e10")==True
-    assert Solution().isNumber(" 0.1")==True
-    assert Solution().isNumber("abc")==False
+    a__ Solution().isNumber(".2e81")==True
+    a__ Solution().isNumber("6+1")==False
+    a__ Solution().isNumber("1 a")==False
+    a__ Solution().isNumber("1e10")==True
+    a__ Solution().isNumber(" 0.1")==True
+    a__ Solution().isNumber("abc")==False
 
 

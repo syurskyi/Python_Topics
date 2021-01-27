@@ -22,7 +22,7 @@ class Manager(object):
         self.worker = None
 
     def set_worker(self, worker):
-        assert isinstance(worker, Worker), '`worker` must be of type {}'.format(Worker)
+        a__ isinstance(worker, Worker), '`worker` must be of type {}'.format(Worker)
 
         self.worker = worker
 
@@ -88,7 +88,7 @@ class Manager(object):
         self.worker = None
 
     def set_worker(self, worker):
-        assert isinstance(worker, IWorker), '`worker` must be of type {}'.format(Worker)
+        a__ isinstance(worker, IWorker), '`worker` must be of type {}'.format(Worker)
 
         self.worker = worker
 

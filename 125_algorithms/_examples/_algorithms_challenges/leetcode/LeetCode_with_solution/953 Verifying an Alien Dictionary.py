@@ -67,4 +67,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") == True
+    a__ Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") == True

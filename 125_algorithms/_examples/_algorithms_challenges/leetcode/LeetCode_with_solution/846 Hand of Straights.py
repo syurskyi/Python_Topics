@@ -91,5 +91,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) == True
-    assert Solution().isNStraightHand([1,1,2,2,3,3], 3) == True
+    a__ Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) == True
+    a__ Solution().isNStraightHand([1,1,2,2,3,3], 3) == True

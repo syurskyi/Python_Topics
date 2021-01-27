@@ -47,4 +47,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().checkSubarraySum([23,2,4,6,7], 6) == True
+    a__ Solution().checkSubarraySum([23,2,4,6,7], 6) == True

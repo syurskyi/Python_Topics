@@ -6,8 +6,8 @@
 INF = 9999
 # Printing the solution
 ___ printSolution(nV, distance
-    ___ i __ range(nV
-        ___ j __ range(nV
+    ___ i __ ra__(nV
+        ___ j __ ra__(nV
             __(distance[i][j] __ INF
                 print("INF", end=" ")
             ____
@@ -17,9 +17,9 @@ ___ printSolution(nV, distance
 
 ___ floydWarshall(nV, G
     distance = G
-    ___ k __ range(nV
-        ___ i __ range(nV
-            ___ j __ range(nV
+    ___ k __ ra__(nV
+        ___ i __ ra__(nV
+            ___ j __ ra__(nV
                 distance[i][j] = min(distance[i][j], distance[i][k]+distance[k][j])
     
     printSolution(nV, distance)

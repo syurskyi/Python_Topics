@@ -39,4 +39,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findContentChildren([10,9,8,7], [5,6,7,8]) == 2
+    a__ Solution().findContentChildren([10,9,8,7], [5,6,7,8]) == 2

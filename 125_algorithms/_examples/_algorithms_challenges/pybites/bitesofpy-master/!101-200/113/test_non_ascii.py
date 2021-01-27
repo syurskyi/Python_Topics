@@ -15,4 +15,4 @@ from non_ascii import extract_non_ascii_words
     ('This string only contains ascii words', []),
 ])
 def test_extract_non_ascii_words(phrase, expected):
-    assert extract_non_ascii_words(phrase) == expected
+    a__ extract_non_ascii_words(phrase) == expected

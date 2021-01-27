@@ -29,13 +29,13 @@ def grouping2():
 
 
 def test_return_type(grouping1, grouping2):
-    assert type(grouping1) == defaultdict
-    assert type(grouping2) == defaultdict
+    a__ type(grouping1) == defaultdict
+    a__ type(grouping2) == defaultdict
 
 
 def test_return_dict_len(grouping1, grouping2):
-    assert len(grouping1) == 7
-    assert len(grouping2) == 6
+    a__ len(grouping1) == 7
+    a__ len(grouping2) == 6
 
 
 @pytest.mark.parametrize('key, expected', [
@@ -48,7 +48,7 @@ def test_return_dict_len(grouping1, grouping2):
     ('TD', ['Rudolph Jeffry']),
 ])
 def test_grouping1_return(grouping1, key, expected):
-    assert sorted(grouping1[key]) == expected
+    a__ sorted(grouping1[key]) == expected
 
 
 @pytest.mark.parametrize('key, expected', [
@@ -60,4 +60,4 @@ def test_grouping1_return(grouping1, key, expected):
     ('NL', ['Ave Insko', 'Bryant Kynman']),
 ])
 def test_grouping2_return(grouping2, key, expected):
-    assert sorted(grouping2[key]) == expected
+    a__ sorted(grouping2[key]) == expected

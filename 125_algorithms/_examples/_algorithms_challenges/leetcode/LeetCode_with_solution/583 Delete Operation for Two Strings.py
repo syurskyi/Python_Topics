@@ -75,4 +75,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().minDistance("sea", "eat") == 2
+    a__ Solution().minDistance("sea", "eat") == 2

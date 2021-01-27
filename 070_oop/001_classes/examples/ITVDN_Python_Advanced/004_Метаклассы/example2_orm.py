@@ -152,7 +152,7 @@ class BaseModel(metaclass=BaseMeta):
     def __init__(self, **kwargs):
 
         for item in kwargs:
-            assert self._metadata.has_field(item), \
+            a__ self._metadata.has_field(item), \
                 'Field "{}" does not exist'.format(item)
             setattr(self, item, kwargs.get(item))
             # self.age = 10

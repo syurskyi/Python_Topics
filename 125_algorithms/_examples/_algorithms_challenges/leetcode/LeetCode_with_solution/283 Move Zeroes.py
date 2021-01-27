@@ -45,4 +45,4 @@ class SolutionCount(object):
 if __name__ == "__main__":
     lst = [0, 1, 0, 3, 12]
     Solution().moveZeroes(lst)
-    assert lst == [1, 3, 12, 0, 0]
+    a__ lst == [1, 3, 12, 0, 0]

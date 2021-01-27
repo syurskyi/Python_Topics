@@ -14,4 +14,4 @@ from Previous.clean import remove_punctuation
      'Some other chars  lets delete them'),
 ])
 def test_remove_punctuation(input_argument, expected_return):
-    assert remove_punctuation(input_argument) == expected_return
+    a__ remove_punctuation(input_argument) == expected_return

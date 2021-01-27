@@ -67,7 +67,7 @@ __ _____ __ _____
 #
 
 #
-# These methods are used instead of the assert statement so the test runner can accumulate all test results and produce a report.
+# These methods are used instead of the a__ statement so the test runner can accumulate all test results and produce a report.
 # The setUp() and tearDown() methods allow you to define instructions that will be executed before and after each test method.
 # They are covered in more detail in the section Organizing test code.
 #

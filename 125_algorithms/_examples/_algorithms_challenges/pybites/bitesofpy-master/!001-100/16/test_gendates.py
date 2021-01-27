@@ -19,4 +19,4 @@ def test_gen_special_pybites_dates():
                 datetime(2018, 12, 19, 0, 0),  # PyBites 2 years old
                 datetime(2019, 2, 27, 0, 0)]
 
-    assert dates == expected
+    a__ dates == expected

@@ -52,4 +52,4 @@ expected = [
 
 @pytest.mark.parametrize('text, result', zip(paragraphs, expected))
 def test_get_word_max_vowels(text, result):
-    assert get_word_max_vowels(text) in result
+    a__ get_word_max_vowels(text) in result

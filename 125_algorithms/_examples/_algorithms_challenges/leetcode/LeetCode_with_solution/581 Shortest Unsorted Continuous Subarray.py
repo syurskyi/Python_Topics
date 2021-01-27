@@ -72,5 +72,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findUnsortedSubarray([2, 1]) == 2
-    assert Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) == 5
+    a__ Solution().findUnsortedSubarray([2, 1]) == 2
+    a__ Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) == 5

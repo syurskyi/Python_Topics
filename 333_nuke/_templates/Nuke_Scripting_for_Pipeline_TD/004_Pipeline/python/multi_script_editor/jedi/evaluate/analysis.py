@@ -158,16 +158,16 @@ def _check_for_exception_catch(evaluator, jedi_obj, exception, payload=None):
     def check_hasattr(stmt):
         expression_list = stmt.expression_list()
         try:
-            assert len(expression_list) == 1
+            a__ len(expression_list) == 1
             call = expression_list[0]
-            assert isinstance(call, pr.Call) and str(call.name) == 'hasattr'
+            a__ isinstance(call, pr.Call) and str(call.name) == 'hasattr'
             execution = call.execution
-            assert execution and len(execution) == 2
+            a__ execution and len(execution) == 2
 
             # check if the names match
             names = evaluator.eval_statement(execution[1])
-            assert len(names) == 1 and isinstance(names[0], CompiledObject)
-            assert names[0].obj == str(payload[1])
+            a__ len(names) == 1 and isinstance(names[0], CompiledObject)
+            a__ names[0].obj == str(payload[1])
 
             objects = evaluator.eval_statement(execution[0])
             return payload[0] in objects

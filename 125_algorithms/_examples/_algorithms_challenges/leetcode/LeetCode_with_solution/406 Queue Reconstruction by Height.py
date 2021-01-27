@@ -91,7 +91,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().reconstructQueue(
+    a__ Solution().reconstructQueue(
         [[9, 0], [7, 0], [1, 9], [3, 0], [2, 7], [5, 3], [6, 0], [3, 4], [6, 2], [5, 2]]) == [[3, 0], [6, 0], [7, 0],
                                                                                               [5, 2], [3, 4], [5, 3],
                                                                                               [6, 2], [2, 7], [9, 0],

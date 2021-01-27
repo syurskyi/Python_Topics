@@ -96,4 +96,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().largestSumOfAverages([9,1,2,3,9], 3) == 20
+    a__ Solution().largestSumOfAverages([9,1,2,3,9], 3) == 20

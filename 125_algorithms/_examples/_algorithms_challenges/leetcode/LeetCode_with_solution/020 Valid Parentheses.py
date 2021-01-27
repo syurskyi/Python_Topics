@@ -29,4 +29,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().isValid("()")
+    a__ Solution().isValid("()")

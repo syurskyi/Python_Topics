@@ -63,4 +63,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().maxTurbulenceSize([9,4,2,10,7,8,8,1,9]) == 5
+    a__ Solution().maxTurbulenceSize([9,4,2,10,7,8,8,1,9]) == 5

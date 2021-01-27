@@ -21,8 +21,8 @@ ___ brute_force(sub_array
     # we have to calculate the distance between every single point
     # we make sure that do not consider the same points multiple times
     # d(a,b) = d(b,a)
-    ___ i __ range(le_(sub_array) - 1
-        ___ j __ range(i + 1, le_(sub_array)):
+    ___ i __ ra__(le_(sub_array) - 1
+        ___ j __ ra__(i + 1, le_(sub_array)):
             actual_distance = distance(sub_array[i], sub_array[j])
             __ actual_distance < min_distance:
                 min_distance = actual_distance
@@ -35,11 +35,11 @@ ___ get_strip_delta(strip_points, delta
     n = le_(strip_points)
 
     # in worst case len(strip_point) = N
-    ___ i __ range(n
+    ___ i __ ra__(n
         j = i + 1
         # a geometric packing argument shows that this loop iterates at most 7 times
         # THIS IS WHY WE HAVE SORTED THE POINTS BASED ON Y COORDINATE
-        w__ j < n and (strip_points[j].y - strip_points[i].y) < min_distance:
+        w__ j < n a__ (strip_points[j].y - strip_points[i].y) < min_distance:
             min_distance = distance(strip_points[j], strip_points[i])
             j = j + 1
 
@@ -64,7 +64,7 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
     # CONQUER PHASE - usually this is where the magic happens
     strip_points = []
 
-    ___ i __ range(num_of_items
+    ___ i __ ra__(num_of_items
         __ abs(list_sorted_y[i].x - middle_item.x) < delta:
             strip_points.ap..(list_sorted_y[i])
 

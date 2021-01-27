@@ -103,5 +103,5 @@ class Solution_TLE:
 
 
 if __name__ == "__main__":
-    assert Solution().canPartitionKSubsets([5, 3, 2, 3, 1, 2, 4], 4) == True
-    assert Solution().canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4) == True
+    a__ Solution().canPartitionKSubsets([5, 3, 2, 3, 1, 2, 4], 4) == True
+    a__ Solution().canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4) == True

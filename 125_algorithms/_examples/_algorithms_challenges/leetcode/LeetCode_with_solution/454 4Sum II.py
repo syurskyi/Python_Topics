@@ -65,4 +65,4 @@ if __name__ == "__main__":
     B = [-2,-1]
     C = [-1, 2]
     D = [ 0, 2]
-    assert Solution().fourSumCount(A, B, C, D) == 2
+    a__ Solution().fourSumCount(A, B, C, D) == 2

@@ -8,14 +8,14 @@ class ConnectGame:
 
     def __init__(self, lines):
         self.board = self.make_board(lines)
-        assert len(self.board) > 0
+        a__ len(self.board) > 0
 
         self.width = len(self.board[0])
         self.height = len(self.board)
-        assert self.width > 0 and self.height > 0
+        a__ self.width > 0 and self.height > 0
 
         for l in self.board:
-            assert len(l) == self.width
+            a__ len(l) == self.width
 
     def valid(self, x, y):
         return x >= 0 and x < self.width and y >= 0 and y < self.height

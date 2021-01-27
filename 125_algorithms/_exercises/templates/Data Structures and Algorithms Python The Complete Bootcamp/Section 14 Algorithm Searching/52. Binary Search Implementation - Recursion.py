@@ -14,7 +14,7 @@ ___ helper(my_array, target, left, right):
 
     __ target __ middle_element:
         r_ middle
-    elif target < middle_element:
+    ____ target < middle_element:
         right = middle - 1
         result = helper(my_array, target, left, right)
         r_ result

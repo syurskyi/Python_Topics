@@ -93,4 +93,4 @@ class Solution(object):
 if __name__ == "__main__":
     lst = ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
            "ho", "gk", "fa", "ed", "dg", "ct", "bb", "ba"]
-    assert Solution().alienOrder(lst) == "zyxwvutsrqponmlkjihgfedcba"
+    a__ Solution().alienOrder(lst) == "zyxwvutsrqponmlkjihgfedcba"

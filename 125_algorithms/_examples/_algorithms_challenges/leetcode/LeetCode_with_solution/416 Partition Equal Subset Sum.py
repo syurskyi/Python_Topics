@@ -74,5 +74,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-     assert Solution().canPartition([1, 5, 11, 5]) == True
-     assert Solution().canPartition([1, 2, 3, 5]) == False
+     a__ Solution().canPartition([1, 5, 11, 5]) == True
+     a__ Solution().canPartition([1, 2, 3, 5]) == False

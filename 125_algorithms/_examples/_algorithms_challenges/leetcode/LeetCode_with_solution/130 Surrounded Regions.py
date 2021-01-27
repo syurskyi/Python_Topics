@@ -73,7 +73,7 @@ if __name__=="__main__":
         ['X', 'O', 'X', 'X']
     ]
     Solution().solve(board)
-    assert board==expected_board
+    a__ board==expected_board
 
 
 

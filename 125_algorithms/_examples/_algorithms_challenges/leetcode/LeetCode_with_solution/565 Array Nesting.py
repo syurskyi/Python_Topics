@@ -55,4 +55,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().arrayNesting([5,4,0,3,1,6,2]) == 4
+    a__ Solution().arrayNesting([5,4,0,3,1,6,2]) == 4

@@ -90,4 +90,4 @@ class Solution:
 
 
 if __name__=="__main__":
-    assert Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"])==True
+    a__ Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"])==True

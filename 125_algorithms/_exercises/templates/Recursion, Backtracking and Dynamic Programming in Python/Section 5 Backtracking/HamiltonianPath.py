@@ -19,7 +19,7 @@ c_ HamiltonianPath:
         __ position __ n:
             r_ T..
 
-        ___ vertex_index __ range(1, n
+        ___ vertex_index __ ra__(1, n
             __ is_feasible(vertex_index, position
                 # we include vertex (with vertex_index) in the solution
                 path.ap..(vertex_index)
@@ -41,7 +41,7 @@ c_ HamiltonianPath:
             r_ F..
 
         # whether we have already included that given vertex in the result
-        ___ i __ range(actual_position
+        ___ i __ ra__(actual_position
             __ path[i] __ vertex:
                 r_ F..
 

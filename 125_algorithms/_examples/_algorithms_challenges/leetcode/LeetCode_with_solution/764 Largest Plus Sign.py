@@ -102,4 +102,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().orderOfLargestPlusSign(5, [[4, 2]]) == 2
+    a__ Solution().orderOfLargestPlusSign(5, [[4, 2]]) == 2

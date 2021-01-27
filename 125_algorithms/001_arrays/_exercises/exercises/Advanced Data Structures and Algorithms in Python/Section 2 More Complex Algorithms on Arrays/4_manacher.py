@@ -43,7 +43,7 @@
 #
 #     naive_res = naive(str)
 #     manacher_res = manacher(str)
-#     assert naive_res == manacher_res, 'step={}, naive={}, ' \
+#     a__ naive_res == manacher_res, 'step={}, naive={}, ' \
 #                                        'manacher={}, string = {}'.format(
 #         i,
 #         naive_res,

@@ -14,4 +14,4 @@ expected_lines = ['1. Julian     Australia',
 def test_enumerate_names_countries(capfd, line):
     enumerate_names_countries()
     output = capfd.readouterr()[0]
-    assert line in output, f'{line} not in output'
+    a__ line in output, f'{line} not in output'

@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -30,13 +30,13 @@ original = module.ClassName
 
 new_mock = patcher.start()
 
-assert module.ClassName is not original
-assert module.ClassName is new_mock
+a__ module.ClassName is not original
+a__ module.ClassName is new_mock
 
 patcher.stop()
 
-assert module.ClassName is original
-assert module.ClassName is not new_mock
+a__ module.ClassName is original
+a__ module.ClassName is not new_mock
 
 # 
 # A typical use case for this might be for doing multiple patches in the setUp method of a TestCase:
@@ -56,14 +56,14 @@ class MyTest(TestCase):
             self.patcher2.stop()
 
         def test_something(self):
-            assert package.module.Class1 is self.MockClass1
-            assert package.module.Class2 is self.MockClass2
+            a__ package.module.Class1 is self.MockClass1
+            a__ package.module.Class2 is self.MockClass2
 
 MyTest('test_something').run()
  
 #
 # Caution:
-# If you use this technique you must ensure that the patching is “undone” by calling stop.
+# If you use this technique you must ensure that the patching is ï¿½undoneï¿½ by calling stop.
 # This can be fiddlier than you might think, because if an exception is raised in the setUp then tearDown is not called.
 # unittest.TestCase.addCleanup() makes this easier:
 # 
@@ -76,4 +76,4 @@ class MyTest(TestCase):
             self.addCleanup(patcher.stop)
 
         def test_something(self):
-            assert package.module.Class is self.MockClass
+            a__ package.module.Class is self.MockClass

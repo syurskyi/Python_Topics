@@ -104,5 +104,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().knightProbability(3, 2, 0, 0)  == 0.0625
-    assert Solution().knightProbability(3, 3, 0, 0)  == 0.015625
+    a__ Solution().knightProbability(3, 2, 0, 0)  == 0.0625
+    a__ Solution().knightProbability(3, 3, 0, 0)  == 0.015625

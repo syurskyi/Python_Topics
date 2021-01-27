@@ -64,4 +64,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().numIslands(["1", "1"]) == 1
+    a__ Solution().numIslands(["1", "1"]) == 1

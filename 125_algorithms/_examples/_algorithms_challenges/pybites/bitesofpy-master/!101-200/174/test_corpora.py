@@ -57,31 +57,31 @@ def beer_tax():
 
 def test_cleanup_text(getty):
     cleaned = getty.cleaned
-    assert len(cleaned) == 1419
+    a__ len(cleaned) == 1419
     for char in EXTRA_CHAR[:2]:
-        assert char in cleaned
+        a__ char in cleaned
 
 
 def test_cleanup_text_one_extra_char(getty):
     getty.extra = [EXTRA_CHAR[0]]
     cleaned = getty.cleaned
-    assert len(cleaned) == 1419
-    assert EXTRA_CHAR[0] not in cleaned
-    assert EXTRA_CHAR[1] in cleaned
+    a__ len(cleaned) == 1419
+    a__ EXTRA_CHAR[0] not in cleaned
+    a__ EXTRA_CHAR[1] in cleaned
 
 
 def test_cleanup_text_multiple_extra_char(getty):
     getty.extra = EXTRA_CHAR
     cleaned = getty.cleaned
-    assert len(cleaned) == 1416
+    a__ len(cleaned) == 1416
     for char in EXTRA_CHAR:
-        assert char not in cleaned
+        a__ char not in cleaned
 
 
 def test_cleanup_text_alt_text(beer_tax):
     cleaned = beer_tax.cleaned
-    assert len(cleaned) == 2762
-    assert "$" not in cleaned
+    a__ len(cleaned) == 2762
+    a__ "$" not in cleaned
 
 
 def test_word_metrics_gettysburg_default(getty):
@@ -92,18 +92,18 @@ def test_word_metrics_gettysburg_default(getty):
         ("cannot", 3),
         ("dead", 3),
     ]
-    assert getty.metrics == expected
+    a__ getty.metrics == expected
 
 
 def test_word_metrics_beer_tax(beer_tax):
     expected = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
-    assert beer_tax.metrics == expected
+    a__ beer_tax.metrics == expected
 
 
 def test_word_metrics_with_word_removed(beer_tax):
     expected = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
     beer_tax.extra = ["men", "man"]
-    assert beer_tax.metrics == expected
+    a__ beer_tax.metrics == expected
 
 
 def test_graph_gettysburgh(getty, capfd):
@@ -117,7 +117,7 @@ def test_graph_gettysburgh(getty, capfd):
     getty.extra = EXTRA_CHAR
     getty.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    a__ output == expected
 
 
 def test_graph_beer_tax(beer_tax, capfd):
@@ -136,7 +136,7 @@ def test_graph_beer_tax(beer_tax, capfd):
     beer_tax.count = 10
     beer_tax.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    a__ output == expected
 
 
 def test_graph_beer_tax_asterisk(beer_tax, capfd):
@@ -150,4 +150,4 @@ def test_graph_beer_tax_asterisk(beer_tax, capfd):
     beer_tax.tag = "*"
     beer_tax.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    a__ output == expected

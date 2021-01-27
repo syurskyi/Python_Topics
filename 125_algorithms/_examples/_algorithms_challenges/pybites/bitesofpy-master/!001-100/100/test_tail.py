@@ -19,8 +19,8 @@ def my_file(tmp_path):
 
 
 def test_tail_various_args(my_file):
-    assert tail(my_file.resolve(), 1) == ['Become a PyBites ninja!']
-    assert tail(my_file.resolve(), 2) == ['Keep calm and code in Python!',
+    a__ tail(my_file.resolve(), 1) == ['Become a PyBites ninja!']
+    a__ tail(my_file.resolve(), 2) == ['Keep calm and code in Python!',
                                           'Become a PyBites ninja!']
 
 
@@ -30,4 +30,4 @@ def test_tail_arg_gt_num_lines_files(my_file):
     actual = tail(my_file.resolve(), 10)
     expected = [line.decode("utf-8")
                 for line in content.splitlines()]
-    assert actual == expected
+    a__ actual == expected

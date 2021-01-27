@@ -82,6 +82,6 @@ multiline_ocr = [
                 " _|  ||_|",
                 "         ",
 ]
-assert number(multiline_ocr) == '318,318'
+a__ number(multiline_ocr) == '318,318'
 
 

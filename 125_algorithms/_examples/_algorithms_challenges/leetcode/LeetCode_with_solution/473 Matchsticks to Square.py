@@ -59,5 +59,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().makesquare([1,1,2,2,2]) == True
-    assert Solution().makesquare([3,3,3,3,4]) == False
+    a__ Solution().makesquare([1,1,2,2,2]) == True
+    a__ Solution().makesquare([3,3,3,3,4]) == False

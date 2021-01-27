@@ -17,7 +17,7 @@ ___ printMaxActivities(activities
     i = 0
     firstA = activities[i][0]
     print(firstA)
-    ___ j __ range(le_(activities)):
+    ___ j __ ra__(le_(activities)):
         __ activities[j][1] > activities[i][2]:
             print(activities[j][0])
             i = j

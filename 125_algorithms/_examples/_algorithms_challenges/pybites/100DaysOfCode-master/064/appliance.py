@@ -28,11 +28,11 @@ if __name__ == '__main__':
     k = ApplianceCost('kettle', 1500)
     use = 365 * 60
     k.consume(use)
-    assert k.cost == 60.23
+    a__ k.cost == 60.23
     print(k.cost)
 
     s = ApplianceCost('shredder', 360)
     use = 52 * 15
     s.consume(use)
-    assert s.cost == 0.51
+    a__ s.cost == 0.51
     print(s.cost)

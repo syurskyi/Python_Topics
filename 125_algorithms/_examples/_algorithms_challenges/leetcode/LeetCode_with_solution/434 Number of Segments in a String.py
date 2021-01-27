@@ -31,4 +31,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().countSegments("Hello, my name is John") == 5
+    a__ Solution().countSegments("Hello, my name is John") == 5

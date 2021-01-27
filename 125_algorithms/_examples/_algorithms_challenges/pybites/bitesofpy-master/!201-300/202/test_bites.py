@@ -38,7 +38,7 @@ def test_different_args_for_N(N, expected):
     actual = get_most_complex_bites(N)
     # str or int for IDs is fine with us
     actual = [str(i) for i in actual]
-    assert actual == expected
+    a__ actual == expected
 
 
 @pytest.mark.parametrize("N, expected", [
@@ -52,4 +52,4 @@ def test_only_intro_bites(intro_bites, N, expected):
     actual = get_most_complex_bites(N, stats=intro_bites)
     # str or int for IDs is fine with us
     actual = [str(i) for i in actual]
-    assert actual == expected
+    a__ actual == expected

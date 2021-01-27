@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -24,7 +24,7 @@
 #
 
 #
-# Mock has two assert methods that are extremely handy: assert_called_with() and assert_called_once_with().
+# Mock has two a__ methods that are extremely handy: assert_called_with() and assert_called_once_with().
 # 
 
 mock = Mock(name='Thing', return_value=None)
@@ -36,7 +36,7 @@ mock(1, 2, 3)
 mock.assert_called_once_with(1, 2, 3)
 
 # 
-# Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these assert methods then your
+# Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these a__ methods then your
 # assertion is gone:
 # 
 
@@ -53,7 +53,7 @@ mock.assret_called_once_with(4, 5, 6)
  
 #
 # Note that this is another reason why you need integration tests as well as unit tests. Testing everything in isolation is all fine and dandy, but if you
-# don’t test how your units are “wired together” there is still lots of room for bugs that tests might have caught.
+# donï¿½t test how your units are ï¿½wired togetherï¿½ there is still lots of room for bugs that tests might have caught.
 # mock already provides a feature to help with this, called speccing. If you use a class or instance as the spec for a mock then you can only access
 # attributes on the mock that exist on the real class:
 # 
@@ -76,12 +76,12 @@ mock.has_data.assret_called_with()
 # 
 # Auto-speccing solves this problem. You can either pass autospec=True to patch() / patch.object() or use the create_autospec() function to create a mock 
 # with a spec. If you use the autospec=True argument to patch() then the object that is being replaced will be used as the spec object.
-# Because the speccing is done “lazily” (the spec is created as attributes on the mock are accessed) you can use it with very complex or deeply nested
+# Because the speccing is done ï¿½lazilyï¿½ (the spec is created as attributes on the mock are accessed) you can use it with very complex or deeply nested
 # objects (like modules that import modules that import modules) without a big performance hit.
 # 
 
 #
-# Here’s an example of it in use:
+# Hereï¿½s an example of it in use:
 # 
 
 from urllib import request
@@ -102,7 +102,7 @@ mock_request.Request
 #
 
 #
-# Here’s what happens if we try to call it incorrectly:
+# Hereï¿½s what happens if we try to call it incorrectly:
 # 
 
 req = request.Request()
@@ -145,7 +145,7 @@ mock_request.Request('foo', 'bar')
 # OUTPUT: '<NonCallableMagicMock name='mock.Request()' spec='Request' id='...'>'
 
 # 
-# This isn’t without caveats and limitations however, which is why it is not the default behaviour.
+# This isnï¿½t without caveats and limitations however, which is why it is not the default behaviour.
 # In order to know what attributes are available on the spec object, autospec has to introspect (access attributes) the spec.
 # As you traverse attributes on the mock a corresponding traversal of the original object is happening under the hood.
 # If any of your specced objects have properties or descriptors that can trigger code execution then you may not be able to use autospec.
@@ -154,7 +154,7 @@ mock_request.Request('foo', 'bar')
 
 #
 # A more serious problem is that it is common for instance attributes to be created in the __init__() method and not to exist on the class at all.
-# autospec can’t know about any dynamically created attributes and restricts the api to visible attributes.
+# autospec canï¿½t know about any dynamically created attributes and restricts the api to visible attributes.
 # 
 
 class Something:
@@ -170,7 +170,7 @@ class Something:
 #
 # There are a few different ways of resolving this problem.
 # The easiest, but not necessarily the least annoying, way is to simply set the required attributes on the mock after creation.
-# Just because autospec doesn’t allow you to fetch attributes that don’t exist on the spec it doesn’t prevent you setting them:
+# Just because autospec doesnï¿½t allow you to fetch attributes that donï¿½t exist on the spec it doesnï¿½t prevent you setting them:
 # 
 
 with patch('__main__.Something', autospec=True):
@@ -200,8 +200,8 @@ class Something:
 # 
 # This brings up another issue.
 # It is relatively common to provide a default value of None for members that will later be an object of a different type.
-# None would be useless as a spec because it wouldn’t let you access any attributes or methods on it.
-# As None is never going to be useful as a spec, and probably indicates a member that will normally of some other type, autospec doesn’t use a spec for
+# None would be useless as a spec because it wouldnï¿½t let you access any attributes or methods on it.
+# As None is never going to be useful as a spec, and probably indicates a member that will normally of some other type, autospec doesnï¿½t use a spec for
 # members that are set to None. These will just be ordinary mocks (well - MagicMocks):
 # 
 
@@ -215,7 +215,7 @@ mock.member.foo.bar.baz()
 # OUTPUT: '<MagicMock name='mock.member.foo.bar.baz()' id='...'>'
  
 #
-# If modifying your production classes to add defaults isn’t to your liking then there are more options.
+# If modifying your production classes to add defaults isnï¿½t to your liking then there are more options.
 # One of these is simply to use an instance as the spec rather than the class.
 # The other is to create a subclass of the production class and add the defaults to the subclass without affecting the production class.
 # Both of these require you to use an alternative object as the spec.

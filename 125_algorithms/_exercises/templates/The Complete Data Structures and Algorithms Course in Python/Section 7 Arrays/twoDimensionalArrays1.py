@@ -18,7 +18,7 @@ print(le_(newTwoDArray))
 print(le_(newTwoDArray[0]))
 
 ___ accessElements(array, rowIndex, colIndex
-    __ rowIndex >= le_(array) and colIndex >= le_(array[0]
+    __ rowIndex >= le_(array) a__ colIndex >= le_(array[0]
         print('Incorrect Index')
     ____
         print(array[rowIndex][colIndex])
@@ -26,8 +26,8 @@ ___ accessElements(array, rowIndex, colIndex
 accessElements(newTwoDArray, 1, 2)
 
 ___ traverseTDArray(array
-    ___ i __ range(le_(array)):
-        ___ j __ range(le_(array[0])):
+    ___ i __ ra__(le_(array)):
+        ___ j __ ra__(le_(array[0])):
             print(array[i][j])
 
 
@@ -35,10 +35,10 @@ traverseTDArray(twoDArray)
 
 
 ___ searchTDArray(array, value
-    ___ i __ range(le_(array)):
-        ___ j __ range(le_(array[0])):
+    ___ i __ ra__(le_(array)):
+        ___ j __ ra__(le_(array[0])):
             __ array[i][j] __ value:
-                r_ 'The value is located index '+str(i)+" "+str(j)
+                r_ 'The value is located index '+st.(i)+" "+st.(j)
     r_ 'The element no found'
 
 

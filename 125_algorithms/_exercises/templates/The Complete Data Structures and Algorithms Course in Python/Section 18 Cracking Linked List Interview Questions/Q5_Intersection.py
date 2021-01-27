@@ -19,7 +19,7 @@ ___ intersection(llA, llB
     longerNode = longer.head
     shorterNode = shorter.head
 
-    ___ i __ range(diff
+    ___ i __ ra__(diff
         longerNode = longerNode.next
     
     w__ shorterNode __ not longerNode:

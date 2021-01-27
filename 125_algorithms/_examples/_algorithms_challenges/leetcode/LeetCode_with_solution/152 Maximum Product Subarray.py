@@ -164,9 +164,9 @@ class Solution(object):
 
 if __name__=="__main__":
     print Solution().maxProduct([2,3,-2,4])
-    assert Solution().maxProduct([2,-5,-2,-4,3])==24
-    assert Solution().maxProduct([-2, 0, -1])==0
-    assert Solution().maxProduct([-2])==-2
-    assert Solution().maxProduct([2, 3, -2, 4, -2])==96
-    assert Solution().maxProduct([2, 3, -2, 4, 0, -2])==6
-    assert Solution().maxProduct([2,3,-2,4])==6
+    a__ Solution().maxProduct([2,-5,-2,-4,3])==24
+    a__ Solution().maxProduct([-2, 0, -1])==0
+    a__ Solution().maxProduct([-2])==-2
+    a__ Solution().maxProduct([2, 3, -2, 4, -2])==96
+    a__ Solution().maxProduct([2, 3, -2, 4, 0, -2])==6
+    a__ Solution().maxProduct([2,3,-2,4])==6

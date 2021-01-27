@@ -182,10 +182,10 @@ def actual2():
 def test_output_matches(actual):
     expected = [line.rstrip() for line in
                 EXPECTED_OUTPUT.strip().splitlines()]
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_different_output(actual2):
     expected = [line.rstrip() for line in
                 EXPECTED_OUTPUT_WITH_GAP.strip().splitlines()]
-    assert actual2 == expected
+    a__ actual2 == expected

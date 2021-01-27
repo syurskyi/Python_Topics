@@ -35,4 +35,4 @@ print(naive(arr, n))
 print(optimal(arr, n))
 
 for i in range(1, 1000):
-    assert np.array_equal(naive(arr, i), optimal(arr, i))
+    a__ np.array_equal(naive(arr, i), optimal(arr, i))

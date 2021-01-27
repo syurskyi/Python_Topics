@@ -37,14 +37,14 @@ def output_your_code():
 
 
 def test_quotes_type(output_your_code):
-    assert type(output_your_code) == dict
+    a__ type(output_your_code) == dict
 
 
 def test_quotes_len(output_your_code):
-    assert len(output_your_code) == 10
+    a__ len(output_your_code) == 10
 
 
 @pytest.mark.parametrize("author, quote",
                          zip(expected_authors, expected_quotes))
 def test_quotes_dict_content(author, quote, output_your_code):
-    assert output_your_code.get(author) == quote
+    a__ output_your_code.get(author) == quote

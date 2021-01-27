@@ -39,4 +39,4 @@ class Solution(object):
 
 if __name__ == "__main__":
     num = [7, 1, 2, 3, 4, 5, 6]
-    assert Solution().findMin(num) == 1
+    a__ Solution().findMin(num) == 1

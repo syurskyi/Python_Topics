@@ -70,7 +70,7 @@ class Solution:
                     root = cur
                     stk = [(depth, root)]
                 else:
-                    assert stk
+                    a__ stk
                     while stk[-1][0] != depth - 1:
                         stk.pop()
 
@@ -122,7 +122,7 @@ class Solution:
                 root = cur
                 stk = [root]
             else:
-                assert stk
+                a__ stk
                 while depths[stk[-1].val] != v - 1:
                     stk.pop()
 
@@ -139,5 +139,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().recoverFromPreorder("5-4--4")
-    assert Solution().recoverFromPreorder("1-2--3--4-5--6--7")
+    a__ Solution().recoverFromPreorder("5-4--4")
+    a__ Solution().recoverFromPreorder("1-2--3--4-5--6--7")

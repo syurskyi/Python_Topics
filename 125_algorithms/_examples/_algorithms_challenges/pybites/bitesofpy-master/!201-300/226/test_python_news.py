@@ -20,7 +20,7 @@ def test_homepage():
         Entry(title='Python 3.8 is out (www.python.org)',
               points=9, comments=0),
     ]
-    assert actual == expected
+    a__ actual == expected
 
 
 def test_page2():
@@ -32,4 +32,4 @@ def test_page2():
                      'written in Python/Django (github.com)'),
               points=3, comments=1),
     ]
-    assert actual == expected
+    a__ actual == expected

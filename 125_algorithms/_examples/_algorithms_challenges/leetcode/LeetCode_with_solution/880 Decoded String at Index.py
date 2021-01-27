@@ -100,4 +100,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().decodeAtIndex("ha22", 5) == "h"
+    a__ Solution().decodeAtIndex("ha22", 5) == "h"

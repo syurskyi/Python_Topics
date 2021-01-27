@@ -56,4 +56,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().missingNumber([2, 0]) == 1
+    a__ Solution().missingNumber([2, 0]) == 1

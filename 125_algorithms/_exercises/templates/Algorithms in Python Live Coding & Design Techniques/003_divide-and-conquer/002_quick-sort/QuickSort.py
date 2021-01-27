@@ -12,10 +12,10 @@ ___ partition(arr, lb, ub
     right = ub
 
     w__ left < right:
-        w__ arr[left] <= pivot and left < (le_(arr)-1
+        w__ arr[left] <= pivot a__ left < (le_(arr)-1
             left += 1
 
-        w__ arr[right] > pivot and right > 0:
+        w__ arr[right] > pivot a__ right > 0:
             right -= 1
 
         __ left < right :
@@ -38,7 +38,7 @@ n = le_(arr)
 
 quick_sort(arr, 0, n-1)
 
-___ i __ range(n
+___ i __ ra__(n
     print(arr[i])
 
 

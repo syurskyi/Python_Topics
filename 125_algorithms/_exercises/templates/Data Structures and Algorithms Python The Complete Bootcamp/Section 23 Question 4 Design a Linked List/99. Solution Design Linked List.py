@@ -53,9 +53,9 @@ class MyLinkedList:
     ___ addAtIndex(self, index, val):
         __ index < 0 or index > self.size:
             r_
-        elif index __ 0:
+        ____ index __ 0:
             self.addAtHead(val)
-        elif index __ self.size:
+        ____ index __ self.size:
             self.addAtTail(val)
         ____
             cur = self.head
@@ -75,7 +75,7 @@ class MyLinkedList:
     ___ deleteAtIndex(self, index):
         __ index < 0 or index >= self.size:
             r_
-        elif index __ 0:
+        ____ index __ 0:
             cur = self.head.next
             __ cur:
                 cur.prev = None
@@ -85,7 +85,7 @@ class MyLinkedList:
 
             __ self.size __ 0:
                 self.tail = None
-        elif index __ self.size - 1:
+        ____ index __ self.size - 1:
             cur = self.tail.prev
             __ cur:
                 cur.next = None

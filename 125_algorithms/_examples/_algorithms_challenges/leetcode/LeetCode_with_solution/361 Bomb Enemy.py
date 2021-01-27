@@ -58,4 +58,4 @@ class Solution(object):
         return gmax
 
 if __name__ == "__main__":
-    assert Solution().maxKilledEnemies(["0E00", "E0WE", "0E00"]) == 3
+    a__ Solution().maxKilledEnemies(["0E00", "E0WE", "0E00"]) == 3

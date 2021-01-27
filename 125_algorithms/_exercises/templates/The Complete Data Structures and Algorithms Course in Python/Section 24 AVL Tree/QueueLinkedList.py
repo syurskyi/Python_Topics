@@ -8,7 +8,7 @@ c_ Node:
         next = N..
     
     ___ __str__(self
-        r_ str(value)
+        r_ st.(value)
 
 c_ LinkedList:
     ___  - (self
@@ -22,7 +22,7 @@ c_ Queue:
         linkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x) ___ x __ linkedList]
+        values = [st.(x) ___ x __ linkedList]
         r_ ' '.j..(values)
     
     ___ enqueue  value

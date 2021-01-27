@@ -15,4 +15,4 @@ def test_spinner(monkeypatch, capfd, seconds, rounds, slice_):
     expected = states * rounds
     if slice_:
         expected += states[:slice_]
-    assert actual == expected
+    a__ actual == expected

@@ -92,4 +92,4 @@ def test_fix_translation(org, trans, fix):
     print('trans', len(trans.splitlines()))
     print('fix', len(fix.splitlines()))
     """
-    assert fix_translation(org, trans) == fix
+    a__ fix_translation(org, trans) == fix

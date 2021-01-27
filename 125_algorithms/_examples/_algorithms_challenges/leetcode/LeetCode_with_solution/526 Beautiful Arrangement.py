@@ -58,4 +58,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().countArrangement(2) == 2
+    a__ Solution().countArrangement(2) == 2

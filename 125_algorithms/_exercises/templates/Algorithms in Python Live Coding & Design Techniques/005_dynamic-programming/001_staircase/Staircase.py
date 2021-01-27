@@ -7,7 +7,7 @@ ___ ways(n, k
         r_ 0
 
     ans = 0
-    ___ i __ range(1, k+1
+    ___ i __ ra__(1, k+1
         ans += ways(n-i, k)
 
     r_ ans
@@ -25,7 +25,7 @@ ___ ways_top_down(n, k, dp
         r_ dp[n]
 
     dp[n] = 0
-    ___ i __ range(1, k+1
+    ___ i __ ra__(1, k+1
         dp[n] += ways_top_down(n-i, k, dp)
 
     r_ dp[n]
@@ -36,9 +36,9 @@ ___ ways_bottom_up(n, k
     dp = [0] * (n+1)
     dp[0] = 1
 
-    ___ step __ range(1, n+1
+    ___ step __ ra__(1, n+1
         dp[step] = 0
-        ___ j __ range(1, k+1
+        ___ j __ ra__(1, k+1
             __ step - j >= 0:
                 dp[step] += dp[step - j]
     r_ dp[n]

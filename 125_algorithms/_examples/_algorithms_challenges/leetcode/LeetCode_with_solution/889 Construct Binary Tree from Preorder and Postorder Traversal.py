@@ -55,7 +55,7 @@ class Solution:
                     else:
                         stk[-1].right = popped
 
-        assert j == len(post)
+        a__ j == len(post)
         return popped  # root is the last popped element
 
     def constructFromPrePost_complex(self, pre: List[int], post: List[int]) -> TreeNode:

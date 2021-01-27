@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -21,9 +21,9 @@
 #
 
 # 
-# Here’s some example code that shows the problem.
+# Hereï¿½s some example code that shows the problem.
 #
-# Imagine the following functions defined in ‘mymodule’:
+# Imagine the following functions defined in ï¿½mymoduleï¿½:
 # 
 
 def frob(val):
@@ -57,13 +57,13 @@ mock_frob.assert_called_with({6})
 #
 
 # 
-# Here’s one solution that uses the side_effect functionality.
+# Hereï¿½s one solution that uses the side_effect functionality.
 # If you provide a side_effect function for a mock then side_effect will be called with the same args as the mock.
 # This gives us an opportunity to copy the arguments and store them for later assertions.
 #
 
 #
-# In this example I’m using another mock to store the arguments so that I can use the mock methods for doing the assertion.
+# In this example Iï¿½m using another mock to store the arguments so that I can use the mock methods for doing the assertion.
 # Again a helper function sets this up for me.
 # 
 
@@ -111,7 +111,7 @@ new_mock.call_args
 # 
 
 def side_effect(arg):
-        assert arg == {6}
+        a__ arg == {6}
 
 mock = Mock(side_effect=side_effect)
 
@@ -121,7 +121,7 @@ mock(set())
 #
 # An alternative approach is to create a subclass of Mock or MagicMock that copies (using copy.deepcopy()) the arguments.
 #
-# Here’s an example implementation:
+# Hereï¿½s an example implementation:
 # 
 
 from copy import deepcopy

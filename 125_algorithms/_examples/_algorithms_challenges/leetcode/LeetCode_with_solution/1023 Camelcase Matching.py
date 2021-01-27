@@ -68,4 +68,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") == [True, False, True, False, False]
+    a__ Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") == [True, False, True, False, False]

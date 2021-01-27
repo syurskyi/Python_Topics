@@ -101,10 +101,10 @@ class Solution:
         return dp[m]
 
 if __name__=="__main__":
-    assert Solution().isMatch("aab", "c*a*b")==False
-    assert Solution().isMatch("aa","a")==False
-    assert Solution().isMatch("aa", "aa")==True
-    assert Solution().isMatch("aaa", "aa")==False
-    assert Solution().isMatch("aaa", "*")==True
-    assert Solution().isMatch("aa", "a*")==True
-    assert Solution().isMatch("ab", "?*")==True
+    a__ Solution().isMatch("aab", "c*a*b")==False
+    a__ Solution().isMatch("aa","a")==False
+    a__ Solution().isMatch("aa", "aa")==True
+    a__ Solution().isMatch("aaa", "aa")==False
+    a__ Solution().isMatch("aaa", "*")==True
+    a__ Solution().isMatch("aa", "a*")==True
+    a__ Solution().isMatch("ab", "?*")==True

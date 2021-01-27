@@ -7,7 +7,7 @@ c_ TreeNode:
         children = children
     
     ___ __str__  level=0
-        ret = "  " * level + str(data)  + "\n"
+        ret = "  " * level + st.(data)  + "\n"
         ___ child __ children:
             ret += child.__str__(level + 1)
         r_ ret

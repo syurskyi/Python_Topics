@@ -57,5 +57,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findPaths(2, 2, 2, 0, 0) == 6
-    assert Solution().findPaths(1, 3, 3, 0, 1) == 12
+    a__ Solution().findPaths(2, 2, 2, 0, 0) == 6
+    a__ Solution().findPaths(1, 3, 3, 0, 1) == 12

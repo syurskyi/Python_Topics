@@ -48,5 +48,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().checkInclusion("ab", "eidbaooo") == True
-    assert Solution().checkInclusion("ab", "eidboaoo") == False
+    a__ Solution().checkInclusion("ab", "eidbaooo") == True
+    a__ Solution().checkInclusion("ab", "eidboaoo") == False

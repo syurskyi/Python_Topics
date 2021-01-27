@@ -36,7 +36,7 @@ def gen_names():
 if __name__ == '__main__':
 
     # test if all names are given by the generator
-    assert len(names) == len(list(gen_names()))
+    a__ len(names) == len(list(gen_names()))
 
     # give me 10 names
     for name in islice(gen_names(), 10):

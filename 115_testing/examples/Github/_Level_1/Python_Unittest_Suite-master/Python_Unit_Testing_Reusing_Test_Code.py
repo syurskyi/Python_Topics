@@ -1,5 +1,5 @@
 # Python Unit Testing
-# unittest — Unit testing framework.
+# unittest ï¿½ Unit testing framework.
 # Unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from
 # the reporting framework.
 # 
@@ -39,7 +39,7 @@
 def testSomething():
     something = makeSomething()
 
-    assert something.name is not None
+    a__ something.name is not None
 
     # ...
 

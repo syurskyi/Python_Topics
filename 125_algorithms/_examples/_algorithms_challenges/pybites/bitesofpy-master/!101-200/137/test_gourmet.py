@@ -3,7 +3,7 @@ from gourmet import best_match_per_wine, match_wine_5cheeses
 
 
 def test_best_match_per_wine_all():
-    assert best_match_per_wine()[2] == 13.0
+    a__ best_match_per_wine()[2] == 13.0
 
 
 cases_best_by_wine = [
@@ -16,7 +16,7 @@ cases_best_by_wine = [
 @pytest.mark.parametrize("case", cases_best_by_wine)
 def test_best_match_per_wine_type(case):
     wine_type, *result = case
-    assert best_match_per_wine(wine_type) == tuple(result)
+    a__ best_match_per_wine(wine_type) == tuple(result)
 
 
 def test_invalid_wine_type():
@@ -25,7 +25,7 @@ def test_invalid_wine_type():
 
 
 def test_all_wines_included():
-    assert len(match_wine_5cheeses()) == 26
+    a__ len(match_wine_5cheeses()) == 26
 
 
 mw5c = match_wine_5cheeses()
@@ -64,5 +64,5 @@ def test_match_wine_5cheeses(case):
     because if score is same for more pairs, order of pairs cannot be assumed
     """
     idx, wine, cheeses = case
-    assert mw5c[idx][0] == wine
-    assert mw5c[idx][1] == cheeses
+    a__ mw5c[idx][0] == wine
+    a__ mw5c[idx][1] == cheeses

@@ -1356,7 +1356,7 @@ class nodes(object):
     def Create(self):
         pass
 
-    def Assert(self):
+    def a__(self):
         pass
 
     def Backdrop(self):

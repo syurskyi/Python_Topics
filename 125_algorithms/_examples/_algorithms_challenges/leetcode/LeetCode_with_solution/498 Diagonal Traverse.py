@@ -88,7 +88,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().findDiagonalOrder([
+    a__ Solution().findDiagonalOrder([
         [ 1, 2, 3 ],
         [ 4, 5, 6 ],
         [ 7, 8, 9 ]

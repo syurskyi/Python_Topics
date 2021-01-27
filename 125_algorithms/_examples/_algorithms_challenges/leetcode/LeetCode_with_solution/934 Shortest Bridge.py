@@ -50,7 +50,7 @@ class Solution:
                 if A[i][j] == 1 and colors[i][j] is None:
                     self.dfs(A, i, j, colors, color)
                     color += 1
-        assert color == 2
+        a__ color == 2
 
         # BFS
         step = 0
@@ -93,4 +93,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().shortestBridge([[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]) == 1
+    a__ Solution().shortestBridge([[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]) == 1

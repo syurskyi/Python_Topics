@@ -18,23 +18,23 @@ def slice2():
 
 
 def test_iterator_islice(slice1, slice2):
-    assert len(slice1) == 96
-    assert len(slice2) == 117
+    a__ len(slice1) == 96
+    a__ len(slice2) == 117
 
-    assert slice1[0] == State(color='red', command='Stop', timeout=2)
-    assert slice2[0] == State(color='green', command='Go', timeout=2)
+    a__ slice1[0] == State(color='red', command='Stop', timeout=2)
+    a__ slice2[0] == State(color='green', command='Go', timeout=2)
 
-    assert slice1[-1] == State(color='amber', command='Caution', timeout=0.5)
-    assert slice2[-1] == State(color='red', command='Stop', timeout=2)
+    a__ slice1[-1] == State(color='amber', command='Caution', timeout=0.5)
+    a__ slice2[-1] == State(color='red', command='Stop', timeout=2)
 
 
 def test_equal_values_in_islice(slice1):
     for color in 'red green amber'.split():
-        assert sum(1 for state in slice1 if state.color == color) == 32
+        a__ sum(1 for state in slice1 if state.color == color) == 32
 
 
 def test_return_types(slice2):
-    assert all(type(state) == State for state in slice2)
+    a__ all(type(state) == State for state in slice2)
 
 
 @pytest.mark.parametrize("color, expected", [
@@ -45,4 +45,4 @@ def test_return_types(slice2):
 def test_timings(slice1, color, expected):
     timeout_for_color = sum(state.timeout for state in slice1
                             if state.color == color)
-    assert timeout_for_color == expected
+    a__ timeout_for_color == expected

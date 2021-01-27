@@ -2,7 +2,7 @@ c_ QueensProblem:
 
     ___  -   n
         n = n
-        chess_table = [[0 ___ i __ range(n)] ___ j __ range(n)]
+        chess_table = [[0 ___ i __ ra__(n)] ___ j __ ra__(n)]
 
     ___ solve_n_queens(self
 
@@ -22,7 +22,7 @@ c_ QueensProblem:
             r_ T..
 
         # let's try to find a position for queen (col_index) within a given column
-        ___ row_index __ range(n
+        ___ row_index __ ra__(n
             __ is_place_valid(row_index, col_index
                 # 1 means that there is a queen at the given location
                 chess_table[row_index][col_index] = 1
@@ -44,7 +44,7 @@ c_ QueensProblem:
 
         # check the rows (whether given queens can attack each other horizontally)
         # it means that there is already at least 1 queen in that given row
-        ___ i __ range(n
+        ___ i __ ra__(n
             __ chess_table[row_index][i] __ 1:
                 r_ F..
 
@@ -54,7 +54,7 @@ c_ QueensProblem:
         # we have to check the diagonals
         # from top left to bottom right
         j = col_index
-        ___ i __ range(row_index, -1, -1
+        ___ i __ ra__(row_index, -1, -1
 
             __ i < 0:
                 break
@@ -67,7 +67,7 @@ c_ QueensProblem:
         # we have to check the diagonals
         # from top right to bottom left
         j = col_index
-        ___ i __ range(row_index, n
+        ___ i __ ra__(row_index, n
 
             __ j < 0:
                 break
@@ -80,8 +80,8 @@ c_ QueensProblem:
         r_ T..
 
     ___ print_queens(self
-        ___ i __ range(n
-            ___ j __ range(n
+        ___ i __ ra__(n
+            ___ j __ ra__(n
                 __ chess_table[i][j] __ 1:
                     print(' Q ', end='')
                 ____

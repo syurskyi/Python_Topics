@@ -6,7 +6,7 @@ c_ KnightsTour:
         # possible horizontal components of the moves
         x_moves = [2, 1, -1, -2, -2, -1, 1, 2]
         y_moves = [1, 2, 2, 1, -1, -2, -2, -1]
-        solution_matrix = [[-1 ___ _ __ range(board_size)] ___ _ __ range(board_size)]
+        solution_matrix = [[-1 ___ _ __ ra__(board_size)] ___ _ __ ra__(board_size)]
 
     ___ solve_problem(self
 
@@ -27,7 +27,7 @@ c_ KnightsTour:
             r_ T..
 
         # we have to consider all the possible moves and find the valid one
-        ___ move_index __ range(le_(x_moves)):
+        ___ move_index __ ra__(le_(x_moves)):
 
             next_x = x + x_moves[move_index]
             next_y = y + y_moves[move_index]
@@ -64,8 +64,8 @@ c_ KnightsTour:
         r_ T..
 
     ___ print_solution(self
-        ___ i __ range(board_size
-            ___ j __ range(board_size
+        ___ i __ ra__(board_size
+            ___ j __ ra__(board_size
                 print(solution_matrix[i][j], end=' ')
             print('\n')
 

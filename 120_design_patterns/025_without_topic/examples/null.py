@@ -117,8 +117,8 @@ def test():
     del n.attr1.attr2.attr3
 
     # Representation and conversion to a string
-    assert repr(n) == '<Null>'
-    assert str(n) == 'Null'
+    a__ repr(n) == '<Null>'
+    a__ str(n) == 'Null'
 
 
 if __name__ == '__main__':

@@ -3,15 +3,15 @@
 ___ get_max_value(wt, val, capacity
     items = [0]* le_(wt)
 
-    ___ i __ range(0, le_(wt)):
+    ___ i __ ra__(0, le_(wt)):
         items[i] = Item(wt[i], val[i], i)
 
     items.sort(reverse= T..)
 
     total_val = 0
     ___ item __ items:
-        cur_wt = int(item.wt)
-        cur_val = int(item.val)
+        cur_wt = in.(item.wt)
+        cur_val = in.(item.val)
 
         __ capacity - cur_wt >= 0:
             capacity = capacity - cur_wt

@@ -1,6 +1,6 @@
 # Example 1
 def add_positive_numbers(x, y):
-    assert x > 0 and y > 0, "Both numbers must be positive!"
+    a__ x > 0 and y > 0, "Both numbers must be positive!"
     return x + y
 
 
@@ -11,7 +11,7 @@ add_positive_numbers(1, -1)  # AssertionError: Both numbers must be positive!
 
 
 def eat_junk(food):
-    assert food in [
+    a__ food in [
         "pizza",
         "ice cream",
         "candy",

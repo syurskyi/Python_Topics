@@ -29,7 +29,7 @@ ___ dijkstra(graph, initial
             __ node __ visited:
                 __ minNode __ N..:
                     minNode = node
-                elif visited[node] < visited[minNode]:
+                ____ visited[node] < visited[minNode]:
                     minNode = node
         __ minNode __ N..:
             break

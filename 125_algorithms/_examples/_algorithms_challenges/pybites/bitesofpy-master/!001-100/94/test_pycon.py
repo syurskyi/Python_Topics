@@ -15,8 +15,8 @@ def videos():
 
 
 def test_load_pycon_data(videos):
-    assert len(videos) == 147
-    assert isinstance(videos[0], tuple)
+    a__ len(videos) == 147
+    a__ isinstance(videos[0], tuple)
 
 
 def test_get_most_popular_talks_by_views(videos):
@@ -27,7 +27,7 @@ def test_get_most_popular_talks_by_views(videos):
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA']
     vids = list(get_most_popular_talks_by_views(videos_copy))
     actual = [vid.id for vid in vids[:5]]
-    assert expected == actual
+    a__ expected == actual
 
 
 def test_get_most_popular_talks_by_like_ratio(videos):
@@ -37,18 +37,18 @@ def test_get_most_popular_talks_by_like_ratio(videos):
     expected = ['8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ']
     actual = [vid.id for vid in vids[:5]]
-    assert expected == actual
+    a__ expected == actual
 
 
 def test_get_talks_gt_one_hour(videos):
     vids = get_talks_gt_one_hour(videos)
-    assert vids[0].id == '0hsKLYfyQZc'
-    assert vids[-1].id == 'ZwvjtCjimiw'
-    assert len(vids) == 35
+    a__ vids[0].id == '0hsKLYfyQZc'
+    a__ vids[-1].id == 'ZwvjtCjimiw'
+    a__ len(vids) == 35
 
 
 def test_get_talks_lt_twentyfour_min(videos):
     vids = get_talks_lt_twentyfour_min(videos)
-    assert vids[0].id == 'zQeYx87mfyw'
-    assert vids[-1].id == 'TcHkkzWBMKY'
-    assert len(vids) == 12
+    a__ vids[0].id == 'zQeYx87mfyw'
+    a__ vids[-1].id == 'TcHkkzWBMKY'
+    a__ len(vids) == 12

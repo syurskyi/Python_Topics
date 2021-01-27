@@ -70,7 +70,7 @@ for n in range(2, 5):
     for m in range(2, 100):
         classic = run_classic_dp(n, m)
         new = run_new_dp(n, m)
-        assert classic == new, 'classic={}, new={}, n={}, m={}'.format(
+        a__ classic == new, 'classic={}, new={}, n={}, m={}'.format(
             classic,
             new,
             n,

@@ -87,7 +87,7 @@ c_ Generator(QIODevice):
                 scaler _ l___ x: x * 32767
                 pack_format _ '<h' __ f...byteOrder() __ QAudioFormat.LittleEndian ____ '>h'
 
-        assert(pack_format !_ '')
+        a__(pack_format !_ '')
 
         channelBytes _ f...sampleSize() // 8
         sampleBytes _ f...channelCount() * channelBytes

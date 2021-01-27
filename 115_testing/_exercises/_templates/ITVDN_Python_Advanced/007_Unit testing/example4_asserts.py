@@ -5,7 +5,7 @@
 #
 #     ___ test_example1
 #         a... 1 __ 1
-#         # assert 1 == 2
+#         # a__ 1 == 2
 #
 #     ___ test_example2
 #         a.E. 1, 1)

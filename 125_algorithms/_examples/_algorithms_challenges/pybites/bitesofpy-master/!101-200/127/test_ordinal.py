@@ -40,4 +40,4 @@ from ordinal import get_ordinal_suffix
     (1111, '1111th'),
 ])
 def test_ordinal(input_argument, expected_return):
-    assert get_ordinal_suffix(input_argument) == expected_return
+    a__ get_ordinal_suffix(input_argument) == expected_return

@@ -112,6 +112,6 @@ class Solution2:
         return True
 
 if __name__ == "__main__":
-    assert Solution().isPossible([1,2,3,3,4,5]) == True
-    assert Solution().isPossible([1,2,3,3,4,4,5,5]) == True
-    assert Solution().isPossible([1,2,3,4,4,5]) == False
+    a__ Solution().isPossible([1,2,3,3,4,5]) == True
+    a__ Solution().isPossible([1,2,3,3,4,4,5,5]) == True
+    a__ Solution().isPossible([1,2,3,4,4,5]) == False

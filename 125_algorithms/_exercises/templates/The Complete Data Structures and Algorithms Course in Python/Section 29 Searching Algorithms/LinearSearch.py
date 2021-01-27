@@ -4,7 +4,7 @@
 # Searching algorithms - Linear Search
 
 ___ linearSearch(array, value
-    ___ i __ range(le_(array)):
+    ___ i __ ra__(le_(array)):
         __ array[i] __ value:
             r_ i
     r_ -1

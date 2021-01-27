@@ -58,4 +58,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().nthUglyNumber(10) == 12
+    a__ Solution().nthUglyNumber(10) == 12

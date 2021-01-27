@@ -56,6 +56,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().repeatedSubstringPattern("abab") == True
-    assert Solution().repeatedSubstringPattern("abcd") == False
-    assert Solution().repeatedSubstringPattern("abacababacab") == True
+    a__ Solution().repeatedSubstringPattern("abab") == True
+    a__ Solution().repeatedSubstringPattern("abcd") == False
+    a__ Solution().repeatedSubstringPattern("abacababacab") == True

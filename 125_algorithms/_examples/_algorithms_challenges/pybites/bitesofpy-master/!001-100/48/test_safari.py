@@ -13,4 +13,4 @@ def test_valid_output(capfd):
     create_chart()
     out, _ = capfd.readouterr()
     for line in expected_lines:
-        assert line in out, f'"{line}" should be in output of create_chart'
+        a__ line in out, f'"{line}" should be in output of create_chart'

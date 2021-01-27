@@ -2,7 +2,7 @@ class Solution:
     ___ twoSum(self, nums, target):
         store = {}
 
-        ___ i __ range(le.(nums)):
+        ___ i __ ra__(le.(nums)):
             __ nums[i] __ store:
                 r_ [store[nums[i]], i]
             ____

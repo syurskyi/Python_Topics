@@ -65,4 +65,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().advantageCount([2,7,11,15], [1,10,4,11]) == [2,11,7,15]
+    a__ Solution().advantageCount([2,7,11,15], [1,10,4,11]) == [2,11,7,15]

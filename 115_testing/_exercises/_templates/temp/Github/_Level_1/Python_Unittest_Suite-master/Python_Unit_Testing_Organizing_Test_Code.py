@@ -38,7 +38,7 @@ c_ DefaultWidgetSizeTestCase?.?
         aE..(widget.size(), (50, 50))
 
 #
-# Note that in order to test something, we use one of the assert*() methods provided by the TestCase base class.
+# Note that in order to test something, we use one of the a__*() methods provided by the TestCase base class.
 # If the test fails, an exception will be raised with an explanatory message, and unittest will identify the test case as a failure.
 # Any other exceptions will be treated as errors.
 # 

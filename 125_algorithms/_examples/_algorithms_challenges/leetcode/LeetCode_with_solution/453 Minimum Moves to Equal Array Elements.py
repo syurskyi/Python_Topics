@@ -21,4 +21,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().minMoves([1, 2, 3]) == 3
+    a__ Solution().minMoves([1, 2, 3]) == 3

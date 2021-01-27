@@ -163,4 +163,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().threeSumMulti([1,1,2,2,3,3,4,4,5,5], 8) == 20
+    a__ Solution().threeSumMulti([1,1,2,2,3,3,4,4,5,5], 8) == 20

@@ -112,6 +112,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().numWays(3, 2) == 6
+    a__ Solution().numWays(3, 2) == 6
 
 

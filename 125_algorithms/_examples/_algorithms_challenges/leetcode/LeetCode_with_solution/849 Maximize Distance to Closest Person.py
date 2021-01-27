@@ -87,4 +87,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().maxDistToClosest([1,0,0,0,1,0,1]) == 2
+    a__ Solution().maxDistToClosest([1,0,0,0,1,0,1]) == 2

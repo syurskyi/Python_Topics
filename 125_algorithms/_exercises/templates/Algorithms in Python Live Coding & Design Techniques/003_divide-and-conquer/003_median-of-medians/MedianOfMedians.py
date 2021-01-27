@@ -34,7 +34,7 @@ ___ partition(arr, low, high
 
         # swap
 
-        elif low < high:
+        ____ low < high:
             temp = arr[low]
             arr[low] = arr[high]
             arr[high] = temp
@@ -46,9 +46,9 @@ ___ get_pivot_val(arr, low, high
 
     __ high - low + 1 <= 9:
         sorted(arr)
-        r_ arr[int(le_(arr)/2)]
+        r_ arr[in.(le_(arr)/2)]
 
-    medians = [0] * int(ceil(( high - low +1 )/5))
+    medians = [0] * in.(ceil(( high - low +1 )/5))
 
     median_index = 0
 
@@ -56,14 +56,14 @@ ___ get_pivot_val(arr, low, high
 
         temp = [0]* min(5, (high - low + 1))
 
-        ___ i __ range(0, le_(temp)):
+        ___ i __ ra__(0, le_(temp)):
             __ low <= high :
                 temp[i] = arr[low]
                 low += 1
 
         sorted(temp)
 
-        medians[median_index] = temp[int(le_(temp)/2)]
+        medians[median_index] = temp[in.(le_(temp)/2)]
         median_index += 1
 
     r_ get_pivot_val(medians, 0, le_(medians) - 1)

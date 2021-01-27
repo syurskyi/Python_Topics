@@ -104,21 +104,21 @@ def print_pool():
 def main():
     a1 = A(10)
     a2 = A(10)
-    assert id(a1) == id(a2)
+    a__ id(a1) == id(a2)
     a3 = A(42)
-    assert id(a3) != id(a2)
+    a__ id(a3) != id(a2)
 
     b1 = B(10)
     b2 = B(10)
-    assert id(b1) == id(b2)
+    a__ id(b1) == id(b2)
     c1 = C(1, 2, z=3)
     c2 = C(1, 2, 42)
-    assert id(c1) != id(c2)
+    a__ id(c1) != id(c2)
 
-    assert type(PoolMeta) == type
-    assert type(A) == PoolMeta
-    assert type(B) == PoolMeta
-    assert type(C) == PoolMeta
+    a__ type(PoolMeta) == type
+    a__ type(A) == PoolMeta
+    a__ type(B) == PoolMeta
+    a__ type(C) == PoolMeta
 
 
 if __name__ == "__main__":

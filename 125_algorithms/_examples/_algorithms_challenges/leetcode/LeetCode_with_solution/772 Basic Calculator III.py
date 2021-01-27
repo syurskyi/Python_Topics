@@ -70,5 +70,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") == 0
-    assert Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") == -12
+    a__ Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") == 0
+    a__ Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") == -12

@@ -11,4 +11,4 @@ from Previous.commits import get_min_max_amount_of_commits
 ])
 def test_get_min_max_amount_of_commits(year, expected):
     actual = get_min_max_amount_of_commits(year=year)
-    assert actual == expected
+    a__ actual == expected

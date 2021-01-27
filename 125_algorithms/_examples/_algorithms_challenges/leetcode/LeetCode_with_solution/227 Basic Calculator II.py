@@ -99,9 +99,9 @@ class Solution:
             else:
                 stk.append(elt)
 
-        assert len(stk) == 1
+        a__ len(stk) == 1
         return int(stk[-1])
 
 
 if __name__ == "__main__":
-    assert Solution().calculate("3+2*2") == 7
+    a__ Solution().calculate("3+2*2") == 7

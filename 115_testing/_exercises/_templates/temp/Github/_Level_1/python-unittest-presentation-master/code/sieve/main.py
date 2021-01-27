@@ -33,12 +33,12 @@ ___ main(
         test_manual()
 
     elif option __ 2:
-        print('Assert Test OK:')
+        print('a__ Test OK:')
         print('- has no output -')
         test_assert_ok()
 
     elif option __ 3:
-        print('Assert Test FAIL:')
+        print('a__ Test FAIL:')
         test_assert_fail()
 
 

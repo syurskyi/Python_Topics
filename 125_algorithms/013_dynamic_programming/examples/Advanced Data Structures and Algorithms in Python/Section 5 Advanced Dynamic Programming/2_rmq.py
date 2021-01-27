@@ -38,7 +38,7 @@ for tests in range(100):
         b = randint(a, n - 1)
         with_naive = naive_query(array, a, b)
         with_dp = dp_query(array, a, b, dp)
-        assert with_dp == with_naive, \
+        a__ with_dp == with_naive, \
             'naive={}, efficient dp={},\nn={},\na={}\n={}\narray={}'.format(
                 with_naive,
                 with_dp,

@@ -103,5 +103,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().kSmallestPairs([1, 7, 11], [2, 4, 6], 9) == [[1, 2], [1, 4], [1, 6], [7, 2], [7, 4], [11, 2],
+    a__ Solution().kSmallestPairs([1, 7, 11], [2, 4, 6], 9) == [[1, 2], [1, 4], [1, 6], [7, 2], [7, 4], [11, 2],
                                                                    [7, 6], [11, 4], [11, 6]]

@@ -32,4 +32,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().frequencySort("tree") == "eetr"
+    a__ Solution().frequencySort("tree") == "eetr"

@@ -33,4 +33,4 @@ class Solution:
 
 if __name__ == "__main__":
     costs = [[7, 6, 2]]
-    assert Solution().minCost(costs) == 2
+    a__ Solution().minCost(costs) == 2

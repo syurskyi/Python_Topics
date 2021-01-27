@@ -36,7 +36,7 @@ class MyService(rpyc.Service):
         return [1, 2, 3]
 
     def foobar(self):
-        assert False
+        a__ False
 
     def exposed_getmeta(self):
         return MyClass()
@@ -65,7 +65,7 @@ class TestCustomService(unittest.TestCase):
         print( "service name: %s" % (self.conn.root.get_service_name(),) )
 
     def test_distance(self):
-        assert self.conn.root.distance((2,7), (5,11)) == 5
+        a__ self.conn.root.distance((2,7), (5,11)) == 5
 
     def test_attributes(self):
         self.conn.root.distance

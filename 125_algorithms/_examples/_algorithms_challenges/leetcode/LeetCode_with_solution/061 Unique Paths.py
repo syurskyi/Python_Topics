@@ -64,4 +64,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().uniquePaths(3, 7) == 28
+    a__ Solution().uniquePaths(3, 7) == 28

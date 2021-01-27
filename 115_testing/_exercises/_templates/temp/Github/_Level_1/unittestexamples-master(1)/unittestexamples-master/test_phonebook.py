@@ -18,7 +18,7 @@ c_ PhoneBookTest?.?
     ___ test_lookup_by_name # Test case name
         phonebook.add("Bob", "12345") # Arrange
         number _ phonebook.l..("Bob") # Act
-        aE..("12345", number) # Assert
+        aE..("12345", number) # a__
 
     ___ test_missing_name
         w__ aR..(K..
@@ -58,5 +58,5 @@ c_ PhoneBookTest?.?
 
     ___ test_phonebook_adds_names_and_numbers
         phonebook.add("Sue", "123343") # Act
-        aI..("Sue", phonebook.get_names()) # Assert made on the same Act
-        aI..("123343", phonebook.get_numbers()) # Assert made on the same Act
+        aI..("Sue", phonebook.get_names()) # a__ made on the same Act
+        aI..("123343", phonebook.get_numbers()) # a__ made on the same Act

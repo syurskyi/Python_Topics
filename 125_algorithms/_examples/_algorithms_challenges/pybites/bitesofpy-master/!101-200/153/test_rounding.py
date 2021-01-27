@@ -13,4 +13,4 @@ transactions2 = [1.55, 9.17, 5.67, 6.77, 2.33]
     (transactions2, False, [1, 9, 5, 6, 2]),
 ])
 def test_round_up_or_down(transactions, up_arg, expected):
-    assert round_up_or_down(transactions, up=up_arg) == expected
+    a__ round_up_or_down(transactions, up=up_arg) == expected

@@ -35,6 +35,6 @@ intervals = [
 optimal_schedule = schedule(intervals)
 
 ___ ele __ optimal_schedule:
-    ___ i __ range(le_(ele)):
+    ___ i __ ra__(le_(ele)):
         print(ele[i])
     print()

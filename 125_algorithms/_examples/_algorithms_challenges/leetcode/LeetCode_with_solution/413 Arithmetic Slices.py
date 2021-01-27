@@ -42,4 +42,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().numberOfArithmeticSlices([1, 2, 3, 4]) == 3
+    a__ Solution().numberOfArithmeticSlices([1, 2, 3, 4]) == 3

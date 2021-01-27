@@ -104,5 +104,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) == True
-    assert Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) == False
+    a__ Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) == True
+    a__ Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) == False

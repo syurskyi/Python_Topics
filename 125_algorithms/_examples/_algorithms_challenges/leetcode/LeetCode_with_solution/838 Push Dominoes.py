@@ -84,4 +84,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().pushDominoes(".L.R...LR..L..") == "LL.RR.LLRRLL.."
+    a__ Solution().pushDominoes(".L.R...LR..L..") == "LL.RR.LLRRLL.."

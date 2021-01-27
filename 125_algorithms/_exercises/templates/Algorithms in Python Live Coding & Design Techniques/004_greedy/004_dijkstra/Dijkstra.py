@@ -2,31 +2,31 @@
 ___ dijkstra(adjacency_matrix
 
     v = le_(adjacency_matrix)
-    visited = [F.. ___ i __ range(v)]
+    visited = [F.. ___ i __ ra__(v)]
 
-    distance = [float('inf') ___ i __ range(v)]
+    distance = [float('inf') ___ i __ ra__(v)]
     distance[0] = 0
 
-    ___ i __ range(v-1
+    ___ i __ ra__(v-1
 
         min_vertex = find_min_vertex(distance, visited)
         visited[min_vertex] = T..
 
-        ___ j __ range(v
-            __ adjacency_matrix[min_vertex][j] != 0 and not visited[j] :
+        ___ j __ ra__(v
+            __ adjacency_matrix[min_vertex][j] != 0 a__ not visited[j] :
                     new_dist = distance[min_vertex] + adjacency_matrix[min_vertex][j]
                     __ new_dist < distance[j]:
                         distance[j] = new_dist
 
-    ___ i __ range(v
+    ___ i __ ra__(v
         print(i, ' ', distance[i])
 
 
 ___ find_min_vertex(distance, visited
 
     min_vertex = -1
-    ___ i __ range(le_(distance)):
-        __ (min_vertex __ -1 or distance[min_vertex] > distance[i]) and not visited[i]:
+    ___ i __ ra__(le_(distance)):
+        __ (min_vertex __ -1 or distance[min_vertex] > distance[i]) a__ not visited[i]:
             min_vertex = i
     r_ min_vertex
 

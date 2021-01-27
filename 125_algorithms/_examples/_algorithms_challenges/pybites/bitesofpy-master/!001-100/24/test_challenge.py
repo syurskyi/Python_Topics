@@ -18,9 +18,9 @@ def test_super_and_abst_method_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert blog.verify(random.choice(merged_prs))
-    assert not blog.verify(43)
-    assert blog.pretty_title == 'PCC1 - Wordvalues'
+    a__ blog.verify(random.choice(merged_prs))
+    a__ not blog.verify(43)
+    a__ blog.pretty_title == 'PCC1 - Wordvalues'
 
 
 def test_super_and_abst_property_implementation():
@@ -29,6 +29,6 @@ def test_super_and_abst_property_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert bite.verify('my result')
-    assert not bite.verify('other result')
-    assert bite.pretty_title == 'Bite 24. ABC and class inheritance'
+    a__ bite.verify('my result')
+    a__ not bite.verify('other result')
+    a__ bite.pretty_title == 'Bite 24. ABC and class inheritance'

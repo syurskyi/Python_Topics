@@ -16,8 +16,8 @@ ___ findMissing(li__, n
 
 # Question 2
 ___ findPairs(li__, sum
-    ___ i __ range(le_(li__)):
-        ___ j __ range(i+1,le_(li__)):
+    ___ i __ ra__(le_(li__)):
+        ___ j __ ra__(i+1,le_(li__)):
             __ (li__[i]+li__[j]) __ sum:
                 print(li__[i],li__[j])
 # findPairs(mylist, 100)
@@ -28,7 +28,7 @@ import numpy as np
 myArray = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
 ___ findNumber(array, number
-    ___ i __ range(le_(array)):
+    ___ i __ ra__(le_(array)):
         __ array[i] __ number:
             print(i)
 
@@ -38,11 +38,11 @@ findNumber(myArray, 12)
 
 ___ findMaxProduct(array
     maxProduct = 0
-    ___ i __ range(le_(array)):
-        ___ j __ range(i+1,le_(array)):
+    ___ i __ ra__(le_(array)):
+        ___ j __ ra__(i+1,le_(array)):
             __ array[i]*array[j] > maxProduct:
                 maxProduct = array[i]*array[j]
-                pairs = str(array[i])+ "," + str(array[j])
+                pairs = st.(array[i])+ "," + st.(array[j])
     print(pairs)
     print(maxProduct)
 
@@ -83,9 +83,9 @@ ___ permuntation(list1, list2
 ___ rotate_matrix(matrix
     '''rotates a matrix 90 degrees clockwise'''
     n = le_(matrix)
-    ___ layer __ range(n // 2
+    ___ layer __ ra__(n // 2
         first, last = layer, n - layer - 1
-        ___ i __ range(first, last
+        ___ i __ ra__(first, last
             # save top
             top = matrix[layer][i]
 

@@ -4,17 +4,17 @@ c_ SubsetSumProblem:
     ___  -   nums, m
         nums = nums
         m = m
-        S = [[F.. ___ _ __ range(m+1)] ___ _ __ range(le_(nums)+1)]
+        S = [[F.. ___ _ __ ra__(m+1)] ___ _ __ ra__(le_(nums)+1)]
 
     ___ solve(self
 
         # initialize the first row and first column
-        ___ i __ range(le_(nums) + 1
+        ___ i __ ra__(le_(nums) + 1
             S[i][0] = T..
 
         # we have to construct the table with the cells one by one
-        ___ i __ range(1, le_(nums) + 1
-            ___ j __ range(1, m + 1
+        ___ i __ ra__(1, le_(nums) + 1
+            ___ j __ ra__(1, m + 1
                 __ j < nums[i-1]:
                     S[i][j] = S[i-1][j]
                 ____

@@ -32,5 +32,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().validWordAbbreviation("internationalization", "i12iz4n") == True
-    assert Solution().validWordAbbreviation("apple", "a2e") == False
+    a__ Solution().validWordAbbreviation("internationalization", "i12iz4n") == True
+    a__ Solution().validWordAbbreviation("apple", "a2e") == False

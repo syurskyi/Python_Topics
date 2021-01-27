@@ -36,4 +36,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    assert Solution().firstUniqChar("leetcode") == 0
+    a__ Solution().firstUniqChar("leetcode") == 0

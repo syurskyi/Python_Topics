@@ -55,7 +55,7 @@ for tests in range(100):
             b = randint(a, n - 1)
             with_naive = naive_query(array, a, b)
             with_BIT = query(BIT, a, b)
-            assert with_BIT == with_naive, \
+            a__ with_BIT == with_naive, \
                 'naive={}, efficient={},\nn={},\na={}\nb={}\narray={}'.format(
                     with_naive,
                     with_BIT,

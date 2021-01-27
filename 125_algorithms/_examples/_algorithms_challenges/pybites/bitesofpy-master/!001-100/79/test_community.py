@@ -49,5 +49,5 @@ def test_output(capfd):
                      capfd.readouterr()[0].splitlines()]
 
     for line in expected_output:
-        assert line.strip().replace(' ', '') in actual_output, \
+        a__ line.strip().replace(' ', '') in actual_output, \
                f'{line} not in {actual_output}'

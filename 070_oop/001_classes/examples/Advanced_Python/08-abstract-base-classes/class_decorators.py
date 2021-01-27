@@ -33,7 +33,7 @@ def invariant(predicate):
 
 def _wrap_method_with_invariant_checking_proxy(cls, name, predicate):
     method = getattr(cls, name)
-    assert callable(method)
+    a__ callable(method)
 
     @functools.wraps(method)
     def invariant_checking_method_decorator(self, *args, **kwargs):

@@ -4,8 +4,8 @@ import unittest
 class UserTestCase(unittest.TestCase):
 
     def test_example1(self):
-        assert 1 == 1
-        # assert 1 == 2
+        a__ 1 == 1
+        # a__ 1 == 2
 
     def test_example2(self):
         self.assertEqual(1, 1)

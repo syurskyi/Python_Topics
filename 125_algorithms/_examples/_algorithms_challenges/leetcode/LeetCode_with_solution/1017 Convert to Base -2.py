@@ -63,5 +63,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    assert Solution().baseNeg2(3) == "111"
-    assert Solution().baseNeg2(4) == "100"
+    a__ Solution().baseNeg2(3) == "111"
+    a__ Solution().baseNeg2(4) == "100"

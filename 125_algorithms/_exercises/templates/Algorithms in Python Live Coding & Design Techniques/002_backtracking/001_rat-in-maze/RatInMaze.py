@@ -1,7 +1,7 @@
 
 ___ solve_maze(maze, x, y, solution, n
 
-    __ x __ n-1 and y __ n-1 and maze[x][y] __ 1:
+    __ x __ n-1 a__ y __ n-1 a__ maze[x][y] __ 1:
         solution[x][y] = 1
         r_ T..
 
@@ -24,7 +24,7 @@ ___ solve_maze(maze, x, y, solution, n
 
 ___ is_safe(maze, x, y, n
 
-    __ 0 <= x < n and 0 <= y < n and maze[x][y] __ 1:
+    __ 0 <= x < n a__ 0 <= y < n a__ maze[x][y] __ 1:
         r_ T..
     r_ F..
 
@@ -34,12 +34,12 @@ maze = [[1, 1, 0, 0],
         [1, 1, 0, 0],
         [0, 1, 1, 1]]
 
-solution = [[0 ___ j __ range(4)] ___ i __ range(4)]
+solution = [[0 ___ j __ ra__(4)] ___ i __ ra__(4)]
 
 n = le_(maze)
 
 __ solve_maze(maze, 0, 0, solution, n
     ___ i __ solution:
         ___ j __ i:
-            print(str(j), ' ', end= ' ')
+            print(st.(j), ' ', end= ' ')
         print(' ')

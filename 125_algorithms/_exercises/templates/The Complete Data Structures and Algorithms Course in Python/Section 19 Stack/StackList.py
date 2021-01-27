@@ -8,7 +8,7 @@ c_ Stack:
     
     ___ __str__(self
         values = li__.re..
-        values = [str(x) ___ x __ li__]
+        values = [st.(x) ___ x __ li__]
         r_ '\n'.j..(values)
     
     # isEmpty

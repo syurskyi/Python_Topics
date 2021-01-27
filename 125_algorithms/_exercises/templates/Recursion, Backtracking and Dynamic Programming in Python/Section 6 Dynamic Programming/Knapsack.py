@@ -6,13 +6,13 @@ c_ KnapsackProblem:
         M = M
         w = w
         v = v
-        S = [[0 ___ _ __ range(M+1)] ___ _ __ range(n+1)]
+        S = [[0 ___ _ __ ra__(M+1)] ___ _ __ ra__(n+1)]
 
     ___ solve(self
         # construct the S dynamic programming table
         # O(n*M)
-        ___ i __ range(n+1
-            ___ w __ range(M+1
+        ___ i __ ra__(n+1
+            ___ w __ ra__(M+1
                 not_taking_item = S[i - 1][w]
                 taking_item = 0
 
@@ -27,8 +27,8 @@ c_ KnapsackProblem:
         print("Total benefit: %d" % S[n][M])
 
         w = M
-        ___ n __ range(n, 0, -1
-            __ S[n][w] != 0 and S[n][w] != S[n - 1][w]:
+        ___ n __ ra__(n, 0, -1
+            __ S[n][w] != 0 a__ S[n][w] != S[n - 1][w]:
                 print("We take item #%d" % n)
                 w = w - w[n]
 

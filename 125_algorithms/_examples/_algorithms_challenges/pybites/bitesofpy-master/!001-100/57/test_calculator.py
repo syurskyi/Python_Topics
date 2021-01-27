@@ -25,10 +25,10 @@ def test_help_text_hints(parser, capfd):
         parser.parse_args(['-h'])
 
     output = capfd.readouterr()[0].lower()
-    assert 'usage' in output
-    assert 'a simple calculator' in output
+    a__ 'usage' in output
+    a__ 'a simple calculator' in output
     for op in 'add sub mul div'.split():
-        assert op in output
+        a__ op in output
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -39,7 +39,7 @@ def test_help_text_hints(parser, capfd):
 ])
 def test_add_operations(parser, args, expected):
     args = parser.parse_args(['--add'] + args)
-    assert call_calculator(args) == expected
+    a__ call_calculator(args) == expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -50,7 +50,7 @@ def test_add_operations(parser, args, expected):
 ])
 def test_sub_operations(parser, args, expected):
     args = parser.parse_args(['--sub'] + args)
-    assert call_calculator(args) == expected
+    a__ call_calculator(args) == expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -61,7 +61,7 @@ def test_sub_operations(parser, args, expected):
 ])
 def test_mul_operations(parser, args, expected):
     args = parser.parse_args(['--mul'] + args)
-    assert call_calculator(args) == expected
+    a__ call_calculator(args) == expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -72,4 +72,4 @@ def test_mul_operations(parser, args, expected):
 ])
 def test_div_operations(parser, args, expected):
     args = parser.parse_args(['--div'] + args)
-    assert call_calculator(args) == expected
+    a__ call_calculator(args) == expected

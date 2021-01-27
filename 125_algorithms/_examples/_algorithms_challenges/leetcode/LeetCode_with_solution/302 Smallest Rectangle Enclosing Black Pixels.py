@@ -37,4 +37,4 @@ if __name__ == "__main__":
         "10",
     ]
 
-    assert Solution().minArea(image, 1, 0) == 1
+    a__ Solution().minArea(image, 1, 0) == 1

@@ -73,7 +73,7 @@ def _export_codeobj(cobj):
             cobj.co_code, tuple(consts2), cobj.co_names, cobj.co_varnames, cobj.co_filename,
             cobj.co_name, cobj.co_firstlineno, cobj.co_lnotab, cobj.co_freevars, cobj.co_cellvars)
 
-    assert brine.dumpable(exported)
+    a__ brine.dumpable(exported)
     return (CODEOBJ_MAGIC, exported)
 
 def export_function(func):
