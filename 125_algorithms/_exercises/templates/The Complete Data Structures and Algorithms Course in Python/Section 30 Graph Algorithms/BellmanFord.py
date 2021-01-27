@@ -2,40 +2,40 @@
 #   Copyright © 2021 AppMillers. All rights reserved.
 
 
-class Graph:
+c_ Graph:
 
-    ___ __init__(self, vertices
-        self.V = vertices   
-        self.graph = []     
-        self.nodes = []
+    ___  -   vertices
+        V = vertices
+        graph = []
+        nodes = []
 
-    ___ add_edge(self, s, d, w
-        self.graph.append([s, d, w])
+    ___ add_edge  s, d, w
+        graph.ap..([s, d, w])
     
-    ___ addNode(self,value
-        self.nodes.append(value)
+    ___ addNode value
+        nodes.ap..(value)
 
-    ___ print_solution(self, dist
+    ___ print_solution  dist
         print("Vertex Distance from Source")
         ___ key, value __ dist.items(
             print('  ' + key, ' :    ', value)
     
-    ___ bellmanFord(self, src
-        dist = {i : float("Inf") ___ i __ self.nodes}
+    ___ bellmanFord  src
+        dist = {i : float("Inf") ___ i __ nodes}
         dist[src] = 0
 
-        ___ _ __ range(self.V-1
-            ___ s, d, w __ self.graph:
+        ___ _ __ range(V-1
+            ___ s, d, w __ graph:
                 __ dist[s] != float("Inf") and dist[s] + w < dist[d]:
                     dist[d] = dist[s] + w
         
-        ___ s, d, w __ self.graph:
+        ___ s, d, w __ graph:
             __ dist[s] != float("Inf") and dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
                 r_
         
 
-        self.print_solution(dist)
+        print_solution(dist)
 
 g = Graph(5)
 g.addNode("A")

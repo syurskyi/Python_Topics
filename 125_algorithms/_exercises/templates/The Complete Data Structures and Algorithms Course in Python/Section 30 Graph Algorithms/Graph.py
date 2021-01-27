@@ -1,36 +1,36 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2021 AppMillers. All rights reserved.
 
-class Graph:
-    ___ __init__(self, gdict=None
-        __ gdict is None:
+c_ Graph:
+    ___  -   gdict=N..
+        __ gdict __ N..:
             gdict = {}
-        self.gdict = gdict
+        gdict = gdict
     
-    ___ addEdge(self, vertex, edge
-        self.gdict[vertex].append(edge)
+    ___ addEdge  vertex, edge
+        gdict[vertex].ap..(edge)
     
-    ___ bfs(self, vertex
+    ___ bfs  vertex
         visited = [vertex]
         queue = [vertex]
         while queue:
             deVertex = queue.pop(0)
             print(deVertex)
-            ___ adjacentVertex __ self.gdict[deVertex]:
+            ___ adjacentVertex __ gdict[deVertex]:
                 __ adjacentVertex not __ visited:
-                    visited.append(adjacentVertex)
-                    queue.append(adjacentVertex)
+                    visited.ap..(adjacentVertex)
+                    queue.ap..(adjacentVertex)
     
-    ___ dfs(self, vertex
+    ___ dfs  vertex
         visited = [vertex]
         stack = [vertex]
         while stack:
             popVertex = stack.pop()
             print(popVertex)
-            ___ adjacentVertex __ self.gdict[popVertex]:
+            ___ adjacentVertex __ gdict[popVertex]:
                 __ adjacentVertex not __ visited:
-                    visited.append(adjacentVertex)
-                    stack.append(adjacentVertex)
+                    visited.ap..(adjacentVertex)
+                    stack.ap..(adjacentVertex)
     
 
 

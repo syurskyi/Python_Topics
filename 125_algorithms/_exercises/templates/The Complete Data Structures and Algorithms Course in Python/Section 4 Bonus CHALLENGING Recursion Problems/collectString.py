@@ -6,9 +6,9 @@
 ___ collectStrings(obj
     resultArr = []
     ___ key __ obj:
-        __ type(obj[key]) is str:
-            resultArr.append(obj[key])
-        __ type(obj[key]) is dict:
+        __ type(obj[key]) __ str:
+            resultArr.ap..(obj[key])
+        __ type(obj[key]) __ dict:
             resultArr = resultArr + collectStrings(obj[key])
     r_ resultArr
 

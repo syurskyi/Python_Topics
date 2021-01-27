@@ -1,36 +1,36 @@
 #   Created by Elshad Karimov on 27/04/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
 
-class SLinkedList:
-    ___ __init__(self
-        self.head = None
-        self.tail = None
+c_ SLinkedList:
+    ___  - (self
+        head = N..
+        tail = N..
     ___ __iter__(self
-        node = self.head
+        node = head
         while node:
             yield node
             node = node.next
     # insert in Linked List
-    ___ insertSLL(self, value, location
+    ___ insertSLL  value, location
         newNode = Node(value)
-        __ self.head is None:
-            self.head = newNode
-            self.tail = newNode
+        __ head __ N..:
+            head = newNode
+            tail = newNode
         ____
-            __ location == 0:
-                newNode.next = self.head
-                self.head = newNode
-            elif location == 1:
-                newNode.next = None
-                self.tail.next = newNode
-                self.tail = newNode
+            __ location __ 0:
+                newNode.next = head
+                head = newNode
+            elif location __ 1:
+                newNode.next = N..
+                tail.next = newNode
+                tail = newNode
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location - 1:
                     tempNode = tempNode.next
@@ -42,50 +42,50 @@ class SLinkedList:
     # Traverse Singly Linked List
     
     ___ traverseList(self
-        __ self.head is None:
+        __ head __ N..:
             print("The Singly Linked List does not exist")
         ____
-            node = self.head
-            while node is not None:
+            node = head
+            while node __ not N..:
                 print(node.value)
                 node = node.next
 
  # Search for a node in Singly Linked List
-    ___ searchSLL(self, nodeValue
-        __ self.head is None:
+    ___ searchSLL  nodeValue
+        __ head __ N..:
             print("The Singly Linked List does not exist")
         ____
-            node = self.head
-            while node is not None:
-                __ node.value == nodeValue:
+            node = head
+            while node __ not N..:
+                __ node.value __ nodeValue:
                     r_ node.value
                 node = node.next
             r_ "The node does not exist in this SLL"
     # Delete a node from Singly Linked List
-    ___ deleteNode(self, location
-        __ self.head is None:
+    ___ deleteNode  location
+        __ head __ N..:
             r_ "The Singly Linked List does not exist"
         ____
-            __ location == 0:
-                __ self.head == self.tail:
-                    self.head = None
-                    self.tail = None
+            __ location __ 0:
+                __ head __ tail:
+                    head = N..
+                    tail = N..
                 ____
-                    self.head = self.head.next
-            elif location == 1:
-                __ self.head == self.tail:
-                    self.head = None
-                    self.tail = None
+                    head = head.next
+            elif location __ 1:
+                __ head __ tail:
+                    head = N..
+                    tail = N..
                 ____
-                    node = self.head
-                    while node is not None:
-                        __ node.next == self.tail:
+                    node = head
+                    while node __ not N..:
+                        __ node.next __ tail:
                             break
                         node = node.next
-                    node.next = None
-                    self.tail = node
+                    node.next = N..
+                    tail = node
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location-1:
                     tempNode = tempNode.next
@@ -94,11 +94,11 @@ class SLinkedList:
                 tempNode.next = nextNode.next
     # Delete entire SLL
     ___ deleteEntireSLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("SLL does not exist")
         ____
-            self.head = None
-            self.tail = None
+            head = N..
+            tail = N..
 
 singlyLinkedList = SLinkedList()
 singlyLinkedList.insertSLL(44,6)

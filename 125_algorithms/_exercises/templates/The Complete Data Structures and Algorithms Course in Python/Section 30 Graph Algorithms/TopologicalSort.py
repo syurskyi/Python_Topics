@@ -3,20 +3,20 @@
 
 from collections import defaultdict
 
-class Graph:
-    ___ __init__(self, numberofVertices
-        self.graph = defaultdict(list)
-        self.numberofVertices = numberofVertices
+c_ Graph:
+    ___  -   numberofVertices
+        graph = defaultdict(list)
+        numberofVertices = numberofVertices
     
-    ___ addEdge(self, vertex, edge
-        self.graph[vertex].append(edge)
+    ___ addEdge  vertex, edge
+        graph[vertex].ap..(edge)
     
-    ___ topogologicalSortUtil(self, v, visited, stack
-        visited.append(v)
+    ___ topogologicalSortUtil  v, visited, stack
+        visited.ap..(v)
 
-        ___ i __ self.graph[v]:
+        ___ i __ graph[v]:
             __ i not __ visited:
-                self.topogologicalSortUtil(i, visited, stack)
+                topogologicalSortUtil(i, visited, stack)
         
         stack.insert(0, v)
     
@@ -25,9 +25,9 @@ class Graph:
         visited = []
         stack = []
 
-        ___ k __ list(self.graph
+        ___ k __ list(graph
             __ k not __ visited:
-                self.topogologicalSortUtil(k, visited, stack)
+                topogologicalSortUtil(k, visited, stack)
         
         print(stack)
     

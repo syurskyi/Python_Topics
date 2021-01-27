@@ -3,36 +3,36 @@
 
 # Prims Algorithm  in Python
 import sys
-class Graph:
-    ___ __init__(self, vertexNum, edges, nodes
-        self.edges = edges
-        self.nodes = nodes
-        self.vertexNum = vertexNum
-        self.MST = []
+c_ Graph:
+    ___  -   vertexNum, edges, nodes
+        edges = edges
+        nodes = nodes
+        vertexNum = vertexNum
+        MST = []
     
     ___ printSolution(self
         print("Edge : Weight")
-        ___ s, d, w __ self.MST:
+        ___ s, d, w __ MST:
             print("%s -> %s: %s" % (s, d, w))
     
     ___ primsAlgo(self
-        visited = [0]*self.vertexNum
+        visited = [0]*vertexNum
         edgeNum=0
-        visited[0]=True
-        while edgeNum<self.vertexNum-1:
+        visited[0]=T..
+        while edgeNum<vertexNum-1:
             min = sys.maxsize
-            ___ i __ range(self.vertexNum
+            ___ i __ range(vertexNum
                 __ visited[i]:
-                    ___ j __ range(self.vertexNum
-                        __ ((not visited[j]) and self.edges[i][j]
-                            __ min > self.edges[i][j]:
-                                min = self.edges[i][j]
+                    ___ j __ range(vertexNum
+                        __ ((not visited[j]) and edges[i][j]
+                            __ min > edges[i][j]:
+                                min = edges[i][j]
                                 s = i
                                 d = j
-            self.MST.append([self.nodes[s], self.nodes[d], self.edges[s][d]])
-            visited[d] = True
+            MST.ap..([nodes[s], nodes[d], edges[s][d]])
+            visited[d] = T..
             edgeNum += 1
-        self.printSolution()
+        printSolution()
 
 
 

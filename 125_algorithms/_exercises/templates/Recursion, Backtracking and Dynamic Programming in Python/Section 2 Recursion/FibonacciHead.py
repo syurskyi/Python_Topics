@@ -1,9 +1,9 @@
 
 ___ fibonacci_head(n
 
-    __ n == 0:
+    __ n __ 0:
         r_ 0
-    __ n == 1:
+    __ n __ 1:
         r_ 1
 
     # we make the recursive function call(s)

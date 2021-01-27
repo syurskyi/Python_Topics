@@ -5,9 +5,9 @@
 
 ___ capitalizeFirst(arr
     result = []
-    __ le_(arr) == 0:
+    __ le_(arr) __ 0:
         r_ result
-    result.append(arr[0][0].upper() + arr[0][1:])
+    result.ap..(arr[0][0].upper() + arr[0][1:])
     r_ result + capitalizeFirst(arr[1:]) 
 
 

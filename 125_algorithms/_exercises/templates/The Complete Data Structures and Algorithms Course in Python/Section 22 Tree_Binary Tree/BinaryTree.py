@@ -3,11 +3,11 @@
 
 import QueueLinkedList as queue
 
-class TreeNode:
-    ___ __init__(self, data
-        self.data = data
-        self.leftChild = None
-        self.rightChild = None
+c_ TreeNode:
+    ___  -   data
+        data = data
+        leftChild = N..
+        rightChild = N..
 
 newBT = TreeNode("Drinks")
 leftChild = TreeNode("Hot")
@@ -49,10 +49,10 @@ ___ levelOrderTraversal(rootNode
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
             print(root.value.data)
-            __ (root.value.leftChild is not None
+            __ (root.value.leftChild __ not N..
                 customQueue.enqueue(root.value.leftChild)
             
-            __ (root.value.rightChild is not None
+            __ (root.value.rightChild __ not N..
                 customQueue.enqueue(root.value.rightChild)
 
 ___ searchBT(rootNode, nodeValue
@@ -63,12 +63,12 @@ ___ searchBT(rootNode, nodeValue
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
-            __ root.value.data == nodeValue:
+            __ root.value.data __ nodeValue:
                 r_ "Success"
-            __ (root.value.leftChild is not None
+            __ (root.value.leftChild __ not N..
                 customQueue.enqueue(root.value.leftChild)
             
-            __ (root.value.rightChild is not None
+            __ (root.value.rightChild __ not N..
                 customQueue.enqueue(root.value.rightChild)
         r_ "Not found"
 
@@ -80,12 +80,12 @@ ___ insertNodeBT(rootNode, newNode
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
-            __ root.value.leftChild is not None:
+            __ root.value.leftChild __ not N..:
                 customQueue.enqueue(root.value.leftChild)
             ____
                 root.value.leftChild = newNode
                 r_ "Successfully Inserted"
-            __ root.value.rightChild is not None:
+            __ root.value.rightChild __ not N..:
                 customQueue.enqueue(root.value.rightChild)
             ____
                 root.value.rightChild = newNode
@@ -99,10 +99,10 @@ ___ getDeepestNode(rootNode
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
-            __ (root.value.leftChild is not None
+            __ (root.value.leftChild __ not N..
                 customQueue.enqueue(root.value.leftChild)
             
-            __ (root.value.rightChild is not None
+            __ (root.value.rightChild __ not N..
                 customQueue.enqueue(root.value.rightChild)
         deepestNode = root.value
         r_ deepestNode
@@ -115,18 +115,18 @@ ___ deleteDeepestNode(rootNode, dNode
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
-            __ root.value is dNode:
-                root.value = None
+            __ root.value __ dNode:
+                root.value = N..
                 r_
             __ root.value.rightChild:
-                __ root.value.rightChild is dNode:
-                    root.value.rightChild = None
+                __ root.value.rightChild __ dNode:
+                    root.value.rightChild = N..
                     r_
                 ____
                     customQueue.enqueue(root.value.rightChild)
             __ root.value.leftChild:
-                __ root.value.leftChild is dNode:
-                    root.value.leftChild = None
+                __ root.value.leftChild __ dNode:
+                    root.value.leftChild = N..
                     r_
                 ____
                     customQueue.enqueue(root.value.leftChild)
@@ -139,22 +139,22 @@ ___ deleteNodeBT(rootNode, node
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
-            __ root.value.data == node:
+            __ root.value.data __ node:
                 dNode = getDeepestNode(rootNode)
                 root.value.data = dNode.data
                 deleteDeepestNode(rootNode, dNode)
                 r_ "The node has been successfully deleted"
-            __ (root.value.leftChild is not None
+            __ (root.value.leftChild __ not N..
                 customQueue.enqueue(root.value.leftChild)
             
-            __ (root.value.rightChild is not None
+            __ (root.value.rightChild __ not N..
                 customQueue.enqueue(root.value.rightChild)
         r_ "Failed to delete"
 
 ___ deleteBT(rootNode
-    rootNode.data = None
-    rootNode.leftChild = None
-    rootNode.rightChild = None
+    rootNode.data = N..
+    rootNode.leftChild = N..
+    rootNode.rightChild = N..
     r_ "The BT has been successfully deleted"
 
 inOrderTraversal(newBT)

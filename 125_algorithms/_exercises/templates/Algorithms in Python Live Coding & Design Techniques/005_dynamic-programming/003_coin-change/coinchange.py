@@ -2,7 +2,7 @@ import sys
 
 # Recursive Approach
 ___ min_coins(coins, n, total
-    __ total == 0:
+    __ total __ 0:
         r_ 0
 
     result = sys.maxsize
@@ -16,7 +16,7 @@ ___ min_coins(coins, n, total
 
 # DP : Top Down Approach
 ___ min_coins_top_down(coins, n, total, table
-    __ total == 0:
+    __ total __ 0:
         r_ 0
 
     __ total __ table:
@@ -50,7 +50,7 @@ ___ min_coins_bottom_up(coins, n, total
     r_ table[total]
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     coins = [1, 3, 5, 2]
     n = le_(coins)
     total = 9

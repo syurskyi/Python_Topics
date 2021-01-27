@@ -8,7 +8,7 @@ ___ coinChange(totalNumber, coins
     N = totalNumber
     coins.sort()
     index = le_(coins)-1
-    while True:
+    while T..:
         coinValue = coins[index]
         __ N >= coinValue:
             print(coinValue)
@@ -16,7 +16,7 @@ ___ coinChange(totalNumber, coins
         __ N < coinValue:
             index -= 1
         
-        __ N == 0:
+        __ N __ 0:
             break
 
 coins = [1,2,5,20,50,100]

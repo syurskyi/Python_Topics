@@ -3,18 +3,18 @@
 
 from collections import defaultdict
 
-class Graph:
-    ___ __init__(self
-        self.nodes = set()
-        self.edges = defaultdict(list)
-        self.distances = {}
+c_ Graph:
+    ___  - (self
+        nodes = set()
+        edges = defaultdict(list)
+        distances = {}
     
-    ___ addNode(self,value
-        self.nodes.add(value)
+    ___ addNode value
+        nodes.add(value)
     
-    ___ addEdge(self, fromNode, toNode, distance
-        self.edges[fromNode].append(toNode)
-        self.distances[(fromNode, toNode)] = distance
+    ___ addEdge  fromNode, toNode, distance
+        edges[fromNode].ap..(toNode)
+        distances[(fromNode, toNode)] = distance
 
 
 ___ dijkstra(graph, initial
@@ -24,14 +24,14 @@ ___ dijkstra(graph, initial
     nodes = set(graph.nodes)
 
     while nodes:
-        minNode = None
+        minNode = N..
         ___ node __ nodes:
             __ node __ visited:
-                __ minNode is None:
+                __ minNode __ N..:
                     minNode = node
                 elif visited[node] < visited[minNode]:
                     minNode = node
-        __ minNode is None:
+        __ minNode __ N..:
             break
 
         nodes.remove(minNode)
@@ -41,7 +41,7 @@ ___ dijkstra(graph, initial
             weight = currentWeight + graph.distances[(minNode, edge)]
             __ edge not __ visited or weight < visited[edge]:
                 visited[edge] = weight
-                path[edge].append(minNode)
+                path[edge].ap..(minNode)
     
     r_ visited, path
 

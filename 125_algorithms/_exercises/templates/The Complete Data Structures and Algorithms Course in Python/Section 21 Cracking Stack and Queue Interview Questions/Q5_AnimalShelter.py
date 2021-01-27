@@ -3,36 +3,36 @@
 
 # Implement a cat and dog queue for an animal shelter.
 
-class AnimalShelter(
-  ___ __init__(self
-    self.cats = []
-    self.dogs = []
+c_ AnimalShelter(
+  ___  - (self
+    cats = []
+    dogs = []
   
-  ___ enqueue(self, animal, type
-    __ type == 'Cat':
-      self.cats.append(animal)
+  ___ enqueue  animal, type
+    __ type __ 'Cat':
+      cats.ap..(animal)
     ____
-      self.dogs.append(animal)
+      dogs.ap..(animal)
     
   ___ dequeueCat(self
-    __ le_(self.cats) == 0:
-      r_ None
+    __ le_(cats) __ 0:
+      r_ N..
     ____
-      cat = self.cats.pop(0)
+      cat = cats.pop(0)
       r_ cat
   
   ___ dequeueDog(self
-    __ le_(self.dogs) == 0:
-      r_ None
+    __ le_(dogs) __ 0:
+      r_ N..
     ____
-      dog = self.dogs.pop(0)
+      dog = dogs.pop(0)
       r_ dog
   
   ___ dequeueAny(self
-    __ le_(self.cats) == 0:
-      result = self.dogs.pop(0)
+    __ le_(cats) __ 0:
+      result = dogs.pop(0)
     ____
-      result = self.cats.pop(0)
+      result = cats.pop(0)
     r_ result
 
 customQueue = AnimalShelter()

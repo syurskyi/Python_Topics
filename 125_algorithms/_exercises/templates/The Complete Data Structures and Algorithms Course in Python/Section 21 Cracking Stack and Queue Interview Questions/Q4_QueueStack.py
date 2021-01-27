@@ -3,35 +3,35 @@
 
 # Implement a queue using two stacks.
 
-class Stack(
-  ___ __init__(self
-    self.list = []
+c_ Stack(
+  ___  - (self
+    list = []
   
   ___ __len__(self
-    r_ le_(self.list)
+    r_ le_(list)
   
-  ___ push(self, item
-    self.list.append(item)
+  ___ push  item
+    list.ap..(item)
   
   ___ pop(self
-    __ le_(self.list) == 0:
-      r_ None
-    r_ self.list.pop()
+    __ le_(list) __ 0:
+      r_ N..
+    r_ list.pop()
 
-class QueueviaStack(
-  ___ __init__(self
-    self.inStack = Stack()
-    self.outStack = Stack()
+c_ QueueviaStack(
+  ___  - (self
+    inStack = Stack()
+    outStack = Stack()
   
-  ___ enqueue(self, item
-    self.inStack.push(item)
+  ___ enqueue  item
+    inStack.push(item)
   
   ___ dequeue(self
-    while le_(self.inStack
-      self.outStack.push(self.inStack.pop())
-    result = self.outStack.pop()
-    while le_(self.outStack
-      self.inStack.push(self.outStack.pop())
+    while le_(inStack
+      outStack.push(inStack.pop())
+    result = outStack.pop()
+    while le_(outStack
+      inStack.push(outStack.pop())
     r_ result
   
 

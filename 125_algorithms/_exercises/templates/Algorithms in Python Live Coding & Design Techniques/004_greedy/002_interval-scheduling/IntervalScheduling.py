@@ -15,7 +15,7 @@ ___ schedule(intervals
         __ start > last_finish_time:
             end = interval[1]
 
-            optimal_interval_set.append(interval)
+            optimal_interval_set.ap..(interval)
 
             last_finish_time = end
 

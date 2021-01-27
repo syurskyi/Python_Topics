@@ -11,10 +11,10 @@ ___ reverse(strng
 
 
 ___ isPalindrome(strng
-    __ le_(strng) == 0:
-        r_ True
+    __ le_(strng) __ 0:
+        r_ T..
     __ strng[0] != strng[le_(strng) - 1]:
-        r_ False
+        r_ F..
     r_ isPalindrome(strng[1:-1])
 
 
@@ -22,18 +22,18 @@ ___ isPalindrome(strng
 
 
 ___ someRecursive(arr, cb
-    __ le_(arr) == 0:
-        r_ False
+    __ le_(arr) __ 0:
+        r_ F..
     __ not (cb(arr[0])):
         r_ someRecursive(arr[1:], cb)
-    r_ True
+    r_ T..
 
 
 ___ isOdd(num
-    __ num % 2 == 0:
-        r_ False
+    __ num % 2 __ 0:
+        r_ F..
     ____
-        r_ True
+        r_ T..
 
 
 # FLATTEN SOLUTION
@@ -42,8 +42,8 @@ ___ isOdd(num
 ___ flatten(arr
     resultArr = []
     ___ custItem __ arr:
-        __ type(custItem) is list:
+        __ type(custItem) __ list:
             resultArr.extend(flatten(custItem))
         ____
-            resultArr.append(custItem)
+            resultArr.ap..(custItem)
     r_ resultArr

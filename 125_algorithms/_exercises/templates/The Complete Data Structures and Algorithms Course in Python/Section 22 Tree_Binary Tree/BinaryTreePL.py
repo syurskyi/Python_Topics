@@ -1,62 +1,62 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class BinaryTree:
-    ___ __init__(self, size
-        self.customList = size * [None]
-        self.lastUsedIndex = 0
-        self.maxSize = size
+c_ BinaryTree:
+    ___  -   size
+        customList = size * [N..]
+        lastUsedIndex = 0
+        maxSize = size
     
-    ___ insertNode(self, value
-        __ self.lastUsedIndex + 1 == self.maxSize:
+    ___ insertNode  value
+        __ lastUsedIndex + 1 __ maxSize:
             r_ "The Binary Tree is full"
-        self.customList[self.lastUsedIndex+1] = value
-        self.lastUsedIndex += 1
+        customList[lastUsedIndex+1] = value
+        lastUsedIndex += 1
         r_ "The value has been successfully inserted"
 
-    ___ searchNode(self, nodeValue
-        ___ i __ range(le_(self.customList)):
-            __ self.customList[i] == nodeValue:
+    ___ searchNode  nodeValue
+        ___ i __ range(le_(customList)):
+            __ customList[i] __ nodeValue:
                 r_ "Success"
         r_ "Not found"
     
-    ___ preOrderTraversal(self, index
-        __ index > self.lastUsedIndex:
+    ___ preOrderTraversal  index
+        __ index > lastUsedIndex:
             r_
-        print(self.customList[index])
-        self.preOrderTraversal(index*2)
-        self.preOrderTraversal(index*2 + 1)
+        print(customList[index])
+        preOrderTraversal(index*2)
+        preOrderTraversal(index*2 + 1)
 
-    ___ inOrderTraversal(self, index
-        __ index > self.lastUsedIndex:
+    ___ inOrderTraversal  index
+        __ index > lastUsedIndex:
             r_
-        self.inOrderTraversal(index*2)
-        print(self.customList[index])
-        self.inOrderTraversal(index*2+1)
+        inOrderTraversal(index*2)
+        print(customList[index])
+        inOrderTraversal(index*2+1)
     
-    ___ postOrderTraversal(self, index
-        __ index > self.lastUsedIndex:
+    ___ postOrderTraversal  index
+        __ index > lastUsedIndex:
             r_
-        self.postOrderTraversal(index*2)
-        self.postOrderTraversal(index*2+1)
-        print(self.customList[index])
+        postOrderTraversal(index*2)
+        postOrderTraversal(index*2+1)
+        print(customList[index])
     
-    ___ levelOrderTraversal(self, index
-        ___ i __ range(index, self.lastUsedIndex+1
-            print(self.customList[i])
+    ___ levelOrderTraversal  index
+        ___ i __ range(index, lastUsedIndex+1
+            print(customList[i])
     
-    ___ deleteNode(self, value
-        __ self.lastUsedIndex == 0:
+    ___ deleteNode  value
+        __ lastUsedIndex __ 0:
             r_ "There is not any node to delete"
-        ___ i __ range(1, self.lastUsedIndex+1
-            __ self.customList[i] == value:
-                self.customList[i] = self.customList[self.lastUsedIndex]
-                self.customList[self.lastUsedIndex] = None
-                self.lastUsedIndex -= 1
+        ___ i __ range(1, lastUsedIndex+1
+            __ customList[i] __ value:
+                customList[i] = customList[lastUsedIndex]
+                customList[lastUsedIndex] = N..
+                lastUsedIndex -= 1
                 r_ "The node has been successfully deleted"
     
     ___ deleteBT(self
-       self.customList = None
+       customList = N..
        r_ "The BT has been successfully deleted"
 
     

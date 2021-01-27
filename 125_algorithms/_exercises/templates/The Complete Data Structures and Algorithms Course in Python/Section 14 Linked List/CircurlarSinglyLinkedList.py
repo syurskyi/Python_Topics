@@ -1,50 +1,50 @@
 #   Created by Elshad Karimov on 01/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
 
-class CircularSinglyLinkedList:
-    ___ __init__(self
-        self.head = None
-        self.tail = None
+c_ CircularSinglyLinkedList:
+    ___  - (self
+        head = N..
+        tail = N..
 
     ___ __iter__(self
-        node = self.head
+        node = head
         while node:
             yield node
             node = node.next
-            __ node == self.tail.next:
+            __ node __ tail.next:
                 break
             
 
     #  Creation of circular singly linked list
-    ___ createCSLL(self, nodeValue
+    ___ createCSLL  nodeValue
         node = Node(nodeValue)
         node.next = node
-        self.head = node
-        self.tail = node
+        head = node
+        tail = node
         r_ "The CSLL has been created"
     
     #  Insertion of a node in circular singly linked list
 
-    ___ insertCSLL(self, value, location
-        __ self.head is None:
+    ___ insertCSLL  value, location
+        __ head __ N..:
             r_ "The head reference is None"
         ____
             newNode = Node(value)
-            __ location == 0:
-                newNode.next = self.head
-                self.head = newNode
-                self.tail.next = newNode
-            elif location == 1:
-                newNode.next = self.tail.next
-                self.tail.next = newNode
-                self.tail = newNode
+            __ location __ 0:
+                newNode.next = head
+                head = newNode
+                tail.next = newNode
+            elif location __ 1:
+                newNode.next = tail.next
+                tail.next = newNode
+                tail = newNode
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location - 1:
                     tempNode = tempNode.next
@@ -56,57 +56,57 @@ class CircularSinglyLinkedList:
     
     # Traversal of a node in circular singly linked list
     ___ traversalCSLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any element for traversal")
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.next
-                __ tempNode == self.tail.next:
+                __ tempNode __ tail.next:
                     break
     
     # Searching for a node in circular singly linked list
-    ___ searchCSLL(self, nodeValue
-        __ self.head is None:
+    ___ searchCSLL  nodeValue
+        __ head __ N..:
             r_ "There is not any node in this CSLL"
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode = tempNode.next
-                __ tempNode == self.tail.next:
+                __ tempNode __ tail.next:
                     r_ "The node does not exist in this CSLL"
 
     # Delete  a node from circular singly linked list
-    ___ deleteNode(self, location
-        __ self.head is None:
+    ___ deleteNode  location
+        __ head __ N..:
             print("There is not any node in CSLL")
         ____
-            __ location == 0:
-                __ self.head == self.tail:
-                    self.head.next = None
-                    self.head = None
-                    self.tail = None
+            __ location __ 0:
+                __ head __ tail:
+                    head.next = N..
+                    head = N..
+                    tail = N..
                 ____
-                    self.head = self.head.next
-                    self.tail.next = self.head
-            elif location == 1:
-                __ self.head == self.tail:
-                    self.head.next = None
-                    self.head = None
-                    self.tail = None
+                    head = head.next
+                    tail.next = head
+            elif location __ 1:
+                __ head __ tail:
+                    head.next = N..
+                    head = N..
+                    tail = N..
                 ____
-                    node = self.head
-                    while node is not None:
-                        __ node.next == self.tail:
+                    node = head
+                    while node __ not N..:
+                        __ node.next __ tail:
                             break
                         node = node.next
-                    node.next = self.head
-                    self.tail = node
+                    node.next = head
+                    tail = node
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location - 1:
                     tempNode = tempNode.next
@@ -116,9 +116,9 @@ class CircularSinglyLinkedList:
     
     # Delete entire circular sinlgy linked list
     ___ deleteEntireCSLL(self
-        self.head = None
-        self.tail.next = None
-        self.tail = None
+        head = N..
+        tail.next = N..
+        tail = N..
 
 
 

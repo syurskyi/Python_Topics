@@ -2,22 +2,22 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 from random import randint
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
-        self.prev = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
+        prev = N..
     
     ___ __str__(self
-        r_ str(self.value)
+        r_ str(value)
 
-class LinkedList:
-    ___ __init__(self, values = None
-        self.head = None
-        self.tail = None
+c_ LinkedList:
+    ___  -   values = N..
+        head = N..
+        tail = N..
 
     ___ __iter__(self
-        curNode = self.head
+        curNode = head
         while curNode:
             yield curNode
             curNode = curNode.next
@@ -28,27 +28,27 @@ class LinkedList:
     
     ___ __len__(self
         result = 0
-        node = self.head
+        node = head
         while node:
             result += 1
             node = node.next
         r_ result
     
-    ___ add(self, value
-        __ self.head is None:
+    ___ add  value
+        __ head __ N..:
             newNode = Node(value)
-            self.head = newNode
-            self.tail = newNode
+            head = newNode
+            tail = newNode
         ____
-            self.tail.next = Node(value)
-            self.tail = self.tail.next
-        r_ self.tail
+            tail.next = Node(value)
+            tail = tail.next
+        r_ tail
     
-    ___ generate(self, n, min_value, max_value
-        self.head = None
-        self.tail = None
+    ___ generate  n, min_value, max_value
+        head = N..
+        tail = N..
         ___ i __ range(n
-            self.add(randint(min_value,max_value))
+            add(randint(min_value,max_value))
         r_ self
 
 # customLL = LinkedList()

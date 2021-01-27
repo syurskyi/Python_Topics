@@ -66,7 +66,7 @@ findBiggestNumber(sample1Array)
 ######  Recursive algorithm - finding the biggest number in the array ####### 
 
 ___ findMaxNumRec(sampleArray, n
-    __ n == 1:
+    __ n __ 1:
        r_ sampleArray[0]
     r_ max(sampleArray[n-1],findMaxNumRec(sampleArray,n-1))
 

@@ -1,75 +1,75 @@
-class MazeProblem:
+c_ MazeProblem:
 
-    ___ __init__(self, maze_matrix
-        self.maze_matrix = maze_matrix
-        self.maze_size = le_(maze_matrix)
-        self.solution_matrix = [[' - ' ___ _ __ range(self.maze_size)] ___ _ __ range(self.maze_size)]
-        self.moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+    ___  -   maze_matrix
+        maze_matrix = maze_matrix
+        maze_size = le_(maze_matrix)
+        solution_matrix = [[' - ' ___ _ __ range(maze_size)] ___ _ __ range(maze_size)]
+        moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     ___ solve_problem(self
 
         # we start with (0,0)
-        self.solution_matrix[0][0] = ' S '
+        solution_matrix[0][0] = ' S '
 
-        __ self.solve(0, 0
-            self.show_result()
+        __ solve(0, 0
+            show_result()
         ____
             print('There is no feasible solution...')
 
-    ___ solve(self, x, y
+    ___ solve  x, y
 
-        __ self.is_finished(x, y
-            r_ True
+        __ is_finished(x, y
+            r_ T..
 
-        ___ move __ self.moves:
+        ___ move __ moves:
 
             next_x = x + move[0]
             next_y = y + move[1]
 
-            __ self.is_valid(next_x, next_y
-                self.solution_matrix[next_x][next_y] = ' S '
+            __ is_valid(next_x, next_y
+                solution_matrix[next_x][next_y] = ' S '
 
-                __ self.solve(next_x, next_y
-                    r_ True
+                __ solve(next_x, next_y
+                    r_ T..
 
                 # BACKTRACK
-                self.solution_matrix[next_x][next_y] = ' '
+                solution_matrix[next_x][next_y] = ' '
 
-        r_ False
+        r_ F..
 
-    ___ is_valid(self, x, y
+    ___ is_valid  x, y
 
         # we do not step out of the board
         # horizontally and then vertically
-        __ x < 0 or x >= self.maze_size:
-            r_ False
+        __ x < 0 or x >= maze_size:
+            r_ F..
 
-        __ y < 0 or y >= self.maze_size:
-            r_ False
+        __ y < 0 or y >= maze_size:
+            r_ F..
 
         # there may be obstacles (we are not able to use cells that are obstacles)
         # 0 represents obstacles !!!
-        __ self.maze_matrix[x][y] == 0:
-            r_ False
+        __ maze_matrix[x][y] __ 0:
+            r_ F..
 
         # let's check whether we have already included that cell in the solution
-        __ self.solution_matrix[x][y] == ' S ':
-            r_ False
+        __ solution_matrix[x][y] __ ' S ':
+            r_ F..
 
-        r_ True
+        r_ T..
 
-    ___ is_finished(self, x, y
-        __ x == self.maze_size - 1 and y == self.maze_size - 1:
-            r_ True
+    ___ is_finished  x, y
+        __ x __ maze_size - 1 and y __ maze_size - 1:
+            r_ T..
 
     ___ show_result(self
-        ___ x __ range(self.maze_size
-            ___ y __ range(self.maze_size
-                print(self.solution_matrix[x][y], end=' ')
+        ___ x __ range(maze_size
+            ___ y __ range(maze_size
+                print(solution_matrix[x][y], end=' ')
             print('\n')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     # 1: valid cells 0: walls or obstacles
     maze = [[1, 1, 1, 1, 1],

@@ -4,37 +4,37 @@
 # Kruskal Algorithm  in Python
 import DisjointSet as dst
 
-class Graph:
-    ___ __init__(self, vertices
-        self.V = vertices
-        self.graph = []
-        self.nodes = []
-        self.MST = []
+c_ Graph:
+    ___  -   vertices
+        V = vertices
+        graph = []
+        nodes = []
+        MST = []
 
-    ___ addEdge(self, s, d, w
-        self.graph.append([s, d, w])
+    ___ addEdge  s, d, w
+        graph.ap..([s, d, w])
     
-    ___ addNode(self, value
-        self.nodes.append(value)
+    ___ addNode  value
+        nodes.ap..(value)
     
-    ___ printSolution(self,s,d,w
-        ___ s, d, w __ self.MST:
+    ___ printSolution s,d,w
+        ___ s, d, w __ MST:
             print("%s - %s: %s" % (s, d, w))
     
     ___ kruskalAlgo(self
         i, e = 0, 0
-        ds = dst.DisjointSet(self.nodes)
-        self.graph = sorted(self.graph, key=lambda item: item[2])
-        while e < self.V - 1:
-            s, d, w = self.graph[i]
+        ds = dst.DisjointSet(nodes)
+        graph = sorted(graph, key=lambda item: item[2])
+        while e < V - 1:
+            s, d, w = graph[i]
             i += 1
             x = ds.find(s)
             y = ds.find(d)
             __ x != y:
                 e += 1
-                self.MST.append([s,d,w])
+                MST.ap..([s,d,w])
                 ds.union(x,y)
-        self.printSolution(s,d,w)
+        printSolution(s,d,w)
 
 g = Graph(5)
 g.addNode("A")

@@ -5,7 +5,7 @@ ___ linear_search(container, item
     # USE LINEAR SEARCH IF THE DATA STRUCTURE IS UNORDERED !!!
 
     ___ index __ range(le_(container)):
-        __ container[index] == item:
+        __ container[index] __ item:
             # if we find the item: we return the index of that item
             r_ index
 

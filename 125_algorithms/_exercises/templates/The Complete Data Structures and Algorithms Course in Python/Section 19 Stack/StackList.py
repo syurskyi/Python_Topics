@@ -2,43 +2,43 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
     
-class Stack:
-    ___ __init__(self
-        self.list = []
+c_ Stack:
+    ___  - (self
+        list = []
     
     ___ __str__(self
-        values = self.list.reverse()
-        values = [str(x) ___ x __ self.list]
+        values = list.reverse()
+        values = [str(x) ___ x __ list]
         r_ '\n'.join(values)
     
     # isEmpty
     ___ isEmpty(self
-        __ self.list == []:
-            r_ True
+        __ list __ []:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     # push
-    ___ push(self, value
-        self.list.append(value)
+    ___ push  value
+        list.ap..(value)
         r_ "The element has been successfully inserted"
 
     # pop
     ___ pop(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ self.list.pop()
+            r_ list.pop()
     
     # peek
     ___ peek(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ self.list[le_(self.list)-1]
+            r_ list[le_(list)-1]
     
     # delete
     ___ delete(self
-        self.list = None
+        list = N..
 
 
 

@@ -142,7 +142,7 @@ ___ _ __ sorted(dict
 
 rec = {"Name" : "Python", "Age":"20"}
 r = rec.copy()
-print(id(r) == id(rec))
+print(id(r) __ id(rec))
 # A. True
 # B. False
 # C. 0
@@ -157,7 +157,7 @@ id1 = id(rec)
 del rec
 rec = {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
 id2 = id(rec)
-print(id1 == id2)
+print(id1 __ id2)
 # A. True
 # B. False
 # C. 1

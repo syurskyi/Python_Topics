@@ -5,10 +5,10 @@
 ___ flatten(arr
     resultArr = []
     ___ custItem __ arr:
-        __ type(custItem) is list:
+        __ type(custItem) __ list:
             resultArr.extend(flatten(custItem))
         ____
-            resultArr.append(custItem)
+            resultArr.ap..(custItem)
     r_ resultArr 
 
 

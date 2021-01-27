@@ -7,7 +7,7 @@
 from LinkedList import LinkedList
 
 ___ removeDups(ll
-    __ ll.head is None:
+    __ ll.head __ N..:
         r_
     ____
         currentNode = ll.head
@@ -21,14 +21,14 @@ ___ removeDups(ll
         r_ ll
 
 ___ removeDups1(ll
-    __ ll.head is None:
+    __ ll.head __ N..:
         r_
     
     currentNode = ll.head
     while currentNode:
         runner = currentNode
         while runner.next:
-            __ runner.next.value == currentNode.value:
+            __ runner.next.value __ currentNode.value:
                 runner.next = runner.next.next
             ____
                 runner = runner.next

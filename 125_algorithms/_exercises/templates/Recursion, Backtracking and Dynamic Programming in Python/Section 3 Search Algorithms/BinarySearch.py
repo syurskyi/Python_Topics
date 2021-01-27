@@ -9,7 +9,7 @@ ___ binary_search(container, item, left, right
     middle_index = (left + right) // 2
 
     # we have found the item
-    __ container[middle_index] == item:
+    __ container[middle_index] __ item:
         r_ middle_index
 
     # have to check whether the middle_item is smaller or greater

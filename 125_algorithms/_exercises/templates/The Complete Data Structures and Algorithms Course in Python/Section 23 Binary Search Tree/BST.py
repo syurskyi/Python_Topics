@@ -3,22 +3,22 @@
 
 import QueueLinkedList as queue
 
-class BSTNode:
-    ___ __init__(self, data
-        self.data = data
-        self.leftChild = None
-        self.rightChild = None
+c_ BSTNode:
+    ___  -   data
+        data = data
+        leftChild = N..
+        rightChild = N..
 
 ___ insertNode(rootNode, nodeValue
-    __ rootNode.data == None:
+    __ rootNode.data __ N..:
         rootNode.data = nodeValue
     elif nodeValue <= rootNode.data:
-        __ rootNode.leftChild is None:
+        __ rootNode.leftChild __ N..:
             rootNode.leftChild = BSTNode(nodeValue)
         ____
             insertNode(rootNode.leftChild, nodeValue)
     ____
-        __ rootNode.rightChild is None:
+        __ rootNode.rightChild __ N..:
             rootNode.rightChild = BSTNode(nodeValue)
         ____
             insertNode(rootNode.rightChild, nodeValue)
@@ -54,22 +54,22 @@ ___ levelOrderTraversal(rootNode
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
             print(root.value.data)
-            __ root.value.leftChild is not None:
+            __ root.value.leftChild __ not N..:
                 customQueue.enqueue(root.value.leftChild)
-            __ root.value.rightChild is not None:
+            __ root.value.rightChild __ not N..:
                 customQueue.enqueue(root.value.rightChild)
             
 
 ___ searchNode(rootNode, nodeValue
-    __ rootNode.data == nodeValue:
+    __ rootNode.data __ nodeValue:
         print("The value is found")
     elif nodeValue < rootNode.data:
-        __ rootNode.leftChild.data == nodeValue:
+        __ rootNode.leftChild.data __ nodeValue:
             print("The value is found")
         ____
             searchNode(rootNode.leftChild, nodeValue)
     ____
-        __ rootNode.rightChild.data == nodeValue:
+        __ rootNode.rightChild.data __ nodeValue:
             print("The value is found")
         ____
             searchNode(rootNode.rightChild, nodeValue)
@@ -77,27 +77,27 @@ ___ searchNode(rootNode, nodeValue
 
 ___ minValueNode(bstNode
     current = bstNode
-    while (current.leftChild is not None
+    while (current.leftChild __ not N..
         current = current.leftChild
     r_ current
 
 
 ___ deleteNode(rootNode, nodeValue
-    __ rootNode is None:
+    __ rootNode __ N..:
         r_ rootNode
     __ nodeValue < rootNode.data:
         rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
     elif nodeValue > rootNode.data:
         rootNode.rightChild = deleteNode(rootNode.rightChild, nodeValue)
     ____
-        __ rootNode.leftChild is None:
+        __ rootNode.leftChild __ N..:
             temp = rootNode.rightChild
-            rootNode = None
+            rootNode = N..
             r_ temp
         
-        __ rootNode.rightChild is None:
+        __ rootNode.rightChild __ N..:
             temp = rootNode.leftChild
-            rootNode = None
+            rootNode = N..
             r_ temp
         
         temp = minValueNode(rootNode.rightChild)
@@ -106,14 +106,14 @@ ___ deleteNode(rootNode, nodeValue
     r_ rootNode
 
 ___ deleteBST(rootNode
-    rootNode.data = None
-    rootNode.leftChild = None
-    rootNode.rightChild = None
+    rootNode.data = N..
+    rootNode.leftChild = N..
+    rootNode.rightChild = N..
     r_ "The BST has been successfully deleted"
 
 
 
-newBST = BSTNode(None)
+newBST = BSTNode(N..)
 insertNode(newBST, 70)
 insertNode(newBST,50)
 insertNode(newBST,90)

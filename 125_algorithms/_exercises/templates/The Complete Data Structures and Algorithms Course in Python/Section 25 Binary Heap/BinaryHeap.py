@@ -1,11 +1,11 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2021 AppMillers. All rights reserved.
 
-class Heap:
-    ___ __init__(self, size
-        self.customList = (size+1) * [None]
-        self.heapSize = 0
-        self.maxSize = size + 1
+c_ Heap:
+    ___  -   size
+        customList = (size+1) * [N..]
+        heapSize = 0
+        maxSize = size + 1
 
 ___ peekofHeap(rootNode
     __ not rootNode:
@@ -30,13 +30,13 @@ ___ heapifyTreeInsert(rootNode, index, heapType
     parentIndex = int(index/2)
     __ index <= 1:
         r_
-    __ heapType == "Min":
+    __ heapType __ "Min":
         __ rootNode.customList[index] < rootNode.customList[parentIndex]:
             temp = rootNode.customList[index]
             rootNode.customList[index] = rootNode.customList[parentIndex]
             rootNode.customList[parentIndex] = temp
         heapifyTreeInsert(rootNode, parentIndex, heapType)
-    elif heapType == "Max":
+    elif heapType __ "Max":
         __ rootNode.customList[index] > rootNode.customList[parentIndex]:
             temp = rootNode.customList[index]
             rootNode.customList[index] = rootNode.customList[parentIndex]
@@ -44,7 +44,7 @@ ___ heapifyTreeInsert(rootNode, index, heapType
         heapifyTreeInsert(rootNode, parentIndex, heapType)
 
 ___ inserNode(rootNode, nodeValue, heapType
-    __ rootNode.heapSize + 1 == rootNode.maxSize:
+    __ rootNode.heapSize + 1 __ rootNode.maxSize:
         r_ "The Binary Heap is Full"
     rootNode.customList[rootNode.heapSize + 1] = nodeValue
     rootNode.heapSize += 1
@@ -58,8 +58,8 @@ ___ heapifyTreeExtract(rootNode, index, heapType
 
     __ rootNode.heapSize < leftIndex:
         r_
-    elif rootNode.heapSize == leftIndex:
-        __ heapType == "Min":
+    elif rootNode.heapSize __ leftIndex:
+        __ heapType __ "Min":
             __ rootNode.customList[index] > rootNode.customList[leftIndex]:
                 temp = rootNode.customList[index]
                 rootNode.customList[index] = rootNode.customList[leftIndex]
@@ -73,7 +73,7 @@ ___ heapifyTreeExtract(rootNode, index, heapType
             r_
 
     ____
-        __ heapType == "Min":
+        __ heapType __ "Min":
             __ rootNode.customList[leftIndex] < rootNode.customList[rightIndex]:
                 swapChild = leftIndex
             ____
@@ -94,18 +94,18 @@ ___ heapifyTreeExtract(rootNode, index, heapType
     heapifyTreeExtract(rootNode, swapChild, heapType)
 
 ___ extractNode(rootNode, heapType
-    __ rootNode.heapSize == 0:
+    __ rootNode.heapSize __ 0:
         r_
     ____
         extractedNode = rootNode.customList[1]
         rootNode.customList[1] = rootNode.customList[rootNode.heapSize]
-        rootNode.customList[rootNode.heapSize] = None
+        rootNode.customList[rootNode.heapSize] = N..
         rootNode.heapSize -= 1
         heapifyTreeExtract(rootNode, 1, heapType)
         r_ extractedNode
 
 ___ deleteEntireBP(rootNode
-    rootNode.customList = None
+    rootNode.customList = N..
 
 
 

@@ -5,9 +5,9 @@
 
 ___ capitalizeWords(arr
     result = []
-    __ le_(arr) == 0:
+    __ le_(arr) __ 0:
         r_ result
-    result.append(arr[0].upper())
+    result.ap..(arr[0].upper())
     r_ result + capitalizeWords(arr[1:])
 
 

@@ -4,7 +4,7 @@
 # productOfArray Solution
 
 ___ productOfArray(arr
-    __ le_(arr) == 0:
+    __ le_(arr) __ 0:
         r_ 1
     r_ arr[0] * productOfArray(arr[1:])
 

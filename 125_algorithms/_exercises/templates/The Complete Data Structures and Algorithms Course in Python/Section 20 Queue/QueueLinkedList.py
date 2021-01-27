@@ -2,69 +2,69 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
     
     ___ __str__(self
-        r_ str(self.value)
+        r_ str(value)
 
-class LinkedList:
-    ___ __init__(self
-        self.head = None
-        self.tail = None
+c_ LinkedList:
+    ___  - (self
+        head = N..
+        tail = N..
     
     ___ __iter__(self
-        curNode = self.head
+        curNode = head
         while curNode:
             yield curNode
             curNode = curNode.next
 
-class Queue:
-    ___ __init__(self
-        self.linkedList = LinkedList()
+c_ Queue:
+    ___  - (self
+        linkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x) ___ x __ self.linkedList]
+        values = [str(x) ___ x __ linkedList]
         r_ ' '.join(values)
     
-    ___ enqueue(self, value
+    ___ enqueue  value
         newNode = Node(value)
-        __ self.linkedList.head == None:
-            self.linkedList.head = newNode
-            self.linkedList.tail = newNode
+        __ linkedList.head __ N..:
+            linkedList.head = newNode
+            linkedList.tail = newNode
         ____
-            self.linkedList.tail.next = newNode
-            self.linkedList.tail = newNode
+            linkedList.tail.next = newNode
+            linkedList.tail = newNode
     
     ___ isEmpty(self
-        __ self.linkedList.head == None:
-            r_ True
+        __ linkedList.head __ N..:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ dequeue(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any node in the Queue"
         ____
-            tempNode = self.linkedList.head
-            __ self.linkedList.head == self.linkedList.tail:
-                self.linkedList.head = None
-                self.linkedList.tail = None
+            tempNode = linkedList.head
+            __ linkedList.head __ linkedList.tail:
+                linkedList.head = N..
+                linkedList.tail = N..
             ____
-                self.linkedList.head = self.linkedList.head.next
+                linkedList.head = linkedList.head.next
             r_ tempNode
     
     ___ peek(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any node in the Queue"
         ____
-            r_ self.linkedList.head
+            r_ linkedList.head
     
     ___ delete(self
-        self.linkedList.head = None
-        self.linkedList.tail = None
+        linkedList.head = N..
+        linkedList.tail = N..
 
 
 

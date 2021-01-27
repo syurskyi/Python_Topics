@@ -3,14 +3,14 @@
 
 # Fractional Knapsack Problem  in Python
 
-class Item:
-    ___ __init__(self, weight, value
-        self.weight = weight
-        self.value = value
-        self.ratio = value / weight
+c_ Item:
+    ___  -   weight, value
+        weight = weight
+        value = value
+        ratio = value / weight
 
 ___ knapsackMethod(items, capacity
-    items.sort(key=lambda x: x.ratio, reverse = True)
+    items.sort(key=lambda x: x.ratio, reverse = T..)
     usedCapacity = 0
     totalValue = 0
     ___ i __ items:
@@ -23,7 +23,7 @@ ___ knapsackMethod(items, capacity
             usedCapacity += unusedWeight
             totalValue += value
         
-        __ usedCapacity == capacity:
+        __ usedCapacity __ capacity:
             break
     print("Total value obtained: "+str(totalValue))
 

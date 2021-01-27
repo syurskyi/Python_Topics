@@ -3,7 +3,7 @@ import sys
 
 # Recursive Approach (exponential)
 ___ rod_cut(price, n
-    __ n == 0:
+    __ n __ 0:
         r_ 0
     max_revenue = -sys.maxsize
     ___ i __ range(1, n + 1
@@ -13,7 +13,7 @@ ___ rod_cut(price, n
 
 # DP : Top Down Approach O(n^2)
 ___ rod_cut_topdown(price, n, dp
-    __ n == 0:
+    __ n __ 0:
         r_ 0
 
     __ dp[n - 1] > 0:
@@ -39,7 +39,7 @@ ___ rod_cut_bottomup(price, n
     r_ revenues[n]
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     price = [4, 5, 8, 9]
     size = le_(price)
     print('max revenue', rod_cut(price, size))

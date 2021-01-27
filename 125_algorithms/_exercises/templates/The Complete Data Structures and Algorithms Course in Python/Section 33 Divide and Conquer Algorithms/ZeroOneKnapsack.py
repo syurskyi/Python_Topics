@@ -3,10 +3,10 @@
 
 # Zero One Knapsack in Python
 
-class Item:
-    ___ __init__(self, profit, weight
-        self.profit = profit
-        self.weight = weight
+c_ Item:
+    ___  -   profit, weight
+        profit = profit
+        weight = weight
 
 ___ zoKnapsack(items, capacity, currentIndex
     __ capacity <=0 or currentIndex < 0 or currentIndex >= le_(items

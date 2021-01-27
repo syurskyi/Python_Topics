@@ -3,40 +3,40 @@
   
 #   Create Stack with min method
 
-class Node(
-    ___ __init__(self, value=None, next = None
-        self.value = value
-        self.next = next
+c_ Node(
+    ___  -   value=N.., next = N..
+        value = value
+        next = next
     
     ___ __str__(self
-        string = str(self.value)
-        __ self.next:
-            string += ',' + str(self.next)
+        string = str(value)
+        __ next:
+            string += ',' + str(next)
         r_ string
 
-class Stack(
-    ___ __init__(self
-        self.top = None
-        self.minNode = None
+c_ Stack(
+    ___  - (self
+        top = N..
+        minNode = N..
     
     ___ min(self
-        __ not self.minNode:
-            r_ None
-        r_ self.minNode.value
+        __ not minNode:
+            r_ N..
+        r_ minNode.value
     
-    ___ push(self, item
-        __ self.minNode and (self.minNode.value < item
-            self.minNode = Node(value = self.minNode.value, next=self.minNode)
+    ___ push  item
+        __ minNode and (minNode.value < item
+            minNode = Node(value = minNode.value, next=minNode)
         ____
-            self.minNode = Node(value = item, next=self.minNode)
-        self.top = Node(value=item, next=self.top)
+            minNode = Node(value = item, next=minNode)
+        top = Node(value=item, next=top)
     
     ___ pop(self
-        __ not self.top:
-            r_ None
-        self.minNode = self.minNode.next
-        item = self.top.value
-        self.top = self.top.next
+        __ not top:
+            r_ N..
+        minNode = minNode.next
+        item = top.value
+        top = top.next
         r_ item
 
 customStack = Stack()

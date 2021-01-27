@@ -3,7 +3,7 @@ ___ merge_sort(nums
 
     # define the base case: that we keep splitting the lists until
     # the sub-lists have just 1 item - arrays with a single item is sorted by default
-    __ le_(nums) == 1:
+    __ le_(nums) __ 1:
         r_
 
     # DIVIDE PHASE
@@ -41,7 +41,7 @@ ___ merge_sort(nums
         k = k + 1
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     my_list = [1, 5, -2, 0, 10, 100, 55, 12, 10, 2, -10, -3]
 

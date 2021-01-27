@@ -1,32 +1,32 @@
-class Graph:
+c_ Graph:
 
-    ___ __init__(self, v
-        self.v = v
-        self.graph = []
+    ___  -   v
+        v = v
+        graph = []
 
-    ___ add_edge(self, s, d, w
-        self.graph.append([s,d,w])
+    ___ add_edge  s, d, w
+        graph.ap..([s,d,w])
 
-    ___ bellman_ford(self, src
+    ___ bellman_ford  src
 
-        dist = [float('inf')]* self.v
+        dist = [float('inf')]* v
         dist[src] = 0
 
         # Relax v-1
 
-        ___ i __ range(self.v - 1
-            ___ u, v, c __ self.graph:
+        ___ i __ range(v - 1
+            ___ u, v, c __ graph:
                 __ dist[u] != float('inf') and dist[u] + c < dist[v]:
                     dist[v] = dist[u] + c
 
         # - ve cycles
-        ___ u, v, c __ self.graph:
+        ___ u, v, c __ graph:
             __ dist[u] != float('inf') and dist[u] + c < dist[v]:
                 print('Graph contains -ve cycle')
 
         print("vertex distance from the source :")
 
-        ___ i __ range(self.v
+        ___ i __ range(v
             print(i, ' : ', dist[i])
 
 

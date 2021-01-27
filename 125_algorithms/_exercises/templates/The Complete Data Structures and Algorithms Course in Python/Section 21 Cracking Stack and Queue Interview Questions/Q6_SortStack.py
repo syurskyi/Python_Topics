@@ -15,9 +15,9 @@ ___ sort_stack(stack
     ____
       temp.push(current)
       current = stack.pop()
-    __ current == None and previous: temp.push(previous)
+    __ current __ N.. and previous: temp.push(previous)
        
-  sorted = True
+  sorted = T..
   previous = temp.pop()
   current = temp.pop()
   while current:
@@ -28,40 +28,40 @@ ___ sort_stack(stack
     ____
       stack.push(current)
       current = temp.pop()
-      sorted = False
-    __ current == None and previous: stack.push(previous)
+      sorted = F..
+    __ current __ N.. and previous: stack.push(previous)
   __ sorted: r_ stack
   ____ r_ sort_stack(stack)
 
-class Stack(
-  ___ __init__(self
-    self.top = None
+c_ Stack(
+  ___  - (self
+    top = N..
   
   ___ __str__(self
-    r_ str(self.top)
+    r_ str(top)
   
-  ___ push(self, item
-    self.top = current(item, self.top)
+  ___ push  item
+    top = current(item, top)
   
   ___ pop(self
-    __ not self.top:
-      r_ None
-    item = self.top
-    self.top = self.top.next
+    __ not top:
+      r_ N..
+    item = top
+    top = top.next
     r_ item.data
 
-class current(
-  ___ __init__(self, data=None, next=None
-    self.data, self.next = data, next
+c_ current(
+  ___  -   data=N.., next=N..
+    data, next = data, next
   
   ___ __str__(self
-    r_ str(self and self.data) + ',' + str(self and self.next)
+    r_ str(self and data) + ',' + str(self and next)
 
 import unittest
 
-class Test(unittest.TestCase
+c_ Test(unittest.TestCase
   ___ test_sort_stack(self
-    self.assertEqual(str(sort_stack(Stack())), "None")
+    assertEqual(str(sort_stack(Stack())), "None")
     stack = Stack()
     stack.push(10)
     stack.push(30)
@@ -72,7 +72,7 @@ class Test(unittest.TestCase
     stack.push(90)
     stack.push(50)
     stack.push(60)
-    self.assertEqual(str(stack), "60,50,90,20,80,40,70,30,10,None")
-    self.assertEqual(str(sort_stack(stack)), "10,20,30,40,50,60,70,80,90,None")
+    assertEqual(str(stack), "60,50,90,20,80,40,70,30,10,None")
+    assertEqual(str(sort_stack(stack)), "10,20,30,40,50,60,70,80,90,None")
 
 unittest.main()

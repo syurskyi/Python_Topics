@@ -2,24 +2,24 @@
 #   Copyright © 2021 AppMillers. All rights reserved.
 
 
-class Graph:
-    ___ __init__(self, gdict=None
-        __ gdict is None:
+c_ Graph:
+    ___  -   gdict=N..
+        __ gdict __ N..:
             gdict = {}
-        self.gdict = gdict
+        gdict = gdict
     
-    ___ bfs(self, start, end
+    ___ bfs  start, end
         queue = []
-        queue.append([start])
+        queue.ap..([start])
         while queue:
             path = queue.pop(0)
             node = path[-1]
-            __ node == end:
+            __ node __ end:
                 r_ path
-            ___ adjacent __ self.gdict.get(node, []
+            ___ adjacent __ gdict.get(node, []
                 new_path = list(path)
-                new_path.append(adjacent)
-                queue.append(new_path)
+                new_path.ap..(adjacent)
+                queue.ap..(new_path)
 
 customDict = { "a" : ["b", "c"],
                "b" : ["d", "g"],

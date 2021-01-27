@@ -12,7 +12,7 @@ print(twoDArray)
 
 print(le_(twoDArray))
 
-newTwoDArray = np.append(twoDArray, [[1,2,3,4]], axis=0)
+newTwoDArray = np.ap..(twoDArray, [[1,2,3,4]], axis=0)
 print(newTwoDArray)
 print(le_(newTwoDArray))
 print(le_(newTwoDArray[0]))
@@ -37,7 +37,7 @@ traverseTDArray(twoDArray)
 ___ searchTDArray(array, value
     ___ i __ range(le_(array)):
         ___ j __ range(le_(array[0])):
-            __ array[i][j] == value:
+            __ array[i][j] __ value:
                 r_ 'The value is located index '+str(i)+" "+str(j)
     r_ 'The element no found'
 

@@ -1,56 +1,56 @@
 #   Created by Elshad Karimov on 12/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
-        self.prev = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
+        prev = N..
 
-class CircularDoublyLinkedList:
-    ___ __init__(self
-        self.head = None
-        self.tail = None
+c_ CircularDoublyLinkedList:
+    ___  - (self
+        head = N..
+        tail = N..
 
     
     ___ __iter__(self
-        node = self.head
+        node = head
         while node:
             yield node
             node = node.next
-            __ node == self.tail.next:
+            __ node __ tail.next:
                 break
     
     #  Creation of Circular Doubly Linked List
-    ___ createCDLL(self, nodeValue
+    ___ createCDLL  nodeValue
         newNode = Node(nodeValue)
-        self.head = newNode
-        self.tail = newNode
+        head = newNode
+        tail = newNode
         newNode.prev = newNode
         newNode.next = newNode
         r_ "The CDLL is created successfully"
 
 
     # Insertion Method in Circular Doubly Linked List
-    ___ insertCDLL(self, value, location
-        __ self.head is None:
+    ___ insertCDLL  value, location
+        __ head __ N..:
             r_ "The CDLL does not exist"
         ____
             newNode = Node(value)
-            __ location == 0:
-                newNode.next = self.head
-                newNode.prev = self.tail
-                self.head.prev = newNode
-                self.head = newNode
-                self.tail.next = newNode
-            elif location == 1:
-                newNode.next = self.head
-                newNode.prev = self.tail
-                self.head.prev = newNode
-                self.tail.next = newNode
-                self.tail = newNode
+            __ location __ 0:
+                newNode.next = head
+                newNode.prev = tail
+                head.prev = newNode
+                head = newNode
+                tail.next = newNode
+            elif location __ 1:
+                newNode.next = head
+                newNode.prev = tail
+                head.prev = newNode
+                tail.next = newNode
+                tail = newNode
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location - 1:
                     tempNode = tempNode.next
@@ -63,68 +63,68 @@ class CircularDoublyLinkedList:
 
     # Traversal of Circular Doubly Linked List
     ___ traversalCDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any node for traversal")
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
                 print(tempNode.value)
-                __ tempNode == self.tail:
+                __ tempNode __ tail:
                     break
                 tempNode = tempNode.next
 
     # Reverse traversal of Circular Doubly Linked List
     ___ reverseTraversalCDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any node for reverse traversal")
         ____
-            tempNode = self.tail
+            tempNode = tail
             while tempNode:
                 print(tempNode.value)
-                __ tempNode == self.head:
+                __ tempNode __ head:
                     break
                 tempNode = tempNode.prev
     
     # Search Circular Doubly Linked List
-    ___ searchCDLL(self, nodeValue
-        __ self.head is None:
+    ___ searchCDLL  nodeValue
+        __ head __ N..:
             r_ "There is not any node in CDLL"
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
-                __ tempNode == self.tail:
+                __ tempNode __ tail:
                     r_ "The value does not exist in CDLL"
                 tempNode = tempNode.next
     
     # Delete a node from Circular Doubly Linked List
-    ___ deleteNode(self, location
-        __ self.head is None:
+    ___ deleteNode  location
+        __ head __ N..:
             print("There is not any node to delete")
         ____
-            __ location == 0:
-                __ self.head == self.tail:
-                    self.head.prev = None
-                    self.head.next = None
-                    self.head = None
-                    self.tail = None
+            __ location __ 0:
+                __ head __ tail:
+                    head.prev = N..
+                    head.next = N..
+                    head = N..
+                    tail = N..
                 ____
-                    self.head = self.head.next
-                    self.head.prev = self.tail
-                    self.tail.next = self.head
-            elif location == 1:
-                __ self.head == self.tail:
-                    self.head.prev = None
-                    self.head.next = None
-                    self.head = None
-                    self.tail = None
+                    head = head.next
+                    head.prev = tail
+                    tail.next = head
+            elif location __ 1:
+                __ head __ tail:
+                    head.prev = N..
+                    head.next = N..
+                    head = N..
+                    tail = N..
                 ____
-                    self.tail = self.tail.prev
-                    self.tail.next = self.head
-                    self.head.prev = self.tail
+                    tail = tail.prev
+                    tail.next = head
+                    head.prev = tail
             ____
-                curNode = self.head
+                curNode = head
                 index = 0
                 while index < location - 1:
                     curNode = curNode.next
@@ -135,16 +135,16 @@ class CircularDoublyLinkedList:
     
     # Delete entire Circular Doubly Linked List
     ___ deleteCDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any element to delete")
         ____
-            self.tail.next = None
-            tempNode = self.head
+            tail.next = N..
+            tempNode = head
             while tempNode:
-                tempNode.prev = None
+                tempNode.prev = N..
                 tempNode = tempNode.next
-            self.head = None
-            self.tail = None
+            head = N..
+            tail = N..
             print("The CDLL has been successfully deleted")
     
 

@@ -3,50 +3,50 @@
 
 # Use a single list to implement three stacks.
 
-class MultiStack:
-    ___ __init__(self, stacksize
-        self.numberstacks = 3
-        self.custList = [0] * (stacksize * self.numberstacks)
-        self.sizes = [0] * self.numberstacks
-        self.stacksize = stacksize
+c_ MultiStack:
+    ___  -   stacksize
+        numberstacks = 3
+        custList = [0] * (stacksize * numberstacks)
+        sizes = [0] * numberstacks
+        stacksize = stacksize
     
-    ___ isFull(self, stacknum
-        __ self.sizes[stacknum] == self.stacksize:
-            r_ True
+    ___ isFull  stacknum
+        __ sizes[stacknum] __ stacksize:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
-    ___ isEmpty(self, stacknum
-        __ self.sizes[stacknum] == 0:
-            r_ True
+    ___ isEmpty  stacknum
+        __ sizes[stacknum] __ 0:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
-    ___ indexOfTop(self, stacknum
-        offset = stacknum * self.stacksize
-        r_ offset + self.sizes[stacknum]- 1
+    ___ indexOfTop  stacknum
+        offset = stacknum * stacksize
+        r_ offset + sizes[stacknum]- 1
     
-    ___ push(self, item, stacknum
-        __ self.isFull(stacknum
+    ___ push  item, stacknum
+        __ isFull(stacknum
             r_ "The stack is full"
         ____
-            self.sizes[stacknum] += 1
-            self.custList[self.indexOfTop(stacknum)] = item
+            sizes[stacknum] += 1
+            custList[indexOfTop(stacknum)] = item
     
-    ___ pop(self, stacknum
-        __ self.isEmpty(stacknum
+    ___ pop  stacknum
+        __ isEmpty(stacknum
             r_ "The stack is empty"
         ____
-            value = self.custList[self.indexOfTop(stacknum)]
-            self.custList[self.indexOfTop(stacknum)] = 0
-            self.sizes[stacknum] -= 1
+            value = custList[indexOfTop(stacknum)]
+            custList[indexOfTop(stacknum)] = 0
+            sizes[stacknum] -= 1
             r_ value
     
-    ___ peek(self, stacknum
-        __ self.isEmpty(stacknum
+    ___ peek  stacknum
+        __ isEmpty(stacknum
             r_ "The stack is empty"
         ____
-            value = self.custList[self.indexOfTop(stacknum)]
+            value = custList[indexOfTop(stacknum)]
             r_ value
 
 

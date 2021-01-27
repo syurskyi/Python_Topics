@@ -1,32 +1,32 @@
 
 ___ solve_maze(maze, x, y, solution, n
 
-    __ x == n-1 and y == n-1 and maze[x][y] == 1:
+    __ x __ n-1 and y __ n-1 and maze[x][y] __ 1:
         solution[x][y] = 1
-        r_ True
+        r_ T..
 
     __ is_safe(maze, x, y, n
         solution[x][y] = 1
 
         #x - dir, x is rows, downwards
         __ solve_maze(maze, x+1, y, solution, n
-            r_ True
+            r_ T..
         #Y-dir, y is columns, horizontally ->
         __ solve_maze(maze, x, y+1, solution, n
-            r_ True
+            r_ T..
 
         #backtrack
         maze[x][y] = 0
-        r_ False
+        r_ F..
 
-    r_ False
+    r_ F..
 
 
 ___ is_safe(maze, x, y, n
 
-    __ 0 <= x < n and 0 <= y < n and maze[x][y] == 1:
-        r_ True
-    r_ False
+    __ 0 <= x < n and 0 <= y < n and maze[x][y] __ 1:
+        r_ T..
+    r_ F..
 
 
 maze = [[1, 1, 0, 0],

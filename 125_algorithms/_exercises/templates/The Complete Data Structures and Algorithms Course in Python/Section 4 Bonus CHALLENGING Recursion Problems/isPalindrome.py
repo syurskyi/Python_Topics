@@ -5,10 +5,10 @@
 
 
 ___ isPalindrome(strng
-    __ le_(strng) == 0:
-        r_ True
+    __ le_(strng) __ 0:
+        r_ T..
     __ strng[0] != strng[le_(strng)-1]:
-        r_ False
+        r_ F..
     r_ isPalindrome(strng[1:-1])
 
 print(isPalindrome('awesome')) # false

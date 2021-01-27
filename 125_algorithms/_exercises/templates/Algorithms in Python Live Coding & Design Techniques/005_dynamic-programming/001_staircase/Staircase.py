@@ -1,7 +1,7 @@
 #Recursive Approach
 ___ ways(n, k
 
-    __ n == 0:
+    __ n __ 0:
         r_ 1
     __ n < 0:
         r_ 0
@@ -15,13 +15,13 @@ ___ ways(n, k
 #Dynamic Programming : Top Down Approach
 ___ ways_top_down(n, k, dp
 
-    __ n == 0:
+    __ n __ 0:
         dp[n] = 1
         r_ dp[n]
     __ n < 0:
         r_ 0
 
-    __ not dp[n] == -1:
+    __ not dp[n] __ -1:
         r_ dp[n]
 
     dp[n] = 0

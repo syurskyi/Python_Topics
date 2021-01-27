@@ -5,7 +5,7 @@
 
 ___ linearSearch(array, value
     ___ i __ range(le_(array)):
-        __ array[i] == value:
+        __ array[i] __ value:
             r_ i
     r_ -1
 

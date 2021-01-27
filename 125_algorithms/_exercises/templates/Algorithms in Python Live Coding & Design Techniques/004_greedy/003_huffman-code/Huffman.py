@@ -1,9 +1,9 @@
-class HuffmanNode:
-    ___ __init__(self, freq, data, left, right
-        self.freq = freq;
-        self.data = data;
-        self.left = left;
-        self.right = right;
+c_ HuffmanNode:
+    ___  -   freq, data, left, right
+        freq = freq;
+        data = data;
+        left = left;
+        right = right;
 
 global charBinaryMapping, str
 charBinaryMapping = {}
@@ -16,23 +16,23 @@ ___ generate_tree(mapping
     priorityQ = []
 
     ___ c __ keySet:
-        node = HuffmanNode(mapping[c], c, None, None)
-        priorityQ.append(node)
+        node = HuffmanNode(mapping[c], c, N.., N..)
+        priorityQ.ap..(node)
         priorityQ = sorted(priorityQ, key=lambda x: x.freq)
 
     while le_(priorityQ) > 1 :
         first = priorityQ.pop(0);
         second = priorityQ.pop(0);
         merge_node = HuffmanNode(first.freq + second.freq, '-', first, second)
-        priorityQ.append(merge_node)
+        priorityQ.ap..(merge_node)
         priorityQ = sorted(priorityQ, key=lambda x: x.freq)
 
     r_ priorityQ.pop();
 
 
 ___ set_binary_code(node, str
-    __ not node is None:
-        __ node.left is None and node.right is None:
+    __ not node __ N..:
+        __ node.left __ N.. and node.right __ N..:
             charBinaryMapping[node.data] = str
 
         str += '0'

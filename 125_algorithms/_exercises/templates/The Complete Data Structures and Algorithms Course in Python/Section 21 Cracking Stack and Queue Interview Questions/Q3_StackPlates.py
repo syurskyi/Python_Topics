@@ -3,33 +3,33 @@
 
 # Stack of Plates
 
-class PlateStack(
-    ___ __init__(self, capacity
-        self.capacity = capacity
-        self.stacks = []
+c_ PlateStack(
+    ___  -   capacity
+        capacity = capacity
+        stacks = []
     
     ___ __str__(self
-        r_ self.stacks
+        r_ stacks
     
-    ___ push(self, item
-        __ le_(self.stacks) > 0 and (le_(self.stacks[-1])) < self.capacity:
-            self.stacks[-1].append(item)
+    ___ push  item
+        __ le_(stacks) > 0 and (le_(stacks[-1])) < capacity:
+            stacks[-1].ap..(item)
         ____
-            self.stacks.append([item])
+            stacks.ap..([item])
     
     ___ pop(self
-        while le_(self.stacks) and le_(self.stacks[-1]) == 0:
-            self.stacks.pop()
-        __ le_(self.stacks) == 0:
-            r_ None
+        while le_(stacks) and le_(stacks[-1]) __ 0:
+            stacks.pop()
+        __ le_(stacks) __ 0:
+            r_ N..
         ____
-            r_ self.stacks[-1].pop()
+            r_ stacks[-1].pop()
     
-    ___ pop_at(self, stackNumber
-        __ le_(self.stacks[stackNumber]) > 0:
-            r_ self.stacks[stackNumber].pop()
+    ___ pop_at  stackNumber
+        __ le_(stacks[stackNumber]) > 0:
+            r_ stacks[stackNumber].pop()
         ____
-            r_ None
+            r_ N..
 
 
 customStack= PlateStack(2)

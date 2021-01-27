@@ -1,19 +1,19 @@
 #   Created by Elshad Karimov on 05/06/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class TreeNode:
-    ___ __init__(self, data, children = []
-        self.data = data
-        self.children = children
+c_ TreeNode:
+    ___  -   data, children = []
+        data = data
+        children = children
     
-    ___ __str__(self, level=0
-        ret = "  " * level + str(self.data)  + "\n"
-        ___ child __ self.children:
+    ___ __str__  level=0
+        ret = "  " * level + str(data)  + "\n"
+        ___ child __ children:
             ret += child.__str__(level + 1)
         r_ ret
     
-    ___ addChild(self, TreeNode
-        self.children.append(TreeNode)
+    ___ addChild  TreeNode
+        children.ap..(TreeNode)
 
 tree = TreeNode('Drinks', [])
 cold = TreeNode('Cold', [])

@@ -19,7 +19,7 @@ myList = [1,2,3,4,5,6,7]
 print(myList)
 myList.insert(4,15)
 
-myList.append(55)
+myList.ap..(55)
 
 newList = [11,12,13,14]
 myList.extend(newList)
@@ -31,7 +31,7 @@ myList =  [10,20,30,40,50,60,70,80,90]
 
 ___ searchinList(list, value
     ___ i __ list:
-        __ i == value:
+        __ i __ value:
             r_ list.index(value)
     r_ 'The value does not exist in the list'
 
@@ -41,9 +41,9 @@ print(searchinList(myList, 100))
 #  List operations / functions
 total = 0 
 count = 0
-while (True
+while (T..
     inp = input('Enter a number: ') 
-    __ inp == 'done': break
+    __ inp __ 'done': break
     value = float(inp)
     total = total + value
     count = count + 1 
@@ -54,11 +54,11 @@ print('Average:', average)
 
 
 numlist = list() 
-while (True
+while (T..
     inp = input('Enter a number: ') 
-    __ inp == 'done': break
+    __ inp __ 'done': break
     value = float(inp)
-    numlist.append(value)
+    numlist.ap..(value)
 					
 average = sum(numlist) / le_(numlist) 
 print('Average:', average)

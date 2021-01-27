@@ -12,7 +12,7 @@ ___ partition(ll, x
 
     while curNode:
         nextNode = curNode.next
-        curNode.next = None
+        curNode.next = N..
         __ curNode.value < x:
             curNode.next = ll.head
             ll.head = curNode
@@ -21,8 +21,8 @@ ___ partition(ll, x
             ll.tail = curNode
         curNode = nextNode
     
-    __ ll.tail.next is not None:
-        ll.tail.next = None
+    __ ll.tail.next __ not N..:
+        ll.tail.next = N..
 
 customLL = LinkedList()
 customLL.generate(10,0,99)

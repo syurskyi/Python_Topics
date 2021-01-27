@@ -1,53 +1,53 @@
 #   Created by Elshad Karimov on 05/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Node:
-    ___ __init__(self, value=None
-        self.value = value
-        self.next = None
-        self.prev = None
+c_ Node:
+    ___  -   value=N..
+        value = value
+        next = N..
+        prev = N..
 
-class DoublyLinkedList:
-    ___ __init__(self
-        self.head = None
-        self.tail = None
+c_ DoublyLinkedList:
+    ___  - (self
+        head = N..
+        tail = N..
 
     
     ___ __iter__(self
-        node = self.head
+        node = head
         while node:
             yield node
             node = node.next
     
     #  Creation of Doubly Linked List
-    ___ createDLL(self, nodeValue
+    ___ createDLL  nodeValue
         node = Node(nodeValue)
-        node.prev = None
-        node.next = None
-        self.head = node
-        self.tail = node
+        node.prev = N..
+        node.next = N..
+        head = node
+        tail = node
         r_ "The DLL is created Successfully"
     
     
     
     #  Insertion Method in Doubly Linked List
-    ___ insertNode(self, nodeValue, location
-        __ self.head is None:
+    ___ insertNode  nodeValue, location
+        __ head __ N..:
             print("The node cannot be inserted")
         ____
             newNode = Node(nodeValue)
-            __ location == 0:
-                newNode.prev = None
-                newNode.next = self.head
-                self.head.prev = newNode
-                self.head = newNode
-            elif location == 1:
-                newNode.next = None
-                newNode.prev = self.tail
-                self.tail.next = newNode
-                self.tail = newNode
+            __ location __ 0:
+                newNode.prev = N..
+                newNode.next = head
+                head.prev = newNode
+                head = newNode
+            elif location __ 1:
+                newNode.next = N..
+                newNode.prev = tail
+                tail.next = newNode
+                tail = newNode
             ____
-                tempNode = self.head
+                tempNode = head
                 index = 0
                 while index < location - 1:
                     tempNode = tempNode.next
@@ -59,57 +59,57 @@ class DoublyLinkedList:
     
     #  Traversal Method in Doubly Linked List
     ___ traverseDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any element to traverse")
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.next
     
     #  Reverse Traversal Method in Doubly Linked List
     ___ reverseTraversalDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any element to traverse")
         ____
-            tempNode = self.tail
+            tempNode = tail
             while tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.prev
 
     # Search Method in Doubly Linked List
-    ___ searchDLL(self, nodeValue
-        __ self.head is None:
+    ___ searchDLL  nodeValue
+        __ head __ N..:
             r_ "There is not any element in the list"
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode = tempNode.next
             r_ "The node does not exist in this list"
 
     # Delete a node from Doubly Linked List
-    ___ deleteNode(self,location
-        __ self.head is None:
+    ___ deleteNode location
+        __ head __ N..:
             print("There is not any element in DLL")
         ____
-            __ location == 0:
-                __ self.head == self.tail:
-                    self.head = None
-                    self.tail = None
+            __ location __ 0:
+                __ head __ tail:
+                    head = N..
+                    tail = N..
                 ____
-                    self.head = self.head.next
-                    self.head.prev = None
-            elif location == 1:
-                __ self.head == self.tail:
-                    self.head = None
-                    self.tail = None
+                    head = head.next
+                    head.prev = N..
+            elif location __ 1:
+                __ head __ tail:
+                    head = N..
+                    tail = N..
                 ____
-                    self.tail = self.tail.prev
-                    self.tail.next = None
+                    tail = tail.prev
+                    tail.next = N..
             ____
-                curNode = self.head
+                curNode = head
                 index = 0
                 while index < location - 1:
                     curNode = curNode.next
@@ -120,15 +120,15 @@ class DoublyLinkedList:
 
     # Delete entire Doubly Linked List
     ___ deleteDLL(self
-        __ self.head is None:
+        __ head __ N..:
             print("There is not any node in DLL")
         ____
-            tempNode = self.head
+            tempNode = head
             while tempNode:
-                tempNode.prev = None
+                tempNode.prev = N..
                 tempNode = tempNode.next
-            self.head = None
-            self.tail = None
+            head = N..
+            tail = N..
             print("The DLL has been successfully deleted")
     
 

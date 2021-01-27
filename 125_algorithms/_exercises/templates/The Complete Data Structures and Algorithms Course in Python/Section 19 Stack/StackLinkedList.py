@@ -1,57 +1,57 @@
 #   Created by Elshad Karimov on 23/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Node:
-    ___ __init__(self, value = None
-        self.value = value
-        self.next = None
+c_ Node:
+    ___  -   value = N..
+        value = value
+        next = N..
 
-class LinkedList:
-    ___ __init__(self
-        self.head = None
+c_ LinkedList:
+    ___  - (self
+        head = N..
     
     ___ __iter__(self
-        curNode = self.head
+        curNode = head
         while curNode:
             yield curNode
             curNode = curNode.next
 
-class Stack:
-    ___ __init__(self
-        self.LinkedList = LinkedList()
+c_ Stack:
+    ___  - (self
+        LinkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x.value) ___ x __ self.LinkedList]
+        values = [str(x.value) ___ x __ LinkedList]
         r_ '\n'.join(values)
     
     ___ isEmpty(self
-        __ self.LinkedList.head == None:
-            r_ True
+        __ LinkedList.head __ N..:
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
-    ___ push(self, value
+    ___ push  value
         node = Node(value)
-        node.next = self.LinkedList.head
-        self.LinkedList.head = node
+        node.next = LinkedList.head
+        LinkedList.head = node
     
     ___ pop(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            nodeValue = self.LinkedList.head.value
-            self.LinkedList.head = self.LinkedList.head.next
+            nodeValue = LinkedList.head.value
+            LinkedList.head = LinkedList.head.next
             r_ nodeValue
     
     ___ peek(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            nodeValue = self.LinkedList.head.value
+            nodeValue = LinkedList.head.value
             r_ nodeValue
     
     ___ delete(self
-        self.LinkedList.head = None
+        LinkedList.head = N..
     
 
 

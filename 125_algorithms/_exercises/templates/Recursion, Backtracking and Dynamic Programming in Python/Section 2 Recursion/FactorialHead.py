@@ -2,7 +2,7 @@
 ___ factorial_head(n
 
     # this is the base case - 0!=1
-    __ n == 0:
+    __ n __ 0:
         r_ 1
 
     # use recursion
@@ -15,7 +15,7 @@ ___ factorial_head(n
 
 ___ factorial_tail(n, accumulator=1
 
-    __ n == 1:
+    __ n __ 1:
         r_ accumulator
 
     r_ factorial_tail(n-1, n * accumulator)

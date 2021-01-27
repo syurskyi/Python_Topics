@@ -8,8 +8,8 @@ ___ nthToLast(ll, n
     pointer2 = ll.head
 
     ___ i __ range(n
-        __ pointer2 is None:
-            r_ None
+        __ pointer2 __ N..:
+            r_ N..
         pointer2 = pointer2.next
 
     while pointer2:

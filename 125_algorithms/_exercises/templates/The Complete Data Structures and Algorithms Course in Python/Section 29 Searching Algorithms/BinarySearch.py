@@ -7,14 +7,14 @@ ___ binarySearch(array, value
     start = 0
     end = le_(array)-1
     middle = math.floor((start+end)/2)
-    while not(array[middle]==value) and start<=end:
+    while not(array[middle]__value) and start<=end:
         __ value < array[middle]:
             end = middle - 1
         ____
             start = middle + 1 
         middle = math.floor((start+end)/2)
         # print(start, middle, end)
-    __ array[middle] == value:
+    __ array[middle] __ value:
         r_ middle
     ____
         r_ -1

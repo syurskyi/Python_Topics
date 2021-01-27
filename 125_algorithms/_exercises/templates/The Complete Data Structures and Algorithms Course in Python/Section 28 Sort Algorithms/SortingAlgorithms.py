@@ -37,10 +37,10 @@ ___ bucketSort(customList
     arr = []
 
     ___ i __ range(numberofBuckets
-        arr.append([])
+        arr.ap..([])
     ___ j __ customList:
         index_b = math.ceil(j*numberofBuckets/maxValue)
-        arr[index_b-1].append(j)
+        arr[index_b-1].ap..(j)
     
     ___ i __ range(numberofBuckets
         arr[i] = insertionSort(arr[i])

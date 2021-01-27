@@ -1,55 +1,55 @@
 
-class ColoringProblem:
+c_ ColoringProblem:
 
-    ___ __init__(self, adjacency_matrix, num_colors
-        self.n = le_(adjacency_matrix)
-        self.adjacency_matrix = adjacency_matrix
-        self.num_colors = num_colors
-        self.colors = [0 ___ _ __ range(self.n)]
+    ___  -   adjacency_matrix, num_colors
+        n = le_(adjacency_matrix)
+        adjacency_matrix = adjacency_matrix
+        num_colors = num_colors
+        colors = [0 ___ _ __ range(n)]
 
     ___ coloring_problem(self
 
         # we call the solve with first vertex (index 0)
-        __ self.solve(0
-            self.show_result()
+        __ solve(0
+            show_result()
         ____
             print('There is no feasible solution...')
 
-    ___ solve(self, node_index
+    ___ solve  node_index
 
-        __ node_index == self.n:
-            r_ True
+        __ node_index __ n:
+            r_ T..
 
         # consider the colors
-        ___ color_index __ range(1, self.num_colors+1
-            __ self.is_color_valid(node_index, color_index
-                self.colors[node_index] = color_index
+        ___ color_index __ range(1, num_colors+1
+            __ is_color_valid(node_index, color_index
+                colors[node_index] = color_index
 
-                __ self.solve(node_index+1
-                    r_ True
+                __ solve(node_index+1
+                    r_ T..
 
                 # BACKTRACKING
                 # in this case backtracking means doing "nothing"
 
-        r_ False
+        r_ F..
 
-    ___ is_color_valid(self, node_index, color_index
+    ___ is_color_valid  node_index, color_index
 
         # we have to check that the nodes are connected
         # AND we have to check that the given color is not shared
         # with these adjacent nodes
-        ___ i __ range(self.n
-            __ self.adjacency_matrix[node_index][i] == 1 and color_index == self.colors[i]:
-                r_ False
+        ___ i __ range(n
+            __ adjacency_matrix[node_index][i] __ 1 and color_index __ colors[i]:
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ show_result(self
-        ___ v, c __ zip(range(self.n), self.colors
+        ___ v, c __ zip(range(n), colors
             print('Node %d has color value %d' % (v, c))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     m = [[0, 1, 1, 1],
          [1, 0, 1, 0],

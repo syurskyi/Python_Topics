@@ -6,9 +6,9 @@
 ___ stringifyNumbers(obj
     newObj = obj
     ___ key __ newObj:
-        __ type(newObj[key]) is int:
+        __ type(newObj[key]) __ int:
             newObj[key] = str(newObj[key])
-        __ type(newObj[key]) is dict:
+        __ type(newObj[key]) __ dict:
             newObj[key] = stringifyNumbers(newObj[key])
     r_ newObj
 
@@ -20,7 +20,7 @@ obj = {
   "data": {
     "val": 4,
     "info": {
-      "isRight": True,
+      "isRight": T..,
       "random": 66
     }
   }
@@ -31,6 +31,6 @@ print(stringifyNumbers(obj))
 {'num': '1', 
  'test': [], 
  'data': {'val': '4', 
-          'info': {'isRight': True, 'random': '66'}
+          'info': {'isRight': T.., 'random': '66'}
           }
 }

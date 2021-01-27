@@ -6,8 +6,8 @@ n = 8
 
 ___ knight_tour(board, row, col, step
 
-    __ step == n**2:
-        r_ True
+    __ step __ n**2:
+        r_ T..
 
     ___ index __ range(n
 
@@ -17,15 +17,15 @@ ___ knight_tour(board, row, col, step
         __ move_is_valid(board, row_new, col_new
             board[row_new][col_new] = step
             __ knight_tour(board, row_new, col_new, step+1
-                r_ True
+                r_ T..
             board[row_new][col_new] = -1
-    r_ False
+    r_ F..
 
 
 ___ move_is_valid(board, row, col
-    __ 0 <= row < n and 0 <= col < n and board[row][col] == -1:
-        r_ True
-    r_ False
+    __ 0 <= row < n and 0 <= col < n and board[row][col] __ -1:
+        r_ T..
+    r_ F..
 
 
 board = [[-1 ___ i __ range(n)] ___ i __ range(n)]

@@ -1,38 +1,38 @@
 #   Created by Elshad Karimov on 29/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Queue:
-    ___ __init__(self
-        self.items = []
+c_ Queue:
+    ___  - (self
+        items = []
     
     ___ __str__(self
-        values = [str(x) ___ x __ self.items]
+        values = [str(x) ___ x __ items]
         r_ ' '.join(values)
     
     ___ isEmpty(self
-        __ self.items == []:
-            r_ True
+        __ items __ []:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
-    ___ enqueue(self, value
-        self.items.append(value)
+    ___ enqueue  value
+        items.ap..(value)
         r_ "The element is inserted at the end of Queue"
     
     ___ dequeue(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "The is not any element in the Queue"
         ____
-            r_ self.items.pop(0)
+            r_ items.pop(0)
     
     ___ peek(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "The is not any element in the Queue"
         ____
-            r_ self.items[0]
+            r_ items[0]
     
     ___ delete(self
-        self.items = None
+        items = N..
 
 
 

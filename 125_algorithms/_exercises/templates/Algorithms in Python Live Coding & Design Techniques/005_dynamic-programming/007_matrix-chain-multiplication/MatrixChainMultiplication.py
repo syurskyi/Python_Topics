@@ -3,7 +3,7 @@ import sys
 
 # Recursive Approach
 ___ mcm(seq, i, j
-    __ i == j:
+    __ i __ j:
         r_ 0
     min_ops = sys.maxsize
     ___ k __ range(i, j
@@ -14,7 +14,7 @@ ___ mcm(seq, i, j
 
 # DP : Top Down Approach
 ___ mcm_topdown(seq, i, j, arr
-    __ i == j:
+    __ i __ j:
         r_ 0
     __ arr[i][j] >= 0:
         r_ arr[i][j]
@@ -33,7 +33,7 @@ ___ mcm_bottomup(seq, n
     ___ le_ __ range(2, n
         ___ i __ range(1, n-le_+1
             j = i + le_ - 1
-            __ j == n:
+            __ j __ n:
                 continue
             min_ops = sys.maxsize
             ___ k __ range(i, j
@@ -46,7 +46,7 @@ ___ mcm_bottomup(seq, n
     r_ arr[1][n-1]
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     seq = [4, 3, 2, 1, 5]
     n = le_(seq)
     print(mcm(seq, 1, n - 1))

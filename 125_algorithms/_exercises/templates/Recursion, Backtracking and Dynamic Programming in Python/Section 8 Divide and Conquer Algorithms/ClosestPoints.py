@@ -1,11 +1,11 @@
 import math
 
 
-class Point:
+c_ Point:
 
-    ___ __init__(self, x, y
-        self.x = x
-        self.y = y
+    ___  -   x, y
+        x = x
+        y = y
 
 
 # Euclidean distance - we can omit the square-root function
@@ -66,7 +66,7 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
 
     ___ i __ range(num_of_items
         __ abs(list_sorted_y[i].x - middle_item.x) < delta:
-            strip_points.append(list_sorted_y[i])
+            strip_points.ap..(list_sorted_y[i])
 
     strip_delta = get_strip_delta(strip_points, delta)
 
@@ -79,7 +79,7 @@ ___ run(list1, list2
     r_ closest_pairs_algorithm(list1, list2, le_(list1))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     points = [Point(1, 1), Point(4, 2), Point(10, 10), Point(1, 2), Point(5, 3)]
 
     l1 = list(points)

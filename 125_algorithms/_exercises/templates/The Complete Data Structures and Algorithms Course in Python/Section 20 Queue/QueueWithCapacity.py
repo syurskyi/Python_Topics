@@ -1,70 +1,70 @@
 #   Created by Elshad Karimov on 29/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Queue:
-    ___ __init__(self, maxSize
-        self.items = maxSize * [None]
-        self.maxSize = maxSize
-        self.start = -1
-        self.top = -1 
+c_ Queue:
+    ___  -   maxSize
+        items = maxSize * [N..]
+        maxSize = maxSize
+        start = -1
+        top = -1 
     
     ___ __str__(self
-        values = [str(x) ___ x __ self.items]
+        values = [str(x) ___ x __ items]
         r_ ' '.join(values)
     
     ___ isFull(self
-        __ self.top + 1 == self.start:
-            r_ True
-        elif self.start == 0 and self.top + 1 == self.maxSize:
-            r_ True
+        __ top + 1 __ start:
+            r_ T..
+        elif start __ 0 and top + 1 __ maxSize:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ isEmpty(self
-        __ self.top == -1:
-            r_ True
+        __ top __ -1:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
-    ___ enqueue(self, value
-        __ self.isFull(
+    ___ enqueue  value
+        __ isFull(
             r_ "The queue is full"
         ____
-            __ self.top + 1 == self.maxSize:
-                self.top = 0
+            __ top + 1 __ maxSize:
+                top = 0
             ____
-                self.top += 1
-                __ self.start == -1:
-                    self.start = 0
-            self.items[self.top] = value
+                top += 1
+                __ start __ -1:
+                    start = 0
+            items[top] = value
             r_ "The element is inserted at the end of Queue"
     
     ___ dequeue(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the Queue"
         ____
-            firstElement = self.items[self.start]
-            start = self.start
-            __ self.start == self.top:
-                self.start = -1
-                self.top = -1
-            elif self.start + 1 == self.maxSize:
-                self.start = 0
+            firstElement = items[start]
+            start = start
+            __ start __ top:
+                start = -1
+                top = -1
+            elif start + 1 __ maxSize:
+                start = 0
             ____
-                self.start += 1
-            self.items[start] = None
+                start += 1
+            items[start] = N..
             r_ firstElement
     
     ___ peek(self
-        __ self.isEmpty(
+        __ isEmpty(
             r_ "There is not any element in the Queue"
         ____
-            r_ self.items[self.start]
+            r_ items[start]
     
     ___ delete(self
-        self.items = self.maxSize * [None]
-        self.top = -1
-        self.start = -1
+        items = maxSize * [N..]
+        top = -1
+        start = -1
 
 
 

@@ -1,68 +1,68 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2021 AppMillers. All rights reserved.
 
-class TrieNode:
-    ___ __init__(self
-        self.children = {}
-        self.endOfString = False
+c_ TrieNode:
+    ___  - (self
+        children = {}
+        endOfString = F..
 
-class Trie:
-    ___ __init__(self
-        self.root = TrieNode()
+c_ Trie:
+    ___  - (self
+        root = TrieNode()
     
-    ___ insertString(self, word
-        current = self.root
+    ___ insertString  word
+        current = root
         ___ i __ word:
             ch = i
             node = current.children.get(ch)
-            __ node == None:
+            __ node __ N..:
                 node = TrieNode()
                 current.children.update({ch:node})
             current = node
-        current.endOfString = True
+        current.endOfString = T..
         print("Successfully inserted")
     
-    ___ searchString(self, word
-        currentNode = self.root
+    ___ searchString  word
+        currentNode = root
         ___ i __ word:
             node = currentNode.children.get(i)
-            __ node == None:
-                r_ False
+            __ node __ N..:
+                r_ F..
             currentNode = node
 
-        __ currentNode.endOfString == True:
-            r_ True
+        __ currentNode.endOfString __ T..:
+            r_ T..
         ____
-            r_ False
+            r_ F..
         
 
 ___ deleteString(root, word, index
     ch = word[index]
     currentNode = root.children.get(ch)
-    canThisNodeBeDeleted = False
+    canThisNodeBeDeleted = F..
 
     __ le_(currentNode.children) > 1:
         deleteString(currentNode, word, index+1)
-        r_ False
+        r_ F..
     
-    __ index == le_(word) - 1:
+    __ index __ le_(word) - 1:
         __ le_(currentNode.children) >= 1:
-            currentNode.endOfString = False
-            r_ False
+            currentNode.endOfString = F..
+            r_ F..
         ____
             root.children.pop(ch)
-            r_ True
+            r_ T..
     
-    __ currentNode.endOfString == True:
+    __ currentNode.endOfString __ T..:
         deleteString(currentNode, word, index+1)
-        r_ False
+        r_ F..
 
     canThisNodeBeDeleted = deleteString(currentNode, word, index+1)
-    __ canThisNodeBeDeleted == True:
+    __ canThisNodeBeDeleted __ T..:
         root.children.pop(ch)
-        r_ True
+        r_ T..
     ____
-        r_ False
+        r_ F..
 
 
 

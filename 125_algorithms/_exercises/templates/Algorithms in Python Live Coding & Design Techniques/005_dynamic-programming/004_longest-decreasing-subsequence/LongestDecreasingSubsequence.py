@@ -2,7 +2,7 @@ import sys
 
 #recursive
 ___ get_lds(nums, i, prev
-    __ i == le_(nums
+    __ i __ le_(nums
         r_ 0
     incl = 0
     __ nums[i] < prev:
@@ -13,7 +13,7 @@ ___ get_lds(nums, i, prev
 
 # DP: Top Down
 ___ get_lds_top_down(nums, prev_index, curr, dp
-    __ curr == le_(nums
+    __ curr __ le_(nums
         r_ 0
 
     __ dp[prev_index+1][curr] > 0:
@@ -29,7 +29,7 @@ ___ get_lds_top_down(nums, prev_index, curr, dp
 
 # DP: Bottom Up
 ___ get_lds_bottom_up(nums
-    __ le_(nums) == 0:
+    __ le_(nums) __ 0:
         r_ 0
     max_lds = [1] * le_(nums)
 
@@ -42,7 +42,7 @@ ___ get_lds_bottom_up(nums
     r_ max_so_far
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     nums = [20, 8, 12, 16, 10, 9, 18, 7]
     print(get_lds(nums, 0, sys.maxsize))
 

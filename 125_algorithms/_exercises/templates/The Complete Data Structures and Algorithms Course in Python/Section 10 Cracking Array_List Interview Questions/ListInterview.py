@@ -18,7 +18,7 @@ ___ findMissing(list, n
 ___ findPairs(list, sum
     ___ i __ range(le_(list)):
         ___ j __ range(i+1,le_(list)):
-            __ (list[i]+list[j]) == sum:
+            __ (list[i]+list[j]) __ sum:
                 print(list[i],list[j])
 # findPairs(mylist, 100)
 
@@ -29,7 +29,7 @@ myArray = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1
 
 ___ findNumber(array, number
     ___ i __ range(le_(array)):
-        __ array[i] == number:
+        __ array[i] __ number:
             print(i)
 
 findNumber(myArray, 12)
@@ -56,10 +56,10 @@ ___ isUnique(list
   ___ i __ list:
     __ i __ a:
         print(i)
-        r_ False
+        r_ F..
     ____
-        a.append(i)
-  r_ True
+        a.ap..(i)
+  r_ T..
 
 print(isUnique(myList))
 
@@ -70,10 +70,10 @@ print(isUnique(myList))
 ___ permuntation(list1, list2
     print(list1)
     print(list2.reverse())
-    __ list1 == list2:   # if list1 == list2.reverse() -- false
-        r_ True
+    __ list1 __ list2:   # if list1 == list2.reverse() -- false
+        r_ T..
     ____
-        r_ False
+        r_ F..
 
 # print(permuntation([1,2,3], [3,2,1]))
 

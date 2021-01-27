@@ -5,9 +5,9 @@
 
 ___ nestedEvenSum(obj, sum=0
     ___ key __ obj:
-        __ type(obj[key]) is dict:
+        __ type(obj[key]) __ dict:
             sum += nestedEvenSum(obj[key])
-        elif type(obj[key]) is int and obj[key]%2==0:
+        elif type(obj[key]) __ int and obj[key]%2__0:
             sum+=obj[key]
     r_ sum
 
@@ -19,7 +19,7 @@ obj1 = {
     "inner": 2,
     "otherObj": {
       "superInner": 2,
-      "notANumber": True,
+      "notANumber": T..,
       "alsoNotANumber": "yup"
     }
   }

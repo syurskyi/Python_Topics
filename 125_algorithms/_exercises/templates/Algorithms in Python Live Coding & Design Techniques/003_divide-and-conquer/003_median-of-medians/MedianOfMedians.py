@@ -11,7 +11,7 @@ ___ find_median_util(arr, k, low, high
 
     length = m - low + 1
 
-    __ length == k:
+    __ length __ k:
         r_ arr[m]
 
     __ length > k:
@@ -29,7 +29,7 @@ ___ partition(arr, low, high
         while arr[high] > pivot:
             high -= 1
 
-        __ arr[low] == arr[high]:
+        __ arr[low] __ arr[high]:
             low += 1
 
         # swap

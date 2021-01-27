@@ -1,10 +1,10 @@
 
 ___ fibonacci_recursion(n
 
-    __ n == 0:
+    __ n __ 0:
         r_ 1
 
-    __ n == 1:
+    __ n __ 1:
         r_ 1
 
     r_ fibonacci_recursion(n-1) + fibonacci_recursion(n-2)

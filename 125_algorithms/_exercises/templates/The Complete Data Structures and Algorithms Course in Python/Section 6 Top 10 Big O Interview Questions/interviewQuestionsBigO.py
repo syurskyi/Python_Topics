@@ -71,7 +71,7 @@ reverse(arrayA)
 ___ factorial(n
     __ n < 0:
         r_ -1
-    elif n == 0:
+    elif n __ 0:
         r_ 1
     ____
         r_ n * factorial(n-1)
@@ -86,7 +86,7 @@ ___ allFib(n
 ___ fib(n
     __ n <= 0:
         r_ 0
-    elif n == 1:
+    elif n __ 1:
         r_ 1
     r_ fib(n-1) + fib(n-2)
 
@@ -98,7 +98,7 @@ ___ powersOf2(n
     # print("n:"+str(n))
     __ n < 1:
         r_ 0
-    elif n == 1:
+    elif n __ 1:
         print(1)
         r_ 1
     ____

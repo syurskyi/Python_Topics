@@ -19,9 +19,9 @@ ___ find_words(boggle, visited, i, j, word
 
 
 ___ is_valid(row, col, visited
-    __ 0 <= row < m and 0 <= col < n and visited[row][col] == 0:
-        r_ True
-    r_ False
+    __ 0 <= row < m and 0 <= col < n and visited[row][col] __ 0:
+        r_ T..
+    r_ F..
 
 
 boggle =[['T', 'Y', 'R', 'S'],

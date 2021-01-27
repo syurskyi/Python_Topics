@@ -4,7 +4,7 @@ ___ linear_search_recursive(container, item, index=0
         r_ -1
 
     # base case when we find the item
-    __ container[index] == item:
+    __ container[index] __ item:
         r_ index
 
     r_ linear_search_recursive(container, item, index + 1)

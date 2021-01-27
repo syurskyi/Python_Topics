@@ -1,27 +1,27 @@
 from collections import defaultdict
 
 
-class Graph:
+c_ Graph:
 
-    ___ __init__(self, vertices
-        self.v = vertices
-        self.adj = defaultdict(list)
+    ___  -   vertices
+        v = vertices
+        adj = defaultdict(list)
 
-    ___ add_edge(self, u, v
-        self.adj[u].append(v)
+    ___ add_edge  u, v
+        adj[u].ap..(v)
 
     ___ topological_sort(self
-        in_degree = [0] * self.v
+        in_degree = [0] * v
 
-        ___ i __ self.adj:
-            ___ j __ self.adj[i]:
+        ___ i __ adj:
+            ___ j __ adj[i]:
                 in_degree[j] += 1
 
         # creating queue
         q = []
-        ___ i __ range(self.v
-            __ in_degree[i] == 0:
-                q.append(i)
+        ___ i __ range(v
+            __ in_degree[i] __ 0:
+                q.ap..(i)
 
         c = 0
         linear_order = []
@@ -30,16 +30,16 @@ class Graph:
 
         while q:
             x = q.pop()
-            linear_order.append(x)
-            ___ vertex __ self.adj[x]:
+            linear_order.ap..(x)
+            ___ vertex __ adj[x]:
                 in_degree[vertex] -= 1
-                __ in_degree[vertex] == 0:
-                    q.append(vertex)
+                __ in_degree[vertex] __ 0:
+                    q.ap..(vertex)
             c += 1
 
         # check for negative cycle | print the linear order
 
-        __ c != self.v:
+        __ c != v:
             print('Graph contains -ve cycle')
             r_
         print('linear order is: ', linear_order)
