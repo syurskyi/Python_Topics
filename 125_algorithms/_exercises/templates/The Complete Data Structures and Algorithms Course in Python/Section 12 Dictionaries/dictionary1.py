@@ -10,7 +10,7 @@ print(myDict)
 #  Traverse through a dictionary
 
 ___ traverseDict(dict
-    for key in dict:
+    ___ key __ dict:
         print(key, dict[key])
 
 traverseDict(myDict)
@@ -19,10 +19,10 @@ traverseDict(myDict)
 
 
 ___ searchDict(dict, value
-    for key in dict:
+    ___ key __ dict:
         __ dict[key] == value:
-            return key, value
-    return 'The value does not exist'
+            r_ key, value
+    r_ 'The value does not exist'
 print(searchDict(myDict, 27))
 
 #  Delete or remove a dictionary
@@ -35,4 +35,4 @@ myDict.pop('name')
 # sorted method
 myDict = {'eooooa': 1, 'aas': 2, 'udd': 3, 'sseo': 4, 'werwi': 5}
 
-print(sorted(myDict, key=len))
+print(sorted(myDict, key=le_))

@@ -7,15 +7,15 @@ ___ nthToLast(ll, n
     pointer1 = ll.head
     pointer2 = ll.head
 
-    for i in range(n
+    ___ i __ range(n
         __ pointer2 is None:
-            return None
+            r_ None
         pointer2 = pointer2.next
 
     while pointer2:
         pointer1 = pointer1.next
         pointer2 = pointer2.next
-    return pointer1
+    r_ pointer1
 
 customLL = LinkedList()
 customLL.generate(10, 0, 99)

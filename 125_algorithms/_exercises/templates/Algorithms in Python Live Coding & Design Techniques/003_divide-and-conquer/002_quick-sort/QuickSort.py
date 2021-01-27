@@ -12,7 +12,7 @@ ___ partition(arr, lb, ub
     right = ub
 
     while left < right:
-        while arr[left] <= pivot and left < (len(arr)-1
+        while arr[left] <= pivot and left < (le_(arr)-1
             left += 1
 
         while arr[right] > pivot and right > 0:
@@ -30,15 +30,15 @@ ___ partition(arr, lb, ub
     arr[lb] = arr[right]
     arr[right] = temp
 
-    return right
+    r_ right
 
 
 arr = [10, 1, 67, 20, 56, 34, 43, 90, 54, 8, 0]
-n = len(arr)
+n = le_(arr)
 
 quick_sort(arr, 0, n-1)
 
-for i in range(n
+___ i __ range(n
     print(arr[i])
 
 

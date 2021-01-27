@@ -2,33 +2,33 @@
 ___ median_algorithm(nums, k
 
     # we have to split the list into chunks of 5 items
-    chunks = [nums[i:i+5] for i in range(0, len(nums), 5)]
+    chunks = [nums[i:i+5] ___ i __ range(0, le_(nums), 5)]
     # the median is the middle item in the sorted order
     # NOTE: median of the medians is just approximately the median of the original data structure
-    medians = [sorted(chunk)[len(chunk)//2] for chunk in chunks]
-    pivot_value = sorted(medians)[len(medians)//2]
+    medians = [sorted(chunk)[le_(chunk)//2] ___ chunk __ chunks]
+    pivot_value = sorted(medians)[le_(medians)//2]
 
     # PARTITION PHASE
-    left_array = [n for n in nums __ n < pivot_value]
-    right_array = [m for m in nums __ m > pivot_value]
+    left_array = [n ___ n __ nums __ n < pivot_value]
+    right_array = [m ___ m __ nums __ m > pivot_value]
 
     # selection phase
-    pivot_index = len(left_array)
+    pivot_index = le_(left_array)
 
     __ k < pivot_index:
         # we have to consider the left array because we are looking for
         # smaller items
-        return median_algorithm(left_array, k)
+        r_ median_algorithm(left_array, k)
     elif k > pivot_index:
         # we have to consider the right array BUT we have to update k value
         # because we have created a new array
-        return median_algorithm(right_array, k-len(left_array)-1)
+        r_ median_algorithm(right_array, k-le_(left_array)-1)
     ____
-        return pivot_value
+        r_ pivot_value
 
 
 ___ select(nums, k
-    return median_algorithm(nums, k-1)
+    r_ median_algorithm(nums, k-1)
 
 
 x = [1, -5, 0, 10, 15, 20, 3, -1, 21, 22, 23, 24, 25, 26, 27, 28, 29]

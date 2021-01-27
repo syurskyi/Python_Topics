@@ -16,8 +16,8 @@ ___ findMissing(list, n
 
 # Question 2
 ___ findPairs(list, sum
-    for i in range(len(list)):
-        for j in range(i+1,len(list)):
+    ___ i __ range(le_(list)):
+        ___ j __ range(i+1,le_(list)):
             __ (list[i]+list[j]) == sum:
                 print(list[i],list[j])
 # findPairs(mylist, 100)
@@ -28,7 +28,7 @@ import numpy as np
 myArray = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
 ___ findNumber(array, number
-    for i in range(len(array)):
+    ___ i __ range(le_(array)):
         __ array[i] == number:
             print(i)
 
@@ -38,8 +38,8 @@ findNumber(myArray, 12)
 
 ___ findMaxProduct(array
     maxProduct = 0
-    for i in range(len(array)):
-        for j in range(i+1,len(array)):
+    ___ i __ range(le_(array)):
+        ___ j __ range(i+1,le_(array)):
             __ array[i]*array[j] > maxProduct:
                 maxProduct = array[i]*array[j]
                 pairs = str(array[i])+ "," + str(array[j])
@@ -53,13 +53,13 @@ findMaxProduct(myArray)
 #Question 5 - isqunieuq
 ___ isUnique(list
   a=[]
-  for i in list:
-    __ i in a:
+  ___ i __ list:
+    __ i __ a:
         print(i)
-        return False
+        r_ False
     ____
         a.append(i)
-  return True
+  r_ True
 
 print(isUnique(myList))
 
@@ -71,9 +71,9 @@ ___ permuntation(list1, list2
     print(list1)
     print(list2.reverse())
     __ list1 == list2:   # if list1 == list2.reverse() -- false
-        return True
+        r_ True
     ____
-        return False
+        r_ False
 
 # print(permuntation([1,2,3], [3,2,1]))
 
@@ -82,10 +82,10 @@ ___ permuntation(list1, list2
 
 ___ rotate_matrix(matrix
     '''rotates a matrix 90 degrees clockwise'''
-    n = len(matrix)
-    for layer in range(n // 2
+    n = le_(matrix)
+    ___ layer __ range(n // 2
         first, last = layer, n - layer - 1
-        for i in range(first, last
+        ___ i __ range(first, last
             # save top
             top = matrix[layer][i]
 
@@ -100,7 +100,7 @@ ___ rotate_matrix(matrix
 
             # top -> right
             matrix[i][- layer - 1] = top
-    return matrix
+    r_ matrix
 
 matrix = [[1,2], [3,4]]
 print(matrix)

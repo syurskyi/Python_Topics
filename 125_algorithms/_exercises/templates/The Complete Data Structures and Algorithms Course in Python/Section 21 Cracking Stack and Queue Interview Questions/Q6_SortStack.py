@@ -30,32 +30,32 @@ ___ sort_stack(stack
       current = temp.pop()
       sorted = False
     __ current == None and previous: stack.push(previous)
-  __ sorted: return stack
-  ____ return sort_stack(stack)
+  __ sorted: r_ stack
+  ____ r_ sort_stack(stack)
 
 class Stack(
   ___ __init__(self
     self.top = None
   
   ___ __str__(self
-    return str(self.top)
+    r_ str(self.top)
   
   ___ push(self, item
     self.top = current(item, self.top)
   
   ___ pop(self
     __ not self.top:
-      return None
+      r_ None
     item = self.top
     self.top = self.top.next
-    return item.data
+    r_ item.data
 
 class current(
   ___ __init__(self, data=None, next=None
     self.data, self.next = data, next
   
   ___ __str__(self
-    return str(self and self.data) + ',' + str(self and self.next)
+    r_ str(self and self.data) + ',' + str(self and self.next)
 
 import unittest
 

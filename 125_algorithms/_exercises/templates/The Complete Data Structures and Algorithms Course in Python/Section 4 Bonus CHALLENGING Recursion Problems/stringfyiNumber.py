@@ -5,12 +5,12 @@
 
 ___ stringifyNumbers(obj
     newObj = obj
-    for key in newObj:
+    ___ key __ newObj:
         __ type(newObj[key]) is int:
             newObj[key] = str(newObj[key])
         __ type(newObj[key]) is dict:
             newObj[key] = stringifyNumbers(newObj[key])
-    return newObj
+    r_ newObj
 
 
 

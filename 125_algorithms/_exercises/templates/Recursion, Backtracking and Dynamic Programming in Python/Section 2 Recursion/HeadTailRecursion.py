@@ -5,7 +5,7 @@ ___ tail(n
 
     # BASE CASE
     __ n == 0:
-        return
+        r_
 
     # first of all we do some operations
     # operation = print()
@@ -20,7 +20,7 @@ ___ head(n
     print('Calling head() with n=' + str(n))
 
     __ n == 0:
-        return
+        r_
 
     # we make the recursive function call
     head(n-1)

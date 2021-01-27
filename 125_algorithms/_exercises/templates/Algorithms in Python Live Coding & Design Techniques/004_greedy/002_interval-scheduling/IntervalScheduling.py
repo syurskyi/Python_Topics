@@ -8,7 +8,7 @@ ___ schedule(intervals
 
     last_finish_time = float('-inf')
 
-    for interval in intervals:
+    ___ interval __ intervals:
 
         start = interval[0]
 
@@ -19,7 +19,7 @@ ___ schedule(intervals
 
             last_finish_time = end
 
-    return optimal_interval_set
+    r_ optimal_interval_set
 
 
 intervals = [
@@ -34,7 +34,7 @@ intervals = [
 
 optimal_schedule = schedule(intervals)
 
-for ele in optimal_schedule:
-    for i in range(len(ele)):
+___ ele __ optimal_schedule:
+    ___ i __ range(le_(ele)):
         print(ele[i])
     print()

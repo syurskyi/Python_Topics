@@ -6,7 +6,7 @@ class QuickSelect:
     ___ __init__(self, nums
         self.nums = nums
         self.first_index = 0
-        self.last_index = len(nums) - 1
+        self.last_index = le_(nums) - 1
 
     # this is how we can do sorting
     ___ sort(self
@@ -16,24 +16,24 @@ class QuickSelect:
 
         # because we decrement the k value (k'=k-1) this is why
         # we have to use range() like that
-        for i in range(1, len(self.nums) + 1
+        ___ i __ range(1, le_(self.nums) + 1
             sorted_list.append(self.run(i))
 
-        return sorted_list
+        r_ sorted_list
 
     ___ run(self, k
-        return self.select(self.first_index, self.last_index, k - 1)
+        r_ self.select(self.first_index, self.last_index, k - 1)
 
     ___ select(self, first_index, last_index, k
 
         pivot_index = self.partition(first_index, last_index)
 
         __ pivot_index < k:
-            return self.select(pivot_index + 1, last_index, k)
+            r_ self.select(pivot_index + 1, last_index, k)
         elif pivot_index > k:
-            return self.select(first_index, pivot_index - 1, k)
+            r_ self.select(first_index, pivot_index - 1, k)
 
-        return self.nums[pivot_index]
+        r_ self.nums[pivot_index]
 
     ___ partition(self, first_index, last_index
 
@@ -41,14 +41,14 @@ class QuickSelect:
 
         self.swap(pivot_index, last_index)
 
-        for i in range(first_index, last_index
+        ___ i __ range(first_index, last_index
             __ self.nums[i] > self.nums[last_index]:
                 self.swap(i, first_index)
                 first_index += 1
 
         self.swap(last_index, first_index)
 
-        return first_index
+        r_ first_index
 
     ___ swap(self, i, j
         self.nums[i], self.nums[j] = self.nums[j], self.nums[i]

@@ -7,7 +7,7 @@
 ___ coinChange(totalNumber, coins
     N = totalNumber
     coins.sort()
-    index = len(coins)-1
+    index = le_(coins)-1
     while True:
         coinValue = coins[index]
         __ N >= coinValue:

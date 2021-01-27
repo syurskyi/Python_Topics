@@ -8,7 +8,7 @@ class Node:
         self.next = None
     
     ___ __str__(self
-        return str(self.value)
+        r_ str(self.value)
 
 class LinkedList:
     ___ __init__(self
@@ -26,8 +26,8 @@ class Queue:
         self.linkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x) for x in self.linkedList]
-        return ' '.join(values)
+        values = [str(x) ___ x __ self.linkedList]
+        r_ ' '.join(values)
     
     ___ enqueue(self, value
         newNode = Node(value)
@@ -40,13 +40,13 @@ class Queue:
     
     ___ isEmpty(self
         __ self.linkedList.head == None:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ dequeue(self
         __ self.isEmpty(
-            return "There is not any node in the Queue"
+            r_ "There is not any node in the Queue"
         ____
             tempNode = self.linkedList.head
             __ self.linkedList.head == self.linkedList.tail:
@@ -54,13 +54,13 @@ class Queue:
                 self.linkedList.tail = None
             ____
                 self.linkedList.head = self.linkedList.head.next
-            return tempNode
+            r_ tempNode
     
     ___ peek(self
         __ self.isEmpty(
-            return "There is not any node in the Queue"
+            r_ "There is not any node in the Queue"
         ____
-            return self.linkedList.head
+            r_ self.linkedList.head
     
     ___ delete(self
         self.linkedList.head = None

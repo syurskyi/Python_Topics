@@ -16,8 +16,8 @@ class Graph:
         while queue:
             deVertex = queue.pop(0)
             print(deVertex)
-            for adjacentVertex in self.gdict[deVertex]:
-                __ adjacentVertex not in visited:
+            ___ adjacentVertex __ self.gdict[deVertex]:
+                __ adjacentVertex not __ visited:
                     visited.append(adjacentVertex)
                     queue.append(adjacentVertex)
     
@@ -27,8 +27,8 @@ class Graph:
         while stack:
             popVertex = stack.pop()
             print(popVertex)
-            for adjacentVertex in self.gdict[popVertex]:
-                __ adjacentVertex not in visited:
+            ___ adjacentVertex __ self.gdict[popVertex]:
+                __ adjacentVertex not __ visited:
                     visited.append(adjacentVertex)
                     stack.append(adjacentVertex)
     

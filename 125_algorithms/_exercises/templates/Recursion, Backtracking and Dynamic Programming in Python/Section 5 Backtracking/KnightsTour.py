@@ -6,7 +6,7 @@ class KnightsTour:
         # possible horizontal components of the moves
         self.x_moves = [2, 1, -1, -2, -2, -1, 1, 2]
         self.y_moves = [1, 2, 2, 1, -1, -2, -2, -1]
-        self.solution_matrix = [[-1 for _ in range(self.board_size)] for _ in range(self.board_size)]
+        self.solution_matrix = [[-1 ___ _ __ range(self.board_size)] ___ _ __ range(self.board_size)]
 
     ___ solve_problem(self
 
@@ -24,10 +24,10 @@ class KnightsTour:
 
         # base case
         __ step_counter == self.board_size * self.board_size:
-            return True
+            r_ True
 
         # we have to consider all the possible moves and find the valid one
-        for move_index in range(len(self.x_moves)):
+        ___ move_index __ range(le_(self.x_moves)):
 
             next_x = x + self.x_moves[move_index]
             next_y = y + self.y_moves[move_index]
@@ -37,35 +37,35 @@ class KnightsTour:
                 self.solution_matrix[next_x][next_y] = step_counter
 
                 __ self.solve(step_counter+1, next_x, next_y
-                    return True
+                    r_ True
 
                 # BACKTRACK AS USUAL - we have to remove the step and
                 # reinitialize the solution_matrix with -1
                 self.solution_matrix[next_x][next_y] = -1
 
-        return False
+        r_ False
 
     ___ is_valid_move(self, x, y
 
         # that the knight will not step outside the chessboard
         # the knight leaves the board horizontally
         __ x < 0 or x >= self.board_size:
-            return False
+            r_ False
 
         # the knight leaves the board vertically
         __ y < 0 or y >= self.board_size:
-            return False
+            r_ False
 
         # maybe we have already visited that given cell
         # which means that the value is not -1
         __ self.solution_matrix[x][y] > -1:
-            return False
+            r_ False
 
-        return True
+        r_ True
 
     ___ print_solution(self
-        for i in range(self.board_size
-            for j in range(self.board_size
+        ___ i __ range(self.board_size
+            ___ j __ range(self.board_size
                 print(self.solution_matrix[i][j], end=' ')
             print('\n')
 

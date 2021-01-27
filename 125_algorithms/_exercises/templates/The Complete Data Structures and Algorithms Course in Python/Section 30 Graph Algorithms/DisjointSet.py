@@ -7,15 +7,15 @@ class DisjointSet:
     ___ __init__(self, vertices
         self.vertices = vertices
         self.parent = {}
-        for v in vertices:
+        ___ v __ vertices:
             self.parent[v] = v
         self.rank = dict.fromkeys(vertices, 0)
     
     ___ find(self, item
         __ self.parent[item] == item:
-            return item
+            r_ item
         ____
-            return self.find(self.parent[item])
+            r_ self.find(self.parent[item])
     
     ___ union(self, x, y
         xroot = self.find(x)

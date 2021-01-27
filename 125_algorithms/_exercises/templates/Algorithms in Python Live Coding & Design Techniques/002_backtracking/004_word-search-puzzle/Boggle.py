@@ -7,11 +7,11 @@ ___ find_words(boggle, visited, i, j, word
     visited[i][j] = 1
     word = ''.join([word, boggle[i][j]])
 
-    __ word in my_dict:
+    __ word __ my_dict:
         print(word)
 
-    for row in range(i-1, i+2
-        for col in range(j-1, j+2
+    ___ row __ range(i-1, i+2
+        ___ col __ range(j-1, j+2
             __ is_valid(row, col, visited
                 find_words(boggle, visited, row, col, word)
 
@@ -20,8 +20,8 @@ ___ find_words(boggle, visited, i, j, word
 
 ___ is_valid(row, col, visited
     __ 0 <= row < m and 0 <= col < n and visited[row][col] == 0:
-        return True
-    return False
+        r_ True
+    r_ False
 
 
 boggle =[['T', 'Y', 'R', 'S'],
@@ -29,9 +29,9 @@ boggle =[['T', 'Y', 'R', 'S'],
          ['Z', 'F', 'E', 'O'],
          ['A', 'C', 'B','O']]
 
-visited = [[0 for j in range(n)] for i in range(m)]
+visited = [[0 ___ j __ range(n)] ___ i __ range(m)]
 
-for i in range(m
-    for j in range(n
+___ i __ range(m
+    ___ j __ range(n
         find_words(boggle, visited, i, j, '')
 

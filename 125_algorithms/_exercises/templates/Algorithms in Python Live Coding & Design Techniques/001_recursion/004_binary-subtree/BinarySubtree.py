@@ -9,9 +9,9 @@ class Node:
 ___ is_subtree(tree, subtree
 
     __ subtree is None:
-        return True
+        r_ True
     __ tree is None:
-        return False
+        r_ False
 
     tree1 = []
     tree2 = []
@@ -23,7 +23,7 @@ ___ is_subtree(tree, subtree
     str2 = tree2.__str__().replace("[", "").replace("]", "")
 
     __ str1.find(str2) == -1:
-        return False
+        r_ False
 
     tree1 = []
     tree2 = []
@@ -35,14 +35,14 @@ ___ is_subtree(tree, subtree
     str4 = tree2.__str__().replace("[", "").replace("]", "")
 
     __ str3.find(str4) == -1:
-        return False
-    return True
+        r_ False
+    r_ True
 
 
 ___ in_order(tree, tree1
 
     __ tree is None:
-        return
+        r_
 
     in_order(tree.left, tree1)
     tree1.append(tree.data)
@@ -52,7 +52,7 @@ ___ in_order(tree, tree1
 ___ pre_order(tree, tree1
 
     __ tree is None:
-        return
+        r_
 
     tree1.append(tree.data)
     pre_order(tree.left, tree1)

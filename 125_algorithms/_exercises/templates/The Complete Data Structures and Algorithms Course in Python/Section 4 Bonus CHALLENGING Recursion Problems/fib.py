@@ -5,8 +5,8 @@
 
 ___ fib(num
     __ (num < 2
-        return num
-    return fib(num - 1) + fib(num - 2)
+        r_ num
+    r_ fib(num - 1) + fib(num - 2)
 
 
 

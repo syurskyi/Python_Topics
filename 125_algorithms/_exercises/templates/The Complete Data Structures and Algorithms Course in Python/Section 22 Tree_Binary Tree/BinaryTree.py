@@ -21,28 +21,28 @@ newBT.rightChild = rightChild
 
 ___ preOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     print(rootNode.data)
     preOrderTraversal(rootNode.leftChild)
     preOrderTraversal(rootNode.rightChild)
 
 ___ inOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     inOrderTraversal(rootNode.leftChild)
     print(rootNode.data)
     inOrderTraversal(rootNode.rightChild)
 
 ___ postOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     postOrderTraversal(rootNode.leftChild)
     postOrderTraversal(rootNode.rightChild)
     print(rootNode.data)
 
 ___ levelOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -57,20 +57,20 @@ ___ levelOrderTraversal(rootNode
 
 ___ searchBT(rootNode, nodeValue
     __ not rootNode:
-        return "The BT does not exist"
+        r_ "The BT does not exist"
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
         while not(customQueue.isEmpty()):
             root = customQueue.dequeue()
             __ root.value.data == nodeValue:
-                return "Success"
+                r_ "Success"
             __ (root.value.leftChild is not None
                 customQueue.enqueue(root.value.leftChild)
             
             __ (root.value.rightChild is not None
                 customQueue.enqueue(root.value.rightChild)
-        return "Not found"
+        r_ "Not found"
 
 ___ insertNodeBT(rootNode, newNode
     __ not rootNode:
@@ -84,16 +84,16 @@ ___ insertNodeBT(rootNode, newNode
                 customQueue.enqueue(root.value.leftChild)
             ____
                 root.value.leftChild = newNode
-                return "Successfully Inserted"
+                r_ "Successfully Inserted"
             __ root.value.rightChild is not None:
                 customQueue.enqueue(root.value.rightChild)
             ____
                 root.value.rightChild = newNode
-                return "Successfully Inserted"
+                r_ "Successfully Inserted"
 
 ___ getDeepestNode(rootNode
     __ not rootNode:
-        return
+        r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -105,11 +105,11 @@ ___ getDeepestNode(rootNode
             __ (root.value.rightChild is not None
                 customQueue.enqueue(root.value.rightChild)
         deepestNode = root.value
-        return deepestNode
+        r_ deepestNode
 
 ___ deleteDeepestNode(rootNode, dNode
     __ not rootNode:
-        return
+        r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -117,23 +117,23 @@ ___ deleteDeepestNode(rootNode, dNode
             root = customQueue.dequeue()
             __ root.value is dNode:
                 root.value = None
-                return
+                r_
             __ root.value.rightChild:
                 __ root.value.rightChild is dNode:
                     root.value.rightChild = None
-                    return
+                    r_
                 ____
                     customQueue.enqueue(root.value.rightChild)
             __ root.value.leftChild:
                 __ root.value.leftChild is dNode:
                     root.value.leftChild = None
-                    return
+                    r_
                 ____
                     customQueue.enqueue(root.value.leftChild)
 
 ___ deleteNodeBT(rootNode, node
     __ not rootNode:
-        return "The BT does not exist"
+        r_ "The BT does not exist"
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -143,19 +143,19 @@ ___ deleteNodeBT(rootNode, node
                 dNode = getDeepestNode(rootNode)
                 root.value.data = dNode.data
                 deleteDeepestNode(rootNode, dNode)
-                return "The node has been successfully deleted"
+                r_ "The node has been successfully deleted"
             __ (root.value.leftChild is not None
                 customQueue.enqueue(root.value.leftChild)
             
             __ (root.value.rightChild is not None
                 customQueue.enqueue(root.value.rightChild)
-        return "Failed to delete"
+        r_ "Failed to delete"
 
 ___ deleteBT(rootNode
     rootNode.data = None
     rootNode.leftChild = None
     rootNode.rightChild = None
-    return "The BT has been successfully deleted" 
+    r_ "The BT has been successfully deleted"
 
 inOrderTraversal(newBT)
 

@@ -1,13 +1,13 @@
 ___ linear_search_recursive(container, item, index=0
     # base case for search miss (when item is not present in the container)
-    __ index >= len(container
-        return -1
+    __ index >= le_(container
+        r_ -1
 
     # base case when we find the item
     __ container[index] == item:
-        return index
+        r_ index
 
-    return linear_search_recursive(container, item, index + 1)
+    r_ linear_search_recursive(container, item, index + 1)
 
 
 nums = [1, 4, 6, -4, 0, 100]

@@ -6,9 +6,9 @@
 ___ foo(array
     sum = 0
     product = 1
-    for i in array:
+    ___ i __ array:
         sum += i
-    for i in array:
+    ___ i __ array:
         product *= i
     print("Sum = "+str(sum)+", Product = "+str(product))
 
@@ -18,15 +18,15 @@ foo(ar1)
 #Question2
 
 ___ printPairs(array
-    for i in array:
-        for j in array:
+    ___ i __ array:
+        ___ j __ array:
             print(str(i)+","+str(j))
 
 
 #Question3
 ___ printUnorderedPairs(array
-    for i in range(0,len(array)):
-        for j in range(i+1,len(array)):
+    ___ i __ range(0,le_(array)):
+        ___ j __ range(i+1,le_(array)):
             print(array[i] + "," + array[j])
 
 
@@ -35,8 +35,8 @@ ___ printUnorderedPairs(array
 
 #Question4
 ___ printUnorderedPairs(arrayA, arrayB
-    for i in range(len(arrayA)):
-        for j in range(len(arrayB)):
+    ___ i __ range(le_(arrayA)):
+        ___ j __ range(le_(arrayB)):
             __ arrayA[i] < arrayB[j]:
                 print(str(arrayA[i]) + "," + str(arrayB[j]))
 
@@ -47,9 +47,9 @@ arrayB = [2,6,7,8]
 
 #Question5
 ___ printUnorderedPairs(arrayA, arrayB
-    for i in range(len(arrayA)):
-        for j in range(len(arrayB)):
-            for k in range(0,100000
+    ___ i __ range(le_(arrayA)):
+        ___ j __ range(le_(arrayB)):
+            ___ k __ range(0,100000
                 print(str(arrayA[i]) + "," + str(arrayB[j]))
 
 # printUnorderedPairss(arrayA,arrayB)
@@ -57,8 +57,8 @@ ___ printUnorderedPairs(arrayA, arrayB
 
 #Question6
 ___ reverse(array
-    for i in range(0,int(len(array)/2)):
-        other = len(array)-i-1
+    ___ i __ range(0,int(le_(array)/2)):
+        other = le_(array)-i-1
         temp = array[i]
         array[i] = array[other]
         array[other] = temp
@@ -70,25 +70,25 @@ reverse(arrayA)
 
 ___ factorial(n
     __ n < 0:
-        return -1
+        r_ -1
     elif n == 0:
-        return 1
+        r_ 1
     ____
-        return n * factorial(n-1)
+        r_ n * factorial(n-1)
 
 print(factorial(3))
 
 #Question9
 ___ allFib(n
-    for i in range(n
+    ___ i __ range(n
         print(str(i)+":, " + str(fib(i)))
 
 ___ fib(n
     __ n <= 0:
-        return 0
+        r_ 0
     elif n == 1:
-        return 1
-    return fib(n-1) + fib(n-2)
+        r_ 1
+    r_ fib(n-1) + fib(n-2)
 
 
 allFib(4)
@@ -97,16 +97,16 @@ allFib(4)
 ___ powersOf2(n
     # print("n:"+str(n))
     __ n < 1:
-        return 0
+        r_ 0
     elif n == 1:
         print(1)
-        return 1
+        r_ 1
     ____
         prev = powersOf2(int(n/2))
         # print("prev:"+str(prev))
         print(prev)
         curr = prev*2
         print(curr)
-        return curr
+        r_ curr
 
 powersOf2(50)

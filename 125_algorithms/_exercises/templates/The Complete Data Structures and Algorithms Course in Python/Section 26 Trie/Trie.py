@@ -12,7 +12,7 @@ class Trie:
     
     ___ insertString(self, word
         current = self.root
-        for i in word:
+        ___ i __ word:
             ch = i
             node = current.children.get(ch)
             __ node == None:
@@ -24,16 +24,16 @@ class Trie:
     
     ___ searchString(self, word
         currentNode = self.root
-        for i in word:
+        ___ i __ word:
             node = currentNode.children.get(i)
             __ node == None:
-                return False
+                r_ False
             currentNode = node
 
         __ currentNode.endOfString == True:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
         
 
 ___ deleteString(root, word, index
@@ -41,28 +41,28 @@ ___ deleteString(root, word, index
     currentNode = root.children.get(ch)
     canThisNodeBeDeleted = False
 
-    __ len(currentNode.children) > 1:
+    __ le_(currentNode.children) > 1:
         deleteString(currentNode, word, index+1)
-        return False
+        r_ False
     
-    __ index == len(word) - 1:
-        __ len(currentNode.children) >= 1:
+    __ index == le_(word) - 1:
+        __ le_(currentNode.children) >= 1:
             currentNode.endOfString = False
-            return False
+            r_ False
         ____
             root.children.pop(ch)
-            return True
+            r_ True
     
     __ currentNode.endOfString == True:
         deleteString(currentNode, word, index+1)
-        return False
+        r_ False
 
     canThisNodeBeDeleted = deleteString(currentNode, word, index+1)
     __ canThisNodeBeDeleted == True:
         root.children.pop(ch)
-        return True
+        r_ True
     ____
-        return False
+        r_ False
 
 
 

@@ -51,14 +51,14 @@ class SLinkedList:
     # Search for a node in Singly Linked List
     ___ searchSLL(self, nodeValue
         __ self.head is None:
-           return "The list does not exist"
+           r_ "The list does not exist"
         ____
             node = self.head
             while node is not None:
                 __ node.value == nodeValue:
-                    return node.value
+                    r_ node.value
                 node = node.next
-            return "The value does not exist in this list"
+            r_ "The value does not exist in this list"
 
     #  Delete a node from Singly Linked List
     ___ deleteNode(self, location

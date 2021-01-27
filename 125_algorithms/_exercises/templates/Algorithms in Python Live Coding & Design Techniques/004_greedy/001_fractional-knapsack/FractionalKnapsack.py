@@ -1,15 +1,15 @@
 
 
 ___ get_max_value(wt, val, capacity
-    items = [0]* len(wt)
+    items = [0]* le_(wt)
 
-    for i in range(0, len(wt)):
+    ___ i __ range(0, le_(wt)):
         items[i] = Item(wt[i], val[i], i)
 
     items.sort(reverse= True)
 
     total_val = 0
-    for item in items:
+    ___ item __ items:
         cur_wt = int(item.wt)
         cur_val = int(item.val)
 
@@ -22,7 +22,7 @@ ___ get_max_value(wt, val, capacity
             # capacity = int(capacity - (cur_wt * fraction))
             break
 
-    return total_val
+    r_ total_val
 
 
 class Item:
@@ -33,7 +33,7 @@ class Item:
         self.cost = val//wt
 
     ___ __lt__(self, other
-        return self.cost < other.cost
+        r_ self.cost < other.cost
 
 wt = [10, 40, 20, 30]
 val = [60, 40, 100, 120]

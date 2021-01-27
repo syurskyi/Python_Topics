@@ -8,9 +8,9 @@ class TreeNode:
     
     ___ __str__(self, level=0
         ret = "  " * level + str(self.data)  + "\n"
-        for child in self.children:
+        ___ child __ self.children:
             ret += child.__str__(level + 1)
-        return ret
+        r_ ret
     
     ___ addChild(self, TreeNode
         self.children.append(TreeNode)

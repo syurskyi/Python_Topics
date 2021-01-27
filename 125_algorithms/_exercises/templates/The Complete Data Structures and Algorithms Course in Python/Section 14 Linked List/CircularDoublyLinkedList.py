@@ -28,13 +28,13 @@ class CircularDoublyLinkedList:
         self.tail = newNode
         newNode.prev = newNode
         newNode.next = newNode
-        return "The CDLL is created successfully"
+        r_ "The CDLL is created successfully"
 
 
     # Insertion Method in Circular Doubly Linked List
     ___ insertCDLL(self, value, location
         __ self.head is None:
-            return "The CDLL does not exist"
+            r_ "The CDLL does not exist"
         ____
             newNode = Node(value)
             __ location == 0:
@@ -59,7 +59,7 @@ class CircularDoublyLinkedList:
                 newNode.prev = tempNode
                 newNode.next.prev = newNode
                 tempNode.next = newNode
-            return "The node has been successfully inserted"
+            r_ "The node has been successfully inserted"
 
     # Traversal of Circular Doubly Linked List
     ___ traversalCDLL(self
@@ -88,14 +88,14 @@ class CircularDoublyLinkedList:
     # Search Circular Doubly Linked List
     ___ searchCDLL(self, nodeValue
         __ self.head is None:
-            return "There is not any node in CDLL"
+            r_ "There is not any node in CDLL"
         ____
             tempNode = self.head
             while tempNode:
                 __ tempNode.value == nodeValue:
-                    return tempNode.value
+                    r_ tempNode.value
                 __ tempNode == self.tail:
-                    return "The value does not exist in CDLL"
+                    r_ "The value does not exist in CDLL"
                 tempNode = tempNode.next
     
     # Delete a node from Circular Doubly Linked List
@@ -154,9 +154,9 @@ circularDLL.createCDLL(5)
 circularDLL.insertCDLL(0,0)
 circularDLL.insertCDLL(1,1)
 circularDLL.insertCDLL(2,2)
-print([node.value for node in circularDLL])
+print([node.value ___ node __ circularDLL])
 circularDLL.deleteCDLL()
-print([node.value for node in circularDLL])
+print([node.value ___ node __ circularDLL])
 
 
 

@@ -7,26 +7,26 @@ from LinkedList import LinkedList, Node
 
 ___ intersection(llA, llB
     __ llA.tail is not llB.tail:
-        return False
+        r_ False
     
-    lenA = len(llA)
-    lenB = len(llB)
+    lenA = le_(llA)
+    lenB = le_(llB)
 
     shorter = llA __ lenA < lenB else llB
     longer = llB __ lenA < lenB else llA
 
-    diff = len(longer) - len(shorter)
+    diff = le_(longer) - le_(shorter)
     longerNode = longer.head
     shorterNode = shorter.head
 
-    for i in range(diff
+    ___ i __ range(diff
         longerNode = longerNode.next
     
     while shorterNode is not longerNode:
         shorterNode = shorterNode.next
         longerNode = longerNode.next
     
-    return longerNode
+    r_ longerNode
 
 
 # Helper addition method

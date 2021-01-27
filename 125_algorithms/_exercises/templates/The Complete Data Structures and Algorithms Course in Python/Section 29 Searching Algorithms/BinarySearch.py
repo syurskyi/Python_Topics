@@ -5,7 +5,7 @@
 import math
 ___ binarySearch(array, value
     start = 0
-    end = len(array)-1
+    end = le_(array)-1
     middle = math.floor((start+end)/2)
     while not(array[middle]==value) and start<=end:
         __ value < array[middle]:
@@ -15,9 +15,9 @@ ___ binarySearch(array, value
         middle = math.floor((start+end)/2)
         # print(start, middle, end)
     __ array[middle] == value:
-        return middle
+        r_ middle
     ____
-        return -1
+        r_ -1
         
 
 

@@ -26,7 +26,7 @@ class DoublyLinkedList:
         node.next = None
         self.head = node
         self.tail = node
-        return "The DLL is created Successfully"
+        r_ "The DLL is created Successfully"
     
     
     
@@ -80,14 +80,14 @@ class DoublyLinkedList:
     # Search Method in Doubly Linked List
     ___ searchDLL(self, nodeValue
         __ self.head is None:
-            return "There is not any element in the list"
+            r_ "There is not any element in the list"
         ____
             tempNode = self.head
             while tempNode:
                 __ tempNode.value == nodeValue:
-                    return tempNode.value
+                    r_ tempNode.value
                 tempNode = tempNode.next
-            return "The node does not exist in this list"
+            r_ "The node does not exist in this list"
 
     # Delete a node from Doubly Linked List
     ___ deleteNode(self,location
@@ -138,9 +138,9 @@ doubyLL.createDLL(5)
 doubyLL.insertNode(0,0)
 doubyLL.insertNode(2,1)
 doubyLL.insertNode(6,2)
-print([node.value for node in doubyLL]) 
+print([node.value ___ node __ doubyLL])
 doubyLL.deleteDLL()
-print([node.value for node in doubyLL]) 
+print([node.value ___ node __ doubyLL])
 
 
 

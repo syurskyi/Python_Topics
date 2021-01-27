@@ -6,30 +6,30 @@ class Queue:
         self.items = []
     
     ___ __str__(self
-        values = [str(x) for x in self.items]
-        return ' '.join(values)
+        values = [str(x) ___ x __ self.items]
+        r_ ' '.join(values)
     
     ___ isEmpty(self
         __ self.items == []:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ enqueue(self, value
         self.items.append(value)
-        return "The element is inserted at the end of Queue"
+        r_ "The element is inserted at the end of Queue"
     
     ___ dequeue(self
         __ self.isEmpty(
-            return "The is not any element in the Queue"
+            r_ "The is not any element in the Queue"
         ____
-            return self.items.pop(0)
+            r_ self.items.pop(0)
     
     ___ peek(self
         __ self.isEmpty(
-            return "The is not any element in the Queue"
+            r_ "The is not any element in the Queue"
         ____
-            return self.items[0]
+            r_ self.items[0]
     
     ___ delete(self
         self.items = None

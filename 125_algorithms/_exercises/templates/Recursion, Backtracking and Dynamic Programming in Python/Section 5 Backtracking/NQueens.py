@@ -2,7 +2,7 @@ class QueensProblem:
 
     ___ __init__(self, n
         self.n = n
-        self.chess_table = [[0 for i in range(n)] for j in range(n)]
+        self.chess_table = [[0 ___ i __ range(n)] ___ j __ range(n)]
 
     ___ solve_n_queens(self
 
@@ -19,10 +19,10 @@ class QueensProblem:
 
         # we have solved the problem - base case
         __ col_index == self.n:
-            return True
+            r_ True
 
         # let's try to find a position for queen (col_index) within a given column
-        for row_index in range(self.n
+        ___ row_index __ range(self.n
             __ self.is_place_valid(row_index, col_index
                 # 1 means that there is a queen at the given location
                 self.chess_table[row_index][col_index] = 1
@@ -30,7 +30,7 @@ class QueensProblem:
                 # we call the same function with col_index+1
                 # we try to find the location of the next queen in the next column
                 __ self.solve(col_index+1
-                    return True
+                    r_ True
 
                 # BACKTRACK
                 print('BACKTRACKING ...')
@@ -38,15 +38,15 @@ class QueensProblem:
 
         # when we have considered all the rows in a col without
         # finding a valid cell for the queen
-        return False
+        r_ False
 
     ___ is_place_valid(self, row_index, col_index
 
         # check the rows (whether given queens can attack each other horizontally)
         # it means that there is already at least 1 queen in that given row
-        for i in range(self.n
+        ___ i __ range(self.n
             __ self.chess_table[row_index][i] == 1:
-                return False
+                r_ False
 
         # we do not have to check the same column because we implement the problem
         # such that we assign 1 queen to every single column
@@ -54,34 +54,34 @@ class QueensProblem:
         # we have to check the diagonals
         # from top left to bottom right
         j = col_index
-        for i in range(row_index, -1, -1
+        ___ i __ range(row_index, -1, -1
 
             __ i < 0:
                 break
 
             __ self.chess_table[i][j] == 1:
-                return False
+                r_ False
 
             j = j - 1
 
         # we have to check the diagonals
         # from top right to bottom left
         j = col_index
-        for i in range(row_index, self.n
+        ___ i __ range(row_index, self.n
 
             __ j < 0:
                 break
 
             __ self.chess_table[i][j] == 1:
-                return False
+                r_ False
 
             j = j - 1
 
-        return True
+        r_ True
 
     ___ print_queens(self
-        for i in range(self.n
-            for j in range(self.n
+        ___ i __ range(self.n
+            ___ j __ range(self.n
                 __ self.chess_table[i][j] == 1:
                     print(' Q ', end='')
                 ____

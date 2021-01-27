@@ -21,14 +21,14 @@ class Stack:
         self.LinkedList = LinkedList()
     
     ___ __str__(self
-        values = [str(x.value) for x in self.LinkedList]
-        return '\n'.join(values)
+        values = [str(x.value) ___ x __ self.LinkedList]
+        r_ '\n'.join(values)
     
     ___ isEmpty(self
         __ self.LinkedList.head == None:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
 
     ___ push(self, value
         node = Node(value)
@@ -37,18 +37,18 @@ class Stack:
     
     ___ pop(self
         __ self.isEmpty(
-            return "There is not any element in the stack"
+            r_ "There is not any element in the stack"
         ____
             nodeValue = self.LinkedList.head.value
             self.LinkedList.head = self.LinkedList.head.next
-            return nodeValue
+            r_ nodeValue
     
     ___ peek(self
         __ self.isEmpty(
-            return "There is not any element in the stack"
+            r_ "There is not any element in the stack"
         ____
             nodeValue = self.LinkedList.head.value
-            return nodeValue
+            r_ nodeValue
     
     ___ delete(self
         self.LinkedList.head = None

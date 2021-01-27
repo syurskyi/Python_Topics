@@ -15,19 +15,19 @@ ___ generate_tree(mapping
     keySet = mapping.keys()
     priorityQ = []
 
-    for c in keySet:
+    ___ c __ keySet:
         node = HuffmanNode(mapping[c], c, None, None)
         priorityQ.append(node)
         priorityQ = sorted(priorityQ, key=lambda x: x.freq)
 
-    while len(priorityQ) > 1 :
+    while le_(priorityQ) > 1 :
         first = priorityQ.pop(0);
         second = priorityQ.pop(0);
         merge_node = HuffmanNode(first.freq + second.freq, '-', first, second)
         priorityQ.append(merge_node)
         priorityQ = sorted(priorityQ, key=lambda x: x.freq)
 
-    return priorityQ.pop();
+    r_ priorityQ.pop();
 
 
 ___ set_binary_code(node, str
@@ -46,8 +46,8 @@ ___ set_binary_code(node, str
 
 ___ encode(str
     mapping = {}
-    for c in str:
-        __ not c in mapping:
+    ___ c __ str:
+        __ not c __ mapping:
             mapping[c] = 1
         ____
             mapping[c] += 1
@@ -59,13 +59,13 @@ ___ encode(str
 
     print(' Char | Huffman code ')
     print('----------------------')
-    for char in mapping:
+    ___ char __ mapping:
         print(' %-4r |%12s' % (char, charBinaryMapping[char]))
 
     s = ''
-    for c in str:
+    ___ c __ str:
         s += charBinaryMapping[c]
-    return s
+    r_ s
 
 
 code = encode(str)

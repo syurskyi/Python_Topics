@@ -5,10 +5,10 @@
 
 ___ capitalizeWords(arr
     result = []
-    __ len(arr) == 0:
-        return result
+    __ le_(arr) == 0:
+        r_ result
     result.append(arr[0].upper())
-    return result + capitalizeWords(arr[1:])
+    r_ result + capitalizeWords(arr[1:])
 
 
 

@@ -14,19 +14,19 @@ class Graph:
 
         # Relax v-1
 
-        for i in range(self.v - 1
-            for u, v, c in self.graph:
+        ___ i __ range(self.v - 1
+            ___ u, v, c __ self.graph:
                 __ dist[u] != float('inf') and dist[u] + c < dist[v]:
                     dist[v] = dist[u] + c
 
         # - ve cycles
-        for u, v, c in self.graph:
+        ___ u, v, c __ self.graph:
             __ dist[u] != float('inf') and dist[u] + c < dist[v]:
                 print('Graph contains -ve cycle')
 
         print("vertex distance from the source :")
 
-        for i in range(self.v
+        ___ i __ range(self.v
             print(i, ' : ', dist[i])
 
 

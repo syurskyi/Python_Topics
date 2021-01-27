@@ -10,15 +10,15 @@ print(twoDArray)
 # newTwoDArray = np.insert(twoDArray, 1, [[1,2,3,4]], axis=0)
 # print(newTwoDArray)
 
-print(len(twoDArray))
+print(le_(twoDArray))
 
 newTwoDArray = np.append(twoDArray, [[1,2,3,4]], axis=0)
 print(newTwoDArray)
-print(len(newTwoDArray))
-print(len(newTwoDArray[0]))
+print(le_(newTwoDArray))
+print(le_(newTwoDArray[0]))
 
 ___ accessElements(array, rowIndex, colIndex
-    __ rowIndex >= len(array) and colIndex >= len(array[0]
+    __ rowIndex >= le_(array) and colIndex >= le_(array[0]
         print('Incorrect Index')
     ____
         print(array[rowIndex][colIndex])
@@ -26,8 +26,8 @@ ___ accessElements(array, rowIndex, colIndex
 accessElements(newTwoDArray, 1, 2)
 
 ___ traverseTDArray(array
-    for i in range(len(array)):
-        for j in range(len(array[0])):
+    ___ i __ range(le_(array)):
+        ___ j __ range(le_(array[0])):
             print(array[i][j])
 
 
@@ -35,11 +35,11 @@ traverseTDArray(twoDArray)
 
 
 ___ searchTDArray(array, value
-    for i in range(len(array)):
-        for j in range(len(array[0])):
+    ___ i __ range(le_(array)):
+        ___ j __ range(le_(array[0])):
             __ array[i][j] == value:
-                return 'The value is located index '+str(i)+" "+str(j)
-    return 'The element no found'
+                r_ 'The value is located index '+str(i)+" "+str(j)
+    r_ 'The element no found'
 
 
 print(searchTDArray(twoDArray, 444))

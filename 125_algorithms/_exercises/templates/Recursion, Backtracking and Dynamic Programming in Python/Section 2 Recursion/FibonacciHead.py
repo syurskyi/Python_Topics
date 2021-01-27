@@ -2,9 +2,9 @@
 ___ fibonacci_head(n
 
     __ n == 0:
-        return 0
+        r_ 0
     __ n == 1:
-        return 1
+        r_ 1
 
     # we make the recursive function call(s)
     # we are going to do 2 recursion - we keep calculating the fibonacci numbers
@@ -15,7 +15,7 @@ ___ fibonacci_head(n
     # make some operations
     result = fib1 + fib2
 
-    return result
+    r_ result
 
 
 print(fibonacci_head(20))

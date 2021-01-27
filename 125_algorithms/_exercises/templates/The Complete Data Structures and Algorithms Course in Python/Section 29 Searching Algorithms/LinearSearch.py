@@ -4,10 +4,10 @@
 # Searching algorithms - Linear Search
 
 ___ linearSearch(array, value
-    for i in range(len(array)):
+    ___ i __ range(le_(array)):
         __ array[i] == value:
-            return i
-    return -1
+            r_ i
+    r_ -1
 
 
 

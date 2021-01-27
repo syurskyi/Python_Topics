@@ -1,7 +1,7 @@
 class HamiltonianProblem:
 
     ___ __init__(self, adjacency_matrix
-        self.n = len(adjacency_matrix)
+        self.n = le_(adjacency_matrix)
         self.adjacency_matrix = adjacency_matrix
         self.hamiltonian_path = []
 
@@ -28,42 +28,42 @@ class HamiltonianProblem:
             __ self.adjacency_matrix[last_item_index][0] == 1:
                 self.hamiltonian_path.append(0)
                 print(self.hamiltonian_path)
-                return True
+                r_ True
             # backtrack because we can not form a cycle
             ____
-                return False
+                r_ False
 
-        for vertex_index in range(1, self.n
+        ___ vertex_index __ range(1, self.n
             __ self.is_feasible(vertex_index, position
                 self.hamiltonian_path.append(vertex_index)
                 print(self.hamiltonian_path)
 
                 __ self.solve(position + 1
-                    return True
+                    r_ True
 
                 # BACKTRACK
                 self.hamiltonian_path.pop()
 
-        return False
+        r_ False
 
     ___ is_feasible(self, vertex, actual_position
 
         # first criteria: whether the two nodes are connected?
         __ self.adjacency_matrix[self.hamiltonian_path[actual_position - 1]][vertex] == 0:
-            return False
+            r_ False
 
         # second criteria: whether we have already added this given node?
-        for i in range(actual_position
+        ___ i __ range(actual_position
             __ self.hamiltonian_path[i] == vertex:
-                return False
+                r_ False
 
-        return True
+        r_ True
 
     ___ show_cycle(self
 
         print('Hamiltonian cycle exists: \n')
 
-        for v in self.hamiltonian_path:
+        ___ v __ self.hamiltonian_path:
             print(v)
 
 

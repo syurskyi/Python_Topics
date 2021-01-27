@@ -5,8 +5,8 @@
 
 ___ factorial(num
     __ num <= 1:
-        return 1
-    return num * factorial(num-1)
+        r_ 1
+    r_ num * factorial(num-1)
 
 
 print(factorial(1)) # 1

@@ -5,7 +5,7 @@ ___ hanoi(disk, source, middle, destination
     # we manipulate the smallest plate in the base case
     __ disk == 0:
         print('Disk %s from %s to %s' % (disk, source, destination))
-        return
+        r_
 
     hanoi(disk-1, source, destination, middle)
     # this is not necessarily the largest plate - this is not the plate 0

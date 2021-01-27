@@ -4,9 +4,9 @@
 # productOfArray Solution
 
 ___ productOfArray(arr
-    __ len(arr) == 0:
-        return 1
-    return arr[0] * productOfArray(arr[1:])
+    __ le_(arr) == 0:
+        r_ 1
+    r_ arr[0] * productOfArray(arr[1:])
 
 print(productOfArray([1,2,3])) #6
 print(productOfArray([1,2,3,10])) #60

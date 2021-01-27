@@ -30,7 +30,7 @@ a = {'a':1,'b':2,'c':3}
 fruit = {}
 
 ___ addone(index
-    __ index in fruit:
+    __ index __ fruit:
         fruit[index] += 1
     ____
         fruit[index] = 1
@@ -38,7 +38,7 @@ ___ addone(index
 addone('Apple')
 addone('Banana')
 addone('apple')
-print (len(fruit))
+print (le_(fruit))
 # A. 1 
 # B. 2
 # C. 3 
@@ -54,7 +54,7 @@ arr['1'] = 2
 arr[1] += 1
 
 sum = 0
-for k in arr:
+___ k __ arr:
     sum += arr[k]
 
 print(sum)
@@ -73,7 +73,7 @@ my_dict['1'] = 2
 my_dict[1.0] = 4
 
 sum = 0
-for k in my_dict:
+___ k __ my_dict:
     sum += my_dict[k]
     
 print (sum)
@@ -92,7 +92,7 @@ my_dict[(4,2,1)] = 10
 my_dict[(1,2)] = 12
 
 sum = 0
-for k in my_dict:
+___ k __ my_dict:
     sum += my_dict[k]
 
 print (sum)
@@ -129,7 +129,7 @@ crates['jars'] = jars
 
 dict = {'c': 97, 'a': 96, 'b': 98}
 
-for _ in sorted(dict
+___ _ __ sorted(dict
     print (dict[_])
 # A. 96 98 97
 # B. 96 97 98

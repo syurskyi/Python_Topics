@@ -13,13 +13,13 @@ class Graph:
     ___ topological_sort(self
         in_degree = [0] * self.v
 
-        for i in self.adj:
-            for j in self.adj[i]:
+        ___ i __ self.adj:
+            ___ j __ self.adj[i]:
                 in_degree[j] += 1
 
         # creating queue
         q = []
-        for i in range(self.v
+        ___ i __ range(self.v
             __ in_degree[i] == 0:
                 q.append(i)
 
@@ -31,7 +31,7 @@ class Graph:
         while q:
             x = q.pop()
             linear_order.append(x)
-            for vertex in self.adj[x]:
+            ___ vertex __ self.adj[x]:
                 in_degree[vertex] -= 1
                 __ in_degree[vertex] == 0:
                     q.append(vertex)
@@ -41,7 +41,7 @@ class Graph:
 
         __ c != self.v:
             print('Graph contains -ve cycle')
-            return
+            r_
         print('linear order is: ', linear_order)
 
 

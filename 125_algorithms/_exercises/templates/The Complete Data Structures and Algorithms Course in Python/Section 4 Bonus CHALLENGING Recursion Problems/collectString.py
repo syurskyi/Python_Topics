@@ -5,12 +5,12 @@
 
 ___ collectStrings(obj
     resultArr = []
-    for key in obj:
+    ___ key __ obj:
         __ type(obj[key]) is str:
             resultArr.append(obj[key])
         __ type(obj[key]) is dict:
             resultArr = resultArr + collectStrings(obj[key])
-    return resultArr
+    r_ resultArr
 
 
 

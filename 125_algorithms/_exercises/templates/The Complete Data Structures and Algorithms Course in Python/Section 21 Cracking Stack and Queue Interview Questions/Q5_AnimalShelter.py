@@ -15,25 +15,25 @@ class AnimalShelter(
       self.dogs.append(animal)
     
   ___ dequeueCat(self
-    __ len(self.cats) == 0:
-      return None
+    __ le_(self.cats) == 0:
+      r_ None
     ____
       cat = self.cats.pop(0)
-      return cat
+      r_ cat
   
   ___ dequeueDog(self
-    __ len(self.dogs) == 0:
-      return None
+    __ le_(self.dogs) == 0:
+      r_ None
     ____
       dog = self.dogs.pop(0)
-      return dog
+      r_ dog
   
   ___ dequeueAny(self
-    __ len(self.cats) == 0:
+    __ le_(self.cats) == 0:
       result = self.dogs.pop(0)
     ____
       result = self.cats.pop(0)
-    return result
+    r_ result
 
 customQueue = AnimalShelter()
 customQueue.enqueue('Cat1', 'Cat')

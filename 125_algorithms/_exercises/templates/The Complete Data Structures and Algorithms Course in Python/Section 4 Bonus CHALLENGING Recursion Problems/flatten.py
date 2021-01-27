@@ -4,12 +4,12 @@
 # flatten Solution
 ___ flatten(arr
     resultArr = []
-    for custItem in arr:
+    ___ custItem __ arr:
         __ type(custItem) is list:
             resultArr.extend(flatten(custItem))
         ____
             resultArr.append(custItem)
-    return resultArr 
+    r_ resultArr 
 
 
 

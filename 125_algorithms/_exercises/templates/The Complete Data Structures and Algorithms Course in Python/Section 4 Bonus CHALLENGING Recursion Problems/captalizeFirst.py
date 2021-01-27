@@ -5,10 +5,10 @@
 
 ___ capitalizeFirst(arr
     result = []
-    __ len(arr) == 0:
-        return result
+    __ le_(arr) == 0:
+        r_ result
     result.append(arr[0][0].upper() + arr[0][1:])
-    return result + capitalizeFirst(arr[1:]) 
+    r_ result + capitalizeFirst(arr[1:]) 
 
 
 

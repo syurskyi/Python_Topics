@@ -9,7 +9,7 @@ class Node:
         self.prev = None
     
     ___ __str__(self
-        return str(self.value)
+        r_ str(self.value)
 
 class LinkedList:
     ___ __init__(self, values = None
@@ -23,8 +23,8 @@ class LinkedList:
             curNode = curNode.next
     
     ___ __str__(self
-        values = [str(x.value) for x in self]
-        return ' -> '.join(values)
+        values = [str(x.value) ___ x __ self]
+        r_ ' -> '.join(values)
     
     ___ __len__(self
         result = 0
@@ -32,7 +32,7 @@ class LinkedList:
         while node:
             result += 1
             node = node.next
-        return result
+        r_ result
     
     ___ add(self, value
         __ self.head is None:
@@ -42,14 +42,14 @@ class LinkedList:
         ____
             self.tail.next = Node(value)
             self.tail = self.tail.next
-        return self.tail
+        r_ self.tail
     
     ___ generate(self, n, min_value, max_value
         self.head = None
         self.tail = None
-        for i in range(n
+        ___ i __ range(n
             self.add(randint(min_value,max_value))
-        return self
+        r_ self
 
 # customLL = LinkedList()
 # customLL.generate(10, 0, 99)

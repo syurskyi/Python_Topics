@@ -15,23 +15,23 @@ print(newTuple[0])
 
 #  Traverse through tuple
 
-for i in newTuple:
+___ i __ newTuple:
     print(i)
 
 
-for index in range(len(newTuple)):
+___ index __ range(le_(newTuple)):
     print(newTuple[index])
 
 
 #  How to search for an element in Tuple?
 
-print('a' in newTuple)
+print('a' __ newTuple)
 
 ___ searchInTuple(pTuple, element
-    for i in pTuple:
+    ___ i __ pTuple:
         __ i == element:
-            return pTuple.index(i)
-    return 'The element does not exist'
+            r_ pTuple.index(i)
+    r_ 'The element does not exist'
 
 print(searchInTuple(newTuple, 'a'))
 
@@ -41,7 +41,7 @@ myTuple1 = (1,2,6,9,8,7)
 
 print(myTuple + myTuple1) 
 print(myTuple * 4)      
-print(2 in myTuple1)
+print(2 __ myTuple1)
 
 myTuple1.count(2)
 myTuple1.index(2)

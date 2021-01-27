@@ -13,10 +13,10 @@ ___ merge(arr, l, m, u
     left = [0] * n1
     right = [0] * n2
 
-    for x in range(0, n1
+    ___ x __ range(0, n1
         left[x] = arr[l + x]
 
-    for y in range(0, n2
+    ___ y __ range(0, n2
         right[y] = arr[m + 1 + y]
 
     i = 0
@@ -44,9 +44,9 @@ ___ merge(arr, l, m, u
 
 
 arr = [11, 6, 3, 9, 14, 66, 2]
-n = len(arr)
+n = le_(arr)
 
 merge_sort(arr, 0, n - 1)
 
-for i in range(n
+___ i __ range(n
     print ("%d" % arr[i])

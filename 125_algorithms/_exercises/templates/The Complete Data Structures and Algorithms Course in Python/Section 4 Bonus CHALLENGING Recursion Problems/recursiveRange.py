@@ -5,8 +5,8 @@
 
 ___ recursiveRange(num
     __ num <= 0:
-        return 0
-    return num + recursiveRange(num - 1)
+        r_ 0
+    r_ num + recursiveRange(num - 1)
 
 
 print(recursiveRange(6))

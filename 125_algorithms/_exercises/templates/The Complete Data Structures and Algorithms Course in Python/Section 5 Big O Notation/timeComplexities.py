@@ -11,20 +11,20 @@ print(array[0])
 
 ######  Linear time complexity  #######
 print('######  Linear time complexity  #######')
-for element in array:
+___ element __ array:
      print(element)
 
 
 ######  Logarithmic time complexity  #######
 print('######  Logarithmic time complexity  #######')
-for index in range(0,len(array),3
+___ index __ range(0,le_(array),3
      print(array[index])
 
 
 ######  Quadratic time complexity  #######
 print('######  Quadratic time complexity  #######')
-for x in array:
-    for y in array:
+___ x __ array:
+    ___ y __ array:
          print(x,y)
 
 
@@ -32,22 +32,22 @@ for x in array:
 print('######  Exponential time complexity  #######')
 ___ fibonacci(n
     __ n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
+        r_ n
+    r_ fibonacci(n-1) + fibonacci(n-2)
 
 
 ######  Add vs Multiply ####### 
 arrayA = [1,2,3,4,5,6,7,8,9]
 arrayB = [11,12,13,14,15,16,17,18,19] 
 
-for a in arrayA:
+___ a __ arrayA:
     print(a)
 
-for b in arrayB:
+___ b __ arrayB:
     print(b)
 
-for a in arrayA:
-    for b in arrayB:
+___ a __ arrayA:
+    ___ b __ arrayB:
         print(a,b)
 
 ######  Iterative algorithm - finding the biggest number in the array ####### 
@@ -56,7 +56,7 @@ sample1Array = [1,10,45,33,23,45,67,2,3,33,55,11,65,76,34,35,27,99]
 
 ___ findBiggestNumber(sampleArray
     biggestNumber = sampleArray[0]
-    for index in range(1,len(sampleArray)):
+    ___ index __ range(1,le_(sampleArray)):
         __ sampleArray[index] > biggestNumber:
             biggestNumber = sampleArray[index]
     print(biggestNumber)
@@ -67,18 +67,18 @@ findBiggestNumber(sample1Array)
 
 ___ findMaxNumRec(sampleArray, n
     __ n == 1:
-       return sampleArray[0]
-    return max(sampleArray[n-1],findMaxNumRec(sampleArray,n-1))
+       r_ sampleArray[0]
+    r_ max(sampleArray[n-1],findMaxNumRec(sampleArray,n-1))
 
-print(findMaxNumRec(sample1Array,len(sample1Array)))
+print(findMaxNumRec(sample1Array,le_(sample1Array)))
 
 
 ######  Recursive algorithm multiple calls ####### 
 
 ___ f(n
     __ n <= 1:
-        return 1
-    return f(n-1) + f(n-1)
+        r_ 1
+    r_ f(n-1) + f(n-1)
 
 print(f(3))
 
@@ -93,23 +93,23 @@ print(f(3))
 
 ___ f1(n
     __ n <= 0:
-        return 1
+        r_ 1
     ____
-        return 1 + f1(n-1)
+        r_ 1 + f1(n-1)
 
 
 ___ f2(n
     __ n <= 0:
-        return 1
+        r_ 1
     ____
-        return 1 + f2(n-5)
+        r_ 1 + f2(n-5)
 
 
 ___ f3(n
     __ n <= 0:
-        return 1
+        r_ 1
     ____
-        return 1 + f3(n/5)
+        r_ 1 + f3(n/5)
 
 
 ___ f4(n,m,o
@@ -120,10 +120,10 @@ ___ f4(n,m,o
         f4(n-1,m,o+1)
 
 ___ f5(n
-    for i in range(0,n,2
+    ___ i __ range(0,n,2
         print(i)  
     __ n<=0:
-        return 1
+        r_ 1
     ____
-        return 1 + f5(n-5)
+        r_ 1 + f5(n-5)
 

@@ -65,11 +65,11 @@ data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 ___ fun(m
     v = m[0][0]
 
-    for row in m:
-        for element in row:
+    ___ row __ m:
+        ___ element __ row:
             __ v < element: v = element
 
-    return v
+    r_ v
 print(fun(data[0]))
 # A. 1
 # B. 2
@@ -87,7 +87,7 @@ arr = [[1, 2, 3, 4],
        [4, 5, 6, 7],
        [8, 9, 10, 11],
        [12, 13, 14, 15]]
-for i in range(0, 4
+___ i __ range(0, 4
     print(arr[i].pop())
 # A. 1 2 3 4
 # B. 1 4 8 12
@@ -102,7 +102,7 @@ for i in range(0, 4
 ___ f(i, values = []
     values.append(i)
     print (values)
-    return values
+    r_ values
 f(1)
 f(2)
 f(3)
@@ -117,9 +117,9 @@ f(3)
 # Q-9. What will be the output of the following code snippet?
 
 arr = [1, 2, 3, 4, 5, 6]
-for i in range(1, 6
+___ i __ range(1, 6
     arr[i - 1] = arr[i]
-for i in range(0, 6
+___ i __ range(0, 6
     print(arr[i], end = " ")
 # A. 1 2 3 4 5 6
 # B. 2 3 4 5 6 1
@@ -139,7 +139,7 @@ fruit_list2[0] = 'Guava'
 fruit_list3[1] = 'Kiwi'
 
 sum = 0
-for ls in (fruit_list1, fruit_list2, fruit_list3
+___ ls __ (fruit_list1, fruit_list2, fruit_list3
     __ ls[0] == 'Guava':
         sum += 1
     __ ls[1] == 'Kiwi':

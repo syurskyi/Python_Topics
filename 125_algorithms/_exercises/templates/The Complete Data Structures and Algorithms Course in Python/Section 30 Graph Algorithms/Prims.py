@@ -12,7 +12,7 @@ class Graph:
     
     ___ printSolution(self
         print("Edge : Weight")
-        for s, d, w in self.MST:
+        ___ s, d, w __ self.MST:
             print("%s -> %s: %s" % (s, d, w))
     
     ___ primsAlgo(self
@@ -21,9 +21,9 @@ class Graph:
         visited[0]=True
         while edgeNum<self.vertexNum-1:
             min = sys.maxsize
-            for i in range(self.vertexNum
+            ___ i __ range(self.vertexNum
                 __ visited[i]:
-                    for j in range(self.vertexNum
+                    ___ j __ range(self.vertexNum
                         __ ((not visited[j]) and self.edges[i][j]
                             __ min > self.edges[i][j]:
                                 min = self.edges[i][j]

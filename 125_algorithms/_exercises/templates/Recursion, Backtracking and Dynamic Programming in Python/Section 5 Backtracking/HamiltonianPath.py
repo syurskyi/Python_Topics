@@ -2,7 +2,7 @@
 class HamiltonianPath:
 
     ___ __init__(self, adjacency_matrix
-        self.n = len(adjacency_matrix)
+        self.n = le_(adjacency_matrix)
         self.adjacency_matrix = adjacency_matrix
         self.path = [0]
 
@@ -17,38 +17,38 @@ class HamiltonianPath:
 
         # BASE CASE
         __ position == self.n:
-            return True
+            r_ True
 
-        for vertex_index in range(1, self.n
+        ___ vertex_index __ range(1, self.n
             __ self.is_feasible(vertex_index, position
                 # we include vertex (with vertex_index) in the solution
                 self.path.append(vertex_index)
 
                 __ self.solve(position+1
-                    return True
+                    r_ True
 
                 # when we have to backtrack
                 # we have to remove vertex_index from the result (path)
                 self.path.pop()
 
         # if we have considered all the vertexes without a success
-        return False
+        r_ False
 
     ___ is_feasible(self, vertex, actual_position
 
         # check whether is there a connection between the nodes
         __ self.adjacency_matrix[self.path[actual_position-1]][vertex] == 0:
-            return False
+            r_ False
 
         # whether we have already included that given vertex in the result
-        for i in range(actual_position
+        ___ i __ range(actual_position
             __ self.path[i] == vertex:
-                return False
+                r_ False
 
-        return True
+        r_ True
 
     ___ show_hamiltonian_path(self
-        for v in self.path:
+        ___ v __ self.path:
             print(v)
 
 

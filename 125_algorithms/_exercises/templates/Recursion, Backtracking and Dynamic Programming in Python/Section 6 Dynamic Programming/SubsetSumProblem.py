@@ -4,17 +4,17 @@ class SubsetSumProblem:
     ___ __init__(self, nums, m
         self.nums = nums
         self.m = m
-        self.S = [[False for _ in range(m+1)] for _ in range(len(nums)+1)]
+        self.S = [[False ___ _ __ range(m+1)] ___ _ __ range(le_(nums)+1)]
 
     ___ solve(self
 
         # initialize the first row and first column
-        for i in range(len(self.nums) + 1
+        ___ i __ range(le_(self.nums) + 1
             self.S[i][0] = True
 
         # we have to construct the table with the cells one by one
-        for i in range(1, len(self.nums) + 1
-            for j in range(1, self.m + 1
+        ___ i __ range(1, le_(self.nums) + 1
+            ___ j __ range(1, self.m + 1
                 __ j < self.nums[i-1]:
                     self.S[i][j] = self.S[i-1][j]
                 ____
@@ -27,14 +27,14 @@ class SubsetSumProblem:
 
     ___ show_result(self
 
-        print("The problem is feasible: %s" % self.S[len(self.nums)][self.m])
+        print("The problem is feasible: %s" % self.S[le_(self.nums)][self.m])
 
-        __ not self.S[len(self.nums)][self.m]:
-            return
+        __ not self.S[le_(self.nums)][self.m]:
+            r_
 
         # print out the items in the subset
         col_index = self.m
-        row_index = len(self.nums)
+        row_index = le_(self.nums)
 
         while col_index > 0 or row_index > 0:
             __ self.S[row_index][col_index] == self.S[row_index - 1][col_index]:

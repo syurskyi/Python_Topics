@@ -58,13 +58,13 @@ class SLinkedList:
             node = self.head
             while node is not None:
                 __ node.value == nodeValue:
-                    return node.value
+                    r_ node.value
                 node = node.next
-            return "The node does not exist in this SLL"
+            r_ "The node does not exist in this SLL"
     # Delete a node from Singly Linked List
     ___ deleteNode(self, location
         __ self.head is None:
-            return "The Singly Linked List does not exist"
+            r_ "The Singly Linked List does not exist"
         ____
             __ location == 0:
                 __ self.head == self.tail:
@@ -102,7 +102,7 @@ class SLinkedList:
 
 singlyLinkedList = SLinkedList()
 singlyLinkedList.insertSLL(44,6)
-print([node.value for node in singlyLinkedList]) 
+print([node.value ___ node __ singlyLinkedList])
 
 # node1 = Node(1)
 # node2 = Node(2)
@@ -113,8 +113,8 @@ print([node.value for node in singlyLinkedList])
 
 singlyLinkedList.insertSLL(3,1)
 singlyLinkedList.insertSLL(4,1)
-print([node.value for node in singlyLinkedList]) 
+print([node.value ___ node __ singlyLinkedList])
 singlyLinkedList.insertSLL(5,3)
-print([node.value for node in singlyLinkedList]) 
+print([node.value ___ node __ singlyLinkedList])
 
 

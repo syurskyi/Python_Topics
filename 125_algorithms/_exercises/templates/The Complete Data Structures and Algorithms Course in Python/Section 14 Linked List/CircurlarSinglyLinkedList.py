@@ -26,13 +26,13 @@ class CircularSinglyLinkedList:
         node.next = node
         self.head = node
         self.tail = node
-        return "The CSLL has been created"
+        r_ "The CSLL has been created"
     
     #  Insertion of a node in circular singly linked list
 
     ___ insertCSLL(self, value, location
         __ self.head is None:
-            return "The head reference is None"
+            r_ "The head reference is None"
         ____
             newNode = Node(value)
             __ location == 0:
@@ -52,7 +52,7 @@ class CircularSinglyLinkedList:
                 nextNode = tempNode.next
                 tempNode.next = newNode
                 newNode.next = nextNode
-            return "The node has been successfully inserted"
+            r_ "The node has been successfully inserted"
     
     # Traversal of a node in circular singly linked list
     ___ traversalCSLL(self
@@ -69,15 +69,15 @@ class CircularSinglyLinkedList:
     # Searching for a node in circular singly linked list
     ___ searchCSLL(self, nodeValue
         __ self.head is None:
-            return "There is not any node in this CSLL"
+            r_ "There is not any node in this CSLL"
         ____
             tempNode = self.head
             while tempNode:
                 __ tempNode.value == nodeValue:
-                    return tempNode.value
+                    r_ tempNode.value
                 tempNode = tempNode.next
                 __ tempNode == self.tail.next:
-                    return "The node does not exist in this CSLL"
+                    r_ "The node does not exist in this CSLL"
 
     # Delete  a node from circular singly linked list
     ___ deleteNode(self, location
@@ -128,9 +128,9 @@ circularSLL.insertCSLL(1,1)
 circularSLL.insertCSLL(2,1)
 circularSLL.insertCSLL(3,1)
 
-print([node.value for node in circularSLL]) 
+print([node.value ___ node __ circularSLL])
 circularSLL.deleteEntireCSLL()
-print([node.value for node in circularSLL]) 
+print([node.value ___ node __ circularSLL])
 
 
 

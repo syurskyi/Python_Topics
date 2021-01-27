@@ -5,11 +5,11 @@
 
 
 ___ isPalindrome(strng
-    __ len(strng) == 0:
-        return True
-    __ strng[0] != strng[len(strng)-1]:
-        return False
-    return isPalindrome(strng[1:-1])
+    __ le_(strng) == 0:
+        r_ True
+    __ strng[0] != strng[le_(strng)-1]:
+        r_ False
+    r_ isPalindrome(strng[1:-1])
 
 print(isPalindrome('awesome')) # false
 print(isPalindrome('foobar')) # false

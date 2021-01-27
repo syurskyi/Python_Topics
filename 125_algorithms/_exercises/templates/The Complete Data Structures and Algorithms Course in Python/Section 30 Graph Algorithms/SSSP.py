@@ -15,8 +15,8 @@ class Graph:
             path = queue.pop(0)
             node = path[-1]
             __ node == end:
-                return path
-            for adjacent in self.gdict.get(node, []
+                r_ path
+            ___ adjacent __ self.gdict.get(node, []
                 new_path = list(path)
                 new_path.append(adjacent)
                 queue.append(new_path)

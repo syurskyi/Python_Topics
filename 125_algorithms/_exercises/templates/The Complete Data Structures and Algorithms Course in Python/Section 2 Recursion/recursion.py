@@ -48,10 +48,10 @@ recursiveMethod(4)
 
 ___ powerOfTwo(n
     __ n == 0:
-         return 1
+         r_ 1
     ____
         power = powerOfTwo(n-1)
-        return power * 2
+        r_ power * 2
 
 print(powerOfTwo(3))
 
@@ -61,7 +61,7 @@ ___ powerOfTwoIt(n
     while i < n:
         power = power * 2
         i = i + 1
-    return power
+    r_ power
 
 
 print(powerOfTwoIt(4))
@@ -71,19 +71,19 @@ print(powerOfTwoIt(4))
 
 ___ factorial(n
     assert n >= 0 and int(n) == n, 'The number must be positive integer only!'
-    __ n in [0,1]:
-        return 1
+    __ n __ [0,1]:
+        r_ 1
     ____
-        return n * factorial(n-1)
+        r_ n * factorial(n-1)
 
 
  ## Fibonacci###
 
 ___ fibonacci(n
     assert n >=0 and int(n) == n , 'Fibonacci number cannot be negative number or non integer.'
-    __ n in [0,1]:
-        return n
+    __ n __ [0,1]:
+        r_ n
     ____
-        return fibonacci(n-1) + fibonacci(n-2)
+        r_ fibonacci(n-1) + fibonacci(n-2)
 
 print(fibonacci(7))

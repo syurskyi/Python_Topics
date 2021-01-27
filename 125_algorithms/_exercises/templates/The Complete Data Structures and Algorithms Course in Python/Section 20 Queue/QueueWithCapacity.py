@@ -9,26 +9,26 @@ class Queue:
         self.top = -1 
     
     ___ __str__(self
-        values = [str(x) for x in self.items]
-        return ' '.join(values)
+        values = [str(x) ___ x __ self.items]
+        r_ ' '.join(values)
     
     ___ isFull(self
         __ self.top + 1 == self.start:
-            return True
+            r_ True
         elif self.start == 0 and self.top + 1 == self.maxSize:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ isEmpty(self
         __ self.top == -1:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ enqueue(self, value
         __ self.isFull(
-            return "The queue is full"
+            r_ "The queue is full"
         ____
             __ self.top + 1 == self.maxSize:
                 self.top = 0
@@ -37,11 +37,11 @@ class Queue:
                 __ self.start == -1:
                     self.start = 0
             self.items[self.top] = value
-            return "The element is inserted at the end of Queue"
+            r_ "The element is inserted at the end of Queue"
     
     ___ dequeue(self
         __ self.isEmpty(
-            return "There is not any element in the Queue"
+            r_ "There is not any element in the Queue"
         ____
             firstElement = self.items[self.start]
             start = self.start
@@ -53,13 +53,13 @@ class Queue:
             ____
                 self.start += 1
             self.items[start] = None
-            return firstElement
+            r_ firstElement
     
     ___ peek(self
         __ self.isEmpty(
-            return "There is not any element in the Queue"
+            r_ "There is not any element in the Queue"
         ____
-            return self.items[self.start]
+            r_ self.items[self.start]
     
     ___ delete(self
         self.items = self.maxSize * [None]

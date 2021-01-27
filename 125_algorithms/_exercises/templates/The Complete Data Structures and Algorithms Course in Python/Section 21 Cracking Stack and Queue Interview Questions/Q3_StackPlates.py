@@ -9,27 +9,27 @@ class PlateStack(
         self.stacks = []
     
     ___ __str__(self
-        return self.stacks
+        r_ self.stacks
     
     ___ push(self, item
-        __ len(self.stacks) > 0 and (len(self.stacks[-1])) < self.capacity:
+        __ le_(self.stacks) > 0 and (le_(self.stacks[-1])) < self.capacity:
             self.stacks[-1].append(item)
         ____
             self.stacks.append([item])
     
     ___ pop(self
-        while len(self.stacks) and len(self.stacks[-1]) == 0:
+        while le_(self.stacks) and le_(self.stacks[-1]) == 0:
             self.stacks.pop()
-        __ len(self.stacks) == 0:
-            return None
+        __ le_(self.stacks) == 0:
+            r_ None
         ____
-            return self.stacks[-1].pop()
+            r_ self.stacks[-1].pop()
     
     ___ pop_at(self, stackNumber
-        __ len(self.stacks[stackNumber]) > 0:
-            return self.stacks[stackNumber].pop()
+        __ le_(self.stacks[stackNumber]) > 0:
+            r_ self.stacks[stackNumber].pop()
         ____
-            return None
+            r_ None
 
 
 customStack= PlateStack(2)

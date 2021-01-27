@@ -22,7 +22,7 @@ ___ sumList(llA, llB
         ll.add(int(result % 10))
         carry = result / 10
     
-    return ll
+    r_ ll
 
 llA = LinkedList()
 llA.add(7)

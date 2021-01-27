@@ -5,11 +5,11 @@
 
 shoppingList = ['Milk', 'Cheese', 'Butter']
 
-for i in range(len(shoppingList)):
+___ i __ range(le_(shoppingList)):
     shoppingList[i] = shoppingList[i]+"+"
     # print(shoppingList[i])
 empty = []
-for i in empty:
+___ i __ empty:
     print("I am empty")
 
 
@@ -30,10 +30,10 @@ print(myList)
 myList =  [10,20,30,40,50,60,70,80,90]
 
 ___ searchinList(list, value
-    for i in list:
+    ___ i __ list:
         __ i == value:
-            return list.index(value)
-    return 'The value does not exist in the list'
+            r_ list.index(value)
+    r_ 'The value does not exist in the list'
 
 print(searchinList(myList, 100))
 
@@ -60,5 +60,5 @@ while (True
     value = float(inp)
     numlist.append(value)
 					
-average = sum(numlist) / len(numlist) 
+average = sum(numlist) / le_(numlist) 
 print('Average:', average)

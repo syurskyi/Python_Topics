@@ -14,8 +14,8 @@ class Graph:
     ___ topogologicalSortUtil(self, v, visited, stack
         visited.append(v)
 
-        for i in self.graph[v]:
-            __ i not in visited:
+        ___ i __ self.graph[v]:
+            __ i not __ visited:
                 self.topogologicalSortUtil(i, visited, stack)
         
         stack.insert(0, v)
@@ -25,8 +25,8 @@ class Graph:
         visited = []
         stack = []
 
-        for k in list(self.graph
-            __ k not in visited:
+        ___ k __ list(self.graph
+            __ k not __ visited:
                 self.topogologicalSortUtil(k, visited, stack)
         
         print(stack)

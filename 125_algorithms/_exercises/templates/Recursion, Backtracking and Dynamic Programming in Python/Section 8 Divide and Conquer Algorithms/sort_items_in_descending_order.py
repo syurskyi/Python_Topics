@@ -1,11 +1,11 @@
 ___ merge_sort(nums
     # define the base case: that we keep splitting the lists until
     # the sub-lists have just 1 item - arrays with a single item is sorted by default
-    __ len(nums) == 1:
-        return
+    __ le_(nums) == 1:
+        r_
 
     # DIVIDE PHASE
-    middle_index = len(nums) // 2
+    middle_index = le_(nums) // 2
     left_half = nums[:middle_index]
     right_half = nums[middle_index:]
 
@@ -17,7 +17,7 @@ ___ merge_sort(nums
     j = 0
     k = 0
 
-    while i < len(left_half) and j < len(right_half
+    while i < le_(left_half) and j < le_(right_half
         # if we use < then the result is the ascending order
         # if we use > then the result is the descending order
         __ left_half[i] > right_half[j]:
@@ -30,12 +30,12 @@ ___ merge_sort(nums
         k = k + 1
 
     # after that there may be additional items in the left (right) sub-array
-    while i < len(left_half
+    while i < le_(left_half
         nums[k] = left_half[i]
         i = i + 1
         k = k + 1
 
-    while j < len(right_half
+    while j < le_(right_half
         nums[k] = right_half[j]
         j = j + 1
         k = k + 1

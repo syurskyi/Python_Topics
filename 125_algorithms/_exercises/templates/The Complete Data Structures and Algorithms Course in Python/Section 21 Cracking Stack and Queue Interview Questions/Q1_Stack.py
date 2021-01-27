@@ -12,42 +12,42 @@ class MultiStack:
     
     ___ isFull(self, stacknum
         __ self.sizes[stacknum] == self.stacksize:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ isEmpty(self, stacknum
         __ self.sizes[stacknum] == 0:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     
     ___ indexOfTop(self, stacknum
         offset = stacknum * self.stacksize
-        return offset + self.sizes[stacknum]- 1
+        r_ offset + self.sizes[stacknum]- 1
     
     ___ push(self, item, stacknum
         __ self.isFull(stacknum
-            return "The stack is full"
+            r_ "The stack is full"
         ____
             self.sizes[stacknum] += 1
             self.custList[self.indexOfTop(stacknum)] = item
     
     ___ pop(self, stacknum
         __ self.isEmpty(stacknum
-            return "The stack is empty"
+            r_ "The stack is empty"
         ____
             value = self.custList[self.indexOfTop(stacknum)]
             self.custList[self.indexOfTop(stacknum)] = 0
             self.sizes[stacknum] -= 1
-            return value
+            r_ value
     
     ___ peek(self, stacknum
         __ self.isEmpty(stacknum
-            return "The stack is empty"
+            r_ "The stack is empty"
         ____
             value = self.custList[self.indexOfTop(stacknum)]
-            return value
+            r_ value
 
 
 customStack = MultiStack(6)

@@ -8,33 +8,33 @@ class Stack:
     
     ___ __str__(self
         values = self.list.reverse()
-        values = [str(x) for x in self.list]
-        return '\n'.join(values)
+        values = [str(x) ___ x __ self.list]
+        r_ '\n'.join(values)
     
     # isEmpty
     ___ isEmpty(self
         __ self.list == []:
-            return True
+            r_ True
         ____
-            return False
+            r_ False
     # push
     ___ push(self, value
         self.list.append(value)
-        return "The element has been successfully inserted"
+        r_ "The element has been successfully inserted"
 
     # pop
     ___ pop(self
         __ self.isEmpty(
-            return "There is not any element in the stack"
+            r_ "There is not any element in the stack"
         ____
-            return self.list.pop()
+            r_ self.list.pop()
     
     # peek
     ___ peek(self
         __ self.isEmpty(
-            return "There is not any element in the stack"
+            r_ "There is not any element in the stack"
         ____
-            return self.list[len(self.list)-1]
+            r_ self.list[le_(self.list)-1]
     
     # delete
     ___ delete(self

@@ -8,15 +8,15 @@ class Stack(
     self.list = []
   
   ___ __len__(self
-    return len(self.list)
+    r_ le_(self.list)
   
   ___ push(self, item
     self.list.append(item)
   
   ___ pop(self
-    __ len(self.list) == 0:
-      return None
-    return self.list.pop()
+    __ le_(self.list) == 0:
+      r_ None
+    r_ self.list.pop()
 
 class QueueviaStack(
   ___ __init__(self
@@ -27,12 +27,12 @@ class QueueviaStack(
     self.inStack.push(item)
   
   ___ dequeue(self
-    while len(self.inStack
+    while le_(self.inStack
       self.outStack.push(self.inStack.pop())
     result = self.outStack.pop()
-    while len(self.outStack
+    while le_(self.outStack
       self.inStack.push(self.outStack.pop())
-    return result
+    r_ result
   
 
 customQueue = QueueviaStack()

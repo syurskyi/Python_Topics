@@ -2,38 +2,38 @@
 
 
 ___ reverse(strng
-    __ len(strng) <= 1:
-        return strng
-    return strng[len(strng) - 1] + reverse(strng[0:len(strng) - 1])
+    __ le_(strng) <= 1:
+        r_ strng
+    r_ strng[le_(strng) - 1] + reverse(strng[0:le_(strng) - 1])
 
 
 # IS PALINDROME SOLUTION
 
 
 ___ isPalindrome(strng
-    __ len(strng) == 0:
-        return True
-    __ strng[0] != strng[len(strng) - 1]:
-        return False
-    return isPalindrome(strng[1:-1])
+    __ le_(strng) == 0:
+        r_ True
+    __ strng[0] != strng[le_(strng) - 1]:
+        r_ False
+    r_ isPalindrome(strng[1:-1])
 
 
 # SOME RECURSIVE SOLUTION
 
 
 ___ someRecursive(arr, cb
-    __ len(arr) == 0:
-        return False
+    __ le_(arr) == 0:
+        r_ False
     __ not (cb(arr[0])):
-        return someRecursive(arr[1:], cb)
-    return True
+        r_ someRecursive(arr[1:], cb)
+    r_ True
 
 
 ___ isOdd(num
     __ num % 2 == 0:
-        return False
+        r_ False
     ____
-        return True
+        r_ True
 
 
 # FLATTEN SOLUTION
@@ -41,9 +41,9 @@ ___ isOdd(num
 
 ___ flatten(arr
     resultArr = []
-    for custItem in arr:
+    ___ custItem __ arr:
         __ type(custItem) is list:
             resultArr.extend(flatten(custItem))
         ____
             resultArr.append(custItem)
-    return resultArr
+    r_ resultArr

@@ -8,21 +8,21 @@ from LinkedList import LinkedList
 
 ___ removeDups(ll
     __ ll.head is None:
-        return
+        r_
     ____
         currentNode = ll.head
         visited = set([currentNode.value])
         while currentNode.next:
-            __ currentNode.next.value in visited:
+            __ currentNode.next.value __ visited:
                 currentNode.next = currentNode.next.next
             ____
                 visited.add(currentNode.next.value)
                 currentNode = currentNode.next
-        return ll
+        r_ ll
 
 ___ removeDups1(ll
     __ ll.head is None:
-        return
+        r_
     
     currentNode = ll.head
     while currentNode:
@@ -33,7 +33,7 @@ ___ removeDups1(ll
             ____
                 runner = runner.next
         currentNode = currentNode.next
-    return ll.head
+    r_ ll.head
 
 
 

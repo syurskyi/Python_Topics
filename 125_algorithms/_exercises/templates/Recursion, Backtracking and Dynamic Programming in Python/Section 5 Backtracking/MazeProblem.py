@@ -2,8 +2,8 @@ class MazeProblem:
 
     ___ __init__(self, maze_matrix
         self.maze_matrix = maze_matrix
-        self.maze_size = len(maze_matrix)
-        self.solution_matrix = [[' - ' for _ in range(self.maze_size)] for _ in range(self.maze_size)]
+        self.maze_size = le_(maze_matrix)
+        self.solution_matrix = [[' - ' ___ _ __ range(self.maze_size)] ___ _ __ range(self.maze_size)]
         self.moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     ___ solve_problem(self
@@ -19,9 +19,9 @@ class MazeProblem:
     ___ solve(self, x, y
 
         __ self.is_finished(x, y
-            return True
+            r_ True
 
-        for move in self.moves:
+        ___ move __ self.moves:
 
             next_x = x + move[0]
             next_y = y + move[1]
@@ -30,41 +30,41 @@ class MazeProblem:
                 self.solution_matrix[next_x][next_y] = ' S '
 
                 __ self.solve(next_x, next_y
-                    return True
+                    r_ True
 
                 # BACKTRACK
                 self.solution_matrix[next_x][next_y] = ' '
 
-        return False
+        r_ False
 
     ___ is_valid(self, x, y
 
         # we do not step out of the board
         # horizontally and then vertically
         __ x < 0 or x >= self.maze_size:
-            return False
+            r_ False
 
         __ y < 0 or y >= self.maze_size:
-            return False
+            r_ False
 
         # there may be obstacles (we are not able to use cells that are obstacles)
         # 0 represents obstacles !!!
         __ self.maze_matrix[x][y] == 0:
-            return False
+            r_ False
 
         # let's check whether we have already included that cell in the solution
         __ self.solution_matrix[x][y] == ' S ':
-            return False
+            r_ False
 
-        return True
+        r_ True
 
     ___ is_finished(self, x, y
         __ x == self.maze_size - 1 and y == self.maze_size - 1:
-            return True
+            r_ True
 
     ___ show_result(self
-        for x in range(self.maze_size
-            for y in range(self.maze_size
+        ___ x __ range(self.maze_size
+            ___ y __ range(self.maze_size
                 print(self.solution_matrix[x][y], end=' ')
             print('\n')
 

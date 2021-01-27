@@ -17,22 +17,22 @@ class Graph:
 
     ___ print_solution(self, dist
         print("Vertex Distance from Source")
-        for key, value in dist.items(
+        ___ key, value __ dist.items(
             print('  ' + key, ' :    ', value)
     
     ___ bellmanFord(self, src
-        dist = {i : float("Inf") for i in self.nodes}
+        dist = {i : float("Inf") ___ i __ self.nodes}
         dist[src] = 0
 
-        for _ in range(self.V-1
-            for s, d, w in self.graph:
+        ___ _ __ range(self.V-1
+            ___ s, d, w __ self.graph:
                 __ dist[s] != float("Inf") and dist[s] + w < dist[d]:
                     dist[d] = dist[s] + w
         
-        for s, d, w in self.graph:
+        ___ s, d, w __ self.graph:
             __ dist[s] != float("Inf") and dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
-                return
+                r_
         
 
         self.print_solution(dist)

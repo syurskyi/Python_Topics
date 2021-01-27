@@ -2,10 +2,10 @@
 class ColoringProblem:
 
     ___ __init__(self, adjacency_matrix, num_colors
-        self.n = len(adjacency_matrix)
+        self.n = le_(adjacency_matrix)
         self.adjacency_matrix = adjacency_matrix
         self.num_colors = num_colors
-        self.colors = [0 for _ in range(self.n)]
+        self.colors = [0 ___ _ __ range(self.n)]
 
     ___ coloring_problem(self
 
@@ -18,34 +18,34 @@ class ColoringProblem:
     ___ solve(self, node_index
 
         __ node_index == self.n:
-            return True
+            r_ True
 
         # consider the colors
-        for color_index in range(1, self.num_colors+1
+        ___ color_index __ range(1, self.num_colors+1
             __ self.is_color_valid(node_index, color_index
                 self.colors[node_index] = color_index
 
                 __ self.solve(node_index+1
-                    return True
+                    r_ True
 
                 # BACKTRACKING
                 # in this case backtracking means doing "nothing"
 
-        return False
+        r_ False
 
     ___ is_color_valid(self, node_index, color_index
 
         # we have to check that the nodes are connected
         # AND we have to check that the given color is not shared
         # with these adjacent nodes
-        for i in range(self.n
+        ___ i __ range(self.n
             __ self.adjacency_matrix[node_index][i] == 1 and color_index == self.colors[i]:
-                return False
+                r_ False
 
-        return True
+        r_ True
 
     ___ show_result(self
-        for v, c in zip(range(self.n), self.colors
+        ___ v, c __ zip(range(self.n), self.colors
             print('Node %d has color value %d' % (v, c))
 
 

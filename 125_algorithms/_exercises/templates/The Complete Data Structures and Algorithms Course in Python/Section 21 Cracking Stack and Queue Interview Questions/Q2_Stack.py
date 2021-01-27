@@ -12,7 +12,7 @@ class Node(
         string = str(self.value)
         __ self.next:
             string += ',' + str(self.next)
-        return string
+        r_ string
 
 class Stack(
     ___ __init__(self
@@ -21,8 +21,8 @@ class Stack(
     
     ___ min(self
         __ not self.minNode:
-            return None
-        return self.minNode.value
+            r_ None
+        r_ self.minNode.value
     
     ___ push(self, item
         __ self.minNode and (self.minNode.value < item
@@ -33,11 +33,11 @@ class Stack(
     
     ___ pop(self
         __ not self.top:
-            return None
+            r_ None
         self.minNode = self.minNode.next
         item = self.top.value
         self.top = self.top.next
-        return item
+        r_ item
 
 customStack = Stack()
 customStack.push(5)

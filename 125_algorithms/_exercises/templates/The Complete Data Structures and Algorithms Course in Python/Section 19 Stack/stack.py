@@ -23,22 +23,22 @@ class MultiStack:
         value = self.array[self.IndexOfTop(stacknum)]
         self.array[self.IndexOfTop(stacknum)] = 0
         self.sizes[stacknum] -= 1
-        return value
+        r_ value
 
     ___ Peek(self, stacknum
         __ self.IsEmpty(stacknum
             raise Exception('Stack is empty')
-        return self.array[self.IndexOfTop(stacknum)]
+        r_ self.array[self.IndexOfTop(stacknum)]
 
     ___ IsEmpty(self, stacknum
-        return self.sizes[stacknum] == 0
+        r_ self.sizes[stacknum] == 0
 
     ___ IsFull(self, stacknum
-        return self.sizes[stacknum] == self.stacksize
+        r_ self.sizes[stacknum] == self.stacksize
 
     ___ IndexOfTop(self, stacknum
         offset = stacknum * self.stacksize
-        return offset + self.sizes[stacknum] - 1
+        r_ offset + self.sizes[stacknum] - 1
 
 stack = MultiStack(1)
 

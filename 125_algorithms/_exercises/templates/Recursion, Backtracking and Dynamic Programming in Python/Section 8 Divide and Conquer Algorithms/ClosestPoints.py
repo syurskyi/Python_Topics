@@ -10,7 +10,7 @@ class Point:
 
 # Euclidean distance - we can omit the square-root function
 ___ distance(p, q
-    return math.sqrt((p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y))
+    r_ math.sqrt((p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y))
 
 
 # it has quadratic running time so we want to do better
@@ -21,21 +21,21 @@ ___ brute_force(sub_array
     # we have to calculate the distance between every single point
     # we make sure that do not consider the same points multiple times
     # d(a,b) = d(b,a)
-    for i in range(len(sub_array) - 1
-        for j in range(i + 1, len(sub_array)):
+    ___ i __ range(le_(sub_array) - 1
+        ___ j __ range(i + 1, le_(sub_array)):
             actual_distance = distance(sub_array[i], sub_array[j])
             __ actual_distance < min_distance:
                 min_distance = actual_distance
 
-    return min_distance
+    r_ min_distance
 
 
 ___ get_strip_delta(strip_points, delta
     min_distance = delta
-    n = len(strip_points)
+    n = le_(strip_points)
 
     # in worst case len(strip_point) = N
-    for i in range(n
+    ___ i __ range(n
         j = i + 1
         # a geometric packing argument shows that this loop iterates at most 7 times
         # THIS IS WHY WE HAVE SORTED THE POINTS BASED ON Y COORDINATE
@@ -43,14 +43,14 @@ ___ get_strip_delta(strip_points, delta
             min_distance = distance(strip_points[j], strip_points[i])
             j = j + 1
 
-    return min_distance
+    r_ min_distance
 
 
 ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
     # when the number of items smaller than 3 then we use brute-force
     # base case
     __ num_of_items <= 5:
-        return brute_force(list_sorted_x)
+        r_ brute_force(list_sorted_x)
 
     middle_index = num_of_items // 2
     middle_item = list_sorted_x[middle_index]
@@ -64,19 +64,19 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
     # CONQUER PHASE - usually this is where the magic happens
     strip_points = []
 
-    for i in range(num_of_items
+    ___ i __ range(num_of_items
         __ abs(list_sorted_y[i].x - middle_item.x) < delta:
             strip_points.append(list_sorted_y[i])
 
     strip_delta = get_strip_delta(strip_points, delta)
 
-    return min(strip_delta, delta)
+    r_ min(strip_delta, delta)
 
 
 ___ run(list1, list2
     list1.sort(key=lambda point: point.x)
     list2.sort(key=lambda point: point.y)
-    return closest_pairs_algorithm(list1, list2, len(list1))
+    r_ closest_pairs_algorithm(list1, list2, le_(list1))
 
 
 __ __name__ == '__main__':

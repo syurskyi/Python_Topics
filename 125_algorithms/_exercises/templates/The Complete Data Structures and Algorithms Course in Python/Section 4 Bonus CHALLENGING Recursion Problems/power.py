@@ -6,8 +6,8 @@
 
 ___ power(base, exponent
     __ exponent == 0:
-        return 1
-    return base * power(base, exponent-1)
+        r_ 1
+    r_ base * power(base, exponent-1)
 
 print(power(2,0)) # 1
 print(power(2,2)) # 4

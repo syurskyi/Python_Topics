@@ -25,8 +25,8 @@ ___ dijkstra(graph, initial
 
     while nodes:
         minNode = None
-        for node in nodes:
-            __ node in visited:
+        ___ node __ nodes:
+            __ node __ visited:
                 __ minNode is None:
                     minNode = node
                 elif visited[node] < visited[minNode]:
@@ -37,13 +37,13 @@ ___ dijkstra(graph, initial
         nodes.remove(minNode)
         currentWeight = visited[minNode]
 
-        for edge in graph.edges[minNode]:
+        ___ edge __ graph.edges[minNode]:
             weight = currentWeight + graph.distances[(minNode, edge)]
-            __ edge not in visited or weight < visited[edge]:
+            __ edge not __ visited or weight < visited[edge]:
                 visited[edge] = weight
                 path[edge].append(minNode)
     
-    return visited, path
+    r_ visited, path
 
 customGraph = Graph()
 customGraph.addNode("A")

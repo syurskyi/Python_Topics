@@ -18,7 +18,7 @@ class Graph:
         self.nodes.append(value)
     
     ___ printSolution(self,s,d,w
-        for s, d, w in self.MST:
+        ___ s, d, w __ self.MST:
             print("%s - %s: %s" % (s, d, w))
     
     ___ kruskalAlgo(self

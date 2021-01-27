@@ -4,17 +4,17 @@
 # someRecursive Solution
 
 ___ someRecursive(arr, cb
-    __ len(arr) == 0:
-        return False
+    __ le_(arr) == 0:
+        r_ False
     __ not(cb(arr[0])):
-        return someRecursive(arr[1:], cb)
-    return True
+        r_ someRecursive(arr[1:], cb)
+    r_ True
 
 ___ isOdd(num
     __ num%2==0:
-        return False
+        r_ False
     ____
-        return True
+        r_ True
 
 
 print(someRecursive([1,2,3,4], isOdd)) # true

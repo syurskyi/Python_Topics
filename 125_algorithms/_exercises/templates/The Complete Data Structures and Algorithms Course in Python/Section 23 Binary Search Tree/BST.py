@@ -22,32 +22,32 @@ ___ insertNode(rootNode, nodeValue
             rootNode.rightChild = BSTNode(nodeValue)
         ____
             insertNode(rootNode.rightChild, nodeValue)
-    return "The node has been successfully inserted"
+    r_ "The node has been successfully inserted"
 
 ___ preOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     print(rootNode.data)
     preOrderTraversal(rootNode.leftChild)
     preOrderTraversal(rootNode.rightChild)
 
 ___ inOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     inOrderTraversal(rootNode.leftChild)
     print(rootNode.data)
     inOrderTraversal(rootNode.rightChild)
 
 ___ postOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     postOrderTraversal(rootNode.leftChild)
     postOrderTraversal(rootNode.rightChild)
     print(rootNode.data)
 
 ___ levelOrderTraversal(rootNode
     __ not rootNode:
-        return
+        r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -79,12 +79,12 @@ ___ minValueNode(bstNode
     current = bstNode
     while (current.leftChild is not None
         current = current.leftChild
-    return current
+    r_ current
 
 
 ___ deleteNode(rootNode, nodeValue
     __ rootNode is None:
-        return rootNode
+        r_ rootNode
     __ nodeValue < rootNode.data:
         rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
     elif nodeValue > rootNode.data:
@@ -93,23 +93,23 @@ ___ deleteNode(rootNode, nodeValue
         __ rootNode.leftChild is None:
             temp = rootNode.rightChild
             rootNode = None
-            return temp
+            r_ temp
         
         __ rootNode.rightChild is None:
             temp = rootNode.leftChild
             rootNode = None
-            return temp
+            r_ temp
         
         temp = minValueNode(rootNode.rightChild)
         rootNode.data = temp.data 
         rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
-    return rootNode
+    r_ rootNode
 
 ___ deleteBST(rootNode
     rootNode.data = None
     rootNode.leftChild = None
     rootNode.rightChild = None
-    return "The BST has been successfully deleted"
+    r_ "The BST has been successfully deleted"
 
 
 
