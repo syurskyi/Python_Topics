@@ -19,20 +19,20 @@
 #     in_order tree _1
 #     in_order subtree _2
 #
-#     str1 _ _1. - .re.. "[", "" .re.. "]" ""
-#     str2 _ _2. - .re.. "[", "" .re.. "]" ""
+#     str1 _ _1. -s .re.. "[", "" .re.. "]" ""
+#     str2 _ _2. -s .re.. "[", "" .re.. "]" ""
 #
-#     __ str1.f.. _2 __ -1
+#     __ _1.f.. _2 __ -1
 #         r_ F..
 #
 #     tree1 _ # empty list
 #     tree2 _ # empty list
 #
 #     pre_order ? _1)
-#     pre_order subtree _2
+#     pre_order s.. _2
 #
-#     str3 _ _1. - .re.. "[", "").re..("]", ""
-#     str4 _ _2. - .re.. "[", "").re..("]", ""
+#     str3 _ _1. -s .re.. "[", "").re.. "]", ""
+#     str4 _ _2. -s .re.. "[", "").re.. "]", ""
 #
 #     __ _3.f.. _4 __ -1
 #         r_ F..
@@ -41,7 +41,7 @@
 #
 # ___ in_order tree tree1
 #
-#     __ tree __ N..
+#     __ ? __ N..
 #         r_
 #
 #     ? t__.l.. _1
@@ -51,7 +51,7 @@
 #
 # ___ pre_order tree tree1
 #
-#     __ tree __ N..
+#     __ ? __ N..
 #         r_
 #
 #     _1.ap.. ?.d..

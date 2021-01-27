@@ -1,77 +1,77 @@
-#
-# c_ Node
-#     ___  -   data
-#         ? _ ?
-#         left _ N..
-#         right _ N..
-#
-#
-# ___ is_subtree tree subtree
-#
-#     __ subtree __ N..
-#         r_ T..
-#     __ tree __ N..
-#         r_ F..
-#
-#     tree1 _   # empty list
-#     tree2 _  # empty list
-#
-#     in_order tree _1
-#     in_order subtree _2
-#
-#     str1 _ _1. - .re.. "[", "" .re.. "]" ""
-#     str2 _ _2. - .re.. "[", "" .re.. "]" ""
-#
-#     __ str1.f.. _2 __ -1
-#         r_ F..
-#
-#     tree1 _ # empty list
-#     tree2 _ # empty list
-#
-#     pre_order ? _1)
-#     pre_order subtree _2
-#
-#     str3 _ _1. - .re.. "[", "").re..("]", ""
-#     str4 _ _2. - .re.. "[", "").re..("]", ""
-#
-#     __ _3.f.. _4 __ -1
-#         r_ F..
-#     r_ T..
-#
-#
-# ___ in_order tree tree1
-#
-#     __ tree __ N..
-#         r_
-#
-#     ? t__.l.. _1
-#     _1.ap.. t__.d..
-#     ? t__.r.. _1
-#
-#
-# ___ pre_order tree tree1
-#
-#     __ tree __ N..
-#         r_
-#
-#     _1.ap.. ?.d..
-#     ? ?.l.. _1
-#     ? ?.r.. _1
-#
-#
-# root1 _ ?(1)
-# ?.left _ ?(2)
-# ?.right _ ?(3)
-# ?.left.left _ ?(4)
-# ?.left.right _ ?(5)
-# ?.right.left _ ?(6)
-# ?.right.right _ ?(7)
-#
-# root2 _ ?(3)
-# ?.left _ ?(6)
-# ?.right _ ?(7)
-#
-#
-# is_subtree _ is_subtree(root1, root2)
-# print(is_subtree)
-#
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+def is_subtree(tree, subtree):
+
+    if subtree is None:
+        return True
+    if tree is None:
+        return False
+
+    tree1 = []   # empty list
+    tree2 = []     # empty list
+
+    in_order(tree, tree1)
+    in_order(subtree, tree2)
+
+    str1 = tree1.__str__().replace("[", "").replace("]", "")
+    str2 = tree2.__str__().replace("[", "").replace("]", "")
+
+    if str1.find(str2) == -1:
+        return False
+
+    tree1 = [] # empty list
+    tree2 = [] # empty list
+
+    pre_order(tree, tree1)
+    pre_order(subtree, tree2)
+
+    str3 = tree1.__str__().replace("[", "").replace("]", "")
+    str4 = tree2.__str__().replace("[", "").replace("]", "")
+
+    if str3.find(str4) == -1:
+        return False
+    return True
+
+
+def in_order(tree, tree1):
+
+    if tree is None:
+        return
+
+    in_order(tree.left, tree1)
+    tree1.append(tree.data)
+    in_order(tree.right, tree1)
+
+
+def pre_order(tree, tree1):
+
+    if tree is None:
+        return
+
+    tree1.append(tree.data)
+    pre_order(tree.left, tree1)
+    pre_order(tree.right, tree1)
+
+
+root1 = Node(1)
+root1.left = Node(2)
+root1.right = Node(3)
+root1.left.left = Node(4)
+root1.left.right = Node(5)
+root1.right.left = Node(6)
+root1.right.right = Node(7)
+
+root2 = Node(3)
+root2.left = Node(6)
+root2.right = Node(7)
+
+
+is_subtree = is_subtree(root1, root2)
+print(is_subtree)
+
