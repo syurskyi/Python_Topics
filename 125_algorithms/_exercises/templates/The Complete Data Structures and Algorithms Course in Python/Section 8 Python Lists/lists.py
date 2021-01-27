@@ -29,10 +29,10 @@ print(myList)
 #  Searching for an element in the List
 myList =  [10,20,30,40,50,60,70,80,90]
 
-___ searchinList(list, value
-    ___ i __ list:
+___ searchinList(li__, value
+    ___ i __ li__:
         __ i __ value:
-            r_ list.index(value)
+            r_ li__.index(value)
     r_ 'The value does not exist in the list'
 
 print(searchinList(myList, 100))
@@ -41,7 +41,7 @@ print(searchinList(myList, 100))
 #  List operations / functions
 total = 0 
 count = 0
-while (T..
+w__ (T..
     inp = input('Enter a number: ') 
     __ inp __ 'done': break
     value = float(inp)
@@ -53,8 +53,8 @@ print('Average:', average)
 
 
 
-numlist = list() 
-while (T..
+numlist = li__() 
+w__ (T..
     inp = input('Enter a number: ') 
     __ inp __ 'done': break
     value = float(inp)

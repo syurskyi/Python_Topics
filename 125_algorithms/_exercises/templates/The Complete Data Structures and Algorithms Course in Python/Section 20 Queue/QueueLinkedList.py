@@ -17,7 +17,7 @@ c_ LinkedList:
     
     ___ __iter__(self
         curNode = head
-        while curNode:
+        w__ curNode:
             yield curNode
             curNode = curNode.next
 
@@ -27,7 +27,7 @@ c_ Queue:
     
     ___ __str__(self
         values = [str(x) ___ x __ linkedList]
-        r_ ' '.join(values)
+        r_ ' '.j..(values)
     
     ___ enqueue  value
         newNode = Node(value)

@@ -5,7 +5,7 @@ from collections import defaultdict
 
 c_ Graph:
     ___  -   numberofVertices
-        graph = defaultdict(list)
+        graph = defaultdict(li__)
         numberofVertices = numberofVertices
     
     ___ addEdge  vertex, edge
@@ -25,7 +25,7 @@ c_ Graph:
         visited = []
         stack = []
 
-        ___ k __ list(graph
+        ___ k __ li__(graph
             __ k not __ visited:
                 topogologicalSortUtil(k, visited, stack)
         

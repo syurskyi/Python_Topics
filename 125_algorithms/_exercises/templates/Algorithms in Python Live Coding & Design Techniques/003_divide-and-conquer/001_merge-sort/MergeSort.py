@@ -23,7 +23,7 @@ ___ merge(arr, l, m, u
     j = 0
     k = l
 
-    while i < n1 and j < n2:
+    w__ i < n1 and j < n2:
         __ left[i] < right[j]:
             arr[k] = left[i]
             i += 1
@@ -32,12 +32,12 @@ ___ merge(arr, l, m, u
             j += 1
         k += 1
 
-    while i < n1:
+    w__ i < n1:
         arr[k] = left[i]
         i += 1
         k += 1
 
-    while j < n2:
+    w__ j < n2:
         arr[k] = right[j]
         j += 1
         k += 1

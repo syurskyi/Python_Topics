@@ -89,6 +89,6 @@ c_ QueensProblem:
             print('\n')
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     queens = QueensProblem(100)
     queens.solve_n_queens()

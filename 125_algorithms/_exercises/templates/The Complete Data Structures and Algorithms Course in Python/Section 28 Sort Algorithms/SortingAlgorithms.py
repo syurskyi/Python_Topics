@@ -24,7 +24,7 @@ ___ insertionSort(customList
     ___ i __ range(1, le_(customList)):
         key = customList[i]
         j = i-1
-        while j>=0 and key < customList[j]:
+        w__ j>=0 and key < customList[j]:
             customList[j+1] = customList[j]
             j -= 1
         customList[j+1] = key
@@ -68,7 +68,7 @@ ___ merge(customList, l, m, r
     i = 0 
     j = 0
     k = l
-    while i < n1 and j < n2:
+    w__ i < n1 and j < n2:
         __ L[i] <= R[j]:
             customList[k] = L[i]
             i += 1
@@ -76,12 +76,12 @@ ___ merge(customList, l, m, r
             customList[k] = R[j]
             j += 1
         k += 1
-    while i < n1:
+    w__ i < n1:
         customList[k] = L[i]
         i += 1
         k += 1
     
-    while j < n2:
+    w__ j < n2:
         customList[k] = R[j]
         j += 1
         k += 1

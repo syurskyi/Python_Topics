@@ -12,7 +12,7 @@ ___ nthToLast(ll, n
             r_ N..
         pointer2 = pointer2.next
 
-    while pointer2:
+    w__ pointer2:
         pointer1 = pointer1.next
         pointer2 = pointer2.next
     r_ pointer1

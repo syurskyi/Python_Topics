@@ -11,11 +11,11 @@ ___ partition(arr, lb, ub
     left = lb
     right = ub
 
-    while left < right:
-        while arr[left] <= pivot and left < (le_(arr)-1
+    w__ left < right:
+        w__ arr[left] <= pivot and left < (le_(arr)-1
             left += 1
 
-        while arr[right] > pivot and right > 0:
+        w__ arr[right] > pivot and right > 0:
             right -= 1
 
         __ left < right :

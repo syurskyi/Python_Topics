@@ -5,18 +5,18 @@
 
 c_ Stack(
   ___  - (self
-    list = []
+    li__ = []
   
   ___ __len__(self
-    r_ le_(list)
+    r_ le_(li__)
   
   ___ push  item
-    list.ap..(item)
+    li__.ap..(item)
   
   ___ pop(self
-    __ le_(list) __ 0:
+    __ le_(li__) __ 0:
       r_ N..
-    r_ list.pop()
+    r_ li__.pop()
 
 c_ QueueviaStack(
   ___  - (self
@@ -27,10 +27,10 @@ c_ QueueviaStack(
     inStack.push(item)
   
   ___ dequeue(self
-    while le_(inStack
+    w__ le_(inStack
       outStack.push(inStack.pop())
     result = outStack.pop()
-    while le_(outStack
+    w__ le_(outStack
       inStack.push(outStack.pop())
     r_ result
   

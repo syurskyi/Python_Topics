@@ -33,7 +33,7 @@ c_ KnapsackProblem:
                 w = w - w[n]
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     num_of_items = 4
     knapsack_capacity = 7

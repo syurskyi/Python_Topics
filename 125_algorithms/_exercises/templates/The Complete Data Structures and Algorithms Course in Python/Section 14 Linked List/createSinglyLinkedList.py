@@ -12,7 +12,7 @@ c_ SLinkedList:
         tail = N..
     ___ __iter__(self
         node = head
-        while node:
+        w__ node:
             yield node
             node = node.next
     # insert in Linked List
@@ -32,7 +32,7 @@ c_ SLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     tempNode = tempNode.next
                     index += 1
                 nextNode = tempNode.next
@@ -46,7 +46,7 @@ c_ SLinkedList:
             print("The Singly Linked List does not exist")
         ____
             node = head
-            while node __ not N..:
+            w__ node __ not N..:
                 print(node.value)
                 node = node.next
 
@@ -56,7 +56,7 @@ c_ SLinkedList:
             print("The Singly Linked List does not exist")
         ____
             node = head
-            while node __ not N..:
+            w__ node __ not N..:
                 __ node.value __ nodeValue:
                     r_ node.value
                 node = node.next
@@ -78,7 +78,7 @@ c_ SLinkedList:
                     tail = N..
                 ____
                     node = head
-                    while node __ not N..:
+                    w__ node __ not N..:
                         __ node.next __ tail:
                             break
                         node = node.next
@@ -87,7 +87,7 @@ c_ SLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location-1:
+                w__ index < location-1:
                     tempNode = tempNode.next
                     index += 1
                 nextNode = tempNode.next

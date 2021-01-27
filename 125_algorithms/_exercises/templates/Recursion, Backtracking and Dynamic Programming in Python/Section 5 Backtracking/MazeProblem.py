@@ -69,7 +69,7 @@ c_ MazeProblem:
             print('\n')
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     # 1: valid cells 0: walls or obstacles
     maze = [[1, 1, 1, 1, 1],

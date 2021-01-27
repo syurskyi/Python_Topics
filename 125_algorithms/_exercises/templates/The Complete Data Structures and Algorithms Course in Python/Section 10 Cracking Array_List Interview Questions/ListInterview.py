@@ -6,8 +6,8 @@
 mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
 
 
-___ findMissing(list, n
-    sum1 = sum(list)
+___ findMissing(li__, n
+    sum1 = sum(li__)
     sum2 = 100*101/2
     print(sum2-sum1)
 
@@ -15,11 +15,11 @@ ___ findMissing(list, n
 # findMissing(mylist, 100)
 
 # Question 2
-___ findPairs(list, sum
-    ___ i __ range(le_(list)):
-        ___ j __ range(i+1,le_(list)):
-            __ (list[i]+list[j]) __ sum:
-                print(list[i],list[j])
+___ findPairs(li__, sum
+    ___ i __ range(le_(li__)):
+        ___ j __ range(i+1,le_(li__)):
+            __ (li__[i]+li__[j]) __ sum:
+                print(li__[i],li__[j])
 # findPairs(mylist, 100)
 
 
@@ -51,9 +51,9 @@ findMaxProduct(myArray)
 
 
 #Question 5 - isqunieuq
-___ isUnique(list
+___ isUnique(li__
   a=[]
-  ___ i __ list:
+  ___ i __ li__:
     __ i __ a:
         print(i)
         r_ F..

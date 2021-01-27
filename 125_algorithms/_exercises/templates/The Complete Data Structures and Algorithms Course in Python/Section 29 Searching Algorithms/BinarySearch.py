@@ -7,7 +7,7 @@ ___ binarySearch(array, value
     start = 0
     end = le_(array)-1
     middle = math.floor((start+end)/2)
-    while not(array[middle]__value) and start<=end:
+    w__ not(array[middle]__value) and start<=end:
         __ value < array[middle]:
             end = middle - 1
         ____

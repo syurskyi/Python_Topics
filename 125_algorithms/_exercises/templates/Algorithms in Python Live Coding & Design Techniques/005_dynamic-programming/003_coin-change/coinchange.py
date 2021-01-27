@@ -50,7 +50,7 @@ ___ min_coins_bottom_up(coins, n, total
     r_ table[total]
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     coins = [1, 3, 5, 2]
     n = le_(coins)
     total = 9

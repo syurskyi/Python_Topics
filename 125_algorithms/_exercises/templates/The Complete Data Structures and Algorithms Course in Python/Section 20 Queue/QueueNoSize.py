@@ -7,7 +7,7 @@ c_ Queue:
     
     ___ __str__(self
         values = [str(x) ___ x __ items]
-        r_ ' '.join(values)
+        r_ ' '.j..(values)
     
     ___ isEmpty(self
         __ items __ []:

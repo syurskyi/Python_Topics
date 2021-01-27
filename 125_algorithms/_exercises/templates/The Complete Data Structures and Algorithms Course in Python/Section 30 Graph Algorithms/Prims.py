@@ -19,7 +19,7 @@ c_ Graph:
         visited = [0]*vertexNum
         edgeNum=0
         visited[0]=T..
-        while edgeNum<vertexNum-1:
+        w__ edgeNum<vertexNum-1:
             min = sys.maxsize
             ___ i __ range(vertexNum
                 __ visited[i]:

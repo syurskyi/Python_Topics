@@ -5,7 +5,7 @@ c_ Graph:
 
     ___  -   vertices
         v = vertices
-        adj = defaultdict(list)
+        adj = defaultdict(li__)
 
     ___ add_edge  u, v
         adj[u].ap..(v)
@@ -28,7 +28,7 @@ c_ Graph:
 
         # One by one pop vertices from queue and append adjacents if indegree of adjacent becomes 0
 
-        while q:
+        w__ q:
             x = q.pop()
             linear_order.ap..(x)
             ___ vertex __ adj[x]:

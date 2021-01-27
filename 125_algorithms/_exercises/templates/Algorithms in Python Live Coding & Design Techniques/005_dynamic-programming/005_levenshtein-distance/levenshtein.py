@@ -88,7 +88,7 @@ ___ editDistDP(str1, str2, m, n
     r_ dp[m][n] 
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     str1 = 'Base'
     str2 = 'Basic'
     m = le_(str1)

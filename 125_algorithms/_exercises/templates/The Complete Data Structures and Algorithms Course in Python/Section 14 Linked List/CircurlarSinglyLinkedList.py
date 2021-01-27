@@ -13,7 +13,7 @@ c_ CircularSinglyLinkedList:
 
     ___ __iter__(self
         node = head
-        while node:
+        w__ node:
             yield node
             node = node.next
             __ node __ tail.next:
@@ -46,7 +46,7 @@ c_ CircularSinglyLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     tempNode = tempNode.next
                     index += 1
                 nextNode = tempNode.next
@@ -60,7 +60,7 @@ c_ CircularSinglyLinkedList:
             print("There is not any element for traversal")
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.next
                 __ tempNode __ tail.next:
@@ -72,7 +72,7 @@ c_ CircularSinglyLinkedList:
             r_ "There is not any node in this CSLL"
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode = tempNode.next
@@ -99,7 +99,7 @@ c_ CircularSinglyLinkedList:
                     tail = N..
                 ____
                     node = head
-                    while node __ not N..:
+                    w__ node __ not N..:
                         __ node.next __ tail:
                             break
                         node = node.next
@@ -108,7 +108,7 @@ c_ CircularSinglyLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     tempNode = tempNode.next
                     index += 1
                 nextNode = tempNode.next

@@ -11,13 +11,13 @@ c_ Graph:
     ___ bfs  start, end
         queue = []
         queue.ap..([start])
-        while queue:
+        w__ queue:
             path = queue.pop(0)
             node = path[-1]
             __ node __ end:
                 r_ path
             ___ adjacent __ gdict.get(node, []
-                new_path = list(path)
+                new_path = li__(path)
                 new_path.ap..(adjacent)
                 queue.ap..(new_path)
 

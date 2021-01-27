@@ -12,7 +12,7 @@ ___ removeDups(ll
     ____
         currentNode = ll.head
         visited = set([currentNode.value])
-        while currentNode.next:
+        w__ currentNode.next:
             __ currentNode.next.value __ visited:
                 currentNode.next = currentNode.next.next
             ____
@@ -25,9 +25,9 @@ ___ removeDups1(ll
         r_
     
     currentNode = ll.head
-    while currentNode:
+    w__ currentNode:
         runner = currentNode
-        while runner.next:
+        w__ runner.next:
             __ runner.next.value __ currentNode.value:
                 runner.next = runner.next.next
             ____

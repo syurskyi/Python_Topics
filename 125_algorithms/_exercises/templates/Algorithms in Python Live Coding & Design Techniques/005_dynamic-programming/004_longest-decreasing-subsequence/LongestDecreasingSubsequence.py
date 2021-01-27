@@ -42,7 +42,7 @@ ___ get_lds_bottom_up(nums
     r_ max_so_far
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     nums = [20, 8, 12, 16, 10, 9, 18, 7]
     print(get_lds(nums, 0, sys.maxsize))
 

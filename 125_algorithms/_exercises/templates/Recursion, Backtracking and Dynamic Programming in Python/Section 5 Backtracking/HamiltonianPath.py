@@ -52,7 +52,7 @@ c_ HamiltonianPath:
             print(v)
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     m = [[0, 1, 0, 0, 0, 1],
          [1, 0, 1, 0, 0, 0],

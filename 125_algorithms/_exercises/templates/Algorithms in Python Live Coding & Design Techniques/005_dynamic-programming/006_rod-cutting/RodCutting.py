@@ -39,7 +39,7 @@ ___ rod_cut_bottomup(price, n
     r_ revenues[n]
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     price = [4, 5, 8, 9]
     size = le_(price)
     print('max revenue', rod_cut(price, size))

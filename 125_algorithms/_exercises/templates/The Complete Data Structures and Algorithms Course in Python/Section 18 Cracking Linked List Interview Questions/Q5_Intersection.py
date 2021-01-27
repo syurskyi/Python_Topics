@@ -22,7 +22,7 @@ ___ intersection(llA, llB
     ___ i __ range(diff
         longerNode = longerNode.next
     
-    while shorterNode __ not longerNode:
+    w__ shorterNode __ not longerNode:
         shorterNode = shorterNode.next
         longerNode = longerNode.next
     

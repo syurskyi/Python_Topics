@@ -54,7 +54,7 @@ print(my_array.index(21))
 
 # 10. Reverse a python array using reverse() method
 print("Step 10")
-my_array.reverse()
+my_array.re..
 print(my_array)
 
 # 11. Get array buffer information through buffer_info() method

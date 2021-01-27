@@ -58,7 +58,7 @@ print(powerOfTwo(3))
 ___ powerOfTwoIt(n
     i = 0
     power = 1
-    while i < n:
+    w__ i < n:
         power = power * 2
         i = i + 1
     r_ power

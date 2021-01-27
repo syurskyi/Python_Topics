@@ -23,10 +23,10 @@ ___ find_median_util(arr, k, low, high
 ___ partition(arr, low, high
     pivot = get_pivot_val(arr, low, high)
 
-    while low < high:
-        while arr[low] < pivot:
+    w__ low < high:
+        w__ arr[low] < pivot:
             low += 1
-        while arr[high] > pivot:
+        w__ arr[high] > pivot:
             high -= 1
 
         __ arr[low] __ arr[high]:
@@ -52,7 +52,7 @@ ___ get_pivot_val(arr, low, high
 
     median_index = 0
 
-    while high >= low:
+    w__ high >= low:
 
         temp = [0]* min(5, (high - low + 1))
 

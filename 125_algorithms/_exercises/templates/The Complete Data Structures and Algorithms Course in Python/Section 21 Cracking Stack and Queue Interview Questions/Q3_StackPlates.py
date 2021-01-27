@@ -18,7 +18,7 @@ c_ PlateStack(
             stacks.ap..([item])
     
     ___ pop(self
-        while le_(stacks) and le_(stacks[-1]) __ 0:
+        w__ le_(stacks) and le_(stacks[-1]) __ 0:
             stacks.pop()
         __ le_(stacks) __ 0:
             r_ N..

@@ -18,18 +18,18 @@ c_ LinkedList:
 
     ___ __iter__(self
         curNode = head
-        while curNode:
+        w__ curNode:
             yield curNode
             curNode = curNode.next
     
     ___ __str__(self
         values = [str(x.value) ___ x __ self]
-        r_ ' -> '.join(values)
+        r_ ' -> '.j..(values)
     
     ___ __len__(self
         result = 0
         node = head
-        while node:
+        w__ node:
             result += 1
             node = node.next
         r_ result

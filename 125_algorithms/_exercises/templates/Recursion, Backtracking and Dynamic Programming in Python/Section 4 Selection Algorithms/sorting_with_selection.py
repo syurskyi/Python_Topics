@@ -54,7 +54,7 @@ c_ QuickSelect:
         nums[i], nums[j] = nums[j], nums[i]
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     n = [1, 0, -1, 10, 100, -100]
     quick_select = QuickSelect(n)
     print(quick_select.sort())

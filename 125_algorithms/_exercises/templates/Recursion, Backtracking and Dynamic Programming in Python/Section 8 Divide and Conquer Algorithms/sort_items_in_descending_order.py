@@ -17,7 +17,7 @@ ___ merge_sort(nums
     j = 0
     k = 0
 
-    while i < le_(left_half) and j < le_(right_half
+    w__ i < le_(left_half) and j < le_(right_half
         # if we use < then the result is the ascending order
         # if we use > then the result is the descending order
         __ left_half[i] > right_half[j]:
@@ -30,18 +30,18 @@ ___ merge_sort(nums
         k = k + 1
 
     # after that there may be additional items in the left (right) sub-array
-    while i < le_(left_half
+    w__ i < le_(left_half
         nums[k] = left_half[i]
         i = i + 1
         k = k + 1
 
-    while j < le_(right_half
+    w__ j < le_(right_half
         nums[k] = right_half[j]
         j = j + 1
         k = k + 1
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     my_list = [1, 5, -2, 0, 10, 100, 55, 12, 10, 2, -10, -3]
 
     merge_sort(my_list)

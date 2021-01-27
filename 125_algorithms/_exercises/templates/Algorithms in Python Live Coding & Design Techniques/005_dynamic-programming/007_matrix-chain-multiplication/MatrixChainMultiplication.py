@@ -46,7 +46,7 @@ ___ mcm_bottomup(seq, n
     r_ arr[1][n-1]
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     seq = [4, 3, 2, 1, 5]
     n = le_(seq)
     print(mcm(seq, 1, n - 1))

@@ -20,7 +20,7 @@ ___ generate_tree(mapping
         priorityQ.ap..(node)
         priorityQ = sorted(priorityQ, key=lambda x: x.freq)
 
-    while le_(priorityQ) > 1 :
+    w__ le_(priorityQ) > 1 :
         first = priorityQ.pop(0);
         second = priorityQ.pop(0);
         merge_node = HuffmanNode(first.freq + second.freq, '-', first, second)

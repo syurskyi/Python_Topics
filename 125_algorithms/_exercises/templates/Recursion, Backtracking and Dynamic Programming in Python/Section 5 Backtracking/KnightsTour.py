@@ -70,7 +70,7 @@ c_ KnightsTour:
             print('\n')
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     # for small values backtracking is fast
     tour = KnightsTour(8)

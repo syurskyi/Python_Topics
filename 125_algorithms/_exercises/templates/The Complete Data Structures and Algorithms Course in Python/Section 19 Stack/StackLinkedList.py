@@ -12,7 +12,7 @@ c_ LinkedList:
     
     ___ __iter__(self
         curNode = head
-        while curNode:
+        w__ curNode:
             yield curNode
             curNode = curNode.next
 
@@ -22,7 +22,7 @@ c_ Stack:
     
     ___ __str__(self
         values = [str(x.value) ___ x __ LinkedList]
-        r_ '\n'.join(values)
+        r_ '\n'.j..(values)
     
     ___ isEmpty(self
         __ LinkedList.head __ N..:

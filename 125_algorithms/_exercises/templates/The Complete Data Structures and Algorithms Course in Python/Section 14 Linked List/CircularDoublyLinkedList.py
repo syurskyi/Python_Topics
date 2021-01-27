@@ -15,7 +15,7 @@ c_ CircularDoublyLinkedList:
     
     ___ __iter__(self
         node = head
-        while node:
+        w__ node:
             yield node
             node = node.next
             __ node __ tail.next:
@@ -52,7 +52,7 @@ c_ CircularDoublyLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     tempNode = tempNode.next
                     index += 1
                 newNode.next = tempNode.next
@@ -67,7 +67,7 @@ c_ CircularDoublyLinkedList:
             print("There is not any node for traversal")
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 print(tempNode.value)
                 __ tempNode __ tail:
                     break
@@ -79,7 +79,7 @@ c_ CircularDoublyLinkedList:
             print("There is not any node for reverse traversal")
         ____
             tempNode = tail
-            while tempNode:
+            w__ tempNode:
                 print(tempNode.value)
                 __ tempNode __ head:
                     break
@@ -91,7 +91,7 @@ c_ CircularDoublyLinkedList:
             r_ "There is not any node in CDLL"
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 __ tempNode __ tail:
@@ -126,7 +126,7 @@ c_ CircularDoublyLinkedList:
             ____
                 curNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     curNode = curNode.next
                     index += 1
                 curNode.next = curNode.next.next
@@ -140,7 +140,7 @@ c_ CircularDoublyLinkedList:
         ____
             tail.next = N..
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 tempNode.prev = N..
                 tempNode = tempNode.next
             head = N..

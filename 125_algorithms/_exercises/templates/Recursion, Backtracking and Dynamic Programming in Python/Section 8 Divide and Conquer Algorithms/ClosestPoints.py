@@ -39,7 +39,7 @@ ___ get_strip_delta(strip_points, delta
         j = i + 1
         # a geometric packing argument shows that this loop iterates at most 7 times
         # THIS IS WHY WE HAVE SORTED THE POINTS BASED ON Y COORDINATE
-        while j < n and (strip_points[j].y - strip_points[i].y) < min_distance:
+        w__ j < n and (strip_points[j].y - strip_points[i].y) < min_distance:
             min_distance = distance(strip_points[j], strip_points[i])
             j = j + 1
 
@@ -79,10 +79,10 @@ ___ run(list1, list2
     r_ closest_pairs_algorithm(list1, list2, le_(list1))
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
     points = [Point(1, 1), Point(4, 2), Point(10, 10), Point(1, 2), Point(5, 3)]
 
-    l1 = list(points)
-    l2 = list(points)
+    l1 = li__(points)
+    l2 = li__(points)
 
     print(run(l1, l2))

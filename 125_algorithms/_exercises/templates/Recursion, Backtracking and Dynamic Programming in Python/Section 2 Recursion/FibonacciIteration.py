@@ -4,7 +4,7 @@ ___ fibonacci_iteration(n
 
     a, b = 0, 1
 
-    while a < n:
+    w__ a < n:
         print(a)
         a, b = b, a + b
 

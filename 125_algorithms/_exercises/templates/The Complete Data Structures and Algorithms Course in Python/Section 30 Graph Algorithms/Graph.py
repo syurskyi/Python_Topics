@@ -13,7 +13,7 @@ c_ Graph:
     ___ bfs  vertex
         visited = [vertex]
         queue = [vertex]
-        while queue:
+        w__ queue:
             deVertex = queue.pop(0)
             print(deVertex)
             ___ adjacentVertex __ gdict[deVertex]:
@@ -24,7 +24,7 @@ c_ Graph:
     ___ dfs  vertex
         visited = [vertex]
         stack = [vertex]
-        while stack:
+        w__ stack:
             popVertex = stack.pop()
             print(popVertex)
             ___ adjacentVertex __ gdict[popVertex]:

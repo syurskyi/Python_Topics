@@ -4,22 +4,22 @@
     
 c_ Stack:
     ___  - (self
-        list = []
+        li__ = []
     
     ___ __str__(self
-        values = list.reverse()
-        values = [str(x) ___ x __ list]
-        r_ '\n'.join(values)
+        values = li__.re..
+        values = [str(x) ___ x __ li__]
+        r_ '\n'.j..(values)
     
     # isEmpty
     ___ isEmpty(self
-        __ list __ []:
+        __ li__ __ []:
             r_ T..
         ____
             r_ F..
     # push
     ___ push  value
-        list.ap..(value)
+        li__.ap..(value)
         r_ "The element has been successfully inserted"
 
     # pop
@@ -27,18 +27,18 @@ c_ Stack:
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ list.pop()
+            r_ li__.pop()
     
     # peek
     ___ peek(self
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ list[le_(list)-1]
+            r_ li__[le_(li__)-1]
     
     # delete
     ___ delete(self
-        list = N..
+        li__ = N..
 
 
 

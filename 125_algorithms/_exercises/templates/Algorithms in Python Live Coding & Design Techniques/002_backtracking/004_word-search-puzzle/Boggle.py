@@ -5,7 +5,7 @@ n = 4
 
 ___ find_words(boggle, visited, i, j, word
     visited[i][j] = 1
-    word = ''.join([word, boggle[i][j]])
+    word = ''.j..([word, boggle[i][j]])
 
     __ word __ my_dict:
         print(word)

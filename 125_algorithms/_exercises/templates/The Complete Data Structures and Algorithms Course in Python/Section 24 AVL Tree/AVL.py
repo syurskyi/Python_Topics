@@ -37,7 +37,7 @@ ___ levelOrderTraversal(rootNode
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
-        while not(customQueue.isEmpty()):
+        w__ not(customQueue.isEmpty()):
             root = customQueue.dequeue()
             print(root.value.data)
             __ root.value.leftChild __ not N..:

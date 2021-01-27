@@ -10,7 +10,7 @@ ___ partition(ll, x
     curNode = ll.head
     ll.tail = ll.head
 
-    while curNode:
+    w__ curNode:
         nextNode = curNode.next
         curNode.next = N..
         __ curNode.value < x:

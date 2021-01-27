@@ -42,7 +42,7 @@ ___ isOdd(num
 ___ flatten(arr
     resultArr = []
     ___ custItem __ arr:
-        __ type(custItem) __ list:
+        __ type(custItem) __ li__:
             resultArr.extend(flatten(custItem))
         ____
             resultArr.ap..(custItem)

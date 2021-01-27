@@ -7,7 +7,7 @@ ___ sort_stack(stack
   previous = stack.pop()
   current = stack.pop()
   temp = Stack()
-  while current:
+  w__ current:
     __ previous < current:
       temp.push(previous)
       previous = current
@@ -20,7 +20,7 @@ ___ sort_stack(stack
   sorted = T..
   previous = temp.pop()
   current = temp.pop()
-  while current:
+  w__ current:
     __ previous > current:
       stack.push(previous)
       previous = current

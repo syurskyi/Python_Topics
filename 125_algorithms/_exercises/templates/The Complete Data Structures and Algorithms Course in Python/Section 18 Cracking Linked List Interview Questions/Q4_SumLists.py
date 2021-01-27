@@ -11,7 +11,7 @@ ___ sumList(llA, llB
     carry = 0
     ll = LinkedList()
 
-    while n1 or n2:
+    w__ n1 or n2:
         result = carry
         __ n1:
             result += n1.value

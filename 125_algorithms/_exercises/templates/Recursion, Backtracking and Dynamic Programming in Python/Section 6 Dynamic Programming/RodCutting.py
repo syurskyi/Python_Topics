@@ -23,7 +23,7 @@ c_ RodCutting:
         col_index = n
         row_index = le_(p)-1
 
-        while col_index > 0 or row_index > 0:
+        w__ col_index > 0 or row_index > 0:
             # we have to compare the items right above each other
             # if they are the same values then the given row (piece) is not in the solution
             __ S[row_index][col_index] __ S[row_index - 1][col_index]:
@@ -33,7 +33,7 @@ c_ RodCutting:
                 col_index = col_index - row_index
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     problem = RodCutting(5, [0, 2, 5, 7, 3, 9])
     problem.solve()

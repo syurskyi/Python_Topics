@@ -25,7 +25,7 @@ c_ Graph:
         i, e = 0, 0
         ds = dst.DisjointSet(nodes)
         graph = sorted(graph, key=lambda item: item[2])
-        while e < V - 1:
+        w__ e < V - 1:
             s, d, w = graph[i]
             i += 1
             x = ds.find(s)

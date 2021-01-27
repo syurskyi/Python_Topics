@@ -36,7 +36,7 @@ c_ SubsetSumProblem:
         col_index = m
         row_index = le_(nums)
 
-        while col_index > 0 or row_index > 0:
+        w__ col_index > 0 or row_index > 0:
             __ S[row_index][col_index] __ S[row_index - 1][col_index]:
                 row_index = row_index - 1
             ____
@@ -45,7 +45,7 @@ c_ SubsetSumProblem:
                 row_index = row_index - 1
 
 
-__ __name__ __ '__main__':
+__ ___ __ '__main__':
 
     M = 11
     n = [1, 2, 5, 3]

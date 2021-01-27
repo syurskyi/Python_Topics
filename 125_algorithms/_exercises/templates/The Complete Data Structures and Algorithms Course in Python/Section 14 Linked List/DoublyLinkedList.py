@@ -15,7 +15,7 @@ c_ DoublyLinkedList:
     
     ___ __iter__(self
         node = head
-        while node:
+        w__ node:
             yield node
             node = node.next
     
@@ -49,7 +49,7 @@ c_ DoublyLinkedList:
             ____
                 tempNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     tempNode = tempNode.next
                     index += 1
                 newNode.next = tempNode.next
@@ -63,7 +63,7 @@ c_ DoublyLinkedList:
             print("There is not any element to traverse")
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.next
     
@@ -73,7 +73,7 @@ c_ DoublyLinkedList:
             print("There is not any element to traverse")
         ____
             tempNode = tail
-            while tempNode:
+            w__ tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.prev
 
@@ -83,7 +83,7 @@ c_ DoublyLinkedList:
             r_ "There is not any element in the list"
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode = tempNode.next
@@ -111,7 +111,7 @@ c_ DoublyLinkedList:
             ____
                 curNode = head
                 index = 0
-                while index < location - 1:
+                w__ index < location - 1:
                     curNode = curNode.next
                     index += 1
                 curNode.next = curNode.next.next
@@ -124,7 +124,7 @@ c_ DoublyLinkedList:
             print("There is not any node in DLL")
         ____
             tempNode = head
-            while tempNode:
+            w__ tempNode:
                 tempNode.prev = N..
                 tempNode = tempNode.next
             head = N..

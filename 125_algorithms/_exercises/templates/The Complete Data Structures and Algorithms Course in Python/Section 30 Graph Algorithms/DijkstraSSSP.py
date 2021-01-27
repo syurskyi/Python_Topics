@@ -6,7 +6,7 @@ from collections import defaultdict
 c_ Graph:
     ___  - (self
         nodes = set()
-        edges = defaultdict(list)
+        edges = defaultdict(li__)
         distances = {}
     
     ___ addNode value
@@ -19,11 +19,11 @@ c_ Graph:
 
 ___ dijkstra(graph, initial
     visited = {initial : 0}
-    path = defaultdict(list)
+    path = defaultdict(li__)
 
     nodes = set(graph.nodes)
 
-    while nodes:
+    w__ nodes:
         minNode = N..
         ___ node __ nodes:
             __ node __ visited:
