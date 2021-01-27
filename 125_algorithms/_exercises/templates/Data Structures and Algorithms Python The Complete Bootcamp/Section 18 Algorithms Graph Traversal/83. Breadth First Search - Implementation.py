@@ -1,14 +1,14 @@
 class Node():
 
-    ___ __init__(self, value):
-        self.value = value
-        self.adjacentlist = []
-        self.visited = False
+    ___  -   value):
+        value = value
+        adjacentlist = []
+        visited = False
 
 
 class Graph():
 
-    ___ BFS(self, node):
+    ___ BFS  node):
 
         queue = []
         queue.append(node)
@@ -21,7 +21,7 @@ class Graph():
             traversal.append(actualNode.value)
 
             ___ element __ actualNode.adjacentlist:
-                __ element.visited is False:
+                __ element.visited __ False:
                     queue.append(element)
                     element.visited = True
 

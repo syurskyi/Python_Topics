@@ -1,15 +1,15 @@
 
-___ binary_search(container, item, left, right
+___ binary_search container, item, left, right
 
     # first base case - search misses
-    __ right < left:
+    __ r__ < l__
         r_ -1
 
     # generate the index of the middle item
-    middle_index = (left + right) // 2
+    middle_index _ l__ + r__ // 2
 
     # we have found the item
-    __ container[middle_index] __ item:
+    __ container[middle_index] __ i__
         r_ middle_index
 
     # have to check whether the middle_item is smaller or greater

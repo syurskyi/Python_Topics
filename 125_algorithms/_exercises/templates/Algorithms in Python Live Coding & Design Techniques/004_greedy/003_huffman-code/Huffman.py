@@ -31,7 +31,7 @@ ___ generate_tree(mapping
 
 
 ___ set_binary_code(node, st.
-    __ not node __ N..:
+    __ no. node __ N..:
         __ node.left __ N.. a__ node.right __ N..:
             charBinaryMapping[node.data] = st.
 
@@ -47,7 +47,7 @@ ___ set_binary_code(node, st.
 ___ encode(st.
     mapping = {}
     ___ c __ st.:
-        __ not c __ mapping:
+        __ no. c __ mapping:
             mapping[c] = 1
         ____
             mapping[c] += 1

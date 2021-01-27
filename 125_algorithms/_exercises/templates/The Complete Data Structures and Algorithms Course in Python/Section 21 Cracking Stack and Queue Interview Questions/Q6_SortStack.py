@@ -44,7 +44,7 @@ c_ Stack(
     top = current(item, top)
   
   ___ pop(self
-    __ not top:
+    __ no. top:
       r_ N..
     item = top
     top = top.next

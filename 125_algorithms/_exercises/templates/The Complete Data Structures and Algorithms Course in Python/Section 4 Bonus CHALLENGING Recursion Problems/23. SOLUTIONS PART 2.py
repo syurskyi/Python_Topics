@@ -24,7 +24,7 @@ ___ isPalindrome(strng
 ___ someRecursive(arr, cb
     __ le_(arr) __ 0:
         r_ F..
-    __ not (cb(arr[0])):
+    __ no. (cb(arr[0])):
         r_ someRecursive(arr[1:], cb)
     r_ T..
 

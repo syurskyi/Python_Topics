@@ -15,7 +15,7 @@ c_ Graph:
         visited.ap..(v)
 
         ___ i __ graph[v]:
-            __ i not __ visited:
+            __ i no. __ visited:
                 topogologicalSortUtil(i, visited, stack)
         
         stack.insert(0, v)
@@ -26,7 +26,7 @@ c_ Graph:
         stack = []
 
         ___ k __ li__(graph
-            __ k not __ visited:
+            __ k no. __ visited:
                 topogologicalSortUtil(k, visited, stack)
         
         print(stack)

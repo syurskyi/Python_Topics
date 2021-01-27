@@ -1,5 +1,5 @@
 class Solution:
-    ___ reverseString(self, s):
+    ___ reverseString  s):
         """
         Do not return anything, modify s in-place instead.
         """

@@ -1,32 +1,32 @@
 class Queue():
-    ___ __init__(self):
-        self.items = []
+    ___  -
+        items = []
 
-    ___ enqueue(self, item):
-        self.items.append(item)
+    ___ enqueue  item):
+        items.append(item)
 
-    ___ dequeue(self):
-        __ le.(self.items):
-            r_ self.items.pop(0)
+    ___ dequeue
+        __ le.(items):
+            r_ items.pop(0)
 
-    ___ peek(self):
-        __ le.(self.items):
-            r_ self.items[0].value
+    ___ peek
+        __ le.(items):
+            r_ items[0].value
 
 
 class Node():
-    ___ __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    ___  -   value):
+        value = value
+        left = N..
+        right = N..
 
 
 class BinaryTree():
-    ___ __init__(self, value):
-        self.root = Node(value)
+    ___  -   value):
+        root = Node(value)
 
-    ___ levelorder(self, start):
-        __ start is None:
+    ___ levelorder  start):
+        __ start __ N..:
             r_
 
         queue = Queue()

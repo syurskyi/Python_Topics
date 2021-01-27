@@ -13,7 +13,7 @@ ___ fibonacci_recursion(n
 # top-down approach
 ___ fibonacci_memoization(n, table
 
-    __ n not __ table:
+    __ n no. __ table:
         table[n] = fibonacci_memoization(n-1, table) + fibonacci_memoization(n-2, table)
 
     # O(1) running time

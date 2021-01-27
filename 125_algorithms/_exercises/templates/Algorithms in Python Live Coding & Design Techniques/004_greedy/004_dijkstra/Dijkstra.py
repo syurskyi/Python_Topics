@@ -13,7 +13,7 @@ ___ dijkstra(adjacency_matrix
         visited[min_vertex] = T..
 
         ___ j __ ra__(v
-            __ adjacency_matrix[min_vertex][j] != 0 a__ not visited[j] :
+            __ adjacency_matrix[min_vertex][j] != 0 a__ no. visited[j] :
                     new_dist = distance[min_vertex] + adjacency_matrix[min_vertex][j]
                     __ new_dist < distance[j]:
                         distance[j] = new_dist
@@ -26,7 +26,7 @@ ___ find_min_vertex(distance, visited
 
     min_vertex = -1
     ___ i __ ra__(le_(distance)):
-        __ (min_vertex __ -1 or distance[min_vertex] > distance[i]) a__ not visited[i]:
+        __ (min_vertex __ -1 or distance[min_vertex] > distance[i]) a__ no. visited[i]:
             min_vertex = i
     r_ min_vertex
 

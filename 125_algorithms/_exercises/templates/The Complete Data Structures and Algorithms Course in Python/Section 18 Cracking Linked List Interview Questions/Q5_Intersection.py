@@ -6,7 +6,7 @@
 from LinkedList import LinkedList, Node
 
 ___ intersection(llA, llB
-    __ llA.tail __ not llB.tail:
+    __ llA.tail __ no. llB.tail:
         r_ F..
     
     lenA = le_(llA)
@@ -22,7 +22,7 @@ ___ intersection(llA, llB
     ___ i __ ra__(diff
         longerNode = longerNode.next
     
-    w__ shorterNode __ not longerNode:
+    w__ shorterNode __ no. longerNode:
         shorterNode = shorterNode.next
         longerNode = longerNode.next
     

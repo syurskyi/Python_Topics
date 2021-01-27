@@ -20,7 +20,7 @@ c_ Stack(
         minNode = N..
     
     ___ min(self
-        __ not minNode:
+        __ no. minNode:
             r_ N..
         r_ minNode.value
     
@@ -32,7 +32,7 @@ c_ Stack(
         top = Node(value=item, next=top)
     
     ___ pop(self
-        __ not top:
+        __ no. top:
             r_ N..
         minNode = minNode.next
         item = top.value

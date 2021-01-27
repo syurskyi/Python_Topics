@@ -46,7 +46,7 @@ c_ SLinkedList:
             print("The Singly Linked List does not exist")
         ____
             node = head
-            w__ node __ not N..:
+            w__ node __ no. N..:
                 print(node.value)
                 node = node.next
 
@@ -56,7 +56,7 @@ c_ SLinkedList:
             print("The Singly Linked List does not exist")
         ____
             node = head
-            w__ node __ not N..:
+            w__ node __ no. N..:
                 __ node.value __ nodeValue:
                     r_ node.value
                 node = node.next
@@ -78,7 +78,7 @@ c_ SLinkedList:
                     tail = N..
                 ____
                     node = head
-                    w__ node __ not N..:
+                    w__ node __ no. N..:
                         __ node.next __ tail:
                             break
                         node = node.next

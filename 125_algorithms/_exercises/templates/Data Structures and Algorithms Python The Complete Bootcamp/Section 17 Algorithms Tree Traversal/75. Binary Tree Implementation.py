@@ -1,13 +1,13 @@
 class Node():
-    ___ __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    ___  -   value):
+        value = value
+        left = N..
+        right = N..
 
 
 class BinaryTree():
-    ___ __init__(self, value):
-        self.root = Node(value)
+    ___  -   value):
+        root = Node(value)
 
 
 tree = BinaryTree(3)

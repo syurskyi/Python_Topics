@@ -1,28 +1,28 @@
 class MaxStack:
 
-    ___ __init__(self):
-        self.stack = []
-        self.max = []
+    ___  -
+        stack = []
+        max = []
 
-    ___ push(self, x):
-        self.stack.append(x)
+    ___ push  x):
+        stack.append(x)
 
-        __ self.max:
-            __ x >= self.max[-1]:
-                self.max.append(x)
+        __ max:
+            __ x >= max[-1]:
+                max.append(x)
         ____
-            self.max.append(x)
+            max.append(x)
 
-    ___ pop(self):
-        __ self.stack[-1] __ self.max[-1]:
-            self.max.pop()
-        self.stack.pop()
+    ___ pop
+        __ stack[-1] __ max[-1]:
+            max.pop()
+        stack.pop()
 
-    ___ top(self):
-        r_ self.stack[-1]
+    ___ top
+        r_ stack[-1]
 
-    ___ getMax(self):
-        r_ self.max[-1]
+    ___ getMax
+        r_ max[-1]
 
 
 ## Example Execution ##

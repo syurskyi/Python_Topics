@@ -25,7 +25,7 @@ ___ first_fit_decreasing_algorithm(capacities, bin_max_capacity
 
         # there is no space for the item in the bins already created
         # so create a new bin for the item
-        __ not bin_found:
+        __ no. bin_found:
             solution_bins.ap..([item])
 
     r_ solution_bins

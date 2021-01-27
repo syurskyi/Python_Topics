@@ -1,22 +1,22 @@
 class ListNode:
-    ___ __init__(self, val):
-        self.val = val
-        self.prev = None
-        self.next = None
+    ___  -   val):
+        val = val
+        prev = N..
+        next = N..
 
 
 class MyLinkedList:
 
-    ___ __init__(self):
-        self.head = None
-        self.tail = None
-        self.size = 0
+    ___  -
+        head = N..
+        tail = N..
+        size = 0
 
-    ___ get(self, index):
-        __ index < 0 or index >= self.size:
+    ___ get  index):
+        __ index < 0 or index >= size:
             r_ -1
 
-        cur = self.head
+        cur = head
 
         w__ index != 0:
             cur = cur.next
@@ -24,41 +24,41 @@ class MyLinkedList:
 
         r_ cur.val
 
-    ___ addAtHead(self, val):
+    ___ addAtHead  val):
         new_node = ListNode(val)
 
-        __ self.head is None:
-            self.head = new_node
-            self.tail = new_node
+        __ head __ N..:
+            head = new_node
+            tail = new_node
         ____
-            new_node.next = self.head
-            self.head.prev = new_node
-            self.head = new_node
+            new_node.next = head
+            head.prev = new_node
+            head = new_node
 
-        self.size += 1
+        size += 1
 
-    ___ addAtTail(self, val):
+    ___ addAtTail  val):
         new_node = ListNode(val)
 
-        __ self.head is None:
-            self.head = new_node
-            self.tail = new_node
+        __ head __ N..:
+            head = new_node
+            tail = new_node
         ____
-            new_node.prev = self.tail
-            self.tail.next = new_node
-            self.tail = new_node
+            new_node.prev = tail
+            tail.next = new_node
+            tail = new_node
 
-        self.size += 1
+        size += 1
 
-    ___ addAtIndex(self, index, val):
-        __ index < 0 or index > self.size:
+    ___ addAtIndex  index, val):
+        __ index < 0 or index > size:
             r_
         ____ index __ 0:
-            self.addAtHead(val)
-        ____ index __ self.size:
-            self.addAtTail(val)
+            addAtHead(val)
+        ____ index __ size:
+            addAtTail(val)
         ____
-            cur = self.head
+            cur = head
             w__ index - 1 != 0:
                 cur = cur.next
                 index -= 1
@@ -70,33 +70,33 @@ class MyLinkedList:
             cur.next = new_node
             new_node.prev = cur
 
-            self.size += 1
+            size += 1
 
-    ___ deleteAtIndex(self, index):
-        __ index < 0 or index >= self.size:
+    ___ deleteAtIndex  index):
+        __ index < 0 or index >= size:
             r_
         ____ index __ 0:
-            cur = self.head.next
+            cur = head.next
             __ cur:
-                cur.prev = None
+                cur.prev = N..
 
-            self.head = self.head.next
-            self.size -= 1
+            head = head.next
+            size -= 1
 
-            __ self.size __ 0:
-                self.tail = None
-        ____ index __ self.size - 1:
-            cur = self.tail.prev
+            __ size __ 0:
+                tail = N..
+        ____ index __ size - 1:
+            cur = tail.prev
             __ cur:
-                cur.next = None
-            self.tail = self.tail.prev
+                cur.next = N..
+            tail = tail.prev
 
-            self.size -= 1
+            size -= 1
 
-            __ self.size __ 0:
-                self.head = None
+            __ size __ 0:
+                head = N..
         ____
-            cur = self.head
+            cur = head
             w__ index - 1 != 0:
                 cur = cur.next
                 index -= 1
@@ -104,7 +104,7 @@ class MyLinkedList:
             cur.next = cur.next.next
             cur.next.prev = cur
 
-            self.size -= 1
+            size -= 1
 
 
 ## Example Execution ##

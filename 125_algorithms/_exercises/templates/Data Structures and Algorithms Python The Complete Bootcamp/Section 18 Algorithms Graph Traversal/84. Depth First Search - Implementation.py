@@ -1,20 +1,20 @@
 class Node():
 
-    ___ __init__(self, value):
-        self.value = value
-        self.adjacentlist = []
-        self.visited = False
+    ___  -   value):
+        value = value
+        adjacentlist = []
+        visited = False
 
 
 class Graph():
 
-    ___ DFS(self, node, traversal):
+    ___ DFS  node, traversal):
         node.visited = True
         traversal.append(node.value)
 
         ___ element __ node.adjacentlist:
-            __ element.visited is False:
-                self.DFS(element, traversal)
+            __ element.visited __ False:
+                DFS(element, traversal)
 
         r_ traversal
 

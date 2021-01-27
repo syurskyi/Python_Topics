@@ -13,7 +13,7 @@ ___ mergeSort(my_array):
 
 
 ___ merge(left_result, right_result):
-    result = [None] * (le.(left_result) + le.(right_result))
+    result = [N..] * (le.(left_result) + le.(right_result))
     i = j = k = 0
 
     w__ i < le.(left_result) a__ j < le.(right_result):

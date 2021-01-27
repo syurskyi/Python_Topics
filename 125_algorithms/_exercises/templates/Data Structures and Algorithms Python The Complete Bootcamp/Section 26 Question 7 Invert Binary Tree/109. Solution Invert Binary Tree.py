@@ -1,19 +1,19 @@
 # Definition for a binary tree node.
 class TreeNode:
-    ___ __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+    ___  -   val=0, left=N.., right=N..):
+        val = val
+        left = left
+        right = right
 
 
 class Solution:
-    ___ invertTree(self, root):
-        __ root is None:
-            r_ None
+    ___ invertTree  root):
+        __ root __ N..:
+            r_ N..
 
         root.left, root.right = root.right, root.left
 
-        self.invertTree(root.left)
-        self.invertTree(root.right)
+        invertTree(root.left)
+        invertTree(root.right)
 
         r_ root

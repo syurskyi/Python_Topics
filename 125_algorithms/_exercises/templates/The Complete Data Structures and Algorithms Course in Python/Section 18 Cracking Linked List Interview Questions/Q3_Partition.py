@@ -21,7 +21,7 @@ ___ partition(ll, x
             ll.tail = curNode
         curNode = nextNode
     
-    __ ll.tail.next __ not N..:
+    __ ll.tail.next __ no. N..:
         ll.tail.next = N..
 
 customLL = LinkedList()

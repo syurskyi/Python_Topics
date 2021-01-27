@@ -1,13 +1,13 @@
 # Definition for a binary tree node.
 class TreeNode:
-    ___ __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+    ___  -   val=0, left=N.., right=N..):
+        val = val
+        left = left
+        right = right
 
 
 class Solution:
-    ___ bstFromPreorder(self, preorder):
+    ___ bstFromPreorder  preorder):
 
         root = TreeNode(preorder[0])
         stack = [root]

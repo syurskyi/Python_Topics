@@ -8,19 +8,19 @@ c_ Heap:
         maxSize = size + 1
 
 ___ peekofHeap(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     ____
         r_ rootNode.customList[1]
 
 ___ sizeofHeap(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     ____
         r_ rootNode.heapSize
 
 ___ levelOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     ____
         ___ i __ ra__(1, rootNode.heapSize+1

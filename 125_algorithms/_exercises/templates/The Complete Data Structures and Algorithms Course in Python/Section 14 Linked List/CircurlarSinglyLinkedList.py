@@ -99,7 +99,7 @@ c_ CircularSinglyLinkedList:
                     tail = N..
                 ____
                     node = head
-                    w__ node __ not N..:
+                    w__ node __ no. N..:
                         __ node.next __ tail:
                             break
                         node = node.next

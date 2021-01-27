@@ -17,7 +17,7 @@ c_ Graph:
             deVertex = queue.pop(0)
             print(deVertex)
             ___ adjacentVertex __ gdict[deVertex]:
-                __ adjacentVertex not __ visited:
+                __ adjacentVertex no. __ visited:
                     visited.ap..(adjacentVertex)
                     queue.ap..(adjacentVertex)
     
@@ -28,7 +28,7 @@ c_ Graph:
             popVertex = stack.pop()
             print(popVertex)
             ___ adjacentVertex __ gdict[popVertex]:
-                __ adjacentVertex not __ visited:
+                __ adjacentVertex no. __ visited:
                     visited.ap..(adjacentVertex)
                     stack.ap..(adjacentVertex)
     

@@ -1,15 +1,15 @@
 # Definition for singly-linked list.
 class ListNode:
-    ___ __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+    ___  -   val=0, next=N..):
+        val = val
+        next = next
 
 
 class Solution:
-    ___ reverseList(self, head):
-        pre = None
+    ___ reverseList  head):
+        pre = N..
         cur = head
-        suc = None
+        suc = N..
 
         w__ cur:
             suc = cur.next

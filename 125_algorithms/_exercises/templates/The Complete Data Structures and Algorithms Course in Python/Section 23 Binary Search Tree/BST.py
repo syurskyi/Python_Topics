@@ -25,38 +25,38 @@ ___ insertNode(rootNode, nodeValue
     r_ "The node has been successfully inserted"
 
 ___ preOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     print(rootNode.data)
     preOrderTraversal(rootNode.leftChild)
     preOrderTraversal(rootNode.rightChild)
 
 ___ inOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     inOrderTraversal(rootNode.leftChild)
     print(rootNode.data)
     inOrderTraversal(rootNode.rightChild)
 
 ___ postOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     postOrderTraversal(rootNode.leftChild)
     postOrderTraversal(rootNode.rightChild)
     print(rootNode.data)
 
 ___ levelOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
-        w__ not(customQueue.isEmpty()):
+        w__ no.(customQueue.isEmpty()):
             root = customQueue.dequeue()
             print(root.value.data)
-            __ root.value.leftChild __ not N..:
+            __ root.value.leftChild __ no. N..:
                 customQueue.enqueue(root.value.leftChild)
-            __ root.value.rightChild __ not N..:
+            __ root.value.rightChild __ no. N..:
                 customQueue.enqueue(root.value.rightChild)
             
 
@@ -77,7 +77,7 @@ ___ searchNode(rootNode, nodeValue
 
 ___ minValueNode(bstNode
     current = bstNode
-    w__ (current.leftChild __ not N..
+    w__ (current.leftChild __ no. N..
         current = current.leftChild
     r_ current
 

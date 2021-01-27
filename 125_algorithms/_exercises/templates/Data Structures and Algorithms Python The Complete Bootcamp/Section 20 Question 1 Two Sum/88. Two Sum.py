@@ -1,5 +1,5 @@
 class Solution:
-    ___ twoSum(self, nums, target):
+    ___ twoSum  nums, target):
         store = {}
 
         ___ i __ ra__(le.(nums)):

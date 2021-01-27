@@ -11,38 +11,38 @@ c_ AVLNode:
         height = 1
 
 ___ preOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     print(rootNode.data)
     preOrderTraversal(rootNode.leftChild)
     preOrderTraversal(rootNode.rightChild)
 
 ___ inOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     inOrderTraversal(rootNode.leftChild)
     print(rootNode.data)
     inOrderTraversal(rootNode.rightChild)
 
 ___ postOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     postOrderTraversal(rootNode.leftChild)
     postOrderTraversal(rootNode.rightChild)
     print(rootNode.data)
 
 ___ levelOrderTraversal(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_
     ____
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
-        w__ not(customQueue.isEmpty()):
+        w__ no.(customQueue.isEmpty()):
             root = customQueue.dequeue()
             print(root.value.data)
-            __ root.value.leftChild __ not N..:
+            __ root.value.leftChild __ no. N..:
                 customQueue.enqueue(root.value.leftChild)
-            __ root.value.rightChild __ not N..:
+            __ root.value.rightChild __ no. N..:
                 customQueue.enqueue(root.value.rightChild)
 
 
@@ -61,7 +61,7 @@ ___ searchNode(rootNode, nodeValue
             searchNode(rootNode.rightChild, nodeValue)
 
 ___ getHeight(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_ 0
     r_ rootNode.height
 
@@ -82,12 +82,12 @@ ___ leftRotate(disbalanceNode
     r_ newRoot
 
 ___ getBalance(rootNode
-    __ not rootNode:
+    __ no. rootNode:
         r_ 0
     r_ getHeight(rootNode.leftChild) - getHeight(rootNode.rightChild)
 
 ___ insertNode(rootNode, nodeValue
-    __ not rootNode:
+    __ no. rootNode:
         r_ AVLNode(nodeValue)
     ____ nodeValue < rootNode.data:
         rootNode.leftChild = insertNode(rootNode.leftChild, nodeValue)
@@ -114,7 +114,7 @@ ___ getMinValueNode(rootNode
     r_ getMinValueNode(rootNode.leftChild)
 
 ___ deleteNode(rootNode, nodeValue
-    __ not rootNode:
+    __ no. rootNode:
         r_ rootNode
     ____ nodeValue < rootNode.data:
         rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)

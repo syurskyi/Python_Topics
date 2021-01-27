@@ -1,12 +1,12 @@
 class Node():
 
-    ___ __init__(self, value):
-        self.value = value
-        self.adjacentlist = []
-        self.visited = False
+    ___  -   value):
+        value = value
+        adjacentlist = []
+        visited = False
 
 class Graph():
-    pass
+    p..
 
 node1 = Node("A")
 node2 = Node("B")

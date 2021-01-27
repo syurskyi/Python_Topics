@@ -29,7 +29,7 @@ c_ SubsetSumProblem:
 
         print("The problem is feasible: %s" % S[le_(nums)][m])
 
-        __ not S[le_(nums)][m]:
+        __ no. S[le_(nums)][m]:
             r_
 
         # print out the items in the subset

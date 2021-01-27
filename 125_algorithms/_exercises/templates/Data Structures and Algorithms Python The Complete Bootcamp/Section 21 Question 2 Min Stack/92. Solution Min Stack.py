@@ -1,28 +1,28 @@
 class MinStack:
 
-    ___ __init__(self):
-        self.stack = []
-        self.min = []
+    ___  -
+        stack = []
+        min = []
 
-    ___ push(self, x):
-        self.stack.append(x)
+    ___ push  x):
+        stack.append(x)
 
-        __ self.min:
-            __ x <= self.min[-1]:
-                self.min.append(x)
+        __ min:
+            __ x <= min[-1]:
+                min.append(x)
         ____
-            self.min.append(x)
+            min.append(x)
 
-    ___ pop(self):
-        __ self.stack[-1] __ self.min[-1]:
-            self.min.pop()
-        self.stack.pop()
+    ___ pop
+        __ stack[-1] __ min[-1]:
+            min.pop()
+        stack.pop()
 
-    ___ top(self):
-        r_ self.stack[-1]
+    ___ top
+        r_ stack[-1]
 
-    ___ getMin(self):
-        r_ self.min[-1]
+    ___ getMin
+        r_ min[-1]
 
 
 ## Example Execution ##

@@ -1,43 +1,43 @@
 class Node():
-    ___ __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    ___  -   value):
+        value = value
+        left = N..
+        right = N..
 
 
 class BinaryTree():
-    ___ __init__(self, value):
-        self.root = Node(value)
+    ___  -   value):
+        root = Node(value)
 
-    ___ preorder(self, start, traversal):
+    ___ preorder  start, traversal):
         # Root -> Left -> Right
-        __ start is None:
+        __ start __ N..:
             r_
 
         traversal.append(start.value)
-        self.preorder(start.left, traversal)
-        self.preorder(start.right, traversal)
+        preorder(start.left, traversal)
+        preorder(start.right, traversal)
 
         r_ traversal
 
-    ___ inorder(self, start, traversal):
+    ___ inorder  start, traversal):
         # Left -> Root -> Right
-        __ start is None:
+        __ start __ N..:
             r_
 
-        self.inorder(start.left, traversal)
+        inorder(start.left, traversal)
         traversal.append(start.value)
-        self.inorder(start.right, traversal)
+        inorder(start.right, traversal)
 
         r_ traversal
 
-    ___ postorder(self, start, traversal):
+    ___ postorder  start, traversal):
         # Left -> Right -> Root
-        __ start is None:
+        __ start __ N..:
             r_
 
-        self.postorder(start.left, traversal)
-        self.postorder(start.right, traversal)
+        postorder(start.left, traversal)
+        postorder(start.right, traversal)
         traversal.append(start.value)
 
         r_ traversal

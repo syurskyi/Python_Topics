@@ -1,5 +1,5 @@
 class Solution:
-    ___ detectCapitalUse(self, word):
+    ___ detectCapitalUse  word):
         count = 0
         length = le.(word)
 

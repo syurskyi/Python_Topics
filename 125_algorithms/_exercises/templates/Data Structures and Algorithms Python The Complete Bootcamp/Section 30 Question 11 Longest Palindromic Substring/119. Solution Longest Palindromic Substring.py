@@ -1,10 +1,10 @@
 class Solution:
 
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         result = ""
         ___ i __ ra__(le.(s)):
-            word1 = self.checkPalindrome(s, i, i)
-            word2 = self.checkPalindrome(s, i, i + 1)
+            word1 = checkPalindrome(s, i, i)
+            word2 = checkPalindrome(s, i, i + 1)
 
             __ le.(word1) >= le.(word2):
                 longest = word1
@@ -18,7 +18,7 @@ class Solution:
 
         r_ result
 
-    ___ checkPalindrome(self, s, left, right):
+    ___ checkPalindrome  s, left, right):
 
         w__ left >= 0 a__ right < le.(s) a__ s[left] __ s[right]:
             left -= 1

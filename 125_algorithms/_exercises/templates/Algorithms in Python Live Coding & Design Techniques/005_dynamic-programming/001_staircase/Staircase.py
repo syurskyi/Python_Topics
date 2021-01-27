@@ -21,7 +21,7 @@ ___ ways_top_down(n, k, dp
     __ n < 0:
         r_ 0
 
-    __ not dp[n] __ -1:
+    __ no. dp[n] __ -1:
         r_ dp[n]
 
     dp[n] = 0
