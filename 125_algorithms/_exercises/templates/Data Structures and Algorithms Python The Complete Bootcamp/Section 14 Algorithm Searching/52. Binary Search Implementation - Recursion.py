@@ -1,24 +1,24 @@
-___ binarySearch(my_array, target):
-    left = 0
-    right = le.(my_array) - 1
-    result = helper(my_array, target, left, right)
-    r_ result
-
-
-___ helper(my_array, target, left, right):
-    __ left > right:
-        r_ -1
-
-    middle = (left + right) // 2
-    middle_element = my_array[middle]
-
-    __ target __ middle_element:
-        r_ middle
-    ____ target < middle_element:
-        right = middle - 1
-        result = helper(my_array, target, left, right)
-        r_ result
-    ____
-        left = middle + 1
-        result = helper(my_array, target, left, right)
-        r_ result
+# ___ binarySearch my_array target
+#     left _ 0
+#     right _ le. ? - 1
+#     result _ h.. ? ? ? ?
+#     r_ ?
+#
+#
+# ___ helper my_array target left right
+#     __ ? > ?
+#         r_ -1
+#
+#     middle _ (? + ?) // 2
+#     middle_element _ my_ ?
+#
+#     __ t.. __ ?
+#         r_ ?
+#     ____ t.. < mi..
+#         r.. _ m.. - 1
+#         result _ ? ? ? ? ?
+#         r_ ?
+#     ____
+#         l.. _ m.. + 1
+#         result _ ? ? ? ? ?
+#         r_ ?
