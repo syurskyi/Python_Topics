@@ -1,14 +1,14 @@
-# This is the solution for Prefix Sums > Count Div
+# # This is the solution for Prefix Sums > Count Div
+# #
+# # This is marked as RESPECTABLE difficulty
 #
-# This is marked as RESPECTABLE difficulty
-
-from math import ceil, floor
-
-
-def solution(A, B, K):
-    n_start = ceil(A / K)
-    n_end = floor(B / K)
-    return n_end - n_start + 1
-
-
-print(solution(6, 11, 2))
+# ____ ma.. _______ ce.. fl..
+#
+#
+# ___ solution A B K
+#     n_start _ c.. ? / ?
+#     n_end _ f.. ? / ?
+#     r_ _e.. - _s.. + 1
+#
+#
+# print(? 6 11 2
