@@ -1,5 +1,5 @@
-# ___ factorial_recur
-#     __ n __ 0
+# ___ factorial_recur n
+#     __ ? __ 0
 #         r_ 1
 #     ____
 #         r_ ? * ? ?-1
