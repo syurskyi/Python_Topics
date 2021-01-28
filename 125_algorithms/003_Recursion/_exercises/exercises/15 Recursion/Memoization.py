@@ -10,44 +10,44 @@
 # # A simple example for computing factorials using memoization in Python would be something like this:
 # #
 # # # Create cache for known results
-# factorial_memo _    # dict
-#
-# ___ factorial k
-#
-#     __ ? < 2:
-#         r_ 1
-#
-#     __ no. ? __ ?
-#         ? ? = ? * ? ?-1
-#
-#     r_ ? ?
-#
-# ? 4
+factorial_memo = {}   # dict
+
+def factorial(k):
+
+    if k < 2:
+        return 1
+
+    if not k in factorial_memo:
+        factorial_memo[k] = k * factorial(k-1)
+
+    return factorial_memo[k]
+
+print(factorial(4))
 # # 24
 # #
 # # Note how we are now using a dictionary to store previous results of the factorial function! We are now able
 # # to increase the efficiency of this function by remembering old results!
 # # Keep this in mind when working on the Coin Change Problem and the Fibonacci Sequence Problem.
 # # We can also encapsulate the memoization process into a class:
-#
-# c_ Memoize
-#     ___  -  ____ f
-#         ____.?  ?
-#         ____.memo _          # dict
-#     ___ -c ____ $
-#         __ no. a.. __ ____.m..
-#             ____.m.. a.. _ ____.? #
-#         r_ ____.m.. a..
-#
-# # Then all we would have to do is:
-#
-# ___ factorial k
-#
-#     __ ? < 2
-#         r_ 1
-#
-#     r_ ? * ? ? - 1
-#
-# factorial = M.. f..
+
+class Memoize:
+    def __init__(self, f):
+        self.f = f
+        self.memo = {}         # dict
+    def __call__(self, *args):
+        if not args in self.memo:
+            self.memo[args] = self.f(*args)
+        return self.memo[args]
+
+# Then all we would have to do is:
+
+def factorial(k):
+
+    if k < 2:
+        return 1
+
+    return k * factorial(k - 1)
+
+factorial = Memoize(factorial)
 #
 # # Try comparing the run times of the memoization versions of functions versus the normal recursive solutions!
