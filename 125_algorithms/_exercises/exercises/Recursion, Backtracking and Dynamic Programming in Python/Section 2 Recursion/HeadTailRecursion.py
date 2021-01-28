@@ -1,33 +1,33 @@
-#
-# ___ tail n
-#
-#     print('Calling tail with n=' + st. ?
-#
-#     # BASE CASE
-#     __ ? __ 0
-#         r_
-#
-#     # first of all we do some operations
-#     # operation = print()
-#     print ?
-#
-#     # make the recursive function call
-#     ? ? - 1
-#
-#
-# ___ head n
-#
-#     print('Calling head() with n=' + st. ?
-#
-#     __ n __ 0
-#         r_
-#
-#     # we make the recursive function call
-#     ? ? - 1
-#
-#     # we can do any operations
-#     # operation - print()
-#     print ?
-#
-#
-# head(5)
+
+def tail(n):
+
+    print('Calling tail with n=' + str(n))
+
+    # BASE CASE
+    if n == 0:
+        return
+
+    # first of all we do some operations
+    # operation = print()
+    print(n)
+
+    # make the recursive function call
+    tail(n - 1)
+
+
+def head(n):
+
+    print('Calling head() with n=' + str(n))
+
+    if n == 0:
+        return
+
+    # we make the recursive function call
+    head(n - 1)
+
+    # we can do any operations
+    # operation - print()
+    print(n)
+
+
+tail(5)
