@@ -1,71 +1,73 @@
-# #### Russian Doll recursive function ###
-#
-# ___ openRussianDoll doll
-#     __ ? __ 1
-#         print("All dolls are opened")
-#     ____
-#         ? ?-1
-#
-#
-# ? 4
-#
-#
-# # ___ recursionMethod(parameters):
-# #     if  exit from condition satisfied:
-# #         return some value
-# #     else:
-# #         recursionMethod(modified parameters)
-#
-#
-# ___ firstMethod
-#     secondMethod
-#     print("I am the first Method")
-#
-# ___ secondMethod
-#     thirdMethod
-#     print("I am the second Method")
-#
-# ___ thirdMethod
-#     fourthMethod
-#     print("I am the third Method")
-#
-# ___ fourthMethod
-#     print("I am the fourth Method")
-#
-#
-# firstMethod()
-#
-#
-# ___ recursiveMethod n
-#     __ ?<1
-#         print("n is less than 1")
-#     ____
-#         ? ?-1
-#         print ?
-#
-# recursiveMethod 4
-#  ## Recursion vs Iterarion###
-#
-# ___ powerOfTwo n
-#     __ ? __ 0
-#          r_ 1
-#     ____
-#         power _ ? ?-1
-#         r_ ? * 2
-#
-# print(powerOfTwo 3
-#
-# ___ powerOfTwoIt n
-#     i _ 0
-#     power _ 1
-#     w__ i < ?
-#         ? _ ? * 2
-#         i _ i + 1
-#     r_ ?
-#
-#
-# print(powerOfTwoIt(4))
-#
+#### Russian Doll recursive function ###
+
+def openRussianDoll(doll):
+    if doll == 1:
+        print("All dolls are opened")
+    else:
+        openRussianDoll(doll-1)
+
+
+openRussianDoll(4)
+
+
+# ___ recursionMethod(parameters):
+#     if  exit from condition satisfied:
+#         return some value
+#     else:
+#         recursionMethod(modified parameters)
+
+
+def firstMethod():
+    secondMethod()
+    print("I am the first Method")
+
+def secondMethod():
+    thirdMethod()
+    print("I am the second Method")
+
+def thirdMethod():
+    fourthMethod()
+    print("I am the third Method")
+
+def fourthMethod():
+    print("I am the fourth Method")
+
+
+firstMethod()
+
+
+def recursiveMethod(n):
+    if n<1:
+        print("n is less than 1")
+    else:
+        recursiveMethod(n-1)
+        print(n)
+
+recursiveMethod(4)
+
+
+ ## Recursion vs Iterarion###
+
+def powerOfTwo(n):
+    if n == 0:
+         return 1
+    else:
+        power = powerOfTwo(n-1)
+        return power * 2
+
+print(powerOfTwo(3))
+
+def powerOfTwoIt(n):
+    i = 0
+    power = 1
+    while i < n:
+        power = power * 2
+        i = i + 1
+    return power
+
+
+print(powerOfTwoIt(4))
+
 #  ## Factorial###
 #
 #
