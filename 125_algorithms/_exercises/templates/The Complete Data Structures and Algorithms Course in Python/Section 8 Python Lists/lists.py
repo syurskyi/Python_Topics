@@ -22,7 +22,7 @@ myList.insert(4,15)
 myList.ap..(55)
 
 newList = [11,12,13,14]
-myList.extend(newList)
+myList.ex..(newList)
 print(myList)
 
 

@@ -5,8 +5,8 @@
 ___ flatten(arr
     resultArr = []
     ___ custItem __ arr:
-        __ type(custItem) __ li__:
-            resultArr.extend(flatten(custItem))
+        __ ty..(custItem) __ li__:
+            resultArr.ex..(flatten(custItem))
         ____
             resultArr.ap..(custItem)
     r_ resultArr 

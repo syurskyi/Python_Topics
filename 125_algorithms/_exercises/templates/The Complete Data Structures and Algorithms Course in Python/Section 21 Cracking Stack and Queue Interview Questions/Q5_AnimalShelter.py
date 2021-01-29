@@ -8,8 +8,8 @@ c_ AnimalShelter(
     cats = []
     dogs = []
   
-  ___ enqueue  animal, type
-    __ type __ 'Cat':
+  ___ enqueue  animal, ty..
+    __ ty.. __ 'Cat':
       cats.ap..(animal)
     ____
       dogs.ap..(animal)

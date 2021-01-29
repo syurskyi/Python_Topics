@@ -90,7 +90,7 @@ print(init_tuple)
 
 init_tuple = ('Python') * 3
 
-print(type(init_tuple))
+print(ty..(init_tuple))
 # A. <class ‘tuple’>
 # B. <class ‘str’>
 # C. <class ‘list’>
