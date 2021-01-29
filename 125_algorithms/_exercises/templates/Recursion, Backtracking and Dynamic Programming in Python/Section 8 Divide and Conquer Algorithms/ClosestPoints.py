@@ -16,7 +16,7 @@ ___ distance(p, q
 # it has quadratic running time so we want to do better
 ___ brute_force(sub_array
     # initialize the min_distance to INF
-    min_distance = float('inf')
+    min_distance = fl__('inf')
 
     # we have to calculate the distance between every single point
     # we make sure that do not consider the same points multiple times

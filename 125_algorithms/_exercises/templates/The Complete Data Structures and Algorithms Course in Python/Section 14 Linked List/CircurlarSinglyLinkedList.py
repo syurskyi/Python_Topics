@@ -17,7 +17,7 @@ c_ CircularSinglyLinkedList:
             yield node
             node = node.next
             __ node __ tail.next:
-                break
+                b__
             
 
     #  Creation of circular singly linked list
@@ -64,7 +64,7 @@ c_ CircularSinglyLinkedList:
                 print(tempNode.value)
                 tempNode = tempNode.next
                 __ tempNode __ tail.next:
-                    break
+                    b__
     
     # Searching for a node in circular singly linked list
     ___ searchCSLL  nodeValue
@@ -101,7 +101,7 @@ c_ CircularSinglyLinkedList:
                     node = head
                     w__ node __ no. N..:
                         __ node.next __ tail:
-                            break
+                            b__
                         node = node.next
                     node.next = head
                     tail = node

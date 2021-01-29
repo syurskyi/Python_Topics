@@ -20,7 +20,7 @@ ___ get_max_value(wt, val, capacity
             fraction = capacity / cur_wt
             total_val += cur_val * fraction
             # capacity = int(capacity - (cur_wt * fraction))
-            break
+            b__
 
     r_ total_val
 

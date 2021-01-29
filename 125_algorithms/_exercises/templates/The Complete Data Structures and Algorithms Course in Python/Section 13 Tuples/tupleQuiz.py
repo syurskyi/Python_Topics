@@ -44,7 +44,7 @@ print (init_tuple_a + init_tuple_b)
 init_tuple_a = 1, 2
 init_tuple_b = (3, 4)
 
-[print(sum(x)) ___ x __ [init_tuple_a + init_tuple_b]]
+[print(su_(x)) ___ x __ [init_tuple_a + init_tuple_b]]
 # A. Nothing gets printed.
 # B.  4
 # C. 10
@@ -55,7 +55,7 @@ init_tuple_b = (3, 4)
 # Q-5. What will be the output of the following code block?
 
 init_tuple = [(0, 1), (1, 2), (2, 3)]
-result = sum(n ___ _, n __ init_tuple)
+result = su_(n ___ _, n __ init_tuple)
 
 print(result)
 # A. 3

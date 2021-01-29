@@ -15,13 +15,13 @@ ___ first_fit_decreasing_algorithm(capacities, bin_max_capacity
         # consider all the bins (this is why the final running time complexity of quadratic)
         ___ index, actual_bin __ enumerate(solution_bins
             # sum of items' capacity so far in the actual_bin
-            actual_bin_summed_size = sum([capacities[key] ___ key __ actual_bin])
+            actual_bin_summed_size = su_([capacities[key] ___ key __ actual_bin])
 
             # if there is room for this object in the bin, put it in this bin:
             __ item_capacity <= (bin_max_capacity - actual_bin_summed_size
                 solution_bins[index].ap..(item)
                 bin_found = T..
-                break
+                b__
 
         # there is no space for the item in the bins already created
         # so create a new bin for the item

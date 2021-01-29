@@ -8,12 +8,12 @@ num = 100
 __ num < 0:
    print("Enter a positive number")
 ____
-   sum = 0
+   su_ = 0
    # use while loop to iterate until zero
    w__(num > 0):
-       sum += num
+       su_ += num
        num -= 1
-   print("The sum is", sum)
+   print("The sum is", su_)
 
 ### Program Completed ###
 

@@ -4,7 +4,7 @@ ___ dijkstra(adjacency_matrix
     v = le_(adjacency_matrix)
     visited = [F.. ___ i __ ra__(v)]
 
-    distance = [float('inf') ___ i __ ra__(v)]
+    distance = [fl__('inf') ___ i __ ra__(v)]
     distance[0] = 0
 
     ___ i __ ra__(v-1

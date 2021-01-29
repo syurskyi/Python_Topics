@@ -57,7 +57,7 @@ c_ QueensProblem:
         ___ i __ ra__(row_index, -1, -1
 
             __ i < 0:
-                break
+                b__
 
             __ chess_table[i][j] __ 1:
                 r_ F..
@@ -70,7 +70,7 @@ c_ QueensProblem:
         ___ i __ ra__(row_index, n
 
             __ j < 0:
-                break
+                b__
 
             __ chess_table[i][j] __ 1:
                 r_ F..

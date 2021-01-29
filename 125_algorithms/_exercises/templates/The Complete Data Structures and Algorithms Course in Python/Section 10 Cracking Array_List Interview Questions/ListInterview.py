@@ -7,7 +7,7 @@ mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 
 
 ___ findMissing(li__, n
-    sum1 = sum(li__)
+    sum1 = su_(li__)
     sum2 = 100*101/2
     print(sum2-sum1)
 
@@ -15,10 +15,10 @@ ___ findMissing(li__, n
 # findMissing(mylist, 100)
 
 # Question 2
-___ findPairs(li__, sum
+___ findPairs(li__, su_
     ___ i __ ra__(le_(li__)):
         ___ j __ ra__(i+1,le_(li__)):
-            __ (li__[i]+li__[j]) __ sum:
+            __ (li__[i]+li__[j]) __ su_:
                 print(li__[i],li__[j])
 # findPairs(mylist, 100)
 
