@@ -1,14 +1,14 @@
-# #   Created by Elshad Karimov
-# #   Copyright © AppMillers. All rights reserved.
-#
-# # reverse Solution
-#
-#
-# ___ reverse strng
-#     __ le_ ? <_ 1
-#       r_ ?
-#     r_ ? le_ ? -1 + ? ? 0|le_ ? - 1
-#
-#
-# print(reverse('python')) # 'nohtyp'
-# print(reverse('appmillers')) # 'srellimppa'
+#   Created by Elshad Karimov
+#   Copyright © AppMillers. All rights reserved.
+
+# reverse Solution
+
+
+def reverse(strng):
+    if len(strng) <= 1:
+      return strng
+    return strng[len(strng) -1] + reverse(strng[0:len(strng) -1])
+
+
+print(reverse('python')) # 'nohtyp'
+print(reverse('appmillers')) # 'srellimppa'
