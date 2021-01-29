@@ -1,18 +1,18 @@
-# # To add a new cell, type '# %%'
-# # To add a new markdown cell, type '# %% [markdown]'
-# # %%
-# # Write a Python program to calculate the value of 'a' to the power 'b'.
-#
-# ___ power a b
-# 	__ b__0
-# 		r_ 1
-# 	____ a__0
-# 		r_ 0
-# 	____ b__1
-# 		r_ a
-# 	____
-# 		r_ a*? a b-1
-#
-# print ? 3 4
-#
-#
+# To add a new cell, type '# %%'
+# To add a new markdown cell, type '# %% [markdown]'
+# %%
+# Write a Python program to calculate the value of 'a' to the power 'b'.
+
+def power(a, b):
+    if b==0:
+        return 1
+    elif a==0:
+        return 0
+    elif b==1:
+        return a
+    else:
+        return a*power(a, b - 1)
+
+print(power(3, 4))
+
+
