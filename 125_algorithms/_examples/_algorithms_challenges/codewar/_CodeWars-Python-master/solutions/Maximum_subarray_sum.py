@@ -28,4 +28,4 @@ def maxSequence(arr):
     return maximum
 
 
-a__ maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
+assert maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6

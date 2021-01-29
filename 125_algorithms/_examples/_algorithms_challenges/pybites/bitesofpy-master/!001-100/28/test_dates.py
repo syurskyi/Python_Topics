@@ -20,12 +20,12 @@ def dates():
 def test_convert_to_datetime(date_str, expected):
     dt = convert_to_datetime(date_str)
     # support tz aware datetimes
-    a__ dt.replace(tzinfo=None) == expected.replace(tzinfo=None)
+    assert dt.replace(tzinfo=None) == expected.replace(tzinfo=None)
 
 
 def test_get_month_most_posts(dates):
     converted_dates = [convert_to_datetime(d) for d in dates]
-    a__ get_month_most_posts(converted_dates) == '2017-01'
+    assert get_month_most_posts(converted_dates) == '2017-01'
 
 
 def test_get_month_most_posts_more_in_2018(dates):
@@ -34,4 +34,4 @@ def test_get_month_most_posts_more_in_2018(dates):
         dates.append('Sun, 07 Jan 2018 12:00:00 +0100')
 
     converted_dates = [convert_to_datetime(d) for d in dates]
-    a__ get_month_most_posts(converted_dates) == '2018-01'
+    assert get_month_most_posts(converted_dates) == '2018-01'

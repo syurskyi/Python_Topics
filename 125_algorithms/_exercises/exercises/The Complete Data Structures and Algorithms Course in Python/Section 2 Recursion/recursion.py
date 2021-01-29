@@ -72,7 +72,7 @@ print(powerOfTwoIt(4))
 #
 #
 # ___ factorial n
-#     a__ ? >_ 0 a__ in. ? __ ? 'The number must be positive integer only!'
+#     assert ? >_ 0 assert in. ? __ ? 'The number must be positive integer only!'
 #     __ ? __  0,1
 #         r_ 1
 #     ____
@@ -82,7 +82,7 @@ print(powerOfTwoIt(4))
 #  ## Fibonacci###
 #
 # ___ fibonacci n
-#     a__ ? >_0 a__ in. ? __ ? 'Fibonacci number cannot be negative number or non integer.'
+#     assert ? >_0 assert in. ? __ ? 'Fibonacci number cannot be negative number or non integer.'
 #     __ ? __ 0,1
 #         r_ ?
 #     ____

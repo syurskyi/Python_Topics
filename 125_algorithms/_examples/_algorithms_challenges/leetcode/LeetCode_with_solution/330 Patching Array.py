@@ -90,4 +90,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().minPatches([1, 2, 2, 6, 34], 20) == 1
+    assert Solution().minPatches([1, 2, 2, 6, 34], 20) == 1

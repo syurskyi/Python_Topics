@@ -26,10 +26,10 @@ def ssd(ssd_values):
 
 def test_create(ssd, ssd_values):
     for attr_name in ssd_values:
-        a__ getattr(ssd, attr_name) == ssd_values.get(attr_name)
+        assert getattr(ssd, attr_name) == ssd_values.get(attr_name)
 
 
 def test_repr(ssd):
-    a__ ssd.category in repr(ssd)
-    a__ str(ssd.capacity_gb) in repr(ssd)
-    a__ ssd.interface in repr(ssd)
+    assert ssd.category in repr(ssd)
+    assert str(ssd.capacity_gb) in repr(ssd)
+    assert ssd.interface in repr(ssd)

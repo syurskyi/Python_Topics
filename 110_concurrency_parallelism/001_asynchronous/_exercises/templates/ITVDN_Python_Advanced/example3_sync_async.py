@@ -1,5 +1,5 @@
 # ______ a..
-# ____ a__.c.. ______ is..
+# ____ assert.c.. ______ is..
 # ______ ti..
 #
 #
@@ -12,7 +12,7 @@
 # ??.?
 # ___ async_worker number divider
 #     print('Async Worker started with values: @ / @'.f.. ? ?
-#     y.. f.. a__.s.. 3
+#     y.. f.. assert.s.. 3
 #     print ? / ?
 #
 #
@@ -24,11 +24,11 @@
 # print(i.. a.. 10 2
 #
 # # async
-# event_loop _ a__.g_e_l..
+# event_loop _ assert.g_e_l..
 # task_list _ |
 #     ?.c.. a.. 30 10
 #     ?.c.. a.. 50 25
 # |
-# tasks _ a__.w.. ?
+# tasks _ assert.w.. ?
 # e__.r_u_c.. ?
 # e__.c..

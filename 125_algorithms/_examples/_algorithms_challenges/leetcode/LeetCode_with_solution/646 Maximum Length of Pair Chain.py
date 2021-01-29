@@ -82,4 +82,4 @@ class Solution2:
 
 
 if __name__ == "__main__":
-    a__ Solution().findLongestChain([[1,2], [2,3], [3,4]]) == 2
+    assert Solution().findLongestChain([[1,2], [2,3], [3,4]]) == 2

@@ -33,9 +33,9 @@ class TestAdd:
   def test_invalid_arg2(self):
     actual = add(1,None)
  
-  # test with a__
+  # test with assert
   def test_add_nums(self):
     actual = add(1,10)
-    a__ actual == 11
+    assert actual == 11
   
   

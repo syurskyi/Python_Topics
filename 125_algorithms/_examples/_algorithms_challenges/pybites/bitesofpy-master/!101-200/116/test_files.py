@@ -23,4 +23,4 @@ def test_get_files(byte_sizes, size_in_kb, expected):
 
         actual = [os.path.basename(fi) for fi in
                   get_files(dirname, size_in_kb)]
-        a__ sorted(actual) == sorted(expected)
+        assert sorted(actual) == sorted(expected)

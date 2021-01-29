@@ -38,4 +38,4 @@ class Solution:
 
 
 if __name__=="__main__":
-    a__ Solution().generateParenthesis(3)==['((()))', '(()())', '(())()', '()(())', '()()()']
+    assert Solution().generateParenthesis(3)==['((()))', '(()())', '(())()', '()(())', '()()()']

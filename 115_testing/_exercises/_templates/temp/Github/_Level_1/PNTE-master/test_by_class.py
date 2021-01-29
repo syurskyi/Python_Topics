@@ -33,7 +33,7 @@
 #   ___ test_invalid_arg2
 #     actual _ a.. 1 N..
 #
-#   # test with a__
+#   # test with assert
 #   ___ test_add_nums
 #     actual _ a.. 1 10
 #     a.. actual __ 11

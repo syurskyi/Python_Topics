@@ -2,7 +2,7 @@ class Super:
     def delegate(self):
         self.action()
     def action(self):
-        a__ False, 'action must be defined!'         # If this version called
+        assert False, 'action must be defined!'         # If this version called
 
 
 X = Super()

@@ -39,7 +39,7 @@
 def testSomething():
     something = makeSomething()
 
-    a__ something.name is not None
+    assert something.name is not None
 
     # ...
 

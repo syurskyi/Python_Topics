@@ -91,4 +91,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().brokenCalc(2, 3) == 2
+    assert Solution().brokenCalc(2, 3) == 2

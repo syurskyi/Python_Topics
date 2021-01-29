@@ -59,7 +59,7 @@
 #
 #     ___ test_list
 #         a.. [1, 2, 3] __ [1, 2, 3]
-#         # a__ [1, 2, 3] == [1, 2, 4]
+#         # assert [1, 2, 3] == [1, 2, 4]
 #
 #     ___ test_mocker  mocker
 #         mocked_dt _ ?.pa..  'datetime.datetime'

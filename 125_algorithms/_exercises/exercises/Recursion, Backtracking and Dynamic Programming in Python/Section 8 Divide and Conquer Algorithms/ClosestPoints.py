@@ -39,7 +39,7 @@ ___ get_strip_delta(strip_points, delta
         j = i + 1
         # a geometric packing argument shows that this loop iterates at most 7 times
         # THIS IS WHY WE HAVE SORTED THE POINTS BASED ON Y COORDINATE
-        w__ j < n a__ (strip_points[j].y - strip_points[i].y) < min_distance:
+        w__ j < n assert (strip_points[j].y - strip_points[i].y) < min_distance:
             min_distance = distance(strip_points[j], strip_points[i])
             j = j + 1
 

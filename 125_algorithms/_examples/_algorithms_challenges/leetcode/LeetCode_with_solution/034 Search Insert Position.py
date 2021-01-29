@@ -67,10 +67,10 @@ class Solution:
         return start
 
 if __name__=="__main__":
-    a__ Solution().searchInsert([1, 3, 5, 6], 5)==2
-    a__ Solution().searchInsert([1, 3, 5, 6], 2)==1
-    a__ Solution().searchInsert([1, 3, 5, 6], 7)==4
-    a__ Solution().searchInsert([1, 3, 5, 6], 0)==0
+    assert Solution().searchInsert([1, 3, 5, 6], 5)==2
+    assert Solution().searchInsert([1, 3, 5, 6], 2)==1
+    assert Solution().searchInsert([1, 3, 5, 6], 7)==4
+    assert Solution().searchInsert([1, 3, 5, 6], 0)==0
 
 
 

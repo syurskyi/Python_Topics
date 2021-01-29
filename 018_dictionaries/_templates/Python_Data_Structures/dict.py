@@ -429,7 +429,7 @@ d = rootdict()
 print(d[1,2,1])
 
 from sys import version_info
-a__ version_info.major == 3 and version_info.minor >= 3,   'requires PEP 362; Python 3.3 or later; python.org/dev/peps/pep-0362/'
+assert version_info.major == 3 and version_info.minor >= 3,   'requires PEP 362; Python 3.3 or later; python.org/dev/peps/pep-0362/'
 
 from inspect import signature
 class memoise(dict):

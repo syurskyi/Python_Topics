@@ -74,7 +74,7 @@
 #         #1)  If there is an autosave file, we compare it's last modified time to the local time
 #
 #         __ __.pa__.i_f.. ?
-#             modification_time _ in. __.st.. a__ .s._mt..
+#             modification_time _ in. __.st.. assert .s._mt..
 #             _idle_time _ n.. - ?
 #
 #         #2) If nuke is modified and there is no autosave file, it means the user has modified he's script just after

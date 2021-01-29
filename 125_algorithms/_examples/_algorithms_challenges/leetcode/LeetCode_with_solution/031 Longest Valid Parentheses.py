@@ -41,7 +41,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().longestValidParentheses("(()()") == 4
-    a__ Solution().longestValidParentheses("()(()") == 2
-    a__ Solution().longestValidParentheses("(()") == 2
-    a__ Solution().longestValidParentheses(")()())") == 4
+    assert Solution().longestValidParentheses("(()()") == 4
+    assert Solution().longestValidParentheses("()(()") == 2
+    assert Solution().longestValidParentheses("(()") == 2
+    assert Solution().longestValidParentheses(")()())") == 4

@@ -7,7 +7,7 @@ c_ TestInterest?.?
         """ Test all arguements of the function to determine that if rouge type is entered that it is caught """
         # Arrange (instantiate class)
         # Act (use instantiation)
-        # a__ (a__ method)
+        # assert (assert method)
         aR..(T.., Interest().simple_interest, 'init amt', 1, 1)
         aR..(T.., Interest().simple_interest, T.., .5, 1)
         aR..(T.., Interest().simple_interest, 1+3j, .5, 1)

@@ -62,4 +62,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().canFinish(2, [[1, 0], [0, 1]]) is False
+    assert Solution().canFinish(2, [[1, 0], [0, 1]]) is False

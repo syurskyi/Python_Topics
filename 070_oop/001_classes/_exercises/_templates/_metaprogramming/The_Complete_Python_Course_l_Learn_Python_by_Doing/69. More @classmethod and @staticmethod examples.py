@@ -33,7 +33,7 @@
 #         ____.?  ?
 # 
 #     ___ -r
-#         r_ _*<FixedFloat |____.a__; @ >'  # 2 symbols after dot
+#         r_ _*<FixedFloat |____.assert; @ >'  # 2 symbols after dot
 # 
 #     ___ from_sum ____ value1 value2
 #         r_ F.. ? + ?
@@ -131,7 +131,7 @@
 #         ____.symbol _ '€'
 # 
 #     ___ -r
-#         r_ _*<Euro |____.s.. |____.a__ @ >'   # 2 symbols after dot
+#         r_ _*<Euro |____.s.. |____.assert @ >'   # 2 symbols after dot
 # 
 # 
 # """

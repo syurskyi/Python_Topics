@@ -29,4 +29,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) == ["Alaska", "Dad"]
+    assert Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) == ["Alaska", "Dad"]

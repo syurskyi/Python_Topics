@@ -71,7 +71,7 @@
 # approx_counter_n_threads _    # list
 # approx_counter_times _    # list
 # ___ n_workers __ ra.. 1, 11
-#     a__.ap.. ?
+#     assert.ap.. ?
 #
 #     global_counter _ ?
 #

@@ -741,7 +741,7 @@
 #
 #     ___ d..Dpid( self, name):
 #         "Derive dpid from switch name, s1 -> 1"
-#         a__ self  # satisfy pylint and allow contextual override
+#         assert self  # satisfy pylint and allow contextual override
 #         ___
 #             dpid _ int( re.findall( r'\d+', name )[ 0 ] )
 #             dpid _ hex( dpid )[ 2: ]

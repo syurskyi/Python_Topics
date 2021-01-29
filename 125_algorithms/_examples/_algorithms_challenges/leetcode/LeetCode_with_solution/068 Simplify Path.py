@@ -47,6 +47,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") == "/e/f/g"
-    a__ Solution().simplifyPath("/a/./b/../../c/") == "/c"
-    a__ Solution().simplifyPath("/../") == "/"
+    assert Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") == "/e/f/g"
+    assert Solution().simplifyPath("/a/./b/../../c/") == "/c"
+    assert Solution().simplifyPath("/../") == "/"

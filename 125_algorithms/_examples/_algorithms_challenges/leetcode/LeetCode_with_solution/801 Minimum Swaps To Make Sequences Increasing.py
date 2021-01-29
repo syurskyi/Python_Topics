@@ -80,4 +80,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().minSwap([0,4,4,5,9], [0,1,6,8,10])
+    assert Solution().minSwap([0,4,4,5,9], [0,1,6,8,10])

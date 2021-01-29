@@ -172,6 +172,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) == 4
-    a__ Solution().findMaxForm(["10", "0", "1"], 1, 1) == 2
-    a__ Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) == 3
+    assert Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) == 4
+    assert Solution().findMaxForm(["10", "0", "1"], 1, 1) == 2
+    assert Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) == 3

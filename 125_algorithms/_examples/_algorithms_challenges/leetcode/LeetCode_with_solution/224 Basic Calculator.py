@@ -88,10 +88,10 @@ class Solution:
             else:
                 stk.append(elt)
 
-        a__ len(stk) == 1
+        assert len(stk) == 1
         return int(stk[-1])
 
 
 if __name__ == "__main__":
-    a__ Solution().calculate(" 2-1 + 2 ") == 3
-    a__ Solution().calculate("(1+(4+5+2)-3)+(6+8)") == 23
+    assert Solution().calculate(" 2-1 + 2 ") == 3
+    assert Solution().calculate("(1+(4+5+2)-3)+(6+8)") == 23

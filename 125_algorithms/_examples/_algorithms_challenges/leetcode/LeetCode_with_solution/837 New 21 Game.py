@@ -88,4 +88,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().new21Game(6, 1, 10) == 0.6
+    assert Solution().new21Game(6, 1, 10) == 0.6

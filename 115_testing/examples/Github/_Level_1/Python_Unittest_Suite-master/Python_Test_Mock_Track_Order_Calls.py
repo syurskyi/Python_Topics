@@ -40,7 +40,7 @@ manager.mock_calls
 # OUTPUT: '[call.foo.something(), call.bar.other.thing()]'
  
 #
-# We can then a__ about the calls, including the order, by comparing with the mock_calls attribute on the manager mock:
+# We can then assert about the calls, including the order, by comparing with the mock_calls attribute on the manager mock:
 # 
 
 expected_calls = [call.foo.something(), call.bar.other.thing()]
@@ -72,7 +72,7 @@ manager.mock_calls
 #
 # If many calls have been made, but you�re only interested in a particular sequence of them then an alternative is to use the assert_has_calls() method.
 # This takes a list of calls (constructed with the call object).
-# If that sequence of calls are in mock_calls then the a__ succeeds.
+# If that sequence of calls are in mock_calls then the assert succeeds.
 # 
 
 m = MagicMock()
@@ -89,7 +89,7 @@ calls = call.one().two().three().call_list()
 m.assert_has_calls(calls)
 
 # 
-# Even though the chained call m.one().two().three() aren�t the only calls that have been made to the mock, the a__ still succeeds.
+# Even though the chained call m.one().two().three() aren�t the only calls that have been made to the mock, the assert still succeeds.
 # Sometimes a mock may have several calls made to it, and you are only interested in asserting about some of those calls. You may not even care about the
 # order.
 # In this case you can pass any_order=True to assert_has_calls:

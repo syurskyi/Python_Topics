@@ -50,4 +50,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().longestPalindromeSubseq("bbbab") == 4
+    assert Solution().longestPalindromeSubseq("bbbab") == 4

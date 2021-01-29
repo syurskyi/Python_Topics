@@ -64,4 +64,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().combinationSum2([2,5,2,1,2], 5) == [[5], [1,2,2]]
+    assert Solution().combinationSum2([2,5,2,1,2], 5) == [[5], [1,2,2]]

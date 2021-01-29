@@ -15,17 +15,17 @@ def record():
 
 
 def test_record_unbeaten(record):
-    a__ record(9) == 11
+    assert record(9) == 11
     record(10)
     record(2)
-    a__ record(4) == 11
+    assert record(4) == 11
 
 
 def test_record_got_beaten(record):
-    a__ record(4) == 11
+    assert record(4) == 11
     record(3)
     record(12)  # new record
-    a__ record(4) == 12
+    assert record(4) == 12
     record(5)
     record(16)  # another record
-    a__ record(4) == 16
+    assert record(4) == 16

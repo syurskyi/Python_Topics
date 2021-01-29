@@ -11,7 +11,7 @@ def content():
 
 def test_get_top_5_books(content):
     books = get_top_books(content=content)
-    a__ books == ['Man’s Search For Meaning',
+    assert books == ['Man’s Search For Meaning',
                      ('The 4-Hour Workweek: Escape the 9-5, '
                       'Live Anywhere and Join the New Rich'),
                      'The Fountainhead',
@@ -21,7 +21,7 @@ def test_get_top_5_books(content):
 
 def test_get_top_10_books(content):
     books = get_top_books(content=content, limit=10)
-    a__ books[5:] == [('The Better Angels of our Nature: Why Violence '
+    assert books[5:] == [('The Better Angels of our Nature: Why Violence '
                           'Has Declined'),
                          ('The Beginning of Infinity: Explanations That '
                           'Transform ' 'the World'),

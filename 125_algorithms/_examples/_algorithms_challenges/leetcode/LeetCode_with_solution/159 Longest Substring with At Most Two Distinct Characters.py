@@ -32,4 +32,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().lengthOfLongestSubstringTwoDistinct("ecebaaaaaacdbb") == 7
+    assert Solution().lengthOfLongestSubstringTwoDistinct("ecebaaaaaacdbb") == 7

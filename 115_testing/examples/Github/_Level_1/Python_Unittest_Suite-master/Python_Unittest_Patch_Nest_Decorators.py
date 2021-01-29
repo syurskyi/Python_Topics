@@ -26,8 +26,8 @@
 @patch.object(SomeClass, 'static_method')
 
 def test(mock1, mock2):
-        a__ SomeClass.static_method is mock1
-        a__ SomeClass.class_method is mock2
+        assert SomeClass.static_method is mock1
+        assert SomeClass.class_method is mock2
 
         SomeClass.static_method('foo')
         SomeClass.class_method('bar')

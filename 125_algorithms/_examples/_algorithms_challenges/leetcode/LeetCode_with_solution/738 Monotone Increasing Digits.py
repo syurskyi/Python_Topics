@@ -42,5 +42,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().monotoneIncreasingDigits(10) == 9
-    a__ Solution().monotoneIncreasingDigits(332) == 299
+    assert Solution().monotoneIncreasingDigits(10) == 9
+    assert Solution().monotoneIncreasingDigits(332) == 299

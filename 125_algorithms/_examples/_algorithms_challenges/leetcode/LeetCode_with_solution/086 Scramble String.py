@@ -82,4 +82,4 @@ class Solution:
 
 
 if __name__=="__main__":
-    a__ Solution().isScramble("abc", "bca")==True
+    assert Solution().isScramble("abc", "bca")==True

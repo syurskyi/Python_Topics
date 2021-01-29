@@ -9,7 +9,7 @@
 #
 #
 # ? ___ gather_worker
-#     result _ a__.g..(
+#     result _ assert.g..(
 #         ? 50 10
 #         ? 60 10
 #         ? 70 10

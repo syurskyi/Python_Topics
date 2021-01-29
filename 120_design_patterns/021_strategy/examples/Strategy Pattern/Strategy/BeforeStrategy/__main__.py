@@ -5,20 +5,20 @@ from before_strategy import Order, Shipper, ShippingCost
 order = Order(Shipper.fedex)
 cost_calulator = ShippingCost()
 cost = cost_calulator.shipping_cost(order)
-a__ cost == 3.0
+assert cost == 3.0
 
 # Test UPS shipping
 
 order = Order(Shipper.ups)
 cost_calulator = ShippingCost()
 cost = cost_calulator.shipping_cost(order)
-a__ cost == 4.0
+assert cost == 4.0
 
 # Test Postal Service shipping
 
 order = Order(Shipper.postal)
 cost_calulator = ShippingCost()
 cost = cost_calulator.shipping_cost(order)
-a__ cost == 5.0
+assert cost == 5.0
 
 print('Tests passed')

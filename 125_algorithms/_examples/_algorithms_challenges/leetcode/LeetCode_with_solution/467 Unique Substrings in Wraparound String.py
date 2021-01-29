@@ -87,7 +87,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findSubstringInWraproundString("a") == 1
-    a__ Solution().findSubstringInWraproundString("cac") == 2
-    a__ Solution().findSubstringInWraproundString("zab") == 6
-    a__ Solution().findSubstringInWraproundString("zaba") == 6
+    assert Solution().findSubstringInWraproundString("a") == 1
+    assert Solution().findSubstringInWraproundString("cac") == 2
+    assert Solution().findSubstringInWraproundString("zab") == 6
+    assert Solution().findSubstringInWraproundString("zaba") == 6

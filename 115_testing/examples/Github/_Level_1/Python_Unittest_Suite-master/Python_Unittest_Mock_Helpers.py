@@ -38,7 +38,7 @@ real.method.return_value = sentinel.some_object
 
 result = real.method()
 
-a__ result is sentinel.some_object
+assert result is sentinel.some_object
 
 sentinel.some_object
 

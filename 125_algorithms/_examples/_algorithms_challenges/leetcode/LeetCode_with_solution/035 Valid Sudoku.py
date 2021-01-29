@@ -70,7 +70,7 @@ class Solution:
         return True
 
 if __name__=="__main__":
-    a__ Solution().isValidSudoku(
+    assert Solution().isValidSudoku(
         ["..4...63.", ".........", "5......9.", "...56....", "4.3.....1", "...7.....", "...5.....", ".........",
          "........."]
     )==False

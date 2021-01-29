@@ -28,7 +28,7 @@ class Solution:
             elif len(h) == 3 and e > h[0]:
                 heapq.heappushpop(h, e)
 
-        a__ len(h) <= 3
+        assert len(h) <= 3
         if len(h) == 3:
             ret = min(h)
         else:
@@ -37,7 +37,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().thirdMax([1, 2, 3, 4]) == 2
-    a__ Solution().thirdMax([4, 3, 2, 1]) == 2
-    a__ Solution().thirdMax([2, 2, 3, 1]) == 1
-    a__ Solution().thirdMax([4, 3]) == 4
+    assert Solution().thirdMax([1, 2, 3, 4]) == 2
+    assert Solution().thirdMax([4, 3, 2, 1]) == 2
+    assert Solution().thirdMax([2, 2, 3, 1]) == 1
+    assert Solution().thirdMax([4, 3]) == 4

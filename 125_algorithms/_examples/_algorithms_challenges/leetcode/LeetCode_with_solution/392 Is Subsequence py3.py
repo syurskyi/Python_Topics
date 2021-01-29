@@ -55,5 +55,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().isSubsequence("abc", "ahbgdc") == True
-    a__ Solution().isSubsequence("acb", "ahbgdc") == False
+    assert Solution().isSubsequence("abc", "ahbgdc") == True
+    assert Solution().isSubsequence("acb", "ahbgdc") == False

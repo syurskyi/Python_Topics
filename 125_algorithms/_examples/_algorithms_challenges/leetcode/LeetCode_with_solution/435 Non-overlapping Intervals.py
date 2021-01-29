@@ -47,6 +47,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) == 1
-    a__ Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) == 2
-    a__ Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) == 0
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) == 1
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) == 2
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) == 0

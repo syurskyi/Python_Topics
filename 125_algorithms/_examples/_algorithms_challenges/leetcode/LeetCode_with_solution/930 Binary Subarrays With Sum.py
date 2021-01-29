@@ -42,9 +42,9 @@ class Solution:
             while i_hi < j and (sum_hi > S or sum_hi == S and A[i_hi] == 0):
                 sum_hi -= A[i_hi]
                 i_hi += 1
-            a__ i_hi >= i_lo
+            assert i_hi >= i_lo
             if sum_lo == S:
-                a__ sum_hi == S
+                assert sum_hi == S
                 ret += i_hi - i_lo + 1
 
         return ret
@@ -84,4 +84,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().numSubarraysWithSum([1,0,1,0,1], 2) == 4
+    assert Solution().numSubarraysWithSum([1,0,1,0,1], 2) == 4

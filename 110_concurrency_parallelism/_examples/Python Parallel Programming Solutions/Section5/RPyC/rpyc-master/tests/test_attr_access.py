@@ -83,22 +83,22 @@ class TestRestricted(unittest.TestCase):
 
 #    def test_type_protector(self):
 #        obj = self.conn.root.get_two()
-#        a__ obj.baba() == "baba"
+#        assert obj.baba() == "baba"
 #        try:
 #            obj.gaga()
 #        except AttributeError:
 #            pass
 #        else:
-#            a__ False, "expected an attribute error!"
+#            assert False, "expected an attribute error!"
 #        obj2 = obj.lala()
-#        a__ obj2.foo() == "foo"
-#        a__ obj2.spam() == "spam"
+#        assert obj2.foo() == "foo"
+#        assert obj2.spam() == "spam"
 #        try:
 #            obj.bar()
 #        except AttributeError:
 #            pass
 #        else:
-#            a__ False, "expected an attribute error!"
+#            assert False, "expected an attribute error!"
 #        
 
 

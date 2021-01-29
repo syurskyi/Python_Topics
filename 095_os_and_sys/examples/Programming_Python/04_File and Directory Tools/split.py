@@ -31,7 +31,7 @@ def split(fromfile, todir, chunksize=chunksize):
         fileobj.write(chunk)
         fileobj.close()                            # or simply open().write()
     input.close()
-    a__ partnum <= 9999                         # join sort fails if 5 digits
+    assert partnum <= 9999                         # join sort fails if 5 digits
     return partnum
 
 if __name__ == '__main__':

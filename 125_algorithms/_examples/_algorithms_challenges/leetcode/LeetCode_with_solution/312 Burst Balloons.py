@@ -52,5 +52,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().maxCoins([3, 1, 5, 8]) == 167
+    assert Solution().maxCoins([3, 1, 5, 8]) == 167
 

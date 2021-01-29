@@ -43,5 +43,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) == 5
+    assert Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) == 5
 

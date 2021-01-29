@@ -147,6 +147,6 @@ class SolutionTLE:
 
 
 if __name__ == "__main__":
-    a__ Solution().knightDialer(1) == 10
-    a__ Solution().knightDialer(2) == 20
-    a__ Solution().knightDialer(3) == 46
+    assert Solution().knightDialer(1) == 10
+    assert Solution().knightDialer(2) == 20
+    assert Solution().knightDialer(3) == 46

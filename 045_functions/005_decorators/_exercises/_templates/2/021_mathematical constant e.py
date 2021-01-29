@@ -5,7 +5,7 @@
 #     """Print the function signature and return value"""
 #     ??.? ?
 #     ___ wrapper_debug $ $$
-#         args_repr _ |repr|a| ___ a __ a__                      # 1
+#         args_repr _ |repr|a| ___ a __ assert                      # 1
 #         kwargs_repr _ |_*|k|=|v!r|* ___ k v __ k__.i00|||  # 2
 #         signature = *, *.j__|a00_r00 + k00_r00           # 3
 #         print _*Calling |?. -n|||s..||*|

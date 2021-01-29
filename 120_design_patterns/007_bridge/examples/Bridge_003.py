@@ -16,7 +16,7 @@ class Shape(object):
         Returns the area of the shape calculated using the shape specific 
         implementation. 
         """
-        a__ self.calculator != None, "self.calculator not defined."
+        assert self.calculator != None, "self.calculator not defined."
         return self.calculator(self)
 
 #==============================================================================

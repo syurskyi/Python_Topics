@@ -128,5 +128,5 @@
 # # def __init__(self, first: True, second: 'example'):
 # # pass
 # # a = A(first = 5, second = 6)
-# # a__ a.first == 5
-# # a__ a.example == 6
+# # assert a.first == 5
+# # assert a.example == 6

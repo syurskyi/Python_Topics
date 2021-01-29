@@ -58,10 +58,10 @@ def get_stats(videos):
 
 if __name__ == '__main__':
     videos = get_videos(search_url)
-    a__ len(videos) == 143
+    assert len(videos) == 143
 
     stats = list(get_stats(videos))
-    a__ len(stats) == 143
+    assert len(stats) == 143
 
     row = '{:<10} {}'
     top = 10

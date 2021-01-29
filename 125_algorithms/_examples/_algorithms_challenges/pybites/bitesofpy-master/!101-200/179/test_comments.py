@@ -126,4 +126,4 @@ def foo():
     (false_positive, false_positive_after_strip),
 ])
 def test_strip_comments(arg, expected):
-    a__ strip_comments(arg).strip() == expected.strip()
+    assert strip_comments(arg).strip() == expected.strip()

@@ -21,7 +21,7 @@ def test_get_users_for_shell_default_args():
     actual = get_users_for_shell()
     expected = ['artagnon', 'avar', 'chad', 'gerrit2',
                 'git-svn-mirror', 'root', 'ssh-rsa']
-    a__ sorted(actual) == expected
+    assert sorted(actual) == expected
 
 
 def test_get_users_for_sh_shell():
@@ -29,18 +29,18 @@ def test_get_users_for_sh_shell():
     expected = ['backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
                 'libuuid', 'list', 'lp', 'mail', 'man', 'news',
                 'nobody', 'proxy', 'sys', 'uucp', 'www-data']
-    a__ sorted(actual) == expected
+    assert sorted(actual) == expected
 
 
 def test_get_users_for_false_shell():
     actual = get_users_for_shell(grep_shell='false')
     expected = ['Debian-exim', 'avahi', 'ftp', 'messagebus',
                 'mysql', 'postfix', 'statd']
-    a__ sorted(actual) == expected
+    assert sorted(actual) == expected
 
 
 def test_get_users_for_different_passwd_output_and_ksh_shell():
     actual = get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
                                  grep_shell='ksh')
     expected = ['invscout', 'jdoe', 'paul', 'root']
-    a__ sorted(actual) == expected
+    assert sorted(actual) == expected

@@ -12,4 +12,4 @@
 #
 # __ _____ __ ____
 #     _______ ___                               # when run, not imported
-#     ? o.. ___.a__ 1.r.. , 10       # page contents of file on cmdline
+#     ? o.. ___.assert 1.r.. , 10       # page contents of file on cmdline

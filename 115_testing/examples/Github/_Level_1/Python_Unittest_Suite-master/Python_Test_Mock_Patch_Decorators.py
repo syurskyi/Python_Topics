@@ -42,17 +42,17 @@ original = SomeClass.attribute
 @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
       def test():
-         a__ SomeClass.attribute == sentinel.attribute
+         assert SomeClass.attribute == sentinel.attribute
 
       test()
-         a__ SomeClass.attribute == original
+         assert SomeClass.attribute == original
  
 
 @patch('package.module.attribute', sentinel.attribute)
      def test():
 
         from package.module import attribute
-          a__ attribute is sentinel.attribute
+          assert attribute is sentinel.attribute
 
      test()
  
@@ -67,7 +67,7 @@ mock = MagicMock(return_value=sentinel.file_handle)
 
 mock.assert_called_with('filename', 'r')
 
-a__ handle == sentinel.file_handle, "incorrect file handle returned"
+assert handle == sentinel.file_handle, "incorrect file handle returned"
 
 # 
 # The module name can be �dotted�, in the form package.module if needed:
@@ -78,7 +78,7 @@ a__ handle == sentinel.file_handle, "incorrect file handle returned"
     def test():
         from package.module import ClassName
 
-        a__ ClassName.attribute == sentinel.attribute
+        assert ClassName.attribute == sentinel.attribute
 
     test()
  
@@ -97,7 +97,7 @@ original = SomeClass.attribute
 
 MyTest('test_something').test_something()
 
-a__ SomeClass.attribute == original
+assert SomeClass.attribute == original
  
 #
 # If you want to patch with a Mock, you can use patch() with only one argument (or patch.object() with two arguments).
@@ -142,9 +142,9 @@ foo = {'key': 'value'}
 original = foo.copy()
 
    with patch.dict(foo, {'newkey': 'newvalue'}, clear=True):
-        a__ foo == {'newkey': 'newvalue'}
+        assert foo == {'newkey': 'newvalue'}
 
-a__ foo == original
+assert foo == original
 
 # 
 # patch, patch.object and patch.dict can all be used as context managers.

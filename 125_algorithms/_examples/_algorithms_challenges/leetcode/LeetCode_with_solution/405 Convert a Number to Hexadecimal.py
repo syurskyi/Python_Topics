@@ -62,4 +62,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().toHex(-1) == 'ffffffff'
+    assert Solution().toHex(-1) == 'ffffffff'

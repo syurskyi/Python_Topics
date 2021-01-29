@@ -27,7 +27,7 @@ def cpu(cpu_values):
 
 def test_create_cpu(cpu, cpu_values):
     for attr_name in cpu_values:
-        a__ getattr(cpu, attr_name) == cpu_values.get(attr_name)
+        assert getattr(cpu, attr_name) == cpu_values.get(attr_name)
 
 
 @pytest.mark.parametrize(
@@ -49,7 +49,7 @@ def test_create_invalid_power(watts, exception, cpu_values):
 
 
 def test_repr(cpu):
-    a__ cpu.category in repr(cpu)
-    a__ cpu.name in repr(cpu)
-    a__ cpu.socket in repr(cpu)
-    a__ str(cpu.cores) in repr(cpu)
+    assert cpu.category in repr(cpu)
+    assert cpu.name in repr(cpu)
+    assert cpu.socket in repr(cpu)
+    assert str(cpu.cores) in repr(cpu)

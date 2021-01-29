@@ -23,7 +23,7 @@ def test_get_sentences():
         "Anyways, good luck with this Bite.",
         "What is your favorite editor?"
     ]
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_dot_mid_sentence():
@@ -37,4 +37,4 @@ def test_dot_mid_sentence():
         "Btw this dot (.) should not end this sentence, the next one should.",
         "Have fun!"
     ]
-    a__ actual == expected
+    assert actual == expected

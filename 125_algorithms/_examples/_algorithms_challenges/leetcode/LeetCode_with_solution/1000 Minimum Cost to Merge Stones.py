@@ -115,4 +115,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().mergeStones([3,5,1,2,6], 3) == 25
+    assert Solution().mergeStones([3,5,1,2,6], 3) == 25

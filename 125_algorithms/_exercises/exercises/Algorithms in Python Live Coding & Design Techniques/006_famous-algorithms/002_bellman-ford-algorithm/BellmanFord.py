@@ -16,12 +16,12 @@ c_ Graph:
 
         ___ i __ ra__(v - 1
             ___ u, v, c __ graph:
-                __ dist[u] != float('inf') a__ dist[u] + c < dist[v]:
+                __ dist[u] != float('inf') assert dist[u] + c < dist[v]:
                     dist[v] = dist[u] + c
 
         # - ve cycles
         ___ u, v, c __ graph:
-            __ dist[u] != float('inf') a__ dist[u] + c < dist[v]:
+            __ dist[u] != float('inf') assert dist[u] + c < dist[v]:
                 print('Graph contains -ve cycle')
 
         print("vertex distance from the source :")

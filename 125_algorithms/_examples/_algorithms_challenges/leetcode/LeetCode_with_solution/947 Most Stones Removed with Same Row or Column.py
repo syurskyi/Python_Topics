@@ -67,4 +67,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) == 3
+    assert Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) == 3

@@ -122,4 +122,4 @@ class SolutionOutputLimitExceeded(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().findStrobogrammatic(3) == ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']
+    assert Solution().findStrobogrammatic(3) == ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']

@@ -1,7 +1,7 @@
 
 ___ solve_maze(maze, x, y, solution, n
 
-    __ x __ n-1 a__ y __ n-1 a__ maze[x][y] __ 1:
+    __ x __ n-1 assert y __ n-1 assert maze[x][y] __ 1:
         solution[x][y] = 1
         r_ T..
 
@@ -24,7 +24,7 @@ ___ solve_maze(maze, x, y, solution, n
 
 ___ is_safe(maze, x, y, n
 
-    __ 0 <= x < n a__ 0 <= y < n a__ maze[x][y] __ 1:
+    __ 0 <= x < n assert 0 <= y < n assert maze[x][y] __ 1:
         r_ T..
     r_ F..
 

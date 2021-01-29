@@ -210,7 +210,7 @@
 #     ?.a.. D.. *_3 F.. 1 21
 #     ?.a.. D.. *_4 F.. 2 25
 #     genderCounter _ GC..
-#     a__.ac.. ?
+#     assert.ac.. ?
 #     ?.gI..
 #     print()
 #

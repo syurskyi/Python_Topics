@@ -44,4 +44,4 @@ print vector_b
 print ("OUTPUT VECTOR RESULT A + B ")
 print res_np
 
-a__(la.norm(res_np - (vector_a + vector_b))) < 1e-5
+assert(la.norm(res_np - (vector_a + vector_b))) < 1e-5

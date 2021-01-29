@@ -24,7 +24,7 @@
 #
 
 #
-# Mock has two a__ methods that are extremely handy: assert_called_with() and assert_called_once_with().
+# Mock has two assert methods that are extremely handy: assert_called_with() and assert_called_once_with().
 # 
 
 mock = Mock(name='Thing', return_value=None)
@@ -36,7 +36,7 @@ mock(1, 2, 3)
 mock.assert_called_once_with(1, 2, 3)
 
 # 
-# Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these a__ methods then your
+# Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these assert methods then your
 # assertion is gone:
 # 
 

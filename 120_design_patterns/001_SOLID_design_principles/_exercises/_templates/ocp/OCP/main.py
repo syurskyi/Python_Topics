@@ -28,7 +28,7 @@
 #
 # 	___ person __ a..
 # 		___
-# 			e__.ap.. ?.a__.cr.. ?
+# 			e__.ap.. ?.assert.cr.. ?
 # 		______ E.. __ e
 # 			print ?
 # 			print ?

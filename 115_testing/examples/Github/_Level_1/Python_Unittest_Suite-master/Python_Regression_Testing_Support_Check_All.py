@@ -21,7 +21,7 @@
 
 #
 # test.support.check__all__(test_case, module, name_of_module=None, extra=(), blacklist=()):
-# a__ that the __all__ variable of module contains all public names.
+# assert that the __all__ variable of module contains all public names.
 #
 # The module�s public names (its API) are detected automatically based on whether they match the public name convention and were defined in module.
 # The 'name_of_module' argument can specify (as a string or tuple thereof) what module(s) an API could be defined in order to be detected as a public API.

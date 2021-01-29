@@ -71,5 +71,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findClosestElements([1,2,3,4,5], 4, 3) == [1,2,3,4]
-    a__ Solution().findClosestElements([1,2,3,4,5], 4, -1) == [1,2,3,4]
+    assert Solution().findClosestElements([1,2,3,4,5], 4, 3) == [1,2,3,4]
+    assert Solution().findClosestElements([1,2,3,4,5], 4, -1) == [1,2,3,4]

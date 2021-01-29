@@ -30,13 +30,13 @@ original = module.ClassName
 
 new_mock = patcher.start()
 
-a__ module.ClassName is not original
-a__ module.ClassName is new_mock
+assert module.ClassName is not original
+assert module.ClassName is new_mock
 
 patcher.stop()
 
-a__ module.ClassName is original
-a__ module.ClassName is not new_mock
+assert module.ClassName is original
+assert module.ClassName is not new_mock
 
 # 
 # A typical use case for this might be for doing multiple patches in the setUp method of a TestCase:
@@ -56,8 +56,8 @@ class MyTest(TestCase):
             self.patcher2.stop()
 
         def test_something(self):
-            a__ package.module.Class1 is self.MockClass1
-            a__ package.module.Class2 is self.MockClass2
+            assert package.module.Class1 is self.MockClass1
+            assert package.module.Class2 is self.MockClass2
 
 MyTest('test_something').run()
  
@@ -76,4 +76,4 @@ class MyTest(TestCase):
             self.addCleanup(patcher.stop)
 
         def test_something(self):
-            a__ package.module.Class is self.MockClass
+            assert package.module.Class is self.MockClass

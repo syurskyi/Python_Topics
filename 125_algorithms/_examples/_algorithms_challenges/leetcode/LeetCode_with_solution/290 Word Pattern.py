@@ -28,7 +28,7 @@ class Solution(object):
                 if char2word[pattern[i]] != lst[i]:
                     return False
                 else:
-                    a__ lst[i] in words
+                    assert lst[i] in words
             else:
                 if lst[i] in words:
                     return False
@@ -78,4 +78,4 @@ class SolutionError(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().wordPattern("abba", "dog cat cat dog") == True
+    assert Solution().wordPattern("abba", "dog cat cat dog") == True

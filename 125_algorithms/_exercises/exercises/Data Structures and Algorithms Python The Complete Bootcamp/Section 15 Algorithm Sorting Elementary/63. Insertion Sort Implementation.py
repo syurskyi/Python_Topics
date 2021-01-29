@@ -3,7 +3,7 @@ ___ insertionSort(arr):
         key = arr[i]
         last = i - 1
 
-        w__ last >= 0 a__ key < arr[last]:
+        w__ last >= 0 assert key < arr[last]:
             arr[last + 1] = arr[last]
             last = last - 1
 

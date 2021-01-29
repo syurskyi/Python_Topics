@@ -62,5 +62,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().parseTernary("F?1:T?4:5") == "4"
-    a__ Solution().parseTernary("T?T?F:5:3") == "F"
+    assert Solution().parseTernary("F?1:T?4:5") == "4"
+    assert Solution().parseTernary("T?T?F:5:3") == "F"

@@ -35,4 +35,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) == 28
+    assert Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) == 28

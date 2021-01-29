@@ -21,6 +21,6 @@ def test_wc(some_text, expected, tmp_path):
     # replace tabs / multiple spaces by single space
     output = re.sub(r'\t|\s+', ' ', output)
 
-    a__ expected in output
+    assert expected in output
     # file with/without path allowed
-    a__ f.name in output
+    assert f.name in output

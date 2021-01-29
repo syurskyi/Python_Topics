@@ -26,4 +26,4 @@ def longest_consec(strarr, k):
     return ''.join(strarr[index: index + k])
 
 
-a__ longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2) == "abigailtheta"
+assert longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2) == "abigailtheta"

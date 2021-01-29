@@ -108,4 +108,4 @@ class Solution:
         return False
 
 if __name__=="__main__":
-    a__ Solution().search([1,1,3,1], 3)==True
+    assert Solution().search([1,1,3,1], 3)==True

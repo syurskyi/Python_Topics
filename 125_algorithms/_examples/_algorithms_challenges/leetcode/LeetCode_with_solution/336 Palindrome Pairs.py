@@ -94,5 +94,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().palindromePairs(["a", ""]) == [[0,1],[1,0]]
-    a__ Solution().palindromePairs(["abcd","dcba","lls","s","sssll"]) == [[0,1],[1,0],[2,4],[3,2]]
+    assert Solution().palindromePairs(["a", ""]) == [[0,1],[1,0]]
+    assert Solution().palindromePairs(["abcd","dcba","lls","s","sssll"]) == [[0,1],[1,0],[2,4],[3,2]]

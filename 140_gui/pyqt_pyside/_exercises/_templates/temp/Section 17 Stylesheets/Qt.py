@@ -850,8 +850,8 @@ def _wrapinstance(func, ptr, base=None):
 
     """
 
-    a__ isinstance(ptr, long), "Argument 'ptr' must be of type <long>"
-    a__ (base is None) or issubclass(base, Qt.QtCore.QObject), (
+    assert isinstance(ptr, long), "Argument 'ptr' must be of type <long>"
+    assert (base is None) or issubclass(base, Qt.QtCore.QObject), (
         "Argument 'base' must be of type <QObject>")
 
     if base is None:

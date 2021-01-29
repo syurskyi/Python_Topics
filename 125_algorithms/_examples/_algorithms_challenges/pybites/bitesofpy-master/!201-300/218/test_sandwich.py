@@ -19,11 +19,11 @@ def test_bacon_sandwich(capfd):
     ingredients = ['bacon', 'lettuce', 'tomato']
     add_ingredients(ingredients)
     actual = capfd.readouterr()[0]
-    a__ actual == SANDWICH_BACON
+    assert actual == SANDWICH_BACON
 
 
 def test_fried_egg_sandwich(capfd):
     ingredients = ['fried egg', 'tomato', 'cucumber']
     add_ingredients(ingredients)
     actual = capfd.readouterr()[0]
-    a__ actual == SANDWICH_EGG
+    assert actual == SANDWICH_EGG

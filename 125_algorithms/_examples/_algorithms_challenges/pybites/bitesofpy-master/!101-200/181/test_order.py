@@ -21,9 +21,9 @@ def order():
 ])
 def test_order(order, num, expected):
     order.add(num)
-    a__ str(order) == expected
+    assert str(order) == expected
 
 
 def test_does_not_use_manual_sort():
-    a__ '.sorted' not in inspect.getsource(OrderedList)
-    a__ '.sort(' not in inspect.getsource(OrderedList)
+    assert '.sorted' not in inspect.getsource(OrderedList)
+    assert '.sort(' not in inspect.getsource(OrderedList)

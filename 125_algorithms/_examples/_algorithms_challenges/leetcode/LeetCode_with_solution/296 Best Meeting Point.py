@@ -42,4 +42,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().minTotalDistance([[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]) == 6
+    assert Solution().minTotalDistance([[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]) == 6

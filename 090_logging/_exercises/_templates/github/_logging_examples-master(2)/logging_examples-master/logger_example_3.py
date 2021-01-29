@@ -25,7 +25,7 @@
 #
 #     ?.i..("Command Line inputs: " + ' '.j.. ___.ar.. 1|
 #
-#     parser _ a__.AP..
+#     parser _ assert.AP..
 #
 #     ?.a.. 'A' t.._in.
 #     ?.a.. 'B' t.._in.

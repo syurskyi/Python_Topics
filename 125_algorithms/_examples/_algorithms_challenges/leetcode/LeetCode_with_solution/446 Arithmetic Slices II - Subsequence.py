@@ -65,4 +65,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().numberOfArithmeticSlices([2, 4, 6, 8, 10]) == 7
+    assert Solution().numberOfArithmeticSlices([2, 4, 6, 8, 10]) == 7

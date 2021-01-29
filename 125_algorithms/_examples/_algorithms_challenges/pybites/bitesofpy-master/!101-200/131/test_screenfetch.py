@@ -49,17 +49,17 @@ def sysinfo():
 
 def test_sysinfo_scrape_type(sysinfo):
     """Test for proper object"""
-    a__ isinstance(sysinfo, dict)
+    assert isinstance(sysinfo, dict)
 
 
 def test_sysinfo_scrape_name(sysinfo):
     """Test for inclusion of the 'Name' key"""
-    a__ sysinfo["Name"] == "mohh@SERENiTY"
+    assert sysinfo["Name"] == "mohh@SERENiTY"
 
 
 def test_sysinfo_scrape_length(sysinfo):
     """Test for correct amount of entries"""
-    a__ len(sysinfo) == 16
+    assert len(sysinfo) == 16
 
 
 def test_sysinfo_scrape_keys(sysinfo):
@@ -69,7 +69,7 @@ def test_sysinfo_scrape_keys(sysinfo):
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
     ]
-    a__ list(sysinfo.keys()) == expected
+    assert list(sysinfo.keys()) == expected
 
 
 def test_sysinfo_scrape_values(sysinfo):
@@ -82,16 +82,16 @@ def test_sysinfo_scrape_values(sysinfo):
         'AMD KAVERI (DRM 2.50.0 / 4.15.0-34-generic, LLVM 6.0.0)', 
         '1886MiB / 6915MiB'
     ]
-    a__ list(sysinfo.values()) == expected
+    assert list(sysinfo.values()) == expected
 
 
 def test_sysinfo_scrape_debian():
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(debian)
-    a__ sysinfo["Resolution"] == "1366x768"
+    assert sysinfo["Resolution"] == "1366x768"
 
 
 def test_sysinfo_scrape_mac():
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(mac)
-    a__ sysinfo["Name"] == "ejo@BlackOil"
+    assert sysinfo["Name"] == "ejo@BlackOil"

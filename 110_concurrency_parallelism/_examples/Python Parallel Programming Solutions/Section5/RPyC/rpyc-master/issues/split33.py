@@ -13,20 +13,20 @@ with open("tmp.txt", "w") as f:
 
 with splitbrain(c):
     pid2 = os.getpid()
-    a__ pid1 != pid2
+    assert pid1 != pid2
     import email
     print (email)
     import os as os2
     pid3 = os2.getpid()
-    a__ pid2 == pid3
+    assert pid2 == pid3
     
-    a__ not os.path.exists("tmp.txt")
+    assert not os.path.exists("tmp.txt")
     
     with localbrain():
         with open("tmp.txt", "r") as f:
-            a__ f.read() == "foobar"
+            assert f.read() == "foobar"
         pid4 = os.getpid()
-        a__ pid4 == pid1
+        assert pid4 == pid1
     
     try:
         open("tmp.txt", "r")
@@ -36,9 +36,9 @@ with splitbrain(c):
             x = ("".join(traceback.format_exception(*sys.exc_info())))
             print(len(x))
     else:
-        a__ False, "expected an IOError"
+        assert False, "expected an IOError"
 
 pid5 = os.getpid()
-a__ pid5 == pid1
+assert pid5 == pid1
 
 print ("done")

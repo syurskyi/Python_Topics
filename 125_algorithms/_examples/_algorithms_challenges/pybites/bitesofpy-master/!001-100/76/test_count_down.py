@@ -11,7 +11,7 @@ DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
 
 
 def test_code_uses_singledispatch_decorator():
-    a__ '@singledispatch' in inspect.getsource(count_down)
+    assert '@singledispatch' in inspect.getsource(count_down)
 
 
 @pytest.mark.parametrize("input_argument", [
@@ -29,7 +29,7 @@ def test_code_uses_singledispatch_decorator():
 def test_count_down_good_inputs(input_argument, capfd):
     count_down(input_argument)
     output = capfd.readouterr()[0]
-    a__ output == DEFAULT_EXPECTED_OUTPUT
+    assert output == DEFAULT_EXPECTED_OUTPUT
 
 
 @pytest.mark.parametrize("input_argument", [
@@ -47,4 +47,4 @@ def test_count_down_float(capfd):
     number = 12.34
     count_down(number)
     output = capfd.readouterr()[0]
-    a__ output == expected
+    assert output == expected

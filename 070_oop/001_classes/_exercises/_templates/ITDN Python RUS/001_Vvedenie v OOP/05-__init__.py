@@ -24,5 +24,5 @@
 # john = ? 'John' 20
 #
 # # Вызов метода print_info
-# a__.p..
+# assert.p..
 # j__.p..

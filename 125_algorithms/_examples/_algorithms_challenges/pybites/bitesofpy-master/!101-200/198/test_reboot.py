@@ -26,12 +26,12 @@ reboot    ~                         Sat Oct  3 18:57
 
 
 def test_default_output():
-    a__ calc_max_uptime(MAC1) == (30, '2019-02-17')
+    assert calc_max_uptime(MAC1) == (30, '2019-02-17')
 
 
 def test_different_output():
-    a__ calc_max_uptime(MAC2) == (22, '2019-09-22')
+    assert calc_max_uptime(MAC2) == (22, '2019-09-22')
 
 
 def test_yet_another_output():
-    a__ calc_max_uptime(MAC3) == (24, '2019-12-11')
+    assert calc_max_uptime(MAC3) == (24, '2019-12-11')

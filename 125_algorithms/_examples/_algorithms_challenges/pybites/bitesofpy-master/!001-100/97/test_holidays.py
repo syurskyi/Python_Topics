@@ -19,4 +19,4 @@ holidays = get_us_bank_holidays()
     ("12", ["Christmas Day"]),
 ])
 def test_get_us_bank_holidays(month, holiday):
-    a__ holidays.get(month) == holiday
+    assert holidays.get(month) == holiday

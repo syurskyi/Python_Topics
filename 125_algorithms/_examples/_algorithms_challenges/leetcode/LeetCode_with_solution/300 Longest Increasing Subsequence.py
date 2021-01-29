@@ -120,4 +120,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4
+    assert Solution().lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4

@@ -101,5 +101,5 @@ class Solution:
 
 
 if __name__=="__main__":
-    a__ Solution().canJump([2, 3, 1, 1, 4])==True
-    a__ Solution().canJump([3, 2, 1, 0, 4])==False
+    assert Solution().canJump([2, 3, 1, 1, 4])==True
+    assert Solution().canJump([3, 2, 1, 0, 4])==False

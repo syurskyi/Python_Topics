@@ -1,7 +1,7 @@
 # c_ Solution
 #     ___ solution candidates ans cur target index su.
 #         __ sum__t..
-#             a__.ap.. c.. |
+#             assert.ap.. c.. |
 #         ____ su.< t..
 #             n _ le. c..
 #             ___ i __ ra.. i.. ?

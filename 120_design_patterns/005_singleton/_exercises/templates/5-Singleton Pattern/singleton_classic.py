@@ -10,10 +10,10 @@
 # s1 _ ?.i..
 # s2 _ ?.i..
 # 
-# a__ s1 is s2
+# assert s1 is s2
 # 
 # s1.ans _ 42
 # 
-# a__ s2.ans == s1.ans
+# assert s2.ans == s1.ans
 # print('Assertions passed.')
 #      

@@ -28,11 +28,11 @@ def shortest_first_name(names):
 
 def test_dedup_and_title_case_names():
     names = dedup_and_title_case_names(NAMES)
-    a__ names.count('Bob Belderbos') == 1
-    a__ names.count('julian sequeira') == 0
-    a__ names.count('Brad Pitt') == 1
-    a__ len(names) == 10
-    a__ all(n.title() in names for n in NAMES)
+    assert names.count('Bob Belderbos') == 1
+    assert names.count('julian sequeira') == 0
+    assert names.count('Brad Pitt') == 1
+    assert len(names) == 10
+    assert all(n.title() in names for n in NAMES)
 
 
 # test_dedup_and_title_case_names()

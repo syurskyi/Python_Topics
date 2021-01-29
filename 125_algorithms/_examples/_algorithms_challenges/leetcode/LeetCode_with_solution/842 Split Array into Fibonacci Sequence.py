@@ -99,5 +99,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().splitIntoFibonacci("123456579") == [123,456,579]
-    a__ Solution().splitIntoFibonacci("01123581321345589") == [0,1,1,2,3,5,8,13,21,34,55,89]
+    assert Solution().splitIntoFibonacci("123456579") == [123,456,579]
+    assert Solution().splitIntoFibonacci("01123581321345589") == [0,1,1,2,3,5,8,13,21,34,55,89]

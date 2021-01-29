@@ -16,33 +16,33 @@ titles = dict(zip(test_titles[::2], test_titles[1::2]))
 
 def test_get_rss_feed():
     doc = get_rss_feed()
-    a__ isinstance(doc, xml.etree.ElementTree.ElementTree)
+    assert isinstance(doc, xml.etree.ElementTree.ElementTree)
 
 
 def test_get_tweets_filters():
     tweets = list(get_tweets(greps=filters, goback_days=2))
-    a__ len(tweets) == 7  # tests timedelta
-    a__ not any('Microsoft Dynamics NAV' in tw for tw in tweets)
-    a__ all(tw in titles.values() for tw in tweets)
+    assert len(tweets) == 7  # tests timedelta
+    assert not any('Microsoft Dynamics NAV' in tw for tw in tweets)
+    assert all(tw in titles.values() for tw in tweets)
     filters_upper = list(map(str.upper, filters))
     tweets = list(get_tweets(greps=filters_upper, goback_days=2))
-    a__ len(tweets) == 7  # should not matter
+    assert len(tweets) == 7  # should not matter
 
 
 def test_get_tweets_all_titles():
     tweets = list(get_tweets(greps=list('aeiou'), goback_days=10))
-    a__ len(tweets) == 100
-    a__ any('Microsoft Dynamics NAV' in tw for tw in tweets)
+    assert len(tweets) == 100
+    assert any('Microsoft Dynamics NAV' in tw for tw in tweets)
 
 
 def test_get_tweets_no_titles():
     tweets = list(get_tweets(greps=['python'], goback_days=1))
-    a__ len(tweets) == 0
+    assert len(tweets) == 0
 
 
 def test_gen_hashtags():
     for title, expected_hashtag in titles.items():
         hashtag = ' '.join(gen_hashtags(title, filters))
         if title != hashtag:
-            a__ hashtag not in title
-        a__ hashtag in expected_hashtag
+            assert hashtag not in title
+        assert hashtag in expected_hashtag

@@ -19,7 +19,7 @@ def test_straight_quit(input_mock, capsys):
     call_print_colors()
     actual = capsys.readouterr()[0].strip()
     expected = 'bye'
-    a__ actual == expected
+    assert actual == expected
 
 
 @patch("builtins.input", side_effect=['blue', 'quit'])
@@ -29,7 +29,7 @@ def test_one_valid_color_then_quit(input_mock, capsys):
     call_print_colors()
     actual = capsys.readouterr()[0].strip()
     expected = 'blue\nbye'
-    a__ actual == expected
+    assert actual == expected
 
 
 @patch("builtins.input", side_effect=['green', 'quit'])
@@ -39,7 +39,7 @@ def test_one_invalid_color_then_quit(input_mock, capsys):
     call_print_colors()
     actual = capsys.readouterr()[0].strip()
     expected = f'{NOT_VALID}\nbye'
-    a__ actual == expected
+    assert actual == expected
 
 
 @patch("builtins.input", side_effect=['white', 'red', 'quit'])
@@ -49,7 +49,7 @@ def test_invalid_then_valid_color_then_quit(nput_mock, capsys):
     call_print_colors()
     actual = capsys.readouterr()[0].strip()
     expected = f'{NOT_VALID}\nred\nbye'
-    a__ actual == expected
+    assert actual == expected
 
 
 @patch("builtins.input", side_effect=['yellow', 'orange', 'quit'])
@@ -60,4 +60,4 @@ def test_valid_then_invalid_color_then_quit(input_mock, capsys):
     call_print_colors()
     actual = capsys.readouterr()[0].strip()
     expected = f'yellow\n{NOT_VALID}\nbye'
-    a__ actual == expected
+    assert actual == expected

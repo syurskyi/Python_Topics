@@ -63,5 +63,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().PredictTheWinner([1, 5, 2]) == False
-    a__ Solution().PredictTheWinner([1, 5, 233, 7]) == True
+    assert Solution().PredictTheWinner([1, 5, 2]) == False
+    assert Solution().PredictTheWinner([1, 5, 233, 7]) == True

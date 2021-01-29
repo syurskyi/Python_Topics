@@ -77,4 +77,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().canReorderDoubled([4,-2,2,-4]) == True
+    assert Solution().canReorderDoubled([4,-2,2,-4]) == True

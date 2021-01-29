@@ -6,7 +6,7 @@ from mday import get_mothers_day_date
 
 
 def test_check_type():
-    a__ type(get_mothers_day_date(2019)) == date
+    assert type(get_mothers_day_date(2019)) == date
 
 
 @pytest.mark.parametrize('arg,expected', [
@@ -23,4 +23,4 @@ def test_check_type():
     (2024, date(2024, 5, 12)),
 ])
 def test_return_various_years(arg, expected):
-    a__ get_mothers_day_date(arg) == expected
+    assert get_mothers_day_date(arg) == expected

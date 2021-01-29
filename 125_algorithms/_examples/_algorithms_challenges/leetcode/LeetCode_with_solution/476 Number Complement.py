@@ -24,4 +24,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findComplement(5) == 2
+    assert Solution().findComplement(5) == 2

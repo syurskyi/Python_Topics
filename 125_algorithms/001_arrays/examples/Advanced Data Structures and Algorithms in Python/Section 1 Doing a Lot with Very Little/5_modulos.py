@@ -31,7 +31,7 @@ for tests in range(100):
     k = randint(1, 10)
     n_cubed_result = in_n_cubed(array, k)
     efficient_result = efficient(array, k)
-    a__ n_cubed_result == efficient_result, \
+    assert n_cubed_result == efficient_result, \
         'n_cubed={}, efficient={}, array={}, k={}'.format(
             n_cubed_result,
             efficient_result,

@@ -71,4 +71,4 @@ class SolutionTLE(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) == 23
+    assert Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) == 23

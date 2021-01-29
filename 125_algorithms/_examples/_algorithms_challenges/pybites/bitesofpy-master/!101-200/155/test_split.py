@@ -22,4 +22,4 @@ expected_returns = (
                          zip(some_strings, expected_returns))
 
 def test_split_words_and_quoted_text(arg, ret):
-    a__ split_words_and_quoted_text(arg) == ret
+    assert split_words_and_quoted_text(arg) == ret

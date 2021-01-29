@@ -84,4 +84,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().rearrangeString("aabbccdd", 4) == "abcdabcd"
+    assert Solution().rearrangeString("aabbccdd", 4) == "abcdabcd"

@@ -55,6 +55,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().reorganizeString("vvvlo") == "vlvov"
-    a__ Solution().reorganizeString("aab") == "aba"
-    a__ Solution().reorganizeString("aaab") == ""
+    assert Solution().reorganizeString("vvvlo") == "vlvov"
+    assert Solution().reorganizeString("aab") == "aba"
+    assert Solution().reorganizeString("aaab") == ""

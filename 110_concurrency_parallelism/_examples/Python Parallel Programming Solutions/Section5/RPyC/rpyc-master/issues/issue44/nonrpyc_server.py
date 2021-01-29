@@ -8,7 +8,7 @@ files = [open("/tmp/rpyc-test-%d" % (i,), "w") for i in range(1000)]
 sockets = [socket.socket() for i in range(100)]
 
 listener = socket.socket()
-a__ listener.fileno() > 1024
+assert listener.fileno() > 1024
 
 listener.bind(("localhost", 13388))
 listener.listen(10)
@@ -25,7 +25,7 @@ def handle_sock(s):
 
 while True:
     s, _ = listener.accept()
-    a__ s.fileno() > 1024
+    assert s.fileno() > 1024
     t = threading.Thread(target = handle_sock, args = (s,))
     t.start()
 

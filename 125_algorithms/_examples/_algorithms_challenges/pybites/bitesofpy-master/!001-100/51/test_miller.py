@@ -7,16 +7,16 @@ START_DATE = BITE_CREATED_DT - timedelta(days=1000)
 
 
 def test_py2_earth_hours_left():
-    a__ py2_earth_hours_left() == 16152.6
+    assert py2_earth_hours_left() == 16152.6
 
 
 def test_py2_miller_min_left():
-    a__ py2_miller_min_left() == 15.8
+    assert py2_miller_min_left() == 15.8
 
 
 def test_py2_earth_hours_left_another_start_date():
-    a__ py2_earth_hours_left(START_DATE) == 40152.6
+    assert py2_earth_hours_left(START_DATE) == 40152.6
 
 
 def test_py2_miller_min_left_another_start_date():
-    a__ py2_miller_min_left(START_DATE) == 39.29
+    assert py2_miller_min_left(START_DATE) == 39.29

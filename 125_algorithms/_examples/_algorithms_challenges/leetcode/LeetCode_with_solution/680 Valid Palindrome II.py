@@ -43,5 +43,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().validPalindrome("aba") == True
-    a__ Solution().validPalindrome("abca") == True
+    assert Solution().validPalindrome("aba") == True
+    assert Solution().validPalindrome("abca") == True

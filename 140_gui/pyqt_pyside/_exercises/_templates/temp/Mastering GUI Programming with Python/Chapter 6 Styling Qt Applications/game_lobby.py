@@ -239,7 +239,7 @@
 #         ?.sCA.. 1, ?.?C.. orange
 #         ?_brush _ ?.?B.. ?
 #
-#         window_palette _ a__.p..
+#         window_palette _ assert.p..
 #         ?.sB..
 #             ?.?P...W..
 #             ?_brush

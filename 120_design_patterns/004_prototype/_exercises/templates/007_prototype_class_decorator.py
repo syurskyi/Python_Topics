@@ -177,7 +177,7 @@
 #     p2 _ P.. (x_100, y_150)
 #     print(p2)
 #     print("p1.identifier !_ p2.identifier")
-#     a__ p1.i.. !_ p2.i..
+#     assert p1.i.. !_ p2.i..
 #
 #     print("\nIdentifiers in the instance pool")
 #     print(P___.a_i..
@@ -197,7 +197,7 @@
 #     p4 _ P__.cl.. p3.i..
 #     print(p4)
 #     print("p1.identifier == p3.identifier == p4.identifier")
-#     a__ p1.i.. __ p3.i.. __ p4.i..
+#     assert p1.i.. __ p3.i.. __ p4.i..
 #
 #     print("\nIdentifiers in the instance pool")
 #     print(P___.a_i..

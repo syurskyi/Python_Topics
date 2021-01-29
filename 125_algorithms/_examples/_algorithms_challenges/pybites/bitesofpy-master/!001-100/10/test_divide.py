@@ -4,10 +4,10 @@ from divide import positive_divide
 
 
 def test_positive_divide_good_values():
-    a__ positive_divide(1, 2) == 0.5
-    a__ positive_divide(1, 0) == 0
-    a__ positive_divide(-1, -2) == 0.5
-    a__ positive_divide(1.5, 2) == 0.75
+    assert positive_divide(1, 2) == 0.5
+    assert positive_divide(1, 0) == 0
+    assert positive_divide(-1, -2) == 0.5
+    assert positive_divide(1.5, 2) == 0.75
 
 
 def test_positive_divide_exceptions():

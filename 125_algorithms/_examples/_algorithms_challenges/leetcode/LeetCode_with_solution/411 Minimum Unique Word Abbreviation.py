@@ -73,4 +73,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().minAbbreviation("apple", ["blade"]) == "a4"
+    assert Solution().minAbbreviation("apple", ["blade"]) == "a4"

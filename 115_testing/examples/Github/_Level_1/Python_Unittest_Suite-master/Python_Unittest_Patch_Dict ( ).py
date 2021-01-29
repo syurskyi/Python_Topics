@@ -36,9 +36,9 @@
 foo = {}
 
 with patch.dict(foo, {'newkey': 'newvalue'}):
-        a__ foo == {'newkey': 'newvalue'}
+        assert foo == {'newkey': 'newvalue'}
 
-a__ foo == {}
+assert foo == {}
  
 
 import os
@@ -49,7 +49,7 @@ with patch.dict('os.environ', {'newkey': 'newvalue'}):
 
 # OUTPUT: 'newvalue'
 
-a__ 'newkey' not in os.environ
+assert 'newkey' not in os.environ
 
 # 
 # Keywords can be used in the patch.dict() call to set values in the dictionary:
@@ -91,9 +91,9 @@ thing = Container()
 thing['one'] = 1
 
 with patch.dict(thing, one=2, two=3):
-        a__ thing['one'] == 2
+        assert thing['one'] == 2
 
-       a__ thing['two'] == 3
+       assert thing['two'] == 3
 
-a__ thing['one'] == 1
-a__ list(thing) == ['one']
+assert thing['one'] == 1
+assert list(thing) == ['one']

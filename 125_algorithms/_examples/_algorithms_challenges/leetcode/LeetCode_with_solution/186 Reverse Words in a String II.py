@@ -33,4 +33,4 @@ class Solution(object):
 if __name__ == "__main__":
     lst = list("the sky is blue")
     Solution().reverseWords(lst)
-    a__ "".join(lst) == "blue is sky the"
+    assert "".join(lst) == "blue is sky the"

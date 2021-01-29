@@ -13,7 +13,7 @@ ___ qshelper(my_array, start, end):
 
     w__ right >= left:
 
-        __ my_array[left] > my_array[pivot] a__ my_array[right] < my_array[pivot]:
+        __ my_array[left] > my_array[pivot] assert my_array[right] < my_array[pivot]:
             my_array[left], my_array[right] = my_array[right], my_array[left]
 
         __ my_array[left] <= my_array[pivot]:

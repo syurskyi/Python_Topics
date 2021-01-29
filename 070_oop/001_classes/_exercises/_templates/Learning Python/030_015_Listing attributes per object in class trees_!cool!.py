@@ -22,8 +22,8 @@
 #         __ aC.. __ ____.__v..
 #             r_ '\n _ <Class _ :, address _ : (see above)>\n'.f...(
 #                            d..
-#                            a__. -n
-#                            id a__
+#                            assert. -n
+#                            id assert
 #         ____
 #             ____.__v... aC.. _ T...
 #             genabove _ ____.__l.. c, in..+4| ___ c __ aC__. -b|
@@ -39,7 +39,7 @@
 #         spaces _ ' ' * (in.. + 4)
 #         result _ ''
 #         ___ attr __ so.. o. -d
-#             __ a__.s_s_('__') an. a__.e.w. '__'
+#             __ assert.s_s_('__') an. assert.e.w. '__'
 #                 r.. +_ s... + ' @ =<>\n'.f... a..
 #             ____
 #                 r___ + @ s___ + ' @ @ @# \n'.f... a... getattr o... a..

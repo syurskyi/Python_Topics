@@ -44,10 +44,10 @@
 #         WITHDRAW _ 1
 #
 #     ___ invoke
-#         __ action __ A__.D..
+#         __ action __ assert.D..
 #             acc___.de.. am..
 #             success _ T..
-#         ____ action __ A__.W..
+#         ____ action __ assert.W..
 #             success _ acc___.wi.. am..
 #
 #     ___ undo
@@ -56,7 +56,7 @@
 #         # strictly speaking this is not correct
 #         # (you don't undo a deposit by withdrawing)
 #         # but it works for this demo, so...
-#         __ action __ A__.D..
+#         __ action __ assert.D..
 #             acc__.wi.. am..
 #         ____ action __ A___.W..
 #             acc__.de.. am..
@@ -64,14 +64,14 @@
 #
 # __ _______ __ ______
 #     ba _ BA..
-#     cmd _ BAC.. ? BAC___.A__.DE.. 100
+#     cmd _ BAC.. ? BAC___.assert.DE.. 100
 #     ?.in..
 #     print('After $100 deposit:' b.
 #
 #     c__.un..
 #     print('$100 deposit undone:' b.
 #
-#     illegal_cmd _ BAC.. b. BAC__.A__.W.. 1000
+#     illegal_cmd _ BAC.. b. BAC__.assert.W.. 1000
 #     ?.in..
 #     print('After impossible withdrawal:', b.
 #     i_c_.un..

@@ -35,8 +35,8 @@ class TestAsync(unittest.TestCase):
         visited = []
 
         def f(res):
-            a__ res.ready
-            a__ not res.error
+            assert res.ready
+            assert not res.error
             visited.append("f")
 
         def g(res):

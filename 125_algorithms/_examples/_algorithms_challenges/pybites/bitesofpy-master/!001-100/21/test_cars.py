@@ -5,24 +5,24 @@ from cars import (get_all_jeeps, get_first_model_each_manufacturer,
 def test_get_all_jeeps():
     expected = 'Grand Cherokee, Cherokee, Trailhawk, Trackhawk'
     actual = get_all_jeeps()
-    a__ type(actual) == str
-    a__ actual == expected
+    assert type(actual) == str
+    assert actual == expected
 
 
 def test_get_first_model_each_manufacturer():
     actual = get_first_model_each_manufacturer()
     expected = ['Falcon', 'Commodore', 'Maxima', 'Civic', 'Grand Cherokee']
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_get_all_matching_models_default_grep():
     expected = ['Trailblazer', 'Trailhawk']
-    a__ get_all_matching_models() == expected
+    assert get_all_matching_models() == expected
 
 
 def test_get_all_matching_models_different_grep():
     expected = ['Accord', 'Commodore', 'Falcon']
-    a__ get_all_matching_models(grep='CO') == expected
+    assert get_all_matching_models(grep='CO') == expected
 
 
 def test_sort_dict_alphabetically():
@@ -37,4 +37,4 @@ def test_sort_dict_alphabetically():
         'Jeep': ['Cherokee', 'Grand Cherokee', 'Trackhawk', 'Trailhawk'],
         'Nissan': ['350Z', 'Maxima', 'Navara', 'Pulsar'],
     }
-    a__ actual == expected
+    assert actual == expected

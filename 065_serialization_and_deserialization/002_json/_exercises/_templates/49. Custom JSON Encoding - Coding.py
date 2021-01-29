@@ -369,7 +369,7 @@
 # 
 # 0j._f..reg.. d..t_
 # ___ _ arg
-#     r_ a__.i.f.
+#     r_ assert.i.f.
 # 
 # 
 # 0j._f..reg.. se.

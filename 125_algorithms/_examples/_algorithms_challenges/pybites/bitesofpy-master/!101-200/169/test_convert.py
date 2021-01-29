@@ -15,7 +15,7 @@ def test_unsupported_formats():
 
 def test_with_mixed_case_formats():
     expected = 153.67
-    a__ convert(60.5, "CM") == expected
+    assert convert(60.5, "CM") == expected
 
 
 @pytest.mark.parametrize(
@@ -46,7 +46,7 @@ def test_with_mixed_case_formats():
     ],
 )
 def test_convert_from_inches_to_centimeters(input_argument, expected_output):
-    a__ convert(input_argument, "cm") == expected_output
+    assert convert(input_argument, "cm") == expected_output
 
 
 @pytest.mark.parametrize(
@@ -77,4 +77,4 @@ def test_convert_from_inches_to_centimeters(input_argument, expected_output):
     ],
 )
 def test_convert_from_centimeters_to_inches(input_argument, expected_output):
-    a__ convert(input_argument, "in") == expected_output
+    assert convert(input_argument, "in") == expected_output

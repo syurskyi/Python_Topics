@@ -20,7 +20,7 @@ def test_one_operation_within_time(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    a__ not output
+    assert not output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3]))
@@ -32,7 +32,7 @@ def test_two_operations_one_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    a__ not output
+    assert not output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4]))
@@ -47,7 +47,7 @@ def test_three_operations_two_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    a__ not output
+    assert not output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4, 0, 5]))
@@ -62,7 +62,7 @@ def test_four_operations_three_took_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    a__ output.strip() == ALERT_MSG
+    assert output.strip() == ALERT_MSG
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 3, 0, 3, 0, 4, 0, 5]))
@@ -81,4 +81,4 @@ def test_four_operations_took_too_long_but_on_two_days(clean_cache, capfd):
         with timeit():
             pass
     output = capfd.readouterr()[0]
-    a__ not output
+    assert not output

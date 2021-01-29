@@ -50,4 +50,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().totalHammingDistance([4, 14, 2]) == 6
+    assert Solution().totalHammingDistance([4, 14, 2]) == 6

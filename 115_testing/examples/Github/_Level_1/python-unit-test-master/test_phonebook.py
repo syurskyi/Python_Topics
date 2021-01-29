@@ -43,7 +43,7 @@ class PhoneBookTest(unittest.TestCase):
     def test_is_consistent_with_different_entries(self):
         # Arrange step to add entries
         # Act step where we check for consistency
-        # a__ whether it is or not
+        # assert whether it is or not
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Anna", "012345")
         self.assertTrue(self.phonebook.is_consistent())

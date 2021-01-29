@@ -61,4 +61,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().maxSumTwoNoOverlap([0,6,5,2,2,5,1,9,4], 1, 2) == 20
+    assert Solution().maxSumTwoNoOverlap([0,6,5,2,2,5,1,9,4], 1, 2) == 20

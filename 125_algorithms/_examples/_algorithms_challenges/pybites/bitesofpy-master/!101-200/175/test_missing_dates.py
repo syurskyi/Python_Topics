@@ -51,4 +51,4 @@ def test_get_missing_dates(missing, month):
     expected = sorted(d for d in missing if
                       d not in (start, end))
 
-    a__ actual == expected
+    assert actual == expected

@@ -105,4 +105,4 @@ class Solution:
         )
 
 if __name__ == "__main__":
-    a__ Solution().lenLongestFibSubseq([1,2,3,4,5,6,7,8]) == 5
+    assert Solution().lenLongestFibSubseq([1,2,3,4,5,6,7,8]) == 5

@@ -85,5 +85,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().calculateMinimumHP([[-3, 5]]) == 4
-    a__ Solution().calculateMinimumHP([[2, 1], [1, -1]]) == 1
+    assert Solution().calculateMinimumHP([[-3, 5]]) == 4
+    assert Solution().calculateMinimumHP([[2, 1], [1, -1]]) == 1

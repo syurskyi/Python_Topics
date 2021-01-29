@@ -34,9 +34,9 @@ if __name__ == "__main__":
     # set x attribute (will issue print)
     my_instance.x = 4
     # access x attribute (will issue print)
-    a__ my_instance.x == 4
+    assert my_instance.x == 4
 
     # set y attribute (will pass silently)
     my_instance.y = 2
     # access x attribute (will pass silently)
-    a__ my_instance.y == 2
+    assert my_instance.y == 2

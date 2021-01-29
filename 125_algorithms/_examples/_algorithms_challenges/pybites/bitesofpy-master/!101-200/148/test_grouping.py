@@ -46,4 +46,4 @@ VOLKSWAGEN
 def test_group_cars_by_manufacturer(capfd):
     group_cars_by_manufacturer(cars)
     actual_output, _ = capfd.readouterr()
-    a__ actual_output.strip() == expected_output.strip()
+    assert actual_output.strip() == expected_output.strip()

@@ -53,4 +53,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().sortTransformedArray([-4, -2, 2, 4], -1, 3, 5) == [-23, -5, 1, 7]
+    assert Solution().sortTransformedArray([-4, -2, 2, 4], -1, 3, 5) == [-23, -5, 1, 7]

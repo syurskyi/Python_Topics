@@ -104,7 +104,7 @@
 # c_ Post D..
 #     author _ RF.. A..
 #
-# P__.o__.f__ .a__.n..
+# P__.o__.f__ .assert.n..
 #
 # # In the code above, using a document reference, we can easily find the author of the first post.
 # # There are quite a few more field classes (and parameters) than what we introduced here, so be sure to check out

@@ -47,4 +47,4 @@ class Solution:
         return max_gap
 
 if __name__ == "__main__":
-    a__ Solution().maximumGap([1, 1000]) == 999
+    assert Solution().maximumGap([1, 1000]) == 999

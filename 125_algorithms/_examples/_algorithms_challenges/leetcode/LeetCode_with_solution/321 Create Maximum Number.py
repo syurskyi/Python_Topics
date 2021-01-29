@@ -38,7 +38,7 @@ class SolutionTLE(object):
         n1, n2 = len(nums1), len(nums2)
         for l1 in xrange(min(n1, k)+1):
             l2 = k - l1
-            a__ l2 >= 0
+            assert l2 >= 0
             A1, A2 = self.maxNumberSingle(nums1, l1), self.maxNumberSingle(nums2, l2)
             cur = self.maxNumberDual(A1, A2)
             if not maxa or self.eval(maxa) < self.eval(cur):

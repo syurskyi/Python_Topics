@@ -42,7 +42,7 @@
 # '''
 #
 # # %%
-# print ._1.a__ a_2.a__
+# print ._1.assert a_2.assert
 #
 # # %%
 # '''
@@ -63,7 +63,7 @@
 # '''
 #
 # # %%
-# print._1.a__ ._2.a__
+# print._1.assert ._2.assert
 #
 # # %%
 # '''
@@ -85,7 +85,7 @@
 # '''
 #
 # # %%
-# ._1.a__ _ 0
+# ._1.assert _ 0
 #
 # # %%
 # '''
@@ -103,7 +103,7 @@
 # '''
 #
 # # %%
-# print ._1.a__ ._2.a__
+# print ._1.assert ._2.assert
 #
 # # %%
 # '''
@@ -116,14 +116,14 @@
 # # %%
 # ._1 _ ?
 # print ._1.-d
-# print ._1.a__
-# print g.... ._1 'a__'
+# print ._1.assert
+# print g.... ._1 'assert'
 #
 # # %%
-# setattr ._1 'a__' 0
+# setattr ._1 'assert' 0
 # print ._1.-d
-# print ._1.a__
-# print g.... ._1 'a__'
+# print ._1.assert
+# print g.... ._1 'assert'
 #
 # # %%
 # '''

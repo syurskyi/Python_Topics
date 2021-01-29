@@ -16,26 +16,26 @@ def list2():
 
 
 def test_mean_median_start_first_instance(list1):
-    a__ list1.mean == 3
-    a__ list1.median == 3
+    assert list1.mean == 3
+    assert list1.median == 3
 
 
 def test_append_and_new_stats_first_instance(list1):
     list1.append(7)
-    a__ list1.mean == 4
-    a__ list1.median == 4
+    assert list1.mean == 4
+    assert list1.median == 4
 
 
 def test_mean_median_start_second_instance(list2):
-    a__ list2.mean == 4.2
-    a__ list2.median == 4
+    assert list2.mean == 4.2
+    assert list2.median == 4
 
 
 def test_append_and_new_stats_second_instance(list2):
     list2.append(9.0)  # float ok too
     list2.append(Decimal(11))  # decimal ok too
-    a__ round(list2.mean, 2) == 5.86
-    a__ list2.median == 5
+    assert round(list2.mean, 2) == 5.86
+    assert list2.median == 5
 
 
 @pytest.mark.parametrize("arg", ['a', ['a'], {'a': 1}])
@@ -60,4 +60,4 @@ def test_can_append_list_of_ints(list1):
         list1 += [1, 2, 3]
     except Exception as exc:
         pytest.fail(exc)
-    a__ list1 == [1, 3, 5, 1, 2, 3]
+    assert list1 == [1, 3, 5, 1, 2, 3]

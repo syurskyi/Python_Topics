@@ -7,4 +7,4 @@ def test_make_html():
     def get_text(text='I code with PyBites'):
         return text
 
-    a__ get_text() == '<p><strong>I code with PyBites</strong></p>'
+    assert get_text() == '<p><strong>I code with PyBites</strong></p>'

@@ -25,8 +25,8 @@ other = object()
 @patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
 
     def test_function(thing, other):
-        a__ isinstance(thing, MagicMock)
-        a__ isinstance(other, MagicMock)
+        assert isinstance(thing, MagicMock)
+        assert isinstance(other, MagicMock)
 
 test_function()
  
@@ -38,10 +38,10 @@ test_function()
 @patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
 
 def test_function(mock_exit, other, thing):
-        a__ 'other' in repr(other)
-        a__ 'thing' in repr(thing)
+        assert 'other' in repr(other)
+        assert 'thing' in repr(thing)
 
-        a__ 'exit' in repr(mock_exit)
+        assert 'exit' in repr(mock_exit)
 
 test_function()
 
@@ -50,8 +50,8 @@ test_function()
 # 
 
 with patch.multiple('__main__', thing=DEFAULT, other=DEFAULT) as values:
-        a__ 'other' in repr(values['other'])
-        a__ 'thing' in repr(values['thing'])
+        assert 'other' in repr(values['other'])
+        assert 'thing' in repr(values['thing'])
 
-        a__ values['thing'] is thing
-        a__ values['other'] is other
+        assert values['thing'] is thing
+        assert values['other'] is other

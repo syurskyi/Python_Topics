@@ -74,7 +74,7 @@
 #     ?.? _ ?
 #     ?.s..
 #
-#     owner _ f_a_b_e.. a__.e..
+#     owner _ f_a_b_e.. assert.e..
 #     ?.s_i__.ap.. ?.i..
 #     ?.s..
 #
@@ -119,7 +119,7 @@
 #             booking _ b
 #             b..
 #
-#     ?.g_o_i. _ a__.i.
+#     ?.g_o_i. _ assert.i.
 #     ?.g_s_i _ s__.id
 #     ?.c_i_d.. _ c..
 #     ?.c_o_d.. _ c..
@@ -132,7 +132,7 @@
 #     account _ f_a_b_e.. ?
 #
 #     booked_cages _ ?.o.. \
-#         .f.. bookings__guest_owner_id _ a__.i.) \
+#         .f.. bookings__guest_owner_id _ assert.i.) \
 #         .o..'bookings' 'name'
 #
 #     ___ map_cage_to_booking cage booking)
@@ -143,7 +143,7 @@
 #         map_cage_to_booking c.. b..
 #         ___ cage __ b_c..
 #         ___ booking __ c__.b..
-#         __ b__.g_o_i. __ a__.i.
+#         __ b__.g_o_i. __ assert.i.
 #     ]
 #
 #     r_ ?

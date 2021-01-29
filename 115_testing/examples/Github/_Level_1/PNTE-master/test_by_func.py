@@ -3,10 +3,10 @@
 from nose.tools import with_setup, raises
 from myfunc import add
 
-# test with a__
+# test with assert
 def test_add_nums():
   actual = add(1,10)
-  a__ actual == 11
+  assert actual == 11
 
 # before test
 def setup_func():
@@ -20,7 +20,7 @@ def teardown_func():
 @with_setup(setup_func,teardown_func)
 def test_add_Numbers():
   actual = add(-1,1)
-  a__ actual == 0
+  assert actual == 0
 
 # @raise Error
 @raises(RuntimeError)

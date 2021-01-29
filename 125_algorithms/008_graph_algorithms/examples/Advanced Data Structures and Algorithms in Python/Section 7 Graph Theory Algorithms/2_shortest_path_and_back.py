@@ -73,7 +73,7 @@ add_undirected(edges1, 5, 9, 12)
 add_undirected(edges1, 9, 10, 12)
 add_undirected(edges1, 5, 1, 1)
 result = get_shortest_and_back(12, edges1)
-a__ result == 21, 'got={}, expected={}'.format(result, 21)
+assert result == 21, 'got={}, expected={}'.format(result, 21)
 
 edges2 = []
 add_undirected(edges2, 1, 2, 1)
@@ -82,7 +82,7 @@ add_undirected(edges2, 2, 4, 2)
 add_undirected(edges2, 3, 4, 1)
 add_undirected(edges2, 1, 3, 2)
 result = get_shortest_and_back(4, edges2)
-a__ result == 6, 'got={}, expected={}'.format(result, 6)
+assert result == 6, 'got={}, expected={}'.format(result, 6)
 
 edges3 = []
 add_undirected(edges3, 1, 2, 4)
@@ -92,4 +92,4 @@ add_undirected(edges3, 2, 4, 9)
 add_undirected(edges3, 1, 4, 16)
 add_undirected(edges3, 3, 1, 9)
 result = get_shortest_and_back(4, edges3)
-a__ result == 26, 'got={}, expected={}'.format(result, 26)
+assert result == 26, 'got={}, expected={}'.format(result, 26)

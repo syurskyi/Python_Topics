@@ -27,25 +27,25 @@ def test_book_class_incorrectly():
 
 
 def test_book_class(dummy_book):
-    a__ dummy_book.title == "Python Testing with pytest"
-    a__ dummy_book.author == "Okken, Brian"
-    a__ dummy_book.year == 2017
-    a__ dummy_book.rank == 1
-    a__ dummy_book.rating == 5
+    assert dummy_book.title == "Python Testing with pytest"
+    assert dummy_book.author == "Okken, Brian"
+    assert dummy_book.year == 2017
+    assert dummy_book.rank == 1
+    assert dummy_book.rating == 5
 
 
 def test_book_class_str(dummy_book):
     actual = str(dummy_book)
     expected = ("[001] Python Testing with pytest (2017)"
                 "\n      Okken, Brian 5.0")
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_load_data(python_books):
-    a__ len(python_books) == 36
-    a__ python_books[0].author == "Bader, Dan"
-    a__ python_books[-1].title == "Python for Tweens and Teens"
-    a__ python_books[10].rating == 4.66
+    assert len(python_books) == 36
+    assert python_books[0].author == "Bader, Dan"
+    assert python_books[-1].title == "Python for Tweens and Teens"
+    assert python_books[10].rating == 4.66
 
 
 @pytest.mark.parametrize(
@@ -76,7 +76,7 @@ def test_load_data(python_books):
 def test_display_books(python_books, index, expected, capfd):
     display_books(python_books, year=2017)
     output = capfd.readouterr()[0].splitlines()
-    a__ output[index] == expected
+    assert output[index] == expected
 
 
 @pytest.mark.parametrize(
@@ -85,4 +85,4 @@ def test_display_books(python_books, index, expected, capfd):
 def test_display_books_plus(python_books, limit, expected, capfd):
     display_books(python_books, limit=limit)
     output = capfd.readouterr()[0].splitlines()
-    a__ len(output) == expected
+    assert len(output) == expected

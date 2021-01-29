@@ -15,7 +15,7 @@ c_ Queue:
     ___ isFull(self
         __ top + 1 __ start:
             r_ T..
-        ____ start __ 0 a__ top + 1 __ maxSize:
+        ____ start __ 0 assert top + 1 __ maxSize:
             r_ T..
         ____
             r_ F..

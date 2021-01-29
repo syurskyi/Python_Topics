@@ -62,4 +62,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) == 6
+    assert Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) == 6

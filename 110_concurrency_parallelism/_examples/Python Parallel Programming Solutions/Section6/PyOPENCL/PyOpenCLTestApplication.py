@@ -53,4 +53,4 @@ if __name__ == "__main__":
     device_info.print_device_info()
     cpu_array_sum(a, b)  # Call the function that sums two arrays on the CPU
     gpu_array_sum(a, b)  # Call the function that sums two arrays on the GPU
-    a__ (la.norm(cpu_result - gpu_result)) < 1e-5
+    assert (la.norm(cpu_result - gpu_result)) < 1e-5

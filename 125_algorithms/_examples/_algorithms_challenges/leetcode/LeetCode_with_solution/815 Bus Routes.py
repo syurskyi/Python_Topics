@@ -107,4 +107,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) == 2
+    assert Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) == 2

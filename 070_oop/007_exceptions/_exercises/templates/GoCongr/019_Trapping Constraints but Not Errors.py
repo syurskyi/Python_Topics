@@ -6,5 +6,5 @@
 # f(1) # error
 #
 # ___ reciprocal x
-#     a.. x != 0              # A useless a__!
+#     a.. x != 0              # A useless assert!
 #     r_ 1 / x               # Python checks for zero automatically

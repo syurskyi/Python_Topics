@@ -42,7 +42,7 @@
 # ___ get_all_tools
 #     """
 #     scan tools dir and get a list of all tools
-#     a__ that all tools menus are uppercase
+#     assert that all tools menus are uppercase
 #     :return: list list of all tools
 #     """
 #

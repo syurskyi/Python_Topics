@@ -57,9 +57,9 @@ with patch('__main__.Class') as MockClass:
         instance = MockClass.return_value
         instance.method.return_value = 'foo'
 
-        a__ Class() is instance
+        assert Class() is instance
 
-     a__ Class().method() == 'foo'
+     assert Class().method() == 'foo'
 
 # 
 # If you use spec or spec_set and patch() is replacing a class, then the return value of the created mock will have the same spec.
@@ -72,7 +72,7 @@ MockClass = patcher.start()
 
 instance = MockClass()
 
-a__ isinstance(instance, Original)
+assert isinstance(instance, Original)
 
 patcher.stop()
 
@@ -85,7 +85,7 @@ patcher.stop()
 thing = object()
 
 with patch('__main__.thing', new_callable=NonCallableMock) as mock_thing:
-        a__ thing is mock_thing
+        assert thing is mock_thing
 
         thing()
 
@@ -104,7 +104,7 @@ from io import StringIO
 
        foo()
 
-       a__ mock_stdout.getvalue() == 'Something\n'
+       assert mock_stdout.getvalue() == 'Something\n'
 
 test()
 

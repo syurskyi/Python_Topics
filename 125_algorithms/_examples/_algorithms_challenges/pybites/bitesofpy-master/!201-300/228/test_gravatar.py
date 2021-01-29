@@ -28,4 +28,4 @@ EXPECTED = iter([  # make an iterator
 def test_gravatar(email, size):
     actual = create_gravatar_url(email, size=size)
     expected = next(EXPECTED)
-    a__ actual == expected
+    assert actual == expected

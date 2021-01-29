@@ -49,5 +49,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().judgePoint24([4, 1, 8, 7]) == True
-    a__ Solution().judgePoint24([1, 2, 1, 2]) == False
+    assert Solution().judgePoint24([4, 1, 8, 7]) == True
+    assert Solution().judgePoint24([1, 2, 1, 2]) == False

@@ -30,6 +30,6 @@ from datetime import date
 
         mock_date.side_effect = lambda *args, **kw: date(*args, **kw)
 
-        a__ mymodule.date.today() == date(2010, 10, 8)
+        assert mymodule.date.today() == date(2010, 10, 8)
 
-        a__ mymodule.date(2009, 6, 8) == date(2009, 6, 8)
+        assert mymodule.date(2009, 6, 8) == date(2009, 6, 8)

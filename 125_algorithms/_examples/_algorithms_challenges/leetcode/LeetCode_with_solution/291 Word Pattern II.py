@@ -31,7 +31,7 @@ class Solution(object):
             if s[:len(word)] != word:
                 return False
             else:
-                a__ word in words
+                assert word in words
                 return self.dfs(pattern[1:], s[len(word):], char2word, words)
         else:
             for i in xrange(len(s)):

@@ -66,7 +66,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().find132pattern([1, 2, 3, 4]) == False
-    a__ Solution().find132pattern([3, 1, 4, 2]) == True
-    a__ Solution().find132pattern([-1, 3, 2, 0]) == True
-    a__ Solution().find132pattern([-2, 1, 1]) == True
+    assert Solution().find132pattern([1, 2, 3, 4]) == False
+    assert Solution().find132pattern([3, 1, 4, 2]) == True
+    assert Solution().find132pattern([-1, 3, 2, 0]) == True
+    assert Solution().find132pattern([-2, 1, 1]) == True

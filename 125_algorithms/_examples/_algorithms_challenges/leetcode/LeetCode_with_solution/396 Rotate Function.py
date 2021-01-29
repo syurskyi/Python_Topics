@@ -49,4 +49,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().maxRotateFunction([4, 3, 2, 6]) == 26
+    assert Solution().maxRotateFunction([4, 3, 2, 6]) == 26

@@ -98,7 +98,7 @@ if __name__=="__main__":
         item.neighbors = list(lst)
         item.neighbors.remove(item)
     cloned = Solution().cloneGraph(lst[0])
-    a__ cloned.neighbors[0].label in (2, 3)
-    a__ cloned.neighbors[1].label in (2, 3)
+    assert cloned.neighbors[0].label in (2, 3)
+    assert cloned.neighbors[1].label in (2, 3)
 
 

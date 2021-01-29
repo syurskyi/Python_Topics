@@ -67,7 +67,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().longestIncreasingPath([
+    assert Solution().longestIncreasingPath([
         [9, 9, 4],
         [6, 6, 8],
         [2, 1, 1]

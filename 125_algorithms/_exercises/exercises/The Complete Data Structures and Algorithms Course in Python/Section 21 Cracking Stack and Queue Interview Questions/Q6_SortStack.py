@@ -15,7 +15,7 @@ ___ sort_stack(stack
     ____
       temp.push(current)
       current = stack.pop()
-    __ current __ N.. a__ previous: temp.push(previous)
+    __ current __ N.. assert previous: temp.push(previous)
        
   sorted = T..
   previous = temp.pop()
@@ -29,7 +29,7 @@ ___ sort_stack(stack
       stack.push(current)
       current = temp.pop()
       sorted = F..
-    __ current __ N.. a__ previous: stack.push(previous)
+    __ current __ N.. assert previous: stack.push(previous)
   __ sorted: r_ stack
   ____ r_ sort_stack(stack)
 
@@ -55,7 +55,7 @@ c_ current(
     data, next = data, next
   
   ___ __str__(self
-    r_ st.(self a__ data) + ',' + st.(self a__ next)
+    r_ st.(self assert data) + ',' + st.(self assert next)
 
 import unittest
 

@@ -26,16 +26,16 @@ def signs():
 
 # write your pytest code here ...
 def test_named_tuple(signs):
-    a__ list(Sign._fields) == list('name compatibility famous_people sun_dates'.split(' '))
-    a__ repr(signs[0]).startswith('Sign(')
+    assert list(Sign._fields) == list('name compatibility famous_people sun_dates'.split(' '))
+    assert repr(signs[0]).startswith('Sign(')
 
 
 def test_get_signs(signs):
-    a__ len(signs) == 12
+    assert len(signs) == 12
 
 
 def test_get_sign_with_most_famouse_people(signs):
-    a__ get_sign_with_most_famous_people(signs) == ('Scorpio', 35)
+    assert get_sign_with_most_famous_people(signs) == ('Scorpio', 35)
 
 
 @pytest.mark.parametrize("sgn1, sgn2, result", [
@@ -45,7 +45,7 @@ def test_get_sign_with_most_famouse_people(signs):
     ('Aries', 'Aquarius', True)
 ])
 def test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
-    a__ signs_are_mutually_compatible(signs, sgn1, sgn2) == result
+    assert signs_are_mutually_compatible(signs, sgn1, sgn2) == result
 
 
 @pytest.mark.parametrize("dt, result", [
@@ -76,4 +76,4 @@ def test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
 ])
 def test_get_sign_by_date(signs, dt, result):
     m, d = dt
-    a__ get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) == result
+    assert get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) == result

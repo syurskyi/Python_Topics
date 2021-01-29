@@ -82,6 +82,6 @@ multiline_ocr = [
                 " _|  ||_|",
                 "         ",
 ]
-a__ number(multiline_ocr) == '318,318'
+assert number(multiline_ocr) == '318,318'
 
 

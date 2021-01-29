@@ -31,4 +31,4 @@ from password import password_complexity
     ('@$@$@$@$@$', 3),
 ])
 def test_password_complexity(arg, expected):
-    a__ password_complexity(arg) == expected
+    assert password_complexity(arg) == expected

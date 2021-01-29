@@ -74,4 +74,4 @@ class SolutionHeap(object):
         return ret
 
 if __name__ == "__main__":
-    a__ Solution().nthSuperUglyNumber(12, [2, 7, 13, 19]) == 32
+    assert Solution().nthSuperUglyNumber(12, [2, 7, 13, 19]) == 32

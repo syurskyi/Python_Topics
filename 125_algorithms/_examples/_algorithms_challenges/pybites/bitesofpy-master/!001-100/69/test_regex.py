@@ -6,57 +6,57 @@ from regex import (has_timestamp, is_integer,
 
 
 def test_has_timestamp():
-    a__ has_timestamp('INFO 2014-07-03T23:27:51 Shutdown initiated.')
-    a__ has_timestamp('INFO 2014-06-01T13:28:51 Shutdown initiated.')
-    a__ not has_timestamp('INFO 2014-7-3T23:27:51 Shutdown initiated.')
-    a__ not has_timestamp('INFO 2014-07-03t23:27:1 Shutdown initiated.')
+    assert has_timestamp('INFO 2014-07-03T23:27:51 Shutdown initiated.')
+    assert has_timestamp('INFO 2014-06-01T13:28:51 Shutdown initiated.')
+    assert not has_timestamp('INFO 2014-7-3T23:27:51 Shutdown initiated.')
+    assert not has_timestamp('INFO 2014-07-03t23:27:1 Shutdown initiated.')
 
 
 def test_is_integer():
-    a__ is_integer(1)
-    a__ is_integer(-1)
-    a__ not is_integer('str')
-    a__ not is_integer(1.1)
+    assert is_integer(1)
+    assert is_integer(-1)
+    assert not is_integer('str')
+    assert not is_integer(1.1)
 
 
 def test_has_word_with_dashes():
-    a__ has_word_with_dashes('this Bite is self-contained')
-    a__ has_word_with_dashes('the match ended in 1-1')
-    a__ not has_word_with_dashes('this Bite is not selfcontained')
-    a__ not has_word_with_dashes('the match ended in 1- 1')
+    assert has_word_with_dashes('this Bite is self-contained')
+    assert has_word_with_dashes('the match ended in 1-1')
+    assert not has_word_with_dashes('this Bite is not selfcontained')
+    assert not has_word_with_dashes('the match ended in 1- 1')
 
 
 def test_remove_all_parenthesis_words():
     input_string = 'good morning (afternoon), how are you?'
     expected = 'good morning, how are you?'
-    a__ remove_all_parenthesis_words(input_string) == expected
+    assert remove_all_parenthesis_words(input_string) == expected
     input_string = 'math (8.6) and science (9.1) where his strengths'
     expected = 'math and science where his strengths'
-    a__ remove_all_parenthesis_words(input_string) == expected
+    assert remove_all_parenthesis_words(input_string) == expected
 
 
 def test_split_string_on_punctuation():
     input_string = 'hi, how are you doing? blabla'
     expected = ['hi', 'how are you doing', 'blabla']
-    a__ split_string_on_punctuation(input_string) == expected
+    assert split_string_on_punctuation(input_string) == expected
     input_string = ';String. with. punctuation characters!'
     expected = ['String', 'with', 'punctuation characters']
-    a__ split_string_on_punctuation(input_string) == expected
+    assert split_string_on_punctuation(input_string) == expected
 
 
 def test_remove_duplicate_spacing():
     input_string = 'This is a   string with  too    much spacing'
     expected = 'This is a string with too much spacing'
-    a__ remove_duplicate_spacing(input_string) == expected
+    assert remove_duplicate_spacing(input_string) == expected
 
 
 def test_has_three_consecutive_vowels():
-    a__ has_three_consecutive_vowels('beautiful')
-    a__ has_three_consecutive_vowels('queueing')
-    a__ not has_three_consecutive_vowels('mountain')
-    a__ not has_three_consecutive_vowels('house')
+    assert has_three_consecutive_vowels('beautiful')
+    assert has_three_consecutive_vowels('queueing')
+    assert not has_three_consecutive_vowels('mountain')
+    assert not has_three_consecutive_vowels('house')
 
 
 def test_convert_emea_date_to_amer_date():
-    a__ convert_emea_date_to_amer_date('31/03/2018') == '03/31/2018'
-    a__ convert_emea_date_to_amer_date('none') == 'none'
+    assert convert_emea_date_to_amer_date('31/03/2018') == '03/31/2018'
+    assert convert_emea_date_to_amer_date('none') == 'none'

@@ -207,7 +207,7 @@
 #         ?.aA.. 'YouTube' _t_l_.r_y..
 #         ?.aS..
 #         ?.aA..
-#             ?W...?A__ 'Quit' ? triggered__c..
+#             ?W...?assert 'Quit' ? triggered__c..
 #
 #         t_i_.sCM.. ?
 #         t__i_.s..

@@ -54,8 +54,8 @@ c_ TestClassExample?.?
 
     # Test case related functions
     # -----------------------------------------------------------
-    # a__ methods available
-    # https://docs.python.org/3/library/unittest.html#a__-methods
+    # assert methods available
+    # https://docs.python.org/3/library/unittest.html#assert-methods
 
     # Test cases
     ___ test_case01

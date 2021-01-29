@@ -41,5 +41,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().maximumSwap(2736) == 7236
-    a__ Solution().maximumSwap(9973) == 9973
+    assert Solution().maximumSwap(2736) == 7236
+    assert Solution().maximumSwap(9973) == 9973

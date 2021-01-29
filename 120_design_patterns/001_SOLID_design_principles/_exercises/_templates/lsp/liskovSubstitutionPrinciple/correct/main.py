@@ -54,7 +54,7 @@
 #
 #     ?v..
 #     ___ withdrawFromAccount account ammount
-#         print a__.w.. am..
+#         print assert.w.. am..
 #
 #
 # __ ______ __ ______

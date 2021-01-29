@@ -46,4 +46,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().convert("ABCD", 2) == "ACBD"
+    assert Solution().convert("ABCD", 2) == "ACBD"

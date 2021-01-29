@@ -51,5 +51,5 @@ if __name__ == "__main__":
         [0, 0, 0],
         [0, 0, 1]
     ]
-    a__ Solution().multiply(A, B) == [[7, 0, 0], [-7, 0, 3]]
+    assert Solution().multiply(A, B) == [[7, 0, 0], [-7, 0, 3]]
 

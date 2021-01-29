@@ -89,5 +89,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().minimumDeleteSum("sea", "eat") == 231
-    a__ Solution().minimumDeleteSum("delete", "leet") == 403
+    assert Solution().minimumDeleteSum("sea", "eat") == 231
+    assert Solution().minimumDeleteSum("delete", "leet") == 403

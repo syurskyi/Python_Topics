@@ -91,6 +91,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().leastOpsExpressTarget(3, 19) == 5
-    a__ Solution().leastOpsExpressTarget(5, 501) == 8
-    a__ Solution().leastOpsExpressTarget(2, 125046) == 50
+    assert Solution().leastOpsExpressTarget(3, 19) == 5
+    assert Solution().leastOpsExpressTarget(5, 501) == 8
+    assert Solution().leastOpsExpressTarget(2, 125046) == 50

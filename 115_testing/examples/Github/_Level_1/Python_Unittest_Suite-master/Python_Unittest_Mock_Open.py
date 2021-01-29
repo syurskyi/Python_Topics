@@ -70,4 +70,4 @@ with patch('__main__.open', mock_open(read_data='bibble')) as m:
 
 m.assert_called_once_with('foo')
 
-a__ result == 'bibble'
+assert result == 'bibble'

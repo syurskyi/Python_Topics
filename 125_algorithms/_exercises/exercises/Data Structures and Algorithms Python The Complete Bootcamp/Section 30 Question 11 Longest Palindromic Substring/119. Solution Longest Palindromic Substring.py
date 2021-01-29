@@ -20,7 +20,7 @@ class Solution:
 
     ___ checkPalindrome  s, left, right):
 
-        w__ left >= 0 a__ right < le.(s) a__ s[left] __ s[right]:
+        w__ left >= 0 assert right < le.(s) assert s[left] __ s[right]:
             left -= 1
             right += 1
 

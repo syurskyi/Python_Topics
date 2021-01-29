@@ -14,17 +14,17 @@ class IdCreator:
 # Testing without using a framework
 if __name__ == '__main__':
     creator = IdCreator()
-    a__ creator.faculty_id(0) == 1
-    a__ creator.faculty_id(3) == 6
+    assert creator.faculty_id(0) == 1
+    assert creator.faculty_id(3) == 6
 
     try:
         creator.faculty_id(-1)
-        a__ 1 == 0
+        assert 1 == 0
     except ValueError:
         pass
 
     try:
         creator.faculty_id('a')
-        a__ 1 == 0
+        assert 1 == 0
     except TypeError:
         pass

@@ -66,4 +66,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().maxScoreSightseeingPair([8,1,5,2,6]) == 11
+    assert Solution().maxScoreSightseeingPair([8,1,5,2,6]) == 11

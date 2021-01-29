@@ -111,7 +111,7 @@ new_mock.call_args
 # 
 
 def side_effect(arg):
-        a__ arg == {6}
+        assert arg == {6}
 
 mock = Mock(side_effect=side_effect)
 

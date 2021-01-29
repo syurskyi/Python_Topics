@@ -48,4 +48,4 @@ def test_filter_accents(text, expected):
     # get rid of duplicates and sort results
     result = filter_accents(text)
     actual = sorted(list(set(result)))
-    a__ actual == expected
+    assert actual == expected

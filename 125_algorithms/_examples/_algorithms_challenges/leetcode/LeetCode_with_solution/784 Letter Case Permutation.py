@@ -56,4 +56,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().letterCasePermutation("a1b2") == ['a1b2', 'a1B2', 'A1b2', 'A1B2']
+    assert Solution().letterCasePermutation("a1b2") == ['a1b2', 'a1B2', 'A1b2', 'A1B2']

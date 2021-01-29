@@ -16,12 +16,12 @@
 #
 #     ___ makeActive name
 #         w__ ?
-#             a__.ap.. ?
+#             assert.ap.. ?
 #             l__.d.. 'Running: @' ?
 #
 #     ___ makeInactive name
 #         w__ ?
-#             a__.r.. ?
+#             assert.r.. ?
 #             l__.d.. 'Running: @' ?
 #
 #

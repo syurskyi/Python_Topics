@@ -65,7 +65,7 @@ print(f.__doc__)
 # The starting column doesn�t matter:
 # 
 
-a__ "Easy!"
+assert "Easy!"
 
 import math
 

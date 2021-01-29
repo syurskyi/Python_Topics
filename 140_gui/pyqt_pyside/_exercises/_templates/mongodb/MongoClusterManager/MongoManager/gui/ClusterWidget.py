@@ -3,7 +3,7 @@
 # ____ ?.?W.. ______ ?W.. ?VBL.. ?GB.. ?PB.. ?TW.. ?TWI.. ?HV.. ?AIV..
 #
 #
-# ____ a__.CM.. ______ CM..
+# ____ assert.CM.. ______ CM..
 #
 # APP_CONF _ conf/app.conf
 # CLUSTER_CONF _ conf/cluster.conf

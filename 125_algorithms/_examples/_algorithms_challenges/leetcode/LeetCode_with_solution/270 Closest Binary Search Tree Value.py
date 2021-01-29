@@ -49,4 +49,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().closestValue(TreeNode(2147483647), 0.0) == 2147483647
+    assert Solution().closestValue(TreeNode(2147483647), 0.0) == 2147483647

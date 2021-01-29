@@ -15,13 +15,13 @@ def test_manual():
 def test_assert_ok():
 
     primes = list(sieve.sieve_of_eratosthenes(30))
-    a__(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
+    assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 
 
 def test_assert_fail():
 
     primes = list(sieve.sieve_of_eratosthenes(30))
-    a__(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23])
+    assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23])
 
 
 def main():
@@ -33,12 +33,12 @@ def main():
         test_manual()
 
     elif option == 2:
-        print('a__ Test OK:')
+        print('assert Test OK:')
         print('- has no output -')
         test_assert_ok()
 
     elif option == 3:
-        print('a__ Test FAIL:')
+        print('assert Test FAIL:')
         test_assert_fail()
 
 

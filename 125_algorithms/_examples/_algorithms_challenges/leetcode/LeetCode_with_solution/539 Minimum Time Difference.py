@@ -40,4 +40,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findMinDifference(["23:59","00:00"]) == 1
+    assert Solution().findMinDifference(["23:59","00:00"]) == 1

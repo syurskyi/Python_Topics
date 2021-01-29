@@ -1,7 +1,7 @@
 
 def number_sum(n): 
     '''Returns the sum of the first n numbers''' 
-    a__(n >= 0), 'n must be >= 0'
+    assert(n >= 0), 'n must be >= 0'
     
     if n == 0:
         return 0

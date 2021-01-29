@@ -14,7 +14,7 @@ from color import Color
 ])
 def test_color_class(color, expected):
     c = Color(color)
-    a__ c.rgb == expected
+    assert c.rgb == expected
 
 
 @pytest.mark.parametrize("rgb, expected", [
@@ -26,7 +26,7 @@ def test_color_class(color, expected):
     ((255, 128, 0), "#ff8000"),
 ])
 def test_color_classmethod_rgb2hex(rgb, expected):
-    a__ Color.rgb2hex(rgb) == expected
+    assert Color.rgb2hex(rgb) == expected
 
 
 @pytest.mark.parametrize("rgb", [
@@ -50,7 +50,7 @@ def test_color_rgb2hex_bad_value(rgb):
     ("#ff8000", (255, 128, 0)),
 ])
 def test_color_classmethod_hex2rgb(hex, expected):
-    a__ Color.hex2rgb(hex) == expected
+    assert Color.hex2rgb(hex) == expected
 
 
 @pytest.mark.parametrize("value", [
@@ -66,14 +66,14 @@ def test_color_hex2rgb_bad_value(value):
 
 def test_color_string_output():
     color = Color("brown")
-    a__ str(color) == "(165, 42, 42)"
+    assert str(color) == "(165, 42, 42)"
 
 
 def test_color_repr_output():
     color = Color("brown")
-    a__ repr(color) == "Color('brown')"
+    assert repr(color) == "Color('brown')"
 
 
 def test_unknown_color():
     color = Color("puke green")
-    a__ str(color) == "Unknown"
+    assert str(color) == "Unknown"

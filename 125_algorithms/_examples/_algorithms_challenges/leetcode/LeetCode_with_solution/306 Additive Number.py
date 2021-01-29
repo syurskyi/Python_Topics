@@ -50,4 +50,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().isAdditiveNumber("12012122436")
+    assert Solution().isAdditiveNumber("12012122436")

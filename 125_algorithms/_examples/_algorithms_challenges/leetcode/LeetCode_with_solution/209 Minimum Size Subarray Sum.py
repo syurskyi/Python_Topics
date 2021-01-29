@@ -40,5 +40,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().minSubArrayLen(7, [2, 3, 1, 2, 4, 3]) == 2
+    assert Solution().minSubArrayLen(7, [2, 3, 1, 2, 4, 3]) == 2
 

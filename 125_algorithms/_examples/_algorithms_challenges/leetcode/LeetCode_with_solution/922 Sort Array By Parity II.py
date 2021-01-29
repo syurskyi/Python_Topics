@@ -59,4 +59,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().sortArrayByParityII([4,1,1,0,1,0]) == [4,1,0,1,0,1]
+    assert Solution().sortArrayByParityII([4,1,1,0,1,0]) == [4,1,0,1,0,1]

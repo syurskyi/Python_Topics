@@ -36,4 +36,4 @@ with patch('module.Foo') as mock:
 
         result = some_function()
 
-        a__ result == 'the result'
+        assert result == 'the result'

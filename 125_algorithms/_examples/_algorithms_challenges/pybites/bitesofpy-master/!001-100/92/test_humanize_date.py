@@ -30,7 +30,7 @@ def n_days_ago_str(days):
     (NOW - timedelta(days=365), n_days_ago_str(365)),
 ])
 def test_pretty_date(arg, expected):
-    a__ pretty_date(arg) == expected
+    assert pretty_date(arg) == expected
 
 
 def test_input_variable_of_wrong_type():

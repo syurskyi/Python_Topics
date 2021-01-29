@@ -5,7 +5,7 @@ from regex import (extract_course_times,
 
 def test_extract_course_times_default_arg():
     expected = ['01:47', '32:03', '41:51', '27:48', '05:02']
-    a__ extract_course_times() == expected
+    assert extract_course_times() == expected
 
 
 def test_extract_course_times_other_course_input():
@@ -15,12 +15,12 @@ def test_extract_course_times_other_course_input():
               '06:07 Datetime timedelta usage'
               '04:02 Concepts: what did we learn')
     expected = ['00:40', '01:33', '08:12', '06:07', '04:02']
-    a__ extract_course_times(course) == expected
+    assert extract_course_times(course) == expected
 
 
 def test_get_all_hashtags_and_links_default_arg():
     expected = ['http://pybit.es/requests-cache.html', '#python', '#APIs']
-    a__ get_all_hashtags_and_links() == expected
+    assert get_all_hashtags_and_links() == expected
 
 
 def test_get_all_hashtags_and_links_other_tweet():
@@ -33,16 +33,16 @@ def test_get_all_hashtags_and_links_other_tweet():
                 ('http://pbreadinglist.herokuapp.com/books/'
                  'TvEqDAAAQBAJ#.XVOriU5z2tA.twitter'),
                 '#psychology', '#philosophy']
-    a__ get_all_hashtags_and_links(tweet) == expected
+    assert get_all_hashtags_and_links(tweet) == expected
 
 
 def test_match_first_paragraph_default_arg():
     expected = 'pybites != greedy'
-    a__ match_first_paragraph() == expected
+    assert match_first_paragraph() == expected
 
 
 def test_match_first_paragraph_other_html():
     html = ('<p>Match only this paragraph.</p>'
             '<p>Not this one!</p><p>And this one neither.</p>')
     expected = 'Match only this paragraph.'
-    a__ match_first_paragraph(html) == expected
+    assert match_first_paragraph(html) == expected

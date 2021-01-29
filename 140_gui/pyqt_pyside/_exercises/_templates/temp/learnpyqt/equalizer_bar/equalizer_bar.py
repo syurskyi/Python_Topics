@@ -127,7 +127,7 @@ c_ EqualizerBar(?W...?W..):
         r_ _values
 
     ___ setRange  vmin, vmax):
-        a__ fl..(vmin) < fl..(vmax)
+        assert fl..(vmin) < fl..(vmax)
         _vmin, _vmax _ fl..(vmin), fl..(vmax)
 
     ___ sC..  color):

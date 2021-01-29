@@ -33,7 +33,7 @@ def binary_search(num_zeros):
 
 for i in range(101):
     print(i, binary_search(i))
-    a__ binary_search(i) == linear_search(i)
+    assert binary_search(i) == linear_search(i)
 
 
 

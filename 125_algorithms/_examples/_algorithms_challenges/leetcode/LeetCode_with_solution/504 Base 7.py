@@ -36,5 +36,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().convertToBase7(100) == "202"
-    a__ Solution().convertToBase7(-7) == "-10"
+    assert Solution().convertToBase7(100) == "202"
+    assert Solution().convertToBase7(-7) == "-10"

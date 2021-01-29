@@ -30,27 +30,27 @@
 #
 #     ___ setupSlot
 #         ?.t_v_.sM.. ?
-#         ?.cB__.c__.c__ a__.cS..
+#         ?.cB__.c__.c__ assert.cS..
 #
-#         ?.q_b_.c__.c__ a__.q__
-#         ?.q__.rP__.c__ a__.q__
-#         ?.q__.tC__.c__ a__.qC..
+#         ?.q_b_.c__.c__ assert.q__
+#         ?.q__.rP__.c__ assert.q__
+#         ?.q__.tC__.c__ assert.qC..
 #
-#         ?.t_v_.c__.c__ a__.cT..
+#         ?.t_v_.c__.c__ assert.cT..
 #         add_query_action _ ?A.. "add to query" ?.t_v_
 #
-#         ?.t___.c__ a__.aTQ..
+#         ?.t___.c__ assert.aTQ..
 #         ?.t_v_.sCMP.. __.ACM..
 #         ?.t_v_.aA.. ?
 #         tableHeader _ ?.t_v_.hH..
 #         ?.sSIS.. T..
-#         ?.sIC...c__ a__.cS..
+#         ?.sIC...c__ assert.cS..
 #
 #         ?.tW__.sCMP.. ?C...__.CCM..
-#         ?.tW__.cCMR__.c__ a__.sTM..
+#         ?.tW__.cCMR__.c__ assert.sTM..
 #
-#         ?.pB_.c__.c__ a__.pP..
-#         ?.nB_.c__.c__ a__.nP..
+#         ?.pB_.c__.c__ assert.pP..
+#         ?.nB_.c__.c__ assert.nP..
 #
 #
 #

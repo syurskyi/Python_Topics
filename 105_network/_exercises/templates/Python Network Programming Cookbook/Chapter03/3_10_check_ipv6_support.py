@@ -27,7 +27,7 @@
 #                 nmask _ ?.g.. 'netmask' N..
 #                 __ ?
 #                     print ('    Netmask  : @' ?
-#                 bcast _ a__.g.. 'broadcast' N..
+#                 bcast _ assert.g.. 'broadcast' N..
 #                 __ ?
 #                     print ('    Broadcast: @' ?
 #     __ _6_

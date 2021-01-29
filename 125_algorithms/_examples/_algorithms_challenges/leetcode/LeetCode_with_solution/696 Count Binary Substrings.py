@@ -65,5 +65,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().countBinarySubstrings("00110011") == 6
-    a__ Solution().countBinarySubstrings("00110") == 3
+    assert Solution().countBinarySubstrings("00110011") == 6
+    assert Solution().countBinarySubstrings("00110") == 3

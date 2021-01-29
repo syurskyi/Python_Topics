@@ -44,10 +44,10 @@ Remember me when no more day by day
 def test_shakespeare_text(capfd):
     print_hanging_indents(shakespeare_unformatted)
     output = capfd.readouterr()[0]
-    a__ output.strip() == shakespeare_formatted.strip()
+    assert output.strip() == shakespeare_formatted.strip()
 
 
 def test_rosetti_poem(capfd):
     print_hanging_indents(rosetti_unformatted)
     output = capfd.readouterr()[0]
-    a__ output.strip() == rosetti_formatted.strip()
+    assert output.strip() == rosetti_formatted.strip()

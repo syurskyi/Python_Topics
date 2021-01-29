@@ -30,11 +30,11 @@ def test(MockClass1, MockClass2):
         module.ClassName1()
         module.ClassName2()
 
-        a__ MockClass1 is module.ClassName1
-        a__ MockClass2 is module.ClassName2
+        assert MockClass1 is module.ClassName1
+        assert MockClass2 is module.ClassName2
 
-        a__ MockClass1.called
+        assert MockClass1.called
 
-        a__ MockClass2.called
+        assert MockClass2.called
 
 test()

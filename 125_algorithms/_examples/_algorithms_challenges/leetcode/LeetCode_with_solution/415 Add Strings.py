@@ -51,6 +51,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().addStrings("9999", "1") == "10000"
-    a__ Solution().addStrings("9999", "9999") == "19998"
-    a__ Solution().addStrings("23", "8") == "31"
+    assert Solution().addStrings("9999", "1") == "10000"
+    assert Solution().addStrings("9999", "9999") == "19998"
+    assert Solution().addStrings("23", "8") == "31"

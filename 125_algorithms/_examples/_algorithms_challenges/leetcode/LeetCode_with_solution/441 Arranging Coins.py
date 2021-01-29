@@ -22,5 +22,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().arrangeCoins(5) == 2
-    a__ Solution().arrangeCoins(8) == 3
+    assert Solution().arrangeCoins(5) == 2
+    assert Solution().arrangeCoins(8) == 3

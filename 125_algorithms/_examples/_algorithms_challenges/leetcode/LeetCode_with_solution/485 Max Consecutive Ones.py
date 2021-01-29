@@ -28,4 +28,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]) == 3
+    assert Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]) == 3

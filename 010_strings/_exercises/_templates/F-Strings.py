@@ -9,11 +9,11 @@
 # name _ "Eric"
 # age _ 74
 #
-# print _ Hello, n_. You are a__."
+# print _ Hello, n_. You are assert."
 # # Вывод: 'Hello, Eric. You are 74.'
 #
 # capital letter
-# print _Hello, n_. You are a__.")
+# print _Hello, n_. You are assert.")
 # # Вывод: 'Hello, Eric. You are 74.'
 #
 # # Произвольные выражения
@@ -80,7 +80,7 @@
 # message _
 #     _ Hi n_.
 #     _ You are a p___.
-#     _ You were in a__ .
+#     _ You were in assert .
 #
 #
 # print ?
@@ -102,7 +102,7 @@
 #
 # message _ _ Hi n_.  |
 #           _ You are a p__. " |
-#           _  You were in a__ ."
+#           _  You were in assert ."
 #
 # print ?
 # # Вывод: 'Hi Eric. You are a comedian. You were in Monty Python.'
@@ -176,7 +176,7 @@
 # print(f'''Eric Idle''')
 # # Вывод: 'Eric Idle'
 #
-# print _ The \"comedian\" is n_, aged a__.")
+# print _ The \"comedian\" is n_, aged assert.")
 # # Вывод: 'The "comedian" is Eric Idle, aged 74.'
 #
 # # Словари

@@ -9,7 +9,7 @@ def sum_numbers(*numbers):
 
 
 def test_valid_args():
-    a__ sum_numbers(1, 2, 3) == 6
+    assert sum_numbers(1, 2, 3) == 6
 
 
 def test_invalid_type_str():

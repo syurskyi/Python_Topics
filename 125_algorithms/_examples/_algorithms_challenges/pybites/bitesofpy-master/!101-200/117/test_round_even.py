@@ -13,4 +13,4 @@ from round_even import round_even
     (2.5, 2),  # nearest even int
 ])
 def test_round_even(arg, expected):
-    a__ round_even(arg) == expected
+    assert round_even(arg) == expected

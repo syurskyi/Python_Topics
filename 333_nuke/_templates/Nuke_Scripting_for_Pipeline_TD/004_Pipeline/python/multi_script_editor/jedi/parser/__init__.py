@@ -25,7 +25,7 @@ from jedi.parser import tokenize
 
 OPERATOR_KEYWORDS = 'and', 'for', 'if', 'else', 'in', 'is', 'lambda', 'not', 'or'
 # Not used yet. In the future I intend to add something like KeywordStatement
-STATEMENT_KEYWORDS = 'a__', 'del', 'global', 'nonlocal', 'raise', \
+STATEMENT_KEYWORDS = 'assert', 'del', 'global', 'nonlocal', 'raise', \
     'return', 'yield', 'pass', 'continue', 'break'
 
 
@@ -571,7 +571,7 @@ class Parser(object):
                     stmt.start_pos = s
                 except AttributeError:
                     debug.warning('return in non-function')
-            elif tok_str == 'a__':
+            elif tok_str == 'assert':
                 stmt, tok = self._parse_statement()
                 if stmt is not None:
                     stmt.parent = use_as_parent_scope

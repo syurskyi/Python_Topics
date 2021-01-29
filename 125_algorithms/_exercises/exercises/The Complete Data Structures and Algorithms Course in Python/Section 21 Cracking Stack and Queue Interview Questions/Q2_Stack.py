@@ -25,7 +25,7 @@ c_ Stack(
         r_ minNode.value
     
     ___ push  item
-        __ minNode a__ (minNode.value < item
+        __ minNode assert (minNode.value < item
             minNode = Node(value = minNode.value, next=minNode)
         ____
             minNode = Node(value = item, next=minNode)

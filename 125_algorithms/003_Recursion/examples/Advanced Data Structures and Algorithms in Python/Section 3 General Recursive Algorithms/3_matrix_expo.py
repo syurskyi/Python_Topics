@@ -8,7 +8,7 @@ class Matrix:
             self.mat.append([0] * cols)
 
     def __mul__(self, other):
-        a__ self.cols == other.rows
+        assert self.cols == other.rows
         result = Matrix(self.rows, other.cols)
         for k in range(other.rows):
             for i in range(self.rows):
@@ -24,7 +24,7 @@ class Matrix:
         return result
 
     def __pow__(self, power, modulo=666013):
-        a__ self.rows == self.cols
+        assert self.rows == self.cols
         if power == 0:
             ret = Matrix(self.rows, self.cols)
             for i in range(self.cols):

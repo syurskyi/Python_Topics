@@ -35,4 +35,4 @@
 # print(optimal(arr, n))
 #
 # ___ i __ ra..(1, 1000):
-#     a__ ?.array_equal(naive(arr, i), optimal(arr, i))
+#     assert ?.array_equal(naive(arr, i), optimal(arr, i))

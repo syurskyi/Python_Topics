@@ -96,5 +96,5 @@ class SolutionBinSearch(object):
             return lo
 
 if __name__ == "__main__":
-    a__ Solution().searchMatrix([[1, 4], [2, 5]], 4) == True
-    a__ SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) == True
+    assert Solution().searchMatrix([[1, 4], [2, 5]], 4) == True
+    assert SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) == True

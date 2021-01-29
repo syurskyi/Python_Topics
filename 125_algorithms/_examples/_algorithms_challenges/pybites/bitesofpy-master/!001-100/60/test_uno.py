@@ -18,12 +18,12 @@ def deck():
 
 
 def test_create_uno_deck_len(deck):
-    a__ len(deck) == 108
+    assert len(deck) == 108
 
 
 def test_create_uno_deck_type(deck):
-    a__ type(deck) == list
-    a__ all(type(card) == UnoCard for card in deck)
+    assert type(deck) == list
+    assert all(type(card) == UnoCard for card in deck)
 
 
 @pytest.mark.parametrize("suit, count", [
@@ -34,7 +34,7 @@ def test_create_uno_deck_type(deck):
     (None, 8),  # wild cards don't have an associated suit
 ])
 def test_create_uno_deck_suit_distribution(deck, suit, count):
-    a__ _count_suits(deck, suit) == count
+    assert _count_suits(deck, suit) == count
 
 
 @pytest.mark.parametrize("name, count", [

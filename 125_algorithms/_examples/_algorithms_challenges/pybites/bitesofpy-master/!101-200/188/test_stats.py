@@ -28,13 +28,13 @@ def report():
 def test_get_all_line_counts():
     counts = list(get_all_line_counts())
     # total number of test files / bites
-    a__ len(counts) == 186
+    assert len(counts) == 186
     # all elements should be ints
-    a__ all(isinstance(c, int) for c in counts)
+    assert all(isinstance(c, int) for c in counts)
     # total lines of test code written
-    a__ sum(counts) == 8135
+    assert sum(counts) == 8135
 
 
 @pytest.mark.parametrize("line", EXPECTED_OUTPUT.strip().splitlines())
 def test_create_stats_report(report, line):
-    a__ line in report
+    assert line in report

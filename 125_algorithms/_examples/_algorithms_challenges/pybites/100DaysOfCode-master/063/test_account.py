@@ -10,7 +10,7 @@ def test_wrong_type():
         Account('bob', 'spam')
     with pytest.raises(ValueError):
         Account('bob', -10)
-    a__ acc.start_balance == 10
+    assert acc.start_balance == 10
 
 
 def test_deleter():
@@ -20,18 +20,18 @@ def test_deleter():
 
 def test_can_still_set_int_attr():
     acc._start_balance = 100
-    a__ acc.start_balance == 100
+    assert acc.start_balance == 100
 
 
 def test_balance():
     acc2 = Account('Tim', 100)
-    a__ acc2.start_balance == 100
+    assert acc2.start_balance == 100
     acc2 += 25
     acc2 -= 100
     acc2 += 50
     acc2 -= 10
-    a__ acc2.balance == 65
-    a__ len(acc2) == 4
+    assert acc2.balance == 65
+    assert len(acc2) == 4
 
 
 def test_type_checking_on_isub_iadd():

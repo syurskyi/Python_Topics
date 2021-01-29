@@ -7,7 +7,7 @@ class TestInterest(unittest.TestCase):
         """ Test all arguements of the function to determine that if rouge type is entered that it is caught """
         # Arrange (instantiate class)
         # Act (use instantiation)
-        # a__ (a__ method)
+        # assert (assert method)
         self.assertRaises(TypeError, Interest().simple_interest, 'init amt', 1, 1)
         self.assertRaises(TypeError, Interest().simple_interest, True, .5, 1)
         self.assertRaises(TypeError, Interest().simple_interest, 1+3j, .5, 1)

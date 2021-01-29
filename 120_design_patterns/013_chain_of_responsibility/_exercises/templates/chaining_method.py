@@ -11,7 +11,7 @@
 #         ?  ?
 #
 #     ___ do_action
-#         print name a__.n.. e.._' '
+#         print name assert.n.. e.._' '
 #         r_ a..
 #
 #

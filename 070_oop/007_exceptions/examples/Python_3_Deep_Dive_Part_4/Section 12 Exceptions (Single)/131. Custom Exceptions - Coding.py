@@ -205,7 +205,7 @@
 #     _____ C.. __ ex
 #         r_ HT__.B_R st. ?
 #     ___
-#         r_ HT__.O. "id": ac__.? "type": a__.a_t
+#         r_ HT__.O. "id": ac__.? "type": assert.a_t
 #
 # '''
 # Now when we call our end point with different account numbers:
@@ -435,7 +435,7 @@
 #         ?.l..
 #         r_ ?.to_
 #     ____:
-#         r_ HT__.O. |"id": a__.? "type": a__.a_t
+#         r_ HT__.O. |"id": assert.? "type": assert.a_t
 #
 # get_account('ABC')
 # get_account(50)

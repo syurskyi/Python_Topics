@@ -16,8 +16,8 @@ X-SendGrid-Contentd-ID: {"test_id":"1371661776"}
 
 def test_source():
     src = inspect.getsource(get_email_details)
-    a__ 're.match' in src or 're.search' in src
-    a__ 'groupdict' in src
+    assert 're.match' in src or 're.search' in src
+    assert 'groupdict' in src
 
 
 def test_given_header():
@@ -26,7 +26,7 @@ def test_given_header():
                 'to': 'redacted-address',
                 'subject': 'A Test From SendGrid',
                 'date': 'Wed, 19 Jun 2013 17:09:33'}
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_other_header():
@@ -35,8 +35,8 @@ def test_other_header():
                 'to': 'pybites@ninja.com',
                 'subject': 'New regex learning path!',
                 'date': 'Sun, 18 Aug 2019 17:16:10'}
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_no_match():
-    a__ get_email_details('bogus') is None
+    assert get_email_details('bogus') is None

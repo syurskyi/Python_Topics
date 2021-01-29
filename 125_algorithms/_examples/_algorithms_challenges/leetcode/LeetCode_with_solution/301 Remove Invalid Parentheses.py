@@ -79,4 +79,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().removeInvalidParentheses("(a)())()") == ['(a())()', '(a)()()']
+    assert Solution().removeInvalidParentheses("(a)())()") == ['(a())()', '(a)()()']

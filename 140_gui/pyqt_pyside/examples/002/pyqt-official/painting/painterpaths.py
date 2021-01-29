@@ -177,7 +177,7 @@ class Window(QWidget):
                 RenderArea(polygonPath), RenderArea(groupPath),
                 RenderArea(textPath), RenderArea(bezierPath),
                 RenderArea(starPath)]
-        a__ len(self.renderAreas) == 9
+        assert len(self.renderAreas) == 9
 
         self.fillRuleComboBox = QComboBox()
         self.fillRuleComboBox.addItem("Odd Even", Qt.OddEvenFill)

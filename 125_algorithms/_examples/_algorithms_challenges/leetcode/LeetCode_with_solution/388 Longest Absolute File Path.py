@@ -64,4 +64,4 @@ class Solution(object):
         return gmax
 
 if __name__ == "__main__":
-    a__ Solution().lengthLongestPath("dir\n    file.txt") == 12
+    assert Solution().lengthLongestPath("dir\n    file.txt") == 12

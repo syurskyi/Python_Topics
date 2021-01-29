@@ -13,6 +13,6 @@ for i in range(5000):
     for text in ["hello world", "foobar", "spam and eggs"]:
         sock2.send(text)
         data = sock2.recv(1000)
-        a__ data == text
+        assert data == text
     #sock.close()
 

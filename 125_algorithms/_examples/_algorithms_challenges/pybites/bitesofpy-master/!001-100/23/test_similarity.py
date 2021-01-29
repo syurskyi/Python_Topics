@@ -24,4 +24,4 @@ def test_get_similarities():
                 ('code challenges', 'codechallenges')]
 
     for hit in expected:
-        a__ tuple(sorted(hit)) in similar_tags, f'{hit} not in similar tags'
+        assert tuple(sorted(hit)) in similar_tags, f'{hit} not in similar tags'

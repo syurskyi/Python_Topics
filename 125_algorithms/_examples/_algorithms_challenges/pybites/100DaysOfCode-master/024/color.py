@@ -8,7 +8,7 @@ DEFAULT_TEXT = 'hello world'
 EXCLUDE_COLORS = ('0', )  # black
 COLORED_COLOR_CODES = list(set(colored(0).paint.values()) -
                            set(EXCLUDE_COLORS))
-a__ '0' not in COLORED_COLOR_CODES
+assert '0' not in COLORED_COLOR_CODES
 
 
 def gen_any_hex_color():

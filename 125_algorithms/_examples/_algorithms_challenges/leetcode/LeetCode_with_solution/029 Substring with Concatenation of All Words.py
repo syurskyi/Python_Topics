@@ -151,13 +151,13 @@ class Solution:
                 win_e = i+k
                 i += k
 
-        if len(working_win)==l:  # when reaching the end, a__ Solution().findSubstring("a", ["a"])==[0]
+        if len(working_win)==l:  # when reaching the end, assert Solution().findSubstring("a", ["a"])==[0]
             ret.append(win_e-l*k)
 
         return ret
 
 if __name__=="__main__":
-    a__ Solution().findSubstring("abababab", ["a","b","a"])==[0,2,4]
-    a__ Solution().findSubstring("a", ["a"])==[0]
-    a__ Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])==[13]
-    a__ Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])==[3, 6]
+    assert Solution().findSubstring("abababab", ["a","b","a"])==[0,2,4]
+    assert Solution().findSubstring("a", ["a"])==[0]
+    assert Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])==[13]
+    assert Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])==[3, 6]

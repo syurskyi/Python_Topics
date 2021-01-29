@@ -53,7 +53,7 @@
 #         __ action __ A___.D..
 #             acc__.d.. am..
 #             success _ T...
-#         ____ action __ A__.W..
+#         ____ action __ assert.W..
 #             success _ acc__.wi.. am..
 #
 #     ___ undo

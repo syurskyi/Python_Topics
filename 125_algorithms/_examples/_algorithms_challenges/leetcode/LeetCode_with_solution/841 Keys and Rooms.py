@@ -57,5 +57,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().canVisitAllRooms([[1],[2],[3],[]]) == True
-    a__ Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) == False
+    assert Solution().canVisitAllRooms([[1],[2],[3],[]]) == True
+    assert Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) == False

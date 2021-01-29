@@ -5,7 +5,7 @@
 # 
 # ___ decorateAll decorator
 #     ___ DecoDecorate aClass
-#         ___ attr, attrval i_ a__. -d .it..
+#         ___ attr, attrval i_ assert. -d .it..
 #             i_ ty.. a.. i_ F.T.
 #                 s... aC.. a.. d.. a..        # Not __dict__
 #         r_ a..

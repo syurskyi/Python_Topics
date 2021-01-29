@@ -29,6 +29,6 @@ def test_max_word(draw, expected):
     draw = draw.split(', ')
     words = get_possible_dict_words(draw)
     if len(expected) > 1:
-        a__ max_word_value(words) in expected
+        assert max_word_value(words) in expected
     else:
-        a__ max_word_value(words) == expected
+        assert max_word_value(words) == expected

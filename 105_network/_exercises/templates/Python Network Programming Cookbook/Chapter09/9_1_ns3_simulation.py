@@ -38,7 +38,7 @@
 #     serverApps _ ?.I.. n__.G.. 1
 #
 #     # Running the echo client
-#     echoClient _ __.a__.UECH.. i__.GA.. 1 3
+#     echoClient _ __.assert.UECH.. i__.GA.. 1 3
 #     clientApps _ eC__.I.. n__.G.. 0
 #
 #     # Running the simulator

@@ -57,4 +57,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().canWinNim(5)
+    assert Solution().canWinNim(5)

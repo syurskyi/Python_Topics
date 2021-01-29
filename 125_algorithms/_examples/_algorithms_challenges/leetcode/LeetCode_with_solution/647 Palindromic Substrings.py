@@ -56,4 +56,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().countSubstrings("aaa") == 6
+    assert Solution().countSubstrings("aaa") == 6

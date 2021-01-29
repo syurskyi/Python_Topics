@@ -26,7 +26,7 @@ c_ TestGetIssue?.?
         r_dict _ xmltodict.parse(r.text)
 
         assertEquals(r.status_code, 404)
-        # a__ r.status_code == 403
+        # assert r.status_code == 403
         assertEquals(r_dict['error'], 'Issue not found.')
         assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 

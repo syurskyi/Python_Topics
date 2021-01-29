@@ -14,4 +14,4 @@ def test_wrong_char():
 
     for arg, exp in zip(inputs, expected):
         err = f'get_index_different_char({arg}) should return index {exp}'
-        a__ get_index_different_char(arg) == exp, err
+        assert get_index_different_char(arg) == exp, err

@@ -56,6 +56,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().checkValidString("(*))") == True
-    a__ Solution().checkValidString("*(") == False
-    a__ Solution().checkValidString("(*)") == True
+    assert Solution().checkValidString("(*))") == True
+    assert Solution().checkValidString("*(") == False
+    assert Solution().checkValidString("(*)") == True

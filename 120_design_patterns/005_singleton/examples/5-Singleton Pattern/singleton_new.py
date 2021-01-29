@@ -8,10 +8,10 @@ class Singleton(object):
 s1 = Singleton()
 s2 = Singleton()
 
-a__ s1 is s2
+assert s1 is s2
 
 s1.ans = 42
 
-a__ s2.ans == s1.ans
+assert s2.ans == s1.ans
 print('Assertions passed.')
         

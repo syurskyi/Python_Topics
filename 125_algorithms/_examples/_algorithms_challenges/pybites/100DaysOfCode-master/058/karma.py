@@ -94,10 +94,10 @@ if __name__ == '__main__':
     except:
         pass
     e1 >> 1
-    a__ e1.karma == 0
+    assert e1.karma == 0
     e1 << 2
     e1 << 3
-    a__ e1.karma == 5
+    assert e1.karma == 5
     print(e1)
 
     print()
@@ -113,10 +113,10 @@ if __name__ == '__main__':
     v1 << 3; v1 << 2; v1 >> 1; v1 << 2
     print('\n'.join([str(p) for p in [e2, m1, d1, v1]]))
 
-    a__ e2.karma == 6
-    a__ m1.karma == 12
-    a__ d1.karma == 18
-    a__ v1.karma == 24
+    assert e2.karma == 6
+    assert m1.karma == 12
+    assert d1.karma == 18
+    assert v1.karma == 24
 
     print()
     print('Community has {} members (cls var)'.format(Employee.count))

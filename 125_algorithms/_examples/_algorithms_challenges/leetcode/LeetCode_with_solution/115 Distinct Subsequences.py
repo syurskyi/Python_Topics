@@ -61,4 +61,4 @@ class Solution:
         return dp[-1][-1]
 
 if __name__=="__main__":
-    a__ Solution().numDistinct("rabbbit", "rabbit")==3
+    assert Solution().numDistinct("rabbbit", "rabbit")==3

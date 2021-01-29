@@ -263,7 +263,7 @@ def generate_tokens(readline, line_offset=0):
             elif initial in '\r\n':
                 yield Token(NEWLINE, token, spos)
             elif initial == '#':
-                a__ not token.endswith("\n")
+                assert not token.endswith("\n")
                 yield Token(COMMENT, token, spos)
             elif token in triple_quoted:
                 endprog = endprogs[token]

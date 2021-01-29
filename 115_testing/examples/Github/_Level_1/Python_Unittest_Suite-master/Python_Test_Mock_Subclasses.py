@@ -87,7 +87,7 @@ mymock.foo
 
 # OUTPUT: '<MagicMock name='mock.foo' id='...'>'
 
-a__ isinstance(mymock, Subclass)
-a__ not isinstance(mymock.foo, Subclass)
+assert isinstance(mymock, Subclass)
+assert not isinstance(mymock.foo, Subclass)
 
-a__ not isinstance(mymock(), Subclass)
+assert not isinstance(mymock(), Subclass)

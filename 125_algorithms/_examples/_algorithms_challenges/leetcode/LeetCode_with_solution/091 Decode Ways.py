@@ -54,7 +54,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().numDecodings("10") == 1
-    a__ Solution().numDecodings("27") == 1
-    a__ Solution().numDecodings("12") == 2
-    a__ Solution().numDecodings("0") == 0
+    assert Solution().numDecodings("10") == 1
+    assert Solution().numDecodings("27") == 1
+    assert Solution().numDecodings("12") == 2
+    assert Solution().numDecodings("0") == 0

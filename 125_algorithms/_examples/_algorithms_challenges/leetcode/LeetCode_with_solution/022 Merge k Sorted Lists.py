@@ -125,5 +125,5 @@ class Solution:
         return dummy.next
 
 if __name__=="__main__":
-    a__  Solution().mergeKLists([None, None])==None
-    a__ Solution().mergeKLists([ListNode(1), ListNode(0)]).val==0
+    assert  Solution().mergeKLists([None, None])==None
+    assert Solution().mergeKLists([ListNode(1), ListNode(0)]).val==0

@@ -7,25 +7,25 @@ OTHER_START_DATE = TODAY + timedelta(days=55)
 
 def test_get_hundred_weekdays_default_start_date():
     days = get_hundred_weekdays(start_date=TODAY)
-    a__ len(days) == 100
+    assert len(days) == 100
     # check start and end dates
-    a__ days[0] == TODAY
-    a__ days[-1] == date(2019, 4, 17)
+    assert days[0] == TODAY
+    assert days[-1] == date(2019, 4, 17)
     # check if weekends are not included
-    a__ days[1] == date(2018, 11, 30)
-    a__ days[2] == date(2018, 12, 3)
+    assert days[1] == date(2018, 11, 30)
+    assert days[2] == date(2018, 12, 3)
     fri_index = days.index(date(2019, 1, 18))
-    a__ days[fri_index + 1] == date(2019, 1, 21)
+    assert days[fri_index + 1] == date(2019, 1, 21)
 
 
 def test_get_hundred_weekdays_different_start_date():
     days = get_hundred_weekdays(start_date=OTHER_START_DATE)
-    a__ len(days) == 100
+    assert len(days) == 100
     # check start and end dates
-    a__ days[0] == OTHER_START_DATE
-    a__ days[-1] == date(2019, 6, 11)
+    assert days[0] == OTHER_START_DATE
+    assert days[-1] == date(2019, 6, 11)
     # check if weekends are not included
-    a__ days[2] == date(2019, 1, 25)
-    a__ days[3] == date(2019, 1, 28)
+    assert days[2] == date(2019, 1, 25)
+    assert days[3] == date(2019, 1, 28)
     fri_index = days.index(date(2019, 6, 7))
-    a__ days[fri_index + 1] == date(2019, 6, 10)
+    assert days[fri_index + 1] == date(2019, 6, 10)

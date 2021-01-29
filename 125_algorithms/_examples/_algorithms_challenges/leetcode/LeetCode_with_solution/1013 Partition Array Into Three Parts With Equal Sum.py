@@ -52,4 +52,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) == True
+    assert Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) == True

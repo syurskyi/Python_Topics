@@ -14,7 +14,7 @@ c_ WindowClass(?M..
         menu _ QMenu('File')
         menuBar.addMenu(menu)
 
-        act1 _ ?A__('Open', self)
+        act1 _ ?assert('Open', self)
         menu.addAction(act1)
 
 

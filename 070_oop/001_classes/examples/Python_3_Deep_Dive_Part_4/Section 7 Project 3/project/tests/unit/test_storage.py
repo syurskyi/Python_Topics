@@ -25,7 +25,7 @@ def storage(storage_values):
 
 def test_create(storage, storage_values):
     for attr_name in storage_values:
-        a__ getattr(storage, attr_name) == storage_values.get(attr_name)
+        assert getattr(storage, attr_name) == storage_values.get(attr_name)
 
 
 @pytest.mark.parametrize(
@@ -38,6 +38,6 @@ def test_create_invalid_storage(gb, exception, storage_values):
 
 
 def test_repr(storage):
-    a__ storage.category in repr(storage)
-    a__ str(storage.capacity_gb) in repr(storage)
+    assert storage.category in repr(storage)
+    assert str(storage.capacity_gb) in repr(storage)
 

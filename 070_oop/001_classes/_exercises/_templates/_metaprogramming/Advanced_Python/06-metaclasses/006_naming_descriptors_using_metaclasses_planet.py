@@ -33,7 +33,7 @@
 #     ___ -n ___ name bases namespace
 #         ___ name, attr __ n___.it..
 #             __ isi..  a.. N..
-#                 a__.n.. _ n..
+#                 assert.n.. _ n..
 #         r_ s___ . -n ___ n.. b.. n..
 #
 #

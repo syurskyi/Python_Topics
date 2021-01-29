@@ -34,4 +34,4 @@ for i in range(1, 10000):
     ie = inclusion_exclusion(i)
     #print(i, sf, ie)
     # supposed to fail at some point, depending on how many primes you have
-    a__ sf == ie, 'i={}, sf={}, ie={}'.format(i, sf, ie)
+    assert sf == ie, 'i={}, sf={}, ie={}'.format(i, sf, ie)

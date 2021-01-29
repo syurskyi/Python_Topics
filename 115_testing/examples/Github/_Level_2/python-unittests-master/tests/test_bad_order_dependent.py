@@ -19,4 +19,4 @@ class OrderDependentExample(unittest.TestCase):
                           "Tracked in https://github.com/stardust85/python-unittests/issues/1")
     def test_baz(self):
         # Yes, we can use pytest's assertions even in unttest-like TestCase :)
-        a__ 1 == 2
+        assert 1 == 2

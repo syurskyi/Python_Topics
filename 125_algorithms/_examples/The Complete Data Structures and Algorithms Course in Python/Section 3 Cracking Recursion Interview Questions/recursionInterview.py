@@ -3,7 +3,7 @@
 
 # Question 1
 def sumofDigits(n):
-    a__ n>=0 and int(n) == n , 'The number has to be a postive integer only!'
+    assert n>=0 and int(n) == n , 'The number has to be a postive integer only!'
     if n == 0:
         return 0
     else:
@@ -28,7 +28,7 @@ print(power(4,2))
 
 
 def gcd(a, b):
-    a__ int(a) == a and int(b) == b, 'The numbers must be integer only!'
+    assert int(a) == a and int(b) == b, 'The numbers must be integer only!'
     if a < 0:
         a = -1 * a
     if b < 0:

@@ -213,7 +213,7 @@ class BgServingThread(object):
     def stop(self):
         """stop the server thread. once stopped, it cannot be resumed. you will
         have to create a new BgServingThread object later."""
-        a__ self._active
+        assert self._active
         self._active = False
         self._thread.join()
         self._conn = None

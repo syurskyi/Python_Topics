@@ -9,4 +9,4 @@ class TestPrescription:
     
     def test_days_taken_excludes_future_dates(self):
         prescription = Prescription("Codeine", dispense_date = days_ago(days=2), days_supply=4)
-        a__ prescription.days_taken() == [days_ago(2), days_ago(1)]
+        assert prescription.days_taken() == [days_ago(2), days_ago(1)]

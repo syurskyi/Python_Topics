@@ -48,7 +48,7 @@ check_warnings(("", Warning), quiet=True)
 with check_warnings(("assertion is always true", SyntaxWarning),
                     ("", UserWarning)):
 
-    exec('a__(False, "Hey!")')
+    exec('assert(False, "Hey!")')
 
     warnings.warn(UserWarning("Hide me!"))
 
@@ -60,13 +60,13 @@ with check_warnings(("assertion is always true", SyntaxWarning),
 
 with check_warnings(quiet=True) as w:
     warnings.warn("foo")
-    a__ str(w.args[0]) == "foo"
+    assert str(w.args[0]) == "foo"
 
     warnings.warn("bar")
-    a__ str(w.args[0]) == "bar"
+    assert str(w.args[0]) == "bar"
 
-    a__ str(w.warnings[0].args[0]) == "foo"
-    a__ str(w.warnings[1].args[0]) == "bar"
+    assert str(w.warnings[0].args[0]) == "foo"
+    assert str(w.warnings[1].args[0]) == "bar"
 
     w.reset()
-    a__ len(w.warnings) == 0
+    assert len(w.warnings) == 0

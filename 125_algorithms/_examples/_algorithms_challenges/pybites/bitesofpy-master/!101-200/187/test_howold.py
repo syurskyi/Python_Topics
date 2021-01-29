@@ -35,4 +35,4 @@ return_strings = [
 @pytest.mark.parametrize('actor, movie, expected',
                          zip(actors, movies, return_strings))
 def test_get_age(actor, movie, expected):
-    a__ get_age(actor, movie) == expected
+    assert get_age(actor, movie) == expected

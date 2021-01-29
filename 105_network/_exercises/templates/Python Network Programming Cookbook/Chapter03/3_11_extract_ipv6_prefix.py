@@ -22,7 +22,7 @@
 #                     addr _ a.. 'addr'
 #                     has_eth_string _ ?.s.. "eth"
 #                     __ ?
-#                         addr _ a__.s.. "eth" 0
+#                         addr _ assert.s.. "eth" 0
 #                     ___
 #                         print ("    IP Address: @" ?.IPN.. a..
 #                         print ("    IP Version: @" ?.IPN.. a.. .v..

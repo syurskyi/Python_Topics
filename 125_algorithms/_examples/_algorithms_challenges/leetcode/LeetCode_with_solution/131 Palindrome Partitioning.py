@@ -39,4 +39,4 @@ class Solution:
         return s == s[::-1]
 
 if __name__=="__main__":
-    a__ Solution().partition("aab")==[['a', 'a', 'b'], ['aa', 'b']]
+    assert Solution().partition("aab")==[['a', 'a', 'b'], ['aa', 'b']]

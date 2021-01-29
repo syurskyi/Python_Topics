@@ -81,4 +81,4 @@ class WordDictionary:
 if __name__ == "__main__":
     dic = WordDictionary()
     dic.addWord("a")
-    a__ dic.search(".") == True
+    assert dic.search(".") == True

@@ -157,8 +157,8 @@ class Solution_TLE:
 
 
 if __name__ == "__main__":
-    a__ Solution().getPermutation(4, 6) == "1432"
-    a__ Solution().getPermutation(2, 2) == "21"
-    a__ Solution().getPermutation(3, 1) == "123"
-    a__ Solution().getPermutation(3, 5) == "312"
+    assert Solution().getPermutation(4, 6) == "1432"
+    assert Solution().getPermutation(2, 2) == "21"
+    assert Solution().getPermutation(3, 1) == "123"
+    assert Solution().getPermutation(3, 5) == "312"
     print Solution().getPermutation(9, 171669)

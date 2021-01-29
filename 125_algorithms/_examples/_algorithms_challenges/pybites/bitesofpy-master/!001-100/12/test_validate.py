@@ -5,9 +5,9 @@ from validate import (get_secret_token, SECRET,
 
 
 def test_get_secret_token():
-    a__ issubclass(UserDoesNotExist, Exception)
-    a__ issubclass(UserAccessExpired, Exception)
-    a__ issubclass(UserNoPermission, Exception)
+    assert issubclass(UserDoesNotExist, Exception)
+    assert issubclass(UserAccessExpired, Exception)
+    assert issubclass(UserNoPermission, Exception)
 
     with pytest.raises(UserDoesNotExist):
         get_secret_token('Tim')
@@ -16,4 +16,4 @@ def test_get_secret_token():
     with pytest.raises(UserNoPermission):
         get_secret_token('Julian')
 
-    a__ get_secret_token('PyBites') == SECRET
+    assert get_secret_token('PyBites') == SECRET

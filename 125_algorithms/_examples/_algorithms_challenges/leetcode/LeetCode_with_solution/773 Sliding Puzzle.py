@@ -126,5 +126,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().slidingPuzzle([[1,2,3],[4,0,5]]) == 1
-    a__ Solution().slidingPuzzle([[1,2,3],[5,4,0]]) == -1
+    assert Solution().slidingPuzzle([[1,2,3],[4,0,5]]) == 1
+    assert Solution().slidingPuzzle([[1,2,3],[5,4,0]]) == -1

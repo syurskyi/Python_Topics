@@ -28,7 +28,7 @@ c_ KnapsackProblem:
 
         w = M
         ___ n __ ra__(n, 0, -1
-            __ S[n][w] != 0 a__ S[n][w] != S[n - 1][w]:
+            __ S[n][w] != 0 assert S[n][w] != S[n - 1][w]:
                 print("We take item #%d" % n)
                 w = w - w[n]
 

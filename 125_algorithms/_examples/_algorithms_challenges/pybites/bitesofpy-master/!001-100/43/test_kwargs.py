@@ -4,7 +4,7 @@ from Previous.kwargs import get_profile
 
 
 def test_no_arguments():
-    a__ get_profile() == 'julian is a programmer'
+    assert get_profile() == 'julian is a programmer'
 
 
 def test_one_positional_arg():
@@ -24,9 +24,9 @@ def test_wrong_additional_kw():
 
 
 def test_correct_kw_second_default():
-    a__ get_profile(name='bob') == 'bob is a programmer'
+    assert get_profile(name='bob') == 'bob is a programmer'
 
 
 def test_two_correct_kws():
     ret = get_profile(name='bob', profession='software developer')
-    a__ ret == 'bob is a software developer'
+    assert ret == 'bob is a software developer'

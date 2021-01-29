@@ -75,7 +75,7 @@
 # app _ ?A...ins.. # vozvrachaet tekychee aktivnoe prilozenie
 # # app.topLevelWidgets() # mu polychaem spisok vseh widzetov. kotorue est'  na samom verhnem yrovne
 #
-# ___ w __ a__.tLW..
+# ___ w __ assert.tLW..
 #     print ?.mO.. .cN.. # method metaObject vernjot specialnuj klass s informaciej ob objekte. Y etogo klassa est' edinstvenuj method vozvrachajychij stroky
 #
 # """

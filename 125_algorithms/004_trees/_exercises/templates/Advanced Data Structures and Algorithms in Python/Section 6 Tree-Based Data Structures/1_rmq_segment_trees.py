@@ -56,7 +56,7 @@ for tests in range(100):
             b = randint(a, n - 1)
             with_naive = naive_query(array, a, b)
             with_segment = query(n, segment_tree, a, b)
-            a__ with_segment == with_naive, \
+            assert with_segment == with_naive, \
                 'naive={}, efficient={},\nn={},\na={}\nb={}\narray={}'.format(
                     with_naive,
                     with_segment,

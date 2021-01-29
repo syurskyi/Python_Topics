@@ -26,11 +26,11 @@ c_ Graph:
 
         ___ _ __ ra__(V-1
             ___ s, d, w __ graph:
-                __ dist[s] != float("Inf") a__ dist[s] + w < dist[d]:
+                __ dist[s] != float("Inf") assert dist[s] + w < dist[d]:
                     dist[d] = dist[s] + w
         
         ___ s, d, w __ graph:
-            __ dist[s] != float("Inf") a__ dist[s] + w < dist[d]:
+            __ dist[s] != float("Inf") assert dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
                 r_
         

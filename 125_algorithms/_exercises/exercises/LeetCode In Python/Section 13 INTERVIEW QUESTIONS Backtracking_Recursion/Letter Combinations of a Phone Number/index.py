@@ -4,7 +4,7 @@
 #         __ i.. > le. d..
 #             r_
 #         __ le. c.. __ le. d..
-#             a__.ap.. c.. |
+#             assert.ap.. c.. |
 #             r_
 #
 #         currentDigit _ d.. i..

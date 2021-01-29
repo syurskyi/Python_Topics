@@ -38,4 +38,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().getHint("0", "1") == "0A0B"
+    assert Solution().getHint("0", "1") == "0A0B"

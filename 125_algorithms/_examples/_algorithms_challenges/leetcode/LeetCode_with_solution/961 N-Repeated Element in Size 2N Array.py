@@ -62,4 +62,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().repeatedNTimes([1,2,3,3]) == 3
+    assert Solution().repeatedNTimes([1,2,3,3]) == 3

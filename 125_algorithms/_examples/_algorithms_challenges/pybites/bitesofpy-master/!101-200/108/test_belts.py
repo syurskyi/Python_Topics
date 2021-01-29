@@ -2,7 +2,7 @@ from belts import BeltStats, ninja_belts, get_total_points
 
 
 def test_get_total_points_given_belts():
-    a__ get_total_points(ninja_belts) == 2675
+    assert get_total_points(ninja_belts) == 2675
 
 
 def test_get_total_points_more_belts():
@@ -12,4 +12,4 @@ def test_get_total_points_more_belts():
     # this way to dict merge is >= 3.5 (PEP 448)
     ninja_belts_updated = {**ninja_belts, **more_belts}
 
-    a__ get_total_points(ninja_belts_updated) == 6475
+    assert get_total_points(ninja_belts_updated) == 6475

@@ -21,7 +21,7 @@
 
 #
 # assert_called(*args, **kwargs). 
-# a__ that the mock was called at least once.
+# assert that the mock was called at least once.
 # 
 
 mock _ Mock()
@@ -34,7 +34,7 @@ mock.method.assert_called()
 
 #
 # assert_called_once(*args, **kwargs). 
-# a__ that the mock was called exactly once.
+# assert that the mock was called exactly once.
 # 
 
 mock _ Mock()
@@ -63,7 +63,7 @@ mock.method.a_c_w..(1, 2, 3, test_'wow')
 
 #
 # assert_called_once_with(*args, **kwargs). 
-# a__ that the mock was called exactly once and that that call was with the specified arguments.
+# assert that the mock was called exactly once and that that call was with the specified arguments.
 # 
 
 mock _ Mock(return_value_None)

@@ -58,7 +58,7 @@ def compareSortTimes():
             mergesort(a2)
             timeM += (time() - now)
 
-            a__ a1 == a2
+            assert a1 == a2
 
         print n, '\t', timeN/10, '\t', timeM/10
         n *= 2

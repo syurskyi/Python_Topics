@@ -166,7 +166,7 @@ def inline(script):
 
     definitions = script.goto_assignments()
     with common.ignored(AssertionError):
-        a__ len(definitions) == 1
+        assert len(definitions) == 1
         stmt = definitions[0]._definition
         usages = script.usages()
         inlines = [r for r in usages
@@ -175,7 +175,7 @@ def inline(script):
                          reverse=True)
         expression_list = stmt.expression_list()
         # don't allow multiline refactorings for now.
-        a__ stmt.start_pos[0] == stmt.end_pos[0]
+        assert stmt.start_pos[0] == stmt.end_pos[0]
         index = stmt.start_pos[0] - 1
 
         line = new_lines[index]

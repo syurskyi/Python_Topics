@@ -16,7 +16,7 @@ from Previous.anyall import (contains_only_vowels,
     ('AiOuef', False),
 ])
 def test_contains_only_vowels(arg, expected):
-    a__ bool(contains_only_vowels(arg)) is expected
+    assert bool(contains_only_vowels(arg)) is expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -36,7 +36,7 @@ def test_contains_only_vowels(arg, expected):
     ('', False),
 ])
 def test_contains_any_py_chars(arg, expected):
-    a__ bool(contains_any_py_chars(arg)) is expected
+    assert bool(contains_any_py_chars(arg)) is expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -49,4 +49,4 @@ def test_contains_any_py_chars(arg, expected):
     ('', False),
 ])
 def test_contains_digits(arg, expected):
-    a__ bool(contains_digits(arg)) is expected
+    assert bool(contains_digits(arg)) is expected

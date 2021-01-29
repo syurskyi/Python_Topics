@@ -77,4 +77,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().numSquares(6) == 3
+    assert Solution().numSquares(6) == 3

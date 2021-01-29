@@ -112,7 +112,7 @@ class Solution_error:
         return "".join(ret)
 
 if __name__ == "__main__":
-    a__ Solution().fractionToDecimal(1, 333) == "0.(003)"
-    a__ Solution().fractionToDecimal(1, 90) == "0.0(1)"
-    a__ Solution().fractionToDecimal(-50, 8) == "-6.25"
-    a__ Solution().fractionToDecimal(7, -12) == "-0.58(3)"
+    assert Solution().fractionToDecimal(1, 333) == "0.(003)"
+    assert Solution().fractionToDecimal(1, 90) == "0.0(1)"
+    assert Solution().fractionToDecimal(-50, 8) == "-6.25"
+    assert Solution().fractionToDecimal(7, -12) == "-0.58(3)"

@@ -3,7 +3,7 @@
 # ____ ?.?G.. ______ ?I.. ?SIM.. ?SI..
 #
 #
-# ____ a__.CM.. ______ CM..
+# ____ assert.CM.. ______ CM..
 # ____ g__.CW.. ______ CW..
 #
 # WINDOW_TITLE _ MongoManager

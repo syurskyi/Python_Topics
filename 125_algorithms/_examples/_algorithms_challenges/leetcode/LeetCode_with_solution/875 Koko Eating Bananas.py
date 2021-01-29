@@ -69,4 +69,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().minEatingSpeed([3,6,7,11], 8) == 4
+    assert Solution().minEatingSpeed([3,6,7,11], 8) == 4

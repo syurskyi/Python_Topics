@@ -54,8 +54,8 @@ class TestClassExample(unittest.TestCase):
 
     # Test case related functions
     # -----------------------------------------------------------
-    # a__ methods available
-    # https://docs.python.org/3/library/unittest.html#a__-methods
+    # assert methods available
+    # https://docs.python.org/3/library/unittest.html#assert-methods
 
     # Test cases
     def test_case01(self):

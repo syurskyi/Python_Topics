@@ -71,4 +71,4 @@ if __name__ == "__main__":
             [0,0,0,0,0,0,0,0,0,0,1,0,0],
             [0,0,0,0,0,0,0,1,1,1,0,0,0],
             [0,0,0,0,0,0,0,1,1,0,0,0,0]]
-    a__ Solution().maxAreaOfIsland(grid) == 6
+    assert Solution().maxAreaOfIsland(grid) == 6

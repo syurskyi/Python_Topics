@@ -70,5 +70,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().validUtf8([197, 130, 1]) == True
-    a__ Solution().validUtf8([235, 140, 4]) == False
+    assert Solution().validUtf8([197, 130, 1]) == True
+    assert Solution().validUtf8([235, 140, 4]) == False

@@ -8,7 +8,7 @@ def test_split_in_columns_default_message():
                 '|Become a PyBites ninja!')
 
     actual = split_in_columns()
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_split_in_columns_on_other_message():
@@ -17,4 +17,4 @@ def test_split_in_columns_on_other_message():
     message = 'Hello world:\nI am coding in Python :)\nHow awesome!'
     actual = split_in_columns(message)
 
-    a__ actual == expected
+    assert actual == expected

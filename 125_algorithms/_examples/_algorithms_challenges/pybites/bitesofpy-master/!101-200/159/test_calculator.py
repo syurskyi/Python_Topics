@@ -9,7 +9,7 @@ from calculator import simple_calculator
     ('12 + 18', 30),
 ])
 def test_sum(arg, expected):
-    a__ simple_calculator(arg) == expected
+    assert simple_calculator(arg) == expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -18,7 +18,7 @@ def test_sum(arg, expected):
     ('12 - 18', -6),
 ])
 def test_subtract(arg, expected):
-    a__ simple_calculator(arg) == expected
+    assert simple_calculator(arg) == expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -27,7 +27,7 @@ def test_subtract(arg, expected):
     ('3 * -6', -18),
 ])
 def test_multiply(arg, expected):
-    a__ simple_calculator(arg) == expected
+    assert simple_calculator(arg) == expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -36,7 +36,7 @@ def test_multiply(arg, expected):
     ('-2 / 175', -0.01),
 ])
 def test_true_division(arg, expected):
-    a__ round(simple_calculator(arg), 2) == expected
+    assert round(simple_calculator(arg), 2) == expected
 
 
 @pytest.mark.parametrize("arg", [

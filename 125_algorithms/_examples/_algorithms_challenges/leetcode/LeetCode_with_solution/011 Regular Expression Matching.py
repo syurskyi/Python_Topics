@@ -176,12 +176,12 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().isMatch("aa", "a") == False
-    a__ Solution().isMatch("aa", "aa") == True
-    a__ Solution().isMatch("aaa", "aa") == False
-    a__ Solution().isMatch("aa", "a*") == True
-    a__ Solution().isMatch("ab", ".*") == True
-    a__ Solution().isMatch("aab", "c*a*b") == True
-    a__ Solution().isMatch("aaa", "a*a") == True
-    a__ Solution().isMatch("bbbba", ".*a*a") == True
-    a__ Solution().isMatch("a", "aa*") == True
+    assert Solution().isMatch("aa", "a") == False
+    assert Solution().isMatch("aa", "aa") == True
+    assert Solution().isMatch("aaa", "aa") == False
+    assert Solution().isMatch("aa", "a*") == True
+    assert Solution().isMatch("ab", ".*") == True
+    assert Solution().isMatch("aab", "c*a*b") == True
+    assert Solution().isMatch("aaa", "a*a") == True
+    assert Solution().isMatch("bbbba", ".*a*a") == True
+    assert Solution().isMatch("a", "aa*") == True

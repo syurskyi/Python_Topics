@@ -14,7 +14,7 @@ def test_one_bite_a_day():
                 date(2019, 8, 30), date(2019, 8, 31),
                 date(2019, 9, 1), date(2019, 9, 2),
                 date(2019, 9, 3), date(2019, 9, 4)]
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_two_bites_every_three_days():
@@ -25,7 +25,7 @@ def test_two_bites_every_three_days():
                 date(2019, 9, 3), date(2019, 9, 3),
                 date(2019, 9, 6), date(2019, 9, 6),
                 date(2019, 9, 9), date(2019, 9, 9)]
-    a__ actual == expected
+    assert actual == expected
 
 
 def test_one_bite_every_other_day():
@@ -36,4 +36,4 @@ def test_one_bite_every_other_day():
                 date(2019, 9, 4), date(2019, 9, 6),
                 date(2019, 9, 8), date(2019, 9, 10),
                 date(2019, 9, 12), date(2019, 9, 14)]
-    a__ actual == expected
+    assert actual == expected

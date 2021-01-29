@@ -21,4 +21,4 @@ from Previous.fizzbuzz import fizzbuzz
     (16, 16),
 ])
 def test_fizzbuzz(arg, ret):
-    a__ fizzbuzz(arg) == ret
+    assert fizzbuzz(arg) == ret

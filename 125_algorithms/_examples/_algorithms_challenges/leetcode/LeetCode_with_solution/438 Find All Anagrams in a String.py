@@ -40,4 +40,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findAnagrams("cbaebabacd", "abc") == [0, 6]
+    assert Solution().findAnagrams("cbaebabacd", "abc") == [0, 6]

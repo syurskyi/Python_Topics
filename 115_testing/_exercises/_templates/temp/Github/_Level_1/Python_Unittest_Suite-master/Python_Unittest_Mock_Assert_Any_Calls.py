@@ -14,9 +14,9 @@
 #
 #
 # assert_any_call(*args, **kwargs) 
-# a__ the mock has been called with the specified arguments.
+# assert the mock has been called with the specified arguments.
 # 
-# The a__ passes if the mock has ever been called, unlike assert_called_with() and assert_called_once_with() that only pass if the call is the most
+# The assert passes if the mock has ever been called, unlike assert_called_with() and assert_called_once_with() that only pass if the call is the most
 # recent one, and in the case of assert_called_once_with() it must also be the only call.
 # 
 

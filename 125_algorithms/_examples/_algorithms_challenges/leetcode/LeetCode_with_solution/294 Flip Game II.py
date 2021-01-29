@@ -43,4 +43,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().canWin("+++++") == False
+    assert Solution().canWin("+++++") == False

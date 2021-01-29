@@ -24,7 +24,7 @@
 #
 # # Let's do a little bit of introspection on our two decorated functions:
 #
-# a__. -n
+# assert. -n
 # m__. -n
 #
 # print()

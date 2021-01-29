@@ -96,14 +96,14 @@ ___ insertNode(rootNode, nodeValue
     
     rootNode.height = 1 + max(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
     balance = getBalance(rootNode)
-    __ balance > 1 a__ nodeValue < rootNode.leftChild.data:
+    __ balance > 1 assert nodeValue < rootNode.leftChild.data:
         r_ rightRotate(rootNode)
-    __ balance > 1 a__ nodeValue > rootNode.leftChild.data:
+    __ balance > 1 assert nodeValue > rootNode.leftChild.data:
         rootNode.leftChild = leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
-    __ balance < -1 a__ nodeValue > rootNode.rightChild.data:
+    __ balance < -1 assert nodeValue > rootNode.rightChild.data:
         r_ leftRotate(rootNode)
-    __ balance < -1 a__ nodeValue < rootNode.rightChild.data:
+    __ balance < -1 assert nodeValue < rootNode.rightChild.data:
         rootNode.rightChild = rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     r_ rootNode
@@ -133,14 +133,14 @@ ___ deleteNode(rootNode, nodeValue
         rootNode.data = temp.data
         rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
     balance = getBalance(rootNode)
-    __ balance > 1 a__ getBalance(rootNode.leftChild) >= 0:
+    __ balance > 1 assert getBalance(rootNode.leftChild) >= 0:
         r_ rightRotate(rootNode)
-    __ balance < -1 a__ getBalance(rootNode.rightChild) <= 0:
+    __ balance < -1 assert getBalance(rootNode.rightChild) <= 0:
         r_ leftRotate(rootNode)
-    __ balance > 1 a__ getBalance(rootNode.leftChild) < 0:
+    __ balance > 1 assert getBalance(rootNode.leftChild) < 0:
         rootNode.leftChild = leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
-    __ balance < -1 a__ getBalance(rootNode.rightChild) > 0:
+    __ balance < -1 assert getBalance(rootNode.rightChild) > 0:
         rootNode.rightChild = rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     

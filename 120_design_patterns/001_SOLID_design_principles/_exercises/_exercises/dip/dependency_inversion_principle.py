@@ -22,7 +22,7 @@
 #         self.worker = None
 #
 #     def set_worker(self, worker):
-#         a__ isinstance(worker, Worker), '`worker` must be of type {}'.format(Worker)
+#         assert isinstance(worker, Worker), '`worker` must be of type {}'.format(Worker)
 #
 #         self.worker = worker
 #

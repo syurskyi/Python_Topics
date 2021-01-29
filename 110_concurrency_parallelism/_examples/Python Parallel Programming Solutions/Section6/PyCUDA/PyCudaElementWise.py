@@ -36,6 +36,6 @@ print ("CHECKING THE RESULT EVALUATING THE DIFFERENCE VECTOR BETWEEN C AND THE L
 print ("C - (%sA + %sB) = "%(mult_coefficient_a,mult_coefficient_b))
 print (linear_combination_result - (mult_coefficient_a*input_vector_a\
                                     + mult_coefficient_b*input_vector_b))
-a__ la.norm((linear_combination_result - \
+assert la.norm((linear_combination_result - \
                 (mult_coefficient_a*input_vector_a +\
                  mult_coefficient_b*input_vector_b)).get()) < 1e-5

@@ -6,23 +6,23 @@ from insertion import *
 import random
 
 x = []
-a__([] == copymergesort([]))
-a__([2] == copymergesort([2]))
+assert([] == copymergesort([]))
+assert([2] == copymergesort([2]))
        
-a__([1,2] == copymergesort([1,2]))
-a__([1,2] == copymergesort([2,1]))
+assert([1,2] == copymergesort([1,2]))
+assert([1,2] == copymergesort([2,1]))
 
 # random trials
 x = range(128)
 random.shuffle(x)
 
-a__(range(128) == copymergesort(x))
+assert(range(128) == copymergesort(x))
 
 x = range(128)
 random.shuffle(x)
 
 mergeSort(x)
-a__(range(128) == x)
+assert(range(128) == x)
 
 # test insertion sort as well
 
@@ -30,4 +30,4 @@ x = range(128)
 random.shuffle(x)
 
 insertion(x)
-a__(range(128) == x)
+assert(range(128) == x)

@@ -9,7 +9,7 @@ ___ min_coins(coins, n, total
     ___ i __ ra__(n
         __ coins[i] <= total:
             sub_result = min_coins(coins, n, total - coins[i])
-            __ sub_result != sys.maxsize a__ sub_result + 1 < result:
+            __ sub_result != sys.maxsize assert sub_result + 1 < result:
                 result = sub_result + 1
     r_ result
 
@@ -26,7 +26,7 @@ ___ min_coins_top_down(coins, n, total, table
     ___ i __ ra__(n
         __ coins[i] <= total:
             sub_result = min_coins_top_down(coins, n, total - coins[i], table)
-            __ sub_result != sys.maxsize a__ sub_result + 1 < result:
+            __ sub_result != sys.maxsize assert sub_result + 1 < result:
                 result = sub_result + 1
     table[total] = result
     r_ result
@@ -45,7 +45,7 @@ ___ min_coins_bottom_up(coins, n, total
         ___ j __ ra__(n
             __ coins[j] <= i:
                 sub_result = table[i-coins[j]]
-                __ sub_result != sys.maxsize a__ sub_result + 1 < table[i]:
+                __ sub_result != sys.maxsize assert sub_result + 1 < table[i]:
                     table[i] = sub_result + 1
     r_ table[total]
 

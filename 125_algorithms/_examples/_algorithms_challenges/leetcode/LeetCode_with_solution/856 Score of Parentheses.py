@@ -80,5 +80,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().scoreOfParentheses("(())") == 2
-    a__ Solution().scoreOfParentheses("(()(()))") == 6
+    assert Solution().scoreOfParentheses("(())") == 2
+    assert Solution().scoreOfParentheses("(()(()))") == 6

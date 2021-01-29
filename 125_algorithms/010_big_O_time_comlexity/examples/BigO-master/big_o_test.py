@@ -21,15 +21,15 @@ for i in range(0, 100):
 one_hundred_factorial = 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
 
 def test_O_of_1_tells_truth():
-    a__ test_of_1.check_index_0_is_int(test_list) == True
+    assert test_of_1.check_index_0_is_int(test_list) == True
 
 def test_O_of_N_Doubles_lists():
     returned_list = test_of_N.double_values(test_list)
-    a__ returned_list[88] == 176
+    assert returned_list[88] == 176
 
 def test_O_of_2_N_Gives_the_right_factorial():
     result = test_of_2_N.get_factorial(100)
-    a__ result == one_hundred_factorial
+    assert result == one_hundred_factorial
  
 def test_O_of_N_log_N():
     returned_list = test_of_N_log_N.sort_list(random_test_list)
@@ -42,25 +42,25 @@ def test_O_of_N_log_N():
         returned_boolean = False
     if returned_list[76] > returned_list[88]:
         returned_boolean = False
-    a__ returned_boolean == True
+    assert returned_boolean == True
 
 def test_O_of_N_Squared_makes_a_spam_field():
     returned_list = test_of_N_Squared.create_spam_field(test_list)
-    a__ len(returned_list) == 100
-    a__ len(returned_list[88]) == 100
-    a__ returned_list[88][88] == 'spam'
+    assert len(returned_list) == 100
+    assert len(returned_list[88]) == 100
+    assert returned_list[88][88] == 'spam'
 
 def test_O_of_N_Cubed_makes_a_spam_space():
     returned_list = test_of_N_Cubed.create_spam_space(test_list)
-    a__ len(returned_list) == 100
-    a__ len(returned_list[88]) == 100
-    a__ len(returned_list[88][88]) == 100
-    a__ returned_list[88][88][88] == 'spam'
+    assert len(returned_list) == 100
+    assert len(returned_list[88]) == 100
+    assert len(returned_list[88][88]) == 100
+    assert returned_list[88][88][88] == 'spam'
 
 def test_O_of_N_Four_Makes_a_spam_hyperspace():
     returned_list = test_of_N_Four.create_spam_hyperspace(test_list)
-    a__ len(returned_list) == 100
-    a__ len(returned_list[88]) == 100
-    a__ len(returned_list[88][88]) == 100
-    a__ len(returned_list[88][88][88]) == 100
-    a__ returned_list[88][88][88][88] == 'spam'
+    assert len(returned_list) == 100
+    assert len(returned_list[88]) == 100
+    assert len(returned_list[88][88]) == 100
+    assert len(returned_list[88][88][88]) == 100
+    assert returned_list[88][88][88][88] == 'spam'

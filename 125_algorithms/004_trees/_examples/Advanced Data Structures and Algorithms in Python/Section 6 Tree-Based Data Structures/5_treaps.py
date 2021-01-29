@@ -15,9 +15,9 @@ def get_height_and_check_priorities(node):
         return 0
 
     if node.left:
-        a__ node.priority <= node.left.priority
+        assert node.priority <= node.left.priority
     if node.right:
-        a__ node.priority <= node.right.priority
+        assert node.priority <= node.right.priority
 
     return 1 + max(
         get_height_and_check_priorities(node.left),
@@ -120,7 +120,7 @@ for i in range(100000):
         #     val,
         #     sorted(python_set),
         #     inorder(treap)))
-        a__ (val in python_set) == search(treap, val),\
+        assert (val in python_set) == search(treap, val),\
             'mismatch in search, set={}, treap={} value={}'.format(
                 val in python_set,
                 search(treap, val),

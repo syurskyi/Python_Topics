@@ -7,7 +7,7 @@
 #     r... No...  Unsupported type
 #
 #
-# ?a__.r.. in.
+# ?assert.r.. in.
 # ___ _ a b     # _ original
 #     print("First argument is of type " ty.. a
 #     print(a + b)

@@ -9,7 +9,7 @@
 #         ?  ?
 #
 #     ___ execute
-#         a__.o.
+#         assert.o.
 #
 #     ___ undo
 #         a___.of.

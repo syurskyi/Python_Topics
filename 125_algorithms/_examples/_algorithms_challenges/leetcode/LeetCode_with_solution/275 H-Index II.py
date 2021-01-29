@@ -26,4 +26,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().hIndex([0, 1, 3, 5, 6]) == 3
+    assert Solution().hIndex([0, 1, 3, 5, 6]) == 3

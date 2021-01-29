@@ -31,7 +31,7 @@ ___ split(fromfile, todir, chunksize_chunksize):
         fileobj.w..(chunk)
         fileobj.close()                            # or simply open().write()
     input.close()
-    a__ partnum <_ 9999                         # join sort fails if 5 digits
+    assert partnum <_ 9999                         # join sort fails if 5 digits
     r_ partnum
 
 __ __name__ __ '__main__':

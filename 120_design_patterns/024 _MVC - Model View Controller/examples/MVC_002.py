@@ -44,7 +44,7 @@ class Model(object):
         for ans in answers:
             if (ans[0] == answer):
                 return ans[1]
-        a__ False, "Could not find answer."
+        assert False, "Could not find answer."
 
 #==============================================================================
 class View(object):

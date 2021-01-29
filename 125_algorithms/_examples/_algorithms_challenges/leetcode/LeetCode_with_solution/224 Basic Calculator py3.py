@@ -64,4 +64,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().calculate("(1+(4+5+2)-3)+(6+8)") == 23
+    assert Solution().calculate("(1+(4+5+2)-3)+(6+8)") == 23

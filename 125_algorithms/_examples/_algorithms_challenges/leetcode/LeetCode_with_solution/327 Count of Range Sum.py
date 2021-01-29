@@ -59,5 +59,5 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().countRangeSum([0, 0], 0, 0) == 3
-    a__ Solution().countRangeSum([-2, 5, -1], -2, 2) == 3
+    assert Solution().countRangeSum([0, 0], 0, 0) == 3
+    assert Solution().countRangeSum([-2, 5, -1], -2, 2) == 3

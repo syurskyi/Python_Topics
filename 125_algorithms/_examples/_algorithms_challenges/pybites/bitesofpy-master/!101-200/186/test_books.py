@@ -16,7 +16,7 @@ from books import get_number_books_read
     (100, '5/20/2019', 40),
 ])
 def test_get_number_books_read(goal, date_str, expected):
-    a__ get_number_books_read(goal, date_str) == expected
+    assert get_number_books_read(goal, date_str) == expected
 
 
 def test_not_positive_goal_exception():

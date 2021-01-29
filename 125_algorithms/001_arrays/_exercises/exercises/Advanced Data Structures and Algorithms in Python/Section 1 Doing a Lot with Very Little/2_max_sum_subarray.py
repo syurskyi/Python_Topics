@@ -37,11 +37,11 @@ def one_loop(array):
 arr1 = [3,4,-9,1,2]
 arr2 = [1,2,3]
 arr3 = [-1,-2,-3]
-# a__ three_loops(arr1) == two_loops(arr1)
-# a__ three_loops(arr2) == two_loops(arr2)
-# a__ three_loops(arr3) == two_loops(arr3)
-# a__ one_loop(arr1) == two_loops(arr1)
-# a__ one_loop(arr2) == two_loops(arr2)
-# a__ one_loop(arr3) == two_loops(arr3)
+# assert three_loops(arr1) == two_loops(arr1)
+# assert three_loops(arr2) == two_loops(arr2)
+# assert three_loops(arr3) == two_loops(arr3)
+# assert one_loop(arr1) == two_loops(arr1)
+# assert one_loop(arr2) == two_loops(arr2)
+# assert one_loop(arr3) == two_loops(arr3)
 
 print(one_loop(arr3))

@@ -16,7 +16,7 @@ def test_two_sums():
     expected = (2, 6)
     target = 30
     result = two_sums(numbers, target)
-    a__ result == expected
+    assert result == expected
 
 
 @pytest.mark.parametrize("target, expected", [
@@ -29,7 +29,7 @@ def test_two_sums():
 ])
 def test_two_sums_param(target, expected):
     result = two_sums(NUMBERS, target)
-    a__ result == expected
+    assert result == expected
 
 
 def test_two_sums_random():
@@ -42,9 +42,9 @@ def test_two_sums_random():
     expected = ordered[0], ordered[1]
     target = sum(picked)
     result = two_sums(numbers, target)
-    a__ result == expected
+    assert result == expected
 
 
 def test_two_sums_none():
     result = two_sums(NUMBERS, 7000)
-    a__ result is None
+    assert result is None

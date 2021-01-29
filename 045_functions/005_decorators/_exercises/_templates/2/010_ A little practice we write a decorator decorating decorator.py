@@ -31,7 +31,7 @@
 # ??
 # ___ decorated_decorator func $ $$
 # ___ wrapper function_arg1 function_arg2
-#         print Мне тут передали...:*_ a__ k__
+#         print Мне тут передали...:*_ assert k__
 #         r_ ? f00_ f00_
 #
 #     r_ ?

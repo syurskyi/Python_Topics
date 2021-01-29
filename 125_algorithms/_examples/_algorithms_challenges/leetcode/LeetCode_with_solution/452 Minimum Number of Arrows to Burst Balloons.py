@@ -66,4 +66,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) == 2
+    assert Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) == 2

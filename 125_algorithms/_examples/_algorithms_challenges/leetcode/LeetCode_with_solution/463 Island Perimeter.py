@@ -49,4 +49,4 @@ if __name__ == "__main__":
         [0,1,0,0],
         [1,1,0,0],
     ]
-    a__ Solution().islandPerimeter(grid) == 16
+    assert Solution().islandPerimeter(grid) == 16

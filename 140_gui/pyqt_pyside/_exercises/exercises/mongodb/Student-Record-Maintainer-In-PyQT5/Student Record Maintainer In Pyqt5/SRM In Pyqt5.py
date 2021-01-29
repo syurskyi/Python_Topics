@@ -75,7 +75,7 @@
 #         branch _ b__.iT.. b__.cI..
 #         sem _ s__.iT.. s__.cI..
 #         mobile _ m__.t..
-#         address _ a__.t..
+#         address _ assert.t..
 #         ___
 #             conn _ _3.c__ database.db
 #             c _ ?.c__

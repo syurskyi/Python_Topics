@@ -44,4 +44,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().lengthOfLongestSubstringKDistinct("eceba", 2) == 3
+    assert Solution().lengthOfLongestSubstringKDistinct("eceba", 2) == 3

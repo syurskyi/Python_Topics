@@ -17,5 +17,5 @@ def test_update_quality(item_name, initial_quality, initial_sellin, updated_qual
     item = Item(item_name, initial_sellin, initial_quality)
     gilded_rose = GildedRose([item])
     gilded_rose.update_quality()
-    a__ item.quality == updated_quality
-    a__ item.sell_in == updated_sellin
+    assert item.quality == updated_quality
+    assert item.sell_in == updated_sellin

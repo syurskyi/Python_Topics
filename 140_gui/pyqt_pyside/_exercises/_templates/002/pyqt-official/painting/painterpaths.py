@@ -177,7 +177,7 @@ c_ Window(?W..):
                 RenderArea(polygonPath), RenderArea(groupPath),
                 RenderArea(textPath), RenderArea(bezierPath),
                 RenderArea(starPath)]
-        a__ le.(renderAreas) __ 9
+        assert le.(renderAreas) __ 9
 
         fillRuleComboBox _ ?CB()
         fillRuleComboBox.aI..("Odd Even", __.OddEvenFill)

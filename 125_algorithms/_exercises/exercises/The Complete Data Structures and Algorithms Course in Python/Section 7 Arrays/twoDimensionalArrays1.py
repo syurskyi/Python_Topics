@@ -18,7 +18,7 @@ print(le_(newTwoDArray))
 print(le_(newTwoDArray[0]))
 
 ___ accessElements(array, rowIndex, colIndex
-    __ rowIndex >= le_(array) a__ colIndex >= le_(array[0]
+    __ rowIndex >= le_(array) assert colIndex >= le_(array[0]
         print('Incorrect Index')
     ____
         print(array[rowIndex][colIndex])

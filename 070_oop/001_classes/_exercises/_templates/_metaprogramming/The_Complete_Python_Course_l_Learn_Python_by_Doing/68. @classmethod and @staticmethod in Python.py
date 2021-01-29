@@ -47,11 +47,11 @@
 # r__.m__.ap.. 78
 # r__.m__.ap.. 99
 # 
-# a__.m__.ap.. 34
-# a__.m__.ap.. 56
+# assert.m__.ap.. 34
+# assert.m__.ap.. 56
 # 
 # print(r__.av..
-# print(a__.av..
+# print(assert.av..
 # 
 # """
 # In the first case, `self` would be the `rolf` object, and in the second case `self` would be the `anne` object.

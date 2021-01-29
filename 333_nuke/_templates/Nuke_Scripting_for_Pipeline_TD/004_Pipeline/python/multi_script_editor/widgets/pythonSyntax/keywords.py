@@ -13,7 +13,7 @@ syntax = {"extension": [
                         # Bitwise
                         "^", "|", "&"],
           "keywords": [ "and",
-                        "a__",
+                        "assert",
                         "break",
                         "continue",
                         "del",

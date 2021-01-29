@@ -46,7 +46,7 @@
 # __ _________ __ ________
 #     ______ arg...
 #     ra__.se.. 444
-#     parser _ a__.A..
+#     parser _ assert.A..
 #     ?.a_a.. "-p" "--nprod", t.._i.. d.._5
 #     ?.a_a.. "-c" "--ncon", t.._i.. d.._10
 #     ns _ p__.p_a..

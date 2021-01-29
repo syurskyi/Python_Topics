@@ -11,12 +11,12 @@
 #         classes = g_m.. a..
 #                              l_____ m isc.. ? an. no. isa.. ?
 #         ___ name _type __ ?
-#             __ isc.. _t.. an. iss.. _t.. a__.A..
-#                 ?a__.up.. |||? _?
+#             __ isc.. _t.. an. iss.. _t.. assert.A..
+#                 ?assert.up.. |||? _?
 #
 #     ___ create_instance  carname
 #         __ ? __ a..
 #             r__ a.. ?
 #         ____
-#             r_ a__.N.. ?
+#             r_ assert.N.. ?
 #

@@ -19,21 +19,21 @@ class TestIntegerValidator:
     def test_min_std_err_msg(self):
         with pytest.raises(ValueError) as ex:
             validate_integer('arg', 10, 100)
-        a__ 'arg' in str(ex.value)
-        a__ '100' in str(ex.value)
+        assert 'arg' in str(ex.value)
+        assert '100' in str(ex.value)
 
     def test_min_custom_msg(self):
         with pytest.raises(ValueError) as ex:
             validate_integer('arg', 10, 100, custom_min_message='custom')
-        a__ str(ex.value) == 'custom'
+        assert str(ex.value) == 'custom'
 
     def test_max_std_err_msg(self):
         with pytest.raises(ValueError) as ex:
             validate_integer('arg', 10, 1, 5)
-        a__ 'arg' in str(ex.value)
-        a__ '5' in str(ex.value)
+        assert 'arg' in str(ex.value)
+        assert '5' in str(ex.value)
 
     def test_max_custom_err_msg(self):
         with pytest.raises(ValueError) as ex:
             validate_integer('arg', 10, 1, 5, custom_max_message='custom')
-        a__ str(ex.value) == 'custom'
+        assert str(ex.value) == 'custom'

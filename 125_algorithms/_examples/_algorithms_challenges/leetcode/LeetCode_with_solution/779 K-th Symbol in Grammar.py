@@ -76,7 +76,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().kthGrammar(1, 1) == 0
-    a__ Solution().kthGrammar(2, 1) == 0
-    a__ Solution().kthGrammar(2, 2) == 1
-    a__ Solution().kthGrammar(4, 5) == 1
+    assert Solution().kthGrammar(1, 1) == 0
+    assert Solution().kthGrammar(2, 1) == 0
+    assert Solution().kthGrammar(2, 2) == 1
+    assert Solution().kthGrammar(4, 5) == 1

@@ -60,7 +60,7 @@
 #
 # ___ powerKnob a
 #     k _ ?.tK..
-#     __ ?.n.. __ 'power' an. a__'Blur'
+#     __ ?.n.. __ 'power' an. assert'Blur'
 #         v _ ?.gV..
 #         img _ in. ?*5)+1
 #         ?.sL.. '<img src="@/icons/power@.png">'  __.en__ N_P.. .r.. '\\','/' ?

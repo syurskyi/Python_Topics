@@ -97,5 +97,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().leastInterval(["A","A","A","B","B","B"], 0) == 6
-    a__ Solution().leastInterval(["A","A","A","B","B","B"], 2) == 8
+    assert Solution().leastInterval(["A","A","A","B","B","B"], 0) == 6
+    assert Solution().leastInterval(["A","A","A","B","B","B"], 2) == 8

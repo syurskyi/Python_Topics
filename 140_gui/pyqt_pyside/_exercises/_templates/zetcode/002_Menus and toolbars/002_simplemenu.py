@@ -14,7 +14,7 @@
 #         exitAct _ ?A.. ?I.. *e...png *&Exit ?
 #         ?.sS.. *Ctrl+Q
 #         ?.sST.. *Exit application
-#         ?.t__.c.. ?A__.q..
+#         ?.t__.c.. ?assert.q..
 #
 #         sB..
 #

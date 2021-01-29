@@ -44,4 +44,4 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    a__ Solution().longestPalindrome("abccccdd") == 7
+    assert Solution().longestPalindrome("abccccdd") == 7

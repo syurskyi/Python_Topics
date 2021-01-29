@@ -177,7 +177,7 @@ def main():
     p2 = Point(x=100, y=150)
     print(p2)
     print("p1.identifier != p2.identifier")
-    a__ p1.identifier != p2.identifier
+    assert p1.identifier != p2.identifier
 
     print("\nIdentifiers in the instance pool")
     print(Point.available_identifiers())
@@ -197,7 +197,7 @@ def main():
     p4 = Point.clone(p3.identifier)
     print(p4)
     print("p1.identifier == p3.identifier == p4.identifier")
-    a__ p1.identifier == p3.identifier == p4.identifier
+    assert p1.identifier == p3.identifier == p4.identifier
 
     print("\nIdentifiers in the instance pool")
     print(Point.available_identifiers())

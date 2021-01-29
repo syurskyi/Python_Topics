@@ -18,7 +18,7 @@ q3 = my_queue(7)
 ])
 def test_queue_default_arg(fn_in, expected_result):
     q1.append(fn_in)
-    a__ list(q1) == expected_result
+    assert list(q1) == expected_result
 
 
 @pytest.mark.parametrize('fn_in,expected_result', [
@@ -32,7 +32,7 @@ def test_queue_default_arg(fn_in, expected_result):
 ])
 def test_queue_less_items(fn_in, expected_result):
     q2.append(fn_in)
-    a__ list(q2) == expected_result
+    assert list(q2) == expected_result
 
 
 @pytest.mark.parametrize('fn_in,expected_result', [
@@ -46,4 +46,4 @@ def test_queue_less_items(fn_in, expected_result):
 ])
 def test_queue_more_items(fn_in, expected_result):
     q3.append(fn_in)
-    a__ list(q3) == expected_result
+    assert list(q3) == expected_result

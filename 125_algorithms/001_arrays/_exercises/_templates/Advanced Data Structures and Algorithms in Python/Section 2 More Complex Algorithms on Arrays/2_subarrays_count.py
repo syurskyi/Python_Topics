@@ -38,7 +38,7 @@
 #     s = randint(1, 10)
 #     naive_result = naive(array, s)
 #     efficient_result = efficient(array, s)
-#     a__ naive_result== efficient_result, \
+#     assert naive_result== efficient_result, \
 #         'naive_res={}, efficient_res={}, array={}, s={}'.format(
 #             naive_result,
 #             efficient_result,

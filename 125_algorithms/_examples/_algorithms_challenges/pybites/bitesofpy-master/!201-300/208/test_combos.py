@@ -24,5 +24,5 @@ def _sort_all(ret):
 ])
 def test_find_number_pairs(numbers, N, expected):
     actual = find_number_pairs(numbers, N=N)
-    a__ type(actual) == list
-    a__ _sort_all(actual) == _sort_all(expected)
+    assert type(actual) == list
+    assert _sort_all(actual) == _sort_all(expected)

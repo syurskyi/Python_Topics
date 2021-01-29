@@ -38,7 +38,7 @@ for i in range(10000):
 
     naive_res = naive(str)
     hashes_res = rolling_hashes(str)
-    a__ naive_res == hashes_res, 'step={}, naive={}, hashes={}'.format(
+    assert naive_res == hashes_res, 'step={}, naive={}, hashes={}'.format(
         i,
         naive_res,
         hashes_res

@@ -48,14 +48,14 @@ for i in range(2, 1000):
     e2 = eratosthenes_2(i)
     e3 = eratosthenes_3(i)
     enp = eratosthenes_np(i)
-    a__ e1 == e2, 'i={}, e1={}, e2={}'.format(i, e1, e2)
-    a__ e1 == e3, 'i={}, e1={}, e3={}'.format(i, e1, e3)
-    a__ e1 == enp, 'i={}, e1={}, enp={}'.format(i, e1, enp)
+    assert e1 == e2, 'i={}, e1={}, e2={}'.format(i, e1, e2)
+    assert e1 == e3, 'i={}, e1={}, e3={}'.format(i, e1, e3)
+    assert e1 == enp, 'i={}, e1={}, enp={}'.format(i, e1, enp)
 
 def time_it(func, n=10000000, repeats=10):
     t1 = clock()
     for _ in range(repeats):
-        a__ len(func(n)) > 100
+        assert len(func(n)) > 100
     t2 = clock()
     print('Time for', str(func), ':', (t2 - t1) / repeats, 'seconds.')
 

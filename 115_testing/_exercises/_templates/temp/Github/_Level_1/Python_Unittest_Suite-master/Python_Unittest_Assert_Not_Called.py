@@ -15,7 +15,7 @@
 
 #
 # assert_not_called() 
-# a__ the mock was never called.
+# assert the mock was never called.
 # 
 
 m _ Mock()

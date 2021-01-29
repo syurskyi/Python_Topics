@@ -67,4 +67,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().nextGreaterElements([1,2,1]) == [2, -1, 2]
+    assert Solution().nextGreaterElements([1,2,1]) == [2, -1, 2]

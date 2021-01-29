@@ -246,7 +246,7 @@ class EdgeDetect(Node):
     pass
 class AudioRead(Node):
     pass
-class a__(Node):
+class assert(Node):
     pass
 class ParticleSettings(Node):
     pass

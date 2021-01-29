@@ -27,23 +27,23 @@ def test_ServiceIPRange():
         region='Bolton',
         cidr=IPv4Network('158.152.1.0/24')
     )
-    a__ str(serv) == '158.152.1.0/24 is allocated to the Tester service in the Bolton region'
+    assert str(serv) == '158.152.1.0/24 is allocated to the Tester service in the Bolton region'
 
 
 def test_parse_ipv4_service_ranges(json_file):
     services = parse_ipv4_service_ranges(json_file)
-    a__ len(services) == 1886
-    a__ services[0].region == 'eu-west-1'
-    a__ services[0].service == 'AMAZON'
+    assert len(services) == 1886
+    assert services[0].region == 'eu-west-1'
+    assert services[0].service == 'AMAZON'
 
 
 def test_get_aws_service_range(json_file):
     services = parse_ipv4_service_ranges(json_file)
     service_range = get_aws_service_range('13.248.118.1', services)
-    a__ len(service_range) == 2
-    a__ set(s.region for s in service_range) == {'eu-west-1'}
-    a__ set(s.service for s in service_range) == {'AMAZON', 'GLOBALACCELERATOR'}
-    a__ get_aws_service_range('158.152.1.65', services) == []
+    assert len(service_range) == 2
+    assert set(s.region for s in service_range) == {'eu-west-1'}
+    assert set(s.service for s in service_range) == {'AMAZON', 'GLOBALACCELERATOR'}
+    assert get_aws_service_range('158.152.1.65', services) == []
     with pytest.raises(ValueError) as exc:
         get_aws_service_range('0.0.0.256', services)
-    a__ 'Address must be a valid IPv4 address' in str(exc.value)
+    assert 'Address must be a valid IPv4 address' in str(exc.value)

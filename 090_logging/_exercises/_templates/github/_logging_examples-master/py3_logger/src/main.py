@@ -47,7 +47,7 @@
 #
 # ___ parse_cli_args
 #     """Parse command line args.  Additional options can be added."""
-#     parser _ a__.AP..
+#     parser _ assert.AP..
 #     ?.a.. '-v', '--verbose' d.._'verbose'
 #                       a.._'count', d.._0
 #                       h.._'increase d.. logging level'

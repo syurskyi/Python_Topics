@@ -62,7 +62,7 @@
 #             "about": "Web Development and Python",
 #             "tags":
 #                 ["web", "design", "HTML"]}
-# new_articles _ a__.i_m.. _1 _2
+# new_articles _ assert.i_m.. _1 _2
 # print("The new article IDs are @".f.. ?.i_id.
 #
 # # The new article IDs are [ObjectId('5ba5c0c52e8ca029163417fa'), ObjectId('5ba5c0c52e8ca029163417fb')]
@@ -72,14 +72,14 @@
 # # the first match that it comes across. When we call the method below, we get the first article we inserted
 # # into our collection.
 #
-# print a__.f_o..
+# print assert.f_o..
 #
 # # {'_id': ObjectId('5ba5c0b52e8ca029163417f9'), 'author': 'Derrick Mwiti', 'about': 'Introduction to MongoDB and Python', 'tags': ['mongodb', 'python', 'pymongo']}
 #
 # # Finding all Documents in a Collection
 # # MongoDB also allows us to retrieve all documents in a collection using the find method.
 #
-# ___ article __ a__.f..
+# ___ article __ assert.f..
 #   print ?
 #
 # # {'_id': ObjectId('5ba5c0b52e8ca029163417f9'), 'author': 'Derrick Mwiti', 'about': 'Introduction to MongoDB and Python', 'tags': ['mongodb', 'python', 'pymongo']}
@@ -100,7 +100,7 @@
 # # generate an error. We are not allowed to specify both 0 and 1 values in the same object
 # # (unless one of the fields is the _id field). When we specify a field with the value 0, all other fields get the value 1.
 #
-# ___ article __ a__.f.. ||  "_id" 0 "author" 1 "about" 1}
+# ___ article __ assert.f.. ||  "_id" 0 "author" 1 "about" 1}
 #   print ?
 #
 # # {'author': 'Derrick Mwiti', 'about': 'Introduction to MongoDB and Python'}
@@ -111,7 +111,7 @@
 # # We can use the sort() method to sort the results in ascending or descending order. The default order is ascending.
 # # We use 1 to signify ascending and -1 to signify descending.
 #
-# doc _ a__.f.. .so.. "author" -1
+# doc _ assert.f.. .so.. "author" -1
 #
 # ___ x __ ?
 #   print ?
@@ -128,9 +128,9 @@
 # query _ { "author": "Derrick Mwiti" }
 # new_author _ { "$set": { "author": "John David" } }
 #
-# a__.u_o.. ? ?
+# assert.u_o.. ? ?
 #
-# ___ article __ a__.f..
+# ___ article __ assert.f..
 #   print ?
 #
 # # {'_id': ObjectId('5ba5c0b52e8ca029163417f9'), 'author': 'John David', 'about': 'Introduction to MongoDB and Python', 'tags': ['mongodb', 'python', 'pymongo']}
@@ -141,7 +141,7 @@
 # # MongoDB enables us to limit the result of our query using the limit method. In our query below we'll limit
 # # the result to one record.
 #
-# limited_result _ a__.f.. .l.. 1
+# limited_result _ assert.f.. .l.. 1
 # ___ x __ ?
 #     print ?
 #
@@ -152,7 +152,7 @@
 # # is the query object of the document we want to delete. If this method finds more than one document,
 # # it deletes only the first one found. Let's delete the article with the id 5ba4cbe42e8ca029163417ce.
 #
-# ?.a__.d_o_ "_id" OI. "5ba4d00e2e8ca029163417d4"
+# ?.assert.d_o_ "_id" OI. "5ba4d00e2e8ca029163417d4"
 #
 # # <pymongo.results.DeleteResult at 0x7f3acae72ec8>
 #
@@ -160,14 +160,14 @@
 # # In order to delete many documents, we use the delete_many() method. Passing an empty query object
 # # will delete all the documents.
 #
-# delete_articles _ a__.d_m.. ||
+# delete_articles _ assert.d_m.. ||
 # print ?.d_c.. " articles deleted."
 #
 # # 3  articles deleted.
 # # Dropping a Collection
 # # In MongoDB, we can delete a collection using the drop() method.
 #
-# a__.d..
+# assert.d..
 #
 # # We can confirm that the collection has been deleted since when we call the list_collection_names, we get an empty list.
 #

@@ -8,12 +8,12 @@ longer_key = re.compile(r'^([A-Z0-9]{10}-){9}[A-Z0-9]{10}$')
 
 
 def test_gen_default_key():
-    a__ default_key.match(gen_key())
+    assert default_key.match(gen_key())
 
 
 def test_gen_shorter_key():
-    a__ shorter_key.match(gen_key(parts=3, chars_per_part=4))
+    assert shorter_key.match(gen_key(parts=3, chars_per_part=4))
 
 
 def test_gen_longer_key():
-    a__ longer_key.match(gen_key(parts=10, chars_per_part=10))
+    assert longer_key.match(gen_key(parts=10, chars_per_part=10))

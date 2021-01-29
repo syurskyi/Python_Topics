@@ -95,5 +95,5 @@ def test_create_chessboard(size, capfd):
     create_chessboard(size)
     actual = capfd.readouterr()[0]
     expected = dedent(expected_outputs[size])
-    a__ (_non_empty_lines(actual) ==
+    assert (_non_empty_lines(actual) ==
             _non_empty_lines(expected))

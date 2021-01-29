@@ -55,4 +55,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) == ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]
+    assert Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) == ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]

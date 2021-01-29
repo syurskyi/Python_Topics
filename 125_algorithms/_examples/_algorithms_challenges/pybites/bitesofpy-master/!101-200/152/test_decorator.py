@@ -21,4 +21,4 @@ def test_strip_range(start, end, arg, expected):
     def gen_output(text):
         return text
     actual = gen_output(text=arg)
-    a__ actual == expected
+    assert actual == expected

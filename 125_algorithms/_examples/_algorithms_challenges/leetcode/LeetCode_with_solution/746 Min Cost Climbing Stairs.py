@@ -46,4 +46,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().minCostClimbingStairs([10, 15, 20]) == 15
+    assert Solution().minCostClimbingStairs([10, 15, 20]) == 15

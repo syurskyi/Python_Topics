@@ -89,7 +89,7 @@ c_ Gradient(?W...?W..):
         ]
 
     ___ setGradient  gradient):
-        a__ al.([0.0 <_ stop <_ 1.0 ___ stop, _ __ gradient])
+        assert al.([0.0 <_ stop <_ 1.0 ___ stop, _ __ gradient])
         _gradient _ gradient
         _constrain_gradient()
         _sort_gradient()
@@ -105,7 +105,7 @@ c_ Gradient(?W...?W..):
     ___ addStop  stop, color_None):
         # Stop is a value 0...1, find the point to insert this stop
         # in the list.
-        a__ 0.0 <_ stop <_ 1.0
+        assert 0.0 <_ stop <_ 1.0
 
         ___ n, g __ en..(_gradient):
             __ g[0] > stop:

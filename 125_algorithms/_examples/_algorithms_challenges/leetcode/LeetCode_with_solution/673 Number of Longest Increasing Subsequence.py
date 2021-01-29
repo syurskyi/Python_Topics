@@ -60,6 +60,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    a__ Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) == 27
-    a__ Solution().findNumberOfLIS([1, 3, 5, 4, 7]) == 2
-    a__ Solution().findNumberOfLIS([2, 2, 2, 2, 2]) == 5
+    assert Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) == 27
+    assert Solution().findNumberOfLIS([1, 3, 5, 4, 7]) == 2
+    assert Solution().findNumberOfLIS([2, 2, 2, 2, 2]) == 5

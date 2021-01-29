@@ -11,7 +11,7 @@ def test_text_to_one_col():
     ]
     output = text_to_columns(text).split("\n")
     for line, match in zip(output, expected):
-        a__ re.search(match, line)
+        assert re.search(match, line)
 
 
 def test_text_to_two_cols():
@@ -25,7 +25,7 @@ def test_text_to_two_cols():
     ]
     output = text_to_columns(text).split("\n")
     for line, match in zip(output, expected):
-        a__ re.search(match, line)
+        assert re.search(match, line)
 
 
 def test_text_to_three_cols():
@@ -42,7 +42,7 @@ def test_text_to_three_cols():
     ]
     output = text_to_columns(text).split("\n")
     for line, match in zip(output, expected):
-        a__ re.search(match, line)
+        assert re.search(match, line)
 
 
 def test_text_to_four_cols():
@@ -62,4 +62,4 @@ def test_text_to_four_cols():
     ]
     output = text_to_columns(text).split("\n")
     for line, match in zip(output, expected):
-        a__ re.search(match, line)
+        assert re.search(match, line)

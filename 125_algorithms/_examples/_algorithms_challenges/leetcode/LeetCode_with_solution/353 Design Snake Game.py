@@ -64,4 +64,4 @@ class SnakeGame(object):
 if __name__ == "__main__":
     game = SnakeGame(3, 2, [[1, 2], [0, 1]])
     for char, expect in zip('RDRULU', [0, 0, 1, 1, 2, -1]):
-        a__ game.move(char) == expect
+        assert game.move(char) == expect

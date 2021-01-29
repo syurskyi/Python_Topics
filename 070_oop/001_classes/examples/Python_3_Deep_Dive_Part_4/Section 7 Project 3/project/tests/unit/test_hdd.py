@@ -27,7 +27,7 @@ def hdd(hdd_values):
 
 def test_create(hdd, hdd_values):
     for attr_name in hdd_values:
-        a__ getattr(hdd, attr_name) == hdd_values.get(attr_name)
+        assert getattr(hdd, attr_name) == hdd_values.get(attr_name)
 
 
 @pytest.mark.parametrize('size', ['2.5', '5.25"'])
@@ -52,7 +52,7 @@ def test_create_invalid_rpm(rpm, exception, hdd_values):
 
 
 def test_repr(hdd):
-    a__ hdd.category in repr(hdd)
-    a__ str(hdd.capacity_gb) in repr(hdd)
-    a__ hdd.size in repr(hdd)
-    a__ str(hdd.rpm) in repr(hdd)
+    assert hdd.category in repr(hdd)
+    assert str(hdd.capacity_gb) in repr(hdd)
+    assert hdd.size in repr(hdd)
+    assert str(hdd.rpm) in repr(hdd)
