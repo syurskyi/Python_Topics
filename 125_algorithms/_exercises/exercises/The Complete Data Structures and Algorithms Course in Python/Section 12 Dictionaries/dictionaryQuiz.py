@@ -53,11 +53,11 @@ arr[1] = 1
 arr['1'] = 2
 arr[1] += 1
 
-sum = 0
+su_ = 0
 ___ k __ arr:
-    sum += arr[k]
+    su_ += arr[k]
 
-print(sum)
+print(su_)
 # A. 1 
 # B. 2
 # C. 3 
@@ -72,11 +72,11 @@ my_dict[1] = 1
 my_dict['1'] = 2
 my_dict[1.0] = 4
 
-sum = 0
+su_ = 0
 ___ k __ my_dict:
-    sum += my_dict[k]
+    su_ += my_dict[k]
     
-print (sum)
+print (su_)
 # A. 7
 # B. Syntax error
 # C. 3
@@ -91,11 +91,11 @@ my_dict[(1,2,4)] = 8
 my_dict[(4,2,1)] = 10
 my_dict[(1,2)] = 12
 
-sum = 0
+su_ = 0
 ___ k __ my_dict:
-    sum += my_dict[k]
+    su_ += my_dict[k]
 
-print (sum)
+print (su_)
 print(my_dict)
 # A. Syntax error
 # B. 30   

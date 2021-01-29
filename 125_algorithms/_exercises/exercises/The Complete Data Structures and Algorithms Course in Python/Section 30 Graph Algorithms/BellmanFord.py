@@ -21,16 +21,16 @@ c_ Graph:
             print('  ' + key, ' :    ', value)
     
     ___ bellmanFord  src
-        dist = {i : float("Inf") ___ i __ nodes}
+        dist = {i : fl__("Inf") ___ i __ nodes}
         dist[src] = 0
 
         ___ _ __ ra__(V-1
             ___ s, d, w __ graph:
-                __ dist[s] != float("Inf") assert dist[s] + w < dist[d]:
+                __ dist[s] != fl__("Inf") a__ dist[s] + w < dist[d]:
                     dist[d] = dist[s] + w
         
         ___ s, d, w __ graph:
-            __ dist[s] != float("Inf") assert dist[s] + w < dist[d]:
+            __ dist[s] != fl__("Inf") a__ dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
                 r_
         

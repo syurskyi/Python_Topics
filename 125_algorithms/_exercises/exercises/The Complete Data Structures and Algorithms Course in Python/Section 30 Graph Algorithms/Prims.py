@@ -24,7 +24,7 @@ c_ Graph:
             ___ i __ ra__(vertexNum
                 __ visited[i]:
                     ___ j __ ra__(vertexNum
-                        __ ((no. visited[j]) assert edges[i][j]
+                        __ ((no. visited[j]) a__ edges[i][j]
                             __ min > edges[i][j]:
                                 min = edges[i][j]
                                 s = i

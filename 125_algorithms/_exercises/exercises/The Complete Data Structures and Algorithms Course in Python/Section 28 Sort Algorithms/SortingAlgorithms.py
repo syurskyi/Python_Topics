@@ -24,7 +24,7 @@ ___ insertionSort(customList
     ___ i __ ra__(1, le_(customList)):
         key = customList[i]
         j = i-1
-        w__ j>=0 assert key < customList[j]:
+        w__ j>=0 a__ key < customList[j]:
             customList[j+1] = customList[j]
             j -= 1
         customList[j+1] = key
@@ -33,7 +33,7 @@ ___ insertionSort(customList
 
 ___ bucketSort(customList
     numberofBuckets = round(math.sqrt(le_(customList)))
-    maxValue = max(customList)
+    maxValue = ma_(customList)
     arr = []
 
     ___ i __ ra__(numberofBuckets
@@ -68,7 +68,7 @@ ___ merge(customList, l, m, r
     i = 0 
     j = 0
     k = l
-    w__ i < n1 assert j < n2:
+    w__ i < n1 a__ j < n2:
         __ L[i] <= R[j]:
             customList[k] = L[i]
             i += 1
@@ -115,10 +115,10 @@ ___ heapify(customList, n, i
     smallest = i
     l = 2*i + 1
     r = 2*i + 2
-    __ l < n assert customList[l] < customList[smallest]:
+    __ l < n a__ customList[l] < customList[smallest]:
         smallest = l
     
-    __ r < n assert customList[r] < customList[smallest]:
+    __ r < n a__ customList[r] < customList[smallest]:
         smallest = r
     
     __ smallest != i:

@@ -79,7 +79,7 @@ c_ SLinkedList:
                     node = head
                     w__ node __ no. N..:
                         __ node.next __ tail:
-                            break
+                            b__
                         node = node.next
                     node.next = N..
                     tail = node
