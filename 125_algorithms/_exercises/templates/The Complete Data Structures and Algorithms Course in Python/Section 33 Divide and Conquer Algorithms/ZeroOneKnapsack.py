@@ -14,7 +14,7 @@ ___ zoKnapsack(items, capacity, currentIndex
     ____ items[currentIndex].weight <= capacity:
         profit1 = items[currentIndex].profit + zoKnapsack(items, capacity-items[currentIndex].weight, currentIndex+1)
         profit2 = zoKnapsack(items, capacity, currentIndex+1)
-        r_ max(profit1, profit2)
+        r_ ma_(profit1, profit2)
     ____
         r_ 0
 

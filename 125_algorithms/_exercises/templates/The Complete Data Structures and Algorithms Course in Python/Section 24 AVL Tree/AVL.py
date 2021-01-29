@@ -69,16 +69,16 @@ ___ rightRotate(disbalanceNode
     newRoot = disbalanceNode.leftChild
     disbalanceNode.leftChild = disbalanceNode.leftChild.rightChild
     newRoot.rightChild = disbalanceNode
-    disbalanceNode.height = 1 + max(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height = 1 + max(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    disbalanceNode.height = 1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height = 1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ leftRotate(disbalanceNode
     newRoot = disbalanceNode.rightChild
     disbalanceNode.rightChild = disbalanceNode.rightChild.leftChild
     newRoot.leftChild = disbalanceNode
-    disbalanceNode.height = 1 + max(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height = 1 + max(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    disbalanceNode.height = 1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height = 1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ getBalance(rootNode
@@ -94,7 +94,7 @@ ___ insertNode(rootNode, nodeValue
     ____
         rootNode.rightChild = insertNode(rootNode.rightChild, nodeValue)
     
-    rootNode.height = 1 + max(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
+    rootNode.height = 1 + ma_(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
     balance = getBalance(rootNode)
     __ balance > 1 a__ nodeValue < rootNode.leftChild.data:
         r_ rightRotate(rootNode)

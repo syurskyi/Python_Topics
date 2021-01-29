@@ -33,7 +33,7 @@ ___ insertionSort(customList
 
 ___ bucketSort(customList
     numberofBuckets = round(math.sqrt(le_(customList)))
-    maxValue = max(customList)
+    maxValue = ma_(customList)
     arr = []
 
     ___ i __ ra__(numberofBuckets

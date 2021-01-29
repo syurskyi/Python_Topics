@@ -2,7 +2,7 @@
 # Recursive Approach
 ___ get_edit_dist(str1, str2, m, n
     __ m __ 0 or n __ 0:
-        r_ max(m, n)
+        r_ ma_(m, n)
 
     ch1 = 1 + get_edit_dist(str1, str2, m, n - 1)
     ch2 = 1 + get_edit_dist(str1, str2, m - 1, n)
@@ -19,7 +19,7 @@ ___ get_edit_dist(str1, str2, m, n
 # DP : Top Down Approach
 ___ get_edit_dist_td(str1, str2, m, n, dp
     __ m __ 0 or n __ 0:
-        r_ max(m, n)
+        r_ ma_(m, n)
 
     __ dp[m-1][n-1] >= 0:
         r_ dp[m-1][n-1]

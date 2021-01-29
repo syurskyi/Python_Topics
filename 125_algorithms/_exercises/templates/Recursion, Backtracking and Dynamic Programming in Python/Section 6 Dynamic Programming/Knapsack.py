@@ -20,7 +20,7 @@ c_ KnapsackProblem:
                     taking_item = v[i] + S[i - 1][w - w[i]]
 
                 # memoization - we store the sub-results to avoid recalculating the same values
-                S[i][w] = max(not_taking_item, taking_item)
+                S[i][w] = ma_(not_taking_item, taking_item)
 
     ___ show_result(self
 

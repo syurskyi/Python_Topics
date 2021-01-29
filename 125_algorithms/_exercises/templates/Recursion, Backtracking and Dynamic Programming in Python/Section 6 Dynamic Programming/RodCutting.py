@@ -12,7 +12,7 @@ c_ RodCutting:
         ___ i __ ra__(1, le_(p)):
             ___ j __ ra__(1, n+1
                 __ i <= j:
-                    S[i][j] = max(S[i-1][j], p[i]+S[i][j-i])
+                    S[i][j] = ma_(S[i-1][j], p[i]+S[i][j-i])
                 ____
                     S[i][j] = S[i-1][j]
 

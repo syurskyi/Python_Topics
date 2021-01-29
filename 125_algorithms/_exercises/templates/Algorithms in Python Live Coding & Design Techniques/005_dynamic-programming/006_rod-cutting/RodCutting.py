@@ -7,7 +7,7 @@ ___ rod_cut(price, n
         r_ 0
     max_revenue = -sys.maxsize
     ___ i __ ra__(1, n + 1
-        max_revenue = max(max_revenue, price[i - 1] + rod_cut(price, n - i))
+        max_revenue = ma_(max_revenue, price[i - 1] + rod_cut(price, n - i))
     r_ max_revenue
 
 
@@ -21,7 +21,7 @@ ___ rod_cut_topdown(price, n, dp
 
     max_revenue = -sys.maxsize
     ___ i __ ra__(1, n + 1
-        max_revenue = max(max_revenue, price[i - 1] + rod_cut_topdown(price, n - i, dp))
+        max_revenue = ma_(max_revenue, price[i - 1] + rod_cut_topdown(price, n - i, dp))
     dp[n - 1] = max_revenue
     r_ dp[n - 1]
 
@@ -34,7 +34,7 @@ ___ rod_cut_bottomup(price, n
     max_revenue = -sys.maxsize
     ___ i __ ra__(1, n + 1
         ___ j __ ra__(1, i + 1
-            max_revenue = max(max_revenue, price[j - 1] + revenues[i - j])
+            max_revenue = ma_(max_revenue, price[j - 1] + revenues[i - j])
         revenues[i] = max_revenue
     r_ revenues[n]
 

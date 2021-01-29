@@ -11,4 +11,4 @@ ___ solve_recursion  m, w, v, n
         n_included = v[n - 1] + solve_recursion(m - w[n - 1], w, v, n - 1)
         n_excluded = solve_recursion(m, w, v, n - 1)
 
-        r_ max(n_included, n_excluded)
+        r_ ma_(n_included, n_excluded)
