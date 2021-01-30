@@ -1,0 +1,5 @@
+nuke.pluginAddPath("renderFinished")
+nuke.pluginAddPath("readWrite")
+nuke.pluginAddPath("revealInFinder")
+nuke.pluginAddPath("edgeNode")
+nuke.pluginAddPath("autoBackup")
