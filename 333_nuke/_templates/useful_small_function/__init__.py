@@ -137,14 +137,14 @@ ___ list_attr_types(s):
           ie:
             [eval(x) for x in s if type(x) in [str, unicode]]
     """
-    __ not is_list(s):
+    __ no. is_list(s):
         r_ 'unknown'
     
     ___ typ __ [st., int, float, bool]:
         __ all(isinstance(n, typ) ___ n __ s):
             r_ '%s%d' % (typ.__name__, le.(s))
 
-    __ False not __ list(set([is_number(x) ___ x __ s])):
+    __ False no. __ list(set([is_number(x) ___ x __ s])):
         r_ 'float%d' % le.(s)
     r_ 'unknown'
 
@@ -199,7 +199,7 @@ ___ is_newer(file1, file2):
     :returns: file1 is newer.
     :rtype: bool
     """ 
-    __ not __.pa__.exists(file1) or not __.pa__.exists(file2):
+    __ no. __.pa__.exists(file1) or no. __.pa__.exists(file2):
         r_ False
 
     time1 = __.pa__.getmtime(file1)

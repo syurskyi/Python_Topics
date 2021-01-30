@@ -1,4 +1,4 @@
-import nuke
+_____ ?
 
-def create_node():
-    nuke.nodes.Blur()
+___ create_node
+    ?.nodes.Blur()

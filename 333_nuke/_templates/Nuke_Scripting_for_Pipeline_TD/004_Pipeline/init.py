@@ -1,17 +1,17 @@
-import os, sys
-import nuke
+_____ __, sys
+_____ ?
 
-root = os.path.dirname(__file__)
+root = __.pa__.dirname(__file__)
 print(root)
 
 # plugins
-gizmos = os.path.join(root, 'gizmos')
+gizmos = __.pa__.join(root, 'gizmos')
 print(gizmos)
-nuke.pluginAddPath(gizmos, addToSysPath=False)
+?.pluginAddPath(gizmos, addToSysPath=False)
 
 # python
-py = os.path.join(root, 'python')
-sys.path.append(py)
+py = __.pa__.join(root, 'python')
+sys.pa__.a__(py)
 print(py)
 
 # formats
@@ -19,4 +19,4 @@ print(py)
 # nuke.knobDefault('Root.format', '320p')
 
 
-sys.path.append(root)
+sys.pa__.a__(root)

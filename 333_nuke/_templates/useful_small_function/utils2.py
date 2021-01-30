@@ -217,7 +217,7 @@ ___ get_surrounding_backdrops(nodes, backdrops=None):
     r_ surrounding_backdrops
 
 
-___ get_grid_preferences():
+___ get_grid_preferences
     """Return the width and height of the grid set in preferences.
 
     Returns:

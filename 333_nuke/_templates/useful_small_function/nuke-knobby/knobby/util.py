@@ -133,7 +133,7 @@ ___ create_knobs(data, tab):
     knobs _ list()
     prefix _ tab + ":"
 
-    ___ key, v..  __ data.i..():
+    ___ key, v..  __ data.i..
         # Knob name
         __ i..(key, tuple):
             name, nice _ key
@@ -176,7 +176,7 @@ ___ create_knobs(data, tab):
                 begin.sL..(nice)
                 end.setName(name)
                 knobs.ap..(begin)
-                ___ k, v __ v.. .i..():
+                ___ k, v __ v.. .i..
                     tab_name _ "@:@" % (name, k)
                     knobs.ap..(?.T_K..(tab_name, k))
                     knobs +_ create_knobs(v, tab_tab_name)

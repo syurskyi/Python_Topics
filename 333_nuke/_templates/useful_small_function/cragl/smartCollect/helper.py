@@ -43,7 +43,7 @@ ___ load_icons(*args):
 
 
 ___ get_tool_public_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartCollect')
+    root _ __.pa__.j..(__.pa__.e__('~'), 'cragl', 'smartCollect')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -54,7 +54,7 @@ ___ get_tool_public_root(*args):
 
 
 ___ get_tool_private_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartCollect')
+    root _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'smartCollect')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -64,7 +64,7 @@ ___ get_tool_private_root(*args):
     r_ root
 
 
-___ get_logs_root():
+___ get_logs_root
     root _ __.pa__.j..(get_tool_public_root(), 'logs')
     __ no. __.pa__.isd..(root):
         ___
@@ -76,7 +76,7 @@ ___ get_logs_root():
 
 
 ___ get_log_file(*args):
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -90,7 +90,7 @@ ___ get_log_file(*args):
 ___ write_log(text, tool _ 'sc'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
@@ -120,7 +120,7 @@ ___ load_settings(*args):
     r_ settings
 
 
-___ get_xml_elements():
+___ get_xml_elements
     xml _ get_settings_xml()
     tree _ ET.parse(xml)
     root _ tree.getroot()
@@ -145,7 +145,7 @@ ___ get_settings_xml(*args):
     r_ settings_xml
 
 
-___ check_xml_values_exist():
+___ check_xml_values_exist
     settings _ {'always_on_top': 'True',
      'tooltips': 'True',
      'convert_gizmos': 'False',
@@ -157,7 +157,7 @@ ___ check_xml_values_exist():
      'logging_level': '1',
      'nuke_exe_fixed': ' ',
      'archive_threads': '2'}
-    ___ key, v..  __ settings.i..():
+    ___ key, v..  __ settings.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
@@ -190,14 +190,14 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -213,7 +213,7 @@ ___ check_xml_ok(xml, *args):
         reset_settings_xml _ ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 get_settings_xml()
 
 
@@ -323,7 +323,7 @@ ___ remove_nukescript_settings(pa__, section):
     xml, root, tree _ get_xml_elements()
     ___ nukescript __ root.find(section).f_a_('nukescript'):
         __ nukescript.text __ pa__:
-            root.find(section).remove(nukescript)
+            root.find(section).r__(nukescript)
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
@@ -407,7 +407,7 @@ ___ write_pickle_data(data):
 
 ___ get_selected_widgets(table):
     selected_elements _ # list
-    ___ row __ table.selectedIndexes():
+    ___ row __ table.selectedIndexes
         selected_elements.ap..(table.cellWidget(row.row(), 0))
 
     r_ selected_elements

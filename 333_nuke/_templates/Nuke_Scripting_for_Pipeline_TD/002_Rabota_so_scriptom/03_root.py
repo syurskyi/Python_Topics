@@ -1,10 +1,10 @@
-import nuke
+_____ ?
 
-root = nuke.toNode('root')
-nuke.Root()
+root = ?.toNode('root')
+?.r__
 
-node = nuke.Root()
-for k in node.allKnobs():
+node = ?.r__
+___ k __ node.allKnobs
     print k.name()
     
 node.addView('asd')

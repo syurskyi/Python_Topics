@@ -27,14 +27,14 @@ Usage:
 
 """
 
-# Import built-in modules
+# _____ built-in modules
 ____ collections ______ OrderedDict
 ______ j___
 ______ __
 
-# Import local modules
+# _____ local modules
 ____ smartScripter ______ widgets
-____ smartScripter ______ helper
+____ smartScripter ______ h__
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -51,7 +51,7 @@ c_ Scanner(object):
 
         """
         controller _ controller
-        logger _ helper.get_logger()
+        logger _ h__.get_logger()
         stacks _ _load_stacks(root)
 
     ___ _load_stacks(self, root):

@@ -28,7 +28,7 @@ ___ nuke_paint_nodes(input=None):
     __ le.(?.sN..()) __ 0:
         r_ 'red', 'No node selected'
 
-    ___ node __ ?.sN..():
+    ___ node __ ?.sN..
         node['tile_color'].sV..(int(input))
 
     __ le.(?.sN..()) __ 1:
@@ -93,7 +93,7 @@ ___ nuke_set(input, color):
         attribute = input
 
         __ '.' __ input:
-            r_ 'red', 'Knob value "{}" cannot be set to "{}"'.format(attribute, object)
+            r_ 'red', 'Knob value "{}" cannot be set to "{}"'.f..(attribute, object)
 
         ___
             node = ?.tN..(object)
@@ -108,12 +108,12 @@ ___ nuke_set(input, color):
         node_number = le.(?.sN..())
 
         ___
-            ___ node __ ?.sN..():
+            ___ node __ ?.sN..
                 object = node.n..
                 attribute = input
                 node = ?.tN..(object)
                 node[attribute].sV..(color)
-            r_ 'lime', 'Knob value set correctly to {} selected nodes'.format(node_number)
+            r_ 'lime', 'Knob value set correctly to {} selected nodes'.f..(node_number)
         ______ E.. __ e:
             print e
             r_ 'red', 'Could not set knob value to selected nodes'
@@ -142,7 +142,7 @@ ___ nuke_get(input):
         attribute = input
 
         __ '.' __ input:
-            r_ 'red', 'Cannot get knob value "{}" from "{}"'.format(attribute, object)
+            r_ 'red', 'Cannot get knob value "{}" from "{}"'.f..(attribute, object)
 
         ___
             node = ?.tN..(object)

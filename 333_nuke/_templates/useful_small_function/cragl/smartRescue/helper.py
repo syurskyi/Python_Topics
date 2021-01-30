@@ -1,6 +1,6 @@
 """Helper functionality."""
 
-# Import built-in modules
+# _____ built-in modules
 ______ ast
 ______ d_t_
 ______ j___
@@ -10,7 +10,7 @@ ______ shutil
 ______ subprocess
 ______ ___
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.constants ______ CRAGL_SMARTRESCUE_CONFIG_PATH
 ____ smartRescue.constants ______ CRAGL_SMARTRESCUE_PROCESS_PATH
 ____ smartRescue.constants ______ DOCSTRING_EXTRACTION_PATTERN
@@ -62,7 +62,7 @@ ___ create_working_file_copies(files):
     r_ copy_files
 
 
-___ date_now():
+___ date_now
     """Return the date and time of now.
 
     Returns:
@@ -73,7 +73,7 @@ ___ date_now():
     r_ "{:%Y%m%d-%H%M%S}".f..(d_t_.d_t_.now())
 
 
-___ get_process_folder():
+___ get_process_folder
     """Get absolute path of folder to process.
 
     If the environment variable 'SMART_RESCUE_PROCESS_PATH', that points to the
@@ -94,7 +94,7 @@ ___ get_process_folder():
     r_ __.pa__.n_p_(pa__)
 
 
-___ get_config():
+___ get_config
     """Get configuration from environment path of from package path.
 
     We prefer the path that is set via the SMART_RESCUE_CONFIG_PATH
@@ -116,7 +116,7 @@ ___ get_config():
         r_ pa__, j___.l..(file_)
 
 
-___ load_icons():
+___ load_icons
     """Load all icons from the icons folder.
 
     This scans the icons directory and creates an icon dictionary using the
@@ -219,7 +219,7 @@ ___ get_tool_root(which):
 
     """
     cragl_dir _ ".cragl" __ which __ "private" ____ "cragl"
-    root _ __.pa__.j..(__.pa__.expanduser("~"), cragl_dir, NAME)
+    root _ __.pa__.j..(__.pa__.e__("~"), cragl_dir, NAME)
 
     __ no. __.pa__.isd..(root):
         ___
@@ -230,7 +230,7 @@ ___ get_tool_root(which):
     r_ root
 
 
-___ get_local_config_file():
+___ get_local_config_file
     """Get absolute path of config file.
 
     Returns:
@@ -240,7 +240,7 @@ ___ get_local_config_file():
     r_ __.pa__.j..(get_tool_root("private"), "config.json")
 
 
-___ copy_config_file():
+___ copy_config_file
     """Copy over config file if not existing.
 
     Here we copy over the template configuration file of this package to the

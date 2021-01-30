@@ -12,39 +12,39 @@ noOpTileColor = 0x9b00ff
 nodeXOffset = 180
 nodeYOffset = 150
 
-import nuke
+_____ ?
 
-def getParentNode(layer, compNodes, mergeLayer):
+___ getParentNode(layer, compNodes, mergeLayer):
 	iteration = 0
 	parentNode = layer
 	while True:
 		parentNode = compNodes[parentNode]
-		if parentNode in mergeLayer:
+		__ parentNode __ mergeLayer:
 			break
 
-		if parentNode == 'START':
+		__ parentNode == 'START':
 			break
 
 		iteration += 1
-		if iteration > 20:
+		__ iteration > 20:
 			print "ERROR:\nPLEASE CHECK IF THE NAMES OF THE PARENT-NAMES FIT TO THE LAYER-NAMES"
 			parentNode = -1
 			break
 
-	return parentNode
+	r_ parentNode
 
-def calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, nodeNumber):
-	if nodeToAddCount*40 > nodeYOffset:
-		if nodeNumber > 1:
-			if nodeNumber == 2:
+___ calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, nodeNumber):
+	__ nodeToAddCount*40 > nodeYOffset:
+		__ nodeNumber > 1:
+			__ nodeNumber == 2:
 				additionalYOffset = 0
 			additionalYOffset += (nodeToAddCount*40)-(nodeYOffset) - ((nodeNumber-1)*nodeYOffset)
 		else:
 			additionalYOffset += (nodeToAddCount*40)-(nodeYOffset)
-	return additionalYOffset
+	r_ additionalYOffset
 
 
-def createNode(layer, nodeOperations, xPos, yPos):		
+___ createNode(layer, nodeOperations, xPos, yPos):
 	operationNode = nodeOperations.split(':')
 	operationParameters = operationNode[1].split(';')
 	operationNode = operationNode[0]
@@ -52,15 +52,15 @@ def createNode(layer, nodeOperations, xPos, yPos):
 	exec('thisNode = nuke.nodes.'  + str(operationNode) + '(name="' + operationNode + ' ' + str(layer) + '")') 
 	thisNode.setXYpos(int(xPos), int(yPos))
 	
-	for parameter in operationParameters:
-		if parameter != '':
+	___ parameter __ operationParameters:
+		__ parameter != '':
 			parameter = parameter.split('=')
 			exec("thisNode['" + parameter[0] + "'].setValue("+parameter[1]+")")
 			
-	return thisNode 	
+	r_ thisNode
 
-def autoComper():
-	allSelectedNodes = nuke.selectedNodes()
+___ autoComper
+	allSelectedNodes = ?.selectedNodes()
 	mergeLayer = {}
 	mergeLayerInv = {}
 	layerHasReader = {}
@@ -72,121 +72,121 @@ def autoComper():
 	additionalYOffset = 0
 	additionalYOffsetFirst = 0
 	
-	for object in compNodes:
-		if compNodes[object]  == 'START':
-			nodesOrdered.append(object)
+	___ object __ compNodes:
+		__ compNodes[object]  == 'START':
+			nodesOrdered.a__(object)
 			break
 	
 	count = 0
-	for object in compNodes:
-		for object2 in compNodes:
+	___ object __ compNodes:
+		___ object2 __ compNodes:
 			childNode = compNodes[object2]
-			if childNode == nodesOrdered[count]:
-				nodesOrdered.append(object2)
+			__ childNode == nodesOrdered[count]:
+				nodesOrdered.a__(object2)
 				count += 1
 				break
 	
 
-	for thisNode in allSelectedNodes:	
+	___ thisNode __ allSelectedNodes:
 		thisLayers = {}
 		allChannels = thisNode.channels()	
-		for channel in allChannels:
+		___ channel __ allChannels:
 			thisData = str(channel.split('.')[0])
 			thisLayers.update({thisData:''})
 			
-		if len(thisLayers) == 1 and 'rgba' in thisLayers:
+		__ le.(thisLayers) == 1 and 'rgba' __ thisLayers:
 			fileName = thisNode['file'].getValue()
 			fileName = fileName.split('/')
-			fileName = fileName[len(fileName)-1]
+			fileName = fileName[le.(fileName)-1]
 			fileName = fileName.split('.')[0]
 			allLayers.update({fileName:thisNode})
 			layerType.update({fileName:'file'})
 		else:
-			for layer in thisLayers:
+			___ layer __ thisLayers:
 				allLayers.update({layer:thisNode})
 				layerType.update({layer:'channel'})
 	
-	for layer in allLayers:
+	___ layer __ allLayers:
 		layerLower = layer.lower()
 			
-		if int(allLayers[layer]['xpos'].getValue()) < xPosMin:
+		__ int(allLayers[layer]['xpos'].getValue()) < xPosMin:
 			xPosMin = allLayers[layer]['xpos'].getValue()
-		if int(allLayers[layer]['ypos'].getValue()) < yPosMin:
+		__ int(allLayers[layer]['ypos'].getValue()) < yPosMin:
 			yPosMin = allLayers[layer]['ypos'].getValue()	
 	
-		for compChannel in compNodes:
+		___ compChannel __ compNodes:
 			compThis = True
-			if layerLower.find(compChannel, 0, len(layerLower)) > -1:  
-				if compChannel in notCompNodes:
+			__ layerLower.find(compChannel, 0, le.(layerLower)) > -1:
+				__ compChannel __ notCompNodes:
 					notNodes = notCompNodes[compChannel].split(':')
-					for notNode in notNodes:
-						if layerLower.find(notNode, 0, len(layer)) > -1:
+					___ notNode __ notNodes:
+						__ layerLower.find(notNode, 0, le.(layer)) > -1:
 							compThis = False 
 							break
 		
-				if compThis == True:
+				__ compThis == True:
 					mergeLayer.update({compChannel:layer})
 					mergeLayerInv.update({layer:compChannel})
 					layerHasReader.update({layer:''}) 
 	
-	if createNotFoundChannels == True:
-		for node in nodesOrdered:
-			if node not in allLayers:
-				if node not in mergeLayer:
+	__ createNotFoundChannels == True:
+		___ node __ nodesOrdered:
+			__ node no. __ allLayers:
+				__ node no. __ mergeLayer:
 					mergeLayer.update({node:node})
 					mergeLayerInv.update({node:node})
 	newAllLayers = []
-	for node in nodesOrdered:
-		if node in mergeLayer:
-			newAllLayers.append(mergeLayer[node])
-	for layer in allLayers:
-		if layer not in newAllLayers:
-			newAllLayers.append(layer)
+	___ node __ nodesOrdered:
+		__ node __ mergeLayer:
+			newAllLayers.a__(mergeLayer[node])
+	___ layer __ allLayers:
+		__ layer no. __ newAllLayers:
+			newAllLayers.a__(layer)
 	
 	mergeCount = -1
 	nodeNumber = -1
 	
-	for layer in newAllLayers:
+	___ layer __ newAllLayers:
 		layerLower = layer.lower()
 		nodeNumber += 1
 		layerOriginal = layer
-		if layer in mergeLayerInv: 
+		__ layer __ mergeLayerInv:
 			layer = mergeLayerInv[layer]
 			
-		if len(allSelectedNodes) > 1 and autoAlignReaders == True:
-			if layerOriginal in allLayers:
+		__ le.(allSelectedNodes) > 1 and autoAlignReaders == True:
+			__ layerOriginal __ allLayers:
 				allLayers[layerOriginal].setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin))
 		
-		if layerOriginal in layerType:
-			if layerType[layerOriginal] == 'channel':
+		__ layerOriginal __ layerType:
+			__ layerType[layerOriginal] == 'channel':
 				exec(str(layer) +' = nuke.nodes.Shuffle(name = "' + str(layerOriginal) + '_Shuffel", postage_stamp = True)')
 				eval(layer).setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+2*nodeYOffset))
-				if layerOriginal in allLayers:
+				__ layerOriginal __ allLayers:
 					eval(layer).setInput(0, allLayers[layerOriginal])
 					eval(layer)['in'].setValue(layerOriginal)
 		
-		if createNoOpNode:
-			noOpNode = nuke.nodes.NoOp(name=layerOriginal, tile_color=noOpTileColor)
+		__ createNoOpNode:
+			noOpNode = ?.nodes.NoOp(name=layerOriginal, tile_color=noOpTileColor)
 			noOpNode.setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+3*nodeYOffset))
-			if layerOriginal in layerType:		
-				if layerType[layerOriginal] == 'file':
+			__ layerOriginal __ layerType:
+				__ layerType[layerOriginal] == 'file':
 					noOpNode.setInput(0, allLayers[layerOriginal])
 				else:
 					noOpNode.setInput(0, eval(layer))
 		else:
-			if layerOriginal in layerType:		
-				if layerType[layerOriginal] == 'file':
+			__ layerOriginal __ layerType:
+				__ layerType[layerOriginal] == 'file':
 					noOpNode =  allLayers[layerOriginal]	
 				else:
 					noOpNode =  eval(layer)
 					
 		exec(layer + "noOpNode = noOpNode")
 		
-		if layer in addNodesBeforeComped:
+		__ layer __ addNodesBeforeComped:
 			nodeToAddCount = 0
 			nodeBefore = eval(str(layer)+"noOpNode")
 			
-			for nodeToAdd in addNodesBeforeComped[layer].split('|'):
+			___ nodeToAdd __ addNodesBeforeComped[layer].split('|'):
 				xPos = nodeNumber*nodeXOffset+xPosMin 
 				yPos = yPosMin+4*nodeYOffset + (nodeToAddCount*40)
 				noOpNode = createNode(layer, nodeToAdd, xPos, yPos)
@@ -197,7 +197,7 @@ def autoComper():
 			
 			additionalYOffset = calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, nodeNumber)
 	
-		if layer in mergeLayer:
+		__ layer __ mergeLayer:
 			exec(layer + " = noOpNode")
 			exec(layer + "Node = noOpNode")
 			
@@ -205,27 +205,27 @@ def autoComper():
 			
 			parentNode = getParentNode(layer, compNodes, mergeLayer)
 	
-			if parentNode != 'START':		                   
+			__ parentNode != 'START':
 				xPos = xPosMin 
 				yPos = mergeCount*nodeYOffset+yPosMin+4*nodeYOffset+additionalYOffset + additionalYOffsetFirst
 				thisNode = createNode(layer, compNodeOperations[layer], xPos, yPos)
 	
 				exec(layer + "Node = thisNode")
 				
-				if mergeCount > 0 and createDotNode == True:
+				__ mergeCount > 0 and createDotNode == True:
 					#Create Dot-Nodes
-					dot = nuke.nodes.Dot(note_font_size=20)
-					if showDotLabel:
+					dot = ?.nodes.Dot(note_font_size=20)
+					__ showDotLabel:
 						dot['label'].setValue(' ' + str(layerOriginal))
 					dot.setXYpos( int(eval(layer)['xpos'].getValue()+35), int(thisNode['ypos'].getValue()+3) )			
 					dot.setInput(0, eval(layer))
 					exec(layer +" = dot")
 					
-				if layer in addNodesAfterComped:
+				__ layer __ addNodesAfterComped:
 					nodeToAddCount = 1
 					nodeBefore = eval(str(layer)+"Node")
 					
-					for nodeToAdd in addNodesAfterComped[layer].split('|'):
+					___ nodeToAdd __ addNodesAfterComped[layer].split('|'):
 						xPos = xPosMin 
 						yPos = mergeCount*nodeYOffset+yPosMin+4*nodeYOffset+additionalYOffset + additionalYOffsetFirst + (nodeToAddCount*40)
 						thisNode = createNode(layer, nodeToAdd, xPos, yPos)
@@ -238,11 +238,11 @@ def autoComper():
 					
 					exec(layer + "NodeAdd = thisNode")
 						
-	for layer in mergeLayer:		
+	___ layer __ mergeLayer:
 		parentNode = getParentNode(layer, compNodes, mergeLayer)
 		
-		if parentNode != 'START':
-			if parentNode in addNodesAfterComped:
+		__ parentNode != 'START':
+			__ parentNode __ addNodesAfterComped:
 				parentNode = parentNode + "NodeAdd"
 			else:
 				parentNode = parentNode + "Node"

@@ -1,6 +1,6 @@
-import nuke
-import toolbox
+_____ ?
+_____ toolbox
 
-menu = nuke.menu("Nuke")
-fxphd = menu.addMenu("FXPHD")
-fxphd.addCommand("Hotbox","toolbox.start()","n")
+m__ = ?.m__("Nuke")
+fxphd = m__.addMenu("FXPHD")
+fxphd.aC..("Hotbox","toolbox.start()","n")

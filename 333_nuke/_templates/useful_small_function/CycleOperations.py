@@ -34,21 +34,21 @@ C_MergeMat = []
 
 
 
-import ?
+_____ ?
 
 
 
 
 ___ Merge(n, cycle, forwards):
 
-	try:
+	___
 
 		# get knob
 		k = n.knob('operation')
 
 
 		# if custom list is used
-		if len(cycle) > 0:
+		__ le.(cycle) > 0:
 
 			# get knob value as str
 			currOp = k.v.. ()
@@ -56,13 +56,13 @@ ___ Merge(n, cycle, forwards):
 			# check if current value is in cycle
 			nextOp = ''
 
-			if currOp __ cycle:
+			__ currOp __ cycle:
 
 				# get next or pevious item index (depending on forwards)
-				index = cycle.index(currOp) + (1 if forwards else -1)
+				index = cycle.index(currOp) + (1 __ forwards else -1)
 
 				# return to 0 if out of range
-				if(index > (len(cycle)) - 1):
+				__(index > (le.(cycle)) - 1):
 					index = 0
 
 				# set new value
@@ -83,12 +83,12 @@ ___ Merge(n, cycle, forwards):
 			currOp = k.gV..
 
 			# operation count
-			countOp = len(k.values())
+			countOp = le.(k.values())
 
-			if forwards:
+			__ forwards:
 
 				# if last item in list, go to start
-				if int(currOp) + 1 == countOp:
+				__ int(currOp) + 1 == countOp:
 					k.sV..(0)
 
 				else:
@@ -96,12 +96,12 @@ ___ Merge(n, cycle, forwards):
 
 			else:
 
-				if currOp == 0:
+				__ currOp == 0:
 					k.sV..(countOp - 1)
 				else:
 					k.sV..(int(currOp) - 1)
 
-	except:
+	______
 
 		pass
 
@@ -109,7 +109,7 @@ ___ Merge(n, cycle, forwards):
 
 ___ Switch(n, forwards):
 
-	try:
+	___
 
 		# get current value
 		currWhich = n.knob('which').gV..
@@ -117,26 +117,26 @@ ___ Switch(n, forwards):
 		maxWhich = n.inputs() - 1.0
 
 		# make Switch nodes with only one input alternate between 1 and 0
-		if(maxWhich == 0):
+		__(maxWhich == 0):
 			maxWhich = 1
 
 		# new value for Which on Switch
 		newWhich = -1.0
-		if forwards:
+		__ forwards:
 
 			newWhich = currWhich + 1.0
-			if maxWhich < newWhich:
+			__ maxWhich < newWhich:
 				newWhich = 0.0
 
 		else:
 
 			newWhich = currWhich - 1.0
-			if newWhich < 0.0:
+			__ newWhich < 0.0:
 				newWhich = maxWhich
 
 		n.knob('which').sV..(newWhich)
 
-	except:
+	______
 
 		pass
 
@@ -144,7 +144,7 @@ ___ Switch(n, forwards):
 
 ___ OCIOColorSpace(n):
 
-	try:
+	___
 
 		# get knobs
 		k1 = n.knob('in_colorspace')
@@ -158,7 +158,7 @@ ___ OCIOColorSpace(n):
 		k1.sV..(outC)
 		k2.sV..(inC)
 
-	except:
+	______
 
 		pass
 
@@ -166,7 +166,7 @@ ___ OCIOColorSpace(n):
 
 ___ Shuffle(n, forwards):
 
-	try:
+	___
 
 		# get knob
 		k = n.knob('in')
@@ -180,22 +180,22 @@ ___ Shuffle(n, forwards):
 		# get index of current layer
 		i = 0
 		___ eachL __ listL:
-			if eachL == currL:
+			__ eachL == currL:
 				break
 			i += 1
 
 		# get new layer
-		if forwards:
+		__ forwards:
 
-			if len(listL) == i + 1:
+			__ le.(listL) == i + 1:
 				newL = listL[0]
 			else:
 				newL = listL[i + 1]
 
 		else:
 
-			if i == 0:
-				newL = listL[len(listL) - 1]
+			__ i == 0:
+				newL = listL[le.(listL) - 1]
 			else:
 				newL = listL[i - 1]
 
@@ -207,7 +207,7 @@ ___ Shuffle(n, forwards):
 		# set label
 		giveLabel(n, 'in')
 
-	except:
+	______
 
 		pass
 
@@ -215,7 +215,7 @@ ___ Shuffle(n, forwards):
 
 ___ FrameHold(n, forwards):
 
-	try:
+	___
 
 		# get knob
 		k = n.knob('first_frame')
@@ -224,12 +224,12 @@ ___ FrameHold(n, forwards):
 		currF = k.gV..
 
 		# next value
-		newF = currF + 1 if forwards else currF - 1
+		newF = currF + 1 __ forwards else currF - 1
 
 		# set new value
 		k.sV..(newF)
 
-	except:
+	______
 
 		pass
 
@@ -237,7 +237,7 @@ ___ FrameHold(n, forwards):
 
 ___ anyChannelKnob(n, knobName, forwards):
 
-	try:
+	___
 
 		# get knob
 		k = n.knob(knobName)
@@ -253,24 +253,24 @@ ___ anyChannelKnob(n, knobName, forwards):
 		# get index of current layer
 		i = 0
 		___ eachL __ listL:
-			if eachL == currL:
+			__ eachL == currL:
 				break
 			i += 1
 
 
 
 		# get new layer
-		if forwards:
+		__ forwards:
 
-			if len(listL) == i + 1:
+			__ le.(listL) == i + 1:
 				newL = listL[0]
 			else:
 				newL = listL[i + 1]
 
 		else:
 
-			if i == 0:
-				newL = listL[len(listL) - 1]
+			__ i == 0:
+				newL = listL[le.(listL) - 1]
 			else:
 				newL = listL[i - 1]
 
@@ -279,7 +279,7 @@ ___ anyChannelKnob(n, knobName, forwards):
 		k.sV..(newL)
 	
 
-	except:
+	______
 
 		pass
 
@@ -287,7 +287,7 @@ ___ anyChannelKnob(n, knobName, forwards):
 
 ___ anyListKnob(n, knobName, forwards):
 
-	try:
+	___
 
 		# get knob
 		k = n.knob(knobName)
@@ -296,14 +296,14 @@ ___ anyListKnob(n, knobName, forwards):
 		currOp = k.gV..
 
 		# operation count
-		countOp = len(k.values())
+		countOp = le.(k.values())
 
 
 		# if forwards scrolling
-		if forwards:
+		__ forwards:
 
 			# if last item in list, go to start
-			if int(currOp) + 1 == countOp:
+			__ int(currOp) + 1 == countOp:
 				k.sV..(0)
 
 			else:
@@ -315,14 +315,14 @@ ___ anyListKnob(n, knobName, forwards):
 		else:
 
 			# if at first item, go to end
-			if currOp == 0:
+			__ currOp == 0:
 				k.sV..(countOp - 1)
 
 			# go back one item
 			else:
 				k.sV..(int(currOp - 1))
 
-	except:
+	______
 
 		pass
 
@@ -342,10 +342,10 @@ ___ giveLabel(n, knobName):
 
 
 		# check if the label is already present
-		if not labelText __ currLabel:
+		__ no. labelText __ currLabel:
 
 			# add original value and new line before new label text if there was a label already, else no new line
-			if currLabel == '':
+			__ currLabel == '':
 				label.sV..(labelText)
 			else:
 				label.sV..(currLabel + '\n' + labelText)
@@ -359,7 +359,7 @@ ___ CycleOperations(forwards = True):
 	___ i __ ?.sN.. :
 
 		# nodes with custom operation lists
-		if i.Class() == 'Merge2':
+		__ i.Class() == 'Merge2':
 			Merge(i, C_Merge, forwards)
 		elif i.Class() == 'ChannelMerge':
 			Merge(i, C_ChannelMerge, forwards)
@@ -402,5 +402,5 @@ ___ CycleOperations(forwards = True):
 
 
 # autostart (if not imported) - only goes forwards if called this way
-if __name__ == "__main__":
+__ __name__ == "__main__":
 	CycleOperations()

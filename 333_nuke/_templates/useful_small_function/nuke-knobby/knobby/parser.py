@@ -58,7 +58,7 @@ c_ Tablet(list):
     ___ consume(self, queue):
         """
         """
-        ___ under_root():
+        ___ under_root
             r_ getattr(parent, "parent", N..) __ no. N..
 
         ___ ignore_tab_value(name):
@@ -96,7 +96,7 @@ c_ Tablet(list):
 
             tab.consume(queue)
 
-            __ tab_closed an. under_root():
+            __ tab_closed an. under_root
                 r_
 
     ___ merge(self, other):

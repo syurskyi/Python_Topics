@@ -1,13 +1,13 @@
 """Helper functionality for this package."""
 
-# Import built-in modules
+# _____ built-in modules
 ______ logging
 ______ j___
 ______ __
 ______ subprocess
 ______ ___
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
 # PySide ______ switch
@@ -16,13 +16,13 @@ ___
 ______ ImportError:
     ____ ? ______ ?C..
 
-# Import local modules
+# _____ local modules
 ____ smartScripter ______ model
 ____ smartScripter.constants ______ PY, TCL, NEW_STACK
 ____ smartScripter.info ______ __product__
 
 
-___ load_icons():
+___ load_icons
     """Scan icons directory and return paths dict for all icons.
 
     Scans the icons directory and creates an icon dictionary
@@ -114,7 +114,7 @@ ___ get_session_icons(ext_".png"):
     r_ icons
 
 
-___ get_logger():
+___ get_logger
     """Get logger object on the fly.
 
     Returns:
@@ -141,7 +141,7 @@ ___ add_to_history(command):
     # once command, then another and then again the first command, then we
     # want to add this command to the top.
     ___
-        settings["history"].remove(command)
+        settings["history"].r__(command)
     ______ ValueError:
         p..
 
@@ -149,7 +149,7 @@ ___ add_to_history(command):
     r_ model.save(settings)
 
 
-___ clear_history():
+___ clear_history
     """Clear all history commands from the settings file.
 
     Returns:
@@ -224,7 +224,7 @@ ___ assemble_command_path(command_name):
     r_ __.pa__.j..(stack_root, current_stack, command_name)
 
 
-___ get_all_stacks():
+___ get_all_stacks
     """Get all stack folders.
 
     Returns:
@@ -285,7 +285,7 @@ ___ get_tool_root(which):
     ____
         cragl_dir _ "cragl"
 
-    root _ __.pa__.j..(__.pa__.expanduser("~"), cragl_dir, __product__)
+    root _ __.pa__.j..(__.pa__.e__("~"), cragl_dir, __product__)
 
     __ no. __.pa__.isd..(root):
         ___

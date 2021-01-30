@@ -67,8 +67,8 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
         
         # check if proxy enabled, if so return Proxy knob instead of File
         __ proxy:
-            __ ?.r.. .proxy():
-                __ 'proxy' __ node.knobs():
+            __ ?.r.. .proxy
+                __ 'proxy' __ node.knobs
                     ___
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
                         __ node.getLinkedKnob().knob('proxy').v..:
@@ -270,7 +270,7 @@ ___ f..(node):
         my_format _ (my_height, my_width, my_pixel_aspect)
         
         # scan nuke.formats for matching format
-        ___ i __ ?.formats():
+        ___ i __ ?.formats
             thisFormat _ (i.height(), i.width(), i.pixelAspect())
             # if matching format found, assign my_format to the match
             __ thisFormat __ my_format:

@@ -6,7 +6,7 @@ ______ ?
 ______ itertools
 
 
-___ toggle_viewer_lut():
+___ toggle_viewer_lut
     """Iterates thru viewer luts in the viewer"""
     viewer _ ?.activeViewer().node()['viewerProcess']
     luts _ viewer.values()
@@ -30,17 +30,17 @@ ___ viewer_stop_adjust(increment):
         knob.sV..(adjust_gain(gain, increment))
 
 
-___ viewer_stop_up():
+___ viewer_stop_up
     """Adjusts current viewer 1/4 stop up"""
     viewer_stop_adjust(0.25)
 
 
-___ viewer_stop_down():
+___ viewer_stop_down
     """Adjusts current viewer 1/4 stop down"""
     viewer_stop_adjust(-0.25)
 
 
-___ viewer_stop_reset():
+___ viewer_stop_reset
     """Resets exposure on current viewer"""
     nodes _ ?.allNodes('Viewer')
     ___ node __ no__:

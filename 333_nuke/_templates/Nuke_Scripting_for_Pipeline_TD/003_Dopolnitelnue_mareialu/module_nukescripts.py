@@ -1,19 +1,19 @@
-import nuke
-import os
+_____ ?
+_____ __
 
-import nukescripts
+_____ nukescripts
 
 nukescripts.autoBackdrop()
 
-def clearNodeSelection():
-  for n in nuke.selectedNodes():
+___ clearNodeSelection
+  ___ n __ ?.selectedNodes
     # n['selected'].setValue(False)
     n.setSelected(False)
 
 nukescripts.clear_selection_recursive()
 nukescripts.declone(node)
-nukescripts.declone(nuke.selectedNode())
-nukescripts.swapAB(nuke.selectedNode())
+nukescripts.declone(?.selectedNode())
+nukescripts.swapAB(?.selectedNode())
 nukescripts.color_nodes()
 nukescripts.search_replace()
 

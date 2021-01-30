@@ -1,37 +1,37 @@
-import os, sys
-import nuke
+_____ __, sys
+_____ ?
 
-root = os.path.dirname(__file__)
-nuke.tprint(root)
+root = __.pa__.dirname(__file__)
+?.tprint(root)
 
-gizmos = os.path.join(root, 'icons')
+gizmos = __.pa__.join(root, 'icons')
 print(gizmos)
-nuke.pluginAddPath(gizmos, addToSysPath=True)
+?.pluginAddPath(gizmos, addToSysPath=True)
 
 
-import multi_script_editor
+_____ multi_script_editor
 
 # add to menu
-menubar = nuke.menu("Nuke")
+menubar = ?.m__("Nuke")
 toolMenu = menubar.addMenu('&Tools')
-toolMenu.addCommand("Multi Script Editor", multi_script_editor.showNuke)
+toolMenu.aC..("Multi Script Editor", multi_script_editor.showNuke)
 
-from clipboard import clipboard_core
+from clipboard _____ clipboard_core
 
-menu = nuke.menu("Nuke")
-fxphd = menu.addMenu("FXPHD")
-fxphd.addCommand("Clipboard","clipboardCore.start()")
+m__ = ?.m__("Nuke")
+fxphd = m__.addMenu("FXPHD")
+fxphd.aC..("Clipboard","clipboardCore.start()")
 
 # nodes
-nodes = nuke.menu("Nodes")
+nodes = ?.m__("Nodes")
 gizmos = nodes.addMenu('Gizmos', icon='cgninjas.png')
 
-gizPath = os.path.join(root, 'gizmos')
-for gizmo in os.listdir(gizPath):
-    if os.path.splitext(gizmo)[-1] == '.gizmo':
-        name = os.path.splitext(gizmo)[0]
+gizPath = __.pa__.join(root, 'gizmos')
+___ gizmo __ __.l_d_(gizPath):
+    __ __.pa__.s__(gizmo)[-1] == '.gizmo':
+        name = __.pa__.s__(gizmo)[0]
         ico = name+'.png'
-        gizmos.addCommand(name, "nuke.createNode('%s')" % name, icon=ico)
+        gizmos.aC..(name, "nuke.createNode('%s')" % name, icon=ico)
 
 # Favorites
 # nuke.addFavoriteDir('Pipeline', root)
@@ -41,4 +41,4 @@ for gizmo in os.listdir(gizPath):
 
 
 # sys.path.append('D:/PW_DATA/WinFolders/desktop/pipeline/nuke/python')
-# import resizeNuke
+# _____ resizeNuke

@@ -22,7 +22,7 @@ ____ smartLink ______ templates
 ____ smartLink.info ______ __product__
 ____ smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
 
-___ load_icons():
+___ load_icons
     this_dir _ __.pa__.d_n_( -f)
     dir_icon _ __.pa__.j..(this_dir, 'icons')
     dir_icon _ __.pa__.n_p_(dir_icon)
@@ -55,7 +55,7 @@ ___ get_tool_root(which):
         cragl_dir _ '.cragl'
     ____
         cragl_dir _ 'cragl'
-    root _ __.pa__.j..(__.pa__.expanduser('~'), cragl_dir, __product__)
+    root _ __.pa__.j..(__.pa__.e__('~'), cragl_dir, __product__)
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -68,12 +68,12 @@ ___ get_tool_root(which):
 ___ write_log(text, tool _ 'li'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
-___ get_log_file():
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+___ get_log_file
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -84,7 +84,7 @@ ___ get_log_file():
     r_ log_file
 
 
-___ load_settings():
+___ load_settings
     settings_xml _ get_settings_xml()
     settings _ {}
     __ check_xml_ok(settings_xml):
@@ -103,7 +103,7 @@ ___ load_settings():
     r_ settings
 
 
-___ load_presets():
+___ load_presets
     settings_xml _ get_settings_xml()
     presets _ OrderedDict()
     __ check_xml_ok(settings_xml):
@@ -116,14 +116,14 @@ ___ load_presets():
     r_ presets
 
 
-___ get_xml_elements():
+___ get_xml_elements
     xml _ get_settings_xml()
     tree _ ET.parse(xml)
     root _ tree.getroot()
     r_ (xml, root, tree)
 
 
-___ get_settings_xml():
+___ get_settings_xml
     settings_xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
     __ no. __.pa__.isf..(settings_xml):
         ___
@@ -142,14 +142,14 @@ ___ get_settings_xml():
 
 
 ___ clear_layout(layout):
-    w__ layout.count():
+    w__ layout.count
         child _ layout.takeAt(0)
-        __ child.widget():
+        __ child.widget
             child.widget().deleteLater()
 
 
 ___ move_layout_elements(source_layout, dest_layout):
-    w__ source_layout.count():
+    w__ source_layout.count
         element _ source_layout.takeAt(0)
         ___
             dest_layout.addLayout(element)
@@ -161,12 +161,12 @@ ___ move_layout_elements(source_layout, dest_layout):
 
 
 ___ clear_combobox(combobox):
-    w__ combobox.count():
+    w__ combobox.count
         combobox.clear()
 
 
-___ check_xml_values_exist():
-    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..():
+___ check_xml_values_exist
+    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
@@ -199,14 +199,14 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -222,7 +222,7 @@ ___ check_xml_ok(xml):
         reset_settings_xml _ dialogs.ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 get_settings_xml()
 
 
@@ -300,15 +300,15 @@ ___ move_window_under_cursor(window):
     window.move(position)
 
 
-___ get_cursor_position():
+___ get_cursor_position
     r_ ?G...QCursor().pos()
 
 
-___ create_uid():
+___ create_uid
     r_ st.(uuid.uuid4())
 
 
-___ get_next_link_name():
+___ get_next_link_name
 
     ___ split_nr(string):
         regex _ re.compile('(\\d+)')
@@ -331,7 +331,7 @@ ___ zoom(node):
     ?.zoom(1.0, (__.(node.xpos()), __.(node.ypos())))
 
 
-___ get_repr_class_nodes():
+___ get_repr_class_nodes
     nodes _ # list
     ___ node_class __ ['PostageStamp', 'Dot']:
         nodes.extend(?.allNodes(node_class))
@@ -340,7 +340,7 @@ ___ get_repr_class_nodes():
 
 
 ___ atoi(text):
-    __ text.isdigit():
+    __ text.isdigit
         r_ __.(text)
     r_ text
 
@@ -363,7 +363,7 @@ ___ string_from_list(list_):
     r_ st.(list_)
 
 
-___ get_root_favorites_knob():
+___ get_root_favorites_knob
     favorites_knob _ ?.r.. .knob(PREFIX_FAVORITES)
     __ favorites_knob:
         r_ favorites_knob
@@ -371,9 +371,9 @@ ___ get_root_favorites_knob():
         r_ add_smartlink_tab_widgets()
 
 
-___ add_smartlink_tab_widgets():
+___ add_smartlink_tab_widgets
     root _ ?.r..
-    __ SMARTLINK __ root.knobs():
+    __ SMARTLINK __ root.knobs
         r_
     tab _ ?.T_K..(SMARTLINK)
     favorites _ ?.S_K..(PREFIX_FAVORITES, FAVORITES)
@@ -425,9 +425,9 @@ ___ swap_presets(preset1, preset2):
     presets.ap..(_find_preset(root, preset2))
     __ no. all(presets):
         raise ValueError("No sufficient information to swap. At least one of the presets of '{}', '{}' doesn't exist.".f..(preset1, preset2))
-    root.find('backdrops').remove(presets[0][0])
+    root.find('backdrops').r__(presets[0][0])
     root.find('backdrops').insert(presets[0][1], presets[1][0])
-    root.find('backdrops').remove(presets[1][0])
+    root.find('backdrops').r__(presets[1][0])
     root.find('backdrops').insert(presets[1][1], presets[0][0])
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
@@ -438,7 +438,7 @@ ___ remove_preset(name):
     xml, root, tree _ get_xml_elements()
     ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ name:
-            root.find('backdrops').remove(preset)
+            root.find('backdrops').r__(preset)
             break
 
     w__ o..(xml, 'w') __ xml:
@@ -458,7 +458,7 @@ ___ add_preset(name, color, icon):
         tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
-___ add_to_favorites():
+___ add_to_favorites
     ____ smartLink ______ nodes
     sel_nodes _ ?.sN..
     __ no. sel_nodes:
@@ -479,7 +479,7 @@ ___ add_to_favorites():
         r_
 
 
-___ get_main_window():
+___ get_main_window
     ___
         module _ ?W..
     ______ AttributeError:

@@ -105,7 +105,7 @@ ___ renameFiles(files):
 #
 # renames files on disc from inside Nuke
 #
-___ renamer():
+___ renamer
 
 
     # asks nuke user for a clip name and checks for a '%'
@@ -127,7 +127,7 @@ ___ renamer():
 # renumber - function called from Nuke
 #
 # renumbers and/or repads image sequences on disc from within Nuke
-___ renumber():
+___ renumber
     
     files_nuke.getClipname('select clip to renumber',multiple_T..)
     #nuke.message('files selected = '+str(files))
@@ -186,7 +186,7 @@ ___ renumber():
 # often this would be used to move tmp files created by Nuke on render failiure
 # or overwrite a locked file (after unlocked) when render successful
 #
-___ removeExtension():
+___ removeExtension
     files_nuke.getFilename('select files to remove extension',multiple_T..)
     w__ files:
         __ '%' __ st.(files):
@@ -204,7 +204,7 @@ ___ removeExtension():
 #
 # searches write nodes in Nuke and remves automatically any files ending with '.tmp' to help clean up files left after render failiure
 #
-___ removeTemps():
+___ removeTemps
      
     do_it_nuke.a..('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
     __ do_it:
@@ -231,7 +231,7 @@ ___ removeTemps():
                 ext _ filename[-1]
                 __ ext __ 'tmp':
                     ___
-                        __.remove(pa__+'/'+f)
+                        __.r__(pa__+'/'+f)
                         count+_1
                     ______
                         ?.tprint('Unable to delete file: @' % f)

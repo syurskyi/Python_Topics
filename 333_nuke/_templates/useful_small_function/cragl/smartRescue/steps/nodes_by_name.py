@@ -54,10 +54,10 @@ Advanced:
 
 """
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 
@@ -66,7 +66,7 @@ c_ NodesByName(NodeStep):
 
     ___ process
         """Handle all listed nodes."""
-        ___ node __ ?.allNodes():
+        ___ node __ ?.allNodes
             __ node.n..  no. __ setup["nodes"]:
                 c___
 

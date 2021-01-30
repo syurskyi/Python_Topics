@@ -118,12 +118,12 @@ class CreateToolsetsPanel(n_s_.PP..):
     fullPath = posixpath.j..(SHARED_TOOLSET_PATH, dirs)
     
     ___
-      __ not __.pa__.isd..(fullPath):
+      __ no. __.pa__.isd..(fullPath):
         __.m_d_( fullPath )
       
       filePath = posixpath.j..(fullPath, fileName + '.nk')
       
-      __ not __.pa__.exists(filePath):
+      __ no. __.pa__.exists(filePath):
         __ self.rename __ True:
           __.rename(self.fullFilePath, filePath)
         ____
@@ -132,7 +132,7 @@ class CreateToolsetsPanel(n_s_.PP..):
 
       ____ ?.a..('Overwrite existing \n %s?' % filePath):
         __ self.rename __ True:
-          __.remove(filePath)
+          __.r__(filePath)
           __.rename(self.fullFilePath, filePath)
         ____
           # create way
@@ -174,19 +174,19 @@ ___ renameToolset(fullFilePath):
   refreshToolsetsMenu()
   print fullFilePath
     
-___ addToolsetsPanel():
+___ addToolsetsPanel
   res = False
   __ ?.nodesSelected() __ True:
     res = CreateToolsetsPanel(None, False).showModalDialog()
     #COMMENT: now force a rebuild of the menu
     refreshToolsetsMenu()
   ____
-    ?.message("No nodes are selected")
+    ?.m__("No nodes are selected")
   r_ res  
   
 ___ deleteToolset(rootPath, fileName):
   __ ?.a..('Are you sure you want to delete ToolSet %s?' %fileName):
-    __.remove(fileName)
+    __.r__(fileName)
     #COMMENT: if this was the last file in this directory, the folder will need to be deleted.
     # Walk the directory tree from the root and recursively delete empty directories
     checkForEmptyToolsetDirectories(rootPath)
@@ -203,8 +203,8 @@ ___ checkForEmptyToolsetDirectories(currPath):
           __.rmdir(root)
           removed = True
         
-___ refreshToolsetsMenu():  
-  toolbar = ?.menu("Nodes")
+___ refreshToolsetsMenu
+  toolbar = ?.m__("Nodes")
   m = toolbar.fI..("SharedToolSets")
   __ m != None:
     m.clearMenu()
@@ -212,13 +212,13 @@ ___ refreshToolsetsMenu():
 
 ___ createToolsetsMenu(toolbar):
   m = toolbar.addMenu(name = "SharedToolSets", icon = "SharedToolSets.png")
-  m.addCommand("Create", "shared_toolsets.addToolsetsPanel()", "", icon="SharedToolSets_Create.png")
-  m.addCommand("-", "", "")
+  m.aC..("Create", "shared_toolsets.addToolsetsPanel()", "", icon="SharedToolSets_Create.png")
+  m.aC..("-", "", "")
   __ populateToolsetsMenu(m, False):
-    m.addCommand("-", "", "")  
+    m.aC..("-", "", "")
     n = m.addMenu("Modify", "SharedToolSets_Modify.png")
     populateToolsetsMenu(n, True)
-  m.addCommand('Refresh', 'shared_toolsets.refreshToolsetsMenu()', icon = "SharedToolSets_Refresh.png")
+  m.aC..('Refresh', 'shared_toolsets.refreshToolsetsMenu()', icon = "SharedToolSets_Refresh.png")
 
 ___ traversePluginPaths(m, delete, allToolsetsList, isLocal):
   ret = False
@@ -253,7 +253,7 @@ ___ toolsetLoader(fullFileName):
         saveTempToolSet.w..(data)
         saveTempToolSet.close()
         ?.loadToolset(randomName)
-        __.remove(randomName)
+        __.r__(randomName)
     ____
         ?.loadToolset(fullFileName)
     r_ True
@@ -290,11 +290,11 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
           __ newPath.find(i) != -1:
             ignore = True
             break
-      __ __.pa__.isd..(newPath) and not ignore:
+      __ __.pa__.isd..(newPath) and no. ignore:
         menuName = group
         __ isLocal and (menuName __ allToolsetsList):
           menuName = "[user] " + menuName
-        ____ not isLocal:
+        ____ no. isLocal:
           allToolsetsList.ap..(menuName)
         n = m.addMenu(menuName)
         retval = createToolsetMenuItems(n, rootPath, "/".j..([fullPath, group]), delete, allToolsetsList, isLocal)
@@ -304,21 +304,21 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
     # Now list individual files
     ___ group __ filecontents:
       fullFileName = "/".j..([fullPath, group])
-      __ not __.pa__.isd..(fullFileName):
+      __ no. __.pa__.isd..(fullFileName):
         
         #COMMENT: delete file with an extention ".nk~" created by edit.
         __ ".nk~" __ group:
-          __.remove(fullFileName)
+          __.r__(fullFileName)
         
         extPos = group.find(".nk")
         __ extPos != -1 and extPos __ le.(group) - 3:
           group = group.replace('.nk', '')
           __ delete:
             subM = m.addMenu(group)
-            subM.addCommand("Edit", 'nuke.scriptOpen("%s")' % fullFileName, "")
-            subM.addCommand("Rename", 'shared_toolsets.renameToolset("%s")' % fullFileName, "")
-            subM.addCommand("-", "", "")
-            subM.addCommand("Delete", 'shared_toolsets.deleteToolset("%s", "%s")' % (rootPath, fullFileName), "")
+            subM.aC..("Edit", 'nuke.scriptOpen("%s")' % fullFileName, "")
+            subM.aC..("Rename", 'shared_toolsets.renameToolset("%s")' % fullFileName, "")
+            subM.aC..("-", "", "")
+            subM.aC..("Delete", 'shared_toolsets.deleteToolset("%s", "%s")' % (rootPath, fullFileName), "")
             retval = True
           ____
             #COMMENT: get the filename below toolsets
@@ -332,13 +332,13 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
               #COMMENT: if we've already appended [user] to the menu name, don't need it on the filename
               __ (i != -1) and subfilename[le.("SharedToolSets/"):].find("/") __ -1:
                 group = "[user] " + group
-            ____ not isLocal:
+            ____ no. isLocal:
               allToolsetsList.ap..(subfilename)
 
             #TODO: get ref module name, now it is static linking
             #current_module = sys.modules[__name__]
             #print current_module
-            m.addCommand(group, 'shared_toolsets.toolsetLoader("%s")' %  fullFileName, "")            
+            m.aC..(group, 'shared_toolsets.toolsetLoader("%s")' %  fullFileName, "")
             retval = True
   r_ retval
 

@@ -129,13 +129,13 @@ Advanced:
 
 """
 
-# Import built-in modules
+# _____ built-in modules
 ______ operator
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 
@@ -154,7 +154,7 @@ c_ NodesByKnobValues(NodeStep):
     ___ process
         """Handle nodes that match one of the knob rules."""
         ___ rule __ setup["knob_rules"]:
-            ___ node __ ?.allNodes():
+            ___ node __ ?.allNodes
 
                 __ node.Class() !_ rule["node_class"]:
                     c___

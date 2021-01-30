@@ -1,8 +1,8 @@
 ______ ?
 
-?.menu('Nuke').addCommand('Github/nuke-config/Node/Change Knob Values', 'edit_nodes.edit_knobs()', 'ctrl+e')
-?.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Knob Value', 'edit_nodes.paste_knobs()', 'ctrl+alt+v')
-?.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Selected Knob Values', 'edit_nodes.paste_knobs(checkboxes=True)', 'ctrl+alt+shift+v')
+?.m__('Nuke').aC..('Github/nuke-config/Node/Change Knob Values', 'edit_nodes.edit_knobs()', 'ctrl+e')
+?.m__('Nuke').aC..('Github/nuke-config/Node/Paste Knob Value', 'edit_nodes.paste_knobs()', 'ctrl+alt+v')
+?.m__('Nuke').aC..('Github/nuke-config/Node/Paste Selected Knob Values', 'edit_nodes.paste_knobs(checkboxes=True)', 'ctrl+alt+shift+v')
 
 ___ intersection(a, b):
     # calculate intersection between list a and list b
@@ -27,16 +27,16 @@ ___ get_knobs(node):
     ignore_patterns = ['_panelDropped']
     knobs = list()
     default_knobs = list()
-    ___ k __ node.knobs():
+    ___ k __ node.knobs
         knob = node[k]
-        __ knob.Class() not __ unsupported_classes and knob.n..  not __ unsupported_names:
+        __ knob.Class() no. __ unsupported_classes and knob.n..  no. __ unsupported_names:
             ___ pattern __ ignore_patterns:
-                __ pattern not __ k:
+                __ pattern no. __ k:
                     knobs.ap..(k)
     r_ knobs
 
 
-___ edit_knobs():
+___ edit_knobs
     # Display all knobs that are common between all selected nodes.
     # Allow user to set expression or value on one of the knobs
     nodes = ?.sN..()
@@ -73,7 +73,7 @@ ___ edit_knobs():
     panel.addSingleLineInput('1', '')
     panel.addSingleLineInput('2', '')
     panel.addSingleLineInput('3', '')
-    __ not panel.show():
+    __ no. panel.show
         r_
     k = panel.v.. ('knobs')
     set_expression = panel.v.. ('expression')
@@ -101,17 +101,17 @@ ___ edit_knobs():
                     knob.setExpression(st.(values[i]), channel=i)
         ____
             __ isinstance(knob, ?.Boolean_Knob):
-                __ knob.hasExpression():
+                __ knob.hasExpression
                     knob.clearAnimated()
-                __ not values[0]:
+                __ no. values[0]:
                     knob.sV..(False)
                 ____
                     knob.sV..(True)
             ____ isinstance(knob, (?.File_Knob)):
                 knob.sV..(values[0])
             ____ isinstance(knob, (?.XYZ_Knob, ?.XY_Knob, ?.WH_Knob, ?.UV_Knob, ?.Array_Knob)):
-                __ knob.singleValue():
-                    __ values[0] and not values[1] and not values[2] and not values[3]:
+                __ knob.singleValue
+                    __ values[0] and no. values[1] and no. values[2] and no. values[3]:
                         # if only values[0] exists, set all in array_size to first value
                         knob.sV..(values[0])
                 ___ i __ ra__(array_size):
@@ -146,7 +146,7 @@ ___ paste_knobs(checkboxes=False):
             dst_knobs = dst_node.knobs()
             intersection = dict(
                 [(item, src_knobs[item]) ___ item __ src_knobs.keys() \
-                __ item not __ excluded_knobs and dst_knobs.has_key(item)]
+                __ item no. __ excluded_knobs and dst_knobs.has_key(item)]
                 )
             intersect_knobs.update(intersection)
         knobs = intersect_knobs.keys()
@@ -159,7 +159,7 @@ ___ paste_knobs(checkboxes=False):
         ____
             panel.addEnumerationPulldown('knob', ' '.j..(knobs))
             panel.addBooleanCheckBox('paste all', 0)
-        __ not panel.show():
+        __ no. panel.show
             r_
         chosen_knobs = list()
         __ checkboxes:
@@ -177,7 +177,7 @@ ___ paste_knobs(checkboxes=False):
         ___ dst_node __ dst_nodes:
             dst_knobs = dst_node.knobs()
             ___ knob __ chosen_knobs:
-                print 'pasting src {0} to dst {1}'.format(knob, dst_node.n..
+                print 'pasting src {0} to dst {1}'.f..(knob, dst_node.n..
                 src = src_knobs[knob]
                 dst = dst_knobs[knob]
                 dst.fromScript(src.toScript())

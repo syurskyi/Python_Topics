@@ -1,22 +1,22 @@
-import nuke
-import os
+_____ ?
+_____ __
 
-def fixRead():
+___ fixRead
 
-    reads = nuke.allNodes('Read')
+    reads = ?.allNodes('Read')
     searchFolder = ''
 
-    for r in reads:
+    ___ r __ reads:
         filepath = r['file'].getValue()
-        if not os.path.exists(filepath):
-            filename = os.path.basename(filepath)
-            if not searchFolder:
-                searchFolder = nuke.getFilename('Select Folder')
-                if os.path.isfile(searchFolder):
-                    searchFolder = os.path.dirname(searchFolder)
-            if searchFolder:
-                for path, dirs, files in os.walk(searchFolder):
-                    if filename in files:
-                        newPath = os.path.join(path, filename)
+        __ no. __.pa__.exists(filepath):
+            filename = __.pa__.b__(filepath)
+            __ no. searchFolder:
+                searchFolder = ?.getFilename('Select Folder')
+                __ __.pa__.isfile(searchFolder):
+                    searchFolder = __.pa__.dirname(searchFolder)
+            __ searchFolder:
+                ___ pa__, dirs, files __ __.walk(searchFolder):
+                    __ filename __ files:
+                        newPath = __.pa__.join(pa__, filename)
                         r['file'].setValue(newPath.replace('\\', '/'))
                         break

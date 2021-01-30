@@ -37,22 +37,22 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 '''
 
 #----------------------------------------------------------------------------------------------------------
-#import modules
+#_____ modules
 #----------------------------------------------------------------------------------------------------------
 
-import ?, n_s_
+_____ ?, n_s_
 
 #Choose between PySide and PySide2 based on Nuke version
-if ?.NUKE_VERSION_MAJOR < 11:
-    from PySide import QtCore, QtGui, QtGui as QtWidgets
+__ ?.NUKE_VERSION_MAJOR < 11:
+    from PySide _____ QtCore, QtGui, QtGui as QtWidgets
 else:
-    from PySide2 import QtGui, QtCore, QtWidgets
+    from PySide2 _____ QtGui, QtCore, QtWidgets
 
-import __
-import re
+_____ __
+_____ re
 
-from datetime import datetime as dt
-from getpass import getuser
+from datetime _____ datetime as dt
+from getpass _____ getuser
 
 
 #----------------------------------------------------------------------------------------------------------
@@ -65,11 +65,11 @@ ___ backdropper(nodeClass = 'Backdrop'):
     # create panel instance
     panel = ?.Panel(nodeClass)
     panel.addSingleLineInput('label','')
-    if panel.show():
+    __ panel.show
         
         label = panel.v.. ('label')
 
-        if nodeClass == 'StickyNote':
+        __ nodeClass == 'StickyNote':
             label = '   %s   '%label.upper()
             node = ?.createNode(nodeClass, inpanel = False)
 
@@ -79,7 +79,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
         fontSize = preferencesNode.knob('backdropper%sFontSize'%nodeClass).v.. ()
         node.knob('note_font_size').sV..(fontSize)
 
-        if label:
+        __ label:
 
             #set label
             node.knob('label').sV..(label)
@@ -95,7 +95,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
 #Node colors
 #----------------------------------------------------------------------------------------------------------
 
-___ indexKeywordColors():
+___ indexKeywordColors
     '''
     Build color dictionary.
     '''
@@ -108,10 +108,10 @@ ___ indexKeywordColors():
         stringKnob = 'backdropperColor%s'%str(number).zfill(2)
         colorKnob = 'backdropperColor%sColor'%str(number).zfill(2)
 
-        keys = [key ___ key __ preferencesNode.knob(stringKnob).v.. ().s..(' ') if key]
+        keys = [key ___ key __ preferencesNode.knob(stringKnob).v.. ().s..(' ') __ key]
 
         #case sensitive
-        if not preferencesNode.knob('backdropperCaseSensitive').v.. ():
+        __ no. preferencesNode.knob('backdropperCaseSensitive').v..
             keys = [key.lower() ___ key __ keys]
 
         color = preferencesNode.knob(colorKnob).v.. ()
@@ -128,7 +128,7 @@ ___ colorizeNode(node):
     '''
 
     keywordList, keywordDict = indexKeywordColors()
-    colorNamesList = reversed(sorted(colorNamesDict.keys(), key = len))
+    colorNamesList = reversed(sorted(colorNamesDict.keys(), key = le.))
 
     nodeLabel = node.knob('label').v.. ()
 
@@ -144,11 +144,11 @@ ___ colorizeNode(node):
 
         label = nodeLabel
 
-        if not preferencesNode.knob('backdropperCaseSensitive').v.. () or keys == colorList:
+        __ no. preferencesNode.knob('backdropperCaseSensitive').v.. () or keys == colorList:
             label = label.lower()
 
         ___ key __ keys:
-            if key __ label:
+            __ key __ label:
                 node.knob('tile_color').sV..(colorDicts[index][key])
                 r_
 
@@ -156,7 +156,7 @@ ___ colorizeNode(node):
 # Default colors
 #----------------------------------------------------------------------------------------------------------
 
-___ indexDefaultColors():
+___ indexDefaultColors
 
     # matplotlibColors is turning out to be problematic 
     # only seems to works for certain  versions of Nuke, etc. 
@@ -166,7 +166,7 @@ ___ indexDefaultColors():
 
     defaultColors = {}
 
-    ___ colorName __ colors.keys():
+    ___ colorName __ colors.keys
 
         hexColor = colors[colorName]
         colorValue = hex2interface(hexColor)
@@ -198,7 +198,7 @@ ___ setMenuItem(itemName):
     Change the shortcut of the menu item of the defined nodeclass.
     '''
 
-    otherMenu = ?.menu('Nodes').findItem('Other')
+    otherMenu = ?.m__('Nodes').findItem('Other')
 
     index = nodeClasses.index(itemName)
 
@@ -207,22 +207,22 @@ ___ setMenuItem(itemName):
     customItemName = itemName + ' (W_backdropper)'
 
     #don't replace
-    if not replace:
+    __ no. replace:
 
         #restore original
         function = originalMenuItemScripts[index]
-        menuItem = otherMenu.addCommand(itemName, function, icon = itemName + '.png')
+        menuItem = otherMenu.aC..(itemName, function, icon = itemName + '.png')
 
     #replace
     else:
         #remove if applicable
-        if otherMenu.findItem(customItemName):
+        __ otherMenu.findItem(customItemName):
             otherMenu.removeItem(customItemName)
 
     #new item
     shortcut = preferencesNode.knob('backdropper%sShortcut'%itemName).v.. ()
     function = 'W_backdropper.backdropper("%s")'%itemName
-    menuItem = otherMenu.addCommand([customItemName, itemName][replace], function, shortcut, icon = itemName + '.png')
+    menuItem = otherMenu.aC..([customItemName, itemName][replace], function, shortcut, icon = itemName + '.png')
 
 #----------------------------------------------------------------------------------------------------------
 # Preferences
@@ -234,9 +234,9 @@ ___ addKnobToPreferences(knobObject, tooltip = None):
     Save current preferences to the prefencesfile in the .nuke folder.
     '''
 
-    if knobObject.n..  not __ preferencesNode.knobs().keys():
+    __ knobObject.n..  no. __ preferencesNode.knobs().keys
 
-        if tooltip != None:
+        __ tooltip != None:
             knobObject.setTooltip(tooltip)
 
         preferencesNode.addKnob(knobObject)
@@ -244,14 +244,14 @@ ___ addKnobToPreferences(knobObject, tooltip = None):
 
         r_ preferencesNode.knob(knobObject.n..
 
-___ savePreferencesToFile():
+___ savePreferencesToFile
     '''
     Save current preferences to the prefencesfile in the .nuke folder.
     Pythonic alternative to the 'ok' button of the preferences panel.
     '''
 
-    nukeFolder = __.path.expanduser('~') + '/.nuke/'
-    preferencesFile = nukeFolder + 'preferences{0}.{1}.nk'.format(?.NUKE_VERSION_MAJOR,?.NUKE_VERSION_MINOR)
+    nukeFolder = __.pa__.e__('~') + '/.nuke/'
+    preferencesFile = nukeFolder + 'preferences{0}.{1}.nk'.f..(?.NUKE_VERSION_MAJOR,?.NUKE_VERSION_MINOR)
 
     preferencesNode = ?.tN..('preferences')
 
@@ -272,21 +272,21 @@ ___ deletePreferences(clicked = False):
 
     firstLaunch = True
 
-    ___ knobName __ preferencesNode.knobs().keys():
-        if knobName.startswith('backdropper'):
+    ___ knobName __ preferencesNode.knobs().keys
+        __ knobName.startswith('backdropper'):
             preferencesNode.removeKnob(preferencesNode.knob(knobName))
             firstLaunch = False
 
     # remove TabKnob
-    try:
+    ___
         preferencesNode.removeKnob(preferencesNode.knob('backdropperLabel'))
-    except:
+    ______
         pass
 
-    if not firstLaunch:
+    __ no. firstLaunch:
         savePreferencesToFile()
 
-    if clicked:
+    __ clicked:
 
         #click the cancel button
         closePreferencesPanel()
@@ -294,7 +294,7 @@ ___ deletePreferences(clicked = False):
         #re open panel
         openPreferencesPanel()
 
-___ resetPreferences():
+___ resetPreferences
     '''
     Reset all the W_backdropper related knobs to their default values.
     '''
@@ -320,18 +320,18 @@ ___ updatePreferences(forceUpdate = False):
     allKnobs = preferencesNode.knobs().keys()
 
     # always update if beta version
-    if 'b' __ version:
+    __ 'b' __ version:
         forceUpdate = True
 
     #check if current version differs from the previously loaded version.
-    if 'backdropperVersion' __ allKnobs and not forceUpdate:
-        if version == str(preferencesNode.knob('backdropperVersion').v.. ()):
+    __ 'backdropperVersion' __ allKnobs and no. forceUpdate:
+        __ version == str(preferencesNode.knob('backdropperVersion').v.. ()):
             r_
 
-    currentSettings = {knob:preferencesNode.knob(knob).v.. () ___ knob __ allKnobs if knob.startswith('backdropper') and knob != 'backdropperVersion'}
+    currentSettings = {knob:preferencesNode.knob(knob).v.. () ___ knob __ allKnobs __ knob.startswith('backdropper') and knob != 'backdropperVersion'}
 
     # amount of slots
-    if 'backdropperSlotCount' __ preferencesNode.knobs().keys():
+    __ 'backdropperSlotCount' __ preferencesNode.knobs().keys
         global presetSlots
         presetSlots = min(50, max(0, int(preferencesNode.knob('backdropperSlotCount').v.. ())))
 
@@ -342,10 +342,10 @@ ___ updatePreferences(forceUpdate = False):
     addPreferences()
 
     # restore settings
-    ___ knob __ currentSettings.keys():
-        try:
+    ___ knob __ currentSettings.keys
+        ___
             preferencesNode.knob(knob).sV..(currentSettings[knob])
-        except:
+        ______
             pass
 
     # save to file
@@ -360,25 +360,25 @@ ___ closePreferencesPanel(save = False):
     preferencesButton = None
 
     # find preferences
-    ___ widget __ QtWidgets.QApplication.instance().allWidgets():
-        if widget.objectName() == 'foundry.hiero.preferencesdialog':
+    ___ widget __ QtWidgets.QApplication.instance().allWidgets
+        __ widget.objectName() == 'foundry.hiero.preferencesdialog':
 
             # loop over children
-            ___ child __ widget.children():
-                if isinstance(child, QtWidgets.QDialogButtonBox):
+            ___ child __ widget.children
+                __ isinstance(child, QtWidgets.QDialogButtonBox):
 
                     # buttons
-                    ___ button __ child.buttons():
-                        if button.text() == buttonText:
+                    ___ button __ child.buttons
+                        __ button.text() == buttonText:
                             preferencesButton = button
                             break
                     break
             break
 
-    if preferencesButton:
+    __ preferencesButton:
         preferencesButton.click()
 
-___ updateSlotCount():
+___ updateSlotCount
     '''
     Update the slot count.
     '''
@@ -390,7 +390,7 @@ ___ updateSlotCount():
     # close panel 
     openPreferencesPanel()
 
-___ openPreferencesPanel():
+___ openPreferencesPanel
     '''
     Open the preferences panel
     '''
@@ -399,7 +399,7 @@ ___ openPreferencesPanel():
     nukeInstance = QtWidgets.QApplication.instance()
     nukeInstance.postEvent(nukeInstance, event)
 
-___ addPreferences():
+___ addPreferences
     '''
     Add knobs to the preferences needed for this module to work properly.
     '''
@@ -496,8 +496,8 @@ ___ addPreferences():
     tooltip = "Reset all the W_backdropper related knobs to their default values."
     addKnobToPreferences(knob, tooltip)
 
-    # import preferences button knob
-    knob = ?.PyScript_Knob('backdropperImportExportPreferences',' import/export ','W_backdropper.importExportPanel()')
+    # _____ preferences button knob
+    knob = ?.PyScript_Knob('backdropperImportExportPreferences',' _____/export ','W_backdropper.importExportPanel()')
     tooltip = "Reset all the W_backdropper related knobs to their default values."
     addKnobToPreferences(knob, tooltip)
 
@@ -512,7 +512,7 @@ ___ addPreferences():
     addKnobToPreferences(knob, tooltip)
 
 #----------------------------------------------------------------------------------------------------------
-# Import/Export
+# _____/Export
 #----------------------------------------------------------------------------------------------------------
 
 class ImportExportWidget(QtWidgets.QWidget):
@@ -529,7 +529,7 @@ class ImportExportWidget(QtWidgets.QWidget):
             '#',
             '# W_BACKDROPPER SETTINGS FILE',
             '#',
-            '# CREATED ON {0} BY {1}'.format(dt.now().strftime('%A %d %B %Y (%H:%M)').upper(), getuser().upper()),
+            '# CREATED ON {0} BY {1}'.f..(dt.now().s_t_('%A %d %B %Y (%H:%M)').upper(), getuser().upper()),
             '#',
             '#%s\n\n'%dividerLine]
         self.header = '\n'.join(self.header)
@@ -563,7 +563,7 @@ class ImportExportWidget(QtWidgets.QWidget):
 
         #--------------------------------------------------------------------------------------------------
 
-        self.importButton = QtWidgets.QPushButton('Import')
+        self.importButton = QtWidgets.QPushButton('_____')
         self.importButton.clicked.connect(self.importSettings)
 
         self.exportButton = QtWidgets.QPushButton('Export')
@@ -581,7 +581,7 @@ class ImportExportWidget(QtWidgets.QWidget):
         mainLayout = QtWidgets.QVBoxLayout()
 
         ___ layout __ [modeLayout, pathLayout, LineWidget(), buttonLayout]:
-            if isinstance(layout, QtWidgets.QHBoxLayout):
+            __ isinstance(layout, QtWidgets.QHBoxLayout):
                 mainLayout.addLayout(layout)
             else:
                 mainLayout.addWidget(layout)
@@ -611,8 +611,8 @@ class ImportExportWidget(QtWidgets.QWidget):
         '''
         extension = '.backdropper'
         filePath = ?.getFilename('W_backdropper', '*' + extension)
-        if filePath:
-            if not filePath.endswith(extension):
+        __ filePath:
+            __ no. filePath.endswith(extension):
                 filePath += extension
 
             self.pathLineEdit.setText(filePath)
@@ -629,12 +629,12 @@ class ImportExportWidget(QtWidgets.QWidget):
         settings = re.sub(r'(?<=backdropperColor)([0-9]{2})(?<![\s C])', indexPlaceHolder, settings)
 
         settings = settings.s..('\n')
-        settings = [line ___ line __ settings if 'backdropperColor' __ line]
+        settings = [line ___ line __ settings __ 'backdropperColor' __ line]
 
         #split in chunks of four (textinput and colorswatch, adduserknob command and the stored value)
-        settings = [settings[index:index + 4] ___ index __ range(0, len(settings), 4)]
+        settings = [settings[index:index + 4] ___ index __ range(0, le.(settings), 4)]
 
-        settings = [line ___ line __ settings if not (line[1].s..()[-1] == '""' and line[3].s..()[-1] == '0xccccccff')]
+        settings = [line ___ line __ settings __ no. (line[1].s..()[-1] == '""' and line[3].s..()[-1] == '0xccccccff')]
 
         settings = ['\n'.join(line) ___ line __ settings]
         settings = [line.replace(indexPlaceHolder, str(index + 1).zfill(2)) ___ index, line __ enumerate(settings)]
@@ -643,7 +643,7 @@ class ImportExportWidget(QtWidgets.QWidget):
 
         settings = self.header + settings
 
-        if self.fileRadioButton.isChecked():
+        __ self.fileRadioButton.isChecked
             location = self.pathLineEdit.text()
             with open(location, 'w') as file:
                 file.write(settings)
@@ -652,21 +652,21 @@ class ImportExportWidget(QtWidgets.QWidget):
             QtWidgets.QApplication.clipboard().setText(settings)
             location = 'clipboard'
 
-        ?.message('W_backdropper settings succesfully writen to {0}.'.format(location))
+        ?.m__('W_backdropper settings succesfully writen to {0}.'.f..(location))
         self.close()
 
     ___ importSettings(self):
         '''
-        Import settings from either a file or the clipboard.
+        _____ settings from either a file or the clipboard.
         '''
 
         preferencesKnobs = preferencesNode.knobs().keys()
         slotPrefix = 'backdropperColor'
 
-        if self.fileRadioButton.isChecked():
+        __ self.fileRadioButton.isChecked
             location = self.pathLineEdit.text()
-            if not location.endswith('.backdropper'):
-                ?.message('Invalid file')
+            __ no. location.endswith('.backdropper'):
+                ?.m__('Invalid file')
                 r_
 
             with open(location) as file:
@@ -676,17 +676,17 @@ class ImportExportWidget(QtWidgets.QWidget):
             settings = QtWidgets.QApplication.clipboard().text()
 
         #remove header and split in lines
-        settings = [line ___ line __ settings.s..('\n') if line and not line.startswith('#')]
+        settings = [line ___ line __ settings.s..('\n') __ line and no. line.startswith('#')]
 
         # filter addUserKnob line for knobs that are already present
         ___ line __ settings[::1]:
 
-            if line.startswith('addUserKnob'):
+            __ line.startswith('addUserKnob'):
 
                 ___ word __ line.s..(' '):
-                    if word.startswith(slotPrefix):
-                        if word __ preferencesKnobs:
-                            settings.remove(line)
+                    __ word.startswith(slotPrefix):
+                        __ word __ preferencesKnobs:
+                            settings.r__(line)
                         break
 
         settings = '\n'.join(settings)
@@ -695,10 +695,10 @@ class ImportExportWidget(QtWidgets.QWidget):
         preferencesNode.readKnobs(settings)
 
         # count slots
-        slotCount = len([knob ___ knob __ preferencesNode.knobs().keys() if knob.startswith('backdropperColor') and knob[-1].isdigit()])
+        slotCount = le.([knob ___ knob __ preferencesNode.knobs().keys() __ knob.startswith('backdropperColor') and knob[-1].isdigit()])
 
         slotCountKnob = preferencesNode.knob('backdropperSlotCount')
-        if slotCount != slotCountKnob.v.. ():
+        __ slotCount != slotCountKnob.v..
             slotCountKnob.sV..(slotCount)
             
             # save to disk and close preferences
@@ -717,14 +717,14 @@ class LineWidget(QtWidgets.QFrame):
         self.setFrameShape(QtWidgets.QFrame.HLine)
         self.setFrameShadow(QtWidgets.QFrame.Sunken)
 
-___ importExportPanel():
+___ importExportPanel
     '''
-    Open panel to allow the user to export or import settings.
+    Open panel to allow the user to export or _____ settings.
     '''
     global importExportPanelInstance
-    try:
+    ___
         importExportPanelInstance.close()
-    except:
+    ______
         pass
         
     importExportPanelInstance = ImportExportWidget()
@@ -740,7 +740,7 @@ ___ colorizeNodes(all = False):
     nodeClasses = ['BackdropNode', 'StickyNote']
 
     #selection
-    if all:
+    __ all:
         selection = ?.allNodes()
 
         # create panel instance
@@ -749,17 +749,17 @@ ___ colorizeNodes(all = False):
         ___ nodeClass __ nodeClasses:
             panel.addBooleanCheckBox(nodeClass, True)
 
-        if panel.show():
+        __ panel.show
 
             ___ nodeClass __ nodeClasses:
-                if not panel.v.. (nodeClass):
-                    nodeClasses.remove(nodeClass)
+                __ no. panel.v.. (nodeClass):
+                    nodeClasses.r__(nodeClass)
 
     else:
         selection = ?.sN..
 
     #selection
-    selection = [node ___ node __ selection if node.Class() __ nodeClasses]
+    selection = [node ___ node __ selection __ node.Class() __ nodeClasses]
 
     ___ node __ selection:
         colorizeNode(node)
@@ -777,9 +777,9 @@ presetSlots = 15
 
 nodeClasses = ['Backdrop', 'StickyNote']
 
-originalMenuItemScripts = [?.menu('Nodes').findItem('Other/' + nodeClass).script() ___ nodeClass __ nodeClasses]
+originalMenuItemScripts = [?.m__('Nodes').findItem('Other/' + nodeClass).script() ___ nodeClass __ nodeClasses]
 
-___ init():
+___ init
 
     #preferences
     updatePreferences()
@@ -789,12 +789,12 @@ ___ init():
         setMenuItem(nodeClass)
 
     #edit menu items
-    menu = ?.menu('Nuke').findItem('&Edit/Node')
-    menu = menu.addMenu('W_backdropper')
+    m__ = ?.m__('Nuke').findItem('&Edit/Node')
+    m__ = m__.addMenu('W_backdropper')
 
     ___ nodeClass __ nodeClasses:
-        menu.addCommand('Colorize selected nodes', colorizeNodes)
-        menu.addCommand('Colorize all nodes', lambda : colorizeNodes(True))
+        m__.aC..('Colorize selected nodes', colorizeNodes)
+        m__.aC..('Colorize all nodes', lambda : colorizeNodes(True))
 
 #----------------------------------------------------------------------------------------------------------
 

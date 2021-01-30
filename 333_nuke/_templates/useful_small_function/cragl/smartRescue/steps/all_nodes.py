@@ -45,10 +45,10 @@ Advanced:
 
 """
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 
@@ -59,7 +59,7 @@ c_ AllNodes(NodeStep):
         """Handle all nodes."""
         logger.info("@ all nodes, skip node classes: @",
                          setup["mode"], ", ".j..(setup["skip"]))
-        ___ node __ ?.allNodes():
+        ___ node __ ?.allNodes
             __ node.Class() __ setup["skip"]:
                 c___
             handle_node(node)

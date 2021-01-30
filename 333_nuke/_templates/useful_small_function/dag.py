@@ -10,16 +10,16 @@ grid = (int(?.tN..('preferences').knob('GridWidth').v.. ()), int(?.tN..('prefere
 
 ___ unselect(nodes=None):
     # Unselect nodes
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.allNodes(recurseGroups=True)
-    __ not isinstance(nodes, list):
+    __ no. isinstance(nodes, list):
         r_
     _ = [n.setSelected(False) ___ n __ nodes]
 
 
 ___ select(nodes):
     # Select specified nodes
-    __ not isinstance(nodes, list):
+    __ no. isinstance(nodes, list):
         r_
     _ = [n.setSelected(True) ___ n __ nodes]
 
@@ -32,7 +32,7 @@ ___ get_parent(node):
 ___ get_topnode(node):
 
     # return the topnode of node
-    r_ ?.tN..(?.tcl('return [value [topnode {0}].name]'.format(node.fullName())))
+    r_ ?.tN..(?.tcl('return [value [topnode {0}].name]'.f..(node.fullName())))
 
 
 ___ get_pos(node):
@@ -52,7 +52,7 @@ ___ set_pos(node, posx, posy):
         r_ node.setXYpos(int(posx - node.screenWidth()/2), int(posy - node.screenHeight()/2))
 
 
-___ hide_panel():
+___ hide_panel
     # Always hide control panels on node creation
     ?.tN..().showControlPanel()
     ?.tN..().hideControlPanel()
@@ -61,14 +61,14 @@ ___ hide_panel():
 
 ___ open_panels(nodes=None):
     # Open properties panels
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.sN..()
     ignored = ['Viewer']
     __ le.(nodes) > 10:
-        __ not ?.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.format(le.(nodes))):
+        __ no. ?.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.f..(le.(nodes))):
             r_
     ___ node __ nodes:
-        __ node.Class() not __ ignored:
+        __ node.Class() no. __ ignored:
             # if node.shown():
             #     if nclass in buggy:
             #         # There is a bug with node.shown() for some node classes, where .shown()
@@ -85,7 +85,7 @@ ___ open_panels(nodes=None):
 
 ___ close_panels(nodes=None):
     # Close all properties panels
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.allNodes(recurseGroups=True)
     ___ node __ nodes:
         node.hideControlPanel()
@@ -93,7 +93,7 @@ ___ close_panels(nodes=None):
 
 ___ select_similar_position(axis=1):
     nodes = ?.sN..()
-    __ not nodes:
+    __ no. nodes:
         r_
     node = nodes[0]
     prev_selected = nodes[1:]
@@ -109,14 +109,14 @@ ___ select_similar_position(axis=1):
         n.setSelected(True)
 
 
-___ snap_to_grid():
+___ snap_to_grid
     # Snap selected nodes to grid
     nodes = ?.sN..()
     ___ node __ nodes:
         ?.autoplaceSnap(node)
 
 
-___ auto_place():
+___ auto_place
     # autoplace all selected
     nodes = ?.sN..()
 
@@ -133,7 +133,7 @@ ___ auto_place():
             start_pos = (start_pos[0] + grid[0]*2, start_pos[1])
 
     # Normal autoplace for nodes without file knob
-    normal_nodes = [n ___ n __ nodes __ 'file' not __ n.knobs()]
+    normal_nodes = [n ___ n __ nodes __ 'file' no. __ n.knobs()]
     unselect()
     _ = [n.setSelected(True) ___ n __ normal_nodes]
     ?.autoplace_all()
@@ -151,7 +151,7 @@ ___ move(xvel, yvel):
 ___ get_closest_node(node):
     # Return the closest node to node
     distances = {}
-    ___ n __ ?.allNodes():
+    ___ n __ ?.allNodes
         __ n.n..  __ node.n.. :
             c___
         distance = math.sqrt( 
@@ -163,7 +163,7 @@ ___ get_closest_node(node):
 
 ___ connect_to_closest(direction=0):
     # Connect next available input of all selected nodes to the closest node
-    ___ node __ ?.sN..():
+    ___ node __ ?.sN..
         closest = get_closest_node(node)
         __ direction:
             closest.setInput(0, node)
@@ -171,7 +171,7 @@ ___ connect_to_closest(direction=0):
             node.connectInput(0, closest)
 
 
-___ paste_to_selected():
+___ paste_to_selected
     nodes = ?.sN..()
     all_nodes = ?.allNodes()
     unselect()
@@ -179,7 +179,7 @@ ___ paste_to_selected():
         node.setSelected(True)
         ?.nodePaste('%clipboard')
         unselect()
-    __ not nodes:
+    __ no. nodes:
         ?.nodePaste('%clipboard')
     # Select pasted nodes
     select(all_nodes)
@@ -203,7 +203,7 @@ ___ align(direction):
     ____ direction __ vertically:
         align = 1
     ____
-        print 'Error: invalid direction specified: {0}'.format(direction)
+        print 'Error: invalid direction specified: {0}'.f..(direction)
         r_
 
     positions = {n: get_pos(n) ___ n __ nodes}
@@ -258,7 +258,7 @@ ___ scale(axis, scale, pivot='max'):
     # param: float scale - factor to scale. 1 will do nothing. 2 will scale up 1 grid unit.
     # param: str pivot - where to scale from. One of min | max | center
     pivots = ['min', 'max', 'center']
-    __ pivot not __ pivots:
+    __ pivot no. __ pivots:
         r_
     nodes = ?.sN..()
     __ le.(nodes) < 2:
@@ -278,7 +278,7 @@ ___ scale(axis, scale, pivot='max'):
         pivot_pos = (minpos - maxpos)/2 + minpos
 
     ?.Undo().begin()
-    ___ node, pos __ positions.iteritems():
+    ___ node, pos __ positions.iteritems
         __ axis:
             new_pos = (pos[1] - pivot_pos) * scale + pivot_pos
             set_pos(node, pos[0], new_pos)
@@ -315,7 +315,7 @@ ___ copy_inputs(src, dst):
 
 ___ declone(node):
     # Declone a single node
-    __ not node.clones():
+    __ no. node.clones
         r_
     parent = get_parent(node)
     parent.begin()
@@ -340,9 +340,9 @@ ___ declone_nodes(nodes):
         _ = [n.setSelected(True) ___ n __ decloned_nodes]
 
 
-___ export_selected_nodes():
+___ export_selected_nodes
     pa__ = ?.getFilename("Export Selected To:")
-    __ not pa__:
+    __ no. pa__:
         r_
     ?.nodeCopy(pa__)
     root = ?.r..
@@ -366,8 +366,8 @@ ____
 ___ find_root_nodes(node, results=# list, remove_roots_with_inputs=True):
     # Find all root nodes of node. 
     # If remove_roots_with_inputs: remove root nodes with an input (like Roto etc)
-    ___ dependency __ node.dependencies():
-        __ not dependency.dependencies():
+    ___ dependency __ node.dependencies
+        __ no. dependency.dependencies
             results.ap..(dependency)
         ____
             find_root_nodes(dependency, results)
@@ -378,7 +378,7 @@ ___ find_root_nodes(node, results=# list, remove_roots_with_inputs=True):
 
 ___ upstream(node, max_depth=-1, deps=set(# list)):
     __ max_depth != 0:
-       new_deps = set([n ___ n __ ?.dependencies(node, what=connection_filter) __ n not __ deps])
+       new_deps = set([n ___ n __ ?.dependencies(node, what=connection_filter) __ n no. __ deps])
        deps |= new_deps
        ___ dep __ new_deps:
           upstream(dep, max_depth-1, deps)
@@ -398,7 +398,7 @@ ___ connected(nodes, upstream=True, downstream=True):
         __ downstream:
             deps += ?.dependentNodes(connection_filter, deps_list, evaluate_all)
         evaluate_all = False
-        deps_list = [d ___ d __ deps __ d not __ all_deps and not all_deps.add(d)]
+        deps_list = [d ___ d __ deps __ d no. __ all_deps and no. all_deps.add(d)]
     r_ all_deps
 
 ___ select_upstream(nodes):
@@ -423,7 +423,7 @@ ___ select_unused(nodes):
     # select all nodes that are not upstream or downstream of :param: nodes
     # Backdrops and dot nodes with a label are omitted.
     connected_nodes = [n ___ n __ connected(nodes, upstream=True, downstream=True)]
-    unused_nodes = [n ___ n __ ?.allNodes() __ n not __ connected_nodes and n.Class() != 'BackdropNode' and not (n.Class() __ 'Dot' and n['label'].getValue())]
+    unused_nodes = [n ___ n __ ?.allNodes() __ n no. __ connected_nodes and n.Class() != 'BackdropNode' and no. (n.Class() __ 'Dot' and n['label'].getValue())]
     unselect()
     select(unused_nodes)
     r_ unused_nodes
@@ -441,12 +441,12 @@ ___ save_dag_pos(preset):
     zoom = ?.zoom()
     pos = ?.center()
     viewer = ?.activeViewer()
-    __ not viewer:
-        ?.message('Error: please create a viewer to store the dag positions on...')
+    __ no. viewer:
+        ?.m__('Error: please create a viewer to store the dag positions on...')
         r_
     ____
         viewer = viewer.node()
-    __ 'dagpos' not __ viewer.knobs():
+    __ 'dagpos' no. __ viewer.knobs
         viewer.addKnob(?.String_Knob('dagpos', 'dagpos', '0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0'))
         dagpos_knob = viewer['dagpos']
         dagpos_knob.setFlag(?.STARTLINE)
@@ -462,12 +462,12 @@ ___ save_dag_pos(preset):
 ___ load_dag_pos(preset):
     # Load dag zoom and position from specified preset number
     viewer = ?.activeViewer()
-    __ not viewer:
-        ?.message('Error: please create a viewer to store the dag positions on...')
+    __ no. viewer:
+        ?.m__('Error: please create a viewer to store the dag positions on...')
         r_
     viewer = viewer.node()
-    __ 'dagpos' not __ viewer.knobs():
-        ?.message('No preset positions created yet...')
+    __ 'dagpos' no. __ viewer.knobs
+        ?.m__('No preset positions created yet...')
         r_
     dagpos_knob = viewer['dagpos']
     dagpos_vals = dagpos_knob.gV.. .s..(':')[preset-1]
@@ -487,7 +487,7 @@ ___ hidden_inputs_in_selection(nodes):
 ___ set_hlink_knobs(nodes):
     # Add knob to track what node this node is connected to
     ___ node __ hidden_inputs_in_selection(nodes):
-        __ not 'hlink_node' __ node.knobs():
+        __ no. 'hlink_node' __ node.knobs
             node.addKnob(?.String_Knob('hlink_node', 'hlink_node'))
         input_node = node.input(0)
         __ input_node:
@@ -495,25 +495,25 @@ ___ set_hlink_knobs(nodes):
         ____
             node['hlink_node'].sV..('')
 
-___ hlink_copy():
+___ hlink_copy
     nodes = ?.sN..()
     __ nodes:
         set_hlink_knobs(nodes)
         ?.nodeCopy('%clipboard%')
 
-___ hlink_cut():
+___ hlink_cut
     hlink_copy()
     n_s_.node_delete(popupOnError=True)
 
-___ hlink_paste():
+___ hlink_paste
     ?.nodePaste('%clipboard%')
     ___ node __ hidden_inputs_in_selection(?.sN..()):
-        __ 'hlink_node' __ node.knobs():
+        __ 'hlink_node' __ node.knobs
             target = ?.tN..(node['hlink_node'].getValue())
             __ target:
                 node.setInput(0, target)
 
-___ hlink_create():
+___ hlink_create
     # Creates an hlink node for each selected node
     nodes = ?.sN..()
     unselect()
@@ -545,17 +545,17 @@ ___ dec2hex(dec):
 
 
 
-___ create_pointer():
+___ create_pointer
     # Create an anchor / pointer set
     nodes = ?.sN..()
-    __ not nodes:
+    __ no. nodes:
         r_
 
     ___ target __ nodes:
         upstream = [n ___ n __ connected(nodes, upstream=True, downstream=False)]
 
         __ le.(upstream) > 5:
-            __ not ?.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
+            __ no. ?.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
                 r_
 
         randstr = ''.j..(random.choice(string.ascii_lowercase) ___ i __ ra__(4))
@@ -566,7 +566,7 @@ ___ create_pointer():
 
         # If topnode has a file knob, use that to set title
         # If it's a roto node, use the roto label
-        __ 'file' __ topnode.knobs():
+        __ 'file' __ topnode.knobs
             pointer_title = __.pa__.b_n_(topnode['file'].getValue())
             __ '.' __ pointer_title:
                 pointer_title = pointer_title.s..('.')[0]
@@ -582,10 +582,10 @@ ___ create_pointer():
         __ topnode_color __ 0:
             # Get default color from prefs if node is not colored https://community.foundry.com/discuss/topic/103301/get-the-default-tile-color-from-preferences
             prefs = ?.tN..('preferences')
-            default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].v.. (): prefs['NodeColourClass{0:02d}'.format(i)].v.. () ___ i __ ra__(1, 14)}
+            default_colors = {prefs['NodeColour{0:02d}Color'.f..(i)].v..  prefs['NodeColourClass{0:02d}'.f..(i)].v.. () ___ i __ ra__(1, 14)}
             node_class = topnode.Class().lower()
-            node_class = ''.j..([i ___ i __ node_class __ not i.isdigit()])
-            ___ color, classes __ default_colors.i..():
+            node_class = ''.j..([i ___ i __ node_class __ no. i.isdigit()])
+            ___ color, classes __ default_colors.i..
                 __ node_class __ classes:
                     topnode_color = color
                     break
@@ -596,7 +596,7 @@ ___ create_pointer():
             # Only prompt the user for info if there is one selected node
             panel = ?.Panel('Create Pointer')
             panel.addSingleLineInput('title', pointer_title)
-            __ panel.show():
+            __ panel.show
                 pointer_title = panel.v.. ('title')
             ____
                 r_
@@ -604,11 +604,11 @@ ___ create_pointer():
         has_downstream = le.(select_downstream(target)) > 0
         unselect()
 
-        __ not has_downstream:
+        __ no. has_downstream:
             target.setSelected(True)
 
         # create anchor node
-        anchor = ?.createNode('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.format(randstr))
+        anchor = ?.createNode('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.f..(randstr))
         anchor.addKnob(?.Tab_Knob('anchor_tab', 'anchor'))
         anchor.addKnob(?.String_Knob('title', 'title'))
         anchor['title'].sV..(pointer_title)
@@ -617,7 +617,7 @@ ___ create_pointer():
         anchor.setSelected(True)
 
         # create pointer node
-        pointer = ?.createNode('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.format(randstr))
+        pointer = ?.createNode('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.f..(randstr))
         pointer.addKnob(?.Tab_Knob('pointer_tab', 'pointer'))
         pointer.addKnob(?.String_Knob('target', 'target'))
         pointer['target'].sV..(anchor.fullName())
@@ -655,7 +655,7 @@ ___ create_dots(side=False):
     dots = list()
     ___ node __ nodes:
         pos = get_pos(node)
-        __ not side:
+        __ no. side:
             select([node])
         dot = ?.createNode('Dot', inpanel=False)
         __ side:
@@ -666,22 +666,22 @@ ___ create_dots(side=False):
         dots.ap..(dot)
         unselect(dot)
     select(dots)
-    __ not nodes:
+    __ no. nodes:
         dot = ?.createNode('Dot', inpanel=False)
 
 
 
-___ create_transform():
+___ create_transform
     # Create a Transform or TransformGeo node depending on node type
     nodes = ?.sN..()
-    __ not nodes:
+    __ no. nodes:
         ?.createNode('Transform')
         r_
     unselect()
     transform_nodes = list()
     ___ node __ nodes:
         node.setSelected(True)
-        __ 'render_mode' __ node.knobs():
+        __ 'render_mode' __ node.knobs
             new_node = ?.createNode('TransformGeo')
             __ new_node:
                 transform_nodes.ap..(new_node)
@@ -693,7 +693,7 @@ ___ create_transform():
     select(transform_nodes)
 
 
-___ read_from_write():
+___ read_from_write
     # Create read nodes from selected write nodes
     nodes = [n ___ n __ ?.sN..() __ 'file' __ n.knobs()]
     excluded = ['Read', ]
@@ -718,7 +718,7 @@ ___ read_from_write():
                 __ seq.startswith(filename_base):
                     filepath = __.pa__.j..(d_n_, seq)
                     break
-        read = ?.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
+        read = ?.createNode('Read', 'file {{{0}}}'.f..(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
         colorspace = node['colorspace'].v.. ()
@@ -732,7 +732,7 @@ ___ read_from_write():
 
 
 # Enhanced swap functionality.
-___ swap_node():
+___ swap_node
     nodes = ?.sN..()
     ___ node __ nodes:
         __ node.inputs() > 1:
@@ -742,13 +742,13 @@ ___ swap_node():
             out_colorspace = node['out_colorspace'].v.. ()
             node['out_colorspace'].sV..(in_colorspace)
             node['in_colorspace'].sV..(out_colorspace)
-        ____ 'direction' __ node.knobs():
+        ____ 'direction' __ node.knobs
             direction = node['direction']
             __ direction.gV..  __ 1:
                 direction.sV..(0)
             ____
                 direction.sV..(1)
-        ____ 'invert' __ node.knobs():
+        ____ 'invert' __ node.knobs
             invert = node['invert']
             __ invert.gV..  __ 1:
                 invert.sV..(0)
@@ -760,7 +760,7 @@ ___ swap_node():
             node['colorspace_out'].sV..(colorspace_in)
             node['colorspace_in'].sV..(colorspace_out)
 
-___ swap_view():
+___ swap_view
     views = ?.views()
     __ le.(views) __ 2:
         ?.activeViewer().setView(views[1]) __ ?.activeViewer().view() __ views[0] else ?.activeViewer().setView(views[0])

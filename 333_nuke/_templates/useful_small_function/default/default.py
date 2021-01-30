@@ -23,7 +23,7 @@
 
 ______ ?
 ______ __
-______ helper
+______ h__
 ______ init
 
 g__ default_dir
@@ -35,7 +35,7 @@ knobInit _ default_dir+"/init.py"
 ctrl _ F..
 
 
-___ checkExistingInit():
+___ checkExistingInit
 	'''
 	check if knobInit exists
 	if not create one
@@ -53,7 +53,7 @@ ___ checkExistingInit():
 		__ ctrl __ T..:
 			print "knobInit exists"
 
-___ createDefault():
+___ createDefault
 	'''
 	create custom knobDefault value
 	'''
@@ -67,7 +67,7 @@ ___ createDefault():
 	# set 
 	updateKnobInit(n.Class(),k.n.. ,k.v..,"write")
 
-___ resetToDefault():
+___ resetToDefault
 	'''
 	reset to standard knob default value
 	'''
@@ -84,7 +84,7 @@ ___ updateKnobInit(node,knob,v.. ,mode):
 	update knob init.py - delete or append knobDefault depending on mode
 	'''
 
-	knobDefaults _ helper.openFileReturnArr(knobInit)
+	knobDefaults _ h__.openFileReturnArr(knobInit)
 
 	__ mode __ "del":
 		
@@ -96,7 +96,7 @@ ___ updateKnobInit(node,knob,v.. ,mode):
 				__ ctrl __ T..:
 					print "found in knobInit"
 					print d
-				knobDefaults.remove(d)
+				knobDefaults.r__(d)
 			____
 				p..
 		__ found < 1:

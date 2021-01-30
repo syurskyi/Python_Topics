@@ -1,27 +1,27 @@
-import nuke
+_____ ?
 
 offset = 100
 
-def split():
-    sel = nuke.selectedNodes()
-    if sel:
-        for node in sel:
+___ split
+    sel = ?.selectedNodes()
+    __ sel:
+        ___ node __ sel:
             chan = node.channels()
-            chan = list(set([x.split('.')[0] for x in chan]))
+            chan = list(set([x.split('.')[0] ___ x __ chan]))
             shs = []
-            for ch in chan:
-                sh = nuke.nodes.Shuffle(name=ch,
+            ___ ch __ chan:
+                sh = ?.nodes.Shuffle(name=ch,
                                         inputs=[node],
                                         postage_stamp=True,
                                         hide_input=True)
                 sh['in'].setValue(ch)
-                shs.append(sh)
+                shs.a__(sh)
 
-                cc = nuke.nodes.ColorCorrect(inputs=[sh])
+                cc = ?.nodes.ColorCorrect(inputs=[sh])
 
             y = node.ypos() + offset
             x = node.xpos()
-            for i, s in enumerate(shs):
+            ___ i, s __ enumerate(shs):
                 nx = x + (offset*i)
                 s.setXYpos(nx, y)
 

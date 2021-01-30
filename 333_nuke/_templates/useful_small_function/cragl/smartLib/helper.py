@@ -47,7 +47,7 @@ VIDEO_EXT _ ['mov',
  'mp4']
 IGNORE _ ['.DS_Store', '.nk~', '.autosave']
 
-___ load_icons():
+___ load_icons
     this_dir _ __.pa__.d_n_( -f)
     dir_icon _ __.pa__.j..(this_dir, '../', 'icons')
     dir_icon _ __.pa__.n_p_(dir_icon)
@@ -84,7 +84,7 @@ ___ load_icons():
      'about': j..(dir_icon, 'about.jpg')}
 
 
-___ check_web_connection():
+___ check_web_connection
     ___
         urllib.urlopen('http://www.cragl.com')
         r_ T..
@@ -106,21 +106,21 @@ ___ message_confirm_overwrite(src, is_file _ T..):
     r_ overwrite
 
 
-___ get_smartlib_private_dir():
-    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartLib')
+___ get_smartlib_private_dir
+    dir_ _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'smartLib')
     __ no. __.pa__.isd..(dir_):
         __.m_d_(dir_)
     r_ dir_
 
 
-___ get_smartlib_public_dir():
-    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartLib')
+___ get_smartlib_public_dir
+    dir_ _ __.pa__.j..(__.pa__.e__('~'), 'cragl', 'smartLib')
     __ no. __.pa__.isd..(dir_):
         __.m_d_(dir_)
     r_ dir_
 
 
-___ get_dir_templates():
+___ get_dir_templates
     dir_ _ __.pa__.j..(get_smartlib_public_dir(), 'shot_templates')
     __ no. __.pa__.isd..(dir_):
         __.m_d_(dir_)
@@ -169,8 +169,8 @@ ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir _ F.., is_footage
                 listwidget_item.setIcon(?G...QIcon(icons['icon_doc']))
 
 
-___ get_log_file():
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+___ get_log_file
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -181,7 +181,7 @@ ___ get_log_file():
     r_ log_file
 
 
-___ get_smartLib_installed_root():
+___ get_smartLib_installed_root
     this_dir _ __.pa__.d_n_( -f)
     root _ __.pa__.j..(this_dir, '../', '../')
     r_ __.pa__.n_p_(root)
@@ -190,7 +190,7 @@ ___ get_smartLib_installed_root():
 ___ write_log(text, tool _ 'sl'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
@@ -211,10 +211,10 @@ ___ _copy(src, dst):
             raise OSError(error)
 
 
-___ remove(pa__):
+___ r__(pa__):
     __ __.pa__.isf..(pa__):
         ___
-            __.remove(pa__)
+            __.r__(pa__)
             r_ T..
         ______
             r_ F..
@@ -262,11 +262,11 @@ ___ reveal_in_finder(pa__, open_file _ F..):
         m..('Failed opening: {}'.f..(pa__))
 
 
-___ get_home_dir():
-    r_ __.pa__.expanduser('~')
+___ get_home_dir
+    r_ __.pa__.e__('~')
 
 
-___ load_bookmarks():
+___ load_bookmarks
     bookmarklist _ # list
     bookmarklist.ap..('bookmarks')
     bookmarklist.ap..('add to bookmarks')
@@ -281,12 +281,12 @@ ___ load_bookmarks():
     r_ bookmarklist
 
 
-___ get_settings_xml():
+___ get_settings_xml
     settings_xml _ __.pa__.j..(get_smartlib_private_dir(), 'settings.xml')
     __ no. __.pa__.isf..(settings_xml):
         ___
             w__ o..(settings_xml, 'w') __ xml:
-                template _ templates.SETTINGS.f..(user_home_dir___.pa__.expanduser('~'))
+                template _ templates.SETTINGS.f..(user_home_dir___.pa__.e__('~'))
                 xml.w..(template.strip())
         ______ E.. __ error:
             write_log("Couldn't write settings xml template. {}".f..(error))
@@ -297,7 +297,7 @@ ___ get_settings_xml():
     r_ settings_xml
 
 
-___ check_xml_values_exist():
+___ check_xml_values_exist
     settings _ {'show_system': 'True',
      'show_shot': 'True',
      'show_notes': 'True',
@@ -318,13 +318,13 @@ ___ check_xml_values_exist():
      'default_pixel_aspect': '1',
      'user': ' ',
      'tooltips': 'True'}
-    ___ key, v..  __ settings.i..():
+    ___ key, v..  __ settings.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
     navigations _ {'system': '',
      'project': '',
      'shot': ''}
-    ___ key, v..  __ navigations.i..():
+    ___ key, v..  __ navigations.i..
         check_xml_value_exists('navigation', 'navi', 'name', key, v.. )
 
     check_xml_parent_val_exists('templateDefaults')
@@ -370,7 +370,7 @@ ___ check_xml_parent_val_exists(section):
     r_
 
 
-___ check_status_exists():
+___ check_status_exists
     status_found _ 0
     xml _ __.pa__.j..(get_smartlib_private_dir(), 'settings.xml')
     tree _ ET.parse(xml)
@@ -430,7 +430,7 @@ ___ load_template_default(project_path):
     r_ ''
 
 
-___ load_status_list():
+___ load_status_list
     xml _ __.pa__.j..(get_smartlib_private_dir(), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
@@ -443,7 +443,7 @@ ___ load_status_list():
     r_ status_list
 
 
-___ load_default_status():
+___ load_default_status
     settings_xml _ get_settings_xml()
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
@@ -480,7 +480,7 @@ ___ check_xml_ok(xml):
             ET.fromstring(xml_file.read())
         r_ T..
     ______
-        __ xml __ get_settings_xml():
+        __ xml __ get_settings_xml
             m.. _ 'The smartLib settings file seems to be broken. Do you want to reset it now?'
             write_log('smartLib settings file broken.')
         ____
@@ -491,12 +491,12 @@ ___ check_xml_ok(xml):
         reset_xml _ ask_dialog(m.._m.., process_button_text_'reset', color_process_'actionButton', cancel_button_text_'Cancel')
         __ reset_xml:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 get_settings_xml()
         r_ F..
 
 
-___ load_settings():
+___ load_settings
     settings_xml _ get_settings_xml()
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
@@ -526,14 +526,14 @@ ___ center_window(window):
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -608,7 +608,7 @@ ___ open_website(url):
 
 
 ___ set_preview_image(delete_nodes _ T..):
-    __ no. osl.cl():
+    __ no. osl.cl
         r_
     preview_image_width _ 500
     ___
@@ -652,7 +652,7 @@ ___ set_preview_image(delete_nodes _ T..):
         ?.delete(w..)
 
 
-___ get_dir_docs_current_nukescript():
+___ get_dir_docs_current_nukescript
     up_level _ 7
     current_script_dir _ __.pa__.d_n_(?.r.. .n..
     __ current_script_dir __ 'Root' or current_script_dir __ '':
@@ -762,13 +762,13 @@ ___ save_image_scaled(src, dest):
         r_ F..
 
 
-___ get_script_name():
+___ get_script_name
     script _ ?.r.. .n..
     script_name _ __.pa__.b_n_(script)
     r_ __.pa__.s_t_(script_name)[0]
 
 
-___ setup_renderpath():
+___ setup_renderpath
     dir_docs_current_nukescript _ get_dir_docs_current_nukescript()
     __ dir_docs_current_nukescript __ (N.., ''):
         r_ N..
@@ -800,7 +800,7 @@ ___ setup_renderpath():
         r_ N..
 
 
-___ load_templates():
+___ load_templates
     dir_templates _ get_dir_templates()
     templates _ # list
     ___ item __ __.l_d_(dir_templates):
@@ -864,7 +864,7 @@ ___ rename_item(sender, path_orig, window):
             window.populate_saved_projects()
 
 
-___ force_create_render_dir():
+___ force_create_render_dir
     filename _ ?.filename(?.tN..())
     d_n_ _ __.pa__.d_n_(filename)
     osdir _ ?.callbacks.filenameFilter(d_n_)
@@ -875,14 +875,14 @@ ___ force_create_render_dir():
             raise
 
 
-___ get_finder_name():
+___ get_finder_name
     __ ___.pl.. __ 'darwin':
         r_ 'finder'
     ____
         r_ 'explorer'
 
 
-___ import_from_footage_directory():
+___ import_from_footage_directory
     dir_docs _ get_dir_docs_current_nukescript()
     ___
         __ dir_docs __ '':
@@ -927,9 +927,9 @@ ___ load_footage(defaulttype _ 'Read', pa__ _ ''):
         p..
 
     __ sel_node:
-        __ 'file' __ sel_node.knobs():
+        __ 'file' __ sel_node.knobs
             default_dir _ sel_node['file'].v..
-        __ no. default_dir an. 'proxy' __ sel_node.knobs():
+        __ no. default_dir an. 'proxy' __ sel_node.knobs
             default_dir _ sel_node['proxy'].v..
     __ default_dir __ '':
         default_dir _ N..
@@ -1014,7 +1014,7 @@ ___ error_loading(pa__, sml):
         settingsroot _ settingstree.getroot()
         ___ child __ settingsroot.find('bookmarks').f_a_('bookmark'):
             __ child.text __ pa__:
-                settingsroot.find('bookmarks').remove(child)
+                settingsroot.find('bookmarks').r__(child)
 
         write_xml(settingsXML, settingsroot, settingstree)
         sml.combo_bookmarks.removeItem(sml.combo_bookmarks.findText(pa__))
@@ -1055,13 +1055,13 @@ ___ get_project_information(project_full_path):
 ___ build_html(html_path, project):
     shot_information _ get_project_information(project)
     project_title _ __.pa__.s..(project)[-1]
-    time_now _ d_t_.d_t_.fromtimestamp(__.(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
+    time_now _ d_t_.d_t_.fromtimestamp(__.(ti__.ti__())).s_t_('%d/%m/%Y %H:%M:%S')
     shot_status_list _ load_status_list().values()
     status_dict _ {}
     ___ status __ shot_status_list:
         status_dict[status[1]] _ 0
 
-    ___ shot __ shot_information.values():
+    ___ shot __ shot_information.values
         __ shot[0] __ status_dict:
             status_dict[shot[0]] +_ 1
         ____
@@ -1150,13 +1150,13 @@ ___ build_pdf(build_path, project, output_filename _ '', parent _ N..):
         __ debug:
             print 'output pdf to: {}'.f..(output_filename)
 
-        ___ convertIt():
+        ___ convertIt
             web.print_(printer)
 
         ?C...QObject.c..(web, ?C...SIGNAL('loadFinished(bool)'), convertIt)
         __ __.pa__.isf..(tmp_html):
             ___
-                __.remove(tmp_html)
+                __.r__(tmp_html)
             ______ E..:
                 p..
 
@@ -1253,7 +1253,7 @@ ___ collapse_sequences(dirpath):
     r_ sequences_in_dir
 
 
-___ insert_shot_notes():
+___ insert_shot_notes
     shot_root _ get_dir_docs_current_nukescript()
     __ shot_root __ '' or shot_root __ N..:
         r_

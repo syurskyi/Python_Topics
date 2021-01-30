@@ -1,16 +1,16 @@
-import nuke
+_____ ?
 
-nuke.allNodes()
-nuke.allNodes('ColorCorrect')
+?.allNodes()
+?.allNodes('ColorCorrect')
 
-nuke.selectedNodes('ColorCorrect')
+?.selectedNodes('ColorCorrect')
 
 
-nodes = nuke.allNodes()
-print[x for x in nodes if x.Class()=='Transform']
+nodes = ?.allNodes()
+print[x ___ x __ nodes __ x.Class()=='Transform']
 
-nuke.toNode('ColorCorrect1')
+?.toNode('ColorCorrect1')
 
-nuke.activeViewer()
+?.activeViewer()
 
-nuke.activeViewer().node()
+?.activeViewer().node()

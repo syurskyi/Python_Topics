@@ -1,12 +1,12 @@
-import nuke
+_____ ?
 
-nuke.scriptSaveAs('c:/script.nk')
-nuke.scriptClear()
-nuke.scriptOpen('c:/script.nk')
-nuke.scriptReadFile('c:/script.nk') # same nuke.scriptSource
-nuke.scriptReadText('text')
-nuke.load('c:/script.nk')
+?.scriptSaveAs('c:/script.nk')
+?.scriptClear()
+?.scriptOpen('c:/script.nk')
+?.scriptReadFile('c:/script.nk') # same nuke.scriptSource
+?.scriptReadText('text')
+?.load('c:/script.nk')
 
-nuke.script_directory()
+?.script_directory()
 
-nuke.scriptSaveAndClear()
+?.scriptSaveAndClear()

@@ -13,7 +13,7 @@ ____ smartShelves ______ templates
 _LOCK_DELIMITER _ ','
 _LOCK_LIST _ 'CRAGL_SMARTSHELVES_LOCKS'
 
-___ load_icons():
+___ load_icons
     this_dir _ __.pa__.d_n_( -f)
     dir_icon _ __.pa__.j..(this_dir, 'icons')
     dir_icon _ __.pa__.n_p_(dir_icon)
@@ -30,7 +30,7 @@ ___ load_icons():
      'icon_lock_open': __.pa__.j..(dir_icon, 'lock_open.png')}
 
 
-___ get_default_icon_path():
+___ get_default_icon_path
     r_ [ dir_ ___ dir_ __ ?.pluginPath() __ '/plugins/icons' __ dir_ or '\\plugins\\icons' __ dir_ ][0]
 
 
@@ -38,21 +38,21 @@ ___ show_message_box(window, m..):
     ?W...QMessageBox().information(window, 'information', m..)
 
 
-___ get_installed_root_dir():
+___ get_installed_root_dir
     this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
     root _ __.pa__.j..(this_dir, '../', '../')
     r_ __.pa__.n_p_(root)
 
 
-___ get_smartshelves_private_dir():
-    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartShelves')
+___ get_smartshelves_private_dir
+    dir_ _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'smartShelves')
     __ no. __.pa__.isd..(dir_):
         __.m_d_(dir_)
     r_ dir_
 
 
-___ get_smartshelves_public_dir():
-    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartShelves')
+___ get_smartshelves_public_dir
+    dir_ _ __.pa__.j..(__.pa__.e__('~'), 'cragl', 'smartShelves')
     __ no. __.pa__.isd..(dir_):
         __.m_d_(dir_)
     r_ dir_
@@ -72,8 +72,8 @@ ___ open_website(url):
     r_
 
 
-___ get_log_file():
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+___ get_log_file
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -85,7 +85,7 @@ ___ get_log_file():
 
 
 ___ write_log(text, tool _ 'sh'):
-    logtime _ ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
+    logtime _ ti__.s_t_('%d.%m.%Y %H:%M:%S', ti__.localtime())
     ___
         w__ o..(get_log_file(), 'a') __ s:
             s.w..('{}: {} {}\n'.f..(logtime, tool, text))
@@ -107,11 +107,11 @@ ___ set_style_sheet(widget):
         r_
 
 
-___ get_settings_xml():
+___ get_settings_xml
     r_ __.pa__.j..(get_smartshelves_private_dir(), 'settings.xml')
 
 
-___ load_settings():
+___ load_settings
     xml _ get_settings_xml()
     tree _ ET.parse(xml)
     root _ tree.getroot()
@@ -123,7 +123,7 @@ ___ load_settings():
 
 
 ___ paste_script(name):
-    ___ plugin_path __ ?.pluginPath():
+    ___ plugin_path __ ?.pluginPath
         pa__ _ __.pa__.j..(plugin_path, '{}.nk'.f..(name))
         __ __.pa__.isf..(pa__):
             ?.nodePaste(pa__)
@@ -149,5 +149,5 @@ ___ remove_from_lock(pw):
         __.en__[_LOCK_LIST] _ ''
     unlocked _ [ name ___ name __ __.en__[_LOCK_LIST].s..(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
-        unlocked.remove(pw)
+        unlocked.r__(pw)
     __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.j..(unlocked)

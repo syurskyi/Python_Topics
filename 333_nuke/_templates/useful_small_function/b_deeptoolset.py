@@ -197,15 +197,15 @@ ___ build_depth_setup(node_list):
     expression.setYpos(expression_pos["y_pos"] + 25)
 
     
-    remove _ ?.createNode("Remove")
-    remove["operation"].sV..("keep")
-    remove["channels"].sV..("rgba")
-    remove["channels2"].sV..("depth")
-    remove_pos _ get_node_position(remove)
-    remove.setYpos(remove_pos["y_pos"] + 25)
+    r__ _ ?.createNode("Remove")
+    r__["operation"].sV..("keep")
+    r__["channels"].sV..("rgba")
+    r__["channels2"].sV..("depth")
+    remove_pos _ get_node_position(r__)
+    r__.setYpos(remove_pos["y_pos"] + 25)
     
 
-    deep_write _  create_node_with_position("AFWrite",remove,get_node_position(remove)["x_pos"],get_node_position(remove)["y_pos"] + 200)
+    deep_write _  create_node_with_position("AFWrite",r__,get_node_position(r__)["x_pos"],get_node_position(r__)["y_pos"] + 200)
 
     counter _ 0
 
@@ -333,7 +333,7 @@ ___ check_upstream_match(sourcenode,targetnode):
             r_ check_upstream_match(node.n.. ,targetnode)
 
 
-___ iterate_deep_holdout_setup():
+___ iterate_deep_holdout_setup
     """
     This function will iterate over a set of DeepRecolor nodes and create a holdout setup for each.
     :return: none
@@ -379,7 +379,7 @@ ___ iterate_deep_holdout_setup():
 # UBER PASS #######################################################################################################
 
 
-___ get_middle_position():
+___ get_middle_position
     """
     This function will compute a set of coordinates of convenience.
     :return: a set of coordinates.
@@ -432,7 +432,7 @@ ___ create_rgba_deep_recolor(channels):
     r_ new_deep_recolor_names
 
 
-___ uberpass_function():
+___ uberpass_function
     """
     This function will deep merge all elemenents together, thus creating the so called uber pass.
 
@@ -482,7 +482,7 @@ ___ uberpass_function():
 # DEPTH FOR DEFOCUS #######################################################################################################
 
 
-___ depth_for_defocus():
+___ depth_for_defocus
     """
     This function will create a custom depth from deep setup.
     """
@@ -507,16 +507,16 @@ ___ depth_for_defocus():
     expression['channel3'].sV..("depth")
     expression['expr3'].sV..("Zdepth.red == 0 ? 15000 : Zdepth.red")
 
-    remove _ create_node_with_position("Remove",expression,get_node_position(expression)["x_pos"],get_node_position(expression)["y_pos"] + 100)
-    remove["operation"].sV..("keep")
-    remove["channels"].sV..("rgba")
-    remove["channels2"].sV..("depth")
+    r__ _ create_node_with_position("Remove",expression,get_node_position(expression)["x_pos"],get_node_position(expression)["y_pos"] + 100)
+    r__["operation"].sV..("keep")
+    r__["channels"].sV..("rgba")
+    r__["channels2"].sV..("depth")
 
-    pos6 _ get_node_position(remove)
+    pos6 _ get_node_position(r__)
 
     string _ "depth_from_deep"
 
-    last_dot _ d_dot_parent(string,"Dot",remove,pos6["x_pos"]+35,pos6["y_pos"]+ 100)
+    last_dot _ d_dot_parent(string,"Dot",r__,pos6["x_pos"]+35,pos6["y_pos"]+ 100)
 
     AFwrite _ create_node_with_position("Write",last_dot,get_node_position(last_dot)["x_pos"],get_node_position(last_dot)["y_pos"] + 100)
     AFwrite['channels'].sV..('all')
@@ -611,7 +611,7 @@ ___ d_dot_connect(nodename,connect_node,x_0,y_0):
     r_ dot
 
 
-___ gather_holdout_dot_names():
+___ gather_holdout_dot_names
     """
     This function will get all names of selected Ddots.
     :return: a list of node names.

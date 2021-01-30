@@ -1,4 +1,4 @@
-import nuke
-import renderFinished
+_____ ?
+_____ renderFinished
 
-nuke.addAfterRender(renderFinished.notify_user)
+?.addAfterRender(renderFinished.notify_user)

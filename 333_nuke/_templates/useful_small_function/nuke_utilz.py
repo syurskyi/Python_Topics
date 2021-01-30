@@ -1,94 +1,94 @@
 
 
 ################################################################################
-### Import Statments ###########################################################
+### _____ Statments ###########################################################
 
-import os
-import re
-import nuke
-import glob
-from comp_utilz import dbinfo
-from comp_utilz import decorators
+_____ __
+_____ re
+_____ ?
+_____ glob
+from comp_utilz _____ dbinfo
+from comp_utilz _____ decorators
 
 ################################################################################
 ### Functions ##################################################################
 
 # Universal Operations
 
-def check_selected():
-    nodes = nuke.selectedNodes()
-    if len(nodes) > 0:
-        return True, nodes[0]
+___ check_selected
+    nodes = ?.selectedNodes()
+    __ le.(nodes) > 0:
+        r_ True, nodes[0]
     else:
-        return False, None
+        r_ False, None
 
-def clear_selection():
-    nuke.selectAll()
-    nuke.invertSelection()
+___ clear_selection
+    ?.selectAll()
+    ?.invertSelection()
 
-def select_nodes(nodes):
-    for node in nodes:
+___ select_nodes(nodes):
+    ___ node __ nodes:
         node['selected'].setValue(True)
 
-def select_nodes_by_type(node_type):
+___ select_nodes_by_type(node_type):
     select_nodes(get_nodes_by_type(node_type))
 
-def select_all_nodes():
-    select_nodes(nuke.allNodes())
+___ select_all_nodes
+    select_nodes(?.allNodes())
 
-def get_nodes_by_type(node_type):
-    return nuke.allNodes(node_type)
+___ get_nodes_by_type(node_type):
+    r_ ?.allNodes(node_type)
 
-def get_nodes_by_types(node_types=[]):
+___ get_nodes_by_types(node_types=[]):
     nodes = []
-    for node_type in node_types:
+    ___ node_type __ node_types:
         nodes.extend(get_nodes_by_type(node_type))
-    return nodes
+    r_ nodes
 
-def delete_nodes(nodes):
-    for node in nodes:
-        nuke.delete(node)
+___ delete_nodes(nodes):
+    ___ node __ nodes:
+        ?.delete(node)
 
-def delete_nodes_by_type(node_type):
+___ delete_nodes_by_type(node_type):
     delete_nodes(get_nodes_by_type(node_type))
 
-def delete_all_nodes():
-    delete_nodes(nuke.allNodes())
+___ delete_all_nodes
+    delete_nodes(?.allNodes())
 
-def is_disabled(node):
-    if type(node) == str:
-        node = nuke.toNode(node)
-    return node['disable'].value()
+___ is_disabled(node):
+    __ type(node) == str:
+        node = ?.toNode(node)
+    r_ node['disable'].value()
 
-def is_multi_view():
-    if len(nuke.views()) > 1:
-        return True
+___ is_multi_view
+    __ le.(?.views()) > 1:
+        r_ True
 
-def get_root_cut():
-    first_frame = int(nuke.toNode('root')['first_frame'].value())
-    last_frame = int(nuke.toNode('root')['last_frame'].value())
+___ get_root_cut
+    first_frame = int(?.toNode('root')['first_frame'].value())
+    last_frame = int(?.toNode('root')['last_frame'].value())
     framerange = '%s-%s' % (first_frame, last_frame)
     exfrange = '%s to %s' % (first_frame, last_frame)
     length = last_frame - first_frame
-    return first_frame, last_frame, framerange, exfrange, length
+    r_ first_frame, last_frame, framerange, exfrange, length
 
 # Node Operations
 
-def get_coordinates(node):
+___ get_coordinates(node):
     x = node['xpos'].value()
     y = node['ypos'].value()
-    return x, y
+    r_ x, y
 
-def connect_nodes(connect_to, connect_from, from_index):
+___ connect_nodes(connect_to, connect_from, from_index):
     connect_to.connectInput(from_index, connect_from)
 
-def get_value(node, knob):
-    return node[knob].value()
+___ get_value(node, knob):
+    r_ node[knob].value()
 
-def set_value(node, knob, value):
+___ set_value(node, knob, value):
     node[knob].setValue(value)
 
-def align_node(node, base_x, base_y, x_buffer, y_buffer,
+___ align_node(node, base_x, base_y, x_buffer, y_buffer,
                x_align, y_align, x_mult, y_mult):
     x_shift = x_buffer*x_mult
     y_shift = y_buffer*y_mult
@@ -97,48 +97,48 @@ def align_node(node, base_x, base_y, x_buffer, y_buffer,
 
     position(node, xpos, ypos)
 
-def auto_align_all_nodes():
-    for node in nuke.allNodes():
-        nuke.autoplace(node)
+___ auto_align_all_nodes
+    ___ node __ ?.allNodes
+        ?.autoplace(node)
 
-def position(node, x, y):
+___ position(node, x, y):
     node.setXYpos(int(x), int(y))
 
-def batch_node_copypaste(basedir=os.getcwd()):
-    import tempfile
+___ batch_node_copypaste(basedir=__.getcwd()):
+    _____ tempfile
     tmpNukeFile = tempfile.NamedTemporaryFile(suffix='.nk', dir=basedir)
     nukeFile = tmpNukeFile.name
-    nuke.nodeCopy(nukeFile)
+    ?.nodeCopy(nukeFile)
     clear_selection()
-    new_nodes = nuke.nodePaste(nukeFile)
-    return new_nodes
+    new_nodes = ?.nodePaste(nukeFile)
+    r_ new_nodes
 
-def copy_root(from_nk, to_nk):
-    try:
-        nuke.scriptSource(from_nk)
-        nuke.tprint(from_nk)
-        knob_settings = nuke.toNode('root').writeKnobs(nuke.TO_VALUE | nuke.WRITE_ALL)
-        nuke.tprint(knob_settings)
-        nuke.scriptClear()
-        nuke.scriptSource(to_nk)
-        name = nuke.toNode('root')['name'].value()
-        nuke.toNode('root').readKnobs(knob_settings)
-        nuke.tprint('reseting name')
-        nuke.toNode('root')['name'].setValue(name)
-        nuke.tprint(to_nk)
-        nuke.scriptSaveAs(to_nk, 1)
-        return True, None
+___ copy_root(from_nk, to_nk):
+    ___
+        ?.scriptSource(from_nk)
+        ?.tprint(from_nk)
+        knob_settings = ?.toNode('root').writeKnobs(?.TO_VALUE | ?.WRITE_ALL)
+        ?.tprint(knob_settings)
+        ?.scriptClear()
+        ?.scriptSource(to_nk)
+        name = ?.toNode('root')['name'].value()
+        ?.toNode('root').readKnobs(knob_settings)
+        ?.tprint('reseting name')
+        ?.toNode('root')['name'].setValue(name)
+        ?.tprint(to_nk)
+        ?.scriptSaveAs(to_nk, 1)
+        r_ True, None
     except Exception, e:
-        return False, e
+        r_ False, e
 
-def get_parent(node):
-    if type(node) == str:
-        node = nuke.toNode(node)
-    return nuke.toNode('root.'+'.'.join(node.fullName().split('.')[:-1])) or nuke.root()
+___ get_parent(node):
+    __ type(node) == str:
+        node = ?.toNode(node)
+    r_ ?.toNode('root.'+'.'.join(node.fullName().split('.')[:-1])) or ?.r__
 
 # BuildHelper Functions
 
-def find_upstream(node, class_list):
+___ find_upstream(node, class_list):
     '''
     Return the first node upstream that matches a class within
     a list of user-specified classes. Returns None if no match is found
@@ -147,41 +147,41 @@ def find_upstream(node, class_list):
     @param classList: A list of node classes to find a match for
     @return: Node or None.
     '''
-    if node and node.Class() in class_list:
-        return node
+    __ node and node.Class() __ class_list:
+        r_ node
     else:
-        for n in node.dependencies(nuke.INPUTS | nuke.HIDDEN_INPUTS):
+        ___ n __ node.dependencies(?.INPUTS | ?.HIDDEN_INPUTS):
             node = find_upstream(n, class_list)
-            if node:
-                return node
+            __ node:
+                r_ node
 
-def get_upstream_value(class_list, inp, knb, exvalue):
+___ get_upstream_value(class_list, inp, knb, exvalue):
     '''
     Return the value of a specific knob name in the first
     node upstream that matches the Classes in class_list.
 
     Returns exvalue if no match is found
     '''
-    try:
-        value = find_upstream(nuke.thisGroup().input(inp), class_list).knob(knb).value()
-    except:
+    ___
+        value = find_upstream(?.thisGroup().input(inp), class_list).knob(knb).value()
+    ______
         value = exvalue
 
-    return value
+    r_ value
 
-def get_parent_value(inp=0, knb=None, exvalue=50):
+___ get_parent_value(inp=0, knb=None, exvalue=50):
     '''
     Returns the value of a specific knob connected to the
     group to a member of that group
     '''
-    try:
-        value = nuke.thisGroup().input(inp).knob(knb).value()
-    except:
+    ___
+        value = ?.thisGroup().input(inp).knob(knb).value()
+    ______
         value = exvalue
 
-    return value
+    r_ value
 
-def get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
+___ get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
     '''
     get the parent of the gizmo/group based on input nr
     the knob the anim channel for example 0 or 1 or 2 for an xyz knob
@@ -190,17 +190,17 @@ def get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
     usage: getPV(inp=1, knb='translate', exvalue=10,
                     animchannel=1, holdframe=10)
     '''
-    try:
-        if holdframe is None:
-            value = nuke.thisGroup().input(inp).knob(knb).value(animchannel)
-            return value
-        value = nuke.thisGroup().input(inp).knob(knb).valueAt(holdframe, animchannel)
+    ___
+        __ holdframe is None:
+            value = ?.thisGroup().input(inp).knob(knb).value(animchannel)
+            r_ value
+        value = ?.thisGroup().input(inp).knob(knb).valueAt(holdframe, animchannel)
     except AttributeError:
         value = exvalue
 
-    return value
+    r_ value
 
-def find_downstream(node, node_class, name_pattern=None):
+___ find_downstream(node, node_class, name_pattern=None):
     '''
     Return the first node downstream that matches a class within
     a list of user-specified classes. Returns None if no match is found
@@ -210,129 +210,129 @@ def find_downstream(node, node_class, name_pattern=None):
     @param name_pattern: optional re regex parttern of node name to match
     @return: Node or None.
     '''
-    if node and node.Class() == node_class:
-        if type(name_pattern) is str or type(name_pattern) is type(re.compile('')):
-            if re.compile(name_pattern).match(node.name()):
-                return node
+    __ node and node.Class() == node_class:
+        __ type(name_pattern) is str or type(name_pattern) is type(re.compile('')):
+            __ re.compile(name_pattern).match(node.name()):
+                r_ node
             else:
-                return None
-        return node
+                r_ None
+        r_ node
     else:
-        for n in node.dependent(nuke.INPUTS | nuke.HIDDEN_INPUTS):
+        ___ n __ node.dependent(?.INPUTS | ?.HIDDEN_INPUTS):
             node = find_downstream(n, node_class, name_pattern=name_pattern)
-            if node:
-                return node
+            __ node:
+                r_ node
 
 # Pipeline Task Functions
 
-def get_parts_and_eye_index_for_basename(stereo_basename):
+___ get_parts_and_eye_index_for_basename(stereo_basename):
     parts = stereo_basename.split('.')
-    eye_index = [i for i, item in enumerate(parts) if \
+    eye_index = [i ___ i, item __ enumerate(parts) __ \
                  re.search('^[l|r]t$', item)]
-    if eye_index and len(eye_index) == 1:
+    __ eye_index and le.(eye_index) == 1:
         eye_index = eye_index[0]
-        return parts, eye_index
+        r_ parts, eye_index
 
-def p2p_module_db_eye_fetch():
+___ p2p_module_db_eye_fetch
     stereo_through_eye = dbinfo.get_dominant_eye()
-    if not stereo_through_eye or stereo_through_eye not in ['lt', 'rt']:
-        nuke.message("Cannot determine dominant eye from database value of:\n\n%s" % str(stereo_through_eye))
-        return
-    return stereo_through_eye
+    __ no. stereo_through_eye or stereo_through_eye no. __ ['lt', 'rt']:
+        ?.m__("Cannot determine dominant eye from database value of:\n\n%s" % str(stereo_through_eye))
+        r_
+    r_ stereo_through_eye
 
-def p2p_module_get_current_eye(p2p_node):
-    return p2p_node.knob('domEyeStatus').value().split()[2]
+___ p2p_module_get_current_eye(p2p_node):
+    r_ p2p_node.knob('domEyeStatus').value().split()[2]
 
-def p2p_module_eye_swap(p2p_node):
+___ p2p_module_eye_swap(p2p_node):
     cur_dom_eye = p2p_module_get_current_eye(p2p_node)
-    if cur_dom_eye == 'lt':
-        return 'rt'
-    if cur_dom_eye == 'rt':
-        return 'lt'
+    __ cur_dom_eye == 'lt':
+        r_ 'rt'
+    __ cur_dom_eye == 'rt':
+        r_ 'lt'
 
-def p2p_module_get_write_name(p2p_node):
+___ p2p_module_get_write_name(p2p_node):
     cur_dom_eye = p2p_module_get_current_eye(p2p_node)
-    if cur_dom_eye == 'lt':
-        return 'rt_p2p'
-    if cur_dom_eye == 'rt':
-        return 'lt_p2p'
+    __ cur_dom_eye == 'lt':
+        r_ 'rt_p2p'
+    __ cur_dom_eye == 'rt':
+        r_ 'lt_p2p'
 
-def update_p2p_module(p2p_node, write_name, eye):
+___ update_p2p_module(p2p_node, write_name, eye):
     one_view_knob = find_downstream(p2p_node, 'OneView', 'OneView_p2p(\d?)').knob('view')
     dom_eye_status_knob = p2p_node.knob('domEyeStatus')
     write_node = find_downstream(p2p_node, 'Write', write_name+'(\d?)')
-    if eye == 'lt':
-        nuke.Undo().begin('Make P2P Dominant Eye lt')
+    __ eye == 'lt':
+        ?.Undo().begin('Make P2P Dominant Eye lt')
         with p2p_node:
-            nuke.toNode('eyeSwapMaster').knob('which').setValue(0)
-        with nuke.root():
+            ?.toNode('eyeSwapMaster').knob('which').setValue(0)
+        with ?.root
             one_view_knob.setValue('rt')
             write_node.knob('views').setValue('rt')
             write_node.knob('tile_color').setValue(11401983)
             write_node.knob('heroview').setValue('lt')
             write_node.setName('rt_p2p')
-            nuke.root().knob('hero_view').setValue('lt')
+            ?.r__ .knob('hero_view').setValue('lt')
             dom_eye_status_knob.setValue('<font color="Crimson"><b> lt </b></font color>')
-        nuke.Undo().end()
-    if eye == 'rt':
-        nuke.Undo().begin('Make P2P Dominant Eye rt')
+        ?.Undo().end()
+    __ eye == 'rt':
+        ?.Undo().begin('Make P2P Dominant Eye rt')
         with p2p_node:
-            nuke.toNode('eyeSwapMaster').knob('which').setValue(1)
-        with nuke.root():
+            ?.toNode('eyeSwapMaster').knob('which').setValue(1)
+        with ?.root
             one_view_knob.setValue('lt')
             write_node.knob('views').setValue('lt')
             write_node.knob('tile_color').setValue(4278190335)
             write_node.knob('heroview').setValue('rt')
             write_node.setName('lt_p2p')
-            nuke.root().knob('hero_view').setValue('rt')
+            ?.r__ .knob('hero_view').setValue('rt')
             dom_eye_status_knob.setValue('<font color="DeepSkyBlue"><b> rt </b></font color>')
-        nuke.Undo().end()
+        ?.Undo().end()
 
-def p2p_symlinks():
-    node = nuke.thisNode()
+___ p2p_symlinks
+    node = ?.thisNode()
     dest_path = node.knob('file').evaluate()
-    source_path = nuke.tcl("value [topnode %s].file" % node.name())
-    import os
-    dest_base = os.path.basename(dest_path)
+    source_path = ?.tcl("value [topnode %s].file" % node.name())
+    _____ __
+    dest_base = __.pa__.b__(dest_path)
     parts, eye_token = get_parts_and_eye_index_for_basename(dest_base)
-    if eye_token:
+    __ eye_token:
         base_dir = '.'.join(parts[:eye_token])
-        link_path = os.path.join(os.environ.get('SHOTDIR'),
-                                 os.environ.get('p2ps'), base_dir, dest_base)
-    if not link_path:
-        nuke.tprint('***ERROR*** cannot determine path for symlinks')
-        return
+        link_path = __.pa__.join(__.environ.get('SHOTDIR'),
+                                 __.environ.get('p2ps'), base_dir, dest_base)
+    __ no. link_path:
+        ?.tprint('***ERROR*** cannot determine path for symlinks')
+        r_
     dest_path = link_path
-    if '.rt.' in dest_path:
+    __ '.rt.' __ dest_path:
         source_path = source_path.replace('.rt.', '.lt.')
         dest_path = dest_path.replace('.rt.', '.lt.')
-    elif '.lt.' in dest_path:
+    elif '.lt.' __ dest_path:
         source_path = source_path.replace('.lt.', '.rt.')
         dest_path = dest_path.replace('.lt.', '.rt.')
-    if not os.path.exists(dest_path):
-        os.symlink(source_path, dest_path)
+    __ no. __.pa__.exists(dest_path):
+        __.symlink(source_path, dest_path)
     dest_movie = re.sub('\.[0-9]*\.exr', '.mov', dest_path)
     dest_movie = dest_movie.replace('.SRC.', '.RAW.')
-    if not os.path.exists(dest_movie):
+    __ no. __.pa__.exists(dest_movie):
         parts, eye_index = get_parts_and_eye_index_for_basename(source_path)
-        if eye_index:
+        __ eye_index:
             eye_index = eye_index + 1
             source_movie = '.'.join(parts[:eye_index])
             source_movie += '.RAW.q98.2k.mov'
-            if os.path.exists(source_movie):
-                os.symlink(source_movie, dest_movie)
+            __ __.pa__.exists(source_movie):
+                __.symlink(source_movie, dest_movie)
 
-def set_read_disparity(shot=None, show=None):
-    try:
+___ set_read_disparity(shot=None, show=None):
+    ___
         disparity_path = dbinfo.get_disparity(shot, show)
         disparity = re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)
-        nuke.thisNode().knob('file').setValue(disparity)
-    except:
+        ?.thisNode().knob('file').setValue(disparity)
+    ______
         pass
 
 
 @decorators.CacheDecorator
-def path_wildcard(input_string):
+___ path_wildcard(input_string):
     """
     Given a full input file path, this function will use glob to expand any wildcards up to the directory and then
     return the entry together with the filename. This can be useful to call in a read node's path knob. The result
@@ -341,12 +341,12 @@ def path_wildcard(input_string):
     :param input_string: file path with wildcard(s)
     :return: path with wildcards expanded to first valid result
     """
-    evaluated_string = nuke.tcl('set wildcard_results ' + input_string)
-    directory = os.path.dirname(evaluated_string)
+    evaluated_string = ?.tcl('set wildcard_results ' + input_string)
+    directory = __.pa__.dirname(evaluated_string)
     glob_results = glob.glob(directory)
 
-    if glob_results:
-        return os.path.join(glob_results[0], os.path.basename(evaluated_string))
+    __ glob_results:
+        r_ __.pa__.join(glob_results[0], __.pa__.b__(evaluated_string))
     else:
-        return evaluated_string
+        r_ evaluated_string
 

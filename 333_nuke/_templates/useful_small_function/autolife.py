@@ -30,7 +30,7 @@ ___ getElements(layer):
 
   r_ elements
 
-___ autoLife():
+___ autoLife
   n _ ?.tN..()
   
   nodec _ n['curves']

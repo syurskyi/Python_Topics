@@ -95,13 +95,13 @@ Advanced:
 
 """
 
-# Import built-in modules
+# _____ built-in modules
 ______ re
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 
@@ -111,7 +111,7 @@ c_ NodesByKnobValuePattern(NodeStep):
     ___ process
         """Handle nodes that match one of the patterns."""
         ___ rule __ setup["patterns"]:
-            ___ node __ ?.allNodes():
+            ___ node __ ?.allNodes
                 knob_name _ rule[0]
                 pattern _ rule[1]
 

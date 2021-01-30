@@ -75,10 +75,10 @@ Advanced:
 
 """
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 

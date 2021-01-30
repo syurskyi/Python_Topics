@@ -54,7 +54,7 @@ c_ Global_clipboard(QDialog):
             username _ filename.r..("tempClipBoard_", "")
             user_list.ap..(username)
 
-        user_list.remove(".DS_Store")
+        user_list.r__(".DS_Store")
         print user_list
         qul _ QStringListModel()
         completer.setModel(qul)
@@ -68,7 +68,7 @@ c_ Global_clipboard(QDialog):
         ____
             ?.m..("{}\ndoesn't exists".f..(loadPath))
 
-___ main():
+___ main
     # Create and show the form
     clipboard _ Global_clipboard()
     clipboard.exec_()

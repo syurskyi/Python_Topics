@@ -86,7 +86,7 @@ ___ collect_nodes(mode):
     dependent_ _ mode[0]
     dependencies_ _ mode[1]
 
-    ___ node __ ?.allNodes():
+    ___ node __ ?.allNodes
 
         __ node.Class() __ ignore_list:
             c___
@@ -110,7 +110,7 @@ ___ collect_nodes(mode):
     r_ cleanup_list
 
 
-___ cleanup():
+___ cleanup
     """
     show cleanup window
     :return: None
@@ -284,7 +284,7 @@ c_ CleanModeDialog(?W..):
         """
 
         ___ c __ checkboxes:
-            __ c.isChecked():
+            __ c.isChecked
                 ?.delete(?.tN..(c.property("node")))
 
         cleanup_list _ collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
@@ -308,7 +308,7 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        __ checkboxes[0].isChecked():
+        __ checkboxes[0].isChecked
             ___ c __ checkboxes:
                 c.setChecked(F..)
         ____

@@ -1,7 +1,7 @@
 ______ __
 ______ ?
 
-c_ global_clipboard():
+c_ global_clipboard
     ___  -
         __ __.name __ "nt":
             repo _ "R:/Global_Clipboard/"

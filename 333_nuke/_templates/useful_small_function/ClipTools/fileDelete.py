@@ -40,7 +40,7 @@ ___ deleteClips(files):
 #
 # deletes files or clips supplied from nuke
 #
-___ deleter():
+___ deleter
     g__ filestoDelete
 
     # asks nuke user for a clip name and checks for a '%'

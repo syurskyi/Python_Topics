@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+from PySide _____ QtCore, QtGui
 
 class Ui_Form(object):
-    def setupUi(self, Form):
+    ___ setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(267, 228)
         self.verticalLayout_3 = QVBoxLayout(Form)
@@ -63,7 +63,7 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-    def retranslateUi(self, Form):
+    ___ retranslateUi(self, Form):
         Form.setWindowTitle(QApplication.translate("Form", "Split Channel", None, QApplication.UnicodeUTF8))
         self.AdditiveRebuild_grp.setTitle(QApplication.translate("Form", "Additive Rebuild", None, QApplication.UnicodeUTF8))
         self.MentalRay_btn.setText(QApplication.translate("Form", "Mental Ray", None, QApplication.UnicodeUTF8))

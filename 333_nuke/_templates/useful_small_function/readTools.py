@@ -5,21 +5,21 @@ ___ newUserKnob(knob, v.. ):
     knob.sV..(v.. )
     r_ knob
 
-___ allReads():
+___ allReads
     readNodes _ # list
-    ___ i __ ?.allNodes():
+    ___ i __ ?.allNodes
         __ i.Class() __ 'Read':
             readNodes.ap..(i)
     r_ readNodes
 
-___ selectRead():
-    ___ i __ allReads():
+___ selectRead
+    ___ i __ allReads
         i.knob('selected').sV..('True')
 
-___ setLocalize():
+___ setLocalize
     p..
 
-___ setFrameRange():
+___ setFrameRange
     f _ n_s_.PP..('Set read nodes frame range')
     f.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ ?.T_K..('divText', '')
@@ -44,7 +44,7 @@ ___ setFrameRange():
             Sel _ allReads()
             ___ i __ ?.sN..:
                 ___
-                    Sel.remove(i)
+                    Sel.r__(i)
                 ______ ValueError:
                     p..
 
@@ -59,7 +59,7 @@ ___ setFrameRange():
             ______ NameError:
                 p..
 
-___ setError():
+___ setError
     e _ n_s_.PP..('Missing frames setting')
     e.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     e.divText _ ?.T_K..('divText', '')
@@ -79,7 +79,7 @@ ___ setError():
             Sel _ allReads()
             ___ i __ ?.sN..:
                 ___
-                    Sel.remove(i)
+                    Sel.r__(i)
                 ______ ValueError:
                     ?.m..('No nodes selected!')
                 ______ NameError:

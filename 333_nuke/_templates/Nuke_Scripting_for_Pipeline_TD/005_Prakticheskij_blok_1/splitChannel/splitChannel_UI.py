@@ -6,24 +6,24 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+from PyQt4 _____ QtCore, QtGui
 
-try:
+___
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
-        return s
+    ___ _fromUtf8(s):
+        r_ s
 
-try:
+___
     _encoding = QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QApplication.translate(context, text, disambig, _encoding)
+    ___ _translate(context, text, disambig):
+        r_ QApplication.translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig):
+        r_ QApplication.translate(context, text, disambig)
 
 class Ui_Form(object):
-    def setupUi(self, Form):
+    ___ setupUi(self, Form):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(267, 228)
         self.verticalLayout_3 = QVBoxLayout(Form)
@@ -76,7 +76,7 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-    def retranslateUi(self, Form):
+    ___ retranslateUi(self, Form):
         Form.setWindowTitle(_translate("Form", "Split Channel", None))
         self.AdditiveRebuild_grp.setTitle(_translate("Form", "Additive Rebuild", None))
         self.MentalRay_btn.setText(_translate("Form", "Mental Ray", None))

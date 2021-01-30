@@ -149,7 +149,7 @@ ___ check_xml_values_exist(*args):
      'snapshotbrowser_thumbnail_scrollbar': 'True',
      'snapshot_selection': 'all nodes',
      'snapshot_render_width': '960'}
-    ___ key, v..  __ settings.i..():
+    ___ key, v..  __ settings.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
@@ -224,7 +224,7 @@ ___ check_xml_ok(xml, *args):
         reset_settings_xml _ ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 get_settings_xml()
 
 
@@ -262,7 +262,7 @@ ___ get_topleft_coordinates(*args):
     x _ 0
     y _ 0
     offset _ 200
-    ___ n __ ?.allNodes():
+    ___ n __ ?.allNodes
         __ n.xpos() < x:
             x _ n.xpos()
         __ n.ypos() < y:
@@ -291,7 +291,7 @@ ___ get_installed_root_dir(*args):
 
 
 ___ get_tool_public_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartLook')
+    root _ __.pa__.j..(__.pa__.e__('~'), 'cragl', 'smartLook')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -302,7 +302,7 @@ ___ get_tool_public_root(*args):
 
 
 ___ get_tool_private_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartLook')
+    root _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'smartLook')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -313,7 +313,7 @@ ___ get_tool_private_root(*args):
 
 
 ___ get_log_file(*args):
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -327,7 +327,7 @@ ___ get_log_file(*args):
 ___ write_log(text, tool _ 'lk', *args):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
@@ -368,14 +368,14 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -420,8 +420,8 @@ ___ set_hotkeys(*args):
      'resolution slider': 'resolution_slider',
      'settings': 'looks_settings'}
     ___
-        ___ command, hotkey __ hotkeys_dict.i..():
-            command_item _ ?.menu('Nuke').fI..('cragl/smartLook/{}'.f..(command))
+        ___ command, hotkey __ hotkeys_dict.i..
+            command_item _ ?.m__('Nuke').fI..('cragl/smartLook/{}'.f..(command))
             command_item.setShortcut(hotkeys[hotkey])
 
     ______ KeyError:
@@ -532,10 +532,10 @@ ___ get_connected_nodes(node, *args):
     connected_nodes.ap..(node)
     ?.selectConnectedNodes()
     ___ node __ ?.sN..:
-        ___ dependency __ node.dependencies():
+        ___ dependency __ node.dependencies
             dependency.setSelected(T..)
 
-        ___ dependent __ node.dependent():
+        ___ dependent __ node.dependent
             dependent.setSelected(T..)
 
     ___ node __ ?.sN..:
@@ -581,7 +581,7 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
     w__ o..(metaxml, 'w') __ xml:
         prettyprint(metaroot)
         metatree.w..(xml, encoding_'utf-8', xml_declaration_T..)
-    ___ thumb __ snapshotbowser.get_thumbnails_list():
+    ___ thumb __ snapshotbowser.get_thumbnails_list
         thumb.set_meta_ui_elements()
 
     r_
@@ -604,7 +604,7 @@ ___ load_metadata(src, *args):
             msg _ "corrupt metaxml, create new one for '{}'".f..(meta_xml)
             write_log(msg)
             __ __.pa__.isf..(meta_xml):
-                __.remove(meta_xml)
+                __.r__(meta_xml)
                 create_metaxml(meta_xml)
                 meta_tree _ ET.parse(meta_xml)
                 meta_root _ meta_tree.getroot()
@@ -619,7 +619,7 @@ ___ load_metadata(src, *args):
 
 
 ___ get_resolution(*args):
-    __ ?.activeViewer():
+    __ ?.activeViewer
         r_ ?.activeViewer().node()['downrez'].gV..
 
 

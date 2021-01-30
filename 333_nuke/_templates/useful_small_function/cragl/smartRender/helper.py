@@ -85,7 +85,7 @@ ___ get_all_write_nodes_data(*args):
 
 
 ___ get_smart_render_private_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartRender')
+    root _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'smartRender')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -96,7 +96,7 @@ ___ get_smart_render_private_root(*args):
 
 
 ___ get_smart_render_public_root(*args):
-    root _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartRender')
+    root _ __.pa__.j..(__.pa__.e__('~'), 'cragl', 'smartRender')
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -112,7 +112,7 @@ ___ get_installed_root_dir(*args):
     r_ __.pa__.n_p_(root)
 
 
-___ get_public_cache_folder():
+___ get_public_cache_folder
     cache_dir _ __.pa__.j..(get_smart_render_public_root(), 'cache')
     __ no. __.pa__.isd..(cache_dir):
         ___
@@ -124,7 +124,7 @@ ___ get_public_cache_folder():
     r_ cache_dir
 
 
-___ get_tmp_folder():
+___ get_tmp_folder
     tmp_dir _ __.pa__.j..(get_smart_render_public_root(), 'tmp')
     __ no. __.pa__.isd..(tmp_dir):
         ___
@@ -215,7 +215,7 @@ ___ check_xml_ok(xml, *args):
         msg_box.addButton('Cancel', ?W...QMessageBox.RejectRole)
         __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 __ xml __ settings_xml:
                     get_settings_xml()
                 ____
@@ -283,7 +283,7 @@ ___ calculate_process_precentage(job_id, frame, *args):
 
             ___ f __ job.find('frames').f_a_('frame'):
                 __ f.text __ st.(frame):
-                    job.find('frames').remove(f)
+                    job.find('frames').r__(f)
 
             w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
@@ -420,7 +420,7 @@ ___ get_all_jobs_data(filter, *args):
 
 
 ___ get_log_file(*args):
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -431,14 +431,14 @@ ___ get_log_file(*args):
     r_ log_file
 
 
-___ get_time_formated():
-    r_ ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
+___ get_time_formated
+    r_ ti__.s_t_('%d.%m.%Y %H:%M:%S', ti__.localtime())
 
 
 ___ write_log(text, tool _ 'rn'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
@@ -578,7 +578,7 @@ ___ load_job_log_data(job_id, filter, file_output _ F.., *args):
                     ____
                         code _ "[<span style='color:#339933'>done</span>"
                 data_time _ __.(data.get('time'))
-                ti__ _ d_t_.d_t_.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
+                ti__ _ d_t_.d_t_.fromtimestamp(data_time).s_t_('%d/%m/%Y %H:%M:%S')
                 __ file_output:
                     job_data +_ '{time} {code} {text}\n'.f..(ti___ti__, code_code, text_data.text)
                 ____
@@ -615,7 +615,7 @@ ___ reset_file(which, window, *args):
             jobs_file _ get_job_xml()
             ___
                 __ __.pa__.isf..(jobs_file):
-                    __.remove(jobs_file)
+                    __.r__(jobs_file)
                     msg _ 'Successfully flushed jobs file.'
                     show_message_box(window, msg)
             ______ E.. __ e:
@@ -625,7 +625,7 @@ ___ reset_file(which, window, *args):
             settings_file _ get_settings_xml()
             ___
                 __ __.pa__.isf..(settings_file):
-                    __.remove(settings_file)
+                    __.r__(settings_file)
                     msg _ 'Successfully reset the smartRender settings.'
                     show_message_box(window, msg)
             ______ E.. __ e:
@@ -635,7 +635,7 @@ ___ reset_file(which, window, *args):
 ___ get_settings_xml(*args):
     settings_xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
     __ no. __.pa__.isf..(settings_xml):
-        desktop_cache _ __.pa__.j..(__.pa__.expanduser('~'), 'Desktop/cache')
+        desktop_cache _ __.pa__.j..(__.pa__.e__('~'), 'Desktop/cache')
         ___
             w__ o..(settings_xml, 'w') __ render_template:
                 template _ templates.SETTINGS.f..(public_cache_get_public_cache_folder(), desktop_cache_desktop_cache)
@@ -648,7 +648,7 @@ ___ get_settings_xml(*args):
     r_ settings_xml
 
 
-___ check_settings_xml_values_exist():
+___ check_settings_xml_values_exist
     settings _ {'current_tab': '1',
      'timer_log_update': '1000',
      'timer_job_log_update': '5000',
@@ -677,7 +677,7 @@ ___ check_settings_xml_values_exist():
      'auto_close_renderinfo': 'True',
      'show_render_file_name': 'True',
      'tooltips': 'True'}
-    ___ key, v..  __ settings.i..():
+    ___ key, v..  __ settings.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
     settings_current _ {'range': 'global',
@@ -686,7 +686,7 @@ ___ check_settings_xml_values_exist():
      'overwrite': 'True',
      'size': 'full',
      'thread_count': st.(__.(get_cpu_count() / 2))}
-    ___ key, v..  __ settings_current.i..():
+    ___ key, v..  __ settings_current.i..
         check_xml_value_exists_current('setting', 'name', key, v.. )
 
 
@@ -891,14 +891,14 @@ ___ get_cpu_count(*args):
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -910,7 +910,7 @@ ___ delete_cache_path(pa__, *args):
     settings_root _ settings_tree.getroot()
     ___ path_element __ settings_root.find('cache').f_a_('path'):
         __ path_element.text __ pa__:
-            settings_root.find('cache').remove(path_element)
+            settings_root.find('cache').r__(path_element)
             w__ o..(settings_xml, 'w') __ xml:
                 prettyprint(settings_root)
                 settings_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
@@ -980,7 +980,7 @@ ___ get_explorer_name(*args):
 
 
 ___ get_recent_nukescripts(*args):
-    file_recent_files _ __.pa__.j..(__.pa__.expanduser('~'), '.nuke', 'recent_files')
+    file_recent_files _ __.pa__.j..(__.pa__.e__('~'), '.nuke', 'recent_files')
     recent_files _ # list
     __ __.pa__.isf..(file_recent_files):
         w__ o..(file_recent_files, 'r') __ rf:

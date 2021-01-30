@@ -1,14 +1,14 @@
-import nuke
-import os
+_____ ?
+_____ __
 
-nuke.frame()
-nuke.frame(4)
+?.frame()
+?.frame(4)
 
-nuke.activeViewer().node()
-nuke.activeViewer().frameControl()
-v = nuke.activeViewer()
+?.activeViewer().node()
+?.activeViewer().frameControl()
+v = ?.activeViewer()
 v.frameControl(-6)
 
-nuke.activeViewer().play(1)
-nuke.activeViewer().play(-1)
-nuke.activeViewer().stop()
+?.activeViewer().play(1)
+?.activeViewer().play(-1)
+?.activeViewer().stop()

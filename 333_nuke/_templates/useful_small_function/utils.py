@@ -101,7 +101,7 @@ ___ create_text_knob(node, noop, m_key, key):
     noop.aK..(text)
 
 
-___ get_node():
+___ get_node
     """Get the current selected node from nodegraph.
 
     Returns:
@@ -131,6 +131,6 @@ ___ get_metadata(node):
         r_ N..
 
 
-___ m..():
+___ m..
     ?.m..('Something went wrong.\nPlease double check node selection and'
                  ' metadata')

@@ -19,7 +19,7 @@ ____
 ____ smartCommand ______ templates
 ____ smartCommand.info ______ __product__
 
-___ load_icons():
+___ load_icons
     this_dir _ __.pa__.d_n_( -f)
     dir_icon _ __.pa__.j..(this_dir, 'icons')
     dir_icon _ __.pa__.n_p_(dir_icon)
@@ -52,7 +52,7 @@ ___ get_tool_root(which):
         cragl_dir _ '.cragl'
     ____
         cragl_dir _ 'cragl'
-    root _ __.pa__.j..(__.pa__.expanduser('~'), cragl_dir, __product__)
+    root _ __.pa__.j..(__.pa__.e__('~'), cragl_dir, __product__)
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
@@ -65,12 +65,12 @@ ___ get_tool_root(which):
 ___ write_log(text, tool _ 'sc'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
-        log_time _ ti__.strftime(log_time_format, ti__.localtime())
+        log_time _ ti__.s_t_(log_time_format, ti__.localtime())
         file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
-___ get_log_file():
-    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+___ get_log_file
+    connect_dir _ __.pa__.j..(__.pa__.e__('~'), '.cragl', 'connect')
     __ no. __.pa__.isd..(connect_dir):
         __.m_d_(connect_dir)
     log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
@@ -81,7 +81,7 @@ ___ get_log_file():
     r_ log_file
 
 
-___ load_settings():
+___ load_settings
     settings_xml _ get_settings_xml()
     settings _ {}
     __ check_xml_ok(settings_xml):
@@ -98,7 +98,7 @@ ___ load_settings():
     r_ settings
 
 
-___ get_collection_root():
+___ get_collection_root
     collection_root _ load_settings()['collection_root']
     __ no. __.pa__.isd..(collection_root):
         ___
@@ -110,7 +110,7 @@ ___ get_collection_root():
     r_ collection_root
 
 
-___ get_scriptlets_root():
+___ get_scriptlets_root
     scriptlet_root _ load_settings()['scriptlets']
     __ no. __.pa__.isd..(scriptlet_root):
         ___
@@ -122,33 +122,33 @@ ___ get_scriptlets_root():
     r_ scriptlet_root
 
 
-___ default_collection_root():
+___ default_collection_root
     root _ __.pa__.j..(get_tool_root('public'), 'collections')
     __ no. __.pa__.isd..(root):
         __.m_d_(root)
     r_ root
 
 
-___ default_scriptlets_root():
+___ default_scriptlets_root
     root _ __.pa__.j..(get_tool_root('public'), 'scriptlets')
     __ no. __.pa__.isd..(root):
         __.m_d_(root)
     r_ root
 
 
-___ create_default_data_roots():
+___ create_default_data_roots
     default_collection_root()
     default_scriptlets_root()
 
 
-___ get_xml_elements():
+___ get_xml_elements
     xml _ get_settings_xml()
     tree _ ET.parse(xml)
     root _ tree.getroot()
     r_ (xml, root, tree)
 
 
-___ get_settings_xml():
+___ get_settings_xml
     settings_xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
     __ no. __.pa__.isf..(settings_xml):
         ___
@@ -166,8 +166,8 @@ ___ get_settings_xml():
     r_ settings_xml
 
 
-___ check_xml_values_exist():
-    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..():
+___ check_xml_values_exist
+    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..
         check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
@@ -200,14 +200,14 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
 ___ prettyprint(elem, level _ 0):
     i _ '\n' + level * '  '
     __ le.(elem):
-        __ no. elem.text or no. elem.text.strip():
+        __ no. elem.text or no. elem.text.strip
             elem.text _ i + '  '
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ no. elem.tail or no. elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip
             elem.tail _ i
     ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
@@ -223,7 +223,7 @@ ___ check_xml_ok(xml):
         reset_settings_xml _ ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
             __ __.pa__.isf..(xml):
-                __.remove(xml)
+                __.r__(xml)
                 get_settings_xml()
 
 
@@ -312,7 +312,7 @@ ___ sanitize(string):
     r_ re.sub('[^a-zA-Z0-9+]', '', string)
 
 
-___ get_history_xml():
+___ get_history_xml
     ____ smartCommand.constants ______ HISTORY
     r_ __.pa__.j..(get_tool_root('private'), '{}.xml'.f..(HISTORY))
 
@@ -336,9 +336,9 @@ ___ swap_commands(xml, path_1, path_2):
 
     __ no. all((command __ no. N.. ___ command __ [command_1, command_2])):
         raise ValueError('No such sufficient data to swap.')
-    root.find('collection').remove(command_2)
+    root.find('collection').r__(command_2)
     root.find('collection').insert(index_1, command_2)
-    root.find('collection').remove(command_1)
+    root.find('collection').r__(command_1)
     root.find('collection').insert(index_2, command_1)
     w__ o..(xml, 'w') __ file_:
         prettyprint(root)
@@ -360,7 +360,7 @@ ___ remove_history_commands(xml, history_max):
     index _ 1
     ___ command __ root.find('collection').f_a_('command'):
         __ index > history_max:
-            root.find('collection').remove(command)
+            root.find('collection').r__(command)
         index +_ 1
 
     w__ o..(xml, 'w') __ file_:
@@ -381,16 +381,16 @@ ___ create_collection(collection_name):
     r_ xml
 
 
-___ remove_command_duplicates(menu, command_path):
-    equals _ [ command_elem ___ command_elem __ menu.f_a_('command') __ command_elem.text __ command_path ]
+___ remove_command_duplicates(m__, command_path):
+    equals _ [ command_elem ___ command_elem __ m__.f_a_('command') __ command_elem.text __ command_path ]
     ___ element __ equals:
-        menu.remove(element)
+        m__.r__(element)
 
-    r_ menu
+    r_ m__
 
 
 ___ get_command_object(pa__):
-    command _ ?.menu('Nuke').fI..(pa__)
+    command _ ?.m__('Nuke').fI..(pa__)
     __ no. command:
         r_ N..
     ____
@@ -434,7 +434,7 @@ ___ remove_command(xml, pa__):
     root _ tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ pa__:
-            root.find('collection').remove(command)
+            root.find('collection').r__(command)
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
@@ -451,7 +451,7 @@ ___ get_basename(pa__):
     r_ out
 
 
-___ get_all_hotkeys():
+___ get_all_hotkeys
     hotkey_commands _ {}
     collection_root _ get_collection_root()
     ___ collection __ get_menus(all_incl_F..):
@@ -465,11 +465,11 @@ ___ get_all_hotkeys():
     r_ hotkey_commands
 
 
-___ initialize_hotkeys():
+___ initialize_hotkeys
     hotkey_commands _ get_all_hotkeys()
-    ___ hotkey, command __ hotkey_commands.i..():
+    ___ hotkey, command __ hotkey_commands.i..
         pa__ _ command[0]
-        command_item _ ?.menu('Nuke').fI..(pa__)
+        command_item _ ?.m__('Nuke').fI..(pa__)
         __ command_item:
             command_item.setShortcut(hotkey)
 
@@ -532,5 +532,5 @@ ___ center_window(window):
     window.move(geometry.topLeft())
 
 
-___ get_cursor_position():
+___ get_cursor_position
     r_ ?G...QCursor().pos()

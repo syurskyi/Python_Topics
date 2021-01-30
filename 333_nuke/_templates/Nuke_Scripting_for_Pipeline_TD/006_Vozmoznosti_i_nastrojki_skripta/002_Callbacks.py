@@ -1,64 +1,64 @@
-import nuke
+_____ ?
 
-def my_cb():
-    print nuke.thisNode().name()
+___ my_cb
+    print ?.thisNode().name()
 
-nuke.addOnCreated(my_cb, nodeClass='Transform')
-nuke.removeOnCreated(my_cb, nodeClass='Transform')
+?.addOnCreated(my_cb, nodeClass='Transform')
+?.removeOnCreated(my_cb, nodeClass='Transform')
 
-def my_cb2():
-    print nuke.thisKnob().getValue()
+___ my_cb2
+    print ?.thisKnob().getValue()
 
-nuke.addKnobChanged(my_cb2)
-nuke.removeKnobChanged(my_cb2)
+?.addKnobChanged(my_cb2)
+?.removeKnobChanged(my_cb2)
 
-def uiUpdate():
-    print nuke.thisNode().name()
-    print nuke.thisClass()
-    print nuke.thisView()
-    print nuke.thisParent().name()
+___ uiUpdate
+    print ?.thisNode().name()
+    print ?.thisClass()
+    print ?.thisView()
+    print ?.thisParent().name()
 
-nuke.addUpdateUI(uiUpdate)
-nuke.removeUpdateUI(uiUpdate)
+?.addUpdateUI(uiUpdate)
+?.removeUpdateUI(uiUpdate)
 
 ########################################################################################################################
 
-def myCallback2():
-    print nuke.thisNode().name()
+___ myCallback2
+    print ?.thisNode().name()
 
 
-nuke.addOnCreate(myCallback2, nodeClass='Transform')
-nuke.removeOnCreate(myCallback2, nodeClass='Transform')
+?.addOnCreate(myCallback2, nodeClass='Transform')
+?.removeOnCreate(myCallback2, nodeClass='Transform')
 
 
-def printKnob():
-    print nuke.thisKnob().name()
+___ printKnob
+    print ?.thisKnob().name()
 
 
-nuke.addKnobChanged(printKnob)
-nuke.removeKnobChanged(printKnob)
+?.addKnobChanged(printKnob)
+?.removeKnobChanged(printKnob)
 
 
-def uiUpdate():
-    print nuke.thisNode().name()
-    print nuke.thisClass()
-    print nuke.thisView()
-    print nuke.thisParent().name()
+___ uiUpdate
+    print ?.thisNode().name()
+    print ?.thisClass()
+    print ?.thisView()
+    print ?.thisParent().name()
 
 
-nuke.addUpdateUI(uiUpdate)
-nuke.removeUpdateUI(uiUpdate)
+?.addUpdateUI(uiUpdate)
+?.removeUpdateUI(uiUpdate)
 
 
-def multiKnob():
-    n = nuke.thisNode()
-    k = nuke.thisKnob()
-    other = nuke.selectedNodes(n.Class())
+___ multiKnob
+    n = ?.thisNode()
+    k = ?.thisKnob()
+    other = ?.selectedNodes(n.Class())
     val = k.value()
-    for node in other:
-        if not node is n:
+    ___ node __ other:
+        __ no. node is n:
             node[k.name()].setValue(val)
 
 
-nuke.addKnobChanged(multiKnob)
-nuke.removeKnobChanged(multiKnob)
+?.addKnobChanged(multiKnob)
+?.removeKnobChanged(multiKnob)

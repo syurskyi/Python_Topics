@@ -32,7 +32,7 @@ ___ delete(files, verbose):
         ___ f __ files:
             __ (verbose):
                 print "deleting "+f                             #return a useful output - command line
-            __.remove(f)
+            __.r__(f)
             count +_ 1
     ______
         r_ 1

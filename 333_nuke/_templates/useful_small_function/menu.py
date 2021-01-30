@@ -30,7 +30,7 @@ ___ autoColorReadNodeType(overrideNode_N..):
 
 # align selected nodes on a horizontal line, by Steve Molin
 #
-___ sjmAlignH():
+___ sjmAlignH
   yresult _ N..
   ___ n __ ?.sN..:
     __ yresult __ N..:
@@ -40,7 +40,7 @@ ___ sjmAlignH():
 #
 # align selected nodes on a vertical line, by Steve Molin
 #
-___ sjmAlignV():
+___ sjmAlignV
   xresult _ N..
   ___ n __ ?.sN..:
     __ xresult __ N..:
@@ -50,7 +50,7 @@ ___ sjmAlignV():
 
 # by smolin, expands on the autobackdrop function from nuke/plugins/nukescripts
 #
-___ sjmAutoBackdrop():
+___ sjmAutoBackdrop
   ______ random
   selNodes _ ?.sN..
   __ no. selNodes:
@@ -84,8 +84,8 @@ ___ sjmAutoBackdrop():
 
 # backdrop font size=99, by Steve Molin
 #
-___ sjmBackdropFonts():
-  ___ i __ ?.allNodes():
+___ sjmBackdropFonts
+  ___ i __ ?.allNodes
     __ i.__class__.__name__ __ 'BackdropNode':
       i.knob('note_font_size').sV..(189)
       k _ i.knob('label')
@@ -111,8 +111,8 @@ ___ sjmFindAllParentReads(n_N..):
 
 # unhide all inputs, by Steve Molin
 #
-___ sjmHideInputsOff():
-  ___ i __ ?.allNodes():
+___ sjmHideInputsOff
+  ___ i __ ?.allNodes
     __ i.knob('hide_input'):
       __ i.knob('hide_input').v..:
 	i.knob('hide_input').sV..(F..)
@@ -132,8 +132,8 @@ ___ sjmOpenInViewer(nd_N..):
 # load the targets of the writeNodes in a viewer (djv):
 # TODO: deal better with %04d; deal with different viewers
 #
-___ sjmOpenAllInViewer():
-  ___ n __ ?.allNodes():
+___ sjmOpenAllInViewer
+  ___ n __ ?.allNodes
     __ n.Class() __ 'Write':
       __ no. n.knob('disable').v..:
         sjmOpenInViewer(n)
@@ -143,22 +143,22 @@ ___ sjmOpenAllInViewer():
 	#subprocess.call([r'C:\Program Files (x86)\djv 0.8.3\bin\djv_view.exe',fn])
 
 # step through 'operation' values on a merge node
-___ sjmMergeOpIncr():
+___ sjmMergeOpIncr
   sn _ ?.sN__
   kn _ sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.v.. ())+1)
-___ sjmMergeOpDecr():
+___ sjmMergeOpDecr
   sn _ ?.sN__
   kn _ sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.v.. ())-1)
 
 # use $gui to disable slow nodes when working interactively
 #
-___ sjmToggleDisableExpression():
+___ sjmToggleDisableExpression
   mynodes _ ?.sN..
   ___ mynode __ mynodes:
     myknob _ mynode['disable']
-    __ myknob.isAnimated():
+    __ myknob.isAnimated
       myknob.cA..
       myknob.sV..(0)
     ____
@@ -166,7 +166,7 @@ ___ sjmToggleDisableExpression():
 
 # toggle the branch selector on all the switch nodes that are selected
 #
-___ sjmToggleSwitch():
+___ sjmToggleSwitch
   ___ mynode __ ?.sN..:
     __ mynode.knobs()['which'].v..:
       mynode.knobs()['which'].sV..(0)
@@ -176,7 +176,7 @@ ___ sjmToggleSwitch():
 # see http://docs.thefoundry.co.uk/nuke/63/pythondevguide/basics.html
 # and http://docs.thefoundry.co.uk/nuke/63/pythondevguide/custom_panels.html
 #
-___ testMyDialog():
+___ testMyDialog
 	p_?.Panel('my custom panel')
 	p.addClipnameSearch('clip path', '/tmp')
 	p.addFilenameSearch('file path', '/tmp')
@@ -273,7 +273,7 @@ ______ ImportError:
 
 # Add a personal menu to the top menu bar
 #
-m_keybindings _ ?.menu('Nuke').aM..("Smolin")
+m_keybindings _ ?.m__('Nuke').aM..("Smolin")
 m_keybindings.aC..('mergeStencil', 'nuke.createNode("Merge2","operation stencil")', 'Ctrl+Meta+S')
 m_keybindings.aC..('colorLookup aka curve lookup','nuke.createNode("ColorLookup")', 'Ctrl+Meta+L')
 m_keybindings.aC..('sjmToggleDisableExpression','sjmToggleDisableExpression()', 'Ctrl+Meta+G')

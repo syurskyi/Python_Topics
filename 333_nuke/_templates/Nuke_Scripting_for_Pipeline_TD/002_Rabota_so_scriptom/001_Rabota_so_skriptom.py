@@ -1,12 +1,12 @@
-import nuke
+_____ ?
 
 s = 'c:/temp/script.nk'
-nuke.scriptSaveAs(s)
-nuke.scriptClear()
-nuke.scriptOpen(s)
-nuke.scriptReadFile(s)
-nuke.scriptSource(s)
-nuke.scriptReadText()
+?.scriptSaveAs(s)
+?.scriptClear()
+?.scriptOpen(s)
+?.scriptReadFile(s)
+?.scriptSource(s)
+?.scriptReadText()
 
-nuke.script_directory()
-nuke.scriptSaveandClear(s,False)
+?.script_directory()
+?.scriptSaveandClear(s,False)

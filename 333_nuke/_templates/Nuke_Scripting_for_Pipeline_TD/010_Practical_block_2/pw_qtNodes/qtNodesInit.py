@@ -14,7 +14,7 @@ ____ ?.?G.. ______ *
 ______ qtNodes
 
 
-___ getMainWindow():
+___ getMainWindow
     qApp _ ?A...ins..)
     ___ widget __ qApp.tLW..
         __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':

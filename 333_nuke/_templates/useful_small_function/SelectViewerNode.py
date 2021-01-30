@@ -33,7 +33,7 @@ ___ GetViewerList(ViewersList):
         ActiveViewer _ "      "+ActiveViewer.s..("Viewer")[1]+"    "
     ______
         p..
-    ___ v __ ?.allNodes():
+    ___ v __ ?.allNodes
         Name _ v.n..
         Class _ v.Class()
         __ Class __ "Viewer":
@@ -42,7 +42,7 @@ ___ GetViewerList(ViewersList):
                 ViewersList.ap..(Number)
     ViewersList _ sorted(ViewersList)
     __ ActiveViewer!_"":
-        ViewersList.remove(ActiveViewer)
+        ViewersList.r__(ActiveViewer)
         ViewersList.insert(0,ActiveViewer)
     r_ ViewersList
    
@@ -63,7 +63,7 @@ ___ SelectNode(Viewer,warning):
         warning.setVisible(T..)
         raise ValueError      
     ____ Inputs>1:
-        ___ n __ ?.allNodes():
+        ___ n __ ?.allNodes
             n.setSelected(F..)
         __ Viewer __ ActiveViewer:
             index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)+1
@@ -86,7 +86,7 @@ ___ SelectNode(Viewer,warning):
                 ______
                     p..
     ____
-        ___ n __ ?.allNodes():
+        ___ n __ ?.allNodes
             n.setSelected(F..)
         __ Viewer __ ActiveViewer:
             ___
@@ -170,7 +170,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
         __ knob.n.. __ "OK":
 
-            __ no. warning.visible():
+            __ no. warning.visible
 
                 dividerA.setVisible(F..)
      
@@ -187,7 +187,7 @@ If the selected viewer is not active, all viewer nodes will be selected
             dividerA.setVisible(T..)
 
 
-___ Launcher():
+___ Launcher
 
     panel _ SelectViewerNode()
 

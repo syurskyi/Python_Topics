@@ -1,7 +1,7 @@
-import nuke, math
+_____ ?, math
 
 
-t = nuke.toNode('Transform1')
+t = ?.toNode('Transform1')
 t['translate'].animations()
 t['translate'].animation(0)
 t['translate'].animation(1)
@@ -23,9 +23,9 @@ t['translate'].animation(1)
 
 k = t['translate']
 
-for i in range(1, 0, 200):
+___ i __ range(1, 0, 200):
     k.setValueAt(math.sin(i*0.05)*50, i, 1)
 
 c = k.animation(1)
 c.clear()
-c.addKey([nuke.AnimationKey(x, math.sin(x*0.02)*70) for x in range(10, 200)])
+c.addKey([?.AnimationKey(x, math.sin(x*0.02)*70) ___ x __ range(10, 200)])

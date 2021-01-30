@@ -1,11 +1,11 @@
-from PySide2.QtGui import *
-from PySide2.QtCore import *
-from PySide2.QtWidgets import *
-import sys
+from PySide2.QtGui _____ *
+from PySide2.QtCore _____ *
+from PySide2.QtWidgets _____ *
+_____ sys
 
 
 class ClipboardUi(QTabWidget):
-    def __init__(self):
+    ___ __init__(self):
         super(ClipboardUi, self).__init__()
 
         self.setWindowTitle("Clipboard")
@@ -84,15 +84,15 @@ class ClipboardUi(QTabWidget):
 
         self.users_search_line_edit.setStyleSheet(self.get_style_sheet())
 
-    def get_style_sheet(self):
-        return '''padding: 2px 2px 2px 20px;
+    ___ get_style_sheet(self):
+        r_ '''padding: 2px 2px 2px 20px;
                         background-image: url(zoom.png);
                         background-position: left;
                         background-repeat: no-repeat'''
 
 
 class HistoryTableWidget(QTableWidget):
-    def __init__(self):
+    ___ __init__(self):
         super(HistoryTableWidget, self).__init__()
 
         self.setColumnCount(2)

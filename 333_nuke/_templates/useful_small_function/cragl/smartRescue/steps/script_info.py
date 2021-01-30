@@ -85,14 +85,14 @@ Advanced:
 
 """
 
-# Import built-in modules
+# _____ built-in modules
 ______ d_t_
 ______ __
 
-# Import third-party modules
+# _____ third-party modules
 ______ ?  # pylint: disable=______-error
 
-# Import local modules
+# _____ local modules
 ____ smartRescue.base_steps ______ NodeStep
 
 # Template to use for info creation.
@@ -152,7 +152,7 @@ c_ ScriptInfo(NodeStep):
         r_ le.(?.allNodes(recurseGroups_recursive))
 
     @staticmethod
-    ___ frame_range():
+    ___ frame_range
         """Get the first and last frame of the working file.
 
         Returns:
@@ -244,7 +244,7 @@ c_ ScriptInfo(NodeStep):
         r_ tuple(footage)
 
     @staticmethod
-    ___ all_node_classes():
+    ___ all_node_classes
         """Get a set of all node classes
 
         Returns:

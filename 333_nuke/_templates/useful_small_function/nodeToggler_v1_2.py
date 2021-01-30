@@ -1,10 +1,10 @@
 ______ ?, n_s_
 #defining parent function to control all
-___ nodeToggler():
+___ nodeToggler
     #defining function to control node selection
-    ___ nodeSelection():
+    ___ nodeSelection
 	#defining functon to choose knob
-        ___ knobSelection():
+        ___ knobSelection
 	    #creates panel for knob selection
             knobPanel _ ?.Panel('Select Knob')
 	    #a dictionary of knobs created for reference

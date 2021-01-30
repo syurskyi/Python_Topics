@@ -1,5 +1,5 @@
-import nuke
-import nukescripts
+_____ ?
+_____ nukescripts
 
 
 """
@@ -8,7 +8,7 @@ and to connect the viewer with the first/last node
 """
 
 
-def get_edge_node(which):
+___ get_edge_node(which):
     """
     get most top or bottom node
     :param which: String first or last node
@@ -17,25 +17,25 @@ def get_edge_node(which):
 
     edge_node = None
 
-    for node in nuke.allNodes():
+    ___ node __ ?.allNodes
 
-        if node.Class() != "Viewer":
+        __ node.Class() != "Viewer":
 
-            if edge_node is None:
+            __ edge_node is None:
                 edge_node = node
 
-            if which == "top":
-                if node.ypos() < edge_node.ypos():
+            __ which == "top":
+                __ node.ypos() < edge_node.ypos
                     edge_node = node
 
-            if which == "bottom":
-                if node.ypos() > edge_node.ypos():
+            __ which == "bottom":
+                __ node.ypos() > edge_node.ypos
                     edge_node = node
 
-    return edge_node
+    r_ edge_node
 
 
-def view_edge_node(which):
+___ view_edge_node(which):
     """
     connect viewer to first/last node
     :param which: String first or last node
@@ -44,24 +44,24 @@ def view_edge_node(which):
 
     viewer_port = 8
     edge_node = get_edge_node(which)
-    sel = nuke.selectedNodes()
+    sel = ?.selectedNodes()
 
-    if edge_node is None:
-        return
+    __ edge_node is None:
+        r_
 
     nukescripts.clear_selection_recursive()
     edge_node.setSelected(True)
     nukescripts.connect_selected_to_viewer(viewer_port)
     edge_node.setSelected(False)
 
-    for node in sel:
+    ___ node __ sel:
         node.setSelected(True)
 
-    for node in nuke.allNodes("Viewer"):
+    ___ node __ ?.allNodes("Viewer"):
         node.setSelected(False)
 
 
-def jump_to_edge_node(which):
+___ jump_to_edge_node(which):
     """
     jump to most top or most bottom node
     :param which: String first or last node
@@ -70,7 +70,7 @@ def jump_to_edge_node(which):
 
     edge_node = get_edge_node(which)
 
-    if edge_node is None:
-        return
+    __ edge_node is None:
+        r_
 
-    nuke.zoom(1, [float(edge_node.xpos()), float(edge_node.ypos())])
+    ?.zoom(1, [float(edge_node.xpos()), float(edge_node.ypos())])

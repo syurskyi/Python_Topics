@@ -1,6 +1,6 @@
-import nuke
-import os
-import helper
+_____ ?
+_____ __
+_____ h__
 
 
 """
@@ -9,33 +9,33 @@ important node that carries a 'file' knob
 """
 
 
-def add_reveal_button():
+___ add_reveal_button
     """
     add custom tab in node and add reveal button
     :return: None
     """
 
-    node = nuke.thisNode()
-    button_reveal = nuke.PyScript_Knob("revealInFinder", "reveal in finder", "")
-    tab_custom = nuke.Tab_Knob("custom", "custom")
+    node = ?.thisNode()
+    button_reveal = ?.PyScript_Knob("revealInFinder", "reveal in finder", "")
+    tab_custom = ?.Tab_Knob("custom", "custom")
     node.addKnob(tab_custom)
     node.addKnob(button_reveal)
 
 
-def reveal_in_finder():
+___ reveal_in_finder
     """
     get file path and reveal src in finder
     :return: None
     """
 
-    node = nuke.thisNode()
-    knob = nuke.thisKnob()
+    node = ?.thisNode()
+    knob = ?.thisKnob()
 
-    if knob.name() == "revealInFinder":
-        path = os.path.dirname(node["file"].getValue())
-        if os.path.isdir(path):
-            helper.open_folder(path)
+    __ knob.name() == "revealInFinder":
+        pa__ = __.pa__.dirname(node["file"].getValue())
+        __ __.pa__.i_d_(pa__):
+            h__.open_folder(pa__)
         else:
-            nuke.message("Can't reveal in finder. No such directory.")
+            ?.m__("Can't reveal in finder. No such directory.")
 
 

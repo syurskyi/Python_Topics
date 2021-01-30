@@ -1,16 +1,16 @@
-import os, subprocess
+_____ __, subprocess
 
-root = os.path.dirname(__file__)
+root = __.pa__.dirname(__file__)
 print(root)
 
 # Home
-os.environ['HOME'] = root
+__.environ['HOME'] = root
 
 # Nuke Path
-os.environ['NUKE_PATH'] = root
+__.environ['NUKE_PATH'] = root
 
 # START NUKE
-if os.name == 'nt':
+__ __.name == 'nt':
     exe = 'C:/Program Files/Nuke12.1v1/Nuke12.1.exe'
 else:
     exe = None

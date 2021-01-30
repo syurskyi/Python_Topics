@@ -1,18 +1,18 @@
-import nuke
-import os
-def incNamePath(path):
-    nameExt = os.path.basename(path)
-    name, ext = os.path.splitext(nameExt)
-    dir = os.path.dirname(path)
+_____ ?
+_____ __
+___ incNamePath(pa__):
+    nameExt = __.pa__.b__(pa__)
+    name, ext = __.pa__.s__(nameExt)
+    dir = __.pa__.dirname(pa__)
     splt = name.split('_')
     nameNum = '01'
-    if len(splt) > 1:
+    __ le.(splt) > 1:
         num = splt[-1]
-        if num.isdigit():
+        __ num.isdigit
             nameNum = int(num) + 1
-            nzero = len(num)
-            if nzero < 2: nzero = 2
-            if nzero > len(str(nameNum)):
+            nzero = le.(num)
+            __ nzero < 2: nzero = 2
+            __ nzero > le.(str(nameNum)):
                 nameNum = str(nameNum).zfill(nzero)
             nName = '_'.join(splt[:-1]) + '_' + nameNum
         else:
@@ -20,13 +20,13 @@ def incNamePath(path):
     else:
         nName = name + '_' + str(nameNum)
     result = '/'.join([dir,nName+ext])
-    return result
+    r_ result
     
 
-map( lambda x: x['reload'].execute(), nuke.allNodes('Read'))
+map( lambda x: x['reload'].execute(), ?.allNodes('Read'))
 
-for r in nuke.allNodes('Read'):
+___ r __ ?.allNodes('Read'):
     f = incNamePath(r['file'].getValue())
-    w = nuke.nodes.Write(inputs=[r], file=f)
+    w = ?.nodes.Write(inputs=[r], file=f)
 #    w['Render'].execute()
-    nuke.execute(w, 1, 1)
+    ?.execute(w, 1, 1)

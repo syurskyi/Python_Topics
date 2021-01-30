@@ -393,7 +393,7 @@ c_ colorPickerClass(?W..):
     ___ addPicker
         __ picker:
             picker.setParent(N..)
-        __ rb1.isChecked():
+        __ rb1.isChecked
             picker _ colorWheelClass()
         ____
             picker _ colorRampClass()

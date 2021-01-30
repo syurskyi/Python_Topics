@@ -1,11 +1,11 @@
 ______ ?, n_s_
 
-___ clearSelection():
+___ clearSelection
     ?.selectAll()
     ?.invertSelection() 
 
 
-___ callInputs():
+___ callInputs
     selNodes _ ?.sN..
     
     clearSelection()
@@ -62,7 +62,7 @@ ___ callInputs():
         sep _ ?.T_K..('separator', 'List of Nodes:', '')
         
         tm _ ?.T_K..('listOfNodes', '', lon)
-        tm.sF..(?.IN..)
+        tm.sF..(?.__..)
 
         bckdrp.aK..(sel)
         bckdrp.aK..(dis)
@@ -271,7 +271,7 @@ ___ deleteNode(bckdrp, node):
 
     lon _ listOfNodes(bckdrp)
     __ node __ lon:
-        lon.remove(node)
+        lon.r__(node)
         s _ ','.j..(lon)
         bckdrp['listOfNodes'].sV..(s)
         colorize(bckdrp)
@@ -293,7 +293,7 @@ ___ clearNodesButtons(bckdrp):
                 p..
                 
                 
-___ resetPanelView():
+___ resetPanelView
     p _ ?.tN..('preferences')
     p['maxPanels'].sV..(1)
     

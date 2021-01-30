@@ -29,15 +29,15 @@ Usage:
 
 """
 
-# Import built-in modules
+# _____ built-in modules
 ______ j___
 ______ __
 
-# Import local modules
+# _____ local modules
 ____ smartScripter.constants ______ DEFAULT_SETTINGS
 
 
-___ l..():
+___ l..
     """Load settings from Settings instance.
 
     Returns:
@@ -64,15 +64,15 @@ ___ save(data):
     r_ data
 
 
-___ get_settings_file():
+___ get_settings_file
     """Get the absolute path of the scripter settings file.
 
     Returns:
         str: Absolute path of the scripter settings file.
 
     """
-    ____ smartScripter ______ helper
-    r_ __.pa__.j..(helper.get_tool_root("private"), "settings.json")
+    ____ smartScripter ______ h__
+    r_ __.pa__.j..(h__.get_tool_root("private"), "settings.json")
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -98,7 +98,7 @@ c_ Settings(object):
         r_ j___.dumps(data)
 
     @staticmethod
-    ___ _check_settings_file():
+    ___ _check_settings_file
         """Check if the settings file exists and create it if not existing.
 
         Add key-value pairs from constants in case they don't exist.
@@ -107,8 +107,8 @@ c_ Settings(object):
             str: Absolute path of the settings file.
 
         """
-        ____ smartScripter ______ helper
-        settings_dir _ helper.get_tool_root("private")
+        ____ smartScripter ______ h__
+        settings_dir _ h__.get_tool_root("private")
         __ no. __.pa__.isd..(settings_dir):
             __.m_d_(settings_dir)
 

@@ -1,6 +1,6 @@
-import nuke
-import PySide.QtGui
-import os
+_____ ?
+_____ PySide.QtGui
+_____ __
 
 
 
@@ -20,18 +20,18 @@ show_notification = True
 play_sound = True
 
 # sound_file: path of sound file
-sound_file = "{}/01.wav".format(os.path.dirname(__file__))
+sound_file = "{}/01.wav".f..(__.pa__.dirname(__file__))
 
 ################################################################################
 
 
-def notify_user():
+___ notify_user
     """
     play a sound and show a notification when render is finished
     :return: None
     """
 
-    if play_sound:
+    __ play_sound:
         PySide.QtGui.QSound.play(sound_file)
-    if show_notification:
-        nuke.message("Finished rendering")
+    __ show_notification:
+        ?.m__("Finished rendering")

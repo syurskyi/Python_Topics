@@ -53,7 +53,7 @@ ___ openFolder(pa__):
     ____ ___.pl.. __ 'windows':
         subprocess.check_call(['explorer', pa__])
 
-___ help():
+___ help
     '''
     goto web
     '''

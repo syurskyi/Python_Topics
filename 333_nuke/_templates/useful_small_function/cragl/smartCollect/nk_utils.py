@@ -1,11 +1,11 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/nk_utils.py
 ______ __
 ______ pl..
-____ smartCollect.src ______ helper
+____ smartCollect.src ______ h__
 ____ smartCollect.src ______ templates
 ____ smartCollect.src ______ autosearch
 
-___ is_nuke():
+___ is_nuke
     ___
         ______ ?
         r_ T..
@@ -15,16 +15,16 @@ ___ is_nuke():
 
 ___ get_nuke_exe(startup_feedback _ F..):
     executable _ ''
-    debug _ helper.load_settings()['logging_level'] __ '1'
+    debug _ h__.load_settings()['logging_level'] __ '1'
     __ no. startup_feedback:
         debug _ F..
-    __ is_nuke():
+    __ is_nuke
         ______ ?
         r_ ?.env['ExecutablePath']
     ____
         __ debug:
             print '\nsmartCollect running standalone.\n'
-        nuke_exe_fixed _ helper.load_settings()['nuke_exe_fixed']
+        nuke_exe_fixed _ h__.load_settings()['nuke_exe_fixed']
         __ nuke_exe_fixed:
             nuke_exe_fixed _ nuke_exe_fixed.strip()
             executable _ nuke_exe_fixed
@@ -50,12 +50,12 @@ ___ get_nuke_exe(startup_feedback _ F..):
                     break
 
         __ no. executable:
-            private_tool_root _ helper.get_tool_private_root()
+            private_tool_root _ h__.get_tool_private_root()
             settings_path _ __.pa__.j..(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.f..(settings_path)
         r_ executable
 
 
-___ get_nukescript_path():
+___ get_nukescript_path
     ______ ?
     r_ ?.r.. .n..

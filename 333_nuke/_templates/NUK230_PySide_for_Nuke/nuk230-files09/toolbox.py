@@ -1,14 +1,14 @@
-from PySide2.QtGui import *
-from PySide2.QtCore import *
-from PySide2.QtWidgets import *
-import os
-import json
+from PySide2.QtGui _____ *
+from PySide2.QtCore _____ *
+from PySide2.QtWidgets _____ *
+_____ __
+_____ json
 
-HOME_FOLDER = os.path.join(os.path.dirname(__file__), 'icons')
+HOME_FOLDER = __.pa__.join(__.pa__.dirname(__file__), 'icons')
 
 
 class Panel(QWidget):
-    def __init__(self):
+    ___ __init__(self):
         super(Panel, self).__init__()
         self.resize(400, 400)
         mouse_position = QCursor().pos()
@@ -33,21 +33,21 @@ class Panel(QWidget):
 
         self.setLayout(self.layout)
 
-        action_path = os.path.join(HOME_FOLDER, "actions")
-        if not os.path.exists(action_path):
-            os.makedirs(action_path)
+        action_path = __.pa__.join(HOME_FOLDER, "actions")
+        __ no. __.pa__.exists(action_path):
+            __.m_d_(action_path)
 
-    def keyReleaseEvent(self, event):
-        if event.isAutoRepeat():
-            return
-        if event.text() == "n":
-            if self.selected_item is None:
+    ___ keyReleaseEvent(self, event):
+        __ event.isAutoRepeat
+            r_
+        __ event.text() == "n":
+            __ self.selected_item is None:
                 self.close()
-                return
+                r_
             exec self.selected_item.code
             self.close()
 
-    def paintEvent(self, QPaintEvent):
+    ___ paintEvent(self, QPaintEvent):
         super(Panel, self).paintEvent(QPaintEvent)
         painter = QPainter(self)
 
@@ -57,17 +57,17 @@ class Panel(QWidget):
         nuke_image = QPixmap("%s/nuke.png" % HOME_FOLDER)
         painter.drawPixmap(QPoint(self.width()/2-24, self.height()/2-24), nuke_image)
 
-    def set_label_color(self):
-        widgets = [self.layout.itemAt(i).widget() for i in range(self.layout.count())]
+    ___ set_label_color(self):
+        widgets = [self.layout.itemAt(i).widget() ___ i __ range(self.layout.count())]
         self.selected_item = None
-        for w in widgets:
-            if self.line.intersected(w.geometry()):
+        ___ w __ widgets:
+            __ self.line.intersected(w.geometry()):
                 w.set_selected(True)
                 self.selected_item = w
             else:
                 w.set_selected(False)
 
-    def draw_line(self,painter):
+    ___ draw_line(self,painter):
         pen = QPen(QColor(0,0,0))
         pen.setWidth(2)
         painter.setPen(pen)
@@ -76,21 +76,21 @@ class Panel(QWidget):
         self.line = QPolygon([center, center+QPoint(1, 0), destination, destination+QPoint(-1, 0)])
         painter.drawPolygon(self.line)
 
-    def mouseMoveEvent(self, event):
+    ___ mouseMoveEvent(self, event):
         self.mouse_destination = event.pos()
         self.update()
 
-    def keyPressEvent(self, event):
-        if event.isAutoRepeat():
-            return
+    ___ keyPressEvent(self, event):
+        __ event.isAutoRepeat
+            r_
 
 
 class Dialog(QDialog):
-    def __init__(self, id):
+    ___ __init__(self, id):
         super(Dialog, self).__init__()
 
         self.id = id
-        self.action_path = os.path.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
+        self.action_path = __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
         name_label = QLabel("Name:")
         self.name_line_edit = QLineEdit()
         self.code_plain_text = QPlainTextEdit()
@@ -112,24 +112,24 @@ class Dialog(QDialog):
         self.setLayout(master_layout)
         self.load_action()
 
-    def load_action(self):
-        if os.path.exists(self.action_path):
+    ___ load_action(self):
+        __ __.pa__.exists(self.action_path):
             doc = json.load(open(self.action_path))
             name = doc['name']
             code = doc['code']
             self.name_line_edit.setText(name)
             self.code_plain_text.setPlainText(code)
 
-    def save_action(self):
+    ___ save_action(self):
         doc = dict()
         doc['name'] = self.name_line_edit.text()
         doc['code'] = self.code_plain_text.toPlainText()
-        path = open(self.action_path, "w")
-        json.dump(doc, path)
+        pa__ = open(self.action_path, "w")
+        json.dump(doc, pa__)
 
 
 class ActionLabel(QLabel):
-    def __init__(self, id):
+    ___ __init__(self, id):
         super(ActionLabel, self).__init__()
 
         self.id = id
@@ -141,11 +141,11 @@ class ActionLabel(QLabel):
                             color:black""")
         self.set_action()
 
-    def set_action(self):
+    ___ set_action(self):
 
-        path = os.path.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
-        if os.path.exists(path):
-            doc = json.load(open(path))
+        pa__ = __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
+        __ __.pa__.exists(pa__):
+            doc = json.load(open(pa__))
             name = doc['name']
             code = doc['code']
         else:
@@ -155,21 +155,21 @@ class ActionLabel(QLabel):
         self.setText(name)
         self.code = code
 
-    def mousePressEvent(self, event):
-        if event.buttons() == Qt.RightButton:
+    ___ mousePressEvent(self, event):
+        __ event.buttons() == Qt.RightButton:
             dialog = Dialog(self.id)
-            if dialog.exec_():
+            __ dialog.exec_
                 dialog.save_action()
             self.parent().close()
 
-    def set_selected(self, is_selected):
+    ___ set_selected(self, is_selected):
 
-        if is_selected:
+        __ is_selected:
                 self.setStyleSheet("""background:green;
                             color:black""")
         else:
             self.setStyleSheet("""background:red;
                             color:black""")
-def start():
+___ start
     start.panel = Panel()
     start.panel.show()

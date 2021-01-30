@@ -1,4 +1,4 @@
-import nuke
-import readWrite
+_____ ?
+_____ readWrite
 
-nuke.menu("Nuke").addCommand("utilities/create read from write", "readWrite.create_read_from_write()", "alt+j")
+?.m__("Nuke").aC..("utilities/create read from write", "readWrite.create_read_from_write()", "alt+j")

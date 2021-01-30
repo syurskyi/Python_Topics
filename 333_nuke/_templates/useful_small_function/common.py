@@ -23,19 +23,19 @@
 
 # Finds node of certain class in the input pipe upstream and if there is a knob
 # specified returns its value
-import ?
-import re
-import __
+_____ ?
+_____ re
+_____ __
 
 ___ topInput(node,input,ch_class,knob,ch_frame):
-    if node:
+    __ node:
         input_node=node.input(input)
-        if input_node:
-            if input_node.Class() == ch_class :
-                if input_node.knob(knob):
+        __ input_node:
+            __ input_node.Class() == ch_class :
+                __ input_node.knob(knob):
                     r_ input_node[knob].getValueAt(ch_frame)
             else:
-                if input_node.Class()=='JoinViews':
+                __ input_node.Class()=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -49,14 +49,14 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
 # specified returns its object
 
 ___ topInputKnob(node,ch_class,knob,input=0):
-    if node:
+    __ node:
         input_node=node.input(input)
-        if input_node:
-            if nodeClass(input_node) == ch_class :
-                if input_node.knob(knob):
+        __ input_node:
+            __ nodeClass(input_node) == ch_class :
+                __ input_node.knob(knob):
                     r_ input_node[knob]
             else:
-                if nodeClass(input_node)=='JoinViews':
+                __ nodeClass(input_node)=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -70,13 +70,13 @@ ___ topInputKnob(node,ch_class,knob,input=0):
 # returns node onject
 
 ___ topInputNode(node,ch_class,input=0):
-    if node:
+    __ node:
         input_node=node.input(input)
-        if input_node:
-            if nodeClass(input_node) == ch_class :
+        __ input_node:
+            __ nodeClass(input_node) == ch_class :
                 r_ input_node
             else:
-                if nodeClass(input_node)=='JoinViews':
+                __ nodeClass(input_node)=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -95,13 +95,13 @@ ___ topInputNode(node,ch_class,input=0):
 # this function is workaroud to make sure returned value is always a list or 0
 
 ___ ensureMatrix(v.. ):
-    if (type(v.. ) is list):
+    __ (type(v.. ) is list):
         r_ v..
     else:
         r_ [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
 ___ ensureFloat(v.. ):
-    if (type(v.. ) is float):
+    __ (type(v.. ) is float):
         r_ v..
     else:
         r_ 0
@@ -113,15 +113,15 @@ ___ ensureFloat(v.. ):
 #
 
 ___ getKnobViews(knob):
-    if knob:
+    __ knob:
         s=knob.toScript()
         pt=re.compile('\w+\s\{')
         ss=re.findall(pt,s)
         result =[]
         ___ i __ ss:
 #            ss=i.lstrip(' ').split(' ')[0]
-            if i:
-                if not(i __ result):
+            __ i:
+                __ no.(i __ result):
                     result.ap..(i[0:-2])
         r_ result
 
@@ -134,8 +134,8 @@ ___ getKnobViews(knob):
 #
 
 ___ nodeClass(node):
-    if node:
-        if ( 'nodeClass' __ node.knobs().keys() ) :
+    __ node:
+        __ ( 'nodeClass' __ node.knobs().keys() ) :
             r_ node['nodeClass'].v.. ()
         else:
             r_ node.Class()
@@ -150,13 +150,13 @@ ___ nodeClass(node):
 #
 
 ___ animCurveMinMax(curve):
-    try:
+    ___
         minX,minY=1000000000000,1000000000000
         maxX,maxY=-100000000000,-1000000000000
-        ___ i __ curve.keys():
-            if i.y<minY:
+        ___ i __ curve.keys
+            __ i.y<minY:
                 minX,minY=i.x,i.y
-            if i.y>maxY:
+            __ i.y>maxY:
                 maxX,maxY=i.x,i.y
         r_ minX,minY,maxX,maxY
 
@@ -197,17 +197,17 @@ ___ getHelpUrl(node=None):
     mySite='www.chimuru.com'
 
     # Check if there is override for default value
-    if __.getenv('TK_HELP_URL'):
+    __ __.getenv('TK_HELP_URL'):
         mySite=__.getenv('TK_HELP_URL')
 
-    if node:
+    __ node:
         # Reading os environment variable to find file with help urls
-        if __.getenv('TK_HELP_FILE'):
+        __ __.getenv('TK_HELP_FILE'):
             helpFile=__.getenv('TK_HELP_FILE')
 
             # opening help Settings file to read settings
             settings=[]
-            if __.path.isfile( helpFile ):
+            __ __.pa__.isfile( helpFile ):
                 prefFile = open(helpFile,"r")
                 prefContent = prefFile.readlines()
                 prefFile.close()
@@ -221,7 +221,7 @@ ___ getHelpUrl(node=None):
             # Look through list of values from settings to see if there a url for that node
             url=mySite
             ___ key,v..  __ settings:
-                if ndClass==key:
+                __ ndClass==key:
                     url=v..
 
         # if help settings file is not defined return my site            
@@ -243,7 +243,7 @@ ___ getHelpUrl(node=None):
 ___ emptyInput(node,start_input=0):
     inputs=node.inputs()
     ___ input __ range(start_input,inputs):
-        if node.input(input)==None:
+        __ node.input(input)==None:
             r_ input
     r_ None
 
@@ -256,7 +256,7 @@ ___ emptyInput(node,start_input=0):
 ___ nonEmptyInput(node,start_input=0):
     inputs=node.inputs()
     ___ input __ range(start_input,inputs):
-        if node.input(input)!=None:
+        __ node.input(input)!=None:
             r_ input
     r_ None
 
@@ -271,9 +271,9 @@ ___ shiftConnections(node,start=0):
     inputs=node.inputs()
     ___ input __ range(start,inputs):
         node.setInput(input, node.input(input+1))
-    if emptyInput(node)==start:
+    __ emptyInput(node)==start:
             shiftConnections(node, start)
-    if emptyInput(node):
+    __ emptyInput(node):
          shiftConnections(node, emptyInput(node))
     r_ node
 
@@ -284,11 +284,11 @@ ___ shiftConnections(node,start=0):
 #
 ___ where(filename):
     file_list=[]
-    ___ path __ ?.pluginPath():
-        check_file='%s%s%s' % (path, __.sep, filename)
-        if __.path.isfile( check_file ):
+    ___ pa__ __ ?.pluginPath
+        check_file='%s%s%s' % (pa__, __.sep, filename)
+        __ __.pa__.isfile( check_file ):
             file_list.ap..(check_file)
-    if file_list:
+    __ file_list:
         file_list.reverse()
 
     r_ file_list
