@@ -1,12 +1,12 @@
-_____ ?
-
-s = 'c:/temp/script.nk'
-?.scriptSaveAs(s)
-?.scriptClear()
-?.scriptOpen(s)
-?.scriptReadFile(s)
-?.scriptSource(s)
-?.scriptReadText()
-
-?.script_directory()
-?.scriptSaveandClear(s,F..)
+# _____ ?
+#
+# s = 'c:/temp/script.nk'
+# ?.sSA. ?
+# ?.sC..
+# ?.sO.. ?
+# ?.sRF.. ?
+# ?.sS.. ?
+# ?.sRT..
+#
+# ?.s_d..
+# ?.sSC.. ? F..

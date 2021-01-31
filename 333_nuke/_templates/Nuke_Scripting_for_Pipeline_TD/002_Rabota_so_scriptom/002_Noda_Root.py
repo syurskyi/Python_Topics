@@ -1,16 +1,16 @@
-_____ ?
-
-?.tN..('root')
-?.r__ 
-root = ?.r__ 
-root['fps'].sV..(30)
-root['first_frame'].sV..(10)
-root['last_frame'].sV..(200)
-
-root.n..
-
-root.modified()
-
-root.firstFrame()
-root.fps()
-root.addView('left')
+# _____ ?
+#
+# ?.tN.. *root
+# ?.r__
+# root _ ?.r__
+# ? *fps .sV.. 30
+# ? *f_f.. .sV.. 10
+# ? *l_f_ .sV.. 200
+#
+# ?.n..
+#
+# ?.mo..
+#
+# ?.fF..
+# ?.f..
+# ?.aV.. *le..
