@@ -270,7 +270,7 @@ ___ deletePreferences(clicked = False):
     Delete all the W_backdropper related items from the properties panel.
     '''
 
-    firstLaunch = True
+    firstLaunch = T..
 
     ___ knobName __ preferencesNode.knobs().keys
         __ knobName.startswith('backdropper'):
@@ -321,7 +321,7 @@ ___ updatePreferences(forceUpdate = False):
 
     # always update if beta version
     __ 'b' __ version:
-        forceUpdate = True
+        forceUpdate = T..
 
     #check if current version differs from the previously loaded version.
     __ 'backdropperVersion' __ allKnobs and no. forceUpdate:
@@ -747,7 +747,7 @@ ___ colorizeNodes(all = False):
         panel = ?.Panel('W_backdropper - Colorize %s nodes'%['selected', 'all'][in_(all)])
 
         ___ nodeClass __ nodeClasses:
-            panel.addBooleanCheckBox(nodeClass, True)
+            panel.addBooleanCheckBox(nodeClass, T..)
 
         __ panel.show
 
@@ -794,7 +794,7 @@ ___ init
 
     ___ nodeClass __ nodeClasses:
         m__.aC..('Colorize selected nodes', colorizeNodes)
-        m__.aC..('Colorize all nodes', lambda : colorizeNodes(True))
+        m__.aC..('Colorize all nodes', lambda : colorizeNodes(T..))
 
 #----------------------------------------------------------------------------------------------------------
 

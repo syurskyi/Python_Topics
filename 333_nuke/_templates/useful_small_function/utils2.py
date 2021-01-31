@@ -147,13 +147,13 @@ ___ is_inside_backdrops(node, backdrops=N..):
             edge_left <= node_center_x <= edge_right
             and edge_top <= node_center_y <= edge_bottom
         ):
-            r_ True
+            r_ T..
 
     r_ False
 
 
 ___ get_overlapping_backdrops(
-    position, backdrops=N.., horizontal=True, vertical=False
+    position, backdrops=N.., horizontal=T.., vertical=False
 ):
     """Find backdrops overlapping with given ypos in DAG.
 

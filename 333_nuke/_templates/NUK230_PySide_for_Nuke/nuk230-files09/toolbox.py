@@ -4,7 +4,7 @@ from PySide2.QtWidgets _____ *
 _____ __
 _____ json
 
-HOME_FOLDER = __.pa__.join(__.pa__.dirname(__file__), 'icons')
+HOME_FOLDER = __.pa__.join(__.pa__.d..( -f), 'icons')
 
 
 class Panel(QWidget):

@@ -18,7 +18,7 @@ from comp_utilz _____ decorators
 ___ check_selected
     nodes = ?.selectedNodes()
     __ le.(nodes) > 0:
-        r_ True, nodes[0]
+        r_ T.., nodes[0]
     else:
         r_ False, N..
 
@@ -62,7 +62,7 @@ ___ is_disabled(node):
 
 ___ is_multi_view
     __ le.(?.views()) > 1:
-        r_ True
+        r_ T..
 
 ___ get_root_cut
     first_frame = in_(?.toNode('root')['first_frame'].value())
@@ -127,7 +127,7 @@ ___ copy_root(from_nk, to_nk):
         ?.toNode('root')['name'].sV..(name)
         ?.tprint(to_nk)
         ?.scriptSaveAs(to_nk, 1)
-        r_ True, N..
+        r_ T.., N..
     except Exception, e:
         r_ False, e
 
@@ -342,7 +342,7 @@ ___ path_wildcard(input_string):
     :return: path with wildcards expanded to first valid result
     """
     evaluated_string = ?.tcl('set wildcard_results ' + input_string)
-    directory = __.pa__.dirname(evaluated_string)
+    directory = __.pa__.d..(evaluated_string)
     glob_results = glob.glob(directory)
 
     __ glob_results:

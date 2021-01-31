@@ -4,10 +4,10 @@ addNodesBeforeComped = {"paint":"ColorCorrect:", "diffuse":"Unpremult:|Grade:|Pr
 addNodesAfterComped = {"depth":"ZBlur:"}
 notCompNodes = {"paint":"rotopaint:carpaint"}
 createNotFoundChannels = False
-autoAlignReaders = True
-createNoOpNode = True
-createDotNode = True
-showDotLabel = True
+autoAlignReaders = T..
+createNoOpNode = T..
+createDotNode = T..
+showDotLabel = T..
 noOpTileColor = 0x9b00ff
 nodeXOffset = 180
 nodeYOffset = 150
@@ -17,7 +17,7 @@ _____ ?
 ___ getParentNode(layer, compNodes, mergeLayer):
 	iteration = 0
 	parentNode = layer
-	while True:
+	while T..:
 		parentNode = compNodes[parentNode]
 		__ parentNode __ mergeLayer:
 			break
@@ -115,7 +115,7 @@ ___ autoComper
 			yPosMin = allLayers[layer]['ypos'].gV..()
 	
 		___ compChannel __ compNodes:
-			compThis = True
+			compThis = T..
 			__ layerLower.find(compChannel, 0, le.(layerLower)) > -1:
 				__ compChannel __ notCompNodes:
 					notNodes = notCompNodes[compChannel].split(':')
@@ -124,12 +124,12 @@ ___ autoComper
 							compThis = False 
 							break
 		
-				__ compThis __ True:
+				__ compThis __ T..:
 					mergeLayer.update({compChannel:layer})
 					mergeLayerInv.update({layer:compChannel})
 					layerHasReader.update({layer:''}) 
 	
-	__ createNotFoundChannels __ True:
+	__ createNotFoundChannels __ T..:
 		___ node __ nodesOrdered:
 			__ node no. __ allLayers:
 				__ node no. __ mergeLayer:
@@ -153,7 +153,7 @@ ___ autoComper
 		__ layer __ mergeLayerInv:
 			layer = mergeLayerInv[layer]
 			
-		__ le.(allSelectedNodes) > 1 and autoAlignReaders __ True:
+		__ le.(allSelectedNodes) > 1 and autoAlignReaders __ T..:
 			__ layerOriginal __ allLayers:
 				allLayers[layerOriginal].setXYpos(in_(nodeNumber*nodeXOffset+xPosMin), in_(yPosMin))
 		
@@ -212,7 +212,7 @@ ___ autoComper
 	
 				exec(layer + "Node = thisNode")
 				
-				__ mergeCount > 0 and createDotNode __ True:
+				__ mergeCount > 0 and createDotNode __ T..:
 					#Create Dot-Nodes
 					dot = ?.nodes.Dot(note_font_size=20)
 					__ showDotLabel:

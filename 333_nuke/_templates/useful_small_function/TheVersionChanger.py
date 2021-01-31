@@ -12,7 +12,7 @@ ___ SplitDir(fileknob):
     FileName = __.pa__.b__(fileknob)
 
          
-    Dir = __.pa__.dirname(fileknob)
+    Dir = __.pa__.d..(fileknob)
                     
                     
     DirUp = __.pa__.s..(Dir)
@@ -34,7 +34,7 @@ ___ SplitDirUp(fileknob):
     FileName = __.pa__.b__(fileknob)
     
          
-    Dir = __.pa__.dirname(fileknob)
+    Dir = __.pa__.d..(fileknob)
     
                     
     DirUp = __.pa__.s..(Dir)[0]
@@ -75,7 +75,7 @@ ___ ListVersions(fileknob):
     FileBase = FileName.s..(FindVersion(SplitDir(fileknob)))[0]
 
  
-    Dir = __.pa__.dirname(fileknob)
+    Dir = __.pa__.d..(fileknob)
 
 
     DirUp = __.pa__.s..(Dir)[0]
@@ -121,7 +121,7 @@ ___ ListVersionsFiles(fileknob):
     FileBase = FileName.s..(FindVersion(FileName))[0]
 
  
-    Dir = __.pa__.dirname(fileknob)
+    Dir = __.pa__.d..(fileknob)
 
 
     Names = [name ___ name __ __.l_d_(Dir) __ FileBase __ name]
@@ -258,7 +258,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
                     
                     FileName = __.pa__.b__(fileknob)
          
-                    Dir = __.pa__.dirname(fileknob)
+                    Dir = __.pa__.d..(fileknob)
                    
                     version = FindVersion(FileName)
                      
@@ -420,7 +420,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                     FileName = __.pa__.b__(fileknob)
 
          
-                    Dir = __.pa__.dirname(fileknob)
+                    Dir = __.pa__.d..(fileknob)
 
                    
                     version = FindVersion(FileName)
@@ -574,7 +574,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                     FileName = __.pa__.b__(fileknob)
 
          
-                    Dir = __.pa__.dirname(fileknob)
+                    Dir = __.pa__.d..(fileknob)
 
                    
                     version = FindVersion(FileName)
@@ -640,7 +640,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
                     FileName = __.pa__.b__(fileknob)
 
 
-                    Dir = __.pa__.dirname(fileknob)
+                    Dir = __.pa__.d..(fileknob)
                     
                     
                     DirLast = __.pa__.s..(Dir)[1]
@@ -709,7 +709,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
                     fileknob = node[n].v.. ()
                     
 
-                    Dir = __.pa__.dirname(fileknob)
+                    Dir = __.pa__.d..(fileknob)
                     
                     
                     DirLast = __.pa__.s..(Dir)[1]
@@ -1718,11 +1718,11 @@ clears all messages
 
                     __ i no. __ ?.aN..
 
-                        checkMissing = True
+                        checkMissing = T..
                         
                     __ i __ ?.aN..
 
-                        check = True
+                        check = T..
         
                 __ check and no. checkMissing:
 

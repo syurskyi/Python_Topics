@@ -1,7 +1,7 @@
 _____ __, sys
 _____ ?
 
-root = __.pa__.dirname(__file__)
+root = __.pa__.d..( -f)
 print(root)
 
 # plugins

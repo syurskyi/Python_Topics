@@ -13,7 +13,7 @@ ___ fixRead
             __ no. searchFolder:
                 searchFolder = ?.getFilename('Select Folder')
                 __ __.pa__.isfile(searchFolder):
-                    searchFolder = __.pa__.dirname(searchFolder)
+                    searchFolder = __.pa__.d..(searchFolder)
             __ searchFolder:
                 ___ pa__, dirs, files __ __.walk(searchFolder):
                     __ filename __ files:

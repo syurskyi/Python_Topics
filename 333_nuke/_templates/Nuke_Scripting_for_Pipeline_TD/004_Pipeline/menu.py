@@ -1,12 +1,12 @@
 _____ __, sys
 _____ ?
 
-root = __.pa__.dirname(__file__)
+root = __.pa__.d..( -f)
 ?.tprint(root)
 
 gizmos = __.pa__.join(root, 'icons')
 print(gizmos)
-?.pluginAddPath(gizmos, addToSysPath=True)
+?.pluginAddPath(gizmos, addToSysPath=T..)
 
 
 _____ multi_script_editor

@@ -2,7 +2,7 @@ _____ ?
 
 # int('%02x%02x%02x%02x' % (255,0,0,255),16)
 
-___ hexColor(r,g,b, double=True):
+___ hexColor(r,g,b, double=T..):
     m = 255
     __ no. double:
         m = 1

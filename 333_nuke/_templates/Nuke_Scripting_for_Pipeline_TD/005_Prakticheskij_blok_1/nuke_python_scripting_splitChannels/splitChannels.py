@@ -12,8 +12,8 @@ ___ split
             ___ ch __ chan:
                 sh = ?.nodes.Shuffle(name=ch,
                                         inputs=[node],
-                                        postage_stamp=True,
-                                        hide_input=True)
+                                        postage_stamp=T..,
+                                        hide_input=T..)
                 sh['in'].sV..(ch)
                 shs.a__(sh)
 

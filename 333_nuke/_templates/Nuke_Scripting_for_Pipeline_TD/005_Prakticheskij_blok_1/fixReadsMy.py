@@ -14,7 +14,7 @@ ___ fixReadError
         missingRead = ""
         ___ i __ ?.aN..
             __ i.C.. __'Read':
-                __ i.error() __ True:
+                __ i.error() __ T..:
                     oldpath = i['file'].value()
                     oldname = __.pa__.b__(oldpath)
                     fileExt = oldname[-3:]

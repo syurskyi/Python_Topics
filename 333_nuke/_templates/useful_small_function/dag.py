@@ -11,7 +11,7 @@ grid = (in_(?.tN..('preferences').knob('GridWidth').v.. ()), in_(?.tN..('prefere
 ___ unselect(nodes=N..):
     # Unselect nodes
     __ no. nodes:
-        nodes = ?.aN..(recurseGroups=True)
+        nodes = ?.aN..(recurseGroups=T..)
     __ no. isinstance(nodes, list):
         r_
     _ = [n.sS.. F.. ___ n __ nodes]
@@ -86,7 +86,7 @@ ___ open_panels(nodes=N..):
 ___ close_panels(nodes=N..):
     # Close all properties panels
     __ no. nodes:
-        nodes = ?.aN..(recurseGroups=True)
+        nodes = ?.aN..(recurseGroups=T..)
     ___ node __ nodes:
         node.hideControlPanel()
 
@@ -385,12 +385,12 @@ ___ upstream(node, max_depth=-1, deps=set(# list)):
     r_ deps
 
 
-___ connected(nodes, upstream=True, downstream=True):
+___ connected(nodes, upstream=T.., downstream=T..):
     # return all upstream and/or downstream nodes of node
     # based on nuke.overrides.selectConnectedNodes()
     all_deps = set()
     deps_list = nodes
-    evaluate_all = True
+    evaluate_all = T..
     w__ deps_list:
         deps = # list
         __ upstream:
@@ -403,26 +403,26 @@ ___ connected(nodes, upstream=True, downstream=True):
 
 ___ select_upstream(nodes):
     # Select all upstream dependencies of node
-    deps = [n ___ n __ connected(nodes, upstream=True, downstream=False)]
+    deps = [n ___ n __ connected(nodes, upstream=T.., downstream=False)]
     select(deps)
     r_ deps
 
 ___ select_downstream(nodes):
     # Select all downstream dependencies of node
-    deps = [n ___ n __ connected(nodes, upstream=False, downstream=True)]
+    deps = [n ___ n __ connected(nodes, upstream=False, downstream=T..)]
     select(deps)
     r_ deps
 
 ___ select_connected(nodes):
     # Select all nodes connected to node
-    deps = [n ___ n __ connected(nodes, upstream=True, downstream=True)]
+    deps = [n ___ n __ connected(nodes, upstream=T.., downstream=T..)]
     select(deps)
     r_ deps
 
 ___ select_unused(nodes):
     # select all nodes that are not upstream or downstream of :param: nodes
     # Backdrops and dot nodes with a label are omitted.
-    connected_nodes = [n ___ n __ connected(nodes, upstream=True, downstream=True)]
+    connected_nodes = [n ___ n __ connected(nodes, upstream=T.., downstream=T..)]
     unused_nodes = [n ___ n __ ?.aN..() __ n no. __ connected_nodes and n.C..  != 'BackdropNode' and no. (n.C..  __ 'Dot' and n['label'].gV..())]
     unselect()
     select(unused_nodes)
@@ -503,7 +503,7 @@ ___ hlink_copy
 
 ___ hlink_cut
     hlink_copy()
-    n_s_.node_delete(popupOnError=True)
+    n_s_.node_delete(popupOnError=T..)
 
 ___ hlink_paste
     ?.nodePaste('%clipboard%')
@@ -552,7 +552,7 @@ ___ create_pointer
         r_
 
     ___ target __ nodes:
-        upstream = [n ___ n __ connected(nodes, upstream=True, downstream=False)]
+        upstream = [n ___ n __ connected(nodes, upstream=T.., downstream=False)]
 
         __ le.(upstream) > 5:
             __ no. ?.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
@@ -705,10 +705,10 @@ ___ read_from_write
         d_n_ = __.pa__.d_n_(filepath)
         filename = __.pa__.b_n_(filepath)
         __ '#' __ filename:
-            is_sequence = True
+            is_sequence = T..
             filename_base = filename.s..('#')[0]
         ____ r'%' __ filename:
-            is_sequence = True
+            is_sequence = T..
             filename_base = filename.s..(r'%')[0]
         ____
             is_sequence = False

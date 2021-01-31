@@ -1,4 +1,4 @@
-_____ ?
-_____ renderFinished
-
-?.addAfterRender(renderFinished.notify_user)
+# _____ ?
+# _____ renderFinished
+#
+# ?.aAR.. rF__.n_u..

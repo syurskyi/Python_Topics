@@ -353,7 +353,7 @@ ___ giveLabel(n, knobName):
 
 
 # cycle node (forwards or backwards)
-___ CycleOperations(forwards = True):
+___ CycleOperations(forwards = T..):
 
 	# call function with cycle for each node
 	___ i __ ?.sN.. :

@@ -3,7 +3,7 @@ _____ __
 ___ incNamePath(pa__):
     nameExt = __.pa__.b__(pa__)
     name, ext = __.pa__.s__(nameExt)
-    dir = __.pa__.dirname(pa__)
+    dir = __.pa__.d..(pa__)
     splt = name.split('_')
     nameNum = '01'
     __ le.(splt) > 1:
