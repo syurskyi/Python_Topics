@@ -211,12 +211,12 @@ ___ refreshToolsetsMenu
     createToolsetsMenu(toolbar)
 
 ___ createToolsetsMenu(toolbar):
-  m _ toolbar.addMenu(name _ "SharedToolSets", icon _ "SharedToolSets.png")
+  m _ toolbar.aM..(name _ "SharedToolSets", icon _ "SharedToolSets.png")
   m.aC..("Create", "shared_toolsets.addToolsetsPanel()", "", icon_"SharedToolSets_Create.png")
   m.aC..("-", "", "")
   __ populateToolsetsMenu(m, F..):
     m.aC..("-", "", "")
-    n _ m.addMenu("Modify", "SharedToolSets_Modify.png")
+    n _ m.aM..("Modify", "SharedToolSets_Modify.png")
     populateToolsetsMenu(n, T..)
   m.aC..('Refresh', 'shared_toolsets.refreshToolsetsMenu()', icon _ "SharedToolSets_Refresh.png")
 
@@ -296,7 +296,7 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
           menuName _ "[user] " + menuName
         ____ no. isLocal:
           allToolsetsList.ap..(menuName)
-        n _ m.addMenu(menuName)
+        n _ m.aM..(menuName)
         retval _ createToolsetMenuItems(n, rootPath, "/".j..([fullPath, group]), delete, allToolsetsList, isLocal)
         #COMMENT: if we are deleting, and the sub directory is now empty, delete the directory also
         __ delete and __.l_d_(fullPath)__# list:
@@ -314,7 +314,7 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
         __ extPos !_ -1 and extPos __ le.(group) - 3:
           group _ group.replace('.nk', '')
           __ delete:
-            subM _ m.addMenu(group)
+            subM _ m.aM..(group)
             subM.aC..("Edit", 'nuke.scriptOpen("%s")' % fullFileName, "")
             subM.aC..("Rename", 'shared_toolsets.renameToolset("%s")' % fullFileName, "")
             subM.aC..("-", "", "")

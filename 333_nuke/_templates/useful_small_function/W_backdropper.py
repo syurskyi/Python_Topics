@@ -790,7 +790,7 @@ ___ init
 
     #edit menu items
     m__ _ ?.m__('Nuke').findItem('&Edit/Node')
-    m__ _ m__.addMenu('W_backdropper')
+    m__ _ m__.aM..('W_backdropper')
 
     ___ nodeClass __ nodeClasses:
         m__.aC..('Colorize selected nodes', colorizeNodes)

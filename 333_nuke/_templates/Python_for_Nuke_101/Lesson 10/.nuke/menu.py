@@ -105,7 +105,7 @@ nuke.menu('Nuke').addCommand('Edit/Paste to Selected', 'paste_selected.paste_sel
 
 
 # ----- CREATE UTILITIES MENU & ASSIGN ITEMS -------------------
-utilitiesMenu _ nuke.menu('Nuke').addMenu('Utilities')
+utilitiesMenu _ nuke.menu('Nuke').aM..('Utilities')
 
 utilitiesMenu.addCommand('Autocrop', 'nukescripts.autocrop()')
 utilitiesMenu.addCommand('File Lister', 'filepathLister.file_lister()')
@@ -113,7 +113,7 @@ utilitiesMenu.addCommand('Create Nodes', 'create_nodes.create_nodes()')
 
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_"myGizmos_icon.png")
 
 myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
 myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER_V2")', icon_"MarkerRemoval.png")

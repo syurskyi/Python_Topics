@@ -8,7 +8,7 @@ Add the gizmo to the custom myGizmos menu we created in Lesson 02.
 # At the bottom of your menu.py lies the following code:
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_"myGizmos_icon.png")
 
 myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
 
@@ -16,7 +16,7 @@ myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', i
 # To add NODE_DISABLER, we simply need to copy/paste the second line of code and change a few things, like so:
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_"myGizmos_icon.png")
 
 myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
 myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER")', icon_"MarkerRemoval.png")

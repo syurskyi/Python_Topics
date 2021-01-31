@@ -16,11 +16,11 @@ nuke.addOnUserCreate(l____:nuke.thisNode()['reference_frame'].setValue(nuke.fram
 # ----- ADDING CUSTOM MENUS --------------------------
 
 # Create Utilities menu & assign items
-utilitiesMenu _ nuke.menu('Nuke').addMenu('Utilities')
+utilitiesMenu _ nuke.menu('Nuke').aM..('Utilities')
 utilitiesMenu.addCommand('Autocrop', 'nukescripts.autocrop()')
 
 # Create Custom Gizmos menu. Remember, it won't appear until there's a menu item...
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
 
 
 

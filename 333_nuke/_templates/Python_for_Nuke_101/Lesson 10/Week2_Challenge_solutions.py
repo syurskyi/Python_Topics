@@ -42,10 +42,10 @@ nuke.pAP..('./icons')
 # Also, we no longer need to be so specific about the filepath in our menu.py
 
 # Change this:
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
 
 # into this
-myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').aM..('myGizmos', icon_"myGizmos_icon.png")
 
 
 
