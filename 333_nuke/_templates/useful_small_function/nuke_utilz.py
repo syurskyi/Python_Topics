@@ -134,7 +134,7 @@ ___ copy_root(from_nk, to_nk):
 ___ get_parent(node):
     __ type(node) __ str:
         node = ?.toNode(node)
-    r_ ?.toNode('root.'+'.'.join(node.fullName().split('.')[:-1])) or ?.r__
+    r_ ?.toNode('root.'+'.'.j..(node.fullName().split('.')[:-1])) or ?.r__
 
 # BuildHelper Functions
 
@@ -296,8 +296,8 @@ ___ p2p_symlinks
     dest_base = __.pa__.b__(dest_path)
     parts, eye_token = get_parts_and_eye_index_for_basename(dest_base)
     __ eye_token:
-        base_dir = '.'.join(parts[:eye_token])
-        link_path = __.pa__.join(__.environ.get('SHOTDIR'),
+        base_dir = '.'.j..(parts[:eye_token])
+        link_path = __.pa__.j..(__.environ.get('SHOTDIR'),
                                  __.environ.get('p2ps'), base_dir, dest_base)
     __ no. link_path:
         ?.tprint('***ERROR*** cannot determine path for symlinks')
@@ -309,17 +309,17 @@ ___ p2p_symlinks
     elif '.lt.' __ dest_path:
         source_path = source_path.replace('.lt.', '.rt.')
         dest_path = dest_path.replace('.lt.', '.rt.')
-    __ no. __.pa__.exists(dest_path):
+    __ no. __.pa__.e..(dest_path):
         __.symlink(source_path, dest_path)
     dest_movie = re.sub('\.[0-9]*\.exr', '.mov', dest_path)
     dest_movie = dest_movie.replace('.SRC.', '.RAW.')
-    __ no. __.pa__.exists(dest_movie):
+    __ no. __.pa__.e..(dest_movie):
         parts, eye_index = get_parts_and_eye_index_for_basename(source_path)
         __ eye_index:
             eye_index = eye_index + 1
-            source_movie = '.'.join(parts[:eye_index])
+            source_movie = '.'.j..(parts[:eye_index])
             source_movie += '.RAW.q98.2k.mov'
-            __ __.pa__.exists(source_movie):
+            __ __.pa__.e..(source_movie):
                 __.symlink(source_movie, dest_movie)
 
 ___ set_read_disparity(shot=N.., show=N..):
@@ -346,7 +346,7 @@ ___ path_wildcard(input_string):
     glob_results = glob.glob(directory)
 
     __ glob_results:
-        r_ __.pa__.join(glob_results[0], __.pa__.b__(evaluated_string))
+        r_ __.pa__.j..(glob_results[0], __.pa__.b__(evaluated_string))
     ____
         r_ evaluated_string
 

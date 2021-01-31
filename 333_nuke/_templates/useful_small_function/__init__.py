@@ -199,7 +199,7 @@ ___ is_newer(file1, file2):
     :returns: file1 is newer.
     :rtype: bool
     """ 
-    __ no. __.pa__.exists(file1) or no. __.pa__.exists(file2):
+    __ no. __.pa__.e..(file1) or no. __.pa__.e..(file2):
         r_ False
 
     time1 = __.pa__.getmtime(file1)

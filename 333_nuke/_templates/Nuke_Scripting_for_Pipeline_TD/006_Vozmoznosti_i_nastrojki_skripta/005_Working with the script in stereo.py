@@ -17,7 +17,7 @@ ___ setUpMultiView( views=[ ('left',(0,1,0)), ('right',(1,0,0) ) ] ):
         hexCol = '#%02x%02x%02x' % rgb             #CONVERT INTEGER NUMBERS TO HEX CODE
         curView = '%s %s' % ( name, hexCol )       #COMBINE NAME AND HEX COLOUR TO SCRIPT SYNTAX
         newViews.a__( curView )      # COLLECT ALL REQUESTED VIEWS
-    ?.r__ .knob('views').fromScript( '\n'.join( newViews ) )
+    ?.r__ .knob('views').fromScript( '\n'.j..( newViews ) )
 setUpMultiView()
 
 n = ?.cN..('Transform')

@@ -47,8 +47,8 @@ n = ?.aN..(group=grp)[0]
 n.n..
 n.fullName()
 n.fullName().split('.')[:-1]
-'.'.join(n.fullName().split('.')[:-1])
-?.toNode('.'.join(n.fullName().split('.')[:-1])) or ?.r__ 
+'.'.j..(n.fullName().split('.')[:-1])
+?.toNode('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
 
 ########################################################################################################################
 
@@ -90,7 +90,7 @@ grp.end()
 
 n = ?.aN..(group=grp)[0]
 n = ?.aN..()[0]
-?.toNode('.'.join(n.fullName().split('.')[:-1])) or ?.r__ 
+?.toNode('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
 
 
 

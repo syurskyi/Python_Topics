@@ -43,7 +43,7 @@ c_ Global_clipboard(QDialog):
             repo _ "R:/Global_Clipboard/"
         ____
             repo _ "/Volumes/Resources/Global_Clipboard/"
-            __ __.pa__.exists(repo) __ F..:
+            __ __.pa__.e..(repo) __ F..:
                 repo _ "/Volumes/resources/Global_Clipboard/"
 
         saveName _ "tempClipBoard"
@@ -62,7 +62,7 @@ c_ Global_clipboard(QDialog):
 
     ___ paste
         loadPath _ "{}{}_{}.nk".f..(repo, saveName, edit.text())
-        __ __.pa__.exists(loadPath):
+        __ __.pa__.e..(loadPath):
             ?.nodePaste(loadPath)
             c__
         ____

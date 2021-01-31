@@ -5,12 +5,12 @@ root = __.pa__.d..( -f)
 print(root)
 
 # plugins
-gizmos = __.pa__.join(root, 'gizmos')
+gizmos = __.pa__.j..(root, 'gizmos')
 print(gizmos)
-?.pluginAddPath(gizmos, addToSysPath=False)
+?.pAP..(gizmos, addToSysPath=False)
 
 # python
-py = __.pa__.join(root, 'python')
+py = __.pa__.j..(root, 'python')
 ___.pa__.a__(py)
 print(py)
 

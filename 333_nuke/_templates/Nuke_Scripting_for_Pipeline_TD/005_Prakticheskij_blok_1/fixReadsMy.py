@@ -8,7 +8,7 @@ ___ fixReadError
     basePath = ?.getFilename('Select Dir', " ", type='open')
 
     __ basePath != N..:
-        pa__ = __.pa__.join(basePath)
+        pa__ = __.pa__.j..(basePath)
         ___ pa__, dirs, files __ __.walk(pa__):
             subpath = pa__
         missingRead = ""
@@ -34,7 +34,7 @@ ___ fixReadError
                         newfindname = fileName.replace("%d", "*") and fileName.replace("%06d", "*")
                     findFile = newfindname + "." + fileExt
 
-                    pa__ = __.pa__.join(basePath)
+                    pa__ = __.pa__.j..(basePath)
                     ___ pa__, dirs, files __ __.walk(pa__):
                         subpath = pa__
                         ___ file __ __.l_d_(subpath):

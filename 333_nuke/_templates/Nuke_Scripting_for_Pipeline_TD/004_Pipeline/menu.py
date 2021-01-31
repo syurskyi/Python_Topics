@@ -4,9 +4,9 @@ _____ ?
 root = __.pa__.d..( -f)
 ?.tprint(root)
 
-gizmos = __.pa__.join(root, 'icons')
+gizmos = __.pa__.j..(root, 'icons')
 print(gizmos)
-?.pluginAddPath(gizmos, addToSysPath=T..)
+?.pAP..(gizmos, addToSysPath=T..)
 
 
 _____ multi_script_editor
@@ -26,7 +26,7 @@ fxphd.aC..("Clipboard","clipboardCore.start()")
 nodes = ?.m__("Nodes")
 gizmos = nodes.addMenu('Gizmos', icon='cgninjas.png')
 
-gizPath = __.pa__.join(root, 'gizmos')
+gizPath = __.pa__.j..(root, 'gizmos')
 ___ gizmo __ __.l_d_(gizPath):
     __ __.pa__.s__(gizmo)[-1] __ '.gizmo':
         name = __.pa__.s__(gizmo)[0]

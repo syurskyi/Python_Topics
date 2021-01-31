@@ -14,13 +14,13 @@ r = t['rotate']
 #variant 1
 r.clearAnimated()
 r.setAnimated()
-___ i __ range(300):
+___ i __ ra..(300):
     r.setValueAt(math.sin(i*0.07)*50, i, 0)
 #vriant 2
 r.clearAnimated()
 r.setAnimated()
 c = r.animation(0)
-c.addKey( [?.AnimationKey(i, math.sin(i*0.07)*50) ___ i __ range(300)] )
+c.addKey( [?.AnimationKey(i, math.sin(i*0.07)*50) ___ i __ ra..(300)] )
 
 #change one frame
 c = r.animation(0)

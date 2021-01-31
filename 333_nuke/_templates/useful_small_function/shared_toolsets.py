@@ -123,7 +123,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
       
       filePath = posixpath.j..(fullPath, fileName + '.nk')
       
-      __ no. __.pa__.exists(filePath):
+      __ no. __.pa__.e..(filePath):
         __ rename __ T..:
           __.rename(fullFilePath, filePath)
         ____

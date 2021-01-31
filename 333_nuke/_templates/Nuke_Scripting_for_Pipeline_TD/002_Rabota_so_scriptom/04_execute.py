@@ -14,12 +14,12 @@ ___ incNamePath(pa__):
             __ nzero < 2: nzero = 2
             __ nzero > le.(str(nameNum)):
                 nameNum = str(nameNum).zfill(nzero)
-            nName = '_'.join(splt[:-1]) + '_' + nameNum
+            nName = '_'.j..(splt[:-1]) + '_' + nameNum
         ____
-            nName = '_'.join(splt) + '_' + nameNum
+            nName = '_'.j..(splt) + '_' + nameNum
     ____
         nName = name + '_' + str(nameNum)
-    result = '/'.join([dir,nName+ext])
+    result = '/'.j..([dir,nName+ext])
     r_ result
     
 

@@ -57,7 +57,7 @@ c_ ClipboardCore(ClipboardUi):
         now = datetime.datetime.now()
         script = "%s.nk" % uuid.uuid1()
         ?.nodeCopy("%s/%s" % (SCRIPT_LOCATION, script))
-        ___ i __ range(row_count):
+        ___ i __ ra..(row_count):
             obj = stack_list_widget.item(i).data(32)
             doc = dict()
             doc['sender'] = CURRENT_USER

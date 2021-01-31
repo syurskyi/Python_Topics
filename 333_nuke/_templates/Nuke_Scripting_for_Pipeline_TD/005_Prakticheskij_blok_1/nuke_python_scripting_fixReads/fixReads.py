@@ -5,7 +5,7 @@ ___ start
     searchFolder = ''
     ___ r __ reads:
         filepath = r['file'].gV..()
-        __ no. __.pa__.exists(filepath):
+        __ no. __.pa__.e..(filepath):
             filename = __.pa__.b__(filepath)
             __ no. searchFolder:
                 searchFolder = ?.getFilename('Select Folder')
@@ -14,6 +14,6 @@ ___ start
             __ searchFolder:
                 ___ pa__, dirs, files __ __.walk(searchFolder):
                     __ filename __ files:
-                        newPath = __.pa__.join(pa__, filename)
+                        newPath = __.pa__.j..(pa__, filename)
                         r['file'].sV..(newPath.replace('\\','/'))
                         break

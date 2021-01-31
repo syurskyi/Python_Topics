@@ -242,7 +242,7 @@ ___ getHelpUrl(node=N..):
 #
 ___ emptyInput(node,start_input=0):
     inputs=node.inputs()
-    ___ input __ range(start_input,inputs):
+    ___ input __ ra..(start_input,inputs):
         __ node.input(input)__N..:
             r_ input
     r_ N..
@@ -255,7 +255,7 @@ ___ emptyInput(node,start_input=0):
 #
 ___ nonEmptyInput(node,start_input=0):
     inputs=node.inputs()
-    ___ input __ range(start_input,inputs):
+    ___ input __ ra..(start_input,inputs):
         __ node.input(input)!=N..:
             r_ input
     r_ N..
@@ -269,7 +269,7 @@ ___ nonEmptyInput(node,start_input=0):
 #
 ___ shiftConnections(node,start=0):
     inputs=node.inputs()
-    ___ input __ range(start,inputs):
+    ___ input __ ra..(start,inputs):
         node.setInput(input, node.input(input+1))
     __ emptyInput(node)__start:
             shiftConnections(node, start)

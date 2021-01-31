@@ -18,7 +18,7 @@ ___ SplitDir(fileknob):
     DirUp = __.pa__.s..(Dir)
                     
                     
-    Joined = __.pa__.n_p_ (__.pa__.join(DirUp[1],FileName))
+    Joined = __.pa__.n_p_ (__.pa__.j..(DirUp[1],FileName))
                     
                     
     Joined = re.sub(r'\\', r'/' ,Joined)
@@ -90,7 +90,7 @@ ___ ListVersions(fileknob):
     ___ i __ Names:
 
 
-        Joined = __.pa__.n_p_ (__.pa__.join(DirUp,i))
+        Joined = __.pa__.n_p_ (__.pa__.j..(DirUp,i))
 
 
         check = __.pa__.i_d_(Joined)
@@ -133,7 +133,7 @@ ___ ListVersionsFiles(fileknob):
     ___ i __ Names:
 
 
-        Joined = __.pa__.n_p_ (__.pa__.join(Dir,i))
+        Joined = __.pa__.n_p_ (__.pa__.j..(Dir,i))
 
 
         check = __.pa__.isfile(Joined)
@@ -212,7 +212,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
                             NewStr=re.sub("v"+version,"v"+string_Next,SplitDir(fileknob))
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.join(SplitDirUp(fileknob),NewStr))
+                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -285,7 +285,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
                             FileName=re.sub("v"+version,"v"+string_Next,FileName) 
                             
 
-                            Joined = __.pa__.n_p_ (__.pa__.join(Dir,FileName))
+                            Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                             
                             
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -371,7 +371,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
                             NewStr=re.sub("v"+version,"v"+string_Previous,SplitDir(fileknob))
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.join(SplitDirUp(fileknob),NewStr))
+                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -453,7 +453,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                             FileName=re.sub("v"+version,"v"+string_Previous,FileName) 
                             
 
-                            Joined = __.pa__.n_p_ (__.pa__.join(Dir,FileName))
+                            Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                             
                             
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -525,7 +525,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
                         NewStr=re.sub("v"+version,"v"+Last,SplitDir(fileknob))
 
                             
-                        Joined = __.pa__.n_p_ (__.pa__.join(SplitDirUp(fileknob),NewStr))
+                        Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
                         Joined = re.sub(r'\\', r'/' ,Joined)
@@ -592,7 +592,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                         FileName=re.sub("v"+version,"v"+Last,FileName) 
                             
 
-                        Joined = __.pa__.n_p_ (__.pa__.join(Dir,FileName))
+                        Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                         
                         
                         Joined = re.sub(r'\\', r'/' ,Joined)
@@ -664,7 +664,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
                             FileName = re.sub("v"+versionFile,"v"+version,FileName)
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.join(SplitDirUp(fileknob),DirLast,FileName))
+                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -733,7 +733,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
                         DirLast = re.sub("v"+version,"v"+versionFile, DirLast)
                         
                         
-                        Joined = __.pa__.n_p_ (__.pa__.join(SplitDirUp(fileknob),DirLast,FileName))
+                        Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
                         Joined = re.sub(r'\\', r'/' ,Joined)

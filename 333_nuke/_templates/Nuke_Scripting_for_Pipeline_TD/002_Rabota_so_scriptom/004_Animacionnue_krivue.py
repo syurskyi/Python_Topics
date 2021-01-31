@@ -23,9 +23,9 @@ t['translate'].animation(1)
 
 k = t['translate']
 
-___ i __ range(1, 0, 200):
+___ i __ ra..(1, 0, 200):
     k.setValueAt(math.sin(i*0.05)*50, i, 1)
 
 c = k.animation(1)
 c.clear()
-c.addKey([?.AnimationKey(x, math.sin(x*0.02)*70) ___ x __ range(10, 200)])
+c.addKey([?.AnimationKey(x, math.sin(x*0.02)*70) ___ x __ ra..(10, 200)])

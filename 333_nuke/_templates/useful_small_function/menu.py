@@ -1,8 +1,8 @@
 # steve molin
 print 'in my menu.py'
 
-?.pluginAddPath('Gizmos')
-?.pluginAddPath('Scripts')
+?.pAP..('Gizmos')
+?.pAP..('Scripts')
 
 # =======================================================================
 # FUNCTIONS

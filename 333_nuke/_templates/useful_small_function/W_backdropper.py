@@ -102,7 +102,7 @@ ___ indexKeywordColors
     colorList = []
     colorsDict = {}
 
-    ___ number __ range(presetSlots):
+    ___ number __ ra..(presetSlots):
         number += 1
 
         stringKnob = 'backdropperColor%s'%str(number).zfill(2)
@@ -300,7 +300,7 @@ ___ resetPreferences
     '''
 
     # colorknobs
-    ___ number __ range(presetSlots):
+    ___ number __ ra..(presetSlots):
         number = str(number + 1).zfill(2)
 
         knob = 'backdropperColor%s'%number
@@ -365,7 +365,7 @@ ___ closePreferencesPanel(save = False):
 
             # loop over children
             ___ child __ widget.children
-                __ isinstance(child, _W...QDialogButtonBox):
+                __ isinstance(child, _W..._DBB_):
 
                     # buttons
                     ___ button __ child.buttons
@@ -435,7 +435,7 @@ ___ addPreferences
     addKnobToPreferences(?.Text_Knob('backdropperKeywordLabel','<b>Keywords</b>'))
 
     # colorknobs
-    ___ number __ range(in_(presetSlots)):
+    ___ number __ ra..(in_(presetSlots)):
         number = str(number + 1).zfill(2)
 
         name = 'backdropperColor%s'%number
@@ -532,7 +532,7 @@ c_ ImportExportWidget(_W..._W..):
             '# CREATED ON {0} BY {1}'.f..(dt.now().s_t_('%A %d %B %Y (%H:%M)').upper(), getuser().upper()),
             '#',
             '#%s\n\n'%dividerLine]
-        header = '\n'.join(header)
+        header = '\n'.j..(header)
 
         #--------------------------------------------------------------------------------------------------
         
@@ -545,7 +545,7 @@ c_ ImportExportWidget(_W..._W..):
         modeLayout = _W...QHBoxLayout()
         modeLayout.addStretch()
         ___ widget __ [clipboardRadioButton, fileRadioButton]:
-            modeLayout.addWidget(widget)
+            modeLayout.aW..(widget)
         modeLayout.addStretch()
 
         #--------------------------------------------------------------------------------------------------
@@ -559,7 +559,7 @@ c_ ImportExportWidget(_W..._W..):
 
         pathLayout = _W...QHBoxLayout()
         ___ widget __ [pathLabel, pathLineEdit, pathButton]:
-            pathLayout.addWidget(widget)
+            pathLayout.aW..(widget)
 
         #--------------------------------------------------------------------------------------------------
 
@@ -574,7 +574,7 @@ c_ ImportExportWidget(_W..._W..):
 
         buttonLayout = _W...QHBoxLayout()
         ___ widget __ [importButton, exportButton, cancelButton]:
-            buttonLayout.addWidget(widget)
+            buttonLayout.aW..(widget)
 
         #--------------------------------------------------------------------------------------------------
 
@@ -584,10 +584,10 @@ c_ ImportExportWidget(_W..._W..):
             __ isinstance(layout, _W...QHBoxLayout):
                 mainLayout.addLayout(layout)
             ____
-                mainLayout.addWidget(layout)
+                mainLayout.aW..(layout)
 
         mainLayout.setSizeConstraint( _W...QLayout.SetFixedSize )
-        setLayout(mainLayout)
+        sL..(mainLayout)
 
         #--------------------------------------------------------------------------------------------------
 
@@ -632,14 +632,14 @@ c_ ImportExportWidget(_W..._W..):
         settings = [line ___ line __ settings __ 'backdropperColor' __ line]
 
         #split in chunks of four (textinput and colorswatch, adduserknob command and the stored value)
-        settings = [settings[index:index + 4] ___ index __ range(0, le.(settings), 4)]
+        settings = [settings[index:index + 4] ___ index __ ra..(0, le.(settings), 4)]
 
         settings = [line ___ line __ settings __ no. (line[1].s..()[-1] __ '""' and line[3].s..()[-1] __ '0xccccccff')]
 
-        settings = ['\n'.join(line) ___ line __ settings]
+        settings = ['\n'.j..(line) ___ line __ settings]
         settings = [line.replace(indexPlaceHolder, str(index + 1).zfill(2)) ___ index, line __ enumerate(settings)]
 
-        settings = '\n'.join(settings)
+        settings = '\n'.j..(settings)
 
         settings = header + settings
 
@@ -689,7 +689,7 @@ c_ ImportExportWidget(_W..._W..):
                             settings.r__(line)
                         break
 
-        settings = '\n'.join(settings)
+        settings = '\n'.j..(settings)
 
         # apply 
         preferencesNode.readKnobs(settings)
