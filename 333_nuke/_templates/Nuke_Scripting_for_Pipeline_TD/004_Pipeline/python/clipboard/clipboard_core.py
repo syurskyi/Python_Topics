@@ -9,12 +9,12 @@ ____ ______._G.. _____ *
 ____ ______._C.. _____ *
 ____ ______._W.. _____ *
 
-SERVER = pymongo.MongoClient()
-DB = SERVER['fxphd']
-USER_COLLECTION = DB['users']
-CLIPBOARD_COLLECTION = DB['clipboards']
-SCRIPT_LOCATION = "c:/clipboard"
-CURRENT_USER = getpass.getuser()
+SERVER _ pymongo.MongoClient()
+DB _ SERVER['fxphd']
+USER_COLLECTION _ DB['users']
+CLIPBOARD_COLLECTION _ DB['clipboards']
+SCRIPT_LOCATION _ "c:/clipboard"
+CURRENT_USER _ getpass.getuser()
 
 ____ clipboard_ui _____ ClipboardUi
 
@@ -23,7 +23,7 @@ c_ ClipboardCore(ClipboardUi):
     ___  -
         s__(ClipboardCore, ). - ()
 
-        all_users = [user ___ user __ USER_COLLECTION.find()]
+        all_users _ [user ___ user __ USER_COLLECTION.find()]
         build_user_list_widget()
 
         users_search_line_edit.textChanged.connect(build_user_list_widget)
@@ -36,54 +36,54 @@ c_ ClipboardCore(ClipboardUi):
         build_history()
 
     ___ set_note(, index):
-        item = history_table_widget.item(index, 0)
-        obj = item.data(32)
-        note = obj['note']
+        item _ history_table_widget.item(index, 0)
+        obj _ item.data(32)
+        note _ obj['note']
         received_notes_text_edit.setPlainText(note)
 
     ___ paste_clipboard
-        row = history_table_widget.currentRow()
-        item = history_table_widget.item(row, 0)
-        doc = item.data(32)
-        script = doc['nuke_file']
+        row _ history_table_widget.currentRow()
+        item _ history_table_widget.item(row, 0)
+        doc _ item.data(32)
+        script _ doc['nuke_file']
         ?.nodePaste("%s/%s" % (SCRIPT_LOCATION, script))
 
     ___ send_clipboard
-        row_count = stack_list_widget.count()
+        row_count _ stack_list_widget.count()
         __ no. row_count:
             QMessageBox.information(, "Warning", "No user selected")
             r_
 
-        now = datetime.datetime.now()
-        script = "%s.nk" % uuid.uuid1()
+        now _ datetime.datetime.now()
+        script _ "%s.nk" % uuid.uuid1()
         ?.nodeCopy("%s/%s" % (SCRIPT_LOCATION, script))
         ___ i __ ra..(row_count):
-            obj = stack_list_widget.item(i).data(32)
-            doc = dict()
-            doc['sender'] = CURRENT_USER
-            doc['submitted_at'] = now
-            doc['destination_user'] = obj['login']
-            doc['nuke_file'] = script
-            doc['note'] = text_note_text_edit.toPlainText()
+            obj _ stack_list_widget.item(i).data(32)
+            doc _ dict()
+            doc['sender'] _ CURRENT_USER
+            doc['submitted_at'] _ now
+            doc['destination_user'] _ obj['login']
+            doc['nuke_file'] _ script
+            doc['note'] _ text_note_text_edit.toPlainText()
             CLIPBOARD_COLLECTION.save(doc)
         close()
 
     ___ build_history
-        query = CLIPBOARD_COLLECTION.find({"destination_user": CURRENT_USER}).sort("submitted_at", -1)
+        query _ CLIPBOARD_COLLECTION.find({"destination_user": CURRENT_USER}).sort("submitted_at", -1)
         history_table_widget.setRowCount(query.count())
         ___ x, i __ enumerate(query):
-            sender_query = USER_COLLECTION.find_one({"login": i['sender']})
-            item1 = QTableWidgetItem(sender_query['name'])
+            sender_query _ USER_COLLECTION.find_one({"login": i['sender']})
+            item1 _ QTableWidgetItem(sender_query['name'])
             item1.setData(32, i)
-            item2 = QTableWidgetItem(get_time_difference_as_string(i['submitted_at']))
+            item2 _ QTableWidgetItem(get_time_difference_as_string(i['submitted_at']))
             history_table_widget.setItem(x, 0, item1)
             history_table_widget.setItem(x, 1, item2)
 
     ___ get_time_difference_as_string(, date):
-        delta = datetime.datetime.today() - date
+        delta _ datetime.datetime.today() - date
         __ delta.days:
             r_ "%s day(s)" % delta.days
-        seconds = delta.seconds
+        seconds _ delta.seconds
         __ seconds < 60:
             r_ "A few seconds ago"
         elif seconds < 3600:
@@ -93,11 +93,11 @@ c_ ClipboardCore(ClipboardUi):
 
     ___ build_user_list_widget
         users_list_widget.clear()
-        search_pattern = users_search_line_edit.text().lower()
+        search_pattern _ users_search_line_edit.text().lower()
         ___ user __ all_users:
-            name = user['name']
+            name _ user['name']
             __ search_pattern __ name.lower
-                item = QListWidgetItem(name)
+                item _ QListWidgetItem(name)
                 item.setData(32, user)
                 item.setToolTip(get_user_tooltip(user))
                 users_list_widget.addItem(item)
@@ -108,7 +108,7 @@ c_ ClipboardCore(ClipboardUi):
 
 
 ___ start
-    start.panel = ClipboardCore()
+    start.panel _ ClipboardCore()
     start.panel.show()
 
 # app = QApplication(sys.argv)

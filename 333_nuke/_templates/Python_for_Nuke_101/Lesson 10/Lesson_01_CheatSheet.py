@@ -1,8 +1,8 @@
 # Where the .nuke folder lives in different directories
 # ----- 01:44 -----
-Linux = '/home/<your username>/.nuke'
-Windows = 'C:\Users\<your username>\.nuke'
-Mac = '/Users/<your username>/.nuke'
+Linux _ '/home/<your username>/.nuke'
+Windows _ 'C:\Users\<your username>\.nuke'
+Mac _ '/Users/<your username>/.nuke'
 
 
 
@@ -59,19 +59,19 @@ import nuke
 import platform
 
 # Define where .nuke directory is on each OS's network.
-Win_Dir = 'C:\Users\Ben\.nuke'
-Mac_Dir = ''
-Linux_Dir = '/home/benm/.nuke'
+Win_Dir _ 'C:\Users\Ben\.nuke'
+Mac_Dir _ ''
+Linux_Dir _ '/home/benm/.nuke'
 
 # Automatically set global directory
 if platform.system() == "Windows":
-	dir = Win_Dir
+	dir _ Win_Dir
 elif platform.system() == "Darwin":
-	dir = Mac_Dir
+	dir _ Mac_Dir
 elif platform.system() == "Linux":
-	dir = Linux_Dir
+	dir _ Linux_Dir
 else:
-	dir = None
+	dir _ None
 
 
 

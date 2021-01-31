@@ -3,7 +3,7 @@ ______ re
 ______ __
 
 
-__all__ = ['attr_type', 'auto_convert', 'camel_case_to_lower_case_underscore', 'camel_case_to_title', 'clean_name', 
+__all__ _ ['attr_type', 'auto_convert', 'camel_case_to_lower_case_underscore', 'camel_case_to_title', 'clean_name',
             'is_bool', 'is_dict', 'is_list', 'is_none', 'is_number', 'is_string', 'list_attr_types', 
             'lower_case_underscore_to_camel_case', 'is_newer', 'test_func']
 
@@ -30,12 +30,12 @@ ___ camel_case_to_lower_case_underscore(text):
     :returns: formatted string.
     :rtype: str
     """
-    words = # list
-    from_char_position = 0
+    words _ # list
+    from_char_position _ 0
     ___ current_char_position, char __ enumerate(text):
         __ char.isupper() and from_char_position < text:
             words.ap..(s[from_char_position:current_char_position].lower())
-            from_char_position = current_char_position
+            from_char_position _ current_char_position
     words.ap..(text[from_char_position:].lower())
     r_ '_'.j..(words)
 
@@ -48,12 +48,12 @@ ___ camel_case_to_title(text):
     :returns: formatted string.
     :rtype: str
     """
-    words = # list
-    from_char_position = 0
+    words _ # list
+    from_char_position _ 0
     ___ current_char_position, char __ enumerate(text):
         __ char.isupper() and from_char_position < current_char_position:
             words.ap..(text[from_char_position:current_char_position].title())
-            from_char_position = current_char_position
+            from_char_position _ current_char_position
     words.ap..(text[from_char_position:].title())
     r_ ' '.j..(words)
 
@@ -66,10 +66,10 @@ ___ lower_case_underscore_to_camel_case(text):
     :returns: formatted string.
     :rtype: str
     """
-    split_string = text.s..('_')
+    split_string _ text.s..('_')
     # use string's class to work on the string to keep its type
-    class_ = text.__class__
-    r_ split_string[0] + class_.j..('', map(class_.capitalize, split_string[1:]))
+    class_ _ text.__class__
+    r_ split_string[0] + class_.j..('', m..(class_.capitalize, split_string[1:]))
 
 
 #- Attribute Functions ----
@@ -77,7 +77,7 @@ ___ auto_convert(v.. ):
     """
     Auto-convert a value to it's given type.
     """
-    atype = attr_type(v.. )
+    atype _ attr_type(v.. )
     __ atype __ 'str':
         r_ st.(v.. )
 
@@ -202,8 +202,8 @@ ___ is_newer(file1, file2):
     __ no. __.pa__.e..(file1) or no. __.pa__.e..(file2):
         r_ F..
 
-    time1 = __.pa__.getmtime(file1)
-    time2 = __.pa__.getmtime(file2)
+    time1 _ __.pa__.getmtime(file1)
+    time2 _ __.pa__.getmtime(file2)
     r_ time1 > time2
 
 #- Testing -----
@@ -212,20 +212,20 @@ ___ test_func(w, h):
 
 
 ___ nodeParse(node):
-    t = node[u"type"]
+    t _ node[u"type"]
 
     __ t __ u"Program":
-        body = [parse(block) ___ block __ node[u"body"]]
+        body _ [parse(block) ___ block __ node[u"body"]]
         r_ Program(body)
 
     ____ t __ u"VariableDeclaration":
-        kind = node[u"kind"]
-        declarations = [parse(declaration) ___ declaration __ node[u"declarations"]]
+        kind _ node[u"kind"]
+        declarations _ [parse(declaration) ___ declaration __ node[u"declarations"]]
         r_ VariableDeclaration(kind, declarations)
 
     ____ t __ u"VariableDeclarator":
-        id = parse(node[u"id"])
-        init = parse(node[u"init"])
+        id _ parse(node[u"id"])
+        init _ parse(node[u"init"])
         r_ VariableDeclarator(id, init)
 
     ____ t __ u"Identifier":
@@ -235,9 +235,9 @@ ___ nodeParse(node):
         r_ Literal(node[u"value"])
 
     ____ t __ u"BinaryExpression":
-        operator = node[u"operator"]
-        left = parse(node[u"left"])
-        right = parse(node[u"right"])
+        operator _ node[u"operator"]
+        left _ parse(node[u"left"])
+        right _ parse(node[u"right"])
         r_ BinaryExpression(operator, left, right)
     ____
         raise ValueError("Invalid data structure.")

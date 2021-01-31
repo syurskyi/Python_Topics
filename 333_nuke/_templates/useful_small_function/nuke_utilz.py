@@ -16,7 +16,7 @@ ____ comp_utilz _____ decorators
 # Universal Operations
 
 ___ check_selected
-    n__ = ?.sN..
+    n__ _ ?.sN..
     __ le.(n__) > 0:
         r_ T.., n__[0]
     ____
@@ -39,8 +39,8 @@ ___ select_all_nodes
 ___ get_nodes_by_type(node_type):
     r_ ?.aN..(node_type)
 
-___ get_nodes_by_types(node_types=[]):
-    n__ = []
+___ get_nodes_by_types(node_types_[]):
+    n__ _ []
     ___ node_type __ node_types:
         n__.extend(get_nodes_by_type(node_type))
     r_ n__
@@ -56,8 +56,8 @@ ___ delete_all_nodes
     delete_nodes(?.aN..())
 
 ___ is_disabled(node):
-    __ type(node) __ str:
-        node = ?.tN..(node)
+    __ type(node) __ st_:
+        node _ ?.tN..(node)
     r_ node['disable'].value()
 
 ___ is_multi_view
@@ -65,18 +65,18 @@ ___ is_multi_view
         r_ T..
 
 ___ get_root_cut
-    first_frame = in_(?.tN..('root')['first_frame'].value())
-    last_frame = in_(?.tN..('root')['last_frame'].value())
-    framerange = '%s-%s' % (first_frame, last_frame)
-    exfrange = '%s to %s' % (first_frame, last_frame)
-    length = last_frame - first_frame
+    first_frame _ in_(?.tN..('root')['first_frame'].value())
+    last_frame _ in_(?.tN..('root')['last_frame'].value())
+    framerange _ '%s-%s' % (first_frame, last_frame)
+    exfrange _ '%s to %s' % (first_frame, last_frame)
+    length _ last_frame - first_frame
     r_ first_frame, last_frame, framerange, exfrange, length
 
 # Node Operations
 
 ___ get_coordinates(node):
-    x = node['xpos'].value()
-    y = node['ypos'].value()
+    x _ node['xpos'].value()
+    y _ node['ypos'].value()
     r_ x, y
 
 ___ connect_nodes(connect_to, connect_from, from_index):
@@ -90,10 +90,10 @@ ___ set_value(node, knob, value):
 
 ___ align_node(node, base_x, base_y, x_buffer, y_buffer,
                x_align, y_align, x_mult, y_mult):
-    x_shift = x_buffer*x_mult
-    y_shift = y_buffer*y_mult
-    xpos = in_(base_x+x_shift)+x_align
-    yp__ = in_(base_y-y_shift)+y_align
+    x_shift _ x_buffer*x_mult
+    y_shift _ y_buffer*y_mult
+    xpos _ in_(base_x+x_shift)+x_align
+    yp__ _ in_(base_y-y_shift)+y_align
 
     position(node, xpos, yp__)
 
@@ -104,24 +104,24 @@ ___ auto_align_all_nodes
 ___ position(node, x, y):
     node.setXYpos(in_(x), in_(y))
 
-___ batch_node_copypaste(basedir=__.getcwd()):
+___ batch_node_copypaste(basedir___.getcwd()):
     _____ tempfile
-    tmpNukeFile = tempfile.NamedTemporaryFile(suffix='.nk', dir=basedir)
-    nukeFile = tmpNukeFile.name
+    tmpNukeFile _ tempfile.NamedTemporaryFile(suffix_'.nk', dir_basedir)
+    nukeFile _ tmpNukeFile.name
     ?.nodeCopy(nukeFile)
     clear_selection()
-    new_nodes = ?.nodePaste(nukeFile)
+    new_nodes _ ?.nodePaste(nukeFile)
     r_ new_nodes
 
 ___ copy_root(from_nk, to_nk):
     ___
         ?.scriptSource(from_nk)
         ?.tprint(from_nk)
-        knob_settings = ?.tN..('root').writeKnobs(?.TO_VALUE | ?.WRITE_ALL)
+        knob_settings _ ?.tN..('root').writeKnobs(?.TO_VALUE | ?.WRITE_ALL)
         ?.tprint(knob_settings)
         ?.scriptClear()
         ?.scriptSource(to_nk)
-        name = ?.tN..('root')['name'].value()
+        name _ ?.tN..('root')['name'].value()
         ?.tN..('root').readKnobs(knob_settings)
         ?.tprint('reseting name')
         ?.tN..('root')['name'].sV..(name)
@@ -132,9 +132,9 @@ ___ copy_root(from_nk, to_nk):
         r_ F.., e
 
 ___ get_parent(node):
-    __ type(node) __ str:
-        node = ?.tN..(node)
-    r_ ?.tN..('root.'+'.'.j..(node.fullName().split('.')[:-1])) or ?.r__
+    __ type(node) __ st_:
+        node _ ?.tN..(node)
+    r_ ?.tN..('root.'+'.'.j..(node.fullName().sp__('.')[:-1])) or ?.r__
 
 # BuildHelper Functions
 
@@ -151,7 +151,7 @@ ___ find_upstream(node, class_list):
         r_ node
     ____
         ___ n __ node.dependencies(?.INPUTS | ?.HIDDEN_INPUTS):
-            node = find_upstream(n, class_list)
+            node _ find_upstream(n, class_list)
             __ node:
                 r_ node
 
@@ -163,25 +163,25 @@ ___ get_upstream_value(class_list, inp, knb, exvalue):
     Returns exvalue if no match is found
     '''
     ___
-        value = find_upstream(?.thisGroup().input(inp), class_list).knob(knb).value()
+        value _ find_upstream(?.thisGroup().input(inp), class_list).knob(knb).value()
     ______
-        value = exvalue
+        value _ exvalue
 
     r_ value
 
-___ get_parent_value(inp=0, knb=N.., exvalue=50):
+___ get_parent_value(inp_0, knb_N.., exvalue_50):
     '''
     Returns the value of a specific knob connected to the
     group to a member of that group
     '''
     ___
-        value = ?.thisGroup().input(inp).knob(knb).value()
+        value _ ?.thisGroup().input(inp).knob(knb).value()
     ______
-        value = exvalue
+        value _ exvalue
 
     r_ value
 
-___ get_pv(inp=0, knb=N.., exvalue=50, animchannel=0, holdframe=N..):
+___ get_pv(inp_0, knb_N.., exvalue_50, animchannel_0, holdframe_N..):
     '''
     get the parent of the gizmo/group based on input nr
     the knob the anim channel for example 0 or 1 or 2 for an xyz knob
@@ -192,15 +192,15 @@ ___ get_pv(inp=0, knb=N.., exvalue=50, animchannel=0, holdframe=N..):
     '''
     ___
         __ holdframe __ N..:
-            value = ?.thisGroup().input(inp).knob(knb).value(animchannel)
+            value _ ?.thisGroup().input(inp).knob(knb).value(animchannel)
             r_ value
-        value = ?.thisGroup().input(inp).knob(knb).valueAt(holdframe, animchannel)
+        value _ ?.thisGroup().input(inp).knob(knb).valueAt(holdframe, animchannel)
     except AttributeError:
-        value = exvalue
+        value _ exvalue
 
     r_ value
 
-___ find_downstream(node, node_class, name_pattern=N..):
+___ find_downstream(node, node_class, name_pattern_N..):
     '''
     Return the first node downstream that matches a class within
     a list of user-specified classes. Returns None if no match is found
@@ -211,7 +211,7 @@ ___ find_downstream(node, node_class, name_pattern=N..):
     @return: Node or None.
     '''
     __ node and node.C..  __ node_class:
-        __ type(name_pattern) __ str or type(name_pattern) __ type(re.compile('')):
+        __ type(name_pattern) __ st_ or type(name_pattern) __ type(re.compile('')):
             __ re.compile(name_pattern).match(node.name()):
                 r_ node
             ____
@@ -219,48 +219,48 @@ ___ find_downstream(node, node_class, name_pattern=N..):
         r_ node
     ____
         ___ n __ node.dependent(?.INPUTS | ?.HIDDEN_INPUTS):
-            node = find_downstream(n, node_class, name_pattern=name_pattern)
+            node _ find_downstream(n, node_class, name_pattern_name_pattern)
             __ node:
                 r_ node
 
 # Pipeline Task Functions
 
 ___ get_parts_and_eye_index_for_basename(stereo_basename):
-    parts = stereo_basename.split('.')
-    eye_index = [i ___ i, item __ enumerate(parts) __ \
+    parts _ stereo_basename.sp__('.')
+    eye_index _ [i ___ i, item __ enumerate(parts) __ \
                  re.search('^[l|r]t$', item)]
     __ eye_index and le.(eye_index) __ 1:
-        eye_index = eye_index[0]
+        eye_index _ eye_index[0]
         r_ parts, eye_index
 
 ___ p2p_module_db_eye_fetch
-    stereo_through_eye = dbinfo.get_dominant_eye()
+    stereo_through_eye _ dbinfo.get_dominant_eye()
     __ no. stereo_through_eye or stereo_through_eye no. __ ['lt', 'rt']:
-        ?.m__("Cannot determine dominant eye from database value of:\n\n%s" % str(stereo_through_eye))
+        ?.m__("Cannot determine dominant eye from database value of:\n\n%s" % st_(stereo_through_eye))
         r_
     r_ stereo_through_eye
 
 ___ p2p_module_get_current_eye(p2p_node):
-    r_ p2p_node.knob('domEyeStatus').value().split()[2]
+    r_ p2p_node.knob('domEyeStatus').value().sp__()[2]
 
 ___ p2p_module_eye_swap(p2p_node):
-    cur_dom_eye = p2p_module_get_current_eye(p2p_node)
+    cur_dom_eye _ p2p_module_get_current_eye(p2p_node)
     __ cur_dom_eye __ 'lt':
         r_ 'rt'
     __ cur_dom_eye __ 'rt':
         r_ 'lt'
 
 ___ p2p_module_get_write_name(p2p_node):
-    cur_dom_eye = p2p_module_get_current_eye(p2p_node)
+    cur_dom_eye _ p2p_module_get_current_eye(p2p_node)
     __ cur_dom_eye __ 'lt':
         r_ 'rt_p2p'
     __ cur_dom_eye __ 'rt':
         r_ 'lt_p2p'
 
 ___ update_p2p_module(p2p_node, write_name, eye):
-    one_view_knob = find_downstream(p2p_node, 'OneView', 'OneView_p2p(\d?)').knob('view')
-    dom_eye_status_knob = p2p_node.knob('domEyeStatus')
-    write_node = find_downstream(p2p_node, 'Write', write_name+'(\d?)')
+    one_view_knob _ find_downstream(p2p_node, 'OneView', 'OneView_p2p(\d?)').knob('view')
+    dom_eye_status_knob _ p2p_node.knob('domEyeStatus')
+    write_node _ find_downstream(p2p_node, 'Write', write_name+'(\d?)')
     __ eye __ 'lt':
         ?.Undo().begin('Make P2P Dominant Eye lt')
         with p2p_node:
@@ -289,43 +289,43 @@ ___ update_p2p_module(p2p_node, write_name, eye):
         ?.Undo().end()
 
 ___ p2p_symlinks
-    node = ?.tN..
-    dest_path = node.knob('file').e..
-    source_path = ?.tcl("value [topnode %s].file" % node.name())
+    node _ ?.tN..
+    dest_path _ node.knob('file').e..
+    source_path _ ?.tcl("value [topnode %s].file" % node.name())
     _____ __
-    dest_base = __.pa__.b__(dest_path)
-    parts, eye_token = get_parts_and_eye_index_for_basename(dest_base)
+    dest_base _ __.pa__.b__(dest_path)
+    parts, eye_token _ get_parts_and_eye_index_for_basename(dest_base)
     __ eye_token:
-        base_dir = '.'.j..(parts[:eye_token])
-        link_path = __.pa__.j..(__.environ.get('SHOTDIR'),
+        base_dir _ '.'.j..(parts[:eye_token])
+        link_path _ __.pa__.j..(__.environ.get('SHOTDIR'),
                                  __.environ.get('p2ps'), base_dir, dest_base)
     __ no. link_path:
         ?.tprint('***ERROR*** cannot determine path for symlinks')
         r_
-    dest_path = link_path
+    dest_path _ link_path
     __ '.rt.' __ dest_path:
-        source_path = source_path.replace('.rt.', '.lt.')
-        dest_path = dest_path.replace('.rt.', '.lt.')
+        source_path _ source_path.replace('.rt.', '.lt.')
+        dest_path _ dest_path.replace('.rt.', '.lt.')
     elif '.lt.' __ dest_path:
-        source_path = source_path.replace('.lt.', '.rt.')
-        dest_path = dest_path.replace('.lt.', '.rt.')
+        source_path _ source_path.replace('.lt.', '.rt.')
+        dest_path _ dest_path.replace('.lt.', '.rt.')
     __ no. __.pa__.e..(dest_path):
         __.symlink(source_path, dest_path)
-    dest_movie = re.sub('\.[0-9]*\.exr', '.mov', dest_path)
-    dest_movie = dest_movie.replace('.SRC.', '.RAW.')
+    dest_movie _ re.sub('\.[0-9]*\.exr', '.mov', dest_path)
+    dest_movie _ dest_movie.replace('.SRC.', '.RAW.')
     __ no. __.pa__.e..(dest_movie):
-        parts, eye_index = get_parts_and_eye_index_for_basename(source_path)
+        parts, eye_index _ get_parts_and_eye_index_for_basename(source_path)
         __ eye_index:
-            eye_index = eye_index + 1
-            source_movie = '.'.j..(parts[:eye_index])
-            source_movie += '.RAW.q98.2k.mov'
+            eye_index _ eye_index + 1
+            source_movie _ '.'.j..(parts[:eye_index])
+            source_movie +_ '.RAW.q98.2k.mov'
             __ __.pa__.e..(source_movie):
                 __.symlink(source_movie, dest_movie)
 
-___ set_read_disparity(shot=N.., show=N..):
+___ set_read_disparity(shot_N.., show_N..):
     ___
-        disparity_path = dbinfo.get_disparity(shot, show)
-        disparity = re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)
+        disparity_path _ dbinfo.get_disparity(shot, show)
+        disparity _ re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)
         ?.tN.. .knob('file').sV..(disparity)
     ______
         pass
@@ -341,9 +341,9 @@ ___ path_wildcard(input_string):
     :param input_string: file path with wildcard(s)
     :return: path with wildcards expanded to first valid result
     """
-    evaluated_string = ?.tcl('set wildcard_results ' + input_string)
-    directory = __.pa__.d..(evaluated_string)
-    glob_results = glob.glob(directory)
+    evaluated_string _ ?.tcl('set wildcard_results ' + input_string)
+    directory _ __.pa__.d..(evaluated_string)
+    glob_results _ glob.glob(directory)
 
     __ glob_results:
         r_ __.pa__.j..(glob_results[0], __.pa__.b__(evaluated_string))

@@ -59,7 +59,7 @@ ___ imprint(node, data, tab_N..):
         new_tcl _ new_tcl.strip()[le.(old_tcl) + 1:].r..(TEMP, "")
 
         first_user_knob _ _parse_first_user_knob(node)
-        ___ knob __ reversed(node.allKnobs()):
+        ___ knob __ reversed(node.aK..()):
             knob_name _ knob.n..
             node.removeKnob(knob)
             __ knob_name __ first_user_knob:
@@ -235,7 +235,7 @@ ___ read(node, filter_N..):
     first_user_knob _ _parse_first_user_knob(node)
     __ first_user_knob __ no. N..:
         # Collect user knobs from the end of the knob list
-        ___ knob __ reversed(node.allKnobs()):
+        ___ knob __ reversed(node.aK..()):
             knob_name _ knob.n..
             __ no. knob_name:
                 # Ignore unnamed knob

@@ -1,32 +1,32 @@
-_____ ?
-_____ __
-___ incNamePath(pa__):
-    nameExt = __.pa__.b__(pa__)
-    name, ext = __.pa__.s__(nameExt)
-    dir = __.pa__.d..(pa__)
-    splt = name.split('_')
-    nameNum = '01'
-    __ le.(splt) > 1:
-        num = splt[-1]
-        __ num.isdigit
-            nameNum = in_(num) + 1
-            nzero = le.(num)
-            __ nzero < 2: nzero = 2
-            __ nzero > le.(str(nameNum)):
-                nameNum = str(nameNum).zfill(nzero)
-            nName = '_'.j..(splt[:-1]) + '_' + nameNum
-        ____
-            nName = '_'.j..(splt) + '_' + nameNum
-    ____
-        nName = name + '_' + str(nameNum)
-    result = '/'.j..([dir,nName+ext])
-    r_ result
-    
-
-map( lambda x: x['reload'].execute(), ?.aN..('Read'))
-
-___ r __ ?.aN..('Read'):
-    f = incNamePath(r['file'].gV..())
-    w = ?.n__.Write(inputs=[r], file=f)
-#    w['Render'].execute()
-    ?.execute(w, 1, 1)
+# _____ ?
+# _____ __
+# ___ incNamePath pa__
+#     nameExt _ __.pa__.b__ pa__
+#     name ext _ __.pa__.s__ ?
+#     dir _ __.pa__.d.. pa__
+#     splt _ n__.sp__ '_'
+#     nameNum _ '01'
+#     __ le. s.. > 1
+#         num _ s.. -1
+#         __ ?.isdigit
+#             nameNum _ in_ ? + 1
+#             nzero _ le. ?
+#             __ n.. < 2| n.. _ 2
+#             __ n.. > le. st_ nN..
+#                 nN.. _ st_ nN.. .zf.. n..
+#             nName _ '_'.j.. s.. |-1 + '_' + nN..
+#         ____
+#             ? _ '_'.j.. s.. + '_' + nN..
+#     ____
+#         ? _ n.. + '_' + st_ nN..
+#     result _ '/'.j.. di. nNa.. + ext
+#     r_ ?
+#
+#
+# m.. l____ x ? *r.. .e..  ?.aN.. *Read
+#
+# ___ r __ ?.aN.. *Read
+#     f _ ? r *f.. .gV..
+#     w _ ?.n__.W.. i.._ ? f.._?
+# #    w['Render'].execute()
+#     ?.e.. ? 1 1

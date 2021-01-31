@@ -1,37 +1,37 @@
 _____ __, ___
 _____ ?
 
-root = __.pa__.d..( -f)
+root _ __.pa__.d..( -f)
 ?.tprint(root)
 
-gizmos = __.pa__.j..(root, 'icons')
+gizmos _ __.pa__.j..(root, 'icons')
 print(gizmos)
-?.pAP..(gizmos, addToSysPath=T..)
+?.pAP..(gizmos, addToSysPath_T..)
 
 
 _____ multi_script_editor
 
 # add to menu
-menubar = ?.m__("Nuke")
-toolMenu = menubar.addMenu('&Tools')
+menubar _ ?.m__("Nuke")
+toolMenu _ menubar.addMenu('&Tools')
 toolMenu.aC..("Multi Script Editor", multi_script_editor.showNuke)
 
 ____ clipboard _____ clipboard_core
 
-m__ = ?.m__("Nuke")
-fxphd = m__.addMenu("FXPHD")
+m__ _ ?.m__("Nuke")
+fxphd _ m__.addMenu("FXPHD")
 fxphd.aC..("Clipboard","clipboardCore.start()")
 
 # nodes
-n__ = ?.m__("Nodes")
-gizmos = n__.addMenu('Gizmos', icon='cgninjas.png')
+n__ _ ?.m__("Nodes")
+gizmos _ n__.addMenu('Gizmos', icon_'cgninjas.png')
 
-gizPath = __.pa__.j..(root, 'gizmos')
+gizPath _ __.pa__.j..(root, 'gizmos')
 ___ gizmo __ __.l_d_(gizPath):
     __ __.pa__.s__(gizmo)[-1] __ '.gizmo':
-        name = __.pa__.s__(gizmo)[0]
-        ico = name+'.png'
-        gizmos.aC..(name, "nuke.createNode('%s')" % name, icon=ico)
+        name _ __.pa__.s__(gizmo)[0]
+        ico _ name+'.png'
+        gizmos.aC..(name, "nuke.createNode('%s')" % name, icon_ico)
 
 # Favorites
 # nuke.addFavoriteDir('Pipeline', root)

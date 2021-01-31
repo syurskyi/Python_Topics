@@ -1,31 +1,31 @@
-_____ ?, math
-
-
-t = ?.tN..('Transform1')
-t['translate'].animations()
-t['translate'].animation(0)
-t['translate'].animation(1)
-
-crv = t['translate'].animation(0)
-crv.keys()
-keys = crv.keys()
-keys[0].x
-keys[0].y
-keys[0].y = -300
-
-crv.setKey(10, -310)
-
-crv.setKey(50, 301)
-
-t['translate'].setAnimated()
-t['translate'].setAnimated(1)
-t['translate'].animation(1)
-
-k = t['translate']
-
-___ i __ ra..(1, 0, 200):
-    k.setValueAt(math.sin(i*0.05)*50, i, 1)
-
-c = k.animation(1)
-c.clear()
-c.addKey([?.AnimationKey(x, math.sin(x*0.02)*70) ___ x __ ra..(10, 200)])
+# _____ ?, math
+#
+#
+# t _ ?.tN..('Transform1')
+# t *t...a..
+# t *t...a.. 0
+# t *t...a.. 1
+#
+# crv _ t *t...a.. 0
+# crv.k..
+# keys _ crv.k..
+# ? 0 .x
+# ? 0 .y
+# ? 0 .y _ -300
+#
+# ?.sK.. 10, -310
+#
+# ?.sK.. 50, 301
+#
+# t *t...sA..
+# t *t...sA.. 1
+# t *t...a.. 1
+#
+# k _ t *t..
+#
+# ___ i __ ra.. 1 0 200
+#     ?.sVA. ma__.si. ?*0.05)*50, ? 1
+#
+# c _ k.a.. 1
+# ?.cl..
+# ?.aK.. ?.AK.. x ma__.si. ?*0.02)*70) ___ ? __ ra.. 10 200

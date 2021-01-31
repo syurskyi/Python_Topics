@@ -948,12 +948,12 @@ ___ get_all_views(range_ _ 10):
     ___
         views _ # list
         ___ i __ ra..(range_):
-            ?.activeViewer().previousView()
+            ?.aV...previousView()
 
         ___ i __ ra..(range_):
-            __ ?.activeViewer().view() no. __ views:
-                views.ap..(?.activeViewer().view())
-            ?.activeViewer().nextView()
+            __ ?.aV...view() no. __ views:
+                views.ap..(?.aV...view())
+            ?.aV...nextView()
 
         r_ views
     ______

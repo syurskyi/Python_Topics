@@ -19,14 +19,14 @@ import nuke
 def shortcut_NodeComment():
 
 	# Assign the selected node to a variable for easy access
-    selectedNode = nuke.sN..
+    selectedNode _ nuke.sN..
 
     # Assign the current value of the selected node's label to a variable for easy access
-    oldComment = selectedNode['label'].value()
+    oldComment _ selectedNode['label'].value()
 
     # Create a variable that asks a user for a string via a pop-up text input box.
     # If there is already a node label, use it as the default string.
-    inputBox = nuke.getInput("Please enter a node label", oldComment)
+    inputBox _ nuke.getInput("Please enter a node label", oldComment)
 
     # Run an if statement to check if the Cancel button was pressed
     if inputBox == None:

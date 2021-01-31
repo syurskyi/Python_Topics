@@ -7,7 +7,7 @@ Add the solution below to your shuffleShortcuts.py, below line 73 (  blueShuffle
 """
 
 # Create merge node and set the operation to max, connect the inputs to our 3 shuffle nodes, then Transform the Merge node into place.
-mergeNode = nuke.createNode("Merge2")
+mergeNode _ nuke.createNode("Merge2")
 mergeNode['operation'].setValue("max")
 mergeNode.setInput(0, redShuffle)
 mergeNode.setInput(1, greenShuffle)

@@ -1,17 +1,17 @@
 _____ __, su__
 
-root = __.pa__.d..( -f)
+root _ __.pa__.d..( -f)
 print(root)
 
 # Home
-__.environ['HOME'] = root
+__.environ['HOME'] _ root
 
 # Nuke Path
-__.environ['NUKE_PATH'] = root
+__.environ['NUKE_PATH'] _ root
 
 # START NUKE
 __ __.name __ 'nt':
-    exe = 'C:/Program Files/Nuke12.1v1/Nuke12.1.exe'
+    exe _ 'C:/Program Files/Nuke12.1v1/Nuke12.1.exe'
 ____
-    exe = N..
+    exe _ N..
 su__.Popen([exe, '--nukex'])

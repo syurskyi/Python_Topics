@@ -19,7 +19,7 @@ import nuke
 def create_nodes():
 
     # Create a panel
-    panel = nuke.Panel("Node Creator")
+    panel _ nuke.Panel("Node Creator")
 
     # Add knobs
     panel.addSingleLineInput("Node Class", "")
@@ -30,8 +30,8 @@ def create_nodes():
         return
 
     # Add the user-input values from our knobs to variables for easy access
-    nodeClass = panel.value("Node Class")
-    number = panel.value("Number of Nodes to create")
+    nodeClass _ panel.value("Node Class")
+    number _ panel.value("Number of Nodes to create")
 
 
     # --- ERROR CHECKING ---------------------------------------------

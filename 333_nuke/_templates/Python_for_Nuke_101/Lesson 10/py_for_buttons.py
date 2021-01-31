@@ -1,7 +1,7 @@
 # --------  addNodes BUTTON  ------------
 
 # Set Initial List
-node_list = []
+node_list _ []
 
 
 ___ i __ nuke.sN.. :
@@ -15,7 +15,7 @@ print node_list
 
 # Turn the list into a single string, and add
 # a line break, a bullet point and a space in between each item.
-node_list_cleaned = '\n• '.j..(node_list)
+node_list_cleaned _ '\n• '.j..(node_list)
 
 # Set the value of the text knob.
 nuke.thisNode()['txtknob_node_list'].setValue("\n• "+node_list_cleaned)
@@ -66,7 +66,7 @@ print node_list
 
 # Turn the list into a single string, and add
 # a line break, a bullet point and a space in between each item.
-node_list_cleaned = '\n• '.j..(node_list)
+node_list_cleaned _ '\n• '.j..(node_list)
 
 # Set the value of the text knob.
 nuke.thisNode()['txtknob_node_list'].setValue("\n• "+node_list_cleaned)
@@ -80,7 +80,7 @@ nuke.thisNode()['txtknob_node_list'].setValue("\n• "+node_list_cleaned)
 # --------  clearList BUTTON  ------------
 
 # Clear Nodes
-node_list = []
+node_list _ []
 
 # Reset button visibility
 nuke.thisNode().knob('addNodes').setVisible(True)

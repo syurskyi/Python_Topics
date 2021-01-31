@@ -620,7 +620,7 @@ ___ load_metadata(src, *args):
 
 ___ get_resolution(*args):
     __ ?.activeViewer
-        r_ ?.activeViewer().node()['downrez'].gV..
+        r_ ?.aV...node()['downrez'].gV..
 
 
 ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel_labek _ 'cancel'):

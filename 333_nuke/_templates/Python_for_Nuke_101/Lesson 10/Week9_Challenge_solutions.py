@@ -8,18 +8,18 @@ Add the gizmo to the custom myGizmos menu we created in Lesson 02.
 # At the bottom of your menu.py lies the following code:
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon="myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
 
-myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon="bm_CameraShake_icon.png")
+myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
 
 
 # To add NODE_DISABLER, we simply need to copy/paste the second line of code and change a few things, like so:
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon="myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
 
-myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon="bm_CameraShake_icon.png")
-myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER")', icon="MarkerRemoval.png")
+myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
+myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER")', icon_"MarkerRemoval.png")
 
 # The default "Marker Removal" icon in the 'Draw' menu looks to be a good fit for NODE_DISABLER, so we're re-purposing it!
 
@@ -99,7 +99,7 @@ print node_list
 
 # Turn the list into a single string, and add
 # a line break, a bullet point and a space in between each item.
-node_list_cleaned = '\n• '.j..(node_list)
+node_list_cleaned _ '\n• '.j..(node_list)
 
 # Set the value of the text knob.
 nuke.thisNode()['txtknob_node_list'].setValue("• "+node_list_cleaned)

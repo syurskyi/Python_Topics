@@ -52,7 +52,7 @@ ___ find_highest(n__):
         nuke.Node: The highest node in the DAG.
 
     """
-    r_ min(n__, key=l___ node: get_center_y(node))
+    r_ min(n__, key_l___ node: get_center_y(node))
 
 
 ___ find_lowest(n__):
@@ -65,7 +65,7 @@ ___ find_lowest(n__):
         nuke.Node: The lowest node.
 
     """
-    r_ max(n__, key=l___ node: get_center_y(node))
+    r_ max(n__, key_l___ node: get_center_y(node))
 
 
 ___ find_leftest(n__):
@@ -78,7 +78,7 @@ ___ find_leftest(n__):
         nuke.Node: The lowest node.
 
     """
-    r_ min(n__, key=l___ node: get_center_x(node))
+    r_ min(n__, key_l___ node: get_center_x(node))
 
 
 ___ find_rightest(n__):
@@ -91,7 +91,7 @@ ___ find_rightest(n__):
         nuke.Node: The lowest node.
 
     """
-    r_ max(n__, key=l___ node: get_center_x(node))
+    r_ max(n__, key_l___ node: get_center_x(node))
 
 
 ___ get_node_bounds(node):
@@ -105,22 +105,22 @@ ___ get_node_bounds(node):
             in the DAG.
 
     """
-    node_edge_left = node.xpos()
-    node_edge_top = node.yp__()
+    node_edge_left _ node.xpos()
+    node_edge_top _ node.yp__()
     __ node.C..  __ "BackdropNode":
         # The node's screenWidth and screenHeight don't update immediately
         # after a node has been created. To allow to run tests, calculate the
         # right and bottom edge of Backdrop nodes directly from width and
         # height.
-        node_edge_right = node_edge_left + node["bdwidth"].v.. ()
-        node_edge_bottom = node_edge_top + node["bdheight"].v.. ()
+        node_edge_right _ node_edge_left + node["bdwidth"].v.. ()
+        node_edge_bottom _ node_edge_top + node["bdheight"].v.. ()
     ____
-        node_edge_right = node_edge_left + node.screenWidth()
-        node_edge_bottom = node_edge_top + node.screenHeight()
+        node_edge_right _ node_edge_left + node.screenWidth()
+        node_edge_bottom _ node_edge_top + node.screenHeight()
     r_ node_edge_left, node_edge_top, node_edge_right, node_edge_bottom
 
 
-___ is_inside_backdrops(node, backdrops=N..):
+___ is_inside_backdrops(node, backdrops_N..):
     """Whether given node is inside given Backdrop nodes.
 
     Args:
@@ -135,17 +135,17 @@ ___ is_inside_backdrops(node, backdrops=N..):
     """
     # Keep an empty list.
     __ backdrops __ N..:
-        backdrops = ?.aN..(filter="BackdropNode")
+        backdrops _ ?.aN..(filter_"BackdropNode")
 
-    node_center_x, node_center_y = get_center(node)
+    node_center_x, node_center_y _ get_center(node)
 
     ___ backdrop __ backdrops:
-        edge_left, edge_top, edge_right, edge_bottom = get_node_bounds(
+        edge_left, edge_top, edge_right, edge_bottom _ get_node_bounds(
             backdrop
         )
         __ (
-            edge_left <= node_center_x <= edge_right
-            and edge_top <= node_center_y <= edge_bottom
+            edge_left <_ node_center_x <_ edge_right
+            and edge_top <_ node_center_y <_ edge_bottom
         ):
             r_ T..
 
@@ -153,7 +153,7 @@ ___ is_inside_backdrops(node, backdrops=N..):
 
 
 ___ get_overlapping_backdrops(
-    position, backdrops=N.., horizontal=T.., vertical=F..
+    position, backdrops_N.., horizontal_T.., vertical_F..
 ):
     """Find backdrops overlapping with given ypos in DAG.
 
@@ -176,24 +176,24 @@ ___ get_overlapping_backdrops(
     """
     # Keep an empty list.
     __ backdrops __ N..:
-        backdrops = ?.aN..(filter="BackdropNode")
+        backdrops _ ?.aN..(filter_"BackdropNode")
 
-    position_x, position_y = position
+    position_x, position_y _ position
 
-    overlapping_backdrops = set()
+    overlapping_backdrops _ set()
     ___ backdrop __ backdrops:
-        bd_x, bd_y, bd_r, bd_t = get_node_bounds(backdrop)
+        bd_x, bd_y, bd_r, bd_t _ get_node_bounds(backdrop)
         __ horizontal:
-            __ bd_y <= position_y <= bd_t:
+            __ bd_y <_ position_y <_ bd_t:
                 overlapping_backdrops.add(backdrop)
         __ vertical:
-            __ bd_x <= position_x <= bd_r:
+            __ bd_x <_ position_x <_ bd_r:
                 overlapping_backdrops.add(backdrop)
 
     r_ overlapping_backdrops
 
 
-___ get_surrounding_backdrops(n__, backdrops=N..):
+___ get_surrounding_backdrops(n__, backdrops_N..):
     """Get all BackdropNodes surrounding given nodes.
 
     Args:
@@ -207,9 +207,9 @@ ___ get_surrounding_backdrops(n__, backdrops=N..):
             given nodes.
 
     """
-    backdrops = backdrops or ?.aN..(filter="BackdropNode")
+    backdrops _ backdrops or ?.aN..(filter_"BackdropNode")
 
-    surrounding_backdrops = # list
+    surrounding_backdrops _ # list
     ___ backdrop __ backdrops:
         __ any([is_inside_backdrops(node, [backdrop]) ___ node __ n__]):
             surrounding_backdrops.ap..(backdrop)
@@ -224,9 +224,9 @@ ___ get_grid_preferences
         :obj:`tuple` of :obj:`int`: The grid size in width and height.
 
     """
-    pref_node = ?.tN..("preferences")
-    grid_height = in_(pref_node["GridHeight"].v.. ())
-    grid_width = in_(pref_node["GridWidth"].v.. ())
+    pref_node _ ?.tN..("preferences")
+    grid_height _ in_(pref_node["GridHeight"].v.. ())
+    grid_width _ in_(pref_node["GridWidth"].v.. ())
     r_ grid_width, grid_height
 
 
@@ -240,8 +240,8 @@ ___ get_closest_grid_offset(offset):
         :obj:`tuple` of :obj:`int`: The width and height snapped to grid.
 
     """
-    grid_width, grid_height = get_grid_preferences()
+    grid_width, grid_height _ get_grid_preferences()
     # Set offset to closest on DAG grid.
-    offset_x = in_(round(fl..(offset[0]) / grid_width)) * grid_width
-    offset_y = in_(round(fl..(offset[1]) / grid_height)) * grid_height
+    offset_x _ in_(round(fl..(offset[0]) / grid_width)) * grid_width
+    offset_y _ in_(round(fl..(offset[1]) / grid_height)) * grid_height
     r_ offset_x, offset_y

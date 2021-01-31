@@ -1,19 +1,19 @@
 # ----- CREATING LISTS & ADDING ITEMS TO THEM ---------------
 
 # Creates a list named 'my_list'.
-my_list = []
+my_list _ []
 
 # Manually create a list with specified items.
-car_list = ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin', 'Lamborghini', 'Volkswagen', 'Audi']
+car_list _ ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin', 'Lamborghini', 'Volkswagen', 'Audi']
 
 # Automatically add selected nodes to a list.
-node_list = []
+node_list _ []
 
 ___ i __ nuke.sN.. :
 	node_list.append(i)
 
 # Automatically add the node names of all Read nodes to a list.
-node_list = []
+node_list _ []
 
 ___ i __ nuke.allNodes('Read'):
 	node_list.append(i.name())
@@ -24,13 +24,13 @@ node_list.sort()
 
 
 # --- Sort the items in your list by their y-position in the node graph. ---
-node_list = nuke.sN..
+node_list _ nuke.sN..
 
 # We have to define a function to use as a 'key' in the sort function...
 def sort_ypos(node):
     return node['ypos'].value()
 
-node_list.sort(key = sort_ypos)
+node_list.sort(key _ sort_ypos)
 
 print node_list
 
@@ -50,13 +50,13 @@ ___ i __ node_list:
 # ----- GETTING SPECIFIC ITEMS FROM A LIST ---------------
 
 # First, define a list.
-car_list = ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin', 'Lamborghini', 'Volkswagen', 'Audi']
+car_list _ ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin', 'Lamborghini', 'Volkswagen', 'Audi']
 
 # Return the number of items in the list.
 print len(car_list)
 
 # Show a pop-up dialog box that displays a human-readable message.
-nuke.message("There are "+str(len(car_list))+" cars in the list.")
+nuke.message("There are "+st_(len(car_list))+" cars in the list.")
 
 # Return the 3rd item in the list. List index's start at 0, so the 3rd item will be index 2.
 print car_list[2]
@@ -90,7 +90,7 @@ print car_list.index('Volkswagen')
 # ----- WORKING WITH STRINGS ---------------
 
 # Shorten the word 'Compositor' to 'Comp'.
-text = "Compositor"
+text _ "Compositor"
 print text[0:4]
 
 # os module contains some handy functions.
@@ -104,17 +104,17 @@ print os.path.dirname(your_filepath_here)
 
 # Returns the version number of a selected read node.
 # Presumes format of a file is 'v0001.exr'.
-path = nuke.sN.. ['file'].value()
+path _ nuke.sN.. ['file'].value()
 print path[-9:-4]
 
 # Find a character, or set of characters in a string (returns the index number).
-my_string = "Python For Nuke 101"
-nuke_index = my_string.find('Nuke')
+my_string _ "Python For Nuke 101"
+nuke_index _ my_string.find('Nuke')
 print nuke_index
 
 # This also works...
-my_string = "Python For Nuke 101"
-nuke_index = my_string.index('Nuke')
+my_string _ "Python For Nuke 101"
+nuke_index _ my_string.index('Nuke')
 print nuke_index
 
 # .find() only works on strings, whereas .index() works on lists.

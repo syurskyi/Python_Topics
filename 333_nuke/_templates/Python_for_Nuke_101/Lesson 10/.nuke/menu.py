@@ -15,19 +15,19 @@ import platform
 
 
 # Define where .nuke directory is on each OS's network.
-Win_Dir = 'C:\Users\Ben\.nuke'
-MacOSX_Dir = '/Users/Ben/.nuke'
-Linux_Dir = '/home/benm/.nuke'
+Win_Dir _ 'C:\Users\Ben\.nuke'
+MacOSX_Dir _ '/Users/Ben/.nuke'
+Linux_Dir _ '/home/benm/.nuke'
 
 # Automatically set global directory
 if platform.system() == "Windows":
-	dir = Win_Dir
+	dir _ Win_Dir
 elif platform.system() == "Darwin":
-	dir = MacOSX_Dir
+	dir _ MacOSX_Dir
 elif platform.system() == "Linux":
-	dir = Linux_Dir
+	dir _ Linux_Dir
 else:
-	dir = None
+	dir _ None
 
 
 
@@ -41,10 +41,10 @@ else:
 # ----- TRACKER DEFAULTS ---------------------------------------
 nuke.knobDefault('Tracker4.shutteroffset', "centered")
 nuke.knobDefault('Tracker4.label', "Motion: [value transform]\nRef Frame: [value reference_frame]")
-nuke.addOnUserCreate(lambda:nuke.thisNode()['reference_frame'].setValue(nuke.frame()), nodeClass='Tracker4')
+nuke.addOnUserCreate(l____:nuke.thisNode()['reference_frame'].setValue(nuke.frame()), nodeClass_'Tracker4')
 
 # ----- FRAMEHOLD DEFAULT --------------------------------------
-nuke.addOnUserCreate(lambda:nuke.thisNode()['first_frame'].setValue(nuke.frame()), nodeClass='FrameHold')
+nuke.addOnUserCreate(l____:nuke.thisNode()['first_frame'].setValue(nuke.frame()), nodeClass_'FrameHold')
 
 # ----- MOTION BLUR SHUTTER CENTERED ---------------------------
 nuke.knobDefault('Tracker4.shutteroffset', "centered")
@@ -64,15 +64,15 @@ nuke.knobDefault('Card3D.shutteroffset', "centered")
 #  KEYBOARD SHORTCUTS  :::::::::::::::::::::::::::::::::::::::::
 # --------------------------------------------------------------
 
-nuke.menu('Nodes').addCommand("Transform/Tracker4", "nuke.createNode('Tracker4')", "ctrl+alt+t", icon="Tracker.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Transform/Tracker4", "nuke.createNode('Tracker4')", "ctrl+alt+t", icon_"Tracker.png", shortcutContext_2)
 
 # ----- MERGE NODE SHORTCUTS -----------------------------------
-mergeMenu = nuke.menu('Nodes').findItem("Merge/Merges")
+mergeMenu _ nuke.menu('Nodes').findItem("Merge/Merges")
 
-mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon="Out.png", shortcutContext=2)
-mergeMenu.addCommand('Mask', 'nuke.createNode("Merge2", "operation mask bbox A")', "alt+i", icon="In.png", shortcutContext=2)
-mergeMenu.addCommand('Plus', 'nuke.createNode("Merge2", "operation plus")', "alt+]", icon="Add.png", shortcutContext=2)
-mergeMenu.addCommand('From', 'nuke.createNode("Merge2", "operation from")', "alt+[", icon="From.png", shortcutContext=2)
+mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon_"Out.png", shortcutContext_2)
+mergeMenu.addCommand('Mask', 'nuke.createNode("Merge2", "operation mask bbox A")', "alt+i", icon_"In.png", shortcutContext_2)
+mergeMenu.addCommand('Plus', 'nuke.createNode("Merge2", "operation plus")', "alt+]", icon_"Add.png", shortcutContext_2)
+mergeMenu.addCommand('From', 'nuke.createNode("Merge2", "operation from")', "alt+[", icon_"From.png", shortcutContext_2)
 
 
 
@@ -105,7 +105,7 @@ nuke.menu('Nuke').addCommand('Edit/Paste to Selected', 'paste_selected.paste_sel
 
 
 # ----- CREATE UTILITIES MENU & ASSIGN ITEMS -------------------
-utilitiesMenu = nuke.menu('Nuke').addMenu('Utilities')
+utilitiesMenu _ nuke.menu('Nuke').addMenu('Utilities')
 
 utilitiesMenu.addCommand('Autocrop', 'nukescripts.autocrop()')
 utilitiesMenu.addCommand('File Lister', 'filepathLister.file_lister()')
@@ -113,9 +113,9 @@ utilitiesMenu.addCommand('Create Nodes', 'create_nodes.create_nodes()')
 
 
 # ----- CREATE CUSTOM GIZMOS MENU & ASSIGN ITEMS ---------------
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon="myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
 
-myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon="bm_CameraShake_icon.png")
-myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER_V2")', icon="MarkerRemoval.png")
+myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")
+myGizmosMenu.addCommand('NODE_DISABLER', 'nuke.createNode("NODE_DISABLER_V2")', icon_"MarkerRemoval.png")
 
 

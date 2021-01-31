@@ -1,13 +1,13 @@
 # ----- DIFFERENT FUNCTIONS THAT OPEN DIALOG BOXES FOR USER INPUT ---------------
 
 # Get a user-input number
-inputBox = nuke.getInput("Number + 5", "Enter your number here")
+inputBox _ nuke.getInput("Number + 5", "Enter your number here")
 
 # Add 5 to our number
-number = float(inputBox)+5
+number _ float(inputBox)+5
 
 # Convert that number to a string, and show it in a message.
-nuke.message(str(inputBox)+" + 5 = "+str(number))
+nuke.message(st_(inputBox)+" + 5 = "+st_(number))
 
 
 
@@ -38,7 +38,7 @@ nuke.getFramesAndViews("Get Frame Range", '1001-1050') # let’s you define a fr
 # ----- CUSTOM PANELS ---------------
 
 # Create a panel called 'My Panel'.
-panel = nuke.Panel("My Panel")
+panel _ nuke.Panel("My Panel")
 
 # Show the panel, with some error checking (must be inside a function).
 # If the cancel button is pressed, the window will close and nothing will happen.
@@ -66,8 +66,8 @@ panel.addBooleanCheckBox("Label", True)
 # ----- USING EXISTING DATA TO POPULATE KNOBS ---------------
 
 # Set the value of a selected node's mix knob with a pop-up, using the existing value as the default.
-oldValue = nuke.sN.. ['mix'].value()
-newValue = nuke.getInput('Mix Value', str(oldValue))
+oldValue _ nuke.sN.. ['mix'].value()
+newValue _ nuke.getInput('Mix Value', st_(oldValue))
 nuke.sN.. ['mix'].setValue(float(newValue))
 
 
@@ -75,10 +75,10 @@ nuke.sN.. ['mix'].setValue(float(newValue))
 # --- Create an EnumerationPulldown knob, and populate it with a list of selected nodes.
 
 # Create a panel called 'My Panel'.
-panel = nuke.Panel("My Panel")
+panel _ nuke.Panel("My Panel")
 
 # Create a new list.
-node_list = []
+node_list _ []
 
 # Put all selected nodes' names in 'node_list'.
 ___ i __ nuke.sN.. :
@@ -88,7 +88,7 @@ ___ i __ nuke.sN.. :
 node_list.sort()
 
 # Join the list into a string with spaces in between each item, so the EnumerationPulldown has data it expects.
-node_list_string = " ".j..(node_list)
+node_list_string _ " ".j..(node_list)
 
 # Add a dropdown list knob with all the selected nodes.
 panel.addEnumerationPulldown("Label", node_list_string)

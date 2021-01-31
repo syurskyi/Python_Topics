@@ -1,16 +1,16 @@
 _____ __, ___
 _____ ?
 
-root = __.pa__.d..( -f)
+root _ __.pa__.d..( -f)
 print(root)
 
 # plugins
-gizmos = __.pa__.j..(root, 'gizmos')
+gizmos _ __.pa__.j..(root, 'gizmos')
 print(gizmos)
-?.pAP..(gizmos, addToSysPath=F..)
+?.pAP..(gizmos, addToSysPath_F..)
 
 # python
-py = __.pa__.j..(root, 'python')
+py _ __.pa__.j..(root, 'python')
 ___.pa__.a__(py)
 print(py)
 

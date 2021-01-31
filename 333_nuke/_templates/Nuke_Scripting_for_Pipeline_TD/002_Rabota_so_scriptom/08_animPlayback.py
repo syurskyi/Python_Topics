@@ -1,14 +1,14 @@
-_____ ?
-_____ __
-
-?.frame()
-?.frame(4)
-
-?.activeViewer().node()
-?.activeViewer().frameControl()
-v = ?.activeViewer()
-v.frameControl(-6)
-
-?.activeViewer().play(1)
-?.activeViewer().play(-1)
-?.activeViewer().stop()
+# _____ ?
+# # _____ __
+# #
+# # ?.f..
+# # ?.f.. 4
+# #
+# # ?.aV...n..
+# # ?.aV...fC..
+# # v _ ?.aV..
+# # ?.fC.. -6
+# #
+# # ?.aV...p..  1
+# # ?.aV...p.. -1
+# # ?.aV...s..

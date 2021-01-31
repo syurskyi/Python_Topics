@@ -20,9 +20,9 @@ import nuke
 def shortcut_NodeCustomizer():
 
     # Set variables & list to hold information we'll need...
-    selectedNode = nuke.sN..
-    oldComment = selectedNode['label'].value()
-    knobList = []
+    selectedNode _ nuke.sN..
+    oldComment _ selectedNode['label'].value()
+    knobList _ []
 
     # Get a list of all the knobs in the selected Node
     ___ i __ selectedNode.knobs():
@@ -34,10 +34,10 @@ def shortcut_NodeCustomizer():
 
     # Join the list into a string with spaces in between each item,
     # so the EnumerationPulldown has data it expects
-    knobList_string = " ".j..(knobList)
+    knobList_string _ " ".j..(knobList)
 
     # Create a panel 
-    panel = nuke.Panel("Node Customizer")
+    panel _ nuke.Panel("Node Customizer")
 
     # Add knobs
     panel.addSingleLineInput("Comment", oldComment)
@@ -51,9 +51,9 @@ def shortcut_NodeCustomizer():
 
 
     # Assign the value of all our panel's knobs to variables to use later...
-    comment_input = panel.value("Comment")
-    knob_choice = panel.value("Knob")
-    node_label = comment_input + "\n" + knob_choice+": [value "+knob_choice+"]"
+    comment_input _ panel.value("Comment")
+    knob_choice _ panel.value("Knob")
+    node_label _ comment_input + "\n" + knob_choice+": [value "+knob_choice+"]"
 
     
     # Change values on our selected node from user choice 

@@ -21,9 +21,9 @@
 # Operation list example: ['minus', 'multiply', 'over', 'plus', 'screen']
 
 
-C_Merge = []
-C_ChannelMerge = []
-C_MergeMat = []
+C_Merge _ []
+C_ChannelMerge _ []
+C_MergeMat _ []
 
 
 
@@ -44,33 +44,33 @@ ___ Merge(n, cycle, forwards):
 	___
 
 		# get knob
-		k = n.knob('operation')
+		k _ n.knob('operation')
 
 
 		# if custom list is used
 		__ le.(cycle) > 0:
 
 			# get knob value as str
-			currOp = k.v.. ()
+			currOp _ k.v.. ()
 
 			# check if current value is in cycle
-			nextOp = ''
+			nextOp _ ''
 
 			__ currOp __ cycle:
 
 				# get next or pevious item index (depending on forwards)
-				index = cycle.index(currOp) + (1 __ forwards else -1)
+				index _ cycle.index(currOp) + (1 __ forwards else -1)
 
 				# return to 0 if out of range
 				__(index > (le.(cycle)) - 1):
-					index = 0
+					index _ 0
 
 				# set new value
-				nextOp = cycle[index]
+				nextOp _ cycle[index]
 			____
 
 				# reset to first in cycle
-				nextOp = cycle[0]
+				nextOp _ cycle[0]
 
 			# set new value to knob
 			n.knob("operation").sV..(nextOp)
@@ -80,10 +80,10 @@ ___ Merge(n, cycle, forwards):
 		____
 
 			# current operation
-			currOp = k.gV..
+			currOp _ k.gV..
 
 			# operation count
-			countOp = le.(k.values())
+			countOp _ le.(k.values())
 
 			__ forwards:
 
@@ -112,27 +112,27 @@ ___ Switch(n, forwards):
 	___
 
 		# get current value
-		currWhich = n.knob('which').gV..
+		currWhich _ n.knob('which').gV..
 		# get amount of inputs on Switch (-1, to match input index which starts counting at 0)
-		maxWhich = n.inputs() - 1.0
+		maxWhich _ n.inputs() - 1.0
 
 		# make Switch nodes with only one input alternate between 1 and 0
 		__(maxWhich __ 0):
-			maxWhich = 1
+			maxWhich _ 1
 
 		# new value for Which on Switch
-		newWhich = -1.0
+		newWhich _ -1.0
 		__ forwards:
 
-			newWhich = currWhich + 1.0
+			newWhich _ currWhich + 1.0
 			__ maxWhich < newWhich:
-				newWhich = 0.0
+				newWhich _ 0.0
 
 		____
 
-			newWhich = currWhich - 1.0
+			newWhich _ currWhich - 1.0
 			__ newWhich < 0.0:
-				newWhich = maxWhich
+				newWhich _ maxWhich
 
 		n.knob('which').sV..(newWhich)
 
@@ -147,12 +147,12 @@ ___ OCIOColorSpace(n):
 	___
 
 		# get knobs
-		k1 = n.knob('in_colorspace')
-		k2 = n.knob('out_colorspace')
+		k1 _ n.knob('in_colorspace')
+		k2 _ n.knob('out_colorspace')
 
 		# get values
-		inC = k1.v.. ()
-		outC = k2.v.. ()
+		inC _ k1.v.. ()
+		outC _ k2.v.. ()
 
 		# set inverse values
 		k1.sV..(outC)
@@ -169,35 +169,35 @@ ___ Shuffle(n, forwards):
 	___
 
 		# get knob
-		k = n.knob('in')
+		k _ n.knob('in')
 
 		# get current layer (str)
-		currL = k.v.. ()
+		currL _ k.v.. ()
 
 		# get all existing layers
-		listL = ?.layers()
+		listL _ ?.layers()
 
 		# get index of current layer
-		i = 0
+		i _ 0
 		___ eachL __ listL:
 			__ eachL __ currL:
 				break
-			i += 1
+			i +_ 1
 
 		# get new layer
 		__ forwards:
 
 			__ le.(listL) __ i + 1:
-				newL = listL[0]
+				newL _ listL[0]
 			____
-				newL = listL[i + 1]
+				newL _ listL[i + 1]
 
 		____
 
 			__ i __ 0:
-				newL = listL[le.(listL) - 1]
+				newL _ listL[le.(listL) - 1]
 			____
-				newL = listL[i - 1]
+				newL _ listL[i - 1]
 
 
 		# set new layer
@@ -218,13 +218,13 @@ ___ FrameHold(n, forwards):
 	___
 
 		# get knob
-		k = n.knob('first_frame')
+		k _ n.knob('first_frame')
 
 		# get current frame
-		currF = k.gV..
+		currF _ k.gV..
 
 		# next value
-		newF = currF + 1 __ forwards else currF - 1
+		newF _ currF + 1 __ forwards else currF - 1
 
 		# set new value
 		k.sV..(newF)
@@ -240,22 +240,22 @@ ___ anyChannelKnob(n, knobName, forwards):
 	___
 
 		# get knob
-		k = n.knob(knobName)
+		k _ n.knob(knobName)
 
 		# get knob value (str)
-		currL = k.v.. ()
+		currL _ k.v.. ()
 
 		# get all possible layers
-		listL = ?.layers()
+		listL _ ?.layers()
 		listL.insert(0, 'all')
 		listL.insert(1, 'none')
 
 		# get index of current layer
-		i = 0
+		i _ 0
 		___ eachL __ listL:
 			__ eachL __ currL:
 				break
-			i += 1
+			i +_ 1
 
 
 
@@ -263,16 +263,16 @@ ___ anyChannelKnob(n, knobName, forwards):
 		__ forwards:
 
 			__ le.(listL) __ i + 1:
-				newL = listL[0]
+				newL _ listL[0]
 			____
-				newL = listL[i + 1]
+				newL _ listL[i + 1]
 
 		____
 
 			__ i __ 0:
-				newL = listL[le.(listL) - 1]
+				newL _ listL[le.(listL) - 1]
 			____
-				newL = listL[i - 1]
+				newL _ listL[i - 1]
 
 
 		# set new layer
@@ -290,13 +290,13 @@ ___ anyListKnob(n, knobName, forwards):
 	___
 
 		# get knob
-		k = n.knob(knobName)
+		k _ n.knob(knobName)
 
 		# get knob value (int)
-		currOp = k.gV..
+		currOp _ k.gV..
 
 		# operation count
-		countOp = le.(k.values())
+		countOp _ le.(k.values())
 
 
 		# if forwards scrolling
@@ -332,13 +332,13 @@ ___ anyListKnob(n, knobName, forwards):
 ___ giveLabel(n, knobName):
 
 		# get label knob
-		label = n.knob('label')
+		label _ n.knob('label')
 
 		# get current label text
-		currLabel = label.gV..
+		currLabel _ label.gV..
 
 		# new label text
-		labelText = '[value ' + knobName + ']'
+		labelText _ '[value ' + knobName + ']'
 
 
 		# check if the label is already present
@@ -353,7 +353,7 @@ ___ giveLabel(n, knobName):
 
 
 # cycle node (forwards or backwards)
-___ CycleOperations(forwards = T..):
+___ CycleOperations(forwards _ T..):
 
 	# call function with cycle for each node
 	___ i __ ?.sN.. :

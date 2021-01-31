@@ -8,7 +8,7 @@ ______ itertools
 
 ___ toggle_viewer_lut
     """Iterates thru viewer luts in the viewer"""
-    viewer _ ?.activeViewer().node()['viewerProcess']
+    viewer _ ?.aV...node()['viewerProcess']
     luts _ viewer.values()
     x _ itertools.cycle(luts)
     ___ dummy __ ra..(le.(luts)):

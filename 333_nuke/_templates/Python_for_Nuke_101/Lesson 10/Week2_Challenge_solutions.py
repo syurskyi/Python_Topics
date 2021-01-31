@@ -25,7 +25,7 @@ Find a way to set the FrameHold’s first frame knob to the current frame when i
 Add the solution below to your menu.py
 """
 
-nuke.addOnUserCreate(lambda:nuke.thisNode()['first_frame'].setValue(nuke.frame()), nodeClass='FrameHold')
+nuke.addOnUserCreate(l____:nuke.thisNode()['first_frame'].setValue(nuke.frame()), nodeClass_'FrameHold')
 
 
 
@@ -42,10 +42,10 @@ nuke.pAP..('./icons')
 # Also, we no longer need to be so specific about the filepath in our menu.py
 
 # Change this:
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon=dir+"/icons/myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
 
 # into this
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon="myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_"myGizmos_icon.png")
 
 
 
@@ -57,4 +57,4 @@ Add a custom gizmo to your new myGizmos menu -- you can download one from my web
 Add the solution below to your menu.py
 """
 
-myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon="bm_CameraShake_icon.png")
+myGizmosMenu.addCommand('bm_CameraShake', 'nuke.createNode("bm_CameraShake")', icon_"bm_CameraShake_icon.png")

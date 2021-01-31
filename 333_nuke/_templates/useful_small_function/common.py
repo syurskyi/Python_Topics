@@ -29,7 +29,7 @@ _____ __
 
 ___ topInput(node,input,ch_class,knob,ch_frame):
     __ node:
-        input_node=node.input(input)
+        input_node_node.input(input)
         __ input_node:
             __ input_node.C..  __ ch_class :
                 __ input_node.knob(knob):
@@ -38,7 +38,7 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
                 __ input_node.C.. __'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=?.views().index(?.thisView())
+                    current_view_?.views().index(?.thisView())
                     r_ topInput(input_node,current_view,ch_class,knob,ch_frame)
                 ____
                     r_ topInput(input_node,0,ch_class,knob,ch_frame)
@@ -48,9 +48,9 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
 # Finds node of certain class in the input pipe upstream and if there is a knob
 # specified returns its object
 
-___ topInputKnob(node,ch_class,knob,input=0):
+___ topInputKnob(node,ch_class,knob,input_0):
     __ node:
-        input_node=node.input(input)
+        input_node_node.input(input)
         __ input_node:
             __ nodeClass(input_node) __ ch_class :
                 __ input_node.knob(knob):
@@ -59,7 +59,7 @@ ___ topInputKnob(node,ch_class,knob,input=0):
                 __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=?.views().index(?.thisView())
+                    current_view_?.views().index(?.thisView())
                     r_ topInputKnob(input_node,current_view,ch_class,knob)
                 ____
                     r_ topInputKnob(input_node,ch_class,knob)
@@ -69,9 +69,9 @@ ___ topInputKnob(node,ch_class,knob,input=0):
 # Finds node of certain class in the input pipe upstream and 
 # returns node onject
 
-___ topInputNode(node,ch_class,input=0):
+___ topInputNode(node,ch_class,input_0):
     __ node:
-        input_node=node.input(input)
+        input_node_node.input(input)
         __ input_node:
             __ nodeClass(input_node) __ ch_class :
                 r_ input_node
@@ -79,7 +79,7 @@ ___ topInputNode(node,ch_class,input=0):
                 __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=?.views().index(?.thisView())
+                    current_view_?.views().index(?.thisView())
                     r_ topInputNode(input_node,current_view,ch_class)
                 ____
                     r_ topInputNode(input_node,ch_class)
@@ -114,10 +114,10 @@ ___ ensureFloat(v.. ):
 
 ___ getKnobViews(knob):
     __ knob:
-        s=knob.toScript()
-        pt=re.compile('\w+\s\{')
-        ss=re.findall(pt,s)
-        result =[]
+        s_knob.toScript()
+        pt_re.compile('\w+\s\{')
+        ss_re.findall(pt,s)
+        result _[]
         ___ i __ ss:
 #            ss=i.lstrip(' ').split(' ')[0]
             __ i:
@@ -135,7 +135,7 @@ ___ getKnobViews(knob):
 
 ___ nodeClass(node):
     __ node:
-        __ ( 'nodeClass' __ node.knobs().keys() ) :
+        __ ( 'nodeClass' __ node.knobs().k..  ) :
             r_ node['nodeClass'].v.. ()
         ____
             r_ node.C..
@@ -151,13 +151,13 @@ ___ nodeClass(node):
 
 ___ animCurveMinMax(curve):
     ___
-        minX,minY=1000000000000,1000000000000
-        maxX,maxY=-100000000000,-1000000000000
+        minX,minY_1000000000000,1000000000000
+        maxX,maxY_-100000000000,-1000000000000
         ___ i __ curve.keys
             __ i.y<minY:
-                minX,minY=i.x,i.y
+                minX,minY_i.x,i.y
             __ i.y>maxY:
-                maxX,maxY=i.x,i.y
+                maxX,maxY_i.x,i.y
         r_ minX,minY,maxX,maxY
 
     except Exception,e:
@@ -170,13 +170,13 @@ ___ animCurveMinMax(curve):
 # 
 #
 ___ getTrackNames(node):
-    k=node['tracks']
-    s=node['tracks'].toScript().s..(' \n} \n{ \n ')
+    k_node['tracks']
+    s_node['tracks'].toScript().s..(' \n} \n{ \n ')
     s.pop(0)
-    ss=str(s)[2:].s..('\\n')
+    ss_str(s)[2:].s..('\\n')
     ss.pop(-1)
     ss.pop(-1)
-    outList=[]
+    outList_[]
     ___ i __ ss:
         outList.ap..(i.s..('"')[1])
     r_ outList
@@ -190,47 +190,47 @@ ___ getTrackNames(node):
 # Uses nodeClass function from this module
 #
 
-___ getHelpUrl(node=N..):
+___ getHelpUrl(node_N..):
 
     # url will be used in case of unknown class or node is not provided
 
-    mySite='www.chimuru.com'
+    mySite_'www.chimuru.com'
 
     # Check if there is override for default value
     __ __.getenv('TK_HELP_URL'):
-        mySite=__.getenv('TK_HELP_URL')
+        mySite___.getenv('TK_HELP_URL')
 
     __ node:
         # Reading os environment variable to find file with help urls
         __ __.getenv('TK_HELP_FILE'):
-            helpFile=__.getenv('TK_HELP_FILE')
+            helpFile___.getenv('TK_HELP_FILE')
 
             # opening help Settings file to read settings
-            settings=[]
+            settings_[]
             __ __.pa__.isfile( helpFile ):
-                prefFile = open(helpFile,"r")
-                prefContent = prefFile.readlines()
+                prefFile _ open(helpFile,"r")
+                prefContent _ prefFile.readlines()
                 prefFile.close()
 
                 ___ i __ prefContent:
-                    key,v.. = i.rstrip().s..('::')
+                    key,v.. _ i.rstrip().s..('::')
                     settings.ap..((key,v.. ))
          
-            ndClass=nodeClass(node)
+            ndClass_nodeClass(node)
 
             # Look through list of values from settings to see if there a url for that node
-            url=mySite
+            url_mySite
             ___ key,v..  __ settings:
                 __ ndClass__key:
-                    url=v..
+                    url_v..
 
         # if help settings file is not defined return my site            
         ____
-            url=mySite
+            url_mySite
 
     # if no node provided return my site
     ____
-        url=mySite
+        url_mySite
 
     r_ url
 
@@ -240,8 +240,8 @@ ___ getHelpUrl(node=N..):
 #
 # returns first empty input pipe starting from start_input pipe
 #
-___ emptyInput(node,start_input=0):
-    inputs=node.inputs()
+___ emptyInput(node,start_input_0):
+    inputs_node.inputs()
     ___ input __ ra..(start_input,inputs):
         __ node.input(input)__N..:
             r_ input
@@ -253,10 +253,10 @@ ___ emptyInput(node,start_input=0):
 #
 # returns first not empty input pipe starting from start_input pipe
 #
-___ nonEmptyInput(node,start_input=0):
-    inputs=node.inputs()
+___ nonEmptyInput(node,start_input_0):
+    inputs_node.inputs()
     ___ input __ ra..(start_input,inputs):
-        __ node.input(input)!=N..:
+        __ node.input(input)!_N..:
             r_ input
     r_ N..
 
@@ -267,8 +267,8 @@ ___ nonEmptyInput(node,start_input=0):
 # shifts connection pipes to get rid of empty connections
 # made for CountSheet rewiring but might be usefull for 3dScenes and merges as well
 #
-___ shiftConnections(node,start=0):
-    inputs=node.inputs()
+___ shiftConnections(node,start_0):
+    inputs_node.inputs()
     ___ input __ ra..(start,inputs):
         node.setInput(input, node.input(input+1))
     __ emptyInput(node)__start:
@@ -283,9 +283,9 @@ ___ shiftConnections(node,start=0):
 # looks through all folders and returns path list if file is found
 #
 ___ where(filename):
-    file_list=[]
+    file_list_[]
     ___ pa__ __ ?.pluginPath
-        check_file='%s%s%s' % (pa__, __.sep, filename)
+        check_file_'%s%s%s' % (pa__, __.sep, filename)
         __ __.pa__.isfile( check_file ):
             file_list.ap..(check_file)
     __ file_list:

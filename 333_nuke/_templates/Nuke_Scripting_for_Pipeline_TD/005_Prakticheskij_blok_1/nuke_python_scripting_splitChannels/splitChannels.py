@@ -1,28 +1,28 @@
 _____ ?
 
-offset = 100
+offset _ 100
 
-___ split
-    sel = ?.sN..
+___ sp__
+    sel _ ?.sN..
     __ sel:
         ___ node __ sel:
-            chan = node.channels()
-            chan = list(set([x.split('.')[0] ___ x __ chan]))
-            shs = []
+            chan _ node.channels()
+            chan _ list(set([x.sp__('.')[0] ___ x __ chan]))
+            shs _ []
             ___ ch __ chan:
-                sh = ?.n__.Shuffle(name=ch,
-                                        inputs=[node],
-                                        postage_stamp=T..,
-                                        hide_input=T..)
+                sh _ ?.n__.Shuffle(name_ch,
+                                        inputs_[node],
+                                        postage_stamp_T..,
+                                        hide_input_T..)
                 sh['in'].sV..(ch)
                 shs.a__(sh)
 
-                cc = ?.n__.ColorCorrect(inputs=[sh])
+                cc _ ?.n__.ColorCorrect(inputs_[sh])
 
-            y = node.yp__() + offset
-            x = node.xpos()
+            y _ node.yp__() + offset
+            x _ node.xpos()
             ___ i, s __ enumerate(shs):
-                nx = x + (offset*i)
+                nx _ x + (offset*i)
                 s.setXYpos(nx, y)
 
 

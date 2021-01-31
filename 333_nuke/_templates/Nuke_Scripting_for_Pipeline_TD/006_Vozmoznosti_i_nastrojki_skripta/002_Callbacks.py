@@ -3,8 +3,8 @@ _____ ?
 ___ my_cb
     print ?.tN.. .n..
 
-?.addOnCreated(my_cb, nodeClass='Transform')
-?.removeOnCreated(my_cb, nodeClass='Transform')
+?.addOnCreated(my_cb, nodeClass_'Transform')
+?.removeOnCreated(my_cb, nodeClass_'Transform')
 
 ___ my_cb2
     print ?.thisKnob().gV..()
@@ -27,8 +27,8 @@ ___ myCallback2
     print ?.tN.. .n..
 
 
-?.addOnCreate(myCallback2, nodeClass='Transform')
-?.removeOnCreate(myCallback2, nodeClass='Transform')
+?.addOnCreate(myCallback2, nodeClass_'Transform')
+?.removeOnCreate(myCallback2, nodeClass_'Transform')
 
 
 ___ printKnob
@@ -51,10 +51,10 @@ ___ uiUpdate
 
 
 ___ multiKnob
-    n = ?.tN..
-    k = ?.thisKnob()
-    other = ?.sN..(n.Class())
-    val = k.value()
+    n _ ?.tN..
+    k _ ?.thisKnob()
+    other _ ?.sN..(n.Class())
+    val _ k.value()
     ___ node __ other:
         __ no. node __ n:
             node[k.n..].sV..(val)

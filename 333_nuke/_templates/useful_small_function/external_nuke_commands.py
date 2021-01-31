@@ -12,16 +12,16 @@ Brief:
 
 '''
 
-__author__ = 'Jaime Rivera <jaime.rvq@gmail.com>'
-__copyright__ = 'Copyright 2018, Jaime Rivera'
-__credits__ = # list
-__license__ = 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)'
-__maintainer__ = 'Jaime Rivera'
-__email__ = 'jaime.rvq@gmail.com'
-__status__ = 'Testing'
+__author__ _ 'Jaime Rivera <jaime.rvq@gmail.com>'
+__copyright__ _ 'Copyright 2018, Jaime Rivera'
+__credits__ _ # list
+__license__ _ 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)'
+__maintainer__ _ 'Jaime Rivera'
+__email__ _ 'jaime.rvq@gmail.com'
+__status__ _ 'Testing'
 
 
-___ nuke_paint_nodes(input=N..):
+___ nuke_paint_nodes(input_N..):
 
     ______ ?
 
@@ -37,25 +37,25 @@ ___ nuke_paint_nodes(input=N..):
         r_ 'lime', 'Nodes painted correctly'
 
 
-___ nuke_constant(input=N..):
+___ nuke_constant(input_N..):
 
     ______ ?
 
-    const = ?.n__.Constant()
+    const _ ?.n__.Constant()
     const['color'].sV..(input)
     r_ 'lime', 'Constant node created'
 
 
-___ nuke_backdrop(input=N..):
+___ nuke_backdrop(input_N..):
 
     ______ n_s_
 
-    bd = n_s_.autoBackdrop()
+    bd _ n_s_.autoBackdrop()
     bd['tile_color'].sV..(in_(input))
     r_ 'lime', 'Backdrop node created'
 
 
-___ nuke_IO(input=N..):
+___ nuke_IO(input_N..):
 
     ___ execute_nuke(executable):
         ______ ?
@@ -75,11 +75,11 @@ ___ nuke_set(input, color):
 
     __ le.(?.sN.. __ 0
 
-        object = st.(input.s..('.')[0])
-        attribute = st.(input.s..('.')[1])
+        object _ st.(input.s..('.')[0])
+        attribute _ st.(input.s..('.')[1])
 
         ___
-            node = ?.tN..(object)
+            node _ ?.tN..(object)
             node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly'
         ______ E.. __ e:
@@ -88,15 +88,15 @@ ___ nuke_set(input, color):
 
     ____ le.(?.sN..()) __ 1:
 
-        object = ?.sN..()[0].n..
+        object _ ?.sN..()[0].n..
         print object
-        attribute = input
+        attribute _ input
 
         __ '.' __ input:
             r_ 'red', 'Knob value "{}" cannot be set to "{}"'.f..(attribute, object)
 
         ___
-            node = ?.tN..(object)
+            node _ ?.tN..(object)
             node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly'
         ______ E.. __ e:
@@ -105,13 +105,13 @@ ___ nuke_set(input, color):
 
     ____ le.(?.sN..()) > 1:
 
-        node_number = le.(?.sN..())
+        node_number _ le.(?.sN..())
 
         ___
             ___ node __ ?.sN..
-                object = node.n..
-                attribute = input
-                node = ?.tN..(object)
+                object _ node.n..
+                attribute _ input
+                node _ ?.tN..(object)
                 node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly to {} selected nodes'.f..(node_number)
         ______ E.. __ e:
@@ -125,12 +125,12 @@ ___ nuke_get(input):
 
     __ le.(?.sN..()) __ 0:
 
-        object = st.(input.s..('.')[0])
-        attribute = st.(input.s..('.')[1])
+        object _ st.(input.s..('.')[0])
+        attribute _ st.(input.s..('.')[1])
 
         ___
-            node = ?.tN..(object)
-            attr = node[attribute].v.. ()
+            node _ ?.tN..(object)
+            attr _ node[attribute].v.. ()
             r_ 'lime', st.(attr)
         ______ E.. __ e:
             print e
@@ -138,15 +138,15 @@ ___ nuke_get(input):
 
     ____ le.(?.sN..()) __ 1:
 
-        object = st.(?.sN..()[0].n..
-        attribute = input
+        object _ st.(?.sN..()[0].n..
+        attribute _ input
 
         __ '.' __ input:
             r_ 'red', 'Cannot get knob value "{}" from "{}"'.f..(attribute, object)
 
         ___
-            node = ?.tN..(object)
-            attr = node[attribute].v.. ()
+            node _ ?.tN..(object)
+            attr _ node[attribute].v.. ()
             r_ 'lime', st.(attr)
         ______ E.. __ e:
             print e

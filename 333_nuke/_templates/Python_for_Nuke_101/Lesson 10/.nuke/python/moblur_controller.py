@@ -26,7 +26,7 @@ def moblur_controller():
 			return
 
 	# Create a list to hold nodes.
-	node_list = []
+	node_list _ []
 
 	# Loop through all nodes, and the ones that have a motionblur or samples knob, add them to node_list.
 	___ n __ nuke.allNodes():
@@ -34,7 +34,7 @@ def moblur_controller():
 			node_list.append(n)
 
 	# Create a NoOp node, and set it's name.
-	NoOp = nuke.createNode('NoOp')
+	NoOp _ nuke.createNode('NoOp')
 	NoOp['name'].setValue("GLOBAL_MOTIONBLUR_CONTROLLER")
 
 	# Make the node black, and the text bold.
@@ -75,7 +75,7 @@ def moblur_controller():
 	# We're adding the expressions to the knobs exactly the same way we are when we create the NoOp node to begin with.
 	def addExpr():
 
-		tn = nuke.thisNode()
+		tn _ nuke.thisNode()
 
 		if tn.knob('motionblur'):
 			tn['motionblur'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
@@ -113,7 +113,7 @@ def moblur_controller():
 
 	# Like addOnCreate, except it runs when the node is deleted.
 	# The argument it takes is a the name of a function to run...
-	nuke.addOnDestroy(deleteExpressions, nodeClass="NoOp")
+	nuke.addOnDestroy(deleteExpressions, nodeClass_"NoOp")
 
 
 

@@ -53,10 +53,10 @@ ___ create_numerical_animation(node, noop, m_key, key, first, last):  # pylint: 
         last (int): Frame number when animation should stop.
 
     """
-    animation _ ?.D_K..(key)
-    noop.aK..(animation)
-    animation.setAnimated()
-    anim _ animation.animations()[0]
+    a.. _ ?.D_K..(key)
+    noop.aK..(a..)
+    a...sA..
+    anim _ a...a..()[0]
     anim.addKey([?.AnimationKey(i, node.metadata(m_key, i)) ___ i __ xrange(first, last)])
 
     ?.show(noop)
@@ -77,12 +77,12 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
     mtx _ le.(node.metadata(m_key))
     array _ ?.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
     noop.aK..(array)
-    array.setAnimated()
+    array.sA..
 
     ___ frame __ xrange(first, last):
         ___ index __ ra__(mtx):
             keys _ # list
-            anim _ array.animations()[index]
+            anim _ array.a..()[index]
             keys.ap..(?.AnimationKey(frame, node.metadata(m_key, frame)[index]))
             anim.addKey(keys)
 
@@ -126,7 +126,7 @@ ___ get_metadata(node):
 
     """
     ___
-        r_ {key.rpartition('/')[-1]: key ___ key __ node.metadata().keys()}
+        r_ {key.rpartition('/')[-1]: key ___ key __ node.metadata().k.. }
     ______ AttributeError:
         r_ N..
 

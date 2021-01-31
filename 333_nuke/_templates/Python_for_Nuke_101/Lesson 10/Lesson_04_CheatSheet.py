@@ -4,7 +4,7 @@
 nuke.createNode('Shuffle')
 
 # Creates a Shuffle node with all channels set to 'green'.
-myShuffle = nuke.createNode("Shuffle")
+myShuffle _ nuke.createNode("Shuffle")
 
 myShuffle['red'].setValue('green')
 myShuffle['green'].setValue('green')
@@ -30,12 +30,12 @@ nuke.sN.. ['xpos'].setValue(nuke.tN..('Blur15')['xpos'].value()+150)
 nuke.sN.. ['ypos'].setValue(nuke.tN..('Blur15')['ypos'].value())
 
 # Same thing, but a little cleaner with variables.
-node_to_align_to = nuke.tN..('Blur15')
-node_xPos = node_to_align_to['xpos'].value()
-node_yPos = node_to_align_to['ypos'].value()
+node_to_align_to _ nuke.tN..('Blur15')
+node_xPos _ node_to_align_to['xpos'].value()
+node_yPos _ node_to_align_to['ypos'].value()
  
-selected_xPos_knob = nuke.sN.. ['xpos']
-selected_yPos_knob = nuke.sN.. ['ypos']
+selected_xPos_knob _ nuke.sN.. ['xpos']
+selected_yPos_knob _ nuke.sN.. ['ypos']
 
 selected_xPos_knob.setValue(node_xPos+150)
 selected_yPos_knob.setValue(node_yPos)
@@ -55,20 +55,20 @@ def theNameOfYourFunction(arg1, arg2, arg3):
 # Create a simple addition calculator using arguments .
 def simple_addition_calc(value1, value2):
 
-    print str(value1)+" + "+str(value2)+" = "+str(value1+value2)
+    print st_(value1)+" + "+st_(value2)+" = "+st_(value1+value2)
 
 simple_addition_calc(5, 12)
 
 
 # Adding menu items for our shuffleShortcuts.py functions
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Red to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)", "ctrl+shift+r", icon="redShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Green to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)", "ctrl+shift+g", icon="greenShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Blue to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)", "ctrl+shift+b", icon="blueShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "shuffleShortcuts.createCustomShuffle('alpha', 'rgba', 'alpha', 1, 1, 1)", "ctrl+shift+a", icon="alphaToAll.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 0)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'black', 0, 0, 0)", "ctrl+shift+`", icon="alpha0Shuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 1)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'white', 1, 1, 1)", "ctrl+shift+1", icon="alpha1Shuffle.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Red to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)", "ctrl+shift+r", icon_"redShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Green to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)", "ctrl+shift+g", icon_"greenShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Blue to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)", "ctrl+shift+b", icon_"blueShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "shuffleShortcuts.createCustomShuffle('alpha', 'rgba', 'alpha', 1, 1, 1)", "ctrl+shift+a", icon_"alphaToAll.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 0)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'black', 0, 0, 0)", "ctrl+shift+`", icon_"alpha0Shuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 1)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'white', 1, 1, 1)", "ctrl+shift+1", icon_"alpha1Shuffle.png", shortcutContext_2)
 
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Split RGB channels)", "shuffleShortcuts.shuffleRGBchannels()", "ctrl+shift+s", icon="ShuffleSplitRGB.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Split RGB channels)", "shuffleShortcuts.shuffleRGBchannels()", "ctrl+shift+s", icon_"ShuffleSplitRGB.png", shortcutContext_2)
 
 
 

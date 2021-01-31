@@ -21,24 +21,24 @@ def shortcut_operationSwitcher():
 
 	# If no node is selected, we should just create an invert node.
 	try:
-    	node = nuke.sN..
+    	node _ nuke.sN..
 	except:
     	nuke.createNode('Invert')
     	return
 
 	# Create variable for easier access to nuke.selectedNode()
-    node = nuke.sN..
+    node _ nuke.sN..
 	# Create Dictionary with keys & values being the opposite operations
-    merge_ops = {'over':'under', 'mask':'stencil', 'plus':'from', 'multiply':'divide', 'max':'min', 'conjoint-over':'disjoint-over', 'log2lin':'lin2log'}
+    merge_ops _ {'over':'under', 'mask':'stencil', 'plus':'from', 'multiply':'divide', 'max':'min', 'conjoint-over':'disjoint-over', 'log2lin':'lin2log'}
     
     # Check if the selected node is a Merge node
     if node.Class() == "Merge2" or node.Class() == "Log2Lin":
 
 		# Set a variable that holds the current value of the 'operation' knob
-		current_op = node['operation'].value()
+		current_op _ node['operation'].value()
 
 		# Search for the current value of the 'operation' knob in our dictionary's keys
-		if current_op __ merge_ops.keys():
+		if current_op __ merge_ops.k.. :
 
 			# If a match is found, (e.g. the current operation is 'mask', and there is a key in our dictionary called 'mask'),
 			# get the value of the matching key from our dictionary ('stencil', in this example), and set the operation knob of
@@ -47,7 +47,7 @@ def shortcut_operationSwitcher():
 
 		# However if no match is found, do the same thing but search the keys in the dictionary & set the matching value instead.
 		elif current_op __ merge_ops.values():
-			node['operation'].setValue(merge_ops.keys()[merge_ops.values().index(current_op)])
+			node['operation'].setValue(merge_ops.k.. [merge_ops.values().index(current_op)])
 
 
 # Add menu item

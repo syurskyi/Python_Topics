@@ -6,12 +6,12 @@ Add the solution below to your menu.py
 """
 
 # ----- MERGE NODE SHORTCUTS -----------------------------------
-mergeMenu = nuke.menu('Nodes').findItem("Merge/Merges")
+mergeMenu _ nuke.menu('Nodes').findItem("Merge/Merges")
 
-mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon="Out.png", shortcutContext=2)
-mergeMenu.addCommand('Mask', 'nuke.createNode("Merge2", "operation mask bbox A")', "alt+i", icon="In.png", shortcutContext=2)
-mergeMenu.addCommand('Plus', 'nuke.createNode("Merge2", "operation plus")', "alt+]", icon="Add.png", shortcutContext=2)
-mergeMenu.addCommand('From', 'nuke.createNode("Merge2", "operation from")', "alt+[", icon="From.png", shortcutContext=2)
+mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon_"Out.png", shortcutContext_2)
+mergeMenu.addCommand('Mask', 'nuke.createNode("Merge2", "operation mask bbox A")', "alt+i", icon_"In.png", shortcutContext_2)
+mergeMenu.addCommand('Plus', 'nuke.createNode("Merge2", "operation plus")', "alt+]", icon_"Add.png", shortcutContext_2)
+mergeMenu.addCommand('From', 'nuke.createNode("Merge2", "operation from")', "alt+[", icon_"From.png", shortcutContext_2)
 
 
 
@@ -24,10 +24,10 @@ Run this in Nuke's Script Editor, and play with changing the value of x & y to s
 
 # Does x + y = 20?
 
-x = 5
-y = 15
+x _ 5
+y _ 15
 
 if x + y == 20:
     print "Yes, x + y = 20!"
 else:
-    print "x + y does not equal 20. If x = "+str(x)+" and y = "+str(y)+" then "+str(x)+" + "+str(y)+" = "+str(x+y)
+    print "x + y does not equal 20. If x = "+st_(x)+" and y = "+st_(y)+" then "+st_(x)+" + "+st_(y)+" = "+st_(x+y)

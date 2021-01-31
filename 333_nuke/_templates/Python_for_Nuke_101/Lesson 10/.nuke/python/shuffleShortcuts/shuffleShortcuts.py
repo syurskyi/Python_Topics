@@ -19,7 +19,7 @@ import nuke
 def createCustomShuffle(in_channel, out_channel, set_channel, rColor, gColor, bColor):
 
     # Create a new shuffle node, and assign it to a variable so we can change some things...
-    myShuffle = nuke.createNode("Shuffle")
+    myShuffle _ nuke.createNode("Shuffle")
 
     # Change the input & output channels to what is defined in the in_channel and out_channel arguments.
     myShuffle['in'].setValue(in_channel)
@@ -43,19 +43,19 @@ def createCustomShuffle(in_channel, out_channel, set_channel, rColor, gColor, bC
 def shuffleRGBchannels():
 
     # Create a variable for the selected node, before creating any shuffle nodes.
-    selectedNode = nuke.sN..
+    selectedNode _ nuke.sN..
 
     # Get the X-Position and y-Position of the selected node.
-    selectedNode_xPos = selectedNode['xpos'].value()
-    selectedNode_yPos = selectedNode['ypos'].value()
+    selectedNode_xPos _ selectedNode['xpos'].value()
+    selectedNode_yPos _ selectedNode['ypos'].value()
 
     # Create our Red, Green & Blue Shuffle nodes, and assign them to a variable after creation.
     createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)
-    redShuffle = nuke.sN..
+    redShuffle _ nuke.sN..
     createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)
-    greenShuffle = nuke.sN..
+    greenShuffle _ nuke.sN..
     createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)
-    blueShuffle = nuke.sN..
+    blueShuffle _ nuke.sN..
 
     # Set the input of the Red Shuffle node to the selected node, and Transform the Red Shuffle node down and to the left.
     redShuffle.setInput(0, selectedNode)
@@ -73,7 +73,7 @@ def shuffleRGBchannels():
     blueShuffle['ypos'].setValue(selectedNode_yPos+150)
 
     # Create merge node and set the operation to max, connect the inputs to our 3 shuffle nodes, then Transform the Merge node into place.
-    mergeNode = nuke.createNode("Merge2")
+    mergeNode _ nuke.createNode("Merge2")
     mergeNode['operation'].setValue("max")
     mergeNode.setInput(0, redShuffle)
     mergeNode.setInput(1, greenShuffle)
@@ -84,11 +84,11 @@ def shuffleRGBchannels():
 
 
 # Add menu items to the Channel nodes menu
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Red to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)", "ctrl+shift+r", icon="redShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Green to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)", "ctrl+shift+g", icon="greenShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Blue to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)", "ctrl+shift+b", icon="blueShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'alpha', 1, 1, 1)", "ctrl+shift+a", icon="alphaToAll.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 0)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'black', 0, 0, 0)", "ctrl+shift+`", icon="alpha0Shuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 1)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'white', 1, 1, 1)", "ctrl+shift+1", icon="alpha1Shuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Split RGB channels)", "shuffleShortcuts.shuffleRGBchannels()", "ctrl+shift+s", icon="ShuffleSplitRGB.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Red to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)", "ctrl+shift+r", icon_"redShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Green to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)", "ctrl+shift+g", icon_"greenShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Blue to All)", "shuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)", "ctrl+shift+b", icon_"blueShuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'alpha', 1, 1, 1)", "ctrl+shift+a", icon_"alphaToAll.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 0)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'black', 0, 0, 0)", "ctrl+shift+`", icon_"alpha0Shuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 1)", "shuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'white', 1, 1, 1)", "ctrl+shift+1", icon_"alpha1Shuffle.png", shortcutContext_2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Split RGB channels)", "shuffleShortcuts.shuffleRGBchannels()", "ctrl+shift+s", icon_"ShuffleSplitRGB.png", shortcutContext_2)
 

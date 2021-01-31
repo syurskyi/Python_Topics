@@ -2,7 +2,7 @@
 
 # The right way.
 
-n = nuke.sN..
+n _ nuke.sN..
 
 if n.knob('motionblur'):
     print "yes"
@@ -13,7 +13,7 @@ else:
 
 # The wrong way.
 
-n = nuke.sN..
+n _ nuke.sN..
 
 if n['motionblur']:
     print "yes"
@@ -29,7 +29,7 @@ else:
 # ----- ADDING KNOBS TO A NODE --------------------
 
 # Create a NoOp node and name it.
-NoOp = nuke.createNode('NoOp')
+NoOp _ nuke.createNode('NoOp')
 NoOp['name'].setValue("GLOBAL_MOTIONBLUR_CONTROLLER")
 	
 # Add an Integer knob.
@@ -93,7 +93,7 @@ https://learn.foundry.com/nuke/developers/63/ndkdevguide/knobs-and-handles/knobf
 
 # Another example: putting the following TCL expression on a Grade node's mix knob will
 # set the mix knob to 0.5 if multiply has a value of 2 or higher.
-multiply >= 2 ? 0.5 : 1
+multiply >_ 2 ? 0.5 : 1
 
 # Last one... You can make the $gui expression more specific this way:
 # Putting the following expression on a 'ScanlineRender' node's 'samples' knob will

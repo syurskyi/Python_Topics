@@ -27,7 +27,7 @@ Hint: Go back to Lesson 02.
 
 # Add a second argument to the .addOnDestroy() function, that references the NoOp node's Class.
 
-nuke.addOnDestroy(deleteExpressions, nodeClass="NoOp")
+nuke.addOnDestroy(deleteExpressions, nodeClass_"NoOp")
 
 
 
@@ -85,7 +85,7 @@ If you add nodes after creating the GLOBAL_MOTIONBLUR_CONTROLLER, they’re not 
 # before our deleteExpressions() function, we need to create a new function that adds the same expressions to the same knobs.
 
 	def addExpr():
-		tn = nuke.thisNode()
+		tn _ nuke.thisNode()
 		if tn.knob('motionblur'):
 			tn['motionblur'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
 			tn['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')

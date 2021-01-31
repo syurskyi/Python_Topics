@@ -66,10 +66,10 @@ ___ SelectNode(Viewer,warning):
         ___ n __ ?.aN..
             n.sS..(F..)
         __ Viewer __ ActiveViewer:
-            index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)+1
+            index1 _ ?.ViewerWindow.activeInput(?.aV..,F..)+1
             Nodes_[index1]
             ___
-                index2 _ ?.ViewerWindow.activeInput(?.activeViewer(),T..)+1
+                index2 _ ?.ViewerWindow.activeInput(?.aV..,T..)+1
                 Nodes.ap..(index2)
             ______
                 p..
@@ -90,7 +90,7 @@ ___ SelectNode(Viewer,warning):
             n.sS..(F..)
         __ Viewer __ ActiveViewer:
             ___
-                index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)
+                index1 _ ?.ViewerWindow.activeInput(?.aV..,F..)
                 Node _ ?.tN..(?.tN..(Viewer).input(index1).n..
                 Node.sS..(T..)
                 ?.show(Node)

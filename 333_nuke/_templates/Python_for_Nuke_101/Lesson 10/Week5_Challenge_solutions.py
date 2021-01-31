@@ -28,8 +28,8 @@ Search the internet for a way to export the results of our filepathLister to a t
 """
 
 # To write to a file, you have to assign it to a variable and open it, like so:
-script_name = os.path.basename(nuke.root()['name'].value())
-output_file = open("C:\\Users\\Ben\\Documents\\"+script_name+"_file_lister_output.txt", "w+")
+script_name _ os.path.basename(nuke.root()['name'].value())
+output_file _ open("C:\\Users\\Ben\\Documents\\"+script_name+"_file_lister_output.txt", "w+")
 
 """
 - We're creating a new variable for the script_name since we want to use it as part of our file name

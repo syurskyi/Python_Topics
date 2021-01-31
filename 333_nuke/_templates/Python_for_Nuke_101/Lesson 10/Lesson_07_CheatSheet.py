@@ -1,7 +1,7 @@
 # ----- DICTIONARY EXAMPLE --------------------
 
 # Create Dictionary
-dictionary = {'key1':'value1', 'key2':'value2', 'key3':'value3'}
+dictionary _ {'key1':'value1', 'key2':'value2', 'key3':'value3'}
 
 # Returns all keys and values.
 print dictionary
@@ -13,14 +13,14 @@ print dictionary.items()
 print dictionary['key2']
 
 # Returns the key for dictionary item "value2"
-print dictionary.keys()[dictionary.values().index('value2')]
+print dictionary.k.. [dictionary.values().index('value2')]
 
 # Returns the 3rd value in the list from the "KeyList" key.
-dict = {'KeyList':('item1','item2','item3','item4','item5')}
+dict _ {'KeyList':('item1','item2','item3','item4','item5')}
 print dict['KeyList'][2]
 
 # Return a list of all keys
-print dictionary.keys()
+print dictionary.k..
 
 # Return a list of all values
 print dictionary.values()
@@ -32,8 +32,8 @@ print dictionary.values()
 # ----- STORE ALL MERGE NODES AND THEIR CURRENT OPERATIONS ------------
 
 # Create a list to hold our merge nodes, and a dictionary to hold keys (Merge Nodes) and values (operation knobs)
-merge_nodes = []
-dictionary = {}
+merge_nodes _ []
+dictionary _ {}
 
 # Find all Merge nodes in our script, and add them to the merge_nodes list
 ___ node __ nuke.allNodes('Merge2'):
@@ -42,7 +42,7 @@ ___ node __ nuke.allNodes('Merge2'):
 # Loop through the merge_nodes list, and add the name of the merge node to the dictionary as a key,
 # and the value of it's operation knob as the value
 ___ i __ merge_nodes:
-    dictionary[i.name()] = i.knob('operation').value()
+    dictionary[i.name()] _ i.knob('operation').value()
 
 # Then print our dictionary items to check the right thing is being done.
 print dictionary.items()
@@ -55,10 +55,10 @@ print dictionary.items()
 
 # The keys are the names of VFX studios, and the values are lists containing countries the studios have offices.
 # The syntax reads {'key':('value in list 1', 'value in list 2', 'value in list 3')}
-VFX_Studios_Countries = {'ILM': ('USA', 'Canada', 'England', 'Singapore'), 'DNEG': ('England', 'Canada', 'India'), 'Digital Domain':('USA', 'Canada', 'India'), 'Weta':('New Zealand', ""), 'Method':('Canada', 'USA', 'Australia')}
+VFX_Studios_Countries _ {'ILM': ('USA', 'Canada', 'England', 'Singapore'), 'DNEG': ('England', 'Canada', 'India'), 'Digital Domain':('USA', 'Canada', 'India'), 'Weta':('New Zealand', ""), 'Method':('Canada', 'USA', 'Australia')}
 
 # Let's set 'England' as the country to find, by default.
-Country_Finder = 'England'
+Country_Finder _ 'England'
 
 # First, we must loop through the dictionary itself.
 ___ i __ VFX_Studios_Countries:
@@ -78,15 +78,15 @@ ___ i __ VFX_Studios_Countries:
 
 
 # ----- CREATING A DICTIONARY WHERE THE KEY IS A NODE, AND IT'S KNOBS ARE VALUES ------------
-n = nuke.sN..
-knob_list = []
+n _ nuke.sN..
+knob_list _ []
 
 # Add selected node's knobs to a list
 ___ i __ n.knobs():
     knob_list.append(i)
 
 # Create the dictionary, where our selected node is the key, and the list of knobs we just created in the value
-node_knobs = {n:knob_list}
+node_knobs _ {n:knob_list}
 
 
 # Return the dictionary

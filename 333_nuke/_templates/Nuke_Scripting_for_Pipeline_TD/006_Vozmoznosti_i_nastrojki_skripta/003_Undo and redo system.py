@@ -8,7 +8,7 @@ ___ i __ ra..(15):
     ?.n__.Blur()
 ?.Undo.end()
 
-undo = ?.Undo()
+undo _ ?.Undo()
 undo.begin('My Action')
 ___ i __ ra..(15):
     ?.n__.Blur()

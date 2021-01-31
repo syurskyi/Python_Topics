@@ -55,14 +55,14 @@ nuke.tN..('Merge5')['operation'].setValue('plus')
 # ----- WORKING WITH EXISTING MENUS ---------------
 
 # Assign an existing menu to a variable to access later.
-filterMenu = nuke.menu('Nodes').findItem("Filter")
+filterMenu _ nuke.menu('Nodes').findItem("Filter")
 
 # Add a legacy node to said existing menu.
 filterMenu.addCommand('Blocky', 'nuke.createNode("Blocky")')
 
 # Add a node to a submenu with a keyboard shortcut & an icon.
-mergeMenu = nuke.menu('Nodes').findItem("Merge/Merges")
-mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon="MergeOut.png", shortcutContext=2)
+mergeMenu _ nuke.menu('Nodes').findItem("Merge/Merges")
+mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bbox B")', "alt+o", icon_"MergeOut.png", shortcutContext_2)
 
 
 
@@ -105,17 +105,17 @@ ___ node __ nuke.sN.. :
 
 
 # Add together variables to print a sentence.
-var1 = "This"
-var2 = " is"
-var3 = " a"
-var4 = " joined"
-var5 = " string."
+var1 _ "This"
+var2 _ " is"
+var3 _ " a"
+var4 _ " joined"
+var5 _ " string."
 
 print var1+var2+var3+var4+var5
 
 
 # Print the value of a knob in a sentence.
-print "The current value of "+nuke.sN.. .name()+"'s mix knob is "+str(nuke.sN.. ['mix'].value())+"."
+print "The current value of "+nuke.sN.. .name()+"'s mix knob is "+st_(nuke.sN.. ['mix'].value())+"."
 
 
 

@@ -7,7 +7,7 @@ nuke.knobDefault('Tracker4.shutteroffset', "centered")
 nuke.knobDefault('Tracker4.label', "Motion: [value transform]\nRef Frame: [value reference_frame]")
 
 # Any time a Tracker node is created, set the "reference_frame" knob to the value of the current frame.
-nuke.addOnUserCreate(lambda:nuke.thisNode()['reference_frame'].setValue(nuke.frame()), nodeClass='Tracker4')
+nuke.addOnUserCreate(l____:nuke.thisNode()['reference_frame'].setValue(nuke.frame()), nodeClass_'Tracker4')
 
 
 
@@ -16,11 +16,11 @@ nuke.addOnUserCreate(lambda:nuke.thisNode()['reference_frame'].setValue(nuke.fra
 # ----- ADDING CUSTOM MENUS --------------------------
 
 # Create Utilities menu & assign items
-utilitiesMenu = nuke.menu('Nuke').addMenu('Utilities')
+utilitiesMenu _ nuke.menu('Nuke').addMenu('Utilities')
 utilitiesMenu.addCommand('Autocrop', 'nukescripts.autocrop()')
 
 # Create Custom Gizmos menu. Remember, it won't appear until there's a menu item...
-myGizmosMenu = nuke.menu('Nodes').addMenu('myGizmos', icon=dir+"/icons/myGizmos_icon.png")
+myGizmosMenu _ nuke.menu('Nodes').addMenu('myGizmos', icon_dir+"/icons/myGizmos_icon.png")
 
 
 
@@ -53,7 +53,7 @@ help(nuke.menu)
 # ----- KEYBOARD SHORTCUTS --------------------------
 
 # Add a custom keyboard shortcut to a node
-nuke.menu('Nodes').addCommand("Transform/Tracker", "nuke.createNode('Tracker4')", "ctrl+alt+t", icon="Tracker.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Transform/Tracker", "nuke.createNode('Tracker4')", "ctrl+alt+t", icon_"Tracker.png", shortcutContext_2)
 
 # In English, the syntax reads,
 # nuke.menu('<Name of Menu>').addCommand("<Node Class>/<Node Label>", "nuke.createNode(<Node Class>)", "<Your Keyboard Shortcut>", icon="<Filename of Icon>", shortcutContext=2)
@@ -61,10 +61,10 @@ nuke.menu('Nodes').addCommand("Transform/Tracker", "nuke.createNode('Tracker4')"
 # --- Shortcut contexts:
 
 # Context = Window
-shortcutContext=0
+shortcutContext_0
 # Context = Application
-shortcutContext=1
+shortcutContext_1
 # Context = Node Graph
-shortcutContext=2
+shortcutContext_2
 
 

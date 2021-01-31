@@ -1,27 +1,27 @@
 _____ re, __.pa__, ?, n_s_
 
 
-Selection = ?.sN..
+Selection _ ?.sN..
 
-OldSelect1 = []
+OldSelect1 _ []
 
    
 ___ SplitDir(fileknob):
 
 
-    FileName = __.pa__.b__(fileknob)
+    FileName _ __.pa__.b__(fileknob)
 
          
-    Dir = __.pa__.d..(fileknob)
+    Dir _ __.pa__.d..(fileknob)
                     
                     
-    DirUp = __.pa__.s..(Dir)
+    DirUp _ __.pa__.s..(Dir)
                     
                     
-    Joined = __.pa__.n_p_ (__.pa__.j..(DirUp[1],FileName))
+    Joined _ __.pa__.n_p_ (__.pa__.j..(DirUp[1],FileName))
                     
                     
-    Joined = re.sub(r'\\', r'/' ,Joined)
+    Joined _ re.sub(r'\\', r'/' ,Joined)
     
     
     r_ Joined
@@ -31,13 +31,13 @@ ___ SplitDir(fileknob):
 ___ SplitDirUp(fileknob):
 
 
-    FileName = __.pa__.b__(fileknob)
+    FileName _ __.pa__.b__(fileknob)
     
          
-    Dir = __.pa__.d..(fileknob)
+    Dir _ __.pa__.d..(fileknob)
     
                     
-    DirUp = __.pa__.s..(Dir)[0]
+    DirUp _ __.pa__.s..(Dir)[0]
     
     
     r_ DirUp
@@ -47,19 +47,19 @@ ___ SplitDirUp(fileknob):
 ___ FindVersion(fileknob):
 
 
-    pattern = "v" + "\d+"
+    pattern _ "v" + "\d+"
 
 
-    MyList = re.findall(pattern,fileknob,re.IGNORECASE)
+    MyList _ re.findall(pattern,fileknob,re.IGNORECASE)
 
 
     __ MyList:
   
 
-        version = MyList[0][:1]
+        version _ MyList[0][:1]
 
 
-        versionNumber = MyList[0][1:]
+        versionNumber _ MyList[0][1:]
 
 
         r_ versionNumber
@@ -69,34 +69,34 @@ ___ FindVersion(fileknob):
 ___ ListVersions(fileknob):
 
 
-    FileName = __.pa__.b__(fileknob)
+    FileName _ __.pa__.b__(fileknob)
 
 
-    FileBase = FileName.s..(FindVersion(SplitDir(fileknob)))[0]
+    FileBase _ FileName.s..(FindVersion(SplitDir(fileknob)))[0]
 
  
-    Dir = __.pa__.d..(fileknob)
+    Dir _ __.pa__.d..(fileknob)
 
 
-    DirUp = __.pa__.s..(Dir)[0]
+    DirUp _ __.pa__.s..(Dir)[0]
 
 
-    Names = [name ___ name __ __.l_d_(DirUp) __ FileBase __ name]
+    Names _ [name ___ name __ __.l_d_(DirUp) __ FileBase __ name]
 
 
-    OnlyFolders = []
+    OnlyFolders _ []
 
 
     ___ i __ Names:
 
 
-        Joined = __.pa__.n_p_ (__.pa__.j..(DirUp,i))
+        Joined _ __.pa__.n_p_ (__.pa__.j..(DirUp,i))
 
 
-        check = __.pa__.i_d_(Joined)
+        check _ __.pa__.i_d_(Joined)
 
 
-        version = FindVersion(i)
+        version _ FindVersion(i)
 
 
         __ check:
@@ -115,31 +115,31 @@ ___ ListVersions(fileknob):
 ___ ListVersionsFiles(fileknob):
 
 
-    FileName = __.pa__.b__(fileknob)
+    FileName _ __.pa__.b__(fileknob)
 
 
-    FileBase = FileName.s..(FindVersion(FileName))[0]
+    FileBase _ FileName.s..(FindVersion(FileName))[0]
 
  
-    Dir = __.pa__.d..(fileknob)
+    Dir _ __.pa__.d..(fileknob)
 
 
-    Names = [name ___ name __ __.l_d_(Dir) __ FileBase __ name]
+    Names _ [name ___ name __ __.l_d_(Dir) __ FileBase __ name]
 
 
-    OnlyFiles = []
+    OnlyFiles _ []
 
 
     ___ i __ Names:
 
 
-        Joined = __.pa__.n_p_ (__.pa__.j..(Dir,i))
+        Joined _ __.pa__.n_p_ (__.pa__.j..(Dir,i))
 
 
-        check = __.pa__.isfile(Joined)
+        check _ __.pa__.isfile(Joined)
 
 
-        version = FindVersion(i)
+        version _ FindVersion(i)
 
 
         __ check:
@@ -157,7 +157,7 @@ ___ ListVersionsFiles(fileknob):
 
 ___ VersionUp(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -167,19 +167,19 @@ ___ VersionUp(KnobTypes,NodeTypes):
 
                 ___
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
                     
 
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
                     
 
-                    version = FindVersion(SplitDir(fileknob))
+                    version _ FindVersion(SplitDir(fileknob))
                     
                     
-                    versionFile = FindVersion(FileName)
+                    versionFile _ FindVersion(FileName)
 
 
-                    __ version != versionFile:
+                    __ version !_ versionFile:
 
 
                         print "Error: different versions found in " + node.n..  + " " + n
@@ -188,10 +188,10 @@ ___ VersionUp(KnobTypes,NodeTypes):
                     __ version:
 
                 
-                        Next = in_(version)+1
+                        Next _ in_(version)+1
 
                   
-                        string_Next = "%03d" % Next
+                        string_Next _ "%03d" % Next
 
                   
                         __ version < max(ListVersions(fileknob)):
@@ -200,34 +200,34 @@ ___ VersionUp(KnobTypes,NodeTypes):
                             while string_Next no. __ ListVersions(fileknob):
                    
                    
-                                Next+=1
+                                Next+_1
                    
                    
-                                string_Next = "%03d" % Next
+                                string_Next _ "%03d" % Next
           
                 
-                            old = node[n].v.. ()
+                            old _ node[n].v.. ()
                    
                    
-                            NewStr=re.sub("v"+version,"v"+string_Next,SplitDir(fileknob))
+                            NewStr_re.sub("v"+version,"v"+string_Next,SplitDir(fileknob))
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
+                            Joined _ __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
-                            Joined = re.sub(r'\\', r'/' ,Joined)
+                            Joined _ re.sub(r'\\', r'/' ,Joined)
                    
                    
                             node[n].sV..(Joined)
 
 
-                            new = node[n].v.. ()
+                            new _ node[n].v.. ()
 
 
-                            __ old != new:
+                            __ old !_ new:
 
 
-                                count+=1
+                                count+_1
 
                     ____
 
@@ -244,7 +244,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
        
 ___ VersionUpFiles(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -254,53 +254,53 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
 
                 ___
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
                     
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
          
-                    Dir = __.pa__.d..(fileknob)
+                    Dir _ __.pa__.d..(fileknob)
                    
-                    version = FindVersion(FileName)
+                    version _ FindVersion(FileName)
                      
                     __ version:
                 
-                        Next = in_(version)+1
+                        Next _ in_(version)+1
                   
-                        string_Next = "%03d" % Next
+                        string_Next _ "%03d" % Next
                   
                         __ version < max(ListVersionsFiles(fileknob)):
                  
                             while string_Next no. __ ListVersionsFiles(fileknob):
                    
                    
-                                Next+=1
+                                Next+_1
                    
                    
-                                string_Next = "%03d" % Next
+                                string_Next _ "%03d" % Next
           
                 
-                            old = node[n].v.. ()
+                            old _ node[n].v.. ()
                             
                    
-                            FileName=re.sub("v"+version,"v"+string_Next,FileName) 
+                            FileName_re.sub("v"+version,"v"+string_Next,FileName)
                             
 
-                            Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
+                            Joined _ __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                             
                             
-                            Joined = re.sub(r'\\', r'/' ,Joined)
+                            Joined _ re.sub(r'\\', r'/' ,Joined)
                             
                    
                             node[n].sV..(Joined)
 
                             
-                            new = node[n].v.. ()
+                            new _ node[n].v.. ()
 
 
-                            __ old != new:
+                            __ old !_ new:
 
 
-                                count+=1
+                                count+_1
 
                     ____
 
@@ -316,7 +316,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
        
 ___ VersionDown(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
 
@@ -326,19 +326,19 @@ ___ VersionDown(KnobTypes,NodeTypes):
     
                 ___
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
 
 
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
                     
 
-                    version = FindVersion(SplitDir(fileknob))
+                    version _ FindVersion(SplitDir(fileknob))
                     
                     
-                    versionFile = FindVersion(FileName)
+                    versionFile _ FindVersion(FileName)
 
 
-                    __ version != versionFile:
+                    __ version !_ versionFile:
 
 
                         print "Error: different versions found in " + node.n..  + " " + n
@@ -347,10 +347,10 @@ ___ VersionDown(KnobTypes,NodeTypes):
                     __ version:
 
 
-                        Previous = in_(version)-1
+                        Previous _ in_(version)-1
 
           
-                        string_Previous = "%03d" % Previous
+                        string_Previous _ "%03d" % Previous
 
 
                         __ version > min(ListVersions(fileknob)):
@@ -359,34 +359,34 @@ ___ VersionDown(KnobTypes,NodeTypes):
                             while string_Previous no. __ ListVersions(fileknob):
 
 
-                                Previous-=1
+                                Previous-_1
 
 
-                                string_Previous = "%03d" % Previous
+                                string_Previous _ "%03d" % Previous
 
 
-                            old = node[n].v.. ()
+                            old _ node[n].v.. ()
                    
                    
-                            NewStr=re.sub("v"+version,"v"+string_Previous,SplitDir(fileknob))
+                            NewStr_re.sub("v"+version,"v"+string_Previous,SplitDir(fileknob))
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
+                            Joined _ __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
-                            Joined = re.sub(r'\\', r'/' ,Joined)
+                            Joined _ re.sub(r'\\', r'/' ,Joined)
                    
                    
                             node[n].sV..(Joined)
 
 
-                            new = node[n].v.. ()
+                            new _ node[n].v.. ()
 
 
-                            __ old != new:
+                            __ old !_ new:
 
 
-                                count+=1
+                                count+_1
 
                     ____
 
@@ -403,7 +403,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
 
 ___ VersionDownFiles(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -414,25 +414,25 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                 ___
 
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
 
                     
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
 
          
-                    Dir = __.pa__.d..(fileknob)
+                    Dir _ __.pa__.d..(fileknob)
 
                    
-                    version = FindVersion(FileName)
+                    version _ FindVersion(FileName)
 
 
                     __ version:
 
 
-                        Previous = in_(version)-1
+                        Previous _ in_(version)-1
 
           
-                        string_Previous = "%03d" % Previous
+                        string_Previous _ "%03d" % Previous
 
 
                         __ version > min(ListVersionsFiles(fileknob)):
@@ -441,34 +441,34 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                             while string_Previous no. __ ListVersionsFiles(fileknob):
 
 
-                                Previous-=1
+                                Previous-_1
 
 
-                                string_Previous = "%03d" % Previous
+                                string_Previous _ "%03d" % Previous
 
 
-                            old = node[n].v.. ()
+                            old _ node[n].v.. ()
 
           
-                            FileName=re.sub("v"+version,"v"+string_Previous,FileName) 
+                            FileName_re.sub("v"+version,"v"+string_Previous,FileName)
                             
 
-                            Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
+                            Joined _ __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                             
                             
-                            Joined = re.sub(r'\\', r'/' ,Joined)
+                            Joined _ re.sub(r'\\', r'/' ,Joined)
                             
                    
                             node[n].sV..(Joined)
 
 
-                            new = node[n].v.. ()
+                            new _ node[n].v.. ()
 
 
-                            __ old != new:
+                            __ old !_ new:
 
 
-                                count+=1
+                                count+_1
 
                     ____
 
@@ -485,7 +485,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
 
 ___ VersionLast(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -495,19 +495,19 @@ ___ VersionLast(KnobTypes,NodeTypes):
             
                 ___
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
 
 
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
                     
 
-                    version = FindVersion(SplitDir(fileknob))
+                    version _ FindVersion(SplitDir(fileknob))
                     
                     
-                    versionFile = FindVersion(FileName)
+                    versionFile _ FindVersion(FileName)
 
 
-                    __ version != versionFile:
+                    __ version !_ versionFile:
 
 
                         print "Error: different versions found in " + node.n..  + " " + n
@@ -516,31 +516,31 @@ ___ VersionLast(KnobTypes,NodeTypes):
                     __ version:
 
            
-                        Last = max(ListVersions(fileknob))
+                        Last _ max(ListVersions(fileknob))
 
 
-                        old = node[n].v.. ()
+                        old _ node[n].v.. ()
                    
                    
-                        NewStr=re.sub("v"+version,"v"+Last,SplitDir(fileknob))
+                        NewStr_re.sub("v"+version,"v"+Last,SplitDir(fileknob))
 
                             
-                        Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
+                        Joined _ __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),NewStr))
                     
                     
-                        Joined = re.sub(r'\\', r'/' ,Joined)
+                        Joined _ re.sub(r'\\', r'/' ,Joined)
                    
                    
                         node[n].sV..(Joined)
 
 
-                        new = node[n].v.. ()
+                        new _ node[n].v.. ()
 
 
-                        __ old != new:
+                        __ old !_ new:
 
 
-                            count+=1
+                            count+_1
 
                     ____
 
@@ -557,7 +557,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
    
 ___ VersionLastFiles(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -568,46 +568,46 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                 ___
 
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
 
                     
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
 
          
-                    Dir = __.pa__.d..(fileknob)
+                    Dir _ __.pa__.d..(fileknob)
 
                    
-                    version = FindVersion(FileName)
+                    version _ FindVersion(FileName)
 
 
                     __ version:
 
            
-                        Last = max(ListVersionsFiles(fileknob))
+                        Last _ max(ListVersionsFiles(fileknob))
 
 
-                        old = node[n].v.. ()
+                        old _ node[n].v.. ()
 
 
-                        FileName=re.sub("v"+version,"v"+Last,FileName) 
+                        FileName_re.sub("v"+version,"v"+Last,FileName)
                             
 
-                        Joined = __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
+                        Joined _ __.pa__.n_p_ (__.pa__.j..(Dir,FileName))
                         
                         
-                        Joined = re.sub(r'\\', r'/' ,Joined)
+                        Joined _ re.sub(r'\\', r'/' ,Joined)
                             
                    
                         node[n].sV..(Joined)
 
 
-                        new = node[n].v.. ()
+                        new _ node[n].v.. ()
 
 
-                        __ old != new:
+                        __ old !_ new:
 
 
-                            count+=1
+                            count+_1
 
                     ____
 
@@ -624,7 +624,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
 
 ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -634,52 +634,52 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
                 ___
 
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
 
 
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
 
 
-                    Dir = __.pa__.d..(fileknob)
+                    Dir _ __.pa__.d..(fileknob)
                     
                     
-                    DirLast = __.pa__.s..(Dir)[1]
+                    DirLast _ __.pa__.s..(Dir)[1]
                     
 
-                    version = FindVersion(SplitDir(fileknob))
+                    version _ FindVersion(SplitDir(fileknob))
                     
                     
-                    versionFile = FindVersion(FileName)
+                    versionFile _ FindVersion(FileName)
 
 
                     __ version:
 
 
-                        __ version != versionFile:
+                        __ version !_ versionFile:
 
 
-                            old = node[n].v.. ()
+                            old _ node[n].v.. ()
 
 
-                            FileName = re.sub("v"+versionFile,"v"+version,FileName)
+                            FileName _ re.sub("v"+versionFile,"v"+version,FileName)
 
                             
-                            Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
+                            Joined _ __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
-                            Joined = re.sub(r'\\', r'/' ,Joined)
+                            Joined _ re.sub(r'\\', r'/' ,Joined)
 
                         
                             node[n].sV..(Joined)
 
 
-                            new = node[n].v.. ()
+                            new _ node[n].v.. ()
 
 
-                            __ old != new:
+                            __ old !_ new:
 
 
-                                count+=1
+                                count+_1
 
                     ____
 
@@ -696,7 +696,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
 ___ VersionMatchFiles(KnobTypes,NodeTypes):
 
-    count = 0
+    count _ 0
 
     ___ node __ ?.sN.. :
     
@@ -706,49 +706,49 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
 
                 ___
          
-                    fileknob = node[n].v.. ()
+                    fileknob _ node[n].v.. ()
                     
 
-                    Dir = __.pa__.d..(fileknob)
+                    Dir _ __.pa__.d..(fileknob)
                     
                     
-                    DirLast = __.pa__.s..(Dir)[1]
+                    DirLast _ __.pa__.s..(Dir)[1]
 
 
-                    FileName = __.pa__.b__(fileknob)
+                    FileName _ __.pa__.b__(fileknob)
                     
 
-                    version = FindVersion(SplitDir(fileknob))
+                    version _ FindVersion(SplitDir(fileknob))
                     
                     
-                    versionFile = FindVersion(FileName)
+                    versionFile _ FindVersion(FileName)
 
 
-                    __ version != versionFile:
+                    __ version !_ versionFile:
 
 
-                        old = node[n].v.. ()
+                        old _ node[n].v.. ()
 
 
-                        DirLast = re.sub("v"+version,"v"+versionFile, DirLast)
+                        DirLast _ re.sub("v"+version,"v"+versionFile, DirLast)
                         
                         
-                        Joined = __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
+                        Joined _ __.pa__.n_p_ (__.pa__.j..(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
-                        Joined = re.sub(r'\\', r'/' ,Joined)
+                        Joined _ re.sub(r'\\', r'/' ,Joined)
 
                         
                         node[n].sV..(Joined)
 
 
-                        new = node[n].v.. ()
+                        new _ node[n].v.. ()
 
 
-                        __ old != new:
+                        __ old !_ new:
 
 
-                            count+=1
+                            count+_1
 
 
                 ______
@@ -763,7 +763,7 @@ ___ OldSelect(SavedSelection):
 
     global OldSelect1
 
-    OldSelect1 = []
+    OldSelect1 _ []
 
     ___ n __ SavedSelection:
 
@@ -774,16 +774,16 @@ ___ OldSelect(SavedSelection):
 
 ___ Warning(warning):
 
-    Selection = ?.sN..
+    Selection _ ?.sN..
     
-    warning.sV..(str(le.(Selection))+ ' Nodes Selected')
+    warning.sV..(st_(le.(Selection))+ ' Nodes Selected')
     
     warning.setVisible T..
 
 
 ___ Warning_changed(warning,count):
 
-    warning.sV..(str(count)+ ' Nodes Changed')
+    warning.sV..(st_(count)+ ' Nodes Changed')
     
     warning.setVisible T..
     
@@ -797,18 +797,18 @@ ___ Warning_SaveLoad(warning,warningList,index):
 
 ___ Warning_Save(warning,Selection):
 
-    count = le.(Selection)
+    count _ le.(Selection)
 
-    warning.sV..(str(count)+ ' Nodes Saved')
+    warning.sV..(st_(count)+ ' Nodes Saved')
     
     warning.setVisible T..
     
 
 ___ Warning_Load(warning,warningList,index):
 
-    Selection = ?.sN..
+    Selection _ ?.sN..
 
-    warning.sV..(warningList[index]+"  "+ str(le.(Selection))+ ' Nodes Selected')
+    warning.sV..(warningList[index]+"  "+ st_(le.(Selection))+ ' Nodes Selected')
     
     warning.setVisible T..
 
@@ -825,25 +825,25 @@ c_ ChangeVersion(n_s_.PythonPanel):
         # Create Knobs
 
 
-        Read = ?.Boolean_Knob("Read")
+        Read _ ?.Boolean_Knob("Read")
 
 
         Read.sV.. T..
 
 
-        Write = ?.Boolean_Knob("Write")
+        Write _ ?.Boolean_Knob("Write")
 
 
-        DeepRead = ?.Boolean_Knob("DeepRead")
+        DeepRead _ ?.Boolean_Knob("DeepRead")
 
 
-        DeepWrite = ?.Boolean_Knob("DeepWrite")
+        DeepWrite _ ?.Boolean_Knob("DeepWrite")
 
 
-        dividerA = ?.Text_Knob("")
+        dividerA _ ?.Text_Knob("")
 
       
-        file = ?.Boolean_Knob("file","file   ")
+        file _ ?.Boolean_Knob("file","file   ")
 
 
         file.sV.. T..
@@ -852,31 +852,31 @@ c_ ChangeVersion(n_s_.PythonPanel):
         file.setFlag(?.STARTLINE)
 
 
-        proxy = ?.Boolean_Knob("proxy","proxy               ")
+        proxy _ ?.Boolean_Knob("proxy","proxy               ")
 
 
-        Info = ?.Boolean_Knob("Info    ")
+        Info _ ?.Boolean_Knob("Info    ")
 
 
         Info.sV.. T..
         
         
-        VersionFolder = ?.Boolean_Knob("Version by Folder")
+        VersionFolder _ ?.Boolean_Knob("Version by Folder")
 
 
         VersionFolder.sV.. T..
         
         
-        dividerB = ?.Text_Knob("")
+        dividerB _ ?.Text_Knob("")
         
 
-        Type = ?.Enumeration_Knob("Type","Type",["All","Selected    ","Custom"])
+        Type _ ?.Enumeration_Knob("Type","Type",["All","Selected    ","Custom"])
 
 
-        Check = ?.PS_K..('Check', 'Check')
+        Check _ ?.PS_K..('Check', 'Check')
 
 
-        warning = ?.Text_Knob('warning',"")
+        warning _ ?.Text_Knob('warning',"")
 
       
         warning.clearFlag(?.STARTLINE)
@@ -885,13 +885,13 @@ c_ ChangeVersion(n_s_.PythonPanel):
         warning.setVisible F..
 
 
-        SelectString = ?.String_Knob("SelectString", "Select By Value")
+        SelectString _ ?.String_Knob("SelectString", "Select By Value")
 
 
         SelectString.setEnabled F..
 
 
-        Select = ?.PS_K..('Select', 'Select')
+        Select _ ?.PS_K..('Select', 'Select')
 
 
         Select.setEnabled T..
@@ -900,40 +900,40 @@ c_ ChangeVersion(n_s_.PythonPanel):
         Select.setFlag(?.STARTLINE)
 
 
-        Add = ?.PS_K..('Add', 'Add')
+        Add _ ?.PS_K..('Add', 'Add')
 
 
         Add.setEnabled F..
 
 
-        r__ = ?.PS_K..('Remove', 'Remove')
+        r__ _ ?.PS_K..('Remove', 'Remove')
 
 
         r__.setEnabled F..
 
 
-        ClearString = ?.PS_K..('ClearString', 'Clear')
+        ClearString _ ?.PS_K..('ClearString', 'Clear')
 
 
         ClearString.setEnabled F..
 
 
-        dividerB2 = ?.Text_Knob("")
+        dividerB2 _ ?.Text_Knob("")
         
 
-        ClearSelect = ?.PS_K..('ClearSelect', 'Clear\n Selection')
+        ClearSelect _ ?.PS_K..('ClearSelect', 'Clear\n Selection')
         
         
         ClearSelect.setFlag(?.STARTLINE)
         
         
-        SaveSelect = ?.PS_K..('SaveSelect', 'Save\n Selection')
+        SaveSelect _ ?.PS_K..('SaveSelect', 'Save\n Selection')
 
         
-        LoadSelect = ?.PS_K..('LoadSelect', 'Load\n Selection')
+        LoadSelect _ ?.PS_K..('LoadSelect', 'Load\n Selection')
 
 
-        warningD = ?.Text_Knob('warningD',"")
+        warningD _ ?.Text_Knob('warningD',"")
 
       
         warningD.clearFlag(?.STARTLINE)
@@ -942,25 +942,25 @@ c_ ChangeVersion(n_s_.PythonPanel):
         warningD.setVisible F..
 
 
-        dividerC = ?.Text_Knob("")
+        dividerC _ ?.Text_Knob("")
 
 
-        SelectManually = ?.Boolean_Knob("Manual Input")
+        SelectManually _ ?.Boolean_Knob("Manual Input")
 
 
-        SelectVal = ?.String_Knob("SelectVal", "Select Value")
+        SelectVal _ ?.String_Knob("SelectVal", "Select Value")
 
 
         SelectVal.setEnabled F..
 
 
-        ReplaceVal = ?.String_Knob("ReplaceVal", "Replace With")
+        ReplaceVal _ ?.String_Knob("ReplaceVal", "Replace With")
 
 
         ReplaceVal.setEnabled F..
 
 
-        Replace = ?.PS_K..('Replace', 'Replace')
+        Replace _ ?.PS_K..('Replace', 'Replace')
 
 
         Replace.setFlag(?.STARTLINE)
@@ -969,13 +969,13 @@ c_ ChangeVersion(n_s_.PythonPanel):
         Replace.setEnabled F..
 
 
-        Switch = ?.PS_K..('Switch', 'Switch')
+        Switch _ ?.PS_K..('Switch', 'Switch')
 
 
         Switch.setEnabled F..
 
 
-        Clear = ?.PS_K..('Clear', 'Clear')
+        Clear _ ?.PS_K..('Clear', 'Clear')
 
 
         Clear.setEnabled T..
@@ -984,7 +984,7 @@ c_ ChangeVersion(n_s_.PythonPanel):
         Clear.setEnabled F..
 
 
-        warningB = ?.Text_Knob('warning',"")
+        warningB _ ?.Text_Knob('warning',"")
 
       
         warningB.clearFlag(?.STARTLINE)
@@ -993,25 +993,25 @@ c_ ChangeVersion(n_s_.PythonPanel):
         warningB.setVisible F..
 
 
-        dividerD = ?.Text_Knob("")
+        dividerD _ ?.Text_Knob("")
 
 
-        VersionMatch = ?.PS_K..("MatchVersions","Version\n Match ")
+        VersionMatch _ ?.PS_K..("MatchVersions","Version\n Match ")
 
 
         VersionMatch.setFlag(?.STARTLINE)
 
 
-        VersionDown = ?.PS_K..('VersionDown','Version\n Down')
+        VersionDown _ ?.PS_K..('VersionDown','Version\n Down')
 
 
-        VersionUp = ?.PS_K..('VersionUp','Version\n Up')
+        VersionUp _ ?.PS_K..('VersionUp','Version\n Up')
 
 
-        VersionLast = ?.PS_K..('VersionLast','Version\n Last')
+        VersionLast _ ?.PS_K..('VersionLast','Version\n Last')
 
 
-        warningC = ?.Text_Knob('warning',"")
+        warningC _ ?.Text_Knob('warning',"")
 
       
         warningC.clearFlag(?.STARTLINE)
@@ -1020,16 +1020,16 @@ c_ ChangeVersion(n_s_.PythonPanel):
         warningC.setVisible F..
 
 
-        dividerE = ?.Text_Knob("")
+        dividerE _ ?.Text_Knob("")
 
    
-        Reset = ?.PS_K..('Reset', 'Reset')
+        Reset _ ?.PS_K..('Reset', 'Reset')
 
 
-        ClearMessage = ?.PS_K..('ClearMessage', 'Clear')
+        ClearMessage _ ?.PS_K..('ClearMessage', 'Clear')
 
 
-        dividerF = ?.Text_Knob("")
+        dividerF _ ?.Text_Knob("")
         
 
 
@@ -1377,22 +1377,22 @@ clears all messages
         # Define node Lists variables
 
 
-        NodeTypes = [Read, Write, DeepRead, DeepWrite]
+        NodeTypes _ [Read, Write, DeepRead, DeepWrite]
 
 
-        SelectedNodeTypes = ["Read"]
+        SelectedNodeTypes _ ["Read"]
 
 
-        KnobTypes = [file, proxy]
+        KnobTypes _ [file, proxy]
 
     
-        SelectedKnobTypes = ["file"]
+        SelectedKnobTypes _ ["file"]
         
         
-        OldSelect = []
+        OldSelect _ []
 
 
-        WarningList = ["No Nodes Selected","No Selection Saved","Script changed"]
+        WarningList _ ["No Nodes Selected","No Selection Saved","Script changed"]
 
 
 
@@ -1405,10 +1405,10 @@ clears all messages
         __ knob __ KnobTypes:
 
 
-            SelectedKnobTypes = []
+            SelectedKnobTypes _ []
 
 
-            SelectedKnobTypes = [ k.n..  ___ k __ KnobTypes __ k.gV.. ]
+            SelectedKnobTypes _ [ k.n..  ___ k __ KnobTypes __ k.gV.. ]
 
 
 
@@ -1418,10 +1418,10 @@ clears all messages
         __ knob __ NodeTypes:
 
 
-            SelectedNodeTypes = []
+            SelectedNodeTypes _ []
 
 
-            SelectedNodeTypes = [ node.n..  ___ node __ NodeTypes __ node.gV.. ]
+            SelectedNodeTypes _ [ node.n..  ___ node __ NodeTypes __ node.gV.. ]
             
             
             
@@ -1563,7 +1563,7 @@ clears all messages
             __ knob __ Select:
 
 
-                Custom=SelectString.v.. ()
+                Custom_SelectString.v.. ()
 
 
                 ___ n __ ?.aN..
@@ -1578,7 +1578,7 @@ clears all messages
                         ___ knob __ SelectedKnobTypes:
 
 
-                            __ Custom __ n[knob].v.. () and Custom !="":
+                            __ Custom __ n[knob].v.. () and Custom !_"":
 
 
                                 n.sS.. T..
@@ -1609,7 +1609,7 @@ clears all messages
             __ knob __ Add:
 
 
-                Custom=SelectString.v.. ()
+                Custom_SelectString.v.. ()
 
 
                 ___ n __ ?.aN..
@@ -1621,7 +1621,7 @@ clears all messages
                         ___ knob __ SelectedKnobTypes:
 
 
-                            __ Custom __ n[knob].v.. () and Custom !="":
+                            __ Custom __ n[knob].v.. () and Custom !_"":
 
 
                                 n.sS.. T..
@@ -1640,7 +1640,7 @@ clears all messages
             __ knob __ r__:
 
 
-                Custom = SelectString.v.. ()
+                Custom _ SelectString.v.. ()
 
 
                 ___ n __ ?.sN.. :
@@ -1652,7 +1652,7 @@ clears all messages
                         ___ knob __ SelectedKnobTypes:
 
 
-                            __ Custom __ n[knob].v.. () and Custom !="":
+                            __ Custom __ n[knob].v.. () and Custom !_"":
 
 
                                 n.sS.. F..
@@ -1687,7 +1687,7 @@ clears all messages
         
         __ knob __ SaveSelect:
         
-            OldSelect = ?.sN..
+            OldSelect _ ?.sN..
 
             __ no. OldSelect:
 
@@ -1710,19 +1710,19 @@ clears all messages
 
             ____
 
-                checkMissing = F..
+                checkMissing _ F..
 
-                check = F..
+                check _ F..
                 
                 ___ i __ OldSelect1:
 
                     __ i no. __ ?.aN..
 
-                        checkMissing = T..
+                        checkMissing _ T..
                         
                     __ i __ ?.aN..
 
-                        check = T..
+                        check _ T..
         
                 __ check and no. checkMissing:
 
@@ -1827,7 +1827,7 @@ clears all messages
         __ knob __ Replace:
         
 
-            count = 0
+            count _ 0
          
 
             ___ n __ ?.sN.. :
@@ -1839,22 +1839,22 @@ clears all messages
                     ___ knob __ SelectedKnobTypes:
 
                       
-                        old = n[knob].v.. ()
+                        old _ n[knob].v.. ()
 
 
-                        NewStr=re.sub(SelectVal.v.. (),ReplaceVal.v.. (),n[knob].v.. ())
+                        NewStr_re.sub(SelectVal.v.. (),ReplaceVal.v.. (),n[knob].v.. ())
 
 
                         n[knob].sV..(NewStr)
 
 
-                        new = n[knob].v.. ()
+                        new _ n[knob].v.. ()
 
 
-                        __ old != new:
+                        __ old !_ new:
 
 
-                           count+=1
+                           count+_1
 
 
             __ Info.gV.. :
@@ -1869,7 +1869,7 @@ clears all messages
 
         __ knob __ Switch:
 
-            temp = SelectVal.v.. ()
+            temp _ SelectVal.v.. ()
    
             SelectVal.sV..(ReplaceVal.v.. ())
 
@@ -2018,10 +2018,10 @@ clears all messages
         __ knob __ Reset:
 
 
-            SelectedNodeTypes = ["Read"]
+            SelectedNodeTypes _ ["Read"]
 
 
-            SelectedKnobTypes = ["file"]
+            SelectedKnobTypes _ ["file"]
 
 
             Read.sV.. T..
@@ -2139,12 +2139,12 @@ clears all messages
 
 ___ addPanel
 
-    pane = ?.getPaneFor('Viewer.1')
+    pane _ ?.getPaneFor('Viewer.1')
 
     r_ ChangeVersion().addToPane(pane)
 
 
-m__ = ?.m__("Pane")
+m__ _ ?.m__("Pane")
 
 m__.aC..("The Version Changer",addPanel,"Alt+v")
 

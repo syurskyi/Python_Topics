@@ -1,6 +1,6 @@
 _____ ?
 _____ toolbox
 
-m__ = ?.m__("Nuke")
-fxphd = m__.addMenu("FXPHD")
+m__ _ ?.m__("Nuke")
+fxphd _ m__.addMenu("FXPHD")
 fxphd.aC..("Hotbox","toolbox.start()","n")

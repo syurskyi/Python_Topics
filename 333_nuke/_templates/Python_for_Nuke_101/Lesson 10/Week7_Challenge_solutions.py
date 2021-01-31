@@ -13,7 +13,7 @@ Extra bonus points: Count the totals and print a list of how many people you kno
 """
 
 # Create dictionary of people & their ages.
-dictionary = {'Dad': 62, 'Mum': 58, 'Thomas': 34, 'Karen': 26, 'Bobby': 32, 'Ryan': 28, 'Ravi': 27, 'Hannah': 30, 'Lisa': 34, 'Jeremy': 12}
+dictionary _ {'Dad': 62, 'Mum': 58, 'Thomas': 34, 'Karen': 26, 'Bobby': 32, 'Ryan': 28, 'Ravi': 27, 'Hannah': 30, 'Lisa': 34, 'Jeremy': 12}
 
 # Print a heading to tell the user what is being displayed.
 print "\n\nAGES OF PEOPLE I KNOW:\n"
@@ -21,7 +21,7 @@ print "\n\nAGES OF PEOPLE I KNOW:\n"
 # Loop through the dictionary.
 ___ person __ dictionary:
     # Print person (key) is dictionary[person] (value) years old.
-    print person+" is "+str(dictionary[person])+" years old."
+    print person+" is "+st_(dictionary[person])+" years old."
 
 # Print another heading to tell the user what is being displayed.
 print "\n\nPEOPLE I KNOW IN THEIR TWENTIES:\n"
@@ -29,7 +29,7 @@ print "\n\nPEOPLE I KNOW IN THEIR TWENTIES:\n"
 # Loop through the dictionary.
 ___ person __ dictionary:
     # If the keys in the dictionary have a value of less-than 30 and more-than-or-equal-to 20, then:
-    if dictionary[person] < 30 and dictionary[person] >= 20:
+    if dictionary[person] < 30 and dictionary[person] >_ 20:
         # Print the keys (names of the people) who's values (ages) match the above conditions.
         print person
 
@@ -37,16 +37,16 @@ ___ person __ dictionary:
 # EXTRA BONUS POINTS
 
 # Create some lists to hold the names of people in each category
-twenties = []
-thirties = []
-forties = []
-fifties = []
-sixties = []
+twenties _ []
+thirties _ []
+forties _ []
+fifties _ []
+sixties _ []
 
 # Loop through the dictionary.
 ___ person __ dictionary:
     # If the keys in the dictionary have a value of less-than 30 and more-than-or-equal-to 20, then:
-    if dictionary[person] < 30 and dictionary[person] >= 20:
+    if dictionary[person] < 30 and dictionary[person] >_ 20:
         # Add the names of the people (keys) who's ages (values) match the above conditions.
         twenties.append(person)
 
@@ -54,19 +54,19 @@ ___ person __ dictionary:
 # RINSE AND REPEAT FOR EACH CATEGORY
 
 ___ person __ dictionary:
-    if dictionary[person] < 40 and dictionary[person] >= 30:
+    if dictionary[person] < 40 and dictionary[person] >_ 30:
         thirties.append(person)
 
 ___ person __ dictionary:
-    if dictionary[person] < 50 and dictionary[person] >= 40:
+    if dictionary[person] < 50 and dictionary[person] >_ 40:
         forties.append(person)
 
 ___ person __ dictionary:
-    if dictionary[person] < 60 and dictionary[person] >= 50:
+    if dictionary[person] < 60 and dictionary[person] >_ 50:
         fifties.append(person)
 
 ___ person __ dictionary:
-    if dictionary[person] < 70 and dictionary[person] >= 60:
+    if dictionary[person] < 70 and dictionary[person] >_ 60:
         sixties.append(person)
 
 
@@ -77,11 +77,11 @@ print "\n\n"
 
 # The magic is happening by finding the number of items in each list using the len() function,
 # then converting that number to a string.
-print "I know "+str(len(twenties))+" people in their 20's"
-print "I know "+str(len(thirties))+" people in their 30's"
-print "I know "+str(len(forties))+" people in their 40's"
-print "I know "+str(len(fifties))+" people in their 50's"
-print "I know "+str(len(sixties))+" people in their 60's"
+print "I know "+st_(len(twenties))+" people in their 20's"
+print "I know "+st_(len(thirties))+" people in their 30's"
+print "I know "+st_(len(forties))+" people in their 40's"
+print "I know "+st_(len(fifties))+" people in their 50's"
+print "I know "+st_(len(sixties))+" people in their 60's"
         
 
 
@@ -95,7 +95,7 @@ Add functionality to our shortcut_operationSwitcher() function to switch between
 """
 
 # Add the new key:value item to your dictionary
-merge_ops = {'over':'under', 'mask':'stencil', 'plus':'from', 'multiply':'divide', 'max':'min', 'conjoint-over':'disjoint-over', 'log2lin':'lin2log'}
+merge_ops _ {'over':'under', 'mask':'stencil', 'plus':'from', 'multiply':'divide', 'max':'min', 'conjoint-over':'disjoint-over', 'log2lin':'lin2log'}
 
 # Then add a second condition to the if statement, to account for the new node class.
 if node.Class() == "Merge2" or node.Class() == "Log2Lin":
@@ -119,7 +119,7 @@ Add functionality to our shortcut_operationSwitcher() function to create an “I
 # An Invert node will be created, and then the function will exit.
 
 try:
-    node = nuke.sN..
+    node _ nuke.sN..
 except:
     nuke.createNode('Invert')
     return
