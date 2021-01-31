@@ -4,7 +4,7 @@ Define node graph utility functions.
 
 ______ ?
 ______ itertools
-______ subprocess
+______ su__
 ___
     ____ ? ______ ?G..
 ______ ImportError:
@@ -139,7 +139,7 @@ ___ open_frame_in_photoshop
         read _ ?.sN__
         frame_path _ read.metadata("input/filename")
         cmd _ "open -a \"@\" \"@\"" % (ps_path, frame_path)
-        subprocess.call(cmd, shell_T..)
+        su__.call(cmd, shell_T..)
     ____
         ?.m..("You must have a single Read node selected.")
 

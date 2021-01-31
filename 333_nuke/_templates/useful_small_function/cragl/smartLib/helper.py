@@ -3,7 +3,7 @@ ______ __
 ______ ___
 ______ errno
 ______ shutil
-______ subprocess
+______ su__
 ______ xml.etree.ElementTree __ ET
 ______ collections
 ______ urllib
@@ -245,19 +245,19 @@ ___ reveal_in_finder(pa__, open_file _ F..):
                 r_
             __ __.pa__.isf..(pa__):
                 pa__ _ __.pa__.d_n_(pa__)
-            subprocess.P..(['xdg-open', pa__])
+            su__.P..(['xdg-open', pa__])
         ____ ___.pl.. __ 'darwin':
             __ open_file:
-                subprocess.call(['open', '--', pa__])
+                su__.call(['open', '--', pa__])
             ____
-                subprocess.call(['open', '-R', pa__])
+                su__.call(['open', '-R', pa__])
         ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
             __ ':' __ pa__:
                 __ ':{}'.f..(__.pa__.sep) no. __ pa__:
                     pa__ _ pa__.r..(':', ':{}'.f..(__.pa__.sep))
             __ __.pa__.isf..(pa__):
                 pa__ _ __.pa__.d_n_(pa__)
-            subprocess.call(['explorer', pa__])
+            su__.call(['explorer', pa__])
     ______
         m..('Failed opening: {}'.f..(pa__))
 
@@ -596,10 +596,10 @@ ___ open_website(url):
     __ ___.pl.. __ 'win32':
         __.startfile(url)
     ____ ___.pl.. __ 'darwin':
-        subprocess.P..(['open', url])
+        su__.P..(['open', url])
     ____
         ___
-            subprocess.P..(['xdg-open', url])
+            su__.P..(['xdg-open', url])
         ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
@@ -1319,7 +1319,7 @@ ___ get_script_values(pa__, window):
     processor _ __.pa__.j..(this_dir, '../', 'trm', 'scripts.py')
     processor _ __.pa__.n_p_(processor)
     cmd _ '"{nuke_exe}" -i -t "{scriptProcess}" get "{path}" " "'.f..(nuke_exe___.pa__.n_p_(?.env['ExecutablePath']), scriptProcess_processor, path_path)
-    process _ subprocess.P..(cmd, shell_T.., stdin_subprocess.PIPE, stdout_subprocess.PIPE)
+    process _ su__.P..(cmd, shell_T.., stdin_subprocess.PIPE, stdout_subprocess.PIPE)
     process.wait()
     ___ line __ process.stdout:
         line _ st.(line.rstrip())
@@ -1340,7 +1340,7 @@ ___ set_script_values(pa__, script_values, *args):
     processor _ __.pa__.j..(this_dir, '../', 'trm', 'scripts.py')
     processor _ __.pa__.n_p_(processor)
     cmd _ '"{nuke_exe}" -i -t "{scriptProcess}" set "{path}" {vals}'.f..(nuke_exe___.pa__.n_p_(?.env['ExecutablePath']), scriptProcess_processor, path_path, vals_script_vals)
-    process _ subprocess.P..(cmd, shell_T.., stdin_subprocess.PIPE, stdout_subprocess.PIPE)
+    process _ su__.P..(cmd, shell_T.., stdin_subprocess.PIPE, stdout_subprocess.PIPE)
     process.wait()
     found_end _ 0
     ___ line __ process.stdout:

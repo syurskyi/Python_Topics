@@ -7,7 +7,7 @@ ______ j___
 ______ __
 ______ re
 ______ shutil
-______ subprocess
+______ su__
 ______ ___
 
 # _____ local modules
@@ -273,10 +273,10 @@ ___ open_website(url):
         # This is only available in windows.
         __.startfile(url)  # pylint: disable=no-member
     ____ ___.pl.. __ 'darwin':
-        subprocess.P..(['open', url])
+        su__.P..(['open', url])
     ____
         ___
-            subprocess.P..(['xdg-open', url])
+            su__.P..(['xdg-open', url])
         ______ OSError:
             msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))

@@ -1,4 +1,4 @@
-_____ __, subprocess
+_____ __, su__
 
 root = __.pa__.d..( -f)
 print(root)
@@ -14,4 +14,4 @@ __ __.name __ 'nt':
     exe = 'C:/Program Files/Nuke12.1v1/Nuke12.1.exe'
 ____
     exe = N..
-subprocess.Popen([exe, '--nukex'])
+su__.Popen([exe, '--nukex'])

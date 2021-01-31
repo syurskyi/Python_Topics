@@ -1,7 +1,7 @@
 from PySide2.QtGui _____ *
 from PySide2.QtCore _____ *
 from PySide2.QtWidgets _____ *
-_____ sys
+_____ ___
 
 
 class ClipboardUi(QTabWidget):

@@ -2,7 +2,7 @@
 ______ j___
 ______ __
 ______ re
-______ subprocess
+______ su__
 ______ ___
 ______ ti__
 ______ uuid
@@ -274,10 +274,10 @@ ___ open_website(url):
     __ ___.pl.. __ 'win32':
         __.startfile(url)
     ____ ___.pl.. __ 'darwin':
-        subprocess.P..(['open', url])
+        su__.P..(['open', url])
     ____
         ___
-            subprocess.P..(['xdg-open', url])
+            su__.P..(['xdg-open', url])
         ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartLink ______ dialogs

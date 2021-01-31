@@ -2,7 +2,7 @@ ______ ?
 ______ ___
 ______ __
 ______ webbrowser
-______ subprocess
+______ su__
 
 ___ openFileReturnArr(file):
     '''
@@ -47,11 +47,11 @@ ___ getBackupSettings(val, pa__):
 
 ___ openFolder(pa__):
     __ ___.pl.. __ 'darwin':
-        subprocess.check_call(['open', '--', pa__])
+        su__.c_c_(['open', '--', pa__])
     ____ ___.pl.. __ 'linux2':
-        subprocess.check_call(['gnome-open', '--', pa__])
+        su__.c_c_(['gnome-open', '--', pa__])
     ____ ___.pl.. __ 'windows':
-        subprocess.check_call(['explorer', pa__])
+        su__.c_c_(['explorer', pa__])
 
 ___ help
     '''

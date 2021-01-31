@@ -18,7 +18,7 @@
 # 1.6 - fixed a bug that caused Nuke crashing when loading of "big" toolsets
 
 ______ __
-______ sys
+______ ___
 ______ ?
 ______ n_s_
 ______ posixpath

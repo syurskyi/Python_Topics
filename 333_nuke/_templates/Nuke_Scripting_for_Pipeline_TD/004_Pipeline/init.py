@@ -1,4 +1,4 @@
-_____ __, sys
+_____ __, ___
 _____ ?
 
 root = __.pa__.d..( -f)
@@ -11,7 +11,7 @@ print(gizmos)
 
 # python
 py = __.pa__.join(root, 'python')
-sys.pa__.a__(py)
+___.pa__.a__(py)
 print(py)
 
 # formats
@@ -19,4 +19,4 @@ print(py)
 # nuke.knobDefault('Root.format', '320p')
 
 
-sys.pa__.a__(root)
+___.pa__.a__(root)

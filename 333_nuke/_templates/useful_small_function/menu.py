@@ -122,12 +122,12 @@ ___ sjmHideInputsOff
 # by steve molin
 #
 ___ sjmOpenInViewer(nd_N..):
-  ______ subprocess
+  ______ su__
   __ nd __ N..:
     nd _ ?.sN__
   fp _ nd.knobs()['file'].v.. % nd.firstFrame()
   args _ 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe @' % fp
-  subprocess.P..(args)
+  su__.P..(args)
 
 # load the targets of the writeNodes in a viewer (djv):
 # TODO: deal better with %04d; deal with different viewers

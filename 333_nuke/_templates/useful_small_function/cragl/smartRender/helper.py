@@ -5,7 +5,7 @@ ______ multiprocessing
 ______ __
 ______ random
 ______ ___
-______ subprocess
+______ su__
 ______ ti__
 ______ urllib
 ______ xml.etree.ElementTree __ ET
@@ -310,10 +310,10 @@ ___ open_website(url, *args):
     __ ___.pl.. __ 'win32':
         __.startfile(url)
     ____ ___.pl.. __ 'darwin':
-        subprocess.P..(['open', url])
+        su__.P..(['open', url])
     ____
         ___
-            subprocess.P..(['xdg-open', url])
+            su__.P..(['xdg-open', url])
         ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
@@ -595,9 +595,9 @@ ___ open_in_explorer(pa__, parent _ N.., *args):
     __ pl...system() __ 'Windows':
         __.startfile(pa__)
     ____ pl...system() __ 'Darwin':
-        subprocess.P..(['open', pa__])
+        su__.P..(['open', pa__])
     ____
-        subprocess.P..(['xdg-open', pa__])
+        su__.P..(['xdg-open', pa__])
 
 
 ___ reset_file(which, window, *args):

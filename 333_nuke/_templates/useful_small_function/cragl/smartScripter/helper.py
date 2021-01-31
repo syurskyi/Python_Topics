@@ -4,7 +4,7 @@
 ______ logging
 ______ j___
 ______ __
-______ subprocess
+______ su__
 ______ ___
 
 # _____ third-party modules
@@ -203,10 +203,10 @@ ___ open_website(url):
         # Under windows, the os module has this member.
         __.startfile(url)  # pylint: disable=no-member
     ____ ___.pl.. __ 'darwin':
-        subprocess.P..(['open', url])
+        su__.P..(['open', url])
     ____
         ___
-            subprocess.P..(['xdg-open', url])
+            su__.P..(['xdg-open', url])
         ______ OSError:
             msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))
@@ -322,12 +322,12 @@ ___ get_icon(icon):
 ___ reveal_in_explorer(pa__):
     """Reveal the given path in the explorer."""
     __ ___.pl.. __ 'darwin':
-        subprocess.check_call(['open', '--', pa__])
+        su__.c_c_(['open', '--', pa__])
     ____ ___.pl.. __ 'linux2':
-        subprocess.P..(['xdg-open', pa__])
+        su__.P..(['xdg-open', pa__])
     ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
         ___
-            subprocess.check_call(['explorer', pa__])
+            su__.c_c_(['explorer', pa__])
         # We want to catch all errors in here explicitly.
         ______ E.. __ error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs
