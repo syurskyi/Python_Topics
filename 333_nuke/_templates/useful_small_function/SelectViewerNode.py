@@ -33,9 +33,9 @@ ___ GetViewerList(ViewersList):
         ActiveViewer _ "      "+ActiveViewer.s..("Viewer")[1]+"    "
     ______
         p..
-    ___ v __ ?.allNodes
+    ___ v __ ?.aN..
         Name _ v.n..
-        Class _ v.Class()
+        Class _ v.C..
         __ Class __ "Viewer":
             Number _ "      "+ Name.s..(Class)[1]+"    "
             __ Number no. __ ViewersList:
@@ -63,8 +63,8 @@ ___ SelectNode(Viewer,warning):
         warning.setVisible(T..)
         raise ValueError      
     ____ Inputs>1:
-        ___ n __ ?.allNodes
-            n.setSelected(F..)
+        ___ n __ ?.aN..
+            n.sS..(F..)
         __ Viewer __ ActiveViewer:
             index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)+1
             Nodes_[index1]
@@ -75,24 +75,24 @@ ___ SelectNode(Viewer,warning):
                 p..
             ___ index __ Nodes:
                 Node _ ?.tN..(?.tN..(Viewer).input(index-1).n..
-                Node.setSelected(T..)
+                Node.sS..(T..)
                 ?.show(Node)
         ____
             ___ i __ ra__(0,Inputs):
                 ___
                     Node _ ?.tN..(?.tN..(Viewer).input(i).n..
-                    Node.setSelected(T..)
+                    Node.sS..(T..)
                     ?.show(Node)
                 ______
                     p..
     ____
-        ___ n __ ?.allNodes
-            n.setSelected(F..)
+        ___ n __ ?.aN..
+            n.sS..(F..)
         __ Viewer __ ActiveViewer:
             ___
                 index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)
                 Node _ ?.tN..(?.tN..(Viewer).input(index1).n..
-                Node.setSelected(T..)
+                Node.sS..(T..)
                 ?.show(Node)
             ______
                 p..
@@ -100,7 +100,7 @@ ___ SelectNode(Viewer,warning):
             ___ i __ ra__(0,Inputs):
                 ___
                     Node _ ?.tN..(?.tN..(Viewer).input(i).n..
-                    Node.setSelected(T..)
+                    Node.sS..(T..)
                     ?.show(Node)
                 ______
                     p..
@@ -109,14 +109,14 @@ ___ SelectNode(Viewer,warning):
 ___ Zoom(zoom,node):
     __ zoom.gV..:
         x1 _ node[0].xpos()
-        y1 _ node[0].ypos()
+        y1 _ node[0].yp__()
         w1 _ node[0].screenWidth()
         h1 _ node[0].screenHeight()
         __ le.(node)__1:
             ?.zoom(2,(x1+w1/2,y1+h1/2))
         ____ le.(node)>1:
             x2 _ node[1].xpos()
-            y2 _ node[1].ypos()
+            y2 _ node[1].yp__()
             w2 _ node[1].screenWidth()
             h2 _ node[1].screenHeight()
             ?.zoom(0,((x1+x2)/2+w1/2,(y1+y2)/2+h1/2))

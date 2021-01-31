@@ -11,7 +11,7 @@ ___ callInputs
     clearSelection()
     
     bd _ 0
-    sa _ ?.allNodes()
+    sa _ ?.aN..()
     ___ nd __ sa:
         __ nd['name'].v...find('Selection Set') !_ -1:
             bd +_ 1

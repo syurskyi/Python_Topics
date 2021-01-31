@@ -28,7 +28,7 @@ gizmos = nodes.addMenu('Gizmos', icon='cgninjas.png')
 
 gizPath = __.pa__.join(root, 'gizmos')
 ___ gizmo __ __.l_d_(gizPath):
-    __ __.pa__.s__(gizmo)[-1] == '.gizmo':
+    __ __.pa__.s__(gizmo)[-1] __ '.gizmo':
         name = __.pa__.s__(gizmo)[0]
         ico = name+'.png'
         gizmos.aC..(name, "nuke.createNode('%s')" % name, icon=ico)

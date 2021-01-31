@@ -29,7 +29,7 @@ ___ get_knobs(node):
     default_knobs = list()
     ___ k __ node.knobs
         knob = node[k]
-        __ knob.Class() no. __ unsupported_classes and knob.n..  no. __ unsupported_names:
+        __ knob.C..  no. __ unsupported_classes and knob.n..  no. __ unsupported_names:
             ___ pattern __ ignore_patterns:
                 __ pattern no. __ k:
                     knobs.ap..(k)
@@ -81,10 +81,10 @@ ___ edit_knobs
     ___ i __ ra__(4):
         val = panel.v.. (st.(i))
         __ val __ '':
-            values.ap..(False)
+            values.ap.. F..
         ____
             ___
-                values.ap..(float(val))
+                values.ap..(fl..(val))
             ______ ValueError:
                 values.ap..(st.(val))
     ___ node __ nodes:
@@ -104,9 +104,9 @@ ___ edit_knobs
                 __ knob.hasExpression
                     knob.clearAnimated()
                 __ no. values[0]:
-                    knob.sV..(False)
+                    knob.sV.. F..
                 ____
-                    knob.sV..(True)
+                    knob.sV.. T..
             ____ isinstance(knob, (?.File_Knob)):
                 knob.sV..(values[0])
             ____ isinstance(knob, (?.XYZ_Knob, ?.XY_Knob, ?.WH_Knob, ?.UV_Knob, ?.Array_Knob)):
@@ -117,7 +117,7 @@ ___ edit_knobs
                 ___ i __ ra__(array_size):
                     __ knob.hasExpression(i):
                         knob.clearAnimated(i)
-                    __ isinstance(values[i], float):
+                    __ isinstance(values[i], fl..):
                         knob.sV..(values[i], i)
                     ____ isinstance(values[i], st.):
                         # Assume this was meant to be an expression

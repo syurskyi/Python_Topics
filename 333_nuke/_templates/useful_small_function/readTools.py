@@ -7,8 +7,8 @@ ___ newUserKnob(knob, v.. ):
 
 ___ allReads
     readNodes _ # list
-    ___ i __ ?.allNodes
-        __ i.Class() __ 'Read':
+    ___ i __ ?.aN..
+        __ i.C..  __ 'Read':
             readNodes.ap..(i)
     r_ readNodes
 

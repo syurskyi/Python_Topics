@@ -64,11 +64,11 @@ class Ui_Form(object):
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi(self, Form):
-        Form.setWindowTitle(QApplication.translate("Form", "Split Channel", None, QApplication.UnicodeUTF8))
-        self.AdditiveRebuild_grp.setTitle(QApplication.translate("Form", "Additive Rebuild", None, QApplication.UnicodeUTF8))
-        self.MentalRay_btn.setText(QApplication.translate("Form", "Mental Ray", None, QApplication.UnicodeUTF8))
-        self.PrMan_btn.setText(QApplication.translate("Form", "PrMan", None, QApplication.UnicodeUTF8))
-        self.VRAY_btn.setText(QApplication.translate("Form", "VRAY", None, QApplication.UnicodeUTF8))
-        self.RelightSetup_grp.setTitle(QApplication.translate("Form", "Relight Setup", None, QApplication.UnicodeUTF8))
-        self.relight_btn.setText(QApplication.translate("Form", "Relight", None, QApplication.UnicodeUTF8))
+        Form.setWindowTitle(QApplication.translate("Form", "Split Channel", N.., QApplication.UnicodeUTF8))
+        self.AdditiveRebuild_grp.setTitle(QApplication.translate("Form", "Additive Rebuild", N.., QApplication.UnicodeUTF8))
+        self.MentalRay_btn.setText(QApplication.translate("Form", "Mental Ray", N.., QApplication.UnicodeUTF8))
+        self.PrMan_btn.setText(QApplication.translate("Form", "PrMan", N.., QApplication.UnicodeUTF8))
+        self.VRAY_btn.setText(QApplication.translate("Form", "VRAY", N.., QApplication.UnicodeUTF8))
+        self.RelightSetup_grp.setTitle(QApplication.translate("Form", "Relight Setup", N.., QApplication.UnicodeUTF8))
+        self.relight_btn.setText(QApplication.translate("Form", "Relight", N.., QApplication.UnicodeUTF8))
 

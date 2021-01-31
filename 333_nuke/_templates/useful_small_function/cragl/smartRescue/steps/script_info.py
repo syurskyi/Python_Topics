@@ -149,7 +149,7 @@ c_ ScriptInfo(NodeStep):
             int: The total number of nodes.
 
         """
-        r_ le.(?.allNodes(recurseGroups_recursive))
+        r_ le.(?.aN..(recurseGroups_recursive))
 
     @staticmethod
     ___ frame_range
@@ -233,7 +233,7 @@ c_ ScriptInfo(NodeStep):
 
         """
         footage _ # list
-        ___ node __ ?.allNodes(recurseGroups_T..):
+        ___ node __ ?.aN..(recurseGroups_T..):
             ___ knob_name __ path_knobs:
                 path_knob _ node.knob(knob_name)
                 __ no. path_knob:
@@ -251,8 +251,8 @@ c_ ScriptInfo(NodeStep):
             set: All node classes
 
         """
-        all_nodes _ ?.allNodes(recurseGroups_T..)
-        r_ sorted(set(node.Class() ___ node __ all_nodes))
+        all_nodes _ ?.aN..(recurseGroups_T..)
+        r_ sorted(set(node.C..  ___ node __ all_nodes))
 
     ___ len_nodes_by_class
         """Get the number of nodes by class.
@@ -281,8 +281,8 @@ c_ ScriptInfo(NodeStep):
 
         ___ node_class __ sorted(node_classes):
             counter _ 0
-            ___ node __ ?.allNodes(recurseGroups_T..):
-                __ node.Class() __ node_class:
+            ___ node __ ?.aN..(recurseGroups_T..):
+                __ node.C..  __ node_class:
                     counter +_ 1
             stats.ap..((node_class, counter))
 

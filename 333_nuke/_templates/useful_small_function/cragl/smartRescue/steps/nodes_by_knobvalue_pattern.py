@@ -111,7 +111,7 @@ c_ NodesByKnobValuePattern(NodeStep):
     ___ process
         """Handle nodes that match one of the patterns."""
         ___ rule __ setup["patterns"]:
-            ___ node __ ?.allNodes
+            ___ node __ ?.aN..
                 knob_name _ rule[0]
                 pattern _ rule[1]
 

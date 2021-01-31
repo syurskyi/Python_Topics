@@ -10,8 +10,8 @@ __.environ['HOME'] = root
 __.environ['NUKE_PATH'] = root
 
 # START NUKE
-__ __.name == 'nt':
+__ __.name __ 'nt':
     exe = 'C:/Program Files/Nuke12.1v1/Nuke12.1.exe'
 else:
-    exe = None
+    exe = N..
 subprocess.Popen([exe, '--nukex'])

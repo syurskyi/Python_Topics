@@ -34,7 +34,7 @@ ___ sjmAlignH
   yresult _ N..
   ___ n __ ?.sN..:
     __ yresult __ N..:
-      yresult _ n.ypos()
+      yresult _ n.yp__()
     ____
       n.setYpos(yresult)
 #
@@ -65,14 +65,14 @@ ___ sjmAutoBackdrop
   xmin _ min([xmin,(xmin+xmax-minWidth)/2])
   xmax _ max([xmax,(xmin+xmax+minWidth)/2])
   #
-  ymin _ min([node.ypos() ___ node __ selNodes]) - margin
-  ymax _ max([node.ypos() + node.screenHeight() ___ node __ selNodes]) + margin
+  ymin _ min([node.yp__() ___ node __ selNodes]) - margin
+  ymax _ max([node.yp__() + node.screenHeight() ___ node __ selNodes]) + margin
   ymin _ min([ymin,(ymin+ymax-minHeight)/2])
   ymax _ max([ymax,(ymin+ymax+minHeight)/2])
   #
   width _ xmax-xmin
   height _ ymax-ymin
-  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ __.((random.random()*(16 - 10))) + 10, note_font_size_99)
+  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, yp__ _ ymin, bdheight _ height, tile_color _ __.((random.random()*(16 - 10))) + 10, note_font_size_99)
   n.showControlPanel()
   #
   # restore node selection
@@ -85,7 +85,7 @@ ___ sjmAutoBackdrop
 # backdrop font size=99, by Steve Molin
 #
 ___ sjmBackdropFonts
-  ___ i __ ?.allNodes
+  ___ i __ ?.aN..
     __ i.__class__.__name__ __ 'BackdropNode':
       i.knob('note_font_size').sV..(189)
       k _ i.knob('label')
@@ -112,7 +112,7 @@ ___ sjmFindAllParentReads(n_N..):
 # unhide all inputs, by Steve Molin
 #
 ___ sjmHideInputsOff
-  ___ i __ ?.allNodes
+  ___ i __ ?.aN..
     __ i.knob('hide_input'):
       __ i.knob('hide_input').v..:
 	i.knob('hide_input').sV..(F..)
@@ -133,8 +133,8 @@ ___ sjmOpenInViewer(nd_N..):
 # TODO: deal better with %04d; deal with different viewers
 #
 ___ sjmOpenAllInViewer
-  ___ n __ ?.allNodes
-    __ n.Class() __ 'Write':
+  ___ n __ ?.aN..
+    __ n.C..  __ 'Write':
       __ no. n.knob('disable').v..:
         sjmOpenInViewer(n)
 	#filespec = n.knob('file').value()

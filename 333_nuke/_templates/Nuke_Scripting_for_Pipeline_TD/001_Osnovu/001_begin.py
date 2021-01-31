@@ -3,7 +3,7 @@ _____ ?
 # create  and connect nodes
 r = ?.createNode('Read', inpanel=False)
 g = ?.createNode('Grade', inpanel=False)
-c = ?.nodes.ColorCorrect(name='mainCC',xpos=400,ypos = 10, gain=2)
+c = ?.nodes.ColorCorrect(name='mainCC',xpos=400,yp__ = 10, gain=2)
 c.setInput(0, g)
 c.autoplace()
 b = ?.nodes.Blur()
@@ -25,11 +25,11 @@ v = ?.toNode('Viewer1')
 v.canSetInput(0,c)
 v.setInput(0, c)  
 
-?.allNodes('ColorCorrect')
+?.aN..('ColorCorrect')
 ?.selectedNodes('ColorCorrect')
 
-nodes = ?.allNodes()
-[ x ___ x __ nodes __ x.Class() == 'ColorCorrect']
+nodes = ?.aN..()
+[ x ___ x __ nodes __ x.C..  __ 'ColorCorrect']
 
 ?.activeViewer().node()
 

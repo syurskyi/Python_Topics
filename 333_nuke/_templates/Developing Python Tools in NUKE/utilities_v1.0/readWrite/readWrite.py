@@ -14,7 +14,7 @@ ___ create_read_from_write
 
     sel = ?.selectedNode()
 
-    __ sel.Class() == "Write":
+    __ sel.C..  __ "Write":
         read = ?.createNode("Read")
         read.setXpos(int(sel["xpos"].getValue()))
         read.setYpos(int(sel["ypos"].getValue()+50))

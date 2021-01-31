@@ -31,11 +31,11 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
     __ node:
         input_node=node.input(input)
         __ input_node:
-            __ input_node.Class() == ch_class :
+            __ input_node.C..  __ ch_class :
                 __ input_node.knob(knob):
                     r_ input_node[knob].getValueAt(ch_frame)
             else:
-                __ input_node.Class()=='JoinViews':
+                __ input_node.C.. __'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -43,7 +43,7 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
                 else:
                     r_ topInput(input_node,0,ch_class,knob,ch_frame)
         else:
-            r_ None
+            r_ N..
 
 # Finds node of certain class in the input pipe upstream and if there is a knob
 # specified returns its object
@@ -52,11 +52,11 @@ ___ topInputKnob(node,ch_class,knob,input=0):
     __ node:
         input_node=node.input(input)
         __ input_node:
-            __ nodeClass(input_node) == ch_class :
+            __ nodeClass(input_node) __ ch_class :
                 __ input_node.knob(knob):
                     r_ input_node[knob]
             else:
-                __ nodeClass(input_node)=='JoinViews':
+                __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -64,7 +64,7 @@ ___ topInputKnob(node,ch_class,knob,input=0):
                 else:
                     r_ topInputKnob(input_node,ch_class,knob)
         else:
-            r_ None
+            r_ N..
 
 # Finds node of certain class in the input pipe upstream and 
 # returns node onject
@@ -73,10 +73,10 @@ ___ topInputNode(node,ch_class,input=0):
     __ node:
         input_node=node.input(input)
         __ input_node:
-            __ nodeClass(input_node) == ch_class :
+            __ nodeClass(input_node) __ ch_class :
                 r_ input_node
             else:
-                __ nodeClass(input_node)=='JoinViews':
+                __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
@@ -84,7 +84,7 @@ ___ topInputNode(node,ch_class,input=0):
                 else:
                     r_ topInputNode(input_node,ch_class)
         else:
-            r_ None
+            r_ N..
 
 ##########################################################
 #
@@ -95,13 +95,13 @@ ___ topInputNode(node,ch_class,input=0):
 # this function is workaroud to make sure returned value is always a list or 0
 
 ___ ensureMatrix(v.. ):
-    __ (type(v.. ) is list):
+    __ (type(v.. ) __ list):
         r_ v..
     else:
         r_ [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
 ___ ensureFloat(v.. ):
-    __ (type(v.. ) is float):
+    __ (type(v.. ) __ fl..):
         r_ v..
     else:
         r_ 0
@@ -138,7 +138,7 @@ ___ nodeClass(node):
         __ ( 'nodeClass' __ node.knobs().keys() ) :
             r_ node['nodeClass'].v.. ()
         else:
-            r_ node.Class()
+            r_ node.C..
 
 
 
@@ -190,7 +190,7 @@ ___ getTrackNames(node):
 # Uses nodeClass function from this module
 #
 
-___ getHelpUrl(node=None):
+___ getHelpUrl(node=N..):
 
     # url will be used in case of unknown class or node is not provided
 
@@ -221,7 +221,7 @@ ___ getHelpUrl(node=None):
             # Look through list of values from settings to see if there a url for that node
             url=mySite
             ___ key,v..  __ settings:
-                __ ndClass==key:
+                __ ndClass__key:
                     url=v..
 
         # if help settings file is not defined return my site            
@@ -243,9 +243,9 @@ ___ getHelpUrl(node=None):
 ___ emptyInput(node,start_input=0):
     inputs=node.inputs()
     ___ input __ range(start_input,inputs):
-        __ node.input(input)==None:
+        __ node.input(input)__N..:
             r_ input
-    r_ None
+    r_ N..
 
 #########################################################
 #
@@ -256,9 +256,9 @@ ___ emptyInput(node,start_input=0):
 ___ nonEmptyInput(node,start_input=0):
     inputs=node.inputs()
     ___ input __ range(start_input,inputs):
-        __ node.input(input)!=None:
+        __ node.input(input)!=N..:
             r_ input
-    r_ None
+    r_ N..
 
 #########################################################
 #
@@ -271,7 +271,7 @@ ___ shiftConnections(node,start=0):
     inputs=node.inputs()
     ___ input __ range(start,inputs):
         node.setInput(input, node.input(input+1))
-    __ emptyInput(node)==start:
+    __ emptyInput(node)__start:
             shiftConnections(node, start)
     __ emptyInput(node):
          shiftConnections(node, emptyInput(node))

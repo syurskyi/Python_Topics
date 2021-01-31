@@ -77,11 +77,11 @@ class Ui_Form(object):
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi(self, Form):
-        Form.setWindowTitle(_translate("Form", "Split Channel", None))
-        self.AdditiveRebuild_grp.setTitle(_translate("Form", "Additive Rebuild", None))
-        self.MentalRay_btn.setText(_translate("Form", "Mental Ray", None))
-        self.PrMan_btn.setText(_translate("Form", "PrMan", None))
-        self.VRAY_btn.setText(_translate("Form", "VRAY", None))
-        self.RelightSetup_grp.setTitle(_translate("Form", "Relight Setup", None))
-        self.relight_btn.setText(_translate("Form", "Relight", None))
+        Form.setWindowTitle(_translate("Form", "Split Channel", N..))
+        self.AdditiveRebuild_grp.setTitle(_translate("Form", "Additive Rebuild", N..))
+        self.MentalRay_btn.setText(_translate("Form", "Mental Ray", N..))
+        self.PrMan_btn.setText(_translate("Form", "PrMan", N..))
+        self.VRAY_btn.setText(_translate("Form", "VRAY", N..))
+        self.RelightSetup_grp.setTitle(_translate("Form", "Relight Setup", N..))
+        self.relight_btn.setText(_translate("Form", "Relight", N..))
 

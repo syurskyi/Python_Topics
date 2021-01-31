@@ -17,12 +17,12 @@ class ClipboardUi(QTabWidget):
 
         users_label = QLabel("Users")
         self.users_list_widget = QListWidget()
-        self.users_list_widget.setDragEnabled(True)
+        self.users_list_widget.setDragEnabled T..
         search_label = QLabel("Search")
         self.users_search_line_edit = QLineEdit()
         stack_label = QLabel("Stack")
         self.stack_list_widget = QListWidget()
-        self.stack_list_widget.setAcceptDrops(True)
+        self.stack_list_widget.setAcceptDrops T..
         self.text_note_text_edit = QPlainTextEdit()
         self.send_push_button = QPushButton("Send")
         self.send_close_push_button = QPushButton("Close")
@@ -99,7 +99,7 @@ class HistoryTableWidget(QTableWidget):
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.setHorizontalHeaderItem(0, QTableWidgetItem("Name"))
         self.setHorizontalHeaderItem(1, QTableWidgetItem("Date"))
-        self.horizontalHeader().setStretchLastSection(True)
-        self.verticalHeader().setVisible(False)
+        self.horizontalHeader().setStretchLastSection T..
+        self.verticalHeader().setVisible F..
         self.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.setSelectionMode(QAbstractItemView.SingleSelection)

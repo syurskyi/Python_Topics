@@ -13,11 +13,11 @@ class Panel(QWidget):
         self.resize(400, 400)
         mouse_position = QCursor().pos()
         self.move(mouse_position - QPoint(200, 200))
-        self.setMouseTracking(True)
+        self.setMouseTracking T..
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.Popup)
         self.setAttribute(Qt.WA_QuitOnClose)
 
-        self.selected_item = None
+        self.selected_item = N..
 
         self.mouse_destination = QPoint(self.width()/2, self.height()/2)
 
@@ -40,8 +40,8 @@ class Panel(QWidget):
     ___ keyReleaseEvent(self, event):
         __ event.isAutoRepeat
             r_
-        __ event.text() == "n":
-            __ self.selected_item is None:
+        __ event.text() __ "n":
+            __ self.selected_item __ N..:
                 self.close()
                 r_
             exec self.selected_item.code
@@ -59,13 +59,13 @@ class Panel(QWidget):
 
     ___ set_label_color(self):
         widgets = [self.layout.itemAt(i).widget() ___ i __ range(self.layout.count())]
-        self.selected_item = None
+        self.selected_item = N..
         ___ w __ widgets:
             __ self.line.intersected(w.geometry()):
-                w.set_selected(True)
+                w.set_selected T..
                 self.selected_item = w
             else:
-                w.set_selected(False)
+                w.set_selected F..
 
     ___ draw_line(self,painter):
         pen = QPen(QColor(0,0,0))
@@ -134,7 +134,7 @@ class ActionLabel(QLabel):
 
         self.id = id
         self.setAlignment(Qt.AlignCenter)
-        self.setMouseTracking(True)
+        self.setMouseTracking T..
         self.setFixedWidth(100)
         self.setFixedHeight(25)
         self.setStyleSheet("""background:red;
@@ -156,7 +156,7 @@ class ActionLabel(QLabel):
         self.code = code
 
     ___ mousePressEvent(self, event):
-        __ event.buttons() == Qt.RightButton:
+        __ event.buttons() __ Qt.RightButton:
             dialog = Dialog(self.id)
             __ dialog.exec_
                 dialog.save_action()

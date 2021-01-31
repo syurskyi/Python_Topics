@@ -21,7 +21,7 @@ __email__ = 'jaime.rvq@gmail.com'
 __status__ = 'Testing'
 
 
-___ nuke_paint_nodes(input=None):
+___ nuke_paint_nodes(input=N..):
 
     ______ ?
 
@@ -37,7 +37,7 @@ ___ nuke_paint_nodes(input=None):
         r_ 'lime', 'Nodes painted correctly'
 
 
-___ nuke_constant(input=None):
+___ nuke_constant(input=N..):
 
     ______ ?
 
@@ -46,7 +46,7 @@ ___ nuke_constant(input=None):
     r_ 'lime', 'Constant node created'
 
 
-___ nuke_backdrop(input=None):
+___ nuke_backdrop(input=N..):
 
     ______ n_s_
 
@@ -55,7 +55,7 @@ ___ nuke_backdrop(input=None):
     r_ 'lime', 'Backdrop node created'
 
 
-___ nuke_IO(input=None):
+___ nuke_IO(input=N..):
 
     ___ execute_nuke(executable):
         ______ ?

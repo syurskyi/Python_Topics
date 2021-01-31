@@ -14,9 +14,9 @@ ___ open_folder(pa__):
     :return: None
     """
 
-    __ sys.platform == "darwin":
+    __ sys.platform __ "darwin":
         subprocess.check_call(["open", pa__])
-    __ sys.platform == "linux2":
+    __ sys.platform __ "linux2":
         subprocess.check_call(["gnome-open", pa__])
-    __ sys.platform == "windows":
+    __ sys.platform __ "windows":
         subprocess.check_call(["explorer", pa__])

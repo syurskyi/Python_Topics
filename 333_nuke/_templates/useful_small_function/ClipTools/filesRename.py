@@ -208,7 +208,7 @@ ___ removeTemps
      
     do_it_nuke.a..('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
     __ do_it:
-        aw _ ?.allNodes('Write')
+        aw _ ?.aN..('Write')
         
         paths _ # list
         

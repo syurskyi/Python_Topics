@@ -264,7 +264,7 @@ ___ f..(node):
         my_width _ node.width()
         
         # grab pixel aspect ratio from node as float
-        my_pixel_aspect _ float(?.v.. ('@.pixel_aspect' % node.fullName()))
+        my_pixel_aspect _ fl..(?.v.. ('@.pixel_aspect' % node.fullName()))
         
         # this is the format to search for
         my_format _ (my_height, my_width, my_pixel_aspect)

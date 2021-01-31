@@ -85,7 +85,7 @@ ___ auto_convert(v.. ):
         r_ bool(v.. )
 
     __ atype __ 'float':
-        r_ float(v.. )
+        r_ fl..(v.. )
 
     __ atype __ 'int':
         r_ int(v.. )
@@ -120,10 +120,10 @@ ___ attr_type(v.. ):
             r_ 'str'
 
         __ is_number(v.. ):
-            __ type(v.. ) is float:
+            __ type(v.. ) __ fl..:
                 r_ 'float'
 
-            __ type(v.. ) is int:
+            __ type(v.. ) __ int:
                 r_ 'int'
     r_ 'unknown'
 
@@ -140,7 +140,7 @@ ___ list_attr_types(s):
     __ no. is_list(s):
         r_ 'unknown'
     
-    ___ typ __ [st., int, float, bool]:
+    ___ typ __ [st., int, fl.., bool]:
         __ all(isinstance(n, typ) ___ n __ s):
             r_ '%s%d' % (typ.__name__, le.(s))
 
@@ -163,7 +163,7 @@ ___ is_number(s):
     """
     __ is_bool(s):
         r_ False
-    r_ isinstance(s, int) or isinstance(s, float) 
+    r_ isinstance(s, int) or isinstance(s, fl..)
 
 
 ___ is_bool(s):
@@ -208,7 +208,7 @@ ___ is_newer(file1, file2):
 
 #- Testing -----
 ___ test_func(w, h):
-    print '# width: %.2f, height: %.2f' % (float(w), float(h))
+    print '# width: %.2f, height: %.2f' % (fl..(w), fl..(h))
 
 
 ___ nodeParse(node):

@@ -19,7 +19,7 @@ ___ split
 
                 cc = ?.nodes.ColorCorrect(inputs=[sh])
 
-            y = node.ypos() + offset
+            y = node.yp__() + offset
             x = node.xpos()
             ___ i, s __ enumerate(shs):
                 nx = x + (offset*i)

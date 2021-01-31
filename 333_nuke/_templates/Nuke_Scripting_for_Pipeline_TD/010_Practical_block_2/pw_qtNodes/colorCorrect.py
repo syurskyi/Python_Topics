@@ -272,8 +272,8 @@ c_ colorRampClass(?W..):
         painter.end()
 
     ___ updateColor
-        h _ pick[0]/float(hw)
-        s _ pick[1]/float(hw)
+        h _ pick[0]/fl..(hw)
+        s _ pick[1]/fl..(hw)
         colorChangedSignal.emit([h,s])
 
     ___ sV..(self, v):
@@ -309,8 +309,8 @@ c_ colorRampClass(?W..):
         color _ QColor()
         ___ y __ ra..(hw):
             ___ x __ ra..(hw):
-                h _ x / float(hw)
-                s _ y/ float(hw)
+                h _ x / fl..(hw)
+                s _ y/ fl..(hw)
                 color.setHsvF(h, s, 1)
                 img.setPixel(x, y, color.rgb())
         r_ img

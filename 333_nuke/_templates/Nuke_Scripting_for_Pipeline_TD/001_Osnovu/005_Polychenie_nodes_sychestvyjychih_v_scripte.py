@@ -1,13 +1,13 @@
 _____ ?
 
-?.allNodes()
-?.allNodes('ColorCorrect')
+?.aN..()
+?.aN..('ColorCorrect')
 
 ?.selectedNodes('ColorCorrect')
 
 
-nodes = ?.allNodes()
-print[x ___ x __ nodes __ x.Class()=='Transform']
+nodes = ?.aN..()
+print[x ___ x __ nodes __ x.C.. __'Transform']
 
 ?.toNode('ColorCorrect1')
 

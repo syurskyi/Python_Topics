@@ -161,7 +161,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
 
@@ -248,7 +248,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
 
@@ -320,7 +320,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
 
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
     
@@ -407,7 +407,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
         
@@ -491,7 +491,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
     
         ___ n __ KnobTypes:
 
-            __ node.Class() __ NodeTypes:
+            __ node.C..  __ NodeTypes:
             
                 ___
 
@@ -561,7 +561,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
 
@@ -628,7 +628,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
 
@@ -700,7 +700,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
 
     ___ node __ ?.sN.. :
     
-        __ node.Class() __ NodeTypes:
+        __ node.C..  __ NodeTypes:
         
             ___ n __ KnobTypes:
 
@@ -778,21 +778,21 @@ ___ Warning(warning):
     
     warning.sV..(str(le.(Selection))+ ' Nodes Selected')
     
-    warning.setVisible(True)
+    warning.setVisible T..
 
 
 ___ Warning_changed(warning,count):
 
     warning.sV..(str(count)+ ' Nodes Changed')
     
-    warning.setVisible(True)
+    warning.setVisible T..
     
 
 ___ Warning_SaveLoad(warning,warningList,index):
 
     warning.sV..(warningList[index])
     
-    warning.setVisible(True)
+    warning.setVisible T..
     
 
 ___ Warning_Save(warning,Selection):
@@ -801,7 +801,7 @@ ___ Warning_Save(warning,Selection):
 
     warning.sV..(str(count)+ ' Nodes Saved')
     
-    warning.setVisible(True)
+    warning.setVisible T..
     
 
 ___ Warning_Load(warning,warningList,index):
@@ -810,7 +810,7 @@ ___ Warning_Load(warning,warningList,index):
 
     warning.sV..(warningList[index]+"  "+ str(le.(Selection))+ ' Nodes Selected')
     
-    warning.setVisible(True)
+    warning.setVisible T..
 
 
 class ChangeVersion(n_s_.PythonPanel):
@@ -828,7 +828,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Read = ?.Boolean_Knob("Read")
 
 
-        self.Read.sV..(True)
+        self.Read.sV.. T..
 
 
         self.Write = ?.Boolean_Knob("Write")
@@ -846,7 +846,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.file = ?.Boolean_Knob("file","file   ")
 
 
-        self.file.sV..(True)
+        self.file.sV.. T..
 
 
         self.file.setFlag(?.STARTLINE)
@@ -858,13 +858,13 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Info = ?.Boolean_Knob("Info    ")
 
 
-        self.Info.sV..(True)
+        self.Info.sV.. T..
         
         
         self.VersionFolder = ?.Boolean_Knob("Version by Folder")
 
 
-        self.VersionFolder.sV..(True)
+        self.VersionFolder.sV.. T..
         
         
         self.dividerB = ?.Text_Knob("")
@@ -882,19 +882,19 @@ class ChangeVersion(n_s_.PythonPanel):
         self.warning.clearFlag(?.STARTLINE)
 
 
-        self.warning.setVisible(False)
+        self.warning.setVisible F..
 
 
         self.SelectString = ?.String_Knob("SelectString", "Select By Value")
 
 
-        self.SelectString.setEnabled(False)
+        self.SelectString.setEnabled F..
 
 
         self.Select = ?.PyScript_Knob('Select', 'Select')
 
 
-        self.Select.setEnabled(True)
+        self.Select.setEnabled T..
 
 
         self.Select.setFlag(?.STARTLINE)
@@ -903,19 +903,19 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Add = ?.PyScript_Knob('Add', 'Add')
 
 
-        self.Add.setEnabled(False)
+        self.Add.setEnabled F..
 
 
         self.r__ = ?.PyScript_Knob('Remove', 'Remove')
 
 
-        self.r__.setEnabled(False)
+        self.r__.setEnabled F..
 
 
         self.ClearString = ?.PyScript_Knob('ClearString', 'Clear')
 
 
-        self.ClearString.setEnabled(False)
+        self.ClearString.setEnabled F..
 
 
         self.dividerB2 = ?.Text_Knob("")
@@ -939,7 +939,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.warningD.clearFlag(?.STARTLINE)
 
 
-        self.warningD.setVisible(False)
+        self.warningD.setVisible F..
 
 
         self.dividerC = ?.Text_Knob("")
@@ -951,13 +951,13 @@ class ChangeVersion(n_s_.PythonPanel):
         self.SelectVal = ?.String_Knob("SelectVal", "Select Value")
 
 
-        self.SelectVal.setEnabled(False)
+        self.SelectVal.setEnabled F..
 
 
         self.ReplaceVal = ?.String_Knob("ReplaceVal", "Replace With")
 
 
-        self.ReplaceVal.setEnabled(False)
+        self.ReplaceVal.setEnabled F..
 
 
         self.Replace = ?.PyScript_Knob('Replace', 'Replace')
@@ -966,22 +966,22 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Replace.setFlag(?.STARTLINE)
         
         
-        self.Replace.setEnabled(False)
+        self.Replace.setEnabled F..
 
 
         self.Switch = ?.PyScript_Knob('Switch', 'Switch')
 
 
-        self.Switch.setEnabled(False)
+        self.Switch.setEnabled F..
 
 
         self.Clear = ?.PyScript_Knob('Clear', 'Clear')
 
 
-        self.Clear.setEnabled(True)
+        self.Clear.setEnabled T..
 
 
-        self.Clear.setEnabled(False)
+        self.Clear.setEnabled F..
 
 
         self.warningB = ?.Text_Knob('warning',"")
@@ -990,7 +990,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.warningB.clearFlag(?.STARTLINE)
 
 
-        self.warningB.setVisible(False)
+        self.warningB.setVisible F..
 
 
         self.dividerD = ?.Text_Knob("")
@@ -1017,7 +1017,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.warningC.clearFlag(?.STARTLINE)
 
 
-        self.warningC.setVisible(False)
+        self.warningC.setVisible F..
 
 
         self.dividerE = ?.Text_Knob("")
@@ -1428,43 +1428,43 @@ clears all messages
         #Show Info    
         
             
-        __ knob is self.Info:
+        __ knob __ self.Info:
 
 
             __ self.Info.gV.. :
             
             
-                self.Check.setEnabled(True)
+                self.Check.setEnabled T..
 
 
-                self.ClearMessage.setEnabled(True)
+                self.ClearMessage.setEnabled T..
 
 
             else:  
             
             
-                self.Check.setEnabled(False)
+                self.Check.setEnabled F..
                 
 
-                self.ClearMessage.setEnabled(False)
+                self.ClearMessage.setEnabled F..
 
 
-                self.warning.setVisible(False)
+                self.warning.setVisible F..
 
 
-                self.warningB.setVisible(False)
+                self.warningB.setVisible F..
 
 
-                self.warningC.setVisible(False)
+                self.warningC.setVisible F..
 
 
-                self.warningD.setVisible(False)
+                self.warningD.setVisible F..
                 
 
         #Check Selection    
         
 
-        __ knob is self.Check:
+        __ knob __ self.Check:
 
 
             __ self.Info.gV.. :
@@ -1477,37 +1477,37 @@ clears all messages
         #Selects all nodes
 
 
-        __ self.Type.v.. ()=="All":
+        __ self.Type.v.. ()__"All":
         
         
-            self.SelectString.setEnabled(False)
+            self.SelectString.setEnabled F..
         
         
-            self.Select.setEnabled(True)
+            self.Select.setEnabled T..
 
 
-            self.Add.setEnabled(False)
+            self.Add.setEnabled F..
 
 
-            self.r__.setEnabled(False)
+            self.r__.setEnabled F..
 
 
-            self.ClearString.setEnabled(False)
+            self.ClearString.setEnabled F..
 
 
-            __ knob is self.Select:
+            __ knob __ self.Select:
 
 
-                ___ n __ ?.allNodes
+                ___ n __ ?.aN..
 
 
-                    n.setSelected(False)
+                    n.sS.. F..
 
 
-                    __ n.Class() __ self.SelectedNodeTypes:
+                    __ n.C..  __ self.SelectedNodeTypes:
 
 
-                        n.setSelected(True)
+                        n.sS.. T..
 
 
                 __ self.Info.gV.. :
@@ -1520,59 +1520,59 @@ clears all messages
         #Selected Nodes
 
 
-        __ self.Type.v.. ()=="Selected    ":
+        __ self.Type.v.. ()__"Selected    ":
         
         
-           self.SelectString.setEnabled(False)
+           self.SelectString.setEnabled F..
 
 
-           self.Select.setEnabled(False)
+           self.Select.setEnabled F..
 
 
-           self.Add.setEnabled(False)
+           self.Add.setEnabled F..
 
 
-           self.r__.setEnabled(False)
+           self.r__.setEnabled F..
 
 
-           self.ClearString.setEnabled(False)
+           self.ClearString.setEnabled F..
 
 
 
         #Selects by custom value
 
 
-        __ self.Type.v.. ()=="Custom":
+        __ self.Type.v.. ()__"Custom":
         
         
-            self.Select.setEnabled(True)
+            self.Select.setEnabled T..
 
 
-            self.SelectString.setEnabled(True)
+            self.SelectString.setEnabled T..
 
 
-            self.Add.setEnabled(True)
+            self.Add.setEnabled T..
 
 
-            self.r__.setEnabled(True)
+            self.r__.setEnabled T..
 
 
-            self.ClearString.setEnabled(True)
+            self.ClearString.setEnabled T..
 
 
-            __ knob is self.Select:
+            __ knob __ self.Select:
 
 
                 self.Custom=self.SelectString.v.. ()
 
 
-                ___ n __ ?.allNodes
+                ___ n __ ?.aN..
 
 
-                    n.setSelected(False)
+                    n.sS.. F..
                     
                     
-                    __ n.Class() __ self.SelectedNodeTypes:
+                    __ n.C..  __ self.SelectedNodeTypes:
 
                 
                         ___ knob __ self.SelectedKnobTypes:
@@ -1581,7 +1581,7 @@ clears all messages
                             __ self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
-                                n.setSelected(True)
+                                n.sS.. T..
 
 
                 __ self.Info.gV.. :
@@ -1590,7 +1590,7 @@ clears all messages
                     Warning (self.warning)
 
 
-            __ knob is self.ClearString:
+            __ knob __ self.ClearString:
 
 
                 self.SelectString.sV..("")
@@ -1606,16 +1606,16 @@ clears all messages
         # Adds to Selection
 
 
-            __ knob is self.Add:
+            __ knob __ self.Add:
 
 
                 self.Custom=self.SelectString.v.. ()
 
 
-                ___ n __ ?.allNodes
+                ___ n __ ?.aN..
 
     
-                    __ n.Class() __ self.SelectedNodeTypes:
+                    __ n.C..  __ self.SelectedNodeTypes:
 
                 
                         ___ knob __ self.SelectedKnobTypes:
@@ -1624,7 +1624,7 @@ clears all messages
                             __ self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
-                                n.setSelected(True)
+                                n.sS.. T..
 
 
                 __ self.Info.gV.. :
@@ -1637,7 +1637,7 @@ clears all messages
         #Removes from Selection
 
 
-            __ knob is self.r__:
+            __ knob __ self.r__:
 
 
                 self.Custom = self.SelectString.v.. ()
@@ -1646,7 +1646,7 @@ clears all messages
                 ___ n __ ?.sN.. :
 
 
-                    __ n.Class() __ self.SelectedNodeTypes:
+                    __ n.C..  __ self.SelectedNodeTypes:
 
                 
                         ___ knob __ self.SelectedKnobTypes:
@@ -1655,7 +1655,7 @@ clears all messages
                             __ self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
-                                n.setSelected(False)
+                                n.sS.. F..
 
 
                 __ self.Info.gV.. :
@@ -1668,13 +1668,13 @@ clears all messages
         #Clears selection
 
 
-        __ knob is self.ClearSelect:
+        __ knob __ self.ClearSelect:
 
 
-            ___ n __ ?.allNodes
+            ___ n __ ?.aN..
 
 
-                    n.setSelected(False)
+                    n.sS.. F..
 
 
             __ self.Info.gV.. :
@@ -1685,7 +1685,7 @@ clears all messages
                 
         # Save Selection
         
-        __ knob is self.SaveSelect:
+        __ knob __ self.SaveSelect:
         
             self.OldSelect = ?.sN..
 
@@ -1702,7 +1702,7 @@ clears all messages
                         
         # Load Selection
            
-        __ knob is self.LoadSelect:
+        __ knob __ self.LoadSelect:
 
             __ no. OldSelect1:
 
@@ -1716,37 +1716,37 @@ clears all messages
                 
                 ___ i __ OldSelect1:
 
-                    __ i no. __ ?.allNodes
+                    __ i no. __ ?.aN..
 
                         checkMissing = True
                         
-                    __ i __ ?.allNodes
+                    __ i __ ?.aN..
 
                         check = True
         
                 __ check and no. checkMissing:
 
-                    ___ n __ ?.allNodes
+                    ___ n __ ?.aN..
     
-                        n.setSelected(False)
+                        n.sS.. F..
 
                     ___ i __ OldSelect1:
     
-                        i.setSelected(True)
+                        i.sS.. T..
 
                     Warning(self.warningD)
 
                 else:
                     
-                    ___ n __ ?.allNodes
+                    ___ n __ ?.aN..
     
-                        n.setSelected(False)
+                        n.sS.. F..
 
                     ___
 
                         ___ i __ OldSelect1:
     
-                            i.setSelected(True)
+                            i.sS.. T..
 
                     ______
 
@@ -1759,72 +1759,72 @@ clears all messages
         #Enables/Disables Manual Input
 
 
-        __ self.SelectManually.v.. ()==True:
+        __ self.SelectManually.v.. ()__True:
         
         
-            self.SelectVal.setEnabled(True)
+            self.SelectVal.setEnabled T..
 
 
-            self.ReplaceVal.setEnabled(True)
+            self.ReplaceVal.setEnabled T..
 
 
-            self.Replace.setEnabled(True)
+            self.Replace.setEnabled T..
 
 
-            self.Switch.setEnabled(True)
+            self.Switch.setEnabled T..
 
 
-            self.Clear.setEnabled(True)
+            self.Clear.setEnabled T..
             
             
-            self.VersionMatch.setEnabled(False)
+            self.VersionMatch.setEnabled F..
 
 
-            self.VersionUp.setEnabled(False)
+            self.VersionUp.setEnabled F..
 
 
-            self.VersionDown.setEnabled(False)
+            self.VersionDown.setEnabled F..
 
 
-            self.VersionLast.setEnabled(False)
+            self.VersionLast.setEnabled F..
             
 
 
         else:
         
         
-            self.SelectVal.setEnabled(False)
+            self.SelectVal.setEnabled F..
 
 
-            self.ReplaceVal.setEnabled(False)
+            self.ReplaceVal.setEnabled F..
 
 
-            self.Replace.setEnabled(False)
+            self.Replace.setEnabled F..
 
        
-            self.Switch.setEnabled(False)
+            self.Switch.setEnabled F..
 
 
-            self.Clear.setEnabled(False)
+            self.Clear.setEnabled F..
             
             
-            self.VersionMatch.setEnabled(True)
+            self.VersionMatch.setEnabled T..
 
 
-            self.VersionUp.setEnabled(True)
+            self.VersionUp.setEnabled T..
 
 
-            self.VersionDown.setEnabled(True)
+            self.VersionDown.setEnabled T..
 
 
-            self.VersionLast.setEnabled(True)
+            self.VersionLast.setEnabled T..
             
 
 
         #Replaces String
 
 
-        __ knob is self.Replace:
+        __ knob __ self.Replace:
         
 
             count = 0
@@ -1833,7 +1833,7 @@ clears all messages
             ___ n __ ?.sN.. :
             
             
-                __ n.Class() __ self.SelectedNodeTypes:
+                __ n.C..  __ self.SelectedNodeTypes:
 
 
                     ___ knob __ self.SelectedKnobTypes:
@@ -1867,7 +1867,7 @@ clears all messages
         #Switches between inputs
 
 
-        __ knob is self.Switch:
+        __ knob __ self.Switch:
 
             temp = self.SelectVal.v.. ()
    
@@ -1880,7 +1880,7 @@ clears all messages
         #Clears String Field
 
 
-        __ knob is self.Clear:
+        __ knob __ self.Clear:
 
 
             self.SelectVal.sV..("")
@@ -1895,7 +1895,7 @@ clears all messages
         #Version Match
 
 
-        __ knob is self.VersionMatch:
+        __ knob __ self.VersionMatch:
 
             ___
 
@@ -1925,7 +1925,7 @@ clears all messages
         #Version Up
         
 
-        __ knob is self.VersionUp:
+        __ knob __ self.VersionUp:
 
             ___
                     
@@ -1955,7 +1955,7 @@ clears all messages
         #Version Down    
         
 
-        __ knob is self.VersionDown:
+        __ knob __ self.VersionDown:
 
             ___
 
@@ -1985,7 +1985,7 @@ clears all messages
         #Version Last
         
 
-        __ knob is self.VersionLast:
+        __ knob __ self.VersionLast:
 
             ___
 
@@ -2015,7 +2015,7 @@ clears all messages
         # Resets
 
 
-        __ knob is self.Reset:
+        __ knob __ self.Reset:
 
 
             self.SelectedNodeTypes = ["Read"]
@@ -2024,28 +2024,28 @@ clears all messages
             self.SelectedKnobTypes = ["file"]
 
 
-            self.Read.sV..(True)
+            self.Read.sV.. T..
 
 
-            self.Write.sV..(False)
+            self.Write.sV.. F..
 
 
-            self.DeepRead.sV..(False)
+            self.DeepRead.sV.. F..
 
 
-            self.DeepWrite.sV..(False)
+            self.DeepWrite.sV.. F..
 
 
-            self.file.sV..(True)
+            self.file.sV.. T..
 
 
-            self.proxy.sV..(False)
+            self.proxy.sV.. F..
             
             
-            self.Info.sV..(True)
+            self.Info.sV.. T..
 
 
-            self.VersionFolder.sV..(True)
+            self.VersionFolder.sV.. T..
 
 
             self.Type.sV..("All")
@@ -2054,22 +2054,22 @@ clears all messages
             self.SelectString.sV..("")
 
 
-            self.SelectString.setEnabled(False)
+            self.SelectString.setEnabled F..
 
 
-            self.Add.setEnabled(False)
+            self.Add.setEnabled F..
 
 
-            self.r__.setEnabled(False)
+            self.r__.setEnabled F..
 
 
-            self.ClearString.setEnabled(False)
+            self.ClearString.setEnabled F..
 
 
-            self.SelectManually.sV..(False)
+            self.SelectManually.sV.. F..
 
 
-            self.SelectVal.setEnabled(False)
+            self.SelectVal.setEnabled F..
 
 
             self.SelectVal.sV..("")
@@ -2078,62 +2078,62 @@ clears all messages
             self.ReplaceVal.sV..("")
 
 
-            self.ReplaceVal.setEnabled(False)
+            self.ReplaceVal.setEnabled F..
             
             
-            self.Replace.setEnabled(False)
+            self.Replace.setEnabled F..
 
 
-            self.Switch.setEnabled(False)
+            self.Switch.setEnabled F..
 
 
-            self.Clear.setEnabled(False)
+            self.Clear.setEnabled F..
             
             
-            self.VersionMatch.setEnabled(True)
+            self.VersionMatch.setEnabled T..
 
 
-            self.VersionUp.setEnabled(True)
+            self.VersionUp.setEnabled T..
 
 
-            self.VersionDown.setEnabled(True)
+            self.VersionDown.setEnabled T..
 
 
-            self.VersionLast.setEnabled(True)
+            self.VersionLast.setEnabled T..
 
 
-            self.warning.setVisible(False)
+            self.warning.setVisible F..
 
 
-            self.warningB.setVisible(False)
+            self.warningB.setVisible F..
 
 
-            self.warningC.setVisible(False)
+            self.warningC.setVisible F..
             
 
-            self.warningD.setVisible(False)
+            self.warningD.setVisible F..
 
 
-            self.ClearMessage.setEnabled(True)         
+            self.ClearMessage.setEnabled T..
             
 
 
         #Clears Messages            
 
         
-        __ knob is self.ClearMessage:
+        __ knob __ self.ClearMessage:
 
 
-            self.warning.setVisible(False)
+            self.warning.setVisible F..
 
 
-            self.warningB.setVisible(False)
+            self.warningB.setVisible F..
 
 
-            self.warningC.setVisible(False)
+            self.warningC.setVisible F..
             
 
-            self.warningD.setVisible(False)
+            self.warningD.setVisible F..
             
 
 

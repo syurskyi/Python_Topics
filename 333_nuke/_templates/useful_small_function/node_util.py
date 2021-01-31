@@ -135,7 +135,7 @@ ___ open_frame_in_photoshop
     # Opens the current frame of the selected Read node in Photoshop
     # TODO extract the photoshop location to the prefs file
     ps_path _ "/Applications/Adobe Photoshop CC 2014/Adobe Photoshop CC 2014.app"
-    __ le.(?.sN..()) __ 1 an. ?.sN__.Class() __ "Read":
+    __ le.(?.sN..()) __ 1 an. ?.sN__.C..  __ "Read":
         read _ ?.sN__
         frame_path _ read.metadata("input/filename")
         cmd _ "open -a \"@\" \"@\"" % (ps_path, frame_path)
@@ -146,7 +146,7 @@ ___ open_frame_in_photoshop
 
 ___ match_range_to_read
     # Sets root frame range to match the frame range of the selected Read node
-    __ le.(?.sN..()) __ 1 an. ?.sN__.Class() __ "Read":
+    __ le.(?.sN..()) __ 1 an. ?.sN__.C..  __ "Read":
         read _ ?.sN__
         ?.tN..("root")["first_frame"].sV..(read.firstFrame())
         ?.tN..("root")["last_frame"].sV..(read.lastFrame())
@@ -164,7 +164,7 @@ ___ read_from_write
         found_writes _ F..
         write_nodes _ # list
         ___ node __ nodes:
-            __ node.Class() __ 'Write':
+            __ node.C..  __ 'Write':
                 write_nodes.ap..(node)
                 found_writes _ T..
 
@@ -180,7 +180,7 @@ ___ read_from_write
                     node_read['first'].sV..(__.(?.r.. ['first_frame'].getValue()))
                     node_read['last'].sV..(__.(?.r.. ['last_frame'].getValue()))
                 node_read.setXpos(node.xpos())  # let's set the position
-                node_read.setYpos(node.ypos() + 50)
+                node_read.setYpos(node.yp__() + 50)
                 node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked
                 node_read['raw'].sV..(node['raw'].getValue())  # use raw if checked
         ____

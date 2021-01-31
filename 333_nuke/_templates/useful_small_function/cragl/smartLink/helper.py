@@ -111,7 +111,7 @@ ___ load_presets
         settings_root _ settings_tree.getroot()
         ___ preset __ settings_root.find('backdrops').f_a_('backdrop'):
             presets[preset.get('name')] _ {'icon': preset.get('icon'),
-             'color': [ float(val.strip()) ___ val __ preset.get('color').s..(',') ]}
+             'color': [ fl..(val.strip()) ___ val __ preset.get('color').s..(',') ]}
 
     r_ presets
 
@@ -320,7 +320,7 @@ ___ get_next_link_name
         r_ '{}{}'.f..(groups.group(1), index)
 
     pattern _ '(link_)(\\d+)'
-    node_names _ sorted([ node.n..  ___ node __ ?.allNodes() __ re.search(pattern, node.n.. ], key_split_nr)
+    node_names _ sorted([ node.n..  ___ node __ ?.aN..() __ re.search(pattern, node.n.. ], key_split_nr)
     __ node_names:
         r_ re.sub(pattern, _increase, node_names[-1])
     ____
@@ -328,13 +328,13 @@ ___ get_next_link_name
 
 
 ___ zoom(node):
-    ?.zoom(1.0, (__.(node.xpos()), __.(node.ypos())))
+    ?.zoom(1.0, (__.(node.xpos()), __.(node.yp__())))
 
 
 ___ get_repr_class_nodes
     nodes _ # list
     ___ node_class __ ['PostageStamp', 'Dot']:
-        nodes.extend(?.allNodes(node_class))
+        nodes.extend(?.aN..(node_class))
 
     r_ nodes
 

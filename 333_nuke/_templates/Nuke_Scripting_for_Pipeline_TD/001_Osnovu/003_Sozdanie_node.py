@@ -1,5 +1,5 @@
 _____ ?
-_____ nukescripts
+_____ n___
 # Osobennosti etogo metoda javljaetsja shto noda sozdanaja pri pomochi
 # etoj fynkcii avtomaticheski konektitsa k vudelenoj node
 
@@ -12,4 +12,4 @@ _____ nukescripts
 
 t1 = ?.createNode('Transform', 'rotate 45 scale 2', inpanel=False)
 
-?.nodes.Transform(rotate=45, name=nukescripts.findNextNodeName('MyTransform'), inputs=[t1])
+?.nodes.Transform(rotate=45, name=n___.findNextNodeName('MyTransform'), inputs=[t1])

@@ -29,11 +29,11 @@ ___ nodeToggler
                     ?.m..('{} node has no {} knob.'.f..(item.n.. , knobPanel.v.. ('Select Knob')))
         #creates panel for node selection
 	nodePanel _ ?.Panel('Select Node')
-        allNode _ ?.allNodes()
+        allNode _ ?.aN..()
         nodeClassList _ # list
         nodeClass _ ''
         ___ node __ allNode:
-            __ node.Class() !_ 'Viewer':             #removes any viewer node present in allNode List
+            __ node.C..  !_ 'Viewer':             #removes any viewer node present in allNode List
                 nodeClassList.ap..(node.Class())
 		#creates a list for display in nodePanel and removes any duplicating node
         newList _ list(set(nodeClassList))
@@ -50,15 +50,15 @@ ___ nodeToggler
                 ____
                     ?.m..('Please select atlest one legal node.')
                     break
-            __ node.Class() __ v.. :
-                node.setSelected(T..)
+            __ node.C..  __ v.. :
+                node.sS..(T..)
             ____
-                node.setSelected(F..)
+                node.sS..(F..)
             __ v..  __ 'All':
                 ?.selectAll()
                 ___ n __ ?.sN..:
-                    __ n.Class() __ 'Viewer':
-                        n.setSelected(F..)
+                    __ n.C..  __ 'Viewer':
+                        n.sS..(F..)
                 break
         __ le.(?.sN..()) > 0:
             knobSelection()

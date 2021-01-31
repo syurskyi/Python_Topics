@@ -1,7 +1,7 @@
 _____ ?, __
 
 ___ start
-    reads = ?.allNodes('Read')
+    reads = ?.aN..('Read')
     searchFolder = ''
     ___ r __ reads:
         filepath = r['file'].getValue()

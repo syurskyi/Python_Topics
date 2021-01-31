@@ -86,9 +86,9 @@ ___ collect_nodes(mode):
     dependent_ _ mode[0]
     dependencies_ _ mode[1]
 
-    ___ node __ ?.allNodes
+    ___ node __ ?.aN..
 
-        __ node.Class() __ ignore_list:
+        __ node.C..  __ ignore_list:
             c___
 
         __ dependent_ an. dependencies_:
@@ -264,7 +264,7 @@ c_ CleanModeDialog(?W..):
 
         node _ ?.tN..(sender().property("node"))
         node.selectOnly()
-        ?.zoom(1, (node.xpos(), node.ypos()))
+        ?.zoom(1, (node.xpos(), node.yp__()))
 
     ___ remove_node(self, row, node):
         """

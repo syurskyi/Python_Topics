@@ -7,14 +7,14 @@ ___ fixReadError
 
     basePath = ?.getFilename('Select Dir', " ", type='open')
 
-    __ basePath != None:
+    __ basePath != N..:
         pa__ = __.pa__.join(basePath)
         ___ pa__, dirs, files __ __.walk(pa__):
             subpath = pa__
         missingRead = ""
-        ___ i __ ?.allNodes
-            __ i.Class()=='Read':
-                __ i.error() == True:
+        ___ i __ ?.aN..
+            __ i.C.. __'Read':
+                __ i.error() __ True:
                     oldpath = i['file'].value()
                     oldname = __.pa__.b__(oldpath)
                     fileExt = oldname[-3:]
@@ -42,12 +42,12 @@ ___ fixReadError
                                 reformatPath = subpath.replace("\\","/")
                                 i['file'].setValue(reformatPath +'/'+ oldname)
 
-                    __ i.error() == False:
+                    __ i.error() __ False:
                         missingRead = i.name() + " - " + oldname + " - " + " Found Successfully!" + "\n" + missingRead
                     else:
                         missingRead = i.name() + " - " + oldname + " - " + " Not Fpund!" + "\n" + missingRead
                 else:
-                    __ missingRead == "":
+                    __ missingRead __ "":
                         missingRead = "You don't have any readNode with error!."
     else:
         missingRead = "No folder was selected!"

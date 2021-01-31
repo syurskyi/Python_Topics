@@ -27,7 +27,7 @@ ______ string
 
 
 SHARED_TOOLSET_PATH = ""
-FILE_FILTER = None
+FILE_FILTER = N..
 
 ___ setSharedToolSetsPath(pa__):
   global SHARED_TOOLSET_PATH
@@ -177,7 +177,7 @@ ___ renameToolset(fullFilePath):
 ___ addToolsetsPanel
   res = False
   __ ?.nodesSelected() __ True:
-    res = CreateToolsetsPanel(None, False).showModalDialog()
+    res = CreateToolsetsPanel(N.., False).showModalDialog()
     #COMMENT: now force a rebuild of the menu
     refreshToolsetsMenu()
   ____
@@ -206,7 +206,7 @@ ___ checkForEmptyToolsetDirectories(currPath):
 ___ refreshToolsetsMenu
   toolbar = ?.m__("Nodes")
   m = toolbar.fI..("SharedToolSets")
-  __ m != None:
+  __ m != N..:
     m.clearMenu()
     createToolsetsMenu(toolbar)
 
@@ -242,7 +242,7 @@ ___ randomStringDigits(stringLength=6):
 
 #COMMENT: warper around loadToolset
 ___ toolsetLoader(fullFileName):
-    __ FILE_FILTER != None:
+    __ FILE_FILTER != N..:
         data = fileFilter(fullFileName, FILE_FILTER)
         # SAVING TEMPORAL TOOLSET | instead of 
         #QApplication.clipboard().setText(data)

@@ -617,7 +617,7 @@ ___ set_preview_image(delete_nodes _ T..):
         ?.m..('Please select a node to create a preview image.')
         r_
 
-    __ sel.Class() __ 'Viewer':
+    __ sel.C..  __ 'Viewer':
         r_
     __ get_script_name() __ '' or get_script_name() __ 'Root':
         ?.m..("Your nukescript hasn't been saved, yet. Please save your script first.")
@@ -627,16 +627,16 @@ ___ set_preview_image(delete_nodes _ T..):
         r_
     reformat _ ?.createNode('Reformat', inpanel_F..)
     reformat.setInput(0, sel)
-    reformat.setXYpos(sel.xpos(), sel.ypos() + 50)
+    reformat.setXYpos(sel.xpos(), sel.yp__() + 50)
     reformat['type'].sV..('to box')
     reformat['box_width'].sV..(preview_image_width)
     gamma _ ?.createNode('Gamma')
     gamma.setInput(0, reformat)
-    gamma.setXYpos(sel.xpos(), reformat.ypos() + 50)
-    gamma['value'].sV..(float(load_settings()['shot_thumb_gamma']))
+    gamma.setXYpos(sel.xpos(), reformat.yp__() + 50)
+    gamma['value'].sV..(fl..(load_settings()['shot_thumb_gamma']))
     w.. _ ?.createNode('Write', inpanel_F..)
     w...setInput(0, gamma)
-    w...setXYpos(gamma.xpos(), gamma.ypos() + 50)
+    w...setXYpos(gamma.xpos(), gamma.yp__() + 50)
     w...knob('name').sV..('create preview')
     w...knob('use_limit').sV..(T..)
     w...knob('first').sV..(?.frame())

@@ -45,7 +45,7 @@ ___ imprint(node, data, tab_N..):
         new_knobs _ list()
         ___ knob __ create_knobs(data, tab_new_tab):
             name _ knob.n.. [le.(TEMP):]
-            __ name __ existed_knobs an. knob.Class() !_ "Tab_Knob":
+            __ name __ existed_knobs an. knob.C..  !_ "Tab_Knob":
                 existed_knobs[name].sV..(knob.v.. ())
             ____
                 new_knobs.ap..(knob)
@@ -147,7 +147,7 @@ ___ create_knobs(data, tab):
             knobby _ v..
             knob _ knobby.create(name, nice)
 
-        ____ i..(v.. , float):
+        ____ i..(v.. , fl..):
             knob _ ?.D_K..(name, nice)
             knob.sV..(v.. )
 

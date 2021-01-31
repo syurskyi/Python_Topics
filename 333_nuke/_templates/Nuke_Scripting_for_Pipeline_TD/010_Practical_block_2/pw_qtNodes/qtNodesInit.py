@@ -30,7 +30,7 @@ c_ eventFilterWindowClass(QObject):
     ___ processNode(self, n):
         nukeNode _ ?.tN..( st.(n.objectName()) )
         __ nukeNode:
-            nodeClass _ nukeNode.Class()
+            nodeClass _ nukeNode.C..
             __ nodeClass __ dir(qtNodes):
                 getattr(qtNodes, nodeClass)(n)
 

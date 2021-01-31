@@ -69,7 +69,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
         
         label = panel.v.. ('label')
 
-        __ nodeClass == 'StickyNote':
+        __ nodeClass __ 'StickyNote':
             label = '   %s   '%label.upper()
             node = ?.createNode(nodeClass, inpanel = False)
 
@@ -144,7 +144,7 @@ ___ colorizeNode(node):
 
         label = nodeLabel
 
-        __ no. preferencesNode.knob('backdropperCaseSensitive').v.. () or keys == colorList:
+        __ no. preferencesNode.knob('backdropperCaseSensitive').v.. () or keys __ colorList:
             label = label.lower()
 
         ___ key __ keys:
@@ -228,7 +228,7 @@ ___ setMenuItem(itemName):
 # Preferences
 #----------------------------------------------------------------------------------------------------------
 
-___ addKnobToPreferences(knobObject, tooltip = None):
+___ addKnobToPreferences(knobObject, tooltip = N..):
     '''
     Add a knob to the preference panel.
     Save current preferences to the prefencesfile in the .nuke folder.
@@ -236,7 +236,7 @@ ___ addKnobToPreferences(knobObject, tooltip = None):
 
     __ knobObject.n..  no. __ preferencesNode.knobs().keys
 
-        __ tooltip != None:
+        __ tooltip != N..:
             knobObject.setTooltip(tooltip)
 
         preferencesNode.addKnob(knobObject)
@@ -325,7 +325,7 @@ ___ updatePreferences(forceUpdate = False):
 
     #check if current version differs from the previously loaded version.
     __ 'backdropperVersion' __ allKnobs and no. forceUpdate:
-        __ version == str(preferencesNode.knob('backdropperVersion').v.. ()):
+        __ version __ str(preferencesNode.knob('backdropperVersion').v.. ()):
             r_
 
     currentSettings = {knob:preferencesNode.knob(knob).v.. () ___ knob __ allKnobs __ knob.startswith('backdropper') and knob != 'backdropperVersion'}
@@ -357,11 +357,11 @@ ___ closePreferencesPanel(save = False):
     '''
 
     buttonText = ['Cancel','OK'][int(save)]
-    preferencesButton = None
+    preferencesButton = N..
 
     # find preferences
     ___ widget __ QtWidgets.QApplication.instance().allWidgets
-        __ widget.objectName() == 'foundry.hiero.preferencesdialog':
+        __ widget.objectName() __ 'foundry.hiero.preferencesdialog':
 
             # loop over children
             ___ child __ widget.children
@@ -369,7 +369,7 @@ ___ closePreferencesPanel(save = False):
 
                     # buttons
                     ___ button __ child.buttons
-                        __ button.text() == buttonText:
+                        __ button.text() __ buttonText:
                             preferencesButton = button
                             break
                     break
@@ -384,9 +384,9 @@ ___ updateSlotCount
     '''
 
     # close panel and save
-    closePreferencesPanel(True)
+    closePreferencesPanel T..
     # update knobs
-    updatePreferences(True)
+    updatePreferences T..
     # close panel 
     openPreferencesPanel()
 
@@ -410,18 +410,18 @@ ___ addPreferences
     # version knob to check whether the backdropper was updated
     knob = ?.String_Knob('backdropperVersion','version')
     knob.sV..(version)
-    knob.setVisible(False)
+    knob.setVisible F..
     addKnobToPreferences(knob)
 
     # case sensitive
     knob = ?.Boolean_Knob('backdropperCaseSensitive','Case sensitive')
-    knob.sV..(False)
+    knob.sV.. F..
     tooltip = 'Only colorize nodes when the casing is matching.'
     addKnobToPreferences(knob, tooltip)
 
     # case sensitive
     knob = ?.Boolean_Knob('backdropperRecognizeColors','Recognize color names')
-    knob.sV..(True)
+    knob.sV.. T..
     # knob.clearFlag(nuke.STARTLINE)  
     tooltip = 'Change the color of the node whenever it\'s label contains a color name (eg. color the node red when the label contains the word "red").'
     addKnobToPreferences(knob, tooltip)
@@ -479,7 +479,7 @@ ___ addPreferences
 
         # replace sticky note
         knob = ?.Boolean_Knob('backdropper%sReplaceMenuItem'%nodeClass,'replace')
-        knob.sV..(False)
+        knob.sV.. F..
         tooltip = 'Replace original menu item.'
         addKnobToPreferences(knob, tooltip)
 
@@ -537,7 +537,7 @@ class ImportExportWidget(QtWidgets.QWidget):
         #--------------------------------------------------------------------------------------------------
         
         self.clipboardRadioButton = QtWidgets.QRadioButton('Clipboard')
-        self.clipboardRadioButton.setChecked(True)
+        self.clipboardRadioButton.setChecked T..
 
         self.fileRadioButton = QtWidgets.QRadioButton('File')
         self.fileRadioButton.toggled.connect(self.toggleFileWidgets)
@@ -634,7 +634,7 @@ class ImportExportWidget(QtWidgets.QWidget):
         #split in chunks of four (textinput and colorswatch, adduserknob command and the stored value)
         settings = [settings[index:index + 4] ___ index __ range(0, le.(settings), 4)]
 
-        settings = [line ___ line __ settings __ no. (line[1].s..()[-1] == '""' and line[3].s..()[-1] == '0xccccccff')]
+        settings = [line ___ line __ settings __ no. (line[1].s..()[-1] __ '""' and line[3].s..()[-1] __ '0xccccccff')]
 
         settings = ['\n'.join(line) ___ line __ settings]
         settings = [line.replace(indexPlaceHolder, str(index + 1).zfill(2)) ___ index, line __ enumerate(settings)]
@@ -702,8 +702,8 @@ class ImportExportWidget(QtWidgets.QWidget):
             slotCountKnob.sV..(slotCount)
             
             # save to disk and close preferences
-            closePreferencesPanel(True)
-            updatePreferences(True)
+            closePreferencesPanel T..
+            updatePreferences T..
             openPreferencesPanel()
 
         self.close()
@@ -741,7 +741,7 @@ ___ colorizeNodes(all = False):
 
     #selection
     __ all:
-        selection = ?.allNodes()
+        selection = ?.aN..()
 
         # create panel instance
         panel = ?.Panel('W_backdropper - Colorize %s nodes'%['selected', 'all'][int(all)])
@@ -759,7 +759,7 @@ ___ colorizeNodes(all = False):
         selection = ?.sN..
 
     #selection
-    selection = [node ___ node __ selection __ node.Class() __ nodeClasses]
+    selection = [node ___ node __ selection __ node.C..  __ nodeClasses]
 
     ___ node __ selection:
         colorizeNode(node)
@@ -768,7 +768,7 @@ ___ colorizeNodes(all = False):
 
 colorNamesDict = indexDefaultColors()
 preferencesNode = ?.tN..('preferences')
-importExportPanelInstance = None
+importExportPanelInstance = N..
 
 defaultColor = 3435973887
 defaultFontSizes = [42, 11]

@@ -154,9 +154,9 @@ c_ NodesByKnobValues(NodeStep):
     ___ process
         """Handle nodes that match one of the knob rules."""
         ___ rule __ setup["knob_rules"]:
-            ___ node __ ?.allNodes
+            ___ node __ ?.aN..
 
-                __ node.Class() !_ rule["node_class"]:
+                __ node.C..  !_ rule["node_class"]:
                     c___
 
                 knob _ node.knob(rule["knob_name"])
@@ -174,7 +174,7 @@ c_ NodesByKnobValues(NodeStep):
                 # to be able to check against knobs holding integer values,
                 # but also holding string values.
                 types _ (
-                    float,
+                    fl..,
                     __.,
                     st.,
                 )
@@ -199,7 +199,7 @@ c_ NodesByKnobValues(NodeStep):
                         "Matching Rule: @.@ @ @",
                         setup["mode"],
                         node.n.. ,
-                        node.Class(),
+                        node.C.. ,
                         knob.v..,
                         rule["node_class"],
                         rule["knob_name"],

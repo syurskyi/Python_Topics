@@ -24,15 +24,15 @@ with grp:
 
 grp.output()
 
-?.allNodes()
+?.aN..()
 
 # to get list of Nodes in Group. Version1
 grp.begin()
-?.allNodes()
+?.aN..()
 grp.end
 
 # to get list of Nodes in Group. Version2
-?.allNodes(group=grp)
+?.aN..(group=grp)
 
 # to get list of Nodes in Group. Version3
 # nuke.selectedNodes() # need to select group
@@ -43,7 +43,7 @@ grp.end
 
 # get parent
 
-n = ?.allNodes(group=grp)[0]
+n = ?.aN..(group=grp)[0]
 n.name()
 n.fullName()
 n.fullName().split('.')[:-1]
@@ -54,7 +54,7 @@ n.fullName().split('.')[:-1]
 
 _____ ?
 # create group
-?.collapseToGroup(False)
+?.collapseToGroup F..
 ?.createNode('Group', inpanel=False)
 grp = ?.nodes.Group()
 
@@ -77,10 +77,10 @@ with grp:
 grp.output()
 
 grp.begin()
-?.allNodes()
+?.aN..()
 grp.end()
 
-?.allNodes(group=grp)
+?.aN..(group=grp)
 
 grp.begin()
 ?.selectedNodes()
@@ -88,8 +88,8 @@ grp.end()
 
 # get parent
 
-n = ?.allNodes(group=grp)[0]
-n = ?.allNodes()[0]
+n = ?.aN..(group=grp)[0]
+n = ?.aN..()[0]
 ?.toNode('.'.join(n.fullName().split('.')[:-1])) or ?.r__ 
 
 

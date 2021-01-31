@@ -66,7 +66,7 @@ c_ NodesByName(NodeStep):
 
     ___ process
         """Handle all listed nodes."""
-        ___ node __ ?.allNodes
+        ___ node __ ?.aN..
             __ node.n..  no. __ setup["nodes"]:
                 c___
 

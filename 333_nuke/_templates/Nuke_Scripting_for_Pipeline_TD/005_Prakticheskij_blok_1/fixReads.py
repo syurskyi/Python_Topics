@@ -3,7 +3,7 @@ _____ __
 
 ___ fixRead
 
-    reads = ?.allNodes('Read')
+    reads = ?.aN..('Read')
     searchFolder = ''
 
     ___ r __ reads:

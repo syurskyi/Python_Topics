@@ -1,76 +1,76 @@
-_____ ?
-_____ nukescripts
-
-
-"""
-This module contains functionality to jump directly to the first/last node
-and to connect the viewer with the first/last node
-"""
-
-
-___ get_edge_node(which):
-    """
-    get most top or bottom node
-    :param which: String first or last node
-    :return: node most top or bottom node
-    """
-
-    edge_node = None
-
-    ___ node __ ?.allNodes
-
-        __ node.Class() != "Viewer":
-
-            __ edge_node is None:
-                edge_node = node
-
-            __ which == "top":
-                __ node.ypos() < edge_node.ypos
-                    edge_node = node
-
-            __ which == "bottom":
-                __ node.ypos() > edge_node.ypos
-                    edge_node = node
-
-    r_ edge_node
-
-
-___ view_edge_node(which):
-    """
-    connect viewer to first/last node
-    :param which: String first or last node
-    :return: None
-    """
-
-    viewer_port = 8
-    edge_node = get_edge_node(which)
-    sel = ?.selectedNodes()
-
-    __ edge_node is None:
-        r_
-
-    nukescripts.clear_selection_recursive()
-    edge_node.setSelected(True)
-    nukescripts.connect_selected_to_viewer(viewer_port)
-    edge_node.setSelected(False)
-
-    ___ node __ sel:
-        node.setSelected(True)
-
-    ___ node __ ?.allNodes("Viewer"):
-        node.setSelected(False)
-
-
-___ jump_to_edge_node(which):
-    """
-    jump to most top or most bottom node
-    :param which: String first or last node
-    :return: None
-    """
-
-    edge_node = get_edge_node(which)
-
-    __ edge_node is None:
-        r_
-
-    ?.zoom(1, [float(edge_node.xpos()), float(edge_node.ypos())])
+# _____ ?
+# _____ n___
+#
+#
+# """
+# This module contains functionality to jump directly to the first/last node
+# and to connect the viewer with the first/last node
+# """
+#
+#
+# ___ get_edge_node which
+#     """
+#     get most top or bottom node
+#     :param which: String first or last node
+#     :return: node most top or bottom node
+#     """
+#
+#     edge_node _ N..
+#
+#     ___ node __ ?.aN..
+#
+#         __ ?.C..  !_ "Viewer"
+#
+#             __ e_ __ N..
+#                 e_ _ ?
+#
+#             __ which __ "top":
+#                 __ ?.yp__ < e_.yp__
+#                     e_ _ ?
+#
+#             __ which __ "bottom":
+#                 __ ?.yp__ > e_.yp__
+#                     e_ _ ?
+#
+#     r_ e_
+#
+#
+# ___ view_edge_node which
+#     """
+#     connect viewer to first/last node
+#     :param which: String first or last node
+#     :return: None
+#     """
+#
+#     viewer_port _ 8
+#     edge_node _ g.. which
+#     sel _ ?.sN..
+#
+#     __ e_ __ N..
+#         r_
+#
+#     n___.cl..
+#     e_.sS.. T..
+#     n___.c.. v..
+#     e_.sS.. F..
+#
+#     ___ node __ sel
+#         ?.sS.. T..
+#
+#     ___ ? __ ?.aN.. "Viewer"
+#         ?.sS.. F..
+#
+#
+# ___ jump_to_edge_node which
+#     """
+#     jump to most top or most bottom node
+#     :param which: String first or last node
+#     :return: None
+#     """
+#
+#     edge_node _ g.. w..
+#
+#     __ e_ __ N..
+#         r_
+#
+#     ?.z.. 1 fl.. e_.xp__ fl.. e_.yp__

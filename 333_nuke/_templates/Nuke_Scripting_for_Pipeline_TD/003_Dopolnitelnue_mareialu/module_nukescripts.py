@@ -1,23 +1,23 @@
 _____ ?
 _____ __
 
-_____ nukescripts
+_____ n___
 
-nukescripts.autoBackdrop()
+n___.autoBackdrop()
 
 ___ clearNodeSelection
   ___ n __ ?.selectedNodes
     # n['selected'].setValue(False)
-    n.setSelected(False)
+    n.sS.. F..
 
-nukescripts.clear_selection_recursive()
-nukescripts.declone(node)
-nukescripts.declone(?.selectedNode())
-nukescripts.swapAB(?.selectedNode())
-nukescripts.color_nodes()
-nukescripts.search_replace()
+n___.clear_selection_recursive()
+n___.declone(node)
+n___.declone(?.selectedNode())
+n___.swapAB(?.selectedNode())
+n___.color_nodes()
+n___.search_replace()
 
-nukescripts.getNukeUserFolder()
+n___.getNukeUserFolder()
 
 # nukescripts.findNextNodeName('Read')
 # nuke.nodes.Read()

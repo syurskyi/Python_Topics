@@ -88,7 +88,7 @@ ___ Merge(n, cycle, forwards):
 			__ forwards:
 
 				# if last item in list, go to start
-				__ int(currOp) + 1 == countOp:
+				__ int(currOp) + 1 __ countOp:
 					k.sV..(0)
 
 				else:
@@ -96,7 +96,7 @@ ___ Merge(n, cycle, forwards):
 
 			else:
 
-				__ currOp == 0:
+				__ currOp __ 0:
 					k.sV..(countOp - 1)
 				else:
 					k.sV..(int(currOp) - 1)
@@ -117,7 +117,7 @@ ___ Switch(n, forwards):
 		maxWhich = n.inputs() - 1.0
 
 		# make Switch nodes with only one input alternate between 1 and 0
-		__(maxWhich == 0):
+		__(maxWhich __ 0):
 			maxWhich = 1
 
 		# new value for Which on Switch
@@ -180,21 +180,21 @@ ___ Shuffle(n, forwards):
 		# get index of current layer
 		i = 0
 		___ eachL __ listL:
-			__ eachL == currL:
+			__ eachL __ currL:
 				break
 			i += 1
 
 		# get new layer
 		__ forwards:
 
-			__ le.(listL) == i + 1:
+			__ le.(listL) __ i + 1:
 				newL = listL[0]
 			else:
 				newL = listL[i + 1]
 
 		else:
 
-			__ i == 0:
+			__ i __ 0:
 				newL = listL[le.(listL) - 1]
 			else:
 				newL = listL[i - 1]
@@ -253,7 +253,7 @@ ___ anyChannelKnob(n, knobName, forwards):
 		# get index of current layer
 		i = 0
 		___ eachL __ listL:
-			__ eachL == currL:
+			__ eachL __ currL:
 				break
 			i += 1
 
@@ -262,14 +262,14 @@ ___ anyChannelKnob(n, knobName, forwards):
 		# get new layer
 		__ forwards:
 
-			__ le.(listL) == i + 1:
+			__ le.(listL) __ i + 1:
 				newL = listL[0]
 			else:
 				newL = listL[i + 1]
 
 		else:
 
-			__ i == 0:
+			__ i __ 0:
 				newL = listL[le.(listL) - 1]
 			else:
 				newL = listL[i - 1]
@@ -303,7 +303,7 @@ ___ anyListKnob(n, knobName, forwards):
 		__ forwards:
 
 			# if last item in list, go to start
-			__ int(currOp) + 1 == countOp:
+			__ int(currOp) + 1 __ countOp:
 				k.sV..(0)
 
 			else:
@@ -315,7 +315,7 @@ ___ anyListKnob(n, knobName, forwards):
 		else:
 
 			# if at first item, go to end
-			__ currOp == 0:
+			__ currOp __ 0:
 				k.sV..(countOp - 1)
 
 			# go back one item
@@ -345,7 +345,7 @@ ___ giveLabel(n, knobName):
 		__ no. labelText __ currLabel:
 
 			# add original value and new line before new label text if there was a label already, else no new line
-			__ currLabel == '':
+			__ currLabel __ '':
 				label.sV..(labelText)
 			else:
 				label.sV..(currLabel + '\n' + labelText)
@@ -359,48 +359,48 @@ ___ CycleOperations(forwards = True):
 	___ i __ ?.sN.. :
 
 		# nodes with custom operation lists
-		__ i.Class() == 'Merge2':
+		__ i.C..  __ 'Merge2':
 			Merge(i, C_Merge, forwards)
-		elif i.Class() == 'ChannelMerge':
+		elif i.C..  __ 'ChannelMerge':
 			Merge(i, C_ChannelMerge, forwards)
-		elif i.Class() == 'MergeMat':
+		elif i.C..  __ 'MergeMat':
 			Merge(i, C_MergeMat, forwards)
 
 		# scroll through switch inputs
-		elif i.Class() == 'Switch':
+		elif i.C..  __ 'Switch':
 			Switch(i, forwards)
 
 		# swap colorspace in/outs
-		elif i.Class() == 'Colorspace':
+		elif i.C..  __ 'Colorspace':
 			i.knob('swap').execute()
-		elif i.Class() == 'OCIOColorSpace':
+		elif i.C..  __ 'OCIOColorSpace':
 			OCIOColorSpace(i)
 
 		# cycle Shuffle
-		elif i.Class() == 'Shuffle':
+		elif i.C..  __ 'Shuffle':
 			Shuffle(i, forwards)
 
 		# cycle Keyer
-		elif i.Class() == 'Keyer':
+		elif i.C..  __ 'Keyer':
 			anyListKnob(i, 'operation', forwards)
 
 		# up and down FrameHold
-		elif i.Class() == 'FrameHold':
+		elif i.C..  __ 'FrameHold':
 			FrameHold(i, forwards)
 
-		elif i.Class() == 'Invert':
+		elif i.C..  __ 'Invert':
 			anyChannelKnob(i, 'channel', forwards)
-		elif i.Class() == 'Blur':
+		elif i.C..  __ 'Blur':
 			anyChannelKnob(i, 'channel', forwards)
-		elif i.Class() == 'Grade':
+		elif i.C..  __ 'Grade':
 			anyChannelKnob(i, 'channel', forwards)
-		elif i.Class() == 'Multiply':
+		elif i.C..  __ 'Multiply':
 			anyChannelKnob(i, 'channel', forwards)
-		elif i.Class() == 'Log2Lin':
+		elif i.C..  __ 'Log2Lin':
 			anyListKnob(i, 'operation', forwards)
 
 
 
 # autostart (if not imported) - only goes forwards if called this way
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 	CycleOperations()

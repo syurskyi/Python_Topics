@@ -51,7 +51,7 @@ ___ select_node(node_class):
 
     ___
         node _ ?.sN__
-        __ node.Class() __ class_:
+        __ node.C..  __ class_:
             node['selected'].sV..(F..)
             r_ node
         ____
@@ -81,7 +81,7 @@ ___ get_node_position(node):
     :param node: a nuke node object.
     :return: return a set of coordinates.
     """
-    pos_dict _ {"x_pos": node.xpos(),"y_pos": node.ypos()}
+    pos_dict _ {"x_pos": node.xpos(),"y_pos": node.yp__()}
     
     r_ pos_dict
 
@@ -226,7 +226,7 @@ ___ get_asset_name(sourcenode):
     dep_nodes _ ?.dependencies(source_node)
     
     ___ node __ dep_nodes:
-        __ node.Class() __ target_class:
+        __ node.C..  __ target_class:
             ___
                 asset_name _ node["sg_layer"].v..
                 __ asset_name __ "":
@@ -345,7 +345,7 @@ ___ iterate_deep_holdout_setup
 
     ___ i __ ?.sN..:
 
-        __ i.Class() !_ "DeepRecolor":
+        __ i.C..  !_ "DeepRecolor":
             ?.m..("Please, select only DeepRecolor Nodes")
             r_
         ____
@@ -356,7 +356,7 @@ ___ iterate_deep_holdout_setup
 
     ___ e __ names:
         node _ ?.tN..(e)
-        class_ _ node.Class()
+        class_ _ node.C..
         node['selected'].sV..(T..)
         setup _ create_deep_holdout_setup(class_)
         deep_holdouts.ap..(setup.n..

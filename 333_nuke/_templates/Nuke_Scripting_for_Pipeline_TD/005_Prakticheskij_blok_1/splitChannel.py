@@ -22,7 +22,7 @@ ___ getParentNode(layer, compNodes, mergeLayer):
 		__ parentNode __ mergeLayer:
 			break
 
-		__ parentNode == 'START':
+		__ parentNode __ 'START':
 			break
 
 		iteration += 1
@@ -36,7 +36,7 @@ ___ getParentNode(layer, compNodes, mergeLayer):
 ___ calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, nodeNumber):
 	__ nodeToAddCount*40 > nodeYOffset:
 		__ nodeNumber > 1:
-			__ nodeNumber == 2:
+			__ nodeNumber __ 2:
 				additionalYOffset = 0
 			additionalYOffset += (nodeToAddCount*40)-(nodeYOffset) - ((nodeNumber-1)*nodeYOffset)
 		else:
@@ -73,7 +73,7 @@ ___ autoComper
 	additionalYOffsetFirst = 0
 	
 	___ object __ compNodes:
-		__ compNodes[object]  == 'START':
+		__ compNodes[object]  __ 'START':
 			nodesOrdered.a__(object)
 			break
 	
@@ -81,7 +81,7 @@ ___ autoComper
 	___ object __ compNodes:
 		___ object2 __ compNodes:
 			childNode = compNodes[object2]
-			__ childNode == nodesOrdered[count]:
+			__ childNode __ nodesOrdered[count]:
 				nodesOrdered.a__(object2)
 				count += 1
 				break
@@ -94,7 +94,7 @@ ___ autoComper
 			thisData = str(channel.split('.')[0])
 			thisLayers.update({thisData:''})
 			
-		__ le.(thisLayers) == 1 and 'rgba' __ thisLayers:
+		__ le.(thisLayers) __ 1 and 'rgba' __ thisLayers:
 			fileName = thisNode['file'].getValue()
 			fileName = fileName.split('/')
 			fileName = fileName[le.(fileName)-1]
@@ -124,12 +124,12 @@ ___ autoComper
 							compThis = False 
 							break
 		
-				__ compThis == True:
+				__ compThis __ True:
 					mergeLayer.update({compChannel:layer})
 					mergeLayerInv.update({layer:compChannel})
 					layerHasReader.update({layer:''}) 
 	
-	__ createNotFoundChannels == True:
+	__ createNotFoundChannels __ True:
 		___ node __ nodesOrdered:
 			__ node no. __ allLayers:
 				__ node no. __ mergeLayer:
@@ -153,12 +153,12 @@ ___ autoComper
 		__ layer __ mergeLayerInv:
 			layer = mergeLayerInv[layer]
 			
-		__ le.(allSelectedNodes) > 1 and autoAlignReaders == True:
+		__ le.(allSelectedNodes) > 1 and autoAlignReaders __ True:
 			__ layerOriginal __ allLayers:
 				allLayers[layerOriginal].setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin))
 		
 		__ layerOriginal __ layerType:
-			__ layerType[layerOriginal] == 'channel':
+			__ layerType[layerOriginal] __ 'channel':
 				exec(str(layer) +' = nuke.nodes.Shuffle(name = "' + str(layerOriginal) + '_Shuffel", postage_stamp = True)')
 				eval(layer).setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+2*nodeYOffset))
 				__ layerOriginal __ allLayers:
@@ -169,13 +169,13 @@ ___ autoComper
 			noOpNode = ?.nodes.NoOp(name=layerOriginal, tile_color=noOpTileColor)
 			noOpNode.setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+3*nodeYOffset))
 			__ layerOriginal __ layerType:
-				__ layerType[layerOriginal] == 'file':
+				__ layerType[layerOriginal] __ 'file':
 					noOpNode.setInput(0, allLayers[layerOriginal])
 				else:
 					noOpNode.setInput(0, eval(layer))
 		else:
 			__ layerOriginal __ layerType:
-				__ layerType[layerOriginal] == 'file':
+				__ layerType[layerOriginal] __ 'file':
 					noOpNode =  allLayers[layerOriginal]	
 				else:
 					noOpNode =  eval(layer)
@@ -212,7 +212,7 @@ ___ autoComper
 	
 				exec(layer + "Node = thisNode")
 				
-				__ mergeCount > 0 and createDotNode == True:
+				__ mergeCount > 0 and createDotNode __ True:
 					#Create Dot-Nodes
 					dot = ?.nodes.Dot(note_font_size=20)
 					__ showDotLabel:

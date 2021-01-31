@@ -8,5 +8,5 @@ w['Render'].execude()
 
 ?.execude(w, 1, 1)
 
-map(lambda x: x['reload'].execude(), ?.allNodes('Read'))
-map(lambda x: ?.execude(x, 1, 1), ?.allNodes('Write'))
+map(lambda x: x['reload'].execude(), ?.aN..('Read'))
+map(lambda x: ?.execude(x, 1, 1), ?.aN..('Write'))

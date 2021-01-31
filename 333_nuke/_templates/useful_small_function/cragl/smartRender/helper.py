@@ -77,7 +77,7 @@ ___ get_next_renderjob(*args):
 
 ___ get_all_write_nodes_data(*args):
     write_data _ {}
-    all_write_nodes _ [ node ___ node __ ?.allNodes('Write') __ node['disable'].gV.. __ 0.0 ]
+    all_write_nodes _ [ node ___ node __ ?.aN..('Write') __ node['disable'].gV.. __ 0.0 ]
     ___ w.. __ all_write_nodes:
         write_data[w...n.. ] _ w..['file'].gV..
 
@@ -494,7 +494,7 @@ ___ insert_as_read_node(job_details, w.. _ N.., *args):
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
         read.setXYpos(__.(w..['xpos'].getValue()), __.(w..['ypos'].getValue()) + 70)
-        ?.zoom(1.0, (w...xpos(), w...ypos()))
+        ?.zoom(1.0, (w...xpos(), w...yp__()))
         ?.connect_selected_to_viewer(0)
     ____
         read _ ?.createNode('Read')
@@ -505,7 +505,7 @@ ___ insert_as_read_node(job_details, w.. _ N.., *args):
         read['origlast'].sV..(__.(job_details['render_end']))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
-        ?.zoom(1.0, (read.xpos(), read.ypos()))
+        ?.zoom(1.0, (read.xpos(), read.yp__()))
         ?.connect_selected_to_viewer(0)
 
 

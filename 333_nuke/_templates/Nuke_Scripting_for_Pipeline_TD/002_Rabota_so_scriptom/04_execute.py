@@ -23,9 +23,9 @@ ___ incNamePath(pa__):
     r_ result
     
 
-map( lambda x: x['reload'].execute(), ?.allNodes('Read'))
+map( lambda x: x['reload'].execute(), ?.aN..('Read'))
 
-___ r __ ?.allNodes('Read'):
+___ r __ ?.aN..('Read'):
     f = incNamePath(r['file'].getValue())
     w = ?.nodes.Write(inputs=[r], file=f)
 #    w['Render'].execute()

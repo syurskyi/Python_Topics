@@ -15,9 +15,9 @@ ___ autoBackdrop(name):
 
         # Calculate bounds for the backdrop node.
     bdX = min([node.xpos() ___ node __ selNodes])
-    bdY = min([node.ypos() ___ node __ selNodes])
+    bdY = min([node.yp__() ___ node __ selNodes])
     bdW = max([node.xpos() + node.screenWidth() ___ node __ selNodes]) - bdX
-    bdH = max([node.ypos() + node.screenHeight() ___ node __ selNodes]) - bdY
+    bdH = max([node.yp__() + node.screenHeight() ___ node __ selNodes]) - bdY
 
     # Expand the bounds to leave a little border. Elements are offsets for left, top, right and bottom
     left, top, right, bottom = (-10, -80, 70, 10)
@@ -28,16 +28,16 @@ ___ autoBackdrop(name):
 
     n = ?.nodes.BackdropNode(xpos=bdX,
                                 bdwidth=bdW,
-                                ypos=bdY,
+                                yp__=bdY,
                                 bdheight=bdH,
                                 tile_color=int((random.random() * (200 - 100))) + 10,
                                 note_font_size=20,
                                 label=name)
 
     # revert to previous selection
-    n['selected'].setValue(False)
+    n['selected'].setValue F..
     ___ node __ selNodes:
-        node['selected'].setValue(False)
+        node['selected'].setValue F..
 
     r_ n
 
@@ -52,7 +52,7 @@ ___ shuffleLayer(node, layer):
 
     shuffleNode = ?.nodes.Shuffle(label=knob, inputs=[punto])
     shuffleNode['in'].setValue(layer)
-    shuffleNode['postage_stamp'].setValue(True)
+    shuffleNode['postage_stamp'].setValue T..
     r_ ?.nodes.Dot(inputs=[shuffleNode])
 
 ___ autoComp

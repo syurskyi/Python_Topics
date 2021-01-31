@@ -35,7 +35,7 @@ ___ create_node(node):
     lab _ 'baked metadata\nfrom {}'.f..(node.n..
     noop _ ?.nodes.NoOp(hide_input_T..,
                            xpos_node.xpos() + 100,
-                           ypos_node.ypos(),
+                           ypos_node.yp__(),
                            tile_color_constants.COLORS['noop'],
                            label_lab)
     r_ noop

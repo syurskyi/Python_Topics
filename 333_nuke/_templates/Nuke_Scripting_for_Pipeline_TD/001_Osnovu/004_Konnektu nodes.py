@@ -13,7 +13,7 @@ n4 = ?.nodes.NoOp()
 
 n5 = ?.nodes.Merge(inputs=[n3, n4])
 
-n3.setInput(0, None)
+n3.setInput(0, N..)
 
 n5.inputs()
 

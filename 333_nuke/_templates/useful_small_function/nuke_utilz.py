@@ -20,7 +20,7 @@ ___ check_selected
     __ le.(nodes) > 0:
         r_ True, nodes[0]
     else:
-        r_ False, None
+        r_ False, N..
 
 ___ clear_selection
     ?.selectAll()
@@ -28,16 +28,16 @@ ___ clear_selection
 
 ___ select_nodes(nodes):
     ___ node __ nodes:
-        node['selected'].setValue(True)
+        node['selected'].setValue T..
 
 ___ select_nodes_by_type(node_type):
     select_nodes(get_nodes_by_type(node_type))
 
 ___ select_all_nodes
-    select_nodes(?.allNodes())
+    select_nodes(?.aN..())
 
 ___ get_nodes_by_type(node_type):
-    r_ ?.allNodes(node_type)
+    r_ ?.aN..(node_type)
 
 ___ get_nodes_by_types(node_types=[]):
     nodes = []
@@ -53,10 +53,10 @@ ___ delete_nodes_by_type(node_type):
     delete_nodes(get_nodes_by_type(node_type))
 
 ___ delete_all_nodes
-    delete_nodes(?.allNodes())
+    delete_nodes(?.aN..())
 
 ___ is_disabled(node):
-    __ type(node) == str:
+    __ type(node) __ str:
         node = ?.toNode(node)
     r_ node['disable'].value()
 
@@ -93,12 +93,12 @@ ___ align_node(node, base_x, base_y, x_buffer, y_buffer,
     x_shift = x_buffer*x_mult
     y_shift = y_buffer*y_mult
     xpos = int(base_x+x_shift)+x_align
-    ypos = int(base_y-y_shift)+y_align
+    yp__ = int(base_y-y_shift)+y_align
 
-    position(node, xpos, ypos)
+    position(node, xpos, yp__)
 
 ___ auto_align_all_nodes
-    ___ node __ ?.allNodes
+    ___ node __ ?.aN..
         ?.autoplace(node)
 
 ___ position(node, x, y):
@@ -127,12 +127,12 @@ ___ copy_root(from_nk, to_nk):
         ?.toNode('root')['name'].setValue(name)
         ?.tprint(to_nk)
         ?.scriptSaveAs(to_nk, 1)
-        r_ True, None
+        r_ True, N..
     except Exception, e:
         r_ False, e
 
 ___ get_parent(node):
-    __ type(node) == str:
+    __ type(node) __ str:
         node = ?.toNode(node)
     r_ ?.toNode('root.'+'.'.join(node.fullName().split('.')[:-1])) or ?.r__
 
@@ -147,7 +147,7 @@ ___ find_upstream(node, class_list):
     @param classList: A list of node classes to find a match for
     @return: Node or None.
     '''
-    __ node and node.Class() __ class_list:
+    __ node and node.C..  __ class_list:
         r_ node
     else:
         ___ n __ node.dependencies(?.INPUTS | ?.HIDDEN_INPUTS):
@@ -169,7 +169,7 @@ ___ get_upstream_value(class_list, inp, knb, exvalue):
 
     r_ value
 
-___ get_parent_value(inp=0, knb=None, exvalue=50):
+___ get_parent_value(inp=0, knb=N.., exvalue=50):
     '''
     Returns the value of a specific knob connected to the
     group to a member of that group
@@ -181,7 +181,7 @@ ___ get_parent_value(inp=0, knb=None, exvalue=50):
 
     r_ value
 
-___ get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
+___ get_pv(inp=0, knb=N.., exvalue=50, animchannel=0, holdframe=N..):
     '''
     get the parent of the gizmo/group based on input nr
     the knob the anim channel for example 0 or 1 or 2 for an xyz knob
@@ -191,7 +191,7 @@ ___ get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
                     animchannel=1, holdframe=10)
     '''
     ___
-        __ holdframe is None:
+        __ holdframe __ N..:
             value = ?.thisGroup().input(inp).knob(knb).value(animchannel)
             r_ value
         value = ?.thisGroup().input(inp).knob(knb).valueAt(holdframe, animchannel)
@@ -200,7 +200,7 @@ ___ get_pv(inp=0, knb=None, exvalue=50, animchannel=0, holdframe=None):
 
     r_ value
 
-___ find_downstream(node, node_class, name_pattern=None):
+___ find_downstream(node, node_class, name_pattern=N..):
     '''
     Return the first node downstream that matches a class within
     a list of user-specified classes. Returns None if no match is found
@@ -210,12 +210,12 @@ ___ find_downstream(node, node_class, name_pattern=None):
     @param name_pattern: optional re regex parttern of node name to match
     @return: Node or None.
     '''
-    __ node and node.Class() == node_class:
-        __ type(name_pattern) is str or type(name_pattern) is type(re.compile('')):
+    __ node and node.C..  __ node_class:
+        __ type(name_pattern) __ str or type(name_pattern) __ type(re.compile('')):
             __ re.compile(name_pattern).match(node.name()):
                 r_ node
             else:
-                r_ None
+                r_ N..
         r_ node
     else:
         ___ n __ node.dependent(?.INPUTS | ?.HIDDEN_INPUTS):
@@ -229,7 +229,7 @@ ___ get_parts_and_eye_index_for_basename(stereo_basename):
     parts = stereo_basename.split('.')
     eye_index = [i ___ i, item __ enumerate(parts) __ \
                  re.search('^[l|r]t$', item)]
-    __ eye_index and le.(eye_index) == 1:
+    __ eye_index and le.(eye_index) __ 1:
         eye_index = eye_index[0]
         r_ parts, eye_index
 
@@ -245,23 +245,23 @@ ___ p2p_module_get_current_eye(p2p_node):
 
 ___ p2p_module_eye_swap(p2p_node):
     cur_dom_eye = p2p_module_get_current_eye(p2p_node)
-    __ cur_dom_eye == 'lt':
+    __ cur_dom_eye __ 'lt':
         r_ 'rt'
-    __ cur_dom_eye == 'rt':
+    __ cur_dom_eye __ 'rt':
         r_ 'lt'
 
 ___ p2p_module_get_write_name(p2p_node):
     cur_dom_eye = p2p_module_get_current_eye(p2p_node)
-    __ cur_dom_eye == 'lt':
+    __ cur_dom_eye __ 'lt':
         r_ 'rt_p2p'
-    __ cur_dom_eye == 'rt':
+    __ cur_dom_eye __ 'rt':
         r_ 'lt_p2p'
 
 ___ update_p2p_module(p2p_node, write_name, eye):
     one_view_knob = find_downstream(p2p_node, 'OneView', 'OneView_p2p(\d?)').knob('view')
     dom_eye_status_knob = p2p_node.knob('domEyeStatus')
     write_node = find_downstream(p2p_node, 'Write', write_name+'(\d?)')
-    __ eye == 'lt':
+    __ eye __ 'lt':
         ?.Undo().begin('Make P2P Dominant Eye lt')
         with p2p_node:
             ?.toNode('eyeSwapMaster').knob('which').setValue(0)
@@ -274,7 +274,7 @@ ___ update_p2p_module(p2p_node, write_name, eye):
             ?.r__ .knob('hero_view').setValue('lt')
             dom_eye_status_knob.setValue('<font color="Crimson"><b> lt </b></font color>')
         ?.Undo().end()
-    __ eye == 'rt':
+    __ eye __ 'rt':
         ?.Undo().begin('Make P2P Dominant Eye rt')
         with p2p_node:
             ?.toNode('eyeSwapMaster').knob('which').setValue(1)
@@ -322,7 +322,7 @@ ___ p2p_symlinks
             __ __.pa__.exists(source_movie):
                 __.symlink(source_movie, dest_movie)
 
-___ set_read_disparity(shot=None, show=None):
+___ set_read_disparity(shot=N.., show=N..):
     ___
         disparity_path = dbinfo.get_disparity(shot, show)
         disparity = re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)

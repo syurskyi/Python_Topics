@@ -31,7 +31,7 @@ ___ reveal_in_finder
     node = ?.thisNode()
     knob = ?.thisKnob()
 
-    __ knob.name() == "revealInFinder":
+    __ knob.name() __ "revealInFinder":
         pa__ = __.pa__.dirname(node["file"].getValue())
         __ __.pa__.i_d_(pa__):
             h__.open_folder(pa__)

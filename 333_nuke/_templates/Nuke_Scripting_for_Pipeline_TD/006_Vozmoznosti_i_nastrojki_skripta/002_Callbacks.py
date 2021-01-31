@@ -56,7 +56,7 @@ ___ multiKnob
     other = ?.selectedNodes(n.Class())
     val = k.value()
     ___ node __ other:
-        __ no. node is n:
+        __ no. node __ n:
             node[k.name()].setValue(val)
 
 

@@ -262,11 +262,11 @@ ___ get_topleft_coordinates(*args):
     x _ 0
     y _ 0
     offset _ 200
-    ___ n __ ?.allNodes
+    ___ n __ ?.aN..
         __ n.xpos() < x:
             x _ n.xpos()
-        __ n.ypos() < y:
-            y _ n.ypos()
+        __ n.yp__() < y:
+            y _ n.yp__()
 
     r_ (x - offset, y - offset)
 
@@ -278,7 +278,7 @@ ___ create_uid(*args):
 
 ___ find_looks_group(*args):
     ___
-        r_ [ node ___ node __ ?.allNodes('Group') __ node.knob('looks_group') ][0]
+        r_ [ node ___ node __ ?.aN..('Group') __ node.knob('looks_group') ][0]
     ______ IndexError:
         show_message_box(N.., "Cannot find 'looks' group in nodegraph.")
 
@@ -454,7 +454,7 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
     __ enable_drag __ 'False':
         diritem.setFlags(?C...__.ItemIsSelectable | ?C...__.ItemIsEnabled | ?C...__.ItemIsUserCheckable)
     diritem.setExpanded(expanded)
-    diritem.setSelected(selected)
+    diritem.sS..(selected)
     __ disabled:
         diritem.setDisabled(T..)
     dirpath _ __.pa__.n_p_(dirpath)
@@ -528,18 +528,18 @@ ___ get_connected_nodes(node, *args):
     connected_nodes _ # list
     ignore_list _ ['Viewer']
     ?.clear_selection_recursive()
-    node.setSelected(T..)
+    node.sS..(T..)
     connected_nodes.ap..(node)
     ?.selectConnectedNodes()
     ___ node __ ?.sN..:
         ___ dependency __ node.dependencies
-            dependency.setSelected(T..)
+            dependency.sS..(T..)
 
         ___ dependent __ node.dependent
-            dependent.setSelected(T..)
+            dependent.sS..(T..)
 
     ___ node __ ?.sN..:
-        __ node.Class() no. __ ignore_list:
+        __ node.C..  no. __ ignore_list:
             connected_nodes.ap..(node)
 
     ?.clear_selection_recursive()
