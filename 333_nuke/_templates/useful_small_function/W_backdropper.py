@@ -71,7 +71,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
 
         __ nodeClass __ 'StickyNote':
             label = '   %s   '%label.upper()
-            node = ?.createNode(nodeClass, inpanel = False)
+            node = ?.cN..(nodeClass, inpanel = False)
 
         else:
             node = n_s_.autoBackdrop()
@@ -134,7 +134,7 @@ ___ colorizeNode(node):
 
     #order
     #0 = keywords first, 1 = color names first
-    order = int(preferencesNode.knob('backdropperOrder').gV..  * 2 - 1 )
+    order = in_(preferencesNode.knob('backdropperOrder').gV..  * 2 - 1 )
 
     colorLists = [colorNamesList, keywordList][::order]
     colorDicts = [colorNamesDict, keywordDict][::order]
@@ -183,10 +183,10 @@ ___ hex2interface(hexColor):
     Convert a color stored as hex values to a 32 bit value as used by nuke for interface colors.
     '''
     hexColor = hexColor.lstrip('#')
-    rgb = tuple(int(hexColor[i:i+2], 16) ___ i __ (0, 2 ,4))
+    rgb = tuple(in_(hexColor[i:i+2], 16) ___ i __ (0, 2 ,4))
     rgb += (255,)
 
-    r_ int('%02x%02x%02x%02x'%rgb,16)
+    r_ in_('%02x%02x%02x%02x'%rgb,16)
 
 
 #----------------------------------------------------------------------------------------------------------
@@ -202,7 +202,7 @@ ___ setMenuItem(itemName):
 
     index = nodeClasses.index(itemName)
 
-    replace = int(preferencesNode.knob('backdropper%sReplaceMenuItem'%itemName).v.. ())
+    replace = in_(preferencesNode.knob('backdropper%sReplaceMenuItem'%itemName).v.. ())
 
     customItemName = itemName + ' (W_backdropper)'
 
@@ -333,7 +333,7 @@ ___ updatePreferences(forceUpdate = False):
     # amount of slots
     __ 'backdropperSlotCount' __ preferencesNode.knobs().keys
         global presetSlots
-        presetSlots = min(50, max(0, int(preferencesNode.knob('backdropperSlotCount').v.. ())))
+        presetSlots = min(50, max(0, in_(preferencesNode.knob('backdropperSlotCount').v.. ())))
 
     # delete all the preferences
     deletePreferences()
@@ -356,7 +356,7 @@ ___ closePreferencesPanel(save = False):
     Find and invoke a button found at the bottom of the preferences panel.
     '''
 
-    buttonText = ['Cancel','OK'][int(save)]
+    buttonText = ['Cancel','OK'][in_(save)]
     preferencesButton = N..
 
     # find preferences
@@ -435,7 +435,7 @@ ___ addPreferences
     addKnobToPreferences(?.Text_Knob('backdropperKeywordLabel','<b>Keywords</b>'))
 
     # colorknobs
-    ___ number __ range(int(presetSlots)):
+    ___ number __ range(in_(presetSlots)):
         number = str(number + 1).zfill(2)
 
         name = 'backdropperColor%s'%number
@@ -744,7 +744,7 @@ ___ colorizeNodes(all = False):
         selection = ?.aN..()
 
         # create panel instance
-        panel = ?.Panel('W_backdropper - Colorize %s nodes'%['selected', 'all'][int(all)])
+        panel = ?.Panel('W_backdropper - Colorize %s nodes'%['selected', 'all'][in_(all)])
 
         ___ nodeClass __ nodeClasses:
             panel.addBooleanCheckBox(nodeClass, True)

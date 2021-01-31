@@ -485,19 +485,19 @@ ___ get_job_xml(*args):
 
 ___ insert_as_read_node(job_details, w.. _ N.., *args):
     __ w..:
-        read _ ?.createNode('Read')
-        read['file'].sV..(w..['file'].getValue())
-        read['first'].sV..(__.(?.r.. ['first_frame'].getValue()))
-        read['origfirst'].sV..(__.(?.r.. ['first_frame'].getValue()))
-        read['last'].sV..(__.(?.r.. ['last_frame'].getValue()))
-        read['origlast'].sV..(__.(?.r.. ['last_frame'].getValue()))
+        read _ ?.cN..('Read')
+        read['file'].sV..(w..['file'].gV..())
+        read['first'].sV..(__.(?.r.. ['first_frame'].gV..()))
+        read['origfirst'].sV..(__.(?.r.. ['first_frame'].gV..()))
+        read['last'].sV..(__.(?.r.. ['last_frame'].gV..()))
+        read['origlast'].sV..(__.(?.r.. ['last_frame'].gV..()))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
-        read.setXYpos(__.(w..['xpos'].getValue()), __.(w..['ypos'].getValue()) + 70)
+        read.setXYpos(__.(w..['xpos'].gV..()), __.(w..['ypos'].gV..()) + 70)
         ?.zoom(1.0, (w...xpos(), w...yp__()))
         ?.connect_selected_to_viewer(0)
     ____
-        read _ ?.createNode('Read')
+        read _ ?.cN..('Read')
         read['file'].sV..(job_details['render_path'])
         read['first'].sV..(__.(job_details['render_start']))
         read['origfirst'].sV..(__.(job_details['render_start']))

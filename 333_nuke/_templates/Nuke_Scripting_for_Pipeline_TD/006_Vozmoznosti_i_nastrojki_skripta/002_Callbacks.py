@@ -7,7 +7,7 @@ ___ my_cb
 ?.removeOnCreated(my_cb, nodeClass='Transform')
 
 ___ my_cb2
-    print ?.thisKnob().getValue()
+    print ?.thisKnob().gV..()
 
 ?.addKnobChanged(my_cb2)
 ?.removeKnobChanged(my_cb2)
@@ -57,7 +57,7 @@ ___ multiKnob
     val = k.value()
     ___ node __ other:
         __ no. node __ n:
-            node[k.name()].setValue(val)
+            node[k.name()].sV..(val)
 
 
 ?.addKnobChanged(multiKnob)

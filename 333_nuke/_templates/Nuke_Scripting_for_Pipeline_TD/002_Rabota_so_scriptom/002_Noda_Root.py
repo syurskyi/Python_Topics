@@ -3,9 +3,9 @@ _____ ?
 ?.toNode('root')
 ?.r__ 
 root = ?.r__ 
-root['fps'].setValue(30)
-root['first_frame'].setValue(10)
-root['last_frame'].setValue(200)
+root['fps'].sV..(30)
+root['first_frame'].sV..(10)
+root['last_frame'].sV..(200)
 
 root.name()
 

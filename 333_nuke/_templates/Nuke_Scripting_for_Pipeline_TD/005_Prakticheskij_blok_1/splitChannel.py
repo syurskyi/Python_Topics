@@ -44,13 +44,13 @@ ___ calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, n
 	r_ additionalYOffset
 
 
-___ createNode(layer, nodeOperations, xPos, yPos):
+___ cN..(layer, nodeOperations, xPos, yPos):
 	operationNode = nodeOperations.split(':')
 	operationParameters = operationNode[1].split(';')
 	operationNode = operationNode[0]
 	
 	exec('thisNode = nuke.nodes.'  + str(operationNode) + '(name="' + operationNode + ' ' + str(layer) + '")') 
-	thisNode.setXYpos(int(xPos), int(yPos))
+	thisNode.setXYpos(in_(xPos), in_(yPos))
 	
 	___ parameter __ operationParameters:
 		__ parameter != '':
@@ -95,7 +95,7 @@ ___ autoComper
 			thisLayers.update({thisData:''})
 			
 		__ le.(thisLayers) __ 1 and 'rgba' __ thisLayers:
-			fileName = thisNode['file'].getValue()
+			fileName = thisNode['file'].gV..()
 			fileName = fileName.split('/')
 			fileName = fileName[le.(fileName)-1]
 			fileName = fileName.split('.')[0]
@@ -109,10 +109,10 @@ ___ autoComper
 	___ layer __ allLayers:
 		layerLower = layer.lower()
 			
-		__ int(allLayers[layer]['xpos'].getValue()) < xPosMin:
-			xPosMin = allLayers[layer]['xpos'].getValue()
-		__ int(allLayers[layer]['ypos'].getValue()) < yPosMin:
-			yPosMin = allLayers[layer]['ypos'].getValue()	
+		__ in_(allLayers[layer]['xpos'].gV..()) < xPosMin:
+			xPosMin = allLayers[layer]['xpos'].gV..()
+		__ in_(allLayers[layer]['ypos'].gV..()) < yPosMin:
+			yPosMin = allLayers[layer]['ypos'].gV..()
 	
 		___ compChannel __ compNodes:
 			compThis = True
@@ -155,19 +155,19 @@ ___ autoComper
 			
 		__ le.(allSelectedNodes) > 1 and autoAlignReaders __ True:
 			__ layerOriginal __ allLayers:
-				allLayers[layerOriginal].setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin))
+				allLayers[layerOriginal].setXYpos(in_(nodeNumber*nodeXOffset+xPosMin), in_(yPosMin))
 		
 		__ layerOriginal __ layerType:
 			__ layerType[layerOriginal] __ 'channel':
 				exec(str(layer) +' = nuke.nodes.Shuffle(name = "' + str(layerOriginal) + '_Shuffel", postage_stamp = True)')
-				eval(layer).setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+2*nodeYOffset))
+				eval(layer).setXYpos(in_(nodeNumber*nodeXOffset+xPosMin), in_(yPosMin+2*nodeYOffset))
 				__ layerOriginal __ allLayers:
 					eval(layer).setInput(0, allLayers[layerOriginal])
-					eval(layer)['in'].setValue(layerOriginal)
+					eval(layer)['in'].sV..(layerOriginal)
 		
 		__ createNoOpNode:
 			noOpNode = ?.nodes.NoOp(name=layerOriginal, tile_color=noOpTileColor)
-			noOpNode.setXYpos(int(nodeNumber*nodeXOffset+xPosMin), int(yPosMin+3*nodeYOffset))
+			noOpNode.setXYpos(in_(nodeNumber*nodeXOffset+xPosMin), in_(yPosMin+3*nodeYOffset))
 			__ layerOriginal __ layerType:
 				__ layerType[layerOriginal] __ 'file':
 					noOpNode.setInput(0, allLayers[layerOriginal])
@@ -189,7 +189,7 @@ ___ autoComper
 			___ nodeToAdd __ addNodesBeforeComped[layer].split('|'):
 				xPos = nodeNumber*nodeXOffset+xPosMin 
 				yPos = yPosMin+4*nodeYOffset + (nodeToAddCount*40)
-				noOpNode = createNode(layer, nodeToAdd, xPos, yPos)
+				noOpNode = cN..(layer, nodeToAdd, xPos, yPos)
 				noOpNode.setInput(0, nodeBefore)
 				
 				nodeToAddCount += 1
@@ -208,7 +208,7 @@ ___ autoComper
 			__ parentNode != 'START':
 				xPos = xPosMin 
 				yPos = mergeCount*nodeYOffset+yPosMin+4*nodeYOffset+additionalYOffset + additionalYOffsetFirst
-				thisNode = createNode(layer, compNodeOperations[layer], xPos, yPos)
+				thisNode = cN..(layer, compNodeOperations[layer], xPos, yPos)
 	
 				exec(layer + "Node = thisNode")
 				
@@ -216,8 +216,8 @@ ___ autoComper
 					#Create Dot-Nodes
 					dot = ?.nodes.Dot(note_font_size=20)
 					__ showDotLabel:
-						dot['label'].setValue(' ' + str(layerOriginal))
-					dot.setXYpos( int(eval(layer)['xpos'].getValue()+35), int(thisNode['ypos'].getValue()+3) )			
+						dot['label'].sV..(' ' + str(layerOriginal))
+					dot.setXYpos( in_(eval(layer)['xpos'].gV..()+35), in_(thisNode['ypos'].gV..()+3) )
 					dot.setInput(0, eval(layer))
 					exec(layer +" = dot")
 					
@@ -228,7 +228,7 @@ ___ autoComper
 					___ nodeToAdd __ addNodesAfterComped[layer].split('|'):
 						xPos = xPosMin 
 						yPos = mergeCount*nodeYOffset+yPosMin+4*nodeYOffset+additionalYOffset + additionalYOffsetFirst + (nodeToAddCount*40)
-						thisNode = createNode(layer, nodeToAdd, xPos, yPos)
+						thisNode = cN..(layer, nodeToAdd, xPos, yPos)
 						thisNode.setInput(0, nodeBefore)
 						
 						nodeToAddCount += 1

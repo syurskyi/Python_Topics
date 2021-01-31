@@ -88,18 +88,18 @@ ___ Merge(n, cycle, forwards):
 			__ forwards:
 
 				# if last item in list, go to start
-				__ int(currOp) + 1 __ countOp:
+				__ in_(currOp) + 1 __ countOp:
 					k.sV..(0)
 
 				else:
-					k.sV..(int(currOp) + 1)
+					k.sV..(in_(currOp) + 1)
 
 			else:
 
 				__ currOp __ 0:
 					k.sV..(countOp - 1)
 				else:
-					k.sV..(int(currOp) - 1)
+					k.sV..(in_(currOp) - 1)
 
 	______
 
@@ -303,12 +303,12 @@ ___ anyListKnob(n, knobName, forwards):
 		__ forwards:
 
 			# if last item in list, go to start
-			__ int(currOp) + 1 __ countOp:
+			__ in_(currOp) + 1 __ countOp:
 				k.sV..(0)
 
 			else:
 				# go forward one item
-				k.sV..(int(currOp + 1))
+				k.sV..(in_(currOp + 1))
 
 
 		# scroll backwards
@@ -320,7 +320,7 @@ ___ anyListKnob(n, knobName, forwards):
 
 			# go back one item
 			else:
-				k.sV..(int(currOp - 1))
+				k.sV..(in_(currOp - 1))
 
 	______
 

@@ -1,8 +1,8 @@
 _____ ?
 
 # create  and connect nodes
-r = ?.createNode('Read', inpanel=False)
-g = ?.createNode('Grade', inpanel=False)
+r = ?.cN..('Read', inpanel=False)
+g = ?.cN..('Grade', inpanel=False)
 c = ?.nodes.ColorCorrect(name='mainCC',xpos=400,yp__ = 10, gain=2)
 c.setInput(0, g)
 c.autoplace()
@@ -39,13 +39,13 @@ nodes = ?.aN..()
 
 # knobs ######################################### 
 # get value
-?.toNode('Write2')['file'].getValue()
+?.toNode('Write2')['file'].gV..()
 ?.toNode('Write2')['file'].evaluate()
 #set value 
 _____ ?
 node = ?.toNode('ColorCorrect2')
-node['shadows.gain'].setValue(2)
-node['channels'].setValue('rgba')
+node['shadows.gain'].sV..(2)
+node['channels'].sV..('rgba')
 
 # link knobs
 node['gain'].setExpression('%s.%s' % ('ColorCorrect1', 'gain'))
@@ -64,7 +64,7 @@ node = ?.nodes.Transform()
 node.autoplace()
 ?.autoplace(node)
 
-node['xpos'].setValue(0)
+node['xpos'].sV..(0)
 n.setXYpos
 ?.zoomToFitSelected()
 ?.extractSelected()

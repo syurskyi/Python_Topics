@@ -88,7 +88,7 @@ ___ auto_convert(v.. ):
         r_ fl..(v.. )
 
     __ atype __ 'int':
-        r_ int(v.. )
+        r_ in_(v.. )
     r_ v..
 
 ___ attr_type(v.. ):
@@ -123,7 +123,7 @@ ___ attr_type(v.. ):
             __ type(v.. ) __ fl..:
                 r_ 'float'
 
-            __ type(v.. ) __ int:
+            __ type(v.. ) __ in_:
                 r_ 'int'
     r_ 'unknown'
 
@@ -140,7 +140,7 @@ ___ list_attr_types(s):
     __ no. is_list(s):
         r_ 'unknown'
     
-    ___ typ __ [st., int, fl.., bool]:
+    ___ typ __ [st., in_, fl.., bool]:
         __ all(isinstance(n, typ) ___ n __ s):
             r_ '%s%d' % (typ.__name__, le.(s))
 
@@ -163,7 +163,7 @@ ___ is_number(s):
     """
     __ is_bool(s):
         r_ False
-    r_ isinstance(s, int) or isinstance(s, fl..)
+    r_ isinstance(s, in_) or isinstance(s, fl..)
 
 
 ___ is_bool(s):

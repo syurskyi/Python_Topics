@@ -8,8 +8,8 @@ _____ ?
 
 grp = ?.nodes.Group()
 grp.begin()
-?.createNode('Tracker')
-?.createNode('ColorCorrect')
+?.cN..('Tracker')
+?.cN..('ColorCorrect')
 grp.end()
 # nuke.endGroup()
 # nuke.root().begin()
@@ -55,13 +55,13 @@ n.fullName().split('.')[:-1]
 _____ ?
 # create group
 ?.collapseToGroup F..
-?.createNode('Group', inpanel=False)
+?.cN..('Group', inpanel=False)
 grp = ?.nodes.Group()
 
 # edit group
 grp.begin()
-?.createNode('Tracker')
-?.createNode('ColorCorrect', inpanel=False)
+?.cN..('Tracker')
+?.cN..('ColorCorrect', inpanel=False)
 grp.end()
  # or
 #nuke.endGroup()

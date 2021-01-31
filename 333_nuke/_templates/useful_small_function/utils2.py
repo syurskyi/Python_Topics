@@ -225,8 +225,8 @@ ___ get_grid_preferences
 
     """
     pref_node = ?.tN..("preferences")
-    grid_height = int(pref_node["GridHeight"].v.. ())
-    grid_width = int(pref_node["GridWidth"].v.. ())
+    grid_height = in_(pref_node["GridHeight"].v.. ())
+    grid_width = in_(pref_node["GridWidth"].v.. ())
     r_ grid_width, grid_height
 
 
@@ -242,6 +242,6 @@ ___ get_closest_grid_offset(offset):
     """
     grid_width, grid_height = get_grid_preferences()
     # Set offset to closest on DAG grid.
-    offset_x = int(round(fl..(offset[0]) / grid_width)) * grid_width
-    offset_y = int(round(fl..(offset[1]) / grid_height)) * grid_height
+    offset_x = in_(round(fl..(offset[0]) / grid_width)) * grid_width
+    offset_y = in_(round(fl..(offset[1]) / grid_height)) * grid_height
     r_ offset_x, offset_y

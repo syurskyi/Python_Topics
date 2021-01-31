@@ -118,11 +118,11 @@ ___ create_node_with_position(nodename,connect_node,x_0,y_0):
      :param y: y coordinate.
      :return: created node object.
      """
-     node _ ?.createNode(nodename)
+     node _ ?.cN..(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(__.(x))
-     node.setYpos(__.(y))
+     node.sX..(__.(x))
+     node.sY..(__.(y))
 
      node.setInput(0,connect_node)
 
@@ -137,11 +137,11 @@ ___ create_node_with_position_simple(nodename,x_0,y_0):
      :param y: y coordinate.
      :return: created node.
      """
-     node _ ?.createNode(nodename)
+     node _ ?.cN..(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(__.(x))
-     node.setYpos(__.(y))
+     node.sX..(__.(x))
+     node.sY..(__.(y))
 
 
      r_ node
@@ -181,28 +181,28 @@ ___ build_depth_setup(node_list):
     deep_merge _ create_node_with_position_simple("DeepMerge",positions[1] +  500, positions[2]+100)
     deep_merge['selected'].sV..(T..)
 
-    deep_to_image _ ?.createNode("DeepToImage")
+    deep_to_image _ ?.cN..("DeepToImage")
     deep_to_image_pos _ get_node_position(deep_to_image)
-    deep_to_image.setYpos(deep_to_image_pos["y_pos"] + 50)
+    deep_to_image.sY..(deep_to_image_pos["y_pos"] + 50)
 
-    unpremult _ ?.createNode("Unpremult")
+    unpremult _ ?.cN..("Unpremult")
     unpremult['channels'].sV..("Zdepth")
     deep_to_image_pos _ get_node_position(unpremult)
-    unpremult.setYpos(deep_to_image_pos["y_pos"] + 25)
+    unpremult.sY..(deep_to_image_pos["y_pos"] + 25)
     
-    expression _ ?.createNode("Expression")
+    expression _ ?.cN..("Expression")
     expression['channel3'].sV..("depth")
     expression['expr3'].sV..("Zdepth.red == 0 ? inf : Zdepth.red")
     expression_pos _ get_node_position(expression)
-    expression.setYpos(expression_pos["y_pos"] + 25)
+    expression.sY..(expression_pos["y_pos"] + 25)
 
     
-    r__ _ ?.createNode("Remove")
+    r__ _ ?.cN..("Remove")
     r__["operation"].sV..("keep")
     r__["channels"].sV..("rgba")
     r__["channels2"].sV..("depth")
     remove_pos _ get_node_position(r__)
-    r__.setYpos(remove_pos["y_pos"] + 25)
+    r__.sY..(remove_pos["y_pos"] + 25)
     
 
     deep_write _  create_node_with_position("AFWrite",r__,get_node_position(r__)["x_pos"],get_node_position(r__)["y_pos"] + 200)
@@ -577,7 +577,7 @@ ___ splitLayers( node ):
             ch4 _ '@ @' % ( ch4, ch4 )
             
         prefs _ "in @ @ @ @ @" % (layer, ch1, ch2, ch3, ch4)
-        shuffle _ ?.createNode( 'Shuffle', prefs, inpanel_F.. )
+        shuffle _ ?.cN..( 'Shuffle', prefs, inpanel_F.. )
         shuffle.knob( 'label' ).sV..( layer )
         shuffle.setInput( 0, node )
 

@@ -40,7 +40,7 @@ ___ fixReadError
                         ___ file __ __.l_d_(subpath):
                             __ fnmatch.fnmatch(file, findFile):
                                 reformatPath = subpath.replace("\\","/")
-                                i['file'].setValue(reformatPath +'/'+ oldname)
+                                i['file'].sV..(reformatPath +'/'+ oldname)
 
                     __ i.error() __ False:
                         missingRead = i.name() + " - " + oldname + " - " + " Found Successfully!" + "\n" + missingRead

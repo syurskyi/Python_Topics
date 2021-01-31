@@ -14,7 +14,7 @@ ___ split
                                         inputs=[node],
                                         postage_stamp=True,
                                         hide_input=True)
-                sh['in'].setValue(ch)
+                sh['in'].sV..(ch)
                 shs.a__(sh)
 
                 cc = ?.nodes.ColorCorrect(inputs=[sh])

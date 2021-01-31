@@ -625,16 +625,16 @@ ___ set_preview_image(delete_nodes _ T..):
     root_dir_docs _ get_dir_docs_current_nukescript()
     __ root_dir_docs __ '':
         r_
-    reformat _ ?.createNode('Reformat', inpanel_F..)
+    reformat _ ?.cN..('Reformat', inpanel_F..)
     reformat.setInput(0, sel)
     reformat.setXYpos(sel.xpos(), sel.yp__() + 50)
     reformat['type'].sV..('to box')
     reformat['box_width'].sV..(preview_image_width)
-    gamma _ ?.createNode('Gamma')
+    gamma _ ?.cN..('Gamma')
     gamma.setInput(0, reformat)
     gamma.setXYpos(sel.xpos(), reformat.yp__() + 50)
     gamma['value'].sV..(fl..(load_settings()['shot_thumb_gamma']))
-    w.. _ ?.createNode('Write', inpanel_F..)
+    w.. _ ?.cN..('Write', inpanel_F..)
     w...setInput(0, gamma)
     w...setXYpos(gamma.xpos(), gamma.yp__() + 50)
     w...knob('name').sV..('create preview')
@@ -957,7 +957,7 @@ ___ load_footage(defaulttype _ 'Read', pa__ _ ''):
                 ?.createScenefileBrowser(f, '')
             ____
                 ___
-                    ?.createNode(nodeType, 'file {' + f + '}', inpanel_use_in_panel)
+                    ?.cN..(nodeType, 'file {' + f + '}', inpanel_use_in_panel)
                 ______ RuntimeError __ err:
                     ?.m..(err.args[0])
 
@@ -1270,7 +1270,7 @@ ___ insert_shot_notes
                 shot_notes _ child.text
 
         __ shot_notes !_ '':
-            sticky _ ?.createNode('StickyNote')
+            sticky _ ?.cN..('StickyNote')
             sticky['label'].sV..(shot_notes)
             sticky['note_font_size'].sV..(20)
         r_

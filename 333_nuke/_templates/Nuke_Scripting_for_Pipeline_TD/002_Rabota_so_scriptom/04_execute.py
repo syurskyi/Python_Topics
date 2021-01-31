@@ -9,7 +9,7 @@ ___ incNamePath(pa__):
     __ le.(splt) > 1:
         num = splt[-1]
         __ num.isdigit
-            nameNum = int(num) + 1
+            nameNum = in_(num) + 1
             nzero = le.(num)
             __ nzero < 2: nzero = 2
             __ nzero > le.(str(nameNum)):
@@ -26,7 +26,7 @@ ___ incNamePath(pa__):
 map( lambda x: x['reload'].execute(), ?.aN..('Read'))
 
 ___ r __ ?.aN..('Read'):
-    f = incNamePath(r['file'].getValue())
+    f = incNamePath(r['file'].gV..())
     w = ?.nodes.Write(inputs=[r], file=f)
 #    w['Render'].execute()
     ?.execute(w, 1, 1)

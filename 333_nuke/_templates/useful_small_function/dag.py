@@ -5,7 +5,7 @@ ______ string
 ______ random
 
 # Get the grid size from the preferences. Used as the default unit of movement.
-grid = (int(?.tN..('preferences').knob('GridWidth').v.. ()), int(?.tN..('preferences').knob('GridHeight').v.. ()))
+grid = (in_(?.tN..('preferences').knob('GridWidth').v.. ()), in_(?.tN..('preferences').knob('GridHeight').v.. ()))
 
 
 ___ unselect(nodes=N..):
@@ -47,9 +47,9 @@ ___ set_pos(node, posx, posy):
     # Set node's position given a centered position based on screen width
     # param: pos - 2dim list of int node positions
     __ node.C..  __ 'BackdropNode':
-        r_ node.setXYpos(int(posx), int(posy))
+        r_ node.setXYpos(in_(posx), in_(posy))
     ____
-        r_ node.setXYpos(int(posx - node.screenWidth()/2), int(posy - node.screenHeight()/2))
+        r_ node.setXYpos(in_(posx - node.screenWidth()/2), in_(posy - node.screenHeight()/2))
 
 
 ___ hide_panel
@@ -145,7 +145,7 @@ ___ move(xvel, yvel):
     yvel *= 3
     nodes = ?.sN..()
     ___ node __ nodes:
-        node.setXYpos(int(node.xpos() + grid[0] * xvel), int(node.yp__() + grid[1] * yvel))
+        node.setXYpos(in_(node.xpos() + grid[0] * xvel), in_(node.yp__() + grid[1] * yvel))
 
 
 ___ get_closest_node(node):
@@ -232,14 +232,14 @@ ___ align(direction):
             # Compare current node position to previous node position.
             # If difference is < overlap threshold, nodes are overlapping.
             distance = abs(pos[other_axis] + grid[other_axis] * offset - prev_pos[other_axis])
-            overlap_threshold = [int(node.screenWidth() * 1.1), int(node.screenHeight() * 1.1)]
+            overlap_threshold = [in_(node.screenWidth() * 1.1), in_(node.screenHeight() * 1.1)]
             overlapping = distance < overlap_threshold[other_axis]
 
         __ overlapping:
             offset += 1
 
         new_pos = pos
-        new_pos[other_axis] = int(pos[other_axis] + grid[other_axis] * offset)
+        new_pos[other_axis] = in_(pos[other_axis] + grid[other_axis] * offset)
 
         # Set value into sorted_other_axis also so we access the right value on the next loop
         sorted_other_axis[i][1][other_axis] = new_pos[other_axis]
@@ -283,23 +283,23 @@ ___ scale(axis, scale, pivot='max'):
             new_pos = (pos[1] - pivot_pos) * scale + pivot_pos
             set_pos(node, pos[0], new_pos)
             __ node.C..  __ 'BackdropNode':
-                bdpos = ((pos[1] + node['bdheight'].getValue()) - pivot_pos) * scale + pivot_pos - node.yp__()
+                bdpos = ((pos[1] + node['bdheight'].gV..()) - pivot_pos) * scale + pivot_pos - node.yp__()
                 print pos[1]
                 print new_pos
                 print bdpos
                 __ scale > 0:
                     node['bdheight'].sV..(bdpos)
                 ____
-                    node.setXYpos(pos[0], int(new_pos-abs(bdpos)))
+                    node.setXYpos(pos[0], in_(new_pos-abs(bdpos)))
         ____
             new_pos = (pos[0] - pivot_pos) * scale + pivot_pos
             set_pos(node, new_pos, pos[1])
             __ node.C..  __ 'BackdropNode':
-                bdpos = ((pos[0] + node['bdwidth'].getValue()) - pivot_pos) * scale + pivot_pos - node.xpos()
+                bdpos = ((pos[0] + node['bdwidth'].gV..()) - pivot_pos) * scale + pivot_pos - node.xpos()
                 __ scale > 0:
                     node['bdwidth'].sV..(bdpos)
                 ____
-                    node.setXYpos(int(new_pos-abs(bdpos)), int(node.yp__()))
+                    node.setXYpos(in_(new_pos-abs(bdpos)), in_(node.yp__()))
     ?.Undo().end()
 
 
@@ -322,7 +322,7 @@ ___ declone(node):
     node.sS.. T..
     args = node.writeKnobs( ?.WRITE_ALL | ?.WRITE_USER_KNOB_DEFS |
                             ?.WRITE_NON_DEFAULT_ONLY | ?.TO_SCRIPT)
-    decloned_node = ?.createNode(node.C.. , knobs=args, inpanel=False)
+    decloned_node = ?.cN..(node.C.. , knobs=args, inpanel=False)
     copy_inputs(node, decloned_node)
     ?.delete(node)
     parent.end()
@@ -423,7 +423,7 @@ ___ select_unused(nodes):
     # select all nodes that are not upstream or downstream of :param: nodes
     # Backdrops and dot nodes with a label are omitted.
     connected_nodes = [n ___ n __ connected(nodes, upstream=True, downstream=True)]
-    unused_nodes = [n ___ n __ ?.aN..() __ n no. __ connected_nodes and n.C..  != 'BackdropNode' and no. (n.C..  __ 'Dot' and n['label'].getValue())]
+    unused_nodes = [n ___ n __ ?.aN..() __ n no. __ connected_nodes and n.C..  != 'BackdropNode' and no. (n.C..  __ 'Dot' and n['label'].gV..())]
     unselect()
     select(unused_nodes)
     r_ unused_nodes
@@ -509,7 +509,7 @@ ___ hlink_paste
     ?.nodePaste('%clipboard%')
     ___ node __ hidden_inputs_in_selection(?.sN..()):
         __ 'hlink_node' __ node.knobs
-            target = ?.tN..(node['hlink_node'].getValue())
+            target = ?.tN..(node['hlink_node'].gV..())
             __ target:
                 node.setInput(0, target)
 
@@ -519,7 +519,7 @@ ___ hlink_create
     unselect()
     hlinks = # list
     ___ node __ nodes:
-        hlink = ?.createNode('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
+        hlink = ?.cN..('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
         hlinks.ap..(hlink)
         hlink.setInput(0, node)
         target_name = node.fullName()
@@ -528,7 +528,7 @@ ___ hlink_create
         label = hlink['label']
         target_label = node['label'].gV..
         __ node.C..  __ 'Read':
-            label.sV..(' | ' + node['label'].gV..  + '\n' + __.pa__.b_n_(node['file'].getValue()))
+            label.sV..(' | ' + node['label'].gV..  + '\n' + __.pa__.b_n_(node['file'].gV..()))
         ____ target_label:
             label.sV..(' | ' + target_label)
         ____
@@ -541,7 +541,7 @@ ___ hlink_create
 
 ___ dec2hex(dec):
     hexcol = '%08x' % dec
-    r_ '0x%02x%02x%02x' %  (int(hexcol[0:2], 16), int(hexcol[2:4], 16), int(hexcol[4:6], 16))
+    r_ '0x%02x%02x%02x' %  (in_(hexcol[0:2], 16), in_(hexcol[2:4], 16), in_(hexcol[4:6], 16))
 
 
 
@@ -567,7 +567,7 @@ ___ create_pointer
         # If topnode has a file knob, use that to set title
         # If it's a roto node, use the roto label
         __ 'file' __ topnode.knobs
-            pointer_title = __.pa__.b_n_(topnode['file'].getValue())
+            pointer_title = __.pa__.b_n_(topnode['file'].gV..())
             __ '.' __ pointer_title:
                 pointer_title = pointer_title.s..('.')[0]
         ____ topnode.C..  __ ['Roto', 'RotoPaint'] and topnode['label'].gV.. :
@@ -608,7 +608,7 @@ ___ create_pointer
             target.sS.. T..
 
         # create anchor node
-        anchor = ?.createNode('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.f..(randstr))
+        anchor = ?.cN..('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.f..(randstr))
         anchor.addKnob(?.Tab_Knob('anchor_tab', 'anchor'))
         anchor.addKnob(?.String_Knob('title', 'title'))
         anchor['title'].sV..(pointer_title)
@@ -617,7 +617,7 @@ ___ create_pointer
         anchor.sS.. T..
 
         # create pointer node
-        pointer = ?.createNode('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.f..(randstr))
+        pointer = ?.cN..('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.f..(randstr))
         pointer.addKnob(?.Tab_Knob('pointer_tab', 'pointer'))
         pointer.addKnob(?.String_Knob('target', 'target'))
         pointer['target'].sV..(anchor.fullName())
@@ -657,7 +657,7 @@ ___ create_dots(side=False):
         pos = get_pos(node)
         __ no. side:
             select([node])
-        dot = ?.createNode('Dot', inpanel=False)
+        dot = ?.cN..('Dot', inpanel=False)
         __ side:
             set_pos(dot, pos[0] - grid[0], pos[1])
             dot.setInput(0, node)
@@ -667,7 +667,7 @@ ___ create_dots(side=False):
         unselect(dot)
     select(dots)
     __ no. nodes:
-        dot = ?.createNode('Dot', inpanel=False)
+        dot = ?.cN..('Dot', inpanel=False)
 
 
 
@@ -675,18 +675,18 @@ ___ create_transform
     # Create a Transform or TransformGeo node depending on node type
     nodes = ?.sN..()
     __ no. nodes:
-        ?.createNode('Transform')
+        ?.cN..('Transform')
         r_
     unselect()
     transform_nodes = list()
     ___ node __ nodes:
         node.sS.. T..
         __ 'render_mode' __ node.knobs
-            new_node = ?.createNode('TransformGeo')
+            new_node = ?.cN..('TransformGeo')
             __ new_node:
                 transform_nodes.ap..(new_node)
         ____
-            new_node = ?.createNode('Transform')
+            new_node = ?.cN..('Transform')
             __ new_node:
                 transform_nodes.ap..(new_node)
         unselect()
@@ -718,7 +718,7 @@ ___ read_from_write
                 __ seq.startswith(filename_base):
                     filepath = __.pa__.j..(d_n_, seq)
                     break
-        read = ?.createNode('Read', 'file {{{0}}}'.f..(filepath), inpanel=False)
+        read = ?.cN..('Read', 'file {{{0}}}'.f..(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
         colorspace = node['colorspace'].v.. ()
@@ -726,7 +726,7 @@ ___ read_from_write
             # parse out role
             colorspace = colorspace.s..('(')[1].s..(')')[0]
         read['colorspace'].sV..(colorspace)
-        read['raw'].sV..(node['raw'].getValue())
+        read['raw'].sV..(node['raw'].gV..())
 
 
 

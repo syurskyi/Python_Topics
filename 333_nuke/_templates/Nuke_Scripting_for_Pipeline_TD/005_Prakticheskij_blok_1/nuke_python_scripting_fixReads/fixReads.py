@@ -4,7 +4,7 @@ ___ start
     reads = ?.aN..('Read')
     searchFolder = ''
     ___ r __ reads:
-        filepath = r['file'].getValue()
+        filepath = r['file'].gV..()
         __ no. __.pa__.exists(filepath):
             filename = __.pa__.b__(filepath)
             __ no. searchFolder:
@@ -15,5 +15,5 @@ ___ start
                 ___ pa__, dirs, files __ __.walk(searchFolder):
                     __ filename __ files:
                         newPath = __.pa__.join(pa__, filename)
-                        r['file'].setValue(newPath.replace('\\','/'))
+                        r['file'].sV..(newPath.replace('\\','/'))
                         break

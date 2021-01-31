@@ -29,7 +29,7 @@ ___ nuke_paint_nodes(input=N..):
         r_ 'red', 'No node selected'
 
     ___ node __ ?.sN..
-        node['tile_color'].sV..(int(input))
+        node['tile_color'].sV..(in_(input))
 
     __ le.(?.sN..()) __ 1:
         r_ 'lime', 'Node painted correctly'
@@ -51,7 +51,7 @@ ___ nuke_backdrop(input=N..):
     ______ n_s_
 
     bd = n_s_.autoBackdrop()
-    bd['tile_color'].sV..(int(input))
+    bd['tile_color'].sV..(in_(input))
     r_ 'lime', 'Backdrop node created'
 
 

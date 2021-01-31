@@ -87,7 +87,7 @@ ___ setError
 
         ___ r __ Sel:
             ___
-                r['on_error'].sV..(__.(e.onError.getValue()))
+                r['on_error'].sV..(__.(e.onError.gV..()))
                 __ e.reload.v..:
                     r.knob('reload').execute()
             ______ ValueError:

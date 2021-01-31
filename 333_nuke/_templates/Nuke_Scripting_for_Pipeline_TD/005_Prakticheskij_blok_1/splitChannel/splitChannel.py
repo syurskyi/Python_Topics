@@ -30,14 +30,14 @@ ___ autoBackdrop(name):
                                 bdwidth=bdW,
                                 yp__=bdY,
                                 bdheight=bdH,
-                                tile_color=int((random.random() * (200 - 100))) + 10,
+                                tile_color=in_((random.random() * (200 - 100))) + 10,
                                 note_font_size=20,
                                 label=name)
 
     # revert to previous selection
-    n['selected'].setValue F..
+    n['selected'].sV.. F..
     ___ node __ selNodes:
-        node['selected'].setValue F..
+        node['selected'].sV.. F..
 
     r_ n
 
@@ -51,8 +51,8 @@ ___ shuffleLayer(node, layer):
     '''
 
     shuffleNode = ?.nodes.Shuffle(label=knob, inputs=[punto])
-    shuffleNode['in'].setValue(layer)
-    shuffleNode['postage_stamp'].setValue T..
+    shuffleNode['in'].sV..(layer)
+    shuffleNode['postage_stamp'].sV.. T..
     r_ ?.nodes.Dot(inputs=[shuffleNode])
 
 ___ autoComp

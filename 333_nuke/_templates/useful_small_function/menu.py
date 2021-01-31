@@ -36,7 +36,7 @@ ___ sjmAlignH
     __ yresult __ N..:
       yresult _ n.yp__()
     ____
-      n.setYpos(yresult)
+      n.sY..(yresult)
 #
 # align selected nodes on a vertical line, by Steve Molin
 #
@@ -46,7 +46,7 @@ ___ sjmAlignV
     __ xresult __ N..:
       xresult _ n.xpos()
     ____
-      n.setXpos(xresult)
+      n.sX..(xresult)
 
 # by smolin, expands on the autobackdrop function from nuke/plugins/nukescripts
 #

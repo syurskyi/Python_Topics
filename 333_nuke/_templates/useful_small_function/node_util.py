@@ -16,11 +16,11 @@ ___ context_aware_create_node(node_2d, node_3d, node_deep):
     nodes _ ?.sN..
     # try:
     __ node_deep an. selected_nodes_deep(nodes):
-        r_ ?.createNode(node_deep)
+        r_ ?.cN..(node_deep)
     ____ node_3d an. selected_nodes_3d(nodes):
-        r_ ?.createNode(node_3d)
+        r_ ?.cN..(node_3d)
     ____ node_2d:
-        r_ ?.createNode(node_2d)
+        r_ ?.cN..(node_2d)
 
 
 ___ selected_nodes_deep(nodes):
@@ -92,7 +92,7 @@ ___ cycle_viewer_input_masks
 # Copies the tile_color of the first selected node to rest of the selected nodes
 ___ copy_node_tile_color
     nodes _ ?.sN..
-    tc _ __.(nodes[le.(nodes) - 1].knob('tile_color').getValue())
+    tc _ __.(nodes[le.(nodes) - 1].knob('tile_color').gV..())
     ___ n __ ra..(le.(nodes) - 1):
         nodes[n].knob('tile_color').sV..(tc)
 
@@ -174,15 +174,15 @@ ___ read_from_write
                 node_read _ ?.nodes.Read()  # create a read node
                 node_read['file'].sV..(?.filename(node))  # set the filename
                 __ node['use_limit'].gV.. __ 1:  # check to see if there is a range and set the values in the read node
-                    node_read['first'].sV..(__.(node['first'].getValue()))
-                    node_read['last'].sV..(__.(node['last'].getValue()))
+                    node_read['first'].sV..(__.(node['first'].gV..()))
+                    node_read['last'].sV..(__.(node['last'].gV..()))
                 ____  # no range on the write?  take a stab at using the range from the script value
-                    node_read['first'].sV..(__.(?.r.. ['first_frame'].getValue()))
-                    node_read['last'].sV..(__.(?.r.. ['last_frame'].getValue()))
-                node_read.setXpos(node.xpos())  # let's set the position
-                node_read.setYpos(node.yp__() + 50)
-                node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked
-                node_read['raw'].sV..(node['raw'].getValue())  # use raw if checked
+                    node_read['first'].sV..(__.(?.r.. ['first_frame'].gV..()))
+                    node_read['last'].sV..(__.(?.r.. ['last_frame'].gV..()))
+                node_read.sX..(node.xpos())  # let's set the position
+                node_read.sY..(node.yp__() + 50)
+                node_read['premultiplied'].sV..(node['premultiplied'].gV..())  # use premult if checked
+                node_read['raw'].sV..(node['raw'].gV..())  # use raw if checked
         ____
 
             print('No Writes Found in Node Selection')

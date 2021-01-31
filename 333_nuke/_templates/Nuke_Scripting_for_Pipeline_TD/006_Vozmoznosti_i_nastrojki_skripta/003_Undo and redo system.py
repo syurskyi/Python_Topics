@@ -1,6 +1,6 @@
 ?.Undo.begin('My Script')
 ___ i __ range(15):
-    ?.createNode('Blur', inpanel=False)
+    ?.cN..('Blur', inpanel=False)
 ?.Undo.end()
 
 ?.Undo.begin('My Script1')

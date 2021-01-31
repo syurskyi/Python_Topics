@@ -188,7 +188,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
                     __ version:
 
                 
-                        Next = int(version)+1
+                        Next = in_(version)+1
 
                   
                         string_Next = "%03d" % Next
@@ -264,7 +264,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
                      
                     __ version:
                 
-                        Next = int(version)+1
+                        Next = in_(version)+1
                   
                         string_Next = "%03d" % Next
                   
@@ -347,7 +347,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
                     __ version:
 
 
-                        Previous = int(version)-1
+                        Previous = in_(version)-1
 
           
                         string_Previous = "%03d" % Previous
@@ -429,7 +429,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                     __ version:
 
 
-                        Previous = int(version)-1
+                        Previous = in_(version)-1
 
           
                         string_Previous = "%03d" % Previous

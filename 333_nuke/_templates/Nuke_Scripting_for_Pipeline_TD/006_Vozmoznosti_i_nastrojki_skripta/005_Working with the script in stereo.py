@@ -13,15 +13,15 @@ ___ setUpMultiView( views=[ ('left',(0,1,0)), ('right',(1,0,0) ) ] ):
     ___ v __ views:   # CYCLE THROUGH EACH REQUESTED VIEW
         name = v[0]   # GRAB THE CURRENT VIEWS NAME
         col = v[1]    # GRAB THE CURRENT VIEWS COLOUR
-        rgb = tuple( [ int(v*255) ___ v __ col ] ) #CONVERT FLOAT TO 8BIT INT AND RETURN A TUPLE
+        rgb = tuple( [ in_(v*255) ___ v __ col ] ) #CONVERT FLOAT TO 8BIT INT AND RETURN A TUPLE
         hexCol = '#%02x%02x%02x' % rgb             #CONVERT INTEGER NUMBERS TO HEX CODE
         curView = '%s %s' % ( name, hexCol )       #COMBINE NAME AND HEX COLOUR TO SCRIPT SYNTAX
         newViews.a__( curView )      # COLLECT ALL REQUESTED VIEWS
     ?.r__ .knob('views').fromScript( '\n'.join( newViews ) )
 setUpMultiView()
 
-n = ?.createNode('Transform')
+n = ?.cN..('Transform')
 k = n['translate']
 k.splitView()
-k.setValue(1, 0,view='right')
-k.setValue(10, 0,view='left')
+k.sV..(1, 0,view='right')
+k.sV..(10, 0,view='left')

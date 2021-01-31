@@ -89,7 +89,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
 
             # create a tmp write node to do the evaluation in
             # if you can figure out a better way to evaluate as Nuke does, be my guest
-            tmp _ ?.createNode('Write', inpanel_F..)
+            tmp _ ?.cN..('Write', inpanel_F..)
 
             ___
                 # LOGIC (IF ANY) BEHIND THE FOLLOWING:

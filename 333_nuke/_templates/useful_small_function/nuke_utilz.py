@@ -28,7 +28,7 @@ ___ clear_selection
 
 ___ select_nodes(nodes):
     ___ node __ nodes:
-        node['selected'].setValue T..
+        node['selected'].sV.. T..
 
 ___ select_nodes_by_type(node_type):
     select_nodes(get_nodes_by_type(node_type))
@@ -65,8 +65,8 @@ ___ is_multi_view
         r_ True
 
 ___ get_root_cut
-    first_frame = int(?.toNode('root')['first_frame'].value())
-    last_frame = int(?.toNode('root')['last_frame'].value())
+    first_frame = in_(?.toNode('root')['first_frame'].value())
+    last_frame = in_(?.toNode('root')['last_frame'].value())
     framerange = '%s-%s' % (first_frame, last_frame)
     exfrange = '%s to %s' % (first_frame, last_frame)
     length = last_frame - first_frame
@@ -86,14 +86,14 @@ ___ get_value(node, knob):
     r_ node[knob].value()
 
 ___ set_value(node, knob, value):
-    node[knob].setValue(value)
+    node[knob].sV..(value)
 
 ___ align_node(node, base_x, base_y, x_buffer, y_buffer,
                x_align, y_align, x_mult, y_mult):
     x_shift = x_buffer*x_mult
     y_shift = y_buffer*y_mult
-    xpos = int(base_x+x_shift)+x_align
-    yp__ = int(base_y-y_shift)+y_align
+    xpos = in_(base_x+x_shift)+x_align
+    yp__ = in_(base_y-y_shift)+y_align
 
     position(node, xpos, yp__)
 
@@ -102,7 +102,7 @@ ___ auto_align_all_nodes
         ?.autoplace(node)
 
 ___ position(node, x, y):
-    node.setXYpos(int(x), int(y))
+    node.setXYpos(in_(x), in_(y))
 
 ___ batch_node_copypaste(basedir=__.getcwd()):
     _____ tempfile
@@ -124,7 +124,7 @@ ___ copy_root(from_nk, to_nk):
         name = ?.toNode('root')['name'].value()
         ?.toNode('root').readKnobs(knob_settings)
         ?.tprint('reseting name')
-        ?.toNode('root')['name'].setValue(name)
+        ?.toNode('root')['name'].sV..(name)
         ?.tprint(to_nk)
         ?.scriptSaveAs(to_nk, 1)
         r_ True, N..
@@ -264,28 +264,28 @@ ___ update_p2p_module(p2p_node, write_name, eye):
     __ eye __ 'lt':
         ?.Undo().begin('Make P2P Dominant Eye lt')
         with p2p_node:
-            ?.toNode('eyeSwapMaster').knob('which').setValue(0)
+            ?.toNode('eyeSwapMaster').knob('which').sV..(0)
         with ?.root
-            one_view_knob.setValue('rt')
-            write_node.knob('views').setValue('rt')
-            write_node.knob('tile_color').setValue(11401983)
-            write_node.knob('heroview').setValue('lt')
+            one_view_knob.sV..('rt')
+            write_node.knob('views').sV..('rt')
+            write_node.knob('tile_color').sV..(11401983)
+            write_node.knob('heroview').sV..('lt')
             write_node.setName('rt_p2p')
-            ?.r__ .knob('hero_view').setValue('lt')
-            dom_eye_status_knob.setValue('<font color="Crimson"><b> lt </b></font color>')
+            ?.r__ .knob('hero_view').sV..('lt')
+            dom_eye_status_knob.sV..('<font color="Crimson"><b> lt </b></font color>')
         ?.Undo().end()
     __ eye __ 'rt':
         ?.Undo().begin('Make P2P Dominant Eye rt')
         with p2p_node:
-            ?.toNode('eyeSwapMaster').knob('which').setValue(1)
+            ?.toNode('eyeSwapMaster').knob('which').sV..(1)
         with ?.root
-            one_view_knob.setValue('lt')
-            write_node.knob('views').setValue('lt')
-            write_node.knob('tile_color').setValue(4278190335)
-            write_node.knob('heroview').setValue('rt')
+            one_view_knob.sV..('lt')
+            write_node.knob('views').sV..('lt')
+            write_node.knob('tile_color').sV..(4278190335)
+            write_node.knob('heroview').sV..('rt')
             write_node.setName('lt_p2p')
-            ?.r__ .knob('hero_view').setValue('rt')
-            dom_eye_status_knob.setValue('<font color="DeepSkyBlue"><b> rt </b></font color>')
+            ?.r__ .knob('hero_view').sV..('rt')
+            dom_eye_status_knob.sV..('<font color="DeepSkyBlue"><b> rt </b></font color>')
         ?.Undo().end()
 
 ___ p2p_symlinks
@@ -326,7 +326,7 @@ ___ set_read_disparity(shot=N.., show=N..):
     ___
         disparity_path = dbinfo.get_disparity(shot, show)
         disparity = re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)
-        ?.thisNode().knob('file').setValue(disparity)
+        ?.thisNode().knob('file').sV..(disparity)
     ______
         pass
 
