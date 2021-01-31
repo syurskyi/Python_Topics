@@ -19,7 +19,7 @@ dictionary = {'Dad': 62, 'Mum': 58, 'Thomas': 34, 'Karen': 26, 'Bobby': 32, 'Rya
 print "\n\nAGES OF PEOPLE I KNOW:\n"
 
 # Loop through the dictionary.
-for person in dictionary:
+___ person __ dictionary:
     # Print person (key) is dictionary[person] (value) years old.
     print person+" is "+str(dictionary[person])+" years old."
 
@@ -27,7 +27,7 @@ for person in dictionary:
 print "\n\nPEOPLE I KNOW IN THEIR TWENTIES:\n"
 
 # Loop through the dictionary.
-for person in dictionary:
+___ person __ dictionary:
     # If the keys in the dictionary have a value of less-than 30 and more-than-or-equal-to 20, then:
     if dictionary[person] < 30 and dictionary[person] >= 20:
         # Print the keys (names of the people) who's values (ages) match the above conditions.
@@ -44,7 +44,7 @@ fifties = []
 sixties = []
 
 # Loop through the dictionary.
-for person in dictionary:
+___ person __ dictionary:
     # If the keys in the dictionary have a value of less-than 30 and more-than-or-equal-to 20, then:
     if dictionary[person] < 30 and dictionary[person] >= 20:
         # Add the names of the people (keys) who's ages (values) match the above conditions.
@@ -53,19 +53,19 @@ for person in dictionary:
 
 # RINSE AND REPEAT FOR EACH CATEGORY
 
-for person in dictionary:
+___ person __ dictionary:
     if dictionary[person] < 40 and dictionary[person] >= 30:
         thirties.append(person)
 
-for person in dictionary:
+___ person __ dictionary:
     if dictionary[person] < 50 and dictionary[person] >= 40:
         forties.append(person)
 
-for person in dictionary:
+___ person __ dictionary:
     if dictionary[person] < 60 and dictionary[person] >= 50:
         fifties.append(person)
 
-for person in dictionary:
+___ person __ dictionary:
     if dictionary[person] < 70 and dictionary[person] >= 60:
         sixties.append(person)
 

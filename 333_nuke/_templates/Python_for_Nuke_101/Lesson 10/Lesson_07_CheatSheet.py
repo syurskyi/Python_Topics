@@ -36,12 +36,12 @@ merge_nodes = []
 dictionary = {}
 
 # Find all Merge nodes in our script, and add them to the merge_nodes list
-for node in nuke.allNodes('Merge2'):
+___ node __ nuke.allNodes('Merge2'):
     merge_nodes.append(node)
 
 # Loop through the merge_nodes list, and add the name of the merge node to the dictionary as a key,
 # and the value of it's operation knob as the value
-for i in merge_nodes:
+___ i __ merge_nodes:
     dictionary[i.name()] = i.knob('operation').value()
 
 # Then print our dictionary items to check the right thing is being done.
@@ -61,10 +61,10 @@ VFX_Studios_Countries = {'ILM': ('USA', 'Canada', 'England', 'Singapore'), 'DNEG
 Country_Finder = 'England'
 
 # First, we must loop through the dictionary itself.
-for i in VFX_Studios_Countries:
+___ i __ VFX_Studios_Countries:
 
 	# Then, we loop through the values (x) of said keys (i)
-    for x in VFX_Studios_Countries[i]:
+    ___ x __ VFX_Studios_Countries[i]:
 
     	# If any value (x) in our dictionary matches the value of our Country_Finder variable, then...
         if x == Country_Finder:
@@ -82,7 +82,7 @@ n = nuke.sN..
 knob_list = []
 
 # Add selected node's knobs to a list
-for i in n.knobs():
+___ i __ n.knobs():
     knob_list.append(i)
 
 # Create the dictionary, where our selected node is the key, and the list of knobs we just created in the value

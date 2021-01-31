@@ -53,7 +53,7 @@ ___ uiUpdate
 ___ multiKnob
     n = ?.tN..
     k = ?.thisKnob()
-    other = ?.selectedNodes(n.Class())
+    other = ?.sN..(n.Class())
     val = k.value()
     ___ node __ other:
         __ no. node __ n:

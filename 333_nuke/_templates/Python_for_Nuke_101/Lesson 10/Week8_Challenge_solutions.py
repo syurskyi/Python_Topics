@@ -8,7 +8,7 @@ If you try to create two GLOBAL_MOTIONBLUR_CONTROLLER nodes, things bug out. Bef
 # Add the following code to the moblur_controller.py file, right after the moblur_controller() function is defined.
 
 	# Check if the Nuke script already has a GLOBAL_MOTIONBLUR_CONTROLLER NoOp node.
-	for x in nuke.allNodes('NoOp'):
+	___ x __ nuke.allNodes('NoOp'):
 		if x.name() == "GLOBAL_MOTIONBLUR_CONTROLLER":
 			nuke.message("You already have one of those in your script!")
 			return
@@ -39,7 +39,7 @@ nuke.addOnDestroy(deleteExpressions, nodeClass="NoOp")
 
 	def deleteExpressions():
 
-		for node in node_list:
+		___ node __ node_list:
 			if node.knob('motionblur'):
 				node['motionblur'].clearAnimated()
 				node['motionblur'].setValue(0)	
@@ -49,8 +49,8 @@ nuke.addOnDestroy(deleteExpressions, nodeClass="NoOp")
 
 		def deleteExpressions():
 
-		for node in nuke.allNodes():
-			if node in node_list:
+		___ node __ nuke.allNodes():
+			if node __ node_list:
 				if node.knob('motionblur'):
 					node['motionblur'].clearAnimated()
 					node['motionblur'].setValue(0)
@@ -103,7 +103,7 @@ against node_list, like so:
 
 	def deleteExpressions():
 
-		for node in nuke.allNodes():
+		___ node __ nuke.allNodes():
 			if node.knob('motionblur'):
 				node['motionblur'].clearAnimated()
 				node['motionblur'].setValue(0)

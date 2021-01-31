@@ -6,7 +6,7 @@ _____ n___
 n___.autoBackdrop()
 
 ___ clearNodeSelection
-  ___ n __ ?.selectedNodes
+  ___ n __ ?.sN..
     # n['selected'].setValue(False)
     n.sS.. F..
 

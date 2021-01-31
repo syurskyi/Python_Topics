@@ -16,7 +16,7 @@ nuke.thisKnob()
 # Script for a Python Script Button which randomly sets the 'tile_color' knob of all 'Grade' nodes
 import random
 
-for i in nuke.allNodes('Grade'):
+___ i __ nuke.allNodes('Grade'):
     i['tile_color'].setValue(int(random.random()*1000000000000000))
 
 
@@ -40,7 +40,7 @@ nuke.tN..('Grade5')['mix'].setVisible(True)
 
 # Script for a Python Script Button, which hides all the knobs on the node
 
-for i in nuke.thisNode().knobs():
+___ i __ nuke.thisNode().knobs():
     nuke.thisNode()[i].setVisible(F..)
 
 

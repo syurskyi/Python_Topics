@@ -9,13 +9,13 @@ car_list = ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin',
 # Automatically add selected nodes to a list.
 node_list = []
 
-for i in nuke.sN.. :
+___ i __ nuke.sN.. :
 	node_list.append(i)
 
 # Automatically add the node names of all Read nodes to a list.
 node_list = []
 
-for i in nuke.allNodes('Read'):
+___ i __ nuke.allNodes('Read'):
 	node_list.append(i.name())
 
 # Sort the items in your list alphabetically / numerically.
@@ -40,7 +40,7 @@ print node_list
 print node_list
 
 # Show all nodes currently in a list, in a more human-readable way.
-for i in node_list:
+___ i __ node_list:
 	print "- "+i
 
 
@@ -130,11 +130,11 @@ print nukescripts.goofy_title()
 # ----- NODES IN THE NODE GRAPH ---------------
 
 # Select nodes in a list ('node_list' will have to be populated for this to work).
-for i in node_list:
+___ i __ node_list:
 	i.setSelected(True)
 
 # Deselect all nodes.
-for i in nuke.allNodes()
+___ i __ nuke.allNodes()
 	i.setSelected(F..)
 
 # Copy / Paste nodes to the clipboard.

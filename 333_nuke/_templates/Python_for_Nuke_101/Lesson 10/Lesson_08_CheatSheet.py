@@ -56,7 +56,7 @@ https://learn.foundry.com/nuke/developers/63/ndkdevguide/knobs-and-handles/knobt
 nuke.sN.. .['mix'].clearAnimated()
 
 # Clear all keyframes or expressions from every knob on a selected node.
-for knob in nuke.sN.. .knobs():
+___ knob __ nuke.sN.. .knobs():
 	nuke.sN.. [knob].clearAnimated()
 
 

@@ -25,7 +25,7 @@ def shortcut_NodeCustomizer():
     knobList = []
 
     # Get a list of all the knobs in the selected Node
-    for i in selectedNode.knobs():
+    ___ i __ selectedNode.knobs():
         knobList.append(i)
         
     # Sort list alphabetically & add "None" as the first option in the list.

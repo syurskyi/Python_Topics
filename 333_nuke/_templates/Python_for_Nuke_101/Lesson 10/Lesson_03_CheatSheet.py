@@ -84,11 +84,11 @@ else:
 # ----- FOR LOOPS ---------------
 
 # Set all merge nodes in your Nuke script to have a mix of 0.5.
-for i in nuke.allNodes('Merge2'):
+___ i __ nuke.allNodes('Merge2'):
 	i['mix'].setValue(0.5)
 
 # Set the multiply knob on all Grade nodes with a label 'luminance' to 3.
-for grade_nodes in nuke.allNodes('Grade'):
+___ grade_nodes __ nuke.allNodes('Grade'):
 	if grade_nodes['label'].value() == 'luminance':
 		grade_nodes['multiply'].setValue(3)
 
@@ -100,7 +100,7 @@ for grade_nodes in nuke.allNodes('Grade'):
 
 # Print the name of a bunch of selected nodes.
 print "\n\nSELECTED NODES:\n"
-for node in nuke.sN.. :
+___ node __ nuke.sN.. :
 	print node.name()
 
 

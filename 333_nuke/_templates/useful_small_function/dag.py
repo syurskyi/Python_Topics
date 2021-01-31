@@ -322,7 +322,7 @@ ___ declone(node):
     node.sS.. T..
     args = node.writeKnobs( ?.WRITE_ALL | ?.WRITE_USER_KNOB_DEFS |
                             ?.WRITE_NON_DEFAULT_ONLY | ?.TO_SCRIPT)
-    decloned_node = ?.cN..(node.C.. , knobs=args, in.._F..)
+    decloned_node = ?.cN..(node.C.. , knobs=args, __.._F..)
     copy_inputs(node, decloned_node)
     ?.delete(node)
     parent.end()
@@ -519,7 +519,7 @@ ___ hlink_create
     unselect()
     hlinks = # list
     ___ node __ n__:
-        hlink = ?.cN..('Dot', 'hide_input 1 note_font_size 18', in.._F..)
+        hlink = ?.cN..('Dot', 'hide_input 1 note_font_size 18', __.._F..)
         hlinks.ap..(hlink)
         hlink.setInput(0, node)
         target_name = node.fullName()
@@ -657,7 +657,7 @@ ___ create_dots(side=F..):
         pos = get_pos(node)
         __ no. side:
             select([node])
-        dot = ?.cN..('Dot', in.._F..)
+        dot = ?.cN..('Dot', __.._F..)
         __ side:
             set_pos(dot, pos[0] - grid[0], pos[1])
             dot.setInput(0, node)
@@ -667,7 +667,7 @@ ___ create_dots(side=F..):
         unselect(dot)
     select(dots)
     __ no. n__:
-        dot = ?.cN..('Dot', in.._F..)
+        dot = ?.cN..('Dot', __.._F..)
 
 
 
@@ -718,7 +718,7 @@ ___ read_from_write
                 __ seq.startswith(filename_base):
                     filepath = __.pa__.j..(d_n_, seq)
                     break
-        read = ?.cN..('Read', 'file {{{0}}}'.f..(filepath), in.._F..)
+        read = ?.cN..('Read', 'file {{{0}}}'.f..(filepath), __.._F..)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
         colorspace = node['colorspace'].v.. ()

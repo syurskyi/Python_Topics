@@ -20,7 +20,7 @@ def listNavigator():
 
 	node_list = []
 
-	for i in nuke.sN.. :
+	___ i __ nuke.sN.. :
 	    node_list.append(i.name())
 
 	node_list.sort()
@@ -28,7 +28,7 @@ def listNavigator():
 	# Print all nodes in list
 	print "NODES IN LIST:\n"
 
-	for i in node_list:
+	___ i __ node_list:
 	    print "- "+i
 
 	nuke.message("There are "+str(len(node_list))+" nodes in the list.\n\nThe first node in the list is "+node_list[0]+".\nThe last node in the list is "+node_list[-1]+"\n\nSee the script editor for all nodes in list, sorted alphabetically...")

@@ -38,7 +38,7 @@ def shortcut_operationSwitcher():
 		current_op = node['operation'].value()
 
 		# Search for the current value of the 'operation' knob in our dictionary's keys
-		if current_op in merge_ops.keys():
+		if current_op __ merge_ops.keys():
 
 			# If a match is found, (e.g. the current operation is 'mask', and there is a key in our dictionary called 'mask'),
 			# get the value of the matching key from our dictionary ('stencil', in this example), and set the operation knob of
@@ -46,7 +46,7 @@ def shortcut_operationSwitcher():
 			node['operation'].setValue(merge_ops[node['operation'].value()])
 
 		# However if no match is found, do the same thing but search the keys in the dictionary & set the matching value instead.
-		elif current_op in merge_ops.values():
+		elif current_op __ merge_ops.values():
 			node['operation'].setValue(merge_ops.keys()[merge_ops.values().index(current_op)])
 
 

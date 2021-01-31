@@ -55,13 +55,13 @@ n.fullName().split('.')[:-1]
 _____ ?
 # create group
 ?.collapseToGroup F..
-?.cN..('Group', in.._F..)
+?.cN..('Group', __.._F..)
 grp = ?.n__.Group()
 
 # edit group
 grp.begin()
 ?.cN..('Tracker')
-?.cN..('ColorCorrect', in.._F..)
+?.cN..('ColorCorrect', __.._F..)
 grp.end()
  # or
 #nuke.endGroup()

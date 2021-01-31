@@ -1,6 +1,6 @@
 ?.Undo.begin('My Script')
 ___ i __ ra..(15):
-    ?.cN..('Blur', in.._F..)
+    ?.cN..('Blur', __.._F..)
 ?.Undo.end()
 
 ?.Undo.begin('My Script1')

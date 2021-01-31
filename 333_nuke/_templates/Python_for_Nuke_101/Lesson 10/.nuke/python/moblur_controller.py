@@ -20,7 +20,7 @@ import nuke
 def moblur_controller():
 
 	# Check if the Nuke script already has a GLOBAL_MOTIONBLUR_CONTROLLER NoOp node.
-	for x in nuke.allNodes('NoOp'):
+	___ x __ nuke.allNodes('NoOp'):
 		if x.name() == "GLOBAL_MOTIONBLUR_CONTROLLER":
 			nuke.message("You already have one of those in your script!")
 			return
@@ -29,7 +29,7 @@ def moblur_controller():
 	node_list = []
 
 	# Loop through all nodes, and the ones that have a motionblur or samples knob, add them to node_list.
-	for n in nuke.allNodes():
+	___ n __ nuke.allNodes():
 		if n.knob('motionblur') or n.knob('samples'):
 			node_list.append(n)
 
@@ -52,7 +52,7 @@ def moblur_controller():
 	NoOp['global_shutter'].setValue(0.5)
 
 	# Loop through all the nodes in node_list.
-	for node in node_list:
+	___ node __ node_list:
 		# If the node has a motionblur knob
 		if node.knob('motionblur'):
 			# Set an expression that links said motionblur knob to our global moblur NoOp's motionblur knob value.
@@ -95,7 +95,7 @@ def moblur_controller():
 	# all expression-links are removed and node values are set back to their defaults.
 	def deleteExpressions():
 
-		for node in nuke.allNodes():
+		___ node __ nuke.allNodes():
 			if node.knob('motionblur'):
 				node['motionblur'].clearAnimated()
 				node['motionblur'].setValue(0)				

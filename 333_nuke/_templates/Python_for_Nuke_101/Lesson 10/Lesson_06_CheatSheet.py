@@ -81,7 +81,7 @@ panel = nuke.Panel("My Panel")
 node_list = []
 
 # Put all selected nodes' names in 'node_list'.
-for i in nuke.sN.. :
+___ i __ nuke.sN.. :
     node_list.append(i.name())
 
 # Sort list alphabetically.

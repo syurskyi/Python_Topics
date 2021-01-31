@@ -46,7 +46,7 @@ nuke.tN..('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
 # Note the .setExpression() function a few lines down that's expression-linking the disable knobs.
 
 # Loop through all the nodes in node_list.
-for i in node_list:
+___ i __ node_list:
 
     # Check if the node has a disable knob.
     if nuke.tN..(i).knob('disable'):
@@ -68,7 +68,7 @@ for i in node_list:
 # Add the following snippet to the top of the clearList button's code:
 
 # Before we clear node_list, we should remove the expression links from the linked nodes.
-for i in node_list:
+___ i __ node_list:
     nuke.tN..(i).knob('disable').clearAnimated()
 
 
@@ -88,8 +88,8 @@ Bonus Points: Add a new tab containing buttons that automatically add nodes from
 # We need to add a new Python Script Button to this tab, and then we can
 # add all nodes in our Nuke script with a 'Defocus' Class to node_list with the following code:
 
-for i in nuke.allNodes("Defocus"):
-    if i.name() not in node_list:
+___ i __ nuke.allNodes("Defocus"):
+    if i.name() not __ node_list:
         node_list.append(i.name())
 
         # Don't forget to add the expression link as well!

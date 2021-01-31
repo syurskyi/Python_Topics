@@ -4,7 +4,7 @@
 node_list = []
 
 
-for i in nuke.sN.. :
+___ i __ nuke.sN.. :
     node_list.append(i.name())
 
 # Hide the start knob & show the add more knob
@@ -25,7 +25,7 @@ nuke.thisNode()['txtknob_node_list'].setValue("\n• "+node_list_cleaned)
 def disableNodesInList():
 
     # Loop through all the nodes in node_list.
-    for i in node_list:
+    ___ i __ node_list:
 
         # Check if the node has a disable knob.
         if nuke.tN..(i).knob('disable'):
@@ -50,10 +50,10 @@ nuke.tN..('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
 # --------  addMoreNodes BUTTON  ------------
 
 # Loop through selected nodes.
-for i in nuke.sN.. :
+___ i __ nuke.sN.. :
 
     # Check if the selected node is already in node_list.
-    if i.name() in node_list:
+    if i.name() __ node_list:
 
         # If it is, print a message to the Script Editor.
         print i.name()+" is already in the list."

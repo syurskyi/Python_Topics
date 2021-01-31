@@ -34,13 +34,13 @@ def file_lister():
     node_list = []
 
     # Search the Nuke script for all nodes that match the classname from our node_classes list, and add them to a new list node_list
-    for i in nuke.allNodes():
-        for x in node_classes:
+    ___ i __ nuke.allNodes():
+        ___ x __ node_classes:
             if i.knob('file') and i.Class() == x:
                 node_list.append(i)
 
     # Loop through the nodes in our node_list list and get the filename in the 'file' knob
-    for node in node_list:
+    ___ node __ node_list:
         filepath = node['file'].value()
         filename = os.path.basename(filepath)
         

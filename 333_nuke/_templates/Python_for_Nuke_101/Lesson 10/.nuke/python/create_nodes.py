@@ -55,7 +55,7 @@ def create_nodes():
 
 
     # Iterate from 0 to the number input by the user. Since the input returns a string, we have to convert it to an integer.
-    for i in ra..(0, int(number)):
+    ___ i __ ra..(0, int(number)):
         # For every iteration, we're creating a node, defined by the node Class entered by the user.
         try:
             nuke.createNode(nodeClass)

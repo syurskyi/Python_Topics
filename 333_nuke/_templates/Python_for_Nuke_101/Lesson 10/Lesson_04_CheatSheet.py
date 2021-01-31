@@ -20,7 +20,7 @@ nuke.sN.. ['label'].setValue("Mix: [value mix]")
 nuke.sN.. .setInput(0, nuke.tN..('Grade4'))
 
 # Connect the mask input of all Blur nodes to a selected node.
-for i in nuke.allNodes('Blur'):
+___ i __ nuke.allNodes('Blur'):
     i.setInput(1, nuke.selectedNode())
 
 
