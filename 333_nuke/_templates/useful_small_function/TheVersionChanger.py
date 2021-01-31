@@ -229,7 +229,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
 
                                 count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -302,7 +302,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
 
                                 count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -388,7 +388,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
 
                                 count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -470,7 +470,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
 
                                 count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -542,7 +542,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
 
                             count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -609,7 +609,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
 
                             count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -681,7 +681,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
                                 count+=1
 
-                    else:
+                    ____
 
                         print "Error: No versions found in " + node.n..  + " " + n
 
@@ -873,7 +873,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Type = ?.Enumeration_Knob("Type","Type",["All","Selected    ","Custom"])
 
 
-        self.Check = ?.PyScript_Knob('Check', 'Check')
+        self.Check = ?.PS_K..('Check', 'Check')
 
 
         self.warning = ?.Text_Knob('warning',"")
@@ -891,7 +891,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.SelectString.setEnabled F..
 
 
-        self.Select = ?.PyScript_Knob('Select', 'Select')
+        self.Select = ?.PS_K..('Select', 'Select')
 
 
         self.Select.setEnabled T..
@@ -900,19 +900,19 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Select.setFlag(?.STARTLINE)
 
 
-        self.Add = ?.PyScript_Knob('Add', 'Add')
+        self.Add = ?.PS_K..('Add', 'Add')
 
 
         self.Add.setEnabled F..
 
 
-        self.r__ = ?.PyScript_Knob('Remove', 'Remove')
+        self.r__ = ?.PS_K..('Remove', 'Remove')
 
 
         self.r__.setEnabled F..
 
 
-        self.ClearString = ?.PyScript_Knob('ClearString', 'Clear')
+        self.ClearString = ?.PS_K..('ClearString', 'Clear')
 
 
         self.ClearString.setEnabled F..
@@ -921,16 +921,16 @@ class ChangeVersion(n_s_.PythonPanel):
         self.dividerB2 = ?.Text_Knob("")
         
 
-        self.ClearSelect = ?.PyScript_Knob('ClearSelect', 'Clear\n Selection')
+        self.ClearSelect = ?.PS_K..('ClearSelect', 'Clear\n Selection')
         
         
         self.ClearSelect.setFlag(?.STARTLINE)
         
         
-        self.SaveSelect = ?.PyScript_Knob('SaveSelect', 'Save\n Selection')
+        self.SaveSelect = ?.PS_K..('SaveSelect', 'Save\n Selection')
 
         
-        self.LoadSelect = ?.PyScript_Knob('LoadSelect', 'Load\n Selection')
+        self.LoadSelect = ?.PS_K..('LoadSelect', 'Load\n Selection')
 
 
         self.warningD = ?.Text_Knob('warningD',"")
@@ -960,7 +960,7 @@ class ChangeVersion(n_s_.PythonPanel):
         self.ReplaceVal.setEnabled F..
 
 
-        self.Replace = ?.PyScript_Knob('Replace', 'Replace')
+        self.Replace = ?.PS_K..('Replace', 'Replace')
 
 
         self.Replace.setFlag(?.STARTLINE)
@@ -969,13 +969,13 @@ class ChangeVersion(n_s_.PythonPanel):
         self.Replace.setEnabled F..
 
 
-        self.Switch = ?.PyScript_Knob('Switch', 'Switch')
+        self.Switch = ?.PS_K..('Switch', 'Switch')
 
 
         self.Switch.setEnabled F..
 
 
-        self.Clear = ?.PyScript_Knob('Clear', 'Clear')
+        self.Clear = ?.PS_K..('Clear', 'Clear')
 
 
         self.Clear.setEnabled T..
@@ -996,19 +996,19 @@ class ChangeVersion(n_s_.PythonPanel):
         self.dividerD = ?.Text_Knob("")
 
 
-        self.VersionMatch = ?.PyScript_Knob("MatchVersions","Version\n Match ")
+        self.VersionMatch = ?.PS_K..("MatchVersions","Version\n Match ")
 
 
         self.VersionMatch.setFlag(?.STARTLINE)
 
 
-        self.VersionDown = ?.PyScript_Knob('VersionDown','Version\n Down')
+        self.VersionDown = ?.PS_K..('VersionDown','Version\n Down')
 
 
-        self.VersionUp = ?.PyScript_Knob('VersionUp','Version\n Up')
+        self.VersionUp = ?.PS_K..('VersionUp','Version\n Up')
 
 
-        self.VersionLast = ?.PyScript_Knob('VersionLast','Version\n Last')
+        self.VersionLast = ?.PS_K..('VersionLast','Version\n Last')
 
 
         self.warningC = ?.Text_Knob('warning',"")
@@ -1023,10 +1023,10 @@ class ChangeVersion(n_s_.PythonPanel):
         self.dividerE = ?.Text_Knob("")
 
    
-        self.Reset = ?.PyScript_Knob('Reset', 'Reset')
+        self.Reset = ?.PS_K..('Reset', 'Reset')
 
 
-        self.ClearMessage = ?.PyScript_Knob('ClearMessage', 'Clear')
+        self.ClearMessage = ?.PS_K..('ClearMessage', 'Clear')
 
 
         self.dividerF = ?.Text_Knob("")
@@ -1253,124 +1253,124 @@ clears all messages
         # add Knobs
 
 
-        self.addKnob(self.Read)
+        self.aK..(self.Read)
 
     
-        self.addKnob(self.Write)
+        self.aK..(self.Write)
 
 
-        self.addKnob(self.DeepRead)
+        self.aK..(self.DeepRead)
 
  
-        self.addKnob(self.DeepWrite)
+        self.aK..(self.DeepWrite)
 
 
-        self.addKnob(self.dividerA)
+        self.aK..(self.dividerA)
 
 
-        self.addKnob(self.file)
+        self.aK..(self.file)
 
 
-        self.addKnob(self.proxy)
+        self.aK..(self.proxy)
 
 
-        self.addKnob(self.Info)
+        self.aK..(self.Info)
         
         
-        self.addKnob(self.VersionFolder)
+        self.aK..(self.VersionFolder)
 
 
-        self.addKnob(self.dividerB)
+        self.aK..(self.dividerB)
     
 
-        self.addKnob(self.Type)
+        self.aK..(self.Type)
 
 
-        self.addKnob(self.Check)
+        self.aK..(self.Check)
 
 
-        self.addKnob(self.warning)
+        self.aK..(self.warning)
 
 
-        self.addKnob(self.SelectString)
+        self.aK..(self.SelectString)
 
 
-        self.addKnob(self.Select)
+        self.aK..(self.Select)
 
 
-        self.addKnob(self.Add)
+        self.aK..(self.Add)
 
 
-        self.addKnob(self.r__)
+        self.aK..(self.r__)
 
 
-        self.addKnob(self.ClearString)
+        self.aK..(self.ClearString)
         
         
-        self.addKnob(self.dividerB2)
+        self.aK..(self.dividerB2)
         
         
-        self.addKnob(self.ClearSelect)
+        self.aK..(self.ClearSelect)
         
         
-        self.addKnob(self.SaveSelect)
+        self.aK..(self.SaveSelect)
         
         
-        self.addKnob(self.LoadSelect)
+        self.aK..(self.LoadSelect)
 
 
-        self.addKnob(self.warningD)
+        self.aK..(self.warningD)
 
 
-        self.addKnob(self.dividerC)
+        self.aK..(self.dividerC)
 
 
-        self.addKnob(self.SelectManually)
+        self.aK..(self.SelectManually)
 
 
-        self.addKnob(self.SelectVal)
+        self.aK..(self.SelectVal)
 
 
-        self.addKnob(self.ReplaceVal)
+        self.aK..(self.ReplaceVal)
 
 
-        self.addKnob(self.Replace)
+        self.aK..(self.Replace)
 
 
-        self.addKnob(self.Switch)
+        self.aK..(self.Switch)
 
 
-        self.addKnob(self.Clear)
+        self.aK..(self.Clear)
 
 
-        self.addKnob(self.warningB)
+        self.aK..(self.warningB)
 
 
-        self.addKnob(self.dividerD)
+        self.aK..(self.dividerD)
 
 
-        self.addKnob(self.VersionMatch)
+        self.aK..(self.VersionMatch)
 
 
-        self.addKnob(self.VersionDown)
+        self.aK..(self.VersionDown)
 
 
-        self.addKnob(self.VersionUp)
+        self.aK..(self.VersionUp)
 
 
-        self.addKnob(self.VersionLast)
+        self.aK..(self.VersionLast)
 
 
-        self.addKnob(self.warningC)
+        self.aK..(self.warningC)
 
 
-        self.addKnob(self.dividerE)
+        self.aK..(self.dividerE)
 
 
-        self.addKnob(self.Reset)
+        self.aK..(self.Reset)
 
 
-        self.addKnob(self.ClearMessage)
+        self.aK..(self.ClearMessage)
 
 
 
@@ -1440,7 +1440,7 @@ clears all messages
                 self.ClearMessage.setEnabled T..
 
 
-            else:  
+            ____
             
             
                 self.Check.setEnabled F..
@@ -1693,7 +1693,7 @@ clears all messages
 
                 Warning_SaveLoad(self.warningD,self.WarningList,0)
 
-            else:
+            ____
 
                 OldSelect(self.OldSelect)
 
@@ -1708,7 +1708,7 @@ clears all messages
 
                 Warning_SaveLoad(self.warningD,self.WarningList,1)
 
-            else:
+            ____
 
                 checkMissing = False
 
@@ -1736,7 +1736,7 @@ clears all messages
 
                     Warning(self.warningD)
 
-                else:
+                ____
                     
                     ___ n __ ?.aN..
     
@@ -1790,7 +1790,7 @@ clears all messages
             
 
 
-        else:
+        ____
         
         
             self.SelectVal.setEnabled F..
@@ -1905,7 +1905,7 @@ clears all messages
 
                         Warning_changed(self.warningC,VersionMatchFolder(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
-                    else:
+                    ____
                         
                         Warning_changed(self.warningC,VersionMatchFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
@@ -1913,7 +1913,7 @@ clears all messages
 
                     VersionMatchFolder(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
-                else:
+                ____
                     
                     VersionMatchFiles(self.SelectedKnobTypes,self.SelectedNodeTypes)
 
@@ -1935,7 +1935,7 @@ clears all messages
 
                         Warning_changed(self.warningC,VersionUp(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
-                    else:
+                    ____
                         
                         Warning_changed(self.warningC,VersionUpFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
@@ -1943,7 +1943,7 @@ clears all messages
 
                     VersionUp(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
-                else:
+                ____
                     
                     VersionUpFiles(self.SelectedKnobTypes,self.SelectedNodeTypes)
 
@@ -1965,7 +1965,7 @@ clears all messages
 
                         Warning_changed(self.warningC,VersionDown(self.SelectedKnobTypes,self.SelectedNodeTypes))
                         
-                    else:
+                    ____
                         
                         Warning_changed(self.warningC,VersionDownFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
@@ -1973,7 +1973,7 @@ clears all messages
 
                     VersionDown(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
-                else:
+                ____
                     
                     VersionDownFiles(self.SelectedKnobTypes,self.SelectedNodeTypes)
 
@@ -1995,7 +1995,7 @@ clears all messages
 
                         Warning_changed(self.warningC,VersionLast(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
-                    else:
+                    ____
                         
                         Warning_changed(self.warningC,VersionLastFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
@@ -2003,7 +2003,7 @@ clears all messages
 
                     VersionLast(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
-                else:
+                ____
                     
                     VersionLastFiles(self.SelectedKnobTypes,self.SelectedNodeTypes)
 

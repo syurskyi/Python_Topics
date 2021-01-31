@@ -34,15 +34,15 @@ ___ topInput(node,input,ch_class,knob,ch_frame):
             __ input_node.C..  __ ch_class :
                 __ input_node.knob(knob):
                     r_ input_node[knob].getValueAt(ch_frame)
-            else:
+            ____
                 __ input_node.C.. __'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
                     r_ topInput(input_node,current_view,ch_class,knob,ch_frame)
-                else:
+                ____
                     r_ topInput(input_node,0,ch_class,knob,ch_frame)
-        else:
+        ____
             r_ N..
 
 # Finds node of certain class in the input pipe upstream and if there is a knob
@@ -55,15 +55,15 @@ ___ topInputKnob(node,ch_class,knob,input=0):
             __ nodeClass(input_node) __ ch_class :
                 __ input_node.knob(knob):
                     r_ input_node[knob]
-            else:
+            ____
                 __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
                     r_ topInputKnob(input_node,current_view,ch_class,knob)
-                else:
+                ____
                     r_ topInputKnob(input_node,ch_class,knob)
-        else:
+        ____
             r_ N..
 
 # Finds node of certain class in the input pipe upstream and 
@@ -75,15 +75,15 @@ ___ topInputNode(node,ch_class,input=0):
         __ input_node:
             __ nodeClass(input_node) __ ch_class :
                 r_ input_node
-            else:
+            ____
                 __ nodeClass(input_node)__'JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
                     current_view=?.views().index(?.thisView())
                     r_ topInputNode(input_node,current_view,ch_class)
-                else:
+                ____
                     r_ topInputNode(input_node,ch_class)
-        else:
+        ____
             r_ N..
 
 ##########################################################
@@ -97,13 +97,13 @@ ___ topInputNode(node,ch_class,input=0):
 ___ ensureMatrix(v.. ):
     __ (type(v.. ) __ list):
         r_ v..
-    else:
+    ____
         r_ [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
 ___ ensureFloat(v.. ):
     __ (type(v.. ) __ fl..):
         r_ v..
-    else:
+    ____
         r_ 0
 
 #########################################################
@@ -137,7 +137,7 @@ ___ nodeClass(node):
     __ node:
         __ ( 'nodeClass' __ node.knobs().keys() ) :
             r_ node['nodeClass'].v.. ()
-        else:
+        ____
             r_ node.C..
 
 
@@ -225,11 +225,11 @@ ___ getHelpUrl(node=N..):
                     url=v..
 
         # if help settings file is not defined return my site            
-        else:
+        ____
             url=mySite
 
     # if no node provided return my site
-    else:
+    ____
         url=mySite
 
     r_ url

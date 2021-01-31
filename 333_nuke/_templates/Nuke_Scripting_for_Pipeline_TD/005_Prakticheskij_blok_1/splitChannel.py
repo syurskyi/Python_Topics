@@ -39,7 +39,7 @@ ___ calculateAdditionalYOffset(additionalYOffset, nodeToAddCount, nodeYOffset, n
 			__ nodeNumber __ 2:
 				additionalYOffset = 0
 			additionalYOffset += (nodeToAddCount*40)-(nodeYOffset) - ((nodeNumber-1)*nodeYOffset)
-		else:
+		____
 			additionalYOffset += (nodeToAddCount*40)-(nodeYOffset)
 	r_ additionalYOffset
 
@@ -101,7 +101,7 @@ ___ autoComper
 			fileName = fileName.split('.')[0]
 			allLayers.update({fileName:thisNode})
 			layerType.update({fileName:'file'})
-		else:
+		____
 			___ layer __ thisLayers:
 				allLayers.update({layer:thisNode})
 				layerType.update({layer:'channel'})
@@ -171,13 +171,13 @@ ___ autoComper
 			__ layerOriginal __ layerType:
 				__ layerType[layerOriginal] __ 'file':
 					noOpNode.setInput(0, allLayers[layerOriginal])
-				else:
+				____
 					noOpNode.setInput(0, eval(layer))
-		else:
+		____
 			__ layerOriginal __ layerType:
 				__ layerType[layerOriginal] __ 'file':
 					noOpNode =  allLayers[layerOriginal]	
-				else:
+				____
 					noOpNode =  eval(layer)
 					
 		exec(layer + "noOpNode = noOpNode")
@@ -244,7 +244,7 @@ ___ autoComper
 		__ parentNode != 'START':
 			__ parentNode __ addNodesAfterComped:
 				parentNode = parentNode + "NodeAdd"
-			else:
+			____
 				parentNode = parentNode + "Node"
 			
 			exec(layer+"Node.setInput(1, " + layer + ")")

@@ -44,7 +44,7 @@ grp.end
 # get parent
 
 n = ?.aN..(group=grp)[0]
-n.name()
+n.n..
 n.fullName()
 n.fullName().split('.')[:-1]
 '.'.join(n.fullName().split('.')[:-1])

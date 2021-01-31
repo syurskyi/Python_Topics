@@ -64,7 +64,7 @@ class Panel(QWidget):
             __ self.line.intersected(w.geometry()):
                 w.set_selected T..
                 self.selected_item = w
-            else:
+            ____
                 w.set_selected F..
 
     ___ draw_line(self,painter):
@@ -148,7 +148,7 @@ class ActionLabel(QLabel):
             doc = json.load(open(pa__))
             name = doc['name']
             code = doc['code']
-        else:
+        ____
             name = "Action %s" % self.id
             code = ""
 
@@ -167,7 +167,7 @@ class ActionLabel(QLabel):
         __ is_selected:
                 self.setStyleSheet("""background:green;
                             color:black""")
-        else:
+        ____
             self.setStyleSheet("""background:red;
                             color:black""")
 ___ start

@@ -56,7 +56,7 @@ ___ hide_panel
     # Always hide control panels on node creation
     ?.tN..().showControlPanel()
     ?.tN..().hideControlPanel()
-?.addOnUserCreate(hide_panel)
+?.aOUC..(hide_panel)
 
 
 ___ open_panels(nodes=N..):
@@ -447,7 +447,7 @@ ___ save_dag_pos(preset):
     ____
         viewer = viewer.node()
     __ 'dagpos' no. __ viewer.knobs
-        viewer.addKnob(?.String_Knob('dagpos', 'dagpos', '0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0'))
+        viewer.aK..(?.String_Knob('dagpos', 'dagpos', '0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0'))
         dagpos_knob = viewer['dagpos']
         dagpos_knob.setFlag(?.STARTLINE)
         dagpos_knob.setEnabled F..
@@ -488,7 +488,7 @@ ___ set_hlink_knobs(nodes):
     # Add knob to track what node this node is connected to
     ___ node __ hidden_inputs_in_selection(nodes):
         __ no. 'hlink_node' __ node.knobs
-            node.addKnob(?.String_Knob('hlink_node', 'hlink_node'))
+            node.aK..(?.String_Knob('hlink_node', 'hlink_node'))
         input_node = node.input(0)
         __ input_node:
             node['hlink_node'].sV..(input_node.fullName())
@@ -609,8 +609,8 @@ ___ create_pointer
 
         # create anchor node
         anchor = ?.cN..('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.f..(randstr))
-        anchor.addKnob(?.Tab_Knob('anchor_tab', 'anchor'))
-        anchor.addKnob(?.String_Knob('title', 'title'))
+        anchor.aK..(?.T_K_('anchor_tab', 'anchor'))
+        anchor.aK..(?.String_Knob('title', 'title'))
         anchor['title'].sV..(pointer_title)
         anchor['tile_color'].sV..(topnode_color)
         anchor.setInput(0, target)
@@ -618,14 +618,14 @@ ___ create_pointer
 
         # create pointer node
         pointer = ?.cN..('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.f..(randstr))
-        pointer.addKnob(?.Tab_Knob('pointer_tab', 'pointer'))
-        pointer.addKnob(?.String_Knob('target', 'target'))
+        pointer.aK..(?.T_K_('pointer_tab', 'pointer'))
+        pointer.aK..(?.String_Knob('target', 'target'))
         pointer['target'].sV..(anchor.fullName())
         pointer['label'].sV..('<font size=7> [if {[exists input.title]} {return [value input.title]}]')
-        pointer.addKnob(?.PyScript_Knob('connect_to_target', 'connect'))
+        pointer.aK..(?.PS_K..('connect_to_target', 'connect'))
         pointer['connect_to_target'].setFlag(?.STARTLINE)
-        pointer.addKnob(?.PyScript_Knob('zoom_to_target', 'zoom'))
-        pointer.addKnob(?.PyScript_Knob('set_target', 'set target'))
+        pointer.aK..(?.PS_K..('zoom_to_target', 'zoom'))
+        pointer.aK..(?.PS_K..('set_target', 'set target'))
         pointer['connect_to_target'].sV..('''n = nuke.thisNode()
 t = n['target'].getValue()
 if nuke.exists(t):

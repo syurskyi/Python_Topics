@@ -67,7 +67,7 @@ ___ Merge(n, cycle, forwards):
 
 				# set new value
 				nextOp = cycle[index]
-			else:
+			____
 
 				# reset to first in cycle
 				nextOp = cycle[0]
@@ -77,7 +77,7 @@ ___ Merge(n, cycle, forwards):
 
 
 		# if not, simply scroll through all options
-		else:
+		____
 
 			# current operation
 			currOp = k.gV..
@@ -91,14 +91,14 @@ ___ Merge(n, cycle, forwards):
 				__ in_(currOp) + 1 __ countOp:
 					k.sV..(0)
 
-				else:
+				____
 					k.sV..(in_(currOp) + 1)
 
-			else:
+			____
 
 				__ currOp __ 0:
 					k.sV..(countOp - 1)
-				else:
+				____
 					k.sV..(in_(currOp) - 1)
 
 	______
@@ -128,7 +128,7 @@ ___ Switch(n, forwards):
 			__ maxWhich < newWhich:
 				newWhich = 0.0
 
-		else:
+		____
 
 			newWhich = currWhich - 1.0
 			__ newWhich < 0.0:
@@ -189,14 +189,14 @@ ___ Shuffle(n, forwards):
 
 			__ le.(listL) __ i + 1:
 				newL = listL[0]
-			else:
+			____
 				newL = listL[i + 1]
 
-		else:
+		____
 
 			__ i __ 0:
 				newL = listL[le.(listL) - 1]
-			else:
+			____
 				newL = listL[i - 1]
 
 
@@ -264,14 +264,14 @@ ___ anyChannelKnob(n, knobName, forwards):
 
 			__ le.(listL) __ i + 1:
 				newL = listL[0]
-			else:
+			____
 				newL = listL[i + 1]
 
-		else:
+		____
 
 			__ i __ 0:
 				newL = listL[le.(listL) - 1]
-			else:
+			____
 				newL = listL[i - 1]
 
 
@@ -306,20 +306,20 @@ ___ anyListKnob(n, knobName, forwards):
 			__ in_(currOp) + 1 __ countOp:
 				k.sV..(0)
 
-			else:
+			____
 				# go forward one item
 				k.sV..(in_(currOp + 1))
 
 
 		# scroll backwards
-		else:
+		____
 
 			# if at first item, go to end
 			__ currOp __ 0:
 				k.sV..(countOp - 1)
 
 			# go back one item
-			else:
+			____
 				k.sV..(in_(currOp - 1))
 
 	______
@@ -347,7 +347,7 @@ ___ giveLabel(n, knobName):
 			# add original value and new line before new label text if there was a label already, else no new line
 			__ currLabel __ '':
 				label.sV..(labelText)
-			else:
+			____
 				label.sV..(currLabel + '\n' + labelText)
 
 

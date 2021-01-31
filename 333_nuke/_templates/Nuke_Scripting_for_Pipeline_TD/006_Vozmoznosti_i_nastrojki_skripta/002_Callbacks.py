@@ -1,7 +1,7 @@
 _____ ?
 
 ___ my_cb
-    print ?.thisNode().name()
+    print ?.tN.. .n..
 
 ?.addOnCreated(my_cb, nodeClass='Transform')
 ?.removeOnCreated(my_cb, nodeClass='Transform')
@@ -13,10 +13,10 @@ ___ my_cb2
 ?.removeKnobChanged(my_cb2)
 
 ___ uiUpdate
-    print ?.thisNode().name()
+    print ?.tN.. .n..
     print ?.thisClass()
     print ?.thisView()
-    print ?.thisParent().name()
+    print ?.thisParent().n..
 
 ?.addUpdateUI(uiUpdate)
 ?.removeUpdateUI(uiUpdate)
@@ -24,7 +24,7 @@ ___ uiUpdate
 ########################################################################################################################
 
 ___ myCallback2
-    print ?.thisNode().name()
+    print ?.tN.. .n..
 
 
 ?.addOnCreate(myCallback2, nodeClass='Transform')
@@ -32,7 +32,7 @@ ___ myCallback2
 
 
 ___ printKnob
-    print ?.thisKnob().name()
+    print ?.thisKnob().n..
 
 
 ?.addKnobChanged(printKnob)
@@ -40,10 +40,10 @@ ___ printKnob
 
 
 ___ uiUpdate
-    print ?.thisNode().name()
+    print ?.tN.. .n..
     print ?.thisClass()
     print ?.thisView()
-    print ?.thisParent().name()
+    print ?.thisParent().n..
 
 
 ?.addUpdateUI(uiUpdate)
@@ -51,13 +51,13 @@ ___ uiUpdate
 
 
 ___ multiKnob
-    n = ?.thisNode()
+    n = ?.tN..
     k = ?.thisKnob()
     other = ?.selectedNodes(n.Class())
     val = k.value()
     ___ node __ other:
         __ no. node __ n:
-            node[k.name()].sV..(val)
+            node[k.n..].sV..(val)
 
 
 ?.addKnobChanged(multiKnob)

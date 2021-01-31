@@ -45,7 +45,7 @@ _____ ?, n_s_
 #Choose between PySide and PySide2 based on Nuke version
 __ ?.NUKE_VERSION_MAJOR < 11:
     from PySide _____ QtCore, QtGui, QtGui as QtWidgets
-else:
+____
     from PySide2 _____ QtGui, QtCore, QtWidgets
 
 _____ __
@@ -73,7 +73,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
             label = '   %s   '%label.upper()
             node = ?.cN..(nodeClass, inpanel = False)
 
-        else:
+        ____
             node = n_s_.autoBackdrop()
 
         fontSize = preferencesNode.knob('backdropper%sFontSize'%nodeClass).v.. ()
@@ -87,7 +87,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
             #colorize
             colorizeNode(node)
         
-        else:
+        ____
             #open properties
             ?.show(node)
 
@@ -214,7 +214,7 @@ ___ setMenuItem(itemName):
         menuItem = otherMenu.aC..(itemName, function, icon = itemName + '.png')
 
     #replace
-    else:
+    ____
         #remove if applicable
         __ otherMenu.findItem(customItemName):
             otherMenu.removeItem(customItemName)
@@ -239,7 +239,7 @@ ___ addKnobToPreferences(knobObject, tooltip = N..):
         __ tooltip != N..:
             knobObject.setTooltip(tooltip)
 
-        preferencesNode.addKnob(knobObject)
+        preferencesNode.aK..(knobObject)
         savePreferencesToFile()
 
         r_ preferencesNode.knob(knobObject.n..
@@ -405,7 +405,7 @@ ___ addPreferences
     '''
 
     # tab
-    addKnobToPreferences(?.Tab_Knob('backdropperLabel','W_backdropper'))
+    addKnobToPreferences(?.T_K_('backdropperLabel','W_backdropper'))
 
     # version knob to check whether the backdropper was updated
     knob = ?.String_Knob('backdropperVersion','version')
@@ -473,7 +473,7 @@ ___ addPreferences
 
         # change shortcut
 
-        knob = ?.PyScript_Knob('backdropper%sSetShortcut'%nodeClass,'set','W_backdropper.setMenuItem("%s")'%nodeClass)
+        knob = ?.PS_K..('backdropper%sSetShortcut'%nodeClass,'set','W_backdropper.setMenuItem("%s")'%nodeClass)
         tooltip = 'Apply shortcut.'
         addKnobToPreferences(knob, tooltip)
 
@@ -492,22 +492,22 @@ ___ addPreferences
     addKnobToPreferences(knob, tooltip)
 
     # set slot count
-    knob = ?.PyScript_Knob('backdropperUpdateSlotCount','set', 'W_backdropper.updateSlotCount()')
+    knob = ?.PS_K..('backdropperUpdateSlotCount','set', 'W_backdropper.updateSlotCount()')
     tooltip = "Reset all the W_backdropper related knobs to their default values."
     addKnobToPreferences(knob, tooltip)
 
     # _____ preferences button knob
-    knob = ?.PyScript_Knob('backdropperImportExportPreferences',' _____/export ','W_backdropper.importExportPanel()')
+    knob = ?.PS_K..('backdropperImportExportPreferences',' _____/export ','W_backdropper.importExportPanel()')
     tooltip = "Reset all the W_backdropper related knobs to their default values."
     addKnobToPreferences(knob, tooltip)
 
     # delete preferences button knob
-    knob = ?.PyScript_Knob('backdropperResetPreferences','clear','W_backdropper.resetPreferences()')
+    knob = ?.PS_K..('backdropperResetPreferences','clear','W_backdropper.resetPreferences()')
     tooltip = "Reset all the W_backdropper related knobs to their default values."
     addKnobToPreferences(knob, tooltip)
 
     # delete preferences button knob
-    knob = ?.PyScript_Knob('backdropperDeletePreferences',' uninstall ','W_backdropper.deletePreferences(True)')
+    knob = ?.PS_K..('backdropperDeletePreferences',' uninstall ','W_backdropper.deletePreferences(True)')
     tooltip = "Delete all the W_backdropper related knobs from the Preferences Panel. After clicking this button the Preferences Panel should be closed by clicking the 'cancel' button."
     addKnobToPreferences(knob, tooltip)
 
@@ -583,7 +583,7 @@ class ImportExportWidget(QtWidgets.QWidget):
         ___ layout __ [modeLayout, pathLayout, LineWidget(), buttonLayout]:
             __ isinstance(layout, QtWidgets.QHBoxLayout):
                 mainLayout.addLayout(layout)
-            else:
+            ____
                 mainLayout.addWidget(layout)
 
         mainLayout.setSizeConstraint( QtWidgets.QLayout.SetFixedSize )
@@ -648,7 +648,7 @@ class ImportExportWidget(QtWidgets.QWidget):
             with open(location, 'w') as file:
                 file.write(settings)
 
-        else:
+        ____
             QtWidgets.QApplication.clipboard().setText(settings)
             location = 'clipboard'
 
@@ -672,7 +672,7 @@ class ImportExportWidget(QtWidgets.QWidget):
             with open(location) as file:
                 settings = file.read()
 
-        else:
+        ____
             settings = QtWidgets.QApplication.clipboard().text()
 
         #remove header and split in lines
@@ -755,7 +755,7 @@ ___ colorizeNodes(all = False):
                 __ no. panel.v.. (nodeClass):
                     nodeClasses.r__(nodeClass)
 
-    else:
+    ____
         selection = ?.sN..
 
     #selection

@@ -22,4 +22,4 @@ n['disable'].setExpression('[python nuke.frame()>30]')
 n1 = ?.toNode('ColorCorrect2')
 n2 = ?.toNode('ColorCorrect1')
 
-n1['saturation'].setExpression('.'.join([n2.name(), 'saturation']))
+n1['saturation'].setExpression('.'.join([n2.n.., 'saturation']))

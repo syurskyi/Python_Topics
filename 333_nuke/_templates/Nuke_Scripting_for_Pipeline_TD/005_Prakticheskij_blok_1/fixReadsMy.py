@@ -43,13 +43,13 @@ ___ fixReadError
                                 i['file'].sV..(reformatPath +'/'+ oldname)
 
                     __ i.error() __ False:
-                        missingRead = i.name() + " - " + oldname + " - " + " Found Successfully!" + "\n" + missingRead
-                    else:
-                        missingRead = i.name() + " - " + oldname + " - " + " Not Fpund!" + "\n" + missingRead
-                else:
+                        missingRead = i.n.. + " - " + oldname + " - " + " Found Successfully!" + "\n" + missingRead
+                    ____
+                        missingRead = i.n.. + " - " + oldname + " - " + " Not Fpund!" + "\n" + missingRead
+                ____
                     __ missingRead __ "":
                         missingRead = "You don't have any readNode with error!."
-    else:
+    ____
         missingRead = "No folder was selected!"
     ?.m__(missingRead)
 

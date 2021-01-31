@@ -19,7 +19,7 @@ ___ check_selected
     nodes = ?.selectedNodes()
     __ le.(nodes) > 0:
         r_ T.., nodes[0]
-    else:
+    ____
         r_ False, N..
 
 ___ clear_selection
@@ -149,7 +149,7 @@ ___ find_upstream(node, class_list):
     '''
     __ node and node.C..  __ class_list:
         r_ node
-    else:
+    ____
         ___ n __ node.dependencies(?.INPUTS | ?.HIDDEN_INPUTS):
             node = find_upstream(n, class_list)
             __ node:
@@ -214,10 +214,10 @@ ___ find_downstream(node, node_class, name_pattern=N..):
         __ type(name_pattern) __ str or type(name_pattern) __ type(re.compile('')):
             __ re.compile(name_pattern).match(node.name()):
                 r_ node
-            else:
+            ____
                 r_ N..
         r_ node
-    else:
+    ____
         ___ n __ node.dependent(?.INPUTS | ?.HIDDEN_INPUTS):
             node = find_downstream(n, node_class, name_pattern=name_pattern)
             __ node:
@@ -289,7 +289,7 @@ ___ update_p2p_module(p2p_node, write_name, eye):
         ?.Undo().end()
 
 ___ p2p_symlinks
-    node = ?.thisNode()
+    node = ?.tN..
     dest_path = node.knob('file').evaluate()
     source_path = ?.tcl("value [topnode %s].file" % node.name())
     _____ __
@@ -326,7 +326,7 @@ ___ set_read_disparity(shot=N.., show=N..):
     ___
         disparity_path = dbinfo.get_disparity(shot, show)
         disparity = re.sub(".[0-9]*-[0-9]*.", ".%d.", disparity_path)
-        ?.thisNode().knob('file').sV..(disparity)
+        ?.tN.. .knob('file').sV..(disparity)
     ______
         pass
 
@@ -347,6 +347,6 @@ ___ path_wildcard(input_string):
 
     __ glob_results:
         r_ __.pa__.join(glob_results[0], __.pa__.b__(evaluated_string))
-    else:
+    ____
         r_ evaluated_string
 

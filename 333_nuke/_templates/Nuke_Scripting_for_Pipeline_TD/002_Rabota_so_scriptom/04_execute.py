@@ -15,9 +15,9 @@ ___ incNamePath(pa__):
             __ nzero > le.(str(nameNum)):
                 nameNum = str(nameNum).zfill(nzero)
             nName = '_'.join(splt[:-1]) + '_' + nameNum
-        else:
+        ____
             nName = '_'.join(splt) + '_' + nameNum
-    else:
+    ____
         nName = name + '_' + str(nameNum)
     result = '/'.join([dir,nName+ext])
     r_ result

@@ -7,7 +7,7 @@ root['fps'].sV..(30)
 root['first_frame'].sV..(10)
 root['last_frame'].sV..(200)
 
-root.name()
+root.n..
 
 root.modified()
 

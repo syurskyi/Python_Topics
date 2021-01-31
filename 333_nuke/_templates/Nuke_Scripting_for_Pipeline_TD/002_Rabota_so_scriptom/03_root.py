@@ -5,9 +5,9 @@ root = ?.toNode('root')
 
 node = ?.r__
 ___ k __ node.allKnobs
-    print k.name()
+    print k.n..
     
 node.addView('asd')
 
-node.name() # 'Root' = not saved
+node.n.. # 'Root' = not saved
 node.modified()

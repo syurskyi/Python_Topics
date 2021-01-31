@@ -69,20 +69,20 @@ class CreateToolsetsPanel(n_s_.PP..):
     self.menuPath = ?.String_Knob('itemName', 'Menu item:')
     self.menuPath.setFlag(0x00001000)  
     self.menuPath.setTooltip("ToolSet name. Use the '/' character to create a new submenu for this ToolSet, eg to create a ToolSet named 'Basic3D' and place it in a new submenu '3D', type '3D/Basic3D'. Once created the 3D menu will appear in the ToolSet menu.")
-    self.okButton = ?.PyScript_Knob (self.nameOkButton.lower(), self.nameOkButton)
+    self.okButton = ?.PS_K.. (self.nameOkButton.lower(), self.nameOkButton)
     #self.okButton.setToolTip("Create a ToolSet from the currently selected nodes with the given name")
     self.okButton.setFlag(0x00001000)
-    self.cancelButton = ?.PyScript_Knob ('cancel', 'Cancel')
+    self.cancelButton = ?.PS_K.. ('cancel', 'Cancel')
     self.space = ?.Text_Knob("space", "", "")
     self.infoText = ?.Text_Knob('infoText', '<span style="color:orange">/ - create submenus,</span>',  '<span style="color:orange">example: newMenu/myNewToolSet</span>')
 
     # ADD KNOBS
-    self.addKnob(self.menuItemChoice)
-    self.addKnob(self.menuPath)
-    self.addKnob(self.okButton)
-    self.addKnob(self.cancelButton)
-    self.addKnob(self.space)
-    self.addKnob(self.infoText)
+    self.aK..(self.menuItemChoice)
+    self.aK..(self.menuPath)
+    self.aK..(self.okButton)
+    self.aK..(self.cancelButton)
+    self.aK..(self.space)
+    self.aK..(self.infoText)
 
     __ rename __ T..:
       toolSetPath = fullFilePath.replace(SHARED_TOOLSET_PATH + "/", '') 
