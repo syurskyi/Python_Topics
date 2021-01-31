@@ -238,7 +238,7 @@ c_ ScriptInfo(NodeStep):
                 path_knob _ node.knob(knob_name)
                 __ no. path_knob:
                     c___
-                pa__ _ path_knob.evaluate() or "---"
+                pa__ _ path_knob.e.. or "---"
                 footage.ap..((node.n.. , pa__))
 
         r_ tuple(footage)

@@ -6,10 +6,10 @@ _____ ?
 ?.selectedNodes('ColorCorrect')
 
 
-nodes = ?.aN..()
-print[x ___ x __ nodes __ x.C.. __'Transform']
+n__ = ?.aN..()
+print[x ___ x __ n__ __ x.C.. __'Transform']
 
-?.toNode('ColorCorrect1')
+?.tN..('ColorCorrect1')
 
 ?.activeViewer()
 

@@ -66,9 +66,9 @@ panel.addBooleanCheckBox("Label", True)
 # ----- USING EXISTING DATA TO POPULATE KNOBS ---------------
 
 # Set the value of a selected node's mix knob with a pop-up, using the existing value as the default.
-oldValue = nuke.selectedNode()['mix'].value()
+oldValue = nuke.sN.. ['mix'].value()
 newValue = nuke.getInput('Mix Value', str(oldValue))
-nuke.selectedNode()['mix'].setValue(float(newValue))
+nuke.sN.. ['mix'].setValue(float(newValue))
 
 
 
@@ -81,7 +81,7 @@ panel = nuke.Panel("My Panel")
 node_list = []
 
 # Put all selected nodes' names in 'node_list'.
-for i in nuke.selectedNodes():
+for i in nuke.sN.. :
     node_list.append(i.name())
 
 # Sort list alphabetically.

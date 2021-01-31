@@ -119,7 +119,7 @@ Add functionality to our shortcut_operationSwitcher() function to create an “I
 # An Invert node will be created, and then the function will exit.
 
 try:
-    node = nuke.selectedNode()
+    node = nuke.sN..
 except:
     nuke.createNode('Invert')
     return

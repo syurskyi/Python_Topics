@@ -4,12 +4,12 @@
 node_list = []
 
 
-for i in nuke.selectedNodes():
+for i in nuke.sN.. :
     node_list.append(i.name())
 
 # Hide the start knob & show the add more knob
 nuke.thisNode().knob('addMoreNodes').setVisible(True)
-nuke.thisNode().knob('addNodes').setVisible(False)
+nuke.thisNode().knob('addNodes').setVisible(F..)
 
 print node_list
 
@@ -28,10 +28,10 @@ def disableNodesInList():
     for i in node_list:
 
         # Check if the node has a disable knob.
-        if nuke.toNode(i).knob('disable'):
+        if nuke.tN..(i).knob('disable'):
 
             # If it does, set its disable knob to the value of NODE_DISABLER's disable knob
-            nuke.toNode(i).knob('disable').setValue(nuke.thisNode().knob('disable').value())
+            nuke.tN..(i).knob('disable').setValue(nuke.thisNode().knob('disable').value())
 
         # If the node does NOT have a disable knob, print an error message in the Script Editor.
         else:
@@ -39,7 +39,7 @@ def disableNodesInList():
 
 
 # Add the knobChanged callback to NODE_DISABLER.
-nuke.toNode('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
+nuke.tN..('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
 
 
 
@@ -50,7 +50,7 @@ nuke.toNode('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()'
 # --------  addMoreNodes BUTTON  ------------
 
 # Loop through selected nodes.
-for i in nuke.selectedNodes():
+for i in nuke.sN.. :
 
     # Check if the selected node is already in node_list.
     if i.name() in node_list:
@@ -84,7 +84,7 @@ node_list = []
 
 # Reset button visibility
 nuke.thisNode().knob('addNodes').setVisible(True)
-nuke.thisNode().knob('addMoreNodes').setVisible(False)
+nuke.thisNode().knob('addMoreNodes').setVisible(F..)
 
 # Reset the NODE LIST: text knob to be "None"
 nuke.thisNode()['txtknob_node_list'].setValue("None")

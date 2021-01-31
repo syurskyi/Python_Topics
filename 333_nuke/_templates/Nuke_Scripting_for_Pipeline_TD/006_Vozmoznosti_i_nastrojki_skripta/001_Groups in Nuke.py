@@ -6,7 +6,7 @@ _____ ?
 
 _____ ?
 
-grp = ?.nodes.Group()
+grp = ?.n__.Group()
 grp.begin()
 ?.cN..('Tracker')
 ?.cN..('ColorCorrect')
@@ -15,10 +15,10 @@ grp.end()
 # nuke.root().begin()
 
 with grp:
-    ?.nodes.Input()
-    ?.nodes.Output()
+    ?.n__.Input()
+    ?.n__.Output()
 
-?.nodes.ColorCorrect()
+?.n__.ColorCorrect()
 
 # get nodes
 
@@ -38,7 +38,7 @@ grp.end
 # nuke.selectedNodes() # need to select group
 
 grp.begin()
-?.selectedNodes()  # need to select group
+?.sN..   # need to select group
 grp.end
 
 # get parent
@@ -48,20 +48,20 @@ n.n..
 n.fullName()
 n.fullName().split('.')[:-1]
 '.'.j..(n.fullName().split('.')[:-1])
-?.toNode('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
+?.tN..('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
 
 ########################################################################################################################
 
 _____ ?
 # create group
 ?.collapseToGroup F..
-?.cN..('Group', inpanel=False)
-grp = ?.nodes.Group()
+?.cN..('Group', in.._F..)
+grp = ?.n__.Group()
 
 # edit group
 grp.begin()
 ?.cN..('Tracker')
-?.cN..('ColorCorrect', inpanel=False)
+?.cN..('ColorCorrect', in.._F..)
 grp.end()
  # or
 #nuke.endGroup()
@@ -69,9 +69,9 @@ grp.end()
 #nuke.root().begin()
 
 with grp:
-    ?.nodes.Input()
-    ?.nodes.Output()
-?.nodes.ColorCorrect()
+    ?.n__.Input()
+    ?.n__.Output()
+?.n__.ColorCorrect()
 
 # get nodes
 grp.output()
@@ -83,14 +83,14 @@ grp.end()
 ?.aN..(group=grp)
 
 grp.begin()
-?.selectedNodes()
+?.sN..
 grp.end()
 
 # get parent
 
 n = ?.aN..(group=grp)[0]
 n = ?.aN..()[0]
-?.toNode('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
+?.tN..('.'.j..(n.fullName().split('.')[:-1])) or ?.r__
 
 
 

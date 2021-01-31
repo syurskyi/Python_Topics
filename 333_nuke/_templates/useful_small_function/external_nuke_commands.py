@@ -41,7 +41,7 @@ ___ nuke_constant(input=N..):
 
     ______ ?
 
-    const = ?.nodes.Constant()
+    const = ?.n__.Constant()
     const['color'].sV..(input)
     r_ 'lime', 'Constant node created'
 

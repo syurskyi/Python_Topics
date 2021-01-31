@@ -1710,9 +1710,9 @@ clears all messages
 
             ____
 
-                checkMissing = False
+                checkMissing = F..
 
-                check = False
+                check = F..
                 
                 ___ i __ OldSelect1:
 

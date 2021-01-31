@@ -32,21 +32,21 @@ webbrowser.open('https://benmcewan.com')
 # ----- KNOB VISIBILITY --------------------
 
 # Hide the mix knob on a node called 'Grade5'
-nuke.toNode('Grade5')['mix'].setVisible(False)
+nuke.tN..('Grade5')['mix'].setVisible(F..)
 
 # ...and show it again
-nuke.toNode('Grade5')['mix'].setVisible(True)
+nuke.tN..('Grade5')['mix'].setVisible(True)
 
 
 # Script for a Python Script Button, which hides all the knobs on the node
 
 for i in nuke.thisNode().knobs():
-    nuke.thisNode()[i].setVisible(False)
+    nuke.thisNode()[i].setVisible(F..)
 
 
 # Remove knobChanged from a node
 # To remove it, we actually have to add a blank value to the node's hidden knobChanged knob
-nuke.toNode('NODE_DISABLER').knob('knobChanged').setValue("")
+nuke.tN..('NODE_DISABLER').knob('knobChanged').setValue("")
 
 
 

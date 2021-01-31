@@ -78,7 +78,7 @@ for i in VFX_Studios_Countries:
 
 
 # ----- CREATING A DICTIONARY WHERE THE KEY IS A NODE, AND IT'S KNOBS ARE VALUES ------------
-n = nuke.selectedNode()
+n = nuke.sN..
 knob_list = []
 
 # Add selected node's knobs to a list

@@ -57,10 +57,10 @@ ___ nodesByClass(nodes_N.., regex_N.., force_match_T..):
     """
     
     # check for nodes, use selected Nodes if no arg
-    __ no. nodes:
-        nodes _ ?.sN..
+    __ no. n__:
+        n__ _ ?.sN..
 
-    ___ i __ nodes:
+    ___ i __ n__:
         __ byClass(i, regex, force_match):
             results.ap..(i)
     
@@ -115,12 +115,12 @@ ___ nodesByName(nodes_N.., regex_N.., force_match_T..):
     """
     
     # check for nodes, use selected Nodes if no arg
-    __ no. nodes:
-        nodes _ ?.sN..
+    __ no. n__:
+        n__ _ ?.sN..
 
     # loop all Nodes in nodes and match by Name
     results _ # list
-    ___ i __ nodes:
+    ___ i __ n__:
         __ byName(i, regex, force_match):
             results.ap..(i)
     r_ results

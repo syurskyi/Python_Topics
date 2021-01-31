@@ -37,7 +37,7 @@ Change NODE_DISABLER to work with expression-links, rather than knobChanged.
 """
 
 # Remove the following knobChanged code from the addNodes button:
-nuke.toNode('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
+nuke.tN..('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()')
 
 
 
@@ -49,10 +49,10 @@ nuke.toNode('NODE_DISABLER').knob('knobChanged').setValue('disableNodesInList()'
 for i in node_list:
 
     # Check if the node has a disable knob.
-    if nuke.toNode(i).knob('disable'):
+    if nuke.tN..(i).knob('disable'):
 
         # If it does, set an expression to link it to NODE_DISABLER's disable knob.
-        nuke.toNode(i).knob('disable').setExpression('NODE_DISABLER.disable')
+        nuke.tN..(i).knob('disable').sE..('NODE_DISABLER.disable')
 
     # If the node does NOT have a disable knob, print an error message in the Script Editor.
     else:
@@ -69,7 +69,7 @@ for i in node_list:
 
 # Before we clear node_list, we should remove the expression links from the linked nodes.
 for i in node_list:
-    nuke.toNode(i).knob('disable').clearAnimated()
+    nuke.tN..(i).knob('disable').clearAnimated()
 
 
 
@@ -93,7 +93,7 @@ for i in nuke.allNodes("Defocus"):
         node_list.append(i.name())
 
         # Don't forget to add the expression link as well!
-        i.knob('disable').setExpression('NODE_DISABLER.disable')
+        i.knob('disable').sE..('NODE_DISABLER.disable')
 
 print node_list
 
@@ -112,7 +112,7 @@ print node_list
 # This means we should disable the Defocus button by default, by running the following in the Script editor:
 
 # NOTE: addDefocus is what I've named the new button...
-nuke.toNode('NODE_DISABLER').knob('addDefocus').setEnabled(False)
+nuke.tN..('NODE_DISABLER').knob('addDefocus').setEnabled(F..)
 
 
 # We also need our addNodes button to re-enable said button, so let's add the following code underneath

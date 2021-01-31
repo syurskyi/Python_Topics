@@ -19,13 +19,13 @@ nuke.createNode('Tracker')
 # ----- SELECTING NODES ---------------
 
 # Return a single selected node.
-nuke.selectedNode()
+nuke.sN..
 
 # Return a list of selected nodes (multiple).
-nuke.selectedNodes()
+nuke.sN..
 
 # Return a specific node ('Merge5' is the name of the node).
-nuke.toNode('Merge5')
+nuke.tN..('Merge5')
 
 # Return all nodes in nuke script.
 nuke.allNodes()
@@ -40,10 +40,10 @@ nuke.allNodes('Grade')
 # ----- SETTING KNOB VALUES ---------------
 
 # Set the selected node's mix knob to a value of 0.5.
-nuke.selectedNode()['mix'].setValue(0.5)
+nuke.sN.. ['mix'].setValue(0.5)
 
 # Set a specific Merge node's 'operation' knob to 'plus'.
-nuke.toNode('Merge5')['operation'].setValue('plus')
+nuke.tN..('Merge5')['operation'].setValue('plus')
 
 # Note, if the value is an integer (a whole number) or a float (a number with decimal places), you write the number
 # Whereas if the value is a string (text), we wrap it in quotation marks.
@@ -72,10 +72,10 @@ mergeMenu.addCommand('Stencil', 'nuke.createNode("Merge2", "operation stencil bb
 
 # If the selected node is disabled, change it's label.
 # If it isn't, print a message in the Script Editor.
-if nuke.selectedNode()['disable'].value() == 1:
-	nuke.selectedNode()['label'].setValue("node is disabled")
+if nuke.sN.. ['disable'].value() == 1:
+	nuke.sN.. ['label'].setValue("node is disabled")
 else:
-	print nuke.selectedNode().name()+" is enabled."
+	print nuke.sN.. .name()+" is enabled."
 
 
 
@@ -100,7 +100,7 @@ for grade_nodes in nuke.allNodes('Grade'):
 
 # Print the name of a bunch of selected nodes.
 print "\n\nSELECTED NODES:\n"
-for node in nuke.selectedNodes():
+for node in nuke.sN.. :
 	print node.name()
 
 
@@ -115,7 +115,7 @@ print var1+var2+var3+var4+var5
 
 
 # Print the value of a knob in a sentence.
-print "The current value of "+nuke.selectedNode().name()+"'s mix knob is "+str(nuke.selectedNode()['mix'].value())+"."
+print "The current value of "+nuke.sN.. .name()+"'s mix knob is "+str(nuke.sN.. ['mix'].value())+"."
 
 
 

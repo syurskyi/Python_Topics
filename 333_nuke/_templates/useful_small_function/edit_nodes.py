@@ -39,14 +39,14 @@ ___ get_knobs(node):
 ___ edit_knobs
     # Display all knobs that are common between all selected nodes.
     # Allow user to set expression or value on one of the knobs
-    nodes = ?.sN..()
+    n__ = ?.sN..()
     # Find intersection of all knobs between all selected nodes
     knobs = list()
-    ___ i __ ra__(le.(nodes)):
+    ___ i __ ra__(le.(n__)):
         __ i __ 0:
-            knobs = get_knobs(nodes[i])
+            knobs = get_knobs(n__[i])
         ____
-            knobs = intersection(get_knobs(nodes[i-1]), get_knobs(nodes[i]))
+            knobs = intersection(get_knobs(n__[i-1]), get_knobs(n__[i]))
         i += 1
     knobs.s..
     default_knob_names = [
@@ -87,7 +87,7 @@ ___ edit_knobs
                 values.ap..(fl..(val))
             ______ ValueError:
                 values.ap..(st.(val))
-    ___ node __ nodes:
+    ___ node __ n__:
         knob = node[k]
         ___
             array_size = knob.arraySize()
@@ -98,7 +98,7 @@ ___ edit_knobs
                 __ values[i]:
                     __ knob.hasExpression(i):
                         knob.clearAnimated(i)
-                    knob.setExpression(st.(values[i]), channel=i)
+                    knob.sE..(st.(values[i]), channel=i)
         ____
             __ isinstance(knob, ?.Boolean_Knob):
                 __ knob.hasExpression
@@ -121,10 +121,10 @@ ___ edit_knobs
                         knob.sV..(values[i], i)
                     ____ isinstance(values[i], st.):
                         # Assume this was meant to be an expression
-                        knob.setExpression(st.(values[i]), channel=i)
+                        knob.sE..(st.(values[i]), channel=i)
 
 
-___ paste_knobs(checkboxes=False):
+___ paste_knobs(checkboxes=F..):
     # Override of the ctrl+alt+v shortcut which allows pasting of only specified knob values to selected nodes
     # Only a single source node is supported unlike the original
     # Based on nukescripts.misc.copy_knobs()
@@ -132,10 +132,10 @@ ___ paste_knobs(checkboxes=False):
     # If checkboxes, an arbitrary selection of knobs can be chosen
     grp = ?.thisGroup()
     dst_nodes = grp.sN..()
-    copy_grp = ?.nodes.Group(name='____tempcopyknobgroup__')
+    copy_grp = ?.n__.Group(name='____tempcopyknobgroup__')
     with copy_grp:
         ?.nodePaste('%clipboard%')
-    src_nodes = copy_grp.nodes()
+    src_nodes = copy_grp.n__()
     __ src_nodes:
         src_node = src_nodes[-1]
     excluded_knobs = ['name', 'xpos', 'ypos', 'selected']

@@ -19,7 +19,7 @@ import nuke
 def shortcut_NodeComment():
 
 	# Assign the selected node to a variable for easy access
-    selectedNode = nuke.selectedNode()
+    selectedNode = nuke.sN..
 
     # Assign the current value of the selected node's label to a variable for easy access
     oldComment = selectedNode['label'].value()

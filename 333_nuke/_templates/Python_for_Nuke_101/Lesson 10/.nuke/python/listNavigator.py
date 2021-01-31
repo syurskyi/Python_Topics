@@ -20,7 +20,7 @@ def listNavigator():
 
 	node_list = []
 
-	for i in nuke.selectedNodes():
+	for i in nuke.sN.. :
 	    node_list.append(i.name())
 
 	node_list.sort()

@@ -16,18 +16,18 @@ ____ comp_utilz _____ decorators
 # Universal Operations
 
 ___ check_selected
-    nodes = ?.selectedNodes()
-    __ le.(nodes) > 0:
-        r_ T.., nodes[0]
+    n__ = ?.sN..
+    __ le.(n__) > 0:
+        r_ T.., n__[0]
     ____
-        r_ False, N..
+        r_ F.., N..
 
 ___ clear_selection
     ?.selectAll()
     ?.invertSelection()
 
-___ select_nodes(nodes):
-    ___ node __ nodes:
+___ select_nodes(n__):
+    ___ node __ n__:
         node['selected'].sV.. T..
 
 ___ select_nodes_by_type(node_type):
@@ -40,13 +40,13 @@ ___ get_nodes_by_type(node_type):
     r_ ?.aN..(node_type)
 
 ___ get_nodes_by_types(node_types=[]):
-    nodes = []
+    n__ = []
     ___ node_type __ node_types:
-        nodes.extend(get_nodes_by_type(node_type))
-    r_ nodes
+        n__.extend(get_nodes_by_type(node_type))
+    r_ n__
 
-___ delete_nodes(nodes):
-    ___ node __ nodes:
+___ delete_nodes(n__):
+    ___ node __ n__:
         ?.delete(node)
 
 ___ delete_nodes_by_type(node_type):
@@ -57,7 +57,7 @@ ___ delete_all_nodes
 
 ___ is_disabled(node):
     __ type(node) __ str:
-        node = ?.toNode(node)
+        node = ?.tN..(node)
     r_ node['disable'].value()
 
 ___ is_multi_view
@@ -65,8 +65,8 @@ ___ is_multi_view
         r_ T..
 
 ___ get_root_cut
-    first_frame = in_(?.toNode('root')['first_frame'].value())
-    last_frame = in_(?.toNode('root')['last_frame'].value())
+    first_frame = in_(?.tN..('root')['first_frame'].value())
+    last_frame = in_(?.tN..('root')['last_frame'].value())
     framerange = '%s-%s' % (first_frame, last_frame)
     exfrange = '%s to %s' % (first_frame, last_frame)
     length = last_frame - first_frame
@@ -80,7 +80,7 @@ ___ get_coordinates(node):
     r_ x, y
 
 ___ connect_nodes(connect_to, connect_from, from_index):
-    connect_to.connectInput(from_index, connect_from)
+    connect_to.cI..(from_index, connect_from)
 
 ___ get_value(node, knob):
     r_ node[knob].value()
@@ -117,24 +117,24 @@ ___ copy_root(from_nk, to_nk):
     ___
         ?.scriptSource(from_nk)
         ?.tprint(from_nk)
-        knob_settings = ?.toNode('root').writeKnobs(?.TO_VALUE | ?.WRITE_ALL)
+        knob_settings = ?.tN..('root').writeKnobs(?.TO_VALUE | ?.WRITE_ALL)
         ?.tprint(knob_settings)
         ?.scriptClear()
         ?.scriptSource(to_nk)
-        name = ?.toNode('root')['name'].value()
-        ?.toNode('root').readKnobs(knob_settings)
+        name = ?.tN..('root')['name'].value()
+        ?.tN..('root').readKnobs(knob_settings)
         ?.tprint('reseting name')
-        ?.toNode('root')['name'].sV..(name)
+        ?.tN..('root')['name'].sV..(name)
         ?.tprint(to_nk)
         ?.scriptSaveAs(to_nk, 1)
         r_ T.., N..
     except Exception, e:
-        r_ False, e
+        r_ F.., e
 
 ___ get_parent(node):
     __ type(node) __ str:
-        node = ?.toNode(node)
-    r_ ?.toNode('root.'+'.'.j..(node.fullName().split('.')[:-1])) or ?.r__
+        node = ?.tN..(node)
+    r_ ?.tN..('root.'+'.'.j..(node.fullName().split('.')[:-1])) or ?.r__
 
 # BuildHelper Functions
 
@@ -264,7 +264,7 @@ ___ update_p2p_module(p2p_node, write_name, eye):
     __ eye __ 'lt':
         ?.Undo().begin('Make P2P Dominant Eye lt')
         with p2p_node:
-            ?.toNode('eyeSwapMaster').knob('which').sV..(0)
+            ?.tN..('eyeSwapMaster').knob('which').sV..(0)
         with ?.root
             one_view_knob.sV..('rt')
             write_node.knob('views').sV..('rt')
@@ -277,7 +277,7 @@ ___ update_p2p_module(p2p_node, write_name, eye):
     __ eye __ 'rt':
         ?.Undo().begin('Make P2P Dominant Eye rt')
         with p2p_node:
-            ?.toNode('eyeSwapMaster').knob('which').sV..(1)
+            ?.tN..('eyeSwapMaster').knob('which').sV..(1)
         with ?.root
             one_view_knob.sV..('lt')
             write_node.knob('views').sV..('lt')
@@ -290,7 +290,7 @@ ___ update_p2p_module(p2p_node, write_name, eye):
 
 ___ p2p_symlinks
     node = ?.tN..
-    dest_path = node.knob('file').evaluate()
+    dest_path = node.knob('file').e..
     source_path = ?.tcl("value [topnode %s].file" % node.name())
     _____ __
     dest_base = __.pa__.b__(dest_path)

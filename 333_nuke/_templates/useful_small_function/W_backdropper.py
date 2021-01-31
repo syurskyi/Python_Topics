@@ -71,7 +71,7 @@ ___ backdropper(nodeClass = 'Backdrop'):
 
         __ nodeClass __ 'StickyNote':
             label = '   %s   '%label.upper()
-            node = ?.cN..(nodeClass, inpanel = False)
+            node = ?.cN..(nodeClass, inpanel = F..)
 
         ____
             node = n_s_.autoBackdrop()
@@ -265,7 +265,7 @@ ___ savePreferencesToFile
     openPreferencesFile.write( preferencesCode )
     openPreferencesFile.close()
 
-___ deletePreferences(clicked = False):
+___ deletePreferences(clicked = F..):
     '''
     Delete all the W_backdropper related items from the properties panel.
     '''
@@ -275,7 +275,7 @@ ___ deletePreferences(clicked = False):
     ___ knobName __ preferencesNode.knobs().keys
         __ knobName.startswith('backdropper'):
             preferencesNode.removeKnob(preferencesNode.knob(knobName))
-            firstLaunch = False
+            firstLaunch = F..
 
     # remove TabKnob
     ___
@@ -312,7 +312,7 @@ ___ resetPreferences
     ___ index, knob __ enumerate(['Backdrop', 'StickyNote']):
         preferencesNode.knob('backdropper%sFontSize'%knob).sV..(defaultFontSizes[index])
 
-___ updatePreferences(forceUpdate = False):
+___ updatePreferences(forceUpdate = F..):
     '''
     Check whether the script was updated since the last launch. If so refresh the preferences.
     '''
@@ -351,7 +351,7 @@ ___ updatePreferences(forceUpdate = False):
     # save to file
     savePreferencesToFile()
 
-___ closePreferencesPanel(save = False):
+___ closePreferencesPanel(save = F..):
     '''
     Find and invoke a button found at the bottom of the preferences panel.
     '''
@@ -732,7 +732,7 @@ ___ importExportPanel
 
 #----------------------------------------------------------------------------------------------------------
 
-___ colorizeNodes(all = False):
+___ colorizeNodes(all = F..):
     '''
     Colorize all nodes of a specific class. Pick colors according to their labels.
     '''

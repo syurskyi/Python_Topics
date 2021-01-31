@@ -43,7 +43,7 @@ def createCustomShuffle(in_channel, out_channel, set_channel, rColor, gColor, bC
 def shuffleRGBchannels():
 
     # Create a variable for the selected node, before creating any shuffle nodes.
-    selectedNode = nuke.selectedNode()
+    selectedNode = nuke.sN..
 
     # Get the X-Position and y-Position of the selected node.
     selectedNode_xPos = selectedNode['xpos'].value()
@@ -51,11 +51,11 @@ def shuffleRGBchannels():
 
     # Create our Red, Green & Blue Shuffle nodes, and assign them to a variable after creation.
     createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)
-    redShuffle = nuke.selectedNode()
+    redShuffle = nuke.sN..
     createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)
-    greenShuffle = nuke.selectedNode()
+    greenShuffle = nuke.sN..
     createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)
-    blueShuffle = nuke.selectedNode()
+    blueShuffle = nuke.sN..
 
     # Set the input of the Red Shuffle node to the selected node, and Transform the Red Shuffle node down and to the left.
     redShuffle.setInput(0, selectedNode)

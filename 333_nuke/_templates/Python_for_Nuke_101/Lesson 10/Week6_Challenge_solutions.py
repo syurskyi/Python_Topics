@@ -14,7 +14,7 @@ Also, we have to add another if statement to the first if statement, like so:
 
 # If the user doesn't enter any data or change anything, pop open a message and exit the window.
 if comment_input == "" and panel.value("Knob") == "None":
-    if panel.value("Change Node Colour?") == False:
+    if panel.value("Change Node Colour?") == F..:
         nuke.message("Please enter a node label")
 
 """

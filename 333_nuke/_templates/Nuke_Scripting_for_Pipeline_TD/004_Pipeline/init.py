@@ -7,7 +7,7 @@ print(root)
 # plugins
 gizmos = __.pa__.j..(root, 'gizmos')
 print(gizmos)
-?.pAP..(gizmos, addToSysPath=False)
+?.pAP..(gizmos, addToSysPath=F..)
 
 # python
 py = __.pa__.j..(root, 'python')

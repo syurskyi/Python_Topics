@@ -3,7 +3,7 @@ compNodeOperations = {"diffuse":"Merge:operation='mult';mix=1", "specular":"Merg
 addNodesBeforeComped = {"paint":"ColorCorrect:", "diffuse":"Unpremult:|Grade:|Premult:", "specular":"Grade:", "refl":"Grade:", "occlusion":"Grade:", "depth":"Grade:"}
 addNodesAfterComped = {"depth":"ZBlur:"}
 notCompNodes = {"paint":"rotopaint:carpaint"}
-createNotFoundChannels = False
+createNotFoundChannels = F..
 autoAlignReaders = T..
 createNoOpNode = T..
 createDotNode = T..
@@ -60,7 +60,7 @@ ___ cN..(layer, nodeOperations, xPos, yPos):
 	r_ thisNode
 
 ___ autoComper
-	allSelectedNodes = ?.selectedNodes()
+	allSelectedNodes = ?.sN..
 	mergeLayer = {}
 	mergeLayerInv = {}
 	layerHasReader = {}
@@ -121,7 +121,7 @@ ___ autoComper
 					notNodes = notCompNodes[compChannel].split(':')
 					___ notNode __ notNodes:
 						__ layerLower.find(notNode, 0, le.(layer)) > -1:
-							compThis = False 
+							compThis = F..
 							break
 		
 				__ compThis __ T..:
@@ -166,7 +166,7 @@ ___ autoComper
 					eval(layer)['in'].sV..(layerOriginal)
 		
 		__ createNoOpNode:
-			noOpNode = ?.nodes.NoOp(name=layerOriginal, tile_color=noOpTileColor)
+			noOpNode = ?.n__.NoOp(name=layerOriginal, tile_color=noOpTileColor)
 			noOpNode.setXYpos(in_(nodeNumber*nodeXOffset+xPosMin), in_(yPosMin+3*nodeYOffset))
 			__ layerOriginal __ layerType:
 				__ layerType[layerOriginal] __ 'file':
@@ -214,7 +214,7 @@ ___ autoComper
 				
 				__ mergeCount > 0 and createDotNode __ T..:
 					#Create Dot-Nodes
-					dot = ?.nodes.Dot(note_font_size=20)
+					dot = ?.n__.Dot(note_font_size=20)
 					__ showDotLabel:
 						dot['label'].sV..(' ' + str(layerOriginal))
 					dot.setXYpos( in_(eval(layer)['xpos'].gV..()+35), in_(thisNode['ypos'].gV..()+3) )

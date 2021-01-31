@@ -12,12 +12,12 @@ myShuffle['blue'].setValue('green')
 myShuffle['alpha'].setValue('green')
 
 # Displaying a selected node's mix knob's value in the node's label (TCL).
-nuke.selectedNode()['label'].setValue("Mix: [value mix]")
+nuke.sN.. ['label'].setValue("Mix: [value mix]")
 
 
 
 # Set the input of a selected node to a node named 'Grade4.'
-nuke.selectedNode().setInput(0, nuke.toNode('Grade4'))
+nuke.sN.. .setInput(0, nuke.tN..('Grade4'))
 
 # Connect the mask input of all Blur nodes to a selected node.
 for i in nuke.allNodes('Blur'):
@@ -26,16 +26,16 @@ for i in nuke.allNodes('Blur'):
 
 
 # Move a node called 'Blur15' in the node graph to the right of a selected node.
-nuke.selectedNode()['xpos'].setValue(nuke.toNode('Blur15')['xpos'].value()+150)
-nuke.selectedNode()['ypos'].setValue(nuke.toNode('Blur15')['ypos'].value())
+nuke.sN.. ['xpos'].setValue(nuke.tN..('Blur15')['xpos'].value()+150)
+nuke.sN.. ['ypos'].setValue(nuke.tN..('Blur15')['ypos'].value())
 
 # Same thing, but a little cleaner with variables.
-node_to_align_to = nuke.toNode('Blur15')
+node_to_align_to = nuke.tN..('Blur15')
 node_xPos = node_to_align_to['xpos'].value()
 node_yPos = node_to_align_to['ypos'].value()
  
-selected_xPos_knob = nuke.selectedNode()['xpos']
-selected_yPos_knob = nuke.selectedNode()['ypos']
+selected_xPos_knob = nuke.sN.. ['xpos']
+selected_yPos_knob = nuke.sN.. ['ypos']
 
 selected_xPos_knob.setValue(node_xPos+150)
 selected_yPos_knob.setValue(node_yPos)
@@ -86,7 +86,7 @@ def hex_color_to_rgb(red, green, blue):
     return int('%02x%02x%02x%02x' % (red*255,green*255,blue*255,255),16)
 
 # You would then set the tile_color like so:
-nuke.selectedNode()['tile_color'].setValue(hex_color_to_rgb(1,0.6,0))
+nuke.sN.. ['tile_color'].setValue(hex_color_to_rgb(1,0.6,0))
 
 
 

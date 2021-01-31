@@ -1,22 +1,22 @@
-_____ ?
-
-n1 = ?.nodes.Read()
-n2 = ?.nodes.Transform()
-n2.setInput(0, n1)
-n2.autoplace
-
-n3 = ?.nodes.ColorCorrect()
-n3.connectInput(0, n2)
-n3.autoplace
-
-n4 = ?.nodes.NoOp()
-
-n5 = ?.nodes.Merge(inputs=[n3, n4])
-
-n3.setInput(0, N..)
-
-n5.inputs()
-
-n5.input(1)
-
-type(n5.input(1))
+# _____ ?
+#
+# n1 _ ?.n__.R..
+# n2 _ ?.n__.T..
+# ?.sI.. 0 n1
+# ?.a..
+#
+# n3 _ ?.n__.CC..
+# ?.cI.. 0 _2
+# n?.a..
+#
+# n4 _ ?.n__.NO..
+#
+# n5 _ ?.n__.M.. i.._ _3 _4
+#
+# _3.sI.. 0 N..
+#
+# _5.i..
+#
+# _5.i.. 1
+#
+# ty__ _5.i.. 1

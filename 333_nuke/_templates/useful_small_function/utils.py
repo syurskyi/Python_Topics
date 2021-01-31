@@ -33,7 +33,7 @@ ___ create_node(node):
 
     """
     lab _ 'baked metadata\nfrom {}'.f..(node.n..
-    noop _ ?.nodes.NoOp(hide_input_T..,
+    noop _ ?.n__.NoOp(hide_input_T..,
                            xpos_node.xpos() + 100,
                            ypos_node.yp__(),
                            tile_color_constants.COLORS['noop'],
@@ -109,7 +109,7 @@ ___ get_node
 
     """
     ___
-        r_ ?.selectedNode()
+        r_ ?.sN..
     ______ ValueError:
         r_ N..
 

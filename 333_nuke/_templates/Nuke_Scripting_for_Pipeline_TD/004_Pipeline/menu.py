@@ -23,8 +23,8 @@ fxphd = m__.addMenu("FXPHD")
 fxphd.aC..("Clipboard","clipboardCore.start()")
 
 # nodes
-nodes = ?.m__("Nodes")
-gizmos = nodes.addMenu('Gizmos', icon='cgninjas.png')
+n__ = ?.m__("Nodes")
+gizmos = n__.addMenu('Gizmos', icon='cgninjas.png')
 
 gizPath = __.pa__.j..(root, 'gizmos')
 ___ gizmo __ __.l_d_(gizPath):

@@ -87,11 +87,11 @@ If you add nodes after creating the GLOBAL_MOTIONBLUR_CONTROLLER, they’re not 
 	def addExpr():
 		tn = nuke.thisNode()
 		if tn.knob('motionblur'):
-			tn['motionblur'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
-			tn['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			tn['motionblur'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
+			tn['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 		elif tn.knob('samples'):
-			tn['samples'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
-			tn['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			tn['samples'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
+			tn['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 
 	nuke.addOnCreate(addExpr)
 

@@ -42,7 +42,7 @@ ___ fixReadError
                                 reformatPath = subpath.replace("\\","/")
                                 i['file'].sV..(reformatPath +'/'+ oldname)
 
-                    __ i.error() __ False:
+                    __ i.error() __ F..:
                         missingRead = i.n.. + " - " + oldname + " - " + " Found Successfully!" + "\n" + missingRead
                     ____
                         missingRead = i.n.. + " - " + oldname + " - " + " Not Fpund!" + "\n" + missingRead

@@ -1,6 +1,6 @@
 _____ ?
 #read animation 
-t = ?.selectedNode()
+t = ?.sN..
 k = t['scale']
 a = k.animations()
 a = k.animation(0)

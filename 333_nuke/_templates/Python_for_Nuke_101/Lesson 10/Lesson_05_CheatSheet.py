@@ -9,7 +9,7 @@ car_list = ['Porsche', 'Ferrari', 'Ford', 'McLaren', 'Mercedes', 'Aston Martin',
 # Automatically add selected nodes to a list.
 node_list = []
 
-for i in nuke.selectedNodes():
+for i in nuke.sN.. :
 	node_list.append(i)
 
 # Automatically add the node names of all Read nodes to a list.
@@ -24,7 +24,7 @@ node_list.sort()
 
 
 # --- Sort the items in your list by their y-position in the node graph. ---
-node_list = nuke.selectedNodes()
+node_list = nuke.sN..
 
 # We have to define a function to use as a 'key' in the sort function...
 def sort_ypos(node):
@@ -104,7 +104,7 @@ print os.path.dirname(your_filepath_here)
 
 # Returns the version number of a selected read node.
 # Presumes format of a file is 'v0001.exr'.
-path = nuke.selectedNode()['file'].value()
+path = nuke.sN.. ['file'].value()
 print path[-9:-4]
 
 # Find a character, or set of characters in a string (returns the index number).
@@ -135,7 +135,7 @@ for i in node_list:
 
 # Deselect all nodes.
 for i in nuke.allNodes()
-	i.setSelected(False)
+	i.setSelected(F..)
 
 # Copy / Paste nodes to the clipboard.
 nuke.nodeCopy('%clipboard%')

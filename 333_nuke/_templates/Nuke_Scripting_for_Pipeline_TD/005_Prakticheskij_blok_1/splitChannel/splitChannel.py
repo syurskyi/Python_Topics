@@ -9,9 +9,9 @@ ___ autoBackdrop(name):
     The backdrop will be just big enough to fit all the select nodes in, with room
     at the top for some text in a large font.
     '''
-    selNodes = ?.selectedNodes()
+    selNodes = ?.sN..
     __ no. selNodes:
-        r_ ?.nodes.BackdropNode()
+        r_ ?.n__.BackdropNode()
 
         # Calculate bounds for the backdrop node.
     bdX = min([node.xpos() ___ node __ selNodes])
@@ -26,7 +26,7 @@ ___ autoBackdrop(name):
     bdW += (right - left)
     bdH += (bottom - top)
 
-    n = ?.nodes.BackdropNode(xpos=bdX,
+    n = ?.n__.BackdropNode(xpos=bdX,
                                 bdwidth=bdW,
                                 yp__=bdY,
                                 bdheight=bdH,
@@ -50,9 +50,9 @@ ___ shuffleLayer(node, layer):
        layer - layer to shuffle into rgba
     '''
 
-    shuffleNode = ?.nodes.Shuffle(label=knob, inputs=[punto])
+    shuffleNode = ?.n__.Shuffle(label=knob, inputs=[punto])
     shuffleNode['in'].sV..(layer)
     shuffleNode['postage_stamp'].sV.. T..
-    r_ ?.nodes.Dot(inputs=[shuffleNode])
+    r_ ?.n__.Dot(inputs=[shuffleNode])
 
 ___ autoComp

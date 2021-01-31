@@ -121,7 +121,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
 
                 # let nuke do the actual evaluation work
                 tmp.knob('file').sV..(eval_result)
-                eval_result _ tmp.knob('file').evaluate()
+                eval_result _ tmp.knob('file').e..
 
                 # put the stored range variable back
                 __ range_test:
@@ -193,11 +193,11 @@ ___ filePaths(no___N.., proxy_F.., regex_N.., force_match_T..):
     result _ # list
 
     # check nodes, use selected Nodes in DAG if no arg
-    __ no. nodes:
-        nodes _ ?.sN..
+    __ no. n__:
+        n__ _ ?.sN..
 
     # loop through nodes and get path for each Node
-    ___ i __ nodes:
+    ___ i __ n__:
         ___
             result.ap..(filePath(i, proxy, regex, force_match))
         ______ AttributeError:
@@ -218,11 +218,11 @@ ___ filePathsWithRanges(nodes_N.., proxy_F.., regex_N.., force_match_T..):
     result _ # list
 
     # check nodes, use selected Nodes in DAG if no arg
-    __ no. nodes:
-        nodes _ ?.sN..
+    __ no. n__:
+        n__ _ ?.sN..
 
     # loop through nodes and get path and range for each Node
-    ___ i __ nodes:
+    ___ i __ n__:
         ___
             ra.. _ filePathWithRange(i, proxy, regex, force_match)
             __ ra..:

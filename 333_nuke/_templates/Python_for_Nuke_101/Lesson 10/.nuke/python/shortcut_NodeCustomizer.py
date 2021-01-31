@@ -20,7 +20,7 @@ import nuke
 def shortcut_NodeCustomizer():
 
     # Set variables & list to hold information we'll need...
-    selectedNode = nuke.selectedNode()
+    selectedNode = nuke.sN..
     oldComment = selectedNode['label'].value()
     knobList = []
 
@@ -42,7 +42,7 @@ def shortcut_NodeCustomizer():
     # Add knobs
     panel.addSingleLineInput("Comment", oldComment)
     panel.addEnumerationPulldown("Knob", knobList_string)
-    panel.addBooleanCheckBox("Change Node Colour?", False)
+    panel.addBooleanCheckBox("Change Node Colour?", F..)
 
 
     # If the cancel button is pressed, do nothing.
@@ -60,7 +60,7 @@ def shortcut_NodeCustomizer():
 
     # If the user doesn't enter any data or change anything, pop open a message and exit the window.
     if comment_input == "" and panel.value("Knob") == "None":
-        if panel.value("Change Node Colour?") == False:
+        if panel.value("Change Node Colour?") == F..:
             nuke.message("Please enter a node label")
         
 

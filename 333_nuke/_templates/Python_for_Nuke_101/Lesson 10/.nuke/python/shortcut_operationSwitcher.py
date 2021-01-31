@@ -21,13 +21,13 @@ def shortcut_operationSwitcher():
 
 	# If no node is selected, we should just create an invert node.
 	try:
-    	node = nuke.selectedNode()
+    	node = nuke.sN..
 	except:
     	nuke.createNode('Invert')
     	return
 
 	# Create variable for easier access to nuke.selectedNode()
-    node = nuke.selectedNode()
+    node = nuke.sN..
 	# Create Dictionary with keys & values being the opposite operations
     merge_ops = {'over':'under', 'mask':'stencil', 'plus':'from', 'multiply':'divide', 'max':'min', 'conjoint-over':'disjoint-over', 'log2lin':'lin2log'}
     

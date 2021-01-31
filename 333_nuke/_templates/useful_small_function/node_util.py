@@ -13,21 +13,21 @@ ______ ImportError:
 
 ___ context_aware_create_node(node_2d, node_3d, node_deep):
     # context aware node functions
-    nodes _ ?.sN..
+    n__ _ ?.sN..
     # try:
-    __ node_deep an. selected_nodes_deep(nodes):
+    __ node_deep an. selected_nodes_deep(n__):
         r_ ?.cN..(node_deep)
-    ____ node_3d an. selected_nodes_3d(nodes):
+    ____ node_3d an. selected_nodes_3d(n__):
         r_ ?.cN..(node_3d)
     ____ node_2d:
         r_ ?.cN..(node_2d)
 
 
-___ selected_nodes_deep(nodes):
+___ selected_nodes_deep(n__):
     # Returns true if all selected nodes are Deep nodes
-    __ no. nodes:
-        nodes _ ?.sN..
-    ___ n __ nodes:
+    __ no. n__:
+        n__ _ ?.sN..
+    ___ n __ n__:
         ___
             n.deepSampleCount(0, 0)
             r_ T..
@@ -35,11 +35,11 @@ ___ selected_nodes_deep(nodes):
             r_ F..
 
 
-___ selected_nodes_3d(nodes):
+___ selected_nodes_3d(n__):
     # Returns true if all selected nodes are 3D nodes
-    __ no. nodes:
-        nodes _ ?.sN..
-    ___ n __ nodes:
+    __ no. n__:
+        n__ _ ?.sN..
+    ___ n __ n__:
         ___
             # TODO Need to find better detection method for 3D nodes, this method doesnt include Lights
             n['render_mode'].gV..
@@ -66,12 +66,12 @@ ___ copy_to_clipboard(v.. ):
 
 ___ gui_disable
     # Toggles the disable knob in any node with the "$gui" switch
-    nodes _ ?.sN..
-    ___ node __ nodes:
+    n__ _ ?.sN..
+    ___ node __ n__:
         k _ node.knob('disable')
         gui _ '{"\\$gui"}'
         __ no. k.gV..:
-            k.setExpression('$gui')
+            k.sE..('$gui')
         ____ k.toScript() __ gui:
             k.cA..
             k.sV..(0)
@@ -91,10 +91,10 @@ ___ cycle_viewer_input_masks
 
 # Copies the tile_color of the first selected node to rest of the selected nodes
 ___ copy_node_tile_color
-    nodes _ ?.sN..
-    tc _ __.(nodes[le.(nodes) - 1].knob('tile_color').gV..())
-    ___ n __ ra..(le.(nodes) - 1):
-        nodes[n].knob('tile_color').sV..(tc)
+    n__ _ ?.sN..
+    tc _ __.(n__[le.(n__) - 1].knob('tile_color').gV..())
+    ___ n __ ra..(le.(n__) - 1):
+        n__[n].knob('tile_color').sV..(tc)
 
 
 ___ paste_to_selected
@@ -109,8 +109,8 @@ ___ paste_to_selected
     ___ node __ selection:
         node['selected'].sV..(T..)
         ?.nodePaste('%clipboard%')
-        nodes _ ?.sN..
-        ___ node __ nodes:
+        n__ _ ?.sN..
+        ___ node __ n__:
             pasted_nodes.ap..(node)
     ___ node __ pasted_nodes:
         node['selected'].sV..(T..)
@@ -119,10 +119,10 @@ ___ paste_to_selected
 ___ label_dialog
     # Opens a quick dialog to edit the label of a node
     label _ ''
-    nodes _ ?.sN..
-    __ le.(nodes) __ 1:
-        label _ nodes[0].knob('label').gV..
-        name _ nodes[0].n..
+    n__ _ ?.sN..
+    __ le.(n__) __ 1:
+        label _ n__[0].knob('label').gV..
+        name _ n__[0].n..
         txt _ ?.getInput('Change @ label' % name, label)
     ____
         txt _ ?.getInput('Change node labels', label)
@@ -157,13 +157,13 @@ ___ match_range_to_read
 ___ read_from_write
     # TODO Refactor a bit to make new nodes snap to grid and make work for DeepWrites as well.
     # TODO Don't need to check for any selectedNodes AND write nodes
-    nodes _ ?.sN..
-    __ le.(nodes) < 1:
+    n__ _ ?.sN..
+    __ le.(n__) < 1:
         print('No nodes selected')
     ____
         found_writes _ F..
         write_nodes _ # list
-        ___ node __ nodes:
+        ___ node __ n__:
             __ node.C..  __ 'Write':
                 write_nodes.ap..(node)
                 found_writes _ T..
@@ -171,7 +171,7 @@ ___ read_from_write
         __ found_writes:  # we found some writes
 
             ___ node __ write_nodes:
-                node_read _ ?.nodes.Read()  # create a read node
+                node_read _ ?.n__.Read()  # create a read node
                 node_read['file'].sV..(?.filename(node))  # set the filename
                 __ node['use_limit'].gV.. __ 1:  # check to see if there is a range and set the values in the read node
                     node_read['first'].sV..(__.(node['first'].gV..()))

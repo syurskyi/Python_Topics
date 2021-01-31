@@ -1,7 +1,7 @@
 _____ ?, math
 
 
-t = ?.toNode('Transform1')
+t = ?.tN..('Transform1')
 t['translate'].animations()
 t['translate'].animation(0)
 t['translate'].animation(1)

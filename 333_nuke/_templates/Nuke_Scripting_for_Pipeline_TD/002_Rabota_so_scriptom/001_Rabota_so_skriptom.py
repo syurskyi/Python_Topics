@@ -9,4 +9,4 @@ s = 'c:/temp/script.nk'
 ?.scriptReadText()
 
 ?.script_directory()
-?.scriptSaveandClear(s,False)
+?.scriptSaveandClear(s,F..)

@@ -2,7 +2,7 @@
 
 # The right way.
 
-n = nuke.selectedNode()
+n = nuke.sN..
 
 if n.knob('motionblur'):
     print "yes"
@@ -13,7 +13,7 @@ else:
 
 # The wrong way.
 
-n = nuke.selectedNode()
+n = nuke.sN..
 
 if n['motionblur']:
     print "yes"
@@ -53,25 +53,25 @@ https://learn.foundry.com/nuke/developers/63/ndkdevguide/knobs-and-handles/knobt
 # ----- SETTING KNOB FLAGS & VALUES --------------------
 
 # Clear all keyframes or expressions from a knob.
-nuke.selectedNode().['mix'].clearAnimated()
+nuke.sN.. .['mix'].clearAnimated()
 
 # Clear all keyframes or expressions from every knob on a selected node.
-for knob in nuke.selectedNode().knobs():
-	nuke.selectedNode()[knob].clearAnimated()
+for knob in nuke.sN.. .knobs():
+	nuke.sN.. [knob].clearAnimated()
 
 
 
 # Move the 'black_clamp' knob on a selected Grade node to a new line.
-nuke.selectedNode()['black_clamp'].setFlag(nuke.STARTLINE)
+nuke.sN.. ['black_clamp'].setFlag(nuke.STARTLINE)
 
 # Disable a selected node's mix knob
-nuke.selectedNode()['mix'].setFlag(nuke.DISABLED)
+nuke.sN.. ['mix'].setFlag(nuke.DISABLED)
 
 # Hide a selected node's mix knob
-nuke.selectedNode()['mix'].setFlag(nuke.INVISIBLE)
+nuke.sN.. ['mix'].setFlag(nuke.INVISIBLE)
 
 # You can also do this with the '.setVisible()' function, although you can't show / hide knobs with these two methods interchangably.
-nuke.selectedNode()['mix'].setVisible(False)
+nuke.sN.. ['mix'].setVisible(F..)
 
 
 # Knob Flags

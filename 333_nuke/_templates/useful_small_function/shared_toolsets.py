@@ -49,7 +49,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
     rename = rename
     fullFilePath = fullFilePath
 
-    __ rename __ False:
+    __ rename __ F..:
       namePanel = 'Create ToolSet'
       nameOkButton = 'Create'
     ____
@@ -98,7 +98,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
         buildFolderList(fullPath + '/' + group, menuPath + group + '/')
 
   ___ createPreset
-    __ renameCreateSharedToolset(st.(menuPath.v.. ()), False):
+    __ renameCreateSharedToolset(st.(menuPath.v.. ()), F..):
     #if self.createSharedToolset(str(self.menuPath.value())):
       finishModalDialog( T.. )
   
@@ -107,7 +107,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
       finishModalDialog( T.. )
     
   ___ renameCreateSharedToolset(, name, rename):
-    ret = False
+    ret = F..
     
     nameList = name.s..('/')
     fileName = nameList[-1]
@@ -140,7 +140,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
 
       ret = T..
     ______:
-      ret = False
+      ret = F..
     r_ ret
 
   ___ getPresetPath
@@ -161,7 +161,7 @@ c_ CreateToolsetsPanel(n_s_.PP..):
       ____
         createPreset()
     ____ knob __ cancelButton:
-      finishModalDialog( False )
+      finishModalDialog( F.. )
     ____ knob __ menuItemChoice:
       getPresetPath()
 
@@ -175,9 +175,9 @@ ___ renameToolset(fullFilePath):
   print fullFilePath
     
 ___ addToolsetsPanel
-  res = False
+  res = F..
   __ ?.nodesSelected() __ T..:
-    res = CreateToolsetsPanel(N.., False).showModalDialog()
+    res = CreateToolsetsPanel(N.., F..).showModalDialog()
     #COMMENT: now force a rebuild of the menu
     refreshToolsetsMenu()
   ____
@@ -196,7 +196,7 @@ ___ deleteToolset(rootPath, fileName):
 ___ checkForEmptyToolsetDirectories(currPath):
   removed = T..
   w__ removed __ T..:
-    removed = False
+    removed = F..
     ___ root, dirs, files __ __.walk(currPath):
       __ files __ # list and dirs == []:
         __ root != SHARED_TOOLSET_PATH:
@@ -214,21 +214,21 @@ ___ createToolsetsMenu(toolbar):
   m = toolbar.addMenu(name = "SharedToolSets", icon = "SharedToolSets.png")
   m.aC..("Create", "shared_toolsets.addToolsetsPanel()", "", icon="SharedToolSets_Create.png")
   m.aC..("-", "", "")
-  __ populateToolsetsMenu(m, False):
+  __ populateToolsetsMenu(m, F..):
     m.aC..("-", "", "")
     n = m.addMenu("Modify", "SharedToolSets_Modify.png")
     populateToolsetsMenu(n, T..)
   m.aC..('Refresh', 'shared_toolsets.refreshToolsetsMenu()', icon = "SharedToolSets_Refresh.png")
 
 ___ traversePluginPaths(m, delete, allToolsetsList, isLocal):
-  ret = False
+  ret = F..
   fullPath = SHARED_TOOLSET_PATH
   __ createToolsetMenuItems(m, fullPath, fullPath, delete, allToolsetsList, isLocal):
       ret = T..
   r_ ret  
 
 ___ populateToolsetsMenu(m, delete):
-  ret = False
+  ret = F..
   allToolsetsList = # list
   #COMMENT: now do shared toolsets like the local .nuke  
   __ traversePluginPaths(m, delete, allToolsetsList, T..):
@@ -277,11 +277,11 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
   filecontents = sorted(__.l_d_(fullPath), key=st..lower)
   excludePaths = ?.getToolsetExcludePaths()
   #COMMENT: First list all directories
-  retval = False
+  retval = F..
   __ filecontents != # list:
     ___ group __ filecontents:
       newPath = "/".j..([fullPath, group])
-      ignore = False
+      ignore = F..
       __ newPath.find(".svn") != -1:
         ignore = T..
       ____

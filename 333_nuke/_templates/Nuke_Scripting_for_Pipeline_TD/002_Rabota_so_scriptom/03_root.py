@@ -1,6 +1,6 @@
 _____ ?
 
-root = ?.toNode('root')
+root = ?.tN..('root')
 ?.r__
 
 node = ?.r__

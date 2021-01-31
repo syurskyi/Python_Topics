@@ -332,11 +332,11 @@ ___ zoom(node):
 
 
 ___ get_repr_class_nodes
-    nodes _ # list
+    n__ _ # list
     ___ node_class __ ['PostageStamp', 'Dot']:
-        nodes.extend(?.aN..(node_class))
+        n__.extend(?.aN..(node_class))
 
-    r_ nodes
+    r_ n__
 
 
 ___ atoi(text):
@@ -459,7 +459,7 @@ ___ add_preset(name, color, icon):
 
 
 ___ add_to_favorites
-    ____ smartLink ______ nodes
+    ____ smartLink ______ n__
     sel_nodes _ ?.sN..
     __ no. sel_nodes:
         msg _ 'Please select nodes that you would like to add to favorites.'
@@ -467,8 +467,8 @@ ___ add_to_favorites
         r_
     ____
         ___ node __ sel_nodes:
-            nodes.NodeObject.register_link_tab(node_node)
-            uid _ nodes.NodeObject.get_uid(node)
+            n__.NodeObject.register_link_tab(node_node)
+            uid _ n__.NodeObject.get_uid(node)
             add_to_root_favorites(uid)
 
         ___

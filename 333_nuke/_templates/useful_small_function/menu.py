@@ -16,7 +16,7 @@ ___ autoColorReadNodeType(overrideNode_N..):
        ____
                this _ overrideNode
        # get the Read node file name
-       thisFile _ this["file"].evaluate()
+       thisFile _ this["file"].e..
        # catch keyword in the filename path to set custom color
        __ "/wip/" __ thisFile:
                nodeColor _ 862912511
@@ -54,7 +54,7 @@ ___ sjmAutoBackdrop
   ______ random
   selNodes _ ?.sN..
   __ no. selNodes:
-    r_ ?.nodes.BackdropNode()
+    r_ ?.n__.BackdropNode()
   #
   margin _ 20
   minWidth _ 1000
@@ -72,7 +72,7 @@ ___ sjmAutoBackdrop
   #
   width _ xmax-xmin
   height _ ymax-ymin
-  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, yp__ _ ymin, bdheight _ height, tile_color _ __.((random.random()*(16 - 10))) + 10, note_font_size_99)
+  n _ ?.n__.BackdropNode(xpos _ xmin, bdwidth _ width, yp__ _ ymin, bdheight _ height, tile_color _ __.((random.random()*(16 - 10))) + 10, note_font_size_99)
   n.showControlPanel()
   #
   # restore node selection
@@ -162,7 +162,7 @@ ___ sjmToggleDisableExpression
       myknob.cA..
       myknob.sV..(0)
     ____
-      myknob.setExpression('$gui')
+      myknob.sE..('$gui')
 
 # toggle the branch selector on all the switch nodes that are selected
 #

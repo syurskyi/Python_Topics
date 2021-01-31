@@ -23,7 +23,7 @@ ___ adjust_gain(original_gain, stop_offset):
 
 ___ viewer_stop_adjust(increment):
     """Adjusts current viewer in stops"""
-    nodes _ ?.aN..('Viewer')
+    n__ _ ?.aN..('Viewer')
     ___ node __ no__:
         knob _ node.knob('gain')
         gain _ knob.v..
@@ -42,7 +42,7 @@ ___ viewer_stop_down
 
 ___ viewer_stop_reset
     """Resets exposure on current viewer"""
-    nodes _ ?.aN..('Viewer')
+    n__ _ ?.aN..('Viewer')
     ___ node __ no__:
         knob _ node.knob('gain')
         knob.sV..(1)

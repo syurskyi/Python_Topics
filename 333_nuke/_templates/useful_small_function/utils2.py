@@ -42,7 +42,7 @@ ___ get_center(node):
     r_ get_center_x(node), get_center_y(node)
 
 
-___ find_highest(nodes):
+___ find_highest(n__):
     """Find highest node in given nodes
 
     Args:
@@ -52,10 +52,10 @@ ___ find_highest(nodes):
         nuke.Node: The highest node in the DAG.
 
     """
-    r_ min(nodes, key=l___ node: get_center_y(node))
+    r_ min(n__, key=l___ node: get_center_y(node))
 
 
-___ find_lowest(nodes):
+___ find_lowest(n__):
     """Find the lowest node in the DAG of given nodes.
 
     Args:
@@ -65,10 +65,10 @@ ___ find_lowest(nodes):
         nuke.Node: The lowest node.
 
     """
-    r_ max(nodes, key=l___ node: get_center_y(node))
+    r_ max(n__, key=l___ node: get_center_y(node))
 
 
-___ find_leftest(nodes):
+___ find_leftest(n__):
     """Find the lowest node in the DAG of given nodes.
 
     Args:
@@ -78,10 +78,10 @@ ___ find_leftest(nodes):
         nuke.Node: The lowest node.
 
     """
-    r_ min(nodes, key=l___ node: get_center_x(node))
+    r_ min(n__, key=l___ node: get_center_x(node))
 
 
-___ find_rightest(nodes):
+___ find_rightest(n__):
     """Find the lowest node in the DAG of given nodes.
 
     Args:
@@ -91,7 +91,7 @@ ___ find_rightest(nodes):
         nuke.Node: The lowest node.
 
     """
-    r_ max(nodes, key=l___ node: get_center_x(node))
+    r_ max(n__, key=l___ node: get_center_x(node))
 
 
 ___ get_node_bounds(node):
@@ -149,11 +149,11 @@ ___ is_inside_backdrops(node, backdrops=N..):
         ):
             r_ T..
 
-    r_ False
+    r_ F..
 
 
 ___ get_overlapping_backdrops(
-    position, backdrops=N.., horizontal=T.., vertical=False
+    position, backdrops=N.., horizontal=T.., vertical=F..
 ):
     """Find backdrops overlapping with given ypos in DAG.
 
@@ -193,7 +193,7 @@ ___ get_overlapping_backdrops(
     r_ overlapping_backdrops
 
 
-___ get_surrounding_backdrops(nodes, backdrops=N..):
+___ get_surrounding_backdrops(n__, backdrops=N..):
     """Get all BackdropNodes surrounding given nodes.
 
     Args:
@@ -211,7 +211,7 @@ ___ get_surrounding_backdrops(nodes, backdrops=N..):
 
     surrounding_backdrops = # list
     ___ backdrop __ backdrops:
-        __ any([is_inside_backdrops(node, [backdrop]) ___ node __ nodes]):
+        __ any([is_inside_backdrops(node, [backdrop]) ___ node __ n__]):
             surrounding_backdrops.ap..(backdrop)
 
     r_ surrounding_backdrops

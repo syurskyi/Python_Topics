@@ -17,6 +17,6 @@ import nuke
 
 def paste_selected():
 
-    for i in nuke.selectedNodes():
+    for i in nuke.sN.. :
         i.setSelected(True)
         nuke.nodePaste("%clipboard%")

@@ -8,20 +8,20 @@ ______ random
 grid = (in_(?.tN..('preferences').knob('GridWidth').v.. ()), in_(?.tN..('preferences').knob('GridHeight').v.. ()))
 
 
-___ unselect(nodes=N..):
+___ unselect(n__=N..):
     # Unselect nodes
-    __ no. nodes:
-        nodes = ?.aN..(recurseGroups=T..)
-    __ no. isinstance(nodes, list):
+    __ no. n__:
+        n__ = ?.aN..(recurseGroups=T..)
+    __ no. isinstance(n__, list):
         r_
-    _ = [n.sS.. F.. ___ n __ nodes]
+    _ = [n.sS.. F.. ___ n __ n__]
 
 
-___ select(nodes):
+___ select(n__):
     # Select specified nodes
-    __ no. isinstance(nodes, list):
+    __ no. isinstance(n__, list):
         r_
-    _ = [n.sS.. T.. ___ n __ nodes]
+    _ = [n.sS.. T.. ___ n __ n__]
 
 
 ___ get_parent(node):
@@ -59,15 +59,15 @@ ___ hide_panel
 ?.aOUC..(hide_panel)
 
 
-___ open_panels(nodes=N..):
+___ open_panels(n__=N..):
     # Open properties panels
-    __ no. nodes:
-        nodes = ?.sN..()
+    __ no. n__:
+        n__ = ?.sN..()
     ignored = ['Viewer']
-    __ le.(nodes) > 10:
-        __ no. ?.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.f..(le.(nodes))):
+    __ le.(n__) > 10:
+        __ no. ?.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.f..(le.(n__))):
             r_
-    ___ node __ nodes:
+    ___ node __ n__:
         __ node.C..  no. __ ignored:
             # if node.shown():
             #     if nclass in buggy:
@@ -83,20 +83,20 @@ ___ open_panels(nodes=N..):
             node.showControlPanel()
 
 
-___ close_panels(nodes=N..):
+___ close_panels(n__=N..):
     # Close all properties panels
-    __ no. nodes:
-        nodes = ?.aN..(recurseGroups=T..)
-    ___ node __ nodes:
+    __ no. n__:
+        n__ = ?.aN..(recurseGroups=T..)
+    ___ node __ n__:
         node.hideControlPanel()
 
 
 ___ select_similar_position(axis=1):
-    nodes = ?.sN..()
-    __ no. nodes:
+    n__ = ?.sN..()
+    __ no. n__:
         r_
-    node = nodes[0]
-    prev_selected = nodes[1:]
+    node = n__[0]
+    prev_selected = n__[1:]
     threshold = 1
     unselect()
     select(prev_selected)
@@ -111,20 +111,20 @@ ___ select_similar_position(axis=1):
 
 ___ snap_to_grid
     # Snap selected nodes to grid
-    nodes = ?.sN..()
-    ___ node __ nodes:
+    n__ = ?.sN..()
+    ___ node __ n__:
         ?.autoplaceSnap(node)
 
 
 ___ auto_place
     # autoplace all selected
-    nodes = ?.sN..()
+    n__ = ?.sN..()
 
     # Sort by file knob value if the nodes have one
-    filenodes = {n: n['file'].gV..  ___ n __ nodes __ 'file' __ n.knobs()}
+    filenodes = {n: n['file'].gV..  ___ n __ n__ __ 'file' __ n.knobs()}
     __ filenodes:
         sorted_filenodes = sorted(filenodes.i..(), key=operator.itemgetter(1))
-        filenodes_pos = {n: [n.xpos(), n.yp__()] ___ n __ nodes __ 'file' __ n.knobs()}
+        filenodes_pos = {n: [n.xpos(), n.yp__()] ___ n __ n__ __ 'file' __ n.knobs()}
         ypos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[1])
         xpos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[0])
         start_pos = [xpos_sort[0][1][0], ypos_sort[0][1][1]]
@@ -133,18 +133,18 @@ ___ auto_place
             start_pos = (start_pos[0] + grid[0]*2, start_pos[1])
 
     # Normal autoplace for nodes without file knob
-    normal_nodes = [n ___ n __ nodes __ 'file' no. __ n.knobs()]
+    normal_nodes = [n ___ n __ n__ __ 'file' no. __ n.knobs()]
     unselect()
     _ = [n.sS.. T.. ___ n __ normal_nodes]
     ?.autoplace_all()
-    _ = [n.sS.. T.. ___ n __ nodes]
+    _ = [n.sS.. T.. ___ n __ n__]
 
 
 ___ move(xvel, yvel):
     # Move selected nodes by specified number of grid lengths in x and y
     yvel *= 3
-    nodes = ?.sN..()
-    ___ node __ nodes:
+    n__ = ?.sN..()
+    ___ node __ n__:
         node.setXYpos(in_(node.xpos() + grid[0] * xvel), in_(node.yp__() + grid[1] * yvel))
 
 
@@ -168,18 +168,18 @@ ___ connect_to_closest(direction=0):
         __ direction:
             closest.setInput(0, node)
         ____
-            node.connectInput(0, closest)
+            node.cI..(0, closest)
 
 
 ___ paste_to_selected
-    nodes = ?.sN..()
+    n__ = ?.sN..()
     all_nodes = ?.aN..()
     unselect()
-    ___ node __ nodes:
+    ___ node __ n__:
         node.sS.. T..
         ?.nodePaste('%clipboard')
         unselect()
-    __ no. nodes:
+    __ no. n__:
         ?.nodePaste('%clipboard')
     # Select pasted nodes
     select(all_nodes)
@@ -190,9 +190,9 @@ ___ align(direction):
     # Align nodes to the farthest outlier in the specified direction.
     # param: direction - one of: left | right | up | down
 
-    nodes = ?.sN..()
+    n__ = ?.sN..()
 
-    __ le.(nodes) < 2:
+    __ le.(n__) < 2:
         r_
 
     horizontally = ['left', 'right']
@@ -206,7 +206,7 @@ ___ align(direction):
         print 'Error: invalid direction specified: {0}'.f..(direction)
         r_
 
-    positions = {n: get_pos(n) ___ n __ nodes}
+    positions = {n: get_pos(n) ___ n __ n__}
     sorted_positions = sorted(positions.i..(), key=l___ (k, v): v[align])
     __ direction __ ['down', 'right']:
         sorted_positions.reverse()
@@ -225,7 +225,7 @@ ___ align(direction):
         pos = sorted_other_axis[i][1]
         __ i __ 0: 
             distance = 0
-            overlapping = False
+            overlapping = F..
             prev_pos = pos
         ____
             prev_pos = sorted_other_axis[i-1][1]
@@ -260,11 +260,11 @@ ___ scale(axis, scale, pivot='max'):
     pivots = ['min', 'max', 'center']
     __ pivot no. __ pivots:
         r_
-    nodes = ?.sN..()
-    __ le.(nodes) < 2:
+    n__ = ?.sN..()
+    __ le.(n__) < 2:
         r_
 
-    positions = {n: get_pos(n) ___ n __ nodes}
+    positions = {n: get_pos(n) ___ n __ n__}
     sort = sorted(positions.i..(), key=l___ (k, v): v[axis])
 
     minpos = sort[0][1][axis]
@@ -322,18 +322,18 @@ ___ declone(node):
     node.sS.. T..
     args = node.writeKnobs( ?.WRITE_ALL | ?.WRITE_USER_KNOB_DEFS |
                             ?.WRITE_NON_DEFAULT_ONLY | ?.TO_SCRIPT)
-    decloned_node = ?.cN..(node.C.. , knobs=args, inpanel=False)
+    decloned_node = ?.cN..(node.C.. , knobs=args, in.._F..)
     copy_inputs(node, decloned_node)
     ?.delete(node)
     parent.end()
     r_ decloned_node
 
 
-___ declone_nodes(nodes):
+___ declone_nodes(n__):
     # A better declone than the buggy default nukescripts.misc.declone()
     unselect()
     decloned_nodes = list()
-    ___ node __ nodes:
+    ___ node __ n__:
         decloned_nodes.ap..(declone(node))
     __ decloned_nodes:
         # Restore selection
@@ -385,11 +385,11 @@ ___ upstream(node, max_depth=-1, deps=set(# list)):
     r_ deps
 
 
-___ connected(nodes, upstream=T.., downstream=T..):
+___ connected(n__, upstream=T.., downstream=T..):
     # return all upstream and/or downstream nodes of node
     # based on nuke.overrides.selectConnectedNodes()
     all_deps = set()
-    deps_list = nodes
+    deps_list = n__
     evaluate_all = T..
     w__ deps_list:
         deps = # list
@@ -397,32 +397,32 @@ ___ connected(nodes, upstream=T.., downstream=T..):
             deps += ?.dependencies(deps_list, connection_filter)
         __ downstream:
             deps += ?.dependentNodes(connection_filter, deps_list, evaluate_all)
-        evaluate_all = False
+        evaluate_all = F..
         deps_list = [d ___ d __ deps __ d no. __ all_deps and no. all_deps.add(d)]
     r_ all_deps
 
-___ select_upstream(nodes):
+___ select_upstream(n__):
     # Select all upstream dependencies of node
-    deps = [n ___ n __ connected(nodes, upstream=T.., downstream=False)]
+    deps = [n ___ n __ connected(n__, upstream=T.., downstream=F..)]
     select(deps)
     r_ deps
 
-___ select_downstream(nodes):
+___ select_downstream(n__):
     # Select all downstream dependencies of node
-    deps = [n ___ n __ connected(nodes, upstream=False, downstream=T..)]
+    deps = [n ___ n __ connected(n__, upstream=F.., downstream=T..)]
     select(deps)
     r_ deps
 
-___ select_connected(nodes):
+___ select_connected(n__):
     # Select all nodes connected to node
-    deps = [n ___ n __ connected(nodes, upstream=T.., downstream=T..)]
+    deps = [n ___ n __ connected(n__, upstream=T.., downstream=T..)]
     select(deps)
     r_ deps
 
-___ select_unused(nodes):
+___ select_unused(n__):
     # select all nodes that are not upstream or downstream of :param: nodes
     # Backdrops and dot nodes with a label are omitted.
-    connected_nodes = [n ___ n __ connected(nodes, upstream=T.., downstream=T..)]
+    connected_nodes = [n ___ n __ connected(n__, upstream=T.., downstream=T..)]
     unused_nodes = [n ___ n __ ?.aN..() __ n no. __ connected_nodes and n.C..  != 'BackdropNode' and no. (n.C..  __ 'Dot' and n['label'].gV..())]
     unselect()
     select(unused_nodes)
@@ -481,12 +481,12 @@ ___ load_dag_pos(preset):
 # Hidden Input Link Nodes
 # This is no longer used in favor of the anchor / pointer workflow
 
-___ hidden_inputs_in_selection(nodes):
-    r_ [n ___ n __ nodes __ 'hide_input' __ n.knobs() and n['hide_input'].gV.. ]
+___ hidden_inputs_in_selection(n__):
+    r_ [n ___ n __ n__ __ 'hide_input' __ n.knobs() and n['hide_input'].gV.. ]
 
-___ set_hlink_knobs(nodes):
+___ set_hlink_knobs(n__):
     # Add knob to track what node this node is connected to
-    ___ node __ hidden_inputs_in_selection(nodes):
+    ___ node __ hidden_inputs_in_selection(n__):
         __ no. 'hlink_node' __ node.knobs
             node.aK..(?.String_Knob('hlink_node', 'hlink_node'))
         input_node = node.input(0)
@@ -496,9 +496,9 @@ ___ set_hlink_knobs(nodes):
             node['hlink_node'].sV..('')
 
 ___ hlink_copy
-    nodes = ?.sN..()
-    __ nodes:
-        set_hlink_knobs(nodes)
+    n__ = ?.sN..()
+    __ n__:
+        set_hlink_knobs(n__)
         ?.nodeCopy('%clipboard%')
 
 ___ hlink_cut
@@ -515,11 +515,11 @@ ___ hlink_paste
 
 ___ hlink_create
     # Creates an hlink node for each selected node
-    nodes = ?.sN..()
+    n__ = ?.sN..()
     unselect()
     hlinks = # list
-    ___ node __ nodes:
-        hlink = ?.cN..('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
+    ___ node __ n__:
+        hlink = ?.cN..('Dot', 'hide_input 1 note_font_size 18', in.._F..)
         hlinks.ap..(hlink)
         hlink.setInput(0, node)
         target_name = node.fullName()
@@ -547,12 +547,12 @@ ___ dec2hex(dec):
 
 ___ create_pointer
     # Create an anchor / pointer set
-    nodes = ?.sN..()
-    __ no. nodes:
+    n__ = ?.sN..()
+    __ no. n__:
         r_
 
-    ___ target __ nodes:
-        upstream = [n ___ n __ connected(nodes, upstream=T.., downstream=False)]
+    ___ target __ n__:
+        upstream = [n ___ n __ connected(n__, upstream=T.., downstream=F..)]
 
         __ le.(upstream) > 5:
             __ no. ?.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
@@ -592,7 +592,7 @@ ___ create_pointer
             __ 'deep' __ node_class:
                 topnode_color = prefs['NodeColourDeepColor'].v.. ()
         
-        __ le.(nodes) __ 1:
+        __ le.(n__) __ 1:
             # Only prompt the user for info if there is one selected node
             panel = ?.Panel('Create Pointer')
             panel.addSingleLineInput('title', pointer_title)
@@ -648,16 +648,16 @@ n['target'].setValue(t.fullName())''')
         pointer['tile_color'].sV..(topnode_color)
 
 
-___ create_dots(side=False):
+___ create_dots(side=F..):
     # Create dot nodes
-    nodes = ?.sN..()
+    n__ = ?.sN..()
     unselect()
     dots = list()
-    ___ node __ nodes:
+    ___ node __ n__:
         pos = get_pos(node)
         __ no. side:
             select([node])
-        dot = ?.cN..('Dot', inpanel=False)
+        dot = ?.cN..('Dot', in.._F..)
         __ side:
             set_pos(dot, pos[0] - grid[0], pos[1])
             dot.setInput(0, node)
@@ -666,20 +666,20 @@ ___ create_dots(side=False):
         dots.ap..(dot)
         unselect(dot)
     select(dots)
-    __ no. nodes:
-        dot = ?.cN..('Dot', inpanel=False)
+    __ no. n__:
+        dot = ?.cN..('Dot', in.._F..)
 
 
 
 ___ create_transform
     # Create a Transform or TransformGeo node depending on node type
-    nodes = ?.sN..()
-    __ no. nodes:
+    n__ = ?.sN..()
+    __ no. n__:
         ?.cN..('Transform')
         r_
     unselect()
     transform_nodes = list()
-    ___ node __ nodes:
+    ___ node __ n__:
         node.sS.. T..
         __ 'render_mode' __ node.knobs
             new_node = ?.cN..('TransformGeo')
@@ -695,9 +695,9 @@ ___ create_transform
 
 ___ read_from_write
     # Create read nodes from selected write nodes
-    nodes = [n ___ n __ ?.sN..() __ 'file' __ n.knobs()]
+    n__ = [n ___ n __ ?.sN..() __ 'file' __ n.knobs()]
     excluded = ['Read', ]
-    ___ node __ nodes:
+    ___ node __ n__:
         __ node.C..  __ excluded:
             c___
         pos = get_pos(node)
@@ -711,14 +711,14 @@ ___ read_from_write
             is_sequence = T..
             filename_base = filename.s..(r'%')[0]
         ____
-            is_sequence = False
+            is_sequence = F..
         __ is_sequence:
             sequences = ?.getFileNameList(d_n_)
             ___ seq __ sequences:
                 __ seq.startswith(filename_base):
                     filepath = __.pa__.j..(d_n_, seq)
                     break
-        read = ?.cN..('Read', 'file {{{0}}}'.f..(filepath), inpanel=False)
+        read = ?.cN..('Read', 'file {{{0}}}'.f..(filepath), in.._F..)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
         colorspace = node['colorspace'].v.. ()
@@ -733,8 +733,8 @@ ___ read_from_write
 
 # Enhanced swap functionality.
 ___ swap_node
-    nodes = ?.sN..()
-    ___ node __ nodes:
+    n__ = ?.sN..()
+    ___ node __ n__:
         __ node.inputs() > 1:
             n_s_.swapAB(node)
         __ node.C..  __ 'OCIOColorSpace':

@@ -1,9 +1,9 @@
 _____ ?
 
-r = ?.toNode('Read1')
+r = ?.tN..('Read1')
 r['reload'].execude()
 
-w = ?.toNode('Write1')
+w = ?.tN..('Write1')
 w['Render'].execude()
 
 ?.execude(w, 1, 1)

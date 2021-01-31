@@ -144,7 +144,7 @@ ___ list_attr_types(s):
         __ all(isinstance(n, typ) ___ n __ s):
             r_ '%s%d' % (typ.__name__, le.(s))
 
-    __ False no. __ list(set([is_number(x) ___ x __ s])):
+    __ F.. no. __ list(set([is_number(x) ___ x __ s])):
         r_ 'float%d' % le.(s)
     r_ 'unknown'
 
@@ -162,7 +162,7 @@ ___ is_number(s):
     Check if a string is a int/float
     """
     __ is_bool(s):
-        r_ False
+        r_ F..
     r_ isinstance(s, in_) or isinstance(s, fl..)
 
 
@@ -200,7 +200,7 @@ ___ is_newer(file1, file2):
     :rtype: bool
     """ 
     __ no. __.pa__.e..(file1) or no. __.pa__.e..(file2):
-        r_ False
+        r_ F..
 
     time1 = __.pa__.getmtime(file1)
     time2 = __.pa__.getmtime(file2)

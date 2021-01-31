@@ -59,15 +59,15 @@ def moblur_controller():
 			# There is a TCL if/else statement here saying, "If the disable_moblur knob is not checked,
 			#      set the value to the GLOBAL_MOTIONBLUR_CONTROLLER's global_motionblur knob.
 			#      Otherwise, set the value to 0."
-			node['motionblur'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
+			node['motionblur'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
 			# Same thing here -- setting an expression to link the value to the new global_shutter knob on our NoOp node.
-			node['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			node['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 
 		# If the node doesn't have a motionblur knob, but it does have a samples knob, we still want to add the same expression.
 		# The only difference here is that the samples knob is always 1 by default, so we should match that with our code.
 		elif node.knob('samples'):
-			node['samples'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
-			node['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			node['samples'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
+			node['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 
 
 
@@ -78,12 +78,12 @@ def moblur_controller():
 		tn = nuke.thisNode()
 
 		if tn.knob('motionblur'):
-			tn['motionblur'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
-			tn['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			tn['motionblur'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 0')
+			tn['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 
 		elif tn.knob('samples'):
-			tn['samples'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
-			tn['shutter'].setExpression('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
+			tn['samples'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_disable_moblur == 0 ? GLOBAL_MOTIONBLUR_CONTROLLER.global_motionblur : 1')
+			tn['shutter'].sE..('GLOBAL_MOTIONBLUR_CONTROLLER.global_shutter')
 
 	# Any time a new node is created, the addExpr() function will run.
 	# If a node without motionblur, samples and/or shutter knobs is created, this addOnCreate() will be ignored.
