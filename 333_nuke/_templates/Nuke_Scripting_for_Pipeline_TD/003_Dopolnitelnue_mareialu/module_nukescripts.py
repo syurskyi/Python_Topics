@@ -1,31 +1,31 @@
-_____ ?
-_____ __
-
-_____ n___
-
-n___.autoBackdrop()
-
-___ clearNodeSelection
-  ___ n __ ?.sN..
-    # n['selected'].setValue(False)
-    n.sS.. F..
-
-n___.clear_selection_recursive()
-n___.declone(node)
-n___.declone(?.selectedNode())
-n___.swapAB(?.selectedNode())
-n___.color_nodes()
-n___.search_replace()
-
-n___.getNukeUserFolder()
-
-# nukescripts.findNextNodeName('Read')
-# nuke.nodes.Read()
-# nuke.nodes.Read(name=nukescripts.findNextNodeName('Read'))
-
-# nuke.createNode('Read')
-# t = nuke.toNode('Read3')
-# t.setSelected(1)
-
-
-
+# _____ ?
+# _____ __
+#
+# _____ n___
+#
+# n___.aB..
+#
+# ___ clearNodeSelection
+#   ___ n __ ?.sN..
+#     # n['selected'].setValue(False)
+#     ?.sS.. F..
+#
+# n___.c_s_r..
+# n___.de.. ?
+# n___.de.. ?.sN..
+# n___.sAB ?.sN..
+# n___.c_n..
+# n___.s_r..
+#
+# n___.gNF..
+#
+# # nukescripts.findNextNodeName('Read')
+# # nuke.nodes.Read()
+# # nuke.nodes.Read(name=nukescripts.findNextNodeName('Read'))
+#
+# # nuke.createNode('Read')
+# # t = nuke.toNode('Read3')
+# # t.setSelected(1)
+#
+#
+#
