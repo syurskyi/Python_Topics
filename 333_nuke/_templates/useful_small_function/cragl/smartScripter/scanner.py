@@ -43,7 +43,7 @@ ____ smartScripter ______ h__
 c_ Scanner(object):
     """Scanner to search for stacks and commands."""
 
-    ___  - (self, root, controller):
+    ___  - (, root, controller):
         """Initialize the scanner instance.
 
         Args:
@@ -54,7 +54,7 @@ c_ Scanner(object):
         logger _ h__.get_logger()
         stacks _ _load_stacks(root)
 
-    ___ _load_stacks(self, root):
+    ___ _load_stacks(, root):
         """Load the stacks in the given root.
 
         Returns:
@@ -97,7 +97,7 @@ c_ Scanner(object):
 
         r_ stacks
 
-    ___ _load_stack(self, directory_path):
+    ___ _load_stack(, directory_path):
         """Load all commands json files from the given path.
 
         Args:

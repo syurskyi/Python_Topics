@@ -1,175 +1,175 @@
-from PySide2.QtGui _____ *
-from PySide2.QtCore _____ *
-from PySide2.QtWidgets _____ *
+____ ______._G.. _____ _
+____ ______._C.. _____ _
+____ ______._W.. _____ _
 _____ __
-_____ json
+_____ j..
 
-HOME_FOLDER = __.pa__.join(__.pa__.d..( -f), 'icons')
+HOME_FOLDER _ __.pa__.join __.pa__.d..  -f 'icons'
 
 
-class Panel(QWidget):
-    ___ __init__(self):
-        super(Panel, self).__init__()
-        self.resize(400, 400)
-        mouse_position = QCursor().pos()
-        self.move(mouse_position - QPoint(200, 200))
-        self.setMouseTracking T..
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Popup)
-        self.setAttribute(Qt.WA_QuitOnClose)
+c_ Panel _W..
+    ___  - 
+        s__ P..  . - 
+        r.. 400 400
+        mouse_position _ _C.. .p..
+        m.. ? - _P.. 200 200
+        sMT.. T..
+        sWF.. __.FWH.. | __.P..
+        sA.. __.WA_QOC..
 
-        self.selected_item = N..
+        selected_item _ N..
 
-        self.mouse_destination = QPoint(self.width()/2, self.height()/2)
+        mouse_destination _ _P.. w.. /2 h.. /2
 
-        self.layout = QGridLayout()
-        self.layout.addWidget(ActionLabel(1), 0, 0)
-        self.layout.addWidget(ActionLabel(2), 0, 1)
-        self.layout.addWidget(ActionLabel(3), 0, 2)
-        self.layout.addWidget(ActionLabel(4), 1, 0)
-        self.layout.addWidget(ActionLabel(5), 1, 2)
-        self.layout.addWidget(ActionLabel(6), 2, 0)
-        self.layout.addWidget(ActionLabel(7), 2, 1)
-        self.layout.addWidget(ActionLabel(8), 2, 2)
+        layout _ _GL..
+        ?.addWidget(ActionLabel(1), 0, 0)
+        ?.addWidget(ActionLabel(2), 0, 1)
+        ?.addWidget(ActionLabel(3), 0, 2)
+        ?.addWidget(ActionLabel(4), 1, 0)
+        ?.addWidget(ActionLabel(5), 1, 2)
+        ?.addWidget(ActionLabel(6), 2, 0)
+        ?.addWidget(ActionLabel(7), 2, 1)
+        ?.addWidget(ActionLabel(8), 2, 2)
 
-        self.setLayout(self.layout)
+        setLayout(?)
 
-        action_path = __.pa__.join(HOME_FOLDER, "actions")
+        action_path _ __.pa__.join(HOME_FOLDER, "actions")
         __ no. __.pa__.exists(action_path):
             __.m_d_(action_path)
 
-    ___ keyReleaseEvent(self, event):
+    ___ keyReleaseEvent(, event):
         __ event.isAutoRepeat
             r_
         __ event.text() __ "n":
-            __ self.selected_item __ N..:
-                self.close()
+            __ selected_item __ N..:
+                close()
                 r_
-            exec self.selected_item.code
-            self.close()
+            exec selected_item.code
+            close()
 
-    ___ paintEvent(self, QPaintEvent):
-        super(Panel, self).paintEvent(QPaintEvent)
-        painter = QPainter(self)
+    ___ paintEvent(, QPaintEvent):
+        s__(Panel, ).paintEvent(QPaintEvent)
+        painter _ QPainter()
 
-        self.draw_line(painter)
-        self.set_label_color()
+        draw_line(painter)
+        set_label_color()
 
-        nuke_image = QPixmap("%s/nuke.png" % HOME_FOLDER)
-        painter.drawPixmap(QPoint(self.width()/2-24, self.height()/2-24), nuke_image)
+        nuke_image _ QPixmap("%s/nuke.png" % HOME_FOLDER)
+        painter.drawPixmap(_P..(width()/2-24, height()/2-24), nuke_image)
 
-    ___ set_label_color(self):
-        widgets = [self.layout.itemAt(i).widget() ___ i __ range(self.layout.count())]
-        self.selected_item = N..
+    ___ set_label_color
+        widgets _ [layout.itemAt(i).widget() ___ i __ range(layout.count())]
+        selected_item _ N..
         ___ w __ widgets:
-            __ self.line.intersected(w.geometry()):
+            __ line.intersected(w.geometry()):
                 w.set_selected T..
-                self.selected_item = w
+                selected_item _ w
             ____
                 w.set_selected F..
 
-    ___ draw_line(self,painter):
-        pen = QPen(QColor(0,0,0))
+    ___ draw_line(,painter):
+        pen _ QPen(QColor(0,0,0))
         pen.setWidth(2)
         painter.setPen(pen)
-        center = QPoint(self.width()/2, self.height()/2)
-        destination = self.mouse_destination
-        self.line = QPolygon([center, center+QPoint(1, 0), destination, destination+QPoint(-1, 0)])
-        painter.drawPolygon(self.line)
+        center _ _P..(width()/2, height()/2)
+        destination _ mouse_destination
+        line _ QPolygon([center, center+_P..(1, 0), destination, destination+_P..(-1, 0)])
+        painter.drawPolygon(line)
 
-    ___ mouseMoveEvent(self, event):
-        self.mouse_destination = event.pos()
-        self.update()
+    ___ mouseMoveEvent(, event):
+        mouse_destination _ event.p..
+        update()
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent(, event):
         __ event.isAutoRepeat
             r_
 
 
-class Dialog(QDialog):
-    ___ __init__(self, id):
-        super(Dialog, self).__init__()
+c_ Dialog(QDialog):
+    ___  - (, id):
+        s__(Dialog, ). - ()
 
-        self.id = id
-        self.action_path = __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
-        name_label = QLabel("Name:")
-        self.name_line_edit = QLineEdit()
-        self.code_plain_text = QPlainTextEdit()
+        id _ id
+        action_path _ __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % id)
+        name_label _ QLabel("Name:")
+        name_line_edit _ QLineEdit()
+        code_plain_text _ QPlainTextEdit()
 
-        name_layout = QHBoxLayout()
+        name_layout _ QHBoxLayout()
         name_layout.addWidget(name_label)
-        name_layout.addWidget(self.name_line_edit)
+        name_layout.addWidget(name_line_edit)
 
-        master_layout = QVBoxLayout()
+        master_layout _ QVBoxLayout()
         master_layout.addLayout(name_layout)
-        master_layout.addWidget(self.code_plain_text)
+        master_layout.addWidget(code_plain_text)
 
-        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, Qt.Horizontal, self)
+        buttons _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, __.Horizontal, )
         master_layout.addWidget(buttons)
 
-        buttons.accepted.connect(self.accept)
-        buttons.rejected.connect(self.reject)
+        buttons.accepted.connect(accept)
+        buttons.rejected.connect(reject)
 
-        self.setLayout(master_layout)
-        self.load_action()
+        setLayout(master_layout)
+        load_action()
 
-    ___ load_action(self):
-        __ __.pa__.exists(self.action_path):
-            doc = json.load(open(self.action_path))
-            name = doc['name']
-            code = doc['code']
-            self.name_line_edit.setText(name)
-            self.code_plain_text.setPlainText(code)
+    ___ load_action
+        __ __.pa__.exists(action_path):
+            doc _ j...load(open(action_path))
+            name _ doc['name']
+            code _ doc['code']
+            name_line_edit.setText(name)
+            code_plain_text.setPlainText(code)
 
-    ___ save_action(self):
-        doc = dict()
-        doc['name'] = self.name_line_edit.text()
-        doc['code'] = self.code_plain_text.toPlainText()
-        pa__ = open(self.action_path, "w")
-        json.dump(doc, pa__)
+    ___ save_action
+        doc _ dict()
+        doc['name'] _ name_line_edit.text()
+        doc['code'] _ code_plain_text.toPlainText()
+        pa__ _ open(action_path, "w")
+        j...dump(doc, pa__)
 
 
-class ActionLabel(QLabel):
-    ___ __init__(self, id):
-        super(ActionLabel, self).__init__()
+c_ ActionLabel(QLabel):
+    ___  - (, id):
+        s__(ActionLabel, ). - ()
 
-        self.id = id
-        self.setAlignment(Qt.AlignCenter)
-        self.setMouseTracking T..
-        self.setFixedWidth(100)
-        self.setFixedHeight(25)
-        self.setStyleSheet("""background:red;
+        id _ id
+        setAlignment(__.AlignCenter)
+        sMT.. T..
+        setFixedWidth(100)
+        setFixedHeight(25)
+        setStyleSheet("""background:red;
                             color:black""")
-        self.set_action()
+        set_action()
 
-    ___ set_action(self):
+    ___ set_action
 
-        pa__ = __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % self.id)
+        pa__ _ __.pa__.join(HOME_FOLDER, "actions", "%s.txt" % id)
         __ __.pa__.exists(pa__):
-            doc = json.load(open(pa__))
-            name = doc['name']
-            code = doc['code']
+            doc _ j...load(open(pa__))
+            name _ doc['name']
+            code _ doc['code']
         ____
-            name = "Action %s" % self.id
-            code = ""
+            name _ "Action %s" % id
+            code _ ""
 
-        self.setText(name)
-        self.code = code
+        setText(name)
+        code _ code
 
-    ___ mousePressEvent(self, event):
-        __ event.buttons() __ Qt.RightButton:
-            dialog = Dialog(self.id)
+    ___ mousePressEvent(, event):
+        __ event.buttons() __ __.RightButton:
+            dialog _ Dialog(id)
             __ dialog.exec_
                 dialog.save_action()
-            self.parent().close()
+            parent().close()
 
-    ___ set_selected(self, is_selected):
+    ___ set_selected(, is_selected):
 
         __ is_selected:
-                self.setStyleSheet("""background:green;
+                setStyleSheet("""background:green;
                             color:black""")
         ____
-            self.setStyleSheet("""background:red;
+            setStyleSheet("""background:red;
                             color:black""")
 ___ start
-    start.panel = Panel()
+    start.panel _ Panel()
     start.panel.show()

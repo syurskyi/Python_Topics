@@ -41,72 +41,72 @@ ___ addFileFilter(externalFilter):
 #  nodes = nuke.menu('Nodes')
 #  nodes.removeItem("ToolSets")
 
-class CreateToolsetsPanel(n_s_.PP..):
+c_ CreateToolsetsPanel(n_s_.PP..):
   # rename is bool var 
 
-  ___ __init__(self, fullFilePath, rename):
+  ___  - (, fullFilePath, rename):
     
-    self.rename = rename
-    self.fullFilePath = fullFilePath
+    rename = rename
+    fullFilePath = fullFilePath
 
     __ rename __ False:
-      self.namePanel = 'Create ToolSet'
-      self.nameOkButton = 'Create'
+      namePanel = 'Create ToolSet'
+      nameOkButton = 'Create'
     ____
-      self.namePanel = 'Rename ToolSet'
-      self.nameOkButton = 'Rename'
+      namePanel = 'Rename ToolSet'
+      nameOkButton = 'Rename'
     
-    n_s_.PP...__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
+    n_s_.PP... - ( , namePanel, 'uk.co.thefoundry.Toolset')
     
     # CREATE KNOBS
-    self.userFolders = # list
+    userFolders = # list
     fullPath = SHARED_TOOLSET_PATH
-    self.buildFolderList(fullPath, '')
+    buildFolderList(fullPath, '')
 
 
-    self.menuItemChoice = ?.CascadingEnumeration_Knob('menuItemChoice','SharedToolSets menu', ['root'] + self.userFolders )
-    self.menuItemChoice.setTooltip("The menu location that the ToolSet will appear in. Specify 'root' to place the SharedToolSets in the main SharedToolSets menu.")
-    self.menuPath = ?.String_Knob('itemName', 'Menu item:')
-    self.menuPath.setFlag(0x00001000)  
-    self.menuPath.setTooltip("ToolSet name. Use the '/' character to create a new submenu for this ToolSet, eg to create a ToolSet named 'Basic3D' and place it in a new submenu '3D', type '3D/Basic3D'. Once created the 3D menu will appear in the ToolSet menu.")
-    self.okButton = ?.PS_K.. (self.nameOkButton.lower(), self.nameOkButton)
+    menuItemChoice = ?.CascadingEnumeration_Knob('menuItemChoice','SharedToolSets menu', ['root'] + userFolders )
+    menuItemChoice.setTooltip("The menu location that the ToolSet will appear in. Specify 'root' to place the SharedToolSets in the main SharedToolSets menu.")
+    menuPath = ?.String_Knob('itemName', 'Menu item:')
+    menuPath.setFlag(0x00001000)
+    menuPath.setTooltip("ToolSet name. Use the '/' character to create a new submenu for this ToolSet, eg to create a ToolSet named 'Basic3D' and place it in a new submenu '3D', type '3D/Basic3D'. Once created the 3D menu will appear in the ToolSet menu.")
+    okButton = ?.PS_K.. (nameOkButton.lower(), nameOkButton)
     #self.okButton.setToolTip("Create a ToolSet from the currently selected nodes with the given name")
-    self.okButton.setFlag(0x00001000)
-    self.cancelButton = ?.PS_K.. ('cancel', 'Cancel')
-    self.space = ?.Text_Knob("space", "", "")
-    self.infoText = ?.Text_Knob('infoText', '<span style="color:orange">/ - create submenus,</span>',  '<span style="color:orange">example: newMenu/myNewToolSet</span>')
+    okButton.setFlag(0x00001000)
+    cancelButton = ?.PS_K.. ('cancel', 'Cancel')
+    space = ?.Text_Knob("space", "", "")
+    infoText = ?.Text_Knob('infoText', '<span style="color:orange">/ - create submenus,</span>',  '<span style="color:orange">example: newMenu/myNewToolSet</span>')
 
     # ADD KNOBS
-    self.aK..(self.menuItemChoice)
-    self.aK..(self.menuPath)
-    self.aK..(self.okButton)
-    self.aK..(self.cancelButton)
-    self.aK..(self.space)
-    self.aK..(self.infoText)
+    aK..(menuItemChoice)
+    aK..(menuPath)
+    aK..(okButton)
+    aK..(cancelButton)
+    aK..(space)
+    aK..(infoText)
 
     __ rename __ T..:
       toolSetPath = fullFilePath.replace(SHARED_TOOLSET_PATH + "/", '') 
       toolSetPath = toolSetPath.replace(".nk", '') 
-      self.menuPath.sV..(toolSetPath)
+      menuPath.sV..(toolSetPath)
 
   #COMMENT:  BUILD A LIST Of PRE_CREATED FOLDER LOCATIONS
-  ___ buildFolderList(self, fullPath, menuPath):
+  ___ buildFolderList(, fullPath, menuPath):
     filecontents = sorted(__.l_d_(fullPath), key=st..lower)
     ___ group __ filecontents:
       __ __.pa__.isd..(__.pa__.j..(fullPath, group)):
-        self.userFolders.ap..(menuPath + group)
-        self.buildFolderList(fullPath + '/' + group, menuPath + group + '/')              
+        userFolders.ap..(menuPath + group)
+        buildFolderList(fullPath + '/' + group, menuPath + group + '/')
 
-  ___ createPreset(self):
-    __ self.renameCreateSharedToolset(st.(self.menuPath.v.. ()), False):
+  ___ createPreset
+    __ renameCreateSharedToolset(st.(menuPath.v.. ()), False):
     #if self.createSharedToolset(str(self.menuPath.value())):
-      self.finishModalDialog( T.. )
+      finishModalDialog( T.. )
   
-  ___ renamePreset(self):
-    __ self.renameCreateSharedToolset(st.(self.menuPath.v.. ()), T..):
-      self.finishModalDialog( T.. )
+  ___ renamePreset
+    __ renameCreateSharedToolset(st.(menuPath.v.. ()), T..):
+      finishModalDialog( T.. )
     
-  ___ renameCreateSharedToolset(self, name, rename):
+  ___ renameCreateSharedToolset(, name, rename):
     ret = False
     
     nameList = name.s..('/')
@@ -124,16 +124,16 @@ class CreateToolsetsPanel(n_s_.PP..):
       filePath = posixpath.j..(fullPath, fileName + '.nk')
       
       __ no. __.pa__.exists(filePath):
-        __ self.rename __ T..:
-          __.rename(self.fullFilePath, filePath)
+        __ rename __ T..:
+          __.rename(fullFilePath, filePath)
         ____
           # create way
           ?.nodeCopy(filePath)
 
       ____ ?.a..('Overwrite existing \n %s?' % filePath):
-        __ self.rename __ T..:
+        __ rename __ T..:
           __.r__(filePath)
-          __.rename(self.fullFilePath, filePath)
+          __.rename(fullFilePath, filePath)
         ____
           # create way
           ?.nodeCopy(filePath)
@@ -143,27 +143,27 @@ class CreateToolsetsPanel(n_s_.PP..):
       ret = False
     r_ ret
 
-  ___ getPresetPath(self):
+  ___ getPresetPath
 
     #COMMENT: Added a bit of usability. Let's preserve a toolset's name
-    tempListToolsetName = self.menuPath.v.. ().s..('/')
+    tempListToolsetName = menuPath.v.. ().s..('/')
     tempToolsetName = tempListToolsetName[-1]
 
-    __ st.(self.menuItemChoice.v.. ()) __ "root":
-      self.menuPath.sV..( ""+ tempToolsetName)
+    __ st.(menuItemChoice.v.. ()) __ "root":
+      menuPath.sV..( ""+ tempToolsetName)
     ____
-      self.menuPath.sV..(self.menuItemChoice.v.. () + "/" + tempToolsetName)
+      menuPath.sV..(menuItemChoice.v.. () + "/" + tempToolsetName)
 
-  ___ knobChanged( self, knob ):
-    __ knob __ self.okButton:
-      __ self.rename __ T..:
-        self.renamePreset()
+  ___ knobChanged( , knob ):
+    __ knob __ okButton:
+      __ rename __ T..:
+        renamePreset()
       ____
-        self.createPreset()
-    ____ knob __ self.cancelButton:
-      self.finishModalDialog( False )
-    ____ knob __ self.menuItemChoice:
-      self.getPresetPath()
+        createPreset()
+    ____ knob __ cancelButton:
+      finishModalDialog( False )
+    ____ knob __ menuItemChoice:
+      getPresetPath()
 
 # NUKESCRIPT FUNCTIONS    
 ___ renameToolset(fullFilePath):

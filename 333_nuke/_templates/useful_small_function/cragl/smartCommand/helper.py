@@ -43,7 +43,7 @@ ___ set_style_sheet(widget, style _ 'styles.qss'):
 
 ___ move_widget(widget_to_move, click_pos, event):
     x, y _ click_pos
-    widget_to_move.xy _ event.globalPos() - ?C...QPoint(x, y)
+    widget_to_move.xy _ event.globalPos() - ?C..._P..(x, y)
     widget_to_move.move(widget_to_move.xy)
 
 
@@ -229,7 +229,7 @@ ___ check_xml_ok(xml):
 
 ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel_label _ 'cancel'):
     msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button _ msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
@@ -250,7 +250,7 @@ ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel
 
 ___ show_path_browser(title):
     dialog _ ?W...QFileDialog()
-    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    dialog.sWF..(?C...__.WindowStaysOnTopHint)
     dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)
@@ -533,4 +533,4 @@ ___ center_window(window):
 
 
 ___ get_cursor_position
-    r_ ?G...QCursor().pos()
+    r_ ?G..._C..().p..

@@ -185,7 +185,7 @@ ___ is_dict(s):
     """
     Returns true if the object is a dict type.
     """
-    from collections ______ OrderedDict
+    ____ collections ______ OrderedDict
     r_ type(s) __ [dict, OrderedDict]
 
 

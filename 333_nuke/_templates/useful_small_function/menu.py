@@ -217,10 +217,10 @@ ___
       __ no. url.startswith( 'http://' ):
         url _ 'http://' + url
       webView.l..( QUrl(url) )
-    ___ urlChanged(self, url):
+    ___ urlChanged(, url):
       locationEdit.setText( url.toString() )
     ___  -
-      ?W... - (self)
+      ?W... - ()
       webView _ QWebView()
       sL..( ?VB.. )
       locationEdit _ QLineEdit( 'http://www.google.com' )

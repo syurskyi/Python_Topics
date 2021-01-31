@@ -128,7 +128,7 @@ c_ CleanModeDialog(?W..):
     """
 
     ___ -
-        s_(CleanModeDialog, self).- ()
+        s_(CleanModeDialog, ).- ()
         sQT..("Please choose the cleanup mode")
         setFixedWidth(550)
 
@@ -172,7 +172,7 @@ c_ CleanModeDialog(?W..):
         populate(cleanup_list)
         sQT..("cleanup script")
 
-    ___ populate(self, cleanup_list):
+    ___ populate(, cleanup_list):
         """
         create widgets for each cleanup node
         @param: cleanup_list: list of nodes to cleanup
@@ -266,7 +266,7 @@ c_ CleanModeDialog(?W..):
         node.selectOnly()
         ?.zoom(1, (node.xpos(), node.yp__()))
 
-    ___ remove_node(self, row, node):
+    ___ remove_node(, row, node):
         """
         remove node
         @param row: int row to remove from table
@@ -315,7 +315,7 @@ c_ CleanModeDialog(?W..):
             ___ c __ checkboxes:
                 c.setChecked(T..)
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent(, event):
         """
         close on escape key pressed
         :return: None

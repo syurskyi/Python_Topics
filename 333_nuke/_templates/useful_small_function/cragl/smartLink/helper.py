@@ -46,7 +46,7 @@ ___ set_style_sheet(widget, style _ 'styles.qss'):
 
 ___ move_widget(widget_to_move, click_pos, event):
     x, y _ click_pos
-    widget_to_move.xy _ event.globalPos() - ?C...QPoint(x, y)
+    widget_to_move.xy _ event.globalPos() - ?C..._P..(x, y)
     widget_to_move.move(widget_to_move.xy)
 
 
@@ -295,13 +295,13 @@ ___ center_window(window):
 
 ___ move_window_under_cursor(window):
     position _ get_cursor_position()
-    window_center _ ?C...QPoint(0.5 * window.width(), 0.5 * window.height())
+    window_center _ ?C..._P..(0.5 * window.width(), 0.5 * window.height())
     position _ position - window_center
     window.move(position)
 
 
 ___ get_cursor_position
-    r_ ?G...QCursor().pos()
+    r_ ?G..._C..().p..
 
 
 ___ create_uid

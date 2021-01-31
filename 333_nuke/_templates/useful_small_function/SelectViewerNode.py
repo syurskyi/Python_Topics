@@ -128,7 +128,7 @@ c_ SelectViewerNode(n_s_.PP..):
    
     ___ -
 
-        n_s_.PP...- (self,"Select Node in Viewer","Select Node in Viewer")
+        n_s_.PP...- (,"Select Node in Viewer","Select Node in Viewer")
 
         sMS..(200, 115)
 
@@ -166,7 +166,7 @@ If the selected viewer is not active, all viewer nodes will be selected
         aK..(warning)
 
 
-    ___ knobChanged(self,knob):
+    ___ knobChanged(,knob):
 
         __ knob.n.. __ "OK":
 

@@ -230,7 +230,7 @@ ___ check_xml_ok(xml, *args):
 
 ___ show_message_box(window, m.., *args):
     msg _ ?W...QMessageBox()
-    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg.sWF..(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -625,7 +625,7 @@ ___ get_resolution(*args):
 
 ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel_labek _ 'cancel'):
     msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button _ msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)

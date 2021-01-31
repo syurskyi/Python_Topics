@@ -455,7 +455,7 @@ ___ load_default_status
 
 ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_button_text _ ''):
     msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button _ msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)
@@ -728,7 +728,7 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
 
 ___ m..(m..):
     msg_box _ ?W...QMessageBox()
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setText(m..)
     msg_box.raise_()
     msg_box.exec_()
@@ -736,7 +736,7 @@ ___ m..(m..):
 
 ___ dialog_set_preview_image(smartlib):
     dialog _ ?W...QFileDialog()
-    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    dialog.sWF..(?C...__.WindowStaysOnTopHint)
     dialog.setWindowIcon(?G...QIcon(load_icons()['icon_logo']))
     dialog.sQT..('choose image file')
     dialog.setNameFilter('jpg files(*.jpg)')
@@ -1401,13 +1401,13 @@ ___ load_tooltips(parent, section, *args):
 
 c_ CustomPath(?W...?W..):
 
-    ___  - (self, shot_root, sml, which):
-        s_(CustomPath, self). - ()
+    ___  - (, shot_root, sml, which):
+        s_(CustomPath, ). - ()
         shot_root _ shot_root
         sml _ sml
         which _ which
         sQT..('Set custom {} path'.f..(which))
-        setWindowFlags(?C...__.WindowStaysOnTopHint)
+        sWF..(?C...__.WindowStaysOnTopHint)
         setMinimumWidth(600)
         build_ui()
 
@@ -1441,7 +1441,7 @@ c_ CustomPath(?W...?W..):
         layout_main.addLayout(layout_top)
         layout_main.addLayout(layout_push)
         sL..(layout_main)
-        set_style_sheet(self)
+        set_style_sheet()
 
     ___ create_signals
         push_close.c__.c..(close)
@@ -1450,7 +1450,7 @@ c_ CustomPath(?W...?W..):
 
     ___ browse
         dialog _ ?W...QFileDialog()
-        dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
+        dialog.sWF..(?C...__.WindowStaysOnTopHint)
         dialog.setFileMode(?W...QFileDialog.Directory)
         dialog.setOption(?W...QFileDialog.ShowDirsOnly)
         __ dialog.exec_() __ ?W...QDialog.Accepted:
@@ -1463,7 +1463,7 @@ c_ CustomPath(?W...?W..):
         ______
             __ input_path.t.. !_ '':
                 msg _ "Failed setting up the path '{}' as custom {} directory. Please choose a different path.".f..(input_path.t.., which)
-                show_message_box(self, msg)
+                show_message_box(, msg)
                 r_
 
         meta_xml _ get_meta_xml(shot_root)
@@ -1488,10 +1488,10 @@ c_ CustomPath(?W...?W..):
             metatree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         __ input_path.t.. __ '':
             msg _ 'Successfully cleared the custom {} path'.f..(which)
-            show_message_box(self, msg)
+            show_message_box(, msg)
         ____
             msg _ "Successfully set up the custom {} path to: '{}'".f..(which, input_path.text())
-            show_message_box(self, msg)
+            show_message_box(, msg)
         c__
         __ sml __ no. N..:
             ___
@@ -1505,7 +1505,7 @@ c_ CustomPath(?W...?W..):
 
         r_
 
-    ___ load_custom_path(self, which):
+    ___ load_custom_path(, which):
         meta_xml _ get_meta_xml(shot_root)
         metatree _ ET.parse(meta_xml)
         metaroot _ metatree.getroot()
@@ -1516,6 +1516,6 @@ c_ CustomPath(?W...?W..):
                 ____
                     r_ ''
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent(, event):
         __ event.key() __ ?C...__.Key_Escape:
             c__

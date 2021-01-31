@@ -16,7 +16,7 @@ menubar = ?.m__("Nuke")
 toolMenu = menubar.addMenu('&Tools')
 toolMenu.aC..("Multi Script Editor", multi_script_editor.showNuke)
 
-from clipboard _____ clipboard_core
+____ clipboard _____ clipboard_core
 
 m__ = ?.m__("Nuke")
 fxphd = m__.addMenu("FXPHD")

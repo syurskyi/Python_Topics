@@ -219,7 +219,7 @@ ___ check_xml_ok(xml, *args):
 
 ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel_label _ 'cancel'):
     msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button _ msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
@@ -265,7 +265,7 @@ ___ open_in_explorer(pa__, parent _ N.., *args):
 
 ___ show_message_box(window, m.., *args):
     msg _ ?W...QMessageBox()
-    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg.sWF..(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -353,7 +353,7 @@ ___ add_this_nukescript(smart_collector, source):
 
 ___ show_path_browser(title):
     dialog _ ?W...QFileDialog()
-    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    dialog.sWF..(?C...__.WindowStaysOnTopHint)
     dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)

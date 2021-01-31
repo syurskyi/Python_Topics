@@ -6,10 +6,10 @@ ______ ___
 
 c_ ClipboardUi(?TW..):
     ___  -
-        s_(ClipboardUi, self). - ()
+        s_(ClipboardUi, ). - ()
 
         sQT..("Clipboard")
-        setWindowFlags(__.WindowStaysOnTopHint)
+        sWF..(__.WindowStaysOnTopHint)
         resize(500, 600)
         sMS..(500, 600)
 
@@ -93,7 +93,7 @@ c_ ClipboardUi(?TW..):
 
 c_ HistoryTableWidget(QTableWidget):
     ___  -
-        s_(HistoryTableWidget, self). - ()
+        s_(HistoryTableWidget, ). - ()
 
         setColumnCount(2)
         setSelectionBehavior(QAbstractItemView.SelectRows)

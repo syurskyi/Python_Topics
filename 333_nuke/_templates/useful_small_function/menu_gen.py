@@ -9,7 +9,7 @@ ______ __
 # More detailed description can be here
 #
 c_ BaseMenu(object):
-    ___  - (self, menu_name):
+    ___  - (, menu_name):
         _menu_name _ menu_name
 
 
@@ -24,8 +24,8 @@ c_ BaseMenu(object):
 # More detailed description can be here
 #
 c_ NukeMenuGenerator(BaseMenu):
-    ___  - (self, menu_name):
-        s_(NukeMenuGenerator, self). - (menu_name)
+    ___  - (, menu_name):
+        s_(NukeMenuGenerator, ). - (menu_name)
         #NukeMenuGenerator.__dict__['__init__'](self, menu_name)
 
 

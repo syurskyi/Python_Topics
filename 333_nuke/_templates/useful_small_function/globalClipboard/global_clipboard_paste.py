@@ -10,8 +10,8 @@ ____
     ____ ?.?G.. ______ _
 
 c_ Global_clipboard(QDialog):
-    ___  - (self, parent_N..):
-        s_(Global_clipboard, self). - (parent)
+    ___  - (, parent_N..):
+        s_(Global_clipboard, ). - (parent)
 
         # Create widgets
         label _ ?L..("First initial and last name:")

@@ -728,7 +728,7 @@ c_ modalPanel(?.PP..):
 
     ___  -
 
-        ?.PP... - (self,"b_deep toolset")
+        ?.PP... - (,"b_deep toolset")
         #CREATE KNOBS
         depth_from_deep _ ?.PS_K..('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
         create_holdouts _ ?.E_K..('mode','build mode  ', ['contact sheet','extract'])
@@ -761,7 +761,7 @@ c_ modalPanel(?.PP..):
             frame_display.sV..("")
             print "here the user decides"
 
-    ___ knobChanged(self,knob):
+    ___ knobChanged(,knob):
         __ knob.n..  __ "fRange":
             get_frame_range()
                       

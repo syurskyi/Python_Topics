@@ -83,7 +83,7 @@ c_ Settings(object):
 
     ___  -
         """Initialize the Settings instance."""
-        s_(Settings, self). - ()
+        s_(Settings, ). - ()
 
         file_ _ _check_settings_file()
         data _ _load(file_)

@@ -112,7 +112,7 @@ widgetStyle _ '''
 c_ colorWheelClass(?W..):
     colorChangedSignal _ Signal(list)
     ___  -
-        s_(colorWheelClass, self). - ()
+        s_(colorWheelClass, ). - ()
         hw _ 200
         padding _ 2
         blackBorder _ 10
@@ -124,11 +124,11 @@ c_ colorWheelClass(?W..):
         pickerSize _ 8
         v..  _ 0
 
-    ___ paintEvent(self, event):
+    ___ paintEvent(, event):
         __ no. img:
             img _ getCircle()
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin()
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
@@ -172,15 +172,15 @@ c_ colorWheelClass(?W..):
                             pickerSize)
         painter.end()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent(, event):
         setPickerPos(event.pos())
-        ?W...mousePressEvent(self, event)
+        ?W...mousePressEvent(, event)
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent(, event):
         setPickerPos(event.pos())
-        ?W...mouseMoveEvent(self, event)
+        ?W...mouseMoveEvent(, event)
 
-    ___ setPickerPos(self, pos):
+    ___ setPickerPos(, pos):
         x _ pos.x()-center
         y _ pos.y() - center
         distance _ math.sqrt((x * x) + (y * y))
@@ -203,7 +203,7 @@ c_ colorWheelClass(?W..):
         s _ min(1, distance / radius)
         colorChangedSignal.emit([angle/360,s])
 
-    ___ sV..(self, v):
+    ___ sV..(, v):
         v..  _ (1000-v) * 0.001
         update()
         updateColor()
@@ -233,7 +233,7 @@ c_ colorWheelClass(?W..):
 c_ colorRampClass(?W..):
     colorChangedSignal _ Signal(list)
     ___  -
-        s_(colorRampClass, self). - ()
+        s_(colorRampClass, ). - ()
         hw _ 200
         setFixedSize(QSize(hw, hw))
         padding _ 2
@@ -242,11 +242,11 @@ c_ colorRampClass(?W..):
         img _ N..
         pickerSize _ 8
 
-    ___ paintEvent(self, event):
+    ___ paintEvent(, event):
         __ no. img:
             img _ getRamp()
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin()
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
@@ -276,20 +276,20 @@ c_ colorRampClass(?W..):
         s _ pick[1]/fl..(hw)
         colorChangedSignal.emit([h,s])
 
-    ___ sV..(self, v):
+    ___ sV..(, v):
         v..  _ (1000-v) * 0.001
         update()
         updateColor()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent(, event):
         setPickerPos(event.pos())
-        ?W...mousePressEvent(self, event)
+        ?W...mousePressEvent(, event)
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent(, event):
         setPickerPos(event.pos())
-        ?W...mouseMoveEvent(self, event)
+        ?W...mouseMoveEvent(, event)
 
-    ___ setPickerPos(self, pos):
+    ___ setPickerPos(, pos):
         x _ pos.x()
         y _ pos.y()
         __ x < 0:
@@ -317,8 +317,8 @@ c_ colorRampClass(?W..):
 
 
 c_ colorPickerClass(?W..):
-    ___  - (self, nukeNode_N.., knob_N.., label_'Empty'):
-        s_(colorPickerClass, self). - ()
+    ___  - (, nukeNode_N.., knob_N.., label_'Empty'):
+        s_(colorPickerClass, ). - ()
         #window
         resize(QSize(250, 340))
         setStyleSheet(widgetStyle)
@@ -360,7 +360,7 @@ c_ colorPickerClass(?W..):
         v.. .sV..(1000)
         mainLy.addLayout(ly)
         #color values
-        grid_ly _ QGridLayout()
+        grid_ly _ _GL..
         hex_lb _ ?L..()
         hex_lb.setLayoutDirection(__.RightToLeft)
         hex_lb.setText("HEX")
@@ -409,13 +409,13 @@ c_ colorPickerClass(?W..):
         pix.fill(QColor(__.red))
         setWindowIcon(QIcon(pix))
 
-    ___ receiveColor(self, hs):
+    ___ receiveColor(, hs):
         v _ v.. .v..*0.001
         c _ QColor()
         c.setHsvF(hs[0], hs[1], v)
         updateColor(c)
 
-    ___ updateColor(self, color):
+    ___ updateColor(, color):
         color.setStyleSheet('''
         QWidget{
             background-color:@;

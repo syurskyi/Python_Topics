@@ -302,7 +302,7 @@ ___ set_style_sheet(widget, *args):
 
 ___ show_message_box(window, m.., *args):
     msg _ ?W...QMessageBox()
-    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg.sWF..(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -918,7 +918,7 @@ ___ delete_cache_path(pa__, *args):
 
 ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_button_text _ ''):
     msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    msg_box.sWF..(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button _ msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)

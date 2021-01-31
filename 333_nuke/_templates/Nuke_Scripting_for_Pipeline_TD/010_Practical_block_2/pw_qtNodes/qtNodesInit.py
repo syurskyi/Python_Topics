@@ -22,12 +22,12 @@ ___ getMainWindow
 qNuke _ getMainWindow()
 
 c_ eventFilterWindowClass(QObject):
-    ___ eventFilter(self, obj, ev):
+    ___ eventFilter(, obj, ev):
         __ ev.type() __ ?E__.ChildPolished:
             processNode(ev.child())
         r_ F..
         
-    ___ processNode(self, n):
+    ___ processNode(, n):
         nukeNode _ ?.tN..( st.(n.objectName()) )
         __ nukeNode:
             nodeClass _ nukeNode.C..

@@ -38,24 +38,24 @@ c_ Tablet(list):
     """
     """
 
-    ___  - (self, name_N.., label_N.., type_N.., parent_N..):
+    ___  - (, name_N.., label_N.., type_N.., parent_N..):
         name _ name
         label _ label
         type _ type
         parent _ parent
-        self[:] _ list()
+        [:] _ list()
 
         tab_closed _ F..
         not_in_group _ type __ no. N.. an. type !_ TYPE_GROUP
 
-    ___ __eq__(self, other):
+    ___ __eq__(, other):
         r_ "@" + name __ other
 
-    ___ find_tab(self, name):
+    ___ find_tab(, name):
         """Return child tab if exists in list"""
-        r_ next((item ___ item __ self __ item __ "@" + name), N..)
+        r_ next((item ___ item __  __ item __ "@" + name), N..)
 
-    ___ consume(self, queue):
+    ___ consume(, queue):
         """
         """
         ___ under_root
@@ -99,7 +99,7 @@ c_ Tablet(list):
             __ tab_closed an. under_root
                 r_
 
-    ___ merge(self, other):
+    ___ merge(, other):
         """
         """
         ___ item __ other:
@@ -111,11 +111,11 @@ c_ Tablet(list):
 
             ap..(item)
 
-    ___ to_script(self, join_T..):
+    ___ to_script(, join_T..):
         """
         """
         script _ list()
-        ___ item __ self:
+        ___ item __ :
             __ i..(item, Tablet):
                 sub_script _ item.to_script(join_F..)
 

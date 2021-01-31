@@ -13,7 +13,7 @@ c_ global_clipboard
         saveName _ "tempClipBoard"
         savePath _ "{}{}_{}.nk".f..(repo, saveName, user)
 
-    ___ paste(self, getUser):
+    ___ paste(, getUser):
         loadPath _ "{}{}_{}.nk".f..(repo, saveName, getUser)
         __ __.pa__.exists(loadPath):
             ?.nodePaste(loadPath)

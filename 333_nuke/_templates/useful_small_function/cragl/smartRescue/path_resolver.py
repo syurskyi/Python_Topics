@@ -28,7 +28,7 @@ ______ ___
 c_ PathResolver(object):
     """Resolve absolute path to PySide and Nuke executable."""
 
-    ___  - (self, pa__):
+    ___  - (, pa__):
         """Initialize the PathResolver instance.
 
         Args:
@@ -119,7 +119,7 @@ c_ PathResolver(object):
         """
         ___.pa__.ap..(site_packages)
 
-    ___ set_path(self, pa__):
+    ___ set_path(, pa__):
         """Set the path to the given path and ensure a directory is used.
 
         Args:

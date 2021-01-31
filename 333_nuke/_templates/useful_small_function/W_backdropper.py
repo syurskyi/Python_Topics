@@ -44,15 +44,15 @@ _____ ?, n_s_
 
 #Choose between PySide and PySide2 based on Nuke version
 __ ?.NUKE_VERSION_MAJOR < 11:
-    from PySide _____ QtCore, QtGui, QtGui as QtWidgets
+    ____ PySide _____ _C.., _G.., _G.. as _W..
 ____
-    from PySide2 _____ QtGui, QtCore, QtWidgets
+    ____ ______ _____ _G.., _C.., _W..
 
 _____ __
 _____ re
 
-from datetime _____ datetime as dt
-from getpass _____ getuser
+____ datetime _____ datetime as dt
+____ getpass _____ getuser
 
 
 #----------------------------------------------------------------------------------------------------------
@@ -360,12 +360,12 @@ ___ closePreferencesPanel(save = False):
     preferencesButton = N..
 
     # find preferences
-    ___ widget __ QtWidgets.QApplication.instance().allWidgets
+    ___ widget __ _W...QApplication.instance().allWidgets
         __ widget.objectName() __ 'foundry.hiero.preferencesdialog':
 
             # loop over children
             ___ child __ widget.children
-                __ isinstance(child, QtWidgets.QDialogButtonBox):
+                __ isinstance(child, _W...QDialogButtonBox):
 
                     # buttons
                     ___ button __ child.buttons
@@ -395,8 +395,8 @@ ___ openPreferencesPanel
     Open the preferences panel
     '''
 
-    event = QtGui.QKeyEvent(QtCore.QEvent.KeyPress, QtCore.Qt.Key_S, QtCore.Qt.ShiftModifier)
-    nukeInstance = QtWidgets.QApplication.instance()
+    event = _G...QKeyEvent(_C...QEvent.KeyPress, _C...__.Key_S, _C...__.ShiftModifier)
+    nukeInstance = _W...QApplication.instance()
     nukeInstance.postEvent(nukeInstance, event)
 
 ___ addPreferences
@@ -515,97 +515,97 @@ ___ addPreferences
 # _____/Export
 #----------------------------------------------------------------------------------------------------------
 
-class ImportExportWidget(QtWidgets.QWidget):
+c_ ImportExportWidget(_W..._W..):
 
-    ___ __init__(self):
+    ___  -
 
-        super(ImportExportWidget, self).__init__()
+        s__(ImportExportWidget, ). - ()
 
-        self.setParent(QtWidgets.QApplication.instance().activeWindow())
-        self.setWindowFlags(QtCore.Qt.Tool)
+        setParent(_W...QApplication.instance().activeWindow())
+        sWF..(_C...__.Tool)
 
         dividerLine = '-'*106
-        self.header = ['#%s'%dividerLine,
+        header = ['#%s'%dividerLine,
             '#',
             '# W_BACKDROPPER SETTINGS FILE',
             '#',
             '# CREATED ON {0} BY {1}'.f..(dt.now().s_t_('%A %d %B %Y (%H:%M)').upper(), getuser().upper()),
             '#',
             '#%s\n\n'%dividerLine]
-        self.header = '\n'.join(self.header)
+        header = '\n'.join(header)
 
         #--------------------------------------------------------------------------------------------------
         
-        self.clipboardRadioButton = QtWidgets.QRadioButton('Clipboard')
-        self.clipboardRadioButton.setChecked T..
+        clipboardRadioButton = _W...QRadioButton('Clipboard')
+        clipboardRadioButton.setChecked T..
 
-        self.fileRadioButton = QtWidgets.QRadioButton('File')
-        self.fileRadioButton.toggled.connect(self.toggleFileWidgets)
+        fileRadioButton = _W...QRadioButton('File')
+        fileRadioButton.toggled.connect(toggleFileWidgets)
 
-        modeLayout = QtWidgets.QHBoxLayout()
+        modeLayout = _W...QHBoxLayout()
         modeLayout.addStretch()
-        ___ widget __ [self.clipboardRadioButton, self.fileRadioButton]:
+        ___ widget __ [clipboardRadioButton, fileRadioButton]:
             modeLayout.addWidget(widget)
         modeLayout.addStretch()
 
         #--------------------------------------------------------------------------------------------------
 
-        self.pathLabel = QtWidgets.QLabel('Path')
-        self.pathLineEdit = QtWidgets.QLineEdit('')
-        self.pathButton = QtWidgets.QPushButton('Browse')
-        self.pathButton.clicked.connect(self.browseFile)
+        pathLabel = _W...QLabel('Path')
+        pathLineEdit = _W...QLineEdit('')
+        pathButton = _W...QPushButton('Browse')
+        pathButton.clicked.connect(browseFile)
 
-        self.toggleFileWidgets()
+        toggleFileWidgets()
 
-        pathLayout = QtWidgets.QHBoxLayout()
-        ___ widget __ [self.pathLabel, self.pathLineEdit, self.pathButton]:
+        pathLayout = _W...QHBoxLayout()
+        ___ widget __ [pathLabel, pathLineEdit, pathButton]:
             pathLayout.addWidget(widget)
 
         #--------------------------------------------------------------------------------------------------
 
-        self.importButton = QtWidgets.QPushButton('_____')
-        self.importButton.clicked.connect(self.importSettings)
+        importButton = _W...QPushButton('_____')
+        importButton.clicked.connect(importSettings)
 
-        self.exportButton = QtWidgets.QPushButton('Export')
-        self.exportButton.clicked.connect(self.exportSettings)
+        exportButton = _W...QPushButton('Export')
+        exportButton.clicked.connect(exportSettings)
 
-        self.cancelButton = QtWidgets.QPushButton('Cancel')
-        self.cancelButton.clicked.connect(self.close)
+        cancelButton = _W...QPushButton('Cancel')
+        cancelButton.clicked.connect(close)
 
-        buttonLayout = QtWidgets.QHBoxLayout()
-        ___ widget __ [self.importButton, self.exportButton, self.cancelButton]:
+        buttonLayout = _W...QHBoxLayout()
+        ___ widget __ [importButton, exportButton, cancelButton]:
             buttonLayout.addWidget(widget)
 
         #--------------------------------------------------------------------------------------------------
 
-        mainLayout = QtWidgets.QVBoxLayout()
+        mainLayout = _W...QVBoxLayout()
 
         ___ layout __ [modeLayout, pathLayout, LineWidget(), buttonLayout]:
-            __ isinstance(layout, QtWidgets.QHBoxLayout):
+            __ isinstance(layout, _W...QHBoxLayout):
                 mainLayout.addLayout(layout)
             ____
                 mainLayout.addWidget(layout)
 
-        mainLayout.setSizeConstraint( QtWidgets.QLayout.SetFixedSize )
-        self.setLayout(mainLayout)
+        mainLayout.setSizeConstraint( _W...QLayout.SetFixedSize )
+        setLayout(mainLayout)
 
         #--------------------------------------------------------------------------------------------------
 
-        self.adjustSize()
-        self.move(QtGui.QCursor().pos() - QtCore.QPoint((self.width()/2),(self.height()/2)))
+        adjustSize()
+        move(_G..._C..().p.. - _C..._P..((width()/2),(height()/2)))
 
 
-    ___ toggleFileWidgets(self):
+    ___ toggleFileWidgets
         '''
         Disable parts of the interface when the switch checkbox changes state
         '''
         
-        state = self.fileRadioButton.isChecked()
+        state = fileRadioButton.isChecked()
 
-        ___ widget __ [self.pathLineEdit, self.pathButton]:
+        ___ widget __ [pathLineEdit, pathButton]:
             widget.setEnabled(state)
 
-    ___ browseFile(self):
+    ___ browseFile
         '''
         Launch browser to navigate to the desired file
         '''
@@ -615,9 +615,9 @@ class ImportExportWidget(QtWidgets.QWidget):
             __ no. filePath.endswith(extension):
                 filePath += extension
 
-            self.pathLineEdit.setText(filePath)
+            pathLineEdit.setText(filePath)
 
-    ___ exportSettings(self):
+    ___ exportSettings
         '''
         Export the current settings to either a file or the clipboard.
         '''
@@ -641,21 +641,21 @@ class ImportExportWidget(QtWidgets.QWidget):
 
         settings = '\n'.join(settings)
 
-        settings = self.header + settings
+        settings = header + settings
 
-        __ self.fileRadioButton.isChecked
-            location = self.pathLineEdit.text()
+        __ fileRadioButton.isChecked
+            location = pathLineEdit.text()
             with open(location, 'w') as file:
                 file.write(settings)
 
         ____
-            QtWidgets.QApplication.clipboard().setText(settings)
+            _W...QApplication.clipboard().setText(settings)
             location = 'clipboard'
 
         ?.m__('W_backdropper settings succesfully writen to {0}.'.f..(location))
-        self.close()
+        close()
 
-    ___ importSettings(self):
+    ___ importSettings
         '''
         _____ settings from either a file or the clipboard.
         '''
@@ -663,8 +663,8 @@ class ImportExportWidget(QtWidgets.QWidget):
         preferencesKnobs = preferencesNode.knobs().keys()
         slotPrefix = 'backdropperColor'
 
-        __ self.fileRadioButton.isChecked
-            location = self.pathLineEdit.text()
+        __ fileRadioButton.isChecked
+            location = pathLineEdit.text()
             __ no. location.endswith('.backdropper'):
                 ?.m__('Invalid file')
                 r_
@@ -673,7 +673,7 @@ class ImportExportWidget(QtWidgets.QWidget):
                 settings = file.read()
 
         ____
-            settings = QtWidgets.QApplication.clipboard().text()
+            settings = _W...QApplication.clipboard().text()
 
         #remove header and split in lines
         settings = [line ___ line __ settings.s..('\n') __ line and no. line.startswith('#')]
@@ -706,16 +706,16 @@ class ImportExportWidget(QtWidgets.QWidget):
             updatePreferences T..
             openPreferencesPanel()
 
-        self.close()
+        close()
 
-class LineWidget(QtWidgets.QFrame):
+c_ LineWidget(_W...QFrame):
 
-    ___ __init__(self):
+    ___  -
 
-        super(LineWidget, self).__init__()
+        s__(LineWidget, ). - ()
 
-        self.setFrameShape(QtWidgets.QFrame.HLine)
-        self.setFrameShadow(QtWidgets.QFrame.Sunken)
+        setFrameShape(_W...QFrame.HLine)
+        setFrameShadow(_W...QFrame.Sunken)
 
 ___ importExportPanel
     '''

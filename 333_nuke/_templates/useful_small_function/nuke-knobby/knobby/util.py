@@ -85,13 +85,13 @@ c_ Knobby(object):
 
     """
 
-    ___  - (self, type, v.. , flags_N.., *args):
+    ___  - (, type, v.. , flags_N.., *args):
         type _ type
         v..  _ v..
         flags _ flags or # list
         args _ args
 
-    ___ create(self, name, nice_N..):
+    ___ create(, name, nice_N..):
         knob_cls _ getattr(?, type)
         knob _ knob_cls(name, nice, *args)
         __ v..  __ no. N..:
