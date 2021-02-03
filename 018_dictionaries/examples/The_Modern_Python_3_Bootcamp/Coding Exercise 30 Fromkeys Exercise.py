@@ -15,3 +15,4 @@ game_properties = [
     "achievements"
 ]
 initial_game_state = dict.fromkeys(game_properties, 0)
+print(initial_game_state)
