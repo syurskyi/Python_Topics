@@ -6,4 +6,6 @@ x = zip(a, b)
 a = ("John", "Charles", "Mike")
 b = ("Jenny", "Christy", "Monica", "Vicky")
 
-x = zip(a, b) 
+x = zip(a, b)
+
+print(x)
