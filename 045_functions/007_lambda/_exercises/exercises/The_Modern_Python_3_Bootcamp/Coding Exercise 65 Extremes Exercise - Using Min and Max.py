@@ -6,7 +6,7 @@
 #     I wrap the values I get back in a new tuple and return it!
 
 
-def extremes(nums):
-    return (mi.(nums), ma.(nums))
+___ extremes(nums):
+    r_ (mi.(nums), ma.(nums))
 
 

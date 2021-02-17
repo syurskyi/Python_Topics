@@ -12,7 +12,7 @@ frame.pack()  # =======================
 button = tk.Button(frame,
                    text="CLICK ME",
                    fg="red",
-                   command=lambda: print("Hello"))
+                   command=l_____: print("Hello"))
 
 
 # DON'T WORRY ABOUT ANY OF THIS CODE

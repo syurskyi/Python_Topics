@@ -6,5 +6,5 @@
 #     However filter doesn't return a list, so I have to cast it into a list and then return it
 
 
-def remove_negatives(nums):
-    return list(filter(lambda l: l >= 0, nums))
+___ remove_negatives(nums):
+    r_ list(filter(l_____ l: l >= 0, nums))

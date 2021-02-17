@@ -5,29 +5,29 @@ students = ['dan', 'ang', 'kate']
 
 # returns dict with {student:highest score} USING DICT COMP
 # {'dan': 98, 'ang': 91, 'kate': 78}
-final_grades = {t[0]:ma.(t[1], t[2]) ___ t __ zip(students, midterms, finals)}
+final_grades = {t[0]:ma.(t[1], t[2]) ___ t __ z__(students, midterms, finals)}
 
 
 # returns dict with {student:highest score} (same thing as above) USING MAP+LAMBDA
 # {'dan': 98, 'ang': 91, 'kate': 78}
-final_grades = dict(
-    zip(
+final_grades = d__(
+    z__(
         students,
-        map(
-            lambda pair: ma.(pair),
-            zip(midterms, finals)
+        m__(
+            l_____ pair: ma.(pair),
+            z__(midterms, finals)
         )
     )
 )
 
 # returns dict with student:average score
 # {'dan': 89.0, 'ang': 90.0, 'kate': 65.5}
-avg_grades = dict(
-    zip(
+avg_grades = d__(
+    z__(
         students,
-        map(
-            lambda pair: ((pair[0]+pair[1])/2),
-            zip(midterms, finals)
+        m__(
+            l_____ pair: ((pair[0]+pair[1])/2),
+            z__(midterms, finals)
         )
     )
 )

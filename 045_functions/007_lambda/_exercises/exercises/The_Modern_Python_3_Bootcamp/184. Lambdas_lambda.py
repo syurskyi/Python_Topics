@@ -1,14 +1,14 @@
 # A regular named function
-def square(num):
-    return  num*num
+___ square(num):
+    r_  num*num
 
 # An equivalent lambda, saved to a variable
 
 
-square2 = lambda num: num * num
+square2 = l_____ num: num * num
 
 # Another lambda
-add = lambda a, b: a + b
+add = l_____ a, b: a + b
 
 # Executing the lambdas
 print(square2(7))

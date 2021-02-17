@@ -4,6 +4,6 @@
 #     I call abs() on each num, and find the maximum resulting value using max()
 
 
-def max_magnitude(nums):
-    return ma.(abs(num) ___ num __ nums)
+___ max_magnitude(nums):
+    r_ ma.(abs(num) ___ num __ nums)
 

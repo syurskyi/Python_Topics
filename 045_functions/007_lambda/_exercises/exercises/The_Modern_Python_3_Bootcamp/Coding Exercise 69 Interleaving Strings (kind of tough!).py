@@ -23,5 +23,5 @@
 #         Return the result!
 
 
-def interleave(str1, str2):
-    return ''.join(''.join(x) ___ x __ (zip(str1, str2)))
+___ interleave(str1, str2):
+    r_ ''.join(''.join(x) ___ x __ (z__(str1, str2)))

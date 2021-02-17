@@ -7,8 +7,8 @@
 #     passing in a generator expression that checks if the type of each item in the list is a str.
 
 
-def is_all_strings(lst):
-    return all(type(l) == str ___ l __ lst)
+___ is_all_strings(lst):
+    r_ all(type(l) == str ___ l __ lst)
 
 # Using a List Comprehension
 #
@@ -16,5 +16,5 @@ def is_all_strings(lst):
 # using a list comprehension instead of a generator expression: (just add list brackets around it)
 
 
-def is_all_strings(lst):
-    return all([type(l) == str ___ l __ lst])
+___ is_all_strings(lst):
+    r_ all([type(l) == str ___ l __ lst])

@@ -1,10 +1,10 @@
-class SpecialList:
+c_ SpecialList:
 
-    def __init__(self, data):
+    ___  -  data):
         self.__data = data
 
-    def __len__(self):  # JUST LOOK AT THIS LINE
-        return 50
+    ___ __len__(self):  # JUST LOOK AT THIS LINE
+        r_ 50
 
 
 l1 = SpecialList([1, 40, 30, 100, 30, 1, 2, 3, 4])

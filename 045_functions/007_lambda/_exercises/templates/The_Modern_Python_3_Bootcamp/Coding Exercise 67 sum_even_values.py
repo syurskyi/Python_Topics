@@ -8,5 +8,5 @@
 #     is 0, so I don't have to do anything special to get it to return 0 if there are no even numbers!
 
 
-def sum_even_values(*args):
-    return sum(arg ___ arg __ args if arg % 2 == 0)
+___ sum_even_values(*args):
+    r_ sum(arg ___ arg __ args if arg % 2 == 0)
