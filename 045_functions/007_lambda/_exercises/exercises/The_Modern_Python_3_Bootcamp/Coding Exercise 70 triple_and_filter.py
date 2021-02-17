@@ -4,4 +4,4 @@
 
 
 ___ triple_and_filter(lst):
-    r_ list(filter(l_____ x: x % 4 == 0, m__(l_____ x: x * 3, lst)))
+    r_ l..(f..(l_____ x: x % 4 __ 0, m__(l_____ x: x * 3, lst)))

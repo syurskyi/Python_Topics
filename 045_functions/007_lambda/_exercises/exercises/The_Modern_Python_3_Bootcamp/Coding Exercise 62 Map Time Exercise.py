@@ -9,4 +9,4 @@
 
 
 ___ decrement_list(l):
-    r_ list(m__(l_____ n: n - 1, l))
+    r_ l..(m__(l_____ n: n - 1, l))

@@ -8,7 +8,7 @@
 
 
 ___ is_all_strings(lst):
-    r_ all(type(l) == str ___ l __ lst)
+    r_ a..(ty..(l) __ st_ ___ l __ lst)
 
 # Using a List Comprehension
 #
@@ -17,4 +17,4 @@ ___ is_all_strings(lst):
 
 
 ___ is_all_strings(lst):
-    r_ all([type(l) == str ___ l __ lst])
+    r_ a..([ty..(l) __ st_ ___ l __ lst])

@@ -9,4 +9,4 @@
 
 
 ___ sum_even_values(*args):
-    r_ sum(arg ___ arg __ args if arg % 2 == 0)
+    r_ su_(arg ___ arg __ args __ arg % 2 __ 0)

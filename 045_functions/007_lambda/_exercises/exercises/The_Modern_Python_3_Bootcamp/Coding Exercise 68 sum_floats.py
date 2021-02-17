@@ -11,4 +11,4 @@
 
 
 ___ sum_floats(*args):
-    r_ sum(arg ___ arg __ args if type(arg) == float)
+    r_ su_(arg ___ arg __ args __ ty..(arg) __ float)

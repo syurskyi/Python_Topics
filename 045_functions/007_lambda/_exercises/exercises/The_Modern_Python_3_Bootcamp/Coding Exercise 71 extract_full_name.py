@@ -4,4 +4,4 @@
 
 
 ___ extract_full_name(l):
-    r_ list(m__(l_____ val: "{} {}".format(val['first'], val['last']), l))
+    r_ l..(m__(l_____ val: "{} {}".format(val['first'], val['last']), l))

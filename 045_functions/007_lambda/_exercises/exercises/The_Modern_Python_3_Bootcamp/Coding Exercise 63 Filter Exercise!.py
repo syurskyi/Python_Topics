@@ -7,4 +7,4 @@
 
 
 ___ remove_negatives(nums):
-    r_ list(filter(l_____ l: l >= 0, nums))
+    r_ l..(f..(l_____ l: l >= 0, nums))
