@@ -1,10 +1,10 @@
 names = ['Arya', "Samson", "Dora", "Tim", "Ollivander"]
 
 # finds the minimum length of a name in names
-min(len(name) ___ name __ names)  # 3
+min(le.(name) ___ name __ names)  # 3
 
 # find the longest name itself
-max(names, key=lambda n: len(n))  # Ollivander
+max(names, key=lambda n: le.(n))  # Ollivander
 
 songs = [
     {"title": "happy birthday", "playcount": 1},

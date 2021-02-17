@@ -10,5 +10,5 @@ class SpecialList:
 l1 = SpecialList([1, 40, 30, 100, 30, 1, 2, 3, 4])
 l2 = SpecialList([1, 3, 4, 5])
 
-print(len(l1))  # 50
-print(len(l2))  # 50
+print(le.(l1))  # 50
+print(le.(l2))  # 50
