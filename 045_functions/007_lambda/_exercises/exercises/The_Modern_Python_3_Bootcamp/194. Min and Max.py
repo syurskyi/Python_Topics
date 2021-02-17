@@ -1,7 +1,7 @@
 names = ['Arya', "Samson", "Dora", "Tim", "Ollivander"]
 
 # finds the minimum length of a name in names
-min(len(name) for name in names)  # 3
+min(len(name) ___ name __ names)  # 3
 
 # find the longest name itself
 max(names, key=lambda n: len(n))  # Ollivander

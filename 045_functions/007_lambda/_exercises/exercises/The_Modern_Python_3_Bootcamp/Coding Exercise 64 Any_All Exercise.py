@@ -8,7 +8,7 @@
 
 
 def is_all_strings(lst):
-    return all(type(l) == str for l in lst)
+    return all(type(l) == str ___ l __ lst)
 
 # Using a List Comprehension
 #
@@ -17,4 +17,4 @@ def is_all_strings(lst):
 
 
 def is_all_strings(lst):
-    return all([type(l) == str for l in lst])
+    return all([type(l) == str ___ l __ lst])
