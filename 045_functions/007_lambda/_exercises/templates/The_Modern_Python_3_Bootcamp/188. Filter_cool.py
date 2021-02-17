@@ -8,7 +8,7 @@
 # ]
 #
 # # extract inactive users using filter:
-# inactive_users _ l.. f.. l.. u; no. ? 'tweets'| u..
+# inactive_users _ l.. f.. l.. u; no. ? 'tweets'| ?
 #
 # # extract inactive users using list comprehension:
 # inactive_users2 + user __ ? __ u.. __ no. ? "tweets"|
