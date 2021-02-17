@@ -23,5 +23,5 @@
 #         Return the result!
 
 
-___ interleave(str1, str2):
-    r_ ''.join(''.join(x) ___ x __ (z__(str1, str2)))
+# ___ interleave str1 str2
+#     r_ ''.j__ ''.j__ x ___ ? __ z__ ? ?
