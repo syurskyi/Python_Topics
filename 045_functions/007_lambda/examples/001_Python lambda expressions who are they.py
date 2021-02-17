@@ -9,6 +9,7 @@ def normalize_case(string):
 
 
 normalized_colors = map(normalize_case, colors)
+print(list(normalized_colors))
 
 # Вот в такой код:
 
@@ -16,3 +17,4 @@ normalized_colors = map(normalize_case, colors)
 colors = ["Goldenrod", "Purple", "Salmon", "Turquoise", "Cyan"]
 
 normalized_colors = map(lambda s: s.casefold(), colors)
+print(list(normalized_colors))

@@ -32,8 +32,8 @@ print(five)
 # # Лямбда-функция может быть функцией более высокого порядка, принимая функцию (нормальную или лямбда-функцию)
 # # в качестве аргумента, как в следующем надуманном примере:
 #
-# high_ord_func _ l_____ x func x + ? x
-# print ? 2 l_____ x x * x
+high_ord_func = lambda x, func: x + func(x)
+print(high_ord_func(2, lambda x: x * x))
 # # 6
 # print ? 2 l_____ x x + 3
 # # 7
