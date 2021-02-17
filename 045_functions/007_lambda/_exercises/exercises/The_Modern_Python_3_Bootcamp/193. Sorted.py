@@ -8,11 +8,11 @@ users = [
 ]
 
 # To sort users by their username
-so__(users, key=lambda user: user['username'])
+so__(users, k.._l_____ user: user['username'])
 
 # Finding our most active users...
 # Sort users by number of tweets, descending
-so__(users, key=lambda user: le.(user["tweets"]), reverse=True)
+so__(users, k.._l_____ user: le.(user["tweets"]), reverse=True)
 
 # ANOTHER EXAMPLE DATA SET==================================
 songs = [
@@ -23,4 +23,4 @@ songs = [
 ]
 
 # To sort songs by playcount
-so__(songs, key=lambda s: s['playcount'])
+so__(songs, k.._l_____ s: s['playcount'])

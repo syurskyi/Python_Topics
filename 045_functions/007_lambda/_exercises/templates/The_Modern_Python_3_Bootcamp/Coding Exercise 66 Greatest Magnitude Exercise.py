@@ -5,5 +5,5 @@
 
 
 def max_magnitude(nums):
-    return max(abs(num) ___ num __ nums)
+    return ma.(abs(num) ___ num __ nums)
 

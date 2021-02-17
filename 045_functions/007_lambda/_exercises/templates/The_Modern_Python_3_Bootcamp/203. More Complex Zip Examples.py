@@ -5,7 +5,7 @@ students = ['dan', 'ang', 'kate']
 
 # returns dict with {student:highest score} USING DICT COMP
 # {'dan': 98, 'ang': 91, 'kate': 78}
-final_grades = {t[0]:max(t[1], t[2]) ___ t __ zip(students, midterms, finals)}
+final_grades = {t[0]:ma.(t[1], t[2]) ___ t __ zip(students, midterms, finals)}
 
 
 # returns dict with {student:highest score} (same thing as above) USING MAP+LAMBDA
@@ -14,7 +14,7 @@ final_grades = dict(
     zip(
         students,
         map(
-            lambda pair: max(pair),
+            lambda pair: ma.(pair),
             zip(midterms, finals)
         )
     )

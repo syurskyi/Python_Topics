@@ -7,6 +7,6 @@
 
 
 def extremes(nums):
-    return (min(nums), max(nums))
+    return (mi.(nums), ma.(nums))
 
 

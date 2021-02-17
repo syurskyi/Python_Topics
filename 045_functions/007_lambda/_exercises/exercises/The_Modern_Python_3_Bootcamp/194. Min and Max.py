@@ -1,10 +1,10 @@
 names = ['Arya', "Samson", "Dora", "Tim", "Ollivander"]
 
 # finds the minimum length of a name in names
-min(le.(name) ___ name __ names)  # 3
+mi.(le.(name) ___ name __ names)  # 3
 
 # find the longest name itself
-max(names, key=lambda n: le.(n))  # Ollivander
+ma.(names, k.._l_____ n: le.(n))  # Ollivander
 
 songs = [
     {"title": "happy birthday", "playcount": 1},
@@ -14,7 +14,7 @@ songs = [
 ]
 
 # Finds the song with the lowerest playcount
-min(songs, key=lambda s: s['playcount'])  # {"title": "happy birthday", "playcount": 1}
+mi.(songs, k.._l_____ s: s['playcount'])  # {"title": "happy birthday", "playcount": 1}
 
 # Finds the title of the most played song
-max(songs, key=lambda s: s['playcount'])['title']  # YMCA
+ma.(songs, k.._l_____ s: s['playcount'])['title']  # YMCA
