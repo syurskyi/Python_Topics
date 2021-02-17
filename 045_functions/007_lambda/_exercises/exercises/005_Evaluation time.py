@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# ___ wrap n
-#     ___ f
-#         print ?
-#     r_ ?
-#
-# numbers _ 'one', 'two', 'three'
-# funcs _    # list
-# ___ n __ ?
-#     f__.ap.. w.. n
-#
-# ___ f __ f...
-#     ?
+def wrap(n):
+    def f():
+        print(n)
+    return f
+
+numbers = 'one', 'two', 'three'
+funcs = []    # list
+for n in numbers:
+    funcs.append(wrap(n))
+
+for f in funcs:
+    f()
 #
 # # one
 # # two
@@ -22,14 +22,14 @@
 # #
 # # Теперь, при реализации той же логики с лямбда-функцией, наблюдаем неожиданное поведение:
 #
-# numbers _ 'one', 'two', 'three'
-# funcs _ ||
-# ___ n __ ?
-#     f__.ap.. l_____ print ?
-#
-# ___ f __ ?
-#     ?
-#
+numbers = 'one', 'two', 'three'
+funcs = []
+for n in numbers:
+    funcs.append(lambda: print(n))
+
+for f in funcs:
+    f()
+
 # # three
 # # three
 # # three
@@ -41,13 +41,13 @@
 # #
 # # Чтобы решить эту проблему, вы можете назначить свободную переменную во время определения следующим образом:
 #
-# numbers _ 'one', 'two', 'three'
-# funcs _ ||
-# ___ n __ ?
-#     f__.ap.. l_____ n_n print ?
-#
-# ___ f __ ?
-#     ?
+numbers = 'one', 'two', 'three'
+funcs = []
+for n in numbers:
+    funcs.append(lambda n=n: print(n))
+
+for f in funcs:
+    f()
 #
 # # one
 # # two

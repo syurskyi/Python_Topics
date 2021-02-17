@@ -3,13 +3,13 @@
 # ___ outer_func x
 #      y _ 4
 #      ___ inner_func z
-#          print _*x _ x| y _ y| z _ z|*|
-#          r_ x + y + z
+#          print _*x _ ?| y _ ?| z _ ?|*|
+#          r_ ? + ? + ?
 #      r_ ?
 #
 # ___ i __ ra.. 3
-#     closure _ ? i
-#     print |_*closure||i+5|| _ |closure|i+5||*|
+#     closure _ ? ?
+#     print |_*c___||?+5|| _ |c__|?+5||*|
 #
 # # Точно так же лямбда также может быть замыканием. Вот тот же пример с лямбда-функцией Python:
 # print('#' * 52 + '  ')
@@ -18,8 +18,8 @@
 #
 # ___ outer_func x
 #     y _ 4
-#     r_ l_____ z x + y + z
-# ___ i __ ra00 3
-#     closure _ ? i
-#     print|_*closure||i+5|| _ |closure|i+5||*|
+#     r_ l_____ z ? + ? + ?
+# ___ i __ ra__ 3
+#     closure _ ? ?
+#     print|_*c__||?+5|| _ |c__|?+5||*|
 #
