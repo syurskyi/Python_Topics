@@ -36,17 +36,17 @@ print_iterator(map_iterator)
 #
 # Converting map to list, tuple, set
 
-map_iterator = map(t.. |'a', 'b', 'c'
-my_list = li.. ?
-print ?
-
-map_iterator = m.. t... |'a', 'b', 'c'
-my_set = se. ?
-print ?
-
-map_iterator = m.. t... |'a', 'b', 'c'
-my_tuple = tu.. ?
-print ?
+# map_iterator = map(t.. |'a', 'b', 'c'
+# my_list = li.. ?
+# print ?
+#
+# map_iterator = m.. t... |'a', 'b', 'c'
+# my_set = se. ?
+# print ?
+#
+# map_iterator = m.. t... |'a', 'b', 'c'
+# my_tuple = tu.. ?
+# print ?
 
 # # Output:
 # # ['A', 'B', 'C']
@@ -63,11 +63,11 @@ print ?
 # # Output:
 # # 2 4 6 8
 #
-# # map() with multiple iterable arguments
-# list_numbers _ 1 2 3 4
-# tuple_numbers _ 5 6 7 8
-# map_iterator _ m.. l____ x y x * y ?1 ?2
-# p... ?
+# map() with multiple iterable arguments
+list_numbers = [1, 2, 3, 4]
+tuple_numbers = (5, 6, 7, 8)
+map_iterator = map(lambda x, y: x * y, list_numbers, tuple_numbers)
+print_iterator(map_iterator)
 #
 # # Output: 5 12 21 32
 #
