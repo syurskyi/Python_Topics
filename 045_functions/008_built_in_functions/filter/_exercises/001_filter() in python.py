@@ -1,22 +1,21 @@
-# # function that filters vowels
-# ___ fun variable
-# 	letters _ |'a' 'e' 'i' 'o' 'u'|
-# 	__ v.. __ l..
-# 		r_ T_
-# 	____
-# 		r_ F_
-#
-#
-# # sequence
-# sequence _ |'g', 'e', 'e', 'j', 'k', 's', 'p', 'r'|
-#
-# # using filter function
-# filtered _ f.. ? ?
-#
-# print The filtered letters are:
-# ___ s __ ?
-# 	print ?
-#
-# # The filtered letters are:
-# # e
-# # e
+# function that filters vowels
+def fun(variable):
+	letters = ['a', 'e', 'i', 'o', 'u']
+	if variable in letters:
+		return True
+	else:
+		return False
+
+# sequence
+sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
+
+# using filter function
+filtered = filter(fun, sequence)
+
+print("The filtered letters are:")
+for s in filtered:
+	print(s)
+
+# The filtered letters are:
+# e
+# e
