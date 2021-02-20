@@ -1,48 +1,48 @@
-# Example 1: How enumerate() works in Python?
-
-grocery = ['bread', 'milk', 'butter']
-enumerateGrocery = enumerate(grocery)
-
-print(type(enumerateGrocery))
-
-# converting to list
-print(list(enumerateGrocery))
-
-# changing the default counter
-enumerateGrocery = enumerate(grocery, 10)
-print(list(enumerateGrocery))
-
-# Output
-# <class 'enumerate'>
-# [(0, 'bread'), (1, 'milk'), (2, 'butter')]
-# [(10, 'bread'), (11, 'milk'), (12, 'butter')]
-
-# Example 2: Looping Over an Enumerate object
-
-grocery = ['bread', 'milk', 'butter']
-
-for item in enumerate(grocery):
-  print(item)
-
-print('\n')
-for count, item in enumerate(grocery):
-  print(count, item)
-
-print('\n')
-# changing default start value
-for count, item in enumerate(grocery, 100):
-  print(count, item)
-
-# Output
+# # Example 1: How ?() works __ Python?
 #
-# (0, 'bread')
-# (1, 'milk')
-# (2, 'butter')
+# grocery = ['bread', 'milk', 'butter']
+# enumerateGrocery = ? ?
 #
-# 0 bread
-# 1 milk
-# 2 butter
+# print ty__ ?
 #
-# 100 bread
-# 101 milk
-# 102 butter
+# # converting to list
+# print l__ ?
+#
+# # changing the default counter
+# enumerateGrocery = ? g.. 10
+# print(l__ ?
+#
+# # Output
+# # <class '?'>
+# # [(0, 'bread'), (1, 'milk'), (2, 'butter')]
+# # [(10, 'bread'), (11, 'milk'), (12, 'butter')]
+#
+# # Example 2: Looping Over an Enumerate object
+#
+# grocery = ['bread', 'milk', 'butter']
+#
+# ___ item __ ? ?
+#   print ?
+#
+# print('\n')
+# ___ count, item __ ? ?
+#   print ?
+#
+# print('\n')
+# # changing default start value
+# ___ count item __ ? ? 100
+#   print ? ?
+#
+# # Output
+# #
+# # (0, 'bread')
+# # (1, 'milk')
+# # (2, 'butter')
+# #
+# # 0 bread
+# # 1 milk
+# # 2 butter
+# #
+# # 100 bread
+# # 101 milk
+# # 102 butter

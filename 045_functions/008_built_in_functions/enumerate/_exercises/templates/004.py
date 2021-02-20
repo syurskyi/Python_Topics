@@ -1,7 +1,7 @@
 # Enumerate a List
 
 L = ['apples', 'bananas', 'oranges']
-for idx, val in enumerate(L):
+___ idx, val __ ?(L):
   print("index is %d and value is %s" % (idx, val))
 
 
@@ -13,7 +13,7 @@ for idx, val in enumerate(L):
 # Enumerate a Tuple
 
 t = ('apples', 'bananas', 'oranges')
-for idx, val in enumerate(t):
+___ idx, val __ ?(t):
   print("index is %d and value is %s" % (idx, val))
 
 # index is 0 and value is apples
@@ -24,7 +24,7 @@ for idx, val in enumerate(t):
 
 L = [('Matt', 20), ('Karim', 30), ('Maya', 40)]
 
-for idx, val in enumerate(L):
+___ idx, val __ ?(L):
   name = val[0]
   age = val[1]
   print("index is %d, name is %s, and age is %d" \
@@ -34,14 +34,14 @@ for idx, val in enumerate(L):
 # index is 1, name is Karim, and age is 30
 # index is 2, name is Maya, and age is 40
 
-for idx, (name, age) in enumerate(L):
+___ idx, (name, age) __ ?(L):
   print("index is %d, name is %s, and age is %d" \
         % (idx, name, age))
 
 # Enumerate a String
 
 str = "Python"
-for idx, ch in enumerate(str):
+___ idx, ch __ ?(str):
   print("index is %d and character is %s" \
          % (idx, ch))
 
@@ -56,7 +56,7 @@ for idx, ch in enumerate(str):
 # Enumerate with a Different Starting Index
 
 L = ['apples', 'bananas', 'oranges']
-for idx, s in enumerate(L, start = 1):
+___ idx, s __ ?(L, start = 1):
   print("index is %d and value is %s" \
          % (idx, s))
 
@@ -67,27 +67,27 @@ for idx, s in enumerate(L, start = 1):
 # Why It doesn’t Make Sense to Enumerate Dictionaries and Sets
 
 d = {'a': 1, 'b': 2, 'c': 3}
-for k, v in d.items():
+___ k, v __ d.items():
   # k is now the key
   # v is the value
   print(k, v)
 
 s = {'a', 'b', 'c'}
-for v in s:
+___ v __ s:
   print(v)
 
 # Advanced: Enumerate Deep Dive
 
-list(enumerate(['a', 'b', 'c']))
+l__(?(['a', 'b', 'c']))
 # [(0, 'a'), (1, 'b'), (2, 'c')]
 
-for idx, val in enumerate(['a', 'b']):
+___ idx, val __ ?(['a', 'b']):
   print(idx, val)
 
 # 0 a
 # 1 b
 
-for i in enumerate(['a', 'b']):
+___ i __ ?(['a', 'b']):
   print(i[0], i[1])
 
 # 0 a
