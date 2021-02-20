@@ -84,10 +84,10 @@ print_iterator(map_iterator)
 
 # Python map() with function None
 
-# map_iterator = map(None, 'abc')
-# print(map_iterator)
-# for x in map_iterator:
-#     print(x)
+map_iterator = map(None, 'abc')
+print(map_iterator)
+for x in map_iterator:
+    print(x)
 
 # Output:
 #

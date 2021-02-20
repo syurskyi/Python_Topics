@@ -2,7 +2,7 @@
 #   r_ ?*?
 #
 # numbers _ 1 2 3 4
-# result _ m.. c... n....
+# result _ m.. ? ?
 # print ?
 #
 # # converting map object to set

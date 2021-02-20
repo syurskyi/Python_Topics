@@ -7,7 +7,7 @@
 #
 # # We double all numbers using map()
 # numbers _ 1 2 3 4
-# result _ m.. a.... n....
+# result _ m.. ? ?
 # print l... ?
 #
 # # Output :

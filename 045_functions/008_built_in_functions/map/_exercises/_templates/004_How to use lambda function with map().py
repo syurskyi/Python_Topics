@@ -3,7 +3,7 @@
 # print ?
 #
 # # converting map object to set
-# numbersSquare _ s.. r..
+# numbersSquare _ ? ?
 # print ?
 #
 # # <map 0x7fafc21ccb00>

@@ -1,51 +1,53 @@
-# ___ to_upper_case s
-#     r_ st. ?|.up..
+def to_upper_case(s):
+    return str(s).upper()
+
+
+def print_iterator(it):
+    for x in it:
+        print(x, end=' ')
+    print('')  # for new line
+
+# map() with string
+map_iterator = map(to_upper_case, 'abc')
+print(type(map_iterator))
+print(map_iterator)
+print(list(map_iterator))
+
+# Output:
+# <class 'map'>
+# A B C
+
+# Python map() with tuple
+
+# map() with tuple
+map_iterator = map(to_upper_case,(1, 'a', 'abc'))
+print_iterator(map_iterator)
+
+# Output:
+# 1 A ABC
+
+# Python map() with list
+
+
+map_iterator = map(to_upper_case, ['x', 'a', 'abc'])
+print_iterator(map_iterator)
+
+# X A ABC
 #
-# ___ print_iterator it
-#     ___ x __ ?
-#         print ? e.._' ')
-#     print('')  # for new line
-#
-# # map() with string
-# map_iterator _ m.. t... 'abc'
-# print ty.. ?
-# p.. ?
-#
-# # Output:
-# # <class 'map'>
-# # A B C
-#
-# # Python map() with tuple
-#
-# # map() with tuple
-# map_iterator = m.. t.. |1, 'a', 'abc'
-# p.. m...
-#
-# # Output:
-# # 1 A ABC
-#
-# # Python map() with list
-#
-#
-# map_iterator = m.. t... |'x', 'a', 'abc'
-# p.. m...
-#
-# # X A ABC
-#
-# # Converting map to list, tuple, set
-#
-# map_iterator = m.. t.. |'a', 'b', 'c'
-# my_list = li.. ?
-# print ?
-#
-# map_iterator = m.. t... |'a', 'b', 'c'
-# my_set = se. ?
-# print ?
-#
-# map_iterator = m.. t... |'a', 'b', 'c'
-# my_tuple = tu.. ?
-# print ?
-#
+# Converting map to list, tuple, set
+
+map_iterator = map(t.. |'a', 'b', 'c'
+my_list = li.. ?
+print ?
+
+map_iterator = m.. t... |'a', 'b', 'c'
+my_set = se. ?
+print ?
+
+map_iterator = m.. t... |'a', 'b', 'c'
+my_tuple = tu.. ?
+print ?
+
 # # Output:
 # # ['A', 'B', 'C']
 # # {'C', 'B', 'A'}
