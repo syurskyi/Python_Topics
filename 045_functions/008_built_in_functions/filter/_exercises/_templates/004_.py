@@ -4,13 +4,13 @@
 # ___ is_A_student score
 #     r___ ? > 75
 #
-# over_75 _ l...|f....|? s..
+# over_75 _ l...|f....|? ?
 #
 # print over_75
 #
 # # Python 3
 # dromes _ "demigod", "rewire", "madam", "freer", "anutforajaroftuna", "kiosk"
 #
-# palindromes _ l.. f..... l..... word w.. _ w..|``-1 ?
+# palindromes _ l.. f..... l..... word ? _ ?|``-1 ?
 #
 # print ?
