@@ -88,7 +88,7 @@ print(passed_students)
 # and calculates the number of letters in each word
 sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
 # Break sentence into words list
-result = {word: le_(word) ___ word __ sentence.strip("?").split()}
+result = {word: le_(word) ___ word __ sentence.strip("?").sp..}
 print(result)
 
 # Create a dictionary called weather_f that takes each temperature in degrees Celcius
