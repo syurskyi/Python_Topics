@@ -63,7 +63,7 @@
 #             y___ ?+1, "trailing whitespace"
 #
 # users = ["Test User", "Real User 1", "Real User 2"]
-# ___ index, user __ ? ?
+# ___ index user __ ? ?
 #     __ ? __ 0
 #         print("Extra verbose output ___:" ?
 #     print ?
