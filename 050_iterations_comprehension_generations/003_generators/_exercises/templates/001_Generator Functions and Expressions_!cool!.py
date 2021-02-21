@@ -7,7 +7,7 @@
 #
 # print()
 # x _ ? 4
-# print(x)
+# print(?)
 #
 # print(n___ x  # Same as x.__next__() i_ 3.0
 #
@@ -19,12 +19,12 @@
 # #  Returns a generator which is its own iterator
 # ___ gensquares N
 #     ___ i __ r___ ?
-#         y___ i ** 2
+#         y___ ? ** 2
 #
 #
 # y _ ? 5  # Returns a generator which is its own iterator
 #
-# print it.. y| i_ y  # iter() is not required a no-op here
+# print it.. y| __ y  # iter() is not required a no-op here
 #
 # print n___ y  # Can run n___()immediately
 #
@@ -49,10 +49,10 @@
 # # Generator Functions and Expressions
 # # def  ups()
 # ___ ups line
-#     ___ sub __ l__.sp.. ','  # Substring generator
+#     ___ sub __ ?.sp.. ','  # Substring generator
 #         y___ ?.up..
 #
 #
 # print(tu.. ? 'aaa,bbb,ccc'  # All iteration contexts)
 #
-# print |i s ___ |i s| i_ en... ups 'aaa,bbb,ccc' |    # dict   be careful here
+# print |i s ___ |? ?| __ e... ? 'aaa,bbb,ccc' |    # dict   be careful here

@@ -31,12 +31,9 @@
 # ne.. f...  # error
 #
 # # Making an Iterable from a Generator
-# #
 # # As we now know, generators are iterators.
 # # This means that they become exhausted - so sometimes we want to create an iterable instead.
-# #
 # # But, sq was an iterator - so now it's been exhausted:
-# #
 # # To restart the iteration we have to create a new instance of the generator  iterator :
 #
 # ___ squares_gen n
@@ -55,7 +52,6 @@
 #
 # # Generators used with other Generators
 # # Now enumerate is lazy, so sq had not, at this point, been consumed:
-# #
 # # Since we have consumed two elements from sq, when we now use enumerate it will have two less elements from sq:
 #
 # ___ squares n
