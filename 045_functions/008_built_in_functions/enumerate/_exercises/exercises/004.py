@@ -1,8 +1,8 @@
 # # Enumerate a List
-#
-# L = ['apples', 'bananas', 'oranges']
-# ___ idx, val __ ? ?
-#   print("index is $ and value is $"  ? ?
+
+L = ['apples', 'bananas', 'oranges']
+for idx, val in enumerate(L):
+  print("index is %d and value is %s" % (idx, val))
 #
 #
 # # index is 0 and value is apples
@@ -12,39 +12,42 @@
 #
 # # Enumerate a Tuple
 #
-# t = ('apples', 'bananas', 'oranges')
-# ___ idx, val __ ? ?
-#   print("index is $ and value is $"  ? ?
-#
+print()
+t = ('apples', 'bananas', 'oranges')
+for idx, val in enumerate(t):
+  print("index is %d and value is %s" % (idx, val))
+
 # # index is 0 and value is apples
 # # index is 1 and value is bananas
 # # index is 2 and value is oranges
 #
 # # Enumerate a List of Tuples (The Neat Way)
 #
-# L = [('Matt', 20), ('Karim', 30), ('Maya', 40)]
-#
-# ___ idx, val __ ? ?
-#   name = ? 0
-#   age = ? 1
-#   print("index is $, name is $, and age is $" \
-#           ? ? ?
+print()
+L = [('Matt', 20), ('Karim', 30), ('Maya', 40)]
+
+for idx, val in enumerate(L):
+  name = val[0]
+  age = val[1]
+  print("index is %d, name is %s, and age is %d" \
+          % (idx, name, age))
 #
 # # index is 0, name is Matt, and age is 20
 # # index is 1, name is Karim, and age is 30
 # # index is 2, name is Maya, and age is 40
-#
-# ___ idx |name age __ ? ?
-#   print("index is $, name is $, and age is $" \
-#          ? ? ?
-#
+
+for idx, (name, age) in enumerate(L):
+  print("index is %d, name is %s, and age is %d" \
+         % (idx, name, age))
+
 # # Enumerate a String
 #
-# str = "Python"
-# ___ idx, ch __ ? ?
-#   print("index is $ and character is $" \
-#           ? ?
-#
+print()
+str = "Python"
+for idx, ch in enumerate(str):
+  print("index is %d and character is %s" \
+          % (idx, ch))
+
 #
 # # index is 0 and character is P
 # # index is 1 and character is y

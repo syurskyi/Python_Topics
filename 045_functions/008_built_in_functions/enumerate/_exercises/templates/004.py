@@ -1,7 +1,7 @@
 # # Enumerate a List
 #
 # L = ['apples', 'bananas', 'oranges']
-# ___ idx, val __ ? ?
+# ___ idx val __ ? ?
 #   print("index is $ and value is $"  ? ?
 #
 #
@@ -13,7 +13,7 @@
 # # Enumerate a Tuple
 #
 # t = ('apples', 'bananas', 'oranges')
-# ___ idx, val __ ? ?
+# ___ idx val __ ? ?
 #   print("index is $ and value is $"  ? ?
 #
 # # index is 0 and value is apples
@@ -24,7 +24,7 @@
 #
 # L = [('Matt', 20), ('Karim', 30), ('Maya', 40)]
 #
-# ___ idx, val __ ? ?
+# ___ idx val __ ? ?
 #   name = ? 0
 #   age = ? 1
 #   print("index is $, name is $, and age is $" \
