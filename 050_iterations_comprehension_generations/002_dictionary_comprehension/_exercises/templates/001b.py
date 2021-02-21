@@ -9,7 +9,7 @@ print({str(i):i ___ i __ [1,2,3,4,5]})
 # create list of fruits
 fruits = ['apple', 'mango', 'banana','cherry']
 # dict comprehension to create dict with fruit name as keys
-print({f:len(f) ___ f __ fruits})
+print({f:le_(f) ___ f __ fruits})
 # {'cherry': 6, 'mango': 5, 'apple': 5, 'banana': 6}
 
 # Let us create a dictionary with dict comprehension such that elements of the list as the keys and the elements
@@ -20,7 +20,7 @@ print({f:f.capitalize() ___ f __ fruits})
 # Let us use enumerate function in dictionary comprehension.
 # If you have not used enumerate: enumerate can take any thing iterable as input and returns element and its index.
 # dict comprehension example using enumerate function
-print({f:i ___ i,f __ enumerate(fruits)})
+print({f:i ___ i,f __ e..(fruits)})
 # {'cherry': 3, 'mango': 1, 'apple': 0, 'banana': 2}
 
 # Another use of dict comprehension is to reverse key:value in an existing dictionary. Sometimes you may want
@@ -28,7 +28,7 @@ print({f:i ___ i,f __ enumerate(fruits)})
 # is reversed in the new dictionary. We can use Dict Comprehension and flip the element to index dictionary
 # to index to element dictionary.
 # dict comprehension example to reverse key:value pair in a dictionary
-f_dict = {f:i ___ i,f __ enumerate(fruits)}
+f_dict = {f:i ___ i,f __ e..(fruits)}
 print(f_dict)
 # {'apple': 0, 'banana': 2, 'cherry': 3, 'mango': 1}
 # dict comprehension to reverse key:value pair in a dictionary

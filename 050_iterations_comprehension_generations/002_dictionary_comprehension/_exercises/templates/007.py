@@ -12,7 +12,7 @@ nato_phonetic_alphabet = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot
                           "Uniform", "Victor", "Whisky", "X-ray", "Yankee", "Zulu"]
 
 name = "John Patmore"
-letters_list = [letter.upper() ___ letter __ name]
+letters_list = [letter.u..  ___ letter __ name]
 print(letters_list)
 
 double = [n * 2 ___ n __ ra..(1, 5)]
@@ -25,9 +25,9 @@ print(double)
 # new_list = [new_item for item in list if test]
 
 names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
-short_name = [name ___ name __ names __ len(name) < 5]
+short_name = [name ___ name __ names __ le_(name) < 5]
 print(short_name)
-caps_names = [name.upper() ___ name __ names __ len(name) > 5]
+caps_names = [name.u..  ___ name __ names __ le_(name) > 5]
 print(caps_names)
 
 
@@ -88,7 +88,7 @@ print(passed_students)
 # and calculates the number of letters in each word
 sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
 # Break sentence into words list
-result = {word: len(word) ___ word __ sentence.strip("?").split()}
+result = {word: le_(word) ___ word __ sentence.strip("?").split()}
 print(result)
 
 # Create a dictionary called weather_f that takes each temperature in degrees Celcius
