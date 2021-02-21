@@ -16,11 +16,11 @@ my_family = {
 family_stuff = set()
 
 ___ family_member, member_values __ my_family.i..:
-  family_stuff.add(f'{member_values["name"]} is my {family_member} and is {str(member_values["age"])} years old.')
+  family_stuff.add(f'{member_values["name"]} is my {family_member} and is {st_(member_values["age"])} years old.')
 
 print(family_stuff)
 
-more_family_stuff = {f'{member_values["name"]} is my {family_member} and is {str(member_values["age"])} years old.'
+more_family_stuff = {f'{member_values["name"]} is my {family_member} and is {st_(member_values["age"])} years old.'
   ___ (family_member, member_values) __ my_family.i..
   }
 

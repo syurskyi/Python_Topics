@@ -11,7 +11,8 @@
 #
 # # dict_variable = {key:value for (key,value) in dictonary.items()}
 #
-# dict1_keys = k*2| v ___ ? ? __ ?.i..
+# # k, v
+# dict1_keys = ?*2| ? ___ ? ? __ ?.i..
 # print ?
 #
 # # Why Use Dictionary Comprehension?
@@ -23,8 +24,9 @@
 # numbers = ra.. 10
 # new_dict_for  # dict
 #
+# # n
 # # Add values to `new_dict` using for loop
-# ___ n __ numbers
+# ___ ? __ numbers
 #     __ ?%2__0
 #         ? ? _ ?**2
 #
@@ -33,7 +35,8 @@
 # # {0: 0, 8: 64, 2: 4, 4: 16, 6: 36}
 #
 # # Use dictionary comprehension
-# new_dict_comp = n ?**2 ___ ? __ n.. __ ?%2 __ 0
+# # n
+# new_dict_comp = ? ?**2 ___ ? __ n.. __ ?%2 __ 0
 #
 # print ?
 #
@@ -71,7 +74,8 @@
 # fahrenheit = {'t1': -30,'t2': -20,'t3': -10,'t4': 0}
 #
 # # Get the corresponding `celsius` values and create the new dictionary
-# celsius = k fl__(5)/9)*(v-32) ___ ? ? __ ?.i..
+# # k, v
+# celsius = ? fl__(5)/9)*(?-32) ___ ? ? __ ?.i..
 #
 # print ?
 #
@@ -82,19 +86,22 @@
 # dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 #
 # # Check for items greater than 2
-# dict1_cond =  k v ___ ? ? __ ?.i.. __ ?>2
+# # k v
+# dict1_cond =  ? ? ___ ? ? __ ?.i.. __ ?>2
 #
 # print ?
 # # {'e': 5, 'c': 3, 'd': 4}
 #
 # # Multiple If Conditions
 #
-# dict1_doubleCond = k v ___ ? ? __ ?.i.. __ ?>2 __ ?%2 __ 0
+# # k, v
+# dict1_doubleCond _ ? ? ___ ? ? __ ?.i.. __ ?>2 __ ?%2 __ 0
 # print ?
 # # {'d': 4}
 #
 # dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f':6}
-# dict1_tripleCond = k v ___ ? ? __ ?.i.. __ ?>2 __ ?%2 __ 0 __ ?%3 __ 0
+# # k,v
+# dict1_tripleCond _ ? ? ___ ? ? __ ?.i.. __ ?>2 __ ?%2 __ 0 __ ?%3 __ 0
 # print ?
 # # {'f': 6}
 #
@@ -102,7 +109,8 @@
 #
 # dict1_tripleCond   # dict
 #
-# ___ k v __ ?.i..
+# # k, v
+# ___ ? ? __ ?.i..
 #     __  ?>_2 a.. ?%2 __ 0 a.. ?%3 __ 0
 #             ? ? _ ?
 #
@@ -114,7 +122,8 @@
 # dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f':6}
 #
 # # Identify odd and even entries
-# dict1_tripleCond = k *even __ ?%2__0 ____ *odd ___ ? ? __ ?.i..
+# # k
+# dict1_tripleCond = ? *even __ ?%2__0 ____ *odd ___ ? ? __ ?.i..
 #
 # print ?
 # # {'f': 'even', 'c': 'odd', 'b': 'even', 'd': 'even', 'e': 'odd', 'a': 'odd'}

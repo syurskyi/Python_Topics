@@ -17,5 +17,5 @@ my_family = {
     }
 }
 
-new_family = {str(v['name']) + ' is my ' + k +' and is ' + str(v['age']) ___ (k,v) __ my_family.i..}
+new_family = {st_(v['name']) + ' is my ' + k +' and is ' + st_(v['age']) ___ (k,v) __ my_family.i..}
 print(new_family)

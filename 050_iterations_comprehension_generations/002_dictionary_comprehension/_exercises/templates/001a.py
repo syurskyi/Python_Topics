@@ -2,15 +2,17 @@
 #
 # # Consider the following code:
 #
+# # num
 # square_dict _ di__
-# ___ num __ ra.. 1 11
+# ___ ? __ ra.. 1 11
 #     ? ? _ ?*?
 # print>
 #
 # # Now, let's create the dictionary in the above program using dictionary comprehension.
 #
+# # num
 # # dictionary comprehension example
-# square_dict = num ?*? ___ ? __ ra.. 1 11
+# square_dict = ? ?*? ___ ? __ ra.. 1 11
 # print(square_dict)
 #
 # # The output of both programs will be the same.
@@ -22,21 +24,24 @@
 # old_price = {'milk': 1.02, 'coffee': 2.5, 'bread': 2.5}
 #
 # dollar_to_pound = 0.76
-# new_price _ {item value*? ___ ? ? __ ?.i..
+# # item, value
+# new_price _ {? ?*? ___ ? ? __ ?.i..
 # print ?
 # # {'milk': 0.7752, 'coffee': 1.9, 'bread': 1.9}
 #
 # # Conditionals in Dictionary Comprehension
 # original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
 #
-# even_dict _ k v ___ ? ? __ ?.i.. __ ? % 2 __ 0
+# # k, v
+# even_dict _ ? ? ___ ? ? __ ?.i.. __ ? % 2 __ 0
 # print ?
 # # {'jack': 38, 'michael': 48}
 #
 # # Example 5: Multiple if Conditional Dictionary Comprehension
 # original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
 #
-# new_dict = k v ___ ? ? __ ? ?.i.. __ ? % 2 !_ 0 __ ? < 40
+# # k, v
+# new_dict = ? ? ___ ? ? __ ? ?.i.. __ ? % 2 !_ 0 __ ? < 40
 # print ?
 # # {'john': 33}
 #
@@ -44,14 +49,16 @@
 #
 # original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
 #
-# new_dict_1 _ k |*old __ ? > 40 ____ *young
+# # k
+# new_dict_1 _ ? |*old __ ? > 40 ____ *young
 #     ___ ? ? __ ?.i..
 # print(new_dict_1)
 # # {'jack': 'young', 'michael': 'old', 'guido': 'old', 'john': 'young'}
 #
 # # Example 7: Nested Dictionary with Two Dictionary Comprehensions
+# # k1, k2
 # dictionary _
-#     k1 k2 ? * ? ___ ? __ ra.. 1 6 ___ ? __ ra.. 2 5
+#     ? ? ? * ? ___ ? __ ra.. 1 6 ___ ? __ ra.. 2 5
 #
 # print ?
 #
@@ -64,13 +71,15 @@
 # # to the inner one.
 # # So, the above code would be equivalent to:
 #
+# # k1, k2
 # dictionary _ di__
-# ___ k1 __ ra.. 11 16
-#     ? ? _ k2 ?*? ___ ? __ ra.. 1 6
+# ___ ? __ ra.. 11 16
+#     ? ? _ ? ?*? ___ ? __ ra.. 1 6
 # print ?
 #
+# # k1, k2
 # dictionary _ di__
-# ___ k1 __ ra.. 11 16
+# ___ ? __ ra.. 11 16
 #     ? ? _ di__
 #     ___ ? __ ra.. 1 6)
 #         ? ? ? _ ?*?

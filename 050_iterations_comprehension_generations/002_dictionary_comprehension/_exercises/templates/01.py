@@ -4,6 +4,7 @@
 # le_ ? ___ i __ ?
 # # [4, 7, 7, 8]
 # # #dictionary comprehension
+# # i
 # print i le_ ? ___ ? __ ?
 # # {'data': 4, 'science': 7, 'machine': 7, 'learning': 8}
 #
@@ -16,21 +17,24 @@
 # # Both list and dictionary comprehensions accept if/else conditional statements.
 #
 # words = ['data', 'science', 'machine', 'learning']#list comprehension
-#  le_ ? ___ i __ ? __ le_ ? > 5
+# # i
+#  le_ ? ___ ? __ ? __ le_ ? > 5
 # # [7, 7, 8]
 # #dictionary comprehension
-# print i le_ ? ___ ? __ ? __ le_ ? > 5
+# # i
+# print ? le_ ? ___ ? __ ? __ le_ ? > 5
 # # {'science': 7, 'machine': 7, 'learning': 8}
 #
 # # Example 3
 # # In this example, we will slightly increase the complexity of the conditional statement.
 #
-# words_dict = i le_ ? __ le_ ? > 5 ____ 'short' ___ ? __ ?
+# # i
+# words_dict = ? le_ ? __ le_ ? > 5 ____ 'short' ___ ? __ ?
 # print ?
 # # {'data': 'short', 'science': 7, 'machine': 7, 'learning': 8}
 #
 # words_dict  # dict
-# ___ i __ words
+# ___ ? __ words
 #     __ le_ ? >5
 #         ? ? _ le_ ?
 #     ____
@@ -42,7 +46,8 @@
 #
 # words = ['data', 'science', 'machine', 'learning']
 # values = [5, 3, 1, 8]
-# dict_a =  i j ___ ? ? __ z.. ? ?
+# # i, j
+# dict_a =  ? ? ___ ? ? __ z.. ? ?
 # print ?
 # # {'data': 5, 'science': 3, 'machine': 1, 'learning': 8}
 #
@@ -51,14 +56,16 @@
 #
 # words = ['data', 'science', 'machine', 'learning']
 # values = [5, 3, 1, 8]
-# dict_a _  i j ___ ? ? __ z.. ? ? __ ? > 4
+# # i, j
+# dict_a _  ? ? ___ ? ? __ z.. ? ? __ ? > 4
 # print ?
 # # {'data': 5, 'learning': 8}
 #
 # # Example 6
 # # We can also apply transformations on key-value pairs.
 #
-# dict_b =  i.u.. j**2 ___ ? ? __ z.. ? ?
+# # i, j
+# dict_b =  ?.u.. ?**2 ___ ? ? __ z.. ? ?
 # print ?
 # # {'DATA': 25, 'SCIENCE': 9, 'MACHINE': 1, 'LEARNING': 64}
 #
@@ -71,7 +78,8 @@
 # # We can use the items of an existing dictionary as iterable in a dictionary comprehension.
 # # It allows us to create dictionaries based on existing dictionaries and modify both keys and values.
 #
-# dict_c = ?.l.. j%2 ___ ? ? __ _b.i..
+# # i, j
+# dict_c = ?.l.. ?%2 ___ ? ? __ _b.i..
 # print ?
 # # {'data': 1, 'science': 1, 'machine': 1, 'learning': 0}
 #
@@ -85,6 +93,7 @@
 #
 # # We can use the enumerate function in a dictionary comprehension.
 #
+# # i, j
 # dict_names = i le_ ? ___ ? ? __ e.. ?
 # print ?
 # # {0: 4, 1: 4, 2: 4, 3: 3, 4: 6}
@@ -107,6 +116,7 @@
 # # If the element is also in the dictionary, the value will be the values of that key in the dictionary.
 # # Otherwise, the value will be the length of the key.
 #
+# #
 # print i d.. ? __ ? __ ? ____ le_ ? ___ ? __ ?
 # # {'artificial': 10, 'data': 5, 'intelligence': 12, 'science': 3}
 #
@@ -116,7 +126,8 @@
 #
 # a = [1,2,3,4]
 # b = [5,6,7]
-# dct _  i j ?*? ___ ? __ ? ___ ? __ ?
+# # i j
+# dct _  ? ? ?*? ___ ? __ ? ___ ? __ ?
 # print(?
 #
 # # {(1, 5): 5,
@@ -137,7 +148,7 @@
 # # The equivalent for loop syntax:
 #
 # dct  # dict
-#
-# ___ i __ ?
-#     ___ j __ ?
+# # i, j
+# ___ ? __ ?
+#     ___ ? __ ?
 #         ? ? ? _ ? * ?
