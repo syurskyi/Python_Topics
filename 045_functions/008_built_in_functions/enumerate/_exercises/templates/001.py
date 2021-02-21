@@ -1,5 +1,5 @@
 # my_list = ['apple', 'banana', 'grapes', 'pear']
-# ___ counter, value __ ? ?
+# ___ counter value __ ? ?
 #     print ? ?
 #
 # # Output:
