@@ -1,10 +1,10 @@
-# dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-# # Put all keys of `dict1` in a list and returns the list
-# print ?.k..
-# # dict_keys(['c', 'd', 'a', 'b'])
-#
-# # Put all values saved in `dict1` in a list and returns the list
-# print(dict1.v..
+dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+# Put all keys of `dict1` in a list and returns the list
+print(dict1.keys())
+# dict_keys(['c', 'd', 'a', 'b'])
+
+# Put all values saved in `dict1` in a list and returns the list
+# print ?.v..
 #
 # ?.i..
 # # dict_items([('c', 3), ('d', 4), ('a', 1), ('b', 2)])
@@ -26,7 +26,7 @@
 #
 # # n
 # # Add values to `new_dict` using for loop
-# ___ ? __ numbers
+# ___ ? __ ?
 #     __ ?%2__0
 #         ? ? _ ?**2
 #
@@ -129,8 +129,9 @@
 # # {'f': 'even', 'c': 'odd', 'b': 'even', 'd': 'even', 'e': 'odd', 'a': 'odd'}
 #
 # # Nested Dictionary Comprehension
-# nested_dict = *first *a 1 *second *b 2
-# float_dict = outer_k fl__ inner_v ___ (inner_k, inner_v) __ outer_v.i..} ___ (outer_k, outer_v) __ ?.i..
+# nested_dict = {'first':{'a':1}, 'second':{'b':2}}
+# # outer_k, inner_v, inner_k, outer_v
+# float_dict = ? fl__ ? ___ ? ? __ ?.i.. ___ ? ? __ ?.i..
 # print ?
 # # {'first': {1.0}, 'second': {2.0}}
 #

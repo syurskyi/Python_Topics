@@ -121,6 +121,9 @@ print(dict1_tripleCond)
 
 # Nested Dictionary Comprehension
 nested_dict = {'first':{'a':1}, 'second':{'b':2}}
+print()
+print(nested_dict.items())
+print()
 float_dict = {outer_k: {float(inner_v) for (inner_k, inner_v) in outer_v.items()} for (outer_k, outer_v) in nested_dict.items()}
 print(float_dict)
 # {'first': {1.0}, 'second': {2.0}}

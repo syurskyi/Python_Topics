@@ -1,13 +1,14 @@
-# # Example 1
-#
-# words = ['data', 'science', 'machine', 'learning'] #list comprehension
-# le_ ? ___ i __ ?
-# # [4, 7, 7, 8]
-# # #dictionary comprehension
-# # i
-# print i le_ ? ___ ? __ ?
-# # {'data': 4, 'science': 7, 'machine': 7, 'learning': 8}
-#
+# Example 1
+
+words = ['data', 'science', 'machine', 'learning'] #list comprehension
+# i
+print([len(i) for i in words])
+# [4, 7, 7, 8]
+# #dictionary comprehension
+# i
+print({i: len(i) for i in words})
+# {'data': 4, 'science': 7, 'machine': 7, 'learning': 8}
+
 #
 # # list = [expression for item in iterable(if conditional)]
 # # Dictionary = {expression for key, value in iterable(if conditional}
@@ -16,39 +17,39 @@
 # # For this example, we will repeat the task in the first example with an additional condition.
 # # Both list and dictionary comprehensions accept if/else conditional statements.
 #
-# words = ['data', 'science', 'machine', 'learning']#list comprehension
-# # i
-#  le_ ? ___ ? __ ? __ le_ ? > 5
-# # [7, 7, 8]
-# #dictionary comprehension
-# # i
-# print ? le_ ? ___ ? __ ? __ le_ ? > 5
-# # {'science': 7, 'machine': 7, 'learning': 8}
-#
+words = ['data', 'science', 'machine', 'learning']#list comprehension
+# i
+print([len(i) for i in words if len(i) > 5])
+# [7, 7, 8]
+#dictionary comprehension
+# i
+print({i: len(i) for i in words if len(i) > 5})
+# {'science': 7, 'machine': 7, 'learning': 8}
+
 # # Example 3
 # # In this example, we will slightly increase the complexity of the conditional statement.
 #
-# # i
-# words_dict = ? le_ ? __ le_ ? > 5 ____ 'short' ___ ? __ ?
-# print ?
-# # {'data': 'short', 'science': 7, 'machine': 7, 'learning': 8}
-#
-# words_dict  # dict
-# ___ ? __ words
-#     __ le_ ? >5
-#         ? ? _ le_ ?
-#     ____
-#         ? ? _ 'short'
-# print ?
-#
-# # Example 4
-# # We can iterate over two iterables in a dictionary comprehension.
-#
-# words = ['data', 'science', 'machine', 'learning']
-# values = [5, 3, 1, 8]
-# # i, j
-# dict_a =  ? ? ___ ? ? __ z.. ? ?
-# print ?
+# i
+words_dict = {i: len(i) if len(i) > 5 else 'short' for i in words}
+print(words_dict)
+# {'data': 'short', 'science': 7, 'machine': 7, 'learning': 8}
+
+words_dict = {}  # dict
+for i in words:
+    if len(i) > 5:
+        words_dict[i] = len(i)
+    else:
+        words_dict[i] = 'short'
+print(words_dict)
+
+# Example 4
+# We can iterate over two iterables in a dictionary comprehension.
+
+words = ['data', 'science', 'machine', 'learning']
+values = [5, 3, 1, 8]
+# i, j
+dict_a = {i: j for i, j in zip(words, values)}
+print(dict_a)
 # # {'data': 5, 'science': 3, 'machine': 1, 'learning': 8}
 #
 # # Example 5
