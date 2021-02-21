@@ -26,7 +26,7 @@
 #
 # print('\n')
 # ___ count, item __ ? ?
-#   print ?
+#   print ? ?
 #
 # print('\n')
 # # changing default start value
