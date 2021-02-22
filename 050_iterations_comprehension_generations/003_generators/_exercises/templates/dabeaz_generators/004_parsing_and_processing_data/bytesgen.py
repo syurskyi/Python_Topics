@@ -1,22 +1,24 @@
-# bytesgen.py
+# # bytesgen.py
+# #
+# # An example of chaining together different generators into a processing
+# # pipeline.
 #
-# An example of chaining together different generators into a processing
-# pipeline.    
-
-f.. genfind ______ *
-f.. genopen ______ *
-f.. gencat ______ *
-f.. gengrep ______ *
-
-pat    = r'ply-.*\.gz'
-logdir = 'www'
-
-filenames = gen_find("access-log*",logdir)
-logfiles  = gen_open(filenames)
-loglines  = gen_cat(logfiles)
-patlines  = gen_grep(pat,loglines)
-bytecol   = (line.rs..(N..,1)[1] ___ line __ patlines)
-bytes_sent= (in.(x) ___ x __ bytecol __ x != '-')
-
-print("Total", su.(bytes_sent))
-
+# f.. genfind ______ *
+# f.. genopen ______ *
+# f.. gencat ______ *
+# f.. gengrep ______ *
+#
+# pat    = r'ply-.*\.gz'
+# logdir = 'www'
+#
+# filenames = ? *access-log* ?
+# logfiles  = ? ?
+# loglines  = ? ?
+# patlines  = ? ? ?
+# #  line
+# # x
+# bytecol   = ?.rs.. N.. 1 1 ___ ? __ ?
+# bytes_sent= in. ? ___ ? __ ? __ x !_ '-'
+#
+# print("Total", su. ?
+#
