@@ -3,16 +3,16 @@
 # Receive objects from a different machine
 
 ______ socket
-from genpickle ______ gen_unpickle
+f.. genpickle ______ gen_unpickle
 
-def receivefrom(addr):
+___ receivefrom(addr):
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR, 1)
     s.bind(addr)
     s.listen(5)
     c, a = s.accept()
     ___ item __ gen_unpickle(c.makefile('rb')):
-        yield item
+        y... item
     c.close()
 
 # Example use:

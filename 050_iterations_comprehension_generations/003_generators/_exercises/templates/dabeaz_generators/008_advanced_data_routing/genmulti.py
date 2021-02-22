@@ -4,10 +4,10 @@
 #
 
 ______ queue, threading
-from genqueue ______ genfrom_queue, sendto_queue
-from gencat ______ gen_cat
+f.. genqueue ______ genfrom_queue, sendto_queue
+f.. gencat ______ gen_cat
 
-def multiplex(sources):
+___ multiplex(sources):
     in_q = queue.Queue()
     consumers = []
     ___ src __ sources:
@@ -17,13 +17,13 @@ def multiplex(sources):
         consumers.append(genfrom_queue(in_q))
     return gen_cat(consumers)
 
-def gen_multiplex(genlist):
+___ gen_multiplex(genlist):
     item_q = queue.Queue()
-    def run_one(source):
+    ___ run_one(source):
         ___ item __ source:
             item_q.put(item)
 
-    def run_all():
+    ___ run_all():
         thrlist = []
         ___ source __ genlist:
             t = threading.Thread(target=run_one, args=(source,))
@@ -38,7 +38,7 @@ def gen_multiplex(genlist):
         item = item_q.get()
         __ item is StopIteration:
             return
-        yield item
+        y... item
 
 
 # Example use
@@ -52,7 +52,7 @@ def gen_multiplex(genlist):
 # Now, we're going to read from both at the same time.
 
 __ __name__ == '__main__':
-    from follow ______ follow
+    f.. follow ______ follow
     
     log1 = follow(o..("run/foo/access-log"))
     log2 = follow(o..("run/bar/access-log"))
@@ -60,4 +60,4 @@ __ __name__ == '__main__':
     log = multiplex([log1,log2])
     
     ___ line __ log:
-        print(line, end='')
+        print(line, e.._'')

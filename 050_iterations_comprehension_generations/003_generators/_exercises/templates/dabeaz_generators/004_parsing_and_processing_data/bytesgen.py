@@ -3,10 +3,10 @@
 # An example of chaining together different generators into a processing
 # pipeline.    
 
-from genfind ______ *
-from genopen ______ *
-from gencat ______ *
-from gengrep ______ *
+f.. genfind ______ *
+f.. genopen ______ *
+f.. gencat ______ *
+f.. gengrep ______ *
 
 pat    = r'ply-.*\.gz'
 logdir = 'www'

@@ -6,7 +6,7 @@ logpats = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
 
 logpat = re.compile(logpats)
 
-def apache_log(lines):
+___ apache_log(lines):
     groups     = (logpat.match(line) ___ line __ lines)
     tuples     = (g.groups() ___ g __ groups __ g)
 
@@ -51,7 +51,7 @@ ___ line, m __ lines_m:
 #        print delta.seconds
         time.sleep(delta.seconds/25.0)
 
-    print(line, file=f_log, end='')
+    print(line, file=f_log, e.._'')
     f_log.flush()
     lastdate = date
     

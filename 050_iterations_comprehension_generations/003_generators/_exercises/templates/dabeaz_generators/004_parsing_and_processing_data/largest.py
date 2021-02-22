@@ -2,8 +2,8 @@
 #
 # Find the largest file
 
-from linesdir ______ lines_from_dir
-from apachelog ______ apache_log
+f.. linesdir ______ lines_from_dir
+f.. apachelog ______ apache_log
 
 lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)

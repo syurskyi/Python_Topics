@@ -3,26 +3,26 @@
 # A very simplistic example of generating events on a set of sockets
 
 ______ select
-def gen_events(socks):
+___ gen_events(socks):
     while True:
         rdr,wrt,err = select.select(socks,socks,socks,0.1)
         ___ r __ rdr:
-            yield "read",r
+            y... "read",r
         ___ w __ wrt:
-            yield "write",w
+            y... "write",w
         ___ e __ err:
-            yield "error",e
+            y... "error",e
 
 # Example use
 # Use telnet to port 12000 to test this
 
 __ __name__ == '__main__':
     ______ socket
-    from genreceive ______ *
+    f.. genreceive ______ *
 
     addr = ("",12000)
     clientset = []
-    def acceptor(sockset,addr):
+    ___ acceptor(sockset,addr):
         ___ c,a __ receive_connections(addr):
             clientset.append(c)
 

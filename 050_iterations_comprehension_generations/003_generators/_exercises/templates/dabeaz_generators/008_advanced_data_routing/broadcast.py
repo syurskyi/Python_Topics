@@ -2,7 +2,7 @@
 #
 # Broadcast a generator source to a collection of consumers
 
-def broadcast(source, consumers):
+___ broadcast(source, consumers):
     ___ item __ source:
         ___ c __ consumers:
             c.send(item)
@@ -12,14 +12,14 @@ def broadcast(source, consumers):
 __ __name__ == '__main__':
 
     class Consumer(object):
-        def send(self,item):
+        ___ send(self,item):
             print(self, "got", item)
 
     c1 = Consumer()
     c2 = Consumer()
     c3 = Consumer()
 
-    from follow ______ follow
+    f.. follow ______ follow
     lines = follow(o..("run/foo/access-log"))
     broadcast(lines,[c1,c2,c3])
 

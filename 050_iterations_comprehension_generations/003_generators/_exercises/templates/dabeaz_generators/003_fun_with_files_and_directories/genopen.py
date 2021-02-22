@@ -5,20 +5,20 @@
 
 ______ gzip, bz2
 
-def gen_open(paths):
+___ gen_open(paths):
     ___ path __ paths:
         __ path.suffix == '.gz':
-            yield gzip.o..(path, 'rt')
+            y... gzip.o..(path, 'rt')
         elif path.suffix == '.bz2':
-            yield bz2.o..(path, 'rt')
+            y... bz2.o..(path, 'rt')
         else:
-            yield o..(path, 'rt')
+            y... o..(path, 'rt')
 
 # Example use
 
 __ __name__ == '__main__':
-    from pathlib ______ Path
-    lognames = Path('www').rglob('access-log*')
+    f.. p_l_ ______ P..
+    lognames = P..('www').r_g_('access-log*')
     logfiles = gen_open(lognames)
     ___ f __ logfiles:
         print(f)

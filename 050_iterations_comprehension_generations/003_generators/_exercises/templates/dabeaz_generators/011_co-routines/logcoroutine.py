@@ -2,23 +2,23 @@
 #
 # An example of using co-routines to define consumers for the Apache log data
 
-from consumer ______ *
-from apachelog ______ *
-from follow ______ *
-from broadcast ______ *
+f.. consumer ______ *
+f.. apachelog ______ *
+f.. follow ______ *
+f.. broadcast ______ *
 
 @consumer
-def find_404():
+___ find_404():
     while True:
-        r = (yield)
+        r = (y...)
         __ r['status'] == 404:
             print(r['status'],r['datetime'],r['request'])
 
 @consumer
-def bytes_transferred():
+___ bytes_transferred():
     total = 0
     while True:
-        r = (yield)
+        r = (y...)
         total += r['bytes']
         print("Total bytes", total)
 

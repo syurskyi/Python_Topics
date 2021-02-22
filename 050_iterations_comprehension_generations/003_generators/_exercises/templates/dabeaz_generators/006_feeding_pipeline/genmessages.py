@@ -3,12 +3,12 @@
 # A generator that yields messages on a UDP socket
 
 ______ socket
-def receive_messages(addr,maxsize):
+___ receive_messages(addr,maxsize):
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     s.bind(addr)
     while True:
         msg = s.recvfrom(maxsize)
-        yield msg
+        y... msg
 
 # Example use
 # To send a message to this generator, use the code "msgtest.py"

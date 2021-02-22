@@ -4,15 +4,15 @@
 
 ______ pickle
 
-def gen_pickle(source):
+___ gen_pickle(source):
     ___ item __ source:
-        yield pickle.dumps(item)
+        y... pickle.dumps(item)
 
-def gen_unpickle(infile):
+___ gen_unpickle(infile):
     while True:
         try:
             item = pickle.load(infile)
-            yield item
+            y... item
         except EOFError:
             return
 

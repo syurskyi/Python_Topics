@@ -2,10 +2,10 @@
 #
 # Example of a co-routine
 
-def recv_count():
+___ recv_count():
     try:
         while True:
-            n = (yield)
+            n = (y...)
             print("T-minus", n)
     except GeneratorExit:
         print("Kaboom!")

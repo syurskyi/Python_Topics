@@ -5,25 +5,25 @@
 ______ socket, pickle
 
 class NetConsumer(object):
-    def __init__(self,addr):
+    ___ __init__(self,addr):
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.s.connect(addr)
-    def send(self,item):
+    ___ send(self,item):
         pitem = pickle.dumps(item)
         self.s.sendall(pitem)
-    def close(self):
+    ___ close(self):
         self.s.close()
 
 # Example use.  This requires you to run receivefrom.py first.
 
 __ __name__ == '__main__':
-    from broadcast ______ broadcast
-    from follow ______ follow
-    from apachelog ______ apache_log
+    f.. broadcast ______ broadcast
+    f.. follow ______ follow
+    f.. apachelog ______ apache_log
 
     # A class that sends 404 requests to another host
     class Stat404(NetConsumer):
-        def send(self,item):
+        ___ send(self,item):
             __ item['status'] == 404:
                 NetConsumer.send(self,item)
     

@@ -5,7 +5,7 @@
 ______ socket
 
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-def send_msg(msg):
+___ send_msg(msg):
     s.sendto(msg, ("",10000))
 
 send_msg(b"Hello World")

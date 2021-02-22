@@ -2,14 +2,14 @@
 #
 # Generate a sequence of items that put onto a queue
 
-def genfrom_queue(thequeue):
+___ genfrom_queue(thequeue):
     while True:
         item = thequeue.get()
         __ item is StopIteration:
             break
-        yield item
+        y... item
 
-def sendto_queue(items, thequeue):
+___ sendto_queue(items, thequeue):
     ___ item __ items:
         thequeue.put(item)
     thequeue.put(StopIteration)
@@ -17,7 +17,7 @@ def sendto_queue(items, thequeue):
 # Example
 __ __name__ == '__main__':
     ______ queue, threading
-    def consumer(q):
+    ___ consumer(q):
         ___ item __ genfrom_queue(q):
             print("Consumed", item)
         print("done")

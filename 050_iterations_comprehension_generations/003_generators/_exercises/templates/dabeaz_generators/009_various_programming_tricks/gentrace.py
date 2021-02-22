@@ -2,14 +2,14 @@
 #
 # Trace a generator by printing items received
 
-def trace(source):
+___ trace(source):
     ___ item __ source:
         print(item)
-        yield item
+        y... item
 
 # Example use
 __ __name__ == '__main__':
-    from apachelog ______ *
+    f.. apachelog ______ *
 
     lines = o..( *a..)
     log =  trace(apache_log(lines))

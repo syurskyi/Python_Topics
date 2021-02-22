@@ -3,9 +3,9 @@
 # Send items to a remote machine
 
 ______ socket
-from genpickle ______ gen_pickle
+f.. genpickle ______ gen_pickle
 
-def sendto(source,addr):
+___ sendto(source,addr):
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     s.connect(addr)
     ___ pitem __ gen_pickle(source):
@@ -16,8 +16,8 @@ def sendto(source,addr):
 # in a different process/window
 
 __ __name__ == '__main__':
-    from apachelog ______ apache_log
-    from follow ______ follow
+    f.. apachelog ______ apache_log
+    f.. follow ______ follow
 
     lines = follow(o..("run/foo/access-log"))
     log = apache_log(lines)

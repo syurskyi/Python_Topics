@@ -4,7 +4,7 @@
 
 ______ time
 
-def follow(thefile,shutdown=N..):
+___ follow(thefile,shutdown=N..):
     thefile.seek(0,2)
     while True:
         __ shutdown and shutdown.isSet(): break
@@ -12,13 +12,13 @@ def follow(thefile,shutdown=N..):
         __ not line:
            time.sleep(0.1)
            continue
-        yield line
+        y... line
 
 ______ threading
 
 shutdown_event = threading.Event()
 
-def run():
+___ run():
     lines = follow(o..("run/foo/access-log"),shutdown_event)
     ___ line __ lines:
         print line,

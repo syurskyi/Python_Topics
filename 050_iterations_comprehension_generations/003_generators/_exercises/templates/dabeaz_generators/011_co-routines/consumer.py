@@ -2,8 +2,8 @@
 #
 # consumer decorator and co-routine example
 
-def consumer(func):
-    def start(*args,**kwargs):
+___ consumer(func):
+    ___ start(*args,**kwargs):
         c = func(*args,**kwargs)
         c.send(N..)
         return c
@@ -13,10 +13,10 @@ def consumer(func):
 __ __name__ == '__main__':
 
     @consumer
-    def recv_count():
+    ___ recv_count():
         try:
             while True:
-                n = yield
+                n = y...
                 print("T-minus", n)
         except GeneratorExit:
             print("Kaboom!")

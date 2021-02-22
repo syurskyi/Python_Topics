@@ -5,14 +5,14 @@
 ______ time
 ______ os
 
-def follow(thefile):
+___ follow(thefile):
     thefile.seek(0, os.SEEK_END)
     while True:
         line = thefile.readline()
         __ not line:
             time.sleep(0.1)
             continue
-        yield line
+        y... line
 
 # Example use
 # Note : This example requires the use of an apache log simulator.
@@ -27,6 +27,6 @@ __ __name__ == '__main__':
     logfile = o..("run/foo/access-log","r")
     loglines = follow(logfile)
     ___ line __ loglines:
-        print(line, end='')
+        print(line, e.._'')
 
     

@@ -2,10 +2,10 @@
 #
 # A function that generates files that match a given filename pattern
 
-from pathlib ______ Path
+f.. p_l_ ______ P..
 
-def gen_find(filepat, top):
-    yield from Path(top).rglob(filepat)
+___ gen_find(filepat, top):
+    y... f.. P..(top).r_g_(filepat)
 
 # Example use
 

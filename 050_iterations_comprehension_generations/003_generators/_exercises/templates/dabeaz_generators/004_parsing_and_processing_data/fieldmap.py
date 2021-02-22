@@ -2,10 +2,10 @@
 #
 # Take a sequence of dictionaries and remap one of the fields
 
-def field_map(dictseq, name, func):
+___ field_map(dictseq, name, func):
     ___ d __ dictseq:
         d[name] = func(d[name])
-        yield d
+        y... d
 
 # Example
 
