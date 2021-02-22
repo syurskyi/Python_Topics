@@ -3,13 +3,13 @@
 # Broadcast a generator source to a collection of consumers
 
 def broadcast(source, consumers):
-    for item in source:
-        for c in consumers:
+    ___ item __ source:
+        ___ c __ consumers:
             c.send(item)
 
 
 # Example
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     class Consumer(object):
         def send(self,item):
@@ -20,6 +20,6 @@ if __name__ == '__main__':
     c3 = Consumer()
 
     from follow import follow
-    lines = follow(open("run/foo/access-log"))
+    lines = follow(o..("run/foo/access-log"))
     broadcast(lines,[c1,c2,c3])
 

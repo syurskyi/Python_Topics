@@ -14,7 +14,7 @@ def lines_from_dir(filepat, dirname):
 
 # Example use
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     loglines = lines_from_dir("access-log*","www")
-    for line in loglines:
+    ___ line __ loglines:
         print(line, end='')

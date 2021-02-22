@@ -9,7 +9,7 @@ def follow(thefile):
     thefile.seek(0, os.SEEK_END)
     while True:
         line = thefile.readline()
-        if not line:
+        __ not line:
             time.sleep(0.1)
             continue
         yield line
@@ -23,10 +23,10 @@ def follow(thefile):
 # that read the output file being generated
 # 
 
-if __name__ == '__main__':
-    logfile = open("run/foo/access-log","r")
+__ __name__ == '__main__':
+    logfile = o..("run/foo/access-log","r")
     loglines = follow(logfile)
-    for line in loglines:
+    ___ line __ loglines:
         print(line, end='')
 
     

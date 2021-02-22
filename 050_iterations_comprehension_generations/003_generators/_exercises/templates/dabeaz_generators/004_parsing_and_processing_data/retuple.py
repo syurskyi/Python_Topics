@@ -2,7 +2,7 @@
 #
 # Read a sequence of log lines and parse them into a sequence of tuples
 
-loglines = open("access-log")
+loglines = o..( *a..)
 
 import re
 
@@ -11,9 +11,9 @@ logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
 
 logpat   = re.compile(logpats)
 
-groups   = (logpat.match(line) for line in loglines)
-tuples   = (g.groups() for g in groups if g)
+groups   = (logpat.match(line) ___ line __ loglines)
+tuples   = (g.groups() ___ g __ groups __ g)
 
-if __name__ == '__main__':
-    for t in tuples:
+__ __name__ == '__main__':
+    ___ t __ tuples:
         print(t)

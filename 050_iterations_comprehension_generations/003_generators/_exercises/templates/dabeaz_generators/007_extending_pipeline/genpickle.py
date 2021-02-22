@@ -5,7 +5,7 @@
 import pickle
 
 def gen_pickle(source):
-    for item in source:
+    ___ item __ source:
         yield pickle.dumps(item)
 
 def gen_unpickle(infile):

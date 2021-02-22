@@ -6,19 +6,19 @@
 import gzip, bz2
 
 def gen_open(paths):
-    for path in paths:
-        if path.suffix == '.gz':
-            yield gzip.open(path, 'rt')
+    ___ path __ paths:
+        __ path.suffix == '.gz':
+            yield gzip.o..(path, 'rt')
         elif path.suffix == '.bz2':
-            yield bz2.open(path, 'rt')
+            yield bz2.o..(path, 'rt')
         else:
-            yield open(path, 'rt')
+            yield o..(path, 'rt')
 
 # Example use
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from pathlib import Path
     lognames = Path('www').rglob('access-log*')
     logfiles = gen_open(lognames)
-    for f in logfiles:
+    ___ f __ logfiles:
         print(f)

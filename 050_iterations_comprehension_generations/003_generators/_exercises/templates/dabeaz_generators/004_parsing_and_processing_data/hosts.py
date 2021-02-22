@@ -8,6 +8,6 @@ from apachelog import apache_log
 lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)
 
-hosts = set(r['host'] for r in log)
-for h in hosts:
+hosts = set(r['host'] ___ r __ log)
+___ h __ hosts:
     print(h)

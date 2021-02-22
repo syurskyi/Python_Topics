@@ -13,13 +13,13 @@ class storelast(object):
         return self
 
 # Example
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from follow import follow
     from apachelog import apache_log
 
-    lines = storelast(follow(open("run/foo/access-log")))
+    lines = storelast(follow(o..("run/foo/access-log")))
     log   = apache_log(lines)
 
-    for r in log:
+    ___ r __ log:
         print(r)
         print(lines.last)

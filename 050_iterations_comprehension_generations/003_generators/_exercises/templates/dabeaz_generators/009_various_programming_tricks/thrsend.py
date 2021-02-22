@@ -23,19 +23,19 @@ class ConsumerThread(threading.Thread):
 
 # Example Use
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from follow import follow
     from apachelog import apache_log
     from broadcast import broadcast
     
     def find_404(log):
-        r404 = (r for r in log if r['status'] == 404)
-        for r in r404:
+        r404 = (r ___ r __ log __ r['status'] == 404)
+        ___ r __ r404:
             print(r['status'],r['datetime'],r['request'])
 
     def bytes_transferred(log):
         total = 0
-        for r in log:
+        ___ r __ log:
             total += r['bytes']
             print("Total bytes", total)
             
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     c2 = ConsumerThread(bytes_transferred)
     c2.start()
     
-    lines = follow(open("run/foo/access-log"))
+    lines = follow(o..("run/foo/access-log"))
     log   = apache_log(lines)
     broadcast(log,[c1,c2])
 

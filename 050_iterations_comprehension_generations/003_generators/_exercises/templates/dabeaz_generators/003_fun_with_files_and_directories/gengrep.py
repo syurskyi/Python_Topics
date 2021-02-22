@@ -5,11 +5,11 @@
 import re
 def gen_grep(pat, lines):
     patc = re.compile(pat)
-    return (line for line in lines if patc.search(line))
+    return (line ___ line __ lines __ patc.search(line))
 
 # Example use
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from pathlib import Path
     from genopen import  gen_open
     from gencat  import  gen_cat
@@ -20,5 +20,5 @@ if __name__ == '__main__':
 
     # Look for ply downloads (PLY is my own Python package)
     plylines = gen_grep(r'ply-.*\.gz',loglines)
-    for line in plylines:
+    ___ line __ plylines:
         print(line, end='')

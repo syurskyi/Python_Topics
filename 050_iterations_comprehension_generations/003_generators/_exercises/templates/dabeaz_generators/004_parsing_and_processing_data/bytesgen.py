@@ -15,8 +15,8 @@ filenames = gen_find("access-log*",logdir)
 logfiles  = gen_open(filenames)
 loglines  = gen_cat(logfiles)
 patlines  = gen_grep(pat,loglines)
-bytecol   = (line.rsplit(None,1)[1] for line in patlines)
-bytes_sent= (int(x) for x in bytecol if x != '-')
+bytecol   = (line.rs..(N..,1)[1] ___ line __ patlines)
+bytes_sent= (in.(x) ___ x __ bytecol __ x != '-')
 
-print("Total", sum(bytes_sent))
+print("Total", su.(bytes_sent))
 

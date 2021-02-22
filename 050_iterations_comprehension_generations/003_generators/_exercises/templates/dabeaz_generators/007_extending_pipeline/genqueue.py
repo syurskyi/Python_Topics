@@ -5,20 +5,20 @@
 def genfrom_queue(thequeue):
     while True:
         item = thequeue.get()
-        if item is StopIteration: 
+        __ item is StopIteration:
             break
         yield item
 
 def sendto_queue(items, thequeue):
-    for item in items:
+    ___ item __ items:
         thequeue.put(item)
     thequeue.put(StopIteration)
 
 # Example
-if __name__ == '__main__':
+__ __name__ == '__main__':
     import queue, threading
     def consumer(q):
-        for item in genfrom_queue(q):
+        ___ item __ genfrom_queue(q):
             print("Consumed", item)
         print("done")
 

@@ -11,8 +11,8 @@ def recv_count():
         print("Kaboom!")
 
 r = recv_count()
-r.send(None)
-for i in range(5,0,-1):
+r.send(N..)
+___ i __ range(5,0,-1):
     r.send(i)
 
 r.close()

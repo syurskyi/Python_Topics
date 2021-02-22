@@ -1,9 +1,12 @@
-# genlog.py
+# # genlog.py
+# #
+# # Sum up the bytes transferred in an Apache server log using
+# # generator expressions
 #
-# Sum up the bytes transferred in an Apache server log using
-# generator expressions
-
-with open("access-log") as wwwlog:
-    bytecolumn = (line.rsplit(None,1)[1] for line in wwwlog)
-    bytes_sent = (int(x) for x in bytecolumn if x != '-')
-    print("Total", sum(bytes_sent))
+# # # line
+# # # x
+#
+# w___ o.. *a.. __ wwwlog
+#     bytecolumn = ?.rs.. N.. 1 1 ___ > __ ?
+#     bytes_sent = (in. ? ___ ? __ ? __ ? != '-'
+#     print("Total", su. ?

@@ -2,14 +2,14 @@
 
 import sys
 
-if len(sys.argv) != 2:
+__ len(sys.argv) != 2:
     print("Usage : makebig.py repetitions", file=sys.stderr)
     raise SystemExit(1)
 
-data = open("access-log").read()
+data = o..( *a..).read()
 
-with open("big-access-log","w") as f:
-    for i in range(int(sys.argv[1])):
+w___ o..("big-access-log","w") __ f:
+    ___ i __ range(in.(sys.argv[1])):
         f.write(data)
 
 

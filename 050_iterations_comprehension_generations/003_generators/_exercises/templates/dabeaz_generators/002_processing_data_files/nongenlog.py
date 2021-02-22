@@ -3,10 +3,10 @@
 # Sum up the number of bytes transferred in an Apache log file
 # using a simple for-loop.   We're not using generators here.
 
-with open("access-log") as wwwlog:
+w___ o..( *a..) __ wwwlog:
     total = 0
-    for line in wwwlog:
-        bytes_sent = line.rsplit(None,1)[1]
-        if bytes_sent != '-':
-            total += int(bytes_sent)
+    ___ line __ wwwlog:
+        bytes_sent = line.rs..(N..,1)[1]
+        __ bytes_sent != '-':
+            total += in.(bytes_sent)
     print("Total", total)

@@ -6,24 +6,24 @@ import select
 def gen_events(socks):
     while True:
         rdr,wrt,err = select.select(socks,socks,socks,0.1)
-        for r in rdr:
+        ___ r __ rdr:
             yield "read",r
-        for w in wrt:
+        ___ w __ wrt:
             yield "write",w
-        for e in err:
+        ___ e __ err:
             yield "error",e
 
 # Example use
 # Use telnet to port 12000 to test this
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     import socket
     from genreceive import *
 
     addr = ("",12000)
     clientset = []
     def acceptor(sockset,addr):
-        for c,a in receive_connections(addr):
+        ___ c,a __ receive_connections(addr):
             clientset.append(c)
 
     import threading
@@ -32,10 +32,10 @@ if __name__ == '__main__':
     acc_thr.daemon = True
     acc_thr.start()
     
-    for evt, s in gen_events(clientset):
-        if evt == 'read':
+    ___ evt, s __ gen_events(clientset):
+        __ evt == 'read':
             data = s.recv(1024)
-            if not data:
+            __ not data:
                 print("Closing", s)
                 s.close()
                 clientset.remove(s)

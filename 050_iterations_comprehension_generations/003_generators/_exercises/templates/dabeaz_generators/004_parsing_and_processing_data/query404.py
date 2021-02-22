@@ -8,8 +8,8 @@ from apachelog import apache_log
 lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)
 
-stat404 =  {  r['request'] for r in log
-              if r['status'] == 404 }
+stat404 =  {  r['request'] ___ r __ log
+              __ r['status'] == 404 }
 
-for r in sorted(stat404):
+___ r __ sorted(stat404):
     print(r)

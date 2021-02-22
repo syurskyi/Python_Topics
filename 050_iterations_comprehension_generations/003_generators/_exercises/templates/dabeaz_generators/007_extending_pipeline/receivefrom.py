@@ -11,11 +11,11 @@ def receivefrom(addr):
     s.bind(addr)
     s.listen(5)
     c, a = s.accept()
-    for item in gen_unpickle(c.makefile('rb')):
+    ___ item __ gen_unpickle(c.makefile('rb')):
         yield item
     c.close()
 
 # Example use:
-if __name__ == '__main__':
-    for r in receivefrom(("",15000)):
+__ __name__ == '__main__':
+    ___ r __ receivefrom(("",15000)):
         print(r['host'], r['request'])

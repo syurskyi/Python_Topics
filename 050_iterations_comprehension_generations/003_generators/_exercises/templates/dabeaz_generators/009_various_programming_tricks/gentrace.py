@@ -3,19 +3,19 @@
 # Trace a generator by printing items received
 
 def trace(source):
-    for item in source:
+    ___ item __ source:
         print(item)
         yield item
 
 # Example use
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from apachelog import *
 
-    lines = open("access-log")
+    lines = o..( *a..)
     log =  trace(apache_log(lines))
-    r404 = (r for r in log if r['status'] == 404)
+    r404 = (r ___ r __ log __ r['status'] == 404)
 
-    for r in r404:
+    ___ r __ r404:
         pass
 
 

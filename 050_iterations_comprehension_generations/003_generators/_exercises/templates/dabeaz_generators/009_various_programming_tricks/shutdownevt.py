@@ -4,12 +4,12 @@
 
 import time
 
-def follow(thefile,shutdown=None):
+def follow(thefile,shutdown=N..):
     thefile.seek(0,2)
     while True:
-        if shutdown and shutdown.isSet(): break
+        __ shutdown and shutdown.isSet(): break
         line = thefile.readline()
-        if not line:
+        __ not line:
            time.sleep(0.1)
            continue
         yield line
@@ -19,8 +19,8 @@ import threading
 shutdown_event = threading.Event()
 
 def run():
-    lines = follow(open("run/foo/access-log"),shutdown_event)
-    for line in lines:
+    lines = follow(o..("run/foo/access-log"),shutdown_event)
+    ___ line __ lines:
         print line,
 
     print "Done"

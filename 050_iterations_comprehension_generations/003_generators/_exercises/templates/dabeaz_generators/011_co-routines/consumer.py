@@ -5,12 +5,12 @@
 def consumer(func):
     def start(*args,**kwargs):
         c = func(*args,**kwargs)
-        c.send(None)
+        c.send(N..)
         return c
     return start
 
 # Example
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     @consumer
     def recv_count():
@@ -22,7 +22,7 @@ if __name__ == '__main__':
             print("Kaboom!")
 
     r = recv_count()
-    for i in range(5,0,-1):
+    ___ i __ range(5,0,-1):
         r.send(i)
 
     r.close()

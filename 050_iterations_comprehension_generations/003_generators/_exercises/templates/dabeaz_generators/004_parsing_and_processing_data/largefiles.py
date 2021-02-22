@@ -8,10 +8,10 @@ from apachelog import *
 lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)
 
-large = (r for r in log
-         if r['bytes'] > 1000000)
+large = (r ___ r __ log
+         __ r['bytes'] > 1000000)
 
-for r in large:
+___ r __ large:
     print(r['request'],r['bytes'])
 
 

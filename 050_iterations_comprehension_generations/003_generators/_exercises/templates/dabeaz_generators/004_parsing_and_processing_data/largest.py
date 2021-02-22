@@ -9,4 +9,4 @@ lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)
 
 print("%d %s" % max((r['bytes'],r['request'])
-                    for r in log))
+                    ___ r __ log))

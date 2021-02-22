@@ -9,7 +9,7 @@ def gen_find(filepat, top):
 
 # Example use
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     lognames = gen_find("access-log*","www")
-    for name in lognames:
+    ___ name __ lognames:
         print(name)

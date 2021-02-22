@@ -86,7 +86,7 @@ Part 5 : Processing Infinite Data
 
 * `follow.py <examples/follow.py>`_.  Follow a log-file in real-time like ``tail -f`` in Unix.  To run this program, you need to have a log-file to work with.  Run the program `runservers.py <examples/runservers.py>`_ to start a simulated web-server.  This will write a series of log lines for you to follow.
 
-* `realtime404.py <examples/realtime404.py>`_.  Print all 404 requests as they happen in real-time on a log file.
+* `realtime404.py <examples/realtime404.py>`_.  Print all 404 requests __ they happen in real-time on a log file.
 
 Part 6 : Feeding the Pipeline
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
