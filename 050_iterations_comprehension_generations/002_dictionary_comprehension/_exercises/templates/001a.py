@@ -41,7 +41,7 @@
 # original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
 #
 # # k, v
-# new_dict = ? ? ___ ? ? __ ? ?.i.. __ ? % 2 !_ 0 __ ? < 40
+# new_dict = ? ? ___ ? ? __ ?.i.. __ ? % 2 !_ 0 __ ? < 40
 # print ?
 # # {'john': 33}
 #
@@ -49,7 +49,7 @@
 #
 # original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
 #
-# # k
+# # k, v
 # new_dict_1 _ ? |*old __ ? > 40 ____ *young
 #     ___ ? ? __ ?.i..
 # print(new_dict_1)
@@ -58,7 +58,7 @@
 # # Example 7: Nested Dictionary with Two Dictionary Comprehensions
 # # k1, k2
 # dictionary _
-#     ? ? ? * ? ___ ? __ ra.. 1 6 ___ ? __ ra.. 2 5
+#     ? |? ? * ? ___ ? __ ra.. 1 6 ___ ? __ ra.. 2 5
 #
 # print ?
 #
