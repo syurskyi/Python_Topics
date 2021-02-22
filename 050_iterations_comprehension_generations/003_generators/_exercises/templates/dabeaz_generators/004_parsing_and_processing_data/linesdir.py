@@ -15,6 +15,6 @@ ___ lines_from_dir(filepat, dirname):
 # Example use
 
 __ __name__ __ '__main__':
-    loglines = lines_from_dir("access-log*","www")
+    loglines = lines_from_dir *a.. *w..
     ___ line __ loglines:
         print(line, e.._'')

@@ -5,7 +5,7 @@
 f.. linesdir ______ lines_from_dir
 f.. apachelog ______ apache_log
 
-lines = lines_from_dir("access-log*","www")
+lines = lines_from_dir *a.. *w..
 log = apache_log(lines)
 
 addrs = { r['host'] ___ r __ log

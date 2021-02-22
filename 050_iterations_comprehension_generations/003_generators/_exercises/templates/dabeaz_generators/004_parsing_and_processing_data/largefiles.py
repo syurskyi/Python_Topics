@@ -5,7 +5,7 @@
 f.. linesdir ______ *
 f.. apachelog ______ *
 
-lines = lines_from_dir("access-log*","www")
+lines = lines_from_dir *a.. *w..
 log = apache_log(lines)
 
 large = (r ___ r __ log
