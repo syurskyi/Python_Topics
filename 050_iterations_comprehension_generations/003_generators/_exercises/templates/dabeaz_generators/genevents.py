@@ -16,7 +16,7 @@ ___ gen_events(socks):
 # Example use
 # Use telnet to port 12000 to test this
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ______ socket
     f.. genreceive ______ *
 
@@ -33,13 +33,13 @@ __ __name__ == '__main__':
     acc_thr.start()
     
     ___ evt, s __ gen_events(clientset):
-        __ evt == 'read':
+        __ evt __ 'read':
             data = s.recv(1024)
             __ not data:
                 print("Closing", s)
                 s.close()
                 clientset.remove(s)
-            else:
+            ____
                 print(s,data)
 
 

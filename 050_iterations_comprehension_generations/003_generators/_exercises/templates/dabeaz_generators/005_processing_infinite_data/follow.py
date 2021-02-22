@@ -23,7 +23,7 @@ ___ follow(thefile):
 # that read the output file being generated
 # 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     logfile = o..("run/foo/access-log","r")
     loglines = follow(logfile)
     ___ line __ loglines:

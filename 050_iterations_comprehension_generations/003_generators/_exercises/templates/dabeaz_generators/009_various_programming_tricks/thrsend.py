@@ -23,13 +23,13 @@ class ConsumerThread(threading.Thread):
 
 # Example Use
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. follow ______ follow
     f.. apachelog ______ apache_log
     f.. broadcast ______ broadcast
     
     ___ find_404(log):
-        r404 = (r ___ r __ log __ r['status'] == 404)
+        r404 = (r ___ r __ log __ r['status'] __ 404)
         ___ r __ r404:
             print(r['status'],r['datetime'],r['request'])
 

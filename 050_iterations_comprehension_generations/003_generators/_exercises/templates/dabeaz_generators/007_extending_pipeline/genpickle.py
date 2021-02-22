@@ -14,5 +14,5 @@ ___ gen_unpickle(infile):
             item = pickle.load(infile)
             y... item
         except EOFError:
-            return
+            r_
 

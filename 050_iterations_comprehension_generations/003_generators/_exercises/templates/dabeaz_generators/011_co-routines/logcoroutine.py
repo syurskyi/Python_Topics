@@ -11,7 +11,7 @@ f.. broadcast ______ *
 ___ find_404():
     while True:
         r = (y...)
-        __ r['status'] == 404:
+        __ r['status'] __ 404:
             print(r['status'],r['datetime'],r['request'])
 
 @consumer

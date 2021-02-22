@@ -14,7 +14,7 @@ ___ receive_connections(addr):
 
 # Example use
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ___ c, a __ receive_connections(("",9000)):
         print("Got connection from", a)
         c.send(b"Hello World\n")

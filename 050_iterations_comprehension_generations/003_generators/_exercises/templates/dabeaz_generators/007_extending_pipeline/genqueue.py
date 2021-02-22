@@ -15,7 +15,7 @@ ___ sendto_queue(items, thequeue):
     thequeue.put(StopIteration)
 
 # Example
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ______ queue, threading
     ___ consumer(q):
         ___ item __ genfrom_queue(q):

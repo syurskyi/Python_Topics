@@ -13,7 +13,7 @@ ___ receive_messages(addr,maxsize):
 # Example use
 # To send a message to this generator, use the code "msgtest.py"
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ___ msg, addr __ receive_messages(("",10000),1024):
         print(msg, "from", addr)
 

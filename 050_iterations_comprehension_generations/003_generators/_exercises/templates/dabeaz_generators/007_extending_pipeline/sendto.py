@@ -15,7 +15,7 @@ ___ sendto(source,addr):
 # Example use.   This requires you to run receivefrom.py
 # in a different process/window
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. apachelog ______ apache_log
     f.. follow ______ follow
 

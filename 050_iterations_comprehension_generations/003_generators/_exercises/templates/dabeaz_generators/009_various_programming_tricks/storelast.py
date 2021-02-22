@@ -8,12 +8,12 @@ class storelast(object):
     ___ __next__(self):
         item = self.source.__next__()
         self.last = item
-        return item
+        r_ item
     ___ __iter__(self):
-        return self
+        r_ self
 
 # Example
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. follow ______ follow
     f.. apachelog ______ apache_log
 

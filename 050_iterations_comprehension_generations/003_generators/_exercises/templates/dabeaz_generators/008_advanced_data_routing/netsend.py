@@ -16,7 +16,7 @@ class NetConsumer(object):
 
 # Example use.  This requires you to run receivefrom.py first.
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. broadcast ______ broadcast
     f.. follow ______ follow
     f.. apachelog ______ apache_log
@@ -24,7 +24,7 @@ __ __name__ == '__main__':
     # A class that sends 404 requests to another host
     class Stat404(NetConsumer):
         ___ send(self,item):
-            __ item['status'] == 404:
+            __ item['status'] __ 404:
                 NetConsumer.send(self,item)
     
     stat404 = Stat404(("",15000))

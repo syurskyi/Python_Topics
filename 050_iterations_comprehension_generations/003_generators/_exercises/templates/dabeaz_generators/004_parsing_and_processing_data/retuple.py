@@ -9,11 +9,11 @@ ______ re
 logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-logpat   = re.compile(logpats)
+logpat   = re.co..(logpats)
 
-groups   = (logpat.match(line) ___ line __ loglines)
+groups   = (logpat.m..(line) ___ line __ loglines)
 tuples   = (g.groups() ___ g __ groups __ g)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ___ t __ tuples:
         print(t)

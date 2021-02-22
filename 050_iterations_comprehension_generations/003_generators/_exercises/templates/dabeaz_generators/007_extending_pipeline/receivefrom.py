@@ -16,6 +16,6 @@ ___ receivefrom(addr):
     c.close()
 
 # Example use:
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ___ r __ receivefrom(("",15000)):
         print(r['host'], r['request'])

@@ -9,7 +9,7 @@ lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)
 
 stat404 =  {  r['request'] ___ r __ log
-              __ r['status'] == 404 }
+              __ r['status'] __ 404 }
 
 ___ r __ sorted(stat404):
     print(r)

@@ -11,6 +11,6 @@ log = apache_log(lines)
 request = 'ply/ply-2.3.tar.gz'
 
 total = su.(1 ___ r __ log
-              __ r['request'] == '/ply/ply-2.3.tar.gz')
+              __ r['request'] __ '/ply/ply-2.3.tar.gz')
 
 print("Total", total)

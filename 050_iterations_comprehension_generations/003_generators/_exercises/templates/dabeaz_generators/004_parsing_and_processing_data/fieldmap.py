@@ -9,7 +9,7 @@ ___ field_map(dictseq, name, func):
 
 # Example
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     loglines = o..( *a..)
 
@@ -18,19 +18,19 @@ __ __name__ == '__main__':
     logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
                r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-    logpat   = re.compile(logpats)
+    logpat   = re.co..(logpats)
 
-    groups   = (logpat.match(line) ___ line __ loglines)
+    groups   = (logpat.m..(line) ___ line __ loglines)
     tuples   = (g.groups() ___ g __ groups __ g)
 
     colnames = ('host','referrer','user','datetime',
                 'method', 'request','proto','status','bytes')
 
-    log      = (dict(zip(colnames, t)) ___ t __ tuples)
+    log      = (di__(z..(colnames, t)) ___ t __ tuples)
 
     log      = field_map(log,"status",in.)
     log      = field_map(log,"bytes",
-                         lambda s: in.(s) __ s != '-' else 0)
+                         l____ s: in.(s) __ s != '-' ____ 0)
 
     
     ___ x __ log:

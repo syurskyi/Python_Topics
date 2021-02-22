@@ -8,12 +8,12 @@ ___ trace(source):
         y... item
 
 # Example use
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. apachelog ______ *
 
     lines = o..( *a..)
     log =  trace(apache_log(lines))
-    r404 = (r ___ r __ log __ r['status'] == 404)
+    r404 = (r ___ r __ log __ r['status'] __ 404)
 
     ___ r __ r404:
         pass

@@ -4,26 +4,26 @@ ______ re
 logpats = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-logpat = re.compile(logpats)
+logpat = re.co..(logpats)
 
 ___ apache_log(lines):
-    groups     = (logpat.match(line) ___ line __ lines)
+    groups     = (logpat.m..(line) ___ line __ lines)
     tuples     = (g.groups() ___ g __ groups __ g)
 
     colnames   = ('host','referrer','user','datetime','method',
                   'request','proto','status','bytes')
 
-    log        = (dict(zip(colnames,t)) ___ t __ tuples)
+    log        = (di__(z..(colnames,t)) ___ t __ tuples)
     log        = field_map(log,"bytes",
-                           lambda s: in.(s) __ s != '-' else 0)
+                           l____ s: in.(s) __ s != '-' ____ 0)
     log        = field_map(log,"status",in.)
-    return log
+    r_ log
 
 logfilename = "../../access-log"
 lines   = o..(logfilename)
-datepat = re.compile(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
+datepat = re.co..(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
 
-lines_m = ((line,datepat.search(line)) ___ line __ lines)
+lines_m = ((line,datepat.s..(line)) ___ line __ lines)
 
 ______ datetime
 

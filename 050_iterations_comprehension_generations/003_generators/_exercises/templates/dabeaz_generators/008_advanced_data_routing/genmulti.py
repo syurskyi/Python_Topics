@@ -15,7 +15,7 @@ ___ multiplex(sources):
                                args=(src, in_q))
         thr.start()
         consumers.append(genfrom_queue(in_q))
-    return gen_cat(consumers)
+    r_ gen_cat(consumers)
 
 ___ gen_multiplex(genlist):
     item_q = queue.Queue()
@@ -37,7 +37,7 @@ ___ gen_multiplex(genlist):
     while True:
         item = item_q.get()
         __ item is StopIteration:
-            return
+            r_
         y... item
 
 
@@ -51,7 +51,7 @@ ___ gen_multiplex(genlist):
 # These two steps will start writing two different Apache log files.
 # Now, we're going to read from both at the same time.
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     f.. follow ______ follow
     
     log1 = follow(o..("run/foo/access-log"))

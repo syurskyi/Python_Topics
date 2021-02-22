@@ -1,37 +1,40 @@
-# apachelog.py
+# # apachelog.py
+# #
+# # Parse an apache log file into a sequence of dictionaries
 #
-# Parse an apache log file into a sequence of dictionaries
-
-f.. fieldmap ______ field_map
-
-______ re
-
-logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
-           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
-
-logpat   = re.compile(logpats)
-
-___ apache_log(lines):
-    groups = (logpat.match(line) ___ line __ lines)
-    tuples = (g.groups() ___ g __ groups __ g)
-    
-    colnames = ('host','referrer','user','datetime',
-                'method', 'request','proto','status','bytes')
-
-    log      = (dict(zip(colnames,t)) ___ t __ tuples)
-    log      = field_map(log,"status",in.)
-    log      = field_map(log,"bytes",
-                         lambda s: in.(s) __ s != '-' else 0)
-
-    return log
-
-# Example use:
-
-__ __name__ == '__main__':
-    f.. linesdir ______ lines_from_dir
-    lines = lines_from_dir("access-log*","www")
-    log = apache_log(lines)
-    ___ r __ log:
-        print(r)
-
-
+# f.. fieldmap ______ field_map
+#
+# ______ re
+#
+# logpats  _ r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
+#            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
+#
+# logpat   _ re.co.. ?
+#
+# # # line, g
+# ___ apache_log lines
+#     groups _ ?.m.. ? ___ ? __ ?
+#     tuples _  ?.gr.. ___ ? __ gr.. __ ?
+#
+#     colnames _ ('host','referrer','user','datetime',
+#                 'method', 'request','proto','status','bytes')
+#
+# # t, s
+#     log      _ di__(z.. ? ? ___ ? __ t..
+#     log      _ f_m.. ? *status in.
+#     log      _ f_m.. ? *bytes
+#                          l____ ? in. ? __ ? !_ '-' ____ 0
+#
+#     r_ ?
+#
+# # Example use:
+#
+# # r
+# __ __name__ __ '__main__':
+#     f.. linesdir ______ lines_from_dir
+#     lines _ ? *access-log* *www
+#     log _ ? ?
+#     ___ ? __ ?
+#         print ?
+#
+#

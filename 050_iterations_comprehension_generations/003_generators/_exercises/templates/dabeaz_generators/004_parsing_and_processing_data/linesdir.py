@@ -10,11 +10,11 @@ ___ lines_from_dir(filepat, dirname):
     names = P..(dirname).r_g_(filepat)
     files = gen_open(names)
     lines = gen_cat(files)
-    return lines
+    r_ lines
 
 # Example use
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     loglines = lines_from_dir("access-log*","www")
     ___ line __ loglines:
         print(line, e.._'')
