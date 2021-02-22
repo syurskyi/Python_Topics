@@ -5,22 +5,23 @@
 # # Iterate automatically
 # # Iterate manually
 #
-# G _  c * 4 ___ c i_ 'SPAM'   # Generator expression
+# # c
+# G _  ? * 4 ___ ? __ 'SPAM'   # Generator expression
 #
-# print l___ G   # Force generator to produce all results
+# print l___ ?   # Force generator to produce all results
 #
 # ___ timesfour S   # Generator function
-#     ___ c i_ S
-#         y____ c * 4
+#     ___ ? __ ?
+#         y____ ? * 4
 #
 #
-# G _ timesfour 'spam'
-# print l___ G   # Iterate automatically
+# G _ ? *spam
+# print l___ ?   # Iterate automatically
 #
-# G _  c * 4 ___ c i_ 'SPAM'
+# G _  ? * 4 ___ ? __ *SPAM
 # I _ it__ G   # Iterate manually
-# print ne.. I
-# print ne.. I
+# print ne.. ?
+# print ne.. ?
 #
 # G _ timesfour 'spam'
 # I _ it__ G
@@ -32,13 +33,14 @@
 # #  ''.join x.upper    Expression
 #
 # line _ 'aa bbb c'
-# print ''.jo.. x.up...   ___ x i_ li__.sp..   i_ le. x  > 1   # Expression
+# # x
+# print ''.jo.. ?.up...   ___ ? __ li__.sp..   __ le. ?  > 1   # Expression
 #
 #
 # ___ gensub line   # Function
-#     ___ x i_ li__.sp..
-#         if le. x  > 1:
-#             y____ x.up...
+#     ___ ? __ li__.sp..
+#         __ le. ?  > 1
+#             y____ ?.up...
 #
 #
 # print ''.jo.. gensub line  # But why generate?

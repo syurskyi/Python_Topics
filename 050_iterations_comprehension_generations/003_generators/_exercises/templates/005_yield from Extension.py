@@ -9,9 +9,10 @@
 # # The Python 3.3  yield from Extension
 # # def both (N )
 #
+# # i, x
 # ___ both N
-#     ___ i __ ra.. ?   y___ ?
-#     ___ i __  |x ** 2 ___ x __ ra.. ?   y___ ?
+#     ___ ? __ ra.. ?   y___ ?
+#     ___ ? __  |? ** 2 ___ ? __ ra.. ?   y___ ?
 #
 #
 # print ? 5
@@ -20,9 +21,10 @@
 #
 # ___ both N
 #      y___ f.. ra.. ?
-#      y___ f..  |x ** 2 ___ x __ ra.. ?
+#      y___ f..  |? ** 2 ___ ? __ ra.. ?
 #
 #
 # print  li.. ? 5
 #
-# print ' : '.jo.. st_ i  ___ ? __ ? 5
+# # i
+# print ' : '.jo.. st_ ?  ___ ? __ ? 5

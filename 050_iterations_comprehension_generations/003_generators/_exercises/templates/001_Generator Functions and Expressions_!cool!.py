@@ -17,8 +17,9 @@
 #
 # # Generator Functions and Expressions
 # #  Returns a generator which is its own iterator
+# # i
 # ___ gensquares N
-#     ___ i __ r___ ?
+#     ___ ? __ r___ ?
 #         y___ ? ** 2
 #
 #
@@ -30,21 +31,22 @@
 #
 # # Generator Functions and Expressions
 # # ___ buildsquares(n)
-#
+# # i
 # ___ buildsquares n
 #     res _    #list
-#     ___ i __ r__ ? ?.ap.. ? ** 2
+#     ___ ? __ r__ ? ?.ap.. ? ** 2
 #     r_ ?
 #
-#
-# ___ x __ ? 5 print ? e.._'  '
+# # x
+# ___ ? __ ? 5 print ? e.._'  '
 # print()
 #
-# ___ x __  |n ** 2 ___ n __ r___ 5|| print ? e.._'  '    # list
+# # x, n
+# ___ ? __  |? ** 2 ___ ? __ r___ 5|| print ? e.._'  '    # list
 #
 # print()
 #
-# ___ x __ ma. ||l____ n ? ** 2| r___ 5|| print ? e.._" : "
+# ___ ? __ ma. ||l____ ? ? ** 2| r___ 5|| print ? e.._" : "
 #
 # # Generator Functions and Expressions
 # # def  ups()
@@ -55,4 +57,5 @@
 #
 # print(tu.. ? 'aaa,bbb,ccc'  # All iteration contexts)
 #
-# print |i s ___ |? ?| __ e... ? 'aaa,bbb,ccc' |    # dict   be careful here
+# # i, s
+# print |? ? ___ |? ?| __ e... ? 'aaa,bbb,ccc' |    # dict   be careful here

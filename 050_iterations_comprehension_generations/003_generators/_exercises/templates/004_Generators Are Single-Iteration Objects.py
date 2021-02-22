@@ -6,12 +6,12 @@
 # # Other iterators exhausted too StopIteration
 # # Ditto for new iterators
 # # New generator to start over
-#
-# G _  c * 4 ___ c i_ 'SPAM'
+# # c
+# G _  ? * 4 ___ ? __ 'SPAM'
 # print it.. G  is G   # My iterator is myself: G has __next__
 # # True
 #
-# G _  c * 4 ___ c i_ 'SPAM'   # Make a new generator
+# G _  ? * 4 ___ ? __ 'SPAM'   # Make a new generator
 # I1 _ it.. G   # Iterate manually
 # print ne.. I1
 # print ne.. I1
@@ -25,19 +25,19 @@
 # I3 _ it.. G   # Ditto ___ new iterators
 # # print ne.. I3                           # StopIteration
 #
-# I3 _ it.. c * 4 ___ c i_ 'SPAM'   # New generator to start over
+# I3 _ it.. ? * 4 ___ ? __ 'SPAM'   # New generator to start over
 # print ne.. I3
 #
 # # Generators Are Single-Iteration Objects
 # # Generator functions work the same way
 # # like generator expression
 #
-# def timesfour S
-#     ___ c i_ S:
-#         y____ c * 4
+# ___ timesfour S
+#     ___ ? __ ?
+#         y____ ? * 4
 #
 #
-# G _ timesfour 'spam'   # Generator functions work the same way
+# G _ ? *spam  # Generator functions work the same way
 #
 # print it.. G  is G
 #

@@ -4,14 +4,14 @@
 # #  Generator expression
 # #  Nonfunction case
 # # Simpler as generator?
-#
-# print l___ ma. ab. -1, -2, 3, 4  # Map function on tuple
-#
-# print l___ ab. x  ___ x i_  -1, -2, 3, 4 # Generator expression
-#
-# print l___ ma. l____ x x * 2,  1, 2, 3, 4 # Nonfunction case
-#
-# print l___ x * 2 ___ x i_  1, 2, 3, 4 # Simpler as generator?
+
+print(list(map(abs, (-1, -2, 3, 4))))  # Map function on tuple
+
+print(list(abs(x) for x in  (-1, -2, 3, 4))) # Generator expression
+
+print(list(map(lambda x: x * 2,  (1, 2, 3, 4)))) # Nonfunction case
+
+print(list(x * 2 for x in (1, 2, 3, 4))) # Simpler as generator?
 #
 #
 # # Generator expressions versus map
@@ -21,9 +21,9 @@
 # # Generates results
 # # impler as generator?
 #
-# line _ 'aaa,bbb,ccc'
-#
-# print ''.jo.. |x.up...   ___ x i_ ?.sp... ',' # Makes a pointless list
+line = 'aaa,bbb,ccc'
+
+print(''.join([x.upper() for x in line.split(',')])) # Makes a pointless list
 #
 # print ''.jo.. x.up...   ___ x i_ ?.sp... ','  # Generates results
 #
