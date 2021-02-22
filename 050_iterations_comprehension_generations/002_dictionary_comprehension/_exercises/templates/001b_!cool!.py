@@ -17,14 +17,14 @@
 # # Let us create a dictionary with dict comprehension such that elements of the list as the keys and the elements
 # # with first letter capitalized as the values.
 # # f
-# print ? ?.ca.. ___ f __ ?
+# print ? ?.ca.. ___ ? __ ?
 # # {'cherry': 'Cherry', 'mango': 'Mango', 'apple': 'Apple', 'banana': 'Banana'}
 #
 # # Let us use enumerate function in dictionary comprehension.
 # # If you have not used enumerate: enumerate can take any thing iterable as input and returns element and its index.
 # # dict comprehension example using enumerate function
 # # f i
-# print ? ? ___ ? ? __ e.. ?
+# print ? ? ___ ? ? __ e.. ?  # be carefull with order
 # # {'cherry': 3, 'mango': 1, 'apple': 0, 'banana': 2}
 #
 # # Another use of dict comprehension is to reverse key:value in an existing dictionary. Sometimes you may want
@@ -54,5 +54,5 @@
 # remove_this = {'apple','cherry'}
 # # dict comprehension example to delete key:value pairs in a dictionary
 # #key
-# print ? ? ? ___ ? __ ?.k.. -
+# print ? ? ? ___ ? __ ?.k.. - ?
 # # {'banana': 'Banana', 'mango': 'Mango'}
