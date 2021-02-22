@@ -7,6 +7,6 @@
 # # # x
 #
 # w___ o.. *a.. __ wwwlog
-#     bytecolumn = ?.rs.. N.. 1 1 ___ > __ ?
-#     bytes_sent = (in. ? ___ ? __ ? __ ? != '-'
+#     bytecolumn _ ?.rs.. N.. 1 1 ___ > __ ?
+#     bytes_sent _ (in. ? ___ ? __ ? __ ? !_ '-'
 #     print("Total", su. ?

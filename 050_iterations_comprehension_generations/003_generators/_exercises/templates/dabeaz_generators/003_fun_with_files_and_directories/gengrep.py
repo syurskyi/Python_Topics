@@ -2,7 +2,7 @@
 #
 # Grep a sequence of lines that match a re pattern
 
-import re
+______ re
 def gen_grep(pat, lines):
     patc = re.compile(pat)
     return (line ___ line __ lines __ patc.search(line))
@@ -10,9 +10,9 @@ def gen_grep(pat, lines):
 # Example use
 
 __ __name__ == '__main__':
-    from pathlib import Path
-    from genopen import  gen_open
-    from gencat  import  gen_cat
+    from pathlib ______ Path
+    from genopen ______  gen_open
+    from gencat  ______  gen_cat
 
     lognames = Path('www').rglob('access-log*')
     logfiles = gen_open(lognames)

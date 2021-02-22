@@ -9,7 +9,7 @@ def trace(source):
 
 # Example use
 __ __name__ == '__main__':
-    from apachelog import *
+    from apachelog ______ *
 
     lines = o..( *a..)
     log =  trace(apache_log(lines))

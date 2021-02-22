@@ -16,7 +16,7 @@ def sendto_queue(items, thequeue):
 
 # Example
 __ __name__ == '__main__':
-    import queue, threading
+    ______ queue, threading
     def consumer(q):
         ___ item __ genfrom_queue(q):
             print("Consumed", item)
@@ -27,6 +27,6 @@ __ __name__ == '__main__':
     con_thr.start()
 
     # Now, pipe a bunch of data into the queue
-    sendto_queue(range(100), in_q)
+    sendto_queue(ra__(100), in_q)
 
 

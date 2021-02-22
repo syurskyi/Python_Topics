@@ -12,7 +12,7 @@ def recv_count():
 
 r = recv_count()
 r.send(N..)
-___ i __ range(5,0,-1):
+___ i __ ra__(5,0,-1):
     r.send(i)
 
 r.close()

@@ -14,8 +14,8 @@ class storelast(object):
 
 # Example
 __ __name__ == '__main__':
-    from follow import follow
-    from apachelog import apache_log
+    from follow ______ follow
+    from apachelog ______ apache_log
 
     lines = storelast(follow(o..("run/foo/access-log")))
     log   = apache_log(lines)

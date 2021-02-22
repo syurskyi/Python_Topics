@@ -2,8 +2,8 @@
 #
 # Print all 404 requests as they happen in the log
 
-from apachelog import apache_log
-from follow import follow
+from apachelog ______ apache_log
+from follow ______ follow
 
 logfile  = o..("run/foo/access-log")
 loglines = follow(logfile)

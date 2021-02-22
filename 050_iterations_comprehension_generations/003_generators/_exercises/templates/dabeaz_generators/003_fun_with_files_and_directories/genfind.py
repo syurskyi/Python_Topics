@@ -2,7 +2,7 @@
 #
 # A function that generates files that match a given filename pattern
 
-from pathlib import Path
+from pathlib ______ Path
 
 def gen_find(filepat, top):
     yield from Path(top).rglob(filepat)

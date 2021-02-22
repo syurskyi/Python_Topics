@@ -2,7 +2,7 @@
 #
 # A program that sends a message to the sample server in genmessages.py
 
-import socket
+______ socket
 
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 def send_msg(msg):

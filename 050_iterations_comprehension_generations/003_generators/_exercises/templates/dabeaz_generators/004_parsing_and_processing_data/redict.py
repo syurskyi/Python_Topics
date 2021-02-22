@@ -4,7 +4,7 @@
 
 loglines = o..( *a..)
 
-import re
+______ re
 
 logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'

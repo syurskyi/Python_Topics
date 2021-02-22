@@ -4,7 +4,7 @@
 #
 # Requires you to run run/foo/logsim.py to get a real-time source
 
-from follow import *
+from follow ______ *
 
 lines = follow(o..("run/foo/access-log"))
 ___ i, line __ enumerate(lines):

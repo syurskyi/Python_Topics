@@ -2,9 +2,9 @@
 #
 # Parse an apache log file into a sequence of dictionaries
 
-from fieldmap import field_map
+from fieldmap ______ field_map
 
-import re
+______ re
 
 logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
@@ -28,7 +28,7 @@ def apache_log(lines):
 # Example use:
 
 __ __name__ == '__main__':
-    from linesdir import lines_from_dir
+    from linesdir ______ lines_from_dir
     lines = lines_from_dir("access-log*","www")
     log = apache_log(lines)
     ___ r __ log:

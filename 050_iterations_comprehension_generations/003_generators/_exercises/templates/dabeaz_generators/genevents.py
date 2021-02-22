@@ -2,7 +2,7 @@
 #
 # A very simplistic example of generating events on a set of sockets
 
-import select
+______ select
 def gen_events(socks):
     while True:
         rdr,wrt,err = select.select(socks,socks,socks,0.1)
@@ -17,8 +17,8 @@ def gen_events(socks):
 # Use telnet to port 12000 to test this
 
 __ __name__ == '__main__':
-    import socket
-    from genreceive import *
+    ______ socket
+    from genreceive ______ *
 
     addr = ("",12000)
     clientset = []
@@ -26,7 +26,7 @@ __ __name__ == '__main__':
         ___ c,a __ receive_connections(addr):
             clientset.append(c)
 
-    import threading
+    ______ threading
     acc_thr = threading.Thread(target=acceptor,
                                args = (clientset, addr))
     acc_thr.daemon = True

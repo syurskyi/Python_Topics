@@ -2,8 +2,8 @@
 #
 # Receive objects from a different machine
 
-import socket
-from genpickle import gen_unpickle
+______ socket
+from genpickle ______ gen_unpickle
 
 def receivefrom(addr):
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)

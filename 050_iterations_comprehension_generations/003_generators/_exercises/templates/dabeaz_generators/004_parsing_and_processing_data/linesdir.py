@@ -2,9 +2,9 @@
 #
 # Generate a sequence of lines from files in a directory
 
-from pathlib import Path
-from gencat import *
-from genopen import *
+from pathlib ______ Path
+from gencat ______ *
+from genopen ______ *
 
 def lines_from_dir(filepat, dirname):
     names = Path(dirname).rglob(filepat)

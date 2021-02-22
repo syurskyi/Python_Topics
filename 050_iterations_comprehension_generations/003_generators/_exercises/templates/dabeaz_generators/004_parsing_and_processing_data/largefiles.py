@@ -2,8 +2,8 @@
 #
 # Find all transfers over a megabyte
 
-from linesdir import *
-from apachelog import *
+from linesdir ______ *
+from apachelog ______ *
 
 lines = lines_from_dir("access-log*","www")
 log = apache_log(lines)

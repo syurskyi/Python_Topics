@@ -19,7 +19,7 @@ __ __name__ == '__main__':
     c2 = Consumer()
     c3 = Consumer()
 
-    from follow import follow
+    from follow ______ follow
     lines = follow(o..("run/foo/access-log"))
     broadcast(lines,[c1,c2,c3])
 

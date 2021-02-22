@@ -2,8 +2,8 @@
 #
 # Follow a file like tail -f.
 
-import time
-import os
+______ time
+______ os
 
 def follow(thefile):
     thefile.seek(0, os.SEEK_END)

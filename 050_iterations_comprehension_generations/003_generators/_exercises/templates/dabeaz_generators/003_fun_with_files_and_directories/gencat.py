@@ -9,8 +9,8 @@ def gen_cat(sources):
 # Example use
 
 __ __name__ == '__main__':
-    from pathlib import Path
-    from genopen import gen_open
+    from pathlib ______ Path
+    from genopen ______ gen_open
 
     lognames = Path('www').rglob('access-log*')
     logfiles = gen_open(lognames)

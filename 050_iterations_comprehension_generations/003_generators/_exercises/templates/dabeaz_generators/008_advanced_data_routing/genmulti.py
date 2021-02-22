@@ -3,9 +3,9 @@
 # Generate items from multiple generators (multiplex)
 #
 
-import queue, threading
-from genqueue import genfrom_queue, sendto_queue
-from gencat import gen_cat
+______ queue, threading
+from genqueue ______ genfrom_queue, sendto_queue
+from gencat ______ gen_cat
 
 def multiplex(sources):
     in_q = queue.Queue()
@@ -52,7 +52,7 @@ def gen_multiplex(genlist):
 # Now, we're going to read from both at the same time.
 
 __ __name__ == '__main__':
-    from follow import follow
+    from follow ______ follow
     
     log1 = follow(o..("run/foo/access-log"))
     log2 = follow(o..("run/bar/access-log"))

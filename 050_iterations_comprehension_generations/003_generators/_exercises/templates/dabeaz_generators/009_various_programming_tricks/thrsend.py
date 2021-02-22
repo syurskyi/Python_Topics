@@ -2,7 +2,7 @@
 #
 # Send items to consumer threads
 
-import queue, threading
+______ queue, threading
 class ConsumerThread(threading.Thread):
     def __init__(self, target):
         threading.Thread.__init__(self)
@@ -24,9 +24,9 @@ class ConsumerThread(threading.Thread):
 # Example Use
 
 __ __name__ == '__main__':
-    from follow import follow
-    from apachelog import apache_log
-    from broadcast import broadcast
+    from follow ______ follow
+    from apachelog ______ apache_log
+    from broadcast ______ broadcast
     
     def find_404(log):
         r404 = (r ___ r __ log __ r['status'] == 404)

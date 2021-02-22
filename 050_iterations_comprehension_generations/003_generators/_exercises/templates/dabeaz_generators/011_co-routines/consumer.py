@@ -22,7 +22,7 @@ __ __name__ == '__main__':
             print("Kaboom!")
 
     r = recv_count()
-    ___ i __ range(5,0,-1):
+    ___ i __ ra__(5,0,-1):
         r.send(i)
 
     r.close()

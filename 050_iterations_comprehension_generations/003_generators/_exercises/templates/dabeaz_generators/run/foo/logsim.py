@@ -1,5 +1,5 @@
-import sys
-import re
+______ ___
+______ re
 
 logpats = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
@@ -25,15 +25,15 @@ datepat = re.compile(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
 
 lines_m = ((line,datepat.search(line)) ___ line __ lines)
 
-import datetime
+______ datetime
 
 months = {'Jan' : 1, 'Feb' : 2, 'Mar' : 3, 'Apr' : 4, 'May' : 5,
           'Jun' : 6, 'Jul' : 7, 'Aug' : 8, 'Sep' : 9, 'Oct' : 10,
           'Nov' : 11, 'Dec' : 12 }
 
 lastdate = N..
-import time
-import sys
+______ time
+______ ___
 
 f_log = o..( *a..,"w")
 ___ line, m __ lines_m:

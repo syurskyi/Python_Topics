@@ -2,7 +2,7 @@
 #
 # A generator that yields messages on a UDP socket
 
-import socket
+______ socket
 def receive_messages(addr,maxsize):
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     s.bind(addr)

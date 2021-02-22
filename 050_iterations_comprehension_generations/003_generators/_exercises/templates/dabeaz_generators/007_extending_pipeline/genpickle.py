@@ -2,7 +2,7 @@
 #
 # Turn a sequence of objects into a sequence of pickle strings
 
-import pickle
+______ pickle
 
 def gen_pickle(source):
     ___ item __ source:

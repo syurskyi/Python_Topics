@@ -2,10 +2,10 @@
 #
 # An example of using co-routines to define consumers for the Apache log data
 
-from consumer import *
-from apachelog import *
-from follow import *
-from broadcast import *
+from consumer ______ *
+from apachelog ______ *
+from follow ______ *
+from broadcast ______ *
 
 @consumer
 def find_404():

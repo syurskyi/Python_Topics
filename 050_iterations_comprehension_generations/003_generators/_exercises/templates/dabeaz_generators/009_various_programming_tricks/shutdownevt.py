@@ -2,7 +2,7 @@
 #
 # Example of a generator that uses an event to shut down
 
-import time
+______ time
 
 def follow(thefile,shutdown=N..):
     thefile.seek(0,2)
@@ -14,7 +14,7 @@ def follow(thefile,shutdown=N..):
            continue
         yield line
 
-import threading
+______ threading
 
 shutdown_event = threading.Event()
 

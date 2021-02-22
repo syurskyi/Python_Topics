@@ -2,7 +2,7 @@
 #
 # Consume items and send them to a remote machine
 
-import socket, pickle
+______ socket, pickle
 
 class NetConsumer(object):
     def __init__(self,addr):
@@ -17,9 +17,9 @@ class NetConsumer(object):
 # Example use.  This requires you to run receivefrom.py first.
 
 __ __name__ == '__main__':
-    from broadcast import broadcast
-    from follow import follow
-    from apachelog import apache_log
+    from broadcast ______ broadcast
+    from follow ______ follow
+    from apachelog ______ apache_log
 
     # A class that sends 404 requests to another host
     class Stat404(NetConsumer):
