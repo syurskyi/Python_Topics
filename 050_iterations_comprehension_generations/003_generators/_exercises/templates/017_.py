@@ -4,17 +4,18 @@
 #
 # l _ [1, 2, [3, 4, [5, 6]], [7, [8, 9, 10]]]
 #
+# # item
 # ___ flatten_gen curr_item
-#     i_. isi... curr_item  l...
-#         ___ item i_ curr_item
-#             y___ from f....
+#     __. isi... ?  l...
+#         ___ ? __ ?
+#             y___ f.. f....
 #     e___
-#         y___ c.._i..
+#         y___ ?
+# # item
+# ___ ? __ ? l
+#     print ?
 #
-# ___ item i_ f.._g.. l :
-#     print i...
-#
-#  l... f.._g.. l
+#  l... ? l
 #
 # # Our goal is to flatten a  list containing nested lists to any level.
 # # Why are we getting this recursion error?
@@ -27,18 +28,19 @@
 #
 # l _ [1, 2, [3, 4, [5, 6]], [7, [8, 9, 10]]]
 #
-# ___ is_iterable item * s.._i._i.. _ T...
+# # item
+# ___ is_iterable ? * s.._i._i.. _ T...
 #     t__
-#         it.. item
+#         it.. ?
 #     e...
 #         r_ F...
-#     e___:
-#         i_. isi... item st.
+#     e___
+#         i_. isi... ? st.
 #             i_. s.._i._i. an. le. it..  > 1
 #                 r_ T...
-#             e___:
+#             e___
 #                 r_ F...
-#         e___:
+#         e___
 #             r_ T...
 #
 # print i.....  1 2 3
@@ -53,7 +55,7 @@
 #     i_. i..... c.._i.. s.._i._iterable_str_is_iterable :
 #         ___ item i_ curr_item
 #             y___ from flatten_gen item, str_is_iterable_str_is_iterable
-#     e___:
+#     e___
 #         y___ c.._i..
 #
 # llist flatten_gen l
@@ -63,9 +65,9 @@
 # # Here's a simple example of this:
 #
 # ___ coro
-#     w____ T...:
+#     w____ T...
 #         received _ y___
-#         print r...
+#         print ?
 #
 #
 # ___ gen1

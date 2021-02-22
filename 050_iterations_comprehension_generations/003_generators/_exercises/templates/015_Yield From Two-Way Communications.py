@@ -1,28 +1,30 @@
 # # Yield From - Two-Way Communications
 # #
-# # i_ the last section on generators, we started looking at yield f... and how we could delegate iteration to
+# # in the last section on generators, we started looking at yield f... and how we could delegate iteration to
 # # another iterator.
 # # Alternatively we could write the same thing this way:
 #
+# # i
 # ___ squares n
-#     ___ i i_ ra__ n
-#         y____ i ** 2
+#     ___ ? __ ra__ n
+#         y____ ? ** 2
 #
+# # value
 # ___ delegator n
-#     ___ value i_ sq.. n
-#         y____ va..
+#     ___ ? __ sq.. ?
+#         y____ ?
 #
-# gen _ delegator 5
-# ___ _ i_ ra__ 5 :
-#     print ne__ gen
+# gen _ ? 5
+# ___ _ __ ra__ 5
+#     print ne__ ?
 #
-# ___ delegator n
-#     y____ f... sq.. n
+# ___ ? n
+#     y____ f... sq.. ?
 #
 #
-# gen _ delegator 5
-# ___ _ i_ ra__ 5 :
-#     print ne__ gen
+# gen _ ? 5
+# ___ _ __ ra__ 5
+#     print ne__ ?
 #
 #
 # # Yield From - Two-Way Communications
@@ -78,9 +80,9 @@
 # ___ player
 #     count _ 1
 #     w____ T..
-#         print 'Run count:' c...
+#         print 'Run count:' ?
 #         y____ f... song
-#         count +_ 1
+#         ? +_ 1
 #
 # p _ pl...
 # ne__ p , ne__ p
