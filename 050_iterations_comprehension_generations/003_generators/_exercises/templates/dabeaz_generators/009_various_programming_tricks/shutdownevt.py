@@ -36,5 +36,5 @@ t.start()
 time.sleep(60)
 print "Shutting down"
 
-shutdown_event.set()
+shutdown_event.se.()
 
