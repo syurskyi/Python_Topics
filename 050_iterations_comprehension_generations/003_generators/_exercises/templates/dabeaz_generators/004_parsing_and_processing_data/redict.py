@@ -4,12 +4,12 @@
 
 loglines = o..( *a..)
 
-______ re
+______ __
 
 logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-logpat   = re.co..(logpats)
+logpat   = __.co..(logpats)
 
 groups   = (logpat.m..(line) ___ line __ loglines)
 tuples   = (g.groups() ___ g __ groups __ g)

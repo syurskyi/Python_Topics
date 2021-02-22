@@ -1,10 +1,10 @@
 ______ ___
-______ re
+______ __
 
 logpats = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-logpat = re.co..(logpats)
+logpat = __.co..(logpats)
 
 ___ apache_log(lines):
     groups     = (logpat.m..(line) ___ line __ lines)
@@ -21,7 +21,7 @@ ___ apache_log(lines):
 
 logfilename = "../../access-log"
 lines   = o..(logfilename)
-datepat = re.co..(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
+datepat = __.co..(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
 
 lines_m = ((line,datepat.s..(line)) ___ line __ lines)
 
