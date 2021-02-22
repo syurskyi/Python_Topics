@@ -5,25 +5,28 @@
 # ___ squares sentinel
 #     i _ 0
 #     w___ T_
-#         i_ i < sentinel
-#             y___ i**2
-#             i +_ 1 # note how we can incremenet **after** the yield
-#         e___
+#         __ ? < ?
+#             y___ ?**2
+#             ? +_ 1 # note how we can incremenet **after** the yield
+#         ____
 #             r_ 'all done!'
 #
-# ___ num i_ squares 5 :
-#     print n..
+# num
+# ___ ? __ s.. 5
+#     print ?
 #
 # # Yielding and Generators
 # #
 # # So now let's see how we could re-write our initial factorial example:
 #
+# # i
 # ___ factorials n
-#     ___ i i_ range n
-#         y___ ma__.fac... i
+#     ___ ? __ ra__ ?
+#         y___ ma__.fac... ?
 #
-# ___ num i_ factorials 5 :
-#     print n..
+# # num
+# ___ ? __ f.. 5
+#     print ?
 #
 # facts _ factorials 5
 # li.. f...
@@ -36,30 +39,33 @@
 # # But, sq was an iterator - so now it's been exhausted:
 # # To restart the iteration we have to create a new instance of the generator  iterator :
 #
+# # i
 # ___ squares_gen n
-#     ___ i i_ ra... n
-#         y___ i ** 2
+#     ___ ? __ ra... ?
+#         y___ ? ** 2
 #
 # sq _ squares_gen 5
 #
-# ___ num i_ sq
-#     print n..
+# # num
+# ___ ? __ ?
+#     print ?
 #
 # ne.. sq
 #
 # sq _ squares_gen 5
-# num ___ num i_ sq
+# num ___ num __ sq
 #
 # # Generators used with other Generators
 # # Now enumerate is lazy, so sq had not, at this point, been consumed:
 # # Since we have consumed two elements from sq, when we now use enumerate it will have two less elements from sq:
 #
+# # i
 # ___ squares n
-#     ___ i i_ ra... n
-#         y___ i ** 2
+#     ___ ? __ ra... ?
+#         y___ ? ** 2
 #
-# sq _ squares 5
-# enum_sq _ en... sq
+# sq _ ? 5
+# enum_sq _ en... ?
 #
 # ne.. sq
 # ne.. sq
@@ -71,24 +77,27 @@
 # # We can easily create a generator by using    parentheses instead of the [] brackets:
 # # Note that g is a generator, and is also lazily evaluated:
 #
-# l _  i ** 2 ___ i i_ ra... 5
+# # i
+# l _  ? ** 2 ___ ? __ ra... 5
 # l
 # # The expression inside the [] brackets is called a comprehension expression.
 #
-# g _  i ** 2 ___ i i_ ra... 5
+# g _  ? ** 2 ___ ? __ ra... 5
 #
-# ty.. g
+# ty.. ?
 #
-# ___ item i_ g
-#     print i...
+# item
+# ___ ? __ ?
+#     print ?
 #
 # # Generator Expressions
 # #
 # # We can iterate over the same li.. comprehension multiple times, since it is an iterable.
 # # However, we can only iterate over a comprehension expression once, since it is an iterator.
 #
-# l _ i * 2 ___ i i_ ra... 5
-# ty.. l
+# # i
+# l _ ? * 2 ___ ? __ ra... 5
+# ty.. ?
 #
-# g _  i ** 2 ___ i i_ ra... 5
+# g _  i ** 2 ___ i __ ra... 5
 # ty.. g

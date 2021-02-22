@@ -4,14 +4,14 @@
 # # ne.., and se.. to se.. a "request" to a delegated subgenerator via the delegator generator.
 # # In fact, we can also se.. exceptions by throwing an E.... into the delegator, just like a se..
 #
-# c_ CloseCoroutine E.... :
+# c_ CloseCoroutine E....
 #     p___
 #
 # ___ echo
 #      t__
 #         w___ T...
 #             received _ y____
-#             print r...
+#             print ?
 #     e.... C..C...
 #         r_ 'coro was closed'
 #     e.... G..E..
@@ -22,9 +22,9 @@
 #
 # e.th.. CloseCoroutine, 'just closing'
 #
-# e _ echo
-# ne.. e
-# e.cl..
+# e _ ?
+# ne.. ?
+# ?.cl..
 #
 # # Yield From - Throwing Exceptions
 # # As we can see the difference between th.. and close is that although close causes an E.... to be raised in
@@ -54,8 +54,8 @@
 #
 # ___ echo
 #      t__:
-#         w___ T...:
-#              t__:
+#         w___ T...
+#              t__
 #                 received _ y____
 #                 print r...
 #             e.... IgnoreMe
@@ -87,8 +87,8 @@
 # ___ echo
 #      t__
 #         output _ N...
-#         w___ T...:
-#              t__:
+#         w___ T...
+#              t__
 #                 received _ y____ output
 #                 print r...
 #             e.... IgnoreMe

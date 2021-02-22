@@ -11,15 +11,15 @@
 # # and we can do this one more time to close the delegator:
 #
 # ___ subgen
-#     t__:
+#     t__
 #         w___ T...
 #             received _ y____
-#             print received
+#             print ?
 #     f_____
 #         print 'subgen: closing...'
 #
 # ___ delegator
-#     s _ subgen
+#     s _ s..
 #     y____ f..
 #     y____ 'delegator: subgen closed'
 #     print 'delegator: closing...'
@@ -69,11 +69,11 @@
 # # since we know the StopIteration exception should contain the return value:
 #
 # ___ subgen
-#     t__:
+#     t__
 #         w___ T...
 #             received _ y____
-#             print r...
-#     f_____:
+#             print ?
+#     f__
 #         print 'subgen: closing...'
 #         r_ 'subgen: return value'
 #
@@ -94,10 +94,10 @@
 # # As you can see the return value of the subgenerator ended up as the result of the yield from expression.
 #
 # ___ subgen
-#     t__:
+#     t__
 #         y____ 1
 #         y____ 2
-#     f_____:
+#     f_____
 #         print 'subgen: closing...'
 #         r_ 100
 #

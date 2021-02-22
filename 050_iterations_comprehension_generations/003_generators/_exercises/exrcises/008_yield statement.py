@@ -25,8 +25,8 @@
 # n... g...  # error
 #
 # gen_my_func _ my_func
-# '__iter__' i_ di. gen_my_func
-# '__next__' i_ di. gen_my_func
+# '__iter__' __ di. gen_my_func
+# '__next__' __ di. gen_my_func
 #
 # gen_my_func
 # it.. g....

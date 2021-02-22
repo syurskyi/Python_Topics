@@ -8,9 +8,10 @@
 # # Every time we call ne.., the generator function runs, or is i_ a running state until the ne.. yield is encountered,
 # # or no more results are yielded and the function actually returns:
 #
+# # c
 # ___ gen s
-#     ___ c i_ s
-#         y____ c
+#     ___ ? __ ?
+#         y____ ?
 #
 # g _ gen 'abc'
 #
@@ -32,8 +33,8 @@
 # # The generator is now in a closed state:
 #
 # f.. in.. _______ getgeneratorstate
-# g _ gen 'abc'
-# get...... g
+# g _ g.. *abc
+# get...... ?
 #
 # ne.. g
 #
@@ -47,14 +48,15 @@
 # # but to do that we need to have a reference to the generator object itself. This is not that easy to do,
 # # so I'm going to cheat and assume that the generator object will be referenced by a global variable global_gen:
 #
-# ___ gen s :
-#     ___ c i_ s:
+# # c
+# ___ gen s
+#     ___ ? __ ?
 #         print get...... global_gen
-#         y____ c
+#         y____ ?
 #
 # global_gen _ gen 'abc'
 #
-# ne.. global_gen
+# ne.. ?
 #
 # # Generator States
 # #
@@ -68,15 +70,16 @@
 # # As you can see, only now does the right after yield string get printed from our generator.
 #
 # ___ square i
-#     print _*squaring |i|*
-#     r_ i ** 2
+#     print _*squaring |?|*
+#     r_ ? ** 2
 #
+# # i
 # ___ squares n
-#     ___ i i_ ra... n
-#         y____ square i
+#     ___ ? __ ra... ?
+#         y____ ? ?
 #         print  'right after yield'
 #
-# sq _ squares 5
-# ne.. sq
+# sq _ ? 5
+# ne.. ?
 #
-# ne.. sq
+# ne.. ?

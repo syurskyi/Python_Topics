@@ -6,10 +6,10 @@
 # # We can use this coroutine this way:
 # # And we can close the generator:
 #
-# ___ echo  :
+# ___ echo
 #     w___  T...
 #         received _ y____
-#         print r.. ::-1
+#         print ? ::-1
 #
 # e _ echo
 # ne.. e   # prime the coroutine
@@ -28,10 +28,10 @@
 #
 # ___ delegator
 #     e _ echo
-#     y____ f... e
+#     y____ f... ?
 #
 # d _ delegato
-# ne.. d
+# ne.. ?
 #
 # f... i.... _______ g..g..s  g..g..l
 #  g..g..l d
@@ -47,7 +47,7 @@
 #     output _ N...
 #     w___  T...
 #         received _ y____ o...
-#         output _ r.... ::-1
+#         output _ ? ::-1
 #
 # e _ echo
 # ne.. e
@@ -56,7 +56,7 @@
 # ___ delegator
 #     y____ f... e....
 #
-# d _ delegator
-# ne.. d
+# d _ ?
+# ne.. ?
 #
 # d.se.. 'stressed'

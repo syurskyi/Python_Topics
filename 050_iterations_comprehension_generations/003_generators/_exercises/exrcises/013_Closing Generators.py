@@ -5,15 +5,15 @@
 #
 # ___ parse_file f_name
 #     print 'opening file...'
-#     f _ op.. f_name, 'r'
+#     f _ op.. ? _      # read
 #     t..
-#         dialect _ csv.Sni...  .sniff f.read 2000
-#         f.se.. 0
-#         ne.. f   # skip header row
-#         reader _ csv.re.. f, dialect_dialect
-#         ___ row i_ reader
+#         dialect _ ___.Sni...  .sniff f.read 2000
+#         ?.se.. 0
+#         ne.. ?   # skip header row
+#         reader _ ___.re.. f, dialect_dialect
+#         ___ row __ ?
 #             t..
-#                 y____ row
+#                 y____ ?
 #             e_____ G..E..
 #                 print 'got a close...'
 #                 r...
@@ -21,8 +21,8 @@
 #         print 'cleaning up...'
 #         f.cl..
 #
-# parser _ parse_file 'cars.csv'
-# ___ row i_ it__t__.isl... parser 5
+# parser _ ? 'cars.csv'
+# ___ row __ it__t__.isl... parser 5
 #     print r..
 #
 # pa__.cl..
@@ -39,7 +39,7 @@
 #         f.se.. 0
 #         ne.. f   # skip header row
 #         reader _ csv.re.. f dialect_dialect
-#         ___ row i_ reader
+#         ___ row __ reader
 #             t..
 #                 y____ row
 #             e_____ G..E..
@@ -50,7 +50,7 @@
 #         f.cl..
 #
 # parser _ parse_file 'cars.csv'
-# ___ row i_ it__t__.isl... parser 5
+# ___ row __ it__t__.isl... parser 5
 #     print row
 #
 # pa_cl..
@@ -71,8 +71,8 @@
 #     e_____ E...
 #         is_abort _ T..
 #         r...
-#     f___:
-#         i_ is_abort:
+#     f___
+#         __ is_abort
 #             print 'aborting transaction'
 #         e___
 #             print 'committing transaction'

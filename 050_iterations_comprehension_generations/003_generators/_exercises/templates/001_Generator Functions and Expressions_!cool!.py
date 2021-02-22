@@ -1,8 +1,9 @@
+# # i
 # ___ gensquares N
-#     ___ i __ r___ ?
+#     ___ ? __ r___ ?
 #         y___ ? ** 2  # Resume here later
 #
-# ___ i __ ? 5  # Resume the function
+# ___ ? __ ? 5  # Resume the function
 #     print ? e.._' : '  # # Print last y___ed value
 #
 # print()

@@ -6,13 +6,13 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print received
+#             print ?
 #     f.....
 #         print 'E.... must have happened...'
 #
-# g _ gen
-# ne.. g
-# g.send 'hello' g.throw ValueError, 'custom message'
+# g _ ?
+# ne.. ?
+# ?.s.. 'hello' g.throw ValueError, 'custom message'
 #
 # # Sending Exceptions to Generators
 # # a_ you can see, the E.... occurred inside the generator, and then propagated up to the caller
@@ -22,16 +22,16 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print r...
+#             print ?
 #     e.... V...E..
 #         print 'received the value error...'
-#     f.....
+#     f....
 #         print 'generator exiting and closing'
 #
-# g _ gen
-# ne.. g
-# g.send 'hello'
-# g.throw V...E... 'stop it!'
+# g _ ?
+# ne.. ?
+# ?.send 'hello'
+# ?.throw V...E... 'stop it!'
 #
 # # Sending Exceptions to Generators
 # #
@@ -41,20 +41,20 @@
 #
 # f_ ins___ _______ g..g..s__
 #
-# ___ gen  :
+# ___ gen
 #     w___ T..
 #         t__
 #             received _ y___
-#             print r...
-#         e.... V..E.. a_ ex
-#             print 'ValueError received...' ex
+#             print ?
+#         e.... V..E.. __ ex
+#             print 'ValueError received...' ?
 #
-# g _ gen
-# ne.. g
-# g.send 'hello'
-# g.throw V..E.. 'custom message'
-# g.send 'hello'
-# g..g..s__ g
+# g _ ?
+# ne.. ?
+# ?.s.. *hello
+# ?.t.. V..E.. 'custom message'
+# ?.s.. *hello
+# ?..g..s__ g
 #
 #
 # # Sending Exceptions to Generators
@@ -66,11 +66,11 @@
 # ___ gen
 #     w___ T..
 #         received _ y___
-#         print r....
+#         print ?
 #
-# g _ gen
-# ne.. g
-# g.send 'hello'
+# g _ ?
+# ne.. ?
+# ?.s.. 'hello'
 #
 #
 # # Sending Exceptions to Generators
@@ -81,14 +81,14 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print r....
-#     e.... V...E.. a_ ex
-#         print 'ValueError received' ex
+#             print ?
+#     e.... V...E.. __ ex
+#         print 'ValueError received' ?
 #         r_ N...
 #
-# g _ gen
-# ne.. g
-# g.send 'hello'
+# g _ ?
+# ne.. ?
+# ?.s.. 'hello'
 #
 # g.th.. V...E.. 'custom message'
 #
@@ -102,9 +102,9 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print r....
-#     e.... V..E.. a_ ex:
-#         print 'ValueError received...', ex
+#             print ?
+#     e.... V..E.. __ ex
+#         print 'ValueError received...' ?
 #         r... Z..D..E.. 'not really...'
 #
 # g _ gen
@@ -117,7 +117,7 @@
 #
 # # Sending Exceptions to Generators
 # #
-# # a_ you can see our traceback includes both the ZeroDivisionError and the ValueError that caused the ZeroDivisionError
+# # __ you can see our traceback includes both the ZeroDivisionError and the ValueError that caused the ZeroDivisionError
 # # to happen in the first place. If you don't want to have that traceback you can easily remove it and only display
 # # the ZeroDivisionError  I will cover this and exceptions in detail in a later part of this series :
 #
@@ -126,15 +126,15 @@
 #         w___ T..
 #             received _ y___
 #             print r....
-#     e.... V..E.. a_ ex
-#         print 'ValueError received...' ex
+#     e.... V..E.. __ ex
+#         print 'ValueError received...' ?
 #         r... Z..D..E... 'not really...'  fr.. N...
 #
-# g _ gen
-# ne.. g
-# g.send 'hello'
+# g _ ?
+# ne.. ?
+# ?.s.. 'hello'
 #
-# g.th.. V...E.. 'custom message'
+# ?.th.. V...E.. 'custom message'
 #
 # # Sending Exceptions to Generators
 # #
@@ -158,7 +158,7 @@
 #         w___ T..
 #             t__
 #                 data _ y___
-#                 print 'writing data to database...', data
+#                 print 'writing data to database...' ?
 #             e.... C...E...
 #                 print 'committing transaction...'
 #                 print 'opening next transaction...'
@@ -171,14 +171,14 @@
 #         print 'closing database connection...'
 #
 # sql _ write_to_db
-# ne.. sql
-# sql.se.. 100
-# sql.th.. C..E..
-# sql.se.. 200
-# sql.th.. R..E..
-# sql.se.. 200
-# sql.th.. C..E..
-# sql.cl..
+# ne.. ?
+# ?.se.. 100
+# ?.th.. C..E..
+# ?.se.. 200
+# ?.th.. R..E..
+# ?.se.. 200
+# ?.th.. C..E..
+# ?.cl..
 #
 # # Sending Exceptions to Generators
 # #
@@ -191,19 +191,19 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print r...
-#     f.....:
+#             print ?
+#     f..
 #         print 'closing down...'
 #
-# g _ gen
-# ne.. g
-# g.se.. 'hello'
-# g.cl..
+# g _ ?
+# ne.. ?
+# ?.se.. 'hello'
+# ?.cl..
 #
-# g _ gen
-# ne.. g
-# g.se.. 'hello'
-# g.th.. G..E
+# g _ ?
+# ne.. ?
+# ?.se.. 'hello'
+# ?.th.. G..E
 #
 # # Sending Exceptions to Generators
 # # throw   and close
@@ -217,24 +217,24 @@
 #     t__
 #         w___ T..
 #             received _ y___
-#             print r..
-#     e.... G.E..
+#             print ?
+#     e... G.E..
 #         print 'received generator exit...'
-#     f.....:
+#     f...
 #         print 'closing down...'
 #
-# g _ gen
-# ne.. g
-# g.cl..
+# g _ ?
+# ne.. ?
+# ?.cl..
 #
-# g _ gen
-# ne.. g
-# g.th.. G...E...
+# g _ ?
+# ne.. ?
+# ?.th.. G...E...
 #
-# g _ gen
-# ne.. g
+# g _ ?
+# ne.. ?
 # t__
-#     g.th.. G..E..
+#     ?.th.. G..E..
 # e.... S...I..
 #     print 'silencing GeneratorExit...'
 #     p_
