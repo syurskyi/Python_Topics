@@ -24,39 +24,40 @@ def gensquares(N):
         yield  i ** 2
 
 
-y _ ? 5  # Returns a generator which is its own iterator
-#
-# print it.. y| __ y  # iter() is not required a no-op here
+y = gensquares(5)  # Returns a generator which is its own iterator
+
+print(iter(y) is y)  # iter() is not required a no-op here
 #
 # print n___ y  # Can run n___()immediately
-#
-# # Generator Functions and Expressions
-# # ___ buildsquares(n)
-# # i
-# ___ buildsquares n
-#     res _    #list
-#     ___ ? __ r__ ? ?.ap.. ? ** 2
-#     r_ ?
-#
-# # x
-# ___ ? __ ? 5 print ? e.._'  '
-# print()
-#
-# # x, n
-# ___ ? __  |? ** 2 ___ ? __ r___ 5|| print ? e.._'  '    # list
-#
-# print()
-#
-# ___ ? __ ma. ||l____ ? ? ** 2| r___ 5|| print ? e.._" : "
+
+# Generator Functions and Expressions
+# ___ buildsquares(n)
+# i
+def buildsquares(n):
+    res = []    #list
+    for i in range(n):
+        res.append(i ** 2)
+    return res
+
+# x
+for x in buildsquares(5): print(x, end='  ')
+print()
+
+# x, n
+for x in [n ** 2 for n in range(5)]: print(x, end='  ')    # list
+
+print()
+
+for x in map((lambda x: x ** 2), range(5)): print(x,  end=" : ")
 #
 # # Generator Functions and Expressions
 # # def  ups()
-# ___ ups line
-#     ___ sub __ ?.sp.. ','  # Substring generator
-#         y___ ?.up..
-#
-#
-# print(tu.. ? 'aaa,bbb,ccc'  # All iteration contexts)
-#
-# # i, s
-# print |? ? ___ |? ?| __ e... ? 'aaa,bbb,ccc' |    # dict   be careful here
+def ups(line):
+    for sub in line.split(','):  # Substring generator
+        yield sub.upper()
+
+print()
+print(tuple(ups('aaa,bbb,ccc')))  # All iteration contexts)
+
+# i, s
+print({i: s for (i, s) in enumerate(ups('aaa,bbb,ccc'))})    # dict   be careful here
