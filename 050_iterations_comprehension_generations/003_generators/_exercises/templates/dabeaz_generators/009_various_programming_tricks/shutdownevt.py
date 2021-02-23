@@ -14,9 +14,9 @@ ___ follow(thefile,shutdown=N..):
            c...
         y... line
 
-______ threading
+______ t___
 
-shutdown_event = threading.Event()
+shutdown_event = t___.Event()
 
 ___ run():
     lines = follow(o..("run/foo/access-log"),shutdown_event)
@@ -27,8 +27,8 @@ ___ run():
 
 
 # Run the above in a separate thread
-t = threading.Thread(target=run)
-t.start()
+t = t___.T...(t.._run)
+t.s..
 
 # Wait a while then shut down
 

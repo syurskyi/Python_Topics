@@ -3,40 +3,40 @@
 # Generate items from multiple generators (multiplex)
 #
 
-______ queue, threading
+______ qu___, t___
 f.. genqueue ______ genfrom_queue, sendto_queue
 f.. gencat ______ gen_cat
 
 ___ multiplex(sources):
-    in_q = queue.Queue()
+    in_q = qu___.Queue()
     consumers = []
     ___ src __ sources:
-        thr = threading.Thread(target=sendto_queue,
+        thr = t___.T...(t.._sendto_queue,
                                args=(src, in_q))
-        thr.start()
+        thr.s..
         consumers.append(genfrom_queue(in_q))
     r_ gen_cat(consumers)
 
 ___ gen_multiplex(genlist):
-    item_q = queue.Queue()
+    item_q = qu___.Queue()
     ___ run_one(source):
         ___ item __ source:
-            item_q.put(item)
+            item_q.p..(item)
 
     ___ run_all():
         thrlist = []
         ___ source __ genlist:
-            t = threading.Thread(target=run_one, args=(source,))
-            t.start()
+            t = t___.T...(t.._run_one, args=(source,))
+            t.s..
             thrlist.append(t)
         ___ t __ thrlist:
             t.join()
-        item_q.put(StopIteration)
+        item_q.p..(StopIteration)
 
-    threading.Thread(target=run_all).start()
+    t___.T...(t.._run_all).s..
     w____ T..
-        item = item_q.get()
-        __ item is StopIteration:
+        item = item_q.g..
+        __ item __ S_I_
             r_
         y... item
 

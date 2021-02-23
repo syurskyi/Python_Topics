@@ -2,20 +2,20 @@
 #
 # Send items to consumer threads
 
-______ queue, threading
-class ConsumerThread(threading.Thread):
+______ qu___, t___
+class ConsumerThread(t___.T...):
     ___ __init__(self, target):
-        threading.Thread.__init__(self)
+        t___.T....__init__(self)
         self.setDaemon(True)
-        self.in_queue = queue.Queue()
+        self.in_queue = qu___.Queue()
         self.target = target
 
     ___ s..(self,item):
-        self.in_queue.put(item)
+        self.in_queue.p..(item)
 
     ___ generate(self):
         w____ T..
-            item = self.in_queue.get()
+            item = self.in_queue.g..
             y... item
 
     ___ run(self):
@@ -40,9 +40,9 @@ __ __name__ __ '__main__':
             print("Total bytes", total)
             
     c1 = ConsumerThread(find_404)
-    c1.start()
+    c1.s..
     c2 = ConsumerThread(bytes_transferred)
-    c2.start()
+    c2.s..
     
     lines = follow(o..("run/foo/access-log"))
     log   = apache_log(lines)

@@ -26,11 +26,11 @@ __ __name__ __ '__main__':
         ___ c,a __ receive_connections(addr):
             clientset.append(c)
 
-    ______ threading
-    acc_thr = threading.Thread(target=acceptor,
+    ______ t___
+    acc_thr = t___.T...(t.._acceptor,
                                args = (clientset, addr))
     acc_thr.daemon = True
-    acc_thr.start()
+    acc_thr.s..
     
     ___ evt, s __ gen_events(clientset):
         __ evt __ 'read':
