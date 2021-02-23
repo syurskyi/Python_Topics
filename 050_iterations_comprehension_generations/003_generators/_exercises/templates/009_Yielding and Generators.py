@@ -100,5 +100,5 @@
 # l _ ? * 2 ___ ? __ ra... 5  # list comprehension
 # ty.. ?
 #
-# g _  i ** 2 ___ i __ ra... 5  # comprehension expression
-# ty.. g
+# g _  ? ** 2 ___ ? __ ra... 5  # comprehension expression
+# ty.. ?

@@ -99,8 +99,8 @@ for item in g:
 # # However, we can only iterate over a comprehension expression once, since it is an iterator.
 #
 # # i
-l = (i * 2 for i  ra... 5
-ty.. ?
+l = [i * 2 for i in range(5)]
+print(type(l))
 
-g _  i ** 2 ___ i __ ra... 5
-ty.. g
+g = (i ** 2 for i in range(5))
+print(type(g))
