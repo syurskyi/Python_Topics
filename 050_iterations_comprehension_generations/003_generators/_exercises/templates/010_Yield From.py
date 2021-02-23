@@ -1,29 +1,29 @@
+from numpy import matrix
 # # Yield From
 # # Suppose we want an iterator to iterate over all the values of the matrix, element by element.
 # # All we have done here is create a generator  (iterator)  that can be used to iterate of the elements
 # # of a nested iterator.
 #
 # # row, item
-# ___ matrix_iterator n
-#     ___ ? __ matrix ?
-#         ___ ? __ row
-#             y____ ?
+def matrix_iterator(n):
+    for row in matrix(n):
+        for item in row:
+            yield item
 #
 # # i
-# ___ ? __ ? 3
-#     print ?
+for i in matrix_iterator(3):
+    print(i)
 #
 # # Yield From
 # # But we can avoid using that nested ___ loop by using a special form of yield: yield from
 #
-# # # row,
-# ___ matrix_iterator n
-#     ___ ? __ matrix n
-#         y____ f... ?
-#
-# # i
-# ___ ? __ ? 3
-#     print ?
+# # row,
+def matrix_iterator(n):
+    for row in matrix(n):
+        yield from row
+# i
+for i in matrix_iterator(3):
+    print(i)
 #
 # # Yield From
 # #

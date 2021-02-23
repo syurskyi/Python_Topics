@@ -3,6 +3,8 @@
 # All we have done here is create a generator (iterator) that can be used to iterate of the elements
 # of a nested iterator.
 
+from numpy import matrix
+
 def matrix_iterator(n):
     for row in matrix(n):
         for item in row:
