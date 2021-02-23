@@ -7,7 +7,7 @@ c_ ConsumerThread(t___.T...):
     ___ __init__(self, target):
         t___.T....__init__(self)
         self.setDaemon(True)
-        self.in_queue = qu___.Queue()
+        self.in_queue = qu___.Q..
         self.target = target
 
     ___ s..(self,item):

@@ -24,7 +24,7 @@ __ __name__ __ '__main__':
     clientset = []
     ___ acceptor(sockset,addr):
         ___ c,a __ receive_connections(addr):
-            clientset.append(c)
+            clientset.ap..(c)
 
     ______ t___
     acc_thr = t___.T...(t.._acceptor,
