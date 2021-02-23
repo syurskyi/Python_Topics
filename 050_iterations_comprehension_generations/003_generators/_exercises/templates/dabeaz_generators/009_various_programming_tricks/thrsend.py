@@ -4,22 +4,22 @@
 
 ______ qu___, t___
 c_ ConsumerThread(t___.T...):
-    ___ __init__(self, target):
-        t___.T....__init__(self)
-        self.setDaemon(True)
-        self.in_queue = qu___.Q..
-        self.target = target
+    ___ __init__(, target):
+        t___.T....__init__()
+        .setDaemon(True)
+        .in_queue = qu___.Q..
+        .target = target
 
-    ___ s..(self,item):
-        self.in_queue.p..(item)
+    ___ s..(,item):
+        .in_queue.p..(item)
 
-    ___ generate(self):
+    ___ generate():
         w____ T..
-            item = self.in_queue.g..
+            item = .in_queue.g..
             y... item
 
-    ___ run(self):
-        self.target(self.generate())
+    ___ run():
+        .target(.generate())
 
 # Example Use
 

@@ -3,14 +3,14 @@
 # An iterator that stores the last value returned.  
 
 c_ storelast(object):
-    ___ __init__(self,source):
-        self.source = source
-    ___ __next__(self):
-        item = self.source.__next__()
-        self.last = item
+    ___ __init__(,source):
+        .source = source
+    ___ __next__():
+        item = .source.__next__()
+        .last = item
         r_ item
-    ___ __iter__(self):
-        r_ self
+    ___ __iter__():
+        r_
 
 # Example
 __ __name__ __ '__main__':
