@@ -12,13 +12,14 @@
 #             r_ 'all done!'
 #
 # num
-# ___ ? __ s.. 5
+# ___ ? __ ? 5
 #     print ?
 #
 # # Yielding and Generators
 # #
 # # So now let's see how we could re-write our initial factorial example:
 #
+# import math
 # # i
 # ___ factorials n
 #     ___ ? __ ra__ ?
@@ -28,10 +29,10 @@
 # ___ ? __ f.. 5
 #     print ?
 #
-# facts _ factorials 5
-# li.. f...
-# li.. f...
-# ne.. f...  # error
+# facts _ ? 5
+# li.. ?
+# li.. ?
+# ne.. ?  # error
 #
 # # Making an Iterable from a Generator
 # # As we now know, generators are iterators.
@@ -44,16 +45,16 @@
 #     ___ ? __ ra... ?
 #         y___ ? ** 2
 #
-# sq _ squares_gen 5
+# sq _ ? 5
 #
 # # num
 # ___ ? __ ?
 #     print ?
 #
-# ne.. sq
+# ne.. ?
 #
-# sq _ squares_gen 5
-# num ___ num __ sq
+# sq _ ? 5
+# ? ___ ? __ ?   # list comprehension
 #
 # # Generators used with other Generators
 # # Now enumerate is lazy, so sq had not, at this point, been consumed:
@@ -78,11 +79,11 @@
 # # Note that g is a generator, and is also lazily evaluated:
 #
 # # i
-# l _  ? ** 2 ___ ? __ ra... 5
+# l _  ? ** 2 ___ ? __ ra... 5  # list comprehension
 # l
 # # The expression inside the [] brackets is called a comprehension expression.
 #
-# g _  ? ** 2 ___ ? __ ra... 5
+# g _  ? ** 2 ___ ? __ ra... 5  # comprehension expression
 #
 # ty.. ?
 #
@@ -96,8 +97,8 @@
 # # However, we can only iterate over a comprehension expression once, since it is an iterator.
 #
 # # i
-# l _ ? * 2 ___ ? __ ra... 5
+# l _ ? * 2 ___ ? __ ra... 5  # list comprehension
 # ty.. ?
 #
-# g _  i ** 2 ___ i __ ra... 5
+# g _  i ** 2 ___ i __ ra... 5  # comprehension expression
 # ty.. g

@@ -29,7 +29,7 @@ for num in factorials(5):
 facts = factorials(5)
 list(facts)
 list(facts)
-next(facts) # error
+# next(facts) # error
 
 # Making an Iterable from a Generator
 # As we now know, generators are iterators.
