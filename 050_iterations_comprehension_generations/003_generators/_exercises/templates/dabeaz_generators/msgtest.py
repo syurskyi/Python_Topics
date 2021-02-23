@@ -4,7 +4,7 @@
 
 ______ s__
 
-s = s__.s__(s__.AF_INET,s__.SOCK_DGRAM)
+s = s__.s__(s__.A_I_,s__.SOCK_DGRAM)
 ___ send_msg(msg):
     s.sendto(msg, ("",10000))
 

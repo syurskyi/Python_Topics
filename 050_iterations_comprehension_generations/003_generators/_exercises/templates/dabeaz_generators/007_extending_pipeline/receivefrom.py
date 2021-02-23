@@ -6,14 +6,14 @@ ______ s__
 f.. genpickle ______ gen_unpickle
 
 ___ receivefrom(addr):
-    s = s__.s__(s__.AF_INET,s__.SOCK_STREAM)
-    s.setsockopt(s__.SOL_SOCKET,s__.SO_REUSEADDR, 1)
-    s.bind(addr)
-    s.listen(5)
-    c, a = s.accept()
+    s = s__.s__(s__.A_I_,s__.S_S_)
+    s.s_s_o_(s__.S_S_,s__.S_R_, 1)
+    s.b..(addr)
+    s.l..(5)
+    c, a = s.a..
     ___ item __ gen_unpickle(c.makefile('rb')):
         y... item
-    c.close()
+    c.c..
 
 # Example use:
 __ __name__ __ '__main__':

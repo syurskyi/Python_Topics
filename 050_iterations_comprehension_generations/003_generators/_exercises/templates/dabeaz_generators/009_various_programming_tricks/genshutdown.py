@@ -10,4 +10,4 @@ lines = follow(o..("run/foo/access-log"))
 ___ i, line __ enumerate(lines):
     print(line, e.._'')
     __ i __ 10:
-        lines.close()
+        lines.c..

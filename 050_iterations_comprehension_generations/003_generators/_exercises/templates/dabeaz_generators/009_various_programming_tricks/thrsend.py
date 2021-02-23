@@ -10,7 +10,7 @@ class ConsumerThread(threading.Thread):
         self.in_queue = queue.Queue()
         self.target = target
 
-    ___ send(self,item):
+    ___ s..(self,item):
         self.in_queue.put(item)
 
     ___ generate(self):

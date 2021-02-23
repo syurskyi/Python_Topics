@@ -5,14 +5,14 @@
 ___ broadcast(source, consumers):
     ___ item __ source:
         ___ c __ consumers:
-            c.send(item)
+            c.s..(item)
 
 
 # Example
 __ __name__ __ '__main__':
 
     class Consumer(object):
-        ___ send(self,item):
+        ___ s..(self,item):
             print(self, "got", item)
 
     c1 = Consumer()

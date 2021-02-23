@@ -6,13 +6,13 @@ ______ s__, pickle
 
 class NetConsumer(object):
     ___ __init__(self,addr):
-        self.s = s__.s__(s__.AF_INET, s__.SOCK_STREAM)
+        self.s = s__.s__(s__.A_I_, s__.S_S_)
         self.s.connect(addr)
-    ___ send(self,item):
-        pitem = pickle.dumps(item)
+    ___ s..(self,item):
+        pitem = pickle.d..(item)
         self.s.sendall(pitem)
     ___ close(self):
-        self.s.close()
+        self.s.c..
 
 # Example use.  This requires you to run receivefrom.py first.
 
@@ -23,9 +23,9 @@ __ __name__ __ '__main__':
 
     # A class that sends 404 requests to another host
     class Stat404(NetConsumer):
-        ___ send(self,item):
+        ___ s..(self,item):
             __ item['status'] __ 404:
-                NetConsumer.send(self,item)
+                NetConsumer.s..(self,item)
     
     stat404 = Stat404(("",15000))
     

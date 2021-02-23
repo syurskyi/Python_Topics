@@ -6,11 +6,11 @@ ______ s__
 f.. genpickle ______ gen_pickle
 
 ___ sendto(source,addr):
-    s = s__.s__(s__.AF_INET,s__.SOCK_STREAM)
+    s = s__.s__(s__.A_I_,s__.S_S_)
     s.connect(addr)
     ___ pitem __ gen_pickle(source):
         s.sendall(pitem)
-    s.close()
+    s.c..
 
 # Example use.   This requires you to run receivefrom.py
 # in a different process/window

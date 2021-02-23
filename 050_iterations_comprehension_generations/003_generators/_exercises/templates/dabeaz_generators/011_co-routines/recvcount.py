@@ -11,9 +11,9 @@ ___ recv_count():
         print("Kaboom!")
 
 r = recv_count()
-r.send(N..)
+r.s..(N..)
 ___ i __ ra__(5,0,-1):
-    r.send(i)
+    r.s..(i)
 
-r.close()
+r.c..
 

@@ -37,7 +37,7 @@ __ __name__ __ '__main__':
             data = s.recv(1024)
             __ no. data:
                 print("Closing", s)
-                s.close()
+                s.c..
                 clientset.remove(s)
             ____
                 print(s,data)
