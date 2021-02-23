@@ -1,24 +1,27 @@
-# redict.py
+# # redict.py
+# #
+# # Read a sequence of log lines and parse them into a sequence of dictionaries
 #
-# Read a sequence of log lines and parse them into a sequence of dictionaries
-
-loglines = o..( *a..)
-
-______ __
-
-logpats  = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
-           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
-
-logpat   = __.co..(logpats)
-
-groups   = (logpat.m..(line) ___ line __ loglines)
-tuples   = (g.groups() ___ g __ groups __ g)
-
-colnames = ('host','referrer','user','datetime',
-            'method', 'request','proto','status','bytes')
-
-log      = (di__(z..(colnames, t)) ___ t __ tuples)
-
-__ __name__ __ '__main__':
-    ___ x __ log:
-        print(x)
+# loglines _ o.. *a..
+#
+# ______ __
+#
+# logpats  _ r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
+#            r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
+#
+# logpat   _ __.co.. ?
+#
+# # line, g
+# groups   _ ?.m.. ? ___ ? __ l_l_
+# tuples   _ ?.gr.. ___ ? __ gr.. __ ?
+#
+# colnames _ ('host','referrer','user','datetime',
+#             'method', 'request','proto','status','bytes')
+#
+# # t
+# log      _ di__ z.. ? ? ___ ? __ tu..
+#
+# __ __name__ __ '__main__'
+# # x
+#     ___ ? __ ?
+#         print ?
