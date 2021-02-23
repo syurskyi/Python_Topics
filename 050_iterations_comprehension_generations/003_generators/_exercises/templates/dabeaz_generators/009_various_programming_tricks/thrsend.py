@@ -3,7 +3,7 @@
 # Send items to consumer threads
 
 ______ qu___, t___
-class ConsumerThread(t___.T...):
+c_ ConsumerThread(t___.T...):
     ___ __init__(self, target):
         t___.T....__init__(self)
         self.setDaemon(True)

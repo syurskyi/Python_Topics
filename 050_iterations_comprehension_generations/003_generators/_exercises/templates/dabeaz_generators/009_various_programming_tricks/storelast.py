@@ -2,7 +2,7 @@
 #
 # An iterator that stores the last value returned.  
 
-class storelast(object):
+c_ storelast(object):
     ___ __init__(self,source):
         self.source = source
     ___ __next__(self):

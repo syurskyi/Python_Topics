@@ -4,7 +4,7 @@
 
 ______ s__, pickle
 
-class NetConsumer(object):
+c_ NetConsumer(object):
     ___ __init__(self,addr):
         self.s = s__.s__(s__.A_I_, s__.S_S_)
         self.s.c..(addr)
@@ -22,7 +22,7 @@ __ __name__ __ '__main__':
     f.. apachelog ______ apache_log
 
     # A class that sends 404 requests to another host
-    class Stat404(NetConsumer):
+    c_ Stat404(NetConsumer):
         ___ s..(self,item):
             __ item['status'] __ 404:
                 NetConsumer.s..(self,item)

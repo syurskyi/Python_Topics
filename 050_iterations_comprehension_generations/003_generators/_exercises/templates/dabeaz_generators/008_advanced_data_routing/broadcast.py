@@ -1,25 +1,26 @@
-# broadcast.py
+# # broadcast.py
+# #
+# # Broadcast a generator source to a collection of consumers
 #
-# Broadcast a generator source to a collection of consumers
-
-___ broadcast(source, consumers):
-    ___ item __ source:
-        ___ c __ consumers:
-            c.s..(item)
-
-
-# Example
-__ __name__ __ '__main__':
-
-    class Consumer(object):
-        ___ s..(self,item):
-            print(self, "got", item)
-
-    c1 = Consumer()
-    c2 = Consumer()
-    c3 = Consumer()
-
-    f.. follow ______ follow
-    lines = follow(o..("run/foo/access-log"))
-    broadcast(lines,[c1,c2,c3])
-
+# # item, c
+# ___ broadcast source consumers
+#     ___ ? __ ?
+#         ___ ? __ ?
+#             ?.s.. ?
+#
+#
+# # Example
+# __ __name__ __ '__main__':
+#
+#     c_ Consumer o..
+#         ___ s..  item
+#             print "got" ?
+#
+#     c1 = ?
+#     c2 = ?
+#     c3 = ?
+#
+#     f.. follow ______ follow
+#     lines = ? o.. *run/foo/access-log
+#     ? ? ? ? ?
+#
