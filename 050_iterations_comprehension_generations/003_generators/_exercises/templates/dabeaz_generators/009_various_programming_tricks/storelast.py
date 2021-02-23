@@ -1,25 +1,26 @@
-# storelast.py
+# # storelast.py
+# #
+# # An iterator that stores the last value returned.
 #
-# An iterator that stores the last value returned.  
-
-c_ storelast(object):
-    ___ __init__(,source):
-        .source = source
-    ___ __next__():
-        item = .source.__next__()
-        .last = item
-        r_ item
-    ___ __iter__():
-        r_
-
-# Example
-__ __name__ __ '__main__':
-    f.. follow ______ follow
-    f.. apachelog ______ apache_log
-
-    lines = storelast(follow(o..("run/foo/access-log")))
-    log   = apache_log(lines)
-
-    ___ r __ log:
-        print(r)
-        print(lines.last)
+# c_ storelast o..
+#     ___ -  ,source
+#         .source _ ?
+#     ___ -n
+#         item _ .s__. -n
+#         .last _ ?
+#         r_ ?
+#     ___ -i
+#         r_
+#
+# # Example
+# __ __name__ __ '__main__':
+#     f.. follow ______ ?
+#     f.. apachelog ______ ?
+#
+#     lines _ ? f.. o.. *run/foo/access-log
+#     log   _ a.. ?
+#
+# # r
+#     ___ ? __ ?
+#         print ?
+#         print l__.la..
