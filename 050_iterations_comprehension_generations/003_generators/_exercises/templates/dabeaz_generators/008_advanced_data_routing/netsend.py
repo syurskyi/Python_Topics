@@ -7,7 +7,7 @@ ______ s__, pickle
 class NetConsumer(object):
     ___ __init__(self,addr):
         self.s = s__.s__(s__.A_I_, s__.S_S_)
-        self.s.connect(addr)
+        self.s.c..(addr)
     ___ s..(self,item):
         pitem = pickle.d..(item)
         self.s.sendall(pitem)
