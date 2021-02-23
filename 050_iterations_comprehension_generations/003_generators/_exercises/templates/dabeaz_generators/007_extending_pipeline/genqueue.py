@@ -3,7 +3,7 @@
 # Generate a sequence of items that put onto a queue
 
 ___ genfrom_queue(thequeue):
-    while True:
+    w____ T..
         item = thequeue.get()
         __ item is StopIteration:
             break

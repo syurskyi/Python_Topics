@@ -2,11 +2,11 @@
 #
 # A generator that yields messages on a UDP socket
 
-______ socket
+______ s__
 ___ receive_messages(addr,maxsize):
-    s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    s = s__.s__(s__.AF_INET,s__.SOCK_DGRAM)
     s.bind(addr)
-    while True:
+    w____ T..
         msg = s.recvfrom(maxsize)
         y... msg
 

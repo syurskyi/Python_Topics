@@ -34,7 +34,7 @@ ___ gen_multiplex(genlist):
         item_q.put(StopIteration)
 
     threading.Thread(target=run_all).start()
-    while True:
+    w____ T..
         item = item_q.get()
         __ item is StopIteration:
             r_

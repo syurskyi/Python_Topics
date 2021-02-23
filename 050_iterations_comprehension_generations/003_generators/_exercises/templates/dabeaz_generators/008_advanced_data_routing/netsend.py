@@ -2,11 +2,11 @@
 #
 # Consume items and send them to a remote machine
 
-______ socket, pickle
+______ s__, pickle
 
 class NetConsumer(object):
     ___ __init__(self,addr):
-        self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.s = s__.s__(s__.AF_INET, s__.SOCK_STREAM)
         self.s.connect(addr)
     ___ send(self,item):
         pitem = pickle.dumps(item)

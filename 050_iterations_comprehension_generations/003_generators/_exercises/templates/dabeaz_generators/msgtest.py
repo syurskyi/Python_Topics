@@ -2,9 +2,9 @@
 #
 # A program that sends a message to the sample server in genmessages.py
 
-______ socket
+______ s__
 
-s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+s = s__.s__(s__.AF_INET,s__.SOCK_DGRAM)
 ___ send_msg(msg):
     s.sendto(msg, ("",10000))
 

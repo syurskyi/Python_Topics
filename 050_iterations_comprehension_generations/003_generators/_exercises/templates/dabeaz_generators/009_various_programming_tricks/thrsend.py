@@ -14,7 +14,7 @@ class ConsumerThread(threading.Thread):
         self.in_queue.put(item)
 
     ___ generate(self):
-        while True:
+        w____ T..
             item = self.in_queue.get()
             y... item
 

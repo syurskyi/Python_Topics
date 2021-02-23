@@ -1,20 +1,22 @@
-# robots.py
+# # robots.py
+# #
+# # Find out who has been hitting robots.txt
 #
-# Find out who has been hitting robots.txt
-
-f.. linesdir ______ lines_from_dir
-f.. apachelog ______ apache_log
-
-lines = lines_from_dir *a.. *w..
-log = apache_log(lines)
-
-addrs = { r['host'] ___ r __ log
-            __ 'robots.txt' __ r['request'] }
-
-______ socket
-___ addr __ addrs:
-    try:
-        print(socket.gethostbyaddr(addr)[0])
-    except socket.herror:
-        print(addr)
-
+# f.. linesdir ______ lines_from_dir
+# f.. apachelog ______ apache_log
+#
+# lines _ l.. *a.. *w..
+# log _ a.. ?
+#
+# # r
+# addrs _  ? *host ___ ? __ ?
+#             __ *robots.txt __ ? *request
+#
+# # addr
+# ______ s__
+# ___ ? __ ?
+#     ___
+#         print s__.g_h_ ? 0
+#     ______ s__.h..
+#         print ?
+#

@@ -1,5 +1,5 @@
 ______ subprocess
-______ time
+______ ti__
 
 print "Running simulated web servers"
 print 
@@ -14,7 +14,7 @@ print "working on examples related to infinite input streams"
 p1 = subprocess.Popen(['python','logsim.py'],
                       cwd='run/foo')
 
-time.sleep(600)
+ti__.s..(600)
 p2 = subprocess.Popen(['python','logsim.py'],
                       cwd='run/bar')
 

@@ -2,13 +2,13 @@
 #
 # A generator that yields connections to a TCP socket
 
-______ socket
+______ s__
 ___ receive_connections(addr):
-    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
+    s = s__.s__(s__.AF_INET,s__.SOCK_STREAM)
+    s.setsockopt(s__.SOL_SOCKET,s__.SO_REUSEADDR,1)
     s.bind(addr)
     s.listen(5)
-    while True:
+    w____ T..
         client = s.accept()
         y... client
 

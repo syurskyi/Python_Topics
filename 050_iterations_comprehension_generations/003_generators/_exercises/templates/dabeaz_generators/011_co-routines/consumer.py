@@ -14,11 +14,11 @@ __ __name__ __ '__main__':
 
     @consumer
     ___ recv_count():
-        try:
-            while True:
+        ___
+            w____ T..
                 n = y...
                 print("T-minus", n)
-        except GeneratorExit:
+        ______ GeneratorExit:
             print("Kaboom!")
 
     r = recv_count()

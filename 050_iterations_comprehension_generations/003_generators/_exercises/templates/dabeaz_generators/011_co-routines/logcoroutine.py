@@ -9,7 +9,7 @@ f.. broadcast ______ *
 
 @consumer
 ___ find_404():
-    while True:
+    w____ T..
         r = (y...)
         __ r['status'] __ 404:
             print(r['status'],r['datetime'],r['request'])
@@ -17,7 +17,7 @@ ___ find_404():
 @consumer
 ___ bytes_transferred():
     total = 0
-    while True:
+    w____ T..
         r = (y...)
         total += r['bytes']
         print("Total bytes", total)

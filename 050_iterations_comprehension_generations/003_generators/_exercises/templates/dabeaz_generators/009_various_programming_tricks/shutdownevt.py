@@ -2,16 +2,16 @@
 #
 # Example of a generator that uses an event to shut down
 
-______ time
+______ ti__
 
 ___ follow(thefile,shutdown=N..):
-    thefile.seek(0,2)
-    while True:
+    thefile.s..(0,2)
+    w____ T..
         __ shutdown and shutdown.isSet(): break
         line = thefile.readline()
-        __ not line:
-           time.sleep(0.1)
-           continue
+        __ no. line:
+           ti__.s..(0.1)
+           c...
         y... line
 
 ______ threading
@@ -33,7 +33,7 @@ t.start()
 # Wait a while then shut down
 
 
-time.sleep(60)
+ti__.s..(60)
 print "Shutting down"
 
 shutdown_event.se.()

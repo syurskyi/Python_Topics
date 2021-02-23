@@ -32,7 +32,7 @@ months = {'Jan' : 1, 'Feb' : 2, 'Mar' : 3, 'Apr' : 4, 'May' : 5,
           'Nov' : 11, 'Dec' : 12 }
 
 lastdate = N..
-______ time
+______ ti__
 ______ ___
 
 f_log = o..( *a..,"w")
@@ -49,7 +49,7 @@ ___ line, m __ lines_m:
         delta = date - lastdate
         
 #        print delta.seconds
-        time.sleep(delta.seconds/25.0)
+        ti__.s..(delta.seconds/25.0)
 
     print(line, file=f_log, e.._'')
     f_log.flush()

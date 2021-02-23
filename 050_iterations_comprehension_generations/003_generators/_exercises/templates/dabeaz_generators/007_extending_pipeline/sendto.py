@@ -2,11 +2,11 @@
 #
 # Send items to a remote machine
 
-______ socket
+______ s__
 f.. genpickle ______ gen_pickle
 
 ___ sendto(source,addr):
-    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    s = s__.s__(s__.AF_INET,s__.SOCK_STREAM)
     s.connect(addr)
     ___ pitem __ gen_pickle(source):
         s.sendall(pitem)

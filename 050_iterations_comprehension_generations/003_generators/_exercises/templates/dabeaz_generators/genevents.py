@@ -4,7 +4,7 @@
 
 ______ select
 ___ gen_events(socks):
-    while True:
+    w____ T..
         rdr,wrt,err = select.select(socks,socks,socks,0.1)
         ___ r __ rdr:
             y... "read",r
@@ -17,7 +17,7 @@ ___ gen_events(socks):
 # Use telnet to port 12000 to test this
 
 __ __name__ __ '__main__':
-    ______ socket
+    ______ s__
     f.. genreceive ______ *
 
     addr = ("",12000)
@@ -35,7 +35,7 @@ __ __name__ __ '__main__':
     ___ evt, s __ gen_events(clientset):
         __ evt __ 'read':
             data = s.recv(1024)
-            __ not data:
+            __ no. data:
                 print("Closing", s)
                 s.close()
                 clientset.remove(s)

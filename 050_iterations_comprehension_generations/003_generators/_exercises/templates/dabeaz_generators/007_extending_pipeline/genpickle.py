@@ -9,10 +9,10 @@ ___ gen_pickle(source):
         y... pickle.dumps(item)
 
 ___ gen_unpickle(infile):
-    while True:
-        try:
+    w____ T..
+        ___
             item = pickle.load(infile)
             y... item
-        except EOFError:
+        ______ EOFError:
             r_
 
