@@ -1,13 +1,14 @@
-# genshutdown.py
+# # genshutdown.py
+# #
+# # Example of shutting down a generator
+# #
+# # Requires you to run run/foo/logsim.py to get a real-time source
 #
-# Example of shutting down a generator
+# f.. follow ______ *
 #
-# Requires you to run run/foo/logsim.py to get a real-time source
-
-f.. follow ______ *
-
-lines = follow(o..("run/foo/access-log"))
-___ i, line __ enumerate(lines):
-    print(line, e.._'')
-    __ i __ 10:
-        lines.c..
+# lines = f.. o.. *run/foo/access-log
+# # i, line
+# ___ ? ? __ e.. ?
+#     print ? e.._''
+#     __ ? __ 10
+#         ?.c..
