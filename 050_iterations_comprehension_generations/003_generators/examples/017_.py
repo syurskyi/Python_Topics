@@ -56,7 +56,7 @@ def flatten_gen(curr_item, *, str_is_iterable=True):
     else:
         yield curr_item
 
-llist(flatten_gen(l))
+list(flatten_gen(l))
 list(flatten_gen(l, str_is_iterable=False))
 
 # we saw we could use yield from recursively. In fact a generator can be both a delegator and a subgenerator.

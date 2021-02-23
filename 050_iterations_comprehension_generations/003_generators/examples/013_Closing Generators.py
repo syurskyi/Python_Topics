@@ -2,6 +2,7 @@
 # We can actually close a generator by sending it a special message, calling its close() method.
 
 import csv
+import itertools
 
 def parse_file(f_name):
     print('opening file...')
@@ -84,4 +85,4 @@ trans.close()
 
 trans = save_to_db()
 next(trans)
-trans.send('1 / 0')
+# trans.send('1 / 0')

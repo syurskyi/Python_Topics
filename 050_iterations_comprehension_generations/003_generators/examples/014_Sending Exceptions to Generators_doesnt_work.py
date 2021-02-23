@@ -12,7 +12,7 @@ def gen():
 
 g = gen()
 next(g)
-g.send('hello')g.throw(ValueError, 'custom message')
+# g.send('hello'), g.throw(ValueError, 'custom message')
 
 # Sending Exceptions to Generators
 # As you can see, the exception occurred inside the generator, and then propagated up to the caller

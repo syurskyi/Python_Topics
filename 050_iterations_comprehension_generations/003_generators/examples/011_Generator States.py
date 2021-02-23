@@ -39,7 +39,7 @@ next(g)
 
 getgeneratorstate(g)
 
-next(g), next(g), next(g)
+next(g), next(g)  # next(g)
 
 # Generator States
 #
