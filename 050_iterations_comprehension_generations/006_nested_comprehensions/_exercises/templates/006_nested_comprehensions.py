@@ -9,26 +9,27 @@
 #
 # start _ 1
 # stop _ 10
-#
-# mult_list _ i * j
-#                ___ j i_ r___ s.. s..+1
-#              ___ i i_ r___ s.. s..+1     # lIST
+# # i, j
+# mult_list _ ? * ?
+#                ___ ? __ r___ s.. s..+1
+#              ___ ? __ r___ s.. s..+1     # lIST
 #
 # mult_list
 #
 # start _ 1
 # stop _ 10
-#
-# mult_list _ i * j
-#                ___ j i_ r___ s.. s...+1
-#              ___ i i_ r___ s... s..+1     tUPLE OR SET
+# i, j
+# mult_list _ ? * ?
+#                ___ ? __ r___ s.. s...+1
+#              ___ ? __ r___ s... s..+1     tUPLE OR SET
 #
 # mult_list
 #
 # table _ l__ m.._l..
 # table
 #
-# table_rows _  l__ gen ___ gen i_ t..   # List
+# gen
+# table_rows _  l__ ? ___ ? __ t..   # List
 # table_rows
 #
 # # Nested Comprehensions
@@ -41,13 +42,14 @@
 #
 # start _ 1
 # stop _ 10
+# i, j
+# mult_list _ ? * ?
+#                ___ ? __ r__ s.. s..+1
+#              ___ ? __ r__ s.. s..+1
 #
-# mult_list _ i * j
-#                ___ j i_ r__ s.. s..+1
-#              ___ i i_ r__ s.. s..+1
-#
-# ___ item i_ m.._l..
-#     print i...
+# item
+# ___ ? __ ?
+#     print ?
 #
 # # Let's try Pascal's triangle again:
 # # Here's how we did it using a list comprehension:
@@ -55,16 +57,18 @@
 # f... ma.. _______ fa...
 #
 # ___ combo n k
-#     r_ fac... n // fac... k * fac... n-k
+#     r_ fac... ? // fac... ? * fac... ?-?
 #
 # size _ 10  # global variable
-# pascal _ combo n k ___ k i_ r___ n+1 ___ n i_ r____ s...+1
+# n, k
+# pascal _ ? ? ? ___ ? __ r___ ?+1 ___ ? __ r____ s...+1
 #
 # # Let's try Pascal's triangle again:
 # #
 # # If we want to materialize the triangle into a list we'll need to do so ourselves:
 #
 # size _ 10  # global variable
-# pascal _ combo n k ___ k i_ r___ n+1 ___ n i_ r___ s...+1
+# pascal _ ? ? ? ___ ? __ r___ ?+1 ___ ? __ r___ s...+1
 #
-# l__ row ___ r.. i_ p...
+# row
+# l__ ? ___ ? __ ?
