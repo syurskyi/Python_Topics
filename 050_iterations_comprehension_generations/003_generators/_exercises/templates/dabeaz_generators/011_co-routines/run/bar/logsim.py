@@ -1,57 +1,57 @@
-______ ___
-______ __
+import sys
+import re
 
 logpats = r'(\S+) (\S+) (\S+) \[(.*?)\] ' \
           r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 
-logpat = __.co..(logpats)
+logpat = re.compile(logpats)
 
-___ apache_log(lines):
-    groups     = (logpat.m..(line) ___ line __ lines)
-    tuples     = (g.groups() ___ g __ groups __ g)
+def apache_log(lines):
+    groups     = (logpat.match(line) for line in lines)
+    tuples     = (g.groups() for g in groups if g)
 
     colnames   = ('host','referrer','user','datetime','method',
                   'request','proto','status','bytes')
 
-    log        = (di__(z..(colnames,t)) ___ t __ tuples)
+    log        = (dict(zip(colnames,t)) for t in tuples)
     log        = field_map(log,"bytes",
-                           l____ s: in.(s) __ s != '-' ____ 0)
-    log        = field_map(log,"status",in.)
-    r_ log
+                           lambda s: int(s) if s != '-' else 0)
+    log        = field_map(log,"status",int)
+    return log
 
 logfilename = "../../access-log"
-lines   = o..(logfilename)
-datepat = __.co..(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
+lines   = open(logfilename)
+datepat = re.compile(r'\[(\d+)/(\w{3})/(\d+):(\d+):(\d+):(\d+) -(\d+)\]')
 
-lines_m = ((line,datepat.s..(line)) ___ line __ lines)
+lines_m = ((line,datepat.search(line)) for line in lines)
 
-______ datetime
+import datetime
 
 months = {'Jan' : 1, 'Feb' : 2, 'Mar' : 3, 'Apr' : 4, 'May' : 5,
           'Jun' : 6, 'Jul' : 7, 'Aug' : 8, 'Sep' : 9, 'Oct' : 10,
           'Nov' : 11, 'Dec' : 12 }
 
-lastdate = N..
-______ ti__
-______ ___
+lastdate = None
+import time
+import sys
 
-f_log = o..( *a..,"w")
-___ line, m __ lines_m:
-    day = in.(m.group(1))
+f_log = open("access-log","w")
+for line, m in lines_m:
+    day = int(m.group(1))
     month = months[m.group(2)]
-    year = in.(m.group(3))
-    hour = in.(m.group(4))
-    minute = in.(m.group(5))
-    second = in.(m.group(6))
+    year = int(m.group(3))
+    hour = int(m.group(4))
+    minute = int(m.group(5))
+    second = int(m.group(6))
 
     date = datetime.datetime(year,month,day,hour,minute,second)
-    __ lastdate:
+    if lastdate:
         delta = date - lastdate
         
 #        print delta.seconds
-        ti__.s..(delta.seconds/25.0)
+        time.sleep(delta.seconds/25.0)
 
-    print(line, file=f_log, e.._'')
+    print(line, file=f_log, end='')
     f_log.flush()
     lastdate = date
     
