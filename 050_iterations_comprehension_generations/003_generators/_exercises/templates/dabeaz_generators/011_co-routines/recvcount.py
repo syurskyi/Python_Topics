@@ -1,19 +1,20 @@
-# recvcount.py
+# # recvcount.py
+# #
+# # Example of a co-routine
 #
-# Example of a co-routine
-
-___ recv_count():
-    ___
-        w____ T..
-            n = (y...)
-            print("T-minus", n)
-    ______ GeneratorExit:
-        print("Kaboom!")
-
-r = recv_count()
-r.s..(N..)
-___ i __ ra__(5,0,-1):
-    r.s..(i)
-
-r.c..
-
+# ___ recv_count
+#     ___
+#         w____ T..
+#             n = (y...)
+#             print("T-minus" ?
+#     ______ GE..
+#         print("Kaboom!")
+#
+# r = ?
+# ?.s..(N..)
+# # i
+# ___ ? __ ra__ 5,0,-1
+#     ?.s.. ?
+#
+# ?.c..
+#
