@@ -5,43 +5,42 @@
 # # Iterate automatically
 # # Iterate manually
 #
-# c
-G = (c * 4 for c in 'SPAM')   # Generator expression
-
-print(list(G))   # Force generator to produce all results
-
-def timesfour(S):   # Generator function
-    for c in S:
-        yield c * 4
-
-
-G = timesfour('spam')
-print(list(G))   # Iterate automatically
-
-G = (c * 4 for c in 'SPAM')
-I = iter(G)   # Iterate manually
-print(next(I))
-print(next(I))
-print()
-G = timesfour('spam')
-I = iter(G)
-print(next(I))
-print(next(I))
-
+# # c
+# G _  ? * 4 ___ ? __ 'SPAM'   # Generator expression
+#
+# print l___ ?   # Force generator to produce all results
+#
+# ___ timesfour S   # Generator function
+#     ___ ? __ ?
+#         y____ ? * 4
+#
+#
+# G _ ? *spam
+# print l___ ?   # Iterate automatically
+#
+# G _  ? * 4 ___ ? __ *SPAM
+# I _ it__ G   # Iterate manually
+# print ne.. ?
+# print ne.. ?
+#
+# G _ timesfour 'spam'
+# I _ it__ G
+# print ne.. I
+# print ne.. I
+#
 # # Generator Functions Versus Generator Expressions
 # # Function ___ gensub line : or
 # #  ''.join x.upper    Expression
-print()
-
-line = 'aa bbb c'
-# x
-print(''.join(x.upper() for x in line.split() if len(x)> 1))   # Expression
-
-
-def gensub(line):   # Function
-    for x in line.split():
-        if len(x) > 1:
-            yield x.upper()
-
-
-print(''.join(gensub(line)))  # But why generate?
+#
+# line _ 'aa bbb c'
+# # x
+# print ''.jo.. ?.up...   ___ ? __ li__.sp..   __ le. ?  > 1   # Expression
+#
+#
+# ___ gensub line   # Function
+#     ___ ? __ li__.sp..
+#         __ le. ?  > 1
+#             y____ ?.up...
+#
+#
+# print ''.jo.. gensub line  # But why generate?

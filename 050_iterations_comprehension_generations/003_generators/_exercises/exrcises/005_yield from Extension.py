@@ -8,25 +8,23 @@
 
 # # The Python 3.3  yield from Extension
 # # def both (N )
-
-# i, x
-def both(N):
-    for i in range(N):   yield  i
-    for i in (x ** 2 for x in range(N)):   yield i
-
-
-print(both(5))
-print(list(both(5)))
-
-
-def both(N):
-     yield from range(N)
-     yield from (x ** 2 for x in range(N))
-
-print()
-print()
-
-print(list(both(5)))
-
-# i
-print(' : '.join(str(i) for i in both(5)))
+#
+# # i, x
+# ___ both N
+#     ___ ? __ ra.. ?   y___ ?
+#     ___ ? __  |? ** 2 ___ ? __ ra.. ?   y___ ?
+#
+#
+# print ? 5
+# print  li.. ? 5
+#
+#
+# ___ both N
+#      y___ f.. ra.. ?
+#      y___ f..  |? ** 2 ___ ? __ ra.. ?
+#
+#
+# print  li.. ? 5
+#
+# # i
+# print ' : '.jo.. st_ ?  ___ ? __ ? 5
