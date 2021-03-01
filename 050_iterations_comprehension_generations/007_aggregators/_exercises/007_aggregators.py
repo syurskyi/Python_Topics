@@ -27,22 +27,23 @@
 # # More than 13?
 # # Of course, we can also do this using generator expressions instead of map:
 #
-# w___ o... car-brands.txt a_ f
-#     ___ row i_ f:
-#         print le. r.. r.. e.._''
+# row
+# w___ o... car-brands.txt __ f
+#     ___ ? __ ?
+#         print le. ? ? e.._''
 #
-# w___ o... car-brands.txt a_ f
-#     result _ al. m.. l_____ row le. row >_ 3 f
-# print r..
+# w___ o... car-brands.txt __ f
+#     result _ al. m.. l_____ ? le. ? >_ 3 ?
+# print ?
 #
-# w___ o... car-brands.txt a_ f
-#     result _ an. m.. l____ row le. row > 10 f
-# print r....
+# w___ o... car-brands.txt __ f
+#     result _ an. m.. l____ ? le. ? > 10 ?
+# print ?
 #
-# w___ o... car-brands.txt a_ f
-#     result _ an. ma. l_____ row le. row > 13 f
-# print r...
+# w___ o... car-brands.txt __ f
+#     result _ an. ma. l_____ ? le. ? > 13 ?
+# print ?
 #
-# w___ o... car-brands.txt a_ f
-#     result _ an. le. row > 13 ___ row i_ f
-# print r...
+# w___ o... car-brands.txt __ f
+#     result _ an. le. ? > 13 ___ ? __ ?
+# print ?

@@ -2,23 +2,23 @@
 # Suppose we want to test if an iterable contains only numeric values.
 # First, we need to figure out how we determine if something is a number.
 
-l = [10, 20, 30, 40]
-
-is_all_numbers = True
-for item in l:
-    if not isinstance(item, Number):
-        is_all_numbers = False
-        break
-print(is_all_numbers)
-
-l = [10, 20, 30, 40, 'hello']
-
-is_all_numbers = True
-for item in l:
-    if not isinstance(item, Number):
-        is_all_numbers = False
-        break
-print(is_all_numbers)
+# l = [10, 20, 30, 40]
+#
+# is_all_numbers = True
+# for item in l:
+#     if not isinstance(item, Number):
+#         is_all_numbers = False
+#         break
+# print(is_all_numbers)
+#
+# l = [10, 20, 30, 40, 'hello']
+#
+# is_all_numbers = True
+# for item in l:
+#     if not isinstance(item, Number):
+#         is_all_numbers = False
+#         break
+# print(is_all_numbers)
 
 # Aggregator
 # Suppose we have a file and we want to make sure that all the rows in the file have length > some number.
