@@ -28,7 +28,7 @@
 #                         l.. _ ? + 1
 #                         h.. _ ? - 1
 #                         __ a.. no. __ a..
-#                             assert.ap.. a..
+#                             a__.ap.. a..
 #                         w___ ? < ? an. ? ? + 1 __ ? ? ##speed up, jump the same value
 #                             h.. -_ 1
 #                         w___ ? < ? an. ? ? __ ? ? - 1

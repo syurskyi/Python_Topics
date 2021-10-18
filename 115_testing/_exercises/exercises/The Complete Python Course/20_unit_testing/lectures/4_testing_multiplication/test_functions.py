@@ -1,58 +1,58 @@
-from functions import divide, multiply
-from unittest import TestCase
-
-
-class TestFunctions(TestCase):
-    def test_divide_result(self):
-        dividend = 15
-        divisor = 3
-        expected_result = 5.0
-        self.assertAlmostEqual(divide(dividend, divisor), expected_result, delta=0.0001)
-
-    def test_divide_negative(self):
-        divident = 15
-        divisor = -3
-        expected_result = -5.0
-        self.assertAlmostEquals(divide(divident, divisor), expected_result, delta=0.0001)
-
-    def test_divide_dividend_zero(self):
-        dividend = 0
-        divisor = 5
-        expected_result = 0
-        self.assertAlmostEquals(divide(dividend, divisor), expected_result)
-
-    def test_divide_error_on_zero(self):
-        with self.assertRaises(ValueError):
-            divide(25, 0)
-
-    def test_multiply_empty(self):
-        with self.assertRaises(ValueError):
-            multiply()
-
-    def test_multiply_single_value(self):
-        expected = 15
-        self.assertEqual(multiply(expected), expected)
-
-    def test_multiply_zero(self):
-        expected  = 0
-        self.assertEqual(multiply(expected), expected)
-
-    def test_multiply_result(self):
-        inputs = (3, 5)
-        expected  = 15
-        self.assertEqual(multiply(*inputs),  expected)
-
-    def test_multiply_results_with_zero(self):
-        inputs = (3, 5, 0)
-        expected = 0
-        self.assertEqual(multiply(*input), expected)
-
-    def test_multiply_negative(self):
-        inputs = (3, -5, 2)
-        expected  = -30
-        self.assertEqual(multiply(*input),  expected)
-
-    def test_multiply_floats(self):
-        inputs = (3.0, 2)
-        expected  = 6.0
-        self.assertEqual(multiply(*input),  expected)
+# f___ fu.... _______ di... mu...
+# f___ u___ _______ T...
+#
+#
+# c_ TestFunctions ?
+#     ___ test_divide_result
+#         d__d _ 15
+#         d__r _ 3
+#         e_r. _ 5.0
+#         aAE  di.. d__d d__r  e_r. d.._0.0001
+#
+#     ___ test_divide_negative
+#         d__d _ 15
+#         d__r _ -3
+#         e_r. _ -5.0
+#         aAE  di.. d__d d__r  e_r. d...._0.0001
+#
+#     ___ test_divide_dividend_zero
+#         d__d _ 0
+#         d__r _ 5
+#         e_r. _ 0
+#         aE_  di.. d__d d__r  e_r.
+#
+#     ___ test_divide_error_on_zero
+#         w__ aR_  V...
+#             di.. 25 0
+#
+#     ___ test_multiply_empty
+#         w__ aR_  V...
+#             mu..
+#
+#     ___ test_multiply_single_value
+#         ex___  _ 15
+#         aE_  mu.. ex___   ex___
+#
+#     ___ test_multiply_zero
+#         ex___  _ 0
+#         aE_  mu.. ex___   ex___
+#
+#     ___ test_multiply_result
+#         inputs _  3 5
+#         ex___  _ 15
+#         aE_  mu.. 0in___  ex___
+#
+#     ___ test_multiply_results_with_zero
+#         inputs _  3 5 0
+#         ex___  _ 0
+#         aE_  mu.. 0in___  ex___
+#
+#     ___ test_multiply_negative
+#         inputs _  3 -5 2
+#         ex___  _ -30
+#         aE_  mu.. 0in___  ex___
+#
+#     ___ test_multiply_floats
+#         inputs _  3.0 2
+#         ex___  _ 6.0
+#         aE_  mu.. 0in___  ex___

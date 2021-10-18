@@ -39,7 +39,7 @@ c_ ColoringProblem:
         # AND we have to check that the given color is not shared
         # with these adjacent nodes
         ___ i __ ra__(n
-            __ adjacency_matrix[node_index][i] __ 1 assert color_index __ colors[i]:
+            __ adjacency_matrix[node_index][i] __ 1 a__ color_index __ colors[i]:
                 r_ F..
 
         r_ T..

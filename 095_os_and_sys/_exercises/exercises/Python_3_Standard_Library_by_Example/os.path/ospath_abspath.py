@@ -1,23 +1,23 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# #
+# """Compute an absolute path from a relative path.
+# """
 #
 #
-"""Compute an absolute path from a relative path.
-"""
-
-
-#end_pymotw_header
-import os
-import os.path
-
-os.chdir('C:/Users')
-
-PATHS = [
-    '.',
-    '..',
-    './one/two/three',
-    '../one/two/three']
-
-
-for path in PATHS:
-    print('{!r:>21} : {!r}'.format(path, os.path.abspath(path)))
+# #end_pymotw_header
+# ______ __
+# ______ __.p..
+#
+# __.c_d_('/usr')
+#
+# PATHS _
+#     '.'
+#     '..'
+#     './one/two/three'
+#     '../one/two/three'
+#
+#
+# ___ p.. __ ?
+#     print('|___>21 _ |__|'.f.. p.. __.p...a.. p..

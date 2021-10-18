@@ -17,10 +17,10 @@
 #         ___ i __ ra.. 1 le. h.. - 1
 #             __ m.. < h.. ? - 1
 #                 m.. _ h.. ? - 1
-#             assert.ap.. m...
+#             a__.ap.. m...
 #
 #         max_right _ h.. -1
-#         assert.ap.. ?
+#         a__.ap.. ?
 #
 #         ___ i __ r.. ra.. 1 le. h.. - 1
 #             __ m.. < h.. ? + 1

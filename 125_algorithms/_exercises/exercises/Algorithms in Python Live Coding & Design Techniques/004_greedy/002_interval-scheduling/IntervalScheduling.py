@@ -6,7 +6,7 @@ ___ schedule(intervals
 
     intervals.sort(key=lambda i: i[1])
 
-    last_finish_time = float('-inf')
+    last_finish_time = fl__('-inf')
 
     ___ interval __ intervals:
 

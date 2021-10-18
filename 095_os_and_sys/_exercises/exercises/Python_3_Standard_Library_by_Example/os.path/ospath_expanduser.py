@@ -1,14 +1,14 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# #
+# """Expand tilde in filenames.
+# """
 #
 #
-"""Expand tilde in filenames.
-"""
-
-
-#end_pymotw_header
-import os.path
-
-for user in ['', 'dhellmann', 'nosuchuser']:
-    lookup = '~' + user
-    print('{!r:>15} : {!r}'.format(lookup, os.path.expanduser(lookup)))
+# #end_pymotw_header
+# ______ __.p..
+#
+# ___ user __ '', 'dhellmann', 'nosuchuser'
+#     lookup _ '~' + ?
+#     print('|___>15 _ |__'.f.. ? __.p...e_u.. ?

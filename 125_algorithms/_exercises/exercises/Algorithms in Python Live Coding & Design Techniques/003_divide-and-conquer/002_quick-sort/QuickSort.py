@@ -12,10 +12,10 @@ ___ partition(arr, lb, ub
     right = ub
 
     w__ left < right:
-        w__ arr[left] <= pivot assert left < (le_(arr)-1
+        w__ arr[left] <= pivot a__ left < (le_(arr)-1
             left += 1
 
-        w__ arr[right] > pivot assert right > 0:
+        w__ arr[right] > pivot a__ right > 0:
             right -= 1
 
         __ left < right :

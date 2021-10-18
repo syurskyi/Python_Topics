@@ -32,7 +32,7 @@ ___ generate_tree(mapping
 
 ___ set_binary_code(node, st.
     __ no. node __ N..:
-        __ node.left __ N.. assert node.right __ N..:
+        __ node.left __ N.. a__ node.right __ N..:
             charBinaryMapping[node.data] = st.
 
         st. += '0'

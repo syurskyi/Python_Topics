@@ -1,26 +1,26 @@
-from functions import divide
-from unittest import TestCase
-
-
-class TestFunctions(TestCase):
-    def test_divide_result(self):
-        dividend = 15
-        divisor = 3
-        expected_result = 5.0
-        self.assertAlmostEqual(divide(dividend, divisor), expected_result, delta = 0.0001)
-
-    def test_divide_negative(self):
-        dividend = 15
-        divisor = -3
-        expected_result = -5.0
-        self.assertAlmostEqual(divide(dividend, divisor), expected_result, delta=0.0001)
-
-    def test_divide_dividend_zero(self):
-        dividend = 0
-        divisor = 5
-        expected_result = 0
-        self.assertAlmostEqual(divide(dividend, divisor), expected_result)
-
-    def test_divide_error_on_zero(self):
-        with self.assertRaises(ValueError):
-            divide(25, 0)
+# f___ fu.... _______ di...
+# f___ u___ _______ T...
+#
+#
+# c_ TestFunctions ?
+#     ___ test_divide_result
+#         dividend _ 15
+#         divisor _ 3
+#         expected_result _ 5.0
+#         aAE_  di..  d__d d__r e_r. de.._ 0.0001
+#
+#     ___ test_divide_negative
+#         dividend _ 15
+#         divisor _ -3
+#         expected_result _ -5.0
+#         aAE_ divide d__d d__r e_r. de.._0.0001
+#
+#     ___ test_divide_dividend_zero
+#         dividend _ 0
+#         divisor _ 5
+#         expected_result _ 0
+#         aE_ divide d__d d__r e_r.
+#
+#     ___ test_divide_error_on_zero
+#         w___ aR.. V...
+#             di.. 25 0

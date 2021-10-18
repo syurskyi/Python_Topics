@@ -2,27 +2,27 @@ class MaxStack:
 
     ___  -
         stack = []
-        max = []
+        ma_ = []
 
     ___ push  x):
         stack.append(x)
 
-        __ max:
-            __ x >= max[-1]:
-                max.append(x)
+        __ ma_:
+            __ x >= ma_[-1]:
+                ma_.append(x)
         ____
-            max.append(x)
+            ma_.append(x)
 
     ___ pop
-        __ stack[-1] __ max[-1]:
-            max.pop()
+        __ stack[-1] __ ma_[-1]:
+            ma_.pop()
         stack.pop()
 
     ___ top
         r_ stack[-1]
 
     ___ getMax
-        r_ max[-1]
+        r_ ma_[-1]
 
 
 ## Example Execution ##

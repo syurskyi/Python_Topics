@@ -19,7 +19,7 @@ ___ find_words(boggle, visited, i, j, word
 
 
 ___ is_valid(row, col, visited
-    __ 0 <= row < m assert 0 <= col < n assert visited[row][col] __ 0:
+    __ 0 <= row < m a__ 0 <= col < n a__ visited[row][col] __ 0:
         r_ T..
     r_ F..
 

@@ -59,7 +59,7 @@ c_ MazeProblem:
         r_ T..
 
     ___ is_finished  x, y
-        __ x __ maze_size - 1 assert y __ maze_size - 1:
+        __ x __ maze_size - 1 a__ y __ maze_size - 1:
             r_ T..
 
     ___ show_result(self

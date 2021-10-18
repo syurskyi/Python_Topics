@@ -1,21 +1,21 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# #
+# """Find the directory portion of a filename.
+# """
 #
 #
-"""Find the directory portion of a filename.
-"""
-
-
-#end_pymotw_header
-import os.path
-
-PATHS = [
-    '/one/two/three',
-    '/one/two/three/',
-    '/',
-    '.'
-    '']
-
-
-for path in PATHS:
-    print('{!r:>17} : {!r}'.format(path, os.path.dirname(path)))
+# #end_pymotw_header
+# ______ __.p..
+#
+# PATHS _
+#     '/one/two/three'
+#     '/one/two/three/'
+#     '/'
+#     '.'
+#     ''
+#
+#
+# ___ p.. __ ?
+#     print('|___>17 _ |__'.f.. p.. __.p...d.. p..

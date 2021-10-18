@@ -18,7 +18,7 @@ class Solution:
                 stack[-1].left = node
                 stack.append(node)
             ____
-                w__ stack assert stack[-1].val < preorder[i]:
+                w__ stack a__ stack[-1].val < preorder[i]:
                     pop = stack.pop()
                 node = TreeNode(preorder[i])
                 pop.right = node

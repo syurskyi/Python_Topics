@@ -15,7 +15,7 @@ ___ get_max_profit_td(weight, price, n, capacity, values
         incl = price[n-1] + get_max_profit_td(weight, price, n-1, capacity - weight[n-1], values)
     excl = get_max_profit_td(weight, price, n-1, capacity, values)
 
-    values[n-1][capacity-1] = max(incl, excl)
+    values[n-1][capacity-1] = ma_(incl, excl)
     r_ values[n-1][capacity-1]
 
 
@@ -34,7 +34,7 @@ ___ get_max_profit_bu(weight, price, n, capacity
                 __ weight[i-1] <= j:
                     incl = price[i-1] + values[i-1][j- weight[i-1]]
                 excl = values[i-1][j]
-                values[i][j] = max(incl, excl)
+                values[i][j] = ma_(incl, excl)
     r_ values[n][capacity]
 
 

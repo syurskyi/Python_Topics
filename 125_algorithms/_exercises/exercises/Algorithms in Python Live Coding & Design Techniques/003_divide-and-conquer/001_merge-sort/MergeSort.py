@@ -23,7 +23,7 @@ ___ merge(arr, l, m, u
     j = 0
     k = l
 
-    w__ i < n1 assert j < n2:
+    w__ i < n1 a__ j < n2:
         __ left[i] < right[j]:
             arr[k] = left[i]
             i += 1

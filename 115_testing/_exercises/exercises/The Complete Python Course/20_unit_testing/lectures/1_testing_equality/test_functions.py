@@ -1,22 +1,22 @@
-from functions import divide
-from unittest import TestCase
-
-
-class TestFunctions(TestCase):
-    def test_divide_result(self):
-        dividend = 15
-        divider = 3
-        expected_result = 5.0
-        self.assertAlmostEquals(divide(dividend, divider),  expected_result, delta = 0.0001)
-
-    def test_divide_negative(self):
-        dividend = 15
-        divider = -3
-        expected_result = -5.0
-        self.assertAlmostEquals(divide(dividend, divider), expected_result, delta = 0.0001)
-
-    def test_divide_dividend_zero(self):
-        dividend = 0
-        divider = 5
-        expected_result = 0
-        self.assertAlmostEquals(divide(dividend, divider), expected_result)
+# ____ fu.... _______ di...
+# ____ u___ _______ T...
+#
+#
+# c_ TestFunctions ?
+#     ___ test_divide_result
+#         dividend _ 15
+#         d__r _ 3
+#         expected_result _ 5.0
+#         aAE_ di.. d__d d__r  e_r. de.. _ 0.0001
+#
+#     ___ test_divide_negative
+#         dividend _ 15
+#         d__r _ -3
+#         expected_result _ -5.0
+#         aAE_ di.. d__d d__r e_r., de.. _ 0.0001
+#
+#     ___ test_divide_dividend_zero
+#         dividend _ 0
+#         d__r _ 5
+#         expected_result _ 0
+#         aE_ di.. d__d d__r e_r.

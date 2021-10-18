@@ -29,7 +29,7 @@
 #             c__.n.. _ ?
 #             ? _ ?.n..
 #             c__ _ c__.n..
-#         r_ assert.n..
+#         r_ a__.n..
 #
 #     ___ mergeKLists lists L.. LN..  LN..
 #         __ le. ? __ 0

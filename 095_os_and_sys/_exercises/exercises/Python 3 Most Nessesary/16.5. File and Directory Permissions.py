@@ -1,11 +1,11 @@
-# # # -*- coding: utf-8 -*-
-#
-# _____ __                       # Подключаем модуль os
-# __.a... _file.txt  __.F_O.  # Файл существует
-# # True
-# __.a... _ C:\book __.F_O.  # Каталог существует
-# # True
-# __.a... _ C:\book2 __.F_O.  # Каталог не существует
-# # False
-#
+# # -*- coding: utf-8 -*-
+
+import os                      # Подключаем модуль os
+print(os.access(r"file.txt", os.F_OK))  # Файл существует
+# True
+print(os.access(r"C:\book", os.F_OK))  # Каталог существует
+# True
+print(os.access(r"C:\book2", os.F_OK))  # Каталог не существует
+# False
+
 # __.c.m. _ file.txt 0o777  # Полный доступ к файлу

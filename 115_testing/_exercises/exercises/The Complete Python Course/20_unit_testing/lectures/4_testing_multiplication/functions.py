@@ -1,16 +1,16 @@
-from typing import Union, Tuple
-
-def divide(dividend: Union[int, float], divisor: Union[int, float]):
-    if divisor == 0:
-        raise ValueError('The divisor cannot be zero.')
-
-    return dividend / divisor
-
-
-def multiply(*args: Tuple[Union[int, float]]):
-    if len(args) == 0:
-        return ValueError('At least one value to multiply must be passed.')
-    total = 1
-    for arg in args:
-        total *= args
-    return total
+# f__ ty... ______ U..., T...
+#
+# ___ divide(dividend U.. in., fl.., divisor U... in. fl..
+#     __ d__r __ 0
+#         r_ V... The divisor cannot be zero.
+#
+#     r_ d__d / d__r
+#
+#
+# ___ multiply $ T.. Un.. in. fl..
+#     __ le. args __ 0
+#         r_ V.. At least one value to multiply must be passed.
+#     total _ 1
+#     ___ arg i_ a..
+#         t... *_ a..
+#     r__ t..

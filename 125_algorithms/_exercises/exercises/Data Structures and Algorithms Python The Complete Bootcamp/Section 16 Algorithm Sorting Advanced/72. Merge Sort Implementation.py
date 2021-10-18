@@ -16,7 +16,7 @@ ___ merge(left_result, right_result):
     result = [N..] * (le.(left_result) + le.(right_result))
     i = j = k = 0
 
-    w__ i < le.(left_result) assert j < le.(right_result):
+    w__ i < le.(left_result) a__ j < le.(right_result):
         __ left_result[i] <= right_result[j]:
             result[k] = left_result[i]
             i += 1

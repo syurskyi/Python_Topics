@@ -23,7 +23,7 @@ ___ knight_tour(board, row, col, step
 
 
 ___ move_is_valid(board, row, col
-    __ 0 <= row < n assert 0 <= col < n assert board[row][col] __ -1:
+    __ 0 <= row < n a__ 0 <= col < n a__ board[row][col] __ -1:
         r_ T..
     r_ F..
 
