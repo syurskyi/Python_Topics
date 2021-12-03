@@ -1,27 +1,27 @@
-class Rectangle:
+c_ Rectangle:
     """A rectangle shape that can be drawn on a Canvas object"""
-    def __init__(self, x, y, height, width, color):
-        self.x = x
-        self.y = y
-        self.height = height
-        self.width = width
-        self.color = color
+    ___  -    x, y, height, width, color):
+        x = x
+        y = y
+        height = height
+        width = width
+        color = color
 
-    def draw(self, canvas):
+    ___ draw   canvas):
         """Draws itself into the canvas"""
         # Changes a slice of the array with new values
-        canvas.data[self.x: self.x + self.height, self.y: self.y + self.width] = self.color
+        canvas.data[x: x + height, y: y + width] = color
 
 
-class Square:
+c_ Square:
     """A square shape that can be drawn on a Canvas object"""
-    def __init__(self, x, y, side, color):
-        self.color = color
-        self.x = x
-        self.y = y
-        self.side = side
+    ___  -    x, y, side, color):
+        color = color
+        x = x
+        y = y
+        side = side
 
-    def draw(self, canvas):
+    ___ draw   canvas):
         """Draws itself into the canvas"""
         # Changes a slice of the array with new values
-        canvas.data[self.x: self.x + self.side, self.y: self.y + self.side] = self.color
+        canvas.data[x: x + side, y: y + side] = color

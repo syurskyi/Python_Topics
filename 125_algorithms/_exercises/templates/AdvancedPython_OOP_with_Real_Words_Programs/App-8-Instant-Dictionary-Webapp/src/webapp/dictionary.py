@@ -1,15 +1,15 @@
-import justpy as jp
-import definition
-from webapp import layout
-from webapp import page
+_____ justpy as jp
+_____ definition
+____ webapp _____ layout
+____ webapp _____ page
 
-import requests
+_____ requests
 
-class Dictionary(page.Page):
+c_ Dictionary(page.Page):
     path = "/dictionary"
 
     @classmethod
-    def serve(cls, req):
+    ___ serve(cls, req):
         wp = jp.QuasarPage(tailwind=True)
 
         lay = layout.DefaultLayout(a=wp)
@@ -32,10 +32,10 @@ class Dictionary(page.Page):
 
         print(cls, req)
 
-        return wp
+        r_ wp
 
     @staticmethod
-    def get_definition(widget, msg):
+    ___ get_definition(widget, msg):
         defined = definition.Definition(widget.value).get()
         widget.outputdiv.text = " ".join(defined)
 

@@ -1,4 +1,4 @@
-class MinStack:
+c_ MinStack:
 
     ___  -
         stack = []

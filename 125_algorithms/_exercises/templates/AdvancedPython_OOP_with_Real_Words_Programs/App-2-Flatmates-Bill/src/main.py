@@ -1,25 +1,25 @@
-from flat import Bill, Flatmate
-from reports import PdfReport, FileSharer
-
-amount = float(input("Hey user, enter the bill amount: "))
-period = input("What is the bill period? E.g. December 2020: ")
-
-name1 = input("What is your name? ")
-days_in_house1 = int(input(f"How many days did {name1} stay in the house during the bill period? "))
-
-name2 = input("What is the name of the other flatmate? ")
-days_in_house2 = int(input(f"How many days did {name2} stay in the house during the bill period? "))
-
-
-the_bill = Bill(amount, period)
-flatmate1 = Flatmate(name1, days_in_house1)
-flatmate2 = Flatmate(name2, days_in_house2)
-
-print(f"{flatmate1.name} pays: ", flatmate1.pays(the_bill, flatmate2))
-print(f"{flatmate2.name} pays: ", flatmate2.pays(the_bill, flatmate1))
-
-pdf_report = PdfReport(filename=f"{the_bill.period}.pdf")
-pdf_report.generate(flatmate1, flatmate2, the_bill)
-
-file_sharer = FileSharer(filepath=pdf_report.filename)
-print(file_sharer.share())
+# ____ f.. _____ B.. F..
+# ____ r.. _____ P.. F..
+#
+# amount = f__ i__ "Hey user, enter the bill amount: "
+# period = i__ "What is the bill period? E.g. December 2020: ")
+#
+# name1 = i__ "What is your name? "
+# days_in_house1 = int(i__ _"How many days did |?| stay in the house during the bill period? "
+#
+# name2 = i__("What is the name of the other flatmate? ")
+# days_in_house2 = int(i__ _"How many days did |?| stay in the house during the bill period? "))
+#
+#
+# the_bill = B.. a.. p..
+# flatmate1 = F.. n.. d..
+# flatmate2 = F.. n..2 d..2
+#
+# print _"|f..1.n..| pays: " f__1.p.. t.. f..2
+# print _"|f..2.n..| pays: " f__2.p.. t.. f..1
+#
+# pdf_report = P.. f.._ _ "|t__.p__.pdf")
+# ?.g.. f__1, f__2 t..
+#
+# file_sharer = F.. f.. _ p__.f..
+# print ?.s..

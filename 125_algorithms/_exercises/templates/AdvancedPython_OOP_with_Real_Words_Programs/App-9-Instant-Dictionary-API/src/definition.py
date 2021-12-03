@@ -1,14 +1,14 @@
-import pandas
+_____ pandas
 
 
-class Definition:
+c_ Definition:
 
-    def __init__(self, term):
-        self.term = term
+    ___  -    term):
+        term = term
 
-    def get(self):
+    ___ get _
         df = pandas.read_csv("data.csv")
-        return tuple(df.loc[df['word']==self.term]['definition'])
+        r_ tuple(df.loc[df['word']==term]['definition'])
 
 
 # d = Definition(term="sun")

@@ -1,42 +1,42 @@
-from flask.views import MethodView
-from wtforms import Form, StringField, SubmitField
-from flask import Flask, render_template, request
-from flatmates_bill import flat
+____ flask.views _____ MethodView
+____ wtforms _____ Form, StringField, SubmitField
+____ flask _____ Flask, render_template, request
+____ flatmates_bill _____ flat
 
 app = Flask(__name__)
 
-class HomePage(MethodView):
+c_ HomePage(MethodView):
 
-    def get(self):
-        return render_template('index.html')
+    ___ get _
+        r_ render_template('index.html')
 
 
-class BillFormPage(MethodView):
+c_ BillFormPage(MethodView):
 
-    def get(self):
+    ___ get _
         bill_form = BillForm()
-        return render_template('bill_form_page.html',
+        r_ render_template('bill_form_page.html',
                                billform=bill_form)
 
 
-class ResultsPage(MethodView):
+c_ ResultsPage(MethodView):
 
-    def post(self):
+    ___ post _
         billform = BillForm(request.form)
 
-        the_bill = flat.Bill(float(billform.amount.data), billform.period.data)
-        flatmate1 = flat.Flatmate(billform.name1.data, float(billform.days_in_house1.data))
-        flatmate2 = flat.Flatmate(billform.name2.data, float(billform.days_in_house2.data))
+        the_bill = flat.Bill(f__(billform.amount.data), billform.period.data)
+        flatmate1 = flat.Flatmate(billform.name1.data, f__(billform.days_in_house1.data))
+        flatmate2 = flat.Flatmate(billform.name2.data, f__(billform.days_in_house2.data))
 
 
-        return render_template('results.html',
+        r_ render_template('results.html',
                                name1=flatmate1.name,
                                amount1=flatmate1.pays(the_bill, flatmate2),
                                name2=flatmate2.name,
                                amount2=flatmate2.pays(the_bill, flatmate1))
 
 
-class BillForm(Form):
+c_ BillForm(Form):
     amount = StringField("Bill Amount: ", default="100")
     period = StringField("Bill Period: ", default="December 2020")
 

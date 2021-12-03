@@ -1,74 +1,74 @@
-from kivy.app import App
-from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.lang import Builder
-from kivy.core.clipboard import Clipboard
+____ kivy.app _____ App
+____ kivy.uix.screenmanager _____ ScreenManager, Screen
+____ kivy.lang _____ Builder
+____ kivy.core.clipboard _____ Clipboard
 
-import time
-import webbrowser
+_____ time
+_____ webbrowser
 
-from filesharer import FileSharer
+____ filesharer _____ FileSharer
 
 Builder.load_file('frontend.kv')
 
-class CameraScreen(Screen):
-    def start(self):
+c_ CameraScreen(Screen):
+    ___ start _
         """Starts camera and changes Button text"""
-        self.ids.camera.opacity = 1
-        self.ids.camera.play = True
-        self.ids.camera_button.text = "Stop Camera"
-        self.ids.camera.texture = self.ids.camera._camera.texture
+        ids.camera.opacity = 1
+        ids.camera.play = True
+        ids.camera_button.text = "Stop Camera"
+        ids.camera.texture = ids.camera._camera.texture
 
-    def stop(self):
+    ___ stop _
         """Stops camera and changes Button text"""
-        self.ids.camera.opacity = 0
-        self.ids.camera.play = False
-        self.ids.camera_button.text = "Start Camera"
-        self.ids.camera.texture = None
+        ids.camera.opacity = 0
+        ids.camera.play = False
+        ids.camera_button.text = "Start Camera"
+        ids.camera.texture = None
 
 
-    def capture(self):
+    ___ capture _
         """Creates a filename with the current time and captures
         and saves a photo image under that filename"""
         current_time = time.strftime('%Y%m%d-%H%M%S')
-        self.filepath = f"files/{current_time}.png"
-        self.ids.camera.export_to_png(self.filepath)
-        self.manager.current = 'image_screen'
-        self.manager.current_screen.ids.img.source = self.filepath
+        filepath = f"files/{current_time}.png"
+        ids.camera.export_to_png(filepath)
+        manager.current = 'image_screen'
+        manager.current_screen.ids.img.source = filepath
 
 
-class ImageScreen(Screen):
+c_ ImageScreen(Screen):
     link_message = "Create a Link First"
 
-    def create_link(self):
+    ___ create_link _
         """Accesses the photo filepath, uploads it to the web,
         and inserts the link in the Label widget"""
         file_path = App.get_running_app().root.ids.camera_screen.filepath
         filesharer = FileSharer(filepath = file_path)
-        self.url = filesharer.share()
-        self.ids.link.text = self.url
+        url = filesharer.share()
+        ids.link.text = url
 
-    def copy_link(self):
+    ___ copy_link _
         """Copy link to the clipboard available for pasting"""
         try:
-            Clipboard.copy(self.url)
+            Clipboard.copy(url)
         except:
-            self.ids.link.text = self.link_message
+            ids.link.text = link_message
 
-    def open_link(self):
+    ___ open_link _
         """Open link with default browser"""
         try:
-            webbrowser.open(self.url)
+            webbrowser.open(url)
         except:
-            self.ids.link.text = self.link_message
+            ids.link.text = link_message
 
 
 
-class RootWidget(ScreenManager):
+c_ RootWidget(ScreenManager):
     pass
 
-class MainApp(App):
+c_ MainApp(App):
 
-    def build(self):
-        return RootWidget()
+    ___ build _
+        r_ RootWidget()
 
 MainApp().run()

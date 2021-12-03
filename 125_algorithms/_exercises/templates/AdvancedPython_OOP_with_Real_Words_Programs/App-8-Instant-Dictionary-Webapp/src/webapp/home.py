@@ -1,12 +1,12 @@
-import justpy as jp
-from webapp import layout
-from webapp import page
+_____ justpy as jp
+____ webapp _____ layout
+____ webapp _____ page
 
-class Home(page.Page):
+c_ Home(page.Page):
     path = "/"
 
     @classmethod
-    def serve(cls, req):
+    ___ serve(cls, req):
         wp = jp.QuasarPage(tailwind=True)
 
         lay = layout.DefaultLayout(a=wp)
@@ -27,6 +27,6 @@ class Home(page.Page):
                  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
         """, classes="text-lg")
 
-        return wp
+        r_ wp
 
 

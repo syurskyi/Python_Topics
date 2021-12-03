@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov on 17/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-from random import randint
+____ random _____ randint
 c_ Node:
     ___  -   value=N..
         value = value

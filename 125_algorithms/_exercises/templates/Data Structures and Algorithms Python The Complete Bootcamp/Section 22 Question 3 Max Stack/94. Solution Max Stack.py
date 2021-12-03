@@ -1,4 +1,4 @@
-class MaxStack:
+c_ MaxStack:
 
     ___  -
         stack = []

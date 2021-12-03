@@ -1,12 +1,12 @@
-import justpy as jp
-import definition
-import json
+_____ justpy as jp
+_____ definition
+_____ json
 
-class Api:
+c_ Api:
     """Handles requests at /api?w=word
     """
     @classmethod
-    def serve(cls, req):
+    ___ serve(cls, req):
         wp = jp.WebPage()
         word = req.query_params.get('w')
 
@@ -18,6 +18,6 @@ class Api:
         }
 
         wp.html = json.dumps(response)
-        return wp
+        r_ wp
 
 

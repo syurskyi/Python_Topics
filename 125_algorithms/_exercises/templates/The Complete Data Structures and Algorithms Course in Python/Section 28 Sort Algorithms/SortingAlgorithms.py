@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2021 AppMillers. All rights reserved.
 
-import math
+_____ math
 
 ___ bubbleSort(customList
     ___ i __ ra__(le_(customList)-1
@@ -32,7 +32,7 @@ ___ insertionSort(customList
 
 
 ___ bucketSort(customList
-    numberofBuckets = round(math.sqrt(le_(customList)))
+    numberofBuckets = r__(math.sqrt(le_(customList)))
     maxValue = ma_(customList)
     arr = []
 

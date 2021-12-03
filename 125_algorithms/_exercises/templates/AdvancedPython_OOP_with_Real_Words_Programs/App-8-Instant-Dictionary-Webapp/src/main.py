@@ -1,11 +1,11 @@
-import inspect
+_____ inspect
 
-import justpy as jp
+_____ justpy as jp
 
-from webapp import page
-from webapp.about import About
-from webapp.home import Home
-from webapp.dictionary import Dictionary
+____ webapp _____ page
+____ webapp.about _____ About
+____ webapp.home _____ Home
+____ webapp.dictionary _____ Dictionary
 
 
 imports = list(globals().values())

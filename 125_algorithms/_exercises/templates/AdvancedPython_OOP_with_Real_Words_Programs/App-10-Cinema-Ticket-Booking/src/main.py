@@ -1,91 +1,91 @@
-from fpdf import FPDF
-import random
-import string
-import sqlite3
+____ fpdf _____ FPDF
+_____ random
+_____ string
+_____ sqlite3
 
 
-class User:
+c_ User:
     """Represents a user that can buy a cinema Seat"""
 
-    def __init__(self, name):
-        self.name = name
+    ___  -    name):
+        name = name
 
-    def buy(self, seat, card):
+    ___ buy   seat, card):
         """Buys the ticket if the card is valid"""
         if seat.is_free():
             if card.validate(price=seat.get_price()):
                 seat.occupy()
                 ticket = Ticket(user = self, price=seat.get_price(), seat_number=seat_id)
                 ticket.to_pdf()
-                return "Purchase successful!"
+                r_ "Purchase successful!"
             else:
-                return "There was a problem with your card!"
+                r_ "There was a problem with your card!"
         else:
-            return "Seat is taken!"
+            r_ "Seat is taken!"
 
 
-class Seat:
+c_ Seat:
     """Represents a cinema seat that can be taken from a User"""
 
     database = "cinema.db"
 
-    def __init__(self, seat_id):
-        self.seat_id = seat_id
+    ___  -    seat_id):
+        seat_id = seat_id
 
-    def get_price(self):
+    ___ get_price _
         """Get the price of a certain seat"""
-        connection = sqlite3.connect(self.database)
+        connection = sqlite3.connect(database)
         cursor = connection.cursor()
         cursor.execute("""
         SELECT "price" FROM "Seat" WHERE "seat_id" = ?
-        """, [self.seat_id])
+        """, [seat_id])
         price = cursor.fetchall()[0][0]
-        return price
+        r_ price
 
-    def is_free(self):
+    ___ is_free _
         """Check in the database if a Seat is taken or not"""
-        connection = sqlite3.connect(self.database)
+        connection = sqlite3.connect(database)
         cursor = connection.cursor()
         cursor.execute("""
         SELECT "taken" FROM "Seat" WHERE "seat_id" = ?
-        """, [self.seat_id])
+        """, [seat_id])
         result = cursor.fetchall()[0][0]
 
         if result == 0:
-            return True
+            r_ True
         else:
-            return False
+            r_ False
 
-    def occupy(self):
+    ___ occupy _
         """Change value of taken in the database from 0 to 1 if Seat is free"""
-        if self.is_free():
-            connection = sqlite3.connect(self.database)
+        if is_free():
+            connection = sqlite3.connect(database)
             connection.execute("""
             UPDATE "Seat" SET "taken"=? WHERE "seat_id"=?
-            """, [1, self.seat_id])
+            """, [1, seat_id])
             connection.commit()
             connection.close()
 
-class Card:
+c_ Card:
     """ Represents a bank card needed to finalize a Seat purchase"""
 
     database = "banking.db"
 
-    def __init__(self, type, number, cvc, holder):
-        self.holder = holder
-        self.cvc = cvc
-        self.number = number
-        self.type = type
+    ___  -    type, number, cvc, holder):
+        holder = holder
+        cvc = cvc
+        number = number
+        type = type
 
-    def validate(self, price):
+    ___ validate   price):
         """Checks if Card is valid and has balance.
         Subtracts price from balance.
         """
-        connection = sqlite3.connect(self.database)
+        connection = sqlite3.connect(database)
         cursor = connection.cursor()
         cursor.execute("""
         SELECT "balance" FROM "Card" WHERE "number"=? and "cvc"=?
-        """, [self.number, self.cvc])
+        """, [number, cvc])
         result = cursor.fetchall()
 
         if result:
@@ -93,22 +93,22 @@ class Card:
             if balance >= price:
                 connection.execute("""
                 UPDATE "Card" SET "balance" = ? WHERE "number"=? and "cvc"=?
-                """, [balance - price, self.number, self.cvc])
+                """, [balance - price, number, cvc])
                 connection.commit()
                 connection.close()
-                return True
+                r_ True
 
 
-class Ticket:
+c_ Ticket:
     """Represents a cinema Ticket purchased by a User"""
 
-    def __init__(self, user, price, seat_number):
-        self.user = user
-        self.price = price
-        self.id = "".join([random.choice(string.ascii_letters) for i in range(8)])
-        self.seat_number = seat_number
+    ___  -    user, price, seat_number):
+        user = user
+        price = price
+        id = "".join([random.choice(string.ascii_letters) for i in range(8)])
+        seat_number = seat_number
 
-    def to_pdf(self):
+    ___ to_pdf _
         """Creates a PDF ticket"""
         pdf = FPDF(orientation='P', unit='pt', format='A4')
         pdf.add_page()
@@ -119,25 +119,25 @@ class Ticket:
         pdf.set_font(family="Times", style="B", size=14)
         pdf.cell(w=100, h=25, txt="Name: ", border=1)
         pdf.set_font(family="Times", style="", size=12)
-        pdf.cell(w=0, h=25, txt=self.user.name, border=1, ln=1)
+        pdf.cell(w=0, h=25, txt=user.name, border=1, ln=1)
         pdf.cell(w=0, h=5, txt="", border=0, ln=1)
 
         pdf.set_font(family="Times", style="B", size=14)
         pdf.cell(w=100, h=25, txt="Ticket ID", border=1)
         pdf.set_font(family="Times", style="", size=12)
-        pdf.cell(w=0, h=25, txt=self.id, border=1, ln=1)
+        pdf.cell(w=0, h=25, txt=id, border=1, ln=1)
         pdf.cell(w=0, h=5, txt="", border=0, ln=1)
 
         pdf.set_font(family="Times", style="B", size=14)
         pdf.cell(w=100, h=25, txt="Price", border=1)
         pdf.set_font(family="Times", style="", size=12)
-        pdf.cell(w=0, h=25, txt=str(self.price), border=1, ln=1)
+        pdf.cell(w=0, h=25, txt=st_(price), border=1, ln=1)
         pdf.cell(w=0, h=5, txt="", border=0, ln=1)
 
         pdf.set_font(family="Times", style="B", size=14)
         pdf.cell(w=100, h=25, txt="Seat Number", border=1)
         pdf.set_font(family="Times", style="", size=12)
-        pdf.cell(w=0, h=25, txt=str(self.seat_number), border=1, ln=1)
+        pdf.cell(w=0, h=25, txt=st_(seat_number), border=1, ln=1)
         pdf.cell(w=0, h=5, txt="", border=0, ln=1)
 
         pdf.output("sample.pdf", 'F')
@@ -145,12 +145,12 @@ class Ticket:
 
 if __name__ == "__main__":
 
-    name = input("Your full name: ")
-    seat_id = input("Preferred seat number: ")
-    card_type = input("Your card type: ")
-    card_number = input("Your card number: ")
-    card_cvc = input("Your card cvc: ")
-    card_holder = input("Card holder name: ")
+    name = i__("Your full name: ")
+    seat_id = i__("Preferred seat number: ")
+    card_type = i__("Your card type: ")
+    card_number = i__("Your card number: ")
+    card_cvc = i__("Your card cvc: ")
+    card_holder = i__("Card holder name: ")
 
     user = User(name=name)
     seat = Seat(seat_id=seat_id)

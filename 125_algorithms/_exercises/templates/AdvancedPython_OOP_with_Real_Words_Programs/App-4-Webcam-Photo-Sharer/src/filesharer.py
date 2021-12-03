@@ -1,12 +1,12 @@
-from filestack import Client
+____ filestack _____ Client
 
-class FileSharer:
+c_ FileSharer:
 
-    def __init__(self, filepath, api_key="INSERT YOUR API KEY HERE"):
-        self.filepath = filepath
-        self.api_key = api_key
+    ___  -    filepath, api_key="INSERT YOUR API KEY HERE"):
+        filepath = filepath
+        api_key = api_key
 
-    def share(self):
-        client = Client(self.api_key)
-        new_filelink = client.upload(filepath=self.filepath)
-        return new_filelink.url
+    ___ share _
+        client = Client(api_key)
+        new_filelink = client.upload(filepath=filepath)
+        r_ new_filelink.url

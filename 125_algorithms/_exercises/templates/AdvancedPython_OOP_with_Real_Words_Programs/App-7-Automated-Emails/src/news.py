@@ -1,43 +1,43 @@
-import requests
+_____ requests
 
 
-class NewsFeed:
+c_ NewsFeed:
     """Representing multiple news titles and links as a single string
     """
     base_url = "http://newsapi.org/v2/everything?"
     api_key = "INSERT YOUR API KEY HERE"
 
-    def __init__(self, interest, from_date, to_date, language='en'):
-        self.interest = interest
-        self.from_date = from_date
-        self.to_date = to_date
-        self.language = language
+    ___  -    interest, from_date, to_date, language='en'):
+        interest = interest
+        from_date = from_date
+        to_date = to_date
+        language = language
 
-    def get(self):
-        url = self._build_url()
+    ___ get _
+        url = _build_url()
 
-        articles = self._get_articles(url)
+        articles = _get_articles(url)
 
         email_body = ''
         for article in articles:
             email_body = email_body + article['title'] + "\n" + article['url'] + "\n\n"
 
-        return email_body
+        r_ email_body
 
-    def _get_articles(self, url):
+    ___ _get_articles   url):
         response = requests.get(url)
         content = response.json()
         articles = content['articles']
-        return articles
+        r_ articles
 
-    def _build_url(self):
-        url = f"{self.base_url}" \
-              f"qInTitle={self.interest}&" \
-              f"from={self.from_date}&" \
-              f"to={self.to_date}&" \
-              f"language={self.language}&" \
-              f"apiKey={self.api_key}"
-        return url
+    ___ _build_url _
+        url = f"{base_url}" \
+              f"qInTitle={interest}&" \
+              f"from={from_date}&" \
+              f"to={to_date}&" \
+              f"language={language}&" \
+              f"apiKey={api_key}"
+        r_ url
 
 
 if __name__ == "__main__":

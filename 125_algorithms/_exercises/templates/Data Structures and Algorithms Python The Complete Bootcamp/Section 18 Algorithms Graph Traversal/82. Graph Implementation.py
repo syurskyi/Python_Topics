@@ -1,11 +1,11 @@
-class Node():
+c_ Node():
 
     ___  -   value):
         value = value
         adjacentlist = []
         visited = False
 
-class Graph():
+c_ Graph():
     p..
 
 node1 = Node("A")

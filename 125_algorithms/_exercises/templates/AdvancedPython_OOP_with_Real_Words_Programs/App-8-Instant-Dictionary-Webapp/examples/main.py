@@ -1,7 +1,7 @@
-import justpy as jp
+_____ justpy as jp
 
 @jp.SetRoute("/home")
-def home():
+___ home():
     wp = jp.QuasarPage(tailwind=True)
     div = jp.Div(a=wp, classes="bg-gray-200 h-screen")
 
@@ -22,20 +22,20 @@ def home():
     jp.Div(a=div2, text="I am a cool interactive div!", mouseenter=mouse_enter,
            mouseleave=mouse_leave,
            classes = "hover:bg-red-500")
-    return wp
+    r_ wp
 
 @jp.SetRoute("/about")
-def about():
+___ about():
     wp = jp.QuasarPage(tailwind=True)
 
-def sum_up(widget, msg):
-    sum = float(widget.in1.value) + float(widget.in2.value)
+___ sum_up(widget, msg):
+    sum = f__(widget.in1.value) + f__(widget.in2.value)
     widget.d.text = sum
 
-def mouse_enter(widget, msg):
+___ mouse_enter(widget, msg):
     widget.text = "A mouse entered the house!"
 
-def mouse_leave(widget, msg):
+___ mouse_leave(widget, msg):
     widget.text = "The mouse left!"
 
 jp.justpy()

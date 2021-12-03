@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2021 AppMillers. All rights reserved.
 
-import QueueLinkedList as queue
+_____ QueueLinkedList as queue
 
 c_ AVLNode:
     ___  -   data

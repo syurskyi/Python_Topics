@@ -1,12 +1,12 @@
 # Definition for a binary tree node.
-class TreeNode:
+c_ TreeNode:
     ___  -   val=0, left=N.., right=N..):
         val = val
         left = left
         right = right
 
 
-class Solution:
+c_ Solution:
     ___ invertTree  root):
         __ root __ N..:
             r_ N..

@@ -1,11 +1,11 @@
-import yagmail
-import pandas
-from news import NewsFeed
-import datetime
-import time
+_____ yagmail
+_____ pandas
+____ news _____ NewsFeed
+_____ datetime
+_____ time
 
 
-def send_email():
+___ send_email():
     today = datetime.datetime.now().strftime('%Y-%m-%d')
     yesterday = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d')
     news_feed = NewsFeed(interest=row['interest'],

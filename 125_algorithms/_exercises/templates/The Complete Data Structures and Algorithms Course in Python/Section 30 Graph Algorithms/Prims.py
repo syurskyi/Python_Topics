@@ -2,7 +2,7 @@
 #   Copyright © 2021 AppMillers. All rights reserved.
 
 # Prims Algorithm  in Python
-import sys
+_____ sys
 c_ Graph:
     ___  -   vertexNum, edges, nodes
         edges = edges

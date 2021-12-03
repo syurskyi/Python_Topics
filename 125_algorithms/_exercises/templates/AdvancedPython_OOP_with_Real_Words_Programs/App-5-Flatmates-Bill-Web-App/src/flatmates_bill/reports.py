@@ -1,24 +1,24 @@
-import webbrowser
-import os
+_____ webbrowser
+_____ os
 
-from filestack import Client
-from fpdf import FPDF
+____ filestack _____ Client
+____ fpdf _____ FPDF
 
 
-class PdfReport:
+c_ PdfReport:
     """
     Creates a Pdf file that contains data about
     the flatmates such as their names, their due amounts
     and the period of the bill.
     """
 
-    def __init__(self, filename):
-        self.filename = filename
+    ___  -    filename):
+        filename = filename
 
-    def generate(self, flatmate1, flatmate2, bill):
+    ___ generate   flatmate1, flatmate2, bill):
 
-        flatmate1_pay = str(round(flatmate1.pays(bill, flatmate2), 2))
-        flatmate2_pay = str(round(flatmate2.pays(bill, flatmate1), 2))
+        flatmate1_pay = st_(r__(flatmate1.pays(bill, flatmate2), 2))
+        flatmate2_pay = st_(r__(flatmate2.pays(bill, flatmate1), 2))
 
         pdf = FPDF(orientation='P', unit='pt', format='A4')
         pdf.add_page()
@@ -46,17 +46,17 @@ class PdfReport:
 
         # Change directory to for_python_topic, generate and open the PDF
         os.chdir("files")
-        pdf.output(self.filename)
-        webbrowser.open(self.filename)
+        pdf.output(filename)
+        webbrowser.open(filename)
 
 
-class FileSharer:
+c_ FileSharer:
 
-    def __init__(self, filepath, api_key="INSERT YOUR API KEY"):
-        self.filepath = filepath
-        self.api_key = api_key
+    ___  -    filepath, api_key="INSERT YOUR API KEY"):
+        filepath = filepath
+        api_key = api_key
 
-    def share(self):
-        client = Client(self.api_key)
-        new_filelink = client.upload(filepath=self.filepath)
-        return new_filelink.url
+    ___ share _
+        client = Client(api_key)
+        new_filelink = client.upload(filepath=filepath)
+        r_ new_filelink.url

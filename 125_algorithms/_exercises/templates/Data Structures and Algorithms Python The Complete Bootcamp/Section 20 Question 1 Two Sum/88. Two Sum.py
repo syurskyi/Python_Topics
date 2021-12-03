@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ twoSum  nums, target):
         store = {}
 

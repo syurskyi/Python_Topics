@@ -1,7 +1,7 @@
-from abc import ABC, abstractmethod
+____ abc _____ ABC, abstractmethod
 
-class Page(ABC):
+c_ Page(ABC):
 
     @abstractmethod
-    def serve(self):
+    ___ serve _
         pass

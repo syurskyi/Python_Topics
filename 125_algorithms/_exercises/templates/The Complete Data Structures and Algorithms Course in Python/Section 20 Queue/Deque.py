@@ -3,7 +3,7 @@
 
 # How to use collections.deque as a FIFO queue:
 
-from collections import deque
+____ collections _____ deque
 
 customQueue = deque(maxlen=3)
 print(customQueue)

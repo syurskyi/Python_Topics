@@ -1,11 +1,11 @@
-class ListNode:
+c_ ListNode:
     ___  -   val):
         val = val
         prev = N..
         next = N..
 
 
-class MyLinkedList:
+c_ MyLinkedList:
 
     ___  -
         head = N..

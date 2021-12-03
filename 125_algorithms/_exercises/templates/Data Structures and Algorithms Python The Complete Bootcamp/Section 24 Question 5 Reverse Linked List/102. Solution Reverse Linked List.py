@@ -1,11 +1,11 @@
 # Definition for singly-linked list.
-class ListNode:
+c_ ListNode:
     ___  -   val=0, next=N..):
         val = val
         next = next
 
 
-class Solution:
+c_ Solution:
     ___ reverseList  head):
         pre = N..
         cur = head

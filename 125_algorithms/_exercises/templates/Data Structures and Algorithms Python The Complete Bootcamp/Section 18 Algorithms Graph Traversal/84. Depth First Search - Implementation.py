@@ -1,4 +1,4 @@
-class Node():
+c_ Node():
 
     ___  -   value):
         value = value
@@ -6,7 +6,7 @@ class Node():
         visited = False
 
 
-class Graph():
+c_ Graph():
 
     ___ DFS  node, traversal):
         node.visited = True

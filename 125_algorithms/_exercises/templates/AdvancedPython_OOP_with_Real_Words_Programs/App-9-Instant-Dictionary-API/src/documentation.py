@@ -1,9 +1,9 @@
-import justpy as jp
+_____ justpy as jp
 
 
-class Doc:
+c_ Doc:
 
-    def serve(self):
+    ___ serve _
         wp = jp.WebPage()
 
 
@@ -22,5 +22,5 @@ class Doc:
         "Deliberately show ones bare ass (usually to an audience, or at a place, where this is not expected or deemed appropriate).", 
         "To be lost in phantasies or be carried away by some internal vision, having temorarily lost (part of) contact to reality."]}
         """)
-        return wp
+        r_ wp
 

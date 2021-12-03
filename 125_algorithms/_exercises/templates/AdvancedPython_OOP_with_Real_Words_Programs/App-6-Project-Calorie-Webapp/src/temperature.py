@@ -1,7 +1,7 @@
-from selectorlib import Extractor
-import requests
+____ selectorlib _____ Extractor
+_____ requests
 
-class Temperature:
+c_ Temperature:
 
     """A scraper that uses an yml file to read the xpath of a value it needs to extract
     from the timeanddate.com/weather/ url"""
@@ -18,30 +18,30 @@ class Temperature:
     base_url = 'https://www.timeanddate.com/weather/'
     yml_path = 'temperature.yaml'
 
-    def __init__(self, country, city):
-        self.country = country.replace(" ", "-")
-        self.city = city.replace(" ", "-")
+    ___  -    country, city):
+        country = country.replace(" ", "-")
+        city = city.replace(" ", "-")
 
-    def _build_url(self):
+    ___ _build_url _
         """Builds the url string adding country and city"""
-        url = self.base_url + self.country + "/" + self.city
-        return url
+        url = base_url + country + "/" + city
+        r_ url
 
-    def _scrape(self):
+    ___ _scrape _
         """Extracts a value as instructed by the yml file and returns a dictionary"""
 
-        url = self._build_url()
-        extractor = Extractor.from_yaml_file(self.yml_path)
-        r = requests.get(url, headers=self.headers)
+        url = _build_url()
+        extractor = Extractor.from_yaml_file(yml_path)
+        r = requests.get(url, headers=headers)
         full_content = r.text
         raw_content = extractor.extract(full_content)
-        return raw_content
+        r_ raw_content
 
-    def get(self):
+    ___ get _
         """Cleans the output of _scrape"""
 
-        scraped_content = self._scrape()
-        return float(scraped_content['temp'].replace("°C", "").strip())
+        scraped_content = _scrape()
+        r_ f__(scraped_content['temp'].replace("°C", "").strip())
 
 if __name__ == "__main__":
     temperature = Temperature(country="usa", city="san francisco")

@@ -1,11 +1,11 @@
-class Node():
+c_ Node():
     ___  -   value):
         value = value
         left = N..
         right = N..
 
 
-class BinaryTree():
+c_ BinaryTree():
     ___  -   value):
         root = Node(value)
 

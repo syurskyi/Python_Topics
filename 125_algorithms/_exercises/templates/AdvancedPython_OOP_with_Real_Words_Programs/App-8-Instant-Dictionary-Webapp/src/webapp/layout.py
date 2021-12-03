@@ -1,9 +1,9 @@
-import justpy as jp
+_____ justpy as jp
 
-class DefaultLayout(jp.QLayout):
+c_ DefaultLayout(jp.QLayout):
 
-    def __init__(self, view="hHh lpR fFf", **kwargs):
-        super().__init__(view=view, **kwargs)
+    ___  -    view="hHh lpR fFf", **kwargs):
+        super(). - (view=view, **kwargs)
 
         header = jp.QHeader(a=self)
         toolbar = jp.QToolbar(a=header)
@@ -20,12 +20,12 @@ class DefaultLayout(jp.QLayout):
         jp.A(a=qlist, text="About", href="/about", classes=a_classes)
         jp.Br(a=qlist)
 
-        jp.QBtn(a=toolbar, dense=True, flat=True, round=True, icon="menu",
-                click=self.move_drawer, drawer=drawer)
+        jp.QBtn(a=toolbar, dense=True, flat=True, r__=True, icon="menu",
+                click=move_drawer, drawer=drawer)
         jp.QToolbarTitle(a=toolbar, text="Instant Dictionary")
 
     @staticmethod
-    def move_drawer(widget, msg):
+    ___ move_drawer(widget, msg):
         if widget.drawer.value:
             widget.drawer.value = False
         else:

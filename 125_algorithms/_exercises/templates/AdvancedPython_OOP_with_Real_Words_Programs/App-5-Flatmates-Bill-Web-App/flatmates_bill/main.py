@@ -1,14 +1,14 @@
-from flatmates_bill.flat import Bill, Flatmate
-from flatmates_bill.reports import PdfReport, FileSharer
+____ flatmates_bill.flat _____ Bill, Flatmate
+____ flatmates_bill.reports _____ PdfReport, FileSharer
 
-amount = float(input("Hey user, enter the bill amount: "))
-period = input("What is the bill period? E.g. December 2020: ")
+amount = f__(i__("Hey user, enter the bill amount: "))
+period = i__("What is the bill period? E.g. December 2020: ")
 
-name1 = input("What is your name? ")
-days_in_house1 = int(input(f"How many days did {name1} stay in the house during the bill period? "))
+name1 = i__("What is your name? ")
+days_in_house1 = int(i__(f"How many days did {name1} stay in the house during the bill period? "))
 
-name2 = input("What is the name of the other flatmate? ")
-days_in_house2 = int(input(f"How many days did {name2} stay in the house during the bill period? "))
+name2 = i__("What is the name of the other flatmate? ")
+days_in_house2 = int(i__(f"How many days did {name2} stay in the house during the bill period? "))
 
 
 the_bill = Bill(amount, period)

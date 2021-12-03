@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ detectCapitalUse  word):
         count = 0
         length = le.(word)

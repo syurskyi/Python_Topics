@@ -1,18 +1,18 @@
-from temperature import Temperature
+____ temperature _____ Temperature
 
 
-class Calorie:
+c_ Calorie:
     """Represents optimal calorie amount a person needs to take today"""
 
-    def __init__(self, weight, height, age, temperature):
-        self.weight = weight
-        self.height = height
-        self.age = age
-        self.temperature = temperature
+    ___  -    weight, height, age, temperature):
+        weight = weight
+        height = height
+        age = age
+        temperature = temperature
 
-    def calculate(self):
-        result = 10 * self.weight + 6.5 * self.height + 5 - self.temperature * 10
-        return result
+    ___ calculate _
+        result = 10 * weight + 6.5 * height + 5 - temperature * 10
+        r_ result
 
 
 if __name__ == "__main__":
