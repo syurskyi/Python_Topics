@@ -5,7 +5,7 @@ _____ ___ tick():
     print("Tick")
     _____ ____.s..(1)
     print("Tock")
-    return 'Tick-Tock'
+    r_ 'Tick-Tock'
 
 
 _____ ___ main():
@@ -20,7 +20,7 @@ _____ ___ main():
     print(f'{t1.get_name()}. Done = {t1.done()}')
     print(f'{t2.get_name()}. Done = {t2.done()}')
 
-    for x in results:
+    ___ x __ results:
         print(x)
 
 

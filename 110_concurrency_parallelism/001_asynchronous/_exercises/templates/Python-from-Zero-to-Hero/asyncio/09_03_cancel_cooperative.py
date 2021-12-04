@@ -5,23 +5,23 @@ ____ threading
 _____ ___ fetch_doc(doc):
     _____ ____.s..(3)  # emulating doc downloading
     print(f'{doc=}')
-    return doc
+    r_ doc
 
 
 _____ ___ get_docs(docs, token):
     pages = []
-    for cur_doc in docs:
-        if token.is_set():
+    ___ cur_doc __ docs:
+        __ token.is_set():
             break
         doc = _____ fetch_doc(cur_doc)
-        for page in doc:
+        ___ page __ doc:
             pages.append(page)
-    return pages
+    r_ pages
 
 
 ___ get_response(token):
     reply = input('Want to cancel or no? [y/n]')
-    if reply == 'y':
+    __ reply == 'y':
         token.set()
 
 
@@ -33,8 +33,8 @@ _____ ___ main():
     t.start()
 
     result = _____ task
-    for doc in result:
-        print(f'{doc}', end='')
+    ___ doc __ result:
+        print(f'{doc}', e.._'')
 
 
 __ _______ __ _______

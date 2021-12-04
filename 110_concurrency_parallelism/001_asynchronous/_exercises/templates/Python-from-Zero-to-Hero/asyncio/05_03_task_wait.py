@@ -13,9 +13,9 @@ services = (
 
 
 _____ ___ get_json(url):
-    _____ with aiohttp.ClientSession() as session:
-        _____ with session.get(url) as response:
-            return _____ response.json()
+    _____ w___ aiohttp.ClientSession() __ session:
+        _____ w___ session.get(url) __ response:
+            r_ _____ response.json()
 
 
 _____ ___ fetch_ip(service):
@@ -23,15 +23,15 @@ _____ ___ fetch_ip(service):
 
     json_response = _____ get_json(service.url)
     ip = json_response[service.ip_attr]
-    return f'{service.name} finished with result: {ip}'
+    r_ f'{service.name} finished with result: {ip}'
 
 
 _____ ___ main():
-    coros = [fetch_ip(service) for service in services]
+    coros = [fetch_ip(service) ___ service __ services]
 
     done, pending = _____ ____.wait(coros, return_when=FIRST_COMPLETED)
 
-    for x in done:
+    ___ x __ done:
         print(x.result())
 
 

@@ -4,12 +4,12 @@ ____ t___
 
 _____ ___ tick():
     _____ ____.s..(1)
-    return 'Tick'
+    r_ 'Tick'
 
 
 _____ ___ tock():
     _____ ____.s..(2)
-    return 'Tock'
+    r_ 'Tock'
 
 
 _____ ___ main():
@@ -20,7 +20,7 @@ _____ ___ main():
 
     # results = await asyncio.gather(t1, t2)
 
-    for i, t in enumerate(____.as_completed((t1, t2)), start=1):
+    ___ i, t __ e___(____.as_completed((t1, t2)), start=1):
         result = _____ t
         elapsed = t___.perf_counter() - start
         print(f'Executed {i} in {elapsed:0.2f} seconds')

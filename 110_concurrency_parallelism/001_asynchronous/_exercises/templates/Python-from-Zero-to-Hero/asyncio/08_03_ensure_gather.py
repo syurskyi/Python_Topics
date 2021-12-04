@@ -4,26 +4,26 @@ ____ t___
 ____ aiohttp
 
 
-class Photo:
-    ___ __init__(self, album_id, photo_id, title, url, thumbnail_url):
-        self.thumbnailUrl = thumbnail_url
-        self.url = url
-        self.title = title
-        self.photo_id = photo_id
-        self.albumId = album_id
+c_ Photo:
+    ___  -   album_id, photo_id, title, url, thumbnail_url):
+        thumbnailUrl = thumbnail_url
+        url = url
+        title = title
+        photo_id = photo_id
+        albumId = album_id
 
     @classmethod
     ___ from_json(cls, obj):
-        return Photo(obj['albumId'], obj['id'], obj['title'], obj['url'], obj['thumbnailUrl'])
+        r_ Photo(obj['albumId'], obj['id'], obj['title'], obj['url'], obj['thumbnailUrl'])
 
 
 ___ print_photo_titles(photos):
-    for photo in photos:
-        print(f'{photo.title}', end='\n')
+    ___ photo __ photos:
+        print(f'{photo.title}', e.._'\n')
 
 
 _____ ___ photos_by_album(task_name, album, session):
-    if not isinstance(album, int):
+    __ not isinstance(album, int):
         raise RuntimeError('invalid album number')
 
     print(f'{task_name=}')
@@ -32,23 +32,23 @@ _____ ___ photos_by_album(task_name, album, session):
     photos_json = _____ response.json()
 
     _____ ____.s..(1)
-    return [Photo.from_json(photo) for photo in photos_json]
+    r_ [Photo.from_json(photo) ___ photo __ photos_json]
 
 
 _____ ___ download_albums(albums):
     photos = []
-    _____ with aiohttp.ClientSession() as session:
-        for album in albums:
+    _____ w___ aiohttp.ClientSession() __ session:
+        ___ album __ albums:
             photos.extend(_____ photos_by_album(f't{album}', album, session))
-    return photos
+    r_ photos
 
 
 _____ ___ main1():
     task1 = ____.create_task(download_albums([1, 2, 'a', 4]))
 
-    try:
+    ___
         result = _____ task1
-    except Exception as ex:
+    _______ Exception __ ex:
         print(repr(ex))
 
     print('sleeping in main')
@@ -71,7 +71,7 @@ _____ ___ main2():
 
 
 _____ ___ main_gather():
-    _____ with aiohttp.ClientSession() as session:
+    _____ w___ aiohttp.ClientSession() __ session:
         tasks = [
             photos_by_album('t1', 1, session),
             photos_by_album('t2', 2, session),
@@ -81,8 +81,8 @@ _____ ___ main_gather():
 
         photos = []
         results = _____ ____.gather(*tasks, return_exceptions=True)
-        for res in results:
-            if isinstance(res, Exception):
+        ___ res __ results:
+            __ isinstance(res, Exception):
                 print(repr(res))
             else:
                 photos.extend(res)

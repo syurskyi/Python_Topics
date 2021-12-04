@@ -1,28 +1,28 @@
 ____ ____
 
 
-class AsyncIterator:
+c_ AsyncIterator:
 
-    ___ __init__(self, n):
-        self.i = 0
-        self.n = n
+    ___  -   n):
+        i = 0
+        n = n
 
     ___ __aiter__(self):
-        return self
+        r_ self
 
     _____ ___ __anext__(self):
-        print(f'start {self.i}')
+        print(f'start {i}')
         _____ ____.s..(1)
-        print(f'end {self.i}')
+        print(f'end {i}')
 
-        if self.i >= self.n:
+        __ i >= n:
             raise StopAsyncIteration
-        self.i += 1
-        return self.i
+        i += 1
+        r_ i
 
 
 _____ ___ main():
-    _____ for n in AsyncIterator(10):
+    _____ ___ n __ AsyncIterator(10):
         print(f'finally {n}')
 
 

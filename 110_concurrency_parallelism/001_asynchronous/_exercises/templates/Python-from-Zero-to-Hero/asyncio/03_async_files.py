@@ -4,17 +4,17 @@ ____ aiofiles
 
 
 ___ read_large_file():
-    with open('..\\data\\big_file.txt', 'r') as f:
-        return f.read()
+    w___ open('..\\data\\big_file.txt', 'r') __ f:
+        r_ f.read()
 
 
 _____ ___ async_read_large_file():
-    _____ with aiofiles.open('..\\data\\big_file.txt', 'r') as f:
-        return _____ f.read()
+    _____ w___ aiofiles.open('..\\data\\big_file.txt', 'r') __ f:
+        r_ _____ f.read()
 
 
 ___ count_words(text):
-    return len(text.split(' '))
+    r_ len(text.split(' '))
 
 
 _____ ___ async_main():
