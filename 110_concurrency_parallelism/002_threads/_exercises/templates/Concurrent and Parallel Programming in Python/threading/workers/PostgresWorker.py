@@ -1,58 +1,58 @@
-import os
-import threading
+_______ os
+_______ _______
 
-from queue import Empty
+from queue _______ Empty
 
-from sqlalchemy import create_engine
-from sqlalchemy.sql import text
+from sqlalchemy _______ create_engine
+from sqlalchemy.sql _______ text
 
 
-class PostgresMasterScheduler(threading.Thread):
-    def __init__(self, input_queue, **kwargs):
-        if 'output_queue' in kwargs:
+c_ PostgresMasterScheduler(_______.T...):
+    ___  -  input_queue, $$
+        __ 'output_queue' __ kwargs:
             kwargs.pop('output_queue')
-        super(PostgresMasterScheduler, self).__init__(**kwargs)
-        self._input_queue = input_queue
-        self.start()
+        s__(PostgresMasterScheduler,   - (**kwargs)
+        _input_queue = input_queue
+        start()
 
-    def run(self):
+    ___ run
         while True:
             try:
-                val = self._input_queue.get(timeout=10)
+                val = _input_queue.get(timeout=10)
             except Empty:
                 print('Timeout reached in postgres scheduler, stopping')
-                break
+                ______
 
-            if val == 'DONE':
-                break
+            __ val == 'DONE':
+                ______
 
             symbol, price, extracted_time = val
             postgresWorker = PostgresWorker(symbol, price, extracted_time)
             postgresWorker.insert_into_db()
 
 
-class PostgresWorker():
-    def __init__(self, symbol, price, extracted_time):
-        self._symbol = symbol
-        self._price = price
-        self._extracted_time = extracted_time
+c_ PostgresWorker():
+    ___  -  symbol, price, extracted_time):
+        _symbol = symbol
+        _price = price
+        _extracted_time = extracted_time
 
-        self._PG_USER = os.environ.get('PG_USER')
-        self._PG_PW = os.environ.get('PG_PW')
-        self._PG_HOST = os.environ.get('PG_HOST')
-        self._PG_DB = os.environ.get('PG_DB')
+        _PG_USER = os.environ.get('PG_USER')
+        _PG_PW = os.environ.get('PG_PW')
+        _PG_HOST = os.environ.get('PG_HOST')
+        _PG_DB = os.environ.get('PG_DB')
 
-        self._engine = create_engine(f'postgresql://{self._PG_USER}:{self._PG_PW}@{self._PG_HOST}/{self._PG_DB}')
+        _engine = create_engine(f'postgresql://{_PG_USER}:{_PG_PW}@{_PG_HOST}/{_PG_DB}')
 
-    def _create_insert_query(self):
+    ___ _create_insert_query
         SQL = """INSERT INTO prices (symbol, price, extracted_time) VALUES 
         (:symbol, :price, :extracted_time)"""
-        return SQL
+        r_ SQL
 
-    def insert_into_db(self):
-        insert_query = self._create_insert_query()
+    ___ insert_into_db
+        insert_query = _create_insert_query()
 
-        with self._engine.connect() as conn:
-            conn.execute(text(insert_query), {'symbol': self._symbol,
-                                              'price': self._price,
-                                              'extracted_time': str(self._extracted_time)})
+        with _engine.connect() as conn:
+            conn.execute(text(insert_query), {'symbol': _symbol,
+                                              'price': _price,
+                                              'extracted_time': str(_extracted_time)})

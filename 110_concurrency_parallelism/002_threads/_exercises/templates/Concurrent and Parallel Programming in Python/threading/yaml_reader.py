@@ -1,91 +1,91 @@
-import importlib
-import threading
-import time
+_______ importlib
+_______ _______
+_______ time
 
-import yaml
-from multiprocessing import Queue
+_______ yaml
+from multiprocessing _______ Queue
 
 
-class YamlPipelineExecutor(threading.Thread):
-    def __init__(self, pipeline_location):
-        super(YamlPipelineExecutor, self).__init__()
-        self._pipline_location = pipeline_location
-        self._queues = {}
-        self._workers = {}
-        self._queue_consumers = {}
-        self._downstream_queues = {}
+c_ YamlPipelineExecutor(_______.T...):
+    ___  -  pipeline_location):
+        s__(YamlPipelineExecutor,   - ()
+        _pipline_location = pipeline_location
+        _queues = {}
+        _workers = {}
+        _queue_consumers = {}
+        _downstream_queues = {}
 
-    def _load_pipeline(self):
-        with open(self._pipline_location, 'r') as inFile:
-            self._yaml_data = yaml.safe_load(inFile)
+    ___ _load_pipeline
+        with open(_pipline_location, 'r') as inFile:
+            _yaml_data = yaml.safe_load(inFile)
 
-    def _initialize_queues(self):
-        for queue in self._yaml_data['queues']:
+    ___ _initialize_queues
+        ___ queue __ _yaml_data['queues']:
             queue_name = queue['name']
-            self._queues[queue_name] = Queue()
+            _queues[queue_name] = Queue()
 
-    def _initialize_workers(self):
-        for worker in self._yaml_data['workers']:
+    ___ _initialize_workers
+        ___ worker __ _yaml_data['workers']:
             WorkerClass = getattr(importlib.import_module(worker['location']), worker['class'])
             input_queue = worker.get('input_queue')
             output_queues = worker.get('output_queues')
             worker_name = worker['name']
             num_instances = worker.get('instances', 1)
 
-            self._downstream_queues[worker_name] = output_queues
-            if input_queue is not None:
-                self._queue_consumers[input_queue] = num_instances
+            _downstream_queues[worker_name] = output_queues
+            __ input_queue is not None:
+                _queue_consumers[input_queue] = num_instances
             init_params = {
-                'input_queue': self._queues[input_queue] if input_queue is not None else None,
-                'output_queue': [self._queues[output_queue] for output_queue in output_queues] \
-                    if output_queues is not None else None
+                'input_queue': _queues[input_queue] __ input_queue is not None else None,
+                'output_queue': [_queues[o...] ___ output_queue __ output_queues] \
+                    __ output_queues is not None else None
             }
 
             input_values = worker.get('input_values')
-            if input_values is not None:
+            __ input_values is not None:
                 init_params['input_values'] = input_values
 
-            self._workers[worker_name] = []
-            for i in range(num_instances):
-                self._workers[worker_name].append(WorkerClass(**init_params))
+            _workers[worker_name] = []
+            ___ i __ range(num_instances):
+                _workers[worker_name].append(WorkerClass(**init_params))
 
-    def _join_workers(self):
-        for worker_name in self._workers:
-            for worker_thread in self._workers[worker_name]:
+    ___ _join_workers
+        ___ worker_name __ _workers:
+            ___ worker_thread __ _workers[worker_name]:
                 worker_thread.join()
 
-    def process_pipeline(self):
-        self._load_pipeline()
-        self._initialize_queues()
-        self._initialize_workers()
+    ___ process_pipeline
+        _load_pipeline()
+        _initialize_queues()
+        _initialize_workers()
         # self._join_workers()
 
-    def run(self):
-        self.process_pipeline()
+    ___ run
+        process_pipeline()
 
         while True:
             total_workers_alive = 0
             worker_stats = []
             to_del = []
-            for worker_name in self._workers:
+            ___ worker_name __ _workers:
                 total_worker_threads_alive = 0
-                for worker_thread in self._workers[worker_name]:
-                    if worker_thread.is_alive():
+                ___ worker_thread __ _workers[worker_name]:
+                    __ worker_thread.is_alive():
                         total_worker_threads_alive += 1
                 total_workers_alive += total_worker_threads_alive
-                if total_worker_threads_alive == 0:
-                    if self._downstream_queues[worker_name] is not None:
-                        for output_queue in self._downstream_queues[worker_name]:
-                            number_of_consumers = self._queue_consumers[output_queue]
-                            for i in range(number_of_consumers):
-                                self._queues[output_queue].put('DONE')
+                __ total_worker_threads_alive == 0:
+                    __ _downstream_queues[worker_name] is not None:
+                        ___ o... __ _downstream_queues[worker_name]:
+                            number_of_consumers = _queue_consumers[o...]
+                            ___ i __ range(number_of_consumers):
+                                _queues[o...].put('DONE')
 
                     to_del.append(worker_name)
 
                 worker_stats.append([worker_name, total_worker_threads_alive])
             print(worker_stats)
-            if total_workers_alive == 0:
-                break
+            __ total_workers_alive == 0:
+                ______
 
             # queue_stats = []
             # for queue in self._queues:
@@ -93,7 +93,7 @@ class YamlPipelineExecutor(threading.Thread):
             #
             # print(queue_stats)
 
-            for worker_name in to_del:
-                del self._workers[worker_name]
+            ___ worker_name __ to_del:
+                del _workers[worker_name]
 
             time.sleep(1)

@@ -1,12 +1,12 @@
-import time
-import os
+_______ time
+_______ os
 
-from yaml_reader import YamlPipelineExecutor
+from yaml_reader _______ YamlPipelineExecutor
 
 
-def main():
+___ main():
     pipeline_location = os.environ.get('PIPELINE_LOCATION')
-    if pipeline_location is None:
+    __ pipeline_location is None:
         print('Pipeline location not defined')
         exit(1)
     scraper_start_time = time.time()
@@ -17,5 +17,5 @@ def main():
     print('Extracting time took:', round(time.time() - scraper_start_time, 1))
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     main()

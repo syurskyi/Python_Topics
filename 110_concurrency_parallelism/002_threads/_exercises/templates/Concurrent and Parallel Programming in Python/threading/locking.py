@@ -1,31 +1,31 @@
-import threading
+_______ _______
 
 
 counter = 0
 
-lock = threading.Lock()
+lock = _______.Lock()
 
 # lock.acquire()
 # lock.release()
 
 
-def increment():
+___ increment():
     global counter
-    for i in range(10**6):
+    ___ i __ range(10**6):
         with lock:
             counter += 1
             # more locking
             # more locking
 
 threads = []
-for i in range(4):
-    x = threading.Thread(target=increment)
+___ i __ range(4):
+    x = _______.T...(target=increment)
     threads.append(x)
 
-for t in threads:
+___ t __ threads:
     t.start()
 
-for t in threads:
+___ t __ threads:
     t.join()
 
 print('Counter value:', counter)

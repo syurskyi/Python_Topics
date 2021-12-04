@@ -1,35 +1,35 @@
-import datetime
-import random
-import time
-from threading import Thread, RLock
-from typing import List
+_______ datetime
+_______ random
+_______ time
+from _______ _______ T..., RLock
+from typing _______ List
 
 
-class Account:
-    def __init__(self, balance=0):
-        self.balance = balance
-        self.lock = RLock()
+c_ Account:
+    ___  -  balance=0):
+        balance = balance
+        lock = RLock()
 
 
-def main():
+___ main():
     accounts = create_accounts()
-    total = sum(a.balance for a in accounts)
+    total = sum(a.balance ___ a __ accounts)
 
     validate_bank(accounts, total)
     print("Starting transfers...")
 
     jobs = [
-        Thread(target=do_bank_stuff, args=(accounts, total)),
-        Thread(target=do_bank_stuff, args=(accounts, total)),
-        Thread(target=do_bank_stuff, args=(accounts, total)),
-        Thread(target=do_bank_stuff, args=(accounts, total)),
-        Thread(target=do_bank_stuff, args=(accounts, total)),
+        T...(target=do_bank_stuff, args=(accounts, total)),
+        T...(target=do_bank_stuff, args=(accounts, total)),
+        T...(target=do_bank_stuff, args=(accounts, total)),
+        T...(target=do_bank_stuff, args=(accounts, total)),
+        T...(target=do_bank_stuff, args=(accounts, total)),
     ]
 
     t0 = datetime.datetime.now()
 
-    [j.start() for j in jobs]
-    [j.join() for j in jobs]
+    [j.start() ___ j __ jobs]
+    [j.join() ___ j __ jobs]
 
     dt = datetime.datetime.now() - t0
 
@@ -37,16 +37,16 @@ def main():
     validate_bank(accounts, total)
 
 
-def do_bank_stuff(accounts, total):
-    for _ in range(1, 10_000):
+___ do_bank_stuff(accounts, total):
+    ___ _ __ range(1, 10_000):
         a1, a2 = get_two_accounts(accounts)
         amount = random.randint(1, 100)
         do_transfer(a1, a2, amount)
         validate_bank(accounts, total, quiet=True)
 
 
-def create_accounts() -> List[Account]:
-    return [
+___ create_accounts() -> List[Account]:
+    r_ [
         Account(balance=5000),
         Account(balance=10000),
         Account(balance=7500),
@@ -56,13 +56,13 @@ def create_accounts() -> List[Account]:
     ]
 
 
-def do_transfer(from_account: Account, to_account: Account, amount: int):
-    if from_account.balance < amount:
-        return
+___ do_transfer(from_account: Account, to_account: Account, amount: int):
+    __ from_account.balance < amount:
+        r_
 
     lock1, lock2 = (
         (from_account.lock, to_account.lock)
-        if id(from_account) < id(to_account)
+        __ id(from_account) < id(to_account)
         else (to_account.lock, from_account.lock)
     )
 
@@ -76,10 +76,10 @@ def do_transfer(from_account: Account, to_account: Account, amount: int):
 transfer_lock = RLock()
 
 
-def do_transfer_global_style(
+___ do_transfer_global_style(
         from_account: Account, to_account: Account, amount: int):
-    if from_account.balance < amount:
-        return
+    __ from_account.balance < amount:
+        r_
 
     with transfer_lock:
         from_account.balance -= amount
@@ -87,15 +87,15 @@ def do_transfer_global_style(
         to_account.balance += amount
 
 
-def validate_bank(accounts: List[Account], total: int, quiet=False):
+___ validate_bank(accounts: List[Account], total: int, quiet=False):
     # with transfer_lock:
     #     current = sum(a.balance for a in accounts)
 
-    [a.lock.a.. for a in accounts]
-    current = sum(a.balance for a in accounts)
-    [a.lock.release() for a in accounts]
+    [a.lock.a.. ___ a __ accounts]
+    current = sum(a.balance ___ a __ accounts)
+    [a.lock.release() ___ a __ accounts]
 
-    if current != total:
+    __ current != total:
         print("ERROR: Inconsistent account balance: ${:,} vs ${:,}".format(
             current, total
         ), flush=True)
@@ -104,14 +104,14 @@ def validate_bank(accounts: List[Account], total: int, quiet=False):
             total), flush=True)
 
 
-def get_two_accounts(accounts):
+___ get_two_accounts(accounts):
     a1 = random.choice(accounts)
     a2 = a1
     while a2 == a1:
         a2 = random.choice(accounts)
 
-    return a1, a2
+    r_ a1, a2
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     main()

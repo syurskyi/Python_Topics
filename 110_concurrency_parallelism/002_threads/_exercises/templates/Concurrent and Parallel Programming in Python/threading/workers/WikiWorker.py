@@ -1,53 +1,53 @@
-import threading
-
-import requests
-from bs4 import BeautifulSoup
-
-
-class WikiWorkerMasterScheduler(threading.Thread):
-    def __init__(self, output_queue, **kwargs):
-        if 'input_queue' in kwargs:
-            kwargs.pop('input_queue')
-
-        self._input_values = kwargs.pop('input_values')
-
-        temp_queue = output_queue
-        if type(temp_queue) != list:
-            temp_queue = [temp_queue]
-        self._output_queues = temp_queue
-        super(WikiWorkerMasterScheduler, self).__init__(**kwargs)
-        self.start()
-
-    def run(self):
-        for entry in self._input_values:
-            wikiWorker = WikiWorker(entry)
-            symbol_counter = 0
-            for symbol in wikiWorker.get_sp_500_companies():
-                for output_queue in self._output_queues:
-                    output_queue.put(symbol)
-                symbol_counter += 1
-                if symbol_counter >= 5:
-                    break
-
-
-class WikiWorker():
-    def __init__(self, url):
-        self._url = url
-
-    @staticmethod
-    def _extract_company_symbols(page_html):
-        soup = BeautifulSoup(page_html, 'lxml')
-        table = soup.find(id='constituents')
-        table_rows = table.find_all('tr')
-        for table_row in table_rows[1:]:
-            symbol = table_row.find('td').text.strip('\n')
-            yield symbol
-
-    def get_sp_500_companies(self):
-        response = requests.get(self._url)
-        if response.status_code != 200:
-            print("Couldn't get entries")
-            return []
-
-        yield from self._extract_company_symbols(response.text)
-
+# _______ _______
+#
+# _______ r..
+# from bs4 _______ B...
+#
+#
+# c_ WikiWorkerMasterScheduler _______.T...
+#     ___  -  output_queue $$
+#         __ 'input_queue' __ $$
+#             ?.p.. 'input_queue'
+#
+#         _input_values = k__.p.. 'input_values'
+#
+#         temp_queue = o..
+#         __ ty.. ? != list
+#             t.. = t..
+#         _o.. = t..
+#         s__ ?   - $$
+#         s..
+#
+#     ___ run
+#         ___ entry __ _i..
+#             wikiWorker = WikiWorker ?
+#             symbol_counter = 0
+#             ___ symbol __ ?.g..
+#                 ___ o... __ _o..
+#                     o....p.. ?
+#                 s.. += 1
+#                 __ s.. >= 5
+#                     ______
+#
+#
+# c_ WikiWorker
+#     ___  -  url
+#         _? = ?
+#
+#     $s..
+#     ___ _extract_company_symbols page_html
+#         soup = B... p.. 'lxml'
+#         table = ?.f.. id='constituents'
+#         table_rows = ?.f.. 'tr'
+#         ___ table_row __ ? 1|
+#             symbol = ?.f.. 'td' .t__.s... '\n'
+#             _____ ?
+#
+#     ___ get_sp_500_companies
+#         response = r...get(_url)
+#         __ ?.s.. != 200
+#             print("Couldn't get entries")
+#             r_   # list
+#
+#         _____ f.. _extract_company_symbols r__.t..
+#
