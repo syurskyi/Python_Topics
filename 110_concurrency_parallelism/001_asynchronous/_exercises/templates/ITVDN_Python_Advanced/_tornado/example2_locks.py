@@ -1,39 +1,39 @@
-from tornado import gen
-from tornado.ioloop import IOLoop
-from tornado.locks import Event
+from tornado ? gen
+from tornado.ioloop ? IOLoop
+from tornado.locks ? Event
 
 event = Event()
 
 
-async def consumer():
+______ ___ consumer():
     print('Waiting for product')
 
-    await event.wait()
+    _____ event.wait()
     print('Product was found')
     event.clear()
 
-    await event.wait()
+    _____ event.wait()
     print('Product was found twice')
 
-    return 1
+    r_ 1
 
 
-async def producer():
+______ ___ producer():
     print("About to set the event")
 
-    await gen.sleep(5)
+    _____ gen.sleep(5)
     print('Set Event')
     event.set()
 
-    await gen.sleep(5)
+    _____ gen.sleep(5)
     print('Set Event')
     event.set()
 
-    return 2
+    r_ 2
 
 
-async def runner():
-    results = await gen.multi([
+______ ___ runner():
+    results = _____ gen.multi([
         producer(),
         consumer()
     ])

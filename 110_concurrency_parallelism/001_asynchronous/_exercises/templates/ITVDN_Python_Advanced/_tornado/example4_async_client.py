@@ -1,64 +1,64 @@
-from tornado import gen
-from tornado.httpclient import AsyncHTTPClient
-from tornado.ioloop import IOLoop
+from tornado ? gen
+from tornado.httpclient ? AsyncHTTPClient
+from tornado.ioloop ? IOLoop
 
 
 @gen.coroutine
-def fetch1(url):
+___ fetch1(url):
     http_client = AsyncHTTPClient()
     response = yield http_client.fetch(url)
-    return response.body
+    r_ response.body
 
 
-async def fetch2(url):
+______ ___ fetch2(url):
     http_client = AsyncHTTPClient()
-    response = await http_client.fetch(url)
-    return response.body
+    response = _____ http_client.fetch(url)
+    r_ response.body
 
 
 @gen.coroutine
-def fetch3(url):
+___ fetch3(url):
     http_client = AsyncHTTPClient()
     fetch_future = http_client.fetch(url)
     future = gen.Future()
 
-    def callback(f):
+    ___ callback(f):
         result = f.result().body
         print('Done: ', future.done())
         future.set_result(result)
         print('Done: ', future.done())
 
     fetch_future.add_done_callback(callback)
-    return (
+    r_ (
         yield future
     )
 
 
 @gen.coroutine
-def fetch4(url):
+___ fetch4(url):
     http_client = AsyncHTTPClient()
     responses = [
         http_client.fetch(url),
         http_client.fetch(url)
     ]
     results = []
-    for i in (yield responses):
+    ___ i __ (yield responses):
         print('-', i.body)
-        results.append(i.body)
-    return results
+        results.a..(i.body)
+    r_ results
 
 
 @gen.coroutine
-def run_tasks():
-    tasks = [
+___ run_t__ks():
+    t__ks = [
         fetch1('http://example.com'),
         fetch2('http://example.com'),
         fetch3('http://example.com'),
         fetch4('http://example.com'),
     ]
-    for r in (yield gen.multi(tasks)):
+    ___ r __ (yield gen.multi(t__ks)):
         print(r)
     print('done')
 
 
-IOLoop.current().run_sync(run_tasks)
+IOLoop.current().run_sync(run_t__ks)

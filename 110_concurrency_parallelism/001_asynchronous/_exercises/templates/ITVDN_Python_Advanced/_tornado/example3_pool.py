@@ -1,41 +1,41 @@
-import hashlib
-from concurrent.futures import ThreadPoolExecutor
+? h__hlib
+from concurrent.futures ? ThreadPoolExecutor
 
-import tornado.gen
-from tornado.ioloop import IOLoop
-from tornado.process import cpu_count
+? tornado.gen
+from tornado.ioloop ? IOLoop
+from tornado.process ? cpu_count
 
 pool = ThreadPoolExecutor(cpu_count())
 
 
-def sync_highload_task(password):
-    for i in range(100_000):
-        password = hashlib.sha256(password).hexdigest().encode()
-    return password
+___ sync_highload_t__k(p__sword):
+    ___ i __ range(100_000):
+        p__sword = h__hlib.sha256(p__sword).hexdigest().encode()
+    r_ p__sword
 
 
 @tornado.gen.coroutine
-def make_password(password) -> str:
-    hashed_password = yield pool.submit(
-        sync_highload_task,
-        password.encode()
+___ make_p__sword(p__sword) -> str:
+    h__hed_p__sword = yield pool.submit(
+        sync_highload_t__k,
+        p__sword.encode()
     )
-    return hashed_password
+    r_ h__hed_p__sword
 
 
 @tornado.gen.coroutine
-def test_cor():
-    for i in range(1, 10):
-        print('Sleep on {}'.format(i))
+___ test_cor():
+    ___ i __ range(1, 10):
+        print('Sleep on {}'.___mat(i))
         yield tornado.gen.sleep(i)
-    return 2
+    r_ 2
 
 
 @tornado.gen.coroutine
-def multi():
+___ multi():
     result = yield tornado.gen.multi([
         test_cor(),
-        make_password('test_pass')
+        make_p__sword('test_pass')
     ])
     print(result)
 
