@@ -1,32 +1,32 @@
 x = 'abc'
 
-import asyncio
-import time
+____ ____
+____ t___
 
-from multithreading.decorators import measure_time, async_measure_time
+_____ m__.d.. ____ m.., a..
 
 
-async def tick():
+_____ ___ tick():
     print('Tick')
-    await asyncio.sleep(1)
+    _____ ____.s..(1)
     print('Tock')
 
-    loop = asyncio.get_running_loop()
+    loop = ____.get_running_loop()
     if loop.is_running():
         print('loop is still running')
 
 
-async def main():
-    awaitable_obj = asyncio.gather(tick(), tick(), tick())
+_____ ___ main():
+    awaitable_obj = ____.gather(tick(), tick(), tick())
 
-    for task in asyncio.all_tasks():
+    for task in ____.all_tasks():
         print(task, end='\n')
 
-    await awaitable_obj
+    _____ awaitable_obj
 
 
-if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
+__ _______ __ _______
+    loop = ____.get_event_loop()
     try:
         loop.create_task(main())
         loop.run_forever()

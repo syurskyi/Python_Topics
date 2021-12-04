@@ -1,41 +1,41 @@
-import asyncio
-import threading
+____ ____
+____ threading
 
 
-async def fetch_doc(doc):
-    await asyncio.sleep(3)  # emulating doc downloading
+_____ ___ fetch_doc(doc):
+    _____ ____.s..(3)  # emulating doc downloading
     print(f'{doc=}')
     return doc
 
 
-async def get_docs(docs, token):
+_____ ___ get_docs(docs, token):
     pages = []
     for cur_doc in docs:
         if token.is_set():
             break
-        doc = await fetch_doc(cur_doc)
+        doc = _____ fetch_doc(cur_doc)
         for page in doc:
             pages.append(page)
     return pages
 
 
-def get_response(token):
+___ get_response(token):
     reply = input('Want to cancel or no? [y/n]')
     if reply == 'y':
         token.set()
 
 
-async def main():
+_____ ___ main():
     token = threading.Event()
-    task = asyncio.create_task(get_docs(['doc1', 'doc2', 'doc3'], token))
+    task = ____.create_task(get_docs(['doc1', 'doc2', 'doc3'], token))
 
     t = threading.Thread(target=get_response, args=(token,))
     t.start()
 
-    result = await task
+    result = _____ task
     for doc in result:
         print(f'{doc}', end='')
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())

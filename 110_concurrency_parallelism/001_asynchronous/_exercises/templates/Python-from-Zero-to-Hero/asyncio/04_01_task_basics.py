@@ -1,21 +1,21 @@
-import asyncio
+____ ____
 
 
-async def tick():
+_____ ___ tick():
     print("Tick")
-    await asyncio.sleep(1)
+    _____ ____.s..(1)
     print("Tock")
     return 'Tick-Tock'
 
 
-async def main():
-    t1 = asyncio.create_task(tick(), name='tick1')
-    t2 = asyncio.ensure_future(tick())
+_____ ___ main():
+    t1 = ____.create_task(tick(), name='tick1')
+    t2 = ____.ensure_future(tick())
 
     # await t1
     # await t2
 
-    results = await asyncio.gather(t1, t2)
+    results = _____ ____.gather(t1, t2)
 
     print(f'{t1.get_name()}. Done = {t1.done()}')
     print(f'{t2.get_name()}. Done = {t2.done()}')
@@ -24,5 +24,5 @@ async def main():
         print(x)
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())

@@ -1,28 +1,28 @@
-import asyncio
+____ ____
 
-import aiohttp
-import requests
-import time
+____ aiohttp
+____ requests
+____ t___
 
-from multithreading.decorators import async_measure_time
+_____ m__.d.. ____ a..
 
 
-async def download_site(url, session):
-    async with session.get(url) as response:
+_____ ___ download_site(url, session):
+    _____ with session.get(url) as response:
         print(f"Read {response.content.total_bytes} from {url}")
 
 
-@async_measure_time
-async def download_all_sites(sites):
-    async with aiohttp.ClientSession() as session:
+@a..
+_____ ___ download_all_sites(sites):
+    _____ with aiohttp.ClientSession() as session:
         tasks = []
         for url in sites:
-            task = asyncio.create_task(download_site(url, session))
+            task = ____.create_task(download_site(url, session))
             tasks.append(task)
 
         try:
             print('before await')
-            await asyncio.gather(*tasks, return_exceptions=True)
+            _____ ____.gather(*tasks, return_exceptions=True)
         except Exception as ex:
             print(repr(ex))
 
@@ -33,5 +33,5 @@ if __name__ == "__main__":
                 "https://enterprisecraftsmanship.com/",
             ] * 80
 
-    asyncio.run(download_all_sites(sites))
+    ____.run(download_all_sites(sites))
 

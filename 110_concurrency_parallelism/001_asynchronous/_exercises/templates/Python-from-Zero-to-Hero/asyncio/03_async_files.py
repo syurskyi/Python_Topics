@@ -1,32 +1,32 @@
-import asyncio
+____ ____
 
-import aiofiles
+____ aiofiles
 
 
-def read_large_file():
+___ read_large_file():
     with open('..\\data\\big_file.txt', 'r') as f:
         return f.read()
 
 
-async def async_read_large_file():
-    async with aiofiles.open('..\\data\\big_file.txt', 'r') as f:
-        return await f.read()
+_____ ___ async_read_large_file():
+    _____ with aiofiles.open('..\\data\\big_file.txt', 'r') as f:
+        return _____ f.read()
 
 
-def count_words(text):
+___ count_words(text):
     return len(text.split(' '))
 
 
-async def async_main():
-    text = await async_read_large_file()
+_____ ___ async_main():
+    text = _____ async_read_large_file()
     print(count_words(text))
 
 
-def main():
+___ main():
     text = read_large_file()
     print(count_words(text))
 
 
-if __name__ == '__main__':
-    asyncio.run(async_main())
+__ _______ __ _______
+    ____.run(async_main())
     main()

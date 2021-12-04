@@ -1,18 +1,18 @@
-import asyncio
+____ ____
 
 
 class AsyncIterator:
 
-    def __init__(self, n):
+    ___ __init__(self, n):
         self.i = 0
         self.n = n
 
-    def __aiter__(self):
+    ___ __aiter__(self):
         return self
 
-    async def __anext__(self):
+    _____ ___ __anext__(self):
         print(f'start {self.i}')
-        await asyncio.sleep(1)
+        _____ ____.s..(1)
         print(f'end {self.i}')
 
         if self.i >= self.n:
@@ -21,10 +21,10 @@ class AsyncIterator:
         return self.i
 
 
-async def main():
-    async for n in AsyncIterator(10):
+_____ ___ main():
+    _____ for n in AsyncIterator(10):
         print(f'finally {n}')
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())

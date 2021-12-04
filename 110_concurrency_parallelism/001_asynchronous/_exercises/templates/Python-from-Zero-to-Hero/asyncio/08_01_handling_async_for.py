@@ -1,11 +1,11 @@
-import asyncio
-import time
+____ ____
+____ t___
 
-import aiohttp
+____ aiohttp
 
 
 class Photo:
-    def __init__(self, album_id, photo_id, title, url, thumbnail_url):
+    ___ __init__(self, album_id, photo_id, title, url, thumbnail_url):
         self.thumbnailUrl = thumbnail_url
         self.url = url
         self.title = title
@@ -13,43 +13,43 @@ class Photo:
         self.albumId = album_id
 
     @classmethod
-    def from_json(cls, obj):
+    ___ from_json(cls, obj):
         return Photo(obj['albumId'], obj['id'], obj['title'], obj['url'], obj['thumbnailUrl'])
 
 
-def print_photo_titles(photos):
+___ print_photo_titles(photos):
     for photo in photos:
         print(f'{photo.title}', end='\n')
 
 
-async def photos_by_album(task_name, album, session):
+_____ ___ photos_by_album(task_name, album, session):
     print(f'{task_name=}')
     url = f'https://jsonplaceholder.typicode.com/albums/{album}/photos/'
-    response = await session.get(url)
-    photos_json = await response.json()
+    response = _____ session.get(url)
+    photos_json = _____ response.json()
 
-    await asyncio.sleep(1)
+    _____ ____.s..(1)
     return [Photo.from_json(photo) for photo in photos_json]
 
 
-async def download_albums(albums):
-    async with aiohttp.ClientSession() as session:
+_____ ___ download_albums(albums):
+    _____ with aiohttp.ClientSession() as session:
         for album in albums:
             if not isinstance(album, int):
                 raise RuntimeError('invalid album number')
-            yield await photos_by_album(f't{album}', album, session)
+            yield _____ photos_by_album(f't{album}', album, session)
 
 
-async def main():
+_____ ___ main():
     try:
-        async for photos in download_albums([1, 2, 'a', 4]):
+        _____ for photos in download_albums([1, 2, 'a', 4]):
             print_photo_titles(photos)
     except Exception as ex:
         print(repr(ex))
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())
 
-    time.sleep(3)
+    t___.s..(3)
     print('main ended')

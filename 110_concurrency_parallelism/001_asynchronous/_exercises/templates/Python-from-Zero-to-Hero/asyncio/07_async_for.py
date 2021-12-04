@@ -1,23 +1,23 @@
-import asyncio
+____ ____
 
 
-async def fetch_doc(doc):
-    await asyncio.sleep(1)  # emulating doc downloading
+_____ ___ fetch_doc(doc):
+    _____ ____.s..(1)  # emulating doc downloading
     return doc
 
 
-async def get_pages(docs):
+_____ ___ get_pages(docs):
     for cur_doc in docs:
-        doc = await fetch_doc(cur_doc)
+        doc = _____ fetch_doc(cur_doc)
         for page in doc:
-            await asyncio.sleep(1)
+            _____ ____.s..(1)
             yield page
 
 
-async def main():
-    async for page in get_pages(['doc1', 'doc2']):
+_____ ___ main():
+    _____ for page in get_pages(['doc1', 'doc2']):
         print(f'finally {page}')
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())

@@ -1,29 +1,29 @@
-import asyncio
-import threading
-import time
+____ ____
+____ threading
+____ t___
 
 
 class Terminal:
 
-    async def start(self):
-        loop = asyncio.get_running_loop()
+    _____ ___ start(self):
+        loop = ____.get_running_loop()
         future = loop.create_future()
 
         t = threading.Thread(target=self.run_cmd, args=(loop, future,))
         t.start()
 
-        return await future
+        return _____ future
 
-    def run_cmd(self, loop, future):
-        time.sleep(3)
+    ___ run_cmd(self, loop, future):
+        t___.s..(3)
         loop.call_soon_threadsafe(future.set_result, 1)
 
 
-async def main():
+_____ ___ main():
     t = Terminal()
-    result = await t.start()
+    result = _____ t.start()
     print(result)
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+__ _______ __ _______
+    ____.run(main())
