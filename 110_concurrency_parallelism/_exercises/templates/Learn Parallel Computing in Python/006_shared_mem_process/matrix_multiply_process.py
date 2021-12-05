@@ -2,7 +2,7 @@ ______ _
 ______ t___
 ____ random ______ Random
 
-____ _ ______ Barrier
+____ _ ______ B...
 
 ____ _.context ______ P..
 
@@ -29,8 +29,8 @@ ___ work_out_row(id, matrix_a, matrix_b, result, work_start, work_complete):
 
 __ _____ __ _____
     _.set_start_method('spawn')
-    work_start = Barrier(process_count + 1)
-    work_complete = Barrier(process_count + 1)
+    work_start = B...(process_count + 1)
+    work_complete = B...(process_count + 1)
     matrix_a = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)
     matrix_b = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)
     result = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)

@@ -1,15 +1,15 @@
 ______ t___
 ____ random ______ Random
 
-____ _ ______ Barrier, T..
+____ _ ______ B..., T..
 
 matrix_size = 200
 matrix_a = [[0] * matrix_size ___ a __ r...(matrix_size)]
 matrix_b = [[0] * matrix_size ___ b __ r...(matrix_size)]
 result = [[0] * matrix_size ___ r __ r...(matrix_size)]
 random = Random()
-work_start = Barrier(matrix_size + 1)
-work_complete = Barrier(matrix_size + 1)
+work_start = B...(matrix_size + 1)
+work_complete = B...(matrix_size + 1)
 
 ___ generate_random_matrix(matrix):
     ___ row __ r...(matrix_size):
