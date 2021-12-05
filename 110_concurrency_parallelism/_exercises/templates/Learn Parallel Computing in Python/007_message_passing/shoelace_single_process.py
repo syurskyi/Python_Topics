@@ -1,5 +1,5 @@
 ______ re
-______ time
+______ t___
 # (45,11),(41,15),(36,20)
 
 PTS_REGEX = "\((\d*),(\d*)\)"
@@ -20,8 +20,8 @@ ___ find_area(points_str):
 
 f = open("polygons.txt", "r")
 lines = f.read().splitlines()
-start = time.time()
+start = t___.t___()
 ___ line __ lines:
     find_area(line)
-end = time.time()
+end = t___.t___()
 print("Time taken", end - start)

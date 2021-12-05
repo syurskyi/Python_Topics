@@ -1,6 +1,6 @@
 ______ random
 
-______ time
+______ t___
 
 
 ___ move_train(train, distance, crossings):
@@ -14,4 +14,4 @@ ___ move_train(train, distance, crossings):
             if back == crossing.position:
                 crossing.intersection.locked_by = -1
                 crossing.intersection.mutex.release()
-        time.sleep(0.01)
+        t___.s..(0.01)

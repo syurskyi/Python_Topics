@@ -1,6 +1,6 @@
-______ time
-from urllib.request ______ Request, URLError, urljoin, urlopen
-from concurrent.futures ______ ThreadPoolExecutor, as_completed
+______ t___
+____ urllib.request ______ Request, URLError, urljoin, urlopen
+____ concurrent.futures ______ ThreadPoolExecutor, as_completed
 
 URLS = [
   'http://localhost:1313',

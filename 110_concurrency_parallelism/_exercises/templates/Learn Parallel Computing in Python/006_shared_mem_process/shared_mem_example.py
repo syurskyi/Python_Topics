@@ -1,13 +1,13 @@
 ______ _
-from _.context ______ P..
+____ _.context ______ P..
 
-______ time
+______ t___
 
 
 ___ print_array_contents(array):
     while True:
         print(*array, sep = ", ")
-        time.sleep(1)
+        t___.s..(1)
 
 
 __ _____ __ _____
@@ -15,8 +15,8 @@ __ _____ __ _____
 #    arr = [1] * 10
     arr = _.Array('i', [-1] * 10) # lock=true
     p = P..(t.._print_array_contents, a.._([arr]))
-    p.start()
+    p.s..
     ___ j __ r...(10):
-        time.sleep(2)
+        t___.s..(2)
         ___ i __ r...(10):
             arr[i] = j

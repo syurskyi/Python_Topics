@@ -1,14 +1,14 @@
-from queue ______ Queue
-from threading ______ Thread
+____ queue ______ Queue
+____ _ ______ T..
 
-______ time
+______ t___
 
 
 ___ consumer(q):
     while (True):
         txt = q.get()
         print(txt)
-        time.sleep(1)
+        t___.s..(1)
 
 
 ___ producer(q):
@@ -18,7 +18,7 @@ ___ producer(q):
 
 
 q = Queue(maxsize=10)
-t1 = Thread(t.._consumer, a.._(q,))
-t2 = Thread(t.._producer, a.._(q,))
-t1.start()
-t2.start()
+t1 = T..(t.._consumer, a.._(q,))
+t2 = T..(t.._producer, a.._(q,))
+t1.s..
+t2.s..

@@ -1,4 +1,4 @@
-from graphics ______ *
+____ graphics ______ *
 
 
 class TrainAnim:

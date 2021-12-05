@@ -1,16 +1,16 @@
-from urllib.request ______ Request, urlopen, urljoin, URLError
-from urllib.parse ______ urlparse
-______ time
-______ threading
+____ urllib.request ______ Request, urlopen, urljoin, URLError
+____ urllib.parse ______ urlparse
+______ t___
+______ _
 ______ queue
-from bs4 ______ BeautifulSoup
+____ bs4 ______ BeautifulSoup
 ______ ssl
 
-class Crawler(threading.Thread):
+class Crawler(_.T..):
 
   ___ __init__(self, baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
-    threading.Thread.__init__(self);
-    print("Web Crawler Worker Started: {}".format(threading.current_thread()))
+    _.T...__init__(self);
+    print("Web Crawler Worker Started: {}".format(_.current_thread()))
     self.linksToCrawl = linksToCrawl
     self.haveVisited = haveVisited
     self.baseUrl = baseUrl
@@ -71,7 +71,7 @@ ___ main
   numberOfThreads = input("No Threads > ")
 
   linksToCrawl = queue.Queue()
-  urlLock = threading.Lock()
+  urlLock = _.Lock()
   linksToCrawl.put(baseUrl)
   haveVisited = []
   crawlers = []
@@ -79,7 +79,7 @@ ___ main
 
   ___ i __ r...(int(numberOfThreads)):
     crawler = Crawler(baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock)
-    crawler.start()
+    crawler.s..
     crawlers.append(crawler)
 
   ___ crawler __ crawlers:

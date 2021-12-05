@@ -1,5 +1,5 @@
-from threading ______ Thread, Lock
-______ time
+____ _ ______ T.., Lock
+______ t___
 
 
 ___ red_robot(lock1, lock2):
@@ -12,7 +12,7 @@ ___ red_robot(lock1, lock2):
         lock1.release()
         lock2.release()
         print("Red: Locks released")
-        time.sleep(0.5)
+        t___.s..(0.5)
 
 ___ blue_robot(lock1, lock2):
     while True:
@@ -24,15 +24,15 @@ ___ blue_robot(lock1, lock2):
         lock1.release()
         lock2.release()
         print("Blue: Locks released")
-        time.sleep(0.5)
+        t___.s..(0.5)
 
 
 mutex1 = Lock()
 mutex2 = Lock()
-red = Thread(t.._red_robot, a.._(mutex1, mutex2))
-blue = Thread(t.._blue_robot, a.._(mutex1, mutex2))
-red.start()
-blue.start()
+red = T..(t.._red_robot, a.._(mutex1, mutex2))
+blue = T..(t.._blue_robot, a.._(mutex1, mutex2))
+red.s..
+blue.s..
 
 
 

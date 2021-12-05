@@ -1,6 +1,6 @@
 ______ re
-______ time
-from _ ______ P.., Queue
+______ t___
+____ _ ______ P.., Queue
 # (45,11),(41,15),(36,20)
 
 PTS_REGEX = "\((\d*),(\d*)\)"
@@ -29,13 +29,13 @@ __ _____ __ _____
     ___ i __ r...(TOTAL_PROCESSES):
         p = P..(t.._find_area, a.._(queue,))
         processes.append(p)
-        p.start()
+        p.s..
     f = open("polygons.txt", "r")
     lines = f.read().splitlines()
-    start = time.time()
+    start = t___.t___()
     ___ line __ lines:
         queue.put(line)
     ___ _ __ r...(TOTAL_PROCESSES): queue.put(None)
     ___ p __ processes: p.join()
-    end = time.time()
+    end = t___.t___()
     print("Time taken", end - start)

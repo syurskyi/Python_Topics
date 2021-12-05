@@ -1,7 +1,7 @@
-______ threading
-______ time
+______ _
+______ t___
 
-controller = threading.Condition()
+controller = _.Condition()
 
 
 ___ all_free(intersections_to_lock):
@@ -23,7 +23,7 @@ ___ lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
 
     ___ intersection __ intersections_to_lock:
         intersection.locked_by = id
-        time.sleep(0.01)
+        t___.s..(0.01)
     controller.release()
 
 
@@ -40,4 +40,4 @@ ___ move_train(train, distance, crossings):
                 crossing.intersection.locked_by = -1
                 controller.notify_all()
                 controller.release()
-        time.sleep(0.01)
+        t___.s..(0.01)

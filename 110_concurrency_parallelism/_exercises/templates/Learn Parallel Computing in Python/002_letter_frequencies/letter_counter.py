@@ -1,7 +1,7 @@
 ______ json
 ______ urllib.request
-______ time
-from threading ______ Thread, Lock
+______ t___
+____ _ ______ T.., Lock
 
 finished_count = 0
 
@@ -24,16 +24,16 @@ ___ main
     mutex = Lock()
     ___ c __ "abcdefghijklmnopqrstuvwxyz":
         frequency[c] = 0
-    start = time.time()
+    start = t___.t___()
     ___ i __ r...(1000, 1020):
-        Thread(t.._count_letters, a.._(f"https://www.rfc-editor.org/rfc/rfc{i}.txt", frequency, mutex)).start()
+        T..(t.._count_letters, a.._(f"https://www.rfc-editor.org/rfc/rfc{i}.txt", frequency, mutex)).s..
     while True:
         mutex.acquire()
         if finished_count == 20:
             break
         mutex.release()
-        time.sleep(0.5)
-    end = time.time()
+        t___.s..(0.5)
+    end = t___.t___()
     print(json.dumps(frequency, indent=4))
     print("Done, time taken", end - start)
 

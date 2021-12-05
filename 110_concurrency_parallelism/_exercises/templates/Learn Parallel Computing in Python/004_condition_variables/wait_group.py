@@ -1,4 +1,4 @@
-from threading ______ Condition
+____ _ ______ Condition
 
 
 class WaitGroup:

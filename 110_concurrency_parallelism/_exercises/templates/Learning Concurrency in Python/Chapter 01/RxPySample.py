@@ -1,5 +1,5 @@
 ______ rx
-from rx ______ Observable, Observer
+____ rx ______ Observable, Observer
 
 # Here we define our custom observer which
 # contains an on_next method, an on_error method

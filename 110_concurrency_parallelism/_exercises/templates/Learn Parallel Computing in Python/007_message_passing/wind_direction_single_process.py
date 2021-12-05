@@ -1,8 +1,8 @@
 ______ os
 ______ re
-from os.path ______ join
+____ os.path ______ join
 
-______ time
+______ t___
 
 WIND_REGEX = "\d* METAR.*EGLL \d*Z [A-Z ]*(\d{5}KT|VRB\d{2}KT).*="
 WIND_EX_REGEX = "(\d{5}KT|VRB\d{2}KT)"
@@ -53,13 +53,13 @@ ___ mine_wind_distribution(winds, wind_dist):
 __ _____ __ _____
     path_with_files = "../metarfiles"
     wind_dist = [0] * 8
-    start = time.time()
+    start = t___.t___()
     ___ file __ os.listdir(path_with_files):
         f = open(join(path_with_files, file), "r")
         text = f.read()
         metars = parse_to_array(text)
         winds = extract_wind_direction(metars)
         wind_dist = mine_wind_distribution(winds, wind_dist)
-    end = time.time()
+    end = t___.t___()
     print(wind_dist)
     print("Time taken", end - start)

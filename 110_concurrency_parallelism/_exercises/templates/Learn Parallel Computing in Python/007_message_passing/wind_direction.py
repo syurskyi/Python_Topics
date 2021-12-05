@@ -1,10 +1,10 @@
 ______ os
 ______ re
-from _ ______ Pipe
-from os.path ______ join
+____ _ ______ Pipe
+____ os.path ______ join
 
-______ time
-from _.context ______ P..
+______ t___
+____ _.context ______ P..
 
 WIND_REGEX = "\d* METAR.*EGLL \d*Z [A-Z ]*(\d{5}KT|VRB\d{2}KT).*="
 WIND_EX_REGEX = "(\d{5}KT|VRB\d{2}KT)"
@@ -69,17 +69,17 @@ __ _____ __ _____
     metars_conn_a, metars_conn_b = Pipe()
     winds_conn_a, winds_conn_b = Pipe()
     winds_dist_conn_a, winds_dist_conn_b = Pipe()
-    P..(t.._parse_to_array, a.._(text_conn_b, metars_conn_a)).start()
-    P..(t.._extract_wind_direction, a.._(metars_conn_b, winds_conn_a)).start()
-    P..(t.._mine_wind_distribution, a.._(winds_conn_b, winds_dist_conn_a)).start()
+    P..(t.._parse_to_array, a.._(text_conn_b, metars_conn_a)).s..
+    P..(t.._extract_wind_direction, a.._(metars_conn_b, winds_conn_a)).s..
+    P..(t.._mine_wind_distribution, a.._(winds_conn_b, winds_dist_conn_a)).s..
     path_with_files = "../metarfiles"
-    start = time.time()
+    start = t___.t___()
     ___ file __ os.listdir(path_with_files):
         f = open(join(path_with_files, file), "r")
         text = f.read()
         text_conn_a.send(text)
     text_conn_a.send(None)
     wind_dist = winds_dist_conn_b.recv()
-    end = time.time()
+    end = t___.t___()
     print(wind_dist)
     print("Time taken", end - start)

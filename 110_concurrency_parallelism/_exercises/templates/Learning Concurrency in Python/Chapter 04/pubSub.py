@@ -2,12 +2,12 @@ ______ th..
 ______ ra..
 ______ ti..
 
-c_ Publisher(threading.Thread):
+c_ Publisher(_.T..):
 
   ___ __init__(self, integers, condition):
     self.condition = condition
     self.integers = integers
-    threading.Thread.__init__(self)
+    _.T...__init__(self)
 
   ___ run(self):
     while True:
@@ -19,14 +19,14 @@ c_ Publisher(threading.Thread):
       self.condition.notify()
       print("Condition Released by Publisher: {}".format(self.name))
       self.condition.release()
-      time.sleep(1)
+      t___.s..(1)
 
-c_ Subscriber(threading.Thread):
+c_ Subscriber(_.T..):
 
   ___ __init__(self, integers, condition):
     self.integers = integers
     self.condition = condition
-    threading.Thread.__init__(self)
+    _.T...__init__(self)
 
   ___ run(self):
     while True:
@@ -44,17 +44,17 @@ c_ Subscriber(threading.Thread):
 
 ___ main
   integers = []
-  condition = threading.Condition()
+  condition = _.Condition()
   
   # Our Publisher
   pub1 = Publisher(integers, condition)
-  pub1.start()
+  pub1.s..
 
   # Our Subscribers
   sub1 = Subscriber(integers, condition)
   sub2 = Subscriber(integers, condition)
-  sub1.start()
-  sub2.start()
+  sub1.s..
+  sub2.s..
 
   ## Joining our Threads
   pub1.join()

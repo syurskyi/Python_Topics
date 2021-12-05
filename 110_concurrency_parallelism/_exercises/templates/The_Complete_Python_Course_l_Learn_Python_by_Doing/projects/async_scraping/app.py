@@ -20,9 +20,9 @@ ______ aiohttp
 ______ async_timeout
 ______ requests
 ______ logging
-______ time
+______ t___
 
-from pages.all_books_page ______ AllBooksPage
+____ pages.all_books_page ______ AllBooksPage
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
                     datefmt='%d-%m-%Y %H:%M:%S',
@@ -45,10 +45,10 @@ _books = []
 
 
 async ___ fetch_page(session, url):
-    page_start = time.time()
+    page_start = t___.t___()
     logger.info(f'Requesting {url}')
     async with session.get(url) as response:
-        print(f'{url} took {time.time() - page_start}')
+        print(f'{url} took {t___.t___() - page_start}')
         return await response.text()
 
 
@@ -66,9 +66,9 @@ logger.info(f'Going through {page.page_count} pages of books...')
 # https://www.johnlewis.com/herman-miller-new-aeron-office-chair-graphite-polished-aluminium/p3177260
 # http://google.com
 urls = [f'http://books.toscrape.com/catalogue/page-{page_num+1}.html' ___ page_num __ r...(page.page_count)]
-start = time.time()
+start = t___.t___()
 pages = loop.run_until_complete(get_multiple_pages(loop, *urls))
-print(f'Total page requests took {time.time() - start}')
+print(f'Total page requests took {t___.t___() - start}')
 ___ page_content __ pages:
     logger.debug('Creating AllBooksPage from page content.')
     page = AllBooksPage(page_content)

@@ -1,7 +1,7 @@
 ______ re
 ______ logging
 
-from locators.book_locators ______ BookLocators
+____ locators.book_locators ______ BookLocators
 
 logger = logging.getLogger('scraping.book_parser')
 

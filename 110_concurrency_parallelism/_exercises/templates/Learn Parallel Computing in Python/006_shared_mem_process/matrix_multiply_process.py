@@ -1,10 +1,10 @@
 ______ _
-______ time
-from random ______ Random
+______ t___
+____ random ______ Random
 
-from _ ______ Barrier
+____ _ ______ Barrier
 
-from _.context ______ P..
+____ _.context ______ P..
 
 process_count = 8
 matrix_size = 200
@@ -35,8 +35,8 @@ __ _____ __ _____
     matrix_b = _.Array('i', [0] * (matrix_size * matrix_size), lock=False)
     result = _.Array('i', [0] * (matrix_size * matrix_size), lock=False)
     ___ p __ r...(process_count):
-        P..(t.._work_out_row, a.._(p, matrix_a, matrix_b, result, work_start, work_complete)).start()
-    start = time.time()
+        P..(t.._work_out_row, a.._(p, matrix_a, matrix_b, result, work_start, work_complete)).s..
+    start = t___.t___()
     ___ t __ r...(10):
         generate_random_matrix(matrix_a)
         generate_random_matrix(matrix_b)
@@ -44,5 +44,5 @@ __ _____ __ _____
             result[i] = 0
         work_start.wait()
         work_complete.wait()
-    end = time.time()
+    end = t___.t___()
     print("Done, time taken", end - start)

@@ -1,6 +1,6 @@
 ______ os
-from os.path ______ isdir, join
-from threading ______ Lock, Thread
+____ os.path ______ isdir, join
+____ _ ______ Lock, T..
 
 mutex = Lock()
 matches = []
@@ -16,16 +16,16 @@ ___ file_search(root, filename):
             matches.append(full_path)
             mutex.release()
         if isdir(full_path):
-            t = Thread(t.._file_search, a.._([full_path, filename]))
-            t.start()
+            t = T..(t.._file_search, a.._([full_path, filename]))
+            t.s..
             child_threads.append(t)
     ___ t __ child_threads:
         t.join()
 
 
 ___ main
-    t = Thread(t.._file_search, a.._(["c:/tools", "README.md"]))
-    t.start()
+    t = T..(t.._file_search, a.._(["c:/tools", "README.md"]))
+    t.s..
     t.join()
     ___ m __ matches:
         print("Matched:", m)

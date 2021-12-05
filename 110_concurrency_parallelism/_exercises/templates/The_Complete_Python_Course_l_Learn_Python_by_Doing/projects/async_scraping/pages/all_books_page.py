@@ -1,9 +1,9 @@
 ______ re
 ______ logging
 
-from locators.all_books_page ______ AllBooksPageLocators
-from parsers.book ______ BookParser
-from bs4 ______ BeautifulSoup
+____ locators.all_books_page ______ AllBooksPageLocators
+____ parsers.book ______ BookParser
+____ bs4 ______ BeautifulSoup
 
 logger = logging.getLogger('scraping.all_books_page')
 

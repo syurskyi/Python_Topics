@@ -1,16 +1,16 @@
-______ time
-from threading ______ Thread
+______ t___
+____ _ ______ T..
 
 
 ___ child
     print("Child Thread doing work...")
-    time.sleep(5)
+    t___.s..(5)
     print("Child Thread done...")
 
 
 ___ parent
-    t = Thread(t.._child, a.._([]))
-    t.start()
+    t = T..(t.._child, a.._([]))
+    t.s..
     print("Parent Thread is waiting...")
     t.join()
     print("Parent Thread is unblocked...")

@@ -23,4 +23,4 @@ ___ start
     window.mainloop()
 
 __ _____ __ _____
-    start()
+    s..

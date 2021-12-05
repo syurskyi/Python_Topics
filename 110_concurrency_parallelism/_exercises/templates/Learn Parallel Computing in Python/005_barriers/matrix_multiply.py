@@ -1,7 +1,7 @@
-______ time
-from random ______ Random
+______ t___
+____ random ______ Random
 
-from threading ______ Barrier, Thread
+____ _ ______ Barrier, T..
 
 matrix_size = 200
 matrix_a = [[0] * matrix_size ___ a __ r...(matrix_size)]
@@ -26,13 +26,13 @@ ___ work_out_row(row):
 
 
 ___ row __ r...(matrix_size):
-    Thread(t.._work_out_row, a.._([row])).start()
-start = time.time()
+    T..(t.._work_out_row, a.._([row])).s..
+start = t___.t___()
 ___ t __ r...(10):
     generate_random_matrix(matrix_a)
     generate_random_matrix(matrix_b)
     result = [[0] * matrix_size ___ r __ r...(matrix_size)]
     work_start.wait()
     work_complete.wait()
-end = time.time()
+end = t___.t___()
 print("Done, time taken", end - start)

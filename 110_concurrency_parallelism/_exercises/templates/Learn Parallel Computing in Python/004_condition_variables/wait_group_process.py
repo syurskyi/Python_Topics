@@ -1,6 +1,6 @@
-from _ ______ Condition, Value, P..
+____ _ ______ Condition, Value, P..
 
-______ time
+______ t___
 
 
 # note this is the equivalent of a waitgroup for a process instead of a thread
@@ -31,7 +31,7 @@ class WaitGroupProcess:
 
 ___ sleep_and_done(condC, wc, time_to_sleep):
     wg = WaitGroupProcess(condC, wc)
-    time.sleep(time_to_sleep)
+    t___.s..(time_to_sleep)
     wg.done()
     print("Process called done")
 
@@ -41,8 +41,8 @@ __ _____ __ _____
     cv = Condition()
     wait_group_process = WaitGroupProcess(cv, wait_count)
     wait_group_process.add(3)
-    P..(t.._sleep_and_done, a.._(cv, wait_count, 2)).start()
-    P..(t.._sleep_and_done, a.._(cv, wait_count, 5)).start()
-    P..(t.._sleep_and_done, a.._(cv, wait_count, 7)).start()
+    P..(t.._sleep_and_done, a.._(cv, wait_count, 2)).s..
+    P..(t.._sleep_and_done, a.._(cv, wait_count, 5)).s..
+    P..(t.._sleep_and_done, a.._(cv, wait_count, 7)).s..
     wait_group_process.wait()
     print("All processes complete")

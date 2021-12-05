@@ -1,5 +1,5 @@
-______ time
-from threading ______ Thread, Lock
+______ t___
+____ _ ______ T.., Lock
 
 
 class StingySpendy:
@@ -22,7 +22,7 @@ class StingySpendy:
 
 
 ss = StingySpendy()
-Thread(t.._ss.stingy, a.._()).start()
-Thread(t.._ss.spendy, a.._()).start()
-time.sleep(5)
+T..(t.._ss.stingy, a.._()).s..
+T..(t.._ss.spendy, a.._()).s..
+t___.s..(5)
 print("Money in the end", ss.money)

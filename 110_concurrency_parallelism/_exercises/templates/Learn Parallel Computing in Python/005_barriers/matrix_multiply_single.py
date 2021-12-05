@@ -1,5 +1,5 @@
-______ time
-from random ______ Random
+______ t___
+____ random ______ Random
 
 matrix_size = 200
 # matrix_a = [[3, 1, -4],
@@ -20,7 +20,7 @@ ___ generate_random_matrix(matrix):
             matrix[row][col] = random.randint(-5, 5)
 
 
-start = time.time()
+start = t___.t___()
 ___ t __ r...(10):
     generate_random_matrix(matrix_a)
     generate_random_matrix(matrix_b)
@@ -32,5 +32,5 @@ ___ t __ r...(10):
 #     for row in range(matrix_size):
 #         print(matrix_a[row], matrix_b[row], result[row])
 #     print()
-end = time.time()
+end = t___.t___()
 print("Done, time taken", end - start)
