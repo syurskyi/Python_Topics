@@ -17,7 +17,7 @@ METAR_CLOSE_REGEX = ".*="
 
 
 ___ parse_to_array(text_conn, metars_conn):
-    text = text_conn.recv()
+    text = text_conn.r..
     w... text is not None:
         lines = text.splitlines()
         metar_str = ""
@@ -30,27 +30,27 @@ ___ parse_to_array(text_conn, metars_conn):
             __ re.search(METAR_CLOSE_REGEX, line):
                 metars.a..(metar_str)
                 metar_str = ""
-        metars_conn.send(metars)
-        text = text_conn.recv()
-    metars_conn.send(None)
+        metars_conn.s..(metars)
+        text = text_conn.r..
+    metars_conn.s..(None)
 
 
 ___ extract_wind_direction(metars_conn, winds_conn):
-    metars = metars_conn.recv()
+    metars = metars_conn.r..
     w... metars is not None:
         winds = []
         ___ metar __ metars:
             __ re.search(WIND_REGEX, metar):
                 ___ token __ metar.split
                     __ re.match(WIND_EX_REGEX, token): winds.a..(re.match(WIND_EX_REGEX, token).group(1))
-        winds_conn.send(winds)
-        metars = metars_conn.recv()
-    winds_conn.send(None)
+        winds_conn.s..(winds)
+        metars = metars_conn.r..
+    winds_conn.s..(None)
 
 
 ___ mine_wind_distribution(winds_conn, wind_dist_conn):
     wind_dist = [0] * 8
-    winds = winds_conn.recv()
+    winds = winds_conn.r..
     w... winds is not None:
         ___ wind __ winds:
             __ re.search(VARIABLE_WIND_REGEX, wind):
@@ -60,8 +60,8 @@ ___ mine_wind_distribution(winds_conn, wind_dist_conn):
                 d = int(re.match(WIND_DIR_ONLY_REGEX, wind).group(1))
                 dir_index = round(d / 45.0) % 8
                 wind_dist[dir_index] += 1
-        winds = winds_conn.recv()
-    wind_dist_conn.send(wind_dist)
+        winds = winds_conn.r..
+    wind_dist_conn.s..(wind_dist)
 
 
 __ _____ __ _____
@@ -77,9 +77,9 @@ __ _____ __ _____
     ___ file __ __.listdir(path_with_files):
         f = open(j..(path_with_files, file), "r")
         text = f.read()
-        text_conn_a.send(text)
-    text_conn_a.send(None)
-    wind_dist = winds_dist_conn_b.recv()
+        text_conn_a.s..(text)
+    text_conn_a.s..(None)
+    wind_dist = winds_dist_conn_b.r..
     end = t___.t___()
     print(wind_dist)
     print("Time taken", end - start)

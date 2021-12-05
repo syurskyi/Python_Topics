@@ -5,14 +5,14 @@ ______ t___
 
 
 ___ consumer(q):
-    w... (True):
+    w... T..
         txt = q.get()
         print(txt)
         t___.s..(1)
 
 
 ___ producer(q):
-    w... (True):
+    w... T..
         q.put("Hello there")
         print("Message Sent")
 
