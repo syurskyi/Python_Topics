@@ -1,10 +1,10 @@
-____ threading
+____ __________
 ____ concurrent.futures
 ____ requests
 
 _____ m__.d.. ____ m..
 
-thread_local = threading.local()
+thread_local = __________.local()
 
 
 ___ get_session

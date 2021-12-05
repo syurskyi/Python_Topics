@@ -1,5 +1,5 @@
 ____ ____
-____ threading
+____ __________
 
 
 _____ ___ fetch_doc(doc):
@@ -26,10 +26,10 @@ ___ get_response(token):
 
 
 _____ ___ main
-    token = threading.Event()
+    token = __________.Event()
     task = ____.create_task(get_docs(['doc1', 'doc2', 'doc3'], token))
 
-    t = threading.Thread(target=get_response, args=(token,))
+    t = __________.T__(target=get_response, args=(token,))
     t.start()
 
     result = _____ task

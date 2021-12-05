@@ -7,10 +7,10 @@ c_ AsyncIterator:
         i = 0
         n = n
 
-    ___ __aiter__(self):
+    ___ __aiter__
         r_ self
 
-    _____ ___ __anext__(self):
+    _____ ___ __anext__
         print(f'start {i}')
         _____ ____.s..(1)
         print(f'end {i}')

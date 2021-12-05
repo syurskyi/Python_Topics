@@ -1,4 +1,4 @@
-____ threading
+____ __________
 ____ t___
 _____ ____ ____ CancelledError, FIRST_EXCEPTION
 ____ ____
@@ -60,7 +60,7 @@ ___ cancel_future(loop, future, after):
         print('cancel future')
         loop.call_soon_threadsafe(future.cancel)
 
-    t = threading.Thread(target=inner_cancel)
+    t = __________.T__(target=inner_cancel)
     t.start()
 
 
@@ -71,7 +71,7 @@ ___ cancel_tasks(tasks, after):
             print(f'cancel {i}, {t}')
             print(t.cancel())
 
-    t = threading.Thread(target=inner_cancel)
+    t = __________.T__(target=inner_cancel)
     t.start()
 
 
