@@ -39,7 +39,7 @@ _____ ___ download_albums(albums):
     _____ w___ aiohttp.ClientSession() __ session:
         ___ album __ albums:
             ___
-                yield _____ photos_by_album(f't{album}', album, session)
+                _____ _____ photos_by_album(f't{album}', album, session)
             _______ Exception __ ex:
                 print(repr(ex))
 

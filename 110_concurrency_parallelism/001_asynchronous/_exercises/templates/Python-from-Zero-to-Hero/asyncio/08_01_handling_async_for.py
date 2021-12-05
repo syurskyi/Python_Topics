@@ -37,7 +37,7 @@ _____ ___ download_albums(albums):
         ___ album __ albums:
             __ not isinstance(album, int):
                 raise RuntimeError('invalid album number')
-            yield _____ photos_by_album(f't{album}', album, session)
+            _____ _____ photos_by_album(f't{album}', album, session)
 
 
 _____ ___ main
