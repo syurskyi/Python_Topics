@@ -63,7 +63,7 @@ _____ ___ main_wait
                 result = done.result()
                 photos.extend(result)
             _______ Exception __ ex:
-                print(repr(ex))
+                print(re__(ex))
 
         print_photo_titles(photos)
 

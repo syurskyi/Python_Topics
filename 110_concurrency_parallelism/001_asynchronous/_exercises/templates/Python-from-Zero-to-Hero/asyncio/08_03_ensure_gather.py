@@ -49,7 +49,7 @@ _____ ___ main1
     ___
         result = _____ task1
     _______ Exception __ ex:
-        print(repr(ex))
+        print(re__(ex))
 
     print('sleeping in main')
     _____ ____.s..(5)
@@ -83,7 +83,7 @@ _____ ___ main_gather
         results = _____ ____.gather(*tasks, return_exceptions=True)
         ___ res __ results:
             __ isinstance(res, Exception):
-                print(repr(res))
+                print(re__(res))
             else:
                 photos.extend(res)
 

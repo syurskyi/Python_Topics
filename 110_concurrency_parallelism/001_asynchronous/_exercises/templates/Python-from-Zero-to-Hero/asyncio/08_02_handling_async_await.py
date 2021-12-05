@@ -41,7 +41,7 @@ _____ ___ download_albums(albums):
             ___
                 _____ _____ photos_by_album(f't{album}', album, session)
             _______ Exception __ ex:
-                print(repr(ex))
+                print(re__(ex))
 
 
 _____ ___ main

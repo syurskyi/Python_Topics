@@ -86,7 +86,7 @@ _____ ___ main_gather_cancel_on_tasks
             print('awaiting future')
             result = _____ future
         _______ ____.exceptions.CancelledError __ ex:
-            print(f'Excepted at await {repr(ex)}')
+            print(f'Excepted at await {re__(ex)}')
 
 
 _____ ___ main_gather_cancel_on_future
@@ -99,7 +99,7 @@ _____ ___ main_gather_cancel_on_future
             print('awaiting future')
             result = _____ future
         _______ ____.exceptions.CancelledError __ ex:
-            print(f'Excepted at await {repr(ex)}')
+            print(f'Excepted at await {re__(ex)}')
 
 
 _____ ___ main_gather_return_exceptions
@@ -114,12 +114,12 @@ _____ ___ main_gather_return_exceptions
             results = _____ future
             ___ result __ results:
                 __ isinstance(result, ____.exceptions.CancelledError):
-                    print(repr(result))
+                    print(re__(result))
                 else:
                     print_photo_titles(result)
             print('after for')
         _______ ____.exceptions.CancelledError __ ex:
-            print(f'Excepted at await {repr(ex)}')
+            print(f'Excepted at await {re__(ex)}')
 
 
 __ _______ __ _______

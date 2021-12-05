@@ -12,7 +12,7 @@ _____ ___ download_site(url, session):
         print(f"Read {response.content.total_bytes} from {url}")
 
 
-@a..
+$a..
 _____ ___ download_all_sites(sites):
     _____ w___ aiohttp.ClientSession() __ session:
         tasks = []
@@ -24,7 +24,7 @@ _____ ___ download_all_sites(sites):
             print('before await')
             _____ ____.gather(*tasks, return_exceptions=True)
         _______ Exception __ ex:
-            print(repr(ex))
+            print(re__(ex))
 
 
 __ __name__ == "__main__":
