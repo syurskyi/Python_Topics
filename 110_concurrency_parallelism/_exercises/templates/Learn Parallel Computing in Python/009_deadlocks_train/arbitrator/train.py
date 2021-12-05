@@ -38,6 +38,6 @@ ___ move_train(train, distance, crossings):
             __ back == crossing.position:
                 controller.a...
                 crossing.intersection.locked_by = -1
-                controller.notify_all()
+                controller.n..
                 controller.r..
         t___.s..(0.01)

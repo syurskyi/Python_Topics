@@ -4,10 +4,10 @@ ______ ti..
 
 c_ Publisher(_.T..):
 
-  ___ __init__  integers, condition):
+  ___  -   integers, condition):
     condition = condition
     integers = integers
-    _.T...__init__(self)
+    _.T... - (self)
 
   ___ run
     w... T..
@@ -23,10 +23,10 @@ c_ Publisher(_.T..):
 
 c_ Subscriber(_.T..):
 
-  ___ __init__  integers, condition):
+  ___  -   integers, condition):
     integers = integers
     condition = condition
-    _.T...__init__(self)
+    _.T... - (self)
 
   ___ run
     w... T..

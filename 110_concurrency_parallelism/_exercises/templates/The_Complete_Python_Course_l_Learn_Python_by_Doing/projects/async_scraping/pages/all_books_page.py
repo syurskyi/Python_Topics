@@ -9,7 +9,7 @@ logger = logging.getLogger('scraping.all_books_page')
 
 
 c_ AllBooksPage:
-    ___ __init__  page):
+    ___  -   page):
         logger.debug('Parsing page content with BeautifulSoup HTML parser.')
         soup = BeautifulSoup(page, 'html.parser')
 

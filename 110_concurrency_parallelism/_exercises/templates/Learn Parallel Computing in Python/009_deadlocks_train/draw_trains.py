@@ -2,7 +2,7 @@ ____ graphics ______ *
 
 
 c_ TrainAnim:
-    ___ __init__  win, train_length):
+    ___  -   win, train_length):
         colours = [color_rgb(233, 33, 40), color_rgb(78, 151, 210),
                         color_rgb(251, 170, 26), color_rgb(11, 132, 54)]
         train_length = train_length

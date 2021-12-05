@@ -31,9 +31,9 @@ __ _____ __ _____
     _.set_start_method('spawn')
     work_start = Barrier(process_count + 1)
     work_complete = Barrier(process_count + 1)
-    matrix_a = _.Array('i', [0] * (matrix_size * matrix_size), lock=False)
-    matrix_b = _.Array('i', [0] * (matrix_size * matrix_size), lock=False)
-    result = _.Array('i', [0] * (matrix_size * matrix_size), lock=False)
+    matrix_a = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)
+    matrix_b = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)
+    result = _.Array('i', [0] * (matrix_size * matrix_size), l.._F..)
     ___ p __ r...(process_count):
         P..(t.._work_out_row, a.._(p, matrix_a, matrix_b, result, work_start, work_complete)).s..
     start = t___.t___()
