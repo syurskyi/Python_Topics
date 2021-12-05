@@ -1,4 +1,4 @@
-____ queue ______ Queue
+____ queue ______ Q..
 ____ _ ______ T..
 
 ______ t___
@@ -6,18 +6,18 @@ ______ t___
 
 ___ consumer(q):
     w... T..
-        txt = q.get()
+        txt = q.g..
         print(txt)
         t___.s..(1)
 
 
 ___ producer(q):
     w... T..
-        q.put("Hello there")
+        q.p..("Hello there")
         print("Message Sent")
 
 
-q = Queue(maxsize=10)
+q = Q..(m.._10)
 t1 = T..(t.._consumer, a.._(q,))
 t2 = T..(t.._producer, a.._(q,))
 t1.s..

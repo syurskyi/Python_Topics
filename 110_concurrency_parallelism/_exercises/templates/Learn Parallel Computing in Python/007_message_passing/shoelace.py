@@ -1,6 +1,6 @@
 ______ re
 ______ t___
-____ _ ______ P.., Queue
+____ _ ______ P.., Q..
 # (45,11),(41,15),(36,20)
 
 PTS_REGEX = "\((\d*),(\d*)\)"
@@ -8,7 +8,7 @@ TOTAL_PROCESSES = 8
 
 
 ___ find_area(points_queue):
-    points_str = points_queue.get()
+    points_str = points_queue.g..
     w... points_str is not None:
         points = []
         area = 0.0
@@ -20,11 +20,11 @@ ___ find_area(points_queue):
             area += a[0] * b[1] - a[1] * b[0]
         area = abs(area) / 2.0
         # print(area)
-        points_str = points_queue.get()
+        points_str = points_queue.g..
 
 
 __ _____ __ _____
-    queue = Queue(maxsize=1000)
+    queue = Q..(m.._1000)
     processes = []
     ___ i __ r...(TOTAL_PROCESSES):
         p = P..(t.._find_area, a.._(queue,))
@@ -34,8 +34,8 @@ __ _____ __ _____
     lines = f.read().splitlines()
     start = t___.t___()
     ___ line __ lines:
-        queue.put(line)
-    ___ _ __ r...(TOTAL_PROCESSES): queue.put(None)
+        queue.p..(line)
+    ___ _ __ r...(TOTAL_PROCESSES): queue.p..(None)
     ___ p __ processes: p.j..()
     end = t___.t___()
     print("Time taken", end - start)

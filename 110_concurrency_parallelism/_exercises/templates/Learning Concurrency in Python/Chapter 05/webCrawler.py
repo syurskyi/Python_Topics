@@ -28,7 +28,7 @@ c_ Crawler(_.T..):
       
       urlLock.a..
       print("Queue Size: {}".format(linksToCrawl.qsize()))
-      link = linksToCrawl.get()
+      link = linksToCrawl.g..
       urlLock.r..
       # have we reached the end of our queue?
       __ link is None:
@@ -50,7 +50,7 @@ c_ Crawler(_.T..):
         
         ___ atag __ soup.find_all('a'):
           __ (atag.get('href') not __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
-            linksToCrawl.put(atag.get('href'))
+            linksToCrawl.p..(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))
 
@@ -70,9 +70,9 @@ ___ main
   baseUrl = input("Website > ")
   numberOfThreads = input("No Threads > ")
 
-  linksToCrawl = queue.Queue()
+  linksToCrawl = queue.Q..()
   urlLock = _.L...()
-  linksToCrawl.put(baseUrl)
+  linksToCrawl.p..(baseUrl)
   haveVisited = []
   crawlers = []
   errorLinks = []
