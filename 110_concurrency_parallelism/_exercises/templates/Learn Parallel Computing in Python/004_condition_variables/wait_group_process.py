@@ -5,11 +5,11 @@ ______ t___
 
 # note this is the equivalent of a waitgroup for a process instead of a thread
 c_ WaitGroupProcess:
-    ___ __init__(self, cv, wait_count):
+    ___ __init__  cv, wait_count):
         cv = cv
         wait_count = wait_count
 
-    ___ add(self, count):
+    ___ add  count):
         cv.a...
         wait_count.value += count
         cv.r..

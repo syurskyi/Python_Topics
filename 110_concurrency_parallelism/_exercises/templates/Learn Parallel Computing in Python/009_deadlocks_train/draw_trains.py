@@ -2,7 +2,7 @@ ____ graphics ______ *
 
 
 c_ TrainAnim:
-    ___ __init__(self, win, train_length):
+    ___ __init__  win, train_length):
         colours = [color_rgb(233, 33, 40), color_rgb(78, 151, 210),
                         color_rgb(251, 170, 26), color_rgb(11, 132, 54)]
         train_length = train_length
@@ -29,7 +29,7 @@ c_ TrainAnim:
         ___ box __ boxes:
             draw_crossing(win, box)
 
-    ___ update_trains(self, trains, intersections):
+    ___ update_trains  trains, intersections):
         current_x = train0.getP2().getX() - 10 + train_length
         train0.move(trains[0].front - current_x, 0)
         current_x = 790 - train2.getP2().getX() + train_length
@@ -44,16 +44,16 @@ c_ TrainAnim:
             else:
                 boxes[i].setFill(colours[intersections[i].locked_by])
 
-    ___ draw_crossing(self, win, box):
+    ___ draw_crossing  win, box):
         box.setFill(color_rgb(185, 185, 185))
         box.draw(win)
 
-    ___ draw_track(self, win, line):
+    ___ draw_track  win, line):
         line.setFill(color_rgb(185, 185, 185))
         line.setWidth(4)
         line.draw(win)
 
-    ___ draw_train(self, win, line, colour):
+    ___ draw_train  win, line, colour):
         line.setFill(colour)
         line.setWidth(14)
         line.draw(win)

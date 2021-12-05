@@ -4,7 +4,7 @@ ______ ti..
 
 c_ Publisher(_.T..):
 
-  ___ __init__(self, integers, condition):
+  ___ __init__  integers, condition):
     condition = condition
     integers = integers
     _.T...__init__(self)
@@ -23,7 +23,7 @@ c_ Publisher(_.T..):
 
 c_ Subscriber(_.T..):
 
-  ___ __init__(self, integers, condition):
+  ___ __init__  integers, condition):
     integers = integers
     condition = condition
     _.T...__init__(self)

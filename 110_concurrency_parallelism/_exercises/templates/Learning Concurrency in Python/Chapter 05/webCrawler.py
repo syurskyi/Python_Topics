@@ -8,7 +8,7 @@ ______ ssl
 
 c_ Crawler(_.T..):
 
-  ___ __init__(self, baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
+  ___ __init__  baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
     _.T...__init__(self);
     print("Web Crawler Worker Started: {}".format(_.current_thread()))
     linksToCrawl = linksToCrawl

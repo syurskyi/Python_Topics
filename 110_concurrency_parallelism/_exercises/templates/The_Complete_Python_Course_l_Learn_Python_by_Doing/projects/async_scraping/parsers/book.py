@@ -20,7 +20,7 @@ c_ BookParser:
         'Five': 5
     }
 
-    ___ __init__(self, parent):
+    ___ __init__  parent):
         logger.debug(f'New book parser created from `{parent}`')
         parent = parent
 
