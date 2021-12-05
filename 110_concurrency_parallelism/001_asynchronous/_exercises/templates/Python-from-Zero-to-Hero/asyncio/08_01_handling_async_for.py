@@ -36,7 +36,7 @@ _____ ___ download_albums(albums):
     _____ w___ aiohttp.ClientSession() __ session:
         ___ album __ albums:
             __ not isinstance(album, int):
-                raise RuntimeError('invalid album number')
+                r__ RuntimeError('invalid album number')
             _____ _____ photos_by_album(f't{album}', album, session)
 
 

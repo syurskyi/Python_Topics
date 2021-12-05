@@ -11,7 +11,7 @@ _____ ___ my_sleep(secs):
     print(f'task {secs} finished sleeping')
 
     __ secs == 5:
-        raise ErrorThatShouldCancelOtherTasks('5 is forbidden')
+        r__ ErrorThatShouldCancelOtherTasks('5 is forbidden')
     print(f'Slept for {secs} secs')
 
 

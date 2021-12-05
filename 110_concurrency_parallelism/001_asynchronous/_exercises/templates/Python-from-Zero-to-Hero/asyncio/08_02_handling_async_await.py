@@ -24,7 +24,7 @@ ___ print_photo_titles(photos):
 
 _____ ___ photos_by_album(task_name, album, session):
     __ not isinstance(album, int):
-        raise RuntimeError('invalid album number')
+        r__ RuntimeError('invalid album number')
 
     print(f'{task_name=}')
     url = f'https://jsonplaceholder.typicode.com/albums/{album}/photos/'
