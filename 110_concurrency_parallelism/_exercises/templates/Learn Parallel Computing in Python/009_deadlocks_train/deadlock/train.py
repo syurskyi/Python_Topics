@@ -1,12 +1,12 @@
-import random
+______ random
 
-import time
+______ time
 
 
-def move_train(train, distance, crossings):
+___ move_train(train, distance, crossings):
     while train.front < distance:
         train.front += 1
-        for crossing in crossings:
+        ___ crossing __ crossings:
             if train.front == crossing.position:
                 crossing.intersection.mutex.acquire()
                 crossing.intersection.locked_by = train.uid

@@ -8,7 +8,7 @@ ______ ssl
 
 class Crawler(threading.Thread):
 
-  def __init__(self, baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
+  ___ __init__(self, baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
     threading.Thread.__init__(self);
     print("Web Crawler Worker Started: {}".format(threading.current_thread()))
     self.linksToCrawl = linksToCrawl
@@ -17,7 +17,7 @@ class Crawler(threading.Thread):
     self.urlLock = urlLock
     self.errorLinks = errorLinks
 
-  def run(self):
+  ___ run(self):
     # We create this context so that we can crawl 
     # https sites
     myssl = ssl.create_default_context();
@@ -35,7 +35,7 @@ class Crawler(threading.Thread):
         break
 
       # Have we visited this link already?
-      if (link in self.haveVisited):
+      if (link __ self.haveVisited):
         print("Already Visited: {}".format(link))
         break
       
@@ -48,8 +48,8 @@ class Crawler(threading.Thread):
         
         soup = BeautifulSoup(response.read(), "html.parser")
         
-        for atag in soup.find_all('a'):
-          if (atag.get('href') not in self.haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
+        ___ atag __ soup.find_all('a'):
+          if (atag.get('href') not __ self.haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
             self.linksToCrawl.put(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))
@@ -65,7 +65,7 @@ class Crawler(threading.Thread):
   
     
 
-def main():
+___ main
   print("Starting our Web Crawler")
   baseUrl = input("Website > ")
   numberOfThreads = input("No Threads > ")
@@ -77,19 +77,19 @@ def main():
   crawlers = []
   errorLinks = []
 
-  for i in range(int(numberOfThreads)):
+  ___ i __ r...(int(numberOfThreads)):
     crawler = Crawler(baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock)
     crawler.start()
     crawlers.append(crawler)
 
-  for crawler in crawlers:
+  ___ crawler __ crawlers:
     crawler.join()
 
   print("Total Number of Pages Visited {}".format(len(haveVisited)))
   print("Total Number of Pages with Errors {}".format(len(errorLinks)))
 
 
-if __name__ == '__main__':
+__ _____ __ _____
   main()
 
 

@@ -32,12 +32,12 @@ or
 - /Applications/Python 3.7/Install Certificates.command
 """
 
-import asyncio
-import aiohttp
-import async_timeout
-import time
+______ asyncio
+______ aiohttp
+______ async_timeout
+______ time
 
-async def fetch_page(session, url):
+async ___ fetch_page(session, url):
     async with async_timeout.timeout(10):
         start = time.time()
         async with session.get(url) as response:
@@ -45,17 +45,17 @@ async def fetch_page(session, url):
             return response.status
 
 
-async def get_multiple_pages(loop, *urls):
+async ___ get_multiple_pages(loop, *urls):
     tasks = []
     async with aiohttp.ClientSession(loop=loop) as session:
-        for url in urls:
+        ___ url __ urls:
             tasks.append(fetch_page(session, url))
         return await asyncio.gather(*tasks)
 
 
-if __name__ == '__main__':
+__ _____ __ _____
 
-    def main():
+    ___ main
         loop = asyncio.get_event_loop()
         urls = [
             'http://google.com',
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         start = time.time()
         pages = loop.run_until_complete(get_multiple_pages(loop, *urls))
         print(f'Total took {time.time() - start}')
-        for page in pages:
+        ___ page __ pages:
             print(page)
 
     main()

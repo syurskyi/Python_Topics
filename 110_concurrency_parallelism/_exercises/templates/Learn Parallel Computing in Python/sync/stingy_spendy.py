@@ -1,20 +1,20 @@
-import time
-from threading import Thread, Lock
+______ time
+from threading ______ Thread, Lock
 
 
 class StingySpendy:
     money = 100
     mutex = Lock()
 
-    def stingy(self):
-        for i in range(1000000):
+    ___ stingy(self):
+        ___ i __ r...(1000000):
             self.mutex.acquire()
             self.money += 10
             self.mutex.release()
         print("Stingy Done")
 
-    def spendy(self):
-        for i in range(1000000):
+    ___ spendy(self):
+        ___ i __ r...(1000000):
             self.mutex.acquire()
             self.money -= 10
             self.mutex.release()
@@ -22,7 +22,7 @@ class StingySpendy:
 
 
 ss = StingySpendy()
-Thread(target=ss.stingy, args=()).start()
-Thread(target=ss.spendy, args=()).start()
+Thread(t.._ss.stingy, a.._()).start()
+Thread(t.._ss.spendy, a.._()).start()
 time.sleep(5)
 print("Money in the end", ss.money)

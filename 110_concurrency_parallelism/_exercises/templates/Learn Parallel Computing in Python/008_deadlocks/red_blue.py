@@ -1,8 +1,8 @@
-from threading import Thread, Lock
-import time
+from threading ______ Thread, Lock
+______ time
 
 
-def red_robot(lock1, lock2):
+___ red_robot(lock1, lock2):
     while True:
         print("Red: Acquiring lock 1...")
         lock1.acquire()
@@ -14,7 +14,7 @@ def red_robot(lock1, lock2):
         print("Red: Locks released")
         time.sleep(0.5)
 
-def blue_robot(lock1, lock2):
+___ blue_robot(lock1, lock2):
     while True:
         print("Blue: Acquiring lock 2...")
         lock2.acquire()
@@ -29,8 +29,8 @@ def blue_robot(lock1, lock2):
 
 mutex1 = Lock()
 mutex2 = Lock()
-red = Thread(target=red_robot, args=(mutex1, mutex2))
-blue = Thread(target=blue_robot, args=(mutex1, mutex2))
+red = Thread(t.._red_robot, a.._(mutex1, mutex2))
+blue = Thread(t.._blue_robot, a.._(mutex1, mutex2))
 red.start()
 blue.start()
 

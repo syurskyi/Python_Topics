@@ -1,25 +1,25 @@
-import re
-import logging
+______ re
+______ logging
 
-from locators.all_books_page import AllBooksPageLocators
-from parsers.book import BookParser
-from bs4 import BeautifulSoup
+from locators.all_books_page ______ AllBooksPageLocators
+from parsers.book ______ BookParser
+from bs4 ______ BeautifulSoup
 
 logger = logging.getLogger('scraping.all_books_page')
 
 
 class AllBooksPage:
-    def __init__(self, page):
+    ___ __init__(self, page):
         logger.debug('Parsing page content with BeautifulSoup HTML parser.')
         self.soup = BeautifulSoup(page, 'html.parser')
 
     @property
-    def books(self):
+    ___ books(self):
         logger.debug(f'Finding all books in the page using `{AllBooksPageLocators.BOOKS}`')
-        return [BookParser(e) for e in self.soup.select(AllBooksPageLocators.BOOKS)]
+        return [BookParser(e) ___ e __ self.soup.select(AllBooksPageLocators.BOOKS)]
 
     @property
-    def page_count(self):
+    ___ page_count(self):
         logger.debug('Finding all number of catalogue pages available...')
         content = self.soup.select_one(AllBooksPageLocators.PAGER).string
         logger.info(f'Found number of catalogue pages available: `{content}`')

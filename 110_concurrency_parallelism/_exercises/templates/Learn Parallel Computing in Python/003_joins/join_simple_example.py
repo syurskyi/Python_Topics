@@ -1,15 +1,15 @@
-import time
-from threading import Thread
+______ time
+from threading ______ Thread
 
 
-def child():
+___ child
     print("Child Thread doing work...")
     time.sleep(5)
     print("Child Thread done...")
 
 
-def parent():
-    t = Thread(target=child, args=([]))
+___ parent
+    t = Thread(t.._child, a.._([]))
     t.start()
     print("Parent Thread is waiting...")
     t.join()

@@ -1,19 +1,19 @@
-import threading
-import time
+______ threading
+______ time
 
 controller = threading.Condition()
 
 
-def all_free(intersections_to_lock):
-    for it in intersections_to_lock:
+___ all_free(intersections_to_lock):
+    ___ it __ intersections_to_lock:
         if it.locked_by >= 0:
             return False
     return True
 
 
-def lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
+___ lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
     intersections_to_lock = []
-    for crossing in crossings:
+    ___ crossing __ crossings:
         if reserve_end >= crossing.position >= reserve_start and crossing.intersection.locked_by != id:
             intersections_to_lock.append(crossing.intersection)
 
@@ -21,16 +21,16 @@ def lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
     while not all_free(intersections_to_lock):
         controller.wait()
 
-    for intersection in intersections_to_lock:
+    ___ intersection __ intersections_to_lock:
         intersection.locked_by = id
         time.sleep(0.01)
     controller.release()
 
 
-def move_train(train, distance, crossings):
+___ move_train(train, distance, crossings):
     while train.front < distance:
         train.front += 1
-        for crossing in crossings:
+        ___ crossing __ crossings:
             if train.front == crossing.position:
                 lock_intersections_in_distance(train.uid, crossing.position,
                                                crossing.position + train.train_length, crossings)

@@ -1,8 +1,8 @@
-import requests
-import logging
-import time
+______ requests
+______ logging
+______ time
 
-from pages.all_books_page import AllBooksPage
+from pages.all_books_page ______ AllBooksPage
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
                     datefmt='%d-%m-%Y %H:%M:%S',
@@ -23,7 +23,7 @@ _books = []
 
 start = time.time()
 logger.info(f'Going through {page.page_count} pages of books...')
-for page_num in range(page.page_count):
+___ page_num __ r...(page.page_count):
     page_start = time.time()
     url = f'http://books.toscrape.com/catalogue/page-{page_num+1}.html'
     logger.info(f'Requesting {url}')

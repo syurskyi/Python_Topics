@@ -1,9 +1,9 @@
-from multiprocessing import Process, Pipe
+from _ ______ P.., Pipe
 
-import time
+______ time
 
 
-def ping(pipe_conn):
+___ ping(pipe_conn):
     while (True):
         pipe_conn.send(["Ping", time.time()])
         pong = pipe_conn.recv()
@@ -11,7 +11,7 @@ def ping(pipe_conn):
         time.sleep(1)
 
 
-def pong(pipe_conn):
+___ pong(pipe_conn):
     while (True):
         ping = pipe_conn.recv()
         print(ping)
@@ -19,7 +19,7 @@ def pong(pipe_conn):
         pipe_conn.send(["Pong", time.time()])
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     pipe_end_a, pipe_end_b = Pipe()
-    Process(target=ping, args=(pipe_end_a,)).start()
-    Process(target=pong, args=(pipe_end_b,)).start()
+    P..(t.._ping, a.._(pipe_end_a,)).start()
+    P..(t.._pong, a.._(pipe_end_b,)).start()

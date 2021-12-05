@@ -1,16 +1,16 @@
-from threading import Condition
+from threading ______ Condition
 
 
 class WaitGroup:
     wait_count=0
     cv = Condition()
 
-    def add(self, count):
+    ___ add(self, count):
         self.cv.acquire()
         self.wait_count += count
         self.cv.release()
 
-    def done(self):
+    ___ done(self):
         self.cv.acquire()
         if self.wait_count > 0:
             self.wait_count -= 1
@@ -18,7 +18,7 @@ class WaitGroup:
             self.cv.notify_all()
         self.cv.release()
 
-    def wait(self):
+    ___ wait(self):
         self.cv.acquire()
         while self.wait_count > 0:
             self.cv.wait()

@@ -42,7 +42,7 @@ c_ Subscriber(threading.Thread):
       print("Consumer {} Releasing Condition".format(self.name))
       self.condition.release()
 
-___ main():
+___ main
   integers = []
   condition = threading.Condition()
   
@@ -61,5 +61,5 @@ ___ main():
   consumer1.join()
   consumer2.join()
 
-if __name__ == '__main__':
+__ _____ __ _____
   main()

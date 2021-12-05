@@ -1,8 +1,8 @@
-import os
-import re
-from os.path import join
+______ os
+______ re
+from os.path ______ join
 
-import time
+______ time
 
 WIND_REGEX = "\d* METAR.*EGLL \d*Z [A-Z ]*(\d{5}KT|VRB\d{2}KT).*="
 WIND_EX_REGEX = "(\d{5}KT|VRB\d{2}KT)"
@@ -14,11 +14,11 @@ COMMENT_REGEX = "\w*#.*"
 METAR_CLOSE_REGEX = ".*="
 
 
-def parse_to_array(text):
+___ parse_to_array(text):
     lines = text.splitlines()
     metar_str = ""
     metars = []
-    for line in lines:
+    ___ line __ lines:
         if re.search(TAF_REGEX, line):
             break
         if not re.search(COMMENT_REGEX, line):
@@ -29,19 +29,19 @@ def parse_to_array(text):
     return metars
 
 
-def extract_wind_direction(metars):
+___ extract_wind_direction(metars):
     winds = []
-    for metar in metars:
+    ___ metar __ metars:
         if re.search(WIND_REGEX, metar):
-            for token in metar.split():
+            ___ token __ metar.split
                 if re.match(WIND_EX_REGEX, token): winds.append(re.match(WIND_EX_REGEX, token).group(1))
     return winds
 
 
-def mine_wind_distribution(winds, wind_dist):
-    for wind in winds:
+___ mine_wind_distribution(winds, wind_dist):
+    ___ wind __ winds:
         if re.search(VARIABLE_WIND_REGEX, wind):
-            for i in range(8):
+            ___ i __ r...(8):
                 wind_dist[i] += 1
         elif re.search(VALID_WIND_REGEX, wind):
             d = int(re.match(WIND_DIR_ONLY_REGEX, wind).group(1))
@@ -50,11 +50,11 @@ def mine_wind_distribution(winds, wind_dist):
     return wind_dist
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     path_with_files = "../metarfiles"
     wind_dist = [0] * 8
     start = time.time()
-    for file in os.listdir(path_with_files):
+    ___ file __ os.listdir(path_with_files):
         f = open(join(path_with_files, file), "r")
         text = f.read()
         metars = parse_to_array(text)

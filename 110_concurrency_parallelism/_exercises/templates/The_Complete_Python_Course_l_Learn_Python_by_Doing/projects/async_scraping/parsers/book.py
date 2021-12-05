@@ -1,7 +1,7 @@
-import re
-import logging
+______ re
+______ logging
 
-from locators.book_locators import BookLocators
+from locators.book_locators ______ BookLocators
 
 logger = logging.getLogger('scraping.book_parser')
 
@@ -20,15 +20,15 @@ class BookParser:
         'Five': 5
     }
 
-    def __init__(self, parent):
+    ___ __init__(self, parent):
         logger.debug(f'New book parser created from `{parent}`')
         self.parent = parent
 
-    def __repr__(self):
+    ___ __repr__(self):
         return f'<Book {self.name} {self.price}, {self.rating} stars>'
 
     @property
-    def name(self):
+    ___ name(self):
         logger.debug('Finding book name...')
         locator = BookLocators.NAME_LOCATOR
         item_name = self.parent.select_one(locator).attrs['title']
@@ -36,7 +36,7 @@ class BookParser:
         return item_name
 
     @property
-    def link(self):
+    ___ link(self):
         logger.debug('Finding book page link...')
         locator = BookLocators.LINK_LOCATOR
         item_url = self.parent.select_one(locator).attrs['href']
@@ -44,7 +44,7 @@ class BookParser:
         return item_url
 
     @property
-    def price(self):
+    ___ price(self):
         logger.debug('Finding book price...')
         locator = BookLocators.PRICE_LOCATOR
         item_price = self.parent.select_one(locator).string
@@ -57,7 +57,7 @@ class BookParser:
         return price
 
     @property
-    def rating(self):
+    ___ rating(self):
         logger.debug('Finding book rating...')
         locator = BookLocators.RATING_LOCATOR
         star_rating_element = self.parent.select_one(locator)

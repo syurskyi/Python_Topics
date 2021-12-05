@@ -1,33 +1,33 @@
-import os
-from os.path import isdir, join
-from threading import Lock, Thread
+______ os
+from os.path ______ isdir, join
+from threading ______ Lock, Thread
 
 mutex = Lock()
 matches = []
 
 
-def file_search(root, filename):
+___ file_search(root, filename):
     print("Searching in:", root)
     child_threads = []
-    for file in os.listdir(root):
+    ___ file __ os.listdir(root):
         full_path = join(root, file)
-        if filename in file:
+        if filename __ file:
             mutex.acquire()
             matches.append(full_path)
             mutex.release()
         if isdir(full_path):
-            t = Thread(target=file_search, args=([full_path, filename]))
+            t = Thread(t.._file_search, a.._([full_path, filename]))
             t.start()
             child_threads.append(t)
-    for t in child_threads:
+    ___ t __ child_threads:
         t.join()
 
 
-def main():
-    t = Thread(target=file_search, args=(["c:/tools", "README.md"]))
+___ main
+    t = Thread(t.._file_search, a.._(["c:/tools", "README.md"]))
     t.start()
     t.join()
-    for m in matches:
+    ___ m __ matches:
         print("Matched:", m)
 
 

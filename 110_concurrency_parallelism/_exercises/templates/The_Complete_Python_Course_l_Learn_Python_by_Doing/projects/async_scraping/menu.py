@@ -1,6 +1,6 @@
-import logging
+______ logging
 
-from app import books
+from app ______ books
 
 logger = logging.getLogger('scraping.menu')
 
@@ -15,24 +15,24 @@ USER_CHOICE = '''Enter one of the following
 Enter your choice: '''
 
 
-def print_best_books():
+___ print_best_books
     logger.debug('Finding best books by rating...')
     best_books = sorted(books, key=lambda x: x.rating * -1)[:5]
-    for book in best_books:
+    ___ book __ best_books:
         print(book)
 
 
-def print_cheapest_books():
+___ print_cheapest_books
     logger.debug('Finding best books by price...')
     cheapest_books = sorted(books, key=lambda x: x.price)[:5]
-    for book in cheapest_books:
+    ___ book __ cheapest_books:
         print(book)
 
 
-books_generator = (x for x in books)
+books_generator = (x ___ x __ books)
 
 
-def get_next_book():
+___ get_next_book
     logger.debug('Getting next book from generator of all books...')
     print(next(books_generator))
 
@@ -44,11 +44,11 @@ user_choices = {
 }
 
 
-def menu():
+___ menu
     user_input = input(USER_CHOICE)
     while user_input != 'q':
         logger.debug('User did not choose to exit program.')
-        if user_input in ('b', 'c', 'n'):
+        if user_input __ ('b', 'c', 'n'):
             user_choices[user_input]()
         else:
             print('Please choose a valid command.')

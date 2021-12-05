@@ -1,14 +1,14 @@
-import time
-from threading import Thread
+______ time
+from threading ______ Thread
 
 
-def do_work():
+___ do_work
     print("Starting work")
     time.sleep(1)
     print("Finished work")
 
 
-for _ in range(5):
-    t = Thread(target=do_work, args=())
+___ _ __ r...(5):
+    t = Thread(t.._do_work, a.._())
     t.start()
 

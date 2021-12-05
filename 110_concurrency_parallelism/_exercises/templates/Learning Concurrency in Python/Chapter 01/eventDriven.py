@@ -1,4 +1,4 @@
-import turtle
+______ turtle
 
 turtle.setup(500,500)                
 window = turtle.Screen()              
@@ -6,21 +6,21 @@ window.title("Event Handling 101!")
 window.bgcolor("lightblue")             
 nathan = turtle.Turtle()  
 
-def moveForward():
+___ moveForward
     nathan.forward(50)
 
-def moveLeft():
+___ moveLeft
     nathan.left(30)
 
-def moveRight():
+___ moveRight
     nathan.right(30)
 
-def start():  
+___ start
     window.onkey(moveForward, "Up")
     window.onkey(moveLeft, "Left")
     window.onkey(moveRight, "Right")
     window.listen()
     window.mainloop()
 
-if __name__ == '__main__':
+__ _____ __ _____
     start()

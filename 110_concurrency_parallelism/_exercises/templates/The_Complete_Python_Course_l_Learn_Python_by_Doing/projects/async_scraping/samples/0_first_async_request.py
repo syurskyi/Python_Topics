@@ -1,7 +1,7 @@
-import aiohttp
-import asyncio
+______ aiohttp
+______ asyncio
 
-async def fetch_page(url):
+async ___ fetch_page(url):
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
             print(response.status)

@@ -1,11 +1,11 @@
-import time
-from threading import Barrier, Thread
+______ time
+from threading ______ Barrier, Thread
 
 barrier = Barrier(2)
 
 
-def wait_on_barrier(name, time_to_sleep):
-    for i in range(10):
+___ wait_on_barrier(name, time_to_sleep):
+    ___ i __ r...(10):
         print(name, "running")
         time.sleep(time_to_sleep)
         print(name, "is waiting on barrier")
@@ -13,8 +13,8 @@ def wait_on_barrier(name, time_to_sleep):
     print(name, "is finished")
 
 
-red = Thread(target=wait_on_barrier, args=["red", 4])
-blue = Thread(target=wait_on_barrier, args=["blue", 10])
+red = Thread(t.._wait_on_barrier, a.._["red", 4])
+blue = Thread(t.._wait_on_barrier, a.._["blue", 10])
 red.start()
 blue.start()
 # time.sleep(8)

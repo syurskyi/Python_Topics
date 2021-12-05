@@ -1,6 +1,6 @@
-import time
-from urllib.request import Request, URLError, urljoin, urlopen
-from concurrent.futures import ThreadPoolExecutor, as_completed
+______ time
+from urllib.request ______ Request, URLError, urljoin, urlopen
+from concurrent.futures ______ ThreadPoolExecutor, as_completed
 
 URLS = [
   'http://localhost:1313',
@@ -9,25 +9,25 @@ URLS = [
   'http://localhost:1313/series/blog/',
 ]
 
-def checkStatus(url):
+___ checkStatus(url):
   print("Attempting to crawl URL: {}".format(url))
   req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
   response = urlopen(req)
   return response.getcode(), url
 
-def printStatus(statusCode):
+___ printStatus(statusCode):
   print("URL Crawled with status code: {}".format(statusCode))
 
-def main():
+___ main
   with ThreadPoolExecutor(max_workers=3) as executor:
     
     tasks = []
-    for url in URLS:
+    ___ url __ URLS:
       task = executor.submit(checkStatus, (url))
       tasks.append(task)
 
-    for future in as_completed(tasks):
+    ___ future __ as_completed(tasks):
       printStatus(future.result())
 
-if __name__ == '__main__':
+__ _____ __ _____
   main()

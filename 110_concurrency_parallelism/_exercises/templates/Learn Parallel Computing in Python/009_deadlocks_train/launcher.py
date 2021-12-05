@@ -1,33 +1,33 @@
-from threading import Lock, Thread
+from threading ______ Lock, Thread
 
-from deadlocks_train.deadlock.train import *
-from deadlocks_train.draw_trains import *
-from deadlocks_train.model import *
+from deadlocks_train.deadlock.train ______ *
+from deadlocks_train.draw_trains ______ *
+from deadlocks_train.model ______ *
 
 train_length = 200
 
 
-def main():
+___ main
     win = GraphWin('Trains in a box', 800, 800)  # give title and dimensions
     win.setBackground('black')
     train_anim = TrainAnim(win, train_length)
 
     trains = []
     intersections = []
-    for i in range(4):
+    ___ i __ r...(4):
         trains.append(Train(i, train_length, 0))
 
-    for i in range(4):
+    ___ i __ r...(4):
         intersections.append(Intersection(i, Lock(), -1))
 
-    t1 = Thread(target=move_train,
-                args=(trains[0], 780, [Crossing(320, intersections[0]), Crossing(460, intersections[1])]))
-    t2 = Thread(target=move_train,
-                args=(trains[1], 780, [Crossing(320, intersections[1]), Crossing(460, intersections[2])]))
-    t3 = Thread(target=move_train,
-                args=(trains[2], 780, [Crossing(320, intersections[2]), Crossing(460, intersections[3])]))
-    t4 = Thread(target=move_train,
-                args=(trains[3], 780, [Crossing(320, intersections[3]), Crossing(460, intersections[0])]))
+    t1 = Thread(t.._move_train,
+                a.._(trains[0], 780, [Crossing(320, intersections[0]), Crossing(460, intersections[1])]))
+    t2 = Thread(t.._move_train,
+                a.._(trains[1], 780, [Crossing(320, intersections[1]), Crossing(460, intersections[2])]))
+    t3 = Thread(t.._move_train,
+                a.._(trains[2], 780, [Crossing(320, intersections[2]), Crossing(460, intersections[3])]))
+    t4 = Thread(t.._move_train,
+                a.._(trains[3], 780, [Crossing(320, intersections[3]), Crossing(460, intersections[0])]))
     t1.start()
     t2.start()
     t3.start()

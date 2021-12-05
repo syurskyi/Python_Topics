@@ -1,21 +1,21 @@
-import time
-from threading import Thread, Condition
+______ time
+from threading ______ Thread, Condition
 
 
 class StingySpendy:
     money = 100
     cv = Condition()
 
-    def stingy(self):
-        for i in range(1000000):
+    ___ stingy(self):
+        ___ i __ r...(1000000):
             self.cv.acquire()
             self.money += 10
             self.cv.notify()
             self.cv.release()
         print("Stingy Done")
 
-    def spendy(self):
-        for i in range(500000):
+    ___ spendy(self):
+        ___ i __ r...(500000):
             self.cv.acquire()
             while self.money < 20:
                 self.cv.wait()
@@ -27,7 +27,7 @@ class StingySpendy:
 
 
 ss = StingySpendy()
-Thread(target=ss.stingy, args=()).start()
-Thread(target=ss.spendy, args=()).start()
+Thread(t.._ss.stingy, a.._()).start()
+Thread(t.._ss.spendy, a.._()).start()
 time.sleep(5)
 print("Money in the end", ss.money)
