@@ -8,20 +8,20 @@ ____ bs4 ______ BeautifulSoup
 logger = logging.getLogger('scraping.all_books_page')
 
 
-class AllBooksPage:
+c_ AllBooksPage:
     ___ __init__(self, page):
         logger.debug('Parsing page content with BeautifulSoup HTML parser.')
-        self.soup = BeautifulSoup(page, 'html.parser')
+        soup = BeautifulSoup(page, 'html.parser')
 
     @property
-    ___ books(self):
+    ___ books
         logger.debug(f'Finding all books in the page using `{AllBooksPageLocators.BOOKS}`')
-        return [BookParser(e) ___ e __ self.soup.select(AllBooksPageLocators.BOOKS)]
+        return [BookParser(e) ___ e __ soup.select(AllBooksPageLocators.BOOKS)]
 
     @property
-    ___ page_count(self):
+    ___ page_count
         logger.debug('Finding all number of catalogue pages available...')
-        content = self.soup.select_one(AllBooksPageLocators.PAGER).string
+        content = soup.select_one(AllBooksPageLocators.PAGER).string
         logger.info(f'Found number of catalogue pages available: `{content}`')
         pattern = 'Page [0-9]+ of ([0-9]+)'
         matcher = re.search(pattern, content)

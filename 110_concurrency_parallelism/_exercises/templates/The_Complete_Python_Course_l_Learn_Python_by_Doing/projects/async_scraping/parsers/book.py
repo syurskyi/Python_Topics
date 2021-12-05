@@ -6,7 +6,7 @@ ____ locators.book_locators ______ BookLocators
 logger = logging.getLogger('scraping.book_parser')
 
 
-class BookParser:
+c_ BookParser:
     """
     A class to take in an HTML page or content, and find properties of an item
     in it.
@@ -22,32 +22,32 @@ class BookParser:
 
     ___ __init__(self, parent):
         logger.debug(f'New book parser created from `{parent}`')
-        self.parent = parent
+        parent = parent
 
-    ___ __repr__(self):
-        return f'<Book {self.name} {self.price}, {self.rating} stars>'
+    ___ __repr__
+        return f'<Book {name} {price}, {rating} stars>'
 
     @property
-    ___ name(self):
+    ___ name
         logger.debug('Finding book name...')
         locator = BookLocators.NAME_LOCATOR
-        item_name = self.parent.select_one(locator).attrs['title']
+        item_name = parent.select_one(locator).attrs['title']
         logger.info(f'Found book name, `{item_name}`.')
         return item_name
 
     @property
-    ___ link(self):
+    ___ link
         logger.debug('Finding book page link...')
         locator = BookLocators.LINK_LOCATOR
-        item_url = self.parent.select_one(locator).attrs['href']
+        item_url = parent.select_one(locator).attrs['href']
         logger.info(f'Found book page link, `{item_url}`.')
         return item_url
 
     @property
-    ___ price(self):
+    ___ price
         logger.debug('Finding book price...')
         locator = BookLocators.PRICE_LOCATOR
-        item_price = self.parent.select_one(locator).string
+        item_price = parent.select_one(locator).string
         logger.debug(f'Item price element found, `{item_price}`')
 
         pattern = '£([0-9]+\.[0-9]+)'
@@ -57,10 +57,10 @@ class BookParser:
         return price
 
     @property
-    ___ rating(self):
+    ___ rating
         logger.debug('Finding book rating...')
         locator = BookLocators.RATING_LOCATOR
-        star_rating_element = self.parent.select_one(locator)
+        star_rating_element = parent.select_one(locator)
         classes = star_rating_element.attrs['class']
         rating_classes = filter(lambda x: x != 'star-rating', classes)
         rating_class = next(rating_classes)

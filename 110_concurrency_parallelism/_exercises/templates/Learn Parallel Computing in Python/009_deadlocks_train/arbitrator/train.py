@@ -1,7 +1,7 @@
 ______ _
 ______ t___
 
-controller = _.Condition()
+controller = _.C...()
 
 
 ___ all_free(intersections_to_lock):
@@ -19,7 +19,7 @@ ___ lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
 
     controller.a...
     w... not all_free(intersections_to_lock):
-        controller.wait()
+        controller.w..
 
     ___ intersection __ intersections_to_lock:
         intersection.locked_by = id

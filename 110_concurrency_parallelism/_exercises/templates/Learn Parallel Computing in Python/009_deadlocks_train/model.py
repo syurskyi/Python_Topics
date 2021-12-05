@@ -1,18 +1,18 @@
-class Train:
+c_ Train:
     ___ __init__(self, uid, train_length, front):
-        self.uid = uid
-        self.train_length = train_length
-        self.front = front
+        uid = uid
+        train_length = train_length
+        front = front
 
 
-class Intersection:
+c_ Intersection:
     ___ __init__(self, uid, mutex, locked_by):
-        self.uid = uid
-        self.mutex = mutex
-        self.locked_by = locked_by
+        uid = uid
+        mutex = mutex
+        locked_by = locked_by
 
 
-class Crossing:
+c_ Crossing:
     ___ __init__(self, position, intersection):
-        self.position = position
-        self.intersection = intersection
+        position = position
+        intersection = intersection

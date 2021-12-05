@@ -5,46 +5,46 @@ ______ ti..
 c_ Publisher(_.T..):
 
   ___ __init__(self, integers, condition):
-    self.condition = condition
-    self.integers = integers
+    condition = condition
+    integers = integers
     _.T...__init__(self)
 
-  ___ run(self):
+  ___ run
     w... T..
       integer = random.randint(0,1000)
-      self.condition.a..
-      print("Condition Acquired by Publisher: {}".format(self.name))
-      self.integers.a..(integer)
-      print("Publisher {} appending to array: {}".format(self.name, integer))
-      self.condition.notify()
-      print("Condition Released by Publisher: {}".format(self.name))
-      self.condition.r..
+      condition.a..
+      print("Condition Acquired by Publisher: {}".format(name))
+      integers.a..(integer)
+      print("Publisher {} appending to array: {}".format(name, integer))
+      condition.n..
+      print("Condition Released by Publisher: {}".format(name))
+      condition.r..
       t___.s..(1)
 
 c_ Subscriber(_.T..):
 
   ___ __init__(self, integers, condition):
-    self.integers = integers
-    self.condition = condition
+    integers = integers
+    condition = condition
     _.T...__init__(self)
 
-  ___ run(self):
+  ___ run
     w... T..
-      self.condition.a..
-      print("Condition Acquired by Consumer: {}".format(self.name))
+      condition.a..
+      print("Condition Acquired by Consumer: {}".format(name))
       w... T..
-        __ self.integers:
-          integer = self.integers.pop()
-          print("{} Popped from list by Consumer: {}".format(integer, self.name))
+        __ integers:
+          integer = integers.pop()
+          print("{} Popped from list by Consumer: {}".format(integer, name))
           _____
-        print("Condition Wait by {}".format(self.name))
-        self.condition.wait()
-      print("Consumer {} Releasing Condition".format(self.name))
-      self.condition.r..
+        print("Condition Wait by {}".format(name))
+        condition.w..
+      print("Consumer {} Releasing Condition".format(name))
+      condition.r..
 
 ___ main
   integers = []
-  condition = _.Condition()
+  condition = _.C...()
   
   # Our Publisher
   pub1 = Publisher(integers, condition)

@@ -4,7 +4,7 @@ ____ rx ______ Observable, Observer
 # Here we define our custom observer which
 # contains an on_next method, an on_error method
 # and an on_completed method
-class temperatureObserver(Observer):
+c_ temperatureObserver(Observer):
 
   # Every time we receive a temperature reading
   # this method is called
@@ -21,7 +21,7 @@ class temperatureObserver(Observer):
     print("Error: %s" % e)
   
   # This is called when the stream is finished
-  ___ on_completed(self):
+  ___ on_completed
     print("All Temps Read")
 
 # Publish some fake temperature readings 

@@ -9,7 +9,7 @@ ___ wait_on_barrier(name, time_to_sleep):
         print(name, "running")
         t___.s..(time_to_sleep)
         print(name, "is waiting on barrier")
-        barrier.wait()
+        barrier.w..
     print(name, "is finished")
 
 

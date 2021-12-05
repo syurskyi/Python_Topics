@@ -1,4 +1,4 @@
-class BookLocators:
+c_ BookLocators:
     """
     Locators for an item in the HTML page.
 

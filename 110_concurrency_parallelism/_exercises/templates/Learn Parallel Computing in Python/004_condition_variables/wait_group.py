@@ -1,25 +1,25 @@
-____ _ ______ Condition
+____ _ ______ C...
 
 
-class WaitGroup:
+c_ WaitGroup:
     wait_count=0
-    cv = Condition()
+    cv = C...()
 
     ___ add(self, count):
-        self.cv.a...
-        self.wait_count += count
-        self.cv.r..
+        cv.a...
+        wait_count += count
+        cv.r..
 
-    ___ done(self):
-        self.cv.a...
-        __ self.wait_count > 0:
-            self.wait_count -= 1
-        __ self.wait_count == 0:
-            self.cv.notify_all()
-        self.cv.r..
+    ___ done
+        cv.a...
+        __ wait_count > 0:
+            wait_count -= 1
+        __ wait_count == 0:
+            cv.notify_all()
+        cv.r..
 
-    ___ wait(self):
-        self.cv.a...
-        w... self.wait_count > 0:
-            self.cv.wait()
-        self.cv.r..
+    ___ wait
+        cv.a...
+        w... wait_count > 0:
+            cv.w..
+        cv.r..

@@ -1,32 +1,32 @@
-____ _ ______ Condition, Value, P..
+____ _ ______ C..., Value, P..
 
 ______ t___
 
 
 # note this is the equivalent of a waitgroup for a process instead of a thread
-class WaitGroupProcess:
+c_ WaitGroupProcess:
     ___ __init__(self, cv, wait_count):
-        self.cv = cv
-        self.wait_count = wait_count
+        cv = cv
+        wait_count = wait_count
 
     ___ add(self, count):
-        self.cv.a...
-        self.wait_count.value += count
-        self.cv.r..
+        cv.a...
+        wait_count.value += count
+        cv.r..
 
-    ___ done(self):
-        self.cv.a...
-        __ self.wait_count.value > 0:
-            self.wait_count.value -= 1
-        __ self.wait_count.value == 0:
-            self.cv.notify_all()
-        self.cv.r..
+    ___ done
+        cv.a...
+        __ wait_count.value > 0:
+            wait_count.value -= 1
+        __ wait_count.value == 0:
+            cv.notify_all()
+        cv.r..
 
-    ___ wait(self):
-        self.cv.a...
-        w... self.wait_count.value > 0:
-            self.cv.wait()
-        self.cv.r..
+    ___ wait
+        cv.a...
+        w... wait_count.value > 0:
+            cv.w..
+        cv.r..
 
 
 ___ sleep_and_done(condC, wc, time_to_sleep):
@@ -38,11 +38,11 @@ ___ sleep_and_done(condC, wc, time_to_sleep):
 
 __ _____ __ _____
     wait_count = Value('i', 0, lock=False)
-    cv = Condition()
+    cv = C...()
     wait_group_process = WaitGroupProcess(cv, wait_count)
     wait_group_process.add(3)
     P..(t.._sleep_and_done, a.._(cv, wait_count, 2)).s..
     P..(t.._sleep_and_done, a.._(cv, wait_count, 5)).s..
     P..(t.._sleep_and_done, a.._(cv, wait_count, 7)).s..
-    wait_group_process.wait()
+    wait_group_process.w..
     print("All processes complete")

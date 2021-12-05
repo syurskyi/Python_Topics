@@ -3,22 +3,22 @@ ______ unittest
 ___ simpleFunction(x):
   return x + 1
 
-class SimpleFunctionTest(unittest.TestCase):
+c_ SimpleFunctionTest(unittest.TestCase):
 
-  ___ setUp(self):
+  ___ setUp
     print("This is run before all of our tests have a chance to execute")
 
-  ___ tearDown(self):
+  ___ tearDown
     print("This is executed after all of our tests have completed")
 
-  ___ test_simple_function(self):
+  ___ test_simple_function
     print("Testing that our function works with positive tests")
-    self.assertEqual(simpleFunction(2), 3)
-    self.assertEqual(simpleFunction(234135145145432143214321432), 234135145145432143214321433)
-    self.assertEqual(simpleFunction(0), 1)
+    assertEqual(simpleFunction(2), 3)
+    assertEqual(simpleFunction(234135145145432143214321432), 234135145145432143214321433)
+    assertEqual(simpleFunction(0), 1)
   
-  ___ test_negative_simple_function(self):
-    self.assertNotEqual(simpleFunction(2), 4)
+  ___ test_negative_simple_function
+    assertNotEqual(simpleFunction(2), 4)
 
 
 __ _____ __ _____

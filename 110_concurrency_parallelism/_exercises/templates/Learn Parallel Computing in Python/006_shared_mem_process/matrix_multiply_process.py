@@ -19,12 +19,12 @@ ___ generate_random_matrix(matrix):
 
 ___ work_out_row(id, matrix_a, matrix_b, result, work_start, work_complete):
     w... T..
-        work_start.wait()
+        work_start.w..
         ___ row __ r...(id, matrix_size, process_count):
             ___ col __ r...(matrix_size):
                 ___ i __ r...(matrix_size):
                     result[row * matrix_size + col] += matrix_a[row * matrix_size + i] * matrix_b[i * matrix_size + col]
-        work_complete.wait()
+        work_complete.w..
 
 
 __ _____ __ _____
@@ -42,7 +42,7 @@ __ _____ __ _____
         generate_random_matrix(matrix_b)
         ___ i __ r...(matrix_size * matrix_size):
             result[i] = 0
-        work_start.wait()
-        work_complete.wait()
+        work_start.w..
+        work_complete.w..
     end = t___.t___()
     print("Done, time taken", end - start)

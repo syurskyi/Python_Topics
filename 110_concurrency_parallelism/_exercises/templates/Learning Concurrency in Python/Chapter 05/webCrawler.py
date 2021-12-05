@@ -6,18 +6,18 @@ ______ queue
 ____ bs4 ______ BeautifulSoup
 ______ ssl
 
-class Crawler(_.T..):
+c_ Crawler(_.T..):
 
   ___ __init__(self, baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
     _.T...__init__(self);
     print("Web Crawler Worker Started: {}".format(_.current_thread()))
-    self.linksToCrawl = linksToCrawl
-    self.haveVisited = haveVisited
-    self.baseUrl = baseUrl
-    self.urlLock = urlLock
-    self.errorLinks = errorLinks
+    linksToCrawl = linksToCrawl
+    haveVisited = haveVisited
+    baseUrl = baseUrl
+    urlLock = urlLock
+    errorLinks = errorLinks
 
-  ___ run(self):
+  ___ run
     # We create this context so that we can crawl 
     # https sites
     myssl = ssl.create_default_context();
@@ -26,21 +26,21 @@ class Crawler(_.T..):
     # process all the links in our queue
     w... T..
       
-      self.urlLock.a..
-      print("Queue Size: {}".format(self.linksToCrawl.qsize()))
-      link = self.linksToCrawl.get()
-      self.urlLock.r..
+      urlLock.a..
+      print("Queue Size: {}".format(linksToCrawl.qsize()))
+      link = linksToCrawl.get()
+      urlLock.r..
       # have we reached the end of our queue?
       __ link is None:
         _____
 
       # Have we visited this link already?
-      __ (link __ self.haveVisited):
+      __ (link __ haveVisited):
         print("Already Visited: {}".format(link))
         _____
       
       try:
-        link = urljoin(self.baseUrl, link)
+        link = urljoin(baseUrl, link)
         req = Request(link, headers={'User-Agent': 'Mozilla/5.0'})
         response = u..(req, context=myssl)
 
@@ -49,19 +49,19 @@ class Crawler(_.T..):
         soup = BeautifulSoup(response.read(), "html.parser")
         
         ___ atag __ soup.find_all('a'):
-          __ (atag.get('href') not __ self.haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
-            self.linksToCrawl.put(atag.get('href'))
+          __ (atag.get('href') not __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
+            linksToCrawl.put(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))
 
         print("Adding {} to crawled list".format(link))
-        self.haveVisited.a..(link)
+        haveVisited.a..(link)
         
       except URLError as e:
         print("URL {} threw this error when trying to parse: {}".format(link, e.reason))
-        self.errorLinks.a..(link)
+        errorLinks.a..(link)
       finally:
-        self.linksToCrawl.task_done()
+        linksToCrawl.task_done()
   
     
 
