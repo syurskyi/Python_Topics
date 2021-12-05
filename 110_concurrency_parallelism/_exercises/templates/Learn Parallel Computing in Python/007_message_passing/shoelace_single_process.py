@@ -9,7 +9,7 @@ ___ find_area(points_str):
     points = []
     area = 0.0
     ___ xy __ re.finditer(PTS_REGEX, points_str):
-        points.append((int(xy.group(1)), int(xy.group(2))))
+        points.a..((int(xy.group(1)), int(xy.group(2))))
 
     ___ i __ r...(len(points)):
         a, b = points[i], points[(i + 1) % len(points)]

@@ -1,6 +1,6 @@
-______ os
+______ __
 ______ re
-____ os.path ______ join
+____ __.p.. ______ j..
 
 ______ t___
 
@@ -24,7 +24,7 @@ ___ parse_to_array(text):
         __ not re.search(COMMENT_REGEX, line):
             metar_str += line.strip()
         __ re.search(METAR_CLOSE_REGEX, line):
-            metars.append(metar_str)
+            metars.a..(metar_str)
             metar_str = ""
     return metars
 
@@ -34,7 +34,7 @@ ___ extract_wind_direction(metars):
     ___ metar __ metars:
         __ re.search(WIND_REGEX, metar):
             ___ token __ metar.split
-                __ re.match(WIND_EX_REGEX, token): winds.append(re.match(WIND_EX_REGEX, token).group(1))
+                __ re.match(WIND_EX_REGEX, token): winds.a..(re.match(WIND_EX_REGEX, token).group(1))
     return winds
 
 
@@ -54,8 +54,8 @@ __ _____ __ _____
     path_with_files = "../metarfiles"
     wind_dist = [0] * 8
     start = t___.t___()
-    ___ file __ os.listdir(path_with_files):
-        f = open(join(path_with_files, file), "r")
+    ___ file __ __.listdir(path_with_files):
+        f = open(j..(path_with_files, file), "r")
         text = f.read()
         metars = parse_to_array(text)
         winds = extract_wind_direction(metars)

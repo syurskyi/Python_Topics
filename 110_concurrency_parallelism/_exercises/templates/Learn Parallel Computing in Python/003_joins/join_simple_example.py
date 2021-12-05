@@ -12,7 +12,7 @@ ___ parent
     t = T..(t.._child, a.._([]))
     t.s..
     print("Parent Thread is waiting...")
-    t.join()
+    t.j..()
     print("Parent Thread is unblocked...")
 
 

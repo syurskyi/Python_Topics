@@ -24,7 +24,7 @@ ___ main
     tasks = []
     ___ url __ URLS:
       task = executor.submit(checkStatus, (url))
-      tasks.append(task)
+      tasks.a..(task)
 
     ___ future __ as_completed(tasks):
       printStatus(future.result())

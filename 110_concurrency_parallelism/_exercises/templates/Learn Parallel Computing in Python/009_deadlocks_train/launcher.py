@@ -15,10 +15,10 @@ ___ main
     trains = []
     intersections = []
     ___ i __ r...(4):
-        trains.append(Train(i, train_length, 0))
+        trains.a..(Train(i, train_length, 0))
 
     ___ i __ r...(4):
-        intersections.append(Intersection(i, L...(), -1))
+        intersections.a..(Intersection(i, L...(), -1))
 
     t1 = T..(t.._move_train,
                 a.._(trains[0], 780, [Crossing(320, intersections[0]), Crossing(460, intersections[1])]))

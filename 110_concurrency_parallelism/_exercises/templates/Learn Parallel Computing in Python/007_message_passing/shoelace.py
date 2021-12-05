@@ -13,7 +13,7 @@ ___ find_area(points_queue):
         points = []
         area = 0.0
         ___ xy __ re.finditer(PTS_REGEX, points_str):
-            points.append((int(xy.group(1)), int(xy.group(2))))
+            points.a..((int(xy.group(1)), int(xy.group(2))))
 
         ___ i __ r...(len(points)):
             a, b = points[i], points[(i + 1) % len(points)]
@@ -28,7 +28,7 @@ __ _____ __ _____
     processes = []
     ___ i __ r...(TOTAL_PROCESSES):
         p = P..(t.._find_area, a.._(queue,))
-        processes.append(p)
+        processes.a..(p)
         p.s..
     f = open("polygons.txt", "r")
     lines = f.read().splitlines()
@@ -36,6 +36,6 @@ __ _____ __ _____
     ___ line __ lines:
         queue.put(line)
     ___ _ __ r...(TOTAL_PROCESSES): queue.put(None)
-    ___ p __ processes: p.join()
+    ___ p __ processes: p.j..()
     end = t___.t___()
     print("Time taken", end - start)

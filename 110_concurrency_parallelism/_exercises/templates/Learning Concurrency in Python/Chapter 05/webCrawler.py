@@ -55,11 +55,11 @@ class Crawler(_.T..):
             print("{} already visited or not part of website".format(atag.get('href')))
 
         print("Adding {} to crawled list".format(link))
-        self.haveVisited.append(link)
+        self.haveVisited.a..(link)
         
       except URLError as e:
         print("URL {} threw this error when trying to parse: {}".format(link, e.reason))
-        self.errorLinks.append(link)
+        self.errorLinks.a..(link)
       finally:
         self.linksToCrawl.task_done()
   
@@ -80,10 +80,10 @@ ___ main
   ___ i __ r...(int(numberOfThreads)):
     crawler = Crawler(baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock)
     crawler.s..
-    crawlers.append(crawler)
+    crawlers.a..(crawler)
 
   ___ crawler __ crawlers:
-    crawler.join()
+    crawler.j..()
 
   print("Total Number of Pages Visited {}".format(len(haveVisited)))
   print("Total Number of Pages with Errors {}".format(len(errorLinks)))

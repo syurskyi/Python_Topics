@@ -1,7 +1,7 @@
-______ os
+______ __
 ______ re
 ____ _ ______ Pipe
-____ os.path ______ join
+____ __.p.. ______ j..
 
 ______ t___
 ____ _.context ______ P..
@@ -28,7 +28,7 @@ ___ parse_to_array(text_conn, metars_conn):
             __ not re.search(COMMENT_REGEX, line):
                 metar_str += line.strip()
             __ re.search(METAR_CLOSE_REGEX, line):
-                metars.append(metar_str)
+                metars.a..(metar_str)
                 metar_str = ""
         metars_conn.send(metars)
         text = text_conn.recv()
@@ -42,7 +42,7 @@ ___ extract_wind_direction(metars_conn, winds_conn):
         ___ metar __ metars:
             __ re.search(WIND_REGEX, metar):
                 ___ token __ metar.split
-                    __ re.match(WIND_EX_REGEX, token): winds.append(re.match(WIND_EX_REGEX, token).group(1))
+                    __ re.match(WIND_EX_REGEX, token): winds.a..(re.match(WIND_EX_REGEX, token).group(1))
         winds_conn.send(winds)
         metars = metars_conn.recv()
     winds_conn.send(None)
@@ -74,8 +74,8 @@ __ _____ __ _____
     P..(t.._mine_wind_distribution, a.._(winds_conn_b, winds_dist_conn_a)).s..
     path_with_files = "../metarfiles"
     start = t___.t___()
-    ___ file __ os.listdir(path_with_files):
-        f = open(join(path_with_files, file), "r")
+    ___ file __ __.listdir(path_with_files):
+        f = open(j..(path_with_files, file), "r")
         text = f.read()
         text_conn_a.send(text)
     text_conn_a.send(None)

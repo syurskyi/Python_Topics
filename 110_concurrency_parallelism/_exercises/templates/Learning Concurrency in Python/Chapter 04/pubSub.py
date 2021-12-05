@@ -14,7 +14,7 @@ c_ Publisher(_.T..):
       integer = random.randint(0,1000)
       self.condition.a..
       print("Condition Acquired by Publisher: {}".format(self.name))
-      self.integers.append(integer)
+      self.integers.a..(integer)
       print("Publisher {} appending to array: {}".format(self.name, integer))
       self.condition.notify()
       print("Condition Released by Publisher: {}".format(self.name))
@@ -57,9 +57,9 @@ ___ main
   sub2.s..
 
   ## Joining our Threads
-  pub1.join()
-  consumer1.join()
-  consumer2.join()
+  pub1.j..()
+  consumer1.j..()
+  consumer2.j..()
 
 __ _____ __ _____
   main()

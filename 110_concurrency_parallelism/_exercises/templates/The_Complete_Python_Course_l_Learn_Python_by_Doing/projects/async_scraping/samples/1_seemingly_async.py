@@ -13,7 +13,7 @@ async ___ get_multiple_pages(loop, *urls):
     pages = []
     async with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
-            pages.append(await fetch_page(session, url))
+            pages.a..(await fetch_page(session, url))
     return pages
 
 
