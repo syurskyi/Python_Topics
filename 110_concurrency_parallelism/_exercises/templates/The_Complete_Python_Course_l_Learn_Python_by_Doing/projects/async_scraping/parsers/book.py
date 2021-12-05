@@ -51,7 +51,7 @@ c_ BookParser:
         logger.debug(f'Item price element found, `{item_price}`')
 
         pattern = '£([0-9]+\.[0-9]+)'
-        matcher = __.search(pattern, item_price)
+        matcher = __.s..(pattern, item_price)
         price = float(matcher.g..(1))
         logger.info(f'Found book price, `{price}`.')
         return price

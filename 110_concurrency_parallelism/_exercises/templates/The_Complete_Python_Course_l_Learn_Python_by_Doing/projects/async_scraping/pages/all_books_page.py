@@ -24,7 +24,7 @@ c_ AllBooksPage:
         content = soup.select_one(AllBooksPageLocators.PAGER).string
         logger.info(f'Found number of catalogue pages available: `{content}`')
         pattern = 'Page [0-9]+ of ([0-9]+)'
-        matcher = __.search(pattern, content)
+        matcher = __.s..(pattern, content)
         pages = i..(matcher.g..(1))
         logger.info(f'Extracted number of pages as integer: `{pages}`.')
         return pages

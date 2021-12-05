@@ -49,7 +49,7 @@ c_ Crawler(_.T..):
         soup = BeautifulSoup(response.r.. , "html.parser")
         
         ___ atag __ soup.find_all('a'):
-          __ (atag.get('href') not __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
+          __ (atag.get('href') n.. __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
             linksToCrawl.p..(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))

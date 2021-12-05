@@ -18,7 +18,7 @@ ___ lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):
             intersections_to_lock.a..(crossing.intersection)
 
     controller.a...
-    w... not all_free(intersections_to_lock):
+    w... n.. all_free(intersections_to_lock):
         controller.w..
 
     ___ intersection __ intersections_to_lock:

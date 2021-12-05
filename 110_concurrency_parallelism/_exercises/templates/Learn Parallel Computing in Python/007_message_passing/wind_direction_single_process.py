@@ -19,11 +19,11 @@ ___ parse_to_array(text):
     metar_str = ""
     metars = []
     ___ line __ lines:
-        __ __.search(TAF_REGEX, line):
+        __ __.s..(TAF_REGEX, line):
             _____
-        __ not __.search(COMMENT_REGEX, line):
-            metar_str += line.strip()
-        __ __.search(METAR_CLOSE_REGEX, line):
+        __ n.. __.s..(COMMENT_REGEX, line):
+            metar_str += line.s..
+        __ __.s..(METAR_CLOSE_REGEX, line):
             metars.a..(metar_str)
             metar_str = ""
     return metars
@@ -32,20 +32,20 @@ ___ parse_to_array(text):
 ___ extract_wind_direction(metars):
     winds = []
     ___ metar __ metars:
-        __ __.search(WIND_REGEX, metar):
+        __ __.s..(WIND_REGEX, metar):
             ___ token __ metar.split
-                __ __.match(WIND_EX_REGEX, token): winds.a..(__.match(WIND_EX_REGEX, token).g..(1))
+                __ __.m..(WIND_EX_REGEX, token): winds.a..(__.m..(WIND_EX_REGEX, token).g..(1))
     return winds
 
 
 ___ mine_wind_distribution(winds, wind_dist):
     ___ wind __ winds:
-        __ __.search(VARIABLE_WIND_REGEX, wind):
+        __ __.s..(VARIABLE_WIND_REGEX, wind):
             ___ i __ r...(8):
                 wind_dist[i] += 1
-        elif __.search(VALID_WIND_REGEX, wind):
-            d = i..(__.match(WIND_DIR_ONLY_REGEX, wind).g..(1))
-            dir_index = round(d / 45.0) % 8
+        ____ __.s..(VALID_WIND_REGEX, wind):
+            d = i..(__.m..(WIND_DIR_ONLY_REGEX, wind).g..(1))
+            dir_index = r..(d / 45.0) % 8
             wind_dist[dir_index] += 1
     return wind_dist
 
