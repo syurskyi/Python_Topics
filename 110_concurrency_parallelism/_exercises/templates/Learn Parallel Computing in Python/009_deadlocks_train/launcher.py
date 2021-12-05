@@ -1,4 +1,4 @@
-____ _ ______ Lock, T..
+____ _ ______ L..., T..
 
 ____ deadlocks_train.deadlock.train ______ *
 ____ deadlocks_train.draw_trains ______ *
@@ -18,7 +18,7 @@ ___ main
         trains.append(Train(i, train_length, 0))
 
     ___ i __ r...(4):
-        intersections.append(Intersection(i, Lock(), -1))
+        intersections.append(Intersection(i, L...(), -1))
 
     t1 = T..(t.._move_train,
                 a.._(trains[0], 780, [Crossing(320, intersections[0]), Crossing(460, intersections[1])]))
@@ -32,7 +32,7 @@ ___ main
     t2.s..
     t3.s..
     t4.s..
-    while True:
+    w... T..
         train_anim.update_trains(trains, intersections)
         t___.s..(0.01)
 

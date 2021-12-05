@@ -10,7 +10,7 @@ c_ Publisher(_.T..):
     _.T...__init__(self)
 
   ___ run(self):
-    while True:
+    w... T..
       integer = random.randint(0,1000)
       self.condition.a..
       print("Condition Acquired by Publisher: {}".format(self.name))
@@ -18,7 +18,7 @@ c_ Publisher(_.T..):
       print("Publisher {} appending to array: {}".format(self.name, integer))
       self.condition.notify()
       print("Condition Released by Publisher: {}".format(self.name))
-      self.condition.release()
+      self.condition.r..
       t___.s..(1)
 
 c_ Subscriber(_.T..):
@@ -29,18 +29,18 @@ c_ Subscriber(_.T..):
     _.T...__init__(self)
 
   ___ run(self):
-    while True:
+    w... T..
       self.condition.a..
       print("Condition Acquired by Consumer: {}".format(self.name))
-      while True:
-        if self.integers:
+      w... T..
+        __ self.integers:
           integer = self.integers.pop()
           print("{} Popped from list by Consumer: {}".format(integer, self.name))
-          break
+          _____
         print("Condition Wait by {}".format(self.name))
         self.condition.wait()
       print("Consumer {} Releasing Condition".format(self.name))
-      self.condition.release()
+      self.condition.r..
 
 ___ main
   integers = []

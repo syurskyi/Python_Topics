@@ -10,23 +10,23 @@ class WaitGroupProcess:
         self.wait_count = wait_count
 
     ___ add(self, count):
-        self.cv.acquire()
+        self.cv.a...
         self.wait_count.value += count
-        self.cv.release()
+        self.cv.r..
 
     ___ done(self):
-        self.cv.acquire()
-        if self.wait_count.value > 0:
+        self.cv.a...
+        __ self.wait_count.value > 0:
             self.wait_count.value -= 1
-        if self.wait_count.value == 0:
+        __ self.wait_count.value == 0:
             self.cv.notify_all()
-        self.cv.release()
+        self.cv.r..
 
     ___ wait(self):
-        self.cv.acquire()
-        while self.wait_count.value > 0:
+        self.cv.a...
+        w... self.wait_count.value > 0:
             self.cv.wait()
-        self.cv.release()
+        self.cv.r..
 
 
 ___ sleep_and_done(condC, wc, time_to_sleep):

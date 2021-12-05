@@ -1,5 +1,5 @@
 ______ t___
-____ urllib.request ______ Request, URLError, urljoin, urlopen
+____ u__.r.. ______ Request, URLError, urljoin, u..
 ____ concurrent.futures ______ ThreadPoolExecutor, as_completed
 
 URLS = [
@@ -12,7 +12,7 @@ URLS = [
 ___ checkStatus(url):
   print("Attempting to crawl URL: {}".format(url))
   req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-  response = urlopen(req)
+  response = u..(req)
   return response.getcode(), url
 
 ___ printStatus(statusCode):

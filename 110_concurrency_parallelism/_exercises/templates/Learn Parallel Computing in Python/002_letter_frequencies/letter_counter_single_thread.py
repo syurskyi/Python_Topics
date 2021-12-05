@@ -1,14 +1,14 @@
-______ json
-______ urllib.request
+______ j___
+______ u__.r..
 ______ t___
 
 
 ___ count_letters(url, frequency):
-    response = urllib.request.urlopen(url)
-    txt = str(response.read())
+    response = u__.r...u..(url)
+    txt = s..(response.r..
     ___ l __ txt:
-        letter = l.lower()
-        if letter __ frequency:
+        letter = l.l..
+        __ letter __ frequency:
             frequency[letter] += 1
 
 
@@ -20,7 +20,7 @@ ___ main
     ___ i __ r...(1000, 1020):
         count_letters(f"https://www.rfc-editor.org/rfc/rfc{i}.txt", frequency)
     end = t___.t___()
-    print(json.dumps(frequency, indent=4))
+    print(j___.d..(frequency, i.._4))
     print("Done, time taken", end - start)
 
 

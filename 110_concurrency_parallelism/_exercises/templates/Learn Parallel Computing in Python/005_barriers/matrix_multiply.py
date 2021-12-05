@@ -17,7 +17,7 @@ ___ generate_random_matrix(matrix):
             matrix[row][col] = random.randint(-5, 5)
 
 ___ work_out_row(row):
-    while True:
+    w... T..
         work_start.wait()
         ___ col __ r...(matrix_size):
             ___ i __ r...(matrix_size):

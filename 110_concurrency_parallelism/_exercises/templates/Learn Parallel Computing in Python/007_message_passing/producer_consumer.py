@@ -5,14 +5,14 @@ ______ t___
 
 
 ___ consumer(q):
-    while (True):
+    w... (True):
         txt = q.get()
         print(txt)
         t___.s..(1)
 
 
 ___ producer(q):
-    while (True):
+    w... (True):
         q.put("Hello there")
         print("Message Sent")
 

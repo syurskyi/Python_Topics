@@ -39,7 +39,7 @@ class TrainAnim:
         current_y = 790 - self.train3.getP2().getY() + self.train_length
         self.train3.move(0, current_y - trains[3].front)
         ___ i __ r...(4):
-            if intersections[i].locked_by < 0:
+            __ intersections[i].locked_by < 0:
                 self.boxes[i].setFill(color_rgb(185, 185, 185))
             else:
                 self.boxes[i].setFill(self.colours[intersections[i].locked_by])

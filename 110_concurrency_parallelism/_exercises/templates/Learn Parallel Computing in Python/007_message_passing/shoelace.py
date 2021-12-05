@@ -9,7 +9,7 @@ TOTAL_PROCESSES = 8
 
 ___ find_area(points_queue):
     points_str = points_queue.get()
-    while points_str is not None:
+    w... points_str is not None:
         points = []
         area = 0.0
         ___ xy __ re.finditer(PTS_REGEX, points_str):

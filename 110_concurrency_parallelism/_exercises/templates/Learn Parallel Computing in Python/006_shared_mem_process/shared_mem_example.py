@@ -5,7 +5,7 @@ ______ t___
 
 
 ___ print_array_contents(array):
-    while True:
+    w... T..
         print(*array, sep = ", ")
         t___.s..(1)
 

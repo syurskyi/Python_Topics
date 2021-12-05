@@ -46,9 +46,9 @@ user_choices = {
 
 ___ menu
     user_input = input(USER_CHOICE)
-    while user_input != 'q':
+    w... user_input != 'q':
         logger.debug('User did not choose to exit program.')
-        if user_input __ ('b', 'c', 'n'):
+        __ user_input __ ('b', 'c', 'n'):
             user_choices[user_input]()
         else:
             print('Please choose a valid command.')

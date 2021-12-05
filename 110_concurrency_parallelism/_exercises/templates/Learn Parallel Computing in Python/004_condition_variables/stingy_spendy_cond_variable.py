@@ -8,21 +8,21 @@ class StingySpendy:
 
     ___ stingy(self):
         ___ i __ r...(1000000):
-            self.cv.acquire()
+            self.cv.a...
             self.money += 10
             self.cv.notify()
-            self.cv.release()
+            self.cv.r..
         print("Stingy Done")
 
     ___ spendy(self):
         ___ i __ r...(500000):
-            self.cv.acquire()
-            while self.money < 20:
+            self.cv.a...
+            w... self.money < 20:
                 self.cv.wait()
             self.money -= 20
-            if self.money < 0:
+            __ self.money < 0:
                 print("Money in bank", self.money)
-            self.cv.release()
+            self.cv.r..
         print("Spendy Done")
 
 

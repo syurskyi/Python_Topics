@@ -19,11 +19,11 @@ ___ parse_to_array(text):
     metar_str = ""
     metars = []
     ___ line __ lines:
-        if re.search(TAF_REGEX, line):
-            break
-        if not re.search(COMMENT_REGEX, line):
+        __ re.search(TAF_REGEX, line):
+            _____
+        __ not re.search(COMMENT_REGEX, line):
             metar_str += line.strip()
-        if re.search(METAR_CLOSE_REGEX, line):
+        __ re.search(METAR_CLOSE_REGEX, line):
             metars.append(metar_str)
             metar_str = ""
     return metars
@@ -32,15 +32,15 @@ ___ parse_to_array(text):
 ___ extract_wind_direction(metars):
     winds = []
     ___ metar __ metars:
-        if re.search(WIND_REGEX, metar):
+        __ re.search(WIND_REGEX, metar):
             ___ token __ metar.split
-                if re.match(WIND_EX_REGEX, token): winds.append(re.match(WIND_EX_REGEX, token).group(1))
+                __ re.match(WIND_EX_REGEX, token): winds.append(re.match(WIND_EX_REGEX, token).group(1))
     return winds
 
 
 ___ mine_wind_distribution(winds, wind_dist):
     ___ wind __ winds:
-        if re.search(VARIABLE_WIND_REGEX, wind):
+        __ re.search(VARIABLE_WIND_REGEX, wind):
             ___ i __ r...(8):
                 wind_dist[i] += 1
         elif re.search(VALID_WIND_REGEX, wind):

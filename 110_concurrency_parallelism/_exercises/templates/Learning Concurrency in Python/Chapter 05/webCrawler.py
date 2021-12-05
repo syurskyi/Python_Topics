@@ -1,4 +1,4 @@
-____ urllib.request ______ Request, urlopen, urljoin, URLError
+____ u__.r.. ______ Request, u.., urljoin, URLError
 ____ urllib.parse ______ urlparse
 ______ t___
 ______ _
@@ -24,32 +24,32 @@ class Crawler(_.T..):
     myssl.check_hostname=False
     myssl.verify_mode=ssl.CERT_NONE
     # process all the links in our queue
-    while True:
+    w... T..
       
       self.urlLock.a..
       print("Queue Size: {}".format(self.linksToCrawl.qsize()))
       link = self.linksToCrawl.get()
-      self.urlLock.release()
+      self.urlLock.r..
       # have we reached the end of our queue?
-      if link is None:
-        break
+      __ link is None:
+        _____
 
       # Have we visited this link already?
-      if (link __ self.haveVisited):
+      __ (link __ self.haveVisited):
         print("Already Visited: {}".format(link))
-        break
+        _____
       
       try:
         link = urljoin(self.baseUrl, link)
         req = Request(link, headers={'User-Agent': 'Mozilla/5.0'})
-        response = urlopen(req, context=myssl)
+        response = u..(req, context=myssl)
 
         print("Url {} Crawled with Status: {}".format(response.geturl(), response.getcode()))
         
         soup = BeautifulSoup(response.read(), "html.parser")
         
         ___ atag __ soup.find_all('a'):
-          if (atag.get('href') not __ self.haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
+          __ (atag.get('href') not __ self.haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
             self.linksToCrawl.put(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))
@@ -71,7 +71,7 @@ ___ main
   numberOfThreads = input("No Threads > ")
 
   linksToCrawl = queue.Queue()
-  urlLock = _.Lock()
+  urlLock = _.L...()
   linksToCrawl.put(baseUrl)
   haveVisited = []
   crawlers = []

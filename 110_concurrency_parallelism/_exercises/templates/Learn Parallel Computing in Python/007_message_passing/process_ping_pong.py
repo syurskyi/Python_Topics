@@ -4,7 +4,7 @@ ______ t___
 
 
 ___ ping(pipe_conn):
-    while (True):
+    w... (True):
         pipe_conn.send(["Ping", t___.t___()])
         pong = pipe_conn.recv()
         print(pong)
@@ -12,7 +12,7 @@ ___ ping(pipe_conn):
 
 
 ___ pong(pipe_conn):
-    while (True):
+    w... (True):
         ping = pipe_conn.recv()
         print(ping)
         t___.s..(1)

@@ -1,23 +1,23 @@
 ______ t___
-____ _ ______ T.., Lock
+____ _ ______ T.., L...
 
 
 class StingySpendy:
     money = 100
-    mutex = Lock()
+    mutex = L...()
 
     ___ stingy(self):
         ___ i __ r...(1000000):
-            self.mutex.acquire()
+            self.mutex.a...
             self.money += 10
-            self.mutex.release()
+            self.mutex.r..
         print("Stingy Done")
 
     ___ spendy(self):
         ___ i __ r...(1000000):
-            self.mutex.acquire()
+            self.mutex.a...
             self.money -= 10
-            self.mutex.release()
+            self.mutex.r..
         print("Spendy Done")
 
 

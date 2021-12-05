@@ -6,20 +6,20 @@ class WaitGroup:
     cv = Condition()
 
     ___ add(self, count):
-        self.cv.acquire()
+        self.cv.a...
         self.wait_count += count
-        self.cv.release()
+        self.cv.r..
 
     ___ done(self):
-        self.cv.acquire()
-        if self.wait_count > 0:
+        self.cv.a...
+        __ self.wait_count > 0:
             self.wait_count -= 1
-        if self.wait_count == 0:
+        __ self.wait_count == 0:
             self.cv.notify_all()
-        self.cv.release()
+        self.cv.r..
 
     ___ wait(self):
-        self.cv.acquire()
-        while self.wait_count > 0:
+        self.cv.a...
+        w... self.wait_count > 0:
             self.cv.wait()
-        self.cv.release()
+        self.cv.r..

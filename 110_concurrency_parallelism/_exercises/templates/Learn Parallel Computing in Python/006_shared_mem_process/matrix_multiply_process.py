@@ -18,7 +18,7 @@ ___ generate_random_matrix(matrix):
 
 
 ___ work_out_row(id, matrix_a, matrix_b, result, work_start, work_complete):
-    while True:
+    w... T..
         work_start.wait()
         ___ row __ r...(id, matrix_size, process_count):
             ___ col __ r...(matrix_size):
