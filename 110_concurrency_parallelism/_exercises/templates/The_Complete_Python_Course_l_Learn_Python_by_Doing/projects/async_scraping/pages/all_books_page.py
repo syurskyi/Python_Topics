@@ -1,4 +1,4 @@
-______ re
+______ __
 ______ logging
 
 ____ locators.all_books_page ______ AllBooksPageLocators
@@ -24,7 +24,7 @@ c_ AllBooksPage:
         content = soup.select_one(AllBooksPageLocators.PAGER).string
         logger.info(f'Found number of catalogue pages available: `{content}`')
         pattern = 'Page [0-9]+ of ([0-9]+)'
-        matcher = re.search(pattern, content)
-        pages = int(matcher.group(1))
+        matcher = __.search(pattern, content)
+        pages = i..(matcher.g..(1))
         logger.info(f'Extracted number of pages as integer: `{pages}`.')
         return pages

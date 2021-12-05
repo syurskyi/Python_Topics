@@ -46,7 +46,7 @@ c_ Crawler(_.T..):
 
         print("Url {} Crawled with Status: {}".format(response.geturl(), response.getcode()))
         
-        soup = BeautifulSoup(response.read(), "html.parser")
+        soup = BeautifulSoup(response.r.. , "html.parser")
         
         ___ atag __ soup.find_all('a'):
           __ (atag.get('href') not __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
@@ -77,7 +77,7 @@ ___ main
   crawlers = []
   errorLinks = []
 
-  ___ i __ r...(int(numberOfThreads)):
+  ___ i __ r...(i..(numberOfThreads)):
     crawler = Crawler(baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock)
     crawler.s..
     crawlers.a..(crawler)
@@ -85,8 +85,8 @@ ___ main
   ___ crawler __ crawlers:
     crawler.j..()
 
-  print("Total Number of Pages Visited {}".format(len(haveVisited)))
-  print("Total Number of Pages with Errors {}".format(len(errorLinks)))
+  print("Total Number of Pages Visited {}".format(l..(haveVisited)))
+  print("Total Number of Pages with Errors {}".format(l..(errorLinks)))
 
 
 __ _____ __ _____

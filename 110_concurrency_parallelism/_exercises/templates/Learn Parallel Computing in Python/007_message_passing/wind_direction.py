@@ -1,5 +1,5 @@
 ______ __
-______ re
+______ __
 ____ _ ______ Pipe
 ____ __.p.. ______ j..
 
@@ -19,15 +19,15 @@ METAR_CLOSE_REGEX = ".*="
 ___ parse_to_array(text_conn, metars_conn):
     text = text_conn.r..
     w... text is not None:
-        lines = text.splitlines()
+        lines = text.s...
         metar_str = ""
         metars = []
         ___ line __ lines:
-            __ re.search(TAF_REGEX, line):
+            __ __.search(TAF_REGEX, line):
                 _____
-            __ not re.search(COMMENT_REGEX, line):
+            __ not __.search(COMMENT_REGEX, line):
                 metar_str += line.strip()
-            __ re.search(METAR_CLOSE_REGEX, line):
+            __ __.search(METAR_CLOSE_REGEX, line):
                 metars.a..(metar_str)
                 metar_str = ""
         metars_conn.s..(metars)
@@ -40,9 +40,9 @@ ___ extract_wind_direction(metars_conn, winds_conn):
     w... metars is not None:
         winds = []
         ___ metar __ metars:
-            __ re.search(WIND_REGEX, metar):
+            __ __.search(WIND_REGEX, metar):
                 ___ token __ metar.split
-                    __ re.match(WIND_EX_REGEX, token): winds.a..(re.match(WIND_EX_REGEX, token).group(1))
+                    __ __.match(WIND_EX_REGEX, token): winds.a..(__.match(WIND_EX_REGEX, token).g..(1))
         winds_conn.s..(winds)
         metars = metars_conn.r..
     winds_conn.s..(None)
@@ -53,11 +53,11 @@ ___ mine_wind_distribution(winds_conn, wind_dist_conn):
     winds = winds_conn.r..
     w... winds is not None:
         ___ wind __ winds:
-            __ re.search(VARIABLE_WIND_REGEX, wind):
+            __ __.search(VARIABLE_WIND_REGEX, wind):
                 ___ i __ r...(8):
                     wind_dist[i] += 1
-            elif re.search(VALID_WIND_REGEX, wind):
-                d = int(re.match(WIND_DIR_ONLY_REGEX, wind).group(1))
+            elif __.search(VALID_WIND_REGEX, wind):
+                d = i..(__.match(WIND_DIR_ONLY_REGEX, wind).g..(1))
                 dir_index = round(d / 45.0) % 8
                 wind_dist[dir_index] += 1
         winds = winds_conn.r..
@@ -75,8 +75,8 @@ __ _____ __ _____
     path_with_files = "../metarfiles"
     start = t___.t___()
     ___ file __ __.listdir(path_with_files):
-        f = open(j..(path_with_files, file), "r")
-        text = f.read()
+        f = o..(j..(path_with_files, file), "r")
+        text = f.r..
         text_conn_a.s..(text)
     text_conn_a.s..(None)
     wind_dist = winds_dist_conn_b.r..
