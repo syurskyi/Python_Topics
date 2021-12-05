@@ -62,4 +62,4 @@ __ _____ __ _____
         wind_dist = mine_wind_distribution(winds, wind_dist)
     end = t___.t___()
     print(wind_dist)
-    print("Time taken", end - start)
+    print("Time taken", ? -  ?
