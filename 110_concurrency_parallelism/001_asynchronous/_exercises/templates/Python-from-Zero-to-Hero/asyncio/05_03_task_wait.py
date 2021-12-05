@@ -1,39 +1,39 @@
-____ ____
-_____ ____ ____ FIRST_COMPLETED
-_____ collections ____ namedtuple
-
-____ aiohttp
-
-Service = namedtuple('Service', ('name', 'url', 'ip_attr'))
-
-services = (
-    Service('ipify', 'https://api.ipify.org?format=json', 'ip'),
-    Service('ip-api', 'http://ip-api.com/json', 'query')
-)
-
-
-_____ ___ get_json(url):
-    _____ w___ aiohttp.ClientSession() __ session:
-        _____ w___ session.get(url) __ response:
-            r_ _____ response.json()
-
-
-_____ ___ fetch_ip(service):
-    print(f'Fetching IP from {service.name}')
-
-    json_response = _____ get_json(service.url)
-    ip = json_response[service.ip_attr]
-    r_ f'{service.name} finished with result: {ip}'
-
-
-_____ ___ main
-    coros = [fetch_ip(service) ___ service __ services]
-
-    done, pending = _____ ____.wait(coros, return_when=FIRST_COMPLETED)
-
-    ___ x __ done:
-        print(x.result())
-
-
-__ _______ __ _______
-    ____.run(main())
+# ____ ____
+# _____ ____ ____ F..
+# _____ c.. ____ n..
+#
+# ____ ai..
+#
+# Service = n.. 'Service', ('name', 'url', 'ip_attr'
+#
+# services = (
+#     ?('ipify', 'https://api.ipify.org?format=json', 'ip'),
+#     ?('ip-api', 'http://ip-api.com/json', 'query')
+# )
+#
+#
+# _____ ___ get_json url
+#     _____ w___ a__.C.. __ session
+#         _____ w___ ?.g.. ? __ response
+#             r_ _____ ?.j___
+#
+#
+# _____ ___ fetch_ip service
+#     print _* Fetching IP from |?.n..|
+#
+#     json_response = _____ g.. ?.u..
+#     ip = ? ?.i..
+#     r_ _*|?.n..| finished with result: |?|
+#
+#
+# _____ ___ main
+#     coros = ? service ___ ? __ services
+#
+#     done, pending = _____ ____.w.. ? return_when=F..
+#
+#     ___ x __ d..
+#         print ?.r..
+#
+#
+# __ _______ __ _______
+#     ____.r.. m..
