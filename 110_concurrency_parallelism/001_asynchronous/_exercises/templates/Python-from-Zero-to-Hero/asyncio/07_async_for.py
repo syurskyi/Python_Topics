@@ -14,7 +14,7 @@ _____ ___ get_pages(docs):
             yield page
 
 
-_____ ___ main():
+_____ ___ main
     _____ ___ page __ get_pages(['doc1', 'doc2']):
         print(f'finally {page}')
 

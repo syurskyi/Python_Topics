@@ -43,7 +43,7 @@ _____ ___ download_albums(albums):
     r_ photos
 
 
-_____ ___ main1():
+_____ ___ main1
     task1 = ____.create_task(download_albums([1, 2, 'a', 4]))
 
     ___
@@ -60,7 +60,7 @@ ___ handle_result(fut):
     print(fut.result())
 
 
-_____ ___ main2():
+_____ ___ main2
     task1 = ____.create_task(download_albums([1, 2, 'a', 4]))
 
     task1.add_done_callback(handle_result)
@@ -70,7 +70,7 @@ _____ ___ main2():
     print('after sleep')
 
 
-_____ ___ main_gather():
+_____ ___ main_gather
     _____ w___ aiohttp.ClientSession() __ session:
         tasks = [
             photos_by_album('t1', 1, session),

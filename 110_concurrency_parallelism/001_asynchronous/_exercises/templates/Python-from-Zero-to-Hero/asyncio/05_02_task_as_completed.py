@@ -2,17 +2,17 @@ ____ ____
 ____ t___
 
 
-_____ ___ tick():
+_____ ___ tick
     _____ ____.s..(1)
     r_ 'Tick'
 
 
-_____ ___ tock():
+_____ ___ tock
     _____ ____.s..(2)
     r_ 'Tock'
 
 
-_____ ___ main():
+_____ ___ main
     start = t___.perf_counter()
 
     t1 = ____.create_task(tick())

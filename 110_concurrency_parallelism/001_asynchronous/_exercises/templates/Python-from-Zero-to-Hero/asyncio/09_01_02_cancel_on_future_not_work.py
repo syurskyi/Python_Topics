@@ -15,7 +15,7 @@ _____ ___ my_sleep(secs):
     print(f'Slept for {secs} secs')
 
 
-_____ ___ main_cancel_tasks():
+_____ ___ main_cancel_tasks
     tasks = [____.create_task(my_sleep(secs)) ___ secs __ [2, 5, 7]]
     sleepers = ____.gather(*tasks)
     print('awaiting')
@@ -30,7 +30,7 @@ _____ ___ main_cancel_tasks():
         _____ ____.s..(5)
 
 
-_____ ___ main_cancel_future():
+_____ ___ main_cancel_future
     sleepers = ____.gather(*[my_sleep(secs) ___ secs __ [2, 5, 7]])
     print('awaiting')
     ___

@@ -21,7 +21,7 @@ c_ AsyncIterator:
         r_ i
 
 
-_____ ___ main():
+_____ ___ main
     _____ ___ n __ AsyncIterator(10):
         print(f'finally {n}')
 

@@ -40,7 +40,7 @@ _____ ___ download_albums(albums):
             yield _____ photos_by_album(f't{album}', album, session)
 
 
-_____ ___ main():
+_____ ___ main
     ___
         _____ ___ photos __ download_albums([1, 2, 'a', 4]):
             print_photo_titles(photos)

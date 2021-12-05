@@ -11,7 +11,7 @@ _____ ___ fetch_doc(doc):
 _____ ___ get_docs(docs, token):
     pages = []
     ___ cur_doc __ docs:
-        __ token.is_set():
+        __ token.is_set
             break
         doc = _____ fetch_doc(cur_doc)
         ___ page __ doc:
@@ -25,7 +25,7 @@ ___ get_response(token):
         token.set()
 
 
-_____ ___ main():
+_____ ___ main
     token = threading.Event()
     task = ____.create_task(get_docs(['doc1', 'doc2', 'doc3'], token))
 

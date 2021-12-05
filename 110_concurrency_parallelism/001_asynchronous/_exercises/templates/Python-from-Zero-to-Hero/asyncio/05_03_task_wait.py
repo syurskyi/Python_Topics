@@ -26,7 +26,7 @@ _____ ___ fetch_ip(service):
     r_ f'{service.name} finished with result: {ip}'
 
 
-_____ ___ main():
+_____ ___ main
     coros = [fetch_ip(service) ___ service __ services]
 
     done, pending = _____ ____.wait(coros, return_when=FIRST_COMPLETED)

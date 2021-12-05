@@ -7,7 +7,7 @@ _____ m__.d.. ____ m..
 thread_local = threading.local()
 
 
-___ get_session():
+___ get_session
     __ not hasattr(thread_local, 'session'):
         thread_local.session = requests.Session()
     r_ thread_local.session

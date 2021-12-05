@@ -54,7 +54,7 @@ ___ get_coros(session):
 
 
 ___ cancel_future(loop, future, after):
-    ___ inner_cancel():
+    ___ inner_cancel
         print('sleeping before future cancel')
         t___.s..(after)
         print('cancel future')
@@ -65,7 +65,7 @@ ___ cancel_future(loop, future, after):
 
 
 ___ cancel_tasks(tasks, after):
-    ___ inner_cancel():
+    ___ inner_cancel
         t___.s..(after)
         ___ i, t __ e___(tasks, start=1):
             print(f'cancel {i}, {t}')
@@ -75,7 +75,7 @@ ___ cancel_tasks(tasks, after):
     t.start()
 
 
-_____ ___ main_gather_cancel_on_tasks():
+_____ ___ main_gather_cancel_on_tasks
     _____ w___ aiohttp.ClientSession() __ session:
         tasks = [____.create_task(coro) ___ coro __ get_coros(session)]
         future = ____.gather(*tasks)
@@ -89,7 +89,7 @@ _____ ___ main_gather_cancel_on_tasks():
             print(f'Excepted at await {repr(ex)}')
 
 
-_____ ___ main_gather_cancel_on_future():
+_____ ___ main_gather_cancel_on_future
     _____ w___ aiohttp.ClientSession() __ session:
         future = ____.gather(*(get_coros(session)))
 
@@ -102,7 +102,7 @@ _____ ___ main_gather_cancel_on_future():
             print(f'Excepted at await {repr(ex)}')
 
 
-_____ ___ main_gather_return_exceptions():
+_____ ___ main_gather_return_exceptions
     _____ w___ aiohttp.ClientSession() __ session:
         tasks = [____.create_task(coro) ___ coro __ get_coros(session)]
         future = ____.gather(*tasks, return_exceptions=True)

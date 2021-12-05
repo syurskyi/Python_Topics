@@ -40,7 +40,7 @@ _____ ___ photos_by_album(task_name, album, session):
     r_ [Photo.from_json(photo) ___ photo __ photos_json]
 
 
-_____ ___ main_wait():
+_____ ___ main_wait
     _____ w___ aiohttp.ClientSession() __ session:
         tasks = [
             photos_by_album('t1', 1, session),

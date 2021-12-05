@@ -1,14 +1,14 @@
 ____ ____
 
 
-_____ ___ tick():
+_____ ___ tick
     print("Tick")
     _____ ____.s..(1)
     print("Tock")
     r_ 'Tick-Tock'
 
 
-_____ ___ main():
+_____ ___ main
     t1 = ____.create_task(tick(), name='tick1')
     t2 = ____.ensure_future(tick())
 

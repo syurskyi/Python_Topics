@@ -44,7 +44,7 @@ _____ ___ download_albums(albums):
                 print(repr(ex))
 
 
-_____ ___ main():
+_____ ___ main
     _____ ___ photos __ download_albums([1, 2, 'a', 4]):
         print_photo_titles(photos)
 

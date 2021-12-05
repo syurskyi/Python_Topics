@@ -19,7 +19,7 @@ c_ Terminal:
         loop.call_soon_threadsafe(future.set_result, 1)
 
 
-_____ ___ main():
+_____ ___ main
     t = Terminal()
     result = _____ t.start()
     print(result)
