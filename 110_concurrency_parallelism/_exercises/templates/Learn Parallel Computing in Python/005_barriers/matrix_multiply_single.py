@@ -1,5 +1,5 @@
 ______ t___
-____ random ______ Random
+____ r___ ______ R..
 
 matrix_size = 200
 # matrix_a = [[3, 1, -4],
@@ -11,13 +11,13 @@ matrix_size = 200
 matrix_a = [[0] * matrix_size ___ a __ r...(matrix_size)]
 matrix_b = [[0] * matrix_size ___ b __ r...(matrix_size)]
 result = [[0] * matrix_size ___ r __ r...(matrix_size)]
-random = Random()
+r___ = R..()
 
 
 ___ generate_random_matrix(matrix):
     ___ row __ r...(matrix_size):
         ___ col __ r...(matrix_size):
-            matrix[row][col] = random.randint(-5, 5)
+            matrix[row][col] = r___.r..(-5, 5)
 
 
 start = t___.t___()

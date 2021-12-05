@@ -1,6 +1,6 @@
 ______ _
 ______ t___
-____ random ______ Random
+____ r___ ______ R..
 
 ____ _ ______ B...
 
@@ -8,13 +8,13 @@ ____ _.context ______ P..
 
 process_count = 8
 matrix_size = 200
-random = Random()
+r___ = R..()
 
 
 ___ generate_random_matrix(matrix):
     ___ row __ r...(matrix_size):
         ___ col __ r...(matrix_size):
-            matrix[row * matrix_size + col] = random.randint(-5, 5)
+            matrix[row * matrix_size + col] = r___.r..(-5, 5)
 
 
 ___ work_out_row(id, matrix_a, matrix_b, result, work_start, work_complete):

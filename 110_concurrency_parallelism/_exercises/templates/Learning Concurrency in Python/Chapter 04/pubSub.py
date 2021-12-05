@@ -11,7 +11,7 @@ c_ Publisher(_.T..):
 
   ___ run
     w... T..
-      integer = random.randint(0,1000)
+      integer = r___.r..(0,1000)
       condition.a..
       print("Condition Acquired by Publisher: {}".format(name))
       integers.a..(integer)
