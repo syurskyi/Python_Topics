@@ -1,7 +1,7 @@
 ______ unittest
 
 ___ simpleFunction(x):
-  return x + 1
+  r.. x + 1
 
 c_ SimpleFunctionTest(unittest.TestCase):
 

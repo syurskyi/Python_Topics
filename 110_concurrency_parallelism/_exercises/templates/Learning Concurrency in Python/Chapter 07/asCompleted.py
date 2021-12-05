@@ -13,7 +13,7 @@ ___ checkStatus(url):
   print("Attempting to crawl URL: {}".format(url))
   req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
   response = u..(req)
-  return response.getcode(), url
+  r.. response.getcode(), url
 
 ___ printStatus(statusCode):
   print("URL Crawled with status code: {}".format(statusCode))

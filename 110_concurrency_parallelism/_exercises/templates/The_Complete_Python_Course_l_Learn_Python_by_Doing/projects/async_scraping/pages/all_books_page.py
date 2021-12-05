@@ -16,7 +16,7 @@ c_ AllBooksPage:
     @property
     ___ books
         logger.debug(f'Finding all books in the page using `{AllBooksPageLocators.BOOKS}`')
-        return [BookParser(e) ___ e __ soup.select(AllBooksPageLocators.BOOKS)]
+        r.. [BookParser(e) ___ e __ soup.select(AllBooksPageLocators.BOOKS)]
 
     @property
     ___ page_count
@@ -27,4 +27,4 @@ c_ AllBooksPage:
         matcher = __.s..(pattern, content)
         pages = i..(matcher.g..(1))
         logger.info(f'Extracted number of pages as integer: `{pages}`.')
-        return pages
+        r.. pages

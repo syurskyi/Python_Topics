@@ -7,8 +7,8 @@ controller = _.C...()
 ___ all_free(intersections_to_lock):
     ___ it __ intersections_to_lock:
         __ it.locked_by >= 0:
-            return False
-    return True
+            r.. False
+    r.. True
 
 
 ___ lock_intersections_in_distance(id, reserve_start, reserve_end, crossings):

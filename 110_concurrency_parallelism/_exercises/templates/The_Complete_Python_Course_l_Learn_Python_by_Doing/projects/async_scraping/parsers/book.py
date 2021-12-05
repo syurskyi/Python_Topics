@@ -25,7 +25,7 @@ c_ BookParser:
         parent = parent
 
     ___ __repr__
-        return f'<Book {name} {price}, {rating} stars>'
+        r.. f'<Book {name} {price}, {rating} stars>'
 
     @property
     ___ name
@@ -33,7 +33,7 @@ c_ BookParser:
         locator = BookLocators.NAME_LOCATOR
         item_name = parent.select_one(locator).attrs['title']
         logger.info(f'Found book name, `{item_name}`.')
-        return item_name
+        r.. item_name
 
     @property
     ___ link
@@ -41,7 +41,7 @@ c_ BookParser:
         locator = BookLocators.LINK_LOCATOR
         item_url = parent.select_one(locator).attrs['href']
         logger.info(f'Found book page link, `{item_url}`.')
-        return item_url
+        r.. item_url
 
     @property
     ___ price
@@ -54,7 +54,7 @@ c_ BookParser:
         matcher = __.s..(pattern, item_price)
         price = float(matcher.g..(1))
         logger.info(f'Found book price, `{price}`.')
-        return price
+        r.. price
 
     @property
     ___ rating
@@ -69,4 +69,4 @@ c_ BookParser:
         logger.debug('Converting to integer for sorting.')
         rating = BookParser.RATINGS.get(rating_class)
         logger.info(f'Found book rating, `{rating}`.')
-        return rating
+        r.. rating

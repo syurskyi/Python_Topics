@@ -49,7 +49,7 @@ async ___ fetch_page(session, url):
     logger.info(f'Requesting {url}')
     async with session.get(url) as response:
         print(f'{url} took {t___.t___() - page_start}')
-        return await response.text()
+        r.. await response.text()
 
 
 async ___ get_multiple_pages(loop, *urls):
@@ -57,7 +57,7 @@ async ___ get_multiple_pages(loop, *urls):
     async with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
             tasks.a..(fetch_page(session, url))
-        return await asyncio.gather(*tasks)
+        r.. await asyncio.gather(*tasks)
 
 
 logger.info(f'Going through {page.page_count} pages of books...')
