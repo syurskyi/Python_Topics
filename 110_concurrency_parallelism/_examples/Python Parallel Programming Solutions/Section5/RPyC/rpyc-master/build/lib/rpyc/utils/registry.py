@@ -46,7 +46,7 @@ class RegistryServer(object):
         raise NotImplementedError()
 
     def on_service_added(self, name, addrinfo):
-        """called when a new service joins the registry (but not on keepalives).
+        """called when a new service 003_joins the registry (but not on keepalives).
         override this to add custom logic"""
 
     def on_service_removed(self, name, addrinfo):

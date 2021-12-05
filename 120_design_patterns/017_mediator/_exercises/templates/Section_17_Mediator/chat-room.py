@@ -27,7 +27,7 @@
 #
 #
 #     ___ join person
-#         join_msg _ _*|?.n..| joins the chat'
+#         join_msg _ _*|?.n..| 003_joins the chat'
 #         b..('room' ?
 #         p___.r___ _ ?
 #         pe___.ap.. ?

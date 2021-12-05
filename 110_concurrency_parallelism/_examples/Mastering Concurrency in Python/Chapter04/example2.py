@@ -4,7 +4,7 @@ from threading import Lock
 
 my_lock = Lock()
 
-# induces deadlocks
+# induces 008_deadlocks
 def get_data_from_file_v1(filename):
     my_lock.a..
 

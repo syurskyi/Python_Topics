@@ -123,7 +123,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
         dialog.cancelButton.setVisible F..
         dialog.e..
         m_nickname _ dialog.nickname.t__().s..
-        action.e..(m_nickname, "joins the chat")
+        action.e..(m_nickname, "003_joins the chat")
 
     ___ rebuildHistory 
         history _ '\n'.join(m_messages)

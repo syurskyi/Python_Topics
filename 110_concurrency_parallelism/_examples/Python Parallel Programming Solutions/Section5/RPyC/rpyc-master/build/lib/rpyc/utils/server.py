@@ -325,7 +325,7 @@ class ThreadPoolServer(Server):
         self.polling_thread.start()
 
     def close(self):
-        '''closes a ThreadPoolServer. In particular, joins the thread pool.'''
+        '''closes a ThreadPoolServer. In particular, 003_joins the thread pool.'''
         # close parent server
         Server.close(self)
         # stop producer thread

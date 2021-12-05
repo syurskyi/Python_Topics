@@ -123,7 +123,7 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         dialog.cancelButton.setVisible(False)
         dialog.exec_()
         self.m_nickname = dialog.nickname.text().strip()
-        self.action.emit(self.m_nickname, "joins the chat")
+        self.action.emit(self.m_nickname, "003_joins the chat")
 
     def rebuildHistory(self):
         history = '\n'.join(self.m_messages)

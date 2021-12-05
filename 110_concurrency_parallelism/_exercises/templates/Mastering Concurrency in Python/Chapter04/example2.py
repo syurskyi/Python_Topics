@@ -4,7 +4,7 @@
 #
 # my_lock _ L..
 #
-# # induces deadlocks
+# # induces 008_deadlocks
 # ___ get_data_from_file_v1 filename
 #     ?.a..
 #
