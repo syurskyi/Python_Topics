@@ -1,16 +1,16 @@
-# ______ __
-# ______ _..
-#
-#
-# ___ exec_watcher
-#     timer _ ?.T.. 5.0 p..
-#     ?.s..
-#
-#
-# ___ print_files
-#     ___ i __ __.l_d.. '.'
-#         print ?
-#     ?
-#
-#
-# ?
+import os
+import threading
+
+
+def exec_watcher():
+    timer = threading.Timer(5.0, print_files)
+    timer.start()
+
+
+def print_files():
+    for i in os.listdir('.'):
+        print(i)
+    exec_watcher()
+
+
+exec_watcher()
