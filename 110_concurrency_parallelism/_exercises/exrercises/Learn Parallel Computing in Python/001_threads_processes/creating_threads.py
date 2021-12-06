@@ -1,14 +1,14 @@
-# ______ t___
-# ____ _ ______ T..
-#
-#
-# ___ do_work
-#     print("Starting work")
-#     t___.s.. 1
-#     print("Finished work")
-#
-#
-# ___ _ __ r... 5
-#     t = T..(t.._ ? a.._
-#     ?.s..
-#
+import time
+from threading import Thread
+
+
+def do_work():
+    print("Starting work")
+    time.sleep(1)
+    print("Finished work")
+
+
+for _ in range(5):
+    t = Thread(target=do_work, args=())
+    t.start()
+
