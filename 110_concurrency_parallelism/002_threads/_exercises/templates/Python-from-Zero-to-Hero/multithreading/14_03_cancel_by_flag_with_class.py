@@ -16,7 +16,7 @@ c_ ThreeSumTask:
 
     ___ cancel
         w___ lock_obj:
-            canceled = True
+            canceled = T..
 
     ___ c..( ints):
         print(f'started count_three_sum')

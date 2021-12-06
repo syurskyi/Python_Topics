@@ -41,7 +41,7 @@ ___ do_bank_stuff(accounts, total):
         a1, a2 = get_two_accounts(accounts)
         amount = r__.r..(1, 100)
         do_transfer(a1, a2, amount)
-        validate_bank(accounts, total, quiet=True)
+        validate_bank(accounts, total, quiet=T..)
 
 
 ___ create_accounts() -> List[Account]:
@@ -69,10 +69,10 @@ ___ validate_bank(accounts: List[Account], total: int, quiet=False):
     __ current != total:
         print("ERROR: Inconsistent account balance: ${:,} vs ${:,}".format(
             current, total
-        ), flush=True)
-    elif not quiet:
+        ), flush=T..)
+    elif n.. quiet:
         print("All good: Consistent account balance: ${:,}".format(
-            total), flush=True)
+            total), flush=T..)
 
 
 ___ get_two_accounts(accounts):

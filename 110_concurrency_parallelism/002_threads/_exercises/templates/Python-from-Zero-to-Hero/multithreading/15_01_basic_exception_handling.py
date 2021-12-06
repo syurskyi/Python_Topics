@@ -8,7 +8,7 @@ ___ countg___
     i = 0
 
     try:
-        w.... True:
+        w.... T..:
             __ throw:
                 raise ZeroDivisionError()
 
@@ -32,7 +32,7 @@ __ _____ __ _____
 
     t___.s(3)
 
-    throw = True
+    throw = T..
 
     ___ x __ r..(1, 5):
         print(f'{x=}')

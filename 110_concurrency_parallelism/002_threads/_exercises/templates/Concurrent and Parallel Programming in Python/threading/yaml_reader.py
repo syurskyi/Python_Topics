@@ -33,16 +33,16 @@ c_ YamlPipelineExecutor(_______.T...):
             num_instances = worker.get('instances', 1)
 
             _downstream_queues[worker_name] = output_queues
-            __ input_queue is not None:
+            __ input_queue is n.. None:
                 _queue_consumers[input_queue] = num_instances
             init_params = {
-                'input_queue': _queues[input_queue] __ input_queue is not None ____ None,
+                'input_queue': _queues[input_queue] __ input_queue is n.. None ____ None,
                 'output_queue': [_queues[o...] ___ output_queue __ output_queues] \
-                    __ output_queues is not None ____ None
+                    __ output_queues is n.. None ____ None
             }
 
             input_values = worker.get('input_values')
-            __ input_values is not None:
+            __ input_values is n.. None:
                 init_params['input_values'] = input_values
 
             _workers[worker_name] = []
@@ -63,7 +63,7 @@ c_ YamlPipelineExecutor(_______.T...):
     ___ run
         process_pipeline()
 
-        w.... True:
+        w.... T..:
             total_workers_alive = 0
             worker_stats = []
             to_del = []
@@ -74,7 +74,7 @@ c_ YamlPipelineExecutor(_______.T...):
                         total_worker_threads_alive += 1
                 total_workers_alive += total_worker_threads_alive
                 __ total_worker_threads_alive == 0:
-                    __ _downstream_queues[worker_name] is not None:
+                    __ _downstream_queues[worker_name] is n.. None:
                         ___ o... __ _downstream_queues[worker_name]:
                             number_of_consumers = _queue_consumers[o...]
                             ___ i __ r..(number_of_consumers):

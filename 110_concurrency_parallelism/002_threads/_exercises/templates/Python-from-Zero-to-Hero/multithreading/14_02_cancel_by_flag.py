@@ -38,7 +38,7 @@ __ _____ __ _____
 
     t___.s..(5)
 
-    should_stop = True
+    should_stop = T..
 
     t___.s(2)
 

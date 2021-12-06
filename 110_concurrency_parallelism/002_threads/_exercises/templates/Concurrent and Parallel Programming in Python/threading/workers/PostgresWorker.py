@@ -16,7 +16,7 @@ c_ PostgresMasterScheduler(_______.T...):
         s..
 
     ___ run
-        w.... True:
+        w.... T..:
             try:
                 val = _input_queue.get(timeout=10)
             except Empty:
