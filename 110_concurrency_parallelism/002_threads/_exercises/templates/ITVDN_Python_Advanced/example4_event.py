@@ -1,9 +1,9 @@
-# ______ t..
-# ______ t..
+# ______ ...
+# ______ ...
 #
 #
 # ___ producer
-#     t__.s.. 10
+#     ___.s.. 10
 #     print('Product found!')
 #     ?.s..
 #     ?.c..
@@ -15,7 +15,7 @@
 #     print('Product exists!')
 #
 #
-# product = t__.E..
+# product = ___.E..
 #
 # task1 = ?.T.. t.._p..
 # task2 = ?.T.. t.._c..

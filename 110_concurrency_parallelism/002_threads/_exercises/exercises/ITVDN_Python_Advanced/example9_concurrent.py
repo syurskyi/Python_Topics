@@ -1,9 +1,9 @@
 # ____ c__.f.. ______ TPE.. PPE..
-# ______ t..
+# ______ ...
 #
 #
 # ___ handler started_0 finished_0
-#     # print('VALUES', started, finished)
+#     # print('VALUES', ? ?
 #     result _ 0
 #     ___ i __ r.. ? ?
 #         ? +_ ?
@@ -12,7 +12,7 @@
 #
 # ___ run_by_executor executor_class max_workers_4
 #     executor _ ? m.._m..
-#     started _ t__.t..
+#     started _ _._
 #     future1 _ ?.s.. ? .._0, f.._2 ** 26)
 #     future2 _ ?.s.. ? .._2 ** 26, f.._2 ** 28)
 #
