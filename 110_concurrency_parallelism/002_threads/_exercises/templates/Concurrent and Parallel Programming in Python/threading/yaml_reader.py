@@ -3,7 +3,7 @@ _______ _______
 _______ t___
 
 _______ yaml
-____ multiprocessing _______ Queue
+____ _ _______ Queue
 
 
 c_ YamlPipelineExecutor(_______.T...):

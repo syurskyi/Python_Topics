@@ -10,7 +10,7 @@ ___ r...(path):
 ___ c..(ints, thread_name='t'):
     print(f'started count_three_sum in {thread_name}')
 
-    n = len(ints)
+    n = l..(ints)
     counter = 0
 
     ___ i __ r..(n):

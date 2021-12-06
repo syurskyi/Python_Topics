@@ -1,5 +1,5 @@
 _______ _______
-_______ datetime
+_______ d___
 _______ r__
 _______ t___
 ____ queue _______ Empty
@@ -31,7 +31,7 @@ c_ YahooFinancePriceScheduler(_______.T...):
             yahooFinacePriceWorker = YahooFinacePriceWorker(symbol=val)
             price = yahooFinacePriceWorker.get_price()
             ___ output_queue __ _output_queues:
-                output_values = (val, price, datetime.datetime.utcnow())
+                output_values = (val, price, d___.d___.utcnow())
                 o....put(output_values)
             t___.s..(r__.r__())
 

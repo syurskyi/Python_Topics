@@ -1,4 +1,4 @@
-_______ datetime
+_______ d___
 _______ r__
 _______ t___
 ____ _______ _______ T..., RLock
@@ -18,19 +18,19 @@ ___ maing___
     print("Starting transfers...")
 
     jobs = [
-        T...(t.._do_bank_stuff, args=(accounts, total)),
-        T...(t.._do_bank_stuff, args=(accounts, total)),
-        T...(t.._do_bank_stuff, args=(accounts, total)),
-        T...(t.._do_bank_stuff, args=(accounts, total)),
-        T...(t.._do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, a.._(accounts, total)),
+        T...(t.._do_bank_stuff, a.._(accounts, total)),
+        T...(t.._do_bank_stuff, a.._(accounts, total)),
+        T...(t.._do_bank_stuff, a.._(accounts, total)),
+        T...(t.._do_bank_stuff, a.._(accounts, total)),
     ]
 
-    t0 = datetime.datetime.now()
+    t0 = d___.d___.now()
 
     [j.s.. ___ j __ jobs]
     [j.j... ___ j __ jobs]
 
-    dt = datetime.datetime.now() - t0
+    dt = d___.d___.now() - t0
 
     print("Transfers complete ({:,.2f}) sec".format(dt.total_seconds()))
     validate_bank(accounts, total)
@@ -78,7 +78,7 @@ ___ do_transfer(from_account: Account, to_account: Account, amount: int):
         to_account.balance += amount
 
 
-___ validate_bank(accounts: List[Account], total: int, quiet=False):
+___ validate_bank(accounts: List[Account], total: int, quiet=F..):
     w___ transfer_lock:
         current = sum(a.balance ___ a __ accounts)
 

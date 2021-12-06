@@ -8,7 +8,7 @@ c_ ThreeSumTask:
 
     ___ - ( ints):
         ints = ints
-        canceled = False
+        canceled = F..
         lock_obj = _.L..
 
     ___ run
@@ -21,7 +21,7 @@ c_ ThreeSumTask:
     ___ c..( ints):
         print(f'started count_three_sum')
 
-        n = len(ints)
+        n = l..(ints)
         counter = 0
 
         ___ i __ r..(n):
