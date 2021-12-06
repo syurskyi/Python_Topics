@@ -1,34 +1,34 @@
-# _______ _
-#
-# ____ _.c.. _______ r..., c..
-# ____ _.d.. _______ m...
-#
-#
-# $m...
-# ___ run_in_parallel ints
-#     t1 = _.T..(t.._c.., d.._T.. a.._ ? *?
-#     t2 = _.T..(t.._c.., d.._T.. a.._ ? *?
-#
-#     ?.s..
-#     ?.s..
-#
-#     print('\nGoing to wait for threads')
-#
-#     ?.j...
-#     ?.j...
-#
-#
-# @m...
-# ___ run_sequentially ints
-#     c.. ? 'main'
-#     c.. ? 'main'
-#
-#
-# __ _____ __ _____
-#     print('started main')
-#     ints = r...("..\\\data\\1Kints.txt")
-#
-#     ? ?
-#     ? ?
-#
-#     print('ended main')
+import threading
+
+from count_three_sum import read_ints, count_three_sum
+from decorators import measure_time
+
+
+@measure_time
+def run_in_parallel(ints):
+    t1 = threading.Thread(target=count_three_sum, daemon=True, args=(ints, 't1'))
+    t2 = threading.Thread(target=count_three_sum, daemon=True, args=(ints, 't2'))
+
+    t1.start()
+    t2.start()
+
+    print('\nGoing to wait for threads')
+
+    t1.join()
+    t2.join()
+
+
+@measure_time
+def run_sequentially(ints):
+    count_three_sum(ints, 'main')
+    count_three_sum(ints, 'main')
+
+
+if __name__ == '__main__':
+    print('started main')
+    ints = read_ints("..\\\data\\1Kints.txt")
+
+    run_in_parallel(ints)
+    run_sequentially(ints)
+
+    print('ended main')
