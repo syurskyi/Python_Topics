@@ -1,27 +1,27 @@
-import threading
-import time
+_______ _
+_______ t___
 
 
-class NightClub:
-    def __init__(self):
-        self.bouncer = threading.Semaphore(3)
+c_ NightClub:
+    ___  -
+        bouncer = _.Semaphore(3)
 
-    def open_club(self):
-        for x in range(1, 51):
-            t = threading.Thread(target=self.guest, args=[x])
-            t.start()
+    ___ open_club(self):
+        ___ x __ r..(1, 51):
+            t = _.T..(t.._self.guest, args=[x])
+            t.s..
 
-    def guest(self, guest_id):
+    ___ guest( guest_id):
         print(f'\nGuest {guest_id} is waiting to entering night club')
-        self.bouncer.acquire()
+        bouncer.a..
 
         print(f'\nGuest {guest_id} is doing some dancing')
-        time.sleep(1)
+        t___.s(1)
 
         print(f'\nGuest {guest_id} is leaving the night club')
-        self.bouncer.release()
+        bouncer.r..)
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     club = NightClub()
     club.open_club()

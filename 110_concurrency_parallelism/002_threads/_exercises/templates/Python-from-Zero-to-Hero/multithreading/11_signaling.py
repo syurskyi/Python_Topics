@@ -1,101 +1,101 @@
-import random
-import threading
-import time
-from enum import Enum
+_______ random
+_______ _
+_______ t___
+____ enum _______ Enum
 
 
-class Event:
-    def __init__(self):
-        self.__handlers = []
+c_ Event:
+    ___  -
+        __handlers = []
 
-    def __call__(self, *args, **kwargs):
-        for f in self.__handlers:
+    ___ __call__( *args, **kwargs):
+        ___ f __ __handlers:
             f(*args, **kwargs)
 
-    def __iadd__(self, handler):
-        self.__handlers.append(handler)
-        return self
+    ___ __iadd__( handler):
+        __handlers.a..(handler)
+        r_ self
 
-    def __isub__(self, handler):
-        self.__handlers.remove(handler)
-        return self
+    ___ __isub__( handler):
+        __handlers.remove(handler)
+        r_ self
 
 
-class OperationStatus(Enum):
+c_ OperationStatus(Enum):
     FINISHED = 0
     FAULTED = 1
 
 
-class Protocol:
+c_ Protocol:
 
-    def __init__(self, port, ip_address):
-        self.ip_address = ip_address
-        self.port = port
+    ___ __init__( port, ip_address):
+        ip_address = ip_address
+        port = port
 
-        self.message_received = Event()
+        message_received = Event()
 
-        self.set_ip_port()
+        set_ip_port()
 
-    def set_ip_port(self):
+    ___ set_ip_port(self):
         # calling 3rd party lib passing port and ip
         print('set ip and port once')
-        time.sleep(0.2)
-        return
+        t___.s(0.2)
+        r_
 
-    def send(self, op_code, param):
-        def process_sending():
+    ___ send( op_code, param):
+        ___ process_sending():
             print(f'Operation is in action with param={param}')
-            result = self.process(op_code, param)
-            self.message_received(result)
+            result = process(op_code, param)
+            message_received(result)
 
-        t = threading.Thread(target=process_sending)
-        t.start()
+        t = _.T..(t.._process_sending)
+        t.s..
 
-    def process(self, op_code, param):
+    ___ process( op_code, param):
         print(f'processing operation={op_code} with param={param}')
-        time.sleep(3)
+        t___.s(3)
 
         # 3rd party lib response:
         finished = random.randint(0, 1) == 1
-        return OperationStatus.FINISHED if finished else OperationStatus.FAULTED
+        r_ OperationStatus.FINISHED __ finished else OperationStatus.FAULTED
 
 
 
-class BankTerminal:
-    def __init__(self, port, ip_address):
-        self.ip_address = ip_address
-        self.port = port
-        self.protocol = Protocol(port, ip_address)
-        self.protocol.message_received += self.on_message_received
+c_ BankTerminal:
+    ___ __init__( port, ip_address):
+        ip_address = ip_address
+        port = port
+        protocol = Protocol(port, ip_address)
+        protocol.message_received += on_message_received
 
-        self.operation_signal = threading.Event()
+        operation_signal = _.Event()
 
-    def on_message_received(self, status):
+    ___ on_message_received( status):
         print(f'Signaling for event:{status}')
-        self.operation_signal.set()
+        operation_signal.set()
 
-    def purchase(self, amount):
-        def process_purchase():
+    ___ purchase( amount):
+        ___ process_purchase():
             purchase_op_code = 1
-            self.protocol.send(purchase_op_code, amount)
+            protocol.send(purchase_op_code, amount)
 
-            self.operation_signal.clear()
+            operation_signal.clear()
             print('\nWaiting for signal')
-            self.operation_signal.wait()
+            operation_signal.wait()
             print('Purchase finished')
 
-        t = threading.Thread(target=process_purchase)
-        t.start()
+        t = _.T..(t.._process_purchase)
+        t.s..
 
-        return t
+        r_ t
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     bt = BankTerminal(10, '192.168.0.1')
     t = bt.purchase(20)
     print('Main decided to wait for purchase 1')
-    t.join()
+    t.j...
     t = bt.purchase(30)
     print('Main decided to wait for purchase 2')
-    t.join()
+    t.j...
     print('End of Main')

@@ -1,14 +1,14 @@
 _______ datetime
 _______ random
-_______ time
-from _______ _______ T..., RLock
-from typing _______ List
+_______ t___
+____ _______ _______ T..., RLock
+____ typing _______ List
 
 
 c_ Account:
     ___  -  balance=0):
         balance = balance
-        lock = RLock()
+        lock = R..
 
 
 ___ main():
@@ -19,17 +19,17 @@ ___ main():
     print("Starting transfers...")
 
     jobs = [
-        T...(target=do_bank_stuff, args=(accounts, total)),
-        T...(target=do_bank_stuff, args=(accounts, total)),
-        T...(target=do_bank_stuff, args=(accounts, total)),
-        T...(target=do_bank_stuff, args=(accounts, total)),
-        T...(target=do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, args=(accounts, total)),
+        T...(t.._do_bank_stuff, args=(accounts, total)),
     ]
 
     t0 = datetime.datetime.now()
 
-    [j.start() ___ j __ jobs]
-    [j.join() ___ j __ jobs]
+    [j.s.. ___ j __ jobs]
+    [j.j... ___ j __ jobs]
 
     dt = datetime.datetime.now() - t0
 
@@ -38,7 +38,7 @@ ___ main():
 
 
 ___ do_bank_stuff(accounts, total):
-    ___ _ __ range(1, 10_000):
+    ___ _ __ r..(1, 10_000):
         a1, a2 = get_two_accounts(accounts)
         amount = random.randint(1, 100)
         do_transfer(a1, a2, amount)
@@ -66,14 +66,14 @@ ___ do_transfer(from_account: Account, to_account: Account, amount: int):
         else (to_account.lock, from_account.lock)
     )
 
-    with lock1:
-        with lock2:
+    w___ lock1:
+        w___ lock2:
             from_account.balance -= amount
-            time.sleep(.000)
+            t___.s(.000)
             to_account.balance += amount
 
 
-transfer_lock = RLock()
+transfer_lock = R..
 
 
 ___ do_transfer_global_style(
@@ -81,9 +81,9 @@ ___ do_transfer_global_style(
     __ from_account.balance < amount:
         r_
 
-    with transfer_lock:
+    w___ transfer_lock:
         from_account.balance -= amount
-        time.sleep(.000)
+        t___.s(.000)
         to_account.balance += amount
 
 
@@ -93,7 +93,7 @@ ___ validate_bank(accounts: List[Account], total: int, quiet=False):
 
     [a.lock.a.. ___ a __ accounts]
     current = sum(a.balance ___ a __ accounts)
-    [a.lock.release() ___ a __ accounts]
+    [a.lock.r..) ___ a __ accounts]
 
     __ current != total:
         print("ERROR: Inconsistent account balance: ${:,} vs ${:,}".format(
@@ -107,7 +107,7 @@ ___ validate_bank(accounts: List[Account], total: int, quiet=False):
 ___ get_two_accounts(accounts):
     a1 = random.choice(accounts)
     a2 = a1
-    while a2 == a1:
+    w.... a2 == a1:
         a2 = random.choice(accounts)
 
     r_ a1, a2

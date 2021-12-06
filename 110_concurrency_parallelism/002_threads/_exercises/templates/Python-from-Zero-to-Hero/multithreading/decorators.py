@@ -1,26 +1,26 @@
-import time
-from functools import wraps
+_______ t___
+____ functools _______ wraps
 
 
-def async_measure_time(func):
+___ async_m...(func):
     @wraps(func)
-    async def wrap(*args, **kwargs):
-        start = time.perf_counter()
+    async ___ wrap(*args, **kwargs):
+        start = t___.perf_counter()
         result = await func(*args, **kwargs)
-        elapsed = time.perf_counter() - start
+        elapsed = t___.perf_counter() - start
         print(f'Executed {func} in {elapsed:0.2f} seconds')
-        return result
+        r_ result
 
-    return wrap
+    r_ wrap
 
 
-def measure_time(func):
+___ m...(func):
     @wraps(func)
-    def wrap(*args, **kwargs):
-        start = time.perf_counter()
+    ___ wrap(*args, **kwargs):
+        start = t___.perf_counter()
         result = func(*args, **kwargs)
-        elapsed = time.perf_counter() - start
+        elapsed = t___.perf_counter() - start
         print(f'Executed {func} in {elapsed:0.2f} seconds')
-        return result
+        r_ result
 
-    return wrap
+    r_ wrap

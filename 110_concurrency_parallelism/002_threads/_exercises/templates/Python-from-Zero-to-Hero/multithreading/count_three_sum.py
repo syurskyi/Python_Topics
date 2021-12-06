@@ -1,24 +1,24 @@
-def read_ints(path):
+___ r...(path):
     lst = []
-    with open(path, 'r') as f:
-        while line := f.readline():
-            lst.append(int(line))
+    w___ open(path, 'r') __ f:
+        w.... line := f.readline():
+            lst.a..(int(line))
 
-    return lst
+    r_ lst
 
 
-def count_three_sum(ints, thread_name='t'):
+___ c..(ints, thread_name='t'):
     print(f'started count_three_sum in {thread_name}')
 
     n = len(ints)
     counter = 0
 
-    for i in range(n):
-        for j in range(i + 1, n):
-            for k in range(j + 1, n):
-                if ints[i] + ints[j] + ints[k] == 0:
+    ___ i __ r..(n):
+        ___ j __ r..(i + 1, n):
+            ___ k __ r..(j + 1, n):
+                __ ints[i] + ints[j] + ints[k] == 0:
                     counter += 1
-                    print(f'Triple found in {thread_name}:{ints[i]}, {ints[j]}, {ints[k]}', end='\n')
+                    print(f'Triple found in {thread_name}:{ints[i]}, {ints[j]}, {ints[k]}', e.._'\n')
 
     print(f'ended count_three_sum in {thread_name}. Triplets counter={counter}')
-    return counter
+    r_ counter

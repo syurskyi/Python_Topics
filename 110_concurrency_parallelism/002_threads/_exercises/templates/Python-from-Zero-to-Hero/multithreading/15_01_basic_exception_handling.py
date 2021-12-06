@@ -1,40 +1,40 @@
-import threading
-import time
+_______ _
+_______ t___
 
 throw = False
 
 
-def count():
+___ count():
     i = 0
 
     try:
-        while True:
-            if throw:
+        w.... True:
+            __ throw:
                 raise ZeroDivisionError()
 
             i += 1
             print(f'{i=}')
-            time.sleep(1)
+            t___.s(1)
     except ZeroDivisionError:
         print('Exception occured')
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     print('started main')
 
-    t1 = threading.Thread(target=count)
-    t1.start()
+    t1 = _.T..(t.._count)
+    t1.s..
 
     # try:
     #     t1.start()
     # except:
     #     print(f'Excepted')
 
-    time.sleep(3)
+    t___.s(3)
 
     throw = True
 
-    for x in range(1, 5):
+    ___ x __ r..(1, 5):
         print(f'{x=}')
-        time.sleep(1)
+        t___.s(1)
     print('ended main')

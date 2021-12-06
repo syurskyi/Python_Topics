@@ -1,11 +1,11 @@
 _______ _______
 _______ datetime
 _______ random
-_______ time
-from queue _______ Empty
+_______ t___
+____ queue _______ Empty
 
 _______ r..
-from lxml _______ html
+____ lxml _______ html
 
 
 c_ YahooFinancePriceScheduler(_______.T...):
@@ -16,10 +16,10 @@ c_ YahooFinancePriceScheduler(_______.T...):
         __ type(temp_queue) != list:
             temp_queue = [temp_queue]
         _output_queues = temp_queue
-        start()
+        s..
 
     ___ run
-        while True:
+        w.... True:
             try:
                 val = _input_queue.get(timeout=10)
             except Empty:
@@ -33,7 +33,7 @@ c_ YahooFinancePriceScheduler(_______.T...):
             ___ output_queue __ _output_queues:
                 output_values = (val, price, datetime.datetime.utcnow())
                 o....put(output_values)
-            time.sleep(random.random())
+            t___.s(random.random())
 
 
 c_ YahooFinacePriceWorker():

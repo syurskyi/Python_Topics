@@ -1,17 +1,17 @@
-import multiprocessing
-import time
+_______ multiprocessing
+_______ t___
 
-from multithreading.count_three_sum import read_ints, count_three_sum
+____ _.c.. _______ r..., c..
 
-if __name__ == '__main__':
+__ _____ __ _____
     print('started main')
 
-    ints = read_ints('..\\data\\1Kints.txt')
+    ints = r...('..\\data\\1Kints.txt')
 
-    p = multiprocessing.Process(target=count_three_sum, args=(ints,))
-    p.start()
+    p = multiprocessing.Process(t.._c.., args=(ints,))
+    p.s..
 
-    time.sleep(5)
+    t___.s(5)
 
     p.terminate()
 

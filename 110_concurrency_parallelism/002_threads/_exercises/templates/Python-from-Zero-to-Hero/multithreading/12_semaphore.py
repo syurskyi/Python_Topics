@@ -1,48 +1,48 @@
-import concurrent.futures
-import random
-import threading
-import time
+_______ c__.f__
+_______ random
+_______ _
+_______ t___
 
 
-def work(semaphore):
-    time.sleep(random.randint(5, 10))
+___ work(semaphore):
+    t___.s(random.randint(5, 10))
     print('Releasing 1 connection')
-    semaphore.release()
+    semaphore.r..)
 
 
-def connect(semaphore, reached_max_connections):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
-        while True:
+___ connect(semaphore, reached_max_connections):
+    w___ c__.f__.T...(m.._10) __ ex:
+        w.... True:
             connections_counter = 0
-            while not reached_max_connections.is_set():
+            w.... not reached_max_connections.is_set():
                 print(f'\nConnection n={connections_counter}')
-                semaphore.acquire()
+                semaphore.a..
                 connections_counter += 1
 
                 ex.submit(work, semaphore)
 
-                time.sleep(0.8)
+                t___.s(0.8)
 
-            time.sleep(5)
+            t___.s(5)
 
 
-def connections_guard(semaphore, reached_max_connections):
-    while True:
+___ connections_guard(semaphore, reached_max_connections):
+    w.... True:
         print(f'[guard] semaphore={semaphore._value}')
-        time.sleep(1.5)
+        t___.s(1.5)
 
-        if semaphore._value == 0:
+        __ semaphore._value == 0:
             reached_max_connections.set()
             print(f'[guard] Reached max connections!')
-            time.sleep(10)
+            t___.s(10)
             reached_max_connections.clear()
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     max_connections = 10
-    reached_max_connections = threading.Event()
+    reached_max_connections = _.Event()
 
-    semaphore = threading.Semaphore(value=max_connections)
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+    semaphore = _.Semaphore(value=max_connections)
+    w___ c__.f__.T...(m.._2) __ executor:
         executor.submit(connections_guard, semaphore, reached_max_connections)
         executor.submit(connect, semaphore, reached_max_connections)

@@ -1,34 +1,34 @@
-import random
-import threading
-import time
-import datetime
+_______ random
+_______ _
+_______ t___
+_______ datetime
 
 
-class HorseRace:
-    def __init__(self):
-        self.barrier = threading.Barrier(4)
-        self.horses = ['Artax', 'Frankel', 'Bucephalus', 'Barton']
+c_ HorseRace:
+    ___  -
+        barrier = _.Barrier(4)
+        horses = ['Artax', 'Frankel', 'Bucephalus', 'Barton']
 
-    def lead(self):
-        horse = self.horses.pop()
-        time.sleep(random.randrange(1, 5))
+    ___ lead(self):
+        horse = horses.pop()
+        t___.s(random.randrange(1, 5))
         print(f'\n{horse} reached the barrier at: {datetime.datetime.now()}')
-        self.barrier.wait()
+        barrier.wait()
 
-        time.sleep(random.randrange(1, 5))
+        t___.s(random.randrange(1, 5))
         print(f'\n{horse} started at: {datetime.datetime.now()}')
 
-        time.sleep(random.randrange(1, 5))
+        t___.s(random.randrange(1, 5))
         print(f'\n{horse} finished at: {datetime.datetime.now()}')
 
-        self.barrier.wait()
+        barrier.wait()
         print(f'\n{horse} went sleeping')
 
 
-if __name__ == '__main__':
+__ _____ __ _____
     print(f'Race preparation')
 
     race = HorseRace()
-    for x in range(4):
-        thread = threading.Thread(target=race.lead)
-        thread.start()
+    ___ x __ r..(4):
+        thread = _.T..(t.._race.lead)
+        thread.s..

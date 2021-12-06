@@ -1,10 +1,10 @@
 _______ os
 _______ _______
 
-from queue _______ Empty
+____ queue _______ Empty
 
-from sqlalchemy _______ create_engine
-from sqlalchemy.sql _______ text
+____ sqlalchemy _______ create_engine
+____ sqlalchemy.sql _______ text
 
 
 c_ PostgresMasterScheduler(_______.T...):
@@ -13,10 +13,10 @@ c_ PostgresMasterScheduler(_______.T...):
             kwargs.pop('output_queue')
         s__(PostgresMasterScheduler,   - (**kwargs)
         _input_queue = input_queue
-        start()
+        s..
 
     ___ run
-        while True:
+        w.... True:
             try:
                 val = _input_queue.get(timeout=10)
             except Empty:
@@ -52,7 +52,7 @@ c_ PostgresWorker():
     ___ insert_into_db
         insert_query = _create_insert_query()
 
-        with _engine.connect() as conn:
+        w___ _engine.connect() __ conn:
             conn.execute(text(insert_query), {'symbol': _symbol,
                                               'price': _price,
                                               'extracted_time': str(_extracted_time)})

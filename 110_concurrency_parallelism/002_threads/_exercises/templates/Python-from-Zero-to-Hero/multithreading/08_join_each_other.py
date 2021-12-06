@@ -1,32 +1,32 @@
-import threading
-import time
+_______ _
+_______ t___
 
 
-def f1():
+___ f1():
     print('running 1st thread\n')
     print('f1 joining f2\n')
-    time.sleep(2)
-    t2.join()
+    t___.s(2)
+    t2.j...
 
     print('f1 sleep')
-    time.sleep(5)
+    t___.s(5)
     print('end of f1')
 
 
-def f2():
+___ f2():
     print('running 2nd thread\n')
     print('f2 joining f1\n')
-    time.sleep(2)
-    t1.join()
+    t___.s(2)
+    t1.j...
 
     print('f2 sle2p')
-    time.sleep(5)
+    t___.s(5)
     print('end of f2')
 
 
-if __name__ == '__main__':
-    t1 = threading.Thread(target=f1)
-    t2 = threading.Thread(target=f2)
+__ _____ __ _____
+    t1 = _.T..(t.._f1)
+    t2 = _.T..(t.._f2)
 
-    t1.start()
-    t2.start()
+    t1.s..
+    t2.s..

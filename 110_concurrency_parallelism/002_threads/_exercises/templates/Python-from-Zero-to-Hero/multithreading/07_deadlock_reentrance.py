@@ -1,24 +1,24 @@
-import threading
-
-lock_obj = threading.RLock()
-
-
+# _______ _
 #
-print('Acquaire 1st time')
-lock_obj.acquire()
-
-print('Acquaire 2nd time')
-lock_obj.acquire()
-
-print('Releasing')
-lock_obj.release()
-
-
-# def reentrance():
-#     print('start')
-#     lock_obj.acquire()
-#     print('Acquaired')
-#     reentrance()
+# lock_obj = _.R..
 #
 #
-# reentrance()
+# #
+# print('Acquaire 1st time')
+# ?.a..
+#
+# print('Acquaire 2nd time')
+# ?.a..
+#
+# print('Releasing')
+# ?.r..)
+#
+#
+# # def reentrance():
+# #     print('start')
+# #     lock_obj.acquire()
+# #     print('Acquaired')
+# #     reentrance()
+# #
+# #
+# # reentrance()

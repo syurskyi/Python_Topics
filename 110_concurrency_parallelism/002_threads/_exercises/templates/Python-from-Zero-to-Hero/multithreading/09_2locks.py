@@ -1,56 +1,56 @@
-import threading
-import time
+_______ _
+_______ t___
 
 a = 5
 b = 5
 
-a_lock = threading.Lock()
-b_lock = threading.Lock()
+a_lock = _.L..
+b_lock = _.L..
 
 
-def thread1calc():
+___ thread1calc():
     global a
     global b
 
     print('Thread1 acquiring lock a')
-    a_lock.acquire()
-    time.sleep(5)
+    a_lock.a..
+    t___.s(5)
 
     print('Thread1 acquiring lock b')
-    b_lock.acquire()
-    time.sleep(5)
+    b_lock.a..
+    t___.s(5)
 
     a += 5
     b += 5
 
     print('Thread1 releasing both locks')
-    a_lock.release()
-    b_lock.release()
+    a_lock.r..)
+    b_lock.r..)
 
 
-def thread2calc():
+___ thread2calc():
     global a
     global b
 
     print('Thread2 acquiring lock b')
-    b_lock.acquire()
-    time.sleep(5)
+    b_lock.a..
+    t___.s(5)
 
     print('Thread2 acquiring lock a')
-    a_lock.acquire()
-    time.sleep(5)
+    a_lock.a..
+    t___.s(5)
 
     a += 10
     b += 10
 
     print('Thread2 releasing both locks')
-    b_lock.release()
-    a_lock.release()
+    b_lock.r..)
+    a_lock.r..)
 
 
-if __name__ == '__main__':
-    t1 = threading.Thread(target=thread1calc)
-    t1.start()
+__ _____ __ _____
+    t1 = _.T..(t.._thread1calc)
+    t1.s..
 
-    t2 = threading.Thread(target=thread2calc)
-    t2.start()
+    t2 = _.T..(t.._thread2calc)
+    t2.s..

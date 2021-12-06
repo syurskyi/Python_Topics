@@ -1,9 +1,9 @@
 _______ importlib
 _______ _______
-_______ time
+_______ t___
 
 _______ yaml
-from multiprocessing _______ Queue
+____ multiprocessing _______ Queue
 
 
 c_ YamlPipelineExecutor(_______.T...):
@@ -16,7 +16,7 @@ c_ YamlPipelineExecutor(_______.T...):
         _downstream_queues = {}
 
     ___ _load_pipeline
-        with open(_pipline_location, 'r') as inFile:
+        w___ open(_pipline_location, 'r') __ inFile:
             _yaml_data = yaml.safe_load(inFile)
 
     ___ _initialize_queues
@@ -46,13 +46,13 @@ c_ YamlPipelineExecutor(_______.T...):
                 init_params['input_values'] = input_values
 
             _workers[worker_name] = []
-            ___ i __ range(num_instances):
-                _workers[worker_name].append(WorkerClass(**init_params))
+            ___ i __ r..(num_instances):
+                _workers[worker_name].a..(WorkerClass(**init_params))
 
     ___ _join_workers
         ___ worker_name __ _workers:
             ___ worker_thread __ _workers[worker_name]:
-                worker_thread.join()
+                worker_thread.j...
 
     ___ process_pipeline
         _load_pipeline()
@@ -63,7 +63,7 @@ c_ YamlPipelineExecutor(_______.T...):
     ___ run
         process_pipeline()
 
-        while True:
+        w.... True:
             total_workers_alive = 0
             worker_stats = []
             to_del = []
@@ -77,12 +77,12 @@ c_ YamlPipelineExecutor(_______.T...):
                     __ _downstream_queues[worker_name] is not None:
                         ___ o... __ _downstream_queues[worker_name]:
                             number_of_consumers = _queue_consumers[o...]
-                            ___ i __ range(number_of_consumers):
+                            ___ i __ r..(number_of_consumers):
                                 _queues[o...].put('DONE')
 
-                    to_del.append(worker_name)
+                    to_del.a..(worker_name)
 
-                worker_stats.append([worker_name, total_worker_threads_alive])
+                worker_stats.a..([worker_name, total_worker_threads_alive])
             print(worker_stats)
             __ total_workers_alive == 0:
                 ______
@@ -96,4 +96,4 @@ c_ YamlPipelineExecutor(_______.T...):
             ___ worker_name __ to_del:
                 del _workers[worker_name]
 
-            time.sleep(1)
+            t___.s(1)

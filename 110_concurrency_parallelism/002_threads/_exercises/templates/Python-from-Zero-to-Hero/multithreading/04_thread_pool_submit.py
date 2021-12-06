@@ -1,41 +1,41 @@
-import concurrent.futures
-import time
-
-
-def div(divisor, limit):
-    print(f'started div={divisor}')
-
-    result = 0
-    for x in range(1, limit):
-        if x % divisor == 0:
-            result += x
-            # print(f'divisor={divisor}, x={x}')
-        time.sleep(0.2)
-    print(f'ended div={divisor}', end='\n')
-    return result
-
-
-if __name__ == '__main__':
-    print('started main')
-
-    futures = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        futures.append(executor.submit(div, 5, 25))
-        futures.append(executor.submit(div, 3, 25))
-
-        while futures[0].running() and futures[1].running():
-            print('.', end='')
-            time.sleep(0.5)
-
-        for f in futures:
-            print(f'{f.result()}')
-
-    print('After with block')
-
-    # executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
-    # executor.submit(div, 5, 25)
-    # executor.submit(div, 3, 25)
-    #
-    # executor.shutdown(wait=True)
-
-    print('\nmain ended')
+# _______ c__.f__
+# _______ t___
+#
+#
+# ___ div divisor limit
+#     print _* started ?_|?|
+#
+#     result = 0
+#     ___ x __ r.. 1 ?
+#         __ x % d __ 0
+#             ? += ?
+#             # print(f'divisor={divisor}, x={x}')
+#         t___.s 0.2
+#     print _* ended ?_|d..| e.._'\n'
+#     r_ ?
+#
+#
+# __ _____ __ _____
+#     print('started main')
+#
+#     futures = # list
+#     w___ c__.f__.T... max_workers=2 __ executor
+#         ?.a.. ?.submit ? 5, 25
+#         ?.a.. ?.submit ? 3, 25
+#
+#         w.... ? 0 .running a.. ? 1 .running
+#             print('.', e.._''
+#             t___.s 0.5
+#
+#         ___ f __ ?
+#             print _*|?.r..
+#
+#     print('After with block')
+#
+#     # executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
+#     # executor.submit(div, 5, 25)
+#     # executor.submit(div, 3, 25)
+#     #
+#     # executor.shutdown(wait=True)
+#
+#     print('\nmain ended')

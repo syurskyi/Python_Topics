@@ -3,7 +3,7 @@ _______ _______
 
 counter = 0
 
-lock = _______.Lock()
+lock = _______.L..
 
 # lock.acquire()
 # lock.release()
@@ -11,22 +11,22 @@ lock = _______.Lock()
 
 ___ increment():
     global counter
-    ___ i __ range(10**6):
-        with lock:
+    ___ i __ r..(10**6):
+        w___ lock:
             counter += 1
             # more locking
             # more locking
 
 threads = []
-___ i __ range(4):
-    x = _______.T...(target=increment)
-    threads.append(x)
+___ i __ r..(4):
+    x = _______.T...(t.._increment)
+    threads.a..(x)
 
 ___ t __ threads:
-    t.start()
+    t.s..
 
 ___ t __ threads:
-    t.join()
+    t.j...
 
 print('Counter value:', counter)
 
