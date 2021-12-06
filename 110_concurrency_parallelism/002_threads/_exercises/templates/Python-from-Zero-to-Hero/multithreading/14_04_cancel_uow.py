@@ -1,73 +1,73 @@
-_______ _
-_______ t___
-
-____ _.c.. _______ r...
-
-
-c_ StoppableThread(_.T..):
-    ___ - ( *args, **kwargs):
-        super(StoppableThread, self).- (*args, **kwargs)
-        stop_event = _.Event()
-
-    ___ stop
-        stop_event.set()
-
-    ___ stopped
-        r_ stop_event.is_set()
-
-
-c_ ThreeSumUnitOfWork(StoppableThread):
-
-    ___ - ( ints, name='TestThread'):
-        super().- (name=name)
-        ints = ints
-        # self.stop_event = threading.Event()
-
-    ___ run
-        print(f'{getName()} starts')
-
-        c..(ints)
-
-        print(f'{getName()} ends')
-
-    # def stop
-    #     self.stop_event.set()
-
-    ___ c..( ints):
-        print(f'started count_three_sum')
-
-        n = l..(ints)
-        counter = 0
-
-        ___ i __ r..(n):
-            ___ j __ r..(i + 1, n):
-                ___ k __ r..(j + 1, n):
-                    __ super().stoppedg___
-                        print('Task was Cancelled')
-                        counter = -1
-                        r_ counter
-
-                    __ ints[i] + ints[j] + ints[k] == 0:
-                        counter += 1
-                        print(f'Triple found:{ints[i]}, {ints[j]}, {ints[k]}', e.._'\n')
-
-        print(f'ended count_three_sum. Triplets counter={counter}')
-        r_ counter
-
-
-__ _____ __ _____
-    print('started main')
-
-    ints = r...('..\\data\\1Kints.txt')
-
-    task = ThreeSumUnitOfWork(ints)
-    task.s..
-
-    t___.s(10)
-
-    task.stop()
-
-    task.j...
-
-    print(task.stopped())
-    print('ended main')
+# _______ _
+# _______ t___
+#
+# ____ _.c.. _______ r...
+#
+#
+# c_ StoppableThread _.T..
+#     ___ - (  $ $$:
+#         s___ ? ____.-  $ $$
+#         stop_event = _.E..
+#
+#     ___ stop
+#         s__.s..
+#
+#     ___ stopped
+#         r_ s__.i..
+#
+#
+# c_ ThreeSumUnitOfWork ?
+#
+#     ___ - ints name='TestThread'):
+#         s___ .-  ? _ ?
+#         ? _ ?
+#         # self.stop_event = threading.Event()
+#
+#     ___ run
+#         print _* g.. starts')
+#
+#         c.. ?
+#
+#         print _* g.. ends
+#
+#     # def stop
+#     #     self.stop_event.set()
+#
+#     ___ c.. ints
+#         print _*started count_three_sum
+#
+#         n = l.. ?
+#         counter = 0
+#
+#         ___ i __ r.. ?
+#             ___ j __ r.. ? + 1 ?
+#                 ___ k __ r.. ? + 1 ?
+#                     __ s___ .s..
+#                         print('Task was Cancelled')
+#                         c.. = -1
+#                         r_ ?
+#
+#                     __ ? ? + ? ? + ? ? __ 0
+#                         ? += 1
+#                         print _*Triple found: ? ? ? ? ? ? e.._'\n
+#
+#         print _* ended count_three_sum. Triplets counter= ?
+#         r_ ?
+#
+#
+# __ _____ __ _____
+#     print('started main')
+#
+#     ints = r...('..\\data\\1Kints.txt')
+#
+#     task = ? ?
+#     ?.s..
+#
+#     t___.s.. 10
+#
+#     ?.s..
+#
+#     ?.j...
+#
+#     print ?.s..
+#     print('ended main')

@@ -1,26 +1,26 @@
-_______ t___
-____ functools _______ wraps
-
-
-___ async_m...(func):
-    @wraps(func)
-    async ___ wrap(*args, **kwargs):
-        start = t___.perf_counter()
-        result = await func(*args, **kwargs)
-        elapsed = t___.perf_counter() - start
-        print(f'Executed {func} in {elapsed:0.2f} seconds')
-        r_ result
-
-    r_ wrap
-
-
-___ m...(func):
-    @wraps(func)
-    ___ wrap(*args, **kwargs):
-        start = t___.perf_counter()
-        result = func(*args, **kwargs)
-        elapsed = t___.perf_counter() - start
-        print(f'Executed {func} in {elapsed:0.2f} seconds')
-        r_ result
-
-    r_ wrap
+# _______ t___
+# ____ f.. _______ w..
+#
+#
+# ___ async_m... func
+#     $$ ?
+#     ____ ___ wrap $ $$
+#         start = t___.p..
+#         result = a.. f.. $ $$
+#         elapsed = t___.p.. - ?
+#         print _*Executed ? in ?:0.2f seconds')
+#         r_ ?
+#
+#     r_ ?
+#
+#
+# ___ m... func
+#     $$ ?
+#     ___ wrap $ $$
+#         start = t___.p..
+#         result = ? $ $$
+#         elapsed = t___.p.. - ?
+#         print _*Executed ? in ?:0.2f seconds
+#         r_ ?
+#
+#     r_ ?

@@ -17,9 +17,9 @@ c_ PostgresMasterScheduler(_______.T...):
 
     ___ run
         w.... T..:
-            try:
+            ___
                 val = _input_queue.get(timeout=10)
-            except Empty:
+            ______ Empty:
                 print('Timeout reached in postgres scheduler, stopping')
                 ______
 

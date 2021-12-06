@@ -1,58 +1,58 @@
-_______ _
-_______ t___
-
-____ _.c.. _______ r...
-
-
-c_ ThreeSumTask:
-
-    ___ - ( ints):
-        ints = ints
-        canceled = F..
-        lock_obj = _.L..
-
-    ___ run
-        c..(ints)
-
-    ___ cancel
-        w___ lock_obj:
-            canceled = T..
-
-    ___ c..( ints):
-        print(f'started count_three_sum')
-
-        n = l..(ints)
-        counter = 0
-
-        ___ i __ r..(n):
-            ___ j __ r..(i + 1, n):
-                ___ k __ r..(j + 1, n):
-                    __ canceled:
-                        print('Task was Cancelled')
-                        counter = -1
-                        r_ counter
-
-                    __ ints[i] + ints[j] + ints[k] == 0:
-                        counter += 1
-                        print(f'Triple found:{ints[i]}, {ints[j]}, {ints[k]}', e.._'\n')
-
-        print(f'ended count_three_sum. Triplets counter={counter}')
-        r_ counter
-
-
-__ _____ __ _____
-    print('started main')
-
-    ints = r...('..\\data\\1Kints.txt')
-
-    task = ThreeSumTask(ints)
-    t1 = _.T..(t.._task.run)
-    t1.s..
-
-    t___.s..(5)
-
-    task.cancel()
-
-    t1.j...
-
-    print('ended main')
+# _______ _
+# _______ t___
+#
+# ____ _.c.. _______ r...
+#
+#
+# c_ ThreeSumTask
+#
+#     ___ - ints
+#         ? = ?
+#         canceled = F..
+#         lock_obj = _.L..
+#
+#     ___ run
+#         c.. ?
+#
+#     ___ cancel
+#         w___ l..
+#             c.. _ T..
+#
+#     ___ c.. ints
+#         print(f'started count_three_sum')
+#
+#         n = l.. ?
+#         counter = 0
+#
+#         ___ i __ r.. ?
+#             ___ j __ r.. ? + 1 ?
+#                 ___ k __ r.. ? + 1 ?
+#                     __ c..
+#                         print('Task was Cancelled')
+#                         c.. = -1
+#                         r_ ?
+#
+#                     __ ? ? + ? ? + ? ? __ 0
+#                         ? += 1
+#                         print _*Triple found: ? ? ? ? ? ? e.._'\n
+#
+#         print _*ended count_three_sum. Triplets counter= ?
+#         r_ ?
+#
+#
+# __ _____ __ _____
+#     print('started main')
+#
+#     ints = r...('..\\data\\1Kints.txt')
+#
+#     task = ? ?
+#     t1 = _.T..(t.._?.r..
+#     ?.s..
+#
+#     t___.s.. 5
+#
+#     ?.c..
+#
+#     ?.j...
+#
+#     print('ended main')
