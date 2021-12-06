@@ -1,22 +1,22 @@
 # ______ ...
 #
-# print ___.a_c..
-# current = ___.c_t..
-# print ?.gN..
-# print ?.i_a..
+# print ___.a..
+# current = ___.c..
+# print ?.g..
+# print ?.i..
 # # что произойдет, если попробуем еще раз его запустить
 # ___
 #     ?.s..
 # ______ R.. __ e
 #     print('ERROR: |er..'.f.. e.._?
-# ?.sN..'SuperThread'
-# print ?.gN..
+# ?.s..'SuperThread'
+# print ?.g..
 #
 # # на самом деле setName, getName - это просто старый интерфейс.
 # # В реальных задачах вы смело можете работаь напрямую с атрибутом name
 # ?.name = 'SuperThread1'
 # print ?.n..
-# print ?.gN..
+# print ?.g..
 #
 # # вывод всех запущенных и живых трэдов
 # print ___.en..
@@ -27,8 +27,8 @@
 #
 #
 # ___ print_results
-#     print ___.c_t..
-#     print('Result: @'.f.. t_d__.v..
+#     print ___.c..
+#     print('Result: @'.f.. t___.v..
 #
 #
 # ___ counter started to_value

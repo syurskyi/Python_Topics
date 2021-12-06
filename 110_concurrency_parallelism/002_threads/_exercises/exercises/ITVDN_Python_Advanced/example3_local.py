@@ -32,23 +32,24 @@ def print_results():
 
 
 def counter(started, to_value):
-    print(hasattr(thread_data, 'value')
-    thread_data.value =
-    ___ i __ ra.. ?
-        t__.v.. +_ 1
-    ?
+    print(hasattr(thread_data, 'value'))
+    thread_data.value = started
+    for i in range(to_value):
+        thread_data.value += 1
+    print_results()
 
 
-task1 = ___.T.. t.._? a.._(0, 10), n.._'Task1'
-task2 = ___.T.. t.._c.. a.._(100, 3), n.._'Task2')
-?.n.. = *?
-?.n.. = *?
+task1 = threading.Thread(target=counter, args=(0, 10), name='Task1')
+task2 = threading.Thread(target=counter, args=(100, 3), name='Task2')
+task1.name = 'task1'
+task2.name = 'task2'
 
-?.s..
-?.s..
+task1.start()
+task2.start()
 
-p..
+print_results()
 
-?.j..
-?.j..
-p..
+task1.join()
+task2.join()
+
+print_results()
