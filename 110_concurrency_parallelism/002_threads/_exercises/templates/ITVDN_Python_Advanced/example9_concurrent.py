@@ -5,7 +5,7 @@
 # ___ handler started_0 finished_0
 #     # print('VALUES', started, finished)
 #     result _ 0
-#     ___ i __ ra.. ? ?
+#     ___ i __ r.. ? ?
 #         ? +_ ?
 #     r_ ?
 #
@@ -31,7 +31,7 @@
 #         [0, 2 ** 26],
 #         [2 ** 26, 2 ** 28]
 #     ]
-#     result _ su. ?.ma. handler $params
+#     result _ su. ?.ma. ? $?
 #
 #     print('Result: |r__ . Time for |e.. : |s.. '.f..(
 #         r.._r..

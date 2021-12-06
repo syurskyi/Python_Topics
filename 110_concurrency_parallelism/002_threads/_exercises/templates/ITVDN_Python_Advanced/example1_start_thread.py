@@ -11,7 +11,7 @@
 #
 # params _ {'finished': 2 ** 26}
 #
-# task _ t__.T.. target_h.., kwargs_p..
+# task _ t__.T.. t.._ ? k.._ ?
 # started_at _ t__.t__
 # print('RESULTS 1')
 # ?.s..
@@ -20,5 +20,5 @@
 #
 # started_at _ t__.t__
 # print('RESULTS 2')
-# ? $$params
+# ? $$?
 # print('Time: @'.f.. t__.t__ - ?
