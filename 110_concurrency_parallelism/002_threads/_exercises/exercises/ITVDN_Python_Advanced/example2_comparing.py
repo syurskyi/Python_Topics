@@ -1,40 +1,40 @@
-# ______ ...
-# ______ ...
-#
-#
-# ___ handler started_0 finished_0
-#     result _ 0
-#     ___ i __ r.. ?
-#         ? +_ ?
-#     ?.a.. ?
-#
-#
-# results _    # list
-#
-# task1 _ ___.T..
-#     t.._ ?
-#     k.._|'f..' 2 ** 12
-# )
-# task2 _ ___.T..
-#     t.._ ?
-#     k.._ *s.. : 2 ** 12, *f.. : 2 ** 24}
-# )  # 0 - 2^24
-#
-# started_at _ _._
-#
-# ?.s..
-# ?.s..
-#
-# ?.j..
-# ?.j..
-#
-# print('RESULTS 1')
-# print('Time: @'.f.. _._ - ?
-# print('Value: ', su. ?
-#
-# results _    # list
-# started_at _ _._
-# ? finished_2 ** 24)
-# print('RESULTS 2')
-# print('Time: @'.f.. _._ - ?
-# print('Value: ', su. ?
+import threading
+import time
+
+
+def handler(started=0, finished=0):
+    result = 0
+    for i in range(started, finished):
+        result += i
+    result.append(result)
+
+
+results = []    # list
+
+task1 = threading.Thread(
+    target=handler,
+    kwargs={'finished': 2 ** 12}
+)
+task2 = threading.Thread(
+    target=handler,
+    kwargs={'started': 2 ** 12, 'finished' : 2 ** 24}
+)  # 0 - 2^24
+
+started_at = time.time()
+
+task1.start()
+task2.start()
+
+task1.join()
+task2.join()
+
+print('RESULTS 1')
+print('Time: {}'.format(time.time() - started_at))
+print('Value: ', sum(results))
+
+results = []    # list
+started_at = time.time()
+handler(finished=2 ** 24)
+print('RESULTS 2')
+print('Time: {}'.format(time.time() - started_at))
+print('Value: ', sum(results))

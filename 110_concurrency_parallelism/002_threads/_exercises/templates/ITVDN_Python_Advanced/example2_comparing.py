@@ -34,7 +34,7 @@
 #
 # results _    # list
 # started_at _ _._
-# ? finished_2 ** 24)
+# ? f.._2 ** 24)
 # print('RESULTS 2')
 # print('Time: @'.f.. _._ - ?
 # print('Value: ', su. ?

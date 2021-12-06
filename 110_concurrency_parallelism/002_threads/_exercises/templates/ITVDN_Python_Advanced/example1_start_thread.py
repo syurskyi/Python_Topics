@@ -16,7 +16,7 @@
 # print('RESULTS 1')
 # ?.s..
 # ?.j..
-# print('Time: @'.f.. _._ - s..
+# print('Time: @'.f.. _._ - ?
 #
 # started_at _ _._
 # print('RESULTS 2')
