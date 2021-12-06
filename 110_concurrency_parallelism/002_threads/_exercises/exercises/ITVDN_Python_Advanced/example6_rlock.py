@@ -1,22 +1,22 @@
-# # DEAD LOCK
-# ______ ...
-#
-#
-# ___ produce
-#     print('Set locking')
-#     w__ ?
-#         w__ ?
-#             print("It's great")
-#     print('Locking release!')
-#
-#
-# lock _ ?.R..
-#
-# task1 _ ?.T... t.._ ?
-# task2 _ ?.T... t.._ ?
-#
-# ?.s..
-# ?.s..
-#
-# ?.j..
-# ?.j..
+# DEAD LOCK
+import threading
+
+
+def produce():
+    print('Set locking')
+    with lock:
+        with lock:
+            print("It's great")
+    print('Locking release!')
+
+
+lock = threading.RLock()
+
+task1 = threading.Thread(target=produce)
+task2 = threading.Thread(target=produce)
+
+task1.start()
+task2.start()
+
+task1.join()
+task2.join()
