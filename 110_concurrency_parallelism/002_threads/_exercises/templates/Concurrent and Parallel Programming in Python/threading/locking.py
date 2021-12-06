@@ -10,7 +10,7 @@ lock = _______.L..
 
 
 ___ increment():
-    global counter
+    g___ counter
     ___ i __ r..(10**6):
         w___ lock:
             counter += 1

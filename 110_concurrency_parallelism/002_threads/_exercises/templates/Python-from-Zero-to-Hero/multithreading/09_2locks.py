@@ -8,16 +8,16 @@ a_lock = _.L..
 b_lock = _.L..
 
 
-___ thread1calc():
-    global a
-    global b
+___ thread1calc
+    g___ a
+    g___ b
 
     print('Thread1 acquiring lock a')
-    a_lock.a..
-    t___.s(5)
+    ?.a..
+    t___.s 5
 
     print('Thread1 acquiring lock b')
-    b_lock.a..
+    ?.a..
     t___.s(5)
 
     a += 5
@@ -29,8 +29,8 @@ ___ thread1calc():
 
 
 ___ thread2calc():
-    global a
-    global b
+    g___ a
+    g___ b
 
     print('Thread2 acquiring lock b')
     b_lock.a..
