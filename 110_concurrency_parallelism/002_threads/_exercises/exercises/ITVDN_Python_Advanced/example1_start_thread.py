@@ -1,24 +1,24 @@
-# ______ ...
-# ______ ...
-#
-#
-# ___ handler started_0 finished_0
-#     result _ 0
-#     ___ i __ r.. ? ?
-#         ? +_ ?
-#     print('Value: ' ?
-#
-#
-# params _ {'finished': 2 ** 26}
-#
-# task _ ___.T.. t.._ ? k.._ ?
-# started_at _ _._
-# print('RESULTS 1')
-# ?.s..
-# ?.j..
-# print('Time: @'.f.. _._ - s..
-#
-# started_at _ _._
-# print('RESULTS 2')
-# ? $$?
-# print('Time: @'.f.. _._ - ?
+import threading
+import time
+
+
+def handler(started=0, finished=0):
+    result = 0
+    for i in range(started, finished):
+        result += i
+    print('Value: ', result)
+
+
+params = {'finished': 2 ** 26}
+
+task = threading.Thread(target=handler, kwards=params)
+started_at = time.time()
+print('RESULTS 1')
+task.start()
+task.join()
+print('Time: {}'.format(time.time() - started_at))
+
+started_at = time.time()
+print('RESULTS 2')
+handler(**params)
+print('Time: {}'.format(time.time() - started_at))
