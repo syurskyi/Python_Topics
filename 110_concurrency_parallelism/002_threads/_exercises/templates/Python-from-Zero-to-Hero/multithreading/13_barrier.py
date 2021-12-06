@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 _______ _
 _______ t___
 _______ datetime
@@ -9,19 +9,19 @@ c_ HorseRace:
         barrier = _.Barrier(4)
         horses = ['Artax', 'Frankel', 'Bucephalus', 'Barton']
 
-    ___ lead(self):
+    ___ lead
         horse = horses.pop()
-        t___.s(random.randrange(1, 5))
+        t___.s..(r__.randrange(1, 5))
         print(f'\n{horse} reached the barrier at: {datetime.datetime.now()}')
-        barrier.wait()
+        barrier.w..
 
-        t___.s(random.randrange(1, 5))
+        t___.s..(r__.randrange(1, 5))
         print(f'\n{horse} started at: {datetime.datetime.now()}')
 
-        t___.s(random.randrange(1, 5))
+        t___.s..(r__.randrange(1, 5))
         print(f'\n{horse} finished at: {datetime.datetime.now()}')
 
-        barrier.wait()
+        barrier.w..
         print(f'\n{horse} went sleeping')
 
 

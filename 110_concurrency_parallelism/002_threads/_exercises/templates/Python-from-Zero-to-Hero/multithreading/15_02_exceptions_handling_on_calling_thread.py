@@ -11,7 +11,7 @@ ___ div(divisor, limit):
         __ x % divisor == 0:
             result += x
             print(f'divisor={divisor}, x={x}')
-        t___.s(0.2)
+        t___.s..(0.2)
 
     print('raise exception')
     raise Exception('bad things happen!')

@@ -1,6 +1,6 @@
 _______ _______
 _______ datetime
-_______ random
+_______ r__
 _______ t___
 ____ queue _______ Empty
 
@@ -33,10 +33,10 @@ c_ YahooFinancePriceScheduler(_______.T...):
             ___ output_queue __ _output_queues:
                 output_values = (val, price, datetime.datetime.utcnow())
                 o....put(output_values)
-            t___.s(random.random())
+            t___.s..(r__.r__())
 
 
-c_ YahooFinacePriceWorker():
+c_ YahooFinacePriceWorkerg___
     ___  -  symbol):
         _symbol = symbol
         base_url = 'https://finance.yahoo.com/quote/'

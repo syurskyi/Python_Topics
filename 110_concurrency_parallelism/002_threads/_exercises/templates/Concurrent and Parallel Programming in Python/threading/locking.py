@@ -9,7 +9,7 @@ lock = _______.L..
 # lock.release()
 
 
-___ increment():
+___ incrementg___
     g___ counter
     ___ i __ r..(10**6):
         w___ lock:

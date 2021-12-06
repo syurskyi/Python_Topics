@@ -36,7 +36,7 @@ __ _____ __ _____
     t1 = _.T..(t.._c.., args=(ints,))
     t1.s..
 
-    t___.s(5)
+    t___.s..(5)
 
     should_stop = True
 

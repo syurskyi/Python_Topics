@@ -14,7 +14,7 @@
 #         w___ lock_obj
 #             tmp_amount = b..
 #             tmp_amount += a..
-#             t___.s 1
+#             t___.s.. 1
 #             b.. = ?
 #
 #         print _*|t.. ended

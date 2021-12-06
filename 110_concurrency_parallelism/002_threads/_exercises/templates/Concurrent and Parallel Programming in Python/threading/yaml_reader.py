@@ -36,9 +36,9 @@ c_ YamlPipelineExecutor(_______.T...):
             __ input_queue is not None:
                 _queue_consumers[input_queue] = num_instances
             init_params = {
-                'input_queue': _queues[input_queue] __ input_queue is not None else None,
+                'input_queue': _queues[input_queue] __ input_queue is not None ____ None,
                 'output_queue': [_queues[o...] ___ output_queue __ output_queues] \
-                    __ output_queues is not None else None
+                    __ output_queues is not None ____ None
             }
 
             input_values = worker.get('input_values')
@@ -70,7 +70,7 @@ c_ YamlPipelineExecutor(_______.T...):
             ___ worker_name __ _workers:
                 total_worker_threads_alive = 0
                 ___ worker_thread __ _workers[worker_name]:
-                    __ worker_thread.is_alive():
+                    __ worker_thread.is_aliveg___
                         total_worker_threads_alive += 1
                 total_workers_alive += total_worker_threads_alive
                 __ total_worker_threads_alive == 0:
@@ -96,4 +96,4 @@ c_ YamlPipelineExecutor(_______.T...):
             ___ worker_name __ to_del:
                 del _workers[worker_name]
 
-            t___.s(1)
+            t___.s..(1)

@@ -31,7 +31,7 @@ c_ PostgresMasterScheduler(_______.T...):
             postgresWorker.insert_into_db()
 
 
-c_ PostgresWorker():
+c_ PostgresWorkerg___
     ___  -  symbol, price, extracted_time):
         _symbol = symbol
         _price = price

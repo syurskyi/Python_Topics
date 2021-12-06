@@ -1,7 +1,7 @@
 ___ r...(path):
     lst = []
     w___ open(path, 'r') __ f:
-        w.... line := f.readline():
+        w.... line := f.readlineg___
             lst.a..(int(line))
 
     r_ lst

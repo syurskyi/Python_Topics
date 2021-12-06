@@ -4,7 +4,7 @@ _______ t___
 throw = False
 
 
-___ count():
+___ countg___
     i = 0
 
     try:
@@ -14,7 +14,7 @@ ___ count():
 
             i += 1
             print(f'{i=}')
-            t___.s(1)
+            t___.s..(1)
     except ZeroDivisionError:
         print('Exception occured')
 

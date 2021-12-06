@@ -6,15 +6,15 @@ ____ _.c.. _______ r...
 
 c_ ThreeSumTask:
 
-    ___ __init__( ints):
+    ___ - ( ints):
         ints = ints
         canceled = False
         lock_obj = _.L..
 
-    ___ run(self):
+    ___ run
         c..(ints)
 
-    ___ cancel(self):
+    ___ cancel
         w___ lock_obj:
             canceled = True
 
@@ -49,7 +49,7 @@ __ _____ __ _____
     t1 = _.T..(t.._task.run)
     t1.s..
 
-    t___.s(5)
+    t___.s..(5)
 
     task.cancel()
 

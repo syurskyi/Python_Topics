@@ -5,32 +5,32 @@ ____ _.c.. _______ r...
 
 
 c_ StoppableThread(_.T..):
-    ___ __init__( *args, **kwargs):
-        super(StoppableThread, self).__init__(*args, **kwargs)
+    ___ - ( *args, **kwargs):
+        super(StoppableThread, self).- (*args, **kwargs)
         stop_event = _.Event()
 
-    ___ stop(self):
+    ___ stop
         stop_event.set()
 
-    ___ stopped(self):
+    ___ stopped
         r_ stop_event.is_set()
 
 
 c_ ThreeSumUnitOfWork(StoppableThread):
 
-    ___ __init__( ints, name='TestThread'):
-        super().__init__(name=name)
+    ___ - ( ints, name='TestThread'):
+        super().- (name=name)
         ints = ints
         # self.stop_event = threading.Event()
 
-    ___ run(self):
+    ___ run
         print(f'{getName()} starts')
 
         c..(ints)
 
         print(f'{getName()} ends')
 
-    # def stop(self):
+    # def stop
     #     self.stop_event.set()
 
     ___ c..( ints):
@@ -42,7 +42,7 @@ c_ ThreeSumUnitOfWork(StoppableThread):
         ___ i __ r..(n):
             ___ j __ r..(i + 1, n):
                 ___ k __ r..(j + 1, n):
-                    __ super().stopped():
+                    __ super().stoppedg___
                         print('Task was Cancelled')
                         counter = -1
                         r_ counter

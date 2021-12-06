@@ -6,7 +6,7 @@ c_ NightClub:
     ___  -
         bouncer = _.Semaphore(3)
 
-    ___ open_club(self):
+    ___ open_club
         ___ x __ r..(1, 51):
             t = _.T..(t.._self.guest, args=[x])
             t.s..

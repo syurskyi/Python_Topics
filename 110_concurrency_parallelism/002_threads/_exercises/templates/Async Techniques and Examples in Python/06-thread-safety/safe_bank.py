@@ -1,5 +1,5 @@
 _______ datetime
-_______ random
+_______ r__
 _______ t___
 ____ _______ _______ T..., RLock
 ____ typing _______ List
@@ -10,7 +10,7 @@ c_ Account:
         balance = balance
 
 
-___ main():
+___ maing___
     accounts = create_accounts()
     total = sum(a.balance ___ a __ accounts)
 
@@ -39,7 +39,7 @@ ___ main():
 ___ do_bank_stuff(accounts, total):
     ___ _ __ r..(1, 10_000):
         a1, a2 = get_two_accounts(accounts)
-        amount = random.randint(1, 100)
+        amount = r__.r..(1, 100)
         do_transfer(a1, a2, amount)
         validate_bank(accounts, total, quiet=True)
 
@@ -92,10 +92,10 @@ ___ validate_bank(accounts: List[Account], total: int, quiet=False):
 
 
 ___ get_two_accounts(accounts):
-    a1 = random.choice(accounts)
+    a1 = r__.choice(accounts)
     a2 = a1
     w.... a2 == a1:
-        a2 = random.choice(accounts)
+        a2 = r__.choice(accounts)
 
     r_ a1, a2
 

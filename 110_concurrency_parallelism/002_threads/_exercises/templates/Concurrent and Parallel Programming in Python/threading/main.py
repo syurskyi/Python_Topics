@@ -4,7 +4,7 @@ _______ os
 ____ yaml_reader _______ YamlPipelineExecutor
 
 
-___ main():
+___ maing___
     pipeline_location = os.environ.get('PIPELINE_LOCATION')
     __ pipeline_location is None:
         print('Pipeline location not defined')
