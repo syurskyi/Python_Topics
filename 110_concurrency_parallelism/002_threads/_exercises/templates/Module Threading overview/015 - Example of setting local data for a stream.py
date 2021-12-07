@@ -2,7 +2,7 @@ _____ _, r__
 
 
 ___ show_value(data
-    name_thread = _.current_thread().n..
+    name_thread = _.c...n..
     try:
         val = data.value
     except AttributeError:
@@ -12,7 +12,7 @@ ___ show_value(data
 
 
 ___ worker(data
-    name_thread = _.current_thread().n..
+    name_thread = _.c...n..
     show_value(data)
     print(f'Установка значения value для потока {name_thread}.')
     data.value = r__.randint(1, 100)
@@ -28,7 +28,7 @@ show_value(local_data)
 
 ___ i __ r..(2
     t = _.?(t.. worker, a.. (local_data,))
-    t.start()
+    t.s..
 
 # MainThread: Нет локального значения value
 # MainThread: value=1000

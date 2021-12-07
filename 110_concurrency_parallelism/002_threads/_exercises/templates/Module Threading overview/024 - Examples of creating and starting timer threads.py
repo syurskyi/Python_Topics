@@ -1,7 +1,7 @@
 _____ _, t__
 
 ___ delayed(
-    th_name = _.current_thread().n..
+    th_name = _.c...n..
     print(f'Th:{th_name} Worker запущен')
 
 
@@ -12,8 +12,8 @@ t2 = _.Timer(0.3, delayed)
 t2.n.. = 'Timer-2'
 
 print('Запуск таймеров')
-t1.start()
-t2.start()
+t1.s..
+t2.s..
 
 print(f'Ожидание перед завершением {t2.n..}')
 t__.s..(0.2)

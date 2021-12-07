@@ -26,7 +26,7 @@ class ActivePool:
 
 ___ worker(sem, pool
     w__ sem:
-        th_name = _.current_thread().n..
+        th_name = _.c...n..
         print(f'{th_name} ожидает присоединения к пулу')
         pool.makeActive(th_name)
         t__.s..(0.5)
@@ -44,7 +44,7 @@ ___ i __ r..(4
         t.. worker,
         a.. (sem, pool),
     )
-    t.start()
+    t.s..
 
 # Thread-1 ожидает присоединения к пулу
 # Время: 0.0 Running: ['Thread-1']

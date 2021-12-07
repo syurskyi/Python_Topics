@@ -21,12 +21,12 @@ event = _.Event()
 
 t1 = _.?(n.. 'blocking',
                   t.. wait_event)
-t1.start()
+t1.s..
 
 t2 = _.?(n.. 'non-blocking',
                   t.. wait_timeout,
                   a.. (2,))
-t2.start()
+t2.s..
 
 print('Ожидание перед вызовом Event.set()')
 t__.s..(5)

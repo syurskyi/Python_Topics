@@ -6,7 +6,7 @@ ____ yaml_reader _______ YamlPipelineExecutor
 
 ___ maing___
     pipeline_location = os.environ.g..'PIPELINE_LOCATION')
-    __ pipeline_location is None:
+    __ pipeline_location __ None:
         print('Pipeline location not defined')
         exit(1)
     scraper_start_time = t___.t___()

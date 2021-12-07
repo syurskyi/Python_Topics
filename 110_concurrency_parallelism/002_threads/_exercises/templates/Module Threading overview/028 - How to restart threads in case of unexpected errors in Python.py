@@ -24,7 +24,7 @@ ___ threadwrap(threadfunc
             try:
                 threadfunc()
             except BaseException __ e:
-                th_name = _.current_thread().n..
+                th_name = _.c...n..
                 print(f'Падение потока датчика {th_name}, перезапуск...')
 
     return wrapper
@@ -41,7 +41,7 @@ threads = [t ___ t __ thread_dict.values()]
 
 # запускаем потоки
 ___ t __ threads:
-    t.start()
+    t.s..
 
 # Читаем показания датчика Б
 # Читаем показания датчика А

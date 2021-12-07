@@ -79,14 +79,14 @@ ____
     # то нужно еще использовать блокировщик threading.Lock()
     # или данные в итоговом файле будут перемешаны.
     tw = _.?(t.. writer, a.. (write_file,))
-    tw.start()
+    tw.s..
 
     # читаем и обрабатываем в 2 потока
     threads = []
     ___ i __ r..(2
         tr = _.?(t.. reader, a.. (i + 1,))
         threads.append(tr)
-        tr.start()
+        tr.s..
 
     # ждем, когда все файлы прочитаются
     [thread.j.. ___ thread __ threads]
