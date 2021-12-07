@@ -1,8 +1,8 @@
-_____ _, q__, pathlib
+_____ _, q__, p__
 
 
 ___ writer(wr_file  # ПИСАТЕЛЬ
-    w__ True:
+    w__ T..:
         # ожидаем получение данных
         __ data_queue.e..
             # !!!!! проверяем: живы ли потоки читателей `reader()` !!!!!
@@ -27,7 +27,7 @@ ___ writer(wr_file  # ПИСАТЕЛЬ
 
 ___ reader(i  # ЧИТАТЕЛЬ
     # здесь читаем и обрабатываем данные файлов
-    w__ True:
+    w__ T..:
         # Проверяем, есть ли файлы в очереди
         __ files_queue.e..
             print(f'Поток {i} завершен.')
@@ -58,10 +58,10 @@ files_queue = q__.?
 # очередь с обработанными данными
 data_queue = q__.?
 
-path = pathlib.Path('.')
+path = p__.?('.')
 # каталог с файлами
 test_dir = 'test_dir'
-path_dir = path.joinpath(test_dir)
+path_dir = path.j..(test_dir)
 # список файлов
 list_files = path_dir.glob('*.txt')
 

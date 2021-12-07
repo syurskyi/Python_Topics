@@ -1,11 +1,11 @@
-_____ pathlib, _, t__, q__
+_____ p__, _, t__, q__
 
 ___ worker(que
-    w__ True:
+    w__ T..:
         # Получаем задание (имя файла) из очереди
         job = que.g..)
         # Путь к новому (обработанному) файлу
-        file_write = path_dir_modified.joinpath(job.name)
+        file_write = path_dir_modified.j..(job.name)
         # открываем файл из очереди на чтение и
         # новый файл на запись
         with open(job, 'r') as fr, open(file_write, 'w') as fw:
@@ -20,18 +20,18 @@ ___ worker(que
         # Сообщаем очереди что задача выполнена
         que.t..
 
-path = pathlib.Path('.')
+path = p__.?('.')
 # тестовый каталог с файлами
 test_dir = 'test_dir'
 # Путь к тестовой директории
-path_dir = path.joinpath(test_dir)
+path_dir = path.j..(test_dir)
 # получаем список файлов
 list_files = path_dir.glob('*.txt')
 
 # каталог с обработанными файлами
 test_dir_modified = 'test_dir_modified'
-path_dir_modified = path.joinpath(test_dir_modified)
-path_dir_modified.mkdir(exist_ok=True)
+path_dir_modified = path.j..(test_dir_modified)
+path_dir_modified.m..(exist_ok=T..)
 
 # создаем и заполняем очередь именами файлов
 que = q__.?
@@ -42,7 +42,7 @@ __ que.qsize(
     # Создаем и запускаем потоки
     n_thead = 3
     ___ _ __ r..(n_thead
-        th = _.?(t.. worker, a.. (que,), daemon=True)
+        th = _.?(t.. worker, a.. (que,), daemon=T..)
         th.start()
 
     # Блокируем дальнейшее выполнение

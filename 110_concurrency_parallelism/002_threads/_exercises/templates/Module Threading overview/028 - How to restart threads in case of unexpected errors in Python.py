@@ -2,14 +2,14 @@ _____ _, t__
 
 
 ___ sensor_a(
-    w__ True:
+    w__ T..:
         t__.s..(1)
         print("Читаем показания датчика А")
 
 
 ___ sensor_b(
     i = 0
-    w__ True:
+    w__ T..:
         t__.s..(1)
         __ i == 1:
             # имитируем падение датчика
@@ -20,7 +20,7 @@ ___ sensor_b(
 
 ___ threadwrap(threadfunc
     ___ wrapper(
-        w__ True:
+        w__ T..:
             try:
                 threadfunc()
             except BaseException as e:
