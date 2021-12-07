@@ -2,13 +2,13 @@ _______ _______
 _______ d___
 _______ r__
 _______ t___
-____ queue _______ Empty
+____ q__ _______ Empty
 
 _______ r..
 ____ lxml _______ html
 
 
-c_ YahooFinancePriceScheduler(_______.T...):
+c_ YahooFinancePriceScheduler(_______.T...
     ___  -  input_queue, output_queue, $$
         s__(YahooFinancePriceScheduler,   - (**kwargs)
         _input_queue = input_queue
@@ -21,7 +21,7 @@ c_ YahooFinancePriceScheduler(_______.T...):
     ___ run
         w.... T..:
             ___
-                val = _input_queue.get(timeout=10)
+                val = _input_queue.g..timeout=10)
             ______ Empty:
                 print('Yahoo scheduler queue is empty, stopping')
                 ______
@@ -32,18 +32,18 @@ c_ YahooFinancePriceScheduler(_______.T...):
             price = yahooFinacePriceWorker.get_price()
             ___ output_queue __ _output_queues:
                 output_values = (val, price, d___.d___.utcnow())
-                o....put(output_values)
+                o....p..(output_values)
             t___.s..(r__.r__())
 
 
 c_ YahooFinacePriceWorkerg___
-    ___  -  symbol):
+    ___  -  symbol
         _symbol = symbol
         base_url = 'https://finance.yahoo.com/quote/'
         _url = f'{base_url}{_symbol}'
 
     ___ get_price
-        r = r...get(_url)
+        r = r...g.._url)
         __ r.status_code != 200:
             r_
         page_contents = html.fromstring(r.text)

@@ -1,13 +1,13 @@
-import threading, random, time
+_____ _, r__, t__
 
-class Counter():
+class Counter(
 
-    def __init__(self, start=0):
-        self.lock = threading.Lock()
+    ___ __init__(self, start=0
+        self.lock = _.Lock()
         self.value = start
 
-    def increment(self):
-        th_name = threading.current_thread().name
+    ___ increment(self
+        th_name = _.current_thread().name
         print(f'Th: {th_name} - ждет блокировку')
         self.lock.acquire()
         try:
@@ -17,25 +17,25 @@ class Counter():
             self.lock.release()
 
 
-def worker(c):
-    for i in range(2):
-        pause = random.random()
-        th_name = threading.current_thread().name
+___ worker(c
+    ___ i __ r..(2
+        pause = r__.r__()
+        th_name = _.current_thread().name
         print(f'Th: {th_name} - заснул на {pause:0.02f}')
-        time.sleep(pause)
+        t__.s..(pause)
         c.increment()
     print(f'Th: {th_name} - сделано.')
 
 
 counter = Counter()
-for i in range(2):
-    t = threading.Thread(target=worker, args=(counter,))
+___ i __ r..(2
+    t = _.?(t.. worker, a.. (counter,))
     t.start()
 
 print('Ожидание рабочих потоков')
-main_thread = threading.main_thread()
-for t in threading.enumerate():
-    if t is not main_thread:
+main_thread = _.main_thread()
+___ t __ _.enumerate(
+    __ t is n__ main_thread:
         t.join()
 print(f'Счетчик: {counter.value}')
 

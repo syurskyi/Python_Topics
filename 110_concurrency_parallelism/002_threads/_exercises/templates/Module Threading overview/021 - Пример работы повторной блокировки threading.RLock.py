@@ -1,5 +1,5 @@
-import threading
-rlock = threading.RLock()
+_____ _
+rlock = _.RLock()
 # первая блокировка
 print('First try :', rlock.acquire())
 # ('First try :', True)

@@ -1,15 +1,15 @@
-import threading, time
+_____ _, t__
 
 
-def worker(i):
+___ worker(i
     n = i + 1
     print(f'Запуск потока №{n}')
-    time.sleep(2)
+    t__.s..(2)
     print(f'Поток №{n} выполнился.')
 
 
-for i in range(2):
-    thread = threading.Thread(target=worker, args=(i,))
+___ i __ r..(2
+    thread = _.?(t.. worker, a.. (i,))
     thread.start()
     # если присоединять 'thread.join()' потоки здесь,
     # то они будут запускаться по очереди, т.к.
@@ -20,14 +20,14 @@ for i in range(2):
 print('Потоки запущены, основной поток программы так же выполняется')
 
 # получаем экземпляр основного потока
-main_thread = threading.main_thread()
+main_thread = _.main_thread()
 
 # объединим потоки, что бы дождаться их выполнения
-for t in threading.enumerate():
+___ t __ _.enumerate(
     # Список 'threading.enumerate()' включает в себя основной
     # поток и т.к. присоединение основного потока самого к себе
     # вызывает взаимоблокировку, то его необходимо пропустить
-    if t is main_thread:
+    __ t is main_thread:
         continue
     print(f'Ожидание выполнения потока {t.name}')
     t.join()

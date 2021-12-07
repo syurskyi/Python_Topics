@@ -1,22 +1,22 @@
-import threading, time, logging
+_____ _, t__, logging
 
-def worker():
-    time.sleep(1)
+___ worker(
+    t__.s..(1)
 
 logging.basicConfig(
     level=logging.DEBUG,
     format='[%(levelname)s] %(message)s',
 )
 
-for _ in range(3):
-    thread = threading.Thread(target=worker)
+___ _ __ r..(3
+    thread = _.?(t.. worker)
     thread.start()
 
 # использование 'threading.enumerate()'
 # проходимся по экземплярам 'Thread'
 # и из которых атрибутом '.name'
 # извлекаем имена живых потоков
-for t in threading.enumerate():
+___ t __ _.enumerate(
     logging.debug(f'Thread Name: {t.name}')
 
 # [DEBUG] Thread Name: MainThread

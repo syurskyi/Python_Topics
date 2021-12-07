@@ -1,30 +1,30 @@
-import threading, time
+_____ _, t__
 
 
-def sensor_a():
-    while True:
-        time.sleep(1)
+___ sensor_a(
+    w__ True:
+        t__.s..(1)
         print("Читаем показания датчика А")
 
 
-def sensor_b():
+___ sensor_b(
     i = 0
-    while True:
-        time.sleep(1)
-        if i == 1:
+    w__ True:
+        t__.s..(1)
+        __ i == 1:
             # имитируем падение датчика
             raise KeyboardInterrupt
         print("Читаем показания датчика Б")
         i += 1
 
 
-def threadwrap(threadfunc):
-    def wrapper():
-        while True:
+___ threadwrap(threadfunc
+    ___ wrapper(
+        w__ True:
             try:
                 threadfunc()
             except BaseException as e:
-                th_name = threading.current_thread().name
+                th_name = _.current_thread().name
                 print(f'Падение потока датчика {th_name}, перезапуск...')
 
     return wrapper
@@ -32,15 +32,15 @@ def threadwrap(threadfunc):
 
 # словарь потоков
 thread_dict = {
-    'SENSOR_A': threading.Thread(target=sensor_a, name='SENSOR_A'),
-    'SENSOR_B': threading.Thread(target=sensor_b, name='SENSOR_B')
+    'SENSOR_A': _.?(t.. sensor_a, n.. 'SENSOR_A'),
+    'SENSOR_B': _.?(t.. sensor_b, n.. 'SENSOR_B')
 }
 
 # создаем потоки
-threads = [t for t in thread_dict.values()]
+threads = [t ___ t __ thread_dict.values()]
 
 # запускаем потоки
-for t in threads:
+___ t __ threads:
     t.start()
 
 # Читаем показания датчика Б

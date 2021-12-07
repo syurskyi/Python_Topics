@@ -1,3 +1,3 @@
-import threading
-print(threading.TIMEOUT_MAX)
+_____ _
+print(_.TIMEOUT_MAX)
 # 9223372036.0

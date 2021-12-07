@@ -1,9 +1,9 @@
-import pathlib, threading, time, queue
+_____ pathlib, _, t__, q__
 
-def worker(que):
-    while True:
+___ worker(que
+    w__ True:
         # Получаем задание (имя файла) из очереди
-        job = que.get()
+        job = que.g..)
         # Путь к новому (обработанному) файлу
         file_write = path_dir_modified.joinpath(job.name)
         # открываем файл из очереди на чтение и
@@ -12,13 +12,13 @@ def worker(que):
             # дописываем имя файла
             fw.write(f'\n\n============> {file_write}\n\n')
             # читаем данные построчно
-            for line in fr:
+            ___ line __ fr:
                 # например, заменим букву у на 0
                 line = line.replace('у', '0')
                 # пишем измененные данные
                 fw.write(line)
         # Сообщаем очереди что задача выполнена
-        que.task_done()
+        que.t..
 
 path = pathlib.Path('.')
 # тестовый каталог с файлами
@@ -34,15 +34,15 @@ path_dir_modified = path.joinpath(test_dir_modified)
 path_dir_modified.mkdir(exist_ok=True)
 
 # создаем и заполняем очередь именами файлов
-que = queue.Queue()
-for file in list_files:
-    que.put(file)
+que = q__.?
+___ file __ list_files:
+    que.p..(file)
 
-if que.qsize():
+__ que.qsize(
     # Создаем и запускаем потоки
     n_thead = 3
-    for _ in range(n_thead):
-        th = threading.Thread(target=worker, args=(que,), daemon=True)
+    ___ _ __ r..(n_thead
+        th = _.?(t.. worker, a.. (que,), daemon=True)
         th.start()
 
     # Блокируем дальнейшее выполнение

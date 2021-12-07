@@ -5,7 +5,7 @@ ____ yaml_reader _______ YamlPipelineExecutor
 
 
 ___ maing___
-    pipeline_location = os.environ.get('PIPELINE_LOCATION')
+    pipeline_location = os.environ.g..'PIPELINE_LOCATION')
     __ pipeline_location is None:
         print('Pipeline location not defined')
         exit(1)
@@ -14,7 +14,7 @@ ___ maing___
     yamlPipelineExecutor = YamlPipelineExecutor(pipeline_location=pipeline_location)
     yamlPipelineExecutor.s..
     yamlPipelineExecutor.j...
-    print('Extracting time took:', round(t___.t___() - scraper_start_time, 1))
+    print('Extracting time took:', r..(t___.t___() - scraper_start_time, 1))
 
 
 __ __name__ == "__main__":

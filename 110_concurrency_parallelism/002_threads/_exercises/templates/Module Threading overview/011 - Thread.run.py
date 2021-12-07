@@ -1,23 +1,23 @@
-import threading, time
+_____ _, t__
 
 
-class Worker(threading.Thread):
+class Worker(_.?
 
-    def __init__(self, num_thread):
+    ___ __init__(self, num_thread
         # вызываем конструктор базового класса
         super().__init__()
         # определяем аргументы собственного класса
         self.num_thread = num_thread
 
-    def run(self):
+    ___ run(self
         # теперь код функции 'worker()', которая должна
         # выполняться в отдельных потоках будет здесь
         print(f'Старт потока №{self.num_thread}')
-        time.sleep(1)
+        t__.s..(1)
         print(f'Завершение работы потока №{self.num_thread}')
 
 
-for i in range(2):
+___ i __ r..(2
     # Создаем экземпляры класса 'Worker()'
     th = Worker(i)
     # запускаем потоки

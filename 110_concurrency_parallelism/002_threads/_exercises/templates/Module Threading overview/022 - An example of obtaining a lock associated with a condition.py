@@ -1,40 +1,40 @@
-import threading, time, queue
+_____ _, t__, q__
 
-def consumer(cond, queue):
+___ consumer(cond, q__
     """ждет определенного состояния для использования ресурсов"""
-    th_name = threading.current_thread().name
+    th_name = _.current_thread().name
     print(f'Запуск потока потребителя {th_name}')
     with cond:
         cond.wait()
         print(f'Обработка ресурса потребителем {th_name}')
-        time.sleep(0.3)
+        t__.s..(0.3)
 
 
-def producer(cond, queue):
+___ producer(cond, q__
     """подготовка ресурса, для использования потребителями"""
-    th_name = threading.current_thread().name
+    th_name = _.current_thread().name
     print(f'Запуск потока производителя {th_name}')
     with cond:
         print(f'{th_name} готовит ресурс для потребителей')
-        time.sleep(0.5)
+        t__.s..(0.5)
         print(f'{th_name} ресурс ГОТОВ!')
         cond.notify_all()
 
 
 # установка переменной условия
-condition = threading.Condition()
+condition = _.Condition()
 
 # создание потоков потребителей
-c1 = threading.Thread(name='Consumer-1',
-                      target=consumer,
-                      args=(condition,))
-c2 = threading.Thread(name='Consumer-2',
-                      target=consumer,
-                      args=(condition,))
+c1 = _.?(n.. 'Consumer-1',
+                      t.. consumer,
+                      a.. (condition,))
+c2 = _.?(n.. 'Consumer-2',
+                      t.. consumer,
+                      a.. (condition,))
 # создание потока потребителей производителя
-p = threading.Thread(name='PRODUCER',
-                     target=producer,
-                     args=(condition,))
+p = _.?(n.. 'PRODUCER',
+                     t.. producer,
+                     a.. (condition,))
 c1.start()
 c2.start()
 p.start()

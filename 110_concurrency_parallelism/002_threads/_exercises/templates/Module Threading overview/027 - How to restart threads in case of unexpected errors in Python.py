@@ -1,15 +1,15 @@
-import threading, time
+_____ _, t__
 
-def sensor_a():
-    while True:
-        time.sleep(1)
+___ sensor_a(
+    w__ True:
+        t__.s..(1)
         print("Читаем показания датчика А")
 
-def sensor_b():
+___ sensor_b(
     i = 0
-    while True:
-        time.sleep(1)
-        if i == 1:
+    w__ True:
+        t__.s..(1)
+        __ i == 1:
             # имитируем ошибку при чтении датчика
             raise KeyboardInterrupt
         print("Читаем показания датчика Б")
@@ -18,22 +18,22 @@ def sensor_b():
 # словарь с потоки для чтения счетчиков
 # словарь необходим для их перезапуска
 thread_dict = {
-'SENSOR_A': threading.Thread(target=sensor_a, name='SENSOR_A'),
-'SENSOR_B': threading.Thread(target=sensor_b, name='SENSOR_B')
+'SENSOR_A': _.?(t.. sensor_a, n.. 'SENSOR_A'),
+'SENSOR_B': _.?(t.. sensor_b, n.. 'SENSOR_B')
 }
 
-threads = [t for t in thread_dict.values()]
+threads = [t ___ t __ thread_dict.values()]
 
 # запускаем потоки
-for t in threads:
+___ t __ threads:
     t.start()
 
 # следим за потоками в реальном времени
-while True:
+w__ True:
     # проходимся по объектам потоков
-    for thread in threading.enumerate():
+    ___ thread __ _.enumerate(
         # если поток умер
-        if not thread.isAlive():
+        __ n__ thread.isAlive(
             print(f'Поток, читающий {thread.name} умер')
             # получаем из словаря `thread_dict`
             # поток по имени для его перезапуска

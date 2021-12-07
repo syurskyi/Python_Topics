@@ -1,13 +1,13 @@
 _______ os
 _______ _______
 
-____ queue _______ Empty
+____ q__ _______ Empty
 
 ____ sqlalchemy _______ create_engine
 ____ sqlalchemy.sql _______ text
 
 
-c_ PostgresMasterScheduler(_______.T...):
+c_ PostgresMasterScheduler(_______.T...
     ___  -  input_queue, $$
         __ 'output_queue' __ kwargs:
             kwargs.pop('output_queue')
@@ -18,7 +18,7 @@ c_ PostgresMasterScheduler(_______.T...):
     ___ run
         w.... T..:
             ___
-                val = _input_queue.get(timeout=10)
+                val = _input_queue.g..timeout=10)
             ______ Empty:
                 print('Timeout reached in postgres scheduler, stopping')
                 ______
@@ -32,15 +32,15 @@ c_ PostgresMasterScheduler(_______.T...):
 
 
 c_ PostgresWorkerg___
-    ___  -  symbol, price, extracted_time):
+    ___  -  symbol, price, extracted_time
         _symbol = symbol
         _price = price
         _extracted_time = extracted_time
 
-        _PG_USER = os.environ.get('PG_USER')
-        _PG_PW = os.environ.get('PG_PW')
-        _PG_HOST = os.environ.get('PG_HOST')
-        _PG_DB = os.environ.get('PG_DB')
+        _PG_USER = os.environ.g..'PG_USER')
+        _PG_PW = os.environ.g..'PG_PW')
+        _PG_HOST = os.environ.g..'PG_HOST')
+        _PG_DB = os.environ.g..'PG_DB')
 
         _engine = create_engine(f'postgresql://{_PG_USER}:{_PG_PW}@{_PG_HOST}/{_PG_DB}')
 

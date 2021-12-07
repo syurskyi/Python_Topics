@@ -6,8 +6,8 @@ _______ yaml
 ____ _ _______ Queue
 
 
-c_ YamlPipelineExecutor(_______.T...):
-    ___  -  pipeline_location):
+c_ YamlPipelineExecutor(_______.T...
+    ___  -  pipeline_location
         s__(YamlPipelineExecutor,   - ()
         _pipline_location = pipeline_location
         _queues = {}
@@ -20,17 +20,17 @@ c_ YamlPipelineExecutor(_______.T...):
             _yaml_data = yaml.safe_load(inFile)
 
     ___ _initialize_queues
-        ___ queue __ _yaml_data['queues']:
-            queue_name = queue['name']
-            _queues[queue_name] = Queue()
+        ___ q__ __ _yaml_data['queues']:
+            queue_name = q__['name']
+            _queues[queue_name] = ?
 
     ___ _initialize_workers
         ___ worker __ _yaml_data['workers']:
             WorkerClass = getattr(importlib.import_module(worker['location']), worker['class'])
-            input_queue = worker.get('input_queue')
-            output_queues = worker.get('output_queues')
+            input_queue = worker.g..'input_queue')
+            output_queues = worker.g..'output_queues')
             worker_name = worker['name']
-            num_instances = worker.get('instances', 1)
+            num_instances = worker.g..'instances', 1)
 
             _downstream_queues[worker_name] = output_queues
             __ input_queue is n.. None:
@@ -41,12 +41,12 @@ c_ YamlPipelineExecutor(_______.T...):
                     __ output_queues is n.. None ____ None
             }
 
-            input_values = worker.get('input_values')
+            input_values = worker.g..'input_values')
             __ input_values is n.. None:
                 init_params['input_values'] = input_values
 
             _workers[worker_name] = []
-            ___ i __ r..(num_instances):
+            ___ i __ r..(num_instances
                 _workers[worker_name].a..(WorkerClass(**init_params))
 
     ___ _join_workers
@@ -77,8 +77,8 @@ c_ YamlPipelineExecutor(_______.T...):
                     __ _downstream_queues[worker_name] is n.. None:
                         ___ o... __ _downstream_queues[worker_name]:
                             number_of_consumers = _queue_consumers[o...]
-                            ___ i __ r..(number_of_consumers):
-                                _queues[o...].put('DONE')
+                            ___ i __ r..(number_of_consumers
+                                _queues[o...].p..('DONE')
 
                     to_del.a..(worker_name)
 

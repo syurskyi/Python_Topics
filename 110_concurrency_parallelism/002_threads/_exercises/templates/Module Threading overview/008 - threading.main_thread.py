@@ -1,9 +1,9 @@
-import threading, time, logging
+_____ _, t__, logging
 
 
-def worker():
-    name = threading.current_thread().name
-    time.sleep(1)
+___ worker(
+    name = _.current_thread().name
+    t__.s..(1)
     logging.debug(f'Ending {name}')
 
 
@@ -14,20 +14,20 @@ logging.basicConfig(
 
 # использование 'threading.main_thread()'
 # получаем экземпляр основного потока
-main_thread = threading.main_thread()
+main_thread = _.main_thread()
 # получаем имя основного потока
 main_thread_name = main_thread.name
 logging.debug(f'{main_thread_name} starting...')
 
-for _ in range(3):
-    thread = threading.Thread(target=worker)
+___ _ __ r..(3
+    thread = _.?(t.. worker)
     thread.start()
 
-for t in threading.enumerate():
+___ t __ _.enumerate(
     # Список 'threading.enumerate()' включает в себя основной
     # поток и т.к. присоединение основного потока самого к себе
     # приводит к тупиковой ситуации, то его необходимо пропустить
-    if t is main_thread:
+    __ t is main_thread:
         continue
     thead_name = t.name
     logging.debug(f'{main_thread_name} joining {thead_name}')

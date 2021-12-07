@@ -6,7 +6,7 @@ ____ typing _______ List
 
 
 c_ Account:
-    ___  -  balance=0):
+    ___  -  balance=0
         balance = balance
 
 
@@ -36,8 +36,8 @@ ___ maing___
     validate_bank(accounts, total)
 
 
-___ do_bank_stuff(accounts, total):
-    ___ _ __ r..(1, 10000):
+___ do_bank_stuff(accounts, total
+    ___ _ __ r..(1, 10000
         a1, a2 = get_two_accounts(accounts)
         amount = r__.r..(1, 100)
         do_transfer(a1, a2, amount)
@@ -55,7 +55,7 @@ ___ create_accounts() -> List[Account]:
     ]
 
 
-___ do_transfer(from_account: Account, to_account: Account, amount: int):
+___ do_transfer(from_account: Account, to_account: Account, amount: int
     __ from_account.balance < amount:
         r_
 
@@ -64,7 +64,7 @@ ___ do_transfer(from_account: Account, to_account: Account, amount: int):
     to_account.balance += amount
 
 
-___ validate_bank(accounts: List[Account], total: int, quiet=F..):
+___ validate_bank(accounts: List[Account], total: int, quiet=F..
     current = sum(a.balance ___ a __ accounts)
     __ current != total:
         print("ERROR: Inconsistent account balance: ${:,} vs ${:,}".format(
@@ -75,7 +75,7 @@ ___ validate_bank(accounts: List[Account], total: int, quiet=F..):
             total), flush=T..)
 
 
-___ get_two_accounts(accounts):
+___ get_two_accounts(accounts
     a1 = r__.choice(accounts)
     a2 = a1
     w.... a2 == a1:

@@ -1,8 +1,8 @@
-import threading, random
+_____ _, r__
 
 
-def show_value(data):
-    name_thread = threading.current_thread().name
+___ show_value(data
+    name_thread = _.current_thread().name
     try:
         val = data.value
     except AttributeError:
@@ -11,28 +11,28 @@ def show_value(data):
         print(f'{name_thread}: value={val}')
 
 
-def worker(data):
-    name_thread = threading.current_thread().name
+___ worker(data
+    name_thread = _.current_thread().name
     show_value(data)
     print(f'{name_thread}: установка локального value')
-    data.value = random.randint(1, 100)
+    data.value = r__.randint(1, 100)
     show_value(data)
 
 
-class MyLocal(threading.local):
+class MyLocal(_.local
     # !!! переопределяем конструктор класса
-    def __init__(self, value):
+    ___ __init__(self, value
         super().__init__()
         self.value = value
-        self.name = threading.current_thread().name
+        self.name = _.current_thread().name
         print(f'{self.name} стартовое значение {self.value}')
 
 
 local_data = MyLocal(1000)
 show_value(local_data)
 
-for i in range(2):
-    t = threading.Thread(target=worker, args=(local_data,))
+___ i __ r..(2
+    t = _.?(t.. worker, a.. (local_data,))
     t.start()
 
 # MainThread стартовое значение 1000

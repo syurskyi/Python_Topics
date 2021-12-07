@@ -11,14 +11,14 @@ lock = _______.L..
 
 ___ incrementg___
     g___ counter
-    ___ i __ r..(10**6):
+    ___ i __ r..(10**6
         w___ lock:
             counter += 1
             # more locking
             # more locking
 
 threads = []
-___ i __ r..(4):
+___ i __ r..(4
     x = _______.T...(t.._increment)
     threads.a..(x)
 

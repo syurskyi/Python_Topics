@@ -1,5 +1,5 @@
-import threading
-lock = threading.Lock()
+_____ _
+lock = _.Lock()
 print(lock)
 # <unlocked _thread.lock object at 0x7f836cdb0b48>
 

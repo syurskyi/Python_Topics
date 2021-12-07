@@ -1,21 +1,21 @@
-import threading, time, logging
+_____ _, t__, logging
 
-def worker():
+___ worker(
     # использование 'threading.current_thread()'
     # получаем экземпляр Thread и атрибутом
     # .name извлекаем имя потока
-    thread_name = threading.current_thread().name
+    thread_name = _.current_thread().name
     logging.debug(f'Starting {thread_name}')
-    time.sleep(1)
+    t__.s..(1)
 
 logging.basicConfig(
     level=logging.DEBUG,
     format='[%(levelname)s] %(message)s',
 )
 
-th1 = threading.Thread(target=worker)
+th1 = _.?(t.. worker)
 th1.start()
-th2 = threading.Thread(name='worker', target=worker)
+th2 = _.?(n.. 'worker', t.. worker)
 th2.start()
 
 # [DEBUG] Starting Thread-1

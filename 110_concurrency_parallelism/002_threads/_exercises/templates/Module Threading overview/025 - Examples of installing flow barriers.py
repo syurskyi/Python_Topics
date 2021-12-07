@@ -1,8 +1,8 @@
-import threading, time
+_____ _, t__
 
 
-def worker(barrier):
-    th_name = threading.current_thread().name
+___ worker(barrier
+    th_name = _.current_thread().name
     print(f'{th_name} в ожидании барьера с {barrier.n_waiting} другими')
     worker_id = barrier.wait()
     print(f'{th_name} прохождение барьера {worker_id}')
@@ -13,23 +13,23 @@ def worker(barrier):
 NUM_THREADS = 3
 
 # установка барьера
-barrier = threading.Barrier(NUM_THREADS)
+barrier = _.Barrier(NUM_THREADS)
 
 threads = []
 # создаем и запускаем потоки
-for i in range(NUM_THREADS):
-    th = threading.Thread(name=f'Worker-{i}',
-                          target=worker,
-                          args=(barrier,),
+___ i __ r..(NUM_THREADS
+    th = _.?(n.. f'Worker-{i}',
+                          t.. worker,
+                          a.. (barrier,),
                           )
     threads.append(th)
     print(f'Запуск {th.name}')
     th.start()
-    time.sleep(0.3)
+    t__.s..(0.3)
 
 # блокируем основной поток программы
 # до завершения работы всех потоков
-for thread in threads:
+___ thread __ threads:
     thread.join()
 
 # Запуск Worker-0

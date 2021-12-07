@@ -1,48 +1,48 @@
-import threading, random, time
+_____ _, r__, t__
 
 
 class ActivePool:
     """Воображаемый пул соединений"""
 
-    start = time.time()
+    start = t__.t__()
 
-    def __init__(self):
+    ___ __init__(self
         super(ActivePool, self).__init__()
         self.active = []
-        self.lock = threading.Lock()
+        self.lock = _.Lock()
 
-    def makeActive(self, name):
+    ___ makeActive(self, name
         with self.lock:
             self.active.append(name)
-            tm = time.time() - self.start
-            print(f'Время: {round(tm, 3)} Running: {self.active}')
+            tm = t__.t__() - self.start
+            print(f'Время: {r..(tm, 3)} Running: {self.active}')
 
-    def makeInactive(self, name):
+    ___ makeInactive(self, name
         with self.lock:
             self.active.remove(name)
-            tm = time.time() - self.start
-            print(f'Время: {round(tm, 3)} Running: {self.active}')
+            tm = t__.t__() - self.start
+            print(f'Время: {r..(tm, 3)} Running: {self.active}')
 
 
-def worker(sem, pool):
+___ worker(sem, pool
     with sem:
-        th_name = threading.current_thread().name
+        th_name = _.current_thread().name
         print(f'{th_name} ожидает присоединения к пулу')
         pool.makeActive(th_name)
-        time.sleep(0.5)
+        t__.s..(0.5)
         pool.makeInactive(th_name)
 
 
 # переменная семафора
-sem = threading.Semaphore(2)
+sem = _.Semaphore(2)
 
 # воображаемый пул соединений
 pool = ActivePool()
 # запускаем потоки
-for i in range(4):
-    t = threading.Thread(
-        target=worker,
-        args=(sem, pool),
+___ i __ r..(4
+    t = _.?(
+        t.. worker,
+        a.. (sem, pool),
     )
     t.start()
 

@@ -1,23 +1,23 @@
-import threading
+_____ _
 
-def worker_with(lock):
+___ worker_with(lock
     with lock:
-        th_name = threading.current_thread().name
+        th_name = _.current_thread().name
         print(f'{th_name}: блокировка ставится через `with`')
 
-def worker_finally(lock):
+___ worker_finally(lock
     lock.acquire()
     try:
-        th_name = threading.current_thread().name
+        th_name = _.current_thread().name
         print(f'{th_name}: блокировка ставится явно')
     finally:
         lock.release()
 
 
-lock = threading.Lock()
+lock = _.Lock()
 
-wh = threading.Thread(target=worker_with, args=(lock,))
-fin = threading.Thread(target=worker_finally, args=(lock,))
+wh = _.?(t.. worker_with, a.. (lock,))
+fin = _.?(t.. worker_finally, a.. (lock,))
 
 wh.start()
 fin.start()

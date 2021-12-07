@@ -1,8 +1,8 @@
-import threading, random
+_____ _, r__
 
 
-def show_value(data):
-    name_thread = threading.current_thread().name
+___ show_value(data
+    name_thread = _.current_thread().name
     try:
         val = data.value
     except AttributeError:
@@ -11,23 +11,23 @@ def show_value(data):
         print(f'{name_thread}: value={val}')
 
 
-def worker(data):
-    name_thread = threading.current_thread().name
+___ worker(data
+    name_thread = _.current_thread().name
     show_value(data)
     print(f'Установка значения value для потока {name_thread}.')
-    data.value = random.randint(1, 100)
+    data.value = r__.randint(1, 100)
     show_value(data)
 
 
-local_data = threading.local()
+local_data = _.local()
 show_value(local_data)
 # установка значения value для
 # основного потока программы
 local_data.value = 1000
 show_value(local_data)
 
-for i in range(2):
-    t = threading.Thread(target=worker, args=(local_data,))
+___ i __ r..(2
+    t = _.?(t.. worker, a.. (local_data,))
     t.start()
 
 # MainThread: Нет локального значения value

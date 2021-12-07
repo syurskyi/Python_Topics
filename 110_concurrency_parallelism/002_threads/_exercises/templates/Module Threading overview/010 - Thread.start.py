@@ -1,18 +1,18 @@
-import threading, time
+_____ _, t__
 
 
-def worker(num_thread):
+___ worker(num_thread
     print(f'Старт потока №{num_thread}')
-    time.sleep(1)
+    t__.s..(1)
     print(f'Завершение работы потока №{num_thread}')
 
 
-for i in range(2):
+___ i __ r..(2
     # создаем экземпляры 'Thread' с функцией
     # 'worker()', которая запустится в отдельных
     # трех потоках. Позиционные аргументы для
     # функции 'worker()' передаются в кортеже `args`
-    thread = threading.Thread(target=worker, args=(i,))
+    thread = _.?(t.. worker, a.. (i,))
     # запускаем экземпляр `thread`
     thread.start()
 
