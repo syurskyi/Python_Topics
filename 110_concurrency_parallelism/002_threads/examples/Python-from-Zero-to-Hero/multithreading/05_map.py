@@ -1,6 +1,6 @@
 import concurrent.futures
 
-from multithreading.count_three_sum import read_ints, count_three_sum
+from count_three_sum import read_ints, count_three_sum
 
 if __name__ == '__main__':
     print('started main')

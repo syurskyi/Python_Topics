@@ -6,11 +6,11 @@
 #     print('started main')
 #
 #     data = r...("..\\data\\1Kints.txt")
-#     w___ c__.f__.T... 4 __ executor
-#         results = ?.m.. c.. ? ? ? ? ('t1', 't2', 't3', 't4'))
+#     w___ ?.T... 4 __ executor
+#         results = ?.m.. c.. ? ? ? ? 't1', 't2', 't3', 't4'
 #         print('After map')
 #         ___ r __ ?
-#             print _*|?_|
+#             print _* ?_
 #         print('End of map')
 #
 #     print('ended main')
