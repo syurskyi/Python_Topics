@@ -8,7 +8,7 @@
 # ___ worker_finally lock
 #     ?.a...
 #     ___
-#         th_name = _.c...n..
+#         th_name  _.c...n..
 #         print _* ?: блокировка ставится явно
 #     ______
 #         ?.r...

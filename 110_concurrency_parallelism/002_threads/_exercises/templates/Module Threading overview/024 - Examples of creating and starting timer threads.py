@@ -1,7 +1,7 @@
 # _____ _ t__
 #
 # ___ delayed
-#     th_name = _.c...n..
+#     th_name  _.c...n..
 #     print _*Th:? Worker запущен
 #
 #

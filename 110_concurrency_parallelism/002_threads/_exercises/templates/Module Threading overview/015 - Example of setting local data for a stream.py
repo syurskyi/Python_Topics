@@ -2,9 +2,9 @@
 #
 #
 # ___ show_value data
-#     name_thread = _.c...n..
+#     name_thread  _.c...n..
 #     ___
-#         val = ?.v..
+#         val  ?.v..
 #     _____ A..
 #         print _* ? Нет локального значения value
 #     ____
@@ -12,22 +12,22 @@
 #
 #
 # ___ worker data
-#     name_thread = _.c...n..
+#     name_thread  _.c...n..
 #     show_value ?
 #     print _*Установка значения value для потока ?
-#     ?.v.. = r__.r.. 1 100
+#     ?.v..  r__.r.. 1 100
 #     ? ?
 #
 #
-# local_data = _.l...
+# local_data  _.l...
 # ? ?
 # # установка значения value для
 # # основного потока программы
-# ?.v.. = 1000
+# ?.v..  1000
 # ? ?
 #
 # ___ i __ r.. 2
-#     t = _.? t.. ? a.. ?
+#     t  _.? t.. ? a.. ?
 #     ?.s..
 #
 # # MainThread: Нет локального значения value

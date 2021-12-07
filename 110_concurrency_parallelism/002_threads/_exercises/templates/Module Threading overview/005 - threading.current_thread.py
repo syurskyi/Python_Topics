@@ -4,7 +4,7 @@
 #     # использование 'threading.current_thread()'
 #     # получаем экземпляр Thread и атрибутом
 #     # .name извлекаем имя потока
-#     thread_name = _.c...n..
+#     thread_name  _.c...n..
 #     l__.d.. _*Starting ?
 #     t__.s.. 1
 #
@@ -13,9 +13,9 @@
 #     f.. ' _ l.. _  _ m.. _'
 #
 #
-# th1 = _.? t.. ?
+# th1  _.? t.. ?
 # ?.s..
-# th2 = _.?(n.. ? t.. ?
+# th2  _.? n.. ? t.. ?
 # ?.s..
 #
 # # [DEBUG] Starting Thread-1

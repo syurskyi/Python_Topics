@@ -9,12 +9,12 @@
 #     ___  -
 #         s___ ? _____ -
 #         active  # list
-#         lock = _.?
+#         lock  _.?
 #
 #     ___ makeActive name
 #         w__ ?
 #             ?.a.. ?
-#             tm = t__.t__ - ?
+#             tm  t__.t__ - ?
 #             print _*Время: r.. ? 3 Running: ?
 #
 #     ___ makeInactive name

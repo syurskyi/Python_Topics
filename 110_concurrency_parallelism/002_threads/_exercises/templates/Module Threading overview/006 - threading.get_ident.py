@@ -1,11 +1,11 @@
 # _____ _ t__ l__
 #
 # ___ worker
-#     name = _.c...n..
+#     name  _.c...n..
 #     # использование 'threading.get_ident()'
-#     ident = _.g..
+#     ident  _.g..
 #     # тоже самое можно получить через атрибут
-#     ident = _.i..
+#     ident  _.i..
 #     l__.d.. _*Starting ?, id: ?
 #     t__.s.. 1
 #
@@ -15,7 +15,7 @@
 #
 #
 # ___ _ __ r.. 3
-#     thread = _.?(t.. ?
+#     thread  _.? t.. ?
 #     ?.s..
 #
 # # [DEBUG] Starting Thread-1, id: 140190611068672

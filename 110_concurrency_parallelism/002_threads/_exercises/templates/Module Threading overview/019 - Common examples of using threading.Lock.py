@@ -19,21 +19,21 @@
 #
 # ___ worker c
 #     ___ i __ r.. 2
-#         pause = r__.r__
-#         th_name = _.c...n..
+#         pause  r__.r__
+#         th_name  _.c...n..
 #         print _*Th: ? - заснул на ?:0.02_
 #         t__.s.. ?
 #         ?.i..
 #     print _*Th: ? - сделано.
 #
 #
-# counter = ?
+# counter  ?
 # ___ i __ r..2
-#     t = _.? t.. ? a.. ?
+#     t  _.? t.. ? a.. ?
 #     ?.s..
 #
 # print('Ожидание рабочих потоков')
-# main_thread = _.m..
+# main_thread  _.m..
 # ___ t __ _.e..
 #     __ t __ n__ ?
 #         ?.j..

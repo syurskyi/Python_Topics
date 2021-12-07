@@ -8,7 +8,7 @@
 # ___ wait_timeout time_out
 #     print('Старт WAIT_TIMEOUT() ')
 #     w__ n__ e__.i..
-#         is_set = e__.w.. t.. ?
+#         is_set  e__.w.. t.. ?
 #         print _* TimeOut ? секунды истек
 #         __ ?
 #             print('Код обработки по событию в WAIT_TIMEOUT()')
@@ -17,13 +17,13 @@
 #             t__.s.. 3
 #
 # # установка глобального события
-# event = _.?
+# event  _.?
 #
-# t1 = _.? n.. 'blocking',
+# t1  _.? n.. 'blocking',
 #                   t.. ?
 # ?.s..
 #
-# t2 = _.? n.. non-blocking
+# t2  _.? n.. non-blocking
 #                   t.. ?
 #                   a.. 2
 # ?.s..

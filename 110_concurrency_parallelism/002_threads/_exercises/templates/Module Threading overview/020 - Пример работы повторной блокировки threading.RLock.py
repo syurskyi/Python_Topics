@@ -1,5 +1,5 @@
 # _____ _
-# lock = _.?
+# lock  _.?
 # print ?
 # # <unlocked _thread.lock object at 0x7f836cdb0b48>
 #

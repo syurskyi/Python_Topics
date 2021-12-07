@@ -2,7 +2,7 @@
 #
 #
 # ___ worker
-#     name = _.c...n..
+#     name  _.c...n..
 #     t__.s.. 1
 #     l__.d.. _*Ending ?
 #
@@ -14,13 +14,13 @@
 #
 # # использование 'threading.main_thread()'
 # # получаем экземпляр основного потока
-# main_thread = _.m..
+# main_thread  _.m..
 # # получаем имя основного потока
-# main_thread_name = ?.n..
+# main_thread_name  ?.n..
 # l__.d.. _* ? starting...
 #
 # ___ _ __ r.. 3
-#     thread = _.? t.. ?
+#     thread  _.? t.. ?
 #     ?.s..
 #
 # ___ t __ _.e..
@@ -29,7 +29,7 @@
 #     # приводит к тупиковой ситуации, то его необходимо пропустить
 #     __ t __ ?
 #         _____
-#     thead_name = ?.n..
+#     thead_name  ?.n..
 #     l__.d.. _* ? joining ?
 #     ?.j..
 #

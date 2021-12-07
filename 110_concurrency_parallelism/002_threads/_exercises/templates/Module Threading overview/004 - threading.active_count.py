@@ -6,11 +6,11 @@
 #
 #
 # ___ _ __ r.. 6
-#     thread = _.?(t.. ?
+#     thread  _.?(t.. ?
 #     ?.s..
 #
 # # использование 'threading.active_count()'
 # # 7 потоков = 6 порожденных + 1 основной
-# n_thread = _.a..
+# n_thread  _.a..
 # print ?
 # # 7
