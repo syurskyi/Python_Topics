@@ -21,7 +21,7 @@ c_ YahooFinancePriceScheduler(_______.T...
     ___ run
         w.... T..:
             ___
-                val = _input_queue.g..timeout=10)
+                val = _input_queue.g..t.. 10)
             ______ Empty:
                 print('Yahoo scheduler queue is empty, stopping')
                 ______
