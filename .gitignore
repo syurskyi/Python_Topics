@@ -161,3 +161,5 @@ gen
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.bson
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.bson
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.bson
+/110_concurrency_parallelism/002_threads/examples/Module Threading overview/test_dir/
+/110_concurrency_parallelism/002_threads/examples/Module Threading overview/test_dir_modified/
