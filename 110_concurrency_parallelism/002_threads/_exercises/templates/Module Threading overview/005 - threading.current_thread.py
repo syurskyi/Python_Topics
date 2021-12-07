@@ -4,7 +4,7 @@ ___ worker(
     # использование 'threading.current_thread()'
     # получаем экземпляр Thread и атрибутом
     # .name извлекаем имя потока
-    thread_name = _.current_thread().name
+    thread_name = _.current_thread().n..
     logging.debug(f'Starting {thread_name}')
     t__.s..(1)
 

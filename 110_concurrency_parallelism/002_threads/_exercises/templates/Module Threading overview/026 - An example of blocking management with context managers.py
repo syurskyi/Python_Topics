@@ -1,14 +1,14 @@
 _____ _
 
 ___ worker_with(lock
-    with lock:
-        th_name = _.current_thread().name
+    w__ lock:
+        th_name = _.current_thread().n..
         print(f'{th_name}: блокировка ставится через `with`')
 
 ___ worker_finally(lock
     lock.acquire()
     try:
-        th_name = _.current_thread().name
+        th_name = _.current_thread().n..
         print(f'{th_name}: блокировка ставится явно')
     finally:
         lock.release()

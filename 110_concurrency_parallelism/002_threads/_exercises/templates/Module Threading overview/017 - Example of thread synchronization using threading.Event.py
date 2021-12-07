@@ -12,7 +12,7 @@ ___ wait_timeout(time_out
         print(f'TimeOut {time_out} секунды истек')
         __ is_set:
             print('Код обработки по событию в WAIT_TIMEOUT()')
-        else:
+        ____
             print('Пока ждем события, код обработки чего-то другого')
             t__.s..(3)
 

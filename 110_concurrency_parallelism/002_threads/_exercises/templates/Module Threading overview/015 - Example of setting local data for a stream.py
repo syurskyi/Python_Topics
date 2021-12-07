@@ -2,17 +2,17 @@ _____ _, r__
 
 
 ___ show_value(data
-    name_thread = _.current_thread().name
+    name_thread = _.current_thread().n..
     try:
         val = data.value
     except AttributeError:
         print(f'{name_thread}: Нет локального значения value')
-    else:
+    ____
         print(f'{name_thread}: value={val}')
 
 
 ___ worker(data
-    name_thread = _.current_thread().name
+    name_thread = _.current_thread().n..
     show_value(data)
     print(f'Установка значения value для потока {name_thread}.')
     data.value = r__.randint(1, 100)

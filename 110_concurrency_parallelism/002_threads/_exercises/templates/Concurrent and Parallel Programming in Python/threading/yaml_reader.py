@@ -16,7 +16,7 @@ c_ YamlPipelineExecutor(_______.T...
         _downstream_queues = {}
 
     ___ _load_pipeline
-        w___ o..(_pipline_location, 'r') __ inFile:
+        w___ o..(_pipline_location, _  __ inFile:
             _yaml_data = yaml.safe_load(inFile)
 
     ___ _initialize_queues

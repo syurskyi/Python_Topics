@@ -48,5 +48,5 @@ c_ YahooFinacePriceWorkerg___
             r_
         page_contents = html.fromstring(r.text)
         raw_price = page_contents.xpath('//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]')[0].text
-        price = float(raw_price.replace(',', ''))
+        price = float(raw_price.r..(',', ''))
         r_ price

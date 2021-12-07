@@ -2,9 +2,9 @@ _____ _, t__, q__
 
 ___ consumer(cond, q__
     """ждет определенного состояния для использования ресурсов"""
-    th_name = _.current_thread().name
+    th_name = _.current_thread().n..
     print(f'Запуск потока потребителя {th_name}')
-    with cond:
+    w__ cond:
         cond.wait()
         print(f'Обработка ресурса потребителем {th_name}')
         t__.s..(0.3)
@@ -12,9 +12,9 @@ ___ consumer(cond, q__
 
 ___ producer(cond, q__
     """подготовка ресурса, для использования потребителями"""
-    th_name = _.current_thread().name
+    th_name = _.current_thread().n..
     print(f'Запуск потока производителя {th_name}')
-    with cond:
+    w__ cond:
         print(f'{th_name} готовит ресурс для потребителей')
         t__.s..(0.5)
         print(f'{th_name} ресурс ГОТОВ!')

@@ -2,7 +2,7 @@ _____ _, t__, logging
 
 
 ___ worker(
-    name = _.current_thread().name
+    name = _.current_thread().n..
     t__.s..(1)
     logging.debug(f'Ending {name}')
 
@@ -16,7 +16,7 @@ logging.basicConfig(
 # получаем экземпляр основного потока
 main_thread = _.main_thread()
 # получаем имя основного потока
-main_thread_name = main_thread.name
+main_thread_name = main_thread.n..
 logging.debug(f'{main_thread_name} starting...')
 
 ___ _ __ r..(3
@@ -29,9 +29,9 @@ ___ t __ _.enumerate(
     # приводит к тупиковой ситуации, то его необходимо пропустить
     __ t is main_thread:
         continue
-    thead_name = t.name
+    thead_name = t.n..
     logging.debug(f'{main_thread_name} joining {thead_name}')
-    t.join()
+    t.j..
 
 # [DEBUG] MainThread starting...
 # [DEBUG] MainThread joining Thread-1

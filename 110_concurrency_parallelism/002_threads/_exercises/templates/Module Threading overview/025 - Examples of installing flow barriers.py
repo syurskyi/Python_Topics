@@ -2,7 +2,7 @@ _____ _, t__
 
 
 ___ worker(barrier
-    th_name = _.current_thread().name
+    th_name = _.current_thread().n..
     print(f'{th_name} в ожидании барьера с {barrier.n_waiting} другими')
     worker_id = barrier.wait()
     print(f'{th_name} прохождение барьера {worker_id}')
@@ -23,14 +23,14 @@ ___ i __ r..(NUM_THREADS
                           a.. (barrier,),
                           )
     threads.append(th)
-    print(f'Запуск {th.name}')
+    print(f'Запуск {th.n..}')
     th.start()
     t__.s..(0.3)
 
 # блокируем основной поток программы
 # до завершения работы всех потоков
 ___ thread __ threads:
-    thread.join()
+    thread.j..
 
 # Запуск Worker-0
 # Worker-0 в ожидании барьера с 0 другими

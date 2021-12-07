@@ -7,7 +7,7 @@ class Counter(
         self.value = start
 
     ___ increment(self
-        th_name = _.current_thread().name
+        th_name = _.current_thread().n..
         print(f'Th: {th_name} - ждет блокировку')
         self.lock.acquire()
         try:
@@ -20,7 +20,7 @@ class Counter(
 ___ worker(c
     ___ i __ r..(2
         pause = r__.r__()
-        th_name = _.current_thread().name
+        th_name = _.current_thread().n..
         print(f'Th: {th_name} - заснул на {pause:0.02f}')
         t__.s..(pause)
         c.increment()
@@ -36,7 +36,7 @@ print('Ожидание рабочих потоков')
 main_thread = _.main_thread()
 ___ t __ _.enumerate(
     __ t is n__ main_thread:
-        t.join()
+        t.j..
 print(f'Счетчик: {counter.value}')
 
 

@@ -34,10 +34,10 @@ w__ T..:
     ___ thread __ _.enumerate(
         # если поток умер
         __ n__ thread.isAlive(
-            print(f'Поток, читающий {thread.name} умер')
+            print(f'Поток, читающий {thread.n..} умер')
             # получаем из словаря `thread_dict`
             # поток по имени для его перезапуска
-            restart = thread_dict[thread.name]
+            restart = thread_dict[thread.n..]
             # пытаемся перезапустить
             restart.start()
 

@@ -12,21 +12,21 @@ class ActivePool:
         self.lock = _.Lock()
 
     ___ makeActive(self, name
-        with self.lock:
+        w__ self.lock:
             self.active.append(name)
             tm = t__.t__() - self.start
             print(f'Время: {r..(tm, 3)} Running: {self.active}')
 
     ___ makeInactive(self, name
-        with self.lock:
+        w__ self.lock:
             self.active.remove(name)
             tm = t__.t__() - self.start
             print(f'Время: {r..(tm, 3)} Running: {self.active}')
 
 
 ___ worker(sem, pool
-    with sem:
-        th_name = _.current_thread().name
+    w__ sem:
+        th_name = _.current_thread().n..
         print(f'{th_name} ожидает присоединения к пулу')
         pool.makeActive(th_name)
         t__.s..(0.5)

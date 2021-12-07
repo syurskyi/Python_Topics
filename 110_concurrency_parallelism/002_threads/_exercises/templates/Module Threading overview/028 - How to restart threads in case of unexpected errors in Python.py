@@ -23,8 +23,8 @@ ___ threadwrap(threadfunc
         w__ T..:
             try:
                 threadfunc()
-            except BaseException as e:
-                th_name = _.current_thread().name
+            except BaseException __ e:
+                th_name = _.current_thread().n..
                 print(f'Падение потока датчика {th_name}, перезапуск...')
 
     return wrapper

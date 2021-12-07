@@ -1,7 +1,7 @@
 _____ _, t__, logging
 
 ___ worker(
-    name = _.current_thread().name
+    name = _.current_thread().n..
     # использование 'threading.get_ident()'
     ident = _.get_ident()
     # тоже самое можно получить через атрибут

@@ -17,7 +17,7 @@ ___ _ __ r..(3
 # и из которых атрибутом '.name'
 # извлекаем имена живых потоков
 ___ t __ _.enumerate(
-    logging.debug(f'Thread Name: {t.name}')
+    logging.debug(f'Thread Name: {t.n..}')
 
 # [DEBUG] Thread Name: MainThread
 # [DEBUG] Thread Name: Thread-1
