@@ -3,15 +3,15 @@
 #
 #
 # ___ div divisor limit
-#     print _* started ?_|?|
+#     print _* started ?_|?
 #
 #     result = 0
 #     ___ x __ r.. 1 ?
-#         __ x % d __ 0
+#         __ ? % d.. __ 0
 #             ? += ?
-#             # print(f'divisor={divisor}, x={x}')
-#         t___.s 0.2
-#     print _* ended ?_|d..| e.._'\n'
+#
+#         t___.s.. 0.2
+#     print _* ended ?_? e.._'\n'
 #     r_ ?
 #
 #
@@ -19,16 +19,16 @@
 #     print('started main')
 #
 #     futures = # list
-#     w___ c__.f__.T... max_workers=2 __ executor
-#         ?.a.. ?.submit ? 5, 25
-#         ?.a.. ?.submit ? 3, 25
+#     w___ ?.T... m..._2 __ executor
+#         ?.a.. ?.s... ? 5, 25
+#         ?.a.. ?.s... ? 3, 25
 #
-#         w.... ? 0 .running a.. ? 1 .running
+#         w.... ? 0 .r.. a.. ? 1 .r..
 #             print('.', e.._''
-#             t___.s 0.5
+#             t___.s.. 0.5
 #
 #         ___ f __ ?
-#             print _*|?.r..
+#             print _* ?.r..
 #
 #     print('After with block')
 #
