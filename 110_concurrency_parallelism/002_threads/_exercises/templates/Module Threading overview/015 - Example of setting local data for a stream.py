@@ -13,7 +13,7 @@
 #
 # ___ worker data
 #     name_thread  _.c...n..
-#     show_value ?
+#     ? ?
 #     print _*Установка значения value для потока ?
 #     ?.v..  r__.r.. 1 100
 #     ? ?
