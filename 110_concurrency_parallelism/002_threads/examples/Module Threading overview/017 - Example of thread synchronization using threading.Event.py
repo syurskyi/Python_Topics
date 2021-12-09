@@ -17,7 +17,7 @@ def wait_timeout(time_out):
             time.sleep(3)
 
 # установка глобального события
-event = threading.Event()
+event = threading.EventEvent()
 
 t1 = threading.Thread(name='blocking',
                   target=wait_event)
