@@ -10,7 +10,7 @@ c_ DarkPalette(QPalette):
     SECONDARY = QColor(35, 35, 35)
     TERTIARY = QColor(42, 130, 218)
 
-    ___ - (self, *args):
+    ___ -  *args):
         super().- (*args)
         setColor(QPalette.Window, PRIMARY)
         setColor(QPalette.WindowText, WHITE)

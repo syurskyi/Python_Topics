@@ -1,20 +1,20 @@
 ______ r__
 ______ _
 ______ t__
-______ logging
+______ l__
 
 
 ___ worker():
     """thread worker function"""
     pause = r__.randint(1, 5) / 10
-    logging.debug('sleeping %0.2f', pause)
+    l__.d..('sleeping %0.2f', pause)
     t__.s..(pause)
-    logging.debug('ending')
+    l__.d..('ending')
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
+l__.?(
+    ?_l__.D..
+    ?_ _threadName)-10s)  _ m.. _,
 )
 
 ___ i __ r.. 3):
@@ -23,7 +23,7 @@ ___ i __ r.. 3):
 
 main_thread = _.main_thread()
 ___ t __ _.e..:
-    __ t is main_thread:
+    __ t __ main_thread:
         continue
-    logging.debug('joining @', t.getName())
+    l__.d..('joining @', t.getName())
     t.j..

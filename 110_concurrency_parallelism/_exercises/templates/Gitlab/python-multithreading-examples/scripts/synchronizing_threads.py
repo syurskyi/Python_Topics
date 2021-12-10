@@ -1,24 +1,24 @@
-______ logging
+______ l__
 ______ _
 ______ t__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s (%(threadName)-2s) %(message)s',
+l__.?(?_l__.D..
+                    ?_'%(asctime)s (%(threadName)-2s)  _ m.. _,
                     )
 
 ___ consumer(cond):
     """wait for the condition and use the resource"""
-    logging.debug('Starting consumer thread')
-    t = _.currentThread()
+    l__.d..('Starting consumer thread')
+    t = _.c..
     with cond:
         cond.wait()
-        logging.debug('Resource is available to consumer')
+        l__.d..('Resource is available to consumer')
 
 ___ producer(cond):
     """set up the resource to be used by the consumer"""
-    logging.debug('Starting producer thread')
+    l__.d..('Starting producer thread')
     with cond:
-        logging.debug('Making resource available')
+        l__.d..('Making resource available')
         cond.notifyAll()
 
 condition = _.Condition()

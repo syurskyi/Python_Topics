@@ -46,7 +46,7 @@ c_ App(QWidget):
         thread.signal.return_signal.connect(function_thread)
         threadpool.start(thread)
 
-    ___ function_thread(self, signal):
+    ___ function_thread signal):
         print(signal)
 
 

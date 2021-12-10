@@ -7,17 +7,17 @@
 
 ______ _
 ______ t__
-______ logging
+______ l__
 
 
-logging.basicConfig(
-	level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
+l__.?(
+	?_l__.D..
+    ?_ _threadName)-10s)  _ m.. _,
 )
 
 
 ___ delayed():
-    logging.debug('Thread program still running')
+    l__.d..('Thread program still running')
     r_
 
 ___ Main():
@@ -26,13 +26,13 @@ ___ Main():
 	t2 = _.Timer(3, delayed)
 	t2.setName('Timer 2')
 
-	logging.debug('Starting thread timers')
+	l__.d..('Starting thread timers')
 	t1.s..
 	t2.s..
 
-	logging.debug('We are waiting before canceling @', t2.getName())
+	l__.d..('We are waiting before canceling @', t2.getName())
 	t__.s..(2)
-	logging.debug('Now canceling @', t2.getName())
+	l__.d..('Now canceling @', t2.getName())
 	t2.cancel()
 
 

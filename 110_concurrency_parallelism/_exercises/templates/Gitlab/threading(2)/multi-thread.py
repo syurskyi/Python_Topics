@@ -19,7 +19,7 @@ b = 0
 c = 0
 
 c_ calcA(_.?):
-    ___ - (self,name):
+    ___ - name):
         super(calcA, self).- ()
         name = name
         terminated = False
@@ -38,7 +38,7 @@ c_ calcA(_.?):
 
 
 c_ calcB(_.?):
-    ___ - (self,name):
+    ___ - name):
         super(calcB, self).- ()
         name = name
         terminated = False
@@ -58,7 +58,7 @@ c_ calcB(_.?):
 
 
 c_ calcC(_.?):
-    ___ - (self,name):
+    ___ - name):
         super(calcC, self).- ()
         name = name
         terminated = False

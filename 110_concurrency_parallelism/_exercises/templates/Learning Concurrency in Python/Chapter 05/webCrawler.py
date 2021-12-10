@@ -31,7 +31,7 @@ c_ Crawler(_.T..):
       link = linksToCrawl.g..
       urlLock.r..
       # have we reached the end of our queue?
-      __ link is N..:
+      __ link __ N..:
         _____
 
       # Have we visited this link already?
@@ -60,7 +60,7 @@ c_ Crawler(_.T..):
       except URLError __ e:
         print("URL {} threw this error when trying to parse: {}".format(link, e.reason))
         errorLinks.a..(link)
-      finally:
+      ______
         linksToCrawl.task_done()
   
     

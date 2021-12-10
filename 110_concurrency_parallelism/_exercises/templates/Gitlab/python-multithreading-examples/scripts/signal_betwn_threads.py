@@ -1,27 +1,27 @@
-______ logging
+______ l__
 ______ _
 ______ t__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-10s) %(message)s',
+l__.?(?_l__.D..
+                    ?_ _threadName)-10s)  _ m.. _,
                     )
                     
 ___ wait_for_event(e):
     """Wait for the event to be set before doing anything"""
-    logging.debug('wait_for_event starting')
+    l__.d..('wait_for_event starting')
     event_is_set = e.wait()
-    logging.debug('event set: @', event_is_set)
+    l__.d..('event set: @', event_is_set)
 
 ___ wait_for_event_timeout(e, t):
     """Wait t seconds and then timeout"""
     w___ n.. e.isSet():
-        logging.debug('wait_for_event_timeout starting')
+        l__.d..('wait_for_event_timeout starting')
         event_is_set = e.wait(t)
-        logging.debug('event set: @', event_is_set)
+        l__.d..('event set: @', event_is_set)
         __ event_is_set:
-            logging.debug('processing event')
+            l__.d..('processing event')
         else:
-            logging.debug('doing other work')
+            l__.d..('doing other work')
 
 
 e = _.Event()
@@ -35,7 +35,7 @@ t2 = _.?(name='non-block',
                        ?_(e, 2))
 t2.s..
 
-logging.debug('Waiting before calling Event.set()')
+l__.d..('Waiting before calling Event.set()')
 t__.s..(3)
 e.set()
-logging.debug('Event is set')
+l__.d..('Event is set')

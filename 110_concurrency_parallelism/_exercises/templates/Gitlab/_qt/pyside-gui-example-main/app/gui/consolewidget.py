@@ -40,7 +40,7 @@ c_ ConsoleWidget(QTextEdit):
         actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=clear)
 
     @Slot(s..)
-    ___ write(self, line):
+    ___ write line):
         a.. (line)
         scrollToEnd()
 
@@ -58,7 +58,7 @@ c_ ConsoleWidget(QTextEdit):
         setText('')
         scrollToEnd()
 
-    ___ contextMenuEvent(self, event):
+    ___ contextMenuEvent event):
         menu = QMenu(self)
         menu.addAction(actionCopy)
         menu.addAction(actionSelectAll)

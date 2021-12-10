@@ -1,4 +1,4 @@
-______ logging
+______ l__
 ______ r__
 ______ _
 ______ t__
@@ -11,19 +11,19 @@ c_ ActivePool:
         active   # list
         lock = _.?
 
-    ___ makeActive(self, name):
+    ___ makeActive name):
         with lock:
             active.a.. (name)
-            logging.debug('Running: @', active)
+            l__.d..('Running: @', active)
 
-    ___ makeInactive(self, name):
+    ___ makeInactive name):
         with lock:
             active.remove(name)
-            logging.debug('Running: @', active)
+            l__.d..('Running: @', active)
 
 
 ___ worker(s, pool):
-    logging.debug('Waiting to join the pool')
+    l__.d..('Waiting to join the pool')
     with s:
         name = _.current_thread().getName()
         pool.makeActive(name)
@@ -31,9 +31,9 @@ ___ worker(s, pool):
         pool.makeInactive(name)
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s (%(threadName)-2s) %(message)s',
+l__.?(
+    ?_l__.D..
+    ?_'%(asctime)s (%(threadName)-2s)  _ m.. _,
 )
 
 pool = ActivePool()

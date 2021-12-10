@@ -10,7 +10,7 @@ from PyQt5 ______ QtCore, QtGui, QtWidgets
 
 
 c_ Ui_MainWindow(object):
-    ___ setupUi(self, MainWindow):
+    ___ setupUi MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 145)
         centralwidget = QtWidgets.QWidget(MainWindow)
@@ -40,7 +40,7 @@ c_ Ui_MainWindow(object):
         retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
+    ___ retranslateUi MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "CPU USAGE"))
         label.setText(_translate("MainWindow", "CPU USAGE"))

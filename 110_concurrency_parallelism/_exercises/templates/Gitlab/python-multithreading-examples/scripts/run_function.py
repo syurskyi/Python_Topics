@@ -2,19 +2,19 @@
 
 
 ______ _
-______ logging
+______ l__
 ______ t__
 
 
-logging.basicConfig(
-	level=logging.DEBUG,
-	format = '(%(threadName)-10s) %(message)s',
+l__.?(
+	?_l__.D..
+	format =  _threadName)-10s)  _ m.. _,
 )
 
 
 c_ MyThread(_.?):
     ___ run
-        logging.debug('This thread is running')
+        l__.d..('This thread is running')
         r_
 
 ___ x __ r.. 5):

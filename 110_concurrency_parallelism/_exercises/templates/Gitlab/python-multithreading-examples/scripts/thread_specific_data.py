@@ -1,19 +1,19 @@
 
 ______ r__
 ______ _
-______ logging
+______ l__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-10s) %(message)s',
+l__.?(?_l__.D..
+                    ?_ _threadName)-10s)  _ m.. _,
                     )
 
 ___ show_value(data):
     ___
         val = data.value
     except AttributeError:
-        logging.debug('No value yet')
+        l__.d..('No value yet')
     else:
-        logging.debug('value=@', val)
+        l__.d..('value=@', val)
 
 
 ___ worker(data):

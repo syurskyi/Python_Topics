@@ -8,19 +8,19 @@
 ______ r__
 ______ _
 ______ t__
-______ logging
+______ l__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-10s) %(message)s',
+l__.?(?_l__.D..
+                    ?_ _threadName)-10s)  _ m.. _,
                     )
 
 ___ student():
     """thread student function"""
-    t = _.currentThread()
+    t = _.c..
     pause = r__.randint(1,5)
-    logging.debug('sleeping @', pause)
+    l__.d..('sleeping @', pause)
     t__.s..(pause)
-    logging.debug('ending')
+    l__.d..('ending')
     r_
 
 ___ i __ r.. 3):
@@ -28,10 +28,10 @@ ___ i __ r.. 3):
     t.setDaemon(True)
     t.s..
 
-main_thread = _.currentThread()
+main_thread = _.c..
 ___ t __ _.e..:
-    __ t is main_thread:
+    __ t __ main_thread:
         continue
-    logging.debug('joining @', t.getName())
+    l__.d..('joining @', t.getName())
     t.j..
     

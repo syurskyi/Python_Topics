@@ -1,7 +1,7 @@
 ______ _
  
 c_ PrimeNumber(_.?):
-  ___ - (self, number): 
+  ___ -  number):
     _.?.- (self)
     Number = number
  

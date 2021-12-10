@@ -15,7 +15,7 @@ ___ get_config_yaml_path():
 
 ___ get_config():
     g.. __config__
-    __ __config__ is N..:
+    __ __config__ __ N..:
 
         # Load defaults from config.yaml that's distributed with the application
         with open(get_config_yaml_path()) __ fp:

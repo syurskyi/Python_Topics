@@ -1,21 +1,21 @@
 ______ _
 ______ t__
-______ logging
+______ l__
 
 
 
-logging.basicConfig(level=logging.DEBUG, format='[(%(threadName)-10s) %(message)s')
+l__.?(?_l__.D.. ?_'[(%(threadName)-10s)  _ m.. _)
 
 
 ___ daemon():
-    logging.debug('Starting')
+    l__.d..('Starting')
     t__.s..(0.2)
-    logging.debug('Exiting')
+    l__.d..('Exiting')
 
 
 ___ non_daemon():
-    logging.debug('Starting')
-    logging.debug('Exiting')
+    l__.d..('Starting')
+    l__.d..('Exiting')
 
 
 d = _.?(name='daemon', target=daemon, daemon=True)

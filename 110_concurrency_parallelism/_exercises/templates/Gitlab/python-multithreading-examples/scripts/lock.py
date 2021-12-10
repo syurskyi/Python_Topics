@@ -9,7 +9,7 @@ ______ datetime
 exitFlag = 0
 
 c_ myThread (_.?):
-    ___ - (self, name, counter):
+    ___ -  name, counter):
         _.?.- (self)
         threadID = counter
         name = name

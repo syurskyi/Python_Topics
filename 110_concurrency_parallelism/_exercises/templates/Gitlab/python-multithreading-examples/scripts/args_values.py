@@ -7,17 +7,17 @@
 
 
 ______ _
-______ logging
+______ l__
 ______ t__
 
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-10s) %(message)s',
+l__.?(?_l__.D..
+                    ?_ _threadName)-10s)  _ m.. _,
                    )
 
 
 c_ ThreadWithArgs(_.?):
-    ___ - (self, 
+    ___ -
                 group=N.., 
                 target=N.., 
                 name=N..,
@@ -26,7 +26,7 @@ c_ ThreadWithArgs(_.?):
                 verbose=N..
                 ):
 
-        _.?.- (self, 
+        _.?.-
                                 group=group, 
                                 target=target, 
                                 name=name,
@@ -38,7 +38,7 @@ c_ ThreadWithArgs(_.?):
         r_
 
     ___ run
-        logging.debug('This thread is running with @ and @', args, kwargs)
+        l__.d..('This thread is running with @ and @', args, kwargs)
         r_
 
 

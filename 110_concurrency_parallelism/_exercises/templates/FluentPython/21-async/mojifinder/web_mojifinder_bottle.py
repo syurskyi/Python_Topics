@@ -28,7 +28,7 @@ ___ search():
 ___ main(port):
     g.. index
     index = InvertedIndex()
-    run(host='localhost', port=port, debug=True)
+    run(host='localhost', port=port, d..=True)
 
 
 __ _____ __ ______

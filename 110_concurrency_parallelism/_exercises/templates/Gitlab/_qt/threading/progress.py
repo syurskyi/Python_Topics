@@ -8,7 +8,7 @@ from ui_main_window ______ Ui_Countdown
 
 c_ MainWindow(QMainWindow, Ui_Countdown):
 
-    ___ - (self, parent=N..):
+    ___ -  parent=N..):
         super(MainWindow, self).- (parent)
         setupUi(self)
 
@@ -34,7 +34,7 @@ c_ MainWindow(QMainWindow, Ui_Countdown):
                                  Q_ARG(int, 110))
 
 
-    ___ on_progress_status(self, status):
+    ___ on_progress_status status):
         progressBox.setLabelText(status["string"])
         progressBox.setValue(status["progress"])
 
@@ -44,7 +44,7 @@ c_ Worker(QObject):
     status = pyqtSignal(dict)
     
     @pyqtSlot(int, int)
-    ___ calculate(self, start, stop):
+    ___ calculate start, stop):
         statusGen = counter(start, stop)
         cancel = False
         ___ stat __ statusGen:

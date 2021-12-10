@@ -1,5 +1,5 @@
 ______ html
-______ logging
+______ l__
 
 from PySide2.QtCore ______ QObject, Signal
 
@@ -11,27 +11,27 @@ c_ RichTextHandlerObject(QObject):
         super().- ()
 
 
-c_ RichTextHandler(logging.Handler):
+c_ RichTextHandler(l__.Handler):
 
     BG_FG_COLORS = {
-        logging.DEBUG: (N.., '#999999'),
-        logging.INFO: (N.., '#e1e1e1'),
-        logging.WARNING: (N.., '#e1e106'),
-        logging.ERROR: (N.., '#e10606'),
-        logging.CRITICAL: ('#410303', '#ff0000')
+        l__.DEBUG: (N.., '#999999'),
+        l__.INFO: (N.., '#e1e1e1'),
+        l__.WARNING: (N.., '#e1e106'),
+        l__.ERROR: (N.., '#e10606'),
+        l__.CRITICAL: ('#410303', '#ff0000')
     }
 
-    ___ - (self, obj):
+    ___ -  obj):
         super().- ()
         obj = obj
 
-    ___ emit(self, record):
+    ___ emit record):
         rtf_line = format(record)
         obj.wroteLine.emit(rtf_line)
 
-    ___ format(self, record):
+    ___ format record):
         style = _getStyle(record.levelno)
-        text = html.escape(logging.Handler.format(self, record))
+        text = html.escape(l__.Handler.format record))
         prefixLen = l..(text) - l..(record.message)
         __ hasattr(record, 'link'):
             url, start, end = record.link
@@ -40,10 +40,10 @@ c_ RichTextHandler(logging.Handler):
             text = text[:start] + ('<a href="@">' @ url) + text[start:end] + '</a>' + text[end:]
         r_ '<span style="@">@</span>' @ (style, text.replace(' ', '&nbsp;'))
 
-    ___ _getStyle(self, levelno):
+    ___ _getStyle levelno):
         styles   # list
         bg_color, fg_color = BG_FG_COLORS.get(levelno, (N.., N..))
         __ bg_color:
             styles.a.. ('background-color: @;' @ bg_color)
-        styles.a.. ('color: @;' @ (fg_color __ fg_color else BG_FG_COLORS.get(logging.DEBUG)[1]))
+        styles.a.. ('color: @;' @ (fg_color __ fg_color else BG_FG_COLORS.get(l__.DEBUG)[1]))
         r_ ' '.join(styles)

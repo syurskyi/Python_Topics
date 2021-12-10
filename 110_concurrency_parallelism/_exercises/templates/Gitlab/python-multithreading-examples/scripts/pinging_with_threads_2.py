@@ -2,7 +2,7 @@
 ______ os, re, _
 
 c_ ip_check(_.?):
-   ___ -  (self,ip):
+   ___ -  ip):
       _.?.- (self)
       ip = ip
       __successful_pings = -1

@@ -23,7 +23,7 @@ except AttributeError:
         r_ QtGui.QApplication.translate(context, text, disambig)
 
 c_ Ui_Countdown(object):
-    ___ setupUi(self, Countdown):
+    ___ setupUi Countdown):
         Countdown.setObjectName(_fromUtf8("Countdown"))
         Countdown.resize(301, 162)
         centralwidget = QtGui.QWidget(Countdown)
@@ -36,7 +36,7 @@ c_ Ui_Countdown(object):
         retranslateUi(Countdown)
         QtCore.QMetaObject.connectSlotsByName(Countdown)
 
-    ___ retranslateUi(self, Countdown):
+    ___ retranslateUi Countdown):
         Countdown.setWindowTitle(_translate("Countdown", "Countdown Window", N..))
         countdownButton.setText(_translate("Countdown", "Start", N..))
 

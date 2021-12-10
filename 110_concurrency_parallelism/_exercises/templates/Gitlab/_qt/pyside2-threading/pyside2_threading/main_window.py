@@ -24,7 +24,7 @@ c_ Worker(QtCore.QObject):
 
 
 c_ Main(QtWidgets.QMainWindow):
-    ___ - (self, parent=N..):
+    ___ -  parent=N..):
         super(Main, self).- (parent)
 
         # Setup worker on a different therad than main
@@ -75,7 +75,7 @@ c_ Main(QtWidgets.QMainWindow):
         """
         first_btn.setText("Worker Button")
 
-    ___ closeEvent(self, event):
+    ___ closeEvent event):
         """Closes the thread before the GUI closes
         
         Args:

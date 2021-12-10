@@ -1,46 +1,46 @@
 #!/usr/bin/python
 
 
-______ logging
+______ l__
 ______ _
 ______ t__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-10s) %(message)s',
+l__.?(?_l__.D..
+                    ?_ _threadName)-10s)  _ m.. _,
                     )
                     
 ___ lock_holder(lock):
-    logging.debug('Starting')
+    l__.d..('Starting')
     w___ True:
         lock.a..
         ___
-            logging.debug('Holding')
+            l__.d..('Holding')
             t__.s..(0.5)
-        finally:
-            logging.debug('Not holding')
+        ______
+            l__.d..('Not holding')
             lock.r..
         t__.s..(0.5)
     r_
                     
 ___ worker(lock):
-    logging.debug('Starting')
+    l__.d..('Starting')
     num_tries = 0
     num_acquires = 0
     w___ num_acquires < 3:
         t__.s..(0.5)
-        logging.debug('Trying to acquire')
+        l__.d..('Trying to acquire')
         have_it = lock.acquire(0)
         ___
             num_tries += 1
             __ have_it:
-                logging.debug('Iteration %d: Acquired',  num_tries)
+                l__.d..('Iteration %d: Acquired',  num_tries)
                 num_acquires += 1
             else:
-                logging.debug('Iteration %d: Not acquired', num_tries)
-        finally:
+                l__.d..('Iteration %d: Not acquired', num_tries)
+        ______
             __ have_it:
                 lock.r..
-    logging.debug('Done after %d iterations', num_tries)
+    l__.d..('Done after %d iterations', num_tries)
 
 
 lock = _.?

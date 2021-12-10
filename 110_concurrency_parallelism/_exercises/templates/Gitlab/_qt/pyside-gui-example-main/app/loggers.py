@@ -1,22 +1,22 @@
 ______ os
 ______ sys
-______ logging
+______ l__
 ______ datetime
 ______ colorama
 
 
-c_ ColorizingStreamHandler(logging.StreamHandler):
+c_ ColorizingStreamHandler(l__.StreamHandler):
     color_map = {
-        logging.DEBUG: colorama.Style.DIM + colorama.Fore.WHITE,
-        logging.INFO: colorama.Style.BRIGHT + colorama.Fore.WHITE,
-        logging.WARNING: colorama.Style.BRIGHT + colorama.Fore.YELLOW,
-        logging.ERROR: colorama.Style.BRIGHT + colorama.Fore.RED,
-        logging.CRITICAL: colorama.Style.BRIGHT + colorama.Back.RED,
+        l__.DEBUG: colorama.Style.DIM + colorama.Fore.WHITE,
+        l__.INFO: colorama.Style.BRIGHT + colorama.Fore.WHITE,
+        l__.WARNING: colorama.Style.BRIGHT + colorama.Fore.YELLOW,
+        l__.ERROR: colorama.Style.BRIGHT + colorama.Fore.RED,
+        l__.CRITICAL: colorama.Style.BRIGHT + colorama.Back.RED,
     }
 
-    ___ - (self, stream, color_map=N..):
-        logging.StreamHandler.- (self, colorama.AnsiToWin32(stream).stream)
-        __ color_map is n.. N..:
+    ___ -  stream, color_map=N..):
+        l__.StreamHandler.-  colorama.AnsiToWin32(stream).stream)
+        __ color_map __ n.. N..:
             color_map = color_map
 
     @property
@@ -24,8 +24,8 @@ c_ ColorizingStreamHandler(logging.StreamHandler):
         isatty = getattr(stream, 'isatty', N..)
         r_ isatty a.. isatty()
 
-    ___ format(self, record):
-        message = logging.StreamHandler.format(self, record)
+    ___ format record):
+        message = l__.StreamHandler.format record)
         __ is_tty:
             # Don't colorize a traceback
             parts = message.split('\n', 1)
@@ -33,7 +33,7 @@ c_ ColorizingStreamHandler(logging.StreamHandler):
             message = '\n'.join(parts)
         r_ message
 
-    ___ colorize(self, message, record):
+    ___ colorize message, record):
         ___
             r_ (color_map[record.levelno] + message +
                     colorama.Style.RESET_ALL)
@@ -41,12 +41,12 @@ c_ ColorizingStreamHandler(logging.StreamHandler):
             r_ message
 
 
-c_ ConsoleFormatter(logging.Formatter):
+c_ ConsoleFormatter(l__.Formatter):
 
     ___ - 
-        super().- ('[%(asctime)s%(prefix)s] %(message)s', datefmt='%H:%M:%S')
+        super().- ('[%(asctime)s%(prefix)s]  _ m.. _, datefmt='%H:%M:%S')
 
-    ___ format(self, record):
+    ___ format record):
         """ Ensures that a 'prefix' value is defined before the record is formatted. """
         __ hasattr(record, 'prefix'):
             __ record.prefix a.. n.. record.prefix.startswith('|'):
@@ -59,9 +59,9 @@ c_ ConsoleFormatter(logging.Formatter):
         r_ super().format(record)
 
 
-c_ ConsoleLogger(logging.Logger):
+c_ ConsoleLogger(l__.Logger):
 
-    ___ - (self, name):
+    ___ -  name):
         super().- (name)
         logFilepath = N..
 
@@ -80,10 +80,10 @@ c_ ConsoleLogger(logging.Logger):
 
         logFilename = 'ThisApplication_@.txt' @ datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')
         logFilepath = os.path.join(logDirpath, logFilename)
-        fileHandler = logging.FileHandler(logFilepath)
-        fileFormatter = logging.Formatter('[%(asctime)s|%(levelname)-1.1s] %(message)s', datefmt='%H:%M:%S')
+        fileHandler = l__.FileHandler(logFilepath)
+        fileFormatter = l__.Formatter('[%(asctime)s|%(levelname)-1.1s]  _ m.. _, datefmt='%H:%M:%S')
         fileHandler.setFormatter(fileFormatter)
         log.addHandler(fileHandler)
 
-        log.setLevel(logging.DEBUG)
+        log.setLevel(l__.DEBUG)
         r_ log

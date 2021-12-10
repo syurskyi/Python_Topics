@@ -15,7 +15,7 @@ c_ Resources(QObject):
     ___ iconApp
         r_ _lazyLoad(QIcon, 'app_icon.png')
 
-    ___ _lazyLoad(self, class_, filename):
+    ___ _lazyLoad class_, filename):
         key = getKey(class_, filename)
         __ key n.. __ loaded:
             loaded[key] = class_(getPath(filename))

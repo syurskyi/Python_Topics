@@ -13,7 +13,7 @@ OptionalLoop = Optional[_.AbstractEventLoop]  # <2>
 
 
 @ ___ probe(domain: s.., loop: OptionalLoop = N..)  Result:  # <3>
-    __ loop is N..:
+    __ loop __ N..:
         loop = _.get_running_loop()
     ___
         await loop.getaddrinfo(domain, N..)

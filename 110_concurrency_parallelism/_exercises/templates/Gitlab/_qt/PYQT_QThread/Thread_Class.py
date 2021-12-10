@@ -9,7 +9,7 @@ ___ print_epoch(name_of_thread, delay):
         print(name_of_thread, "----------",t__.t__())
 
 c_ MyThread(_.?):
-    ___ - (self, name, delay):
+    ___ -  name, delay):
         _.?.- (self)
         name = name
         delay = delay

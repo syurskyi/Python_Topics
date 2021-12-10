@@ -1,6 +1,6 @@
 
 
-______ logging
+______ l__
 ______ r__
 ______ _
 ______ t__
@@ -8,19 +8,19 @@ ______ t__
 
 c_ Counter:
 
-    ___ - (self, start=0):
+    ___ -  start=0):
 
         lock=_.?
         value=start
 
     ___ increment
-        logging.debug('wait  for lock')
+        l__.d..('wait  for lock')
         lock.a..
 
         ___
-            logging.debug('Acquire lock')
+            l__.d..('Acquire lock')
             value = value+1
-        finally:
+        ______
             lock.r..
 
 
@@ -30,16 +30,16 @@ ___ worker(c):
     ___ i __ r.. 2):
 
         pause = r__.r__()
-        logging.debug('sleeping %0.002f',pause)
+        l__.d..('sleeping %0.002f',pause)
         t__.s..(pause)
-        c.increment()
+        c.i..
 
-    logging.debug('Done')
+    l__.d..('Done')
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
+l__.?(
+    ?_l__.D..
+    ?_ _threadName)-10s)  _ m.. _,
 )
 
 
@@ -48,10 +48,10 @@ ___ i __ r.. 2):
     t = _.? ?_worker,  ?_(counter,))
     t.s..
 
-logging.debug('Waiting for worker threads')
+l__.d..('Waiting for worker threads')
 main_thread = _.main_thread()
 ___ t __ _.e..:
-    __ t is n.. main_thread:
+    __ t __ n.. main_thread:
         t.j..
-logging.debug('Counter: %d', counter.value)
+l__.d..('Counter: %d', counter.value)
 

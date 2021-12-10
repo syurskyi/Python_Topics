@@ -19,16 +19,16 @@ ______ _
 ______ aiohttp
 ______ async_timeout
 ______ requests
-______ logging
+______ l__
 ______ t___
 
 ____ pages.all_books_page ______ AllBooksPage
 
-logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+l__.?(?_'%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d]  _ m.. _,
                     datefmt='%d-%m-%Y %H:%M:%S',
-                    level=logging.DEBUG,
+                    ?_l__.D..
                     filename='logs.txt')
-logger = logging.getLogger('scraping')
+logger = l__.getLogger('scraping')
 
 loop = _.get_event_loop()
 
@@ -38,7 +38,7 @@ logger.info('Loading books list.')
 logger.info('Requesting http://books.toscrape.com')
 page_content = requests.get('http://books.toscrape.com').content
 
-logger.debug('Creating AllBooksPage from page content.')
+logger.d..('Creating AllBooksPage from page content.')
 page = AllBooksPage(page_content)
 
 _books   # list
@@ -70,7 +70,7 @@ start = t___.t___()
 pages = loop.run_until_complete(get_multiple_pages(loop, *urls))
 print(f'Total page requests took {t___.t___() - start}')
 ___ page_content __ pages:
-    logger.debug('Creating AllBooksPage from page content.')
+    logger.d..('Creating AllBooksPage from page content.')
     page = AllBooksPage(page_content)
     _books.extend(page.books)
 

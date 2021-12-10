@@ -24,7 +24,7 @@ c_ MainWindow(QMainWindow):
         buttons={}
         fileButtons=[]
 
-    ___ clickMethod(self,fileName,dataName):
+    ___ clickMethodfileName,dataName):
         p=subprocess.Popen(["python","scripts/"+fileName,"-f","data/"+dataName])
         buttons[dataName]['p']= psutil.Process(pid=p.pid)
         buttons[dataName]['pauseButton'].setEnabled(True)
@@ -32,29 +32,29 @@ c_ MainWindow(QMainWindow):
         buttons[dataName]['newButton'].setDisabled(True)
         ? ?_lambda x=p,dataName=dataName:poller(x,dataName)).s..
 
-    ___ poller(self,p,dataName):
+    ___ pollerp,dataName):
         w___ True:
             __ close:
                 break
             t__.s..(0.1)
-            __ p.poll() is n.. N..:
+            __ p.poll() __ n.. N..:
                 buttons[dataName]['pauseButton'].setEnabled(False)
                 buttons[dataName]['killButton'].setEnabled(False)
                 buttons[dataName]['newButton'].setDisabled(False)
                 buttons[dataName]['resumeButton'].setDisabled(True)
                 break
 
-    ___ pauseMethod(self,dataName):
+    ___ pauseMethoddataName):
         buttons[dataName]['p'].suspend()
         buttons[dataName]['pauseButton'].setDisabled(True)
         buttons[dataName]['resumeButton'].setDisabled(False)
 
-    ___ resumeMethod(self,dataName):
+    ___ resumeMethoddataName):
         buttons[dataName]['p'].resume()
         buttons[dataName]['pauseButton'].setDisabled(False)
         buttons[dataName]['resumeButton'].setDisabled(True)
 
-    ___ killMethod(self,dataName):
+    ___ killMethoddataName):
         buttons[dataName]['p'].kill()
         buttons[dataName]['pauseButton'].setEnabled(False)
         buttons[dataName]['resumeButton'].setEnabled(False)
@@ -86,7 +86,7 @@ c_ MainWindow(QMainWindow):
             x+=50
             fileButtons.a.. (fileButton)
 
-    ___ loadFile(self,fileName):
+    ___ loadFilefileName):
         ___ fileButton __ fileButtons:
             fileButton.deleteLater()
         fileButtons=[]
@@ -129,7 +129,7 @@ c_ MainWindow(QMainWindow):
 
             x+=100
 
-    ___ closeEvent(self, event):
+    ___ closeEvent event):
         close=True
         event.accept()
         print('Window closed')

@@ -1,11 +1,11 @@
 
-______ logging
+______ l__
 ______ r__
 ______ _
 ______ t__
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s (%(threadName)-2s) %(message)s',
+l__.?(?_l__.D..
+                    ?_'%(asctime)s (%(threadName)-2s)  _ m.. _,
                     )
 
 c_ ActivePool(object):
@@ -13,19 +13,19 @@ c_ ActivePool(object):
         super(ActivePool, self).- ()
         active   # list
         lock = _.?
-    ___ makeActive(self, name):
+    ___ makeActive name):
         with lock:
             active.a.. (name)
-            logging.debug('Running: @', active)
-    ___ makeInactive(self, name):
+            l__.d..('Running: @', active)
+    ___ makeInactive name):
         with lock:
             active.remove(name)
-            logging.debug('Running: @', active)
+            l__.d..('Running: @', active)
 
 ___ worker(s, pool):
-    logging.debug('Waiting to join the pool')
+    l__.d..('Waiting to join the pool')
     with s:
-        name = _.currentThread().getName()
+        name = _.c...getName()
         pool.makeActive(name)
         t__.s..(0.1)
         pool.makeInactive(name)

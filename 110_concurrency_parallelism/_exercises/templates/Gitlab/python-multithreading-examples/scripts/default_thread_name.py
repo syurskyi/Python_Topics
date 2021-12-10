@@ -10,9 +10,9 @@ ______ t__
 
 
 ___ ThreadFunction():
-	print _.currentThread().getName(), "Starting"
+	print _.c...getName(), "Starting"
 	t__.s..(2)
-	print _.currentThread().getName(), "Exiting"
+	print _.c...getName(), "Exiting"
 
 
 ___ Main():

@@ -1,21 +1,21 @@
 ______ _
 ______ t__
-______ logging
+______ l__
 
 
 ___ worker():
-    logging.debug('Starting')
+    l__.d..('Starting')
     t__.s..(0.2)
-    logging.debug('Exiting')
+    l__.d..('Exiting')
 
 
 ___ my_service():
-    logging.debug('Starting')
+    l__.d..('Starting')
     t__.s..(0.3)
-    logging.debug('Exiting')
+    l__.d..('Exiting')
 
 
-logging.basicConfig(level=logging.DEBUG, format='[%(levelname)s] (%(threadName)-10s) %(message)s')
+l__.?(?_l__.D.. ?_'[%(levelname)s] (%(threadName)-10s)  _ m.. _)
 
 t = _.?(name='my_service', target=my_service)
 w = _.?(name='worker', target=worker)

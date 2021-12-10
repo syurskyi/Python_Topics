@@ -2,7 +2,7 @@ c_ PrimeNumber(_.?):
     prime_numbers = {} 
     lock = _.?
     
-    ___ - (self, number): 
+    ___ -  number):
         _.?.- (self)
         Number = number
         PrimeNumber.lock.a.. 

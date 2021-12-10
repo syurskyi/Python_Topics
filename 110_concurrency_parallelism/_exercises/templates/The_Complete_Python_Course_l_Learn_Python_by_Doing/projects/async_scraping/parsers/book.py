@@ -1,9 +1,9 @@
 ______ __
-______ logging
+______ l__
 
 ____ locators.book_locators ______ BookLocators
 
-logger = logging.getLogger('scraping.book_parser')
+logger = l__.getLogger('scraping.book_parser')
 
 
 c_ BookParser:
@@ -21,7 +21,7 @@ c_ BookParser:
     }
 
     ___  -   parent):
-        logger.debug(f'New book parser created from `{parent}`')
+        logger.d..(f'New book parser created from `{parent}`')
         parent = parent
 
     ___ __repr__
@@ -29,7 +29,7 @@ c_ BookParser:
 
     @property
     ___ name
-        logger.debug('Finding book name...')
+        logger.d..('Finding book name...')
         locator = BookLocators.NAME_LOCATOR
         item_name = parent.select_one(locator).attrs['title']
         logger.info(f'Found book name, `{item_name}`.')
@@ -37,7 +37,7 @@ c_ BookParser:
 
     @property
     ___ link
-        logger.debug('Finding book page link...')
+        logger.d..('Finding book page link...')
         locator = BookLocators.LINK_LOCATOR
         item_url = parent.select_one(locator).attrs['href']
         logger.info(f'Found book page link, `{item_url}`.')
@@ -45,10 +45,10 @@ c_ BookParser:
 
     @property
     ___ price
-        logger.debug('Finding book price...')
+        logger.d..('Finding book price...')
         locator = BookLocators.PRICE_LOCATOR
         item_price = parent.select_one(locator).string
-        logger.debug(f'Item price element found, `{item_price}`')
+        logger.d..(f'Item price element found, `{item_price}`')
 
         pattern = '£([0-9]+\.[0-9]+)'
         matcher = __.s..(pattern, item_price)
@@ -58,15 +58,15 @@ c_ BookParser:
 
     @property
     ___ rating
-        logger.debug('Finding book rating...')
+        logger.d..('Finding book rating...')
         locator = BookLocators.RATING_LOCATOR
         star_rating_element = parent.select_one(locator)
         classes = star_rating_element.attrs['class']
         rating_classes = filter(lambda x: x != 'star-rating', classes)
         rating_class = next(rating_classes)
 
-        logger.debug(f'Found rating class, `{rating_class}`.')
-        logger.debug('Converting to integer for sorting.')
+        logger.d..(f'Found rating class, `{rating_class}`.')
+        logger.d..('Converting to integer for sorting.')
         rating = BookParser.RATINGS.get(rating_class)
         logger.info(f'Found book rating, `{rating}`.')
         r.. rating

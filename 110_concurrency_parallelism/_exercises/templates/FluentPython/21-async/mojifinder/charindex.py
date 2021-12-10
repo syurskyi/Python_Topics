@@ -49,7 +49,7 @@ ___ tokenize(text: s..)  Iterator[s..]:
 c_ InvertedIndex:
     entries: Index
 
-    ___ - (self, start: int = 32, stop: int = STOP_CODE):
+    ___ -  start: int = 32, stop: int = STOP_CODE):
         entries: Index = defaultdict(set)
         ___ char __ (chr(i) ___ i __ r.. start, stop)):
             name = unicodedata.name(char, '')
@@ -58,7 +58,7 @@ c_ InvertedIndex:
                     entries[word].add(char)
         entries = entries
 
-    ___ search(self, query: s..)  set[Char]:
+    ___ search query: s..)  set[Char]:
         __ words := list(tokenize(query)):
             found = entries[words[0]]
             r_ found.intersection(*(entries[w] ___ w __ words[1:]))

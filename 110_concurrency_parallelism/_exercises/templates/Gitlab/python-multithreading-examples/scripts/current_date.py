@@ -11,7 +11,7 @@ ______ datetime
 
 
 c_ myThread (_.?):
-    ___ - (self, name, counter):
+    ___ -  name, counter):
         _.?.- (self)
         threadID = counter
         name = name

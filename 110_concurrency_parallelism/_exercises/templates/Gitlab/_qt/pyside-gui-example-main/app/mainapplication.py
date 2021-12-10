@@ -38,7 +38,7 @@ c_ BackgroundJob(QObject):
 
     ___ run
         g.log.info('ThisApplication v@ | @ | @' @ (VERSION, t__.strftime('%r | %A, %B %d, %Y'), socket.gethostname()))
-        g.log.debug('Running from @@' @ (sys.executable, ' (frozen)' __ hasattr(sys, 'frozen') else ''))
+        g.log.d..('Running from @@' @ (sys.executable, ' (frozen)' __ hasattr(sys, 'frozen') else ''))
 
         testvar_value = get_config_var('testvar', 'hardcoded fallback')
         message_value = get_config_var('message', '')
@@ -61,7 +61,7 @@ c_ BackgroundJob(QObject):
 
 c_ MainApplication(QApplication):
 
-    ___ - (self, argv):
+    ___ -  argv):
         super().- (argv)
 
         setApplicationName('ThisApplication')
@@ -104,7 +104,7 @@ c_ MainApplication(QApplication):
             thread.quit()
             thread.wait()
 
-    ___ onThreadCrash(self, s):
+    ___ onThreadCrash s):
         lines = ['A problem has occurred and this application must exit.', '']
         g.log.critical('>>> ENCOUNTERED AN UNHANDLED EXCEPTION IN WORKER THREAD!')
         ___ line __ s.splitlines():

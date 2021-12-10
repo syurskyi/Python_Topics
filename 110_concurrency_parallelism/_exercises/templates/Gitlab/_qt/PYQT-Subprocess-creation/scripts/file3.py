@@ -39,7 +39,7 @@ c_ MainWindow(QMainWindow):
             label2.setText(s..(s))
             s+=10
 
-    ___ closeEvent(self, event):
+    ___ closeEvent event):
         close=True
         event.accept()
 

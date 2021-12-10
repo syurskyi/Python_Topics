@@ -1,10 +1,10 @@
 ______ _
-______ logging
+______ l__
 
 
 c_ MyThreadWithArgs(_.?):
 
-    ___ - (self, group=N.., target=N.., name=N..,
+    ___ -  group=N.., target=N.., name=N..,
                   ?_(), kwargs=N.., *, daemon=N..):
         super().- (group=group, target=target, name=name,
                          daemon=daemon)
@@ -12,13 +12,13 @@ c_ MyThreadWithArgs(_.?):
         kwargs = kwargs
 
     ___ run
-        logging.debug('running with @ and @',
+        l__.d..('running with @ and @',
                       args, kwargs)
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
+l__.?(
+    ?_l__.D..
+    ?_ _threadName)-10s)  _ m.. _,
 )
 
 ___ i __ r.. 5):
