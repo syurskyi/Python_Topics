@@ -5,7 +5,7 @@
 ## Because the student is sleeping ___ a random amount of t__, the output of this program may vary t__ to t__.
 
 
-______ random
+______ r__
 ______ _
 ______ t__
 ______ logging
@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.DEBUG,
 ___ student():
     """thread student function"""
     t = _.currentThread()
-    pause = random.randint(1,5)
+    pause = r__.randint(1,5)
     logging.debug('sleeping @', pause)
     t__.s..(pause)
     logging.debug('ending')
@@ -29,9 +29,9 @@ ___ i __ r.. 3):
     t.s..
 
 main_thread = _.currentThread()
-___ t __ _.enumerate():
-    if t is main_thread:
+___ t __ _.e..:
+    __ t is main_thread:
         continue
     logging.debug('joining @', t.getName())
-    t.join()
+    t.j..
     

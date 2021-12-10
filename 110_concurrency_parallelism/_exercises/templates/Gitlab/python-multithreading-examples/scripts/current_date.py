@@ -10,17 +10,17 @@ ______ _
 ______ datetime
 
 
-class myThread (_.?):
-    ___ __init__(self, name, counter):
-        _.?.__init__(self)
-        self.threadID = counter
-        self.name = name
-        self.counter = counter
+c_ myThread (_.?):
+    ___ - (self, name, counter):
+        _.?.- (self)
+        threadID = counter
+        name = name
+        counter = counter
 
-    ___ run(self):
-        print "Starting " + self.name
-        print_date(self.name, self.counter)
-        print "Exiting " + self.name
+    ___ run
+        print "Starting " + name
+        print_date(name, counter)
+        print "Exiting " + name
 
 ___ print_date(threadName, counter):
     datefields   # list
@@ -37,6 +37,6 @@ thread2 = myThread("Thread", 2)
 # Start new Threads
 thread1.s..
 thread2.s..
-thread1.join()
-thread2.join()
+thread1.j..
+thread2.j..
 print "Exiting the Program!!!"

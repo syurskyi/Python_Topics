@@ -3,16 +3,16 @@ from PySide2.QtWidgets ______ QWidget, QVBoxLayout
 from .consolewidget ______ ConsoleWidget
 
 
-class MainWidget(QWidget):
+c_ MainWidget(QWidget):
 
-    ___ __init__(self):
-        super().__init__()
+    ___ - 
+        super().- ()
 
-        self.console = ConsoleWidget()
+        console = ConsoleWidget()
 
-        self.layout = QVBoxLayout()
-        self.layout.setContentsMargins(4, 4, 4, 4)
-        self.layout.setSpacing(4)
-        self.setLayout(self.layout)
+        layout = QVBoxLayout()
+        layout.setContentsMargins(4, 4, 4, 4)
+        layout.setSpacing(4)
+        setLayout(layout)
 
-        self.layout.addWidget(self.console)
+        layout.addWidget(console)

@@ -27,5 +27,5 @@ t = _.?(name='non-daemon', target=non_daemon)
 d.s..
 t.s..
 
-d.join()
-t.join()
+d.j..
+t.j..

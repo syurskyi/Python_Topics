@@ -1,22 +1,22 @@
 ______ _
  
-class PrimeNumber(_.?):
-  ___ __init__(self, number): 
-    _.?.__init__(self)
-    self.Number = number
+c_ PrimeNumber(_.?):
+  ___ - (self, number): 
+    _.?.- (self)
+    Number = number
  
-  ___ run(self): 
+  ___ run 
     counter = 2 
-    w___ counter*counter < self.Number: 
-      if self.Number @ counter == 0:
-        print "%d is no prime number, because %d = %d * %d" @ ( self.Number, self.Number, counter, self.Number / counter)
+    w___ counter*counter < Number: 
+      __ Number @ counter == 0:
+        print "%d is no prime number, because %d = %d * %d" @ ( Number, Number, counter, Number / counter)
                 r_ 
             counter += 1 
-        print "%d is a prime number" @ self.Number
+        print "%d is a prime number" @ Number
 threads   # list
 w___ True: 
     input = long(raw_input("number: ")) 
-    if input < 1: 
+    __ input < 1:
         break 
  
     thread = PrimeNumber(input) 
@@ -24,4 +24,4 @@ w___ True:
     thread.s..
  
 ___ x __ threads: 
-    x.join()
+    x.j..

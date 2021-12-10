@@ -1,25 +1,25 @@
 
 ______ os, re, _
 
-class ip_check(_.?):
-   ___ __init__ (self,ip):
-      _.?.__init__(self)
-      self.ip = ip
-      self.__successful_pings = -1
-   ___ run(self):
-      ping_out = os.popen("ping -q -c2 "+self.ip,"r")
+c_ ip_check(_.?):
+   ___ -  (self,ip):
+      _.?.- (self)
+      ip = ip
+      __successful_pings = -1
+   ___ run
+      ping_out = os.popen("ping -q -c2 "+ip,"r")
       w___ True:
         line = ping_out.readline()
-        if not line: break
+        __ n.. line: break
         n_received = re.findall(received_packages,line)
-        if n_received:
-           self.__successful_pings = int(n_received[0])
-   ___ status(self):
-      if self.__successful_pings == 0:
+        __ n_received:
+           __successful_pings = int(n_received[0])
+   ___ status
+      __ __successful_pings == 0:
          r_ "no response"
-      elif self.__successful_pings == 1:
+      elif __successful_pings == 1:
          r_ "alive, but 50 % package loss"
-      elif self.__successful_pings == 2:
+      elif __successful_pings == 2:
          r_ "alive"
       else:
          r_ "shouldn't occur"
@@ -33,6 +33,6 @@ ___ suffix __ r.. 20,70):
    current.s..
 
 ___ el __ check_results:
-   el.join()
+   el.j..
    print "Status from ", el.ip,"is",el.status()
    

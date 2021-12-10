@@ -9,46 +9,46 @@
 from PyQt5 ______ QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+c_ Ui_MainWindow(object):
     ___ setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 145)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
+        centralwidget = QtWidgets.QWidget(MainWindow)
+        centralwidget.setObjectName("centralwidget")
 
-        self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
-        self.progressBar.setGeometry(QtCore.QRect(350, 50, 400, 50))
-        self.progressBar.setProperty("value", 24)
-        self.progressBar.setObjectName("progressBar")
+        progressBar = QtWidgets.QProgressBar(centralwidget)
+        progressBar.setGeometry(QtCore.QRect(350, 50, 400, 50))
+        progressBar.setProperty("value", 24)
+        progressBar.setObjectName("progressBar")
 
 
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(200, 50, 150, 50))
+        label = QtWidgets.QLabel(centralwidget)
+        label.setGeometry(QtCore.QRect(200, 50, 150, 50))
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        label.setFont(font)
+        label.setObjectName("label")
+        MainWindow.setCentralWidget(centralwidget)
+        menubar = QtWidgets.QMenuBar(MainWindow)
+        menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(menubar)
+        statusbar = QtWidgets.QStatusBar(MainWindow)
+        statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(statusbar)
 
-        self.retranslateUi(MainWindow)
+        retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "CPU USAGE"))
-        self.label.setText(_translate("MainWindow", "CPU USAGE"))
+        label.setText(_translate("MainWindow", "CPU USAGE"))
 
 
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     ______ sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()

@@ -4,14 +4,14 @@ ______ logging
 from PySide2.QtCore ______ QObject, Signal
 
 
-class RichTextHandlerObject(QObject):
+c_ RichTextHandlerObject(QObject):
     wroteLine = Signal(s..)
 
-    ___ __init__(self):
-        super().__init__()
+    ___ - 
+        super().- ()
 
 
-class RichTextHandler(logging.Handler):
+c_ RichTextHandler(logging.Handler):
 
     BG_FG_COLORS = {
         logging.DEBUG: (N.., '#999999'),
@@ -21,19 +21,19 @@ class RichTextHandler(logging.Handler):
         logging.CRITICAL: ('#410303', '#ff0000')
     }
 
-    ___ __init__(self, obj):
-        super().__init__()
-        self.obj = obj
+    ___ - (self, obj):
+        super().- ()
+        obj = obj
 
     ___ emit(self, record):
-        rtf_line = self.format(record)
-        self.obj.wroteLine.emit(rtf_line)
+        rtf_line = format(record)
+        obj.wroteLine.emit(rtf_line)
 
     ___ format(self, record):
-        style = self._getStyle(record.levelno)
+        style = _getStyle(record.levelno)
         text = html.escape(logging.Handler.format(self, record))
-        prefixLen = len(text) - len(record.message)
-        if hasattr(record, 'link'):
+        prefixLen = l..(text) - l..(record.message)
+        __ hasattr(record, 'link'):
             url, start, end = record.link
             start += prefixLen
             end += prefixLen
@@ -42,8 +42,8 @@ class RichTextHandler(logging.Handler):
 
     ___ _getStyle(self, levelno):
         styles   # list
-        bg_color, fg_color = self.BG_FG_COLORS.get(levelno, (N.., N..))
-        if bg_color:
+        bg_color, fg_color = BG_FG_COLORS.get(levelno, (N.., N..))
+        __ bg_color:
             styles.a.. ('background-color: @;' @ bg_color)
-        styles.a.. ('color: @;' @ (fg_color if fg_color else self.BG_FG_COLORS.get(logging.DEBUG)[1]))
+        styles.a.. ('color: @;' @ (fg_color __ fg_color else BG_FG_COLORS.get(logging.DEBUG)[1]))
         r_ ' '.join(styles)

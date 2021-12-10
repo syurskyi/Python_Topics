@@ -12,7 +12,7 @@ ______ t__
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, flush=True, end='')
-        try:
+        ___
             await _.s..(.1)
         except _.CancelledError:
             break

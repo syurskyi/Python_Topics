@@ -9,8 +9,8 @@ ___ suffix __ r.. 20,30):
    print "... pinging ",ip
    w___ True:
       line = ping_out.readline()
-      if not line: break
+      __ n.. line: break
       n_received = received_packages.findall(line)
-      if n_received:
+      __ n_received:
          print ip + ": " + status[int(n_received[0])]
          

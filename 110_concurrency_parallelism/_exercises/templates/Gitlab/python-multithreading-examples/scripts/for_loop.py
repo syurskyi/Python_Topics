@@ -12,6 +12,6 @@ ___ Main():
       myThread = ? ?_ThreadFunction,  ?_(i,))
       myThread.s..
       
-if __name__ == "__main__":
+__ __name__ == "__main__":
   Main()
   

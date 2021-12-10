@@ -1,7 +1,7 @@
 from PySide2.QtGui ______ QPalette, QColor
 
 
-class DarkPalette(QPalette):
+c_ DarkPalette(QPalette):
 
     WHITE = QColor(255, 255, 255)
     BLACK = QColor(0, 0, 0)
@@ -10,20 +10,20 @@ class DarkPalette(QPalette):
     SECONDARY = QColor(35, 35, 35)
     TERTIARY = QColor(42, 130, 218)
 
-    ___ __init__(self, *args):
-        super().__init__(*args)
-        self.setColor(QPalette.Window, self.PRIMARY)
-        self.setColor(QPalette.WindowText, self.WHITE)
-        self.setColor(QPalette.Base, self.SECONDARY)
-        self.setColor(QPalette.AlternateBase, self.PRIMARY)
-        self.setColor(QPalette.ToolTipBase, self.WHITE)
-        self.setColor(QPalette.ToolTipText, self.WHITE)
-        self.setColor(QPalette.Text, self.WHITE)
-        self.setColor(QPalette.Button, self.PRIMARY)
-        self.setColor(QPalette.ButtonText, self.WHITE)
-        self.setColor(QPalette.BrightText, self.RED)
-        self.setColor(QPalette.Link, self.TERTIARY)
-        self.setColor(QPalette.Highlight, self.TERTIARY)
-        self.setColor(QPalette.HighlightedText, self.BLACK)
-        self.setColor(QPalette.Disabled, QPalette.Light, QColor(92, 92, 92))
-        self.setColor(QPalette.Disabled, QPalette.Text, QColor(67, 67, 67))
+    ___ - (self, *args):
+        super().- (*args)
+        setColor(QPalette.Window, PRIMARY)
+        setColor(QPalette.WindowText, WHITE)
+        setColor(QPalette.Base, SECONDARY)
+        setColor(QPalette.AlternateBase, PRIMARY)
+        setColor(QPalette.ToolTipBase, WHITE)
+        setColor(QPalette.ToolTipText, WHITE)
+        setColor(QPalette.Text, WHITE)
+        setColor(QPalette.Button, PRIMARY)
+        setColor(QPalette.ButtonText, WHITE)
+        setColor(QPalette.BrightText, RED)
+        setColor(QPalette.Link, TERTIARY)
+        setColor(QPalette.Highlight, TERTIARY)
+        setColor(QPalette.HighlightedText, BLACK)
+        setColor(QPalette.Disabled, QPalette.Light, QColor(92, 92, 92))
+        setColor(QPalette.Disabled, QPalette.Text, QColor(67, 67, 67))

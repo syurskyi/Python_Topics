@@ -11,18 +11,18 @@ ______ functools
 
 # tag::PRIME_NAP[]
 @ ___ is_prime(n):
-    if n < 2:
+    __ n < 2:
         r_ False
-    if n == 2:
+    __ n == 2:
         r_ True
-    if n @ 2 == 0:
+    __ n @ 2 == 0:
         r_ False
 
     root = math.isqrt(n)
     ___ i __ r.. 3, root + 1, 2):
-        if n @ i == 0:
+        __ n @ i == 0:
             r_ False
-        if i @ 100_000 == 1:
+        __ i @ 100_000 == 1:
             await _.s..(0)  # <1>
     r_ True
 # end::PRIME_NAP[]
@@ -32,11 +32,11 @@ ______ functools
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, flush=True, end='')
-        try:
+        ___
             await _.s..(.1)
         except _.CancelledError:
             break
-    blanks = ' ' * len(status)
+    blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
 @ ___ check(n: int)  int:
@@ -52,7 +52,7 @@ ______ functools
 ___ main()  N..:
     n = 5_000_111_000_222_021
     result = _.run(supervisor(n))
-    msg = 'is' if result else 'is not'
+    msg = 'is' __ result else 'is not'
     print(f'{n:,} {msg} prime')
 
 __ _____ __ ______

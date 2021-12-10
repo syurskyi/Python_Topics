@@ -14,7 +14,7 @@ from multiprocessing ______ queues  # <2>
 
 from primes ______ is_prime, NUMBERS
 
-class PrimeResult(NamedTuple):  # <3>
+c_ PrimeResult(NamedTuple):  # <3>
     n: int
     prime: bool
     elapsed: float
@@ -28,29 +28,29 @@ ___ check(n: int)  PrimeResult:  # <6>
     r_ PrimeResult(n, res, perf_counter() - t0)
 
 ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
-    w___ n := jobs.get():  # <8>
-        results.put(check(n))  # <9>
-    results.put(PrimeResult(0, False, 0.0))  # <10>
+    w___ n := jobs.g..:  # <8>
+        results.p..(check(n))  # <9>
+    results.p..(PrimeResult(0, False, 0.0))  # <10>
 
 ___ start_jobs(
     procs: int, jobs: JobQueue, results: ResultQueue  # <11>
 )  N..:
     ___ n __ NUMBERS:
-        jobs.put(n)  # <12>
+        jobs.p..(n)  # <12>
     ___ _ __ r.. procs):
         proc = Process ?_worker,  ?_(jobs, results))  # <13>
         proc.s..  # <14>
-        jobs.put(0)  # <15>
+        jobs.p..(0)  # <15>
 # end::PRIMES_PROC_TOP[]
 
 # tag::PRIMES_PROC_MAIN[]
 ___ main()  N..:
-    if len(sys.argv) < 2:  # <1>
+    __ l..(sys.argv) < 2:  # <1>
         procs = cpu_count()
     else:
         procs = int(sys.argv[1])
 
-    print(f'Checking {len(NUMBERS)} numbers with {procs} processes:')
+    print(f'Checking {l..(NUMBERS)} numbers with {procs} processes:')
     t0 = perf_counter()
     jobs: JobQueue = SimpleQueue()  # <2>
     results: ResultQueue = SimpleQueue()
@@ -63,12 +63,12 @@ ___ report(procs: int, results: ResultQueue)  int: # <6>
     checked = 0
     procs_done = 0
     w___ procs_done < procs:  # <7>
-        n, prime, elapsed = results.get()  # <8>
-        if n == 0:  # <9>
+        n, prime, elapsed = results.g..  # <8>
+        __ n == 0:  # <9>
             procs_done += 1
         else:
             checked += 1  # <10>
-            label = 'P' if prime else ' '
+            label = 'P' __ prime else ' '
             print(f'{n:16}  {label} {elapsed:9.6f}s')
     r_ checked
 

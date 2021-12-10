@@ -15,9 +15,9 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, end='', flush=True)
-        if done.wait(.1):
+        __ done.wait(.1):
             break
-    blanks = ' ' * len(status)
+    blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
 ___ slow()  int:
@@ -33,7 +33,7 @@ ___ supervisor()  int:
     spinner.s..
     result = slow()
     done.set()
-    spinner.join()
+    spinner.j..
     r_ result
 # end::SPINNER_PROC_SUPER[]
 

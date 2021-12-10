@@ -11,7 +11,7 @@ ___ worker_with(lock):
         
 ___ worker_no_with(lock):
     lock.a..
-    try:
+    ___
         logging.debug('Lock acquired directly')
     finally:
         lock.r..

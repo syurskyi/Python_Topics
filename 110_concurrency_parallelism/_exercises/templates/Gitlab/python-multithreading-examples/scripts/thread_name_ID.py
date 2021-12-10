@@ -5,11 +5,11 @@ ______ _
 ______ t__
 
 
-class MyThread(_.?):
-    ___ run(self):
-        print("{} started!".format(self.getName()))              # ?-x started
+c_ MyThread(_.?):
+    ___ run
+        print("{} started!".format(getName()))              # ?-x started
         t__.s..(1)                                      
-        print("{} finished!".format(self.getName()))             # ?-x finished
+        print("{} finished!".format(getName()))             # ?-x finished
 
 
 ___ Main():

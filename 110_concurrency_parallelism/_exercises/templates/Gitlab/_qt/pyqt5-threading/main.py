@@ -5,52 +5,52 @@ from PyQt5.QtGui ______ QIcon
 from PyQt5.QtCore ______ QThread, pyqtSignal, QThreadPool, pyqtSlot, QRunnable, QObject
 
 
-class Signals(QObject):
+c_ Signals(QObject):
     return_signal = pyqtSignal(s..)
 
 
-class ?(QRunnable):
+c_ ?(QRunnable):
     signal = pyqtSignal(s..)
 
-    ___ __init__(self):
-        super(?, self).__init__()     
-        self.signal = Signals()    
+    ___ - 
+        super(?, self).- ()     
+        signal = Signals()    
 
     @pyqtSlot()
-    ___ run(self):
+    ___ run
         t__.s..(5)
         result = "Some String"
-        self.signal.return_signal.emit(result)
+        signal.return_signal.emit(result)
 
 
-class App(QWidget):
-    ___ __init__(self):
-            super().__init__()
-            self.title='Hello, world!'
-            self.left=2100
-            self.top=500
-            self.width=640
-            self.height=480
-            self.threadpool = QThreadPool()
-            self.initUI()
+c_ App(QWidget):
+    ___ - 
+            super().- ()
+            title='Hello, world!'
+            left=2100
+            top=500
+            width=640
+            height=480
+            threadpool = QThreadPool()
+            initUI()
 
-    ___ initUI(self):
-            self.setWindowTitle(self.title)
-            self.setGeometry(self.left,self.top,self.width,self.height)
+    ___ initUI
+            setWindowTitle(title)
+            setGeometry(left,top,width,height)
             checkbox = QCheckBox('Check Box', self)
-            checkbox.stateChanged.connect(self.clickCheckbox)
-            self.show()
+            checkbox.stateChanged.connect(clickCheckbox)
+            show()
 
-    ___ clickCheckbox(self):
+    ___ clickCheckbox
         thread = ?()
-        thread.signal.return_signal.connect(self.function_thread)
-        self.threadpool.start(thread)
+        thread.signal.return_signal.connect(function_thread)
+        threadpool.start(thread)
 
     ___ function_thread(self, signal):
         print(signal)
 
 
-if __name__=='__main__':
+__ __name__=='__main__':
         app=QApplication(sys.argv)
         ex=App()
         sys.exit(app.exec_())

@@ -1,6 +1,6 @@
 from pyside2_threading ______ main_window
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     main_window.s..
 

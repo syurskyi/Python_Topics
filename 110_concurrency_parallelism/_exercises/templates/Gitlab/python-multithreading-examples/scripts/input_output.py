@@ -9,19 +9,19 @@ ______ _
 ______ t__ 
 
 
-class AsyncWrite(_.?):
-  ___ __init__(self, text, out):
-    _.?.__init__(self)
-    self.text = text
-    self.out = out 
+c_ AsyncWrite(_.?):
+  ___ - (self, text, out):
+    _.?.- (self)
+    text = text
+    out = out 
 
     
-  ___ run(self):
-    file = open(self.out, "a")
-    file.write(self.text + '\n')
+  ___ run
+    file = open(out, "a")
+    file.write(text + '\n')
     file.close()
     t__.s..(2)
-    print "Done! Completed storing input in a file named " + self.out 
+    print "Done! Completed storing input in a file named " + out 
 
 
 ___ Main():

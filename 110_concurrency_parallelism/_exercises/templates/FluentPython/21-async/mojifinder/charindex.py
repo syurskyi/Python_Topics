@@ -46,22 +46,22 @@ ___ tokenize(text: s..)  Iterator[s..]:
         yield word
 
 
-class InvertedIndex:
+c_ InvertedIndex:
     entries: Index
 
-    ___ __init__(self, start: int = 32, stop: int = STOP_CODE):
+    ___ - (self, start: int = 32, stop: int = STOP_CODE):
         entries: Index = defaultdict(set)
         ___ char __ (chr(i) ___ i __ r.. start, stop)):
             name = unicodedata.name(char, '')
-            if name:
+            __ name:
                 ___ word __ tokenize(name):
                     entries[word].add(char)
-        self.entries = entries
+        entries = entries
 
     ___ search(self, query: s..)  set[Char]:
-        if words := list(tokenize(query)):
-            found = self.entries[words[0]]
-            r_ found.intersection(*(self.entries[w] ___ w __ words[1:]))
+        __ words := list(tokenize(query)):
+            found = entries[words[0]]
+            r_ found.intersection(*(entries[w] ___ w __ words[1:]))
         else:
             r_ set()
 
@@ -74,14 +74,14 @@ ___ format_results(chars: set[Char])  Iterator[s..]:
 
 
 ___ main(words: list[s..])  N..:
-    if not words:
+    __ n.. words:
         print('Please give one or more words to search.')
         sys.exit(2)  # command line usage error
     index = InvertedIndex()
     chars = index.search(' '.join(words))
     ___ line __ format_results(chars):
         print(line)
-    print('─' * 66, f'{len(chars)} found')
+    print('─' * 66, f'{l..(chars)} found')
 
 
 __ _____ __ ______

@@ -8,7 +8,7 @@ MAX_KEYWORD_LEN = 4  # <1>
 
 @ ___ probe(domain: s..)  tuple[s.., bool]:  # <2>
     loop = _.get_running_loop()  # <3>
-    try:
+    ___
         await loop.getaddrinfo(domain, N..)  # <4>
     except socket.gaierror:
         r_ (domain, False)
@@ -16,12 +16,12 @@ MAX_KEYWORD_LEN = 4  # <1>
 
 
 @ ___ main()  N..:  # <5>
-    names = (kw ___ kw __ kwlist if len(kw) <= MAX_KEYWORD_LEN)  # <6>
+    names = (kw ___ kw __ kwlist __ l..(kw) <= MAX_KEYWORD_LEN)  # <6>
     domains = (f'{name}.dev'.lower() ___ name __ names)  # <7>
     coros = [probe(domain) ___ domain __ domains]  # <8>
     ___ coro __ _.as_completed(coros):  # <9>
         domain, found = await coro  # <10>
-        mark = '+' if found else ' '
+        mark = '+' __ found else ' '
         print(f'{mark} {domain}')
 
 

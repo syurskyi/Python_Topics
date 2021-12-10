@@ -8,20 +8,20 @@ ______ datetime
 
 exitFlag = 0
 
-class myThread (_.?):
-    ___ __init__(self, name, counter):
-        _.?.__init__(self)
-        self.threadID = counter
-        self.name = name
-        self.counter = counter
-    ___ run(self):
-        print "Starting " + self.name
+c_ myThread (_.?):
+    ___ - (self, name, counter):
+        _.?.- (self)
+        threadID = counter
+        name = name
+        counter = counter
+    ___ run
+        print "Starting " + name
         # Acquire lock to synchronize thread
         threadLock.a..
-        print_date(self.name, self.counter)
+        print_date(name, counter)
         # Release lock ___ the next thread
         threadLock.r..
-        print "Exiting " + self.name
+        print "Exiting " + name
 
 ___ print_date(threadName, counter):
     datefields   # list
@@ -46,5 +46,5 @@ threads.a.. (thread2)
 
 # Wait ___ all threads to complete
 ___ t __ threads:
-    t.join()
+    t.j..
 print "Exiting the Program!!!"

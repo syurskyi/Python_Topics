@@ -12,8 +12,8 @@ logging.basicConfig(
 )
 
 
-class MyThread(_.?):
-    ___ run(self):
+c_ MyThread(_.?):
+    ___ run
         logging.debug('This thread is running')
         r_
 

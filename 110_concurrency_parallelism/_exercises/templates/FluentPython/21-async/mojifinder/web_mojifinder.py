@@ -14,7 +14,7 @@ app = FastAPI(  # <2>
     description='Search for Unicode characters by name.',
 )
 
-class CharName(BaseModel):  # <3>
+c_ CharName(BaseModel):  # <3>
     char: s..
     name: s..
 

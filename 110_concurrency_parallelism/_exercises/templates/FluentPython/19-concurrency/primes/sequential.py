@@ -10,7 +10,7 @@ from typing ______ NamedTuple
 
 from primes ______ is_prime, NUMBERS
 
-class Result(NamedTuple):  # <1>
+c_ Result(NamedTuple):  # <1>
     prime: bool
     elapsed: float
 
@@ -20,11 +20,11 @@ ___ check(n: int)  Result:  # <2>
     r_ Result(prime, perf_counter() - t0)
 
 ___ main()  N..:
-    print(f'Checking {len(NUMBERS)} numbers sequentially:')
+    print(f'Checking {l..(NUMBERS)} numbers sequentially:')
     t0 = perf_counter()
     ___ n __ NUMBERS:  # <3>
         prime, elapsed = check(n)
-        label = 'P' if prime else ' '
+        label = 'P' __ prime else ' '
         print(f'{n:16}  {label} {elapsed:9.6f}s')
 
     elapsed = perf_counter() - t0  # <4>

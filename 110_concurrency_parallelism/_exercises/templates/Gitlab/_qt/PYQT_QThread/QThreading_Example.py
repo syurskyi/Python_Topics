@@ -8,10 +8,10 @@ ___ print_epoch(name_of_thread, delay):
         count+=1
         print(name_of_thread, "----------",t__.t__())
 
-try:
+___
     _thread.start_new_thread(print_epoch,("Thread 1", 2))
     _thread.start_new_thread(print_epoch,("Thread 2", 3))
-except:
+_______
     print("Program Encountered an Error")
 w___ 1:
     pass

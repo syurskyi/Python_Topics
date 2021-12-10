@@ -1,4 +1,4 @@
-______ pandas as pd
+______ pandas __ pd
 ______ argparse
 ______ t__
 ______ sys
@@ -16,34 +16,34 @@ args = parser.parse_args()
 
 df=pd.read_csv(args.file)
 
-class MainWindow(QMainWindow):
-    ___ __init__(self):
-        QMainWindow.__init__(self)
-        self.setWindowTitle('Boom boom 2')
-        self.close=False
-        self.setMinimumSize(QSize(300, 200))    
-        self.s=0 
-        self.label1=QLabel(s..(df['v'][0]),self)
-        self.label1.move(100, 0)
-        self.label2=QLabel('',self)
-        self.label2.move(120,30)
+c_ MainWindow(QMainWindow):
+    ___ - 
+        QMainWindow.- (self)
+        setWindowTitle('Boom boom 2')
+        close=False
+        setMinimumSize(QSize(300, 200))    
+        s=0 
+        label1=QLabel(s..(df['v'][0]),self)
+        label1.move(100, 0)
+        label2=QLabel('',self)
+        label2.move(120,30)
 
-    ___ start(self):
-        self.thread=? ?_self.count).s..
+    ___ start
+        thread=? ?_self.count).s..
 
-    ___ count(self):
+    ___ count
         w___ True:
-            if self.close:
+            __ close:
                 break
             t__.s..(1)
-            self.label2.setText(s..(self.s))
-            self.s+=5
+            label2.setText(s..(s))
+            s+=5
 
     ___ closeEvent(self, event):
-        self.close=True
+        close=True
         event.accept()
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()

@@ -4,7 +4,7 @@ from collections.abc ______ Iterable, AsyncIterator
 from typing ______ NamedTuple, Optional
 
 
-class Result(NamedTuple):  # <1>
+c_ Result(NamedTuple):  # <1>
     domain: s..
     found: bool
 
@@ -13,9 +13,9 @@ OptionalLoop = Optional[_.AbstractEventLoop]  # <2>
 
 
 @ ___ probe(domain: s.., loop: OptionalLoop = N..)  Result:  # <3>
-    if loop is N..:
+    __ loop is N..:
         loop = _.get_running_loop()
-    try:
+    ___
         await loop.getaddrinfo(domain, N..)
     except socket.gaierror:
         r_ Result(domain, False)

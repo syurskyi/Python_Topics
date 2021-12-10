@@ -27,5 +27,5 @@ t.s..
 
 d.join(0.1)
 print('d.isAlive()', d.isAlive())
-t.join()
+t.j..
 

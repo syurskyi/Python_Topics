@@ -39,7 +39,7 @@ c_ Crawler(_.T..):
         print("Already Visited: {}".format(link))
         _____
       
-      try:
+      ___
         link = urljoin(baseUrl, link)
         req = Request(link, headers={'User-Agent': 'Mozilla/5.0'})
         response = u..(req, context=myssl)
@@ -49,7 +49,7 @@ c_ Crawler(_.T..):
         soup = BeautifulSoup(response.r.. , "html.parser")
         
         ___ atag __ soup.find_all('a'):
-          __ (atag.get('href') n.. __ haveVisited) and (urlparse(link).netloc == 'tutorialedge.net'):
+          __ (atag.get('href') n.. __ haveVisited) a.. (urlparse(link).netloc == 'tutorialedge.net'):
             linksToCrawl.p..(atag.get('href'))
           else :
             print("{} already visited or not part of website".format(atag.get('href')))
@@ -57,7 +57,7 @@ c_ Crawler(_.T..):
         print("Adding {} to crawled list".format(link))
         haveVisited.a..(link)
         
-      except URLError as e:
+      except URLError __ e:
         print("URL {} threw this error when trying to parse: {}".format(link, e.reason))
         errorLinks.a..(link)
       finally:

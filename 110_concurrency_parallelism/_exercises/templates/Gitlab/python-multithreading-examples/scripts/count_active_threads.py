@@ -23,6 +23,6 @@ ___ Main():
       print("Current Thread count: %i." @ _.active_count())
     
     
-if __name__ == "__main__":    
+__ __name__ == "__main__":
   Main()
   

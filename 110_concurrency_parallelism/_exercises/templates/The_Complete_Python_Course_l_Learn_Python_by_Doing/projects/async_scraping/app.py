@@ -47,14 +47,14 @@ _books   # list
 @ ___ fetch_page(session, url):
     page_start = t___.t___()
     logger.info(f'Requesting {url}')
-    @ with session.get(url) as response:
+    @ with session.get(url) __ response:
         print(f'{url} took {t___.t___() - page_start}')
         r.. await response.text()
 
 
 @ ___ get_multiple_pages(loop, *urls):
     tasks   # list
-    @ with aiohttp.ClientSession(loop=loop) as session:
+    @ with aiohttp.ClientSession(loop=loop) __ session:
         ___ url __ urls:
             tasks.a..(fetch_page(session, url))
         r.. await _.gather(*tasks)

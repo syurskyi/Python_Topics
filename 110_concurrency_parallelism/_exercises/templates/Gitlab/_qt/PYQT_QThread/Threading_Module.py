@@ -28,9 +28,9 @@ __ _____ __ ______
     t3.s..
     t4.s..
     #join threads back to main
-    t1.join()
-    t2.join()
-    t3.join()
-    t4.join()
+    t1.j..
+    t2.j..
+    t3.j..
+    t4.j..
 
     print("All threads Complete")

@@ -8,13 +8,13 @@
 
 from PyQt4 ______ QtCore, QtGui
 
-try:
+___
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s):
         r_ s
 
-try:
+___
     _encoding = QtGui.QApplication.UnicodeUTF8
     ___ _translate(context, text, disambig):
         r_ QtGui.QApplication.translate(context, text, disambig, _encoding)
@@ -22,21 +22,21 @@ except AttributeError:
     ___ _translate(context, text, disambig):
         r_ QtGui.QApplication.translate(context, text, disambig)
 
-class Ui_Countdown(object):
+c_ Ui_Countdown(object):
     ___ setupUi(self, Countdown):
         Countdown.setObjectName(_fromUtf8("Countdown"))
         Countdown.resize(301, 162)
-        self.centralwidget = QtGui.QWidget(Countdown)
-        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.countdownButton = QtGui.QPushButton(self.centralwidget)
-        self.countdownButton.setGeometry(QtCore.QRect(100, 70, 90, 27))
-        self.countdownButton.setObjectName(_fromUtf8("countdownButton"))
-        Countdown.setCentralWidget(self.centralwidget)
+        centralwidget = QtGui.QWidget(Countdown)
+        centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        countdownButton = QtGui.QPushButton(centralwidget)
+        countdownButton.setGeometry(QtCore.QRect(100, 70, 90, 27))
+        countdownButton.setObjectName(_fromUtf8("countdownButton"))
+        Countdown.setCentralWidget(centralwidget)
 
-        self.retranslateUi(Countdown)
+        retranslateUi(Countdown)
         QtCore.QMetaObject.connectSlotsByName(Countdown)
 
     ___ retranslateUi(self, Countdown):
         Countdown.setWindowTitle(_translate("Countdown", "Countdown Window", N..))
-        self.countdownButton.setText(_translate("Countdown", "Start", N..))
+        countdownButton.setText(_translate("Countdown", "Start", N..))
 

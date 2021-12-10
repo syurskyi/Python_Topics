@@ -13,7 +13,7 @@ ______ primes
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, flush=True, end='')
-        try:
+        ___
             await _.s..(.1)
         except _.CancelledError:
             break
@@ -33,7 +33,7 @@ ______ primes
 ___ main()  N..:
     n = 5_000_111_000_222_021
     result = _.run(supervisor(n))
-    msg = 'is' if result else 'is not'
+    msg = 'is' __ result else 'is not'
     print(f'{n:,} {msg} prime')
 
 __ _____ __ ______

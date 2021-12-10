@@ -9,15 +9,15 @@ from ..richtexthandler ______ RichTextHandlerObject, RichTextHandler
 from ..loggers ______ ConsoleFormatter
 
 
-class ConsoleWidget(QTextEdit):
+c_ ConsoleWidget(QTextEdit):
 
-    ___ __init__(self):
-        super().__init__()
+    ___ - 
+        super().- ()
 
-        self.setReadOnly(True)
-        self.setWordWrapMode(QTextOption.NoWrap)
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.setStyleSheet('''
+        setReadOnly(True)
+        setWordWrapMode(QTextOption.NoWrap)
+        setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        setStyleSheet('''
             QTextEdit {
                 background-color: #2b2b2b;
                 font-family: "Consolas";
@@ -27,44 +27,44 @@ class ConsoleWidget(QTextEdit):
                 white-space: pre;
             }''')
 
-        self.handlerObj = RichTextHandlerObject()
-        self.handler = RichTextHandler(self.handlerObj)
-        self.handler.setFormatter(ConsoleFormatter())
-        self.handlerObj.wroteLine.connect(self.write)
-        g.log.addHandler(self.handler)
+        handlerObj = RichTextHandlerObject()
+        handler = RichTextHandler(handlerObj)
+        handler.setFormatter(ConsoleFormatter())
+        handlerObj.wroteLine.connect(write)
+        g.log.addHandler(handler)
 
-        self.actionCopy = QAction('&Copy', self, shortcut=QKeySequence.Copy, statusTip='Copy selected text to the clipboard', triggered=self.copy)
-        self.actionSelectAll = QAction('Select &All', self, shortcut=QKeySequence.SelectAll, statusTip='Select all text in the output window', triggered=self.selectAll)
-        self.actionScrollToEnd = QAction('Scroll to &End', self, statusTip='Move the cursor to the end of the output', triggered=self.scrollToEnd)
-        self.actionWordWrap = QAction('&Word Wrap', self, statusTip='Toggle word wrap', checkable=True, triggered=self.toggleWordWrap)
-        self.actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=self.clear)
+        actionCopy = QAction('&Copy', self, shortcut=QKeySequence.Copy, statusTip='Copy selected text to the clipboard', triggered=copy)
+        actionSelectAll = QAction('Select &All', self, shortcut=QKeySequence.SelectAll, statusTip='Select all text in the output window', triggered=selectAll)
+        actionScrollToEnd = QAction('Scroll to &End', self, statusTip='Move the cursor to the end of the output', triggered=scrollToEnd)
+        actionWordWrap = QAction('&Word Wrap', self, statusTip='Toggle word wrap', checkable=True, triggered=toggleWordWrap)
+        actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=clear)
 
     @Slot(s..)
     ___ write(self, line):
-        self.a.. (line)
-        self.scrollToEnd()
+        a.. (line)
+        scrollToEnd()
 
-    ___ scrollToEnd(self):
-        self.moveCursor(QTextCursor.End)
-        self.moveCursor(QTextCursor.StartOfLine)
+    ___ scrollToEnd
+        moveCursor(QTextCursor.End)
+        moveCursor(QTextCursor.StartOfLine)
 
-    ___ toggleWordWrap(self):
-        if self.wordWrapMode() == QTextOption.NoWrap:
-            self.setWordWrapMode(QTextOption.WordWrap)
+    ___ toggleWordWrap
+        __ wordWrapMode() == QTextOption.NoWrap:
+            setWordWrapMode(QTextOption.WordWrap)
         else:
-            self.setWordWrapMode(QTextOption.NoWrap)
+            setWordWrapMode(QTextOption.NoWrap)
 
-    ___ clear(self):
-        self.setText('')
-        self.scrollToEnd()
+    ___ clear
+        setText('')
+        scrollToEnd()
 
     ___ contextMenuEvent(self, event):
         menu = QMenu(self)
-        menu.addAction(self.actionCopy)
-        menu.addAction(self.actionSelectAll)
-        menu.addAction(self.actionScrollToEnd)
+        menu.addAction(actionCopy)
+        menu.addAction(actionSelectAll)
+        menu.addAction(actionScrollToEnd)
         menu.addSeparator()
-        self.actionWordWrap.setChecked(self.wordWrapMode() != QTextOption.NoWrap)
-        menu.addAction(self.actionWordWrap)
-        menu.addAction(self.actionClear)
+        actionWordWrap.setChecked(wordWrapMode() != QTextOption.NoWrap)
+        menu.addAction(actionWordWrap)
+        menu.addAction(actionClear)
         menu.exec_(event.globalPos())

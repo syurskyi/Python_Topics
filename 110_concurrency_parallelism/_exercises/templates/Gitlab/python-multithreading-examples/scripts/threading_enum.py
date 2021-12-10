@@ -1,5 +1,5 @@
 
-______ random
+______ r__
 ______ _
 ______ t__
 ______ logging
@@ -7,7 +7,7 @@ ______ logging
 
 ___ worker():
     """thread worker function"""
-    pause = random.randint(1, 5) / 10
+    pause = r__.randint(1, 5) / 10
     logging.debug('sleeping %0.2f', pause)
     t__.s..(pause)
     logging.debug('ending')
@@ -23,9 +23,9 @@ ___ i __ r.. 3):
     t.s..
 
 main_thread = _.main_thread()
-___ t __ _.enumerate():
-    if t is main_thread:
+___ t __ _.e..:
+    __ t is main_thread:
         continue
     logging.debug('joining @', t.getName())
-    t.join()
+    t.j..
     

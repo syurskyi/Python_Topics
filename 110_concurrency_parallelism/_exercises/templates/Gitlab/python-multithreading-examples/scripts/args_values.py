@@ -16,8 +16,8 @@ logging.basicConfig(level=logging.DEBUG,
                    )
 
 
-class ThreadWithArgs(_.?):
-    ___ __init__(self, 
+c_ ThreadWithArgs(_.?):
+    ___ - (self, 
                 group=N.., 
                 target=N.., 
                 name=N..,
@@ -26,19 +26,19 @@ class ThreadWithArgs(_.?):
                 verbose=N..
                 ):
 
-        _.?.__init__(self, 
+        _.?.- (self, 
                                 group=group, 
                                 target=target, 
                                 name=name,
                                 verbose=verbose
                                 )
         
-        self.args = args
-        self.kwargs = kwargs
+        args = args
+        kwargs = kwargs
         r_
 
-    ___ run(self):
-        logging.debug('This thread is running with @ and @', self.args, self.kwargs)
+    ___ run
+        logging.debug('This thread is running with @ and @', args, kwargs)
         r_
 
 
@@ -52,5 +52,5 @@ ___ Main():
         t__.s..(1)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     Main()

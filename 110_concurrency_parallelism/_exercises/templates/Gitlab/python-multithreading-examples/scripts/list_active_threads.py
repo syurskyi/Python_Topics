@@ -8,7 +8,7 @@ ______ _
 
 
 ___ Main():
-	___ thread __ _.enumerate():
+	___ thread __ _.e..:
 	    print("Thread name is @." @ thread.getName())
 	    
 

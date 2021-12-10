@@ -13,9 +13,9 @@ ___ spin(msg: s.., done: Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>
         status = f'\r{char} {msg}'  # <3>
         print(status, end='', flush=True)
-        if done.wait(.1):  # <4>
+        __ done.wait(.1):  # <4>
             break  # <5>
-    blanks = ' ' * len(status)
+    blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>
 
 ___ slow()  int:
@@ -31,7 +31,7 @@ ___ supervisor()  int:  # <1>
     spinner.s..  # <5>
     result = slow()  # <6>
     done.set()  # <7>
-    spinner.join()  # <8>
+    spinner.j..  # <8>
     r_ result
 
 ___ main()  N..:

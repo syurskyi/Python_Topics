@@ -20,15 +20,15 @@ PROMPT = b'?> '
         writer.write(PROMPT)  # can't await!  # <5>
         await writer.drain()  # must await!  # <6>
         data = await reader.readline()  # <7>
-        if not data:  # <8>
+        __ n.. data:  # <8>
             break
-        try:
+        ___
             query = data.decode().strip()  # <9>
         except UnicodeDecodeError:  # <10>
             query = '\x00'
         print(f' From {client}: {query!r}')  # <11>
-        if query:
-            if ord(query[:1]) < 32:  # <12>
+        __ query:
+            __ ord(query[:1]) < 32:  # <12>
                 break
             results = await search(query, index, writer)  # <13>
             print(f'   To {client}: {results} results.')  # <14>
@@ -47,10 +47,10 @@ PROMPT = b'?> '
                 __ format_results(chars))
     writer.writelines(lines)  # <4>
     await writer.drain()      # <5>
-    status_line = f'{"─" * 66} {len(chars)} found'  # <6>
+    status_line = f'{"─" * 66} {l..(chars)} found'  # <6>
     writer.write(status_line.encode() + CRLF)
     await writer.drain()
-    r_ len(chars)
+    r_ l..(chars)
 # end::TCP_MOJIFINDER_SEARCH[]
 
 # tag::TCP_MOJIFINDER_MAIN[]
@@ -68,7 +68,7 @@ ___ main(host: s.. = '127.0.0.1', port_arg: s.. = '2323'):
     port = int(port_arg)
     print('Building index.')
     index = InvertedIndex()                         # <7>
-    try:
+    ___
         _.run(supervisor(index, host, port))  # <8>
     except KeyboardInterrupt:                       # <9>
         print('\nServer shut down.')

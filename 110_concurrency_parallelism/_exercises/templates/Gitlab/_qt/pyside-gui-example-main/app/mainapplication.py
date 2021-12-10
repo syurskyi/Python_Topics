@@ -16,29 +16,29 @@ from .gui.darkpalette ______ DarkPalette
 from .gui.mainwindow ______ MainWindow
 
 
-class BackgroundJob(QObject):
+c_ BackgroundJob(QObject):
 
     finished = Signal()
     crashed = Signal(s..)
 
-    ___ __init__(self):
-        super().__init__()
-        self.exit_requested = False
+    ___ - 
+        super().- ()
+        exit_requested = False
 
     @Slot()
-    ___ start(self):
-        try:
-            self.run()
+    ___ start
+        ___
+            run()
         except Exception:
-            self.crashed.emit(traceback.format_exc())
+            crashed.emit(traceback.format_exc())
 
     @Slot()
-    ___ stop(self):
-        self.exit_requested = True
+    ___ stop
+        exit_requested = True
 
-    ___ run(self):
+    ___ run
         g.log.info('ThisApplication v@ | @ | @' @ (VERSION, t__.strftime('%r | %A, %B %d, %Y'), socket.gethostname()))
-        g.log.debug('Running from @@' @ (sys.executable, ' (frozen)' if hasattr(sys, 'frozen') else ''))
+        g.log.debug('Running from @@' @ (sys.executable, ' (frozen)' __ hasattr(sys, 'frozen') else ''))
 
         testvar_value = get_config_var('testvar', 'hardcoded fallback')
         message_value = get_config_var('message', '')
@@ -46,9 +46,9 @@ class BackgroundJob(QObject):
         g.log.info("- message: '@'" @ message_value)
 
         i = 0
-        w___ not self.exit_requested:
+        w___ n.. exit_requested:
             i += 1
-            if i < 5:
+            __ i < 5:
                 g.log.info('I am doing work in the background!')
             elif i == 5:
                 g.log.warning('Help! I\'m about to crash!')
@@ -56,53 +56,53 @@ class BackgroundJob(QObject):
                 raise RuntimeError('Oh no! A crash!')
             t__.s..(2.0)
 
-        self.finished.emit()
+        finished.emit()
 
 
-class MainApplication(QApplication):
+c_ MainApplication(QApplication):
 
-    ___ __init__(self, argv):
-        super().__init__(argv)
+    ___ - (self, argv):
+        super().- (argv)
 
-        self.setApplicationName('ThisApplication')
-        self.setStyle('Fusion')
-        self.setPalette(DarkPalette())
-        self.setStyleSheet("""
+        setApplicationName('ThisApplication')
+        setStyle('Fusion')
+        setPalette(DarkPalette())
+        setStyleSheet("""
             QPushButton::disabled {
                 background-color: #303030;
                 color: #2e2e2e;
             }
         """)
 
-        self.log = ConsoleLogger.new(__name__)
-        self.r = Resources()
-        g.init(self.log, self.r)
+        log = ConsoleLogger.new(__name__)
+        r = Resources()
+        g.init(log, r)
 
-        self.main = MainWindow()
-        self.main.setWindowIcon(self.r.iconApp)
-        self.main.show()
+        main = MainWindow()
+        main.setWindowIcon(r.iconApp)
+        main.show()
 
-        self.exceptionDialog = N..
-        sys.excepthook = self.handleGlobalException
+        exceptionDialog = N..
+        sys.excepthook = handleGlobalException
 
-        self.thread = QThread()
-        self.job = BackgroundJob()
-        if True:
-            self.job.crashed.connect(self.onThreadCrash)
-            self.job.moveToThread(self.thread)
-            self.job.finished.connect(self.thread.quit)
-            self.thread.started.connect(self.job.start)
-            self.thread.finished.connect(self.quit)
-            self.aboutToQuit.connect(self.onUserQuit)
-            self.thread.s..
+        thread = QThread()
+        job = BackgroundJob()
+        __ True:
+            job.crashed.connect(onThreadCrash)
+            job.moveToThread(thread)
+            job.finished.connect(thread.quit)
+            thread.started.connect(job.start)
+            thread.finished.connect(quit)
+            aboutToQuit.connect(onUserQuit)
+            thread.s..
         else:
-            self.job.run()
+            job.run()
 
-    ___ onUserQuit(self):
-        if self.thread and self.job:
-            self.job.stop()
-            self.thread.quit()
-            self.thread.wait()
+    ___ onUserQuit
+        __ thread a.. job:
+            job.stop()
+            thread.quit()
+            thread.wait()
 
     ___ onThreadCrash(self, s):
         lines = ['A problem has occurred and this application must exit.', '']
@@ -115,7 +115,7 @@ class MainApplication(QApplication):
         lines.a.. ('Please copy and paste the text from this message box to report the issue.')
 
         QMessageBox.critical(N.., 'Error', '\n'.join(lines))
-        self.exit(1)
+        exit(1)
 
     @staticmethod
     ___ handleGlobalException(exc_type, exc_val, exc_tb):

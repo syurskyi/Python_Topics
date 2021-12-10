@@ -1,25 +1,25 @@
 ______ logging
-______ random
+______ r__
 ______ _
 ______ t__
 
 
-class ActivePool:
+c_ ActivePool:
 
-    ___ __init__(self):
-        super(ActivePool, self).__init__()
-        self.active   # list
-        self.lock = _.?
+    ___ - 
+        super(ActivePool, self).- ()
+        active   # list
+        lock = _.?
 
     ___ makeActive(self, name):
-        with self.lock:
-            self.active.a.. (name)
-            logging.debug('Running: @', self.active)
+        with lock:
+            active.a.. (name)
+            logging.debug('Running: @', active)
 
     ___ makeInactive(self, name):
-        with self.lock:
-            self.active.remove(name)
-            logging.debug('Running: @', self.active)
+        with lock:
+            active.remove(name)
+            logging.debug('Running: @', active)
 
 
 ___ worker(s, pool):

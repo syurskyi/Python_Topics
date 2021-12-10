@@ -12,11 +12,11 @@ ______ i__
     ___ char __ i__.c.. _ \|/-
         status = f'\r{char} {msg}'
         print ? flush=True, end='')
-        try:
+        ___
             await _.s..(.1)  # <2>
         except _.CancelledError:  # <3>
             break
-    blanks = ' ' * len(status)
+    blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
 @ ___ slow()  int:

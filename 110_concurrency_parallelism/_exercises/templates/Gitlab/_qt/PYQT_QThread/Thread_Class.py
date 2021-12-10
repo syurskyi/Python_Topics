@@ -8,16 +8,16 @@ ___ print_epoch(name_of_thread, delay):
         count+=1
         print(name_of_thread, "----------",t__.t__())
 
-class MyThread(_.?):
-    ___ __init__(self, name, delay):
-        _.?.__init__(self)
-        self.name = name
-        self.delay = delay
+c_ MyThread(_.?):
+    ___ - (self, name, delay):
+        _.?.- (self)
+        name = name
+        delay = delay
 
-    ___ run(self):
-        print("Start Thread", self.name)
-        print_epoch(self.name,self.delay)
-        print("End Thread", self.name)
+    ___ run
+        print("Start Thread", name)
+        print_epoch(name,delay)
+        print("End Thread", name)
 
 __ _____ __ ______
     t1 = MyThread("Thread 1", 1)
@@ -28,5 +28,5 @@ __ _____ __ ______
     print(_.active_count())
     print(_.current_thread())
     print(_.enumerate())
-    t1.join()
-    t2.join()
+    t1.j..
+    t2.j..

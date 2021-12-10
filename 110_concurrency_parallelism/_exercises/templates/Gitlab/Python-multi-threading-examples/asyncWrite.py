@@ -1,18 +1,18 @@
 ______ _
 ______ t__
 
-class AsyncWrite(_.?):
-	___ __init__(self, text, out):
-		_.?.__init__(self)
-		self.text = text
-		self.out = out
+c_ AsyncWrite(_.?):
+	___ - (self, text, out):
+		_.?.- (self)
+		text = text
+		out = out
 
-	___ run(self):
-		f = open(self.out, "a")
-		f.write(self.text + '\n')
+	___ run
+		f = open(out, "a")
+		f.write(text + '\n')
 		f.close()
 		t__.s..(2)
-		print "Finished Background file write to " + self.out
+		print "Finished Background file write to " + out
 
 ___ Main():
 	message = raw_input("Enter a string to store:")

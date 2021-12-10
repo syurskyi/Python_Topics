@@ -17,7 +17,7 @@ ___ print_square(num):
     """
     print("Square: {}".format(num * num))
  
-if __name__ == "__main__":
+__ __name__ == "__main__":
     # creating thread
     t1 = _.? ?_print_square,  ?_(10,))
     t2 = _.? ?_print_cube,  ?_(10,))
@@ -28,9 +28,9 @@ if __name__ == "__main__":
     t2.s..
  
     # wait until thread 1 is completely executed
-    t1.join()
+    t1.j..
     # wait until thread 2 is completely executed
-    t2.join()
+    t2.j..
  
     # both threads completely executed
     print("Done!")

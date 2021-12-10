@@ -32,8 +32,8 @@ ___ Main():
 	t2=_.?(Target=PrintCube,  ?_(arr,))
 	t1.s..
 	t2.s..
-	t1.join()
-	t2.join()
+	t1.j..
+	t2.j..
 	print("Program took", t__.t__()-t)
 
 

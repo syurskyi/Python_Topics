@@ -26,5 +26,5 @@ ___ Main():
 	print "Done! Program ended"
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 	Main()

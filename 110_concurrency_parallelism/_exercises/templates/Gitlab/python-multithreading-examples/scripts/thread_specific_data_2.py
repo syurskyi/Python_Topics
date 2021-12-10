@@ -1,4 +1,4 @@
-______ random
+______ r__
 ______ _
 ______ logging
 
@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 
 ___ show_value(data):
-    try:
+    ___
         val = data.value
     except AttributeError:
         logging.debug('No value yet')
@@ -17,13 +17,13 @@ ___ show_value(data):
 
 ___ worker(data):
     show_value(data)
-    data.value = random.randint(1, 100)
+    data.value = r__.randint(1, 100)
     show_value(data)
 
-class MyLocal(_.local):
-    ___ __init__(self, value):
+c_ MyLocal(_.local):
+    ___ - (self, value):
         logging.debug('Initializing %r', self)
-        self.value = value
+        value = value
 
 local_data = MyLocal(1000)
 show_value(local_data)

@@ -26,7 +26,7 @@ ___ search():
 
 
 ___ main(port):
-    global index
+    g.. index
     index = InvertedIndex()
     run(host='localhost', port=port, debug=True)
 

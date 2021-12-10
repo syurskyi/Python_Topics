@@ -30,4 +30,4 @@ ___ t __ threads:
     t__.s..(0.1)
 
 ___ t __ threads:
-    t.join()
+    t.j..

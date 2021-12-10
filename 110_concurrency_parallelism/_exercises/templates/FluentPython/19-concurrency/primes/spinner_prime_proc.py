@@ -14,9 +14,9 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>
         status = f'\r{char} {msg}'  # <3>
         print(status, end='', flush=True)
-        if done.wait(.1):  # <4>
+        __ done.wait(.1):  # <4>
             break  # <5>
-    blanks = ' ' * len(status)
+    blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>
 
 ___ check(n: int)  int:
@@ -30,13 +30,13 @@ ___ supervisor(n: int)  int:  # <1>
     spinner.s..  # <5>
     result = check(n)  # <6>
     done.set()  # <7>
-    spinner.join()  # <8>
+    spinner.j..  # <8>
     r_ result
 
 ___ main()  N..:
     n = 5_000_111_000_222_021
     result = supervisor(n)  # <9>
-    msg = 'is' if result else 'is not'
+    msg = 'is' __ result else 'is not'
     print(f'{n:,} {msg} prime')
 
 __ _____ __ ______

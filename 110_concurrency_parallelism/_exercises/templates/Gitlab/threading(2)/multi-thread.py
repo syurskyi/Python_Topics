@@ -18,62 +18,62 @@ a = 0
 b = 0
 c = 0
 
-class calcA(_.?):
-    ___ __init__(self,name):
-        super(calcA, self).__init__()
-        self.name = name
-        self.terminated = False
-        self.s..
+c_ calcA(_.?):
+    ___ - (self,name):
+        super(calcA, self).- ()
+        name = name
+        terminated = False
+        s..
 
-    ___ run(self):
-        global a
-        print ('starting '+self.name+' thread')
+    ___ run
+        g.. a
+        print ('starting '+name+' thread')
         s..(1)
-        w___ not self.terminated:
+        w___ n.. terminated:
             a += 1
             s..(1)
-            if self.terminated:
+            __ terminated:
                 break
-        print ('thread '+self.name+' stopped')
+        print ('thread '+name+' stopped')
 
 
-class calcB(_.?):
-    ___ __init__(self,name):
-        super(calcB, self).__init__()
-        self.name = name
-        self.terminated = False
-        self.s..
+c_ calcB(_.?):
+    ___ - (self,name):
+        super(calcB, self).- ()
+        name = name
+        terminated = False
+        s..
 
-    ___ run(self):
-        global b
-        print ('starting '+self.name+' thread')
+    ___ run
+        g.. b
+        print ('starting '+name+' thread')
         s..(1)
-        w___ not self.terminated:
+        w___ n.. terminated:
             b += 1
             s..(5)
-            if self.terminated:
+            __ terminated:
                 break
-        print ('thread '+self.name+' stopped')
+        print ('thread '+name+' stopped')
 
 
 
-class calcC(_.?):
-    ___ __init__(self,name):
-        super(calcC, self).__init__()
-        self.name = name
-        self.terminated = False
-        self.s..
+c_ calcC(_.?):
+    ___ - (self,name):
+        super(calcC, self).- ()
+        name = name
+        terminated = False
+        s..
 
-    ___ run(self):
-        global c
-        print ('starting '+self.name+' thread')
+    ___ run
+        g.. c
+        print ('starting '+name+' thread')
         s..(1)
-        w___ not self.terminated:
+        w___ n.. terminated:
             c += 1
             s..(10)
-            if self.terminated:
+            __ terminated:
                 break
-        print ('thread '+self.name+' stopped')
+        print ('thread '+name+' stopped')
 # Startup sequence
 calcA = calcA(name='incrementA')
 s..(0.1)
@@ -82,8 +82,8 @@ s..(0.1)
 calcC = calcC(name='incrementC')
 s..(0.1)
 
-if __name__ == "__main__":
-    try:
+__ __name__ == "__main__":
+    ___
     	print 'Press CTRL+C to quit'
     	running = True
         print("a:{} b:{} c:{}".format(a,b,c))
@@ -96,11 +96,11 @@ if __name__ == "__main__":
         print '\nKeyboard Interrupt Detected! Shutting down program!'
 
         calcA.terminated = True
-        calcA.join()
+        calcA.j..
         calcB.terminated = True
-        calcB.join()
+        calcB.j..
         calcC.terminated = True
-        calcC.join()
+        calcC.j..
 
 
     print'\nProcess ended!'

@@ -1,6 +1,6 @@
 
 ______ logging
-______ random
+______ r__
 ______ _
 ______ t__
 
@@ -8,19 +8,19 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s (%(threadName)-2s) %(message)s',
                     )
 
-class ActivePool(object):
-    ___ __init__(self):
-        super(ActivePool, self).__init__()
-        self.active   # list
-        self.lock = _.?
+c_ ActivePool(object):
+    ___ - 
+        super(ActivePool, self).- ()
+        active   # list
+        lock = _.?
     ___ makeActive(self, name):
-        with self.lock:
-            self.active.a.. (name)
-            logging.debug('Running: @', self.active)
+        with lock:
+            active.a.. (name)
+            logging.debug('Running: @', active)
     ___ makeInactive(self, name):
-        with self.lock:
-            self.active.remove(name)
-            logging.debug('Running: @', self.active)
+        with lock:
+            active.remove(name)
+            logging.debug('Running: @', active)
 
 ___ worker(s, pool):
     logging.debug('Waiting to join the pool')

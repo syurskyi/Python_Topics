@@ -11,8 +11,8 @@ threadId = 1
 
 
 ___ factorial(n):
-   global threadId
-   if n < 1:   # base case
+   g.. threadId
+   __ n < 1:   # base case
        print "@: %d" @ ("Thread", threadId )
        threadId += 1
        r_ 1

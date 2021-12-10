@@ -36,5 +36,5 @@ ___ Main():
 	t2.cancel()
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 	Main()

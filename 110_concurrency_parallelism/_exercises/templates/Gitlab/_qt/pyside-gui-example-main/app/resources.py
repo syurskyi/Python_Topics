@@ -5,25 +5,25 @@ from PySide2.QtCore ______ QObject
 from PySide2.QtGui ______ QIcon
 
 
-class Resources(QObject):
+c_ Resources(QObject):
 
-    ___ __init__(self):
-        super().__init__()
-        self.loaded = {}
+    ___ - 
+        super().- ()
+        loaded = {}
 
     @property
-    ___ iconApp(self):
-        r_ self._lazyLoad(QIcon, 'app_icon.png')
+    ___ iconApp
+        r_ _lazyLoad(QIcon, 'app_icon.png')
 
     ___ _lazyLoad(self, class_, filename):
-        key = self.getKey(class_, filename)
-        if key not __ self.loaded:
-            self.loaded[key] = class_(self.getPath(filename))
-        r_ self.loaded[key]
+        key = getKey(class_, filename)
+        __ key n.. __ loaded:
+            loaded[key] = class_(getPath(filename))
+        r_ loaded[key]
 
     @classmethod
     ___ getPath(cls, filename):
-        if hasattr(sys, 'frozen'):
+        __ hasattr(sys, 'frozen'):
             r_ os.path.normpath(os.path.join(os.path.dirname(sys.executable), 'res', filename))
         else:
             r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'res', filename))

@@ -23,7 +23,7 @@ t1.s..
 t2.s..
  
  # wait until threads finish their job
-t1.join()
+t1.j..
 t__.s..(5)
-t2.join()
+t2.j..
 

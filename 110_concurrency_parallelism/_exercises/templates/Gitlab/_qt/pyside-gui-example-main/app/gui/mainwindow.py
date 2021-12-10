@@ -5,15 +5,15 @@ from ..version ______ VERSION
 from .mainwidget ______ MainWidget
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow(QMainWindow):
 
-    ___ __init__(self):
-        super().__init__()
+    ___ - 
+        super().- ()
 
-        self.resize(1140, 800)
-        self.move(100, 80)
-        self.setWindowTitle("ThisApplication v@" @ VERSION)
-        self.setDockOptions(QMainWindow.AnimatedDocks | QMainWindow.AllowNestedDocks | QMainWindow.AllowTabbedDocks | QMainWindow.GroupedDragging)
+        resize(1140, 800)
+        move(100, 80)
+        setWindowTitle("ThisApplication v@" @ VERSION)
+        setDockOptions(QMainWindow.AnimatedDocks | QMainWindow.AllowNestedDocks | QMainWindow.AllowTabbedDocks | QMainWindow.GroupedDragging)
 
-        self.w = MainWidget()
-        self.setCentralWidget(self.w)
+        w = MainWidget()
+        setCentralWidget(w)

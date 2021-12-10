@@ -39,5 +39,5 @@ ___ Main():
 	myThread.s..
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 	Main()

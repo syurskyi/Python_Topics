@@ -1,7 +1,7 @@
 from PySide2.QtWidgets ______ QApplication
 
 
-class g(object):
+c_ g(object):
 
     log = N..
     r = N..

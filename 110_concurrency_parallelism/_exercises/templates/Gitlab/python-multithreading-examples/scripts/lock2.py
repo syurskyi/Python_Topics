@@ -13,7 +13,7 @@ ___ lock_holder(lock):
     logging.debug('Starting')
     w___ True:
         lock.a..
-        try:
+        ___
             logging.debug('Holding')
             t__.s..(0.5)
         finally:
@@ -30,15 +30,15 @@ ___ worker(lock):
         t__.s..(0.5)
         logging.debug('Trying to acquire')
         have_it = lock.acquire(0)
-        try:
+        ___
             num_tries += 1
-            if have_it:
+            __ have_it:
                 logging.debug('Iteration %d: Acquired',  num_tries)
                 num_acquires += 1
             else:
                 logging.debug('Iteration %d: Not acquired', num_tries)
         finally:
-            if have_it:
+            __ have_it:
                 lock.r..
     logging.debug('Done after %d iterations', num_tries)
 

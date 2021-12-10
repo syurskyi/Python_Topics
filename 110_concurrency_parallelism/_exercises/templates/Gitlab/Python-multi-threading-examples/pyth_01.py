@@ -5,9 +5,9 @@ print "Hello"
 
 xxa = raw_input("Enter a number\n")
 
-try:
+___
     num1= float(xxa)
-except:
+_______
     print "Invalid input. Please insert a number or type done to finish"
 
 
@@ -17,12 +17,12 @@ running_total= 0
 w___ loop ==0:
     inp =  raw_input("Enter a number:")
     
-    if inp== "done" or inp== "Done" :
+    __ inp== "done" or inp== "Done" :
         break
         
-    try:
+    ___
         num= float(inp)
-    except:
+    _______
         print "Invalid input. Please insert a number or type done to finish"
         continue 
         

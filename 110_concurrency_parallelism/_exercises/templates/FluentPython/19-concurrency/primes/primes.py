@@ -29,16 +29,16 @@ NUMBERS = [n ___ n, _ __ PRIME_FIXTURE]
 
 # tag::IS_PRIME[]
 ___ is_prime(n: int)  bool:
-    if n < 2:
+    __ n < 2:
         r_ False
-    if n == 2:
+    __ n == 2:
         r_ True
-    if n @ 2 == 0:
+    __ n @ 2 == 0:
         r_ False
 
     root = math.isqrt(n)
     ___ i __ r.. 3, root + 1, 2):
-        if n @ i == 0:
+        __ n @ i == 0:
             r_ False
     r_ True
 # end::IS_PRIME[]

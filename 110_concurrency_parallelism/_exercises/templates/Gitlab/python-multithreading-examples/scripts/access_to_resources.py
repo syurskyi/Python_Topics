@@ -1,5 +1,5 @@
 ______ logging
-______ random
+______ r__
 ______ _
 ______ t__
 
@@ -7,22 +7,22 @@ logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-10s) %(message)s',
                     )
                     
-class Counter(object):
-    ___ __init__(self, start=0):
-        self.lock = _.?
-        self.value = start
-    ___ increment(self):
+c_ Counter(object):
+    ___ - (self, start=0):
+        lock = _.?
+        value = start
+    ___ increment
         logging.debug('Waiting for lock')
-        self.lock.a..
-        try:
+        lock.a..
+        ___
             logging.debug('Acquired lock')
-            self.value = self.value + 1
+            value = value + 1
         finally:
-            self.lock.r..
+            lock.r..
 
 ___ worker(c):
     ___ i __ r.. 2):
-        pause = random.random()
+        pause = r__.r__()
         logging.debug('Sleeping %0.02f', pause)
         t__.s..(pause)
         c.increment()
@@ -35,7 +35,7 @@ ___ i __ r.. 2):
 
 logging.debug('Waiting for worker threads')
 main_thread = _.currentThread()
-___ t __ _.enumerate():
-    if t is not main_thread:
-        t.join()
+___ t __ _.e..:
+    __ t is n.. main_thread:
+        t.j..
 logging.debug('Counter: %d', counter.value)

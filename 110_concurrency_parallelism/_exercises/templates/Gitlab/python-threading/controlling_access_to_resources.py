@@ -1,27 +1,27 @@
 
 
 ______ logging
-______ random
+______ r__
 ______ _
 ______ t__
 
 
-class Counter:
+c_ Counter:
 
-    ___ __init__(self, start=0):
+    ___ - (self, start=0):
 
-        self.lock=_.?
-        self.value=start
+        lock=_.?
+        value=start
 
-    ___ increment(self):
+    ___ increment
         logging.debug('wait  for lock')
-        self.lock.a..
+        lock.a..
 
-        try:
+        ___
             logging.debug('Acquire lock')
-            self.value = self.value+1
+            value = value+1
         finally:
-            self.lock.r..
+            lock.r..
 
 
 
@@ -29,7 +29,7 @@ ___ worker(c):
 
     ___ i __ r.. 2):
 
-        pause = random.random()
+        pause = r__.r__()
         logging.debug('sleeping %0.002f',pause)
         t__.s..(pause)
         c.increment()
@@ -50,8 +50,8 @@ ___ i __ r.. 2):
 
 logging.debug('Waiting for worker threads')
 main_thread = _.main_thread()
-___ t __ _.enumerate():
-    if t is not main_thread:
-        t.join()
+___ t __ _.e..:
+    __ t is n.. main_thread:
+        t.j..
 logging.debug('Counter: %d', counter.value)
 
