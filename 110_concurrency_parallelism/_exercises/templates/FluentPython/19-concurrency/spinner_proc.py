@@ -20,12 +20,12 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
-___ slow()  int:
+___ slow()  in.:
     t__.s..(3)
     r_ 42
 
 # tag::SPINNER_PROC_SUPER[]
-___ supervisor()  int:
+___ supervisor()  in.:
     done = Event()
     spinner = Process ?_spin,               # <4>
                        ?_('thinking!', done))

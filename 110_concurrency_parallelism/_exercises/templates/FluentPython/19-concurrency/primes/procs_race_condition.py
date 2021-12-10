@@ -15,14 +15,14 @@ from multiprocessing ______ queues  # <2>
 from primes ______ is_prime, NUMBERS
 
 c_ PrimeResult(NamedTuple):  # <3>
-    n: int
+    n: in.
     prime: bool
     elapsed: float
 
-JobQueue = queues.SimpleQueue[int]  # <4>
+JobQueue = queues.SimpleQueue[in.]  # <4>
 ResultQueue = queues.SimpleQueue[PrimeResult]  # <5>
 
-___ check(n: int)  PrimeResult:  # <6>
+___ check(n: in.)  PrimeResult:  # <6>
     t0 = perf_counter()
     res = is_prime(n)
     r_ PrimeResult(n, res, perf_counter() - t0)
@@ -33,7 +33,7 @@ ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
     results.p..(PrimeResult(0, False, 0.0))
 # end::PRIMES_PROC_TOP[]
 
-___ start_jobs(workers: int)  ResultQueue:
+___ start_jobs(workers: in.)  ResultQueue:
     jobs: JobQueue = SimpleQueue() # <2>
     results: ResultQueue = SimpleQueue()
 
@@ -47,7 +47,7 @@ ___ start_jobs(workers: int)  ResultQueue:
 
     r_ results
 
-___ report(workers: int, results: ResultQueue)  int:
+___ report(workers: in., results: ResultQueue)  in.:
     workers_done = 0
     checked = 0
     w___ workers_done < workers:
@@ -66,7 +66,7 @@ ___ main()  N..:
     __ l..(sys.argv) < 2:  # <1>
         workers = cpu_count()
     else:
-        workers = int(sys.argv[1])
+        workers = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {workers} processes:')
     t0 = perf_counter()

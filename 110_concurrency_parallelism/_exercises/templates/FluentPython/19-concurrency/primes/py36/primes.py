@@ -28,7 +28,7 @@ PRIME_FIXTURE = [
 NUMBERS = [n ___ n, _ __ PRIME_FIXTURE]
 
 # tag::IS_PRIME[]
-___ is_prime(n: int)  bool:
+___ is_prime(n: in.)  bool:
     __ n < 2:
         r_ False
     __ n == 2:

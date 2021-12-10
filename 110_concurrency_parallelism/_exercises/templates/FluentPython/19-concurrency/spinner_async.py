@@ -19,7 +19,7 @@ ______ i__
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
-@ ___ slow()  int:
+@ ___ slow()  in.:
     await _.s..(3)  # <4>
     r_ 42
 # end::SPINNER_ASYNC_TOP[]
@@ -29,7 +29,7 @@ ___ main()  N..:  # <1>
     result = _.run(supervisor())  # <2>
     print(f'Answer: {result}')
 
-@ ___ supervisor()  int:  # <3>
+@ ___ supervisor()  in.:  # <3>
     spinner = _.create_task(spin('thinking!'))  # <4>
     print(f'spinner object: {spinner}')  # <5>
     result = await slow()  # <6>

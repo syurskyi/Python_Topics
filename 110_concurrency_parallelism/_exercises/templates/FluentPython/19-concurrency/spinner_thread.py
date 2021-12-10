@@ -18,13 +18,13 @@ ___ spin(msg: s.., done: Event)  N..:  # <1>
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>
 
-___ slow()  int:
+___ slow()  in.:
     t__.s..(3)  # <7>
     r_ 42
 # end::SPINNER_THREAD_TOP[]
 
 # tag::SPINNER_THREAD_REST[]
-___ supervisor()  int:  # <1>
+___ supervisor()  in.:  # <1>
     done = Event()  # <2>
     spinner = ? ?_spin,  ?_('thinking!', done))  # <3>
     print(f'spinner object: {spinner}')  # <4>

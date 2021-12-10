@@ -30,8 +30,8 @@ c_ MainWindow(QMainWindow, Ui_Countdown):
         ?.s..
         QMetaObject.invokeMethod(WorkerProcess, "calculate",
                                  Qt.QueuedConnection,
-                                 Q_ARG(int, 0),
-                                 Q_ARG(int, 110))
+                                 Q_ARG(in., 0),
+                                 Q_ARG(in., 110))
 
 
     ___ on_progress_status status):
@@ -43,7 +43,7 @@ c_ Worker(QObject):
     finished = pyqtSignal()
     status = pyqtSignal(dict)
     
-    @pyqtSlot(int, int)
+    @pyqtSlot(in., in.)
     ___ calculate start, stop):
         statusGen = counter(start, stop)
         cancel = False

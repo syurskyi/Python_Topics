@@ -18,10 +18,10 @@ ___ spin(msg: s.., done: Event)  N..:  # <1>
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>
 
-___ check(n: int)  int:
+___ check(n: in.)  in.:
     r_ is_prime(n)
 
-___ supervisor(n: int)  int:  # <1>
+___ supervisor(n: in.)  in.:  # <1>
     done = Event()  # <2>
     spinner = ? ?_spin,
                       ?_('thinking!', done))  # <3>

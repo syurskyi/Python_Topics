@@ -12,5 +12,5 @@ ___ suffix __ r.. 20,30):
       __ n.. line: break
       n_received = received_packages.findall(line)
       __ n_received:
-         print ip + ": " + status[int(n_received[0])]
+         print ip + ": " + status[in.(n_received[0])]
          

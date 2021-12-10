@@ -13,7 +13,7 @@ c_ ip_check(_.?):
         __ n.. line: break
         n_received = re.findall(received_packages,line)
         __ n_received:
-           __successful_pings = int(n_received[0])
+           __successful_pings = in.(n_received[0])
    ___ status
       __ __successful_pings == 0:
          r_ "no response"

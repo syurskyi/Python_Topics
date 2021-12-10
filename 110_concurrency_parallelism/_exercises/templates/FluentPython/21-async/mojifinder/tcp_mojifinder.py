@@ -41,7 +41,7 @@ PROMPT = b'?> '
 # tag::TCP_MOJIFINDER_SEARCH[]
 @ ___ search(query: s..,  # <1>
                  index: InvertedIndex,
-                 writer: _.StreamWriter)  int:
+                 writer: _.StreamWriter)  in.:
     chars = index.search(query)  # <2>
     lines = (line.encode() + CRLF ___ line  # <3>
                 __ format_results(chars))
@@ -54,7 +54,7 @@ PROMPT = b'?> '
 # end::TCP_MOJIFINDER_SEARCH[]
 
 # tag::TCP_MOJIFINDER_MAIN[]
-@ ___ supervisor(index: InvertedIndex, host: s.., port: int)  N..:
+@ ___ supervisor(index: InvertedIndex, host: s.., port: in.)  N..:
     server = await _.start_server(    # <1>
         functools.partial(finder, index),   # <2>
         host, port)                         # <3>
@@ -65,7 +65,7 @@ PROMPT = b'?> '
     await server.serve_forever()  # <6>
 
 ___ main(host: s.. = '127.0.0.1', port_arg: s.. = '2323'):
-    port = int(port_arg)
+    port = in.(port_arg)
     print('Building index.')
     index = InvertedIndex()                         # <7>
     ___

@@ -19,10 +19,10 @@ ______ primes
             break
     print('THIS WILL NEVER BE OUTPUT')
 
-@ ___ check(n: int)  int:
+@ ___ check(n: in.)  in.:
     r_ primes.is_prime(n)  # <4>
 
-@ ___ supervisor(n: int)  int:
+@ ___ supervisor(n: in.)  in.:
     spinner = _.create_task(spin('thinking!'))  # <1>
     print('spinner object:', spinner)  # <2>
     result = await check(n)  # <3>

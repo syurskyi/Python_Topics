@@ -34,7 +34,7 @@ ______ unicodedata
 from collections ______ defaultdict
 from collections.abc ______ Iterator
 
-STOP_CODE: int = sys.maxunicode + 1
+STOP_CODE: in. = sys.maxunicode + 1
 
 Char = s..
 Index = defaultdict[s.., set[Char]]
@@ -49,7 +49,7 @@ ___ tokenize(text: s..)  Iterator[s..]:
 c_ InvertedIndex:
     entries: Index
 
-    ___ -  start: int = 32, stop: int = STOP_CODE):
+    ___ -  start: in. = 32, stop: in. = STOP_CODE):
         entries: Index = defaultdict(set)
         ___ char __ (chr(i) ___ i __ r.. start, stop)):
             name = unicodedata.name(char, '')

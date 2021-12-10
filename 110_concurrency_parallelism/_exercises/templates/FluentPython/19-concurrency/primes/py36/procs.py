@@ -15,14 +15,14 @@ from multiprocessing ______ queues  # <2>
 from primes ______ is_prime, NUMBERS
 
 c_ PrimeResult(NamedTuple):  # <3>
-    n: int
+    n: in.
     prime: bool
     elapsed: float
 
 JobQueue = queues.SimpleQueue  # <4>
 ResultQueue = queues.SimpleQueue  # <5>
 
-___ check(n: int)  PrimeResult:  # <6>
+___ check(n: in.)  PrimeResult:  # <6>
     t0 = perf_counter()
     res = is_prime(n)
     r_ PrimeResult(n, res, perf_counter() - t0)
@@ -40,7 +40,7 @@ ___ main()  N..:
     __ l..(sys.argv) < 2:  # <1>
         workers = cpu_count()
     else:
-        workers = int(sys.argv[1])
+        workers = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {workers} processes:')
 

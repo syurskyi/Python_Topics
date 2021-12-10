@@ -289,7 +289,7 @@ c_ Router(object):
         filters = {
             're':    lambda conf:
                 (_re_flatten(conf or default_pattern), N.., N..),
-            'int':   lambda conf: (r'-?\d+', int, lambda x: s..(int(x))),
+            'int':   lambda conf: (r'-?\d+', in., lambda x: s..(in.(x))),
             'float': lambda conf: (r'-?[\d.]+', float, lambda x: s..(float(x))),
             'path':  lambda conf: (r'.+?', N.., N..)}
 
@@ -840,7 +840,7 @@ c_ Bottle(object):
     ___ error code=500):
         """ Decorator: Register an output handler for a HTTP error code"""
         ___ wrapper(handler):
-            error_handler[int(code)] = handler
+            error_handler[in.(code)] = handler
             r_ handler
         r_ wrapper
 
@@ -1149,7 +1149,7 @@ c_ BaseRequest(object):
                 __ l..(header) > bufsize: raise err
             size, _, _ = header.partition(sem)
             ___
-                maxread = int(tonat(size.strip()), 16)
+                maxread = in.(tonat(size.strip()), 16)
             except ValueError:
                 raise err
             __ maxread == 0: break
@@ -1307,7 +1307,7 @@ c_ BaseRequest(object):
         ''' The request body length as an integer. The client is responsible to
             set this header. Otherwise, the real length of the body is unknown
             and -1 is returned. In this case, :attr:`body` will be empty. '''
-        r_ int(environ.get('CONTENT_LENGTH') or -1)
+        r_ in.(environ.get('CONTENT_LENGTH') or -1)
 
     @property
     ___ content_type
@@ -1507,11 +1507,11 @@ c_ BaseResponse(object):
         r_ _status_code
 
     ___ _set_status status):
-        __ isinstance(status, int):
+        __ isinstance(status, in.):
             code, status = status, _HTTP_STATUS_LINES.get(status)
         elif ' ' __ status:
             status = status.strip()
-            code   = int(status.split()[0])
+            code   = in.(status.split()[0])
         else:
             raise ValueError('String status line without a reason phrase.')
         __ n.. 100 <= code <= 999: raise ValueError('Status code out of range.')
@@ -1580,7 +1580,7 @@ c_ BaseResponse(object):
         r_ out
 
     content_type = HeaderProperty('Content-Type')
-    content_length = HeaderProperty('Content-Length', reader=int)
+    content_length = HeaderProperty('Content-Length', reader=in.)
     expires = HeaderProperty('Expires',
         reader=lambda x: datetime.utcfromtimestamp(parse_date(x)),
         writer=lambda x: http_date(x))
@@ -1643,7 +1643,7 @@ c_ BaseResponse(object):
             __ key == 'expires':
                 __ isinstance(value, (datedate, datetime)):
                     value = value.timetuple()
-                elif isinstance(value, (int, float)):
+                elif isinstance(value, (in., float)):
                     value = t__.gmtime(value)
                 value = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", value)
             _cookies[name][key.replace('_', '-')] = value
@@ -2361,7 +2361,7 @@ c_ FileUpload(object):
         headers = HeaderDict(headers) __ headers else HeaderDict()
 
     content_type = HeaderProperty('Content-Type')
-    content_length = HeaderProperty('Content-Length', reader=int, default=-1)
+    content_length = HeaderProperty('Content-Length', reader=in., default=-1)
 
     ___ get_header name, default=N..):
         """ Return the value of a header within the mulripart part. """
@@ -2502,7 +2502,7 @@ ___ static_file(filename, root, mimetype='auto', download=False, charset='UTF-8'
     ims = request.environ.get('HTTP_IF_MODIFIED_SINCE')
     __ ims:
         ims = parse_date(ims.split(";")[0].strip())
-    __ ims __ n.. N.. a.. ims >= int(stats.st_mtime):
+    __ ims __ n.. N.. a.. ims >= in.(stats.st_mtime):
         headers['Date'] = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", t__.gmtime())
         r_ HTTPResponse(status=304, **headers)
 
@@ -2541,7 +2541,7 @@ ___ d..(mode=True):
 ___ http_date(value):
     __ isinstance(value, (datedate, datetime)):
         value = value.utctimetuple()
-    elif isinstance(value, (int, float)):
+    elif isinstance(value, (in., float)):
         value = t__.gmtime(value)
     __ n.. isinstance(value, basestring):
         value = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", value)
@@ -2573,11 +2573,11 @@ ___ parse_range_header(header, maxlen=0):
     ___ start, end __ ranges:
         ___
             __ n.. start:  # bytes=-100     last 100 bytes
-                start, end = max(0, maxlen-int(end)), maxlen
+                start, end = max(0, maxlen-in.(end)), maxlen
             elif n.. end:  # bytes=100-     all but the first 99 bytes
-                start, end = int(start), maxlen
+                start, end = in.(start), maxlen
             else:          # bytes=100-200  bytes 100-200 (inclusive)
-                start, end = int(start), min(int(end)+1, maxlen)
+                start, end = in.(start), min(in.(end)+1, maxlen)
             __ 0 <= start < end <= maxlen:
                 yield start, end
         except ValueError:
@@ -2738,7 +2738,7 @@ c_ ServerAdapter(object):
     ___ -  host='127.0.0.1', port=8080, **options):
         options = options
         host = host
-        port = int(port)
+        port = in.(port)
 
     ___ run handler): # pragma: no cover
         pass
@@ -2940,7 +2940,7 @@ c_ GunicornServer(ServerAdapter):
     ___ run handler):
         from gunicorn.app.base ______ Application
 
-        config = {'bind': "@:%d" @ (host, int(port))}
+        config = {'bind': "@:%d" @ (host, in.(port))}
         config.update(options)
 
         c_ GunicornApplication(Application):
@@ -3762,7 +3762,7 @@ __ _____ __ ______
         host, port = host.rsplit(':', 1)
     host = host.strip('[]')
 
-    run(args[0], host=host, port=int(port), server=opt.server,
+    run(args[0], host=host, port=in.(port), server=opt.server,
         reloader=opt.reload, plugins=opt.plugin, d..=opt.d..)
 
 

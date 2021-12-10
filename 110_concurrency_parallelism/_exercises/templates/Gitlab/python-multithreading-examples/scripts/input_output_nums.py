@@ -12,7 +12,7 @@ ______ t__
 
 ___ MyThread(num1, num2):
 	print "Given Numbers: @, @" @(num1, num2)
-	sum1= int(num1) + int(num2)
+	sum1= in.(num1) + in.(num2)
 	print "Result: %d" @sum1
 	r_
 

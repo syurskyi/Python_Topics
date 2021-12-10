@@ -19,11 +19,11 @@ ______ t__
     print('THIS WILL NEVER BE OUTPUT')
 
 # tag::SPINNER_ASYNC_EXPERIMENT[]
-@ ___ slow()  int:
+@ ___ slow()  in.:
     t__.s..(3)  # <4>
     r_ 42
 
-@ ___ supervisor()  int:
+@ ___ supervisor()  in.:
     spinner = _.create_task(spin('thinking!'))  # <1>
     print(f'spinner object: {spinner}')  # <2>
     result = await slow()  # <3>

@@ -39,10 +39,10 @@ ______ functools
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 
-@ ___ check(n: int)  int:
+@ ___ check(n: in.)  in.:
     r_ await is_prime(n)
 
-@ ___ supervisor(n: int)  int:
+@ ___ supervisor(n: in.)  in.:
     spinner = _.create_task(spin('thinking!'))
     print('spinner object:', spinner)
     result = await check(n)

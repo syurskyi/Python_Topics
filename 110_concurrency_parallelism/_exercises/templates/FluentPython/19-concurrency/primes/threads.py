@@ -15,14 +15,14 @@ from _ ______ ?
 from primes ______ is_prime, NUMBERS
 
 c_ PrimeResult(NamedTuple):
-    n: int
+    n: in.
     prime: bool
     elapsed: float
 
-JobQueue = SimpleQueue[int]  # <4>
+JobQueue = SimpleQueue[in.]  # <4>
 ResultQueue = SimpleQueue[PrimeResult]  # <5>
 
-___ check(n: int)  PrimeResult:  # <6>
+___ check(n: in.)  PrimeResult:  # <6>
     t0 = perf_counter()
     res = is_prime(n)
     r_ PrimeResult(n, res, perf_counter() - t0)
@@ -32,7 +32,7 @@ ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
         results.p..(check(n))  # <9>
     results.p..(PrimeResult(0, False, 0.0))
 
-___ start_jobs(workers: int, jobs: JobQueue, results: ResultQueue)  N..:
+___ start_jobs(workers: in., jobs: JobQueue, results: ResultQueue)  N..:
     ___ n __ NUMBERS:  # <3>
         jobs.p..(n)
     ___ _ __ r.. workers):
@@ -40,7 +40,7 @@ ___ start_jobs(workers: int, jobs: JobQueue, results: ResultQueue)  N..:
         proc.s..  # <5>
         jobs.p..(0)  # <6>
 
-___ report(workers: int, results: ResultQueue)  int:
+___ report(workers: in., results: ResultQueue)  in.:
     checked = 0
     workers_done = 0
     w___ workers_done < workers:
@@ -57,7 +57,7 @@ ___ main()  N..:
     __ l..(sys.argv) < 2:
         workers = os.cpu_count()
     else:
-        workers = int(sys.argv[1])
+        workers = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {workers} threads:')
     t0 = perf_counter()
