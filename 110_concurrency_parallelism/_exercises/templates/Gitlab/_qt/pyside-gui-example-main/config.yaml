@@ -1,0 +1,4 @@
+env:
+  testvar: ['THISAPPLICATION_TESTVAR', 'default from config.yaml']
+
+message: 'hello world'
