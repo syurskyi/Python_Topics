@@ -6,7 +6,7 @@ ______ t__
 ___ wait_for_event(e):
     logging.debug('wait_for_event starting')
     event_is_set = e.wait()
-    logging.debug('event set: %s',event_is_set)
+    logging.debug('event set: @',event_is_set)
 
 
 
@@ -16,7 +16,7 @@ ___ wait_for_event_timeout(e,t):
 
         logging.debug('wait_for_event_timeout starting')
         event_is_set = e.wait(t)
-        logging.debug('event set: %s',event_is_set)
+        logging.debug('event set: @',event_is_set)
 
         if event_is_set:
             logging.debug('processing event')

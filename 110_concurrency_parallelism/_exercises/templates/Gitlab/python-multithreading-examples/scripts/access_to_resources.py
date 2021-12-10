@@ -21,7 +21,7 @@ class Counter(object):
             self.lock.r..
 
 ___ worker(c):
-    ___ i __ range(2):
+    ___ i __ r.. 2):
         pause = random.random()
         logging.debug('Sleeping %0.02f', pause)
         t__.s..(pause)
@@ -29,7 +29,7 @@ ___ worker(c):
     logging.debug('Done')
 
 counter = Counter()
-___ i __ range(2):
+___ i __ r.. 2):
     t = _.? ?_worker,  ?_(counter,))
     t.s..
 

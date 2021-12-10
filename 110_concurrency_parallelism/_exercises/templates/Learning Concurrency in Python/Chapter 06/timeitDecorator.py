@@ -9,8 +9,8 @@
 #         value = func(*args, **kwargs)
 #         runtime = timeit.default_timer() - start_time
 #         print("Function {} took {} seconds to run".format(func.__name__, runtime))
-#         return value
-#     return function_timer
+#         r_ value
+#     r_ function_timer
 #
 # @timethis
 # ___ long_runner():

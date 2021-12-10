@@ -19,7 +19,7 @@ page_content = requests.get('http://books.toscrape.com').content
 logger.debug('Creating AllBooksPage from page content.')
 page = AllBooksPage(page_content)
 
-_books = []
+_books   # list
 
 start = t___.t___()
 logger.info(f'Going through {page.page_count} pages of books...')

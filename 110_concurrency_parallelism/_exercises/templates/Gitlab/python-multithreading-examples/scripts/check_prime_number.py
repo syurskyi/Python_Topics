@@ -8,12 +8,12 @@ class PrimeNumber(_.?):
   ___ run(self): 
     counter = 2 
     w___ counter*counter < self.Number: 
-      if self.Number % counter == 0: 
-        print "%d is no prime number, because %d = %d * %d" % ( self.Number, self.Number, counter, self.Number / counter) 
-                return 
+      if self.Number @ counter == 0:
+        print "%d is no prime number, because %d = %d * %d" @ ( self.Number, self.Number, counter, self.Number / counter)
+                r_ 
             counter += 1 
-        print "%d is a prime number" % self.Number
-threads = [] 
+        print "%d is a prime number" @ self.Number
+threads   # list
 w___ True: 
     input = long(raw_input("number: ")) 
     if input < 1: 

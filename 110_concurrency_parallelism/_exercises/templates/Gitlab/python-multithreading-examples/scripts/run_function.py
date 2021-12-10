@@ -15,9 +15,9 @@ logging.basicConfig(
 class MyThread(_.?):
     ___ run(self):
         logging.debug('This thread is running')
-        return
+        r_
 
-___ x __ range(5):
+___ x __ r.. 5):
 	z=MyThread()
 	z.s..
 	t__.s..(1)        

@@ -13,21 +13,21 @@ class Resources(QObject):
 
     @property
     ___ iconApp(self):
-        return self._lazyLoad(QIcon, 'app_icon.png')
+        r_ self._lazyLoad(QIcon, 'app_icon.png')
 
     ___ _lazyLoad(self, class_, filename):
         key = self.getKey(class_, filename)
         if key not __ self.loaded:
             self.loaded[key] = class_(self.getPath(filename))
-        return self.loaded[key]
+        r_ self.loaded[key]
 
     @classmethod
     ___ getPath(cls, filename):
         if hasattr(sys, 'frozen'):
-            return os.path.normpath(os.path.join(os.path.dirname(sys.executable), 'res', filename))
+            r_ os.path.normpath(os.path.join(os.path.dirname(sys.executable), 'res', filename))
         else:
-            return os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'res', filename))
+            r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'res', filename))
 
     @classmethod
     ___ getKey(cls, class_, filename):
-        return '%s$$%s' % (class_.__name__, os.path.normpath(filename))
+        r_ '%s$$@' @ (class_.__name__, os.path.normpath(filename))

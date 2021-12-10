@@ -12,8 +12,8 @@ ___ main
     win.setBackground('black')
     train_anim = TrainAnim(win, train_length)
 
-    trains = []
-    intersections = []
+    trains   # list
+    intersections   # list
     ___ i __ r...(4):
         trains.a..(Train(i, train_length, 0))
 

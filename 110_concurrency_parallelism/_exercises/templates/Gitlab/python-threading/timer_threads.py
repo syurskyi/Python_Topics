@@ -21,8 +21,8 @@ logging.debug('starting timers')
 t1.s..
 t2.s..
 
-logging.debug('waiting before canceling %s', t2.getName())
+logging.debug('waiting before canceling @', t2.getName())
 t__.s..(0.2)
-logging.debug('canceling %s', t2.getName())
+logging.debug('canceling @', t2.getName())
 t2.cancel()
 logging.debug('done')

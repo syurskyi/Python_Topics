@@ -21,14 +21,14 @@ ______ t__
 # tag::SPINNER_ASYNC_EXPERIMENT[]
 @ ___ slow()  int:
     t__.s..(3)  # <4>
-    return 42
+    r_ 42
 
 @ ___ supervisor()  int:
     spinner = _.create_task(spin('thinking!'))  # <1>
     print(f'spinner object: {spinner}')  # <2>
     result = await slow()  # <3>
     spinner.cancel()  # <5>
-    return result
+    r_ result
 # end::SPINNER_ASYNC_EXPERIMENT[]
 
 ___ main()  N..:

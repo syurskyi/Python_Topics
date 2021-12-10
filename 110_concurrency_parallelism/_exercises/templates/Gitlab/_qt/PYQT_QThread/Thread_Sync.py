@@ -1,7 +1,7 @@
 ___ square_numbers(nums):
-    result = []
+    result   # list
     ___ i __ nums:
-        result.append(i*i)
+        result.a.. (i*i)
 
 my_nums = square_numbers(1,2,3,4,5)
 

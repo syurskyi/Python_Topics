@@ -27,7 +27,7 @@ class Counter:
 
 ___ worker(c):
 
-    ___ i __ range(2):
+    ___ i __ r.. 2):
 
         pause = random.random()
         logging.debug('sleeping %0.002f',pause)
@@ -44,7 +44,7 @@ logging.basicConfig(
 
 
 counter = Counter()
-___ i __ range(2):
+___ i __ r.. 2):
     t = _.? ?_worker,  ?_(counter,))
     t.s..
 

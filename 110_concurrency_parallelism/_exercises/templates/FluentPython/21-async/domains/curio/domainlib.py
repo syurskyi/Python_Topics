@@ -14,8 +14,8 @@ class Result(NamedTuple):
     try:
         await socket.getaddrinfo(domain, N..)
     except socket.gaierror:
-        return Result(domain, False)
-    return Result(domain, True)
+        r_ Result(domain, False)
+    r_ Result(domain, True)
 
 
 @ ___ multi_probe(domains: Iterable[s..])  AsyncIterator[Result]:

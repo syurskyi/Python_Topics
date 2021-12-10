@@ -73,9 +73,9 @@ ___ main
   linksToCrawl = queue.Q..()
   urlLock = _.L...()
   linksToCrawl.p..(baseUrl)
-  haveVisited = []
-  crawlers = []
-  errorLinks = []
+  haveVisited   # list
+  crawlers   # list
+  errorLinks   # list
 
   ___ i __ r...(i..(numberOfThreads)):
     crawler = Crawler(baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock)

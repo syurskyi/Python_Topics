@@ -21,7 +21,7 @@ ___ printStatus(statusCode):
 ___ main
   with ThreadPoolExecutor(max_workers=3) as executor:
     
-    tasks = []
+    tasks   # list
     ___ url __ URLS:
       task = executor.submit(checkStatus, (url))
       tasks.a..(task)

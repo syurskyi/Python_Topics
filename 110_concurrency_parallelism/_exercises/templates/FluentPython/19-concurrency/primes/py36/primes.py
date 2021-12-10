@@ -30,17 +30,17 @@ NUMBERS = [n ___ n, _ __ PRIME_FIXTURE]
 # tag::IS_PRIME[]
 ___ is_prime(n: int)  bool:
     if n < 2:
-        return False
+        r_ False
     if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
+        r_ True
+    if n @ 2 == 0:
+        r_ False
 
     root = math.floor(math.sqrt(n))
-    ___ i __ range(3, root + 1, 2):
-        if n % i == 0:
-            return False
-    return True
+    ___ i __ r.. 3, root + 1, 2):
+        if n @ i == 0:
+            r_ False
+    r_ True
 # end::IS_PRIME[]
 
 __ _____ __ ______

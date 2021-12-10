@@ -25,7 +25,7 @@ ResultQueue = queues.SimpleQueue[PrimeResult]  # <5>
 ___ check(n: int)  PrimeResult:  # <6>
     t0 = perf_counter()
     res = is_prime(n)
-    return PrimeResult(n, res, perf_counter() - t0)
+    r_ PrimeResult(n, res, perf_counter() - t0)
 
 ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
     w___ n := jobs.get():  # <8>
@@ -37,7 +37,7 @@ ___ start_jobs(
 )  N..:
     ___ n __ NUMBERS:
         jobs.put(n)  # <12>
-    ___ _ __ range(procs):
+    ___ _ __ r.. procs):
         proc = Process ?_worker,  ?_(jobs, results))  # <13>
         proc.s..  # <14>
         jobs.put(0)  # <15>
@@ -70,7 +70,7 @@ ___ report(procs: int, results: ResultQueue)  int: # <6>
             checked += 1  # <10>
             label = 'P' if prime else ' '
             print(f'{n:16}  {label} {elapsed:9.6f}s')
-    return checked
+    r_ checked
 
 __ _____ __ ______
     main()

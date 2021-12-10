@@ -11,17 +11,17 @@ ______ t__
 
 
 ___ MyThread(num1, num2):
-	print "Given Numbers: %s, %s" %(num1, num2)
+	print "Given Numbers: @, @" @(num1, num2)
 	sum1= int(num1) + int(num2)
-	print "Result: %d" %sum1
-	return
+	print "Result: %d" @sum1
+	r_
 
 
 ___ Main():
-	threads = []
-	___ i __ range(5):
+	threads   # list
+	___ i __ r.. 5):
 		t = _.? ?_MyThread,  ?_(10,20))
-		threads.append(t)
+		threads.a.. (t)
 		t__.s..(0.5)
 		t.s..
 

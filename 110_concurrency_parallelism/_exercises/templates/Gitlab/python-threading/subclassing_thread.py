@@ -12,7 +12,7 @@ class MyThreadWithArgs(_.?):
         self.kwargs = kwargs
 
     ___ run(self):
-        logging.debug('running with %s and %s',
+        logging.debug('running with @ and @',
                       self.args, self.kwargs)
 
 
@@ -21,6 +21,6 @@ logging.basicConfig(
     format='(%(threadName)-10s) %(message)s',
 )
 
-___ i __ range(5):
+___ i __ r.. 5):
     t = MyThreadWithArgs( ?_(i,), kwargs={'a': 'A', 'b': 'B'})
     t.s..

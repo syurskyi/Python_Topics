@@ -9,7 +9,7 @@ ______ _
 
 ___ Main():
 	___ thread __ _.enumerate():
-	    print("Thread name is %s." % thread.getName())
+	    print("Thread name is @." @ thread.getName())
 	    
 
 __ _____ __ ______

@@ -5,12 +5,12 @@ ______ _
 
 #create function ___ thread
 ___ Tfunc(i):
- print("Thread no.:%d" % (i+1))
+ print("Thread no.:%d" @ (i+1))
  t__.s..(5)
- print("%d finished sleeping from thread\n" % i)
+ print("%d finished sleeping from thread\n" @ i)
 
 #start the thread ___ function
-___ i __ range(3):
+___ i __ r.. 3):
  t1 = _.? ?_Tfunc,  ?_(i,))
  t1.s..
  

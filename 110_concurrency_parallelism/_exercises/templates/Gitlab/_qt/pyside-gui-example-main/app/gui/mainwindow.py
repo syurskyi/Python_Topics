@@ -12,7 +12,7 @@ class MainWindow(QMainWindow):
 
         self.resize(1140, 800)
         self.move(100, 80)
-        self.setWindowTitle("ThisApplication v%s" % VERSION)
+        self.setWindowTitle("ThisApplication v@" @ VERSION)
         self.setDockOptions(QMainWindow.AnimatedDocks | QMainWindow.AllowNestedDocks | QMainWindow.AllowTabbedDocks | QMainWindow.GroupedDragging)
 
         self.w = MainWidget()

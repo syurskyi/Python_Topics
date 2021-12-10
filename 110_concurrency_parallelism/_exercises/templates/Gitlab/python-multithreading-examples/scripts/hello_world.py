@@ -12,7 +12,7 @@ ______ _
 ___ MyFunction():
 	"""This is a user defined function"""
 	print "Hello World"
-	return
+	r_
 
 
 ___ Main():

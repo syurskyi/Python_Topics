@@ -1,15 +1,15 @@
-______ _
-
-___ worker(num):
-	print "Worker: %s" % num
-	return
-
-
-threads = []
-___ i __ range(5):
-	t = _.? ?_worker,  ?_(i,))
-	threads.append(t)
-	t.s..
-
-#__ _____ __ ______
-#	worker()
+# ______ _
+#
+# ___ worker num
+# 	print "Worker: @" @ ?
+# 	r_
+#
+#
+# threads   # list
+# ___ i __ r.. 5
+# 	t = _.? ?_?  ?_?
+# 	?.a..  ?
+# 	?.s..
+#
+# #__ _____ __ ______
+# #	worker()

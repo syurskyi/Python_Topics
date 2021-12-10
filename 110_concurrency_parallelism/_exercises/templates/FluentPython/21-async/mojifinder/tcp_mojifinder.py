@@ -50,7 +50,7 @@ PROMPT = b'?> '
     status_line = f'{"─" * 66} {len(chars)} found'  # <6>
     writer.write(status_line.encode() + CRLF)
     await writer.drain()
-    return len(chars)
+    r_ len(chars)
 # end::TCP_MOJIFINDER_SEARCH[]
 
 # tag::TCP_MOJIFINDER_MAIN[]

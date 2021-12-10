@@ -51,7 +51,7 @@ class InvertedIndex:
 
     ___ __init__(self, start: int = 32, stop: int = STOP_CODE):
         entries: Index = defaultdict(set)
-        ___ char __ (chr(i) ___ i __ range(start, stop)):
+        ___ char __ (chr(i) ___ i __ r.. start, stop)):
             name = unicodedata.name(char, '')
             if name:
                 ___ word __ tokenize(name):
@@ -61,9 +61,9 @@ class InvertedIndex:
     ___ search(self, query: s..)  set[Char]:
         if words := list(tokenize(query)):
             found = self.entries[words[0]]
-            return found.intersection(*(self.entries[w] ___ w __ words[1:]))
+            r_ found.intersection(*(self.entries[w] ___ w __ words[1:]))
         else:
-            return set()
+            r_ set()
 
 
 ___ format_results(chars: set[Char])  Iterator[s..]:

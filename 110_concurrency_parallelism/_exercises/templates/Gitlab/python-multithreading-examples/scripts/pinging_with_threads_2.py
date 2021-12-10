@@ -16,20 +16,20 @@ class ip_check(_.?):
            self.__successful_pings = int(n_received[0])
    ___ status(self):
       if self.__successful_pings == 0:
-         return "no response"
+         r_ "no response"
       elif self.__successful_pings == 1:
-         return "alive, but 50 % package loss"
+         r_ "alive, but 50 % package loss"
       elif self.__successful_pings == 2:
-         return "alive"
+         r_ "alive"
       else:
-         return "shouldn't occur"
+         r_ "shouldn't occur"
 received_packages = re.compile(r"(\d) received")
 
-check_results = []
-___ suffix __ range(20,70):
+check_results   # list
+___ suffix __ r.. 20,70):
    ip = "192.168.178."+s..(suffix)
    current = ip_check(ip)
-   check_results.append(current)
+   check_results.a.. (current)
    current.s..
 
 ___ el __ check_results:

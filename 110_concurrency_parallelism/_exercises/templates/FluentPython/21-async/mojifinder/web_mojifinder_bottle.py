@@ -11,18 +11,18 @@ index = {}
 
 @route('/')
 ___ form():
-    return static_file('form.html', root='static/')
+    r_ static_file('form.html', root='static/')
 
 
 @route('/search')
 ___ search():
     query = request.query['q']
     chars = index.search(query)
-    results = []
+    results   # list
     ___ char __ chars:
         name = unicodedata.name(char)
-        results.append({'char': char, 'name': name})
-    return json.dumps(results).encode('UTF-8')
+        results.a.. ({'char': char, 'name': name})
+    r_ json.dumps(results).encode('UTF-8')
 
 
 ___ main(port):

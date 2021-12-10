@@ -22,7 +22,7 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
 
 ___ slow()  int:
     t__.s..(3)
-    return 42
+    r_ 42
 
 # tag::SPINNER_PROC_SUPER[]
 ___ supervisor()  int:
@@ -34,7 +34,7 @@ ___ supervisor()  int:
     result = slow()
     done.set()
     spinner.join()
-    return result
+    r_ result
 # end::SPINNER_PROC_SUPER[]
 
 ___ main()  N..:

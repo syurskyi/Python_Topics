@@ -18,7 +18,7 @@ logging.basicConfig(
 
 ___ delayed():
     logging.debug('Thread program still running')
-    return
+    r_
 
 ___ Main():
 	t1 = _.Timer(3, delayed)
@@ -30,9 +30,9 @@ ___ Main():
 	t1.s..
 	t2.s..
 
-	logging.debug('We are waiting before canceling %s', t2.getName())
+	logging.debug('We are waiting before canceling @', t2.getName())
 	t__.s..(2)
-	logging.debug('Now canceling %s', t2.getName())
+	logging.debug('Now canceling @', t2.getName())
 	t2.cancel()
 
 

@@ -8,9 +8,9 @@ __config__ = N..
 
 ___ get_config_yaml_path():
     if hasattr(sys, 'frozen'):
-        return os.path.join(os.path.dirname(sys.executable), 'config.yaml')
+        r_ os.path.join(os.path.dirname(sys.executable), 'config.yaml')
     else:
-        return os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'config.yaml'))
+        r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'config.yaml'))
 
 
 ___ get_config():
@@ -42,8 +42,8 @@ ___ get_config():
                 if k != 'env':
                     __config__[k] = v
 
-    return __config__
+    r_ __config__
 
 
 ___ get_config_var(name, default=N..):
-    return get_config().get(name, default)
+    r_ get_config().get(name, default)

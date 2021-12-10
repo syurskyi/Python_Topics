@@ -21,7 +21,7 @@ ______ i__
 
 @ ___ slow()  int:
     await _.s..(3)  # <4>
-    return 42
+    r_ 42
 # end::SPINNER_ASYNC_TOP[]
 
 # tag::SPINNER_ASYNC_START[]
@@ -34,7 +34,7 @@ ___ main()  N..:  # <1>
     print(f'spinner object: {spinner}')  # <5>
     result = await slow()  # <6>
     spinner.cancel()  # <7>
-    return result
+    r_ result
 
 __ _____ __ ______
     main()

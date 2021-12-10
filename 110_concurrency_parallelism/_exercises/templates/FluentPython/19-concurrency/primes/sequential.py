@@ -17,7 +17,7 @@ class Result(NamedTuple):  # <1>
 ___ check(n: int)  Result:  # <2>
     t0 = perf_counter()
     prime = is_prime(n)
-    return Result(prime, perf_counter() - t0)
+    r_ Result(prime, perf_counter() - t0)
 
 ___ main()  N..:
     print(f'Checking {len(NUMBERS)} numbers sequentially:')

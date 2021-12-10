@@ -7,7 +7,7 @@
 #
 #     ___ __enter__(self):
 #         self.start = default_timer()
-#         return self
+#         r_ self
 #
 #     ___ __exit__(self, *args):
 #         end = default_timer()

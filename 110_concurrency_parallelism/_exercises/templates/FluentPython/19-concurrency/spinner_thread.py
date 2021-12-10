@@ -20,7 +20,7 @@ ___ spin(msg: s.., done: Event)  N..:  # <1>
 
 ___ slow()  int:
     t__.s..(3)  # <7>
-    return 42
+    r_ 42
 # end::SPINNER_THREAD_TOP[]
 
 # tag::SPINNER_THREAD_REST[]
@@ -32,7 +32,7 @@ ___ supervisor()  int:  # <1>
     result = slow()  # <6>
     done.set()  # <7>
     spinner.join()  # <8>
-    return result
+    r_ result
 
 ___ main()  N..:
     result = supervisor()  # <9>

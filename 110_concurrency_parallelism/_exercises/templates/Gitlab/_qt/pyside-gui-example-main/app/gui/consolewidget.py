@@ -41,7 +41,7 @@ class ConsoleWidget(QTextEdit):
 
     @Slot(s..)
     ___ write(self, line):
-        self.append(line)
+        self.a.. (line)
         self.scrollToEnd()
 
     ___ scrollToEnd(self):

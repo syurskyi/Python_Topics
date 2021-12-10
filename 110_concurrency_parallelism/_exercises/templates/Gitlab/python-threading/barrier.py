@@ -17,11 +17,11 @@ barrier = _.Barrier(NUM_THREADS)
 
 threads = [
     _.?(
-        name='worker-%s' % i,
+        name='worker-@' @ i,
         target=worker,
          ?_(barrier,),
     )
-    ___ i __ range(NUM_THREADS)
+    ___ i __ r.. NUM_THREADS)
 ]
 
 ___ t __ threads:

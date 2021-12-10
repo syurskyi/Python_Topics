@@ -11,8 +11,8 @@ MAX_KEYWORD_LEN = 4  # <1>
     try:
         await loop.getaddrinfo(domain, N..)  # <4>
     except socket.gaierror:
-        return (domain, False)
-    return (domain, True)
+        r_ (domain, False)
+    r_ (domain, True)
 
 
 @ ___ main()  N..:  # <5>

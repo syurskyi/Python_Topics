@@ -11,16 +11,16 @@ from _ ______ ?
 
 
 ___ ThreadFunction(i):
-    print("Thread %i going to sleep for 5 seconds." % i)
+    print("Thread %i going to sleep for 5 seconds." @ i)
     t__.s..(5)
-    print("Thread %i is awake now." % i)
+    print("Thread %i is awake now." @ i)
 
 
 ___ Main():
-  ___ i __ range(10):
+  ___ i __ r.. 10):
       myThread = ? ?_ThreadFunction,  ?_(i, ))
       myThread.s..
-      print("Current Thread count: %i." % _.active_count())
+      print("Current Thread count: %i." @ _.active_count())
     
     
 if __name__ == "__main__":    

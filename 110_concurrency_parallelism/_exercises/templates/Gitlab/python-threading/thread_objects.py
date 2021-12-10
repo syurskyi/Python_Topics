@@ -4,9 +4,9 @@ ______ _
 ___ worker(num):
     print "worker: {}".format(num)
 
-threads = []
+threads   # list
 
-___ i __ range(5):
+___ i __ r.. 5):
     t = _.? ?_worker,  ?_(i,))
-    threads.append(t)
+    threads.a.. (t)
     t.s..

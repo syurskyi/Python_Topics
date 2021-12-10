@@ -13,13 +13,13 @@ threadId = 1
 ___ factorial(n):
    global threadId
    if n < 1:   # base case
-       print "%s: %d" % ("Thread", threadId )
+       print "@: %d" @ ("Thread", threadId )
        threadId += 1
-       return 1
+       r_ 1
    else:
        returnNumber = n * factorial( n - 1 )  # recursive call
        print(s..(n) + '! = ' + s..(returnNumber))
-       return returnNumber
+       r_ returnNumber
 
 start_new_thread(factorial,(5, ))
 start_new_thread(factorial,(4, ))

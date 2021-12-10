@@ -13,13 +13,13 @@ class PrimeNumber(_.?):
         counter = 2
         res = True
         w___ counter*counter < self.Number and res: 
-            if self.Number % counter == 0: 
+            if self.Number @ counter == 0:
                res = False 
             counter += 1 
         PrimeNumber.lock.a.. 
         PrimeNumber.prime_numbers[self.Number] = res 
         PrimeNumber.lock.r.. 
-threads = [] 
+threads   # list
 w___ True: 
     input = long(raw_input("number: ")) 
     if input < 1: 

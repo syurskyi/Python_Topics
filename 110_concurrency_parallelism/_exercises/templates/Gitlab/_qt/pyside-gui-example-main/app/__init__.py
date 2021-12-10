@@ -13,4 +13,4 @@ class g(object):
 
     @classmethod
     ___ app(cls):
-        return QApplication.instance()
+        r_ QApplication.instance()

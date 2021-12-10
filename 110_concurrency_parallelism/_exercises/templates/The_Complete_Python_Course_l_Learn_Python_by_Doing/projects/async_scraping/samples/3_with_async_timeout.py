@@ -12,7 +12,7 @@ ______ t___
 
 
 @ ___ get_multiple_pages(loop, *urls):
-    tasks = []
+    tasks   # list
     @ with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
             tasks.a..(fetch_page(session, url))

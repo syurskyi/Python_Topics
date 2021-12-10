@@ -20,14 +20,14 @@ ______ primes
     print('THIS WILL NEVER BE OUTPUT')
 
 @ ___ check(n: int)  int:
-    return primes.is_prime(n)  # <4>
+    r_ primes.is_prime(n)  # <4>
 
 @ ___ supervisor(n: int)  int:
     spinner = _.create_task(spin('thinking!'))  # <1>
     print('spinner object:', spinner)  # <2>
     result = await check(n)  # <3>
     spinner.cancel()  # <5>
-    return result
+    r_ result
 # end::SPINNER_ASYNC_EXPERIMENT[]
 
 ___ main()  N..:

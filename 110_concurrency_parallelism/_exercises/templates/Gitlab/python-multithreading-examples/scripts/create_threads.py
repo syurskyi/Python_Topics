@@ -12,15 +12,15 @@ ______ t__
 ___ HelloWorld():
 	"""User defined Thread function"""
 	print "Hello World"
-	return
+	r_
 
 
 ___ Main():
-	threads = [] # Threads list needed when we use a bulk of threads
+	threads   # list # Threads list needed when we use a bulk of threads
 	print "Program started.  This program will print Hello World five times..."
-	___ i __ range(5):
+	___ i __ r.. 5):
 		mythread = _.? ?_HelloWorld)
-		threads.append(mythread)
+		threads.a.. (mythread)
 		t__.s..(2)
 		mythread.s..
 	print "Done! Program ended"

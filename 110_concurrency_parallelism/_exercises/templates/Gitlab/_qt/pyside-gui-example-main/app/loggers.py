@@ -22,7 +22,7 @@ class ColorizingStreamHandler(logging.StreamHandler):
     @property
     ___ is_tty(self):
         isatty = getattr(self.stream, 'isatty', N..)
-        return isatty and isatty()
+        r_ isatty and isatty()
 
     ___ format(self, record):
         message = logging.StreamHandler.format(self, record)
@@ -31,14 +31,14 @@ class ColorizingStreamHandler(logging.StreamHandler):
             parts = message.split('\n', 1)
             parts[0] = self.colorize(parts[0], record)
             message = '\n'.join(parts)
-        return message
+        r_ message
 
     ___ colorize(self, message, record):
         try:
-            return (self.color_map[record.levelno] + message +
+            r_ (self.color_map[record.levelno] + message +
                     colorama.Style.RESET_ALL)
         except KeyError:
-            return message
+            r_ message
 
 
 class ConsoleFormatter(logging.Formatter):
@@ -53,10 +53,10 @@ class ConsoleFormatter(logging.Formatter):
                 record.prefix = '|' + record.prefix
         else:
             if hasattr(record, 'pid'):
-                record.prefix = '|%d' % record.pid
+                record.prefix = '|%d' @ record.pid
             else:
                 record.prefix = ''
-        return super().format(record)
+        r_ super().format(record)
 
 
 class ConsoleLogger(logging.Logger):
@@ -78,7 +78,7 @@ class ConsoleLogger(logging.Logger):
         if not os.path.isdir(logDirpath):
             os.makedirs(logDirpath)
 
-        logFilename = 'ThisApplication_%s.txt' % datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')
+        logFilename = 'ThisApplication_@.txt' @ datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')
         logFilepath = os.path.join(logDirpath, logFilename)
         fileHandler = logging.FileHandler(logFilepath)
         fileFormatter = logging.Formatter('[%(asctime)s|%(levelname)-1.1s] %(message)s', datefmt='%H:%M:%S')
@@ -86,4 +86,4 @@ class ConsoleLogger(logging.Logger):
         log.addHandler(fileHandler)
 
         log.setLevel(logging.DEBUG)
-        return log
+        r_ log

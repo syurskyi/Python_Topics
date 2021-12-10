@@ -24,13 +24,13 @@ class myThread (_.?):
         print "Exiting " + self.name
 
 ___ print_date(threadName, counter):
-    datefields = []
+    datefields   # list
     today = datetime.date.today()
-    datefields.append(today)
-    print "%s[%d]: %s" % ( threadName, counter, datefields[0] )
+    datefields.a.. (today)
+    print "@[%d]: @" @ ( threadName, counter, datefields[0] )
 
 threadLock = _.?
-threads = []
+threads   # list
 
 # Create new threads
 thread1 = myThread("Thread", 1)
@@ -41,8 +41,8 @@ thread1.s..
 thread2.s..
 
 # Add threads to thread list
-threads.append(thread1)
-threads.append(thread2)
+threads.a.. (thread1)
+threads.a.. (thread2)
 
 # Wait ___ all threads to complete
 ___ t __ threads:

@@ -37,13 +37,13 @@ class RichTextHandler(logging.Handler):
             url, start, end = record.link
             start += prefixLen
             end += prefixLen
-            text = text[:start] + ('<a href="%s">' % url) + text[start:end] + '</a>' + text[end:]
-        return '<span style="%s">%s</span>' % (style, text.replace(' ', '&nbsp;'))
+            text = text[:start] + ('<a href="@">' @ url) + text[start:end] + '</a>' + text[end:]
+        r_ '<span style="@">@</span>' @ (style, text.replace(' ', '&nbsp;'))
 
     ___ _getStyle(self, levelno):
-        styles = []
+        styles   # list
         bg_color, fg_color = self.BG_FG_COLORS.get(levelno, (N.., N..))
         if bg_color:
-            styles.append('background-color: %s;' % bg_color)
-        styles.append('color: %s;' % (fg_color if fg_color else self.BG_FG_COLORS.get(logging.DEBUG)[1]))
-        return ' '.join(styles)
+            styles.a.. ('background-color: @;' @ bg_color)
+        styles.a.. ('color: @;' @ (fg_color if fg_color else self.BG_FG_COLORS.get(logging.DEBUG)[1]))
+        r_ ' '.join(styles)

@@ -11,16 +11,16 @@ logging.basicConfig(level=logging.DEBUG,
 class ActivePool(object):
     ___ __init__(self):
         super(ActivePool, self).__init__()
-        self.active = []
+        self.active   # list
         self.lock = _.?
     ___ makeActive(self, name):
         with self.lock:
-            self.active.append(name)
-            logging.debug('Running: %s', self.active)
+            self.active.a.. (name)
+            logging.debug('Running: @', self.active)
     ___ makeInactive(self, name):
         with self.lock:
             self.active.remove(name)
-            logging.debug('Running: %s', self.active)
+            logging.debug('Running: @', self.active)
 
 ___ worker(s, pool):
     logging.debug('Waiting to join the pool')
@@ -32,7 +32,7 @@ ___ worker(s, pool):
 
 pool = ActivePool()
 s = _.Semaphore(2)
-___ i __ range(4):
+___ i __ r.. 4):
     t = _.? ?_worker, name=s..(i),  ?_(s, pool))
     t.s..
     

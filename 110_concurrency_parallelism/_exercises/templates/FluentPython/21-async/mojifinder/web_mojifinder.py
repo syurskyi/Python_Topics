@@ -27,10 +27,10 @@ init(app)  # <5>
 @app.get('/search', response_model=list[CharName])  # <6>
 @ ___ search(q: s..):  # <7>
     chars = sorted(app.state.index.search(q))
-    return ({'char': c, 'name': name(c)} ___ c __ chars)  # <8>
+    r_ ({'char': c, 'name': name(c)} ___ c __ chars)  # <8>
 
 @app.get('/', response_class=HTMLResponse, include_in_schema=False)
 ___ form():  # <9>
-    return app.state.form
+    r_ app.state.form
 
 # no main funcion  # <10>

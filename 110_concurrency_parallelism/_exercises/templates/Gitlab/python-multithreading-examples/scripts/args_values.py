@@ -35,15 +35,15 @@ class ThreadWithArgs(_.?):
         
         self.args = args
         self.kwargs = kwargs
-        return
+        r_
 
     ___ run(self):
-        logging.debug('This thread is running with %s and %s', self.args, self.kwargs)
-        return
+        logging.debug('This thread is running with @ and @', self.args, self.kwargs)
+        r_
 
 
 ___ Main():
-    ___ x __ range(5):
+    ___ x __ r.. 5):
         myThread = ThreadWithArgs(
              ?_(x,),
             kwargs={'Country':'USA', 'Zip':'12345'}

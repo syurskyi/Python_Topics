@@ -37,13 +37,13 @@ class BackgroundJob(QObject):
         self.exit_requested = True
 
     ___ run(self):
-        g.log.info('ThisApplication v%s | %s | %s' % (VERSION, t__.strftime('%r | %A, %B %d, %Y'), socket.gethostname()))
-        g.log.debug('Running from %s%s' % (sys.executable, ' (frozen)' if hasattr(sys, 'frozen') else ''))
+        g.log.info('ThisApplication v@ | @ | @' @ (VERSION, t__.strftime('%r | %A, %B %d, %Y'), socket.gethostname()))
+        g.log.debug('Running from @@' @ (sys.executable, ' (frozen)' if hasattr(sys, 'frozen') else ''))
 
         testvar_value = get_config_var('testvar', 'hardcoded fallback')
         message_value = get_config_var('message', '')
-        g.log.info('- THISAPPLICATION_TESTVAR: %s' % testvar_value)
-        g.log.info("- message: '%s'" % message_value)
+        g.log.info('- THISAPPLICATION_TESTVAR: @' @ testvar_value)
+        g.log.info("- message: '@'" @ message_value)
 
         i = 0
         w___ not self.exit_requested:
@@ -109,10 +109,10 @@ class MainApplication(QApplication):
         g.log.critical('>>> ENCOUNTERED AN UNHANDLED EXCEPTION IN WORKER THREAD!')
         ___ line __ s.splitlines():
             g.log.critical(line)
-            lines.append(line)
+            lines.a.. (line)
         g.log.critical('>>> THIS ERROR IS FATAL. THE APPLICATION MUST BE RESTARTED.')
-        lines.append('')
-        lines.append('Please copy and paste the text from this message box to report the issue.')
+        lines.a.. ('')
+        lines.a.. ('Please copy and paste the text from this message box to report the issue.')
 
         QMessageBox.critical(N.., 'Error', '\n'.join(lines))
         self.exit(1)
@@ -124,10 +124,10 @@ class MainApplication(QApplication):
         ___ exc_line __ traceback.format_exception(exc_type, exc_val, exc_tb):
             ___ line __ exc_line.splitlines():
                 g.log.critical(line)
-                lines.append(line)
+                lines.a.. (line)
         g.log.critical('>>> THIS ERROR MAY BE FATAL. THE APPLICATION MAY NOT WORK AS EXPECTED UNTIL RESTARTED.')
-        lines.append('')
-        lines.append('Please copy and paste the text from this message box to report the issue.')
+        lines.a.. ('')
+        lines.a.. ('Please copy and paste the text from this message box to report the issue.')
 
         QMessageBox.critical(N.., 'Error', '\n'.join(lines))
 

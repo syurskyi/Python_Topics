@@ -62,7 +62,7 @@ class Worker(QObject):
 
 ___ counter(start, stop):
     "Simulates long process that periodically yields status"
-    ___ number __ range(start, stop):
+    ___ number __ r.. start, stop):
         yield {"progress" : number, "string" : s..(number)}
         if number == 100:
             break

@@ -41,7 +41,7 @@ page_content = requests.get('http://books.toscrape.com').content
 logger.debug('Creating AllBooksPage from page content.')
 page = AllBooksPage(page_content)
 
-_books = []
+_books   # list
 
 
 @ ___ fetch_page(session, url):
@@ -53,7 +53,7 @@ _books = []
 
 
 @ ___ get_multiple_pages(loop, *urls):
-    tasks = []
+    tasks   # list
     @ with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
             tasks.a..(fetch_page(session, url))

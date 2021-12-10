@@ -9,9 +9,9 @@ ______ _
 
 ___ MyFunction(num1, num2):
 	"""This is user defined thread function"""
-	print "Given numbers= %s, %s" %(num1, num2)
-	print "Result = %d" %(int(num1)+int(num2))
-	return
+	print "Given numbers= @, @" @(num1, num2)
+	print "Result = %d" @(int(num1)+int(num2))
+	r_
 
 
 ___ Main():

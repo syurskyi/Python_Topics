@@ -14,14 +14,14 @@ ___ getzip(code):
         res = requests.get(url).json()['results']
         if len(res) < 1: # Re-try
             print "Retrying"
-            return getzip(code)
+            r_ getzip(code)
         iszip = 'postal_code' __ res[0]['types'] and "United States" __ s..(res[0]['address_components'])
     except Exception as e:
         print "In error"
         print e
         iszip = False
-    return (code, iszip)
-ziprange = range(94400, 94420)
+    r_ (code, iszip)
+ziprange = r.. 94400, 94420)
 print "Range is: " + s..(len(ziprange))
  
 print "Using one thread"

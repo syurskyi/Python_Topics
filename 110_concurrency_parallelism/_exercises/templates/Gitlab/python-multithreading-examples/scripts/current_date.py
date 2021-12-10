@@ -23,10 +23,10 @@ class myThread (_.?):
         print "Exiting " + self.name
 
 ___ print_date(threadName, counter):
-    datefields = []
+    datefields   # list
     today = datetime.date.today()
-    datefields.append(today)
-    print "%s[%d]: %s" % ( threadName, counter, datefields[0] )
+    datefields.a.. (today)
+    print "@[%d]: @" @ ( threadName, counter, datefields[0] )
 
 
 # Create new threads

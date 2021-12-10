@@ -20,7 +20,7 @@ ___ lock_holder(lock):
             logging.debug('Not holding')
             lock.r..
         t__.s..(0.5)
-    return
+    r_
                     
 ___ worker(lock):
     logging.debug('Starting')

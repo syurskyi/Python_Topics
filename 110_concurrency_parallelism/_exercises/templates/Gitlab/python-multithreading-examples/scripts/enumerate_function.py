@@ -18,12 +18,12 @@ ___ student():
     """thread student function"""
     t = _.currentThread()
     pause = random.randint(1,5)
-    logging.debug('sleeping %s', pause)
+    logging.debug('sleeping @', pause)
     t__.s..(pause)
     logging.debug('ending')
-    return
+    r_
 
-___ i __ range(3):
+___ i __ r.. 3):
     t = _.? ?_student)
     t.setDaemon(True)
     t.s..
@@ -32,6 +32,6 @@ main_thread = _.currentThread()
 ___ t __ _.enumerate():
     if t is main_thread:
         continue
-    logging.debug('joining %s', t.getName())
+    logging.debug('joining @', t.getName())
     t.join()
     

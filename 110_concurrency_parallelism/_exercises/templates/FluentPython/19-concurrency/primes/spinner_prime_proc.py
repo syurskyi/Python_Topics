@@ -20,7 +20,7 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <1>
     print(f'\r{blanks}\r', end='')  # <6>
 
 ___ check(n: int)  int:
-    return is_prime(n)
+    r_ is_prime(n)
 
 ___ supervisor(n: int)  int:  # <1>
     done = Event()  # <2>
@@ -31,7 +31,7 @@ ___ supervisor(n: int)  int:  # <1>
     result = check(n)  # <6>
     done.set()  # <7>
     spinner.join()  # <8>
-    return result
+    r_ result
 
 ___ main()  N..:
     n = 5_000_111_000_222_021

@@ -43,7 +43,7 @@ c_ Subscriber(_.T..):
       condition.r..
 
 ___ main
-  integers = []
+  integers   # list
   condition = _.C...()
   
   # Our Publisher

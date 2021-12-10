@@ -7,7 +7,7 @@ x = 0
  
 ___ Tfunc(i,lock):
  lock.a..
- print('from thread %d' %i)
+ print('from thread %d' @i)
  lock.r..
  
  

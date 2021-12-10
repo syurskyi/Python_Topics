@@ -84,7 +84,7 @@ class MainWindow(QMainWindow):
             fileButton.show()
             fileButton.move(100,x)
             x+=50
-            self.fileButtons.append(fileButton)
+            self.fileButtons.a.. (fileButton)
 
     ___ loadFile(self,fileName):
         ___ fileButton __ self.fileButtons:

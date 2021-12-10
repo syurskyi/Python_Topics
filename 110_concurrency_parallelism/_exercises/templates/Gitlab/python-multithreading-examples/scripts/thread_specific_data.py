@@ -13,7 +13,7 @@ ___ show_value(data):
     except AttributeError:
         logging.debug('No value yet')
     else:
-        logging.debug('value=%s', val)
+        logging.debug('value=@', val)
 
 
 ___ worker(data):
@@ -26,7 +26,7 @@ show_value(local_data)
 local_data.value = 1000
 show_value(local_data)
 
-___ i __ range(2):
+___ i __ r.. 2):
     t = _.? ?_worker,  ?_(local_data,))
     t.s..
     
