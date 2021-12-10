@@ -1,23 +1,23 @@
 #!/usr/bin/python
 
 
-import threading
-import time
+______ _
+______ t__
 
 
-class MyThread(threading.Thread):
-    def run(self):
-        print("{} started!".format(self.getName()))              # Thread-x started
-        time.sleep(1)                                      
-        print("{} finished!".format(self.getName()))             # Thread-x finished
+class MyThread(_.?):
+    ___ run(self):
+        print("{} started!".format(self.getName()))              # ?-x started
+        t__.s..(1)                                      
+        print("{} finished!".format(self.getName()))             # ?-x finished
 
 
-def Main():
-    for x in range(4):                                     
+___ Main():
+    ___ x __ range(4):                                     
         mythread = MyThread(name = "Thread-{}".format(x + 1))  # Instantiate a thread and pass a unique ID to it
-        mythread.start()
-        time.sleep(1)   
+        mythread.s..
+        t__.s..(1)   
 
         
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()

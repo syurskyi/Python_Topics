@@ -1,12 +1,12 @@
-import threading
+______ _
 
 
-def worker(num):
+___ worker(num):
     print "worker: {}".format(num)
 
 threads = []
 
-for i in range(5):
-    t = threading.Thread(target=worker, args=(i,))
+___ i __ range(5):
+    t = _.? ?_worker,  ?_(i,))
     threads.append(t)
-    t.start()
+    t.s..

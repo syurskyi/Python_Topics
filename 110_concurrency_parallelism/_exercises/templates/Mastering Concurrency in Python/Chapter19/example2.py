@@ -6,7 +6,7 @@
 # ____ apscheduler.schedulers.background ______ BackgroundScheduler
 #
 # ___ tick
-#     print _*Tick! The time is: {d_t_.no..
+#     print _*Tick! The t__ is: {d_t_.no..
 #
 # __ _______ __ _______
 #     scheduler _ ?
@@ -16,7 +16,7 @@
 #     ___
 #         w__ T..
 #             t__.s.. 2
-#             print('Printing in the main thread.')
+#             print('Printing __ the main thread.')
 #     ______ K..
 #         p..
 #

@@ -1,34 +1,34 @@
-class PrimeNumber(threading.Thread):
+class PrimeNumber(_.?):
     prime_numbers = {} 
-    lock = threading.Lock()
+    lock = _.?
     
-    def __init__(self, number): 
-        threading.Thread.__init__(self) 
+    ___ __init__(self, number): 
+        _.?.__init__(self)
         self.Number = number
-        PrimeNumber.lock.acquire() 
+        PrimeNumber.lock.a.. 
         PrimeNumber.prime_numbers[number] = "None" 
-        PrimeNumber.lock.release() 
+        PrimeNumber.lock.r.. 
  
-    def run(self): 
+    ___ run(self): 
         counter = 2
         res = True
-        while counter*counter < self.Number and res: 
+        w___ counter*counter < self.Number and res: 
             if self.Number % counter == 0: 
                res = False 
             counter += 1 
-        PrimeNumber.lock.acquire() 
+        PrimeNumber.lock.a.. 
         PrimeNumber.prime_numbers[self.Number] = res 
-        PrimeNumber.lock.release() 
+        PrimeNumber.lock.r.. 
 threads = [] 
-while True: 
+w___ True: 
     input = long(raw_input("number: ")) 
     if input < 1: 
         break 
  
     thread = PrimeNumber(input) 
     threads += [thread] 
-    thread.start() 
+    thread.s..
  
-for x in threads: 
+___ x __ threads: 
     x.join()
     

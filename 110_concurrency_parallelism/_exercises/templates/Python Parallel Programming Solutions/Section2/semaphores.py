@@ -4,7 +4,7 @@
 # ______ ti..
 # ______ ra__
 #
-# ##The optional argument gives the initial value for the internal counter;
+# ##The optional argument gives the initial value ___ the internal counter;
 # ##it defaults to 1.
 # ##If the value given is less than 0, ValueError is raised.
 # semaphore _ ?.S.. 0
@@ -25,7 +25,7 @@
 #     print ("producer notify : producted item number @" i..
 #
 #     ##Release a semaphore, incrementing the internal counter by one.
-#     ##When it was zero on entry and another thread is waiting for it
+#     ##When it was zero on entry and another thread is waiting ___ it
 #     ##to become larger than zero again, wake up that thread.
 #     s__.r..
 #

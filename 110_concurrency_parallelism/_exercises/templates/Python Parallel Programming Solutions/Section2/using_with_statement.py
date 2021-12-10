@@ -24,7 +24,7 @@
 #     mutex _ ?.S.. 1
 #     threading_synchronization_list _ |? ? ? ?
 #
-# #in the for cycle we call the threading_with e threading_no_with function
+# #__ the ___ c.. we call the threading_with e threading_no_with function
 #     ___ s.. __ t_s_l..
 #         t1 _ ?.T.. t.._t_w.. a.._ s..
 #         t2 _ ?.T.. t.._t_n_w.. a.._ s..

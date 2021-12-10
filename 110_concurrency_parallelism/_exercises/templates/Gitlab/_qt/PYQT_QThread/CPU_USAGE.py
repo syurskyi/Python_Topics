@@ -4,13 +4,13 @@
 #
 # Created by: PyQt5 UI code generator 5.12
 #
-# WARNING! All changes made in this file will be lost!
+# WARNING! All changes made __ this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 ______ QtCore, QtGui, QtWidgets
 
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+    ___ setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 145)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, MainWindow):
+    ___ retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "CPU USAGE"))
         self.label.setText(_translate("MainWindow", "CPU USAGE"))
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
 
 
 if __name__ == "__main__":
-    import sys
+    ______ sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()

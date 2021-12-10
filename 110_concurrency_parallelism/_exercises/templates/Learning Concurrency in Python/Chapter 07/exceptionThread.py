@@ -6,7 +6,7 @@
 #
 # ___ isEven n
 #     print("Checking if @ is even".f.. ?
-#     __ ty.. ? !_ in.
+#     __ ty.. ? !_ __.
 #         r_ E.. "Value entered is not an integer"
 #     __ ? % 2 __ 0
 #         print("@ is even".f.. ?

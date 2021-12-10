@@ -5,21 +5,21 @@
 # ____ t_i_ ______ d_t_ __ timer
 #
 # ___ thread_a
-#     print('Thread A is starting...')
+#     print('? A is starting...')
 #
-#     print('Thread A is performing some calculation...')
+#     print('? A is performing some calculation...')
 #     t__.s.. 2
 #
-#     print('Thread A is performing some calculation...')
+#     print('? A is performing some calculation...')
 #     t__.s.. 2
 #
 # ___ thread_b
-#     print('Thread B is starting...')
+#     print('? B is starting...')
 #
-#     print('Thread B is performing some calculation...')
+#     print('? B is performing some calculation...')
 #     t__.s.. 5
 #
-#     print('Thread B is performing some calculation...')
+#     print('? B is performing some calculation...')
 #     t__.s.. 5
 #
 # thread1 _ ?.T.. t.._?_a)

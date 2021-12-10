@@ -25,17 +25,17 @@
 # #Main program
 # __ _______ __ _______
 #     # Create two threads
-#     thread1 _ ? 1, "Thread-1", 1
-#     thread2 _ ? 2, "Thread-2", 2
+#     thread1 _ ? 1, "?-1", 1
+#     thread2 _ ? 2, "?-2", 2
 #
 #     # Start the Threads created
 #     _1.s..
 #     _2.s..
 #
-#     # Wait for all thread to complete
+#     # Wait ___ all thread to complete
 #     _1.r..
 #     _2.r..
 #
-#     print ("Exiting Main Thread")
+#     print ("Exiting Main ?")
 #
 #

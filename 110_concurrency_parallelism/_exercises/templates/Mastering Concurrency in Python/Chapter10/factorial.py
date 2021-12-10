@@ -19,4 +19,4 @@
 # start _ t__.t__
 # ?.r.. m..
 # end _ t__.t__
-# print _*Total time: |e.. - s.. : .4_ .
+# print _*Total t__: |e.. - s.. : .4_ .

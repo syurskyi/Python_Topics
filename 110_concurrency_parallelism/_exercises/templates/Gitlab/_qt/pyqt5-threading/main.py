@@ -1,30 +1,30 @@
-import sys
-import time
-from PyQt5.QtWidgets import QApplication, QWidget, QCheckBox
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import QThread, pyqtSignal, QThreadPool, pyqtSlot, QRunnable, QObject
+______ sys
+______ t__
+from PyQt5.QtWidgets ______ QApplication, QWidget, QCheckBox
+from PyQt5.QtGui ______ QIcon
+from PyQt5.QtCore ______ QThread, pyqtSignal, QThreadPool, pyqtSlot, QRunnable, QObject
 
 
 class Signals(QObject):
-    return_signal = pyqtSignal(str)
+    return_signal = pyqtSignal(s..)
 
 
-class Thread(QRunnable):
-    signal = pyqtSignal(str)
+class ?(QRunnable):
+    signal = pyqtSignal(s..)
 
-    def __init__(self):
-        super(Thread, self).__init__()     
+    ___ __init__(self):
+        super(?, self).__init__()     
         self.signal = Signals()    
 
     @pyqtSlot()
-    def run(self):
-        time.sleep(5)
+    ___ run(self):
+        t__.s..(5)
         result = "Some String"
         self.signal.return_signal.emit(result)
 
 
 class App(QWidget):
-    def __init__(self):
+    ___ __init__(self):
             super().__init__()
             self.title='Hello, world!'
             self.left=2100
@@ -34,19 +34,19 @@ class App(QWidget):
             self.threadpool = QThreadPool()
             self.initUI()
 
-    def initUI(self):
+    ___ initUI(self):
             self.setWindowTitle(self.title)
             self.setGeometry(self.left,self.top,self.width,self.height)
             checkbox = QCheckBox('Check Box', self)
             checkbox.stateChanged.connect(self.clickCheckbox)
             self.show()
 
-    def clickCheckbox(self):
-        thread = Thread()
+    ___ clickCheckbox(self):
+        thread = ?()
         thread.signal.return_signal.connect(self.function_thread)
         self.threadpool.start(thread)
 
-    def function_thread(self, signal):
+    ___ function_thread(self, signal):
         print(signal)
 
 

@@ -6,7 +6,7 @@ ____ rx ______ Observable, Observer
 # and an on_completed method
 c_ temperatureObserver(Observer):
 
-  # Every time we receive a temperature reading
+  # Every t__ we receive a temperature reading
   # this method is called
   ___ on_next  x):
     print("Temperature is: %s degrees centigrade" % x)

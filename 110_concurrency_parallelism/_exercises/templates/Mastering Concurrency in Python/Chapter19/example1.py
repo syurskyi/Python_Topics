@@ -5,7 +5,7 @@
 # ____ apscheduler.schedulers.background ______ BlockingScheduler
 #
 # ___ tick
-#     print _*Tick! The time is: |d_t_.n..
+#     print _*Tick! The t__ is: |d_t_.n..
 #
 # __ _______ __ _______
 #     scheduler _ ?
@@ -13,7 +13,7 @@
 #
 #     ___
 #         ?.s..
-#         print('Printing in the main thread.')
+#         print('Printing __ the main thread.')
 #     ______ K..
 #         p..
 #

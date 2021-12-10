@@ -1,14 +1,14 @@
-import random
-import threading
-import time
-import logging
+______ random
+______ _
+______ t__
+______ logging
 
 
-def worker():
+___ worker():
     """thread worker function"""
     pause = random.randint(1, 5) / 10
     logging.debug('sleeping %0.2f', pause)
-    time.sleep(pause)
+    t__.s..(pause)
     logging.debug('ending')
 
 
@@ -17,12 +17,12 @@ logging.basicConfig(
     format='(%(threadName)-10s) %(message)s',
 )
 
-for i in range(3):
-    t = threading.Thread(target=worker, daemon=True)
-    t.start()
+___ i __ range(3):
+    t = _.? ?_worker, daemon=True)
+    t.s..
 
-main_thread = threading.main_thread()
-for t in threading.enumerate():
+main_thread = _.main_thread()
+___ t __ _.enumerate():
     if t is main_thread:
         continue
     logging.debug('joining %s', t.getName())

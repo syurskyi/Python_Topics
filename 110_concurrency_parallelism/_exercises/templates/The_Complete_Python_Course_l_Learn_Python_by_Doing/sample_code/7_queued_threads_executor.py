@@ -2,7 +2,7 @@
 # ______ ra__
 # ______ queue
 #
-# ____ ? ______ T..  # still needed for daemon threads
+# ____ ? ______ T..  # still needed ___ daemon threads
 # ____ c__.f.. ______ TPE..
 #
 # counter _ 0
@@ -47,5 +47,5 @@
 # w__ TPE.. m.._10 __ pool
 # 	?.s.. ?| ___ x __ ra.. 10
 #
-# c__.j..  # wait for counter_queue to be empty
-# j_.j..  # wait for job_queue to be empty
+# c__.j..  # wait ___ counter_queue to be empty
+# j_.j..  # wait ___ job_queue to be empty

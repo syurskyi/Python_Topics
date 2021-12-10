@@ -1,18 +1,18 @@
 # spinner_proc.py
 
 # credits: Adapted from Michele Simionato's
-# multiprocessing example in the python-list:
+# multiprocessing example __ the python-list:
 # https://mail.python.org/pipermail/python-list/2009-February/675659.html
 
 # tag::SPINNER_PROC_IMPORTS[]
-import itertools
-import time
-from multiprocessing import Process, Event  # <1>
-from multiprocessing import synchronize     # <2>
+______ i__
+______ t__
+from multiprocessing ______ Process, Event  # <1>
+from multiprocessing ______ synchronize     # <2>
 
-def spin(msg: str, done: synchronize.Event) -> None:  # <3>
+___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
 # end::SPINNER_PROC_IMPORTS[]
-    for char in itertools.cycle(r'\|/-'):
+    ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, end='', flush=True)
         if done.wait(.1):
@@ -20,28 +20,28 @@ def spin(msg: str, done: synchronize.Event) -> None:  # <3>
     blanks = ' ' * len(status)
     print(f'\r{blanks}\r', end='')
 
-def slow() -> int:
-    time.sleep(3)
+___ slow()  int:
+    t__.s..(3)
     return 42
 
 # tag::SPINNER_PROC_SUPER[]
-def supervisor() -> int:
+___ supervisor()  int:
     done = Event()
-    spinner = Process(target=spin,               # <4>
-                      args=('thinking!', done))
+    spinner = Process ?_spin,               # <4>
+                       ?_('thinking!', done))
     print(f'spinner object: {spinner}')          # <5>
-    spinner.start()
+    spinner.s..
     result = slow()
     done.set()
     spinner.join()
     return result
 # end::SPINNER_PROC_SUPER[]
 
-def main() -> None:
+___ main()  N..:
     result = supervisor()
     print(f'Answer: {result}')
 
 
-if __name__ == '__main__':
+__ _____ __ ______
     main()
 

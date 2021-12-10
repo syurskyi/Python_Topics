@@ -5,20 +5,20 @@
 # when the thread is being executed.
 
 
-import threading
-import time
+______ _
+______ t__
 
 
-def ThreadFunction():
-	print threading.currentThread().getName(), "Starting"
-	time.sleep(2)
-	print threading.currentThread().getName(), "Exiting"
+___ ThreadFunction():
+	print _.currentThread().getName(), "Starting"
+	t__.s..(2)
+	print _.currentThread().getName(), "Exiting"
 
 
-def Main():
-	w = threading.Thread(target=ThreadFunction)
-	w.start()
+___ Main():
+	w = _.? ?_ThreadFunction)
+	w.s..
 
 
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()

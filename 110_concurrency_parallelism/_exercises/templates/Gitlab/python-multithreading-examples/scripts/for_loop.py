@@ -1,16 +1,16 @@
-import time
-from threading import Thread
+______ t__
+from _ ______ ?
 
 
-def ThreadFunction(x):
+___ ThreadFunction(x):
     print "sleeping 5 sec from thread %d" % x
-    time.sleep(5)
+    t__.s..(5)
     print "finished sleeping from thread %d" % x
 
-def Main():
-  for i in range(10):
-      myThread = Thread(target=ThreadFunction, args=(i,))
-      myThread.start()
+___ Main():
+  ___ i __ range(10):
+      myThread = ? ?_ThreadFunction,  ?_(i,))
+      myThread.s..
       
 if __name__ == "__main__":
   Main()

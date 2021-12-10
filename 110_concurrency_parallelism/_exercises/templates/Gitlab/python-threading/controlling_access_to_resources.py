@@ -1,37 +1,37 @@
 
 
-import logging
-import random
-import threading
-import time
+______ logging
+______ random
+______ _
+______ t__
 
 
 class Counter:
 
-    def __init__(self, start=0):
+    ___ __init__(self, start=0):
 
-        self.lock=threading.Lock()
+        self.lock=_.?
         self.value=start
 
-    def increment(self):
+    ___ increment(self):
         logging.debug('wait  for lock')
-        self.lock.acquire()
+        self.lock.a..
 
         try:
             logging.debug('Acquire lock')
             self.value = self.value+1
         finally:
-            self.lock.release()
+            self.lock.r..
 
 
 
-def worker(c):
+___ worker(c):
 
-    for i in range(2):
+    ___ i __ range(2):
 
         pause = random.random()
         logging.debug('sleeping %0.002f',pause)
-        time.sleep(pause)
+        t__.s..(pause)
         c.increment()
 
     logging.debug('Done')
@@ -44,13 +44,13 @@ logging.basicConfig(
 
 
 counter = Counter()
-for i in range(2):
-    t = threading.Thread(target=worker, args=(counter,))
-    t.start()
+___ i __ range(2):
+    t = _.? ?_worker,  ?_(counter,))
+    t.s..
 
 logging.debug('Waiting for worker threads')
-main_thread = threading.main_thread()
-for t in threading.enumerate():
+main_thread = _.main_thread()
+___ t __ _.enumerate():
     if t is not main_thread:
         t.join()
 logging.debug('Counter: %d', counter.value)

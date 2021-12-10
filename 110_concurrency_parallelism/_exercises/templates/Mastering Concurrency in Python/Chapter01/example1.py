@@ -14,7 +14,7 @@
 #     __ x % 2 __ 0
 #         r_ F..
 #
-#     limit _ in. sq.. x|| + 1
+#     limit _ __. sq.. x|| + 1
 #     ___ i __ ra.. 3 ? 2
 #         __ x % ? __ 0
 #             r_ F..
@@ -41,7 +41,7 @@
 # start _ t..
 # result _    # list
 # w__ c__.f...PPE.. m_w.._20) __ executor
-#     futures _ ?.s.. ? i| ___ i __ in..
+#     futures _ ?.s.. ? i| ___ i __ __..
 #
 #     ___ i, f.. __ en.. c__.f...a_c.. f..
 #         __ f__.r..

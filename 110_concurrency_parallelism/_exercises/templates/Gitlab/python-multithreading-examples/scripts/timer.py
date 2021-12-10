@@ -2,12 +2,12 @@
 
 
 ## A Timer starts its work after a delay, 
-## and can be canceled at any point within that delay time period.
+## and can be canceled at any point within that delay t__ period.
 
 
-import threading
-import time
-import logging
+______ _
+______ t__
+______ logging
 
 
 logging.basicConfig(
@@ -16,22 +16,22 @@ logging.basicConfig(
 )
 
 
-def delayed():
+___ delayed():
     logging.debug('Thread program still running')
     return
 
-def Main():
-	t1 = threading.Timer(3, delayed)
+___ Main():
+	t1 = _.Timer(3, delayed)
 	t1.setName('Timer 1')
-	t2 = threading.Timer(3, delayed)
+	t2 = _.Timer(3, delayed)
 	t2.setName('Timer 2')
 
 	logging.debug('Starting thread timers')
-	t1.start()
-	t2.start()
+	t1.s..
+	t2.s..
 
 	logging.debug('We are waiting before canceling %s', t2.getName())
-	time.sleep(2)
+	t__.s..(2)
 	logging.debug('Now canceling %s', t2.getName())
 	t2.cancel()
 

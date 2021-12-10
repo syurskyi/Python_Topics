@@ -1,17 +1,17 @@
-import os
+______ os
 
-from PySide2.QtCore import Qt, Slot
-from PySide2.QtWidgets import QTextEdit, QMenu, QAction
-from PySide2.QtGui import QTextCursor, QKeySequence, QTextOption
+from PySide2.QtCore ______ Qt, Slot
+from PySide2.QtWidgets ______ QTextEdit, QMenu, QAction
+from PySide2.QtGui ______ QTextCursor, QKeySequence, QTextOption
 
-from .. import g
-from ..richtexthandler import RichTextHandlerObject, RichTextHandler
-from ..loggers import ConsoleFormatter
+from .. ______ g
+from ..richtexthandler ______ RichTextHandlerObject, RichTextHandler
+from ..loggers ______ ConsoleFormatter
 
 
 class ConsoleWidget(QTextEdit):
 
-    def __init__(self):
+    ___ __init__(self):
         super().__init__()
 
         self.setReadOnly(True)
@@ -39,26 +39,26 @@ class ConsoleWidget(QTextEdit):
         self.actionWordWrap = QAction('&Word Wrap', self, statusTip='Toggle word wrap', checkable=True, triggered=self.toggleWordWrap)
         self.actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=self.clear)
 
-    @Slot(str)
-    def write(self, line):
+    @Slot(s..)
+    ___ write(self, line):
         self.append(line)
         self.scrollToEnd()
 
-    def scrollToEnd(self):
+    ___ scrollToEnd(self):
         self.moveCursor(QTextCursor.End)
         self.moveCursor(QTextCursor.StartOfLine)
 
-    def toggleWordWrap(self):
+    ___ toggleWordWrap(self):
         if self.wordWrapMode() == QTextOption.NoWrap:
             self.setWordWrapMode(QTextOption.WordWrap)
         else:
             self.setWordWrapMode(QTextOption.NoWrap)
 
-    def clear(self):
+    ___ clear(self):
         self.setText('')
         self.scrollToEnd()
 
-    def contextMenuEvent(self, event):
+    ___ contextMenuEvent(self, event):
         menu = QMenu(self)
         menu.addAction(self.actionCopy)
         menu.addAction(self.actionSelectAll)

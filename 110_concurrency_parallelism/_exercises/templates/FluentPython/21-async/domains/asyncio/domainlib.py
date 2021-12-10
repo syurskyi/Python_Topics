@@ -1,30 +1,30 @@
-import asyncio
-import socket
-from collections.abc import Iterable, AsyncIterator
-from typing import NamedTuple, Optional
+______ _
+______ socket
+from collections.abc ______ Iterable, AsyncIterator
+from typing ______ NamedTuple, Optional
 
 
 class Result(NamedTuple):  # <1>
-    domain: str
+    domain: s..
     found: bool
 
 
-OptionalLoop = Optional[asyncio.AbstractEventLoop]  # <2>
+OptionalLoop = Optional[_.AbstractEventLoop]  # <2>
 
 
-async def probe(domain: str, loop: OptionalLoop = None) -> Result:  # <3>
-    if loop is None:
-        loop = asyncio.get_running_loop()
+@ ___ probe(domain: s.., loop: OptionalLoop = N..)  Result:  # <3>
+    if loop is N..:
+        loop = _.get_running_loop()
     try:
-        await loop.getaddrinfo(domain, None)
+        await loop.getaddrinfo(domain, N..)
     except socket.gaierror:
         return Result(domain, False)
     return Result(domain, True)
 
 
-async def multi_probe(domains: Iterable[str]) -> AsyncIterator[Result]:  # <4>
-    loop = asyncio.get_running_loop()
-    coros = [probe(domain, loop) for domain in domains]  # <5>
-    for coro in asyncio.as_completed(coros):  # <6>
+@ ___ multi_probe(domains: Iterable[s..])  AsyncIterator[Result]:  # <4>
+    loop = _.get_running_loop()
+    coros = [probe(domain, loop) ___ domain __ domains]  # <5>
+    ___ coro __ _.as_completed(coros):  # <6>
         result = await coro  # <7>
         yield result  # <8>

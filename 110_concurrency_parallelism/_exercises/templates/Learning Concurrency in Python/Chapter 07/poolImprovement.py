@@ -26,7 +26,7 @@
 #     __ ? % 2 __ 0
 #         r_ F..
 #
-#     sqrt_n _ in. ma__.fl.. ma__.sq.. ?
+#     sqrt_n _ __. ma__.fl.. ma__.sq.. ?
 #     ___ i __ ra.. 3, _n + 1, 2
 #         __ ? % i __ 0:
 #             r_ F..
@@ -45,13 +45,13 @@
 #   w__ TPE.. m_w.._4 __ executor
 #         ___ number prime __ z..  P.. ?.m.. ? P..
 #             print('@ is prime: @'   n.. p..
-#   print("@ Seconds Needed for ThreadPoolExecutor".f.. t_i_.d_t.. - t2
+#   print("@ Seconds Needed ___ ThreadPoolExecutor".f.. t_i_.d_t.. - t2
 #
 #   t3 _ t_i_.d_t..
 #   ___ number __ P..
 #     isPrime _ i_p.. ?
 #     print("@ is prime: @".f.. n.. iP..
-#   print("@ Seconds needed for single threaded execution".f.. t_i_.d_t..-t3
+#   print("@ Seconds needed ___ single threaded execution".f.. t_i_.d_t..-t3
 #
 # __ _________ __ ________
 #   ?

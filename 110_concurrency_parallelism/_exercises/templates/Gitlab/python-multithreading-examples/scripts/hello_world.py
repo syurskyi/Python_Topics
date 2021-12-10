@@ -6,21 +6,21 @@
 # the function is called when a thread is initialized. 
 
 
-import threading
+______ _
 
 
-def MyFunction():
+___ MyFunction():
 	"""This is a user defined function"""
 	print "Hello World"
 	return
 
 
-def Main():
+___ Main():
 	"""This is where we create a thread. 
 	Target means run this function when a thread is initiated."""
-	myThread = threading.Thread(target=MyFunction) 	
-	myThread.start() 	# Starting a thread
+	myThread = _.? ?_MyFunction)
+	myThread.s.. 	# Starting a thread
 
 
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()

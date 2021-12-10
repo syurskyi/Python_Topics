@@ -42,11 +42,11 @@
 # philosopher4 _ ?("Marx", fork4, fork5)
 # philosopher5 _ ?("Russell", fork5, fork1)
 #
-# philosopher1.start()
-# philosopher2.start()
-# philosopher3.start()
-# philosopher4.start()
-# philosopher5.start()
+# philosopher1.s..
+# philosopher2.s..
+# philosopher3.s..
+# philosopher4.s..
+# philosopher5.s..
 #
 # philosopher1.join()
 # philosopher2.join()

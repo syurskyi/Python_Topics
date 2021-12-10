@@ -14,14 +14,14 @@
 #         @param integers list of integers
 #         @param condition condition synchronization object
 #         """
-#         ?.Thread. -
+#         ?.?. -
 #         ? ?
 #         ? ?
 #
 #     ___ run
 #         """
-#         Thread run method. Append random integers to the integers list
-#         at random time.
+#         ? run method. Append random integers to the integers list
+#         at random t__.
 #         """
 #         w__ T..
 #             integer _ ra__.r_i.. 0 256
@@ -47,13 +47,13 @@
 #         @param integers list of integers
 #         @param condition condition synchronization object
 #         """
-#         ?.Thread. -
+#         ?.?. -
 #         ? ?
 #         ? ?
 #
 #     ___ run
 #         """
-#         Thread run method. Consumes integers from list
+#         ? run method. Consumes integers from list
 #         """
 #         w__ T..
 #             c__.a..

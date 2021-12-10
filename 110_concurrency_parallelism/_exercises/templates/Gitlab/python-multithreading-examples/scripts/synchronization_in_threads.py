@@ -1,29 +1,29 @@
 
 
-import threading
-import time 
+______ _
+______ t__ 
 # global variable x
 x = 0
  
-def Tfunc(i,lock):
- lock.acquire()
+___ Tfunc(i,lock):
+ lock.a..
  print('from thread %d' %i)
- lock.release()
+ lock.r..
  
  
  # creating a lock
-lock = threading.Lock()
+lock = _.?
  
  # creating threads
-t1 = threading.Thread(target=Tfunc, args=(1,lock,))
-t2 = threading.Thread(target=Tfunc, args=(2,lock,))
+t1 = _.? ?_Tfunc,  ?_(1,lock,))
+t2 = _.? ?_Tfunc,  ?_(2,lock,))
  
  # start threads
-t1.start()
-t2.start()
+t1.s..
+t2.s..
  
  # wait until threads finish their job
 t1.join()
-time.sleep(5)
+t__.s..(5)
 t2.join()
 

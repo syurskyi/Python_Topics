@@ -3,7 +3,7 @@
 #
 # ___ myThread myEvent
 #   w__ no. ?.i_s..
-#     print("Waiting for Event to be set")
+#     print("Waiting ___ Event to be set")
 #     t__.s.. 1
 #   print("myEvent has been set")
 #

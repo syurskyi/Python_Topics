@@ -8,7 +8,7 @@
 #
 #     ___ process
 #         pname _ ?.c_p__ .n..
-#         print('Starting process @ for number @...' ? c_p__x
+#         print('Starting process @ ___ number @...' ? c_p__x
 #
 # ___ work q
 #     worker _ q.g..

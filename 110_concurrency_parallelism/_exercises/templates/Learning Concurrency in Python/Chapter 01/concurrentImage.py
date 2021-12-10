@@ -24,12 +24,12 @@
 #     threads.ap.. ?
 #     ?.s..
 #
-#   # ensure that all the threads in our array have completed
-#   # their execution before we log the total time to complete
+#   # ensure that all the threads __ our array have completed
+#   # their execution before we log the total t__ to complete
 #   ___ i __ threads
 #     ?.j..
 #
-#   # calculate the total execution time
+#   # calculate the total execution t__
 #   t1 _ t__.t..
 #   totalTime _ t1 - t0
 #   print("Total Execution Time @".f.. ?

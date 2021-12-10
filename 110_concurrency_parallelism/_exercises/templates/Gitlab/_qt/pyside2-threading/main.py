@@ -1,6 +1,6 @@
-from pyside2_threading import main_window
+from pyside2_threading ______ main_window
 
 
 if __name__ == "__main__":
-    main_window.start()
+    main_window.s..
 

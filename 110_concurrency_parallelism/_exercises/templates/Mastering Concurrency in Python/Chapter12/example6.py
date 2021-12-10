@@ -3,36 +3,36 @@
 # ____ t_i_ ______ d_t_ __ timer
 #
 # ___ thread_a
-#     print('Thread A is starting...')
+#     print('? A is starting...')
 #
-#     print('Thread A waiting to acquire lock A.')
+#     print('? A waiting to acquire lock A.')
 #     _a.a..
-#     print('Thread A has acquired lock A, performing some calculation...')
+#     print('? A has acquired lock A, performing some calculation...')
 #     t__.s.. 2
 #
-#     print('Thread A waiting to acquire lock B.')
+#     print('? A waiting to acquire lock B.')
 #     lock_b.a..
-#     print('Thread A has acquired lock B, performing some calculation...')
+#     print('? A has acquired lock B, performing some calculation...')
 #     t__.s.. 2
 #
-#     print('Thread A releasing both locks.')
+#     print('? A releasing both locks.')
 #     _a.r..
 #     _b.r..
 #
 # ___ thread_b
-#     print('Thread B is starting...')
+#     print('? B is starting...')
 #
-#     print('Thread B waiting to acquire lock A.')
+#     print('? B waiting to acquire lock A.')
 #     _a.a..
-#     print('Thread B has acquired lock A, performing some calculation...')
+#     print('? B has acquired lock A, performing some calculation...')
 #     t__.s.. 5
 #
-#     print('Thread B waiting to acquire lock B.')
+#     print('? B waiting to acquire lock B.')
 #     _b.a..
-#     print('Thread B has acquired lock B, performing some calculation...')
+#     print('? B has acquired lock B, performing some calculation...')
 #     t__.s.. 5
 #
-#     print('Thread B releasing both locks.')
+#     print('? B releasing both locks.')
 #     _b.r..
 #     _a.r..
 #

@@ -1,16 +1,16 @@
-from PySide2.QtWidgets import QApplication
+from PySide2.QtWidgets ______ QApplication
 
 
 class g(object):
 
-    log = None
-    r = None
+    log = N..
+    r = N..
 
     @classmethod
-    def init(cls, log, r):
+    ___ init(cls, log, r):
         cls.log = log
         cls.r = r
 
     @classmethod
-    def app(cls):
+    ___ app(cls):
         return QApplication.instance()

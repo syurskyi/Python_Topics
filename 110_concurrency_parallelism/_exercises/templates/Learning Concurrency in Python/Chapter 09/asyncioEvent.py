@@ -3,18 +3,18 @@
 #
 #
 # ___ set_event event
-#     print('setting event in callback')
+#     print('setting event __ callback')
 #     ?.s..
 #
 #
 # ? ___ coro1 event
-#     print('coro1 waiting for event')
+#     print('coro1 waiting ___ event')
 #     ? ?.w..
 #     print('coro1 triggered')
 #
 #
 # ? ___ coro2 event
-#     print('coro2 waiting for event')
+#     print('coro2 waiting ___ event')
 #     ? ?.w..
 #     print('coro2 triggered')
 #

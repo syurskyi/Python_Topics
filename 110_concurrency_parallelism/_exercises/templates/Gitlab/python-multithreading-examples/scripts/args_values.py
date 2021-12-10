@@ -3,12 +3,12 @@
 
 ## This is not very trivial to access the values of 
 ## args and kwargs from a subclass as their values are
-## being saved in private variables. 
+## being saved __ private variables. 
 
 
-import threading
-import logging
-import time
+______ _
+______ logging
+______ t__
 
 
 logging.basicConfig(level=logging.DEBUG,
@@ -16,17 +16,17 @@ logging.basicConfig(level=logging.DEBUG,
                    )
 
 
-class ThreadWithArgs(threading.Thread):
-    def __init__(self, 
-                group=None, 
-                target=None, 
-                name=None,
-                args=(), 
-                kwargs=None, 
-                verbose=None
+class ThreadWithArgs(_.?):
+    ___ __init__(self, 
+                group=N.., 
+                target=N.., 
+                name=N..,
+                 ?_(),
+                kwargs=N.., 
+                verbose=N..
                 ):
 
-        threading.Thread.__init__(self, 
+        _.?.__init__(self, 
                                 group=group, 
                                 target=target, 
                                 name=name,
@@ -37,19 +37,19 @@ class ThreadWithArgs(threading.Thread):
         self.kwargs = kwargs
         return
 
-    def run(self):
+    ___ run(self):
         logging.debug('This thread is running with %s and %s', self.args, self.kwargs)
         return
 
 
-def Main():
-    for x in range(5):
+___ Main():
+    ___ x __ range(5):
         myThread = ThreadWithArgs(
-            args=(x,), 
+             ?_(x,),
             kwargs={'Country':'USA', 'Zip':'12345'}
         )
-        myThread.start()
-        time.sleep(1)
+        myThread.s..
+        t__.s..(1)
 
 
 if __name__ == "__main__":

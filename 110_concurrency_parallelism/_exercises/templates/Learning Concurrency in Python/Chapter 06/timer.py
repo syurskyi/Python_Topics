@@ -1,15 +1,15 @@
 # from timeit ______ default_timer
 #
 # class Timer(object):
-#     def __init__(self, verbose=False):
+#     ___ __init__(self, verbose=False):
 #         self.verbose = verbose
 #         self.timer = default_timer
 #
-#     def __enter__(self):
+#     ___ __enter__(self):
 #         self.start = default_timer()
 #         return self
 #
-#     def __exit__(self, *args):
+#     ___ __exit__(self, *args):
 #         end = default_timer()
 #         self.elapsed = end - self.start
 #         if self.verbose:

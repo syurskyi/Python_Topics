@@ -4,23 +4,23 @@
 ## This program adds two given numbers and prints the result.
 
 
-import threading 
+______ _
 
 
-def MyFunction(num1, num2):
+___ MyFunction(num1, num2):
 	"""This is user defined thread function"""
 	print "Given numbers= %s, %s" %(num1, num2)
 	print "Result = %d" %(int(num1)+int(num2))
 	return
 
 
-def Main():
-	t = threading.Thread(
+___ Main():
+	t = _.?(
 			target=MyFunction, 
-			args=(12,13)
+			 ?_(12,13)
 		)
-	t.start()
+	t.s..
 
 
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()

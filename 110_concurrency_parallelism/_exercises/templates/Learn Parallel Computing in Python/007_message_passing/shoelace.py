@@ -9,7 +9,7 @@
 #
 # ___ find_area points_queue
 #     points_str = ?.g..
-#     w... ? is not None
+#     w... ? is not N..
 #         points = # list
 #         area = 0.0
 #         ___ xy __ __.f.. ? ?

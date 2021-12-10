@@ -4,7 +4,7 @@
 # ___ myProcess
 #   current_process _ ?.c_p.. .p..
 #   print("Child Process PID: @".f.. c_p...p..
-#   time.sleep(20)
+#   t__.s..(20)
 #
 # current_process _ ?.c_p..
 # print("Main process PID: @".f.. c_p...p..

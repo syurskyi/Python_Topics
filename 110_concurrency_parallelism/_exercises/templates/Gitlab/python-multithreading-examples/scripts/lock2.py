@@ -1,33 +1,33 @@
 #!/usr/bin/python
 
 
-import logging
-import threading
-import time
+______ logging
+______ _
+______ t__
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-10s) %(message)s',
                     )
                     
-def lock_holder(lock):
+___ lock_holder(lock):
     logging.debug('Starting')
-    while True:
-        lock.acquire()
+    w___ True:
+        lock.a..
         try:
             logging.debug('Holding')
-            time.sleep(0.5)
+            t__.s..(0.5)
         finally:
             logging.debug('Not holding')
-            lock.release()
-        time.sleep(0.5)
+            lock.r..
+        t__.s..(0.5)
     return
                     
-def worker(lock):
+___ worker(lock):
     logging.debug('Starting')
     num_tries = 0
     num_acquires = 0
-    while num_acquires < 3:
-        time.sleep(0.5)
+    w___ num_acquires < 3:
+        t__.s..(0.5)
         logging.debug('Trying to acquire')
         have_it = lock.acquire(0)
         try:
@@ -39,15 +39,15 @@ def worker(lock):
                 logging.debug('Iteration %d: Not acquired', num_tries)
         finally:
             if have_it:
-                lock.release()
+                lock.r..
     logging.debug('Done after %d iterations', num_tries)
 
 
-lock = threading.Lock()
+lock = _.?
 
-holder = threading.Thread(target=lock_holder, args=(lock,), name='LockHolder')
+holder = _.? ?_lock_holder,  ?_(lock,), name='LockHolder')
 holder.setDaemon(True)
-holder.start()
+holder.s..
 
-worker = threading.Thread(target=worker, args=(lock,), name='Worker')
-worker.start()
+worker = _.? ?_worker,  ?_(lock,), name='Worker')
+worker.s..

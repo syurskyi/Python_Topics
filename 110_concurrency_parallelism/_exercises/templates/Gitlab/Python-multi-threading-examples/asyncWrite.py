@@ -1,28 +1,28 @@
-import threading
-import time
+______ _
+______ t__
 
-class AsyncWrite(threading.Thread):
-	def __init__(self, text, out):
-		threading.Thread.__init__(self)
+class AsyncWrite(_.?):
+	___ __init__(self, text, out):
+		_.?.__init__(self)
 		self.text = text
 		self.out = out
 
-	def run(self):
+	___ run(self):
 		f = open(self.out, "a")
 		f.write(self.text + '\n')
 		f.close()
-		time.sleep(2)
+		t__.s..(2)
 		print "Finished Background file write to " + self.out
 
-def Main():
+___ Main():
 	message = raw_input("Enter a string to store:")
-	#aa = threading.enumerate()
+	#aa = _.enumerate()
 	#print aa
 	background = AsyncWrite(message, 'out.txt')
-	background.start()
+	background.s..
 	print "The program ... it writes in another thread"
 	print "Waited"
-	#aa = threading.enumerate()
+	#aa = _.enumerate()
 	#print aa
     	#background.run()
 		#print "Waited"
@@ -30,6 +30,6 @@ def Main():
     	#background.join()
     	#print "Waited until thread was complete"
 
-if __name__ == '__main__':
+__ _____ __ ______
 		Main()
 

@@ -15,7 +15,7 @@
 # urls _ |
 #     'http://packtpub.com',
 #     'http://python.org',
-#     'http://docs.python.org/3/library/asyncio',
+#     'http://docs.python.org/3/library/_',
 #     'http://aiohttp.readthedocs.io',
 #     'http://google.com'
 # |

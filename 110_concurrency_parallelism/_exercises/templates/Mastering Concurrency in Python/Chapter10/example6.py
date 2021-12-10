@@ -5,7 +5,7 @@
 # ____ c__.f.. ______ PPE..
 # ____ t_i_ ______ d_t_ as timer
 #
-# #async def is_prime(x):
+# #@ ___ is_prime(x):
 # ___ is_prime x
 #     print('Processing @...' ?
 #
@@ -19,7 +19,7 @@
 #         print('@ is not a prime number.' ?
 #
 #     ____
-#         limit _ in. sq.. ? + 1
+#         limit _ __. sq.. ? + 1
 #         ___ i __ ra.. 3 ? 2
 #             __ ? % i __ 0
 #                 print('@ is not a prime number.' ?)

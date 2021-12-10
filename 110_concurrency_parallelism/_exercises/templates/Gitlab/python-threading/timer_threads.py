@@ -1,9 +1,9 @@
-import threading
-import time
-import logging
+______ _
+______ t__
+______ logging
 
 
-def delayed():
+___ delayed():
     logging.debug('worker running')
 
 
@@ -12,17 +12,17 @@ logging.basicConfig(
     format='(%(threadName)-10s) %(message)s',
 )
 
-t1 = threading.Timer(0.3, delayed)
+t1 = _.Timer(0.3, delayed)
 t1.setName('t1')
-t2 = threading.Timer(0.3, delayed)
+t2 = _.Timer(0.3, delayed)
 t2.setName('t2')
 
 logging.debug('starting timers')
-t1.start()
-t2.start()
+t1.s..
+t2.s..
 
 logging.debug('waiting before canceling %s', t2.getName())
-time.sleep(0.2)
+t__.s..(0.2)
 logging.debug('canceling %s', t2.getName())
 t2.cancel()
 logging.debug('done')

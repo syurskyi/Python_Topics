@@ -1,27 +1,27 @@
 #!/usr/bin/python
 
 
-from threading import Thread 
-import time 
+from _ ______ ? 
+______ t__ 
 
 
-def timer(name, delay, repeat):
+___ timer(name, delay, repeat):
   print ("Timer: " + name + " Started")
   
-  while repeat > 0:
-    time.sleep(delay)
-    print (name + ":" + str(time.ctime(time.time())))
+  w___ repeat > 0:
+    t__.s..(delay)
+    print (name + ":" + s..(t__.c..(t__.t__())))
     repeat -= 1
   print ("Timer: " + name + "Completed")
   
 
-def Main():
-  thread1 = Thread(target=timer, args=("Timer1", 1, 5))
-  thread2 = Thread(target=timer, args=("Timer2", 2, 5))
-  thread1.start()
-  thread2.start()
+___ Main():
+  thread1 = ? ?_timer,  ?_("Timer1", 1, 5))
+  thread2 = ? ?_timer,  ?_("Timer2", 2, 5))
+  thread1.s..
+  thread2.s..
   
   print ("Main completed")
   
-if __name__ == '__main__':
+__ _____ __ ______
   Main()

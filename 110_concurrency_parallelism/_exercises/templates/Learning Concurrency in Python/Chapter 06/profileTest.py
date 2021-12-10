@@ -1,17 +1,17 @@
 # ______ random
-# ______ time
+# ______ t__
 #
 #
-# def slowFunction():
-#   time.sleep(random.randint(1,5))
+# ___ slowFunction():
+#   t__.s..(random.randint(1,5))
 #   print("Slow Function Executed")
 #
-# def fastFunction():
+# ___ fastFunction():
 #   print("Fast Function Executed")
 #
-# def main():
+# ___ main():
 #   slowFunction()
 #   fastFunction()
 #
-# if __name__ == '__main__':
+# __ _____ __ ______
 #   main()

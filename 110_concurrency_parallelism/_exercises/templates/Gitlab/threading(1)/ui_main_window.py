@@ -4,26 +4,26 @@
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
-# WARNING! All changes made in this file will be lost!
+# WARNING! All changes made __ this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+from PyQt4 ______ QtCore, QtGui
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s):
         return s
 
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
+    ___ _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
+    ___ _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_Countdown(object):
-    def setupUi(self, Countdown):
+    ___ setupUi(self, Countdown):
         Countdown.setObjectName(_fromUtf8("Countdown"))
         Countdown.resize(301, 162)
         self.centralwidget = QtGui.QWidget(Countdown)
@@ -36,7 +36,7 @@ class Ui_Countdown(object):
         self.retranslateUi(Countdown)
         QtCore.QMetaObject.connectSlotsByName(Countdown)
 
-    def retranslateUi(self, Countdown):
-        Countdown.setWindowTitle(_translate("Countdown", "Countdown Window", None))
-        self.countdownButton.setText(_translate("Countdown", "Start", None))
+    ___ retranslateUi(self, Countdown):
+        Countdown.setWindowTitle(_translate("Countdown", "Countdown Window", N..))
+        self.countdownButton.setText(_translate("Countdown", "Start", N..))
 

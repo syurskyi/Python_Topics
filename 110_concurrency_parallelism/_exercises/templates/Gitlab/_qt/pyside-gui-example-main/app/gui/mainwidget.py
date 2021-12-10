@@ -1,11 +1,11 @@
-from PySide2.QtWidgets import QWidget, QVBoxLayout
+from PySide2.QtWidgets ______ QWidget, QVBoxLayout
 
-from .consolewidget import ConsoleWidget
+from .consolewidget ______ ConsoleWidget
 
 
 class MainWidget(QWidget):
 
-    def __init__(self):
+    ___ __init__(self):
         super().__init__()
 
         self.console = ConsoleWidget()

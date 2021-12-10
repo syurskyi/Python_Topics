@@ -16,7 +16,7 @@
 #             print('@ is hungry and wants to eat.'  n..
 #
 #             __ p__.hu..
-#                 print('@ is waiting for their partner to eat first...' n..
+#                 print('@ is waiting ___ their partner to eat first...' n..
 #             ____
 #                 w__ fork
 #                     print('@ has stared eating.' n..

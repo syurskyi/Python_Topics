@@ -16,7 +16,7 @@
 #
 # urls _ |
 #     'http://httpstat.us/200',
-#     'http://httpstat.us/200?sleep=20000',
+#     'http://httpstat.us/200?s..=20000',
 #     'http://httpstat.us/400'
 # |
 #

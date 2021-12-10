@@ -2,7 +2,7 @@
 # ______ ti..
 #
 # ___ threadTarget
-#   print("Current Thread: @".f.. ?.c_t..
+#   print("Current ?: @".f.. ?.c_t..
 #
 # threads _  # list
 #

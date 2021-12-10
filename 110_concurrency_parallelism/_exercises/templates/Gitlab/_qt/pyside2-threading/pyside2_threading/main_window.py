@@ -1,7 +1,7 @@
-import time
-import sys
+______ t__
+______ sys
 
-from PySide2 import QtCore, QtWidgets, QtGui
+from PySide2 ______ QtCore, QtWidgets, QtGui
 
 
 class Worker(QtCore.QObject):
@@ -14,22 +14,22 @@ class Worker(QtCore.QObject):
     finished = QtCore.Signal()  # emitted after something is finished
 
     @QtCore.Slot()
-    def do_something(self):
+    ___ do_something(self):
         """Do something that takes time
         """
         print("worker started")
-        time.sleep(2)
+        t__.s..(2)
         print("worker finished")
         self.finished.emit()
 
 
 class Main(QtWidgets.QMainWindow):
-    def __init__(self, parent=None):
+    ___ __init__(self, parent=N..):
         super(Main, self).__init__(parent)
 
         # Setup worker on a different therad than main
         self.thread = QtCore.QThread()
-        self.thread.start()
+        self.thread.s..
 
         # Create the worker and move it off the main thread
         self.worker = Worker()
@@ -44,7 +44,7 @@ class Main(QtWidgets.QMainWindow):
         # Widgets
         self.first_btn = QtWidgets.QPushButton("Worker Button")
         second_btn = QtWidgets.QPushButton("Another Button")
-        for btn in [self.first_btn, second_btn]:
+        ___ btn __ [self.first_btn, second_btn]:
             btn.setFixedHeight(50)
 
         # Set layouts
@@ -58,24 +58,24 @@ class Main(QtWidgets.QMainWindow):
         self.worker.finished.connect(self.reset_btn)
 
     @QtCore.Slot()
-    def do_something_else(self):
+    ___ do_something_else(self):
         """Another button doing something else. doesn't block the gui
         """
         print("doing something else")
 
     @QtCore.Slot()
-    def set_waiting(self):
+    ___ set_waiting(self):
         """Set the button to say waiting
         """
         self.first_btn.setText("Waiting")
 
     @QtCore.Slot()
-    def reset_btn(self):
+    ___ reset_btn(self):
         """Reset the button's text when the worker finished
         """
         self.first_btn.setText("Worker Button")
 
-    def closeEvent(self, event):
+    ___ closeEvent(self, event):
         """Closes the thread before the GUI closes
         
         Args:
@@ -87,7 +87,7 @@ class Main(QtWidgets.QMainWindow):
         super(Main, self).closeEvent(event)
 
 
-def start():
+___ s..:
     app = QtWidgets.QApplication(sys.argv)
 
     gui = Main()

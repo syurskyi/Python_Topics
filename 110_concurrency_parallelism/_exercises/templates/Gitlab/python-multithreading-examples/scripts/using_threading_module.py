@@ -1,18 +1,18 @@
 
 
-import time
-import threading 
+______ t__
+______ _ 
 
-#create function for thread
-def Tfunc(i):
+#create function ___ thread
+___ Tfunc(i):
  print("Thread no.:%d" % (i+1))
- time.sleep(5)
+ t__.s..(5)
  print("%d finished sleeping from thread\n" % i)
 
-#start the thread for function
-for i in range(3):
- t1 = threading.Thread(target=Tfunc, args=(i,))
- t1.start()
+#start the thread ___ function
+___ i __ range(3):
+ t1 = _.? ?_Tfunc,  ?_(i,))
+ t1.s..
  
 #check thread is alive or not
  c=t1.isAlive()
@@ -21,8 +21,8 @@ for i in range(3):
  c1=t1.getName()
  print('\n',c1,"is Alive:",c)
 
-#get toatal number of thread in execution
- count=threading.active_count()
+#get toatal number of thread __ execution
+ count=_.active_count()
  print("Total No of threads:",count)
  
  

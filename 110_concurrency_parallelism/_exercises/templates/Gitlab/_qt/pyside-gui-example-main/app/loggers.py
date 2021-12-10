@@ -1,8 +1,8 @@
-import os
-import sys
-import logging
-import datetime
-import colorama
+______ os
+______ sys
+______ logging
+______ datetime
+______ colorama
 
 
 class ColorizingStreamHandler(logging.StreamHandler):
@@ -14,17 +14,17 @@ class ColorizingStreamHandler(logging.StreamHandler):
         logging.CRITICAL: colorama.Style.BRIGHT + colorama.Back.RED,
     }
 
-    def __init__(self, stream, color_map=None):
+    ___ __init__(self, stream, color_map=N..):
         logging.StreamHandler.__init__(self, colorama.AnsiToWin32(stream).stream)
-        if color_map is not None:
+        if color_map is not N..:
             self.color_map = color_map
 
     @property
-    def is_tty(self):
-        isatty = getattr(self.stream, 'isatty', None)
+    ___ is_tty(self):
+        isatty = getattr(self.stream, 'isatty', N..)
         return isatty and isatty()
 
-    def format(self, record):
+    ___ format(self, record):
         message = logging.StreamHandler.format(self, record)
         if self.is_tty:
             # Don't colorize a traceback
@@ -33,7 +33,7 @@ class ColorizingStreamHandler(logging.StreamHandler):
             message = '\n'.join(parts)
         return message
 
-    def colorize(self, message, record):
+    ___ colorize(self, message, record):
         try:
             return (self.color_map[record.levelno] + message +
                     colorama.Style.RESET_ALL)
@@ -43,10 +43,10 @@ class ColorizingStreamHandler(logging.StreamHandler):
 
 class ConsoleFormatter(logging.Formatter):
 
-    def __init__(self):
+    ___ __init__(self):
         super().__init__('[%(asctime)s%(prefix)s] %(message)s', datefmt='%H:%M:%S')
 
-    def format(self, record):
+    ___ format(self, record):
         """ Ensures that a 'prefix' value is defined before the record is formatted. """
         if hasattr(record, 'prefix'):
             if record.prefix and not record.prefix.startswith('|'):
@@ -61,12 +61,12 @@ class ConsoleFormatter(logging.Formatter):
 
 class ConsoleLogger(logging.Logger):
 
-    def __init__(self, name):
+    ___ __init__(self, name):
         super().__init__(name)
-        self.logFilepath = None
+        self.logFilepath = N..
 
     @classmethod
-    def new(cls, name):
+    ___ new(cls, name):
         log = cls(name)
 
         stdoutHandler = ColorizingStreamHandler(sys.stdout)

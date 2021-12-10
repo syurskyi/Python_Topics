@@ -29,8 +29,8 @@
 #         ___ col __ r... ?
 #             ___ i __ r... ?
 #                 ? ? ? += ? ? ? * ? ? ?
-# #     for row in range(?):
+# #     ___ row __ range(?):
 # #         print(matrix_a[row], matrix_b[row], result[row])
 # #     print()
 # end = t___.t___
-# print("Done, time taken", ? - ?
+# print("Done, t__ taken", ? - ?

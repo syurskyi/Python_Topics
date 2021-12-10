@@ -2,15 +2,15 @@
 # ______ ti..
 #
 # ___ myChildThread
-#   print("Child Thread Starting")
+#   print("Child ? Starting")
 #   t__.s.. 5
-#   print("Current Thread ----------")
+#   print("Current ? ----------")
 #   print(?.?
 #   print("-------------------------")
-#   print("Main Thread -------------")
+#   print("Main ? -------------")
 #   print(?.?
 #   print("-------------------------")
-#   print("Child Thread Ending")
+#   print("Child ? Ending")
 #
 #
 # child _ ?.T.. t.._?

@@ -1,16 +1,16 @@
-from threading import Thread
-import time
+from _ ______ ?
+______ t__
 
 """ The Mouse class is a Thread by itself. There must be an __init__ calling
 Super __init__ with self as an argument. Also, there must be an "run" def. """
-class Mouse(Thread):           # Mouse is a thread.
+class Mouse(?):           # Mouse is a thread.
 
-    def run(self):
-        while True:            # It keeps the thread alive the whole time.
+    ___ run(self):
+        w___ True:            # It keeps the thread alive the whole t__.
             print 'The mouse runs.'
-            time.sleep(10)
+            t__.s..(10)
 
-    def __init__(self):
-        Thread.__init__(self)  # Thread.__init__.
+    ___ __init__(self):
+        ?.__init__(self)  # ?.__init__.
         self.daemon = True     # Always set daemon flag True.
-        self.start()           # Starts the thread.
+        self.s..           # Starts the thread.

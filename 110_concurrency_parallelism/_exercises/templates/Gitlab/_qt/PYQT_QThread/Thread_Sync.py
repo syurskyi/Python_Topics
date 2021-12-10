@@ -1,9 +1,9 @@
-def square_numbers(nums):
+___ square_numbers(nums):
     result = []
-    for i in nums:
+    ___ i __ nums:
         result.append(i*i)
 
 my_nums = square_numbers(1,2,3,4,5)
 
-for num in my_nums:
+___ num __ my_nums:
     print(num)

@@ -29,60 +29,60 @@ words, and returns the intersection of the entries for each word::
 
 """
 
-import sys
-import unicodedata
-from collections import defaultdict
-from collections.abc import Iterator
+______ sys
+______ unicodedata
+from collections ______ defaultdict
+from collections.abc ______ Iterator
 
 STOP_CODE: int = sys.maxunicode + 1
 
-Char = str
-Index = defaultdict[str, set[Char]]
+Char = s..
+Index = defaultdict[s.., set[Char]]
 
 
-def tokenize(text: str) -> Iterator[str]:
+___ tokenize(text: s..)  Iterator[s..]:
     """return iterator of uppercased words"""
-    for word in text.upper().replace('-', ' ').split():
+    ___ word __ text.upper().replace('-', ' ').split():
         yield word
 
 
 class InvertedIndex:
     entries: Index
 
-    def __init__(self, start: int = 32, stop: int = STOP_CODE):
+    ___ __init__(self, start: int = 32, stop: int = STOP_CODE):
         entries: Index = defaultdict(set)
-        for char in (chr(i) for i in range(start, stop)):
+        ___ char __ (chr(i) ___ i __ range(start, stop)):
             name = unicodedata.name(char, '')
             if name:
-                for word in tokenize(name):
+                ___ word __ tokenize(name):
                     entries[word].add(char)
         self.entries = entries
 
-    def search(self, query: str) -> set[Char]:
+    ___ search(self, query: s..)  set[Char]:
         if words := list(tokenize(query)):
             found = self.entries[words[0]]
-            return found.intersection(*(self.entries[w] for w in words[1:]))
+            return found.intersection(*(self.entries[w] ___ w __ words[1:]))
         else:
             return set()
 
 
-def format_results(chars: set[Char]) -> Iterator[str]:
-    for char in sorted(chars):
+___ format_results(chars: set[Char])  Iterator[s..]:
+    ___ char __ sorted(chars):
         name = unicodedata.name(char)
         code = ord(char)
         yield f'U+{code:04X}\t{char}\t{name}'
 
 
-def main(words: list[str]) -> None:
+___ main(words: list[s..])  N..:
     if not words:
         print('Please give one or more words to search.')
         sys.exit(2)  # command line usage error
     index = InvertedIndex()
     chars = index.search(' '.join(words))
-    for line in format_results(chars):
+    ___ line __ format_results(chars):
         print(line)
     print('─' * 66, f'{len(chars)} found')
 
 
-if __name__ == '__main__':
+__ _____ __ ______
     main(sys.argv[1:])

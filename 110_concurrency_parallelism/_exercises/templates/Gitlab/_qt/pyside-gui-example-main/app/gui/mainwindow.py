@@ -1,13 +1,13 @@
-from PySide2.QtCore import Qt
-from PySide2.QtWidgets import QMainWindow
+from PySide2.QtCore ______ Qt
+from PySide2.QtWidgets ______ QMainWindow
 
-from ..version import VERSION
-from .mainwidget import MainWidget
+from ..version ______ VERSION
+from .mainwidget ______ MainWidget
 
 
 class MainWindow(QMainWindow):
 
-    def __init__(self):
+    ___ __init__(self):
         super().__init__()
 
         self.resize(1140, 800)

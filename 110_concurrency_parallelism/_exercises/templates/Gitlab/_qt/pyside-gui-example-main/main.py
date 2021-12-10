@@ -1,4 +1,4 @@
-from app.mainapplication import MainApplication
+from app.mainapplication ______ MainApplication
 
-if __name__ == '__main__':
+__ _____ __ ______
     MainApplication.run()

@@ -23,8 +23,8 @@
 #         ticketsSold _ tS.. + 1
 #         tA.. _ tA.. - 1
 #         print("@ Sold One (@ left)".f.. gN.. tA..
-#       sem.release()
-#     print("Ticket Seller @ Sold @ tickets in total".f.. gN.. tS..
+#       sem.r..
+#     print("Ticket Seller @ Sold @ tickets __ total".f.. gN.. tS..
 #
 #   ___ randomDelay
 #     t__.s.. ra__.r_i_0,4)/4)

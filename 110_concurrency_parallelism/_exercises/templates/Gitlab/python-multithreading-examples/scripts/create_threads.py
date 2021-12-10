@@ -5,24 +5,24 @@
 # and each thread prints "Hello World" with a two-second interval
 
 
-import threading
-import time
+______ _
+______ t__
 
 
-def HelloWorld():
+___ HelloWorld():
 	"""User defined Thread function"""
 	print "Hello World"
 	return
 
 
-def Main():
+___ Main():
 	threads = [] # Threads list needed when we use a bulk of threads
 	print "Program started.  This program will print Hello World five times..."
-	for i in range(5):
-		mythread = threading.Thread(target=HelloWorld)
+	___ i __ range(5):
+		mythread = _.? ?_HelloWorld)
 		threads.append(mythread)
-		time.sleep(2)
-		mythread.start()
+		t__.s..(2)
+		mythread.s..
 	print "Done! Program ended"
 
 

@@ -3,10 +3,10 @@
 # ______ ra..
 #
 # ___ executeThread i
-#   print("Thread @ started".f.. ?
+#   print("? @ started".f.. ?
 #   sleepTime _ ra__.r_i.. 1,10
 #   t__.s.. ?
-#   print("Thread @ finished executing".f.. ?
+#   print("? @ finished executing".f.. ?
 #
 # ___ i __ ra.. 10
 #   thread _ ?.T.. t.._? a.._ ?,

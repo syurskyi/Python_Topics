@@ -7,11 +7,11 @@
 #     ?. -
 #
 #   ___ run
-#     print("Thread is now running")
+#     print("? is now running")
 #
 # myThread _ ?
-# print("Created my Thread Object")
+# print("Created my ? Object")
 # ?.s..
 # print("Started my thread")
 # ?.j..
-# print("My Thread finished")
+# print("My ? finished")

@@ -1,21 +1,21 @@
 # # timeitTest.py
-# ______ threading
+# ______ _
 # ______ random
-# ______ time
+# ______ t__
 #
-# def myWorker():
-#   for i in range(5):
-#     print("Starting wait time")
-#     time.sleep(random.randint(1,5))
+# ___ myWorker():
+#   ___ i __ range(5):
+#     print("Starting wait t__")
+#     t__.s..(random.randint(1,5))
 #     print("Completed Wait")
 #
-# thread1 = threading.Thread(target=myWorker)
-# thread2 = threading.Thread(target=myWorker)
-# thread3 = threading.Thread(target=myWorker)
+# thread1 = _.? ?_myWorker)
+# thread2 = _.? ?_myWorker)
+# thread3 = _.? ?_myWorker)
 #
-# thread1.start()
-# thread2.start()
-# thread3.start()
+# thread1.s..
+# thread2.s..
+# thread3.s..
 #
 # thread1.join()
 # thread2.join()

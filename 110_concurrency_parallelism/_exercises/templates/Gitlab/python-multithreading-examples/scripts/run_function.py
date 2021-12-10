@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 
-import threading
-import logging
-import time
+______ _
+______ logging
+______ t__
 
 
 logging.basicConfig(
@@ -12,14 +12,14 @@ logging.basicConfig(
 )
 
 
-class MyThread(threading.Thread):
-    def run(self):
+class MyThread(_.?):
+    ___ run(self):
         logging.debug('This thread is running')
         return
 
-for x in range(5):
+___ x __ range(5):
 	z=MyThread()
-	z.start()
-	time.sleep(1)        
+	z.s..
+	t__.s..(1)        
         
         

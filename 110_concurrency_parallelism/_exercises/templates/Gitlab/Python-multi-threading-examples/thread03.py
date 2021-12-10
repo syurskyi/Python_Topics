@@ -1,55 +1,55 @@
-import threading, time, random
+______ _, t__, random
 try:
-	import Queue
+	______ Queue
 except:
-	import queue as Queue
+	______ queue as Queue
 
 class Producer:
-	def __init__(self):
+	___ __init__(self):
 		self.food = ["ham","soup", "salad"]
 		self.nextTime = 0
-	def run(self):
-		global q # somewhere else in the program q is going to be defined
-		while (time.clock() < 20):
-			if(self.nextTime < time.clock()):
+	___ run(self):
+		global q # somewhere else __ the program q is going to be defined
+		w___ (t__.clock() < 20):
+			if(self.nextTime < t__.clock()):
 				f=self.food[random.randrange(len(self.food))]
 				q.put(f)
 				print "Adding " + f
 				self.nextTime += random.random()
 
 class Consumer:
-	def __init__(self):
+	___ __init__(self):
 		self.nextTime = 0;
-	def run(self):
+	___ run(self):
 		global q
-		while (time.clock() < 20):
-			if(self.nextTime<time.clock() and not q.empty()):
+		w___ (t__.clock() < 20):
+			if(self.nextTime<t__.clock() and not q.empty()):
 				f=q.get()
 				print "Removing " + f
 				self.nextTime += random.random()*2
 
-if __name__ == '__main__':
+__ _____ __ ______
 	q = Queue.Queue(20)
 
 	p = Producer()
 	c = Consumer()
-	pt = threading.Thread(target=p.run, args=())
+	pt = _.? ?_p.run,  ?_())
 	
-	ct = threading.Thread(target=c.run, args=())
+	ct = _.? ?_c.run,  ?_())
 
-	pt.start()
-	print  threading.enumerate()
-	ct.start()
-	print  threading.enumerate()
+	pt.s..
+	print  _.enumerate()
+	ct.s..
+	print  _.enumerate()
 	
 	print "This is Main"
-	print  threading.enumerate()
+	print  _.enumerate()
 	pt.join()
 	print "producer has joined"
-	print  threading.enumerate()
+	print  _.enumerate()
 	ct.join()
 	print "consumer has joined"
-	print  threading.enumerate()
+	print  _.enumerate()
 	print "Exiting from Main"
 	
 

@@ -1,18 +1,18 @@
-import logging
-import threading
-import time
+______ logging
+______ _
+______ t__
 
 
-def wait_for_event(e):
+___ wait_for_event(e):
     logging.debug('wait_for_event starting')
     event_is_set = e.wait()
     logging.debug('event set: %s',event_is_set)
 
 
 
-def wait_for_event_timeout(e,t):
+___ wait_for_event_timeout(e,t):
 
-    while not e.is_set():
+    w___ not e.is_set():
 
         logging.debug('wait_for_event_timeout starting')
         event_is_set = e.wait(t)
@@ -30,18 +30,18 @@ logging.basicConfig(
 )
 
 
-e = threading.Event()
+e = _.Event()
 
-t1 = threading.Thread(name='block',target=wait_for_event,args=(e,))
+t1 = _.?(name='block',target=wait_for_event, ?_(e,))
 
-t1.start()
+t1.s..
 
 
-t2=threading.Thread(name='nonblock',target=wait_for_event_timeout,args=(e,2))
+t2=_.?(name='nonblock',target=wait_for_event_timeout, ?_(e,2))
 
-t2.start()
+t2.s..
 
 logging.debug('Waiting before calling Event.set()')
-time.sleep(0.3)
+t__.s..(0.3)
 e.set()
 logging.debug('Event is set')

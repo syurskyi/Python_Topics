@@ -1,13 +1,13 @@
 
-import random
-import threading
-import logging
+______ random
+______ _
+______ logging
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-10s) %(message)s',
                     )
 
-def show_value(data):
+___ show_value(data):
     try:
         val = data.value
     except AttributeError:
@@ -16,17 +16,17 @@ def show_value(data):
         logging.debug('value=%s', val)
 
 
-def worker(data):
+___ worker(data):
     show_value(data)
     data.value = random.randint(1, 100)
     show_value(data)
 
-local_data = threading.local()
+local_data = _.local()
 show_value(local_data)
 local_data.value = 1000
 show_value(local_data)
 
-for i in range(2):
-    t = threading.Thread(target=worker, args=(local_data,))
-    t.start()
+___ i __ range(2):
+    t = _.? ?_worker,  ?_(local_data,))
+    t.s..
     

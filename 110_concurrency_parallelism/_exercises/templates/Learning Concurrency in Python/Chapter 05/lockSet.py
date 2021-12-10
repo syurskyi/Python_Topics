@@ -1,5 +1,5 @@
 # c_ LockedSet set
-#     """A set where add(), remove(), and 'in' operator are thread-safe"""
+#     """A set where add(), remove(), and '__' operator are thread-safe"""
 #
 #     ___ - $ $$
 #         _lock _ L..

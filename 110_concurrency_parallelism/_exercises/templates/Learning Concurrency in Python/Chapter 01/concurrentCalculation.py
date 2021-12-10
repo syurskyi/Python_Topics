@@ -34,14 +34,14 @@
 #     procs.ap.. ?
 #     ?.s..
 #
-#   # Again we use the .join() method in order to wait for
-#   # execution to finish for all of our processes
+#   # Again we use the .join() method __ order to wait ___
+#   # execution to finish ___ all of our processes
 #   ___ proc __ procs
 #     ?.j..
 #
 #   t1 _ t__.t..
 #   totalTime _ t1 - t0
-#   # we print out the total execution time for our 10
+#   # we print out the total execution t__ ___ our 10
 #   # procs.
 #   print("Execution Time: @".f.. ?
 #

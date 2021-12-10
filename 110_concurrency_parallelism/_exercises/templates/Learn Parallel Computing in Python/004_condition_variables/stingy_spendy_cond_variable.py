@@ -21,7 +21,7 @@
 #                 ?.w..
 #             m.. -= 20
 #             __ m.. < 0:
-#                 print("Money in bank" ?
+#                 print("Money __ bank" ?
 #             ?.r..
 #         print("Spendy Done")
 #
@@ -30,4 +30,4 @@
 # T..(t.._ ?.s.. a.._ .s..
 # T..(t.._ ?.s.. a.._ .s..
 # t___.s.. 5
-# print("Money in the end" ?.m..
+# print("Money __ the end" ?.m..

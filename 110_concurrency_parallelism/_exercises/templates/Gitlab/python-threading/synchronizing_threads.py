@@ -1,9 +1,9 @@
-import logging
-import threading
-import time
+______ logging
+______ _
+______ t__
 
 
-def consumer(cond):
+___ consumer(cond):
     """wait for the condition and use the resource"""
     logging.debug('Starting consumer thread')
     with cond:
@@ -11,7 +11,7 @@ def consumer(cond):
         logging.debug('Resource is available to consumer')
 
 
-def producer(cond):
+___ producer(cond):
     """set up the resource to be used by the consumer"""
     logging.debug('Starting producer thread')
     with cond:
@@ -24,16 +24,16 @@ logging.basicConfig(
     format='%(asctime)s (%(threadName)-2s) %(message)s',
 )
 
-condition = threading.Condition()
-c1 = threading.Thread(name='c1', target=consumer,
-                      args=(condition,))
-c2 = threading.Thread(name='c2', target=consumer,
-                      args=(condition,))
-p = threading.Thread(name='p', target=producer,
-                     args=(condition,))
+condition = _.Condition()
+c1 = _.?(name='c1', target=consumer,
+                       ?_(condition,))
+c2 = _.?(name='c2', target=consumer,
+                       ?_(condition,))
+p = _.?(name='p', target=producer,
+                      ?_(condition,))
 
-c1.start()
-time.sleep(0.2)
-c2.start()
-time.sleep(0.2)
-p.start()
+c1.s..
+t__.s..(0.2)
+c2.s..
+t__.s..(0.2)
+p.s..

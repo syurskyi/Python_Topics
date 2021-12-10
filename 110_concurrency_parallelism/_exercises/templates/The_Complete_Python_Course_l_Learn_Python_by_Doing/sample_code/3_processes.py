@@ -35,7 +35,7 @@
 #
 # a..
 #
-# ?.j..  # this waits for the process to finish
+# ?.j..  # this waits ___ the process to finish
 #
 # print('Two process total t__: ', t__.t__ - s..
 #

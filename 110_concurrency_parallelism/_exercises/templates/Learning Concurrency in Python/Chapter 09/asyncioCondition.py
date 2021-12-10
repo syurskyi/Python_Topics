@@ -15,7 +15,7 @@
 #     # pause to let consumers start
 #     ? ?.s.. 0.1
 #
-#     ___ i in ra.. 1 3
+#     ___ i __ ra.. 1 3
 #         w__ ? ?
 #             print('notifying @ consumers'.f.. ?
 #             ?.n.. n_i
@@ -41,7 +41,7 @@
 #     # Schedule a task to manipulate the condition variable
 #     ?.c_t.. ? c..
 #
-#     # Wait for the consumers to be done
+#     # Wait ___ the consumers to be done
 #     ? ?.w.. ?s
 #
 #

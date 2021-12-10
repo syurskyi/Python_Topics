@@ -9,7 +9,7 @@
 #     sock _ s__.s__
 #     ?.b.. ? ?
 #     ?.l.. 5
-#     print _*Server up, running, and waiting for call on |? |?
+#     print _*Server up, running, and waiting ___ call on |? |?
 #
 #     ___
 #         w__ T..
@@ -26,7 +26,7 @@
 #     mode _ 'sum'
 #
 #     ___
-#         c__.s_a.. _'<welcome: starting in sum mode>\n')
+#         c__.s_a.. _'<welcome: starting __ sum mode>\n')
 #         w__ T..
 #             line _ f__.r_l..
 #             __ line:
@@ -46,7 +46,7 @@
 #
 #                 print _$|c.. --> |l..')
 #                 ___
-#                     nums _ li.. m.. in. l__.s.. ','
+#                     nums _ li.. m.. __. l__.s.. ','
 #                 ______ V..
 #                     c__.s_a..|
 #                         _'ERROR. Enter only integers separated by commas\n')

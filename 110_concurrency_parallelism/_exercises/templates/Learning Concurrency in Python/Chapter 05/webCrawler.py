@@ -23,7 +23,7 @@ c_ Crawler(_.T..):
     myssl = ssl.create_default_context();
     myssl.check_hostname=False
     myssl.verify_mode=ssl.CERT_NONE
-    # process all the links in our queue
+    # process all the links __ our queue
     w... T..
       
       urlLock.a..
@@ -31,7 +31,7 @@ c_ Crawler(_.T..):
       link = linksToCrawl.g..
       urlLock.r..
       # have we reached the end of our queue?
-      __ link is None:
+      __ link is N..:
         _____
 
       # Have we visited this link already?

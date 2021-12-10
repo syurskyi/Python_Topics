@@ -42,5 +42,5 @@
 #     print('-' * 40)
 #
 # ?.pl.. n_t.. t..
-# ?.xl..('Number of threads'); ?.yl..('Time in seconds')
+# ?.xl..('Number of threads'); ?.yl..('Time __ seconds')
 # ?.s..

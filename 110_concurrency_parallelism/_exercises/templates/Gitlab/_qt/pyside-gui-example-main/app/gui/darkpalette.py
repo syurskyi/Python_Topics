@@ -1,4 +1,4 @@
-from PySide2.QtGui import QPalette, QColor
+from PySide2.QtGui ______ QPalette, QColor
 
 
 class DarkPalette(QPalette):
@@ -10,7 +10,7 @@ class DarkPalette(QPalette):
     SECONDARY = QColor(35, 35, 35)
     TERTIARY = QColor(42, 130, 218)
 
-    def __init__(self, *args):
+    ___ __init__(self, *args):
         super().__init__(*args)
         self.setColor(QPalette.Window, self.PRIMARY)
         self.setColor(QPalette.WindowText, self.WHITE)

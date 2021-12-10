@@ -7,7 +7,7 @@
 # ___ update
 #     g.. counter
 #
-#     current_counter _ ? # reading in shared resource
+#     current_counter _ ? # reading __ shared resource
 #     t__.s.. ra__.r_i.. 0, 1 # simulating heavy calculations
 #     c _ c_c.. + 1 # updating shared resource
 #

@@ -5,12 +5,12 @@
 ##2. Call factorial function using thread. 
 
 
-from thread import start_new_thread
+from thread ______ start_new_thread
 
 threadId = 1
 
 
-def factorial(n):
+___ factorial(n):
    global threadId
    if n < 1:   # base case
        print "%s: %d" % ("Thread", threadId )
@@ -18,7 +18,7 @@ def factorial(n):
        return 1
    else:
        returnNumber = n * factorial( n - 1 )  # recursive call
-       print(str(n) + '! = ' + str(returnNumber))
+       print(s..(n) + '! = ' + s..(returnNumber))
        return returnNumber
 
 start_new_thread(factorial,(5, ))

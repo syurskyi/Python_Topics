@@ -21,16 +21,16 @@
 #     start_time _ t__.c..
 #     ___ item __ n_l..
 #         e.. ?
-#     print ("Sequential execution in " + \
+#     print ("Sequential execution __ " + \
 #            st. t__.c.. - s_t..|, "seconds")
 #
-#     ##Thread pool Execution
+#     ##? pool Execution
 #     start_time_1 _ t__.c..
 #     w__ c__.f__.TPE.. m.._5 \
 #          __ executor
 #         ___ i.. __ n_l..
 #             e__.s.. e_i.. i..
-#     print ("Thread pool execution in " + \
+#     print ("? pool execution __ " + \
 #            st. t__.c.. - _1| "seconds")
 #
 #     ##Process pool Execution
@@ -39,5 +39,5 @@
 #          __ executor
 #         ___ item __ n_l..
 #             e__.s.. e_i.. i..
-#     print ("Process pool execution in " + \
+#     print ("Process pool execution __ " + \
 #            st. t__.c.. - _2| "seconds")

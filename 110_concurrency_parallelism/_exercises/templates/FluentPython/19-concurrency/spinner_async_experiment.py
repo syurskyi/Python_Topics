@@ -1,39 +1,39 @@
 # spinner_async_experiment.py
 
 # credits: Example by Luciano Ramalho inspired by
-# Michele Simionato's multiprocessing example in the python-list:
+# Michele Simionato's multiprocessing example __ the python-list:
 # https://mail.python.org/pipermail/python-list/2009-February/675659.html
 
-import asyncio
-import itertools
-import time
+______ _
+______ i__
+______ t__
 
-async def spin(msg: str) -> None:
-    for char in itertools.cycle(r'\|/-'):
+@ ___ spin(msg: s..)  N..:
+    ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, flush=True, end='')
         try:
-            await asyncio.sleep(.1)
-        except asyncio.CancelledError:
+            await _.s..(.1)
+        except _.CancelledError:
             break
     print('THIS WILL NEVER BE OUTPUT')
 
 # tag::SPINNER_ASYNC_EXPERIMENT[]
-async def slow() -> int:
-    time.sleep(3)  # <4>
+@ ___ slow()  int:
+    t__.s..(3)  # <4>
     return 42
 
-async def supervisor() -> int:
-    spinner = asyncio.create_task(spin('thinking!'))  # <1>
+@ ___ supervisor()  int:
+    spinner = _.create_task(spin('thinking!'))  # <1>
     print(f'spinner object: {spinner}')  # <2>
     result = await slow()  # <3>
     spinner.cancel()  # <5>
     return result
 # end::SPINNER_ASYNC_EXPERIMENT[]
 
-def main() -> None:
-    result = asyncio.run(supervisor())
+___ main()  N..:
+    result = _.run(supervisor())
     print(f'Answer: {result}')
 
-if __name__ == '__main__':
+__ _____ __ ______
     main()

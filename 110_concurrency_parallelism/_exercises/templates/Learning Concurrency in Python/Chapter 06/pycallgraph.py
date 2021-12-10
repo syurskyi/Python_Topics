@@ -8,36 +8,36 @@
 #
 # class Banana:
 #
-#     def eat(self):
+#     ___ eat(self):
 #         pass
 # py
 #
 # class Person:
 #
-#     def __init__(self):
+#     ___ __init__(self):
 #         self.no_bananas()
 #
-#     def no_bananas(self):
+#     ___ no_bananas(self):
 #         self.bananas = []
 #
-#     def add_banana(self, banana):
+#     ___ add_banana(self, banana):
 #         self.bananas.append(banana)
 #
-#     def eat_bananas(self):
-#         [banana.eat() for banana in self.bananas]
+#     ___ eat_bananas(self):
+#         [banana.eat() ___ banana __ self.bananas]
 #         self.no_bananas()
 #
 #
-# def main():
+# ___ main():
 #     graphviz = GraphvizOutput()
 #     graphviz.output_file = 'basic.png'
 #
 #     with PyCallGraph(output=graphviz):
 #         person = Person()
-#         for a in xrange(10):
+#         ___ a __ xrange(10):
 #             person.add_banana(Banana())
 #         person.eat_bananas()
 #
 #
-# if __name__ == '__main__':
+# __ _____ __ ______
 #     main()

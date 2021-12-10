@@ -1,7 +1,7 @@
 
-import threading
+______ _
 
-lock = threading.RLock()
+lock = _.RLock()
 
-print 'First try :', lock.acquire()
+print 'First try :', lock.a..
 print 'Second try:', lock.acquire(0)

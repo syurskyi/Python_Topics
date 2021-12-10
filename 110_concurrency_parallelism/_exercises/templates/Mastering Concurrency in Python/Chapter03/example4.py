@@ -21,7 +21,7 @@
 #
 #     w__ ?
 #         t__.s.. d..
-#         print('Thread @ counting down: i...' ?
+#         print('? @ counting down: i...' ?
 #         ? -_ 1
 #
 # thread_lock _ ?.L..

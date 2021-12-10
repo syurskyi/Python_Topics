@@ -1,10 +1,10 @@
 # ______ random
 # ______ timeit
-# ______ time
+# ______ t__
 #
-# def timethis(func):
+# ___ timethis(func):
 #
-#     def function_timer(*args, **kwargs):
+#     ___ function_timer(*args, **kwargs):
 #         start_time = timeit.default_timer()
 #         value = func(*args, **kwargs)
 #         runtime = timeit.default_timer() - start_time
@@ -13,10 +13,10 @@
 #     return function_timer
 #
 # @timethis
-# def long_runner():
-#     for x in range(3):
+# ___ long_runner():
+#     ___ x __ range(3):
 #         sleep_time = random.choice(range(1,3))
-#         time.sleep(sleep_time)
+#         t__.s..(sleep_time)
 #
-# if __name__ == '__main__':
+# __ _____ __ ______
 #     long_runner()

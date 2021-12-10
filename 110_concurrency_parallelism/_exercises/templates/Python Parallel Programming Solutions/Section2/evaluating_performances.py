@@ -10,14 +10,14 @@
 #
 # ___ non_threaded num_iter
 # 	funcs _  # list
-# 	___ i __ ra..(in. ?
+# 	___ i __ ra..(__. ?
 # 		f__.ap.. n..
 # 	___ i __ f..
 # 		i.r..
 #
 # ___ threaded num_threads
 # 	funcs _  # list
-# 	___ i __ ra..(in. ?
+# 	___ i __ ra..(__. ?
 # 		f__.ap.. t..
 # 	___ i __ f..
 # 		i.s..

@@ -37,7 +37,7 @@
 #         __ ?  2 __ 0
 #             r_ '@ is not a prime number.'  ?
 #
-#         limit _ in. sq.. ?|| + 1
+#         limit _ __. sq.. ?|| + 1
 #         ___ i __ ra.. 3 ? 2
 #             __ ?  i __ 0
 #                 r_ '@ is not a prime number.'  ?
@@ -53,7 +53,7 @@
 #     results _ ?.Q..
 #
 #     # spawning consumers with respect to the
-#     # number cores available in the system
+#     # number cores available __ the system
 #     n_consumers _ ?.c_c..
 #     print('Spawning @ consumers...'  n_
 #     consumers _ C.. t.. r..| ___ i __ ra.. n_

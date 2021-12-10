@@ -104,5 +104,5 @@
 #     label _ 'Approximate counter'
 # )
 # plt.legend(handles_[single_counter_line, approx_counter_line], loc_2)
-# plt.xlabel('Number of threads'); plt.ylabel('Time in seconds')
+# plt.xlabel('Number of threads'); plt.ylabel('Time __ seconds')
 # plt.show()

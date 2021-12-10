@@ -4,13 +4,13 @@
 ## This function returns a list of all active threads. 
 
 
-import threading
+______ _
 
 
-def Main():
-	for thread in threading.enumerate():
+___ Main():
+	___ thread __ _.enumerate():
 	    print("Thread name is %s." % thread.getName())
 	    
 
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()

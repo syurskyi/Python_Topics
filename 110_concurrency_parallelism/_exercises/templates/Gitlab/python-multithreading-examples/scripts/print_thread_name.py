@@ -6,37 +6,37 @@
 ## tries to print the name
 
 
-import threading
-import time
+______ _
+______ t__
 
 
-def ThreadFunction():
-	print threading.currentThread().getName(), "Starting"
-	time.sleep(2)
-	print threading.currentThread().getName(), "Exiting"
+___ ThreadFunction():
+	print _.currentThread().getName(), "Starting"
+	t__.s..(2)
+	print _.currentThread().getName(), "Exiting"
 
-def ServiceFunction():
-	print threading.currentThread().getName(), "Starting"
-	time.sleep(3)
-	print threading.currentThread().getName(), "Exiting"
+___ ServiceFunction():
+	print _.currentThread().getName(), "Starting"
+	t__.s..(3)
+	print _.currentThread().getName(), "Exiting"
 
 
-def Main():
-	myThread = threading.Thread(
+___ Main():
+	myThread = _.?(
 		name='Service Function', 
 		target=ServiceFunction
 	)
-	w = threading.Thread(
+	w = _.?(
 		name='Thread function',
 		target=ThreadFunction
 	)
-	w2 = threading.Thread(
+	w2 = _.?(
 		target=ThreadFunction
 	)
 
-	w.start()
-	w2.start()
-	myThread.start()
+	w.s..
+	w2.s..
+	myThread.s..
 
 
 if __name__ == "__main__":

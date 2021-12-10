@@ -9,9 +9,9 @@
 #       ? ?
 #
 #     ___ run
-#       print("Thread @ working on something".f.. ?.c_t..
+#       print("? @ working on something".f.. ?.c_t..
 #       t__.s.. ra__.r_i.. 1,10
-#       print("Thread @ is joining @ waiting on Barrier".f.. ?.c_t.. b__.n_waiting
+#       print("? @ is joining @ waiting on Barrier".f.. ?.c_t.. b__.n_waiting
 #       b__.w..
 #
 #       print("Barrier has been lifted, continuing with work")

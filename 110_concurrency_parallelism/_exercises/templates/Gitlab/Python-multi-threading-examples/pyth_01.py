@@ -14,7 +14,7 @@ except:
 loop= 0
 count= 0
 running_total= 0
-while loop ==0:
+w___ loop ==0:
     inp =  raw_input("Enter a number:")
     
     if inp== "done" or inp== "Done" :

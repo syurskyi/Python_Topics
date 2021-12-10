@@ -2,7 +2,7 @@
 # from urllib.request ______ Request, urlopen
 # ______ ssl
 #
-# def myFunction():
+# ___ myFunction():
 #   # We create this context so that we can crawl
 #   # https sites
 #   myssl = ssl.create_default_context();

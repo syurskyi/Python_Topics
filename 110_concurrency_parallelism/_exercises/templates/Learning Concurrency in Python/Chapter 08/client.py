@@ -4,7 +4,7 @@
 # address _ ('localhost', 6000)
 #
 # w__ Client a.. a.._?'secret password') __ conn
-#     print ?.r..                 # => [2.25, None, 'junk', float]
+#     print ?.r..                 # => [2.25, N.., 'junk', float]
 #
 #     print ?.r_b..          # => 'hello'
 #

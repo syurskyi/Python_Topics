@@ -1,20 +1,20 @@
 
-import os, re, threading
+______ os, re, _
 
-class ip_check(threading.Thread):
-   def __init__ (self,ip):
-      threading.Thread.__init__(self)
+class ip_check(_.?):
+   ___ __init__ (self,ip):
+      _.?.__init__(self)
       self.ip = ip
       self.__successful_pings = -1
-   def run(self):
+   ___ run(self):
       ping_out = os.popen("ping -q -c2 "+self.ip,"r")
-      while True:
+      w___ True:
         line = ping_out.readline()
         if not line: break
         n_received = re.findall(received_packages,line)
         if n_received:
            self.__successful_pings = int(n_received[0])
-   def status(self):
+   ___ status(self):
       if self.__successful_pings == 0:
          return "no response"
       elif self.__successful_pings == 1:
@@ -26,13 +26,13 @@ class ip_check(threading.Thread):
 received_packages = re.compile(r"(\d) received")
 
 check_results = []
-for suffix in range(20,70):
-   ip = "192.168.178."+str(suffix)
+___ suffix __ range(20,70):
+   ip = "192.168.178."+s..(suffix)
    current = ip_check(ip)
    check_results.append(current)
-   current.start()
+   current.s..
 
-for el in check_results:
+___ el __ check_results:
    el.join()
    print "Status from ", el.ip,"is",el.status()
    

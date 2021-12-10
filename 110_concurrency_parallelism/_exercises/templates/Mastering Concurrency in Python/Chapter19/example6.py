@@ -1,6 +1,6 @@
 # # ch19/example6.py
 #
-# import unittest
+# ______ unittest
 #
 # ______ fib(i):
 #     __ i __ [0, 1]:

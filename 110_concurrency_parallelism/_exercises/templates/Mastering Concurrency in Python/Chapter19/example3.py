@@ -7,7 +7,7 @@
 # ____ apscheduler.schedulers.background ______ BackgroundScheduler
 #
 # ___ task
-#     print _*From process |__.g_p.. : The time is |d_t_.n..
+#     print _*From process |__.g_p.. : The t__ is |d_t_.n..
 #     print _*Starting job inside |__.g_p..
 #     t__.s.. 4
 #     print _*Ending job inside |__.g_p..

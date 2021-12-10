@@ -8,8 +8,8 @@
 #
 #
 # a_size _ 3
-# recvdata _ numpy.zeros(a_size,dtype_numpy.in.)
-# senddata _ (rank+1)*numpy.arange(a_size,dtype_numpy.in.)
+# recvdata _ numpy.zeros(a_size,dtype_numpy.__.)
+# senddata _ (rank+1)*numpy.arange(a_size,dtype_numpy.__.)
 #
 # print(" process @ sending @ " @(rank , senddata))
 #

@@ -8,7 +8,7 @@
 #     g.. counter
 #
 #     w__ c_l..
-#         c_c.. _ ? # reading in shared resource
+#         c_c.. _ ? # reading __ shared resource
 #         t__.s.. ra__.r_i.. 0, 1 # simulating heavy calculations
 #         counter _ c_c.. + 1
 #

@@ -1,16 +1,16 @@
-import sys
-from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget
-from PyQt5.QtWidgets import QPushButton
-from PyQt5.QtCore import QSize
-import psutil
-import subprocess
-import os
-import time
-from threading import Thread
+______ sys
+from PyQt5 ______ QtCore, QtWidgets
+from PyQt5.QtWidgets ______ QMainWindow, QLabel, QGridLayout, QWidget
+from PyQt5.QtWidgets ______ QPushButton
+from PyQt5.QtCore ______ QSize
+______ psutil
+______ subprocess
+______ os
+______ t__
+from _ ______ ?
 
 class MainWindow(QMainWindow):
-    def __init__(self):
+    ___ __init__(self):
         QMainWindow.__init__(self)
         self.close=False
         self.setWindowTitle('Boom')
@@ -24,59 +24,59 @@ class MainWindow(QMainWindow):
         self.buttons={}
         self.fileButtons=[]
 
-    def clickMethod(self,fileName,dataName):
+    ___ clickMethod(self,fileName,dataName):
         p=subprocess.Popen(["python","scripts/"+fileName,"-f","data/"+dataName])
         self.buttons[dataName]['p']= psutil.Process(pid=p.pid)
         self.buttons[dataName]['pauseButton'].setEnabled(True)
         self.buttons[dataName]['killButton'].setEnabled(True)
         self.buttons[dataName]['newButton'].setDisabled(True)
-        Thread(target=lambda x=p,dataName=dataName:self.poller(x,dataName)).start()
+        ? ?_lambda x=p,dataName=dataName:self.poller(x,dataName)).s..
 
-    def poller(self,p,dataName):
-        while True:
+    ___ poller(self,p,dataName):
+        w___ True:
             if self.close:
                 break
-            time.sleep(0.1)
-            if p.poll() is not None:
+            t__.s..(0.1)
+            if p.poll() is not N..:
                 self.buttons[dataName]['pauseButton'].setEnabled(False)
                 self.buttons[dataName]['killButton'].setEnabled(False)
                 self.buttons[dataName]['newButton'].setDisabled(False)
                 self.buttons[dataName]['resumeButton'].setDisabled(True)
                 break
 
-    def pauseMethod(self,dataName):
+    ___ pauseMethod(self,dataName):
         self.buttons[dataName]['p'].suspend()
         self.buttons[dataName]['pauseButton'].setDisabled(True)
         self.buttons[dataName]['resumeButton'].setDisabled(False)
 
-    def resumeMethod(self,dataName):
+    ___ resumeMethod(self,dataName):
         self.buttons[dataName]['p'].resume()
         self.buttons[dataName]['pauseButton'].setDisabled(False)
         self.buttons[dataName]['resumeButton'].setDisabled(True)
 
-    def killMethod(self,dataName):
+    ___ killMethod(self,dataName):
         self.buttons[dataName]['p'].kill()
         self.buttons[dataName]['pauseButton'].setEnabled(False)
         self.buttons[dataName]['resumeButton'].setEnabled(False)
         self.buttons[dataName]['killButton'].setEnabled(False)
         self.buttons[dataName]['newButton'].setEnabled(True)
 
-    def refresh(self):
-        for button in self.buttons:
+    ___ refresh(self):
+        ___ button __ self.buttons:
             self.buttons[button]['newLabel'].deleteLater()
             self.buttons[button]['newButton'].deleteLater()
             self.buttons[button]['pauseButton'].deleteLater()
             self.buttons[button]['resumeButton'].deleteLater()
             self.buttons[button]['killButton'].deleteLater()
 
-        for fileButton in self.fileButtons:
+        ___ fileButton __ self.fileButtons:
             fileButton.deleteLater()
 
         self.buttons={}
         self.fileButtons=[]
         x=0
-        for file in os.listdir('./scripts'):
-            fileButton = QPushButton(str(file), self)
+        ___ file __ os.listdir('./scripts'):
+            fileButton = QPushButton(s..(file), self)
             
             # state is used below because it get passed a bool value so if you use val=file directly, 
             # then val will get a bool value i.e. False
@@ -86,13 +86,13 @@ class MainWindow(QMainWindow):
             x+=50
             self.fileButtons.append(fileButton)
 
-    def loadFile(self,fileName):
-        for fileButton in self.fileButtons:
+    ___ loadFile(self,fileName):
+        ___ fileButton __ self.fileButtons:
             fileButton.deleteLater()
         self.fileButtons=[]
         
         x=0
-        for dataName in os.listdir('./data'):
+        ___ dataName __ os.listdir('./data'):
             newLabel= QLabel(dataName,self)
             newLabel.show()
             newLabel.move(x+40, 0)
@@ -129,7 +129,7 @@ class MainWindow(QMainWindow):
 
             x+=100
 
-    def closeEvent(self, event):
+    ___ closeEvent(self, event):
         self.close=True
         event.accept()
         print('Window closed')

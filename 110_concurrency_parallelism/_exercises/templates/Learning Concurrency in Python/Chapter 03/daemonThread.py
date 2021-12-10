@@ -2,7 +2,7 @@
 # ______ ti..
 #
 # ___ standardThread
-#     print("Starting my Standard Thread")
+#     print("Starting my Standard ?")
 #     t__.s.. 20
 #     print("Ending my standard thread")
 #

@@ -1,32 +1,32 @@
-import threading
-import time
+______ _
+______ t__
 
-def print_epoch(name_of_thread, delay):
+___ print_epoch(name_of_thread, delay):
     count = 0
-    while count < 5:
-        time.sleep(delay)
+    w___ count < 5:
+        t__.s..(delay)
         count+=1
-        print(name_of_thread, "----------",time.time())
+        print(name_of_thread, "----------",t__.t__())
 
-def print_Cube(thread,num):
+___ print_Cube(thread,num):
     print("Cube = {}".format(num*num*num))
 
-def print_Square(thread, num):
+___ print_Square(thread, num):
     print("Square = {}".format(num*num))
 
-if __name__ == '__main__':
-    #creating an instance of the Thread Class
+__ _____ __ ______
+    #creating an instance of the ? Class
     #target= the function print_epoch, args = (name_of_thread, delay) [arguments from the print_epoch function]
-    t1 = threading.Thread(target=print_epoch, args=("Thread 1", 1))
-    t2 = threading.Thread(target=print_epoch, args=("Thread 2", 2))
-    t3 = threading.Thread(target=print_Square, args=("Thread 3", 2))
-    t4 = threading.Thread(target=print_Cube, args=("Thread 4", 2))
+    t1 = _.? ?_print_epoch,  ?_("Thread 1", 1))
+    t2 = _.? ?_print_epoch,  ?_("Thread 2", 2))
+    t3 = _.? ?_print_Square,  ?_("Thread 3", 2))
+    t4 = _.? ?_print_Cube,  ?_("Thread 4", 2))
 
     #Initiate the threads
-    t1.start()
-    t2.start()
-    t3.start()
-    t4.start()
+    t1.s..
+    t2.s..
+    t3.s..
+    t4.s..
     #join threads back to main
     t1.join()
     t2.join()

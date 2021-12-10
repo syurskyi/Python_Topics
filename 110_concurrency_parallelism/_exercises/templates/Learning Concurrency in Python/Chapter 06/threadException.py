@@ -8,7 +8,7 @@
 #   w___ T..
 #     ___
 #       t__.s.. 2
-#       r_ E.. ("Exception Thrown In Child Thread @".f.. ?.c_t..
+#       r_ E.. ("Exception Thrown In Child ? @".f.. ?.c_t..
 #     ______
 #       ?.pu. ___.e..
 #

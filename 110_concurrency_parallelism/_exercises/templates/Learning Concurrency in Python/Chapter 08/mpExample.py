@@ -23,7 +23,7 @@
 #     __ ? % 2 __ 0
 #         r_ ?
 #
-#     sqrt_n _ in. ma__.fl.. ma__.sq.. ?
+#     sqrt_n _ __. ma__.fl.. ma__.sq.. ?
 #     ___ i __ ra.. 3 ? + 1, 2
 #         __ ? % i __ 0
 #             r_ ?
@@ -33,7 +33,7 @@
 #   t1 _ t_i_.d_t..
 #   w__ P.. 4 __ p
 #     print ?.ma. ? P..
-#   print("@ Seconds needed for multiprocessing pool".f.. t_i_.d_t.. - t1
+#   print("@ Seconds needed ___ multiprocessing pool".f.. t_i_.d_t.. - t1
 #
 # __ _________ __ ________
 #   ?

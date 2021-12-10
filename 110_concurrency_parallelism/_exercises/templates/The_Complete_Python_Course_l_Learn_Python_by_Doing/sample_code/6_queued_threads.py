@@ -50,7 +50,7 @@
 # 	?.s..
 #
 # ___ thread __ ?
-# 	?.j..  # wait for it to finish
+# 	?.j..  # wait ___ it to finish
 #
-# c__.j..  # wait for counter_queue to be empty
-# j__.j..  # wait for job_queue to be empty
+# c__.j..  # wait ___ counter_queue to be empty
+# j__.j..  # wait ___ job_queue to be empty

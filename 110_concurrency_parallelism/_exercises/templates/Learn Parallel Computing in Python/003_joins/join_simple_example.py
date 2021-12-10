@@ -3,17 +3,17 @@
 #
 #
 # ___ child
-#     print("Child Thread doing work...")
+#     print("Child ? doing work...")
 #     t___.s.. 5
-#     print("Child Thread done...")
+#     print("Child ? done...")
 #
 #
 # ___ parent
 #     t = T..(t.._child, a.._ # list
 #     ?.s..
-#     print("Parent Thread is waiting...")
+#     print("Parent ? is waiting...")
 #     ?.j..
-#     print("Parent Thread is unblocked...")
+#     print("Parent ? is unblocked...")
 #
 #
 # p..

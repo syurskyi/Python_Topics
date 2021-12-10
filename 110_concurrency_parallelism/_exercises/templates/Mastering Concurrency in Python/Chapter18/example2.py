@@ -5,9 +5,9 @@
 #
 # ___
 #     w__ T..
-#         line _ in..('Please enter a list of integer, separated by commas: ')
+#         line _ __..('Please enter a list of integer, separated by commas: ')
 #         ___
-#             nums _ li.. m..(in. ?.sp.. ','
+#             nums _ li.. m..(__. ?.sp.. ','
 #         ______ V..
 #             print('ERROR. Enter only integers separated by commas')
 #             c..

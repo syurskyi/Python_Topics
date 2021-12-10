@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import math
+______ math
 
 PRIME_FIXTURE = [
     (2, True),
@@ -25,10 +25,10 @@ PRIME_FIXTURE = [
     (9999999999999999, False),
 ]
 
-NUMBERS = [n for n, _ in PRIME_FIXTURE]
+NUMBERS = [n ___ n, _ __ PRIME_FIXTURE]
 
 # tag::IS_PRIME[]
-def is_prime(n: int) -> bool:
+___ is_prime(n: int)  bool:
     if n < 2:
         return False
     if n == 2:
@@ -37,15 +37,15 @@ def is_prime(n: int) -> bool:
         return False
 
     root = math.floor(math.sqrt(n))
-    for i in range(3, root + 1, 2):
+    ___ i __ range(3, root + 1, 2):
         if n % i == 0:
             return False
     return True
 # end::IS_PRIME[]
 
-if __name__ == '__main__':
+__ _____ __ ______
 
-    for n, prime in PRIME_FIXTURE:
+    ___ n, prime __ PRIME_FIXTURE:
         prime_res = is_prime(n)
         assert prime_res == prime
         print(n, prime)

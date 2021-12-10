@@ -3,9 +3,9 @@
 # ______ ra..
 #
 # ___ myThread i
-#   print("Thread @: started".f.. ?
+#   print("? @: started".f.. ?
 #   t__.s.. ra__.r_i.. 1,5
-#   print("Thread @: finished".f.. ?
+#   print("? @: finished".f.. ?
 #
 #
 # ___ main

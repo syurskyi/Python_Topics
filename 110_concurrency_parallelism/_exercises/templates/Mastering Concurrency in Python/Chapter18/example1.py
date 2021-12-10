@@ -7,7 +7,7 @@
 #     sock _ s__.s__
 #     ?.bind host port
 #     ?.li..  5
-#     print _*Server up, running, and waiting for call on |h.. |p..
+#     print _*Server up, running, and waiting ___ call on |h.. |p..
 #
 #     ___
 #         w__ T..

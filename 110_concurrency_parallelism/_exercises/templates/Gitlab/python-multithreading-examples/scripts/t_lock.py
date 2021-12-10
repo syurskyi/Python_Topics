@@ -1,41 +1,41 @@
 #!/usr/bin/python
 
 
-import threading
-import time 
+______ _
+______ t__ 
 
 
-tLock = threading.Lock()
+tLock = _.?
 
 
-def timer(name, delay, repeat):
+___ timer(name, delay, repeat):
   print ("Timer: " + name + " Started")
   
-  tLock.acquire()
+  tLock.a..
   print name + " has acquired lock"
-  while repeat > 0:
-    time.sleep(delay)
-    print (name + ":" + str(time.ctime(time.time())))
+  w___ repeat > 0:
+    t__.s..(delay)
+    print (name + ":" + s..(t__.c..(t__.t__())))
     repeat -= 1
   print name + "is releasing the lock"
-  tLock.release()
+  tLock.r..
   print ("Timer: " + name + "Completed")
 
   
-def Main():
-  thread1 = threading.Thread(
+___ Main():
+  thread1 = _.?(
     target=timer, 
-    args=("Timer1", 1, 5)
+     ?_("Timer1", 1, 5)
   )
-  thread2 = threading.Thread(
+  thread2 = _.?(
     target=timer, 
-    args=("Timer2", 2, 5)
+     ?_("Timer2", 2, 5)
   )
-  thread1.start()
-  thread2.start()
+  thread1.s..
+  thread2.s..
 
   print ("Main function completed")
 
 
-if __name__ == '__main__':
+__ _____ __ ______
   Main()

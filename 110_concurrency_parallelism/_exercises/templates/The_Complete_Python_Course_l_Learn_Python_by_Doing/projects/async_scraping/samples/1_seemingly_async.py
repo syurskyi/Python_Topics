@@ -1,17 +1,17 @@
-______ asyncio
+______ _
 ______ aiohttp
 ______ t___
 
-async ___ fetch_page(session, url):
+@ ___ fetch_page(session, url):
     start = t___.t___()
-    async with session.get(url) as response:
+    @ with session.get(url) as response:
         print(f'{url} took {t___.t___() - start}')
         r.. response.status
 
 
-async ___ get_multiple_pages(loop, *urls):
+@ ___ get_multiple_pages(loop, *urls):
     pages = []
-    async with aiohttp.ClientSession(loop=loop) as session:
+    @ with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
             pages.a..(await fetch_page(session, url))
     r.. pages
@@ -20,7 +20,7 @@ async ___ get_multiple_pages(loop, *urls):
 __ _____ __ _____
 
     ___ main
-        loop = asyncio.get_event_loop()
+        loop = _.get_event_loop()
         urls = [
             'http://google.com',
             'http://example.com',

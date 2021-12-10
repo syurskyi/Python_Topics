@@ -1,11 +1,11 @@
-# # #  To use threads you need ______ Thread using the following code:
+# # #  To use threads you need ______ ? using the following code:
 # ____ th.. ______ T..
 #
-# # # Also we use the sleep function to make the thread "sleep"
+# # # Also we use the s.. function to make the thread "s.."
 # ____ ti.. ______ s..
 #
-# # # To create a thread in Python you'll want to make your class work as a thread.
-# # # For this, you should subclass your class from the Thread class
+# # # To create a thread __ Python you'll want to make your class work as a thread.
+# # # For this, you should subclass your class from the ? class
 #
 #
 # c_ CookBook T..
@@ -20,13 +20,13 @@
 # # # The run method prints ten times the message
 #
 #     ___ run
-#         print("Thread Starting\n")
+#         print("? Starting\n")
 #         x_0
 #         w__ |? < 10
 #             ?
 #             s.. 2
 #             ? +_ 1
-#         print("Thread Ended\n")
+#         print("? Ended\n")
 #
 #
 # #start the main process

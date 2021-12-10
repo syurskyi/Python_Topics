@@ -12,7 +12,7 @@
 #     rank _ comm.rank
 #     size _ comm.size
 #
-#     grid_rows _ in.(np.floor(np.sqrt(comm.size)))
+#     grid_rows _ __.(np.floor(np.sqrt(comm.size)))
 #     grid_column _ comm.size // grid_rows
 #
 #

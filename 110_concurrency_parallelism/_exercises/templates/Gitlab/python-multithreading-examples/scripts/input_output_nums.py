@@ -2,30 +2,30 @@
 
 
 ## This multithreading program runs five times
-## and each time the program takes two numbers as given input
+## and each t__ the program takes two numbers as given input
 ## and print sum of them.
 
 
-import threading
-import time
+______ _
+______ t__
 
 
-def MyThread(num1, num2):
+___ MyThread(num1, num2):
 	print "Given Numbers: %s, %s" %(num1, num2)
 	sum1= int(num1) + int(num2)
 	print "Result: %d" %sum1
 	return
 
 
-def Main():
+___ Main():
 	threads = []
-	for i in range(5):
-		t = threading.Thread(target=MyThread, args=(10,20))
+	___ i __ range(5):
+		t = _.? ?_MyThread,  ?_(10,20))
 		threads.append(t)
-		time.sleep(0.5)
-		t.start()
+		t__.s..(0.5)
+		t.s..
 
 
-if __name__ == '__main__':
+__ _____ __ ______
 	Main()
 	

@@ -1,28 +1,28 @@
 #!/usr/bin/env python3
-from curio import run, TaskGroup
-import curio.socket as socket
-from keyword import kwlist
+from curio ______ run, TaskGroup
+______ curio.socket as socket
+from keyword ______ kwlist
 
 MAX_KEYWORD_LEN = 4
 
 
-async def probe(domain: str) -> tuple[str, bool]:  # <1>
+@ ___ probe(domain: s..)  tuple[s.., bool]:  # <1>
     try:
-        await socket.getaddrinfo(domain, None)  # <2>
+        await socket.getaddrinfo(domain, N..)  # <2>
     except socket.gaierror:
         return (domain, False)
     return (domain, True)
 
-async def main() -> None:
-    names = (kw for kw in kwlist if len(kw) <= MAX_KEYWORD_LEN)
-    domains = (f'{name}.dev'.lower() for name in names)
-    async with TaskGroup() as group:  # <3>
-        for domain in domains:
+@ ___ main()  N..:
+    names = (kw ___ kw __ kwlist if len(kw) <= MAX_KEYWORD_LEN)
+    domains = (f'{name}.dev'.lower() ___ name __ names)
+    @ with TaskGroup() as group:  # <3>
+        ___ domain __ domains:
             await group.spawn(probe, domain)  # <4>
-        async for task in group:  # <5>
+        @ ___ task __ group:  # <5>
             domain, found = task.result
             mark = '+' if found else ' '
             print(f'{mark} {domain}')
 
-if __name__ == '__main__':
+__ _____ __ ______
     run(main())  # <6>

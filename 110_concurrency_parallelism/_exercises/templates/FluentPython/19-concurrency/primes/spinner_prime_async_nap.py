@@ -1,16 +1,16 @@
 # spinner_prime_async_nap.py
 
 # credits: Example by Luciano Ramalho inspired by
-# Michele Simionato's multiprocessing example in the python-list:
+# Michele Simionato's multiprocessing example __ the python-list:
 # https://mail.python.org/pipermail/python-list/2009-February/675659.html
 
-import asyncio
-import itertools
-import math
-import functools
+______ _
+______ i__
+______ math
+______ functools
 
 # tag::PRIME_NAP[]
-async def is_prime(n):
+@ ___ is_prime(n):
     if n < 2:
         return False
     if n == 2:
@@ -19,41 +19,41 @@ async def is_prime(n):
         return False
 
     root = math.isqrt(n)
-    for i in range(3, root + 1, 2):
+    ___ i __ range(3, root + 1, 2):
         if n % i == 0:
             return False
         if i % 100_000 == 1:
-            await asyncio.sleep(0)  # <1>
+            await _.s..(0)  # <1>
     return True
 # end::PRIME_NAP[]
 
 
-async def spin(msg: str) -> None:
-    for char in itertools.cycle(r'\|/-'):
+@ ___ spin(msg: s..)  N..:
+    ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, flush=True, end='')
         try:
-            await asyncio.sleep(.1)
-        except asyncio.CancelledError:
+            await _.s..(.1)
+        except _.CancelledError:
             break
     blanks = ' ' * len(status)
     print(f'\r{blanks}\r', end='')
 
-async def check(n: int) -> int:
+@ ___ check(n: int)  int:
     return await is_prime(n)
 
-async def supervisor(n: int) -> int:
-    spinner = asyncio.create_task(spin('thinking!'))
+@ ___ supervisor(n: int)  int:
+    spinner = _.create_task(spin('thinking!'))
     print('spinner object:', spinner)
     result = await check(n)
     spinner.cancel()
     return result
 
-def main() -> None:
+___ main()  N..:
     n = 5_000_111_000_222_021
-    result = asyncio.run(supervisor(n))
+    result = _.run(supervisor(n))
     msg = 'is' if result else 'is not'
     print(f'{n:,} {msg} prime')
 
-if __name__ == '__main__':
+__ _____ __ ______
     main()

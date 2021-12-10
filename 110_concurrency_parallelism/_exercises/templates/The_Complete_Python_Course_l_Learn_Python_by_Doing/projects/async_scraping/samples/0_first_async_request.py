@@ -1,11 +1,11 @@
 ______ aiohttp
-______ asyncio
+______ _
 
-async ___ fetch_page(url):
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
+@ ___ fetch_page(url):
+    @ with aiohttp.ClientSession() as session:
+        @ with session.get(url) as response:
             print(response.status)
             r.. response.status
 
-loop = asyncio.get_event_loop()
+loop = _.get_event_loop()
 loop.run_until_complete(fetch_page('http://google.com'))

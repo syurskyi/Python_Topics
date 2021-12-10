@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 
 # tag::TCP_MOJIFINDER_TOP[]
-import asyncio
-import functools
-import sys
-from asyncio.trsock import TransportSocket
-from typing import cast
+______ _
+______ functools
+______ sys
+from _.trsock ______ TransportSocket
+from typing ______ cast
 
-from charindex import InvertedIndex, format_results  # <1>
+from charindex ______ InvertedIndex, format_results  # <1>
 
 CRLF = b'\r\n'
 PROMPT = b'?> '
 
-async def finder(index: InvertedIndex,          # <2>
-                 reader: asyncio.StreamReader,
-                 writer: asyncio.StreamWriter) -> None:
+@ ___ finder(index: InvertedIndex,          # <2>
+                 reader: _.StreamReader,
+                 writer: _.StreamWriter)  N..:
     client = writer.get_extra_info('peername')  # <3>
-    while True:  # <4>
+    w___ True:  # <4>
         writer.write(PROMPT)  # can't await!  # <5>
         await writer.drain()  # must await!  # <6>
         data = await reader.readline()  # <7>
@@ -39,12 +39,12 @@ async def finder(index: InvertedIndex,          # <2>
 # end::TCP_MOJIFINDER_TOP[]
 
 # tag::TCP_MOJIFINDER_SEARCH[]
-async def search(query: str,  # <1>
+@ ___ search(query: s..,  # <1>
                  index: InvertedIndex,
-                 writer: asyncio.StreamWriter) -> int:
+                 writer: _.StreamWriter)  int:
     chars = index.search(query)  # <2>
-    lines = (line.encode() + CRLF for line  # <3>
-                in format_results(chars))
+    lines = (line.encode() + CRLF ___ line  # <3>
+                __ format_results(chars))
     writer.writelines(lines)  # <4>
     await writer.drain()      # <5>
     status_line = f'{"─" * 66} {len(chars)} found'  # <6>
@@ -54,8 +54,8 @@ async def search(query: str,  # <1>
 # end::TCP_MOJIFINDER_SEARCH[]
 
 # tag::TCP_MOJIFINDER_MAIN[]
-async def supervisor(index: InvertedIndex, host: str, port: int) -> None:
-    server = await asyncio.start_server(    # <1>
+@ ___ supervisor(index: InvertedIndex, host: s.., port: int)  N..:
+    server = await _.start_server(    # <1>
         functools.partial(finder, index),   # <2>
         host, port)                         # <3>
 
@@ -64,15 +64,15 @@ async def supervisor(index: InvertedIndex, host: str, port: int) -> None:
     print(f'Serving on {addr}. Hit CTRL-C to stop.')  # <5>
     await server.serve_forever()  # <6>
 
-def main(host: str = '127.0.0.1', port_arg: str = '2323'):
+___ main(host: s.. = '127.0.0.1', port_arg: s.. = '2323'):
     port = int(port_arg)
     print('Building index.')
     index = InvertedIndex()                         # <7>
     try:
-        asyncio.run(supervisor(index, host, port))  # <8>
+        _.run(supervisor(index, host, port))  # <8>
     except KeyboardInterrupt:                       # <9>
         print('\nServer shut down.')
 
-if __name__ == '__main__':
+__ _____ __ ______
     main(*sys.argv[1:])
 # end::TCP_MOJIFINDER_MAIN[]

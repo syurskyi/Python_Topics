@@ -1,26 +1,26 @@
-from collections.abc import Iterable, AsyncIterator
-from typing import NamedTuple
+from collections.abc ______ Iterable, AsyncIterator
+from typing ______ NamedTuple
 
-from curio import TaskGroup
-import curio.socket as socket
+from curio ______ TaskGroup
+______ curio.socket as socket
 
 
 class Result(NamedTuple):
-    domain: str
+    domain: s..
     found: bool
 
 
-async def probe(domain: str) -> Result:
+@ ___ probe(domain: s..)  Result:
     try:
-        await socket.getaddrinfo(domain, None)
+        await socket.getaddrinfo(domain, N..)
     except socket.gaierror:
         return Result(domain, False)
     return Result(domain, True)
 
 
-async def multi_probe(domains: Iterable[str]) -> AsyncIterator[Result]:
-    async with TaskGroup() as group:
-        for domain in domains:
+@ ___ multi_probe(domains: Iterable[s..])  AsyncIterator[Result]:
+    @ with TaskGroup() as group:
+        ___ domain __ domains:
             await group.spawn(probe, domain)
-        async for task in group:
+        @ ___ task __ group:
             yield task.result

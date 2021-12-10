@@ -22,7 +22,7 @@
 #     ?.s_b.. 0 # Make asynchronous
 #
 #     sessions|? _ N..
-#     print _*Server up, running, and waiting for call on ? ?')
+#     print _*Server up, running, and waiting ___ call on ? ?')
 #
 #     ___
 #         w__ T..
@@ -78,7 +78,7 @@
 #     mode _ 'sum'
 #
 #     ___
-#         c__.s_a.. _'<welcome: starting in sum mode>\n')
+#         c__.s_a.. _'<welcome: starting __ sum mode>\n')
 #         w__ T..
 #             line _ ? r_l.. c..
 #             __ ? __ 'quit'
@@ -95,7 +95,7 @@
 #
 #             print_$|sessions|c__ .a..| --> |l..')
 #             ___
-#                 nums _ li.. m.. in. l__.sp.. ','
+#                 nums _ li.. m.. __. l__.sp.. ','
 #             ______ V..
 #                 c__.s_a..|
 #                     _'ERROR. Enter only integers separated by commas\n')

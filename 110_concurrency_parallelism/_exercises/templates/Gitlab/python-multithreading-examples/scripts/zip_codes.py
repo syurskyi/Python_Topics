@@ -1,36 +1,36 @@
 #!/usr/bin/python
 
 
-import requests
-from multiprocessing.dummy import Pool
-import time
-from datadiff import diff
+______ requests
+from multiprocessing.dummy ______ Pool
+______ t__
+from datadiff ______ diff
 
  
-def getzip(code):
+___ getzip(code):
     try:
-        code = str(code)
+        code = s..(code)
         url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(code)
         res = requests.get(url).json()['results']
         if len(res) < 1: # Re-try
             print "Retrying"
             return getzip(code)
-        iszip = 'postal_code' in res[0]['types'] and "United States" in str(res[0]['address_components'])
+        iszip = 'postal_code' __ res[0]['types'] and "United States" __ s..(res[0]['address_components'])
     except Exception as e:
         print "In error"
         print e
         iszip = False
     return (code, iszip)
 ziprange = range(94400, 94420)
-print "Range is: " + str(len(ziprange))
+print "Range is: " + s..(len(ziprange))
  
 print "Using one thread"
-start = time.time()
-syncres = [getzip(c) for c in ziprange] 
-print "took " + str(time.time() - start)
+start = t__.t__()
+syncres = [getzip(c) ___ c __ ziprange] 
+print "took " + s..(t__.t__() - start)
  
 print "Using multiple threads"
-start = time.time()
+start = t__.t__()
  
 # Magic
 pool = Pool(10)
@@ -40,7 +40,7 @@ pool.join()
 asyncres = sorted(asyncres)
 # End of Magic
  
-print "took " + str(time.time() - start)
+print "took " + s..(t__.t__() - start)
  
 # Make sure results are equal
 d = diff(syncres, asyncres)
@@ -48,5 +48,5 @@ if len(d.diffs) > 0:
     print "diff is"
     print d
  
-for r in asyncres:
+___ r __ asyncres:
     print "Zip code {} is {} US code".format(r[0], "valid" if r[1] else "invalid")

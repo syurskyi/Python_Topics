@@ -1,26 +1,26 @@
 #!/usr/bin/python
 
 
-## This function returns the number of threads currently in execution. 
+## This function returns the number of threads currently __ execution. 
 ## Let us modify the last script’s ThreadFunction function.
 
 
-import time
-import threading
-from threading import Thread
+______ t__
+______ _
+from _ ______ ?
 
 
-def ThreadFunction(i):
+___ ThreadFunction(i):
     print("Thread %i going to sleep for 5 seconds." % i)
-    time.sleep(5)
+    t__.s..(5)
     print("Thread %i is awake now." % i)
 
 
-def Main():
-  for i in range(10):
-      myThread = Thread(target=ThreadFunction, args=(i, ))
-      myThread.start()
-      print("Current Thread count: %i." % threading.active_count())
+___ Main():
+  ___ i __ range(10):
+      myThread = ? ?_ThreadFunction,  ?_(i, ))
+      myThread.s..
+      print("Current Thread count: %i." % _.active_count())
     
     
 if __name__ == "__main__":    

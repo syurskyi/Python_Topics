@@ -24,7 +24,7 @@
 #         tA.. _ tA.. - 1
 #         print("@ Sold One (@ left)".f.. gN.. tA..
 #       s__.r..
-#     print("Ticket Seller @ Sold @ tickets in total".f.. gN.. tS..
+#     print("Ticket Seller @ Sold @ tickets __ total".f.. gN.. tS..
 #
 #   ___ randomDelay
 #     t__.s.. ra__.r_i..(0,4)/4)

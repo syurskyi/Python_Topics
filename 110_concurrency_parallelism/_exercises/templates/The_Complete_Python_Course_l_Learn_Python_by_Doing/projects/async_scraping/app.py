@@ -15,7 +15,7 @@ have been put in place to prevent us from making too many requests at once!).
 Servers sometimes do this so that you can't make 1000 simultaneous requests and crash the server.
 """
 
-______ asyncio
+______ _
 ______ aiohttp
 ______ async_timeout
 ______ requests
@@ -30,7 +30,7 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d
                     filename='logs.txt')
 logger = logging.getLogger('scraping')
 
-loop = asyncio.get_event_loop()
+loop = _.get_event_loop()
 
 print('Loading books list...')
 logger.info('Loading books list.')
@@ -44,20 +44,20 @@ page = AllBooksPage(page_content)
 _books = []
 
 
-async ___ fetch_page(session, url):
+@ ___ fetch_page(session, url):
     page_start = t___.t___()
     logger.info(f'Requesting {url}')
-    async with session.get(url) as response:
+    @ with session.get(url) as response:
         print(f'{url} took {t___.t___() - page_start}')
         r.. await response.text()
 
 
-async ___ get_multiple_pages(loop, *urls):
+@ ___ get_multiple_pages(loop, *urls):
     tasks = []
-    async with aiohttp.ClientSession(loop=loop) as session:
+    @ with aiohttp.ClientSession(loop=loop) as session:
         ___ url __ urls:
             tasks.a..(fetch_page(session, url))
-        r.. await asyncio.gather(*tasks)
+        r.. await _.gather(*tasks)
 
 
 logger.info(f'Going through {page.page_count} pages of books...')
