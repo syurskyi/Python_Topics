@@ -40,8 +40,8 @@ pool = ActivePool()
 s = _.Semaphore(2)
 ___ i __ r.. 4):
     t = _.?(
-        target=worker,
-        name=s..(i),
+        ?_worker,
+        ?_s..(i),
          ?_(s, pool),
     )
     t.s..

@@ -75,14 +75,14 @@ c_ calcC(_.?):
                 break
         print ('thread '+name+' stopped')
 # Startup sequence
-calcA = calcA(name='incrementA')
+calcA = calcA(?_'incrementA')
 s..(0.1)
-calcB = calcB(name='incrementB')
+calcB = calcB(?_'incrementB')
 s..(0.1)
-calcC = calcC(name='incrementC')
+calcC = calcC(?_'incrementC')
 s..(0.1)
 
-__ __name__ == "__main__":
+__ ____ __ ______:
     ___
     	print 'Press CTRL+C to quit'
     	running = True

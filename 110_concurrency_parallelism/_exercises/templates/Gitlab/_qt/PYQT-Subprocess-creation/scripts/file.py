@@ -43,7 +43,7 @@ c_ MainWindow(QMainWindow):
         close=True
         event.accept()
 
-__ __name__ == "__main__":
+__ ____ __ ______:
     app = QtWidgets.QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()

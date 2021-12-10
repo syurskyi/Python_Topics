@@ -17,8 +17,8 @@ ___ my_service():
 
 l__.?(?_l__.D.. ?_'[%(levelname)s] (%(threadName)-10s)  _ m.. _)
 
-t = _.?(name='my_service', target=my_service)
-w = _.?(name='worker', target=worker)
+t = _.?(?_'my_service', ?_my_service)
+w = _.?(?_'worker', ?_worker)
 w2 = _.? ?_worker)
 
 w.s..

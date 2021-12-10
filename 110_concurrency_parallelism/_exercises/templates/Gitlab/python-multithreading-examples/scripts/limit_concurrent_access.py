@@ -33,6 +33,6 @@ ___ worker(s, pool):
 pool = ActivePool()
 s = _.Semaphore(2)
 ___ i __ r.. 4):
-    t = _.? ?_worker, name=s..(i),  ?_(s, pool))
+    t = _.? ?_worker, ?_s..(i),  ?_(s, pool))
     t.s..
     

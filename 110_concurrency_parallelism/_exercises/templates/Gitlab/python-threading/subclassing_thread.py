@@ -4,9 +4,9 @@ ______ l__
 
 c_ MyThreadWithArgs(_.?):
 
-    ___ -  group=N.., target=N.., name=N..,
-                  ?_(), kwargs=N.., *, daemon=N..):
-        super().- (group=group, target=target, name=name,
+    ___ -  ?_N.., ?_N.., ?_N..,
+                  ?_(), k.._N.., *, daemon=N..):
+        super().- (?_group, ?_target, ?_name,
                          daemon=daemon)
         args = args
         kwargs = kwargs
@@ -22,5 +22,5 @@ l__.?(
 )
 
 ___ i __ r.. 5):
-    t = MyThreadWithArgs( ?_(i,), kwargs={'a': 'A', 'b': 'B'})
+    t = MyThreadWithArgs( ?_(i,), k.._{'a': 'A', 'b': 'B'})
     t.s..

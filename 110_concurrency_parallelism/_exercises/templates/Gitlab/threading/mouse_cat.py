@@ -22,7 +22,7 @@ ___ action():
     mouse_thread.s..         # It starts the mouse thread.
     cat_thread.s..           # It starts the cat thread.
 
-__ __name__ == "__main__":       # In case of execution by using terminal.
+__ ____ __ ______:       # In case of execution by using terminal.
 
     action()
 

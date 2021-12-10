@@ -75,5 +75,5 @@ ___ main():
     form.show()
     app.exec_()
 
-__ __name__ == "__main__":
+__ ____ __ ______:
     main()

@@ -18,9 +18,9 @@ ___ non_daemon():
     l__.d..('Exiting')
 
 
-d = _.?(name='daemon', target=daemon, daemon=True)
+d = _.?(?_'daemon', ?_daemon, daemon=True)
 
-t = _.?(name='non-daemon', target=non_daemon)
+t = _.?(?_'non-daemon', ?_non_daemon)
 
 d.s..
 t.s..

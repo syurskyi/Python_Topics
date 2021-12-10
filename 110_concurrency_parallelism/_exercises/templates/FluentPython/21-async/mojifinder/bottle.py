@@ -321,7 +321,7 @@ c_ Router(object):
         __ offset <= l..(rule) or prefix:
             yield prefix+rule[offset:], N.., N..
 
-    ___ add rule, method, target, name=N..):
+    ___ add rule, method, target, ?_N..):
         ''' Add a new rule or replace the target for an existing rule. '''
         anons     = 0    # Number of anonymous wildcards found
         keys        # list   # Names of keys
@@ -464,7 +464,7 @@ c_ Route(object):
         turing an URL path rule into a regular expression usable by the Router.
     '''
 
-    ___ -  app, rule, method, callback, name=N..,
+    ___ -  app, rule, method, callback, ?_N..,
                  plugins=N.., skiplist=N.., **config):
         #: The application this route is installed to.
         app = app
@@ -510,7 +510,7 @@ c_ Route(object):
     ___ _context
         depr('Switch to Plugin API v2 and access the Route object directly.')  #0.12
         r_ dict(rule=rule, method=method, callback=callback,
-                    name=name, app=app, config=config,
+                    ?_name, app=app, config=config,
                     apply=plugins, skip=skiplist)
 
     ___ all_plugins
@@ -776,10 +776,10 @@ c_ Bottle(object):
         ''' Add a route object, but do not change the :data:`Route.app`
             attribute.'''
         routes.a.. (route)
-        router.add(route.rule, route.method, route, name=route.name)
+        router.add(route.rule, route.method, route, ?_route.name)
         __ DEBUG: route.prepare()
 
-    ___ route path=N.., method='GET', callback=N.., name=N..,
+    ___ route path=N.., method='GET', callback=N.., ?_N..,
               apply=N.., skip=N.., **config):
         """ A decorator to bind a function to a request URL. Example::
 
@@ -815,7 +815,7 @@ c_ Bottle(object):
             ___ rule __ makelist(path) or yieldroutes(callback):
                 ___ verb __ makelist(method):
                     verb = verb.upper()
-                    route = Route rule, verb, callback, name=name,
+                    route = Route rule, verb, callback, ?_name,
                                   plugins=plugins, skiplist=skiplist, **config)
                     add_route(route)
             r_ callback
@@ -1662,7 +1662,7 @@ c_ BaseResponse(object):
         r_ out
 
 
-___ local_property(name=N..):
+___ local_property(?_N..):
     __ name: depr('local_property() is deprecated and will be removed.') #0.12
     ls = _.local()
     ___ fget
@@ -3208,7 +3208,7 @@ c_ BaseTemplate(object):
     settings = {} #used __ prepare()
     defaults = {} #used __ render()
 
-    ___ -  source=N.., name=N.., lookup=[], encoding='utf8', **settings):
+    ___ -  source=N.., ?_N.., lookup=[], encoding='utf8', **settings):
         """ Create a new template.
         If the source parameter (str or buffer) is missing, the name argument
         is used to guess a template filename. Subclasses can assume that
@@ -3392,7 +3392,7 @@ c_ SimpleTemplate(BaseTemplate):
         env = _env.copy()
         env.update(kwargs)
         __ _name n.. __ cache:
-            cache[_name] = __class__(name=_name, lookup=lookup)
+            cache[_name] = __class__(?__name, lookup=lookup)
         r_ cache[_name].execute(env['_stdout'], env)
 
     ___ execute _stdout, kwargs):
@@ -3623,7 +3623,7 @@ ___ template(*args, **kwargs):
         elif "\n" __ tpl or "{" __ tpl or "%" __ tpl or '$' __ tpl:
             TEMPLATES[tplid] = adapter(source=tpl, lookup=lookup, **settings)
         else:
-            TEMPLATES[tplid] = adapter(name=tpl, lookup=lookup, **settings)
+            TEMPLATES[tplid] = adapter(?_tpl, lookup=lookup, **settings)
     __ n.. TEMPLATES[tplid]:
         abort(500, 'Template (@) not found' @ tpl)
     ___ dictarg __ args[1:]: kwargs.update(dictarg)

@@ -17,7 +17,7 @@ ___ print_square(num):
     """
     print("Square: {}".format(num * num))
  
-__ __name__ == "__main__":
+__ ____ __ ______:
     # creating thread
     t1 = _.? ?_print_square,  ?_(10,))
     t2 = _.? ?_print_cube,  ?_(10,))

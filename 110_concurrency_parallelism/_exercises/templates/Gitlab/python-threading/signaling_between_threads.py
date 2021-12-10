@@ -32,12 +32,12 @@ l__.?(
 
 e = _.Event()
 
-t1 = _.?(name='block',target=wait_for_event, ?_(e,))
+t1 = _.?(?_'block',?_wait_for_event, ?_(e,))
 
 t1.s..
 
 
-t2=_.?(name='nonblock',target=wait_for_event_timeout, ?_(e,2))
+t2=_.?(?_'nonblock',?_wait_for_event_timeout, ?_(e,2))
 
 t2.s..
 

@@ -48,7 +48,7 @@ c_ Ui_MainWindow(object):
 
 
 
-__ __name__ == "__main__":
+__ ____ __ ______:
     ______ sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()

@@ -20,9 +20,9 @@ l__.?(
     ?_ _threadName)-10s)  _ m.. _,
 )
 
-d = _.?(name='daemon', target=daemon, daemon=True)
+d = _.?(?_'daemon', ?_daemon, daemon=True)
 
-t = _.?(name='non-daemon', target=non_daemon)
+t = _.?(?_'non-daemon', ?_non_daemon)
 
 d.s..
 t.s..

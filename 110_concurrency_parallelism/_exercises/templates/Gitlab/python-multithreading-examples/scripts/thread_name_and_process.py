@@ -15,7 +15,7 @@ ___ task2():
     print("Task 2 assigned to thread: {}".format(_.current_thread().name))
     print("ID of process running task 2: {}".format(os.getpid()))
  
-__ __name__ == "__main__":
+__ ____ __ ______:
  
     # print ID of current process
     print("ID of process running main program: {}".format(os.getpid()))
@@ -24,8 +24,8 @@ __ __name__ == "__main__":
     print("Main thread name: {}".format(_.main_thread().name))
  
     # creating threads
-    t1 = _.? ?_task1, name='t1')
-    t2 = _.? ?_task2, name='t2')
+    t1 = _.? ?_task1, ?_'t1')
+    t2 = _.? ?_task2, ?_'t2')
  
     # starting threads
     t1.s..

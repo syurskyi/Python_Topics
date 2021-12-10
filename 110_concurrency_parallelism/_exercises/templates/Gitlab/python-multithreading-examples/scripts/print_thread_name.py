@@ -23,15 +23,15 @@ ___ ServiceFunction():
 
 ___ Main():
 	myThread = _.?(
-		name='Service Function', 
-		target=ServiceFunction
+		?_'Service Function',
+		?_ServiceFunction
 	)
 	w = _.?(
-		name='Thread function',
-		target=ThreadFunction
+		?_'Thread function',
+		?_ThreadFunction
 	)
 	w2 = _.?(
-		target=ThreadFunction
+		?_ThreadFunction
 	)
 
 	w.s..
@@ -39,5 +39,5 @@ ___ Main():
 	myThread.s..
 
 
-__ __name__ == "__main__":
+__ ____ __ ______:
 	Main()

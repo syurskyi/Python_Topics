@@ -25,13 +25,13 @@ ___ wait_for_event_timeout(e, t):
 
 
 e = _.Event()
-t1 = _.?(name='block', 
-                      target=wait_for_event,
+t1 = _.?(?_'block',
+                      ?_wait_for_event,
                        ?_(e,))
 t1.s..
 
-t2 = _.?(name='non-block', 
-                      target=wait_for_event_timeout, 
+t2 = _.?(?_'non-block',
+                      ?_wait_for_event_timeout,
                        ?_(e, 2))
 t2.s..
 

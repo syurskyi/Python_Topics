@@ -24,11 +24,11 @@ ___ timer(name, delay, repeat):
   
 ___ Main():
   thread1 = _.?(
-    target=timer, 
+    ?_timer,
      ?_("Timer1", 1, 5)
   )
   thread2 = _.?(
-    target=timer, 
+    ?_timer,
      ?_("Timer2", 2, 5)
   )
   thread1.s..

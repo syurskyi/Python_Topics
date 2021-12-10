@@ -25,11 +25,11 @@ l__.?(
 )
 
 condition = _.Condition()
-c1 = _.?(name='c1', target=consumer,
+c1 = _.?(?_'c1', ?_consumer,
                        ?_(condition,))
-c2 = _.?(name='c2', target=consumer,
+c2 = _.?(?_'c2', ?_consumer,
                        ?_(condition,))
-p = _.?(name='p', target=producer,
+p = _.?(?_'p', ?_producer,
                       ?_(condition,))
 
 c1.s..

@@ -17,8 +17,8 @@ barrier = _.Barrier(NUM_THREADS)
 
 threads = [
     _.?(
-        name='worker-@' @ i,
-        target=worker,
+        ?_'worker-@' @ i,
+        ?_worker,
          ?_(barrier,),
     )
     ___ i __ r.. NUM_THREADS)
