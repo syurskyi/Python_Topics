@@ -7,7 +7,7 @@ from bottle ______ route, request, run, static_file
 
 from charindex ______ InvertedIndex
 
-index = {}
+index    # dict
 
 @route('/')
 ___ form():
@@ -28,7 +28,7 @@ ___ search():
 ___ main(port):
     g.. index
     index = InvertedIndex()
-    run(host='localhost', port=port, d..=True)
+    run(host='localhost', port=port, d..=T..)
 
 
 __ _____ __ ______

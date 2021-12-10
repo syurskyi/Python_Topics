@@ -7,7 +7,7 @@ c_ Publisher(_.T..):
   ___  -   integers, condition):
     condition = condition
     integers = integers
-    _.T... - (self)
+    _.T... -
 
   ___ run
     w... T..
@@ -26,7 +26,7 @@ c_ Subscriber(_.T..):
   ___  -   integers, condition):
     integers = integers
     condition = condition
-    _.T... - (self)
+    _.T... -
 
   ___ run
     w... T..

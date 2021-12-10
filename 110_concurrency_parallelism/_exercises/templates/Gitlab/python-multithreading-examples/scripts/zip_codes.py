@@ -19,7 +19,7 @@ ___ getzip(code):
     except Exception __ e:
         print "In error"
         print e
-        iszip = False
+        iszip = F..
     r_ (code, iszip)
 ziprange = r.. 94400, 94420)
 print "Range is: " + s..(l..(ziprange))

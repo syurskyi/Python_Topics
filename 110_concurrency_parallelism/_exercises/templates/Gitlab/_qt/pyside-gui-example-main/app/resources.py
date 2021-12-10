@@ -9,7 +9,7 @@ c_ Resources(QObject):
 
     ___ - 
         super().- ()
-        loaded = {}
+        loaded    # dict
 
     @property
     ___ iconApp

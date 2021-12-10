@@ -23,7 +23,7 @@ c_ BackgroundJob(QObject):
 
     ___ - 
         super().- ()
-        exit_requested = False
+        exit_requested = F..
 
     @Slot()
     ___ start
@@ -34,7 +34,7 @@ c_ BackgroundJob(QObject):
 
     @Slot()
     ___ stop
-        exit_requested = True
+        exit_requested = T..
 
     ___ run
         g.log.info('ThisApplication v@ | @ | @' @ (VERSION, t__.strftime('%r | %A, %B %d, %Y'), socket.gethostname()))
@@ -87,7 +87,7 @@ c_ MainApplication(QApplication):
 
         thread = QThread()
         job = BackgroundJob()
-        __ True:
+        __ T..:
             job.crashed.connect(onThreadCrash)
             job.moveToThread(thread)
             job.finished.connect(thread.quit)

@@ -3,14 +3,14 @@ ______ os, re, _
 
 c_ ip_check(_.?):
    ___ -  ip):
-      _.?.- (self)
+      _.?.-
       ip = ip
       __successful_pings = -1
    ___ run
       ping_out = os.popen("ping -q -c2 "+ip,"r")
-      w___ True:
+      w___ T..:
         line = ping_out.readline()
-        __ n.. line: break
+        __ n.. line: ____
         n_received = re.findall(received_packages,line)
         __ n_received:
            __successful_pings = in.(n_received[0])

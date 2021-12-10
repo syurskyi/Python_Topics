@@ -25,7 +25,7 @@ ___ student():
 
 ___ i __ r.. 3):
     t = _.? ?_student)
-    t.setDaemon(True)
+    t.setDaemon(T..)
     t.s..
 
 main_thread = _.c..

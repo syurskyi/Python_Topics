@@ -22,7 +22,7 @@ c_ calcA(_.?):
     ___ - name):
         super(calcA, self).- ()
         name = name
-        terminated = False
+        terminated = F..
         s..
 
     ___ run
@@ -33,7 +33,7 @@ c_ calcA(_.?):
             a += 1
             s..(1)
             __ terminated:
-                break
+                ____
         print ('thread '+name+' stopped')
 
 
@@ -41,7 +41,7 @@ c_ calcB(_.?):
     ___ - name):
         super(calcB, self).- ()
         name = name
-        terminated = False
+        terminated = F..
         s..
 
     ___ run
@@ -52,7 +52,7 @@ c_ calcB(_.?):
             b += 1
             s..(5)
             __ terminated:
-                break
+                ____
         print ('thread '+name+' stopped')
 
 
@@ -61,7 +61,7 @@ c_ calcC(_.?):
     ___ - name):
         super(calcC, self).- ()
         name = name
-        terminated = False
+        terminated = F..
         s..
 
     ___ run
@@ -72,7 +72,7 @@ c_ calcC(_.?):
             c += 1
             s..(10)
             __ terminated:
-                break
+                ____
         print ('thread '+name+' stopped')
 # Startup sequence
 calcA = calcA(?_'incrementA')
@@ -85,7 +85,7 @@ s..(0.1)
 __ ____ __ ______:
     ___
     	print 'Press CTRL+C to quit'
-    	running = True
+    	running = T..
         print("a:{} b:{} c:{}".format(a,b,c))
 
     	w___ running:
@@ -95,11 +95,11 @@ __ ____ __ ______:
     except KeyboardInterrupt:
         print '\nKeyboard Interrupt Detected! Shutting down program!'
 
-        calcA.terminated = True
+        calcA.terminated = T..
         calcA.j..
-        calcB.terminated = True
+        calcB.terminated = T..
         calcB.j..
-        calcC.terminated = True
+        calcC.terminated = T..
         calcC.j..
 
 

@@ -7,9 +7,9 @@ ___ suffix __ r.. 20,30):
    ip = "192.168.178."+s..(suffix)
    ping_out = os.popen("ping -q -c2 "+ip,"r")
    print "... pinging ",ip
-   w___ True:
+   w___ T..:
       line = ping_out.readline()
-      __ n.. line: break
+      __ n.. line: ____
       n_received = received_packages.findall(line)
       __ n_received:
          print ip + ": " + status[in.(n_received[0])]

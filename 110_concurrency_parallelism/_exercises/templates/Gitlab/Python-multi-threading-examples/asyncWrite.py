@@ -3,7 +3,7 @@ ______ t__
 
 c_ AsyncWrite(_.?):
 	___ -  text, out):
-		_.?.- (self)
+		_.?.-
 		text = text
 		out = out
 

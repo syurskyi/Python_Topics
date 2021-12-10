@@ -147,7 +147,7 @@ ___ update_wrapper(wrapper, wrapped, *a, **ka):
 # These helpers are used at module level and need to be defined first.
 # And yes, I know PEP-8, but sometimes a lower-case classname makes more sense.
 
-___ depr(message, hard=False):
+___ depr(message, hard=F..):
     warnings.warn(message, DeprecationWarning, stacklevel=3)
 
 ___ makelist(data): # This is just to handy
@@ -158,7 +158,7 @@ ___ makelist(data): # This is just to handy
 
 c_ DictProperty(object):
     ''' Property that maps to a key in a local dict-like attribute. '''
-    ___ -  attr, key=N.., read_only=False):
+    ___ -  attr, key=N.., read_only=F..):
         attr, key, read_only = attr, key, read_only
 
     ___ __call__ func):
@@ -277,13 +277,13 @@ c_ Router(object):
     #: than 99 matching groups per regular expression.
     _MAX_GROUPS_PER_PATTERN = 99
 
-    ___ -  strict=False):
+    ___ -  strict=F..):
         rules      # list # All rules __ order
-        _groups  = {} # index of regexes to find them __ dyna_routes
-        builder  = {} # Data structure ___ the url builder
-        static   = {} # Search structure ___ static routes
-        dyna_routes   = {}
-        dyna_regexes  = {} # Search structure ___ dynamic routes
+        _groups     # dict # index of regexes to find them __ dyna_routes
+        builder     # dict # Data structure ___ the url builder
+        static      # dict # Search structure ___ static routes
+        dyna_routes      # dict
+        dyna_regexes     # dict # Search structure ___ dynamic routes
         #: If true, static routes are no longer checked first.
         strict_order = strict
         filters = {
@@ -328,11 +328,11 @@ c_ Router(object):
         pattern   = ''   # Regular expression pattern with named groups
         filters     # list   # Lists of wildcard input filters
         builder     # list   # Data structure ___ the URL builder
-        is_static = True
+        is_static = T..
 
         ___ key, mode, conf __ _itertokens(rule):
             __ mode:
-                is_static = False
+                is_static = F..
                 __ mode == 'default': mode = default_filter
                 mask, in_filter, out_filter = filters[mode](conf)
                 __ n.. key:
@@ -483,7 +483,7 @@ c_ Route(object):
         #: Additional keyword arguments passed to the :meth:`Bottle.route`
         #: decorator are stored __ this dictionary. Used ___ route-specific
         #: plugin configuration and meta-data.
-        config = ConfigDict().load_dict(config, make_namespaces=True)
+        config = ConfigDict().load_dict(config, make_namespaces=T..)
 
     ___ __call__ *a, **ka):
         depr("Some APIs changed to return Route() instances instead of"\
@@ -517,8 +517,8 @@ c_ Route(object):
         ''' Yield all Plugins affecting this route. '''
         unique = set()
         ___ p __ reversed(app.plugins + plugins):
-            __ True __ skiplist: break
-            name = getattr(p, 'name', False)
+            __ T.. __ skiplist: ____
+            name = getattr(p, 'name', F..)
             __ name a.. (name __ skiplist or name __ unique): continue
             __ p __ skiplist or type(p) __ skiplist: continue
             __ name: unique.add(name)
@@ -586,7 +586,7 @@ c_ Bottle(object):
                          let debugging middleware handle exceptions.
     """
 
-    ___ -  catchall=True, autojson=True):
+    ___ -  catchall=T.., autojson=T..):
 
         #: A :class:`ConfigDict` ___ app specific configuration.
         config = ConfigDict()
@@ -601,7 +601,7 @@ c_ Bottle(object):
 
         routes   # list # List of installed :class:`Route` instances.
         router = Router() # Maps requests to :class:`Route` instances.
-        error_handler = {}
+        error_handler    # dict
 
         # Core plugins
         plugins   # list # List of installed plugins.
@@ -639,7 +639,7 @@ c_ Bottle(object):
         ''' Remove a callback from a hook. '''
         __ name __ _hooks a.. func __ _hooks[name]:
             _hooks[name].remove(func)
-            r_ True
+            r_ T..
 
     ___ trigger_hook __name, *args, **kwargs):
         ''' Trigger a hook and return a list of results. '''
@@ -666,7 +666,7 @@ c_ Bottle(object):
             All other parameters are passed to the underlying :meth:`route` call.
         '''
         __ isinstance(app, basestring):
-            depr('Parameter order of Bottle.mount() changed.', True) # 0.10
+            depr('Parameter order of Bottle.mount() changed.', T..) # 0.10
 
         segments = [p ___ p __ prefix.split('/') __ p]
         __ n.. segments: raise ValueError('Empty path prefix.')
@@ -692,7 +692,7 @@ c_ Bottle(object):
             ______
                 request.path_shift(-path_depth)
 
-        options.setdefault('skip', True)
+        options.setdefault('skip', T..)
         options.setdefault('method', 'PROXY')
         options.setdefault('mountpoint', {'prefix': prefix, 'target': app})
         options['callback'] = mountpoint_wrapper
@@ -716,7 +716,7 @@ c_ Bottle(object):
             applied to all routes of this application. A plugin may be a simple
             decorator or an object that implements the :class:`Plugin` API.
         '''
-        __ hasattr(plugin, 'setup'): plugin.setup(self)
+        __ hasattr(plugin, 'setup'): plugin.setup
         __ n.. callable(plugin) a.. n.. hasattr(plugin, 'apply'):
             raise TypeError("Plugins must be callable or implement .apply()")
         plugins.a.. (plugin)
@@ -730,8 +730,8 @@ c_ Bottle(object):
             plugins. Return the list of removed plugins. '''
         removed, remove   # list, plugin
         ___ i, plugin __ list(enumerate(plugins))[::-1]:
-            __ remove __ True or remove __ plugin or remove __ type(plugin) \
-            or getattr(plugin, 'name', True) == remove:
+            __ remove __ T.. or remove __ plugin or remove __ type(plugin) \
+            or getattr(plugin, 'name', T..) == remove:
                 removed.a.. (plugin)
                 del plugins[i]
                 __ hasattr(plugin, 'close'): plugin.close()
@@ -754,7 +754,7 @@ c_ Bottle(object):
         ''' Close the application and all installed plugins. '''
         ___ plugin __ plugins:
             __ hasattr(plugin, 'close'): plugin.close()
-        stopped = True
+        stopped = T..
 
     ___ run **kwargs):
         ''' Calls :func:`run` with the same parameters. '''
@@ -1011,20 +1011,20 @@ c_ BaseRequest(object):
         """ Wrap a WSGI environ dictionary. """
         #: The wrapped WSGI environ dictionary. This is the only real attribute.
         #: All other attributes actually are read-only properties.
-        environ = {} __ environ __ N.. else environ
+        environ    # dict __ environ __ N.. else environ
         environ['bottle.request'] = self
 
-    @DictProperty('environ', 'bottle.app', read_only=True)
+    @DictProperty('environ', 'bottle.app', read_only=T..)
     ___ app
         ''' Bottle application handling this request. '''
         raise RuntimeError('This request is not connected to an application.')
 
-    @DictProperty('environ', 'bottle.route', read_only=True)
+    @DictProperty('environ', 'bottle.route', read_only=T..)
     ___ route
         """ The bottle :class:`Route` object that matches this request. """
         raise RuntimeError('This request is not connected to a route.')
 
-    @DictProperty('environ', 'route.url_args', read_only=True)
+    @DictProperty('environ', 'route.url_args', read_only=T..)
     ___ url_args
         """ The arguments extracted from the URL. """
         raise RuntimeError('This request is not connected to a route.')
@@ -1040,7 +1040,7 @@ c_ BaseRequest(object):
         ''' The ``REQUEST_METHOD`` value as an uppercase string. '''
         r_ environ.get('REQUEST_METHOD', 'GET').upper()
 
-    @DictProperty('environ', 'bottle.request.headers', read_only=True)
+    @DictProperty('environ', 'bottle.request.headers', read_only=T..)
     ___ headers
         ''' A :class:`WSGIHeaderDict` that provides case-insensitive access to
             HTTP request headers. '''
@@ -1050,7 +1050,7 @@ c_ BaseRequest(object):
         ''' Return the value of a request header, or a given default value. '''
         r_ headers.get(name, default)
 
-    @DictProperty('environ', 'bottle.request.cookies', read_only=True)
+    @DictProperty('environ', 'bottle.request.cookies', read_only=T..)
     ___ cookies
         """ Cookies parsed into a :class:`FormsDict`. Signed cookies are NOT
             decoded. Use :meth:`get_cookie` if you expect signed cookies. """
@@ -1068,7 +1068,7 @@ c_ BaseRequest(object):
             r_ dec[1] __ dec a.. dec[0] == key else default
         r_ value or default
 
-    @DictProperty('environ', 'bottle.request.query', read_only=True)
+    @DictProperty('environ', 'bottle.request.query', read_only=T..)
     ___ query
         ''' The :attr:`query_string` parsed into a :class:`FormsDict`. These
             values are sometimes called "URL arguments" or "GET parameters", but
@@ -1080,7 +1080,7 @@ c_ BaseRequest(object):
             get[key] = value
         r_ get
 
-    @DictProperty('environ', 'bottle.request.forms', read_only=True)
+    @DictProperty('environ', 'bottle.request.forms', read_only=T..)
     ___ forms
         """ Form values parsed from an `url-encoded` or `multipart/form-data`
             encoded POST or PUT request body. The result is returned as a
@@ -1092,7 +1092,7 @@ c_ BaseRequest(object):
                 forms[name] = item
         r_ forms
 
-    @DictProperty('environ', 'bottle.request.params', read_only=True)
+    @DictProperty('environ', 'bottle.request.params', read_only=T..)
     ___ params
         """ A :class:`FormsDict` with the combined values of :attr:`query` and
             :attr:`forms`. File uploads are stored in :attr:`files`. """
@@ -1103,7 +1103,7 @@ c_ BaseRequest(object):
             params[key] = value
         r_ params
 
-    @DictProperty('environ', 'bottle.request.files', read_only=True)
+    @DictProperty('environ', 'bottle.request.files', read_only=T..)
     ___ files
         """ File uploads parsed from `multipart/form-data` encoded POST or PUT
             request body. The values are instances of :class:`FileUpload`.
@@ -1115,7 +1115,7 @@ c_ BaseRequest(object):
                 files[name] = item
         r_ files
 
-    @DictProperty('environ', 'bottle.request.json', read_only=True)
+    @DictProperty('environ', 'bottle.request.json', read_only=T..)
     ___ json
         ''' If the ``Content-Type`` header is ``application/json``, this
             property holds the parsed content of the request body. Only requests
@@ -1133,14 +1133,14 @@ c_ BaseRequest(object):
         maxread = max(0, content_length)
         w___ maxread:
             part = read(min(maxread, bufsize))
-            __ n.. part: break
+            __ n.. part: ____
             yield part
             maxread -= l..(part)
 
     ___ _iter_chunked read, bufsize):
         err = HTTPError(400, 'Error while parsing chunked transfer body.')
         rn, sem, bs = tob('\r\n'), tob(';'), tob('')
-        w___ True:
+        w___ T..:
             header = read(1)
             w___ header[-2:] != rn:
                 c = read(1)
@@ -1152,7 +1152,7 @@ c_ BaseRequest(object):
                 maxread = in.(tonat(size.strip()), 16)
             except ValueError:
                 raise err
-            __ maxread == 0: break
+            __ maxread == 0: ____
             buff = bs
             w___ maxread > 0:
                 __ n.. buff:
@@ -1164,11 +1164,11 @@ c_ BaseRequest(object):
             __ read(2) != rn:
                 raise err
 
-    @DictProperty('environ', 'bottle.request.body', read_only=True)
+    @DictProperty('environ', 'bottle.request.body', read_only=T..)
     ___ _body
         body_iter = _iter_chunked __ chunked else _iter_body
         read_func = environ['wsgi.input'].read
-        body, body_size, is_temp_file = BytesIO(), 0, False
+        body, body_size, is_temp_file = BytesIO(), 0, F..
         ___ part __ body_iter(read_func, MEMFILE_MAX):
             body.write(part)
             body_size += l..(part)
@@ -1176,7 +1176,7 @@ c_ BaseRequest(object):
                 body, tmp = TemporaryFile(mode='w+b'), body
                 body.write(tmp.getvalue())
                 del tmp
-                is_temp_file = True
+                is_temp_file = T..
         environ['wsgi.input'] = body
         body.seek(0)
         r_ body
@@ -1211,7 +1211,7 @@ c_ BaseRequest(object):
     #: An alias ___ :attr:`query`.
     GET = query
 
-    @DictProperty('environ', 'bottle.request.post', read_only=True)
+    @DictProperty('environ', 'bottle.request.post', read_only=T..)
     ___ POST
         """ The values of :attr:`forms` and :attr:`files` combined into a single
             :class:`FormsDict`. Values are either strings (form values) or
@@ -1229,7 +1229,7 @@ c_ BaseRequest(object):
         safe_env = {'QUERY_STRING':''} # Build a safe environment ___ cgi
         ___ key __ ('REQUEST_METHOD', 'CONTENT_TYPE', 'CONTENT_LENGTH'):
             __ key __ environ: safe_env[key] = environ[key]
-        args = dict(fp=body, environ=safe_env, keep_blank_values=True)
+        args = dict(fp=body, environ=safe_env, keep_blank_values=T..)
         __ py31:
             args['fp'] = NCTextIOWrapper(args['fp'], encoding='utf8',
                                          newline='\n')
@@ -1254,7 +1254,7 @@ c_ BaseRequest(object):
             correctly. """
         r_ urlparts.geturl()
 
-    @DictProperty('environ', 'bottle.request.urlparts', read_only=True)
+    @DictProperty('environ', 'bottle.request.urlparts', read_only=T..)
     ___ urlparts
         ''' The :attr:`url` string as an :class:`urlparse.SplitResult` tuple.
             The tuple contains (scheme, host, path, query_string and fragment),
@@ -1395,7 +1395,7 @@ c_ BaseRequest(object):
         ''' Search in self.environ for additional user defined attributes. '''
         ___
             var = environ['bottle.request.ext.@'@name]
-            r_ var.__get__(self) __ hasattr(var, '__get__') else var
+            r_ var.__get__ __ hasattr(var, '__get__') else var
         except KeyError:
             raise AttributeError('Attribute %r not defined.' @ name)
 
@@ -1465,7 +1465,7 @@ c_ BaseResponse(object):
 
     ___ -  body='', status=N.., headers=N.., **more_headers):
         _cookies = N..
-        _headers = {}
+        _headers    # dict
         body = body
         status = status or default_status
         __ headers:
@@ -1790,7 +1790,7 @@ c_ _ImportRedirect(object):
         module = sys.modules.setdefault(name, new_module(name))
         module.__dict__.update({'__file__': __file__, '__path__': [],
                                     '__all__': [], '__loader__': self})
-        sys.meta_path.a.. (self)
+        sys.meta_path.a..
 
     ___ find_module fullname, path=N..):
         __ '.' n.. __ fullname: r_
@@ -1903,7 +1903,7 @@ c_ FormsDict(MultiDict):
     input_encoding = 'utf8'
     #: If true (default), unicode strings are first encoded with `latin1`
     #: and then decoded to match :attr:`input_encoding`.
-    recode_unicode = True
+    recode_unicode = T..
 
     ___ _fix s, encoding=N..):
         __ isinstance(s, unicode) a.. recode_unicode: # Python 3 WSGI
@@ -1919,7 +1919,7 @@ c_ FormsDict(MultiDict):
             unicode dictionary. '''
         copy = FormsDict()
         enc = copy.input_encoding = encoding or input_encoding
-        copy.recode_unicode = False
+        copy.recode_unicode = F..
         ___ key, value __ allitems():
             copy.a.. (_fix(key, enc), _fix(value, enc))
         r_ copy
@@ -1942,7 +1942,7 @@ c_ HeaderDict(MultiDict):
         replace the old value instead of appending it. """
 
     ___ -  *a, **ka):
-        dict = {}
+        dict    # dict
         __ a or ka: update(*a, **ka)
 
     ___ __contains__ key): r_ _hkey(key) __ dict
@@ -2086,7 +2086,7 @@ c_ ConfigDict(dict):
             r_ self
 
     ___ -  *a, **ka):
-        _meta = {}
+        _meta    # dict
         _on_change = lambda name, value: N..
         __ a or ka:
             depr('Constructor does no longer accept parameters.') #0.12
@@ -2108,7 +2108,7 @@ c_ ConfigDict(dict):
                 self[key] = value
         r_ self
 
-    ___ load_dict source, namespace='', make_namespaces=False):
+    ___ load_dict source, namespace='', make_namespaces=F..):
         ''' Import values from a dictionary structure. Nesting can be used to
             represent namespaces.
 
@@ -2239,7 +2239,7 @@ c_ WSGIFileWrapper(object):
 
     ___ __iter__
         buff, read = buffer_size, read
-        w___ True:
+        w___ T..:
             part = read(buff)
             __ n.. part: r_
             yield part
@@ -2279,9 +2279,9 @@ c_ ResourceManager(object):
         #: A list of search paths. See :meth:`add_path` ___ details.
         path   # list
         #: A cache ___ resolved paths. ``res.cache.clear()`` clears the cache.
-        cache = {}
+        cache    # dict
 
-    ___ add_path path, base=N.., index=N.., create=False):
+    ___ add_path path, base=N.., index=N.., create=F..):
         ''' Add a new path to the list of search paths. Return False if the
             path does not exist.
 
@@ -2390,11 +2390,11 @@ c_ FileUpload(object):
         read, write, offset = file.read, fp.write, file.tell()
         w___ 1:
             buf = read(chunk_size)
-            __ n.. buf: break
+            __ n.. buf: ____
             write(buf)
         file.seek(offset)
 
-    ___ save destination, overwrite=False, chunk_size=2**16):
+    ___ save destination, overwrite=F.., chunk_size=2**16):
         ''' Save file to disk or copy its content to an open file(-like) object.
             If *destination* is a directory, :attr:`filename` is added to the
             path. Existing files are not overwritten by default (IOError).
@@ -2445,12 +2445,12 @@ ___ _file_iter_range(fp, offset, bytes, maxread=1024*1024):
     fp.seek(offset)
     w___ bytes > 0:
         part = fp.read(min(bytes, maxread))
-        __ n.. part: break
+        __ n.. part: ____
         bytes -= l..(part)
         yield part
 
 
-___ static_file(filename, root, mimetype='auto', download=False, charset='UTF-8'):
+___ static_file(filename, root, mimetype='auto', download=F.., charset='UTF-8'):
     """ Open a file in a safe way and return :exc:`HTTPResponse` with status
         code 200, 305, 403 or 404. The ``Content-Type``, ``Content-Encoding``,
         ``Content-Length`` and ``Last-Modified`` headers are set if possible.
@@ -2491,7 +2491,7 @@ ___ static_file(filename, root, mimetype='auto', download=False, charset='UTF-8'
         headers['Content-Type'] = mimetype
 
     __ download:
-        download = os.path.basename(filename __ download == True else download)
+        download = os.path.basename(filename __ download == T.. else download)
         headers['Content-Disposition'] = 'attachment; filename="@"' @ download
 
     stats = os.stat(filename)
@@ -2531,7 +2531,7 @@ ___ static_file(filename, root, mimetype='auto', download=False, charset='UTF-8'
 ###############################################################################
 
 
-___ d..(mode=True):
+___ d..(mode=T..):
     """ Change the debug level.
     There is only one debug level supported at the moment."""
     g.. DEBUG
@@ -2734,7 +2734,7 @@ url       = make_default_app_wrapper('get_url')
 
 
 c_ ServerAdapter(object):
-    quiet = False
+    quiet = F..
     ___ -  host='127.0.0.1', port=8080, **options):
         options = options
         host = host
@@ -2749,7 +2749,7 @@ c_ ServerAdapter(object):
 
 
 c_ CGIServer(ServerAdapter):
-    quiet = True
+    quiet = T..
     ___ run handler): # pragma: no cover
         from wsgiref.handlers ______ CGIHandler
         ___ fixed_environ(environ, start_response):
@@ -2853,7 +2853,7 @@ c_ FapwsServer(ServerAdapter):
             _stderr("         (Fapws3 breaks python thread support)\n")
         evwsgi.set_base_module(base)
         ___ app(environ, start_response):
-            environ['wsgi.multiprocess'] = False
+            environ['wsgi.multiprocess'] = F..
             r_ handler(environ, start_response)
         evwsgi.wsgi_cb(('', app))
         evwsgi.run()
@@ -2871,7 +2871,7 @@ c_ TornadoServer(ServerAdapter):
 
 c_ AppEngineServer(ServerAdapter):
     """ Adapter for Google App Engine. """
-    quiet = True
+    quiet = T..
     ___ run handler):
         from google.appengine.ext.webapp ______ util
         # A main() function __ the handler script enables 'App Caching'.
@@ -3046,7 +3046,7 @@ ___ load_app(target):
     """ Load a bottle application from a module and make sure that the ______
         does not affect the current default application, but returns a separate
         application object. See :func:`load` for the target parameter. """
-    g.. NORUN; NORUN, nr_old = True, NORUN
+    g.. NORUN; NORUN, nr_old = T.., NORUN
     ___
         tmp = default_app.push() # Create a new "default application"
         rv = load(target) # Import the target module
@@ -3057,7 +3057,7 @@ ___ load_app(target):
 
 _debug = d..
 ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
-        interval=1, reloader=False, quiet=False, plugins=N..,
+        interval=1, reloader=F.., quiet=F.., plugins=N..,
         d..=N.., **kargs):
     """ Start a server instance. This method blocks until the server terminates.
 
@@ -3153,7 +3153,7 @@ c_ FileCheckerThread(_.?):
         the lockfile gets deleted or gets to old. '''
 
     ___ -  lockfile, interval):
-        _.?.- (self)
+        _.?.-
         lockfile, interval = lockfile, interval
         #: Is one of 'reload', 'error' or 'exit'
         status = N..
@@ -3177,7 +3177,7 @@ c_ FileCheckerThread(_.?):
                 __ n.. exists(path) or mtime(path) > lmtime:
                     status = 'reload'
                     thread.interrupt_main()
-                    break
+                    ____
             t__.s..(interval)
 
     ___ __enter__
@@ -3205,8 +3205,8 @@ c_ TemplateError(HTTPError):
 c_ BaseTemplate(object):
     """ Base class and minimal API for template adapters """
     extensions = ['tpl','html','thtml','stpl']
-    settings = {} #used __ prepare()
-    defaults = {} #used __ render()
+    settings    # dict #used __ prepare()
+    defaults    # dict #used __ render()
 
     ___ -  source=N.., ?_N.., lookup=[], encoding='utf8', **settings):
         """ Create a new template.
@@ -3304,7 +3304,7 @@ c_ CheetahTemplate(BaseTemplate):
     ___ prepare **options):
         from Cheetah.Template ______ Template
         context = _.local()
-        context.vars = {}
+        context.vars    # dict
         options['searchList'] = [context.vars]
         __ source:
             tpl = Template(source=source, **options)
@@ -3350,8 +3350,8 @@ c_ Jinja2Template(BaseTemplate):
 
 c_ SimpleTemplate(BaseTemplate):
 
-    ___ prepare escape_func=html_escape, noescape=False, syntax=N.., **ka):
-        cache = {}
+    ___ prepare escape_func=html_escape, noescape=F.., syntax=N.., **ka):
+        cache    # dict
         enc = encoding
         _str = lambda x: touni(x, enc)
         _escape = lambda x: escape_func(touni(x, enc))
@@ -3382,13 +3382,13 @@ c_ SimpleTemplate(BaseTemplate):
     ___ _rebase _env, _name=N.., **kwargs):
         __ _name __ N..:
             depr('Rebase function called without arguments.'
-                 ' You were probably looking for {{base}}?', True) #0.12
+                 ' You were probably looking for {{base}}?', T..) #0.12
         _env['_rebase'] = (_name, kwargs)
 
     ___ _include _env, _name=N.., **kwargs):
         __ _name __ N..:
             depr('Rebase function called without arguments.'
-                 ' You were probably looking for {{base}}?', True) #0.12
+                 ' You were probably looking for {{base}}?', T..) #0.12
         env = _env.copy()
         env.update(kwargs)
         __ _name n.. __ cache:
@@ -3413,7 +3413,7 @@ c_ SimpleTemplate(BaseTemplate):
 
     ___ render *args, **kwargs):
         """ Render the template using keyword arguments as local variables. """
-        env = {}; stdout   # list
+        env    # dict; stdout   # list
         ___ dictarg __ args: env.update(dictarg)
         env.update(kwargs)
         execute(stdout, env)
@@ -3425,7 +3425,7 @@ c_ StplSyntaxError(TemplateError): pass
 
 c_ StplParser(object):
     ''' Parser for stpl templates. '''
-    _re_cache = {} #: Cache ___ compiled re patterns
+    _re_cache    # dict #: Cache ___ compiled re patterns
     # This huge pile of voodoo magic splits python code into 8 different tokens.
     # 1: All kinds of python strings (trust me, it works)
     _re_tok = '([urbURB]?(?:\'\'(?!\')|""(?!")|\'{6}|"{6}' \
@@ -3484,7 +3484,7 @@ c_ StplParser(object):
 
     ___ translate
         __ offset: raise RuntimeError('Parser is a one time instance.')
-        w___ True:
+        w___ T..:
             m = re_split.search(source[offset:])
             __ m:
                 text = source[offset:offset+m.s..]
@@ -3503,14 +3503,14 @@ c_ StplParser(object):
                     continue
                 flush_text()
                 read_code(multiline=bool(m.group(4)))
-            else: break
+            else: ____
         text_buffer.a.. (source[offset:])
         flush_text()
         r_ ''.join(code_buffer)
 
     ___ read_code multiline):
         code_line, comment = '', ''
-        w___ True:
+        w___ T..:
             m = re_tok.search(source[offset:])
             __ n.. m:
                 code_line += source[offset:]
@@ -3528,7 +3528,7 @@ c_ StplParser(object):
             elif _com:  # Python comment (up to EOL)
                 comment = _com
                 __ multiline a.. _com.strip().endswith(_tokens[1]):
-                    multiline = False # Allow end-of-block __ comments
+                    multiline = F.. # Allow end-of-block __ comments
             elif _po:  # open parenthesis
                 paren_depth += 1
                 code_line += _po
@@ -3546,14 +3546,14 @@ c_ StplParser(object):
             elif _end:  # The non-standard 'end'-keyword (ends a block)
                 indent -= 1
             elif _cend: # The end-code-block template token (usually '%>')
-                __ multiline: multiline = False
+                __ multiline: multiline = F..
                 else: code_line += _cend
             else: # \n
                 write_code(code_line.strip(), comment)
                 lineno += 1
                 code_line, comment, indent_mod = '', '', 0
                 __ n.. multiline:
-                    break
+                    ____
 
     ___ flush_text
         text = ''.join(text_buffer)
@@ -3563,12 +3563,12 @@ c_ StplParser(object):
         ___ m __ re_inl.finditer(text):
             prefix, pos = text[pos:m.s..], m.end()
             __ prefix:
-                parts.a.. (nl.join(map(repr, prefix.splitlines(True))))
+                parts.a.. (nl.join(map(repr, prefix.splitlines(T..))))
             __ prefix.endswith('\n'): parts[-1] += nl
             parts.a.. (process_inline(m.group(1).strip()))
         __ pos < l..(text):
             prefix = text[pos:]
-            lines = prefix.splitlines(True)
+            lines = prefix.splitlines(T..)
             __ lines[-1].endswith('\\\\\n'): lines[-1] = lines[-1][:-3]
             elif lines[-1].endswith('\\\\\r\n'): lines[-1] = lines[-1][:-4]
             parts.a.. (nl.join(map(repr, lines)))
@@ -3673,9 +3673,9 @@ jinja2_view = functools.partial(view, template_adapter=Jinja2Template)
 
 
 TEMPLATE_PATH = ['./', './views/']
-TEMPLATES = {}
-DEBUG = False
-NORUN = False # If set, run() does nothing. Used by load_app()
+TEMPLATES    # dict
+DEBUG = F..
+NORUN = F.. # If set, run() does nothing. Used by load_app()
 
 #: A dict to map HTTP status codes (e.g. 404) to phrases (e.g. 'Not Found')
 HTTP_CODES = httplib.responses

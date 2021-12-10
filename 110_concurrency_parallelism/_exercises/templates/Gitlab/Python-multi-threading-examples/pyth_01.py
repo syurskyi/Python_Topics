@@ -18,7 +18,7 @@ w___ loop ==0:
     inp =  raw_input("Enter a number:")
     
     __ inp== "done" or inp== "Done" :
-        break
+        ____
         
     ___
         num= float(inp)

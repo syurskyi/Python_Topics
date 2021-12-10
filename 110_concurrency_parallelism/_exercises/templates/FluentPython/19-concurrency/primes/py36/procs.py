@@ -28,10 +28,10 @@ ___ check(n: in.)  PrimeResult:  # <6>
     r_ PrimeResult(n, res, perf_counter() - t0)
 
 ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
-    w___ True:
+    w___ T..:
         n = jobs.g..  # <8>
         __ n == 0:
-            break
+            ____
         results.p..(check(n))  # <9>
 # end::PRIMES_PROC_TOP[]
 
@@ -56,12 +56,12 @@ ___ main()  N..:
         proc.s..  # <5>
         jobs.p..(0)  # <6>
 
-    w___ True:
+    w___ T..:
         n, prime, elapsed = results.g..  # <7>
         label = 'P' __ prime else ' '
         print(f'{n:16}  {label} {elapsed:9.6f}s')  # <8>
         __ jobs.empty():  # <9>
-            break
+            ____
 
     elapsed = perf_counter() - t0
     print(f'Total time: {elapsed:.2f}s')

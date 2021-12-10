@@ -9,7 +9,7 @@ ______ ssl
 c_ Crawler(_.T..):
 
   ___  -   baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
-    _.T... - (self);
+    _.T... - ;
     print("Web Crawler Worker Started: {}".format(_.current_thread()))
     linksToCrawl = linksToCrawl
     haveVisited = haveVisited
@@ -21,7 +21,7 @@ c_ Crawler(_.T..):
     # We create this context so that we can crawl 
     # https sites
     myssl = ssl.create_default_context();
-    myssl.check_hostname=False
+    myssl.check_hostname=F..
     myssl.verify_mode=ssl.CERT_NONE
     # process all the links __ our queue
     w... T..

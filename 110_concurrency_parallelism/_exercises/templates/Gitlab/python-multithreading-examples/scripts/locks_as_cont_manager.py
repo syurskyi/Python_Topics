@@ -10,11 +10,11 @@ ___ worker_with(lock):
         l__.d..('Lock acquired via with')
         
 ___ worker_no_with(lock):
-    lock.a..
+    l__.a..
     ___
         l__.d..('Lock acquired directly')
     ______
-        lock.r..
+        l__.r..
 
 lock = _.?
 w = _.? ?_worker_with,  ?_(lock,))

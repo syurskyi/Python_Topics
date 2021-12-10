@@ -11,11 +11,11 @@ ______ i__
 @ ___ spin msg s..  N..  # <1>
     ___ char __ i__.c.. _ \|/-
         status = f'\r{char} {msg}'
-        print ? flush=True, end='')
+        print ? flush=T.., end='')
         ___
             await _.s..(.1)  # <2>
         except _.CancelledError:  # <3>
-            break
+            ____
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 

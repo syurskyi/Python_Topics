@@ -30,7 +30,7 @@ ___ check(n: in.)  PrimeResult:  # <6>
 ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
     w___ n := jobs.g..:  # <8>
         results.p..(check(n))  # <9>
-    results.p..(PrimeResult(0, False, 0.0))
+    results.p..(PrimeResult(0, F.., 0.0))
 # end::PRIMES_PROC_TOP[]
 
 ___ start_jobs(workers: in.)  ResultQueue:

@@ -16,12 +16,12 @@ PROMPT = b'?> '
                  reader: _.StreamReader,
                  writer: _.StreamWriter)  N..:
     client = writer.get_extra_info('peername')  # <3>
-    w___ True:  # <4>
+    w___ T..:  # <4>
         writer.write(PROMPT)  # can't await!  # <5>
         await writer.drain()  # must await!  # <6>
         data = await reader.readline()  # <7>
         __ n.. data:  # <8>
-            break
+            ____
         ___
             query = data.decode().strip()  # <9>
         except UnicodeDecodeError:  # <10>
@@ -29,7 +29,7 @@ PROMPT = b'?> '
         print(f' From {client}: {query!r}')  # <11>
         __ query:
             __ ord(query[:1]) < 32:  # <12>
-                break
+                ____
             results = await search(query, index, writer)  # <13>
             print(f'   To {client}: {results} results.')  # <14>
 

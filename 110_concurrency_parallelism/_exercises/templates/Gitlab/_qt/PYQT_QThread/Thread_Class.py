@@ -10,7 +10,7 @@ ___ print_epoch(name_of_thread, delay):
 
 c_ MyThread(_.?):
     ___ -  name, delay):
-        _.?.- (self)
+        _.?.-
         name = name
         delay = delay
 

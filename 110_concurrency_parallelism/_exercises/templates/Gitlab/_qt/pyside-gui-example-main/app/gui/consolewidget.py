@@ -14,7 +14,7 @@ c_ ConsoleWidget(QTextEdit):
     ___ - 
         super().- ()
 
-        setReadOnly(True)
+        setReadOnly(T..)
         setWordWrapMode(QTextOption.NoWrap)
         setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         setStyleSheet('''
@@ -36,7 +36,7 @@ c_ ConsoleWidget(QTextEdit):
         actionCopy = QAction('&Copy', self, shortcut=QKeySequence.Copy, statusTip='Copy selected text to the clipboard', triggered=copy)
         actionSelectAll = QAction('Select &All', self, shortcut=QKeySequence.SelectAll, statusTip='Select all text in the output window', triggered=selectAll)
         actionScrollToEnd = QAction('Scroll to &End', self, statusTip='Move the cursor to the end of the output', triggered=scrollToEnd)
-        actionWordWrap = QAction('&Word Wrap', self, statusTip='Toggle word wrap', checkable=True, triggered=toggleWordWrap)
+        actionWordWrap = QAction('&Word Wrap', self, statusTip='Toggle word wrap', checkable=T.., triggered=toggleWordWrap)
         actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=clear)
 
     @Slot(s..)
@@ -59,7 +59,7 @@ c_ ConsoleWidget(QTextEdit):
         scrollToEnd()
 
     ___ contextMenuEvent event):
-        menu = QMenu(self)
+        menu = QMenu
         menu.addAction(actionCopy)
         menu.addAction(actionSelectAll)
         menu.addAction(actionScrollToEnd)

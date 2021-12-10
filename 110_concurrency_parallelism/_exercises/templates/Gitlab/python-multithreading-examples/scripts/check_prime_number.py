@@ -2,7 +2,7 @@ ______ _
  
 c_ PrimeNumber(_.?):
   ___ -  number):
-    _.?.- (self)
+    _.?.-
     Number = number
  
   ___ run 
@@ -14,10 +14,10 @@ c_ PrimeNumber(_.?):
             counter += 1 
         print "%d is a prime number" @ Number
 threads   # list
-w___ True: 
+w___ T..:
     input = long(raw_input("number: ")) 
     __ input < 1:
-        break 
+        ____
  
     thread = PrimeNumber(input) 
     threads += [thread] 

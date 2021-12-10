@@ -29,7 +29,7 @@ init(app)  # <5>
     chars = sorted(app.state.index.search(q))
     r_ ({'char': c, 'name': name(c)} ___ c __ chars)  # <8>
 
-@app.get('/', response_class=HTMLResponse, include_in_schema=False)
+@app.get('/', response_class=HTMLResponse, include_in_schema=F..)
 ___ form():  # <9>
     r_ app.state.form
 

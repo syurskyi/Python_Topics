@@ -12,30 +12,30 @@ ______ functools
 # tag::PRIME_NAP[]
 @ ___ is_prime(n):
     __ n < 2:
-        r_ False
+        r_ F..
     __ n == 2:
-        r_ True
+        r_ T..
     __ n @ 2 == 0:
-        r_ False
+        r_ F..
 
     root = math.isqrt(n)
     ___ i __ r.. 3, root + 1, 2):
         __ n @ i == 0:
-            r_ False
+            r_ F..
         __ i @ 100_000 == 1:
             await _.s..(0)  # <1>
-    r_ True
+    r_ T..
 # end::PRIME_NAP[]
 
 
 @ ___ spin(msg: s..)  N..:
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
-        print(status, flush=True, end='')
+        print(status, flush=T.., end='')
         ___
             await _.s..(.1)
         except _.CancelledError:
-            break
+            ____
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')
 

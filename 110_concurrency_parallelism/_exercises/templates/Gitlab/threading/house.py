@@ -5,5 +5,5 @@ ______ t__
 Mouse() # Instance of Mouse as a thread object.
 Cat()   # Instance of Cat as a thread object.
 
-w___ True:
+w___ T..:
     t__.s..(1)

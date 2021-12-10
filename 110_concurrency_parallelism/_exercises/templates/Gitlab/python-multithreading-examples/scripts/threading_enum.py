@@ -19,7 +19,7 @@ l__.?(
 )
 
 ___ i __ r.. 3):
-    t = _.? ?_worker, daemon=True)
+    t = _.? ?_worker, daemon=T..)
     t.s..
 
 main_thread = _.main_thread()

@@ -15,13 +15,13 @@ c_ Counter:
 
     ___ increment
         l__.d..('wait  for lock')
-        lock.a..
+        l__.a..
 
         ___
             l__.d..('Acquire lock')
             value = value+1
         ______
-            lock.r..
+            l__.r..
 
 
 

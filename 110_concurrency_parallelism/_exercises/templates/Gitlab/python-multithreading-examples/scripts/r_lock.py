@@ -3,5 +3,5 @@ ______ _
 
 lock = _.RLock()
 
-print 'First try :', lock.a..
-print 'Second try:', lock.acquire(0)
+print 'First try :', l__.a..
+print 'Second try:', l__.acquire(0)

@@ -10,15 +10,15 @@ c_ MainWindow(QMainWindow, Ui_Countdown):
 
     ___ -  parent=N..):
         super(MainWindow, self).- (parent)
-        setupUi(self)
+        setupUi
 
     @pyqtSignature("")
     ___ on_countdownButton_clicked
         progressBox = QProgressDialog(
             "Counting to 100...", "Cancel", 0, 100, parent=self)
         progressBox.forceShow()
-        progressBox.setModal(True)
-        progressBox.setAutoClose(True)
+        progressBox.setModal(T..)
+        progressBox.setAutoClose(T..)
 
         ? = QThread()
         WorkerProcess = Worker()
@@ -46,18 +46,18 @@ c_ Worker(QObject):
     @pyqtSlot(in., in.)
     ___ calculate start, stop):
         statusGen = counter(start, stop)
-        cancel = False
+        cancel = F..
         ___ stat __ statusGen:
             __ cancel:
                 finished.emit()
-                break
+                ____
             else:
                 status.emit(stat)
         else:
             finished.emit()
 
     ___ abort
-        cancel = True
+        cancel = T..
 
 
 ___ counter(start, stop):
@@ -65,7 +65,7 @@ ___ counter(start, stop):
     ___ number __ r.. start, stop):
         yield {"progress" : number, "string" : s..(number)}
         __ number == 100:
-            break
+            ____
         else:
             t__.s..(0.1)
                 

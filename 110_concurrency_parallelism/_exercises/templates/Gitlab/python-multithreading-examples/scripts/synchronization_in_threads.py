@@ -6,9 +6,9 @@ ______ t__
 x = 0
  
 ___ Tfunc(i,lock):
- lock.a..
+ l__.a..
  print('from thread %d' @i)
- lock.r..
+ l__.r..
  
  
  # creating a lock

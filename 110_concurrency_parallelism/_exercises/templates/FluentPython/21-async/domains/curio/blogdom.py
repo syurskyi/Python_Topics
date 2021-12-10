@@ -10,8 +10,8 @@ MAX_KEYWORD_LEN = 4
     ___
         await socket.getaddrinfo(domain, N..)  # <2>
     except socket.gaierror:
-        r_ (domain, False)
-    r_ (domain, True)
+        r_ (domain, F..)
+    r_ (domain, T..)
 
 @ ___ main()  N..:
     names = (kw ___ kw __ kwlist __ l..(kw) <= MAX_KEYWORD_LEN)

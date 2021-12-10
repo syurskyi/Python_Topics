@@ -13,9 +13,9 @@ from primes ______ is_prime
 ___ spin(msg: s.., done: synchronize.Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>
         status = f'\r{char} {msg}'  # <3>
-        print(status, end='', flush=True)
+        print(status, end='', flush=T..)
         __ done.wait(.1):  # <4>
-            break  # <5>
+            ____  # <5>
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>
 

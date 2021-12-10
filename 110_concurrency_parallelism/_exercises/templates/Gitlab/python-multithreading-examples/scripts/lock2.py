@@ -11,14 +11,14 @@ l__.?(?_l__.D..
                     
 ___ lock_holder(lock):
     l__.d..('Starting')
-    w___ True:
-        lock.a..
+    w___ T..:
+        l__.a..
         ___
             l__.d..('Holding')
             t__.s..(0.5)
         ______
             l__.d..('Not holding')
-            lock.r..
+            l__.r..
         t__.s..(0.5)
     r_
                     
@@ -29,7 +29,7 @@ ___ worker(lock):
     w___ num_acquires < 3:
         t__.s..(0.5)
         l__.d..('Trying to acquire')
-        have_it = lock.acquire(0)
+        have_it = l__.acquire(0)
         ___
             num_tries += 1
             __ have_it:
@@ -39,14 +39,14 @@ ___ worker(lock):
                 l__.d..('Iteration %d: Not acquired', num_tries)
         ______
             __ have_it:
-                lock.r..
+                l__.r..
     l__.d..('Done after %d iterations', num_tries)
 
 
 lock = _.?
 
 holder = _.? ?_lock_holder,  ?_(lock,), ?_'LockHolder')
-holder.setDaemon(True)
+holder.setDaemon(T..)
 holder.s..
 
 worker = _.? ?_worker,  ?_(lock,), ?_'Worker')

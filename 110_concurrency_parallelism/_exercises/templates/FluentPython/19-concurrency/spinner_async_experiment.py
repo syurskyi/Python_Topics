@@ -11,11 +11,11 @@ ______ t__
 @ ___ spin(msg: s..)  N..:
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
-        print(status, flush=True, end='')
+        print(status, flush=T.., end='')
         ___
             await _.s..(.1)
         except _.CancelledError:
-            break
+            ____
     print('THIS WILL NEVER BE OUTPUT')
 
 # tag::SPINNER_ASYNC_EXPERIMENT[]

@@ -11,16 +11,16 @@ from PyQt5.QtCore ______ QSize
 
 parser = argparse.ArgumentParser()                                               
 
-parser.add_argument("--file", "-f", type=s.., required=True)
+parser.add_argument("--file", "-f", type=s.., required=T..)
 args = parser.parse_args()
 
 df=pd.read_csv(args.file)
 
 c_ MainWindow(QMainWindow):
     ___ - 
-        QMainWindow.- (self)
+        QMainWindow.-
         setWindowTitle('Boom boom 2')
-        close=False
+        close=F..
         setMinimumSize(QSize(300, 200))    
         s=0 
         label1=QLabel(s..(df['v'][0]),self)
@@ -32,15 +32,15 @@ c_ MainWindow(QMainWindow):
         thread=? ?_self.count).s..
 
     ___ count
-        w___ True:
+        w___ T..:
             __ close:
-                break
+                ____
             t__.s..(1)
             label2.setText(s..(s))
             s+=5
 
     ___ closeEvent event):
-        close=True
+        close=T..
         event.accept()
 
 __ ____ __ ______:

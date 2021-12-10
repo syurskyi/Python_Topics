@@ -18,8 +18,8 @@ OptionalLoop = Optional[_.AbstractEventLoop]  # <2>
     ___
         await loop.getaddrinfo(domain, N..)
     except socket.gaierror:
-        r_ Result(domain, False)
-    r_ Result(domain, True)
+        r_ Result(domain, F..)
+    r_ Result(domain, T..)
 
 
 @ ___ multi_probe(domains: Iterable[s..])  AsyncIterator[Result]:  # <4>
