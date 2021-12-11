@@ -83,7 +83,7 @@ c_ Main(QtWidgets.QMainWindow):
         """
         print("closing")
         thread.quit()
-        thread.wait()
+        thread.w..
         s__(Main, .closeEvent(event)
 
 

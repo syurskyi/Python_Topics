@@ -7,7 +7,7 @@ ___ consumer(cond):
     """wait for the condition and use the resource"""
     l__.d..('Starting consumer thread')
     w__ cond:
-        cond.wait()
+        cond.w..
         l__.d..('Resource is available to consumer')
 
 

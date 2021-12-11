@@ -6,7 +6,7 @@ ___ worker(barrier):
     print(_.current_thread().name,
           'waiting for barrier with {} others'.format(
               barrier.n_waiting))
-    worker_id = barrier.wait()
+    worker_id = barrier.w..
     print(_.current_thread().name, 'after barrier',
           worker_id)
 

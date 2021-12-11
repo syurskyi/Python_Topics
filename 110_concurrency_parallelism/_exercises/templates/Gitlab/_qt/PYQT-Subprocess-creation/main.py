@@ -5,7 +5,7 @@ ____ PyQt5.QtWidgets ______ QPushButton
 ____ PyQt5.QtCore ______ QSize
 ______ psutil
 ______ subprocess
-______ os
+______ __
 ______ t__
 ____ _ ______ ?
 
@@ -75,7 +75,7 @@ c_ MainWindow(QMainWindow):
         buttons={}
         fileButtons=[]
         x=0
-        ___ file __ os.listdir('./scripts'):
+        ___ file __ __.listdir('./scripts'):
             fileButton = QPushButton(s..(file),
             
             # state is used below because it get passed a bool value so if you use val=file directly, 
@@ -92,7 +92,7 @@ c_ MainWindow(QMainWindow):
         fileButtons=[]
         
         x=0
-        ___ dataName __ os.listdir('./data'):
+        ___ dataName __ __.listdir('./data'):
             newLabel= QLabel(dataName,
             newLabel.show()
             newLabel.move(x+40, 0)

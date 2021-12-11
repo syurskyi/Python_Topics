@@ -19,7 +19,7 @@ PROMPT = b'?> '
     w___ T..:  # <4>
         writer.w..(PROMPT)  # can't await!  # <5>
         await writer.drain()  # must await!  # <6>
-        data = await reader.readline()  # <7>
+        data = await reader.r..  # <7>
         __ n.. data:  # <8>
             ____
         ___

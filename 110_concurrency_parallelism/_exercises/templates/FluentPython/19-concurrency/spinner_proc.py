@@ -15,7 +15,7 @@ ___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
     ___ char __ i__.c..(r'\|/-'):
         status = f'\r{char} {msg}'
         print(status, end='', flush=T..)
-        __ done.wait(.1):
+        __ done.w..(.1):
             ____
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')

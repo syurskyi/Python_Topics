@@ -1,5 +1,5 @@
-______ os
-______ re
+______ __
+______ __
 ______ sys
 ______ yaml
 
@@ -8,9 +8,9 @@ __config__ = N..
 
 ___ get_config_yaml_path():
     __ hasattr(sys, 'frozen'):
-        r_ os.path.join(os.path.dirname(sys.executable), 'config.yaml')
+        r_ __.path.join(__.path.dirname(sys.executable), 'config.yaml')
     ____
-        r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'config.yaml'))
+        r_ __.path.normpath(__.path.join(__.path.dirname(__file__), '..', 'config.yaml'))
 
 
 ___ get_config():
@@ -27,15 +27,15 @@ ___ get_config():
                 assert config_var_name n.. __ data
                 assert l..(values) == 2
                 env_var_name, default = values
-                data[config_var_name] = os.getenv(env_var_name, default)
+                data[config_var_name] = __.getenv(env_var_name, default)
             del data['env']
 
         # Initialize the module-level config object with the application config
         __config__ = data
 
         # If the user has a ~/.ThisApplication/config.yaml file, patch __ overridden values from it
-        user_config = os.path.join(os.path.expanduser('~'), '.ThisApplication', 'config.yaml')
-        __ os.path.isfile(user_config):
+        user_config = __.path.join(__.path.expanduser('~'), '.ThisApplication', 'config.yaml')
+        __ __.path.isfile(user_config):
             w__ o..(user_config) __ fp:
                 user_data = yaml.safe_load(fp)
             ___ k, v __ user_data.items():

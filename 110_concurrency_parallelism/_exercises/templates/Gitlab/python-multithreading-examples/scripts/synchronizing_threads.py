@@ -11,7 +11,7 @@ ___ consumer(cond):
     l__.d..('Starting consumer thread')
     t = _.c..
     w__ cond:
-        cond.wait()
+        cond.w..
         l__.d..('Resource is available to consumer')
 
 ___ producer(cond):

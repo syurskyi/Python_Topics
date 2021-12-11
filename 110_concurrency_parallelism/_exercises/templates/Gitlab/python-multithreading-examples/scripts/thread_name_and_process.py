@@ -5,20 +5,20 @@ Consider the python program given below __ which we print thread name a.. corres
 # Python program to illustrate the concept
 # of _
 ______ _
-______ os
+______ __
  
 ___ task1():
     print("Task 1 assigned to thread: {}".format(_.current_thread().name))
-    print("ID of process running task 1: {}".format(os.getpid()))
+    print("ID of process running task 1: {}".format(__.getpid()))
  
 ___ task2():
     print("Task 2 assigned to thread: {}".format(_.current_thread().name))
-    print("ID of process running task 2: {}".format(os.getpid()))
+    print("ID of process running task 2: {}".format(__.getpid()))
  
 __ ____ __ ______:
  
     # print ID of current process
-    print("ID of process running main program: {}".format(os.getpid()))
+    print("ID of process running main program: {}".format(__.getpid()))
  
     # print name of main thread
     print("Main thread name: {}".format(_.main_thread().name))

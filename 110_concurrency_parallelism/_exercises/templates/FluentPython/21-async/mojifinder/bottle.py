@@ -36,7 +36,7 @@ __ _____ __ ______
         ______ gevent.monkey; gevent.monkey.patch_all()
 
 ______ base64, cgi, email.utils, functools, hmac, i__, mimetypes,\
-        os, re, subprocess, sys, tempfile, _, t__, warnings, hashlib
+        __, __, subprocess, sys, tempfile, _, t__, warnings, hashlib
 
 ____ d__ ______ d__ __ datedate, d__, timedelta
 ____ tempfile ______ TemporaryFile
@@ -120,7 +120,7 @@ ____ # 2.x
         ____ collections ______ MutableMapping __ DictMixin
     unicode = unicode
     json_loads = json_lds
-    eval(compile('def _raise(*a): raise a[0], a[1], a[2]', '<py3fix>', 'exec'))
+    eval(c__('def _raise(*a): raise a[0], a[1], a[2]', '<py3fix>', 'exec'))
 
 # Some helpers ___ string/byte handling
 ___ tob(s, enc='utf8'):
@@ -152,7 +152,7 @@ ___ depr(message, hard=F..):
 
 ___ makelist(data): # This is just to handy
     __ isinstance(data, (tuple, list, set, dict)): r_ list(data)
-    elif data: r_ [data]
+    ___ data: r_ [data]
     ____ r_ []
 
 
@@ -254,7 +254,7 @@ ___ _re_flatten(p):
     ''' Turn all capturing groups in a regular expression pattern into
         non-capturing groups. '''
     __ '(' n.. __ p: r_ p
-    r_ re.sub(r'(\\*)(\(\?P<[^>]+>|\((?!\?))',
+    r_ __.sub(r'(\\*)(\(\?P<[^>]+>|\((?!\?))',
         lambda m: m.group(0) __ l..(m.group(1)) @ 2 else m.group(1) + '(?:', p)
 
 
@@ -299,7 +299,7 @@ c_ Router(object):
         The first element is a string, the last two are callables or None. '''
         filters[name] = func
 
-    rule_syntax = re.compile('(\\\\*)'\
+    rule_syntax = __.c__('(\\\\*)'\
         '(?:(?::([a-zA-Z_][a-zA-Z_0-9]*)?()(?:#(.*?)#)?)'\
           '|(?:<([a-zA-Z_][a-zA-Z_0-9]*)?(?::([a-zA-Z_]*)'\
             '(?::((?:\\\\.|[^\\\\>]+)+)?)?)?>))')
@@ -344,8 +344,8 @@ c_ Router(object):
                     keys.a.. (key)
                 __ in_filter: filters.a.. ((key, in_filter))
                 builder.a.. ((key, out_filter or s..))
-            elif key:
-                pattern += re.escape(key)
+            ___ key:
+                pattern += __.escape(key)
                 builder.a.. ((N.., key))
 
         builder[rule] = builder
@@ -357,9 +357,9 @@ c_ Router(object):
             r_
 
         ___
-            re_pattern = re.compile('^(@)$' @ pattern)
+            re_pattern = __.c__('^(@)$' @ pattern)
             re_match = re_pattern.match
-        except re.error:
+        except __.error:
             raise RouteSyntaxError("Could not add Route: @ (@)" @ (rule, _e()))
 
         __ filters:
@@ -371,7 +371,7 @@ c_ Router(object):
                     except ValueError:
                         raise HTTPError(400, 'Path has wrong format.')
                 r_ url_args
-        elif re_pattern.groupindex:
+        ___ re_pattern.groupindex:
             ___ getargs(path):
                 r_ re_match(path).groupdict()
         ____
@@ -399,7 +399,7 @@ c_ Router(object):
             some = all_rules[x:x+maxgroups]
             combined = (flatpat ___ (_, flatpat, _, _) __ some)
             combined = '|'.join('(^%s$)' @ flatpat ___ flatpat __ combined)
-            combined = re.compile(combined).match
+            combined = __.c__(combined).match
             rules = [(target, getargs) ___ (_, _, target, getargs) __ some]
             comborules.a.. ((combined, rules))
 
@@ -428,7 +428,7 @@ c_ Router(object):
             __ method __ static a.. path __ static[method]:
                 target, getargs = static[method][path]
                 r_ target, getargs(path) __ getargs else {}
-            elif method __ dyna_regexes:
+            ___ method __ dyna_regexes:
                 ___ combined, rules __ dyna_regexes[method]:
                     match = combined(path)
                     __ match:
@@ -743,7 +743,7 @@ c_ Bottle(object):
             caches. If an ID or route object is given, only that specific route
             is affected. '''
         __ route __ N..: routes = routes
-        elif isinstance(route, Route): routes = [route]
+        ___ isinstance(route, Route): routes = [route]
         ____ routes = [routes[route]]
         ___ route __ routes: route.reset()
         __ DEBUG:
@@ -920,7 +920,7 @@ c_ Bottle(object):
         __ hasattr(out, 'read'):
             __ 'wsgi.file_wrapper' __ request.environ:
                 r_ request.environ['wsgi.file_wrapper'](out)
-            elif hasattr(out, 'close') or n.. hasattr(out, '__iter__'):
+            ___ hasattr(out, 'close') or n.. hasattr(out, '__iter__'):
                 r_ WSGIFileWrapper(out)
 
         # Handle Iterables. We peek into them to detect their inner type.
@@ -942,9 +942,9 @@ c_ Bottle(object):
         # These are the inner types allowed __ iterator or generator objects.
         __ isinstance(first, HTTPResponse):
             r_ _cast(first)
-        elif isinstance(first, bytes):
+        ___ isinstance(first, bytes):
             new_iter = i__.chain([first], iout)
-        elif isinstance(first, unicode):
+        ___ isinstance(first, unicode):
             encoder = lambda x: x.encode(response.charset)
             new_iter = imap(encoder, i__.chain([first], iout))
         ____
@@ -1233,7 +1233,7 @@ c_ BaseRequest(object):
         __ py31:
             args['fp'] = NCTextIOWrapper(args['fp'], encoding='utf8',
                                          newline='\n')
-        elif py3k:
+        ___ py3k:
             args['encoding'] = 'utf8'
         data = cgi.FieldStorage(**args)
         self['_cgi.FieldStorage'] = data #http://bugs.python.org/issue18394#msg207958
@@ -1380,9 +1380,9 @@ c_ BaseRequest(object):
 
         __ key == 'wsgi.input':
             todelete = ('body', 'forms', 'files', 'params', 'post', 'json')
-        elif key == 'QUERY_STRING':
+        ___ key == 'QUERY_STRING':
             todelete = ('query', 'params')
-        elif key.startswith('HTTP_'):
+        ___ key.startswith('HTTP_'):
             todelete = ('headers', 'cookies')
 
         ___ key __ todelete:
@@ -1509,7 +1509,7 @@ c_ BaseResponse(object):
     ___ _set_status status):
         __ isinstance(status, in.):
             code, status = status, _HTTP_STATUS_LINES.get(status)
-        elif ' ' __ status:
+        ___ ' ' __ status:
             status = status.strip()
             code   = in.(status.split()[0])
         ____
@@ -1630,7 +1630,7 @@ c_ BaseResponse(object):
 
         __ secret:
             value = touni(cookie_encode((name, value), secret))
-        elif n.. isinstance(value, basestring):
+        ___ n.. isinstance(value, basestring):
             raise TypeError('Secret key missing for non-string Cookie.')
 
         __ l..(value) > 4096: raise ValueError('Cookie value to long.')
@@ -1643,7 +1643,7 @@ c_ BaseResponse(object):
             __ key == 'expires':
                 __ isinstance(value, (datedate, d__)):
                     value = value.timetuple()
-                elif isinstance(value, (in., float)):
+                ___ isinstance(value, (in., float)):
                     value = t__.gmtime(value)
                 value = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", value)
             _cookies[name][key.replace('_', '-')] = value
@@ -1755,7 +1755,7 @@ c_ JSONPlugin(object):
                 #Set content type only if serialization succesful
                 response.content_type = 'application/json'
                 r_ json_response
-            elif isinstance(rv, HTTPResponse) a.. isinstance(rv.body, dict):
+            ___ isinstance(rv, HTTPResponse) a.. isinstance(rv.body, dict):
                 rv.body = dumps(rv.body)
                 rv.content_type = 'application/json'
             r_ rv
@@ -1775,7 +1775,7 @@ c_ TemplatePlugin(object):
         conf = route.config.get('template')
         __ isinstance(conf, (tuple, list)) a.. l..(conf) == 2:
             r_ view(conf[0], **conf[1])(callback)
-        elif isinstance(conf, s..):
+        ___ isinstance(conf, s..):
             r_ view(conf)(callback)
         ____
             r_ callback
@@ -1908,7 +1908,7 @@ c_ FormsDict(MultiDict):
     ___ _fix s, encoding=N..):
         __ isinstance(s, unicode) a.. recode_unicode: # Python 3 WSGI
             r_ s.encode('latin1').decode(encoding or input_encoding)
-        elif isinstance(s, bytes): # Python 2 WSGI
+        ___ isinstance(s, bytes): # Python 2 WSGI
             r_ s.decode(encoding or input_encoding)
         ____
             r_ s
@@ -2001,7 +2001,7 @@ c_ WSGIHeaderDict(DictMixin):
         ___ key __ environ:
             __ key[:5] == 'HTTP_':
                 yield key[5:].replace('_', '-').title()
-            elif key __ cgikeys:
+            ___ key __ cgikeys:
                 yield key.replace('_', '-').title()
 
     ___ keys r_ [x ___ x __ self]
@@ -2298,29 +2298,29 @@ c_ ResourceManager(object):
 
                 res.add_path('./resources/', __file__)
         '''
-        base = os.path.abspath(os.path.dirname(base or base))
-        path = os.path.abspath(os.path.join(base, os.path.dirname(path)))
-        path += os.sep
+        base = __.path.abspath(__.path.dirname(base or base))
+        path = __.path.abspath(__.path.join(base, __.path.dirname(path)))
+        path += __.sep
         __ path __ path:
             path.r..(path)
-        __ create a.. n.. os.path.isdir(path):
-            os.makedirs(path)
+        __ create a.. n.. __.path.isdir(path):
+            __.makedirs(path)
         __ index __ N..:
             path.a.. (path)
         ____
             path.insert(index, path)
         cache.clear()
-        r_ os.path.exists(path)
+        r_ __.path.exists(path)
 
     ___ __iter__
         ''' Iterate over all existing files in all registered paths. '''
         search = path[:]
         w___ search:
             path = search.pop()
-            __ n.. os.path.isdir(path): ______
-            ___ name __ os.listdir(path):
-                full = os.path.join(path, name)
-                __ os.path.isdir(full): search.a.. (full)
+            __ n.. __.path.isdir(path): ______
+            ___ name __ __.listdir(path):
+                full = __.path.join(path, name)
+                __ __.path.isdir(full): search.a.. (full)
                 ____ yield full
 
     ___ lookup name):
@@ -2331,8 +2331,8 @@ c_ ResourceManager(object):
             future lookups. '''
         __ name n.. __ cache or DEBUG:
             ___ path __ path:
-                fpath = os.path.join(path, name)
-                __ os.path.isfile(fpath):
+                fpath = __.path.join(path, name)
+                __ __.path.isfile(fpath):
                     __ cachemode __ ('all', 'found'):
                         cache[name] = fpath
                     r_ fpath
@@ -2381,9 +2381,9 @@ c_ FileUpload(object):
         __ n.. isinstance(fname, unicode):
             fname = fname.decode('utf8', 'ignore')
         fname = normalize('NFKD', fname).encode('ASCII', 'ignore').decode('ASCII')
-        fname = os.path.basename(fname.replace('\\', os.path.sep))
-        fname = re.sub(r'[^a-zA-Z0-9-_.\s]', '', fname).strip()
-        fname = re.sub(r'[-\s]+', '-', fname).strip('.-')
+        fname = __.path.basename(fname.replace('\\', __.path.sep))
+        fname = __.sub(r'[^a-zA-Z0-9-_.\s]', '', fname).strip()
+        fname = __.sub(r'[-\s]+', '-', fname).strip('.-')
         r_ fname[:255] or 'empty'
 
     ___ _copy_file fp, chunk_size=2**16):
@@ -2404,9 +2404,9 @@ c_ FileUpload(object):
             :param chunk_size: Bytes to read at a time. (default: 64kb)
         '''
         __ isinstance(destination, basestring): # Except file-likes here
-            __ os.path.isdir(destination):
-                destination = os.path.join(destination, filename)
-            __ n.. overwrite a.. os.path.exists(destination):
+            __ __.path.isdir(destination):
+                destination = __.path.join(destination, filename)
+            __ n.. overwrite a.. __.path.exists(destination):
                 raise IOError('File exists.')
             w__ o..(destination, 'wb') __ fp:
                 _copy_file(fp, chunk_size)
@@ -2470,15 +2470,15 @@ ___ static_file(filename, root, mimetype='auto', download=F.., charset='UTF-8'):
             mime-type. (default: UTF-8)
     """
 
-    root = os.path.abspath(root) + os.sep
-    filename = os.path.abspath(os.path.join(root, filename.strip('/\\')))
+    root = __.path.abspath(root) + __.sep
+    filename = __.path.abspath(__.path.join(root, filename.strip('/\\')))
     headers = dict()
 
     __ n.. filename.startswith(root):
         r_ HTTPError(403, "Access denied.")
-    __ n.. os.path.exists(filename) or n.. os.path.isfile(filename):
+    __ n.. __.path.exists(filename) or n.. __.path.isfile(filename):
         r_ HTTPError(404, "File does not exist.")
-    __ n.. os.access(filename, os.R_OK):
+    __ n.. __.access(filename, __.R_OK):
         r_ HTTPError(403, "You do not have permission to access this file.")
 
     __ mimetype == 'auto':
@@ -2491,10 +2491,10 @@ ___ static_file(filename, root, mimetype='auto', download=F.., charset='UTF-8'):
         headers['Content-Type'] = mimetype
 
     __ download:
-        download = os.path.basename(filename __ download == T.. else download)
+        download = __.path.basename(filename __ download == T.. else download)
         headers['Content-Disposition'] = 'attachment; filename="@"' @ download
 
-    stats = os.stat(filename)
+    stats = __.stat(filename)
     headers['Content-Length'] = clen = stats.st_size
     lm = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", t__.gmtime(stats.st_mtime))
     headers['Last-Modified'] = lm
@@ -2541,7 +2541,7 @@ ___ d..(mode=T..):
 ___ http_date(value):
     __ isinstance(value, (datedate, d__)):
         value = value.utctimetuple()
-    elif isinstance(value, (in., float)):
+    ___ isinstance(value, (in., float)):
         value = t__.gmtime(value)
     __ n.. isinstance(value, basestring):
         value = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", value)
@@ -2574,7 +2574,7 @@ ___ parse_range_header(header, maxlen=0):
         ___
             __ n.. start:  # bytes=-100     last 100 bytes
                 start, end = max(0, maxlen-in.(end)), maxlen
-            elif n.. end:  # bytes=100-     all but the first 99 bytes
+            ___ n.. end:  # bytes=100-     all but the first 99 bytes
                 start, end = in.(start), maxlen
             ____          # bytes=100-200  bytes 100-200 (inclusive)
                 start, end = in.(start), min(in.(end)+1, maxlen)
@@ -2672,7 +2672,7 @@ ___ path_shift(script_name, path_info, shift=1):
         moved = pathlist[:shift]
         scriptlist = scriptlist + moved
         pathlist = pathlist[shift:]
-    elif shift < 0 a.. shift >= -l..(scriptlist):
+    ___ shift < 0 a.. shift >= -l..(scriptlist):
         moved = scriptlist[shift:]
         pathlist = moved + pathlist
         scriptlist = scriptlist[:shift]
@@ -2848,7 +2848,7 @@ c_ FapwsServer(ServerAdapter):
             port = s..(port)
         evwsgi.start(host, port)
         # fapws3 never releases the GIL. Complain upstream. I tried. No luck.
-        __ 'BOTTLE_CHILD' __ os.environ a.. n.. quiet:
+        __ 'BOTTLE_CHILD' __ __.environ a.. n.. quiet:
             _stderr("WARNING: Auto-reloading does not work with Fapws3.\n")
             _stderr("         (Fapws3 breaks python thread support)\n")
         evwsgi.set_base_module(base)
@@ -2922,7 +2922,7 @@ c_ GeventServer(ServerAdapter):
             options['log'] = N..
         address = (host, port)
         server = pywsgi.WSGIServer(address, handler, **options)
-        __ 'BOTTLE_CHILD' __ os.environ:
+        __ 'BOTTLE_CHILD' __ __.environ:
             ______ signal
             signal.signal(signal.SIGINT, lambda s, f: server.stop())
         server.serve_forever()
@@ -3076,28 +3076,28 @@ ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
         :param options: Options passed to the server adapter.
      """
     __ NORUN: r_
-    __ reloader a.. n.. os.environ.get('BOTTLE_CHILD'):
+    __ reloader a.. n.. __.environ.get('BOTTLE_CHILD'):
         ___
             lockfile = N..
             fd, lockfile = tempfile.mkstemp(prefix='bottle.', suffix='.lock')
-            os.close(fd) # We only need this file to exist. We never write to it
-            w___ os.path.exists(lockfile):
+            __.close(fd) # We only need this file to exist. We never write to it
+            w___ __.path.exists(lockfile):
                 args = [sys.executable] + sys.argv
-                environ = os.environ.copy()
+                environ = __.environ.copy()
                 environ['BOTTLE_CHILD'] = 'true'
                 environ['BOTTLE_LOCKFILE'] = lockfile
                 p = subprocess.Popen(args, env=environ)
                 w___ p.poll() __ N..: # Busy wait...
-                    os.utime(lockfile, N..) # I am alive!
+                    __.utime(lockfile, N..) # I am alive!
                     t__.s..(interval)
                 __ p.poll() != 3:
-                    __ os.path.exists(lockfile): os.unlink(lockfile)
+                    __ __.path.exists(lockfile): __.unlink(lockfile)
                     sys.exit(p.poll())
         except KeyboardInterrupt:
             pass
         ______
-            __ os.path.exists(lockfile):
-                os.unlink(lockfile)
+            __ __.path.exists(lockfile):
+                __.unlink(lockfile)
         r_
 
     ___
@@ -3127,7 +3127,7 @@ ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
             _stderr("Hit Ctrl-C to quit.\n\n")
 
         __ reloader:
-            lockfile = os.environ.get('BOTTLE_LOCKFILE')
+            lockfile = __.environ.get('BOTTLE_LOCKFILE')
             bgcheck = FileCheckerThread(lockfile, interval)
             w__ bgcheck:
                 server.run(app)
@@ -3159,8 +3159,8 @@ c_ FileCheckerThread(_.?):
         status = N..
 
     ___ run
-        exists = os.path.exists
-        mtime = lambda path: os.stat(path).st_mtime
+        exists = __.path.exists
+        mtime = lambda path: __.stat(path).st_mtime
         files = dict()
 
         ___ module __ list(sys.modules.values()):
@@ -3222,7 +3222,7 @@ c_ BaseTemplate(object):
         name = name
         source = source.read() __ hasattr(source, 'read') else source
         filename = source.filename __ hasattr(source, 'filename') else N..
-        lookup = [os.path.abspath(x) ___ x __ lookup]
+        lookup = [__.path.abspath(x) ___ x __ lookup]
         encoding = encoding
         settings = settings.copy() # Copy from class variable
         settings.update(settings) # Apply
@@ -3242,17 +3242,17 @@ c_ BaseTemplate(object):
             depr('The template lookup path list should not be empty.') #0.12
             lookup = ['.']
 
-        __ os.path.isabs(name) a.. os.path.isfile(name):
+        __ __.path.isabs(name) a.. __.path.isfile(name):
             depr('Absolute template path names are deprecated.') #0.12
-            r_ os.path.abspath(name)
+            r_ __.path.abspath(name)
 
         ___ spath __ lookup:
-            spath = os.path.abspath(spath) + os.sep
-            fname = os.path.abspath(os.path.join(spath, name))
+            spath = __.path.abspath(spath) + __.sep
+            fname = __.path.abspath(__.path.join(spath, name))
             __ n.. fname.startswith(spath): ______
-            __ os.path.isfile(fname): r_ fname
+            __ __.path.isfile(fname): r_ fname
             ___ ext __ cls.extensions:
-                __ os.path.isfile('@.@' @ (fname, ext)):
+                __ __.path.isfile('@.@' @ (fname, ext)):
                     r_ '@.@' @ (fname, ext)
 
     @classmethod
@@ -3361,7 +3361,7 @@ c_ SimpleTemplate(BaseTemplate):
 
     @cached_property
     ___ co
-        r_ compile(code, filename or '<string>', 'exec')
+        r_ c__(code, filename or '<string>', 'exec')
 
     @cached_property
     ___ code
@@ -3473,10 +3473,10 @@ c_ StplParser(object):
         _tokens = syntax.split()
         __ n.. syntax __ _re_cache:
             names = 'block_start block_close line_start inline_start inline_end'
-            etokens = map(re.escape, _tokens)
+            etokens = map(__.escape, _tokens)
             pattern_vars = dict(zip(names.split(), etokens))
             patterns = (_re_split, _re_tok, _re_inl)
-            patterns = [re.compile(p@pattern_vars) ___ p __ patterns]
+            patterns = [__.c__(p@pattern_vars) ___ p __ patterns]
             _re_cache[syntax] = patterns
         re_split, re_tok, re_inl = _re_cache[syntax]
 
@@ -3495,7 +3495,7 @@ c_ StplParser(object):
                     text_buffer.a.. (m.group(2)+m.group(5)+line+sep)
                     offset += l..(line+sep)+1
                     ______
-                elif m.group(5): # Old escape syntax
+                ___ m.group(5): # Old escape syntax
                     depr('Escape code lines with a backslash.') #0.12
                     line, sep, _ = source[offset:].partition('\n')
                     text_buffer.a.. (m.group(2)+line+sep)
@@ -3525,27 +3525,27 @@ c_ StplParser(object):
                 ______
             __ _str:    # Python string
                 code_line += _str
-            elif _com:  # Python comment (up to EOL)
+            ___ _com:  # Python comment (up to EOL)
                 comment = _com
                 __ multiline a.. _com.strip().endswith(_tokens[1]):
                     multiline = F.. # Allow end-of-block __ comments
-            elif _po:  # open parenthesis
+            ___ _po:  # open parenthesis
                 paren_depth += 1
                 code_line += _po
-            elif _pc:  # close parenthesis
+            ___ _pc:  # close parenthesis
                 __ paren_depth > 0:
                     # we could check ___ matching parentheses here, but it's
                     # easier to leave that to python - just check counts
                     paren_depth -= 1
                 code_line += _pc
-            elif _blk1: # Start-block keyword (if/___/w___/___/try/...)
+            ___ _blk1: # Start-block keyword (if/___/w___/___/try/...)
                 code_line, indent_mod = _blk1, -1
                 indent += 1
-            elif _blk2: # Continue-block keyword (else/elif/except/...)
+            ___ _blk2: # Continue-block keyword (else/elif/except/...)
                 code_line, indent_mod = _blk2, -1
-            elif _end:  # The non-standard 'end'-keyword (ends a block)
+            ___ _end:  # The non-standard 'end'-keyword (ends a block)
                 indent -= 1
-            elif _cend: # The end-code-block template token (usually '%>')
+            ___ _cend: # The end-code-block template token (usually '%>')
                 __ multiline: multiline = F..
                 ____ code_line += _cend
             ____ # \n
@@ -3570,7 +3570,7 @@ c_ StplParser(object):
             prefix = text[pos:]
             lines = prefix.splitlines(T..)
             __ lines[-1].endswith('\\\\\n'): lines[-1] = lines[-1][:-3]
-            elif lines[-1].endswith('\\\\\r\n'): lines[-1] = lines[-1][:-4]
+            ___ lines[-1].endswith('\\\\\r\n'): lines[-1] = lines[-1][:-4]
             parts.a.. (nl.join(map(repr, lines)))
         code = '_printlist((@,))' @ ', '.join(parts)
         lineno += code.count('\n')+1
@@ -3591,10 +3591,10 @@ c_ StplParser(object):
         __ parts a.. parts[0] __ ('include', 'rebase'):
             depr('The include and rebase keywords are functions now.') #0.12
             __ l..(parts) == 1:   r_ "_printlist([base])", comment
-            elif l..(parts) == 2: r_ "_=@(%r)" @ tuple(parts), comment
+            ___ l..(parts) == 2: r_ "_=@(%r)" @ tuple(parts), comment
             ____                 r_ "_=@(%r, @)" @ tuple(parts), comment
         __ lineno <= 2 a.. n.. line.strip() a.. 'coding' __ comment:
-            m = re.match(r"#.*coding[:=]\s*([-\w.]+)", comment)
+            m = __.match(r"#.*coding[:=]\s*([-\w.]+)", comment)
             __ m:
                 depr('PEP263 encoding strings in templates are deprecated.') #0.12
                 enc = m.group(1)
@@ -3620,7 +3620,7 @@ ___ template(*args, **kwargs):
         __ isinstance(tpl, adapter):
             TEMPLATES[tplid] = tpl
             __ settings: TEMPLATES[tplid].prepare(**settings)
-        elif "\n" __ tpl or "{" __ tpl or "%" __ tpl or '$' __ tpl:
+        ___ "\n" __ tpl or "{" __ tpl or "%" __ tpl or '$' __ tpl:
             TEMPLATES[tplid] = adapter(source=tpl, lookup=lookup, **settings)
         ____
             TEMPLATES[tplid] = adapter(?_tpl, lookup=lookup, **settings)
@@ -3652,7 +3652,7 @@ ___ view(tpl_name, **defaults):
                 tplvars = defaults.copy()
                 tplvars.update(result)
                 r_ template(tpl_name, **tplvars)
-            elif result __ N..:
+            ___ result __ N..:
                 r_ template(tpl_name, defaults)
             r_ result
         r_ wrapper

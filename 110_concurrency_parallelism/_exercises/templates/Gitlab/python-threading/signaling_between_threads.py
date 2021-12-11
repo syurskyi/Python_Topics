@@ -5,7 +5,7 @@ ______ t__
 
 ___ wait_for_event(e):
     l__.d..('wait_for_event starting')
-    event_is_set = e.wait()
+    event_is_set = e.w..
     l__.d..('event set: @',event_is_set)
 
 
@@ -15,7 +15,7 @@ ___ wait_for_event_timeout(e,t):
     w___ n.. e.is_set():
 
         l__.d..('wait_for_event_timeout starting')
-        event_is_set = e.wait(t)
+        event_is_set = e.w..(t)
         l__.d..('event set: @',event_is_set)
 
         __ event_is_set:

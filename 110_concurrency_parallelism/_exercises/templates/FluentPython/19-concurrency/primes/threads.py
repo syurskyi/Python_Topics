@@ -5,7 +5,7 @@ threads.py: shows that Python threads are slower
 than sequential code for CPU-intensive work.
 """
 
-______ os
+______ __
 ______ sys
 ____ queue ______ SimpleQueue
 ____ t__ ______ perf_counter
@@ -55,7 +55,7 @@ ___ report(workers: in., results: ResultQueue)  in.:
 
 ___ main()  N..:
     __ l..(sys.argv) < 2:
-        workers = os.cpu_count()
+        workers = __.cpu_count()
     ____
         workers = in.(sys.argv[1])
 

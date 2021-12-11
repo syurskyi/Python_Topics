@@ -13,7 +13,7 @@ ___ spin(msg: s.., done: Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>
         status = f'\r{char} {msg}'  # <3>
         print(status, end='', flush=T..)
-        __ done.wait(.1):  # <4>
+        __ done.w..(.1):  # <4>
             ____  # <5>
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')  # <6>

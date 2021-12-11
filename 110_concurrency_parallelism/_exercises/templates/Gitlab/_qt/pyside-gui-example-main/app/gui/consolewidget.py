@@ -1,4 +1,4 @@
-______ os
+______ __
 
 ____ PySide2.QtCore ______ Qt, Slot
 ____ PySide2.QtWidgets ______ QTextEdit, QMenu, QAction

@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ sys
 
 ____ PySide2.QtCore ______ QObject
@@ -24,10 +24,10 @@ c_ Resources(QObject):
     @classmethod
     ___ getPath(cls, filename):
         __ hasattr(sys, 'frozen'):
-            r_ os.path.normpath(os.path.join(os.path.dirname(sys.executable), 'res', filename))
+            r_ __.path.normpath(__.path.join(__.path.dirname(sys.executable), 'res', filename))
         ____
-            r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'res', filename))
+            r_ __.path.normpath(__.path.join(__.path.dirname(__file__), '..', 'res', filename))
 
     @classmethod
     ___ getKey(cls, class_, filename):
-        r_ '%s$$@' @ (class_.__name__, os.path.normpath(filename))
+        r_ '%s$$@' @ (class_.__name__, __.path.normpath(filename))

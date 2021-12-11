@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ sys
 ______ t__
 ______ socket
@@ -50,7 +50,7 @@ c_ BackgroundJob(QObject):
             i += 1
             __ i < 5:
                 g.log.info('I am doing work in the background!')
-            elif i == 5:
+            ___ i == 5:
                 g.log.warning('Help! I\'m about to crash!')
             ____
                 raise RuntimeError('Oh no! A crash!')
@@ -102,7 +102,7 @@ c_ MainApplication(QApplication):
         __ thread a.. job:
             job.stop()
             thread.quit()
-            thread.wait()
+            thread.w..
 
     ___ onThreadCrash s):
         lines = ['A problem has occurred and this application must exit.', '']

@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ sys
 ______ l__
 ______ d__
@@ -74,12 +74,12 @@ c_ ConsoleLogger(l__.Logger):
         stdoutHandler.setFormatter(stdoutFormatter)
         log.addHandler(stdoutHandler)
 
-        logDirpath = os.path.join(os.path.expanduser('~'), '.ThisApplication', 'logs')
-        __ n.. os.path.isdir(logDirpath):
-            os.makedirs(logDirpath)
+        logDirpath = __.path.join(__.path.expanduser('~'), '.ThisApplication', 'logs')
+        __ n.. __.path.isdir(logDirpath):
+            __.makedirs(logDirpath)
 
         logFilename = 'ThisApplication_@.txt' @ d__.d__.now().strftime('%Y-%m-%d-%H%M%S')
-        logFilepath = os.path.join(logDirpath, logFilename)
+        logFilepath = __.path.join(logDirpath, logFilename)
         fileHandler = l__.FileHandler(logFilepath)
         fileFormatter = l__.Formatter('[%(asctime)s|%(levelname)-1.1s]  _ m.. _, datefmt='%H:%M:%S')
         fileHandler.setFormatter(fileFormatter)
