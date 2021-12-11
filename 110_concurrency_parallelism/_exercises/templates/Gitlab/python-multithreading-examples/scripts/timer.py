@@ -30,9 +30,9 @@ ___ Main():
 	t1.s..
 	t2.s..
 
-	l__.d..('We are waiting before canceling @', t2.getName())
+	l__.d..('We are waiting before canceling @', t2.g..
 	t__.s..(2)
-	l__.d..('Now canceling @', t2.getName())
+	l__.d..('Now canceling @', t2.g..
 	t2.cancel()
 
 

@@ -1,7 +1,7 @@
 ______ os
 ______ sys
 ______ l__
-______ datetime
+______ d__
 ______ colorama
 
 
@@ -78,7 +78,7 @@ c_ ConsoleLogger(l__.Logger):
         __ n.. os.path.isdir(logDirpath):
             os.makedirs(logDirpath)
 
-        logFilename = 'ThisApplication_@.txt' @ datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')
+        logFilename = 'ThisApplication_@.txt' @ d__.d__.now().strftime('%Y-%m-%d-%H%M%S')
         logFilepath = os.path.join(logDirpath, logFilename)
         fileHandler = l__.FileHandler(logFilepath)
         fileFormatter = l__.Formatter('[%(asctime)s|%(levelname)-1.1s]  _ m.. _, datefmt='%H:%M:%S')

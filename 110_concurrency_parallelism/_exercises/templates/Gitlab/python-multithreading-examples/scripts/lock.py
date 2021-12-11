@@ -4,7 +4,7 @@
 #3. Implement locks __ thread's run method. 
 
 ______ _
-______ datetime
+______ d__
 
 exitFlag = 0
 
@@ -25,7 +25,7 @@ c_ myThread (_.?):
 
 ___ print_date(threadName, counter):
     datefields   # list
-    today = datetime.date.today()
+    today = d__.d__.t..
     datefields.a.. (today)
     print "@[%d]: @" @ ( threadName, counter, datefields[0] )
 

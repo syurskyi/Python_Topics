@@ -16,8 +16,8 @@ ___ action():
     mouse_thread = ? ?_mouse_runs) # Sets the ___ as target.
     cat_thread = ? ?_cat_chases_mouse)
 
-    mouse_thread.setDaemon(T..) # Always set daemon as True.
-    cat_thread.setDaemon(T..)   # Always set daemon as True.
+    mouse_thread.s..(T..) # Always set daemon as True.
+    cat_thread.s..(T..)   # Always set daemon as True.
 
     mouse_thread.s..         # It starts the mouse thread.
     cat_thread.s..           # It starts the cat thread.

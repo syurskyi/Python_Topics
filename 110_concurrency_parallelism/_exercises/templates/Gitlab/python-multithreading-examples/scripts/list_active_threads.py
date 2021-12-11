@@ -9,7 +9,7 @@ ______ _
 
 ___ Main():
 	___ thread __ _.e..:
-	    print("Thread name is @." @ thread.getName())
+	    print("Thread name is @." @ thread.g..
 	    
 
 __ _____ __ ______

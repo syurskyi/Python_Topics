@@ -24,7 +24,7 @@ w___ loop ==0:
         num= float(inp)
     _______
         print "Invalid input. Please insert a number or type done to finish"
-        continue 
+        ______
         
     count= count + 1
     

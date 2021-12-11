@@ -25,7 +25,7 @@ c_ ActivePool(object):
 ___ worker(s, pool):
     l__.d..('Waiting to join the pool')
     with s:
-        name = _.c...getName()
+        name = _.c...g..
         pool.makeActive(name)
         t__.s..(0.1)
         pool.makeInactive(name)

@@ -18,7 +18,7 @@ ___ show_value(data):
 
 ___ worker(data):
     show_value(data)
-    data.value = r__.randint(1, 100)
+    data.value = r__.r..(1, 100)
     show_value(data)
 
 local_data = _.local()

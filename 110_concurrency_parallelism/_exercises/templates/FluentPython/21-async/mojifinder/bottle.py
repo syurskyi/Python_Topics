@@ -38,7 +38,7 @@ __ _____ __ ______
 ______ base64, cgi, email.utils, functools, hmac, i__, mimetypes,\
         os, re, subprocess, sys, tempfile, _, t__, warnings, hashlib
 
-____ datetime ______ date __ datedate, datetime, timedelta
+____ d__ ______ d__ __ datedate, d__, timedelta
 ____ tempfile ______ TemporaryFile
 ____ traceback ______ format_exc, print_exc
 ____ inspect ______ getargspec
@@ -312,7 +312,7 @@ c_ Router(object):
             __ l..(g[0])@2: # Escaped wildcard
                 prefix += match.group(0)[l..(g[0]):]
                 offset = match.end()
-                continue
+                ______
             __ prefix:
                 yield prefix, N.., N..
             name, filtr, conf = g[4:7] __ g[2] __ N.. else g[1:4]
@@ -519,8 +519,8 @@ c_ Route(object):
         ___ p __ reversed(app.plugins + plugins):
             __ T.. __ skiplist: ____
             name = getattr(p, 'name', F..)
-            __ name a.. (name __ skiplist or name __ unique): continue
-            __ p __ skiplist or type(p) __ skiplist: continue
+            __ name a.. (name __ skiplist or name __ unique): ______
+            __ p __ skiplist or type(p) __ skiplist: ______
             __ name: unique.add(name)
             yield p
 
@@ -1582,7 +1582,7 @@ c_ BaseResponse(object):
     content_type = HeaderProperty('Content-Type')
     content_length = HeaderProperty('Content-Length', reader=in.)
     expires = HeaderProperty('Expires',
-        reader=lambda x: datetime.utcfromtimestamp(parse_date(x)),
+        reader=lambda x: d__.utcfromtimestamp(parse_date(x)),
         writer=lambda x: http_date(x))
 
     @property
@@ -1641,7 +1641,7 @@ c_ BaseResponse(object):
                 __ isinstance(value, timedelta):
                     value = value.seconds + value.days * 24 * 3600
             __ key == 'expires':
-                __ isinstance(value, (datedate, datetime)):
+                __ isinstance(value, (datedate, d__)):
                     value = value.timetuple()
                 elif isinstance(value, (in., float)):
                     value = t__.gmtime(value)
@@ -2317,7 +2317,7 @@ c_ ResourceManager(object):
         search = path[:]
         w___ search:
             path = search.pop()
-            __ n.. os.path.isdir(path): continue
+            __ n.. os.path.isdir(path): ______
             ___ name __ os.listdir(path):
                 full = os.path.join(path, name)
                 __ os.path.isdir(full): search.a.. (full)
@@ -2539,7 +2539,7 @@ ___ d..(mode=T..):
     DEBUG = bool(mode)
 
 ___ http_date(value):
-    __ isinstance(value, (datedate, datetime)):
+    __ isinstance(value, (datedate, d__)):
         value = value.utctimetuple()
     elif isinstance(value, (in., float)):
         value = t__.gmtime(value)
@@ -2586,7 +2586,7 @@ ___ parse_range_header(header, maxlen=0):
 ___ _parse_qsl(qs):
     r   # list
     ___ pair __ qs.split('&'):
-        __ n.. pair: continue
+        __ n.. pair: ______
         nv = pair.split('=', 1)
         __ l..(nv) != 2: nv.a.. ('')
         key = urlunquote(nv[0].replace('+', ' '))
@@ -3249,7 +3249,7 @@ c_ BaseTemplate(object):
         ___ spath __ lookup:
             spath = os.path.abspath(spath) + os.sep
             fname = os.path.abspath(os.path.join(spath, name))
-            __ n.. fname.startswith(spath): continue
+            __ n.. fname.startswith(spath): ______
             __ os.path.isfile(fname): r_ fname
             ___ ext __ cls.extensions:
                 __ os.path.isfile('@.@' @ (fname, ext)):
@@ -3494,13 +3494,13 @@ c_ StplParser(object):
                     line, sep, _ = source[offset:].partition('\n')
                     text_buffer.a.. (m.group(2)+m.group(5)+line+sep)
                     offset += l..(line+sep)+1
-                    continue
+                    ______
                 elif m.group(5): # Old escape syntax
                     depr('Escape code lines with a backslash.') #0.12
                     line, sep, _ = source[offset:].partition('\n')
                     text_buffer.a.. (m.group(2)+line+sep)
                     offset += l..(line+sep)+1
-                    continue
+                    ______
                 flush_text()
                 read_code(multiline=bool(m.group(4)))
             else: ____
@@ -3522,7 +3522,7 @@ c_ StplParser(object):
             _str, _com, _po, _pc, _blk1, _blk2, _end, _cend, _nl = m.groups()
             __ (code_line or paren_depth > 0) a.. (_blk1 or _blk2): # a if b else c
                 code_line += _blk1 or _blk2
-                continue
+                ______
             __ _str:    # Python string
                 code_line += _str
             elif _com:  # Python comment (up to EOL)

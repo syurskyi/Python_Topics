@@ -25,7 +25,7 @@ c_ ActivePool:
 ___ worker(s, pool):
     l__.d..('Waiting to join the pool')
     with s:
-        name = _.current_thread().getName()
+        name = _.current_thread().g..
         pool.makeActive(name)
         t__.s..(0.1)
         pool.makeInactive(name)

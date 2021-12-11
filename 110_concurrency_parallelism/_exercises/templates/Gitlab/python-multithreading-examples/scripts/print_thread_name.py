@@ -11,14 +11,14 @@ ______ t__
 
 
 ___ ThreadFunction():
-	print _.c...getName(), "Starting"
+	print _.c...g.., "Starting"
 	t__.s..(2)
-	print _.c...getName(), "Exiting"
+	print _.c...g.., "Exiting"
 
 ___ ServiceFunction():
-	print _.c...getName(), "Starting"
+	print _.c...g.., "Starting"
 	t__.s..(3)
-	print _.c...getName(), "Exiting"
+	print _.c...g.., "Exiting"
 
 
 ___ Main():

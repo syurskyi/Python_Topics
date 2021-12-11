@@ -7,7 +7,7 @@ ______ l__
 
 ___ worker():
     """thread worker function"""
-    pause = r__.randint(1, 5) / 10
+    pause = r__.r..(1, 5) / 10
     l__.d..('sleeping %0.2f', pause)
     t__.s..(pause)
     l__.d..('ending')
@@ -25,7 +25,7 @@ ___ i __ r.. 3):
 main_thread = _.main_thread()
 ___ t __ _.e..:
     __ t __ main_thread:
-        continue
-    l__.d..('joining @', t.getName())
+        ______
+    l__.d..('joining @', t.g..
     t.j..
     

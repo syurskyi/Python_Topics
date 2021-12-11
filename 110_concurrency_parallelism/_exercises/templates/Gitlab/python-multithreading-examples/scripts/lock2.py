@@ -46,7 +46,7 @@ ___ worker(lock):
 lock = _.?
 
 holder = _.? ?_lock_holder,  ?_(lock,), ?_'LockHolder')
-holder.setDaemon(T..)
+holder.s..(T..)
 holder.s..
 
 worker = _.? ?_worker,  ?_(lock,), ?_'Worker')

@@ -18,7 +18,7 @@ ___ i __ r.. 3):
  c=t1.isAlive()
 
 #fetch the name of thread
- c1=t1.getName()
+ c1=t1.g..
  print('\n',c1,"is Alive:",c)
 
 #get toatal number of thread __ execution

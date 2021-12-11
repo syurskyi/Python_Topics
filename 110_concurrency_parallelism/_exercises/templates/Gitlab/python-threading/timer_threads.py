@@ -21,8 +21,8 @@ l__.d..('starting timers')
 t1.s..
 t2.s..
 
-l__.d..('waiting before canceling @', t2.getName())
+l__.d..('waiting before canceling @', t2.g..
 t__.s..(0.2)
-l__.d..('canceling @', t2.getName())
+l__.d..('canceling @', t2.g..
 t2.cancel()
 l__.d..('done')
