@@ -1,28 +1,28 @@
-______ _
-______ t__
-______ l__
-
-
-___ delayed():
-    l__.d..('worker running')
-
-
-l__.?(
-    ?_l__.D..
-    ?_ _threadName)-10s)  _ m.. _,
-)
-
-t1 = _.Timer(0.3, delayed)
-t1.s..('t1')
-t2 = _.Timer(0.3, delayed)
-t2.s..('t2')
-
-l__.d..('starting timers')
-t1.s..
-t2.s..
-
-l__.d..('waiting before canceling @', t2.g..
-t__.s..(0.2)
-l__.d..('canceling @', t2.g..
-t2.cancel()
-l__.d..('done')
+# ______ _
+# ______ t__
+# ______ l__
+#
+#
+# ___ delayed
+#     l__.d..('worker running')
+#
+#
+# l__.?
+#     ?_l__.D..
+#     ?_ _t.. -10_  _ m.. _
+#
+#
+# t1  _.? 0.3 ?
+# t1.s.. t1
+# t2  _.? 0.3 ?
+# ?.s.. t2
+#
+# l__.d..('starting timers')
+# ?.s..
+# ?.s..
+#
+# l__.d..('waiting before canceling @' ?.g..
+# t__.s.. 0.2
+# l__.d.. 'canceling @' ?.g..
+# ?.c..
+# l__.d.. 'done'
