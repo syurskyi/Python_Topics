@@ -1,12 +1,12 @@
 ______ os
 
-from PySide2.QtCore ______ Qt, Slot
-from PySide2.QtWidgets ______ QTextEdit, QMenu, QAction
-from PySide2.QtGui ______ QTextCursor, QKeySequence, QTextOption
+____ PySide2.QtCore ______ Qt, Slot
+____ PySide2.QtWidgets ______ QTextEdit, QMenu, QAction
+____ PySide2.QtGui ______ QTextCursor, QKeySequence, QTextOption
 
-from .. ______ g
-from ..richtexthandler ______ RichTextHandlerObject, RichTextHandler
-from ..loggers ______ ConsoleFormatter
+____ .. ______ g
+____ ..richtexthandler ______ RichTextHandlerObject, RichTextHandler
+____ ..loggers ______ ConsoleFormatter
 
 
 c_ ConsoleWidget(QTextEdit):

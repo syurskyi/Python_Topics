@@ -3,9 +3,9 @@
 ______ json
 ______ unicodedata
 
-from bottle ______ route, request, run, static_file
+____ bottle ______ route, request, run, static_file
 
-from charindex ______ InvertedIndex
+____ charindex ______ InvertedIndex
 
 index    # dict
 

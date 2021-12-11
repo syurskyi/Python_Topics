@@ -31,8 +31,8 @@ words, and returns the intersection of the entries for each word::
 
 ______ sys
 ______ unicodedata
-from collections ______ defaultdict
-from collections.abc ______ Iterator
+____ collections ______ defaultdict
+____ collections.abc ______ Iterator
 
 STOP_CODE: in. = sys.maxunicode + 1
 

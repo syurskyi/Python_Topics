@@ -5,10 +5,10 @@
 # https://mail.python.org/pipermail/python-list/2009-February/675659.html
 
 ______ i__
-from multiprocessing ______ Process, Event
-from multiprocessing ______ synchronize
+____ multiprocessing ______ Process, Event
+____ multiprocessing ______ synchronize
 
-from primes ______ is_prime
+____ primes ______ is_prime
 
 ___ spin(msg: s.., done: synchronize.Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>

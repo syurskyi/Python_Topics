@@ -1,7 +1,7 @@
-from collections.abc ______ Iterable, AsyncIterator
-from typing ______ NamedTuple
+____ collections.abc ______ Iterable, AsyncIterator
+____ typing ______ NamedTuple
 
-from curio ______ TaskGroup
+____ curio ______ TaskGroup
 ______ curio.socket __ socket
 
 

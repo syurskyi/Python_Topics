@@ -2,9 +2,9 @@
 
 
 ______ requests
-from multiprocessing.dummy ______ Pool
+____ multiprocessing.dummy ______ Pool
 ______ t__
-from datadiff ______ diff
+____ datadiff ______ diff
 
  
 ___ getzip(code):

@@ -1,5 +1,5 @@
-from mouse ______ Mouse
-from cat ______ Cat
+____ mouse ______ Mouse
+____ cat ______ Cat
 ______ t__
 
 Mouse() # Instance of Mouse as a thread object.

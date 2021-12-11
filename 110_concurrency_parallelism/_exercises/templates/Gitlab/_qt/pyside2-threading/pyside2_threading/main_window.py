@@ -1,7 +1,7 @@
 ______ t__
 ______ sys
 
-from PySide2 ______ QtCore, QtWidgets, QtGui
+____ PySide2 ______ QtCore, QtWidgets, QtGui
 
 
 c_ Worker(QtCore.QObject):

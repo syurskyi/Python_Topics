@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from curio ______ run, TaskGroup
+____ curio ______ run, TaskGroup
 ______ curio.socket __ socket
-from keyword ______ kwlist
+____ keyword ______ kwlist
 
 MAX_KEYWORD_LEN = 4
 

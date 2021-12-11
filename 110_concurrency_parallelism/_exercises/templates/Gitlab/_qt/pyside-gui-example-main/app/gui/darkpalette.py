@@ -1,4 +1,4 @@
-from PySide2.QtGui ______ QPalette, QColor
+____ PySide2.QtGui ______ QPalette, QColor
 
 
 c_ DarkPalette(QPalette):

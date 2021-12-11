@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ______ _
 ______ socket
-from keyword ______ kwlist
+____ keyword ______ kwlist
 
 MAX_KEYWORD_LEN = 4  # <1>
 

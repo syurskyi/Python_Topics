@@ -7,19 +7,19 @@
 
 ______ t__
 ______ _
-from _ ______ ?
+____ _ ______ ?
 
 
-___ ThreadFunction(i):
-    print("Thread %i going to sleep for 5 seconds." @ i)
-    t__.s..(5)
-    print("Thread %i is awake now." @ i)
+___ ThreadFunction i
+    print("Thread @ going to sleep for 5 seconds." @ ?
+    t__.s.. 5
+    print("Thread @ is awake now." @
 
 
-___ Main():
-  ___ i __ r.. 10):
-      myThread = ? ?_ThreadFunction,  ?_(i, ))
-      myThread.s..
+___ Main(
+  ___ i __ r.. 10
+      myThread = ? ?_?  ?_ ?
+      ?.s..
       print("Current Thread count: %i." @ _.active_count())
     
     

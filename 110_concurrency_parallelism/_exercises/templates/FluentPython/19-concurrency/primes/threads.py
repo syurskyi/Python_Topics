@@ -7,12 +7,12 @@ than sequential code for CPU-intensive work.
 
 ______ os
 ______ sys
-from queue ______ SimpleQueue
-from t__ ______ perf_counter
-from typing ______ NamedTuple
-from _ ______ ?
+____ queue ______ SimpleQueue
+____ t__ ______ perf_counter
+____ typing ______ NamedTuple
+____ _ ______ ?
 
-from primes ______ is_prime, NUMBERS
+____ primes ______ is_prime, NUMBERS
 
 c_ PrimeResult(NamedTuple):
     n: in.

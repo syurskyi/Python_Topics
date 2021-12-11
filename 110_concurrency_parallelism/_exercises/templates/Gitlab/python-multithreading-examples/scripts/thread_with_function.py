@@ -1,6 +1,6 @@
 
 ______ t__
-from _ ______ ?
+____ _ ______ ?
 
 #create function ___ thread
 ___ Tfunc(i):

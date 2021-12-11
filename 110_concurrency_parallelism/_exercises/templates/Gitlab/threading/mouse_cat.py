@@ -1,4 +1,4 @@
-from _ ______ ?
+____ _ ______ ?
 ______ t__
 
 ___ mouse_runs():                # The mouse action.

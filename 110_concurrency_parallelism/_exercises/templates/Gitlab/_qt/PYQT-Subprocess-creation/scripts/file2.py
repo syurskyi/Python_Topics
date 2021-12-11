@@ -2,11 +2,11 @@ ______ pandas __ pd
 ______ argparse
 ______ t__
 ______ sys
-from _ ______ ?
-from PyQt5 ______ QtCore, QtWidgets
-from PyQt5.QtWidgets ______ QMainWindow, QLabel, QGridLayout, QWidget
-from PyQt5.QtWidgets ______ QPushButton
-from PyQt5.QtCore ______ QSize   
+____ _ ______ ?
+____ PyQt5 ______ QtCore, QtWidgets
+____ PyQt5.QtWidgets ______ QMainWindow, QLabel, QGridLayout, QWidget
+____ PyQt5.QtWidgets ______ QPushButton
+____ PyQt5.QtCore ______ QSize
 
 
 parser = argparse.ArgumentParser()                                               

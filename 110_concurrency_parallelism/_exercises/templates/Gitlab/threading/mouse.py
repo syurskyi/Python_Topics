@@ -1,4 +1,4 @@
-from _ ______ ?
+____ _ ______ ?
 ______ t__
 
 """ The Mouse class is a Thread by itself. There must be an __init__ calling

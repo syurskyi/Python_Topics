@@ -4,16 +4,16 @@ ______ t__
 ______ socket
 ______ traceback
 
-from PySide2.QtCore ______ QObject, QThread, Signal, Slot
-from PySide2.QtWidgets ______ QApplication, QMessageBox
+____ PySide2.QtCore ______ QObject, QThread, Signal, Slot
+____ PySide2.QtWidgets ______ QApplication, QMessageBox
 
-from . ______ g
-from .version ______ VERSION
-from .resources ______ Resources
-from .loggers ______ ConsoleLogger
-from .config ______ get_config_var
-from .gui.darkpalette ______ DarkPalette
-from .gui.mainwindow ______ MainWindow
+____ . ______ g
+____ .version ______ VERSION
+____ .resources ______ Resources
+____ .loggers ______ ConsoleLogger
+____ .config ______ get_config_var
+____ .gui.darkpalette ______ DarkPalette
+____ .gui.mainwindow ______ MainWindow
 
 
 c_ BackgroundJob(QObject):

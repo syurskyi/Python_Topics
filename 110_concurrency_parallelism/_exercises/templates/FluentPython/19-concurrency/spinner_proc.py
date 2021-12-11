@@ -7,8 +7,8 @@
 # tag::SPINNER_PROC_IMPORTS[]
 ______ i__
 ______ t__
-from multiprocessing ______ Process, Event  # <1>
-from multiprocessing ______ synchronize     # <2>
+____ multiprocessing ______ Process, Event  # <1>
+____ multiprocessing ______ synchronize     # <2>
 
 ___ spin(msg: s.., done: synchronize.Event)  N..:  # <3>
 # end::SPINNER_PROC_IMPORTS[]

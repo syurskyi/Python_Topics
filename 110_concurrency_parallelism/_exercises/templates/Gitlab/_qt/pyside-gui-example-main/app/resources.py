@@ -1,8 +1,8 @@
 ______ os
 ______ sys
 
-from PySide2.QtCore ______ QObject
-from PySide2.QtGui ______ QIcon
+____ PySide2.QtCore ______ QObject
+____ PySide2.QtGui ______ QIcon
 
 
 c_ Resources(QObject):

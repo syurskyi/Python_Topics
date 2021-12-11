@@ -5,10 +5,10 @@ sequential.py: baseline for comparing sequential, multiprocessing,
 and threading code for CPU-intensive work.
 """
 
-from t__ ______ perf_counter
-from typing ______ NamedTuple
+____ t__ ______ perf_counter
+____ typing ______ NamedTuple
 
-from primes ______ is_prime, NUMBERS
+____ primes ______ is_prime, NUMBERS
 
 c_ Result(NamedTuple):  # <1>
     prime: bool

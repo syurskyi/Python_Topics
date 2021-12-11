@@ -1,4 +1,4 @@
-from PySide2.QtWidgets ______ QApplication
+____ PySide2.QtWidgets ______ QApplication
 
 
 c_ g(object):

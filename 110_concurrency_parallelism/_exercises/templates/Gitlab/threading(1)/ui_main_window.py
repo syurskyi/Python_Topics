@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made __ this file will be lost!
 
-from PyQt4 ______ QtCore, QtGui
+____ PyQt4 ______ QtCore, QtGui
 
 ___
     _fromUtf8 = QtCore.QString.fromUtf8

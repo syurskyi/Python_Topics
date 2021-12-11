@@ -1,8 +1,8 @@
-from PySide2.QtCore ______ Qt
-from PySide2.QtWidgets ______ QMainWindow
+____ PySide2.QtCore ______ Qt
+____ PySide2.QtWidgets ______ QMainWindow
 
-from ..version ______ VERSION
-from .mainwidget ______ MainWidget
+____ ..version ______ VERSION
+____ .mainwidget ______ MainWidget
 
 
 c_ MainWindow(QMainWindow):

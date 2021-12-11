@@ -1,10 +1,10 @@
 ______ sys
 ______ t__
 
-from PyQt4.QtCore ______ *
-from PyQt4.QtGui ______ *
+____ PyQt4.QtCore ______ *
+____ PyQt4.QtGui ______ *
 
-from ui_main_window ______ Ui_Countdown
+____ ui_main_window ______ Ui_Countdown
 
 c_ MainWindow(QMainWindow, Ui_Countdown):
 

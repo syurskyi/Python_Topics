@@ -1,11 +1,11 @@
-from pathlib ______ Path
-from unicodedata ______ name
+____ pathlib ______ Path
+____ unicodedata ______ name
 
-from fastapi ______ FastAPI
-from fastapi.responses ______ HTMLResponse
-from pydantic ______ BaseModel
+____ fastapi ______ FastAPI
+____ fastapi.responses ______ HTMLResponse
+____ pydantic ______ BaseModel
 
-from charindex ______ InvertedIndex
+____ charindex ______ InvertedIndex
 
 STATIC_PATH = Path(__file__).parent.absolute() / 'static'  # <1>
 

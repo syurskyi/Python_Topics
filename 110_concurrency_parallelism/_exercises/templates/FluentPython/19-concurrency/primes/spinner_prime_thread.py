@@ -5,9 +5,9 @@
 # https://mail.python.org/pipermail/python-list/2009-February/675659.html
 
 ______ i__
-from _ ______ ?, Event
+____ _ ______ ?, Event
 
-from primes ______ is_prime
+____ primes ______ is_prime
 
 ___ spin(msg: s.., done: Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>

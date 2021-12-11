@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made __ this file will be lost!
 
-from PyQt5 ______ QtCore, QtGui, QtWidgets
+____ PyQt5 ______ QtCore, QtGui, QtWidgets
 
 
 c_ Ui_MainWindow(object):

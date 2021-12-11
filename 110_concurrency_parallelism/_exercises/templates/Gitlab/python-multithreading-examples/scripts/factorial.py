@@ -5,7 +5,7 @@
 ##2. Call factorial function using thread. 
 
 
-from thread ______ start_new_thread
+____ thread ______ start_new_thread
 
 threadId = 1
 

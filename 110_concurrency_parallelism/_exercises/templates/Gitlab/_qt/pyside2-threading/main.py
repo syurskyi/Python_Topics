@@ -1,4 +1,4 @@
-from pyside2_threading ______ main_window
+____ pyside2_threading ______ main_window
 
 
 __ ____ __ ______:

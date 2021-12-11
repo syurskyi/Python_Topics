@@ -1,7 +1,7 @@
 ______ _
 ______ socket
-from collections.abc ______ Iterable, AsyncIterator
-from typing ______ NamedTuple, Optional
+____ collections.abc ______ Iterable, AsyncIterator
+____ typing ______ NamedTuple, Optional
 
 
 c_ Result(NamedTuple):  # <1>

@@ -4,10 +4,10 @@
 ______ _
 ______ functools
 ______ sys
-from _.trsock ______ TransportSocket
-from typing ______ cast
+____ _.trsock ______ TransportSocket
+____ typing ______ cast
 
-from charindex ______ InvertedIndex, format_results  # <1>
+____ charindex ______ InvertedIndex, format_results  # <1>
 
 CRLF = b'\r\n'
 PROMPT = b'?> '

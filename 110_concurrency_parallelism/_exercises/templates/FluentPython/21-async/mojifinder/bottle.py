@@ -13,7 +13,7 @@ Copyright (c) 2016, Marcel Hellkamp.
 License: MIT (see LICENSE for details)
 """
 
-from __future__ ______ with_statement
+____ __future__ ______ with_statement
 
 __author__ = 'Marcel Hellkamp'
 __version__ = '0.12.19'
@@ -22,7 +22,7 @@ __license__ = 'MIT'
 # The gevent server adapter needs to patch some modules before they are imported
 # This is why we parse the commandline parameters here but handle them later
 __ _____ __ ______
-    from optparse ______ OptionParser
+    ____ optparse ______ OptionParser
     _cmd_parser = OptionParser(usage="usage: %prog [options] package.module:app")
     _opt = _cmd_parser.add_option
     _opt("--version", action="store_true", help="show version number.")
@@ -38,18 +38,18 @@ __ _____ __ ______
 ______ base64, cgi, email.utils, functools, hmac, i__, mimetypes,\
         os, re, subprocess, sys, tempfile, _, t__, warnings, hashlib
 
-from datetime ______ date __ datedate, datetime, timedelta
-from tempfile ______ TemporaryFile
-from traceback ______ format_exc, print_exc
-from inspect ______ getargspec
-from unicodedata ______ normalize
+____ datetime ______ date __ datedate, datetime, timedelta
+____ tempfile ______ TemporaryFile
+____ traceback ______ format_exc, print_exc
+____ inspect ______ getargspec
+____ unicodedata ______ normalize
 
 
-___ from simplejson ______ dumps __ json_dumps, loads __ json_lds
+___ ____ simplejson ______ dumps __ json_dumps, loads __ json_lds
 except ImportError: # pragma: no cover
-    ___ from json ______ dumps __ json_dumps, loads __ json_lds
+    ___ ____ json ______ dumps __ json_dumps, loads __ json_lds
     except ImportError:
-        ___ from django.utils.simplejson ______ dumps __ json_dumps, loads __ json_lds
+        ___ ____ django.utils.simplejson ______ dumps __ json_dumps, loads __ json_lds
         except ImportError:
             ___ json_dumps(data):
                 raise ImportError("JSON support requires Python 2.6 or simplejson.")
@@ -80,19 +80,19 @@ except IOError:
 __ py3k:
     ______ http.client __ httplib
     ______ _thread __ thread
-    from urllib.parse ______ urljoin, SplitResult __ UrlSplitResult
-    from urllib.parse ______ urlencode, quote __ urlquote, unquote __ urlunquote
+    ____ urllib.parse ______ urljoin, SplitResult __ UrlSplitResult
+    ____ urllib.parse ______ urlencode, quote __ urlquote, unquote __ urlunquote
     urlunquote = functools.partial(urlunquote, encoding='latin1')
-    from http.cookies ______ SimpleCookie
+    ____ http.cookies ______ SimpleCookie
     __ py >= (3, 3, 0):
-        from collections.abc ______ MutableMapping __ DictMixin
-        from types ______ ModuleType __ new_module
+        ____ collections.abc ______ MutableMapping __ DictMixin
+        ____ types ______ ModuleType __ new_module
     else:
-        from collections ______ MutableMapping __ DictMixin
-        from imp ______ new_module
+        ____ collections ______ MutableMapping __ DictMixin
+        ____ imp ______ new_module
     ______ pickle
-    from io ______ BytesIO
-    from configparser ______ ConfigParser
+    ____ io ______ BytesIO
+    ____ configparser ______ ConfigParser
     basestring = s..
     unicode = s..
     json_loads = lambda s: json_lds(touni(s))
@@ -102,22 +102,22 @@ __ py3k:
 else: # 2.x
     ______ httplib
     ______ thread
-    from urlparse ______ urljoin, SplitResult __ UrlSplitResult
-    from urllib ______ urlencode, quote __ urlquote, unquote __ urlunquote
-    from Cookie ______ SimpleCookie
-    from i__ ______ imap
+    ____ urlparse ______ urljoin, SplitResult __ UrlSplitResult
+    ____ urllib ______ urlencode, quote __ urlquote, unquote __ urlunquote
+    ____ Cookie ______ SimpleCookie
+    ____ i__ ______ imap
     ______ cPickle __ pickle
-    from imp ______ new_module
-    from StringIO ______ StringIO __ BytesIO
-    from ConfigParser ______ SafeConfigParser __ ConfigParser
+    ____ imp ______ new_module
+    ____ StringIO ______ StringIO __ BytesIO
+    ____ ConfigParser ______ SafeConfigParser __ ConfigParser
     __ py25:
         msg  = "Python 2.5 support may be dropped in future versions of Bottle."
         warnings.warn(msg, DeprecationWarning)
-        from UserDict ______ DictMixin
+        ____ UserDict ______ DictMixin
         ___ next(it): r_ it.next()
         bytes = s..
     else: # 2.6, 2.7
-        from collections ______ MutableMapping __ DictMixin
+        ____ collections ______ MutableMapping __ DictMixin
     unicode = unicode
     json_loads = json_lds
     eval(compile('def _raise(*a): raise a[0], a[1], a[2]', '<py3fix>', 'exec'))
@@ -132,7 +132,7 @@ tonat = touni __ py3k else tob
 # 3.2 fixes cgi.FieldStorage to accept bytes (which makes a lot of sense).
 # 3.1 needs a workaround.
 __ py31:
-    from io ______ TextIOWrapper
+    ____ io ______ TextIOWrapper
     c_ NCTextIOWrapper(TextIOWrapper):
         ___ close pass # Keep wrapped buffer open.
 
@@ -2751,7 +2751,7 @@ c_ ServerAdapter(object):
 c_ CGIServer(ServerAdapter):
     quiet = T..
     ___ run handler): # pragma: no cover
-        from wsgiref.handlers ______ CGIHandler
+        ____ wsgiref.handlers ______ CGIHandler
         ___ fixed_environ(environ, start_response):
             environ.setdefault('PATH_INFO', '')
             r_ handler(environ, start_response)
@@ -2767,8 +2767,8 @@ c_ FlupFCGIServer(ServerAdapter):
 
 c_ WSGIRefServer(ServerAdapter):
     ___ run app): # pragma: no cover
-        from wsgiref.simple_server ______ WSGIRequestHandler, WSGIServer
-        from wsgiref.simple_server ______ make_server
+        ____ wsgiref.simple_server ______ WSGIRequestHandler, WSGIServer
+        ____ wsgiref.simple_server ______ make_server
         ______ socket
 
         c_ FixedHandler(WSGIRequestHandler):
@@ -2792,7 +2792,7 @@ c_ WSGIRefServer(ServerAdapter):
 
 c_ CherryPyServer(ServerAdapter):
     ___ run handler): # pragma: no cover
-        from cherrypy ______ wsgiserver
+        ____ cherrypy ______ wsgiserver
         options['bind_addr'] = (host, port)
         options['wsgi_app'] = handler
 
@@ -2817,14 +2817,14 @@ c_ CherryPyServer(ServerAdapter):
 
 c_ WaitressServer(ServerAdapter):
     ___ run handler):
-        from waitress ______ serve
+        ____ waitress ______ serve
         serve(handler, host=host, port=port)
 
 
 c_ PasteServer(ServerAdapter):
     ___ run handler): # pragma: no cover
-        from paste ______ httpserver
-        from paste.translogger ______ TransLogger
+        ____ paste ______ httpserver
+        ____ paste.translogger ______ TransLogger
         handler = TransLogger(handler, setup_console_handler=(n.. quiet))
         httpserver.serve(handler, host=host, port=s..(port),
                          **options)
@@ -2832,7 +2832,7 @@ c_ PasteServer(ServerAdapter):
 
 c_ MeinheldServer(ServerAdapter):
     ___ run handler):
-        from meinheld ______ server
+        ____ meinheld ______ server
         server.listen((host, port))
         server.run(handler)
 
@@ -2841,7 +2841,7 @@ c_ FapwsServer(ServerAdapter):
     """ Extremely fast webserver using libev. See http://www.fapws.org/ """
     ___ run handler): # pragma: no cover
         ______ fapws._evwsgi __ evwsgi
-        from fapws ______ base, config
+        ____ fapws ______ base, config
         port = port
         __ float(config.SERVER_IDENT[-2:]) > 0.4:
             # fapws3 silently changed its API __ 0.5
@@ -2873,7 +2873,7 @@ c_ AppEngineServer(ServerAdapter):
     """ Adapter for Google App Engine. """
     quiet = T..
     ___ run handler):
-        from google.appengine.ext.webapp ______ util
+        ____ google.appengine.ext.webapp ______ util
         # A main() function __ the handler script enables 'App Caching'.
         # Lets makes sure it is there. This _really_ improves performance.
         module = sys.modules.get('__main__')
@@ -2885,9 +2885,9 @@ c_ AppEngineServer(ServerAdapter):
 c_ TwistedServer(ServerAdapter):
     """ Untested. """
     ___ run handler):
-        from twisted.web ______ server, wsgi
-        from twisted.python.threadpool ______ ThreadPool
-        from twisted.internet ______ reactor
+        ____ twisted.web ______ server, wsgi
+        ____ twisted.python.threadpool ______ ThreadPool
+        ____ twisted.internet ______ reactor
         thread_pool = ThreadPool()
         thread_pool.s..
         reactor.addSystemEventTrigger('after', 'shutdown', thread_pool.stop)
@@ -2899,7 +2899,7 @@ c_ TwistedServer(ServerAdapter):
 c_ DieselServer(ServerAdapter):
     """ Untested. """
     ___ run handler):
-        from diesel.protocols.wsgi ______ WSGIApplication
+        ____ diesel.protocols.wsgi ______ WSGIApplication
         app = WSGIApplication(handler, port=port)
         app.run()
 
@@ -2912,7 +2912,7 @@ c_ GeventServer(ServerAdapter):
         * See gevent.wsgi.WSGIServer() documentation for more options.
     """
     ___ run handler):
-        from gevent ______ pywsgi, local
+        ____ gevent ______ pywsgi, local
         __ n.. isinstance(_.local(), local.local):
             msg = "Bottle requires gevent.monkey.patch_all() (before ______)"
             raise RuntimeError(msg)
@@ -2930,7 +2930,7 @@ c_ GeventServer(ServerAdapter):
 
 c_ GeventSocketIOServer(ServerAdapter):
     ___ runhandler):
-        from socketio ______ server
+        ____ socketio ______ server
         address = (host, port)
         server.SocketIOServer(address, handler, **options).serve_forever()
 
@@ -2938,7 +2938,7 @@ c_ GeventSocketIOServer(ServerAdapter):
 c_ GunicornServer(ServerAdapter):
     """ Untested. See http://gunicorn.org/configure.html for options. """
     ___ run handler):
-        from gunicorn.app.base ______ Application
+        ____ gunicorn.app.base ______ Application
 
         config = {'bind': "@:%d" @ (host, in.(port))}
         config.update(options)
@@ -2956,7 +2956,7 @@ c_ GunicornServer(ServerAdapter):
 c_ EventletServer(ServerAdapter):
     """ Untested """
     ___ run handler):
-        from eventlet ______ wsgi, listen
+        ____ eventlet ______ wsgi, listen
         ___
             wsgi.server(listen((host, port)), handler,
                         log_output=(n.. quiet))
@@ -2968,7 +2968,7 @@ c_ EventletServer(ServerAdapter):
 c_ RocketServer(ServerAdapter):
     """ Untested. """
     ___ run handler):
-        from rocket ______ Rocket
+        ____ rocket ______ Rocket
         server = Rocket((host, port), 'wsgi', { 'wsgi_app' : handler })
         server.s..
 
@@ -2976,7 +2976,7 @@ c_ RocketServer(ServerAdapter):
 c_ BjoernServer(ServerAdapter):
     """ Fast server written in C: https://github.com/jonashaag/bjoern """
     ___ run handler):
-        from bjoern ______ run
+        ____ bjoern ______ run
         run(handler, host, port)
 
 
@@ -3283,8 +3283,8 @@ c_ BaseTemplate(object):
 
 c_ MakoTemplate(BaseTemplate):
     ___ prepare **options):
-        from mako.template ______ Template
-        from mako.lookup ______ TemplateLookup
+        ____ mako.template ______ Template
+        ____ mako.lookup ______ TemplateLookup
         options.update({'input_encoding':encoding})
         options.setdefault('format_exceptions', bool(DEBUG))
         lookup = TemplateLookup(directories=lookup, **options)
@@ -3302,7 +3302,7 @@ c_ MakoTemplate(BaseTemplate):
 
 c_ CheetahTemplate(BaseTemplate):
     ___ prepare **options):
-        from Cheetah.Template ______ Template
+        ____ Cheetah.Template ______ Template
         context = _.local()
         context.vars    # dict
         options['searchList'] = [context.vars]
@@ -3322,7 +3322,7 @@ c_ CheetahTemplate(BaseTemplate):
 
 c_ Jinja2Template(BaseTemplate):
     ___ prepare filters=N.., tests=N.., globals={}, **kwargs):
-        from jinja2 ______ Environment, FunctionLoader
+        ____ jinja2 ______ Environment, FunctionLoader
         __ 'prefix' __ kwargs: # TODO: to be removed after a w___
             raise RuntimeError('The keyword argument `prefix` has been removed. '
                 'Use the full jinja2 environment name line_statement_prefix instead.')

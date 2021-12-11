@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 ______ curio
 ______ sys
-from keyword ______ kwlist
+____ keyword ______ kwlist
 
-from domainlib ______ multi_probe
+____ domainlib ______ multi_probe
 
 
 @ ___ main(tld: s..)  N..:

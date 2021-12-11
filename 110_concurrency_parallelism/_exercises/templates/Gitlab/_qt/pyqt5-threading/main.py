@@ -1,8 +1,8 @@
 ______ sys
 ______ t__
-from PyQt5.QtWidgets ______ QApplication, QWidget, QCheckBox
-from PyQt5.QtGui ______ QIcon
-from PyQt5.QtCore ______ QThread, pyqtSignal, QThreadPool, pyqtSlot, QRunnable, QObject
+____ PyQt5.QtWidgets ______ QApplication, QWidget, QCheckBox
+____ PyQt5.QtGui ______ QIcon
+____ PyQt5.QtCore ______ QThread, pyqtSignal, QThreadPool, pyqtSlot, QRunnable, QObject
 
 
 c_ Signals(QObject):

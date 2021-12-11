@@ -1,6 +1,6 @@
-from PySide2.QtWidgets ______ QWidget, QVBoxLayout
+____ PySide2.QtWidgets ______ QWidget, QVBoxLayout
 
-from .consolewidget ______ ConsoleWidget
+____ .consolewidget ______ ConsoleWidget
 
 
 c_ MainWidget(QWidget):

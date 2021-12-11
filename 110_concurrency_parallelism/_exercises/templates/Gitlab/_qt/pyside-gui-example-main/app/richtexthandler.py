@@ -1,7 +1,7 @@
 ______ html
 ______ l__
 
-from PySide2.QtCore ______ QObject, Signal
+____ PySide2.QtCore ______ QObject, Signal
 
 
 c_ RichTextHandlerObject(QObject):

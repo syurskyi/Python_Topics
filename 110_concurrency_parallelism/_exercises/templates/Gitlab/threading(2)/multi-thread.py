@@ -11,7 +11,7 @@ variable "c" is incremented at every 10 seconds
 """
 
 
-from t__ ______ s..
+____ t__ ______ s..
 ______ _
 
 a = 0

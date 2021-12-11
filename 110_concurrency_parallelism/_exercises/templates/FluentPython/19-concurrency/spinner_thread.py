@@ -7,7 +7,7 @@
 # tag::SPINNER_THREAD_TOP[]
 ______ i__
 ______ t__
-from _ ______ ?, Event
+____ _ ______ ?, Event
 
 ___ spin(msg: s.., done: Event)  N..:  # <1>
     ___ char __ i__.c..(r'\|/-'):  # <2>

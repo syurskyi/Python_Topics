@@ -7,12 +7,12 @@ can be faster than sequential code for CPU-intensive work.
 
 # tag::PRIMES_PROC_TOP[]
 ______ sys
-from t__ ______ perf_counter
-from typing ______ NamedTuple
-from multiprocessing ______ Process, SimpleQueue, cpu_count  # <1>
-from multiprocessing ______ queues  # <2>
+____ t__ ______ perf_counter
+____ typing ______ NamedTuple
+____ multiprocessing ______ Process, SimpleQueue, cpu_count  # <1>
+____ multiprocessing ______ queues  # <2>
 
-from primes ______ is_prime, NUMBERS
+____ primes ______ is_prime, NUMBERS
 
 c_ PrimeResult(NamedTuple):  # <3>
     n: in.

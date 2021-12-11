@@ -1,13 +1,13 @@
 ______ sys
-from PyQt5 ______ QtCore, QtWidgets
-from PyQt5.QtWidgets ______ QMainWindow, QLabel, QGridLayout, QWidget
-from PyQt5.QtWidgets ______ QPushButton
-from PyQt5.QtCore ______ QSize
+____ PyQt5 ______ QtCore, QtWidgets
+____ PyQt5.QtWidgets ______ QMainWindow, QLabel, QGridLayout, QWidget
+____ PyQt5.QtWidgets ______ QPushButton
+____ PyQt5.QtCore ______ QSize
 ______ psutil
 ______ subprocess
 ______ os
 ______ t__
-from _ ______ ?
+____ _ ______ ?
 
 c_ MainWindow(QMainWindow):
     ___ - 
