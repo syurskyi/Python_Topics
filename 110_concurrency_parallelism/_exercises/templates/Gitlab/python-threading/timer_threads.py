@@ -13,9 +13,9 @@ l__.?(
 )
 
 t1 = _.Timer(0.3, delayed)
-t1.setName('t1')
+t1.s..('t1')
 t2 = _.Timer(0.3, delayed)
-t2.setName('t2')
+t2.s..('t2')
 
 l__.d..('starting timers')
 t1.s..
