@@ -19,7 +19,7 @@ ___ printStatus(statusCode):
   print("URL Crawled with status code: {}".format(statusCode))
 
 ___ main
-  with ThreadPoolExecutor(max_workers=3) __ executor:
+  w__ ThreadPoolExecutor(max_workers=3) __ executor:
     
     tasks   # list
     ___ url __ URLS:

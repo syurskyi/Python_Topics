@@ -8,9 +8,9 @@ c_ AsyncWrite(_.?):
 		out = out
 
 	___ run
-		f = open(out, "a")
-		f.write(text + '\n')
-		f.close()
+		f = o..(out, "a")
+		f.w..(text + '\n')
+		f.c..
 		t__.s..(2)
 		print "Finished Background file write to " + out
 

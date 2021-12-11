@@ -7,24 +7,24 @@ ______ t__
 c_ ActivePool:
 
     ___ - 
-        super(ActivePool, self).- ()
+        s__(ActivePool, .- ()
         active   # list
         lock = _.?
 
     ___ makeActive name):
-        with lock:
+        w__ lock:
             active.a.. (name)
             l__.d..('Running: @', active)
 
     ___ makeInactive name):
-        with lock:
-            active.remove(name)
+        w__ lock:
+            active.r..(name)
             l__.d..('Running: @', active)
 
 
 ___ worker(s, pool):
     l__.d..('Waiting to join the pool')
-    with s:
+    w__ s:
         name = _.current_thread().g..
         pool.makeActive(name)
         t__.s..(0.1)
@@ -37,7 +37,7 @@ l__.?(
 )
 
 pool = ActivePool()
-s = _.Semaphore(2)
+s = _.S..(2)
 ___ i __ r.. 4):
     t = _.?(
         ?_worker,

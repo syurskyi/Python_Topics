@@ -10,14 +10,14 @@ ___ consumer(cond):
     """wait for the condition and use the resource"""
     l__.d..('Starting consumer thread')
     t = _.c..
-    with cond:
+    w__ cond:
         cond.wait()
         l__.d..('Resource is available to consumer')
 
 ___ producer(cond):
     """set up the resource to be used by the consumer"""
     l__.d..('Starting producer thread')
-    with cond:
+    w__ cond:
         l__.d..('Making resource available')
         cond.notifyAll()
 

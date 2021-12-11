@@ -12,7 +12,7 @@ ___ show_value(data):
         val = data.value
     except AttributeError:
         l__.d..('No value yet')
-    else:
+    ____
         l__.d..('value=@', val)
 
 ___ worker(data):
@@ -22,7 +22,7 @@ ___ worker(data):
 
 c_ MyLocal(_.local):
     ___ -  value):
-        l__.d..('Initializing %r', self)
+        l__.d..('Initializing %r',
         value = value
 
 local_data = MyLocal(1000)

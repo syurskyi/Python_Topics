@@ -8,7 +8,7 @@ ____ PySide2.QtGui ______ QIcon
 c_ Resources(QObject):
 
     ___ - 
-        super().- ()
+        s__().- ()
         loaded    # dict
 
     @property
@@ -25,7 +25,7 @@ c_ Resources(QObject):
     ___ getPath(cls, filename):
         __ hasattr(sys, 'frozen'):
             r_ os.path.normpath(os.path.join(os.path.dirname(sys.executable), 'res', filename))
-        else:
+        ____
             r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'res', filename))
 
     @classmethod

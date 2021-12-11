@@ -16,7 +16,7 @@ c_ MainWindow(QMainWindow):
         setWindowTitle('Boom')
         setMinimumSize(QSize(300, 200))
 
-        refreshButton = QPushButton('Refresh files', self)
+        refreshButton = QPushButton('Refresh files',
         refreshButton.clicked.connect(refresh)
         refreshButton.show()
         refreshButton.move(100,150)
@@ -76,7 +76,7 @@ c_ MainWindow(QMainWindow):
         fileButtons=[]
         x=0
         ___ file __ os.listdir('./scripts'):
-            fileButton = QPushButton(s..(file), self)
+            fileButton = QPushButton(s..(file),
             
             # state is used below because it get passed a bool value so if you use val=file directly, 
             # then val will get a bool value i.e. False
@@ -93,28 +93,28 @@ c_ MainWindow(QMainWindow):
         
         x=0
         ___ dataName __ os.listdir('./data'):
-            newLabel= QLabel(dataName,self)
+            newLabel= QLabel(dataName,
             newLabel.show()
             newLabel.move(x+40, 0)
 
-            newButton = QPushButton('Process Start', self)
+            newButton = QPushButton('Process Start',
             newButton.show()
             newButton.move(x, 30)
             newButton.clicked.connect(lambda state, fileName=fileName,dataName=dataName:clickMethod(fileName,dataName))
 
-            pauseButton = QPushButton('Process Pause', self)
+            pauseButton = QPushButton('Process Pause',
             pauseButton.clicked.connect(lambda state, dataName=dataName:pauseMethod(dataName))
             pauseButton.show()
             pauseButton.move(x, 60)
             pauseButton.setEnabled(F..)
 
-            resumeButton = QPushButton('Process Resume', self)
+            resumeButton = QPushButton('Process Resume',
             resumeButton.clicked.connect(lambda state, dataName=dataName:resumeMethod(dataName))
             resumeButton.show()
             resumeButton.move(x, 90)
             resumeButton.setEnabled(F..)
 
-            killButton = QPushButton('Process Kill', self)
+            killButton = QPushButton('Process Kill',
             killButton.clicked.connect(lambda state, dataName=dataName:killMethod(dataName))
             killButton.show()
             killButton.move(x, 120)

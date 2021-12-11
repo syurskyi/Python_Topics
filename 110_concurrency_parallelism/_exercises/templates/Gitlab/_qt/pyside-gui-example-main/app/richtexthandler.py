@@ -8,7 +8,7 @@ c_ RichTextHandlerObject(QObject):
     wroteLine = Signal(s..)
 
     ___ - 
-        super().- ()
+        s__().- ()
 
 
 c_ RichTextHandler(l__.Handler):
@@ -22,7 +22,7 @@ c_ RichTextHandler(l__.Handler):
     }
 
     ___ -  obj):
-        super().- ()
+        s__().- ()
         obj = obj
 
     ___ emit record):

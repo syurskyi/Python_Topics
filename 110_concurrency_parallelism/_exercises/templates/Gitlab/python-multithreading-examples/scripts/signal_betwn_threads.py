@@ -20,7 +20,7 @@ ___ wait_for_event_timeout(e, t):
         l__.d..('event set: @', event_is_set)
         __ event_is_set:
             l__.d..('processing event')
-        else:
+        ____
             l__.d..('doing other work')
 
 

@@ -9,13 +9,13 @@ ____ ui_main_window ______ Ui_Countdown
 c_ MainWindow(QMainWindow, Ui_Countdown):
 
     ___ -  parent=N..):
-        super(MainWindow, self).- (parent)
+        s__(MainWindow, .- (parent)
         setupUi
 
     @pyqtSignature("")
     ___ on_countdownButton_clicked
         progressBox = QProgressDialog(
-            "Counting to 100...", "Cancel", 0, 100, parent=self)
+            "Counting to 100...", "Cancel", 0, 100, parent=
         progressBox.forceShow()
         progressBox.setModal(T..)
         progressBox.setAutoClose(T..)
@@ -51,9 +51,9 @@ c_ Worker(QObject):
             __ cancel:
                 finished.emit()
                 ____
-            else:
+            ____
                 status.emit(stat)
-        else:
+        ____
             finished.emit()
 
     ___ abort
@@ -66,7 +66,7 @@ ___ counter(start, stop):
         yield {"progress" : number, "string" : s..(number)}
         __ number == 100:
             ____
-        else:
+        ____
             t__.s..(0.1)
                 
 ___ main():

@@ -8,7 +8,7 @@ ____ .mainwidget ______ MainWidget
 c_ MainWindow(QMainWindow):
 
     ___ - 
-        super().- ()
+        s__().- ()
 
         resize(1140, 800)
         move(100, 80)

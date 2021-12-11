@@ -45,14 +45,14 @@ user_choices = {
 
 
 ___ menu
-    user_input = input(USER_CHOICE)
+    user_input = i..(USER_CHOICE)
     w... user_input != 'q':
         logger.d..('User did not choose to exit program.')
         __ user_input __ ('b', 'c', 'n'):
             user_choices[user_input]()
-        else:
+        ____
             print('Please choose a valid command.')
-        user_input = input(USER_CHOICE)
+        user_input = i..(USER_CHOICE)
     logger.d..('Terminating program...')
 
 

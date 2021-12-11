@@ -23,9 +23,9 @@ c_ MainWindow(QMainWindow):
         close=F..
         setMinimumSize(QSize(300, 200))    
         s=0 
-        label1=QLabel(s..(df['v'][0]),self)
+        label1=QLabel(s..(df['v'][0]),
         label1.move(100, 0)
-        label2=QLabel('',self)
+        label2=QLabel('',
         label2.move(120,30)
 
     ___ start

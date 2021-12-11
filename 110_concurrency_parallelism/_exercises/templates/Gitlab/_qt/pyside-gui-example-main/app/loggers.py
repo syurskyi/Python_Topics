@@ -44,25 +44,25 @@ c_ ColorizingStreamHandler(l__.StreamHandler):
 c_ ConsoleFormatter(l__.Formatter):
 
     ___ - 
-        super().- ('[%(asctime)s%(prefix)s]  _ m.. _, datefmt='%H:%M:%S')
+        s__().- ('[%(asctime)s%(prefix)s]  _ m.. _, datefmt='%H:%M:%S')
 
     ___ format record):
         """ Ensures that a 'prefix' value is defined before the record is formatted. """
         __ hasattr(record, 'prefix'):
             __ record.prefix a.. n.. record.prefix.startswith('|'):
                 record.prefix = '|' + record.prefix
-        else:
+        ____
             __ hasattr(record, 'pid'):
                 record.prefix = '|%d' @ record.pid
-            else:
+            ____
                 record.prefix = ''
-        r_ super().format(record)
+        r_ s__().format(record)
 
 
 c_ ConsoleLogger(l__.Logger):
 
     ___ -  name):
-        super().- (name)
+        s__().- (name)
         logFilepath = N..
 
     @classmethod

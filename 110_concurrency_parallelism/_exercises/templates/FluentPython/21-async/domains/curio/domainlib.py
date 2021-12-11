@@ -19,7 +19,7 @@ c_ Result(NamedTuple):
 
 
 @ ___ multi_probe(domains: Iterable[s..])  AsyncIterator[Result]:
-    @ with TaskGroup() __ group:
+    @ w__ TaskGroup() __ group:
         ___ domain __ domains:
             await group.spawn(probe, domain)
         @ ___ task __ group:

@@ -21,7 +21,7 @@ c_ ip_check(_.?):
          r_ "alive, but 50 % package loss"
       elif __successful_pings == 2:
          r_ "alive"
-      else:
+      ____
          r_ "shouldn't occur"
 received_packages = re.compile(r"(\d) received")
 

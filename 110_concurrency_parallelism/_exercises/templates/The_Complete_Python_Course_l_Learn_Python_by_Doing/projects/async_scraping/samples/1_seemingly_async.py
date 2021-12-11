@@ -4,14 +4,14 @@ ______ t___
 
 @ ___ fetch_page(session, url):
     start = t___.t___()
-    @ with session.get(url) __ response:
+    @ w__ session.get(url) __ response:
         print(f'{url} took {t___.t___() - start}')
         r.. response.status
 
 
 @ ___ get_multiple_pages(loop, *urls):
     pages   # list
-    @ with aiohttp.ClientSession(loop=loop) __ session:
+    @ w__ aiohttp.ClientSession(loop=loop) __ session:
         ___ url __ urls:
             pages.a..(await fetch_page(session, url))
     r.. pages

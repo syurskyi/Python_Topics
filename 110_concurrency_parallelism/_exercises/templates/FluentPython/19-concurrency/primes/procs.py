@@ -47,7 +47,7 @@ ___ start_jobs(
 ___ main()  N..:
     __ l..(sys.argv) < 2:  # <1>
         procs = cpu_count()
-    else:
+    ____
         procs = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {procs} processes:')
@@ -66,7 +66,7 @@ ___ report(procs: in., results: ResultQueue)  in.: # <6>
         n, prime, elapsed = results.g..  # <8>
         __ n == 0:  # <9>
             procs_done += 1
-        else:
+        ____
             checked += 1  # <10>
             label = 'P' __ prime else ' '
             print(f'{n:16}  {label} {elapsed:9.6f}s')

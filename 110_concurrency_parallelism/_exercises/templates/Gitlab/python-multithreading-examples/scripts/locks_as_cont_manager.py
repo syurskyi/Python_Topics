@@ -6,7 +6,7 @@ l__.?(?_l__.D..
                     )
 
 ___ worker_with(lock):
-    with lock:
+    w__ lock:
         l__.d..('Lock acquired via with')
         
 ___ worker_no_with(lock):

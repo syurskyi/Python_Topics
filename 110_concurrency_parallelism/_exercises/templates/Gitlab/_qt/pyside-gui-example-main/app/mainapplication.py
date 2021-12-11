@@ -22,7 +22,7 @@ c_ BackgroundJob(QObject):
     crashed = Signal(s..)
 
     ___ - 
-        super().- ()
+        s__().- ()
         exit_requested = F..
 
     @Slot()
@@ -52,7 +52,7 @@ c_ BackgroundJob(QObject):
                 g.log.info('I am doing work in the background!')
             elif i == 5:
                 g.log.warning('Help! I\'m about to crash!')
-            else:
+            ____
                 raise RuntimeError('Oh no! A crash!')
             t__.s..(2.0)
 
@@ -62,7 +62,7 @@ c_ BackgroundJob(QObject):
 c_ MainApplication(QApplication):
 
     ___ -  argv):
-        super().- (argv)
+        s__().- (argv)
 
         setApplicationName('ThisApplication')
         setStyle('Fusion')
@@ -95,7 +95,7 @@ c_ MainApplication(QApplication):
             thread.finished.connect(quit)
             aboutToQuit.connect(onUserQuit)
             thread.s..
-        else:
+        ____
             job.run()
 
     ___ onUserQuit

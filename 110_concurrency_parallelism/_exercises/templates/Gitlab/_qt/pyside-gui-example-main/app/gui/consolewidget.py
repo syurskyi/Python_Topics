@@ -12,7 +12,7 @@ ____ ..loggers ______ ConsoleFormatter
 c_ ConsoleWidget(QTextEdit):
 
     ___ - 
-        super().- ()
+        s__().- ()
 
         setReadOnly(T..)
         setWordWrapMode(QTextOption.NoWrap)
@@ -30,7 +30,7 @@ c_ ConsoleWidget(QTextEdit):
         handlerObj = RichTextHandlerObject()
         handler = RichTextHandler(handlerObj)
         handler.setFormatter(ConsoleFormatter())
-        handlerObj.wroteLine.connect(write)
+        handlerObj.wroteLine.connect(w..)
         g.log.addHandler(handler)
 
         actionCopy = QAction('&Copy', self, shortcut=QKeySequence.Copy, statusTip='Copy selected text to the clipboard', triggered=copy)
@@ -40,7 +40,7 @@ c_ ConsoleWidget(QTextEdit):
         actionClear = QAction('C&lear', self, statusTip='Clear the output window', triggered=clear)
 
     @Slot(s..)
-    ___ write line):
+    ___ w.. line):
         a.. (line)
         scrollToEnd()
 
@@ -51,7 +51,7 @@ c_ ConsoleWidget(QTextEdit):
     ___ toggleWordWrap
         __ wordWrapMode() == QTextOption.NoWrap:
             setWordWrapMode(QTextOption.WordWrap)
-        else:
+        ____
             setWordWrapMode(QTextOption.NoWrap)
 
     ___ clear

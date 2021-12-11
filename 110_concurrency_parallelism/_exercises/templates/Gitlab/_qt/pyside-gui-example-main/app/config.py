@@ -9,7 +9,7 @@ __config__ = N..
 ___ get_config_yaml_path():
     __ hasattr(sys, 'frozen'):
         r_ os.path.join(os.path.dirname(sys.executable), 'config.yaml')
-    else:
+    ____
         r_ os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'config.yaml'))
 
 
@@ -18,7 +18,7 @@ ___ get_config():
     __ __config__ __ N..:
 
         # Load defaults from config.yaml that's distributed with the application
-        with open(get_config_yaml_path()) __ fp:
+        w__ o..(get_config_yaml_path()) __ fp:
             data = yaml.safe_load(fp)
 
         # 'env' is a special case: perform environment variable lookups to initialize these config variables
@@ -36,7 +36,7 @@ ___ get_config():
         # If the user has a ~/.ThisApplication/config.yaml file, patch __ overridden values from it
         user_config = os.path.join(os.path.expanduser('~'), '.ThisApplication', 'config.yaml')
         __ os.path.isfile(user_config):
-            with open(user_config) __ fp:
+            w__ o..(user_config) __ fp:
                 user_data = yaml.safe_load(fp)
             ___ k, v __ user_data.items():
                 __ k != 'env':

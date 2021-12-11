@@ -16,7 +16,7 @@ MAX_KEYWORD_LEN = 4
 @ ___ main()  N..:
     names = (kw ___ kw __ kwlist __ l..(kw) <= MAX_KEYWORD_LEN)
     domains = (f'{name}.dev'.lower() ___ name __ names)
-    @ with TaskGroup() __ group:  # <3>
+    @ w__ TaskGroup() __ group:  # <3>
         ___ domain __ domains:
             await group.spawn(probe, domain)  # <4>
         @ ___ task __ group:  # <5>

@@ -6,7 +6,7 @@ ____ .consolewidget ______ ConsoleWidget
 c_ MainWidget(QWidget):
 
     ___ - 
-        super().- ()
+        s__().- ()
 
         console = ConsoleWidget()
 

@@ -62,7 +62,7 @@ c_ InvertedIndex:
         __ words := list(tokenize(query)):
             found = entries[words[0]]
             r_ found.intersection(*(entries[w] ___ w __ words[1:]))
-        else:
+        ____
             r_ set()
 
 

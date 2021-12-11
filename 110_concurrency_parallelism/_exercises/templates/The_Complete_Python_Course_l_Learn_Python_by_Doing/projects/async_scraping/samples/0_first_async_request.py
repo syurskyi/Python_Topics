@@ -2,8 +2,8 @@ ______ aiohttp
 ______ _
 
 @ ___ fetch_page(url):
-    @ with aiohttp.ClientSession() __ session:
-        @ with session.get(url) __ response:
+    @ w__ aiohttp.ClientSession() __ session:
+        @ w__ session.get(url) __ response:
             print(response.status)
             r.. response.status
 

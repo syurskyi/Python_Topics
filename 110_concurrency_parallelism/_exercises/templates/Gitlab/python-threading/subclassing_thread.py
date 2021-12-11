@@ -6,7 +6,7 @@ c_ MyThreadWithArgs(_.?):
 
     ___ -  ?_N.., ?_N.., ?_N..,
                   ?_(), k.._N.., *, daemon=N..):
-        super().- (?_group, ?_target, ?_name,
+        s__().- (?_group, ?_target, ?_name,
                          daemon=daemon)
         args = args
         kwargs = kwargs

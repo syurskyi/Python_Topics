@@ -20,5 +20,5 @@ ____ domainlib ______ multi_probe
 __ _____ __ ______
     __ l..(sys.argv) == 2:
         _.run(main(sys.argv[1]))  # <6>
-    else:
+    ____
         print('Please provide a TLD.', f'Example: {sys.argv[0]} COM.BR')

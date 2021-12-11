@@ -20,7 +20,7 @@ c = 0
 
 c_ calcA(_.?):
     ___ - name):
-        super(calcA, self).- ()
+        s__(calcA, .- ()
         name = name
         terminated = F..
         s..
@@ -39,7 +39,7 @@ c_ calcA(_.?):
 
 c_ calcB(_.?):
     ___ - name):
-        super(calcB, self).- ()
+        s__(calcB, .- ()
         name = name
         terminated = F..
         s..
@@ -59,7 +59,7 @@ c_ calcB(_.?):
 
 c_ calcC(_.?):
     ___ - name):
-        super(calcC, self).- ()
+        s__(calcC, .- ()
         name = name
         terminated = F..
         s..

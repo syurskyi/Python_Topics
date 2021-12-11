@@ -13,7 +13,7 @@ c_ ?(QRunnable):
     signal = pyqtSignal(s..)
 
     ___ - 
-        super(?, self).- ()     
+        s__(?, .- ()
         signal = Signals()    
 
     @pyqtSlot()
@@ -25,7 +25,7 @@ c_ ?(QRunnable):
 
 c_ App(QWidget):
     ___ - 
-            super().- ()
+            s__().- ()
             title='Hello, world!'
             left=2100
             top=500
@@ -37,7 +37,7 @@ c_ App(QWidget):
     ___ initUI
             setWindowTitle(title)
             setGeometry(left,top,width,height)
-            checkbox = QCheckBox('Check Box', self)
+            checkbox = QCheckBox('Check Box',
             checkbox.stateChanged.connect(clickCheckbox)
             show()
 

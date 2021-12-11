@@ -25,7 +25,7 @@ c_ Worker(QtCore.QObject):
 
 c_ Main(QtWidgets.QMainWindow):
     ___ -  parent=N..):
-        super(Main, self).- (parent)
+        s__(Main, .- (parent)
 
         # Setup worker on a different therad than main
         thread = QtCore.QThread()
@@ -84,7 +84,7 @@ c_ Main(QtWidgets.QMainWindow):
         print("closing")
         thread.quit()
         thread.wait()
-        super(Main, self).closeEvent(event)
+        s__(Main, .closeEvent(event)
 
 
 ___ s..:

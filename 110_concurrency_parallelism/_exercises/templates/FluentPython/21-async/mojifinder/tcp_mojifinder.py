@@ -17,7 +17,7 @@ PROMPT = b'?> '
                  writer: _.StreamWriter)  N..:
     client = writer.get_extra_info('peername')  # <3>
     w___ T..:  # <4>
-        writer.write(PROMPT)  # can't await!  # <5>
+        writer.w..(PROMPT)  # can't await!  # <5>
         await writer.drain()  # must await!  # <6>
         data = await reader.readline()  # <7>
         __ n.. data:  # <8>
@@ -33,7 +33,7 @@ PROMPT = b'?> '
             results = await search(query, index, writer)  # <13>
             print(f'   To {client}: {results} results.')  # <14>
 
-    writer.close()  # <15>
+    writer.c..  # <15>
     await writer.wait_closed()  # <16>
     print(f'Close {client}.')  # <17>
 # end::TCP_MOJIFINDER_TOP[]
@@ -48,7 +48,7 @@ PROMPT = b'?> '
     writer.writelines(lines)  # <4>
     await writer.drain()      # <5>
     status_line = f'{"─" * 66} {l..(chars)} found'  # <6>
-    writer.write(status_line.encode() + CRLF)
+    writer.w..(status_line.encode() + CRLF)
     await writer.drain()
     r_ l..(chars)
 # end::TCP_MOJIFINDER_SEARCH[]

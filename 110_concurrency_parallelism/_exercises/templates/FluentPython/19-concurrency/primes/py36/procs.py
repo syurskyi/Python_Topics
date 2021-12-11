@@ -39,7 +39,7 @@ ___ worker(jobs: JobQueue, results: ResultQueue)  N..:  # <7>
 ___ main()  N..:
     __ l..(sys.argv) < 2:  # <1>
         workers = cpu_count()
-    else:
+    ____
         workers = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {workers} processes:')

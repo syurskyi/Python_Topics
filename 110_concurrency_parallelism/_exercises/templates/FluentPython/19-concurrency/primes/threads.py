@@ -47,7 +47,7 @@ ___ report(workers: in., results: ResultQueue)  in.:
         n, prime, elapsed = results.g..
         __ n == 0:
             workers_done += 1
-        else:
+        ____
             checked += 1
             label = 'P' __ prime else ' '
             print(f'{n:16}  {label} {elapsed:9.6f}s')
@@ -56,7 +56,7 @@ ___ report(workers: in., results: ResultQueue)  in.:
 ___ main()  N..:
     __ l..(sys.argv) < 2:
         workers = os.cpu_count()
-    else:
+    ____
         workers = in.(sys.argv[1])
 
     print(f'Checking {l..(NUMBERS)} numbers with {workers} threads:')

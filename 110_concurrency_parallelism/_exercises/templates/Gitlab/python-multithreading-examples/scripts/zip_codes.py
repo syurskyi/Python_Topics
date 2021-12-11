@@ -35,7 +35,7 @@ start = t__.t__()
 # Magic
 pool = Pool(10)
 asyncres = pool.map(getzip, ziprange)
-pool.close()
+pool.c..
 pool.j..
 asyncres = sorted(asyncres)
 # End of Magic

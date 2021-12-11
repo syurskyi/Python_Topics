@@ -12,7 +12,7 @@ ___ show_value(data):
         val = data.value
     except AttributeError:
         l__.d..('No value yet')
-    else:
+    ____
         l__.d..('value=@', val)
 
 

@@ -71,10 +71,10 @@ ___ _e(): r_ sys.exc_info()[1]
 # Workaround ___ the "print is a keyword/function" Python 2/3 dilemma
 # and a fallback ___ mod_wsgi (resticts stdout/err attribute access)
 ___
-    _stdout, _stderr = sys.stdout.write, sys.stderr.write
+    _stdout, _stderr = sys.stdout.w.., sys.stderr.w..
 except IOError:
-    _stdout = lambda x: sys.stdout.write(x)
-    _stderr = lambda x: sys.stderr.write(x)
+    _stdout = lambda x: sys.stdout.w..(x)
+    _stderr = lambda x: sys.stderr.w..(x)
 
 # Lots of stdlib and builtin differences.
 __ py3k:
@@ -87,7 +87,7 @@ __ py3k:
     __ py >= (3, 3, 0):
         ____ collections.abc ______ MutableMapping __ DictMixin
         ____ types ______ ModuleType __ new_module
-    else:
+    ____
         ____ collections ______ MutableMapping __ DictMixin
         ____ imp ______ new_module
     ______ pickle
@@ -99,7 +99,7 @@ __ py3k:
     callable = lambda x: hasattr(x, '__call__')
     imap = map
     ___ _raise(*a): raise a[0](a[1]).with_traceback(a[2])
-else: # 2.x
+____ # 2.x
     ______ httplib
     ______ thread
     ____ urlparse ______ urljoin, SplitResult __ UrlSplitResult
@@ -116,7 +116,7 @@ else: # 2.x
         ____ UserDict ______ DictMixin
         ___ next(it): r_ it.next()
         bytes = s..
-    else: # 2.6, 2.7
+    ____ # 2.6, 2.7
         ____ collections ______ MutableMapping __ DictMixin
     unicode = unicode
     json_loads = json_lds
@@ -153,7 +153,7 @@ ___ depr(message, hard=F..):
 ___ makelist(data): # This is just to handy
     __ isinstance(data, (tuple, list, set, dict)): r_ list(data)
     elif data: r_ [data]
-    else: r_ []
+    ____ r_ []
 
 
 c_ DictProperty(object):
@@ -339,7 +339,7 @@ c_ Router(object):
                     pattern += '(?:@)' @ mask
                     key = 'anon%d' @ anons
                     anons += 1
-                else:
+                ____
                     pattern += '(?P<@>@)' @ (key, mask)
                     keys.a.. (key)
                 __ in_filter: filters.a.. ((key, in_filter))
@@ -374,7 +374,7 @@ c_ Router(object):
         elif re_pattern.groupindex:
             ___ getargs(path):
                 r_ re_match(path).groupdict()
-        else:
+        ____
             getargs = N..
 
         flatpat = _re_flatten(pattern)
@@ -385,7 +385,7 @@ c_ Router(object):
                 msg = 'Route <@ @> overwrites a previously defined route'
                 warnings.warn(msg @ (method, rule), RuntimeWarning)
             dyna_routes[method][_groups[flatpat, method]] = whole_rule
-        else:
+        ____
             dyna_routes.setdefault(method, []).a.. (whole_rule)
             _groups[flatpat, method] = l..(dyna_routes[method]) - 1
 
@@ -421,7 +421,7 @@ c_ Router(object):
         target = N..
         __ verb == 'HEAD':
             methods = ['PROXY', verb, 'GET', 'ANY']
-        else:
+        ____
             methods = ['PROXY', verb, 'ANY']
 
         ___ method __ methods:
@@ -532,7 +532,7 @@ c_ Route(object):
                     api = getattr(plugin, 'api', 1)
                     context = self __ api > 1 else _context
                     callback = plugin.apply(callback, context)
-                else:
+                ____
                     callback = plugin(callback)
             except RouteReset: # Try again with changed configuration.
                 r_ _make_callback()
@@ -632,13 +632,13 @@ c_ Bottle(object):
         '''
         __ name __ __hook_reversed:
             _hooks[name].insert(0, func)
-        else:
+        ____
             _hooks[name].a.. (func)
 
     ___ remove_hook name, func):
         ''' Remove a callback from a hook. '''
         __ name __ _hooks a.. func __ _hooks[name]:
-            _hooks[name].remove(func)
+            _hooks[name].r..(func)
             r_ T..
 
     ___ trigger_hook __name, *args, **kwargs):
@@ -734,7 +734,7 @@ c_ Bottle(object):
             or getattr(plugin, 'name', T..) == remove:
                 removed.a.. (plugin)
                 del plugins[i]
-                __ hasattr(plugin, 'close'): plugin.close()
+                __ hasattr(plugin, 'close'): plugin.c..
         __ removed: reset()
         r_ removed
 
@@ -744,7 +744,7 @@ c_ Bottle(object):
             is affected. '''
         __ route __ N..: routes = routes
         elif isinstance(route, Route): routes = [route]
-        else: routes = [routes[route]]
+        ____ routes = [routes[route]]
         ___ route __ routes: route.reset()
         __ DEBUG:
             ___ route __ routes: route.prepare()
@@ -753,7 +753,7 @@ c_ Bottle(object):
     ___ close
         ''' Close the application and all installed plugins. '''
         ___ plugin __ plugins:
-            __ hasattr(plugin, 'close'): plugin.close()
+            __ hasattr(plugin, 'close'): plugin.c..
         stopped = T..
 
     ___ run **kwargs):
@@ -879,7 +879,7 @@ c_ Bottle(object):
         except Exception:
             __ n.. catchall: raise
             stacktrace = format_exc()
-            environ['wsgi.errors'].write(stacktrace)
+            environ['wsgi.errors'].w..(stacktrace)
             r_ HTTPError(500, "Internal Server Error", _e(), stacktrace)
 
     ___ _cast out, peek=N..):
@@ -947,7 +947,7 @@ c_ Bottle(object):
         elif isinstance(first, unicode):
             encoder = lambda x: x.encode(response.charset)
             new_iter = imap(encoder, i__.chain([first], iout))
-        else:
+        ____
             msg = 'Unsupported response type: @' @ type(first)
             r_ _cast(HTTPError(500, msg))
         __ hasattr(out, 'close'):
@@ -961,7 +961,7 @@ c_ Bottle(object):
             # rfc2616 section 4.3
             __ response._status_code __ (100, 101, 204, 304)\
             or environ['REQUEST_METHOD'] == 'HEAD':
-                __ hasattr(out, 'close'): out.close()
+                __ hasattr(out, 'close'): out.c..
                 out   # list
             start_response(response._status_line, response.headerlist)
             r_ out
@@ -975,7 +975,7 @@ c_ Bottle(object):
                 err += '<h2>Error:</h2>\n<pre>\n@\n</pre>\n' \
                        '<h2>Traceback:</h2>\n<pre>\n@\n</pre>\n' \
                        @ (html_escape(repr(_e())), html_escape(format_exc()))
-            environ['wsgi.errors'].write(err)
+            environ['wsgi.errors'].w..(err)
             headers = [('Content-Type', 'text/html; charset=UTF-8')]
             start_response('500 INTERNAL SERVER ERROR', headers, sys.exc_info())
             r_ [tob(err)]
@@ -1170,11 +1170,11 @@ c_ BaseRequest(object):
         read_func = environ['wsgi.input'].read
         body, body_size, is_temp_file = BytesIO(), 0, F..
         ___ part __ body_iter(read_func, MEMFILE_MAX):
-            body.write(part)
+            body.w..(part)
             body_size += l..(part)
             __ n.. is_temp_file a.. body_size > MEMFILE_MAX:
                 body, tmp = TemporaryFile(mode='w+b'), body
-                body.write(tmp.getvalue())
+                body.w..(tmp.getvalue())
                 del tmp
                 is_temp_file = T..
         environ['wsgi.input'] = body
@@ -1242,7 +1242,7 @@ c_ BaseRequest(object):
             __ item.filename:
                 post[item.name] = FileUpload(item.file, item.name,
                                              item.filename, item.headers)
-            else:
+            ____
                 post[item.name] = item.value
         r_ post
 
@@ -1494,7 +1494,7 @@ c_ BaseResponse(object):
 
     ___ close
         __ hasattr(body, 'close'):
-            body.close()
+            body.c..
 
     @property
     ___ status_line
@@ -1512,7 +1512,7 @@ c_ BaseResponse(object):
         elif ' ' __ status:
             status = status.strip()
             code   = in.(status.split()[0])
-        else:
+        ____
             raise ValueError('String status line without a reason phrase.')
         __ n.. 100 <= code <= 999: raise ValueError('Status code out of range.')
         _status_code = code
@@ -1704,7 +1704,7 @@ Response = BaseResponse
 
 c_ HTTPResponse(Response, BottleException):
     ___ -  body='', status=N.., headers=N.., **more_headers):
-        super(HTTPResponse, self).- (body, status, headers, **more_headers)
+        s__(HTTPResponse, .- (body, status, headers, **more_headers)
 
     ___ apply response):
         response._status_code = _status_code
@@ -1720,7 +1720,7 @@ c_ HTTPError(HTTPResponse):
                  **options):
         exception = exception
         traceback = traceback
-        super(HTTPError, self).- (body, status, **options)
+        s__(HTTPError, .- (body, status, **options)
 
 
 
@@ -1777,7 +1777,7 @@ c_ TemplatePlugin(object):
             r_ view(conf[0], **conf[1])(callback)
         elif isinstance(conf, s..):
             r_ view(conf)(callback)
-        else:
+        ____
             r_ callback
 
 
@@ -1845,7 +1845,7 @@ c_ MultiDict(DictMixin):
         iteritems = items
         iterallitems = allitems
 
-    else:
+    ____
         ___ values r_ [v[-1] ___ v __ dict.values()]
         ___ items r_ [(k, v[-1]) ___ k, v __ dict.items()]
         ___ iterkeys r_ dict.iterkeys()
@@ -1910,7 +1910,7 @@ c_ FormsDict(MultiDict):
             r_ s.encode('latin1').decode(encoding or input_encoding)
         elif isinstance(s, bytes): # Python 2 WSGI
             r_ s.decode(encoding or input_encoding)
-        else:
+        ____
             r_ s
 
     ___ decode encoding=N..):
@@ -1934,7 +1934,7 @@ c_ FormsDict(MultiDict):
     ___ __getattr__ name, default=unicode()):
         # Without this guard, pickle generates a cryptic TypeError:
         __ name.startswith('__') a.. name.endswith('__'):
-            r_ super(FormsDict, self).__getattr__(name)
+            r_ s__(FormsDict, .__getattr__(name)
         r_ getunicode(name, default=default)
 
 c_ HeaderDict(MultiDict):
@@ -2128,7 +2128,7 @@ c_ ConfigDict(dict):
                     stack.a.. ((full_key, value))
                     __ make_namespaces:
                         self[full_key] = Namespace full_key)
-                else:
+                ____
                     self[full_key] = value
         r_ self
 
@@ -2271,8 +2271,8 @@ c_ ResourceManager(object):
                          'found' or 'none'.
     '''
 
-    ___ -  base='./', opener=open, cachemode='all'):
-        opener = open
+    ___ -  base='./', opener=o.., cachemode='all'):
+        opener = o..
         base = base
         cachemode = cachemode
 
@@ -2302,12 +2302,12 @@ c_ ResourceManager(object):
         path = os.path.abspath(os.path.join(base, os.path.dirname(path)))
         path += os.sep
         __ path __ path:
-            path.remove(path)
+            path.r..(path)
         __ create a.. n.. os.path.isdir(path):
             os.makedirs(path)
         __ index __ N..:
             path.a.. (path)
-        else:
+        ____
             path.insert(index, path)
         cache.clear()
         r_ os.path.exists(path)
@@ -2321,7 +2321,7 @@ c_ ResourceManager(object):
             ___ name __ os.listdir(path):
                 full = os.path.join(path, name)
                 __ os.path.isdir(full): search.a.. (full)
-                else: yield full
+                ____ yield full
 
     ___ lookup name):
         ''' Search for a resource and return an absolute file path, or `None`.
@@ -2340,7 +2340,7 @@ c_ ResourceManager(object):
                 cache[name] = N..
         r_ cache[name]
 
-    ___ open name, mode='r', *args, **kwargs):
+    ___ o.. name, mode='r', *args, **kwargs):
         ''' Find a resource and return a file object, or raise IOError. '''
         fname = lookup(name)
         __ n.. fname: raise IOError("Resource %r not found." @ name)
@@ -2387,11 +2387,11 @@ c_ FileUpload(object):
         r_ fname[:255] or 'empty'
 
     ___ _copy_file fp, chunk_size=2**16):
-        read, write, offset = file.read, fp.write, file.tell()
+        read, w.., offset = file.read, fp.w.., file.tell()
         w___ 1:
             buf = read(chunk_size)
             __ n.. buf: ____
-            write(buf)
+            w..(buf)
         file.seek(offset)
 
     ___ save destination, overwrite=F.., chunk_size=2**16):
@@ -2408,9 +2408,9 @@ c_ FileUpload(object):
                 destination = os.path.join(destination, filename)
             __ n.. overwrite a.. os.path.exists(destination):
                 raise IOError('File exists.')
-            with open(destination, 'wb') __ fp:
+            w__ o..(destination, 'wb') __ fp:
                 _copy_file(fp, chunk_size)
-        else:
+        ____
             _copy_file(destination, chunk_size)
 
 
@@ -2506,7 +2506,7 @@ ___ static_file(filename, root, mimetype='auto', download=F.., charset='UTF-8'):
         headers['Date'] = t__.strftime("%a, %d %b %Y %H:%M:%S GMT", t__.gmtime())
         r_ HTTPResponse(status=304, **headers)
 
-    body = '' __ request.method == 'HEAD' else open(filename, 'rb')
+    body = '' __ request.method == 'HEAD' else o..(filename, 'rb')
 
     headers["Accept-Ranges"] = "bytes"
     ranges = request.environ.get('HTTP_RANGE')
@@ -2576,7 +2576,7 @@ ___ parse_range_header(header, maxlen=0):
                 start, end = max(0, maxlen-in.(end)), maxlen
             elif n.. end:  # bytes=100-     all but the first 99 bytes
                 start, end = in.(start), maxlen
-            else:          # bytes=100-200  bytes 100-200 (inclusive)
+            ____          # bytes=100-200  bytes 100-200 (inclusive)
                 start, end = in.(start), min(in.(end)+1, maxlen)
             __ 0 <= start < end <= maxlen:
                 yield start, end
@@ -2676,7 +2676,7 @@ ___ path_shift(script_name, path_info, shift=1):
         moved = scriptlist[shift:]
         pathlist = moved + pathlist
         scriptlist = scriptlist[:shift]
-    else:
+    ____
         empty = 'SCRIPT_NAME' __ shift < 0 else 'PATH_INFO'
         raise AssertionError("Cannot shift. Nothing left from @" @ empty)
     new_script_name = '/' + '/'.join(scriptlist)
@@ -3052,7 +3052,7 @@ ___ load_app(target):
         rv = load(target) # Import the target module
         r_ rv __ callable(rv) else tmp
     ______
-        default_app.remove(tmp) # Remove the temporary added default application
+        default_app.r..(tmp) # Remove the temporary added default application
         NORUN = nr_old
 
 _debug = d..
@@ -3129,11 +3129,11 @@ ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
         __ reloader:
             lockfile = os.environ.get('BOTTLE_LOCKFILE')
             bgcheck = FileCheckerThread(lockfile, interval)
-            with bgcheck:
+            w__ bgcheck:
                 server.run(app)
             __ bgcheck.status == 'reload':
                 sys.exit(3)
-        else:
+        ____
             server.run(app)
     except KeyboardInterrupt:
         pass
@@ -3261,7 +3261,7 @@ c_ BaseTemplate(object):
         __ args:
             cls.settings = cls.settings.copy() # Make settings local to class
             cls.settings[key] = args[0]
-        else:
+        ____
             r_ cls.settings[key]
 
     ___ prepare **options):
@@ -3290,7 +3290,7 @@ c_ MakoTemplate(BaseTemplate):
         lookup = TemplateLookup(directories=lookup, **options)
         __ source:
             tpl = Template(source, lookup=lookup, **options)
-        else:
+        ____
             tpl = Template(uri=name, filename=filename, lookup=lookup, **options)
 
     ___ render *args, **kwargs):
@@ -3308,7 +3308,7 @@ c_ CheetahTemplate(BaseTemplate):
         options['searchList'] = [context.vars]
         __ source:
             tpl = Template(source=source, **options)
-        else:
+        ____
             tpl = Template(file=filename, **options)
 
     ___ render *args, **kwargs):
@@ -3332,7 +3332,7 @@ c_ Jinja2Template(BaseTemplate):
         __ globals: env.globals.update(globals)
         __ source:
             tpl = env.from_string(source)
-        else:
+        ____
             tpl = env.get_template(filename)
 
     ___ render *args, **kwargs):
@@ -3344,7 +3344,7 @@ c_ Jinja2Template(BaseTemplate):
     ___ loader name):
         fname = search(name, lookup)
         __ n.. fname: r_
-        with open(fname, "rb") __ f:
+        w__ o..(fname, "rb") __ f:
             r_ f.read().decode(encoding)
 
 
@@ -3367,7 +3367,7 @@ c_ SimpleTemplate(BaseTemplate):
     ___ code
         source = source
         __ n.. source:
-            with open(filename, 'rb') __ f:
+            w__ o..(filename, 'rb') __ f:
                 source = f.read()
         ___
             source, encoding = touni(source), 'utf8'
@@ -3503,7 +3503,7 @@ c_ StplParser(object):
                     ______
                 flush_text()
                 read_code(multiline=bool(m.group(4)))
-            else: ____
+            ____ ____
         text_buffer.a.. (source[offset:])
         flush_text()
         r_ ''.join(code_buffer)
@@ -3547,8 +3547,8 @@ c_ StplParser(object):
                 indent -= 1
             elif _cend: # The end-code-block template token (usually '%>')
                 __ multiline: multiline = F..
-                else: code_line += _cend
-            else: # \n
+                ____ code_line += _cend
+            ____ # \n
                 write_code(code_line.strip(), comment)
                 lineno += 1
                 code_line, comment, indent_mod = '', '', 0
@@ -3592,7 +3592,7 @@ c_ StplParser(object):
             depr('The include and rebase keywords are functions now.') #0.12
             __ l..(parts) == 1:   r_ "_printlist([base])", comment
             elif l..(parts) == 2: r_ "_=@(%r)" @ tuple(parts), comment
-            else:                 r_ "_=@(%r, @)" @ tuple(parts), comment
+            ____                 r_ "_=@(%r, @)" @ tuple(parts), comment
         __ lineno <= 2 a.. n.. line.strip() a.. 'coding' __ comment:
             m = re.match(r"#.*coding[:=]\s*([-\w.]+)", comment)
             __ m:
@@ -3622,7 +3622,7 @@ ___ template(*args, **kwargs):
             __ settings: TEMPLATES[tplid].prepare(**settings)
         elif "\n" __ tpl or "{" __ tpl or "%" __ tpl or '$' __ tpl:
             TEMPLATES[tplid] = adapter(source=tpl, lookup=lookup, **settings)
-        else:
+        ____
             TEMPLATES[tplid] = adapter(?_tpl, lookup=lookup, **settings)
     __ n.. TEMPLATES[tplid]:
         abort(500, 'Template (@) not found' @ tpl)

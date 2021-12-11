@@ -67,8 +67,8 @@ c_ Crawler(_.T..):
 
 ___ main
   print("Starting our Web Crawler")
-  baseUrl = input("Website > ")
-  numberOfThreads = input("No Threads > ")
+  baseUrl = i..("Website > ")
+  numberOfThreads = i..("No Threads > ")
 
   linksToCrawl = queue.Q..()
   urlLock = _.L...()
