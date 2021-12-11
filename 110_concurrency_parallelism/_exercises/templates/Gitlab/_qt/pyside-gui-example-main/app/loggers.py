@@ -24,8 +24,8 @@ c_ ColorizingStreamHandler(l__.StreamHandler):
         isatty = getattr(stream, 'isatty', N..)
         r_ isatty a.. isatty()
 
-    ___ format record):
-        message = l__.StreamHandler.format record)
+    ___ f.. record):
+        message = l__.StreamHandler.f.. record)
         __ is_tty:
             # Don't colorize a traceback
             parts = message.split('\n', 1)
@@ -37,7 +37,7 @@ c_ ColorizingStreamHandler(l__.StreamHandler):
         ___
             r_ (color_map[record.levelno] + message +
                     colorama.Style.RESET_ALL)
-        except KeyError:
+        _____ KeyError:
             r_ message
 
 
@@ -46,7 +46,7 @@ c_ ConsoleFormatter(l__.Formatter):
     ___ - 
         s__().- ('[%(asctime)s%(prefix)s]  _ m.. _, datefmt='%H:%M:%S')
 
-    ___ format record):
+    ___ f.. record):
         """ Ensures that a 'prefix' value is defined before the record is formatted. """
         __ hasattr(record, 'prefix'):
             __ record.prefix a.. n.. record.prefix.startswith('|'):
@@ -56,7 +56,7 @@ c_ ConsoleFormatter(l__.Formatter):
                 record.prefix = '|%d' @ record.pid
             ____
                 record.prefix = ''
-        r_ s__().format(record)
+        r_ s__().f..(record)
 
 
 c_ ConsoleLogger(l__.Logger):

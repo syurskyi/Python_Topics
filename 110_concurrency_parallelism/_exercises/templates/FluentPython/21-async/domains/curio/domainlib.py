@@ -13,7 +13,7 @@ c_ Result(NamedTuple):
 @ ___ probe(domain: s..)  Result:
     ___
         await socket.getaddrinfo(domain, N..)
-    except socket.gaierror:
+    _____ socket.gaierror:
         r_ Result(domain, F..)
     r_ Result(domain, T..)
 

@@ -15,7 +15,7 @@ ______ primes
         print(status, flush=T.., end='')
         ___
             await _.s..(.1)
-        except _.CancelledError:
+        _____ _.CancelledError:
             ____
     print('THIS WILL NEVER BE OUTPUT')
 

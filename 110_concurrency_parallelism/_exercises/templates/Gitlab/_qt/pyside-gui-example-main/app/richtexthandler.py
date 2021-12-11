@@ -26,12 +26,12 @@ c_ RichTextHandler(l__.Handler):
         obj = obj
 
     ___ emit record):
-        rtf_line = format(record)
+        rtf_line = f..(record)
         obj.wroteLine.emit(rtf_line)
 
-    ___ format record):
+    ___ f.. record):
         style = _getStyle(record.levelno)
-        text = html.escape(l__.Handler.format record))
+        text = html.escape(l__.Handler.f.. record))
         prefixLen = l..(text) - l..(record.message)
         __ hasattr(record, 'link'):
             url, start, end = record.link

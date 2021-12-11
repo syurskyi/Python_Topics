@@ -13,11 +13,11 @@ c_ Publisher(_.T..):
     w... T..
       integer = r___.r..(0,1000)
       condition.a..
-      print("Condition Acquired by Publisher: {}".format(name))
+      print("Condition Acquired by Publisher: {}".f..(name))
       integers.a..(integer)
-      print("Publisher {} appending to array: {}".format(name, integer))
+      print("Publisher {} appending to array: {}".f..(name, integer))
       condition.n..
-      print("Condition Released by Publisher: {}".format(name))
+      print("Condition Released by Publisher: {}".f..(name))
       condition.r..
       t___.s..(1)
 
@@ -31,15 +31,15 @@ c_ Subscriber(_.T..):
   ___ run
     w... T..
       condition.a..
-      print("Condition Acquired by Consumer: {}".format(name))
+      print("Condition Acquired by Consumer: {}".f..(name))
       w... T..
         __ integers:
           integer = integers.pop()
-          print("{} Popped from list by Consumer: {}".format(integer, name))
+          print("{} Popped from list by Consumer: {}".f..(integer, name))
           _____
-        print("Condition Wait by {}".format(name))
+        print("Condition Wait by {}".f..(name))
         condition.w..
-      print("Consumer {} Releasing Condition".format(name))
+      print("Consumer {} Releasing Condition".f..(name))
       condition.r..
 
 ___ main

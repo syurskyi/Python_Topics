@@ -17,7 +17,7 @@ OptionalLoop = Optional[_.AbstractEventLoop]  # <2>
         loop = _.get_running_loop()
     ___
         await loop.getaddrinfo(domain, N..)
-    except socket.gaierror:
+    _____ socket.gaierror:
         r_ Result(domain, F..)
     r_ Result(domain, T..)
 

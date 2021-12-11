@@ -9,7 +9,7 @@ MAX_KEYWORD_LEN = 4
 @ ___ probe(domain: s..)  tuple[s.., bool]:  # <1>
     ___
         await socket.getaddrinfo(domain, N..)  # <2>
-    except socket.gaierror:
+    _____ socket.gaierror:
         r_ (domain, F..)
     r_ (domain, T..)
 

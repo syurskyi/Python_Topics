@@ -9,10 +9,10 @@ ___ print_epoch(name_of_thread, delay):
         print(name_of_thread, "----------",t__.t__())
 
 ___ print_Cube(thread,num):
-    print("Cube = {}".format(num*num*num))
+    print("Cube = {}".f..(num*num*num))
 
 ___ print_Square(thread, num):
-    print("Square = {}".format(num*num))
+    print("Square = {}".f..(num*num))
 
 __ _____ __ ______
     #creating an instance of the ? Class

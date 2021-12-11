@@ -34,7 +34,7 @@ ______ functools
         print(status, flush=T.., end='')
         ___
             await _.s..(.1)
-        except _.CancelledError:
+        _____ _.CancelledError:
             ____
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')

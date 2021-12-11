@@ -10,7 +10,7 @@ c_ Crawler(_.T..):
 
   ___  -   baseUrl, linksToCrawl, haveVisited, errorLinks, urlLock):
     _.T... - ;
-    print("Web Crawler Worker Started: {}".format(_.current_thread()))
+    print("Web Crawler Worker Started: {}".f..(_.current_thread()))
     linksToCrawl = linksToCrawl
     haveVisited = haveVisited
     baseUrl = baseUrl
@@ -27,7 +27,7 @@ c_ Crawler(_.T..):
     w... T..
       
       urlLock.a..
-      print("Queue Size: {}".format(linksToCrawl.qsize()))
+      print("Queue Size: {}".f..(linksToCrawl.qsize()))
       link = linksToCrawl.g..
       urlLock.r..
       # have we reached the end of our queue?
@@ -36,7 +36,7 @@ c_ Crawler(_.T..):
 
       # Have we visited this link already?
       __ (link __ haveVisited):
-        print("Already Visited: {}".format(link))
+        print("Already Visited: {}".f..(link))
         _____
       
       ___
@@ -44,7 +44,7 @@ c_ Crawler(_.T..):
         req = Request(link, headers={'User-Agent': 'Mozilla/5.0'})
         response = u..(req, context=myssl)
 
-        print("Url {} Crawled with Status: {}".format(response.geturl(), response.getcode()))
+        print("Url {} Crawled with Status: {}".f..(response.geturl(), response.getcode()))
         
         soup = BeautifulSoup(response.r.. , "html.parser")
         
@@ -52,13 +52,13 @@ c_ Crawler(_.T..):
           __ (atag.get('href') n.. __ haveVisited) a.. (urlparse(link).netloc == 'tutorialedge.net'):
             linksToCrawl.p..(atag.get('href'))
           else :
-            print("{} already visited or not part of website".format(atag.get('href')))
+            print("{} already visited or not part of website".f..(atag.get('href')))
 
-        print("Adding {} to crawled list".format(link))
+        print("Adding {} to crawled list".f..(link))
         haveVisited.a..(link)
         
-      except URLError __ e:
-        print("URL {} threw this error when trying to parse: {}".format(link, e.reason))
+      _____ URLError __ e:
+        print("URL {} threw this error when trying to parse: {}".f..(link, e.reason))
         errorLinks.a..(link)
       ______
         linksToCrawl.task_done()
@@ -85,8 +85,8 @@ ___ main
   ___ crawler __ crawlers:
     crawler.j..()
 
-  print("Total Number of Pages Visited {}".format(l..(haveVisited)))
-  print("Total Number of Pages with Errors {}".format(l..(errorLinks)))
+  print("Total Number of Pages Visited {}".f..(l..(haveVisited)))
+  print("Total Number of Pages with Errors {}".f..(l..(errorLinks)))
 
 
 __ _____ __ _____

@@ -29,7 +29,7 @@ c_ BackgroundJob(QObject):
     ___ start
         ___
             run()
-        except Exception:
+        _____ Exception:
             crashed.emit(traceback.format_exc())
 
     @Slot()

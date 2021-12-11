@@ -2,7 +2,7 @@ ______ _
 
 
 ___ worker(num):
-    print "worker: {}".format(num)
+    print "worker: {}".f..(num)
 
 threads   # list
 

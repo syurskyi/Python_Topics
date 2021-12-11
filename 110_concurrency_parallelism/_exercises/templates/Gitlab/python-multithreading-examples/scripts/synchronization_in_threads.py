@@ -1,29 +1,29 @@
-
-
-______ _
-______ t__ 
-# global variable x
-x = 0
- 
-___ Tfunc(i,lock):
- l__.a..
- print('from thread %d' @i)
- l__.r..
- 
- 
- # creating a lock
-lock = _.?
- 
- # creating threads
-t1 = _.? ?_Tfunc,  ?_(1,lock,))
-t2 = _.? ?_Tfunc,  ?_(2,lock,))
- 
- # start threads
-t1.s..
-t2.s..
- 
- # wait until threads finish their job
-t1.j..
-t__.s..(5)
-t2.j..
-
+#
+#
+# ______ _
+# ______ t__
+# # global variable x
+# x = 0
+#
+# ___ Tfunc i lock
+#  l__.a..
+#  print('from thread @' @ ?
+#  l__.r..
+#
+#
+#  # creating a lock
+# lock  _.?
+#
+#  # creating threads
+# t1  _.? ?_?  ?_ 1 ?
+# t2  _.? ?_?  ?_ 2 ?
+#
+#  # start threads
+# ?.s..
+# ?.s..
+#
+#  # wait until threads finish their job
+# ?.j..
+# t__.s.. 5
+# ?.j..
+#

@@ -4,7 +4,7 @@ ______ t__
 
 ___ worker(barrier):
     print(_.current_thread().name,
-          'waiting for barrier with {} others'.format(
+          'waiting for barrier with {} others'.f..(
               barrier.n_waiting))
     worker_id = barrier.w..
     print(_.current_thread().name, 'after barrier',

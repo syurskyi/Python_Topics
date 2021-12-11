@@ -10,13 +10,13 @@ ____ datadiff ______ diff
 ___ getzip(code):
     ___
         code = s..(code)
-        url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(code)
+        url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".f..(code)
         res = requests.get(url).json()['results']
         __ l..(res) < 1: # Re-try
             print "Retrying"
             r_ getzip(code)
         iszip = 'postal_code' __ res[0]['types'] a.. "United States" __ s..(res[0]['address_components'])
-    except Exception __ e:
+    _____ Exception __ e:
         print "In error"
         print e
         iszip = F..
@@ -49,4 +49,4 @@ __ l..(d.diffs) > 0:
     print d
  
 ___ r __ asyncres:
-    print "Zip code {} is {} US code".format(r[0], "valid" __ r[1] else "invalid")
+    print "Zip code {} is {} US code".f..(r[0], "valid" __ r[1] else "invalid")

@@ -86,13 +86,13 @@ __ ____ __ ______:
     ___
     	print 'Press CTRL+C to quit'
     	running = T..
-        print("a:{} b:{} c:{}".format(a,b,c))
+        print("a:{} b:{} c:{}".f..(a,b,c))
 
     	w___ running:
-                print("a:{} b:{} c:{}".format(a,b,c))
+                print("a:{} b:{} c:{}".f..(a,b,c))
                 s..(0.1)
 
-    except KeyboardInterrupt:
+    _____ KeyboardInterrupt:
         print '\nKeyboard Interrupt Detected! Shutting down program!'
 
         calcA.terminated = T..

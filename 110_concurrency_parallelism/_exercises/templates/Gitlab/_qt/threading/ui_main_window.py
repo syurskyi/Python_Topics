@@ -10,7 +10,7 @@ ____ PyQt4 ______ QtCore, QtGui
 
 ___
     _fromUtf8 = QtCore.QString.fromUtf8
-except AttributeError:
+_____ A..
     ___ _fromUtf8(s):
         r_ s
 
@@ -18,7 +18,7 @@ ___
     _encoding = QtGui.QApplication.UnicodeUTF8
     ___ _translate(context, text, disambig):
         r_ QtGui.QApplication.translate(context, text, disambig, _encoding)
-except AttributeError:
+_____ A..
     ___ _translate(context, text, disambig):
         r_ QtGui.QApplication.translate(context, text, disambig)
 

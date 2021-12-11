@@ -14,7 +14,7 @@ ______ i__
         print ? flush=T.., end='')
         ___
             await _.s..(.1)  # <2>
-        except _.CancelledError:  # <3>
+        _____ _.CancelledError:  # <3>
             ____
     blanks = ' ' * l..(status)
     print(f'\r{blanks}\r', end='')

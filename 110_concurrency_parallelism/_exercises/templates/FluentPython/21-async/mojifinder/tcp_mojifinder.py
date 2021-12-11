@@ -24,7 +24,7 @@ PROMPT = b'?> '
             ____
         ___
             query = data.decode().strip()  # <9>
-        except UnicodeDecodeError:  # <10>
+        _____ UnicodeDecodeError:  # <10>
             query = '\x00'
         print(f' From {client}: {query!r}')  # <11>
         __ query:
@@ -70,7 +70,7 @@ ___ main(host: s.. = '127.0.0.1', port_arg: s.. = '2323'):
     index = InvertedIndex()                         # <7>
     ___
         _.run(supervisor(index, host, port))  # <8>
-    except KeyboardInterrupt:                       # <9>
+    _____ KeyboardInterrupt:                       # <9>
         print('\nServer shut down.')
 
 __ _____ __ ______

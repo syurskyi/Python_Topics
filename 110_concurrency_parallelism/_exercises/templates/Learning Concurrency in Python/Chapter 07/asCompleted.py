@@ -10,13 +10,13 @@ URLS = [
 ]
 
 ___ checkStatus(url):
-  print("Attempting to crawl URL: {}".format(url))
+  print("Attempting to crawl URL: {}".f..(url))
   req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
   response = u..(req)
   r.. response.getcode(), url
 
 ___ printStatus(statusCode):
-  print("URL Crawled with status code: {}".format(statusCode))
+  print("URL Crawled with status code: {}".f..(statusCode))
 
 ___ main
   w__ ThreadPoolExecutor(max_workers=3) __ executor:

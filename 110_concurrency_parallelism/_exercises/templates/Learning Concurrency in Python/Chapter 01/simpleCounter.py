@@ -2,5 +2,5 @@
 # we simply print out the numbers 0-9
 print("Single Threaded Counter")
 ___ i __ r...(10):
-  print("The Current Counter is {}".format(i))
+  print("The Current Counter is {}".f..(i))
   print("-------------------------")

@@ -46,11 +46,11 @@ ____ unicodedata ______ normalize
 
 
 ___ ____ simplejson ______ dumps __ json_dumps, loads __ json_lds
-except ImportError: # pragma: no cover
+_____ ImportError: # pragma: no cover
     ___ ____ json ______ dumps __ json_dumps, loads __ json_lds
-    except ImportError:
+    _____ ImportError:
         ___ ____ django.utils.simplejson ______ dumps __ json_dumps, loads __ json_lds
-        except ImportError:
+        _____ ImportError:
             ___ json_dumps(data):
                 raise ImportError("JSON support requires Python 2.6 or simplejson.")
             json_lds = json_dumps
@@ -72,7 +72,7 @@ ___ _e(): r_ sys.exc_info()[1]
 # and a fallback ___ mod_wsgi (resticts stdout/err attribute access)
 ___
     _stdout, _stderr = sys.stdout.w.., sys.stderr.w..
-except IOError:
+_____ IOError:
     _stdout = lambda x: sys.stdout.w..(x)
     _stderr = lambda x: sys.stderr.w..(x)
 
@@ -140,7 +140,7 @@ __ py31:
 # A bug __ functools causes it to break if the wrapper is an instance method
 ___ update_wrapper(wrapper, wrapped, *a, **ka):
     ___ functools.update_wrapper(wrapper, wrapped, *a, **ka)
-    except AttributeError: pass
+    _____ A.. pass
 
 
 
@@ -359,7 +359,7 @@ c_ Router(object):
         ___
             re_pattern = __.c__('^(@)$' @ pattern)
             re_match = re_pattern.match
-        except __.error:
+        _____ __.error:
             raise RouteSyntaxError("Could not add Route: @ (@)" @ (rule, _e()))
 
         __ filters:
@@ -368,7 +368,7 @@ c_ Router(object):
                 ___ name, wildcard_filter __ filters:
                     ___
                         url_args[name] = wildcard_filter(url_args[name])
-                    except ValueError:
+                    _____ ValueError:
                         raise HTTPError(400, 'Path has wrong format.')
                 r_ url_args
         ___ re_pattern.groupindex:
@@ -411,7 +411,7 @@ c_ Router(object):
             ___ i, value __ enumerate(anons): query['anon%d'@i] = value
             url = ''.join([f(query.pop(n)) __ n else f ___ (n,f) __ builder])
             r_ url __ n.. query else url+'?'+urlencode(query)
-        except KeyError:
+        _____ KeyError:
             raise RouteBuildError('Missing URL argument: %r' @ _e().args[0])
 
     ___ match environ):
@@ -534,7 +534,7 @@ c_ Route(object):
                     callback = plugin.apply(callback, context)
                 ____
                     callback = plugin(callback)
-            except RouteReset: # Try again with changed configuration.
+            _____ RouteReset: # Try again with changed configuration.
                 r_ _make_callback()
             __ n.. callback __ callback:
                 update_wrapper(callback, callback)
@@ -852,7 +852,7 @@ c_ Bottle(object):
         __ py3k:
             ___
                 environ['PATH_INFO'] = path.encode('latin1').decode('utf8')
-            except UnicodeError:
+            _____ UnicodeError:
                 r_ HTTPError(400, 'Invalid path string. Expected UTF-8')
 
         ___
@@ -869,14 +869,14 @@ c_ Bottle(object):
             ______
                 trigger_hook('after_request')
 
-        except HTTPResponse:
+        _____ HTTPResponse:
             r_ _e()
-        except RouteReset:
+        _____ RouteReset:
             route.reset()
             r_ _handle(environ)
-        except (KeyboardInterrupt, SystemExit, MemoryError):
+        _____ (KeyboardInterrupt, SystemExit, MemoryError):
             raise
-        except Exception:
+        _____ Exception:
             __ n.. catchall: raise
             stacktrace = format_exc()
             environ['wsgi.errors'].w..(stacktrace)
@@ -929,13 +929,13 @@ c_ Bottle(object):
             first = next(iout)
             w___ n.. first:
                 first = next(iout)
-        except StopIteration:
+        _____ StopIteration:
             r_ _cast('')
-        except HTTPResponse:
+        _____ HTTPResponse:
             first = _e()
-        except (KeyboardInterrupt, SystemExit, MemoryError):
+        _____ (KeyboardInterrupt, SystemExit, MemoryError):
             raise
-        except Exception:
+        _____ Exception:
             __ n.. catchall: raise
             first = HTTPError(500, 'Unhandled exception', _e(), format_exc())
 
@@ -965,9 +965,9 @@ c_ Bottle(object):
                 out   # list
             start_response(response._status_line, response.headerlist)
             r_ out
-        except (KeyboardInterrupt, SystemExit, MemoryError):
+        _____ (KeyboardInterrupt, SystemExit, MemoryError):
             raise
-        except Exception:
+        _____ Exception:
             __ n.. catchall: raise
             err = '<h1>Critical error while processing request: @</h1>' \
                   @ html_escape(environ.get('PATH_INFO', '/'))
@@ -1150,7 +1150,7 @@ c_ BaseRequest(object):
             size, _, _ = header.partition(sem)
             ___
                 maxread = in.(tonat(size.strip()), 16)
-            except ValueError:
+            _____ ValueError:
                 raise err
             __ maxread == 0: ____
             buff = bs
@@ -1396,7 +1396,7 @@ c_ BaseRequest(object):
         ___
             var = environ['bottle.request.ext.@'@name]
             r_ var.__get__ __ hasattr(var, '__get__') else var
-        except KeyError:
+        _____ KeyError:
             raise AttributeError('Attribute %r not defined.' @ name)
 
     ___ __setattr__ name, value):
@@ -1664,10 +1664,10 @@ c_ BaseResponse(object):
 
 ___ local_property(?_N..):
     __ name: depr('local_property() is deprecated and will be removed.') #0.12
-    ls = _.local()
+    ls = _.l..
     ___ fget
         ___ r_ ls.var
-        except AttributeError:
+        _____ A..
             raise RuntimeError("Request context not initialized.")
     ___ fset value): ls.var = value
     ___ fdel del ls.var
@@ -1746,7 +1746,7 @@ c_ JSONPlugin(object):
         ___ wrapper(*a, **ka):
             ___
                 rv = callback(*a, **ka)
-            except HTTPError:
+            _____ HTTPError:
                 rv = _e()
 
             __ isinstance(rv, dict):
@@ -1870,7 +1870,7 @@ c_ MultiDict(DictMixin):
         ___
             val = dict[key][index]
             r_ type(val) __ type else val
-        except Exception:
+        _____ Exception:
             pass
         r_ default
 
@@ -1928,7 +1928,7 @@ c_ FormsDict(MultiDict):
         ''' Return the value as a unicode string, or the default. '''
         ___
             r_ _fix(self[name], encoding)
-        except (UnicodeError, KeyError):
+        _____ (UnicodeError, KeyError):
             r_ default
 
     ___ __getattr__ name, default=unicode()):
@@ -2552,7 +2552,7 @@ ___ parse_date(ims):
     ___
         ts = email.utils.parsedate_tz(ims)
         r_ t__.mktime(ts[:8] + (0,)) - (ts[9] or 0) - t__.timezone
-    except (TypeError, ValueError, IndexError, OverflowError):
+    _____ (TypeError, ValueError, IndexError, OverflowError):
         r_ N..
 
 ___ parse_auth(header):
@@ -2562,7 +2562,7 @@ ___ parse_auth(header):
         __ method.lower() == 'basic':
             user, pwd = touni(base64.b64decode(tob(data))).split(':',1)
             r_ user, pwd
-    except (KeyError, ValueError):
+    _____ (KeyError, ValueError):
         r_ N..
 
 ___ parse_range_header(header, maxlen=0):
@@ -2580,7 +2580,7 @@ ___ parse_range_header(header, maxlen=0):
                 start, end = in.(start), min(in.(end)+1, maxlen)
             __ 0 <= start < end <= maxlen:
                 yield start, end
-        except ValueError:
+        _____ ValueError:
             pass
 
 ___ _parse_qsl(qs):
@@ -2913,7 +2913,7 @@ c_ GeventServer(ServerAdapter):
     """
     ___ run handler):
         ____ gevent ______ pywsgi, local
-        __ n.. isinstance(_.local(), local.local):
+        __ n.. isinstance(_.l.., local.local):
             msg = "Bottle requires gevent.monkey.patch_all() (before ______)"
             raise RuntimeError(msg)
         __ options.pop('fast', N..):
@@ -2960,7 +2960,7 @@ c_ EventletServer(ServerAdapter):
         ___
             wsgi.server(listen((host, port)), handler,
                         log_output=(n.. quiet))
-        except TypeError:
+        _____ TypeError:
             # Fallback, if we have old version of eventlet
             wsgi.server(listen((host, port)), handler)
 
@@ -2987,7 +2987,7 @@ c_ AutoServer(ServerAdapter):
         ___ sa __ adapters:
             ___
                 r_ sa(host, port, **options).run(handler)
-            except ImportError:
+            _____ ImportError:
                 pass
 
 server_names = {
@@ -3093,7 +3093,7 @@ ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
                 __ p.poll() != 3:
                     __ __.path.exists(lockfile): __.unlink(lockfile)
                     sys.exit(p.poll())
-        except KeyboardInterrupt:
+        _____ KeyboardInterrupt:
             pass
         ______
             __ __.path.exists(lockfile):
@@ -3135,9 +3135,9 @@ ___ run(app=N.., server='wsgiref', host='127.0.0.1', port=8080,
                 sys.exit(3)
         ____
             server.run(app)
-    except KeyboardInterrupt:
+    _____ KeyboardInterrupt:
         pass
-    except (SystemExit, MemoryError):
+    _____ (SystemExit, MemoryError):
         raise
     _______
         __ n.. reloader: raise
@@ -3303,7 +3303,7 @@ c_ MakoTemplate(BaseTemplate):
 c_ CheetahTemplate(BaseTemplate):
     ___ prepare **options):
         ____ Cheetah.Template ______ Template
-        context = _.local()
+        context = _.l..
         context.vars    # dict
         options['searchList'] = [context.vars]
         __ source:
@@ -3371,7 +3371,7 @@ c_ SimpleTemplate(BaseTemplate):
                 source = f.read()
         ___
             source, encoding = touni(source), 'utf8'
-        except UnicodeError:
+        _____ UnicodeError:
             depr('Template encodings other than utf8 are no longer supported.') #0.11
             source, encoding = touni(source, 'latin1'), 'latin1'
         parser = StplParser(source, encoding=encoding, syntax=syntax)
@@ -3733,7 +3733,7 @@ request = LocalRequest()
 response = LocalResponse()
 
 #: A thread-safe namespace. Not used by Bottle.
-local = _.local()
+local = _.l..
 
 # Initialize app stack (create first empty Bottle app)
 # BC: 0.6.4 and needed ___ run()

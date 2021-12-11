@@ -10,7 +10,7 @@ MAX_KEYWORD_LEN = 4  # <1>
     loop = _.get_running_loop()  # <3>
     ___
         await loop.getaddrinfo(domain, N..)  # <4>
-    except socket.gaierror:
+    _____ socket.gaierror:
         r_ (domain, F..)
     r_ (domain, T..)
 
