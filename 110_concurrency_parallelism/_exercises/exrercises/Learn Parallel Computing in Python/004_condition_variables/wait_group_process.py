@@ -3,7 +3,7 @@
 # ______ t___
 #
 #
-# # note this is the equivalent of a waitgroup for a process instead of a thread
+# # note this is the equivalent of a waitgroup ___ a process instead of a thread
 # c_ WaitGroupProcess
 #     ___  -   cv wait_count
 #         ? = ?

@@ -17,7 +17,7 @@
 # blue = T..(t.._ ? a.._ "blue" 10
 # ?.s..
 # ?.s..
-# # time.sleep(8)
+# # t__.s..(8)
 # # print("Aborting barrier")
 # # barrier.abort()
 # # barrier.reset()

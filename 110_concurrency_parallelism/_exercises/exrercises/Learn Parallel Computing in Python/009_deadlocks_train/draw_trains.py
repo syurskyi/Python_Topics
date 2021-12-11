@@ -41,7 +41,7 @@ c_ TrainAnim:
         ___ i __ r...(4):
             __ intersections[i].locked_by < 0:
                 boxes[i].setFill(color_rgb(185, 185, 185))
-            else:
+            ____
                 boxes[i].setFill(colours[intersections[i].locked_by])
 
     ___ draw_crossing  win, box):
