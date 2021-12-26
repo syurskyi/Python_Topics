@@ -10,7 +10,7 @@
 # ______ ran...
 # ______ ti..
 # TAX_RATE _ .08
-# txns _ ra__.r..r.. 100 ___ _ __ ra.. 100000
+# txns _ ra__.r..r.. 100 ___ _ __ r.. 100000
 #
 #
 # ___ get_price txn
@@ -18,7 +18,7 @@
 #
 #
 # ___ get_prices_with_map
-#     r_ l.. ma ?, t..
+#     r_ l.. ma ? t..
 #
 #
 # ___ get_prices_with_comprehension

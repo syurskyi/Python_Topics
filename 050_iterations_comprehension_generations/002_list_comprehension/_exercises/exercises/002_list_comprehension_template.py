@@ -2,51 +2,51 @@
 #
 # L _ 1 2 3 4 5   # List
 #
-# ___ i i_ r... le. L        # how to use range to change a list as we step across it
+# ___ i __ r... le. L        # how to use range to change a list as we step across it
 #     L|i += 10
 #
 # printL
 #
-# L _ x + 10 ___ x i_ L          #list comprehension expression
-# print L
+# L _ x + 10 ___ ? __ L          #list comprehension expression
+# print ?
 #
 #
 # # List Comprehension Basics
 #
 # L _ 1 2 3 4 5
 #
-# L _ x + 10 ___ x i_ L]  #  list comprehension simply looks like a backward for loop.
-# print L
+# L _ x + 10 ___ ? __ L]  #  list comprehension simply looks like a backward for loop.
+# print ?
 #
 #
 # res _
-# ___ x i_ L:
-#     res.ap.. x + 10
+# ___ x __ L
+#     ?.a.. ? + 10
 #
-# print r..
+# print ?
 #
 # # Using List Comprehensions on Files
 #
 # f _ o... script1.py
-# lines _ f.rea...
-# print l..
+# lines _ ?.r...
+# print ?
 #
-# lines _ line.rs.. ___ li.. i_ li..
-# print l...
+# lines _ line.r.. ___ li.. __ li..
+# print ?
 #
 #
-# lines _  l__.rst.. ___ l.. i_ o... script1.py
-# print l..
+# lines _  l__.rst.. ___ l.. __ o... script1.py
+# print ?
 #
-# print l___.up.. ___ l___ i_ o... script1.py
+# print l___.u.. ___ l___ i_ o... script1.py
 #
-# print l___.rst__.upper ___ l___ i_ o... script1.py
+# print l___.rst__.u.. ___ l___ __ o... script1.py
 #
-# print l___.sp.. ___ l___ i_ o... script2.py
+# print l___.sp.. ___ l___ __ o... script2.py
 #
 # print l___.rep..' '; '!') ___ l___ i_ o... script2.py
 #
-# print'sys' i_ l___; l___|0 ___ l___ i_ o... script1.py
+# print'sys' __ l___; l___|0 ___ l___ i_ o... script1.py
 #
 # # Extended List Comprehension Syntax
 #
@@ -55,17 +55,17 @@
 #
 # res _
 # ___ l___ i_ o... script2.py
-#     i_ l___ 0 __ p
-#         res.app... l___.rst...
-# print r..
+#     __ l___ 0 __ p
+#         ?.a... l___.rst...
+# print ?
 #
 #
-# print x + y ___ x i_ abc ___ y i_ lmn
+# print x + y ___ ? __ abc ___ ? __ lmn
 #
 # res _ |
-# ___ x i_ abc
-#     ___ y i_ lmn
-#         r__.app.. x + y
+# ___ x __ abc
+#     ___ y __ lmn
+#         r__.a.. x + y
 # print r..
 #
 # # Why You Will Care List Comprehensions and map
@@ -75,7 +75,7 @@
 #
 # print l___.rst... ___ l___ i_ o... myfile
 #
-# print l.. m.. l_____ l___: l___.rst...; o... myfile
+# print l.. m.. l_____ l___ l___.rst...; o... myfile
 #
 # listoftuple _  'bob', 35, 'mgr'|, |'mel', 40, 'dev'
 #
@@ -87,18 +87,18 @@
 # # Comprehension Syntax Summary
 # # List comprehension: builds list
 #
-# print x * x ___ x i_ r... 10
+# print x * x ___ x __ r... 10
 #
 # # Comprehension Syntax Summary
 # # Generator expression: produces items
 # # Parens are often optional
 #
-# print x * x ___ x i_ r... 10
+# print x * x ___ ? __ r... 10
 #
 # # Comprehension Syntax Summary
 # # Set comprehension, new in 3.0, {x, y} is a set in 3.0 too
 #
-# print x * x ___ x i_ r... 10
+# print x * x ___ ? __ r... 10
 #
 # # And re-working this into a list comprehension:
 # #

@@ -8,11 +8,11 @@
 # # Here, your conditional statement comes just before the closing bracket.
 # # ditionals are important because they allow list comprehensions to filter out unwanted values, which would
 # # normally require a call to filter():
-#
-# sentence _ 'the rocket came back from mars'
-# vowels _ i ___ i __ ? __ ? __ 'aeiou'
-# print v..
-# # ['e', 'o', 'e', 'a', 'e', 'a', 'o', 'a']
+
+sentence = 'the rocket came back from mars'
+vowels = [i for i in sentence if i in 'aeiou']
+print(vowels)
+# ['e', 'o', 'e', 'a', 'e', 'a', 'o', 'a']
 #
 # # In this code block, the conditional statement filters out any characters in sentence that aren’t a vowel.
 # # The conditional can test any valid expression. If you need a more complex filter, then you can even move
@@ -20,14 +20,15 @@
 #
 # sentence _ 'The rocket, who was named Ted, came back \
 # from Mars because he missed his friends.'
-#
-#
-# ___ is_consonant letter
-#     vowels _ 'aeiou'
-#     r_ le__.isa.. an. le___.lo.. no. i. vo..
-#
-#
-# consonants _ i ___ ? __ se.. __ i._c. i
+
+
+def is_consonant(letter):
+    vowels = 'aeiou'
+    return letter.isalpha() and letter.lower() not in vowels
+
+
+consonants = [i for i in sentence if is_consonant(i)]
+print(consonants)
 # # ['T', 'h', 'r', 'c', 'k', 't', 'w', 'h', 'w', 's', 'n', 'm', 'd', \
 # # 'T', 'd', 'c', 'm', 'b', 'c', 'k', 'f', 'r', 'm', 'M', 'r', 's', 'b', \
 # # 'c', 's', 'h', 'm', 's', 's', 'd', 'h', 's', 'f', 'r', 'n', 'd', 's']
@@ -42,9 +43,9 @@
 # # For example, if you have a list of prices, then you may want to replace negative prices with 0 and leave
 # # the positive values unchanged:
 # #
-# original_prices _ 1.25, -9.45, 10.22, 3.78, -5.92, 1.16
-# prices _  i __ ? > 0 e___ 0 ___ ? __ o.._p..
-# print p...
+original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
+prices = [i if i > 0 else 0 for i in original_prices]
+print(prices)
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #
 # # Here, your expression i contains a conditional statement, if i > 0 else 0. This tells Python to output the value
@@ -53,10 +54,10 @@
 #
 #
 # ___ get_price price
-#     r__ p... i_ ? > 0 e___ 0
+#     r__ p... __ ? > 0 ____ 0
 #
 #
-# prices _ ? i ___ ? __ o._p.
+# prices _ ? i ___ ? __ ?
 # print ?
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #

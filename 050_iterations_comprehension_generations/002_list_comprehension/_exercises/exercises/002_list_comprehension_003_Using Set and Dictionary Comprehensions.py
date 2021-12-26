@@ -14,7 +14,7 @@
 # # in quote is i.
 # # Dictionary comprehensions are similar, with the additional requirement of defining a key:
 #
-# squares _ i i * i ___ ? __ ra.. 10
+# squares _ i ? * ? ___ ? __ r.. 10
 # print ?
 # # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
 #
