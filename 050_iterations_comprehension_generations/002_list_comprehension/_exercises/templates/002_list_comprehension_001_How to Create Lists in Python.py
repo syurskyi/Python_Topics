@@ -13,8 +13,8 @@
 # # in three lines of code:
 #
 # squares _    # list
-# ___ i __ ra.. 10
-#     ?.ap.. i * i
+# ___ i __ r.. 10
+#     ?.a.. i * i
 # print ?
 # # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 #
@@ -31,7 +31,7 @@
 #
 #
 # ___ get_price_with_tax txn
-#     r_ t.. *  1 + T..
+#     r_ ? *  1 + T..
 #
 #
 # final_prices _ ma. ? t...
@@ -44,7 +44,7 @@
 # # List comprehensions are a third way of making lists. With this elegant approach, you could rewrite the
 # # for loop from the first example in just a single line of code:
 #
-# squares _ i * i ___ ? __ ra.. 10
+# squares _ i * i ___ ? __ r.. 10
 # print ?
 # # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 #
@@ -66,7 +66,7 @@
 #
 #
 # ___ get_price_with_tax txn
-#     r_ t.. *  1 + T..
+#     r_ ? *  1 + T..
 #
 #
 # final_prices _ ? i ___ ? __ t..

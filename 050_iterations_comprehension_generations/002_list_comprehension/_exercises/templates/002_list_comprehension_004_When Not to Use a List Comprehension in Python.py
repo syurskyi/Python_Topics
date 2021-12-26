@@ -8,7 +8,7 @@
 # # a dictionary comprehension:
 #
 # cities _ 'Austin', 'Tacoma', 'Topeka', 'Sacramento', 'Charlotte'
-# temps _ city |0 ___ _ __ ra.. 7| ___ ? __ ?    # _ the first is original # dict
+# temps _ city |0 ___ _ __ r.. 7| ___ ? __ ?    # _ the first is original # dict
 # print ?
 # # {
 # #     'Austin': [0, 0, 0, 0, 0, 0, 0],
@@ -23,7 +23,7 @@
 # # Nested lists are a common way to create matrices, which are often used for mathematical purposes.
 # # Take a look at the code block below:
 #
-# matrix _ ||i ___ ? __ ra.. 5  ___ _ __ ra.. 6   # _ the first is original # dict
+# matrix _ ||i ___ ? __ r.. 5  ___ _ __ r.. 6   # _ the first is original # dict
 # print m...
 # # [
 # #     [0, 1, 2, 3, 4],
@@ -61,7 +61,7 @@
 # flat _     # List
 # ___ row __ m..
 #     ___ num __ r..
-#         f__.ap.. n..
+#         f__.a.. n..
 #
 # print f..
 # # [0, 0, 0, 1, 1, 1, 2, 2, 2]

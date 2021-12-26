@@ -5,9 +5,9 @@
 #
 # h_letters _
 #
-# ___ letter i_ 'human'
-#     h_l__.ap.. l..
-# print h_l__
+# ___ letter __ 'human'
+#     ?.a.. l..
+# print ?
 #
 # # When we run the program, the output will be:
 # #
@@ -20,7 +20,7 @@
 #
 # # Example 2: Iterating through a string Using List Comprehension
 #
-# h_letters _ letter ___ ? i_ 'human'
+# h_letters _ letter ___ ? __ 'human'
 # print ?
 #
 #
@@ -47,8 +47,8 @@
 #
 # # Example 3: Using Lambda functions inside List
 #
-# letters _ li.. ma. l_____ x x 'human'
-# print l...
+# letters _ li.. ma. l_____ x ? 'human'
+# print ?
 #
 # # When we run the program, the output will be
 # #
@@ -63,7 +63,7 @@
 #
 # # Example 4: Using if with List Comprehension
 #
-# number_list _ x ___ ? i_ ra.. 20 i_ x % 2 _ 0
+# number_list _ x ___ ? __ r.. 20 __ ? % 2 _ 0
 # print ?
 #
 # # When we run the above program, the output will be:
@@ -74,8 +74,8 @@
 #
 # # Example 5: Nested IF with List Comprehension
 #
-# num_list _ y ___ y i_ ra.. 100 i_ y % 2 __ 0 i_ y % 5 __ 0
-# print n.....
+# num_list _ y ___ ? __ r.. 100 __ ? % 2 __ 0 __ ? % 5 __ 0
+# print ?
 #
 # # When we run the above program, the output will be:
 # #
@@ -90,8 +90,8 @@
 #
 # # Example 6: if...else With List Comprehension
 #
-# obj _  "Even" i_ i % 2 ++ 0 e___ "Odd" ___ i i_ ra.. 10
-# print o..
+# obj _  "Even" __ i % 2 __ 0 e___ "Odd" ___ ? __ r.. 10
+# print ?
 #
 # # When we run the above program, the output will be:
 # #
@@ -109,14 +109,14 @@
 # transposed _
 # matrix _ [[1, 2, 3, 4], [4, 5, 6, 8]]
 #
-# ___ i i_ ra.. le. m... 0
+# ___ i __ r.. le. m... 0
 #     transposed_row _       # list
 #
-#     ___ row i_ matrix
-#         t.._r..ap.. ro. i
-#     t___.ap.. t._r..
+#     ___ row __ ?
+#         ?.a.. ro. ?
+#     ?.a.. ?
 #
-# print t...
+# print
 #
 # # Output: [[1, 4], [2, 5], [3, 6]]
 #
@@ -128,8 +128,8 @@
 # # Example 8: Transpose of a Matrix using List Comprehension
 #
 # matrix _ [[1, 2], [3, 4], [5, 6], [7, 8]]
-# transpose _ ro. i ___ ro. i_ m... ___ i i_ ra.. 2
-# print t...
+# transpose _ ro. i ___ ro. __ m... ___ ? __ r.. 2
+# print ?
 #
 # # n above program, we have a variable matrix which have 4 rows and 2 columns.We need to find transpose of the matrix.
 # # For that, we used list comprehension.

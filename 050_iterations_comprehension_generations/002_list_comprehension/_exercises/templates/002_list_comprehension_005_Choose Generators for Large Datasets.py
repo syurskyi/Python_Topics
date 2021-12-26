@@ -3,7 +3,7 @@
 # # even medium-sized lists, this is generally fine. If you want to sum the squares of the first one-thousand integers,
 # # then a list comprehension will solve this problem admirably:
 #
-# su. i * i ___ ? __ ra.. 1000
+# su. i * i ___ ? __ r.. 1000
 # # 332833500
 #
 # # But what if you wanted to sum the squares of the first billion integers? If you tried then on your machine,
@@ -30,7 +30,7 @@
 # # This process keeps the memory footprint small.
 # # map() also operates lazily, meaning memory won’t be an issue if you choose to use it in this case:
 #
-# su. ma. l_____ i i*i, ra.. 1000000000
+# su. m.. l_____ i ?*? r.. 1000000000
 # # 333333332833333333500000000
 #
 # # It’s up to you whether you prefer the generator expression or map().

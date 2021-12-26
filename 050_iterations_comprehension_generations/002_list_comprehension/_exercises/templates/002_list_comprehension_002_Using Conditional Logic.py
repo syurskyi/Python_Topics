@@ -10,7 +10,7 @@
 # # normally require a call to filter():
 #
 # sentence _ 'the rocket came back from mars'
-# vowels _ i ___ i __ ? __ ? __ 'aeiou'
+# vowels _ i ___ ? __ ? __ ? __ 'aeiou'
 # print v..
 # # ['e', 'o', 'e', 'a', 'e', 'a', 'o', 'a']
 #
@@ -24,10 +24,10 @@
 #
 # ___ is_consonant letter
 #     vowels _ 'aeiou'
-#     r_ le__.isa.. an. le___.lo.. no. i. vo..
+#     r_ ?.isa.. an. ?.l.. n.. __ ?
 #
 #
-# consonants _ i ___ ? __ se.. __ i._c. i
+# consonants _ i ___ ? __ se.. __ ?._c. ?
 # # ['T', 'h', 'r', 'c', 'k', 't', 'w', 'h', 'w', 's', 'n', 'm', 'd', \
 # # 'T', 'd', 'c', 'm', 'b', 'c', 'k', 'f', 'r', 'm', 'M', 'r', 's', 'b', \
 # # 'c', 's', 'h', 'm', 's', 's', 'd', 'h', 's', 'f', 'r', 'n', 'd', 's']
@@ -43,8 +43,8 @@
 # # the positive values unchanged:
 # #
 # original_prices _ 1.25, -9.45, 10.22, 3.78, -5.92, 1.16
-# prices _  i __ ? > 0 e___ 0 ___ ? __ o.._p..
-# print p...
+# prices _  i __ ? > 0 ____ 0 ___ ? __ ?
+# print ?
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #
 # # Here, your expression i contains a conditional statement, if i > 0 else 0. This tells Python to output the value
@@ -53,10 +53,10 @@
 #
 #
 # ___ get_price price
-#     r__ p... i_ ? > 0 e___ 0
+#     r__ p... __ ? > 0 ____ 0
 #
 #
-# prices _ ? i ___ ? __ o._p.
+# prices _ ? i ___ ? __ ?
 # print ?
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #
