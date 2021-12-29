@@ -2,19 +2,19 @@ import movie_svc
 import requests.exceptions
 
 
-def main():
+___ main():
     print_header()
     search_event_loop()
 
 
-def print_header():
+___ print_header():
     print('--------------------------------')
     print('        MOVIE SEARCH APP')
     print('--------------------------------')
     print()
 
 
-def search_event_loop():
+___ search_event_loop():
     search  'ONCE_THROUGH_LOOP'
 
     w___ search ! 'x':

@@ -1,0 +1,9 @@
+<p>In this bite we are going to work on coding a function <code>intersection()</code> that searches the common elements across its input. More specifically:</p>
+<p>- Input to the function will be one, two or more objects which can be iterated on (e.g., <code>list</code>, <code>tuple</code>, <code>str</code>)</p>
+<p>- The function's output is a <code>set</code> containing the intersection across input iterables, or an empty <code>set</code> if no common elements are found</p>
+<p>Notes:</p>
+<p>- Filter out inputs which are <code>None</code> or empty</p>
+<p>- If after the filter you end up with just one iterable, the output is a set with the unique elements in that iterable (see last example below)</p>
+<p>Here is how it works in the Python interpreter's Read Execute Print Loop (REPL):</p>
+<pre>&gt;&gt;&gt; from intersection import intersection<br />&gt;&gt;&gt; intersection({1,2,3}, {2,3,4}, {3,4})<br />{3}<br />&gt;&gt;&gt; intersection([1,2,3,"1"], {1,-1}, {})<br />{1}<br />&gt;&gt;&gt; intersection(None, "this is a string")<br />{' ', 'a', 'g', 'h', 'i', 'n', 'r', 's', 't'}</pre>
+<p><strong>Note:</strong> the template provides a hint to use a standard library module that can help you, but it is not mandatory for solving this bite (i.e., there are at least two ways to code <code>intersection()</code>)</p>

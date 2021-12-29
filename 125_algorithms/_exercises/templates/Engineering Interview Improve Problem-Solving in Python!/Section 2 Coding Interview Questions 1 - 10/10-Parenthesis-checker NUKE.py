@@ -3,7 +3,7 @@
 # (() => False
 # )( => False
 
-def check(s):
+___ check(s):
     left  0
     for c in s:
         __ c __ '(':

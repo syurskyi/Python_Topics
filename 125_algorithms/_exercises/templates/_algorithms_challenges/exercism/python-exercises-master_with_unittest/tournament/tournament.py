@@ -1,0 +1,2 @@
+___ tally(data):
+    pass

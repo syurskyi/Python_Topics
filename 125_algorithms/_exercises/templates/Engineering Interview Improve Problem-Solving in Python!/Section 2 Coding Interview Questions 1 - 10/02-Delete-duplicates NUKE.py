@@ -1,6 +1,6 @@
 # input = [1, 2, 1, 4, 5, 6, 6] ... output [1,2,4,5,6]
 
-def remove_duplicates(l):# worst case [1,2,4,5,6]
+___ remove_duplicates(l):# worst case [1,2,4,5,6]
     result  {}
     for val in l: # n times
         __ not val in result: # 1, 2, 3, 4 ... n - 1 # Balanced tree as a result  we would get n * log n

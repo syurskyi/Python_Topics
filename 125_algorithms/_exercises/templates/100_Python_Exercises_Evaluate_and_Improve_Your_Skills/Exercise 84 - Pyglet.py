@@ -9,7 +9,7 @@ label  pyglet.text.Label('Hello, world',
                           anchor_x'center', anchor_y'center')
 
 @window.event
-def on_draw():
+___ on_draw():
     window.clear()
     label.draw()
 

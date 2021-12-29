@@ -5,7 +5,7 @@ from true_or_false.question import Question
 
 class Game:
 
-    def __parse_line(self, line):
+    ___ __parse_line(self, line):
         parts  line.split(';')
         text  parts[0]
         is_correct  parts[1] __ "Yes"
@@ -13,13 +13,13 @@ class Game:
 
         return Question(text, is_correct, explanation)
 
-    def __fill_in_questions(self, file_path, questions: []):
+    ___ __fill_in_questions(self, file_path, questions: []):
         with open(file_path, encoding'UTF8') as file:
             for line in file:
                 q  self.__parse_line(line)
                 questions.append(q)
 
-    def __init__(self, file_path, allowed_mistakes, end_of_game_callback):
+    ___ __init__(self, file_path, allowed_mistakes, end_of_game_callback):
         self.__file_path  file_path
         self.__allowed_mistakes  allowed_mistakes
         self.__end_of_game  end_of_game_callback
@@ -30,14 +30,14 @@ class Game:
 
         self.__fill_in_questions(file_path, self.__questions)
 
-    def get_next_question(self):
+    ___ get_next_question(self):
         return self.__questions[self.__counter]
 
-    def give_answer(self, answer):
-        def is_last_question():
+    ___ give_answer(self, answer):
+        ___ is_last_question():
             return self.__counter __ len(self.__questions) - 1
 
-        def exceeded_allowed_mistakes():
+        ___ exceeded_allowed_mistakes():
             return self.__mistakes > self.__allowed_mistakes
 
         __ self.__questions[self.__counter].is_true ! answer:
@@ -52,5 +52,5 @@ class Game:
         self.__counter + 1
 
     @property
-    def game_status(self):
+    ___ game_status(self):
         return self.__game_status

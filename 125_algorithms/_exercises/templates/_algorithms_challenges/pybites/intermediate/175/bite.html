@@ -1,0 +1,12 @@
+<p>Complete <code>get_misssing_dates</code> that takes an (unordered) sequence of <code>datetime.date</code> objects. It should determine what the start and end date of this sequence is and return the missing dates.</p><p>Here is an example (horizontal scroll code below):<pre>
+>>> from datetime import date
+>>> from missing_dates import get_misssing_dates
+>>> date_range = [date(year=2019, month=2, day=n) for n in range(1, 11, 2)]
+>>> date_range
+[datetime.date(2019, 2, 1), datetime.date(2019, 2, 3), datetime.date(2019, 2, 5), datetime.date(2019, 2, 7), datetime.date(2019, 2, 9)]
+
+# our function returns the missing dates
+# = the ones that were not generated in the preceding code
+>>> sorted(get_misssing_dates(date_range))
+[datetime.date(2019, 2, 2), datetime.date(2019, 2, 4), datetime.date(2019, 2, 6), datetime.date(2019, 2, 8)]
+</pre></p><p>Some modules make this fairly easy (hint hint).</p><p>Thanks <a href="https://twitter.com/shravankumar147" target="_blank">@shravankumar147</a> for sharing <a href="https://twitter.com/shravankumar147/status/1097119970482372611" target="_blank">this idea on Twitter</a> last week :)</p><p>Good luck and keep calm and code in Python!</p>

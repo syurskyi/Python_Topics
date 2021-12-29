@@ -1,6 +1,6 @@
 from random import randint
 
-def num_search(first,last):
+___ num_search(first,last):
     mid  len(first) //2
     mini  0
     maxi  len(first) - 1

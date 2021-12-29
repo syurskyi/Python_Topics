@@ -2,7 +2,7 @@ from hangman.game import Game
 from hangman.game_status import GameStatus
 
 
-def chars_list_to_str(chars):
+___ chars_list_to_str(chars):
     return ''.join(chars)
 
 

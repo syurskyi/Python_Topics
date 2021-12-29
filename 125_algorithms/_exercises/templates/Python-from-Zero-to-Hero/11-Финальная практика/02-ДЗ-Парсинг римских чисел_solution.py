@@ -5,7 +5,7 @@
 
 
 romans  dict(I1, V5, X10, L50, C100, D500, M1000)
-def parse_roman(arabic):
+___ parse_roman(arabic):
     result  0
     for i, c in enumerate(arabic):
         __ i+1<len(arabic) and romans[arabic[i]] < romans[arabic[i+1]]:

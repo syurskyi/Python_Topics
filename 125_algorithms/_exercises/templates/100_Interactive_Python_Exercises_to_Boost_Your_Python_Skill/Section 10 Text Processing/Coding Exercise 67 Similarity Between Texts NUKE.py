@@ -1,4 +1,4 @@
 import difflib
 
-def foo(string1, string2):
+___ foo(string1, string2):
     return difflib.SequenceMatcher(N..,string1, string2).ratio()

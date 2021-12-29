@@ -1,4 +1,4 @@
-def avg_list(first):
+___ avg_list(first):
     last  len(first)
     sum  0
     for i in first:

@@ -1,0 +1,14 @@
+<p>Many gourmets struggle to find the perfect pairing of wines and cheeses. A number of considerations are relevant, each of which creates a unique combination. Finding the perfect match is a life long pursuit.</p> <p>For the purposes of this bite, you will pair cheese and wines by the similarities of their names. We've helpfully provided a  name similarity function, defined as:</p> 
+<pre><code>             sum of values of intersection of char counters of names
+similarity = ―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+                   1 + square of length difference of both words
+</code></pre> <p>Upper and lower case letters are ignored in the summing process.</p> <p>Space " ", dash "-", and apostrophe "'" are considered valid characters.</p> <h5 id="examples">Examples:</h5> <h6 id="example1">Example 1</h6> <pre>'house' 'mouse'            -&gt; {'e': 1, 'o': 1, 's': 1, 'u': 1}  -&gt; 4 / (1 + pow(5 - 5),2)) = 4
+'parapraxis' 'explanation' -&gt; {'a': 2, 'i': 1, 'p': 1, 'x': 1}  -&gt; 5 / (1 + pow(10 - 11),2) = 2.5
+'parapraxis' 'parallax'    -&gt; {'a': 3, 'p': 1, 'r': 1, 'x': 1}  -&gt; 6 / (1 + (10 - 8)**2 ) = 1.2
+'roosters-do-sound' 'cocka-doodle-doo' -&gt; {'-': 2, 'd': 2, 'e': 1, 'o': 4} -&gt; 9 / (1 + pow(17-16),2) = 4.5
+'Cabernet sauvignon' 'Dorset Blue Vinney' -&gt;  
+                              {'e': 2, 'n': 2, 'o': 1, 'r': 1, 's': 1, 't': 1, ' ': 1, 'b': 1, 'u': 1, 'v': 1, 'i': 1} -&gt; 13 / (1 + pow(18 - 18),2) = 13
+</pre> <p>Three wine lists are provided; red, white, sparkling.</p> <p>Pair the wine with the forty-three cheeses mentioned in the Monty Python's Flying Circus sketch "<a href="http://montypython.wikia.com/wiki/Cheese_Shop_sketch">Cheese Shop</a>".</p> <hr /> <h3 id="tasks">Tasks</h3> <ol> <li><p>Complete the function <code>best_match_per_wine()</code> which returns the best scored wine-cheese pair.  Matching can be for a certain wine type (i.e. red, white, sparkling) or for all types. Raise ValueError for wines that do not appear in the lists of known wines.<p></p></li> <li><p>Complete the function <code>match_wine_5cheeses()</code> which returns a sorted list of wines, where for each wine are listed 5 best matching cheeses.</p></li> </ol> <p>All types of wines (red, white, and sparkling) are included.</p> <p>Lists of cheeses are sorted by descending similarity score and then ascending alphabetical order.</p> <p>Output example:</p> <pre>[('Barbera', ['Cheddar', 'Gruyère', 'Boursin', 'Parmesan', 'Liptauer']),
+..
+('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])]
+</pre></p>

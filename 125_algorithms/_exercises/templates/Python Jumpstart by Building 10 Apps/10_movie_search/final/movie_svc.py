@@ -6,7 +6,7 @@ MovieResult  collections.namedtuple(
     "imdb_code,title,duration,director,year,rating,imdb_score,keywords,genres")
 
 
-def find_movies(search_text):
+___ find_movies(search_text):
 
     __ not search_text or not search_text.strip():
         raise ValueError("Search text is required")

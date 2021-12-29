@@ -1,0 +1,2 @@
+___ solve(string):
+    pass

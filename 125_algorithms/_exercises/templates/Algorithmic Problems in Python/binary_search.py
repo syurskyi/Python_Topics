@@ -1,6 +1,6 @@
 
 #we can achieve O(logN) but the array must be sorted
-def binary_search(array,item,left,right):
+___ binary_search(array,item,left,right):
 
 	#base case for recursive function calls
 	#this is the search miss (array does not contain the item)

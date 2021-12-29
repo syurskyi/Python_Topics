@@ -3,7 +3,7 @@
 # 5 * 4 * 3 * 2 * 1
 
 
-def factorial(n):
+___ factorial(n):
     __ n __ 1:
         return 1
 
@@ -20,7 +20,7 @@ print("5!={:,}, 3!={:,}, 11!={:,}".format(
 # Fibonacci numbers:
 # 1, 1, 2, 3, 5, 8, 13, 21, ...
 
-def fibonacci(limit):
+___ fibonacci(limit):
     nums  []
 
     current  0
@@ -40,7 +40,7 @@ for n in fibonacci(100):
 print()
 
 
-def fibonacci_co():
+___ fibonacci_co():
     current  0
     next  1
 

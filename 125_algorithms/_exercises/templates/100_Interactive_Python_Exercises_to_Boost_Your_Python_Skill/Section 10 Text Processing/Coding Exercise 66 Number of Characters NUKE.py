@@ -7,5 +7,5 @@ mystring  "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pe
            "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. " \
            "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus."
 
-def foo(mystring):
+___ foo(mystring):
     return len(mystring.replace(".", ""))

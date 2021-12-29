@@ -5,7 +5,7 @@ SearchResult  collections.namedtuple('SearchResult',
                                       'file, line, text')
 
 
-def main():
+___ main():
     print_header()
     folder  get_folder_from_user()
     __ not folder:
@@ -31,13 +31,13 @@ def main():
     print("Found {:,} matches.".format(match_count))
 
 
-def print_header():
+___ print_header():
     print('-------------------------------------')
     print('           FILE SEARCH APP')
     print('-------------------------------------')
 
 
-def get_folder_from_user():
+___ get_folder_from_user():
     folder  input('What folder do you want to search? ')
     __ not folder or not folder.strip():
         return N..
@@ -48,12 +48,12 @@ def get_folder_from_user():
     return os.path.abspath(folder)
 
 
-def get_search_text_from_user():
+___ get_search_text_from_user():
     text  input('What are you searching for [single phrases only]? ')
     return text.l..
 
 
-def search_folders(folder, text):
+___ search_folders(folder, text):
     # all_matches = []
     items  os.listdir(folder)
 
@@ -76,7 +76,7 @@ def search_folders(folder, text):
     # return all_matches
 
 
-def search_file(filename, search_text):
+___ search_file(filename, search_text):
 
     # NOTE: We haven't discussed error handling yet, but we
     # cover it shortly. However, some folks have been running

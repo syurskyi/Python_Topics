@@ -4,12 +4,12 @@ import random
 from actors import Wizard, Creature, SmallAnimal, Dragon
 
 
-def main():
+___ main():
     print_header()
     game_loop()
 
 
-def print_header():
+___ print_header():
     # Yes, I added this after I recorded the video
     # but I thought you'd get a kick out if it. ;)
     print()
@@ -34,7 +34,7 @@ def print_header():
     print()
 
 
-def game_loop():
+___ game_loop():
     creatures  [
         SmallAnimal('Toad', 1),
         Creature('Tiger', 12),

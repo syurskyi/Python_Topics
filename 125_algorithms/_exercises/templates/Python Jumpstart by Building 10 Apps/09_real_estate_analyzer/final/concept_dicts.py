@@ -5,7 +5,7 @@ lookup  dict(age42, loc'Italy')
 
 
 class Wizard:
-    def __init__(self, name, level):
+    ___ __init__(self, name, level):
         self.level  level
         self.name  name
 
@@ -41,7 +41,7 @@ print(lookup['user4@talkpython.fm'])
 
 
 # LAMBDAS
-def find_significant_numbers(nums, predicate):
+___ find_significant_numbers(nums, predicate):
     for n in nums:
         __ predicate(n):
             yield n

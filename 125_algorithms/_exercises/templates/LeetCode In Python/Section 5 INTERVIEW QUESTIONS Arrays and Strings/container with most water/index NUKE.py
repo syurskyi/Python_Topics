@@ -1,5 +1,5 @@
 class Solution:
-    def maxArea(self, height: List[i..]) -> i..:
+    ___ maxArea(self, height: List[i..]) -> i..:
 		maxarea  0
 		l  0
 		r  len(height)-1

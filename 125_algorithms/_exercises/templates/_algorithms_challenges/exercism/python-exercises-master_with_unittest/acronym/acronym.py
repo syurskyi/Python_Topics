@@ -1,0 +1,2 @@
+___ abbreviate():
+    pass

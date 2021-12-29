@@ -6,7 +6,7 @@ from hangman.invalid_operation_exception import InvalidOperationException
 
 class Game:
 
-    def __init__(self, allowed_misses: i..  6):
+    ___ __init__(self, allowed_misses: i..  6):
 
         __ allowed_misses < 5 or allowed_misses > 8:
             raise ValueError("Number of allowed misses should be between 5 and 8")
@@ -18,7 +18,7 @@ class Game:
         self.__game_status  GameStatus.NOT_STARTED
         self.__word  ""
 
-    def generate_word(self):
+    ___ generate_word(self):
         filename  "data\\WordsStockRus.txt"
 
         words  []
@@ -35,7 +35,7 @@ class Game:
 
         return self.word
 
-    def guess_letter(self, letter: str):
+    ___ guess_letter(self, letter: str):
         """
 
         :type letter: str
@@ -72,30 +72,30 @@ class Game:
         return result
 
     @property
-    def game_status(self):
+    ___ game_status(self):
         return self.__game_status
 
     @property
-    def word(self):
+    ___ word(self):
         return self.__word
 
     @property
-    def allowed_misses(self):
+    ___ allowed_misses(self):
         return self.__allowed_misses
 
     @property
-    def tries_counter(self):
+    ___ tries_counter(self):
         return self.__tries_counter
 
     @property
-    def tried_letters(self):
+    ___ tried_letters(self):
         return sorted(self.__tried_letters)
 
     @property
-    def remaining_tries(self):
+    ___ remaining_tries(self):
         return self.allowed_misses - self.tries_counter
 
-    def __is_winning(self):
+    ___ __is_winning(self):
         for cur in self.__open_indexes:
             __ not cur:
                 return F..

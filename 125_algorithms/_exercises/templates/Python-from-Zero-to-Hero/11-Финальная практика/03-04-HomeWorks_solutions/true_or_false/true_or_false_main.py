@@ -3,7 +3,7 @@ from true_or_false.game_result import GameResult
 from true_or_false.game_status import GameStatus
 
 
-def end_of_game_handler(result: GameResult):
+___ end_of_game_handler(result: GameResult):
     print(f"Questions asked:{result.questions_passed}. Mistakes made:{result.mistakes_made}.")
     print("You won!" __ result.won else "You lost!")
 

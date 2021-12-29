@@ -1,4 +1,4 @@
-def maxSum(arr, windowSize):
+___ maxSum(arr, windowSize):
     arraySize  len(arr)
     # n must be greater than k
     __ arraySize < windowSize:

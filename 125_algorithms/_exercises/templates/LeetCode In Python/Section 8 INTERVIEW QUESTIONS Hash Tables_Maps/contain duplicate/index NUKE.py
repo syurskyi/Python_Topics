@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 class Solution:
-    def containsDuplicate(self, nums: List[i..]) -> bool:
+    ___ containsDuplicate(self, nums: List[i..]) -> bool:
         m  defaultdict(i..)
 
         for num in nums:

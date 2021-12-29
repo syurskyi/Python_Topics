@@ -1,4 +1,4 @@
-def avg(num1,num2):
+___ avg(num1,num2):
     x  (num1+num2)/2
     return x
 

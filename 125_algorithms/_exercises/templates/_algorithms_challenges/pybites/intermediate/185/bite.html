@@ -1,0 +1,10 @@
+<p>In this Bite you will write a simple spelling corrector. Complete <code>suggest_word</code> that receives a misspelled word argument and returns the best matching alternative word based on similarity ratio.</p><p>We recommend using <code>difflib.SequenceMatcher</code> in combination with the provided word dictionary (loaded into <code>words</code> in the function).</p><p>Here are some example fixes for some <a href="https://www.learnenglish.de/spelling/commonspellingmistakes.html" target="_blank">common spelling mistakes</a>:<pre>
+>>> from spelling import suggest_word
+>>> for misspelled_word in 'prfomnc abberration acommodation definately'.split():
+...     print(misspelled_word, ' -> ', suggest_word(misspelled_word))
+...
+prfomnc  ->  'performance'
+abberration  ->  'aberration'
+acommodation  ->  'accommodation'
+definately  ->  'definitely'
+</pre></p><p>Pretty cool, no? Have fun, and keep calm and code in Python!</p>

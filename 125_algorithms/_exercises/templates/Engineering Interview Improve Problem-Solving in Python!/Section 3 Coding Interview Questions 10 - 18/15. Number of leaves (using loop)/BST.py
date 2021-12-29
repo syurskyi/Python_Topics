@@ -2,15 +2,15 @@ class Node:
     val  0
     left  0
     right  0
-    def __init__(self, val):
+    ___ __init__(self, val):
         self.val  val
 
 class BST:
     
-    def __init__(self, val):
+    ___ __init__(self, val):
         self.root  Node(val)
 
-    def insert(self, val, node):
+    ___ insert(self, val, node):
         __ node.val < val:
             __ node.right:
                 #go right
@@ -26,7 +26,7 @@ class BST:
         else:
             print(val, " Already in tree")
 
-    def number_of_leaves(self, node):
+    ___ number_of_leaves(self, node):
         __ node.left and node.right:
             return self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
         elif node.left:
@@ -37,7 +37,7 @@ class BST:
             #leave
             return 1
     
-    def number_of_leaves_i(self):
+    ___ number_of_leaves_i(self):
         leaves  0
         nodes  [self.root]
         w___ nodes:
@@ -51,7 +51,7 @@ class BST:
             del nodes[0]
         return leaves
 
-    def height(self, node):
+    ___ height(self, node):
         __ node.left and node.right:
             print(node.val, " Height of left ", self.height(node.left)," Hegiht of right ", self.height(node.right))
             return 1 + max(self.height(node.left), self.height(node.right))
@@ -65,7 +65,7 @@ class BST:
             #print(node.val)
             return 1
 
-    def is_identical(self, second_root):
+    ___ is_identical(self, second_root):
         nodes1  [self.root]
         nodes2  [second_root]
         w___ nodes1 and nodes2:

@@ -1,9 +1,9 @@
 class company:
-    def __init__(self, employee_firstname, employee_surname):
+    ___ __init__(self, employee_firstname, employee_surname):
         self.firstname  employee_firstname
         self.surname  employee_surname
 
-    def employee(self):
+    ___ employee(self):
         return self.firstname + ' ' + self.surname
 
 staff  []

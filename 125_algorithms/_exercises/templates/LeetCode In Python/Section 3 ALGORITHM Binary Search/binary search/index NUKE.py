@@ -2,7 +2,7 @@
 import math
 
 
-def binarySearch(arr, target):
+___ binarySearch(arr, target):
     left  0
     right  len(arr)-1
     w___ left < right:

@@ -1,0 +1,20 @@
+<p>We are stoked and grateful to have <a href="https://twitter.com/clamytoe" target="_blank">Martin</a> have you practice <a href="" target="_blank">functools.singledispatch</a> (new in Python 3.4).</p><p><a href="https://www.python.org/dev/peps/pep-0443/" target="_blank">PEP 443</a> defines generic programming / a single-dispatch generic function as:<p><blockquote>A generic function is composed of multiple functions implementing the same operation for different types. Which implementation should be used during a call is determined by the dispatch algorithm. When the implementation is chosen based on the type of a single argument, this is known as single dispatch.</blockquote></p><p>Let's write one ... Martin:</p><p>Your challenge today is to have <code>count_down</code> print any given input in the following manner:</p><pre>
+1234
+123
+12
+1
+</pre><p>Your solution should be able to handle any of these data types and still get the same results:</p><pre>
+  [int]: 1234
+  [str]: '1234'
+ [list]: [1, 2, 3, 4] or ['1', '2', '3', '4']
+[tuple]: (1, 2, 3, 4) or ('1', '2', '3', '4')
+  [set]: {1, 2, 3, 4} or set([1, 2, 3, 4])
+ [dict]: {1: 'one', 2: 'two', 3:'three', 4:'four'} or
+         {'1': 'one', '2': 'two', '3':'three', '4':'four'}
+</pre><p>Don't forget to support a float! Example for 12.34 it should work as:</p><pre>
+12.34
+12.3
+12.
+12
+1
+</pre><p>If a data type is not supported (<code>datetime</code>, <code>itertools.compress</code> or <code>re.compile</code> for example), it should raise a <code>ValueError</code>.</p><p>Good luck, and have fun!</p>

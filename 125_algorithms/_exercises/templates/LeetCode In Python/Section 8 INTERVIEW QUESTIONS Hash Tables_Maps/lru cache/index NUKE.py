@@ -3,12 +3,12 @@ from collections import deque
 
 class LRUCache:
 
-    def __init__(self, capacity: i..):
+    ___ __init__(self, capacity: i..):
         self.c  capacity
         self.m  dict()
         self.deq  deque()
 
-    def get(self, key: i..) -> i..:
+    ___ get(self, key: i..) -> i..:
         __ key in self.m:
             value  self.m[key]
             self.deq.remove(key)
@@ -17,7 +17,7 @@ class LRUCache:
         else:
             return -1
 
-    def put(self, key: i.., value: i..) -> N..:
+    ___ put(self, key: i.., value: i..) -> N..:
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)

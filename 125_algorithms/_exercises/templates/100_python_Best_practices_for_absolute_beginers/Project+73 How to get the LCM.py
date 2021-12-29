@@ -1,4 +1,4 @@
-def LCM(x,y):
+___ LCM(x,y):
     z  x*y
     w___ x ! 0 and y ! 0:
         __ x > y:

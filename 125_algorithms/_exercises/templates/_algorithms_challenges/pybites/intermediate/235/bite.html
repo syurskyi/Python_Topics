@@ -1,0 +1,29 @@
+<p>In this Bite you will parse a <code>pytest</code> output summary, calculating the Bite that has the fastest average tests.</p>
+<p>Log snippet (<a href="https://bites-data.s3.us-east-2.amazonaws.com/pytest_timings.out" target="_blank" rel="noopener">full log</a>):</p>
+<pre>01 =========================== 2 passed in 0.06 seconds ===========================
+02 =========================== 6 passed in 0.04 seconds ===========================
+03 =========================== 4 passed in 0.74 seconds ===========================
+04 =========================== 2 passed in 0.96 seconds ===========================
+...
+</pre>
+<p>You need to parse out the first number, which is the Bite, the number tests executed (<strong>only</strong> look at <em>passing</em> tests!), and the seconds it took. Return the Bite number that had the fastest average runtime per test.</p>
+<p>For example:</p>
+<pre>&gt;&gt;&gt; lines
+['01 =========================== 2 passed in 0.06 seconds ===========================',
+ '02 =========================== 6 passed in 0.04 seconds ===========================',
+ '03 =========================== 4 passed in 0.74 seconds ===========================',
+ '04 =========================== 2 passed in 0.96 seconds ===========================']
+&gt;&gt;&gt; get_bite_with_fastest_avg_test(lines)
+'02'
+</pre>
+<p>Which is a clear winner if you do the math:</p>
+<pre>&gt;&gt;&gt; 0.06/2  # bite 01
+0.03
+&gt;&gt;&gt; 0.04/6  # bite 02
+0.006666666666666667  &lt;== Bite with fastest average
+&gt;&gt;&gt; 0.74/4  # bite 03
+0.185
+&gt;&gt;&gt; 0.96/2  # bite 04
+0.48
+</pre>
+<p>So a bit of text parsing, calculation and sorting in this Bite. Have fun and keep calm and code in Python!</p>

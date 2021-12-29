@@ -1,6 +1,6 @@
 from random import randint
 
-def list_fill(first, qyt, mini, maxi):
+___ list_fill(first, qyt, mini, maxi):
     for i in range(qyt):
         first.append(randint(mini,maxi))
 

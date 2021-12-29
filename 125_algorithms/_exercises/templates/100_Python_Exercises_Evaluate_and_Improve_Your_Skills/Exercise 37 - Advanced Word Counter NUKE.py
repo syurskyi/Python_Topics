@@ -1,5 +1,5 @@
 #Create a function like in the previous exercise, but taking into consideration that commas without space can separate words.
-def count_words(filepath):
+___ count_words(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
         string  string.replace(",", " ")
@@ -11,7 +11,7 @@ print(count_words("words2.txt"))
 #Other solution using regular expressions
 import re
 
-def count_words_re(filepath):
+___ count_words_re(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
         string_list  re.split(",| ", string)

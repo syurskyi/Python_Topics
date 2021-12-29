@@ -1,6 +1,6 @@
 #Like the previous exercise, but considering user may enter different letter cases
 d  dict(weather  "clima", earth  "terra", rain  "chuva")
-def vocabulary(word):
+___ vocabulary(word):
     try:
         return d[word]
     except KeyError:

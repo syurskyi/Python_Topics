@@ -4,7 +4,7 @@
 # Solution:
 
 class Solution:
-    def Fizzbuzz(x,z):
+    ___ Fizzbuzz(x,z):
         for i in range(x,z):
             __ i % 3 __ 0 and i % 5 __ 0:
                 print ("FizzBuzz")

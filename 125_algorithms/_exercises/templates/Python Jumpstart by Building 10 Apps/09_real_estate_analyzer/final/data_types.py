@@ -1,5 +1,5 @@
 class Purchase:
-    def __init__(
+    ___ __init__(
             self, city, zipcode, state, beds,
             baths, sq__ft, home_type, sale_date, price,
             latitude, longitude):
@@ -16,7 +16,7 @@ class Purchase:
         self.city  city
 
     @staticmethod
-    def create_from_dict(lookup):
+    ___ create_from_dict(lookup):
         return Purchase(
             lookup['city'],
             lookup['zip'],

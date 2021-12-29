@@ -1,4 +1,4 @@
-def foo(number):
+___ foo(number):
     return dict(sign  "positive" __ number > 0 else
         ("negative" __ number < 0 else "zero"),
         parity  "odd" __ number % 2 __ 1 else

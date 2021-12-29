@@ -1,14 +1,14 @@
 import datetime
 
 
-def print_header():
+___ print_header():
     print('---------------------------')
     print('      BIRTHDAY APP')
     print('---------------------------')
     print()
 
 
-def get_birthday_from_user():
+___ get_birthday_from_user():
     print("When were you born? ")
     year  i..(input("Year [YYYY]: "))
     month  i..(input("Month [MM]: "))
@@ -18,14 +18,14 @@ def get_birthday_from_user():
     return birthday
 
 
-def compute_days_between_dates(original_date, target_date):
+___ compute_days_between_dates(original_date, target_date):
     this_year  datetime.date(target_date.year, original_date.month, original_date.day)
 
     dt  this_year - target_date
     return dt.days
 
 
-def print_birthday_information(days):
+___ print_birthday_information(days):
     __ days < 0:
         print("You had your birthday {} days ago this year.".format(-days))
     elif days > 0:
@@ -34,7 +34,7 @@ def print_birthday_information(days):
         print("Happy birthday!!!")
 
 
-def main():
+___ main():
     print_header()
     bday  get_birthday_from_user()
     today  datetime.date.today()

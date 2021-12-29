@@ -1,0 +1,31 @@
+<p>In this Bite you have to complete <code>generate_improved_xmas_tree</code> that takes a <code>rows</code> arg (= number of rows with leafs). For each row you add a star, leafs and a trunk and center them nicely. This bite is an extension to <a href="https://codechalleng.es/bites/119/">Bite 119</a> with additional elements and some twists.</p>
+
+<p>Elements of the tree:</p>
+
+<ul>
+  <li><code>STAR</code>: Every tree has <strong>exactly one</strong> star at the top row.</li> 
+  <li><code>LEAF</code>: Every tree has <code>row_number * 2 - 1</code> leafs per row.</li>
+  <li><code>TRUNK</code>: Every tree has a trunk with a <strong>height</strong> of 2 and a <strong>width</strong> which is half of the largest leaf row.</li>
+</ul>
+
+<p>However, the trunk should always be <em>nicely</em> centered by having the same number of empty spaces on both sides of the trunk. Therefore, you have to consider the width of the leaf rows and do some conditional rounding :)</p>
+
+<p>The tree with default args should look like this: <pre>
+         +
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+    |||||||||||
+    |||||||||||
+</pre></p>
+
+<p>Return the finished tree as a multi-line string (use newlines <code>\n</code> between the lines).</p>
+
+<p>Good luck and keep calm and merry Python Xmas!</p>

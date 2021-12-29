@@ -2,7 +2,7 @@
 #
 # This is marked as RESPECTABLE difficulty
 
-def solution(N, A):
+___ solution(N, A):
     counters  [0] * N
     start_line  0
     current_max  0

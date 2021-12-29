@@ -1,4 +1,4 @@
-def ring_shift(first,next):
+___ ring_shift(first,next):
     __ next < 0:
         next  abs(next)
         for i in range(next):

@@ -1,6 +1,6 @@
 # "asddas22asda3fdf4aaaaa444" => 22  3 + 4 = 29
 
-def count_number(s):
+___ count_number(s):
     temp  0
     total  0
     for c in s:

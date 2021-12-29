@@ -1,4 +1,4 @@
-def factorial(x):
+___ factorial(x):
     __ x __ 1:
         return x
     return x * factorial(x-1)

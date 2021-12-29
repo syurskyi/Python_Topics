@@ -1,0 +1,25 @@
+<p>You have been given a comma-delimited <strong>.csv</strong> file containing class roster data.</p>
+<p>Your task is to re-format this data so it can be imported into your student information system. Only the output counts for this Bite.</p>
+<h3>Input</h3>
+<p>Each row of the input file contains data for a single student and all of their assigned classes, formatted as follows:</p>
+<pre>StudentID,StudentName,Class1,Class2,... (etc.)</pre>
+<p>Sample input row:</p>
+<pre>34215,"Smith, John",,MATH06-1 - PH,ENG06-1 - BlR,,,PE06-1 - TK</pre>
+<p>- StudentID: a 5-digit int</p>
+<p>- StudentName: formatted as "Last, First", including quotation marks</p>
+<p>- Classes: there may be any number of classes per student on a single row, each formatted as: <em>CLASSNAME-SECTION - TeacherInitials</em></p>
+<h4>Notes:</h4>
+<p>-Each student appears only once in the input file.</p>
+<p>-A student may be enrolled in zero or more classes. Students with no classes assigned should not be included as output.</p>
+<p>-Not every class slot may be populated for a given student. Some examples of class listings are:</p>
+<pre>Class,Class,Class<br /><br />,,Class,,,Class,,Class<br /><br />,,,,,,,,,</pre>
+<h3>Output</h3>
+<p>Your function should return a single list of individual class assignments, formatted as follows:</p>
+<pre>CLASSNAME-SECTION,SchoolYear,StudentID</pre>
+<p>Example return value:</p>
+<pre>['MATH06-1,2020,34215', 'ENG06-1,2020,34215', 'PE06-1,2020,34215']</pre>
+<h4>Notes:</h4>
+<p>- The returned list should hold one entry per student per class assigned, in the same student order as the input file</p>
+<p>- Class names should have teacher initials removed from the end. (You can assume there is always a " - " between the class name and the teacher name, excluding quotations.)</p>
+<p>- The school year for output is always 2020</p>
+<p>- No quotation marks should be included within in the output data.</p>

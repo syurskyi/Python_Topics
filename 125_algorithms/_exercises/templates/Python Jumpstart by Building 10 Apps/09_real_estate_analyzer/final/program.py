@@ -10,27 +10,27 @@ except:
 from data_types import Purchase
 
 
-def main():
+___ main():
     print_header()
     filename  get_data_file()
     data  load_file(filename)
     query_data(data)
 
 
-def print_header():
+___ print_header():
     print('----------------------------------')
     print('  REAL ESTATE DATA MINING APP')
     print('----------------------------------')
     print()
 
 
-def get_data_file():
+___ get_data_file():
     base_folder  os.path.dirname(__file__)
     return os.path.join(base_folder, 'data',
                         'SacramentoRealEstateTransactions2008.csv')
 
 
-def load_file(filename):
+___ load_file(filename):
     with open(filename, 'r', encoding'utf-8') as fin:
         # with open(filename, 'r') as fin:
         reader  csv.DictReader(fin)
@@ -60,7 +60,7 @@ def load_file(filename):
 # def get_price(p):
 #     return p.price
 
-def query_data(data):  # list[Purchase]):
+___ query_data(data):  # list[Purchase]):
 
     # data.sort(key=get_price)
     data.sort(keylambda p: p.price)
@@ -112,7 +112,7 @@ def query_data(data):  # list[Purchase]):
           .format(i..(ave_price), round(ave_baths, 1), round(ave_sqft, 1)))
 
 
-def announce(item, msg):
+___ announce(item, msg):
     print("Pulling item {} for {}".format(item, msg))
     return item
 

@@ -5,21 +5,21 @@ import subprocess
 import cat_service
 
 
-def main():
+___ main():
     print_header()
     folder  get_or_create_output_folder()
     download_cats(folder)
     display_cats(folder)
 
 
-def print_header():
+___ print_header():
     print('----------------------------------')
     print('        CAT FACTORY')
     print('----------------------------------')
     print()
 
 
-def get_or_create_output_folder():
+___ get_or_create_output_folder():
     base_folder  os.path.abspath(os.path.dirname(__file__))
     folder  'cat_pictures'
     full_path  os.path.join(base_folder, folder)
@@ -31,7 +31,7 @@ def get_or_create_output_folder():
     return full_path
 
 
-def download_cats(folder):
+___ download_cats(folder):
     print('Contacting server to download cats...')
     cat_count  8
     for i in range(1, cat_count + 1):
@@ -42,7 +42,7 @@ def download_cats(folder):
     print("done.")
 
 
-def display_cats(folder):
+___ display_cats(folder):
     # open folder
     print('Displaying cats in OS window.')
     __ platform.system() __ 'Darwin':

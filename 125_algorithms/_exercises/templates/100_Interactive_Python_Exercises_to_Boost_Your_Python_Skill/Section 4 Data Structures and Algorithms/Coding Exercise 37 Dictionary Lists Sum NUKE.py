@@ -1,4 +1,4 @@
-def foo(mydict):
+___ foo(mydict):
     lst  []
     for key, value in mydict.items():
         lst  lst + value

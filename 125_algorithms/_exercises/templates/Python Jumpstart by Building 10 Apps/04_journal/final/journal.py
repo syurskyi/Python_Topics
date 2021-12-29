@@ -4,7 +4,7 @@ This is the journal module.
 import os
 
 
-def load(name):
+___ load(name):
     """
     This method creates and loads a new journal.
 
@@ -22,7 +22,7 @@ def load(name):
     return data
 
 
-def save(name, journal_data):
+___ save(name, journal_data):
     filename  get_full_pathname(name)
     print("..... saving to: {}".format(filename))
 
@@ -31,10 +31,10 @@ def save(name, journal_data):
             fout.write(entry + '\n')
 
 
-def get_full_pathname(name):
+___ get_full_pathname(name):
     filename  os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
     return filename
 
 
-def add_entry(text, journal_data):
+___ add_entry(text, journal_data):
     journal_data.append(text)

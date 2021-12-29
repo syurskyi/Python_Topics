@@ -1,6 +1,6 @@
 class Solution:
 
-    def longestPalindrome(self, s):
+    ___ longestPalindrome(self, s):
         result  ""
         for i in range(len(s)):
             word1  self.checkPalindrome(s, i, i)
@@ -18,7 +18,7 @@ class Solution:
 
         return result
 
-    def checkPalindrome(self, s, left, right):
+    ___ checkPalindrome(self, s, left, right):
 
         w___ left > 0 and right < len(s) and s[left] __ s[right]:
             left - 1

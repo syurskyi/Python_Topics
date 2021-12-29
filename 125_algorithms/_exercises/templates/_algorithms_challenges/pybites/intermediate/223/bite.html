@@ -1,0 +1,34 @@
+<p>Each file and directory in Unix has its permissions broken down into owner, group and other (world) attributes, see <a href="https://www.tutorialspoint.com/unix/unix-file-permission.htm" target="_blank" rel="noopener">here</a>.</p>
+<p>Each attribute has one or more permissions: r(ead), w(rite), e(x)ecute. The lack of any permission is indicated by a dash (<code>-</code>). So <code>r--</code> = read only, <code>rw-</code> = read + write, and <code>rwx</code> = full permissions.</p>
+<p>The file permission for owner + group + other has 3 of those strings after the initial character which indicates file type (- = file / d = directory):</p>
+<pre>$ lt bite.html
+-rw-r--r--  1 bobbelderbos  staff   229B Oct  9 14:03 bite.html
+</pre>
+<p>To change the file permission you use the <code>chmod</code> and its octal representation, for <strong>each</strong> attribute (owner, group, other) we translate the permission string summing a value for each permission: <code>r</code> = 4, <code>w</code> = 2, and <code>x</code> = 1, hence:</p>
+<pre>$ touch myfile
+$ lt myfile
+-rw-r--r--  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+$ chmod 400 myfile
+$ lt myfile
+-r--------  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+$ chmod 600 myfile
+$ lt myfile
+-rw-------  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+$ chmod 700 myfile
+$ lt myfile
+-rwx------  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+$ chmod 740 myfile
+$ lt myfile
+-rwxr-----  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+$ chmod 745 myfile
+$ lt myfile
+-rwxr--r-x  1 bobbelderbos  staff     0B Oct 11 10:12 myfile
+</pre>
+<p>That concludes our little Unix file permission lesson. In this Bite you will complete <code>get_octal_from_file_permission</code> that takes a permission string and returns its octal representation, for example:</p>
+<pre>&gt;&gt;&gt; from permissions import get_octal_from_file_permission
+&gt;&gt;&gt; get_octal_from_file_permission('rw-r--r--')
+'644'
+&gt;&gt;&gt; get_octal_from_file_permission('rwxrwxrwx')
+'777'
+</pre>
+<p>Of course the tests check a bunch more (wonder about <code>parametrize</code>? You can read more about it <a href="https://pybit.es/pytest-coding-100-tests.html" target="_blank" rel="noopener">on our blog</a> - bullet 9). Have fun and keep calm and code in Python!</p>

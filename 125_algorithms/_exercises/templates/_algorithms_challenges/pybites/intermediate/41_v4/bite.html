@@ -1,0 +1,7 @@
+<p>If you worked with <a href="http://flask.pocoo.org/" target="_blank">Flask</a> or <a href="https://www.djangoproject.com/" target="_blank">Django</a> you must have seen routes being <i>decorated</i> to enforce authentication.</p><p>In this Bite you will write your own login checking decorator.</p><p>We simplify the request / session stuff by using 2 hardcoded lists:</p><pre>known_users = ['bob', 'julian', 'mike', 'carmen', 'sue']
+loggedin_users = ['mike', 'sue']
+</pre><p>Write the <code>login_required</code> decorator used here:</p><pre>@login_required
+def welcome(user):
+    '''Return a welcome message if logged in'''
+    return f'welcome back {user}'
+</pre><p>Using this decorator there are 3 possible scenarios you have to account for: </p><ul><li>user is not on the system, return "please create an account"</li><li>user is on the system but not logged in, return "please login"</li><li>user is on the system and logged in, return the function's "welcome back {user}"</li></ul><p>See also the tests for more details. Have fun and enjoy!</p>
