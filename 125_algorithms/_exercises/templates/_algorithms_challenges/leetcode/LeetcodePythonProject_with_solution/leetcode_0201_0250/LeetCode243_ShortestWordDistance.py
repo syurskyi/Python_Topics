@@ -13,11 +13,11 @@ class Solution(object):
         :rtype: int
         """
         minLen = l..(words)
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             __ word __ (word1, word2):
                 target = word1 __ word __ word2 ____ word2
                 j = i+1
-                while j < l..(words):
+                w.... j < l..(words):
                     __ words[j] __ target:
                         minLen = m..(minLen, j-i)
                     j+=1

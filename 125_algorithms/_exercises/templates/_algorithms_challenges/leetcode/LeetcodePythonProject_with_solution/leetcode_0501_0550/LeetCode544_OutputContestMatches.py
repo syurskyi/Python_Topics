@@ -17,7 +17,7 @@ class Solution(object):
         __ l..(l) <= 2:
             r.. '(%s,%s)' % (l[0], l[1])
         l0    # list
-        while l:
+        w.... l:
             l0.a..('(%s,%s)' % (l.pop(0), l.pop()))
         res = self.helper(l0)
         r.. res

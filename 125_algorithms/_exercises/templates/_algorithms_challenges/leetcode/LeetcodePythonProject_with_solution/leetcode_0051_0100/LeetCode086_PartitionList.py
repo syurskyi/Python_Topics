@@ -21,7 +21,7 @@ class Solution(object):
             r.. head
         aHead, bHead = ListNode(0), ListNode(0)
         aTail, bTail = aHead, bHead
-        while head:
+        w.... head:
             __ head.val < x:
                 aTail.next = head
                 aTail = aTail.next

@@ -5,7 +5,7 @@ class Solution(object):
         :type N: int
         :rtype: int
         """
-        s = str(N)
+        s = s..(N)
         k = l..(s)
         dp = [0]*k + [1]
         ___ i __ r..(k-1, -1, -1):

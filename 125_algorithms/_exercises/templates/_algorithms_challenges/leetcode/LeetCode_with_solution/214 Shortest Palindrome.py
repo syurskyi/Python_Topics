@@ -29,7 +29,7 @@ class Solution:
         T[0] = -1
         pos = 2
         cnd = 0
-        while pos <= l:
+        w.... pos <= l:
             __ s[pos-1] __ s[cnd]:
                 T[pos] = cnd+1
                 cnd += 1
@@ -44,7 +44,7 @@ class Solution:
         # search 
         i = 0
         b = 0
-        while i+b < l:
+        w.... i+b < l:
             __ s[i] __ s_r[i+b]:
                 i += 1
                 __ i __ l:

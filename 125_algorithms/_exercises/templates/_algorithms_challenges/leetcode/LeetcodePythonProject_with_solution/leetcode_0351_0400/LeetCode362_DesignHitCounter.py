@@ -19,7 +19,7 @@ class HitCounter(object):
     
     ___ getHits(self, timestamp):
         count = 0
-        ___ i, time __ enumerate(self.timestampes):
+        ___ i, time __ e..(self.timestampes):
             __ timestamp - time < 300:
                 count += self.hitCount[i]
         r.. count
@@ -30,13 +30,13 @@ class HitCounterOwn(object):
     
     ___ hit(self, timestamp):
         self.queue.a..(timestamp)
-        __ self.queue and self.queue[0] < timestamp-300:
+        __ self.queue a.. self.queue[0] < timestamp-300:
             self.queue.pop(0)
     
     ___ getHits(self, timestamp):
         start, end = 0, l..(self.queue)
         target = timestamp - 300
-        while start < end:
+        w.... start < end:
             mid = (start+end)/2
             __ target >= self.queue[mid]:
                 start = mid+1

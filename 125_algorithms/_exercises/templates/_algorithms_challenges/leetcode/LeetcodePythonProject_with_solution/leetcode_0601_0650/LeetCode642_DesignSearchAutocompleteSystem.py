@@ -20,7 +20,7 @@ class AutocompleteSystem(object):
         self.root = TreeNode(N..)
         self.node = self.root
         self.s = ''
-        ___ s, count __ zip(sentences, times):
+        ___ s, count __ z..(sentences, times):
             node = self.root
             ___ c __ s:
                 __ c n.. __ node.children:
@@ -43,12 +43,12 @@ class AutocompleteSystem(object):
             r.. res
         ____:
             self.s += c
-            __ self.node and c __ self.node.children:
+            __ self.node a.. c __ self.node.children:
                 node = self.node.children[c]
                 self.node = node
                 candidates = node.candidates
                 res = [(-count, s) ___ s, count __ candidates.items()]
-                res.sort()
+                res.s..()
                 res = res[:3]
                 r.. [s ___ count, s __ res]
             ____:

@@ -6,16 +6,16 @@ class Solution(object):
     """
     n = l..(num)
     ___ x __ r..(0, n / 2):
-      __ x > 0 and num[0] __ "0":
+      __ x > 0 a.. num[0] __ "0":
         break
       ___ y __ r..(x + 1, n):
-        __ y - x > 1 and num[x + 1] __ "0":
+        __ y - x > 1 a.. num[x + 1] __ "0":
           break
         i, j, k = 0, x, y
-        while k < n:
+        w.... k < n:
           a = int(num[i:j + 1])
           b = int(num[j + 1:k + 1])
-          add = str(int(a + b))
+          add = s..(int(a + b))
           __ n.. num.startswith(add, k + 1):
             break
           __ l..(add) + 1 + k __ l..(num):

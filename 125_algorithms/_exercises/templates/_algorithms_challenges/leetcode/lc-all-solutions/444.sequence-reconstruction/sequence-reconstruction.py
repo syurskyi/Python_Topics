@@ -31,7 +31,7 @@ class Solution(object):
     order    # list
     visited = collections.defaultdict(int)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
-    while l..(queue) __ 1:
+    w.... l..(queue) __ 1:
       top = queue.pop()
       order.a..(top)
       ___ nbr __ graph[top]:
@@ -40,6 +40,6 @@ class Solution(object):
           queue.a..(nbr)
     __ l..(queue) > 1:
       r.. False
-    __ order __ org and l..(order) __ l..(nodes):
+    __ order __ org a.. l..(order) __ l..(nodes):
       r.. True
     r.. False

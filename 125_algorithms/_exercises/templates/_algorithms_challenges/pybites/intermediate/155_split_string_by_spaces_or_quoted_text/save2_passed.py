@@ -4,11 +4,11 @@ ___ split_words_and_quoted_text(text):
     m = re.search(r'"(.*?)"', text)
     m_list = [w ___ w __ m.group(1).s.. ]
     l    # list
-    ___ word __ text.replace('"', '').s.. :
+    ___ word __ text.r..('"', '').s.. :
         __ word n.. __ m_list:
             l.a..(word)
         ____:
             __ m.group() n.. __ l:
                 l.a..(m.group())
-    output = [entry.replace('"', '') ___ entry __ l]
+    output = [entry.r..('"', '') ___ entry __ l]
     r.. output

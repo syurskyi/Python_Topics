@@ -2,7 +2,7 @@
 d = int(input())
 
 #accept the decimal numbers to be converted to binary
-binary  = l..(map(int,input().split()))
+binary  = l..(map(int,input().s..()))
 
 #loop through all the elements
 ___ j __ binary:
@@ -13,7 +13,7 @@ ___ j __ binary:
     __ j > 0:
         #append in the list
         bin_list.a..(j)
-        while j != 1:
+        w.... j != 1:
             j =int(j / 2)
             bin_list.a..(j)
             
@@ -29,7 +29,7 @@ ___ j __ binary:
     ____:
         j = abs(j)
         bin_list.a..(j)
-        while j != 1:
+        w.... j != 1:
             j =int(j / 2)
             bin_list.a..(j)
         count = 0
@@ -70,6 +70,6 @@ ___ j __ binary:
             result = '1' + result
         
         # add 1 till it become 32 in length
-        while l..(result) != 32:
+        w.... l..(result) != 32:
             result += '1'
         print(result.c.. '1'),end=' ')

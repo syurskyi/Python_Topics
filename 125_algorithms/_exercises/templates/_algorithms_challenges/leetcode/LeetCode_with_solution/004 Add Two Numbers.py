@@ -35,10 +35,10 @@ class Solution:
         cur1 = l1
         cur2 = l2
         cur = result_head
-        while cur1 o. cur2:
+        w.... cur1 o. cur2:
             cur.val = cur.val+self.addNode(cur1, cur2)
             __ cur.val < 10:
-                __ cur1 and cur1.next o. cur2 and cur2.next:  # next node
+                __ cur1 a.. cur1.next o. cur2 a.. cur2.next:  # next node
                     cur.next = ListNode(0)
             ____:
                 cur.val -= 10
@@ -60,7 +60,7 @@ class Solution:
         :param node2: ListNode
         :return: integer, summation
         """
-        __ n.. node1 and n.. node2:
+        __ n.. node1 a.. n.. node2:
             raise Exception("two nodes are None")
         __ n.. node1:
             r.. node2.val

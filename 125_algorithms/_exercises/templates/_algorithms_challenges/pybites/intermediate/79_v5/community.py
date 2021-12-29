@@ -13,7 +13,7 @@ ___ get_csv():
         r.. session.get(CSV_URL).content.decode('utf-8')
 
 
-___ create_user_bar_chart(content: str):
+___ create_user_bar_chart(content: s..):
     """Receives csv file (decoded) content and returns a table of timezones
        and their corresponding member counts in pluses (see Bite/tests)"""
     reader = csv.DictReader(content.splitlines())

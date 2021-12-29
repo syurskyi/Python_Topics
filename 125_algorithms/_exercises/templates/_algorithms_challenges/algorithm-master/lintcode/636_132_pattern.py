@@ -13,7 +13,7 @@ class Solution:
                 r.. True
 
             v = N..
-            while stack and A[i] > stack[-1]:
+            w.... stack a.. A[i] > stack[-1]:
                 v = stack.pop()
 
             stack.a..(A[i])

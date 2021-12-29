@@ -48,7 +48,7 @@ class Solution:
             #     return False
             # can have negative number 
 
-        r.. count __ 3 and cur_sum __ 0
+        r.. count __ 3 a.. cur_sum __ 0
 
 
 __ __name__ __ "__main__":

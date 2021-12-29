@@ -27,7 +27,7 @@ class Solution(object):
         count = 0  # Repeated count of `last`
         dummy = ListNode(0)
         dummy_end = dummy
-        while current __ n.. N..
+        w.... current __ n.. N..
             __ last __ n.. N..
                 __ current.val __ last.val:
                     count += 1

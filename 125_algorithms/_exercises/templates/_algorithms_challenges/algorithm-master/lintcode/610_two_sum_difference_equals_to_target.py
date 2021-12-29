@@ -64,11 +64,11 @@ class Solution:
 
         n = l..(A)
         A = [(A[i], i) ___ i __ r..(n)]
-        A.sort()
+        A.s..()
 
         left = 0
         ___ right __ r..(1, n):
-            while left + 1 < right and A[right][0] - A[left][0] > target:
+            w.... left + 1 < right a.. A[right][0] - A[left][0] > target:
                 left += 1
             __ A[right][0] - A[left][0] __ target:
                 r.. s..([

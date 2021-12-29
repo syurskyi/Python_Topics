@@ -25,7 +25,7 @@ class Solution(object):
         """
         d = {}
         res = 0
-        ___ i, k __ enumerate(r..(ord('A'), ord('Z') + 1), start=1):
+        ___ i, k __ e..(r..(ord('A'), ord('Z') + 1), start=1):
             d[chr(k)] = i
         j = 0
         ___ c __ s[::-1]:

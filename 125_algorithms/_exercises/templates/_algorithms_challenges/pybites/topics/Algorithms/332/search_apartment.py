@@ -4,7 +4,7 @@ EAST = "E"
 WEST = "W"
 
 
-___ search_apartment(buildings: List[int], direction: str) -> List[int]:
+___ search_apartment(buildings: List[int], direction: s..) -> List[int]:
     """
     Find and return the indices of those building with
     the desired view: EAST (E) or WEST (W).
@@ -15,12 +15,12 @@ ___ search_apartment(buildings: List[int], direction: str) -> List[int]:
     building_list    # list
     __ direction __ "E":
         buildings.reverse()
-    ___ index, building __ enumerate(buildings):
+    ___ index, building __ e..(buildings):
         __ building > highest:
             highest = building
             building_list.a..(index)
     __ direction __ "E":
-        ___ index, building __ enumerate(building_list):
+        ___ index, building __ e..(building_list):
             building_list[index] = l..(buildings)-building-1
         building_list.reverse()
     r.. building_list

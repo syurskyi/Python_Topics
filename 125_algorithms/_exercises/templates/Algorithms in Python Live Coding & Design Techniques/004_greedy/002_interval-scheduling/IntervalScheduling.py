@@ -4,7 +4,7 @@ ___ schedule(intervals
 
     #sorted(intervals, key=intervals[1])
 
-    intervals.sort(keylambda i: i[1])
+    intervals.s..(keylambda i: i[1])
 
     last_finish_time  fl__('-inf')
 

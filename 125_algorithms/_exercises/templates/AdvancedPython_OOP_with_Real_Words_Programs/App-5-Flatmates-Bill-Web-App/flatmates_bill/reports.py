@@ -20,7 +20,7 @@ c_ PdfReport:
         flatmate1_pay  st_(r__(flatmate1.pays(bill, flatmate2), 2))
         flatmate2_pay  st_(r__(flatmate2.pays(bill, flatmate1), 2))
 
-        pdf  FPDF(orientation'P', unit'pt', format'A4')
+        pdf  FPDF(orientation'P', unit'pt', f..'A4')
         pdf.add_page()
 
         # Add icon

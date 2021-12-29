@@ -42,7 +42,7 @@ The decoded string is guaranteed to have less than 2^63 letters.
 
 
 class Solution:
-    ___ decodeAtIndex(self, S: str, K: int) -> str:
+    ___ decodeAtIndex(self, S: s.., K: int) -> s..:
         """
         walk backward
         """
@@ -56,7 +56,7 @@ class Solution:
         # walk backward
         ___ s __ reversed(S):
             K %= l
-            __ K __ 0 and s.isalpha():
+            __ K __ 0 a.. s.isalpha():
                 # K == l * n, return the last chr
                 r.. s
             __ s.isdigit():
@@ -66,7 +66,7 @@ class Solution:
 
         raise
 
-    ___ decodeAtIndex_error(self, S: str, K: int) -> str:
+    ___ decodeAtIndex_error(self, S: s.., K: int) -> s..:
         """
         don't generate the final string, too memory expensive
         two pointer
@@ -78,14 +78,14 @@ class Solution:
         j = 0
         last = N..
         n = l..(S)
-        while j < n:
+        w.... j < n:
             __ S[j].isdigit():
                 __ n.. last:
                     last = j
 
                 d = int(S[j])
                 l = last - i
-                while K >= l and d > 0:
+                w.... K >= l a.. d > 0:
                     K -= l
                     d -= 1
                 __ d > 0:

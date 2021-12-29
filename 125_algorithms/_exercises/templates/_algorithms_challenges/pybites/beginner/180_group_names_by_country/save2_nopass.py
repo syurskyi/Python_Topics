@@ -13,11 +13,11 @@ Parrett,Ines,CN
 Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
-___ group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) -> defaultdict:
     countries = defaultdict(l..)
     data = iter(data.splitlines())
     next(data)
     ___ line __ data:
-        lastname, name, country = line.split(",")
+        lastname, name, country = line.s..(",")
         countries[country].a..(name + " " + lastname)
     r.. s..(countries.items())

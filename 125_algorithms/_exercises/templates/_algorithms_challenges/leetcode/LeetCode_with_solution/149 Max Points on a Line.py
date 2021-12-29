@@ -81,7 +81,7 @@ class Solution:
 
                 point1 = points[i]
                 point2 = points[j]
-                __ point1.x__point2.x and point1.y__point2.y:
+                __ point1.x__point2.x a.. point1.y__point2.y:
                     duplicate += 1
                     continue
                 __ point1.x__point2.x:

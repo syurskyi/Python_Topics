@@ -23,7 +23,7 @@ class Solution(object):
             __ val __ 0:
                 queue.a..(key)
         index = 0
-        while queue:
+        w.... queue:
             size = l..(queue)
             __ size > 1:
                 r.. False
@@ -36,4 +36,4 @@ class Solution(object):
                     degree[nextVal] -= 1
                     __ degree[nextVal] __ 0:
                         queue.a..(nextVal)
-        r.. index __ l..(org) and index __ l..(graph)
+        r.. index __ l..(org) a.. index __ l..(graph)

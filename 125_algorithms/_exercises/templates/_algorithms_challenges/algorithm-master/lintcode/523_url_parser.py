@@ -11,4 +11,4 @@ class HtmlParser:
         # ["\']: this block should contain `"` or `'`
         # [^"\'>\s]*: this block should contain any chars until `"`, `'`, `>`, or blank appears
         links = re.findall(r'href[=\s]+["\']([^"\'>\s]*)', content, re.I)
-        r.. [link ___ link __ links __ link and n.. link.startswith('#')]
+        r.. [link ___ link __ links __ link a.. n.. link.startswith('#')]

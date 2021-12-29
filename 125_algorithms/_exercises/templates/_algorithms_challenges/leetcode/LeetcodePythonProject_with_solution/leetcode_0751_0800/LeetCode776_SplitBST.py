@@ -20,19 +20,19 @@ class Solution(object):
         __ n.. root: r.. [N.., N..]
         stack    # list
         root0 = root
-        while root0:
+        w.... root0:
             stack.a..(root0)
             root0 = root0.left
         preNode = N..
-        while stack:
+        w.... stack:
             node = stack.pop()
-            __ (n.. preNode and V < node.val)\
-                o. (preNode and preNode.val <= V < node.val):
+            __ (n.. preNode a.. V < node.val)\
+                o. (preNode a.. preNode.val <= V < node.val):
                 r.. self.getRes(root, preNode)
             ____:
                 preNode = node
                 node0 = node.right
-                while node0:
+                w.... node0:
                     stack.a..(node0)
                     node0 = node0.left
         r.. [root, N..]
@@ -42,14 +42,14 @@ class Solution(object):
         __ n.. node:
             r.. [root0, N..]
         stack    # list
-        while node != root0:
+        w.... node != root0:
             stack.a..(root0)
             __ root0.val > node.val:
                 root0 = root0.left
             ____:
                 root0 = root0.right
         cand = node
-        while stack and stack[-1].val < node.val:
+        w.... stack a.. stack[-1].val < node.val:
             cand = stack.pop()
         __ n.. stack:
             right = node.right

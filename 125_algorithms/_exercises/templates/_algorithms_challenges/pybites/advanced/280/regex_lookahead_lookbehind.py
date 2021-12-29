@@ -10,7 +10,7 @@ ___ count_n_repetitions(text, n=1):
     n: How often character should be repeated, defaults to 1
     """
 
-    my_regex = r"(.)(?=\1{" + str(n) + r"})"
+    my_regex = r"(.)(?=\1{" + s..(n) + r"})"
     
 
     counts = re.findall(my_regex,text,flags=re.DOTALL)
@@ -32,9 +32,9 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""):
     """
     
     __ char:
-        my_regex = r"(.)(?=\1{" + str(n) + "}|" +  re.escape(char) + "{" + str(n) + r"})"
+        my_regex = r"(.)(?=\1{" + s..(n) + "}|" +  re.escape(char) + "{" + s..(n) + r"})"
     ____:
-        my_regex = r"(.)(?=\1{" + str(n) + r"})"
+        my_regex = r"(.)(?=\1{" + s..(n) + r"})"
 
     counts = re.findall(my_regex,text,flags=re.DOTALL)
 

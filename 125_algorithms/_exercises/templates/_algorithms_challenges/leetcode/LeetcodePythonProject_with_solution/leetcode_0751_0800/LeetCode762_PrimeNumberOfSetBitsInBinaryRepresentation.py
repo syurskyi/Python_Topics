@@ -15,7 +15,7 @@ class Solution(object):
         ___ num __ r..(L, R+1):
             bits = 0
             n = num
-            while n > 0:
+            w.... n > 0:
                 bits += n & 1
                 n >>= 1
             cnt += 1 __ bits __ primes ____ 0

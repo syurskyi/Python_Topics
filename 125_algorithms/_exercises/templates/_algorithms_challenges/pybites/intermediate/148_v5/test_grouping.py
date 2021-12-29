@@ -46,4 +46,4 @@ VOLKSWAGEN
 ___ test_group_cars_by_manufacturer(capfd):
     group_cars_by_manufacturer(cars)
     actual_output, _ = capfd.readouterr()
-    ... actual_output.strip() __ expected_output.strip()
+    ... actual_output.s.. __ expected_output.s..

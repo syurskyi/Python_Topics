@@ -1,4 +1,4 @@
-____ itertools _______ chain
+____ i.. _______ chain
 
 cars = {
     'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],

@@ -6,12 +6,12 @@ ____ typing _______ Dict, List, Union
 _______ pandas as pd  # type: ignore
 _______ requests
 
-URL: str = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
-STATS: List[str] = ["sum", "mean", "max"]
+URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
+STATS: List[s..] = ["sum", "mean", "max"]
 TMP: Path = Path(os.getenv("TMP", "/tmp")) / "MonthlySales.csv"
 
 
-___ get_data(url: str) -> Dict[str, str]:
+___ get_data(url: s..) -> Dict[s.., s..]:
     """Get data from Github
 
     Args:
@@ -31,7 +31,7 @@ ___ get_data(url: str) -> Dict[str, str]:
     r.. data
 
 
-___ process_data(url: str) -> pd.DataFrame:
+___ process_data(url: s..) -> pd.DataFrame:
     """Process the data from the Github API
 
     Args:
@@ -46,7 +46,7 @@ ___ process_data(url: str) -> pd.DataFrame:
     r.. monthly_sales
 
 
-___ summary_report(df: pd.DataFrame, stats: Union[List[str], N..] = STATS) -> N..
+___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) -> N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.

@@ -8,15 +8,15 @@ class Solution(object):
     ___ getHint(self, secret, guess):
         bulls = set()
         hashmap = {}
-        ___ i, (c1, c2) __ enumerate(zip(secret, guess)):
+        ___ i, (c1, c2) __ e..(z..(secret, guess)):
             __ c1 __ c2:
                 bulls.add(i)
             ____:
                 hashmap[c1] = hashmap.get(c1, 0)+1
         cows = 0
-        ___ i, c __ enumerate(guess):
+        ___ i, c __ e..(guess):
             __ i n.. __ bulls:
-                __ c __ hashmap and hashmap[c] > 0:
+                __ c __ hashmap a.. hashmap[c] > 0:
                     hashmap[c] -= 1
                     cows += 1
         r.. '%sA%sB' % (l..(bulls), cows)

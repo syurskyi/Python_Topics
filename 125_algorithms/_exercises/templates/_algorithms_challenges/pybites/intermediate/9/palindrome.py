@@ -14,7 +14,7 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().strip() ___ word __ f.readlines())
+        r.. (word.lower().s.. ___ word __ f.readlines())
 
 
 ___ _clean_word(word):

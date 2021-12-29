@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         start, end = 1, x
-        while start <= end:
+        w.... start <= end:
             mid = (start+end)/2
             __ mid*mid __ x:
                 r.. mid

@@ -42,7 +42,7 @@ class NestedIterator(object):
     ___ hasNext(self):
         stack = self.stack
 
-        while stack:
+        w.... stack:
             lst, i = stack[-1]
 
             __ i >= l..(lst):

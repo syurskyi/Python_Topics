@@ -1,4 +1,4 @@
-____ itertools _______ zip_longest
+____ i.. _______ zip_longest
 
 names = 'Tim Bob Julian Carmen Sofia Mike Kim Andre'.s..
 locations = 'DE ES AUS NL BR US'.s..

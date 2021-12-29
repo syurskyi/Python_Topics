@@ -31,7 +31,7 @@ ___ top_python_questions(url=cached_so_url):
         ___ question __ questions:
             question_text = question.find('a',class_='question-hyperlink').getText()
             views = question.find('div',class_='views').getText()
-            __ views.strip().s.. [0][-1] __ 'm':
+            __ views.s...s.. [0][-1] __ 'm':
                 votes = int(question.find('span',class_='vote-count-post').strong.getText())
                 results.a..((question_text,votes))
 

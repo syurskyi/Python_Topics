@@ -13,9 +13,9 @@ class Solution(object):
         ___ _ __ r..(n-1):
             tmp = ''
             i = 0
-            while i < l..(res):
+            w.... i < l..(res):
                 count = 1
-                while i+1 < l..(res) and res[i+1] __ res[i]:
+                w.... i+1 < l..(res) a.. res[i+1] __ res[i]:
                     count += 1
                     i += 1
                 tmp += '%s%s' % (count, res[i])

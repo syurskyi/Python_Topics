@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: bool
         """
         __ num __ 0: r.. False
-        while num > 1:
+        w.... num > 1:
             __ num%2 __ 0:
                 num //= 2
             ____ num%3 __ 0:

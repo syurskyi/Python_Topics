@@ -2,7 +2,7 @@ class Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
     ___ subsetsWithDup(self, nums):
-        nums.sort()
+        nums.s..()
         r.. self.subsets_aux(nums)
 
     ___ subsets_aux(self, nums):
@@ -10,8 +10,8 @@ class Solution:
             r.. [[]]
         ____:
             res = [[]]
-            ___ i, e __ enumerate(nums):
-                __ i > 0 and nums[i] __ nums[i - 1]:
+            ___ i, e __ e..(nums):
+                __ i > 0 a.. nums[i] __ nums[i - 1]:
                     continue
                 rest_subsets = self.subsets_aux(nums[i + 1:])
                 ___ subset __ rest_subsets:

@@ -4,10 +4,10 @@ _______ re
 _______ pandas as pd
 
 
-___ max_letter_word(text: str) -> Tuple[str, str, int]:
+___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     __ text __ [N.., True, 1, 1.0, [], {}]:
         raise ValueError
-    text = text.replace('_', '').replace('--', '').replace('-', 'placeholder').replace('\'', 'pxaceholder')
+    text = text.r..('_', '').r..('--', '').r..('-', 'placeholder').r..('\'', 'pxaceholder')
     text = re.sub('\W', ' ', text) #remove not word characters
     text = re.sub(' +', ' ', text) #remove extra spaces
     t = ''.join(s ___ s __ text __ n.. any(c.isdigit() ___ c __ s)) #remove digit words
@@ -18,14 +18,14 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
     __ df.empty __ True:
         r.. '', '', 0
 
-    df['casefold'] = df['word'].str.replace('placeholder', '')
-    df['casefold'] = df['casefold'].str.replace('pxaceholder', '')
-    df['word'] = df['word'].str.replace('placeholder', '-').replace('pxaceholder', '\'')
+    df['casefold'] = df['word'].s...r..('placeholder', '')
+    df['casefold'] = df['casefold'].s...r..('pxaceholder', '')
+    df['word'] = df['word'].s...r..('placeholder', '-').r..('pxaceholder', '\'')
 
-    df['casefold'] = df[df['casefold'].str.strip().astype(bool)]
+    df['casefold'] = df[df['casefold'].s...s...astype(bool)]
     df = df.dropna()
-    df['casefold'] = df['casefold'].str.lower()
-    df['casefold'] = df['casefold'].str.replace('ß', 'ss')
+    df['casefold'] = df['casefold'].s...lower()
+    df['casefold'] = df['casefold'].s...r..('ß', 'ss')
 
     l_column   # list
     c_column    # list

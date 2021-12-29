@@ -10,7 +10,7 @@ class Solution(object):
         ___ num __ nums:
             left = max(left, num)
             right += num
-        while left < right:
+        w.... left < right:
             mid = (left+right)//2
             __ self.doable(nums, m-1, mid):
                 right = mid

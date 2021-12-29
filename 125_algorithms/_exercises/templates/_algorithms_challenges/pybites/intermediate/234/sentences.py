@@ -1,12 +1,12 @@
 ____ test_sentences _______ *
 _______ re
 
-___ capitalize_sentences(text: str) -> str:
+___ capitalize_sentences(text: s..) -> s..:
    """Return text capitalizing the sentences. Note that sentences can end
       in dot (.), question mark (?) and exclamation mark (!)"""
 
    text_metacharacters = re.findall("[\\!\\.\\?]", text.strip())
-   text_raw = re.split("[\\!\\.\\?]\s", text.strip())
+   text_raw = re.s..("[\\!\\.\\?]\s", text.strip())
 
    text_clean    # list
    ___ i __ r..(l..(text_raw)):

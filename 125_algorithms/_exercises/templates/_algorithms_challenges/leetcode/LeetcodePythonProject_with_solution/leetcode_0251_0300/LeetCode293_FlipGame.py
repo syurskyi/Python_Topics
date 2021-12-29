@@ -8,7 +8,7 @@ class Solution(object):
     ___ generatePossibleNextMoves(self, s):
         result    # list
         ___ i __ r..(1, l..(s)):
-            __ s[i-1] __ '+' and s[i] __ '+':
+            __ s[i-1] __ '+' a.. s[i] __ '+':
                 result.a..(s[:i-1]+'--'+s[i+1:])
         r.. result
     

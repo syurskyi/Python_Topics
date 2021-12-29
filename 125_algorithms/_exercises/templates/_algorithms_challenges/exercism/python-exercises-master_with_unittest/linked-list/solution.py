@@ -56,6 +56,6 @@ class LinkedList(object):
 
     ___ __iter__(self):
         current_node = self.head
-        while (current_node):
-            yield current_node.value
+        w.... (current_node):
+            y.. current_node.value
             current_node = current_node.next

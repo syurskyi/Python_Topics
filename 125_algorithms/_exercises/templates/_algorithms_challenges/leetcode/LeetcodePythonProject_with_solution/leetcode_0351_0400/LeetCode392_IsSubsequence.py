@@ -8,13 +8,13 @@ class Solution(object):
     ___ isSubsequence(self, s, t):
         _______ bisect
         hashmap = {}
-        ___ i, c __ enumerate(t):
+        ___ i, c __ e..(t):
             __ c __ hashmap:
                 hashmap[c].a..(i)
             ____:
                 hashmap[c] = [i]
         prev = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c n.. __ hashmap: r.. False
             j = bisect.bisect_left(hashmap[c], prev)
             __ j __ l..(hashmap[c]): r.. False
@@ -24,10 +24,10 @@ class Solution(object):
     ___ isSubsequence_orig(self, s, t):
         _______ bisect
         idx = [[] ___ _ __ r..(256)]
-        ___ i, c __ enumerate(t):
+        ___ i, c __ e..(t):
             idx[ord(c)].a..(i)
         prev = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ idx[ord(c)] __ []: r.. False
             j = bisect.bisect_left(idx[ord(c)], prev)
             __ j __ l..(idx[ord(c)]): r.. False
@@ -36,7 +36,7 @@ class Solution(object):
     
     ___ isSubsequence_slow(self, s, t):
         i, j = 0, 0
-        while i < l..(s) and j < l..(t):
+        w.... i < l..(s) a.. j < l..(t):
             __ s[i] __ t[j]:
                 i+=1
                 j+=1

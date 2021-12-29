@@ -13,7 +13,7 @@ class Solution:
             r.. N..
         h = head
         p = h
-        while p __ n.. N..
+        w.... p __ n.. N..
             next_node = p.next
             new_node = RandomListNode(p.label)
             # Insert new node to the original list
@@ -21,7 +21,7 @@ class Solution:
             new_node.next = next_node
             p = next_node
         p = h
-        while p __ n.. N..
+        w.... p __ n.. N..
             next_node = p.next.next
             new_node = p.next
             __ p.random __ n.. N..
@@ -31,7 +31,7 @@ class Solution:
         res = N..
         end = N..
         p = h
-        while p __ n.. N..
+        w.... p __ n.. N..
             next_node = p.next.next
             new_node = p.next
             # Add to new list

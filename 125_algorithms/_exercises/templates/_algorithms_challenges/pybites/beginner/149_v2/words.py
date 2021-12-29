@@ -4,8 +4,8 @@ ___ sort_words_case_insensitively(words):
         numbers you only need to check the first char of the word)
     """
 
-    w = [word ___ word __ words __ str(word)[0].isalpha()]
-    d = [word ___ word __ words __ str(word)[0].isdigit()]
+    w = [word ___ word __ words __ s..(word)[0].isalpha()]
+    d = [word ___ word __ words __ s..(word)[0].isdigit()]
 
 
 

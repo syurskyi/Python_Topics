@@ -10,7 +10,7 @@ class Solution(object):
     lens = map(l.., words)
     idx = 0
     curLen = 0
-    while idx < l..(words):
+    w.... idx < l..(words):
       __ curLen __ 0:
         curLen = lens[idx]
       ____:

@@ -13,7 +13,7 @@ class Solution(object):
         sumVal = s..(nums)
         __ sumVal%k != 0:
             r.. False
-        nums.sort(r.._T..
+        nums.s..(r.._T..
         r.. self.helper(nums, [0]*k, sumVal//k, 0, k)
     
     ___ helper(self, nums, elems, target, ind, k):
@@ -22,7 +22,7 @@ class Solution(object):
         ___ i __ r..(l..(nums)):
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
-                __ elems[ind] __ target and\
+                __ elems[ind] __ target a..\
                     self.helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
                     r.. True
                 ____ self.helper(nums[:i]+nums[i+1:], elems, target, ind, k):

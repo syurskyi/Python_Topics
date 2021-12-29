@@ -1,4 +1,4 @@
-____ datetime _______ datetime, timedelta, time
+____ d__ _______ d__, t.., time
 _______ os
 _______ re
 _______ urllib.request
@@ -40,11 +40,11 @@ ___ get_all_timestamps():
 ___ calc_total_course_duration(timestamps):
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    s.. = datetime(year=2000, month=1, day=1, hour=0, minute=0, second=0)
-    s = s.. + timedelta(hours=0, minutes=0, seconds=10)
+    s.. = d__ y.._2000,  m.._1,  d.._1, hour=0, minute=0, second=0)
+    s = s.. + t..(hours=0, minutes=0, seconds=10)
     ___ item __ timestamps:
-        s.. = s.. + timedelta(hours=0, minutes=int(item.split(':')[0]), seconds=int(item.split(':')[1]))
-    r..(str(s...time()))
+        s.. = s.. + t..(hours=0, minutes=int(item.s..(':')[0]), seconds=int(item.s..(':')[1]))
+    r..(s..(s...time()))
 
 """
 def get_all_timestamps():

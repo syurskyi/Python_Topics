@@ -13,6 +13,6 @@ ___ sock_merchant(ar):
 
 
 n = int(input().strip())
-ar = l..(map(int, input().strip().split(' ')))
+ar = l..(map(int, input().s...s..(' ')))
 result = sock_merchant(ar)
 print(result)

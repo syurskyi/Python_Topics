@@ -1,17 +1,17 @@
 ____ packaging _______ version
 
 
-___ _load_reqs(reqs: str) -> d..:
+___ _load_reqs(reqs: s..) -> d..:
     '''loads reqs into a dict with keys of package names
        and values of version numbers (converted to base 10 equivs)
     '''
     print(f'{reqs.splitlines()=}')
-    lines = map(l.... x: x.split('=='), reqs.splitlines())
+    lines = map(l.... x: x.s..('=='), reqs.splitlines())
     reqs = {x[0]: version.parse(x[1]) ___ x __ lines __ x[0]}
     r.. reqs
 
 
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)

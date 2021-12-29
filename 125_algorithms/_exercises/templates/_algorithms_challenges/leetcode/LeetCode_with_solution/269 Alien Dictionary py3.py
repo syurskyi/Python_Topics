@@ -43,7 +43,7 @@ ____ collections _______ defaultdict, deque
 
 
 class Solution(object):
-    ___ alienOrder(self, words: List[str]) -> str:
+    ___ alienOrder(self, words: List[s..]) -> s..:
         G = self.construct_graph(words)
         visited = defaultdict(int)  # 0 not visited, 1 visiting, 2 visted
         ret = deque()
@@ -62,7 +62,7 @@ class Solution(object):
                 G[c]
 
         ___ i __ r..(l..(words) - 1):  # compare word_i and word_{i+1}
-            ___ c1, c2 __ zip(words[i], words[i+1]):
+            ___ c1, c2 __ z..(words[i], words[i+1]):
                 __ c1 != c2:  # lexical order
                     G[c1].a..(c2)
                     break  # need to break for lexical order

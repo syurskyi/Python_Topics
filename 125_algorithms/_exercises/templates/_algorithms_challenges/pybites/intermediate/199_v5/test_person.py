@@ -26,19 +26,19 @@ ___ child():
 
 
 ___ test_string_repr_person(person):
-    ... str(person) __ 'I am a person'
+    ... s..(person) __ 'I am a person'
 
 
 ___ test_string_repr_dad(dad):
-    ... str(dad) __ 'I am a person and cool daddy'
+    ... s..(dad) __ 'I am a person and cool daddy'
 
 
 ___ test_string_repr_mom(mom):
-    ... str(mom) __ 'I am a person and awesome mom'
+    ... s..(mom) __ 'I am a person and awesome mom'
 
 
 ___ test_string_repr_child(child):
-    ... str(child) __ 'I am the coolest kid'
+    ... s..(child) __ 'I am the coolest kid'
 
 
 ___ test_mro_of_person():

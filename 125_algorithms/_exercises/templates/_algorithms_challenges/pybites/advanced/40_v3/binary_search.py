@@ -5,7 +5,7 @@ ___ binary_search(sequence, target):
     left = 0
     right = l..(sequence) - 1
 
-    while left <= right:
+    w.... left <= right:
         mid = floor((left + right) / 2)
         val = sequence[mid]
         __ target < val:

@@ -8,9 +8,9 @@ ___ get_index_different_char(chars):
 
     alnum_count = not_alnum_count =  0 
     alnum_index = not_alnum_index = N..
-    ___ i,char __ enumerate(chars):
+    ___ i,char __ e..(chars):
         
-        char = str(char)
+        char = s..(char)
         __ char.isalnum():
             alnum_index = i
             alnum_count += 1

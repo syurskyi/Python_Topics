@@ -26,7 +26,7 @@ number of consecutive 1's and 0's.
 
 
 class Solution:
-    ___ countBinarySubstrings(self, s: str) -> int:
+    ___ countBinarySubstrings(self, s: s..) -> int:
         """
         two-pointers + math
         """
@@ -44,7 +44,7 @@ class Solution:
 
         r.. ret
 
-    ___ countBinarySubstrings_error(self, s: str) -> int:
+    ___ countBinarySubstrings_error(self, s: s..) -> int:
         """
         two-pointers + math
         """
@@ -54,7 +54,7 @@ class Solution:
             r.. ret
         counter[s[0]] += 1
         ___ i __ r..(1, l..(s)):
-            __ s[i] != s[i-1] and counter[s[i]] != 0:
+            __ s[i] != s[i-1] a.. counter[s[i]] != 0:
                 counter[s[i]] = 0
 
             counter[s[i]] += 1

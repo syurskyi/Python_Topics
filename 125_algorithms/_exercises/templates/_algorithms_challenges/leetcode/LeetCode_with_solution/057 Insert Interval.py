@@ -60,7 +60,7 @@ class SolutionSlow(object):
         :param itvls: list of Interval
         :return: list of Interval
         """
-        itvls.sort(cmp=l.... a, b: a.start - b.start)
+        itvls.s..(cmp=l.... a, b: a.start - b.start)
 
         ret = [itvls[0]]
         ___ cur __ itvls[1:]:

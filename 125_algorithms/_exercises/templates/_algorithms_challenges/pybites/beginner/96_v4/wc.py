@@ -7,6 +7,6 @@ ___ wc(file_):
     with open(file_) as f:
         ___ line __ f.readlines():
             lines += 1
-            words += l..(line.split())
+            words += l..(line.s..())
             chars += l..(line)
     r.. f'{lines} {words} {chars} {file_}'

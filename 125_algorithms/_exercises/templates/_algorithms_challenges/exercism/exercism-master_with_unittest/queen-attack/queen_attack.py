@@ -29,8 +29,8 @@ class Board:
                 abs(self.white_coords[1] - self.black_coords[1]))
 
     ___ valid_coords(self):
-        r.. (self.different_coords() and
-                self.valid_coord(self.white_coords) and
+        r.. (self.different_coords() a..
+                self.valid_coord(self.white_coords) a..
                 self.valid_coord(self.black_coords))
 
     ___ different_coords(self):
@@ -38,7 +38,7 @@ class Board:
 
     @staticmethod
     ___ valid_coord(coord):
-        r.. (0 <= coord[0] <= 7 and 0 <= coord[1] <= 7)
+        r.. (0 <= coord[0] <= 7 a.. 0 <= coord[1] <= 7)
 
     @staticmethod
     ___ place_piece(board, piece, coords):

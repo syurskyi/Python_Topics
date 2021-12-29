@@ -4,7 +4,7 @@ class Solution:
     ___ anagrams(self, strs):
         d = {}
         res    # list
-        ___ i, s __ enumerate(strs):
+        ___ i, s __ e..(strs):
             key = self.make_key(s)
             # First occurence of an anagram
             __ key n.. __ d:
@@ -32,5 +32,5 @@ class Solution:
             c = chr(i)
             __ c __ d:
                 res.a..(c)
-                res.a..(str(d[c]))
+                res.a..(s..(d[c]))
         r.. ''.join(res)

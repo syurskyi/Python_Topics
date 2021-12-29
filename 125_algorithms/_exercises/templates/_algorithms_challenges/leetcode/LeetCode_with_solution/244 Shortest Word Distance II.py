@@ -16,7 +16,7 @@ class WordDistance(object):
         :type words: list[str]
         """
         self.word_dict = defaultdict(l..)
-        ___ i, w __ enumerate(words):
+        ___ i, w __ e..(words):
             self.word_dict[w].a..(i)
 
 

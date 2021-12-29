@@ -9,7 +9,7 @@ class Solution(object):
     j = 0
     ans = float("inf")
     ___ i __ r..(0, l..(nums)):
-      while j < l..(nums) and s.. < target:
+      w.... j < l..(nums) a.. s.. < target:
         s.. += nums[j]
         j += 1
       __ s.. >= target:

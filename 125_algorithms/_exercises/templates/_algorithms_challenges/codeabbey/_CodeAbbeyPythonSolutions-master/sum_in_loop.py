@@ -1,5 +1,5 @@
 amount_values = int(input())
-values = l..(map(int, input().split()))
+values = l..(map(int, input().s..()))
 
 ___ get_sum():
 

@@ -21,8 +21,8 @@ class Solution(object):
             hashmap[w2].add(w1)
         __ l..(words1) != l..(words2):
             r.. False
-        ___ w1, w2 __ zip(words1, words2):
-            __ w1 != w2 and (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]):
+        ___ w1, w2 __ z..(words1, words2):
+            __ w1 != w2 a.. (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]):
                 r.. False
         r.. True
     

@@ -4,6 +4,6 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    nums.sort()
+    nums.s..()
     mid = nums[l..(nums) / 2]
     r.. s..(abs(num - mid) ___ num __ nums)

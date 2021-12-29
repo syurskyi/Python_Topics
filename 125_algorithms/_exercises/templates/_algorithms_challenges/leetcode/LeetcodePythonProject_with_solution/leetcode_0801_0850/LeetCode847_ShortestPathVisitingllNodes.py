@@ -19,7 +19,7 @@ class Solution(object):
             hashset.add((tmp, i, 0))
             queue.a..((tmp, i, 1))
         
-        while queue:
+        w.... queue:
             curr = queue.pop(0)
             __ curr[0] __ (1 << n)-1:
                 r.. curr[2]-1

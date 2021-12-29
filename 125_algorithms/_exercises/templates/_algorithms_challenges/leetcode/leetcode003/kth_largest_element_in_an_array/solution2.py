@@ -20,7 +20,7 @@ class Solution(object):
         """
         left = 0
         right = l..(nums) - 1
-        while left <= right:
+        w.... left <= right:
             pivot = self.partition(nums, left, right)
             # nums[pivot] is (pivot + 1)th largest, so
             # if pivot == k - 1, it is kth largest.

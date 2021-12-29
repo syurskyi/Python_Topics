@@ -2,7 +2,7 @@ _______ pandas as pd
 
 
 ___ series_simple_math(
-    ser: pd.Series, function: str, number: int
+    ser: pd.Series, function: s.., number: int
 ) -> pd.core.series.Series:
     """Write some simple math helper functions for series.
     Take the given series, perfrom the required operation and
@@ -40,7 +40,7 @@ ___ series_simple_math(
 
 
 ___ complex_series_maths(
-    ser_01: pd.Series, ser_02: pd.Series, function: str
+    ser_01: pd.Series, ser_02: pd.Series, function: s..
 ) -> pd.core.series.Series:
     """Write some math helper functions for series.
     Take the two given series, perfrom the required operation and

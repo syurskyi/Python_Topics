@@ -43,7 +43,7 @@ class Solution(object):
         ____:
             l = self.lowestCommonAncestor(root.left, p, q)
             r = self.lowestCommonAncestor(root.right, p, q)
-            __ l __ n.. N.. and r __ n.. N..
+            __ l __ n.. N.. a.. r __ n.. N..
                 r.. root
             ____:
                 __ l __ n.. N..

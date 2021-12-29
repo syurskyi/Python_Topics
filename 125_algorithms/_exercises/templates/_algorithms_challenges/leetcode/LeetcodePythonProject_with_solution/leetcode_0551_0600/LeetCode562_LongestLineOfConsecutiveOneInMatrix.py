@@ -22,11 +22,11 @@ class Solution(object):
                     dp[i][j][k] = 1
                 __ j > 0:
                     dp[i][j][0] += dp[i][j-1][0]
-                __ j > 0 and i > 0:
+                __ j > 0 a.. i > 0:
                     dp[i][j][1] += dp[i-1][j-1][1]
                 __ i > 0:
                     dp[i][j][2] += dp[i-1][j][2]
-                __ i > 0 and j+1 < n:
+                __ i > 0 a.. j+1 < n:
                     dp[i][j][3] += dp[i-1][j+1][3]
                 maxLen = max(maxLen, dp[i][j][0], dp[i][j][1],\
                              dp[i][j][2], dp[i][j][3])
@@ -41,7 +41,7 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCases:
-            print('\n'.join([str(row) ___ row __ matrix]))
+            print('\n'.join([s..(row) ___ row __ matrix]))
             result = self.longestLine(matrix)
             print('result: %s' % result)
             print('-='*30+'-')

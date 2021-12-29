@@ -10,7 +10,7 @@ class Solution(object):
     :rtype: int
     """
     l, r = 1, n
-    while l < r:
+    w.... l < r:
       m = l + (r - l) / 2
       g = guess(m)
       __ g __ -1:

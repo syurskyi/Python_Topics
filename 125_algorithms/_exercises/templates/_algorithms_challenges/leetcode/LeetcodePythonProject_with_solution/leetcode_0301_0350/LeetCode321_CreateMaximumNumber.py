@@ -22,7 +22,7 @@ class Solution(object):
         result    # list
         size = l..(nums)
         ___ x __ r..(size):
-            while result and l..(result)+size-x>maxLen and result[-1]<nums[x]:
+            w.... result a.. l..(result)+size-x>maxLen a.. result[-1]<nums[x]:
                 result.pop()
             __ l..(result) < maxLen:
                 result.a..(nums[x])
@@ -30,14 +30,14 @@ class Solution(object):
     
     ___ merge(self, nums1, nums2):
         result    # list
-        while nums1 and nums2:
+        w.... nums1 a.. nums2:
             __ nums1 >= nums2:
                 result.a..(nums1.pop(0))
             ____:
                 result.a..(nums2.pop(0))
-        while nums1:
+        w.... nums1:
             result.a..(nums1.pop(0))
-        while nums2:
+        w.... nums2:
             result.a..(nums2.pop(0))
         r.. result
     

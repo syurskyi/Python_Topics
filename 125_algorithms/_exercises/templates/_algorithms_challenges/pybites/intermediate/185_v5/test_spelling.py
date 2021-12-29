@@ -10,8 +10,8 @@ ___ a_words():
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
     r.. {word ___ word __ words
-            __ word.startswith('a') and l..(word) > 1
-            and word[1] __ string.ascii_letters[:13]}
+            __ word.startswith('a') a.. l..(word) > 1
+            a.. word[1] __ string.ascii_letters[:13]}
 
 
 @pytest.mark.parametrize("word, expected", [

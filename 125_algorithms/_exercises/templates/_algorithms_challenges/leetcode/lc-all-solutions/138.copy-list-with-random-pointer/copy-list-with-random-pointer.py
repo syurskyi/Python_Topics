@@ -12,20 +12,20 @@ class Solution(object):
     :rtype: RandomListNode
     """
     p = head
-    while p:
+    w.... p:
       copy = RandomListNode(p.label)
       copy.next = p.next
       p.next = copy
       p = copy.next
 
     p = head
-    while p:
-      p.next.random = p.random and p.random.next
+    w.... p:
+      p.next.random = p.random a.. p.random.next
       p = p.next.next
 
     p = head
-    copy = chead = head and head.next
-    while p:
+    copy = chead = head a.. head.next
+    w.... p:
       p.next = p = copy.next
-      copy.next = copy = p and p.next
+      copy.next = copy = p a.. p.next
     r.. chead

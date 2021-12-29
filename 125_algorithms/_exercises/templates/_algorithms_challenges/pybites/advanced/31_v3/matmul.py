@@ -8,13 +8,13 @@ class Matrix(object):
 
     ___ __matmul__(self, other):
         A = self.values
-        B = l..(zip(*other.values))
+        B = l..(z..(*other.values))
         print(A)
         print(B)
         Y = [[0 ___ _ __ r..(l..(B))] ___ _ __ r..(l..(A))]
         ___ i __ r..(l..(A)):
             ___ j __ r..(l..(B)):
-                Y[i][j] = s..(a * b ___ a, b __ zip(A[i], B[j]))
+                Y[i][j] = s..(a * b ___ a, b __ z..(A[i], B[j]))
         r.. Matrix(Y)
 
     ___ __imatmul__(self, other):

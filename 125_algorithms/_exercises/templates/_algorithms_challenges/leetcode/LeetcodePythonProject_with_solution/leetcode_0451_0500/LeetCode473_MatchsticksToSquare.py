@@ -15,13 +15,13 @@ class Solution(object):
         __ sumVal%4 != 0: r.. False
         target = sumVal//4
         # Faster
-        nums.sort(r.._T..
+        nums.s..(r.._T..
         r.. self.helper(nums, [0]*4, 0, target)
     
     ___ helper(self, nums, sums, ind, target):
         __ ind __ l..(nums):
-            __ sums[0] __ target and sums[1] __ target and\
-                sums[2] __ target and sums[3] __ target:
+            __ sums[0] __ target a.. sums[1] __ target a..\
+                sums[2] __ target a.. sums[3] __ target:
                 r.. True
             r.. False
         ___ i __ r..(4):

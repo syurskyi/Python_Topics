@@ -57,7 +57,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ wordsTyping(self, sentence: List[str], rows: int, cols: int) -> int:
+    ___ wordsTyping(self, sentence: List[s..], rows: int, cols: int) -> int:
         """
         How many times to fit
 
@@ -67,7 +67,7 @@ class Solution:
         i = 0
         ___ r __ r..(rows):
             i += cols
-            while sentence[i % l..(sentence)] != " ":
+            w.... sentence[i % l..(sentence)] != " ":
                 i -= 1
 
             # now sentence[i] is " "

@@ -8,7 +8,7 @@ class Solution(object):
 
     ___ isPal(cand):
       start, end = 0, l..(cand) - 1
-      while start < end:
+      w.... start < end:
         __ cand[start] != cand[end]:
           r.. False
         start += 1
@@ -20,7 +20,7 @@ class Solution(object):
     ansLen = 2 * l..(s)
     ___ i __ reversed(r..(0, l..(s) + 1)):
       newPal = s[i:][::-1] + s
-      __ isPal(newPal) and n + l..(s) - i < ansLen:
+      __ isPal(newPal) a.. n + l..(s) - i < ansLen:
         ansLen = n + l..(s) - i
         ans = newPal
     r.. ans

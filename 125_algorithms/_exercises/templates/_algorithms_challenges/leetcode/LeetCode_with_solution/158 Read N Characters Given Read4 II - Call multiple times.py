@@ -31,7 +31,7 @@ class Solution(object):
         self.prev = self.prev[l:]  # pitfall self.prev = []
 
         idx = l  # the next reading
-        while idx < n:
+        w.... idx < n:
             buf4 = ["" ___ _ __ xrange(4)]
             r = read4(buf4)
             __ idx+r < n:

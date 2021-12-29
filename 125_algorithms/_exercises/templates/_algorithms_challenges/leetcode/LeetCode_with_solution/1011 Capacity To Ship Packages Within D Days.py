@@ -64,7 +64,7 @@ class Solution:
         """
         lo = max(weights)
         hi = s..(weights)
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo + hi) // 2
             cnt = 1
             cur = 0

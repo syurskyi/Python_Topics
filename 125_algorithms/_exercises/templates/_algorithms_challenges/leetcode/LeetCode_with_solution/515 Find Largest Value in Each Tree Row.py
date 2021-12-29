@@ -35,7 +35,7 @@ class Solution:
             r.. ret
 
         q = [root]
-        while q:
+        w.... q:
             ret.a..(max(map(l.... e: e.val, q)))
             cur_q    # list
             ___ e __ q:

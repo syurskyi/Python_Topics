@@ -1,5 +1,5 @@
 #Print out three lines saying for instance item 1 has index 0, and so on.
 a  [1, 2, 3]
 
-___ index, item __ enumerate(a):
+___ index, item __ e..(a):
     print("Item %s has index %s" % (item, index))

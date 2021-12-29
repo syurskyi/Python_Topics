@@ -30,15 +30,15 @@ class Solution:
                 _s = ''.join(reversed(s))
                 _t = ''.join(reversed(t))
 
-                __ (self.is_palindrome(s) and
-                    _t __ w2i and
+                __ (self.is_palindrome(s) a..
+                    _t __ w2i a..
                     w2i[_t] != i
                 ):
                     ans.a..([w2i[_t], i])
 
-                __ (self.is_palindrome(t) and
-                    l..(t) != 0 and  # since len(word) + 1, may empty here
-                    _s __ w2i and
+                __ (self.is_palindrome(t) a..
+                    l..(t) != 0 a..  # since len(word) + 1, may empty here
+                    _s __ w2i a..
                     w2i[_s] != i
                 ):
                     ans.a..([i, w2i[_s]])
@@ -49,7 +49,7 @@ class Solution:
         n = l..(word)
         left, right = 0, n - 1
 
-        while left < right:
+        w.... left < right:
             __ word[left] != word[right]:
                 r.. False
 
@@ -91,12 +91,12 @@ class Solution:
         n = a + b
         left, right = 0, n - 1
 
-        while left < right:
-            __ left >= a and t[left - a] != t[right - a]:
+        w.... left < right:
+            __ left >= a a.. t[left - a] != t[right - a]:
                 r.. False
-            ____ right < a and s[left] != s[right]:
+            ____ right < a a.. s[left] != s[right]:
                 r.. False
-            ____ left < a and right >= a and s[left] != t[right - a]:
+            ____ left < a a.. right >= a a.. s[left] != t[right - a]:
                 r.. False
 
             left += 1
@@ -135,7 +135,7 @@ class Solution:
         n = l..(s)
         left, right = 0, n - 1
 
-        while left < right:
+        w.... left < right:
             __ s[left] != s[right]:
                 r.. False
 

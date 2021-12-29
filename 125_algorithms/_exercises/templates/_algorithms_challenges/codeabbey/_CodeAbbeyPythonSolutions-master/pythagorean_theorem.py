@@ -13,7 +13,7 @@ ___ get_triangle_type(side1, side2, side3):
         r.. "R"
 
 ___ i __ r..(amount_values):
-    side1, side2, side3 = map(int, input().split())
+    side1, side2, side3 = map(int, input().s..())
     results.a..(get_triangle_type(side1,side2, side3))
 
 print(*results)

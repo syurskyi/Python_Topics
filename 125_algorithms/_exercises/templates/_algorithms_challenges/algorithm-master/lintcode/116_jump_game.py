@@ -47,7 +47,7 @@ class Solution:
                 backtracking
                 if `j` could be reached
                 """
-                __ dp[j] and j + A[j] >= i:
+                __ dp[j] a.. j + A[j] >= i:
                     """
                     if jump from `j` can reach `i`
                     """

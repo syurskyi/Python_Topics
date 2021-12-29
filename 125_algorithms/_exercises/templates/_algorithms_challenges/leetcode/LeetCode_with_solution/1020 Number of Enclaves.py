@@ -42,13 +42,13 @@ class Solution:
         visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ n.. visited[i][j] and A[i][j] __ 1 and (i __ 0 o. j __ 0 o. i __ m - 1 o. j __ n - 1):
+                __ n.. visited[i][j] a.. A[i][j] __ 1 a.. (i __ 0 o. j __ 0 o. i __ m - 1 o. j __ n - 1):
                     self.dfs(A, i, j, visited)
 
         ret = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ A[i][j] __ 1 and n.. visited[i][j]:
+                __ A[i][j] __ 1 a.. n.. visited[i][j]:
                     ret += 1
         r.. ret
 
@@ -58,7 +58,7 @@ class Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and n.. visited[I][J] and A[I][J] __ 1:
+            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. A[I][J] __ 1:
                 self.dfs(A, I, J, visited)
 
 
@@ -74,7 +74,7 @@ class SolutionError:
         visited = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]  # 0 not off, 1 off
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ n.. visited[i][j] and A[i][j] __ 1:
+                __ n.. visited[i][j] a.. A[i][j] __ 1:
                     self.dfs(A, i, j, visited)
         r.. self.ret
 
@@ -84,13 +84,13 @@ class SolutionError:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ n.. (0 <= I < m and 0 <= J < n):
+            __ n.. (0 <= I < m a.. 0 <= J < n):
                 visited[i][j] = 1
                 r.. True
             __ visited[I][J] __ 1:
                 visited[i][j] = 1
                 r.. True
-            __ visited[I][J] __ N.. and A[I][J] __ 1 and self.dfs(A, I, J, visited):
+            __ visited[I][J] __ N.. a.. A[I][J] __ 1 a.. self.dfs(A, I, J, visited):
                 visited[i][j] = 1
                 r.. True
 

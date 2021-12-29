@@ -12,7 +12,7 @@ ___ get_season_csv_file(season):
     """Receives a season int, and downloads loads in its
        corresponding CSV_URL"""
     with requests.Session() as s:
-        download = s.get(CSV_URL.format(season))
+        download = s.get(CSV_URL.f..(season))
         r.. download.content.decode('utf-8')
 
 
@@ -26,7 +26,7 @@ ___ get_num_words_spoken_by_character_per_episode(content):
     
 
     ___ line __ csv.DictReader(StringIO(content)):
-        counts[line['Character']][line['Episode']] += l..(line['Line'].split())
+        counts[line['Character']][line['Episode']] += l..(line['Line'].s..())
 
     r.. counts
 

@@ -1,4 +1,4 @@
-___ get_profile(*args, **kwargs) -> str:
+___ get_profile(*args, **kwargs) -> s..:
     name = profession = N..
     ___ kw __ kwargs:
         __ kw __ 'name':
@@ -11,6 +11,6 @@ ___ get_profile(*args, **kwargs) -> str:
         name = 'julian'
     __ profession __ N..
         profession = 'programmer'
-    __ type(profession) != str o. type(name) != str o. l..(args) > 0:
+    __ type(profession) != s.. o. type(name) != s.. o. l..(args) > 0:
         raise TypeError
     r.. f'{name} is a {profession}'

@@ -17,7 +17,7 @@ __author__ = 'Daniel'
 
 class Solution(object):
     ___ wordPattern(self, pattern, s):
-        lst = s.split(" ")
+        lst = s.s..(" ")
         __ l..(pattern) != l..(lst):
             r.. False
 
@@ -51,7 +51,7 @@ class OneToOneMap(object):
 
 
 class SolutionError(object):
-    ___ wordPattern(self, pattern, str):
+    ___ wordPattern(self, pattern, s..):
         """
         May not always work due to OneToOneMap implementation in the case that a word is 1-letter.
 
@@ -60,16 +60,16 @@ class SolutionError(object):
         :rtype: bool
         """
         m = OneToOneMap()
-        lst = str.split(" ")
+        lst = s...s..(" ")
         __ l..(pattern) != l..(lst):
             r.. False
 
         ___ i __ xrange(l..(pattern)):
             a = m.get(pattern[i])
             b = m.get(lst[i])
-            __ a __ N.. and b __ N..
+            __ a __ N.. a.. b __ N..
                 m.set(pattern[i], lst[i])
-            ____ a __ N.. and b __ n.. N..
+            ____ a __ N.. a.. b __ n.. N..
                 r.. False
             ____ a != lst[i]:
                 r.. False

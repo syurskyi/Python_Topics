@@ -17,7 +17,7 @@ class Solution(object):
                 queue1.a..(i)
             ____:
                 queue2.a..(i)
-        while queue1 and queue2:
+        w.... queue1 a.. queue2:
             r_index = queue1.pop(0)
             d_index = queue2.pop(0)
             __ r_index < d_index:

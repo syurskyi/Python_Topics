@@ -50,9 +50,9 @@ class Solution:
                 ____ A[i] < A[i-1]:
                     mono = 1
             ____:
-                __ A[i] > A[i-1] and mono __ 1:
+                __ A[i] > A[i-1] a.. mono __ 1:
                     r.. False
-                ____ A[i] < A[i-1] and mono __ 2:
+                ____ A[i] < A[i-1] a.. mono __ 2:
                     r.. False
         ____:
             r.. True

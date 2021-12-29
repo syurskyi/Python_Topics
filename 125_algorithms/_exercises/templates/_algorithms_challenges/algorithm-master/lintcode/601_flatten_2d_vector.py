@@ -27,7 +27,7 @@ class Vector2D:
     # @return {boolean} true if it has next element
     # or false
     ___ hasNext(self):
-        while self.x < l..(self.g):
+        w.... self.x < l..(self.g):
             __ self.y < l..(self.g[self.x]):
                 r.. True
 

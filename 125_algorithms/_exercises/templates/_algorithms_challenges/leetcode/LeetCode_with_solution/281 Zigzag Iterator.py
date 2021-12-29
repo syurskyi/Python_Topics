@@ -12,13 +12,13 @@ class ZigzagIterator(object):
         :type v2: List[int]
         """
         self.mat = [v1, v2]
-        self.maxa = max((c, r) ___ r, c __ enumerate(map(l.... x: l..(x)-1, self.mat)))
+        self.maxa = max((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, self.mat)))
         self.i = 0
         self.j = 0
         self._reposition()
 
     ___ _reposition(self):
-        while self.i >= l..(self.mat) o. self.j >= l..(self.mat[self.i]):
+        w.... self.i >= l..(self.mat) o. self.j >= l..(self.mat[self.i]):
             __ n.. self.hasNext():
                 r..
 
@@ -52,5 +52,5 @@ __ __name__ __ "__main__":
     v1 = [1, 2]
     v2 = [3, 4, 5, 6]
     itr = ZigzagIterator(v1, v2)
-    while itr.hasNext():
+    w.... itr.hasNext():
         print itr.next()

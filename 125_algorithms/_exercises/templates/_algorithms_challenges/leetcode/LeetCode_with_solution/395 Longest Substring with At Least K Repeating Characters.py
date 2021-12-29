@@ -49,5 +49,5 @@ class Solution(object):
             r.. l..(s)
 
         r.. max(
-            map(l.... x: self.longestSubstring(x, k), s.split(c))
+            map(l.... x: self.longestSubstring(x, k), s.s..(c))
         )

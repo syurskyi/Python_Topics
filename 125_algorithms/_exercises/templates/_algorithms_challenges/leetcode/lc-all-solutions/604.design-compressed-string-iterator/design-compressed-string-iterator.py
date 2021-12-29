@@ -13,7 +13,7 @@ class StringIterator(object):
     __ self.idx + 1 < l..(self.data):
       self.cur = self.data[self.idx]
       end = self.idx + 1
-      while end < l..(self.data) and self.data[end].isdigit():
+      w.... end < l..(self.data) a.. self.data[end].isdigit():
         end += 1
       print
       end
@@ -36,7 +36,7 @@ class StringIterator(object):
     """
     :rtype: bool
     """
-    r.. self.idx < l..(self.data) and self.num > 0
+    r.. self.idx < l..(self.data) a.. self.num > 0
 
 # Your StringIterator object will be instantiated and called as such:
 # obj = StringIterator(compressedString)

@@ -74,10 +74,10 @@ class Solution:
 
         ret = set()
         i = 0
-        while i < l..(p):
+        w.... i < l..(p):
             cur = [p[i]]
             j = i + 1
-            while j < l..(p) and (ord(p[j]) - ord(cur[-1]) __ 1 o. p[j] __ "a" and cur[-1] __ "z"):
+            w.... j < l..(p) a.. (ord(p[j]) - ord(cur[-1]) __ 1 o. p[j] __ "a" a.. cur[-1] __ "z"):
                 cur.a..(p[j])
                 j += 1
             ret.add("".join(cur))

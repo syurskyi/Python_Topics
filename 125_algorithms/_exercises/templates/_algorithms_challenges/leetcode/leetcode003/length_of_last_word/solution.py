@@ -19,10 +19,10 @@ class Solution(object):
         """
         n = l..(s)
         i = n - 1
-        while i >= 0 and s[i].isspace():
+        w.... i >= 0 a.. s[i].isspace():
             i -= 1
         res = 0
-        while i >= 0 and n.. s[i].isspace():
+        w.... i >= 0 a.. n.. s[i].isspace():
             res += 1
             i -= 1
         r.. res

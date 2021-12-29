@@ -17,7 +17,7 @@ class Solution(object):
   ___ _reverseList(self, head):
     pre = N..
     cur = head
-    while cur:
+    w.... cur:
       tmp = cur.next
       cur.next = pre
       pre = cur
@@ -32,7 +32,7 @@ class Solution(object):
     """
     dHead = dummy = ListNode(-1)
     p = head
-    while p:
+    w.... p:
       tmp = dummy.next
       dummy.next = p
       p = p.next

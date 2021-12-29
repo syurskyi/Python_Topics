@@ -10,7 +10,7 @@ class Solution(object):
         res = 10
         uniqueDigits = 9
         availableNumbers = 9
-        while n > 1 and availableNumbers > 0:
+        w.... n > 1 a.. availableNumbers > 0:
             uniqueDigits = uniqueDigits*availableNumbers
             res += uniqueDigits
             availableNumbers -= 1

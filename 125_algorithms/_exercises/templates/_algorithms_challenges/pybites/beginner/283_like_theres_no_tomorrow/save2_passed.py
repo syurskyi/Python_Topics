@@ -1,6 +1,6 @@
-_______ datetime
+_______ d__
 
 ___ tomorrow(date_ N..
     __ date __ N..
-        date = datetime.date.today()
-    r.. date + datetime.timedelta(days=1)
+        date = d__.date.today()
+    r.. date + d__.t..(days=1)

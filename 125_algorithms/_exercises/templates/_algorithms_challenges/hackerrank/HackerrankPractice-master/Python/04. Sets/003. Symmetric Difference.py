@@ -2,6 +2,6 @@
 # Score: 10
 
 
-i, m = input(), set(map(int, input().split()))
-i, n = input(), set(map(int, input().split()))
+i, m = input(), set(map(int, input().s..()))
+i, n = input(), set(map(int, input().s..()))
 print(*s..(m.symmetric_difference(n)), sep='\n')

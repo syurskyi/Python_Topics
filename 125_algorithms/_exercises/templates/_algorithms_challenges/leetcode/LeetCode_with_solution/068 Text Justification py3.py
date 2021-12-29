@@ -58,7 +58,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+    ___ fullJustify(self, words: List[s..], maxWidth: int) -> List[s..]:
         """
         Round robin distribution of spaces
 
@@ -90,7 +90,7 @@ class Solution:
 
 
 class Solution2:
-    ___ fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+    ___ fullJustify(self, words: List[s..], maxWidth: int) -> List[s..]:
         """
         Round robin distribution of spaces
 

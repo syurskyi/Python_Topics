@@ -17,7 +17,7 @@ ___ calc_median_from_dict(d: d..) -> float:
         ___ _ __ r..(key_occurrence):
             frequency.a..(key)
 
-    frequency.sort()
+    frequency.s..()
 
     __ l..(frequency) % 2 != 0:
         r.. float(frequency[l..(frequency) // 2])

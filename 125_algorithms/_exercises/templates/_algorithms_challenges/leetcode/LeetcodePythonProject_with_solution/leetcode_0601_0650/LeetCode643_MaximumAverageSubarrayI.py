@@ -13,7 +13,7 @@ class Solution(object):
         __ k <= 0: r.. 0
         sumVal = 0
         maxVal = float('-inf')
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             sumVal += num
             __ i >= k-1:
                 maxVal = max(maxVal, sumVal)

@@ -9,7 +9,7 @@ Good luck and have fun!
 
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ os
 _______ urllib.request
 
@@ -25,7 +25,7 @@ IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 users, popular_challenges = Counter(), Counter()
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 # code
@@ -46,10 +46,10 @@ ___ gen_files():
     """
     with open(tempfile) as infile:
         ___ line __ infile:
-            chunks = line.split(',')
-            __ chunks[1].strip() __ "True":
-                s = chunks[0].split('/')
-                yield s[1]
+            chunks = line.s..(',')
+            __ chunks[1].s.. __ "True":
+                s = chunks[0].s..('/')
+                y.. s[1]
 
 ___ diehard_pybites():
     """Return a Stats namedtuple (defined above) that contains the user that
@@ -63,9 +63,9 @@ ___ diehard_pybites():
             users[i] += 1
     with open(tempfile) as infile:
         ___ line __ infile:
-            chunks = line.split(',')
-            __ chunks[1].strip() __ "True":
-                s = chunks[0].split('/')
+            chunks = line.s..(',')
+            __ chunks[1].s.. __ "True":
+                s = chunks[0].s..('/')
                 popular_challenges[s[0]] += 1
     s = Stats(users.most_common(1)[0][0], popular_challenges.most_common(1)[0])
     r.. s

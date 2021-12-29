@@ -3,7 +3,7 @@ ___ repeat(item, times):
         r.. []
     index = 1
     output    # list
-    while index <= times:
+    w.... index <= times:
         output.a..(item)
         index += 1
     r.. output

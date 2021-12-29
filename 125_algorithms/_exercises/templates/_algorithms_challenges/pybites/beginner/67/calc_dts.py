@@ -1,4 +1,4 @@
-____ datetime _______ date, timedelta
+____ d__ _______ date, t..
 
 start_100days = date(2017, 3, 30)
 pybites_founded = date(2016, 12, 19)
@@ -9,7 +9,7 @@ ___ get_hundred_days_end_date():
     """Return a string of yyyy-mm-dd"""
 
 
-    r.. (start_100days + timedelta(days=100)).isoformat()
+    r.. (start_100days + t..(days=100)).isoformat()
 
 
 

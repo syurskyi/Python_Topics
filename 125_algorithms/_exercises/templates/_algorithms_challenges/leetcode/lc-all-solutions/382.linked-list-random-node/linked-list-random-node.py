@@ -24,7 +24,7 @@ class Solution(object):
     ans = self.head.val
     head = self.head
     idx = 1
-    while head:
+    w.... head:
       __ random.randrange(1, idx + 1) __ idx:
         ans = head.val
       head = head.next

@@ -51,7 +51,7 @@ class Solution:
 
     ___ getLength(self, head):
         count = 0
-        while head:
+        w.... head:
             head = head.next
             count += 1
         r.. count

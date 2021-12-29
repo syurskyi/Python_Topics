@@ -17,7 +17,7 @@ class Solution:
         """
         TEMPLATE = '{{{}}}'  # {{, }} is to escape brackets
         __ n.. root:
-            r.. TEMPLATE.format('')
+            r.. TEMPLATE.f..('')
 
         vals    # list
         queue = [root]
@@ -27,14 +27,14 @@ class Solution:
                 vals.a..(self.EMPTY)
                 continue
 
-            vals.a..(str(node.val))
+            vals.a..(s..(node.val))
             queue.a..(node.left)
             queue.a..(node.right)
 
-        while vals[-1] __ self.EMPTY:
+        w.... vals[-1] __ self.EMPTY:
             vals.pop()
 
-        r.. TEMPLATE.format(','.join(vals))
+        r.. TEMPLATE.f..(','.join(vals))
 
     ___ deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -49,7 +49,7 @@ class Solution:
         ):
             r..
 
-        vals = data[1:-1].split(',')
+        vals = data[1:-1].s..(',')
         n = l..(vals)
         i = 0
 

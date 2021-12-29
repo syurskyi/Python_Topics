@@ -36,7 +36,7 @@ class Solution:
                 dp[ind] = 1
 
             # trough in the middle
-            __ ind+1<length and ratings[ind-1]>val and val<=ratings[ind+1]:
+            __ ind+1<length a.. ratings[ind-1]>val a.. val<=ratings[ind+1]:
                 self.re_adjust(ratings, dp, ind)
 
         # trough at the end
@@ -51,7 +51,7 @@ class Solution:
         __ original__1: r..  # no adjustment needed
         i = ind
         candy = 1
-        while i>0 and ratings[i-1]>ratings[i]:  # test case [8, 7, 6, 5, 4, 3, 2, 1]
+        w.... i>0 a.. ratings[i-1]>ratings[i]:  # test case [8, 7, 6, 5, 4, 3, 2, 1]
             dp[i] = candy
             candy += 1
             i -= 1

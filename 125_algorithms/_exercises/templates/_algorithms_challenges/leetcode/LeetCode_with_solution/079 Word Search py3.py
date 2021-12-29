@@ -27,7 +27,7 @@ dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 class Solution:
-    ___ exist(self, board: List[List[str]], word: str) -> bool:
+    ___ exist(self, board: List[List[s..]], word: s..) -> bool:
         m, n = l..(board), l..(board[0])
         visited = defaultdict(l....: defaultdict(bool))
         ___ i __ r..(m):
@@ -47,7 +47,7 @@ class Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and n.. visited[I][J] and board[I][J] __ word[idx]:
+            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
                 __ self.dfs(board, visited, I, J, word, idx + 1):
                     r.. True
 

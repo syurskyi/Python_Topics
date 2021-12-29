@@ -10,7 +10,7 @@ class Solution(object):
     sumA = s..(A)
     fk = 0
     n = l..(A)
-    ___ i, num __ enumerate(A):
+    ___ i, num __ e..(A):
       fk += i * num
     idx = n - 1
     ans = float("-inf")

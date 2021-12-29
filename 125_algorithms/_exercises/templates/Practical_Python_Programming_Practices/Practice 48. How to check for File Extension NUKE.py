@@ -1,6 +1,6 @@
 exe   ['gif','png','jpeg','jpg','svg','txt']
 
-filexe  input("Insert file with extension: ").split('.')
+filexe  input("Insert file with extension: ").s..('.')
 __ l..(filexe) > 2:
     Extension  filexe[-1].l..
     __ Extension __ exe:

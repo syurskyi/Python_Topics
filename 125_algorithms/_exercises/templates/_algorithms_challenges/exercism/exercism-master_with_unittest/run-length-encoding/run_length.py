@@ -1,4 +1,4 @@
-____ itertools _______ groupby
+____ i.. _______ groupby
 _______ re
 
 
@@ -8,7 +8,7 @@ ___ encode(string):
 
 
 ___ helper(g):
-    r.. g[0] __ l..(g) __ 1 ____ str(l..(g)) + g[0]
+    r.. g[0] __ l..(g) __ 1 ____ s..(l..(g)) + g[0]
 
 
 ___ decode(string):

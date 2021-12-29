@@ -13,9 +13,9 @@ class Solution:
         n = l..(nums)
         left, right = 0, n - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
-            __ mid > 0 and nums[mid] __ nums[mid - 1]:
+            __ mid > 0 a.. nums[mid] __ nums[mid - 1]:
                 __ mid & 1 __ 1:
                     left = mid
                 ____:
@@ -27,9 +27,9 @@ class Solution:
                     left = mid
 
         ___ mid __ (left, right):
-            __ mid > 0 and nums[mid] __ nums[mid - 1]:
+            __ mid > 0 a.. nums[mid] __ nums[mid - 1]:
                 continue
-            __ mid + 1 < n and nums[mid] __ nums[mid + 1]:
+            __ mid + 1 < n a.. nums[mid] __ nums[mid + 1]:
                 continue
             r.. nums[mid]
 

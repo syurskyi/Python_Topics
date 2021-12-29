@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
+TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = datetime.now()
+NOW = d__.now()
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -16,10 +16,10 @@ TIME_OFFSETS = (
 )
 
 
-___ pretty_date(date: datetime):
+___ pretty_date(date: d__):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
-    __ n.. isi..(date, datetime) o. date > NOW:
+    __ n.. isi..(date, d__) o. date > NOW:
         raise ValueError('pretty_date() only accepts datetime objects in the past')
     diff = NOW - date
     seconds = int(diff.total_seconds())

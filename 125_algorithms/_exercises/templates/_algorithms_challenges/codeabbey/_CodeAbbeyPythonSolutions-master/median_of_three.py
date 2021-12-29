@@ -11,7 +11,7 @@ ___ get_median(values):
     results.a..(med)
 
 ___ i __ r..(amount_values):
-    valeus = l..(map(int, input().split()))
+    valeus = l..(map(int, input().s..()))
     get_median(valeus)
 
 print(*results)

@@ -17,12 +17,12 @@ class Solution:
         m = l..(nums)
 
         ___ a __ r..(m - 2):
-            __ a > 0 and nums[a] __ nums[a - 1]:
+            __ a > 0 a.. nums[a] __ nums[a - 1]:
                 continue
 
             b = a + 1
             c = m - 1
-            while b < c:
+            w.... b < c:
                 _sum = nums[a] + nums[b] + nums[c]
                 __ _sum < n:
                     b += 1
@@ -32,9 +32,9 @@ class Solution:
                     ans += 1
                     b += 1
                     c -= 1
-                    while b < c and nums[b] __ nums[b - 1]:
+                    w.... b < c a.. nums[b] __ nums[b - 1]:
                         b += 1
-                    while b < c and nums[c] __ nums[c + 1]:
+                    w.... b < c a.. nums[c] __ nums[c + 1]:
                         c -= 1
 
         r.. ans
@@ -52,7 +52,7 @@ class Solution:
         ___ a __ r..(m + 1):
             target = n - a * a
             b, c = a, m
-            while b <= c:
+            w.... b <= c:
                 _sum = b * b + c * c
                 __ _sum < target:
                     b += 1

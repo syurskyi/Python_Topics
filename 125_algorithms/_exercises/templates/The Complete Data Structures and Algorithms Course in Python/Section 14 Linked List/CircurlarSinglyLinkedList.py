@@ -14,7 +14,7 @@ c_ CircularSinglyLinkedList:
     ___ __iter__(self
         node  head
         w__ node:
-            yield node
+            y.. node
             node  node.next
             __ node __ tail.next:
                 b__

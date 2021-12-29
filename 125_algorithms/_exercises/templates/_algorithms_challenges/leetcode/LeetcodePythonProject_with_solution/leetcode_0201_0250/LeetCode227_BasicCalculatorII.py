@@ -9,16 +9,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        s = s.replace(' ', '')
+        s = s.r..(' ', '')
         i = 0
         res = 0
         curVal = 0
         preVal = 0
         sign = '+'
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i].isdigit():
                 curVal = 0
-                while i < l..(s) and s[i].isdigit():
+                w.... i < l..(s) a.. s[i].isdigit():
                     curVal = curVal*10+int(s[i])
                     i += 1
             __ sign __ '+':
@@ -30,7 +30,7 @@ class Solution(object):
             ____ sign __ '*':
                 preVal *= curVal
             ____ sign __ '/':
-                __ preVal//curVal < 0 and preVal%curVal != 0:
+                __ preVal//curVal < 0 a.. preVal%curVal != 0:
                     preVal = preVal//curVal+1
                 ____:
                     preVal = preVal//curVal

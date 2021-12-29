@@ -39,7 +39,7 @@ class Solution:
         ans    # list
         n = l..(A)
 
-        A.sort()
+        A.s..()
 
         ___ i __ r..(1 << n):
             subset    # list

@@ -1,10 +1,10 @@
-____ collections _______ namedtuple
-____ datetime _______ date
+____ collections _______ n..
+____ d__ _______ date
 
 _______ pandas as pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
-STATION = namedtuple("Station", "ID Date Value")
+STATION = n..("Station", "ID Date Value")
 
 
 ___ high_low_record_breakers_for_2015():
@@ -61,8 +61,8 @@ ___ high_low_record_breakers_for_2015():
     n = o.explode()
 
     n = n.reset_index()
-    n.Date = pd.to_datetime(n.Date,format='%j')
-    n.Date = n.Date.apply(l.... x: x.replace(year=2015))
+    n.Date = pd.to_datetime(n.Date,f..='%j')
+    n.Date = n.Date.apply(l.... x: x.r.. y.._2015))
 
 
     n[0] = n[0].astype('float')

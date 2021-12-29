@@ -8,12 +8,12 @@ ___ sort_words_case_insensitively(words):
         numbers you only need to check the first char of the word)
     """
     #temp = sorted(words, key=lambda test_str: test_str[:1].lower() + test_str[1:])
-    temp = s..(words, key=str.lower)
+    temp = s..(words, key=s...lower)
     temp1    # list
-    ___ index, word __ enumerate(temp):
+    ___ index, word __ e..(temp):
         __ n.. word[0].isdigit():
             temp1.a..(temp[index])
-    ___ index, word __ enumerate(temp):
+    ___ index, word __ e..(temp):
         __ word[0].isdigit():
             temp1.a..(temp[index])
     r.. temp1

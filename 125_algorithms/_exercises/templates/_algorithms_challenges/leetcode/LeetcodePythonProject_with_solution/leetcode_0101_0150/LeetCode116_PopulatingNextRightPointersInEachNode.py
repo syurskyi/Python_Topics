@@ -19,9 +19,9 @@ class Solution:
         lastHead = root
         lastCurrent = N..
         currentHead = N..
-        while lastHead:
+        w.... lastHead:
             lastCurrent = lastHead
-            while lastCurrent:
+            w.... lastCurrent:
                 __ n.. currentHead:
                     currentHead = lastCurrent.left
                     current =  lastCurrent.left

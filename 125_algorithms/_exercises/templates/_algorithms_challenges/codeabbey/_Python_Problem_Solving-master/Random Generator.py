@@ -1,7 +1,7 @@
 #accept the number of the element to generate random numbers
 data = int(input())
 #accept the numbers from which random numbers will be generated
-a = l..(map(str,input().split()))
+a = l..(map(s..,input().s..()))
 #traverse through the list of the numbers
 ___ i __ a:
     #to store the current value of i and this is used if the numbers are repeating then print the random number
@@ -9,7 +9,7 @@ ___ i __ a:
     #to display the count of how many loop were travered to get repetitive number
     count = 0
     #to check if the new number is already in the list. If yes then return the count
-    while str(i) n.. __ store:
+    w.... s..(i) n.. __ store:
         #store the value of i in the list
         store.a..(i)
         #convert the string to integer to perform the operations
@@ -17,7 +17,7 @@ ___ i __ a:
         #square the number
         i = i**2
         #covert to string to take the middle 4 number of the 8 digit number
-        temp_str = str(i)
+        temp_str = s..(i)
         #check if the number is of 8 digit
         __ l..(temp_str) __ 8:
             #if yes then take the middle 4 digits

@@ -52,7 +52,7 @@ class Solution:
         top = 0
         bottom = l..(matrix) - 1
 
-        while left <= right and top <= bottom:
+        w.... left <= right a.. top <= bottom:
             ___ c __ xrange(left, right + 1):
                 result.a..(matrix[top][c])
             ___ r __ xrange(top + 1, bottom + 1):

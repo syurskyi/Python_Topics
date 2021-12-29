@@ -24,7 +24,7 @@ class Solution(object):
         Iterative
         """
         res = N..
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             # First node encountered
             __ res __ N..

@@ -11,18 +11,18 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         j = l..(nums)-1
-        while j > 0 and nums[j-1] >= nums[j]:
+        w.... j > 0 a.. nums[j-1] >= nums[j]:
             j -= 1
         self.reverse(nums, j, l..(nums)-1)
         __ j __ 0:
             r..
         i = j-1
-        while j+1 < l..(nums) and nums[i] >= nums[j]:
+        w.... j+1 < l..(nums) a.. nums[i] >= nums[j]:
             j += 1
         nums[i], nums[j] = nums[j], nums[i]
     
     ___ reverse(self, nums, i, j):
-        while i < j:
+        w.... i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1
             j -= 1

@@ -6,10 +6,10 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    nums.sort()
+    nums.s..()
     ___ i __ r..(0, l..(nums)):
       start, end = i + 1, l..(nums) - 1
-      while start < end:
+      w.... start < end:
         __ nums[i] + nums[start] + nums[end] < target:
           ans += end - start
           start += 1

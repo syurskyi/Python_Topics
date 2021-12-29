@@ -6,7 +6,7 @@ ___ get_max_value(wt, val, capacity
     ___ i __ ra__(0, le_(wt)):
         items[i]  Item(wt[i], val[i], i)
 
-    items.sort(reverse T..)
+    items.s..(reverse T..)
 
     total_val  0
     ___ item __ items:

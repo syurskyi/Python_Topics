@@ -15,7 +15,7 @@ class Solution:
         large_end = N..
         res = N..
         res_end = N..
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             __ head.val >= x:
                 __ large __ N..

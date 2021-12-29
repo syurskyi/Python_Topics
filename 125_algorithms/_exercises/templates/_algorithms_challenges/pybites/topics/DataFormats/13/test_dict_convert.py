@@ -16,7 +16,7 @@ ___ test_dict2nt():
 
 ___ test_nt2json():
     output = nt2json(nt)
-    ... type(output) __ str
+    ... type(output) __ s..
 
     data = json.loads(output)
     ... data['name'] __ 'PyBites'

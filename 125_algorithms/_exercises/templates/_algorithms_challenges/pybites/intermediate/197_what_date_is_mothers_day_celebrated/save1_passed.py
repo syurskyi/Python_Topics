@@ -10,4 +10,4 @@ ___ get_mothers_day_date(year):
             ___ week __ monthcal
             ___ day __ week
             __ day.weekday() __ calendar.SUNDAY
-            and day.month __ month][1]
+            a.. day.month __ month][1]

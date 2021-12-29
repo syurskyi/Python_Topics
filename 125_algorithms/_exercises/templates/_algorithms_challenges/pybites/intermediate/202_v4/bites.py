@@ -12,7 +12,7 @@ __ n.. stats.exists():
 
 
 ___ _bitenum(bite_str):
-    r.. bite_str.split('.')[0].split(' ')[1]
+    r.. bite_str.s..('.')[0].s..(' ')[1]
 
 
 ___ get_most_complex_bites(N=10, stats=stats):
@@ -25,7 +25,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
         bites = l..(csv.reader(f, delimiter=';'))
     bites.pop(0)  # remove header
     bites = [[b[0], float(b[1])] ___ b __ bites __ b[1] != 'None']
-    bites.sort(key=l.... x: x[1], r.._T..
+    bites.s..(key=l.... x: x[1], r.._T..
 
     n_most_comp = bites[:N]
 

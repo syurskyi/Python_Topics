@@ -14,9 +14,9 @@ ava_check = True
 #dictionary to store the count of variable
 arr_check ={}
 
-while l..(ele) < num_ele:
+w.... l..(ele) < num_ele:
     ele = input().s..
-    ele.sort()
+    ele.s..()
     #going through the all the elements
     ___ i __ r..(l..(ele)):
         #print('starting i',i,'value of ele is',ele[i])

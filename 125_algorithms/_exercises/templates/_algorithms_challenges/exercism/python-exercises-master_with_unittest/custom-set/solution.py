@@ -18,7 +18,7 @@ class CustomSet(object):
         r.. a..(x n.. __ other ___ x __ self)
 
     ___ __eq__(self, other):
-        r.. self.issubset(other) and other.issubset(self)
+        r.. self.issubset(other) a.. other.issubset(self)
 
     ___ add(self, element):
         __ element n.. __ self:

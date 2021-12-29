@@ -18,7 +18,7 @@ class Solution(object):
         __ nums __ []:
             res.a..(l..(curr))
             r..
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             curr.a..(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()

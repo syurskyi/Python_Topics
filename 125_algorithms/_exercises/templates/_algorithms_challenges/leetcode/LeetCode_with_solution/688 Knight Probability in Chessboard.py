@@ -51,7 +51,7 @@ class Solution:
         P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
         P[r][c] = 1  # optimize memory
         k = 0
-        while k < K:
+        w.... k < K:
             k += 1
             cur_q = set()
             cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
@@ -59,7 +59,7 @@ class Solution:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < N and 0 <= J < N:
+                    __ 0 <= I < N a.. 0 <= J < N:
                         cur_q.add((I, J))
                         cur_P[I][J] += P[i][j] * 1 / 8
 
@@ -81,7 +81,7 @@ class Solution:
         P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
         P[r][c] = 1  # optimize memory
         k = 0
-        while k < K:
+        w.... k < K:
             k += 1
             cur_q    # list
             cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
@@ -89,7 +89,7 @@ class Solution:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < N and 0 <= J < N:
+                    __ 0 <= I < N a.. 0 <= J < N:
                         cur_q.a..((I, J))  # error, count multiple times
                         cur_P[I][J] += P[i][j] * 1 / 8
 

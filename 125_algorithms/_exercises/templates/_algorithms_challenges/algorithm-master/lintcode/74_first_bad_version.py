@@ -23,7 +23,7 @@ class Solution:
             r.. 0
 
         left, right = 1, n
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ isBadVersion(mid):
                 right = mid

@@ -8,6 +8,6 @@ ___ reverseArray(arr):
 
 
 arrСount = int(input())
-arr = l..(map(int, input().rstrip().split()))
+arr = l..(map(int, input().rstrip().s..()))
 result = reverseArray(arr)
 print(*result)

@@ -33,11 +33,11 @@ ____ collections _______ Counter
 
 
 class Solution:
-    ___ uncommonFromSentences(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences(self, A: s.., B: s..) -> List[s..]:
         """
         need counter, only need to appear once
         """
-        c = Counter(A.split()) + Counter(B.split())
+        c = Counter(A.s..()) + Counter(B.s..())
         ret = [
             k
             ___ k, v __ c.items()
@@ -45,27 +45,27 @@ class Solution:
         ]
         r.. ret
 
-    ___ uncommonFromSentences_complext(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences_complext(self, A: s.., B: s..) -> List[s..]:
         """
         need counter
         """
-        c_A, c_B = Counter(A.split()), Counter(B.split())
+        c_A, c_B = Counter(A.s..()), Counter(B.s..())
         ret    # list
         ___ k, v __ c_A.items():
-            __ v __ 1 and k n.. __ c_B:
+            __ v __ 1 a.. k n.. __ c_B:
                 ret.a..(k)
 
         ___ k, v __ c_B.items():
-            __ v __ 1 and k n.. __ c_A:
+            __ v __ 1 a.. k n.. __ c_A:
                 ret.a..(k)
 
         r.. ret
 
-    ___ uncommonFromSentences_error(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences_error(self, A: s.., B: s..) -> List[s..]:
         """
         set difference
         """
-        s_A, s_B = set(A.split()), set(B.split())
+        s_A, s_B = set(A.s..()), set(B.s..())
         r.. l..(
             (s_A - s_B) | (s_B - s_A)
         )

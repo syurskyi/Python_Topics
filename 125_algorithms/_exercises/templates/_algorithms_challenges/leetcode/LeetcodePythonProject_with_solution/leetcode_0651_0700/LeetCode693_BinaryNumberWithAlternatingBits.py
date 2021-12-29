@@ -11,7 +11,7 @@ class Solution(object):
         """
         prev = n&1
         n >>= 1
-        while n > 0:
+        w.... n > 0:
             digit = n & 1
             __ n.. digit ^ prev:
                 r.. False

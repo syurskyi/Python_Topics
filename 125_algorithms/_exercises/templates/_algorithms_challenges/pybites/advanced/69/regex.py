@@ -13,7 +13,7 @@ ___ is_integer(number):
     """Return True if number is an integer"""
 
     
-    number = str(number)
+    number = s..(number)
 
     r.. re.search(r'^\-?\d+$',number) __ n.. N..
 
@@ -41,7 +41,7 @@ ___ split_string_on_punctuation(text):
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
 
-    r.. [v ___ v __ re.split(r'[?!.,;]\s*',text) __ v != '']
+    r.. [v ___ v __ re.s..(r'[?!.,;]\s*',text) __ v != '']
 
 
 ___ remove_duplicate_spacing(text):

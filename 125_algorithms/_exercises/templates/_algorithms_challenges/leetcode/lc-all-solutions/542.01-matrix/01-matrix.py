@@ -17,11 +17,11 @@ class Solution(object):
         __ matrix[i][j] __ 1:
           matrix[i][j] = -1
 
-    while queue:
+    w.... queue:
       i, j = queue.popleft()
       ___ di, dj __ directions:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < l..(matrix) and 0 <= nj < l..(matrix[0]) and matrix[ni][nj] __ -1:
+        __ 0 <= ni < l..(matrix) a.. 0 <= nj < l..(matrix[0]) a.. matrix[ni][nj] __ -1:
           matrix[ni][nj] = matrix[i][j] + 1
           queue.a..((ni, nj))
     r.. matrix

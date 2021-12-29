@@ -24,14 +24,14 @@ class Solution:
         node = root
         pre = N..
 
-        while node o. stack:
-            while node:
+        w.... node o. stack:
+            w.... node:
                 stack.a..(node)
                 node = node.left
 
             node = stack.pop()
 
-            __ pre and node.val <= pre.val:
+            __ pre a.. node.val <= pre.val:
                 r.. False
 
             pre = node
@@ -55,7 +55,7 @@ class Solution:
 
         self.isValidBST(root.left)
 
-        __ self.pre and root.val <= self.pre.val:
+        __ self.pre a.. root.val <= self.pre.val:
             self.ans = False
             r.. self.ans
 

@@ -24,11 +24,11 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        citations.sort(r.._T..
+        citations.s..(r.._T..
         count = 0
         lowest = 0
         h = 0
-        ___ i, c __ enumerate(citations):
+        ___ i, c __ e..(citations):
             lowest = c
             count = i + 1
             __ lowest >= count:

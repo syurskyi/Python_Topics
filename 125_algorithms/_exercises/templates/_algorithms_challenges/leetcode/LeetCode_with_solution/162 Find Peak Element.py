@@ -30,7 +30,7 @@ class Solution:
 
         l = 0
         h = n
-        while l < h:
+        w.... l < h:
             m = (l+h)/2
             __ self._get(m-1) < self._get(m) > self._get(m+1):
                 r.. m
@@ -58,16 +58,16 @@ class Solution:
 
         l = 0
         h = n
-        while l < h:
+        w.... l < h:
             m = (l+h)/2
-            __ m __ 0 and nums[m] > nums[m+1]:
+            __ m __ 0 a.. nums[m] > nums[m+1]:
                 r.. m
-            ____ m __ n-1 and nums[m] > nums[m-1]:
+            ____ m __ n-1 a.. nums[m] > nums[m-1]:
                 r.. m
             ____ nums[m-1] < nums[m] > nums[m+1]:
                 r.. m
 
-            ____ m+1 < n and nums[m+1] > nums[m]:
+            ____ m+1 < n a.. nums[m+1] > nums[m]:
                 l = m+1
             ____:
                 h = m

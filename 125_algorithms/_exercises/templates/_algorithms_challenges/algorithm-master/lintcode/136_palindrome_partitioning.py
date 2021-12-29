@@ -65,7 +65,7 @@ class Solution:
             ___ end __ r..(start + 2, self.n):
                 self.is_palindrome[start][end] = (
                     self.is_palindrome[start + 1][end - 1]
-                    and s[start] __ s[end]
+                    a.. s[start] __ s[end]
                 )
 
     # traverse all of the possible substring from start

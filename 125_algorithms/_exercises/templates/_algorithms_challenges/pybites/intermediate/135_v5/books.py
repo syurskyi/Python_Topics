@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 ____ operator _______ attrgetter
 
-Book = namedtuple('Book', 'title authors pages published')
+Book = n..('Book', 'title authors pages published')
 
 books = [
     Book(title="Python Interviews",
@@ -39,7 +39,7 @@ ___ sort_books_by_len_of_title(books=books):
 
 
 ___ _last_name(book: Book):
-    r.. (book.authors.split(',')[0]).split(' ')[-1]
+    r.. (book.authors.s..(',')[0]).s..(' ')[-1]
 
 
 ___ sort_books_by_first_authors_last_name(books=books):

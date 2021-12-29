@@ -18,7 +18,7 @@ class Solution(object):
         ___ i __ r..(l..(arr)-1, -1, -1):
             __ arr[i] > arr[i+1]:
                 down[i] = down[i+1]+1
-            __ up[i] and down[i]:
+            __ up[i] a.. down[i]:
                 res = max(res, up[i]+down[i]+1)
         r.. res
     
@@ -30,13 +30,13 @@ class Solution(object):
         arr = A
         res, up, down = 0, 0, 0
         ___ i __ r..(1, l..(arr)):
-            __ (down and arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]):
+            __ (down a.. arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]):
                 up, down = 0, 0
             __ arr[i-1] < arr[i]:
                 up += 1
             ____ arr[i-1] > arr[i]:
                 down += 1
-            __ up and down:
+            __ up a.. down:
                 res = max(res, up+down+1)
         r.. res
     

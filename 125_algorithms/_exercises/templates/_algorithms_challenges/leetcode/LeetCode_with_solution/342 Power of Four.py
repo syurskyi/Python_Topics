@@ -39,7 +39,7 @@ class Solution(object):
         __ num & num-1 != 0:
             r.. False
 
-        while True:
+        w... T...
             __ num __ 0:
                 r.. False
             ____ num __ 1:

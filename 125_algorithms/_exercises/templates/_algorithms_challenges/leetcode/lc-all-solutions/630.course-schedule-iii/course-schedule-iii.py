@@ -22,7 +22,7 @@ class Solution(object):
       __ now + t <= d:
         now += t
         heapq.heappush(heap, -t)
-      ____ heap and -heap[0] > t:
+      ____ heap a.. -heap[0] > t:
         now += t + heapq.heappop(heap)
         heapq.heappush(heap, -t)
     r.. l..(heap)

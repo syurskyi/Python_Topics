@@ -20,7 +20,7 @@ class SQLiteType(Enum):
     NULL = N..
     INTEGER = int
     REAL = float
-    TEXT = str
+    TEXT = s..
     BLOB = bytes
 
 
@@ -49,7 +49,7 @@ class DB:
             column name and column type.
     """
 
-    ___ __init__(self, location: Optional[str] = ":memory:"):
+    ___ __init__(self, location: Optional[s..] = ":memory:"):
         self.location = location
         self.cursor = N..
         self.connection = N..
@@ -65,7 +65,7 @@ class DB:
         self.connection.close()
 
     ___ create(
-            self, table: str, schema: List[Tuple[str, SQLiteType]], primary_key: str
+            self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..
     ):
         """Creates a new table.
 
@@ -99,7 +99,7 @@ class DB:
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
 
-    ___ delete(self, table: str, target: Tuple[str, Any]):
+    ___ delete(self, table: s.., target: Tuple[s.., Any]):
         """Deletes rows from the table.
 
         Args:
@@ -111,7 +111,7 @@ class DB:
         """
         raise NotImplementedError("You have to implement this method first.")
 
-    ___ insert(self, table: str, values: List[Tuple]):
+    ___ insert(self, table: s.., values: List[Tuple]):
         """Inserts one or multiple new records into the database.
 
         Before inserting a value, you should make sure
@@ -142,13 +142,13 @@ class DB:
         con = self.connection
         cur = con.cursor()
         ___ value __ values:
-            yield cur.execute(f"INSERT INTO {table} VALUES {value}")
+            y.. cur.execute(f"INSERT INTO {table} VALUES {value}")
 
     ___ select(
             self,
-            table: str,
-            columns: Optional[List[str]] = N..,
-            target: Optional[Tuple[str, Optional[str], Any]] = N..,
+            table: s..,
+            columns: Optional[List[s..]] = N..,
+            target: Optional[Tuple[s.., Optional[s..], Any]] = N..,
     ) -> List[Tuple]:
         """Selects records from the database.
 
@@ -169,7 +169,7 @@ class DB:
         """
         raise NotImplementedError("You have to implement this method first.")
 
-    ___ update(self, table: str, new_value: Tuple[str, Any], target: Tuple[str, Any]):
+    ___ update(self, table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
         """Update a record in the database.
 
         Args:

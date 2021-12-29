@@ -47,10 +47,10 @@ class Solution:
 
         n = l..(A)
         A = [(A[i], i) ___ i __ r..(n)]
-        A.sort()
+        A.s..()
 
         left, right = 0, n - 1
-        while left < right:
+        w.... left < right:
             _sum = A[left][0] + A[right][0]
             __ _sum __ target:
                 r.. s..([

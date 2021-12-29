@@ -16,6 +16,6 @@ class Solution(object):
         cap += 1
     __ cap __ n:
       r.. True
-    __ cap __ 1 and word[0] __ ud:
+    __ cap __ 1 a.. word[0] __ ud:
       r.. True
     r.. False __ cap > 0 ____ True

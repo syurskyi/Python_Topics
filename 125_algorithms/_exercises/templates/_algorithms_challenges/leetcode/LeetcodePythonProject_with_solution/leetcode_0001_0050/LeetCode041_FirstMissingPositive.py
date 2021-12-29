@@ -14,7 +14,7 @@ class Solution(object):
         ___ num __ nums:
             __ 0 <= num-1 < n:
                 dp[num-1] += 1
-        ___ i, val __ enumerate(dp):
+        ___ i, val __ e..(dp):
             __ val __ 0:
                 r.. i+1
         r.. l..(nums)+1

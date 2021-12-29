@@ -15,6 +15,6 @@ ___ test_zoo_5_animals():
 
 ___ test_animal_instance_str():
     horse = Animal('horse')
-    ... str(horse) __ "10006. Horse"
+    ... s..(horse) __ "10006. Horse"
     monkey = Animal('monkey')
-    ... str(monkey) __ "10007. Monkey"
+    ... s..(monkey) __ "10007. Monkey"

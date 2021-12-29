@@ -15,14 +15,14 @@ class Solution(object):
     one = 0
     two = 0
     p = 2
-    replace = 0
-    while p < l..(s):
+    r.. = 0
+    w.... p < l..(s):
       __ s[p] __ s[p - 1] __ s[p - 2]:
         length = 2
-        while p < l..(s) and s[p] __ s[p - 1]:
+        w.... p < l..(s) a.. s[p] __ s[p - 1]:
           p += 1
           length += 1
-        replace += length / 3
+        r.. += length / 3
         __ length % 3 __ 0:
           one += 1
         __ length % 3 __ 1:
@@ -33,10 +33,10 @@ class Solution(object):
     __ l..(s) < 6:
       r.. max(complexBal, 6 - l..(s))
     ____ l..(s) <= 20:
-      r.. max(complexBal, replace)
+      r.. max(complexBal, r..)
     ____:
       redundant = l..(s) - 20
-      replace -= m..(redundant, one)
-      replace -= m..(max(redundant - one, 0), two * 2) / 2
-      replace -= max(redundant - one - two * 2, 0) / 3
-      r.. redundant + max(complexBal, replace)
+      r.. -= m..(redundant, one)
+      r.. -= m..(max(redundant - one, 0), two * 2) / 2
+      r.. -= max(redundant - one - two * 2, 0) / 3
+      r.. redundant + max(complexBal, r..)

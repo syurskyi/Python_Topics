@@ -15,7 +15,7 @@ class Solution(object):
             r.. 0
         area = heights[0]
         i = 0
-        while i < l..(heights):
+        w.... i < l..(heights):
             __ n.. stack o. heights[i] >= heights[stack[-1]]:
                 stack.a..(i)
                 i+=1
@@ -23,7 +23,7 @@ class Solution(object):
                 h = heights[stack.pop()]
                 w = i __ n.. stack ____ (i-stack[-1]-1)
                 area = max(w*h, area)
-        while stack:
+        w.... stack:
             h = heights[stack.pop()]
             w = i __ n.. stack ____ (i-stack[-1]-1)
             area = max(area, w*h)

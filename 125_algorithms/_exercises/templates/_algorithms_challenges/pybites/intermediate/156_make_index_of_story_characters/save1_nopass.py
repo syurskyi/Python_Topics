@@ -66,8 +66,8 @@ ___ make_character_index(text=text, characters=CHARACTERS):
         character_list.a..(character)
 
     ___ character __ character_list:
-        ___ line __ enumerate(new_text):
+        ___ line __ e..(new_text):
             __ re.search(character, line[1]):
-                d[character.split('|')[0]].a..(line[0])
+                d[character.s..('|')[0]].a..(line[0])
 
     r.. d

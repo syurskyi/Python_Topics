@@ -32,7 +32,7 @@ class TrieNode:
 
 
 class Solution:
-    ___ findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+    ___ findWords(self, board: List[List[s..]], words: List[s..]) -> List[s..]:
         root = self.construct(words)
         m, n = l..(board), l..(board[0])
         visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
@@ -55,7 +55,7 @@ class Solution:
             ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
-                __ 0 <= I < m and 0 <= J < n and n.. visited[I][J]:
+                __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
                     self.dfs(board, visited, I, J, nxt, ret)
 
         visited[i][j] = False

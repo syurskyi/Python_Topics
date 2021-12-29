@@ -33,7 +33,7 @@ class Solution:
 
     ___ get_height(self, cur):
         h = 0  # depth starting from 0
-        while cur:
+        w.... cur:
             h += 1
             cur = cur.left
 
@@ -67,7 +67,7 @@ class Solution_TLE:
         __ self.stopped:
             r..
 
-        __ n.. root.left and n.. root.left:
+        __ n.. root.left a.. n.. root.left:
             __ self.depth __ depth:
                 self.cnt += 1
             ____:

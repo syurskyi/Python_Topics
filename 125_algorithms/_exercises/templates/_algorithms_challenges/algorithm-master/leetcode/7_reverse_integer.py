@@ -11,7 +11,7 @@ class Solution:
         INT_MAX = 0x7FFFFFFF
         _x = x __ x > 0 ____ -x
 
-        while _x:
+        w.... _x:
             ans = ans * 10 + _x % 10
             _x //= 10
 

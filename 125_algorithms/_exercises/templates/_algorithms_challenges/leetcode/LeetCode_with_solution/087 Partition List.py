@@ -35,7 +35,7 @@ class Solution:
         pre = dummy
         pre_smaller = dummy_smaller
         pre_larger = dummy_larger
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
             __ cur.val<x:
                 pre_smaller.next = cur

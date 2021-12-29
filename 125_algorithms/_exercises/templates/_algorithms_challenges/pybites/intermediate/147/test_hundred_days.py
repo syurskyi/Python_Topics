@@ -1,8 +1,8 @@
-____ datetime _______ date, timedelta
+____ d__ _______ date, t..
 
 ____ hundred_days _______ get_hundred_weekdays, TODAY
 
-OTHER_START_DATE = TODAY + timedelta(days=55)
+OTHER_START_DATE = TODAY + t..(days=55)
 
 
 ___ test_get_hundred_weekdays_default_start_date():

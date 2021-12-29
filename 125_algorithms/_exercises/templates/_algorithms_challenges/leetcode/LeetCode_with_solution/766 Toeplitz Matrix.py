@@ -67,7 +67,7 @@ class Solution:
             r = 0
             c = j
             cur = matrix[r][c]
-            while r < m and c < n:
+            w.... r < m a.. c < n:
                 __ cur != matrix[r][c]:
                     r.. False
                 r += 1
@@ -77,7 +77,7 @@ class Solution:
             r = i
             c = 0
             cur = matrix[r][c]
-            while r < m and c < n:
+            w.... r < m a.. c < n:
                 __ cur != matrix[r][c]:
                     r.. False
 

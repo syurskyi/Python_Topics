@@ -18,7 +18,7 @@ class Solution:
         ]
         d = {
             e: i
-            ___ i, v __ enumerate(rows)
+            ___ i, v __ e..(rows)
             ___ e __ v
         }
         r.. [

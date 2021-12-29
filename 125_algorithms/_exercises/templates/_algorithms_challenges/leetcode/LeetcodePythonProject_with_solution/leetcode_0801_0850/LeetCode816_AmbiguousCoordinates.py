@@ -23,9 +23,9 @@ class Solution(object):
     ___ helper(self, s):
         n = l..(s)
         res    # list
-        __ n __ 0 o. (n > 1 and s[0] __ '0' and s[-1] __ '0'):
+        __ n __ 0 o. (n > 1 a.. s[0] __ '0' a.. s[-1] __ '0'):
             r.. res
-        __ n > 1 and s[0] __ '0':
+        __ n > 1 a.. s[0] __ '0':
             res.a..('0.'+s[1:])
             r.. res
         res.a..(s)

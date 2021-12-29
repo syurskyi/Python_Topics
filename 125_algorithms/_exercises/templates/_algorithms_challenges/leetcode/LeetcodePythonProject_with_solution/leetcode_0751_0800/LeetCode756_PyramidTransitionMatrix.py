@@ -20,9 +20,9 @@ class Solution(object):
                 hashmap[s[:2]] = set([s[-1]])
         level = l..(bottom)
         queue = l..(bottom)
-        while queue:
+        w.... queue:
             __ level __ 1:
-                __ queue and queue[0]:
+                __ queue a.. queue[0]:
                     r.. True
                 ____:
                     r.. False

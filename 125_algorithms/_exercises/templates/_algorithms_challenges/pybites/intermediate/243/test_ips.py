@@ -27,7 +27,7 @@ ___ test_ServiceIPRange():
         region='Bolton',
         cidr=IPv4Network('158.152.1.0/24')
     )
-    ... str(serv) __ '158.152.1.0/24 is allocated to the Tester service in the Bolton region'
+    ... s..(serv) __ '158.152.1.0/24 is allocated to the Tester service in the Bolton region'
 
 
 ___ test_parse_ipv4_service_ranges(json_file):
@@ -46,4 +46,4 @@ ___ test_get_aws_service_range(json_file):
     ... get_aws_service_range('158.152.1.65', services) __ []
     with pytest.raises(ValueError) as exc:
         get_aws_service_range('0.0.0.256', services)
-    ... 'Address must be a valid IPv4 address' __ str(exc.value)
+    ... 'Address must be a valid IPv4 address' __ s..(exc.value)

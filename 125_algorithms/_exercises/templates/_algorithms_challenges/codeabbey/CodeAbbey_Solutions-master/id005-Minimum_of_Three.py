@@ -4,7 +4,7 @@ ___ min_of_three():
     answer    # list
     
     ___ run __ r..(runs):
-        answer.a..(str(m..([int(x) ___ x __ input().s.. ])))
+        answer.a..(s..(m..([int(x) ___ x __ input().s.. ])))
         
     print(' '.join(answer))
 

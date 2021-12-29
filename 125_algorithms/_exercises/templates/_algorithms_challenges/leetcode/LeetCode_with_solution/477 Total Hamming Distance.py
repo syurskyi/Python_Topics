@@ -35,7 +35,7 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        while any(nums):  # any not 0
+        w.... any(nums):  # any not 0
             z, o = 0, 0
             ___ i __ r..(l..(nums)):
                 __ nums[i] & 1 __ 0:

@@ -24,7 +24,7 @@ class Solution(object):
         left_res = -1
         right_res = -1
         # Search for left bound (first occurence of target)
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) / 2
             __ target > nums[mid]:
                 left = mid
@@ -40,7 +40,7 @@ class Solution(object):
         # Search for right bound (last occurence of target)
         left = 0
         right = n - 1
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) / 2
             __ target >= nums[mid]:
                 left = mid

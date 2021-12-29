@@ -1,4 +1,4 @@
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ csv
 _______ re
 
@@ -6,7 +6,7 @@ _______ requests
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
-Character = namedtuple('Character', 'pid name sid align sex appearances year')
+Character = n..('Character', 'pid name sid align sex appearances year')
 
 
 # csv parsing code provided so this Bite can focus on the parsing
@@ -23,8 +23,8 @@ ___ load_data():
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
     ___ row __ reader:
-        name = re.sub(r'(.*?)\(.*', r'\1', row['name']).strip()
-        yield Character(pid=row['page_id'],
+        name = re.sub(r'(.*?)\(.*', r'\1', row['name']).s..
+        y.. Character(pid=row['page_id'],
                         name=name,
                         sid=row['ID'],
                         align=row['ALIGN'],
@@ -48,7 +48,7 @@ ___ most_popular_characters(characters=characters, top=5):
 
     ___ character __ characters:
         __ character.appearances:
-            __ character.name n.. __ character_counts o. (character.name __ character_counts and int(character.appearances) > character_counts[character.name]):
+            __ character.name n.. __ character_counts o. (character.name __ character_counts a.. int(character.appearances) > character_counts[character.name]):
                 character_counts[character.name] = int(character.appearances)
     
     r.. [character[0] ___ character __ character_counts.most_common(top)]

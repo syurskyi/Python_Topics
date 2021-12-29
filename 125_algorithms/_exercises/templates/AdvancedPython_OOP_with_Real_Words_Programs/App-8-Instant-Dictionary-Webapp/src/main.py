@@ -12,7 +12,7 @@ imports  l..(globals().values())
 
 ___ obj __ imports:
     __ i___.isclass(obj):
-        __ issubclass(obj, page.Page) and obj __ n.. page.Page:
+        __ issubclass(obj, page.Page) a.. obj __ n.. page.Page:
             jp.Route(obj.path, obj.serve)
 
 # jp.Route(Home.path, Home.serve)

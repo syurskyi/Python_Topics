@@ -14,14 +14,14 @@ class Solution:
         rev = N..
         slow = fast = head
 
-        while fast and fast.next:
+        w.... fast a.. fast.next:
             fast = fast.next.next
             rev, rev.next, slow = slow, rev, slow.next
 
         __ fast:
             slow = slow.next
 
-        while slow and slow.val __ rev.val:
+        w.... slow a.. slow.val __ rev.val:
             slow = slow.next
             rev = rev.next
 
@@ -37,7 +37,7 @@ class Solution:
         rev = nxt = N..
         slow = fast = head
 
-        while fast and fast.next:
+        w.... fast a.. fast.next:
             fast = fast.next.next
 
             nxt = slow.next
@@ -48,7 +48,7 @@ class Solution:
         __ fast:
             slow = slow.next
 
-        while slow and slow.val __ rev.val:
+        w.... slow a.. slow.val __ rev.val:
             slow = slow.next
             rev = rev.next
 

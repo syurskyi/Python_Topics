@@ -25,9 +25,9 @@ class Solution(object):
             r.. root
         l = self.lowestCommonAncestor(root.left, p, q)
         r = self.lowestCommonAncestor(root.right, p, q)
-        __ l and r:
+        __ l a.. r:
             r.. root
-        ____ n.. l and n.. r:
+        ____ n.. l a.. n.. r:
             r.. N..
         ____:
             r.. r __ n.. l ____ l

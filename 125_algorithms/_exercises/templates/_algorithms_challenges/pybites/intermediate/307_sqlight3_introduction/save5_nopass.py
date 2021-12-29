@@ -20,7 +20,7 @@ class SQLiteType(Enum):
     NULL = N..
     INTEGER = int
     REAL = float
-    TEXT = str
+    TEXT = s..
     BLOB = bytes
 
 
@@ -49,7 +49,7 @@ class DB:
             column name and column type.
     """
 
-    ___ __init__(self, location: Optional[str] = ":memory:"):
+    ___ __init__(self, location: Optional[s..] = ":memory:"):
         self.location = location
         self.cursor = N..
         self.connection = N..
@@ -65,7 +65,7 @@ class DB:
         self.connection.close()
 
     ___ create(
-            self, table: str, schema: List[Tuple[str, SQLiteType]], primary_key: str
+            self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..
     ):
         """Creates a new table.
 
@@ -97,7 +97,7 @@ class DB:
         cur = self.connection.cursor()
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
-    ___ delete(self, table: str, target: Tuple[str, Any]):
+    ___ delete(self, table: s.., target: Tuple[s.., Any]):
         """Deletes rows from the table.
 
         Args:
@@ -115,7 +115,7 @@ class DB:
         cur = self.connection.cursor()
         r.. cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
 
-    ___ insert(self, table: str, values: List[Tuple]):
+    ___ insert(self, table: s.., values: List[Tuple]):
         """Inserts one or multiple new records into the database.
 
         Before inserting a value, you should make sure
@@ -150,9 +150,9 @@ class DB:
 
     ___ select(
             self,
-            table: str,
-            columns: Optional[List[str]] = N..,
-            target: Optional[Tuple[str, Optional[str], Any]] = N..,
+            table: s..,
+            columns: Optional[List[s..]] = N..,
+            target: Optional[Tuple[s.., Optional[s..], Any]] = N..,
     ) -> List[Tuple]:
         """Selects records from the database.
 
@@ -172,9 +172,9 @@ class DB:
             list: The output returned from the sql command
         """
         cur = self.connection.cursor()
-        __ columns __ N.. and target __ N..
+        __ columns __ N.. a.. target __ N..
             r.. cur.execute(f"SELECT * FROM {table}")
-        ____ target __ N.. and columns:
+        ____ target __ N.. a.. columns:
             r.. cur.execute(f"SELECT {columns} FROM {table}")
         ____:
             __ l..(target) __ 2:  # no operator specified
@@ -184,7 +184,7 @@ class DB:
                 (column_name, operator, value) = target
                 r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} {operator} {value}")
 
-    ___ update(self, table: str, new_value: Tuple[str, Any], target: Tuple[str, Any]):
+    ___ update(self, table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
         """Update a record in the database.
 
         Args:

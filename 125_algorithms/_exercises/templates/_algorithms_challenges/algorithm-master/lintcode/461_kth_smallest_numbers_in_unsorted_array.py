@@ -17,10 +17,10 @@ class Solution:
         left, right = start, end
         pivot = A[(start + end) // 2]
 
-        while left <= right:
-            while left <= right and A[left] < pivot:
+        w.... left <= right:
+            w.... left <= right a.. A[left] < pivot:
                 left += 1
-            while left <= right and A[right] > pivot:
+            w.... left <= right a.. A[right] > pivot:
                 right -= 1
 
             __ left <= right:

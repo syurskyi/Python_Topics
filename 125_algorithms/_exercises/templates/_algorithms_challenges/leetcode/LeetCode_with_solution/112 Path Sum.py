@@ -41,7 +41,7 @@ class Solution:
         s.. = s..-root.val
 
         # terminal condition
-        __ s..__0 and root.left __ N.. and root.right __ N..
+        __ s..__0 a.. root.left __ N.. a.. root.right __ N..
             r.. True
 
         # dfs without pre-checking

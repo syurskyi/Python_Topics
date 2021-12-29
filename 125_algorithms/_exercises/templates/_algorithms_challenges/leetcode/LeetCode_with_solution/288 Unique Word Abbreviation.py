@@ -22,7 +22,7 @@ class ValidWordAbbr(object):
         __ l..(word) <= 2:
             r.. word
 
-        r.. word[0]+str(l..(word)-2)+word[-1]
+        r.. word[0]+s..(l..(word)-2)+word[-1]
 
     ___ isUnique(self, word):
         """
@@ -30,5 +30,5 @@ class ValidWordAbbr(object):
         :type word: str
         :rtype: bool
         """
-        r.. (word __ self.dictionary and self.abbrev[self.process(word)] __ 1 o.
+        r.. (word __ self.dictionary a.. self.abbrev[self.process(word)] __ 1 o.
                 n.. self.process(word) __ self.abbrev)

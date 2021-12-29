@@ -37,7 +37,7 @@ class Twitter(object):
       __ self.tweets[followeeId]:
         heapq.heappush(heap, self.tweets[followeeId][-1])
     cnt = 10
-    while heap and cnt > 0:
+    w.... heap a.. cnt > 0:
       _, tid, uid, idx = heapq.heappop(heap)
       ret.a..(tid)
       __ idx > 0:

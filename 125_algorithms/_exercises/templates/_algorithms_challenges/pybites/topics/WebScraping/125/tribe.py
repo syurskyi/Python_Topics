@@ -28,7 +28,7 @@ ___ get_top_books(content_ N..
     # code here ...
     #print('in get_top_books')
     soup = Soup(content, 'html.parser')
-    book_counter = Counter([book.find("span").text.strip() ___ book __ soup.find_all("a") __ book.find("span")])
+    book_counter = Counter([book.find("span").text.s.. ___ book __ soup.find_all("a") __ book.find("span")])
     r.. [(book, book_counter[book]) ___ book __ book_counter __ book_counter[book] >= 3]
 
 #books = get_top_books()

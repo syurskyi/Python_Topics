@@ -12,11 +12,11 @@ class Solution(object):
         """
         __ l..(nums) > 1:
             slow, fast = nums[0], nums[nums[0]]
-            while slow != fast:
+            w.... slow != fast:
                 slow = nums[slow]
                 fast = nums[nums[fast]]
             fast = 0
-            while fast != slow:
+            w.... fast != slow:
                 fast = nums[fast]
                 slow = nums[slow]
             r.. slow

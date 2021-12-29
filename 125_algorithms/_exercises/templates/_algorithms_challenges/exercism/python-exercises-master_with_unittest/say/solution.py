@@ -1,5 +1,5 @@
 ___ say(number, recursive=False):
-    small = d..(enumerate((
+    small = d..(e..((
         'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
         'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
         'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty')))
@@ -12,7 +12,7 @@ ___ say(number, recursive=False):
     __ number < 0:
         raise AttributeError('number is negative')
     __ number >= t:
-        raise AttributeError('number is too large: %s' % str(number))
+        raise AttributeError('number is too large: %s' % s..(number))
 
     __ number < 20:
         r.. small[number] __ n.. recursive ____ 'and ' + small[number]

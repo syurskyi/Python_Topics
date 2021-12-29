@@ -3,14 +3,14 @@ _______ re
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 
-used_passwords = set('PassWord@1 PyBit$s9'.split())
+used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 
 ___ validate_password(password):
     c = re.compile(
         r'^(?=.*\d)(?=.*[a-z]{2,})(?=.*[A-Z])(?=.*[PUNCTUATION_CHARS]){6,12}')
     s = re.search(c, password)
-    __ password n.. __ used_passwords and bool(s):
+    __ password n.. __ used_passwords a.. bool(s):
         used_passwords.add(password)
         r.. bool(s)
     ____:

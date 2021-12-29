@@ -1,5 +1,5 @@
 ____ random _______ randint
-____ collections _______ namedtuple
+____ collections _______ n..
 
 ____ transpose _______ transpose
 
@@ -7,12 +7,12 @@ POSTS = {'2017-8': 19, '2017-9': 13, '2017-10': 13,
          '2017-11': 12, '2017-12': 11, '2018-1': 3}
 NAMES = ['Bob', 'Julian', 'Tim', 'Carmen', 'Henk', 'Sofia', 'Bernard']
 
-Member = namedtuple('Member', 'name since_days karma_points bitecoin_earned')
+Member = n..('Member', 'name since_days karma_points bitecoin_earned')
 
 
 ___ _gen_community():
     ___ name __ NAMES:
-        yield Member(name=name,
+        y.. Member(name=name,
                      since_days=randint(1, 365),
                      karma_points=randint(1, 100),
                      bitecoin_earned=randint(1, 100))

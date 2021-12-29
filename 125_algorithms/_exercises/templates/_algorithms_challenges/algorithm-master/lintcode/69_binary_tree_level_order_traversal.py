@@ -27,7 +27,7 @@ class Solution:
 
         queue, _queue = [root], []
 
-        while queue:
+        w.... queue:
             ans.a..([])
 
             ___ node __ queue:

@@ -45,6 +45,6 @@ ___ filter_names_2(names):
             break
         __ cnt < 5:
             cnt += 1
-            yield name
+            y.. name
         ____:
             break

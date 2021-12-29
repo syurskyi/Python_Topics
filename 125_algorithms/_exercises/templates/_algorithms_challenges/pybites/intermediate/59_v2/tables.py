@@ -4,7 +4,7 @@ class MultiplicationTable:
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
         self._length = length
-        self._table =[[str(x * y) ___ y __ r..(1,length + 1)] ___ x __ r..(1,length + 1)]
+        self._table =[[s..(x * y) ___ y __ r..(1,length + 1)] ___ x __ r..(1,length + 1)]
 
     ___ __len__(self):
         """Returns the area of the table (len x* len y)"""
@@ -31,7 +31,7 @@ class MultiplicationTable:
         """Takes x and y coords and returns the re-calculated result"""
 
 
-        __ n.. ((1 <= x <= self._length) and (1 <= y <= self._length)):
+        __ n.. ((1 <= x <= self._length) a.. (1 <= y <= self._length)):
             raise IndexError("Invalid x and y")
 
 

@@ -24,7 +24,7 @@ class Solution:
     ___ reverseList(self, head: ListNode) -> ListNode:
         prev = N..
         cur = head
-        while cur:
+        w.... cur:
             nxt = cur.next
             cur.next = prev
 
@@ -40,7 +40,7 @@ class Solution:
         prev = head
         cur = head.next
         head.next = N..
-        while prev and cur:
+        w.... prev a.. cur:
             nxt = cur.next
             cur.next = prev
 

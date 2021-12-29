@@ -31,7 +31,7 @@ class Solution:
             __ l..(ans) > k:
                 heapq.heappop(ans)
 
-        ans.sort(key=l.... a: (-a[0], points[a[1]].x, points[a[1]].y))
+        ans.s..(key=l.... a: (-a[0], points[a[1]].x, points[a[1]].y))
 
         r.. [points[i] ___ _, i __ ans]
 
@@ -70,7 +70,7 @@ class Solution:
             distance, i = heapq.heappop(heap)
             ans.a..((distance, points[i]))
 
-        ans.sort(key=l.... a: (a[0], a[1].x, a[1].y))
+        ans.s..(key=l.... a: (a[0], a[1].x, a[1].y))
 
         r.. [p ___ _, p __ ans]
 

@@ -2,31 +2,31 @@ ____ math _______ floor
 ____ string _______ ascii_lowercase, ascii_uppercase, digits
 ____ typing _______ Dict
 
-CODEX: str = digits + ascii_lowercase + ascii_uppercase
+CODEX: s.. = digits + ascii_lowercase + ascii_uppercase
 BASE: int = l..(CODEX)
 # makeshift database record
-LINKS: Dict[int, str] = {
+LINKS: Dict[int, s..] = {
     1: "https://pybit.es",
     45: "https://pybit.es/pages/articles.html",
     255: "http://pbreadinglist.herokuapp.com",
     600: "https://pybit.es/pages/challenges.html",
     874: "https://stackoverflow.com",
 }
-SITE: str = "https://pybit.es"
+SITE: s.. = "https://pybit.es"
 
 # error messages
 INVALID = "Not a valid PyBites shortened url"
 NO_RECORD = "Not a valid shortened url"
 
 
-___ encode(record: int) -> str:
+___ encode(record: int) -> s..:
     """Encodes an integer into Base62"""
     
 
     characters    # list
 
 
-    while record:
+    w.... record:
 
         v = record % 62
         record //= 62
@@ -47,11 +47,11 @@ ___ encode(record: int) -> str:
 
 
 
-___ decode(short_url: str) -> int:
+___ decode(short_url: s..) -> int:
     """Decodes the Base62 string into a Base10 integer"""
 
     value = 0
-    ___ i,character __ enumerate(reversed(short_url),0):
+    ___ i,character __ e..(reversed(short_url),0):
         value += BASE**i * CODEX.index(character)
 
 
@@ -59,7 +59,7 @@ ___ decode(short_url: str) -> int:
 
 
 
-___ redirect(url: str) -> str:
+___ redirect(url: s..) -> s..:
     """Retrieves URL from shortened DB (LINKS)
 
     1. Check for valid domain
@@ -70,7 +70,7 @@ ___ redirect(url: str) -> str:
     __ n.. url.startswith(SITE):
         r.. INVALID
 
-    number = url.split('/')[-1]
+    number = url.s..('/')[-1]
 
     decoded = decode(number)
 
@@ -88,7 +88,7 @@ ___ redirect(url: str) -> str:
 
 
 
-___ shorten_url(url: str, next_record: int) -> str:
+___ shorten_url(url: s.., next_record: int) -> s..:
     """Shortens URL and updates the LINKS DB
 
     1. Encode next_record

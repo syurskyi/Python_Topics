@@ -47,7 +47,7 @@ class SolutionTLE(object):
         r.. maxa
 
     ___ eval(self, lst):
-        r.. int("".join(map(str, lst)))
+        r.. int("".join(map(s.., lst)))
 
     ___ maxNumberSingle(self, A, k):
         """
@@ -56,7 +56,7 @@ class SolutionTLE(object):
         stk    # list
         n = l..(A)
         ___ i __ xrange(n):
-            while stk and l..(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.pop()
+            w.... stk a.. l..(stk)-1+(n-1-i+1) >= k a.. stk[-1] < A[i]: stk.pop()
             __ l..(stk) < k:
                 stk.a..(A[i])
 
@@ -68,12 +68,12 @@ class SolutionTLE(object):
         """
         ret    # list
         p1, p2 = 0, 0
-        while p1 < l..(A1) and p2 < l..(A2):
+        w.... p1 < l..(A1) a.. p2 < l..(A2):
             ahead1, ahead2 = p1, p2
-            while ahead1 < l..(A1) and ahead2 < l..(A2) and A1[ahead1] __ A2[ahead2]:
+            w.... ahead1 < l..(A1) a.. ahead2 < l..(A2) a.. A1[ahead1] __ A2[ahead2]:
                 ahead1, ahead2 = ahead1+1, ahead2+1
 
-            __ ahead2 >= l..(A2) o. (ahead1 < l..(A1) and A1[ahead1] > A2[ahead2]):
+            __ ahead2 >= l..(A2) o. (ahead1 < l..(A1) a.. A1[ahead1] > A2[ahead2]):
                 ret.a..(A1[p1])
                 p1 += 1
             ____:

@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: int
         """
         same = set()
-        ___ f, b __ zip(fronts, backs):
+        ___ f, b __ z..(fronts, backs):
             __ f __ b: same.add(f)
         res = float('inf')
-        ___ f, b __ zip(fronts, backs):
+        ___ f, b __ z..(fronts, backs):
             __ f n.. __ same:
                 res = m..(res, f)
             __ b n.. __ same:
@@ -29,7 +29,7 @@ class Solution(object):
         """
         hashmap1 = {}
         hashmap2 = {}
-        ___ f, b __ zip(fronts, backs):
+        ___ f, b __ z..(fronts, backs):
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
         self.res = float('inf')

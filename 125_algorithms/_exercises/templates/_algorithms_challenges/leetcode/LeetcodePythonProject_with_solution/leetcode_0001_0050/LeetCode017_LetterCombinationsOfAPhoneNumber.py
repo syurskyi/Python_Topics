@@ -35,7 +35,7 @@ class Solution(object):
     
     ___ dfs(self, l, ind, elem, result):
         __ l..(elem) __ l..(l):
-            result.a..(str(elem))
+            result.a..(s..(elem))
             r.. result
         ___ c __ l[ind]:
             elem += c

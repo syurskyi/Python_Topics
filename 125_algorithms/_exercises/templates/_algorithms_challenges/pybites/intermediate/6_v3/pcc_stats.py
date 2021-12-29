@@ -1,5 +1,5 @@
-____ collections _______ Counter, namedtuple
-____ itertools _______ filterfalse
+____ collections _______ Counter, n..
+____ i.. _______ filterfalse
 _______ os
 _______ urllib.request
 _______ sys
@@ -13,7 +13,7 @@ urllib.request.urlretrieve(
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 # code
@@ -39,9 +39,9 @@ ___ gen_files(tempfile=tempfile):
     """
     with open(tempfile) as f: lines = f.read().splitlines()
 
-    filtered = filter(l.... x: x.split(',')[-1]__'True', lines)
+    filtered = filter(l.... x: x.s..(',')[-1]__'True', lines)
     ___ line __ filtered:
-        yield line.split(',')[0].lower()
+        y.. line.s..(',')[0].lower()
 
 
 
@@ -61,9 +61,9 @@ ___ diehard_pybites(files_ N..
 
     users = Counter()
     popular_challenges = Counter()
-    files = l..(filterfalse(l.... x: x.split('/')[-1] __ IGNORE, files))
-    users.update([f.split('/')[-1] ___ f __ files])
-    popular_challenges.update([f.split('/')[0] ___ f __ files])
+    files = l..(filterfalse(l.... x: x.s..('/')[-1] __ IGNORE, files))
+    users.update([f.s..('/')[-1] ___ f __ files])
+    popular_challenges.update([f.s..('/')[0] ___ f __ files])
     print(l..(files), file=sys.stderr, flush=True)
     r.. Stats(user=users.most_common(1)[0][0],
                  challenge=(popular_challenges.most_common(1)[0][0],

@@ -21,7 +21,7 @@ ___ order():
 ])
 ___ test_order(order, num, expected):
     order.add(num)
-    ... str(order) __ expected
+    ... s..(order) __ expected
 
 
 ___ test_does_not_use_manual_sort():

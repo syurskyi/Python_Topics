@@ -13,8 +13,8 @@ class ServiceIPRange:
     a specific service and region.
     """
 
-    service: str
-    region: str
+    service: s..
+    region: s..
     cidr: IPv4Network
 
     ___ __str__(self):
@@ -43,7 +43,7 @@ ___ parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
     r.. ipv4_service_ranges
 
 
-___ get_aws_service_range(address: str,
+___ get_aws_service_range(address: s..,
                           service_ranges: l..) -> List[ServiceIPRange]:
     """
     Return a list of ServiceIPRange objects representing all AWS public

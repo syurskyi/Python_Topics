@@ -18,7 +18,7 @@ class Solution(object):
         __ n.. head: r.. N..
         count = 0
         node = head
-        while node:
+        w.... node:
             count += 1
             node = node.next
         count >>= 1

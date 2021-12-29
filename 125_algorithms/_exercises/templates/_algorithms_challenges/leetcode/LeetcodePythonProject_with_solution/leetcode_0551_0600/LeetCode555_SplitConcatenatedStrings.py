@@ -12,7 +12,7 @@ class Solution(object):
         """
         res = N..
         arr = [max(s, s[::-1]) ___ s __ strs]
-        ___ i, s __ enumerate(arr):
+        ___ i, s __ e..(arr):
             ___ start __ (s, s[::-1]):
                 ___ j __ r..(l..(start)+1):
                     __ n.. res:

@@ -17,9 +17,9 @@ class Solution(object):
     ___ num __ [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
       featureNum = count.get(feature[num], 0)
       __ featureNum > 0:
-        ans += [str(num)] * featureNum
+        ans += [s..(num)] * featureNum
         word = nums[num]
         ___ c __ word:
           count[c] -= featureNum
-    ans.sort()
+    ans.s..()
     r.. "".join(ans)

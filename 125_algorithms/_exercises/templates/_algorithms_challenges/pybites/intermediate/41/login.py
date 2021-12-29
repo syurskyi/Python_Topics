@@ -10,10 +10,10 @@ ___ login_required(func):
         __ args[0] __ loggedin_users:
             r.. func(args[0])
 
-        __ args[0] __ known_users and args[0] n.. __ loggedin_users:
+        __ args[0] __ known_users a.. args[0] n.. __ loggedin_users:
             r.. "please login"
 
-        __ args[0] n.. __ known_users and args[0] n.. __ loggedin_users:
+        __ args[0] n.. __ known_users a.. args[0] n.. __ loggedin_users:
             r.. "please create an account"
     r.. wrapper
 

@@ -24,7 +24,7 @@ class Solution:
         __ root.left:
             root.left.next = root.right
 
-        __ root.right and root.next:
+        __ root.right a.. root.next:
             root.right.next = root.next.left
 
         # leave to None if root.right: root.right.next = None
@@ -49,16 +49,16 @@ class Solution:
         nxt = N..
 
         # this loop only for find left
-        while head:
+        w.... head:
             nxt = head
             head = nxt.left
 
             # this loop find for every next, do level move
-            while nxt:
+            w.... nxt:
                 __ nxt.left:
                     nxt.left.next = nxt.right
 
-                __ nxt.right and nxt.next:
+                __ nxt.right a.. nxt.next:
                     nxt.right.next = nxt.next.left
 
                 nxt = nxt.next

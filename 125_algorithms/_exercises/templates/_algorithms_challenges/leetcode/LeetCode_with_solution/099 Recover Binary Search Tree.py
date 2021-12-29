@@ -62,7 +62,7 @@ class Solution:
         # update global
         self.pre = self.current
         self.current = current
-        __ self.pre and n.. self.pre.val<self.current.val:
+        __ self.pre a.. n.. self.pre.val<self.current.val:
             __ n.. self.swapped_pair:
                 self.swapped_pair.a..((self.pre, self.current))  # pre is wrong
             ____:

@@ -13,10 +13,10 @@ class Solution(object):
     """
 
     ___ helper(root, mirror):
-      __ n.. root and n.. mirror:
+      __ n.. root a.. n.. mirror:
         r.. True
-      __ root and mirror and root.val __ mirror.val:
-        r.. helper(root.left, mirror.right) and helper(root.right, mirror.left)
+      __ root a.. mirror a.. root.val __ mirror.val:
+        r.. helper(root.left, mirror.right) a.. helper(root.right, mirror.left)
       r.. False
 
     r.. helper(node, node)

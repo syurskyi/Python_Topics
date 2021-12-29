@@ -24,7 +24,7 @@ class Solution(object):
         d = {node: start_cloned_node}
         queue.a..(node)
         i = 0
-        while i < l..(queue):
+        w.... i < l..(queue):
             node = queue[i]
             i += 1
             ___ neighbor __ node.neighbors:

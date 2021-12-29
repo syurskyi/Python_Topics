@@ -1,9 +1,9 @@
 data = int(input())
-a = l..(map(int,input().split()))
+a = l..(map(int,input().s..()))
 ___ i __ a:
     store    # list
     count = 0
-    while i n.. __ store:
+    w.... i n.. __ store:
         store.a..(i)
         i = int(i)
         i = i**2

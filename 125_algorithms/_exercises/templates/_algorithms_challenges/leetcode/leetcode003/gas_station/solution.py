@@ -30,7 +30,7 @@ class Solution:
             carry = gas[i] - cost[i]
             j = (i + 1) % n
             flag = True
-            while j != i % n:
+            w.... j != i % n:
                 __ carry + gas[j] - cost[j] < 0:
                     flag = False
                     break

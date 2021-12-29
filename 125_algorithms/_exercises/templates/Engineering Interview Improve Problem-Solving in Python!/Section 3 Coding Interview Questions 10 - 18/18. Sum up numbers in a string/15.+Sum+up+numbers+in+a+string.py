@@ -4,7 +4,7 @@ ___ count_number(s):
     temp  0
     total  0
     ___ c __ s:
-        __ '0' < c and c < '9': # only <<<<<<<<<<<<<
+        __ '0' < c a.. c < '9': # only <<<<<<<<<<<<<
             temp * 10
             temp + i..(c)
         ____:

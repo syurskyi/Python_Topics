@@ -41,11 +41,11 @@ class Solution:
         F = [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
         F[1][0] = 1
         ___ i __ r..(1, n):
-            __ A[i] > max(A[i-1], B[i-1]) and B[i] > max(A[i-1], B[i-1]):
+            __ A[i] > max(A[i-1], B[i-1]) a.. B[i] > max(A[i-1], B[i-1]):
                 # freedom of two options - swap or not swap
                 F[0][i] = m..(F[0][i-1], F[1][i-1])
                 F[1][i] = m..(F[0][i-1], F[1][i-1]) + 1
-            ____ A[i] > A[i-1] and B[i] > B[i-1]:
+            ____ A[i] > A[i-1] a.. B[i] > B[i-1]:
                 # elif meaning that has to stick with previous swap choice
                 # A[i] <= B[i-1] and B[i] <=A[i-1], cannot flip
                 F[0][i] = F[0][i-1]

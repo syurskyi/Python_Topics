@@ -16,9 +16,9 @@ class Solution(object):
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmap0 = {}
-        ___ i, c __ enumerate(s2):
+        ___ i, c __ e..(s2):
             __ c __ hashmap:
-                while left < i and c __ hashmap0 and hashmap0[c] >= hashmap[c]:
+                w.... left < i a.. c __ hashmap0 a.. hashmap0[c] >= hashmap[c]:
                     hashmap0[s2[left]] -= 1
                     left += 1
                 hashmap0[c] = hashmap0.get(c, 0)+1

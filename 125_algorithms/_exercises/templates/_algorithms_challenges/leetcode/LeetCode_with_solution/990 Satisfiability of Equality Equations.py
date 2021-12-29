@@ -61,7 +61,7 @@ class DisjointSet:
         r.. self.pi[x]
 
 class Solution:
-    ___ equationsPossible(self, equations: List[str]) -> bool:
+    ___ equationsPossible(self, equations: List[s..]) -> bool:
         """
         union find
         """

@@ -60,7 +60,7 @@ class SolutionSlow(object):
         __ abs(self.fathom(root.left, 0)-self.fathom(root.right, 0)) > 1:
             r.. False
 
-        __ self.isBalanced(root.left) and self.isBalanced(root.right):
+        __ self.isBalanced(root.left) a.. self.isBalanced(root.right):
             r.. True
         ____:
             r.. False

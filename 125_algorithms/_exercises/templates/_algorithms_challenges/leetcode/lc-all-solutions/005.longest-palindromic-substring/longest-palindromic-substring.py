@@ -10,7 +10,7 @@ class Solution(object):
       __ 2 * (n - i) + 1 < right - left + 1:
         break
       l = r = i
-      while l >= 0 and r < n and s[l] __ s[r]:
+      w.... l >= 0 a.. r < n a.. s[l] __ s[r]:
         l -= 1
         r += 1
       __ r - l - 2 > right - left:
@@ -18,7 +18,7 @@ class Solution(object):
         right = r - 1
       l = i
       r = i + 1
-      while l >= 0 and r < n and s[l] __ s[r]:
+      w.... l >= 0 a.. r < n a.. s[l] __ s[r]:
         l -= 1
         r += 1
       __ r - l - 2 > right - left:

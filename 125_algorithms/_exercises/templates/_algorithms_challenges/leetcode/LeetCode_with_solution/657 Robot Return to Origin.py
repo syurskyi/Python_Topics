@@ -34,6 +34,6 @@ ____ collections _______ Counter
 
 
 class Solution:
-    ___ judgeCircle(self, moves: str) -> bool:
+    ___ judgeCircle(self, moves: s..) -> bool:
         counter = Counter(moves)
-        r.. counter["L"] __ counter["R"] and counter["U"] __ counter["D"]
+        r.. counter["L"] __ counter["R"] a.. counter["U"] __ counter["D"]

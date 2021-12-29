@@ -1,7 +1,7 @@
-____ collections _______ deque
-
-
-___ rotate(string, n):
-    string = deque(string)
-    string.rotate(-n)
-    r.. "".join(string)
+# ____ c.. _______ d..
+#
+#
+# ___ rotate string n
+#     string = d.. ?
+#     ?.r.. -?
+#     r.. "".j.. ?

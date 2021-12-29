@@ -21,10 +21,10 @@ class Solution(object):
         __ lenA < lenB:
             headA, headB = headB, headA
         diff = abs(lenA-lenB)
-        while diff and headA:
+        w.... diff a.. headA:
             headA = headA.next
             diff -= 1
-        while headA and headB:
+        w.... headA a.. headB:
             __ headA __ headB:
                 r.. headA
             headA = headA.next
@@ -33,7 +33,7 @@ class Solution(object):
     
     ___ getLength(self, head):
         length = 0
-        while head:
+        w.... head:
             head = head.next
             length += 1
         r.. length

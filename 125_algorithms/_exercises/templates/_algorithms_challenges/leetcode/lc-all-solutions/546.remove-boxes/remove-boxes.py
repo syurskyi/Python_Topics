@@ -7,7 +7,7 @@ class Solution(object):
       __ i > j: r.. 0
       __ n.. memo[i][j][k]:
         m = i
-        while m + 1 <= j and A[m + 1] __ A[i]:
+        w.... m + 1 <= j a.. A[m + 1] __ A[i]:
           m += 1
         i, k = m, k + m - i
         ans = dp(i + 1, j, 0) + (k + 1) ** 2

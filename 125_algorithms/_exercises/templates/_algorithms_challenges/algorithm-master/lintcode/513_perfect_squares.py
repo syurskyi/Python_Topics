@@ -23,7 +23,7 @@ class Solution:
 
         ___ i __ r..(1, n + 1):
             j = 1
-            while j * j <= i:
+            w.... j * j <= i:
                 dp[i] = m..(dp[i], dp[i - j * j] + 1)
                 j += 1
 

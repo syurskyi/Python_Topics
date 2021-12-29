@@ -9,7 +9,7 @@ class Solution(object):
       res.a..(path + [])
 
       ___ i __ r..(start, l..(nums)):
-        __ start != i and nums[i] __ nums[i - 1]:
+        __ start != i a.. nums[i] __ nums[i - 1]:
           continue
         __ i n.. __ visited:
           visited[i] = 1
@@ -18,7 +18,7 @@ class Solution(object):
           path.pop()
           del visited[i]
 
-    nums.sort()
+    nums.s..()
     res    # list
     visited = {}
     dfs(0, nums, [], res, visited)

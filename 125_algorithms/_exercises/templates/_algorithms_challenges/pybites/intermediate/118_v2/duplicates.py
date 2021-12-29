@@ -14,7 +14,7 @@ ___ get_duplicate_indices(words):
 
     occurences = defaultdict(int)
 
-    ___ i,word __ enumerate(words):
+    ___ i,word __ e..(words):
         __ word __ occurences:
             result.add(occurences[word])
         ____:

@@ -1,5 +1,5 @@
 _______ json
-____ collections _______ namedtuple
+____ collections _______ n..
 ____ typing _______ List
 
 _______ requests
@@ -8,7 +8,7 @@ ____ dateutil.parser _______ parse
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
-PyCon = namedtuple("PyCon", "name city country start_date end_date url")
+PyCon = n..("PyCon", "name city country start_date end_date url")
 
 country_lookup = {
     "Africa": [
@@ -79,7 +79,7 @@ country_lookup = {
 }
 
 
-___ get_continent(country: str) -> str:
+___ get_continent(country: s..) -> s..:
     """
     Given a country name returns the associated continent of the country.
 
@@ -137,7 +137,7 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
 
 ___ filter_pycons(pycons: List[PyCon],
                   year: int = 2019,
-                  continent: str = "Europe") -> List[PyCon]:
+                  continent: s.. = "Europe") -> List[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on
@@ -148,7 +148,7 @@ ___ filter_pycons(pycons: List[PyCon],
         event_year = pycon.start_date.year
         event_continent = get_continent(pycon.country)
         print(event_year, event_continent)
-        __ int(event_year) __ year and event_continent __ continent:
+        __ int(event_year) __ year a.. event_continent __ continent:
             filtered_event.a..(pycon)
     r.. s..(filtered_event, key=l.... x: x.city)
 

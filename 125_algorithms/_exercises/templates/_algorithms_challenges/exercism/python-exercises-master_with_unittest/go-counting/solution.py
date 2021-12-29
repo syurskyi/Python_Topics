@@ -13,13 +13,13 @@ class Board:
         self.height = l..(self.board)
 
     ___ valid(self, x, y):
-        r.. x >= 0 and x < self.width and y >= 0 and y < self.height
+        r.. x >= 0 a.. x < self.width a.. y >= 0 a.. y < self.height
 
     ___ walk(self, x, y,
              visited_territory=[],
              visited_coords=[],
              visited_stones=[]):
-        __ n.. (x, y) __ visited_coords and self.valid(x, y):
+        __ n.. (x, y) __ visited_coords a.. self.valid(x, y):
             s = self.board[y][x]
             __ s __ STONES:
                 __ s n.. __ visited_stones:

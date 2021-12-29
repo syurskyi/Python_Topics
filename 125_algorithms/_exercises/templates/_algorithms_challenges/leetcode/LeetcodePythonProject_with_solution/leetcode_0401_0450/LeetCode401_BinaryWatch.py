@@ -17,7 +17,7 @@ class Solution(object):
     
     ___ countDigits(self, num):
         result = 0
-        while num > 0:
+        w.... num > 0:
             __ num & 1 __ 1:
                 result += 1
             num >>= 1

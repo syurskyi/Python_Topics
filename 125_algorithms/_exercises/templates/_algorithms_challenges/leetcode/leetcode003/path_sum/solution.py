@@ -12,7 +12,7 @@ class Solution:
     ___ hasPathSum(self, root, s..):
         __ root __ N..
             r.. False
-        ____ root.left __ N.. and root.right __ N..
+        ____ root.left __ N.. a.. root.right __ N..
             __ s.. __ root.val:
                 r.. True
             ____:

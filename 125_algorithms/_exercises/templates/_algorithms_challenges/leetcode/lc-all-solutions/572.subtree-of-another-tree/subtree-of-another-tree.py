@@ -16,13 +16,13 @@ class Solution(object):
     ___ serialize(root):
       ans    # list
       stack = [(root, 1)]
-      while stack:
+      w.... stack:
         node, p = stack.pop()
         __ n.. node:
           ans.a..("#")
           continue
         __ p __ 0:
-          ans.a..("|" + str(node.val))
+          ans.a..("|" + s..(node.val))
         ____:
           stack.a..((node.right, 1))
           stack.a..((node.left, 1))

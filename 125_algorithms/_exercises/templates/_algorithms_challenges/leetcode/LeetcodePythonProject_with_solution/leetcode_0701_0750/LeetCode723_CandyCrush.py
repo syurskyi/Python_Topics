@@ -11,7 +11,7 @@ class Solution(object):
         """
         m, n = l..(board), l..(board[0])
         res = [[0]*n ___ _ __ r..(m)]
-        while True:
+        w... T...
             changed = False
             ___ i __ r..(m):
                 ___ j __ r..(n):
@@ -28,14 +28,14 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         val = abs(board[i][j])
         changed = False
-        __ i+2 < m and val __ abs(board[i+1][j]) __ abs(board[i+2][j]):
+        __ i+2 < m a.. val __ abs(board[i+1][j]) __ abs(board[i+2][j]):
             ___ i0 __ r..(i+1, m):
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____:
                     break
             changed = True
-        __ j+2 < n and val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
+        __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
             ___ j0 __ r..(j+1, n):
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
@@ -77,10 +77,10 @@ class Solution(object):
         ]
         ___ board __ testCases:
             print('board:')
-            print('\n'.join([str(row) ___ row __ board]))
+            print('\n'.join([s..(row) ___ row __ board]))
             result = self.candyCrush(board)
             print('result:')
-            print('\n'.join([str(row) ___ row __ result]))
+            print('\n'.join([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

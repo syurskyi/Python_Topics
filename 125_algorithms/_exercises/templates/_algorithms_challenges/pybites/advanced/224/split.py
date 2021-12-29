@@ -10,7 +10,7 @@ ___ get_sentences(text):
     lines = re.findall(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=re.MULTILINE | re.DOTALL)
     
 
-    r.. [line.replace('\n',' ') ___ line __ lines]
+    r.. [line.r..('\n',' ') ___ line __ lines]
 
 
 

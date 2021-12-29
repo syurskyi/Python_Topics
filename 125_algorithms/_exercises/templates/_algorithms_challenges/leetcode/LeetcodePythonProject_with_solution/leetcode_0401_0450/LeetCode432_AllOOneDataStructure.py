@@ -21,7 +21,7 @@ class AllOne(object):
         __ key __ self.keyBucketMap:
             bucket = self.keyBucketMap[key]
             nextBucket = bucket.next
-            __ nextBucket and nextBucket.value __ bucket.value+1:
+            __ nextBucket a.. nextBucket.value __ bucket.value+1:
                 nextBucket.keySet.add(key)
                 self.keyBucketMap[key] = nextBucket
             ____ n.. nextBucket:
@@ -94,14 +94,14 @@ class AllOne(object):
                     self.keyBucketMap[key] = newBucket
             bucket.keySet.remove(key)
             __ n.. bucket.keySet:
-                __ n.. bucket.prev and n.. bucket.next:
+                __ n.. bucket.prev a.. n.. bucket.next:
                     self.head = N..
                     self.tail = N..
-                ____ bucket.prev and n.. bucket.next:
+                ____ bucket.prev a.. n.. bucket.next:
                     bucket.prev.next = N..
                     self.tail = bucket.prev
                     bucket.prev = N..
-                ____ bucket.next and n.. bucket.prev:
+                ____ bucket.next a.. n.. bucket.prev:
                     bucket.next.prev = N..
                     self.head = bucket.next
                     bucket.next = N..

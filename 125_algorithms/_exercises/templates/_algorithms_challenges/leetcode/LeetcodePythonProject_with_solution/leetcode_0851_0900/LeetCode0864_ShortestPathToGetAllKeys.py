@@ -22,9 +22,9 @@ class Solution(object):
                     numOfKeys += 1
         deque    # list
         deque.a..([starti, startj, 0, '.@abcdef', 0])
-        while deque:
+        w.... deque:
             i, j, steps, keys, collectedKeys = deque.pop(0)
-            __ grid[i][j] __ 'abcdef' and grid[i][j].upper() n.. __ keys:
+            __ grid[i][j] __ 'abcdef' a.. grid[i][j].upper() n.. __ keys:
                 keys += grid[i][j].upper()
                 collectedKeys += 1
             __ collectedKeys __ numOfKeys:
@@ -32,7 +32,7 @@ class Solution(object):
             ___ x, y __ dirs:
                 ni = i+x
                 nj = j+y
-                __ 0<=ni<m and 0<=nj<n and grid[ni][nj] __ keys:
+                __ 0<=ni<m a.. 0<=nj<n a.. grid[ni][nj] __ keys:
                     __ (ni, nj, keys) n.. __ moves:
                         moves.add((ni, nj, keys))
                         deque.a..([ni, nj, steps+1, keys, collectedKeys])

@@ -1,4 +1,4 @@
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ os
 _______ urllib.request
 
@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 # code
@@ -40,7 +40,7 @@ ___ gen_files(tempfile=tempfile):
 
     names    # list
     ___ line __ file:
-        line = line.split(',')[0]
+        line = line.s..(',')[0]
         names.a..(line)
 
     filtered1 = [x ___ x __ names __ "." n.. __ x]

@@ -36,13 +36,13 @@ class Solution(object):
         n = l..(nums)
 
         i = 0
-        while i < n:
+        w.... i < n:
             __ nums[i] __ n:
                 num_n = nums[i]
                 nums[i] = N..
                 i += 1
 
-            ____ nums[i] __ n.. N.. and nums[i] != i:
+            ____ nums[i] __ n.. N.. a.. nums[i] != i:
                 j = nums[i]
                 nums[i], nums[j] = nums[j], nums[i]
 

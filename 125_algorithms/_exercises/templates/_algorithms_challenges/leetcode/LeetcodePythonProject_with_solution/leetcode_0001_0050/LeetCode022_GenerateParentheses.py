@@ -16,7 +16,7 @@ class Solution(object):
         r.. res
     
     ___ dfs(self, left, right, curr, res):
-        __ left __ 0 and right __ 0:
+        __ left __ 0 a.. right __ 0:
             res.a..(curr)
         __ left > right:
             r..

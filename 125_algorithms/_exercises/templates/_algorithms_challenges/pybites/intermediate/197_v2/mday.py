@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 ____ dateutil.relativedelta _______ relativedelta,SU
 
 

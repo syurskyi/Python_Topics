@@ -34,12 +34,12 @@ class Solution:
         """
         Greedy? Sort by profit
         """
-        tasks = l..(s..(zip(profit, difficulty)))
-        worker.sort()
+        tasks = l..(s..(z..(profit, difficulty)))
+        worker.s..()
         i = l..(tasks) - 1
         j = l..(worker) - 1
         ret = 0
-        while i >= 0 and j >= 0:
+        w.... i >= 0 a.. j >= 0:
             pro, diff = tasks[i]
             __ worker[j] >= diff:
                 ret += pro

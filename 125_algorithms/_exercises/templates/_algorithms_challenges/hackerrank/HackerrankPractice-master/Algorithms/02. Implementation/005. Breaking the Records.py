@@ -16,5 +16,5 @@ ___ breaking_records(score):
 
 
 n = int(input())
-score = l..(map(int, input().split()))
+score = l..(map(int, input().s..()))
 print(*breaking_records(score))

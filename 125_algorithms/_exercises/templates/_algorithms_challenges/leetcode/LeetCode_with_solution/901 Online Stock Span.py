@@ -51,7 +51,7 @@ class StockSpanner:
 
     ___ next(self, price: int) -> int:
         cur_span = 1
-        while self.stk and self.stk[-1][0] <= price:
+        w.... self.stk a.. self.stk[-1][0] <= price:
             _, span = self.stk.pop()
             cur_span += span
         self.stk.a..((price, cur_span))

@@ -25,7 +25,7 @@ class Solution:
         left = self.lowestCommonAncestor(root.left, a, b)
         right = self.lowestCommonAncestor(root.right, a, b)
 
-        __ left and right:
+        __ left a.. right:
             r.. root
         __ left:
             r.. left

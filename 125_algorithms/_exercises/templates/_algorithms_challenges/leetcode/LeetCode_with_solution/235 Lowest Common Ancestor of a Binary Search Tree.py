@@ -35,10 +35,10 @@ class Solution:
         :rtype: TreeNode
         """
         cur = root
-        while True:
-            __ p.val < cur.val and q.val < cur.val:
+        w... T...
+            __ p.val < cur.val a.. q.val < cur.val:
                 cur = cur.left
-            ____ p.val > cur.val and q.val > cur.val:
+            ____ p.val > cur.val a.. q.val > cur.val:
                 cur = cur.right
             ____:  # including case in self-descendant
                 r.. cur

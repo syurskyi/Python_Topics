@@ -31,7 +31,7 @@ ___ get_top_books(content_ N..
     amazon_books    # list
     ___ link __ soup.find_all("a"):
         __ "amazon" __ link.get("href"):
-            amazon_books.a..([link.get_text().strip().strip("\n")])
+            amazon_books.a..([link.get_text().s...strip("\n")])
 
     amazon_books_counter = Counter()
     ___ book __ amazon_books:

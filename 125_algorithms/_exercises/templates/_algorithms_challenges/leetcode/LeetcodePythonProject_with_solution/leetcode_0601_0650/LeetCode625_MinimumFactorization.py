@@ -12,13 +12,13 @@ class Solution(object):
         __ a < 10: r.. a
         res    # list
         ___ i __ r..(9, 1, -1):
-            while a%i __ 0:
+            w.... a%i __ 0:
                 res.a..(i)
                 a //= i
         __ a >= 10 o. n.. res: r.. 0
         result = ''
         ___ i __ r..(l..(res)-1, -1, -1):
-            result += str(res[i])
+            result += s..(res[i])
         result = int(result)
         r.. result __ result < 2**31-1 ____ 0
     

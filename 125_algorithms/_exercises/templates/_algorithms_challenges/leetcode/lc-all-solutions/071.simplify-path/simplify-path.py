@@ -4,7 +4,7 @@ class Solution(object):
     :type path: str
     :rtype: str
     """
-    path = path.split("/")
+    path = path.s..("/")
     stack    # list
     ___ p __ path:
       __ p __ ["", "."]:

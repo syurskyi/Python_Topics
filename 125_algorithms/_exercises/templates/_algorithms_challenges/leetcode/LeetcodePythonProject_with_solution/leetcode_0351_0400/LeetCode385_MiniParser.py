@@ -55,15 +55,15 @@ class NestedInteger(object):
 
 class Solution(object):
     ___ deserialize(self, s):
-        __ s[0] __ '[' and s[-1] __ ']':
+        __ s[0] __ '[' a.. s[-1] __ ']':
             nestedInt = NestedInteger()
             s = s[1:-1]
             __ n.. s: r.. nestedInt
             i, prev= 0, 0
-            while i < l..(s):
+            w.... i < l..(s):
                 __ s[i] __ '[':
                     count = 1
-                    while i < l..(s) and count > 0:
+                    w.... i < l..(s) a.. count > 0:
                         i+=1
                         __ s[i] __ ']':
                             count -= 1

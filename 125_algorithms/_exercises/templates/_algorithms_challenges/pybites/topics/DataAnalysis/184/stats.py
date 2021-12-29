@@ -41,14 +41,14 @@ class BiteStats:
         r.. (l..(set(dic.get('user') ___ dic __ self.rows __ dic.get('completed') __ 'True')))
 
     @property
-    ___ top_bite_by_number_of_clicks(self) -> str:
+    ___ top_bite_by_number_of_clicks(self) -> s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         #most_click = Counter(dic['bite'] for dic in newlist)
         r.. Counter(dic['bite'] ___ dic __ self.rows).most_common(1)[0][0]
 
     @property
-    ___ top_user_by_bites_completed(self) -> str:
+    ___ top_user_by_bites_completed(self) -> s..:
         """Get the user that completed the most Bites"""
         r.. Counter( dic['user'] ___ dic __ newlist __ dic.get('completed') __ 'True').most_common(1)[0][0]
 

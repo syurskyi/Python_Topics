@@ -25,22 +25,22 @@ class Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit():
                 res[-1] += char
             ____ char.isdigit():
                 res.a..(char)
             ____ char __ self.OP:
-                while stack and stack[-1] __ self.OP:
+                w.... stack a.. stack[-1] __ self.OP:
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                while stack and stack[-1] != '(':
+                w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop())
                 stack.pop()
 
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
 
         r.. res
@@ -81,22 +81,22 @@ class Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit():
                 res[-1] += char
             ____ char.isdigit():
                 res.a..(char)
             ____ char __ '+-':
-                while stack and stack[-1] __ '+-':
+                w.... stack a.. stack[-1] __ '+-':
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                while stack and stack[-1] != '(':
+                w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop())
                 stack.pop()
 
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
 
         r.. res

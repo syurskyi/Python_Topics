@@ -9,9 +9,9 @@ ___ check_brackets(checks):
         # Set higher than len(data) to make sure while loop initates.
         old_data_length = l..(data) + 1
         
-        while l..(data) < old_data_length:
+        w.... l..(data) < old_data_length:
             old_data_length = l..(data)
-            data = data.replace('()','').replace('{}','').replace('[]','').replace('<>','')
+            data = data.r..('()','').r..('{}','').r..('[]','').r..('<>','')
 
         __ l..(data) > 0:
             answer.a..('0') # String had incorrect bracket usage.

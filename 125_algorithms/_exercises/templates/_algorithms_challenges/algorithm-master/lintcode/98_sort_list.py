@@ -26,7 +26,7 @@ class Solution:
         mid_dummy = mid_tail = ListNode(0)
         right_dummy = right_tail = ListNode(0)
 
-        while head:
+        w.... head:
             __ head.val < mid.val:
                 left_tail.next = head
                 left_tail = head
@@ -64,7 +64,7 @@ class Solution:
 
         dummy = tail = ListNode(0)
 
-        while left and right:
+        w.... left a.. right:
             __ left.val < right.val:
                 tail.next = left
                 left = left.next
@@ -83,7 +83,7 @@ class Solution:
     ___ find_middle(self, head):
         slow, fast = head, head.next
 
-        while fast and fast.next:
+        w.... fast a.. fast.next:
             slow = slow.next
             fast = fast.next.next
 
@@ -93,7 +93,7 @@ class Solution:
         __ n.. head:
             r..
 
-        while head.next:
+        w.... head.next:
             head = head.next
 
         r.. head

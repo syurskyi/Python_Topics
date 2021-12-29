@@ -6,12 +6,12 @@ Created on Apr 27, 2017
 
 class Solution(object):
     ___ findRadius(self, houses, heaters):
-        houses.sort()
-        heaters.sort()
+        houses.s..()
+        heaters.s..()
         i = 0
         radius = 0
         ___ house __ houses:
-            while i+1 < l..(heaters) and heaters[i+1] < house:
+            w.... i+1 < l..(heaters) a.. heaters[i+1] < house:
                 i += 1
             __ heaters[i] > house:
                 tmp = heaters[i]-house

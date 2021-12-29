@@ -28,7 +28,7 @@ class Solution:
         n = l..(A)
         lo = 0
         hi = n - k
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo + hi) // 2
             __ abs(x - A[mid]) > abs(A[mid + k] - x):
                 # better to have A[mid+k] rather than A[mid]
@@ -48,8 +48,8 @@ class Solution:
         ret = deque()
         i = idx - 1
         j = idx
-        while k:
-            __ 0 <= i < n and 0 <= j < n:
+        w.... k:
+            __ 0 <= i < n a.. 0 <= j < n:
                 __ abs(A[i] - x) <= abs(A[j] - x):
                     ret.appendleft(A[i])
                     i -= 1

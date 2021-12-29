@@ -7,7 +7,7 @@ class Solution:
         ans = gap = 1
         turn = 0
 
-        while n > 1:
+        w.... n > 1:
             turn += 1
             n //= 2
             gap *= 2

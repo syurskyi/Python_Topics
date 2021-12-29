@@ -1,4 +1,4 @@
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ csv
 _______ re
 
@@ -6,7 +6,7 @@ _______ requests
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
-Character = namedtuple('Character', 'pid name sid align sex first_appearance appearances year')
+Character = n..('Character', 'pid name sid align sex first_appearance appearances year')
 
 
 # csv parsing code provided so this Bite can focus on the parsing
@@ -23,8 +23,8 @@ ___ load_data():
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
     ___ row __ reader:
-        name = re.sub(r'(.*?)\(.*', r'\1', row['name']).strip()
-        yield Character(pid=row['page_id'],
+        name = re.sub(r'(.*?)\(.*', r'\1', row['name']).s..
+        y.. Character(pid=row['page_id'],
                         name=name,
                         sid=row['ID'],
                         align=row['ALIGN'],
@@ -51,8 +51,8 @@ ___ most_popular_characters(characters=characters, top=5):
 
 ___ _year_app(mon_yr):
     """ return the year based on the MON-YY string from FIRST APPEARANCE field"""
-    year = int(mon_yr.split('-')[-1])
-    r.. str(1900 + year) __ year > 20 ____ str(2000 + year)
+    year = int(mon_yr.s..('-')[-1])
+    r.. s..(1900 + year) __ year > 20 ____ s..(2000 + year)
 
 
 ___ max_and_min_years_new_characters(characters=characters):
@@ -75,6 +75,6 @@ ___ get_percentage_female_characters(characters=characters):
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    genders = Counter([c.sex.split(' ')[0] ___ c __ characters __ c.sex])
+    genders = Counter([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
     sum_all_genders = s..([x[1] ___ x __ genders.items()])
     r.. round(100 * genders['Female'] / sum_all_genders, 2)

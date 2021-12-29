@@ -37,7 +37,7 @@ class NumArray:
         delta = val - self.incr[j]
         self.incr[j] = val
 
-        while j < l..(self.incr):
+        w.... j < l..(self.incr):
             self.bits[j] += delta
             j += (j & -j)
 
@@ -53,7 +53,7 @@ class NumArray:
         res = 0
         j = i
 
-        while j > 0:
+        w.... j > 0:
             res += self.bits[j]
             j -= (j & -j)
 

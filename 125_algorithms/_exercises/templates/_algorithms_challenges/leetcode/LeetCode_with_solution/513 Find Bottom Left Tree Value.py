@@ -44,7 +44,7 @@ class Solution:
         :rtype: int
         """
         q = [root]
-        while q:
+        w.... q:
             ret = q[0].val
             cur_q    # list
             ___ e __ q:

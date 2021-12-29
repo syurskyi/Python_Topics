@@ -37,7 +37,7 @@ class Solution(object):
         level    # list
         queue.a..(root)
         queue.a..(N..)
-        while queue:
+        w.... queue:
             root = queue.pop(0)
             __ root __ N..
                 stack.a..(level[:])
@@ -51,6 +51,6 @@ class Solution(object):
                 __ root.right __ n.. N..
                     queue.a..(root.right)
         res    # list
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
         r.. res

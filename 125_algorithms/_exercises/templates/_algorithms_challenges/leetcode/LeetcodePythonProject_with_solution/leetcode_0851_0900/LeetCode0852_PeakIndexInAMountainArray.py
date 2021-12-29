@@ -11,7 +11,7 @@ class Solution(object):
         """
         arr = A
         l, r = 0, l..(arr)-1
-        while l < r:
+        w.... l < r:
             m = (l+r)//2
             __ arr[m] < arr[m+1]:
                 l = m+1
@@ -27,7 +27,7 @@ class Solution(object):
         arr = A
         res = -1
         val = float('-inf')
-        ___ i, num __ enumerate(arr):
+        ___ i, num __ e..(arr):
             __ num > val:
                 res = i
             val = max(val, num)

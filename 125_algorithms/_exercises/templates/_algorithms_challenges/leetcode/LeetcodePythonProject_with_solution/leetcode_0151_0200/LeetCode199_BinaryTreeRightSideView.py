@@ -20,7 +20,7 @@ class Solution(object):
         queue = [root]
         nextQueue    # list
         res = [root.val]
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             __ node.left:
                 nextQueue.a..(node.left)

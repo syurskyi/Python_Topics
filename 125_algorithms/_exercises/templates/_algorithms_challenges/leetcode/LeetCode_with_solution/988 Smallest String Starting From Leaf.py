@@ -46,7 +46,7 @@ class Solution:
     ___ __init__(self):
         self.mn: Tuple[int] = N..
 
-    ___ smallestFromLeaf(self, root: TreeNode) -> str:
+    ___ smallestFromLeaf(self, root: TreeNode) -> s..:
         """
         dfs
         """
@@ -63,7 +63,7 @@ class Solution:
             r..
 
         cur_deque.appendleft(node.val)
-        __ n.. node.left and n.. node.right:
+        __ n.. node.left a.. n.. node.right:
             t = tuple(cur_deque)
             __ n.. self.mn o. t < self.mn:
                 self.mn = t

@@ -12,5 +12,5 @@ class Solution:
         ___ arr __ arrays: res += arr
         __ k > l..(res):
             r.. 'error'
-        res.sort()
+        res.s..()
         r.. res[-k]

@@ -9,7 +9,7 @@ FASTA_FILE = os.path.join(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 __ n.. os.path.isfile(FASTA_FILE):
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
-___ fasta_to_2line_fasta(fasta_file: str, fasta_2line_file: str) -> int:
+___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) -> int:
     """
     :param fasta_file: Filename of multi-line FASTA file
     :param fasta_2line_file: Filename of 2-line FASTA file
@@ -22,7 +22,7 @@ ___ fasta_to_2line_fasta(fasta_file: str, fasta_2line_file: str) -> int:
     #for line in fasta_list:
     ___ line __ fasta_list:
         __ line[:1] __ '>':
-            __ seq != N.. and info != N..
+            __ seq != N.. a.. info != N..
                 print(seq, info)
             new_seq = True
             seq = line[1:]

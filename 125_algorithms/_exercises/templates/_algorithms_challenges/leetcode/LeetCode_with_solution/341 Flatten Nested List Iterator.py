@@ -76,7 +76,7 @@ class NestedIterator(object):
         Put the pointer movement logic in the hasNext()
         :rtype: bool
         """
-        while self.stk:
+        w.... self.stk:
             nl, idx = self.stk[-1]
             __ idx < l..(nl):
                 ni = nl[idx]
@@ -126,7 +126,7 @@ class NestedIteratorVerbose(object):
         Put the pointer movement logic in the hasNext()
         :rtype: bool
         """
-        while self.nl_stk:
+        w.... self.nl_stk:
             nl = self.nl_stk[-1]
             idx = self.idx_stk[-1]
             __ idx < l..(nl):

@@ -24,11 +24,11 @@ class Solution(object):
         area = 0
         grid[i][j] = -1
         queue = [(i, j)]
-        while queue:
+        w.... queue:
             i, j = queue.pop(0)
             area += 1
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-                __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
+                __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                     queue.a..((x, y))
                     grid[x][y] = -1
         r.. area

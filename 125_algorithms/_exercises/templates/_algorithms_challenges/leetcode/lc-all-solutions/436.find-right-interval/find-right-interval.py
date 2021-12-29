@@ -7,7 +7,7 @@ class IntvArray(object):
   ___ __init__(self):
     self._array    # list
     self.a.. = l.... x: self._array.a..(x)
-    self.sort = self._array.sort
+    self.s.. = self._array.s..
 
   ___ __len__(self):
     r.. l..(self._array)
@@ -29,9 +29,9 @@ class Solution(object):
     """
     bst = IntvArray()
     ans    # list
-    ___ i, intv __ enumerate(intervals):
+    ___ i, intv __ e..(intervals):
       bst.a..((intv.start, i))
-    bst.sort()
+    bst.s..()
     length = l..(bst)
     ___ intv __ intervals:
       idx = bisect.bisect_left(bst, intv.end)

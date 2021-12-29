@@ -13,7 +13,7 @@ class Solution:
     p = root
     pre = N..
     head = N..
-    while p:
+    w.... p:
       __ p.left:
         __ pre:
           pre.next = p.left

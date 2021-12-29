@@ -8,7 +8,7 @@ class Solution(object):
     d = ["()", "[]", "{}"]
     ___ i __ r..(0, l..(s)):
       stack.a..(s[i])
-      __ l..(stack) >= 2 and stack[-2] + stack[-1] __ d:
+      __ l..(stack) >= 2 a.. stack[-2] + stack[-1] __ d:
         stack.pop()
         stack.pop()
     r.. l..(stack) __ 0

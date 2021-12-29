@@ -36,7 +36,7 @@ class Solution(object):
 
         F = {}
         pi = {}
-        A.sort()
+        A.s..()
         ___ i __ xrange(l..(A)):
             F[i] = 1
             pi[i] = i
@@ -54,7 +54,7 @@ class Solution(object):
         ret = deque()
         cur = max_i
         ret.appendleft(A[cur])
-        while pi[cur] != cur:
+        w.... pi[cur] != cur:
             cur = pi[cur]
             ret.appendleft(A[cur])
 

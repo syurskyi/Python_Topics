@@ -5,7 +5,7 @@ class Solution:
             r.. False
         num_digit = 0
         y = x
-        while y != 0:
+        w.... y != 0:
             y /= 10
             num_digit += 1
         __ num_digit <= 1:
@@ -13,7 +13,7 @@ class Solution:
         # Reverse the right half
         i = 0
         t = 0
-        while i < num_digit / 2:
+        w.... i < num_digit / 2:
             t = t * 10 + x % 10
             x /= 10
             i += 1

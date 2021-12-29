@@ -13,6 +13,6 @@ class Solution:
             F[word] = F.get(word, 0) + 1
 
         W = [(freq, word) ___ word, freq __ F.items()]
-        W.sort(key=l.... item: (-item[0], item[1]))
+        W.s..(key=l.... item: (-item[0], item[1]))
 
         r.. [W[i][1] ___ i __ r..(k)]

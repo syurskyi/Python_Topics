@@ -2,7 +2,7 @@
 # Score: 30
 
 
-____ datetime _______ datetime as dt
+____ d__ _______ d__ as dt
 
 fmt = '%a %d %b %Y %H:%M:%S %z'
 ___ _ __ r..(int(input())):

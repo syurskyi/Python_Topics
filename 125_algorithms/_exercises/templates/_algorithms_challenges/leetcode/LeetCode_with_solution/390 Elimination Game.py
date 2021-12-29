@@ -37,7 +37,7 @@ class Solution(object):
         head = 1
         step = 1
         from_left = True
-        while remain > 1:
+        w.... remain > 1:
             __ from_left:
                 head += step
             ____ remain % 2 __ 1:

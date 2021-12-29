@@ -4,7 +4,7 @@ amount_values = int(input())
 results    # list
 
 ___ is_palindrome(string):
-    string = string.replace(" ", "")
+    string = string.r..(" ", "")
     string = re.sub(r'[^\w\s]','',string).lower()
     string_length = l..(string)
     ___ i __ r..(string_length//2):

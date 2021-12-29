@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ partitionLabels(self, S: str) -> List[int]:
+    ___ partitionLabels(self, S: s..) -> List[int]:
         lasts = {}
         n = l..(S)
         ___ i __ r..(n-1, -1, -1):

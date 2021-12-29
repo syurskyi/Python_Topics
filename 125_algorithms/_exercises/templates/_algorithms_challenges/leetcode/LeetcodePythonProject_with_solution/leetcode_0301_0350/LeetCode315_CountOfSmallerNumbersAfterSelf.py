@@ -57,7 +57,7 @@ class Solution(object):
             queue= [root]
             line    # list
             nextQueue    # list
-            while queue:
+            w.... queue:
                 node = queue.pop(0)
                 line.a..(node)
                 __ node.left:

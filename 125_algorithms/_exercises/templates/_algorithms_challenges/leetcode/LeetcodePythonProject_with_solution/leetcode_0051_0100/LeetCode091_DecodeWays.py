@@ -51,7 +51,7 @@ class Solution(object):
             __ s[i] != '0':
                 dp[i] += dp[i-1]
             val = int(s[i-1:i+1])
-            __ val<=26 and val>=10:
+            __ val<=26 a.. val>=10:
                 dp[i] += dp[i-2]
         
         r.. dp[-1]

@@ -30,12 +30,12 @@ class Solution:
         O(n^2)
         """
         ret = 0
-        nums.sort()
+        nums.s..()
         n = l..(nums)
         ___ k __ r..(n-1, 1, -1):
             i = 0
             j = k - 1
-            while i < j:
+            w.... i < j:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += j - i  # move i will always satisfy the constraint
                     j -= 1  # to break
@@ -54,12 +54,12 @@ class Solution:
         O(n^2)
         """
         ret = 0
-        nums.sort()
+        nums.s..()
         n = l..(nums)
         ___ i __ r..(n - 2):
             j = i + 1
             k = n - 1
-            while j < k:
+            w.... j < k:
                 # error, since move k will not break the formula
                 __ nums[i] + nums[j] > nums[k]:
                     ret += k - j
@@ -77,7 +77,7 @@ class Solution:
         Cache + Prune
         """
         cache = {}
-        nums.sort()
+        nums.s..()
         n = l..(nums)
         ret = 0
         ___ i __ r..(n):

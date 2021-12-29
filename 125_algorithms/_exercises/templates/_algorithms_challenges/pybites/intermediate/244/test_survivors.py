@@ -181,11 +181,11 @@ ___ actual2():
 
 ___ test_output_matches(actual):
     expected = [line.rstrip() ___ line __
-                EXPECTED_OUTPUT.strip().splitlines()]
+                EXPECTED_OUTPUT.s...splitlines()]
     ... actual __ expected
 
 
 ___ test_different_output(actual2):
     expected = [line.rstrip() ___ line __
-                EXPECTED_OUTPUT_WITH_GAP.strip().splitlines()]
+                EXPECTED_OUTPUT_WITH_GAP.s...splitlines()]
     ... actual2 __ expected

@@ -1,11 +1,11 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 _______ feedparser
 
 # cached version to have predictable results for testing
 FEED_URL = "http://bit.ly/2IkFe9B"
 
-Game = namedtuple('Game', 'title link')
+Game = n..('Game', 'title link')
 
 
 ___ get_games():

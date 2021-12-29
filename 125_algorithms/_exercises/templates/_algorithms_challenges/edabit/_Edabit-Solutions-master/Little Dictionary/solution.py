@@ -2,7 +2,7 @@ ___ dictionary(intial,lst):
     last_index = l..(lst) - 1
     index = 0
     a_list    # list
-    while index <= last_index:
+    w.... index <= last_index:
         word = lst[index]
         __ word.startswith(intial):
             a_list.a..(word)

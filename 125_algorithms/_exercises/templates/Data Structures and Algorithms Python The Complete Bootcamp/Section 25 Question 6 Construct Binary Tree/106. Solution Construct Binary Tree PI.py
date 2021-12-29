@@ -9,7 +9,7 @@ c_ TreeNode:
 c_ Solution:
     ___ buildTree  preorder, inorder):
         memory  {}
-        ___ i, e __ enumerate(inorder):
+        ___ i, e __ e..(inorder):
             memory[e]  i
 
         root  helper(preorder[::-1], inorder, 0, le.(inorder), memory)

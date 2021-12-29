@@ -19,7 +19,7 @@ queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 
 """
 ____ collections _______ defaultdict
-____ itertools _______ izip
+____ i.. _______ izip
 
 __author__ = 'Daniel'
 

@@ -9,7 +9,7 @@ class Solution(object):
     """
     i = 0
     queue = deque([])
-    while i < l..(s):
+    w.... i < l..(s):
       __ s[i] __ " ":
         i += 1
       ____ s[i] __ "-+*/":
@@ -17,11 +17,11 @@ class Solution(object):
         i += 1
       ____:
         start = i
-        while i < l..(s) and s[i] n.. __ "+-*/ ":
+        w.... i < l..(s) a.. s[i] n.. __ "+-*/ ":
           i += 1
         num = int(s[start:i])
         queue.a..(num)
-        while l..(queue) > 2 and queue[-2] __ "*/":
+        w.... l..(queue) > 2 a.. queue[-2] __ "*/":
           b = queue.pop()
           ops = queue.pop()
           a = queue.pop()
@@ -33,7 +33,7 @@ class Solution(object):
             r.. "invalid"
     __ queue:
       a = queue.popleft()
-      while l..(queue) >= 2:
+      w.... l..(queue) >= 2:
         ops = queue.popleft()
         b = queue.popleft()
         __ ops __ "+":

@@ -32,7 +32,7 @@ class Solution:
         ret = deque()
         lo = 0
         hi = n
-        while lo < hi:
+        w.... lo < hi:
             __ A[lo] ** 2 < A[hi - 1] ** 2:
                 ret.appendleft(A[hi - 1] ** 2)
                 hi -= 1

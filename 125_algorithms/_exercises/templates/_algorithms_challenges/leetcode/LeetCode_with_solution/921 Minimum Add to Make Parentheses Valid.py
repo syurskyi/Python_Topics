@@ -39,7 +39,7 @@ S only consists of '(' and ')' characters.
 
 
 class Solution:
-    ___ minAddToMakeValid(self, S: str) -> int:
+    ___ minAddToMakeValid(self, S: s..) -> int:
         """
         stk
         """

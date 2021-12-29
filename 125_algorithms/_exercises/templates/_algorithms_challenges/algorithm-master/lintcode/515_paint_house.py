@@ -25,7 +25,7 @@ class Solution:
             ___ j __ r..(n):
                 dp[curr][j] = INFINITY
                 ___ k __ r..(n):
-                    __ k != j and dp[prev][k] + costs[i][j] < dp[curr][j]:
+                    __ k != j a.. dp[prev][k] + costs[i][j] < dp[curr][j]:
                         dp[curr][j] = dp[prev][k] + costs[i][j]
 
         """

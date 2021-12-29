@@ -26,12 +26,12 @@ class Solution(object):
             r.. s
         result = ''
         i, n = 0, l..(s)
-        while i < n:
+        w.... i < n:
             c = s[i]
             __ c __ '[':
                 count = 1
                 j = i+1
-                while j < l..(s) and count > 0:
+                w.... j < l..(s) a.. count > 0:
                     __ s[j] __ '[':
                         count+=1
                     ____ s[j] __ ']':
@@ -41,7 +41,7 @@ class Solution(object):
                 subStr = s[i+1:j-1]
                 tmp = self.decodeString(subStr)
                 j = i
-                while j-1 >= 0 and s[j-1].isdigit():
+                w.... j-1 >= 0 a.. s[j-1].isdigit():
                     j-=1
                 times = int(s[j:i])
                 result += times*tmp

@@ -1,31 +1,31 @@
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)
     """
     old = {}
     new = {}
-    ___ entry __ old_reqs.strip().split('\n'):
-        x = entry.split('==')
+    ___ entry __ old_reqs.s...s..('\n'):
+        x = entry.s..('==')
         y    # list
 
-        ___ i __ x[1].split('.'):
+        ___ i __ x[1].s..('.'):
             __ l..(i) __ 1:
-                y.a..('0' + str(i))
+                y.a..('0' + s..(i))
             ____:
-                y.a..(str(i))
+                y.a..(s..(i))
 
         old[x[0]] = ''.join(y)
 
-    ___ entry __ new_reqs.strip().split('\n'):
-        x = entry.split('==')
+    ___ entry __ new_reqs.s...s..('\n'):
+        x = entry.s..('==')
         y    # list
 
-        ___ i __ x[1].split('.'):
+        ___ i __ x[1].s..('.'):
             __ l..(i) __ 1:
-                y.a..('0' + str(i))
+                y.a..('0' + s..(i))
             ____:
-                y.a..(str(i))
+                y.a..(s..(i))
         new[x[0]] = ''.join(y)
 
     output    # list

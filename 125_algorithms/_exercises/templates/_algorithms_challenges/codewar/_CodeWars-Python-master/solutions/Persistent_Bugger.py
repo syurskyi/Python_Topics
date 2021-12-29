@@ -21,8 +21,8 @@ _______ functools
 ___ persistence(n):
     times = 0
 
-    while n > 9:
-        n = functools.reduce(l.... x, y: x * y, [int(i) ___ i __ str(n)])
+    w.... n > 9:
+        n = functools.reduce(l.... x, y: x * y, [int(i) ___ i __ s..(n)])
         times += 1
 
     r.. times

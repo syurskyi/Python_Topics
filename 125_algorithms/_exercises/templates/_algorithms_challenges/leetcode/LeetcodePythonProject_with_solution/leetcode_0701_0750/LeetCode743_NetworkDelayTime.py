@@ -23,14 +23,14 @@ class Solution(object):
         heap    # list
         heapq.heappush(heap, [0, K])
         maxVal = -1
-        while heap:
+        w.... heap:
             d, node = heapq.heappop(heap)
-            __ node __ distanceMap and distanceMap[node] < d:
+            __ node __ distanceMap a.. distanceMap[node] < d:
                 continue
             __ node __ path:
                 ___ node0 __ path[node]:
                     absDist = d+path[node][node0]
-                    __ node0 __ distanceMap and distanceMap[node0] <= absDist:
+                    __ node0 __ distanceMap a.. distanceMap[node0] <= absDist:
                         continue
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])

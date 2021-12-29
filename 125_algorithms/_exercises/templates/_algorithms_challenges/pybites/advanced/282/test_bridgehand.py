@@ -9,7 +9,7 @@ ____ bridgehand _______ Suit, Rank, Card, BridgeHand
 
 @dataclass
 class TestHand:
-    card_string: str
+    card_string: s..
     doubletons: int
     singletons: int
     voids: int
@@ -84,7 +84,7 @@ ___ test_wrong_number_of_cards(hand):
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_str(bridge_hand, test_hand):
-    ... str(bridge_hand) __ test_hand.card_string
+    ... s..(bridge_hand) __ test_hand.card_string
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)

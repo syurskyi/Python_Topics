@@ -13,7 +13,7 @@ class Solution(object):
         _______ math
         __ c < 0: r.. False
         l, r = 0, int(math.sqrt(c))
-        while l <= r:
+        w.... l <= r:
             __ l*l + r*r < c:
                 l += 1
             ____ l*l + r*r > c:

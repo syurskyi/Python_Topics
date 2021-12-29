@@ -6,7 +6,7 @@ PAT = r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
 
 
 
-___ max_letter_word(text: str) -> Tuple[str, str, int]:
+___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     """
     Find the word in text with the most repeated letters. If more than one word
     has the highest number of repeated letters choose the first one. Return a
@@ -17,11 +17,11 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
     >>> max_letter_word('$5000 !!')
     ('', '', 0)
     """
-    __ n.. isi..(text, str):
+    __ n.. isi..(text, s..):
         raise ValueError('bad input')
 
-    words = l..(map(l.... x: re.sub(PAT, '', x.replace('_', '')),
-                     text.split(' ')))
+    words = l..(map(l.... x: re.sub(PAT, '', x.r..('_', '')),
+                     text.s..(' ')))
     counts    # list
     ___ word __ words:
         folded = word.casefold()

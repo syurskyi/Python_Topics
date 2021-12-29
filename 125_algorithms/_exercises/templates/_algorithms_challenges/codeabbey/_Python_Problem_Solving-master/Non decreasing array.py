@@ -3,7 +3,7 @@ class Solution:
                 i = 0
                 non_count = 0
                 equals = False
-                while i!= l..(nums)-1:
+                w.... i!= l..(nums)-1:
                     try:
                         __ nums[i] > nums[i+1]:
                             __ i+1 __ l..(nums)-1:

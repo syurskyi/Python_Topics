@@ -1,5 +1,5 @@
-____ datetime _______ datetime
-____ collections _______ namedtuple
+____ d__ _______ d__
+____ collections _______ n..
 ____ time _______ mktime
 ____ feedparser _______ parse
 _______ re
@@ -8,7 +8,7 @@ _______ xml.etree.ElementTree as ET
 
 # FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
-Entry = namedtuple('Entry', 'date title link tags')
+Entry = n..('Entry', 'date title link tags')
 
 
 class AttrDict(d..):
@@ -20,8 +20,8 @@ class AttrDict(d..):
         super(AttrDict, self).__init__(*args, **kwargs)
         self.__dict__ = self
 
-dt1 = datetime(2018, 2, 18, 19, 52, 0).timetuple()
-dt2 = datetime(2017, 1, 6, 11, 0, 0).timetuple()
+dt1 = d__(2018, 2, 18, 19, 52, 0).timetuple()
+dt2 = d__(2017, 1, 6, 11, 0, 0).timetuple()
 
 FEED = AttrDict({'entries':
                 [AttrDict({'author': 'PyBites',
@@ -55,12 +55,12 @@ ___ _convert_struct_time_to_dt(stime):
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
     -> date(2016, 12, 28)
     """
-    __ type(stime) __ str:
-        format = '%a, %d %b %Y %H:%M:%S %z'
-        dt_object = datetime.strptime(stime, format)
+    __ type(stime) __ s..:
+        f.. = '%a, %d %b %Y %H:%M:%S %z'
+        dt_object = d__.strptime(stime, f..)
         r.. dt_object.date()
     ____:
-        r.. datetime.fromtimestamp(mktime(stime)).date()
+        r.. d__.fromtimestamp(mktime(stime)).date()
 
 
 ___ get_feed_entries(feed=FEED):
@@ -92,13 +92,13 @@ ___ filter_entries_by_tag(search, entry):
     """
     search = search.lower()
     tag_list = [tag ___ tag __ entry.tags]
-    __ n.. re.search(r'\|', search) and n.. re.search(r'\&', search):
+    __ n.. re.search(r'\|', search) a.. n.. re.search(r'\&', search):
         r.. search __ tag_list
     __ re.search(r'\|', search):
-        search = re.split(r'\|', search)
+        search = re.s..(r'\|', search)
         r.. any([item __ tag_list ___ item __ search])
     __ re.search(r'\&', search):
-        search = re.split(r'\&', search)
+        search = re.s..(r'\&', search)
         r.. a..([item __ tag_list ___ item __ search])
     r.. search
 
@@ -116,7 +116,7 @@ ___ main():
           (use entry if only 1 match)
     """
     entries = get_feed_entries()
-    while True:
+    w... T...
         try:
             search_term = input('Search for (q for exit): ').lower()
         except EOFError:
@@ -125,7 +125,7 @@ ___ main():
         __ search_term __ '':
             print('Please provide a search term')
 
-        __ search_term != '' and search_term != 'q':
+        __ search_term != '' a.. search_term != 'q':
             output_list    # list
             ___ entry __ entries:
                 __ filter_entries_by_tag(search_term, entry):

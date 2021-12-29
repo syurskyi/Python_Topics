@@ -27,14 +27,14 @@ class Solution:
     ___ update(self, i):
         i += 1
 
-        while i < l..(self.bits):
+        w.... i < l..(self.bits):
             self.bits[i] += 1
             i += (i & -i)
 
     ___ s..(self, i):
         res = 0
 
-        while i > 0:
+        w.... i > 0:
             res += self.bits[i]
             i -= (i & -i)
 

@@ -1,7 +1,7 @@
 _______ argparse
-____ collections _______ namedtuple
+____ collections _______ n..
 
-Item = namedtuple('Item', 'product price craving')
+Item = n..('Item', 'product price craving')
 
 
 class Groceries:
@@ -35,7 +35,7 @@ class Groceries:
     ___ delete(self, product):
         """Delete item matching 'product', raises IndexError
            if no item matches"""
-        ___ i, item __ enumerate(self):
+        ___ i, item __ e..(self):
             __ item.product __ product:
                 self._items.pop(i)
                 break

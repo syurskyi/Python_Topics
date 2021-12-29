@@ -18,12 +18,12 @@ class BiteStats:
         self.rows = self._load_data(data)
 
     ___ _count_attribute(self, attrib, completed=False):
-        r.. Counter(x[attrib] ___ x __ self.rows __ n.. completed o. (completed and x['completed'] __ 'True'))
+        r.. Counter(x[attrib] ___ x __ self.rows __ n.. completed o. (completed a.. x['completed'] __ 'True'))
 
     ___ _count_clicks(self, attrib, completed=False):
         counter = Counter()
         ___ x __ self.rows:
-            __ n.. completed o. (completed and x['completed'] __ 'True'):
+            __ n.. completed o. (completed a.. x['completed'] __ 'True'):
                 counter[x[attrib]] += 1
         r.. counter
 
@@ -49,13 +49,13 @@ class BiteStats:
         r.. l..(self._count_attribute('user', True).items())
 
     @property
-    ___ top_bite_by_number_of_clicks(self) -> str:
+    ___ top_bite_by_number_of_clicks(self) -> s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         r.. self._count_clicks('bite').most_common()[0][0]
 
     @property
-    ___ top_user_by_bites_completed(self) -> str:
+    ___ top_user_by_bites_completed(self) -> s..:
         """Get the user that completed the most Bites"""
         r.. self._count_clicks('user', True).most_common()[0][0]
 

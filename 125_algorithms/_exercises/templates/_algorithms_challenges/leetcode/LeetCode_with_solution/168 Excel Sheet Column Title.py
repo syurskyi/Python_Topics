@@ -21,7 +21,7 @@ class Solution:
         :rtype: str
         """
         sb    # list  # string builder
-        while n:
+        w.... n:
             n -= 1  # there is not 0 representation in excel title
             sb.a..(chr(ord("A")+n%26))
             n /= 26

@@ -24,7 +24,7 @@ class Solution:
         __ n.. nums:
             r.. 0
 
-        nums.sort()
+        nums.s..()
 
         ___ i __ r..(l..(nums)):
             __ i != nums[i]:

@@ -26,7 +26,7 @@ class Solution:
       graph[start] = graph.get(start, []) + [end]
       graph[end] = graph.get(end, []) + [start]
 
-    __ dfs(0, graph, visited, -1) and self.nodeVisited __ n:
+    __ dfs(0, graph, visited, -1) a.. self.nodeVisited __ n:
       r.. True
     ____:
       r.. False

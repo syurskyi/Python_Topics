@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ re
 
 ____ bs4 _______ BeautifulSoup
@@ -9,7 +9,7 @@ _______ requests
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index.html
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index2.html
 
-Entry = namedtuple('Entry', 'title points comments')
+Entry = n..('Entry', 'title points comments')
 
 
 ___ _create_soup_obj(url):
@@ -63,7 +63,7 @@ ___ get_top_titles(url, top=5):
         entries.a..(entry)
 
 
-    entries.sort(r.._T..key=l.... x: (x.points,x.comments))
+    entries.s..(r.._T..key=l.... x: (x.points,x.comments))
 
     r.. entries[:top]
 

@@ -16,12 +16,12 @@ class Solution(object):
             __ rev:
                 ___ i __ r..(l+1):
                     j = l-i
-                    __ 0 <= i < m and 0 <= j < n:
+                    __ 0 <= i < m a.. 0 <= j < n:
                         result.a..(matrix[i][j])
             ____:
                 ___ j __ r..(l+1):
                     i = l-j
-                    __ 0 <= i < m and 0 <= j < n:
+                    __ 0 <= i < m a.. 0 <= j < n:
                         result.a..(matrix[i][j])
             rev = n.. rev
         r.. result

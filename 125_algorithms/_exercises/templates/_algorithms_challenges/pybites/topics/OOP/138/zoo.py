@@ -5,7 +5,7 @@ class Animal:
     ___ __init__(self, name):
         Animal.counter += 1
         self.name = name.t..
-        self.animals.a..(str(self))
+        self.animals.a..(s..(self))
         
 
     ___ __str__(self):

@@ -11,7 +11,7 @@ class Solution:
                 # Calculate trapped water
                 w = i - last - 1
                 area = w * A[last]
-                while stack:
+                w.... stack:
                     area -= A[stack.pop()]
                 res += area
                 last = i
@@ -20,12 +20,12 @@ class Solution:
         # Process remaining bars
         __ stack:
             r = stack.pop()  # Rightmost effective bar
-            while stack:
+            w.... stack:
                 __ A[stack[-1]] >= A[r]:
                     r = stack.pop()
                 ____:
                     break
-            while stack:
+            w.... stack:
                 i = stack.pop()
                 __ A[i] < A[r]:
                     res += A[r] - A[i]

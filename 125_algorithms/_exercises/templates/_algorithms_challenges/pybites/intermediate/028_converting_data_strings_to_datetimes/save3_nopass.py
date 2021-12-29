@@ -1,5 +1,5 @@
 ____ collections _______ Counter
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ os
 _______ re
 ____ urllib.request _______ urlretrieve
@@ -24,9 +24,9 @@ ___ _get_dates():
 
 ___ convert_to_datetime(date_str):
     """Receives a date str and convert it into a datetime object"""
-    date_str = str(date_str)
+    date_str = s..(date_str)
     date_str = ' '.join(date_str.s.. [1:5])[:-3]
-    r.. datetime.strptime(date_str, '%d %b %Y %H:%M')
+    r.. d__.strptime(date_str, '%d %b %Y %H:%M')
 
 
 ___ get_month_most_posts(dates):
@@ -34,7 +34,7 @@ ___ get_month_most_posts(dates):
        that occurs most"""
     y = [convert_to_datetime(d).year ___ d __ dates]
     m = [convert_to_datetime(d).month ___ d __ dates]
-    l = l..(zip(y, m))
-    most_freq_month = str(Counter(l).most_common(1)[0][0])
-    output = datetime.strptime(most_freq_month, '(%Y, %m)')
+    l = l..(z..(y, m))
+    most_freq_month = s..(Counter(l).most_common(1)[0][0])
+    output = d__.strptime(most_freq_month, '(%Y, %m)')
     r.. output.strftime('%Y-%m')

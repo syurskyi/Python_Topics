@@ -1,4 +1,4 @@
-____ itertools _______ combinations, permutations
+____ i.. _______ combinations, permutations
 
 ___ friends_teams(friend_list, team_size=2, order_does_matter=False):
     #print(len(friend_list), team_size, order_does_matter)

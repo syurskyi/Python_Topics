@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
 
@@ -16,11 +16,11 @@ MOVIE_DATA = local
 MIN_MOVIES = 4
 MIN_YEAR = 1960
 
-Movie = namedtuple('Movie', 'title year score')
+Movie = n..('Movie', 'title year score')
 
 # field conversion
 fields = ['movie_title', 'title_year', 'imdb_score']
-conv = [str, int, float]
+conv = [s.., int, float]
 NAME = 'director_name'
 
 
@@ -37,7 +37,7 @@ ___ get_movies_by_director():
                 continue
         ____:
             continue
-        remap = [fun(row[x]) ___ fun, x __ zip(conv, fields)]
+        remap = [fun(row[x]) ___ fun, x __ z..(conv, fields)]
         movie_dict[row[NAME]].a..(Movie(*remap))
     r.. movie_dict
 

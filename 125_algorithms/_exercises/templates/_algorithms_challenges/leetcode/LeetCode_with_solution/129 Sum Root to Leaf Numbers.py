@@ -44,8 +44,8 @@ class Solution:
         """
         __ n.. root:
             r..
-        cur = cur+str(root.val)
-        __ n.. root.left and n.. root.right:
+        cur = cur+s..(root.val)
+        __ n.. root.left a.. n.. root.right:
             result.a..(cur)
             r..
 
@@ -68,7 +68,7 @@ class Solution:
 
         cur.a..(root.val)
 
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             result.a..(cur)
             r..
 

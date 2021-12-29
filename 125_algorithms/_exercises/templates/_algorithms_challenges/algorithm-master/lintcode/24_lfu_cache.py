@@ -53,7 +53,7 @@ class LFUCache:
             self._update(key, val)
             r..
 
-        while l..(self.nodes) >= self.cap:
+        w.... l..(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)
@@ -75,7 +75,7 @@ class LFUCache:
         from_freq = cache_node.freq_node
         to_freq = N..
 
-        __ from_freq.nxt and from_freq.nxt.freq __ from_freq.freq + 1:
+        __ from_freq.nxt a.. from_freq.nxt.freq __ from_freq.freq + 1:
             to_freq = from_freq.nxt
         ____:
             to_freq = FreqNode(from_freq.freq + 1)
@@ -92,7 +92,7 @@ class LFUCache:
         self.nodes[key] = cache_node
 
         freq_head = self.D.nxt
-        __ freq_head and freq_head.freq __ 0:
+        __ freq_head a.. freq_head.freq __ 0:
             freq_head.append_tail(cache_node)
             r..
 

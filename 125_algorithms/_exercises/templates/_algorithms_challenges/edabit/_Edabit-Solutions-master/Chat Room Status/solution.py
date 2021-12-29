@@ -7,7 +7,7 @@ ___ chatroom_status(users):
         r.. users[0] + " and " + users[1] + " online"
     ____:
         var = l..(users) - 2
-        var_2 = users[0] + ", " + users[1] + " and " + str(var) + " more online"
+        var_2 = users[0] + ", " + users[1] + " and " + s..(var) + " more online"
         # print(var_2)
         r.. var_2
 

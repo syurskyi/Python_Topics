@@ -13,7 +13,7 @@ class Interval(object):
 class Solution(object):
     ___ eraseOverlapIntervals(self, intervals):
         __ n.. intervals: r.. 0
-        intervals.sort(key=l.... x: (x.end, x.start))
+        intervals.s..(key=l.... x: (x.end, x.start))
         maxLen = intervals[0].end
         count = 0
         ___ i __ r..(1, l..(intervals)):

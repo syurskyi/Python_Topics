@@ -20,4 +20,4 @@ ___ most_prolific_automaker(year):
 ___ get_models(automaker, year):
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    r.. {x['model'] ___ x __ data __ x['automaker'] __ automaker and x['year'] __ year}
+    r.. {x['model'] ___ x __ data __ x['automaker'] __ automaker a.. x['year'] __ year}

@@ -46,11 +46,11 @@ ___ check_bt(donor, recipient):
         bool: True for compatability, False otherwise.
     """
 
-    __ type(donor) __ int and (donor < 0 o. donor > 7):
+    __ type(donor) __ int a.. (donor < 0 o. donor > 7):
         raise ValueError
     ____ type(donor) __ float:
         raise TypeError
-    ____ type(donor) __ str:
+    ____ type(donor) __ s..:
         __ donor __ blood_type_text:
             donor = blood_type_text[donor].value
         ____:
@@ -59,11 +59,11 @@ ___ check_bt(donor, recipient):
         donor = donor.value
 
     
-    __ type(recipient) __ int and (recipient < 0 o. recipient > 7):
+    __ type(recipient) __ int a.. (recipient < 0 o. recipient > 7):
         raise ValueError
     ____ type(recipient) __ float:
         raise TypeError
-    ____ type(recipient) __ str:
+    ____ type(recipient) __ s..:
         __ recipient __ blood_type_text:
             recipient = blood_type_text[recipient].value
         ____:

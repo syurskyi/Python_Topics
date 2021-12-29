@@ -12,7 +12,7 @@ class Solution(object):
         """
         prev = -1
         maxLen = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ num __ 0:
                 maxLen = max(maxLen, i-prev-1)
                 prev = i

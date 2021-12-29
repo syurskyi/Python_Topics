@@ -42,10 +42,10 @@ class Solution:
             r.. N..
 
         q = [root]
-        while q:
+        w.... q:
             current_level = q
             q    # list
-            ___ ind, val __ enumerate(current_level):
+            ___ ind, val __ e..(current_level):
                 __ val.left: q.a..(val.left)
                 __ val.right: q.a..(val.right)
                 try:

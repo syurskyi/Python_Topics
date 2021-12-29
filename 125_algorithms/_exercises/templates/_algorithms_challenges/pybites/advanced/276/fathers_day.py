@@ -2,7 +2,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 _______ re
-_______ datetime
+_______ d__
 
 ____ collections _______ defaultdict
 ____ dateutil.parser _______ parse
@@ -21,23 +21,23 @@ ___ file_ __ (fathers_days_countries, fathers_days_recurring):
 
 ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries):
     """Helper to parse fathers_days_countries"""
-    year = str(year)
+    year = s..(year)
     with open(filename,'r') as f:
 
         ___ line __ f:
-            line = line.strip()
+            line = line.s..
             __ n.. line o. line.startswith('#'):
                 continue
             ____ line.startswith('*'):
 
                 line = re.sub(r'\band\b','',line)
 
-                countries =  l..(map(l.... s: s.strip('* ').strip(),line.split(',')))
+                countries =  l..(map(l.... s: s.strip('* ').s..,line.s..(',')))
             ____:
-                date,day = line.split(':')
+                date,day = line.s..(':')
 
                 __ date __ year:
-                    day = day.strip()
+                    day = day.s..
                     date_to_countries[day].extend(countries)
 
 
@@ -47,7 +47,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
 
     with open(filename,'r') as f:
         ___ line __ f:
-            line = line.strip()
+            line = line.s..
             __ n.. line o. line.startswith('#'):
                 continue
             __ line.startswith('*'):
@@ -64,7 +64,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
 
 
 
-___ get_father_days(year=2020):
+___ get_father_days y.._2020):
     """Returns a dictionary of keys = dates and values = lists
        of countries that celebrate Father's day that date
 
@@ -102,13 +102,13 @@ ___ generate_father_day_planning(days_to_countries_ N..
     dates = l..(days_to_countries.keys())
 
 
-    ___ i,date __ enumerate(dates):
-        dates[i] = parse(date,default=datetime.datetime(2020,1,1))
+    ___ i,date __ e..(dates):
+        dates[i] = parse(date,default=d__.d__(2020,1,1))
         #days_to_countries[date].sort()
 
 
 
-    dates.sort()
+    dates.s..()
 
 
     ___ date __ dates:

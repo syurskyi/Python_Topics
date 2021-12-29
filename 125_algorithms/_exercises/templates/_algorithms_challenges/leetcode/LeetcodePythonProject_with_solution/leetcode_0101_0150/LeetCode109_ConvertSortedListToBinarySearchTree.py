@@ -26,7 +26,7 @@ class Solution(object):
         node = head
         length = 0
         self.h = head
-        while node:
+        w.... node:
             node = node.next
             length += 1
         r.. self.helper(0, length-1)

@@ -21,8 +21,8 @@ class Solution:
         :type version2: str
         :rtype int
         """
-        version1 = map(int, version1.split("."))
-        version2 = map(int, version2.split("."))
+        version1 = map(int, version1.s..("."))
+        version2 = map(int, version2.s..("."))
         n1 = l..(version1)
         n2 = l..(version2)
 
@@ -33,8 +33,8 @@ class Solution:
                 r.. -1 __ version1[i] < version2[i] ____ 1
 
         # 1.0.0 and 1 
-        __ n1 __ n2 o. n1 > n2 and a..(map(l.... x: x __ 0, version1[n2:])) o. \
-                                n1 < n2 and a..(map(l.... x: x __ 0, version2[n1:])):
+        __ n1 __ n2 o. n1 > n2 a.. a..(map(l.... x: x __ 0, version1[n2:])) o. \
+                                n1 < n2 a.. a..(map(l.... x: x __ 0, version2[n1:])):
             r.. 0
 
         r.. -1 __ n1 < n2 ____ 1

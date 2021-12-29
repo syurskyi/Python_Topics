@@ -22,7 +22,7 @@ class Solution(object):
         continue
       heapq.heappush(heap, node)
 
-    while heap:
+    w.... heap:
       value, node = heapq.heappop(heap)
       p.next = node
       p = p.next

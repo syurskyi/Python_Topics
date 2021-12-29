@@ -56,7 +56,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     """
     index = defaultdict(l..)
 
-    ___ n, line __ enumerate(text.lower().splitlines()):
+    ___ n, line __ e..(text.lower().splitlines()):
         ___ char __ characters:
             __ isi..(char, tuple):
                 __ any(map(l.... c: c.lower() __ line, char)):

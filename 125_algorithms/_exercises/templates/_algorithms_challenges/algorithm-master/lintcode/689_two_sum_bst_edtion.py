@@ -20,7 +20,7 @@ class Solution:
         self.pre()
         self.nxt()
 
-        while self.left != self.right:
+        w.... self.left != self.right:
             _sum = self.left.val + self.right.val
 
             __ _sum __ n:
@@ -32,11 +32,11 @@ class Solution:
                 self.pre()
 
     ___ pre(self):
-        while self.tail:
+        w.... self.tail:
             cur = self.tail.right
 
-            __ cur and cur != self.right:
-                while cur.left and cur.left != self.tail:
+            __ cur a.. cur != self.right:
+                w.... cur.left a.. cur.left != self.tail:
                     cur = cur.left
 
                 __ cur.left __ self.tail:
@@ -54,11 +54,11 @@ class Solution:
                 break
 
     ___ nxt(self):
-        while self.head:
+        w.... self.head:
             cur = self.head.left
 
-            __ cur and cur != self.left:
-                while cur.right and cur.right != self.head:
+            __ cur a.. cur != self.left:
+                w.... cur.right a.. cur.right != self.head:
                     cur = cur.right
 
                 __ cur.right __ self.head:

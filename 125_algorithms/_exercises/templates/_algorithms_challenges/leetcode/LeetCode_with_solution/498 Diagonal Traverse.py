@@ -59,16 +59,16 @@ class Solution:
         inc = True
         ret    # list
         R, C = l..(matrix), l..(matrix[0])
-        while True:
+        w... T...
             ret.a..(matrix[i][j])
-            __ i __ R - 1 and j __ C - 1:
+            __ i __ R - 1 a.. j __ C - 1:
                 break
             __ inc:
                 i -= 1
                 j += 1
                 __ i < 0 o. j >= C:
                     inc = False
-                    __ i < 0 and j < C:
+                    __ i < 0 a.. j < C:
                         i = 0
                     ____:
                         i += 2
@@ -78,7 +78,7 @@ class Solution:
                 j -= 1
                 __ i >= R o. j < 0:
                     inc = True
-                    __ j < 0 and i < R:
+                    __ j < 0 a.. i < R:
                         j = 0
                     ____:
                         i = R - 1

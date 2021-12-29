@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ itertools _______ cycle, islice
+____ collections _______ n..
+____ i.. _______ cycle, islice
 ____ time _______ sleep
 
-State = namedtuple('State', 'color command timeout')
+State = n..('State', 'color command timeout')
 
 
 ___ traffic_light():
@@ -14,7 +14,7 @@ ___ traffic_light():
     timeouts = (2,2,0.5)
 
     
-    states = [State(color,command,timeout) ___ color,command,timeout __ zip(colors,commands,timeouts)]
+    states = [State(color,command,timeout) ___ color,command,timeout __ z..(colors,commands,timeouts)]
     r.. cycle(states)
 
 

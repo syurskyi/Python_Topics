@@ -10,7 +10,7 @@ class Solution:
         carry = 0
         res = N..
         res_end = N..
-        while l1 __ n.. N.. and l2 __ n.. N..
+        w.... l1 __ n.. N.. a.. l2 __ n.. N..
             temp = l1.val + l2.val + carry
             digit = temp % 10
             carry = temp / 10
@@ -27,7 +27,7 @@ class Solution:
             rem = l1
         ____:
             rem = l2
-        while rem __ n.. N..
+        w.... rem __ n.. N..
             temp = rem.val + carry
             digit = temp % 10
             carry = temp / 10

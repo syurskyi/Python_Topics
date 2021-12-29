@@ -38,7 +38,7 @@ class HashHeapqWithLazy:
         r.. self.__heap[0]
 
     ___ _is_empty(self):
-        while self.__heap and self.__deleted.get(self.__heap[0]):
+        w.... self.__heap a.. self.__deleted.get(self.__heap[0]):
             val = heapq.heappop(self.__heap)
             self.__deleted[val] -= 1
 
@@ -63,13 +63,13 @@ class Solution:
         ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
-                __ self.minheap and nums[i - k] >= self.minheap.top():
+                __ self.minheap a.. nums[i - k] >= self.minheap.top():
                     self.minheap.remove(nums[i - k])
                 ____:
                     self.maxheap.remove(-1 * nums[i - k])
 
             # add nums[i]
-            __ self.minheap and nums[i] >= self.minheap.top():
+            __ self.minheap a.. nums[i] >= self.minheap.top():
                 self.minheap.push(nums[i])
             ____:
                 self.maxheap.push(-1 * nums[i])
@@ -81,13 +81,13 @@ class Solution:
         r.. ans
 
     ___ get_median(self):
-        __ n.. self.maxheap and n.. self.minheap:
+        __ n.. self.maxheap a.. n.. self.minheap:
             r.. 0
 
-        while l..(self.maxheap) > l..(self.minheap) + 1:
+        w.... l..(self.maxheap) > l..(self.minheap) + 1:
             self.minheap.push(-1 * self.maxheap.pop())
 
-        while l..(self.minheap) > l..(self.maxheap):
+        w.... l..(self.minheap) > l..(self.maxheap):
             self.maxheap.push(-1 * self.minheap.pop())
 
         r.. -1 * self.maxheap.top()

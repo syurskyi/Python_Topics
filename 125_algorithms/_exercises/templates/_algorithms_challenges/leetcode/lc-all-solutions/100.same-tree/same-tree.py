@@ -14,4 +14,4 @@ class Solution(object):
     """
     __ n.. p o. n.. q:
       r.. p __ q
-    r.. p.val __ q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+    r.. p.val __ q.val a.. self.isSameTree(p.left, q.left) a.. self.isSameTree(p.right, q.right)

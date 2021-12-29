@@ -33,4 +33,4 @@ class Solution(object):
             res.a..(t)
         __ carry __ 1:
             res.a..(1)
-        r.. ''.join([str(d) ___ d __ res[::-1]])
+        r.. ''.join([s..(d) ___ d __ res[::-1]])

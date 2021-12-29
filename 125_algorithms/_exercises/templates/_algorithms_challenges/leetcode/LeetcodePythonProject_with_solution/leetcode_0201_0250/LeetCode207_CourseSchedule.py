@@ -23,7 +23,7 @@ class Solution(object):
             __ degree[i] __ 0:
                 queue.a..(i)
                 count += 1
-        while queue:
+        w.... queue:
             course = queue.pop(0)
             ___ pointer __ graph[course]:
                 degree[pointer] -= 1
@@ -45,7 +45,7 @@ class Solution(object):
         """
         graph = [[] ___ _ __ r..(numCourses)]
         visited = [False]*numCourses
-        ___ i, prereq __ enumerate(prerequisites):
+        ___ i, prereq __ e..(prerequisites):
             graph[prereq[1]].a..(prereq[0])
         ___ i __ r..(numCourses):
             __ n.. self.dfs(graph, visited, i):

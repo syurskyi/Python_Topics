@@ -42,7 +42,7 @@ class Solution:
 
         # to prevent len(tmp) == 0
         tmp.extend((0, 0))
-        tmp.sort(r.._T..
+        tmp.s..(r.._T..
 
         self.ans = max(self.ans, tmp[0] + tmp[1])
 

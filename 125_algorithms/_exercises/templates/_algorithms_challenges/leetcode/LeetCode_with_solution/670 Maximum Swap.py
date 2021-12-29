@@ -22,17 +22,17 @@ class Solution:
         stk maintain a increasing stack from right to left
         """
         stk    # list
-        nums = l..(str(num))
+        nums = l..(s..(num))
         n = l..(nums)
         ___ i __ r..(n-1, -1, -1):
-            __ stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
+            __ stk a.. stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 continue
             stk.a..((i, nums[i]))
 
         ___ i __ r..(n):
-            while stk and stk[-1][0] <= i:
+            w.... stk a.. stk[-1][0] <= i:
                 stk.pop()
-            __ stk and stk[-1][1] > nums[i]:
+            __ stk a.. stk[-1][1] > nums[i]:
                 j = stk[-1][0]
                 nums[i], nums[j] = nums[j], nums[i]
                 break

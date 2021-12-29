@@ -1,6 +1,6 @@
 ___ LCM(x,y):
     z  x*y
-    w___ x ! 0 and y ! 0:
+    w___ x ! 0 a.. y ! 0:
         __ x > y:
             x % y
         ____:

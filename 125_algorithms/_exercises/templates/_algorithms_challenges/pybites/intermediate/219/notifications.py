@@ -1,4 +1,4 @@
-____ datetime _______ date, datetime, time, timedelta
+____ d__ _______ date, d__, time, t..
 
 TODAY = date.today()
 
@@ -6,9 +6,9 @@ TODAY = date.today()
 ___ gen_bite_planning(num_bites=1, num_days=1, start_date=TODAY):
     notification = start_date
     ___ _ __ r..(10):
-        notification = notification + timedelta(days=num_days)
+        notification = notification + t..(days=num_days)
         ___ _ __ r..(num_bites):
-            yield notification
+            y.. notification
     
 
 # if __name__ == "__main__":

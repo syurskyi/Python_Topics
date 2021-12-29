@@ -60,7 +60,7 @@ class H2O:
         self.try_output()
 
     ___ try_output(self):
-        __ l..(self.hq) >= 2 and l..(self.oq) >= 1:
+        __ l..(self.hq) >= 2 a.. l..(self.oq) >= 1:
             self.hq.popleft()()
             self.hq.popleft()()
             self.oq.popleft()()

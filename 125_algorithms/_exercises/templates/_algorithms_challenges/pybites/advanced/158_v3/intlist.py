@@ -10,7 +10,7 @@ class IntList(l..):
         __ isi..(numbers, (int, float, Decimal)):
             numbers = [numbers]
         numbers = [int(n) ___ n __ numbers __ round(n, 0) __ int(n)]
-        __ n.. isi..(numbers, int) and any(n.. isi..(x, int) ___ x __ numbers):
+        __ n.. isi..(numbers, int) a.. any(n.. isi..(x, int) ___ x __ numbers):
             raise TypeError(f'{self.__class__.__name__} can only operate with integer values')
         r.. numbers
 
@@ -25,7 +25,7 @@ class IntList(l..):
     @property
     ___ median(self):
         elems = self._elements()
-        elems.sort()
+        elems.s..()
         n = l..(elems)
         r.. (s..(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 ____ N..
 

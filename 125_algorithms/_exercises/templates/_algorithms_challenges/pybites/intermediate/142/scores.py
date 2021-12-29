@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 MIN_SCORE = 4
 DICE_VALUES = r..(1, 7)
 
-Player = namedtuple('Player', 'name scores')
+Player = n..('Player', 'name scores')
 
 
 ___ calculate_score(scores):
@@ -43,7 +43,7 @@ ___ get_winner(players):
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
     previous_player = 0
-    ___ i, player __ enumerate(players, start=1):
+    ___ i, player __ e..(players, start=1):
       __ i __ 1:
         previous_player = l..(player.scores)
       ____:

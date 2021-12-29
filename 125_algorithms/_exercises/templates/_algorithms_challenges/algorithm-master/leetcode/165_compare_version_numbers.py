@@ -5,15 +5,15 @@ class Solution:
         :type version2: str
         :rtype: int
         """
-        __ n.. version1 and n.. version2:
+        __ n.. version1 a.. n.. version2:
             r.. 0
         __ n.. version1:
             r.. -1
         __ n.. version2:
             r.. 1
 
-        v = version1.split('.')
-        w = version2.split('.')
+        v = version1.s..('.')
+        w = version2.s..('.')
         m, n = l..(v), l..(w)
 
         ___ i __ r..(max(m, n)):

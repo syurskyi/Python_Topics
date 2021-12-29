@@ -3,7 +3,7 @@ ____ functools _______ total_ordering
 ____ typing _______ List
 
 bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
-names: List[str] = [
+names: List[s..] = [
     "snow",
     "natalia",
     "alex",
@@ -29,7 +29,7 @@ class Ninja:
     support <, >, and ==, based on bites
     print out in the following format: [469] bob
     """
-    name: str
+    name: s..
     bites: int
 
     ___ __lt__(self, other):
@@ -63,7 +63,7 @@ class Rankings:
     ___ add(self, ninja):
         __ ninja n.. __ self.ninja_list:
             self.ninja_list.a..(ninja)
-        self.ninja_list.sort()
+        self.ninja_list.s..()
 
     ___ dump(self):
         r.. self.ninja_list.pop(0)
@@ -80,7 +80,7 @@ class Rankings:
     ___ pair_up(self, count: int = 3):
         highest = self.highest(count)
         lowest = self.lowest(count)
-        r.. l..(zip(highest, lowest))
+        r.. l..(z..(highest, lowest))
 
     ___ __len__(self):
         r.. l..(self.ninja_list)

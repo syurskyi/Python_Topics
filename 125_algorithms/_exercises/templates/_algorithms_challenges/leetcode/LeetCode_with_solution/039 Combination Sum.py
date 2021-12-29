@@ -23,7 +23,7 @@ class Solution:
         :param target: target, integer
         :return: a list of lists of integers
         """
-        candidates.sort()
+        candidates.s..()
         result    # list
         self.get_combination(target, candidates, [], result)
         r.. result
@@ -36,7 +36,7 @@ class Solution:
             r..
 
         # add one of from the candidates
-        ___ ind, val __ enumerate(candidates):
+        ___ ind, val __ e..(candidates):
             self.get_combination(target, candidates[ind:], current+[val], result)  # candidates[ind:] since possible repeat
 
 

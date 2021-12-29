@@ -7,10 +7,10 @@ class Rational(object):
         self.denom = N..
 
     ___ __eq__(self, other):
-        r.. self.numer __ other.numer and self.denom __ other.denom
+        r.. self.numer __ other.numer a.. self.denom __ other.denom
 
     ___ __repr__(self):
-        r.. '{}/{}'.format(self.numer, self.denom)
+        r.. '{}/{}'.f..(self.numer, self.denom)
 
     ___ __add__(self, other):
         pass

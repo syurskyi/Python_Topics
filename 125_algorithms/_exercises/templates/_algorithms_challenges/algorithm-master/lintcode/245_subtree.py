@@ -27,13 +27,13 @@ class Solution:
         )
 
     ___ isEqual(self, A, B):
-        __ n.. A and n.. B:
+        __ n.. A a.. n.. B:
             r.. True
         __ n.. A o. n.. B:
             r.. False
 
         r.. (
-            A.val __ B.val and
-            self.isEqual(A.left, B.left) and
+            A.val __ B.val a..
+            self.isEqual(A.left, B.left) a..
             self.isEqual(A.right, B.right)
         )

@@ -18,5 +18,5 @@ ___ solution(arr):
 
 ___ t __ r..(int(input())):
     input()
-    items = l..(map(int, input().split()))
+    items = l..(map(int, input().s..()))
     print(solution(items))

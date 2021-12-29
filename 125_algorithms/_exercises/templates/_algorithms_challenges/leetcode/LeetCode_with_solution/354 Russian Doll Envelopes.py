@@ -26,7 +26,7 @@ class Solution(object):
         """
         __ n.. A: r.. 0
 
-        A.sort(key=l.... (w, h): (w, -h))
+        A.s..(key=l.... (w, h): (w, -h))
         F = [-1 ___ _ __ xrange(l..(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
@@ -47,8 +47,8 @@ class Solution(object):
         """
         __ n.. A: r.. 0
 
-        predicate = l.... a, b: b[0] > a[0] and b[1] > a[1]
-        A.sort()
+        predicate = l.... a, b: b[0] > a[0] a.. b[1] > a[1]
+        A.s..()
         n = l..(A)
         F = [1 ___ _ __ xrange(n)]
         ___ i __ xrange(1, n):

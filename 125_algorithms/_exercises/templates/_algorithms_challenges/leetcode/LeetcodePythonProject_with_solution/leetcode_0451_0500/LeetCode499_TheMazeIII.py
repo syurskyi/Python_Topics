@@ -18,7 +18,7 @@ class Solution(object):
         self.maxPath = float('inf')
         self.map = [[float('inf')]*n ___ _ __ r..(m)]
         self.helper(maze, ball, hole, '', 0, result, visited)
-        result.sort(key=l.... x: (x[1], x[0]))
+        result.s..(key=l.... x: (x[1], x[0]))
         __ result:
             r.. result[0][0]
         ____:
@@ -62,7 +62,7 @@ class Solution(object):
         ___ dir __ dirs:
             x, y = i, j
             dist = 0
-            while 0 <= x+dir[0] < m and 0 <= y+dir[1] < n and\
+            w.... 0 <= x+dir[0] < m a.. 0 <= y+dir[1] < n a..\
                 matrix[x+dir[0]][y+dir[1]] __ 0:
                 x += dir[0]
                 y += dir[1]

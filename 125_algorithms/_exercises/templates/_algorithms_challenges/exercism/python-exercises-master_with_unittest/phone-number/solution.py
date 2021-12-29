@@ -28,7 +28,7 @@ class Phone(object):
 
     ___ _normalize(self, number):
         valid = l..(number) __ 10 o. \
-            l..(number) __ 11 and number.startswith('1')
+            l..(number) __ 11 a.. number.startswith('1')
 
         __ valid:
             r.. number[-10:]

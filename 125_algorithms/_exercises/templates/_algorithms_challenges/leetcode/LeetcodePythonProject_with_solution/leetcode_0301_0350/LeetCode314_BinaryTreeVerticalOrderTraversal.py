@@ -18,7 +18,7 @@ class Solution(object):
         result    # list
         queue = [(0, root)]
         minLevel, maxLevel = 0, 0
-        while queue:
+        w.... queue:
             level, node = queue.pop(0)
             maxLevel = max(maxLevel, level)
             minLevel = m..(minLevel, level)

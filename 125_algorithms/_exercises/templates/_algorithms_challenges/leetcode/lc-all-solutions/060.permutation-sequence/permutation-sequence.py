@@ -16,7 +16,7 @@ class Solution(object):
           __ t __ 0:
             break
           t -= 1
-      ans += str(j + 1)
+      ans += s..(j + 1)
       k %= fact[i]
       visited[j] = 1
     r.. ans

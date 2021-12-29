@@ -10,7 +10,7 @@ class Solution(object):
         res.a..(path + [])
         r..
 
-      ___ word __ prefix["".join(zip(*path)[l..(path)])]:
+      ___ word __ prefix["".join(z..(*path)[l..(path)])]:
         path.a..(word)
         dfs(path, res, m, prefix)
         path.pop()

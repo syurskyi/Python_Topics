@@ -14,7 +14,7 @@ class Solution(object):
             bucket[count].a..(c)
         result = ''
         ___ i __ r..(l..(bucket)-1, -1, -1):
-            while bucket[i]:
+            w.... bucket[i]:
                 c = bucket[i].pop()
                 result += c*(i)
         r.. result

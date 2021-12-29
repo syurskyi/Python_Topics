@@ -49,14 +49,14 @@ class Solution:
         z, o = self.c.. strs[0])
         ___ i __ r..(m+1):
             ___ j __ r..(n+1):
-                __ i + z<= m and j + o <= n:
+                __ i + z<= m a.. j + o <= n:
                     F[i][j] = 1
 
         ___ e __ r..(1, l..(strs)):
             z, o = self.c.. strs[e])
             ___ i __ r..(m+1):
                 ___ j __ r..(n+1):
-                    __ i + z <= m and j + o <= n:
+                    __ i + z <= m a.. j + o <= n:
                         F[i][j] = max(
                             F[i][j],
                             F[i + z][j + o] + 1
@@ -97,14 +97,14 @@ class Solution:
         count = Counter(strs[0])
         ___ i __ r..(m+1):
             ___ j __ r..(n+1):
-                __ i + count["0"] <= m and j + count["1"] <= n:
+                __ i + count["0"] <= m a.. j + count["1"] <= n:
                     F[i][j][0] = 1
 
         ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
             ___ i __ r..(m+1):
                 ___ j __ r..(n+1):
-                    __ i + count["0"] <= m and j + count["1"] <= n:
+                    __ i + count["0"] <= m a.. j + count["1"] <= n:
                         F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
                     F[i][j][e] = max(F[i][j][e], F[i][j][e-1])
 
@@ -131,14 +131,14 @@ class Solution:
 
         F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = Counter(strs[0])
-        __ count["0"] <= m and count["1"] <= n:
+        __ count["0"] <= m a.. count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
         ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
             ___ i __ r..(m+1):
                 ___ j __ r..(n+1):
-                    __ count["0"] <= i and count["1"] <= j:
+                    __ count["0"] <= i a.. count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
                     ____:
                         F[i][j][e] = F[i][j][e-1]
@@ -159,11 +159,11 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        strs.sort(key=l..)
+        strs.s..(key=l..)
         ret = 0
         ___ a __ strs:
             count = Counter(a)
-            __ count["0"] <= m and count["1"] <= n:
+            __ count["0"] <= m a.. count["1"] <= n:
                 ret += 1
                 m -= count["0"]
                 n -= count["1"]

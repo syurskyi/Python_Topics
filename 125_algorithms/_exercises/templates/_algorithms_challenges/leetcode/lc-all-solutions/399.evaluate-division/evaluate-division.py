@@ -18,7 +18,7 @@ class Graph(object):
       r.. 1.0
     queue = deque([(node1, 1)])
     visited = set([node1.label])
-    while queue:
+    w.... queue:
       node, ans = queue.popleft()
       ___ nbr __ node.nbrs:
         __ nbr n.. __ visited:

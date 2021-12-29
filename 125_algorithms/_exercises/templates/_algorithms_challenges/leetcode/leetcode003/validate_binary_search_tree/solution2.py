@@ -36,4 +36,4 @@ class Solution:
         # removed
         is_left_bst = self.is_valid_bst_aux(root.left, min_val, root.val - 1)
         is_right_bst = self.is_valid_bst_aux(root.right, root.val + 1, max_val)
-        r.. is_left_bst and is_right_bst
+        r.. is_left_bst a.. is_right_bst

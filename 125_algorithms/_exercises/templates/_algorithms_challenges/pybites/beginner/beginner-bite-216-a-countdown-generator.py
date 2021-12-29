@@ -29,7 +29,7 @@ Good luck, have fun and keep it Python!
 
 ___ countdown():
     ___ i __ r..(100, 0, -1):
-        yield i
+        y.. i
 
 
 ___ x __ countdown():

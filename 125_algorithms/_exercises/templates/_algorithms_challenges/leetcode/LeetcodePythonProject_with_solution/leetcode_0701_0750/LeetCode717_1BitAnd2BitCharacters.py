@@ -14,7 +14,7 @@ class Solution(object):
         __ n __ 1: r.. True
         dp = [1]*n
         i = 0
-        while i < n:
+        w.... i < n:
             __ bits[i] __ 1:
                 i += 2
             ____:

@@ -69,7 +69,7 @@ class Solution:
 
         l = self.c.. node.left)
         r = self.c.. node.right)
-        __ l != 0 and r != 0 and l + r __ l..(self.deepest_nodes):
+        __ l != 0 a.. r != 0 a.. l + r __ l..(self.deepest_nodes):
             self.ret = node
 
         count = l + r

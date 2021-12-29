@@ -17,12 +17,12 @@ class Solution(object):
             graph[p[1]].a..(p[0])
             degree[p[0]]+=1
         queue    # list
-        ___ num, cnt __ enumerate(degree):
+        ___ num, cnt __ e..(degree):
             __ cnt __ 0:
                 queue.a..(num)
         res    # list
         count = 0
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             res.a..(node)
             count += 1

@@ -30,7 +30,7 @@ class Solution(object):
         __ root __ N..
             r.. path
         stack    # list
-        while stack o. root __ n.. N..
+        w.... stack o. root __ n.. N..
             __ root __ n.. N..
                 stack.a..(root)
                 root = root.left

@@ -2,7 +2,7 @@ ____ collections _______ Counter
 _______ os
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
-____ datetime _______ datetime
+____ d__ _______ d__
 
 
 ____ dateutil.parser _______ parse
@@ -19,8 +19,8 @@ with open(commits) as f:
     commit_log = defaultdict(int)
     ___ line __ f:
         #print(line)
-        date, commit  = line.split(' | ')
-        date_time_obj = datetime. strptime(date[12:], '%b %d %H:%M:%S %Y %z')
+        date, commit  = line.s..(' | ')
+        date_time_obj = d__. strptime(date[12:], '%b %d %H:%M:%S %Y %z')
         dt_yr = date_time_obj.strftime("%Y")
         year_month = date_time_obj.strftime("%Y-%m")
         __ year_argument __ 'None' o. dt_yr __ year_argument:

@@ -7,7 +7,7 @@ class Solution(object):
     ___ isPerfectSquare(self, num):
         __ num <= 0: r.. False
         l, r = 1, num//2+1
-        while l <= r:
+        w.... l <= r:
             mid = (l+r)//2
             __ mid*mid __ num:
                 r.. True

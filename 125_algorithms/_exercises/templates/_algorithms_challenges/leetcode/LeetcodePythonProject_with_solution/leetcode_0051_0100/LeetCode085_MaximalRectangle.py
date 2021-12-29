@@ -28,7 +28,7 @@ class Solution(object):
         __ n.. heights: r.. area
         stack    # list
         i = 0
-        while i < l..(heights):
+        w.... i < l..(heights):
             __ n.. stack o. heights[i] >= heights[stack[-1]]:
                 stack.a..(i)
                 i += 1

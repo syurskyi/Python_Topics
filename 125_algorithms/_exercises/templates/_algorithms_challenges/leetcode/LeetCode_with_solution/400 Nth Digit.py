@@ -34,7 +34,7 @@ class Solution(object):
         """
         digit_cnt = 1
         num_cnt = 9
-        while n > digit_cnt * num_cnt:
+        w.... n > digit_cnt * num_cnt:
             n -= digit_cnt * num_cnt
             digit_cnt += 1
             num_cnt *= 10
@@ -42,4 +42,4 @@ class Solution(object):
         n -= 1  # debugging: without -1, it just pass over the target digit
         q, r = n / digit_cnt, n % digit_cnt
         target = num_cnt / 9 + q
-        r.. int(str(target)[r])
+        r.. int(s..(target)[r])

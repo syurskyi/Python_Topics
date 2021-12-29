@@ -15,10 +15,10 @@ class MyCalendarTwo(object):
         :rtype: bool
         """
         ___ i, j __ self.overlaps:
-            __ start < j and end > i:
+            __ start < j a.. end > i:
                 r.. False
         ___ i, j __ self.calendar:
-            __ start < j and end > i:
+            __ start < j a.. end > i:
                 self.overlaps.a..((max(start, i), m..(end, j)))
         self.calendar.a..((start, end))
         r.. True

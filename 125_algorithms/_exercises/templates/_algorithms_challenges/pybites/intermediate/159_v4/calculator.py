@@ -33,7 +33,7 @@ ___ simple_calculator(calculation):
     # convert to int raising error. Note, int does this
     a, b = (int(x) ___ x __ (a, b))
 
-    __ b __ 0 and op __ '/':
+    __ b __ 0 a.. op __ '/':
         raise ValueError
 
     r.. OPS[op](a, b)

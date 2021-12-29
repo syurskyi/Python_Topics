@@ -55,11 +55,11 @@ class MapSum:
 
         self.trie = Trie()
 
-    ___ insert(self, key: str, val: int) -> N..
+    ___ insert(self, key: s.., val: int) -> N..
         root = self.trie.root
         root.children[key[0]], _ = self.trie.insert(root.children[key[0]], key, 0, val)
 
-    ___ s..(self, prefix: str) -> int:
+    ___ s..(self, prefix: s..) -> int:
         node = self.trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
@@ -108,10 +108,10 @@ class MapSum2:
 
         self.trie = Trie()
 
-    ___ insert(self, key: str, val: int) -> N..
+    ___ insert(self, key: s.., val: int) -> N..
         self.trie.insert(self.trie.root, key, 0, val)
 
-    ___ s..(self, prefix: str) -> int:
+    ___ s..(self, prefix: s..) -> int:
         node = self.trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:

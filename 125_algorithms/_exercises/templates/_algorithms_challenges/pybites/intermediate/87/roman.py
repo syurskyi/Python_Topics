@@ -21,7 +21,7 @@ ___ romanize(decimal_number):
         pass
 
     roman_numeral = ""
-    while decimal_number != 0:
+    w.... decimal_number != 0:
 
         __ decimal_number > 1000:
             frequency = int(decimal_number / 1000)
@@ -29,7 +29,7 @@ ___ romanize(decimal_number):
             roman_numeral += frequency * numeral_lookup[1000]
         ____:
             ___ key __ s..(numeral_lookup.keys(), r.._T..:
-                __ key > 4 and decimal_number % key __ 0:
+                __ key > 4 a.. decimal_number % key __ 0:
                     roman_numeral += numeral_lookup[decimal_number]
                     decimal_number = 0
                     break
@@ -47,7 +47,7 @@ ___ romanize(decimal_number):
                         decimal_number = remainder
                         break
                         
-        __ decimal_number > 0 and decimal_number <= 3:
+        __ decimal_number > 0 a.. decimal_number <= 3:
             roman_numeral += remainder * numeral_lookup[1]
             decimal_number = 0
 

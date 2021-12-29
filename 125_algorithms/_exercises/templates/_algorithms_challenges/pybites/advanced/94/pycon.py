@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ os
 _______ pickle
 _______ urllib.request
@@ -13,7 +13,7 @@ pycon_videos = os.path.join(tmp, pkl_file)
 urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = namedtuple('Video', 'id title duration metrics')
+Video = n..('Video', 'id title duration metrics')
 
 
 ___ load_pycon_data(pycon_videos=pycon_videos):
@@ -52,7 +52,7 @@ ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    r.. [video ___ video __ videos __ ('H' n.. __ video.duration and int(re.search(r"(\d+)M",video.duration).group(1)) < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. int(re.search(r"(\d+)M",video.duration).group(1)) < 24)]
 
 
 __ __name__ __ "__main__":

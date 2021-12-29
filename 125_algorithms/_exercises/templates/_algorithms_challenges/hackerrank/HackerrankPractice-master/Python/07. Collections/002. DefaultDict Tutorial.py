@@ -5,7 +5,7 @@
 ____ collections _______ defaultdict
 
 
-n, m = map(int, input().split())
+n, m = map(int, input().s..())
 d = defaultdict(l..)
 ___ i __ r..(1, n + 1):
     d[input()].a..(s..(i))

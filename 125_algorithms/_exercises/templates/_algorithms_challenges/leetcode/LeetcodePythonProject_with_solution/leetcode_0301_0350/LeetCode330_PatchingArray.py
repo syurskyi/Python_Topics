@@ -8,8 +8,8 @@ class Solution(object):
     ___ minPatches(self, nums, n):
         miss = 1
         added, i = 0, 0
-        while miss <= n:
-            __ i < l..(nums) and miss >= nums[i]:
+        w.... miss <= n:
+            __ i < l..(nums) a.. miss >= nums[i]:
                 miss += nums[i]
                 i+=1
             ____:

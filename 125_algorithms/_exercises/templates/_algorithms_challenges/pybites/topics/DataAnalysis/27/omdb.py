@@ -11,7 +11,7 @@ ___ get_movie_data(files: l..) -> l..:
                     data.a..(json.loads(line.strip()))
     r.. data
 
-___ get_single_comedy(movies: l..) -> str:
+___ get_single_comedy(movies: l..) -> s..:
     """return the movie with Comedy in Genres"""
     ___ movie __ movies:
         #print(movie['Title'])
@@ -19,7 +19,7 @@ ___ get_single_comedy(movies: l..) -> str:
             r.. movie['Title']
 
 
-___ get_movie_most_nominations(movies: l..) -> str:
+___ get_movie_most_nominations(movies: l..) -> s..:
     """Return the movie that had the most nominations"""
     # "Awards":"Nominated for 1 Oscar. Another 10 wins & 32 nominations."
     nomination_count = {}
@@ -28,7 +28,7 @@ ___ get_movie_most_nominations(movies: l..) -> str:
     r.. max(nomination_count, key=nomination_count.get)
 
 
-___ get_movie_longest_runtime(movies: l..) -> str:
+___ get_movie_longest_runtime(movies: l..) -> s..:
     """Return the movie that has the longest runtime"""
     #"Runtime":"107 min"
     runtime = {}

@@ -16,8 +16,8 @@ class Solution(object):
             r.. True
         l1 = l..(s1)
         l2 = l..(s2)
-        l1.sort()
-        l2.sort()
+        l1.s..()
+        l2.s..()
         __ l1 != l2:
             r.. False
         ___ i __ r..(1, l..(s1)):
@@ -27,8 +27,8 @@ class Solution(object):
             s22 = s2[i:l..(s2)]
             s23 = s2[0:l..(s2)-i]
             s24 = s2[l..(s2)-i:l..(s2)]
-            __ self.isScramble(s11, s21) and self.isScramble(s12, s22):
+            __ self.isScramble(s11, s21) a.. self.isScramble(s12, s22):
                 r.. True
-            __ self.isScramble(s11, s24) and self.isScramble(s12, s23):
+            __ self.isScramble(s11, s24) a.. self.isScramble(s12, s23):
                 r.. True
         r.. False

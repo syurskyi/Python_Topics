@@ -15,7 +15,7 @@ class Solution(object):
             r.. s[:n].c.. '1')
         i = 8
         j = 11
-        while l..(s) < n:
+        w.... l..(s) < n:
             __ s[i] __ '2':
                 __ s[j] __ '1':
                     s += '22'

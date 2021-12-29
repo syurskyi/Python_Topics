@@ -59,7 +59,7 @@ class Solution:
 
         node.left, contain_left = self.prune(node.left)
         node.right, contain_right = self.prune(node.right)
-        __ n.. contain_left and n.. contain_right and node.val __ 0:
+        __ n.. contain_left a.. n.. contain_right a.. node.val __ 0:
             r.. N.., False
 
         r.. node, True

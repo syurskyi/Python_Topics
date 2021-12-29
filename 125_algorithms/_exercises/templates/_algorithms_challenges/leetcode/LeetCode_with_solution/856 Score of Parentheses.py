@@ -34,7 +34,7 @@ S is a balanced parentheses string, containing only ( and ).
 
 
 class Solution:
-    ___ scoreOfParentheses(self, S: str) -> int:
+    ___ scoreOfParentheses(self, S: s..) -> int:
         """
         stk
 
@@ -56,7 +56,7 @@ class Solution:
 
         r.. ret
 
-    ___ scoreOfParentheses_error(self, S: str) -> int:
+    ___ scoreOfParentheses_error(self, S: s..) -> int:
         """
         stk
         """

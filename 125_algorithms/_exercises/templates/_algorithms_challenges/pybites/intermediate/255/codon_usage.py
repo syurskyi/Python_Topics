@@ -2,7 +2,7 @@ _______ os
 ____ urllib.request _______ urlretrieve
 _______ requests
 ____ collections _______ defaultdict
-____ itertools _______ combinations
+____ i.. _______ combinations
 
 # Translation Table:
 # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG11
@@ -40,16 +40,16 @@ ___ _preload_sequences(url=URL):
 ___ get_translation_table(TRANSL_TABLE_11):
     
 
-    table = TRANSL_TABLE_11.replace('T','U')
+    table = TRANSL_TABLE_11.r..('T','U')
     lines = table.lstrip().splitlines()
 
     lines = lines[0:1] + lines[2:]
 
-    ___ i,line __ enumerate(lines):
-        lines[i] = line.split('=')[1].strip()
+    ___ i,line __ e..(lines):
+        lines[i] = line.s..('=')[1].s..
     
     mapping = {}
-    ___ aa,b1,b2,b3 __ zip(*lines):
+    ___ aa,b1,b2,b3 __ z..(*lines):
         __ aa __ 'U':
             aa = 'T'
         mapping[b1 + b2 + b3] = aa
@@ -80,7 +80,7 @@ ___ return_codon_usage_table(
     codon_to_count = defaultdict(int)
     
     ___ sequence __ sequences:
-        sequence = sequence.strip()
+        sequence = sequence.s..
         ___ i __ r..(0,l..(sequence),3):
             codon = sequence[i:i +3]
             codon_to_count[codon] += 1

@@ -16,7 +16,7 @@ c_ DoublyLinkedList:
     ___ __iter__(self
         node  head
         w__ node:
-            yield node
+            y.. node
             node  node.next
     
     #  Creation of Doubly Linked List

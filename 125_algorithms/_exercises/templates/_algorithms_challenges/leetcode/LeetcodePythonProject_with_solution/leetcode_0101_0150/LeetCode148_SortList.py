@@ -25,7 +25,7 @@ class Solution(object):
         node1 = node
         prev.next = node1
         node2 = node
-        while node2:
+        w.... node2:
             node2 = node2.next
             __ n.. node2: break
             prev = node1
@@ -50,14 +50,14 @@ class Solution(object):
             node = node1
             node1 = node1.next
         head = node
-        while node:
-            __ n.. node1 and n.. node2:
+        w.... node:
+            __ n.. node1 a.. n.. node2:
                 r.. head
-            ____ n.. node1 and node2:
+            ____ n.. node1 a.. node2:
                 node.next = node2
                 node = node.next
                 node2 = node2.next
-            ____ node1 and n.. node2:
+            ____ node1 a.. n.. node2:
                 node.next = node1
                 node = node.next
                 node1 = node1.next

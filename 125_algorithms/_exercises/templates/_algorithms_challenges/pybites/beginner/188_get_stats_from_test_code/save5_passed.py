@@ -22,7 +22,7 @@ Estimated variance for sample:
 """
 
 
-___ get_all_line_counts(data: str = DATA) -> l..:
+___ get_all_line_counts(data: s.. = DATA) -> l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     values    # list
@@ -50,4 +50,4 @@ ___ create_stats_report(data_ N..
                  sample_variance=round(st.variance(sample), 2),
                  )
 
-    r.. STATS_OUTPUT.format(**stats)
+    r.. STATS_OUTPUT.f..(**stats)

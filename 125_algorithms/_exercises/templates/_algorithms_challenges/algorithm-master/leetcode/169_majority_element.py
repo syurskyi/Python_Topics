@@ -30,7 +30,7 @@ class Solution:
         __ n.. nums:
             r.. 0
 
-        nums.sort()
+        nums.s..()
 
         r.. nums[l..(nums) // 2]
 

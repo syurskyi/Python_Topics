@@ -7,8 +7,8 @@ class Solution(object):
 
     ___ outputRange(start, end):
       __ start __ end:
-        r.. str(start)
-      r.. "{}->{}".format(start, end)
+        r.. s..(start)
+      r.. "{}->{}".f..(start, end)
 
     __ n.. nums:
       r.. []

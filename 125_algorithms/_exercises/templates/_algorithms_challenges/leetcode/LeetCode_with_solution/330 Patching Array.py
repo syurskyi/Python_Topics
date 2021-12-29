@@ -44,7 +44,7 @@ class Solution(object):
         cnt = 0
         cur_max = 0
         i = 0
-        while cur_max < n:
+        w.... cur_max < n:
             __ i >= l..(nums) o. cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
                 cnt += 1
@@ -75,14 +75,14 @@ class Solution(object):
         cnt = 0
         cur_max = 0
         ___ elt __ nums:
-            while cur_max + 1 < elt:
+            w.... cur_max + 1 < elt:
                 cur_max += cur_max + 1
                 cnt += 1
 
             cur_max += elt
 
         # after iterating all array element
-        while cur_max < n:
+        w.... cur_max < n:
             cur_max += cur_max + 1
             cnt += 1
 

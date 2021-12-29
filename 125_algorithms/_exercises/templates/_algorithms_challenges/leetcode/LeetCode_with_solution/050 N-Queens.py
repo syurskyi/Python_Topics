@@ -93,7 +93,7 @@ class Solution:
                 ___ direction __ directions:
                     row = queen_index+direction[0]*m
                     col = i+direction[1]*m
-                    __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT:
+                    __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT:
                         new_config[row][col] = INVALID
 
             # dfs

@@ -11,9 +11,9 @@ class Solution(object):
         """
         __ n.. strs: r.. ''
         ind = 0
-        while True:
+        w... T...
             same = True
-            ___ i, s __ enumerate(strs):
+            ___ i, s __ e..(strs):
                 __ ind __ l..(s):
                     same = False
                     break
@@ -33,7 +33,7 @@ class Solution(object):
             ['aa', 'aa'],
         ]
         ___ strs __ testCases:
-            print('\n'.join([str(row) ___ row __ strs]))
+            print('\n'.join([s..(row) ___ row __ strs]))
             result = self.longestCommonPrefix(strs)
             print('result: %s' % result)
             print('-='*30+'-')

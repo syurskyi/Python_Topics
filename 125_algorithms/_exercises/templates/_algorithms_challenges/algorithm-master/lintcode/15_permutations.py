@@ -9,7 +9,7 @@ class Solution:
 
         ans    # list
 
-        nums.sort()
+        nums.s..()
         self.dfs(nums, ans, [])
 
         r.. ans

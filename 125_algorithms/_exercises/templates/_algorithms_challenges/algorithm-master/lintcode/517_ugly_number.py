@@ -13,7 +13,7 @@ class Solution:
             125, 27, 8,
             5, 3, 2,
         ):
-            while num % factor __ 0:
+            w.... num % factor __ 0:
                 num //= factor
 
             __ num __ 1:

@@ -38,7 +38,7 @@ class Solution(object):
                 right[i] = right[i+1]+1
         res = float('-inf')
         ___ i __ r..(n):
-            __ left[i+1] != 0 and right[i] != 0:
+            __ left[i+1] != 0 a.. right[i] != 0:
                 res = max(res, m..(left[i+1], right[i]))
         r.. res
     

@@ -12,7 +12,7 @@ class Solution:
         h = head
         p = N..
         i = 0
-        while head __ n.. N..
+        w.... head __ n.. N..
             __ i __ n:
                 p = h
             ____ i > n:

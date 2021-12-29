@@ -26,8 +26,8 @@ class Solution:
         stack    # list
         node = root
 
-        while node o. stack:
-            while node:
+        w.... node o. stack:
+            w.... node:
                 stack.a..(node)
                 node = node.left
 

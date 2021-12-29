@@ -20,7 +20,7 @@ class Solution(object):
         """
         i = 0
         j = n-1
-        while i < j:
+        w.... i < j:
             nxt_i, nxt_j = i, j
             __ knows(i, j) o. n.. knows(j, i):
                 nxt_i += 1
@@ -30,7 +30,7 @@ class Solution(object):
 
         celebrity = i
         ___ i __ xrange(n):
-            __ i != celebrity and (n.. knows(i, celebrity) o. knows(celebrity, i)):
+            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 
         r.. celebrity
@@ -45,12 +45,12 @@ class Solution(object):
         """
         V = set(r..(n))
 
-        while l..(V) > 1:
+        w.... l..(V) > 1:
             a = V.pop()
             b = V.pop()
-            __ knows(a, b) and n.. knows(b, a):
+            __ knows(a, b) a.. n.. knows(b, a):
                 V.add(b)
-            ____ n.. knows(a, b) and knows(b, a):
+            ____ n.. knows(a, b) a.. knows(b, a):
                 V.add(a)
 
         __ n.. V:
@@ -58,7 +58,7 @@ class Solution(object):
 
         celebrity = V.pop()
         ___ i __ xrange(n):
-            __ i != celebrity and (n.. knows(i, celebrity) o. knows(celebrity, i)):
+            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 
         r.. celebrity

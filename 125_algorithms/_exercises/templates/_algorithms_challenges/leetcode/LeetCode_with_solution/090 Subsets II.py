@@ -25,16 +25,16 @@ class Solution:
         :param S: a list of integer
         :return: a list of lists of integer
         """
-        S.sort()
+        S.s..()
         result    # list
         self.get_subset(S, [], result)
         r.. result
 
     ___ get_subset(self, S, current, result):
         result.a..(current)
-        ___ ind, val __ enumerate(S):
+        ___ ind, val __ e..(S):
             # JUMP, avoid duplicates
-            __ ind-1>=0 and val__S[ind-1]:  # ensure uni-direction
+            __ ind-1>=0 a.. val__S[ind-1]:  # ensure uni-direction
                 continue
             self.get_subset(S[ind+1:], current+[val], result)
 

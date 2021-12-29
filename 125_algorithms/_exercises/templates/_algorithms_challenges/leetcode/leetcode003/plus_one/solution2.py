@@ -7,7 +7,7 @@ class Solution:
         d = digits[0]
         digits[0] = (d + 1) % 10
         carry = (d + 1) / 10
-        ___ i, d __ enumerate(digits[1:], 1):
+        ___ i, d __ e..(digits[1:], 1):
             digits[i] = (d + carry) % 10
             carry = (d + carry) / 10
         __ carry __ 1:

@@ -42,7 +42,7 @@ class Solution(object):
             r.. [int(inp)]
         ____:
             res    # list
-            ___ i, c __ enumerate(inp):
+            ___ i, c __ e..(inp):
                 __ c __ self.operators:
                     left = self.diff_ways(inp[:i])
                     right = self.diff_ways(inp[i + 1:])

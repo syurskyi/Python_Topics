@@ -33,8 +33,8 @@ ___ get_index_different_char(chars):
     ____:
         state = State.NON_ALPHANUMERIC
     ___ c __ chars[1:]:
-        __ c __ (string.ascii_letters o. string.digits) and state __ State.ALPHANUMERIC:
+        __ c __ (string.ascii_letters o. string.digits) a.. state __ State.ALPHANUMERIC:
             continue
-        __ c __ (string.ascii_letters o. string.digits) and state __ State.NON_ALPHANUMERIC:
+        __ c __ (string.ascii_letters o. string.digits) a.. state __ State.NON_ALPHANUMERIC:
 
 

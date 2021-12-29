@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: int
     """
     count, k = 0, 5
-    while n:
+    w.... n:
       k = n / 5
       count += k
       n = k

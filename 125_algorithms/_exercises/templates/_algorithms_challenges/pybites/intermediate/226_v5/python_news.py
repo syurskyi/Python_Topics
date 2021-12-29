@@ -1,5 +1,5 @@
 _______ re
-____ collections _______ namedtuple
+____ collections _______ n..
 
 _______ requests
 ____ bs4 _______ BeautifulSoup
@@ -9,7 +9,7 @@ ____ bs4 _______ BeautifulSoup
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index.html
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index2.html
 
-Entry = namedtuple('Entry', 'title points comments')
+Entry = n..('Entry', 'title points comments')
 
 
 ___ _create_soup_obj(url):
@@ -34,6 +34,6 @@ ___ get_top_titles(url, top=5):
         stats = article.parent.parent.parent.next_sibling.next_sibling.text
         # Get the number of points and comments, but don't check for plurals… just in case!
         extract = re.search(r'(\d+) point.* (\d+) comment', stats, re.DOTALL)
-        articles.a..(Entry(article.text.strip(), int(extract.group(1)), int(extract.group(2))))
+        articles.a..(Entry(article.text.s.., int(extract.group(1)), int(extract.group(2))))
 
     r.. s..(articles, key=l.... x: -(x.points + x.comments / 1000))[:top]

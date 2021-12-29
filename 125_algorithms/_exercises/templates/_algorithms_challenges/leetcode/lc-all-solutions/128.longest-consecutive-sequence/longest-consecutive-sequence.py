@@ -12,11 +12,11 @@ class Solution(object):
         cnt = 1
         right = num + 1
         left = num - 1
-        while left __ s:
+        w.... left __ s:
           s.discard(left)
           cnt += 1
           left -= 1
-        while right __ s:
+        w.... right __ s:
           s.discard(right)
           cnt += 1
           right += 1

@@ -14,9 +14,9 @@ class Solution(object):
             __ c __ ['(', '{', '[']:
                 stack.a..(c)
             ____:
-                __  (c __ ')' and stack and stack[-1]__'(') o.\
-                    (c __ ']' and stack and stack[-1]__'[') o.\
-                    (c __ '}' and stack and stack[-1]__'{'):
+                __  (c __ ')' a.. stack a.. stack[-1]__'(') o.\
+                    (c __ ']' a.. stack a.. stack[-1]__'[') o.\
+                    (c __ '}' a.. stack a.. stack[-1]__'{'):
                     stack.pop()
                 ____:
                     r.. False

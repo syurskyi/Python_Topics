@@ -12,15 +12,15 @@ class Solution(object):
     """
 
     ___ gcd(a, b):
-      while b:
+      w.... b:
         a, b = b, a % b
       r.. a
 
     ans = 1
     d = {}
-    points.sort(key=l.... p: (p.x, p.y))
+    points.s..(key=l.... p: (p.x, p.y))
     ___ i __ r..(0, l..(points)):
-      __ i > 0 and (points[i].x, points[i].y) __ (points[i - 1].x, points[i - 1].y):
+      __ i > 0 a.. (points[i].x, points[i].y) __ (points[i - 1].x, points[i - 1].y):
         continue
       overlap = 1
       ___ j __ r..(i + 1, l..(points)):

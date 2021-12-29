@@ -9,11 +9,11 @@ class Solution:
 
         n = l..(s)
         left, right = 0, n - 1
-        while left < n and s[left] __ ' ':
+        w.... left < n a.. s[left] __ ' ':
             left += 1
-        while right >= 0 and s[right] __ ' ':
+        w.... right >= 0 a.. s[right] __ ' ':
             right -= 1
-        __ left < n and s[left] __ ('+', '-'):
+        __ left < n a.. s[left] __ ('+', '-'):
             left += 1
 
         __ left > right:
@@ -27,7 +27,7 @@ class Solution:
         is_contained_dot = False
         is_contained_num = False
         ___ char __ s:
-            __ char __ '.' and is_contained_dot:
+            __ char __ '.' a.. is_contained_dot:
                 r.. False
             __ n.. (char __ '.' o. zero <= ord(char) <= nine):
                 r.. False

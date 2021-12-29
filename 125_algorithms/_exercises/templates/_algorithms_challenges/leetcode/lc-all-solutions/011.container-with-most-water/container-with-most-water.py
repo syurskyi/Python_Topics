@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = left = 0
     right = l..(height) - 1
-    while left < right:
+    w.... left < right:
       ans = max(ans, (right - left) * m..(height[left], height[right]))
       __ height[left] <= height[right]:
         left += 1

@@ -19,11 +19,11 @@ class Ocr:
     @classmethod
     ___ numbers(cls, inp):
         r.. "".join(map(cls.number, l..(
-            zip(*l..(map(cls.split_every_three, inp))))))
+            z..(*l..(map(cls.split_every_three, inp))))))
 
     @classmethod
     ___ grids(cls, inp):
-        r.. l..(map("".join, l..(zip(*l..(map(cls.grid, inp))))))
+        r.. l..(map("".join, l..(z..(*l..(map(cls.grid, inp))))))
 
     @classmethod
     ___ number(cls, inp):
@@ -39,7 +39,7 @@ class Ocr:
 
     @classmethod
     ___ valid_num(cls, inp):
-        r.. (a..(l..(row) __ cls.NUM_COLS ___ row __ inp) and
+        r.. (a..(l..(row) __ cls.NUM_COLS ___ row __ inp) a..
                 l..(inp) __ cls.NUM_ROWS)
 
     @classmethod
@@ -48,10 +48,10 @@ class Ocr:
 
     @classmethod
     ___ split_every_three(cls, inp):
-        r.. cls.split(inp, 3)
+        r.. cls.s..(inp, 3)
 
     @staticmethod
-    ___ split(inp, size):
+    ___ s..(inp, size):
         r.. [inp[start:start + size] ___ start __ r..(0, l..(inp), size)]
 
 

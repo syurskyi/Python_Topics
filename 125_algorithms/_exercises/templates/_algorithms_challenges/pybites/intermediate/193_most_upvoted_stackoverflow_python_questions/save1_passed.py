@@ -31,7 +31,7 @@ ___ top_python_questions(url=cached_so_url):
         __ view __ N..
             view = 0
         ____:
-            view = view.text.strip().s.. [0]
+            view = view.text.s...s.. [0]
 
         q.a..(question)
         vo.a..(vote)
@@ -47,7 +47,7 @@ ___ top_python_questions(url=cached_so_url):
         __ number __ '0':
             vi_true.a..(float(number))
 
-    final = l..(zip(q, vo, vi_true))
+    final = l..(z..(q, vo, vi_true))
     output1    # list
     output2    # list
     ___ question, vote, view __ final:
@@ -55,4 +55,4 @@ ___ top_python_questions(url=cached_so_url):
             output1.a..(question)
             output2.a..(int(vote))
 
-    r.. s..(l..(zip(output1, output2)), key=l.... x :x[1], r.._T..
+    r.. s..(l..(z..(output1, output2)), key=l.... x :x[1], r.._T..

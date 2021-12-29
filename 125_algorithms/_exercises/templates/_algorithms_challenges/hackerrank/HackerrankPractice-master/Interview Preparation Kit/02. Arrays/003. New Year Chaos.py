@@ -5,7 +5,7 @@
 t = int(input())
 ___ test __ r..(t):
     n = int(input())
-    arr = l..(map(int, input().split()))
+    arr = l..(map(int, input().s..()))
     count = 0
 
     ___ i __ r..(2):

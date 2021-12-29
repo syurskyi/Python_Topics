@@ -12,9 +12,9 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
 
 
 ___ calculate(stmt):
-    __ n.. (stmt.startswith("What is ") and stmt.endswith("?")):
+    __ n.. (stmt.startswith("What is ") a.. stmt.endswith("?")):
         raise ValueError("Ill-formed question")
-    l = stmt[8:-1].strip().lower().s.. 
+    l = stmt[8:-1].s...lower().s..
     __ n.. l:
         raise ValueError("Ill-formed question")
     l.reverse()
@@ -22,9 +22,9 @@ ___ calculate(stmt):
         op1 = int(l.pop())
     except ValueError:
         raise ValueError("Ill-formed question")
-    while l:
+    w.... l:
         oprt = [l.pop()]
-        while l:
+        w.... l:
             try:
                 next_tk = l.pop()
                 op2 = int(next_tk)

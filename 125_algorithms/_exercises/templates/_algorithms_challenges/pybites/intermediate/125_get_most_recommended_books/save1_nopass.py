@@ -39,5 +39,5 @@ ___ get_top_books(content_ N..
             books_final.a..(letter)
             count.a..(c[letter])
 
-    r.. s..(l..(zip(books_final, count)),
+    r.. s..(l..(z..(books_final, count)),
                   key=l.... tup: tup[1], r.._T..

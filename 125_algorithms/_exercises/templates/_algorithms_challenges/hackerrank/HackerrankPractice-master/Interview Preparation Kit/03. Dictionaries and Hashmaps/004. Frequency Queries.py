@@ -9,12 +9,12 @@ arr = defaultdict(int)
 frequencies = defaultdict(int)
 result    # list
 ___ i __ r..(int(input())):
-    command, value = map(int, input().split())
+    command, value = map(int, input().s..())
     __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1
         frequencies[arr[value] - 1] -= 1
-    __ command __ 2 and arr[value] != 0:
+    __ command __ 2 a.. arr[value] != 0:
         arr[value] -= 1
         frequencies[arr[value]] += 1
         frequencies[arr[value] + 1] -= 1

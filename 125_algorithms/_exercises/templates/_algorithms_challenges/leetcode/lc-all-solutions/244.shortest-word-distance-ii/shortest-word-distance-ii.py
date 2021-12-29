@@ -19,7 +19,7 @@ class WordDistance(object):
     l2 = self.d[word2]
     i = j = 0
     ans = float("inf")
-    while i < l..(l1) and j < l..(l2):
+    w.... i < l..(l1) a.. j < l..(l2):
       ans = m..(ans, abs(l1[i] - l2[j]))
       __ l1[i] > l2[j]:
         j += 1

@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ sum_indices(items: List[str]) -> int:
+___ sum_indices(items: List[s..]) -> int:
     duplicate_lookup = {}
     running_total = 0
     ___ i __ r..(l..(items)):

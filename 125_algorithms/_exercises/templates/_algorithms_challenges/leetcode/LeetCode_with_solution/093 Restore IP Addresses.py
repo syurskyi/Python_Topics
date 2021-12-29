@@ -33,7 +33,7 @@ class Solution:
             r..
 
         __ n.. cur o. self.is_valid(cur[-1]):
-            __ l..(cur) __ 4 and n.. seq:  # check the last one first
+            __ l..(cur) __ 4 a.. n.. seq:  # check the last one first
                 result.a..(".".join(cur))
                 r..
 
@@ -53,7 +53,7 @@ class Solution:
         :return:
         """
         # terminal condition
-        __ n.. seq and l..(cur)__4:
+        __ n.. seq a.. l..(cur)__4:
             result.a..(".".join(cur))
             r..
 
@@ -62,7 +62,7 @@ class Solution:
         ___ i __ xrange(1, m..(3, l..(seq)) + 1):
             new_seg = seq[:i]
             # condition check
-            __ l..(cur) < 4 and self.is_valid(new_seg):
+            __ l..(cur) < 4 a.. self.is_valid(new_seg):
                 self.dfs(seq[i:], cur + [new_seg], result)
             ____:
                 r..
@@ -70,7 +70,7 @@ class Solution:
     ___ is_valid(self, s):
         __ n.. s:
             r.. False
-        r.. s __ "0" o. s[0]!="0" and 0<= int(s) <256  # ["0.0.0.0"]
+        r.. s __ "0" o. s[0]!="0" a.. 0<= int(s) <256  # ["0.0.0.0"]
 
 __ __name____"__main__":
     IP = "25525511135"

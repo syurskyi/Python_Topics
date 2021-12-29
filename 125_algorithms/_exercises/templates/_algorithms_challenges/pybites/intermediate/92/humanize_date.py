@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ date, datetime
+____ collections _______ n..
+____ d__ _______ date, d__
 
-TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
+TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = datetime.now()
+NOW = d__.now()
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -19,25 +19,25 @@ TIME_OFFSETS = (
 ___ pretty_date(date):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
-    __ n.. isi..(date, datetime) o. date > NOW:
+    __ n.. isi..(date, d__) o. date > NOW:
         raise ValueError
 
     date_delta = NOW - date
     __ date_delta.days __ 0:
         __ date_delta.seconds < 10:
             r.. TIME_OFFSETS[0].date_str
-        ____ date_delta.seconds >= 10 and date_delta.seconds < MINUTE:
-            r.. TIME_OFFSETS[1].date_str.format(date_delta.seconds)
-        ____ date_delta.seconds >= MINUTE and date_delta.seconds < 2 * MINUTE:
+        ____ date_delta.seconds >= 10 a.. date_delta.seconds < MINUTE:
+            r.. TIME_OFFSETS[1].date_str.f..(date_delta.seconds)
+        ____ date_delta.seconds >= MINUTE a.. date_delta.seconds < 2 * MINUTE:
             r.. TIME_OFFSETS[2].date_str
         ____ date_delta.seconds < HOUR:
-            r.. TIME_OFFSETS[3].date_str.format(date_delta.seconds // MINUTE)
+            r.. TIME_OFFSETS[3].date_str.f..(date_delta.seconds // MINUTE)
         ____ date_delta.seconds __ HOUR:
             r.. TIME_OFFSETS[4].date_str
         ____ date_delta.seconds > HOUR:
-            r.. TIME_OFFSETS[5].date_str.format(date_delta.seconds // HOUR)
+            r.. TIME_OFFSETS[5].date_str.f..(date_delta.seconds // HOUR)
     ____:
-        __ date_delta.days __ 1 and date_delta.seconds >= 0:
+        __ date_delta.days __ 1 a.. date_delta.seconds >= 0:
             r.. TIME_OFFSETS[6].date_str
         ____:
             r.. (NOW - date_delta).strftime("%m/%d/%y")

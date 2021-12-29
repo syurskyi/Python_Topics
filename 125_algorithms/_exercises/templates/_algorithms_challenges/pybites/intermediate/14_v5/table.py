@@ -8,5 +8,5 @@ SEPARATOR = ' | '
 
 
 ___ generate_table(*args):
-    ___ a __ zip(*args):
-        yield SEPARATOR.join([str(r) ___ r __ a])
+    ___ a __ z..(*args):
+        y.. SEPARATOR.join([s..(r) ___ r __ a])

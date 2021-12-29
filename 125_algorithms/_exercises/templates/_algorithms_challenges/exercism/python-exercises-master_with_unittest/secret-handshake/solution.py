@@ -24,7 +24,7 @@ ___ code(seq):
 
 
 ___ sanitize(s):
-    __ n..(isi..(s, int) o. isi..(s, str)):
+    __ n..(isi..(s, int) o. isi..(s, s..)):
         raise TypeError('Unknown type')
     __ isi..(s, int):
         __ s < 0:

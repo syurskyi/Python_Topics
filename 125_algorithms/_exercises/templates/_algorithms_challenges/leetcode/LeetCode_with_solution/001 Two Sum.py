@@ -21,7 +21,7 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         nums = num
-        ___ ind1, val __ enumerate(nums):
+        ___ ind1, val __ e..(nums):
             try:
                 ind2 = nums.index(target - val)
                 r.. ind1+1, ind2+1
@@ -30,7 +30,7 @@ class Solution:
 
     ___ twoSum_TLE_2(self, num, target):
         nums = num
-        ___ ind1, val __ enumerate(nums):
+        ___ ind1, val __ e..(nums):
             __ target-val __ nums:
                 r.. ind1+1, nums.index(target-val)+1
 
@@ -43,10 +43,10 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         hash_map = {}
-        ___ ind, val __ enumerate(num):
+        ___ ind, val __ e..(num):
             hash_map[val] = ind
 
-        ___ ind1, val __ enumerate(num):
+        ___ ind1, val __ e..(num):
             __ target-val __ hash_map:
                 ind2 = hash_map[target-val]
                 __ ind1!=ind2:

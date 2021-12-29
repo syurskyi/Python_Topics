@@ -25,7 +25,7 @@ class AccumulateTest(unittest.TestCase):
 
     ___ test_capitalize(self):
         self.assertEqual(
-            accumulate(['hello', 'world'], str.upper), ['HELLO', 'WORLD'])
+            accumulate(['hello', 'world'], s...upper), ['HELLO', 'WORLD'])
 
     ___ test_recursive(self):
         inp = ['a', 'b', 'c']

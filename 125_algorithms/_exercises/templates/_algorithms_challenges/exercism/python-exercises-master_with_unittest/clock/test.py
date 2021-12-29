@@ -6,110 +6,110 @@ ____ clock _______ Clock
 class ClockTest(unittest.TestCase):
     # Test creating a new clock with an initial time.
     ___ test_on_the_hour(self):
-        self.assertEqual(str(Clock(8, 0)), '08:00')
+        self.assertEqual(s..(Clock(8, 0)), '08:00')
 
     ___ test_past_the_hour(self):
-        self.assertEqual(str(Clock(11, 9)), '11:09')
+        self.assertEqual(s..(Clock(11, 9)), '11:09')
 
     ___ test_midnight_is_zero_hours(self):
-        self.assertEqual(str(Clock(24, 0)), '00:00')
+        self.assertEqual(s..(Clock(24, 0)), '00:00')
 
     ___ test_hour_rolls_over(self):
-        self.assertEqual(str(Clock(25, 0)), '01:00')
+        self.assertEqual(s..(Clock(25, 0)), '01:00')
 
     ___ test_hour_rolls_over_continuously(self):
-        self.assertEqual(str(Clock(100, 0)), '04:00')
+        self.assertEqual(s..(Clock(100, 0)), '04:00')
 
     ___ test_sixty_minutes_is_next_hour(self):
-        self.assertEqual(str(Clock(1, 60)), '02:00')
+        self.assertEqual(s..(Clock(1, 60)), '02:00')
 
     ___ test_minutes_roll_over(self):
-        self.assertEqual(str(Clock(0, 160)), '02:40')
+        self.assertEqual(s..(Clock(0, 160)), '02:40')
 
     ___ test_minutes_roll_over_continuously(self):
-        self.assertEqual(str(Clock(0, 1723)), '04:43')
+        self.assertEqual(s..(Clock(0, 1723)), '04:43')
 
     ___ test_hour_and_minutes_roll_over(self):
-        self.assertEqual(str(Clock(25, 160)), '03:40')
+        self.assertEqual(s..(Clock(25, 160)), '03:40')
 
     ___ test_hour_and_minutes_roll_over_continuously(self):
-        self.assertEqual(str(Clock(201, 3001)), '11:01')
+        self.assertEqual(s..(Clock(201, 3001)), '11:01')
 
     ___ test_hour_and_minutes_roll_over_to_exactly_midnight(self):
-        self.assertEqual(str(Clock(72, 8640)), '00:00')
+        self.assertEqual(s..(Clock(72, 8640)), '00:00')
 
     ___ test_negative_hour(self):
-        self.assertEqual(str(Clock(-1, 15)), '23:15')
+        self.assertEqual(s..(Clock(-1, 15)), '23:15')
 
     ___ test_negative_hour_rolls_over(self):
-        self.assertEqual(str(Clock(-25, 0)), '23:00')
+        self.assertEqual(s..(Clock(-25, 0)), '23:00')
 
     ___ test_negative_hour_rolls_over_continuously(self):
-        self.assertEqual(str(Clock(-91, 0)), '05:00')
+        self.assertEqual(s..(Clock(-91, 0)), '05:00')
 
     ___ test_negative_minutes(self):
-        self.assertEqual(str(Clock(1, -40)), '00:20')
+        self.assertEqual(s..(Clock(1, -40)), '00:20')
 
     ___ test_negative_minutes_roll_over(self):
-        self.assertEqual(str(Clock(1, -160)), '22:20')
+        self.assertEqual(s..(Clock(1, -160)), '22:20')
 
     ___ test_negative_minutes_roll_over_continuously(self):
-        self.assertEqual(str(Clock(1, -4820)), '16:40')
+        self.assertEqual(s..(Clock(1, -4820)), '16:40')
 
     ___ test_negative_hour_and_minutes_both_roll_over(self):
-        self.assertEqual(str(Clock(-25, -160)), '20:20')
+        self.assertEqual(s..(Clock(-25, -160)), '20:20')
 
     ___ test_negative_hour_and_minutes_both_roll_over_continuously(self):
-        self.assertEqual(str(Clock(-121, -5810)), '22:10')
+        self.assertEqual(s..(Clock(-121, -5810)), '22:10')
 
     # Test adding and subtracting minutes.
     ___ test_add_minutes(self):
-        self.assertEqual(str(Clock(10, 0).add(3)), '10:03')
+        self.assertEqual(s..(Clock(10, 0).add(3)), '10:03')
 
     ___ test_add_no_minutes(self):
-        self.assertEqual(str(Clock(6, 41).add(0)), '06:41')
+        self.assertEqual(s..(Clock(6, 41).add(0)), '06:41')
 
     ___ test_add_to_next_hour(self):
-        self.assertEqual(str(Clock(0, 45).add(40)), '01:25')
+        self.assertEqual(s..(Clock(0, 45).add(40)), '01:25')
 
     ___ test_add_more_than_one_hour(self):
-        self.assertEqual(str(Clock(10, 0).add(61)), '11:01')
+        self.assertEqual(s..(Clock(10, 0).add(61)), '11:01')
 
     ___ test_add_more_than_two_hours_with_carry(self):
-        self.assertEqual(str(Clock(0, 45).add(160)), '03:25')
+        self.assertEqual(s..(Clock(0, 45).add(160)), '03:25')
 
     ___ test_add_across_midnight(self):
-        self.assertEqual(str(Clock(23, 59).add(2)), '00:01')
+        self.assertEqual(s..(Clock(23, 59).add(2)), '00:01')
 
     ___ test_add_more_than_one_day(self):
-        self.assertEqual(str(Clock(5, 32).add(1500)), '06:32')
+        self.assertEqual(s..(Clock(5, 32).add(1500)), '06:32')
 
     ___ test_add_more_than_two_days(self):
-        self.assertEqual(str(Clock(1, 1).add(3500)), '11:21')
+        self.assertEqual(s..(Clock(1, 1).add(3500)), '11:21')
 
     ___ test_subtract_minutes(self):
-        self.assertEqual(str(Clock(10, 3).add(-3)), '10:00')
+        self.assertEqual(s..(Clock(10, 3).add(-3)), '10:00')
 
     ___ test_subtract_to_previous_hour(self):
-        self.assertEqual(str(Clock(10, 3).add(-3)), '10:00')
+        self.assertEqual(s..(Clock(10, 3).add(-3)), '10:00')
 
     ___ test_subtract_more_than_an_hour(self):
-        self.assertEqual(str(Clock(10, 3).add(-30)), '09:33')
+        self.assertEqual(s..(Clock(10, 3).add(-30)), '09:33')
 
     ___ test_subtract_across_midnight(self):
-        self.assertEqual(str(Clock(10, 3).add(-70)), '08:53')
+        self.assertEqual(s..(Clock(10, 3).add(-70)), '08:53')
 
     ___ test_subtract_more_than_two_hours(self):
-        self.assertEqual(str(Clock(0, 0).add(-160)), '21:20')
+        self.assertEqual(s..(Clock(0, 0).add(-160)), '21:20')
 
     ___ test_subtract_more_than_two_hours_with_borrow(self):
-        self.assertEqual(str(Clock(6, 15).add(-160)), '03:35')
+        self.assertEqual(s..(Clock(6, 15).add(-160)), '03:35')
 
     ___ test_subtract_more_than_one_day(self):
-        self.assertEqual(str(Clock(5, 32).add(-1500)), '04:32')
+        self.assertEqual(s..(Clock(5, 32).add(-1500)), '04:32')
 
     ___ test_subtract_more_than_two_days(self):
-        self.assertEqual(str(Clock(2, 20).add(-3000)), '00:20')
+        self.assertEqual(s..(Clock(2, 20).add(-3000)), '00:20')
 
     # Construct two separate clocks, set times, test if they are equal.
     ___ test_clocks_with_same_time(self):

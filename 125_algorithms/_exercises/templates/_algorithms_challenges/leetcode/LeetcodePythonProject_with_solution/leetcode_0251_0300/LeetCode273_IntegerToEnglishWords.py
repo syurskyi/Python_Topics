@@ -47,7 +47,7 @@ class Solution(object):
             res += ' ' + self.helper(first) + ' Billion'
             remaining = num - first*1000000000
             res += ' ' + self.helper(remaining)
-        r.. res.strip()
+        r.. res.s..
     
     ___ numberToWords(self, num):
         token20 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
@@ -61,7 +61,7 @@ class Solution(object):
                 r.. [tens[n/10-2]] + words(n%10)
             __ n < 1000:
                 r.. [token20[n/100-1]] + ['Hundred'] + words(n%100)
-            ___ p, w __ enumerate(('Thousand', 'Million', 'Billion'), 1):
+            ___ p, w __ e..(('Thousand', 'Million', 'Billion'), 1):
                 __ n < 1000**(p+1):
                     r.. words(n/1000**p) + [w] + words(n%1000**p)
         r.. ' '.join((words(num))) o. 'Zero'

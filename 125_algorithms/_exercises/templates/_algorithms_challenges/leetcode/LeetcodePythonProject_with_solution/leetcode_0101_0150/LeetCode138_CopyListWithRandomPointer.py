@@ -22,7 +22,7 @@ class Solution(object):
         newNode = newHead
         hashmap = {head: newHead}
         node = head.next
-        while node:
+        w.... node:
             tmp = RandomListNode(node.label)
             hashmap[node] = tmp
             newNode.next = tmp
@@ -30,7 +30,7 @@ class Solution(object):
             node = node.next
         node = head
         newNode = newHead
-        while node:
+        w.... node:
             __ node.random:
                 newNode.random = hashmap[node.random]
             ____:

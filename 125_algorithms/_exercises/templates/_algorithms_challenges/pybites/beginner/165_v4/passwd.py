@@ -35,9 +35,9 @@ ssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash
 artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash"""
 
 
-___ get_users_for_shell(passwd_output: str = PASSWD_OUTPUT,
-                        grep_shell: str = DEFAULT_SHELL) -> l..:
+___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
+                        grep_shell: s.. = DEFAULT_SHELL) -> l..:
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
-    r.. [x.split(':')[0] ___ x __ passwd_output.splitlines() __ '/'+grep_shell __ x.split(':')[6]]
+    r.. [x.s..(':')[0] ___ x __ passwd_output.splitlines() __ '/'+grep_shell __ x.s..(':')[6]]

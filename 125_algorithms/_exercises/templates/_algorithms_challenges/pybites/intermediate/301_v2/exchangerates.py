@@ -1,7 +1,7 @@
 _______ os
 _______ json
-____ datetime _______ date
-_______ datetime as dt
+____ d__ _______ date
+_______ d__ as dt
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
 ____ urllib.request _______ urlretrieve
@@ -20,9 +20,9 @@ ___ get_all_days(start_date: date, end_date: date) -> List[date]:
     dates    # list
 
     current_date = start_date
-    while current_date != end_date:
+    w.... current_date != end_date:
         dates.a..(current_date)
-        current_date += dt.timedelta(days=1)
+        current_date += dt.t..(days=1)
     
     
     dates.a..(current_date)
@@ -43,7 +43,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
     
 
     i = 0
-    while i < l..(dates) and parse(dates[i]).date() < start:
+    w.... i < l..(dates) a.. parse(dates[i]).date() < start:
         i += 1
 
 
@@ -52,15 +52,15 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
     
     current_date = start
         
-    while i < l..(dates):
+    w.... i < l..(dates):
         date = parse(dates[i]).date()
         __ date __ current_date:
             mapping[current_date] = date
-            current_date += dt.timedelta(days=1)
+            current_date += dt.t..(days=1)
             i += 1
         ____ date > current_date:
             mapping[current_date] = parse(dates[i -1]).date()
-            current_date += dt.timedelta(days=1)
+            current_date += dt.t..(days=1)
         ____:
             i += 1
 
@@ -70,7 +70,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
 
 
 ___ exchange_rates(
-    start_date: str = "2020-01-01", end_date: str = "2020-09-01"
+    start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) -> Dict[date, d..]:
     
 

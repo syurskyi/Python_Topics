@@ -15,7 +15,7 @@ ___ pascal(N: int) -> List[int]:
         ___ x __ r..(N-1):
             #print(x)
             out_list    # list
-            ___ i, v __ enumerate(in_list):
+            ___ i, v __ e..(in_list):
                 __ i __ 0:
                     out_list.a..(v)
                 ____:

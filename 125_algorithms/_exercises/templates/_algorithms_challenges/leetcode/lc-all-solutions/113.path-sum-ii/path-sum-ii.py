@@ -19,7 +19,7 @@ class Solution(object):
         s -= root.val
         left = dfs(root.left, s, path, res)
         right = dfs(root.right, s, path, res)
-        __ n.. left and n.. right and s __ 0:
+        __ n.. left a.. n.. right a.. s __ 0:
           res.a..(path + [])
         path.pop()
         r.. True

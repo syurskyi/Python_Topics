@@ -3,7 +3,7 @@ class Solution:
     # @param target, integer
     # @return a list of lists of integers
     ___ combinationSum2(self, candidates, target):
-        candidates.sort()
+        candidates.s..()
         res    # list
         cand    # list
         self.combination_sum(candidates, target, cand, res)
@@ -15,7 +15,7 @@ class Solution:
         ____ target < 0:
             r..
         ____:
-            ___ i, c __ enumerate(candidates):
+            ___ i, c __ e..(candidates):
                 __ i __ 0:
                     prev = c
                 ____ prev __ c:

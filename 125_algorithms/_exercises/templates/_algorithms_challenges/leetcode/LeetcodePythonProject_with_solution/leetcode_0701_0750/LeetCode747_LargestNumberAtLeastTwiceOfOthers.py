@@ -13,7 +13,7 @@ class Solution(object):
             r.. -1
         first, fInd = float('-inf'), -1
         second = float('-inf')
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ num > first:
                 second = first
                 first = num

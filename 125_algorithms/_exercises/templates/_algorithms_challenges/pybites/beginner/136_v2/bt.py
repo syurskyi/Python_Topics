@@ -56,14 +56,14 @@ ___ check_bt(donor, recipient):
     
     
     ___ blood_type __ (donor,recipient):
-        __ type(blood_type) n.. __ (str,int,Bloodtype):
+        __ type(blood_type) n.. __ (s..,int,Bloodtype):
             raise TypeError("Invalid types")
     
 
 
     blood_types    # list
     ___ blood_type __ (donor,recipient):
-        __ type(blood_type) __ str:
+        __ type(blood_type) __ s..:
             __ blood_type n.. __ blood_type_text:
                 raise ValueError
             blood_types.a..(blood_type_text[blood_type])

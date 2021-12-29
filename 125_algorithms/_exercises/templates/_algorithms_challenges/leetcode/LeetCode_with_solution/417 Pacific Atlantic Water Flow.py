@@ -73,7 +73,7 @@ class Solution:
             [i, j]
             ___ i __ r..(m)
             ___ j __ r..(n)
-            __ P[i][j] and A[i][j]
+            __ P[i][j] a.. A[i][j]
         ]
         r.. ret
 
@@ -84,7 +84,7 @@ class Solution:
         ___ x, y __ dirs:
             I = i + x
             J = j + y
-            __ 0 <= I < m and 0 <= J < n and matrix[i][j] <= matrix[I][J]:
+            __ 0 <= I < m a.. 0 <= J < n a.. matrix[i][j] <= matrix[I][J]:
                 __ n.. C[I][J]:
                     self.dfs(matrix, I, J, C)
 
@@ -117,7 +117,7 @@ class Solution:
             [i, j]
             ___ i __ r..(m)
             ___ j __ r..(n)
-            __ P[i][j] and A[i][j]
+            __ P[i][j] a.. A[i][j]
         ]
         r.. ret
 
@@ -131,8 +131,8 @@ class Solution:
         ___ x, y __ dirs:
             i2 = i + x
             j2= j + y
-            __ 0 <= i2 < m and 0 <= j2 < n:
-                __ self.dfs_error(matrix, i2, j2, visisted, C, predicate) and matrix[i][j] >= matrix[i2][j2]:
+            __ 0 <= i2 < m a.. 0 <= j2 < n:
+                __ self.dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >= matrix[i2][j2]:
                     C[i][j] = True
             ____ predicate(i2, j2):
                 C[i][j] = True

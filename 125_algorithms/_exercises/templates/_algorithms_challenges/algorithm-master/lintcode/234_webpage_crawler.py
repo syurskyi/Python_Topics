@@ -8,10 +8,10 @@ results = {}
 class CrawlerThread(Thread):
     ___ run(self):
         global queue, results
-        while True:
+        w... T...
             url = queue.get()
             __ url n.. __ results \
-                and urlparse(url).hostname.endswith("wikipedia.org"):
+                a.. urlparse(url).hostname.endswith("wikipedia.org"):
                 results[url] = True
                 urls = HtmlHelper.parseUrls(url)
                 ___ url __ urls:

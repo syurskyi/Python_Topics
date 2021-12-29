@@ -1,4 +1,4 @@
-____ datetime _______ date, datetime
+____ d__ _______ date, d__
 
 ____ dateutil.relativedelta _______ relativedelta
 
@@ -30,7 +30,7 @@ ___ calc_months_passed(year, month, day):
        Return the number of months passed int.
     """
     try:
-        in_date = datetime(year=year,month=month,day=day)
+        in_date = d__ y.._year, m.._month, d.._day)
         __ date(year, month, day) < START_DATE:
             raise ValueError
         months_passed = 0

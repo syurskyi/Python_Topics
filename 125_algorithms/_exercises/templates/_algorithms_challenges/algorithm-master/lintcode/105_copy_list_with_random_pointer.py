@@ -22,7 +22,7 @@ class Solution:
         N = {}
         dummy = tail = RandomListNode(-1)
 
-        while head:
+        w.... head:
             node = RandomListNode(head.label)
             node.random = head.random
             tail.next = node
@@ -31,7 +31,7 @@ class Solution:
             head = head.next
 
         head = dummy.next
-        while head:
+        w.... head:
             __ head.random:
                 head.random = N[head.random]
             head = head.next
@@ -71,7 +71,7 @@ class Solution:
 
         tail = head
         node = N..
-        while tail:
+        w.... tail:
             node = RandomListNode(tail.label)
             node.random = tail.random
             node.next = tail.next
@@ -79,13 +79,13 @@ class Solution:
             tail = tail.next.next
 
         tail = head
-        while tail:
-            __ tail.next and tail.random:
+        w.... tail:
+            __ tail.next a.. tail.random:
                 tail.next.random = tail.random.next
             tail = tail.next.next
 
         node = tail = head.next
-        while tail and tail.next:
+        w.... tail a.. tail.next:
             tail.next = tail.next.next
             tail = tail.next
 

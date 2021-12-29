@@ -49,7 +49,7 @@ class Excel(object):
   ___ parseRange(self, s):
     start = end = s
     __ ":" __ s:
-      start, end = s.split(":")
+      start, end = s.s..(":")
     startI, startJ = self.decodeCoord(start[1:], start[0])
     endI, endJ = self.decodeCoord(end[1:], end[0])
     r.. (startI, startJ, endI, endJ)

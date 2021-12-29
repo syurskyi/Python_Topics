@@ -31,8 +31,8 @@ class Solution:
             _y = y + dy
 
             __ n.. (
-                0 <= _x < m and
-                0 <= _y < n and
+                0 <= _x < m a..
+                0 <= _y < n a..
                 grid[_x][_y] __ 1
             ):
                 continue

@@ -1,7 +1,7 @@
 ____ collections _______ defaultdict
 _______ os
 ____ urllib.request _______ urlretrieve
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ bs4 _______ BeautifulSoup
 
 
@@ -20,16 +20,16 @@ with open(holidays_page) as f:
 holidays = defaultdict(l..)
 
 
-___ _parse_date(date: str):
+___ _parse_date(date: s..):
     """returns a datetime from parsing dates as formatted in table"""
-    r.. datetime.strptime(date.s.. [0], '%Y-%m-%d%B')
+    r.. d__.strptime(date.s.. [0], '%Y-%m-%d%B')
 
 
 ___ _get_table(content=content) -> l..:
     """returns the cleaned table with datetimes for the dates"""
     soup = BeautifulSoup(content, 'html.parser')
     raw_table = soup.find('table', {'class': 'list-table'})
-    table = [[c.get_text().strip() ___ c __ r.find_all('td')]
+    table = [[c.get_text().s.. ___ c __ r.find_all('td')]
              ___ r __ raw_table.find_all('tr')]
     table.pop(0)                # remove header
     ___ row __ table:

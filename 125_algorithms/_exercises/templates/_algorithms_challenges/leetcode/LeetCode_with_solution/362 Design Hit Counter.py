@@ -38,7 +38,7 @@ class HitCounter(object):
         r.. l..(self.q)
 
     ___ pop(self, timestamp):
-        while self.q and timestamp - self.q[0] >= 300:
+        w.... self.q a.. timestamp - self.q[0] >= 300:
             self.q.popleft()
 
 

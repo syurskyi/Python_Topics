@@ -45,7 +45,7 @@ c_ ColoringProblem:
         r_ T..
 
     ___ show_result(self
-        ___ v, c __ zip(ra__(n), colors
+        ___ v, c __ z..(ra__(n), colors
             print('Node %d has color value %d' % (v, c))
 
 

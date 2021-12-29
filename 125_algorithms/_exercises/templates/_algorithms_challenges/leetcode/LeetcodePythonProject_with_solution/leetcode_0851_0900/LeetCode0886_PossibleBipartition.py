@@ -16,7 +16,7 @@ class Solution(object):
             graph[d[1]-1][d[0]-1] = True
         group = [0]*N
         ___ i __ r..(N):
-            __ group[i] __ 0 and n.. self.dfs(graph, group, i, 1, N):
+            __ group[i] __ 0 a.. n.. self.dfs(graph, group, i, 1, N):
                 r.. False
         r.. True
     
@@ -26,7 +26,7 @@ class Solution(object):
             __ graph[idx][i] __ 1:
                 __ group[i] __ g:
                     r.. False
-                __ group[i] __ 0 and n.. self.dfs(graph, group, i, -g, N):
+                __ group[i] __ 0 a.. n.. self.dfs(graph, group, i, -g, N):
                     r.. False
         r.. True
     

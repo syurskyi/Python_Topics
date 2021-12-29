@@ -12,10 +12,10 @@ class Solution(object):
         :type ty: int
         :rtype: bool
         """
-        while sx < tx and sy < ty:
+        w.... sx < tx a.. sy < ty:
             tx, ty = tx%ty, ty%tx
-        __ sx __ tx and (ty-sy) % sx __ 0 o.\
-            sy __ ty and (tx-sx) % sy __ 0:
+        __ sx __ tx a.. (ty-sy) % sx __ 0 o.\
+            sy __ ty a.. (tx-sx) % sy __ 0:
             r.. True
         ____:
             r.. False
@@ -33,7 +33,7 @@ class Solution(object):
         r.. self.helper(sx, sy, tx, ty, mem)
     
     ___ helper(self, sx, sy, tx, ty, mem):
-        __ sx __ tx and sy __ ty:
+        __ sx __ tx a.. sy __ ty:
             mem[(sx, sy)] = True
             r.. True
         __ sx > tx o. sy > ty:

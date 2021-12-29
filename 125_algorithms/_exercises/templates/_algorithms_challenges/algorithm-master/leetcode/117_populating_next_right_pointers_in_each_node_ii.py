@@ -27,7 +27,7 @@ class Solution:
         head = root.next
         nxt = N..
 
-        while head and n.. nxt:
+        w.... head a.. n.. nxt:
             __ head.left:
                 nxt = head.left
             ____ head.right:
@@ -62,12 +62,12 @@ class Solution:
         dummy.next = root
         nxt = tail = N..
 
-        while dummy.next:
+        w.... dummy.next:
             tail = dummy
             nxt = dummy.next
             dummy.next = N..
 
-            while nxt:
+            w.... nxt:
                 __ nxt.left:
                     tail.next = nxt.left
                     tail = tail.next
@@ -93,7 +93,7 @@ class Solution:
 
         queue, _queue = [root], []
 
-        while queue:
+        w.... queue:
             n = l..(queue)
 
             ___ i __ r..(n):

@@ -1,7 +1,7 @@
 _______ math
 
 ___ i __ r..(int(input())):
-    x1,y1,x2,y2,x3,y3 = l..(map(int,input().split()))
+    x1,y1,x2,y2,x3,y3 = l..(map(int,input().s..()))
     
     #distance formula
 

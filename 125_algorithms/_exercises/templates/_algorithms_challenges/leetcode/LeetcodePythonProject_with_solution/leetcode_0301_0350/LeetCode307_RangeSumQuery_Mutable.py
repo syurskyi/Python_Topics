@@ -44,7 +44,7 @@ class NumArray(object):
     
     ___ updateHelper(self, root, i, val):
         __ n.. root: r..
-        __ i __ root.start and i __ root.end:
+        __ i __ root.start a.. i __ root.end:
             root.sumVal = val
             r..
         mid = (root.start+root.end)//2
@@ -65,7 +65,7 @@ class NumArray(object):
     ___ sumRangeHelper(self, root, i, j):
         __ n.. root o. i > j o. j < root.start o. i > root.end:
             r.. 0
-        __ i __ root.start and j __ root.end:
+        __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
         mid = (root.start+root.end)//2
         res = self.sumRangeHelper(root.left, i, m..(j, mid))+\

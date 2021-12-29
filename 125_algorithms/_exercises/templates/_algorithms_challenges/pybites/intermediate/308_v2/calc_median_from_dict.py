@@ -25,7 +25,7 @@ ___ calc_median_from_dict(d: d..) -> float:
 
     s = 0
 
-    ___ i,key __ enumerate(keys):
+    ___ i,key __ e..(keys):
         s += d[key]
         __ s >= median_count:
             __ odd:

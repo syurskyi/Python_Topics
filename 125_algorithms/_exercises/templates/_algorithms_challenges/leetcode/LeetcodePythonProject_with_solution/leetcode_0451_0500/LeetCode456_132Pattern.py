@@ -12,7 +12,7 @@ class Solution(object):
             num = nums[i]
             __ num < s3:
                 r.. True
-            while stack and stack[-1] < num:
+            w.... stack a.. stack[-1] < num:
                 s3 = stack.pop()
             stack.a..(num)
         r.. False

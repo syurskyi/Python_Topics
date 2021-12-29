@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: str
         """
         n = 0
-        ___ i, c __ enumerate(S):
+        ___ i, c __ e..(S):
             __ c.isdigit():
                 n = n*int(c)
             ____:

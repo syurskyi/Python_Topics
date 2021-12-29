@@ -16,7 +16,7 @@ class Solution(object):
             heapq.heappush(heap, [-freq, c])
         queue    # list
         res    # list
-        while heap:
+        w.... heap:
             freq, c = heapq.heappop(heap)
             res.a..(c)
             queue.a..([freq, c])

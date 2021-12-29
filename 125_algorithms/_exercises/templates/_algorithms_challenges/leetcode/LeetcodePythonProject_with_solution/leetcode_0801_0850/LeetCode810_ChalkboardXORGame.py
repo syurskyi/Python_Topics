@@ -22,7 +22,7 @@ class Solution(object):
         r.. self.helper(nums, mem)
     
     ___ helper(self, nums, mem):
-        s = str(nums)
+        s = s..(nums)
         __ s __ mem:
             r.. mem[s]
         __ self.calc(nums) __ 0:

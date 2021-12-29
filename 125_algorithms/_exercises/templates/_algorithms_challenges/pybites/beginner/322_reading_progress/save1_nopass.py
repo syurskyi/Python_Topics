@@ -1,6 +1,6 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
-today = datetime.today()
+today = d__.today()
 
 ___ ontrack_reading(books_goal: int, books_read: int,
                     day_of_year: int = N..) -> bool:

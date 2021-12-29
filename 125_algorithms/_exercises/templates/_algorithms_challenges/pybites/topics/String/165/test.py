@@ -7,4 +7,4 @@ lines = f.readlines()
 
 #print(lines.split(':')[-1])
 
-print( [line.split(':')[0] ___ line __ lines __ 'false' __ line.split(':')[-1] ] )
+print( [line.s..(':')[0] ___ line __ lines __ 'false' __ line.s..(':')[-1] ] )

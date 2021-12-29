@@ -14,16 +14,16 @@ class Solution(object):
       ___ di, dj __ directions:
         dist = 0
         i, j = curr
-        while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
+        w.... 0 <= i + di < height a.. 0 <= j + dj < width a.. maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
-        yield (i, j), dist
+        y.. (i, j), dist
 
     heap = [(0, tuple(ball))]
     visited = set()
     hole = tuple(hole)
-    while heap:
+    w.... heap:
       dist, curr = heapq.heappop(heap)
       __ curr __ visited:
         continue

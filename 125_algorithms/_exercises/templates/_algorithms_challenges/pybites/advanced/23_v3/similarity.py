@@ -1,7 +1,7 @@
 _______ os
 _______ re
 ____ difflib _______ SequenceMatcher
-____ itertools _______ permutations
+____ i.. _______ permutations
 ____ urllib.request _______ urlretrieve
 
 # prep
@@ -34,4 +34,4 @@ ___ get_similarities(tags_ N..
     # do your thing ...
     ___ a, b __ permutations(tags, 2):
         __ SequenceMatcher(a=a, b=b).ratio() >= SIMILAR:
-            yield a, b
+            y.. a, b

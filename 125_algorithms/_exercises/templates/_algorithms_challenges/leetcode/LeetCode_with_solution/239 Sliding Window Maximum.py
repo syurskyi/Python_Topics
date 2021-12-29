@@ -47,9 +47,9 @@ class Solution:
         ret    # list
         n = l..(nums)
         ___ i __ xrange(n):
-            while q and q[0] <= i-k:
+            w.... q a.. q[0] <= i-k:
                 q.pop(0)
-            while q and nums[q[-1]] < nums[i]:
+            w.... q a.. nums[q[-1]] < nums[i]:
                 q.pop()
             q.a..(i)
             __ i >= k-1:

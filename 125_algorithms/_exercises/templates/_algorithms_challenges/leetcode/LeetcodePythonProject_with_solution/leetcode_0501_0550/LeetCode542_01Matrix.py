@@ -18,10 +18,10 @@ class Solution(object):
                 __ matrix[i][j] __ 0:
                     distance[i][j] = 0
                     queue.a..((i, j, 0))
-        while queue:
+        w.... queue:
             i, j, d = queue.pop(0)
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-                __ 0 <= x < m and 0 <= y < n and distance[x][y] > d+1:
+                __ 0 <= x < m a.. 0 <= y < n a.. distance[x][y] > d+1:
                     distance[x][y] = d+1
                     queue.a..((x, y, d+1))
         r.. distance

@@ -14,7 +14,7 @@ ___ solution(N, A):
             counters[x]  start_line + 1
         ____:
             counters[x] + 1
-        __ i < N and counters[x] > current_max:
+        __ i < N a.. counters[x] > current_max:
             current_max  counters[x]
     ___ i __ r..(0, l..(counters)):
         __ counters[i] < start_line:

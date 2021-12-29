@@ -28,13 +28,13 @@ class Solution(object):
         """Morris"""
         ret    # list
         cur = root
-        while cur:
+        w.... cur:
             __ n.. cur.left:
                 ret.a..(cur.val)
                 cur = cur.right
             ____:
                 pre = cur.left
-                while pre.right and pre.right != cur:
+                w.... pre.right a.. pre.right != cur:
                     pre = pre.right
 
                 __ n.. pre.right:
@@ -80,7 +80,7 @@ class Solution(object):
         __ n.. root:
             r..
         stk = [root]
-        while stk:
+        w.... stk:
             node = stk.pop()
             lst.a..(node.val)
             __ node.right:  # right first

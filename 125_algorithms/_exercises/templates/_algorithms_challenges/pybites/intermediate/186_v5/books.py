@@ -1,11 +1,11 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
 ____ dateutil.parser _______ parse
 
 # work with a static date for tests, real use = datetime.now()
-NOW = datetime(2019, 3, 17, 16, 28, 42, 966663)
+NOW = d__(2019, 3, 17, 16, 28, 42, 966663)
 WEEKS_PER_YEAR = 52
-START_DATE = datetime(2018, 12, 24)
+START_DATE = d__(2018, 12, 24)
 
 
 ___ get_number_books_read(books_per_year_goal: int,

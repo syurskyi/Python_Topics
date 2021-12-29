@@ -5,13 +5,13 @@ Premium question
 
 
 class Solution:
-    ___ parseTernary(self, expression: str) -> str:
+    ___ parseTernary(self, expression: s..) -> s..:
         """
         stk from right to left parsing, including the operand and operator
         """
         stk    # list
         ___ c __ reversed(expression):
-            __ stk and stk[-1] __ "?":
+            __ stk a.. stk[-1] __ "?":
                 stk.pop()  # ?
                 first = stk.pop()
                 stk.pop()  # :
@@ -25,7 +25,7 @@ class Solution:
 
         r.. stk[0]
 
-    ___ parseTernary_complex(self, expression: str) -> str:
+    ___ parseTernary_complex(self, expression: s..) -> s..:
         """
         tokenize + recursive (dfs)?
 
@@ -36,9 +36,9 @@ class Solution:
         n = l..(expression)
         stk    # list
         i = n - 1
-        while i >= 0:
+        w.... i >= 0:
             j = i
-            while j >= 0 and expression[j] n.. __ (":", "?"):
+            w.... j >= 0 a.. expression[j] n.. __ (":", "?"):
                 j -= 1
 
             __ j < i:

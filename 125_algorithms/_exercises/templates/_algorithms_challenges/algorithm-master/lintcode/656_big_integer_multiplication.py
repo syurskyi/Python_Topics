@@ -20,7 +20,7 @@ class Solution:
             tmp[i] = carry
 
         i = 0
-        while tmp[i] __ 0:
+        w.... tmp[i] __ 0:
             i += 1
 
-        r.. ''.join([str(j) ___ j __ tmp[i:]])
+        r.. ''.join([s..(j) ___ j __ tmp[i:]])

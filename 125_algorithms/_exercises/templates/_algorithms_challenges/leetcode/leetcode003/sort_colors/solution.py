@@ -6,7 +6,7 @@ class Solution:
         r = 0  # Last index of red
         b = n - 1  # First index of white
         i = 0
-        while i <= b:
+        w.... i <= b:
             __ A[i] __ 0:
                 A[i], A[r] = A[r], A[i]
                 r += 1

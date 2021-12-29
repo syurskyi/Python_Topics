@@ -18,7 +18,7 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         prev = dummy
-        while head and head.next:
+        w.... head a.. head.next:
             nextNode = head.next.next
             tmp = head.next
             prev.next = tmp

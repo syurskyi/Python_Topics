@@ -30,13 +30,13 @@ class Solution(object):
         stack1    # list
         stack2    # list
         stack1.a..(root)
-        while stack1:
+        w.... stack1:
             root = stack1.pop()
             stack2.a..(root.val)
             __ root.left __ n.. N..
                 stack1.a..(root.left)
             __ root.right __ n.. N..
                 stack1.a..(root.right)
-        while stack2:
+        w.... stack2:
             path.a..(stack2.pop())
         r.. path

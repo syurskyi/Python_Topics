@@ -22,7 +22,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket):
         r.. [target, src] __ i __ 0 ____ [src, target]
 
     ___ bucket_str(buckets):
-        r.. '{},{}'.format(*buckets)
+        r.. '{},{}'.f..(*buckets)
 
     invalid = [0, 0]
     invalid[1 - goalIndex] = sizes[1 - goalIndex]
@@ -32,9 +32,9 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket):
     toVisit    # list
     visited = set()
     count = 1
-    while goal n.. __ buckets:
+    w.... goal n.. __ buckets:
         key = bucket_str(buckets)
-        __ key != invalidStr and key n.. __ visited:
+        __ key != invalidStr a.. key n.. __ visited:
             visited.add(key)
             nc = count + 1
             ___ i __ r..(2):

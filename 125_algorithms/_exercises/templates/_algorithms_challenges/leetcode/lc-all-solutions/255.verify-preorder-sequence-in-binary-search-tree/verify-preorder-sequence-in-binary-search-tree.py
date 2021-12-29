@@ -12,7 +12,7 @@ class Solution(object):
     ___ i __ r..(1, l..(preorder)):
       __ lastElem > preorder[i]:
         r.. False
-      while l..(stack) > 0 and preorder[i] > stack[-1]:
+      w.... l..(stack) > 0 a.. preorder[i] > stack[-1]:
         lastElem = stack.pop()
       stack.a..(preorder[i])
 

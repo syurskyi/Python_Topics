@@ -44,8 +44,8 @@ ___ major_n_minor(numbers):
             d..[num] += 1
         except:
             d..[num] = 1
-    sort = s..(d...items(), key=l.... x: x[1] )
-    r.. sort[-1][0], sort[0][0]
+    s.. = s..(d...items(), key=l.... x: x[1] )
+    r.. s..[-1][0], s..[0][0]
     # difference between for i in d:
     # for i in d.items(): ?
     # return (next((iter(reversed(sor.items()))))[0], next(iter(sor.items()))[0] )

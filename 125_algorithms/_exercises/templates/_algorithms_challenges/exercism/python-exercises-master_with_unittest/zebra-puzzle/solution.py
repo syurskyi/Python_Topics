@@ -3,7 +3,7 @@ by Peter Norvig for the course "Design of Computer Programs" on Udacity.
 https://www.udacity.com/course/cs212
 """
 
-____ itertools _______ permutations
+____ i.. _______ permutations
 
 
 ___ just_right_of(x, y):
@@ -38,4 +38,4 @@ ___ solution():
         __ OldGold __ snails __ next_to(Chesterfields, fox)
         __ next_to(Kools, horse))
     r.. ("It is the {} who drinks the water.\n"
-            "The {} keeps the zebra.").format(*result)
+            "The {} keeps the zebra.").f..(*result)

@@ -1,8 +1,8 @@
-____ datetime _______ datetime, timedelta
+____ d__ _______ d__, t..
 ____ typing _______ List
 
 
-___ get_srt_section_ids(text: str) -> List[int]:
+___ get_srt_section_ids(text: s..) -> List[int]:
    """Parse a caption (srt) text passed in and return a
       list of section numbers ordered descending by
       highest speech speed
@@ -26,17 +26,17 @@ ___ get_srt_section_ids(text: str) -> List[int]:
 
       You can ignore milliseconds for this exercise.
    """
-   sections_raw = [word.strip() ___ word __ text.strip().split("\n") __ word != ""]
+   sections_raw = [word.s.. ___ word __ text.s...s..("\n") __ word != ""]
    sections_clean = [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
    sections_ranking = {}
 
    ___ section __ sections_clean:
-      start, stop = section[1].split(" --> ")
+      start, stop = section[1].s..(" --> ")
       total_chars = l..(section[2])
-      start_h, start_m, start_s = start.split(":")
-      stop_h, stop_m, stop_s = stop.split(":")
-      start = timedelta(hours=int(start_h), minutes=int(start_m), seconds=int(start_s[:2]))
-      stop = timedelta(hours=int(stop_h), minutes=int(stop_m), seconds=int(stop_s[:2]))
+      start_h, start_m, start_s = start.s..(":")
+      stop_h, stop_m, stop_s = stop.s..(":")
+      start = t..(hours=int(start_h), minutes=int(start_m), seconds=int(start_s[:2]))
+      stop = t..(hours=int(stop_h), minutes=int(stop_m), seconds=int(stop_s[:2]))
       time_delta = stop - start
       sections_ranking[int(section[0])] = total_chars / time_delta.seconds
 

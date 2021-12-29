@@ -37,8 +37,8 @@ class Solution(object):
                             dp[i][j] = dp[i][k]+dp[k+1][j]
                     ___ k __ r..(l..(substr)):
                         repeatStr = substr[:k+1]
-                        __ repeatStr and l..(substr)%l..(repeatStr)__0 and substr.replace(repeatStr, '') __ '':
-                            ss = str(int(l..(substr)/l..(repeatStr))) + '[' + dp[i][i+k] + ']'
+                        __ repeatStr a.. l..(substr)%l..(repeatStr)__0 a.. substr.r..(repeatStr, '') __ '':
+                            ss = s..(int(l..(substr)/l..(repeatStr))) + '[' + dp[i][i+k] + ']'
                             __ l..(ss) < l..(dp[i][j]):
                                 dp[i][j] = ss
         r.. dp[0][-1]

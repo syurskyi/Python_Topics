@@ -13,7 +13,7 @@ ___ linear_function():
         a, b, c, d = [int(x) ___ x __ input().s.. ]
         m = int(find_slope(a, b, c, d))
         g = int(find_intercept(a, b, m))
-        answer.a..('({0} {1})'.format(m, g))
+        answer.a..('({0} {1})'.f..(m, g))
     print(' '.join(answer))
     
 linear_function()

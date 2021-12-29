@@ -9,7 +9,7 @@ ERROR = l.... x: logger.log(logging.ERROR, x)
 CRITICAL = l.... x: logger.log(logging.CRITICAL, x)
 
 
-___ log_it(level: Callable, msg: str) -> N..
+___ log_it(level: Callable, msg: s..) -> N..
     level(msg)
 
 

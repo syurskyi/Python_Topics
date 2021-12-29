@@ -21,7 +21,7 @@ class Solution:
         dummy.next = head
 
         head = dummy
-        while head:
+        w.... head:
             head = self.reverse_next_kth(head, k)
 
         r.. dummy.next
@@ -35,7 +35,7 @@ class Solution:
 
     ___ reverse(self, head):
         pre = nxt = N..
-        while head:
+        w.... head:
             nxt = head.next
             head.next = pre
             pre = head

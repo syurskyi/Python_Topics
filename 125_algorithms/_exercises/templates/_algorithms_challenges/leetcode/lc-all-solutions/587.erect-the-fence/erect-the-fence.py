@@ -16,16 +16,16 @@ class Solution(object):
     ___ direction(p, q, r):
       r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
 
-    points.sort(key=l.... x: (x.x, x.y))
+    points.s..(key=l.... x: (x.x, x.y))
     upper    # list
     lower    # list
     ___ point __ points:
-      while l..(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
+      w.... l..(lower) >= 2 a.. direction(lower[-2], lower[-1], point) < 0:
         lower.pop()
       lower.a..(point)
 
     ___ point __ reversed(points):
-      while l..(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
+      w.... l..(upper) >= 2 a.. direction(upper[-2], upper[-1], point) < 0:
         upper.pop()
       upper.a..(point)
 

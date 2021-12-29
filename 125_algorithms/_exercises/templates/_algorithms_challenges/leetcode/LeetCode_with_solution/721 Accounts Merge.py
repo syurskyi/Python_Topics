@@ -42,20 +42,20 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
+    ___ accountsMerge(self, accounts: List[List[s..]]) -> List[List[s..]]:
         """
         merge has to be dfs
         account id
         """
         email_to_ids = defaultdict(set)
-        ___ i, v __ enumerate(accounts):
+        ___ i, v __ e..(accounts):
             ___ email __ v[1:]:
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
         visited = [False ___ _ __ accounts]
         ret    # list
-        ___ i, v __ enumerate(accounts):
+        ___ i, v __ e..(accounts):
             __ n.. visited[i]:
                 emails = set()
                 self.dfs(i, accounts, email_to_ids, emails, visited)
@@ -72,7 +72,7 @@ class Solution:
                     self.dfs(nbr, accounts, email_to_ids, emails, visited)
 
 
-    ___ accountsMerge_error(self, accounts: List[List[str]]) -> List[List[str]]:
+    ___ accountsMerge_error(self, accounts: List[List[s..]]) -> List[List[s..]]:
         """
         data structure
         map: email -> id, if exist mapping, then merge

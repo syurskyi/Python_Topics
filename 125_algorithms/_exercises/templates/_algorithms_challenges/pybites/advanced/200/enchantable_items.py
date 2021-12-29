@@ -47,7 +47,7 @@ class Item:
     
 
     ___ __str__(self):
-        string = self.name.replace('_',' ').t.. + ': '
+        string = self.name.r..('_',' ').t.. + ': '
         sorted_enchantments = s..(self.enchantments,key=l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:
             string += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
@@ -66,15 +66,15 @@ ___ generate_enchantments(soup):
     ___ table_row __ table.find_all('tr')[1:]:
         data = table_row.find_all('td')
         values    # list
-        ___ i,d __ enumerate(data):
+        ___ i,d __ e..(data):
             value = d.getText()
             values.a..(value)
         
         image_source = table_row.find('img')['data-src']
-        last_part = image_source.split('/')[-1]
+        last_part = image_source.s..('/')[-1]
         last_part = re.sub(r'\.|png|sm|enchanted|iron','',last_part)
         
-        items = last_part.strip().split('_')
+        items = last_part.s...s..('_')
         valid_items    # list
         ___ item __ items:
             __ item:

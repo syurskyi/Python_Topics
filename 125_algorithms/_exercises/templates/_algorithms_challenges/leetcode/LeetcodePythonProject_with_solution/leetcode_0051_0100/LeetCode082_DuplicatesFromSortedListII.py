@@ -21,10 +21,10 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         node = dummy
-        while node.next and node.next.next:
+        w.... node.next a.. node.next.next:
             __ node.next.val __ node.next.next.val:
                 val = node.next.val
-                while node.next and node.next.val __ val:
+                w.... node.next a.. node.next.val __ val:
                     node.next = node.next.next
             ____:
                 node = node.next

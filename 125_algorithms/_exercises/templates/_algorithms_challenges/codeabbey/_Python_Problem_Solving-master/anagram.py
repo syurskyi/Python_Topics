@@ -1,7 +1,7 @@
 ___ anagram(s,t):
     
-    s = s.lower().replace(' ','')
-    t = t.lower().replace(' ','')
+    s = s.lower().r..(' ','')
+    t = t.lower().r..(' ','')
     __ l..(s) != l..(t):
         r.. False
     ___ i __ t:

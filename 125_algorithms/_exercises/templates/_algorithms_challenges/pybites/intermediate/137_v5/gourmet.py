@@ -4,8 +4,8 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ itertools _______ product, groupby
-____ collections _______ Counter, namedtuple
+____ i.. _______ product, groupby
+____ collections _______ Counter, n..
 _______ operator
 
 CHEESES = [
@@ -96,7 +96,7 @@ WINE_LIST = {
     'all': RED_WINES + WHITE_WINES + SPARKLING_WINES
 }
 
-Scores = namedtuple('Scores', 'wine cheese score')
+Scores = n..('Scores', 'wine cheese score')
 
 
 ___ calculate_similarity(cheese, wine):

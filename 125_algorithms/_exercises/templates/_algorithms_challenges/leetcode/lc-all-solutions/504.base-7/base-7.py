@@ -12,10 +12,10 @@ class Solution(object):
       num = abs(num)
       ans = 0
       unit = 1
-      while num:
+      w.... num:
         ans += (num % base) * unit
         num /= base
         unit *= 10
-      r.. sign + str(ans)
+      r.. sign + s..(ans)
 
     r.. convertHelper(num, 7)

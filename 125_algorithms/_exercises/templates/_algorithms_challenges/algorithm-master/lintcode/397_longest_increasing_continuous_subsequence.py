@@ -31,7 +31,7 @@ class Solution:
         # end_at = -1
 
         ___ i __ r..(n):
-            __ i > 0 and A[i] > A[i - 1]:
+            __ i > 0 a.. A[i] > A[i - 1]:
                 dp[i] = dp[i - 1] + 1
                 # pi[i] = i - 1
             __ dp[i] > ans:

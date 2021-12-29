@@ -10,12 +10,12 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        nums.sort()
+        nums.s..()
         res = float('inf')
         n = l..(nums)
         ___ i __ r..(n-2):
             j, k = i+1, n-1
-            while j < k:
+            w.... j < k:
                 tmp = nums[i]+nums[j]+nums[k]
                 diff = abs(tmp-target)
                 __ diff < abs(res-target):

@@ -22,7 +22,7 @@ ___ running_mean(sequence):
     You can assume all items in sequence are numeric.
     """
     s.. = 0
-    ___ item __ enumerate(l.., start=1):
+    ___ item __ e..(l.., start=1):
         s.. += item[1]
         mean = s.. / item[0]
         result.a..(round(mean,2))

@@ -50,7 +50,7 @@ class Solution:
         i, j = 0, 0
         m, n = l..(A), l..(B)
         ret    # list
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             lo = max(A[i].start, B[j].start)
             hi = m..(A[i].end, B[j].end)
             __ lo <= hi:
@@ -70,7 +70,7 @@ class Solution:
         i = 0
         j = 0
         m, n = l..(A), l..(B)
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             a = A[i]
             b = B[j]
             __ b.start <= a.end <= b.end:

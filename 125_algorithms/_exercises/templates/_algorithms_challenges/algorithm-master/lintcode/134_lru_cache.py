@@ -48,7 +48,7 @@ class LRUCache:
             self._update(key, val)
             r..
 
-        while l..(self.nodes) >= self.cap:
+        w.... l..(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)

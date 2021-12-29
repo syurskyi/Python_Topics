@@ -27,7 +27,7 @@ class Solution(object):
                 r.. merger(msort(lst[:int(n/2)]), msort(lst[int(n/2):]))
         ___ merger(left, right):
             l, r = 0, 0
-            while l < l..(left) and r < l..(right):
+            w.... l < l..(left) a.. r < l..(right):
                 __ left[l] <= 2*right[r]:
                     l += 1
                 ____:

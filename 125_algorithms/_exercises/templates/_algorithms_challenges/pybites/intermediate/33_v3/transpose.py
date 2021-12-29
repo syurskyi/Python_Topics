@@ -1,5 +1,5 @@
-____ collections _______ namedtuple
-Member = namedtuple("Member",'name since_days karma_points bitecoin_earned')
+____ collections _______ n..
+Member = n..("Member",'name since_days karma_points bitecoin_earned')
 
 
 ___ transpose(data):
@@ -23,7 +23,7 @@ ___ transpose(data):
         r.. [tuple(data.keys()),tuple(data.values())]
     ____ type(data) __ l..:
         
-        r.. [z ___ z __ zip(*(tuple(d) ___ d __ data))]
+        r.. [z ___ z __ z..(*(tuple(d) ___ d __ data))]
 
 
 

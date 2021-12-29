@@ -43,7 +43,7 @@ class SummaryRanges(object):
         O(n lg n)
         :rtype: List[Interval]
         """
-        self.itvls.sort(key=l.... x: x.start)
+        self.itvls.s..(key=l.... x: x.start)
 
         ret = [self.itvls[0]]
         ___ itvl __ self.itvls[1:]:

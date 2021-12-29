@@ -20,7 +20,7 @@ Output: 0
 
 
 class Solution:
-    ___ numJewelsInStones(self, J: str, S: str) -> int:
+    ___ numJewelsInStones(self, J: s.., S: s..) -> int:
         """
         hash map
         """

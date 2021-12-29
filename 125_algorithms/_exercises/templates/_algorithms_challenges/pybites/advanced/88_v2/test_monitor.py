@@ -1,5 +1,5 @@
 ____ collections _______ Counter
-____ datetime _______ date
+____ d__ _______ date
 ____ unittest.mock _______ patch, MagicMock
 
 _______ pytest
@@ -62,7 +62,7 @@ ___ test_four_operations_three_took_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    ... output.strip() __ ALERT_MSG
+    ... output.s.. __ ALERT_MSG
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 3, 0, 3, 0, 4, 0, 5]))

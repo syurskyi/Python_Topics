@@ -16,7 +16,7 @@ ___ test_case1():
     list2 = [ 'a', 'b', 'c']
     list3 = [ 'red', 'blue', 'green']
 
-    result = zip(list1, list2, list3)
+    result = z..(list1, list2, list3)
     print(type(result))
 
     ___ e __ result:
@@ -29,7 +29,7 @@ ___ test_case2():
     list2 = [ 'a', 'b', 'c']
     list3 = [ 'red', 'blue']
 
-    result = zip(list1, list2, list3)
+    result = z..(list1, list2, list3)
     print(type(result))
 
     ___ e __ result:

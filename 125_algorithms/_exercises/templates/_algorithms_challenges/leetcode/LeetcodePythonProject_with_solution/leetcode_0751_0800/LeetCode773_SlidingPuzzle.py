@@ -9,12 +9,12 @@ class Solution(object):
         :type board: List[List[int]]
         :rtype: int
         """
-        s = ''.join([str(n) ___ n __ board[0]])+''.join([str(n) ___ n __ board[1]])
+        s = ''.join([s..(n) ___ n __ board[0]])+''.join([s..(n) ___ n __ board[1]])
         visited = set([s])
         target = '123450'
         queue = [s]
         res = 0
-        while queue:
+        w.... queue:
             size = l..(queue)
             ___ _ __ r..(size):
                 s = queue.pop(0)
@@ -23,8 +23,8 @@ class Solution(object):
                 i = s.index('0')
                 ___ j __ [i+1, i-1, i+3, i-3]:
                     __ j < 0 o. j > 5 o.\
-                        (i __ 2 and j __ 3) o.\
-                        (i __ 3 and j __ 2):
+                        (i __ 2 a.. j __ 3) o.\
+                        (i __ 3 a.. j __ 2):
                         continue
                     arr = l..(s)
                     arr[i], arr[j] = arr[j], arr[i]
@@ -50,7 +50,7 @@ class Solution(object):
         ]
         ___ board __ testCases:
             print('board')
-            print('\n'.join([str(row) ___ row __ board]))
+            print('\n'.join([s..(row) ___ row __ board]))
             result = self.slidingPuzzle(board)
             print('result: %s' % result)
             print('-='*30+'-')

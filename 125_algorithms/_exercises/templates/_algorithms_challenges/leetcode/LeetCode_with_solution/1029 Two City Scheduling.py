@@ -40,7 +40,7 @@ class Solution:
         a - b: incremental cost of flying A instead of B
         """
         A = [(a - b, a, b) ___ a, b __ costs]
-        A.sort()
+        A.s..()
         ret = 0
         remain = l..(A) // 2
         ___ _, a, b __ A:
@@ -61,7 +61,7 @@ class Solution:
         Error in the abs of difference
         """
         A = [(abs(a - b), a, b) ___ a, b __ costs]
-        A.sort(r.._T..
+        A.s..(r.._T..
         ret = 0
         remain = l..(A) // 2
         ___ _, a, b __ A:

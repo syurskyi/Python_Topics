@@ -27,7 +27,7 @@ STOPWORDS: set = {
     "doesn't", "only", "him", "mightn", "be", "mightn't", "a", "how", "no",
     "there", "that", "so", "we", "same", "mustn", "wasn't", "shouldn", "own",
 }
-GETTYSBURG: str = """Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+GETTYSBURG: s.. = """Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
 
 Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
 
@@ -39,17 +39,17 @@ class Corpora:
     """Add the inital variables along with creating any methods that
     will get this working as described in the bite's description.
     """
-    txt: str
+    txt: s..
     count: int = 5
-    tag: str = '#'
-    extra: List[str] = field(default_factory=l..)
-    stopwords: Set[str] = field(init=False)
+    tag: s.. = '#'
+    extra: List[s..] = field(default_factory=l..)
+    stopwords: Set[s..] = field(init=False)
 
     ___ __post_init__(self):
         self.stopwords = STOPWORDS
 
     @property
-    ___ cleaned(self) -> str:
+    ___ cleaned(self) -> s..:
         """Takes a corpus and cleans it up.
 
         * All text is made lowercase
@@ -65,7 +65,7 @@ class Corpora:
         r.. text
 
     @property
-    ___ metrics(self) -> List[Tuple[str, int]]:
+    ___ metrics(self) -> List[Tuple[s.., int]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used

@@ -13,13 +13,13 @@ class Solution(object):
       queue = deque([(si, sj, 0)])
       visited = set([(si, sj)])
       count = 1
-      while queue:
+      w.... queue:
         i, j, dist = queue.popleft()
         ___ di, dj __ dirs:
           newi, newj = i + di, j + dj
           __ (newi, newj) __ visited:
             continue
-          __ 0 <= newi < l..(grid) and 0 <= newj < l..(grid[0]) and grid[newi][newj] != 2:
+          __ 0 <= newi < l..(grid) a.. 0 <= newj < l..(grid[0]) a.. grid[newi][newj] != 2:
             __ grid[newi][newj] != 1:
               grid[newi][newj] -= dist + 1
               hit[newi][newj] += 1
@@ -51,7 +51,7 @@ class Solution(object):
     ans = float("-inf")
     ___ i __ r..(0, l..(grid)):
       ___ j __ r..(0, l..(grid[0])):
-        __ grid[i][j] < 0 and hit[i][j] __ count:
+        __ grid[i][j] < 0 a.. hit[i][j] __ count:
           ans = max(ans, grid[i][j])
           grid[i][j] = 0
     r.. -ans __ ans != float("-inf") ____ -1

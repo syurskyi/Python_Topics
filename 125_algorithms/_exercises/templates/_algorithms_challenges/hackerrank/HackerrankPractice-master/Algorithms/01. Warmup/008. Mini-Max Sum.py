@@ -2,5 +2,5 @@
 # Score: 10
 
 
-arr = l..(map(int, input().split()))
+arr = l..(map(int, input().s..()))
 print(s..(arr) - max(arr), s..(arr) - m..(arr))

@@ -21,7 +21,7 @@ ___ add_transactions(acct, values):
 ___ test_account_create(einstein):
     ... isi..(einstein, Account)
     ... einstein.balance __ 100
-    ... str(einstein) __ 'Account of Einstein with starting amount: 100'
+    ... s..(einstein) __ 'Account of Einstein with starting amount: 100'
     ... repr(einstein) __ "Account('Einstein', 100)"
     hector = Account('Hector')
     ... repr(hector) __ "Account('Hector', 0)"
@@ -40,7 +40,7 @@ ___ test_account_bad_transaction(socrates):
     ... socrates.balance __ 0
     with pytest.raises(ValueError) as exp:
         socrates.add_transaction(3.14)
-    ... 'please use int for amount' __ str(exp.value)
+    ... 'please use int for amount' __ s..(exp.value)
     ... socrates.balance __ 0
 
 
@@ -55,13 +55,13 @@ ___ test_account_comparisons(einstein, socrates):
 
 
 ___ test_account_merge_accounts(einstein, socrates):
-    ... einstein.balance __ 100 and socrates.balance __ 0
+    ... einstein.balance __ 100 a.. socrates.balance __ 0
     add_transactions(einstein, [50, -75])
     add_transactions(socrates, [10, 20, 30])
-    ... einstein.balance __ 75 and socrates.balance __ 60
+    ... einstein.balance __ 75 a.. socrates.balance __ 60
     pythagoras = einstein + socrates
     ... pythagoras.balance __ 135
-    ... str(pythagoras) __ 'Account of Einstein&Socrates with starting amount: 100'
+    ... s..(pythagoras) __ 'Account of Einstein&Socrates with starting amount: 100'
     ... l..(pythagoras) __ 5
     ... pythagoras[1] __ -75
 
@@ -73,4 +73,4 @@ ___ test_account_bad_merge_accounts(einstein, socrates):
     ... kelvin.balance __ 20
     armstrong = kelvin + einstein + socrates
     ... armstrong.balance __ 155
-    ... str(armstrong) __ 'Account of Kelvin&Einstein&Socrates with starting amount: 120'
+    ... s..(armstrong) __ 'Account of Kelvin&Einstein&Socrates with starting amount: 120'

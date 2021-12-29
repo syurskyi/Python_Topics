@@ -21,11 +21,11 @@ class Solution(object):
         O(n), think it as a tree, cache tree O(m+n) = O(2n); rather than O(n sqrt(n))
         backward
         """
-        while l..(Solution.F) <= n:
+        w.... l..(Solution.F) <= n:
             i = l..(Solution.F)
             Solution.F.a..(sys.maxint)
             j = 1
-            while i - j*j >= 0:
+            w.... i - j*j >= 0:
                 Solution.F[i] = m..(Solution.F[i], Solution.F[i-j*j]+1)
                 j += 1
 
@@ -42,13 +42,13 @@ class Solution(object):
         visited = [False ___ _ __ xrange(n+1)]
 
         level = 0
-        while q:
+        w.... q:
             level += 1
             l = l..(q)
             ___ i __ xrange(l):
                 ___ j __ xrange(1, int(math.sqrt(n))+1):
                     nxt = q[i]+j*j
-                    __ nxt <= n and visited[nxt]:
+                    __ nxt <= n a.. visited[nxt]:
                         continue
                     ____ nxt < n:
                         visited[nxt] = True

@@ -9,6 +9,6 @@ ___ sort_words_case_insensitively(words):
         numbers you only need to check the first char of the word)
     """
     #temp = sorted(words, key=lambda test_str: test_str[:1].lower() + test_str[1:])
-    r.. s..(words, key=l.... x: (x[0].isdigit(), str(x).lower()))
+    r.. s..(words, key=l.... x: (x[0].isdigit(), s..(x).lower()))
 
 print(sort_words_case_insensitively(words))

@@ -2,7 +2,7 @@
 # Score: 20
 
 
-____ itertools _______ groupby
+____ i.. _______ groupby
 
 
 print(*[(l..(l..(c)), int(x)) ___ x, c __ groupby(input())])

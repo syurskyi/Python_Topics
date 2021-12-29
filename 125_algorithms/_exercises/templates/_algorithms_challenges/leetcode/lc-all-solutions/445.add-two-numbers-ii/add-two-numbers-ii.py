@@ -15,7 +15,7 @@ class Solution(object):
     ___ r(root):
       pre = N..
       cur = root
-      while cur:
+      w.... cur:
         tmp = cur.next
         cur.next = pre
         pre = cur
@@ -26,7 +26,7 @@ class Solution(object):
     p1, p2 = r(l1), r(l2)
     pre = N..
     carry = 0
-    while p1 and p2:
+    w.... p1 a.. p2:
       p.next = ListNode(p1.val + p2.val + carry)
       carry = 1 __ p.next.val > 9 ____ 0
       p.next.val = p.next.val % 10
@@ -34,7 +34,7 @@ class Solution(object):
       p2 = p2.next
       p = p.next
     pp = p1 o. p2
-    while pp:
+    w.... pp:
       p.next = ListNode(pp.val + carry)
       carry = 1 __ p.next.val > 9 ____ 0
       p.next.val = p.next.val % 10

@@ -16,11 +16,11 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: str = text) -> l..:
+___ slice_and_dice(text: s.. = text) -> l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     results    # list
-    ___ line __ text.strip().splitlines():
+    ___ line __ text.s...splitlines():
         line = line.lstrip()
 
         __ line[0] n.. __ ascii_lowercase:

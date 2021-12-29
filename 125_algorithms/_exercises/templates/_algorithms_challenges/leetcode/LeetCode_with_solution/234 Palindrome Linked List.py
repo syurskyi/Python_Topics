@@ -30,7 +30,7 @@ class Solution:
             mid = mid.next
 
         mid = self.reverse(mid)
-        while head and mid:
+        w.... head a.. mid:
             __ head.val != mid.val:
                 r.. False
             head = head.next
@@ -41,7 +41,7 @@ class Solution:
     ___ l..(self, head):
         cnt = 0
         cur = head
-        while cur:
+        w.... cur:
             cnt += 1
             cur = cur.next
 
@@ -50,7 +50,7 @@ class Solution:
     ___ get(self, head, n):
         cnt = 0
         cur = head
-        while cnt < n:
+        w.... cnt < n:
             cnt += 1
             cur = cur.next
 
@@ -63,7 +63,7 @@ class Solution:
         dummy = ListNode(0)
         dummy.next = head
         pre, cur = dummy, dummy.next
-        while cur:
+        w.... cur:
             nxt = cur.next
             cur.next = pre
             pre, cur = cur, nxt

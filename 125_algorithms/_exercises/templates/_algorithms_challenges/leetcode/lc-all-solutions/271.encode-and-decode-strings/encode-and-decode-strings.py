@@ -7,7 +7,7 @@ class Codec:
     """
     ret = ""
     ___ s __ strs:
-      ret += str(l..(s)) + "|" + s
+      ret += s..(l..(s)) + "|" + s
 
     r.. ret
 
@@ -19,7 +19,7 @@ class Codec:
     """
     ret    # list
     start = end = 0
-    while end < l..(s):
+    w.... end < l..(s):
       __ s[end] != "|":
         end += 1
       ____:

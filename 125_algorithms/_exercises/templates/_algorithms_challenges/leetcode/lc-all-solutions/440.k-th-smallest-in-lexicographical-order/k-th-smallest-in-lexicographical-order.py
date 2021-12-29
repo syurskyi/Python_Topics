@@ -35,7 +35,7 @@ class Solution(object):
       gap = 0
       start = ans
       end = start + 1
-      while start <= n:
+      w.... start <= n:
         gap += max(0, m..(n + 1, end) - start)
         start *= 10
         end *= 10
@@ -43,7 +43,7 @@ class Solution(object):
 
     ans = 1
     k -= 1
-    while k > 0:
+    w.... k > 0:
       gap = getGap(n, ans)
       __ gap <= k:
         ans += 1

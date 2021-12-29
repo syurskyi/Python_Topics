@@ -1,7 +1,7 @@
 x  i..(input("Insert first number: "))
 y  i..(input("Insert second number: "))
 
-w___ x ! 0 and y ! 0:
+w___ x ! 0 a.. y ! 0:
     __ x > y:
         x % y
     ____:

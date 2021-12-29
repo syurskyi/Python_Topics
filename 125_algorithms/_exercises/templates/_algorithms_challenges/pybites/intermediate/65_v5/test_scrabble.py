@@ -26,7 +26,7 @@ ___ max_word_value(words):
     ('G, A, R, Y, T, E, V', 'garvey'),
 ])
 ___ test_max_word(draw, expected):
-    draw = draw.split(', ')
+    draw = draw.s..(', ')
     words = get_possible_dict_words(draw)
     __ l..(expected) > 1:
         ... max_word_value(words) __ expected

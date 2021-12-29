@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: List[List[int]]
     """
     res    # list
-    nums.sort()
+    nums.s..()
 
     ___ dfs(nums, res, path, visited):
       __ l..(path) __ l..(nums):
@@ -15,7 +15,7 @@ class Solution(object):
       ___ i __ r..(l..(nums)):
         __ i __ visited:
           continue
-        __ i > 0 and nums[i] __ nums[i - 1] and i - 1 n.. __ visited:
+        __ i > 0 a.. nums[i] __ nums[i - 1] a.. i - 1 n.. __ visited:
           continue
         visited |= {i}
         path.a..(nums[i])

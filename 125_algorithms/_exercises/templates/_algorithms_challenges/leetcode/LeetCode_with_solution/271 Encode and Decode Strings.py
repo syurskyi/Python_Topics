@@ -14,7 +14,7 @@ class Codec(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: str(l..(x))+"/"+x, strs)
+        strs = map(l.... x: s..(l..(x))+"/"+x, strs)
         r.. reduce(l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode(self, s):
@@ -26,7 +26,7 @@ class Codec(object):
         """
         strs    # list
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             j = s.index("/", i)
             l = int(s[i:j])
             strs.a..(s[j+1:j+1+l])
@@ -45,7 +45,7 @@ class CodecMethod2(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: x.replace("\n", "\n\n")+"_\n_", strs)
+        strs = map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
         r.. reduce(l.... x, y: x+y, strs, "")
 
     ___ decode(self, s):
@@ -55,9 +55,9 @@ class CodecMethod2(object):
         :type s: str
         :rtype: List[str]
         """
-        strs = s.split("_\n_")
+        strs = s.s..("_\n_")
         strs = strs[:-1]  # clear the trailing delimiter
-        r.. map(l.... x: x.replace("\n\n", "\n"), strs)
+        r.. map(l.... x: x.r..("\n\n", "\n"), strs)
 
 
 class CodecError(object):
@@ -70,7 +70,7 @@ class CodecError(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: x.replace("\x00", "\\x00"), strs)
+        strs = map(l.... x: x.r..("\x00", "\\x00"), strs)
         ret = ""
         ___ s __ strs:
             ret += s+"\x00"
@@ -87,6 +87,6 @@ class CodecError(object):
             r.. []
 
         s = s[:-1]  # traiing \x00
-        strs = s.split("\x00")
-        strs = map(l.... x: x.replace("\\x00", "\x00"), strs)
+        strs = s.s..("\x00")
+        strs = map(l.... x: x.r..("\\x00", "\x00"), strs)
         r.. strs

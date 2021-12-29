@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: bool
     """
     start, end = 0, l..(s) - 1
-    while start < end:
+    w.... start < end:
       __ n.. s[start].isalnum():
         start += 1
         continue

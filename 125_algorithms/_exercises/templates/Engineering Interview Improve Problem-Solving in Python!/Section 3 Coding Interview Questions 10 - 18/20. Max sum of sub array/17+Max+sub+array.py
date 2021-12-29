@@ -12,7 +12,7 @@ ___ max_sub_array(l):
     sum_of_sub_array  0
     new_sub_array_start  0
     sum_of_new_sub_array  0
-    ___ index,val __ enumerate(l):
+    ___ index,val __ e..(l):
         __ val < 0:
             # figure out the sum
             __ sum_of_sub_array < sum_of_new_sub_array:

@@ -14,7 +14,7 @@ class Solution:
         slow = head
         fast = head
         prev = head  # Previous node to slow
-        while fast __ n.. N.. and fast.next __ n.. N..
+        w.... fast __ n.. N.. a.. fast.next __ n.. N..
             prev = slow
             slow = slow.next
             fast = fast.next.next
@@ -35,7 +35,7 @@ class Solution:
             r.. l1
         res = N..
         end = res
-        while l1 __ n.. N.. and l2 __ n.. N..
+        w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
                 small = l1
                 l1 = l1.next

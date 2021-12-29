@@ -39,12 +39,12 @@ class TreeNode:
 
 class Solution:
     ___ mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
-        __ n.. t1 and n.. t2:
+        __ n.. t1 a.. n.. t2:
             r..
 
         node = TreeNode(0)
-        node.val += t1 and t1.val o. 0
-        node.val += t2 and t2.val o. 0
-        node.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
-        node.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
+        node.val += t1 a.. t1.val o. 0
+        node.val += t2 a.. t2.val o. 0
+        node.left = self.mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
+        node.right = self.mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
         r.. node

@@ -31,17 +31,17 @@ ___ get_pycon_speaker_first_names(soup_ N..
     first_names    # list
     soup_speakers = soup.find_all("span", class_="speaker")
     ___ speaker __ soup_speakers:
-        speaker_clean = speaker.get_text().strip()
+        speaker_clean = speaker.get_text().s..
         __ speaker_clean.find(",") > 0:
-            ___ speaker __ speaker_clean.split(","):
-                first_name = speaker.strip().split(" ")[0].strip()
+            ___ speaker __ speaker_clean.s..(","):
+                first_name = speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)
         ____ speaker_clean.find("/") > 0:
-            ___ speaker __ speaker_clean.split("/"):
-                first_name = speaker.strip().split(" ")[0].strip()
+            ___ speaker __ speaker_clean.s..("/"):
+                first_name = speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)
         ____:
-            first_names.a..(speaker_clean.split(" ")[0])
+            first_names.a..(speaker_clean.s..(" ")[0])
     r.. first_names
 
 

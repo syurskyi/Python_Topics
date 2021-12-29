@@ -26,7 +26,7 @@ ___ test_four_day_weekends_workdays(capfd):
 ___ test_four_day_weekends_invalid_call():
     with pytest.raises(ValueError) as e:
         four_day_weekends(True)
-    ... str(e.value) __ pto.ERROR_MSG
+    ... s..(e.value) __ pto.ERROR_MSG
 
 
 ___ test_four_day_weekends_invalid_call_custom_error_message():
@@ -34,7 +34,7 @@ ___ test_four_day_weekends_invalid_call_custom_error_message():
     pto.ERROR_MSG = new_msg
     with pytest.raises(ValueError) as e:
         four_day_weekends(True)
-    ... str(e.value) __ new_msg
+    ... s..(e.value) __ new_msg
 
 
 ___ test_four_day_weekends_october(capfd):

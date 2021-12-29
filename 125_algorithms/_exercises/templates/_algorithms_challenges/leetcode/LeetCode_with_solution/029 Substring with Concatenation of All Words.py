@@ -37,7 +37,7 @@ class Solution:
         window_t = -1  # [0, t)
         window    # list
         i = 0
-        while i<=l..(S)-3:
+        w.... i<=l..(S)-3:
             # test window
             __ l..(window)__l:
                 result.a..(window_t-l*k)
@@ -60,7 +60,7 @@ class Solution:
                 working_list = l..(L)
 
 
-            ____ word __ L and word n.. __ working_list:
+            ____ word __ L a.. word n.. __ working_list:
                 window = window[window.index(word)+1:]
                 window.a..(word)
                 # working_list.remove(word)
@@ -111,7 +111,7 @@ class Solution:
         win_e = -1  # [0, t), no need start_ptr
         working_win    # list
         i = 0
-        while i<l..(S):
+        w.... i<l..(S):
             # test window
             __ l..(working_win)__l:
                 ret.a..(win_e-l*k)
@@ -124,7 +124,7 @@ class Solution:
 
             word = S[i:i+k]
             # case 1, match one in L
-            __ word __ Lmap and Lmap[word]>0:
+            __ word __ Lmap a.. Lmap[word]>0:
                 working_win.a..(word)
                 Lmap[word] -= 1
                 win_e = i+k
@@ -142,7 +142,7 @@ class Solution:
                 Lmap = d..(Lmap_original)
 
             # case 3, mach one in L not used up
-            ____ word __ Lmap and Lmap[word]__0:
+            ____ word __ Lmap a.. Lmap[word]__0:
                 ___ j __ xrange(0, working_win.index(word)+1):  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]

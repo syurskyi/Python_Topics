@@ -11,9 +11,9 @@ ___ bulls_and_crows():
         ___ num __ number[::]:
             __ num __ secret_number[count]:
                 place_match += 1
-            __ num __ secret_number and num != secret_number[count]:
+            __ num __ secret_number a.. num != secret_number[count]:
                 number_match += 1
             count += 1
-        answer.a..('{0}-{1}'.format(place_match, number_match))
+        answer.a..('{0}-{1}'.f..(place_match, number_match))
     print(' '.join(answer))
 bulls_and_crows()

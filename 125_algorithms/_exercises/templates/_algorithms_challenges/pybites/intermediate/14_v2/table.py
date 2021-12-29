@@ -11,8 +11,8 @@ ___ generate_table(*args):
     
 
 
-    ___ combos __ zip(*args):
-        yield SEPARATOR.join(map(str,combos))
+    ___ combos __ z..(*args):
+        y.. SEPARATOR.join(map(s..,combos))
 
 
 

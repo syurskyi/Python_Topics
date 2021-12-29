@@ -13,7 +13,7 @@ class Solution:
             r.. head
         h = head
         n = 0
-        while h __ n.. N..
+        w.... h __ n.. N..
             n += 1
             h = h.next
         num_groups = n / k
@@ -27,7 +27,7 @@ class Solution:
         temp = N..
         temp_end = N..
         i = 1
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             __ i <= last_group:
                 # Appended current node to `temp` list

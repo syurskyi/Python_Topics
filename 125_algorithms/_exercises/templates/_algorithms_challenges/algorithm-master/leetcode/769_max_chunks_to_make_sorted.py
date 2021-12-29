@@ -59,7 +59,7 @@ class Solution:
         ___ i __ r..(n):
             M[i] = nums[i]
 
-            __ i > 0 and M[i - 1] > M[i]:
+            __ i > 0 a.. M[i - 1] > M[i]:
                 M[i] = M[i - 1]
 
         ___ i __ r..(n):

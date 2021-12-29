@@ -30,7 +30,7 @@ class Solution:
                 _F[sr] = _F.get(sr, 0) + 1
                 __ _F[sr] <= F[sr]:
                     cnt += 1
-                while _F[sr] > F[sr]:
+                w.... _F[sr] > F[sr]:
                     sl = s[left:left + k]
                     __ _F[sl] __ F[sl]:
                         cnt -= 1

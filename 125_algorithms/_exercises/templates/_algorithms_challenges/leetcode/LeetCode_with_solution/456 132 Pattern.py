@@ -36,9 +36,9 @@ class Solution:
         stack    # list  # List[Interval]
         mini = float('Inf')
         ___ v __ nums:
-            while stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
+            w.... stack a.. stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()
-            __ stack and stack[-1][0] < v:
+            __ stack a.. stack[-1][0] < v:
                 r.. True
             mini = m..(mini, v)
             stack.a..((mini, v))

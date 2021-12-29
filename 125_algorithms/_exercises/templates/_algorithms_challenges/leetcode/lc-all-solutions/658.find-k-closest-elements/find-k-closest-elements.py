@@ -10,7 +10,7 @@ class Solution(object):
     :rtype: List[int]
     """
     left = right = bisect.bisect_left(arr, x)
-    while right - left < k:
+    w.... right - left < k:
       __ left __ 0:
         r.. arr[:k]
       __ right __ l..(arr):

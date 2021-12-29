@@ -11,19 +11,19 @@ class Solution(object):
         :rtype: str
         """
         hashmap = self.helper(formula)
-        arr = s..([str(c)+str(count) __ count > 1 ____ str(c) ___ c, count __ hashmap.items()])
+        arr = s..([s..(c)+s..(count) __ count > 1 ____ s..(c) ___ c, count __ hashmap.items()])
         res = ''.join(arr)
         r.. res
     
     ___ helper(self, s):
         hashmap = {}
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i] __ '(':
                 count0 = 1
                 i += 1
                 prev = i
-                while i < l..(s) and count0 > 0:
+                w.... i < l..(s) a.. count0 > 0:
                     __ s[i] __ ')':
                         count0 -= 1
                     ____ s[i] __ '(':
@@ -34,13 +34,13 @@ class Solution(object):
                     count = 1
                 ____:
                     prev = i
-                    while i < l..(s) and s[i].isdigit():
+                    w.... i < l..(s) a.. s[i].isdigit():
                         i += 1
                     count = int(s[prev:i])
                 ___ elem, freq __ hashmap0.items():
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____:
-                __ i+1 < l..(s) and re.match('[a-z]', s[i+1]):
+                __ i+1 < l..(s) a.. re.match('[a-z]', s[i+1]):
                     elem = s[i:i+2]
                     i+=1
                 ____:
@@ -50,7 +50,7 @@ class Solution(object):
                     count = 1
                 ____:
                     prev = i
-                    while i < l..(s) and s[i].isdigit():
+                    w.... i < l..(s) a.. s[i].isdigit():
                         i += 1
                     count = int(s[prev:i])
                 hashmap[elem] = hashmap.get(elem, 0)+count

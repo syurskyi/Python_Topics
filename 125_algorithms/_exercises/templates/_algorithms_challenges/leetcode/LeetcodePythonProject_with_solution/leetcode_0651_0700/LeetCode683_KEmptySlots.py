@@ -19,7 +19,7 @@ class Solution(object):
         res = float('inf')
         ___ i __ r..(n):
             __ right >= n: break
-            __ days[i] __ days[right] and i __ right:
+            __ days[i] __ days[right] a.. i __ right:
                 res = m..(res, max(days[left], days[right]))
             __ days[i] < days[left] o. days[i] < days[right]:
                 left = i

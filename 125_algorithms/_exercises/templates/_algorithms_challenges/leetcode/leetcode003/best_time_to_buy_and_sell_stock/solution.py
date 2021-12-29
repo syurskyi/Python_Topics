@@ -18,7 +18,7 @@ class Solution(object):
             r.. 0
         max_profit = 0
         min_price = prices[0]
-        ___ i, p __ enumerate(prices):
+        ___ i, p __ e..(prices):
             max_profit = max(max_profit, (p - min_price))
             min_price = m..(min_price, p)
         r.. max_profit

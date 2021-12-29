@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ random
 ____ string _______ ascii_uppercase
 
@@ -6,7 +6,7 @@ ACTIONS = ['draw_card', 'play_again',
            'interchange_cards', 'change_turn_direction']
 NUMBERS = r..(1, 5)
 
-PawCard = namedtuple('PawCard', 'card action')
+PawCard = n..('PawCard', 'card action')
 
 ___ create_paw_deck(n=8):
 

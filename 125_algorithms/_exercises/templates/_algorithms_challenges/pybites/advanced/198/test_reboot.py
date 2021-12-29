@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 
 ____ reboot _______ calc_max_uptime, MAC1
 

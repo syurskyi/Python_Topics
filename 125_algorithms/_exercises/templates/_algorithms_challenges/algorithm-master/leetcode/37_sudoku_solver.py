@@ -27,9 +27,9 @@ class Solution:
             r.. self.dfs(board, _x, _y)
 
         ___ i __ r..(1, n + 1):
-            board[x][y] = str(i)
+            board[x][y] = s..(i)
             __ (
-                self.is_valid(board, x, y) and
+                self.is_valid(board, x, y) a..
                 self.dfs(board, _x, _y)
             ):
                 r.. True
@@ -44,9 +44,9 @@ class Solution:
         n = l..(board)
 
         ___ i __ r..(n):
-            __ y != i and board[x][y] __ board[x][i]:
+            __ y != i a.. board[x][y] __ board[x][i]:
                 r.. False
-            __ x != i and board[x][y] __ board[i][y]:
+            __ x != i a.. board[x][y] __ board[i][y]:
                 r.. False
 
         r = x // 3 * 3
@@ -54,7 +54,7 @@ class Solution:
 
         ___ i __ r..(r, r + 3):
             ___ j __ r..(c, c + 3):
-                __ x __ i and y __ j:
+                __ x __ i a.. y __ j:
                     continue
                 __ board[x][y] __ board[i][j]:
                     r.. False

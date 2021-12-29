@@ -4,7 +4,7 @@ class Solution:
       r.. N..
     pa = headA
     pb = headB
-    while pa __ n.. pb:
+    w.... pa __ n.. pb:
       pa = headB __ pa __ N.. ____ pa.next
       pb = headA __ pb __ N.. ____ pb.next
     r.. pa

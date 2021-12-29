@@ -37,14 +37,14 @@ class Solution:
         """
         l = 0
         cur = head
-        while cur:
+        w.... cur:
             l += 1
             cur = cur.next
 
         mid = l // 2 + 1
         cur_l = 0
         cur = head
-        while cur:
+        w.... cur:
             cur_l += 1
             __ cur_l __ mid:
                 r.. cur

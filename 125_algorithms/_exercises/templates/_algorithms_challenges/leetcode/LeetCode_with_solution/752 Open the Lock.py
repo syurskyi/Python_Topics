@@ -50,7 +50,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ openLock(self, deadends: List[str], target: str) -> int:
+    ___ openLock(self, deadends: List[s..], target: s..) -> int:
         """
         bfs
         """
@@ -65,7 +65,7 @@ class Solution:
 
         step = 0
         visited = set(q)
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ destination:
@@ -75,7 +75,7 @@ class Solution:
                         nxt_lst = l..(e)  # copy
                         nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
                         nxt = tuple(nxt_lst)
-                        __ nxt n.. __ visited and nxt n.. __ deadends_set:
+                        __ nxt n.. __ visited a.. nxt n.. __ deadends_set:
                             visited.add(nxt)
                             cur_q.a..(nxt)
 

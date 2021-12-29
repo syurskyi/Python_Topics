@@ -11,8 +11,8 @@ ___ getMoneySpent(keyboards, drives, b):
     r.. result
 
 
-b, n, m = map(int, input().split())
-keyboards = l..(map(int, input().rstrip().split()))
-drives = l..(map(int, input().rstrip().split()))
+b, n, m = map(int, input().s..())
+keyboards = l..(map(int, input().rstrip().s..()))
+drives = l..(map(int, input().rstrip().s..()))
 moneySpent = getMoneySpent(keyboards, drives, b)
 print(moneySpent)

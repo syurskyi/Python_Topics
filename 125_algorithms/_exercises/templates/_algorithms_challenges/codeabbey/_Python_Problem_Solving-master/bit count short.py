@@ -10,9 +10,9 @@ ___ bitCount():
 
         data = int(num) % 0x100000000
 
-        bits = format(data, 'b')
+        bits = f..(data, 'b')
 
-        answer.a..(str(bits.c.. '1')))
+        answer.a..(s..(bits.c.. '1')))
 
     print(' '.join(answer))
 

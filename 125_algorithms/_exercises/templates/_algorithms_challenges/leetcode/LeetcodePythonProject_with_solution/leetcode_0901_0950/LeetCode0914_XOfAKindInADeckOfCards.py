@@ -10,7 +10,7 @@ class Solution(object):
             hashmap[num] = hashmap.get(num, 0)+1
         counts = l..(hashmap.values())
         minVal = m..(hashmap.values())
-        while counts:
+        w.... counts:
             __ 1 __ counts:
                 r.. False
             counts = [c - minVal ___ c __ counts __ c > minVal]

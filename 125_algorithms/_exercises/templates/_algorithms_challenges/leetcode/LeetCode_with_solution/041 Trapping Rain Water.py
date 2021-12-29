@@ -22,19 +22,19 @@ class Solution:
         right_maxs = [0 ___ _ __ A]  # on the right including itself
 
         left_max = 0
-        ___ ind, val __ enumerate(A):
+        ___ ind, val __ e..(A):
             left_max = max(left_max, val)
             left_maxs[ind] = left_max
 
         right_max = 0
         # for ind, val in enumerate(reversed(A)):  # ind incorrect
-        ___ ind, val __ reversed(l..(enumerate(A))):
+        ___ ind, val __ reversed(l..(e..(A))):
             right_max = max(right_max, val)
             right_maxs[ind] = right_max
 
         # calculate the volume
         volume = 0
-        ___ ind, val __ enumerate(A):
+        ___ ind, val __ e..(A):
             volume += max(0, m..(left_maxs[ind], right_maxs[ind]) - val)
 
         r.. volume

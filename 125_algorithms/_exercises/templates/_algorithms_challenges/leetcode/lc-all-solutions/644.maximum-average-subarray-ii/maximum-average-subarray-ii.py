@@ -25,7 +25,7 @@ class Solution(object):
 
     lo = m..(nums)
     hi = max(nums)
-    while hi - lo > 1e-5:
+    w.... hi - lo > 1e-5:
       mid = (hi + lo) / 2.
       __ valid(nums, mid, k):
         lo = mid
@@ -38,7 +38,7 @@ class Solution(object):
     _______ numpy as np
     lo, hi = m..(nums), max(nums)
     nums = np.array([0] + nums)
-    while hi - lo > 1e-5:
+    w.... hi - lo > 1e-5:
       mid = nums[0] = (lo + hi) / 2.
       sums = (nums - mid).cumsum()
       mins = np.minimum.accumulate(sums)

@@ -38,7 +38,7 @@ class Solution(object):
     res    # list
     upIdx = 0
     downIdx = 0
-    while upIdx < l..(up) and downIdx < l..(down):
+    w.... upIdx < l..(up) a.. downIdx < l..(down):
       upTop = up[upIdx]
       downTop = down[downIdx]
 

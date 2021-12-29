@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: int
         """
         res = 0
-        while n > 0:
+        w.... n > 0:
             __ n & 1 __ 1:
                 res += 1
             n >>= 1

@@ -20,7 +20,7 @@ class Solution(object):
         __ n.. root: r.. root
         stack = [root]
         prev = TreeNode(-1)
-        while stack:
+        w.... stack:
             node = stack.pop()
             prev.right = node
             __ node.right:

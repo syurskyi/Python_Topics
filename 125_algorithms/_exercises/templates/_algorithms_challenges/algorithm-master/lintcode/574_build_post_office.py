@@ -47,7 +47,7 @@ class Solution:
         __ n.. xs o. l..(xs) __ m * n:
             r.. -1
 
-        ys.sort()
+        ys.s..()
 
         k = l..(xs) + 1
         psx, psy = [0] * k, [0] * k  # prefix sum
@@ -80,7 +80,7 @@ class Solution:
 
         left, right = 0, n - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
 
             __ axis[mid] < pos:
@@ -143,7 +143,7 @@ class Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m a.. 0 <= _y < n):
                     continue
                 __ (_x, _y) __ visited:
                     continue
@@ -206,7 +206,7 @@ class Solution:
         visited = set(queue)
         step = 0
 
-        while queue:
+        w.... queue:
             step += 1
 
             ___ x, y __ queue:
@@ -217,7 +217,7 @@ class Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m and 0 <= _y < n):
+                    __ n.. (0 <= _x < m a.. 0 <= _y < n):
                         continue
                     __ (_x, _y) __ visited:
                         continue

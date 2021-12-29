@@ -15,7 +15,7 @@ class Solution(object):
       r.. 0
     left = self.minDepth(root.left)
     right = self.minDepth(root.right)
-    __ n.. left and n.. right:
+    __ n.. left a.. n.. right:
       r.. 1
     ____ n.. left:
       r.. right + 1

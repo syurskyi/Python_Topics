@@ -51,7 +51,7 @@ class Solution:
 
         # prefix sum
         s = [0] * (l..(nums) + 1)
-        while right - left > EPS:
+        w.... right - left > EPS:
             mid = (left + right) / 2.0
 
             __ self.is_valid(nums, k, mid, s):

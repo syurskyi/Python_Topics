@@ -57,7 +57,7 @@ class Solution:
             _x = x + self.row_vector[d]
             _y = y + self.col_vector[d]
             __ 0 <= _x < self.m \
-                    and 0 <= _y < self.n \
-                    and self.board[_x][_y] __ parent['children']:
+                    a.. 0 <= _y < self.n \
+                    a.. self.board[_x][_y] __ parent['children']:
                 self.find(_x, _y, parent, result)
         self.board[x][y] = char

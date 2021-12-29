@@ -16,7 +16,7 @@ class Robot(object):
 
     ___ suffix(self):
         r.. ''.join([
-            str(random.choice(r..(0, 10)))
+            s..(random.choice(r..(0, 10)))
             ___ _ __ r..(0, 3)
         ])
 
@@ -24,7 +24,7 @@ class Robot(object):
         __ n.. self._name:
 
             # Collision detection
-            while True:
+            w... T...
                 self._name = self.prefix() + self.suffix()
                 __ self._name n.. __ self._past_names:
                     self._past_names.add(self._name)

@@ -21,9 +21,9 @@ class Solution(object):
                 __ s[i] __ s[j]:
                     low = i+1
                     high = j-1
-                    while low <= high and s[low] != s[j]:
+                    w.... low <= high a.. s[low] != s[j]:
                         low += 1
-                    while low <= high and s[high] != s[j]:
+                    w.... low <= high a.. s[high] != s[j]:
                         high -= 1
                     __ low > high:
                         # 'aba'

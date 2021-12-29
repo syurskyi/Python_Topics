@@ -21,7 +21,7 @@ class Solution(object):
             r.. head
         length = 0
         node = head
-        while node:
+        w.... node:
             node = node.next
             length +=1
         node = head
@@ -29,12 +29,12 @@ class Solution(object):
         __ k __ 0: r.. head
         prev = N..
         count = 0
-        while count < length-k:
+        w.... count < length-k:
             prev = node
             node = node.next
             count+=1
         tail = node
-        while tail.next:
+        w.... tail.next:
             tail = tail.next
         tail.next = head
         prev.next = N..

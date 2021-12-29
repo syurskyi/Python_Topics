@@ -28,7 +28,7 @@ class Solution(object):
     ___ dfs(self, result, elem, root, sumVal):
         __ n.. root:
             r..
-        __ sumVal __ 0 and n.. root.left and n.. root.right:
+        __ sumVal __ 0 a.. n.. root.left a.. n.. root.right:
             result.a..(l..(elem))
             r..
         __ root.left:

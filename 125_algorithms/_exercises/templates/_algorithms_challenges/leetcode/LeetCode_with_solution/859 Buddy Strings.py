@@ -37,7 +37,7 @@ USED = True
 
 
 class Solution:
-    ___ buddyStrings(self, A: str, B: str) -> bool:
+    ___ buddyStrings(self, A: s.., B: s..) -> bool:
         """
         iterate
         """

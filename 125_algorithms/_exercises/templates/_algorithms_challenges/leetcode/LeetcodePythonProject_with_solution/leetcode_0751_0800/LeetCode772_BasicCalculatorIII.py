@@ -13,11 +13,11 @@ class Solution(object):
         l2, o2 = 1, 1
         deque    # list
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             c = s[i]
             __ c.isdigit():
                 num = ord(c)-ord('0')
-                while i+1 < l..(s) and s[i+1].isdigit():
+                w.... i+1 < l..(s) a.. s[i+1].isdigit():
                     i += 1
                     num = num*10+ord(s[i])-ord('0')
                 l2 = l2*num __ o2__1 ____ l2//num

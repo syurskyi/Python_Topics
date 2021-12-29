@@ -23,7 +23,7 @@ class Solution(object):
             ___ r __ r..(m):
                 ___ c __ r..(n):
                     ___ nr, nc __ (r+1, c), (r-1, c), (r, c+1), (r, c-1):
-                        __ 0 <= nr < m and 0 <= nc < n:
+                        __ 0 <= nr < m a.. 0 <= nc < n:
                             tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
                         ____:
                             result = (result+count[r][c])%mod

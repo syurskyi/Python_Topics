@@ -9,7 +9,7 @@ class Solution:
 
         left, right = 0, l..(nums) - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
 
             __ nums[mid] < nums[mid + 1]:

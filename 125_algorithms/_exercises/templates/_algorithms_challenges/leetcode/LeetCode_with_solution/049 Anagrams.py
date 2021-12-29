@@ -12,16 +12,16 @@ class Solution:
         :return: a list of strings
         """
         temp = l..(strs)
-        ___ ind, string __ enumerate(temp):
-            __ string and string!="":  # avoid case of empty string
+        ___ ind, string __ e..(temp):
+            __ string a.. string!="":  # avoid case of empty string
                 string = [char ___ char __ string]
-                string.sort()
+                string.s..()
                 string = "".join(string)
                 temp[ind] = string
 
 
         hash_map = {}
-        ___ ind, string __ enumerate(temp):
+        ___ ind, string __ e..(temp):
             indexes = hash_map.get(string, [])
             indexes.a..(ind)  # side-effect
             hash_map[string] = indexes
@@ -40,7 +40,7 @@ class Solution:
         :return: a list of strings
         """
         hash_map = {}
-        ___ ind, string __ enumerate(strs):
+        ___ ind, string __ e..(strs):
             string = "".join(s..(string))  # string reversing and sorting are a little different
             __ string n.. __ hash_map:
                 hash_map[string] = [ind]

@@ -28,7 +28,7 @@ class Team:
         self.losses += 1
 
     ___ __str__(self):
-        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
+        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.f..(
             self.name, self.matches_played, self.wins, self.draws, self.losses, self.points)
 
 
@@ -48,7 +48,7 @@ class Tournament:
     ___ results_table(self):
         table = [self.table_header()]
         ___ team __ self.sorted_teams():
-            table.a..(str(team))
+            table.a..(s..(team))
         r.. "\n".join(table)
 
     ___ sorted_teams(self):
@@ -58,8 +58,8 @@ class Tournament:
         r.. alphabetic_descending_points
 
     ___ parse(self, results):
-        ___ result __ results.split("\n"):
-            team_a, team_b, outcome = result.split(self.RESULT_SEPERATOR)
+        ___ result __ results.s..("\n"):
+            team_a, team_b, outcome = result.s..(self.RESULT_SEPERATOR)
             self.maybe_initialize_teams(team_a, team_b)
             self.tally_outcome(team_a, team_b, outcome)
 
@@ -92,7 +92,7 @@ class Tournament:
             self._teams[name] = Team(name)
 
     ___ table_header(self):
-        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
+        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.f..(
             *self.COLUMN_HEADERS)
 
 

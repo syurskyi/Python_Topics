@@ -22,9 +22,9 @@ ___ _get_winner(computer_choice, player_choice):
     __ computer_choice __ player_choice:
         r.. tie
     __ player_choice __ defeated_by[computer_choice]:
-        r.. win.format(player_choice, computer_choice)
+        r.. win.f..(player_choice, computer_choice)
     ____:
-        r.. lose.format(computer_choice,player_choice)
+        r.. lose.f..(computer_choice,player_choice)
 
 
 ___ game():
@@ -32,8 +32,8 @@ ___ game():
        send method and get a random move from computer (_get_computer_move).
        Raise a StopIteration exception if user value received = 'q'.
        Check who wins with _get_winner and print its return output."""
-    while True:
-        player_choice = (yield '')
+    w... T...
+        player_choice = (y.. '')
         __ player_choice __ 'q':
             raise StopIteration
         computer_choice = _get_computer_move()

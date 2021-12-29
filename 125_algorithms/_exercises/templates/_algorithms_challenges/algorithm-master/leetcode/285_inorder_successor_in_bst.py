@@ -87,11 +87,11 @@ class Solution:
 
         __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w.... ans a.. ans.left:
                 ans = ans.left
             r.. ans
 
-        while root and target.val != root.val:
+        w.... root a.. target.val != root.val:
             __ target.val < root.val:
                 ans = root
                 root = root.left
@@ -120,8 +120,8 @@ class Solution2:
         node = root
         got_target = False
 
-        while node o. stack:
-            while node:
+        w.... node o. stack:
+            w.... node:
                 stack.a..(node)
                 node = node.left
 
@@ -156,12 +156,12 @@ class Solution3:
 
         __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w.... ans a.. ans.left:
                 ans = ans.left
             r.. ans
 
         ans = target.parent
-        while ans and target __ ans.right:
+        w.... ans a.. target __ ans.right:
             target = ans
             ans = ans.parent
 
@@ -187,12 +187,12 @@ class Solution4:
 
         __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w.... ans a.. ans.left:
                 ans = ans.left
             r.. ans
 
         ans = target.parent
-        while ans and ans.val < target.val:
+        w.... ans a.. ans.val < target.val:
             ans = ans.parent
 
         r.. ans

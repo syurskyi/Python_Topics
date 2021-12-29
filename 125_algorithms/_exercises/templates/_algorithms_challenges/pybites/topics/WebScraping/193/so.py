@@ -20,9 +20,9 @@ ___ top_python_questions(url=cached_so_url):
     soup = Soup(content, 'html.parser')
     question_list = [question ___ question __ soup.find_all('div', class_='question-summary')]
     ___ question __ question_list:
-        question_text = question.a.text.strip()
-        question_vote = question.find('span', class_='vote-count-post').strong.text.strip()
-        question_view = question.find('div', class_='views').text.strip()
+        question_text = question.a.text.s..
+        question_vote = question.find('span', class_='vote-count-post').strong.text.s..
+        question_view = question.find('div', class_='views').text.s..
         __ 'm views' __ question_view:
             faq.a..((question_text,int(question_vote)))
     r.. s..(faq, key=l.... x:x[1], r.._T..

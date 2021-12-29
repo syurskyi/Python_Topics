@@ -2,7 +2,7 @@ ____ collections _______ Counter
 _______ os
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
-____ datetime _______ datetime
+____ d__ _______ d__
 
 
 ____ dateutil.parser _______ parse
@@ -17,8 +17,8 @@ urlretrieve(
 YEAR_MONTH = '{y}-{m:02d}'
 
 
-___ get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = N..) -> (str, str):
+___ get_min_max_amount_of_commits(commit_log: s.. = commits,
+                                  year: int = N..) -> (s.., s..):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -32,8 +32,8 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
     commit_log = defaultdict(int)
     with open(commits) as f:
         ___ line __ f:
-            date, commit  = line.split(' | ')
-            date_time_obj = datetime.strptime(date[12:], '%b %d %H:%M:%S %Y %z')
+            date, commit  = line.s..(' | ')
+            date_time_obj = d__.strptime(date[12:], '%b %d %H:%M:%S %Y %z')
             dt_yr = date_time_obj.strftime("%Y")
             year_month = date_time_obj.strftime("%Y-%m")
             commit_list = commit.s..
@@ -46,4 +46,4 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
     newlist = s..(commit_log.items(), key=l.... item: item[1], r.._T..
     r.. (newlist[-1][0], newlist[0][0])
 
-print(get_min_max_amount_of_commits(year=2017))
+print(get_min_max_amount_of_commits y.._2017))

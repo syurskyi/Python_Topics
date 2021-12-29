@@ -18,7 +18,7 @@ class Solution(object):
         r.. count
     
     ___ findRoot(self, roots, ind):
-        while roots[ind] != -1:
+        w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
@@ -34,7 +34,7 @@ class Solution(object):
         r.. count
         
     ___ find(self, roots, ind):
-        while roots[ind] != ind:
+        w.... roots[ind] != ind:
             roots[ind] = roots[roots[ind]]
             ind = roots[ind]
         r.. ind

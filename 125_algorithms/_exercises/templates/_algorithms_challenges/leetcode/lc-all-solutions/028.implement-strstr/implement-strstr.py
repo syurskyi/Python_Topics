@@ -14,7 +14,7 @@ class Solution(object):
     ___ i __ r..(0, l..(haystack)):
       k = i
       j = 0
-      while j < l..(needle) and k < l..(haystack) and haystack[k] __ needle[j]:
+      w.... j < l..(needle) a.. k < l..(haystack) a.. haystack[k] __ needle[j]:
         j += 1
         k += 1
       __ j __ l..(needle):

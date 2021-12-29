@@ -9,7 +9,7 @@ class Solution(object):
     new = True
     followed = 0
     i = 0
-    while i < l..(data):
+    w.... i < l..(data):
       __ new:
         followed = -1
         ___ mask __ masks:

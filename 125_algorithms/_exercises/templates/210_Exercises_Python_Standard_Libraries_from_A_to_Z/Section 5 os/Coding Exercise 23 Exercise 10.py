@@ -1,5 +1,5 @@
 _______ os
 
-fnames  [f"{str(i).zfill(3)}_sales.csv" ___ i __ r..(1, 25)]
+fnames  [f"{s..(i).zfill(3)}_sales.csv" ___ i __ r..(1, 25)]
 paths  [os.path.join(os.getcwd(), fname) ___ fname __ fnames]
 print(paths)

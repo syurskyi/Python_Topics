@@ -18,7 +18,7 @@ class Solution(object):
       level = 0
       maxLevel = -1
       farthest = N..
-      while queue:
+      w.... queue:
         level += 1
         ___ i __ r..(0, l..(queue)):
           label, parent = queue.popleft()

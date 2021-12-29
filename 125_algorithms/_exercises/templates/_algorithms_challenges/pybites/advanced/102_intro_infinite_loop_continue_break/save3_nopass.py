@@ -7,7 +7,7 @@ ___ print_colors():
        - if 'quit' was entered for color, print 'bye' and break. 
        - if the color is not in VALID_COLORS, print 'Not a valid color' and continue.
        - otherwise print the color in lower case."""
-    while True:
+    w... T...
         color = input("Enter a color or enter 'quit'").lower()
         __ color __ VALID_COLORS:
             print(color)

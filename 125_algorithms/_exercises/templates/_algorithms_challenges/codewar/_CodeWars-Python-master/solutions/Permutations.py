@@ -20,7 +20,7 @@ ___ permutations(string):
         result.add(string[1] + string[0])
 
     ____ l..(string) > 2:
-        ___ i, c __ enumerate(string):
+        ___ i, c __ e..(string):
             ___ s __ permutations(string[:i] + string[i + 1:]):
                 result.add(c + s)
 

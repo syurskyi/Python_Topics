@@ -13,8 +13,8 @@ class Solution(object):
     ___ i __ r..(numRows):
       one = i
       two = -i
-      while one < n o. two < n:
-        __ 0 <= two < n and one != two and i != numRows - 1:
+      w.... one < n o. two < n:
+        __ 0 <= two < n a.. one != two a.. i != numRows - 1:
           ans.a..(s[two])
         __ one < n:
           ans.a..(s[one])

@@ -48,7 +48,7 @@ class Solution(object):
 
         queue = L
         depth = 0
-        while queue:
+        w.... queue:
             _queue    # list
             depth += 1
 

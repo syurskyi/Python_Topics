@@ -1,7 +1,7 @@
 ___ parse_octal(digits):
     digits = _validate_octal(digits)
     r.. s..(int(digit) * 8 ** i
-               ___ (i, digit) __ enumerate(reversed(digits)))
+               ___ (i, digit) __ e..(reversed(digits)))
 
 
 ___ _validate_octal(digits):

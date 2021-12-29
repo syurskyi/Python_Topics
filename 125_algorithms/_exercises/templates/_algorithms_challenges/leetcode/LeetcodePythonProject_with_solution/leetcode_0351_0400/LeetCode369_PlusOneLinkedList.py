@@ -17,7 +17,7 @@ class Solution(object):
         carry = 1
         node = newHead
         tail = node
-        while node and carry:
+        w.... node a.. carry:
             val = node.val + carry
             __ val >= 10:
                 val -= 10
@@ -35,7 +35,7 @@ class Solution(object):
         p1 = head
         p2 = p1.next
         p1.next = N..
-        while p2:
+        w.... p2:
             tmp = p2.next
             p2.next = p1
             p1 = p2

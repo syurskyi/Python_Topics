@@ -1,33 +1,33 @@
-____ collections _______ namedtuple
-____ itertools _______ accumulate
-
-BeltStats = namedtuple('BeltStats', 'score ninjas')
-
-ninja_belts = {'yellow': BeltStats(50, 11),
-               'orange': BeltStats(100, 7),
-               'green': BeltStats(175, 1),
-               'blue': BeltStats(250, 5)}
-
-
-___ get_total_points(belts=ninja_belts):
-    """Calculate the amount of points rewarded on PyBites given the
-       ninja_belts dictionary, formula: belt score x belt owners (aka ninjas)
-       (of course there are more points but let's keep it simple)
-
-       Make your code generic so if we update ninja_belts to include
-       more belts (which we do in the tests) it will still work.
-
-       Ah and you can get score and ninjas from the namedtuple with nice
-       attribute access: belt.score / belt.ninjas (reason why we get
-       you familiar with namedtuple here, because we love them and use
-       them all over the place!)
-
-       Return the total number of points int from the function."""
-    #total_points = 0
-    #for belt in belts:
-    #    total_points += belts[belt].score*belts[belt].ninjas
-    #return total_points
-    r.. s..(belts[belt].score*belts[belt].ninjas ___ belt __ belts)
-
-print(get_total_points())
-
+# ____ c.. _______ n..
+# ____ i.. _______ a..
+#
+# BeltStats  n..('BeltStats', 'score ninjas')
+#
+# ninja_belts  {'yellow': ? 50, 11
+#                'orange': ? 100, 7
+#                'green': ? 175, 1
+#                'blue': ? 250, 5
+#
+#
+# ___ get_total_points belts=ninja_belts
+#     """Calculate the amount of points rewarded on PyBites given the
+#        ninja_belts dictionary, formula: belt score x belt owners (aka ninjas)
+#        (of course there are more points but let's keep it simple)
+#
+#        Make your code generic so if we update ninja_belts to include
+#        more belts (which we do in the tests) it will still work.
+#
+#        Ah and you can get score and ninjas from the namedtuple with nice
+#        attribute access: belt.score / belt.ninjas (reason why we get
+#        you familiar with namedtuple here, because we love them and use
+#        them all over the place!)
+#
+#        Return the total number of points int from the function."""
+#     #total_points = 0
+#     #for belt in belts:
+#     #    total_points += belts[belt].score*belts[belt].ninjas
+#     #return total_points
+#     r.. s.. ? b__.score*belts[belt].ninjas ___ belt __ belts)
+#
+# print ?
+#

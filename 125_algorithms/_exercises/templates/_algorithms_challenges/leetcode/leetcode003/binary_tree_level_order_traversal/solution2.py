@@ -35,7 +35,7 @@ class Solution(object):
             r.. res
         queue    # list
         queue.a..(root)
-        while queue:
+        w.... queue:
             n = l..(queue)
             level    # list
             ___ i __ r..(n):

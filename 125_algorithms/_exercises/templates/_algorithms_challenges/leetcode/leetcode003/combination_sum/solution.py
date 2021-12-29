@@ -5,7 +5,7 @@ class Solution:
     ___ combinationSum(self, candidates, target):
         res    # list
         cand    # list
-        candidates.sort()
+        candidates.s..()
         self.combination_sum(candidates, cand, target, res)
         r.. res
 
@@ -15,7 +15,7 @@ class Solution:
         ____ target __ 0:
             res.a..(cand[:])
         ____:
-            ___ i, c __ enumerate(candidates):
+            ___ i, c __ e..(candidates):
                 cand.a..(c)
                 self.combination_sum(candidates[i:], cand, target - c, res)
                 cand.pop()

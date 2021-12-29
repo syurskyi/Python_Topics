@@ -1,10 +1,10 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 
 MIN_SCORE = 4
 DICE_VALUES = r..(1, 7)
 
-Player = namedtuple('Player', 'name scores')
+Player = n..('Player', 'name scores')
 
 
 ___ calculate_score(scores):

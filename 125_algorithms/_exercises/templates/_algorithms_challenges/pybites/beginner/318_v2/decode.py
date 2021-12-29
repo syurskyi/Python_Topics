@@ -6,7 +6,7 @@ _______ pandas as pd
 
 
 
-___ get_credit_cards(data: bytes) -> List[str]:
+___ get_credit_cards(data: bytes) -> List[s..]:
     """Decode the base64 encoded data which gives you a csv
     of "first_name,last_name,credit_card", from which you have
     to extract the credit card numbers.
@@ -15,7 +15,7 @@ ___ get_credit_cards(data: bytes) -> List[str]:
     decoded = base64.b64decode(data)
     message = decoded.decode('ascii')
 
-    r.. pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=True).astype(str).tolist()
+    r.. pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=True).astype(s..).tolist()
 
 
 

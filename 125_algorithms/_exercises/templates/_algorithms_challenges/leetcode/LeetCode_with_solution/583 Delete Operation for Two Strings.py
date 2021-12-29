@@ -16,7 +16,7 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ minDistance(self, word1: str, word2: str) -> int:
+    ___ minDistance(self, word1: s.., word2: s..) -> int:
         """
         Longest Common Subsequence (LCS)
         Find the LCS, and delete the char in BOTH strings into LCS
@@ -42,7 +42,7 @@ class Solution:
 
         r.. m - F[m][n] + n - F[m][n]
 
-    ___ minDistance_edit_distance(self, word1: str, word2: str) -> int:
+    ___ minDistance_edit_distance(self, word1: s.., word2: s..) -> int:
         """
         Edit distance
 

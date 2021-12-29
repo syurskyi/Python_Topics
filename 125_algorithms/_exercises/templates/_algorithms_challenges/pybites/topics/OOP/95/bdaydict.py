@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 
 
 MSG = 'Hey {}, there are more people with your birthday!'
@@ -13,8 +13,8 @@ class BirthdayDict(d..):
 
     ___ __setitem__(self, name, birthday):
         ___ date __ self.values():
-            __ date.month __ birthday.month and date.day __ birthday.day:
-                print(MSG.format(name))
+            __ date.month __ birthday.month a.. date.day __ birthday.day:
+                print(MSG.f..(name))
         self.update({name: birthday})
 
 bd = BirthdayDict()

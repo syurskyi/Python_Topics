@@ -4,7 +4,7 @@ array  []
 ___ x __ r..(N):
     array.a..(i..(random()*100))
 
-array.sort()
+array.s..()
 print(array)
 
 number  i..(input("Search for any number in the array: "))

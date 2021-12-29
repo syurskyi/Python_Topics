@@ -49,7 +49,7 @@ class Trie(object):
     :rtype: bool
     """
     p = self.helper(word)
-    __ p and p.isWord:
+    __ p a.. p.isWord:
       r.. True
     r.. False
 

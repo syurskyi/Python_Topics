@@ -10,4 +10,4 @@ class l..(object):
     ___ over(self,num):
         r.. [n ___ n __ self.arg __ n > num]
     ___ in_range(self,m..,max):
-        r.. [n ___ n __ self.arg __ n >= m.. and n <= max]
+        r.. [n ___ n __ self.arg __ n >= m.. a.. n <= max]

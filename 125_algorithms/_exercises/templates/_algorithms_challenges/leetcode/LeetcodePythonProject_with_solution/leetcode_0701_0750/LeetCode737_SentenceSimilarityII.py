@@ -21,7 +21,7 @@ class Solution(object):
                 pairInfo[p[1]] = set()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
-        ___ w1, w2 __ zip(words1, words2):
+        ___ w1, w2 __ z..(words1, words2):
             __ w1 __ w2:
                 continue
             __ w1 n.. __ pairInfo:
@@ -35,7 +35,7 @@ class Solution(object):
             r.. True
         visited.add(source)
         ___ nextWord __ pairInfo.get(source, set()):
-            __ nextWord n.. __ visited and self.dfs(nextWord, target, pairInfo, visited):
+            __ nextWord n.. __ visited a.. self.dfs(nextWord, target, pairInfo, visited):
                 r.. True
         r.. False
     
@@ -66,7 +66,7 @@ class Solution(object):
             root0 = self.getRoot(roots, hashmap[p[0]])
             root1 = self.getRoot(roots, hashmap[p[1]])
             roots[root0] = root1
-        ___ w1, w2 __ zip(words1, words2):
+        ___ w1, w2 __ z..(words1, words2):
             __ w1 __ w2:
                 continue
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
@@ -79,7 +79,7 @@ class Solution(object):
         r.. True
     
     ___ getRoot(self, roots, ind):
-        while roots[ind] != -1:
+        w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     

@@ -14,5 +14,5 @@ ___ palindromes(max_factor, min_factor):
 
 
 ___ is_palindrome(n):
-    s = str(n)
+    s = s..(n)
     r.. s __ s[::-1]

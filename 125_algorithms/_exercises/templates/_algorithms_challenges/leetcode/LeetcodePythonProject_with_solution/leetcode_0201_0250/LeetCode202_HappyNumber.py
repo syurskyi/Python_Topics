@@ -12,9 +12,9 @@ class Solution(object):
         """
         hashset = set()
         hashset.add(n)
-        while n != 1:
+        w.... n != 1:
             num = 0
-            while n > 0:
+            w.... n > 0:
                 num += (n % 10)**2
                 n = int(n/10)
             __ num __ hashset:

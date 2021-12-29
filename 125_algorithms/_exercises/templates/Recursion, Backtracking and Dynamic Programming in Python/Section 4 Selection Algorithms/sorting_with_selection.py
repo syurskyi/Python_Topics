@@ -9,7 +9,7 @@ c_ QuickSelect:
         last_index  le_(nums) - 1
 
     # this is how we can do sorting
-    ___ sort(self
+    ___ s..(self
 
         # the result will be another list (sorted order)
         sorted_list  []
@@ -57,4 +57,4 @@ c_ QuickSelect:
 __ ___ __ '__main__':
     n  [1, 0, -1, 10, 100, -100]
     quick_select  QuickSelect(n)
-    print(quick_select.sort())
+    print(quick_select.s..())

@@ -42,7 +42,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ camelMatch(self, queries: List[str], pattern: str) -> List[bool]:
+    ___ camelMatch(self, queries: List[s..], pattern: s..) -> List[bool]:
         ret    # list
         ___ q __ queries:
             ret.a..(self.match(q, pattern))
@@ -52,19 +52,19 @@ class Solution:
     ___ match(self, q, p):
         i = 0
         j = 0
-        while i < l..(q) and j < l..(p):
+        w.... i < l..(q) a.. j < l..(p):
             __ q[i] __ p[j]:
                 i += 1
                 j += 1
-            ____ q[i].islower():
+            ____ q[i].isl..
                 i += 1
             ____:
                 break
 
-        while i < l..(q) and q[i].islower():
+        w.... i < l..(q) a.. q[i].isl..
             i += 1
 
-        r.. i __ l..(q) and j __ l..(p)
+        r.. i __ l..(q) a.. j __ l..(p)
 
 
 __ __name__ __ "__main__":

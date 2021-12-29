@@ -39,7 +39,7 @@ class Solution:
         goes down
         Then A[0] + K, A[i] + K, A[i+1] - K, A[A.length - 1] - K
         """
-        A.sort()
+        A.s..()
         mn = m..(A)
         mx = max(A)
         ret = mx - mn
@@ -65,9 +65,9 @@ class Solution:
         ___ a __ A:
             diffs = [(a + K) - upper, lower - (a - K)]
             cur_diff = m..(diffs)
-            __ cur_diff __ diffs[0] and cur_diff >= max_upper_diff:
+            __ cur_diff __ diffs[0] a.. cur_diff >= max_upper_diff:
                 max_upper_diff = cur_diff
-            ____ cur_diff __ diffs[1] and cur_diff >= max_lower_diff:
+            ____ cur_diff __ diffs[1] a.. cur_diff >= max_lower_diff:
                 max_lower_diff = cur_diff
 
         r.. upper + max_upper_diff - (lower + max_lower_diff)

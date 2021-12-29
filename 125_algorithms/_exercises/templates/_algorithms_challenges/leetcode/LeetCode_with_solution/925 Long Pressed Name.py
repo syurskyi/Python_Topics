@@ -37,23 +37,23 @@ The characters of name and typed are lowercase letters.
 
 
 class Solution:
-    ___ isLongPressedName(self, name: str, typed: str) -> bool:
+    ___ isLongPressedName(self, name: s.., typed: s..) -> bool:
         """
         two pointers
         """
         m, n = l..(name), l..(typed)
         i, j = 0, 0
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ name[i] __ typed[j]:
                 i += 1
                 j += 1
-            ____ j - 1 >= 0 and typed[j-1] __ typed[j]:
+            ____ j - 1 >= 0 a.. typed[j-1] __ typed[j]:
                 j += 1
             ____:
                 r.. False
 
         # tail
-        while j - 1 >= 0 and j < n and typed[j-1] __ typed[j]:
+        w.... j - 1 >= 0 a.. j < n a.. typed[j-1] __ typed[j]:
             j += 1
 
-        r.. i __ m and j __ n
+        r.. i __ m a.. j __ n

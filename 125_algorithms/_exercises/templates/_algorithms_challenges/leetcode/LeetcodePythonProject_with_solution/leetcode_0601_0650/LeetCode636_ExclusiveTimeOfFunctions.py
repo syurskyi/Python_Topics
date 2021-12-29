@@ -14,7 +14,7 @@ class Solution(object):
         res = [0]*n
         prevTime = 0
         ___ log __ logs:
-            arr = log.split(':')
+            arr = log.s..(':')
             __ stack:
                 res[stack[-1]] += int(arr[2])-prevTime
             prevTime = int(arr[2])

@@ -13,10 +13,10 @@ class Solution:
             current = 1
             __ c n.. __ d:
                 continue
-            while c - 1 __ d:
+            w.... c - 1 __ d:
                 c -= 1
             del d[c]
-            while c + 1 __ d:
+            w.... c + 1 __ d:
                 c += 1
                 current += 1
                 del d[c]

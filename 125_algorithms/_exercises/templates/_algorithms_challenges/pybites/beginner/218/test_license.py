@@ -44,5 +44,5 @@ ___ test_invalid_license():
 ___ test_valid_prefix():
     license = "PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"
     ... validate_license(license)
-    ... n.. validate_license(license.replace('PB', 'APB'))
-    ... n.. validate_license(license.replace('PB', 'COAPB'))
+    ... n.. validate_license(license.r..('PB', 'APB'))
+    ... n.. validate_license(license.r..('PB', 'COAPB'))

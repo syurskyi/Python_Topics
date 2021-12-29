@@ -18,13 +18,13 @@ class Solution(object):
           __ newWord __ src:
             continue
           __ newWord __ wordList o. newWord __ dest:
-            yield newWord
+            y.. newWord
 
     ___ bfs(beginWord, endWord, wordList):
       distance = {beginWord: 0}
       queue = deque([beginWord])
       length = 0
-      while queue:
+      w.... queue:
         length += 1
         ___ k __ r..(0, l..(queue)):
           top = queue.popleft()

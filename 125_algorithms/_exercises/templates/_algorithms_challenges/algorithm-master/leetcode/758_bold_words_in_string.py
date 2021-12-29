@@ -35,14 +35,14 @@ class Solution:
             ___ w __ words:
                 size = l..(w)
 
-                __ s[left:left + size] __ w and left + size > right:
+                __ s[left:left + size] __ w a.. left + size > right:
                     right = left + size
 
             is_bold[left] = right > left
 
         left = right = 0
 
-        while left < n:
+        w.... left < n:
             __ n.. is_bold[left]:
                 ans.a..(s[left])
                 left += 1
@@ -50,10 +50,10 @@ class Solution:
 
             right = left
 
-            while right < n and is_bold[right]:
+            w.... right < n a.. is_bold[right]:
                 right += 1
 
-            ans.a..(TMPL.format(s[left:right]))
+            ans.a..(TMPL.f..(s[left:right]))
             left = right  # imply left' = left + 1
 
         r.. ''.join(ans)

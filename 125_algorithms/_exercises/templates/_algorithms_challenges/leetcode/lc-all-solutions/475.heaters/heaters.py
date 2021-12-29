@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: int
     """
     minDist = 0
-    heaters.sort()
+    heaters.s..()
     ___ house __ s..(houses):
       idx = bisect.bisect_left(heaters, house)
       dist = float("inf")

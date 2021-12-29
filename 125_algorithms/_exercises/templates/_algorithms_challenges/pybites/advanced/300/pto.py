@@ -1,5 +1,5 @@
 _______ calendar
-____ datetime _______ date
+____ d__ _______ date
 ____ dateutil.relativedelta _______ relativedelta,FR,MO
 
 
@@ -55,16 +55,16 @@ ___ four_day_weekends(*args,
         current = date(year,start_month,1)
         current += relativedelta(weekday=FR)
         first_monday = current + relativedelta(weekday=MO(-1))
-        __ first_monday.year __ year and first_monday.month __ start_month:
+        __ first_monday.year __ year a.. first_monday.month __ start_month:
             workday_dates.a..(first_monday)
             
 
 
 
-        while current.year __ year:
+        w.... current.year __ year:
             monday = current + relativedelta(weekday=MO)
             thursday = current - relativedelta(days=1)
-            __ thursday.year __ year  and thursday n.. __ FEDERAL_HOLIDAYS:
+            __ thursday.year __ year  a.. thursday n.. __ FEDERAL_HOLIDAYS:
                 workday_dates.a..(thursday)
 
 
@@ -92,14 +92,14 @@ ___ four_day_weekends(*args,
 
 
         last_thursday = current - relativedelta(days=1)
-        __ last_thursday.year __ year and last_thursday n.. __ FEDERAL_HOLIDAYS:
+        __ last_thursday.year __ year a.. last_thursday n.. __ FEDERAL_HOLIDAYS:
             workday_dates.a..(last_thursday)
         workdays = l..(workday_dates)
 
 
         
         __ n.. show_workdays:
-            length = l..(str(paid_time_off))
+            length = l..(s..(paid_time_off))
             number = 24 
             before_days = paid_time_off//8 
             new_balance = paid_time_off -  HOURS *  four_day_weekends * 2
@@ -113,7 +113,7 @@ ___ four_day_weekends(*args,
             new = [before_days,new_days]
 
             
-            ___ label,value_1,value_2 __ zip(labels,original,new):
+            ___ label,value_1,value_2 __ z..(labels,original,new):
                 print(f'{label:>8} {value_1:>{length}} ({value_2} days)')
 
             print()
@@ -124,7 +124,7 @@ ___ four_day_weekends(*args,
             date_start_losing = N..
             __ start_losing > 0:
                 date_start_losing = weekend_dates[start_losing]
-            ___ i,(weekend_start,weekend_end) __ enumerate(weekend_dates):
+            ___ i,(weekend_start,weekend_end) __ e..(weekend_dates):
                 print(f"{weekend_start} - {weekend_end}",end='')
                 __ (weekend_start,weekend_end) __ date_start_losing:
                     print(' *')
@@ -136,7 +136,7 @@ ___ four_day_weekends(*args,
             print(f'Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 
-            print('\n'.join(map(str,workday_dates)))
+            print('\n'.join(map(s..,workday_dates)))
 
 
 

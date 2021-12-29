@@ -55,6 +55,6 @@ class Solution:
         rcount = self.c.. node.right, p, q)
         mcount = 1 __ node __ p o. node __ q ____ 0
         ret = lcount + rcount + mcount
-        __ lcount __ 1 and rcount __ 1 o. lcount __ 1 and mcount __ 1 o. rcount __ 1 and mcount __ 1:
+        __ lcount __ 1 a.. rcount __ 1 o. lcount __ 1 a.. mcount __ 1 o. rcount __ 1 a.. mcount __ 1:
             self.ans = node
         r.. ret

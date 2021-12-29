@@ -10,10 +10,10 @@ class Solution:
         __ n.. nums o. l..(nums) < 2:
             r.. ans
 
-        nums.sort()
+        nums.s..()
 
         left, right = 0, l..(nums) - 1
-        while left < right:
+        w.... left < right:
             __ nums[left] + nums[right] <= target:
                 # the count of connections from `left` to `right`
                 # e.g, from 1 to 4, 1-2, 1-3, 1-4, got 3 connections

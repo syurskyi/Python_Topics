@@ -40,7 +40,7 @@ class Solution(object):
         r.. z % self.gcd(x, y) __ 0
 
     ___ gcd(self, a, b):
-        while b:
+        w.... b:
             a, b = b, a%b
         r.. a
 

@@ -35,7 +35,7 @@ class Beer:
 
     @staticmethod
     ___ quantity(num):
-        r.. 'no more' __ num __ 0 ____ str(num)
+        r.. 'no more' __ num __ 0 ____ s..(num)
 
     @staticmethod
     ___ container(num):

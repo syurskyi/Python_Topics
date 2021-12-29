@@ -13,7 +13,7 @@ class Solution(object):
         """
         __ n.. heights: r.. heights
         idx = 0
-        while V > 0:
+        w.... V > 0:
             idx = K
             ___ i __ r..(K-1, -1, -1):
                 __ heights[i] > heights[idx]:

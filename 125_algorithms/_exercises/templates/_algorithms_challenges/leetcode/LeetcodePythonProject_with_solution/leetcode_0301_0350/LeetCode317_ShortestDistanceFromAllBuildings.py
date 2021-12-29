@@ -23,13 +23,13 @@ class Solution(object):
                     queue = [(i, j)]
                     visited = [[False]*n ___ _ __ r..(m)]
                     level = 1
-                    while queue:
+                    w.... queue:
                         size = l..(queue)
                         ___ _ __ r..(size):
                             i0, j0 = queue.pop(0)
                             ___ x, y __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
-                                __ 0 <= x < m and 0 <= y < n and\
-                                    n.. visited[x][y] and grid[x][y] __ 0:
+                                __ 0 <= x < m a.. 0 <= y < n a..\
+                                    n.. visited[x][y] a.. grid[x][y] __ 0:
                                     distance[x][y] += level
                                     reach[x][y] += 1
                                     visited[x][y] = True
@@ -38,7 +38,7 @@ class Solution(object):
         res = float('inf')
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ grid[i][j] __ 0 and reach[i][j] __ buildingNum:
+                __ grid[i][j] __ 0 a.. reach[i][j] __ buildingNum:
                     res = m..(res, distance[i][j])
         r.. res __ res != float('inf') ____ -1
     

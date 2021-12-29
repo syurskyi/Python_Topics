@@ -28,15 +28,15 @@ class Solution(object):
         right = n - 1
         __ n __ 1:
             r.. 0
-        while left <= right:
+        w.... left <= right:
             mid = left + (right - left) / 2
-            __ mid __ 0 and nums[mid] > nums[mid + 1]:
+            __ mid __ 0 a.. nums[mid] > nums[mid + 1]:
                 r.. mid
-            ____ mid __ n - 1 and nums[mid] > nums[mid - 1]:
+            ____ mid __ n - 1 a.. nums[mid] > nums[mid - 1]:
                 r.. mid
             ____ nums[mid - 1] < nums[mid] > nums[mid + 1]:
                 r.. mid
-            ____ mid > 0 and nums[mid - 1] > nums[mid]:
+            ____ mid > 0 a.. nums[mid - 1] > nums[mid]:
                 right = mid - 1
             ____:
                 left = mid + 1

@@ -1,10 +1,10 @@
 ___ from_digits(digits, base):
-    r.. s..(n * base ** i ___ i, n __ enumerate(reversed(digits)))
+    r.. s..(n * base ** i ___ i, n __ e..(reversed(digits)))
 
 
 ___ to_digits(number, base_to):
     result    # list
-    while number > 0:
+    w.... number > 0:
         result.a..(number % base_to)
         number //= base_to
     r.. result[::-1]  # list(reversed(result))

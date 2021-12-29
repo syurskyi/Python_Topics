@@ -26,7 +26,7 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().strip() ___ word __ f.readlines())
+        r.. (word.lower().s.. ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -36,7 +36,7 @@ ___ is_palindrome(word):
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
     stripped = re.sub(r'[^a-z]', '', word.lower())
     i, j = 0, l..(stripped) - 1
-    while i < j:
+    w.... i < j:
         __ stripped[i] != stripped[j]:
             r.. False
         i, j = i + 1, j - 1

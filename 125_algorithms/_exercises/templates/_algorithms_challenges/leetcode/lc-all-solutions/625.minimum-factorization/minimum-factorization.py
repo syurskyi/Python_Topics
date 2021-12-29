@@ -9,13 +9,13 @@ class Solution(object):
       r.. a
     path    # list
     k = 9
-    while k > 1 and a > 1:
+    w.... k > 1 a.. a > 1:
       __ a % k __ 0:
         path.a..(s..(k))
         a /= k
       ____:
         k -= 1
-    path.sort()
+    path.s..()
     __ a > 9 o. n.. path:
       r.. 0
     ans = int("".join(path))
@@ -44,4 +44,4 @@ class Solution(object):
 
     self.ans = float("inf")
     dfs(a, [])
-    r.. self.ans __ self.ans != float("inf") and self.ans <= 0x7fffffff ____ 0
+    r.. self.ans __ self.ans != float("inf") a.. self.ans <= 0x7fffffff ____ 0

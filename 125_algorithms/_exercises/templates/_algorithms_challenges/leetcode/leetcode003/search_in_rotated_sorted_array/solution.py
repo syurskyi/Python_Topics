@@ -18,19 +18,19 @@ class Solution(object):
         """
         left = 0
         right = l..(nums) - 1
-        while left <= right:
+        w.... left <= right:
             mid = left + (right - left) / 2
             __ target __ nums[mid]:
                 r.. mid
             # Left part is sorted
             ____ nums[mid] > nums[right]:
-                __ target < nums[mid] and target >= nums[left]:
+                __ target < nums[mid] a.. target >= nums[left]:
                     right = mid - 1
                 ____:
                     left = mid + 1
             # Right part is sorted
             ____:
-                __ target > nums[mid] and target <= nums[right]:
+                __ target > nums[mid] a.. target <= nums[right]:
                     left = mid + 1
                 ____:
                     right = mid - 1

@@ -13,29 +13,29 @@ class Cipher:
 
     ___ encode(self, phrase):
         r.. ''.join([chr(self.wrap(ord(c) + self.offset(i))) ___ i, c __
-                        enumerate(self.clean(phrase))])
+                        e..(self.clean(phrase))])
 
     ___ decode(self, phrase):
         r.. ''.join([chr(self.wrap(ord(c) - self.offset(i))) ___ i, c __
-                        enumerate(self.clean(phrase))])
+                        e..(self.clean(phrase))])
 
     ___ clean(self, phrase):
-        r.. l..(filter(str.isalpha, phrase.lower()))
+        r.. l..(filter(s...isalpha, phrase.lower()))
 
     ___ generate_random_key(self):
         r.. ''.join(random.SystemRandom().choice(string.ascii_lowercase)
                        ___ _ __ r..(self.random_key_length))
 
     ___ valid_key(self):
-        r.. self.key.isalpha() and self.key.islower()
+        r.. self.key.isalpha() a.. self.key.islower()
 
     ___ offset(self, index):
         r.. self.wrap(ord(self.key[index % l..(self.key)]) - 97)
 
     ___ wrap(self, val):
-        while val > 122:
+        w.... val > 122:
             val -= 26
-        while val < 97:
+        w.... val < 97:
             val += 26
         r.. val
 

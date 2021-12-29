@@ -29,7 +29,7 @@ class Solution:
         queue    # list
         board[y][x] = 'Y'
         queue.a..((x, y))
-        while queue:
+        w.... queue:
             root_x, root_y = queue.pop(0)
             ___ node __ self.adjacent(board, root_x, root_y):
                 x, y = node
@@ -39,12 +39,12 @@ class Solution:
 
     ___ adjacent(self, board, x, y):
         res    # list
-        __ x + 1 < self.m and board[y][x + 1] __ 'O':
+        __ x + 1 < self.m a.. board[y][x + 1] __ 'O':
             res.a..((x + 1, y))
-        __ x - 1 > 0 and board[y][x - 1] __ 'O':
+        __ x - 1 > 0 a.. board[y][x - 1] __ 'O':
             res.a..((x - 1, y))
-        __ y + 1 < self.n and board[y + 1][x] __ 'O':
+        __ y + 1 < self.n a.. board[y + 1][x] __ 'O':
             res.a..((x, y + 1))
-        __ y - 1 > 0 and board[y - 1][x] __ 'O':
+        __ y - 1 > 0 a.. board[y - 1][x] __ 'O':
             res.a..((x, y - 1))
         r.. res

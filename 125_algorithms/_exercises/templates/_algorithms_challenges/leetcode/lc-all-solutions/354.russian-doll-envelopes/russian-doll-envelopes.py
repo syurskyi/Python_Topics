@@ -4,11 +4,11 @@ class Solution(object):
     :type envelopes: List[List[int]]
     :rtype: int
     """
-    envelopes.sort(key=l.... key: (key[0], -key[1]))
+    envelopes.s..(key=l.... key: (key[0], -key[1]))
     tails    # list
     ___ i __ r..(0, l..(envelopes)):
       idx = bisect.bisect_right(tails, envelopes[i][1])
-      __ idx - 1 >= 0 and tails[idx - 1] __ envelopes[i][1]:
+      __ idx - 1 >= 0 a.. tails[idx - 1] __ envelopes[i][1]:
         continue
       __ idx __ l..(tails):
         tails.a..(envelopes[i][1])

@@ -19,7 +19,7 @@ class Solution(object):
         _______ bisect
         window = s..(nums[:k])
         medians    # list
-        ___ a, b __ zip(nums, nums[k:]+[0]):
+        ___ a, b __ z..(nums, nums[k:]+[0]):
             medians.a..((window[k/2] + window[~(k/2)]/2.0))
             window.remove(a)
             bisect.insort(window, b)
@@ -31,7 +31,7 @@ class Solution(object):
         self.maxHeap    # list
     
     ___ getMedian(self):
-        __ n.. self.maxHeap and n.. self.minHeap:
+        __ n.. self.maxHeap a.. n.. self.minHeap:
             r.. 0
         __ l..(self.minHeap) __ l..(self.maxHeap):
             r.. (self.minHeap[0] - self.maxHeap[0])/2.0

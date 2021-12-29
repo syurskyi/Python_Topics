@@ -41,7 +41,7 @@ class Solution:
         p1 = 0
         e = 1  # ending s[0:e] is the substring
         p2 = 1
-        while p2 < l..(s):
+        w.... p2 < l..(s):
             __ s[p1] __ s[p2]:
                 p1 += 1
                 __ p1 __ e:
@@ -52,7 +52,7 @@ class Solution:
 
             p2 += 1
 
-        r.. p2 __ l..(s) and p1 __ 0 and e != l..(s)
+        r.. p2 __ l..(s) a.. p1 __ 0 a.. e != l..(s)
 
 
 __ __name__ __ "__main__":

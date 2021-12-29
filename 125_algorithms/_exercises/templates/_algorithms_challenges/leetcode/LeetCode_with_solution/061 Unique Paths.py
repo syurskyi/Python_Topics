@@ -55,7 +55,7 @@ class Solution(object):
         # F[i][j] = F[i-1][j] + F[i][j-1]
         ___ i __ xrange(m):
             ___ j __ xrange(n):
-                __ i __ 0 and j __ 0: continue
+                __ i __ 0 a.. j __ 0: continue
                 __ i __ 0: F[i][j] = F[i][j-1]
                 ____ j __ 0: F[i][j] = F[i-1][j]
                 ____: F[i][j] = F[i-1][j]+F[i][j-1]

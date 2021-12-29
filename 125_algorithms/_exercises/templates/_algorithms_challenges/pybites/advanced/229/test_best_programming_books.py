@@ -35,7 +35,7 @@ ___ test_book_class(dummy_book):
 
 
 ___ test_book_class_str(dummy_book):
-    actual = str(dummy_book)
+    actual = s..(dummy_book)
     expected = ("[001] Python Testing with pytest (2017)"
                 "\n      Okken, Brian 5.0")
     ... actual __ expected

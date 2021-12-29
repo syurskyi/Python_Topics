@@ -11,7 +11,7 @@ class Solution:
         __ n.. s:
             res.a..(cand[:])
         ____:
-            ___ i, e __ enumerate(s):
+            ___ i, e __ e..(s):
                 __ self.is_palindrome(s[:i + 1]):
                     cand.a..(s[:i + 1])
                     self.partition_aux(s[i + 1:], cand, res)
@@ -20,7 +20,7 @@ class Solution:
     ___ is_palindrome(self, s):
         left = 0
         right = l..(s) - 1
-        while left < right:
+        w.... left < right:
             __ s[left] != s[right]:
                 r.. False
             left += 1

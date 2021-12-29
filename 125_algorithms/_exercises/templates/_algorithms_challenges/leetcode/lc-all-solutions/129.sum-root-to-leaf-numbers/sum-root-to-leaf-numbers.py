@@ -18,7 +18,7 @@ class Solution(object):
         pathsum += root.val
         left = dfs(root.left, pathsum * 10)
         right = dfs(root.right, pathsum * 10)
-        __ n.. left and n.. right:
+        __ n.. left a.. n.. right:
           self.s.. += pathsum
         r.. True
 

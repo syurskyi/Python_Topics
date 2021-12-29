@@ -109,7 +109,7 @@ class Solution(object):
         :return: None
         """
         i = up
-        while i < down:
+        w.... i < down:
             __ ptr >= l..(words[i]):
                 i += 1
             ____:
@@ -117,11 +117,11 @@ class Solution(object):
                     V[words[i][ptr]]    # list
 
                 j = i+1
-                while j < down and ptr < l..(words[j]) and words[j][ptr] __ words[i][ptr]:
+                w.... j < down a.. ptr < l..(words[j]) a.. words[j][ptr] __ words[i][ptr]:
                     j += 1
 
                 self.construct_graph_tedious(words, i, j, ptr+1, V)
-                __ j < down and ptr < l..(words[j]):
+                __ j < down a.. ptr < l..(words[j]):
                     V[words[i][ptr]].a..(words[j][ptr])
 
                 i = j

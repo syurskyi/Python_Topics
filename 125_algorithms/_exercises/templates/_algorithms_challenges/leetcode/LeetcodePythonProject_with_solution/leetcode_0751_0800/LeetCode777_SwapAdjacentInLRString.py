@@ -14,22 +14,22 @@ class Solution(object):
         __ re.sub('X', '', start) != re.sub('X', '', end):
             r.. False
         p1, p2 = 0, 0
-        while p1 < l..(start) and p2 < l..(end):
-            while p1 < l..(start) and start[p1] __ 'X':
+        w.... p1 < l..(start) a.. p2 < l..(end):
+            w.... p1 < l..(start) a.. start[p1] __ 'X':
                 p1 += 1
-            while p2 < l..(end) and end[p2] __ 'X':
+            w.... p2 < l..(end) a.. end[p2] __ 'X':
                 p2 += 1
-            __ p1 __ l..(start) and p2 __ l..(end):
+            __ p1 __ l..(start) a.. p2 __ l..(end):
                 r.. True
             __ p1 __ l..(start) o. p2 __ l..(end):
                 r.. False
             __ start[p1] != end[p2]:
                 r.. False
             # if the character is 'L', it can only be moved to the left. p1 should be greater or equal to p2.
-            __ start[p1] __ 'L' and p2 > p1:
+            __ start[p1] __ 'L' a.. p2 > p1:
                 r.. False
             # if the character is 'R', it can only be moved to the right. p2 should be greater or equal to p1.
-            __ start[p1] __ 'R' and p1 > p2:
+            __ start[p1] __ 'R' a.. p1 > p2:
                 r.. False
             p1 += 1
             p2 += 1
@@ -47,9 +47,9 @@ class Solution(object):
             __ end[i] __ 'L': l += 1
             __ start[i] __ 'L': l -= 1
             __ end[i] __ 'R': r -= 1
-            __ (l < 0 o. r != 0) and (l != 0 o. r < 0):
+            __ (l < 0 o. r != 0) a.. (l != 0 o. r < 0):
                 r.. False
-        __ l __ 0 and r __ 0:
+        __ l __ 0 a.. r __ 0:
             r.. True
         r.. False
     
@@ -63,7 +63,7 @@ class Solution(object):
         """
         visited = set([start])
         queue = [start]
-        while queue:
+        w.... queue:
             s = queue.pop()
             __ s __ end:
                 r.. True

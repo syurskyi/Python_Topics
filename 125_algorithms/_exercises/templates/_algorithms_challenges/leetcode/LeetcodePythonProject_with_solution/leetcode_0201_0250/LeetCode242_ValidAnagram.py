@@ -11,7 +11,7 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ n.. s and n.. t: r.. True
+        __ n.. s a.. n.. t: r.. True
         __ n.. s o. n.. t: r.. False
         __ l..(s) != l..(t): r.. False
         hashmap = {}

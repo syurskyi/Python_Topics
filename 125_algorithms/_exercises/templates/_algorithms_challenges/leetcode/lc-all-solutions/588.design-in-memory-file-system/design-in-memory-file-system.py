@@ -29,11 +29,11 @@ class FileSystem(object):
     files    # list
     ___ file __ fd.childs:
       files.a..(file)
-    files.sort()
+    files.s..()
     r.. files
 
   ___ lookup(self, path, isAutoCreate):
-    path = path.split("/")
+    path = path.s..("/")
     p = self.root
     ___ name __ path:
       __ n.. name:

@@ -25,7 +25,7 @@ __ 'cat' __ lookup:
 # And we want to randomly access them
 _______ collections
 
-User  collections.namedtuple('User', 'id, name, email')
+User  collections.n..('User', 'id, name, email')
 users  [
     User(1, 'user1', 'user1@talkpython.fm'),
     User(2, 'user2', 'user2@talkpython.fm'),
@@ -44,7 +44,7 @@ print(lookup['user4@talkpython.fm'])
 ___ find_significant_numbers(nums, predicate):
     ___ n __ nums:
         __ predicate(n):
-            yield n
+            y.. n
 
 
 numbers  [1, 1, 2, 3, 5, 8, 13, 21, 34]

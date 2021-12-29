@@ -51,7 +51,7 @@ class Solution(object):
 
     ___ merge(self, target, k, pre, suc):
         ret    # list
-        while l..(ret) < k:
+        w.... l..(ret) < k:
             __ n.. pre:
                 ret.a..(suc.pop())
             ____ n.. suc:

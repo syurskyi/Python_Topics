@@ -50,13 +50,13 @@ class Solution:
             counter[a] += 1
 
         keys = l..(counter.keys())
-        keys.sort()
+        keys.s..()
         n = l..(keys)
         ret = 0
         ___ i __ r..(n):
             j = i  # not i + 1
             k = n - 1
-            while j <= k:  # not <
+            w.... j <= k:  # not <
                 a, b, c = keys[i], keys[j], keys[k]
                 __ b + c < target - a:
                     j += 1
@@ -88,24 +88,24 @@ class Solution:
         3 pointers O(N^2)
         j, k scan each element once
         """
-        A.sort()
+        A.s..()
         n = l..(A)
         ret = 0
         ___ i __ r..(n):
             j = i + 1
             k = n - 1
-            while j < k:
+            w.... j < k:
                 __ A[j] + A[k] < target - A[i]:
                     j += 1
                 ____ A[j] + A[k] > target - A[i]:
                     k -= 1
                 ____:  # equal
                     l_cnt = 1
-                    while j + l_cnt < n and A[j + l_cnt] __ A[j]:
+                    w.... j + l_cnt < n a.. A[j + l_cnt] __ A[j]:
                         l_cnt += 1
 
                     r_cnt = 1
-                    while k - r_cnt >= 0 and A[k - r_cnt] __ A[k]:
+                    w.... k - r_cnt >= 0 a.. A[k - r_cnt] __ A[k]:
                         r_cnt += 1
 
                     __ A[j] != A[k]:

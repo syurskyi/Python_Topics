@@ -10,7 +10,7 @@ class Solution(object):
         r.. schedule[0]
       m    # list
       ___ i __ r..(l..(schedule) / 2):
-        m.a..("({},{})".format(schedule[i], schedule[-i - 1]))
+        m.a..("({},{})".f..(schedule[i], schedule[-i - 1]))
       r.. helper(m)
 
-    r.. helper(map(str, r..(1, n + 1)))
+    r.. helper(map(s.., r..(1, n + 1)))

@@ -22,9 +22,9 @@ ___ search_event_loop():
             search  input('Movie search text (x to exit): ')
             __ search ! 'x':
                 results  movie_svc.find_movies(search)
-                print("Found {} results.".format(l..(results)))
+                print("Found {} results.".f..(l..(results)))
                 ___ r __ results:
-                    print('{} -- {}'.format(
+                    print('{} -- {}'.f..(
                         r.year, r.title
                     ))
                 print()
@@ -33,7 +33,7 @@ ___ search_event_loop():
         except requests.exceptions.ConnectionError:
             print("Error: Your network is down.")
         except Exception as x:
-            print("Unexpected error. Details: {}".format(x))
+            print("Unexpected error. Details: {}".f..(x))
 
     print('exiting...')
 

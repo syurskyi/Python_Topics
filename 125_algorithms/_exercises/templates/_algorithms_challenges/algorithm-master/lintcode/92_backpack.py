@@ -14,7 +14,7 @@ class Solution:
             ___ j __ r..(m + 1):
                 dp[i][j] = dp[i - 1][j]
                 __ (j >= A[i - 1]
-                    and dp[i - 1][j - A[i - 1]]):
+                    a.. dp[i - 1][j - A[i - 1]]):
                     dp[i][j] = True
 
         ___ j __ r..(m, -1, -1):

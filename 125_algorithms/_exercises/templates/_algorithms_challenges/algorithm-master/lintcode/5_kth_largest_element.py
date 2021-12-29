@@ -1,5 +1,5 @@
 class Solution:
 
     ___ kthLargestElement(self, k, nums):
-        nums.sort()
+        nums.s..()
         r.. nums[-k]

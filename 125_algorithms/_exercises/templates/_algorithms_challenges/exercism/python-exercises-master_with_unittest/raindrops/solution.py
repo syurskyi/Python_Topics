@@ -28,4 +28,4 @@ ___ _drops_for(number):
 ___ raindrops(number):
     drops = _drops_for(number)
 
-    r.. ''.join(drops) o. str(number)
+    r.. ''.join(drops) o. s..(number)

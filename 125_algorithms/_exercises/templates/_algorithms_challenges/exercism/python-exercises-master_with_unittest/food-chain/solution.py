@@ -18,7 +18,7 @@ ___ chain():
     verse = ""
     chain = ""
 
-    ___ number, animal __ enumerate(animals):
+    ___ number, animal __ e..(animals):
         verse = old_lady + animal + ".\n"
 
         __ number __ 7:
@@ -28,12 +28,12 @@ ___ chain():
                 chain = swallowed + animal + '.\n'
             ____ number __ 1:
                 verse += "It" + phrases[0] + "\n"
-                chain = chain.replace("<animal>", animal)
+                chain = chain.r..("<animal>", animal)
                 verse += chain
                 chain = swallowed+animal+" that"+phrases[0]+"\n"+chain
             ____:
                 verse += phrases[number-1] + "\n"
-                chain = chain.replace("<animal>", animal)
+                chain = chain.r..("<animal>", animal)
                 verse += chain
                 chain = swallowed + animal + ".\n" + chain
 
@@ -46,11 +46,11 @@ ___ chain():
 
 
 ___ verses(letter):
-    r.. letter.replace('die.', 'die.slice').split('slice')
+    r.. letter.r..('die.', 'die.slice').s..('slice')
 
 
 ___ recite(start_verse, end_verse):
-    generated = [verse.strip().split("\n") ___ verse __ verses(chain())]
+    generated = [verse.s...s..("\n") ___ verse __ verses(chain())]
     __ start_verse __ end_verse:
         r.. generated[start_verse-1]
     ____:

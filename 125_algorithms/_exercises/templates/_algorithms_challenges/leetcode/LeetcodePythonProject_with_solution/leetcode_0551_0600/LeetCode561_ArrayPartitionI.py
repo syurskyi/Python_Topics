@@ -6,5 +6,5 @@ Created on Aug 28, 2017
 
 class Solution(object):
     ___ arrayPairSum(self, nums):
-        nums.sort()
+        nums.s..()
         r.. s..(nums[::2])

@@ -47,7 +47,7 @@ class Solution:
             cur <<= 2
             cur &= 0xFFFFF  # 10 * 2 = 20 position
             cur += s[i]
-            __ cur __ h and cur n.. __ ret:
+            __ cur __ h a.. cur n.. __ ret:
                 ret.add(cur)
             ____:
                 h.add(cur)

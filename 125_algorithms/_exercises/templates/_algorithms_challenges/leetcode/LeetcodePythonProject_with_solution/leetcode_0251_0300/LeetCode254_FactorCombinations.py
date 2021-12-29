@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         res, stack, x    # list, [], 2
-        while True:
+        w... T...
             __ x > n//x:
                 __ n.. stack:
                     r.. res

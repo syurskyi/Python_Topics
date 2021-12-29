@@ -20,7 +20,7 @@ True
 Note: you need to pip install freezegun if you want to run the tests locally.
 """
 
-____ datetime _______ datetime
+____ d__ _______ d__
 
 ___ ontrack_reading(books_goal: int, books_read: int,
                     day_of_year: int = N..) -> bool:

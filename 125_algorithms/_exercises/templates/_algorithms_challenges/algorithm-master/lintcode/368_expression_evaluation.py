@@ -53,7 +53,7 @@ class Solution:
                 and its priority is higher or same ('*' == '/' > '+' == '-')
                 then pop and output
                 """
-                while (stack and stack[-1] __ self.P and
+                w.... (stack a.. stack[-1] __ self.P a..
                        self.P[stack[-1]] >= self.P[char]):
                     res.a..(stack.pop())
                 stack.a..(char)
@@ -65,14 +65,14 @@ class Solution:
                 then continue to pop and output
                 until meet '('
                 """
-                while stack and stack[-1] != '(':
+                w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop())
                 stack.pop()  # evict '('
 
         """
         output the remaining in `stack`
         """
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
 
         r.. res

@@ -41,7 +41,7 @@ class Solution:
 
         NOT_FOUND = -1
 
-        __ S __ n.. N.. and T __ '':
+        __ S __ n.. N.. a.. T __ '':
             r.. 0
 
         __ n.. S o. n.. T:
@@ -83,7 +83,7 @@ class Solution:
             """
             _code = (_code * MG + ord(S[i]) - A) % MOD
 
-            __ _code __ tcode and S[i - n + 1:i + 1] __ T:
+            __ _code __ tcode a.. S[i - n + 1:i + 1] __ T:
                 r.. i - n + 1
 
         r.. NOT_FOUND

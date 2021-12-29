@@ -126,4 +126,4 @@ def foo():
     (false_positive, false_positive_after_strip),
 ])
 ___ test_strip_comments(arg, expected):
-    ... strip_comments(arg).strip() __ expected.strip()
+    ... strip_comments(arg).s.. __ expected.s..

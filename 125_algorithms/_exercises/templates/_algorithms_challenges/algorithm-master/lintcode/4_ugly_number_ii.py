@@ -21,11 +21,11 @@ class Solution:
         i2 = i3 = i5 = 0
 
         ___ _ __ r..(1, n):
-            while ans[i2] * 2 <= ans[-1]:
+            w.... ans[i2] * 2 <= ans[-1]:
                 i2 += 1
-            while ans[i3] * 3 <= ans[-1]:
+            w.... ans[i3] * 3 <= ans[-1]:
                 i3 += 1
-            while ans[i5] * 5 <= ans[-1]:
+            w.... ans[i5] * 5 <= ans[-1]:
                 i5 += 1
 
             ans.a..(m..((

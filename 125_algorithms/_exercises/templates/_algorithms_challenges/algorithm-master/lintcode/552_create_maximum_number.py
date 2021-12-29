@@ -25,9 +25,9 @@ class Solution:
         n = l..(a)
 
         ___ i __ r..(n):
-            while (
-                res and
-                l..(res) + n - i > size and
+            w.... (
+                res a..
+                l..(res) + n - i > size a..
                 res[-1] < a[i]
             ):
                 res.pop()

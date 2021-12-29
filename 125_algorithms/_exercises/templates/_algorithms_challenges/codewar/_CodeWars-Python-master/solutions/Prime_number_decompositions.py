@@ -11,8 +11,8 @@ ___ getAllPrimeFactors(n):
     result    # list
     __ isvalidparameter(n):
         factor = 2
-        while n > 1:
-            while n % factor __ 0:
+        w.... n > 1:
+            w.... n % factor __ 0:
                 n /= factor
                 result.a..(factor)
             factor += 1
@@ -36,9 +36,9 @@ ___ getUniquePrimeFactorsWithProducts(n):
     result    # list
     __ isvalidparameter(n):
         factors = getUniquePrimeFactorsWithCount(n)
-        result = map(l.... x: x[0] ** x[1], zip(factors[0], factors[1]))
+        result = map(l.... x: x[0] ** x[1], z..(factors[0], factors[1]))
     r.. result
 
 
 ___ isvalidparameter(n):
-    r.. isi..(n, int) and n > 0
+    r.. isi..(n, int) a.. n > 0

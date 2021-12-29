@@ -6,8 +6,8 @@ class Solution(object):
     """
     d = collections.defaultdict(int)
     l = ans = 0
-    ___ i, c __ enumerate(s):
-      while l > 0 and d[c] > 0:
+    ___ i, c __ e..(s):
+      w.... l > 0 a.. d[c] > 0:
         d[s[i - l]] -= 1
         l -= 1
       d[c] += 1
@@ -19,7 +19,7 @@ class Solution(object):
     d = {}
     start = 0
     ans = 0
-    ___ i, c __ enumerate(s):
+    ___ i, c __ e..(s):
       __ c __ d:
         start = max(start, d[c] + 1)
       d[c] = i

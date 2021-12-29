@@ -1,6 +1,6 @@
 _______ json
 ____ dateutil.tz _______ gettz
-____ datetime _______ date, timedelta, tzinfo
+____ d__ _______ date, t.., tzinfo
 ____ dateutil.parser _______ parse
 ____ pathlib _______ Path
 _______ requests
@@ -43,7 +43,7 @@ ___ longest_streak(
     longest_streak = float("-inf")
     start_date = end_date = N..
     
-    day_timedelta = timedelta(days=1)
+    day_timedelta = t..(days=1)
     previous_date= current_start =N..
     current_streak = 1
     ___ i __ r..(l..(commits)):

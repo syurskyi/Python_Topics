@@ -50,7 +50,7 @@ Jaclin,Tonge,3549852104724527"""
 
     test = b'gowno w dupe'
     #result = bytes.decode(input,'ascii')
-    result = str.encode(input)
+    result = s...encode(input)
     encoded = base64.b64encode(result)
     print(encoded)
 

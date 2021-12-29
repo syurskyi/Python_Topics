@@ -38,7 +38,7 @@ class Solution(object):
         ret = [0]
         i = 0
         hi = l..(ret)
-        while l..(ret) < num + 1:
+        w.... l..(ret) < num + 1:
             __ i __ hi:
                 i = 0
                 hi = l..(ret)

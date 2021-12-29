@@ -12,10 +12,10 @@ class Interval(object):
 
 class Solution(object):
     ___ findRightInterval(self, intervals):
-        sortedList = [(interval.start, i) ___ i, interval __ enumerate(intervals)]
-        sortedList.sort()
+        sortedList = [(interval.start, i) ___ i, interval __ e..(intervals)]
+        sortedList.s..()
         result    # list
-        ___ i, interval __ enumerate(intervals):
+        ___ i, interval __ e..(intervals):
             ind = self.binary_search(interval.end, sortedList)
             __ ind != i:
                 result.a..(ind)
@@ -25,7 +25,7 @@ class Solution(object):
     
     ___ binary_search(self, target, sortedList):
         start, end = 0, l..(sortedList)
-        while start < end:
+        w.... start < end:
             mid = (start+end)//2
             __ sortedList[mid][0] < target:
                 start = mid+1
@@ -36,7 +36,7 @@ class Solution(object):
     
     ___ findRightInterval_short(self, intervals):
         _______ bisect
-        l = s..((e.start, i) ___ i, e __ enumerate(intervals))
+        l = s..((e.start, i) ___ i, e __ e..(intervals))
         res    # list
         ___ e __ intervals:
             r = bisect.bisect_left(l, (e.end,))

@@ -55,7 +55,7 @@ class Solution:
         __ n.. root:
             r..
         stk = [root]
-        while stk:
+        w.... stk:
             cur = stk.pop()
             lst.insert(0, cur.val)  # reversely insert
             __ cur.left:

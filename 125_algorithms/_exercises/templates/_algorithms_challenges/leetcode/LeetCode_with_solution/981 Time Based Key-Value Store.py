@@ -63,18 +63,18 @@ class TimeMap:
         """
         self.m = defaultdict(l..)
 
-    ___ set(self, key: str, value: str, timestamp: int) -> N..
+    ___ set(self, key: s.., value: s.., timestamp: int) -> N..
         n = (timestamp, value)
         bisect.insort(self.m[key], n)
 
-    ___ get(self, key: str, timestamp: int) -> str:
+    ___ get(self, key: s.., timestamp: int) -> s..:
         __ key n.. __ self.m:
             r.. ""
 
         # find the largest v, s.t. v <= t
         lst = self.m[key]
         i = bisect.bisect(lst, (timestamp, ""))
-        __ i < l..(lst) and lst[i][0] __ timestamp:
+        __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
         i -= 1
         __ i >= 0:

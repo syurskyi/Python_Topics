@@ -1,7 +1,7 @@
 #number of measurements to inserted
 data = int(input())
 #enter all the measurements seperated by space
-mea = l..(map(float, input().split()))
+mea = l..(map(float, input().s..()))
 #this array is used to store the results
 mea_store    # list
 

@@ -13,7 +13,7 @@ class Solution(object):
 
     ___ reverse(cur):
       pre = N..
-      while cur:
+      w.... cur:
         tmp = cur.next
         cur.next = pre
         pre = cur
@@ -23,7 +23,7 @@ class Solution(object):
     p = head = reverse(head)
     carry = 1
     pre = N..
-    while p:
+    w.... p:
       val = (p.val + carry) % 10
       carry = 1 __ val < p.val ____ 0
       p.val = val

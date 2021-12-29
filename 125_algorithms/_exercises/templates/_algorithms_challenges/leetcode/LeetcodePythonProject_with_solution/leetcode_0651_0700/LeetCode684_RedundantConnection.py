@@ -20,7 +20,7 @@ class Solution(object):
         r.. [-1, -1]
     
     ___ getRoot(self, roots, ind):
-        while roots[ind] != -1:
+        w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     

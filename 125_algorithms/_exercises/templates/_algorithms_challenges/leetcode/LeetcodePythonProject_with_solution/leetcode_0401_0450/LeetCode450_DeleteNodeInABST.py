@@ -24,7 +24,7 @@ class Solution(object):
             newRoot = node.right
             left = node.left
             node = newRoot
-            while node.left:
+            w.... node.left:
                 node = node.left
             node.left = left
             r.. newRoot
@@ -32,7 +32,7 @@ class Solution(object):
             newRoot = node.left
             right = node.right
             node = newRoot
-            while node.right:
+            w.... node.right:
                 node = node.right
             node.right = right
             r.. newRoot

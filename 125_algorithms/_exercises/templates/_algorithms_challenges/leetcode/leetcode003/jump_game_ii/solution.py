@@ -27,7 +27,7 @@ class Solution:
         end = nums[0]  # `end` is nums[start - 1]
         res = 1  # At least one step if len(nums) > 1
         reached = False
-        while end < n - 1:
+        w.... end < n - 1:
             res += 1
             max_end = end  # `end` for the next loop
             ___ i __ r..(start, end + 1):

@@ -16,7 +16,7 @@ class Solution(object):
                 hashset = set()
                 count = 0
                 num0 = num
-                while num0 != num o. count __ 0:
+                w.... num0 != num o. count __ 0:
                     count += 1
                     num0 = nums[num0]
                     hashset.add(num0)

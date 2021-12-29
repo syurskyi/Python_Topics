@@ -22,12 +22,12 @@ class Solution:
         closed_ptr = 0
         duplicate_count = 0
         open_ptr = closed_ptr+1
-        while open_ptr<length:
+        w.... open_ptr<length:
             __ A[closed_ptr]__A[open_ptr]:
                 __ duplicate_count>=1:
                     # find next non-duplicate
                     try:
-                        while A[closed_ptr]__A[open_ptr]:
+                        w.... A[closed_ptr]__A[open_ptr]:
                             open_ptr+=1
                         duplicate_count = 0
                     except IndexError:

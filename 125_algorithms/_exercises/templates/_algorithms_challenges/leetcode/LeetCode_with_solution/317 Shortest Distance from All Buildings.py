@@ -44,7 +44,7 @@ class Solution(object):
         mini = sys.maxint
         ___ i __ xrange(m):
             ___ j __ xrange(n):
-                __ acc[i][j] < mini and reachable[i][j]:
+                __ acc[i][j] < mini a.. reachable[i][j]:
                     mini = acc[i][j]
 
         r.. mini __ mini != sys.maxint ____ -1
@@ -56,7 +56,7 @@ class Solution(object):
 
         q = [(x, y)]
         visited[x][y] = True  # enqueue, then visited
-        while q:
+        w.... q:
             l = l..(q)
             ___ idx __ xrange(l):
                 i, j = q[idx]
@@ -65,7 +65,7 @@ class Solution(object):
                 ___ dir __ self.dirs:
                     I = i+dir[0]
                     J = j+dir[1]
-                    __ 0 <= I < m and 0 <= J < n and grid[I][J] __ 0 and n.. visited[I][J]:
+                    __ 0 <= I < m a.. 0 <= J < n a.. grid[I][J] __ 0 a.. n.. visited[I][J]:
                         q.a..((I, J))
                         visited[I][J] = True
 

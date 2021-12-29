@@ -27,7 +27,7 @@ class Solution:
 
         self.minDiffInBST(root.left)
 
-        __ self.pre and root.val - self.pre.val < self.ans:
+        __ self.pre a.. root.val - self.pre.val < self.ans:
             self.ans = root.val - self.pre.val
 
         self.pre = root
@@ -56,14 +56,14 @@ class Solution:
         stack    # list
         node = root
 
-        while node o. stack:
-            while node:
+        w.... node o. stack:
+            w.... node:
                 stack.a..(node)
                 node = node.left
 
             node = stack.pop()
 
-            __ pre and node.val - pre.val < ans:
+            __ pre a.. node.val - pre.val < ans:
                 ans = node.val - pre.val
 
             pre = node

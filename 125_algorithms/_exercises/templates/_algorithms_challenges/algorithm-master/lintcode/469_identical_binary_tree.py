@@ -14,7 +14,7 @@ class Solution:
     @return: true if they are identical, or false.
     """
     ___ isIdentical(self, A, B):
-        __ n.. A and n.. B:
+        __ n.. A a.. n.. B:
             r.. True
 
         __ n.. A o. n.. B:
@@ -24,6 +24,6 @@ class Solution:
             r.. False
 
         r.. (
-            self.isIdentical(A.left, B.left) and
+            self.isIdentical(A.left, B.left) a..
             self.isIdentical(A.right, B.right)
         )

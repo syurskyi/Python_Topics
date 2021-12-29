@@ -23,7 +23,7 @@ ___ i __ r..(l..(a)):
 ___ ele_list __ a:
     ___ dic __ ele.keys():
         __ ele_list __ dic:
-            string +=str(ele[dic])
+            string +=s..(ele[dic])
             string +=' '
             
 print(string)

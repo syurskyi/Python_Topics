@@ -3,7 +3,7 @@ ____ functools _______ singledispatch
 
 @singledispatch
 ___ count_down(arg):
-    __ n.. isi..(arg, (str, tuple, set,
+    __ n.. isi..(arg, (s.., tuple, set,
                             int, float, d.., r..)):
         raise ValueError
 
@@ -11,11 +11,11 @@ ___ count_down(arg):
 @count_down.register(l..)
 ___ _(arg):
     ___ k __ r..(l..(arg)):
-        print(''.join(map(str, arg)))
+        print(''.join(map(s.., arg)))
         arg.pop()
 
 
-@count_down.register(str)
+@count_down.register(s..)
 @count_down.register(tuple)
 @count_down.register(set)
 @count_down.register(r..)
@@ -26,7 +26,7 @@ ___ _(arg):
 @count_down.register(int)
 @count_down.register(float)
 ___ _(arg):
-    count_down(l..(str(arg)))
+    count_down(l..(s..(arg)))
 
 
 @count_down.register(d..)

@@ -1,4 +1,4 @@
-____ datetime _______ date, datetime
+____ d__ _______ date, d__
 
 MAC1 = """
 reboot    ~                         Wed Apr 10 22:39
@@ -20,11 +20,11 @@ ___ extract_date(reboots):
     ___ line __ lines:
         __ l..(line.strip()) __ 0:
             continue
-        line_parts = line.strip().s..
-        time_part = line_parts[-1].split(':')
-        yield datetime(year=2019,
-                       month=months[line_parts[-3]],
-                       day=int(line_parts[-2]),
+        line_parts = line.s...s..
+        time_part = line_parts[-1].s..(':')
+        y.. d__ y.._2019,
+                        m.._months[line_parts[-3]],
+                        d.._int(line_parts[-2]),
                        hour=int(time_part[0]),
                        minute=int(time_part[1]))
 
@@ -48,6 +48,6 @@ ___ calc_max_uptime(reboots):
         __ previous __ N..
             previous = this_date
             continue
-        records.a..(((previous - this_date).days, str(previous.date())))
+        records.a..(((previous - this_date).days, s..(previous.date())))
         previous = this_date
     r.. s..(records)[-1]

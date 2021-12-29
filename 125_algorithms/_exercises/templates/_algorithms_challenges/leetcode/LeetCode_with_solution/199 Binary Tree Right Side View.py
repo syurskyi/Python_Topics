@@ -35,9 +35,9 @@ class Solution:
         __ root:
             cur_lvl.a..(root)
 
-        while cur_lvl:
+        w.... cur_lvl:
             ret.a..(cur_lvl[-1].val)
-            while cur_lvl:
+            w.... cur_lvl:
                 cur = cur_lvl.pop(0)
                 __ cur.left: nxt_lvl.a..(cur.left)
                 __ cur.right: nxt_lvl.a..(cur.right)

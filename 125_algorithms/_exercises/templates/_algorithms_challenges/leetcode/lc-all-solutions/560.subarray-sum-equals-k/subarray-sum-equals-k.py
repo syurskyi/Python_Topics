@@ -7,7 +7,7 @@ class Solution(object):
     """
     preSum = ans = 0
     visit = {0: 1}
-    ___ i, n __ enumerate(nums):
+    ___ i, n __ e..(nums):
       preSum += n
       ans += visit.get(preSum - k, 0)
       visit[preSum] = visit.get(preSum, 0) + 1

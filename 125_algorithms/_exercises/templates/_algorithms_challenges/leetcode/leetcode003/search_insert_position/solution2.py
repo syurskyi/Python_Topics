@@ -19,9 +19,9 @@ class Solution(object):
         n = l..(nums)
         left = 0
         right = n - 1
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) / 2
-            __ mid > 0 and nums[mid - 1] < target < nums[mid]:
+            __ mid > 0 a.. nums[mid - 1] < target < nums[mid]:
                 r.. mid
             ____ target <= nums[mid]:
                 right = mid

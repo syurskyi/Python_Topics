@@ -24,7 +24,7 @@ class Solution(object):
             r.. newRoot
         level = 1
         queue = [root]
-        while queue:
+        w.... queue:
             num = l..(queue)
             ___ _ __ r..(num):
                 node = queue.pop(0)

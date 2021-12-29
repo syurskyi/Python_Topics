@@ -8,7 +8,7 @@ TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
 __ n.. PATH.exists():
-    urlretrieve(S3.format(FILE_NAME), PATH)
+    urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
 ___ _get_data(path=PATH):
@@ -83,7 +83,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
     i = 0
     code_block = N..
     previous_dashed_line = False
-    while i < l..(mutpy_output):
+    w.... i < l..(mutpy_output):
         line = mutpy_output[i]
         __ code_block:
             code_block.a..(line)

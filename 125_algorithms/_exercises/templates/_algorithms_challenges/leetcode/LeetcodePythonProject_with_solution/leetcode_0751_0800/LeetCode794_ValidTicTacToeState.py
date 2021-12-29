@@ -34,9 +34,9 @@ class Solution(object):
         owin = rows[0]__-3 o. rows[1]__-3 o. rows[2]__-3 o.\
             cols[0]__-3 o. cols[1]__-3 o. cols[2]__-3 o.\
             diag __ -3 o. antidiag __ -3
-        __ (xwin and turns __ 0) o. (owin and turns __ 1):
+        __ (xwin a.. turns __ 0) o. (owin a.. turns __ 1):
             r.. False
-        r.. (turns__0 o. turns__1) and (n.. xwin o. n.. owin)
+        r.. (turns__0 o. turns__1) a.. (n.. xwin o. n.. owin)
     
     ___ test(self):
         testCases = [

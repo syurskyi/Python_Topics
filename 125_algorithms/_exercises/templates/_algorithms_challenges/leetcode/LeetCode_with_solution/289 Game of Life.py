@@ -54,10 +54,10 @@ class Solution(object):
                 ___ d __ self.dirs:
                     I = i+d[0]
                     J = j+d[1]
-                    __ 0 <= I < m and 0 <= J < n:
+                    __ 0 <= I < m a.. 0 <= J < n:
                         __ I < i:
                             cnt += lines[i%2][J]
-                        ____ I __ i and J < j:
+                        ____ I __ i a.. J < j:
                             cnt += lines[(i+1)%2][J]
                         ____:
                             cnt += board[I][J]

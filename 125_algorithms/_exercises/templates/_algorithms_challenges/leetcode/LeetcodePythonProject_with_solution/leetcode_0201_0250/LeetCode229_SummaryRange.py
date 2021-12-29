@@ -13,9 +13,9 @@ class Solution(object):
         result    # list
         __ n.. nums: r.. result
         i = 0
-        while i < l..(nums):
+        w.... i < l..(nums):
             start = nums[i]
-            while i+1 < l..(nums) and nums[i+1] __ nums[i]+1:
+            w.... i+1 < l..(nums) a.. nums[i+1] __ nums[i]+1:
                 i+=1
             end = nums[i]
             __ end __ start:

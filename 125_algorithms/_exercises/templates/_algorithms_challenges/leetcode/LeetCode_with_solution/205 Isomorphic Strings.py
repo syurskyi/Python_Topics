@@ -30,10 +30,10 @@ class Solution:
         m = {}
         mapped = set()  # case "ab", "aa"
         ___ i __ xrange(l..(s)):
-            __ s[i] n.. __ m and t[i] n.. __ mapped:
+            __ s[i] n.. __ m a.. t[i] n.. __ mapped:
                 m[s[i]] = t[i]
                 mapped.add(t[i])
-            ____ s[i] __ m and m[s[i]] __ t[i]:
+            ____ s[i] __ m a.. m[s[i]] __ t[i]:
                 pass
             ____:
                 r.. False

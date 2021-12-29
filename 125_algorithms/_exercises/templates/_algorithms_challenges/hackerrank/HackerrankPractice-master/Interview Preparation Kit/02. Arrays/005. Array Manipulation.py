@@ -2,12 +2,12 @@
 #  Score: 60
 
 
-n, queries = map(int, input().split())
+n, queries = map(int, input().s..())
 
 arr = [0 ___ i __ r..(n+2)]
 
 ___ i __ r..(queries):
-    start, finish, k = map(int, input().split())
+    start, finish, k = map(int, input().s..())
     arr[start - 1] += k
     arr[finish] -= k
 

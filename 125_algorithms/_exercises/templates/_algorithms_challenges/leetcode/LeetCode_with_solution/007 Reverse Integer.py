@@ -18,14 +18,14 @@ class Solution(object):
         x *= sign
 
         # eliminated leading zero in the reversed integer
-        while x:
+        w.... x:
             __ x%10 __ 0:
                 x /= 10
             ____:
                 break
 
         # string manipulation
-        x = str(x)
+        x = s..(x)
         lst = l..(x)  # list('123') returns ['1', '2', '3']
         lst.reverse()
         x = "".join(lst)

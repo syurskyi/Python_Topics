@@ -11,7 +11,7 @@ class Solution(object):
     heap = [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
     ans    # list
-    while l..(ans) < l..(s):
+    w.... l..(ans) < l..(s):
       temp    # list
       ___ _ __ r..(k):
         __ n.. heap:

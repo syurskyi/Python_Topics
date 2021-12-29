@@ -9,7 +9,7 @@ class Solution:
         __ A __ N.. o. B __ N.. o. C __ N..
             r.. False
 
-        __ A __ '' and B __ '' and C __ '':
+        __ A __ '' a.. B __ '' a.. C __ '':
             r.. True
 
         a, b, c = l..(A), l..(B), l..(C)
@@ -43,17 +43,17 @@ class Solution:
             """
             dp[i][0] = (dp[i - 1][0] and A[i - 1] == C[i - 1])
             """
-            __ dp[prev][0] and A[i - 1] __ C[i - 1]:
+            __ dp[prev][0] a.. A[i - 1] __ C[i - 1]:
                 dp[curr][0] = True
 
             ___ j __ r..(1, b + 1):
                 dp[curr][j] = False
 
-                __ dp[prev][j] and A[i - 1] __ C[i + j - 1]:
+                __ dp[prev][j] a.. A[i - 1] __ C[i + j - 1]:
                     dp[curr][j] = True
                     continue
 
-                __ dp[curr][j - 1] and B[j - 1] __ C[i + j - 1]:
+                __ dp[curr][j - 1] a.. B[j - 1] __ C[i + j - 1]:
                     dp[curr][j] = True
 
         r.. dp[curr][b]

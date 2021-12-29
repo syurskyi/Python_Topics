@@ -32,7 +32,7 @@ class Solution():
         count = 0
         ___ i0 __ r..(max(i-1, 0), m..(l..(board), i+2)):
             ___ j0 __ r..(max(j-1, 0), m..(l..(board[0]), j+2)):
-                __ i0 __ i and j0 __ j: continue
+                __ i0 __ i a.. j0 __ j: continue
                 __ board[i0][j0] __ (1, 2):
                     count+=1
         r.. count
@@ -46,10 +46,10 @@ class Solution():
             [0,0,0,0,0],
         ]
         print('before:')
-        print('\n'.join([str(l) ___ l __ board]))
+        print('\n'.join([s..(l) ___ l __ board]))
         print('after:')
         self.gameOfLife(board)
-        print('\n'.join([str(l) ___ l __ board]))
+        print('\n'.join([s..(l) ___ l __ board]))
 
 __ __name__ __ '__main__':
     Solution().test()

@@ -11,7 +11,7 @@ class Solution(object):
       drop = l..(num) - k
       stack    # list
       ___ c __ num:
-        while drop > 0 and stack and stack[-1] < c:
+        w.... drop > 0 a.. stack a.. stack[-1] < c:
           stack.pop()
           drop -= 1
         stack.a..(c)
@@ -20,7 +20,7 @@ class Solution(object):
     ___ merge(nums1, nums2):
       ans    # list
       i = j = 0
-      while i < l..(nums1) and j < l..(nums2):
+      w.... i < l..(nums1) a.. j < l..(nums2):
         __ nums1[i:] > nums2[j:]:
           ans.a..(nums1[i])
           i += 1
@@ -36,7 +36,7 @@ class Solution(object):
 
     ans    # list
     ___ i __ r..(0, k + 1):
-      __ i <= l..(_nums1) and k - i <= l..(_nums2):
+      __ i <= l..(_nums1) a.. k - i <= l..(_nums2):
         n1 = getKDigits(_nums1, i)
         n2 = getKDigits(_nums2, k - i)
         __ i __ 2:

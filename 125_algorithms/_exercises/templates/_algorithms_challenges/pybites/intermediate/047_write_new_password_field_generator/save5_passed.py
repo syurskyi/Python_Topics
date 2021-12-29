@@ -1,7 +1,7 @@
 _______ string
 _______ re
 
-used_passwords = set('PassWord@1 PyBit$s9'.split())
+used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 ___ validate_password(password):
     s = re.search(r'^.*(?=.*\d)(?=.*[a-z]{2,})(?=.*[A-Z]){6,12}', password)
@@ -10,4 +10,4 @@ ___ validate_password(password):
         used_passwords.add(password)
     ____:
         r.. False
-    r.. p and bool(s)
+    r.. p a.. bool(s)

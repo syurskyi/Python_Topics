@@ -11,13 +11,13 @@ class Solution:
 
         stack = [1]
 
-        while stack:
+        w.... stack:
             x = stack.pop()
             ans.a..(x)
 
             # considering the case no carry up if x + 1
             # that is, x in [1, 8]
-            __ x < n and x % 10 < 9:
+            __ x < n a.. x % 10 < 9:
                 stack.a..(x + 1)
 
             __ x * 10 <= n:

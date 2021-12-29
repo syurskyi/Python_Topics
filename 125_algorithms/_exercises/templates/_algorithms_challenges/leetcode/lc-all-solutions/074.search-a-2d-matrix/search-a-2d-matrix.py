@@ -12,7 +12,7 @@ class Solution(object):
     n = l..(matrix[0])
 
     start, end = 0, m * n - 1
-    while start + 1 < end:
+    w.... start + 1 < end:
       mid = start + (end - start) / 2
       __ matrix[mid / n][mid % n] > target:
         end = mid

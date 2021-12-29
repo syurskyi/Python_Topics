@@ -19,14 +19,14 @@ ___ blackjack_counter(games):
             __ card __ 'A':
                 ace_count += 1
                 
-        while total > 21 and ace_count > 0:
+        w.... total > 21 a.. ace_count > 0:
             total -= 10
             ace_count -= 1
 
         __ total > 21:
             answer.a..('Bust')
         ____:
-            answer.a..(str(total))
+            answer.a..(s..(total))
 
     print(' '.join(answer))
 blackjack_counter(input())

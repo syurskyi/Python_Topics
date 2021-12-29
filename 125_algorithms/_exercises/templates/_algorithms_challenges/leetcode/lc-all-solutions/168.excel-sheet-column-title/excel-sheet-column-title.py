@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: str
     """
     ans = ""
-    while n > 0:
+    w.... n > 0:
       y = n % 26
       __ y __ 0:
         char = "Z"

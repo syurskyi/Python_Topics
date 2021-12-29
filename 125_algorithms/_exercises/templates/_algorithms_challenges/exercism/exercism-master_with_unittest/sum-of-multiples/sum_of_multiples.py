@@ -1,4 +1,4 @@
-____ itertools _______ chain
+____ i.. _______ chain
 
 
 ___ sum_of_multiples(limit, factors):

@@ -7,7 +7,7 @@ __ n..(2< base_num <9):
 num2  ''
 
 w___ num1>0:
-    num2  str(num1%base_num) + num2
+    num2  s..(num1%base_num) + num2
     num1 // base_num
 
 print(num2)

@@ -24,12 +24,12 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
-            __ cur.next and cur.next.val__cur.val:  # duplicated
+            __ cur.next a.. cur.next.val__cur.val:  # duplicated
                 # find the next non_duplicate
                 next_non_duplicate = cur.next
-                while next_non_duplicate and cur.val__next_non_duplicate.val:
+                w.... next_non_duplicate a.. cur.val__next_non_duplicate.val:
                     next_non_duplicate = next_non_duplicate.next
 
                 # remove all duplicated nodes 

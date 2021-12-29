@@ -13,7 +13,7 @@ class Solution(object):
         result    # list
         sortNums = s..(nums, r.._T..
         hashmap = {}
-        ___ i, num __ enumerate(sortNums):
+        ___ i, num __ e..(sortNums):
             hashmap[num] = i+1
         ___ num __ nums:
             ind = hashmap[num]
@@ -24,5 +24,5 @@ class Solution(object):
             ____ ind __ 3:
                 result.a..('Bronze Medal')
             ____:
-                result.a..(str(ind))
+                result.a..(s..(ind))
         r.. result

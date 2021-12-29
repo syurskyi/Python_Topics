@@ -40,7 +40,7 @@ class Solution:
             a = words1[i]
             b = words2[i]
 
-            __ a != b and b n.. __ simils[a]:
+            __ a != b a.. b n.. __ simils[a]:
                 r.. False
 
         r.. True

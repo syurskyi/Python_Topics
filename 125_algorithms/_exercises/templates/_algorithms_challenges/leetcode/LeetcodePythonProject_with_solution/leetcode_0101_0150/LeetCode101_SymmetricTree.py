@@ -21,14 +21,14 @@ class Solution(object):
         r.. self.helper(root.left, root.left)
     
     ___ helper(self, left, right):
-        __ n.. left and n.. right:
+        __ n.. left a.. n.. right:
             r.. True
         ____ n.. left o. n.. right:
             r.. False
         ____ left.val != right.val:
             r.. False
         ____:
-            r.. self.helper(left.left, right.right) and\
+            r.. self.helper(left.left, right.right) a..\
                 self.helper(left.right, right.left)
     
     ___ isSymmetric(self, root):
@@ -44,7 +44,7 @@ class Solution(object):
             stack.a..(root.right)
         ____ root.right:
             r.. False
-        while stack:
+        w.... stack:
             __ l..(stack)%2 != 0:
                 r.. False
             right = stack.pop()

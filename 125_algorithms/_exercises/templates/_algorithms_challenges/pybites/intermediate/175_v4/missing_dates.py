@@ -1,4 +1,4 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 
 
 ___ get_missing_dates(dates):
@@ -16,7 +16,7 @@ ___ get_missing_dates(dates):
     missing = l..()
 
     ___ k __ r..(1, diff + 1):
-        chk_date = first + timedelta(days=k)
+        chk_date = first + t..(days=k)
 
         __ chk_date n.. __ dates:
             missing.a..(chk_date)

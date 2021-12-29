@@ -15,7 +15,7 @@ class Solution(object):
     """
     ans    # list
     queue = deque([root])
-    while queue:
+    w.... queue:
       s = 0
       n = l..(queue)
       ___ _ __ r..(n):

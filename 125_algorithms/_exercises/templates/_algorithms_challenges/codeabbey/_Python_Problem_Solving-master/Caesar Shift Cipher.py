@@ -1,6 +1,6 @@
 _______ string
 #accept the data
-data, k = l..(map(int,input().split()))
+data, k = l..(map(int,input().s..()))
 
 # import string is used to get all 26 alphabets 
 s1 = string.ascii_lowercase

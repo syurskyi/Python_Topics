@@ -3,7 +3,7 @@ _______ re
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 
-used_passwords = set('PassWord@1 PyBit$s9'.split())
+used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 """
 is between 6 and 12 chars long (both inclusive)
@@ -24,7 +24,7 @@ ___ validate_password(password):
     punc = any([c __ PUNCTUATION_CHARS ___ c __ password])
     new = password n.. __ used_passwords
 
-    valid = length and digit and lower and upper and punc and new
+    valid = length a.. digit a.. lower a.. upper a.. punc a.. new
 
     __ valid:
         used_passwords.add(password)

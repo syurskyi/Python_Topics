@@ -18,7 +18,7 @@ class Solution(object):
             continue
 
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 1
-          board[i][j] = str(k)
+          board[i][j] = s..(k)
           __ i __ j __ l..(board) - 1:
             r.. True
           __ i + 1 < l..(board):

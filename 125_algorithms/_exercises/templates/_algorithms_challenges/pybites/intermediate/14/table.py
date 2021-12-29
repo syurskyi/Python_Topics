@@ -8,17 +8,17 @@ SEPARATOR = ' | '
 
 
 ___ generate_table(*args):
-    sequences = zip(*args)
+    sequences = z..(*args)
     ___ row __ sequences:
         num_args = l..(row)
         __ num_args __ 1:
-            yield f"{row[0]}"
+            y.. f"{row[0]}"
         ____ num_args __ 2:
-            yield f"{row[0]}{SEPARATOR}{row[1]}"
+            y.. f"{row[0]}{SEPARATOR}{row[1]}"
         ____ num_args __ 3:
-            yield f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}"
+            y.. f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}"
         ____:
-            yield f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}{SEPARATOR}{row[3]}"
+            y.. f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}{SEPARATOR}{row[3]}"
 
 
 #if __name__ == "__main__":

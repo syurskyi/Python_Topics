@@ -8,7 +8,7 @@ class Solution(object):
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     __ l..(nums) <= 2:
-      nums.sort()
+      nums.s..()
       r..
     numscopy = nums + []
     mid = self.quickselect(0, l..(nums) - 1, nums, l..(nums) / 2 - 1)
@@ -52,11 +52,11 @@ class Solution(object):
   ___ partition(self, start, end, A):
     left, right = start, end
     pivot = A[left]
-    while left < right:
-      while left < right and A[right] <= pivot:
+    w.... left < right:
+      w.... left < right a.. A[right] <= pivot:
         right -= 1
       A[left] = A[right]
-      while left < right and A[left] >= pivot:
+      w.... left < right a.. A[left] >= pivot:
         left += 1
       A[right] = A[left]
     A[left] = pivot

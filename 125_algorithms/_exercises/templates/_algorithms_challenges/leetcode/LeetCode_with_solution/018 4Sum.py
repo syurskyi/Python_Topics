@@ -29,16 +29,16 @@ class Solution:
 
         # record result
         result    # list
-        num.sort()
+        num.s..()
         length = l..(num)
 
         h = 0
-        while h<length-3:
+        w.... h<length-3:
             i = h+1
-            while i<length-2:
+            w.... i<length-2:
                 j = i+1
                 k = length-1
-                while j<k:
+                w.... j<k:
                     lst = [num[h], num[i], num[j], num[k]]
                     summation = s..(lst)
                     __ summation__target:
@@ -46,9 +46,9 @@ class Solution:
                         k -= 1
                         j += 1
                         # remove duplicate
-                        while j<k and num[j]__num[j-1]:
+                        w.... j<k a.. num[j]__num[j-1]:
                             j += 1
-                        while j<k and num[k]__num[k+1]:
+                        w.... j<k a.. num[k]__num[k+1]:
                             k -= 1
                     ____ summation>target:
                         k -= 1
@@ -57,11 +57,11 @@ class Solution:
     
                 i += 1
                 # Jump, remove duplicate
-                while i<length-2 and num[i]__num[i-1]:
+                w.... i<length-2 a.. num[i]__num[i-1]:
                     i += 1
             h += 1
             # Jump, remove duplicate
-            while h<length-3 and num[h]__num[h-1]:
+            w.... h<length-3 a.. num[h]__num[h-1]:
                 h += 1
 
         r.. result
@@ -78,7 +78,7 @@ class Solution:
         length, result_set, sum2index = l..(num), set(), {}
         __ length<4:
             r.. []
-        num.sort()
+        num.s..()
 
         ___ p __ xrange(length):
             ___ q __ xrange(p+1, length):

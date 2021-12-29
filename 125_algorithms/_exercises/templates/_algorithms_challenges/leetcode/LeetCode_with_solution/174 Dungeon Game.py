@@ -51,7 +51,7 @@ class Solution:
         F = [[sys.maxint ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
         ___ i __ xrange(m-1, -1, -1):
             ___ j __ xrange(n-1, -1, -1):
-                __ i __ m-1 and j __ n-1:
+                __ i __ m-1 a.. j __ n-1:
                     F[i][j] = max(1, 1-dungeon[i][j])
                 ____:
                     path = m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
@@ -69,13 +69,13 @@ class Solution:
         """
         m = l..(dungeon)
         n = l..(dungeon[0])
-        __ m __ 1 and n __ 1:
+        __ m __ 1 a.. n __ 1:
             r.. 1-m..(0, dungeon[0][0])
 
         F = [[-sys.maxint-1 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
         ___ i __ xrange(1, m+1):
             ___ j __ xrange(1, n+1):
-                __ i __ 1 and j __ 1:
+                __ i __ 1 a.. j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
                 ____:
                     F[i][j] = max(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]

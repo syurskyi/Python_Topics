@@ -45,12 +45,12 @@ class Solution(object):
         ]
         ___ nums, r, c __ testCases:
             print('nums:')
-            print('\n'.join([str(row) ___ row __ nums]))
+            print('\n'.join([s..(row) ___ row __ nums]))
             print('r: %s' % r)
             print('c: %s' % c)
             result = self.matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.join([str(row) ___ row __ result]))
+            print('\n'.join([s..(row) ___ row __ result]))
             print('-='*30)
 
 __ __name__ __ '__main__':

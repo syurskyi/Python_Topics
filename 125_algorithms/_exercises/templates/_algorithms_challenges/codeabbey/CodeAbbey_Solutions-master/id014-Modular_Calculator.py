@@ -1,6 +1,6 @@
 ___ modCalc(num):
         calc = raw_input()
-        while calc[:1] != "%":
+        w.... calc[:1] != "%":
                 __ calc[:1] __ '+':
                         num += int(calc[2:].strip())
                 ____ calc[:1] __ '*':

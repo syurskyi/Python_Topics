@@ -33,7 +33,7 @@ class LogSystem(object):
         res    # list
         idx = self.units[gra]
         ___ timestamp __ self.timestamps:
-            __ timestamp[1][:idx] >= s[:idx] and\
+            __ timestamp[1][:idx] >= s[:idx] a..\
                 timestamp[1][:idx] <= e[:idx]:
                 res.a..(timestamp[0])
         r.. res

@@ -60,7 +60,7 @@ class Solution:
             r.. 0
 
         x = int(sqrt(2 * n))
-        while x * (x + 1) // 2 < n:
+        w.... x * (x + 1) // 2 < n:
             x += 1
 
         r.. x

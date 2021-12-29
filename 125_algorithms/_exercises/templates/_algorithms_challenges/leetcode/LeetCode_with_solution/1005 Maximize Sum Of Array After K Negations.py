@@ -41,7 +41,7 @@ class Solution:
 
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
-        A.sort()
+        A.s..()
         ___ i __ r..(l..(A)):
             __ K __ 0:
                 break
@@ -52,7 +52,7 @@ class Solution:
                 K -= 1
             ____:
                 __ K % 2 != 0:
-                    __ i - 1 >= 0 and A[i-1] < A[i]:
+                    __ i - 1 >= 0 a.. A[i-1] < A[i]:
                         A[i-1] *= -1
                     ____:
                         A[i] *= -1

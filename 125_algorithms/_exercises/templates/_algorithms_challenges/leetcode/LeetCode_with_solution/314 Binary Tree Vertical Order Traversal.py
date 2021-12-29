@@ -30,7 +30,7 @@ class Solution(object):
         __ cur:
             q.a..((cur, col))
 
-        while q:
+        w.... q:
             l = l..(q)
             ___ i __ xrange(l):  # avoid non-stop access as in `for elt in q`
                 v, c = q[i]

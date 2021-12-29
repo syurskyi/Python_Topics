@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 ____ bs4 _______ BeautifulSoup as Soup
 _______ requests
@@ -6,7 +6,7 @@ _______ requests
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
 CONTENT = requests.get(PACKT).text
 
-Book = namedtuple('Book', 'title description image link')
+Book = n..('Book', 'title description image link')
 
 
 ___ get_book():

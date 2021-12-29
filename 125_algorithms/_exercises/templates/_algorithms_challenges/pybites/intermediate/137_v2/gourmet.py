@@ -6,7 +6,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 
 ____ collections _______ Counter,defaultdict
 _______ operator
-_______ itertools
+_______ i..
 
 
 
@@ -122,7 +122,7 @@ ___ best_match_per_wine(wine_type="all"):
 
     
 
-    maximum = max(itertools.product(values,CHEESES),key=l.... x: _calculate_similarity(*x))
+    maximum = max(i...product(values,CHEESES),key=l.... x: _calculate_similarity(*x))
 
 
     r.. (*maximum,_calculate_similarity(*maximum))

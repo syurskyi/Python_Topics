@@ -19,5 +19,5 @@ ___ get_pass_and_swap_number(array):
 
     print (passed, swapped)
 
-array = l..(map(int, input().split()))
+array = l..(map(int, input().s..()))
 get_pass_and_swap_number(array)

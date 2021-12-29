@@ -16,7 +16,7 @@ class Solution:
         :rtype: int
         """
         msb = 0
-        while num >> msb:
+        w.... num >> msb:
             msb += 1
 
         mask = (1 << msb) - 1

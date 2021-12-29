@@ -2,7 +2,7 @@ ____ collections _______ defaultdict
 
 names = 'bob julian tim martin rod sara joyce nick beverly kevin'.s..
 ids = r..(l..(names))
-users = d..(zip(ids, names))  # 0: bob, 1: julian, etc
+users = d..(z..(ids, names))  # 0: bob, 1: julian, etc
 
 friendships = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3),
                (3, 4), (4, 5), (5, 6), (5, 7), (5, 9),

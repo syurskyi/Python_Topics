@@ -125,7 +125,7 @@ ___ test_word_count_implementation(doc, expected):
     indirect=["doc"],
 )
 ___ test_correct_chaining(doc, expected):
-    ... str(doc) __ expected
+    ... s..(doc) __ expected
 
 
 @pytest.mark.parametrize(

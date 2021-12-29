@@ -16,10 +16,10 @@ class Solution:
         left_finished = N..
         stk    # list
         ___ num __ preorder:
-            __ left_finished and num < left_finished:
+            __ left_finished a.. num < left_finished:
                 r.. False
 
-            while stk and stk[-1] < num:
+            w.... stk a.. stk[-1] < num:
                 left_finished = stk.pop()
 
             stk.a..(num)

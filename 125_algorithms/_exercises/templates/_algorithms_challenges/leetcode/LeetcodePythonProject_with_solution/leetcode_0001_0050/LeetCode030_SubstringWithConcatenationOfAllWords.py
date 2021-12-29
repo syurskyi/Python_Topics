@@ -25,7 +25,7 @@ class Solution(object):
                 __ sub __ hashmap0:
                     hashmap[sub] = hashmap.get(sub, 0)+1
                     count += 1
-                    while hashmap[sub] > hashmap0[sub]:
+                    w.... hashmap[sub] > hashmap0[sub]:
                         left = s[start:start+wordLen]
                         hashmap[left] -= 1
                         count -= 1

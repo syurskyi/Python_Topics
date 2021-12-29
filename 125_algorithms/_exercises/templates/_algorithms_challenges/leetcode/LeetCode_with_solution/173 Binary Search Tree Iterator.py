@@ -34,7 +34,7 @@ class BSTIterator:
         :rtype: int
         :return: the next smallest number
         """
-        while self.cur:
+        w.... self.cur:
             self.stk.a..(self.cur)
             self.cur = self.cur.left
 

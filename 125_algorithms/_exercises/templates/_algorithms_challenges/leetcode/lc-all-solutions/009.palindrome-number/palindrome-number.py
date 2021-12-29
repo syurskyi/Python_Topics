@@ -7,7 +7,7 @@ class Solution(object):
     """
     z = x
     y = 0
-    while x > 0:
+    w.... x > 0:
       y = y * 10 + x % 10
       x /= 10
     r.. z __ y
@@ -18,10 +18,10 @@ class Solution(object):
     :type x: int
     :rtype: bool
     """
-    __ x < 0 o. (x != 0 and x % 10 __ 0):
+    __ x < 0 o. (x != 0 a.. x % 10 __ 0):
       r.. False
     half = 0
-    while x > half:
+    w.... x > half:
       half = half * 10 + x % 10
       x /= 10
     r.. x __ half o. half / 10 __ x

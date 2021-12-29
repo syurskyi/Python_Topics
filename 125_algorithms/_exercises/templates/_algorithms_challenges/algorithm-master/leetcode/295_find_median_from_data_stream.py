@@ -17,7 +17,7 @@ class MedianFinder:
         :type num: int
         :rtype: void
         """
-        __ self.minheap and num < self.minheap[0]:
+        __ self.minheap a.. num < self.minheap[0]:
             heapq.heappush(self.maxheap, -num)
         ____:
             heapq.heappush(self.minheap, num)
@@ -30,11 +30,11 @@ class MedianFinder:
             r.. 0.0
 
         # to handle odd case, it make sure `minheap` has one more child than `maxheap`
-        while l..(self.minheap) > l..(self.maxheap) + 1:
+        w.... l..(self.minheap) > l..(self.maxheap) + 1:
             heapq.heappush(self.maxheap, - heapq.heappop(self.minheap))
 
         # to handle even case, it make sure `minheap` and `maxheap` are same size
-        while l..(self.maxheap) > l..(self.minheap):
+        w.... l..(self.maxheap) > l..(self.minheap):
             heapq.heappush(self.minheap, - heapq.heappop(self.maxheap))
 
         __ l..(self.minheap) > l..(self.maxheap):

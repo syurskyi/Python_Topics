@@ -61,7 +61,7 @@ class RLEIterator:
 
     ___ next(self, n: int) -> int:
         run = self.cur_used + n
-        while self.cur_i < l..(self.A) and run > self.A[self.cur_i]:
+        w.... self.cur_i < l..(self.A) a.. run > self.A[self.cur_i]:
             run -= self.A[self.cur_i]
             self.cur_i += 2
 

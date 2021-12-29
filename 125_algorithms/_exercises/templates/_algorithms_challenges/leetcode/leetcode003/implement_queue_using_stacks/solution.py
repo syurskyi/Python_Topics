@@ -60,5 +60,5 @@ class Queue(object):
 
     ___ _move(self):
         """Move elements from stack1 to stack2"""
-        while self.stack1:
+        w.... self.stack1:
             self.stack2.a..(self.stack1.pop())

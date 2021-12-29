@@ -33,18 +33,18 @@ class Solution(object):
         arr    # list
         stack    # list
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
             arr.a..(node.val)
             node0 = node.right
-            while node0:
+            w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
         i, j = 0, l..(arr)-1
-        while i < j:
+        w.... i < j:
             __ k __ arr[i]+arr[j]:
                 r.. True
             ____ k > arr[i]+arr[j]:

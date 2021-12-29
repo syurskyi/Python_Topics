@@ -1,10 +1,10 @@
-____ collections _______ namedtuple
-____ datetime _______ date
+____ collections _______ n..
+____ d__ _______ date
 
 _______ pandas as pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
-STATION = namedtuple("Station", "ID Date Value")
+STATION = n..("Station", "ID Date Value")
 
 # df = pd.read_csv(DATA_FILE, parse_dates=['Date'])
 

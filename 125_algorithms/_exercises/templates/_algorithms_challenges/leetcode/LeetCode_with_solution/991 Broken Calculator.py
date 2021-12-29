@@ -51,7 +51,7 @@ class Solution:
         We always choose Y / 2 if Y is even.
         """
         t = 0
-        while Y > X:
+        w.... Y > X:
             __ Y % 2 __ 0:
                 Y //= 2
             ____:
@@ -67,7 +67,7 @@ class Solution:
         q = [X]
         t = 0
         has_larger = False
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ Y:
@@ -75,7 +75,7 @@ class Solution:
 
                 cur = e * 2
                 __ cur >= 1:
-                    __ cur > Y and n.. has_larger:
+                    __ cur > Y a.. n.. has_larger:
                         has_larger = True
                         cur_q.a..(cur)
                     ____ cur <= Y:

@@ -2,9 +2,9 @@
 # Score: 10
 
 
-____ itertools _______ product
+____ i.. _______ product
 
 
-a = l..(map(int, input().split()))
-b = l..(map(int, input().split()))
+a = l..(map(int, input().s..()))
+b = l..(map(int, input().s..()))
 print(*l..(product(a, b)))

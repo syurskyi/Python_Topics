@@ -24,7 +24,7 @@ ___ load(name):
 
 ___ save(name, journal_data):
     filename  get_full_pathname(name)
-    print("..... saving to: {}".format(filename))
+    print("..... saving to: {}".f..(filename))
 
     with open(filename, 'w') as fout:
         ___ entry __ journal_data:

@@ -15,18 +15,18 @@ class Solution:
         sign = 1
         i = 0
 
-        while i < N and s[i] __ ' ':
+        w.... i < N a.. s[i] __ ' ':
             i += 1
 
-        __ i < N and s[i] __ ('+', '-'):
+        __ i < N a.. s[i] __ ('+', '-'):
             sign = -1 __ s[i] __ '-' ____ 1
             i += 1
 
-        while i < N and s[i].isdigit():
+        w.... i < N a.. s[i].isdigit():
             val = ord(s[i]) - ZERO
 
             __ (ans > INT_MAX // 10 o.
-                (ans __ INT_MAX // 10 and val > 7)):
+                (ans __ INT_MAX // 10 a.. val > 7)):
                 r.. INT_MAX __ sign __ 1 ____ ~INT_MAX
 
             ans = ans * 10 + val

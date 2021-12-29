@@ -39,7 +39,7 @@ class Solution:
     ___ binary_search(self, P, a):
         left, right = 0, l..(P) - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ P[mid] < a:
                 left = mid
@@ -78,7 +78,7 @@ class Solution:
                 `dp[j]` the existing subseq end at `j`
                 `+ 1` means included `A[i]`
                 """
-                __ A[j] < A[i] and dp[j] + 1 > dp[i]:
+                __ A[j] < A[i] a.. dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     # pi[i] = j
 

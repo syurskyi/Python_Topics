@@ -16,7 +16,7 @@ class Solution(object):
         nextQueue    # list
         elem    # list
         queue.a..(root)
-        while queue:
+        w.... queue:
             first = queue[0]
             elem.a..(first.val)
             del queue[0]

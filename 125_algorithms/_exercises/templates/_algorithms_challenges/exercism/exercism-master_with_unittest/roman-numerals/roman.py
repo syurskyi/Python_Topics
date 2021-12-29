@@ -25,7 +25,7 @@ class Roman:
     ___ get_components(cls, arabic):
         components    # list
         ___ key __ reversed(s..(cls.NUMERALS.keys())):
-            while arabic >= key:
+            w.... arabic >= key:
                 arabic -= key
                 components.a..(key)
         r.. components

@@ -4,7 +4,7 @@ INDENTS = 4
 ___ print_hanging_indents(poem):
     indent = False
     ___ line __ poem.splitlines():
-        l = line.strip()
+        l = line.s..
         __ l..(l) __ 0:
             indent = False
             continue

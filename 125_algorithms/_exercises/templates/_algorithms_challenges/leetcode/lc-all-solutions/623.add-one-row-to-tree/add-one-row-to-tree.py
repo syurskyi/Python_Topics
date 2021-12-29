@@ -17,7 +17,7 @@ class Solution(object):
     dummy = TreeNode(-1)
     dummy.left = root
     stack = [(1, dummy, 0)]
-    while stack:
+    w.... stack:
       p, node, h = stack.pop()
       __ n.. node:
         continue

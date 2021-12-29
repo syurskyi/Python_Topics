@@ -59,4 +59,4 @@ class Solution:
                     r.. True
                 r.. False
 
-        r.. self.dfs(node.left, d + 1) and self.dfs(node.right, d + 1)
+        r.. self.dfs(node.left, d + 1) a.. self.dfs(node.right, d + 1)

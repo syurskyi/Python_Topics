@@ -14,7 +14,7 @@ class Solution(object):
         r..
 
       ___ i __ r..(l..(s)):
-        __ i > 0 and s[i] __ s[i - 1] and i - 1 n.. __ visited o. i __ visited:
+        __ i > 0 a.. s[i] __ s[i - 1] a.. i - 1 n.. __ visited o. i __ visited:
           continue
         visited |= {i}
         path.a..(s[i])

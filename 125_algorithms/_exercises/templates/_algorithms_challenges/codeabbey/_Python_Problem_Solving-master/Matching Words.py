@@ -1,5 +1,5 @@
 d = input().s.. 
-d.sort()
+d.s..()
 res    # list
 d_dic = {}
 ___ i __ d:

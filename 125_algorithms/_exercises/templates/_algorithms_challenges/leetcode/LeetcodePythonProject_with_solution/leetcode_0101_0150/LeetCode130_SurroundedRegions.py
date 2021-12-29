@@ -33,20 +33,20 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         index = x*n+y
         queue = [index]
-        while queue:
+        w.... queue:
             nextInd = queue.pop(0)
             i = int(nextInd/n)
             j = nextInd%n
-            __ i > 1 and board[i-1][j] __ 'O':
+            __ i > 1 a.. board[i-1][j] __ 'O':
                 board[i-1][j] = '#'
                 queue.a..((i-1)*n+j)
-            __ j > 1 and board[i][j-1] __ 'O':
+            __ j > 1 a.. board[i][j-1] __ 'O':
                 board[i][j-1] = '#'
                 queue.a..(i*n+j-1)
-            __ i+1 < m and board[i+1][j] __ 'O':
+            __ i+1 < m a.. board[i+1][j] __ 'O':
                 board[i+1][j] = '#'
                 queue.a..((i+1)*n+j)
-            __ j+1 < n and board[i][j+1] __ 'O':
+            __ j+1 < n a.. board[i][j+1] __ 'O':
                 board[i][j+1] = '#'
                 queue.a..(i*n+j+1)
     

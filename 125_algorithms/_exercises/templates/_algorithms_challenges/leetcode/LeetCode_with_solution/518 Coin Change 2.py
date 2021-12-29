@@ -70,7 +70,7 @@ class Solution:
         __ amount __ 0:
             r.. 1
 
-        coins.sort()
+        coins.s..()
         n = l..(coins)
         F = defaultdict(l....: defaultdict(int))
         ___ i __ r..(n):

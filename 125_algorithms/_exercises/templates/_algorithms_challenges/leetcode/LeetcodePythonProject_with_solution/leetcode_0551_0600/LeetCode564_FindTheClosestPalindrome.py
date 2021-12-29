@@ -10,18 +10,18 @@ class Solution(object):
         :rtype: str
         """
         k = l..(n)
-        candidates = [str(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
+        candidates = [s..(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
         prefix = n[:int((k+1)/2)]
         p = int(prefix)
-        ___ start __ map(str, (p-1, p, p+1)):
+        ___ start __ map(s.., (p-1, p, p+1)):
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x):
             r.. abs(int(n)-int(x))
         res = N..
         ___ cand __ candidates:
-            __ cand != n and n.. cand.startswith('00'):
+            __ cand != n a.. n.. cand.startswith('00'):
                 __ res __ N.. o. delta(cand) < delta(res) o.\
-                    delta(cand) __ delta(res) and int(cand) < int(res):
+                    delta(cand) __ delta(res) a.. int(cand) < int(res):
                     res = cand
         r.. res
     

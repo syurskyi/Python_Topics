@@ -21,7 +21,7 @@ class Solution:
         # Reverse num[k + 1:]
         left = k + 1
         right = n - 1
-        while left < right:
+        w.... left < right:
             num[left], num[right] = num[right], num[left]
             left += 1
             right -= 1

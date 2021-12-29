@@ -1,4 +1,4 @@
-_______ datetime
+_______ d__
 
 ____ streak _______ extract_dates, calculate_streak
 
@@ -21,9 +21,9 @@ ___ test_extract_dates():
     """
     dates = extract_dates(data)
     ... l..(dates) __ 8  # one less = deduped 2018-09-18
-    ... datetime.date(2018, 9, 18) __ dates
-    ... datetime.date(2018, 10, 23) __ dates
-    ... datetime.date(2018, 11, 9) __ dates
+    ... d__.date(2018, 9, 18) __ dates
+    ... d__.date(2018, 10, 23) __ dates
+    ... d__.date(2018, 11, 9) __ dates
 
 
 ___ test_streak_of_0_days():

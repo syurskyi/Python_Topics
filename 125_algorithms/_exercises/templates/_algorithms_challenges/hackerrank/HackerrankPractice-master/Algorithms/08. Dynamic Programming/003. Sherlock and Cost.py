@@ -5,7 +5,7 @@
 test = int(input())
 ___ i __ r..(test):
     n = int(input())
-    b = l..(map(int, input().split()))
+    b = l..(map(int, input().s..()))
 
     dp = [[0], [0]]
 

@@ -29,7 +29,7 @@ ___ get_top_books(content_ N..
     soup = BeautifulSoup(content, 'html.parser')
     right_table = soup.find('div', {'class': 'entry-content'})
 
-    books = [row.text.strip()
+    books = [row.text.s..
              ___ row __ right_table.find_all(
             'a', href=re.compile(AMAZON))]
     c = Counter(books)
@@ -41,5 +41,5 @@ ___ get_top_books(content_ N..
             books_final.a..(letter.strip())
             count.a..(c[letter])
 
-    r.. s..(l..(zip(books_final, count)),
+    r.. s..(l..(z..(books_final, count)),
                   key=l.... tup: tup[1], r.._T..

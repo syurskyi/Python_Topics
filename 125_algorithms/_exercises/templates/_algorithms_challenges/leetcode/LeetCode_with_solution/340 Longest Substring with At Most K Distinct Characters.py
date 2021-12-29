@@ -27,12 +27,12 @@ class Solution(object):
         st = 0  # start
         counter = defaultdict(int)
         maxa = 0
-        ___ idx, val __ enumerate(s):
+        ___ idx, val __ e..(s):
             __ counter[val] __ 0:
                 k -= 1
 
             counter[val] += 1
-            while k < 0:
+            w.... k < 0:
                 counter[s[st]] -= 1
                 __ counter[s[st]] __ 0:
                     k += 1

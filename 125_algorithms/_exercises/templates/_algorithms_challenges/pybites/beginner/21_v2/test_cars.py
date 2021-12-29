@@ -5,7 +5,7 @@ ____ cars _______ (get_all_jeeps, get_first_model_each_manufacturer,
 ___ test_get_all_jeeps():
     expected = 'Grand Cherokee, Cherokee, Trailhawk, Trackhawk'
     actual = get_all_jeeps()
-    ... type(actual) __ str
+    ... type(actual) __ s..
     ... actual __ expected
 
 

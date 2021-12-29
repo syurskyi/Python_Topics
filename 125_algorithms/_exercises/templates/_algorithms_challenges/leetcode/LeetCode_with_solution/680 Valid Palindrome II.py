@@ -17,7 +17,7 @@ string is 50000.
 
 
 class Solution:
-    ___ validPalindrome(self, s: str) -> bool:
+    ___ validPalindrome(self, s: s..) -> bool:
         """
         Brute force, delete and check. O(n^2)
 
@@ -27,7 +27,7 @@ class Solution:
         n = l..(s)
         i = 0
         j = n - 1
-        while i < j:
+        w.... i < j:
             __ s[i] __ s[j]:
                 i += 1
                 j -= 1

@@ -1,5 +1,5 @@
-____ datetime _______ date
-____ itertools _______ islice
+____ d__ _______ date
+____ i.. _______ islice
 
 ____ notifications _______ gen_bite_planning
 

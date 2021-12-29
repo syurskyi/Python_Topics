@@ -5,6 +5,6 @@ z  {}
 
 ___ i __ r..(l..(x)):
  #   z[y[i]] = x[i]
- z  d..(zip(y,x))
+ z  d..(z..(y,x))
 
 print(z)

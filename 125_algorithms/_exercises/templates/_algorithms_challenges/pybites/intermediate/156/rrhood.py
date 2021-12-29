@@ -59,7 +59,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
 
     in_line = l.... word,line: re.search(word,line,flags=re.I) __ n.. N..
 
-    ___ i,line __ enumerate(text.splitlines()):
+    ___ i,line __ e..(text.splitlines()):
         ___ character __ characters:
             __ type(character) __ tuple:
                 ___ value __ character:

@@ -88,13 +88,13 @@ class Solution:
 
         O(n^2)
         """
-        nums.sort()
+        nums.s..()
         # transform to (num, count)
         counter    # list
         i = 0
         j = 0
-        while i < l..(nums):
-            while j < l..(nums) and nums[i] __ nums[j]:
+        w.... i < l..(nums):
+            w.... j < l..(nums) a.. nums[i] __ nums[j]:
                 j += 1
             counter.a..((nums[i], j - i))
             i = j

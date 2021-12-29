@@ -1,4 +1,4 @@
-____ split _______ get_sentences
+____ s.. _______ get_sentences
 
 TEXT = """
 PyBites was founded 19th of December 2016. That means that today,

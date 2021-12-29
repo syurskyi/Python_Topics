@@ -13,7 +13,7 @@ class Solution:
             ans = ['0', '1', '8']
             n -= 1
 
-        while n:
+        w.... n:
             queue    # list
 
             ___ s __ ans:

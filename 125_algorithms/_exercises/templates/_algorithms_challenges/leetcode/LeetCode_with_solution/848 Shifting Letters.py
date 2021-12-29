@@ -29,7 +29,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ shiftingLetters(self, S: str, shifts: List[int]) -> str:
+    ___ shiftingLetters(self, S: s.., shifts: List[int]) -> s..:
         """
         preprocess shifts
         """
@@ -39,7 +39,7 @@ class Solution:
             shifts[i] %= 26
 
         ret    # list
-        ___ i, s __ enumerate(S):
+        ___ i, s __ e..(S):
             b = (ord(s) + shifts[i] - ord('a')) % 26 + ord('a')
             b = chr(b)
             ret.a..(b)

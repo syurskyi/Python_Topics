@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: bool
     """
     __ k __ 0:
-      r.. "0,0" __ ",".join([str(n) ___ n __ nums])
+      r.. "0,0" __ ",".join([s..(n) ___ n __ nums])
     __ l..(nums) < 2:
       r.. False
     __ l..(nums) __ 2:

@@ -19,7 +19,7 @@ class Solution(object):
       left = dfs(root.left)
       right = dfs(root.right)
 
-      __ n.. left and n.. right:
+      __ n.. left a.. n.. right:
         r.. root
 
       __ right __ N..

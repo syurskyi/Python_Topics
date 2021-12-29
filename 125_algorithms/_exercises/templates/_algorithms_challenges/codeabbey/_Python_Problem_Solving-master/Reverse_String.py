@@ -2,9 +2,9 @@ string_data = input().s..
 print(string_data)
 result    # list
 ___ i __ r..(l..(string_data)):
-    str = string_data[i]
-    str = str[::-1]
-    result.a..(str)
+    s.. = string_data[i]
+    s.. = s..[::-1]
+    result.a..(s..)
 
 result = result[::-1]
 

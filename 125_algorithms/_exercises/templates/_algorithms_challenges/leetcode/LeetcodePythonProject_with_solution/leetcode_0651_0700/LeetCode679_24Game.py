@@ -16,7 +16,7 @@ class Solution(object):
         __ l..(nums) __ 1:
             r.. abs(nums[0]-24) <= 0.0001
         nums = s..(nums)
-        __ ''.join(str(nums) + ',') __ hashmap:
+        __ ''.join(s..(nums) + ',') __ hashmap:
             r.. False
         ___ i __ r..(l..(nums)-1):
             ___ j __ r..(i+1, l..(nums)):
@@ -27,10 +27,10 @@ class Solution(object):
                     self.helper(nums1 + [a*b], hashmap) o.\
                     self.helper(nums1 + [b-a], hashmap) o.\
                     self.helper(nums1 + [a-b], hashmap) o.\
-                    (a != 0 and self.helper(nums1 + [float(b)/a], hashmap)) o.\
-                    (b != 0 and self.helper(nums1 + [float(a)/b], hashmap)):
+                    (a != 0 a.. self.helper(nums1 + [float(b)/a], hashmap)) o.\
+                    (b != 0 a.. self.helper(nums1 + [float(a)/b], hashmap)):
                     r.. True
-        hashmap[''.join(str(nums)+',')] = False
+        hashmap[''.join(s..(nums)+',')] = False
         r.. False
     
     ___ test(self):

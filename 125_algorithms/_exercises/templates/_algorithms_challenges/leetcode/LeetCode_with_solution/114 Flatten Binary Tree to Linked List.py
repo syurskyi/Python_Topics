@@ -111,7 +111,7 @@ class Solution:
         """
         __ n.. root:
             r.. N..
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             r.. root
         __ root.right:
             r.. self.get_last(root.right)

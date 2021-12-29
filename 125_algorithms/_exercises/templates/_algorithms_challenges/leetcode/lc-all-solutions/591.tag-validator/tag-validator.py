@@ -15,7 +15,7 @@ class Solution(object):
       r.. code[start:i + 1]
 
     ___ isTagsMatched(left, right):
-      r.. l..(left) + 1 __ l..(right) and left[1:] __ right[2:]
+      r.. l..(left) + 1 __ l..(right) a.. left[1:] __ right[2:]
 
     ___ isClosedTag(tag):
       r.. tag[1] __ "/"
@@ -44,12 +44,12 @@ class Solution(object):
     tagLen = 0
     stack    # list
     i = 0
-    while i < l..(code):
+    w.... i < l..(code):
       __ code[i] __ "<":
         __ isCDATATag(i):
           __ n.. stack:
             r.. False
-          while i < l..(code) - 7 and n.. code.startswith("]]>", i):
+          w.... i < l..(code) - 7 a.. n.. code.startswith("]]>", i):
             i += 1
           __ code.startswith("]]>", i):
             i += 3
@@ -67,7 +67,7 @@ class Solution(object):
               r.. False
             __ isTagsMatched(stack[-1], token):
               stack.pop()
-              __ n.. stack and i + l..(token) < l..(code):
+              __ n.. stack a.. i + l..(token) < l..(code):
                 r.. False
             ____:
               r.. False

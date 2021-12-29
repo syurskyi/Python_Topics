@@ -16,15 +16,15 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: str = text) -> l..:
+___ slice_and_dice(text: s.. = text) -> l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     strip = text.strip(" . !")
-    split = text.split("\n")
+    s.. = text.s..("\n")
     ___ words __ text:
-        strip, split
+        strip, s..
     ___ firstword __ text:
-        __ firstword.islower():
-            firstword.split
-    results = [text].strip.split
+        __ firstword.isl..
+            firstword.s..
+    results = [text].strip.s..
     r.. results

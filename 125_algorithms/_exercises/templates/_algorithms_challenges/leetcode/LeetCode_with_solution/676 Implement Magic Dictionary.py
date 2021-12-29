@@ -55,7 +55,7 @@ class MagicDictionary:
 
                 __ i __ l..(s) - 1:
                     # modified exactly once and have a word ends here 
-                    r.. modified and cur.end
+                    r.. modified a.. cur.end
 
                 ___ child __ cur.children.values():
                     __ self.search(child, s, i + 1, modified):
@@ -65,7 +65,7 @@ class MagicDictionary:
 
         self.trie = Trie()
 
-    ___ buildDict(self, dic: List[str]) -> N..
+    ___ buildDict(self, dic: List[s..]) -> N..
         """
         Build a dictionary through a list of words
         """
@@ -73,7 +73,7 @@ class MagicDictionary:
             root = self.trie.root
             root.children[s[0]] = self.trie.insert(root.children[s[0]], s, 0)
 
-    ___ search(self, word: str) -> bool:
+    ___ search(self, word: s..) -> bool:
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """

@@ -22,7 +22,7 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ numMatchingSubseq(self, S: str, words: List[str]) -> int:
+    ___ numMatchingSubseq(self, S: s.., words: List[s..]) -> int:
         """
         Linear O(|S| + sum(|word|))
         no need to if-check
@@ -42,7 +42,7 @@ class Solution:
 
         r.. l..(itrs_m[N..])
 
-    ___ numMatchingSubseq_TLE(self, S: str, words: List[str]) -> int:
+    ___ numMatchingSubseq_TLE(self, S: s.., words: List[s..]) -> int:
         """
         Brute force O(|S| |Words| M)
 
@@ -54,13 +54,13 @@ class Solution:
         """
         I = [0 ___ _ __ words]
         ___ a __ S:
-            ___ wi, i __ enumerate(I):
-                __ i < l..(words[wi]) and words[wi][i] __ a:
+            ___ wi, i __ e..(I):
+                __ i < l..(words[wi]) a.. words[wi][i] __ a:
                     I[wi] += 1
 
         r.. s..(
             1
-            ___ wi, i __ enumerate(I)
+            ___ wi, i __ e..(I)
             __ i __ l..(words[wi])
         )
 

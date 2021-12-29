@@ -37,7 +37,7 @@ class Solution:
 
         pre = dummy
         cur_lst = self.generate_lst(pre.next, k)
-        while pre and n.. N.. __ cur_lst:
+        w.... pre a.. n.. N.. __ cur_lst:
 
             # reverse
             temp = cur_lst[-1].next

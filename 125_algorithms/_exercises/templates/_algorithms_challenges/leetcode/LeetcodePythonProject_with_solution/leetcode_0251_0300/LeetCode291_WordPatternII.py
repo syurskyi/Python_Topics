@@ -6,27 +6,27 @@ Created on Mar 8, 2017
 
 class Solution(object):
     ___ wordPatternMatch(self, pattern, s):
-        __ n.. pattern and n.. s: r.. True
+        __ n.. pattern a.. n.. s: r.. True
         __ n.. pattern o. n.. s: r.. False
         hashmap = {}
         r.. self.helper(pattern, s, 0, 0, hashmap, set())
          
     ___ helper(self, pattern, s, i, j, hashmap, hashset):
-        __ i __ l..(pattern) and j __ l..(s):
+        __ i __ l..(pattern) a.. j __ l..(s):
             r.. True
         __ i >= l..(pattern) o. j >= l..(s):
             r.. False
         c = pattern[i]
         ___ k __ r..(j+1, l..(s)+1):
             sub = s[j:k]
-            __ c n.. __ hashmap and sub n.. __ hashset:
+            __ c n.. __ hashmap a.. sub n.. __ hashset:
                 hashmap[c] = sub
                 hashset.add(sub)
                 __ self.helper(pattern, s, i+1, k, hashmap, hashset):
                     r.. True
                 del hashmap[c]
                 hashset.remove(sub)
-            ____ c __ hashmap and hashmap[c] __ sub:
+            ____ c __ hashmap a.. hashmap[c] __ sub:
                 __ self.helper(pattern, s, i+1, k, hashmap, hashset):
                     r.. True
         r.. False

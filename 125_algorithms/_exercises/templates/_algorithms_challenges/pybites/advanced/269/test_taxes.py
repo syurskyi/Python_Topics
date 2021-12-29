@@ -46,7 +46,7 @@ ___ test_taxes(taxes_2019):
 
 
 ___ test_summary(taxes_2019):
-    output = str(taxes_2019).splitlines()
+    output = s..(taxes_2019).splitlines()
     ... l..(output) __ 5
     ... "Summary Report" __ output[0]
 
@@ -57,7 +57,7 @@ ___ test_low_income(taxes_2020_low):
 
 ___ test_report(taxes_2020_over, capfd):
     taxes_2020_over.report()
-    output = capfd.readouterr()[0].strip().splitlines()
+    output = capfd.readouterr()[0].s...splitlines()
     ... l..(output) __ 17
     ... "Summary Report" __ output[0]
     ... "Taxes Breakdown" __ output[6]

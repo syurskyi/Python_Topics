@@ -18,7 +18,7 @@ ___ get_files(dirname, size_in_kb):
             print(file,size)
             size /= ONE_KB
             __ size >= size_in_kb:
-                yield file
+                y.. file
 
 
 

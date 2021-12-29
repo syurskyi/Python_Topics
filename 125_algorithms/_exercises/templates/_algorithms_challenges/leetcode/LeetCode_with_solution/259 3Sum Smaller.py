@@ -13,13 +13,13 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        nums.sort()
+        nums.s..()
         cnt = 0
         n = l..(nums)
         ___ i __ xrange(n-2):
             l = i+1
             h = n-1
-            while l < h:
+            w.... l < h:
                 __ nums[i]+nums[l]+nums[h] < target:
                     cnt += h-l  # move the high ptr leftward till low.
                     l += 1

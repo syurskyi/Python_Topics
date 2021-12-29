@@ -34,10 +34,10 @@ ___ wc(file_):
         cnt_line += 1
         cnt_chars += l..(line)
         ___ c __ line:
-            __ c != ' ' and c != '\n' and c != '\t':
+            __ c != ' ' a.. c != '\n' a.. c != '\t':
                 within_word = True
                 continue
-            __ within_word __ True and (c __ ' ' o. c __ '\t' o. c __ '\n'):
+            __ within_word __ True a.. (c __ ' ' o. c __ '\t' o. c __ '\n'):
                 cnt_words += 1
                 within_word = False
     fo.close()

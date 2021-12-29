@@ -6,7 +6,7 @@ ____ collections _______ deque
 
 
 ___ i __ r..(int(input())):
-    _, n = input(), deque(map(int, input().split()))
+    _, n = input(), deque(map(int, input().s..()))
     ans = True
 
     ___ j __ r..(l..(n) - 1):

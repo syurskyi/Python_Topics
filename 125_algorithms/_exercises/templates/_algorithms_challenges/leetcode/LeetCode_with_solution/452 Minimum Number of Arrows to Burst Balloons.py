@@ -49,11 +49,11 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        points.sort(key=l.... x: x[0])
+        points.s..(key=l.... x: x[0])
         heap    # list
         ___ point __ points:
             s, e = point
-            __ heap and heap[0].e < s:
+            __ heap a.. heap[0].e < s:
                 ret += 1
                 heap    # list
 

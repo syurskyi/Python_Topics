@@ -11,7 +11,7 @@ class Solution(object):
             sub = s[:i]
             __ l..(s)%l..(sub) __ 0:
                 j = i
-                while j+l..(sub) <= n and s[j:j+l..(sub)]__sub:
+                w.... j+l..(sub) <= n a.. s[j:j+l..(sub)]__sub:
                     j += l..(sub)
                     __ j __ n:
                         r.. True

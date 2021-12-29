@@ -27,7 +27,7 @@ class Solution:
             __ freqs[s[j]] __ 1:
                 cnt += 1
 
-            while cnt > k:
+            w.... cnt > k:
                 freqs[s[i]] -= 1
                 __ freqs[s[i]] __ 0:
                     cnt -= 1

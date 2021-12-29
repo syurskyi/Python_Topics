@@ -25,13 +25,13 @@ class Solution:
     ___ searchMatrix(self, matrix, target):
         row_left = 0
         row_right = l..(matrix) - 1
-        while row_left <= row_right:
+        w.... row_left <= row_right:
             row_mid = row_left + (row_right - row_left) / 2
             row = matrix[row_mid]
-            __ target >= row[0] and target <= row[-1]:
+            __ target >= row[0] a.. target <= row[-1]:
                 left = 0
                 right = l..(row) - 1
-                while left <= right:
+                w.... left <= right:
                     mid = left + (right - left) / 2
                     __ target __ row[mid]:
                         r.. True

@@ -22,7 +22,7 @@ class Solution(object):
 
     dfs(root, 0, d)
     level = 0
-    while level __ d:
+    w.... level __ d:
       ans += d[level],
       level += 1
     r.. ans

@@ -22,7 +22,7 @@ class Solution:
             r.. N..
         lst    # list # must be constant space
         current = head
-        while(current):
+        w....(current):
             lst.a..(current)
             current = current.next
 
@@ -51,7 +51,7 @@ class Solution:
 
         slow_pre = dummy
         fast_pre = dummy
-        while fast_pre.next and fast_pre.next.next:
+        w.... fast_pre.next a.. fast_pre.next.next:
             fast_pre = fast_pre.next.next
             slow_pre = slow_pre.next
 
@@ -68,7 +68,7 @@ class Solution:
         dummy_mid.next = mid_head
         pre = dummy
         pre_mid = dummy_mid
-        while pre.next and pre_mid.next:
+        w.... pre.next a.. pre_mid.next:
             __ pre.next.val > pre_mid.next.val:
                 pre.next, pre_mid.next.next, pre_mid.next = pre_mid.next, pre.next, pre_mid.next.next
                 pre = pre.next
@@ -93,6 +93,6 @@ __ __name____"__main__":
     head = Solution().sortList(lst[0])
 
     cur = head
-    while(cur):
+    w....(cur):
         print cur.val
         cur = cur.next

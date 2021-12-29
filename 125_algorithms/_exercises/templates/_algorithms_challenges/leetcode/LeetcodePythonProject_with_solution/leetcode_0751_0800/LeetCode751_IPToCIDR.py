@@ -11,13 +11,13 @@ class Solution(object):
         :rtype: List[str]
         """
         x = 0
-        ips= ip.split('.')
+        ips= ip.s..('.')
         ___ ip __ ips:
             x = int(ip) + x*256
         res    # list
-        while n > 0:
+        w.... n > 0:
             step = x &(-x)
-            while step > n:
+            w.... step > n:
                 step /= 2
             res.a..(self.long2ip(x, step))
             x += step
@@ -30,10 +30,10 @@ class Solution(object):
             res[i] = x&255
             x >>= 8
         n = 33
-        while step > 0:
+        w.... step > 0:
             n -= 1
             step //= 2
-        r.. '.'.join([str(s) ___ s __ res])+'/'+str(n)
+        r.. '.'.join([s..(s) ___ s __ res])+'/'+s..(n)
     
     ___ test(self):
         testCases = [
@@ -52,8 +52,8 @@ __ __name__ __ '__main__':
     
     ___ n __ r..(1, 20):
         print('n: %s' % n)
-        print('{:b}'.format(n))
-        print('{:b}'.format(-n))
+        print('{:b}'.f..(n))
+        print('{:b}'.f..(-n))
         result = n&-n
         print('res: %s' % result)
         print('-='*30+'-')

@@ -44,7 +44,7 @@ class Solution:
         ___ d __ ["d", "r"]:
           di, dj = directions[d]
           newi, newj = i + di, j + dj
-          __ newi >= 0 and newi < l..(board) and newj >= 0 and newj < l..(board[0]):
+          __ newi >= 0 a.. newi < l..(board) a.. newj >= 0 a.. newj < l..(board[0]):
             __ board[newi][newj] __ "O":
               uf.union((newi * m + newj, i * m + j))
 
@@ -60,5 +60,5 @@ class Solution:
 
     ___ i __ r..(0, l..(board)):
       ___ j __ r..(0, l..(board[0])):
-        __ board[i][j] __ "O" and uf.find(i * m + j) n.. __ regions:
+        __ board[i][j] __ "O" a.. uf.find(i * m + j) n.. __ regions:
           board[i][j] = "X"

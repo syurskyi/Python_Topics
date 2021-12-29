@@ -18,12 +18,12 @@ id,first_name,last_name,email
 
 ___ convert_to_json(members=members):
     members_data    # list
-    ___ i, row __ enumerate(members.strip("\n").split("\n")):
+    ___ i, row __ e..(members.strip("\n").s..("\n")):
         __ i __ 0:
-            row = row.split(",")
+            row = row.s..(",")
             id_h, first_h, last_h, email_h = row[0], row[1], row[2], row[3]
         ____:
-            row_split = re.split("[|,;]", row)
+            row_split = re.s..("[|,;]", row)
             members_data.a..(row_split)
 
     members_stg    # list

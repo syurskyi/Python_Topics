@@ -13,12 +13,12 @@ class Solution:
         __ head __ n.. N..
             head = head.next
             h.next = N..
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             # Insertion sort
             current = h
             prev = h
-            while current __ n.. N.. and head.val > current.val:
+            w.... current __ n.. N.. a.. head.val > current.val:
                 prev = current
                 current = current.next
             # head is smaller than the head node of h

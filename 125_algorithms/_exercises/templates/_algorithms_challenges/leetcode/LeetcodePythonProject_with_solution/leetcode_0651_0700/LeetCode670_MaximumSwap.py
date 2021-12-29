@@ -9,14 +9,14 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        arr = l..(str(num))
+        arr = l..(s..(num))
         hashmap = {}
-        ___ i, c __ enumerate(arr):
+        ___ i, c __ e..(arr):
             hashmap[c] = i
         flag = False
-        ___ i, c __ enumerate(arr):
+        ___ i, c __ e..(arr):
             ___ c0 __ '9876543210':
-                __ c0 > c and hashmap.get(c0, -1) > i:
+                __ c0 > c a.. hashmap.get(c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = True
                     break

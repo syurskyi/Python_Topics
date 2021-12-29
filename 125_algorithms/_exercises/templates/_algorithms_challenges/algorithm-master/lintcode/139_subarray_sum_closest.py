@@ -1,6 +1,6 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
-Pair = namedtuple('Pair', ['sum', 'index'])
+Pair = n..('Pair', ['sum', 'index'])
 
 class Solution:
     """
@@ -31,7 +31,7 @@ class Solution:
         # since the closest sum occurred when the sum is closest
         # so we can simply calculate the difference
         # between every two adjacent indexes
-        prefix_sum.sort(key=l.... p: p.s..)
+        prefix_sum.s..(key=l.... p: p.s..)
 
         closest_sum = float('inf')
         tmp_sum = 0

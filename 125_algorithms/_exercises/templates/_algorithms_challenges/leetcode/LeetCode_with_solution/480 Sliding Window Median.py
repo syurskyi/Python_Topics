@@ -48,7 +48,7 @@ class DualHeap:
         self.to_remove = set()  # value, error mapping index in nums
 
     ___ insert(self, num):
-        __ self.max_h and num > self.max_h[0][1]:
+        __ self.max_h a.. num > self.max_h[0][1]:
             heapq.heappush(self.min_h, (num, num))
             self.min_sz += 1
         ____:
@@ -58,29 +58,29 @@ class DualHeap:
 
     ___ pop(self, num):
         self.to_remove.add(num)
-        __ self.max_h and num > self.max_h[0][1]:
+        __ self.max_h a.. num > self.max_h[0][1]:
             self.min_sz -= 1
         ____:
             self.max_sz -= 1
         self.balance()
 
     ___ clean_top(self):
-        while self.max_h and self.max_h[0][1] __ self.to_remove:
+        w.... self.max_h a.. self.max_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.max_h)
             self.to_remove.remove(num)
-        while self.min_h and self.min_h[0][1] __ self.to_remove:
+        w.... self.min_h a.. self.min_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.min_h)
             self.to_remove.remove(num)
 
     ___ balance(self):
         # keep skew in max sz
-        while self.max_sz < self.min_sz :
+        w.... self.max_sz < self.min_sz :
             self.clean_top()
             _, num =heapq.heappop(self.min_h)
             heapq.heappush(self.max_h, (-num, num))
             self.min_sz -= 1
             self.max_sz += 1
-        while self.max_sz > self.min_sz + 1:
+        w.... self.max_sz > self.min_sz + 1:
             self.clean_top()
             _, num = heapq.heappop(self.max_h)
             heapq.heappush(self.min_h, (num, num))

@@ -18,7 +18,7 @@ class Solution(object):
             r.. False
         factors = [2, 3, 5]
         ___ factor __ factors:
-            while num % factor __ 0:
+            w.... num % factor __ 0:
                 num /= factor
         __ num __ 1:
             r.. True

@@ -38,7 +38,7 @@ class Solution(object):
 
     ___ bin_search(self, M, A, t, lo=0, hi_ N..
         __ n.. hi: hi = l..(M)
-        while lo < hi:
+        w.... lo < hi:
             m = (lo+hi)/2
             __ A[M[m]] __ t:
                 r.. m
@@ -80,7 +80,7 @@ class Solution(object):
         # build the LIS (optional)
         cur = MIN[l]
         ret    # list
-        while True:
+        w... T...
             ret.a..(A[cur])
             __ RET[cur] __ -1: break
             cur = RET[cur]

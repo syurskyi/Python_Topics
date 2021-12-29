@@ -76,13 +76,13 @@ ___ test_get_father_days_default():
 
 
 ___ test_get_father_days_other_years():
-    father_days = get_father_days(year=2021)
+    father_days = get_father_days y.._2021)
     # changing dates
     ... father_days['June 20'] __ ['U.S.', 'Canada', 'U.K.']
     ... father_days['August 8'] __ ['Samoa', 'Brazil']
     ... father_days['May 13'] __ ['Germany']
     ... father_days['June 13'] __ ['Austria', 'Belgium']
-    father_days = get_father_days(year=2022)
+    father_days = get_father_days y.._2022)
     ... father_days['May 26'] __ ['Germany']
     ... father_days['June 12'] __ ['Austria', 'Belgium']
     # remains the same
@@ -94,4 +94,4 @@ ___ test_get_father_days_other_years():
 ___ test_generate_father_day_planning(capfd):
     generate_father_day_planning()
     actual = capfd.readouterr()[0]
-    ... actual.strip() __ CALENDAR_OUTPUT
+    ... actual.s.. __ CALENDAR_OUTPUT

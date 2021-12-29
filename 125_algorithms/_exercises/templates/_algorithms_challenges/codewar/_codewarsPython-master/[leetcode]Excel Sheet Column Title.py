@@ -4,7 +4,7 @@ class Solution:
     ___ convertToTitle(self, n):
         times = 0
         res    # list
-        while n >= 27:
+        w.... n >= 27:
             res.a..(n % 27)
             n %= 27
             times += 1

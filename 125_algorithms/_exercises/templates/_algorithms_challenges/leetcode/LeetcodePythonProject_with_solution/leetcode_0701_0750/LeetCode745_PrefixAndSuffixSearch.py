@@ -22,12 +22,12 @@ class WordFilter(object):
         self.buildTree(self.root2, words, True)
     
     ___ buildTree(self, root, words, reverse):
-        ___ i0, word __ enumerate(words):
+        ___ i0, word __ e..(words):
             __ reverse:
                 word = word[::-1]
             node = root
             node.candidates.add(i0)
-            ___ i, c __ enumerate(word):
+            ___ i, c __ e..(word):
                 __ c n.. __ node.children:
                     node.children[c] = TreeNode('')
                 node = node.children[c]
@@ -52,7 +52,7 @@ class WordFilter(object):
     ___ helper(self, root, word):
         __ n.. word:
             r.. root.candidates
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             __ c n.. __ root.children:
                 r.. set()
             root = root.children[c]

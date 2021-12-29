@@ -23,7 +23,7 @@ class Solution(object):
         result    # list
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ pacific[i][j] and atlantic[i][j]:
+                __ pacific[i][j] a.. atlantic[i][j]:
                     result.a..([i, j])
         r.. result
     
@@ -31,6 +31,6 @@ class Solution(object):
         visited[i][j] = True
         m, n = l..(matrix), l..(matrix[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-            __ 0 <= x < m and 0 <= y < n and\
-                n.. visited[x][y] and matrix[x][y] >= matrix[i][j]:
+            __ 0 <= x < m a.. 0 <= y < n a..\
+                n.. visited[x][y] a.. matrix[x][y] >= matrix[i][j]:
                 self.dfs(matrix, x, y, visited)

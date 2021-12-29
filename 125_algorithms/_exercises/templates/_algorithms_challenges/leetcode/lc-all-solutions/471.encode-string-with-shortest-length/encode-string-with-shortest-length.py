@@ -11,7 +11,7 @@ class Solution(object):
     dp[s] = s
     idx = (2 * s).find(s, 1)
     __ 0 <= idx < l..(s):
-      dp[s] = str(l..(s) / idx) + "[" + self.encode(s[:idx], dp) + "]"
+      dp[s] = s..(l..(s) / idx) + "[" + self.encode(s[:idx], dp) + "]"
     ___ i __ r..(1, l..(s)):
       left = self.encode(s[:i], dp)
       right = self.encode(s[i:], dp)

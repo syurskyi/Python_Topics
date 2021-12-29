@@ -10,12 +10,12 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
-        __ n.. s and n.. p: r.. True
+        __ n.. s a.. n.. p: r.. True
         m, n = l..(s), l..(p)
         dp = [[False]*(n+1) ___ _ __ r..(m+1)]
         dp[-1][-1] = True
         j = n-1
-        while j >= 0 and p[j] __ '*':
+        w.... j >= 0 a.. p[j] __ '*':
             dp[-1][j] = True
             j -= 1
         ___ i __ r..(m-1, -1, -1):

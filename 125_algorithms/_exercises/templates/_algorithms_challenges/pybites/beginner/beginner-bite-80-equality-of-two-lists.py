@@ -33,7 +33,7 @@ ___ check_equality(list1, list2):
        - return NO_EQUALITY if none of the previous cases match"""
     __ list1 __ list2: r.. Equality.SAME_REFERENCE
     ____ list1 __ list2: r.. Equality.SAME_ORDERED
-    ____ l..(list1) __ l..(list2) and n.. set(list1).difference(list2): r.. Equality.SAME_UNORDERED
+    ____ l..(list1) __ l..(list2) a.. n.. set(list1).difference(list2): r.. Equality.SAME_UNORDERED
     ____ l..(set(list1).symmetric_difference(list2)) __ 0: r.. Equality.SAME_UNORDERED_DEDUPED
     ____:
         r.. Equality.NO_EQUALITY

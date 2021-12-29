@@ -14,7 +14,7 @@ class Solution(object):
     ___ reverseList(head, k):
       pre = N..
       cur = head
-      while cur and k > 0:
+      w.... cur a.. k > 0:
         tmp = cur.next
         cur.next = pre
         pre = cur
@@ -28,7 +28,7 @@ class Solution(object):
     ret = head.next
     p = head
     pre = N..
-    while p:
+    w.... p:
       next, newHead = reverseList(p, 2)
       __ pre:
         pre.next = newHead

@@ -5,7 +5,7 @@ x  i..(x[0:-1])
 
 __ unit __ 'C' o. unit __ 'c':
     x  round(x*(9/5)+32)
-    print(str(x) + 'F')
+    print(s..(x) + 'F')
 ____ unit __ 'F' o. unit __ 'f':
     x  round((x-32)*(5/9))
-    print(str(x) + 'C')
+    print(s..(x) + 'C')

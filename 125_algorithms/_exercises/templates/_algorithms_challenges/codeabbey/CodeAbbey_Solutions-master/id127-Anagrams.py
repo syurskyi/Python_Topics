@@ -12,12 +12,12 @@ ___ check_anagram():
         
         with open('words.txt', 'r') as f:
             ___ line __ f.readlines():
-                line = line.replace('\n', '') # Remove spaces from the file.
+                line = line.r..('\n', '') # Remove spaces from the file.
                 anagram_data = Counter(line) # Count letter composition of word.
-                __ word_data __ anagram_data and word != line:
+                __ word_data __ anagram_data a.. word != line:
                     count += 1 # If letter compisiton matches and ..
                                # the word is not the exact word, count it.
-        answer.a..(str(count)) # Store answer and reset for next word.
+        answer.a..(s..(count)) # Store answer and reset for next word.
         anagram_count = 0
     print(' '.join(answer))
 check_anagram()

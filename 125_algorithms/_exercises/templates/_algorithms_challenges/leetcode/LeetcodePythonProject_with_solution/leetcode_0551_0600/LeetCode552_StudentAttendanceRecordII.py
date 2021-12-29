@@ -23,7 +23,7 @@ class Solution(object):
         )
         power = matrix
         mod = 10**9+7
-        while n:
+        w.... n:
             __ n & 1:
                 power = (power*matrix)%mod
             matrix = matrix**2 % mod

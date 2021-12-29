@@ -64,7 +64,7 @@ class Solution:
         a = k * b + r
         gcd(a, b) = gcd(b, r)
         """
-        while b:
+        w.... b:
             a, b = b, a % b
 
         r.. a

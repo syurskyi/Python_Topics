@@ -18,7 +18,7 @@ class Solution(object):
         
         top, down, left, right = 0, m-1, 0, n-1
         
-        while top <= down and left <= right:
+        w.... top <= down a.. left <= right:
             __ top __ down:
                 ___ i __ r..(left, right+1):
                     result.a..(matrix[top][i])

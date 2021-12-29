@@ -13,17 +13,17 @@ class Solution(object):
         n = l..(s)
         res = l..(r..(1, n+2))
         i = 0
-        while i < n:
+        w.... i < n:
             __ s[i] __ 'D':
                 prev = i
-                while i+1 < n and s[i+1]__'D':
+                w.... i+1 < n a.. s[i+1]__'D':
                     i += 1
                 self.reverse(res, prev, i+1)
             i += 1
         r.. res
     
     ___ reverse(self, res, l, r):
-        while l < r:
+        w.... l < r:
             res[l], res[r] = res[r], res[l]
             l += 1
             r -= 1

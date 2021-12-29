@@ -6,8 +6,8 @@ ____ dataclasses _______ dataclass
 class Bite:
 
     number: int
-    title: str
-    level: str
+    title: s..
+    level: s..
 
     ___ __init__(self, number, title, level='Beginner'):
         self.number = number

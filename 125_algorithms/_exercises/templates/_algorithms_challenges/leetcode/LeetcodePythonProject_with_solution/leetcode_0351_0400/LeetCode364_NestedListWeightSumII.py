@@ -58,7 +58,7 @@ class Solution(object):
         queue = nestedList
         result = 0
         prev = 0
-        while queue:
+        w.... queue:
             sumVal = 0
             size = l..(queue)
             ___ _ __ r..(size):

@@ -18,11 +18,11 @@ class Solution:
 
         a, b = 0, 1
         i = 0
-        ___ frac __ re.split('\+|-', E):
+        ___ frac __ re.s..('\+|-', E):
             __ n.. frac:
                 continue
 
-            _a, _b = frac.split('/')
+            _a, _b = frac.s..('/')
             _a = int(_a)
             _b = int(_b)
 
@@ -40,9 +40,9 @@ class Solution:
 
             i += 1
 
-        r.. '{}/{}'.format(a, b)
+        r.. '{}/{}'.f..(a, b)
 
     ___ get_gcd(self, a, b):
-        while b:
+        w.... b:
             a, b = b, a % b
         r.. a

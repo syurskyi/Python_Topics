@@ -18,7 +18,7 @@ class Solution:
 
         left, right = 1, l..(A) - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ self.after_dup(A, mid):
                 right = mid
@@ -74,13 +74,13 @@ class Solution:
         slow = A[0]
         fast = A[A[0]]
 
-        while slow != fast:
+        w.... slow != fast:
             slow = A[slow]
             fast = A[A[fast]]
 
         fast = 0
 
-        while slow != fast:
+        w.... slow != fast:
             slow = A[slow]
             fast = A[fast]
 

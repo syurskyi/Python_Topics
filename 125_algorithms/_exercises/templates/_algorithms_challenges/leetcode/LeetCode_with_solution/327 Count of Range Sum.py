@@ -33,17 +33,17 @@ class Solution(object):
             temp    # list
             i = j = r = mid
             ___ l __ xrange(lo, mid):
-                while i < hi and A[i] - A[l] <  lower: i += 1
-                while j < hi and A[j] - A[l] <= upper: j += 1
+                w.... i < hi a.. A[i] - A[l] <  lower: i += 1
+                w.... j < hi a.. A[j] - A[l] <= upper: j += 1
                 cnt += j - i
 
-                while r < hi and A[r] < A[l]:
+                w.... r < hi a.. A[r] < A[l]:
                     temp.a..(A[r])
                     r += 1
 
                 temp.a..(A[l])
 
-            while r < hi:  # dangling right
+            w.... r < hi:  # dangling right
                 temp.a..(A[r])
                 r += 1
 

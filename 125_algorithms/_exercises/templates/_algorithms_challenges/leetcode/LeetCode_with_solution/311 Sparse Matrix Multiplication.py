@@ -30,8 +30,8 @@ class Solution(object):
                     B1[j][i] = B[i][j]
 
         ret = [[0 ___ _ __ xrange(l..(B[0]))] ___ _ __ xrange(l..(A))]
-        ___ i, row __ enumerate(A1):
-            ___ j, col __ enumerate(B1):
+        ___ i, row __ e..(A1):
+            ___ j, col __ e..(B1):
                 s = 0
                 ___ k __ row.keys():
                     __ k __ col:

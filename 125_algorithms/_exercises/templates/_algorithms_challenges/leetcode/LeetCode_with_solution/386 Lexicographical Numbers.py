@@ -17,13 +17,13 @@ class Solution(object):
         ___ gen():
             i = 1
             ___ _ __ xrange(n):  # erroneous for while i <= n:
-                yield i
+                y.. i
                 __ i * 10 <= n:
                     i *= 10  # * 10
-                ____ i % 10 != 9 and i + 1 <= n:
+                ____ i % 10 != 9 a.. i + 1 <= n:
                     i += 1  # for current digit
                 ____:
-                    while i % 10 __ 9 o. i + 1 > n:
+                    w.... i % 10 __ 9 o. i + 1 > n:
                         i /= 10
                     i += 1
 
@@ -37,7 +37,7 @@ class Solution(object):
         ret    # list
         ___ i __ xrange(1, 10):
             sig = 1
-            while i * sig <= n:
+            w.... i * sig <= n:
                 ret.extend(r..(
                     i * sig,
                     m..((1+i)*sig-1, n)+1),

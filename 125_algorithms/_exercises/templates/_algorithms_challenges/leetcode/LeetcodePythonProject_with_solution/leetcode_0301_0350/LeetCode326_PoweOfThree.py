@@ -11,7 +11,7 @@ class Solution(object):
     
     ___ isPowerOfThreeMath(self, n):
         __ n <= 0: r.. False
-        while n > 1:
+        w.... n > 1:
             __ n % 3 != 0:
                 r.. False
             n = n/3

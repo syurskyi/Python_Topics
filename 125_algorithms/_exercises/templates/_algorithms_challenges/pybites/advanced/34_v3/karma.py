@@ -1,12 +1,12 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-Transaction = namedtuple('Transaction', 'giver points date')
-Transaction.__new__.__defaults__ = (datetime.now(),)  # http://bit.ly/2rmiUrL
+Transaction = n..('Transaction', 'giver points date')
+Transaction.__new__.__defaults__ = (d__.now(),)  # http://bit.ly/2rmiUrL
 
 
 class User:
-    ___ __init__(self, name: str):
+    ___ __init__(self, name: s..):
         self._name = name
         self._transactions    # list
 
@@ -19,7 +19,7 @@ class User:
         self._transactions.a..(other)
 
     @property
-    ___ name(self) -> str:
+    ___ name(self) -> s..:
         r.. self._name
 
     @property

@@ -16,11 +16,11 @@ w___ guess ! the_number:
 
     __ guess < the_number:
         # print('Your guess of ' + guess + ' was too LOW.')
-        print('Sorry {}, your guess of {} was too LOW.'.format(name, guess))
+        print('Sorry {}, your guess of {} was too LOW.'.f..(name, guess))
     ____ guess > the_number:
-        print('Sorry {}, your guess of {} was too HIGH.'.format(name, guess))
+        print('Sorry {}, your guess of {} was too HIGH.'.f..(name, guess))
     ____:
-        print('Excellent work {}, you won, it was {}!'.format(name, guess))
+        print('Excellent work {}, you won, it was {}!'.f..(name, guess))
 
 print('done')
 

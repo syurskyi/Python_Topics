@@ -30,9 +30,9 @@ class Solution(object):
     r.. s..(word.startswith(prefix) ___ word __ words) __ 1
 
   ___ getAbbr(self, word, prefix):
-    abbr = prefix + str(l..(word) - 1 - l..(prefix)) + word[-1]
+    abbr = prefix + s..(l..(word) - 1 - l..(prefix)) + word[-1]
     r.. abbr __ l..(abbr) < l..(word) ____ word
 
   ___ getAbbreviation(self, word):
-    abbr = word[0] + str(l..(word) - 2) + word[-1]
+    abbr = word[0] + s..(l..(word) - 2) + word[-1]
     r.. abbr __ l..(abbr) < l..(word) ____ word

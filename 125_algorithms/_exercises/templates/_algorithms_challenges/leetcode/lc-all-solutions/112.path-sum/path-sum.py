@@ -16,14 +16,14 @@ class Solution(object):
     """
     __ root:
       queue = deque([(root, root.val)])
-      while queue:
+      w.... queue:
         p, s = queue.popleft()
         left, right = p.left, p.right
         __ left:
           queue.a..((p.left, s + p.left.val))
         __ right:
           queue.a..((p.right, s + p.right.val))
-        __ n.. left and n.. right and s __ s..:
+        __ n.. left a.. n.. right a.. s __ s..:
           r.. True
       r.. False
     r.. False

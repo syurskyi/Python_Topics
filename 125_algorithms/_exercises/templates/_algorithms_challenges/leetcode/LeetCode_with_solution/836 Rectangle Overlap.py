@@ -47,7 +47,7 @@ class Solution:
             r.. self.isRectangleOverlap(rec2, rec1)
 
         r.. (
-            rect1[0] < rect2[0] < rec1[2] and
+            rect1[0] < rect2[0] < rec1[2] a..
             (
                 rec2[1] < rect1[3] < rect2[3] o.
                 rec2[3] < rect1[3] < rect2[1]

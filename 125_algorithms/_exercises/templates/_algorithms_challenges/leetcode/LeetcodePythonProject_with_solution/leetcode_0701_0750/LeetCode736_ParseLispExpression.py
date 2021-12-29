@@ -17,7 +17,7 @@ class Solution(object):
         ___ evaluate(tokens):
             __ tokens[0] __ ('add', 'mult'):
                 tmp = l..(map(int, map(getVal, tokens[1:])))
-                r.. str(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
+                r.. s..(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
             ____:
                 ___ i __ r..(1, l..(tokens)-1, 2):
                     __ tokens[i+1]:
@@ -67,7 +67,7 @@ class Solution(object):
                 r.. res
             ____:
                 i = 3
-                while True:
+                w... T...
                     sub1, i = self.nextElem(exp, i+1)
                     __ i __ l..(exp):
                         r.. self.helper(sub1, hashmap)
@@ -82,7 +82,7 @@ class Solution(object):
             res = '('
             count = 1
             i += 1
-            while i < l..(s) and count > 0:
+            w.... i < l..(s) a.. count > 0:
                 __ s[i] __ '(':
                     count += 1
                 ____ s[i] __ ')':
@@ -91,7 +91,7 @@ class Solution(object):
                 i += 1
             r.. res, i
         ____:
-            while i < l..(s) and s[i] != ' ':
+            w.... i < l..(s) a.. s[i] != ' ':
                 res += s[i]
                 i += 1
             r.. res, i

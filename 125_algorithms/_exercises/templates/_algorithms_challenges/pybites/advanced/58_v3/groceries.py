@@ -1,7 +1,7 @@
 _______ argparse
-____ collections _______ namedtuple
+____ collections _______ n..
 
-Item = namedtuple('Item', 'product price craving')
+Item = n..('Item', 'product price craving')
 
 
 class Groceries:
@@ -35,7 +35,7 @@ class Groceries:
     ___ delete(self, product):
         """Delete item matching 'product', raises IndexError
            if no item matches"""
-        ___ i, item __ enumerate(self):
+        ___ i, item __ e..(self):
             __ item.product __ product:
                 self._items.pop(i)
                 break
@@ -84,11 +84,11 @@ ___ handle_args(args=N.., cart_ N..
         cart = Groceries()
 
     ___ op, param __ vars(args).items():
-        __ op __ 'add' and param:
+        __ op __ 'add' a.. param:
             cart.add(Item(param[0], int(param[1]), param[2].lower() __ 'true'))
-        ____ op __ 'delete' and param:
+        ____ op __ 'delete' a.. param:
             cart.delete(param[0])
-        ____ op __ 'list' and param:
+        ____ op __ 'list' a.. param:
             cart.show()
-        ____ op __ 'search' and param:
+        ____ op __ 'search' a.. param:
             cart.search(param[0])

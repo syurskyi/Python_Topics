@@ -14,7 +14,7 @@ class Solution(object):
         n = l..(nums)
         stack = l..(r..(n-1, -1, -1))
         ___ i __ r..(n-1, -1, -1):
-            while stack and nums[stack[-1]] <= nums[i]:
+            w.... stack a.. nums[stack[-1]] <= nums[i]:
                 stack.pop()
             __ stack:
                 res.insert(0, nums[stack[-1]])

@@ -12,7 +12,7 @@ class Solution:
         N = {}
 
         ___ s __ S:
-            cur, nxt = s.split(' -> ')
+            cur, nxt = s.s..(' -> ')
             __ cur n.. __ N:
                 N[cur] = set()
             N[cur].add(nxt)

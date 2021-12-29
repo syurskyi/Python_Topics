@@ -22,7 +22,7 @@ class Solution:
         """
         self.dfs(root)
         total = self.sums.pop()
-        r.. total % 2 __ 0 and total // 2 __ self.sums
+        r.. total % 2 __ 0 a.. total // 2 __ self.sums
 
     ___ dfs(self, node):
         __ n.. node:
@@ -66,7 +66,7 @@ class Solution:
         l = self.dfs(node.left)
         r = self.dfs(node.right)
         s = l + r + node.val
-        __ node != self.root and self.total_sum != N.. and self.total_sum __ s * 2:
+        __ node != self.root a.. self.total_sum != N.. a.. self.total_sum __ s * 2:
             self.exists = True
 
         r.. s

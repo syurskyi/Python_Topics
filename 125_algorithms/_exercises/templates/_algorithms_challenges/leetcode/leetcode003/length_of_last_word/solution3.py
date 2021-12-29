@@ -20,7 +20,7 @@ class Solution(object):
         n = l..(s)
         i = n - 1
         res = 0
-        while i >= 0:
+        w.... i >= 0:
             __ s[i] != ' ':
                 res += 1
             ____:

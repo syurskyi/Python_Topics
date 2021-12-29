@@ -17,7 +17,7 @@ more_names = [
     ("doug", 469),
     ("noah", 470),
 ]
-FIRST_NINJAS = [Ninja(*ninja) ___ ninja __ zip(names, bites)]
+FIRST_NINJAS = [Ninja(*ninja) ___ ninja __ z..(names, bites)]
 SECOND_NINJAS = [Ninja(*ninja) ___ ninja __ more_names]
 
 
@@ -68,10 +68,10 @@ ___ test_ninja_class_and_membership(first_ninjas):
 
 ___ test_ninja_str_output(first_ninjas, capfd):
     print(first_ninjas[1])
-    output = capfd.readouterr()[0].strip()
+    output = capfd.readouterr()[0].s..
     ... output __ "[282] natalia"
     print(first_ninjas[3])
-    output = capfd.readouterr()[0].strip()
+    output = capfd.readouterr()[0].s..
     ... output __ "[263] maquina"
 
 

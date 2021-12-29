@@ -2,10 +2,10 @@ _______ string
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 
-used_passwords = set("PassWord@1 PyBit$s9".split())
+used_passwords = set("PassWord@1 PyBit$s9".s..())
 
 
-___ validate_password(password: str) -> bool:
+___ validate_password(password: s..) -> bool:
     __ n.. (6 <= l..(password) <= 12):
         r.. False
     __ password __ used_passwords:
@@ -14,13 +14,13 @@ ___ validate_password(password: str) -> bool:
     ___ c __ password:
         __ c.isdigit():
             digits += 1
-        ____ c.islower():
+        ____ c.isl..
             lcase += 1
         ____ c.isupper():
             ucase += 1
         ____ c __ PUNCTUATION_CHARS:
             punc += 1
-    __ digits > 0 and lcase > 1 and ucase > 0 and punc > 0:
+    __ digits > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0:
         used_passwords.add(password)
         r.. True
     r.. False

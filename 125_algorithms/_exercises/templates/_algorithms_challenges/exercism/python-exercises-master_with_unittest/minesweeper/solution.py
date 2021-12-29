@@ -12,7 +12,7 @@ ___ board(inp):
                 inp[i1 + 1][i2 - 1:i2 + 2].c.. '*')
             __ cnt __ 0:
                 continue
-            b[i1][i2] = str(cnt)
+            b[i1][i2] = s..(cnt)
     r.. ["".join(r) ___ r __ b]
 
 

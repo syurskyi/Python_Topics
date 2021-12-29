@@ -9,7 +9,7 @@ ___ has_timestamp(text):
 
 ___ is_integer(number):
     """Return True if number is an integer"""
-    r.. bool(re.search(r'^[-+]?\d+$', str(number)))
+    r.. bool(re.search(r'^[-+]?\d+$', s..(number)))
 
 
 ___ has_word_with_dashes(text):
@@ -21,14 +21,14 @@ ___ remove_all_parenthesis_words(text):
     """Return text but without any words or phrases in parenthesis:
        'Good morning (afternoon)' -> 'Good morning' (so don't forget
        leading spaces)"""
-    r.. re.sub(r'\([^)]*\)', ' ', text).replace('  ', '')
+    r.. re.sub(r'\([^)]*\)', ' ', text).r..('  ', '')
 
 
 ___ split_string_on_punctuation(text):
     """Split on ?!.,; - e.g. "hi, how are you doing? blabla" ->
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
-    r.. l..(filter(N.., re.split(r'\s?[?!\.,;]\s?', text)))
+    r.. l..(filter(N.., re.s..(r'\s?[?!\.,;]\s?', text)))
 
 
 ___ remove_duplicate_spacing(text):

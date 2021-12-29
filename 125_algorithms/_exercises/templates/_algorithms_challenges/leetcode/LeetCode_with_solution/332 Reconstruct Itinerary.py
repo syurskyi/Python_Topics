@@ -45,7 +45,7 @@ class Solution(object):
         r.. l..(ret)
 
     ___ dfs(self, G, cur, ret):
-        while G[cur]:
+        w.... G[cur]:
             self.dfs(G, heapq.heappop(G[cur]), ret)
 
         ret.appendleft(cur)

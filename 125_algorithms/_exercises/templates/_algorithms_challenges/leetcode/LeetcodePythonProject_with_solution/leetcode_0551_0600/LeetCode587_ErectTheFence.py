@@ -26,7 +26,7 @@ class Solution(object):
         cur = first
         curInd = firstInd
         flag = True
-        while curInd != firstInd o. flag:
+        w.... curInd != firstInd o. flag:
             flag = False
             nextPoint = points[0]
             nextInd = 0
@@ -35,10 +35,10 @@ class Solution(object):
                     continue
                 cross = self.crossProductLength(cur, points[i], nextPoint)
                 __ nextInd __ curInd o. cross > 0 o.\
-                    (cross __ 0 and self.distance(points[i], cur) > self.distance(nextPoint, cur)):
+                    (cross __ 0 a.. self.distance(points[i], cur) > self.distance(nextPoint, cur)):
                     nextPoint = points[i]
                     nextInd = i
-            ___ i, point __ enumerate(points):
+            ___ i, point __ e..(points):
                 __ i __ curInd:
                     continue
                 cross = self.crossProductLength(cur, point, nextPoint)

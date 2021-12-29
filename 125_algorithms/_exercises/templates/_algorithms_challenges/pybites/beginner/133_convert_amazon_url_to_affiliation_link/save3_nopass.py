@@ -11,4 +11,4 @@ ___ generate_affiliation_link(url):
     ___ i __ r..(0, mid_occurrence):
         mid_chop = url.find(sub_str1, value)
     end_chop = url.rsplit('/', 1)[1]
-    r.. "{}{}{}".format(url[:start_chop], url[mid_chop:], tag).replace("https:", "http:").replace(end_chop, "")
+    r.. "{}{}{}".f..(url[:start_chop], url[mid_chop:], tag).r..("https:", "http:").r..(end_chop, "")

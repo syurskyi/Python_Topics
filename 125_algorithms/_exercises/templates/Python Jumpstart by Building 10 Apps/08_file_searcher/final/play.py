@@ -10,7 +10,7 @@ ___ factorial(n):
     r.. n * factorial(n - 1)
 
 
-print("5!={:,}, 3!={:,}, 11!={:,}".format(
+print("5!={:,}, 3!={:,}, 11!={:,}".f..(
     factorial(5),  # 120
     factorial(3),  # 6
     factorial(11)  # HUGE
@@ -46,7 +46,7 @@ ___ fibonacci_co():
 
     w___ T...
         current, next  next, next + current
-        yield current
+        y.. current
 
 
 print('with yield')

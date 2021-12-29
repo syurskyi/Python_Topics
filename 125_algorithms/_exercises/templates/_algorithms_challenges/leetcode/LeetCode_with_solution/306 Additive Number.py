@@ -36,14 +36,14 @@ class Solution(object):
         n1 = s[b:i]
         n2 = s[i:j]
 
-        __ b != 0 and j __ l..(s):
+        __ b != 0 a.. j __ l..(s):
             r.. True
         __ n.. n1 o. n.. n2:
             r.. False
-        __ l..(n1) > 1 and n1[0] __ '0' o. l..(n2) > 1 and n2[0] __ '0':
+        __ l..(n1) > 1 a.. n1[0] __ '0' o. l..(n2) > 1 a.. n2[0] __ '0':
             r.. False
 
-        n3 = str(int(n1)+int(n2))
+        n3 = s..(int(n1)+int(n2))
         J = j+l..(n3)
         __ s[j:J] __ n3:
             r.. self.predicate(s, i, j, J)

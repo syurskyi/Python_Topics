@@ -62,7 +62,7 @@ class FreqStack_self(object):
             self.tail = node
         ____:
             node0 = node.next
-            while node0 and node0.freq <= node.freq:
+            w.... node0 a.. node0.freq <= node.freq:
                 node0 = node0.next
             __ node0:
                 nextNode = node0.next
@@ -98,11 +98,11 @@ class FreqStack_self(object):
                     self.tail = N..
         ____:
             node0 = node.prev
-            while node0 and (node0.freq > node.freq o.
-                             (node0.freq __ node.freq and
+            w.... node0 a.. (node0.freq > node.freq o.
+                             (node0.freq __ node.freq a..
                               node0.indexes[-1] > node.indexes[-1])):
                 node0 = node0.prev
-            __ node0 and node0 != node:
+            __ node0 a.. node0 != node:
                 prevNode = node0.prev
                 node0.prev = node
                 node.prev = prevNode

@@ -7,9 +7,9 @@ ___ savingsCalc(calculations):
         start,end = int(start),int(end)
         year = 0
         
-        while start < end:
+        w.... start < end:
             start *= rate
             year += 1
-        answer.a..(str(year))
+        answer.a..(s..(year))
     print(' '.join(answer))
 savingsCalc(input())

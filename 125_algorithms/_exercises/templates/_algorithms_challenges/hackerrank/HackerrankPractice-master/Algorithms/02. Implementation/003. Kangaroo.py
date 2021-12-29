@@ -3,8 +3,8 @@
 
 
 ___ kangaroo(x1, v1, x2, v2):
-    r.. 'YES' __ (v1 > v2) and (x2 - x1) % (v2 - v1) __ 0 ____ 'NO'
+    r.. 'YES' __ (v1 > v2) a.. (x2 - x1) % (v2 - v1) __ 0 ____ 'NO'
 
 
-x1, v1, x2, v2 = map(int, input().split())
+x1, v1, x2, v2 = map(int, input().s..())
 print(kangaroo(x1, v1, x2, v2))

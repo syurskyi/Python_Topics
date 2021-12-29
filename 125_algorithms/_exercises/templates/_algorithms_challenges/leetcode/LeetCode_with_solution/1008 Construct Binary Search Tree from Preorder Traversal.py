@@ -51,7 +51,7 @@ class Solution:
             __ a < stk[-1].val:  # len(stk) always >= 1
                 stk[-1].left = node
             ____:
-                while l..(stk) >= 2 and stk[-2].val < a:
+                w.... l..(stk) >= 2 a.. stk[-2].val < a:
                     stk.pop()
 
                 stk[-1].right = node
@@ -73,7 +73,7 @@ class Solution:
             __ a < stk[-1].val:
                 stk[-1].left = node
             ____:
-                while stk and stk[-1].val < a:
+                w.... stk a.. stk[-1].val < a:
                     pi = stk.pop()
                 pi.right = node
             stk.a..(node)

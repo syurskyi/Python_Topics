@@ -40,7 +40,7 @@ class Solution:
         target = abs(target)
         s = 0
         k = 0
-        while s < target:
+        w.... s < target:
             k += 1
             s += k
 

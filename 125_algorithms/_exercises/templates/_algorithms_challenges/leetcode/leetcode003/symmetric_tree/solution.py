@@ -32,17 +32,17 @@ class Solution(object):
         """
         __ root __ N..
             r.. True
-        __ root.left __ N.. and root.right __ N..
+        __ root.left __ N.. a.. root.right __ N..
             r.. True
-        __ root.left __ n.. N.. and root.right __ n.. N..
+        __ root.left __ n.. N.. a.. root.right __ n.. N..
             r.. self._isSymmetric(root.left, root.right)
         r.. False
 
     ___ _isSymmetric(self, left, right):
-        __ left __ N.. and right __ N..
+        __ left __ N.. a.. right __ N..
             r.. True
-        __ left __ n.. N.. and right __ n.. N..
-            r.. (left.val __ right.val and
-                    self._isSymmetric(left.left, right.right) and
+        __ left __ n.. N.. a.. right __ n.. N..
+            r.. (left.val __ right.val a..
+                    self._isSymmetric(left.left, right.right) a..
                     self._isSymmetric(left.right, right.left))
         r.. False

@@ -24,7 +24,7 @@ class Solution:
 
         q = [root]
         ret    # list
-        while q:
+        w.... q:
             cur    # list
             q_new    # list
             ___ e __ q:

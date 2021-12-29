@@ -22,7 +22,7 @@ class Solution(object):
     ___ bfs(self, beginWord, endWord, distance, wordSet):
         queue = [beginWord]
         distance[beginWord] = 0
-        while queue:
+        w.... queue:
             word = queue.pop(0)
             nextWords = self.getNextWords(word, wordSet)
             ___ nextWord __ nextWords:
@@ -36,13 +36,13 @@ class Solution(object):
             res.a..(l..(curr))
         ____:
             ___ nextWord __ self.getNextWords(word, wordSet):
-                __ nextWord __ distance and distance[nextWord]+1 __ distance.get(word, 0):
+                __ nextWord __ distance a.. distance[nextWord]+1 __ distance.get(word, 0):
                     self.dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     
     ___ getNextWords(self, word, wordSet):
         res    # list
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             ___ c0 __ 'abcdefghijklmnopqrstuvwxyz':
                 __ c0 != c:
                     word0 = word[:i] + c0 + word[i+1:]

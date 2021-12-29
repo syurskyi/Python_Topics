@@ -26,7 +26,7 @@ class Account:
         
 
 
-        while self.balance < 0:
+        w.... self.balance < 0:
             self._transactions.pop()
 
 

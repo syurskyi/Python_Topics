@@ -25,7 +25,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ calculate(self, s: str) -> int:
+    ___ calculate(self, s: s..) -> int:
         """
         1. treat +/- as unary operator
         2. maintain stk of operands to sum
@@ -34,11 +34,11 @@ class Solution:
         ret, _ = self.eval(s + "\0", 0, [])
         r.. ret
 
-    ___ eval(self, s: str, start: int, stk: List[int]) -> int:
+    ___ eval(self, s: s.., start: int, stk: List[int]) -> int:
         prev_op = "+"
         operand = 0
         i = start
-        while i < l..(s):  #  not using for-loop, since the cursor needs to advance in recursion
+        w.... i < l..(s):  #  not using for-loop, since the cursor needs to advance in recursion
             __ s[i] __ " ":
                 pass
             ____ s[i].isdigit():

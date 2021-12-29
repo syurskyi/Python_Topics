@@ -39,7 +39,7 @@ class Solution:
         __ n.. people:
             r.. ans
 
-        people.sort(key=l.... p: (p[0], -p[1]))
+        people.s..(key=l.... p: (p[0], -p[1]))
 
         ___ i __ r..(l..(people) - 1, -1, -1):
             ans.insert(people[i][1], people[i])
@@ -70,7 +70,7 @@ class Solution:
                 h2mans[h] = [(k, i)]
                 heights.a..(h)
 
-        heights.sort()
+        heights.s..()
 
         ___ height __ heights[::-1]:
             ___ k, i __ s..(h2mans[height]):

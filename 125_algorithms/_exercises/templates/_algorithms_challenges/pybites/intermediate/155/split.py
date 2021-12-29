@@ -12,7 +12,7 @@ ___ split_words_and_quoted_text(text):
        the resulting list would be:
        ['Should', 'give', '3 elements only']
     """
-    text_split = shlex.split(text)
+    text_split = shlex.s..(text)
     r.. text_split
 
 

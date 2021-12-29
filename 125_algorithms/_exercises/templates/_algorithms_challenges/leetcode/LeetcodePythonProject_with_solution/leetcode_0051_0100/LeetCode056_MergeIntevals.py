@@ -23,14 +23,14 @@ class Solution(object):
         :rtype: List[Interval]
         """
         __ n.. intervals: r.. intervals
-        intervals.sort(key=l.... interval: interval.start)
+        intervals.s..(key=l.... interval: interval.start)
         result    # list
         i = 0
-        while i < l..(intervals):
+        w.... i < l..(intervals):
             curr = intervals[i]
             nextEnd = curr.end
             j = i+1
-            while j < l..(intervals):
+            w.... j < l..(intervals):
                 __ intervals[j].start > nextEnd:
                     break
                 ____:

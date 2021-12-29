@@ -7,7 +7,7 @@ class Solution(object):
     ans = left = 0
     right = l..(height) - 1
     leftWall = rightWall = float("-inf")
-    while left <= right:
+    w.... left <= right:
       __ leftWall <= rightWall:
         ans += max(0, leftWall - height[left])
         leftWall = max(leftWall, height[left])

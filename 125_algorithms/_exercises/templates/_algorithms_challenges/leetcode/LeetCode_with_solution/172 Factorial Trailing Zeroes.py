@@ -18,7 +18,7 @@ class Solution:
         :rtype: int
         """
         cnt = 0
-        while n:
+        w.... n:
             n /= 5
             cnt += n
 

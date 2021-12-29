@@ -28,15 +28,15 @@ class Solution(object):
             [1, []]
         ]  # with default
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i].isdigit():  # construct number from digit
                 j = i+1
-                while s[j] != '[': j += 1
+                w.... s[j] != '[': j += 1
                 stk.a..([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            ____ s[i].islower():  # append alphabet
+            ____ s[i].isl..  # append alphabet
                 stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ']':  # pop
@@ -57,15 +57,15 @@ class SolutionVerbose(object):
         stk    # list
         i = 0
         ret    # list
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i].isdigit():  # construct number from digit
                 j = i+1
-                while s[j] != '[': j += 1
+                w.... s[j] != '[': j += 1
                 stk.a..([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            ____ s[i].islower():  # append alphabet
+            ____ s[i].isl..  # append alphabet
                 __ n.. stk:
                     ret.a..(s[i])
                 ____:
@@ -93,14 +93,14 @@ class SolutionError(object):
         stk    # list
         i = 0
         ret    # list
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i].isdigit():
                 j = i + 1
-                while s[j] != '[': j += 1
+                w.... s[j] != '[': j += 1
                 prev = stk[-1] __ stk ____ 1
                 stk.a..(prev * int(s[i:j]))
                 i = j + 1
-            ____ s[i].islower():
+            ____ s[i].isl..
                 repeat = stk[-1] __ stk ____ 1
                 ___ _ __ xrange(repeat): ret.a..(s[i])
                 i += 1

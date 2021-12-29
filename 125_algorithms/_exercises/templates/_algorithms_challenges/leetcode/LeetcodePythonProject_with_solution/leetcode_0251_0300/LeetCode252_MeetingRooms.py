@@ -16,7 +16,7 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: bool
         """
-        intervals.sort(key=l.... x: x.start)
+        intervals.s..(key=l.... x: x.start)
         length = l..(intervals)
         ___ i __ r..(length-1):
             curr = intervals[i]

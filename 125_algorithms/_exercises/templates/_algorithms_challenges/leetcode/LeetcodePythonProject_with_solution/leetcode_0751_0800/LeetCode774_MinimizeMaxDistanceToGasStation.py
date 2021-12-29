@@ -14,7 +14,7 @@ class Solution(object):
         k = K
         count, n = 0, l..(stations)
         left, right = 0, stations[-1]-stations[0]
-        while left + 1e-6 < right:
+        w.... left + 1e-6 < right:
             mid = (left+right)/2.0
             count = 0
             ___ i __ r..(n-1):

@@ -35,13 +35,13 @@ ___ my_slice_and_dice(text=text):
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
     results    # list
-    s = text.strip().split('\n')
+    s = text.s...s..('\n')
     ___ item __ s:
-        item = item.strip()
-        __ item[0].islower():
+        item = item.s..
+        __ item[0].isl..
             item = item.rstrip('!')
             item = item.rstrip('.')
-            words = item.split(' ')
+            words = item.s..(' ')
             results.a..(words[words.__len__()-1])
     r.. results
 
@@ -53,8 +53,8 @@ ___ slice_and_dice(text=text):
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
     results    # list
-    ___ line __ text.strip().split('\n'):
-        line = line.strip()
+    ___ line __ text.s...s..('\n'):
+        line = line.s..
 
         __ line[0] n.. __ ascii_lowercase:
             continue

@@ -22,7 +22,7 @@ class Solution(object):
         """
         d = {}
         current = head
-        while current __ n.. N..
+        w.... current __ n.. N..
             __ current.val n.. __ d:
                 d[current.val] = 1
             ____:
@@ -31,7 +31,7 @@ class Solution(object):
         current = head
         dummy = ListNode(0)
         dummy_end = dummy
-        while current __ n.. N..
+        w.... current __ n.. N..
             __ d[current.val] __ 1:
                 dummy_end.next = current
                 dummy_end = current

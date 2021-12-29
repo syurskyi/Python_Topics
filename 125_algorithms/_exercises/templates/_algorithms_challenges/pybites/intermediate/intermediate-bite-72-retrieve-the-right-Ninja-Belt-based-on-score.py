@@ -5,7 +5,7 @@ belts = 'white yellow orange green blue brown black paneled red'.s..
 
 ___ get_belt(user_score, scores=scores, belts=belts):
     result    # list
-    ___ index, i __ enumerate(scores):
+    ___ index, i __ e..(scores):
         __ index __ 0:
             ___ j __ r..(0, i):
                 result.insert(j, N..)

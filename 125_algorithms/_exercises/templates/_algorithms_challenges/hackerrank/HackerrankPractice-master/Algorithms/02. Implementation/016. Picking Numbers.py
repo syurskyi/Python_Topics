@@ -15,6 +15,6 @@ ___ pickingNumbers(arr):
 
 
 n = int(input().strip())
-arr = l..(map(int, input().strip().split(' ')))
+arr = l..(map(int, input().s...s..(' ')))
 result = pickingNumbers(arr)
 print(result)

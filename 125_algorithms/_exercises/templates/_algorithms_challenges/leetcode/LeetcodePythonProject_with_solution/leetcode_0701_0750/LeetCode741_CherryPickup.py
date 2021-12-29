@@ -25,7 +25,7 @@ class Solution(object):
                         dp[i][p] = max(dp[i][p], dp[i-1][p])
                     __ p > 0:
                         dp[i][p] = max(dp[i][p], dp[i][p-1])
-                    __ i > 0 and p > 0:
+                    __ i > 0 a.. p > 0:
                         dp[i][p] = max(dp[i][p], dp[i-1][p-1])
                     __ dp[i][p] >= 0:
                         dp[i][p] += grid[i][j]+(grid[p][q] __ i!=p ____ 0)

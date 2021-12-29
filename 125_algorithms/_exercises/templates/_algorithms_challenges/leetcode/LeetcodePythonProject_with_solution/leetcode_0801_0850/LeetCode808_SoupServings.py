@@ -17,13 +17,13 @@ class Solution(object):
             r.. 1
     
     ___ helper(self, hashmap, a, b):
-        __ a <= 0 and b <= 0:
+        __ a <= 0 a.. b <= 0:
             r.. 0.5
         __ a <= 0:
             r.. 1
         __ b <= 0:
             r.. 0
-        s = str(a)+':'+str(b)
+        s = s..(a)+':'+s..(b)
         __ s n.. __ hashmap:
             hashmap[s] = 0.25*(
                     self.helper(hashmap, a-100, b)+\

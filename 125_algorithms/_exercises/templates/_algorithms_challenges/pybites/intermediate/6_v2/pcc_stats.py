@@ -1,4 +1,4 @@
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ os
 _______ urllib.request
 
@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 # code
@@ -41,9 +41,9 @@ ___ gen_files(tempfile=tempfile):
     
     with open(tempfile,'r') as f:
         ___ line __ f:
-            name,is_dir = line.split(',')
+            name,is_dir = line.s..(',')
             __ is_dir __ "True\n":
-                yield name.lower()
+                y.. name.lower()
 
 
 
@@ -72,7 +72,7 @@ ___ diehard_pybites(files_ N..
     # your code
 
     ___ file __ files:
-        challenge,name = file.split('/')
+        challenge,name = file.s..('/')
         __ name __ IGNORE:
             continue
         users[name] += 1

@@ -37,7 +37,7 @@ class Solution(object):
 
         i = 0
         j = n-1
-        while i < m and 0 <= j:
+        w.... i < m a.. 0 <= j:
             __ mat[i][j] __ target:
                 r.. True
             ____ mat[i][j] > target:
@@ -81,7 +81,7 @@ class SolutionBinSearch(object):
     ___ bin_search(self, A, t, lower=True):
         lo = 0
         hi = l..(A)
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)/2
             __ A[mid] __ t:
                 r.. mid

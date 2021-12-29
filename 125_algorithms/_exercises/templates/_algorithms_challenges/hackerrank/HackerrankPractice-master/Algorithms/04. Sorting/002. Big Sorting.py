@@ -6,6 +6,6 @@ n = int(input())
 arr    # list
 ___ i __ r..(n):
     arr.a..(input())
-arr.sort(key=int)
+arr.s..(key=int)
 ___ _ __ arr:
     print(_)

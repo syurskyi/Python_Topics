@@ -16,7 +16,7 @@ class Solution(object):
         __ n.. root: r.. 0
         sumVal = 0
         __ root.left:
-            __ n.. root.left.left and n.. root.left.right:
+            __ n.. root.left.left a.. n.. root.left.right:
                 sumVal += root.left.val
             ____:
                 sumVal += self.sumOfLeftLeaves(root.left)

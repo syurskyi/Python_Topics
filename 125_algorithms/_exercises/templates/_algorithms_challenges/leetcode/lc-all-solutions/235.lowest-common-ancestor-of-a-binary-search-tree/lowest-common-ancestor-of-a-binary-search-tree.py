@@ -7,7 +7,7 @@ class Solution(object):
     :rtype: TreeNode
     """
     a, b = s..([p.val, q.val])
-    while n.. a <= root.val <= b:
+    w.... n.. a <= root.val <= b:
       __ a > root.val:
         root = root.right
       ____:

@@ -27,7 +27,7 @@ class Solution:
         cur_sum = s..(nums[:k])
         maxa = cur_sum
         i = k
-        while i < l..(nums):
+        w.... i < l..(nums):
             cur_sum += nums[i]
             cur_sum -= nums[i-k]
             maxa = max(maxa, cur_sum)

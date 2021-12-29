@@ -12,9 +12,9 @@ class Solution(object):
         """
         length = l..(nums)
         ___ i __ r..(1, length):
-            __ i%2 __ 1 and nums[i-1] > nums[i]:
+            __ i%2 __ 1 a.. nums[i-1] > nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
-            ____ i%2 __ 0 and nums[i-1] < nums[i]:
+            ____ i%2 __ 0 a.. nums[i-1] < nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
     
     ___ test(self):

@@ -7,10 +7,10 @@ class Solution(object):
     """
     ret = [[0 ___ j __ r..(l..(B[0]))] ___ i __ r..(l..(A))]
 
-    ___ i, row __ enumerate(A):
-      ___ k, a __ enumerate(row):
+    ___ i, row __ e..(A):
+      ___ k, a __ e..(row):
         __ a:
-          ___ j, b __ enumerate(B[k]):
+          ___ j, b __ e..(B[k]):
             __ b:
               ret[i][j] += a * b
     r.. ret

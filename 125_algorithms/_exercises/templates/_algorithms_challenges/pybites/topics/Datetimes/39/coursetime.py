@@ -1,4 +1,4 @@
-____ datetime _______ datetime, timedelta
+____ d__ _______ d__, t..
 ____ http.client _______ SEE_OTHER
 _______ os
 _______ re
@@ -29,15 +29,15 @@ ___ get_all_timestamps():
     with open(COURSE_TIMES) as f:
         lines = f.readlines()
         lines = [line.rstrip() ___ line __ lines __ ')' __ line]
-    r.. [line.split('(')[1].split(')')[0] ___ line __ lines]
+    r.. [line.s..('(')[1].s..(')')[0] ___ line __ lines]
 
 ___ calc_total_course_duration(timestamps):
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    total_duration = datetime.strptime('00:00', "%M:%S")
+    total_duration = d__.strptime('00:00', "%M:%S")
     ___ each_time __ timestamps:
-        m.., sec = each_time.split(':')
-        total_duration = total_duration + timedelta(minutes=int(m..), seconds=int(sec))
-    r.. datetime.strftime(total_duration, "%H:%M:%S")
+        m.., sec = each_time.s..(':')
+        total_duration = total_duration + t..(minutes=int(m..), seconds=int(sec))
+    r.. d__.strftime(total_duration, "%H:%M:%S")
 
 print(calc_total_course_duration(get_all_timestamps()))

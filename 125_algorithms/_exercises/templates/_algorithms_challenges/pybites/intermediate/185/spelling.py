@@ -14,10 +14,10 @@ __ n.. os.path.isfile(DICTIONARY):
 ___ load_words():
     'return dict of words in DICTIONARY'
     with open(DICTIONARY) as f:
-        r.. {word.strip().lower() ___ word __ f.readlines()}
+        r.. {word.s...lower() ___ word __ f.readlines()}
 
 
-___ suggest_word(misspelled_word: str, words: set = N..) -> str:
+___ suggest_word(misspelled_word: s.., words: set = N..) -> s..:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
     __ words __ N..

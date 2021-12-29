@@ -15,7 +15,7 @@ class Solution(object):
         ___ di __ r..(-1, 2):
           ___ dj __ r..(-1, 2):
             newi, newj = i + di, j + dj
-            __ 0 <= newi < m and 0 <= newj < n:
+            __ 0 <= newi < m a.. 0 <= newj < n:
               cnt += 1
               sums += M[newi][newj]
         ans[i][j] = sums / cnt

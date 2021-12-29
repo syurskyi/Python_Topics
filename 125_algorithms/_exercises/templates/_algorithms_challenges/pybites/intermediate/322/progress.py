@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
 
 ___ ontrack_reading(books_goal: int, books_read: int,
@@ -7,16 +7,16 @@ ___ ontrack_reading(books_goal: int, books_read: int,
     days_in_year = 365
     
     __ day_of_year __ N..
-        day_of_year = datetime.today().timetuple().tm_yday
+        day_of_year = d__.today().timetuple().tm_yday
 
-    __ books_goal != books_read and books_read != 0:
+    __ books_goal != books_read a.. books_read != 0:
         book_per_days = days_in_year / books_goal
         remaining_days = days_in_year - day_of_year
 
         __ (books_goal - books_read) * book_per_days < remaining_days :
             r.. True
 
-    __ books_goal __ books_read and day_of_year <= days_in_year:
+    __ books_goal __ books_read a.. day_of_year <= days_in_year:
         r.. True
 
     r.. False

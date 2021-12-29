@@ -14,7 +14,7 @@ class Solution(object):
         sumA = 0
         ___ num __ arr:
             sumA += num
-        arr.sort()
+        arr.s..()
         ___ lenOfB __ r..(1, l..(arr)//2+1):
             __ (sumA*lenOfB)%l..(arr) __ 0:
                 __ self.check(arr, (sumA*lenOfB)/l..(arr), lenOfB, 0):
@@ -26,7 +26,7 @@ class Solution(object):
         __ arr[startIdx] > leftSum/leftNum:
             r.. False
         ___ i __ r..(startIdx, l..(arr)-leftNum+1):
-            __ i > startIdx and arr[i] __ arr[i-1]:
+            __ i > startIdx a.. arr[i] __ arr[i-1]:
                 continue
             __ self.check(arr, leftSum-arr[i], leftNum-1, i+1):
                 r.. True

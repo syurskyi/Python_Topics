@@ -18,8 +18,8 @@ ___ fix_translation(org_text, trans_text):
         print(trans)
 
 
-        ___ original_value,trans_value __ zip(original,trans):
-            trans_text = trans_text.replace(trans_value,original_value)
+        ___ original_value,trans_value __ z..(original,trans):
+            trans_text = trans_text.r..(trans_value,original_value)
 
 
 

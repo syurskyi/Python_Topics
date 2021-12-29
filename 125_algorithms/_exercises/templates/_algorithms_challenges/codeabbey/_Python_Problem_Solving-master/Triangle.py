@@ -10,7 +10,7 @@ ___ i __ r..(0,data):
     b = para[1]
     c = para[2]
     
-    __ a + b > c and a + c > b  and b + c > a:
+    __ a + b > c a.. a + c > b  a.. b + c > a:
         res +='1'
         res += ' '
     ____:

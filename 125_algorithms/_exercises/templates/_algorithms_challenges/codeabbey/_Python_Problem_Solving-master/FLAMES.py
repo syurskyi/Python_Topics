@@ -4,8 +4,8 @@ name1,name2=a,b = input('Enter the name of a couple of whom you wanna see FUTURE
 #remove the similar element from both the string
 ___ i __ a:
     __ i __ b:
-        a = a.replace(i,'')
-        b = b.replace(i,'')
+        a = a.r..(i,'')
+        b = b.r..(i,'')
 
 #take the length of the both the strings after removal of the similar characters
 length = l..(a) + l..(b)
@@ -20,7 +20,7 @@ i = 0
 #count of the length of combined strings
 len_count = 1
 #while there remains only one element in the flames list
-while l..(flame)!= 1:
+w.... l..(flame)!= 1:
     #if length of the combined string has reached then pop the current element of the flames list
     __ len_count __ length:
         flame.pop(i)

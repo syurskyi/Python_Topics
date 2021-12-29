@@ -10,7 +10,7 @@ class Solution(object):
         :type q: int
         :rtype: int
         """
-        while p % 2 __ 0 and q % 2 __ 0:
+        w.... p % 2 __ 0 a.. q % 2 __ 0:
             p, q = p//2, q//2
         __ p % 2 __ 0:
             r.. 2

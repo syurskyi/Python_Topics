@@ -16,12 +16,12 @@ class Solution(object):
         r.. self.dfs(0, 0)
         
     ___ dfs(self, s, cnt):
-        while s < l..(self.debt) and self.debt[s] __ 0:
+        w.... s < l..(self.debt) a.. self.debt[s] __ 0:
             s += 1
         res = float('inf')
         prev = 0
         ___ i __ r..(s+1, l..(self.debt)):
-            __ self.debt[i] != prev and self.debt[i]*self.debt[s] < 0:
+            __ self.debt[i] != prev a.. self.debt[i]*self.debt[s] < 0:
                 self.debt[i] += self.debt[s]
                 res = m..(res, self.dfs(s+1, cnt+1))
                 self.debt[i] -= self.debt[s]

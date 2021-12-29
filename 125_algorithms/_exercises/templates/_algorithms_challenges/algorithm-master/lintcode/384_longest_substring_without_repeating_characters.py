@@ -20,7 +20,7 @@ class Solution:
                 rep += 1
             freqs[s[j]] += 1
 
-            while rep > 0:
+            w.... rep > 0:
                 freqs[s[i]] -= 1
                 __ freqs[s[i]] __ 1:
                     rep -= 1

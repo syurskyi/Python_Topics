@@ -1,6 +1,6 @@
 ____ collections _______ Counter
 ____ contextlib _______ contextmanager
-____ datetime _______ date
+____ d__ _______ date
 ____ time _______ time
 _______ sys
 
@@ -20,7 +20,7 @@ ___ get_today():
 ___ timeit() -> N..
     start = time()
     try:
-        yield
+        y..
     finally:
         elapsed = time() - start
         __ elapsed > OPERATION_THRESHOLD_IN_SECONDS:

@@ -15,6 +15,6 @@ class Solution(object):
           idx1 = i
         ____ word __ word2:
           idx2 = i
-        __ idx1 != -1 and idx2 != -1:
+        __ idx1 != -1 a.. idx2 != -1:
           ans = m..(ans, abs(idx2 - idx1))
     r.. ans

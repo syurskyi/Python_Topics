@@ -14,7 +14,7 @@ class Solution(object):
         result = ''
         __ path.endswith('/'): path = path[:-1]
         __ path.startswith('/'): path = path[1:]
-        l = path.split('/')
+        l = path.s..('/')
         cont = 0
         ___ i __ r..(l..(l)-1, -1, -1):
             __ l[i] __ '.' o. l[i] __ '':

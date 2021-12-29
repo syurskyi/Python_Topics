@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: int
         """
         __ version1 __ version2: r.. 0
-        arr1, arr2 = version1.split('.'), version2.split('.')
+        arr1, arr2 = version1.s..('.'), version2.s..('.')
         m, n = l..(arr1), l..(arr2)
         i, j = 0, 0
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ int(arr1[i]) > int(arr2[j]):
                 r.. 1
             ____ int(arr1[i]) < int(arr2[j]):
@@ -22,11 +22,11 @@ class Solution(object):
             ____:
                 i += 1
                 j += 1
-        while i < m and int(arr1[i]) __ 0:
+        w.... i < m a.. int(arr1[i]) __ 0:
             i += 1
-        while j < n and int(arr2[j]) __ 0:
+        w.... j < n a.. int(arr2[j]) __ 0:
             j += 1
-        __ i __ m and j __ n:
+        __ i __ m a.. j __ n:
             r.. 0
         ____ i __ m:
             r.. -1

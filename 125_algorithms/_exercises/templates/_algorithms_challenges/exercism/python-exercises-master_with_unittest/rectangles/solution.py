@@ -1,4 +1,4 @@
-_______ itertools
+_______ i..
 
 
 class corners(object):
@@ -8,7 +8,7 @@ class corners(object):
         self.j = j
 
     ___ __str__(self):
-        r.. "[" + str(self.i) + ", " + str(self.j) + "]"
+        r.. "[" + s..(self.i) + ", " + s..(self.j) + "]"
 
 
 # return corner on the same line
@@ -61,12 +61,12 @@ ___ possible_rect(quartet):
 ___ path(c1, c2, input):
     __ c1.i __ c2.i:
         ___ j __ r..(m..(c1.j + 1, c2.j + 1), max(c1.j, c2.j)):
-            __ input[c1.i][j] != "-" and input[c1.i][j] != "+":
+            __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
                 r.. False
         r.. True
     ____ c1.j __ c2.j:
         ___ i __ r..(m..(c1.i + 1, c2.i + 1), max(c1.i, c2.i)):
-            __ input[i][c1.j] != "|" and input[i][c1.j] != "+":
+            __ input[i][c1.j] != "|" a.. input[i][c1.j] != "+":
                 r.. False
         r.. True
 
@@ -98,7 +98,7 @@ ___ c.. lines=""):
 
     # now let the magic begins
     # all combinations of 4 corners (python ftw)
-    q = l..(itertools.combinations(corners, r=4))
+    q = l..(i...combinations(corners, r=4))
     rectangles    # list
     ___ el __ q:
         __ (possible_rect(el)):

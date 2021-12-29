@@ -19,7 +19,7 @@ class Solution(object):
         """
         slow = head
         fast = head
-        while fast __ n.. N.. and fast.next __ n.. N..
+        w.... fast __ n.. N.. a.. fast.next __ n.. N..
             slow = slow.next
             fast = fast.next.next
             __ slow __ fast:

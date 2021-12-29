@@ -15,7 +15,7 @@ class Solution(object):
       visited |= {(i, j)}
       ___ di, dj __ [(0, -1), (0, 1), (-1, 0), (1, 0)]:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < n and 0 <= nj < m and (ni, nj) n.. __ visited:
+        __ 0 <= ni < n a.. 0 <= nj < m a.. (ni, nj) n.. __ visited:
           __ matrix[ni][nj] >= matrix[i][j]:
             dfs(matrix, visited, ni, nj)
 

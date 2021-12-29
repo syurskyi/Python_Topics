@@ -37,7 +37,7 @@ class Solution:
             r.. ret
 
         q = [root]
-        while q:
+        w.... q:
             n = l..(q)
             avg = s..(map(l.... node: node.val, q)) / n
             ret.a..(avg)

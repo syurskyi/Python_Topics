@@ -13,7 +13,7 @@ MORSE_CODE = {'.-...': '&', '--..--': ',', '....-': '4',
 
 ___ decodeMorse(morseCode):
     MORSE_CODE['@'] = ' '
-    morseCode = morseCode.strip().replace('  ',' @ ')
+    morseCode = morseCode.s...r..('  ',' @ ')
     r.. ''.join([MORSE_CODE[code] ___ code __ morseCode.s.. ])
 
 

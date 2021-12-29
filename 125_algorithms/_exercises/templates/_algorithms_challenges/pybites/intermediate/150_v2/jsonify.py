@@ -24,7 +24,7 @@ ___ convert_to_json(members=members):
     data = StringIO(members)
 
 
-    data = pd.read_csv(data,dtype=str,sep=r"\,|;|\|")
+    data = pd.read_csv(data,dtype=s..,sep=r"\,|;|\|")
     value = data.to_json(orient='records')
     r.. value
 

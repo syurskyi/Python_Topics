@@ -25,7 +25,7 @@ class Solution:
         path.a..(node.val)
 
         remaining -= node.val
-        __ remaining __ 0 and n.. node.left and n.. node.right:
+        __ remaining __ 0 a.. n.. node.left a.. n.. node.right:
             ans.a..(path[:])
 
         self.dfs(node.left, remaining, ans, path)

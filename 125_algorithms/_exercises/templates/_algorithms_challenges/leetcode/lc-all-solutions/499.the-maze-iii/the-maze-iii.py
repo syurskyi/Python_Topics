@@ -17,18 +17,18 @@ class Solution(object):
       ___ di, dj, mark __ directions:
         dist = 0
         i, j = curr
-        while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
+        w.... 0 <= i + di < height a.. 0 <= j + dj < width a.. maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
           __ (i, j) __ hole:
             break
-        yield (i, j), mark, dist
+        y.. (i, j), mark, dist
 
     heap = [(0, "", tuple(ball))]
     visited = set()
     hole = tuple(hole)
-    while heap:
+    w.... heap:
       dist, word, curr = heapq.heappop(heap)
       __ curr __ visited:
         continue

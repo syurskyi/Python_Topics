@@ -13,7 +13,7 @@ class Solution(object):
     :rtype: int
     """
     stack = [(1, root)]
-    while stack:
+    w.... stack:
       cmd, p = stack.pop()
       __ n.. p:
         continue

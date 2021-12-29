@@ -14,9 +14,9 @@ class Solution(object):
         r.. (right-left)*(bottom-top)
     
     ___ searchColumns(self, image, i, j, top, bottom, opt):
-        while i < j:
+        w.... i < j:
             k, mid = top, (i+j)//2
-            while k < bottom and image[k][mid] __ '0':
+            w.... k < bottom a.. image[k][mid] __ '0':
                 k+=1
             __ (k < bottom) __ opt:
                 j = mid
@@ -25,9 +25,9 @@ class Solution(object):
         r.. i
     
     ___ searchRows(self, image, i, j, left, right, opt):
-        while i < j:
+        w.... i < j:
             k, mid = left, (i+j)//2
-            while k < right and image[mid][k] __ '0':
+            w.... k < right a.. image[mid][k] __ '0':
                 k+=1
             __ (k < right) __ opt:
                 j = mid

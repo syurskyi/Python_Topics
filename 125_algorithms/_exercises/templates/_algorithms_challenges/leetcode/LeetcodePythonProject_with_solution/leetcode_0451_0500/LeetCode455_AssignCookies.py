@@ -11,11 +11,11 @@ class Solution(object):
         :type s: List[int]
         :rtype: int
         """
-        g.sort()
-        s.sort()
+        g.s..()
+        s.s..()
         i, j = 0, 0
         count = 0
-        while i < l..(g) and j < l..(s):
+        w.... i < l..(g) a.. j < l..(s):
             __ g[i] <= s[j]:
                 i += 1
                 j += 1

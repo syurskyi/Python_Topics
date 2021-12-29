@@ -14,7 +14,7 @@ ___ evaluate(input_data):
     __ n.. input_data:
         r.. []
     defines = {}
-    while input_data[0][:1] __ ':':
+    w.... input_data[0][:1] __ ':':
         values = input_data.pop(0).s.. 
         values.pop()
         values.pop(0)
@@ -24,7 +24,7 @@ ___ evaluate(input_data):
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
-    while any(input_data):
+    w.... any(input_data):
         word = input_data.pop(0).lower()
         try:
             __ is_integer(word):
@@ -52,7 +52,7 @@ ___ evaluate(input_data):
             ____ word __ 'over':
                 stack.a..(stack[-2])
             ____:
-                raise ValueError("{} has not been defined".format(word))
+                raise ValueError("{} has not been defined".f..(word))
         except IndexError:
             raise StackUnderflowError("Insufficient number of items in stack")
     r.. stack

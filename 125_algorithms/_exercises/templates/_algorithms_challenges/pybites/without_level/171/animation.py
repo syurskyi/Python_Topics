@@ -1,4 +1,4 @@
-____ itertools _______ cycle
+____ i.. _______ cycle
 _______ sys
 ____ time _______ time, sleep
 
@@ -12,7 +12,7 @@ ___ spinner(seconds):
        Does not return anything, only prints to stdout."""
     t = time()
     c = cycle(SPINNER_STATES)
-    while True:
+    w... T...
         __ time() > t + seconds:
             break
         print(f'\r{next(c)}', end='', file=sys.stdout, flush=True)

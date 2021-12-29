@@ -22,7 +22,7 @@ class Solution(object):
         self.second = N..
         self.prev = N..
         self.inOrder(root)
-        __ self.second and self.first:
+        __ self.second a.. self.first:
             val = self.second.val
             self.second.val = self.first.val
             self.first.val = val

@@ -21,7 +21,7 @@ class Solution(object):
             r.. [[]]
         ____:
             res    # list
-            ___ i, c __ enumerate(nums):
+            ___ i, c __ e..(nums):
                 __ c __ d:
                     continue
                 ____:

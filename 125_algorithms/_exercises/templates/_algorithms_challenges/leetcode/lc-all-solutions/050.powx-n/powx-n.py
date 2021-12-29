@@ -9,7 +9,7 @@ class Solution(object):
       n = -n
       x = 1 / x
     ans = 1
-    while n:
+    w.... n:
       __ n & 1:
         ans *= x
       x *= x

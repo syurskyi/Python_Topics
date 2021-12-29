@@ -64,7 +64,7 @@ class SolutionTLE(object):
 
         ___ i __ xrange(1, amount+1):
             ___ k __ coins:
-                __ i-k > 0 and F[i-k] != sys.maxint:
+                __ i-k > 0 a.. F[i-k] != sys.maxint:
                     F[i] = m..(F[i], F[i-k]+1)
 
         r.. F[amount] __ F[amount] != sys.maxint ____ -1

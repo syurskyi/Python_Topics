@@ -3,9 +3,9 @@ ____ dataclasses _______ dataclass
 
 @dataclass(frozenTrue)
 class Question:
-    text: str
+    text: s..
     is_true: bool
-    explanation: str
+    explanation: s..
 
 
 # class Question:

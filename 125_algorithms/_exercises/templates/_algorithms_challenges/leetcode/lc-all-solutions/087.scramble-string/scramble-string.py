@@ -14,8 +14,8 @@ class Solution(object):
       r.. True
 
     ___ i __ r..(1, n):
-      __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]):
+      __ self.isScramble(s1[:i], s2[:i]) a.. self.isScramble(s1[i:], s2[i:]):
         r.. True
-      __ self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:-i]):
+      __ self.isScramble(s1[:i], s2[-i:]) a.. self.isScramble(s1[i:], s2[:-i]):
         r.. True
     r.. False

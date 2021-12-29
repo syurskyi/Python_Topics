@@ -36,7 +36,7 @@ class Solution:
         """
         sort and scanning from right
         """
-        A.sort()
+        A.s..()
         ___ i __ r..(l..(A) - 3, -1, -1):
             __ A[i] + A[i+1] > A[i+2]:
                 r.. s..(A[i:i+3])

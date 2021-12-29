@@ -20,8 +20,8 @@ class Solution:
         :param s: string
         :return: integer
         """
-        s = s.strip()
-        lst = s.split(" ")
+        s = s.s..
+        lst = s.s..(" ")
         try:
             last_word = lst[-1]
             r.. l..(last_word)

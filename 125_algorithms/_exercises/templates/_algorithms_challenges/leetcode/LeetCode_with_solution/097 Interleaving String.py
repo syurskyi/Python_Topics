@@ -62,17 +62,17 @@ class Solution(object):
         # initialize boundary conditions
         dp[0][0] = True
         ___ i __ xrange(1, m+1):
-            dp[i][0] = dp[i-1][0] and s3[i+0-1] __ s1[i-1]
+            dp[i][0] = dp[i-1][0] a.. s3[i+0-1] __ s1[i-1]
         ___ j __ xrange(1, n+1):
-            dp[0][j] = dp[0][j-1] and s3[0+j-1] __ s2[j-1]
+            dp[0][j] = dp[0][j-1] a.. s3[0+j-1] __ s2[j-1]
 
         # calculating
         ___ i __ xrange(1, m+1):
             ___ j __ xrange(1, n+1):
                 __ n.. dp[i][j]:
-                    dp[i][j] = dp[i-1][j] and s3[i+j-1] __ s1[i-1]
+                    dp[i][j] = dp[i-1][j] a.. s3[i+j-1] __ s1[i-1]
                 __ n.. dp[i][j]:
-                    dp[i][j] = dp[i][j-1] and s3[i+j-1] __ s2[j-1]
+                    dp[i][j] = dp[i][j-1] a.. s3[i+j-1] __ s2[j-1]
 
         r.. dp[-1][-1]
 
@@ -88,10 +88,10 @@ class Solution(object):
         __ n.. s3:
             r.. True
         letter = s3[0]
-        __ s1 and s1[0] __ letter:
+        __ s1 a.. s1[0] __ letter:
             __ self.isInterleave(s1[1:], s2, s3[1:]):
                 r.. True
-        __ s2 and s2[0] __ letter:
+        __ s2 a.. s2[0] __ letter:
             __ self.isInterleave(s1, s2[1:], s3[1:]):
                 r.. True
         r.. False

@@ -6,7 +6,7 @@ class Solution(object):
     """
     m = 1
     ones = 0
-    while m <= n:
+    w.... m <= n:
       r = (n / m) % 10
       __ r > 1:
         ones += m

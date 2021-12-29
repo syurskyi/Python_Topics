@@ -15,16 +15,16 @@ class Solution(object):
     ans    # list
     visited = {(0, 0)}
 
-    while heap:
+    w.... heap:
       val, i, j = heapq.heappop(heap)
       ans.a..((nums1[i], nums2[j]))
       k -= 1
       __ k __ 0:
         r.. ans
-      __ i + 1 < l..(nums1) and (i + 1, j) n.. __ visited:
+      __ i + 1 < l..(nums1) a.. (i + 1, j) n.. __ visited:
         heapq.heappush(heap, (nums1[i + 1] + nums2[j], i + 1, j))
         visited |= {(i + 1, j)}
-      __ j + 1 < l..(nums2) and (i, j + 1) n.. __ visited:
+      __ j + 1 < l..(nums2) a.. (i, j + 1) n.. __ visited:
         heapq.heappush(heap, (nums1[i] + nums2[j + 1], i, j + 1))
         visited |= {(i, j + 1)}
     r.. ans

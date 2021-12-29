@@ -17,7 +17,7 @@ class Solution(object):
             __ S[i] != '-':
                 res = S[i].upper() + res
                 count += 1
-                __ count > 0 and count % K __ 0:
+                __ count > 0 a.. count % K __ 0:
                     res = '-' + res
         r.. res.lstrip('-')
     

@@ -14,7 +14,7 @@ class Solution(object):
         hashset = set()
         __ l..(s) != l..(t):
             r.. False
-        ___ c1, c2 __ zip(s, t):
+        ___ c1, c2 __ z..(s, t):
             __ c1 n.. __ hashmap:
                 __ c2 __ hashset:
                     r.. False
@@ -33,11 +33,11 @@ class Solution(object):
         """
         __ l..(s) != l..(t): r.. False
         hashmap1, hashmap2 = {}, {}
-        ___ c1, c2 __ zip(s, t):
-            __ c1 __ hashmap1 and\
+        ___ c1, c2 __ z..(s, t):
+            __ c1 __ hashmap1 a..\
             (c2 n.. __ hashmap2 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
                 r.. False
-            ____ c2 __ hashmap2 and\
+            ____ c2 __ hashmap2 a..\
             (c1 n.. __ hashmap1 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
                 r.. False
             hashmap1[c1] = c2

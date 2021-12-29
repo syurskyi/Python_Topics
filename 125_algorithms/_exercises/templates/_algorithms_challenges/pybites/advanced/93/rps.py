@@ -28,9 +28,9 @@ ___ _get_winner(computer_choice, player_choice):
     player_defeated_by = defeated_by[player_choice]
 
     __ computer_defeated_by __ player_choice:
-        r.. win.format(player_choice,computer_choice)
+        r.. win.f..(player_choice,computer_choice)
     ____ player_defeated_by __ computer_choice:
-        r.. lose.format(computer_choice,player_choice)
+        r.. lose.f..(computer_choice,player_choice)
     ____:
         r.. tie
 
@@ -54,8 +54,8 @@ ___ game():
 
     
 
-    while True:
-        player_choice = yield
+    w... T...
+        player_choice = y..
         __ player_choice __ 'q':
             raise StopIteration
         

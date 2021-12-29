@@ -25,7 +25,7 @@ class Solution(object):
 
     cache = {}
     d = collections.defaultdict(l..)
-    ___ i, c __ enumerate(ring):
+    ___ i, c __ e..(ring):
       d[c].a..(i)
     length = l..(ring)
     r.. dfs(ring, key, 0, d, length, cache)

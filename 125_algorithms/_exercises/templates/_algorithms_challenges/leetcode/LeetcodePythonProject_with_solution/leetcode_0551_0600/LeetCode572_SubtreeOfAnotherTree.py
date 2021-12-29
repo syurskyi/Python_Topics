@@ -17,7 +17,7 @@ class Solution(object):
         :type t: TreeNode
         :rtype: bool
         """
-        __ n.. s and n.. t:
+        __ n.. s a.. n.. t:
             r.. True
         __ n.. s:
             r.. False
@@ -26,11 +26,11 @@ class Solution(object):
             self.isSubtree(s.right, t)
     
     ___ isSameTree(self, s, t):
-        __ n.. s and n.. t:
+        __ n.. s a.. n.. t:
             r.. True
         __ n.. s o. n.. t:
             r.. False
         __ s.val != t.val:
             r.. False
-        r.. self.isSameTree(s.left, t.left) and\
+        r.. self.isSameTree(s.left, t.left) a..\
             self.isSameTree(s.right, t.right)

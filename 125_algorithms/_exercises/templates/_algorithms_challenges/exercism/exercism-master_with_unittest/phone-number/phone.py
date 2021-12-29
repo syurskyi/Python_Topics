@@ -25,12 +25,12 @@ class Phone:
         r.. self.number[self.EXCHANGE_CODE_END:]
 
     ___ pretty(self):
-        r.. "({}) {}-{}".format(self.area_code(), self.exchange_code(),
+        r.. "({}) {}-{}".f..(self.area_code(), self.exchange_code(),
                                    self.subscriber_code())
 
     @staticmethod
     ___ valid_11_digits(inp):
-        r.. l..(inp) __ 11 and inp.startswith("1")
+        r.. l..(inp) __ 11 a.. inp.startswith("1")
 
     @staticmethod
     ___ valid_10_digits(inp):

@@ -15,5 +15,5 @@ ___ transpose(data):
     """
     __ isi..(data, d..):
         data = ((key, value) ___ key, value __ data.items())
-    r.. zip(*data)
+    r.. z..(*data)
 

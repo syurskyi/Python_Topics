@@ -29,8 +29,8 @@ class Solution:
 
         s = 0
         e = 0
-        while s < l..(delta):
-            while e < l..(delta) and delta[s] __ delta[e]:
+        w.... s < l..(delta):
+            w.... e < l..(delta) a.. delta[s] __ delta[e]:
                 e += 1
 
             l = e - s

@@ -13,7 +13,7 @@ class Solution(object):
         """
         ret = (target, l..(target))
         ___ abbr, abbr_l __ self.dfs(target):
-            __ self.validate(dictionary, abbr) and ret[1] > abbr_l:
+            __ self.validate(dictionary, abbr) a.. ret[1] > abbr_l:
                 ret = (abbr, abbr_l)
 
         r.. ret[0]
@@ -29,7 +29,7 @@ class Solution(object):
 
         ret    # list
         ___ l __ xrange(l..(word)+1):
-            left_num = str(l) __ l ____ ""
+            left_num = s..(l) __ l ____ ""
             left_l = 1 __ left_num != "" ____ 0
             left_l += 1 __ l < l..(word) ____ 0
 
@@ -55,10 +55,10 @@ class Solution(object):
         """
         w = 0
         a = 0
-        while w < l..(word) and a < l..(abbr):
-            __ abbr[a].isdigit() and abbr[a] != '0':
+        w.... w < l..(word) a.. a < l..(abbr):
+            __ abbr[a].isdigit() a.. abbr[a] != '0':
                 e = a
-                while e < l..(abbr) and abbr[e].isdigit(): e += 1
+                w.... e < l..(abbr) a.. abbr[e].isdigit(): e += 1
                 num = int(abbr[a:e])
                 a = e
                 w += num
@@ -69,7 +69,7 @@ class Solution(object):
                 w += 1
                 a += 1
 
-        r.. w __ l..(word) and a __ l..(abbr)
+        r.. w __ l..(word) a.. a __ l..(abbr)
 
 
 __ __name__ __ "__main__":

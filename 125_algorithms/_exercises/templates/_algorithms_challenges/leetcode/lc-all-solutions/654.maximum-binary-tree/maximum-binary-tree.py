@@ -24,9 +24,9 @@ class Solution(object):
     stack    # list
     ___ num __ nums:
       root = TreeNode(num)
-      while stack and stack[-1].val < num:
+      w.... stack a.. stack[-1].val < num:
         root.left = stack.pop()
       __ stack:
         stack[-1].right = root
       stack.a..(root)
-    r.. stack and stack[0]
+    r.. stack a.. stack[0]

@@ -11,7 +11,7 @@ class Solution(object):
         """
         s = S
         hashmap = {}
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ hashmap:
                 l = hashmap[c]
             ____:

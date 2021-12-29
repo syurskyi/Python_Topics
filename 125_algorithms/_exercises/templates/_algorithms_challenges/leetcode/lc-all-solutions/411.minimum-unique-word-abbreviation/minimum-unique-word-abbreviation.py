@@ -10,7 +10,7 @@ class Solution(object):
       res.a..(w)
       ___ i __ r..(start, l..(w)):
         ___ l __ reversed(r..(1, l..(w) - i + 1)):
-          dfs(w[:i] + [str(l)] + w[i + l:], i + 2, res)
+          dfs(w[:i] + [s..(l)] + w[i + l:], i + 2, res)
 
     ___ match(src, dest):
       i = 0
@@ -25,11 +25,11 @@ class Solution(object):
       r.. True
 
     __ n.. dictionary:
-      r.. str(l..(target))
+      r.. s..(l..(target))
     wordLen = l..(target)
     res    # list
     dfs(l..(target), 0, res)
-    res.sort(key=l.... x: l..(x))
+    res.s..(key=l.... x: l..(x))
     dictionary = filter(l.... s: l..(s) __ wordLen, dictionary)
 
     ___ w __ res:

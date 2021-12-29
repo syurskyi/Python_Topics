@@ -5,6 +5,6 @@
 a    # list
 result = 0
 ___ i __ r..(int(input())):
-    a = l..(map(int, input().split()))
+    a = l..(map(int, input().s..()))
     result += a[i] - a[- 1 - i]
 print(abs(result))

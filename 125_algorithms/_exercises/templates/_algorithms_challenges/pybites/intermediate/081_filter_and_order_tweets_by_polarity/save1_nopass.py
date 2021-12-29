@@ -1,7 +1,7 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 ____ operator _______ attrgetter
 
-Tweet = namedtuple('Tweet', 'text polarity')
+Tweet = n..('Tweet', 'text polarity')
 
 # polarity < 0 = negative, > 0 = positive
 # long strings and pep8: you can wrap strings in () to reduce line length
@@ -46,4 +46,4 @@ ___ order_tweets_by_polarity(tweets, positive_highest=True):
     __ positive_highest __ True:
         r.. s..(tweets, key=attrgetter('polarity'), r.._T..
     ____:
-        r.. s..(tweets, key=attrgetter('polarity'), reverse=False)
+        r.. s..(tweets, key=attrgetter('polarity'), r.._F..

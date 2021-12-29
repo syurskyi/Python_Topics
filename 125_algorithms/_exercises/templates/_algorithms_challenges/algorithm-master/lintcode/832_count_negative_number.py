@@ -13,7 +13,7 @@ class Solution:
         ___ i __ r..(m):
             left, right = 0, n - 1
 
-            while left + 1 < right:
+            w.... left + 1 < right:
                 mid = (left + right) // 2
                 __ g[i][mid] < 0:
                     left = mid

@@ -19,7 +19,7 @@ class Solution:
         """
         diff = x ^ y
         ret = 0
-        while diff:
+        w.... diff:
             ret += diff & 1
             diff >>= 1
             

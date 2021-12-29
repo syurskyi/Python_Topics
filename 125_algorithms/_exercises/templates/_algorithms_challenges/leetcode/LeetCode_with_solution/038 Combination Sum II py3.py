@@ -35,7 +35,7 @@ ____ typing _______ List
 class Solution:
     ___ combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         ret    # list
-        candidates.sort()
+        candidates.s..()
         self.dfs(candidates, 0, [], 0, target, ret)
         r.. ret
 
@@ -50,7 +50,7 @@ class Solution:
         # not choose A_i
         # to de-dup, need to jump
         j = i + 1
-        while j < l..(candidates) and candidates[j] __ candidates[i]:
+        w.... j < l..(candidates) a.. candidates[j] __ candidates[i]:
             j += 1
 
         self.dfs(candidates, j, cur, cur_sum, target, ret)

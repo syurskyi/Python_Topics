@@ -1,5 +1,5 @@
 _______ collections
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ os
 _______ re
 ____ urllib.request _______ urlretrieve
@@ -25,7 +25,7 @@ ___ _get_dates():
 ___ convert_to_datetime(date_str):
     """Receives a date str and convert it into a datetime object"""
     tz = date_str.rfind("+")
-    r.. datetime.strptime(date_str[:tz -1], "%a, %d %b %Y %H:%M:%S")
+    r.. d__.strptime(date_str[:tz -1], "%a, %d %b %Y %H:%M:%S")
 
 
 ___ get_month_most_posts(dates):

@@ -33,7 +33,7 @@ ___ format_lines(matched_lines, files, flags):
             line_result += file_name + ':'
 
         __ '-n' __ flags:
-            line_result += str(line_number) + ':'
+            line_result += s..(line_number) + ':'
 
         line_result += line
 
@@ -47,7 +47,7 @@ ___ grep(pattern, files, flags=''):
 
     ___ file_name __ files:
         with open(file_name) as f:
-            ___ line_number, line __ enumerate(f.readlines(), start=1):
+            ___ line_number, line __ e..(f.readlines(), start=1):
                 __ matches(line, pattern, flags):
                     matched_lines.a..((file_name, line_number, line))
 

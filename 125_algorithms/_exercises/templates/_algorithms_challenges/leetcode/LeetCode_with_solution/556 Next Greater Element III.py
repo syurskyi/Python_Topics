@@ -27,20 +27,20 @@ class Solution:
         why reverse? reverse the increasing from right to left to decreasing
         from right to left (i.e. sorted)
         """
-        seq = l..(str(n))
+        seq = l..(s..(n))
         N = l..(seq)
         __ N < 2:
             r.. -1
 
         # from right to left
         i = N - 2
-        while seq[i] >= seq[i+1]:
+        w.... seq[i] >= seq[i+1]:
             i -= 1
             __ i < 0:
                 r.. -1
 
         j = N - 1
-        while seq[i] >= seq[j]:
+        w.... seq[i] >= seq[j]:
             j -= 1
 
         seq[i], seq[j] = seq[j], seq[i]
@@ -64,18 +64,18 @@ class Solution:
         from right to left
         find the first digit that has min larger, then sort the rest
         """
-        seq = [int(e) ___ e __ str(n)]
+        seq = [int(e) ___ e __ s..(n)]
         stk    # list  # record index
         ___ i __ r..(l..(seq) - 1, -1 , -1):
             e = seq[i]
             popped = N..
-            while stk and seq[stk[-1]] > e:
+            w.... stk a.. seq[stk[-1]] > e:
                 popped = stk.pop()
 
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = s..(seq[i+1:])  # reversed also good
-                ret = int("".join(map(str, seq)))
+                ret = int("".join(map(s.., seq)))
                 __ ret <= 1 << 31 - 1:
                     r.. ret
                 ____:

@@ -5,10 +5,10 @@ class Solution(object):
     :type version2: str
     :rtype: int
     """
-    v1 = version1.split(".")
-    v2 = version2.split(".")
+    v1 = version1.s..(".")
+    v2 = version2.s..(".")
     i = 0
-    while i < l..(v1) and i < l..(v2):
+    w.... i < l..(v1) a.. i < l..(v2):
       v1Seg, v2Seg = int(v1[i]), int(v2[i])
       __ v1Seg > v2Seg:
         r.. 1
@@ -16,8 +16,8 @@ class Solution(object):
         r.. -1
       ____:
         i += 1
-    __ i < l..(v1) and int("".join(v1[i:])) != 0:
+    __ i < l..(v1) a.. int("".join(v1[i:])) != 0:
       r.. 1
-    __ i < l..(v2) and int("".join(v2[i:])) != 0:
+    __ i < l..(v2) a.. int("".join(v2[i:])) != 0:
       r.. -1
     r.. 0

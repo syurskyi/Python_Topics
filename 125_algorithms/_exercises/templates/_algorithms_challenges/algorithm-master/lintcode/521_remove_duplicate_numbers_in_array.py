@@ -35,7 +35,7 @@ class Solution:
         __ n.. nums:
             r.. ans
 
-        nums.sort()
+        nums.s..()
 
         # for `nums[0]`
         ans = 1

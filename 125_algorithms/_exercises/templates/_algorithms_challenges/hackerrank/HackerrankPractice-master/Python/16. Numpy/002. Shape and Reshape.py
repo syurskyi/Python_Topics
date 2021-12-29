@@ -5,5 +5,5 @@
 _______ numpy as np
 
 
-array = np.array(l..(map(int, input().split())))
+array = np.array(l..(map(int, input().s..())))
 print(array.reshape(3, 3))

@@ -10,11 +10,11 @@ class Solution(object):
         maxCount = 0
         left = 0
         res = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             ind = ord(c)-ord('A')
             arr[ind] += 1
             maxCount = max(maxCount, arr[ind])
-            __ left <= i and maxCount+k<i-left+1:
+            __ left <= i a.. maxCount+k<i-left+1:
                 arr[ord(s[left])-ord('A')] -= 1
                 left += 1
             res = max(res, i-left+1)

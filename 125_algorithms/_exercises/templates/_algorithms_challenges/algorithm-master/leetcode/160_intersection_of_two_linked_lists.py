@@ -16,19 +16,19 @@ class Solution(object):
 
         X, Y = A, B
 
-        while X and Y:
+        w.... X a.. Y:
             X = X.next
             Y = Y.next
 
-        while X:
+        w.... X:
             X = X.next
             A = A.next
 
-        while Y:
+        w.... Y:
             Y = Y.next
             B = B.next
 
-        while A __ n.. B:
+        w.... A __ n.. B:
             A = A.next
             B = B.next
 

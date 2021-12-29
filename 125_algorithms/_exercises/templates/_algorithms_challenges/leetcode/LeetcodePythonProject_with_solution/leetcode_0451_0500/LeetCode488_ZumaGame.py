@@ -22,7 +22,7 @@ class Solution(object):
         __ s __ '#': r.. 0
         res = float('inf')
         i, j = 0, 0
-        while j < l..(s):
+        w.... j < l..(s):
             __ s[j] __ s[i]:
                 j += 1
                 continue
@@ -37,7 +37,7 @@ class Solution(object):
     
     ___ removeConsecutive(self, board):
         i, j = 0, 0
-        while j < l..(board):
+        w.... j < l..(board):
             __ board[j] __ board[i]:
                 j += 1
                 continue

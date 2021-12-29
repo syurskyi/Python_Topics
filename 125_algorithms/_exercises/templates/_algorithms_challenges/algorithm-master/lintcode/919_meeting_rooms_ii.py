@@ -24,7 +24,7 @@ class Solution:
             time.a..((x.start, True))
             time.a..((x.end, False))
 
-        time.sort()
+        time.s..()
 
         cnt = 0
 

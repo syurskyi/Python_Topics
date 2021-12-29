@@ -11,12 +11,12 @@ class Solution(object):
         ___ word __ dictionary:
             __ l..(word) != m: continue
             bits = 0
-            ___ i, c __ enumerate(word):
+            ___ i, c __ e..(word):
                 __ c != target[i]:
                     bits += 2**i
             diffs.a..(bits)
         __ n.. diffs:
-            r.. str(m)
+            r.. s..(m)
         abbrs    # list
         ___ i __ r..(2**m):
             __ a..(d&i ___ d __ diffs):
@@ -28,14 +28,14 @@ class Solution(object):
         ___ w __ target:
             __ num & 1 __ 1:
                 __ count:
-                    word += str(count)
+                    word += s..(count)
                     count = 0
                 word += w
             ____:
                 count += 1
             num >>= 1
         __ count:
-            word += str(count)
+            word += s..(count)
         r.. word
     
     ___ test(self):

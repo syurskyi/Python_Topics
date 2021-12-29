@@ -6,7 +6,7 @@ ___ running_mean(sequence):
     running    # list
 
     s = 0
-    ___ i,number __ enumerate(sequence):
+    ___ i,number __ e..(sequence):
         s += number
         running.a..(round(s/(i + 1),2))
 

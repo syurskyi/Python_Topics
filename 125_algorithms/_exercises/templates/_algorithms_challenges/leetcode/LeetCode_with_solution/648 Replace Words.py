@@ -70,14 +70,14 @@ class Trie:
             r..
 
 class Solution:
-    ___ replaceWords(self, dic: List[str], sentence: str) -> str:
+    ___ replaceWords(self, dic: List[s..], sentence: s..) -> s..:
         trie = Trie()
         ___ word __ dic:
             root = trie.root
             root.children[word[0]] = Trie.insert(root.children[word[0]], word, 0)
 
         ret    # list
-        ___ word __ sentence.split(" "):
+        ___ word __ sentence.s..(" "):
             ___ child __ trie.root.children.values():
                 searched = Trie.search(child, word, 0)
                 __ searched:

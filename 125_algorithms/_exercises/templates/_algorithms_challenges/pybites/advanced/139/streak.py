@@ -1,4 +1,4 @@
-____ datetime _______ datetime, timedelta, date
+____ d__ _______ d__, t.., date
 _______ re
 
 TODAY = date(2018, 11, 12)
@@ -7,17 +7,17 @@ TODAY = date(2018, 11, 12)
 ___ extract_dates(data):
     """Extract unique dates from DB table representation as shown in Bite"""
 
-    data = data.strip()
+    data = data.s..
 
     
     dates = set()
     lines = data.splitlines()
-    ___ i,line __ enumerate(lines):
-        __ i > 2 and i != l..(lines) - 1:
+    ___ i,line __ e..(lines):
+        __ i > 2 a.. i != l..(lines) - 1:
             date_ = re.search(r'^\s*\|\s(\S+)\s\|',line).group(1)
-            year,month,day = map(int,date_.split("-"))
+            year,month,day = map(int,date_.s..("-"))
 
-            date_ = date(year=year,month=month,day=day)
+            date_ = date y.._year, m.._month, d.._day)
             dates.add(date_)
 
     r.. dates
@@ -44,10 +44,10 @@ ___ calculate_streak(dates):
     streak = 0
 
     
-    delta = timedelta(days=1)
+    delta = t..(days=1)
     day = TODAY - delta
 
-    while day __ dates:
+    w.... day __ dates:
         streak += 1
 
         day -= delta

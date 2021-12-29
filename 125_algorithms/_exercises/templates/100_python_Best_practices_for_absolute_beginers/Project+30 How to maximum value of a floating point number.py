@@ -5,7 +5,7 @@
 
 x  float(input("Insert floating point numbers only: "))
 
-y  str(x)
+y  s..(x)
 maxi  -1
 
 ___ i __ r..(l..(y)):

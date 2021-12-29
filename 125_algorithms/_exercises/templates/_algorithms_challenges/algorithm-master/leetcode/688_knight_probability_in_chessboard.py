@@ -37,7 +37,7 @@ class Solution:
                         _x = x + dx
                         _y = y + dy
 
-                        __ n.. (0 <= _x < n and 0 <= _y < n):
+                        __ n.. (0 <= _x < n a.. 0 <= _y < n):
                             continue
 
                         nxt[_x, _y] += dp[x, y] / 8.0
@@ -59,14 +59,14 @@ class Solution:
         :type c: int
         :rtype: float
         """
-        __ n __ 1 and k __ 0:
+        __ n __ 1 a.. k __ 0:
             r.. 1.0
 
         queue, _queue = [(r, c)], []
         total = 8 ** k
         valid = 0
 
-        while queue and k:
+        w.... queue a.. k:
             k -= 1
 
             ___ x, y __ queue:
@@ -83,7 +83,7 @@ class Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < n and 0 <= _y < n):
+                    __ n.. (0 <= _x < n a.. 0 <= _y < n):
                         continue
 
                     __ k __ 0:

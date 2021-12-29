@@ -21,16 +21,16 @@ class Solution(object):
         stack    # list
         prev = float('-inf')
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
             __ prev >= node.val:
                 r.. False
             prev = node.val
             node0 = node.right
-            while node0:
+            w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
         r.. True

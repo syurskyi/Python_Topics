@@ -19,7 +19,7 @@ ___ _get_soup(html=PYCON_HTML):
 
 ___ get_first_name(fullname):
     name_list    # list
-    name_list = fullname.split(' ')
+    name_list = fullname.s..(' ')
     r.. name_list[0]
 
 ___ get_pycon_speaker_first_names(soup_ N..
@@ -32,12 +32,12 @@ ___ get_pycon_speaker_first_names(soup_ N..
     speakers = soup.find_all('span', class_='speaker')
     speakers_list    # list
     ___ slot_speaker __ speakers:
-        __ ',' __ slot_speaker.text.strip():
-            slot_speakers = slot_speaker.text.strip().split(',')
+        __ ',' __ slot_speaker.text.s..:
+            slot_speakers = slot_speaker.text.s...s..(',')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.strip()))
-        ____ '/' __ slot_speaker.text.strip():
-            slot_speakers = slot_speaker.text.strip().split('/')
+        ____ '/' __ slot_speaker.text.s..:
+            slot_speakers = slot_speaker.text.s...s..('/')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.strip()))
         ____:

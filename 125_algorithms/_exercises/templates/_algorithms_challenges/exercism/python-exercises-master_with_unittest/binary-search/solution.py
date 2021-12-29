@@ -1,7 +1,7 @@
 ___ binary_search(search_list, value):
     low = 0
     high = l..(search_list) - 1
-    while low <= high:
+    w.... low <= high:
         middle = (low + high) // 2
         __ search_list[middle] > value:
             high = middle - 1

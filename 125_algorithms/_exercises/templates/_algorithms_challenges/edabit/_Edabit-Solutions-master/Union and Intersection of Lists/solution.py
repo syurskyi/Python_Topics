@@ -15,6 +15,6 @@ ___ intersection_union(lst1, lst2):
     ___ c __ lst2:
         __ c n.. __ uni:
              uni.a..(c)
-    inter.sort()
-    uni.sort()
+    inter.s..()
+    uni.s..()
     r.. output

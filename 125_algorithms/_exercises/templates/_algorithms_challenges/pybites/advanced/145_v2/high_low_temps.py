@@ -2,13 +2,13 @@ _______ csv
 _______ os
 _______ re
 _______ urllib.request
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
 _______ pandas as pd
 
 DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
-STATION = namedtuple("Station", "ID Date Value")
+STATION = n..("Station", "ID Date Value")
 
 TMP = '/tmp'
 LOCAL_FILE = os.path.join('/tmp', 'weather-ann-arbor.csv')
@@ -52,7 +52,7 @@ ___ high_low_record_breakers_for_2015():
     with open(LOCAL_FILE) as f:
         the_data = s..([{
             'id': x['ID'],
-            'date': datetime.strptime(x['Date'], '%Y-%m-%d').date(),
+            'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
             'value': int(x['Data_Value'])
         } ___ x __ csv.DictReader(f) __ n.. re.match(r'\d{4}-02-29', x['Date'])],
@@ -64,21 +64,21 @@ ___ high_low_record_breakers_for_2015():
                 'value': x['value']
                 } ___ x __ the_data]
 
-    data_before_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 and x['element'] __ 'TMIN').drop(
+    data_before_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 a.. x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'mina'})
 
-    data_before_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 and x['element'] __ 'TMAX').drop(
+    data_before_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 a.. x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset = data_before_2015_left.join(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
-    data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 and x['element'] __ 'TMIN').drop(
+    data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'minb'})
 
-    data_for_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 and x['element'] __ 'TMAX').drop(
+    data_for_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxb'})
 
@@ -90,9 +90,9 @@ ___ high_low_record_breakers_for_2015():
     ___ row __ compare_set.itertuples():
         __ row.mina > row.minb:
             result['min'].a..(
-                STATION(row.Index[0], datetime.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
+                STATION(row.Index[0], d__.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
         __ row.maxa < row.maxb:
             result['max'].a..(
-                STATION(row.Index[0], datetime.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
+                STATION(row.Index[0], d__.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
 
     r.. max(result['max'], key=l.... x: x.Value), m..(result['min'], key=l.... x: x.Value)

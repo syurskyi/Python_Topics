@@ -4,7 +4,7 @@ class Solution:
     ___ sqrt(self, x):
         left = 0
         right = x
-        while left <= right:
+        w.... left <= right:
             mid = left + (right - left) / 2
             square = mid * mid
             __ square __ x:

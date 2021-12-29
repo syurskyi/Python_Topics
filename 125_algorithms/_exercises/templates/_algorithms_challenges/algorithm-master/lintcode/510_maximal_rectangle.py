@@ -125,7 +125,7 @@ class Solution:
         left = height = 0
 
         ___ right __ r..(l..(H)):
-            while I and H[I[-1]] >= H[right]:
+            w.... I a.. H[I[-1]] >= H[right]:
                 height = H[I.pop()]
                 left = I[-1] __ I ____ -1
                 area = max(

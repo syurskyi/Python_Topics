@@ -25,7 +25,7 @@ Do not use the eval built-in library function.
 
 
 class Solution:
-    ___ calculate(self, s: str) -> int:
+    ___ calculate(self, s: s..) -> int:
         """
         No brackets. Look at previous operand and operator, when finishing
         scanning current operand.
@@ -33,7 +33,7 @@ class Solution:
         operand = 0
         stk    # list
         prev_op = "+"
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c.isdigit():
                 operand = operand * 10 + int(c)
 
@@ -57,14 +57,14 @@ class Solution:
 
         r.. s..(stk)
 
-    ___ calculate_error(self, s: str) -> int:
+    ___ calculate_error(self, s: s..) -> int:
         """
         cannot use dictionary, since it is eager evaluation
         """
         operand = 0
         stk    # list
         prev_op = "+"
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c.isdigit():
                 operand = operand * 10 + int(c)
 

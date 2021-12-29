@@ -13,7 +13,7 @@ class Solution(object):
     cache = set()
     ___ c __ s:
       __ c n.. __ cache:
-        while stack and stack[-1] > c and d[stack[-1]] > 1 and d[stack[-1]] != 1 and count[stack[-1]] > 0:
+        w.... stack a.. stack[-1] > c a.. d[stack[-1]] > 1 a.. d[stack[-1]] != 1 a.. count[stack[-1]] > 0:
           cache.discard(stack.pop())
         stack.a..(c)
         cache.add(c)

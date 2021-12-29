@@ -26,7 +26,7 @@ ___ convolution2D(
     __ n.. a..(array.ndim __ 2 ___ array __ arrays):
         raise ValueError("kernel and filter must be size 2")
         
-    is_not_integer = l.... x: n.. isi..(x,int) o. (isi..(x,float) and n.. x.is_integer())
+    is_not_integer = l.... x: n.. isi..(x,int) o. (isi..(x,float) a.. n.. x.is_integer())
     
     
     __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):
@@ -53,7 +53,7 @@ ___ convolution2D(
 
     
     true_values =[]
-    ___ value,type_,min_ __ zip(values,types,mins):
+    ___ value,type_,min_ __ z..(values,types,mins):
         __ value __ n.. N..
             __ is_not_integer(value):
                 raise TypeError(f"{type_} must be integer")

@@ -12,7 +12,7 @@ class Solution(object):
           stack.a..("(")
         ____ c __ ")":
           stack.a..(")")
-          __ l..(stack) >= 2 and stack[-2] + stack[-1] __ "()":
+          __ l..(stack) >= 2 a.. stack[-2] + stack[-1] __ "()":
             stack.pop()
             stack.pop()
       r.. l..(stack)
@@ -27,7 +27,7 @@ class Solution(object):
           r..
 
       ___ i __ r..(0, l..(s)):
-        __ s[i] __ "(" o. s[i] __ ")" and l..(s) - 1 >= length:
+        __ s[i] __ "(" o. s[i] __ ")" a.. l..(s) - 1 >= length:
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 

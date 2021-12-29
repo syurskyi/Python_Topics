@@ -56,7 +56,7 @@ class Solution:
         """
         stk    # list
         ___ e __ asteroids:
-            while stk and e < 0 < stk[-1]:
+            w.... stk a.. e < 0 < stk[-1]:
                 __ abs(e) > abs(stk[-1]):
                     # -> exploded, <- continues
                     stk.pop()
@@ -85,10 +85,10 @@ class Solution:
         n = l..(asteroids)
         ___ i __ r..(n-1, -1, -1):
             cur = asteroids[i]
-            while stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur):
+            w.... stk a.. asteroids[stk[-1]] < 0 a.. cur > 0 a.. abs(asteroids[stk[-1]]) < abs(cur):
                 stk.pop()
 
-            __ stk and cur > 0 and asteroids[stk[-1]] __ -cur:
+            __ stk a.. cur > 0 a.. asteroids[stk[-1]] __ -cur:
                 stk.pop()
                 continue
 
@@ -96,7 +96,7 @@ class Solution:
                 stk.a..(i)
                 continue
 
-            __ n.. (asteroids[stk[-1]] < 0 and cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]):
+            __ n.. (asteroids[stk[-1]] < 0 a.. cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]):
                 stk.a..(i)
 
         r.. [

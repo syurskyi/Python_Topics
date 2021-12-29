@@ -23,7 +23,7 @@ ___ convert_to_csv(json_file):
        63502,ability_mount_hordescorpionamber,True,...
        ...
     """  # noqa E501
-    csv_file = TMP / json_file.name.replace('.json', '.csv')
+    csv_file = TMP / json_file.name.r..('.json', '.csv')
 
     with open(json_file, 'r') as f:
         try:

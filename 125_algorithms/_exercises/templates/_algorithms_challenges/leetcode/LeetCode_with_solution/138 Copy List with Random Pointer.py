@@ -35,7 +35,7 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
             cur_copy = RandomListNode(cur.label)
 
@@ -47,7 +47,7 @@ class Solution:
 
         # copy random
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
 
             __ cur.random:
@@ -58,7 +58,7 @@ class Solution:
         # split
         pre = dummy
         head_copy = pre.next.next __ pre.next ____ N..
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
             cur_copy = cur.next
 

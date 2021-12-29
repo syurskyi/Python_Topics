@@ -47,7 +47,7 @@ class Solution:
         T[1] = 0
         pos = 2
         cnd = 0
-        while pos<ln:
+        w.... pos<ln:
             __ needle[pos-1]__needle[cnd]:  # pos-1 rather than pos
                 cnd += 1
                 T[pos] = cnd
@@ -62,7 +62,7 @@ class Solution:
         # search
         i = 0
         m = 0
-        while m+i<lh:
+        w.... m+i<lh:
             __ needle[i]__haystack[m+i]:
                 i += 1
                 __ i__ln:

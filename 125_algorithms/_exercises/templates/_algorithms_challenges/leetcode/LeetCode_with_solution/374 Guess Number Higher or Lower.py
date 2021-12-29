@@ -34,7 +34,7 @@ class Solution(object):
         :rtype: int
         """
         lo, hi = 1, n+1
-        while True:
+        w... T...
             mid = (lo + hi) / 2
             g = guess(mid)
             __ g __ 0:

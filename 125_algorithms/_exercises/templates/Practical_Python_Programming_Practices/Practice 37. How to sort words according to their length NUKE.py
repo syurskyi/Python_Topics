@@ -1,5 +1,5 @@
-str  input("Insert different strings: ")
-first  str.s.. 
+s..  input("Insert different strings: ")
+first  s...s..
 len_first  l..(first)
 
 ___ i __ r..(len_first - 1):

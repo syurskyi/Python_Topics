@@ -12,7 +12,7 @@ class Solution(object):
         """
         hashmap = {}
         res    # list
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ target-num __ hashmap:
                 r.. [hashmap[target-num], i]
             hashmap[num] = i

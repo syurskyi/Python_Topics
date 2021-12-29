@@ -71,7 +71,7 @@ class Solution:
             ____:
                 F[i] = m..(
                     c + F[i+d]
-                    ___ d, c __ zip([1, 7, 30], costs)
+                    ___ d, c __ z..([1, 7, 30], costs)
                 )
 
         r.. F[1]

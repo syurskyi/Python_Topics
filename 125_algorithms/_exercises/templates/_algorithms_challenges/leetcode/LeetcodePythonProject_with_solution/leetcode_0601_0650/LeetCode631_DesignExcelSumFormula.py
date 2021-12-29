@@ -49,17 +49,17 @@ class Excel(object):
         """
         i, j = r-1, ord(c)-ord('A')
         ___ (i0, j0), vals __ self.hashmap.items():
-            __ i0 __ i and j0 __ j:
+            __ i0 __ i a.. j0 __ j:
                 del self.hashmap[(i, j)]
                 break
             ___ i1, j1 __ vals:
-                __ i1 __ i and j1 __ j and (i, j) __ self.hashmap:
+                __ i1 __ i a.. j1 __ j a.. (i, j) __ self.hashmap:
                     del self.hashmap[(i, j)]
                     break
         vals    # list
         sumVal = 0
         ___ s __ strs:
-            arr = s.split(':')
+            arr = s.s..(':')
             __ l..(arr) __ 1:
                 x = int(arr[0][1:])-1
                 y = ord(arr[0][0])-ord('A')

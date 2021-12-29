@@ -3,11 +3,11 @@ _______ re
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 
-used_passwords = set('PassWord@1 PyBit$s9'.split())
+used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 
 ___ validate_password(password):
-    __ n.. l..(password) >= 6 and l..(password) <= 12:
+    __ n.. l..(password) >= 6 a.. l..(password) <= 12:
         r.. False
     
     __ l..(re.findall(r"\d", password)) < 1:

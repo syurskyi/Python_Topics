@@ -5,7 +5,7 @@ class Solution:
     @return true or false
     """
     ___ anagram(self, s, t):
-        __ s __ '' and t __ '':
+        __ s __ '' a.. t __ '':
             r.. True
         __ n.. s o. n.. t:
             r.. False

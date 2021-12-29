@@ -20,7 +20,7 @@ class BiteStats:
             csv_reader = DictReader(f,delimiter=',')
 
             ___ row __ csv_reader:
-                yield row
+                y.. row
 
 
 
@@ -78,7 +78,7 @@ class BiteStats:
 
 
     @property
-    ___ top_bite_by_number_of_clicks(self) -> str:
+    ___ top_bite_by_number_of_clicks(self) -> s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
 
@@ -86,7 +86,7 @@ class BiteStats:
         r.. Counter(row['bite'] ___ row __ self.rows).most_common(1)[0][0]
 
     @property
-    ___ top_user_by_bites_completed(self) -> str:
+    ___ top_user_by_bites_completed(self) -> s..:
         """Get the user that completed the most Bites"""
 
         r.. Counter(row['user'] ___ row __ filter(l.... row: row['completed'] __ 'True',self.rows)).most_common(1)[0][0]

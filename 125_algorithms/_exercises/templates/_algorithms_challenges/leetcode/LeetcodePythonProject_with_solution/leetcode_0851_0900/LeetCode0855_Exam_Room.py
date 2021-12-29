@@ -21,7 +21,7 @@ class ExamRoom(object):
             res = 0
         ____:
             d, res = self.l[0], 0
-            ___ a, b __ zip(self.l, self.l[1:]):
+            ___ a, b __ z..(self.l, self.l[1:]):
                 __ (b-a)//2 > d:
                     d, res = (b-a)//2, (b+a)//2
             __ self.rowNum - 1 - self.l[-1] > d:

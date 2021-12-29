@@ -71,12 +71,12 @@ class Solution:
         __ sum_A > sum_B:
             r.. self.fairCandySwap(B, A)[::-1]
 
-        A.sort()
-        B.sort()
+        A.s..()
+        B.s..()
         diff = (sum_B - sum_A) // 2
         ___ a __ A:
             i = bisect.bisect_left(B, a + diff)
-            __ i < l..(B) and B[i] __ a + diff:
+            __ i < l..(B) a.. B[i] __ a + diff:
                 r.. [a, a + diff]
 
         raise

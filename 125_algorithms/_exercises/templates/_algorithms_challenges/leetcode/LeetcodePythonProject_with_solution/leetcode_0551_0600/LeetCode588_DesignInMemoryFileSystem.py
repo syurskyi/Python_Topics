@@ -17,13 +17,13 @@ class FileSystem(object):
     
     ___ ls(self, path):
         path = path[1:]
-        arr = path.split('/')
+        arr = path.s..('/')
         __ arr[0] __ '':
             arr    # list
         node = self.root
         ___ folder __ arr:
             node = node.children[folder]
-        node.childFolders.sort()
+        node.childFolders.s..()
         __ node.isFile:
             r.. [node.folder]
         ____:
@@ -31,7 +31,7 @@ class FileSystem(object):
     
     ___ mkdir(self, path):
         path = path[1:]
-        arr = path.split('/')
+        arr = path.s..('/')
         node = self.root
         ___ folder __ arr:
             __ folder __ node.children:
@@ -44,7 +44,7 @@ class FileSystem(object):
     
     ___ addContentToFile(self, filePath, content):
         filePath = filePath[1:]
-        arr = filePath.split('/')
+        arr = filePath.s..('/')
         file = arr[-1]
         arr = arr[:-1]
         node = self.root
@@ -67,7 +67,7 @@ class FileSystem(object):
     
     ___ readContentFromFile(self, filePath):
         filePath = filePath[1:]
-        arr = filePath.split('/')
+        arr = filePath.s..('/')
         node = self.root
         ___ folder __ arr:
             node = node.children[folder]

@@ -44,7 +44,7 @@ class Solution:
         __ k __ 1:
             r.. True
 
-        __ cur_sum and cur_sum __ target_sum:
+        __ cur_sum a.. cur_sum __ target_sum:
             # start index is 0
             r.. self.dfs(nums, 0, N.., target_sum, visited, k - 1)
 
@@ -85,7 +85,7 @@ class Solution_TLE:
         __ k __ 0:
             r.. True
 
-        __ cur_sum and cur_sum __ target_sum:
+        __ cur_sum a.. cur_sum __ target_sum:
             r.. self.dfs(nums, N.., target_sum, visited, k - 1)
 
         ___ i __ r..(l..(nums)):

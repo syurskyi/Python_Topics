@@ -21,7 +21,7 @@ class ListNode:
         r.. repr(self.val)
 
     ___ __str__(self):
-        r.. str(self.val)+", "+str(self.next)
+        r.. s..(self.val)+", "+s..(self.next)
 
 class Solution:
     ___ reverseBetween(self, head, m, n):
@@ -47,7 +47,7 @@ class Solution:
         start = N..
 
         cur = pre.next  # cannot put it in while loop? affect reverse link
-        while pre.next:
+        w.... pre.next:
             # record starting point
             __ cnt__m:
                 start_pre = pre

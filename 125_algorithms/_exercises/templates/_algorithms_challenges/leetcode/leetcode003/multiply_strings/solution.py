@@ -23,12 +23,12 @@ class Solution(object):
             ___ j __ r..(m):
                 tmp = int(a[i]) * int(b[j]) + int(res[i + j]) + c
                 digit = tmp % 10
-                res[i + j] = str(digit)
+                res[i + j] = s..(digit)
                 c = tmp / 10
             __ c > 0:
-                res[m + i] = str(c)
+                res[m + i] = s..(c)
         res = ''.join(res[::-1])
-        ___ i, d __ enumerate(res):
+        ___ i, d __ e..(res):
             __ d != '0':
                 r.. res[i:]
         ____:

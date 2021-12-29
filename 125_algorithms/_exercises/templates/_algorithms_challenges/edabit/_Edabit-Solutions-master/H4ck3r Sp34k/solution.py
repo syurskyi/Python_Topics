@@ -1,2 +1,2 @@
 ___ hacker_speak(txt):
-    r.. txt.replace("a", str(4)).replace("e", str(3)).replace("i", str(1)).replace("o", str(0)).replace("s", str(5))
+    r.. txt.r..("a", s..(4)).r..("e", s..(3)).r..("i", s..(1)).r..("o", s..(0)).r..("s", s..(5))

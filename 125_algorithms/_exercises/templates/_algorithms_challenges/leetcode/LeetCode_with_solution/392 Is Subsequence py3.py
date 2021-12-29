@@ -32,12 +32,12 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ isSubsequence(self, s: str, t: str) -> bool:
+    ___ isSubsequence(self, s: s.., t: s..) -> bool:
         """
         Subsequence - Binary search
         """
         char_pos = defaultdict(l..)
-        ___ p, c __ enumerate(t):
+        ___ p, c __ e..(t):
             char_pos[c].a..(p)
             # the list is naturally sorted
 

@@ -11,7 +11,7 @@ class Solution(object):
     numbers = "B123456789"
     queue = deque([click])
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
-    while queue:
+    w.... queue:
       i, j = queue.popleft()
       __ board[i][j] __ "B":
         continue
@@ -22,7 +22,7 @@ class Solution(object):
       nbrs    # list
       ___ di, dj __ directions:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < l..(board) and 0 <= nj < l..(board[0]) and board[ni][nj] __ ["M", "E"]:
+        __ 0 <= ni < l..(board) a.. 0 <= nj < l..(board[0]) a.. board[ni][nj] __ ["M", "E"]:
           __ board[ni][nj] __ "M":
             mineCnt += 1
           ____:

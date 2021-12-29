@@ -9,7 +9,7 @@ class Solution(object):
         __ n.. strs: r.. ""
         l = m..(map(l.., strs))
         i = 0
-        while i < l:
+        w.... i < l:
             char = strs[0][i]
             ___ s __ strs:
                 __ s[i] != char:
@@ -37,7 +37,7 @@ class Solution(object):
             char = strs[0][i]
 
             j = 0
-            while j < n:
+            w.... j < n:
                 try:
                     __ strs[j][i] != char: break
                     j += 1

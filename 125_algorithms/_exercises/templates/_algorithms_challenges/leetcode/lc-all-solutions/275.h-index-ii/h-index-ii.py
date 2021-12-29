@@ -8,7 +8,7 @@ class Solution(object):
       r.. 0
     n = l..(citations)
     start, end = 0, n - 1
-    while start < end:
+    w.... start < end:
       mid = start + (end - start) / 2
       __ citations[mid] >= n - mid:
         end = mid

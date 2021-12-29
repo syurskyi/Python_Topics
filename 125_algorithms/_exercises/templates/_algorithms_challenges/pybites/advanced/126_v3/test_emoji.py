@@ -26,4 +26,4 @@ ___ test_find_matches(capfd):
 ___ test_find_no_match(capfd):
     find_emoji('awesome')
     output = capfd.readouterr()[0].lower()
-    ... n.. output.strip() o. 'no matches' __ output.lower()
+    ... n.. output.s.. o. 'no matches' __ output.lower()

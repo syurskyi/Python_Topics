@@ -28,10 +28,10 @@ ___ create_parser():
        Note that type=float times out here so do the casting in the calculator
        function above!"""
     parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument('-a', '--add', type=str, nargs='+', help='Sums numbers')
-    parser.add_argument('-s', '--sub', type=str, nargs='+', help='Subtracts numbers')
-    parser.add_argument('-m', '--mul', type=str, nargs='+', help='Multiplies numbers')
-    parser.add_argument('-d', '--div', type=str, nargs='+', help='Divides numbers')
+    parser.add_argument('-a', '--add', type=s.., nargs='+', help='Sums numbers')
+    parser.add_argument('-s', '--sub', type=s.., nargs='+', help='Subtracts numbers')
+    parser.add_argument('-m', '--mul', type=s.., nargs='+', help='Multiplies numbers')
+    parser.add_argument('-d', '--div', type=s.., nargs='+', help='Divides numbers')
     r.. parser
 
 

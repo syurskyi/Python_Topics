@@ -10,7 +10,7 @@ class ZigzagIterator(object):
         self.pointer = 0
     
     ___ next(self):
-        while self.hashNext():
+        w.... self.hashNext():
             __ self.vec[self.pointer]:
                 val = self.vec[self.pointer][0]
                 self.vec[self.pointer].pop()

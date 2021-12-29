@@ -24,8 +24,8 @@ class Solution(object):
             r.. True
         left = 0
         right = l..(s) - 1
-        while left < right:
-            __ s[left].isalnum() and s[right].isalnum():
+        w.... left < right:
+            __ s[left].isalnum() a.. s[right].isalnum():
                 __ s[left].lower() != s[right].lower():
                     r.. False
                 left += 1

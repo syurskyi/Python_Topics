@@ -6,7 +6,7 @@ ____ true_or_false.question _______ Question
 class Game:
 
     ___ __parse_line(self, line):
-        parts  line.split(';')
+        parts  line.s..(';')
         text  parts[0]
         is_correct  parts[1] __ "Yes"
         explanation  parts[2]

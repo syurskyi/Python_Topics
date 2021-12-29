@@ -17,7 +17,7 @@ class Solution(object):
         :type root2: TreeNode
         :rtype: bool
         """
-        __ n.. root1 and n.. root2: r.. True
+        __ n.. root1 a.. n.. root2: r.. True
         __ n.. root1 o. n.. root2: r.. False
         r.. self.getLeaves(root1) __ self.getLeaves(root2)
         
@@ -26,16 +26,16 @@ class Solution(object):
         res    # list
         node = root
         stack    # list
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
-            __ n.. node.left and n.. node.right:
+            __ n.. node.left a.. n.. node.right:
                 res.a..(node.val)
             __ node.right:
                 node0 = node.right
-                while node0:
+                w.... node0:
                     stack.a..(node0)
                     node0 = node0.left
         r.. res

@@ -5,4 +5,4 @@ class Solution(object):
     :type t: str
     :rtype: bool
     """
-    r.. l..(set(s)) __ l..(set(t)) __ l..(set(zip(s, t)))
+    r.. l..(set(s)) __ l..(set(t)) __ l..(set(z..(s, t)))

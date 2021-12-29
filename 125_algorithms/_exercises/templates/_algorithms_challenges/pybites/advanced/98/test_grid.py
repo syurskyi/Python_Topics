@@ -29,8 +29,8 @@ ___ test_print_sequence_route_small_grid(capfd):
 
     ... l..(actual) __ l..(expected)
 
-    ___ i, j __ zip(actual, expected):
-        ... i.strip() __ j.strip()
+    ___ i, j __ z..(actual, expected):
+        ... i.s.. __ j.s..
 
 
 intermediate_grid = """
@@ -70,8 +70,8 @@ ___ test_print_sequence_route_intermediate_grid(capfd):
 
     ... l..(actual) __ l..(expected)
 
-    ___ i, j __ zip(actual, expected):
-        ... i.strip() __ j.strip()
+    ___ i, j __ z..(actual, expected):
+        ... i.s.. __ j.s..
 
 
 big_grid = """
@@ -119,5 +119,5 @@ ___ test_print_sequence_route_big_grid(capfd):
 
     ... l..(actual) __ l..(expected)
 
-    ___ i, j __ zip(actual, expected):
-        ... i.strip() __ j.strip()
+    ___ i, j __ z..(actual, expected):
+        ... i.s.. __ j.s..

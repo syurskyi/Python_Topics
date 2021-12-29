@@ -1,6 +1,6 @@
 _______ os
 
-paths  [os.path.join(os.getcwd(), f'dir_{str(i).zfill(2)}') ___ i __ r..(1, 14)]
+paths  [os.path.join(os.getcwd(), f'dir_{s..(i).zfill(2)}') ___ i __ r..(1, 14)]
 
 ___ path __ paths:
     __ n.. os.path.exists(path):

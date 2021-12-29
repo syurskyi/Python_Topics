@@ -19,10 +19,10 @@ The binary representation of 7 is: 111.
 class Solution:
     ___ hasAlternatingBits(self, n: int) -> bool:
         last = N..
-        while n:
+        w.... n:
             cur = n & 1
             # `if last` is error
-            __ last __ n.. N.. and last ^ cur __ 0:
+            __ last __ n.. N.. a.. last ^ cur __ 0:
                 r.. False
             last = cur
             n >>= 1

@@ -42,7 +42,7 @@ class NumArray(object):
             self.updateHelper(root.leftChild, i, val)
         ____:
             self.updateHelper(root.rightChild, i, val)
-        __ root.start __ i and root.end __ i:
+        __ root.start __ i a.. root.end __ i:
             root.sumVal = val
             r..
         root.sumVal = root.leftChild.sumVal + root.rightChild.sumVal
@@ -53,7 +53,7 @@ class NumArray(object):
     ___ sumRangeHelper(self, root, i, j):
         __ n.. root o. i > j o. j < root.start o. i > root.end:
             r.. 0
-        __ i __ root.start and j __ root.end:
+        __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
         mid = root.start + (root.end-root.start)//2
         result = self.sumRangeHelper(root.leftChild, i, m..(j, mid)) +\

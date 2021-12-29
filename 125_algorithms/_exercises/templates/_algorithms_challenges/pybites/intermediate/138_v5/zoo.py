@@ -3,7 +3,7 @@ class Animal:
     _zoo = N..
     _index = N..
 
-    ___ __init__(self, name: str):
+    ___ __init__(self, name: s..):
         self.name = name.t..
         self.index = self._next_index()
         self._add_to_zoo(self)
@@ -28,4 +28,4 @@ class Animal:
     ___ zoo(cls):
         __ cls._zoo __ N..
             r.. ''
-        r.. str(cls._zoo)
+        r.. s..(cls._zoo)

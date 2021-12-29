@@ -9,13 +9,13 @@ class Solution(object):
       res = 0
       __ grid[i][j] __ 0:
         r.. 0
-      __ i __ 0 o. i - 1 >= 0 and grid[i - 1][j] __ 0:
+      __ i __ 0 o. i - 1 >= 0 a.. grid[i - 1][j] __ 0:
         res += 1
-      __ i __ l..(grid) - 1 o. i + 1 < l..(grid) and grid[i + 1][j] __ 0:
+      __ i __ l..(grid) - 1 o. i + 1 < l..(grid) a.. grid[i + 1][j] __ 0:
         res += 1
-      __ j __ 0 o. j - 1 >= 0 and grid[i][j - 1] __ 0:
+      __ j __ 0 o. j - 1 >= 0 a.. grid[i][j - 1] __ 0:
         res += 1
-      __ j __ l..(grid[0]) - 1 o. j + 1 < l..(grid[0]) and grid[i][j + 1] __ 0:
+      __ j __ l..(grid[0]) - 1 o. j + 1 < l..(grid[0]) a.. grid[i][j + 1] __ 0:
         res += 1
       r.. res
 

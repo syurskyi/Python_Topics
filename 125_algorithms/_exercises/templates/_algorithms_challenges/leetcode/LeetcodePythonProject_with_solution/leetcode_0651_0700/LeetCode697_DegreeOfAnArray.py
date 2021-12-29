@@ -13,7 +13,7 @@ class Solution(object):
         hashmap = {}
         degree = 0
         cands = set()
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             hashmap[num] = hashmap.get(num, [])+[i]
             __ l..(hashmap[num]) > degree:
                 degree = l..(hashmap[num])

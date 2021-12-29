@@ -22,14 +22,14 @@ class Solution(object):
             __ outdegrees[i] __ 0:
                 queue.a..(i)
         res    # list
-        while queue:
+        w.... queue:
             i = queue.pop(0)
             res.a..(i)
             ___ j __ inlinks[i]:
                 outdegrees[j] -= 1
                 __ outdegrees[j] __ 0:
                     queue.a..(j)
-        res.sort()
+        res.s..()
         r.. res
     
     ___ eventualSafeNodes_own_TLE(self, graph):

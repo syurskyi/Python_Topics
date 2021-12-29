@@ -18,7 +18,7 @@ class Solution:
                 times = 0
             ____ c __ ']':
                 part    # list
-                while stack and isi..(stack[-1], str):
+                w.... stack a.. isi..(stack[-1], s..):
                     part.a..(stack.pop())
                 cnt = int(stack.pop()) __ stack ____ 1
                 stack.a..(cnt * ''.join(reversed(part)))

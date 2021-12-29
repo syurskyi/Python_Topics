@@ -19,11 +19,11 @@ class Solution(object):
         """
         __ n.. root:
             r.. 0
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             r.. 1
-        ____ root.left and root.right:
+        ____ root.left a.. root.right:
             r.. m..(self.minDepth(root.left), self.minDepth(root.right)) + 1
-        ____ root.left and n.. root.right:
+        ____ root.left a.. n.. root.right:
             r.. self.minDepth(root.left) + 1
         ____:
             r.. self.minDepth(root.right) + 1

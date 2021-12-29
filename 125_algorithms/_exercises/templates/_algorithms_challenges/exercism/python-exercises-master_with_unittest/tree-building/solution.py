@@ -14,9 +14,9 @@ class Node():
 
 
 ___ validateRecord(record):
-    __ record.equal_id() and record.record_id != 0:
+    __ record.equal_id() a.. record.record_id != 0:
         raise ValueError("Only root should have equal record and parent id")
-    ____ n.. record.equal_id() and record.parent_id >= record.record_id:
+    ____ n.. record.equal_id() a.. record.parent_id >= record.record_id:
         raise ValueError("Node record_id should be smaller than its parent_id")
 
 
@@ -32,7 +32,7 @@ ___ BuildTree(records):
     root_id = 0
     root = N..
 
-    ___ index, record_id __ enumerate(ordered_id):
+    ___ index, record_id __ e..(ordered_id):
         __ index != record_id:
             raise ValueError("Record id is invalid or out of order")
         __ record_id __ root_id:

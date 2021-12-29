@@ -1,4 +1,4 @@
-___ convert(value: float, fmt: str) -> float:
+___ convert(value: float, fmt: s..) -> float:
     """Converts the value to the designated format.
 
     :param value: The value to be converted must be numeric or raise a TypeError
@@ -7,7 +7,7 @@ ___ convert(value: float, fmt: str) -> float:
     """
     fmt = fmt.casefold()
     is_float = N..
-    while is_float __ N..
+    w.... is_float __ N..
         try:
             is_float = float(value)
         except TypeError:

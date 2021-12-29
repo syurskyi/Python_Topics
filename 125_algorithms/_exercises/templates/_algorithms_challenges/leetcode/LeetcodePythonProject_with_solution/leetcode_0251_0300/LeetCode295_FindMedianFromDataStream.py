@@ -13,7 +13,7 @@ class MedianFinder(object):
         self.maxHeap    # list
 
     ___ addNum(self, num):
-        __ (n.. self.minHeap and n.. self.maxHeap) o. num < -self.maxHeap[0]:
+        __ (n.. self.minHeap a.. n.. self.maxHeap) o. num < -self.maxHeap[0]:
             heapq.heappush(self.maxHeap, -num)
             __ l..(self.maxHeap) > l..(self.minHeap) + 1:
                 heapq.heappush(self.minHeap, -heapq.heappop(self.maxHeap))

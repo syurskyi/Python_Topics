@@ -26,6 +26,6 @@ ___ person_max_bmi(data=data):
        has the highest BMI (rounded on 2 decimals)"""
     res    # list
     ___ line __ data.splitlines(keepends=False):
-        name, height, mass = line.strip().split(',')
+        name, height, mass = line.s...s..(',')
         res.a..((name, round(float(mass) / ((int(height) / 100) ** 2), 2)))
     r.. max(res, key=l.... x: x[1])

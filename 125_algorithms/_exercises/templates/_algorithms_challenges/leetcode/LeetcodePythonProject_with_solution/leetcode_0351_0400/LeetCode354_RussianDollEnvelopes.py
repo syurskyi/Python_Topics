@@ -8,7 +8,7 @@ class Solution(object):
     ___ maxEnvelopes(self, envelopes):
         _______ bisect
         length = 0
-        envelopes.sort(key=l.... x: (x[0], -x[1]))
+        envelopes.s..(key=l.... x: (x[0], -x[1]))
         dp = [0]*l..(envelopes)
         ___ env __ envelopes:
             ind = bisect.bisect_left(dp, env[1], 0, length)

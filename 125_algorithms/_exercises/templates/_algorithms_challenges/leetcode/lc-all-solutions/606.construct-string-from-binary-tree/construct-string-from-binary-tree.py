@@ -13,4 +13,4 @@ class Solution(object):
       res += "(%s)" % left
     __ right:
       res += "(%s)" % right
-    r.. str(t.val) + res
+    r.. s..(t.val) + res

@@ -20,7 +20,7 @@ class Solution(object):
         h    # list
         visited = [False]*N
         heapq.heappush(h, (-M, 0))
-        while h:
+        w.... h:
             cur = heapq.heappop(h)
             start = cur[1]
             move = -cur[0]
@@ -30,7 +30,7 @@ class Solution(object):
             res += 1
             ___ i __ r..(N):
                 __ graph[start][i] != -1:
-                    __ move > graph[start][i] and n.. visited[i]:
+                    __ move > graph[start][i] a.. n.. visited[i]:
                         heapq.heappush(h, ( -(move-graph[start][i]-1), i) )
                     graph[i][start] -= m..(move, graph[start][i])
                     res += m..(move, graph[start][i])

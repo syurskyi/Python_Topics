@@ -1,7 +1,7 @@
 ___ word_count(phrase):
 
     # Remove whitespace and \n and toss into array
-    words = phrase.strip().replace("\n", " ").split(" ")
+    words = phrase.s...r..("\n", " ").s..(" ")
 
     # Remove empty strings
     words = [_f ___ _f __ words __ _f]

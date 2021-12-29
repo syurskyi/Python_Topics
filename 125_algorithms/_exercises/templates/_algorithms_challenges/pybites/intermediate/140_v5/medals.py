@@ -1,13 +1,13 @@
 ____ os _______ path
 ____ urllib.request _______ urlretrieve
 _______ pandas as pd
-____ itertools _______ chain
+____ i.. _______ chain
 
 data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
 ___ load_data(data):
-    dt_file = path.join('/tmp', data.split('/')[-1])
+    dt_file = path.join('/tmp', data.s..('/')[-1])
     __ n.. path.isfile(dt_file):
         urlretrieve(data, dt_file)
     with open(dt_file, 'r') as f:

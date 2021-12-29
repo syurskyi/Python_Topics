@@ -28,14 +28,14 @@ class Solution(object):
         :rtype: int
         """
         f, s = 0, 0
-        while True:
+        w... T...
             f = nums[nums[f]]
             s = nums[s]
             __ f __ s:
                 break
 
         t = 0
-        while t != s:
+        w.... t != s:
             t = nums[t]
             s = nums[s]
 

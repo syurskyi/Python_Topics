@@ -20,7 +20,7 @@ class Solution:
         r.. self.divide_conquer(root.left, root.right)
 
     ___ divide_conquer(self, left, right):
-        __ n.. left and n.. right:
+        __ n.. left a.. n.. right:
             r.. True
         __ n.. left o. n.. right:
             r.. False

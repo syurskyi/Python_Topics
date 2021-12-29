@@ -13,7 +13,7 @@ class Solution(object):
         _______ re
         code = re.sub(r'<!\[CDATA\[.*?\]\]>|t', '-', code)
         prev = N..
-        while code != prev:
+        w.... code != prev:
             prev = code
             code = re.sub(r'<([A-Z]{1,9})>[^<]*</\1>', 't', code)
         r.. code __ 't'

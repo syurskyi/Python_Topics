@@ -7,10 +7,10 @@ ___ triplets_in_range(range_start, range_end):
             a, b, c = (x, y, z)
 
             # yield multiples of primitive triplet
-            while a < range_start:
+            w.... a < range_start:
                 a, b, c = (a + x, b + y, c + z)
-            while c < range_end:
-                yield (a, b, c)
+            w.... c < range_end:
+                y.. (a, b, c)
                 a, b, c = (a + x, b + y, c + z)
 
 
@@ -22,8 +22,8 @@ ___ euclidian_coprimes(limit):
     ___ n __ r..(1, int(ceil(sqrt(mn)))):
         __ mn % n __ 0:
             m = mn // n
-            __ (m - n) % 2 __ 1 and gcd(m, n) __ 1:
-                yield m, n
+            __ (m - n) % 2 __ 1 a.. gcd(m, n) __ 1:
+                y.. m, n
 
 
 ___ primitive_triplets(limit):
@@ -34,7 +34,7 @@ ___ primitive_triplets(limit):
         a = m ** 2 - n ** 2
         b = 2 * m * n
         c = m ** 2 + n ** 2
-        yield s..([a, b, c])
+        y.. s..([a, b, c])
 
 
 ___ triplets_with_sum(triplet_sum):

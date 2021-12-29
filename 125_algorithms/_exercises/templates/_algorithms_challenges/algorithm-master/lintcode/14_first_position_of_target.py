@@ -8,7 +8,7 @@ class Solution:
 
         left, mid, right = 0, 0, l..(A) - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) // 2
             __ A[mid] < target:
                 left = mid

@@ -12,7 +12,7 @@ class Solution(object):
         """
         res = '%s' % nums[0]
         ___ i __ r..(1, l..(nums)):
-            __ i __ 1 and l..(nums) > 2:
+            __ i __ 1 a.. l..(nums) > 2:
                 res += '/(%s' % nums[i]
             ____:
                 res += '/%s' % nums[i]

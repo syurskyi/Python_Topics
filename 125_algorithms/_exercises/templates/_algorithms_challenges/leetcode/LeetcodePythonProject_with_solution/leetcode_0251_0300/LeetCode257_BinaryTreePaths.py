@@ -17,11 +17,11 @@ class Solution:
     ___ binaryTreePaths(self, root):
         __ n.. root: r.. []
         res    # list
-        self.helper(root, res, str(root.val))
+        self.helper(root, res, s..(root.val))
         r.. res
     
     ___ helper(self, root, res, curr):
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             res.a..(curr)
             r..
         __ root.left:

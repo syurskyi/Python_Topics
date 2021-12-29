@@ -1,5 +1,5 @@
 ____ enum _______ Enum
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ collections _______ Counter, defaultdict
 
 
@@ -41,9 +41,9 @@ ___ _maybe_DateFormats(date_str):
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
     maybe_formats    # list
-    ___ idx, d_parse_fmt __ enumerate(d_parse_formats):
+    ___ idx, d_parse_fmt __ e..(d_parse_formats):
         try:
-            _parsed_date = datetime.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
+            _parsed_date = d__.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
         except ValueError:
             pass
@@ -76,7 +76,7 @@ ___ get_dates(dates):
                 enum_dict[enum_list[index].value] += 1
     sorted_enum = s..(enum_dict, key=enum_dict.get, r.._T..
     # convert to the most prevalent date format
-    __ enum_dict[sorted_enum[0]] != enum_dict[sorted_enum[1]] and sorted_enum[0] != -999:
+    __ enum_dict[sorted_enum[0]] != enum_dict[sorted_enum[1]] a.. sorted_enum[0] != -999:
         date_str = DateFormat.get_d_parse_formats(sorted_enum[0])
         ___ date __ dates:
             enum_list = _maybe_DateFormats(date)
@@ -85,7 +85,7 @@ ___ get_dates(dates):
                 return_list.a..('Invalid')
             ____:
                 try:
-                    return_list.a..(str(datetime.strptime(date, date_str).date())                    )
+                    return_list.a..(s..(d__.strptime(date, date_str).date())                    )
                 except ValueError:
                     return_list.a..("Invalid")
                 

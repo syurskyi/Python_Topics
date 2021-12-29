@@ -1,4 +1,4 @@
-____ itertools _______ combinations
+____ i.. _______ combinations
 
 
 ___ find_number_pairs(numbers, N=10):

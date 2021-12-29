@@ -30,10 +30,10 @@ class Solution:
         __ root __ n.. N..
             self.traverse(root.left)
             __ self.prev __ n.. N..
-                __ self.first __ N.. and root.val < self.prev.val:
+                __ self.first __ N.. a.. root.val < self.prev.val:
                     self.first = self.prev
                     self.second = root
-                ____ self.first __ n.. N.. and root.val < self.prev.val:
+                ____ self.first __ n.. N.. a.. root.val < self.prev.val:
                     self.second = root
             self.prev = root
             self.traverse(root.right)

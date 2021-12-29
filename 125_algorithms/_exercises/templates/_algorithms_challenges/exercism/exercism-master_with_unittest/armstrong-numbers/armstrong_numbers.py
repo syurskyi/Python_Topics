@@ -1,5 +1,5 @@
 ___ get_digits(number):
-    r.. l..(map(int, l..(str(number))))
+    r.. l..(map(int, l..(s..(number))))
 
 
 ___ is_armstrong(number):

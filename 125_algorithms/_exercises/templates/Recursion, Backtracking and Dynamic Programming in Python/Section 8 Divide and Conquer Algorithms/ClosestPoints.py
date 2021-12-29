@@ -74,8 +74,8 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
 
 
 ___ run(list1, list2
-    list1.sort(keylambda point: point.x)
-    list2.sort(keylambda point: point.y)
+    list1.s..(keylambda point: point.x)
+    list2.s..(keylambda point: point.y)
     r_ closest_pairs_algorithm(list1, list2, le_(list1))
 
 

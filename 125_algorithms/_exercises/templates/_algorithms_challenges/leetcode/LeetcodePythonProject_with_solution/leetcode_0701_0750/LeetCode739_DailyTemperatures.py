@@ -13,7 +13,7 @@ class Solution(object):
         res    # list
         ___ i __ r..(l..(temperatures)-1, -1, -1):
             t = temperatures[i]
-            while stack and temperatures[stack[-1]] <= t:
+            w.... stack a.. temperatures[stack[-1]] <= t:
                 stack.pop()
             __ n.. stack:
                 res.insert(0, 0)

@@ -7,7 +7,7 @@ class KindergartenGardenTests(unittest.TestCase):
     ___ test_alices_garden(self):
         self.assertEqual(
             Garden("RC\nGG").plants("Alice"),
-            "Radishes Clover Grass Grass".split())
+            "Radishes Clover Grass Grass".s..())
 
     ___ test_bob_and_charlies_gardens(self):
         garden = Garden("VVCCGG\nVVCCGG")
@@ -18,23 +18,23 @@ class KindergartenGardenTests(unittest.TestCase):
         garden = Garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV")
         self.assertEqual(
             garden.plants("Alice"),
-            "Violets Radishes Violets Radishes".split())
+            "Violets Radishes Violets Radishes".s..())
         self.assertEqual(
-            garden.plants("Bob"), "Clover Grass Clover Clover".split())
+            garden.plants("Bob"), "Clover Grass Clover Clover".s..())
         self.assertEqual(
-            garden.plants("Kincaid"), "Grass Clover Clover Grass".split())
+            garden.plants("Kincaid"), "Grass Clover Clover Grass".s..())
         self.assertEqual(
-            garden.plants("Larry"), "Grass Violets Clover Violets".split())
+            garden.plants("Larry"), "Grass Violets Clover Violets".s..())
 
     ___ test_disordered_test(self):
         garden = Garden(
             "VCRRGVRG\nRVGCCGCV",
-            students="Samantha Patricia Xander Roger".split())
+            students="Samantha Patricia Xander Roger".s..())
         self.assertEqual(
             garden.plants("Patricia"),
-            "Violets Clover Radishes Violets".split())
+            "Violets Clover Radishes Violets".s..())
         self.assertEqual(
-            garden.plants("Xander"), "Radishes Grass Clover Violets".split())
+            garden.plants("Xander"), "Radishes Grass Clover Violets".s..())
 
 
 __ __name__ __ '__main__':

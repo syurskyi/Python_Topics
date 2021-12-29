@@ -34,7 +34,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ findAndReplacePattern(self, words: List[str], pattern: str) -> List[str]:
+    ___ findAndReplacePattern(self, words: List[s..], pattern: s..) -> List[s..]:
         """
         mapping
         """
@@ -51,7 +51,7 @@ class Solution:
         m = {}
         m_inv = {}  # bijection
         ___ i __ r..(l..(word)):
-            __ word[i] n.. __ m and pattern[i] n.. __ m_inv:
+            __ word[i] n.. __ m a.. pattern[i] n.. __ m_inv:
                 m[word[i]] = pattern[i]
                 m_inv[pattern[i]] = word[i]
             ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:

@@ -67,11 +67,11 @@ class Solution:
                                    v1              v2
                         s2: |`j`---`k-l`--->|`j+k-l`--`l`-->|
                         """
-                        __ dp[i][j][l] and dp[i + l][j + l][k - l]:
+                        __ dp[i][j][l] a.. dp[i + l][j + l][k - l]:
                             dp[i][j][k] = True
                             continue
 
-                        __ dp[i][j + k - l][l] and dp[i + l][j][k - l]:
+                        __ dp[i][j + k - l][l] a.. dp[i + l][j][k - l]:
                             dp[i][j][k] = True
 
         r.. dp[0][0][n]

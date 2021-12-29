@@ -1,7 +1,7 @@
 ___ cleanWord(data):
     word    # list
     ___ char __ data:
-        __ str.isalpha(char) __ True:
+        __ s...isalpha(char) __ True:
             word.a..(char)
         ____:
             word.a..('')

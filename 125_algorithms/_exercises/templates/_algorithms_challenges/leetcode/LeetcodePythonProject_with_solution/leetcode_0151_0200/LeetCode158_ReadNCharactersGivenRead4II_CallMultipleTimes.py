@@ -20,7 +20,7 @@ class Solution(object):
         :rtype: The number of characters read (int)
         """
         idx = 0
-        while True:
+        w... T...
             buf4 = ['']*4
             read4(buf4)
             self.queue.extend(buf4)

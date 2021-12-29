@@ -1,7 +1,7 @@
 ___ infinite_sequence():
     num = 0
-    while True:
-        yield num
+    w... T...
+        y.. num
         num += 1
 
 print("start")

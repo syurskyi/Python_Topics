@@ -37,7 +37,7 @@ class Solution:
         __ root:
             q.a..(root)
 
-        while q:
+        w.... q:
             length = l..(q)
             # cur_level = []
             ___ i __ r..(length):

@@ -1,4 +1,4 @@
-___ rotate(string, n):
-    string = deque(string)
-    string.rotate(-n)
-    r.. print("".join(string))
+# ___ rotate string, n
+#     string  d.. ?
+#     ?.r.. -?
+#     r.. print("".j.. ?

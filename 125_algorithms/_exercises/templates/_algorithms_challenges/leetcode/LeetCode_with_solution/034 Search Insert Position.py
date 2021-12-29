@@ -27,7 +27,7 @@ class Solution:
         start = 0
         end = length -1
         # while start<=end:
-        while True:
+        w... T...
             mid = (start+end)/2
             __ target__A[mid]:
                 r.. mid
@@ -55,7 +55,7 @@ class Solution:
 
         start = 0
         end = length
-        while start<end:
+        w.... start<end:
             mid = (start + end) / 2
             __ target__A[mid]:
                 r.. mid

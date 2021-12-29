@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ random _______ choice
 ____ tempfile _______ NamedTemporaryFile
 
@@ -37,12 +37,12 @@ ___ test_clamyfernet_no_args(rcf):
 ___ test_clamyfernet_random_key(rcf):
     token = rcf.encrypt("secret msg")
     ts = rcf.clf.extract_timestamp(token)
-    dt = datetime.fromtimestamp(ts)
+    dt = d__.fromtimestamp(ts)
     ... isi..(rcf, ClamyFernet)
     ... isi..(rcf.clf, Fernet)
     ... isi..(rcf.key, ByteString)
     ... isi..(rcf.kdf, PBKDF2HMAC)
-    ... dt.year __ datetime.now().year
+    ... dt.year __ d__.now().year
 
 
 ___ test_clamyfernet(cf):

@@ -35,7 +35,7 @@ class Solution:
         ____ l..(current)+l..(nums)<k:
             r..  # prune
 
-        ___ ind, val __ enumerate(nums):
+        ___ ind, val __ e..(nums):
             # try:
             self.get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:

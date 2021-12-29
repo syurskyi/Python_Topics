@@ -17,12 +17,12 @@ class Solution(object):
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])
         leaves    # list
-        ___ i, nodes __ enumerate(graph):
+        ___ i, nodes __ e..(graph):
             __ l..(nodes) __ 1:
                 leaves.a..(i)
         __ n.. leaves:
             r.. []
-        while n > 2:
+        w.... n > 2:
             n = n-l..(leaves)
             newLeaves    # list
             ___ leaf __ leaves:

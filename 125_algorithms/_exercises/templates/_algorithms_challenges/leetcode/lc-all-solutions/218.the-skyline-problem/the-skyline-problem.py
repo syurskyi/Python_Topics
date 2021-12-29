@@ -12,7 +12,7 @@ class Solution(object):
     ___ b __ buildings:
       hs.a..((b[0], -b[2]))
       hs.a..((b[1], b[2]))
-    hs.sort()
+    hs.s..()
     ans    # list
     pre = cur = N..
     ___ h __ hs:

@@ -21,7 +21,7 @@ class MagicDictionary:
         """
         ___ word __ words:
             ___ i __ r..(l..(word)):
-                key = '{0},{1}'.format(word[:i], word[i + 1:])
+                key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
                 __ key n.. __ self.words:
                     self.words[key] = set()
@@ -36,7 +36,7 @@ class MagicDictionary:
         :rtype: bool
         """
         ___ i __ r..(l..(word)):
-            key = '{0},{1}'.format(word[:i], word[i + 1:])
+            key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
             __ key n.. __ self.words:
                 continue

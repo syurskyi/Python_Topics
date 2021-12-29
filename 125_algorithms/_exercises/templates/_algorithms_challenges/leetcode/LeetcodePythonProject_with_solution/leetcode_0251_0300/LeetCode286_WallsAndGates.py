@@ -20,10 +20,10 @@ class Solution(object):
     ___ bfs(self, rooms, i, j):
         m, n = l..(rooms), l..(rooms[0])
         queue = [(i, j, 0)]
-        while queue:
+        w.... queue:
             i0, j0, dist = queue.pop(0)
             ___ x, y __ ((i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1)):
-                __ 0 <= x < m and 0 <= y < n and rooms[x][y] != -1:
+                __ 0 <= x < m a.. 0 <= y < n a.. rooms[x][y] != -1:
                     newDist = dist + 1
                     rooms[x][y] = m..(rooms[x][y], newDist)
                     __ rooms[x][y] > rooms[i0][j0]:
@@ -37,10 +37,10 @@ class Solution(object):
             [0, -1, float('inf'), float('inf')],
         ]
         print('before:')
-        print('\n'.join([str(l) ___ l __ matrix]))
+        print('\n'.join([s..(l) ___ l __ matrix]))
         self.wallsAndGates(matrix)
         print('after:')
-        print('\n'.join([str(l) ___ l __ matrix]))
+        print('\n'.join([s..(l) ___ l __ matrix]))
         print('-='*30+'-')
 
 __ __name__ __ '__main__':

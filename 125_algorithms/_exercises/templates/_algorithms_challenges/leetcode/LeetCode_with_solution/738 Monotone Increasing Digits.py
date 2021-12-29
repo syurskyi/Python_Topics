@@ -28,7 +28,7 @@ class Solution:
         fill 9
         299
         """
-        digits = [int(e) ___ e __ str(N)]
+        digits = [int(e) ___ e __ s..(N)]
         pointer = l..(digits)
         ___ i __ r..(l..(digits) - 1, 0, -1):
             __ digits[i - 1] > digits[i]:
@@ -38,7 +38,7 @@ class Solution:
         ___ i __ r..(pointer, l..(digits)):
             digits[i] = 9
 
-        r.. int("".join(map(str, digits)))
+        r.. int("".join(map(s.., digits)))
 
 
 __ __name__ __ "__main__":

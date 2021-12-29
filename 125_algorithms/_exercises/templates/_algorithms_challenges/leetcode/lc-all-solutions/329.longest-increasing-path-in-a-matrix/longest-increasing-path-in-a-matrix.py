@@ -17,7 +17,7 @@ class Solution(object):
         p, q = i + di, j + dj
         __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]):
           continue
-        __ (p, q) n.. __ cache and matrix[p][q] > matrix[i][j]:
+        __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q))
           r = dfs(matrix, p, q, visited, cache)
           ret = max(ret, r)

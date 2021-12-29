@@ -18,10 +18,10 @@ class Solution(object):
         """
         count = 0
         hashset = set(G)
-        while head:
-            while head and head.val n.. __ hashset:
+        w.... head:
+            w.... head a.. head.val n.. __ hashset:
                 head = head.next
-            while head and head.val __ hashset:
+            w.... head a.. head.val __ hashset:
                 hashset.remove(head.val)
                 head = head.next
             count += 1

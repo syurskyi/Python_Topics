@@ -2,7 +2,7 @@
 ___ i __ r..(int(input())):
     
     #accept the value of a,c,m,x,n in a list
-    listo = l..(map(int,input().split()))
+    listo = l..(map(int,input().s..()))
     
     #assign the list to variables
     a,c,m,x,n = listo

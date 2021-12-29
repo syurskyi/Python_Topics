@@ -15,7 +15,7 @@ class Solution:
             r.. intervals
         ____:
             # Sort the intervals by start value
-            intervals.sort(key=l.... x: x.start)
+            intervals.s..(key=l.... x: x.start)
             res    # list
             res.a..(intervals[0])
             cur_end = intervals[0].end

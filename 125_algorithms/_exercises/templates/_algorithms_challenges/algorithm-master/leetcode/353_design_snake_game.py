@@ -91,7 +91,7 @@ class SnakeGame:
         hx = x + dx
         hy = y + dy
 
-        __ n.. (0 <= hx < self.height and 0 <= hy < self.width):
+        __ n.. (0 <= hx < self.height a.. 0 <= hy < self.width):
             self.is_over = True
             r.. self.SCORE_IN_OVER
 
@@ -100,7 +100,7 @@ class SnakeGame:
         """
         fx, fy = self.food[self.fi]
 
-        __ fx __ hx and fy __ hy:
+        __ fx __ hx a.. fy __ hy:
             # eat that food
             self.fi += 1
         ____:

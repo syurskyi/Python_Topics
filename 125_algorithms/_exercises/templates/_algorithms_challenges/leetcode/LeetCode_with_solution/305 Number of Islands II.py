@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ collections _______ namedtuple
+____ collections _______ n..
 
 __author__ = 'Daniel'
 
@@ -45,7 +45,7 @@ class UnionFind(object):
         r.. self.pi[item]
 
 
-Op = namedtuple('Op', 'r c')  # row col
+Op = n..('Op', 'r c')  # row col
 
 
 class Solution:
@@ -66,7 +66,7 @@ class Solution:
             ___ dir __ self.dirs:
                 x1 = op.r+dir[0]
                 y1 = op.c+dir[1]
-                __ 0 <= x1 < rows and 0 <= y1 < cols and mat[x1][y1] __ 1:
+                __ 0 <= x1 < rows a.. 0 <= y1 < cols a.. mat[x1][y1] __ 1:
                     uf.union(unroll(op.r, op.c), unroll(x1, y1))
 
             ret.a..(uf.count)

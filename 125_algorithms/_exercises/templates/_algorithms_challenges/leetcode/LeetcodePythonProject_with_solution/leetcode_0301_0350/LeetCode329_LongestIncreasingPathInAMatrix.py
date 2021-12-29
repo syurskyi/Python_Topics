@@ -20,7 +20,7 @@ class Solution(object):
         __ mem[i][j]:
             r.. mem[i][j]
         ___ x, y __ ((i+1, j), (i-1, j), (i, j+1), (i, j-1)):
-            __ 0 <= x < m and 0 <= y < n and matrix[x][y] > matrix[i][j]:
+            __ 0 <= x < m a.. 0 <= y < n a.. matrix[x][y] > matrix[i][j]:
                 mem[i][j] = max(mem[i][j], self.helper(matrix, x, y, mem))
         mem[i][j] += 1
         r.. mem[i][j]

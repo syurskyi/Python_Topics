@@ -7,11 +7,11 @@ class Solution(object):
     """
     d = {}
     ans = [-1] * l..(findNums)
-    ___ i, num __ enumerate(findNums):
+    ___ i, num __ e..(findNums):
       d[num] = i
     stack    # list
     ___ num __ nums:
-      while stack and stack[-1] < num:
+      w.... stack a.. stack[-1] < num:
         top = stack.pop()
         __ top __ d:
           ans[d[top]] = num

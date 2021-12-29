@@ -15,7 +15,7 @@ class Solution:
         ___ t __ queries:
             time.a..((t, 2))
 
-        time.sort()
+        time.s..()
 
         cnt = 0
         time2cnt = {}

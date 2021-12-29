@@ -1,12 +1,12 @@
-____ datetime _______ datetime, timedelta
-
-PYBITES_BORN = datetime(year=2016, month=12, day=19)
-
-
-___ gen_special_pybites_dates():
-    anniversaries = [PYBITES_BORN.replace(year=y) ___ y __ r..(PYBITES_BORN.year+1,2020)]
-    dt = PYBITES_BORN
-    while dt.year < 2020:
-        dt += timedelta(days=100)
-        anniversaries.a..(dt)
-    r.. s..(anniversaries)
+# ____ d__ _______ d__, t..
+#
+# PYBITES_BORN = d__ y.._2016,  m.._12,  d.._19
+#
+#
+# ___ gen_special_pybites_dates
+#     anniversaries  ?.r.. y.._y ___ y __ r.. ?.y..+1 2020
+#     dt  ?
+#     w.... ?.y.. < 2020
+#         ? += t.. d.._100
+#         ?.a.. ?
+#     r.. s.. ?

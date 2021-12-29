@@ -5,7 +5,7 @@ class Hexa:
                    'd': 13,
                    'e': 14,
                    'f': 15}
-    VALID_CHARS = set(l..(map(str, l..(r..(0, 10)))) +
+    VALID_CHARS = set(l..(map(s.., l..(r..(0, 10)))) +
                       l..(CHAR_VALUES.keys()))
     BASE = 16
 
@@ -14,7 +14,7 @@ class Hexa:
         __ n.. cls.valid(inp):
             raise ValueError
         r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
-                    enumerate(reversed(inp))])
+                    e..(reversed(inp))])
 
     @classmethod
     ___ valid(cls, inp):

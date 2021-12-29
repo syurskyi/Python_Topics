@@ -7,7 +7,7 @@ Created on Apr 20, 2017
 class Solution(object):
     ___ findMinArrowShots(self, points):
         __ n.. points: r.. 0
-        points.sort(key=l.... x: (x[1], x[0]))
+        points.s..(key=l.... x: (x[1], x[0]))
         count = 0
         maxLen = float('-inf')
         ___ point __ points:

@@ -1,4 +1,4 @@
-____ datetime _______ timedelta, datetime
+____ d__ _______ t.., d__
 ____ typing _______ List
 
 text1 = """
@@ -15,7 +15,7 @@ he is talking slooooow
 she is talking super fast here!
 """
 
-___ get_srt_section_ids(text: str) -> List[int]:
+___ get_srt_section_ids(text: s..) -> List[int]:
     """Parse a caption (srt) text passed in and return a
        list of section numbers ordered descending by
        highest speech speed
@@ -41,11 +41,11 @@ ___ get_srt_section_ids(text: str) -> List[int]:
     """
     line_dict = {}
     epoch = '1970-01-01'
-    dialog_list = text.split('\n\n')
+    dialog_list = text.s..('\n\n')
     ___ dialog __ dialog_list:
-       index, timestamp, line = dialog.strip().splitlines()
-       begintime, endtime = timestamp.split(' --> ')
-       duration = datetime.fromisoformat(f'{epoch} {endtime[:8]}') - datetime.fromisoformat(f'{epoch} {begintime[:8]}')
+       index, timestamp, line = dialog.s...splitlines()
+       begintime, endtime = timestamp.s..(' --> ')
+       duration = d__.fromisoformat(f'{epoch} {endtime[:8]}') - d__.fromisoformat(f'{epoch} {begintime[:8]}')
        line_dict[int(index)] = l..(line)/duration.total_seconds()
     r.. s..(line_dict, key=line_dict.get, reverse=True )
 

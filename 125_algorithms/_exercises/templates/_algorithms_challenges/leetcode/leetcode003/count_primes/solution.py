@@ -26,7 +26,7 @@ class Solution(object):
 
     ___ is_prime(self, k):
         i = 2
-        while i * i <= k:
+        w.... i * i <= k:
             __ k % i __ 0:
                 r.. False
             i += 1

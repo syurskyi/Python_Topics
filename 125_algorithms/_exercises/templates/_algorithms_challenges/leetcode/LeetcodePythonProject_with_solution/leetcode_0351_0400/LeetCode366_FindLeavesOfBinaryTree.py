@@ -33,7 +33,7 @@ class Solution(object):
         result    # list
         dummy = TreeNode(-1)
         dummy.left = root
-        while dummy.left:
+        w.... dummy.left:
             tmpResult    # list
             self.getLeaves(dummy, root, tmpResult)
             result.a..(tmpResult)
@@ -41,7 +41,7 @@ class Solution(object):
     
     ___ getLeaves(self, parent, root, result):
         __ n.. root: r..
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             __ parent.left __ root:
                 parent.left = N..
             ____:

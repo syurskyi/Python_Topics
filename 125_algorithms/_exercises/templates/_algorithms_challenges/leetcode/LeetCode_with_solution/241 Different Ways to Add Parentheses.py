@@ -34,7 +34,7 @@ class Solution:
         :type: input
         :rtype: list[]
         """
-        input_lst = re.split(r"(\D)", input)  # capturing parentheses
+        input_lst = re.s..(r"(\D)", input)  # capturing parentheses
         nums = map(int, filter(l.... x: re.match(r"\d+", x), input_lst))
         ops = filter(l.... x: re.match(r"\D", x), input_lst)
         ret = self.dfs_eval(nums, ops)
@@ -46,7 +46,7 @@ class Solution:
             ... l..(nums) __ 1
             r.. nums
 
-        ___ i, op __ enumerate(ops):
+        ___ i, op __ e..(ops):
             left_vals = self.dfs_eval(nums[:i+1], ops[:i])
             right_vals = self.dfs_eval(nums[i+1:], ops[i+1:])
             ___ l __ left_vals:

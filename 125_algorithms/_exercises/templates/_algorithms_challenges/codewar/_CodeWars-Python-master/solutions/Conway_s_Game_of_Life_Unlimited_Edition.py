@@ -34,12 +34,12 @@ ___ get_generation(cells, generations):
 
 
 ___ trim_result(result):
-    while is_row_all_empty(result[0]):
+    w.... is_row_all_empty(result[0]):
         result.pop(0)
-    while is_row_all_empty(result[-1]):
+    w.... is_row_all_empty(result[-1]):
         result.pop()
     start_empty, end_empty = True, True
-    while start_empty o. end_empty:
+    w.... start_empty o. end_empty:
         ___ r __ result:
             __ r[0] != 0:
                 start_empty = False
@@ -62,7 +62,7 @@ ___ get_living_neighbours(cells, row, col):
         __ 0 <= row + r <= l..(cells) - 1:
             ___ c __ [-1, 0, 1]:
                 __ 0 <= col + c <= l..(cells[0]) - 1:
-                    __ c __ 0 and r __ 0:
+                    __ c __ 0 a.. r __ 0:
                         continue
                     livings += cells[row + r][col + c]
     r.. livings

@@ -7,17 +7,17 @@ RETURN_FORMAT = '{name} was {age} years old when {movie} came out.'
 
 @dataclass
 class Actor:
-    name: str
-    born: str
+    name: s..
+    born: s..
 
 
 @dataclass
 class Movie:
-    title: str
-    release_date: str
+    title: s..
+    release_date: s..
 
 
-___ get_age(actor: Actor, movie: Movie) -> str:
+___ get_age(actor: Actor, movie: Movie) -> s..:
     """Calculates age of actor / actress when movie was released,
        return a string like this:
 
@@ -26,4 +26,4 @@ ___ get_age(actor: Actor, movie: Movie) -> str:
        Wesley Snipes was 28 years old when New Jack City came out.
     """
     age = relativedelta(parse(movie.release_date), parse(actor.born)).years
-    r.. RETURN_FORMAT.format(name=actor.name, movie=movie.title, age=age)
+    r.. RETURN_FORMAT.f..(name=actor.name, movie=movie.title, age=age)

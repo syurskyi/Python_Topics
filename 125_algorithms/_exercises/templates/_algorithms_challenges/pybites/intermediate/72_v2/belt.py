@@ -5,7 +5,7 @@ belts = 'white yellow orange green blue brown black paneled red'.s..
 ___ get_belt(user_score, scores=scores, belts=belts):
     
 
-    ___ score,belt __ zip(reversed(scores),reversed(belts)):
+    ___ score,belt __ z..(reversed(scores),reversed(belts)):
         __ user_score >= score:
             r.. belt
 

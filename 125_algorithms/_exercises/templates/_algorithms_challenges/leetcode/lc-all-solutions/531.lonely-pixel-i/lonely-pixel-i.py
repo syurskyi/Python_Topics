@@ -7,14 +7,14 @@ class Solution(object):
       col = defaultdict(int)
       row = defaultdict(int)
 
-      ___ i, r __ enumerate(picture):
-        ___ j, pixel __ enumerate(r):
+      ___ i, r __ e..(picture):
+        ___ j, pixel __ e..(r):
           __ pixel __ "B":
             row[i] += 1
             col[j] += 1
 
       r.. s..(
-          1 ___ i, r __ enumerate(picture)
-          ___ j, pixel __ enumerate(r)
-          __ col[j] __ row[i] __ 1 and pixel __ 'B'
+          1 ___ i, r __ e..(picture)
+          ___ j, pixel __ e..(r)
+          __ col[j] __ row[i] __ 1 a.. pixel __ 'B'
       )

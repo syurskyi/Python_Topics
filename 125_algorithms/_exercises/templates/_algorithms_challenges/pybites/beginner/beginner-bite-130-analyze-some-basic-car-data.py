@@ -61,7 +61,7 @@ ___ get_models(automaker, year):
        return a set of models (a 'set' to avoid duplicate models)"""
     s = set()
     ___ d __ data:
-        __ d['automaker'] __ automaker and d['year'] __ year:
+        __ d['automaker'] __ automaker a.. d['year'] __ year:
             s.add(d['model'])
     r.. s
 

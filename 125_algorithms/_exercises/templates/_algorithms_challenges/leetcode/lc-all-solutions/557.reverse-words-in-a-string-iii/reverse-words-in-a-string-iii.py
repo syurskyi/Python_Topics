@@ -5,6 +5,6 @@ class Solution(object):
     :rtype: str
     """
     s = s.s..
-    ___ i, word __ enumerate(s):
+    ___ i, word __ e..(s):
       s[i] = word[::-1]
     r.. " ".join(s)

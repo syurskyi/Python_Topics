@@ -23,7 +23,7 @@ ___ gen():
 
     with open("sample_file.txt") as infile:
         ___ line __ infile:
-            yield line
+            y.. line
 
 #for i in gen():
 #    print(i.strip())

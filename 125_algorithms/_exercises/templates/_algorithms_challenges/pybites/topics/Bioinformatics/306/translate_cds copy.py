@@ -2,7 +2,7 @@
 ____ Bio.Seq _______ Seq
 ____ Bio.Data.CodonTable _______ TranslationError
 
-___ translate_cds(cds: str, translation_table: str) -> str:
+___ translate_cds(cds: s.., translation_table: s..) -> s..:
     """
     :param cds: str: DNA coding sequence (CDS)
     :param translation_table: str: translation table as defined in Bio.Seq.Seq.CodonTable.ambiguous_generic_by_name
@@ -13,7 +13,7 @@ ___ translate_cds(cds: str, translation_table: str) -> str:
     #print(f'{cds}\n{translation_table}')
     try:
         clean_cds = ''.join([char ___ char __ cds __ char.isalpha()])
-        r.. str(Seq(clean_cds)
+        r.. s..(Seq(clean_cds)
                 .upper()
                 .translate(table=translation_table, to_stop=True, cds=True)
                 )

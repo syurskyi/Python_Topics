@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists():
-    urlretrieve(url.format(filename=filename), json_input_file)
+    urlretrieve(url.f..(filename=filename), json_input_file)
 
 
 ___ get_json_data():
@@ -22,7 +22,7 @@ json_data = get_json_data()
 
 ___ _make_filename(bite):
     """creates a filename, per spec, for input bite (dict)"""
-    r.. bite['bite'].split('.')[0].replace(' ', '') + '.py'
+    r.. bite['bite'].s..('.')[0].r..(' ', '') + '.py'
 
 
 ___ _write_code(bite):

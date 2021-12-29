@@ -1,7 +1,7 @@
 _______ os
 _______ collections
 
-SearchResult  collections.namedtuple('SearchResult',
+SearchResult  collections.n..('SearchResult',
                                       'file, line, text')
 
 
@@ -28,7 +28,7 @@ ___ main():
         # print('match: ' + m.text.strip())
         # print()
 
-    print("Found {:,} matches.".format(match_count))
+    print("Found {:,} matches.".f..(match_count))
 
 
 ___ print_header():
@@ -39,7 +39,7 @@ ___ print_header():
 
 ___ get_folder_from_user():
     folder  input('What folder do you want to search? ')
-    __ n.. folder o. n.. folder.strip():
+    __ n.. folder o. n.. folder.s..:
         r.. N..
 
     __ n.. os.path.isdir(folder):
@@ -66,9 +66,9 @@ ___ search_folders(folder, text):
             # for m in matches:
             #     yield m
             # yield from matches
-            yield ____ search_folders(full_item, text)
+            y.. ____ search_folders(full_item, text)
         ____:
-            yield ____ search_file(full_item, text)
+            y.. ____ search_file(full_item, text)
             # all_matches.extend(matches)
             # for m in matches:
             #     yield m
@@ -93,11 +93,11 @@ ___ search_file(filename, search_text):
                 __ line.l...find(search_text) > 0:
                     m  SearchResult(lineline_num, filefilename, textline)
                     # matches.append(m)
-                    yield m
+                    y.. m
 
             # return matches
     except UnicodeDecodeError:
-        print("NOTICE: Binary file {} skipped.".format(filename))
+        print("NOTICE: Binary file {} skipped.".f..(filename))
 
 
 __ __name__ __ '__main__':

@@ -11,7 +11,7 @@ class Solution(object):
         """
         _______ heapq
         heap    # list
-        courses.sort(key=l.... x: x[1])
+        courses.s..(key=l.... x: x[1])
         time = 0
         ___ course __ courses:
             time += course[0]

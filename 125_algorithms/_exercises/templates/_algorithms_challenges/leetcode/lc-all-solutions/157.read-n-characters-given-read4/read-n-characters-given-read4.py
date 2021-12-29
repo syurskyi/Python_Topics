@@ -12,7 +12,7 @@ class Solution(object):
     """
     cnt = 0
     tmp = [""] * 4
-    while cnt < n:
+    w.... cnt < n:
       r = read4(tmp)
       __ r __ 0:
         break

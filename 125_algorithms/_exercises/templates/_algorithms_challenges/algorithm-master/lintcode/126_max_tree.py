@@ -25,7 +25,7 @@ class Solution:
         stack    # list
         ___ val __ A:
             node = TreeNode(val)
-            while stack and val > stack[-1].val:
+            w.... stack a.. val > stack[-1].val:
                 node.left = stack.pop()
 
             # current val less than the last node in stack

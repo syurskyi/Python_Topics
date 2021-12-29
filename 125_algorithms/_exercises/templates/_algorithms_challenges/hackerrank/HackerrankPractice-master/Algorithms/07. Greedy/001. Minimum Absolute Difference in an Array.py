@@ -3,7 +3,7 @@
 
 
 _ = input()
-arr = s..(map(int, input().split()))
+arr = s..(map(int, input().s..()))
 diff = 2*10**9
 ___ i __ r..(1, l..(arr)):
     diff = m..(diff, arr[i] - arr[i-1])

@@ -1,5 +1,5 @@
 _______ collections
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ os
 _______ re
 ____ urllib.request _______ urlretrieve
@@ -26,7 +26,7 @@ ___ convert_to_datetime(date_str):
     """Receives a date str and convert it into a datetime object"""
     # Sun, 07 Jan 2018 12:00:00 +0100
     date_fmt = '%a, %d %b %Y %H:%M:%S'
-    dt = datetime.strptime(date_str[:-6], date_fmt)
+    dt = d__.strptime(date_str[:-6], date_fmt)
     r.. dt
 
 

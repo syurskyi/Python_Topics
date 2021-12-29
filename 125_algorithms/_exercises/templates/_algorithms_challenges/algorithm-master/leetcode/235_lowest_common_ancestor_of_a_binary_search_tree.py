@@ -14,10 +14,10 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        while root:
-            __ root.val > p.val and root.val > q.val:
+        w.... root:
+            __ root.val > p.val a.. root.val > q.val:
                 root = root.left
-            ____ root.val < p.val and root.val < q.val:
+            ____ root.val < p.val a.. root.val < q.val:
                 root = root.right
             ____:
                 r.. root

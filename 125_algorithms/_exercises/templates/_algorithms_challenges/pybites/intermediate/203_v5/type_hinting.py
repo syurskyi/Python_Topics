@@ -12,8 +12,8 @@ class Employee:
     :param wage: Float of hourly pay
     :param weekly_pay: Property which returns a string for weekly pay
     """
-    first_name: str
-    last_name: str
+    first_name: s..
+    last_name: s..
     days_per_week: int
     hours_per_day: float
     wage: float
@@ -26,7 +26,7 @@ class Employee:
     #     self.hours_per_day = hours_per_day
     #     self.wage = wage
 
-    ___ _rounder(self, number: float, places: int) -> str:
+    ___ _rounder(self, number: float, places: int) -> s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round
@@ -37,7 +37,7 @@ class Employee:
         r.. f"${amount:0.2f}"
 
     @property
-    ___ weekly_pay(self) -> str:
+    ___ weekly_pay(self) -> s..:
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75

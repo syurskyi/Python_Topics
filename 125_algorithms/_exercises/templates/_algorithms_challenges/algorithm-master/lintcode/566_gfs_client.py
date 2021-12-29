@@ -25,7 +25,7 @@ class GFSClient(BaseGFSClient):
         __ filename n.. __ self.chunk_num:
             r..
         i, content = 0, ''
-        while i < self.chunk_num[filename]:
+        w.... i < self.chunk_num[filename]:
             content += self.readChunk(filename, i)
             i += 1
         r.. content
@@ -37,7 +37,7 @@ class GFSClient(BaseGFSClient):
     """
     ___ write(self, filename, content):
         i, j, n = 0, 0, l..(content)
-        while j < n:
+        w.... j < n:
             self.writeChunk(filename, i, content[j : j + self.chunk_size])
             i += 1
             j += self.chunk_size

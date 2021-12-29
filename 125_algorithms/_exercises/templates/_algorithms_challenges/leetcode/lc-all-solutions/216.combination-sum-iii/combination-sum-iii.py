@@ -7,7 +7,7 @@ class Solution(object):
     """
 
     ___ dfs(k, start, path, subsum, res, visited):
-      __ l..(path) __ k and subsum __ 0:
+      __ l..(path) __ k a.. subsum __ 0:
         res.a..(path + [])
         r..
       __ l..(path) >= k o. subsum <= 0:

@@ -11,7 +11,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    ___ atoi(self, str):
+    ___ atoi(self, s..):
         """
         Need to satisfy all the nuance requirements
 
@@ -21,27 +21,27 @@ class Solution:
         INT_MAX = 2147483647
         INT_MIN = -2147483648
         # clean
-        str = str.strip()
-        __ n.. str:
+        s.. = s...s..
+        __ n.. s..:
             r.. 0
 
         # clean up leading sign
         sign = 1
-        __ str[0] __ ("+", "-"):
-            __ str[0] __ "-":
+        __ s..[0] __ ("+", "-"):
+            __ s..[0] __ "-":
                 sign = -1
-            str = str[1:]
+            s.. = s..[1:]
 
         # check for leading digit
-        __ n.. str[0].isdigit():
+        __ n.. s..[0].isdigit():
             r.. 0
 
         # ignore the non-digit appended behind
         # The string can contain additional characters after those that form the integral number,
         # which are ignored and have no effect on the behavior of this function
-        ___ ind, val __ enumerate(str):  # find the 1st non-digit
+        ___ ind, val __ e..(s..):  # find the 1st non-digit
             __ n.. val.isdigit():
-                str = str[:ind]
+                s.. = s..[:ind]
                 break
 
 
@@ -50,7 +50,7 @@ class Solution:
         # convert char array to integer
         s.. = 0
         scale = 1
-        ___ element __ str[::-1]:
+        ___ element __ s..[::-1]:
             s.. += scale*int(element)
             scale *= 10
 

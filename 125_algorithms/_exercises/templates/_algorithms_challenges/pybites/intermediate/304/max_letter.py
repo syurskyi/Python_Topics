@@ -5,7 +5,7 @@ _______ re
 
 
 
-___ max_letter_word(text: str) -> Tuple[str, str, int]:
+___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     """
     Find the word in text with the most repeated letters. If more than one word
     has the highest number of repeated letters choose the first one. Return a
@@ -17,7 +17,7 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
     ('', '', 0)
 
     """
-    __ n.. isi..(text,str):
+    __ n.. isi..(text,s..):
         raise ValueError("Strings only")
 
     

@@ -13,7 +13,7 @@ class Solution(object):
     ___ mergeTwoLists(self, l1, l2):
         dummy = ListNode(-1)
         prev = dummy
-        while l1 and l2:
+        w.... l1 a.. l2:
             __ l1.val <= l2.val:
                 prev.next = l1
                 l1 = l1.next

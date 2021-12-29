@@ -18,7 +18,7 @@ class Solution:
         ans += self.merge_sort(A, right, end, tmp)
 
         i = start
-        while left <= mid and right <= end:
+        w.... left <= mid a.. right <= end:
             __ A[left] > A[right]:
                 tmp[i] = A[right]
                 right += 1
@@ -28,12 +28,12 @@ class Solution:
                 left += 1
             i += 1
 
-        while left <= mid:
+        w.... left <= mid:
             tmp[i] = A[left]
             left += 1
             i += 1
 
-        while right <= end:
+        w.... right <= end:
             tmp[i] = A[right]
             right += 1
             i += 1

@@ -24,7 +24,7 @@ class Solution:
             timeline.a..((interval.start, True))
             timeline.a..((interval.end, False))
 
-        timeline.sort()
+        timeline.s..()
 
         cnt = 0
 
@@ -51,7 +51,7 @@ class Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.sort(key=l.... x: (x.start, x.end))
+        intervals.s..(key=l.... x: (x.start, x.end))
 
         ___ i __ r..(1, l..(intervals)):
             __ intervals[i].start < intervals[i - 1].end:

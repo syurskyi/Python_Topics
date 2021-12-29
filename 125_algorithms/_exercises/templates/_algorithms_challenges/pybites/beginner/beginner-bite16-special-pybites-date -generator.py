@@ -36,34 +36,34 @@ def test_gen_special_pybites_dates():
     assert dates[:10] == expected
 '''
 
-____ datetime _______ datetime
-____ datetime _______ timedelta
-____ itertools _______ islice
+____ d__ _______ d__
+____ d__ _______ t..
+____ i.. _______ islice
 
-PYBITES_BORN = datetime(year=2016, month=12, day=19)
+PYBITES_BORN = d__ y.._2016,  m.._12,  d.._19)
 
 ___ gen_special_pybites_dates_1():
 
     days = 0
-    while True:
+    w... T...
         days += 1
         __ days % 100 __ 0 o. days % 365 __ 0:
-            yield PYBITES_BORN + timedelta(days=days)
+            y.. PYBITES_BORN + t..(days=days)
 
 ___ gen_special_pybites_dates_2():
 
-    plus365 = timedelta(days=365)
-    plus100 = timedelta(days=100)
+    plus365 = t..(days=365)
+    plus100 = t..(days=100)
     next365 = PYBITES_BORN + plus365
     next100 = PYBITES_BORN + plus100
-    while True:
+    w... T...
         __ next365 < next100:
             nextevent = next365
             next365 += plus365
         ____:
             nextevent = next100
             next100 += plus100
-        yield nextevent
+        y.. nextevent
 
 gen = gen_special_pybites_dates()
 dates = l..(islice(gen,20))

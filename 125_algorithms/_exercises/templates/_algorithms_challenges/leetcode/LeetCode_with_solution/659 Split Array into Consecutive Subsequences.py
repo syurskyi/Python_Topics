@@ -55,7 +55,7 @@ class Solution:
             __ F[e - 1] > 0:
                 F[e - 1] -= 1
                 F[e] += 1
-            ____ counter[e + 1] > 0 and counter[e + 2] > 0:
+            ____ counter[e + 1] > 0 a.. counter[e + 2] > 0:
                 F[e + 2] += 1
                 counter[e + 1] -= 1
                 counter[e + 2] -= 1
@@ -91,7 +91,7 @@ class Solution2:
         """
         h    # list
         ___ n __ nums:
-            while h and h[0].end + 1 < n:
+            w.... h a.. h[0].end + 1 < n:
                 itvl = heapq.heappop(h)
                 __ itvl.length < 3:
                     r.. False

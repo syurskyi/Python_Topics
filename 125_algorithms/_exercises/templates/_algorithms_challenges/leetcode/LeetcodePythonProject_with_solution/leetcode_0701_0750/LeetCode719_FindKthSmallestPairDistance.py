@@ -11,12 +11,12 @@ class Solution(object):
         :rtype: int
         """
         n = l..(nums)
-        nums.sort()
+        nums.s..()
         low = float('inf')
         ___ i __ r..(n-1):
             low = m..(low, nums[i+1]-nums[i])
         high = nums[-1]-nums[0]
-        while low < high:
+        w.... low < high:
             mid = (low+high)//2
             __ self.countPair(nums, mid) < k:
                 low = mid+1
@@ -34,7 +34,7 @@ class Solution(object):
     ___ upperBound(self, nums, low, high, key):
         __ nums[high] <= key:
             r.. high+1
-        while low < high:
+        w.... low < high:
             mid = (low+high)//2
             __ key >= nums[mid]:
                 low = mid+1
@@ -47,7 +47,7 @@ class Solution(object):
         res = 0
         ___ i __ r..(n):
             j = i
-            while j < n and nums[j]-nums[i] <= mid:
+            w.... j < n a.. nums[j]-nums[i] <= mid:
                 j += 1
             res += j-i-1
         r.. res

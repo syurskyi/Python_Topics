@@ -15,8 +15,8 @@ urlretrieve(
 YEAR_MONTH = '{y}-{m:02d}'
 
 
-___ get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = N..) -> (str, str):
+___ get_min_max_amount_of_commits(commit_log: s.. = commits,
+                                  year: int = N..) -> (s.., s..):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -33,7 +33,7 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
 
     with open(commit_log,'r') as f:
         ___ line __ f:
-            date_section, change_section = line.split('|')
+            date_section, change_section = line.s..('|')
             date = parse(date_section,fuzzy=True)
             
             __ year:

@@ -35,7 +35,7 @@ class Solution(object):
         r.. can2
     
     ___ getRoot(self, parent, i):
-        while i != parent[i]:
+        w.... i != parent[i]:
             parent[i] = parent[parent[i]]
             i = parent[i]
         r.. i

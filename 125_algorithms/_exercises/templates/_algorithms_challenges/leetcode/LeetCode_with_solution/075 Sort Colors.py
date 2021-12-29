@@ -33,7 +33,7 @@ class Solution:
         blue_start_ptr= l..(A)
 
         i = 0
-        while i<blue_start_ptr:
+        w.... i<blue_start_ptr:
             __ A[i]__WHITE: # pivot set
                 i += 1
             ____ A[i]__RED:

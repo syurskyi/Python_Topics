@@ -12,10 +12,10 @@ class Solution(object):
         """
         hashmap1 = {}
         hashmap2 = {}
-        ___ i, s __ enumerate(list1):
+        ___ i, s __ e..(list1):
             __ s n.. __ hashmap1:
                 hashmap1[s] = i
-        ___ i, s __ enumerate(list2):
+        ___ i, s __ e..(list2):
             __ s n.. __ hashmap2:
                 hashmap2[s] = i
         minInd = float('inf')

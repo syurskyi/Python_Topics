@@ -2,7 +2,7 @@ class Solution:
     # @param path, a string
     # @return a string
     ___ simplifyPath(self, path):
-        ps = path.split('/')[1:]
+        ps = path.s..('/')[1:]
         res    # list
         ___ d __ ps:
             __ d __ '..':

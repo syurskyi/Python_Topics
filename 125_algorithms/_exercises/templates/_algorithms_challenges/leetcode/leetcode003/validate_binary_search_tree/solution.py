@@ -28,20 +28,20 @@ class Solution:
             right = True
             __ root.left __ n.. N..
                 left = (self.max_node(root.left).val < root.val
-                        and self.isValidBST(root.left))
+                        a.. self.isValidBST(root.left))
             __ root.right __ n.. N..
                 right = (self.min_node(root.right).val > root.val
-                         and self.isValidBST(root.right))
-            __ left and right:
+                         a.. self.isValidBST(root.right))
+            __ left a.. right:
                 r.. True
             r.. False
 
     ___ min_node(self, root):
-        while root.left __ n.. N..
+        w.... root.left __ n.. N..
             root = root.left
         r.. root
 
     ___ max_node(self, root):
-        while root.right __ n.. N..
+        w.... root.right __ n.. N..
             root = root.right
         r.. root

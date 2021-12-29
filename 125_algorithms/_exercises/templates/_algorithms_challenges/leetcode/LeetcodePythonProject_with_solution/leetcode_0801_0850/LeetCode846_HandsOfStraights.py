@@ -16,7 +16,7 @@ class Solution(object):
         hashmap = {}
         ___ num __ hand:
             hashmap[num] = hashmap[num]+1 __ num __ hashmap ____ 1
-        while hashmap:
+        w.... hashmap:
             minVal = m..(hashmap)
             ___ i __ r..(w):
                 __ minVal + i n.. __ hashmap:

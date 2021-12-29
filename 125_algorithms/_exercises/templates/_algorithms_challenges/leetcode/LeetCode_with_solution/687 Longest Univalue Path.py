@@ -59,8 +59,8 @@ class Solution:
 
         left = self.find(node.left)
         right = self.find(node.right)
-        left_path = left + 1 __ node.left and node.left.val __ node.val ____ 0
-        right_path = right + 1 __ node.right and node.right.val __ node.val ____ 0
+        left_path = left + 1 __ node.left a.. node.left.val __ node.val ____ 0
+        right_path = right + 1 __ node.right a.. node.right.val __ node.val ____ 0
         self.ret = max(self.ret, left_path + right_path)
         r.. max(left_path, right_path)
 
@@ -84,11 +84,11 @@ class Solution_error:
         right = self.find(node.right)
         cur = 1  # node.val
         path = 1
-        __ left and node.left.val __ node.val:
+        __ left a.. node.left.val __ node.val:
             path += left
             cur = left + 1
 
-        __ right and node.right.val __ node.val:
+        __ right a.. node.right.val __ node.val:
             path += right
             __ right > left:
                 cur = right + 1

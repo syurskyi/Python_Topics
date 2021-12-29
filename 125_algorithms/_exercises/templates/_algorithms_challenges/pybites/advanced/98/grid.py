@@ -12,9 +12,9 @@ ___ print_sequence_route(grid, start_coordinates_ N..
     
     
     matrix    # list
-    ___ i,line __ enumerate(grid.splitlines()):
+    ___ i,line __ e..(grid.splitlines()):
         __ i % 2 __ 1:
-            values = l..(map(int,re.split(r'\D+',line)))
+            values = l..(map(int,re.s..(r'\D+',line)))
             __ START_VALUE __ values:
                 start_row = l..(matrix)
                 start_col = values.index(START_VALUE)
@@ -31,14 +31,14 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
     
     print(current_value,end=' ')
-    while current_value != goal:
+    w.... current_value != goal:
         directions = ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT))
 
 
         ___ neighbor_x,neighbor_y,direction __ directions:
-            __ 0 <= neighbor_x < length and 0 <= neighbor_y < length:
+            __ 0 <= neighbor_x < length a.. 0 <= neighbor_y < length:
                 __ matrix[neighbor_x][neighbor_y] __ current_value + 1:
-                    __ previous_direction __ n.. N.. and direction != previous_direction:
+                    __ previous_direction __ n.. N.. a.. direction != previous_direction:
                         print(direction)
                         previous_direction = direction
                     ____ previous_direction __ N..

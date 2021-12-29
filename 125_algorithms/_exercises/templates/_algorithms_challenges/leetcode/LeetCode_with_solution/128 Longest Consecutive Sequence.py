@@ -21,20 +21,20 @@ class Solution:
         :return: an integer
         """
         length = l..(num)
-        inverted_table = d..(zip(num, r..(length)))
+        inverted_table = d..(z..(num, r..(length)))
 
         max_length = -1<<31
-        ___ ind, val __ enumerate(num):
+        ___ ind, val __ e..(num):
             current_length = 1
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected __ inverted_table:
+            w.... sequence_val_expected __ inverted_table:
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected __ inverted_table:
+            w.... sequence_val_expected __ inverted_table:
                 sequence_val_expected += 1
                 current_length += 1
 
@@ -57,21 +57,21 @@ class Solution:
         visited = {item: False ___ item __ num}
 
         max_length = -1<<31
-        ___ ind, val __ enumerate(num):
+        ___ ind, val __ e..(num):
             __ visited[val]: continue
 
             current_length = 1
 
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected __ visited:
+            w.... sequence_val_expected __ visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected __ visited:
+            w.... sequence_val_expected __ visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected += 1
                 current_length += 1

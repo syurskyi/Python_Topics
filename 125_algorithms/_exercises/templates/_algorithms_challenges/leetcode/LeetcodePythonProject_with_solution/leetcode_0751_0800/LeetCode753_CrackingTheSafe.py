@@ -20,11 +20,11 @@ class Solution(object):
         __ l..(visited) __ goal: r.. True
         prevArr = arr[l..(arr)-n+1:]
         ___ i __ r..(k):
-            nextArr = prevArr+[str(i)]
+            nextArr = prevArr+[s..(i)]
             nextStr = ''.join(nextArr)
             __ nextStr n.. __ visited:
                 visited.add(nextStr)
-                arr.a..(str(i))
+                arr.a..(s..(i))
                 __ self.dfs(arr, goal, visited, n, k):
                     r.. True
                 visited.remove(nextStr)

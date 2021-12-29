@@ -3,6 +3,6 @@
 
 
 ___ i __ r..(int(input())):
-    _, a = input(), set(map(int, input().split()))
-    _, b = input(), set(map(int, input().split()))
+    _, a = input(), set(map(int, input().s..()))
+    _, b = input(), set(map(int, input().s..()))
     print(a.issubset(b))

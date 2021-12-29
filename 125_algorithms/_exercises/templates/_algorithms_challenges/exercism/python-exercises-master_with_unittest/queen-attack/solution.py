@@ -24,4 +24,4 @@ ___ validate_position(pos1, pos2):
         raise ValueError('Invalid queen position: queen out of the board')
     __ pos1 __ pos2:
         raise ValueError('Invalid queen position: both queens in the same '
-                         'square: {0}'.format(pos1))
+                         'square: {0}'.f..(pos1))

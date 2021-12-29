@@ -50,13 +50,13 @@ class Solution:
                         G[j].add(i)
                         break
 
-        q = [i ___ i, stops __ enumerate(routes) __ S __ stops]
-        target_set = set([i ___ i, stops __ enumerate(routes) __ T __ stops])
+        q = [i ___ i, stops __ e..(routes) __ S __ stops]
+        target_set = set([i ___ i, stops __ e..(routes) __ T __ stops])
         visited = defaultdict(bool)
         ___ i __ q:
             visited[i] = True
         step = 1
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ target_set:
@@ -90,7 +90,7 @@ class Solution:
         step = 0
         visited = defaultdict(bool)
         visited[S] = True  # avoid add duplicate
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ T:

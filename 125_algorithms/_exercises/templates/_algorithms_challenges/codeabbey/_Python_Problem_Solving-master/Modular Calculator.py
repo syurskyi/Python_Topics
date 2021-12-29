@@ -1,6 +1,6 @@
 solved = False
 count = 0
-while n.. solved:
+w.... n.. solved:
     cal = input().s..
     __ count __ 0:
         res = int(cal[0])

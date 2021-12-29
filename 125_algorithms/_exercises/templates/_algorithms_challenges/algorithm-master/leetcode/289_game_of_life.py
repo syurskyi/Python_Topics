@@ -26,9 +26,9 @@ class Solution:
             ___ y __ r..(n):
                 lives = self.get_live_neibs(board, x, y)
 
-                __ board[x][y] __ 1 and lives __ (2, 3):
+                __ board[x][y] __ 1 a.. lives __ (2, 3):
                     board[x][y] = 3
-                ____ board[x][y] __ 0 and lives __ 3:
+                ____ board[x][y] __ 0 a.. lives __ 3:
                     board[x][y] = 2
 
         ___ x __ r..(m):
@@ -41,13 +41,13 @@ class Solution:
 
         ___ dx __ (-1, 0, 1):
             ___ dy __ (-1, 0, 1):
-                __ dx __ 0 and dy __ 0:
+                __ dx __ 0 a.. dy __ 0:
                     continue
 
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m a.. 0 <= _y < n):
                     continue
 
                 cnt += board[_x][_y] & 1
@@ -75,13 +75,13 @@ class Solution:
                 lives = self.get_live_neibs(board, x, y)
                 ans[x][y] = board[x][y]
 
-                __ board[x][y] __ 1 and lives < 2:
+                __ board[x][y] __ 1 a.. lives < 2:
                     ans[x][y] = 0
-                ____ board[x][y] __ 1 and lives __ (2, 3):
+                ____ board[x][y] __ 1 a.. lives __ (2, 3):
                     ans[x][y] = 1
-                ____ board[x][y] __ 1 and lives > 3:
+                ____ board[x][y] __ 1 a.. lives > 3:
                     ans[x][y] = 0
-                ____ board[x][y] __ 0 and lives __ 3:
+                ____ board[x][y] __ 0 a.. lives __ 3:
                     ans[x][y] = 1
 
         # return ans
@@ -96,15 +96,15 @@ class Solution:
 
         ___ dx __ (-1, 0, 1):
             ___ dy __ (-1, 0, 1):
-                __ dx __ 0 and dy __ 0:
+                __ dx __ 0 a.. dy __ 0:
                     continue
 
                 _x = x + dx
                 _y = y + dy
 
                 __ n.. (
-                    0 <= _x < m and
-                    0 <= _y < n and
+                    0 <= _x < m a..
+                    0 <= _y < n a..
                     board[_x][_y] __ 1
                 ):
                     continue

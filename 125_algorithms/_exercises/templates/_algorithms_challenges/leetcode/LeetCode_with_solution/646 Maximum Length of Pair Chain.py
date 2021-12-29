@@ -27,7 +27,7 @@ class Solution:
         similar to 435 Non-overlaping interval
         O(nlg n) + O(n)
         """
-        pairs.sort(key=l.... x: x[1])
+        pairs.s..(key=l.... x: x[1])
         n = l..(pairs)
 
         ret = 0
@@ -47,17 +47,17 @@ class Solution:
         sort by the interval end
         similar to 435 Non-overlaping interval
         """
-        pairs.sort(key=l.... x: x[1])
+        pairs.s..(key=l.... x: x[1])
         n = l..(pairs)
 
         ret = 0
         i = 0
-        while i < n:
+        w.... i < n:
             ret += 1
             cur_end = pairs[i][1]
 
             i += 1
-            while i < n and pairs[i][0] <= cur_end:
+            w.... i < n a.. pairs[i][0] <= cur_end:
                 i += 1
 
         r.. ret
@@ -70,7 +70,7 @@ class Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.sort(key=l.... x: tuple(x))
+        pairs.s..(key=l.... x: tuple(x))
         n = l..(pairs)
         F = [1 ___ _ __ r..(n)]
         ___ i __ r..(n):

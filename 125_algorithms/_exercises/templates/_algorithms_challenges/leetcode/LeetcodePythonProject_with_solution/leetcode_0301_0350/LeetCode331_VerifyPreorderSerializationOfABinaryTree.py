@@ -7,11 +7,11 @@ Created on Mar 19, 2017
 class Solution(object):
     ___ isValidSerialization(self, preorder):
         __ n.. preorder: r.. False
-        nodes = preorder.split(',')
+        nodes = preorder.s..(',')
         stack    # list
         ___ node __ nodes:
             stack.a..(node)
-            while l..(stack)>=3 and stack[-1] __ '#' and stack[-2] __ '#' and\
+            w.... l..(stack)>=3 a.. stack[-1] __ '#' a.. stack[-2] __ '#' a..\
                 stack[-3] != '#':
                 stack.pop()
                 stack.pop()

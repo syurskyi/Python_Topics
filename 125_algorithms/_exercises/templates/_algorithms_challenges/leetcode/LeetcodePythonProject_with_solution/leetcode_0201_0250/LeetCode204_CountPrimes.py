@@ -16,7 +16,7 @@ class Solution(object):
             __ n.. notPrime[i]:
                 count += 1
                 j = 2
-                while i*j < n:
+                w.... i*j < n:
                     notPrime[i*j] = True
                     j += 1
         r.. count

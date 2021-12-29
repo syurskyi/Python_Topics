@@ -25,12 +25,12 @@ class Color:
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ __init__(self, color: str):
+    ___ __init__(self, color: s..):
         self.colorname = color
         self.rgb = COLOR_NAMES.get(color.upper(), N..)
 
     @classmethod
-    ___ hex2rgb(cls, hex_str: str) -> tuple:
+    ___ hex2rgb(cls, hex_str: s..) -> tuple:
         """Class method that converts a hex value into an rgb one"""
         # Using regex will perform more comprehensive checking…
         # > if not re.match(r'#[0-9A-Fa-f]{6}', hex_str):
@@ -43,7 +43,7 @@ class Color:
             raise ValueError(f'Invalid hex value ({exp.args})')
 
     @classmethod
-    ___ rgb2hex(cls, rbg_tuple: tuple) -> str:
+    ___ rgb2hex(cls, rbg_tuple: tuple) -> s..:
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple):
             raise ValueError('Invalid rgb colour triplet')

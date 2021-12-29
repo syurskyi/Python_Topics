@@ -37,7 +37,7 @@ class Solution:
         """
         pre = nxt = N..
 
-        while head:
+        w.... head:
             nxt = head.next  # save the remaining children
             head.next = pre  # break the link
             pre = head       # save the new head

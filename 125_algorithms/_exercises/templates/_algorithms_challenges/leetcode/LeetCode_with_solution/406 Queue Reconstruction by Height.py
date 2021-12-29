@@ -78,7 +78,7 @@ class Solution(object):
         st = SegmentTree()
         n = l..(A)
         st.root = st.build(0, n)
-        A.sort(cmp=cmp)
+        A.s..(cmp=cmp)
         ret = [0]*n
         ret_cnt = defaultdict(int)  # handle duplicate element
         ___ a __ A:

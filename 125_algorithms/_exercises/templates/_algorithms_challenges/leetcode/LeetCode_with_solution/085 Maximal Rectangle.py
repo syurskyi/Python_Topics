@@ -48,9 +48,9 @@ class Solution:
             inc_stack    # list
 
             j = 0
-            while j<=n:
+            w.... j<=n:
                 # if not inc_stack or j+1<n and dp_height[i][j]<=dp_height[i][j+1]:  # mistake
-                __ n.. inc_stack o. j<n and dp_height[i][j]>=dp_height[i][inc_stack[-1]]:
+                __ n.. inc_stack o. j<n a.. dp_height[i][j]>=dp_height[i][inc_stack[-1]]:
                     inc_stack.a..(j)
                     j += 1
                 ____:

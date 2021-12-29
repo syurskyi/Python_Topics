@@ -27,7 +27,7 @@ class Solution(object):
         result    # list
         __ nums.c.. candidate1) > l..(nums)//3:
             result.a..(candidate1)
-        __ nums.c.. candidate2) > l..(nums)//3 and candidate2 != candidate1:
+        __ nums.c.. candidate2) > l..(nums)//3 a.. candidate2 != candidate1:
             result.a..(candidate2)
         r.. result
     

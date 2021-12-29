@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-____ datetime _______ datetime
+____ d__ _______ d__
 
 ROW_FMT = u'{{:<{1}}} | {{:<{2}}} | {{:{0}{3}}}'
 
@@ -29,8 +29,8 @@ class LCInfo(object):
             self.trail_neg = ' '
             self.thousands = '.'
             self.decimal = ','
-        fmt = ROW_FMT.format('<', *columns)
-        self.headers = fmt.format(*headers)
+        fmt = ROW_FMT.f..('<', *columns)
+        self.headers = fmt.f..(*headers)
         self.cur_symbol = {
             'USD': '$',
             'EUR': u'€',
@@ -39,17 +39,17 @@ class LCInfo(object):
     ___ number(self, n):
         n_int, n_float = divmod(abs(n), 100)
         n_int_parts    # list
-        while n_int > 0:
+        w.... n_int > 0:
             n_int, x = divmod(n_int, 1000)
-            n_int_parts.insert(0, str(x))
-        r.. '{}{}{:02}'.format(
+            n_int_parts.insert(0, s..(x))
+        r.. '{}{}{:02}'.f..(
             self.thousands.join(n_int_parts) o. '0',
             self.decimal,
             n_float,
         )
 
     ___ currency(self, change):
-        r.. self.cur_fmt.format(
+        r.. self.cur_fmt.f..(
             self.lead_neg __ change < 0 ____ '',
             self.cur_symbol,
             self.number(change),
@@ -58,9 +58,9 @@ class LCInfo(object):
 
     ___ entry(self, entry):
         date, change, desc = entry
-        fmt = ROW_FMT.format('>', *self.columns)
-        r.. fmt.format(
-            self.datefmt.format(date),
+        fmt = ROW_FMT.f..('>', *self.columns)
+        r.. fmt.f..(
+            self.datefmt.f..(date),
             truncate(desc),
             self.currency(change),
         )
@@ -73,7 +73,7 @@ class LCInfo(object):
 
 ___ create_entry(date, description, change):
     r.. (
-        datetime.strptime(date, '%Y-%m-%d'),
+        d__.strptime(date, '%Y-%m-%d'),
         change,
         description
     )

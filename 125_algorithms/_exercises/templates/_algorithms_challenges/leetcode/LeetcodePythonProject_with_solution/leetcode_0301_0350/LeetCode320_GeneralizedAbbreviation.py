@@ -17,12 +17,12 @@ class Solution(object):
     ___ helper(self, word, i, count, curr, res):
         __ i __ l..(word):
             __ count:
-                curr += str(count)
+                curr += s..(count)
             res.a..(curr)
             r..
         self.helper(word, i+1, count+1, curr, res)
         __ count:
-            self.helper(word, i+1, 0, curr+str(count)+word[i], res)
+            self.helper(word, i+1, 0, curr+s..(count)+word[i], res)
         ____:
             self.helper(word, i+1, 0, curr+word[i], res)
     

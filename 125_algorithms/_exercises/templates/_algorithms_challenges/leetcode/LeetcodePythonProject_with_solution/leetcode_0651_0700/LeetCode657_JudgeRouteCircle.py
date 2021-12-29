@@ -19,7 +19,7 @@ class Solution(object):
                 up += 1
             ____:
                 up -= 1
-        r.. up __ 0 and left __ 0
+        r.. up __ 0 a.. left __ 0
     
     ___ test(self):
         testCases = [

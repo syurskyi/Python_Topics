@@ -35,7 +35,7 @@ class Solution:
             if the minimum of index is less than `i - k2`
             kicked it off
             """
-            __ queue and queue[0] < i - k2:
+            __ queue a.. queue[0] < i - k2:
                 queue.popleft()
 
             __ i < k1:
@@ -45,11 +45,11 @@ class Solution:
             if the recent children are great than `S[i - k1]`,
             means the min sum is impossible to occur here
             """
-            while queue and S[queue[-1]] > S[i - k1]:
+            w.... queue a.. S[queue[-1]] > S[i - k1]:
                 queue.pop()
             queue.a..(i - k1)
 
-            __ queue and S[i] - S[queue[0]] > ans:
+            __ queue a.. S[i] - S[queue[0]] > ans:
                 ans = S[i] - S[queue[0]]
 
         r.. ans

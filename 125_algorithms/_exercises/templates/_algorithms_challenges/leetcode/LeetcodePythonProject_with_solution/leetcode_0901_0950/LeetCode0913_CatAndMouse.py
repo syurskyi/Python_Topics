@@ -25,7 +25,7 @@ class Solution(object):
                     color[i, i, t] = CAT
                     queue.a..((i, i, t, CAT))
 
-        while queue:
+        w.... queue:
             i, j, t, c = queue.popleft()
             ___ i2, j2, t2 __ self.parents(graph, i, j, t):
                 __ color[i2, j2, t2] __ DRAW:

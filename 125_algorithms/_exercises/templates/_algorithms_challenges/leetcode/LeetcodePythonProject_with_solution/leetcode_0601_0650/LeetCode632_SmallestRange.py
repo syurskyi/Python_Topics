@@ -10,11 +10,11 @@ class Solution(object):
         :rtype: List[int]
         """
         _______ heapq
-        pq = [(arr[0], i, 0) ___ i, arr __ enumerate(nums)]
+        pq = [(arr[0], i, 0) ___ i, arr __ e..(nums)]
         heapq.heapify(pq)
         res = [float('-inf'), float('inf')]
         right = max([arr[0] ___ arr __ nums])
-        while pq:
+        w.... pq:
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
                 res = [left, right]

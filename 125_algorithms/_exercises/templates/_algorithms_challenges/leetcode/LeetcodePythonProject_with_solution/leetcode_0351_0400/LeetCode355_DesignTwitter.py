@@ -88,7 +88,7 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        __ followerId __ self.following and followerId != followeeId:
+        __ followerId __ self.following a.. followerId != followeeId:
             self.following[followerId].discard(followeeId)
 
 # Your Twitter object will be instantiated and called as such:

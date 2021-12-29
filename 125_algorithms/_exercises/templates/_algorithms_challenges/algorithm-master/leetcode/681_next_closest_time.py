@@ -29,8 +29,8 @@ class Solution:
         :rtype: str
         """
         __ n.. (
-            time and l..(time) __ 5 and time[2] __ ':' and
-            0 <= int(time[:2]) < 24 and 0 <= int(time[3:]) < 60
+            time a.. l..(time) __ 5 a.. time[2] __ ':' a..
+            0 <= int(time[:2]) < 24 a.. 0 <= int(time[3:]) < 60
         ):
             r.. ''
 
@@ -38,7 +38,7 @@ class Solution:
         digits    # list
 
         ___ a __ s..(times):
-            __ digits and a __ digits[-1]:
+            __ digits a.. a __ digits[-1]:
                 continue
 
             digits.a..(a)
@@ -46,15 +46,15 @@ class Solution:
         ids = [digits.index(t) ___ t __ times]
         ids[-1] += 1
 
-        while n.. self.is_valid(ids, digits):
+        w.... n.. self.is_valid(ids, digits):
             ids[-1] += 1
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
-        r.. '{}:{}'.format(
-            '0' + str(h) __ h < 10 ____ str(h),
-            '0' + str(m) __ m < 10 ____ str(m)
+        r.. '{}:{}'.f..(
+            '0' + s..(h) __ h < 10 ____ s..(h),
+            '0' + s..(m) __ m < 10 ____ s..(m)
         )
 
     ___ is_valid(self, ids, digits):
@@ -62,7 +62,7 @@ class Solution:
         carry = 0
         i = l..(ids) - 1
 
-        while i >= 0:
+        w.... i >= 0:
             carry += ids[i]
             ids[i] = carry % n
             carry = carry // n
@@ -75,7 +75,7 @@ class Solution:
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
-        __ 0 <= h < 24 and 0 <= m < 60:
+        __ 0 <= h < 24 a.. 0 <= m < 60:
             r.. True
 
         r.. False

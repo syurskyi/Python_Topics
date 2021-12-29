@@ -9,7 +9,7 @@ class Solution:
             r.. ans
 
         n = l..(S)
-        S.sort()
+        S.s..()
 
         """
         just like two sum
@@ -18,7 +18,7 @@ class Solution:
         ___ c __ r..(n - 1, 1, -1):
             a = 0
             b = c - 1
-            while a < b:
+            w.... a < b:
                 __ S[a] + S[b] > S[c]:
                     ans += b - a
                     b -= 1

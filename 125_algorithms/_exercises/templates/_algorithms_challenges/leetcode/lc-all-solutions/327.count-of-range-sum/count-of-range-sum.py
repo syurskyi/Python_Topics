@@ -8,13 +8,13 @@ class Solution(object):
     """
 
     ___ update(b, i, delta):
-      while i < l..(b):
+      w.... i < l..(b):
         b[i] += delta
         i += (i & -i)
 
     ___ sumRange(b, i):
       ret = 0
-      while i > 0:
+      w.... i > 0:
         ret += b[i]
         i -= (i & -i)
       r.. ret

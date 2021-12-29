@@ -9,8 +9,8 @@ class TicTacToe(object):
       delta = 3 - player * 2
       self.rows[row] += delta
       self.cols[col] += delta
-      self.diag += row __ col and delta
-      self.antiDiag += row + col __ self.n - 1 and delta
+      self.diag += row __ col a.. delta
+      self.antiDiag += row + col __ self.n - 1 a.. delta
       __ delta * self.n __ [self.rows[row], self.cols[col], self.diag, self.antiDiag]:
         r.. player
       r.. 0

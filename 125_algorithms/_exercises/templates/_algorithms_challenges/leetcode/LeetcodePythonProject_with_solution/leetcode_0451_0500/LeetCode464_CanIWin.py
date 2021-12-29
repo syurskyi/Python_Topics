@@ -12,7 +12,7 @@ class Solution(object):
         r.. self.helper(l..(r..(1, maxChoosableInteger+1)), desiredTotal)
     
     ___ helper(self, nums, desiredTotal):
-        hash = str(nums)
+        hash = s..(nums)
         __ hash __ self.memo:
             r.. self.memo[hash]
         __ nums[-1] >= desiredTotal:

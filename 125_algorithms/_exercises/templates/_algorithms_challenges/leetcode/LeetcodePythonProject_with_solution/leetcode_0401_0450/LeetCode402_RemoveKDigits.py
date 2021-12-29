@@ -11,7 +11,7 @@ class Solution(object):
         __ k >= n: r.. '0'
         stack    # list
         ___ c __ num:
-            while k > 0 and stack and stack[-1] > c:
+            w.... k > 0 a.. stack a.. stack[-1] > c:
                 stack.pop()
                 k -= 1
             stack.a..(c)

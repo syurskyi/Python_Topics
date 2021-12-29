@@ -15,7 +15,7 @@ class Solution(object):
       ___ num __ nums[i]:
         tuples.a..((num, i))
 
-    tuples.sort()
+    tuples.s..()
     length = l..(tuples)
     left = tuples[0][0]
     right = tuples[-1][0]
@@ -24,7 +24,7 @@ class Solution(object):
       num, no = tuples[i]
       deq.a..(tuples[i])
       d[no] += 1
-      while l..(deq) > 1 and d[deq[0][1]] > 1:
+      w.... l..(deq) > 1 a.. d[deq[0][1]] > 1:
         _num, _no = deq.popleft()
         d[_no] -= 1
         __ d[_no] __ 0:

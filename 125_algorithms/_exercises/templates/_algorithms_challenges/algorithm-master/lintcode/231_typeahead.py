@@ -19,9 +19,9 @@ class Typeahead:
     @param: str: a string
     @return: a list of words
     """
-    ___ search(self, str):
-        __ str __ self.map:
-            r.. self.map[str]
+    ___ search(self, s..):
+        __ s.. __ self.map:
+            r.. self.map[s..]
         r.. []
 
 
@@ -95,5 +95,5 @@ class Typeahead:
     @param: str: a string
     @return: a list of words
     """
-    ___ search(self, str):
-        r.. self.trie.search(str)
+    ___ search(self, s..):
+        r.. self.trie.search(s..)

@@ -4,8 +4,8 @@ ____ dataclasses _______ dataclass
 @dataclass
 class Bite(object):
     number: int
-    title: str
-    level: str = 'Beginner'
+    title: s..
+    level: s.. = 'Beginner'
 
     ___ __post_init__(self):
         self.title = self.title.capitalize()

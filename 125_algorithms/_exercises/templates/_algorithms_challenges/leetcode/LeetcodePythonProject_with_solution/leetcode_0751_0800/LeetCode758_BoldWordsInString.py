@@ -17,12 +17,12 @@ class Solution(object):
         res = ''
         ___ i __ r..(l..(s)):
             ___ word __ words:
-                __ i+l..(word) <= l..(s) and s[i:i+l..(word)] __ word:
+                __ i+l..(word) <= l..(s) a.. s[i:i+l..(word)] __ word:
                     __ n.. start:
                         res += '<b>'
                         start = True
                     j = max(j, i+l..(word))
-            __ i __ j and start:
+            __ i __ j a.. start:
                 res += '</b>'
                 start = False
             res += s[i]

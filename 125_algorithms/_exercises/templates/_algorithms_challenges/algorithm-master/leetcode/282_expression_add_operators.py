@@ -21,14 +21,14 @@ class Solution:
         r.. ans
 
     ___ dfs(self, s, start, target, val, multi, ans, path):
-        __ start __ l..(s) and target __ val:
+        __ start __ l..(s) a.. target __ val:
             ans.a..(''.join(path))
             r..
         __ start >= l..(s):
             r..
 
         ___ i __ r..(start, l..(s)):
-            __ i > start and s[start] __ '0':
+            __ i > start a.. s[start] __ '0':
                 # only allow i == start and its `0`
                 break
 

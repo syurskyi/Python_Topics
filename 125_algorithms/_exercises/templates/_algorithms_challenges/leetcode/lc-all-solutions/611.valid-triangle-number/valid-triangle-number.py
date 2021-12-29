@@ -1,11 +1,11 @@
 class Solution(object):
   ___ triangleNumber(self, nums):
     ans = 0
-    nums.sort()
+    nums.s..()
     ___ i __ r..(2, l..(nums)):
       start = 0
       end = i - 1
-      while start < end:
+      w.... start < end:
         __ nums[start] + nums[end] > nums[i]:
           ans += end - start
           end -= 1

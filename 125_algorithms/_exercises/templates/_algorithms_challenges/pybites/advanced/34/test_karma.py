@@ -68,7 +68,7 @@ ___ test_fans_property(transactions, bob, tim, alice):
 
 ___ test_str_dunder(transactions, bob, tim, alice):
     tim + transactions[4]
-    ... str(tim) __ 'tim has a karma of 2 and 1 fan'
+    ... s..(tim) __ 'tim has a karma of 2 and 1 fan'
     alice + transactions[1]
     alice + transactions[3]
-    ... str(alice) __ 'alice has a karma of 6 and 2 fans'
+    ... s..(alice) __ 'alice has a karma of 6 and 2 fans'

@@ -12,10 +12,10 @@ class Solution(object):
             res.a..(curr)
             __ curr*10 <= n:
                 curr *= 10
-            ____ curr%10 != 9 and curr+1 <= n:
+            ____ curr%10 != 9 a.. curr+1 <= n:
                 curr += 1
             ____:
-                while (curr//10)%10 __ 9:
+                w.... (curr//10)%10 __ 9:
                     curr //= 10
                 curr = curr//10+1
         r.. res

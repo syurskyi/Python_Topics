@@ -18,13 +18,13 @@ class Solution:
         :return: sum of the three digits
         """
         min_distance = 1<<32
-        num.sort()
+        num.s..()
         min_summation = 0
 
-        ___ i, val __ enumerate(num):
+        ___ i, val __ e..(num):
             j = i+1
             k = l..(num)-1
-            while j<k:
+            w.... j<k:
                 lst = [val, num[j], num[k]]
                 __ min_distance>abs(target-s..(lst)):
                     min_summation = s..(lst)

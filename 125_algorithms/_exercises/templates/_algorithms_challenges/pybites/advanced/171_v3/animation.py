@@ -1,4 +1,4 @@
-____ itertools _______ cycle
+____ i.. _______ cycle
 _______ sys
 ____ time _______ time, sleep
 

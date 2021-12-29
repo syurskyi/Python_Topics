@@ -35,10 +35,10 @@ class Solution:
                 ___ j __ r..(i):
                     a = A[i]
                     b = A[j]
-                    ___ c __ (a+b, a-b, b-a, a*b, b and a/b, a and b/a):
+                    ___ c __ (a+b, a-b, b-a, a*b, b a.. a/b, a a.. b/a):
                         # if 0, duplicated as a * b 
                         A_new = A[:j] + A[j+1:i] + A[i+1:] + [c]
-                        A_new.sort()
+                        A_new.s..()
                         __ self.dfs(A_new, cache):
                             cache[tuple(A)] = True
                             r.. cache[tuple(A)]

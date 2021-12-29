@@ -13,7 +13,7 @@ ___ first_fit_decreasing_algorithm(capacities, bin_max_capacity
         item_capacity  capacities[item]
 
         # consider all the bins (this is why the final running time complexity of quadratic)
-        ___ index, actual_bin __ enumerate(solution_bins
+        ___ index, actual_bin __ e..(solution_bins
             # sum of items' capacity so far in the actual_bin
             actual_bin_summed_size  su_([capacities[key] ___ key __ actual_bin])
 

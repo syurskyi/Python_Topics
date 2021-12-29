@@ -36,5 +36,5 @@ ___ max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
     key_list = [word ___ word __ words]
     value_list = [calc_word_value(word) ___ word __ words]
-    d = d..(zip(key_list, value_list))
+    d = d..(z..(key_list, value_list))
     r.. max(d, key=d.get)

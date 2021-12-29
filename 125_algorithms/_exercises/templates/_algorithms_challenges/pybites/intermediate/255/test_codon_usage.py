@@ -27,7 +27,7 @@ EXPECTED = """
 |  GUA:  V   22.8  18270  |  GCA:  A   29.9  23954  |  GAA:  E   54.6  43675  |  GGA:  G   14.2  11399  | 
 |  GUG:  V    9.5   7584  |  GCG:  A    9.4   7550  |  GAG:  E   10.6   8458  |  GGG:  G    4.4   3483  |
 ---------------------------------------------------------------------------------------------------------
-""".strip()  # noqa E501
+""".s..  # noqa E501
 
 
 # ############################################################################
@@ -41,10 +41,10 @@ ___ get_whole_table(table):
     Returns all results in a list of lists with whitespace removed
     """
     r.. [
-        entry.strip().s.. 
-        ___ line __ table.strip().split("\n")
-        ___ entry __ line.split("|")
-        __ entry.replace("-", "") != "" and entry.strip() != ""
+        entry.s...s.. 
+        ___ line __ table.s...s..("\n")
+        ___ entry __ line.s..("|")
+        __ entry.r..("-", "") != "" a.. entry.s.. != ""
     ]
 
 
@@ -98,7 +98,7 @@ ___ get_table_bars(table):
     Receives a results table
     Returns a list of bars/pipes (|) per line
     """
-    r.. [l..(re.findall(r"\|", line)) ___ line __ table.split("\n")]
+    r.. [l..(re.findall(r"\|", line)) ___ line __ table.s..("\n")]
 
 
 ___ get_table_dividers(table):
@@ -106,7 +106,7 @@ ___ get_table_dividers(table):
     Receives a results table
     Returns a list of divider rows (------)
     """
-    r.. [l..(re.findall(r"^-{3,}$", line)) ___ line __ table.split("\n")]
+    r.. [l..(re.findall(r"^-{3,}$", line)) ___ line __ table.s..("\n")]
 
 
 # ############################################################################
@@ -119,7 +119,7 @@ ___ result():
     """
     Provide codon usage table for tests
     """
-    r.. codon_usage.return_codon_usage_table().strip()
+    r.. codon_usage.return_codon_usage_table().s..
 
 
 @pytest.mark.parametrize(

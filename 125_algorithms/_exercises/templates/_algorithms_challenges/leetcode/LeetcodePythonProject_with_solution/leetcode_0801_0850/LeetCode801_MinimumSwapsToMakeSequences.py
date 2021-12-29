@@ -16,8 +16,8 @@ class Solution(object):
         dp[-1][0] = 0
         dp[-1][1] = 1
         ___ i __ r..(n-2, -1, -1):
-            __ arr1[i] < arr1[i+1] and arr2[i] < arr2[i+1]:
-                __ arr1[i] < arr2[i+1] and arr2[i] < arr1[i+1]:
+            __ arr1[i] < arr1[i+1] a.. arr2[i] < arr2[i+1]:
+                __ arr1[i] < arr2[i+1] a.. arr2[i] < arr1[i+1]:
                     dp[i][0] = m..(dp[i+1][0], dp[i+1][1])
                     dp[i][1] = m..(dp[i+1][0]+1, dp[i+1][0]+1)
                 ____:
@@ -44,11 +44,11 @@ class Solution(object):
         __ i __ l..(arr1):
             self.res = m..(self.res, cur)
             r..
-        __ i __ 0 o. (arr1[i] > arr2[i-1] and arr2[i] > arr1[i-1]):
+        __ i __ 0 o. (arr1[i] > arr2[i-1] a.. arr2[i] > arr1[i-1]):
             arr1[i], arr2[i] = arr2[i], arr1[i]
             self.helper(arr1, arr2, i+1, cur+1)
             arr1[i], arr2[i] = arr2[i], arr1[i]
-        __ i __ 0 o. (arr1[i] > arr1[i-1] and arr2[i] > arr2[i-1]):
+        __ i __ 0 o. (arr1[i] > arr1[i-1] a.. arr2[i] > arr2[i-1]):
             self.helper(arr1, arr2, i+1, cur)
     
     ___ test(self):

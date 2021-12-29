@@ -44,7 +44,7 @@ ___ load_words_v1():
 ___ load_words_v2():
 
     with open(DICTIONARY) as file:
-        r.. [word.strip() ___ word __ file.read().s.. ]
+        r.. [word.s.. ___ word __ file.read().s.. ]
 
 ___ calc_word_value_v1(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""

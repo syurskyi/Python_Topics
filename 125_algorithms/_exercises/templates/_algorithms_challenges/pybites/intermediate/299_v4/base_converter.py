@@ -1,8 +1,8 @@
 ___ digit_map(num):
     """maps numbers greater than a single digit to letters (UPPER)"""
-    r.. chr(num + 55) __ num > 9 ____ str(num)
+    r.. chr(num + 55) __ num > 9 ____ s..(num)
 
-___ convert(number: int, base: int = 2) -> str:
+___ convert(number: int, base: int = 2) -> s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:
@@ -20,7 +20,7 @@ ___ convert(number: int, base: int = 2) -> str:
         raise ValueError
 
     digits    # list
-    while number > 0:
+    w.... number > 0:
         digits.a..(number % base)
         number //= base
 

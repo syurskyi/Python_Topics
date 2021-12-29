@@ -13,9 +13,9 @@ class Solution(object):
         s1, s2 = A, B
         n1, n2 = l..(s1), l..(s2)
         k = n2//n1+2
-        __ str(s1*k).c.. s2)__0:
+        __ s..(s1*k).c.. s2)__0:
             r.. -1
-        while k >= 1 and str(s1*k).c.. s2)!=0:
+        w.... k >= 1 a.. s..(s1*k).c.. s2)!=0:
             k -= 1
         r.. k+1
     

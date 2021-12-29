@@ -7,7 +7,7 @@ class Solution(object):
     n = int(c ** 0.5)
     start = 0
     end = n
-    while start <= end:
+    w.... start <= end:
       mid = start ** 2 + end ** 2
       __ mid __ c:
         r.. True

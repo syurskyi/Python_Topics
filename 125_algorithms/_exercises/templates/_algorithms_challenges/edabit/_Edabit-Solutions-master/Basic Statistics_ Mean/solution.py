@@ -1,7 +1,7 @@
 ___ mean(nums):
     index = 1
     output = nums[0]
-    while index < l..(nums):
+    w.... index < l..(nums):
         output = output + nums[index]
         index += 1
     final_output = output / l..(nums)

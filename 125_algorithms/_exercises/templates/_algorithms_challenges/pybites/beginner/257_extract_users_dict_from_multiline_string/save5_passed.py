@@ -1,20 +1,20 @@
 _______ re
 
-___ get_users(passwd: str) -> d..:
+___ get_users(passwd: s..) -> d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,
       replace multiple commas in name with a single space
       return dict of keys = user, values = name.
     """
-    passwd = passwd.strip().splitlines()
+    passwd = passwd.s...splitlines()
     keys    # list
     values    # list
     ___ p __ passwd:
-        keys.a..(p.split(':')[0])
-        __ l..(p.split(':')[4]) __ 0:
+        keys.a..(p.s..(':')[0])
+        __ l..(p.s..(':')[4]) __ 0:
             values.a..('unknown')
         ____:
             values.a..(' '.join(
-                re.sub(',',' ', p.split(':')[4]).split()))
-    r.. d..(zip(keys, values))
+                re.sub(',',' ', p.s..(':')[4]).s..()))
+    r.. d..(z..(keys, values))

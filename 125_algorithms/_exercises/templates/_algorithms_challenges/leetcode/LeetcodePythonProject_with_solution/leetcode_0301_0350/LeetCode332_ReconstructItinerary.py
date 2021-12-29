@@ -20,7 +20,7 @@ class Solution(object):
         r.. result
         
     ___ dfs(self, result, hashmap, elem):
-        while hashmap.get(elem):
+        w.... hashmap.get(elem):
             self.dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)
     

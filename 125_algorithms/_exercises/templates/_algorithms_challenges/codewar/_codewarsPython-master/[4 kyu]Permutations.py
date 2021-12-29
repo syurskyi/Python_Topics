@@ -1,5 +1,5 @@
-_______ itertools
+_______ i..
 ___ permutations(string):
-    r.. s..([''.join(p) ___ p __ set(itertools.permutations(string,l..(string)))])
+    r.. s..([''.join(p) ___ p __ set(i...permutations(string,l..(string)))])
 
 print(permutations('aabb'))    

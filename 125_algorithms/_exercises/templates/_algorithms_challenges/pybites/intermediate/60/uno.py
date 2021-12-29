@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 SUITS = 'Red Green Yellow Blue'.s..
 
-UnoCard = namedtuple('UnoCard', 'suit name')
+UnoCard = n..('UnoCard', 'suit name')
 
 
 ___ create_uno_deck():

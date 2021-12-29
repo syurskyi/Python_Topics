@@ -17,7 +17,7 @@ class Solution(object):
         __ abs(m-n) > 1:
             r.. False
         i, j, count = 0, 0, 0
-        while i < n and j < m:
+        w.... i < n a.. j < m:
             __ s[i] __ t[j]:
                 i+=1
                 j+=1

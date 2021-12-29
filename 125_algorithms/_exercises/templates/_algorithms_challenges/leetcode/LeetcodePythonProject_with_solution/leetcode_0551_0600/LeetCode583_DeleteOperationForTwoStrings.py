@@ -15,7 +15,7 @@ class Solution(object):
         dp = [[float('inf')]*(n+1) ___ _ __ r..(m+1)]
         ___ i __ r..(m+1):
             ___ j __ r..(n+1):
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     dp[i][j] = 0
                 ____ i __ 0:
                     dp[i][j] = dp[i][j-1]+1

@@ -1,8 +1,8 @@
 ___ same_structure_as(original,other):
-    __ type(original) __ ('str','int') and type(other) __ ('str','int'):
-        __ ''.join(map(str,original)) __ ''.join(map(str,other)):
+    __ type(original) __ ('str','int') a.. type(other) __ ('str','int'):
+        __ ''.join(map(s..,original)) __ ''.join(map(s..,other)):
             r.. True
-        __ ''.join(map(str,original)) __ ''.join(map(str,other))[::-1]:
+        __ ''.join(map(s..,original)) __ ''.join(map(s..,other))[::-1]:
             r.. True
         ____:
             r..  False
@@ -12,10 +12,10 @@ ___ same_structure_as(original,other):
 
     __ l..(original) != l..(other):
         r.. False
-    ___ ori,oth __ zip(original,other):
+    ___ ori,oth __ z..(original,other):
         __ type(ori) != type(oth):
             r.. False
-        ____ type(ori) __ type(oth) and isi..(ori,l..):
+        ____ type(ori) __ type(oth) a.. isi..(ori,l..):
             __ n.. same_structure_as(ori,oth) o. l..(ori) != l..(oth):
                 r.. False
     r.. True

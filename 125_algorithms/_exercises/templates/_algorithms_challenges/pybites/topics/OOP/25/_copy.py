@@ -34,7 +34,7 @@ class Promo:
            Bites are done, raise a NoBitesAvailable exception"""
         __ l..(self.all_bites) > l..(self.bites_done):
             entry_list = l..(self.all_bites.items())
-            while True:
+            w... T...
                 random_entry = random.choice(entry_list)
                 __ random_entry[0] n.. __ self.bites_done:
                     r.. random_entry[0]

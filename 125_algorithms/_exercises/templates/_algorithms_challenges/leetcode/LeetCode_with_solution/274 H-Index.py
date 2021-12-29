@@ -50,7 +50,7 @@ class Solution(object):
         :rtype: int
         """
         n = l..(citations)
-        citations.sort()
+        citations.s..()
         ___ i __ xrange(n):
             __ citations[i] >= n-i:
                 r.. n-i
@@ -63,7 +63,7 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        citations.sort(r.._T..
+        citations.s..(r.._T..
         citations.a..(0)
         h = 0
         ___ i __ xrange(l..(citations)-1):

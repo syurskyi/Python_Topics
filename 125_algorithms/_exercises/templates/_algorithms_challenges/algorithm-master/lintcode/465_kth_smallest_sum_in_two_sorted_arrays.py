@@ -27,7 +27,7 @@ class Solution:
         ans = j = 0
         heap    # list
         ___ i __ r..(m..(m, k)): heapq.heappush(heap, (A[i] + B[0], i, 0))
-        while k > 0:
+        w.... k > 0:
             ans = heapq.heappop(heap)
             j = ans[2] + 1
             __ j < n:

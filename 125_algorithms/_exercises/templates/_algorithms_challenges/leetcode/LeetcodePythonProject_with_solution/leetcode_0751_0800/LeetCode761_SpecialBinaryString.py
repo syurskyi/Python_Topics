@@ -12,7 +12,7 @@ class Solution(object):
         count = 0
         i = 0
         res    # list
-        ___ j, c __ enumerate(S):
+        ___ j, c __ e..(S):
             count = count+1 __ c__'1' ____ count-1
             __ count __ 0:
                 res.a..('1'+self.makeLargestSpecial(S[i+1:j])+'0')

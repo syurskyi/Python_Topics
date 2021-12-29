@@ -24,13 +24,13 @@ class Rails:
     ___ linear_iterator(self, rail_lengths):
         ___ index __ r..(l..(self.rails)):
             ___ rail_length __ r..(rail_lengths[index]):
-                yield self.rails[index]
+                y.. self.rails[index]
 
     ___ zig_zag_iterator(self, message):
         index = 0
         increasing = True
         ___ _ __ message:
-            yield self.rails[index]
+            y.. self.rails[index]
             increasing = self.direction(index, increasing)
             index = self.increment_index(index, increasing)
 

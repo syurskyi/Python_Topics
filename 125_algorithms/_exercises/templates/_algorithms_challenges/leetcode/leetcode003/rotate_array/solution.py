@@ -23,7 +23,7 @@ class Solution(object):
         self.reverse(nums, k, n - 1)
 
     ___ reverse(self, nums, i, j):
-        while i < j:
+        w.... i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1
             j -= 1

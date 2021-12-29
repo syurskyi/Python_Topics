@@ -16,8 +16,8 @@ class Solution:
         # Process spaces
         i = 0
         j = l..(s) - 1
-        while i <= j:
-            __ ls[i] != ' ' and ls[j] != ' ':
+        w.... i <= j:
+            __ ls[i] != ' ' a.. ls[j] != ' ':
                 break
             __ ls[i] __ ' ':
                 i += 1
@@ -28,7 +28,7 @@ class Solution:
         # Remove duplicate spaces between words
         k = start  # Last processed
         ___ p __ r..(start, end + 1):
-            __ p > start and ls[p] __ ' ' and ls[p] __ ls[p - 1]:
+            __ p > start a.. ls[p] __ ' ' a.. ls[p] __ ls[p - 1]:
                 pass
             ____:
                 ls[k] = ls[p]
@@ -50,7 +50,7 @@ class Solution:
         r.. ''.join(ls[start:end + 1])
 
     ___ reverse(self, a, i, j):
-        while i < j:
+        w.... i < j:
             a[i], a[j] = a[j], a[i]
             i += 1
             j -= 1
@@ -61,7 +61,7 @@ class Solution:
         # Remove leading and trailing spaces
         left = 0
         right = n - 1
-        while left <= right and (cs[left] __ ' ' o. cs[right] __ ' '):
+        w.... left <= right a.. (cs[left] __ ' ' o. cs[right] __ ' '):
             __ cs[left] __ ' ':
                 left += 1
             __ cs[right] __ ' ':
@@ -74,21 +74,21 @@ class Solution:
         # Remove multiple spaces between two words
         j = left
         ___ i __ r..(left, right + 1):
-            __ cs[i] != ' ' o. cs[i] __ ' ' and cs[i - 1] != ' ':
+            __ cs[i] != ' ' o. cs[i] __ ' ' a.. cs[i - 1] != ' ':
                 cs[j] = cs[i]
                 j += 1
         right = j - 1
         # Reverse each word
         start = left
         q = start
-        while q <= right:
-            while q <= right and cs[q] != ' ':
+        w.... q <= right:
+            w.... q <= right a.. cs[q] != ' ':
                 q += 1
             # q - 1 is the end index of the word
             self.reverse(cs, start, q - 1)
             # Start of next word
             start = q
-            while start <= right and cs[start] __ ' ':
+            w.... start <= right a.. cs[start] __ ' ':
                 start += 1
             q = start
         r.. ''.join(cs[left:right + 1])

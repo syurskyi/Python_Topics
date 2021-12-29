@@ -16,7 +16,7 @@ class Solution:
         ___ l __ r..(3, n + 1):
             ___ i __ r..(n - l + 1):
                 j = i + l - 1
-                __ s[i] __ s[j] and t[i + 1][j - 1]:
+                __ s[i] __ s[j] a.. t[i + 1][j - 1]:
                     t[i][j] = True
                     start = i
                     max_len = l

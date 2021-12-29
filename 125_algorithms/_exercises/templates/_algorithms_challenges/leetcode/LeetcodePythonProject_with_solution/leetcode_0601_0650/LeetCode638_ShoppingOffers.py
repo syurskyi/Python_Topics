@@ -11,7 +11,7 @@ class Solution(object):
         :type needs: List[int]
         :rtype: int
         """
-        self.minPrice = s..([p*n ___ p, n __ zip(price, needs)])
+        self.minPrice = s..([p*n ___ p, n __ z..(price, needs)])
         self.helper(price, special, needs, 0)
         r.. self.minPrice
     

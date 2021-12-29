@@ -26,7 +26,7 @@ class Solution:
 
             heapq.heappush(heap, (lists[i].val, i))
 
-        while heap:
+        w.... heap:
             val, i = heapq.heappop(heap)
 
             tail.next = ListNode(val)

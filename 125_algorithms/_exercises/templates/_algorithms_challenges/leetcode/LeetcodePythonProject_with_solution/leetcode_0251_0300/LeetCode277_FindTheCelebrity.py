@@ -18,13 +18,13 @@ class Solution(object):
         :rtype: int
         """
         l, r = 0, n-1
-        while l < r:
+        w.... l < r:
             __ knows(l, r):
                 l += 1
             ____:
                 r -= 1
         ___ i __ r..(n):
-            __ i __ l o. (knows(i, l) and n.. knows(l, i)):
+            __ i __ l o. (knows(i, l) a.. n.. knows(l, i)):
                 continue
             ____:
                 r.. -1

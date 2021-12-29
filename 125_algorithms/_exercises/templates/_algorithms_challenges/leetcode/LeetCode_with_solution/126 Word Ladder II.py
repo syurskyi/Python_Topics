@@ -45,7 +45,7 @@ class Solution_MLE:  # Memory Limit Exceeds
 
         start_node = self.Node(start, N.., d..-{start}|{end})
         queue = [start_node]
-        while queue:
+        w.... queue:
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
@@ -70,7 +70,7 @@ class Solution_MLE:  # Memory Limit Exceeds
     ___ a..(self, node, result):
         cur = node
         lst    # list
-        while cur:
+        w.... cur:
             lst.insert(0, cur.string)
             cur = cur.pre
         result.a..(lst)
@@ -99,7 +99,7 @@ class Solution_TLE:
 
         start_node = self.Node(start, N..)
         queue = [start_node]
-        while queue:
+        w.... queue:
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
@@ -115,7 +115,7 @@ class Solution_TLE:
                     ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
-                        __ temp __ d.. and n.. self.in_previous(queue[i], temp):
+                        __ temp __ d.. a.. n.. self.in_previous(queue[i], temp):
                             queue.a..(self.Node(temp, queue[i]))
 
             queue = queue[length_0:]
@@ -124,14 +124,14 @@ class Solution_TLE:
     ___ a..(self, node, result):
         cur = node
         lst    # list
-        while cur:
+        w.... cur:
             lst.insert(0, cur.string)
             cur = cur.pre
         result.a..(lst)
 
     ___ in_previous(self, node, string):
         cur = node
-        while cur:
+        w.... cur:
             __ cur.string__string:
                 r.. True
             cur = cur.pre
@@ -170,7 +170,7 @@ class Solution_TLE2:
 
         # bfs
         queue = [Node(start, N..)]
-        while queue:
+        w.... queue:
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
@@ -202,7 +202,7 @@ class Solution_TLE2:
     ___ a..(self, node, result):
         cur = node
         lst    # list
-        while cur:
+        w.... cur:
             lst.insert(0, cur.string)
             cur = cur.pre
         result.a..(lst)
@@ -229,7 +229,7 @@ class Solution:  # use set to mimic queue, fastest
         previous=1
 
         candidates[current].add(start)
-        while end n.. __ candidates[current]:
+        w.... end n.. __ candidates[current]:
             current, previous = previous, current
             ___ i __ candidates[previous]: d.. -= {i}  # greedy elimination
 

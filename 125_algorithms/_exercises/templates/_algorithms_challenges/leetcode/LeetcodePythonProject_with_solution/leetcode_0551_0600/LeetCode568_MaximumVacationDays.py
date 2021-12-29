@@ -65,9 +65,9 @@ class Solution(object):
         ]
         ___ flights, days __ testCases:
             print('flights:')
-            print('\n'.join([str(row) ___ row __ flights]))
+            print('\n'.join([s..(row) ___ row __ flights]))
             print('days:')
-            print('\n'.join([str(row) ___ row __ days]))
+            print('\n'.join([s..(row) ___ row __ days]))
             result = self.maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')

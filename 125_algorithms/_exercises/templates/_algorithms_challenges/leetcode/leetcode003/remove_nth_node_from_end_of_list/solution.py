@@ -13,7 +13,7 @@ class Solution:
             r.. head
         ____:
             q = p = pp = head  # `pp` is the node preceding `p`
-            while q __ n.. N..
+            w.... q __ n.. N..
                 __ n <= 0:
                     pp = p
                     p = p.next

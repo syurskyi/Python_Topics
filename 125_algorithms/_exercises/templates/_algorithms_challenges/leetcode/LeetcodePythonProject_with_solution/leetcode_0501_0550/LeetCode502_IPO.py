@@ -16,10 +16,10 @@ class Solution(object):
         _______ heapq
         heapCap    # list
         heapPro    # list
-        ___ c, p __ zip(Capital, Profits):
+        ___ c, p __ z..(Capital, Profits):
             heapq.heappush(heapCap, (c, p))
         ___ _ __ r..(k):
-            while heapCap and heapCap[0][0] <= W:
+            w.... heapCap a.. heapCap[0][0] <= W:
                 c, p = heapq.heappop(heapCap)
                 heapq.heappush(heapPro, (-p, c))
             __ n.. heapPro:

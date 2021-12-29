@@ -15,12 +15,12 @@ class Solution(object):
         r.. res __ l..(res) > 2 ____ []
     
     ___ helper(self, s, i, res):
-        __ i >= l..(s) and l..(res) > 2:
+        __ i >= l..(s) a.. l..(res) > 2:
             r.. True
         ___ j __ r..(i+1, l..(s)+1):
             s0 = s[i:j]
             num = int(s0)
-            __ num > 2**31-1 o. (s0[0] __ '0' and l..(s0) > 1):
+            __ num > 2**31-1 o. (s0[0] __ '0' a.. l..(s0) > 1):
                 break
             __ l..(res) < 2 o. res[-2] + res[-1] __ num:
                 res.a..(num)

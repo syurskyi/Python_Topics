@@ -8,6 +8,6 @@ ___ double_dice_roll(rolls):
         value_1 = (die_1 % dice_sides) + 1
         value_2 = (die_2 % dice_sides) + 1
         total_roll = value_1 + value_2
-        answer.a..(str(total_roll))
+        answer.a..(s..(total_roll))
     print(' '.join(answer))
 double_dice_roll(input())

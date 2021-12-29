@@ -24,7 +24,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels = 'aeiou'
 
 
-___ strip_vowels(text: str) -> (str, int):
+___ strip_vowels(text: s..) -> (s.., int):
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)
@@ -39,7 +39,7 @@ ___ strip_vowels(text: str) -> (str, int):
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
     count = 0
-    lines = text.split("\n")
+    lines = text.s..("\n")
     results    # list
     ___ line __ lines:
         newline = ''

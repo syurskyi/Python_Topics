@@ -28,7 +28,7 @@ class Solution:
         r.. self.dfs(maze, x, y, tx, ty, visited)
 
     ___ dfs(self, maze, x, y, tx, ty, visited):
-        __ x __ tx and y __ ty:
+        __ x __ tx a.. y __ ty:
             r.. True
         __ (x, y) __ visited:
             r.. False
@@ -41,7 +41,7 @@ class Solution:
             _x = x + dx
             _y = y + dy
 
-            while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
+            w.... 0 <= _x < m a.. 0 <= _y < n a.. maze[_x][_y] __ 0:
                 _x += dx
                 _y += dy
 

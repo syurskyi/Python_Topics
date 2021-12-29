@@ -2,7 +2,7 @@ ____ typing _______ List
 _______ string
 
 
-___ split_once(text: str, separators: str = N..) -> List[str]:
+___ split_once(text: s.., separators: s.. = N..) -> List[s..]:
 
     __ separators __ N..
         separators = string.whitespace 
@@ -10,7 +10,7 @@ ___ split_once(text: str, separators: str = N..) -> List[str]:
     separators= set(separators)
     result    # list
     previous_start = 0
-    ___ i,c __ enumerate(text):
+    ___ i,c __ e..(text):
         __ c __ separators:
             result.a..(text[previous_start:i])
             previous_start = i + 1

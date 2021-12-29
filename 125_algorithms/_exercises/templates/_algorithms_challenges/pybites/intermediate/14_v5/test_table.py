@@ -18,7 +18,7 @@ ___ test_generate_table():
     ... table3[0].c.. SEPARATOR) __ 2
     ... table4[0].c.. SEPARATOR) __ 3
 
-    ... table1[1].split(SEPARATOR)[0] __ 'Bob'
-    ... table2[1].split(SEPARATOR)[1] __ 'Nerd'
-    ... re.match(r'\d+', table3[2].split(SEPARATOR)[2])
-    ... table4[2].split(SEPARATOR)[3]
+    ... table1[1].s..(SEPARATOR)[0] __ 'Bob'
+    ... table2[1].s..(SEPARATOR)[1] __ 'Nerd'
+    ... re.match(r'\d+', table3[2].s..(SEPARATOR)[2])
+    ... table4[2].s..(SEPARATOR)[3]

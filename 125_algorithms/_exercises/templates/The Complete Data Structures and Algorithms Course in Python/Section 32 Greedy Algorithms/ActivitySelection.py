@@ -13,7 +13,7 @@ activities  [["A1", 0, 6],
 
 
 ___ printMaxActivities(activities
-    activities.sort(keylambda x: x[2])
+    activities.s..(keylambda x: x[2])
     i  0
     firstA  activities[i][0]
     print(firstA)

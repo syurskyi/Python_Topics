@@ -15,7 +15,7 @@ class Solution(object):
         ___ x __ nums:
             __ x-1 n.. __ nums:
                 y = x+1
-                while y __ nums:
+                w.... y __ nums:
                     y+=1
                 maxLen = max(y-x, maxLen)
         r.. maxLen

@@ -9,6 +9,6 @@ ___ arrays(arr):
     r.. numpy.array(arr[::-1], float)
 
 
-arr = input().strip().split(' ')
+arr = input().s...s..(' ')
 result = arrays(arr)
 print(result)

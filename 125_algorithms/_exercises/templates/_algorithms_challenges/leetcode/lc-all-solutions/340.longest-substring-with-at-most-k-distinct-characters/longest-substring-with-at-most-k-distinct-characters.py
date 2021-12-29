@@ -10,7 +10,7 @@ class Solution(object):
     d.. = {}
     ___ i __ r..(l..(s)):
       d..[s[i]] = d...get(s[i], 0) + 1
-      while j <= i and l..(d..) > k:
+      w.... j <= i a.. l..(d..) > k:
         d..[s[j]] -= 1
         __ d..[s[j]] __ 0:
           del d..[s[j]]

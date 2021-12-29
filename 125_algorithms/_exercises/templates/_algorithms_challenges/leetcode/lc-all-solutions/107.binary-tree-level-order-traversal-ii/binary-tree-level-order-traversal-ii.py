@@ -17,7 +17,7 @@ class Solution(object):
       r.. []
     ans = [[root.val]]
     queue = deque([root])
-    while queue:
+    w.... queue:
       levelans    # list
       ___ _ __ r..(0, l..(queue)):
         root = queue.popleft()

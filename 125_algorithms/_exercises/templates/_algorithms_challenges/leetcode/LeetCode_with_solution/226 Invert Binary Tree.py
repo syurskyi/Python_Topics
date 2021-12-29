@@ -57,7 +57,7 @@ class Solution:
 
         stk.a..(root)
         cur = N..
-        while stk:
+        w.... stk:
             cur = stk.pop()
             post.a..(cur)
             __ cur.left:
@@ -65,7 +65,7 @@ class Solution:
             __ cur.right:
                 stk.a..(cur.right)
 
-        while post:
+        w.... post:
             cur = post.pop()
             cur.left, cur.right = cur.right, cur.left
 

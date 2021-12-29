@@ -110,7 +110,7 @@ c_ Ticket:
 
     ___ to_pdf _
         """Creates a PDF ticket"""
-        pdf  FPDF(orientation'P', unit'pt', format'A4')
+        pdf  FPDF(orientation'P', unit'pt', f..'A4')
         pdf.add_page()
 
         pdf.set_font(family"Times", style"B", size24)

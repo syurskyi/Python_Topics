@@ -17,14 +17,14 @@ ___ allmax(iterable, key_ N..
 ___ hand_rank(hand):
     card_ranks = ["..23456789TJQKA".index(r) ___ r, s __ hand]
     groups = [(card_ranks.c.. i), i) ___ i __ set(card_ranks)]
-    groups.sort(r.._T..
-    counts, ranks = zip(*groups)
+    groups.s..(r.._T..
+    counts, ranks = z..(*groups)
     __ ranks __ [14, 5, 4, 3, 2]:
         ranks = [5, 4, 3, 2, 1]
-    straight = (l..(counts) __ 5) and (max(ranks) - m..(ranks) __ 4)
+    straight = (l..(counts) __ 5) a.. (max(ranks) - m..(ranks) __ 4)
     flush = l..(set([s ___ r, s __ hand])) __ 1
     r.. (9 __ counts __ (5,) ____
-            8 __ straight and flush ____
+            8 __ straight a.. flush ____
             7 __ counts __ (4, 1) ____
             6 __ counts __ (3, 2) ____
             5 __ flush ____

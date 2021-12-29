@@ -30,7 +30,7 @@ class Solution:
 
         path.a..(node.val)
 
-        __ n.. node.left and n.. node.right and remaining __ node.val:
+        __ n.. node.left a.. n.. node.right a.. remaining __ node.val:
             ans.a..(path[:])
         ____:
             self.dfs(node.left, remaining - node.val, ans, path)

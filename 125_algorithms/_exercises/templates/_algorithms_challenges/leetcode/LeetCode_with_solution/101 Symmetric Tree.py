@@ -43,12 +43,12 @@ class Solution(object):
         r.. self.isSymmetrical(root.left, root.right)
 
     ___ isSymmetrical(self, l, r):
-        __ n.. l and n.. r:
+        __ n.. l a.. n.. r:
             r.. True
 
         # recursive
-        __ (l and r and
-            l.val __ r.val and self.isSymmetrical(l.left, r.right) and self.isSymmetrical(l.right, r.left)):
+        __ (l a.. r a..
+            l.val __ r.val a.. self.isSymmetrical(l.left, r.right) a.. self.isSymmetrical(l.right, r.left)):
             r.. True
 
         r.. False

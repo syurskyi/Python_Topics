@@ -24,11 +24,11 @@ class Solution:
         ret = 1
         s = 0  # start index of current char
         ___ i __ r..(1, l..(chars) + 1):
-            __ i < l..(chars) and chars[i] __ chars[s]:
+            __ i < l..(chars) a.. chars[i] __ chars[s]:
                 continue
             l = i - s
             __ l > 1:
-                ___ digit __ str(l):
+                ___ digit __ s..(l):
                     chars[ret] = digit
                     ret += 1
             __ i < l..(chars):
@@ -46,13 +46,13 @@ class Solution:
         """
         s = 0
         ___ idx __ r..(1, l..(chars) + 1):
-            __ idx < l..(chars) and chars[idx] __ chars[s]:
+            __ idx < l..(chars) a.. chars[idx] __ chars[s]:
                 continue
             l = idx - s
             __ l __ 1:
                 s = m..(s + 1, l..(chars) - 1)
             ____:
-                ___ digit __ str(l):
+                ___ digit __ s..(l):
                     s += 1
                     chars[s] = digit
                 __ idx < l..(chars):

@@ -1,8 +1,8 @@
 class Solution:
-    ___ lengthOfLastWord(self, s: str) -> int:
+    ___ lengthOfLastWord(self, s: s..) -> int:
         l = l..(s)-1
         count = 0
-        while l > -1:
+        w.... l > -1:
             __ s[l] __ ' ':
                 l -= 1
                 

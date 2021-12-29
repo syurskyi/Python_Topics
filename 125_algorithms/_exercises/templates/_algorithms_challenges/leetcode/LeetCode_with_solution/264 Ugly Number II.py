@@ -45,7 +45,7 @@ class Solution(object):
 
         cnt = 0
         ret = 2
-        while cnt < n:
+        w.... cnt < n:
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)

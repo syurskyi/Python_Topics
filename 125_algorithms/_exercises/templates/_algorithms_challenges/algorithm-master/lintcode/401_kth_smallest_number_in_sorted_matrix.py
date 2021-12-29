@@ -10,7 +10,7 @@ class Solution:
         ans = j = 0
         heap, m, n    # list, l..(matrix), l..(matrix[0])
         ___ i __ r..(m..(k, m)): heapq.heappush(heap, (matrix[i][0], i, 0))
-        while k > 0:
+        w.... k > 0:
             ans = heapq.heappop(heap)
             j = ans[2] + 1
             __ j < n:

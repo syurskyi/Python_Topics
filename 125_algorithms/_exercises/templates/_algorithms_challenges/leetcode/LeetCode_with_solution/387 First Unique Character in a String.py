@@ -25,7 +25,7 @@ class Solution(object):
             r.. -1
 
         first = {}
-        ___ i, v __ enumerate(l..(s)):
+        ___ i, v __ e..(l..(s)):
             __ v n.. __ first:
                 first[v] = i
             ____:

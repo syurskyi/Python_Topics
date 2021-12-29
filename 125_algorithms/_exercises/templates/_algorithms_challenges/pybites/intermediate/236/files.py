@@ -3,7 +3,7 @@ _______ difflib
 _______ os
 
 
-___ get_matching_files(directory: PosixPath, filter_str: str) -> l..:
+___ get_matching_files(directory: PosixPath, filter_str: s..) -> l..:
     """Get all file names in "directory" and (case insensitive) match the ones
        that exactly match "filter_str"
 

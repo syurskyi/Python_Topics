@@ -23,13 +23,13 @@ class Codec(object):
         n = l..(s)
         prev = 0
         i = 0
-        while i < n:
+        w.... i < n:
             __ s[i] __ ':':
                 sub = s[prev:i]
                 j = i
-                while j < n and s[j] != '#':
+                w.... j < n a.. s[j] != '#':
                     j += 1
-                __ s[i+1:j].isdigit() and int(s[i+1:j]) __ l..(sub):
+                __ s[i+1:j].isdigit() a.. int(s[i+1:j]) __ l..(sub):
                     arr.a..(sub)
                     i = j
                     prev = i+1
@@ -39,7 +39,7 @@ class Codec(object):
     ___ decode_orig(self, s):
         result    # list
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             j = s.find(':', i)
             i = j+1+int(s[i:j])
             result.a..(s[j+1:i])

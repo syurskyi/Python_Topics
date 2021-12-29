@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 _______ sys
 ____ urllib.request _______ urlretrieve
 ____ zipfile _______ ZipFile
@@ -34,12 +34,12 @@ ___ download_test_files():
 
 
 @pytest.mark.parametrize("argument, expected",
-                         zip(PATHS, RESULTS))
+                         z..(PATHS, RESULTS))
 ___ test_longest_streak_easterntz(argument, expected, download_test_files):
     ... longest_streak(argument, MY_TZ) __ expected
 
 
 @pytest.mark.parametrize("argument, expected",
-                         zip(PATHS, RESULTS_UTC))
+                         z..(PATHS, RESULTS_UTC))
 ___ test_longest_streak_utc(argument, expected, download_test_files):
     ... longest_streak(argument, UTC) __ expected

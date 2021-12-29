@@ -16,7 +16,7 @@ class Solution:
         """
         __ x__0: r.. 0  # avoid Division by zero
         m = x
-        while True:
+        w... T...
             m_before = m
             m = m - float(m*m-x)/(2*m)
             __ abs(m-m_before)<1e-7: break

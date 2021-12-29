@@ -19,7 +19,7 @@ class Solution:
         visited = [[False] * n ___ _ __ r..(m)]
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ (G[x][y] __ s[0] and
+                __ (G[x][y] __ s[0] a..
                     self.dfs(G, x, y, s, 1, visited)):
                     r.. True
 
@@ -32,7 +32,7 @@ class Solution:
         ___ dx, dy __ self.V:
             _x = x + dx
             _y = y + dy
-            __ n.. (0 <= _x < l..(G) and 0 <= _y < l..(G[0])):
+            __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
                 continue
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
                 continue

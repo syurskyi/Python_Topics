@@ -49,7 +49,7 @@ class Solution:
         ___ i __ xrange(l_b-l_a):
             cur_b = cur_b.next
 
-        while cur_a != cur_b:
+        w.... cur_a != cur_b:
             cur_a = cur_a.next
             cur_b = cur_b.next
 
@@ -58,7 +58,7 @@ class Solution:
     ___ _get_len(self, head):
         n = 0
         cur = head
-        while cur:
+        w.... cur:
             n += 1
             cur = cur.next
 

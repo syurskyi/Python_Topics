@@ -10,7 +10,7 @@ class Solution(object):
         :rtype: str
         """
         __ n.. words: r.. ''
-        words.sort(key=l..)
+        words.s..(key=l..)
         n = l..(words[-1])
         dp = [set() ___ _ __ r..(n+1)]
         ___ word __ words:

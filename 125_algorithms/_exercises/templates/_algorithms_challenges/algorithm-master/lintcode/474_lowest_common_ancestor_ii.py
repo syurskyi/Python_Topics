@@ -24,11 +24,11 @@ class Solution:
 
         nodes = set()
 
-        while a:
+        w.... a:
             nodes.add(a)
             a = a.parent
 
-        while b:
+        w.... b:
             __ b __ nodes:
                 r.. b
             b = b.parent

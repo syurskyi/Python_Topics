@@ -25,10 +25,10 @@ ___ person_max_bmi(data=data):
     """Return (name, BMI float) of the character in data that
        has the highest BMI (rounded on 2 decimals)"""
     bmi = {}
-    data_list = data.split("\n")
+    data_list = data.s..("\n")
 
     ___ row __ data_list:
-       current = row.strip().split(",")
+       current = row.s...s..(",")
        __ l..(current) > 1:
          bmi[current[0]] = float(current[2]) / ((int(current[1])) / 100) ** 2
 

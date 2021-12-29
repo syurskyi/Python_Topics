@@ -12,10 +12,10 @@ class Solution(object):
         pairs = set(['00', '11', '69', '96', '88'])
         singles = set(['0', '1', '8'])
         l, r = 0, l..(num)-1
-        while l <= r:
-            __ l < r and num[l]+num[r] n.. __ pairs:
+        w.... l <= r:
+            __ l < r a.. num[l]+num[r] n.. __ pairs:
                 r.. False
-            __ l __ r and num[l] n.. __ singles:
+            __ l __ r a.. num[l] n.. __ singles:
                 r.. False
             l += 1
             r -= 1

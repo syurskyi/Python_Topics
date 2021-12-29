@@ -25,7 +25,7 @@ class Solution:
         :return: a list of lists of integers
         """
         result    # list
-        candidates.sort()
+        candidates.s..()
         self.get_combination_sum(candidates, [], target, result)
         r.. result
 
@@ -49,10 +49,10 @@ class Solution:
 
         # consider [1, 1, 1, 6], target 8
         ind = 0
-        while ind<l..(candidates):
+        w.... ind<l..(candidates):
             self.get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump
-            while ind+1<l..(candidates) and candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate
+            w.... ind+1<l..(candidates) a.. candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate
             ind += 1
 
 __ __name____"__main__":

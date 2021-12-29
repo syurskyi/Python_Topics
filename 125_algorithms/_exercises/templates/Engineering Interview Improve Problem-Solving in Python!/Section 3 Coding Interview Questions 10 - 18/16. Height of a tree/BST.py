@@ -27,7 +27,7 @@ class BST:
             print(val, " Already in tree")
 
     ___ number_of_leaves(self, node):
-        __ node.left and node.right:
+        __ node.left a.. node.right:
             r.. self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
         ____ node.left:
             r.. self.number_of_leaves(node.left)
@@ -46,13 +46,13 @@ class BST:
                 nodes.a..(node.left)
             __ node.right:
                 nodes.a..(node.right)
-            __ (n.. node.left) and (n.. node.right):
+            __ (n.. node.left) a.. (n.. node.right):
                 leaves + 1
             del nodes[0]
         r.. leaves
 
     ___ height(self, node):
-        __ node.left and node.right:
+        __ node.left a.. node.right:
             print(node.val, " Height of left ", self.height(node.left)," Hegiht of right ", self.height(node.right))
             r.. 1 + max(self.height(node.left), self.height(node.right))
         ____ node.left:
@@ -68,7 +68,7 @@ class BST:
     ___ is_identical(self, second_root):
         nodes1  [self.root]
         nodes2  [second_root]
-        w___ nodes1 and nodes2:
+        w___ nodes1 a.. nodes2:
             node  nodes1[0]
             node2  nodes2[0]
             __ node.val __ node2.val:

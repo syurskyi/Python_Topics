@@ -12,14 +12,14 @@ class Calculator:
     ___ __init__(self, inp):
         self.inp = inp
         self.tokenized = self.tokenize(inp)
-        self.tokens = self.tokenized.split(" ")
+        self.tokens = self.tokenized.s..(" ")
 
     ___ calculate(self):
         __ n.. self.valid():
             raise ValueError
         operator_stack = self.operator_stack()
         num_stack = self.num_stack()
-        while l..(operator_stack) > 0:
+        w.... l..(operator_stack) > 0:
             operator = operator_stack.pop(0)
             num1 = num_stack.pop(0)
             num2 = num_stack.pop(0)
@@ -27,7 +27,7 @@ class Calculator:
         r.. num_stack.pop(0)
 
     ___ evaluate(self, operator, num1, num2):
-        r.. eval(str(num1) + operator + str(num2))
+        r.. eval(s..(num1) + operator + s..(num2))
 
     ___ num_stack(self):
         r.. l..(map(int, l..(filter(self.digit, self.tokens))))
@@ -36,20 +36,20 @@ class Calculator:
         r.. l..(filter(self.operator, self.tokens))
 
     ___ valid(self):
-        r.. (self.valid_elements() and
-                n.. self.consecutive_tokens() and
+        r.. (self.valid_elements() a..
+                n.. self.consecutive_tokens() a..
                 n.. self.consecutive_digits())
 
     ___ consecutive_tokens(self):
-        r.. any(self.operator(i) and self.operator(j) ___ i, j __
+        r.. any(self.operator(i) a.. self.operator(j) ___ i, j __
                    self.slices_of_two())
 
     ___ consecutive_digits(self):
-        r.. any(self.digit(i) and self.digit(j) ___ i, j __
+        r.. any(self.digit(i) a.. self.digit(j) ___ i, j __
                    self.slices_of_two())
 
     ___ slices_of_two(self):
-        r.. l..(zip(self.tokens, self.tokens[1:]))
+        r.. l..(z..(self.tokens, self.tokens[1:]))
 
     ___ valid_elements(self):
         r.. a..(self.valid_element(element) ___ element __ self.tokens)
@@ -61,7 +61,7 @@ class Calculator:
     @classmethod
     ___ tokenize(cls, inp):
         ___ operator, token __ l..(cls.OPERATORS.items()):
-            inp = inp.replace(operator, token)
+            inp = inp.r..(operator, token)
         r.. inp
 
     @staticmethod

@@ -22,7 +22,7 @@ class Solution:
         end = l..(height)-1
 
         max_area = -1 << 32
-        while start < end:
+        w.... start < end:
             area = m..(height[start], height[end])*(end-start)
             max_area = max(area, max_area)
 

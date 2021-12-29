@@ -3,6 +3,6 @@ ___ findRoll(rolls):
         ___ roll __ r..(rolls):
                 rawRoll = input()
                 calculatedRoll = int(rawRoll * 6) + 1
-                output.a..(str(calculatedRoll))
+                output.a..(s..(calculatedRoll))
         print(' '.join(output))
 findRoll(input())

@@ -19,7 +19,7 @@ class Solution(object):
 
         ret    # list
         ___ i __ xrange(l..(word)+1):
-            left_num = str(i) __ i ____ ""
+            left_num = s..(i) __ i ____ ""
             ___ right __ self.generateAbbreviations(word[i+1:]):
                 cur = left_num + word[i:i+1] + right
                 ret.a..(cur)
@@ -44,13 +44,13 @@ class SolutionTLE(object):
         __ word n.. __ self.cache:
             ret    # list
             ___ l __ xrange(1, l..(word)+1):
-                pivot = str(l)
+                pivot = s..(l)
                 ___ i __ xrange(l..(word)-l+1):
                     lefts = self.dfs(word[:i])
                     rights = self.dfs(word[i+l:])
                     ___ left __ lefts:
                         ___ right __ rights:
-                            __ left and left[-1].isdigit() o. right and right[0].isdigit():
+                            __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit():
                                 continue
 
                             ret.a..(left+pivot+right)

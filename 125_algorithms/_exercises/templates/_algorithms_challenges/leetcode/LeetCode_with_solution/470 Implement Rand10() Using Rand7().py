@@ -22,7 +22,7 @@ class Solution:
         7-ary system
         :rtype: int
         """
-        while True:
+        w... T...
             rv1 = rand7()
             rv2 = rand7()
             s = (rv1 - 1) * 7 + (rv2 - 1)  # make it start from 0

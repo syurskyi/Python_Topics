@@ -23,7 +23,7 @@ class Solution(object):
             r.. N..
         current = head
         last = N..
-        while current __ n.. N..
+        w.... current __ n.. N..
             __ current.val __ val:
                 __ last __ n.. N..
                     # Remove `current` node and `last` node is not changed

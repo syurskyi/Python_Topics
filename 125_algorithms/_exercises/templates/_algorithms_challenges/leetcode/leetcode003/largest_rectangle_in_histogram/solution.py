@@ -10,7 +10,7 @@ class Solution:
         max_area = 0
         n = l..(height)
         ___ i __ r..(n + 1):
-            while stack and (i __ n o. height[stack[-1]] > height[i]):
+            w.... stack a.. (i __ n o. height[stack[-1]] > height[i]):
                 h = height[stack.pop()]
                 __ stack:
                     w = i - stack[-1] - 1

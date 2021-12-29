@@ -11,6 +11,6 @@ ___ what_time_lives_pybites(naive_utc_dt):
        tuple of Australian and Spanish (timezone aware) datetimes"""
 
 
-    naive_utc_dt = naive_utc_dt.replace(tzinfo=tz.UTC)
+    naive_utc_dt = naive_utc_dt.r..(tzinfo=tz.UTC)
     
     r.. naive_utc_dt.astimezone(AUSTRALIA),naive_utc_dt.astimezone(SPAIN)

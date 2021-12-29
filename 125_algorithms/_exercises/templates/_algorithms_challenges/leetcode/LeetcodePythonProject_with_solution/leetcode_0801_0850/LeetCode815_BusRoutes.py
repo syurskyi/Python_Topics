@@ -30,7 +30,7 @@ class Solution(object):
                     addedStop.add(routes[r][i])
             addedRoute.add(r)
         count = 0
-        while queue:
+        w.... queue:
             size = l..(queue)
             count += 1
             ___ _ __ r..(size):

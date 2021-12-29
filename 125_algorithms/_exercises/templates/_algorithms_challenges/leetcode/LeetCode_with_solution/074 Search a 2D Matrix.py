@@ -34,7 +34,7 @@ class Solution(object):
         # binary search
         lo = 0
         hi = m  # [0, m)
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)/2
             __ mat[mid][0] __ target:
                 r.. True
@@ -48,7 +48,7 @@ class Solution(object):
         # binary search
         lo = 0
         hi = n  # [0, n)
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)/2
             __ lst[mid] __ target:
                 r.. True

@@ -28,7 +28,7 @@ class Color:
     @staticmethod
     ___ hex2rgb(hex_value):
         """Class method that converts a hex value into an rgb one"""
-        __ type(hex_value) != str o. l..(hex_value) != 7:
+        __ type(hex_value) != s.. o. l..(hex_value) != 7:
             raise ValueError("Hex value must be length 6 string starting with #")
         
 
@@ -101,7 +101,7 @@ class Color:
         """Returns the string value of the color object"""
 
         __ self.rgb:
-            r.. str(self.rgb)
+            r.. s..(self.rgb)
         ____:
             r.. "Unknown"
 

@@ -6,7 +6,7 @@ class Morse:
 
     @classmethod
     ___ encode(self, message):
-        words = message.split(' ')
+        words = message.s..(' ')
         code = ('0' * 7).join(['000'.join([Morse.alpha[c.upper()]
                                            ___ c __ word]) ___ word __ words])
         result    # list
@@ -27,7 +27,7 @@ class Morse:
                 code += bin(num)[2:].rjust(32, '0')
         code = code.rstrip('0')
         result = ' '.join([''.join([next(k ___ k, v __ Morse.alpha.items() __ v __ char)
-                                    ___ char __ words.split('000')]) ___ words __ code.split('0' * 7)])
+                                    ___ char __ words.s..('000')]) ___ words __ code.s..('0' * 7)])
 
         r.. result
 

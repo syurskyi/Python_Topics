@@ -17,7 +17,7 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        ln = l..(str(1))
+        ln = l..(s..(1))
         ___ i __ r..(1, n):
             tn    # list
             count = 1
@@ -25,13 +25,13 @@ class Solution(object):
             ___ c __ ln:
                 __ prev __ c:
                     count += 1
-                __ prev __ n.. N.. and prev != c:
-                    tn.a..(str(count))
-                    tn.a..(str(prev))
+                __ prev __ n.. N.. a.. prev != c:
+                    tn.a..(s..(count))
+                    tn.a..(s..(prev))
                     count = 1
                 prev = c
-            tn.a..(str(count))
-            tn.a..(str(prev))
+            tn.a..(s..(count))
+            tn.a..(s..(prev))
             ln = tn
         r.. ''.join(ln)
 

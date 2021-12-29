@@ -25,7 +25,7 @@ class Solution(object):
         left = (level+1)*10+pos*2-1
         right = (level+1)*10+pos*2
         curSum = preSum + hashmap[root]
-        __ left n.. __ hashmap and right n.. __ hashmap:
+        __ left n.. __ hashmap a.. right n.. __ hashmap:
             self.sumVal += curSum
             r..
         __ left __ hashmap:

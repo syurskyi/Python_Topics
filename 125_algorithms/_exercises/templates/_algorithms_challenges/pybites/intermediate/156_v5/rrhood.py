@@ -55,7 +55,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
        then return the former as key.
     """
     result = defaultdict(l..)
-    ___ x, s __ enumerate(text.splitlines()):
+    ___ x, s __ e..(text.splitlines()):
         __ s __ '':
             continue
         ___ c __ characters:

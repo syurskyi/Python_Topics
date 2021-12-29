@@ -64,7 +64,7 @@ class Solution:
                         __ grid[x][i] __ self.ENEMY:
                             row += 1
 
-                __ grid[x][y] __ self.EMPTY and row + cols[y] > ans:
+                __ grid[x][y] __ self.EMPTY a.. row + cols[y] > ans:
                     ans = row + cols[y]
 
         r.. ans

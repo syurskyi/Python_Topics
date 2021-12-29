@@ -1,18 +1,18 @@
-____ datetime _______ datetime
-____ datetime _______ timedelta
+____ d__ _______ d__
+____ d__ _______ t..
 
 
 ___ ontrack_reading(books_goal: int, books_read: int,
                     day_of_year: int = N..) -> bool:
 
-    year = datetime.today().year
-    boy = datetime(year, 1, 1)
-    eoy = datetime(year, 12, 31)
+    year = d__.today().year
+    boy = d__(year, 1, 1)
+    eoy = d__(year, 12, 31)
 
     __ day_of_year:
-        today = boy + timedelta(days=day_of_year-1)
+        today = boy + t..(days=day_of_year-1)
     ____:
-        today = datetime.today()
+        today = d__.today()
 
     days_left = (eoy - today).days
     books_left = books_goal - books_read

@@ -23,11 +23,11 @@ class Solution:
 
         r.. -1
 
-    ___ repeatedStringMatch_TLE(self, A: str, B: str) -> int:
+    ___ repeatedStringMatch_TLE(self, A: s.., B: s..) -> int:
         ___ i __ r..(l..(A)):
             j = 0
             count = 0
-            while j < l..(B):
+            w.... j < l..(B):
                 __ i + j - count * l..(A) >= l..(A):
                     count += 1
                 idx = i + j - count * l..(A)

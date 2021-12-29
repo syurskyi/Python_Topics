@@ -47,7 +47,7 @@ ____ collections _______ Counter, defaultdict
 
 
 class Solution:
-    ___ wordSubsets(self, A: List[str], B: List[str]) -> List[str]:
+    ___ wordSubsets(self, A: List[s..], B: List[s..]) -> List[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))

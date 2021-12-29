@@ -18,5 +18,5 @@ ____ typing _______ List
 
 class Solution:
     ___ arrayPairSum(self, nums: List[int]) -> int:
-        nums.sort()
+        nums.s..()
         r.. s..(nums[::2])

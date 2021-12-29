@@ -30,7 +30,7 @@ class Solution(object):
             idx, k = divmod(k, math.factorial(i))
             ret.a..(array.pop(idx))
 
-        r.. "".join(map(str, ret))
+        r.. "".join(map(s.., ret))
 
     ___ getPermutation(self, n, k):
         """
@@ -56,10 +56,10 @@ class Solution(object):
         # post-process
         candidate = r..(1, n+1)  # sorted
         visited = [False ___ _ __ xrange(n)]
-        ___ ind, val __ enumerate(a):
+        ___ ind, val __ e..(a):
             i = 0  # pointer
             cnt = 0  # counter
-            while True:
+            w... T...
                 __ visited[i]:
                     i += 1
                 ____:
@@ -70,7 +70,7 @@ class Solution(object):
             a[ind] = candidate[i]
             visited[i] = True
 
-        r.. "".join(map(str, a))
+        r.. "".join(map(s.., a))
 
     ___ getPermutation_complicated(self, n, k):
         """
@@ -112,7 +112,7 @@ class Solution(object):
         # case when factorial=0!
         result.a..(array[0])
 
-        r.. "".join(str(element) ___ element __ result)
+        r.. "".join(s..(element) ___ element __ result)
 
 
 class Solution_TLE:
@@ -135,7 +135,7 @@ class Solution_TLE:
 
         sequence = r..(1, n+1)
         result = self.get_kth_permutation_dfs(sequence, k, [])
-        r.. "".join(str(element) ___ element __ result)
+        r.. "".join(s..(element) ___ element __ result)
 
 
     ___ get_kth_permutation_dfs(self, remaining_seq, k, cur):
@@ -151,7 +151,7 @@ class Solution_TLE:
             __ self.counter __ k:
                 r.. cur
 
-        ___ ind, val __ enumerate(remaining_seq):
+        ___ ind, val __ e..(remaining_seq):
             result = self.get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
             __ result: r.. result
 

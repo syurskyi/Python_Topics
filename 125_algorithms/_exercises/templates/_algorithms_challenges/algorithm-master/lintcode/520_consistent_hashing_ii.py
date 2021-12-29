@@ -25,11 +25,11 @@ class Solution:
         point = -1
         ___ i __ r..(self.k):
             point = random.randint(0, self.n - 1)
-            while point __ self.p2l:
+            w.... point __ self.p2l:
                 point = random.randint(0, self.n - 1)
             self.p2l[point] = machine_id
             item.a..(point)
-        item.sort()
+        item.s..()
         r.. item
 
     """

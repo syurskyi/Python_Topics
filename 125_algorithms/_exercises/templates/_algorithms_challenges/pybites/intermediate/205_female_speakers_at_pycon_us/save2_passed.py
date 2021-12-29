@@ -20,17 +20,17 @@ ___ get_pycon_speaker_first_names(soup_ N..
 
     speakers    # list
     ___ speaker __ soup.find_all('span', 'speaker'):
-        speaker = speaker.text.strip()
+        speaker = speaker.text.s..
 
         # Multiple speakers separated by comma
         __ re.match(r'.*,.*', speaker):
-            multiple_speakers = speaker.split(', ')
+            multiple_speakers = speaker.s..(', ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 
         # Multiple speakers seperated by slash
         ____ re.match(r'.*/.*', speaker):
-            multiple_speakers = speaker.split(' / ')
+            multiple_speakers = speaker.s..(' / ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 

@@ -62,7 +62,7 @@ class Solution2:
         left, right = 0, k + 1
         i = 0
 
-        while right < n:
+        w.... right < n:
             __ any((
                 x2day[i] < x2day[left],
                 x2day[i] <= x2day[right],

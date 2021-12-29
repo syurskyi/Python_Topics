@@ -25,11 +25,11 @@ class Solution(object):
         r.. res
     
     ___ isUniVal(self, root):
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             r.. True
         __ n.. root.right:
-            r.. root.val __ root.left.val and self.isUniVal(root.left)
+            r.. root.val __ root.left.val a.. self.isUniVal(root.left)
         __ n.. root.left:
-            r.. root.val __ root.right.val and self.isUniVal(root.right)
-        r.. root.left.val __ root.val and root.right.val __ root.val and\
-            self.isUniVal(root.left) and self.isUniVal(root.right)
+            r.. root.val __ root.right.val a.. self.isUniVal(root.right)
+        r.. root.left.val __ root.val a.. root.right.val __ root.val a..\
+            self.isUniVal(root.left) a.. self.isUniVal(root.right)

@@ -17,6 +17,6 @@ class Account:
         r.. self
 
     ___ __exit__(self, *_):
-        while self.balance < 0:
+        w.... self.balance < 0:
             self._transactions.pop()
         r.. self

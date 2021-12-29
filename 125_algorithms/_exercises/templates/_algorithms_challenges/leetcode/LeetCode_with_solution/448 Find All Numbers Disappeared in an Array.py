@@ -20,14 +20,14 @@ class Solution:
         :rtype: List[int]
         """
         ___ idx __ r..(l..(A)):
-            while True:
+            w... T...
                 target = A[idx] - 1
                 __ idx __ target o. A[idx] __ A[target]:
                     break 
                 A[idx], A[target] = A[target], A[idx]
 
         missing    # list
-        ___ idx, elm __ enumerate(A):
+        ___ idx, elm __ e..(A):
             __ idx != elm - 1:
                 missing.a..(idx + 1)
         r.. missing

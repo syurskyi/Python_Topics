@@ -27,8 +27,8 @@ ___ get_pycon_speaker_first_names(soup_ N..
     __ soup __ N..
         soup = _get_soup()
     speaker_tags = soup.find_all(class_='speaker')
-    speaker_list = [speaker.strip().split(' ') ___ speakers __ speaker_tags ___ speaker __
-                    speakers.string.replace('/', ',').split(',')]
+    speaker_list = [speaker.s...s..(' ') ___ speakers __ speaker_tags ___ speaker __
+                    speakers.string.r..('/', ',').s..(',')]
     r.. [first ___ first, *_ __ speaker_list]
 
 

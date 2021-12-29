@@ -9,7 +9,7 @@ http://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/python
 ___ decompose(n):
     goal = 0
     result = [n]
-    while result:
+    w.... result:
         current = result.pop()
         goal += current ** 2
         ___ i __ r..(current - 1, 0, -1):
@@ -17,6 +17,6 @@ ___ decompose(n):
                 goal -= i ** 2
                 result.a..(i)
                 __ goal __ 0:
-                    result.sort()
+                    result.s..()
                     r.. result
     r.. N..

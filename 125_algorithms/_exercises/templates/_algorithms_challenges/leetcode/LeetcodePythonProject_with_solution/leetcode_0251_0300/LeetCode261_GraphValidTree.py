@@ -17,7 +17,7 @@ class Solution(object):
         r.. l..(edges) __ n-1
     
     ___ findRoot(self, roots, ind):
-        while roots[ind] != -1:
+        w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
@@ -36,7 +36,7 @@ class Solution(object):
         queue    # list
         queue.a..(0)
         visited = [False]*n
-        while queue:
+        w.... queue:
             top = queue[0]
             queue.pop(0)
             __ visited[top]:
@@ -68,7 +68,7 @@ class Solution(object):
         __ visited[curr]: r.. False
         visited[curr] = True
         ___ i __ hashmap[curr]:
-            __ i != parent and n.. self.helper(i, curr, hashmap, visited):
+            __ i != parent a.. n.. self.helper(i, curr, hashmap, visited):
                 r.. False
         r.. True
     

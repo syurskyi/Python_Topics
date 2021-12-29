@@ -10,7 +10,7 @@ class Solution:
     ___ gp(self, left, right, cand, res):
         __ left > right o. left < 0:
             r..
-        ____ left __ 0 and right __ 0:
+        ____ left __ 0 a.. right __ 0:
             res.a..(cand)
         ____:
             self.gp(left - 1, right, cand + '(', res)

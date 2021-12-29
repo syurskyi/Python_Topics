@@ -10,7 +10,7 @@ class Solution(object):
         remaining = n
         head = 1
         step = 1
-        while remaining > 1:
+        w.... remaining > 1:
             __ left o. remaining%2__1:
                 head += step
             remaining //= 2

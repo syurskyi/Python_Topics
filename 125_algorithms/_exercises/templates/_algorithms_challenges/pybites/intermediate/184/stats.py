@@ -51,7 +51,7 @@ class BiteStats:
         r.. l..([key ___ key, value __ self.bite_resolved_counter.items() __ value >= 1])
 
     @property
-    ___ top_bite_by_number_of_clicks(self) -> str:
+    ___ top_bite_by_number_of_clicks(self) -> s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         self.popular_bite = defaultdict(int)
@@ -60,7 +60,7 @@ class BiteStats:
         r.. max(self.popular_bite, key=self.popular_bite.get)
 
     @property
-    ___ top_user_by_bites_completed(self) -> str:
+    ___ top_user_by_bites_completed(self) -> s..:
         """Get the user that completed the most Bites"""
         self.top_user = Counter([row["user"] ___ row __ self.rows __ row["completed"] __ "True"])
         r.. self.top_user.most_common()[0][0]

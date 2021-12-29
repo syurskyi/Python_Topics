@@ -2,7 +2,7 @@ _______ json
 _______ time
 _______ requests
 ____ dataclasses _______ dataclass
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ math _______ acos, cos, radians, sin
 _______ os
 ____ pathlib _______ Path
@@ -38,12 +38,12 @@ __ n.. pycons_file.exists() o. n.. nominatim_responses.exists():
 
 @dataclass
 class PyCon:
-    name: str
-    city: str
-    country: str
-    start_date: datetime
-    end_date: datetime
-    URL: str
+    name: s..
+    city: s..
+    country: s..
+    start_date: d__
+    end_date: d__
+    URL: s..
     lat: float = N..
     lon: float = N..
 
@@ -98,9 +98,9 @@ ___ _extract_city_country_to_lat_lon():
     ___ key,places __ places.items():
         ___ r __ places:
             __ r['type'] __ 'city':
-                city,*temp,country = r['display_name'].split(',')
-                city = city.strip()
-                country = country.strip()
+                city,*temp,country = r['display_name'].s..(',')
+                city = city.s..
+                country = country.s..
                 mapping[(city,country)] = (r['lat'],r['lon'])
     
     r.. mapping

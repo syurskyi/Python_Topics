@@ -82,7 +82,7 @@ class Solution:
 
         ret = 0
         q = [(0, root)]  # (index, node)
-        while q:
+        w.... q:
             cur_q    # list
             left, right = q[0][0], q[-1][0]
             ret = max(ret, right - left + 1)

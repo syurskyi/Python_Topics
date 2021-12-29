@@ -18,9 +18,9 @@ class Solution(object):
         heap    # list
         heapq.heappush(heap, (0, start[0], start[1]))
         visited = [[False]*n ___ _ __ r..(m)]
-        while heap:
+        w.... heap:
             currDist, i, j = heapq.heappop(heap)
-            __ i __ destination[0] and j __ destination[1]:
+            __ i __ destination[0] a.. j __ destination[1]:
                 r.. currDist
             visited[i][j] = True
             ___ x, y, dist __ self.getNextSteps(maze, i, j):
@@ -35,7 +35,7 @@ class Solution(object):
         ___ dir __ dirs:
             x, y = i, j
             dist = 0
-            while 0 <= x+dir[0] < m and 0 <= y+dir[1] < n and\
+            w.... 0 <= x+dir[0] < m a.. 0 <= y+dir[1] < n a..\
                 maze[x+dir[0]][y+dir[1]] != 1:
                 x += dir[0]
                 y += dir[1]

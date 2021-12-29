@@ -26,7 +26,7 @@ class Solution(object):
             ___ j __ r..(i+1, n):
                 x = points[j].x-points[i].x
                 y = points[j].y-points[i].y
-                __ x __ 0 and y __ 0:
+                __ x __ 0 a.. y __ 0:
                     dup += 1
                     continue
                 gcd = self.gcd(x, y)

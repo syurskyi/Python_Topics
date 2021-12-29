@@ -19,7 +19,7 @@ class Solution(object):
         r.. result[0]
     
     ___ helper(self, root, length, result):
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             result[0] = max(result[0], length)
             r..
         __ root.left:

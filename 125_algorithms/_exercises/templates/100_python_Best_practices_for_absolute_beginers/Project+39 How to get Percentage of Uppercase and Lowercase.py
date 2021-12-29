@@ -1,10 +1,10 @@
-str  input("Insert some strings of Uppercase and Lowercase: ")
+s..  input("Insert some strings of Uppercase and Lowercase: ")
 
-len_str  l..(str)
+len_str  l..(s..)
 
 upper  lower  0
 
-___ i __ str:
+___ i __ s..:
     __ 'a' < i < 'z':
         lower + 1
     ____ 'A' < i < 'Z':

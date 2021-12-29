@@ -1,5 +1,5 @@
 _______ pytz
-____ datetime _______ datetime
+____ d__ _______ d__
 
 MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
 TIMEZONES = set(pytz.all_timezones)

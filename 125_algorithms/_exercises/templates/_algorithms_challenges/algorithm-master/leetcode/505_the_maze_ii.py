@@ -37,7 +37,7 @@ class Solution:
                 _y = y + dy
                 _step = 0
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
+                w.... 0 <= _x < m a.. 0 <= _y < n a.. maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
                     _step += 1
@@ -45,13 +45,13 @@ class Solution:
                 _x -= dx
                 _y -= dy
 
-                __ ((_x, _y) __ distance and
+                __ ((_x, _y) __ distance a..
                     distance[x, y] + _step >= distance[_x, _y]):
                     continue
 
                 distance[_x, _y] = distance[x, y] + _step
 
-                __ _x __ tx and _y __ ty:
+                __ _x __ tx a.. _y __ ty:
                     r.. distance[_x, _y]
 
                 queue.a..((_x, _y))
@@ -97,14 +97,14 @@ class Solution2:
         heap = [(sx, sy)]
         distance = {(sx, sy): 0}
 
-        while heap:
+        w.... heap:
             x, y = heapq.heappop(heap)
 
             ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
+                w.... 0 <= _x < m a.. 0 <= _y < n a.. maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
 
@@ -113,10 +113,10 @@ class Solution2:
 
                 _step = distance[x, y] + abs(_x - x) + abs(_y - y)
 
-                __ (_x, _y) __ distance and _step >= distance[_x, _y]:
+                __ (_x, _y) __ distance a.. _step >= distance[_x, _y]:
                     continue
 
-                __ _x __ tx and _y __ ty:
+                __ _x __ tx a.. _y __ ty:
                     r.. _step
 
                 distance[_x, _y] = _step

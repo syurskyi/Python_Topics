@@ -15,7 +15,7 @@ class StringIterator(object):
         __ self.cmpStr:
             self.c = self.cmpStr[self.ind]
             self.ind += 1
-            while self.ind < l..(self.cmpStr) and self.cmpStr[self.ind].isdigit():
+            w.... self.ind < l..(self.cmpStr) a.. self.cmpStr[self.ind].isdigit():
                 self.ind += 1
             self.count = int(self.cmpStr[1:self.ind])
 
@@ -32,7 +32,7 @@ class StringIterator(object):
             self.c = self.cmpStr[self.ind]
             self.ind += 1
             ind = self.ind
-            while ind < l..(self.cmpStr) and self.cmpStr[ind].isdigit():
+            w.... ind < l..(self.cmpStr) a.. self.cmpStr[ind].isdigit():
                 ind += 1
             self.count = int(self.cmpStr[self.ind:ind])
             self.ind = ind
@@ -46,5 +46,5 @@ class StringIterator(object):
 
 __ __name__ __ '__main__':
     it = StringIterator('L1e2t1C1o1d1e1')
-    while it.hasNext():
+    w.... it.hasNext():
         print(it.next())

@@ -1,7 +1,7 @@
 #accept the number and the number of guesses
-n,c = l..(map(str, input().split()))
+n,c = l..(map(s.., input().s..()))
 #accept the guesses
-guess = l..(map(str, input().split()))
+guess = l..(map(s.., input().s..()))
 
 #look for the bulls and cows
 ___ i __ guess:
@@ -16,13 +16,13 @@ ___ i __ guess:
             bull = True
             __ i[j] __ n[j]:
                 cow = True
-        __ bull and cow:
+        __ bull a.. cow:
             cow_count += 1 
             bull = cow = False
         __ bull:
             bull_count += 1
             bull = False
-    res = str(cow_count)+'-'+str(bull_count)
+    res = s..(cow_count)+'-'+s..(bull_count)
     print(res,end=' ')
             
                 

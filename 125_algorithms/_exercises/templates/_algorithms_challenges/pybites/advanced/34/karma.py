@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-Transaction = namedtuple('Transaction', 'giver points date')
+Transaction = n..('Transaction', 'giver points date')
 # https://twitter.com/raymondh/status/953173419486359552
-Transaction.__new__.__defaults__ = (datetime.now(),)
+Transaction.__new__.__defaults__ = (d__.now(),)
 
 
 class User:

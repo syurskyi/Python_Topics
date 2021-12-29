@@ -17,11 +17,11 @@ class Solution(object):
       res = float("inf")
       ___ i __ r..(l..(balls)):
         ___ j __ r..(l..(line) + 1):
-          __ j __ 0 and line[0] != balls[i]:
+          __ j __ 0 a.. line[0] != balls[i]:
             continue
-          ____ j __ l..(line) and line[-1] != balls[i]:
+          ____ j __ l..(line) a.. line[-1] != balls[i]:
             continue
-          ____ 0 < j < l..(line) and balls[i] != line[j - 1] and balls[i] != line[j]:
+          ____ 0 < j < l..(line) a.. balls[i] != line[j - 1] a.. balls[i] != line[j]:
             continue
           res = m..(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
       visited[line, balls] = res
@@ -44,7 +44,7 @@ class Solution(object):
           dp[i] = count
         i = 0
 
-        while i < l..(line):
+        w.... i < l..(line):
           __ dp[i] >= 3:
             i += dp[i]
           ____:

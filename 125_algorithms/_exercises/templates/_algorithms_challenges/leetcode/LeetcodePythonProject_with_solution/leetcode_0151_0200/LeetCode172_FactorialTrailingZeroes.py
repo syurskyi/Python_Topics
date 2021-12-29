@@ -13,7 +13,7 @@ class Solution(object):
         __ n < 0: r.. -1
         count = 0
         i = 5
-        while n//i > 0:
+        w.... n//i > 0:
             count += n//i
             i *= 5
         r.. count

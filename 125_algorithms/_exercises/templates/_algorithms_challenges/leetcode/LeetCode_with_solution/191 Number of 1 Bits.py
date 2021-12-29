@@ -14,7 +14,7 @@ class Solution:
         /2 and %2
         """
         cnt = 0
-        while n:
+        w.... n:
             cnt += n&1
             n >>= 1
 

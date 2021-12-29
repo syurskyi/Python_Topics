@@ -11,7 +11,7 @@ ___ minimum_number(digits: List[int]) -> int:
     unique = s..(unique)
 
 
-    r.. int(''.join(map(str,unique)))
+    r.. int(''.join(map(s..,unique)))
 
 
 

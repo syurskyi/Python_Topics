@@ -6,7 +6,7 @@ ____ typing _______ List
 IS_EMOJI = re.compile(r'[^\w\s,]')
 
 
-___ get_emoji_indices(text: str) -> List[int]:
+___ get_emoji_indices(text: s..) -> List[int]:
     """Given a text return indices of emoji characters"""
     r.. [i ___ i __ r..(l..(text)) __ IS_EMOJI.match(text,i)]
     #for i in range(len(text)):

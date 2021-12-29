@@ -1,13 +1,13 @@
-____ collections _______ namedtuple
-____ datetime _______ date
-_______ datetime
+____ collections _______ n..
+____ d__ _______ date
+_______ d__
 ____ time _______ mktime
 
 _______ feedparser
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
-Entry = namedtuple('Entry', 'date title link tags')
+Entry = n..('Entry', 'date title link tags')
 
 
 ___ _convert_struct_time_to_dt(stime):
@@ -17,7 +17,7 @@ ___ _convert_struct_time_to_dt(stime):
     -> date(2016, 12, 28)
     """
 
-    dt = datetime.datetime.fromtimestamp(mktime(stime))
+    dt = d__.d__.fromtimestamp(mktime(stime))
 
     r.. dt.date()
 
@@ -65,12 +65,12 @@ ___ filter_entries_by_tag(search, entry):
         
     entry_tags = entry.tags
     __ '&' __ search:
-        splits = search.split('&')
+        splits = search.s..('&')
 
-        r.. a..(split.lower() __ entry_tags ___ split __ splits)
+        r.. a..(s...lower() __ entry_tags ___ s.. __ splits)
     ____ '|' __ search:
-        splits = search.split('|')
-        r.. any(split.lower() __ entry_tags ___ split __ splits)
+        splits = search.s..('|')
+        r.. any(s...lower() __ entry_tags ___ s.. __ splits)
     ____:
         r.. search.lower() __ entry_tags
 
@@ -88,8 +88,8 @@ ___ main():
     """
     entries = get_feed_entries()
     
-    entries.sort(key=l.... x: x.date)
-    while True:
+    entries.s..(key=l.... x: x.date)
+    w... T...
         term = input("Search Term? ")
         __ term __ '':
             print('Please provide a search term')

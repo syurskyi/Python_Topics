@@ -1,4 +1,4 @@
-____ itertools _______ cycle
+____ i.. _______ cycle
 WHITE, BLACK = ' ', '#'
 
 

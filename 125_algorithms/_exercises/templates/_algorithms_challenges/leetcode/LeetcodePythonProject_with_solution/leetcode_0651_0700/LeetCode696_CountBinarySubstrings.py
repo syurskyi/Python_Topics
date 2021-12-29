@@ -13,13 +13,13 @@ class Solution(object):
         res = 0
         i = 0
         ind = i
-        while i+1 < l..(s) and s[i+1] __ s[ind]:
+        w.... i+1 < l..(s) a.. s[i+1] __ s[ind]:
             i += 1
         prev = i+1-ind
         i += 1
-        while i < l..(s):
+        w.... i < l..(s):
             ind = i
-            while i+1 < l..(s) and s[i+1] __ s[ind]:
+            w.... i+1 < l..(s) a.. s[i+1] __ s[ind]:
                 i += 1
             curr = i+1-ind
             res += m..(curr, prev)

@@ -1,6 +1,6 @@
 _______ pytest
 
-____ split _______ split_words_and_quoted_text
+____ s.. _______ split_words_and_quoted_text
 
 some_strings = (
     'Should give "3 words only"',
@@ -19,7 +19,7 @@ expected_returns = (
 
 
 @pytest.mark.parametrize("arg, ret",
-                         zip(some_strings, expected_returns))
+                         z..(some_strings, expected_returns))
 
 ___ test_split_words_and_quoted_text(arg, ret):
     ... split_words_and_quoted_text(arg) __ ret

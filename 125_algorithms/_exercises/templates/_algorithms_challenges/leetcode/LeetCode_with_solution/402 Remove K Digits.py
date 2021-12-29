@@ -35,7 +35,7 @@ class Solution(object):
         """
         stk    # list  # result after removal
         ___ char __ num:
-            while k and stk and stk[-1] > char:
+            w.... k a.. stk a.. stk[-1] > char:
                 stk.pop()
                 k -= 1
 

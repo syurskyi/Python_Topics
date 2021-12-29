@@ -4,7 +4,7 @@ ___ calculate_scores(txt):
     index = 0
     output    # list
     check = ["A","B","C"]
-    while index < l..(check):
+    w.... index < l..(check):
         a = txt.c.. check[index])
         output.a..(a)
         index = index + 1

@@ -47,7 +47,7 @@ class Solution:
         s.. = s.. - root.val
         cur_path.a..(root.val)
         # terminal condition
-        __ s..__0 and root.left __ N.. and root.right __ N..
+        __ s..__0 a.. root.left __ N.. a.. root.right __ N..
             result.a..(l..(cur_path))  # new copy
             r..
 

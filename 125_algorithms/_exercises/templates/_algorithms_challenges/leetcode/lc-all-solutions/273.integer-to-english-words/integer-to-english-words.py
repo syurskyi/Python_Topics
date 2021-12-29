@@ -35,7 +35,7 @@ class Solution(object):
       r.. " ".join(ans)
 
     divider = 1000000000
-    while num > 0:
+    w.... num > 0:
       res = num / divider
       __ res != 0:
         ans.a..(getNum(res) + units[divider])

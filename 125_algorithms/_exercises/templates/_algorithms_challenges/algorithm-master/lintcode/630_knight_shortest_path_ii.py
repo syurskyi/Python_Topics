@@ -25,13 +25,13 @@ class Solution:
             ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
-                __ 0 <= _x < m and 0 <= _y < n and G[_x][_y] __ 0:
+                __ 0 <= _x < m a.. 0 <= _y < n a.. G[_x][_y] __ 0:
                     __ (_x, _y) __ turns:
                         continue
 
                     turns[_x, _y] = turns[x, y] + 1
 
-                    __ _x __ m - 1 and _y __ n - 1:
+                    __ _x __ m - 1 a.. _y __ n - 1:
                         r.. turns[_x, _y]
 
                     queue.a..((_x, _y))
@@ -70,19 +70,19 @@ class Solution:
                 __ G[x][y] __ 1:
                     continue
 
-                __ (x >= 2 and y >= 1 and dp[x - 2][pre1] < INFINITY and
+                __ (x >= 2 a.. y >= 1 a.. dp[x - 2][pre1] < INFINITY a..
                     dp[x - 2][pre1] + 1 < dp[x][curr]):
                     dp[x][curr] = dp[x - 2][pre1] + 1
 
-                __ (x >= 1 and y >= 2 and dp[x - 1][pre2] < INFINITY and
+                __ (x >= 1 a.. y >= 2 a.. dp[x - 1][pre2] < INFINITY a..
                     dp[x - 1][pre2] + 1 < dp[x][curr]):
                     dp[x][curr] = dp[x - 1][pre2] + 1
 
-                __ (x + 1 < m and y >= 2 and dp[x + 1][pre2] < INFINITY and
+                __ (x + 1 < m a.. y >= 2 a.. dp[x + 1][pre2] < INFINITY a..
                     dp[x + 1][pre2] + 1 < dp[x][curr]):
                     dp[x][curr] = dp[x + 1][pre2] + 1
 
-                __ (x + 2 < m and y >= 1 and dp[x + 2][pre1] < INFINITY and
+                __ (x + 2 < m a.. y >= 1 a.. dp[x + 2][pre1] < INFINITY a..
                     dp[x + 2][pre1] + 1 < dp[x][curr]):
                     dp[x][curr] = dp[x + 2][pre1] + 1
 

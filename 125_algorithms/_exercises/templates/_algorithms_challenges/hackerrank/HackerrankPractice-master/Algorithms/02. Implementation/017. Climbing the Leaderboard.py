@@ -7,7 +7,7 @@ ___ climbingLeaderboard(leaderboard, aliceScores):
     i = l..(leaderboard) - 1
     ___ score __ aliceScores:
         flag = True
-        while flag:
+        w.... flag:
             __ i __ -1:
                 print(1)
                 flag = False
@@ -33,7 +33,7 @@ ___ createRankings(leaderboard):
 
 
 lenOfLeaderboard = int(input())
-leaderboard = l..(map(int, input().rstrip().split()))
+leaderboard = l..(map(int, input().rstrip().s..()))
 lenOfAliceScores = int(input())
-aliceScores = l..(map(int, input().rstrip().split()))
+aliceScores = l..(map(int, input().rstrip().s..()))
 climbingLeaderboard(leaderboard, aliceScores)

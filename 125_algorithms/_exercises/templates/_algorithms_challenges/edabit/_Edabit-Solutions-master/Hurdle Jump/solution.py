@@ -1,7 +1,7 @@
 ___ hurdle_jump(hurdles, jump_height):
     __ hurdles __ []:
         r.. True
-    hurdles.sort()
+    hurdles.s..()
     __ hurdles[-1] <= jump_height:
         r.. True
     ____:

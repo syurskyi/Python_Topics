@@ -11,14 +11,14 @@ class Solution(object):
         :rtype: bool
         """
         absent = False
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ 'A':
                 __ n.. absent:
                     absent = True
                 ____:
                     r.. False
             ____ c __ 'L':
-                __ i > 1 and s[i-1] __ 'L' and s[i-2] __ 'L':
+                __ i > 1 a.. s[i-1] __ 'L' a.. s[i-2] __ 'L':
                     r.. False
         r.. True
     

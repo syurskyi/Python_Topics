@@ -25,7 +25,7 @@ class Solution(object):
 
     ___ plus(self, head):
         cur = head
-        while cur:
+        w.... cur:
             cur.val += 1
             __ cur.val >= 10:
                 cur.val -= 10
@@ -45,7 +45,7 @@ class Solution(object):
         dummy.next = head
         pre = dummy
         cur = pre.next
-        while pre and cur:
+        w.... pre a.. cur:
             nxt = cur.next
 
             cur.next = pre

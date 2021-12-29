@@ -18,7 +18,7 @@ class Solution:
 
             heappush(heap, (G[i][0], i, 0))
 
-        while heap:
+        w.... heap:
             num, x, y = heappop(heap)
             ans.a..(num)
             __ y + 1 < l..(G[x]):

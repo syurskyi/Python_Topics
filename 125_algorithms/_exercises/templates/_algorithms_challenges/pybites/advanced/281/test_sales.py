@@ -26,8 +26,8 @@ ___ test_data(df):
 )
 ___ test_summary_report(df, capfd, line, expected):
     summary_report(df)
-    output = capfd.readouterr()[0].split("\n")
-    ... output[line].strip() __ expected
+    output = capfd.readouterr()[0].s..("\n")
+    ... output[line].s.. __ expected
 
 
 @pytest.mark.parametrize(
@@ -35,8 +35,8 @@ ___ test_summary_report(df, capfd, line, expected):
 )
 ___ test_summary_report_custom(df, capfd, lst, expected):
     summary_report(df, lst)
-    output = capfd.readouterr()[0].split("\n")
-    ... output[0].strip() __ expected
+    output = capfd.readouterr()[0].s..("\n")
+    ... output[0].s.. __ expected
 
 
 @pytest.mark.parametrize(
@@ -50,7 +50,7 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
 )
 ___ test_yearly_report(df, capfd, year, expected):
     yearly_report(df, year)
-    output = capfd.readouterr()[0].split("\n")
+    output = capfd.readouterr()[0].s..("\n")
     ... output[9] __ expected
 
 
@@ -59,4 +59,4 @@ ___ test_yearly_report_with_invalid_year(df, year):
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
     with pytest.raises(ValueError) as e:
         yearly_report(df, year)
-    ... str(e) __ msg
+    ... s..(e) __ msg

@@ -1,5 +1,5 @@
-____ datetime _______ datetime
-_______ datetime as dt
+____ d__ _______ d__
+_______ d__ as dt
 
 
 ___ ontrack_reading(books_goal: int, books_read: int,

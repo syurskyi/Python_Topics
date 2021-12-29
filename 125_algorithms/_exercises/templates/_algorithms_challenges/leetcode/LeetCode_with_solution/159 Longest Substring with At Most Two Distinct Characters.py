@@ -19,7 +19,7 @@ class Solution(object):
         maxa = 0
         ___ j __ xrange(l..(s)):
             m[s[j]] += 1
-            while l..(m) > 2:
+            w.... l..(m) > 2:
                 m[s[i]] -= 1
                 __ m[s[i]] __ 0:
                     del m[s[i]]

@@ -27,7 +27,7 @@ def test_promo_not_expired():
     assert not newsletter_promo.expired
 '''
 
-____ datetime _______ datetime
+____ d__ _______ d__
 
 class Promo:
     ___ __init__(self, name, expires):
@@ -36,7 +36,7 @@ class Promo:
 
     @property
     ___ expired(self):
-        r.. datetime.now() > self.expires
+        r.. d__.now() > self.expires
 
 
 

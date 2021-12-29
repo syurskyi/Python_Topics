@@ -14,9 +14,9 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) -> defaultdict:
     countries = defaultdict(l..)
     ___ x __ data.splitlines()[1:]:
-        l, f, c = x.split(',')
+        l, f, c = x.s..(',')
         countries[c].a..(f'{f} {l}')
     r.. countries

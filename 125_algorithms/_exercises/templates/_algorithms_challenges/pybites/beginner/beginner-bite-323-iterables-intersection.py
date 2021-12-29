@@ -39,7 +39,7 @@ ___ intersection(*args: Iterable) -> Set[Any]:
     # - only empty inputs
     l    # list
     ___ input __ args:
-        __ input __ n.. N.. and l..(input) > 0:
+        __ input __ n.. N.. a.. l..(input) > 0:
             l.a..(set(input))
     # I need to handle an exception in case dealing with empty inputs
     # Then I use intersection method which takes an arbitrary number of sets

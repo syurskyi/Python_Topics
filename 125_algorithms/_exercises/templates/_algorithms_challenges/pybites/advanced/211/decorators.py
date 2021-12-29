@@ -22,7 +22,7 @@ ___ retry(func):
     @wraps(func)
     ___ wrapper(*args, **kwargs):
         retries = 0
-        while retries < MAX_RETRIES:
+        w.... retries < MAX_RETRIES:
             try:
                 vals = func(*args, **kwargs)
                 break

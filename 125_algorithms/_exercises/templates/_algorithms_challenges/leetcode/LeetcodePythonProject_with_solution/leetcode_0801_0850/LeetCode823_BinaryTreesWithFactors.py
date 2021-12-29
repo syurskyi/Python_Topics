@@ -12,12 +12,12 @@ class Solution(object):
         arr = A
         MOD = 10**9+7
         res = 0
-        arr.sort()
+        arr.s..()
         hashmap = {}
         ___ i __ r..(l..(arr)):
             hashmap[arr[i]] = 1
             ___ j __ r..(i):
-                __ arr[j] __ hashmap and arr[i]%arr[j]__0 and\
+                __ arr[j] __ hashmap a.. arr[i]%arr[j]__0 a..\
                     arr[i]/arr[j] __ hashmap:
                     hashmap[arr[i]] += hashmap[arr[j]]*hashmap[(arr[i]/arr[j])]
             res = (res+hashmap[arr[i]])%MOD

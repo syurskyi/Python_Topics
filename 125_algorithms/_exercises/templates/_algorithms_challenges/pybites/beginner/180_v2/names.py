@@ -1,5 +1,5 @@
 ____ collections _______ defaultdict
-_______ itertools
+_______ i..
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -15,13 +15,13 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) -> defaultdict:
     
     result = defaultdict(l..)
     lines = data.splitlines()
     
     ___ i __ r..(1,l..(lines)):
-        last_name,first_name,country = lines[i].split(',')
+        last_name,first_name,country = lines[i].s..(',')
         result[country].a..(first_name + ' ' + last_name)
 
 

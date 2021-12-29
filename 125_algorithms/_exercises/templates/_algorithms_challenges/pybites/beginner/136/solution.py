@@ -68,7 +68,7 @@ ___ _check_convert_input(inpval):
             r.. Bloodtype(inpval)
         ____:
             raise ValueError
-    __ isi..(inpval, str):
+    __ isi..(inpval, s..):
         __ inpval __ blood_type_text.keys():
             r.. blood_type_text[inpval]
         ____:

@@ -17,7 +17,7 @@ class Solution:
             left = right = 0
             kind = valid = 0
 
-            while right < n:
+            w.... right < n:
                 __ kind <= m:
                     F[s[right]] += 1
                     __ F[s[right]] __ 1:
@@ -35,7 +35,7 @@ class Solution:
 
                     left += 1
 
-                __ kind __ valid __ m and right - left > ans:
+                __ kind __ valid __ m a.. right - left > ans:
                     ans = right - left
 
         r.. ans

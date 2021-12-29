@@ -16,7 +16,7 @@ class WordDictionary(object):
     
     ___ addWord(self, word):
         children = self.root.children
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             __ c __ children:
                 t = children[c]
             ____:
@@ -31,12 +31,12 @@ class WordDictionary(object):
             r.. bool(n.. children)
         c = word[startInd]
         __ c __ children:
-            __ startInd __ l..(word)-1 and children[c].isLeaf:
+            __ startInd __ l..(word)-1 a.. children[c].isLeaf:
                 r.. True
             r.. self.searchDFS(children[c].children, word, startInd+1)
         ____ c __ '.':
             ___ key, node __ children.iteritems():
-                __ startInd __ l..(word)-1 and node.isLeaf:
+                __ startInd __ l..(word)-1 a.. node.isLeaf:
                     r.. True
                 __ self.searchDFS(children[key].children, word, startInd+1):
                     r.. True

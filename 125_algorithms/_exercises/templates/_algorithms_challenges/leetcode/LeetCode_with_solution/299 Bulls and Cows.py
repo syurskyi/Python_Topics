@@ -22,7 +22,7 @@ class Solution(object):
         ___ c __ secret:
             cnt[c] += 1
 
-        ___ i, v __ enumerate(guess):
+        ___ i, v __ e..(guess):
             __ v __ secret[i]:
                 A += 1
                 __ cnt[v] > 0:

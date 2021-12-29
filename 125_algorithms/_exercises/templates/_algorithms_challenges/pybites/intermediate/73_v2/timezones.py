@@ -8,7 +8,7 @@ TIMEZONES = set(pytz.all_timezones)
 ___ within_schedule(utc, *timezones):
     """Receive a utc datetime and one or more timezones and check if
        they are all within schedule (MEETING_HOURS)"""
-    utc = utc.replace(tzinfo=tz.UTC)
+    utc = utc.r..(tzinfo=tz.UTC)
 
     ___ timezone __ timezones:
         timezone = tz.gettz(timezone)

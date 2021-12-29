@@ -1,4 +1,4 @@
-____ dataclasses _______ astuple, replace
+____ dataclasses _______ astuple, r..
 
 _______ pytest
 
@@ -15,7 +15,7 @@ ___ bites():
 
 
 ___ test_type_annotations():
-    ... Bite.__annotations__ __ {'number': int, 'title': str, 'level': str}
+    ... Bite.__annotations__ __ {'number': int, 'title': s.., 'level': s..}
 
 
 ___ test_getting_str_for_free(bites):
@@ -38,7 +38,7 @@ ___ test_my_data_class_is_mutable(bites):
     b3 = bites[-1]
     ... b3.level __ 'Advanced'
     # named tuples are immutable so would not allow this:
-    b3 = replace(b3, level='super hard')
+    b3 = r..(b3, level='super hard')
     ... b3.level __ 'super hard'
 
 

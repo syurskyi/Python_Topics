@@ -63,7 +63,7 @@ class Solution:
 
     ___ find_median(self, nums):
         n = l..(nums)
-        nums.sort()
+        nums.s..()
         r.. nums[n//2]
 
     ___ minMoves2_error(self, nums):

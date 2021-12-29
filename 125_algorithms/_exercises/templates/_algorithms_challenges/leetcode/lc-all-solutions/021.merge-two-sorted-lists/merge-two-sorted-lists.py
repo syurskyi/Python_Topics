@@ -12,7 +12,7 @@ class Solution(object):
     :rtype: ListNode
     """
     head = dummy = ListNode(-1)
-    while l1 and l2:
+    w.... l1 a.. l2:
       __ l1.val < l2.val:
         head.next = l1
         l1 = l1.next

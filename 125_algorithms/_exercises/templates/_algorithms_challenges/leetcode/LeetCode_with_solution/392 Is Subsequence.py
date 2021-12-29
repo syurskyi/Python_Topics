@@ -30,7 +30,7 @@ class Solution(object):
         """
         i = 0
         j = 0
-        while i < l..(s) and j < l..(t):
+        w.... i < l..(s) a.. j < l..(t):
             __ t[j] != s[i]:
                 j += 1
             ____:

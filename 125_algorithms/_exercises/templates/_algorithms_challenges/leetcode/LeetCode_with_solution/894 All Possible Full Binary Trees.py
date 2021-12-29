@@ -45,7 +45,7 @@ class Solution:
                     lefts = self.allPossibleFBT(i)
                     rights = self.allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
-                    __ lefts and rights:
+                    __ lefts a.. rights:
                         ___ left __ lefts:
                             ___ right __ rights:
                                 node = TreeNode(0)

@@ -12,11 +12,11 @@ class Solution(object):
         n = N
         res = 1
         i = 3
-        while n%2 __ 0:
+        w.... n%2 __ 0:
             n /= 2
-        while i*i <= n:
+        w.... i*i <= n:
             count = 0
-            while n%i __ 0:
+            w.... n%i __ 0:
                 n //= i
                 count += 1
             res *= count+1

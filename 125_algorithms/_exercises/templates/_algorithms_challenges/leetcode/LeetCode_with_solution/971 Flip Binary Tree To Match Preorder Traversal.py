@@ -71,7 +71,7 @@ class Solution:
             r..
 
         self.i += 1
-        __ node.left and node.right and node.left.val != voyage[self.i]:
+        __ node.left a.. node.right a.. node.left.val != voyage[self.i]:
             # flip left and right
             self.ret.a..(node.val)
             self.dfs(node.right, voyage)

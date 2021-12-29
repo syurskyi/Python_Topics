@@ -4,8 +4,8 @@ class Solution:
     @return: A string
     """
     ___ reverseWords(self, s):
-        s = s.strip()
+        s = s.s..
         __ n.. s:
             r.. ''
 
-        r.. ' '.join(reversed(s.split()))
+        r.. ' '.join(reversed(s.s..()))

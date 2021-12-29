@@ -35,7 +35,7 @@ class Solution(object):
         # Step-wise Linear Search from upper right
         y = 0
         x = m - 1
-        while x >= 0 and y <= n - 1:
+        w.... x >= 0 a.. y <= n - 1:
             __ target __ matrix[y][x]:
                 r.. True
             ____ target < matrix[y][x]:

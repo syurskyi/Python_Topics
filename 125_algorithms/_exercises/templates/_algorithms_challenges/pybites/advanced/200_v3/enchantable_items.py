@@ -20,14 +20,14 @@ class Enchantment:
     Implements the following: 
         id_name, name, max_level, description, items
     """
-    id_name: str
-    name: str
+    id_name: s..
+    name: s..
     max_level: int
-    description: str
-    items: List[str] = field(default_factory=l..)
+    description: s..
+    items: List[s..] = field(default_factory=l..)
 
     ___ __post_init__(self):
-        self.name = self.name.replace('_', ' ')
+        self.name = self.name.r..('_', ' ')
 
     ___ __repr__(self):
         r.. f'{self.name} ({self.max_level}): {self.description}'
@@ -40,8 +40,8 @@ class Item:
     Implements the following: 
         name, enchantments
     """
-    name: str
-    enchantments: List[str] = field(default_factory=l..)
+    name: s..
+    enchantments: List[s..] = field(default_factory=l..)
 
     # def __post_init__(self):
     #     self.name = self.name.replace('_',' ').title()
@@ -49,7 +49,7 @@ class Item:
     ___ __repr__(self):
         en = [f'  [{chant.max_level}] {chant.id_name}'
               ___ chant __ s..(self.enchantments, key=l.... x : x.id_name)]
-        r.. f'{self.name.replace("_"," ").t..}: \n' + '\n'.join(en)
+        r.. f'{self.name.r..("_"," ").t..}: \n' + '\n'.join(en)
 
 
 # Lookup values of the first five roman numerals
@@ -73,12 +73,12 @@ ___ generate_enchantments(soup):
         enchant, maxlevel, descr, id, item, version = data_items
         id_name = enchant.em.text
         name = enchant.a.text
-        max_level = LEVEL_TRANSLATE[maxlevel.text.strip()]
+        max_level = LEVEL_TRANSLATE[maxlevel.text.s..]
         description = descr.text
         item_url = item.img.attrs.get('data-src')
         items = re.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
-        items = items.replace('fishing_rod', 'FISHING=ROD')
-        items = l..(map(l.... s: s.replace('FISHING=ROD', 'fishing_rod'), items.split('_')))
+        items = items.r..('fishing_rod', 'FISHING=ROD')
+        items = l..(map(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
 
         res[id_name] = Enchantment(id_name,
                                    name,

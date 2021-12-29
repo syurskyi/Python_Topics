@@ -13,4 +13,4 @@ ___ i __ r..(n):
     zman -=  h*3600
     m = zman // 60
     s = zman - 60*m
-    print('({} {} {} {})'.format(d, h, m, s), end = ' ')
+    print('({} {} {} {})'.f..(d, h, m, s), end = ' ')

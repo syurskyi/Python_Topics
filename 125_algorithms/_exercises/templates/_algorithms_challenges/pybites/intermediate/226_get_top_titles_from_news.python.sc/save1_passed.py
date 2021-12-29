@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 ____ bs4 _______ BeautifulSoup
 _______ requests
 _______ re
@@ -8,7 +8,7 @@ _______ re
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index.html
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index2.html
 
-Entry = namedtuple('Entry', 'title points comments')
+Entry = n..('Entry', 'title points comments')
 
 
 ___ _create_soup_obj(url):
@@ -25,12 +25,12 @@ ___ get_top_titles(url, top=5):
     """
     soup = _create_soup_obj(url)
     titles = soup.findAll('span', {'class': 'title'})
-    title_list = [entry.get_text().strip() ___ entry __ titles]
+    title_list = [entry.get_text().s.. ___ entry __ titles]
     point_list    # list
     comment_list    # list
 
     ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}):
-        entry = entry.get_text().strip()
+        entry = entry.get_text().s..
         points = re.search(r'(\d*) points', entry)
         comments = re.search(r'(\d*) comments', entry)
         __ points:
@@ -39,7 +39,7 @@ ___ get_top_titles(url, top=5):
             comment_list.a..(int(comments.group(1)))
 
     output    # list
-    ___ entry __ zip(title_list, point_list, comment_list):
+    ___ entry __ z..(title_list, point_list, comment_list):
         output.a..(Entry(title=entry[0], points=entry[1], comments=entry[2]))
 
     r.. s..(output, key=l.... x: (x.points, x.comments), r.._T..[:top]

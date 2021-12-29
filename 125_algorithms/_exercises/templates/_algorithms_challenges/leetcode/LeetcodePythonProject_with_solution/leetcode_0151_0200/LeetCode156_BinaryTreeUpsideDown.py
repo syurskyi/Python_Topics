@@ -20,12 +20,12 @@ class Solution(object):
         __ n.. root: r.. root
         stack    # list
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
         root = stack.pop()
         node = root
-        while stack:
+        w.... stack:
             newNode = stack.pop()
             right = newNode.right
             node.left = right

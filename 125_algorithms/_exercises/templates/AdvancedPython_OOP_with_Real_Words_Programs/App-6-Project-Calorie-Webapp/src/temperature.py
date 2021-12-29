@@ -19,8 +19,8 @@ c_ Temperature:
     yml_path  'temperature.yaml'
 
     ___  -    country, city):
-        country  country.replace(" ", "-")
-        city  city.replace(" ", "-")
+        country  country.r..(" ", "-")
+        city  city.r..(" ", "-")
 
     ___ _build_url _
         """Builds the url string adding country and city"""
@@ -41,7 +41,7 @@ c_ Temperature:
         """Cleans the output of _scrape"""
 
         scraped_content  _scrape()
-        r_ f__(scraped_content['temp'].replace("°C", "").strip())
+        r_ f__(scraped_content['temp'].r..("°C", "").strip())
 
 __ __name__ __ "__main__":
     temperature  Temperature(country"usa", city"san francisco")

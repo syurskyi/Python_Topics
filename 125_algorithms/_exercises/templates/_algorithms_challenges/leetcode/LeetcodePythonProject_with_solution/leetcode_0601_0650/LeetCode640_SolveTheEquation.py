@@ -9,7 +9,7 @@ class Solution(object):
         :type equation: str
         :rtype: str
         """
-        arr = equation.split('=')
+        arr = equation.s..('=')
         s1 = arr[0]
         s2 = arr[1]
         valX1, val1 = self.solveHelper(s1)
@@ -31,16 +31,16 @@ class Solution(object):
     ___ solveHelper(self, s):
         valX1, val1 = 0, 0
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i].isdigit():
                 sig = 1
-                __ i>=1 and s[i-1] __ '-':
+                __ i>=1 a.. s[i-1] __ '-':
                     sig = -1
                 num = 0
-                while i < l..(s) and s[i].isdigit():
+                w.... i < l..(s) a.. s[i].isdigit():
                     num = 10*num+int(s[i])
                     i += 1
-                __ i < l..(s) and s[i] __ 'x':
+                __ i < l..(s) a.. s[i] __ 'x':
                     valX1 += num*sig
                     i += 1
                 ____:

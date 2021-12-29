@@ -2,7 +2,7 @@ _______ os
 _______ random
 
 random.seed(30)
-images  [f"{str(i).zfill(3)}_image.{random.choice(['png', 'jpg'])}" ___ i __ r..(1, 20)]
+images  [f"{s..(i).zfill(3)}_image.{random.choice(['png', 'jpg'])}" ___ i __ r..(1, 20)]
 
 base_dir  'images'
 png_dir  os.path.join(base_dir, 'images_png')

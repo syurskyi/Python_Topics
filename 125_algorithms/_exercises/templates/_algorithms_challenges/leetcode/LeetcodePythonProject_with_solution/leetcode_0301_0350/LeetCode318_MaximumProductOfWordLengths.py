@@ -8,11 +8,11 @@ class Solution(object):
     ___ maxProduct(self, words):
         __ n.. words: r.. 0
         arr = [0]*l..(words)
-        ___ i, word __ enumerate(words):
-            ___ _, c __ enumerate(word):
+        ___ i, word __ e..(words):
+            ___ _, c __ e..(word):
                 arr[i] = arr[i] | (1 << (ord(c) - ord('a')))
         result = 0
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             ___ j __ r..(i+1, l..(words)):
                 __ arr[i] & arr[j] __ 0:
                     result = max(result, l..(words[i])*l..(words[j]))

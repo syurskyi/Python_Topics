@@ -16,7 +16,7 @@ class Solution:
         i = j = 0
         ___ i __ r..(n):
             ___ j __ r..(m):
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     continue
                 ____ i __ 0:
                     t[i][j] = 1

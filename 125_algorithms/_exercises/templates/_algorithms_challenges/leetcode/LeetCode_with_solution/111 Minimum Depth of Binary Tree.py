@@ -26,7 +26,7 @@ class Solution(object):
         DFS
         """
         __ n.. root: r.. depth
-        ____ root.right and n.. root.left: r.. self.fathom(root.right, depth+1)
-        ____ root.left and n.. root.right: r.. self.fathom(root.left, depth+1)
+        ____ root.right a.. n.. root.left: r.. self.fathom(root.right, depth+1)
+        ____ root.left a.. n.. root.right: r.. self.fathom(root.left, depth+1)
         ____: r.. m..(self.fathom(root.left, depth+1),
                          self.fathom(root.right, depth+1))

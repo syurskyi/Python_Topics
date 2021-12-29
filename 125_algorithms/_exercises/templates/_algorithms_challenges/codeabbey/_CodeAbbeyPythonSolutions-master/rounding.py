@@ -17,6 +17,6 @@ ___ round(num1, num2):
     r.. result
 
 ___ i __ r..(amount_values):
-    num1, num2 = map(int, input().split())
+    num1, num2 = map(int, input().s..())
     results.a..(round(num1,num2))
 print(*results)

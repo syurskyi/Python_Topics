@@ -1,4 +1,4 @@
-____ itertools _______ cycle
+____ i.. _______ cycle
 _______ sys
 ____ time _______ time, sleep
 
@@ -16,7 +16,7 @@ ___ spinner(seconds):
 
     start_time = time()
 
-    while time() - start_time <= seconds:
+    w.... time() - start_time <= seconds:
         s = next(cycles)
         print(s,end='\r')
         

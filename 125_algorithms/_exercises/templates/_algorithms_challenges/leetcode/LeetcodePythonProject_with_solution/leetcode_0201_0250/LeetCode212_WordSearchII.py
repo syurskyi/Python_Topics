@@ -13,7 +13,7 @@ ___ buildTrie(words):
     root = TrieNode()
     ___ word __ words:
         p = root
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             __ c n.. __ p.children:
                 t = TrieNode(c)
                 p.children[c] = t
@@ -50,7 +50,7 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         
         ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
-            __ 0 <= x < m and 0 <= y < n:
+            __ 0 <= x < m a.. 0 <= y < n:
                 board[i][j] = '#'
                 elem.a..(c)
                 self.dfs(board, x, y, p, elem, result)

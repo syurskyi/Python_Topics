@@ -8,8 +8,8 @@ class Solution(object):
     n = l..(nums)
     stack    # list
     nums *= 2
-    ___ i, num __ enumerate(nums):
-      while stack and nums[stack[-1]] < num:
+    ___ i, num __ e..(nums):
+      w.... stack a.. nums[stack[-1]] < num:
         top = stack.pop()
         __ top < n:
           ans[top] = num

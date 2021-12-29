@@ -58,4 +58,4 @@ class Solution:
             ___ _word __ next_words[i][key]:
                 __ _word __ word:
                     continue
-                yield _word
+                y.. _word

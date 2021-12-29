@@ -31,13 +31,13 @@ class Solution:
         string_builder = ""
 
         i = 0
-        while i<l..(num_string):
+        w.... i<l..(num_string):
             # find next different number
             j = i+1
-            while j<l..(num_string) and num_string[j]__num_string[i]:
+            w.... j<l..(num_string) a.. num_string[j]__num_string[i]:
                 j += 1
             count = j-i
-            string_builder += str(count)+str(num_string[i])
+            string_builder += s..(count)+s..(num_string[i])
             i = j
 
         r.. string_builder

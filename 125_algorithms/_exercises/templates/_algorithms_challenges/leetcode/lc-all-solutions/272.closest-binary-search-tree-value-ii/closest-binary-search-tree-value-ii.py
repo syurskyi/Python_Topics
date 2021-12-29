@@ -17,7 +17,7 @@ class Solution(object):
     preStack    # list
     sucStack    # list
 
-    while root:
+    w.... root:
       __ root.val < target:
         preStack.a..(root)
         root = root.right
@@ -30,7 +30,7 @@ class Solution(object):
         r..
       pre = stack.pop()
       p = pre.left
-      while p:
+      w.... p:
         stack.a..(p)
         p = p.right
       r.. pre
@@ -40,7 +40,7 @@ class Solution(object):
         r..
       suc = stack.pop()
       p = suc.right
-      while p:
+      w.... p:
         stack.a..(p)
         p = p.left
       r.. suc
@@ -48,18 +48,18 @@ class Solution(object):
     pre = getPredecessor(preStack)
     suc = getSuccessor(sucStack)
 
-    while k:
+    w.... k:
       k -= 1
-      __ pre and n.. suc:
+      __ pre a.. n.. suc:
         ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      ____ n.. pre and suc:
+      ____ n.. pre a.. suc:
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
-      ____ pre and suc and abs(pre.val - target) <= abs(suc.val - target):
+      ____ pre a.. suc a.. abs(pre.val - target) <= abs(suc.val - target):
         ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      ____ pre and suc and abs(pre.val - target) >= abs(suc.val - target):
+      ____ pre a.. suc a.. abs(pre.val - target) >= abs(suc.val - target):
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
     r.. ans

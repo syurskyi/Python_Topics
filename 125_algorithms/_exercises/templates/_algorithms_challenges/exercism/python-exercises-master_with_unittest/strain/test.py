@@ -24,7 +24,7 @@ class StrainTest(unittest.TestCase):
     ___ test_discard_endswith(self):
         inp = ['dough', 'cash', 'plough', 'though', 'through', 'enough']
         out = ['cash']
-        self.assertEqual(discard(inp, l.... x: str.endswith(x, 'ough')), out)
+        self.assertEqual(discard(inp, l.... x: s...endswith(x, 'ough')), out)
 
     ___ test_keep_z(self):
         inp = ['zebra', 'arizona', 'apple', 'google', 'mozilla']
@@ -33,13 +33,13 @@ class StrainTest(unittest.TestCase):
 
     ___ test_keep_discard(self):
         inp = ['1,2,3', 'one', 'almost!', 'love']
-        self.assertEqual(discard(keep(inp, str.isalpha), str.isalpha), [])
+        self.assertEqual(discard(keep(inp, s...isalpha), s...isalpha), [])
 
     ___ test_keep_plus_discard(self):
         inp = ['1,2,3', 'one', 'almost!', 'love']
         out = ['one', 'love', '1,2,3', 'almost!']
         self.assertEqual(
-            keep(inp, str.isalpha) + discard(inp, str.isalpha), out)
+            keep(inp, s...isalpha) + discard(inp, s...isalpha), out)
 
 
 __ __name__ __ '__main__':

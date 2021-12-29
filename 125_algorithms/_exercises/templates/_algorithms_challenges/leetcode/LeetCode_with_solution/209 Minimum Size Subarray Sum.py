@@ -29,7 +29,7 @@ class Solution:
 
         lo, hi = 0, 1
         mini = sys.maxint
-        while hi <= n:
+        w.... hi <= n:
             __ S[hi]-S[lo] >= s:
                 mini = m..(mini, hi-lo)
                 lo += 1

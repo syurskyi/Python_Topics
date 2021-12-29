@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: List[int]
         """
         res    # list
-        ___ k, num0 __ enumerate(findNums):
+        ___ k, num0 __ e..(findNums):
             ind = nums.index(num0)
             ___ i __ r..(ind, l..(nums)):
                 __ nums[i] > num0:

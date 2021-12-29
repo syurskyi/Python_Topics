@@ -10,10 +10,10 @@ class Solution(object):
         __ n.. s: r.. s
         s = l..(s)
         left, right = 0, l..(s)-1
-        while left < right:
-            while left < l..(s) and s[left] n.. __ vowels:
+        w.... left < right:
+            w.... left < l..(s) a.. s[left] n.. __ vowels:
                 left += 1
-            while right >= 0 and s[right] n.. __ vowels:
+            w.... right >= 0 a.. s[right] n.. __ vowels:
                 right -= 1
             __ left < right:
                 s[left], s[right] = s[right], s[left]

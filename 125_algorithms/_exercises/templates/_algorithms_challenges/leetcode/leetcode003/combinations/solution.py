@@ -31,7 +31,7 @@ class Solution(object):
             r.. [[]]
         ____:
             res    # list
-            ___ i, e __ enumerate(a):
+            ___ i, e __ e..(a):
                 rest_comb = self.combine_aux(a[i + 1:], k - 1)
                 ___ comb __ rest_comb:
                     comb.insert(0, e)

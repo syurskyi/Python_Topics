@@ -44,7 +44,7 @@ class Solution(object):
         :rtype: int
         """
         ret = 0
-        while n != 1:
+        w.... n != 1:
             ret += 1
             __ n & 1 __ 0:
                 n >>= 1

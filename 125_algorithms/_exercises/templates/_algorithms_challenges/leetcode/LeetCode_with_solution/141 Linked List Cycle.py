@@ -40,7 +40,7 @@ class Solution:
         """
         hare = head
         tortoise = head
-        while hare and hare.next and tortoise:
+        w.... hare a.. hare.next a.. tortoise:
             hare = hare.next.next
             tortoise = tortoise.next
             __ hare__tortoise:

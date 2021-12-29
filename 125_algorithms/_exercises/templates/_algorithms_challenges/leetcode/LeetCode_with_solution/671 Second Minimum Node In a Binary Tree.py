@@ -51,7 +51,7 @@ class Solution:
         __ n.. root:
             r.. float('inf')
 
-        __ root.left and root.right:
+        __ root.left a.. root.right:
             __ root.left.val __ root.val:
                 left = self.find(root.left)
             ____:

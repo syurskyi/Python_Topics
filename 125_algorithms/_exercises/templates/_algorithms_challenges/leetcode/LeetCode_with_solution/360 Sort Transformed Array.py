@@ -29,20 +29,20 @@ class Solution(object):
         ri = bisect.bisect_left(nums, mid)
         le = ri - 1
         ret    # list
-        while le >= 0 and ri < l..(nums) and le < ri:
+        w.... le >= 0 a.. ri < l..(nums) a.. le < ri:
             f_le = self.f(nums[le], a, b, c)
             f_ri = self.f(nums[ri], a, b, c)
-            __ a > 0 and f_le < f_ri o. a < 0 and f_le > f_ri:
+            __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
                 ret.a..(f_le)
                 le -= 1
             ____:
                 ret.a..(f_ri)
                 ri += 1
 
-        while le >= 0:
+        w.... le >= 0:
             ret.a..(self.f(nums[le], a, b, c))
             le -= 1
-        while ri < l..(nums):
+        w.... ri < l..(nums):
             ret.a..(self.f(nums[ri], a, b, c))
             ri += 1
 

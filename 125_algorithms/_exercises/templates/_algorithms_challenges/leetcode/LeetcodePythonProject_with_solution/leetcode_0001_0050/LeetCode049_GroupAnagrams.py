@@ -15,7 +15,7 @@ class Solution(object):
             arr = [0]*26
             ___ c __ s:
                 arr[ord(c)-ord('a')]+=1
-            arr = [str(num) ___ num __ arr]
+            arr = [s..(num) ___ num __ arr]
             key = ''.join(arr)
             __ key __ hashmap:
                 hashmap[key].a..(s)

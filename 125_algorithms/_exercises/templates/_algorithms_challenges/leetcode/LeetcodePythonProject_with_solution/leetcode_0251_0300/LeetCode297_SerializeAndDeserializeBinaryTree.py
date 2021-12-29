@@ -15,7 +15,7 @@ class Codec:
     ___ serialize(self, root):
         stack = [root]
         result = ''
-        while stack:
+        w.... stack:
             node = stack.pop()
             __ node:
                 result += '%s,' % (node.val)
@@ -26,7 +26,7 @@ class Codec:
         r.. result[:-1]
     
     ___ deserialize(self, data):
-        arr = data.split(',')
+        arr = data.s..(',')
         ind = [0]
         root = self.helper(arr, ind)
         r.. root
@@ -51,7 +51,7 @@ __ __name__ __ '__main__':
     queue = [root]
     line    # list
     nextQueue   # list
-    while queue:
+    w.... queue:
         node = queue.pop(0)
         line.a..(node.val)
         __ node.left:

@@ -22,7 +22,7 @@ class Solution:
         :type intv: Interval
         :rtype: list[Interval]
         """
-        __ n.. intvs and n.. intv:
+        __ n.. intvs a.. n.. intv:
             r.. []
         __ n.. intvs:
             r.. [intv]
@@ -42,7 +42,7 @@ class Solution:
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
         ___ i __ r..(l..(intvs)):  # since there is one more child in intvs
-            __ ans and intvs[i].start <= ans[-1].end:
+            __ ans a.. intvs[i].start <= ans[-1].end:
                 ans[-1].end = max(ans[-1].end, intvs[i].end)
             ____:
                 ans.a..(intvs[i])

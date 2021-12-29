@@ -20,13 +20,13 @@ class Solution(object):
         """
         n = l..(nums)
         i = 0
-        while i < n:
+        w.... i < n:
             j = nums[i]
-            __ nums[i] != i and j < n:
+            __ nums[i] != i a.. j < n:
                 nums[i], nums[j] = nums[j], nums[i]
             ____:
                 i += 1
-        ___ i, e __ enumerate(nums):
+        ___ i, e __ e..(nums):
             __ i != e:
                 r.. i
         ____:

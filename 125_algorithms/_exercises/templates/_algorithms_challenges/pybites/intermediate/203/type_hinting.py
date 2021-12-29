@@ -18,13 +18,13 @@ class Employee:
     :param wage: Float of hourly pay
     :param weekly_pay: Property which returns a string for weekly pay
     """
-    first_name: str
-    last_name: str
+    first_name: s..
+    last_name: s..
     days_per_week: int
     hours_per_day: float
     wage: float
 
-    ___ __init__(self, first_name: str, last_name: str, days_per_week: int,
+    ___ __init__(self, first_name: s.., last_name: s.., days_per_week: int,
             hours_per_day:int, wage: float):
         self.first_name = first_name
         self.last_name = last_name
@@ -32,7 +32,7 @@ class Employee:
         self.hours_per_day = hours_per_day
         self.wage = wage
 
-    ___ _rounder(self, number: float, places: int) -> str:
+    ___ _rounder(self, number: float, places: int) -> s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round

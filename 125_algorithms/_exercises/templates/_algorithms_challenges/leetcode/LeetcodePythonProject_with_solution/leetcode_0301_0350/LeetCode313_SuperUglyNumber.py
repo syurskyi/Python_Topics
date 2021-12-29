@@ -10,7 +10,7 @@ class Solution(object):
         res = [1]
         ___ _ __ r..(n-1):
             minVal = float('inf')
-            ___ i, p __ zip(times, primes):
+            ___ i, p __ z..(times, primes):
                 minVal = m..(minVal, res[i]*p)
             res.a..(minVal)
             ___ i __ r..(l..(times)):

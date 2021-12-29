@@ -8,12 +8,12 @@ class Solution:
         __ n.. nums o. l..(nums) < 2:
             r.. -1
 
-        nums.sort()
+        nums.s..()
 
         left, right = 0, l..(nums) - 1
         _sum = 0
         diff = float('inf')
-        while left < right:
+        w.... left < right:
             _sum = nums[left] + nums[right]
             __ _sum < target:
                 diff = m..(diff, target - _sum)

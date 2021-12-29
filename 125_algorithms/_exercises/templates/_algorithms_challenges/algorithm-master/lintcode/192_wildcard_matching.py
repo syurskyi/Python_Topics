@@ -29,7 +29,7 @@ class Solution:
         """
         __ s __ N.. o. p __ N..
             r.. False
-        __ s __ '' and p __ '':
+        __ s __ '' a.. p __ '':
             r.. True
 
         ANY = '?'
@@ -49,9 +49,9 @@ class Solution:
             ___ j __ r..(1, n + 1):
                 __ p[j - 1] __ ANY_MULTI:
                     dp[i][j] = dp[i - 1][j] o. dp[i][j - 1]
-                ____ p[j - 1] __ ANY and dp[i - 1][j - 1]:
+                ____ p[j - 1] __ ANY a.. dp[i - 1][j - 1]:
                     dp[i][j] = True
-                ____ p[j - 1] __ s[i - 1] and dp[i - 1][j - 1]:
+                ____ p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
                     dp[i][j] = True
 
         r.. dp[m][n]

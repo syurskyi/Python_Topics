@@ -21,7 +21,7 @@ ___ justify(text, width):
     ___ i __ r..(l..(lines) - 1):
         line_words = lines[i]
         space_need = width - s..(l..(word) ___ word __ line_words)
-        while space_need:
+        w.... space_need:
             ___ index __ r..(l..(line_words) - 1):
                 __ space_need __ 0:
                     break

@@ -51,7 +51,7 @@ ___ game_loop():
 
         active_creature  random.choice(creatures)
         print('A {} of level {} has appeared from a dark and foggy forest...'
-              .format(active_creature.name, active_creature.level))
+              .f..(active_creature.name, active_creature.level))
         print()
 
         cmd  input('Do you [a]ttack, [r]unaway, or [l]ook around? ')
@@ -66,9 +66,9 @@ ___ game_loop():
             print('The wizard has become unsure of his power and flees!!!')
         ____ cmd __ 'l':
             print('The wizard {} takes in the surroundings and sees:'
-                  .format(hero.name))
+                  .f..(hero.name))
             ___ c __ creatures:
-                print(' * A {} of level {}'.format(c.name, c.level))
+                print(' * A {} of level {}'.f..(c.name, c.level))
         ____:
             print("OK, exiting game... bye!")
             _____

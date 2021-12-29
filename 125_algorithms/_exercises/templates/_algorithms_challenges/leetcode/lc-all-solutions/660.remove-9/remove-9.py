@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = 0
     k = 1
-    while n > 0:
+    w.... n > 0:
       ans += (n % 9) * k
       k *= 10
       n /= 9

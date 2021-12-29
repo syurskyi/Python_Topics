@@ -54,10 +54,10 @@ class Solution(object):
         ]
         ___ accounts __ testCases:
             print('accounts:')
-            print('\n'.join([str(row) ___ row __ accounts]))
+            print('\n'.join([s..(row) ___ row __ accounts]))
             result = self.accountsMerge(accounts)
             print('result:')
-            print('\n'.join([str(row) ___ row __ result]))
+            print('\n'.join([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

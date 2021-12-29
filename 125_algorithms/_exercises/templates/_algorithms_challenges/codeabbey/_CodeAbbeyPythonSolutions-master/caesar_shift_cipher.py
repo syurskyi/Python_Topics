@@ -1,4 +1,4 @@
-amount_values,shifter = map(int,(input().split()))
+amount_values,shifter = map(int,(input().s..()))
 results    # list
 
 ___ get_cipher(words, shifter):

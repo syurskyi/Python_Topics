@@ -14,7 +14,7 @@ ___ within_schedule(utc, *timezones):
             raise ValueError('Unknown timezone')
         ____:
             tz = pytz.timezone(tz)
-            converted = utc.replace(tzinfo=pytz.utc).astimezone(tz)
+            converted = utc.r..(tzinfo=pytz.utc).astimezone(tz)
             output.a..(converted.hour __ MEETING_HOURS)
 
     r.. a..(output)

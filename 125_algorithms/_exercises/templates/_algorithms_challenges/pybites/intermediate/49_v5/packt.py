@@ -1,11 +1,11 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 ____ bs4 _______ BeautifulSoup as Soup
 _______ requests
 
 CONTENT = requests.get('http://bit.ly/2EN2Ntv').text
 
-Book = namedtuple('Book', 'title description image link')
+Book = n..('Book', 'title description image link')
 
 
 ___ get_book():
@@ -15,8 +15,8 @@ ___ get_book():
     image_base = dotd.find(class_='dotd-main-book-image')
     title_base = dotd.find(class_='dotd-title')
 
-    title = title_base.find('h2').text.strip()
-    description = title_base.parent.find_all('div')[2].text.strip()
+    title = title_base.find('h2').text.s..
+    description = title_base.parent.find_all('div')[2].text.s..
     image = image_base.find('img').attrs['src']
     link = image_base.find('a').attrs['href']
 

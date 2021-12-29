@@ -26,10 +26,10 @@ class Solution(object):
         r.. True
 
     ___ check(self, lst):
-        lst.sort()
+        lst.s..()
         i = 0
         j = l..(lst) - 1
-        while i < j:
+        w.... i < j:
             x = (lst[i] + lst[j]) / float(2)
             __ n.. self.x:
                 self.x = x

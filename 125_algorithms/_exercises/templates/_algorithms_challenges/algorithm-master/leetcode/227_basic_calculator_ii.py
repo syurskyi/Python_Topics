@@ -30,22 +30,22 @@ class Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit():
                 res[-1] += char
             ____ char.isdigit():
                 res.a..(char)
             ____ char __ P:
-                while stack and stack[-1] __ P and P[char] <= P[stack[-1]]:
+                w.... stack a.. stack[-1] __ P a.. P[char] <= P[stack[-1]]:
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                while stack and stack[-1] != '(':
+                w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop())
                 stack.pop()
 
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
 
         r.. res
@@ -86,24 +86,24 @@ class Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit():
                 res[-1] += char
             ____ char.isdigit():
                 res.a..(char)
             ____ char __ '+-*/':
-                while stack and stack[-1] __ '+-*/':
-                    __ char __ '*/' and stack[-1] __ '+-':
+                w.... stack a.. stack[-1] __ '+-*/':
+                    __ char __ '*/' a.. stack[-1] __ '+-':
                         break
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                while stack and stack[-1] != '(':
+                w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop())
                 stack.pop()
 
-        while stack:
+        w.... stack:
             res.a..(stack.pop())
 
         r.. res

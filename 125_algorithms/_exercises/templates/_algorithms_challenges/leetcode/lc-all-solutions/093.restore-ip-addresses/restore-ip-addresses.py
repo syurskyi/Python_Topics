@@ -10,7 +10,7 @@ class Solution(object):
     ___ isValid(num):
       __ l..(num) __ 1:
         r.. True
-      __ l..(num) > 1 and num[0] != "0" and int(num) <= 255:
+      __ l..(num) > 1 a.. num[0] != "0" a.. int(num) <= 255:
         r.. True
       r.. False
 
@@ -29,5 +29,5 @@ class Solution(object):
             break
           __ n.. isValid(d):
             continue
-          ans.a..("{}.{}.{}.{}".format(a, b, c, d))
+          ans.a..("{}.{}.{}.{}".f..(a, b, c, d))
     r.. ans

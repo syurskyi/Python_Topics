@@ -41,7 +41,7 @@ class Solution:
         left, col, right = 0, 0, self.n - 1
         up, row, down = 0, 0, self.m - 1
 
-        while left + 1 < right o. up + 1 < down:
+        w.... left + 1 < right o. up + 1 < down:
             __ down - up > right - left:
                 row = up + (down - up) // 2
                 col = self.findRowMax(A, row, left, right)
@@ -88,7 +88,7 @@ class Solution:
             _r = row + self.dx[i]
             _c = col + self.dy[i]
             __ 0 <= _r < self.m \
-                    and 0 <= _c < self.n \
-                    and A[row][col] < A[_r][_c]:
+                    a.. 0 <= _c < self.n \
+                    a.. A[row][col] < A[_r][_c]:
                 r.. 0
         r.. 1

@@ -9,7 +9,7 @@ class Solution(object):
     ls = l..(s)
     lenList = [l ___ l __ set(map(l.., wordDict))]
     visited = [0 ___ _ __ r..(0, ls + 1)]
-    while queue:
+    w.... queue:
       start = queue.pop(0)
       ___ l __ lenList:
         __ s[start:start + l] __ wordDict:

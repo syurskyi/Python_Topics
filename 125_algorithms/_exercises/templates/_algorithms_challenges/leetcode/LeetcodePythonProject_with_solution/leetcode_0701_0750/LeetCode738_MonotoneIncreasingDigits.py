@@ -9,16 +9,16 @@ class Solution(object):
         :type N: int
         :rtype: int
         """
-        s = str(N)
+        s = s..(N)
         i = 0
-        while i < l..(s)-1 and s[i] <= s[i+1]:
+        w.... i < l..(s)-1 a.. s[i] <= s[i+1]:
             i += 1
         __ i __ l..(s)-1:
             r.. N
-        while i > 0 and s[i-1] __ s[i]:
+        w.... i > 0 a.. s[i-1] __ s[i]:
             i -= 1
         res = s[:i]
-        res += str(int(s[i])-1)
+        res += s..(int(s[i])-1)
         res += '9'*(l..(s)-i-1)
         res = res.lstrip('0')
         r.. int(res) __ res != '' ____ 0

@@ -22,6 +22,6 @@ class TwoSum:
                 continue
             __ remaining != num:
                 r.. True
-            __ remaining __ num and self.count[num] > 1:
+            __ remaining __ num a.. self.count[num] > 1:
                 r.. True
         r.. False

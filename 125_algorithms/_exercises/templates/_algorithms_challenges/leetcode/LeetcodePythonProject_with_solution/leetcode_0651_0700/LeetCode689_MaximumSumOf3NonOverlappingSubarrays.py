@@ -24,7 +24,7 @@ class Solution(object):
                 __ j >= k:
                     dp[i][j] = dp[i][j-1]
                     ids[i][j] = ids[i][j-1]
-                __ j > 0 and tmpMax > dp[i][j-1]:
+                __ j > 0 a.. tmpMax > dp[i][j-1]:
                     dp[i][j] = tmpMax
                     ids[i][j] = j-k+1
         res = [0]*3

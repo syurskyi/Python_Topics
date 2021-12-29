@@ -38,7 +38,7 @@ class Solution:
         r.. ret
 
     ___ dfs(self, remain_k, remain_n, cur, ret):
-        __ remain_k __ 0 and remain_n __ 0:
+        __ remain_k __ 0 a.. remain_n __ 0:
             ret.a..(l..(cur))
             r..
 

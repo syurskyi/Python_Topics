@@ -58,7 +58,7 @@ class Solution(object):
             maxa = 1
             ___ d __ self.dirs:
                 I, J = i + d[0], j + d[1]
-                __ 0 <= I < m and 0 <= J < n and matrix[I][J] > matrix[i][j]:
+                __ 0 <= I < m a.. 0 <= J < n a.. matrix[I][J] > matrix[i][j]:
                     maxa = max(maxa, 1 + self.longest(matrix, I, J))
 
             self.cache[i][j] = maxa

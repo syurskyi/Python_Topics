@@ -11,9 +11,9 @@ class Solution(object):
         ans.a..(tuple(path + []))
 
       ___ i __ r..(start, l..(nums)):
-        __ i != start and nums[i] __ nums[i - 1]:
+        __ i != start a.. nums[i] __ nums[i - 1]:
           continue
-        __ path and nums[i] < path[-1]:
+        __ path a.. nums[i] < path[-1]:
           continue
         path.a..(nums[i])
         dfs(nums, i + 1, path, ans)

@@ -25,10 +25,10 @@ class Solution(object):
                 __ c1 __ c2:
                     dp[i+1][j+1] = dp[i][j]
                 ____:
-                    replace = dp[i][j] + 1
+                    r.. = dp[i][j] + 1
                     insert = dp[i][j+1] + 1
                     delete = dp[i+1][j] + 1
-                    dp[i+1][j+1] = m..((replace, insert, delete))
+                    dp[i+1][j+1] = m..((r.., insert, delete))
         r.. dp[-1][-1]
     
     ___ test(self):

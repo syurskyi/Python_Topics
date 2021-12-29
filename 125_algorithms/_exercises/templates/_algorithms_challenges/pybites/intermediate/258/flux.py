@@ -3,7 +3,7 @@ XYZ = "https://bites-data.s3.us-east-2.amazonaws.com/xyz.csv"
 THRESHOLDS = (5000, 0.05)
 
 
-___ calculate_flux(XYZ: str) -> l..:
+___ calculate_flux(XYZ: s..) -> l..:
     """Read the data in from xyz.csv
     add two new columns, one to calculate dollar flux,
     and the other to calculate percentage flux
@@ -36,7 +36,7 @@ ___ identify_flux(xyz: l..) -> l..:
 
     ___ line __ xyz:
         *orig,dollar_amount,pct_amount = line
-        __ abs(dollar_amount) > THRESHOLDS[0] and abs(pct_amount) > THRESHOLDS[1]:
+        __ abs(dollar_amount) > THRESHOLDS[0] a.. abs(pct_amount) > THRESHOLDS[1]:
             flagged_lines.a..(line)
 
 

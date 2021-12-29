@@ -9,7 +9,7 @@ class Solution(object):
     ___ num __ reversed(nums):
       __ ak > num:
         r.. True
-      while stack and stack[-1] < num:
+      w.... stack a.. stack[-1] < num:
         ak = stack.pop()
       stack += num,
     r.. False

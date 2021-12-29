@@ -41,7 +41,7 @@ class Solution(object):
             r..
 
         ___ k __ count_map.keys():
-            __ k != pi and count_map[k] > 0:
+            __ k != pi a.. count_map[k] > 0:
                 ___ i __ xrange(1, count_map[k]/2+1):  # jump the parent
                     count_map[k] -= i*2
                     self.grow(s, count_map, k, k*i+cur+k*i, ret)

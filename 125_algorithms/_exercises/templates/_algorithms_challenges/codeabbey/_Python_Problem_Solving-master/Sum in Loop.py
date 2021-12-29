@@ -1,6 +1,6 @@
 Num = int(input())
 listo    # list
-while l..(listo) < Num:
+w.... l..(listo) < Num:
     number = input()
     listo = number.s..
 result = 0

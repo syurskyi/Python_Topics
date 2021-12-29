@@ -17,7 +17,7 @@ class Solution(object):
     dummy.next = head
     sHead = sDummy = ListNode(-1)
     p = dummy
-    while p and p.next:
+    w.... p a.. p.next:
       __ p.next.val < x:
         sDummy.next = p.next
         p.next = p.next.next

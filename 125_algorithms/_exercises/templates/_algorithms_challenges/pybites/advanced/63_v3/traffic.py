@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ itertools _______ cycle, islice
+____ collections _______ n..
+____ i.. _______ cycle, islice
 ____ time _______ sleep
 
-State = namedtuple('State', 'color command timeout')
+State = n..('State', 'color command timeout')
 
 
 ___ traffic_light():
@@ -11,7 +11,7 @@ ___ traffic_light():
        as shown in the Bite's description"""
     states = cycle([State('red', 'Stop', 2), State('green', 'Go', 2), State('amber', 'Caution', 0.5)])
     ___ s __ states:
-        yield s
+        y.. s
 
 
 __ __name__ __ '__main__':

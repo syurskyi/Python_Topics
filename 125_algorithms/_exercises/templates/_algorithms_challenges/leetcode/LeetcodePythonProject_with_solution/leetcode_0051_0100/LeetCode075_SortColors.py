@@ -14,7 +14,7 @@ class Solution(object):
         ___ num __ nums:
             colors[num]+=1
         i, j = 0, 0
-        while j < 3:
+        w.... j < 3:
             __ colors[j]:
                 nums[i]=j
                 colors[j] -= 1

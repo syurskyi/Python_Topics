@@ -37,7 +37,7 @@ ___ intro_bites():
 ___ test_different_args_for_N(N, expected):
     actual = get_most_complex_bites(N)
     # str or int for IDs is fine with us
-    actual = [str(i) ___ i __ actual]
+    actual = [s..(i) ___ i __ actual]
     ... actual __ expected
 
 
@@ -51,5 +51,5 @@ ___ test_different_args_for_N(N, expected):
 ___ test_only_intro_bites(intro_bites, N, expected):
     actual = get_most_complex_bites(N, stats=intro_bites)
     # str or int for IDs is fine with us
-    actual = [str(i) ___ i __ actual]
+    actual = [s..(i) ___ i __ actual]
     ... actual __ expected

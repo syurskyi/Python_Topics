@@ -10,8 +10,8 @@ class Solution(object):
         :rtype: int
         """
         res = ''
-        while n:
-            res = str(n%9) + res
+        w.... n:
+            res = s..(n%9) + res
             n //= 9
         r.. int(res)
     

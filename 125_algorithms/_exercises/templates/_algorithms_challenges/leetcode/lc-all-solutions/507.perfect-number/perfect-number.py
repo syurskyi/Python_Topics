@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = 1
     div = 2
-    while div ** 2 <= num:
+    w.... div ** 2 <= num:
       __ num % div __ 0:
         ans += div
         ans += num / div

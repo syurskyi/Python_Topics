@@ -7,7 +7,7 @@ Created on Apr 1, 2017
 class Solution(object):
     ___ kthSmallest(self, matrix, k):
         lower, upper = matrix[0][0], matrix[-1][-1]
-        while lower < upper:
+        w.... lower < upper:
             mid = (lower+upper)//2
             __ self.c.. matrix, mid) < k:
                 lower = mid+1
@@ -19,7 +19,7 @@ class Solution(object):
         m, n = l..(matrix), l..(matrix[0])
         i, j = m-1, 0
         count = 0
-        while i >= 0 and j < n:
+        w.... i >= 0 a.. j < n:
             __ matrix[i][j] <= target:
                 count += i+1
                 j += 1

@@ -21,7 +21,7 @@ class Solution:
             r.. node
 
         pre, cur = N.., node
-        while True:
+        w... T...
             pre = cur
             cur = cur.next
 
@@ -30,7 +30,7 @@ class Solution:
                 break
 
             # at the boundary between minimum and maximum
-            __ (pre.val > cur.val) and (x < cur.val o. x > pre.val):
+            __ (pre.val > cur.val) a.. (x < cur.val o. x > pre.val):
                 break
 
             # if `cur` have already traversed the list once

@@ -31,20 +31,20 @@ SEPARATOR = ' | '
 
 ___ my_generate_table(*args):
     l    # list
-    result = zip(*args)
+    result = z..(*args)
     ___ i __ result:
         s = ""
         ___ t __ i:
             __ s __ "":
-                s = str(t)
+                s = s..(t)
             ____:
-                s = s + " | " + str(t)
+                s = s + " | " + s..(t)
         l.a..(s)
     r.. l
 
 ### ---------- PyBites original solution ---------------
 
 ___ pyb_generate_table(*sequences):
-    ___ seq __ zip(*sequences):
-        seq = [str(val) ___ val __ seq]
-        yield SEPARATOR.join(seq)
+    ___ seq __ z..(*sequences):
+        seq = [s..(val) ___ val __ seq]
+        y.. SEPARATOR.join(seq)

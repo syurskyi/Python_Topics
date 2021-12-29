@@ -16,7 +16,7 @@ class Solution:
             __ any((
                 n.. self.is_subseq(s, w),
                 l..(w) < l..(ans),
-                l..(w) __ l..(ans) and w >= ans,  # means w has larger lexicographical order
+                l..(w) __ l..(ans) a.. w >= ans,  # means w has larger lexicographical order
             )):
                 continue
 
@@ -31,7 +31,7 @@ class Solution:
         m, n = l..(s), l..(t)
         i = j = 0
 
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ s[i] __ t[j]:
                 j += 1
             i += 1
@@ -59,7 +59,7 @@ class Solution:
             __ any((
                 w n.. __ target,
                 l..(w) < l..(ans),
-                l..(w) __ l..(ans) and w >= ans,
+                l..(w) __ l..(ans) a.. w >= ans,
             )):
                 continue
 

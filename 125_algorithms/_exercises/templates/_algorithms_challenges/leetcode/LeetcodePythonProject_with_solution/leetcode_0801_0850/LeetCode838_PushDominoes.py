@@ -12,23 +12,23 @@ class Solution(object):
         n = l..(dominoes)
         arr = l..(dominoes)
         i = 0
-        while i < n and arr[i] __ '.':
+        w.... i < n a.. arr[i] __ '.':
             i += 1
-        __ i < n and arr[i] __ 'L' and i > 0:
+        __ i < n a.. arr[i] __ 'L' a.. i > 0:
             arr[0] = 'L'
             self.setVals(arr, 0, i)
-        while i < n:
+        w.... i < n:
             __ arr[i] __ 'L' o. arr[i] __ 'R':
                 j = i+1
-                while j < n and arr[j] __ '.':
+                w.... j < n a.. arr[j] __ '.':
                     j += 1
                 __ j < n:
                     self.setVals(arr, i, j)
             i += 1
         i = n-1
-        while i >= 0 and arr[i] __ '.':
+        w.... i >= 0 a.. arr[i] __ '.':
             i -= 1
-        __ i >= 0 and arr[i] __ 'R' and i < n:
+        __ i >= 0 a.. arr[i] __ 'R' a.. i < n:
             arr[-1] = 'R'
             self.setVals(arr, i, n-1)
         r.. ''.join(arr)
@@ -37,9 +37,9 @@ class Solution(object):
         __ arr[i] __ arr[j]:
             ___ i0 __ r..(i+1, j):
                 arr[i0] = arr[i]
-        ____ arr[i] __ 'R' and arr[j] __ 'L':
+        ____ arr[i] __ 'R' a.. arr[j] __ 'L':
             i0, j0 = i, j
-            while i < j:
+            w.... i < j:
                 arr[i] = arr[i0]
                 arr[j] = arr[j0]
                 i += 1

@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: List[int]
     """
     start, end = 0, l..(nums) - 1
-    while start < end:
+    w.... start < end:
       s = nums[start] + nums[end]
       __ s > target:
         end -= 1

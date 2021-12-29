@@ -81,7 +81,7 @@ class Solution:
             [1, 2, 3],
             [4, 5, 0],
         ]
-        while q:
+        w.... q:
             heu, cur_dist, board = heapq.heappop(q)
             visited[self.ser(board)] = True
             __ board __ target:
@@ -92,7 +92,7 @@ class Solution:
             ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
-                __ 0 <= I < m and 0 <= J < n:
+                __ 0 <= I < m a.. 0 <= J < n:
                     B = deepcopy(board)   # need a copy in the queue
                     B[I][J], B[i][j] = B[i][j], B[I][J]
                     __ n.. visited[self.ser(B)]:
@@ -100,8 +100,8 @@ class Solution:
         r.. -1
 
     ___ zero_pos(self, board):
-        ___ i, row __ enumerate(board):
-            ___ j, v __ enumerate(row):
+        ___ i, row __ e..(board):
+            ___ j, v __ e..(row):
                 __ v __ 0:
                     r.. i, j
         raise
@@ -111,8 +111,8 @@ class Solution:
         manhattan distance
         """
         ret = 0
-        ___ i, row __ enumerate(board):
-            ___ j, v __ enumerate(row):
+        ___ i, row __ e..(board):
+            ___ j, v __ e..(row):
                 __ v != 0:
                     I, J = final_pos[v]
                     ret += abs(i - I) + abs(j - J)

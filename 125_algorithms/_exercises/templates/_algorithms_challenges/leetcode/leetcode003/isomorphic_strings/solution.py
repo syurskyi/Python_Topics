@@ -26,14 +26,14 @@ class Solution(object):
         :rtype: bool
         """
         d = {}
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c n.. __ d:
                 d[c] = t[i]
             ____:
                 __ d[c] != t[i]:
                     r.. False
         d = {}
-        ___ i, c __ enumerate(t):
+        ___ i, c __ e..(t):
             __ c n.. __ d:
                 d[c] = s[i]
             ____:

@@ -20,10 +20,10 @@ class Solution(object):
     ___ helper(self, nums, i, j, k):
         i0, j0 = i, j
         pivot = nums[j]
-        while True:
-            while i < j and nums[i] < pivot:
+        w... T...
+            w.... i < j a.. nums[i] < pivot:
                 i += 1
-            while i < j and nums[j] >= pivot:
+            w.... i < j a.. nums[j] >= pivot:
                 j -= 1
             __ i < j:
                 nums[i], nums[j] = nums[j], nums[i]

@@ -11,7 +11,7 @@ class Solution(object):
         """
         s = S
         vowels = set(l..('aeiouAEIOU'))
-        arr = s.split(' ')
+        arr = s.s..(' ')
         res = ''
         ___ i __ r..(l..(arr)):
             __ n.. arr[i]:

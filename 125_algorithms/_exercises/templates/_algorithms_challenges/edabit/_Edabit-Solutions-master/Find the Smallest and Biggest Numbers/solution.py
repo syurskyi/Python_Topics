@@ -1,5 +1,5 @@
 ___ min_max(nums):
-    nums.sort()
+    nums.s..()
     r.. [nums[0],nums[-1]]
 
 

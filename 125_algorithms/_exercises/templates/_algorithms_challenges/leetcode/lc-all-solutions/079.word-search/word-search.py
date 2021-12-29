@@ -18,7 +18,7 @@ class Solution:
         r.. True
       ___ direction __ directions:
         ni, nj = i + direction[0], j + direction[1]
-        __ ni >= 0 and ni < l..(board) and nj >= 0 and nj < l..(board[0]):
+        __ ni >= 0 a.. ni < l..(board) a.. nj >= 0 a.. nj < l..(board[0]):
           __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
             __ dfs(ni, nj, board, visited, word, index + 1):

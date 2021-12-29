@@ -23,7 +23,7 @@ class Solution:
         heap    # list
         n = l..(A)
 
-        A.sort()
+        A.s..()
 
         ___ i __ r..(n):
             heappush(heap, (A[i]/A[-1], i, n - 1))

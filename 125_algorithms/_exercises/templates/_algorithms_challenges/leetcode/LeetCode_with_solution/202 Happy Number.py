@@ -28,7 +28,7 @@ class Solution:
         """
         nxt = 0
         appeared = set()
-        while True:
+        w... T...
             nxt += (n%10)*(n%10)
             n /= 10
             __ n __ 0:

@@ -9,7 +9,7 @@ class Solution(object):
     """
     ops = {"+": add, "-": sub, "*": mul, "/": div}
     ans    # list
-    ___ i, c __ enumerate(input):
+    ___ i, c __ e..(input):
       __ c __ ops:
         left = self.diffWaysToCompute(input[:i])
         right = self.diffWaysToCompute(input[i + 1:])

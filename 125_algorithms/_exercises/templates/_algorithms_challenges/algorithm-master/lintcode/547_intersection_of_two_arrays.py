@@ -32,13 +32,13 @@ class Solution:
         __ n.. a o. n.. b:
             r.. ans
 
-        a.sort()
-        b.sort()
+        a.s..()
+        b.s..()
 
         m, n = l..(a), l..(b)
         i = j = 0
 
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ a[i] __ b[j]:
                 __ n.. ans o. a[i] != ans[-1]:
                     ans.a..(a[i])

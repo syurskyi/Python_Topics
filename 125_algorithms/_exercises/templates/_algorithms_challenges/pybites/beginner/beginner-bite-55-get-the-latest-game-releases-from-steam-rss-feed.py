@@ -3,7 +3,7 @@ that feed. Specifically, pull out the names of the games in the feed as well as 
 Use the Game namedtuple provided.
 To make sure you work with a static feed we copied today's version so use the URL defined in FEED_URL. Enjoy!'''
 
-____ collections _______ namedtuple
+____ collections _______ n..
 
 _______ feedparser
 _______ json
@@ -12,7 +12,7 @@ _______ json
 # cached version to have predictable results for testing
 FEED_URL = "http://bit.ly/2IkFe9B"
 
-Game = namedtuple('Game', 'title link')
+Game = n..('Game', 'title link')
 
 
 ___ get_games():

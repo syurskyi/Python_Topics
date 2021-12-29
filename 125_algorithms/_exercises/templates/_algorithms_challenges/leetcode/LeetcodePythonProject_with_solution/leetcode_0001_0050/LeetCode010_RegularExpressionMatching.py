@@ -14,7 +14,7 @@ class Solution(object):
         dp = [[False]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = True
         ___ j __ r..(n):
-            __ p[j] __ '*' and dp[0][j-1]:
+            __ p[j] __ '*' a.. dp[0][j-1]:
                 dp[0][j+1] = True
         ___ i __ r..(m):
             ___ j __ r..(n):

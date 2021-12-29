@@ -14,5 +14,5 @@ ___ max_subset_sum(arr):
 
 
 n = int(input())
-arr = l..(map(int, input().split()))
+arr = l..(map(int, input().s..()))
 print(max_subset_sum(arr))

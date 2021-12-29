@@ -17,13 +17,13 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ generateParenthesis(self, n: int) -> List[str]:
+    ___ generateParenthesis(self, n: int) -> List[s..]:
         """
         Method 1 - backtracking
         Method 2 - dp
         Let F[n] be the list of parentheses at length 2n
         """
-        F: List[List[str]] = [[] ___ _ __ r..(n + 1)]
+        F: List[List[s..]] = [[] ___ _ __ r..(n + 1)]
         F[0].a..("")
         ___ i __ r..(1, n+1):
             ___ j __ r..(i):

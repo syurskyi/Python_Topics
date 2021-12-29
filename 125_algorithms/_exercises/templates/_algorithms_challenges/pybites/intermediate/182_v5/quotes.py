@@ -29,7 +29,7 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: str = HTML) -> d..:
+___ extract_quotes(html: s.. = HTML) -> d..:
     """See instructions in the Bite description"""
     result = d..()
     root = BeautifulSoup(html, 'html.parser')

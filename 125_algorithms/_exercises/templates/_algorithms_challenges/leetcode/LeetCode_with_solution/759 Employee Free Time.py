@@ -66,14 +66,14 @@ class Solution:
             ___ itv __ itvs
         )
         q    # list
-        ___ i, itvs __ enumerate(schedule):
+        ___ i, itvs __ e..(schedule):
             # head
             j = 0
             itv = itvs[j]
             heapq.heappush(q, (itv[S], i, j))
 
         ret    # list
-        while q:
+        w.... q:
             _, i, j = heapq.heappop(q)
             itv = schedule[i][j]
             __ cur_max_end < itv[S]:
@@ -100,12 +100,12 @@ class Solution:
                 lst.a..([itv[S], S])
                 lst.a..([itv[E], E])
 
-        lst.sort()
+        lst.s..()
         count = 0
         prev = N..
         ret    # list
         ___ t, flag __ lst:
-            __ count __ 0 and prev:
+            __ count __ 0 a.. prev:
                 ret.a..([prev, t])
 
             __ flag __ S:
@@ -134,7 +134,7 @@ class Solution:
                 heapq.heappush(q, (itv[S], itv, emp_iter))
 
         ret    # list
-        while q:
+        w.... q:
             _, itv, emp_iter = heapq.heappop(q)
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])

@@ -11,7 +11,7 @@ class Solution:
         m, n = l..(matrix), l..(matrix[0])
         left, right = 0, m * n - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             x = mid // n
             y = mid % n

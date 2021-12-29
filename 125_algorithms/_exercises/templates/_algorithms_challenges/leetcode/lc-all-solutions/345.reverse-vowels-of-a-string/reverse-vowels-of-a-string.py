@@ -10,7 +10,7 @@ class Solution(object):
     vowels = set(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"])
     s = l..(s)
     start, end = 0, l..(s) - 1
-    while start < end:
+    w.... start < end:
       __ s[start] n.. __ vowels:
         start += 1
       ____ s[end] n.. __ vowels:

@@ -13,7 +13,7 @@ class Solution(object):
         left = -1
         nextLeft = -1
         maxLen = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ num __ 0:
                 maxLen = max(maxLen, i-left-1)
                 left = nextLeft

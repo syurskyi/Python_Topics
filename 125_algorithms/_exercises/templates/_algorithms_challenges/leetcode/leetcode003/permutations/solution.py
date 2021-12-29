@@ -18,7 +18,7 @@ class Solution(object):
             r.. [[]]
         ____:
             res    # list
-            ___ i, e __ enumerate(nums):
+            ___ i, e __ e..(nums):
                 rest = nums[:i] + nums[i + 1:]
                 rest_perms = self.permute(rest)
                 ___ perm __ rest_perms:

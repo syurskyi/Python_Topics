@@ -53,10 +53,10 @@ class ClamyFernet:
 
         r.. self._clf
 
-    ___ encrypt(self, message: str) -> ByteString:
+    ___ encrypt(self, message: s..) -> ByteString:
         """Encrypts the message passed to it"""
         r.. self.clf.encrypt(message.encode())
 
-    ___ decrypt(self, token: ByteString) -> str:
+    ___ decrypt(self, token: ByteString) -> s..:
         """Decrypts the encrypted message passed to it"""
         r.. self.clf.decrypt(token).decode()

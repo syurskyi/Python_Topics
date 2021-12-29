@@ -17,7 +17,7 @@ ___ timings():
     (250, ('60', '87')),
 ])
 ___ test_get_bite_with_fastest_avg_test(rows, expected_bites, timings):
-    actual = str(get_bite_with_fastest_avg_test(timings[:rows]))
+    actual = s..(get_bite_with_fastest_avg_test(timings[:rows]))
     __ type(expected_bites) __ tuple:
         ... actual __ expected_bites
     ____:

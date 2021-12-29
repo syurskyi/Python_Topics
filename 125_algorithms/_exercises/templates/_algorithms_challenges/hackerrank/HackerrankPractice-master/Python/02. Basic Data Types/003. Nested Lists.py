@@ -11,5 +11,5 @@ ___ secondLowestGrade(classList):
 numberOfStudents = int(input())
 classList    # list
 ___ i __ r..(numberOfStudents):
-    classList.a..([str(input()), float(input())])
+    classList.a..([s..(input()), float(input())])
 print('\n'.join(secondLowestGrade(classList)))

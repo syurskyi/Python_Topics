@@ -12,7 +12,7 @@ class Solution(object):
         r..
 
       ___ i __ r..(n):
-        __ i n.. __ path and isValidQueen(path, i):
+        __ i n.. __ path a.. isValidQueen(path, i):
           path.a..(i)
           dfs(path, n, ans)
           path.pop()

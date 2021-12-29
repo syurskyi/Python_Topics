@@ -27,8 +27,8 @@ class Solution(object):
         """
         stk    # list  # hold the INDEX of UNPAIRED bracket, either ( or )
         maxa = 0
-        ___ idx, val __ enumerate(s):
-            __ val __ ")" and stk and s[stk[-1]] __ "(":
+        ___ idx, val __ e..(s):
+            __ val __ ")" a.. stk a.. s[stk[-1]] __ "(":
                 stk.pop()
                 __ n.. stk:
                     maxa = max(maxa, idx+1)

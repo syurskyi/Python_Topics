@@ -63,7 +63,7 @@ class LFUCache:
             del self.keys[freq_org][key]
             self.keys[freq_org + 1][key] = DUMMY  # dummy
 
-            __ freq_org __ self.mini and l..(self.keys[self.mini]) __ 0:
+            __ freq_org __ self.mini a.. l..(self.keys[self.mini]) __ 0:
                 self.mini = freq_org + 1
 
             r.. val

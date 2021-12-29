@@ -52,7 +52,7 @@ class Solution(object):
     ___ wordsWithPrefix(self, prefix):
         __ n.. prefix: r.. []
         children = self.root.children
-        ___ i, c __ enumerate(prefix):
+        ___ i, c __ e..(prefix):
             __ c __ children:
                 node = children[c]
                 __ i __ l..(prefix)-1:

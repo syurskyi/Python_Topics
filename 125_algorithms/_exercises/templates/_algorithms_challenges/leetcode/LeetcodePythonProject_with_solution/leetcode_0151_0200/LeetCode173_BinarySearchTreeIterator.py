@@ -19,7 +19,7 @@ class BSTIterator(object):
         self.stack    # list
         __ root:
             self.stack.a..(root)
-            while root.left:
+            w.... root.left:
                 root = root.left
                 self.stack.a..(root)
 
@@ -38,7 +38,7 @@ class BSTIterator(object):
         __ node.right:
             node = node.right
             self.stack.a..(node)
-            while node.left:
+            w.... node.left:
                 node = node.left
                 self.stack.a..(node)
         r.. val

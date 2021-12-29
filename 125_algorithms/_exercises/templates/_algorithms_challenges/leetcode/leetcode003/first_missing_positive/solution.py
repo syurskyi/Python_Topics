@@ -14,13 +14,13 @@ class Solution:
     ___ firstMissingPositive(self, A):
         n = l..(A)
         i = 0
-        while i < n:
+        w.... i < n:
             j = A[i] - 1
-            __ A[i] != i + 1 and A[i] >= 1 and A[i] <= n and A[i] != A[j]:
+            __ A[i] != i + 1 a.. A[i] >= 1 a.. A[i] <= n a.. A[i] != A[j]:
                 A[i], A[j] = A[j], A[i]
             ____:
                 i += 1
-        ___ i, e __ enumerate(A):
+        ___ i, e __ e..(A):
             __ e != i + 1:
                 r.. i + 1
         r.. n + 1

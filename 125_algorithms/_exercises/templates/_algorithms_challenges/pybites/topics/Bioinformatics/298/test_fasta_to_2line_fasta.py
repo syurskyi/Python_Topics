@@ -14,14 +14,14 @@ ___ test_well_formed_fasta():
     with open(FASTA_FILE, "r") as f:
         f.readline()
         ... (
-            f.readline().strip()
+            f.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
     with open(CONVERTED_FASTA, "r") as f_conv:
         f_conv.readline()
         ... (
-            f_conv.readline().strip()
+            f_conv.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
             "LPISILSARIYYVLFEWAYYKNHLNEIFAIWNGGIAIHGGLIGAIVTTIVFTKKRNISF"
             "WKLADIAAPSLILGQAIGRWGNFMNQEAHGGPVSRTFLESLRLPDIIINQMYINGSYYH"

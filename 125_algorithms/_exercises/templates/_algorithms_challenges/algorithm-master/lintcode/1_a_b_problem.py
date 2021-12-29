@@ -12,7 +12,7 @@ class Solution:
 
         INT_RANGE = 0xFFFFFFFF
 
-        while b != 0:
+        w.... b != 0:
             a, b = a ^ b, (a & b) << 1
             a &= INT_RANGE
 

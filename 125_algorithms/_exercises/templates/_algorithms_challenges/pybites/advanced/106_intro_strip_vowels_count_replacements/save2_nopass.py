@@ -26,7 +26,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels = 'aeiou'
 
 
-___ strip_vowels(text: str) -> Tuple[str, int]:
+___ strip_vowels(text: s..) -> Tuple[s.., int]:
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)
@@ -43,11 +43,11 @@ ___ strip_vowels(text: str) -> Tuple[str, int]:
     result    # list
     new_text = l..(text)
     vowel_count = 0
-    replaced_text = text.replace(vowels, "*")
+    replaced_text = text.r..(vowels, "*")
     number_of_vowels_found = replaced_text.c.. "*")
     ___ c __ new_text:
         __ c __ vowels:
-            c = c.replace(vowels, "*")
+            c = c.r..(vowels, "*")
             vowel_count += 1
         new_text.a..(c)
     r.. "".join(new_text), vowel_count

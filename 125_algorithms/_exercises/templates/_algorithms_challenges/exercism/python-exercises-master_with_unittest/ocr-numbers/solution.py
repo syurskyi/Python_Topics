@@ -24,7 +24,7 @@ ___ number(ocr):
     digits = ''
     ___ n __ numbers:
         try:
-            digits += str(OCR_LIST.index(n))
+            digits += s..(OCR_LIST.index(n))
         except ValueError:
             digits += '?'
     r.. digits

@@ -26,7 +26,7 @@ class Solution(object):
         __ n.. itvls:
             r.. []
 
-        itvls.sort(key=l.... x: x.start)  # sort first, since time complexity less than brute force
+        itvls.s..(key=l.... x: x.start)  # sort first, since time complexity less than brute force
         ret = [itvls[0]]
         ___ cur __ itvls[1:]:
             pre = ret[-1]
@@ -55,10 +55,10 @@ class Solution(object):
             __ ret[-1].start <= interval.start <= ret[-1].end <= interval.end:
                 ret[-1].end = interval.end
                 continue
-            __ interval.start <= ret[-1].start and ret[-1].end <= interval.end:
+            __ interval.start <= ret[-1].start a.. ret[-1].end <= interval.end:
                 ret[-1] = interval
                 continue
-            __ ret[-1].start <= interval.start < ret[-1].end and ret[-1].start <= interval.end < ret[-1].end:
+            __ ret[-1].start <= interval.start < ret[-1].end a.. ret[-1].start <= interval.end < ret[-1].end:
                 ret.a..(interval)
                 continue
             __ interval.start < ret[-1].start <= interval.end < ret[-1].end:

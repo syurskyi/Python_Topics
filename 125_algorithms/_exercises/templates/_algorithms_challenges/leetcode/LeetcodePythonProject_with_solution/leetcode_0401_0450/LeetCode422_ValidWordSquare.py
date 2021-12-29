@@ -7,7 +7,7 @@ Created on Apr 13, 2017
 class Solution(object):
     ___ validWordSquare(self, words):
         __ n.. words: r.. False
-        ___ i, word1 __ enumerate(words):
+        ___ i, word1 __ e..(words):
             word2 = ''
             ___ j __ r..(l..(word1)):
                 __ j >= l..(words):

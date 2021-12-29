@@ -24,7 +24,7 @@ class Solution(object):
     
     ___ encode(self, s):
         sumVal = 0
-        ___ _, c __ enumerate(s):
+        ___ _, c __ e..(s):
             __ c __ 'A':
                 sumVal = sumVal*4
             ____ c __ 'C':

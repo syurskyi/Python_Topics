@@ -52,7 +52,7 @@ class Solution:
         self.dfs(N.., root, y, 0)
         __ l..(self.pi) != 2:
             r.. False
-        r.. self.pi[0] != self.pi[1] and self.depths[0] __ self.depths[1]
+        r.. self.pi[0] != self.pi[1] a.. self.depths[0] __ self.depths[1]
 
 
     ___ dfs(self, pi, node, x, depth):

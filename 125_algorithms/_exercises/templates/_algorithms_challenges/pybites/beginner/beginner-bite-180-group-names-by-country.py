@@ -47,7 +47,7 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) -> defaultdict:
     countries = defaultdict(l..)
     # you code
     split_lines = data.splitlines()
@@ -57,7 +57,7 @@ ___ group_names_by_country(data: str = data) -> defaultdict:
         __ line_cnt __ 0:
             line_cnt += 1
             continue
-        arr = line.split(',')
+        arr = line.s..(',')
         print(arr)
         name = arr[1] + " " + arr[0]
         try:

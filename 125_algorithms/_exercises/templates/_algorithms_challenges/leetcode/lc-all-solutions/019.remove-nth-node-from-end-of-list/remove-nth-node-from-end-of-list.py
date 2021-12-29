@@ -15,11 +15,11 @@ class Solution(object):
     dummy.next = head
     fast = slow = dummy
 
-    while n and fast:
+    w.... n a.. fast:
       fast = fast.next
       n -= 1
 
-    while fast.next and slow.next:
+    w.... fast.next a.. slow.next:
       fast = fast.next
       slow = slow.next
 

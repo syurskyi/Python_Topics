@@ -11,14 +11,14 @@ class Solution:
         right = 0
         lefts    # list
         rights    # list
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ td:
                 d[c] = d.get(c, 0) + 1
                 __ self.contains(d, td):  # Contains all characters
                     right = i
                     # Move left pointers
                     cc = s[left]
-                    while left <= right and (cc n.. __ d o. d[cc] > td[cc]):
+                    w.... left <= right a.. (cc n.. __ d o. d[cc] > td[cc]):
                         __ cc __ d:
                             d[cc] -= 1
                         left += 1

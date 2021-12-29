@@ -3,7 +3,7 @@ class Solution:
   # @return nothing
   ___ reverseWords(self, s):
     ___ swap(start, end, slist):
-      while start < end:
+      w.... start < end:
         slist[start], slist[end] = slist[end], slist[start]
         start += 1
         end -= 1

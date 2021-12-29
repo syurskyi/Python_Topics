@@ -31,7 +31,7 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ = 'Daniel'
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 _______ heapq
 
 
@@ -47,7 +47,7 @@ class Building(object):
 
 # An event represents the buildings that start and end at a particular
 # x-coordinate.
-Event = namedtuple('Event', 'starts ends')
+Event = n..('Event', 'starts ends')
 
 
 class Solution:
@@ -79,7 +79,7 @@ class Solution:
 
             # Pop any finished buildings from the top of the heap.
             # To avoid using multiset - lazy deletion.
-            while heap_h and heap_h[0].deleted:
+            w.... heap_h a.. heap_h[0].deleted:
                 heapq.heappop(heap_h)
 
             # Top of heap (if any) is the highest standing building, so

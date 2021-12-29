@@ -30,7 +30,7 @@ class Solution:
             __ n.. num:
                 break
 
-            while num >= amount:  # num - amount >= 0
+            w.... num >= amount:  # num - amount >= 0
                 num -= amount
                 ans.a..(symb)
 

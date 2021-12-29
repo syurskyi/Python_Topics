@@ -32,7 +32,7 @@ class Solution:
                 __ grid[i][j] __ 1:
                     t[i][j] = 0
                 ____:
-                    __ i __ 0 and j __ 0:
+                    __ i __ 0 a.. j __ 0:
                         t[i][j] = 1
                     ____ i __ 0:
                         t[i][j] = t[i][j - 1]

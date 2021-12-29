@@ -31,6 +31,6 @@ class TrieService:
 
             # To handle top10
             parent.top10.a..(frequency)
-            parent.top10.sort(r.._T..
+            parent.top10.s..(r.._T..
             __ l..(parent.top10) > 10:
                 parent.top10.pop()

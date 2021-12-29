@@ -20,7 +20,7 @@ class Solution(object):
 
         diff = 0
         i, j = 0, 0
-        while i < m and j < n and diff < 2:
+        w.... i < m a.. j < n a.. diff < 2:
             __ s[i] __ t[j]:
                 i += 1
                 j += 1
@@ -33,7 +33,7 @@ class Solution(object):
 
                 diff += 1
 
-        r.. diff __ 1 o. diff __ 0 and m != n
+        r.. diff __ 1 o. diff __ 0 a.. m != n
 
 
 class Solution1(object):
@@ -48,7 +48,7 @@ class Solution1(object):
         diff = 0
         i, j = iter(s), iter(t)
         a, b = next(i, N..), next(j, N..)
-        while a and b and diff < 2:
+        w.... a a.. b a.. diff < 2:
             __ a __ b:
                 a, b = next(i, N..), next(j, N..)
             ____:
@@ -59,4 +59,4 @@ class Solution1(object):
 
                 diff += 1
 
-        r.. diff __ 1 o. diff __ 0 and m != n
+        r.. diff __ 1 o. diff __ 0 a.. m != n

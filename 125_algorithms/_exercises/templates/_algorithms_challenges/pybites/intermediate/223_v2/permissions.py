@@ -1,4 +1,4 @@
-___ get_octal_from_file_permission(rwx: str) -> str:
+___ get_octal_from_file_permission(rwx: s..) -> s..:
     """Receive a Unix file permission and convert it to
        its octal representation.
 
@@ -22,13 +22,13 @@ ___ get_octal_from_file_permission(rwx: str) -> str:
     ___ i __ r..(0,l..(rwx),3):
         permissions = rwx[i:i+3]
         r = 0
-        ___ i,value __ enumerate(reversed(permissions)):
+        ___ i,value __ e..(reversed(permissions)):
             __ value != '-':
                 r += base**(i)
 
 
 
-        number.a..(str(r))
+        number.a..(s..(r))
 
 
     r.. ''.join(number)

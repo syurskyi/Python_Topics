@@ -29,7 +29,7 @@ class Solution:
         max_area = heights[0]
         stack    # list
         ___ i __ r..(n + 1):
-            while stack and (i __ n o. heights[stack[-1]] > heights[i]):
+            w.... stack a.. (i __ n o. heights[stack[-1]] > heights[i]):
                 h = heights[stack.pop()]
                 __ stack:
                     w = i - stack[-1] - 1

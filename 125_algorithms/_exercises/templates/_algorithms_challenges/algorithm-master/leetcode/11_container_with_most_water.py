@@ -9,7 +9,7 @@ class Solution:
             r.. ans
 
         left, right = 0, l..(H) - 1
-        while left < right:
+        w.... left < right:
             area = m..(H[left], H[right]) * (right - left)
             __ area > ans:
                 ans = area

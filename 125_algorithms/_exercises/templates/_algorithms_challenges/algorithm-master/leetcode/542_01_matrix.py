@@ -25,7 +25,7 @@ class Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m a.. 0 <= _y < n):
                     continue
                 __ ans[_x][_y] < ans[x][y] + 1:
                     continue

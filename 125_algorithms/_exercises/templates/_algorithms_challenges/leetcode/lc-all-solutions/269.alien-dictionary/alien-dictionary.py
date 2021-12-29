@@ -41,7 +41,7 @@ class Solution(object):
       a = words[i]
       b = words[i + 1]
       i = 0
-      while i < l..(a) and i < l..(b):
+      w.... i < l..(a) a.. i < l..(b):
         __ a[i] != b[i]:
           nodeA = nodeB = N..
           __ a[i] n.. __ graph:
@@ -57,7 +57,7 @@ class Solution(object):
           nodeA.connect(nodeB)
           break
         i += 1
-      __ i < l..(a) and i >= l..(b):
+      __ i < l..(a) a.. i >= l..(b):
         r.. ""
 
     ___ c __ graph:

@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists():
-    urlretrieve(url.format(filename=filename), json_input_file)
+    urlretrieve(url.f..(filename=filename), json_input_file)
 
 
 ___ get_json_data():
@@ -29,7 +29,7 @@ ___ get_passing_code(json_data=json_data):
        Write to /tmp (tmp variable).
     """
     ___ row __ json_data["bites"]:
-        filename_pre = row["bite"].split(".")[0].replace(" ", "")
+        filename_pre = row["bite"].s..(".")[0].r..(" ", "")
         with open(f"{tmp}/{filename_pre}.py", "w") as f:
             f.write(row["passing_code"])
 

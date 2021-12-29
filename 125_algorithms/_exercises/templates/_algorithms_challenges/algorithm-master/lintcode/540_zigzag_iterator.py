@@ -35,9 +35,9 @@ class ZigzagIterator:
     @return: True if has next
     """
     ___ hasNext(self):
-        while self.y < self.max_y:
+        w.... self.y < self.max_y:
             __ (
-                self.x < l..(self.g) and
+                self.x < l..(self.g) a..
                 self.y < l..(self.g[self.x])
             ):
                 r.. True

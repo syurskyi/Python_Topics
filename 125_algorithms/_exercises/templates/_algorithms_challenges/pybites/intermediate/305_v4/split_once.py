@@ -2,7 +2,7 @@ ____ typing _______ List
 _______ string
 
 
-___ split_once(text: str, separators: str = N..) -> List[str]:
+___ split_once(text: s.., separators: s.. = N..) -> List[s..]:
     print(f'{text=}')
     __ separators __ N..
         separators = string.whitespace
@@ -12,12 +12,12 @@ ___ split_once(text: str, separators: str = N..) -> List[str]:
 
     __ indices:
         indices = s..(indices)
-        split    # list
+        s..    # list
         last_index = 0
         ___ index __ indices:
-            split.a..(text[last_index:index])
+            s...a..(text[last_index:index])
             last_index = index + 1
-        split.a..(text[last_index:])
-        r.. split
+        s...a..(text[last_index:])
+        r.. s..
     ____:
         r.. [text]

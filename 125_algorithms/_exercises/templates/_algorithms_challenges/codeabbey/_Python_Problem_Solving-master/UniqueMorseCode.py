@@ -1,5 +1,5 @@
 class Solution:
-    ___ uniqueMorseRepresentations(self, words: List[str]) -> int:
+    ___ uniqueMorseRepresentations(self, words: List[s..]) -> int:
         tab = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
         store_trans    # list
         ___ i __ words:

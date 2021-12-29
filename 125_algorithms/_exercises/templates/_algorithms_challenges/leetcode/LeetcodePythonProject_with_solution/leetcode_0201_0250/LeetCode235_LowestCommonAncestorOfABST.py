@@ -21,9 +21,9 @@ class Solution(object):
         """
         __ n.. root o. n.. p o. n.. q:
             r.. N..
-        ____ p.val < root.val and q.val < root.val:
+        ____ p.val < root.val a.. q.val < root.val:
             r.. self.lowestCommonAncestor(root.left, p, q)
-        ____ p.val > root.val and q.val > root.val:
+        ____ p.val > root.val a.. q.val > root.val:
             r.. self.lowestCommonAncestor(root.right, p, q)
         ____:
             r.. root

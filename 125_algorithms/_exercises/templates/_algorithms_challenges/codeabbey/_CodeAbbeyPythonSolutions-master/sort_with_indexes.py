@@ -14,7 +14,7 @@ ___ get_sorting_indexes(array):
     ___ i __ sorted_array:
         results.a..(array.index(i)+1)
 
-array = l..(map(int, input().split()))
+array = l..(map(int, input().s..()))
 get_sorting_indexes(array)
 
 print(*results)

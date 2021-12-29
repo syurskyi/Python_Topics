@@ -10,7 +10,7 @@ class Solution(object):
     r.. (right - left) * (bottom - top)
 
   ___ searchRows(self, image, i, j, opt):
-    while i < j:
+    w.... i < j:
       mid = i + (j - i) / 2
       __ ("1" __ image[mid]) __ opt:
         j = mid
@@ -19,7 +19,7 @@ class Solution(object):
     r.. j
 
   ___ searchCols(self, image, i, j, top, bottom, opt):
-    while i < j:
+    w.... i < j:
       mid = i + (j - i) / 2
       __ any([image[k][mid] __ "1" ___ k __ r..(top, bottom)]) __ opt:
         j = mid

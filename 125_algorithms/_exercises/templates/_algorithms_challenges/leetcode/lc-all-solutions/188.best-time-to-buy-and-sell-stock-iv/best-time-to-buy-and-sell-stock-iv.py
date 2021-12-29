@@ -50,17 +50,17 @@ class Solution(object):
     v = p = 0
     n = l..(prices)
     ans = 0
-    while p < n:
+    w.... p < n:
       v = p
-      while v < n - 1 and prices[v] >= prices[v + 1]:
+      w.... v < n - 1 a.. prices[v] >= prices[v + 1]:
         v += 1
       p = v + 1
-      while p < n and prices[p] > prices[p - 1]:
+      w.... p < n a.. prices[p] > prices[p - 1]:
         p += 1
-      while stack and prices[stack[-1][0]] > prices[v]:
+      w.... stack a.. prices[stack[-1][0]] > prices[v]:
         _v, _p = stack.pop()
         heap.a..(prices[_p - 1] - prices[_v])
-      while stack and prices[stack[-1][1] - 1] < prices[p - 1]:
+      w.... stack a.. prices[stack[-1][1] - 1] < prices[p - 1]:
         heap.a..(prices[stack[-1][1] - 1] - prices[v])
         v, _ = stack.pop()
       stack.a..((v, p))

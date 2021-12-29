@@ -52,7 +52,7 @@ class Solution(object):
       __ s[i] __ "[":
         i += 1
         ret = NestedInteger()
-        while i < l..(s):
+        w.... i < l..(s):
           __ s[i] __ "]":
             r.. ret, i + 1
           ____ s[i] __ "[-0123456789":
@@ -62,7 +62,7 @@ class Solution(object):
             i += 1
       ____:
         j = i
-        while j < l..(s) and s[j] __ "-0123456789":
+        w.... j < l..(s) a.. s[j] __ "-0123456789":
           j += 1
         r.. NestedInteger(int(s[i:j])), j
 

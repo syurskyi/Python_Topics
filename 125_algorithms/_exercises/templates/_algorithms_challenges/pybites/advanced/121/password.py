@@ -15,14 +15,14 @@ ___ password_complexity(password):
 
 
 
-    __ re.search(r'[a-z]',password) and re.search(r'[A-Z]',password):
+    __ re.search(r'[a-z]',password) a.. re.search(r'[A-Z]',password):
         score += 1
     
     __ re.search(r'[^\sa-zA-Z0-9]',password):
         score += 1
 
 
-    __ re.search(r'\d',password) and re.search(r'[a-zA-Z]',password):
+    __ re.search(r'\d',password) a.. re.search(r'[a-zA-Z]',password):
         score += 1
 
 

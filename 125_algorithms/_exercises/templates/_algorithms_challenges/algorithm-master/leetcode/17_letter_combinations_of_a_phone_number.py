@@ -25,5 +25,5 @@ class Solution:
                     _queue.a..(_c + c)
             queue, _queue = _queue, []
 
-        queue.sort()
+        queue.s..()
         r.. queue

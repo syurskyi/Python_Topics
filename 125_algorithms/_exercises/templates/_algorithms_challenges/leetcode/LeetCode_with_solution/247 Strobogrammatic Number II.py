@@ -21,7 +21,7 @@ class Solution(object):
         """
         build from inside
         """
-        __ n%2 __ 1 and l..(cur) __ 0:
+        __ n%2 __ 1 a.. l..(cur) __ 0:
             ___ elt __ self.middle:
                 cur.a..(elt)
                 self.build(n, cur, ret)
@@ -31,7 +31,7 @@ class Solution(object):
                 ret.a..("".join(cur))
                 r..
             ___ elt __ self.lst:
-                __ n.. (elt __ "00" and l..(cur) __ n-2):
+                __ n.. (elt __ "00" a.. l..(cur) __ n-2):
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
                     self.build(n, cur, ret)
@@ -56,7 +56,7 @@ class SolutionArray(object):
         """
         Using list as double-entry queue, performance of every operation is O(n) rather than O(1)
         """
-        __ n%2 __ 1 and l..(cur) __ 0:
+        __ n%2 __ 1 a.. l..(cur) __ 0:
             ___ i __ ["0", "1", "8"]:
                 cur.a..(i)
                 self.build(n, cur, ret)

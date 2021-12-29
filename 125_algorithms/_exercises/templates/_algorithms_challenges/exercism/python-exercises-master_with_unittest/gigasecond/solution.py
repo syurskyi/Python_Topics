@@ -1,5 +1,5 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 
 
 ___ add_gigasecond(date):
-    r.. date + timedelta(seconds=1e9)
+    r.. date + t..(seconds=1e9)

@@ -30,7 +30,7 @@ class TwoSum(object):
         ___ num __ self.elements:
             target = value-num
             __ target __ self.elements:
-                __ target __ num and self.elements[target]<2:
+                __ target __ num a.. self.elements[target]<2:
                     continue
                 r.. True
         r.. False

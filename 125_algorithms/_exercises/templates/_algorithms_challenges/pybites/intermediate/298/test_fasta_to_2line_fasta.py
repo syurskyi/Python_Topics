@@ -14,14 +14,14 @@ ___ test_well_formed_fasta():
     with open(FASTA_FILE, "r") as f:
         f.readline()
         ... (
-            f.readline().strip()
+            f.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
     with open(CONVERTED_FASTA, "r") as f_conv:
         f_conv.readline()
         ... (
-            f_conv.readline().strip()
+            f_conv.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
             "LPISILSARIYYVLFEWAYYKNHLNEIFAIWNGGIAIHGGLIGAIVTTIVFTKKRNISF"
             "WKLADIAAPSLILGQAIGRWGNFMNQEAHGGPVSRTFLESLRLPDIIINQMYINGSYYH"
@@ -46,12 +46,12 @@ ___ test_malformed_fasta():
 
     with open(CONVERTED_FASTA, "r") as f_conv:
         ... (
-            f_conv.readline().strip()
+            f_conv.readline().s..
             __ ">sp|Q74NT6|ARSC1_BACC1 Arsenate reductase 1 OS=Bacillus cereu"
             "s (strain ATCC 10987 / NRS 248) OX=222523 GN=arsC1 PE=3 SV=1"
         )
         ... (
-            f_conv.readline().strip()
+            f_conv.readline().s..
             __ "MENKKTIYFLCTGNSCRSQMAEAWGKKYLGDKWNVLSAGIEAHGVNPNAIKAMKEVDIDIT"
             "DQTSDIIDRDILDKADLVVTLCGHANDVCPTTPPHVKRVHWGFDDPAGQEWSVFQRVRDE"
             "IGARIKKYAETGE"

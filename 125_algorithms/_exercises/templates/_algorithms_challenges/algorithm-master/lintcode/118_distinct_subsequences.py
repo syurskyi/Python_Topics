@@ -8,7 +8,7 @@ class Solution:
         __ S __ N.. o. T __ N..
             r.. 0
 
-        __ S __ '' and '':
+        __ S __ '' a.. '':
             r.. 1
 
         m, n = l..(S), l..(T)

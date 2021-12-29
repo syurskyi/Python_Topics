@@ -14,9 +14,9 @@ class Solution(object):
         prod = 1
         left = 0
         count = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             prod *= num
-            while left < i+1 and prod >= k:
+            w.... left < i+1 a.. prod >= k:
                 prod //= nums[left]
                 left += 1
             count += i-left+1

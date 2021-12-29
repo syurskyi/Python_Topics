@@ -20,7 +20,7 @@ class Solution(object):
         res    # list
         ___ i __ r..(n, -1, -1):
             __ dp[i]:
-                dp[i].sort()
+                dp[i].s..()
                 res += dp[i]
                 __ l..(res) >= k:
                     break

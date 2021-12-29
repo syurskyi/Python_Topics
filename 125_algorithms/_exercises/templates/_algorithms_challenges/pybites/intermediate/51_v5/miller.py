@@ -1,8 +1,8 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
 # https://pythonclock.org/
-PY2_DEATH_DT = datetime(year=2020, month=1, day=1)
-BITE_CREATED_DT = datetime.strptime('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
+PY2_DEATH_DT = d__ y.._2020,  m.._1,  d.._1)
+BITE_CREATED_DT = d__.strptime('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
 
 SEC_PER_HOUR = 60 * 60
 SEC_PER_DAY = SEC_PER_HOUR * 24

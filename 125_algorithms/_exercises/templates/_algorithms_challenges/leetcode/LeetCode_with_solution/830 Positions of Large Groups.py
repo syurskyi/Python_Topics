@@ -35,13 +35,13 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ largeGroupPositions(self, S: str) -> List[List[int]]:
+    ___ largeGroupPositions(self, S: s..) -> List[List[int]]:
         i = 0
         j = 0
         ret    # list
         n = l..(S)
-        while j < n:
-            while j < n and S[i] __ S[j]:
+        w.... j < n:
+            w.... j < n a.. S[i] __ S[j]:
                 j += 1
             __ j - i >= 3:
                 ret.a..([i, j - 1])

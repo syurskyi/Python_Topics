@@ -18,12 +18,12 @@ class Solution(object):
         _______ heapq
         heap    # list
         ___ l __ lists:
-            while l:
+            w.... l:
                 heapq.heappush(heap, l.val)
                 l = l.next
         dummy = ListNode(-1)
         prev = dummy
-        while heap:
+        w.... heap:
             val = heapq.heappop(heap)
             prev.next = ListNode(val)
             prev = prev.next
@@ -38,7 +38,7 @@ class Solution(object):
         ]
         ___ lists __ testCases:
             node = self.mergeKLists(lists)
-            while node:
+            w.... node:
                 print('%s -> ' % node.val, end='')
                 node = node.next
             print('')

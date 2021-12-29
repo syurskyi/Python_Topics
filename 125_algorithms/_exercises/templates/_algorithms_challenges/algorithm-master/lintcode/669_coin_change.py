@@ -16,7 +16,7 @@ class Solution:
         queue, _queue = [0], []
         visited = set(queue)
 
-        while queue:
+        w.... queue:
             ans += 1
 
             ___ a __ queue:

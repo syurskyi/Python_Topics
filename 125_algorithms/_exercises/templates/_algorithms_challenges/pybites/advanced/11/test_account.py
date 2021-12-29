@@ -41,7 +41,7 @@ ___ test_account_indexing_iter():
 
 
 ___ test_account_str():
-    ... str(checking) __ 'Checking account - balance: 15'
-    ... str(saving) __ 'Saving account - balance: 10'
+    ... s..(checking) __ 'Checking account - balance: 15'
+    ... s..(saving) __ 'Saving account - balance: 10'
     saving + 5
-    ... str(saving) __ 'Saving account - balance: 15'
+    ... s..(saving) __ 'Saving account - balance: 15'

@@ -21,7 +21,7 @@ class Solution:
         :return: None, Do not return anything, modify node in-place instead.
         """
         cur = node
-        while cur.next:
+        w.... cur.next:
             cur.val = cur.next.val
             __ n.. cur.next.next:
                 cur.next = N..

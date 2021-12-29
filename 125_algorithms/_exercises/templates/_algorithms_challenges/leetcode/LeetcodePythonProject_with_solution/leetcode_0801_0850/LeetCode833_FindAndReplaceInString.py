@@ -15,7 +15,7 @@ class Solution(object):
         s = S
         prev = 0
         res = ''
-        ___ ind, source, target __ s..(zip(indexes, sources, targets)):
+        ___ ind, source, target __ s..(z..(indexes, sources, targets)):
             __ s[ind:ind+l..(source)] __ source:
                 res += s[prev:ind]
                 res += target

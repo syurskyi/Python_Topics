@@ -38,7 +38,7 @@ class Solution:
         counter = defaultdict(int)
         first = {}  # map from number to index
         mx = [0, 0]  #  [degree, length]
-        ___ i, n __ enumerate(nums):
+        ___ i, n __ e..(nums):
             __ n n.. __ first:
                 first[n] = i  # setdefault
             counter[n] += 1

@@ -13,5 +13,5 @@ class Animal:
 
     @classmethod
     ___ zoo(cls):
-        r.. '\n'.join(str(animal) ___ animal __ cls.animals)
+        r.. '\n'.join(s..(animal) ___ animal __ cls.animals)
 

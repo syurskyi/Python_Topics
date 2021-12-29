@@ -7,12 +7,12 @@ Created on Apr 5, 2017
 class Solution(object):
     ___ integerReplacement(self, n):
         steps = 0
-        while n > 1:
+        w.... n > 1:
             steps += 1
             __ n%2 __ 0:
                 n /= 2
             ____:
-                __ (n+1)%4 __ 0 and n != 3:
+                __ (n+1)%4 __ 0 a.. n != 3:
                     n += 1
                 ____:
                     n -= 1

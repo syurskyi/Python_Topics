@@ -30,7 +30,7 @@ ___ get_pycon_speaker_first_names(soup_ N..
 
     ___ speaker __ speakers:
         text = speaker.getText(strip=True)
-        result = re.split(r'\s*,|/\s*',text)
+        result = re.s..(r'\s*,|/\s*',text)
         first_names.extend(r.s.. [0] ___ r __ result)
 
     r.. first_names

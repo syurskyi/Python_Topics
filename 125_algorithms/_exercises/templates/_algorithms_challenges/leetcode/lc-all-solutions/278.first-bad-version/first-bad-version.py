@@ -11,7 +11,7 @@ class Solution(object):
     """
     lo = 1
     hi = n
-    while lo < hi:
+    w.... lo < hi:
       mid = lo + (hi - lo) / 2
       __ isBadVersion(mid):
         hi = mid

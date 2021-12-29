@@ -14,9 +14,9 @@ class Solution(object):
     __ s:
       cnt = start = 0
       root = N..
-      ___ i, c __ enumerate(s):
+      ___ i, c __ e..(s):
         __ c __ "(":
-          __ n.. root and cnt __ 0:
+          __ n.. root a.. cnt __ 0:
             root = TreeNode(s[:i])
           cnt += 1
           __ cnt __ 1:

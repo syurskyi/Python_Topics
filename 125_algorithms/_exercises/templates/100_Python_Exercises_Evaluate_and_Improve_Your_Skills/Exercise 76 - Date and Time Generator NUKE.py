@@ -1,5 +1,5 @@
 # Please print the script in the expected output
 
-____ datetime _______ datetime
+____ d__ _______ d__
 
-print(datetime.now().strftime("Today is %A, %B %d, %Y"))
+print(d__.now().strftime("Today is %A, %B %d, %Y"))

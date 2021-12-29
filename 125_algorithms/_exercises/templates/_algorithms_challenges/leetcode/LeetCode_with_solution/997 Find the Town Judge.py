@@ -59,6 +59,6 @@ class Solution:
             egress[p].add(q)
             ingress[q].add(p)
         ___ i __ r..(1, N+1):
-            __ l..(egress[i]) __ 0 and l..(ingress[i]) __ N - 1:
+            __ l..(egress[i]) __ 0 a.. l..(ingress[i]) __ N - 1:
                 r.. i
         r.. -1

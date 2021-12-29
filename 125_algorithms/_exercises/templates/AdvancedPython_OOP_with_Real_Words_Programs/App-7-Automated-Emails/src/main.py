@@ -1,13 +1,13 @@
 _____ yagmail
 _____ pandas
 ____ news _____ NewsFeed
-_____ datetime
+_____ d__
 _____ t__
 
 
 ___ send_email():
-    today  datetime.datetime.now().strftime('%Y-%m-%d')
-    yesterday  (datetime.datetime.now() - datetime.timedelta(days1)).strftime('%Y-%m-%d')
+    today  d__.d__.now().strftime('%Y-%m-%d')
+    yesterday  (d__.d__.now() - d__.t..(days1)).strftime('%Y-%m-%d')
     news_feed  NewsFeed(interestrow['interest'],
                          from_dateyesterday,
                          to_datetoday)
@@ -18,7 +18,7 @@ ___ send_email():
 
 
 w___ T...
-    __ datetime.datetime.now().hour __ 13 and datetime.datetime.now().minute __ 28:
+    __ d__.d__.now().hour __ 13 a.. d__.d__.now().minute __ 28:
         df  pandas.read_excel('people.xlsx')
 
         ___ index, row __ df.iterrows():

@@ -28,8 +28,8 @@ class Solution:
         :type heaters: List[int]
         :rtype: int
         """
-        houses.sort()
-        heaters.sort()
+        houses.s..()
+        heaters.s..()
         r = 0
         i = 0
         ___ h __ houses:
@@ -48,14 +48,14 @@ class Solution:
         :type heaters: List[int]
         :rtype: int
         """
-        houses.sort()
-        heaters.sort()
+        houses.s..()
+        heaters.s..()
         heaters.a..(float('inf'))
         r = 0
         i = 0
         ___ h __ houses:
             # possible bisect
-            while h > (heaters[i] + heaters[i+1]) / 2:
+            w.... h > (heaters[i] + heaters[i+1]) / 2:
                 # find which heater is responsible for the house
                 i += 1
 

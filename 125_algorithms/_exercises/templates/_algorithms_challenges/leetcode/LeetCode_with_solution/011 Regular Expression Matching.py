@@ -37,12 +37,12 @@ class Solution:
 
         index = 0
         state = 0
-        while index < l..(tape) and state < l..(regex):
+        w.... index < l..(tape) a.. state < l..(regex):
             char = tape[index]
-            __ state+1 < l..(regex) and regex[state+1] __ "*":
+            __ state+1 < l..(regex) a.. regex[state+1] __ "*":
                 __ regex[state] != ".":
                     __ char __ regex[state]:  # advance tape
-                        while index < l..(tape) and tape[index] __ char: index += 1
+                        w.... index < l..(tape) a.. tape[index] __ char: index += 1
                         state += 2
                     ____:
                         state += 2
@@ -50,7 +50,7 @@ class Solution:
                     state += 2
                     __ state < l..(regex):
                         __ regex[state] != ".":  # find until the next char in regex
-                            while index < l..(tape) and tape[index] != regex[state]: index += 1
+                            w.... index < l..(tape) a.. tape[index] != regex[state]: index += 1
                         ____:  # difficult part
                             count = 1
 
@@ -63,7 +63,7 @@ class Solution:
                 ____:
                     break
 
-        __ index __ l..(tape) and state __ l..(regex):
+        __ index __ l..(tape) a.. state __ l..(regex):
             r.. True
         r.. False
 
@@ -86,19 +86,19 @@ class Solution:
         state = 0
 
         # dfs terminal condition
-        __ n.. tape and n.. regex:
+        __ n.. tape a.. n.. regex:
             r.. True
         # if not s and p or s and not p:
-        __ tape and n.. regex:  # possible "", "a*"
+        __ tape a.. n.. regex:  # possible "", "a*"
             r.. False
 
-        __ n.. tape and regex:
-            __ state+1 < l..(regex) and regex[state+1] __ "*":
+        __ n.. tape a.. regex:
+            __ state+1 < l..(regex) a.. regex[state+1] __ "*":
                 r.. self.isMatch(tape, regex[state+2:])
             ____:
                 r.. False
 
-        __ state+1 < l..(regex) and regex[state+1] __ "*":
+        __ state+1 < l..(regex) a.. regex[state+1] __ "*":
             __ tape[index] __ regex[state] o. regex[state] __ ".":  # consume tokens
                 r.. self.isMatch(tape[index+1:], regex[state:]) o. \
                        self.isMatch(tape[index+1:], regex[state+2:]) o. \
@@ -146,7 +146,7 @@ class Solution:
         ___ j __ xrange(n-1, -1, -1):
             __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
-            ____ j+1 < n and regex[j+1] __ "*":
+            ____ j+1 < n a.. regex[j+1] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____:
                 dp[m][j] = False
@@ -155,11 +155,11 @@ class Solution:
         ___ i __ xrange(m-1, -1, -1):
             ___ j __ xrange(n-1, -1, -1):
                 __ regex[j] __ "*":
-                    __ j-1 >= 0 and regex[j-1] != "*":
+                    __ j-1 >= 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
                     ____:
                         r.. False  # two consecutive *
-                ____ j+1 < n and regex[j+1] __ "*":
+                ____ j+1 < n a.. regex[j+1] __ "*":
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
                     ____:

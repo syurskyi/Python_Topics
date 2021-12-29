@@ -17,7 +17,7 @@ class Solution:
         newHead = UndirectedGraphNode(node.label)
         hashmap = {node:newHead}
         queue = [node]
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             nodeCopy = hashmap[node]
             ___ node0 __ node.neighbors:

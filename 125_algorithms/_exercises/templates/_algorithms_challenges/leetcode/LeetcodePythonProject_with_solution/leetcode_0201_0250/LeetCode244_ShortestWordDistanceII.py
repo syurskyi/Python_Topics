@@ -10,7 +10,7 @@ class WordDistance(object):
         :type words: List[str]
         """
         hashmap = {}
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             hashmap[word] = hashmap.get(word, [])+[i]
         self.hashmap = hashmap
     
@@ -23,7 +23,7 @@ class WordDistance(object):
         i, j = 0, 0
         res = float('inf')
         arr1, arr2 = self.hashmap[word1], self.hashmap[word2]
-        while i < l..(arr1) and j < l..(arr2):
+        w.... i < l..(arr1) a.. j < l..(arr2):
             res = m..(res, abs(arr1[i]-arr2[j]))
             __ arr1[i] > arr2[j]:
                 j += 1

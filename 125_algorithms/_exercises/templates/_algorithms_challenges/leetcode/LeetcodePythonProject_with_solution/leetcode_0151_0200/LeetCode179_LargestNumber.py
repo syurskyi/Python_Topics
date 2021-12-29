@@ -9,15 +9,15 @@ class Solution:
     # @return {string}
     ___ largestNumber(self, nums):
         comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
-        nums = l..(map(str, nums))
-        nums.sort(cmp=comp, r.._T..
+        nums = l..(map(s.., nums))
+        nums.s..(cmp=comp, r.._T..
         r.. ''.join(nums).lstrip('0')
     
     # @param {integer[]} nums
     # @return {string}
     ___ largestNumber_python2(self, nums):
         #python 2 only
-        num = [str(x) ___ x __ nums]
+        num = [s..(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
         r.. ''.join(num).lstrip('0') o. '0'
     

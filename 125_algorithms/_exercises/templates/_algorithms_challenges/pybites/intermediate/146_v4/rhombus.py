@@ -21,6 +21,6 @@ ___ gen_rhombus(width):
     ___ k __ x:
         stars = STAR * (width - 2*abs(k))
         pad = ' ' * ((width - l..(stars)) //2)
-        yield pad + stars + pad
+        y.. pad + stars + pad
 
 

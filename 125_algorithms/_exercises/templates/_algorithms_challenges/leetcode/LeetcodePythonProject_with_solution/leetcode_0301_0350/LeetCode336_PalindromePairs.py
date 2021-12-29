@@ -9,25 +9,25 @@ class Solution(object):
         __ n.. words: r.. []
         hashmap = {}
         result    # list
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             hashmap[word] = i
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             ___ j __ r..(l..(word)+1):
                 s1 = word[:j]
                 s2 = word[j:]
                 __ self.isPalindrome(s1):
                     str2rvs = s2[::-1]
-                    __ str2rvs __ hashmap and hashmap[str2rvs] != i:
+                    __ str2rvs __ hashmap a.. hashmap[str2rvs] != i:
                         result.a..([hashmap[str2rvs], i])
                 __ self.isPalindrome(s2):
                     str1rvs = s1[::-1]
-                    __ str1rvs __ hashmap and hashmap[str1rvs] != i and s2:
+                    __ str1rvs __ hashmap a.. hashmap[str1rvs] != i a.. s2:
                         result.a..([i, hashmap[str1rvs]])
         r.. result
     
     ___ isPalindrome(self, s):
         left, right = 0, l..(s)-1
-        while left < right:
+        w.... left < right:
             __ s[left] != s[right]:
                 r.. False
             left+=1

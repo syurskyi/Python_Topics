@@ -25,7 +25,7 @@ class Solution(object):
       t.clear()
       score = 0
 
-      while start + wl <= l..(s) and s[start:start + wl] __ d:
+      w.... start + wl <= l..(s) a.. s[start:start + wl] __ d:
         cword = s[start:start + wl]
         t[cword] = t.get(cword, 0) + 1
         __ t[cword] <= d[cword]:

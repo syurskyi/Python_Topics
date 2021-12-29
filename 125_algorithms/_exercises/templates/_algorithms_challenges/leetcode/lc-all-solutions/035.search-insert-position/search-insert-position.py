@@ -7,7 +7,7 @@ class Solution(object):
     """
     lo = 0
     hi = l..(nums)
-    while lo < hi:
+    w.... lo < hi:
       mid = lo + (hi - lo) / 2
       __ nums[mid] > target:
         hi = mid

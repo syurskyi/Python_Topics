@@ -1,4 +1,4 @@
-____ datetime _______ date, timedelta
+____ d__ _______ date, t..
 ____ random _______ shuffle
 
 ___ get_missing_dates(dates):
@@ -12,11 +12,11 @@ ___ get_missing_dates(dates):
     """
     first_dt = m..(dates)
     last_dt = max(dates)
-    full_dt = [first_dt+timedelta(i) ___ i __ r..((last_dt-first_dt).days+1)]
+    full_dt = [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
     r.. s..(set(full_dt)-set(dates))
 
 
-___ _create_dates(missing, year=2019, month=2):
+___ _create_dates(missing, year=2019,  m.._2):
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -24,18 +24,18 @@ ___ _create_dates(missing, year=2019, month=2):
 
        You can optionally specify year and month.
     """
-    first = date(year=year, month=month, day=1)
-    last = first.replace(month=month+1) - timedelta(days=1)
+    first = date y.._year,  m.._month,  d.._1)
+    last = first.r..( m.._month+1) - t..(days=1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
-    yield first
+    y.. first
 
     ___ day __ r..(first.day + 1, last.day):
         __ day n.. __ missing:
-            yield first.replace(day=day)
+            y.. first.r..( d.._day)
 
-    yield last
+    y.. last
 
 
 date_list = l..(_create_dates([2, 7, 11], 2))

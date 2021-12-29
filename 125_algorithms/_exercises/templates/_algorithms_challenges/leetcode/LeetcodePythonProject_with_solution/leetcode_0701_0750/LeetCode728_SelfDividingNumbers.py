@@ -17,7 +17,7 @@ class Solution(object):
         r.. res
         
     ___ isSelfDividing(self, num):
-        ___ digit __ str(num):
+        ___ digit __ s..(num):
             d = int(digit)
             __ d __ 0 o. num%d != 0:
                 r.. False

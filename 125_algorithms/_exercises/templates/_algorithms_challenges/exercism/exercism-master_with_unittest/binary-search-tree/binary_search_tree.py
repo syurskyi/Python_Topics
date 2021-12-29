@@ -6,7 +6,7 @@ class TreeNode(object):
 
     ___ __str__(self):
         fmt = 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.format(self.data, self.left, self.right)
+        r.. fmt.f..(self.data, self.left, self.right)
 
 
 class BinarySearchTree(object):
@@ -42,7 +42,7 @@ class BinarySearchTree(object):
 
     ___ inorder_traversal(self, node):
         __ node.left:
-            yield ____ self.inorder_traversal(node.left)
-        yield node
+            y.. ____ self.inorder_traversal(node.left)
+        y.. node
         __ node.right:
-            yield ____ self.inorder_traversal(node.right)
+            y.. ____ self.inorder_traversal(node.right)

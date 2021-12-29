@@ -17,7 +17,7 @@ ___ get_profile(name, age, *args, **kwargs):
 
     __ l..(args) > 0:
         sport_list = [arg ___ arg __ args]
-        sport_list.sort()
+        sport_list.s..()
         user_profile["sports"] = sport_list
 
     __ l..(kwargs) > 0:

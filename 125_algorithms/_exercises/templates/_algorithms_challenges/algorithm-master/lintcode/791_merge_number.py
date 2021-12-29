@@ -16,7 +16,7 @@ class Solution:
         ___ a __ A:
             heappush(heap, a)
 
-        while l..(heap) > 1:
+        w.... l..(heap) > 1:
             _sum = heappop(heap) + heappop(heap)
             ans += _sum
             heappush(heap, _sum)

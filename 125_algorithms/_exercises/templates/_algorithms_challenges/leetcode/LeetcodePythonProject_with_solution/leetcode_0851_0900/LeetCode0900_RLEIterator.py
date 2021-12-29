@@ -18,7 +18,7 @@ class RLEIterator(object):
         """
         val = -1
         ___ _ __ r..(n):
-            while self.countIdx < l..(self.arr) and \
+            w.... self.countIdx < l..(self.arr) a.. \
                     self.arr[self.countIdx] __ 0:
                 self.countIdx += 2
                 self.numIdx += 2

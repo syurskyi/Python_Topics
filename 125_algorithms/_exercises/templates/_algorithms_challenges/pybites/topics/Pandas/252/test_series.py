@@ -17,7 +17,7 @@ ___ float_series():
 @pytest.fixture()
 ___ alpha_series():
     """Returns a pandas Series containing floats"""
-    dictionary = d..(zip(string.ascii_lowercase, r..(1, 27)))
+    dictionary = d..(z..(string.ascii_lowercase, r..(1, 27)))
     r.. pd.Series(dictionary)
 
 

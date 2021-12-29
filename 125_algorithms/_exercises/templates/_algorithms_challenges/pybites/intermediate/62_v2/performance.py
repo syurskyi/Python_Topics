@@ -44,15 +44,15 @@ ___ ordered_list_max_fast(sequence: List[int]) -> int:
 
 
 @timing
-___ list_concat(sequence: List[str]) -> str:
+___ list_concat(sequence: List[s..]) -> s..:
     bigstr = ''
     ___ i __ sequence:
-        bigstr += str(i)
+        bigstr += s..(i)
     r.. bigstr
 
 
 @timing
-___ list_concat_fast(sequence: List[str]) -> str:
+___ list_concat_fast(sequence: List[s..]) -> s..:
     r.. ''.join(sequence)
 
 
@@ -83,4 +83,4 @@ ___ list_creation(n: int) -> List[int]:
 @timing
 ___ list_creation_fast(n: int) -> Generator[int, N.., N..]:
     ___ i __ r..(n):
-        yield i
+        y.. i

@@ -1,10 +1,10 @@
-____ datetime _______ date
+____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ collections _______ namedtuple,defaultdict
+____ collections _______ n..,defaultdict
 
 
 
-MovieRented = namedtuple("MovieRented","title price date")
+MovieRented = n..("MovieRented","title price date")
 '''
 class MovieRented(NamedTuple):
     title: str
@@ -21,7 +21,7 @@ STREAM, RENT = 'stream', 'rent'
 ___ rent_or_stream(
     renting_history: RentingHistory,
     streaming_cost_per_month: int = STREAMING_COST_PER_MONTH
-) -> Dict[str, str]:
+) -> Dict[s.., s..]:
     """Function that calculates if renting movies one by one is
        cheaper than streaming movies by months.
 

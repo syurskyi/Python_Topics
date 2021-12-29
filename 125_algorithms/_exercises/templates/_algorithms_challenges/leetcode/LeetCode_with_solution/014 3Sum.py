@@ -23,7 +23,7 @@ class Solution:
         :return: a list of lists of length 3, [[val1,val2,val3]]
         """
         reverse_map = {}
-        ___ ind, val __ enumerate(num):
+        ___ ind, val __ e..(num):
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
             ____:
@@ -36,7 +36,7 @@ class Solution:
                 __ target n.. __ reverse_map:
                     continue
                 ___ index __ reverse_map[target]:
-                    __ i != index and j != index:
+                    __ i != index a.. j != index:
                         result.a..([num[i], num[j], target])
                         break
         r.. result
@@ -51,7 +51,7 @@ class Solution:
 
         # hash
         reverse_map = {}
-        ___ ind, val __ enumerate(num):
+        ___ ind, val __ e..(num):
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
             ____:
@@ -64,7 +64,7 @@ class Solution:
                 __ target n.. __ reverse_map:
                     continue
                 ___ index __ reverse_map[target]:
-                    __ index != i and index != j:
+                    __ index != i a.. index != j:
                         lst = s..([num[i], num[j], target])
                         lst = tuple(lst)
                         result[lst] = 1  # hash
@@ -96,21 +96,21 @@ class Solution:
 
         # record result
         result    # list
-        num.sort()  # sorting first, avoid duplicate,
+        num.s..()  # sorting first, avoid duplicate,
         i = 0
-        while i < l..(num)-2:
+        w.... i < l..(num)-2:
             j = i+1
             k = l..(num)-1
-            while j < k:
+            w.... j < k:
                 lst = [num[i], num[j], num[k]]
                 __ s..(lst) __ 0:
                     result.a..(lst)
                     k -= 1
                     j += 1
                     # JUMP remove duplicate
-                    while j < k and num[j] __ num[j-1]:
+                    w.... j < k a.. num[j] __ num[j-1]:
                         j += 1
-                    while j < k and num[k] __ num[k+1]:
+                    w.... j < k a.. num[k] __ num[k+1]:
                         k -= 1
                 ____ s..(lst) > 0:
                     k -= 1
@@ -119,7 +119,7 @@ class Solution:
 
             i += 1
             # remove duplicate
-            while i < l..(num)-2 and num[i] __ num[i-1]:
+            w.... i < l..(num)-2 a.. num[i] __ num[i-1]:
                 i += 1
 
         r.. result

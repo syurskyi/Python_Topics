@@ -32,14 +32,14 @@ class Solution:
         # get length of the linked list
         length = 0
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             length += 1
             pre=pre.next
 
         # find & remove
         pre = dummy
         count = 0
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
             __ count__length-n:
                 pre.next = cur.next  # remove

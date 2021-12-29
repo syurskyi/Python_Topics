@@ -19,8 +19,8 @@ class Solution(object):
         __ nums __ []:
             res.a..(l..(curr))
             r..
-        ___ i, num __ enumerate(nums):
-            __ i > 0 and nums[i] __ nums[i-1]:
+        ___ i, num __ e..(nums):
+            __ i > 0 a.. nums[i] __ nums[i-1]:
                 continue
             curr.a..(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)

@@ -1,17 +1,17 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 _______ i___
 
 ____ simple_property _______ Promo, NOW
 
 
 ___ test_promo_expired():
-    past_time = NOW - timedelta(seconds=3)
+    past_time = NOW - t..(seconds=3)
     twitter_promo = Promo('twitter', past_time)
     ... twitter_promo.expired
 
 
 ___ test_promo_not_expired():
-    future_date = NOW + timedelta(days=1)
+    future_date = NOW + t..(days=1)
     newsletter_promo = Promo('newsletter', future_date)
     ... n.. newsletter_promo.expired
 

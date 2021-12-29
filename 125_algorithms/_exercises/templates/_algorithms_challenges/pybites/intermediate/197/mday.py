@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 
 
 ___ get_mothers_day_date(year):
@@ -8,7 +8,7 @@ ___ get_mothers_day_date(year):
    mothers_day = date(year, 5, day_counter)
 
    sunday_count = 0
-   while sunday_count < 2:
+   w.... sunday_count < 2:
       __ mothers_day.weekday() __ 6:
          sunday_count += 1
          day_counter += 1
@@ -17,7 +17,7 @@ ___ get_mothers_day_date(year):
 
       __ sunday_count __ 2:
          break
-      mothers_day = mothers_day.replace(day=day_counter)
+      mothers_day = mothers_day.r..( d.._day_counter)
    r.. mothers_day
 
 

@@ -11,7 +11,7 @@ class Solution(object):
         """
         left = 0
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i] __ ' ':
                 self.reverse(s, left, i-1)
                 left = i+1
@@ -20,7 +20,7 @@ class Solution(object):
         self.reverse(s, 0, l..(s)-1)
     
     ___ reverse(self, s, i, j):
-        while i < j:
+        w.... i < j:
             s[i], s[j] = s[j], s[i]
             i += 1
             j -= 1

@@ -1,6 +1,6 @@
-___ string_rev(str):
-    str  str.s.. 
-    str.reverse()
-    r.. ' '.join(str)
+___ string_rev(s..):
+    s..  s...s..
+    s...reverse()
+    r.. ' '.join(s..)
 
 print(string_rev(input("Insert some strings: ")))

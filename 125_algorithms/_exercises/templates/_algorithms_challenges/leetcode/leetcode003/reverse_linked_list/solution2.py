@@ -30,7 +30,7 @@ class Solution(object):
             current = rev_rest
             __ current __ N..
                 r.. head
-            while current and current.next __ n.. N..
+            w.... current a.. current.next __ n.. N..
                 current = current.next
             current.next = head
             head.next = N..

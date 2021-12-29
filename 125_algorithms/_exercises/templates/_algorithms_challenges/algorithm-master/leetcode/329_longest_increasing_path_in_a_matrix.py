@@ -34,7 +34,7 @@ class Solution:
         ___ dx, dy __ self.V:
             _x = x + dx
             _y = y + dy
-            __ n.. (0 <= _x < l..(G) and 0 <= _y < l..(G[0])):
+            __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
                 continue
             __ G[x][y] >= G[_x][_y]:
                 continue

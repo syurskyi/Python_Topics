@@ -27,7 +27,7 @@ class TrieNode:
 
 
 class Solution:
-    ___ palindromePairs(self, words: List[str]) -> List[List[int]]:
+    ___ palindromePairs(self, words: List[s..]) -> List[List[int]]:
         """
         Brute force, i, j and then check palindrom
         O(N^2 * L)
@@ -52,7 +52,7 @@ class Solution:
         Construct Trie for word_j reversely, since word_j is being checked
         """
         root = TrieNode()
-        ___ idx, w __ enumerate(words):
+        ___ idx, w __ e..(words):
             cur = root
             ___ i __ r..(l..(w) - 1, -1, -1):
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
@@ -65,11 +65,11 @@ class Solution:
             cur.word_idx = idx  # word ends
 
         ret    # list
-        ___ idx, w __ enumerate(words):
+        ___ idx, w __ e..(words):
             cur = root
             ___ i __ r..(l..(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ self.is_palindrome(w, i, l..(w)) and cur.word_idx __ n.. N.. and cur.word_idx != idx:
+                __ self.is_palindrome(w, i, l..(w)) a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
                     ret.a..([idx, cur.word_idx])
 
                 cur = cur.children.get(w[i], N..)
@@ -85,7 +85,7 @@ class Solution:
     ___ is_palindrome(self, w, lo, hi):
         i = lo
         j = hi - 1
-        while i < j:
+        w.... i < j:
             __ w[i] != w[j]:
                 r.. False
             i += 1

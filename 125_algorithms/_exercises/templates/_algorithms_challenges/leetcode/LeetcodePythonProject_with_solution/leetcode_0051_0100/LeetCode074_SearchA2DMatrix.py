@@ -14,7 +14,7 @@ class Solution(object):
             r.. False
         m, n = l..(matrix), l..(matrix[0])
         l, r = 0, m*n-1
-        while l < r:
+        w.... l < r:
             mid = (l+r-1)//2
             __ matrix[mid//n][mid%n] < target:
                 l = mid+1
@@ -32,7 +32,7 @@ class Solution(object):
             r.. False
         m, n = l..(matrix), l..(matrix[0])
         lo, hi = 0, m
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)//2
             __ target __ matrix[mid][0]:
                 r.. True
@@ -42,7 +42,7 @@ class Solution(object):
                 hi = mid
         row = lo-1 __ lo > 0 ____ lo
         lo, hi = 0, n
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)//2
             __ target __ matrix[row][mid]:
                 r.. True

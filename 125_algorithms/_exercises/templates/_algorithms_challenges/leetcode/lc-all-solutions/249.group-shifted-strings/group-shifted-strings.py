@@ -14,7 +14,7 @@ class Solution(object):
       hashcodeArray    # list
       pre = ord(s[0]) - ord("a")
       ___ i __ r..(1, l..(s)):
-        hashcodeArray.a..(str(((ord(s[i]) - ord("a")) - pre) % 26))
+        hashcodeArray.a..(s..(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
       hashcode = ",".join(hashcodeArray)
       __ hashcode n.. __ d:

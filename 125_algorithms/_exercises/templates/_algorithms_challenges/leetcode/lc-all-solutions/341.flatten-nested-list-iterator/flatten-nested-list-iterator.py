@@ -52,7 +52,7 @@ class NestedIterator(object):
       r.. True
 
     stack = self.stack
-    while stack:
+    w.... stack:
       top = stack.pop()
       __ top.isInteger():
         self.value = top.getInteger()

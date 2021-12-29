@@ -1,7 +1,7 @@
-str  input("Insert some text with punctuation marks: \n")
+s..  input("Insert some text with punctuation marks: \n")
 symbols  ['.',',',':',';','!','?','(',')']
 
-listitem  str.s..
+listitem  s...s..
 
 x  0
 ___ i __ listitem:

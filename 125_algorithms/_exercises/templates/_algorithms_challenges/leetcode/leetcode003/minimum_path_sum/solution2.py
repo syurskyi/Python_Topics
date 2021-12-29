@@ -15,14 +15,14 @@ class Solution:
         r.. self.min_path_sum_aux(grid, m - 1, n - 1, t)
 
     ___ min_path_sum_aux(self, grid, x, y, t):
-        __ x __ 0 and y __ 0:
+        __ x __ 0 a.. y __ 0:
             r.. grid[y][x]
         ____ t[y][x] != -1:
             r.. t[y][x]
-        ____ x __ 0 and y > 0:
+        ____ x __ 0 a.. y > 0:
             t[y][x] = grid[y][x] + self.min_path_sum_aux(grid, x, y - 1, t)
             r.. t[y][x]
-        ____ x > 0 and y __ 0:
+        ____ x > 0 a.. y __ 0:
             t[y][x] = grid[y][x] + self.min_path_sum_aux(grid, x - 1, y, t)
             r.. t[y][x]
         ____:

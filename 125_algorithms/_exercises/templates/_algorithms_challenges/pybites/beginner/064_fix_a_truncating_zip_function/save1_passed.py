@@ -1,4 +1,4 @@
-_______ itertools
+_______ i..
 
 names = 'Tim Bob Julian Carmen Sofia Mike Kim Andre'.s..
 locations = 'DE ES AUS NL BR US'.s..
@@ -6,7 +6,7 @@ confirmed = [False, True, True, False, True]
 
 
 ___ get_attendees():
-    attendee_list = l..(itertools.zip_longest(
+    attendee_list = l..(i...zip_longest(
         names, locations, confirmed, fillvalue='-'))
     ___ entry __ attendee_list:
         print(entry)

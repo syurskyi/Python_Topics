@@ -35,7 +35,7 @@ class Solution(object):
                 ret.a..(cur_str)
         ____:
             ___ i __ xrange(pos, l..(num)):
-                __ i != pos and num[pos] __ "0":
+                __ i != pos a.. num[pos] __ "0":
                     continue
                 nxt_val = int(num[pos:i+1])
 

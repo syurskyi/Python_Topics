@@ -8,12 +8,12 @@ ___ toAscii85(data):
     hex_str = ''
     result = ''
     ___ c __ data:
-        hex_str += format(ord(c), '02x')
+        hex_str += f..(ord(c), '02x')
     index = 0
-    while index < l..(hex_str):
+    w.... index < l..(hex_str):
         padding = max(((index + 8) - l..(hex_str)) / 2, 0)
         encode_block = hex_str[index:index + 8] __ padding __ 0 ____ hex_str[index:] + '00' * padding
-        __ encode_block __ '0' * 8 and padding __ 0:
+        __ encode_block __ '0' * 8 a.. padding __ 0:
             result += 'z'
         ____:
             encode_block_int = int(encode_block, 16) / (85 ** padding)
@@ -30,11 +30,11 @@ ___ fromAscii85(data):
     result = ''
     illegal_character = ['\n', ' ', '\0', '\t']
     ___ c __ illegal_character:
-        data = data.replace(c, '')
+        data = data.r..(c, '')
     data = data[2:-2]
 
     index = 0
-    while index < l..(data):
+    w.... index < l..(data):
         __ data[index] __ 'z':
             result += '\0' * 4
             index += 1
@@ -42,9 +42,9 @@ ___ fromAscii85(data):
             padding = max(index + 5 - l..(data), 0)
             encoded_block = data[index:index + 5] __ padding __ 0 ____ data[index:] + 'u' * padding
             encoded_int = 0
-            ___ i, c __ enumerate(encoded_block[::-1]):
+            ___ i, c __ e..(encoded_block[::-1]):
                 encoded_int += (ord(c) - 33) * (85 ** i)
-            encoded_byte = format(encoded_int, '08x')
+            encoded_byte = f..(encoded_int, '08x')
             __ padding > 0:
                 encoded_byte = encoded_byte[:-padding * 2]
             index += 5

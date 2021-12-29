@@ -15,7 +15,7 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().strip() ___ word __ f.readlines())
+        r.. (word.lower().s.. ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -31,7 +31,7 @@ ___ is_palindrome(word):
     low,high = 0,l..(word) - 1
 
 
-    while low < high:
+    w.... low < high:
         __ word[low] != word[high]:
             r.. False
 

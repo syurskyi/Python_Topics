@@ -55,7 +55,7 @@ class Solution:
         n = l..(piles)
         hi = max(piles) + 1
         lo = 1
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo + hi) // 2
             __ s..(
                 math.ceil(piles[i] / mid)

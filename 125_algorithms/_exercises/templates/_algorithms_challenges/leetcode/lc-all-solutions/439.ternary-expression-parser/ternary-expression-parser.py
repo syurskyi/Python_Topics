@@ -6,7 +6,7 @@ class Solution(object):
     """
     stack    # list
     i = l..(expression) - 1
-    while i >= 0:
+    w.... i >= 0:
       __ expression[i] n.. __ ["?", ":"]:
         stack.a..(expression[i])
       ____ expression[i] __ "?":

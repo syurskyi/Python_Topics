@@ -14,7 +14,7 @@ class Solution(object):
         n = l..(shifts)
         ___ i __ r..(n-2, -1, -1):
             shifts[i] += shifts[i+1]
-        r.. ''.join(chr((ord(c)-97+num) % 26 + 97) ___ c, num __ zip(s, shifts))
+        r.. ''.join(chr((ord(c)-97+num) % 26 + 97) ___ c, num __ z..(s, shifts))
     
     ___ test(self):
         testCases = [

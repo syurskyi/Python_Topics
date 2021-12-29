@@ -18,12 +18,12 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        __ n.. p and n.. q:
+        __ n.. p a.. n.. q:
             r.. True
         ____ n.. p o. n.. q:
             r.. False
         ____ p.val != q.val:
             r.. False
         ____:
-            r.. self.isSameTree(p.left, q.left) and\
+            r.. self.isSameTree(p.left, q.left) a..\
                 self.isSameTree(p.right, q.right)

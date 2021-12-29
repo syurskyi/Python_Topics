@@ -62,7 +62,7 @@ class Solution:
         lo = max(nums)
         hi = s..(nums) + 1
         ret = hi
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo + hi) // 2
             cnt = 1  # pitfall, initial is 1 (the 1st running sum)
             cur_sum = 0

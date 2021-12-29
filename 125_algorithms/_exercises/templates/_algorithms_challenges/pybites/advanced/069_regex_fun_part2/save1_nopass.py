@@ -9,7 +9,7 @@ ___ has_timestamp(text):
 
 ___ is_integer(number):
     """Return True if number is an integer"""
-    r.. bool(re.search(r'^[-+]?\d+$', str(number)))
+    r.. bool(re.search(r'^[-+]?\d+$', s..(number)))
 
 
 ___ has_word_with_dashes(text):
@@ -28,7 +28,7 @@ ___ split_string_on_punctuation(text):
     """Split on ?!.,; - e.g. "hi, how are you doing? blabla" ->
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
-    r.. l..(filter(N.., re.split(r'\s?[?!\.,;]\s?', text)))
+    r.. l..(filter(N.., re.s..(r'\s?[?!\.,;]\s?', text)))
 
 
 ___ remove_duplicate_spacing(text):

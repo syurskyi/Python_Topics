@@ -9,7 +9,7 @@ class Solution:
             r.. -1
 
         l, m, r = 0, 0, l..(nums) - 1
-        while l + 1 < r:
+        w.... l + 1 < r:
             m = l + (r - l) // 2
             __ nums[m] > target:
                 r = m

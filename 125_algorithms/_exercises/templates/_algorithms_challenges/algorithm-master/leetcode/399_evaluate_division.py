@@ -12,9 +12,9 @@ class Solution:
         ans    # list
 
         __ n.. (
-            equations and
-            values and
-            queries and
+            equations a..
+            values a..
+            queries a..
             l..(equations) __ l..(values)
         ):
             r.. ans

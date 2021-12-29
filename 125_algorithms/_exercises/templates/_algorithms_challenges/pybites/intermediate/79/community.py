@@ -21,7 +21,7 @@ ___ create_user_bar_chart(content):
       and their corresponding member counts in pluses to standard output"""
    tz_frequency = {}
 
-   ___ i, row __ enumerate(content):
+   ___ i, row __ e..(content):
       __ i __ 0:
          continue
       tz = row[2]

@@ -31,13 +31,13 @@ class Solution(object):
         """
         ret    # list
         cur = root
-        while cur:
+        w.... cur:
             __ n.. cur.left:
                 ret.a..(cur.val)
                 cur = cur.right
             ____:
                 pre = cur.left
-                while pre.right and pre.right != cur:
+                w.... pre.right a.. pre.right != cur:
                     pre = pre.right
 
                 __ n.. pre.right:
@@ -87,8 +87,8 @@ class Solution(object):
 
         cur = root
         stk    # list
-        while stk o. cur:
-            while cur:
+        w.... stk o. cur:
+            w.... cur:
                 stk.a..(cur)
                 cur = cur.left
             cur = stk.pop()  # left_most

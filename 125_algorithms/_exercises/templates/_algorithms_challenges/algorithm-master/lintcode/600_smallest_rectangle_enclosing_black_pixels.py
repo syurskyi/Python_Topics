@@ -26,7 +26,7 @@ class Solution:
         ____:
             check = l.... start, end: start - 1 > end
 
-        while check(start, end):
+        w.... check(start, end):
             mid = (start + end) // 2
 
             __ is_empty(image, mid):

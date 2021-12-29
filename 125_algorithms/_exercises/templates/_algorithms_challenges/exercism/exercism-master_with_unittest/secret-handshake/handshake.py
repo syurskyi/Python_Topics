@@ -29,7 +29,7 @@ class Handshake:
         __ self.EVENTS.index(handshake[0]) > self.EVENTS.index(handshake[-1]):
             # Prepend code with 1 or add 'reverse' bit
             code = self.setBit(code, 4)
-        r.. '{0:b}'.format(code)
+        r.. '{0:b}'.f..(code)
 
     ___ unreversed_code(self, handshake):
         curr = 0
@@ -40,7 +40,7 @@ class Handshake:
     ___ valid_inp(self, inp):
         __ isi..(inp, int):
             r.. self.valid_integer(inp)
-        ____ isi..(inp, str):
+        ____ isi..(inp, s..):
             r.. self.valid_string(inp)
 
     ___ valid_handshake(self, handshake):
@@ -66,7 +66,7 @@ class Handshake:
 
     @staticmethod
     ___ to_num(inp):
-        __ isi..(inp, str):
+        __ isi..(inp, s..):
             r.. int(inp, 2)
         r.. inp
 

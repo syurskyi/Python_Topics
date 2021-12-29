@@ -8,14 +8,14 @@ class Solution:
         r.. res
 
     ___ generate_paren_aux(self, left, right, cand, res):
-        __ left __ 0 and right __ 0:
+        __ left __ 0 a.. right __ 0:
             res.a..(''.join(cand))
         ____:
-            __ left <= right and left > 0:
+            __ left <= right a.. left > 0:
                 cand.a..('(')
                 self.generate_paren_aux(left - 1, right, cand, res)
                 cand.pop()
-            __ left < right and right > 0:
+            __ left < right a.. right > 0:
                 cand.a..(')')
                 self.generate_paren_aux(left, right - 1, cand, res)
                 cand.pop()

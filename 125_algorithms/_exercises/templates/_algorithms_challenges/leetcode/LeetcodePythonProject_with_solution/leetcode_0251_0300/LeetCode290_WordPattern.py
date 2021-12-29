@@ -12,13 +12,13 @@ class Solution(object):
         """
         hashmap = {}
         hashset = set()
-        arr = s.split(' ')
+        arr = s.s..(' ')
         __ l..(arr) != l..(pattern):
             r.. False
-        ___ p, s0 __ zip(pattern, arr):
-            __ p __ hashmap and hashmap[p] __ s0:
+        ___ p, s0 __ z..(pattern, arr):
+            __ p __ hashmap a.. hashmap[p] __ s0:
                 continue
-            ____ p n.. __ hashmap and s0 n.. __ hashset:
+            ____ p n.. __ hashmap a.. s0 n.. __ hashset:
                 hashset.add(s0)
                 hashmap[p] = s0
             ____:

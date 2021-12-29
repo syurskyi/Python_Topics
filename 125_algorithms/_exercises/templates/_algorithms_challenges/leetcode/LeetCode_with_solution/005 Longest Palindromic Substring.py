@@ -58,9 +58,9 @@ class Solution(object):
                 __ i+1 __ j:
                     dp[i][j] = True
                 ____:
-                    dp[i][j] = s[i] __ s[j-1] and dp[i+1][j-1]  # pre-access? starting backward
+                    dp[i][j] = s[i] __ s[j-1] a.. dp[i+1][j-1]  # pre-access? starting backward
 
-                __ dp[i][j] __ True and longest[1]-longest[0] < j-i:
+                __ dp[i][j] __ True a.. longest[1]-longest[0] < j-i:
                     longest[0], longest[1] = i, j
 
         r.. s[longest[0]:longest[1]]
@@ -90,7 +90,7 @@ class Solution(object):
                 ____:
                     dp[i][i+l] = False
 
-                __ dp[i][i+l] and l..(longest) < l:
+                __ dp[i][i+l] a.. l..(longest) < l:
                     longest = s[i:i+l]
 
         r.. longest
@@ -99,7 +99,7 @@ class Solution(object):
         """
         # [begin, end]
         """
-        while begin >= 0 and end < l..(s) and s[begin] __ s[end]:
+        w.... begin >= 0 a.. end < l..(s) a.. s[begin] __ s[end]:
             begin -= 1
             end += 1
 

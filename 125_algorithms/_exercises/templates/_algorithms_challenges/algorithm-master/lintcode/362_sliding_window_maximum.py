@@ -25,7 +25,7 @@ class HashHeapq:
         r.. self.heap[0]
 
     ___ is_empty(self):
-        while self.heap and self.deleted.get(self.heap[0]):
+        w.... self.heap a.. self.deleted.get(self.heap[0]):
             self.deleted[self.heap[0]] -= 1
             heappop(self.heap)
         r.. n.. self.heap

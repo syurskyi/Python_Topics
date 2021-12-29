@@ -37,7 +37,7 @@ class Solution(object):
         """
         sz = 0
         ret = N..
-        ___ idx, val __ enumerate(self.A):
+        ___ idx, val __ e..(self.A):
             __ val __ target:
                 sz += 1
                 p = random.randrange(0, sz)
@@ -55,7 +55,7 @@ class SolutionError(object):
         :type nums: List[int]
         """
         self.d = {}
-        ___ idx, val __ enumerate(nums):
+        ___ idx, val __ e..(nums):
             __ val n.. __ self.d:
                 self.d[val] = (idx, 1)
             ____:

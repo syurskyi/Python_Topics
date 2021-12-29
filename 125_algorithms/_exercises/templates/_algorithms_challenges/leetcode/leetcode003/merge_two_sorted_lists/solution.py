@@ -20,7 +20,7 @@ class Solution(object):
         """
         res = N..
         res_end = N..
-        while l1 __ n.. N.. and l2 __ n.. N..
+        w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
                 __ res __ N..
                     res = l1

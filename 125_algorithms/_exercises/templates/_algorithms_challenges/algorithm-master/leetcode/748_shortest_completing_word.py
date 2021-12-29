@@ -15,7 +15,7 @@ class Solution:
 
         ___ word __ words:
             times = self.get_times(word)
-            __ l..(word) < _min_size and self.is_included(p_times, times):
+            __ l..(word) < _min_size a.. self.is_included(p_times, times):
                 ans = word
                 _min_size = l..(word)
 

@@ -22,7 +22,7 @@ class GeoHash:
 
         bin_codes    # list
         ___ i __ r..(times):
-            bin_codes.extend((str(lng_codes[i]), str(lat_codes[i])))
+            bin_codes.extend((s..(lng_codes[i]), s..(lat_codes[i])))
 
         hash_codes    # list
         hash_code = ''
@@ -48,7 +48,7 @@ class GeoHash:
         r.. bins
 
     ___ get_base32_list(self):
-        base32_list = [str(i) ___ i __ r..(10)]
+        base32_list = [s..(i) ___ i __ r..(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
         ___ i __ r..(ord('a'), ord('z') + 1):

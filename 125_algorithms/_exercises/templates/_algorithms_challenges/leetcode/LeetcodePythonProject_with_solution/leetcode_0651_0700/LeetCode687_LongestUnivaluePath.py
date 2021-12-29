@@ -24,11 +24,11 @@ class Solution(object):
         __ n.. root: r.. 0
         left = self.helper(root.left)
         right = self.helper(root.right)
-        __ root.left and root.left.val __ root.val:
+        __ root.left a.. root.left.val __ root.val:
             left += 1
         ____:
             left = 0
-        __ root.right and root.right.val __ root.val:
+        __ root.right a.. root.right.val __ root.val:
             right += 1
         ____:
             right = 0

@@ -27,7 +27,7 @@ class Solution(object):
     ___ invertTreeNonRec(self, root):
         __ n.. root: r.. N..
         stack = [root]
-        while stack:
+        w.... stack:
             node = stack.pop()
             __ node:
                 left = node.left

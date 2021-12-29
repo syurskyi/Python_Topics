@@ -27,14 +27,14 @@ class Solution:
         # low-bound binary search
         start = 0
         end = length  # [0, length)
-        while start<end:
+        w.... start<end:
             mid = (start+end)/2
             __ A[mid]<target:  # NOTICE: less than
                 start = mid+1
             ____:
                 end = mid
 
-        __ start<length and A[start]__target:
+        __ start<length a.. A[start]__target:
             result.a..(start)
         ____:
             r.. [-1, -1]
@@ -42,7 +42,7 @@ class Solution:
         # high-bound binary search
         start = start
         end = length  # no "-1" # [0, length)
-        while start<end:
+        w.... start<end:
             mid = (start+end)/2
             __ A[mid]<=target:  # NOTICE: less than or equal
                 start = mid+1

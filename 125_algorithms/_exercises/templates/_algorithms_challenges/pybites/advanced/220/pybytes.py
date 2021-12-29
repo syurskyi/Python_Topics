@@ -1,4 +1,4 @@
-____ collections _______ namedtuple, Counter
+____ collections _______ n.., Counter
 _______ re
 ____ typing _______ NamedTuple
 
@@ -7,7 +7,7 @@ _______ feedparser
 SPECIAL_GUEST = 'Special guest'
 
 # using _ as min/max are builtins
-Duration = namedtuple('Duration', 'avg max_ min_')
+Duration = n..('Duration', 'avg max_ min_')
 
 # static copy, original: https://pythonbytes.fm/episodes/rss
 URL = 'https://bites-data.s3.us-east-2.amazonaws.com/python_bytes'
@@ -23,7 +23,7 @@ class PythonBytes:
         self.entries = feedparser.parse(URL)['entries']
 
 
-    ___ get_episode_numbers_for_mentioned_domain(self, domain: str) -> l..:
+    ___ get_episode_numbers_for_mentioned_domain(self, domain: s..) -> l..:
         """Return a list of episode IDs (itunes_episode attribute) of the
            episodes the pass in domain was mentioned in.
         """
@@ -90,7 +90,7 @@ class PythonBytes:
 
         ___ entry __ self.entries:
             duration= entry['itunes_duration']
-            hours,minutes,seconds = map(int,duration.split(':'))
+            hours,minutes,seconds = map(int,duration.s..(':'))
             total_seconds = 3600 * hours + 60 * minutes + seconds
             duration_sums += total_seconds
             __ total_seconds < min_duration_seconds:

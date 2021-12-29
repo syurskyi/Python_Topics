@@ -44,7 +44,7 @@ class Solution:
             A[i] %= 10
             
         head = deque()
-        while carry:
+        w.... carry:
             head.appendleft(carry % 10)
             carry //= 10
 

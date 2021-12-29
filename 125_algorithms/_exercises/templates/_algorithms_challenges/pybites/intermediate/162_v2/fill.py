@@ -15,7 +15,7 @@ ___ prefill_with_character(value, column_length=4, fill_char=HTML_SPACE):
         r.. f"{fill_char * spaces}{value}"
 
 
-    r.. str(value)
+    r.. s..(value)
 
 
 

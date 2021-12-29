@@ -15,8 +15,8 @@ class Solution(object):
     dividend = abs(dividend)
     divisor = abs(divisor)
     subsum = divisor
-    while dividend >= divisor:
-      while (subsum << 1) <= dividend:
+    w.... dividend >= divisor:
+      w.... (subsum << 1) <= dividend:
         cnt <<= 1
         subsum <<= 1
       ans += cnt

@@ -21,12 +21,12 @@ class Solution:
         """
 
         # trivial
-        __ n.. p and n.. q:
+        __ n.. p a.. n.. q:
             r.. True
 
         # dfs
         try:
-            __ p.val__q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right):
+            __ p.val__q.val a.. self.isSameTree(p.left, q.left) a.. self.isSameTree(p.right, q.right):
                 r.. True
         except AttributeError:
             r.. False

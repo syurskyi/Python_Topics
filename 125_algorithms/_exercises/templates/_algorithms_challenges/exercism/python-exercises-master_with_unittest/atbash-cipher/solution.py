@@ -4,7 +4,7 @@ _______ sys
 __ sys.version_info[0] __ 2:
     ____ string _______ maketrans
 ____:
-    maketrans = str.maketrans
+    maketrans = s...maketrans
 
 
 BLKSZ = 5

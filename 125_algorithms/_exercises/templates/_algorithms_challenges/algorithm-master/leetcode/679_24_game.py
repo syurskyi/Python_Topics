@@ -28,11 +28,11 @@ class Solution:
                 nxts = [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
 
                 ___ k __ r..(l..(self.OP)):
-                    __ i < j and k < 2:
+                    __ i < j a.. k < 2:
                         # since a + b == b + a, so just do half in j >= i
                         # same for `*`
                         continue
-                    __ nums[j] __ 0 and k __ 3:
+                    __ nums[j] __ 0 a.. k __ 3:
                         # divide by 0
                         continue
 

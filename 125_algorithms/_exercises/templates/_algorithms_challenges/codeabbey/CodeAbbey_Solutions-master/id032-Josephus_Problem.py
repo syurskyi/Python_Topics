@@ -4,7 +4,7 @@ ___ solveJosephus(specifics):
     positionCounter = 0
     s.. = False
 
-    while n.. s..:
+    w.... n.. s..:
         __ l..(people) __ 1:
             print(people[0]) # Pyschologically scarred Winner!
             s.. = True
@@ -14,4 +14,4 @@ ___ solveJosephus(specifics):
                 people.remove(person)
                 positionCounter = 0
 
-solveJosephus(raw_input().split())
+solveJosephus(raw_input().s..())

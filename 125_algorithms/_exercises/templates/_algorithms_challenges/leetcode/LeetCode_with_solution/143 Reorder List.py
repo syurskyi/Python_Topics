@@ -27,12 +27,12 @@ class Solution:
         dummy_head.next = head
 
         pre_cur = dummy_head
-        while(pre_cur and pre_cur.next):
+        w....(pre_cur a.. pre_cur.next):
             # find last
             pre_last = pre_cur.next
             __ pre_last.next __ N..
                 r..
-            while(pre_last.next.next):
+            w....(pre_last.next.next):
                 pre_last = pre_last.next
 
             last = pre_last.next
@@ -40,13 +40,13 @@ class Solution:
             # shift
             cur = pre_cur.next
             cur_next = cur.next
-            __ cur_next!= last and cur!= last:
+            __ cur_next!= last a.. cur!= last:
                 cur.next = last
                 last.next = cur_next
                 # fix last
                 pre_last.next = N..
 
-            __ cur_next and cur_next.next__last:
+            __ cur_next a.. cur_next.next__last:
                 cur_next.next = N..
 
 
@@ -60,7 +60,7 @@ class Solution:
         """
         lst    # list
         cur = head
-        while(cur):
+        w....(cur):
             lst.a..(cur)
             cur = cur.next
 
@@ -99,7 +99,7 @@ class Solution:
         # find the mid point
         slow_pre = dummy
         fast_pre = dummy
-        while fast_pre.next and fast_pre.next.next:
+        w.... fast_pre.next a.. fast_pre.next.next:
             fast_pre = fast_pre.next
             fast_pre = fast_pre.next
             slow_pre = slow_pre.next
@@ -109,14 +109,14 @@ class Solution:
 
         pre = mid
         cur = pre.next
-        while pre and cur:  # problem reduction
+        w.... pre a.. cur:  # problem reduction
             cur.next, pre, cur = pre, cur, cur.next
         mid.next = N..
 
         # merge
         last = pre
         cur = dummy.next
-        while cur!=mid and last!=mid:
+        w.... cur!=mid a.. last!=mid:
             cur.next, last.next, last, cur = last, cur.next, last.next, cur.next
 
 
@@ -135,6 +135,6 @@ __ __name____"__main__":
     Solution().reorderList(lst[0])
 
     cur = lst[0]
-    while(cur):
+    w....(cur):
         print cur.val
         cur = cur.next

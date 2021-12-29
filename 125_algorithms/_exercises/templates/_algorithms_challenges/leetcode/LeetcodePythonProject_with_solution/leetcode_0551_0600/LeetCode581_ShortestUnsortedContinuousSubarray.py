@@ -11,11 +11,11 @@ class Solution(object):
         """
         numsSorted = s..(nums)
         i, j = 0, l..(nums)-1
-        while i < j and numsSorted[i] __ nums[i]:
+        w.... i < j a.. numsSorted[i] __ nums[i]:
             i += 1
         __ i __ j:
             r.. 0
-        while i < j and numsSorted[j] __ nums[j]:
+        w.... i < j a.. numsSorted[j] __ nums[j]:
             j -= 1
         r.. j-i+1
     

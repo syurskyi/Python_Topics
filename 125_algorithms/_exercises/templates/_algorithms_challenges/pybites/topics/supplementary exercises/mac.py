@@ -2,7 +2,7 @@ _______ json
 
 ___ multicast_mac_to_ip(mac_address):
 
-    mac_bytes = mac_address.split(":")
+    mac_bytes = mac_address.s..(":")
     ip_mask = 0xe0000000
     ip_mask |= int(mac_bytes[3], 16) << 16
     ip_mask |= int(mac_bytes[4], 16) << 8
@@ -16,7 +16,7 @@ ___ multicast_mac_to_ip(mac_address):
         o3 = (temp_ip & 0x00ff0000) >> 16
         o2 = (temp_ip & 0x0000ff00) >> 8
         o1 = (temp_ip & 0x000000ff)
-        result.a..(str(o4) + "." + str(o3) + "." + str(o2) + "." + str(o1))
+        result.a..(s..(o4) + "." + s..(o3) + "." + s..(o2) + "." + s..(o1))
 
     my_json = json.dumps(result)
     r.. my_json

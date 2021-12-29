@@ -40,12 +40,12 @@ class Solution:
         then keep a list
         """
         idxes = defaultdict(l..)
-        ___ i, b __ enumerate(B):
+        ___ i, b __ e..(B):
             idxes[b].a..(i)
 
         n = l..(A)
-        A.sort()
-        B.sort()
+        A.s..()
+        B.s..()
         ret = [N.. ___ _ __ r..(n)]
         not_used    # list
         j = 0

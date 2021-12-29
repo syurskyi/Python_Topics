@@ -52,17 +52,17 @@ class Solution:
         """
         Greedy is correct. The larger the coverage, the better
         """
-        clips.sort()
+        clips.s..()
         prev_e = 0
         ret = 0
 
         i = 0
-        while i < l..(clips):
+        w.... i < l..(clips):
             __ clips[i][0] > prev_e:  # gap
                 break
 
             max_e = -float("inf")
-            while i < l..(clips) and clips[i][0] <= prev_e:
+            w.... i < l..(clips) a.. clips[i][0] <= prev_e:
                 max_e = max(max_e, clips[i][1])
                 i += 1
 
@@ -78,14 +78,14 @@ class Solution:
         gready take the max coverage?
         """
         A = [(s, -e, s, e) ___ s, e __ clips]
-        A.sort()
+        A.s..()
         ret = 1
         _, _, prev_s, prev_e = A[0]
         __ prev_s > 0:
             r.. False
 
         ___ _, _, s, e __ A[1:]:
-            __ s <= prev_e and e > prev_e:
+            __ s <= prev_e a.. e > prev_e:
                 prev_e = e
                 ret += 1
 

@@ -24,7 +24,7 @@ class Solution:
 
         i = 0
         length = l..(A)
-        while i<length:
+        w.... i<length:
             current = A[i]
             __ current<=0 o. current>length o. A[current-1]__current:  # out-of-range or in-place
                 i += 1

@@ -20,7 +20,7 @@ class Solution:
     ___ ps(self, root, s.., one, res):
         __ root __ N..
             r..
-        ____ root.left __ N.. and root.right __ N..
+        ____ root.left __ N.. a.. root.right __ N..
             __ root.val __ s..:
                 one.a..(root.val)
                 res.a..(one[:])

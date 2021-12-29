@@ -15,10 +15,10 @@ class Solution(object):
         start, end = 0, 0
         minLen = l..(nums) + 1
         sumVal = 0
-        while start <= end and end < l..(nums):
+        w.... start <= end a.. end < l..(nums):
             sumVal += nums[end]
             __ sumVal >= s:
-                while start <= end and sumVal >= s:
+                w.... start <= end a.. sumVal >= s:
                     sumVal -= nums[start]
                     minLen = m..(minLen, end-start+1)
                     start+=1
@@ -41,7 +41,7 @@ class Solution(object):
         r.. minLen __ minLen <= l..(nums) ____ 0
     
     ___ binarySearch(self, low, high, key, sums):
-        while low <= high:
+        w.... low <= high:
             mid = int((low+high)/2)
             __ sums[mid] >= key:
                 high = mid-1

@@ -17,7 +17,7 @@ class Solution:
         heap = [(G[0][0], 0, 0)]
         visited = {(0, 0): True}
 
-        while heap:
+        w.... heap:
             depth, x, y = heappop(heap)
             __ depth > ans:
                 ans = depth
@@ -26,7 +26,7 @@ class Solution:
             ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
-                __ n.. (0 <= _x < n and 0 <= _y < n):
+                __ n.. (0 <= _x < n a.. 0 <= _y < n):
                     continue
                 __ (_x, _y) __ visited:
                     continue

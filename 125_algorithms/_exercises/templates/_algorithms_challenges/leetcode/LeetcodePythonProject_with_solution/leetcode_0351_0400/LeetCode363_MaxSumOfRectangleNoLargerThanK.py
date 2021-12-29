@@ -17,10 +17,10 @@ class Solution(object):
         areas = [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ i __ 0 and j __ 0: areas[i][j] = matrix[i][j]
-                __ i __ 0 and j != 0: areas[i][j] = matrix[i][j]+areas[i][j-1]
-                __ i != 0 and j __ 0: areas[i][j] = matrix[i][j]+areas[i-1][j]
-                __ i != 0 and j != 0:
+                __ i __ 0 a.. j __ 0: areas[i][j] = matrix[i][j]
+                __ i __ 0 a.. j != 0: areas[i][j] = matrix[i][j]+areas[i][j-1]
+                __ i != 0 a.. j __ 0: areas[i][j] = matrix[i][j]+areas[i-1][j]
+                __ i != 0 a.. j != 0:
                     areas[i][j] = areas[i][j-1]+areas[i-1][j]+areas[i-1][j-1]+matrix[i][j]
         maxVal = float('-inf')
         ___ r1 __ r..(m):

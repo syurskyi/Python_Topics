@@ -38,7 +38,7 @@ class Solution:
             __ v __ rec_stack:
                 r.. True
 
-            __ v n.. __ visited and self.dfs(v, nxt, visited, rec_stack):
+            __ v n.. __ visited a.. self.dfs(v, nxt, visited, rec_stack):
                 r.. True
 
         rec_stack.discard(u)

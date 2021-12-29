@@ -1,11 +1,11 @@
-____ collections _______ namedtuple,defaultdict
+____ collections _______ n..,defaultdict
 ____ enum _______ Enum
 ____ typing _______ Sequence
 ____ collections.abc _______ Sequence as seq
 
 Suit = Enum("Suit", l..("SHDC"))
 Rank = Enum("Rank", l..("AKQJT98765432"))
-Card = namedtuple("Card", ["suit", "Rank"])
+Card = n..("Card", ["suit", "Rank"])
 
 HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
 SSP = {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
@@ -42,7 +42,7 @@ class BridgeHand:
 
 
 
-    ___ __str__(self) -> str:
+    ___ __str__(self) -> s..:
         """
         Return a string representing this hand, in the following format:
         "S:AK3 H:T987 D:KJ98 C:QJ"
@@ -60,7 +60,7 @@ class BridgeHand:
         ___ suit __ Suit:
             __ suit __ self.suit_to_cards:
                 cards = self.suit_to_cards[suit]
-                cards.sort(key=l.... x: x.value)
+                cards.s..(key=l.... x: x.value)
                 cards = ''.join(card.name ___ card __ cards)
                 s.a..(f"{suit.name}:{cards}")
 
@@ -136,7 +136,7 @@ class BridgeHand:
 
                 cards = s..(cards,key=l.... x: x.value)
                 __ l..(cards) __ 2:
-                    __ (cards[0] __ Rank.A and cards[1] !=Rank.K) o. (cards[0] __ Rank.K):
+                    __ (cards[0] __ Rank.A a.. cards[1] !=Rank.K) o. (cards[0] __ Rank.K):
                         losing_tricks += 1
                     ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
@@ -144,7 +144,7 @@ class BridgeHand:
                     cards = cards[:3]
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
-                        __ ((cards[0] __ Rank.A) and (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K and cards[1] __ Rank.Q):
+                        __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q):
                             losing_tricks += 1
                         ____ cards[0] __ (Rank.A,Rank.K,Rank.Q):
                             losing_tricks += 2

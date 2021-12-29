@@ -19,7 +19,7 @@ class Solution:
             r..
 
         ___ i __ r..(l..(S)):
-            __ i > 0 and S[i] __ S[i - 1]:
+            __ i > 0 a.. S[i] __ S[i - 1]:
                 continue
             path.a..(S[i])
             self.dfs(S[:i] + S[i + 1:], ans, path)

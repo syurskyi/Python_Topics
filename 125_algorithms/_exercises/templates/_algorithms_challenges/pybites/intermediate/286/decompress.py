@@ -1,7 +1,7 @@
 ____ typing _______ Dict
 
 
-___ decompress(string: str, table: Dict[str, str]) -> str:
+___ decompress(string: s.., table: Dict[s.., s..]) -> s..:
 
 
     result    # list

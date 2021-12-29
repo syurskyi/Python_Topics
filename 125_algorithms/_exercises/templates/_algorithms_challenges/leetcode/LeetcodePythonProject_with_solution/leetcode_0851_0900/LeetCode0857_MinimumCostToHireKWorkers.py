@@ -13,7 +13,7 @@ class Solution(object):
         """
         _______ heapq
         k = K
-        workers = s..([float(w)/q, q] ___ w, q __ zip(wage, quality))
+        workers = s..([float(w)/q, q] ___ w, q __ z..(wage, quality))
         res = float('inf')
         qsum = 0
         heap    # list

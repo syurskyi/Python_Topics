@@ -10,7 +10,7 @@ ___ my_round(n):
     r.. floor(n*100 + .5) / 100
 
 
-___ calc_sums(values: str = VALUES) -> Generator[str, N.., N..]:
+___ calc_sums(values: s.. = VALUES) -> Generator[s.., N.., N..]:
     """
     Process the above JSON-encoded string of values and calculate the sum of each adjacent pair.
 
@@ -19,8 +19,8 @@ ___ calc_sums(values: str = VALUES) -> Generator[str, N.., N..]:
         'The sum of 0.1 and 0.2, rounded to two decimal places, is 0.3.'
     """
     nums = json.loads(values)
-    pairs = zip(nums, nums[1:])
+    pairs = z..(nums, nums[1:])
     template = "The sum of {} and {}, rounded to two decimal places, is {:.2f}."
 
     ___ a, b __ pairs:
-        yield template.format(a, b, my_round(a + b))
+        y.. template.f..(a, b, my_round(a + b))

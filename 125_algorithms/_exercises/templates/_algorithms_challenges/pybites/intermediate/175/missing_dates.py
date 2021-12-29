@@ -1,5 +1,5 @@
 _______ pandas as pd
-____ datetime _______ date
+____ d__ _______ date
 
 ___ get_missing_dates(dates):
    """Receives a range of dates and returns a sequence
@@ -18,5 +18,5 @@ ___ get_missing_dates(dates):
 
 
 __ __name__ __ "__main__":
-   date_range = [date(year=2019, month=2, day=n) ___ n __ r..(1, 11, 2)]
+   date_range = [date y.._2019,  m.._2,  d.._n) ___ n __ r..(1, 11, 2)]
    print(get_missing_dates(date_range))

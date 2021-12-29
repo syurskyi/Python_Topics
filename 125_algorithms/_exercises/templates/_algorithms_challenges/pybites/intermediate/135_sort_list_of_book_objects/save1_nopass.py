@@ -1,7 +1,7 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-Book = namedtuple('Book', 'title authors pages published')
+Book = n..('Book', 'title authors pages published')
 
 books = [
     Book(title="Python Interviews",
@@ -34,7 +34,7 @@ ___ sort_books_by_len_of_title(books=books):
 ___ sort_books_by_first_authors_last_name(books=books):
     author_list = [entry.authors ___ entry __ books]
     f = s..(author_list,
-               key=l.... x: x.split(' ')[-1],
+               key=l.... x: x.s..(' ')[-1],
                r.._T..[0]
     r.. ''.join([t.title
                     ___ t __ books
@@ -49,9 +49,9 @@ ___ sort_books_by_number_of_page(books=books):
 
 
 ___ sort_books_by_published_date(books=books):
-    date_list = [datetime.strptime(entry.published, '%Y-%m-%d')
+    date_list = [d__.strptime(entry.published, '%Y-%m-%d')
                  ___ entry __ books]
     l_pub = s..(date_list, r.._T..[0]
     r.. ''.join([t.title
                     ___ t __ books
-                    __ t.published __ datetime.strftime(l_pub, '%Y-%m-%d')])
+                    __ t.published __ d__.strftime(l_pub, '%Y-%m-%d')])

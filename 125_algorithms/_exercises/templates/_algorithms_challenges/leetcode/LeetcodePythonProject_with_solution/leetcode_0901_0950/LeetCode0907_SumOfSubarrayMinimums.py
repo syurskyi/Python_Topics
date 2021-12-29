@@ -8,8 +8,8 @@ class Solution(object):
         MOD = 10**9+7
         stack = [[float('-inf'), -1, 0]] # value, index, accumulated_sum
         res = 0
-        ___ i, num __ enumerate(A):
-            while stack and stack[-1][0] > num:
+        ___ i, num __ e..(A):
+            w.... stack a.. stack[-1][0] > num:
                 stack.pop()
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
             stack.a..([num, i, total])

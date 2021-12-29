@@ -2,7 +2,7 @@ class Solution(object):
   ___ findDuplicates(self, nums):
     ans    # list
     ___ i __ r..(0, l..(nums)):
-      while nums[nums[i] - 1] != nums[i]:
+      w.... nums[nums[i] - 1] != nums[i]:
         tmp = nums[nums[i] - 1]
         nums[nums[i] - 1] = nums[i]
         nums[i] = tmp

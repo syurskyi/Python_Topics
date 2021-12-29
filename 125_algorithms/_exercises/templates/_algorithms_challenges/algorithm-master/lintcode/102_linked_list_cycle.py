@@ -24,7 +24,7 @@ class Solution:
 
         slow = head
         fast = head.next
-        while slow != fast:
+        w.... slow != fast:
             __ n.. fast.next o. n.. fast.next.next:
                 r.. False
 

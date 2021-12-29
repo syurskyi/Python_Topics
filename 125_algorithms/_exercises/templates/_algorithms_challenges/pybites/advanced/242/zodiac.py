@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 ____ operator _______ itemgetter
 ____ typing _______ List
 
-Sign = namedtuple('Sign', 'name compatibility famous_people sun_dates')
+Sign = n..('Sign', 'name compatibility famous_people sun_dates')
 
 
 ___ get_signs(data: l..) -> List[Sign]:
@@ -28,7 +28,7 @@ ___ get_sign_with_most_famous_people(signs: l..):
     r.. max(famous_people, key=itemgetter(1))
 
 
-___ signs_are_mutually_compatible(signs: l.., sign1: str, sign2: str) -> bool:
+___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) -> bool:
     """Given 2 signs return if they are compatible (compatibility field)"""
     ret = False
     ___ sign __ signs:
@@ -39,17 +39,17 @@ ___ signs_are_mutually_compatible(signs: l.., sign1: str, sign2: str) -> bool:
     r.. ret
 
 
-___ get_sign_by_date(signs: l.., date: datetime) -> str:
+___ get_sign_by_date(signs: l.., date: d__) -> s..:
     """Given a date return the right sign (sun_dates field)"""
     year = date.year
     ___ sign __ signs:
         start, end = sign.sun_dates
-        start_dt = datetime.strptime(start, '%B %d').replace(year=year)
-        end_dt = datetime.strptime(end, '%B %d').replace(year=year)
+        start_dt = d__.strptime(start, '%B %d').r.. y.._year)
+        end_dt = d__.strptime(end, '%B %d').r.. y.._year)
         __ end_dt < start_dt:
             __ date <= end_dt:
-                start_dt = datetime.strptime(start, '%B %d').replace(year=year-1)
+                start_dt = d__.strptime(start, '%B %d').r.. y.._year-1)
             ____:
-                end_dt = datetime.strptime(end, '%B %d').replace(year=year+1)
+                end_dt = d__.strptime(end, '%B %d').r.. y.._year+1)
         __ start_dt <= date <= end_dt:
             r.. sign.name

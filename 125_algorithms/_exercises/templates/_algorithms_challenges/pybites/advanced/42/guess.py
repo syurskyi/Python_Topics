@@ -30,7 +30,7 @@ class Game:
            'Already guessed'
            If all good, return the int"""
         
-        while True:
+        w... T...
             try:
                 number = input("Guess a number between 1 and 20: ")
                 result = int(number)
@@ -81,7 +81,7 @@ class Game:
 
         
         ___ i __ r..(1,MAX_GUESSES + 1):
-            while True:
+            w... T...
                 try:
                     user_guess = self.guess()
                 except ValueError:

@@ -17,14 +17,14 @@ class Solution:
         n = l..(s)
         left = right = cnt = 0
 
-        while right < n:
+        w.... right < n:
             freq[s[right]] += 1
             __ freq[s[right]] __ 1:
                 cnt += 1
 
             right += 1
 
-            while cnt > k:
+            w.... cnt > k:
                 freq[s[left]] -= 1
                 __ freq[s[left]] __ 0:
                     cnt -= 1

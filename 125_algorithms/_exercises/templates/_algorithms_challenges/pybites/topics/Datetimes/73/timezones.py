@@ -1,5 +1,5 @@
 _______ pytz
-____ datetime _______ datetime
+____ d__ _______ d__
 
 
 MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
@@ -19,7 +19,7 @@ ___ within_schedule(utc, *timezones):
     r.. True
 
 
-dt = datetime(2018, 4, 18, 12, 28)
+dt = d__(2018, 4, 18, 12, 28)
 timezones = ['Europe/Madrid', 'Australia/Sydney', 'America/Chicago']
 
 print(within_schedule(dt, *timezones))

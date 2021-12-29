@@ -25,7 +25,7 @@ class Solution(object):
         """
         left = 1
         right = n
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) / 2
             __ isBadVersion(mid):
                 right = mid

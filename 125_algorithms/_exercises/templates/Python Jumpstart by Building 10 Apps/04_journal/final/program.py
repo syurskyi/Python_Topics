@@ -20,16 +20,16 @@ ___ run_event_loop():
     journal_name  'default'
     journal_data  journal.load(journal_name)  # []  # list()
 
-    w___ cmd ! 'x' and cmd:
+    w___ cmd ! 'x' a.. cmd:
         cmd  input('[L]ist entries, [A]dd an entry, E[x]it: ')
-        cmd  cmd.l...strip()
+        cmd  cmd.l...s..
 
         __ cmd __ 'l':
             list_entries(journal_data)
         ____ cmd __ 'a':
             add_entry(journal_data)
-        ____ cmd ! 'x' and cmd:
-            print("Sorry, we don't understand '{}'.".format(cmd))
+        ____ cmd ! 'x' a.. cmd:
+            print("Sorry, we don't understand '{}'.".f..(cmd))
 
     print('Done, goodbye.')
     journal.save(journal_name, journal_data)
@@ -38,8 +38,8 @@ ___ run_event_loop():
 ___ list_entries(data):
     print('Your journal entries: ')
     entries  reversed(data)
-    ___ idx, entry __ enumerate(entries):
-        print('* [{}] {}'.format(idx + 1, entry))
+    ___ idx, entry __ e..(entries):
+        print('* [{}] {}'.f..(idx + 1, entry))
 
 
 ___ add_entry(data):

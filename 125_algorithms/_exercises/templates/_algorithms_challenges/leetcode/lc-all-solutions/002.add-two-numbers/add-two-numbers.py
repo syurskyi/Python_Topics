@@ -14,7 +14,7 @@ class Solution(object):
     """
     p = dummy = ListNode(-1)
     carry = 0
-    while l1 and l2:
+    w.... l1 a.. l2:
       p.next = ListNode(l1.val + l2.val + carry)
       carry = p.next.val / 10
       p.next.val %= 10
@@ -23,7 +23,7 @@ class Solution(object):
       l2 = l2.next
 
     res = l1 o. l2
-    while res:
+    w.... res:
       p.next = ListNode(res.val + carry)
       carry = p.next.val / 10
       p.next.val %= 10
@@ -37,11 +37,11 @@ class Solution(object):
   ___ addTwoNumbers(self, l1, l2):
     p = dummy = ListNode(-1)
     carry = 0
-    while l1 o. l2 o. carry:
-      val = (l1 and l1.val o. 0) + (l2 and l2.val o. 0) + carry
+    w.... l1 o. l2 o. carry:
+      val = (l1 a.. l1.val o. 0) + (l2 a.. l2.val o. 0) + carry
       carry = val / 10
       p.next = ListNode(val % 10)
-      l1 = l1 and l1.next
-      l2 = l2 and l2.next
+      l1 = l1 a.. l1.next
+      l2 = l2 a.. l2.next
       p = p.next
     r.. dummy.next

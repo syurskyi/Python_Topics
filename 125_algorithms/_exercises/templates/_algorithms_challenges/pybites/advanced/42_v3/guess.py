@@ -30,7 +30,7 @@ class Game:
         __ n.. guess:
             print('Please enter a number')
             raise ValueError('Nothing entered')
-        __ n.. a..(c.isdigit() ___ c __ str(guess)):
+        __ n.. a..(c.isdigit() ___ c __ s..(guess)):
             print('Should be a number')
             raise ValueError('Non-digit entered')
         guess = int(guess)
@@ -61,7 +61,7 @@ class Game:
     ___ __call__(self):
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
-        while l..(self._guesses) < MAX_GUESSES and n.. self._win:
+        w.... l..(self._guesses) < MAX_GUESSES a.. n.. self._win:
             try:
                 this_guess = self.guess()
             except ValueError:

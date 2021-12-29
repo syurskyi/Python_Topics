@@ -47,7 +47,7 @@ class Solution:
         """
         n = l..(A)
         F = [0 ___ _ __ r..(n + 1)]
-        ___ i, a __ enumerate(A):
+        ___ i, a __ e..(A):
             F[i+1] = F[i] + a
 
         ret = -float("inf")

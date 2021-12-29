@@ -12,7 +12,7 @@ class Solution(object):
         """
         hashmap = {}
         ___ c __ licensePlate:
-            __ n.. c.isdigit() and c != ' ':
+            __ n.. c.isdigit() a.. c != ' ':
                 hashmap[c.lower()] = hashmap.get(c.lower(), 0)+1
         res = ''
         l = float('inf')

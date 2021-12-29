@@ -1,4 +1,4 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 ___ get_missing_dates(dates):
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
@@ -16,11 +16,11 @@ ___ get_missing_dates(dates):
     ___ i __ r..(l..(dates) - 1):
         date = dates[i]
 
-        next_date = date + timedelta(days=1)
+        next_date = date + t..(days=1)
 
-        while next_date != dates[i +1]:
+        w.... next_date != dates[i +1]:
             missing.a..(next_date)
-            next_date += timedelta(days=1)
+            next_date += t..(days=1)
     
 
         

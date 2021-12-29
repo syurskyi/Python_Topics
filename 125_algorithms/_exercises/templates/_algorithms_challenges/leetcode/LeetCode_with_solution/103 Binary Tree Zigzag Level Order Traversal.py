@@ -38,7 +38,7 @@ class Solution:
         result    # list
         lst = [root]
         direction = False
-        while lst:
+        w.... lst:
             __ direction:
                 result.a..([element.val ___ element __ lst])
             ____:

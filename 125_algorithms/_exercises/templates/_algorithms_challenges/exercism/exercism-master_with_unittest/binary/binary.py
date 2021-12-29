@@ -9,7 +9,7 @@ class Binary:
 
     @classmethod
     ___ convert_to_decimal(cls, inp):
-        r.. s..([2**idx ___ idx, val __ enumerate(reversed(inp))
+        r.. s..([2**idx ___ idx, val __ e..(reversed(inp))
                     __ val __ "1"])
 
     @classmethod

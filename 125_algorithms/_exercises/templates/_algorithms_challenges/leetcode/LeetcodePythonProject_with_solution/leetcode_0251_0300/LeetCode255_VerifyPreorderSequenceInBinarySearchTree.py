@@ -15,7 +15,7 @@ class Solution(object):
         ___ p __ preorder:
             __ p < low:
                 r.. False
-            while i >= 0 and p > preorder[i]:
+            w.... i >= 0 a.. p > preorder[i]:
                 low = preorder[i]
                 i -= 1
             i += 1
@@ -32,7 +32,7 @@ class Solution(object):
         ___ p __ preorder:
             __ p < low:
                 r.. False
-            while stack and stack[-1] < p:
+            w.... stack a.. stack[-1] < p:
                 low = stack.pop()
             stack.a..(p)
         r.. True

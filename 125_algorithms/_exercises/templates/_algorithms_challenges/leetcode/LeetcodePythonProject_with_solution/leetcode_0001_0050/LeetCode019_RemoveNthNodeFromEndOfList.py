@@ -23,7 +23,7 @@ class Solution(object):
         dummy.next = head
         prev = dummy
         node = head
-        while fast:
+        w.... fast:
             prev = node
             node = node.next
             fast = fast.next

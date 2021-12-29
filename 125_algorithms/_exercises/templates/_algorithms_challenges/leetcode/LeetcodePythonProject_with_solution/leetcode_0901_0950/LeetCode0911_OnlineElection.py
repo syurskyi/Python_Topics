@@ -9,7 +9,7 @@ class TopVotedCandidate(object):
         hashmap = {}
         maxNum = 0
         maxP = N..
-        ___ p, t __ zip(persons, times):
+        ___ p, t __ z..(persons, times):
             hashmap[p] = hashmap.get(p, 0)+1
             __ hashmap[p] >= maxNum:
                 maxP = p
@@ -22,7 +22,7 @@ class TopVotedCandidate(object):
         :rtype: int
         """
         i, j = 0, l..(self.arr)
-        while i < j:
+        w.... i < j:
             mid = (i+j)//2
             __ t < self.arr[mid][0]:
                 j = mid

@@ -8,8 +8,8 @@ class Solution(object):
     i = 0
     patches = 0
     miss = 1
-    while miss <= n:
-      __ i < l..(nums) and nums[i] <= miss:
+    w.... miss <= n:
+      __ i < l..(nums) a.. nums[i] <= miss:
         miss += nums[i]
         i += 1
       ____:

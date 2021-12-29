@@ -38,12 +38,12 @@ class Solution:
         """
         Let F[i] be the number of factored binary tree rooted at i
         """
-        A.sort()
+        A.s..()
         F = {}
         ___ i __ r..(l..(A)):
             F[A[i]] = 1
             ___ j __ r..(i):
-                __ A[i] % A[j] __ 0 and A[i] // A[j] __ F:
+                __ A[i] % A[j] __ 0 a.. A[i] // A[j] __ F:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD
 

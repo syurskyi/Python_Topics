@@ -3,7 +3,7 @@
 
 
 n = int(input())
-s = set(map(int, input().split()))
+s = set(map(int, input().s..()))
 ___ i __ r..(int(input())):
     string = input().s.. 
     __ string[0] __ 'pop':

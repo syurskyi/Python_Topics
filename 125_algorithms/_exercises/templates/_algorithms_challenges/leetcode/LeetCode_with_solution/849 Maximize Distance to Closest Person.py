@@ -65,14 +65,14 @@ class Solution:
         maintain a sorrted index array
         """
         idxes    # list
-        ___ i, e __ enumerate(seats):
+        ___ i, e __ e..(seats):
             __ e __ 1:
                 idxes.a..(i)
 
         ret = [-float("inf"), 0]
         n = l..(seats)
         # two ends
-        ___ i, j __ zip((0, n-1), (0, -1)):
+        ___ i, j __ z..((0, n-1), (0, -1)):
             dist = abs(i - idxes[j])
             __ dist > ret[0]:
                 ret = [dist, i]

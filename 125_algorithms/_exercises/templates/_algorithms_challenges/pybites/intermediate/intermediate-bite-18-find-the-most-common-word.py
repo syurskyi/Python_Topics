@@ -54,7 +54,7 @@ ___ my_solution_get_harry_most_common_word():
             print(word)
             p = word.strip(string.punctuation).lower()
 
-            __ l..(p) > 0 and p n.. __ stopwords:
+            __ l..(p) > 0 a.. p n.. __ stopwords:
                 filtered.a..(word.strip(string.punctuation).lower())
 
     counter = Counter(filtered)
@@ -63,14 +63,14 @@ ___ my_solution_get_harry_most_common_word():
 ___ pyb_solution_get_harry_most_common_word():
     ___ get_harry_most_common_word():
         with open(stopwords_file) as f:
-            stopwords = set(f.read().strip().lower().split('\n'))
+            stopwords = set(f.read().s...lower().s..('\n'))
 
         with open(harry_text) as f:
             words = [re.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
                      ___ word __ f.read().lower().s.. ]
 
-            words = [word ___ word __ words __ word.strip()
-                     and word n.. __ stopwords]
+            words = [word ___ word __ words __ word.s..
+                     a.. word n.. __ stopwords]
 
             cnt = Counter(words)
             r.. cnt.most_common(1)[0]

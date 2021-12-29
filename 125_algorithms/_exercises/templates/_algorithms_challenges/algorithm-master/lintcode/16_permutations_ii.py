@@ -13,7 +13,7 @@ class Solution:
 
         ans    # list
 
-        nums.sort()
+        nums.s..()
         self.dfs(nums, ans, [])
 
         r.. ans
@@ -27,7 +27,7 @@ class Solution:
             """
             ignore same num
             """
-            __ i > 0 and nums[i] __ nums[i - 1]:
+            __ i > 0 a.. nums[i] __ nums[i - 1]:
                 continue
 
             """
@@ -54,7 +54,7 @@ class Solution:
         ans    # list
         visited = [False] * l..(nums)
 
-        nums.sort()
+        nums.s..()
         self.dfs(nums, visited, ans, [])
 
         r.. ans
@@ -74,7 +74,7 @@ class Solution:
             we need to ensure `3`, `3'` is picked
             otherwise repeated result will be included
             """
-            __ i > 0 and n.. visited[i - 1] and nums[i] __ nums[i - 1]:
+            __ i > 0 a.. n.. visited[i - 1] a.. nums[i] __ nums[i - 1]:
                 continue
 
             visited[i] = True

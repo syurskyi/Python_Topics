@@ -4,7 +4,7 @@ belts = 'white yellow orange green blue brown black paneled red'.s..
 
 ___ get_belt(user_score, scores=scores, belts=belts):
     print(user_score)
-    ___ index, score __ enumerate(scores):
+    ___ index, score __ e..(scores):
         __ user_score < scores[0]:
             r.. N..
         ____ user_score < score:

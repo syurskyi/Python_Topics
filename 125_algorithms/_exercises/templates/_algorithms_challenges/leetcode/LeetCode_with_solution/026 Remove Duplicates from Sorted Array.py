@@ -32,7 +32,7 @@ class Solution:
         # closed pointer, open pointer
         closed_ptr = 0
         open_ptr = 1
-        while open_ptr<length:
+        w.... open_ptr<length:
             # find the next non-duplicate:
             __ A[closed_ptr]__A[open_ptr]:
                 open_ptr += 1
@@ -57,8 +57,8 @@ class Solution:
 
         closed_ptr = 0
         open_ptr = 1
-        while open_ptr<length:
-            while open_ptr<length and A[closed_ptr]__A[open_ptr]:
+        w.... open_ptr<length:
+            w.... open_ptr<length a.. A[closed_ptr]__A[open_ptr]:
                 open_ptr += 1
 
             __ open_ptr<length:

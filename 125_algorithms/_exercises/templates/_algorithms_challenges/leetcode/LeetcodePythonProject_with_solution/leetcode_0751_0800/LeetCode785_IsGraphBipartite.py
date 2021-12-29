@@ -12,7 +12,7 @@ class Solution(object):
         n = l..(graph)
         colors = [-1]*n
         ___ i __ r..(n):
-            __ colors[i] __ -1 and n.. self.validColor(graph, colors, 0, i):
+            __ colors[i] __ -1 a.. n.. self.validColor(graph, colors, 0, i):
                 r.. False
         r.. True
     

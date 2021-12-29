@@ -4,7 +4,7 @@ ___ get_weekdays(calendar_output):
     
 
     mapping = {}
-    ___ i,line __ enumerate(calendar_output.strip().splitlines()):
+    ___ i,line __ e..(calendar_output.s...splitlines()):
         __ i __ 0:
             continue
         ____ i __ 1:
@@ -15,7 +15,7 @@ ___ get_weekdays(calendar_output):
             print(numbers)
 
 
-            ___ day,number __ zip(days,numbers):
+            ___ day,number __ z..(days,numbers):
                 __ number != 0:
                     mapping[number] = day
 

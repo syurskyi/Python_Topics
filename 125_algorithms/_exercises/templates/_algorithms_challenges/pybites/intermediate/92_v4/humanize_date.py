@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
+TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = datetime.now()
+NOW = d__.now()
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -19,14 +19,14 @@ TIME_OFFSETS = (
 ___ pretty_date(date):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
-    __ n.. isi..(date, datetime) o. date > NOW:
+    __ n.. isi..(date, d__) o. date > NOW:
         raise ValueError
 
     secs = (NOW - date).total_seconds()
     print(f'{secs=}')
     ___ to __ TIME_OFFSETS:
         __ secs < to.offset:
-            result = to.date_str.format(int(secs / (to.divider __ to.divider ____ 1)))
+            result = to.date_str.f..(int(secs / (to.divider __ to.divider ____ 1)))
             break
     ____:
         result = date.strftime('%m/%d/%y')

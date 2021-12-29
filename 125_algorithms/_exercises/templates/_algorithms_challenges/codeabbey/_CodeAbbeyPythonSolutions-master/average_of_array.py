@@ -6,7 +6,7 @@ ___ avg(values):
 
 
 ___ i __ r..(amount_values):
-    values = l..(map(int, input().split()))
+    values = l..(map(int, input().s..()))
     avg(values)
 
 print(*results)

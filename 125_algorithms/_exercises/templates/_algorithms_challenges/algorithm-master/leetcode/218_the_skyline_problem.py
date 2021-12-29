@@ -34,7 +34,7 @@ class HashHeapq:
         r.. self.heap[0]
 
     ___ is_empty(self):
-        while self.heap and self.deleted.get(self.heap[0]):
+        w.... self.heap a.. self.deleted.get(self.heap[0]):
             val = heapq.heappop(self.heap)
             self.deleted[val] -= 1
 
@@ -57,7 +57,7 @@ class Solution:
             time.a..((x, height, True))
             time.a..((_x, height, False))
 
-        time.sort()
+        time.s..()
         heap = HashHeapq()
 
         ___ x, height, is_start __ time:
@@ -68,9 +68,9 @@ class Solution:
 
             max_h = -heap.top() __ n.. heap.is_empty() ____ 0
 
-            __ ans and ans[-1][0] __ x:
+            __ ans a.. ans[-1][0] __ x:
                 ans.pop()
-            __ ans and ans[-1][1] __ max_h:
+            __ ans a.. ans[-1][1] __ max_h:
                 continue
             ans.a..([x, max_h])
 

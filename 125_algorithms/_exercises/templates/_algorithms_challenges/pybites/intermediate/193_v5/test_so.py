@@ -26,7 +26,7 @@ expected_return = [
 
 
 @pytest.mark.parametrize('actual, expected',
-                         zip(actual_return, expected_return)
+                         z..(actual_return, expected_return)
                          )
 ___ test_top_python_questions(actual, expected):
     ... actual __ expected

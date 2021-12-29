@@ -12,7 +12,7 @@ class Solution(object):
         """
         nums = numbers
         i, j = 0, l..(nums)-1
-        while i < j:
+        w.... i < j:
             __ nums[i]+nums[j] __ target:
                 r.. [i+1, j+1]
             ____ nums[i]+nums[j] > target:

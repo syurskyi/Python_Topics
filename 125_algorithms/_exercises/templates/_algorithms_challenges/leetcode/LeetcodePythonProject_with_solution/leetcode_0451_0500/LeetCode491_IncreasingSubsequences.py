@@ -18,7 +18,7 @@ class Solution(object):
         __ l..(curr) >= 2:
             res.add(tuple(curr))
         ___ i __ r..(ind, l..(nums)):
-            __ i > ind and nums[i] __ nums[i-1]:
+            __ i > ind a.. nums[i] __ nums[i-1]:
                 continue
             __ n.. curr o. curr[-1] <= nums[i]:
                 curr.a..(nums[i])

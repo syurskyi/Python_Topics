@@ -61,14 +61,14 @@ class Solution:
         __ (r1, c1, r2) n.. __ self.cache:
             ret = float("-inf")
             c2 = r1 + c1 - r2   # r1 + c1 == r2 + c2
-            __ 0 <= r1 < n and 0 <= c1 < n and 0 <= r2 < n and 0 <= c2 < n:
-                __ grid[r1][c1] != -1 and grid[r2][c2] != -1:
+            __ 0 <= r1 < n a.. 0 <= c1 < n a.. 0 <= r2 < n a.. 0 <= c2 < n:
+                __ grid[r1][c1] != -1 a.. grid[r2][c2] != -1:
                     ret = 0
                     ret += grid[r1][c1]
                     __ r1 != r2:
                         ret += grid[r2][c2]
 
-                    __ r1 __ n - 1 and c1 __ n - 1:
+                    __ r1 __ n - 1 a.. c1 __ n - 1:
                         pass  # seed, otherwise -inf 
                     ____:
                         ret += max(

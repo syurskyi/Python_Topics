@@ -25,7 +25,7 @@ class Solution(object):
                         __ board[i-1][j] __ '.':
                             count += 1
                     ____:
-                        __ board[i-1][j] __ '.' and board[i][j-1] __ '.':
+                        __ board[i-1][j] __ '.' a.. board[i][j-1] __ '.':
                             count += 1
         r.. count
     

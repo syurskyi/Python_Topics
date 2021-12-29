@@ -14,12 +14,12 @@ class Solution(object):
         """
         t = [True ___ i __ r..(n)]
         i = 2
-        while i * i < n:
+        w.... i * i < n:
             __ t[i] __ False:
                 i += 1
                 continue
             j = i * i
-            while j < n:
+            w.... j < n:
                 t[j] = False
                 j += i
             i += 1

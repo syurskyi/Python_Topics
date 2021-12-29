@@ -1,5 +1,5 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ re
 
 social_platforms = """Twitter
@@ -19,7 +19,7 @@ Reddit
 """
 
 # note range is of type range and regex is a re.compile object
-Validator = namedtuple('Validator', 'range regex')
+Validator = n..('Validator', 'range regex')
 
 
 ___ parse_social_platforms_string():
@@ -42,4 +42,4 @@ ___ validate_username(platform, username):
     plat = all_validators[platform]
     plat_range = l..(username) __ plat.r..
     plat_match = plat.regex.match(username) __ n.. N..
-    r.. plat_range and plat_match
+    r.. plat_range a.. plat_match

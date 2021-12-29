@@ -23,7 +23,7 @@ class Solution:
             ___ right __ r..(left, n):
                 L[right] = H[right]
 
-                __ right > left and L[right - 1] < H[right]:
+                __ right > left a.. L[right - 1] < H[right]:
                     L[right] = L[right - 1]
 
                 area = L[right] * (right - left + 1)
@@ -49,7 +49,7 @@ class Solution:
         n = l..(H)
 
         ___ right __ r..(l..(H)):
-            __ right < n - 1 and H[right] <= H[right + 1]:
+            __ right < n - 1 a.. H[right] <= H[right + 1]:
                 continue
             Hmin = H[right]
             ___ left __ r..(right, -1, -1):
@@ -80,7 +80,7 @@ class Solution:
         stack    # list
 
         ___ right __ r..(l..(H)):
-            while stack and H[stack[-1]] >= H[right]:
+            w.... stack a.. H[stack[-1]] >= H[right]:
                 height = H[stack.pop()]
                 left = stack[-1] __ stack ____ -1
                 area = height * (right - left - 1)

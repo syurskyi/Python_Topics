@@ -17,16 +17,16 @@ class Solution(object):
       ___ di, dj __ directions:
         dist = 0
         i, j = curr
-        while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
+        w.... 0 <= i + di < height a.. 0 <= j + dj < width a.. maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
-        yield (i, j)
+        y.. (i, j)
 
     queue = deque([tuple(start)])
     visited = set()
     destination = tuple(destination)
-    while queue:
+    w.... queue:
       curr = queue.popleft()
       __ curr __ visited:
         continue

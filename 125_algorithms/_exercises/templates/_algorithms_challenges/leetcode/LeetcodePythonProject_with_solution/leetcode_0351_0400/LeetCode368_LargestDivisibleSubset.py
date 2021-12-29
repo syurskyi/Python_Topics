@@ -7,7 +7,7 @@ Created on Mar 28, 2017
 class Solution(object):
     ___ largestDivisibleSubset(self, nums):
         __ n.. nums: r.. []
-        nums.sort()
+        nums.s..()
         n = l..(nums)
         idx = [-1]*n
         dp = [1]*n
@@ -24,7 +24,7 @@ class Solution(object):
                 maxInd = i
         ind = maxInd
         res    # list
-        while ind != -1:
+        w.... ind != -1:
             res.insert(0, nums[ind])
             ind = idx[ind]
         r.. res

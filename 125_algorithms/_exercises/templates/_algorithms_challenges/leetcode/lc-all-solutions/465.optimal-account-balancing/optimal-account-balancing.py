@@ -17,7 +17,7 @@ class Solution(object):
         r.. 0
       people = set(people_list)
       ___ i __ r..(2, l..(people_list) + 1):
-        ___ persons __ itertools.combinations(people_list, i):
+        ___ persons __ i...combinations(people_list, i):
           __ s..(balances[p] ___ p __ persons) __ 0:
             people -= set(persons)
             r.. dfs(l..(people)) + l..(persons) - 1

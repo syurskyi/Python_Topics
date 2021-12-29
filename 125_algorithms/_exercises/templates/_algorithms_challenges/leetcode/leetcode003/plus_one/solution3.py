@@ -19,7 +19,7 @@ class Solution(object):
         carry = 1
         i = 0
         res    # list
-        while i < n o. carry > 0:
+        w.... i < n o. carry > 0:
             temp = 0
             __ i < n:
                 temp += digits[i]

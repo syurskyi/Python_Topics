@@ -22,7 +22,7 @@ class Solution(object):
         __ n.. s1 o. n.. s2: r.. 0
         count = 0
         i, j = 0, 0
-        while i < l..(s1) and j < l..(s2):
+        w.... i < l..(s1) a.. j < l..(s2):
             __ s1[i] __ s2[j]:
                 j += 1
             i += 1

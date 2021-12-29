@@ -11,7 +11,7 @@ ___ get_sum(values):
     r.. result
 
 ___ i __ r..(amount_values):
-    values = l..(map(int, input().split()))
+    values = l..(map(int, input().s..()))
     results.a..(get_sum(values))
 
 print(*results)

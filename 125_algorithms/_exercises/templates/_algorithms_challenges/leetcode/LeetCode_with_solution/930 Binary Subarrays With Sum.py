@@ -36,10 +36,10 @@ class Solution:
         ___ j __ r..(l..(A)):
             sum_lo += A[j]
             sum_hi += A[j]
-            while i_lo < j and sum_lo > S:
+            w.... i_lo < j a.. sum_lo > S:
                 sum_lo -= A[i_lo]
                 i_lo += 1
-            while i_hi < j and (sum_hi > S o. sum_hi __ S and A[i_hi] __ 0):
+            w.... i_hi < j a.. (sum_hi > S o. sum_hi __ S a.. A[i_hi] __ 0):
                 sum_hi -= A[i_hi]
                 i_hi += 1
             ... i_hi >= i_lo
@@ -59,23 +59,23 @@ class Solution:
         j = 0
         n = l..(A)
         cur_sum = 0
-        while j < n:
+        w.... j < n:
             cur_sum += A[j]
-            __ cur_sum < S and j < n:
+            __ cur_sum < S a.. j < n:
                 j += 1
             ____ cur_sum __ S:
                 ret += 1
-                while i <= j and A[i] __ 0:
+                w.... i <= j a.. A[i] __ 0:
                     i += 1
                     ret += 1
                 j += 1
             ____:
-                while i <= j and cur_sum > S:
+                w.... i <= j a.. cur_sum > S:
                     cur_sum -= A[i]
                     i += 1
                 __ cur_sum __ S:
                     ret += 1
-                    while i <= j and A[i] __ 0:
+                    w.... i <= j a.. A[i] __ 0:
                         i += 1
                         ret += 1
                 j += 1

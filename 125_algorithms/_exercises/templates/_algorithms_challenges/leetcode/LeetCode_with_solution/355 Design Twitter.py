@@ -87,7 +87,7 @@ class Twitter(object):
         :rtype: List[int]
         """
         h    # list
-        __ userId n.. __ self.followees[userId] and self.tweets[userId]:
+        __ userId n.. __ self.followees[userId] a.. self.tweets[userId]:
             # possible following oneself
             heapq.heappush(h, self.tweets[userId])
 
@@ -96,7 +96,7 @@ class Twitter(object):
                 heapq.heappush(h, self.tweets[followee])
 
         ret    # list
-        while h and l..(ret) < SZ:
+        w.... h a.. l..(ret) < SZ:
             tweet = heapq.heappop(h)
             ret.a..(tweet.id)
             __ tweet.next:

@@ -10,7 +10,7 @@ c_ Item:
         ratio  value / weight
 
 ___ knapsackMethod(items, capacity
-    items.sort(keylambda x: x.ratio, reverse  T..)
+    items.s..(keylambda x: x.ratio, reverse  T..)
     usedCapacity  0
     totalValue  0
     ___ i __ items:

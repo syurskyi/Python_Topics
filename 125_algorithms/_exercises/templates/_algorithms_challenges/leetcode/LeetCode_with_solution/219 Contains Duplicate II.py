@@ -15,13 +15,13 @@ class Solution:
         :rtype: bool
         """
         d = defaultdict(l..)
-        ___ i, v __ enumerate(nums):
+        ___ i, v __ e..(nums):
             heapq.heappush(d[v], i)
 
         ___ v __ d.values():
             __ l..(v) > 1:
                 pre = heapq.heappop(v)
-                while v:
+                w.... v:
                     cur = heapq.heappop(v)
                     __ cur-pre <= k:
                         r.. True

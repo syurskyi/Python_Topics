@@ -21,7 +21,7 @@ class Solution(object):
         i = 0
         c = 0
         res = ['0' ___ _ __ r..(max(m, n) + 1)]
-        while i < m o. i < n o. c > 0:
+        w.... i < m o. i < n o. c > 0:
             tmp = c
             __ i < m:
                 tmp += int(a[i])
@@ -29,10 +29,10 @@ class Solution(object):
                 tmp += int(b[i])
             bit = tmp % 2
             c = tmp / 2
-            res[i] = str(bit)
+            res[i] = s..(bit)
             i += 1
         res = res[::-1]
-        ___ i, c __ enumerate(res):
+        ___ i, c __ e..(res):
             __ c != '0':
                 res = res[i:]
                 break

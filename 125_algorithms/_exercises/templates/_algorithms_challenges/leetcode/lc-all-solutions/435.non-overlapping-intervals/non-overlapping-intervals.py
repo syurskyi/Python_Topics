@@ -10,7 +10,7 @@ class Solution(object):
     :type intervals: List[Interval]
     :rtype: int
     """
-    intervals.sort(key=l.... i: i.end)
+    intervals.s..(key=l.... i: i.end)
     ans = 0
     end = float("-inf")
     ___ interval __ intervals:

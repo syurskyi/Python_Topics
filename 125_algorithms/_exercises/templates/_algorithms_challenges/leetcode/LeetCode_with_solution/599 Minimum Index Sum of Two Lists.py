@@ -29,14 +29,14 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
+    ___ findRestaurant(self, list1: List[s..], list2: List[s..]) -> List[s..]:
         index = {}
-        ___ i, v __ enumerate(list2):
+        ___ i, v __ e..(list2):
             index[v] = i
 
         ret    # list
         mini = float('inf')
-        ___ i, v __ enumerate(list1):
+        ___ i, v __ e..(list1):
             __ v __ index:
                 cur = i + index[v]  # current index sum
                 __ cur < mini:

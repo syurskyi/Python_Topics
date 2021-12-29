@@ -22,12 +22,12 @@ class Solution:
             size = 1
             b, c = a - 1, a + 1
 
-            while b __ cands:
+            w.... b __ cands:
                 cands.discard(b)
                 b -= 1
                 size += 1
 
-            while c __ cands:
+            w.... c __ cands:
                 cands.discard(c)
                 c += 1
                 size += 1
@@ -54,7 +54,7 @@ class Solution:
         __ n.. nums:
             r.. ans
 
-        nums.sort()
+        nums.s..()
 
         size = 1
 

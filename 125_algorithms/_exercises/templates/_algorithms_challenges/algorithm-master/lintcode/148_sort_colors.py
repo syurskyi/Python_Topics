@@ -9,7 +9,7 @@ class Solution:
 
         left, right = 0, l..(A) - 1
         i = 0
-        while i <= right:
+        w.... i <= right:
             __ A[i] __ 0:
                 A[left], A[i] = A[i], A[left]
                 left += 1

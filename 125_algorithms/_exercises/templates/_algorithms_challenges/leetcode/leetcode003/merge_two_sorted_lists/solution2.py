@@ -21,7 +21,7 @@ class Solution(object):
         dummy = ListNode(0)
         dummy_end = dummy
 
-        while l1 __ n.. N.. and l2 __ n.. N..
+        w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
                 dummy_end.next = l1
                 l1 = l1.next

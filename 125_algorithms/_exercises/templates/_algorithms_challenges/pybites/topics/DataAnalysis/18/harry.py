@@ -19,7 +19,7 @@ urllib.request.urlretrieve(
 ___ get_harry_most_common_word():
     common_word    # list
     with open(stopwords_file) as f:
-        stopwords_list = [word.strip() ___ word __ f.readlines()]
+        stopwords_list = [word.s.. ___ word __ f.readlines()]
         #print(stopwords_list)
     with open(harry_text, encoding='utf8') as f:
         ___ lines __ f:
@@ -27,7 +27,7 @@ ___ get_harry_most_common_word():
                 #print(word)
                 word_to_test = "".join(letter.lower() ___ letter __ word __ letter.isalnum())
                 #print(word1)
-                __ word_to_test and word_to_test n.. __ stopwords_list :
+                __ word_to_test a.. word_to_test n.. __ stopwords_list :
                     common_word.a..(word_to_test)
     r.. Counter(common_word).most_common(1)[0]
 

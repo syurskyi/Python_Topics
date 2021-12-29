@@ -37,7 +37,7 @@ class Solution(object):
         res[3] = max(res[3], j)
         m, n = l..(grid), l..(grid[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-            __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
+            __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                 grid[x][y] = 2
                 self.helper(grid, x, y, res)
     
@@ -77,7 +77,7 @@ class Solution(object):
                 grid0 = newGrid
     
     ___ getKey(self, grid):
-        r.. ','.join([''.join([str(num) ___ num __ row]) ___ row __ grid])
+        r.. ','.join([''.join([s..(num) ___ num __ row]) ___ row __ grid])
     
     ___ test(self):
         testCases = [
@@ -164,7 +164,7 @@ class Solution(object):
         ___ grid __ testCases:
             print('grid:')
             grid = [[int(c) ___ c __ row] ___ row __ grid]
-            print('\n'.join([str(row) ___ row __ grid]))
+            print('\n'.join([s..(row) ___ row __ grid]))
             result = self.numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -6,7 +6,7 @@ class Garden(object):
     ___ __init__(self, diagram,
                  students=("Alice Bob Charlie David "
                            "Eve Fred Ginny Harriet "
-                           "Ileana Joseph Kincaid Larry").split()):
+                           "Ileana Joseph Kincaid Larry").s..()):
         self.plant_rows = diagram.s..
         self.students = s..(students)
 

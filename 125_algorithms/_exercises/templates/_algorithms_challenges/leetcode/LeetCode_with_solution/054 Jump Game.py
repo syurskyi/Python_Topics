@@ -25,8 +25,8 @@ class Solution:
         length = l..(A)
         dp = [set([index]) ___ index __ r..(length)]
 
-        ___ ind, val __ enumerate(A):
-            __ ind!=0 and l..(dp[ind])<2:
+        ___ ind, val __ e..(A):
+            __ ind!=0 a.. l..(dp[ind])<2:
                 continue
 
             # jump forward
@@ -52,7 +52,7 @@ class Solution:
         l = l..(A)
         dp = [False ___ _ __ xrange(l+1)]  # last one is dummy
         dp[0] = True
-        ___ ind, val __ enumerate(A):
+        ___ ind, val __ e..(A):
             __ dp[ind]:
                 ___ i __ xrange(1, val+1):  # now jumping
                     __ ind+i<l+1:

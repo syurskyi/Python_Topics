@@ -1,7 +1,7 @@
 d = int(input())
-a = l..(map(int,input().split()))
+a = l..(map(int,input().s..()))
 
-while l..(a)!= 1:
+w.... l..(a)!= 1:
     max = 0
     ___ i __ r..(l..(a)):
         __ a[i] > max:

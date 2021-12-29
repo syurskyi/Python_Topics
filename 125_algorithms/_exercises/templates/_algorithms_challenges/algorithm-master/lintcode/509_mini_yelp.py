@@ -120,7 +120,7 @@ class MiniYelp:
             __ distance <= k:
                 neighbors.a..((distance, restaurant))
 
-        neighbors.sort(key=l.... item: item[0])
+        neighbors.s..(key=l.... item: item[0])
         r.. [
             restr.name
             ___ _, restr __ neighbors
@@ -136,7 +136,7 @@ class MiniYelp:
         r.. n
 
     ___ get_restr_hashcode(self, restaurant):
-        r.. '{0}:{1}'.format(
+        r.. '{0}:{1}'.f..(
             GeoHash.encode(restaurant.location),
             restaurant.id
         )
@@ -249,7 +249,7 @@ class MiniYelp:
             __ distance <= k:
                 neighbors.a..((distance, restaurant))
 
-        neighbors.sort(key=l.... item: item[0])
+        neighbors.s..(key=l.... item: item[0])
         r.. [
             restr.name
             ___ _, restr __ neighbors
@@ -265,7 +265,7 @@ class MiniYelp:
         r.. n
 
     ___ get_restr_hashcode(self, restaurant):
-        r.. '{0}:{1}'.format(
+        r.. '{0}:{1}'.f..(
             GeoHash.encode(restaurant.location),
             restaurant.id
         )

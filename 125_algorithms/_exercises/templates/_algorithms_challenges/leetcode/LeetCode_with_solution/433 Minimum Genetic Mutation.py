@@ -28,7 +28,7 @@ You may assume start and end string is not the same.
 class Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
-        ___ a, b __ zip(p, q):
+        ___ a, b __ z..(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
@@ -49,13 +49,13 @@ class Solution:
         q = [start]
         visited = {start}
         lvl = 0
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ end:
                     r.. lvl
                 ___ t __ bank:
-                    __ t n.. __ visited and self.is_neighbor(e, t):
+                    __ t n.. __ visited a.. self.is_neighbor(e, t):
                         visited.add(t)
                         cur_q.a..(t)
 

@@ -1,6 +1,6 @@
 ___ is_symmetrical(num):
-    b_str =  str(num)
-    a_str = str(num)
+    b_str =  s..(num)
+    a_str = s..(num)
     __ a_str[::-1] __ b_str:
         r.. True
     ____:

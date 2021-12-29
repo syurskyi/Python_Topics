@@ -1,4 +1,4 @@
-____ itertools _______ count
+____ i.. _______ count
 ____ math _______ sqrt
 
 
@@ -18,7 +18,7 @@ ___ nth_prime(n):
                 r.. False
         r.. True
 
-    while l..(known) < n:
+    w.... l..(known) < n:
         x = next(candidates)
         __ is_prime(x):
             known.a..(x)
@@ -27,8 +27,8 @@ ___ nth_prime(n):
 
 
 ___ prime_candidates():
-    yield 2
-    yield 3
+    y.. 2
+    y.. 3
     ___ n __ c.. 6, 6):
-        yield n - 1
-        yield n + 1
+        y.. n - 1
+        y.. n + 1

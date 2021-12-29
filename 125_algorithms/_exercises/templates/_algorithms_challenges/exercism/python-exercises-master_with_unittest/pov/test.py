@@ -215,7 +215,7 @@ class PovTest(unittest.TestCase):
 
     ___ assertTreeEquals(self, result, expected):
         self.assertEqual(result, expected,
-                         '{} != {}'.format(result, expected))
+                         '{} != {}'.f..(result, expected))
 
 
 __ __name__ __ '__main__':

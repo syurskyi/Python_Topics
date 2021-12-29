@@ -44,7 +44,7 @@ class Solution(object):
     ___ test(self):
         head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         node = self.reverseBetween(head, 2, 4)
-        while node:
+        w.... node:
             print(node.val)
             node = node.next
         print

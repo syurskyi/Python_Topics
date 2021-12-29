@@ -28,15 +28,15 @@ ____ packaging _______ version
 # """
 
 
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
    """Compare old vs new requirement multiline strings
       and return a list of dependencies that have been upgraded
       (have a newer version)
    """
    upgraded_reqs    # list
-   ___ old, new __ zip(old_reqs.strip().splitlines(), new_reqs.strip().splitlines()):
-      req, version_old = old.split("==")
-      version_new = new.split("==")[1]
+   ___ old, new __ z..(old_reqs.s...splitlines(), new_reqs.s...splitlines()):
+      req, version_old = old.s..("==")
+      version_new = new.s..("==")[1]
       __ version.parse(version_new) > version.parse(version_old):
          upgraded_reqs.a..(req)
    r.. upgraded_reqs

@@ -18,7 +18,7 @@ class Solution:
 
 
         closed_tail = dummy_head.next
-        while(closed_tail and closed_tail.next):
+        w....(closed_tail a.. closed_tail.next):
             open_head = closed_tail.next
             # open_head_next = closed_tail.next.next
 
@@ -27,7 +27,7 @@ class Solution:
             ptr = dummy_head.next # error using ptr = head
 
             # WHILE OUTSIDE IF THUS INCREASING TIME COMPLEXITY
-            while(ptr_before):
+            w....(ptr_before):
                 __ comparator(ptr, open_head)>0:
                     ptr_before.next = open_head
                     closed_tail.next = open_head.next
@@ -66,13 +66,13 @@ class Solution:
         dummy.next = head
 
         closed_tail = head
-        while (closed_tail and closed_tail.next):
+        w.... (closed_tail a.. closed_tail.next):
             open_head = closed_tail.next
             open_head_next = closed_tail.next.next
             __ n.. comparator(closed_tail, open_head)<=0:  # Step 1: only compare the closed set tail and open set head
 
                 pre = dummy
-                while comparator(pre.next, open_head)<0:  # Step 2: find position
+                w.... comparator(pre.next, open_head)<0:  # Step 2: find position
                     pre = pre.next
 
                 # swap nodes

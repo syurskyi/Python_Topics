@@ -1,5 +1,5 @@
 ___ hey(stimulus):
-    stimulus = stimulus.strip()
+    stimulus = stimulus.s..
 
     __ _is_silence(stimulus):
         r.. 'Fine. Be that way!'

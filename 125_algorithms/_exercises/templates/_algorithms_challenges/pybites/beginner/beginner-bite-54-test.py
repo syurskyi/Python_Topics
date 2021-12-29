@@ -3,14 +3,14 @@ _______ pluggy
 _______ py
 
 ___ print_hanging_indents(poem):
-    poem = poem.strip()
+    poem = poem.s..
     whitespace = " "
     prefix = INDENTS*whitespace
     current_line = 0
     target_poem    # list
     ___ line __ poem.splitlines():
         # adjust counters
-        line = line.strip()
+        line = line.s..
         __ line __ "":
             current_line = 0
             continue
@@ -71,13 +71,13 @@ Remember me when no more day by day
 ___ test_shakespeare_text(capfd):
     print_hanging_indents(shakespeare_unformatted)
     output = capfd.readouterr()[0]
-    ... output.strip() __ shakespeare_formatted.strip()
+    ... output.s.. __ shakespeare_formatted.s..
 
 
 ___ test_rosetti_poem(capfd):
     print_hanging_indents(rosetti_unformatted)
     output = capfd.readouterr()[0]
-    ... output.strip() __ rosetti_formatted.strip()
+    ... output.s.. __ rosetti_formatted.s..
 
 
     test_rosetti_poem()

@@ -1,19 +1,19 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 _______ json
 
 blog = d..(name='PyBites',
             founders=('Julian', 'Bob'),
-            started=datetime(year=2016, month=12, day=19),
+            started=d__ y.._2016,  m.._12,  d.._19),
             tags=['Python', 'Code Challenges', 'Learn by Doing'],
             location='Spain/Australia',
             site='https://pybit.es')
 
 
 ___ dict2nt(dict_):
-    r.. namedtuple('nt', dict_.keys())(**dict_)
+    r.. n..('nt', dict_.keys())(**dict_)
 
 
 ___ nt2json(nt):
     d = nt._asdict()
-    r.. json.dumps(str(d))
+    r.. json.dumps(s..(d))

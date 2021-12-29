@@ -22,11 +22,11 @@ class Solution(object):
                 __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
                     continue
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     dp[i][j] = 1
-                ____ i __ 0 and j != 0:
+                ____ i __ 0 a.. j != 0:
                     dp[i][j] = dp[i][j-1]
-                ____ i != 0 and j __ 0:
+                ____ i != 0 a.. j __ 0:
                     dp[i][j] = dp[i-1][j]
                 ____:
                     dp[i][j] = dp[i][j-1] + dp[i-1][j]

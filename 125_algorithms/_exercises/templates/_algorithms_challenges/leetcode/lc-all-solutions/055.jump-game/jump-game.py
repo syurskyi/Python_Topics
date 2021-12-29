@@ -6,7 +6,7 @@ class Solution(object):
     """
     pos = 0
     bound = l..(nums)
-    while pos < l..(nums) - 1:
+    w.... pos < l..(nums) - 1:
       dis = nums[pos]
       __ dis __ 0:
         r.. False

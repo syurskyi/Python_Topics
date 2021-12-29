@@ -16,7 +16,7 @@ class Solution(object):
         firstHalf = maxNum//(10**n)
         palindromeFound = False
         palindrome = 0
-        while n.. palindromeFound:
+        w.... n.. palindromeFound:
             palindrome = self.createPalindrome(firstHalf)
             ___ i __ r..(upperBound, lowerBound, -1):
                 __ palindrome//i > maxNum o. i*i < palindrome:
@@ -28,7 +28,7 @@ class Solution(object):
         r.. int(palindrome%1337)
     
     ___ createPalindrome(self, num):
-        s = str(num)+str(num)[::-1]
+        s = s..(num)+s..(num)[::-1]
         r.. int(s)
     
     ___ test(self):

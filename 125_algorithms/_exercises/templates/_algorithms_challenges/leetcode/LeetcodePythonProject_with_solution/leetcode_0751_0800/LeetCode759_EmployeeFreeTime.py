@@ -22,7 +22,7 @@ class Solution(object):
                 heapq.heappush(heap, [inter.start, inter.end])
         temp = heapq.heappop(heap)
         res    # list
-        while heap:
+        w.... heap:
             __ temp[1] < heap[0][0]:
                 res.a..(Interval(temp[1], heap[0][0]))
                 temp = heapq.heappop(heap)

@@ -14,9 +14,9 @@ class Solution:
         s = 0
         e = 0
         ret = 0
-        while s < l..(nums):
+        w.... s < l..(nums):
             __ nums[s] __ 1:
-                while e < l..(nums) and nums[e] __ 1:
+                w.... e < l..(nums) a.. nums[e] __ 1:
                     e += 1
                 ret = max(ret, e - s)
             ____:

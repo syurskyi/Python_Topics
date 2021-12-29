@@ -26,14 +26,14 @@ class Solution:
             heappush(bounds, (heights[m - 1][i], m - 1, i))
             visited[m - 1][i] = 1
 
-        while bounds:
+        w.... bounds:
             # Find the min bound of any current boundary
             bound, x, y = heappop(bounds)
             # To keep the water in, keep finding the boundary
             ___ i __ r..(4):
                 _x = x + dx[i]
                 _y = y + dy[i]
-                __ 0 <= _x < m and 0 <= _y < n and n.. visited[_x][_y]:
+                __ 0 <= _x < m a.. 0 <= _y < n a.. n.. visited[_x][_y]:
                     visited[_x][_y] = 1
                     # Choosing the boundary of current cell
                     # if its lower than the bound outside

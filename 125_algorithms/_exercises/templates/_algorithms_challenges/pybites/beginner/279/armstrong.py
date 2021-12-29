@@ -13,7 +13,7 @@ ___ is_armstrong(n: int) -> bool:
     
     sum_digits =0
 
-    while n:
+    w.... n:
         sum_digits += (n % 10)**digits
         n //= 10
 

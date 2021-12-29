@@ -12,10 +12,10 @@ ___ test_equality_comparison():
 
 
 ___ test_str_using_thumbsup():
-    ... str(Score.BEGINNER) __ 'BEGINNER => 👍👍'
-    ... str(Score.INTERMEDIATE) __ 'INTERMEDIATE => 👍👍👍'
-    ... str(Score.ADVANCED) __ 'ADVANCED => 👍👍👍👍'
-    ... str(Score.CHEATED) __ 'CHEATED => 👍'
+    ... s..(Score.BEGINNER) __ 'BEGINNER => 👍👍'
+    ... s..(Score.INTERMEDIATE) __ 'INTERMEDIATE => 👍👍👍'
+    ... s..(Score.ADVANCED) __ 'ADVANCED => 👍👍👍👍'
+    ... s..(Score.CHEATED) __ 'CHEATED => 👍'
 
 
 ___ test_average():

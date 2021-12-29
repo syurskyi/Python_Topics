@@ -12,7 +12,7 @@ class Node():
 
 ___ BuildTree(records):
     root = N..
-    records.sort(key=l.... x: x.record_id)
+    records.s..(key=l.... x: x.record_id)
     ordered_id = [i.record_id ___ i __ records]
     __ records:
         __ ordered_id[-1] != l..(ordered_id) - 1:

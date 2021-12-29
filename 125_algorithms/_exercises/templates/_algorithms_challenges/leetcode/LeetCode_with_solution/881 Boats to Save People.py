@@ -40,10 +40,10 @@ class Solution:
         """
         ret = 0
         q = deque(s..(people))
-        while q:
+        w.... q:
             tail = q.pop()
             ret += 1
-            __ q and q[0] + tail <= limit:
+            __ q a.. q[0] + tail <= limit:
                 q.popleft()
 
         r.. ret

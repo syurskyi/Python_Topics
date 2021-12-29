@@ -1,4 +1,4 @@
-____ itertools _______ combinations, permutations
+____ i.. _______ combinations, permutations
 
 ___ friends_teams(friend_list: l.., team_size: int, order_does_matter: bool = False) -> l..:
     __ order_does_matter:

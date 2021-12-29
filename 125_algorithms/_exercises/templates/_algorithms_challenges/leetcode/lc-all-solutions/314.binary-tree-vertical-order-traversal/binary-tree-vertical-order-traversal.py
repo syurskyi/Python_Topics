@@ -20,7 +20,7 @@ class Solution(object):
     res = defaultdict(l..)
     dfs(root, 0, 0, res)
     i = self.leftMost
-    while True:
+    w... T...
       __ n.. res[i]:
         break
       ans.a..([item[0] ___ item __ s..(res[i], key=l.... a: a[1])])

@@ -16,7 +16,7 @@ original_links = [
 ___ generate_affiliation_link(url):
     #print(url)
     #prod_id = url.split('/')
-    r.. "http://www.amazon.com/dp/{}/?tag=pyb0f-20".format(url.split('/')[5])
+    r.. "http://www.amazon.com/dp/{}/?tag=pyb0f-20".f..(url.s..('/')[5])
 
 
 ___ link __ original_links:

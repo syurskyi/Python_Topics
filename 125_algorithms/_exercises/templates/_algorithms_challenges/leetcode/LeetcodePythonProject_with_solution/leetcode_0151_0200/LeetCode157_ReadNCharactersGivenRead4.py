@@ -17,7 +17,7 @@ class Solution(object):
         :rtype: The number of characters read (int)
         """
         idx = 0
-        while True:
+        w... T...
             buf4 = ['']*4
             curr = m..(read4(buf4), n-idx)
             ___ i __ r..(curr):

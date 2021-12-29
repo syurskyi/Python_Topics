@@ -20,7 +20,7 @@ ___ i __ r..(int(input())):
         ___ k __ r..(0, l..(store_str)):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             try:
-                __ p[store_str[k]] __ str(store_str[k+1]):
+                __ p[store_str[k]] __ s..(store_str[k+1]):
                     store_str.pop(k)
                     store_str.pop(k)
             except:
@@ -41,7 +41,7 @@ ___ i __ r..(int(input())):
     #if the starting element and the last element of the list are same then pop, else the give string is not nested properly
     # and the result is 0
     __ checker __ True:
-        while l..(store_str) != 1:
+        w.... l..(store_str) != 1:
             try:
                 __ p[store_str[0]] __ store_str[-1]:
                     store_str.pop(0)

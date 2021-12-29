@@ -19,7 +19,7 @@ class Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.sort(key=operator.attrgetter("start"))
+        intervals.s..(key=operator.attrgetter("start"))
         ___ i __ xrange(l..(intervals)-1):
             __ intervals[i].end > intervals[i+1].start:
                 r.. False

@@ -6,10 +6,10 @@ class Solution(object):
         """
         __ n.. A: r.. A
         i, j = 0, l..(A)-1
-        while i < j:
-            while i < j and A[i] % 2 __ 0:
+        w.... i < j:
+            w.... i < j a.. A[i] % 2 __ 0:
                 i += 1
-            while i < j and A[j] % 2 __ 1:
+            w.... i < j a.. A[j] % 2 __ 1:
                 j -= 1
             __ i < j:
                 A[i], A[j] = A[j], A[i]

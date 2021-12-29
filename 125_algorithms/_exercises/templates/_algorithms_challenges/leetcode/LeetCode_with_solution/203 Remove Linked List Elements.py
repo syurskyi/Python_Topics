@@ -26,7 +26,7 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             cur = pre.next
             __ cur.val __ val:
                 pre.next = cur.next

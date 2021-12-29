@@ -44,15 +44,15 @@ class MagicDictionary(object):
     ___ helper(self, node, word, ind, diffFlag):
         __ n.. node: r.. False
         __ ind __ l..(word):
-            __ node.isLeaf and diffFlag:
+            __ node.isLeaf a.. diffFlag:
                 r.. True
             r.. False
         c = word[ind]
         ___ c0 __ node.children:
-            __ c0 != c and diffFlag:
+            __ c0 != c a.. diffFlag:
                 continue
             __ self.helper(node.children.get(c, N..), word, ind+1, diffFlag) o.\
-                (c0 != c and self.helper(node.children[c0], word, ind+1, True)):
+                (c0 != c a.. self.helper(node.children[c0], word, ind+1, True)):
                 r.. True
         r.. False
 

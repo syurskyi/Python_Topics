@@ -7,5 +7,5 @@ ___ test_case1():
 
 
 ___ test_case2():
-    ___ item __ enumerate(list1):
+    ___ item __ e..(list1):
         print(item)

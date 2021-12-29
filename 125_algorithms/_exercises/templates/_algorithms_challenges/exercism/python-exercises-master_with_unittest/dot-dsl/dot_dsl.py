@@ -7,7 +7,7 @@ class Node(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        r.. self.name __ other.name and self.attrs __ other.attrs
+        r.. self.name __ other.name a.. self.attrs __ other.attrs
 
 
 class Edge(object):
@@ -17,8 +17,8 @@ class Edge(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        r.. (self.src __ other.src and
-                self.dst __ other.dst and
+        r.. (self.src __ other.src a..
+                self.dst __ other.dst a..
                 self.attrs __ other.attrs)
 
 

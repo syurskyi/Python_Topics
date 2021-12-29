@@ -17,7 +17,7 @@ class Solution(object):
       cur = root
       pre = N..
       next = N..
-      while cur and k > 0:
+      w.... cur a.. k > 0:
         next = cur.next
         cur.next = pre
         pre = cur
@@ -32,7 +32,7 @@ class Solution(object):
     k = 1
     p = dummy
     start = N..
-    while p:
+    w.... p:
       __ k __ m:
         start = p
       __ k __ n + 1:

@@ -19,17 +19,17 @@ class Solution(object):
         """
         __ n.. root: r.. 0
         res    # list
-        self.helper(root, str(root.val), res)
+        self.helper(root, s..(root.val), res)
         resNum = s..([int(val) ___ val __ res])
         r.. resNum
         
     ___ helper(self, root, curr, res):
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             res.a..(curr)
         __ root.left:
-            self.helper(root.left, curr+str(root.left.val), res)
+            self.helper(root.left, curr+s..(root.left.val), res)
         __ root.right:
-            self.helper(root.right, curr+str(root.right.val), res)
+            self.helper(root.right, curr+s..(root.right.val), res)
     
     ___ test(self):
 #         root = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, None, TreeNode(6)))

@@ -15,8 +15,8 @@ class Solution(object):
     __ m..(x, y) __ 0:
       r.. True __ max(x, y) __ z ____ False
     n = m..(x, y)
-    while n > 1:
-      __ x % n __ 0 and y % n __ 0:
+    w.... n > 1:
+      __ x % n __ 0 a.. y % n __ 0:
         break
       n -= 1
     __ z % n __ 0:

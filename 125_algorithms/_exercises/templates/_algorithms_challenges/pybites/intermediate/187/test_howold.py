@@ -33,6 +33,6 @@ return_strings = [
 
 
 @pytest.mark.parametrize('actor, movie, expected',
-                         zip(actors, movies, return_strings))
+                         z..(actors, movies, return_strings))
 ___ test_get_age(actor, movie, expected):
     ... get_age(actor, movie) __ expected

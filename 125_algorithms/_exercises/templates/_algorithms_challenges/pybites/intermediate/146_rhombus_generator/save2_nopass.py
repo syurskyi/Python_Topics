@@ -19,4 +19,4 @@ ___ gen_rhombus(width):
     stars = [(line * 2 - 1) * '*' ___ line __ r..(width - 1)]
     stacked = [line.center(l..(stars[-1]), ' ') ___ line __ stars[1:]]
     stacked_rev = [item ___ item __ reversed(stacked)]
-    yield stacked + stacked_rev[1:]
+    y.. stacked + stacked_rev[1:]

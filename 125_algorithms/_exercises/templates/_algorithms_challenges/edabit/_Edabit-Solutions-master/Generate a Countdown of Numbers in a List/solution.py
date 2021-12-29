@@ -1,7 +1,7 @@
 ___ countdown(start):
     index = 1
     output = [start]
-    while index <= start:
+    w.... index <= start:
         s = start - index
         output.a..(s)
         index += 1

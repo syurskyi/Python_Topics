@@ -20,7 +20,7 @@ class Solution(object):
         first = float('inf')
         second = float('inf')
         queue = [root]
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             __ node.val < first:
                 second = first

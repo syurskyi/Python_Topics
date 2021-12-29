@@ -19,7 +19,7 @@ class Solution(object):
     ___ isSimliar(self, w1, w2):
         __ l..(w1) != l..(w2): r.. False
         hashmap1, hashmap2 = {}, {}
-        ___ c1, c2 __ zip(w1, w2):
+        ___ c1, c2 __ z..(w1, w2):
             __ c1 n.. __ hashmap1:
                 __ c2 __ hashmap2:
                     r.. False

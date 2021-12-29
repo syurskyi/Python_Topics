@@ -1,5 +1,5 @@
 _______ types
-____ itertools _______ islice
+____ i.. _______ islice
 
 
 ___ group(iterable, n):
@@ -22,7 +22,7 @@ ___ group(iterable, n):
       input = iterable
 
     result    # list
-    while True:
+    w... T...
       section = l..(islice(input, n))
       __ section:
         result.a..(section)

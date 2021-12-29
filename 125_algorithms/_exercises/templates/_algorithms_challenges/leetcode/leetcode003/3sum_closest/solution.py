@@ -16,13 +16,13 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        nums.sort()
+        nums.s..()
         n = l..(nums)
         res = nums[0] + nums[1] + nums[2]
         ___ i __ r..(n - 2):
             l = i + 1
             r = n - 1
-            while l < r:
+            w.... l < r:
                 s = nums[i] + nums[l] + nums[r]
                 __ abs(s - target) < abs(res - target):
                     res = s

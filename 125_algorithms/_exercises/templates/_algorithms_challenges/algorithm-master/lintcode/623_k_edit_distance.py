@@ -9,7 +9,7 @@ class Trie:
         self.root = TrieNode()
 
     ___ put(self, word):
-        __ n.. isi..(word, str):
+        __ n.. isi..(word, s..):
             r..
 
         node = self.root
@@ -46,7 +46,7 @@ class Solution:
     ___ dfs(self, node, k, target, ans, pre):
         n = l..(target)
 
-        __ node.end_of __ n.. N.. and pre[n] <= k:
+        __ node.end_of __ n.. N.. a.. pre[n] <= k:
             ans.a..(node.end_of)
 
         dp = [0] * (n + 1)

@@ -20,11 +20,11 @@ class Solution:
         i, j = m - 1, n - 1
         acnt = bcnt = 0  # count the backspace in both a and b
 
-        while i >= 0 and j >= 0:
-            while i >= 0 and (a[i] __ BACK o. acnt):
+        w.... i >= 0 a.. j >= 0:
+            w.... i >= 0 a.. (a[i] __ BACK o. acnt):
                 acnt += 1 __ a[i] __ BACK ____ -1
                 i -= 1
-            while j >= 0 and (b[j] __ BACK o. bcnt):
+            w.... j >= 0 a.. (b[j] __ BACK o. bcnt):
                 bcnt += 1 __ b[j] __ BACK ____ -1
                 j -= 1
 
@@ -34,10 +34,10 @@ class Solution:
             i -= 1
             j -= 1
 
-        while i >= 0 and (a[i] __ BACK o. acnt):
+        w.... i >= 0 a.. (a[i] __ BACK o. acnt):
             acnt += 1 __ a[i] __ BACK ____ -1
             i -= 1
-        while j >= 0 and (b[j] __ BACK o. bcnt):
+        w.... j >= 0 a.. (b[j] __ BACK o. bcnt):
             bcnt += 1 __ b[j] __ BACK ____ -1
             j -= 1
 
@@ -58,7 +58,7 @@ class Solution:
         """
         RES = ('NO', 'YES')
 
-        __ a __ '' and b __ '':
+        __ a __ '' a.. b __ '':
             r.. RES[1]
         __ a __ N.. o. b __ N..
             r.. RES[0]

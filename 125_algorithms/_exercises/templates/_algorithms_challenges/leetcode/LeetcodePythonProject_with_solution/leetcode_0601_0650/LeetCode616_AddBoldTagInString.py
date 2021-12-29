@@ -10,17 +10,17 @@ class Solution(object):
         :type dict: List[str]
         :rtype: str
         """
-        d...sort(key=l.., r.._T..
+        d...s..(key=l.., r.._T..
         n = l..(s)
         res = ''
         maxLen = -1
         started = False
         ___ i __ r..(n):
             ___ word __ d..:
-                __ i+l..(word) <= n and s[i:i+l..(word)] __ word:
+                __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
                     maxLen = max(maxLen, i+l..(word))
                     break
-            __ maxLen > i and n.. started:
+            __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]
                 started = True
             ____ maxLen __ i:

@@ -22,7 +22,7 @@ class Solution:
         longest = 0  # record result
 
         start = 0  # pointer
-        ___ ind, val __ enumerate(s):
+        ___ ind, val __ e..(s):
             __ visited_last_index[ord(val)] __ -1:
                 longest = max(longest, (ind)-start+1)
             ____:

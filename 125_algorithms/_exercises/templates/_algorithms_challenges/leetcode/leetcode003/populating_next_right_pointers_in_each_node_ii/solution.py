@@ -12,9 +12,9 @@ class Solution:
     ___ connect(self, root):
         head = N..  # Head node of the next level
         prev = N..
-        while root __ n.. N..
+        w.... root __ n.. N..
             # Build the next level of root
-            while root __ n.. N..
+            w.... root __ n.. N..
                 __ root.left __ n.. N..
                     __ prev __ N..
                         head = root.left

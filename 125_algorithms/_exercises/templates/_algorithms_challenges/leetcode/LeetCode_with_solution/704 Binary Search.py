@@ -31,7 +31,7 @@ class Solution:
     ___ search(self, nums: List[int], target: int) -> int:
         lo = 0
         hi = l..(nums)
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo + hi) // 2
             __ nums[mid] __ target:
                 r.. mid

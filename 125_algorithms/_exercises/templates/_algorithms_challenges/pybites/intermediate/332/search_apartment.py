@@ -4,7 +4,7 @@ EAST = "E"
 WEST = "W"
 
 
-___ search_apartment(buildings: List[int], direction: str) -> List[int]:
+___ search_apartment(buildings: List[int], direction: s..) -> List[int]:
     """
     Find and return the indices of those building with
     the desired view: EAST (E) or WEST (W).

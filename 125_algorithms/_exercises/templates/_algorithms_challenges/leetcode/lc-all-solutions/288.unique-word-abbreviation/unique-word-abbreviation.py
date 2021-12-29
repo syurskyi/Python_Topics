@@ -9,7 +9,7 @@ class ValidWordAbbr(object):
     ___ word __ dictionary:
       wordLen = l..(word)
       __ wordLen > 2:
-        key = word[0] + str(wordLen - 2) + word[-1]
+        key = word[0] + s..(wordLen - 2) + word[-1]
         self.d[key] = self.d.get(key, 0) + 1
       ____:
         self.d[word] = self.d.get(word, 0) + 1
@@ -23,11 +23,11 @@ class ValidWordAbbr(object):
     wordLen = l..(word)
     key = N..
     __ wordLen > 2:
-      key = word[0] + str(wordLen - 2) + word[-1]
+      key = word[0] + s..(wordLen - 2) + word[-1]
     ____:
       key = word
     __ key __ self.d:
-      __ self.d[key] __ 1 and word __ self.d..:
+      __ self.d[key] __ 1 a.. word __ self.d..:
         r.. True
       r.. False
     ____:

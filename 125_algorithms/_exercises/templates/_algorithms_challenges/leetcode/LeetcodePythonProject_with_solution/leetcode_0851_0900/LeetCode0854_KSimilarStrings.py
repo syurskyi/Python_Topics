@@ -16,13 +16,13 @@ class Solution(object):
         q = [a]
         hashset = set([a])
         res = 0
-        while q:
+        w.... q:
             res += 1
             size = l..(q)
             ___ _ __ r..(size):
                 s = q.pop(0)
                 i = 0
-                while s[i] __ b[i]:
+                w.... s[i] __ b[i]:
                     i += 1
                 ___ j __ r..(i+1, l..(s)):
                     __ s[j] __ b[j] o. s[i] != b[j]:

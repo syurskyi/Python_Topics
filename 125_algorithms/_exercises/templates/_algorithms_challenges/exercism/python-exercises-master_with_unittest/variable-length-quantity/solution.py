@@ -6,7 +6,7 @@ ___ encode_single(n):
     bytes = [n & SEVENBITSMASK]
     n >>= 7
 
-    while n > 0:
+    w.... n > 0:
         bytes.a..(n & SEVENBITSMASK | EIGHTBITMASK)
         n >>= 7
 
@@ -21,7 +21,7 @@ ___ decode(bytes):
     values    # list
     n = 0
 
-    ___ i, byte __ enumerate(bytes):
+    ___ i, byte __ e..(bytes):
         n <<= 7
         n += (byte & SEVENBITSMASK)
 

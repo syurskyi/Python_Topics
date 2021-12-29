@@ -46,7 +46,7 @@ class Solution:
         j = 0
         ___ e __ pre:
             stk.a..(TreeNode(e))
-            while stk and stk[-1].val __ post[j]:
+            w.... stk a.. stk[-1].val __ post[j]:
                 popped = stk.pop()
                 j += 1
                 __ stk:

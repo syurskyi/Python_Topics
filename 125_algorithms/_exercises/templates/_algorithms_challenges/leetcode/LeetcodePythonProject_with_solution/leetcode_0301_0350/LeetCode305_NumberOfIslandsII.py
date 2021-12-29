@@ -15,7 +15,7 @@ class Solution(object):
             count += 1
             root0 = i*n+j
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-                __ 0 <= x < m and 0 <= y < n and grid[x][y]:
+                __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y]:
                     root = self.getRoot(roots, x*n+y)
                     __ root != root0:
                         count -= 1
@@ -24,7 +24,7 @@ class Solution(object):
         r.. res
     
     ___ getRoot(self, roots, ind):
-        while roots[ind] != -1:
+        w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     

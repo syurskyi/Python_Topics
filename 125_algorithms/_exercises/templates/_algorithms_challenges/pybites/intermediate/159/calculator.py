@@ -14,7 +14,7 @@ ___ simple_calculator(calculation):
       If bad data is passed in, raise a ValueError.
    """
    try:
-      num1, op, num2 = calculation.split(" ")
+      num1, op, num2 = calculation.s..(" ")
       num1, num2 = int(num1), int(num2)
    except ValueError:
       raise ValueError

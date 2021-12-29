@@ -22,7 +22,7 @@ class MinStack:
 
         x = self.stack.pop()
 
-        __ self.mins and x __ self.mins[-1]:
+        __ self.mins a.. x __ self.mins[-1]:
             self.mins.pop()
 
         r.. x

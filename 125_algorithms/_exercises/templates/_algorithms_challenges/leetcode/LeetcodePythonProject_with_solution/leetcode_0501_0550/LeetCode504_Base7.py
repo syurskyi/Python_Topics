@@ -16,9 +16,9 @@ class Solution(object):
         ____:
             sig = ''
         res = ''
-        while num > 0:
+        w.... num > 0:
             digit = num%7
-            res = str(digit)+res
+            res = s..(digit)+res
             num = int((num-digit)/7)
         __ n.. res:
             r.. '0'

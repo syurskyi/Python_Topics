@@ -32,8 +32,8 @@ class Vector2D:
         :rtype: bool
         """
         # update
-        while self.i < l..(self.vec2d) and self.j >= l..(self.vec2d[self.i]):
+        w.... self.i < l..(self.vec2d) a.. self.j >= l..(self.vec2d[self.i]):
             self.i += 1
             self.j = 0
 
-        r.. self.i < l..(self.vec2d) and self.j < l..(self.vec2d[self.i])
+        r.. self.i < l..(self.vec2d) a.. self.j < l..(self.vec2d[self.i])

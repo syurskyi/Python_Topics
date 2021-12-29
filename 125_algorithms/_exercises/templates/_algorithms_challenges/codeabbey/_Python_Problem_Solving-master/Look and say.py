@@ -20,15 +20,15 @@ ___ look_and_say(data,maxlen):
                     count += 1
                 ____:
                     #if the next element is different then store the count as well as the character
-                    res_string.a..(str(count) + data[k])
+                    res_string.a..(s..(count) + data[k])
                     #reinitialize the count
                     count = 1
             except:
                 #if the loop has reached its last element then store the count of the character of last element.
                 __ k __ l..(data)-1:
-                    res_string.a..(str(count) + data[k])
+                    res_string.a..(s..(count) + data[k])
         #print the updated string with updated count
-        data = ''.join(str(e) ___ e __ res_string)
+        data = ''.join(s..(e) ___ e __ res_string)
         result.a..(data)
         #print(start_num)
     r.. result

@@ -19,7 +19,7 @@ class Solution(object):
         res    # list
         length = 0
         head = root
-        while head:
+        w.... head:
             head = head.next
             length += 1
         length0 = length//k
@@ -35,7 +35,7 @@ class Solution(object):
         print('lengths: %s' % lengths)
         print('length: %s' % length)
         print('count0: %s' % count0)
-        while head:
+        w.... head:
             __ lengths[i] __ 0:
                 prev.next = N..
                 i += 1

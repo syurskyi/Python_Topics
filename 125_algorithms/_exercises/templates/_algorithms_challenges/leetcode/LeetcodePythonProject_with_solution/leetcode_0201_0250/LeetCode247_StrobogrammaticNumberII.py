@@ -22,9 +22,9 @@ class Solution(object):
         ___ p __ self.pairs:
             curr[l] = p[0]
             curr[r] = p[1]
-            __ l __ r and p[0] != p[1]:
+            __ l __ r a.. p[0] != p[1]:
                 continue
-            ____ l __ 0 and l != r and p[0] __ '0':
+            ____ l __ 0 a.. l != r a.. p[0] __ '0':
                 continue
             self.helper(l+1, r-1, curr, res)
     

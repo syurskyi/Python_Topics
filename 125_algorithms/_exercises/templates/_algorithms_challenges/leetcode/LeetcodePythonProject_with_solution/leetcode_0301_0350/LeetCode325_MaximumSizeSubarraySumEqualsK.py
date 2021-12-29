@@ -9,7 +9,7 @@ class Solution(object):
         hashmap = {}
         sumVal = 0
         maxLen = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             sumVal += num
             __ sumVal __ k:
                 maxLen = max(maxLen, i+1)

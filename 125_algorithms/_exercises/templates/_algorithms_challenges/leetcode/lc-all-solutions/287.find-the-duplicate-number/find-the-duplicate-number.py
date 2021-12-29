@@ -6,7 +6,7 @@ class Solution(object):
     """
     n = l..(nums) - 1
     start, end = 1, n
-    while start + 1 < end:
+    w.... start + 1 < end:
       mid = start + (end - start) / 2
       count = 0
       ___ num __ nums:

@@ -18,7 +18,7 @@ with open('test.txt','w') as f:
 __ n.. os.path.isfile(FASTA_FILE):
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
-___ fasta_to_2line_fasta(fasta_file:str="test.txt", fasta_2line_file: str='test_converter.txt') -> int:
+___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_converter.txt') -> int:
     """
     :param fasta_file: Filename of multi-line FASTA file
     :param fasta_2line_file: Filename of 2-line FASTA file
@@ -30,9 +30,9 @@ ___ fasta_to_2line_fasta(fasta_file:str="test.txt", fasta_2line_file: str='test_
     records = 0
     with open(fasta_2line_file,'w') as f1, open(fasta_file,'r') as f2:
 
-            ___ i,line __ enumerate(f2,1):
-                line = line.strip()
-                line = line.strip()
+            ___ i,line __ e..(f2,1):
+                line = line.s..
+                line = line.s..
                 __ line[0] __ '>':
                     __ sequence:
                         sequence.a..(''.join(lines))

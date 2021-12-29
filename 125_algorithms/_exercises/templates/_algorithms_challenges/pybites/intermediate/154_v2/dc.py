@@ -5,8 +5,8 @@ ____ dataclasses _______ dataclass
 @dataclass(order=True)
 class Bite:
     number: int
-    title: str
-    level: str = "Beginner"
+    title: s..
+    level: s.. = "Beginner"
 
 
 

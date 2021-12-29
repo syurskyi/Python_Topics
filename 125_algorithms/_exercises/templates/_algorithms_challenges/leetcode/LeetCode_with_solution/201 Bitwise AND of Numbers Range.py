@@ -22,7 +22,7 @@ class Solution:
         :rtype: int
         """
         pos = 0
-        while m != n:
+        w.... m != n:
             pos += 1
             m >>= 1
             n >>= 1

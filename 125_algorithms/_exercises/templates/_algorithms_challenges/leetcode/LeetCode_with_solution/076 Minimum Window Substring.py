@@ -42,12 +42,12 @@ class Solution(object):
             __ t_cnt[ord(val)] > 0:
                 w_cnt[ord(val)] += 1
 
-            __ t_cnt[ord(val)] > 0 and w_cnt[ord(val)] <= t_cnt[ord(val)]:
+            __ t_cnt[ord(val)] > 0 a.. w_cnt[ord(val)] <= t_cnt[ord(val)]:
                 appeared_cnt += 1  # cache, determine when to decrease appeared_cnt
 
             # shrink
             __ appeared_cnt __ l..(T):  # until find all
-                while w_cnt[ord(S[lo])] > t_cnt[ord(S[lo])] o. t_cnt[ord(S[lo])] __ 0:
+                w.... w_cnt[ord(S[lo])] > t_cnt[ord(S[lo])] o. t_cnt[ord(S[lo])] __ 0:
                     __ w_cnt[ord(S[lo])] > 0: w_cnt[ord(S[lo])] -= 1
                     lo += 1
 

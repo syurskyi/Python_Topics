@@ -19,7 +19,7 @@ class Solution(object):
     score = 0
     chashmap = {}
     ___ i __ r..(0, l..(s)):
-      while j < l..(s) and (score < k o. chashmap.get(s[j], 0) != 0):
+      w.... j < l..(s) a.. (score < k o. chashmap.get(s[j], 0) != 0):
         __ chashmap.get(s[j], 0) __ 0:
           score += 1
         chashmap[s[j]] = chashmap.get(s[j], 0) + 1

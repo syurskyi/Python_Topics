@@ -12,7 +12,7 @@ class Solution(object):
         """
         res = ''
         prev = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ ' ':
                 tmpRes = self.reverse(s, prev, i-1)
                 res += tmpRes + ' '
@@ -23,7 +23,7 @@ class Solution(object):
     
     ___ reverse(self, s, i, j):
         res = ''
-        while i <= j:
+        w.... i <= j:
             res += s[j]
             j -= 1
         r.. res

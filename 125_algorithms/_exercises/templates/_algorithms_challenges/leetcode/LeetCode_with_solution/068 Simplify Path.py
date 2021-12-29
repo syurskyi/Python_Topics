@@ -23,7 +23,7 @@ class Solution(object):
         :param path: a string
         :return: a string
         """
-        path = path.split("/")
+        path = path.s..("/")
         path = filter(l.... x: x n.. __ ("", " ", "."), path)
 
         # modify the content of the list, not the structure.
@@ -34,7 +34,7 @@ class Solution(object):
 
                 # rm a previous meaningful part
                 i = idx-1
-                while i >= 0 and path[i] __ ".": i -= 1
+                w.... i >= 0 a.. path[i] __ ".": i -= 1
                 __ i >= 0: path[i] = "."  # avoid path[-1]
 
         path = filter(l.... x: x n.. __ (".",), path)

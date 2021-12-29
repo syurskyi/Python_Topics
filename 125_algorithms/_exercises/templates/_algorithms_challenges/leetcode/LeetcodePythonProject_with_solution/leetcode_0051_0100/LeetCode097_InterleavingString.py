@@ -17,16 +17,16 @@ class Solution(object):
         dp = [[False]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = True
         ___ i __ r..(m):
-            __ s1[i] __ s3[i] and dp[i][0]:
+            __ s1[i] __ s3[i] a.. dp[i][0]:
                 dp[i+1][0] = True
         ___ j __ r..(n):
-            __ s2[j] __ s3[j] and dp[0][j]:
+            __ s2[j] __ s3[j] a.. dp[0][j]:
                 dp[0][j+1] = True
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ s1[i] __ s3[i+j+1] and dp[i][j+1]:
+                __ s1[i] __ s3[i+j+1] a.. dp[i][j+1]:
                     dp[i+1][j+1] = True
-                __ s2[j] __ s3[i+j+1] and dp[i+1][j]:
+                __ s2[j] __ s3[i+j+1] a.. dp[i+1][j]:
                     dp[i+1][j+1] = True
         r.. dp[-1][-1]
     

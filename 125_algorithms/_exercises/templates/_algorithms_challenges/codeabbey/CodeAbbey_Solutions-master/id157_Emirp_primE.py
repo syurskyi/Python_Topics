@@ -23,12 +23,12 @@ ___ gen_primes(limit=300000000):
 
     # Find reversable primes
     ___ prime __ primes:
-        __ int(str(prime)[::-1]) __ primes:
+        __ int(s..(prime)[::-1]) __ primes:
             semirp.a..(prime)
 
     # Find answer
     ___ entry __ data:
-        answer.a..(str(find_answer(entry)))
+        answer.a..(s..(find_answer(entry)))
 
     print(' '.join(answer))
 gen_primes()

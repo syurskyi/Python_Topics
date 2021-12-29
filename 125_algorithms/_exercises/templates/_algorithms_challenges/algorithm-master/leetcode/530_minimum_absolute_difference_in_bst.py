@@ -26,7 +26,7 @@ class Solution:
 
         self.getMinimumDifference(root.left)
 
-        __ self.pre and root.val - self.pre.val < self.ans:
+        __ self.pre a.. root.val - self.pre.val < self.ans:
             self.ans = root.val - self.pre.val
 
         self.pre = root

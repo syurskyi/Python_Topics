@@ -10,10 +10,10 @@ If one of the conditions is not True raise an exception you define yourself: Use
 UserAccessExpired and UserNoPermission respectively. Check out the tests for more detail.
 """
 
-____ collections _______ namedtuple
+____ collections _______ n..
 
 # https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python
-User = namedtuple('User', 'name role expired')
+User = n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
 SECRET = 'I am a very secret token'
 

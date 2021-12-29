@@ -1,4 +1,4 @@
-_______ itertools
+_______ i..
 
 cars = [
     # need mock data? -> https://www.mockaroo.com == awesome
@@ -26,9 +26,9 @@ ___ group_cars_by_manufacturer(cars):
        validate your output :)
     """
 
-    cars.sort(key=l.... x:(x[0],x[1]))
+    cars.s..(key=l.... x:(x[0],x[1]))
 
-    ___ manufacturer,group __ itertools.groupby(cars,key=l.... x:x[0]):
+    ___ manufacturer,group __ i...groupby(cars,key=l.... x:x[0]):
         print(manufacturer.upper())
         ___ _,car __ group:
             print(f"- {car}")

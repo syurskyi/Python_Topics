@@ -1,5 +1,5 @@
 ____ typing _______ Dict, Any
-____ datetime _______ datetime
+____ d__ _______ d__
 
 _______ re
 
@@ -13,7 +13,7 @@ ___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
     ___ key,value __ data.items():
 
 
-        __ isi..(key,str):
+        __ isi..(key,s..):
             key = re.sub(r'^@','',key)
 
         __ isi..(value,d..):
@@ -39,14 +39,14 @@ __ __name__ __ "__main__":
 
 
     d = {'@contentUrl': 'contentUrl',
-         '@createdAt': datetime.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
+         '@createdAt': d__.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@defaultViewId': 'defaultViewId',
           '@encryptExtracts': False,
           '@id': 'id',
           '@name': 'Login',
           '@showTabs': True,
           '@size': 1,
-          '@updatedAt': datetime.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
+          '@updatedAt': d__.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@webpageUrl': 'webpageUrl',
           'dataAccelerationConfig': {'@accelerationEnabled': False},
           'owner': {'@id': 'id', '@name': 'name'},

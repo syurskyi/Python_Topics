@@ -21,10 +21,10 @@ class Solution:
             ____:
                 heapq.heappush(minheap, num)
 
-            while l..(minheap) > l..(maxheap):
+            w.... l..(minheap) > l..(maxheap):
                 heapq.heappush(maxheap, -heapq.heappop(minheap))
 
-            while l..(maxheap) > l..(minheap) + 1:
+            w.... l..(maxheap) > l..(minheap) + 1:
                 heapq.heappush(minheap, -heapq.heappop(maxheap))
 
             __ maxheap:

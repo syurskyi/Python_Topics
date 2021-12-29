@@ -1,6 +1,6 @@
 ____ collections _______ Counter
 ____ contextlib _______ contextmanager
-____ datetime _______ date
+____ d__ _______ date
 ____ time _______ time
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
@@ -22,7 +22,7 @@ ___ timeit():
 
     start_time = time()
 
-    yield 
+    y.. 
     end_time = time()
     total_time = end_time - start_time
     __ total_time >= OPERATION_THRESHOLD_IN_SECONDS:

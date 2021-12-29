@@ -21,7 +21,7 @@ class Solution:
         left_dummy = left_tail = ListNode(-1)
         right_dummy = right_tail = ListNode(-1)
 
-        while head:
+        w.... head:
             node = ListNode(head.val)
             __ head.val < x:
                 left_tail.next = node

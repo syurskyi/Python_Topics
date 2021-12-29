@@ -6,7 +6,7 @@ ___ wc(file_):
     #filepath = tmp_path / file_
     file = open(file_)
     lines = file.read()
-    r.. str(l..(lines.splitlines()))+"\t"+str(l..(lines.replace("\n", " ").split()))+"\t"+str(l..(lines.replace("\n", " ")))+"\t"+str(file_)
+    r.. s..(l..(lines.splitlines()))+"\t"+s..(l..(lines.r..("\n", " ").s..()))+"\t"+s..(l..(lines.r..("\n", " ")))+"\t"+s..(file_)
 
 
 __ __name__ __ '__main__':

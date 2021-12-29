@@ -11,7 +11,7 @@ class Solution(object):
         c = m..([(s.c.. c), c) ___ c __ s])[1]
         __ s.c.. c) >= k:
             r.. l..(s)
-        r.. max(self.longestSubstring_orig(t, k) ___ t __ s.split(c))
+        r.. max(self.longestSubstring_orig(t, k) ___ t __ s.s..(c))
     
     ___ longestSubstring(self, s, k):
         __ l..(s) < k: r.. 0
@@ -26,7 +26,7 @@ class Solution(object):
         __ hashmap[minChar] >= k:
             r.. l..(s)
         maxRes = float('-inf')
-        ___ t __ s.split(minChar):
+        ___ t __ s.s..(minChar):
             maxRes = max(maxRes, self.longestSubstring(t, k))
         r.. maxRes
     

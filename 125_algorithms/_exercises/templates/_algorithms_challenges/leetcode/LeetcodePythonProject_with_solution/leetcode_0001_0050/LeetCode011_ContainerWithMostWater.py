@@ -13,7 +13,7 @@ class Solution(object):
         __ n.. height: r.. 0
         i, j = 0, l..(height)-1
         area = 0
-        while i < j:
+        w.... i < j:
             area = max(area, m..(height[i], height[j])*(j-i))
             __ height[i] > height[j]:
                 j -= 1

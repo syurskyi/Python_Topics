@@ -33,7 +33,7 @@ class Solution:
         ... k > 0
         ___ hi __ r..(l..(s)):
             counter[s[hi]] += 1
-            while True:
+            w... T...
                 most = max(counter.values())  # O(26)
                 l = hi - lo + 1
                 __ l - most > k:

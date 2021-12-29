@@ -20,8 +20,8 @@ class ToxIniParser:
     ___ environments(self):
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
-        clean_env = self.config['tox']['envlist'].replace('\n', ',')
-        r.. s..([env.strip() ___ env __ clean_env.split(',') __ l..(env) > 0])
+        clean_env = self.config['tox']['envlist'].r..('\n', ',')
+        r.. s..([env.s.. ___ env __ clean_env.s..(',') __ l..(env) > 0])
 
     @property
     ___ base_python_versions(self):

@@ -4,7 +4,7 @@ _______ string
 class Atbash:
     PLAIN = 'abcdefghijklmnopqrstuvwxyz'
     PRIME = 'zyxwvutsrqponmlkjihgfedcba'
-    CIPHER = d..(zip(l..(PLAIN), l..(PRIME)))
+    CIPHER = d..(z..(l..(PLAIN), l..(PRIME)))
     EXCLUDE = set(string.punctuation + ' ')
 
     @staticmethod

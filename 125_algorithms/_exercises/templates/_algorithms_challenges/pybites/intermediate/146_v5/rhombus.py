@@ -20,6 +20,6 @@ ___ gen_rhombus(width):
     half = width // 2
     ___ n __ r..(width):
         __ n < half:
-            yield (STAR * (2 * n + 1)).center(width, ' ')
+            y.. (STAR * (2 * n + 1)).center(width, ' ')
         ____:
-            yield (STAR * (2 * (width - n) - 1)).center(width, ' ')
+            y.. (STAR * (2 * (width - n) - 1)).center(width, ' ')

@@ -20,9 +20,9 @@ class Solution:
         lastCurrent = N..
         currentHead = N..
         current = N..
-        while lastHead:
+        w.... lastHead:
             lastCurrent = lastHead
-            while lastCurrent:
+            w.... lastCurrent:
                 __ lastCurrent.left:
                     __ n.. currentHead:
                         currentHead = lastCurrent.left

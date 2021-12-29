@@ -14,7 +14,7 @@ class Solution:
         t = [[0 ___ i __ r..(m)] ___ j __ r..(n)]
         ___ i __ r..(n):
             ___ j __ r..(m):
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     t[i][j] = grid[i][j]
                 ____ i __ 0:
                     t[i][j] = grid[i][j] + t[i][j - 1]

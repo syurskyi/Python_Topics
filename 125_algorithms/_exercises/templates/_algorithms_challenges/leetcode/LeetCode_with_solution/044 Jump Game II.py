@@ -28,7 +28,7 @@ class Solution:
 
         q    # list
         q.a..(0)
-        while q:
+        w.... q:
             current_level = q
             q    # list
             ___ ind __ current_level:
@@ -55,7 +55,7 @@ class Solution:
         start = 0
         end = 1  # max reach [0, 1)
         gmax = 0
-        while end<length:  # when end==length, it has already reached the last item
+        w.... end<length:  # when end==length, it has already reached the last item
             __ n.. start<end: r.. 0  # avoid dead loop
             ___ i __ xrange(start, end):
                 gmax = max(gmax, A[i]+i)

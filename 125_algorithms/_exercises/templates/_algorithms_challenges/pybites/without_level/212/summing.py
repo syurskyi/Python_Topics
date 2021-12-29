@@ -9,7 +9,7 @@ ___ sum_numbers(numbers):
 
        Task: use contextlib's suppress twice to make the code below more concise.
     """
-    ___ i, j __ zip(numbers, numbers[1:]):
+    ___ i, j __ z..(numbers, numbers[1:]):
         with suppress(ZeroDivisionError):
             with suppress(TypeError):
-                yield i/j
+                y.. i/j

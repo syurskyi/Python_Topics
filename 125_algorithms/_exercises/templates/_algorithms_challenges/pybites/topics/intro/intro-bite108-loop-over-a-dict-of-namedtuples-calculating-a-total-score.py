@@ -14,9 +14,9 @@ updated ninja_belts dict as well, see the TESTS tab.
 '''
 
 
-____ collections _______ namedtuple
+____ collections _______ n..
 
-BeltStats = namedtuple('BeltStats', 'score ninjas')
+BeltStats = n..('BeltStats', 'score ninjas')
 
 ninja_belts = {'yellow': BeltStats(50, 11),
                'orange': BeltStats(100, 7),

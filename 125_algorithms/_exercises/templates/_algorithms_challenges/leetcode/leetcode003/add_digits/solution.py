@@ -17,9 +17,9 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        while num / 10:
+        w.... num / 10:
             d = 0
-            while num > 0:
+            w.... num > 0:
                 d += num % 10
                 num /= 10
             num = d

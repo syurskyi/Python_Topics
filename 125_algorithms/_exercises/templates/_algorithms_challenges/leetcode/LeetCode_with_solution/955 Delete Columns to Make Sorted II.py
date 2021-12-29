@@ -50,7 +50,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ minDeletionSize(self, A: List[str]) -> int:
+    ___ minDeletionSize(self, A: List[s..]) -> int:
         """
         Greedily delete
         Scannign from left to right

@@ -11,11 +11,11 @@ class Solution(object):
     :rtype: ListNode
     """
     slow = fast = finder = head
-    while fast and fast.next:
+    w.... fast a.. fast.next:
       slow = slow.next
       fast = fast.next.next
       __ slow __ fast:
-        while finder != slow:
+        w.... finder != slow:
           finder = finder.next
           slow = slow.next
         r.. finder

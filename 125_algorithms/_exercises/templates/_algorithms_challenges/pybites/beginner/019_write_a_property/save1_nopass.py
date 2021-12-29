@@ -1,6 +1,6 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
-NOW = datetime.now()
+NOW = d__.now()
 
 
 class Promo:
@@ -10,7 +10,7 @@ class Promo:
     @property
     ___ expired(self):
         #return Boolean value indicating whether promo has expired or not
-        NOW = dt.datetime.now()
+        NOW = dt.d__.now()
         __ NOW < self.expires:
             print("Not expired! :)")
         ____:

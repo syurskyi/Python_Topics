@@ -18,7 +18,7 @@ class Solution:
 
         open_ptr = 0
         back_ptr = -1  # Python style backward
-        while l..(A)+back_ptr>=open_ptr:
+        w.... l..(A)+back_ptr>=open_ptr:
             __ A[open_ptr]__elem:
                 A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
                 back_ptr -= 1
@@ -39,7 +39,7 @@ class Solution:
         """
         open_ptr = 0
         end_ptr = l..(A)
-        while open_ptr<end_ptr:
+        w.... open_ptr<end_ptr:
             __ A[open_ptr]__elem:
                 end_ptr -= 1
                 A[open_ptr], A[end_ptr] = A[end_ptr], A[open_ptr]

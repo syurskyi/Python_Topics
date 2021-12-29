@@ -19,14 +19,14 @@ class BankAccount(object):
 
     ___ deposit(self, amount):
         with self.lock:
-            __ self.is_open and amount > 0:
+            __ self.is_open a.. amount > 0:
                 self.balance += amount
             ____:
                 raise ValueError
 
     ___ withdraw(self, amount):
         with self.lock:
-            __ self.is_open and 0 < amount <= self.balance:
+            __ self.is_open a.. 0 < amount <= self.balance:
                 self.balance -= amount
             ____:
                 raise ValueError

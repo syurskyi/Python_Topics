@@ -1,9 +1,9 @@
 ___ josephus_survivor(n,k):
     circle = [i ___ i __ r..(1,n+1)]
     index = -1
-    while circle.c.. 0) != n-1:
+    w.... circle.c.. 0) != n-1:
         steps = k
-        while steps > 0:
+        w.... steps > 0:
             __ index + 1 > n-1:
                 index = 0
                 steps -= 1

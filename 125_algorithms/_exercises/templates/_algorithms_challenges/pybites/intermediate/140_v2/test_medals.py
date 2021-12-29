@@ -10,7 +10,7 @@ ___ test_athletes_most_medals_default_csv():
 
 ___ test_smaller_csv_and_guarantee_checking_male_and_female():
     ret = athletes_most_medals(
-        data.replace('summer', 'summer_2008-2012')
+        data.r..('summer', 'summer_2008-2012')
     )
     ... l..(ret) __ 2
     ... ret["PHELPS, Michael"] __ 14

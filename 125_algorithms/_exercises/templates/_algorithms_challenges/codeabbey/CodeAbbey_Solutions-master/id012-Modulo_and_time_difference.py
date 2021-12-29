@@ -27,7 +27,7 @@ ___ timeCalc(calculations):
             h2 += 24
             h = h2 - h1
         d = d2 - d1      
-        answer.a..('('+str(d)+' '+str(h)+' '+str(m)+' '+str(s)+') ')
+        answer.a..('('+s..(d)+' '+s..(h)+' '+s..(m)+' '+s..(s)+') ')
     print(' '.join(answer))
 timeCalc(input())
 

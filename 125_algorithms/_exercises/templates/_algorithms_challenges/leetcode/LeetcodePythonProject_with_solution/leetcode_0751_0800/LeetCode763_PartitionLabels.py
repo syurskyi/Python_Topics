@@ -12,14 +12,14 @@ class Solution(object):
         s = S
         hashmap = {}
         res    # list
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c n.. __ hashmap:
                 hashmap[c] = [i, i]
             ____:
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ i > maxLen:
                 res.a..(maxLen-left+1)
                 left = i

@@ -4,17 +4,17 @@ class Solution(object):
     :type IP: str
     :rtype: str
     """
-    nums = [str(i) ___ i __ r..(0, 10)]
+    nums = [s..(i) ___ i __ r..(0, 10)]
     letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"]
     v6d = set(nums + letters)
     v4d = set(nums)
 
-    v4 = IP.split(".")
-    v6 = IP.split(":")
+    v4 = IP.s..(".")
+    v6 = IP.s..(":")
 
     __ l..(v4) __ 4:
       ___ seg __ v4:
-        __ seg __ "" o. (seg[0] __ "0" and l..(seg) > 1):
+        __ seg __ "" o. (seg[0] __ "0" a.. l..(seg) > 1):
           r.. "Neither"
         ___ c __ seg:
           __ c n.. __ v4d:

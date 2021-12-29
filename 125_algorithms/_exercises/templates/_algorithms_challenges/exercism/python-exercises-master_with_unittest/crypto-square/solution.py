@@ -2,9 +2,9 @@ ____ math _______ ceil, sqrt
 _______ sys
 
 __ sys.version_info[0] __ 2:
-    ____ itertools _______ izip_longest as zip_longest
+    ____ i.. _______ izip_longest as zip_longest
 ____:
-    ____ itertools _______ zip_longest
+    ____ i.. _______ zip_longest
 
 
 ___ encode(msg):

@@ -1,9 +1,9 @@
 _______ os
 
 ___ folder __ r..(1, 50+1):
-    os.makedirs(str(folder))
+    os.makedirs(s..(folder))
 
 ___ folder __ r..(1, 50+1):
     ___ subfolder __ ["mon", "tue", "wed", "thu", "fri"]:
-        os.makedirs(str(folder) + "/" + str(subfolder))
+        os.makedirs(s..(folder) + "/" + s..(subfolder))
 

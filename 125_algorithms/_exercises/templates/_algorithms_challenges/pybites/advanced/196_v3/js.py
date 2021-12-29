@@ -24,7 +24,7 @@ class JsObject:
 
     ___ __setattr__(self, key, value):
         super().__setattr__(key, value)
-        __ key n.. __ RESERVED_WORDS and key != '_local':
+        __ key n.. __ RESERVED_WORDS a.. key != '_local':
             self._local[key] = value
 
     ___ __getitem__(self, item):
@@ -49,7 +49,7 @@ class JsObject:
         r.. l..(self._local)
 
     ___ __iter__(self):
-        yield ____ self._local
+        y.. ____ self._local
 
     ___ __eq__(self, other):
         r.. self._local __ other._local

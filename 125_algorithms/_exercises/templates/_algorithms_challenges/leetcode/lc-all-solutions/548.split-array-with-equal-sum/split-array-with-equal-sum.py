@@ -8,8 +8,8 @@ class Solution(object):
     ___ i __ r..(l..(nums)):
       dp[i + 1] = dp[i] + nums[i]
 
-    ___ split(start, end):
+    ___ s..(start, end):
       r.. set(
         [dp[mid] - dp[start] ___ mid __ r..(start + 1, end) __ dp[mid] - dp[start] __ dp[end + 1] - dp[mid + 1]])
 
-    r.. any(split(0, i - 1) & split(i + 1, l..(nums) - 1) ___ i __ r..(3, l..(nums) - 3))
+    r.. any(s..(0, i - 1) & s..(i + 1, l..(nums) - 1) ___ i __ r..(3, l..(nums) - 3))

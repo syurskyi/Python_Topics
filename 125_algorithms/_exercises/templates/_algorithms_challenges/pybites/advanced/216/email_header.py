@@ -19,7 +19,7 @@ X-SG-EID: P3IPuU2e1Ijn5xEegYUQ...
 X-SendGrid-Contentd-ID: {"test_id":"1371661776"}"""  # noqa E501
 
 
-___ get_email_details(header: str) -> d..:
+___ get_email_details(header: s..) -> d..:
     """User re.search or re.match to capture the from, to, subject
        and date fields. Return the groupdict() of matching object, see:
        https://docs.python.org/3.7/library/re.html#re.Match.groupdict
@@ -28,10 +28,10 @@ ___ get_email_details(header: str) -> d..:
 
 
     try:
-        from_ = re.search(r'^From: (.+)',header,flags=re.MULTILINE).group(1).strip()
-        to = re.search(r'^To: (.+)',header,flags=re.MULTILINE).group(1).strip()
-        subject = re.search(r'^Subject: (.+)',header,flags=re.MULTILINE).group(1).strip()
-        date = re.search(r'^Date: (.+) (?:\+|\-)',header,flags=re.MULTILINE).group(1).strip()
+        from_ = re.search(r'^From: (.+)',header,flags=re.MULTILINE).group(1).s..
+        to = re.search(r'^To: (.+)',header,flags=re.MULTILINE).group(1).s..
+        subject = re.search(r'^Subject: (.+)',header,flags=re.MULTILINE).group(1).s..
+        date = re.search(r'^Date: (.+) (?:\+|\-)',header,flags=re.MULTILINE).group(1).s..
     except:
         r..
     ____:

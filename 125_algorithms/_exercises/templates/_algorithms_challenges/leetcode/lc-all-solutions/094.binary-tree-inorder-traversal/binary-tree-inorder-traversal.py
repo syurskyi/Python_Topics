@@ -12,7 +12,7 @@ class Solution(object):
     :rtype: List[int]
     """
     res, stack    # list, [(1, root)]
-    while stack:
+    w.... stack:
       p = stack.pop()
       __ n.. p[1]: continue
       stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)]) __ p[0] != 0 ____ res.a..(p[1].val)

@@ -14,7 +14,7 @@ class Solution(object):
         dp[0] = True
         ___ num __ nums:
             ___ i __ r..(target, -1, -1):
-                __ i-num >= 0 and dp[i-num]:
+                __ i-num >= 0 a.. dp[i-num]:
                     dp[i] = True
         r.. dp[-1]
     

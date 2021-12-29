@@ -7,5 +7,5 @@ ___ findRange(numbers):
             minNum = x
         __ int(x) > int(maxNum):
             maxNum = x
-    print(str(maxNum) + " " + str(minNum))
+    print(s..(maxNum) + " " + s..(minNum))
 findRange(raw_input())

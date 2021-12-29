@@ -10,16 +10,16 @@ class Solution(object):
         r.. b
 
       ___ gcd(a, b):
-        while b != 0:
+        w.... b != 0:
           a, b = b, a % b
         r.. a
 
-      (an, ad), (bn, bd) = map(int, a.split("/")), map(int, b.split("/"))
+      (an, ad), (bn, bd) = map(int, a.s..("/")), map(int, b.s..("/"))
       lcm = (ad * bd) / (gcd(ad, bd))
       an, bn = an * (lcm / ad), bn * (lcm / bd)
       n = an + bn
       g = gcd(n, lcm)
-      r.. str(n / g) + "/" + str(lcm / g)
+      r.. s..(n / g) + "/" + s..(lcm / g)
 
     expression += "+"
     ans = "0/1"

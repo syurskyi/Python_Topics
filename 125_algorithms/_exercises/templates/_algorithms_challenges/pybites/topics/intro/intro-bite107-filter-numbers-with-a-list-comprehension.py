@@ -12,5 +12,5 @@ ___ filter_positive_even_numbers(numbers):
     """Receives a list of numbers, and filters out numbers that
        are both positive and even (divisible by 2), try to use a
        list comprehension"""
-    out = [ item ___ item __ numbers __ (item % 2 __ 0) and item > 0]
+    out = [ item ___ item __ numbers __ (item % 2 __ 0) a.. item > 0]
     r.. out

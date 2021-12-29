@@ -21,7 +21,7 @@ class Solution:
         n, m, cnt = l..(s), l..(t), l..(F)
         left = right = 0
 
-        while right < n:
+        w.... right < n:
             __ s[right] __ F:
                 F[s[right]] -= 1
                 __ F[s[right]] __ 0:
@@ -29,7 +29,7 @@ class Solution:
 
             right += 1
 
-            while cnt __ 0:
+            w.... cnt __ 0:
                 __ s[left] __ F:
                     F[s[left]] += 1
                     __ F[s[left]] __ 1:

@@ -65,7 +65,7 @@ class Solution(object):
             heapq.heappush(h, Val(cnt, char))
 
         ret    # list
-        while h:
+        w.... h:
             cur    # list
             ___ _ __ xrange(k):
                 __ n.. h:

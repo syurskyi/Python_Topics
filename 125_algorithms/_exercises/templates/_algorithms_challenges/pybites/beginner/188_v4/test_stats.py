@@ -35,6 +35,6 @@ ___ test_get_all_line_counts():
     ... s..(counts) __ 8135
 
 
-@pytest.mark.parametrize("line", EXPECTED_OUTPUT.strip().splitlines())
+@pytest.mark.parametrize("line", EXPECTED_OUTPUT.s...splitlines())
 ___ test_create_stats_report(report, line):
     ... line __ report

@@ -14,7 +14,7 @@ class Solution(object):
         __ m __ 0:
             r.. 0
         moveFactor = 1
-        while m != n:
+        w.... m != n:
             m >>= 1
             n >>= 1
             moveFactor <<= 1

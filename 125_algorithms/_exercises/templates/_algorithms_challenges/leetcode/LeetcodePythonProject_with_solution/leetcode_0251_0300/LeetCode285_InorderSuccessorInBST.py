@@ -31,12 +31,12 @@ class Solution(object):
         """
         __ p.right:
             node = p.right
-            while node.left:
+            w.... node.left:
                 node = node.left
             r.. node.val
         stack    # list
         node = root
-        while node != p:
+        w.... node != p:
             stack.a..(node)
             __ node.val > p.val:
                 node = node.left
@@ -44,7 +44,7 @@ class Solution(object):
                 node = node.right
             ____:
                 break
-        while stack and stack[-1].val < p.val:
+        w.... stack a.. stack[-1].val < p.val:
             stack.pop()
         __ n.. stack:
             r.. N..

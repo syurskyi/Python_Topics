@@ -7,13 +7,13 @@ Created on Apr 5, 2017
 class Solution(object):
     ___ findNthDigit(self, n):
         length, count, start = 1, 9, 1
-        while n > length*count:
+        w.... n > length*count:
             n -= length*count
             length += 1
             count *= 10
             start *= 10
         start += (n-1)//length
-        s = str(start)
+        s = s..(start)
         r.. int(s[(n-1)%length])
     
     ___ test(self):

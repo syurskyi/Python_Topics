@@ -13,7 +13,7 @@ class Solution:
             __ start __ word:
                 d...remove(start)
         d...add(end)
-        while queue:
+        w.... queue:
             cur = queue.pop(0)
             d = distance.pop(0)
             ___ word __ set(d..):  # Iterate over the copy of dict

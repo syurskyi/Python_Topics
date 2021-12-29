@@ -52,7 +52,7 @@ class Solution:
         marked[i] = True
 
         ___ neighbor __ V[i]:
-            __ n.. visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked):
+            __ n.. visited[neighbor] a.. self.dfs_have_cycle(V, neighbor, visited, marked):
                 r.. True
 
         # clean up

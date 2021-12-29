@@ -31,10 +31,10 @@ class SummaryRanges(object):
       s = m..(intervals[l..(left)].start, s)
       e = max(intervals[~l..(right)].end, e)
     newIntv = Interval(s, e)
-    __ left and left[-1].end + 1 __ s:
+    __ left a.. left[-1].end + 1 __ s:
       newIntv.start = left[-1].start
       left = left[:-1]
-    __ right and right[0].start - 1 __ e:
+    __ right a.. right[0].start - 1 __ e:
       newIntv.end = right[0].end
       right = right[1:]
     self.intervals = left + [newIntv] + right

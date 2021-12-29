@@ -12,7 +12,7 @@ class Solution(object):
     :rtype: List[int]
     """
     res, stack    # list, [(1, root)]
-    while stack:
+    w.... stack:
       p = stack.pop()
       __ n.. p[1]:
         continue

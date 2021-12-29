@@ -14,11 +14,11 @@ class Solution(object):
     bst    # list
     __ k < 0 o. t < 0:
       r.. False
-    ___ i, num __ enumerate(nums):
+    ___ i, num __ e..(nums):
       idx = bisect.bisect_left(bst, num)
-      __ idx < l..(bst) and abs(bst[idx] - num) <= t:
+      __ idx < l..(bst) a.. abs(bst[idx] - num) <= t:
         r.. True
-      __ idx > 0 and abs(bst[idx - 1] - num) <= t:
+      __ idx > 0 a.. abs(bst[idx - 1] - num) <= t:
         r.. True
       __ l..(bst) >= k:
         del bst[bisect.bisect_left(bst, nums[i - k])]

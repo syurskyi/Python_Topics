@@ -19,7 +19,7 @@ class Solution:
         """
         mjr = nums[0]
         cnt = 0
-        ___ i, v __ enumerate(nums):
+        ___ i, v __ e..(nums):
             __ mjr __ v:
                 cnt += 1
             ____:

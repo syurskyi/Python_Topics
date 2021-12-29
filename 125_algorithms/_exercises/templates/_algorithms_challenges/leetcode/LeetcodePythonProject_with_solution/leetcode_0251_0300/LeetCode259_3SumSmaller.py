@@ -11,11 +11,11 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        nums.sort()
+        nums.s..()
         res = 0
         ___ i __ r..(l..(nums)-2):
             j, k = i+1, l..(nums)-1
-            while j < k:
+            w.... j < k:
                 __ nums[i]+nums[j]+nums[k] >= target:
                     k -= 1
                 ____:

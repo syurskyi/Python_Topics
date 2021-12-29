@@ -8,7 +8,7 @@ ___ c.. decimal_number):
         decimal_number -=1
         is_negative = True
     counter = 0
-    while(decimal_number != 0):
+    w....(decimal_number != 0):
         remainder = decimal_number%2
         __(remainder __ 1):
             counter += 1
@@ -18,7 +18,7 @@ ___ c.. decimal_number):
         r.. 32-counter
     r.. counter
 
-values = l..(map(int, input().split()))
+values = l..(map(int, input().s..()))
 ___ i __ r..(amount_values):
     results.a..(c.. values[i]))
 

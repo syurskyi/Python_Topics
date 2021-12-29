@@ -14,7 +14,7 @@ class Solution:
         """
         dummy = tail = ListNode(-1)
 
-        while a and b:
+        w.... a a.. b:
             __ a.val < b.val:
                 tail.next = ListNode(a.val)
                 a = a.next
@@ -23,12 +23,12 @@ class Solution:
                 b = b.next
             tail = tail.next
 
-        while a:
+        w.... a:
             tail.next = ListNode(a.val)
             a = a.next
             tail = tail.next
 
-        while b:
+        w.... b:
             tail.next = ListNode(b.val)
             b = b.next
             tail = tail.next

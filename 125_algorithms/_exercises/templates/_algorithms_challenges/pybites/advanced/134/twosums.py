@@ -6,7 +6,7 @@ ___ bs(numbers,value):
     low,high = 0,l..(numbers) - 1
 
 
-    while low <= high:
+    w.... low <= high:
         mid = (low + high)//2
 
         __ numbers[mid] __ value:
@@ -39,9 +39,9 @@ ___ two_sums(numbers, target):
 
     
     result = N..
-    ___ i,number __ enumerate(numbers):
+    ___ i,number __ e..(numbers):
         value = target - number
-        __ value < number and  value __ mapping:
+        __ value < number a..  value __ mapping:
             index_1 = mapping[value]
             __ n.. result o. value < numbers[result[0]]:
                 result = (index_1,i)

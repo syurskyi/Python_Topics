@@ -8,6 +8,6 @@ ___ find_nth(entries):
         ___ x __ r..(N):
             x_next = (A * x_cur + C) % M
             x_cur = x_next
-        answer.a..(str(x_cur))
+        answer.a..(s..(x_cur))
     print(' '.join(answer))
 find_nth(input())

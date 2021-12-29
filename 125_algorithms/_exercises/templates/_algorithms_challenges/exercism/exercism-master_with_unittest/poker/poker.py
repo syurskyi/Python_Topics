@@ -52,7 +52,7 @@ class Hand:
             r.. self.high_card()
 
     ___ straight_flush(self):
-        r.. self.straight() and self.flush()
+        r.. self.straight() a.. self.flush()
 
     ___ straight(self):
         r.. (l..(r..(m..(self.ranks), max(self.ranks) + 1)) __
@@ -65,7 +65,7 @@ class Hand:
         r.. max(self.rank_occurences().values()) __ 4
 
     ___ full_house(self):
-        r.. self.three_of_a_kind() and self.one_pair()
+        r.. self.three_of_a_kind() a.. self.one_pair()
 
     ___ three_of_a_kind(self):
         r.. 3 __ l..(self.rank_occurences().values())
@@ -98,7 +98,7 @@ class Card:
         self.suit = inp[1]
 
     ___ __str__(self):
-        r.. str(self.rank) + self.suit
+        r.. s..(self.rank) + self.suit
 
     @classmethod
     ___ numberify_face_cards(cls, rank):

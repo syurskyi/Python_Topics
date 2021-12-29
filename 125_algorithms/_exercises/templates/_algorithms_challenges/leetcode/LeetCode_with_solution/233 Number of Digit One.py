@@ -24,7 +24,7 @@ class Solution:
 
         cnt = 0
         sig = 1
-        while n/sig:
+        w.... n/sig:
             temp = sig*10
 
             cur_digit = (n/sig)%10

@@ -12,7 +12,7 @@ class Solution(object):
         """
         s, c = S, C
         arr    # list
-        ___ i, c0 __ enumerate(s):
+        ___ i, c0 __ e..(s):
             __ c0 __ c:
                 arr.a..(i)
         res    # list

@@ -9,7 +9,7 @@ class Solution:
         __ n.. A:
             r.. ans
 
-        A.sort()
+        A.s..()
         self.dfs(A, 0, target, ans, [])
         r.. ans
 
@@ -24,7 +24,7 @@ class Solution:
 
             # to prevent [1', 2, 5] and [1", 2, 5]
             # appear in result at same time
-            __ i > start and A[i] __ A[i - 1]:
+            __ i > start a.. A[i] __ A[i - 1]:
                 continue
 
             path.a..(A[i])

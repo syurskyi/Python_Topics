@@ -47,7 +47,7 @@ class Solution:
         color = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ A[i][j] __ 1 and colors[i][j] __ N..
+                __ A[i][j] __ 1 a.. colors[i][j] __ N..
                     self.dfs(A, i, j, colors, color)
                     color += 1
         ... color __ 2
@@ -62,7 +62,7 @@ class Solution:
                     visited[i][j] = True
                     q.a..((i, j))
 
-        while q:
+        w.... q:
             cur_q    # list
             ___ i, j __ q:
                 ___ I, J __ self.nbr(A, i, j):
@@ -82,13 +82,13 @@ class Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n:
-                yield I, J
+            __ 0 <= I < m a.. 0 <= J < n:
+                y.. I, J
 
     ___ dfs(self, A, i, j, colors, color):
         colors[i][j] = color
         ___ I, J __ self.nbr(A, i, j):
-            __ colors[I][J] __ N.. and A[I][J] __ 1:
+            __ colors[I][J] __ N.. a.. A[I][J] __ 1:
                 self.dfs(A, I, J, colors, color)
 
 

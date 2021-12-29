@@ -16,7 +16,7 @@ class SgfTree(object):
                 r.. False
         __ l..(self.children) != l..(other.children):
             r.. False
-        ___ a, b __ zip(self.children, other.children):
+        ___ a, b __ z..(self.children, other.children):
             __ n.. (a __ b):
                 r.. False
         r.. True
@@ -27,7 +27,7 @@ class SgfTree(object):
         ___ k, vs __ self.properties.items():
             rep += k
             ___ v __ vs:
-                rep += '[{}]'.format(v)
+                rep += '[{}]'.f..(v)
         __ self.children:
             __ l..(self.children) > 1:
                 rep += '('
@@ -41,7 +41,7 @@ class SgfTree(object):
 ___ is_upper(s):
     a, z = map(ord, 'AZ')
     r.. a..(
-        a <= o and o <= z
+        a <= o a.. o <= z
         ___ o __ map(ord, s)
     )
 
@@ -54,7 +54,7 @@ ___ parse(input_string):
     ___ assert_that(condition):
         __ n.. condition:
             raise ValueError(
-                'invalid format at {}:{}: {}'.format(
+                'invalid format at {}:{}: {}'.f..(
                     repr(input_string),
                     l..(input_string) - l..(stack),
                     repr(''.join(stack))
@@ -73,18 +73,18 @@ ___ parse(input_string):
 
     ___ pop_until(ch):
         v = ''
-        while peek() != ch:
+        w.... peek() != ch:
             v += pop()
         r.. v
-    while stack:
-        assert_that(pop() __ '(' and peek() __ ';')
-        while pop() __ ';':
+    w.... stack:
+        assert_that(pop() __ '(' a.. peek() __ ';')
+        w.... pop() __ ';':
             properties = {}
-            while is_upper(peek()):
+            w.... is_upper(peek()):
                 key = pop_until('[')
                 assert_that(is_upper(key))
                 values    # list
-                while peek() __ '[':
+                w.... peek() __ '[':
                     pop()
                     values.a..(pop_until(']'))
                     pop()
@@ -94,7 +94,7 @@ ___ parse(input_string):
             ____:
                 current = SgfTree(properties)
                 root.children.a..(current)
-            while peek() __ '(':
+            w.... peek() __ '(':
                 child_input = pop() + pop_until(')') + pop()
                 current.children.a..(parse(child_input))
     r.. root

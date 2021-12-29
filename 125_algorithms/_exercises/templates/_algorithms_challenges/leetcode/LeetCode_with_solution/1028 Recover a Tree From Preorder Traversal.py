@@ -42,7 +42,7 @@ ____ collections _______ OrderedDict
 
 
 class Solution:
-    ___ recoverFromPreorder(self, S: str) -> TreeNode:
+    ___ recoverFromPreorder(self, S: s..) -> TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -53,13 +53,13 @@ class Solution:
         i = 0
         root = N..
         stk    # list
-        while i < n:
+        w.... i < n:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
             ____:
                 j = i
-                while j < n and S[j] != "-":
+                w.... j < n a.. S[j] != "-":
                     j += 1
 
                 val = int(S[i:j])
@@ -71,7 +71,7 @@ class Solution:
                     stk = [(depth, root)]
                 ____:
                     ... stk
-                    while stk[-1][0] != depth - 1:
+                    w.... stk[-1][0] != depth - 1:
                         stk.pop()
 
                     _, pi = stk[-1]
@@ -89,7 +89,7 @@ class Solution:
 
         r.. root
 
-    ___ recoverFromPreorder_error(self, S: str) -> TreeNode:
+    ___ recoverFromPreorder_error(self, S: s..) -> TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -99,13 +99,13 @@ class Solution:
         # parse
         n = l..(S)
         i = 0
-        while i < n:
+        w.... i < n:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
             ____:
                 j = i
-                while j < n and S[j] != "-":
+                w.... j < n a.. S[j] != "-":
                     j += 1
 
                 val = int(S[i:j])
@@ -123,7 +123,7 @@ class Solution:
                 stk = [root]
             ____:
                 ... stk
-                while depths[stk[-1].val] != v - 1:
+                w.... depths[stk[-1].val] != v - 1:
                     stk.pop()
 
                 __ n.. stk[-1].left:

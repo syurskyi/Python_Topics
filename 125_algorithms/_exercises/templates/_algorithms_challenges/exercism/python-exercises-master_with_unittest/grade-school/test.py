@@ -49,7 +49,7 @@ class SchoolTest(unittest.TestCase):
             ___ student __ students_in_grade[::-1]:
                 self.school.add(student, grade)
 
-        result = self.school.sort()
+        result = self.school.s..()
 
         # Attempts to catch false positives
         self.assertTrue(

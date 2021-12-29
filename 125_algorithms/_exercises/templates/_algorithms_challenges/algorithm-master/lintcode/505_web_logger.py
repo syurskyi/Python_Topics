@@ -25,7 +25,7 @@ class WebLogger:
     ___ get_hit_count_in_last_5_minutes(self, timestamp):
         head = self.dummy[1]
 
-        while (head __ n.. self.dummy and
+        w.... (head __ n.. self.dummy a..
                head[2] + 300 <= timestamp):
             _, nxt, _ = head
             self.dummy[1] = nxt

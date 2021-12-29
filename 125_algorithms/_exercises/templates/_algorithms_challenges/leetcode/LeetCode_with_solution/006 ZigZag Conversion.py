@@ -26,7 +26,7 @@ class Solution:
         matrix = [[] ___ _ __ xrange(nRows)]
 
         i = 0
-        while i < length:
+        w.... i < length:
             try:
                 # going down
                 ___ j __ xrange(nRows):

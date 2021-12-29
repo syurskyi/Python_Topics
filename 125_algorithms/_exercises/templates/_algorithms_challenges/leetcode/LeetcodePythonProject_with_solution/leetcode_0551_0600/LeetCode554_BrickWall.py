@@ -35,7 +35,7 @@ class Solution(object):
         ]
         ___ wall __ testCases:
             print('wall:')
-            print('\n'.join([str(row) ___ row __ wall]))
+            print('\n'.join([s..(row) ___ row __ wall]))
             result = self.leastBricks(wall)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -52,7 +52,7 @@ class Solution:
 
         stk    # list
         ___ i __ r..(n):
-            while stk and A[stk[-1]] >= A[i]:
+            w.... stk a.. A[stk[-1]] >= A[i]:
                 stk.pop()
 
             __ stk:
@@ -62,7 +62,7 @@ class Solution:
         stk    # list
         ___ i __ r..(n-1, -1, -1):
             # avoid double count when equal, attribtue to leftmost duplicate
-            while stk and A[stk[-1]] > A[i]:
+            w.... stk a.. A[stk[-1]] > A[i]:
                 stk.pop()
 
             __ stk:
@@ -88,8 +88,8 @@ class Solution:
         stk    # list
         A = [-float('inf')] + A + [-float('inf')]
         ret = 0
-        ___ i, a __ enumerate(A):
-            while stk and A[stk[-1]] > a:
+        ___ i, a __ e..(A):
+            w.... stk a.. A[stk[-1]] > a:
                 h = stk.pop()
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)

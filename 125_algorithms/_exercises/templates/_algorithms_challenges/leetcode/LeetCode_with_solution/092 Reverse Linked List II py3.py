@@ -24,7 +24,7 @@ class Solution:
         cur = head
 
         l = 1
-        while l < m:
+        w.... l < m:
             nxt = cur.next
             prev = cur
             cur = nxt
@@ -37,7 +37,7 @@ class Solution:
         leftend = prev
         rightend = cur
 
-        while l <= n:  # notice is it <=
+        w.... l <= n:  # notice is it <=
             nxt = cur.next
             cur.next = prev
             prev = cur

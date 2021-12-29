@@ -6,12 +6,12 @@ _______ pandas as pd
 
 class LightsGrid:
 
-    ___ __init__(self, grid_size: int, instructions: List[str]):
+    ___ __init__(self, grid_size: int, instructions: List[s..]):
         self.grid_size = grid_size
         self.grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=int))
         self.instructions = instructions
 
-    ___ process_grid_coordinates(self, s1: str, s2: str):
+    ___ process_grid_coordinates(self, s1: s.., s2: s..):
         """A helper function you might want to create to process
           the top left hand corner coordinates and the bottom
           right hand coordinates given in the instructions
@@ -21,8 +21,8 @@ class LightsGrid:
 
         Suggested return are 4 integers representing x1, x2, y1, y2 [hint]"""
 
-        row_1,col_1 = map(int,s1.split(','))
-        row_2,col_2 = map(int,s2.split(','))
+        row_1,col_1 = map(int,s1.s..(','))
+        row_2,col_2 = map(int,s2.s..(','))
 
 
 
@@ -46,7 +46,7 @@ class LightsGrid:
 
 
 
-    ___ turn_on(self, s1: str, s2: str):
+    ___ turn_on(self, s1: s.., s2: s..):
         """The turn_on function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -78,7 +78,7 @@ class LightsGrid:
 
 
 
-    ___ turn_off(self, s1: str, s2: str):
+    ___ turn_off(self, s1: s.., s2: s..):
         """The turn_off function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -88,7 +88,7 @@ class LightsGrid:
         row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
         self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = 0
 
-    ___ turn_up(self, amount: int, s1: str, s2: str):
+    ___ turn_up(self, amount: int, s1: s.., s2: s..):
         """The turn_up function takes 3 parameters:
 
         :param amount: The intensity to turn the lights up by
@@ -105,7 +105,7 @@ class LightsGrid:
         self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
 
 
-    ___ turn_down(self, amount: int, s1: str, s2: str):
+    ___ turn_down(self, amount: int, s1: s.., s2: s..):
         """The turn down function takes 3 parameters:
 
         :param amount: The intensity to turn the lights down by
@@ -121,7 +121,7 @@ class LightsGrid:
 
         self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: max(0,value - amount))
 
-    ___ toggle(self, s1: str, s2: str):
+    ___ toggle(self, s1: s.., s2: s..):
         """The toggle function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -241,11 +241,11 @@ __ __name__ __ "__main__":
     turn off 3,72 through 68,75"""
 
     # Create a list of all the instructions
-    instructions = [line.strip() ___ line __ instructions.splitlines()]
+    instructions = [line.s.. ___ line __ instructions.splitlines()]
 
     # The grid size instruction is first
     # Extract it and convert to int
-    grid_size = int(instructions[0].split(" ")[4])
+    grid_size = int(instructions[0].s..(" ")[4])
 
     # Create a LightsGrid Class instance
     lights = LightsGrid(grid_size, instructions[1:])

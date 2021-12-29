@@ -31,7 +31,7 @@ class Solution:
         z = 0
         d = {0: 0}  # diff for nums[:l]
         ret = 0
-        ___ i, e __ enumerate(nums):
+        ___ i, e __ e..(nums):
             __ e __ 1:
                 o += 1
             ____:
@@ -60,7 +60,7 @@ class Solution:
 
         i = 0
         j = n
-        while i < j:
+        w.... i < j:
             count = F[j] - F[i]
             l = j - i
             __ count * 2 __ l:

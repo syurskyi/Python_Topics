@@ -9,10 +9,10 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        intervals.sort(key=l.... x: (x[0], -x[1]))
+        intervals.s..(key=l.... x: (x[0], -x[1]))
         stack    # list
         ___ interval __ intervals:
-            while stack and stack[-1][1] >= interval[1]:
+            w.... stack a.. stack[-1][1] >= interval[1]:
                 stack.pop()
             stack.a..(interval)
         n = l..(stack)
@@ -24,9 +24,9 @@ class Solution(object):
         p1 = a[0][1]-1
         p2 = a[0][1]
         ___ i __ r..(1, n):
-            bo1 = p1 >= a[i][0] and p1 <= a[i][1]
-            bo2 = p2 >= a[i][0] and p2 <= a[i][1]
-            __ bo1 and bo2:
+            bo1 = p1 >= a[i][0] a.. p1 <= a[i][1]
+            bo2 = p2 >= a[i][0] a.. p2 <= a[i][1]
+            __ bo1 a.. bo2:
                 continue
             __ bo2:
                 p1 = p2

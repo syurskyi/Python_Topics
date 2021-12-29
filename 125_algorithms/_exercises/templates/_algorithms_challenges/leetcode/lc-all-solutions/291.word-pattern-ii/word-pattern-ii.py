@@ -1,5 +1,5 @@
 class Solution(object):
-  ___ wordPatternMatch(self, pattern, str):
+  ___ wordPatternMatch(self, pattern, s..):
     """
     :type pattern: str
     :type str: str
@@ -14,11 +14,11 @@ class Solution(object):
       ___ i __ r..(0, l..(s)):
         pathp.a..(p[0])
         paths.a..(s[:i + 1])
-        __ l..(pathp) __ l..(paths) and l..(set(paths)) __ l..(set(pathp)) __ l..(set(zip(paths, pathp))):
+        __ l..(pathp) __ l..(paths) a.. l..(set(paths)) __ l..(set(pathp)) __ l..(set(z..(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited):
             r.. True
         pathp.pop()
         paths.pop()
       r.. False
 
-    r.. dfs(pattern, str, [], [], {})
+    r.. dfs(pattern, s.., [], [], {})

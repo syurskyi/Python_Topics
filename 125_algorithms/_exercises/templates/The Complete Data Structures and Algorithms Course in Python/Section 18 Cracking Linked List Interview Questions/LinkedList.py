@@ -19,7 +19,7 @@ c_ LinkedList:
     ___ __iter__(self
         curNode  head
         w__ curNode:
-            yield curNode
+            y.. curNode
             curNode  curNode.next
     
     ___ __str__(self

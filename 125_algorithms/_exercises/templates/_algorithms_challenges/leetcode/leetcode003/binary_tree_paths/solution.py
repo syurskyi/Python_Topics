@@ -36,8 +36,8 @@ class Solution(object):
             r..
         ____:
             cand.a..(root.val)
-            __ root.left __ N.. and root.right __ N..
-                p = '->'.join(map(str, cand))
+            __ root.left __ N.. a.. root.right __ N..
+                p = '->'.join(map(s.., cand))
                 res.a..(p)
             self.binary_tree_paths(root.left, cand, res)
             self.binary_tree_paths(root.right, cand, res)

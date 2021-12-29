@@ -11,15 +11,15 @@ class Solution(object):
         """
         hashmap = {}
         ___ s __ cpdomains:
-            cnt, s = s.split(' ')
+            cnt, s = s.s..(' ')
             cnt = int(cnt)
-            arr = s.split('.')[::-1]
+            arr = s.s..('.')[::-1]
             ___ i __ r..(1, l..(arr)+1):
                 s0 = '.'.join(arr[:i][::-1])
                 hashmap[s0] = hashmap.get(s0, 0)+cnt
         res    # list
         ___ s, freq __ hashmap.items():
-            res.a..(str(freq) + ' ' + s)
+            res.a..(s..(freq) + ' ' + s)
         r.. res
     
     ___ test(self):

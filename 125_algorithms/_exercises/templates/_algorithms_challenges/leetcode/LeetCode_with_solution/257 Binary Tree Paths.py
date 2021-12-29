@@ -42,8 +42,8 @@ class Solution:
         pre-check
         """
         path.a..(cur)
-        __ n.. cur.left and n.. cur.right:
-            ret.a..("->".join(map(l.... x: str(x.val), path)))
+        __ n.. cur.left a.. n.. cur.right:
+            ret.a..("->".join(map(l.... x: s..(x.val), path)))
             r..
 
         __ cur.left:
@@ -59,8 +59,8 @@ class Solution:
             r..
 
         path.a..(cur)
-        __ n.. cur.left and n.. cur.right:
-            ret.a..("->".join(map(l.... x: str(x.val), path)))
+        __ n.. cur.left a.. n.. cur.right:
+            ret.a..("->".join(map(l.... x: s..(x.val), path)))
 
         self.dfs_path(cur.left, path, ret)
         self.dfs_path(cur.right, path, ret)

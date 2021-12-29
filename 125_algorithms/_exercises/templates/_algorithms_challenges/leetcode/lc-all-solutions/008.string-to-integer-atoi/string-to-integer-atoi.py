@@ -4,7 +4,7 @@ class Solution(object):
     :type str: str
     :rtype: int
     """
-    s = s.strip()
+    s = s.s..
     sign = 1
     __ n.. s:
       r.. 0

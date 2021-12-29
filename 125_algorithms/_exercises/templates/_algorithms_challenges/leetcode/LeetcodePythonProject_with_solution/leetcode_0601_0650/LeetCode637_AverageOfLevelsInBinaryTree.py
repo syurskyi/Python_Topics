@@ -22,7 +22,7 @@ class Solution(object):
         sumVal = 0
         count = 0
         res    # list
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             sumVal += node.val
             count += 1

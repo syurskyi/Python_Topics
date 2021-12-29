@@ -30,8 +30,8 @@ class Solution:
         i = cur - 1
         reached = False  # Whether `cur` can be reached by previous elements
         # Worst case: O(n^2)
-        while i >= 0:
-            while i >= 0:
+        w.... i >= 0:
+            w.... i >= 0:
                 __ t[i] >= cur:
                     min_i = i
                     reached = True

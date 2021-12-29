@@ -1,5 +1,5 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ re
 
 social_platforms = """Twitter
@@ -19,13 +19,13 @@ Reddit
 """
 
 # note range is of type range and regex is a re.compile object
-Validator = namedtuple('Validator', 'range regex')
+Validator = n..('Validator', 'range regex')
 
 
 ___ parse_social_platforms_string():
     """Convert the social_platforms string above into a dict where
        keys = social platformsname and values = validator namedtuples"""
-    platforms = social_platforms.split('\n\n')
+    platforms = social_platforms.s..('\n\n')
     
     platform_to_validator = {}
     
@@ -37,7 +37,7 @@ ___ parse_social_platforms_string():
             values.a..(result.group(i))
         platform_name = values[0]
         range_object = r..(int(values[1]),int(values[2]))
-        last = ''.join(values[-1].split())
+        last = ''.join(values[-1].s..())
         regex = '^[' + last + ']+$'
         r = re.compile(regex)
         validator = Validator(range_object,r)
@@ -57,7 +57,7 @@ ___ validate_username(platform, username):
         raise ValueError
     platform_validator = all_validators[platform]
 
-    r.. l..(username) __ platform_validator.r.. and platform_validator.regex.search(username)
+    r.. l..(username) __ platform_validator.r.. a.. platform_validator.regex.search(username)
 
 
 

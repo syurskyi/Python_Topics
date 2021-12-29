@@ -18,6 +18,6 @@ class Solution(object):
     ___ key __ rowSign:
       __ rowSign[key] __ N:
         ___ j __ r..(l..(key)):
-          __ key[j] __ "B" and col.get(j, 0) __ N:
+          __ key[j] __ "B" a.. col.get(j, 0) __ N:
             ans += N
     r.. ans

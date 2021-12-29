@@ -19,28 +19,28 @@ ___ get_others(map_, r, c):
     """
     nums = 0
     # your code here
-    __ r __ 0 and c __ 0: #top left corder
+    __ r __ 0 a.. c __ 0: #top left corder
         nums += 2
         __ l..(map_[0]) > 1:
             __ map_[r][c+1] __ 0:
                 nums += 1
             __ map_[r+1][c] __ 0:
                 nums += 1
-    ____ r __ 0 and c __ l..(map_[0])-1: #top right corner
+    ____ r __ 0 a.. c __ l..(map_[0])-1: #top right corner
         nums += 2
         __ l..(map_[0]) > 1:
             __ map_[r][c-1] __ 0:
                 nums += 1
             __ map_[r+1][c] __ 0:
                 nums += 1
-    ____ r __ l..(map_)-1 and c __ 0: #bottom left corder
+    ____ r __ l..(map_)-1 a.. c __ 0: #bottom left corder
         nums += 2
         __ l..(map_[0]) > 1:
             __ map_[r][c+1] __ 0:
                 nums += 1
             __ map_[r-1][c] __ 0:
                 nums += 1
-    ____ r __ l..(map_)-1 and c __ l..(map_[0])-1: #bottom right corner
+    ____ r __ l..(map_)-1 a.. c __ l..(map_[0])-1: #bottom right corner
         nums += 2
         __ map_[r][c-1] __ 0:
             nums += 1
@@ -52,7 +52,7 @@ ___ get_others(map_, r, c):
             nums += 1
         __ map_[r][c+1] __ 0:
             nums += 1
-        __ l..(map_) > r and map_[r+1][c] __ 0:
+        __ l..(map_) > r a.. map_[r+1][c] __ 0:
             nums += 1
     ____ r __ l..(map_)-1: # bottom edge, excluding corner
         nums += 1
@@ -68,7 +68,7 @@ ___ get_others(map_, r, c):
             nums += 1
         __ map_[r+1][c] __ 0:
             nums += 1
-        __ l..(map_[0]) > c and map_[r][c+1] __ 0:
+        __ l..(map_[0]) > c a.. map_[r][c+1] __ 0:
             nums += 1
     ____ c __ l..(map_[0])-1: # right edge. excluding corner
         nums += 1
@@ -99,8 +99,8 @@ ___ island_size(map_):
     perimeter = 0
     # your code here
     #print(len(map_[0]))
-    ___ r, row __ enumerate(map_):
-        ___ c, column __ enumerate(row):
+    ___ r, row __ e..(map_):
+        ___ c, column __ e..(row):
             __ map_[r][c] __ 1:
                 print(r,c)
                 perimeter += get_others(map_, r, c)

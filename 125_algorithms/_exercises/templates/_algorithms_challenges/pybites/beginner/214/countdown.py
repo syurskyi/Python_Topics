@@ -1,15 +1,15 @@
 ___ countdown1():
     """Write a generator that counts from 100 to 1"""
     ___ i __ reversed(r..(1,101)):
-        yield i
+        y.. i
 
 
 ___ countdown():
     """Write a generator that counts from 100 to 1"""
     num = 100
-    while True:
+    w... T...
         __ num >= 1:
-            yield num
+            y.. num
             num -= 1
         ____:
             break

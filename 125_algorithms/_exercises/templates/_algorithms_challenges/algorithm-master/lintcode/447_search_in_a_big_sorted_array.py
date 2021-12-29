@@ -19,12 +19,12 @@ class Solution:
     """
     ___ searchBigSortedArray(self, reader, target):
         end = 0
-        while reader.get(end) < target:
+        w.... reader.get(end) < target:
             # `+1` is to avoid `end == 0`
             end = end * 2 + 1
 
         l, m, r = 0, 0, end
-        while l + 1 < r:
+        w.... l + 1 < r:
             m = l + (r - l) // 2
             __ reader.get(m) < target:
                 l = m

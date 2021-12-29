@@ -28,7 +28,7 @@ class Solution(object):
         :rtype: The number of characters read (int)
         """
         idx = 0
-        while idx < n:
+        w.... idx < n:
             buf4 = ["" ___ _ __ xrange(4)]
             r = read4(buf4)
             __ idx+r < n:

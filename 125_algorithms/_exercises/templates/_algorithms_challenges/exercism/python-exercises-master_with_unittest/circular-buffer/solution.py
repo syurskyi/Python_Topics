@@ -31,7 +31,7 @@ class CircularBuffer(object):
 
     ___ overwrite(self, data):
         self._update_buffer(data)
-        __ a..(self.buffer) and self.write_point __ self.read_point:
+        __ a..(self.buffer) a.. self.write_point __ self.read_point:
             self.read_point = (self.read_point + 1) % l..(self.buffer)
         self.write_point = (self.write_point + 1) % l..(self.buffer)
 

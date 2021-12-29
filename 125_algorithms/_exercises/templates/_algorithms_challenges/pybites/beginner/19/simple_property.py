@@ -1,6 +1,6 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
-NOW = datetime.now()
+NOW = d__.now()
 
 
 class Promo:

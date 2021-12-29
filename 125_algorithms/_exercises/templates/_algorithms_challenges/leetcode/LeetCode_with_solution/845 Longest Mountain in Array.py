@@ -43,14 +43,14 @@ class Solution:
         up_cnt = 0
         down_cnt = 0
         ___ i __ r..(1, l..(A)):
-            __ down_cnt and A[i] >= A[i-1]:
+            __ down_cnt a.. A[i] >= A[i-1]:
                 up_cnt = 0
                 down_cnt = 0
             __ A[i] > A[i-1]:
                 up_cnt += 1
             ____ A[i] < A[i-1]:
                 down_cnt += 1
-            __ up_cnt and down_cnt:
+            __ up_cnt a.. down_cnt:
                 ret = max(ret, up_cnt + down_cnt + 1)
 
         r.. ret
@@ -71,7 +71,7 @@ class Solution:
 
         ret = 0
         ___ i __ r..(n):
-            __ U[i] > 0 and D[i] > 0:
+            __ U[i] > 0 a.. D[i] > 0:
                 ret = max(ret, U[i] + D[i] + 1)
 
         r.. ret
@@ -88,7 +88,7 @@ class Solution:
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1
-                ____ A[i] < A[i-1] and l >= 2:
+                ____ A[i] < A[i-1] a.. l >= 2:
                     expect_incr = False
                     l += 1
                     ret = max(ret, l)

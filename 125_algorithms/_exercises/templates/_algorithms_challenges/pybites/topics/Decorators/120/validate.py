@@ -5,7 +5,7 @@ ___ int_args(func):
     @wraps(func)
     # complete this decorator
     ___ wrapper(*args):
-        __ s..(isi..(n, str) ___ n __ args):
+        __ s..(isi..(n, s..) ___ n __ args):
             raise TypeError
         ____ s..(isi..(n, float) ___ n __ args):
             raise TypeError

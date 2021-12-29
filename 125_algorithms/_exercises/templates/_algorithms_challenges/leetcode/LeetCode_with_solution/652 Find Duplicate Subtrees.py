@@ -91,7 +91,7 @@ class Solution2:
         self.walk(root, defaultdict(int), ret)
         r.. ret
 
-    ___ walk(self, cur, counter, ret) -> str:
+    ___ walk(self, cur, counter, ret) -> s..:
         """
         serialize the subtrees and check existence
 
@@ -117,7 +117,7 @@ class Solution2:
         cur_key = ",".join([
             self.walk(cur.left, counter, ret),
             self.walk(cur.right, counter, ret),
-            str(cur.val),
+            s..(cur.val),
         ])
         __ counter[cur_key] __ 1:
             ret.a..(cur)

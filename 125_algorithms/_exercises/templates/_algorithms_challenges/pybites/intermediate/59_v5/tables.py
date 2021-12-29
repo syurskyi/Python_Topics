@@ -12,7 +12,7 @@ class MultiplicationTable:
 
     ___ __str__(self):
         """Returns a string representation of the table"""
-        r.. '\n'.join(' | '.join([str(x) ___ x __ y]) ___ y __ self._table)
+        r.. '\n'.join(' | '.join([s..(x) ___ x __ y]) ___ y __ self._table)
 
     ___ calc_cell(self, x, y):
         """Takes x and y coords and returns the (pre-calculated) result"""

@@ -46,7 +46,7 @@ class Solution:
 
         node = root.left
 
-        while node.right:
+        w.... node.right:
             node = node.right
 
         node.right = root.right

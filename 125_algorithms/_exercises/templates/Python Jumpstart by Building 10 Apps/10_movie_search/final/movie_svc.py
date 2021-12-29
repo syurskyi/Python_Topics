@@ -1,18 +1,18 @@
 _______ collections
 _______ requests
 
-MovieResult  collections.namedtuple(
+MovieResult  collections.n..(
     'MovieResult',
     "imdb_code,title,duration,director,year,rating,imdb_score,keywords,genres")
 
 
 ___ find_movies(search_text):
 
-    __ n.. search_text o. n.. search_text.strip():
+    __ n.. search_text o. n.. search_text.s..:
         raise ValueError("Search text is required")
 
     # This URL changed since the recording to support SSL.
-    url  'http://movieservice.talkpython.fm/api/search/{}'.format(search_text)
+    url  'http://movieservice.talkpython.fm/api/search/{}'.f..(search_text)
 
     resp  requests.get(url)
     resp.raise_for_status()
@@ -25,6 +25,6 @@ ___ find_movies(search_text):
         ___ md __ movies_list
     ]
 
-    movies.sort(keylambda m: -m.year)
+    movies.s..(keylambda m: -m.year)
 
     r.. movies

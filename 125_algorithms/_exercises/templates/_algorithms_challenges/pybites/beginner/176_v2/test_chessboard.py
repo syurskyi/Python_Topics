@@ -79,7 +79,7 @@ outputs = [
     # # # # # # # # # # # # # # # # 
     """,
 ]
-expected_outputs = d..(zip(sizes, outputs))
+expected_outputs = d..(z..(sizes, outputs))
 
 
 ___ _non_empty_lines(output):
@@ -87,7 +87,7 @@ ___ _non_empty_lines(output):
        empty lines and returns it.
     """
     r.. [line ___ line __
-            output.splitlines() __ line.strip()]
+            output.splitlines() __ line.s..]
 
 
 @pytest.mark.parametrize("size", sizes)

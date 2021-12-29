@@ -5,10 +5,10 @@ _______ re
 ___ create_chart():
     resp = urllib.request.urlopen(f'https://bites-data.s3.us-east-2.amazonaws.com/safari.logs').read()
     html = resp.decode('UTF-8')
-    paragraphs = html.split('\n')
+    paragraphs = html.s..('\n')
 
     books    # list
-    ___ i, line __ enumerate(paragraphs):
+    ___ i, line __ e..(paragraphs):
         regex = re.compile(r'- sending to slack channel')
         __ regex.search(line):
             matches = paragraphs[i-1]

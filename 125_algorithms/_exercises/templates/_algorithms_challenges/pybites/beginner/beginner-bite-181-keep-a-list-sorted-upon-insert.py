@@ -37,7 +37,7 @@ class OrderedList:
         bisect.insort(self._numbers, num)
 
     ___ __str__(self):
-        r.. ', '.join(str(num) ___ num __ self._numbers)
+        r.. ', '.join(s..(num) ___ num __ self._numbers)
 
 
 ol = OrderedList()

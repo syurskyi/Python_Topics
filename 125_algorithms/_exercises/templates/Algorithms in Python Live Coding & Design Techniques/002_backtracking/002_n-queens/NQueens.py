@@ -26,12 +26,12 @@ ___ is_safe(board, row, col, size
             r_ F..
 
     #upper half
-    ___ i, j __ zip(ra__(row, -1, -1), ra__(col, -1, -1)):
+    ___ i, j __ z..(ra__(row, -1, -1), ra__(col, -1, -1)):
         __ board[i][j] __ 1:
             r_ F..
 
     #lower half
-    ___ i, j __ zip(ra__(row, size, 1), ra__(col, -1, -1)):
+    ___ i, j __ z..(ra__(row, size, 1), ra__(col, -1, -1)):
         __ board[i][j] __ 1:
             r_ F..
 

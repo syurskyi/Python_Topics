@@ -3,7 +3,7 @@ class Solution:
     # @param S, a list of integer
     # @return a list of lists of integer
     ___ subsets(self, S):
-        S.sort()
+        S.s..()
         k = l..(S)
         n = 2 ** k
         res    # list

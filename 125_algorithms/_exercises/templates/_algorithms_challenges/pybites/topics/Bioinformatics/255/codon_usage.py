@@ -63,14 +63,14 @@ ___ return_codon_usage_table(
     ___ seq __ sequences:
         codons = [seq[index:index+3] ___ index __ r..(0, l..(seq.strip()), 3)]
         condon_count.update(codons)
-    translation_table_line = [line ___ line __ translation_table_str.split('\n') __ line]
-    _, AAs = translation_table_line[0].split('  = ')
-    _, Starts = translation_table_line[1].split(' = ')
-    _, Base1 = translation_table_line[2].split('  = ')
-    _, Base2 = translation_table_line[3].split('  = ')
-    _, Base3 = translation_table_line[4].split('  = ')
+    translation_table_line = [line ___ line __ translation_table_str.s..('\n') __ line]
+    _, AAs = translation_table_line[0].s..('  = ')
+    _, Starts = translation_table_line[1].s..(' = ')
+    _, Base1 = translation_table_line[2].s..('  = ')
+    _, Base2 = translation_table_line[3].s..('  = ')
+    _, Base3 = translation_table_line[4].s..('  = ')
     translation = {''.join(z[0:3]): z[3] ___ z __
-        zip(Base1.replace('T', 'U'), Base2.replace('T', 'U'), Base3.replace('T', 'U'), AAs)}
+        z..(Base1.r..('T', 'U'), Base2.r..('T', 'U'), Base3.r..('T', 'U'), AAs)}
     translation_list = l..(translation.keys())
     ___ i __ r..(0, l..(translation_list), 16):
         ___ j __ r..(i, i+4):

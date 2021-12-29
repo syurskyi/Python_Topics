@@ -7,7 +7,7 @@ class Solution(object):
     """
     x = x ^ y
     y = 0
-    while x:
+    w.... x:
       y += 1
       x = x & (x - 1)
     r.. y

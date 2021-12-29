@@ -73,23 +73,23 @@ class BinarySearchTreeTest(unittest.TestCase):
         try:
             self.compare_tree(tree_one, tree_two)
         except AssertionError:
-            raise AssertionError("{} != {}".format(tree_one, tree_two))
+            raise AssertionError("{} != {}".f..(tree_one, tree_two))
 
     ___ compare_tree(self, tree_one, tree_two):
         self.assertEqual(tree_one.data, tree_two.data)
 
         # Compare left tree nodes
-        __ tree_one.left and tree_two.left:
+        __ tree_one.left a.. tree_two.left:
             self.compare_tree(tree_one.left, tree_two.left)
-        ____ tree_one.left __ N.. and tree_two.left __ N..
+        ____ tree_one.left __ N.. a.. tree_two.left __ N..
             pass
         ____:
             raise AssertionError
 
         # Compare right tree nodes
-        __ tree_one.right and tree_two.right:
+        __ tree_one.right a.. tree_two.right:
             self.compare_tree(tree_one.right, tree_two.right)
-        ____ tree_one.right __ N.. and tree_two.right __ N..
+        ____ tree_one.right __ N.. a.. tree_two.right __ N..
             pass
         ____:
             raise AssertionError

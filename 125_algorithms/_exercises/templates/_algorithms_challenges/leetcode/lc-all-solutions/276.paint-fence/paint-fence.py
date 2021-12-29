@@ -5,7 +5,7 @@ class Solution(object):
     :type k: int
     :rtype: int
     """
-    __ n > 2 and k __ 1:
+    __ n > 2 a.. k __ 1:
       r.. 0
     __ n < 2:
       r.. n * k

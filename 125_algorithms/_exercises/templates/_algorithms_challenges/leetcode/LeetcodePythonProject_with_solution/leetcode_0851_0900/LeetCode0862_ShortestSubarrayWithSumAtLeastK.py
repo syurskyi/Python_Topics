@@ -18,9 +18,9 @@ class Solution(object):
         d    # list
         res = n+1
         ___ i __ r..(n+1):
-            while d and arr2[i] - arr2[d[0]] >= k:
+            w.... d a.. arr2[i] - arr2[d[0]] >= k:
                 res = m..(res, i-d.pop(0))
-            while d and arr2[i] <= arr2[d[-1]]:
+            w.... d a.. arr2[i] <= arr2[d[-1]]:
                 d.pop()
             d.a..(i)
         r.. res __ res <= n ____ -1

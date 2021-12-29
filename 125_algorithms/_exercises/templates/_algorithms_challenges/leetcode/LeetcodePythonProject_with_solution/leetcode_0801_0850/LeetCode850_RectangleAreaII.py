@@ -11,20 +11,20 @@ class Solution(object):
         :rtype: int
         """
         xs = s..(set([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]))
-        x_i = {v: i ___ i, v __ enumerate(xs)}
+        x_i = {v: i ___ i, v __ e..(xs)}
         count = [0] * l..(x_i)
         L    # list
         ___ x1, y1, x2, y2 __ rectangles:
             L.a..([y1, x1, x2, 1])
             L.a..([y2, x1, x2, -1])
-        L.sort()
+        L.s..()
         cur_y = cur_x_sum = area = 0
         ___ y, x1, x2, sig __ L:
             area += (y-cur_y) * cur_x_sum
             cur_y = y
             ___ i __ r..(x_i[x1], x_i[x2]):
                 count[i] += sig
-            cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ zip(xs, xs[1:], count))
+            cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ z..(xs, xs[1:], count))
         r.. area % (10**9+7)
     
     ___ test(self):

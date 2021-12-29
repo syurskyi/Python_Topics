@@ -1,12 +1,12 @@
 class Solution(object):
-  ___ wordPattern(self, pattern, str):
+  ___ wordPattern(self, pattern, s..):
     """
     :type pattern: str
     :type str: str
     :rtype: bool
     """
-    str = str.s.. 
-    a = zip(pattern, str)
+    s.. = s...s..
+    a = z..(pattern, s..)
     print
     a
-    r.. l..(pattern) __ l..(str) and l..(set(a)) __ l..(set(pattern)) __ l..(set(str))
+    r.. l..(pattern) __ l..(s..) a.. l..(set(a)) __ l..(set(pattern)) __ l..(set(s..))

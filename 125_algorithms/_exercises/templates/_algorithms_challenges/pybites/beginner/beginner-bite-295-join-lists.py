@@ -23,7 +23,7 @@ Note: Calling the function with an empty list should return None.
 ____ typing _______ List, Union
 ____ functools _______ reduce
 
-___ my_join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
+___ my_join_lists(lst_of_lst: List[List[s..]], sep: s..) -> Union[List[s..], N..]:
     __ l..(lst_of_lst) __ 0:
         r.. N..
     result    # list
@@ -42,7 +42,7 @@ print(my_join_lists([['a', 'b'], ['c']], '&'))
 
 ### -------------------------------- Pybites solution -------------------------------
 
-___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
+___ join_lists(lst_of_lst: List[List[s..]], sep: s..) -> Union[List[s..], N..]:
     __ n.. lst_of_lst:
         r.. N..
 

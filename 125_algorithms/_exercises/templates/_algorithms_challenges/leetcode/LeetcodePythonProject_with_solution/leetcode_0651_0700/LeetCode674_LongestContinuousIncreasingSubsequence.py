@@ -13,9 +13,9 @@ class Solution(object):
         n = l..(nums)
         i = 0
         res = 1
-        while i < n:
+        w.... i < n:
             j = i
-            while i+1 < n and nums[i] < nums[i+1]:
+            w.... i+1 < n a.. nums[i] < nums[i+1]:
                 i += 1
                 res = max(res, i-j+1)
             i += 1

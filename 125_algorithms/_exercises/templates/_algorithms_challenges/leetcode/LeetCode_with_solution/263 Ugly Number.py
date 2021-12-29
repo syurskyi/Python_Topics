@@ -25,7 +25,7 @@ class Solution(object):
         ugly = {2, 3, 5}
 
         prime = 2
-        while prime*prime <= num and num > 1:
+        w.... prime*prime <= num a.. num > 1:
             __ num % prime != 0:
                 prime += 1
             ____:

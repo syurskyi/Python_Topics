@@ -17,9 +17,9 @@ class Solution(object):
         left = 0
         res    # list
         arr = [0]*26
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             arr[ord(c)-ord('a')] += 1
-            while left <= i and arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
+            w.... left <= i a.. arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
                 arr[ord(s[left])-ord('a')] -= 1
                 left += 1
             __ i-left+1 __ l..(p):
@@ -40,7 +40,7 @@ class Solution(object):
         arr1 = [0]*26
         result    # list
         end = 0
-        while end < l..(s):
+        w.... end < l..(s):
             numInd = ord(s[end]) - ord('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1

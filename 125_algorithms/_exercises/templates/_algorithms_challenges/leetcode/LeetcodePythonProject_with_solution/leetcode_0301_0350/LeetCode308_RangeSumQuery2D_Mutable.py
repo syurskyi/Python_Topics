@@ -20,9 +20,9 @@ class NumMatrix_BinaryIndexTree_TLE(object):
         delta = val-self.nums[row][col]
         self.nums[row][col] = val
         i = 0
-        while i < m+1:
+        w.... i < m+1:
             j = 0
-            while j < n+1:
+            w.... j < n+1:
                 self.tree[i][j] += delta
                 j += j&(-1)
             i += i&(-i)
@@ -39,9 +39,9 @@ class NumMatrix_BinaryIndexTree_TLE(object):
     ___ sumHelper(self, row, col):
         sumVal = 0
         i = row
-        while i > 0:
+        w.... i > 0:
             j = col
-            while j > 0:
+            w.... j > 0:
                 sumVal += self.tree[i][j]
                 j -= j&(-j)
             i -= i&(-i)

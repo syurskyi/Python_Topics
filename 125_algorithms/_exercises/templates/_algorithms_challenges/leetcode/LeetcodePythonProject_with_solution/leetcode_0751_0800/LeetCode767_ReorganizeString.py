@@ -18,9 +18,9 @@ class Solution(object):
         ___ c, freq __ hashmap.items():
             heapq.heappush(heap, [-freq, c])
         res = ''
-        while heap:
+        w.... heap:
             freq1, c1 = heapq.heappop(heap)
-            __ res and res[-1] __ c1:
+            __ res a.. res[-1] __ c1:
                 r.. ''
             res += c1
             __ heap:

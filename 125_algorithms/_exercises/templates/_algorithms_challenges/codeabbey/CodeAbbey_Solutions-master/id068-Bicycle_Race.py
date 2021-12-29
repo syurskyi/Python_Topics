@@ -5,6 +5,6 @@ ___ findMeetup(meetups):
         distance,speedA,speedB = int(data[0]),int(data[1]),int(data[2])
         ETA = (distance / float(speedA + speedB))
         solution = ETA * speedA
-        answer.a..(str(solution))
+        answer.a..(s..(solution))
     print(' '.join(answer))
 findMeetup(input())

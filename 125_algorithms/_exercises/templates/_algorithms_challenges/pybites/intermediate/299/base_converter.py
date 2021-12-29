@@ -1,4 +1,4 @@
-___ convert(number: int, base: int = 2) -> str:
+___ convert(number: int, base: int = 2) -> s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:
@@ -11,12 +11,12 @@ ___ convert(number: int, base: int = 2) -> str:
     Returns:
         str: The returned value as a string
     """
-    __ (1 < base < 37) and (isi..(number, int)):
+    __ (1 < base < 37) a.. (isi..(number, int)):
         base_num = ""
-        while number>0:
+        w.... number>0:
             dig = int(number%base)
             __ dig<10:
-                base_num += str(dig)
+                base_num += s..(dig)
             ____:
                 base_num += chr(ord('A')+dig-10)  #Using uppercase letters
             number //= base

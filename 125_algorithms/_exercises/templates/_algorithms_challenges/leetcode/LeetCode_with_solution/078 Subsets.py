@@ -26,14 +26,14 @@ class Solution:
         :param S: a list of integer
         :return: a list of lists of integer
         """
-        S.sort()
+        S.s..()
         result    # list
         self.generate_subsets(S, [], result)
         r.. result
 
     ___ generate_subsets(self, S, current, result):
         result.a..(current)
-        ___ ind, val __ enumerate(S):
+        ___ ind, val __ e..(S):
             self.generate_subsets(S[ind+1:], current+[val], result)
 
 __ __name____"__main__":

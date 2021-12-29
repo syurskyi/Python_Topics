@@ -9,7 +9,7 @@ class Solution(object):
       r..
 
     ___ reverse(start, end, s):
-      while start < end:
+      w.... start < end:
         s[start], s[end] = s[end], s[start]
         start += 1
         end -= 1

@@ -32,7 +32,7 @@ class Solution:
         p = 1
         ___ j __ r..(l..(nums)):
             p *= nums[j]
-            while p >= k and i <= j:
+            w.... p >= k a.. i <= j:
                 p //= nums[i]
                 i += 1
 

@@ -8,7 +8,7 @@ class Solution(object):
     ans = "-" __ numerator * denominator < 0 ____ ""
     numerator = abs(numerator)
     denominator = abs(denominator)
-    ans += str(numerator / denominator)
+    ans += s..(numerator / denominator)
     __ numerator % denominator:
       ans += "."
     numerator = (numerator % denominator) * 10
@@ -16,13 +16,13 @@ class Solution(object):
       r.. ans
     d = {}
     res    # list
-    while True:
+    w... T...
       r = numerator % denominator
       v = numerator / denominator
       __ numerator __ d:
         idx = d[numerator]
         r.. ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
-      res.a..(str(v))
+      res.a..(s..(v))
       __ v __ 0:
         d[numerator] = l..(res) - 1
         numerator *= 10

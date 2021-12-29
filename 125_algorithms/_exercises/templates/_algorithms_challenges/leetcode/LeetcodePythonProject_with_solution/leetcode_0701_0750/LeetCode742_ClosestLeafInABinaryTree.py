@@ -21,17 +21,17 @@ class Solution(object):
         kNode = self.dfs(root, k, backMap)
         queue = [kNode]
         visited = set([kNode])
-        while queue:
+        w.... queue:
             curr = queue.pop(0)
-            __ n.. curr.left and n.. curr.right:
+            __ n.. curr.left a.. n.. curr.right:
                 r.. curr.val
-            __ curr.left and curr.left n.. __ visited:
+            __ curr.left a.. curr.left n.. __ visited:
                 queue.a..(curr.left)
                 visited.add(curr.left)
-            __ curr.right and curr.right n.. __ visited:
+            __ curr.right a.. curr.right n.. __ visited:
                 queue.a..(curr.right)
                 visited.add(curr.right)
-            __ curr __ backMap and backMap[curr] n.. __ visited:
+            __ curr __ backMap a.. backMap[curr] n.. __ visited:
                 queue.a..(backMap[curr])
                 visited.add(backMap[curr])
         r.. -1

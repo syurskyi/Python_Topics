@@ -17,11 +17,11 @@ class Solution(object):
         :type mat: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
         """
-        q = [(i, j) ___ i, row __ enumerate(mat) ___ j, val __ enumerate(row) __ val __ 0]
+        q = [(i, j) ___ i, row __ e..(mat) ___ j, val __ e..(row) __ val __ 0]
         ___ i, j __ q:  # iterator
             ___ d __ self.dirs:
                 i1, j1 = i+d[0], j+d[1]
-                __ 0 <= i1 < l..(mat) and 0 <= j1 < l..(mat[0]) and mat[i1][j1] > mat[i][j]+1:
+                __ 0 <= i1 < l..(mat) a.. 0 <= j1 < l..(mat[0]) a.. mat[i1][j1] > mat[i][j]+1:
                     mat[i1][j1] = mat[i][j]+1
                     q.a..((i1, j1))
 
@@ -52,7 +52,7 @@ class Solution_slow(object):
         n = l..(rooms[0])
         level = 0
         q = [(x, y)]
-        while q:
+        w.... q:
             l = l..(q)
             ___ idx __ xrange(l):
                 i, j = q[idx]
@@ -60,7 +60,7 @@ class Solution_slow(object):
                 ___ d __ self.dirs:
                     i_t = i+d[0]
                     j_t = j+d[1]
-                    __ 0 <= i_t < m and 0 <= j_t < n and rooms[i_t][j_t] != -1 and rooms[i_t][j_t] >= level+1:
+                    __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
                         q.a..((i_t, j_t))
 
             q = q[l:]
@@ -73,12 +73,12 @@ class Solution_slow(object):
         n = l..(rooms[0])
         q = deque()
         q.a..((x, y, 0))
-        while q:
+        w.... q:
             i, j, level = q.popleft()
             rooms[i][j] = m..(rooms[i][j], level)
             ___ d __ self.dirs:
                 i_t, j_t = i+d[0], j+d[1]
-                __ 0 <= i_t < m and 0 <= j_t < n and rooms[i_t][j_t] != -1 and rooms[i_t][j_t] >= level+1:
+                __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
                     q.a..((i_t, j_t, level+1))
 
 

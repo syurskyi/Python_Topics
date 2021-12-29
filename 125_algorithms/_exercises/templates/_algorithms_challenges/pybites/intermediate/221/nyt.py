@@ -5,7 +5,7 @@ DEFAULT_LIST = 'hardcover-nonfiction'
 
 URL_NON_FICTION = (f'https://api.nytimes.com/svc/books/v3/lists/current/'
                    f'{DEFAULT_LIST}.json?api-key={YOUR_KEY}')
-URL_FICTION = URL_NON_FICTION.replace('nonfiction', 'fiction')
+URL_FICTION = URL_NON_FICTION.r..('nonfiction', 'fiction')
 
 
 ___ get_best_seller_titles(url=URL_NON_FICTION):

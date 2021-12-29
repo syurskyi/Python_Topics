@@ -7,7 +7,7 @@ ___ convert_pybites_chars(text):
     temp = ''
     ___ letter __ text:
         __ letter.upper() __ PYBITES.upper():
-            __ letter.islower():
+            __ letter.isl..
                 temp += letter.upper()
             ____ letter.isupper():
                 temp += letter.lower()

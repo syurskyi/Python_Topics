@@ -15,7 +15,7 @@ class Solution:
 
             ps.a..(p)
 
-        ps.sort()
+        ps.s..()
 
         # 0: lb, 1: lt, 2:rb, 3: rt
         l01 = self.get_distance(ps[0], ps[1])

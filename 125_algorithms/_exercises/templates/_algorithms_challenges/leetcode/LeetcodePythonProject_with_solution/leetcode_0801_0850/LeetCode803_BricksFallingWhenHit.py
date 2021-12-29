@@ -13,7 +13,7 @@ class Solution(object):
         m, n = l..(grid), l..(grid[0])
         
         ___ dfs(i, j):
-            __ n.. (0<=i<m and 0<=j<n) o. grid[i][j]!=1:
+            __ n.. (0<=i<m a.. 0<=j<n) o. grid[i][j]!=1:
                 r.. 0
             res = 1
             grid[i][j] = 2
@@ -22,7 +22,7 @@ class Solution(object):
         
         # Check whether (i, j) is connected to Not Failling Bricks
         ___ is_connected(i, j):
-            r.. i__0 o. any([0<=x<m and 0<=y<n and grid[x][y]__2\
+            r.. i__0 o. any([0<=x<m a.. 0<=y<n a.. grid[x][y]__2\
                                 ___ x, y __ [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
         
         # Mark whether there is a brick at the each hit
@@ -38,7 +38,7 @@ class Solution(object):
         ___ k __ reversed(r..(l..(hits))):
             i, j = hits[k]
             grid[i][j] += 1
-            __ grid[i][j] __ 1 and is_connected(i, j):
+            __ grid[i][j] __ 1 a.. is_connected(i, j):
                 res[k] = dfs(i, j)-1
         r.. res
     

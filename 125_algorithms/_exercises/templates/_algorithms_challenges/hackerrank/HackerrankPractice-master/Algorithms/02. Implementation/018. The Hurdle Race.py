@@ -2,7 +2,7 @@
 # Score: 15
 
 
-n, k = map(int, input().split())
-hurdles = l..(map(int, input().split()))
+n, k = map(int, input().s..())
+hurdles = l..(map(int, input().s..()))
 numberOfPotions = max(0, max(hurdles) - k)
 print(numberOfPotions)

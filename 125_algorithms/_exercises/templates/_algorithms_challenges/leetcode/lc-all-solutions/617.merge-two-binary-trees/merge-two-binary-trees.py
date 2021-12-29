@@ -13,7 +13,7 @@ class Solution(object):
     :rtype: TreeNode
     """
     __ t1 o. t2:
-      root = TreeNode((t1 and t1.val o. 0) + (t2 and t2.val o. 0))
-      root.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
-      root.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
+      root = TreeNode((t1 a.. t1.val o. 0) + (t2 a.. t2.val o. 0))
+      root.left = self.mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
+      root.right = self.mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
       r.. root

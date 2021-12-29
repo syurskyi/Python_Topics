@@ -21,7 +21,7 @@ class Solution:
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            __ n.. (0 <= _x < n and 0 <= _y < n) o. ans[_x][_y] != 0:
+            __ n.. (0 <= _x < n a.. 0 <= _y < n) o. ans[_x][_y] != 0:
                 turn = (turn + 1) % l..(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]

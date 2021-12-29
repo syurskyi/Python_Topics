@@ -88,14 +88,14 @@ class Solution:
                 # for i in xrange(m, 0, -1):
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
                 k = 0
-                while k<m+1 and dp[k]!=True: k+= 1
+                w.... k<m+1 a.. dp[k]!=True: k+= 1
                 ___ i __ xrange(k, m+1):
                     dp[i] = True
             ____:
                 ___ i __ xrange(m, 0, -1):
-                    dp[i] = dp[i-1] and (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
+                    dp[i] = dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
 
-            dp[0] = dp[0] and pattern[j-1]__"*"  # !!, pattern no longer match the empty string
+            dp[0] = dp[0] a.. pattern[j-1]__"*"  # !!, pattern no longer match the empty string
 
 
         r.. dp[m]

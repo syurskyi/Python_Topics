@@ -29,7 +29,7 @@ class Solution:
             __ cnts[g] >= 0:
                 cows += 1
 
-        r.. TMPL.format(bulls, cows)
+        r.. TMPL.f..(bulls, cows)
 
 
 class Solution:
@@ -58,4 +58,4 @@ class Solution:
         ___ i __ r..(10):
             cows += m..(cnt_s[i], cnt_g[i])
 
-        r.. TMPL.format(bulls, cows)
+        r.. TMPL.f..(bulls, cows)

@@ -4,7 +4,7 @@ ___ wc(file_):
     f.close()
     char = l..(text)
     line = l..(text.splitlines())
-    word = l..(text.split())
+    word = l..(text.s..())
     r.. f'{line} {word} {char}'
 
 

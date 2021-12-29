@@ -5,7 +5,7 @@ class Solution:
         :type b: str
         :rtype: str
         """
-        __ n.. a and n.. b:
+        __ n.. a a.. n.. b:
             r.. ''
         __ n.. a:
             r.. b
@@ -21,30 +21,30 @@ class Solution:
         carry = 0
         zero = ord('0')
 
-        while i >= 0 and j >= 0:
+        w.... i >= 0 a.. j >= 0:
             carry += ord(a[i]) + ord(b[j]) - 2 * zero
-            ans[idx] = str(carry % 10)
+            ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
             i -= 1
             j -= 1
 
-        while i >= 0:
+        w.... i >= 0:
             carry += ord(a[i]) - zero
-            ans[idx] = str(carry % 10)
+            ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
             i -= 1
 
-        while j >= 0:
+        w.... j >= 0:
             carry += ord(b[j]) - zero
-            ans[idx] = str(carry % 10)
+            ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
             j -= 1
 
         __ carry:
-            ans[0] = str(carry)
+            ans[0] = s..(carry)
         ____:
             ans = ans[1:]
 

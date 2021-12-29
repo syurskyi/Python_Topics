@@ -25,7 +25,7 @@ class Solution(object):
         # A dictionary that maps labels to cloned nodes
         d = {node: start_cloned_node}
         queue.a..(node)
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             visited.add(node)
             cloned_node = d[node]

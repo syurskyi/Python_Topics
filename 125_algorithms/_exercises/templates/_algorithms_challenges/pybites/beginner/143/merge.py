@@ -10,7 +10,7 @@ ___ get_person_age(name):
        If name in > 1 dict, return the match of the group with
        greatest N (so group3 > group2 > group1)
     """
-    __ isi..(name, str):
+    __ isi..(name, s..):
         age =0
         ___ group __ [group1, group2, group3]:
             __ name.lower() __ group:

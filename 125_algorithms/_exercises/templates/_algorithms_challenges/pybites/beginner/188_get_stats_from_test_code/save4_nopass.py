@@ -5,7 +5,7 @@ url = 'https://bites-data.s3.us-east-2.amazonaws.com/testfiles_number_loc.txt'
 DATA = pd.read_csv(url, header=N..)
 
 
-___ get_all_line_counts(data: str = DATA) -> l..:
+___ get_all_line_counts(data: s.. = DATA) -> l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     values    # list

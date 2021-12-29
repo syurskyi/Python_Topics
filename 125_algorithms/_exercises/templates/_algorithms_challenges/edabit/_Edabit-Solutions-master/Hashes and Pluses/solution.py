@@ -4,7 +4,7 @@ ___ hash_plus_count(txt):
     index = 0
     output =[]
     check = ["#","+"]
-    while index < l..(check):
+    w.... index < l..(check):
         a = txt.c.. check[index])
         output.a..(a)
         index = index + 1

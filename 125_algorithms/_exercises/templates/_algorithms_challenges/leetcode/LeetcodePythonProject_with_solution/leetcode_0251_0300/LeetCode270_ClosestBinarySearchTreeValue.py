@@ -19,7 +19,7 @@ class Solution(object):
         :rtype: int
         """
         result= root.val
-        while root:
+        w.... root:
             __ abs(target - root.val) < abs(target-result):
                 result = root.val
             __ root.val > target:

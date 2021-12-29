@@ -55,7 +55,7 @@ ___ mark_islands(i, j, grid):
 
 
     ___ n_row,n_col __ ((i + 1,j),(i -1,j),(i,j + 1),(i,j-1)):
-        __ 0 <= n_row < l..(grid) and 0 <= n_col < l..(grid[0]) and grid[n_row][n_col] __ 1:
+        __ 0 <= n_row < l..(grid) a.. 0 <= n_col < l..(grid[0]) a.. grid[n_row][n_col] __ 1:
             mark_islands(n_row,n_col,grid)
 
 

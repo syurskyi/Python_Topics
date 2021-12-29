@@ -3,14 +3,14 @@
 
 
 # use two-pointers approach on a sorted array
-n, value = map(int, input().split())
-points = s..(l..(map(int, input().split())))
+n, value = map(int, input().s..())
+points = s..(l..(map(int, input().s..())))
 
 ans = 0
 i = 0
 j = 1
 
-while j < n:
+w.... j < n:
     __ points[j] - points[i] __ value:
         ans += 1
         j += 1

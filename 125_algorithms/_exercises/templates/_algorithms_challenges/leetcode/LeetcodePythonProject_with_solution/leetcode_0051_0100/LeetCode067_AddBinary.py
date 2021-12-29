@@ -11,7 +11,7 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
-        __ n.. a and n.. b: r.. ''
+        __ n.. a a.. n.. b: r.. ''
         __ n.. a: r.. b
         __ n.. b: r.. a
         __ l..(a) < l..(b):
@@ -23,16 +23,16 @@ class Solution(object):
         result = ''
         i1, i2 = length1-1, length2-1
         carry = False
-        while i2 >= 0:
+        w.... i2 >= 0:
             c1 = a[i1]
             c2 = b[i2]
-            __ c1 __ '0' and c2 __ '0':
+            __ c1 __ '0' a.. c2 __ '0':
                 __ carry:
                     result = '1' + result
                 ____:
                     result = '0' + result
                 carry = False
-            ____ c1 __ '1' and c2 __ '1':
+            ____ c1 __ '1' a.. c2 __ '1':
                 __ carry:
                     result = '1' + result
                 ____:

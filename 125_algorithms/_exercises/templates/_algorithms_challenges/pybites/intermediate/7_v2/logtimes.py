@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ os
 _______ urllib.request
 
@@ -31,7 +31,7 @@ ___ convert_to_datetime(line):
 
     date = values[1]
 
-    r.. datetime.strptime(date,"%Y-%m-%dT%H:%M:%S")
+    r.. d__.strptime(date,"%Y-%m-%dT%H:%M:%S")
 
 
 ___ time_between_shutdowns(loglines):

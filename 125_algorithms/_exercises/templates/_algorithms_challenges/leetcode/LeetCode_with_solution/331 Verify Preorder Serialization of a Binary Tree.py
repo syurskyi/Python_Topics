@@ -41,9 +41,9 @@ class Solution(object):
         :type preorder: str
         :rtype: bool
         """
-        stk = preorder.split(',')
+        stk = preorder.s..(',')
         child_cnt = 0
-        while stk:
+        w.... stk:
             __ stk[-1] __ '#':
                 stk.pop()
                 child_cnt += 1
@@ -55,16 +55,16 @@ class Solution(object):
                 stk.pop()
                 child_cnt += 1
 
-        r.. n.. stk and child_cnt __ 1
+        r.. n.. stk a.. child_cnt __ 1
 
     ___ isValidSerializationSpace(self, preorder):
         """
         :type preorder: str
         :rtype: bool
         """
-        stk = preorder.split(',')
+        stk = preorder.s..(',')
         child_stk    # list
-        while stk:
+        w.... stk:
             __ stk[-1] __ '#':
                 child_stk.a..(stk.pop())  # a counter is enough
             ____:
@@ -76,7 +76,7 @@ class Solution(object):
                 except IndexError:
                     r.. False
 
-        r.. n.. stk and l..(child_stk) __ 1
+        r.. n.. stk a.. l..(child_stk) __ 1
 
 
 __ __name__ __ "__main__":

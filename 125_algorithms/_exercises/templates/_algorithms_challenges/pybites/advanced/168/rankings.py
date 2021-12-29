@@ -4,7 +4,7 @@ _______ heapq
 
 
 bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
-names: List[str] = [
+names: List[s..] = [
     "snow",
     "natalia",
     "alex",
@@ -29,7 +29,7 @@ class Ninja:
     support <, >, and ==, based on bites
     print out in the following format: [469] bob
     """
-    name: str 
+    name: s..
     bites: int
 
     

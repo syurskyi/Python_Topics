@@ -1,5 +1,5 @@
 _______ textwrap
-_______ itertools
+_______ i..
 
 COL_WIDTH = 20
 
@@ -12,12 +12,12 @@ ___ text_to_columns(text):
        See also the tests for more info."""
 
 
-    paragraphs = text.split('\n\n')
+    paragraphs = text.s..('\n\n')
     number_of_columns = l..(paragraphs)
 
     l    # list
     ___ paragraph __ paragraphs:
-        paragraph = paragraph.strip()
+        paragraph = paragraph.s..
         r = textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=True)
         l.a..(r)
     
@@ -25,7 +25,7 @@ ___ text_to_columns(text):
     
 
     result    # list
-    ___ p __ itertools.zip_longest(*l,fillvalue=''):
+    ___ p __ i...zip_longest(*l,fillvalue=''):
         
         line    # list
         ___ value __ p:

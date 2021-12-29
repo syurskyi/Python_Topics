@@ -68,7 +68,7 @@ class DisjointSet():
         r.. self.pi[x]
 
     ___ is_union(self, x, y):
-        __ x __ self.pi and y __ self.pi:
+        __ x __ self.pi a.. y __ self.pi:
             r.. self.root(x) __ self.root(y)
 
         r.. False
@@ -108,7 +108,7 @@ class Solution_dfs:
                 circle = self.dfs(G, k, N.., set([k]), [k], visited)
                 __ circle:
                     ___ p, q __ reversed(edges):
-                        __ p __ circle and q __ circle:
+                        __ p __ circle a.. q __ circle:
                             r.. [p, q]
 
         raise

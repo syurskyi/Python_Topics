@@ -52,14 +52,14 @@ class Solution:
                     q.a..((i, j))
 
         t = -1
-        while q:
+        w.... q:
             t += 1
             cur_q    # list
             ___ i, j __ q:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < m and 0 <= J < n and grid[I][J] __ 1:
+                    __ 0 <= I < m a.. 0 <= J < n a.. grid[I][J] __ 1:
                         grid[I][J] = 2
                         cur_q.a..((I, J))
             q = cur_q

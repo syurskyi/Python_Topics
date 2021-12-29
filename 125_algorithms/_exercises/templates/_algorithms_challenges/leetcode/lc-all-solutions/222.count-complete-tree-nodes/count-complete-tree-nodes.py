@@ -8,14 +8,14 @@
 class Solution(object):
   ___ getHeight(self, root):
     height = 0
-    while root:
+    w.... root:
       height += 1
       root = root.left
     r.. height
 
   ___ countNodes(self, root):
     count = 0
-    while root:
+    w.... root:
       l, r = map(self.getHeight, (root.left, root.right))
       __ l __ r:
         count += 2 ** l

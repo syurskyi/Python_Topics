@@ -67,7 +67,7 @@ class Solution:
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle
-            __ u __ nodes and v __ nodes and self.dfs(nodes, u, v, set()):
+            __ u __ nodes a.. v __ nodes a.. self.dfs(nodes, u, v, set()):
                 r.. [u, v]
 
             nodes[u].add(v)

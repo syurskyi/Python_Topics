@@ -1,6 +1,6 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
-Tweet = namedtuple('Tweet', 'text polarity')
+Tweet = n..('Tweet', 'text polarity')
 
 # polarity < 0 = negative, > 0 = positive
 # long strings and pep8: you can wrap strings in () to reduce line length
@@ -31,7 +31,7 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=True):
     """Filter the tweets by polarity score, receives keep_positive bool which
        determines what to keep. Returns a list of filtered tweets."""
     r.. [tweet ___ tweet __ tweets __
-            (keep_positive and tweet.polarity > 0) o. (n.. keep_positive and tweet.polarity < 0)]
+            (keep_positive a.. tweet.polarity > 0) o. (n.. keep_positive a.. tweet.polarity < 0)]
 
 
 ___ order_tweets_by_polarity(tweets, positive_highest=True):

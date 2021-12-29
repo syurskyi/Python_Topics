@@ -12,21 +12,21 @@ class Solution(object):
         __ n.. s:
             r.. True
         i, j = 0, l..(s)-1
-        while i < j and s[i] __ s[j]:
+        w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:
             r.. True
         i0, j0 = i, j
         i += 1
-        while i < j and s[i] __ s[j]:
+        w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:
             r.. True
         i, j = i0, j0
         j -= 1
-        while i < j and s[i] __ s[j]:
+        w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:

@@ -36,7 +36,7 @@ class Solution(object):
             __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
-        while queue:
+        w.... queue:
             cur = queue.pop(0)
             __ cur[0] __ endWord:
                 r.. cur[1] + 1
@@ -47,7 +47,7 @@ class Solution(object):
 
     ___ get_adjacent(self, word1):
         res    # list
-        ___ i, e __ enumerate(word1):
+        ___ i, e __ e..(word1):
             ___ letter __ self.letters:
                 word = word1[:i] + letter + word1[i + 1:]
                 __ word __ self.word_dict:

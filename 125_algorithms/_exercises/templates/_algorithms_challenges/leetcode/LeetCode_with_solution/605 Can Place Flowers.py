@@ -32,8 +32,8 @@ class Solution:
 
         ___ i __ r..(l..(flowerbed)):
             __ (
-                flowerbed[i] != 1 and
-                (i + 1 >= l..(flowerbed) o. flowerbed[i+1] != 1) and
+                flowerbed[i] != 1 a..
+                (i + 1 >= l..(flowerbed) o. flowerbed[i+1] != 1) a..
                 (i - 1 < 0 o. flowerbed[i - 1] != 1)
             ):
                 n -= 1

@@ -44,7 +44,7 @@ class Solution(object):
             __ i % 5 __ 0:
                 cur += "Buzz"
             __ n.. cur:
-                cur = str(i)
+                cur = s..(i)
 
             ret.a..(cur)
 

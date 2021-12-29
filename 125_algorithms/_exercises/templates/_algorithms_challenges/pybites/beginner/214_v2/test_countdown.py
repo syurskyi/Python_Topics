@@ -1,6 +1,6 @@
 _______ pytest
 
-____ itertools _______ islice
+____ i.. _______ islice
 
 ____ countdown _______ countdown
 

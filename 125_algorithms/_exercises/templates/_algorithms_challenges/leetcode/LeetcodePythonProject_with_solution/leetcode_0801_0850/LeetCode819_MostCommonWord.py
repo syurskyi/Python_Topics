@@ -20,14 +20,14 @@ class Solution(object):
             __ n.. (ord('a') <= ord(c) <= ord('z') o.\
                 ord('A') <= ord(c) <= ord('Z')):
                 word = paragraph[i:j].lower()
-                __ word and word n.. __ banned:
+                __ word a.. word n.. __ banned:
                     hashmap[word] = hashmap.get(word, 0)+1
                     __ hashmap[word] > freq:
                         res = word
                         freq = hashmap[word]
                 i = j+1
         word = paragraph[i:].lower()
-        __ word and word n.. __ banned:
+        __ word a.. word n.. __ banned:
             hashmap[word] = hashmap.get(word, 0)+1
             __ hashmap[word] > freq:
                 res = word

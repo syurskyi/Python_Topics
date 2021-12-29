@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[str]
         """
         res    # list
-        words.sort(key=l..)
+        words.s..(key=l..)
         hashset = set()
         ___ word __ words:
             __ self.helper(hashset, word):

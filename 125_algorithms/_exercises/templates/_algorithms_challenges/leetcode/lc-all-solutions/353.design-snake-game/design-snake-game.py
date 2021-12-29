@@ -41,7 +41,7 @@ class SnakeGame(object):
 
     self.snake.appendleft((ni, nj))
 
-    __ self.food and [ni, nj] __ self.food[0]:
+    __ self.food a.. [ni, nj] __ self.food[0]:
       self.score += 1
       self.food.popleft()
     ____:

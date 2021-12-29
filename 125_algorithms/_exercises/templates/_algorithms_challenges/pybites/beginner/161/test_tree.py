@@ -11,14 +11,14 @@ ___ test_only_files(tmp_path):
 
 ___ test_only_dirs(tmp_path):
     ___ i __ r..(5):
-        (tmp_path / str(i)).mkdir()
+        (tmp_path / s..(i)).mkdir()
     ... count_dirs_and_files(tmp_path) __ (5, 0)
 
 
 ___ test_files_and_dirs(tmp_path):
     ___ i __ r..(10):
         __ i % 2 __ 0:
-            target_dir = tmp_path / str(i)
+            target_dir = tmp_path / s..(i)
             target_dir.mkdir()
             ___ j __ r..(5):
                 path = target_dir / f'{j}.txt'

@@ -20,10 +20,10 @@ class Solution(object):
         hull = collections.deque()
         ans = float('-inf')
         ___ j __ r..(k-1, n):
-            while l..(hull) >= 2 and d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
+            w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
                 hull.pop()
             hull.a..(j-k+1)
-            while l..(hull) >= 2 and d(hull[0], hull[1]-1) <= d(hull[0], j):
+            w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j):
                 hull.popleft()
             ans = max(ans, d(hull[0], j))
         r.. ans
@@ -35,7 +35,7 @@ class Solution(object):
         :rtype: float
         """
         l, r = -float(2**31), float(2**31)
-        while r-l > 10**-5:
+        w.... r-l > 10**-5:
             mid = (l+r)/2.0
             __ self.check(nums, k, mid):
                 l = mid

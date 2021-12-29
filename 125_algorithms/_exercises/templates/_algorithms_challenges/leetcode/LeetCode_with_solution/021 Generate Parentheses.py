@@ -25,7 +25,7 @@ class Solution:
         :param left: number of left parenthesis remaining
         :param right: number of right parenthesis remaining
         """
-        __ left __ 0 and right __ 0:
+        __ left __ 0 a.. right __ 0:
             result.a..(cur)
             r..
 

@@ -32,10 +32,10 @@ class Solution:
         __ num // 10 __ 0:
             r.. True
 
-        s = str(num)
+        s = s..(num)
         left, right = 0, l..(s) - 1
 
-        while left < right:
+        w.... left < right:
             __ s[left] != s[right]:
                 r.. False
 

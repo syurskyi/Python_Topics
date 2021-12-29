@@ -13,10 +13,10 @@ class Solution(object):
     dummy = ListNode(-1)
     dummy.next = head
     p = dummy
-    while p.next:
-      __ p.next.next and p.next.val __ p.next.next.val:
+    w.... p.next:
+      __ p.next.next a.. p.next.val __ p.next.next.val:
         z = p.next
-        while z and z.next and z.val __ z.next.val:
+        w.... z a.. z.next a.. z.val __ z.next.val:
           z = z.next
         p.next = z.next
       ____:

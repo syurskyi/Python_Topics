@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 _______ os
 ____ pathlib _______ Path
 _______ pickle
@@ -12,7 +12,7 @@ PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
 class MovieRented(NamedTuple):
-    title: str
+    title: s..
     price: int
     date: date
 

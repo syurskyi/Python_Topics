@@ -23,12 +23,12 @@ class Solution(object):
   ___ minSteps(self, n):
     ___ factor(n):
       d = 2
-      while d * d <= n:
-        while n % d __ 0:
+      w.... d * d <= n:
+        w.... n % d __ 0:
           n /= d
-          yield d
+          y.. d
         d += 1
       __ n > 1:
-        yield n
+        y.. n
 
     r.. s..(factor(n))

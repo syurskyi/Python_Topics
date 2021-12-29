@@ -1,4 +1,4 @@
-_______ datetime
+_______ d__
 
 _______ pytest
 
@@ -20,12 +20,12 @@ ___ test_for_correct_return_of_hl_2015(high_low):
 ___ test_high_hl_2015(high_low):
     high = high_low[0]
     ... high.ID __ "USW00014853"
-    ... high.Date __ datetime.date(2015, 7, 29)
+    ... high.Date __ d__.date(2015, 7, 29)
     ... high.Value __ 36.1
 
 
 ___ test_low_hl_2015(high_low):
     low = high_low[1]
     ... low.ID __ "USW00094889"
-    ... low.Date __ datetime.date(2015, 2, 20)
+    ... low.Date __ d__.date(2015, 2, 20)
     ... low.Value __ -34.3

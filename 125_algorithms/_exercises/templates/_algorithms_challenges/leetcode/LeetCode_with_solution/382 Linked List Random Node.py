@@ -47,7 +47,7 @@ class Solution(object):
         ret = self.head
         cur = self.head.next
         idx = 1
-        while cur:
+        w.... cur:
             __ random.randrange(0, idx+1) __ 0:
                 ret = cur
             cur = cur.next

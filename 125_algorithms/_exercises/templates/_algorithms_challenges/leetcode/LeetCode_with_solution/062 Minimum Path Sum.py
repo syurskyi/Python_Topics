@@ -26,7 +26,7 @@ class Solution:
         # dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
         ___ i __ xrange(row_cnt):
             ___ j __ xrange(col_cnt):
-                __ i__0 and j__0:
+                __ i__0 a.. j__0:
                     dp[i][j] = grid[i][j]
                 ____ i__0:
                     dp[i][j] = dp[i][j-1]+grid[i][j]

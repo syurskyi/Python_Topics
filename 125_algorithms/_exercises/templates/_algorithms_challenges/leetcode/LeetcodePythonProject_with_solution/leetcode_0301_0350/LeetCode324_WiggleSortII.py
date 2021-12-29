@@ -6,7 +6,7 @@ class Solution(object):
         left = 0
         i = 0
         right = n-1
-        while i <= right:
+        w.... i <= right:
             __ nums[self.newIndex(i, n)] > median:
                 nums[self.newIndex(left, n)], nums[self.newIndex(i, n)] =\
                 nums[self.newIndex(i, n)], nums[self.newIndex(left, n)]
@@ -27,7 +27,7 @@ class Solution(object):
         lo = 0
         hi = l..(nums)-1
         k = l..(nums)-k
-        while lo < hi:
+        w.... lo < hi:
             j = self.partition(nums, lo, hi)
             __ j < k:
                 lo = j+1
@@ -39,10 +39,10 @@ class Solution(object):
     
     ___ partition(self, nums, lo, hi):
         i, j = lo+1, hi
-        while True:
-            while i < hi and nums[i] <= nums[lo]:
+        w... T...
+            w.... i < hi a.. nums[i] <= nums[lo]:
                 i += 1
-            while j > lo and nums[lo] <= nums[j]:
+            w.... j > lo a.. nums[lo] <= nums[j]:
                 j -= 1
             __ i >= j:
                 break
@@ -57,7 +57,7 @@ class Solution(object):
             nums[i], nums[ind] = nums[ind], nums[i]
     
     ___ wiggleSortWithSorting(self, nums):
-        nums.sort()
+        nums.s..()
         half = l..(nums[::2])-1
         nums[::2], nums[1::2] = nums[half::-1], nums[:half:-1]
     

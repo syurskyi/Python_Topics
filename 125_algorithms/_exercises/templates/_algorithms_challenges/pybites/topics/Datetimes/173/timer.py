@@ -1,12 +1,12 @@
-____ datetime _______ datetime, timedelta
+____ d__ _______ d__, t..
 _______ re
 
-NOW = datetime(year=2019, month=2, day=6,
+NOW = d__ y.._2019,  m.._2,  d.._6,
                hour=22, minute=0, second=0)
 
 
-___ add_todo(delay_time: str, task: str,
-             start_time: datetime = NOW) -> str:
+___ add_todo(delay_time: s.., task: s..,
+             start_time: d__ = NOW) -> s..:
     """
     Add a todo list item in the future with a delay time.
 
@@ -33,7 +33,7 @@ ___ add_todo(delay_time: str, task: str,
             seconds = int(timein[0:-1])
         ____:
             seconds = int(timein)
-    scheduled_dt = NOW + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
+    scheduled_dt = NOW + t..(days=days, hours=hours, minutes=minutes, seconds=seconds)
     r.. f'{task} @ {scheduled_dt}'
 
 

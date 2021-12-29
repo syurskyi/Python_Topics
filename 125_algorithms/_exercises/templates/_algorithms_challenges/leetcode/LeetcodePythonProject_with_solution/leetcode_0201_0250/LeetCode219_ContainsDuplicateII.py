@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: bool
         """
         hashmap = {}
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ num n.. __ hashmap o. i - hashmap[num] > k:
                 hashmap[num] = i
             ____:

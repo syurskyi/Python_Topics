@@ -15,7 +15,7 @@ class Solution(object):
             ___ j __ r..(i+1, m):
                 counter = 0
                 ___ k __ r..(n):
-                    __ grid[i][k] __ 1 and grid[j][k] __ 1:
+                    __ grid[i][k] __ 1 a.. grid[j][k] __ 1:
                         counter += 1
                 __ counter > 0:
                     res += counter*(counter-1)//2

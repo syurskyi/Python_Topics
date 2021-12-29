@@ -28,7 +28,7 @@ class Domain:
         email_domain = re.findall(r'@(.*\.[a-z]+)', email)
         r.. Domain(email_domain[0])
 
-    ___ __str__(self) -> str:
+    ___ __str__(self) -> s..:
         r.. f'{self.name}'
 
 print(Domain.parse_url('http://www.khooville.com'))

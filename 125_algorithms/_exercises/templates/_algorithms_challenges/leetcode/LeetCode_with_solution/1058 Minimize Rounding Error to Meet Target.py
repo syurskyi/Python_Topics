@@ -39,7 +39,7 @@ _______ math
 
 
 class Solution:
-    ___ minimizeError(self, prices: List[str], target: int) -> str:
+    ___ minimizeError(self, prices: List[s..], target: int) -> s..:
         """
         to determine possible, floor all or ceil all
 
@@ -55,7 +55,7 @@ class Solution:
             e - math.floor(e)
             ___ e __ A
         ]
-        errors.sort(r.._T..
+        errors.s..(r.._T..
         ret = 0
         remain = target - f_sum
         ___ err __ errors:

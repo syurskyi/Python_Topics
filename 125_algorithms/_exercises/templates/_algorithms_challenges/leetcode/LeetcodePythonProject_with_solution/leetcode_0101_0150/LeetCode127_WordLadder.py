@@ -17,7 +17,7 @@ class Solution(object):
         visited = set([beginWord])
         queue = [beginWord]
         length = 0
-        while queue:
+        w.... queue:
             n = l..(queue)
             length += 1
             ___ _ __ r..(n):
@@ -34,7 +34,7 @@ class Solution(object):
     ___ getNext(self, word, wordSet):
         chars = 'abcdefghijklmnopqrstuvwxyz'
         res    # list
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             ___ c0 __ chars:
                 __ c != c0:
                     word0 = word[:i]+c0+word[i+1:]

@@ -28,7 +28,7 @@ class Solution:
         `A` will stay at `m-1`th node
         """
         A = dummy = ListNode(-1, head)
-        while m > 1:
+        w.... m > 1:
             m -= 1
             A = A.next
 
@@ -38,7 +38,7 @@ class Solution:
         """
         B = cur = A.next
         pre = nxt = N..
-        while n >= 0:
+        w.... n >= 0:
             n -= 1
             nxt = B.next
             B.next = pre

@@ -11,18 +11,18 @@ class Solution(object):
         :type worker: List[int]
         :rtype: int
         """
-        arr = [[d, p] ___ d, p __ zip(difficulty, profit)]
-        arr.sort()
+        arr = [[d, p] ___ d, p __ z..(difficulty, profit)]
+        arr.s..()
         p0 = 0
         ___ i __ r..(l..(arr)):
             p0 = max(p0, arr[i][1])
             arr[i][1] = p0
         res = 0
-        worker.sort()
+        worker.s..()
         i = 0
         maxProfit = 0
         ___ w __ worker:
-            while i < l..(arr) and arr[i][0] <= w:
+            w.... i < l..(arr) a.. arr[i][0] <= w:
                 maxProfit = max(maxProfit, arr[i][1])
                 i += 1
             res += maxProfit

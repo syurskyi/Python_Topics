@@ -14,15 +14,15 @@ class Solution(object):
     ___ addTwoNumbers(self, l1, l2):
         stack1    # list
         stack2    # list
-        while l1:
+        w.... l1:
             stack1.a..(l1.val)
             l1 = l1.next
-        while l2:
+        w.... l2:
             stack2.a..(l2.val)
             l2 = l2.next
         carry = 0
         nextNode = N..
-        while stack1 and stack2:
+        w.... stack1 a.. stack2:
             v1, v2 = stack1.pop(), stack2.pop()
             val = v1 + v2 + carry
             __ val >= 10:
@@ -33,9 +33,9 @@ class Solution(object):
             node = ListNode(val)
             node.next = nextNode
             nextNode = node
-        __ stack2 and n.. stack1:
+        __ stack2 a.. n.. stack1:
             stack1, stack2 = stack2, stack1
-        while stack1:
+        w.... stack1:
             val = stack1.pop() + carry
             __ val >= 10:
                 val -= 10

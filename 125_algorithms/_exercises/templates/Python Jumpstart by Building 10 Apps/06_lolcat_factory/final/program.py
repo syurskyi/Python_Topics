@@ -25,7 +25,7 @@ ___ get_or_create_output_folder():
     full_path  os.path.join(base_folder, folder)
 
     __ n.. os.path.exists(full_path) o. n.. os.path.isdir(full_path):
-        print('Creating new directory at {}'.format(full_path))
+        print('Creating new directory at {}'.f..(full_path))
         os.mkdir(full_path)
 
     r.. full_path
@@ -35,7 +35,7 @@ ___ download_cats(folder):
     print('Contacting server to download cats...')
     cat_count  8
     ___ i __ r..(1, cat_count + 1):
-        name  'lolcat_{}'.format(i)
+        name  'lolcat_{}'.f..(i)
         print('Downloading cat ' + name)
         cat_service.get_cat(folder, name)
 

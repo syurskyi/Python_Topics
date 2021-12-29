@@ -12,7 +12,7 @@ class Solution(object):
         r..
 
       ___ i __ r..(start, l..(nums)):
-        __ i > start and nums[i] __ nums[i - 1]:
+        __ i > start a.. nums[i] __ nums[i - 1]:
           continue
         __ target - nums[i] < 0:
           r.. 0
@@ -23,7 +23,7 @@ class Solution(object):
           path.pop()
           visited.discard(i)
 
-    candidates.sort()
+    candidates.s..()
     res    # list
     visited = set([])
     dfs(candidates, target, 0, visited, [], res)

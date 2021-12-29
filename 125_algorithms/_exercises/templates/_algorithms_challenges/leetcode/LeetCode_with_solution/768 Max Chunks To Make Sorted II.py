@@ -44,7 +44,7 @@ class Solution:
         """
         A = s..(arr)
         hm = defaultdict(deque)
-        ___ i, e __ enumerate(A):
+        ___ i, e __ e..(A):
             hm[e].a..(i)
 
         proxy    # list
@@ -53,7 +53,7 @@ class Solution:
 
         ret = 0
         cur_max_idx = 0
-        ___ i, e __ enumerate(proxy):
+        ___ i, e __ e..(proxy):
             cur_max_idx = max(cur_max_idx, e)
             __ cur_max_idx __ i:
                 ret += 1

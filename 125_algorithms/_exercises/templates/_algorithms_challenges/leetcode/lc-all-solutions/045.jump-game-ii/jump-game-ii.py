@@ -7,7 +7,7 @@ class Solution(object):
     pos = 0
     ans = 0
     bound = l..(nums)
-    while pos < l..(nums) - 1:
+    w.... pos < l..(nums) - 1:
       dis = nums[pos]
       farthest = posToFarthest = 0
       ___ i __ r..(pos + 1, m..(pos + dis + 1, bound)):

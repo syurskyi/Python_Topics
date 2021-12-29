@@ -20,7 +20,7 @@ class Solution(object):
             r.. True
         node1 = head
         node2 = head
-        while node2 and node2.next:
+        w.... node2 a.. node2.next:
             node1 = node1.next
             node2 = node2.next
             __ node2.next:
@@ -29,14 +29,14 @@ class Solution(object):
         p1 = mid
         p2 = mid.next
         p1.next = N..
-        while p1 and p2:
+        w.... p1 a.. p2:
             nextNode = p2.next
             p2.next = p1
             p1 = p2
             p2 = nextNode
         node1 = head
         node2 = p1
-        while node1 and node2:
+        w.... node1 a.. node2:
             __ node1.val != node2.val:
                 r.. False
             node1 = node1.next

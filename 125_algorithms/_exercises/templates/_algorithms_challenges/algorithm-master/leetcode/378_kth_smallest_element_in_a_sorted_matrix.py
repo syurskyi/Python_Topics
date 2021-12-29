@@ -16,7 +16,7 @@ class Solution:
         ___ x __ r..(l..(G)):
             heappush(heap, (G[x][0], x, 0))
 
-        while heap:
+        w.... heap:
             a, x, y = heappop(heap)
 
             k -= 1

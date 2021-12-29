@@ -18,7 +18,7 @@ class Solution(object):
         r.. True
       left = dfs(root.left, root.val)
       right = dfs(root.right, root.val)
-      __ left and right:
+      __ left a.. right:
         self.count += 1
         __ root.val __ pv:
           r.. True

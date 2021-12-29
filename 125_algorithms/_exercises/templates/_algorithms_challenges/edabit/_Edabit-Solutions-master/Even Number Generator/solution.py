@@ -3,7 +3,7 @@ ___ find_even_nums(num):
         r.. []
     index = 2
     output    # list
-    while index <= num:
+    w.... index <= num:
         __ index % 2 __ 0:
             output.a..(index)
         index = index + 1

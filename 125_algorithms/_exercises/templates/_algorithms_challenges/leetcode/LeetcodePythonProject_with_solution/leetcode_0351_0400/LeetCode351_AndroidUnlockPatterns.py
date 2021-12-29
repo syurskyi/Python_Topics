@@ -27,7 +27,7 @@ class Solution(object):
         path.add(curr)
         result = 0
         ___ to __ r..(1, 10):
-            __ to n.. __ path and (self.skip[curr][to]__0 o. self.skip[curr][to] __ path):
+            __ to n.. __ path a.. (self.skip[curr][to]__0 o. self.skip[curr][to] __ path):
                 result += self.helper(path, to, remain-1)
         path.remove(curr)
         r.. result

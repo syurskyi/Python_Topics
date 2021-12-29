@@ -38,14 +38,14 @@ class Solution:
         # path[i][j] = path[i-1][j] + path[i][j-1]
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ i__0 and j__0:
+                __ i__0 a.. j__0:
                     continue
                 __ i__0:
                     path[i][j] = path[i][j-1] __ obstacleGrid[i][j-1]__0 ____ 0
                 ____ j__0:
                     path[i][j] = path[i-1][j] __ obstacleGrid[i-1][j]__0 ____ 0
                 ____:
-                    __ obstacleGrid[i][j-1]__0 and obstacleGrid[i-1][j]__0:
+                    __ obstacleGrid[i][j-1]__0 a.. obstacleGrid[i-1][j]__0:
                         path[i][j] = path[i-1][j]+path[i][j-1]
                     ____ obstacleGrid[i][j-1]__0:
                         path[i][j] = path[i][j-1]

@@ -12,16 +12,16 @@ class ConnectGame:
 
         self.width = l..(self.board[0])
         self.height = l..(self.board)
-        ... self.width > 0 and self.height > 0
+        ... self.width > 0 a.. self.height > 0
 
         ___ l __ self.board:
             ... l..(l) __ self.width
 
     ___ valid(self, x, y):
-        r.. x >= 0 and x < self.width and y >= 0 and y < self.height
+        r.. x >= 0 a.. x < self.width a.. y >= 0 a.. y < self.height
 
     ___ make_board(self, lines):
-        r.. ["".join(l.split()) ___ l __ lines.splitlines()]
+        r.. ["".join(l.s..()) ___ l __ lines.splitlines()]
 
     ___ player_reach_dest(self, player, x, y):
         __ player __ self.black:

@@ -19,5 +19,5 @@ class Solution:
 
   ___ recoverTree(self, root):
     self.findBadNode(root)
-    __ self.n1 __ n.. N.. and self.n2 __ n.. N..
+    __ self.n1 __ n.. N.. a.. self.n2 __ n.. N..
       self.n1.val, self.n2.val = self.n2.val, self.n1.val

@@ -7,12 +7,12 @@ ___ triangle(calculations):
         maxNum = max(int(a),int(b),int(c))
 
         ___ x __ [a,b,c]:
-            __ int(x) != minNum and int(x) != maxNum:
+            __ int(x) != minNum a.. int(x) != maxNum:
                 midNum = x
         a,b,c = minNum, midNum, maxNum
         __ (a+b) > c:
-            answer.a..(str('1'))
+            answer.a..(s..('1'))
         ____:
-            answer.a..(str('0'))
+            answer.a..(s..('0'))
     print(' '.join(answer))
 triangle(input())

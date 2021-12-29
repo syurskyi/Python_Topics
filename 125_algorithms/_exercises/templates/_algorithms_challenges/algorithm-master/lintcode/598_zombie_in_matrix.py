@@ -26,15 +26,15 @@ class Solution:
                 __ grid[x][y] __ self.ZOMBIE:
                     queue.a..((x, y))
 
-        while queue:
+        w.... queue:
             days += 1
             _queue    # list
             ___ x, y __ queue:
                 ___ dx, dy __ vector:
                     _x = x + dx
                     _y = y + dy
-                    __ 0 <= _x < m and 0 <= _y < n \
-                            and grid[_x][_y] __ self.PEOPLE:
+                    __ 0 <= _x < m a.. 0 <= _y < n \
+                            a.. grid[_x][_y] __ self.PEOPLE:
                         grid[_x][_y] = self.ZOMBIE
                         _queue.a..((_x, _y))
             queue = _queue

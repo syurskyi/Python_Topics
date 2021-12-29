@@ -29,9 +29,9 @@ class Solution:
 
         pre = dummy
         the_other = l2
-        while pre and pre.next:
+        w.... pre a.. pre.next:
             cur = pre.next
-            __ the_other and cur.val>the_other.val:
+            __ the_other a.. cur.val>the_other.val:
                 # insert
                 temp = the_other.next
                 pre.next, the_other.next = the_other, cur

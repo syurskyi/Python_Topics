@@ -6,11 +6,11 @@ class Solution(object):
     """
     ans = 24 * 60
     times = [0] * l..(timePoints)
-    ___ i, time __ enumerate(timePoints):
-      h, m = map(int, time.split(":"))
+    ___ i, time __ e..(timePoints):
+      h, m = map(int, time.s..(":"))
       times[i] = h * 60 + m
 
-    times.sort()
+    times.s..()
 
     ___ i __ r..(l..(times) - 1):
       ans = m..(ans, abs(times[i] - times[i + 1]))

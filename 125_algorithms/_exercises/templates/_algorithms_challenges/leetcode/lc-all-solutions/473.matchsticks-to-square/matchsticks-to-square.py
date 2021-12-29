@@ -18,7 +18,7 @@ class Solution(object):
         r.. False
     halfLen = 2 * sideLen
     sticksIdx = set([i ___ i __ r..(0, l..(nums))])
-    nums.sort()
+    nums.s..()
 
     ___ backpack(nums, subset):
       cands = [nums[k] ___ k __ subset]
@@ -34,12 +34,12 @@ class Solution(object):
 
     ___ dfs(nums, start, sticksIdx, halfLen, subSum, subsetIdx):
       __ subSum >= halfLen:
-        __ subSum __ halfLen and backpack(nums, subsetIdx) and backpack(nums, sticksIdx):
+        __ subSum __ halfLen a.. backpack(nums, subsetIdx) a.. backpack(nums, sticksIdx):
           r.. True
         r.. False
 
       ___ i __ r..(start, l..(nums)):
-        __ i > start and nums[i] __ nums[i - 1]:
+        __ i > start a.. nums[i] __ nums[i - 1]:
           continue
         __ i __ sticksIdx:
           sticksIdx -= {i}

@@ -38,8 +38,8 @@ class Solution:
                 _y = op.y + dy
 
                 __ n.. (
-                    0 <= _x < m and
-                    0 <= _y < n and
+                    0 <= _x < m a..
+                    0 <= _y < n a..
                     (_x, _y) __ nodes
                 ):
                     continue

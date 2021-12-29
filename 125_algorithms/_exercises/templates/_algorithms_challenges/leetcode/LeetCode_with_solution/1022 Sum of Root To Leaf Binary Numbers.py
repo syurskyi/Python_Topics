@@ -48,7 +48,7 @@ class Solution:
             r..
 
         self.lst.a..(node.val)  # error prone
-        __ n.. node.left and n.. node.right:
+        __ n.. node.left a.. n.. node.right:
             # leaf
             cur = 0
             ___ a __ self.lst:

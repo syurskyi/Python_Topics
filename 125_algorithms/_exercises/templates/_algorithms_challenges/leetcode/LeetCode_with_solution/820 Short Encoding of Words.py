@@ -28,7 +28,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ minimumLengthEncoding(self, words: List[str]) -> int:
+    ___ minimumLengthEncoding(self, words: List[s..]) -> int:
         """
         suffix trie
         only suffix matters

@@ -16,7 +16,7 @@ class SgfTree(object):
                 r.. False
         __ l..(self.children) != l..(other.children):
             r.. False
-        ___ a, b __ zip(self.children, other.children):
+        ___ a, b __ z..(self.children, other.children):
             __ a != b:
                 r.. False
         r.. True

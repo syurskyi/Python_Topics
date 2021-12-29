@@ -16,7 +16,7 @@ class Solution(object):
             dp[count-1].a..(num)
         result    # list
         i = maxCount-1
-        while k > 0:
+        w.... k > 0:
             __ i < 0:
                 break
             __ n.. dp[i]:
@@ -36,7 +36,7 @@ class Solution(object):
         ___ num, count __ hashmap.items():
             heapq.heappush(heap, (-count, num))
         result    # list
-        while k > 0:
+        w.... k > 0:
             result.a..(heapq.heappop(heap)[1])
             k -= 1
         r.. result

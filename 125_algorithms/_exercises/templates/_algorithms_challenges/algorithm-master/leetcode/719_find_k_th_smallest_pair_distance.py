@@ -8,10 +8,10 @@ class Solution:
         __ n.. A o. n.. k:
             r.. -1
 
-        A.sort()
+        A.s..()
 
         left, right = 0, A[-1] - A[0]
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ self.check_valid(A, mid, k):
                 right = mid
@@ -27,7 +27,7 @@ class Solution:
         cnt = left = 0
 
         ___ right __ r..(l..(A)):
-            while A[right] - A[left] > mid:
+            w.... A[right] - A[left] > mid:
                 left += 1
 
             cnt += right - left

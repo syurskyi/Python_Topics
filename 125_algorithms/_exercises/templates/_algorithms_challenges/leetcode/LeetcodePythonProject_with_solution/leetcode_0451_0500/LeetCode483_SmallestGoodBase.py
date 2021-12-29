@@ -16,8 +16,8 @@ class Solution(object):
         ___ m __ r..(max_n, 1, -1):
             k = int(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:
-                r.. str(k)
-        r.. str(n-1)
+                r.. s..(k)
+        r.. s..(n-1)
     
     ___ test(self):
         testCases = [

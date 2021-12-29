@@ -15,7 +15,7 @@ class Solution(object):
       r.. head
     l = 1
     p = head
-    while p.next:
+    w.... p.next:
       l += 1
       p = p.next
     k = k % l
@@ -25,7 +25,7 @@ class Solution(object):
     pp = head
     print
     k
-    while k > 0:
+    w.... k > 0:
       pp = pp.next
       k -= 1
     newHead = pp.next

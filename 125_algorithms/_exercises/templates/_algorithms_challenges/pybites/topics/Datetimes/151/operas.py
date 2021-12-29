@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-Composer = namedtuple('Composer', 'name born died')
-Opera = namedtuple('Opera', 'author play date')
+Composer = n..('Composer', 'name born died')
+Opera = n..('Opera', 'author play date')
 
 composers = {
     "beethoven": Composer("Ludwig van Beethoven",
@@ -51,7 +51,7 @@ operas = [
 
 
 ___ _get_date(date_str):
-    r.. datetime.date(datetime.strptime(date_str, "%d %B %Y"))
+    r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
 
 
 ___ operas_both_at_premiere(guest, composer):
@@ -75,9 +75,9 @@ ___ operas_both_at_premiere(guest, composer):
     guest_birth_dt = _get_date(composers[guest].born)
     guest_death_dt = _get_date(composers[guest].died)
     r.. [opera.play ___ opera __ operas
-            __ opera.author __ composer and
-            guest_birth_dt < _get_date(opera.date) and
-            _get_date(opera.date) < guest_death_dt and 
+            __ opera.author __ composer a..
+            guest_birth_dt < _get_date(opera.date) a..
+            _get_date(opera.date) < guest_death_dt a..
             _get_date(opera.date) < _get_date(composers[composer].died)
             ]
 

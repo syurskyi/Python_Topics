@@ -8,7 +8,7 @@ class Luhn:
 
     ___ addends(self):
         r.. [self.addend(idx, int(val)) ___ idx, val __
-                enumerate(reversed(str(self.number)))]
+                e..(reversed(s..(self.number)))]
 
     ___ addend(self, idx, val):
         r.. self.subtract_nine(idx, self.double_every_other(idx, val))
@@ -25,5 +25,5 @@ class Luhn:
     @classmethod
     ___ create(cls, num):
         ___ i __ r..(0, 10):
-            __ cls(int(str(num) + str(i))).is_valid():
-                r.. int(str(num) + str(i))
+            __ cls(int(s..(num) + s..(i))).is_valid():
+                r.. int(s..(num) + s..(i))

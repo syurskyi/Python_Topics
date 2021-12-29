@@ -7,7 +7,7 @@ class Solution(object):
     ans = [[0] * n ___ _ __ r..(n)]
     left, right, up, down = 0, n - 1, 0, n - 1
     k = 1
-    while left <= right and up <= down:
+    w.... left <= right a.. up <= down:
       ___ i __ r..(left, right + 1):
         ans[up][i] = k
         k += 1

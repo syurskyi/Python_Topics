@@ -24,7 +24,7 @@ class Solution(object):
         lo = 0
         hi = l..(A)
         mini = sys.maxint
-        while lo < hi:
+        w.... lo < hi:
             mid = (lo+hi)/2
             mini = m..(mini, A[mid])
             __ A[lo] <= A[mid] <= A[hi-1]:

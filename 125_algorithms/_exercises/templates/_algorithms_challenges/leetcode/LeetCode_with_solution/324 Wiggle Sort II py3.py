@@ -36,16 +36,16 @@ class Solution:
         odd = 1
         even = n - 1 __ (n - 1) % 2 __ 0 ____ n - 2
         i = 0
-        while i < n:
+        w.... i < n:
             __ nums[i] < median:
-                __ i >= even and i % 2 __ 0:
+                __ i >= even a.. i % 2 __ 0:
                     i += 1
                     continue
                 nums[i], nums[even] = nums[even], nums[i]
                 even -= 2
 
             ____ nums[i] > median:
-                __ i <= odd  and i % 2 __ 1:
+                __ i <= odd  a.. i % 2 __ 1:
                     i += 1
                     continue
                 nums[i], nums[odd] = nums[odd], nums[i]

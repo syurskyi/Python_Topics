@@ -3,7 +3,7 @@ ____ typing _______ List
 
 ___ minimum_number(digits: List[int]) -> int:
     digits = s..(set(digits))
-    r.. 0 __ l..(digits)__0 ____ int("".join(str(i) ___ i __ digits))
+    r.. 0 __ l..(digits)__0 ____ int("".join(s..(i) ___ i __ digits))
 
 
 

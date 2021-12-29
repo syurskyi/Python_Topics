@@ -20,10 +20,10 @@ class Solution:
                 bit = 1 __ num & (1 << i) != 0 ____ 0
                 res_bit = (res_bit + bit) % 3
             # If single number is positive
-            __ positive and res_bit __ 1:
+            __ positive a.. res_bit __ 1:
                 res += 1 << i
             # If single number is negative
-            __ n.. positive and res_bit __ 0:
+            __ n.. positive a.. res_bit __ 0:
                 res += 1 << i
         __ n.. positive:
             res = -(res + 1)

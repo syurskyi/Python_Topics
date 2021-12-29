@@ -19,7 +19,7 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ checkInclusion(self, s1: str, s2: str) -> bool:
+    ___ checkInclusion(self, s1: s.., s2: s..) -> bool:
         """
         counter + two pointers
         """
@@ -30,7 +30,7 @@ class Solution:
 
         i = 0
         j = 0
-        while j < l..(s2):
+        w.... j < l..(s2):
             __ counter[s2[j]] > 0:
                 counter[s2[j]] -= 1
                 __ j - i + 1 __ l..(s1):

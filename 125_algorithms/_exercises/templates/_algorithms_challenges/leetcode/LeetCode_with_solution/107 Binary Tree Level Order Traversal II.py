@@ -35,7 +35,7 @@ class Solution:
             r.. []
         result    # list
         next_level = [root]
-        while next_level:
+        w.... next_level:
             current_level = next_level
             result.insert(0, map(l.... x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
 

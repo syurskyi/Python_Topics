@@ -3,6 +3,6 @@ ___ convert(variables):
     ___ x __ r..(int(variables[0])):
         num = float(variables[x+1])
         num = int(round(float((num) - 32) * (5.0/9.0)))
-        answer.a..(str(num))
+        answer.a..(s..(num))
     print(' '.join(answer))
-convert(raw_input().split())
+convert(raw_input().s..())

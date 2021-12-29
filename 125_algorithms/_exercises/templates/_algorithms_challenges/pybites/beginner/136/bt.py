@@ -50,11 +50,11 @@ ___ check_bt(donor, recipient):
 
 ___ get_int(inpval):
     __ isi..(inpval, int):
-        __ inpval >= 0 and inpval <= 7:
+        __ inpval >= 0 a.. inpval <= 7:
             r.. inpval
         ____:
             raise ValueError
-    __ isi..(inpval, str):
+    __ isi..(inpval, s..):
         __ inpval __ blood_type_text.keys():
             r.. blood_type_text[inpval].value
         ____:

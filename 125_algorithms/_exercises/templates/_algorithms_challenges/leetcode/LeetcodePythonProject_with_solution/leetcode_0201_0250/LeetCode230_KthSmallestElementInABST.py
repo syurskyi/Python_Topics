@@ -20,16 +20,16 @@ class Solution(object):
         """
         stack    # list
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
             k -= 1
             __ k __ 0: r.. node.val
             __ node.right:
                 node = node.right
-                while node:
+                w.... node:
                     stack.a..(node)
                     node = node.left
     

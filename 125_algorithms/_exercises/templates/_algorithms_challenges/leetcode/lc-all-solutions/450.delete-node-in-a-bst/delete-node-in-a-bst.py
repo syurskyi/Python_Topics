@@ -16,7 +16,7 @@ class Solution(object):
     ___ delete(root, pre):
       __ root.right:
         p = root.right
-        while p.left:
+        w.... p.left:
           p = p.left
         p.left = root.left
       __ root __ pre.left:
@@ -30,7 +30,7 @@ class Solution(object):
     pre = dummy = TreeNode(float("inf"))
     dummy.left = root
     p = dummy
-    while p:
+    w.... p:
       __ key > p.val:
         pre = p
         p = p.right

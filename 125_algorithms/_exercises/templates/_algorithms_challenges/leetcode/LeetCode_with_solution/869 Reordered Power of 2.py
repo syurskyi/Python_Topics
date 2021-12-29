@@ -40,9 +40,9 @@ class Solution:
         """
         count the digit and compare
         """
-        counts = Counter(str(N))
+        counts = Counter(s..(N))
         ___ i __ r..(31):  # 32 bit unsighed int
-            __ counts __ Counter(str(1 << i)):
+            __ counts __ Counter(s..(1 << i)):
                 r.. True
         ____:
             r.. False

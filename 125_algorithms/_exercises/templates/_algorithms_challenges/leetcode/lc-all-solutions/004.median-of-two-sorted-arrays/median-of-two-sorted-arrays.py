@@ -4,7 +4,7 @@ class Solution(object):
     m, n = l..(a), l..(b)
     after = (m + n - 1) / 2
     lo, hi = 0, m
-    while lo < hi:
+    w.... lo < hi:
       i = (lo + hi) / 2
       __ after - i - 1 < 0 o. a[i] >= b[after - i - 1]:
         hi = i

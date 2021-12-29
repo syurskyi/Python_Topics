@@ -38,7 +38,7 @@ class SegmentTree(object):
 
     ___ inc(self, idx, val):
         cur = self.root
-        while cur:
+        w.... cur:
             cur.cnt += val
             mid = (cur.start+cur.end)/2
             __ cur.start <= idx < mid:
@@ -72,7 +72,7 @@ class Solution(object):
         """
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
         h = {}
-        ___ i, v __ enumerate(s..(nums)):
+        ___ i, v __ e..(s..(nums)):
             h[v] = i  # override duplicates
 
         A = [h[v] ___ v __ nums]

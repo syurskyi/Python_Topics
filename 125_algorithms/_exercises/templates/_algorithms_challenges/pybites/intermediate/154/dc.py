@@ -8,8 +8,8 @@ ___ get_level():
 class Bite:
 
     number: int
-    title: str
-    level: str = field(default_factory=get_level)
+    title: s..
+    level: s.. = field(default_factory=get_level)
 
     ___ __post_init__(self):
         self.title = self.title.capitalize()

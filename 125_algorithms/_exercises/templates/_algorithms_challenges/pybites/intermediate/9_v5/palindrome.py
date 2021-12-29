@@ -10,10 +10,10 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().strip() ___ word __ f.readlines())
+        r.. (word.lower().s.. ___ word __ f.readlines())
 
 
-___ is_palindrome(word: str):
+___ is_palindrome(word: s..):
     """Return if word is palindrome, 'madam' would be one.
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.

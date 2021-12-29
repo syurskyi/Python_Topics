@@ -41,7 +41,7 @@ class Solution:
             r.. NOT_FOUND
 
         left, right = 0, l..(A) - 1
-        while left < right:
+        w.... left < right:
             _sum = A[left] + A[right]
             __ _sum __ target:
                 r.. [left + 1, right + 1]

@@ -32,7 +32,7 @@ class Solution(object):
             ____:
                 r = (int(a[i]) + c) % 2
                 c = (int(a[i]) + c) / 2
-            res.insert(0, str(r))
+            res.insert(0, s..(r))
         __ c __ 1:
-            res.insert(0, str(c))
+            res.insert(0, s..(c))
         r.. ''.join(res)

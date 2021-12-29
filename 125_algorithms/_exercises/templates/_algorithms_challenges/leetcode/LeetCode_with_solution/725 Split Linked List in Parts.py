@@ -61,7 +61,7 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w.... node:
             l += 1
             node = node.next
 
@@ -76,7 +76,7 @@ class Solution:
         chunk_counter = 0
         cur_l = 0
         node = root
-        while node:
+        w.... node:
             ret[chunk_counter].a..(node.val)
             cur_l += 1
             chunk_size = long_chunk_l __ chunk_counter < n_long_chunk ____ short_chunk_l
@@ -99,7 +99,7 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w.... node:
             l += 1
             node = node.next
 
@@ -110,7 +110,7 @@ class Solution:
         cur_l = 0
         i = 0
         part_l = math.ceil((l - counter) / k)
-        while node:
+        w.... node:
             cur_l += 1
             counter += 1
             ret[i].a..(node.val)
@@ -137,7 +137,7 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w.... node:
             l += 1
             node = node.next
 
@@ -147,7 +147,7 @@ class Solution:
         node = root
         cur_l = 0
         i = 0
-        while node:
+        w.... node:
             cur_l += 1
             ret[i].a..(node.val)
             __ cur_l __ part_l:

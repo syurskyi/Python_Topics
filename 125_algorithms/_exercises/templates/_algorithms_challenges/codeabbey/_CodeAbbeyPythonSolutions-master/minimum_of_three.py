@@ -10,7 +10,7 @@ ___ get_min(values):
     r.. m..
 
 ___ i __ r..(amount_values):
-    values = l..(map(int, input().split()))
+    values = l..(map(int, input().s..()))
     results.a..(get_min(values))
 
 print(*results)

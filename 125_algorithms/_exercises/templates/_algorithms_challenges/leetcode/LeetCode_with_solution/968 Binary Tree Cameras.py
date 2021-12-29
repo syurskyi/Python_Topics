@@ -100,7 +100,7 @@ class SolutionErrror:
         self.dfs(node.right, node)
         # post oder
         __ (
-            (n.. node.left o. node.left __ self.covered) and
+            (n.. node.left o. node.left __ self.covered) a..
             (n.. node.right o. node.right __ self.covered)
         ):
             self.covered.add(pi)

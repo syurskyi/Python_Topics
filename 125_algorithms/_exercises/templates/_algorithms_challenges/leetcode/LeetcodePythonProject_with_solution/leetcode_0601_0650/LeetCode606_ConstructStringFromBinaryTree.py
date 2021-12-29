@@ -18,7 +18,7 @@ class Solution(object):
         """
         res = ''
         __ t:
-            res += str(t.val)
+            res += s..(t.val)
             __ t.right:
                 res += '(%s)' % self.tree2str(t.left)
                 res += '(%s)' % self.tree2str(t.right)

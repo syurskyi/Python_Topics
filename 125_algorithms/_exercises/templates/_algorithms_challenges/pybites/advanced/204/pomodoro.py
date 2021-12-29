@@ -65,7 +65,7 @@ async ___ session(
     """
     loop = 1
 
-    while loop < 4:
+    w.... loop < 4:
         await work_time(work_length, loop)
         await break_time(short_break_length, loop)
         loop += 1
@@ -93,7 +93,7 @@ async ___ main(
     global CURRENT_SESSION
     print(f"Pomodor timer started at: {time.strftime('%X')}")
 
-    while CURRENT_SESSION <= 4:
+    w.... CURRENT_SESSION <= 4:
         print(f"\nSession: {CURRENT_SESSION}")
         await session(work_length, short_break_length, long_break_length)
         __ CURRENT_SESSION __ 2:

@@ -26,25 +26,25 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         n = l..(nums)
-        nums.sort()
+        nums.s..()
         res    # list
         ___ a __ r..(n - 3):
-            __ a > 0 and nums[a - 1] __ nums[a]:
+            __ a > 0 a.. nums[a - 1] __ nums[a]:
                 continue
             ___ b __ r..(a + 1, n - 2):
-                __ b > a + 1 and nums[b - 1] __ nums[b]:
+                __ b > a + 1 a.. nums[b - 1] __ nums[b]:
                     continue
                 c = b + 1
                 d = n - 1
-                while c < d:
+                w.... c < d:
                     s = nums[a] + nums[b] + nums[c] + nums[d]
                     __ s __ target:
                         res.a..([nums[a], nums[b], nums[c], nums[d]])
                         c += 1
                         d -= 1
-                        while c < d and nums[c] __ nums[c - 1]:
+                        w.... c < d a.. nums[c] __ nums[c - 1]:
                             c += 1
-                        while c < d and nums[d] __ nums[d + 1]:
+                        w.... c < d a.. nums[d] __ nums[d + 1]:
                             d -= 1
                     ____ s < target:
                         c += 1

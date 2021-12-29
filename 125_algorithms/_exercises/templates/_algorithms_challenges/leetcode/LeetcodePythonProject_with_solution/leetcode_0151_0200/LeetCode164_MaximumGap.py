@@ -27,7 +27,7 @@ class Solution(object):
         maxGap = float('-inf')
         prev = minVal
         ___ i __ r..(n-1):
-            __ bucketsMin[i] __ float('inf') and bucketsMax[i] __ float('-inf'):
+            __ bucketsMin[i] __ float('inf') a.. bucketsMax[i] __ float('-inf'):
                 continue
             maxGap = max(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]

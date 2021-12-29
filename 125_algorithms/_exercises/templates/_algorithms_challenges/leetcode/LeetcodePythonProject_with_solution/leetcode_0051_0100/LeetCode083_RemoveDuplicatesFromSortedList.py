@@ -19,10 +19,10 @@ class Solution(object):
         __ n.. head o. n.. head.next:
             r.. head
         node = head
-        while node.next:
+        w.... node.next:
             __ node.next.val __ node.val:
                 val = node.val
-                while node.next and node.next.val __ val:
+                w.... node.next a.. node.next.val __ val:
                     node.next = node.next.next
             node = node.next
         r.. head

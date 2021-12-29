@@ -10,7 +10,7 @@ class Solution:
   # @param root, a tree link node
   # @return nothing
   ___ connect(self, root):
-    __ root and root.left and root.right:
+    __ root a.. root.left a.. root.right:
       root.left.next = root.right
-      root.right.next = root.next and root.next.left
+      root.right.next = root.next a.. root.next.left
       r.. self.connect(root.left) o. self.connect(root.right)

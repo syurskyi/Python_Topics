@@ -29,9 +29,9 @@ class Solution:
 
         __ frac_part:
             decimal_part = self.frac(numerator-int_part*denominator, denominator)
-            ret = str(int_part)+"."+decimal_part
+            ret = s..(int_part)+"."+decimal_part
         ____:
-            ret = str(int_part)
+            ret = s..(int_part)
 
         __ sign < 0:
             ret = "-" + ret
@@ -46,7 +46,7 @@ class Solution:
         d = {}
         i = 0
 
-        while num:
+        w.... num:
             num *= 10
             q = num/deno
             r = num%deno
@@ -55,7 +55,7 @@ class Solution:
                 ret.insert(d[(q, r)], "(")
                 r.. "".join(ret)
 
-            ret.a..(str(q))
+            ret.a..(s..(q))
             d[(q, r)] = i
             i += 1
             num -= q*deno
@@ -74,9 +74,9 @@ class Solution_error:
         fract_part = numerator-int_part*denominator
         __ fract_part:
             decimal_part = self.frac(numerator-int_part*denominator, denominator)
-            ret = str(int_part)+"."+decimal_part
+            ret = s..(int_part)+"."+decimal_part
         ____:
-            ret = str(int_part)
+            ret = s..(int_part)
 
         r.. ret
 
@@ -88,9 +88,9 @@ class Solution_error:
         d = {}
         i = 0
 
-        while num:
+        w.... num:
             l = 0  # the number of added 0
-            while num < deno:
+            w.... num < deno:
                 num *= 10
                 l += 1
 
@@ -104,7 +104,7 @@ class Solution_error:
                 ret.a..("0")
                 i += 1
 
-            ret.a..(str(r))
+            ret.a..(s..(r))
             d[r] = i
             i += 1
             num -= r*deno

@@ -25,7 +25,7 @@ class Solution(object):
             r.. head
         last = head
         current = head.next
-        while current __ n.. N..
+        w.... current __ n.. N..
             next_node = current.next
             __ current.val __ last.val:
                 last.next = next_node

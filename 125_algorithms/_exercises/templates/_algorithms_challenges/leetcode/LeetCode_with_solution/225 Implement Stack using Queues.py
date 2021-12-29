@@ -42,7 +42,7 @@ class Stack:
         __ n.. self.q[t]:
             t ^= 1
 
-        while l..(self.q[t]) > 1:
+        w.... l..(self.q[t]) > 1:
             self.q[t^1].a..(self.q[t].pop(0))
 
         r.. self.q[t].pop()
@@ -63,4 +63,4 @@ class Stack:
         """
         :rtype: bool
         """
-        r.. n.. self.q[0] and n.. self.q[1]
+        r.. n.. self.q[0] a.. n.. self.q[1]

@@ -1,4 +1,4 @@
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ os
 _______ urllib.request
 
@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s.. 
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 ___ gen_files(tempfile=tempfile):
@@ -38,7 +38,7 @@ ___ gen_files(tempfile=tempfile):
 
     names    # list
     ___ line __ file:
-        line = line.split(',')[0]
+        line = line.s..(',')[0]
         names.a..(line)
 
     filtered1 = [x ___ x __ names __ "." n.. __ x]
@@ -63,14 +63,14 @@ ___ diehard_pybites(files_ N..
     __ files __ N..
         files = gen_files()
 
-    files = [entry ___ entry __ files __ entry.split('/')[1] n.. __ IGNORE]
+    files = [entry ___ entry __ files __ entry.s..('/')[1] n.. __ IGNORE]
     
     stats_list    # list
     challenge_list    # list
     user_list    # list
 
     ___ entry __ files:
-        entry = entry.split('/')
+        entry = entry.s..('/')
         challenge_list.a..(entry[0])
         user_list.a..(entry[1])
 
@@ -78,7 +78,7 @@ ___ diehard_pybites(files_ N..
     popular_challenges = Counter(challenge_list)
 
     ___ entry __ files:
-        entry = entry.split('/')
+        entry = entry.s..('/')
         ___ challenge, number __ popular_challenges.items():
             __ entry[0] __ challenge:
                 stats_list.a..(Stats(user=entry[1], challenge=(entry[0], number)))
@@ -86,4 +86,4 @@ ___ diehard_pybites(files_ N..
     top_user = users.most_common(1)[0][0]
     top_challenge = popular_challenges.most_common(1)[0]
     r.. [stat ___ stat __ stats_list
-            __ stat.user __ top_user and stat.challenge __ top_challenge][0]
+            __ stat.user __ top_user a.. stat.challenge __ top_challenge][0]

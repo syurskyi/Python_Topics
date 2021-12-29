@@ -14,7 +14,7 @@ class Solution(object):
         """
         dp = [[0]*(G+1) ___ _ __ r..(P+1)]
         dp[0][0] = 1
-        ___ p, g __ zip(profit, group):
+        ___ p, g __ z..(profit, group):
             ___ i __ r..(P, -1, -1):
                 ___ j __ r..(G-g, -1, -1):
                     dp[m..(i+p, P)][j+g] += dp[i][j]
@@ -33,7 +33,7 @@ class Solution(object):
         r.. res[0]
     
     ___ dfs(self, ind, group, profit, G, P, curGroup, curProfit, res):
-        __ curProfit >= P and s..(curGroup) <= G:
+        __ curProfit >= P a.. s..(curGroup) <= G:
             res[0] += 1
         ___ i __ r..(ind, l..(group)):
             curProfit += profit[i]

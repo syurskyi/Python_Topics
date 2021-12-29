@@ -20,7 +20,7 @@ class Solution(object):
         """
         __ n.. root:
             r.. False
-        __ root.val __ sumVal and n.. root.left and n.. root.right:
+        __ root.val __ sumVal a.. n.. root.left a.. n.. root.right:
             r.. True
         ____:
             r.. self.hasPathSum(root.left, sumVal-root.val) o.\

@@ -1,5 +1,5 @@
 _______ os
-____ datetime _______ date, timedelta, strptime
+____ d__ _______ date, t.., strptime
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
 ____ urllib.request _______ urlretrieve
@@ -14,11 +14,11 @@ __ n.. RATES_FILE.exists():
 
 ___ get_all_days(start_date: date, end_date: date) -> List[date]:
     delta = end_date - start_date
-    r.. [start_date+timedelta(days=x) ___ x __ r..(delta.days+1)]
+    r.. [start_date+t..(days=x) ___ x __ r..(delta.days+1)]
 
-___ _parse_date(date_string: str) -> date:
+___ _parse_date(date_string: s..) -> date:
     y,m,d = date_string.s.. 
-    r.. date(days=d, month=m, year=y)
+    r.. date(days=d,  m.._m, year=y)
 
 """{
     "start_at": "2019-01-01",
@@ -49,6 +49,6 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
 
 
 ___ exchange_rates(
-    start_date: str = "2020-01-01", end_date: str = "2020-09-01"
+    start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) -> Dict[date, d..]:
     pass

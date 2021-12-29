@@ -21,7 +21,7 @@ class Solution(object):
         __ root __ N..
             r.. True
         ____:
-            __ self.isBalanced(root.left) and self.isBalanced(root.right):
+            __ self.isBalanced(root.left) a.. self.isBalanced(root.right):
                 r.. abs(self.depth(root.left) - self.depth(root.right)) <= 1
             ____:
                 r.. False

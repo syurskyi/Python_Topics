@@ -44,7 +44,7 @@ class Solution:
         ans = INF = float('inf')
 
         ___ (x, y), t __ times.items():
-            __ t __ cnt and steps[x, y] < ans:
+            __ t __ cnt a.. steps[x, y] < ans:
                 ans = steps[x, y]
 
         r.. ans __ ans < INF ____ -1
@@ -55,7 +55,7 @@ class Solution:
         visited = set(queue)
         step = 0
 
-        while queue:
+        w.... queue:
             step += 1
 
             ___ x, y __ queue:
@@ -66,7 +66,7 @@ class Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m and 0 <= _y < n):
+                    __ n.. (0 <= _x < m a.. 0 <= _y < n):
                         continue
                     __ grid[_x][_y] != self.EMPTY:
                         continue
@@ -122,7 +122,7 @@ class Solution:
         ans = INF = float('inf')
 
         ___ (x, y), hids __ ids.items():
-            __ l..(hids) __ cnt and steps[x, y] < ans:
+            __ l..(hids) __ cnt a.. steps[x, y] < ans:
                 ans = steps[x, y]
 
         r.. ans __ ans < INF ____ -1
@@ -137,7 +137,7 @@ class Solution:
             _x = x + dx
             _y = y + dy
 
-            __ n.. (0 <= _x < m and 0 <= _y < n):
+            __ n.. (0 <= _x < m a.. 0 <= _y < n):
                 continue
             __ grid[_x][_y] != self.EMPTY:
                 continue

@@ -18,7 +18,7 @@ class Solution(object):
             ____ appendFreqMap.get(num, 0) > 0:
                 appendFreqMap[num] -= 1
                 appendFreqMap[num+1] = appendFreqMap.get(num+1, 0)+1
-            ____ freqMap.get(num+1, 0)>0 and freqMap.get(num+2, 0)>0:
+            ____ freqMap.get(num+1, 0)>0 a.. freqMap.get(num+2, 0)>0:
                 freqMap[num+1] -= 1
                 freqMap[num+2] -= 1
                 appendFreqMap[num+3] = appendFreqMap.get(num+3, 0)+1

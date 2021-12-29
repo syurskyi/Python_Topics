@@ -20,10 +20,10 @@ ___ get_ordinal_suffix(number):
       "th": ['11', '12', '13']      
     }
 
-    number = str(number)
+    number = s..(number)
     last_char = number[-1]
     
-    __ number[-2:] __ ordinal_suffix["th"] and l..(number) > 1:
+    __ number[-2:] __ ordinal_suffix["th"] a.. l..(number) > 1:
       r.. f"{number}th"
     ____ last_char __ ordinal_suffix["st"]:
       r.. f"{number}st"

@@ -25,11 +25,11 @@ ___ gen_rhombus(width):
     diff = 2
     j = 1
     lines    # list
-    while i > 0:
+    w.... i > 0:
         space_before = (width - i)//2
         spaces = ' ' * space_before
         line = f"{spaces}{STAR * i}{spaces}"
-        yield line
+        y.. line
         #line = f"{STAR * i:>{left_padding}}"
         #yield line
         left_padding += (diff - j)

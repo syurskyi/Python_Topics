@@ -15,7 +15,7 @@ class Solution:
         temp = N..
         temp_end = N..
         i = 1
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             # Append current node to temp list
             __ temp __ N..

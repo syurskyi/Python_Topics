@@ -21,6 +21,6 @@ class Solution:
             __ l..(ans) > k:
                 heappop(ans)
 
-        ans.sort(r.._T..
+        ans.s..(r.._T..
 
         r.. ans

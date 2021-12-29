@@ -4,7 +4,7 @@ class Solution:
         res = 0
         cur = 0
         d = {}
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c n.. __ d:
                 cur += 1
             ____:

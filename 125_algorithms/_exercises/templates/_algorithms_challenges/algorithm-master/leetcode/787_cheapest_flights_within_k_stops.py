@@ -42,7 +42,7 @@ class Solution:
         dp[src][0] = 0
 
         ___ start, end, cost __ flights:
-            __ start __ src and cost < dp[end][0]:
+            __ start __ src a.. cost < dp[end][0]:
                 dp[end][0] = cost
 
         ___ k __ r..(1, K + 1):

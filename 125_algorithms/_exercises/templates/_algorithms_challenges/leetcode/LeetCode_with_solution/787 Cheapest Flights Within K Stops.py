@@ -55,7 +55,7 @@ class Solution:
             G[u][v] = w
 
         pq = [(0, 0, src)]  # (cost, step, city)
-        while pq:
+        w.... pq:
             cost, k, u = heapq.heappop(pq)
             __ u __ dst:
                 r.. cost

@@ -51,7 +51,7 @@ MAX = 2 ** 31 - 1
 
 
 class Solution:
-    ___ splitIntoFibonacci(self, S: str) -> List[int]:
+    ___ splitIntoFibonacci(self, S: s..) -> List[int]:
         """
         The first two elements of the array uniquely determine the rest of the
         sequence.
@@ -62,7 +62,7 @@ class Solution:
         l = l..(S)
         ___ i __ r..(1, l + 1):
             num_str = S[:i]
-            __ l..(num_str) > 1 and num_str.startswith("0"):
+            __ l..(num_str) > 1 a.. num_str.startswith("0"):
                 continue
 
             num = int(num_str)
@@ -71,7 +71,7 @@ class Solution:
 
             ___ j __ r..(i + 1, l + 1):
                 num2_str = S[i:j]
-                __ l..(num2_str) > 1 and num2_str.startswith("0"):
+                __ l..(num2_str) > 1 a.. num2_str.startswith("0"):
                     continue
 
                 num2 = int(num2_str)
@@ -80,19 +80,19 @@ class Solution:
 
                 ret = [num, num2]
                 k = j
-                while k < l:
+                w.... k < l:
                     nxt = ret[-1] + ret[-2]
                     __ nxt > MAX:
                         break
 
-                    nxt_str = str(nxt)
+                    nxt_str = s..(nxt)
                     __ S[k:k+l..(nxt_str)] __ nxt_str:
                         k = k + l..(nxt_str)
                         ret.a..(nxt)
                     ____:
                         break
                 ____:
-                    __ k __ l and l..(ret) >= 3:
+                    __ k __ l a.. l..(ret) >= 3:
                         r.. ret
 
         r.. []

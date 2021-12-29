@@ -46,7 +46,7 @@ class Solution(object):
 
         # For each of the remaining node, remove its prerequisites in queue;
         # if node has no prerequisites, add it to queue, and repeat
-        while queue:
+        w.... queue:
             u = queue.pop(0)
             ___ v, prqs __ prq_graph.items():
                 __ u __ prqs:

@@ -43,13 +43,13 @@ class TreeNode:
 
 
 class Solution:
-    ___ tree2str(self, t: TreeNode) -> str:
+    ___ tree2str(self, t: TreeNode) -> s..:
         __ n.. t:
             r.. ""
 
         left = self.tree2str(t.left)
         right = self.tree2str(t.right)
-        ret = [str(t.val)]
+        ret = [s..(t.val)]
         __ left o. right:
             ret.a..("(" + left + ")")
         __ right:

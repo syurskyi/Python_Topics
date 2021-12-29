@@ -26,7 +26,7 @@ class Solution:
             slow = head
             fast = head
             prev = N..  # Previous node to slow (mid)
-            while fast.next __ n.. N.. and fast.next.next __ n.. N..
+            w.... fast.next __ n.. N.. a.. fast.next.next __ n.. N..
                 prev = slow
                 fast = fast.next.next
                 slow = slow.next

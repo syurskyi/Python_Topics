@@ -60,7 +60,7 @@ class SolutionHeap(object):
         :rtype: int
         """
         ret = 1
-        h = [QueueWrapper(i, deque([v])) ___ i, v __ enumerate(primes)]
+        h = [QueueWrapper(i, deque([v])) ___ i, v __ e..(primes)]
         dic = {e.idx: e ___ e __ h}
 
         heapq.heapify(h)

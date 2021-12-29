@@ -29,7 +29,7 @@ class AllergiesTests(unittest.TestCase):
     ___ test_allergic_to_everything(self):
         self.assertEqual(
             s..(('eggs peanuts shellfish strawberries tomatoes '
-                    'chocolate pollen cats').split()),
+                    'chocolate pollen cats').s..()),
             s..(Allergies(255).lst))
 
     # @unittest.skip('Extra Credit: Passes with a specific type of solution')

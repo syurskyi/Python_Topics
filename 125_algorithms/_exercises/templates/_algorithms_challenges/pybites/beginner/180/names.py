@@ -14,10 +14,10 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) -> defaultdict:
     countries = defaultdict(l..)
-    ___ line __ data.split('\n')[1:]:
-        lname, fname, country = line.split(',')
+    ___ line __ data.s..('\n')[1:]:
+        lname, fname, country = line.s..(',')
         countries[country].a..(f"{fname} {lname}")
     r.. countries
 

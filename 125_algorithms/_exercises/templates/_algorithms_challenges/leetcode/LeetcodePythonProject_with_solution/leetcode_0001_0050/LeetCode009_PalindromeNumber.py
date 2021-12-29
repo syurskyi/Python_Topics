@@ -11,9 +11,9 @@ class Solution(object):
         """
         __ x < 0: r.. False
         div = 1
-        while x//div >= 10:
+        w.... x//div >= 10:
             div *= 10
-        while x > 0:
+        w.... x > 0:
             first = x//div
             last  = x%10
             __ first != last:

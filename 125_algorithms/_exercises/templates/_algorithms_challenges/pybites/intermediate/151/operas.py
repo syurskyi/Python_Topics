@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
-_______ itertools
+____ collections _______ n..
+____ d__ _______ d__
+_______ i..
 
-Composer = namedtuple('Composer', 'name born died')
-Opera = namedtuple('Opera', 'author play date')
+Composer = n..('Composer', 'name born died')
+Opera = n..('Opera', 'author play date')
 
 composers = {
     "beethoven": Composer("Ludwig van Beethoven",
@@ -52,7 +52,7 @@ operas = [
 
 
 ___ _get_date(date_str):
-    r.. datetime.date(datetime.strptime(date_str, "%d %B %Y"))
+    r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
 
 
 ___ operas_both_at_premiere(guest, composer):
@@ -90,8 +90,8 @@ ___ operas_both_at_premiere(guest, composer):
 
     ___ opera __ filter(l.... x: x.author __ composer_name,operas):
         play_date = _get_date(opera.date)
-        __ guest_birthday <= play_date < guest_death_day and composer_death_day > play_date:
-            yield opera.play
+        __ guest_birthday <= play_date < guest_death_day a.. composer_death_day > play_date:
+            y.. opera.play
 
 
         

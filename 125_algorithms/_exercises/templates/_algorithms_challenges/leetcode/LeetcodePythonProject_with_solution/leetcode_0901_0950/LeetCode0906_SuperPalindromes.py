@@ -20,18 +20,18 @@ class Solution(object):
         r.. res
 
     ___ dfs(self, low, high, s):
-        __ l..(s) > l..(str(high)):
+        __ l..(s) > l..(s..(high)):
             r.. 0
         count = 0
-        __ s and s[0] != '0':
+        __ s a.. s[0] != '0':
             num = int(s)
             __ num > high:
                 r.. 0
-            __ num >= low and self.isPalindrome(num*num):
+            __ num >= low a.. self.isPalindrome(num*num):
                 count += 1
         ___ c __ l..('012'):
             count += self.dfs(low, high, c+s+c)
         r.. count
 
     ___ isPalindrome(self, num):
-        r.. str(num) __ str(num)[::-1]
+        r.. s..(num) __ s..(num)[::-1]

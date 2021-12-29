@@ -24,7 +24,7 @@ class Solution:
 
         lca, has_a, has_b = self.divide_conquer(root, a, b)
 
-        r.. lca __ has_a and has_b ____ N..
+        r.. lca __ has_a a.. has_b ____ N..
 
     ___ divide_conquer(self, node, a, b):
         __ n.. node:
@@ -38,7 +38,7 @@ class Solution:
 
         __ node __ a o. node __ b:
             r.. node, has_a, has_b
-        __ left and right:
+        __ left a.. right:
             r.. node, has_a, has_b
         __ left:
             r.. left, has_a, has_b

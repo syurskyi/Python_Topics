@@ -23,11 +23,11 @@ Stop Codon ('Stop'): UGA, UAA, UAG'''
 _______ re
 ___ protein(rna):
     transDict = {}
-    ___ line __ rnaDict.split('\n'):
-        ___ section __ line[line.index(':')+1:].replace(' ','').split(','):
+    ___ line __ rnaDict.s..('\n'):
+        ___ section __ line[line.index(':')+1:].r..(' ','').s..(','):
             transDict[section] = re.findall(r'\(+\'?(\w+)',line)[0]
     codec = ''
-    while l..(rna) > 0:
+    w.... l..(rna) > 0:
         __ transDict[rna[:3]] __ 'Stop':
             pass
         ____:

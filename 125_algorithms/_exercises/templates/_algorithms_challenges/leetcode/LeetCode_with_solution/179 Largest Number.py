@@ -19,8 +19,8 @@ class Solution:
         :type nums: list[int]
         :rtype: str
         """
-        nums = map(str, nums)
-        nums.sort(cmp=self.cmp, r.._T..
+        nums = map(s.., nums)
+        nums.s..(cmp=self.cmp, r.._T..
         nums = "".join(nums)
         nums = nums.lstrip("0")
         __ n.. nums:

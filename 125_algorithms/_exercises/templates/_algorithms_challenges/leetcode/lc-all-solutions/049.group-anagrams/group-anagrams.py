@@ -15,13 +15,13 @@ class Solution(object):
 
     d = {}
 
-    ___ str __ strs:
+    ___ s.. __ strs:
       count = [0] * 26
-      ___ c __ str:
+      ___ c __ s..:
         count[ord(c) - ord('a')] += 1
       key = hash(count)
       __ key n.. __ d:
-        d[key] = [str]
+        d[key] = [s..]
       ____:
-        d[key].a..(str)
+        d[key].a..(s..)
     r.. [d[k] ___ k __ d]

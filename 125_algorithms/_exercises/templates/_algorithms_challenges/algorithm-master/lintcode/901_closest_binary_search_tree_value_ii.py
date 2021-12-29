@@ -25,12 +25,12 @@ class Solution:
         n = l..(vals)
         i = 0
 
-        while i < n and vals[i] < target:
+        w.... i < n a.. vals[i] < target:
             i += 1
 
         i, j = i - 1, i
 
-        while k and i >= 0 and j < n:
+        w.... k a.. i >= 0 a.. j < n:
             __ target - vals[i] < vals[j] - target:
                 ans.a..(vals[i])
                 i -= 1
@@ -39,12 +39,12 @@ class Solution:
                 j += 1
             k -= 1
 
-        while k and i >= 0:
+        w.... k a.. i >= 0:
             ans.a..(vals[i])
             i -= 1
             k -= 1
 
-        while k and j < n:
+        w.... k a.. j < n:
             ans.a..(vals[j])
             j += 1
             k -= 1

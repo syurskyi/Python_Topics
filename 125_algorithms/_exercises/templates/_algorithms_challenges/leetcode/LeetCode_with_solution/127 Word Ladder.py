@@ -24,7 +24,7 @@ __author__ = 'Danyang'
 class Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
-        ___ a, b __ zip(p, q):
+        ___ a, b __ z..(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
@@ -38,13 +38,13 @@ class Solution:
         q = [start]
         visited = {start}
         lvl = 1
-        while q:
+        w.... q:
             cur_q    # list
             ___ a __ q:
                 __ a __ end:
                     r.. lvl
                 ___ b __ dct:
-                    __ b n.. __ visited and self.is_neighbor(a, b):
+                    __ b n.. __ visited a.. self.is_neighbor(a, b):
                         visited.add(b)
                         cur_q.a..(b)
 
@@ -91,14 +91,14 @@ class Solution:
 
         queue = [0]
         visited[0] = True
-        while queue:
+        w.... queue:
             path_len += 1
             length = l..(queue)
             ___ i __ xrange(length):  #O(V)
                 __ lst[queue[i]]__end:  # reached
                     r.. path_len
                 ___ ind __ xrange(1, l..(lst)):  # O(k), add next level
-                    __ n.. visited[ind] and dp[ind][queue[i]]__1:
+                    __ n.. visited[ind] a.. dp[ind][queue[i]]__1:
                         queue.a..(ind)
                         visited[ind] = True
             queue = queue[length:]
@@ -130,7 +130,7 @@ class Solution:
         path_len = 0
 
         queue = [start]
-        while queue:
+        w.... queue:
             path_len += 1
             length = l..(queue)
             ___ i __ xrange(length):  #O(V)
@@ -167,7 +167,7 @@ class Solution:
 
         queue = [start]
         d...remove(start)
-        while True:
+        w... T...
             path_len += 1
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)

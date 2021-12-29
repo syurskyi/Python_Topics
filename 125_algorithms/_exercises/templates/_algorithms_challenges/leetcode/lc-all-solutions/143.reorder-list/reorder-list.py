@@ -14,7 +14,7 @@ class Solution(object):
     ___ reverse(root):
       pre = N..
       cur = root
-      while cur:
+      w.... cur:
         next = cur.next
         cur.next = pre
         pre = cur
@@ -25,7 +25,7 @@ class Solution(object):
       r..
     slow = fast = head
     pre = N..
-    while fast and fast.next:
+    w.... fast a.. fast.next:
       pre = slow
       slow = slow.next
       fast = fast.next.next
@@ -35,7 +35,7 @@ class Solution(object):
     ret = dummy = ListNode(-1)
     p1 = head
     p2 = newHead
-    while p1 and p2:
+    w.... p1 a.. p2:
       dummy.next = p1
       p1 = p1.next
       dummy = dummy.next

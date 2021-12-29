@@ -20,8 +20,8 @@ class Solution:
         stack    # list
         node = last_visit = root
 
-        while node o. stack:
-            while node:
+        w.... node o. stack:
+            w.... node:
                 stack.a..(node)
                 node = node.left
 

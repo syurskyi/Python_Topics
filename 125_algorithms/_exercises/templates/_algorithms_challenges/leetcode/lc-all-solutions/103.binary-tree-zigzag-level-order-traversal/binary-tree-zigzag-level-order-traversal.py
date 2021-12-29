@@ -16,7 +16,7 @@ class Solution(object):
     stack = deque([root])
     ans    # list
     odd = True
-    while stack:
+    w.... stack:
       level    # list
       ___ k __ r..(0, l..(stack)):
         top = stack.popleft()

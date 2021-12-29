@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists():
-    urlretrieve(url.format(filename=filename), json_input_file)
+    urlretrieve(url.f..(filename=filename), json_input_file)
 
 
 ___ get_json_data():
@@ -31,7 +31,7 @@ ___ get_passing_code(json_data=json_data):
     ___ bite __ json_data['bites']:
         bite_name = bite['bite']
         bite_name = bite_name[:bite_name.index('.')]
-        bite_name = bite_name.replace(' ','')
+        bite_name = bite_name.r..(' ','')
 
         passing_code = bite['passing_code']
         

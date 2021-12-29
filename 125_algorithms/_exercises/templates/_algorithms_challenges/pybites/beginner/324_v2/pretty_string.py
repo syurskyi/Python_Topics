@@ -2,7 +2,7 @@ _______ pprint
 ____ typing _______ Any
 
 
-___ pretty_string(obj: Any) -> str:
+___ pretty_string(obj: Any) -> s..:
     # TODO: your code
     
 

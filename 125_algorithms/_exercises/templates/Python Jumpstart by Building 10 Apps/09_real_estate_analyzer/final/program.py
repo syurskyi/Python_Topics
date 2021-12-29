@@ -63,14 +63,14 @@ ___ load_file(filename):
 ___ query_data(data):  # list[Purchase]):
 
     # data.sort(key=get_price)
-    data.sort(keylambda p: p.price)
+    data.s..(keylambda p: p.price)
 
     high_purchase  data[-1]
-    print("The most expensive house is ${:,} with {} beds and {} baths".format(
+    print("The most expensive house is ${:,} with {} beds and {} baths".f..(
         high_purchase.price, high_purchase.beds, high_purchase.baths))
 
     low_purchase  data[0]
-    print("The least expensive house is ${:,} with {} beds and {} baths".format(
+    print("The least expensive house is ${:,} with {} beds and {} baths".f..(
         low_purchase.price, low_purchase.beds, low_purchase.baths))
 
     # average price house?
@@ -84,7 +84,7 @@ ___ query_data(data):  # list[Purchase]):
     )
 
     ave_price  statistics.mean(prices)
-    print("The average home price is ${:,}".format(i..(ave_price)))
+    print("The average home price is ${:,}".f..(i..(ave_price)))
 
     # average price of 2 bedroom houses
     # prices = []
@@ -96,7 +96,7 @@ ___ query_data(data):  # list[Purchase]):
     two_bed_homes  (
         p  # projection or items
         ___ p __ data  # the set to process
-        __ announce(p, '2-bedrooms, found {}'.format(p.beds)) and p.beds __ 2  # test / condition
+        __ announce(p, '2-bedrooms, found {}'.f..(p.beds)) a.. p.beds __ 2  # test / condition
     )
 
     homes  []
@@ -109,11 +109,11 @@ ___ query_data(data):  # list[Purchase]):
     ave_baths  statistics.mean((p.baths ___ p __ homes))
     ave_sqft  statistics.mean((p.sq__ft ___ p __ homes))
     print("Average 2-bedroom home is ${:,}, baths={}, sq ft={:,}"
-          .format(i..(ave_price), round(ave_baths, 1), round(ave_sqft, 1)))
+          .f..(i..(ave_price), round(ave_baths, 1), round(ave_sqft, 1)))
 
 
 ___ announce(item, msg):
-    print("Pulling item {} for {}".format(item, msg))
+    print("Pulling item {} for {}".f..(item, msg))
     r.. item
 
 

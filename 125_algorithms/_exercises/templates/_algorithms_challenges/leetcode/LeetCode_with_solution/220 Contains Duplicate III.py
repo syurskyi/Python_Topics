@@ -31,10 +31,10 @@ class Solution:
             key = n/t
             ___ j __ (-1, 0, 1):  # (n-t, n, n+t), shrink the interval
                 m = od.get(key+j)
-                __ m __ n.. N.. and abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
+                __ m __ n.. N.. a.. abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
                     r.. True
 
-            while l..(od) >= k:
+            w.... l..(od) >= k:
                 od.popitem(False)  # not last, i.e. the first
 
             od[key] = n
@@ -47,7 +47,7 @@ class Solution:
             __ od.get(n):
                 r.. True
 
-            while l..(od) >= k:
+            w.... l..(od) >= k:
                 od.popitem(False)
 
             od[n] = n

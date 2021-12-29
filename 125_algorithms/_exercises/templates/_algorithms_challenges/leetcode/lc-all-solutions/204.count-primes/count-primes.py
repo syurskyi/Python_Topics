@@ -12,7 +12,7 @@ class Solution(object):
           k = i * i
           __ k >= n:
             r..
-          while k < n:
+          w.... k < n:
             dp[k] = 0
             k += i
 

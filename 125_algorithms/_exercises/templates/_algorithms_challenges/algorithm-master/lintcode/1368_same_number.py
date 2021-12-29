@@ -14,7 +14,7 @@ class Solution:
         gotcha = False
 
         ___ i __ r..(l..(nums)):
-            __ nums[i] __ idx and i - idx[nums[i]] < k:
+            __ nums[i] __ idx a.. i - idx[nums[i]] < k:
                 gotcha = True
 
             idx[nums[i]] = i

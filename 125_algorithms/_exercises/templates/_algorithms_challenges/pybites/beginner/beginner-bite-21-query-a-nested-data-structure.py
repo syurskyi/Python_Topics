@@ -73,7 +73,7 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
         ___ c __ value:
             __ grep.lower() __ c.lower():
                 r.a..(c)
-    r.sort()
+    r.s..()
     r.. r
 
 
@@ -82,7 +82,7 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
 ___ sort_car_models(cars=cars):
     """sort the car models (values)  and return the resulting cars dict"""
     ___ key, value __ cars.items():
-        value.sort()
+        value.s..()
     r.. cars
 
 get_all_jeeps(cars)

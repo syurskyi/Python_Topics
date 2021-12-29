@@ -38,7 +38,7 @@ class Solution(object):
         level    # list
         queue.a..(root)
         queue.a..(N..)
-        while queue:
+        w.... queue:
             root = queue.pop(0)
             __ root __ N..
                 res.a..(level[:])

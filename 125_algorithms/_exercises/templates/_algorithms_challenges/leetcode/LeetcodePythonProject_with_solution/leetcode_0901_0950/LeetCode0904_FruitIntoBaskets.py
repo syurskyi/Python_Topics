@@ -7,9 +7,9 @@ class Solution(object):
         left = 0
         res = 0
         hashmap = {}
-        ___ i, num __ enumerate(tree):
+        ___ i, num __ e..(tree):
             hashmap[num] = hashmap.get(num, 0) + 1
-            while l..(hashmap) > 2:
+            w.... l..(hashmap) > 2:
                 hashmap[tree[left]] -= 1
                 __ hashmap[tree[left]] __ 0:
                     del hashmap[tree[left]]

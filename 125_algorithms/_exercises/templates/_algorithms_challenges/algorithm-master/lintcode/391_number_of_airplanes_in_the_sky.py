@@ -21,7 +21,7 @@ class Solution:
         ___ interval __ airplanes:
             timeline.a..((interval.start, 1))
             timeline.a..((interval.end, 0))
-        timeline.sort()
+        timeline.s..()
         ___ _, in_sky __ timeline:
             __ in_sky:
                 cnt += 1

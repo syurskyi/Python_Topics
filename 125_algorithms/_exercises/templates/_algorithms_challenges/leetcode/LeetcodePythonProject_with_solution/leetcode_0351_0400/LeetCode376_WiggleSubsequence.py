@@ -9,13 +9,13 @@ class Solution(object):
         __ n.. nums: r.. 0
         maxLen = 1
         i = 1
-        while i < l..(nums):
+        w.... i < l..(nums):
             __ nums[i] > nums[i-1]:
-                while i+1 < l..(nums) and nums[i] <= nums[i+1]:
+                w.... i+1 < l..(nums) a.. nums[i] <= nums[i+1]:
                     i += 1
                 maxLen += 1
             ____ nums[i-1] > nums[i]:
-                while i+1 < l..(nums) and nums[i+1] <= nums[i]:
+                w.... i+1 < l..(nums) a.. nums[i+1] <= nums[i]:
                     i += 1
                 maxLen += 1
             i += 1

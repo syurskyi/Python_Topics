@@ -22,7 +22,7 @@ class Solution(object):
         prev = dummy
         count = 1
         node = head
-        while node:
+        w.... node:
             __ count % k __ 0:
                 node = self.reverse(prev, node)
                 prev = node
@@ -34,7 +34,7 @@ class Solution(object):
         nextNode = tail.next
         p = prev.next
         res = p
-        while p != nextNode:
+        w.... p != nextNode:
             tmp = p.next
             p.next = prev.next
             prev.next = p

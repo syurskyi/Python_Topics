@@ -20,5 +20,5 @@ class Solution(object):
                 sumVal = val+pos[p2]
                 pos[p1] += sumVal//10
                 pos[p2] = sumVal%10
-        res = ''.join([str(n) ___ n __ pos]).lstrip('0')
+        res = ''.join([s..(n) ___ n __ pos]).lstrip('0')
         r.. res __ res ____ '0'

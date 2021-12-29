@@ -3,7 +3,7 @@
 
 
 n = int(input())
-a = l..(map(int, input().split()))
+a = l..(map(int, input().s..()))
 
 count = 0
 

@@ -50,7 +50,7 @@ class Codec:
 
         ret    # list
         traverse(root, ret)
-        r.. self.DELIMITER.join(map(str, ret))
+        r.. self.DELIMITER.join(map(s.., ret))
 
     ___ deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -62,7 +62,7 @@ class Codec:
         __ n.. data:
             r..
             
-        lst = l..(map(int, data.split(self.DELIMITER)))
+        lst = l..(map(int, data.s..(self.DELIMITER)))
         root = TreeNode(lst[0])
         ___ insert(root, val):
             # need to keep the parent

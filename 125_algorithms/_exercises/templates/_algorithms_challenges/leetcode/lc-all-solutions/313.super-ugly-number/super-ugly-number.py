@@ -18,7 +18,7 @@ class Solution(object):
     ___ i __ r..(2, n + 1):
       minV = heap[0][0]
       dp[i] = minV
-      while heap[0][0] __ minV:
+      w.... heap[0][0] __ minV:
         value, xi = heapq.heappop(heap)
         indexes[xi] += 1
         heapq.heappush(heap, (dp[indexes[xi]] * primes[xi], xi))

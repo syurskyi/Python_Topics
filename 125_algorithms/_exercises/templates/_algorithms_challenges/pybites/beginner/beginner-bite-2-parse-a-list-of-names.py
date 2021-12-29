@@ -18,17 +18,17 @@ ___ dedup_and_title_case_names(names):
     new_list    # list
     ___ item __ names:
          __ item.t.. n.. __ new_list:
-             new_list.a..(item.title())
+             new_list.a..(item.t..
     r.. new_list
 
 ___ sort_by_surname_desc(names):
     """Returns names list sorted desc by surname"""
-    r.. s..(names, key=l.... x: x.split(" ")[1], reverse = True)
+    r.. s..(names, key=l.... x: x.s..(" ")[1], reverse = True)
 
 
 ___ shortest_first_name(names):
     """Returns the shortest first name (str)"""
-    r.. s..(names, key=l.... x: l..(x.split(" ")[0]))[0].split(" ")[0]
+    r.. s..(names, key=l.... x: l..(x.s..(" ")[0]))[0].s..(" ")[0]
 
 a = dedup_and_title_case_names(NAMES)
 print(a)

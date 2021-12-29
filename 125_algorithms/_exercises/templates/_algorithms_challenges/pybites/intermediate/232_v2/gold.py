@@ -19,7 +19,7 @@ gold_prices = """
 """  # noqa E501
 
 
-___ years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
+___ years_gold_value_decreased(gold_prices: s.. = gold_prices) -> (int, int):
     """Analyze gold_prices returning a tuple of the year the gold price
        decreased the most and the year the gold price increased the most.
     """
@@ -27,7 +27,7 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
     prices = gold_prices.s..
     df = pd.Series(prices)
 
-    df = df.str.extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
+    df = df.s...extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
     df = df.set_index('year').price.astype('float')
 
     differences = df.diff()

@@ -60,7 +60,7 @@ class Solution:
                     break
             __ visit[nbr] __ 1:
                 break
-            __ visit[nbr] __ 0 and n.. self.dfs(graph, nbr, visit, acyclic):
+            __ visit[nbr] __ 0 a.. n.. self.dfs(graph, nbr, visit, acyclic):
                 break
         ____:
             acyclic.add(cur)

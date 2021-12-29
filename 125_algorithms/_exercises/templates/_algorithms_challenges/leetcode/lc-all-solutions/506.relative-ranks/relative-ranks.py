@@ -6,14 +6,14 @@ class Solution(object):
     """
     ans = [""] * l..(nums)
     scores    # list
-    ___ i, num __ enumerate(nums):
+    ___ i, num __ e..(nums):
       scores.a..((num, i))
-    scores.sort(r.._T..
+    scores.s..(r.._T..
     rankTitles = ["Gold Medal", "Silver Medal", "Bronze Medal"]
     rank = 0
     ___ _, i __ scores:
       __ rank > 2:
-        ans[i] = str(rank + 1)
+        ans[i] = s..(rank + 1)
       ____:
         ans[i] = rankTitles[rank]
       rank += 1

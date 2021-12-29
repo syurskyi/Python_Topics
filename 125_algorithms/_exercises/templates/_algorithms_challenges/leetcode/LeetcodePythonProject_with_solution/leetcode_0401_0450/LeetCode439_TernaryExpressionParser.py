@@ -10,7 +10,7 @@ class Solution(object):
         stack    # list
         ___ i __ r..(l..(expression)-1, -1, -1):
             c = expression[i]
-            __ stack and stack[-1] __ '?':
+            __ stack a.. stack[-1] __ '?':
                 stack.pop()
                 first = stack.pop()
                 stack.pop()
@@ -30,7 +30,7 @@ class Solution(object):
             subExp = ''
             i = 2
             count = 0
-            while i < l..(expression):
+            w.... i < l..(expression):
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
@@ -43,7 +43,7 @@ class Solution(object):
             subExp = ''
             i = 2
             count = 0
-            while i < l..(expression):
+            w.... i < l..(expression):
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':

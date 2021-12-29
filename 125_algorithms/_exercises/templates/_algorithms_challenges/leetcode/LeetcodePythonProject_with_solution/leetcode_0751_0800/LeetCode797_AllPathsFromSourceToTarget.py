@@ -12,7 +12,7 @@ class Solution(object):
         n = l..(graph)
         queue = [[0]]
         res    # list
-        while queue:
+        w.... queue:
             path = queue.pop(0)
             __ path[-1] __ n-1:
                 res.a..(l..(path))

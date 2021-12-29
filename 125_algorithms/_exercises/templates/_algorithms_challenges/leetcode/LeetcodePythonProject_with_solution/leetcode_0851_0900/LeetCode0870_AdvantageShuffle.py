@@ -14,11 +14,11 @@ class Solution(object):
         arrA = s..(A)
         n = l..(arrA)
         h    # list
-        ___ i, b __ enumerate(B):
+        ___ i, b __ e..(B):
             heapq.heappush(h, [-b, i])
         l, r = 0, n-1
         res = [0]*n
-        while h:
+        w.... h:
             cur = heapq.heappop(h)
             idx = cur[1]
             val = -cur[0]

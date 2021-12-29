@@ -16,7 +16,7 @@ class Solution(object):
             pos = False
             x = -x
         t = 0
-        while x != 0:
+        w.... x != 0:
             t = t * 10 + x % 10
             x /= 10
         __ n.. pos:

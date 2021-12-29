@@ -22,13 +22,13 @@ __ n.. Path(DATA_LOCAL).exists():
 ___ movies():
     files    # list
     with open(DATA_LOCAL) as f:
-        ___ i, line __ enumerate(f.readlines(), 1):
+        ___ i, line __ e..(f.readlines(), 1):
             movie_json = TMP / f'{i}.json'
             with open(movie_json, 'w') as f:
                 f.write(f'{line}\n')
             files.a..(movie_json)
 
-    yield get_movie_data(files)
+    y.. get_movie_data(files)
 
     # teardown
     ___ file_ __ files:

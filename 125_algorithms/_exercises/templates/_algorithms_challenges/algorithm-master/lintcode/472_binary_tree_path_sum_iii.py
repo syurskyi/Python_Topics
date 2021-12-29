@@ -39,11 +39,11 @@ class Solution:
         __ remaining __ 0:
             ans.a..(path[:])
 
-        __ node.parent and node.parent __ n.. start:
+        __ node.parent a.. node.parent __ n.. start:
             self.find_path(node.parent, node, remaining, ans, path)
-        __ node.left and node.left __ n.. start:
+        __ node.left a.. node.left __ n.. start:
             self.find_path(node.left, node, remaining, ans, path)
-        __ node.right and node.right __ n.. start:
+        __ node.right a.. node.right __ n.. start:
             self.find_path(node.right, node, remaining, ans, path)
 
         path.pop()

@@ -11,7 +11,7 @@ ___ tail(filepath, n):
     lines = lines[-n:]
 
 
-    r.. l..(map(l.... x: x.strip(),lines))
+    r.. l..(map(l.... x: x.s..,lines))
 
 
 

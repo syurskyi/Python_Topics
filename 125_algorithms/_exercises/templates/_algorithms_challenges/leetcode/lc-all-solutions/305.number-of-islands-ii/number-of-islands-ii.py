@@ -40,7 +40,7 @@ class Solution(object):
       grid |= {(i, j)}
       ___ di, dj __ dirs:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < m and 0 <= nj < n and (ni, nj) __ grid:
+        __ 0 <= ni < m a.. 0 <= nj < n a.. (ni, nj) __ grid:
           __ uf.union((ni * n + nj, i * n + j)):
             ans -= 1
       ret.a..(ans)

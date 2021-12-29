@@ -25,17 +25,17 @@ class ToxIniParser:
         envs    # list
         __ 'tox' __ self.config:
             __ '\n' __ self.config['tox']['envlist']:
-                lines = self.config['tox']['envlist'].strip().splitlines()
+                lines = self.config['tox']['envlist'].s...splitlines()
                 ___ line __ lines:
                     __ ',' __ line:
-                        values = line.split(',')
+                        values = line.s..(',')
                         ___ value __ values:
                             envs.a..(value.strip())
                     ____:
                         envs.a..(line.strip())
                 r.. [env ___ env __ envs __ env != '']
             ____:
-                r.. [value.strip() ___ value __ self.config['tox']['envlist'].strip().split(',')]
+                r.. [value.s.. ___ value __ self.config['tox']['envlist'].s...s..(',')]
 
 
 

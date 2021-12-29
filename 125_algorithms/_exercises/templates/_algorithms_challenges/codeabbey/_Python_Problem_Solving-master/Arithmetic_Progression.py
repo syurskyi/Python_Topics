@@ -1,7 +1,7 @@
 d = int(input())
 count = 0
 res    # list
-while count < d:
+w.... count < d:
     a = input().s..
     a = l..(map(int,a))
     val = a[0]
@@ -15,5 +15,5 @@ while count < d:
     res.a..(result)
     count = count + 1
     
-res = ' '.join(str(j) ___ j __ res)
+res = ' '.join(s..(j) ___ j __ res)
 print(res)

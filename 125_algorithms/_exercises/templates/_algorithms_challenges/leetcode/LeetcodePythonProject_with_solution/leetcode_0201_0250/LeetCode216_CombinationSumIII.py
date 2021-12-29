@@ -17,7 +17,7 @@ class Solution(object):
         r.. result
     
     ___ helper(self, elem, start, k, n, result):
-        __ l..(elem) __ k and n __ 0:
+        __ l..(elem) __ k a.. n __ 0:
             result.a..(l..(elem))
             r..
         __ n < 0:

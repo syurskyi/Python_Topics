@@ -20,6 +20,6 @@ class Solution(object):
             mod = mod//(n-i)
             curInd = k//mod
             k = k % mod
-            res += str(nums[curInd])
+            res += s..(nums[curInd])
             nums.pop(curInd)
         r.. res

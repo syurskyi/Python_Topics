@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 ____ bs4 _______ BeautifulSoup
 _______ requests
@@ -8,7 +8,7 @@ _______ requests
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index.html
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index2.html
 
-Entry = namedtuple('Entry', 'title points comments')
+Entry = n..('Entry', 'title points comments')
 
 
 ___ _create_soup_obj(url):
@@ -29,8 +29,8 @@ ___ get_top_titles(url, top=5):
     news_all = soup.find_all('span', {'class': 'title'})
     news_points_all = soup.find_all('span', {'class': 'controls'})
     ___ i __ r..(l..(news_all)):
-        meta = news_points_all[i].span.text.strip().s..
-        title_list.a..(Entry(news_all[i].get_text().strip(), int(meta[0]), int(meta[-2])))
+        meta = news_points_all[i].span.text.s...s..
+        title_list.a..(Entry(news_all[i].get_text().s.., int(meta[0]), int(meta[-2])))
     title_list = s..(title_list, key=l.... x: (x.points, x.comments), r.._T..
     r.. [title_list[i] ___ i __ r..(top)]
 

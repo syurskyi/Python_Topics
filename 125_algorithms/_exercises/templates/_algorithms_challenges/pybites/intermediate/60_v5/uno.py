@@ -1,10 +1,10 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 SUITS = 'Red Green Yellow Blue'.s..
 
-UnoCard = namedtuple('UnoCard', 'suit name')
+UnoCard = n..('UnoCard', 'suit name')
 
-SUIT_VALUES = '1,2,3,4,5,6,7,8,9,Draw Two,Skip,Reverse'.split(',')
+SUIT_VALUES = '1,2,3,4,5,6,7,8,9,Draw Two,Skip,Reverse'.s..(',')
 
 
 ___ create_uno_deck():
@@ -14,12 +14,12 @@ ___ create_uno_deck():
     cards    # list
     ___ suit __ SUITS:
         add_suit(cards.a.., suit)
-    ___ value __ 'Wild,Wild Draw Four'.split(',') * 4:
+    ___ value __ 'Wild,Wild Draw Four'.s..(',') * 4:
         cards.a..(UnoCard(N.., value))
     r.. cards
 
 
-___ add_suit(cards_append, suit: str):
+___ add_suit(cards_append, suit: s..):
     cards_append(UnoCard(suit, '0'))
     ___ value __ SUIT_VALUES:
         cards_append(UnoCard(suit, value))

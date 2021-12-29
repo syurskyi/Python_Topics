@@ -16,9 +16,9 @@ class Solution(object):
     
     ___ getHash(self, word):
         arr = [[0]*26, [0]*26]
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             arr[i%2][ord(c)-ord('a')] += 1
-        r.. '|'.join([','.join(str(num) ___ num __ arr0) ___ arr0 __ arr])
+        r.. '|'.join([','.join(s..(num) ___ num __ arr0) ___ arr0 __ arr])
     
     ___ test(self):
         testCases = [

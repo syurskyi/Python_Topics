@@ -87,7 +87,7 @@ class Solution(object):
         stk    # list
 
         i = 0
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i] __ '[':
                 stk.a..(NestedInteger())
                 i += 1
@@ -101,7 +101,7 @@ class Solution(object):
                 i += 1
             ____:
                 j = i
-                while j < l..(s) and (s[j].isdigit() o. s[j] __ '-'): j += 1
+                w.... j < l..(s) a.. (s[j].isdigit() o. s[j] __ '-'): j += 1
 
                 ni = NestedInteger(int(s[i: j]) __ s[i: j] ____ N..)
                 __ n.. stk: r.. ni

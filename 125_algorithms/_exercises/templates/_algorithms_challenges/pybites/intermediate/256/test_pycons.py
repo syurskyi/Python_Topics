@@ -1,4 +1,4 @@
-_______ datetime
+_______ d__
 
 _______ pytest
 
@@ -37,10 +37,10 @@ ___ test_get_pycon_events_cities(pycon_events):
 
 ___ test_get_pycon_events_dates(pycon_events):
     ... a..(
-        isi..(event.start_date, datetime.datetime)
+        isi..(event.start_date, d__.d__)
         ___ event __ pycon_events
     )
-    ... a..(isi..(event.end_date, datetime.datetime)
+    ... a..(isi..(event.end_date, d__.d__)
                ___ event __ pycon_events)
 
 
@@ -62,11 +62,11 @@ ___ test_filter_pycons_cities(filtered_pycons):
 
 ___ test_filter_pycons_dates(filtered_pycons):
     ... a..(
-        isi..(event.start_date, datetime.datetime)
+        isi..(event.start_date, d__.d__)
         ___ event __ filtered_pycons
     )
     ... a..(
-        isi..(event.end_date, datetime.datetime)
+        isi..(event.end_date, d__.d__)
         ___ event __ filtered_pycons
     )
 

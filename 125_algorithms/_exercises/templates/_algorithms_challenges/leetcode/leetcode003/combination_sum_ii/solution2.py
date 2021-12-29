@@ -3,7 +3,7 @@ class Solution:
     # @param target, integer
     # @return a list of lists of integers
     ___ combinationSum2(self, candidates, target):
-        candidates.sort()
+        candidates.s..()
         res    # list
         cand    # list
         self.combination_sum_aux(candidates, target, cand, res)
@@ -14,7 +14,7 @@ class Solution:
             res.a..(cand[:])
         ____:
             prev = N..
-            ___ i, c __ enumerate(candidates):
+            ___ i, c __ e..(candidates):
                 __ prev __ N.. o. prev != c:
                     __ target - c >= 0:
                         cand.a..(c)

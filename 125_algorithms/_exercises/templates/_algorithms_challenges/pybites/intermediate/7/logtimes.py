@@ -1,4 +1,4 @@
-____ datetime _______ datetime, timedelta
+____ d__ _______ d__, t..
 _______ os
 _______ time
 _______ urllib.request
@@ -27,10 +27,10 @@ ___ convert_to_datetime(line):
        returns:
        datetime(2014, 7, 3, 23, 27, 51)
     """
-    line_split = line.split(" ")
+    line_split = line.s..(" ")
     ___ word __ line_split:
         try:
-            line_ts = datetime.strptime(word, "%Y-%m-%dT%H:%M:%S")
+            line_ts = d__.strptime(word, "%Y-%m-%dT%H:%M:%S")
             r.. line_ts
         except:
             continue

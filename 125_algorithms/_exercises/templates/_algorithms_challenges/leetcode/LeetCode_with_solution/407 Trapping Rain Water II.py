@@ -69,11 +69,11 @@ class Solution(object):
 
         # BFS with heap
         trapped = 0
-        while h:
+        w.... h:
             cur = heapq.heappop(h)
             ___ dir __ self.dirs:
                 I, J = cur.i+dir[0], cur.j+dir[1]
-                __ 0 <= I < m and 0 <= J < n and n.. visited[I][J]:
+                __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
                     nxt = Cell(I, J, mat[I][J])
                     __ nxt.h < cur.h:  # fill
                         trapped += cur.h - nxt.h

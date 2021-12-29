@@ -22,4 +22,4 @@ ___ create_user_bar_chart(content):
                     key=l.... x: x[0])
 
     ___ c __ counts:
-        print(FMT_STR.format(tz=c[0], bar='+' * c[1]))
+        print(FMT_STR.f..(tz=c[0], bar='+' * c[1]))

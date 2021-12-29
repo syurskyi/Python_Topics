@@ -14,7 +14,7 @@ class Solution(object):
     dummy.next = head
     p = dummy
 
-    while p and p.next:
+    w.... p a.. p.next:
       __ p.val __ p.next.val:
         p.next = p.next.next
       ____:

@@ -23,10 +23,10 @@ class Solution(object):
         count = 0
         maxCount = 0
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
             __ node.val != prev:
                 count = 1
@@ -39,7 +39,7 @@ class Solution(object):
             ____ count __ maxCount:
                 res.a..(node.val)
             node0 = node.right
-            while node0:
+            w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
         r.. res

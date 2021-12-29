@@ -54,7 +54,7 @@ class CBTInserter:
         self.candidates = deque()
         self.root = root
         q = [root]  # can also use deque
-        while q:
+        w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e.left:
@@ -74,7 +74,7 @@ class CBTInserter:
         ____:
             pi.right = node
 
-        __ pi.left and pi.right:
+        __ pi.left a.. pi.right:
             self.candidates.popleft()
 
         self.candidates.a..(node)

@@ -12,6 +12,6 @@ class School(object):
     ___ grade(self, level):
         r.. self.db[level]
 
-    ___ sort(self):
+    ___ s..(self):
         r.. s..((grade, tuple(s..(students)))
                       ___ grade, students __ self.db.items())

@@ -25,7 +25,7 @@ class Solution:
         ___ e __ set(nums):
             __ l..(h) < 3:
                 heapq.heappush(h, e)
-            ____ l..(h) __ 3 and e > h[0]:
+            ____ l..(h) __ 3 a.. e > h[0]:
                 heapq.heappushpop(h, e)
 
         ... l..(h) <= 3

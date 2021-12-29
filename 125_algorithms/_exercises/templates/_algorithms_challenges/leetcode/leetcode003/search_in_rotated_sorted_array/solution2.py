@@ -18,7 +18,7 @@ class Solution(object):
         """
         left = 0
         right = l..(nums) - 1
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) / 2
             __ target __ nums[mid]:
                 r.. mid

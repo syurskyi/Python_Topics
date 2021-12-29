@@ -8,8 +8,8 @@ class Solution(object):
     :type s: List[int]
     :rtype: int
     """
-    cookies.sort()
-    children.sort()
+    cookies.s..()
+    children.s..()
     i = 0
     ___ cookie __ cookies:
       __ i >= l..(children):

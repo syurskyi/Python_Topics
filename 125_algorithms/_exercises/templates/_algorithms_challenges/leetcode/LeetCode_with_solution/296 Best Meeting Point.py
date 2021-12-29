@@ -7,9 +7,9 @@ __author__ = 'Daniel'
 
 class Solution(object):
     ___ minTotalDistance_3lines(self, grid):
-        x = s..([i ___ i, row __ enumerate(grid) ___ v __ row __ v __ 1])
-        y = s..([j ___ row __ grid ___ j, v __ enumerate(row) __ v __ 1])
-        r.. s..([abs(x[l..(x)/2]-i)+abs(y[l..(y)/2]-j) ___ i, row __ enumerate(grid) ___ j, v __ enumerate(row) __ v __ 1])
+        x = s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
+        y = s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
+        r.. s..([abs(x[l..(x)/2]-i)+abs(y[l..(y)/2]-j) ___ i, row __ e..(grid) ___ j, v __ e..(row) __ v __ 1])
 
     ___ minTotalDistance(self, grid):
         """
@@ -27,8 +27,8 @@ class Solution(object):
                     x.a..(i)
                     y.a..(j)
 
-        x.sort()
-        y.sort()
+        x.s..()
+        y.s..()
         cnt = l..(x)
         point = (x[cnt/2], y[cnt/2])
         ret = 0

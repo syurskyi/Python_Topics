@@ -12,7 +12,7 @@ class Solution:
             r.. N..
         slow = head
         fast = head
-        while fast __ n.. N.. and fast.next __ n.. N..
+        w.... fast __ n.. N.. a.. fast.next __ n.. N..
             slow = slow.next
             fast = fast.next.next
             __ fast __ slow:
@@ -22,7 +22,7 @@ class Solution:
             r.. N..
         # Has a cycle, put `slow` back to head
         slow = head
-        while True:
+        w... T...
             __ fast __ slow:
                 break
             slow = slow.next

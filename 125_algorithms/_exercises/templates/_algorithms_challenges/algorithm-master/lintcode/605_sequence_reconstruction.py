@@ -35,7 +35,7 @@ class Solution:
                     edges[seq[i]] = set()
 
                 # dedup same edge
-                __ i > 0 and seq[i] n.. __ edges[seq[i - 1]]:
+                __ i > 0 a.. seq[i] n.. __ edges[seq[i - 1]]:
                     indeg[seq[i]] += 1
                     edges[seq[i - 1]].add(seq[i])
 

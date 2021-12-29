@@ -1,5 +1,5 @@
-str  input("Insert some strings: ")
-totalstr  str.s.. 
+s..  input("Insert some strings: ")
+totalstr  s...s..
 
 longest  0
 

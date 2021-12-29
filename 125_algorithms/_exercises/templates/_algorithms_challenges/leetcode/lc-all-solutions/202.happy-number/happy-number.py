@@ -6,10 +6,10 @@ class Solution(object):
     """
     record = {}
     sq_sum = 0
-    while n != 1:
+    w.... n != 1:
       sq_sum = 0
       sub_num = n
-      while sub_num > 0:
+      w.... sub_num > 0:
         sq_sum += (sub_num % 10) * (sub_num % 10)
         sub_num /= 10
       __ sq_sum __ record:

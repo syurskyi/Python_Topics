@@ -16,7 +16,7 @@ class Solution:
             r.. [N..]
         ____:
             res    # list
-            ___ i, c __ enumerate(a):
+            ___ i, c __ e..(a):
                 left = self.generate_bst(a[:i])
                 right = self.generate_bst(a[i + 1:])
                 ___ l __ left:

@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 ____ bs4 _______ BeautifulSoup as Soup
 _______ requests
@@ -6,7 +6,7 @@ _______ requests
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
 CONTENT = requests.get(PACKT).text
 
-Book = namedtuple('Book', 'title description image link')
+Book = n..('Book', 'title description image link')
 
 
 ___ get_book():
@@ -14,10 +14,10 @@ ___ get_book():
     soup = Soup(CONTENT, "html.parser")
 
     # Book title
-    book_title = soup.find_all("div", class_="dotd-title")[0].get_text().strip()
+    book_title = soup.find_all("div", class_="dotd-title")[0].get_text().s..
 
     # Book description
-    book_description = soup.find("div", class_="dotd-main-book-summary").select("div")[2].get_text().strip()
+    book_description = soup.find("div", class_="dotd-main-book-summary").select("div")[2].get_text().s..
 
     # Link
     book_link = [a["href"] ___ a __ soup.find("div", class_="dotd-main-book-image").select("a[href]")][0]

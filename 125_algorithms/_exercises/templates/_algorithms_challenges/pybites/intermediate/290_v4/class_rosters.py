@@ -3,7 +3,7 @@ _______ csv
 
 ___ process_classes(classes: l..) -> l..:
     '''cleans and returns classes according to SIS as list'''
-    r.. [cls.split(' - ')[0].replace('"', '') ___ cls __ classes __ cls]
+    r.. [cls.s..(' - ')[0].r..('"', '') ___ cls __ classes __ cls]
 
 
 ___ process_row(row):

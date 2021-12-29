@@ -42,8 +42,8 @@ class ValidWordAbbr:
             r.. word
 
         cnt = l..(word) - 2
-        r.. '{}{}{}'.format(
+        r.. '{}{}{}'.f..(
             word[0],
-            str(cnt),
+            s..(cnt),
             word[-1]
         )

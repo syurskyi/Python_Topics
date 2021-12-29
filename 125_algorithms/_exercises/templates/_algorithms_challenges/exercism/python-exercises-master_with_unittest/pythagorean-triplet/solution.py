@@ -1,4 +1,4 @@
-____ itertools _______ product
+____ i.. _______ product
 ____ functools _______ reduce
 ____ operator _______ mul
 ____ math _______ sqrt
@@ -10,8 +10,8 @@ ___ primitive_triplets(nbr):
     prime_factors, powers = factor(nbr / 2)
     args = [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers))]
     a = [reduce(mul, p) ___ p __ product(*args)]
-    a.sort()
-    factors = [(m, n) ___ m, n __ zip(reversed(a), a) __ m > n]
+    a.s..()
+    factors = [(m, n) ___ m, n __ z..(reversed(a), a) __ m > n]
     ts = set()
     ___ m, n __ factors:
         ts.update([tuple(s..([nbr, m * m - n * n, m * m + n * n]))])
@@ -20,7 +20,7 @@ ___ primitive_triplets(nbr):
 
 ___ is_triplet(t):
     t = l..(t)
-    t.sort()
+    t.s..()
     a, b, c = t
     r.. c * c __ a * a + b * b
 
@@ -30,7 +30,7 @@ ___ triplets_in_range(m, n):
     ___ a __ r..(m, n + 1):
         ___ b __ r..(a + 1, n + 1):
             c = int(sqrt(a * a + b * b) + 0.5)
-            __ c * c __ a * a + b * b and c >= m and c <= n:
+            __ c * c __ a * a + b * b a.. c >= m a.. c <= n:
                 t.update([(a, b, c)])
     r.. t
 
@@ -56,14 +56,14 @@ ___ factor(n):
     factors    # list
     powers    # list
     idx = 0
-    while n > 1:
+    w.... n > 1:
         prime = primes[idx]
         idx += 1
         __ n % prime != 0:
             continue
         factors.a..(prime)
         p = 0
-        while n % prime __ 0:
+        w.... n % prime __ 0:
             p += 1
             n /= prime
         powers.a..(p)

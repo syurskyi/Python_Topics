@@ -17,13 +17,13 @@ class Solution:
         __ n.. root:
             r.. float('-inf')
 
-        __ root.left and target < root.val:
+        __ root.left a.. target < root.val:
             left = self.closestValue(root.left, target)
 
             __ abs(left - target) < abs(root.val - target):
                 r.. left
 
-        __ root.right and target > root.val:
+        __ root.right a.. target > root.val:
             right = self.closestValue(root.right, target)
 
             __ abs(right - target) < abs(root.val - target):

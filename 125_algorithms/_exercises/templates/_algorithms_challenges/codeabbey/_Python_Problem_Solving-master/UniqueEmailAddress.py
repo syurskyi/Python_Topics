@@ -7,7 +7,7 @@ ___ i __ x:
     j = 0
     plus_check = False
     string = ''
-    while i[j]!= '@':
+    w.... i[j]!= '@':
         __ plus_check __ False:
             __ i[j] __ '.':
                 i.pop(j)

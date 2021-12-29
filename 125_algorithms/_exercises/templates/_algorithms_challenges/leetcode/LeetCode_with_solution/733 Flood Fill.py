@@ -59,5 +59,5 @@ class Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and image[I][J] __ cur_color:
+            __ 0 <= I < m a.. 0 <= J < n a.. image[I][J] __ cur_color:
                 self.dfs(image, I, J, cur_color, new_color)

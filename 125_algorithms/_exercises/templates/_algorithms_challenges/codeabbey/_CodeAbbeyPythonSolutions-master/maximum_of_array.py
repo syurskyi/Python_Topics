@@ -1,4 +1,4 @@
-values = l..(map(int, input().split()))
+values = l..(map(int, input().s..()))
 
 ___ get_max_and_min():
     max = values[0]

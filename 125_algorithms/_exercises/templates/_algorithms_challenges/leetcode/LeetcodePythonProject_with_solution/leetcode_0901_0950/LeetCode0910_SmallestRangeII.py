@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: int
         """
         __ n.. A: r.. 0
-        A.sort()
+        A.s..()
         res = A[-1] - A[0]
         ___ i __ r..(l..(A)-1):
             minVal = m..(A[0]+2*K, A[i+1])

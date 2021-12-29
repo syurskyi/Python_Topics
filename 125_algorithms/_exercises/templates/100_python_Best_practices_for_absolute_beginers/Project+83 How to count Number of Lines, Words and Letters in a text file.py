@@ -10,7 +10,7 @@ ___ line __ open(fp):
 
     pos  'out'
     ___ letter __ line:
-        __ letter ! ' ' and pos __ 'out':
+        __ letter ! ' ' a.. pos __ 'out':
             words + 1
             pos  'in'
         ____ letter __ ' ':

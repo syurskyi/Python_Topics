@@ -41,7 +41,7 @@ class Solution:
             _a = self.find(nodes, a)
             _b = self.find(nodes, b)
 
-            __ a != b and _a != _b:
+            __ a != b a.. _a != _b:
                 r.. False
 
         r.. True
@@ -93,7 +93,7 @@ class Solution2:
             a = words1[i]
             b = words2[i]
 
-            __ a != b and n.. self.dfs(a, b, simils, set()):
+            __ a != b a.. n.. self.dfs(a, b, simils, set()):
                 r.. False
 
         r.. True

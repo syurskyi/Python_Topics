@@ -9,7 +9,7 @@ class Solution(object):
         nums = A
         sumVal = 0
         sample = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             sample += i*num
             sumVal += num
         maxVal = sample

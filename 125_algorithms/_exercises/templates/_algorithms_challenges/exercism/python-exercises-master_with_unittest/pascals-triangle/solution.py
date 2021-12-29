@@ -11,4 +11,4 @@ ___ row(nth):
     r = [1]
     ___ i __ r..(1, nth + 1):
         r.a..(int(r[-1] * (nth - i + 1) / i))
-    r.. " ".join([str(i) ___ i __ r])
+    r.. " ".join([s..(i) ___ i __ r])

@@ -34,7 +34,7 @@ class BSTIterator:
         node = self.node
         stack = self.stack
 
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
 

@@ -21,7 +21,7 @@ class Solution(object):
                 gotNegative = True
             ____ crossProduct > 0:
                 gotPositive = True
-            __ gotNegative and gotPositive: r.. False
+            __ gotNegative a.. gotPositive: r.. False
         r.. True
     
     ___ crossProductLength(self, ax, ay, bx, by, cx, cy):

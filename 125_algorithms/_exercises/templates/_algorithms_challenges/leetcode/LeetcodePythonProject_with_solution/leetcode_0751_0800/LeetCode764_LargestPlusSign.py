@@ -20,13 +20,13 @@ class Solution(object):
             ___ j __ r..(n):
                 __ matrix[i][j] __ 0:
                     continue
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     dp[i][j][0] = 1
                     dp[i][j][1] = 1
-                ____ i __ 0 and j != 0:
+                ____ i __ 0 a.. j != 0:
                     dp[i][j][0] = dp[i][j-1][0]+1
                     dp[i][j][1] = 1
-                ____ i != 0 and j __ 0:
+                ____ i != 0 a.. j __ 0:
                     dp[i][j][0] = 1
                     dp[i][j][1] = dp[i-1][j][1]+1
                 ____:
@@ -36,13 +36,13 @@ class Solution(object):
             ___ j __ r..(n-1, -1, -1):
                 __ matrix[i][j] __ 0:
                     continue
-                __ i __ n-1 and j __ n-1:
+                __ i __ n-1 a.. j __ n-1:
                     dp[i][j][2] = 1
                     dp[i][j][3] = 1
-                ____ i __ n-1 and j != n-1:
+                ____ i __ n-1 a.. j != n-1:
                     dp[i][j][2] = 1
                     dp[i][j][3] = dp[i][j+1][3]+1
-                ____ i != n-1 and j __ n-1:
+                ____ i != n-1 a.. j __ n-1:
                     dp[i][j][2] = dp[i+1][j][2]+1
                     dp[i][j][3] = 1
                 ____:

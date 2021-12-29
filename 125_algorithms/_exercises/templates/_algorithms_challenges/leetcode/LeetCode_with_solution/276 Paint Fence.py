@@ -62,7 +62,7 @@ class Solution(object):
                         __ i __ 2:
                             F[i%2][j0][j1] = F[(i-1)%2][j1][EMPTY]
 
-                        ____ j1 __ j2 and j0 != j1:
+                        ____ j1 __ j2 a.. j0 != j1:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
                         ____ j1 != j2:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
@@ -98,7 +98,7 @@ class Solution(object):
                         __ i __ 2:
                             F[i][j0][j1] = F[i-1][j1][EMPTY]
 
-                        ____ j1 __ j2 and j0 != j1:
+                        ____ j1 __ j2 a.. j0 != j1:
                             F[i][j0][j1] += F[i-1][j1][j2]
                         ____ j1 != j2:
                             F[i][j0][j1] += F[i-1][j1][j2]

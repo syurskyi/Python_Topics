@@ -103,7 +103,7 @@ ___ mix(s1,s2):
                     check_int1 = float(res_string[j][0])
                     check_int2 = float(res_string[j+1][0])
                     #if the variable is in integer form then proceed
-                    __ check_int1.is_integer() and check_int2.is_integer():
+                    __ check_int1.is_integer() a.. check_int2.is_integer():
                         
                         #Here we check if the integer is greater or no if yes then swap
                         __ check_int1 > check_int2:
@@ -117,7 +117,7 @@ ___ mix(s1,s2):
                 except:
                     
                     #if jth and j+1th element has = sign then proceed
-                    __ res_string[j][0] __ '=' and res_string[j+1][0] __ '=':
+                    __ res_string[j][0] __ '=' a.. res_string[j+1][0] __ '=':
                         
                         #if the char of jth is greater than j+1th char then swap
                         __ res_string[j][2] > res_string[j+1][2]:
@@ -133,7 +133,7 @@ ___ mix(s1,s2):
                 pass
     
     
-    main_string = '/'.join(str(e) ___ e __ res_string)
+    main_string = '/'.join(s..(e) ___ e __ res_string)
     r.. main_string
     
 mix(s1,s2)

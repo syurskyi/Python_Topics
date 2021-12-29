@@ -50,7 +50,7 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        nums.sort()
+        nums.s..()
         s = s..(nums)
         __ s % 2 != 0:
             r.. False

@@ -8,10 +8,10 @@ ___ run_length_encoding(s):
 		__ char __ c:
 			count += 1
 		____:
-			res.a..([count,str(char)])
+			res.a..([count,s..(char)])
 			char = c
 			count = 1
-	res.a..([count,str(char)])
+	res.a..([count,s..(char)])
 	r.. res
 
 

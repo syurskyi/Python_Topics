@@ -5,7 +5,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
 ____ collections _______ Counter
-____ itertools _______ product
+____ i.. _______ product
 
 CHEESES = [
     "Red Leicester",

@@ -19,7 +19,7 @@ class Solution(object):
             ind = -1
             valid = True
             ___ c __ word:
-                ___ i, set0 __ enumerate(sets):
+                ___ i, set0 __ e..(sets):
                     __ c.lower() __ set0:
                         __ ind __ -1:
                             ind = i

@@ -82,7 +82,7 @@ org_bites = [bite_15_en, bite_202_en, bite_209_en]
 translated = [bite_15_it, bite_202_de, bite_209_es]
 fixed = [bite_15_it_fixed, bite_202_de_fixed, bite_209_es_fixed]
 
-translations = zip(org_bites, translated, fixed)
+translations = z..(org_bites, translated, fixed)
 
 
 @pytest.mark.parametrize("org, trans, fix", translations)

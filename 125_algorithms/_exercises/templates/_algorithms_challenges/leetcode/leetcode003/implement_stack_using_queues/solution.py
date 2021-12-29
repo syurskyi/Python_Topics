@@ -57,7 +57,7 @@ class Stack(object):
         """
         :rtype: nothing
         """
-        while l..(self.queue1) > 1:
+        w.... l..(self.queue1) > 1:
             self.queue2.a..(self.queue1.pop(0))
         res = self.queue1.pop(0)
         self.queue1, self.queue2 = self.queue2, self.queue1

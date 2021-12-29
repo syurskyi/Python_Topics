@@ -4,6 +4,6 @@ ___ sortIndexes(amount, values):
     ___ sortedValue __ sortedValues:
         ___ x __ r..(amount):
             __ sortedValue __ values[x]:
-                answer.a..(str(x+1))
+                answer.a..(s..(x+1))
     print(' '.join(answer))
 sortIndexes(input(),[int(x) ___ x __ raw_input().s.. ])

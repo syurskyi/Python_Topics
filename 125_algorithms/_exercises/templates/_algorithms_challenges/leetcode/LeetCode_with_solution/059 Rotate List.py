@@ -35,7 +35,7 @@ class Solution:
         # find length
         length = 0
         pre = dummy
-        while pre.next:
+        w.... pre.next:
             length += 1
             pre = pre.next
         # find the last one
@@ -47,7 +47,7 @@ class Solution:
         # find breaking point
         count = 0
         pre = dummy
-        while count<length-k:  # you will appreciate python's half open range and 0-based index k
+        w.... count<length-k:  # you will appreciate python's half open range and 0-based index k
             count += 1
             pre = pre.next
 

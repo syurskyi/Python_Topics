@@ -15,5 +15,5 @@ class Solution(object):
             ____ num % 3 __ 0:
                 result.a..('Fizz')
             ____:
-                result.a..(str(num))
+                result.a..(s..(num))
         r.. result

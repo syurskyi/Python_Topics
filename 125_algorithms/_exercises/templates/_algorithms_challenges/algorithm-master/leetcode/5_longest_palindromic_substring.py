@@ -27,7 +27,7 @@ class Solution:
     ___ check_palindrome(self, s, left, right):
         n = l..(s)
 
-        while left >= 0 and right < n and s[left] __ s[right]:
+        w.... left >= 0 a.. right < n a.. s[left] __ s[right]:
             left -= 1
             right += 1
 

@@ -10,11 +10,11 @@ class Solution(object):
     lenP = l..(p)
     lastMatchPos = 0
     lastStarPos = -1
-    while i < l..(s):
-      __ j < lenP and p[j] __ (s[i], "?"):
+    w.... i < l..(s):
+      __ j < lenP a.. p[j] __ (s[i], "?"):
         i += 1
         j += 1
-      ____ j < lenP and p[j] __ "*":
+      ____ j < lenP a.. p[j] __ "*":
         lastMatchPos = i
         lastStarPos = j
         j += 1
@@ -24,6 +24,6 @@ class Solution(object):
         j = lastStarPos + 1
       ____:
         r.. False
-    while j < lenP and p[j] __ "*":
+    w.... j < lenP a.. p[j] __ "*":
       j += 1
     r.. j __ lenP

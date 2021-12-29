@@ -16,11 +16,11 @@ class Solution(object):
         :rtype: int
         """
         _______ heapq
-        intervals.sort(key=l.... x: x.start)
+        intervals.s..(key=l.... x: x.start)
         heap    # list
         maxLen = 0
         ___ interval __ intervals:
-            while heap and heap[0] <= interval.start:
+            w.... heap a.. heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
             maxLen = max(maxLen, l..(heap))

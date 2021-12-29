@@ -13,7 +13,7 @@ class Solution(object):
     :rtype: int
     """
     ans = p.val
-    while p:
+    w.... p:
       __ abs(target - p.val) < abs(ans - target):
         ans = p.val
       __ target < p.val:

@@ -11,7 +11,7 @@ ___ output():
 
 
 ___ test_return_type(output):
-    ... type(output) __ str
+    ... type(output) __ s..
 
 
 ___ test_extracted_data_is_correct(output):

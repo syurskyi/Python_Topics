@@ -14,7 +14,7 @@ class Solution(object):
         __ n.. matrix o. n.. matrix[0]: r.. False
         m, n = l..(matrix), l..(matrix[0])
         i, j = m-1, 0
-        while i >= 0 and j < n:
+        w.... i >= 0 a.. j < n:
             __ matrix[i][j] __ target:
                 r.. True
             ____ matrix[i][j] > target:
@@ -32,7 +32,7 @@ class Solution(object):
         __ n.. matrix o. n.. matrix[0]: r.. False
         m, n = l..(matrix), l..(matrix[0])
         i, j = 0, n-1
-        while i < m and j >= 0:
+        w.... i < m a.. j >= 0:
             __ matrix[i][j] __ target:
                 r.. True
             ____ matrix[i][j] > target:
@@ -50,7 +50,7 @@ class Solution(object):
         __ n.. matrix o. n.. matrix[0]:
             r.. False
         start, end = 0, l..(matrix)-1
-        while start <= end:
+        w.... start <= end:
             mid = int((start+end)/2)
             __ matrix[mid][0] __ target:
                 r.. True
@@ -61,7 +61,7 @@ class Solution(object):
         row0 = start __ start < l..(matrix) ____ start-1
         ___ row __ r..(row0, -1, -1):
             start, end = 0, l..(matrix[0])-1
-            while start <= end:
+            w.... start <= end:
                 mid = int((start+end)/2)
                 __ matrix[row][mid] __ target:
                     r.. True

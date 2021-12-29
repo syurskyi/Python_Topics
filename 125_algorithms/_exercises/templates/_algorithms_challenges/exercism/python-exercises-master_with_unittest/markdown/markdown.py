@@ -2,7 +2,7 @@ _______ re
 
 
 ___ parse_markdown(markdown):
-    lines = markdown.split('\n')
+    lines = markdown.s..('\n')
     res = ''
     in_list = False
     ___ i __ lines:

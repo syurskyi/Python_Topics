@@ -26,11 +26,11 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: str = HTML) -> d..:
+___ extract_quotes(html: s.. = HTML) -> d..:
   """See instructions in the Bite description"""
 
   quotes = {}
-  quotes_raw = re.split("<p>", html)
+  quotes_raw = re.s..("<p>", html)
   ___ quote __ quotes_raw:
     quote_temp = re.search("^\d", quote)
     __ quote_temp:
@@ -38,7 +38,7 @@ ___ extract_quotes(html: str = HTML) -> d..:
       quote_clean_end = quote_temp.string.rfind('<')
       quote_clean = quote_temp.string[quote_clean_start:quote_clean_end]
 
-      value, key = quote_clean.split(" - ")
+      value, key = quote_clean.s..(" - ")
       quotes[key] = value.strip('"')
 
   r.. quotes

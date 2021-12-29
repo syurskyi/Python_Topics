@@ -1,5 +1,5 @@
 _______ sys
-_______ itertools
+_______ i..
 _______ os
 _______ urllib.request
 
@@ -13,7 +13,7 @@ urllib.request.urlretrieve(
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.strip().lower() ___ word __ f.read().s.. ])
+    dictionary = set([word.s...lower() ___ word __ f.read().s.. ])
 
 
 ___ get_possible_dict_words(draw):
@@ -29,5 +29,5 @@ ___ _get_permutations_draw(draw):
        use itertools.permutations (order of letters matters)"""
     draw = ''.join(draw).lower()
     ___ k __ r..(1, l..(draw)+1):
-        ___ perm __ itertools.permutations(draw, r=k):
-            yield ''.join(perm)
+        ___ perm __ i...permutations(draw, r=k):
+            y.. ''.join(perm)

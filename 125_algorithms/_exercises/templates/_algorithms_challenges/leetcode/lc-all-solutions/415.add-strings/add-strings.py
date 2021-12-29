@@ -18,9 +18,9 @@ class Solution(object):
       s.. = a + b + c
       __ s.. >= 10:
         carry = 1
-        ans += str(s.. - 10)
+        ans += s..(s.. - 10)
       ____:
-        ans += str(s..)
+        ans += s..(s..)
     __ carry __ 1:
       ans += "1"
     r.. ans[::-1]

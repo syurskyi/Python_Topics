@@ -13,7 +13,7 @@ class Solution:
         target = l..(A) - 1
         start = end = jumps = 0
 
-        while end < target:
+        w.... end < target:
             jumps += 1
             furthest = end
             ___ i __ r..(start, end + 1):
@@ -45,7 +45,7 @@ class Solution:
 
         ___ i __ r..(1, n):
             ___ j __ r..(i):
-                __ (dp[j] < INFINITY and j + A[j] >= i and
+                __ (dp[j] < INFINITY a.. j + A[j] >= i a..
                     dp[j] + 1 < dp[i]):
                     dp[i] = dp[j] + 1
 

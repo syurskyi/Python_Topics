@@ -1,6 +1,6 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ isodate
-_______ datetime
+_______ d__
 
 # import os
 # import urllib.request
@@ -14,7 +14,7 @@ _______ datetime
 # urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = namedtuple('Video', 'id title duration metrics')
+Video = n..('Video', 'id title duration metrics')
 
 # POSSIBLE DASK ERROR. UNABLE TO LOAD PICKLE FILE
 # MANUALLY INSERTED BELOW
@@ -720,10 +720,10 @@ ___ get_video_duration(video):
 
 ___ get_talks_gt_one_hour(videos):
     """Filter the videos list down to videos of > 1 hour"""
-    r.. [video ___ video __ videos __ get_video_duration(video) >= datetime.timedelta(hours=1)]
+    r.. [video ___ video __ videos __ get_video_duration(video) >= d__.t..(hours=1)]
 
 
 ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
-    r.. [video ___ video __ videos __ get_video_duration(video) < datetime.timedelta(minutes=24)]
+    r.. [video ___ video __ videos __ get_video_duration(video) < d__.t..(minutes=24)]

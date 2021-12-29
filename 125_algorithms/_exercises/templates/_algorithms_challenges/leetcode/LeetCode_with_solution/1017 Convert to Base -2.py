@@ -31,7 +31,7 @@ ____ collections _______ deque
 
 
 class Solution:
-    ___ baseNeg2(self, N: int) -> str:
+    ___ baseNeg2(self, N: int) -> s..:
         """
         % -2, // -2 ? not really
 
@@ -53,13 +53,13 @@ class Solution:
         (-2) ^ 0, LSB set
         """
         ret = deque()
-        while N != 0:
+        w.... N != 0:
             r = N % 2  # r is the range of 0 and 2
             ret.appendleft(r)
             N -= r
             N //= -2
 
-        r.. "".join(map(str, ret)) o. "0"
+        r.. "".join(map(s.., ret)) o. "0"
 
 
 __ __name__ __ "__main__":

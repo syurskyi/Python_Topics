@@ -37,7 +37,7 @@ class Solution:
         _queue = N..
         _x = _y = steps = 0
 
-        while queue:
+        w.... queue:
             _queue    # list
             steps += 1
 
@@ -46,11 +46,11 @@ class Solution:
                     _x = P.x + dx
                     _y = P.y + dy
 
-                    __ (0 <= _x < m and 0 <= _y < n and
-                        n.. G[_x][_y] and
+                    __ (0 <= _x < m a.. 0 <= _y < n a..
+                        n.. G[_x][_y] a..
                         steps < min_steps[_x][_y]):
 
-                        __ _x __ T.x and _y __ T.y:
+                        __ _x __ T.x a.. _y __ T.y:
                             r.. steps
 
                         min_steps[_x][_y] = steps

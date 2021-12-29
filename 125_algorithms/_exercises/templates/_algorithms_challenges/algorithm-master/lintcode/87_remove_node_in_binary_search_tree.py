@@ -43,6 +43,6 @@ class Solution:
     ___ find_min(self, node):
         __ n.. node:
             r.. node
-        while node.left:
+        w.... node.left:
             node = node.left
         r.. node

@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 _______ csv
 ____ pathlib _______ Path
 _______ sqlite3
@@ -9,7 +9,7 @@ DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path('/tmp')
 DB = TMP / 'nba.db'
 
-Player = namedtuple('Player', ('name year first_year team college active '
+Player = n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'))
 
 conn = sqlite3.connect(DB)

@@ -78,7 +78,7 @@ class Solution:
 
         clone = UndirectedGraphNode(node.label)
         original2copy[node] = clone
-        while q:
+        w.... q:
             cur = q.pop()
             ___ neighbor __ cur.neighbors:
                 __ neighbor __ original2copy:  # already copied

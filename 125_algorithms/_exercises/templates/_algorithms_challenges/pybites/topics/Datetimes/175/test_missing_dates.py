@@ -1,4 +1,4 @@
-____ datetime _______ date, timedelta
+____ d__ _______ date, t..
 ____ random _______ shuffle
 
 _______ pytest
@@ -6,7 +6,7 @@ _______ pytest
 ____ missing_dates _______ get_missing_dates
 
 
-___ _create_dates(missing, year=2019, month=2):
+___ _create_dates(missing, year=2019,  m.._2):
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -14,18 +14,18 @@ ___ _create_dates(missing, year=2019, month=2):
 
        You can optionally specify year and month.
     """
-    first = date(year=year, month=month, day=1)
-    last = first.replace(month=month+1) - timedelta(days=1)
+    first = date y.._year,  m.._month,  d.._1)
+    last = first.r..( m.._month+1) - t..(days=1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
-    yield first
+    y.. first
 
     ___ day __ r..(first.day + 1, last.day):
         __ day n.. __ missing:
-            yield first.replace(day=day)
+            y.. first.r..( d.._day)
 
-    yield last
+    y.. last
 
 
 @pytest.mark.parametrize("missing, month", [
@@ -37,7 +37,7 @@ ___ _create_dates(missing, year=2019, month=2):
     (l..(r..(1, 31)), 6),  # 0 missing
 ])
 ___ test_get_missing_dates(missing, month):
-    my_date_range = l..(_create_dates(missing, month=month))
+    my_date_range = l..(_create_dates(missing,  m.._month))
     start, end = my_date_range[0].day, my_date_range[-1].day
 
     # order passed in arg should not matter

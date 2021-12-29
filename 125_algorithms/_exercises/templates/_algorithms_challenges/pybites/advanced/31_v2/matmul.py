@@ -12,7 +12,7 @@ class Matrix(object):
 
     @staticmethod
     ___ _matrix_mult(mat1, mat2):
-        result = [([s..(a * b ___ a, b __ zip(x, y)) ___ y __ zip(*mat2)]) ___ x __ mat1]
+        result = [([s..(a * b ___ a, b __ z..(x, y)) ___ y __ z..(*mat2)]) ___ x __ mat1]
         r.. result
 
     ___ __matmul__(self, other):

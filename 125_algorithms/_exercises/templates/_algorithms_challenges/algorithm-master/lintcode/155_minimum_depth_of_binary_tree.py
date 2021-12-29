@@ -18,12 +18,12 @@ class Solution:
             r.. ans
 
         queue = [root]
-        while queue:
+        w.... queue:
             _queue    # list
             ans += 1
 
             ___ node __ queue:
-                __ n.. node.left and n.. node.right:
+                __ n.. node.left a.. n.. node.right:
                     r.. ans
                 __ node.left:
                     _queue.a..(node.left)
@@ -44,7 +44,7 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             r.. 1
 
         left = self.minDepth(root.left)

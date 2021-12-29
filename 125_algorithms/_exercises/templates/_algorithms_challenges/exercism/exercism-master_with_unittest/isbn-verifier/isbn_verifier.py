@@ -2,7 +2,7 @@ class IsbnVerifier(object):
 
     VALID_SEPERATOR = "-"
     VALID_CHECK_CHARACTER = "X"
-    VALID_DIGITS = l..(map(str, l..(r..(0, 10))))
+    VALID_DIGITS = l..(map(s.., l..(r..(0, 10))))
     VALID_CHARACTERS = (set(VALID_DIGITS) |
                         set([VALID_SEPERATOR, VALID_CHECK_CHARACTER]))
     VALID_LENGTH = 10
@@ -16,7 +16,7 @@ class IsbnVerifier(object):
     @classmethod
     ___ verify(cls, string):
         sum_so_far = 0
-        ___ i, c __ enumerate(cls.remove_seperator(string)):
+        ___ i, c __ e..(cls.remove_seperator(string)):
             sum_so_far += cls.convert_char_to_int(c) * (10 - i)
         r.. sum_so_far % 11 __ 0
 
@@ -37,7 +37,7 @@ class IsbnVerifier(object):
 
     @classmethod
     ___ invalid_X_other_than_check_digit(cls, string):
-        r.. (cls.VALID_CHECK_CHARACTER __ string and
+        r.. (cls.VALID_CHECK_CHARACTER __ string a..
                 n.. string.endswith(cls.VALID_CHECK_CHARACTER))
 
     @classmethod

@@ -23,7 +23,7 @@ latin letters.
 
 
 class Solution:
-    ___ detectCapitalUse(self, word: str) -> bool:
+    ___ detectCapitalUse(self, word: s..) -> bool:
         """
         Two passes is easy
         How to do it in one pass

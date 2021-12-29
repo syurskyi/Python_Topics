@@ -22,7 +22,7 @@ class BinaryIndexTree(object):
         n = l..(nums)
         self.nums = [0 ___ _ __ xrange(n+1)]
         self.N = [0 ___ _ __ xrange(n+1)]
-        ___ i, v __ enumerate(nums):
+        ___ i, v __ e..(nums):
             self.set(i+1, v)
 
     ___ _lowbit(self, a):
@@ -31,13 +31,13 @@ class BinaryIndexTree(object):
     ___ set(self, i, val):
         diff = val - self.nums[i]
         self.nums[i] = val
-        while i < l..(self.N):
+        w.... i < l..(self.N):
             self.N[i] += diff
             i += self._lowbit(i)
 
     ___ get(self, i):
         ret = 0
-        while i > 0:
+        w.... i > 0:
             ret += self.N[i]
             i -= self._lowbit(i)
 

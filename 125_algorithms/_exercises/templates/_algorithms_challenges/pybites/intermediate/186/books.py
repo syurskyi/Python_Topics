@@ -1,9 +1,9 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ math _______ floor
 ____ dateutil.parser _______ parse
 
 # work with a static date for tests, real use = datetime.now()
-NOW = datetime(2019, 3, 17, 16, 28, 42, 966663)
+NOW = d__(2019, 3, 17, 16, 28, 42, 966663)
 WEEKS_PER_YEAR = 52
 
 

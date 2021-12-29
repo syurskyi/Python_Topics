@@ -1,11 +1,11 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ pytest
 
 ____ rename_keys _______ rename_keys
 
 
 ___ fb(value):
-    r.. str(value)
+    r.. s..(value)
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -25,14 +25,14 @@ ___ fb(value):
                                   'id': 12345,
                                   'email': 'jane@example.com'}}),
                         ({'@contentUrl': 'contentUrl',
-                         '@createdAt': datetime.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
+                         '@createdAt': d__.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
                           '@defaultViewId': 'defaultViewId',
                           '@encryptExtracts': False,
                           '@id': 'id',
                           '@name': 'Login',
                           '@showTabs': True,
                           '@size': 1,
-                          '@updatedAt': datetime.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
+                          '@updatedAt': d__.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
                           '@webpageUrl': 'webpageUrl',
                           'dataAccelerationConfig': {'@accelerationEnabled': False},
                           'owner': {'@id': 'id', '@name': 'name'},
@@ -53,7 +53,7 @@ ___ fb(value):
                                               '@viewUrlName': 'viewUrlName',
                                               'tags': {'tag': {'@label': 'label'}}}]}},
                          {'contentUrl': 'contentUrl',
-                          'createdAt': datetime(2020, 6, 11, 9, 8, 13),
+                          'createdAt': d__(2020, 6, 11, 9, 8, 13),
                           'dataAccelerationConfig': {'accelerationEnabled': False},
                           'defaultViewId': 'defaultViewId',
                           'encryptExtracts': False,
@@ -64,7 +64,7 @@ ___ fb(value):
                           'showTabs': True,
                           'size': 1,
                           'tags': {'tag': {'label': 'label'}},
-                          'updatedAt': datetime(2020, 7, 20, 6, 41, 34),
+                          'updatedAt': d__(2020, 7, 20, 6, 41, 34),
                           'views': {'view': [{'contentUrl': 'contentUrl',
                                               'createdAt': '2020-06-11T09:08:13Z',
                                               'id': 'id',

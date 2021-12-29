@@ -11,11 +11,11 @@ class Solution:
     ___ minDepth(self, root):
         __ root __ N..
             r.. 0
-        __ root.left __ N.. and root.right __ N..
+        __ root.left __ N.. a.. root.right __ N..
             r.. 1
-        ____ root.left __ N.. and root.right __ n.. N..
+        ____ root.left __ N.. a.. root.right __ n.. N..
             r.. self.minDepth(root.right) + 1
-        ____ root.left __ n.. N.. and root.right __ N..
+        ____ root.left __ n.. N.. a.. root.right __ N..
             r.. self.minDepth(root.left) + 1
         ____:
             left_min = self.minDepth(root.left)

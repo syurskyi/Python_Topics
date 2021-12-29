@@ -1,9 +1,9 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 
-TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
+TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = datetime.now()
+NOW = d__.now()
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -21,7 +21,7 @@ ___ pretty_date(date):
        using TIME_OFFSETS"""
     
 
-    __ type(date) != datetime:
+    __ type(date) != d__:
         raise ValueError("Not a datetime")
 
     __ date > NOW:
@@ -38,7 +38,7 @@ ___ pretty_date(date):
 
 
             __ '{}' __ time_string:
-                r.. time_string.format(delta)
+                r.. time_string.f..(delta)
             ____:
                 r.. time_string
 

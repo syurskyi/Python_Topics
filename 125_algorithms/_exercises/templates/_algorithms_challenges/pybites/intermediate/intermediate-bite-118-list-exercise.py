@@ -1,4 +1,4 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
 """
 First idea was to go through the list and build a dictionary holding:

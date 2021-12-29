@@ -12,7 +12,7 @@ class Solution(object):
         """
         l, r = 0, l..(nums)
         res = [float('inf'), float('-inf')]
-        while l < r:
+        w.... l < r:
             mid = (l+r)//2
             __ target __ nums[mid]:
                 res[1] = max(res[1], mid)
@@ -22,7 +22,7 @@ class Solution(object):
             ____:
                 l = mid+1
         l, r = 0, l..(nums)
-        while l < r:
+        w.... l < r:
             mid = (l+r)//2
             __ target __ nums[mid]:
                 res[0] = m..(res[0], mid)

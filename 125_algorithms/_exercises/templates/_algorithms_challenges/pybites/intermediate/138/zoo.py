@@ -1,4 +1,4 @@
-____ itertools _______ count
+____ i.. _______ count
 
 class Animal:
 

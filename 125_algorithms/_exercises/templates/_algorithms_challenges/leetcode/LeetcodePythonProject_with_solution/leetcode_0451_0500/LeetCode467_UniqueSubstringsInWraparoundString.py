@@ -12,8 +12,8 @@ class Solution(object):
         """
         count = [0]*26
         maxCurrLen = 0
-        ___ i, c __ enumerate(p):
-            __ i > 0 and (ord(c)-ord(p[i-1])__1 o. (c__'a' and p[i-1]__'z')):
+        ___ i, c __ e..(p):
+            __ i > 0 a.. (ord(c)-ord(p[i-1])__1 o. (c__'a' a.. p[i-1]__'z')):
                 maxCurrLen += 1
             ____:
                 maxCurrLen = 1

@@ -19,10 +19,10 @@ class Solution(object):
         Loop & DFS
         :return: pattern can match s
         """
-        __ n.. pattern and s o. n.. s and pattern:
+        __ n.. pattern a.. s o. n.. s a.. pattern:
             r.. False
 
-        __ n.. pattern and n.. s:
+        __ n.. pattern a.. n.. s:
             r.. True
 
 

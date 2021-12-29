@@ -1,4 +1,4 @@
-____ datetime _______ datetime, date
+____ d__ _______ d__, date
 ____ unittest.mock _______ patch
 
 _______ pytest
@@ -15,8 +15,8 @@ class AttrDict(d..):
         self.__dict__ = self
 
 
-dt1 = datetime(2018, 2, 18, 19, 52, 0).timetuple()
-dt2 = datetime(2017, 1, 6, 11, 0, 0).timetuple()
+dt1 = d__(2018, 2, 18, 19, 52, 0).timetuple()
+dt2 = d__(2017, 1, 6, 11, 0, 0).timetuple()
 
 MOCK_ENTRIES = AttrDict({'entries':
                 [AttrDict({'author': 'PyBites',
@@ -44,12 +44,12 @@ MOCK_ENTRIES = AttrDict({'entries':
 
 
 @pytest.mark.parametrize("arg, ret", [
-    (datetime(2017, 9, 12, 8, 50, 0).timetuple(),
-     date(year=2017, month=9, day=12)),
-    (datetime(2017, 9, 8, 14, 30, 0).timetuple(),
-     date(year=2017, month=9, day=8)),
-    (datetime(2016, 12, 19, 9, 26, 0).timetuple(),
-     date(year=2016, month=12, day=19)),
+    (d__(2017, 9, 12, 8, 50, 0).timetuple(),
+     date y.._2017,  m.._9,  d.._12)),
+    (d__(2017, 9, 8, 14, 30, 0).timetuple(),
+     date y.._2017,  m.._9,  d.._8)),
+    (d__(2016, 12, 19, 9, 26, 0).timetuple(),
+     date y.._2016,  m.._12,  d.._19)),
 ])
 ___ test_convert_struct_time_to_dt(arg, ret):
     ... _convert_struct_time_to_dt(arg) __ ret
@@ -59,14 +59,14 @@ ___ test_convert_struct_time_to_dt(arg, ret):
 ___ test_get_feed_entries(inp):
     first, last = tuple(get_feed_entries())
 
-    ... first.date __ date(year=2018, month=2, day=18)
+    ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'
     ... first.link __ 'https://pybit.es/twitter_digest_201808.html'
     expected = ['flask', 'python', 'regex', 'twitter']
     # allow list or set
     ... s..(l..(first.tags)) __ expected
 
-    ... last.date __ date(year=2017, month=1, day=6)
+    ... last.date __ date y.._2017,  m.._1,  d.._6)
     ... last.title __ 'Copy and Paste with Pyperclip'
     ... last.link __ 'https://pybit.es/pyperclip.html'
     expected = ['code', 'pybites', 'python', 'tips', 'tricks']
@@ -104,7 +104,7 @@ ___ test_main(entries, inp, capfd):
     main()
     out, _ = capfd.readouterr()
 
-    output = [line ___ line __ out.split('\n') __ line.strip()]
+    output = [line ___ line __ out.s..('\n') __ line.s..]
 
     expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
@@ -117,5 +117,5 @@ ___ test_main(entries, inp, capfd):
 
     ... l..(output) __ l..(expected)
 
-    ___ line, exp __ zip(output, expected):
+    ___ line, exp __ z..(output, expected):
         ... exp __ line

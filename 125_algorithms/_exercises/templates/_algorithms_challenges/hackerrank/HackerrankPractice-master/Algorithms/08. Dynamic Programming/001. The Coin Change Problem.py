@@ -2,8 +2,8 @@
 # Score: 60
 
 
-n, m = map(int, input().split())
-coins = l..(map(int, input().split()))
+n, m = map(int, input().s..())
+coins = l..(map(int, input().s..()))
 ans = [1] + [0] * n
 ___ i __ r..(m):
     ___ j __ r..(coins[i], n + 1):

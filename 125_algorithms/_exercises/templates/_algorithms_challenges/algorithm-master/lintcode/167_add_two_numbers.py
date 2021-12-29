@@ -17,7 +17,7 @@ class Solution:
         dummy = tail = ListNode(-1)
         carry = 0
 
-        while A and B:
+        w.... A a.. B:
             carry += A.val + B.val
             tail.next = ListNode(carry % 10)
             carry //= 10
@@ -25,14 +25,14 @@ class Solution:
             A = A.next
             B = B.next
 
-        while A:
+        w.... A:
             carry += A.val
             tail.next = ListNode(carry % 10)
             carry //= 10
             tail = tail.next
             A = A.next
 
-        while B:
+        w.... B:
             carry += B.val
             tail.next = ListNode(carry % 10)
             carry //= 10

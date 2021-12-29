@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ json
 _______ os
 ____ pathlib _______ Path
@@ -26,7 +26,7 @@ ___ signs():
 
 # write your pytest code here ...
 ___ test_named_tuple(signs):
-    ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.split(' '))
+    ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.s..(' '))
     ... repr(signs[0]).startswith('Sign(')
 
 
@@ -76,4 +76,4 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
 ])
 ___ test_get_sign_by_date(signs, dt, result):
     m, d = dt
-    ... get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) __ result
+    ... get_sign_by_date(signs, d__ y.._2000,  m.._m,  d.._d)) __ result

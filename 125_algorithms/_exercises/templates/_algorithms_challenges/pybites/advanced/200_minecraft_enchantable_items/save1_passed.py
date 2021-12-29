@@ -25,11 +25,11 @@ ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
 class Enchantment:
     """Minecraft enchantment"""
 
-    id_name: str
-    name: str
+    id_name: s..
+    name: s..
     max_level: int
-    description: str
-    items: List[str] = field(default_factory=l..)
+    description: s..
+    items: List[s..] = field(default_factory=l..)
 
     ___ __str__(self):
         r.. f"{self.name} ({self.max_level}): {self.description}"
@@ -42,7 +42,7 @@ class Enchantment:
 class Item:
     """Minecraft enchantable item"""
 
-    name: str
+    name: s..
     enchantments: List[Enchantment] = field(default_factory=l..)
 
     ___ __str__(self):
@@ -60,13 +60,13 @@ ___ clean_up_names(item_names):
     unwanted = (".png", "_sm", "iron_", "enchanted_")
 
     __ "fishing_rod" __ item_names:
-        item_names = item_names.replace("fishing_rod", "fishingrod")
+        item_names = item_names.r..("fishing_rod", "fishingrod")
 
     ___ chars __ unwanted:
         __ chars __ item_names:
-            item_names = item_names.replace(chars, "")
+            item_names = item_names.r..(chars, "")
 
-    item_names = item_names.split("_")
+    item_names = item_names.s..("_")
     item_names = [
         "fishing_rod" __ item __ "fishingrod" ____ item ___ item __ item_names
     ]
@@ -82,7 +82,7 @@ ___ enchantable_items(soup):
     """
     table = soup.find("table", {"id": "minecraft_items"})
     items = [
-        clean_up_names(img["data-src"].split("/")[-1]).s.. 
+        clean_up_names(img["data-src"].s..("/")[-1]).s..
         ___ img __ table.find_all("img")
     ]
 
@@ -99,7 +99,7 @@ ___ generate_enchantments(soup):
     data = parse_html(soup)
     enchant_data: DefaultDict[Any, Enchantment] = defaultdict(Enchantment)
 
-    ___ i, row __ enumerate(data):
+    ___ i, row __ e..(data):
         id_name, name = split_title(row[0])
         max_level = ROMAN[row[1]]
         description = row[2]
@@ -120,7 +120,7 @@ ___ generate_items(data):
     unique_items = gen_item_set(data)
 
     ___ item __ unique_items:
-        mc_items[item] = Item(item.replace("_", " "))
+        mc_items[item] = Item(item.r..("_", " "))
 
     ___ enchant __ data:
         ___ item __ data[enchant].items:

@@ -38,7 +38,7 @@ class Solution:
             r.. node
 
         curr = root
-        while curr __ n.. node:
+        w.... curr __ n.. node:
             __ node.val < curr.val:
                 __ curr.left __ N..
                     curr.left = node

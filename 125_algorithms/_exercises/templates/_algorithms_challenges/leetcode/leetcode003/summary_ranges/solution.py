@@ -15,7 +15,7 @@ class Solution(object):
         n = l..(nums)
         start = -1
         end = -1
-        ___ i, e __ enumerate(nums):
+        ___ i, e __ e..(nums):
             __ i __ 0:
                 start = 0
                 end = 0

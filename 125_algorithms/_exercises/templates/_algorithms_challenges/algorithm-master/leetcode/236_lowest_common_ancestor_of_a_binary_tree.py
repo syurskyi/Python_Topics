@@ -20,7 +20,7 @@ class Solution(object):
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
 
-        __ left and right:
+        __ left a.. right:
             r.. root
         __ left:
             r.. left

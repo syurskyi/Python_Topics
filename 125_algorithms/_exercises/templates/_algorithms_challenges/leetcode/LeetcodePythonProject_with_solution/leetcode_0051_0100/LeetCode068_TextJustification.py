@@ -30,7 +30,7 @@ class Solution(object):
         result    # list
         __ n.. words: r.. result
         count, last = 0, 0
-        ___ i, word __ enumerate(words):
+        ___ i, word __ e..(words):
             count += l..(word)
             __ count+i-last > maxWidth:
                 wordsLen = count-l..(word)
@@ -44,14 +44,14 @@ class Solution(object):
                 ___ k __ r..(last, i-1):
                     s += words[k]
                     ce = 0
-                    while ce < eachLen:
+                    w.... ce < eachLen:
                         s += ' '
                         ce += 1
                     __ extraLen > 0:
                         s += ' '
                         extraLen -= 1
                 s += words[i-1]
-                while l..(s) < maxWidth:
+                w.... l..(s) < maxWidth:
                     s += ' '
                 result.a..(s)
                 last = i

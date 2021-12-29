@@ -11,7 +11,7 @@ class Document:
         # feel free to alter this method and its parameters to your liking
         self.lines    # list
 
-    ___ add_line(self, line: str, index: int = N..) -> Document:
+    ___ add_line(self, line: s.., index: int = N..) -> Document:
         """Add a new line to the document.
 
         Args:
@@ -78,7 +78,7 @@ class Document:
         self.lines[indices[0]]= ' '.join(lines)
         
 
-        self.lines = [line ___ i,line __ enumerate(self.lines) __ i n.. __ indices[1:]]
+        self.lines = [line ___ i,line __ e..(self.lines) __ i n.. __ indices[1:]]
         
 
 
@@ -88,7 +88,7 @@ class Document:
 
 
 
-    ___ add_punctuation(self, punctuation: str, index: int) -> Document:
+    ___ add_punctuation(self, punctuation: s.., index: int) -> Document:
         """Add punctuation to the end of a sentence.
 
         Overwrites existing punctuation.
@@ -102,7 +102,7 @@ class Document:
         """
 
         line = self.lines[index]
-        __ line and line[-1] __ EOL_PUNCTUATION:
+        __ line a.. line[-1] __ EOL_PUNCTUATION:
             line = line[:-1] + punctuation
         ____:
             line += punctuation
@@ -111,7 +111,7 @@ class Document:
 
     ___ word_count(self) -> int:
         """Return the total number of words in the document."""
-        r.. s..(l..(self._remove_punctuation(line).split()) ___ line __ self.lines)
+        r.. s..(l..(self._remove_punctuation(line).s..()) ___ line __ self.lines)
 
     @property
     ___ words(self) -> l..:
@@ -128,7 +128,7 @@ class Document:
 
 
 
-    ___ _remove_punctuation(self,line: str) -> str:
+    ___ _remove_punctuation(self,line: s..) -> s..:
         """Remove punctuation from a line."""
         # you can use this function as helper method for
         # Document.word_count() and Document.words

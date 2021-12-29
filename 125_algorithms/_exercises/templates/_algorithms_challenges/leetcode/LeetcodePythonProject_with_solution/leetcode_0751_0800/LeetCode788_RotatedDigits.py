@@ -16,7 +16,7 @@ class Solution(object):
         r.. cnt
     
     ___ checkNum(self, num):
-        arr = l..(str(num))
+        arr = l..(s..(num))
         i, j = 0, l..(arr)-1
         arr0 = ['']*l..(arr)
         hashmap = {
@@ -28,8 +28,8 @@ class Solution(object):
             '9':'6',
             '0':'0',
         }
-        while i <= j:
-            __ arr[i] __ hashmap and arr[j] __ hashmap:
+        w.... i <= j:
+            __ arr[i] __ hashmap a.. arr[j] __ hashmap:
                 arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
                 i += 1
                 j -= 1

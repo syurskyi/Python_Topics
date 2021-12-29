@@ -12,7 +12,7 @@ class Solution(object):
         n = l..(board)
         queue = [(0, 0)]
         visited = set([0])
-        while queue:
+        w.... queue:
             i, d = queue.pop(0)
             ___ j __ r..(i+1, i+7):
                 __ j __ n-1:

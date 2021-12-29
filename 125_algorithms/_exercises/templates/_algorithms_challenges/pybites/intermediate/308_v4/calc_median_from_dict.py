@@ -1,4 +1,4 @@
-____ itertools _______ accumulate
+____ i.. _______ accumulate
 
 
 ___ calc_median_from_dict(d: d..) -> float:
@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     __ n.. isi..(d, d..) o. d __ N..
         raise TypeError
 
-    __ n.. a..([isi..(k, (int, float)) and k ___ k __ d.values()]):
+    __ n.. a..([isi..(k, (int, float)) a.. k ___ k __ d.values()]):
         raise TypeError
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts
@@ -27,7 +27,7 @@ ___ calc_median_from_dict(d: d..) -> float:
         print(f'{k=}')
         intervals.a..([lower + 1, k])
         lower = k
-    cums = [(interval, item) ___ interval, item __ zip(intervals, items)]
+    cums = [(interval, item) ___ interval, item __ z..(intervals, items)]
 
     # two cases, even length and odd length, next is same for both
     b = next(filter(l.... x: x[0][0] <= length // 2 + 1 <= x[0][1],

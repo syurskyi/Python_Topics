@@ -9,6 +9,6 @@ ___ get_progression(start, inc, s..):
     results.a..(progress)
 
 ___ i __ r..(amount_values):
-    start, inc, s.. = map(int, input().split())
+    start, inc, s.. = map(int, input().s..())
     get_progression(start,inc,s..)
 print(*results)

@@ -12,7 +12,7 @@ ___ get_checksum(values):
 
     r.. result
 
-values = l..(map(int, input().split()))
+values = l..(map(int, input().s..()))
 
 __ __name__ __ "__get_checksum__":
     get_checksum(values)

@@ -25,8 +25,8 @@ ___ formingMagicSquare(square):
 
 
 square = [
-    l..(map(int, input().split())),
-    l..(map(int, input().split())),
-    l..(map(int, input().split()))
+    l..(map(int, input().s..())),
+    l..(map(int, input().s..())),
+    l..(map(int, input().s..()))
     ]
 print(formingMagicSquare(square))

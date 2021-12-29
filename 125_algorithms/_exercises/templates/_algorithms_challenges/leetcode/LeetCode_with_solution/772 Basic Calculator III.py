@@ -23,7 +23,7 @@ Note: Do not use the eval built-in library function.
 
 
 class Solution:
-    ___ calculate(self, s: str) -> int:
+    ___ calculate(self, s: s..) -> int:
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
@@ -38,7 +38,7 @@ class Solution:
         """
         operand = 0
         prev_op = "+"
-        while i < l..(s):
+        w.... i < l..(s):
             c = s[i]
             __ c __ " ":
                 pass  # not continue since need trigger i += 1

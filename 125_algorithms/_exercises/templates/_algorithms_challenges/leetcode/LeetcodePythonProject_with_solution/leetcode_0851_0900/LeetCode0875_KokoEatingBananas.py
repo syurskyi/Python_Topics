@@ -11,9 +11,9 @@ class Solution(object):
         :rtype: int
         """
         _______ math
-        piles.sort()
+        piles.s..()
         l, r = 1, max(piles)
-        while l <= r:
+        w.... l <= r:
             mid = l+(r-l)//2
             sumVal = s..(math.ceil(float(num)/mid) ___ num __ piles)
             __ sumVal <= H:
@@ -39,7 +39,7 @@ class Solution(object):
         ]
         ___ piles, h __ testCases:
             res = self.minEatingSpeed(piles, h)
-            print('res: %s' % str(res))
+            print('res: %s' % s..(res))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

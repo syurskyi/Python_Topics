@@ -24,7 +24,7 @@ class Solution:
         __ length__0:
             result.a..(current)
 
-        ___ ind, val __ enumerate(nums):
+        ___ ind, val __ e..(nums):
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
@@ -36,7 +36,7 @@ class Solution:
         :return: a list of lists of integers
         """
         result    # list
-        num.sort()
+        num.s..()
         self.get_permute(num, [], result)
         r.. result
 
@@ -44,8 +44,8 @@ class Solution:
         __ n.. nums:
             result.a..(current)
 
-        ___ ind, val __ enumerate(nums):
-            __ ind-1>=0 and val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
+        ___ ind, val __ e..(nums):
+            __ ind-1>=0 a.. val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 __ __name____"__main__":

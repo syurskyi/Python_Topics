@@ -3,7 +3,7 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-_______ itertools
+_______ i..
 
 class Solution(object):
     ___ numSimilarGroups(self, A):
@@ -30,16 +30,16 @@ class Solution(object):
             r.. False
         
         ___ similar(x, y):
-            r.. s..(i != j ___ i, j __ zip(x, y)) __ 2
+            r.. s..(i != j ___ i, j __ z..(x, y)) __ 2
         
         ## Solution part ##
         __ n < m:
-            ___ x, y __ itertools.combinations(arr, 2):
+            ___ x, y __ i...combinations(arr, 2):
                 __ similar(x, y):
                     union(x, y)
         ____:
             ___ x __ arr:
-                ___ i, j __ itertools.combinations(r..(m), 2):
+                ___ i, j __ i...combinations(r..(m), 2):
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]
                     __ y __ parents:
                         union(x, y)

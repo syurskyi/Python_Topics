@@ -32,7 +32,7 @@ class Solution(object):
                 count += 1
         __ count != 2: r.. False
         ___ length __ lengths:
-            __ nonMax != length and maxVal != length:
+            __ nonMax != length a.. maxVal != length:
                 r.. False
         r.. True
     

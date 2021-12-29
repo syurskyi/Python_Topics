@@ -20,7 +20,7 @@ class Solution:
              l  r
         """
         left, mid, right = 0, 0, n - 1
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = left + (right - left) // 2
             __ A[mid] <= target:
                 left = mid

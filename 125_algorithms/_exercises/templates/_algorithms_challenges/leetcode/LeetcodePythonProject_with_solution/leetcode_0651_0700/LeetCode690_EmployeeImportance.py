@@ -30,7 +30,7 @@ class Solution(object):
             __ emp.id __ id:
                 queue.a..(emp)
         res = 0
-        while queue:
+        w.... queue:
             emp = queue.pop(0)
             subs = emp.subordinates
             res += emp.importance

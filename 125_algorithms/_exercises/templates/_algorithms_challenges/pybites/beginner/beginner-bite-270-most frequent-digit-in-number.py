@@ -23,7 +23,7 @@ https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dic
 ___ freq_digit(num: int) -> int:
 
     dict_num = {}
-    num_str = str(num)
+    num_str = s..(num)
     ___ num __ num_str:
         try:
             dict_num[num] += 1

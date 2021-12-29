@@ -4,9 +4,9 @@ num_ele, ele_type = [int(i) ___ i __ input().s.. ]
 ele    # list
 unique    # list
 
-while l..(ele) < ele_type:
+w.... l..(ele) < ele_type:
     num_count = [int(x) ___ x __ input().s.. ]
-    num_count.sort()
+    num_count.s..()
     #finding out unique elements in the list
     ___ x __ num_count:
         __ x n.. __ unique:

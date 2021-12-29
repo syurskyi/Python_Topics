@@ -30,7 +30,7 @@ class HashHeapq:
         i = 0
         n = l..(self.__heap)
 
-        while i < n and self.__heap[i] != val:
+        w.... i < n a.. self.__heap[i] != val:
             i += 1
 
         __ i __ n:
@@ -69,13 +69,13 @@ class Solution:
         ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
-                __ self.minheap and nums[i - k] >= self.minheap.top():
+                __ self.minheap a.. nums[i - k] >= self.minheap.top():
                     self.minheap.remove(nums[i - k])
                 ____:
                     self.maxheap.remove(- nums[i - k])
 
             # add nums[i]
-            __ self.minheap and nums[i] >= self.minheap.top():
+            __ self.minheap a.. nums[i] >= self.minheap.top():
                 self.minheap.push(nums[i])
             ____:
                 self.maxheap.push(- nums[i])
@@ -87,13 +87,13 @@ class Solution:
         r.. ans
 
     ___ get_median(self):
-        __ n.. self.minheap and n.. self.maxheap:
+        __ n.. self.minheap a.. n.. self.maxheap:
             r.. 0.0
 
-        while l..(self.minheap) > l..(self.maxheap) + 1:
+        w.... l..(self.minheap) > l..(self.maxheap) + 1:
             self.maxheap.push(- self.minheap.pop())
 
-        while l..(self.maxheap) > l..(self.minheap):
+        w.... l..(self.maxheap) > l..(self.minheap):
             self.minheap.push(- self.maxheap.pop())
 
         __ l..(self.minheap) > l..(self.maxheap):

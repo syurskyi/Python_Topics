@@ -30,7 +30,7 @@ class Palindromes:
 
     @staticmethod
     ___ is_palindrome(num):
-        r.. str(num) __ ''.join(reversed(str(num)))
+        r.. s..(num) __ ''.join(reversed(s..(num)))
 
 
 ___ smallest_palindrome(max_factor, min_factor=0):

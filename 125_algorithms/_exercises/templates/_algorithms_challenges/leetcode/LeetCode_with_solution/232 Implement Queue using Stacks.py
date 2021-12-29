@@ -32,7 +32,7 @@ class Queue:
         :rtype: None
         """
         __ n.. self.out_stk:
-            while self.in_stk:
+            w.... self.in_stk:
                 self.out_stk.a..(self.in_stk.pop())
 
         self.out_stk.pop()
@@ -42,7 +42,7 @@ class Queue:
         :rtype: int
         """
         __ n.. self.out_stk:
-            while self.in_stk:
+            w.... self.in_stk:
                 self.out_stk.a..(self.in_stk.pop())
 
         r.. self.out_stk[-1]
@@ -51,4 +51,4 @@ class Queue:
         """
         :rtype: bool
         """
-        r.. n.. self.out_stk and n.. self.in_stk
+        r.. n.. self.out_stk a.. n.. self.in_stk

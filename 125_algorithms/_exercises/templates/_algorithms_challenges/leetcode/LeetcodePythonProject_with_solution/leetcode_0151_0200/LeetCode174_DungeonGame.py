@@ -18,7 +18,7 @@ class Solution(object):
             tbl[-1][-1] = 1-dungeon[-1][-1]
         ___ i __ r..(m-1, -1, -1):
             ___ j __ r..(n-1, -1, -1):
-                __ i __ m-1 and j __ n-1:
+                __ i __ m-1 a.. j __ n-1:
                     continue
                 __ i __ m-1:
                     right = tbl[i][j+1] - dungeon[i][j]
@@ -26,7 +26,7 @@ class Solution(object):
                 __ j __ n-1:
                     down = tbl[i+1][j] - dungeon[i][j]
                     tbl[i][j] = max(1, down)
-                __ i != m-1 and j != n-1:
+                __ i != m-1 a.. j != n-1:
                     right = tbl[i][j+1] - dungeon[i][j]
                     down = tbl[i+1][j] - dungeon[i][j]
                     tbl[i][j] = max(1, m..(right, down))

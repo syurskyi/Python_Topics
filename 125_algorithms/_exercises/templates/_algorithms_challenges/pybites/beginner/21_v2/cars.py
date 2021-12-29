@@ -45,7 +45,7 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
             __ regex.search(car):
                 result.a..(car)
     
-    result.sort()
+    result.s..()
     r.. result
 
 

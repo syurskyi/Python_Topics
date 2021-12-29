@@ -45,10 +45,10 @@ class Say:
         ____:
             r.. ' '.join([self.convert_chunk_to_word(chunk, index)
                              ___ index, chunk
-                             __ enumerate(self.get_chunks(num))]).rstrip()
+                             __ e..(self.get_chunks(num))]).rstrip()
 
     ___ get_chunks(self, num):
-        reversed_string = str(num)[::-1]
+        reversed_string = s..(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
                             ___ i __ r..(0, l..(reversed_string), 3)])[::-1]
         r.. [int(x[::-1]) ___ x __ reversed_chunks]
@@ -76,11 +76,11 @@ class Say:
         chunk = ''
         __ hundreds:
             chunk += hundreds + ' hundred '
-        __ hundreds and tens:
+        __ hundreds a.. tens:
             chunk += 'and '
         __ tens:
             chunk += tens
-        __ tens and ones:
+        __ tens a.. ones:
             chunk += '-'
         __ ones:
             chunk += ones

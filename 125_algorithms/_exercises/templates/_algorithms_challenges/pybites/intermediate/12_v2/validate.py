@@ -1,6 +1,6 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
-User = namedtuple('User', 'name role expired')
+User = n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
 SECRET = 'I am a very secret token'
 

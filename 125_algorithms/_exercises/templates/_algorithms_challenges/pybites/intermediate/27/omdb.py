@@ -11,14 +11,14 @@ ___ get_movie_data(files: l..) -> l..:
     r.. movie_files
     
 
-___ get_single_comedy(movies: l..) -> str:
+___ get_single_comedy(movies: l..) -> s..:
     """return the movie with Comedy in Genres"""
     ___ movie __ movies:
         __ "Comedy" __ movie["Genre"]:
             r.. movie["Title"]
 
 
-___ get_movie_most_nominations(movies: l..) -> str:
+___ get_movie_most_nominations(movies: l..) -> s..:
     """Return the movie that had the most nominations"""
     nominations_dict = {}
     ___ movie __ movies:
@@ -31,7 +31,7 @@ ___ get_movie_most_nominations(movies: l..) -> str:
     r.. max(nominations_dict, key=nominations_dict.get)
 
 
-___ get_movie_longest_runtime(movies: l..) -> str:
+___ get_movie_longest_runtime(movies: l..) -> s..:
     """Return the movie that has the longest runtime"""
     runtime_dict = {}
     ___ movie __ movies:

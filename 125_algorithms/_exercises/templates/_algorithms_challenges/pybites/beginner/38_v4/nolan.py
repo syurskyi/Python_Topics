@@ -20,7 +20,7 @@ ___ get_tree() -> ET:
 ___ get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
     ___ movie __ get_tree().findall('movie'):
-        yield movie.attrib['title']
+        y.. movie.attrib['title']
 
 
 running_time = re.compile(r'(\d+) min')

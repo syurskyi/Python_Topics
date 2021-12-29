@@ -15,7 +15,7 @@ class Solution:
     ___ is_good(self, N):
         res = False
 
-        while N > 0:
+        w.... N > 0:
             D = N % 10
             __ D __ (3, 4, 7):
                 r.. False

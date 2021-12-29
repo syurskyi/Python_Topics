@@ -52,8 +52,8 @@ class Solution:
         stk    # list  # [[index, value]]
         i = 0
         cur = head
-        while cur:
-            while stk and stk[-1][1] < cur.val:
+        w.... cur:
+            w.... stk a.. stk[-1][1] < cur.val:
                 idx, _ = stk.pop()
                 ret[idx] = cur.val
 

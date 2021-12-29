@@ -27,7 +27,7 @@ class Solution:
             r.. l2
         __ l2 __ N..
             r.. l1
-        while l1 __ n.. N.. and l2 __ n.. N..
+        w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
                 cur = l1
                 l1 = l1.next
@@ -54,7 +54,7 @@ class Solution:
         ___ l __ lists:
             __ l __ n.. N..
                 heapq.heappush(h, (l.val, l))
-        while h:
+        w.... h:
             l = heapq.heappop(h)[1]
             __ res __ N..
                 res = l

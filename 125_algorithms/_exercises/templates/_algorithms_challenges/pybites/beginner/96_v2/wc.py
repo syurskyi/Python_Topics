@@ -12,7 +12,7 @@ ___ wc(file_):
     characters = 0
     words = 0
     ___ line __ lines:
-        words +=  l..(line.split())
+        words +=  l..(line.s..())
         characters += l..(line)
 
 

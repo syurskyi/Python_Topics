@@ -1,8 +1,8 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 ____ typing _______ List
 
 
-___ get_srt_section_ids(text: str) -> List[int]:
+___ get_srt_section_ids(text: s..) -> List[int]:
     """Parse a caption (srt) text passed in and return a
        list of section numbers ordered descending by
        highest speech speed
@@ -27,26 +27,26 @@ ___ get_srt_section_ids(text: str) -> List[int]:
        You can ignore milliseconds for this exercise.
     """
     
-    text = text.strip()
+    text = text.s..
     
-    sections = (text.split('\n\n'))
+    sections = (text.s..('\n\n'))
     
 
     id_to_speed = {}
     ___ section __ sections:
-        parts = section.split('\n')
+        parts = section.s..('\n')
 
         id_,times,text = parts
 
-        start_time,end_time = times.split('-->')
+        start_time,end_time = times.s..('-->')
         
         tds    # list
         ___ time __ (start_time,end_time):
-            hours,minutes,seconds = time.split(':')
+            hours,minutes,seconds = time.s..(':')
             hours = int(hours)
             minutes = int(hours)
-            seconds = float('.'.join(seconds.split(',')))
-            td = timedelta(hours=hours,minutes=minutes,seconds=seconds)
+            seconds = float('.'.join(seconds.s..(',')))
+            td = t..(hours=hours,minutes=minutes,seconds=seconds)
             tds.a..(td)
 
 

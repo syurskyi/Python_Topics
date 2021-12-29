@@ -14,7 +14,7 @@ class Solution:
         ans = [0] * (m + n)
 
         i = j = index = 0
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ A[i] < B[j]:
                 ans[index] = A[i]
                 i += 1
@@ -23,12 +23,12 @@ class Solution:
                 j += 1
             index += 1
 
-        while i < m:
+        w.... i < m:
             ans[index] = A[i]
             i += 1
             index += 1
 
-        while j < n:
+        w.... j < n:
             ans[index] = B[j]
             j += 1
             index += 1

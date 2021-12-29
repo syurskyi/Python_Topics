@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 ____ operator _______ attrgetter
 
-Book = namedtuple('Book', 'title authors pages published')
+Book = n..('Book', 'title authors pages published')
 
 books = [
     Book(title="Python Interviews",
@@ -44,7 +44,7 @@ ___ sort_books_by_first_authors_last_name(books=books):
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.split(" ")[1].strip(" ")))
+    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.s..(" ")[1].strip(" ")))
     r.. first_authors_last_name
 
 

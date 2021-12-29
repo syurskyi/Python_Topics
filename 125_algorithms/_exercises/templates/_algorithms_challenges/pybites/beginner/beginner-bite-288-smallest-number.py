@@ -25,10 +25,10 @@ ___ minimum_number(digits: List[int]) -> int:
     __ l..(digits) __ 0:
         r.. 0
     reduced = set(digits)
-    sort = s..(reduced)
+    s.. = s..(reduced)
     r = ""
-    ___ e __ sort:
-        r += str(e)
+    ___ e __ s..:
+        r += s..(e)
     r.. int(r)
 
 

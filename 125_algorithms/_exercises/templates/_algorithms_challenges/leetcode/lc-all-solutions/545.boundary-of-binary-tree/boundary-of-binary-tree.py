@@ -15,7 +15,7 @@ class Solution(object):
       r.. []
 
     ___ dfsLeft(root, res):
-      __ n.. root o. (n.. root.left and n.. root.right):
+      __ n.. root o. (n.. root.left a.. n.. root.right):
         r..
       res.a..(root.val)
       __ root.left:
@@ -24,7 +24,7 @@ class Solution(object):
         dfsLeft(root.right, res)
 
     ___ dfsRight(root, res):
-      __ n.. root o. (n.. root.left and n.. root.right):
+      __ n.. root o. (n.. root.left a.. n.. root.right):
         r..
       __ root.right:
         dfsRight(root.right, res)
@@ -35,7 +35,7 @@ class Solution(object):
     ___ dfsLeaves(root, res, mid):
       __ n.. root:
         r..
-      __ n.. root.left and n.. root.right and root != mid:
+      __ n.. root.left a.. n.. root.right a.. root != mid:
         res.a..(root.val)
       dfsLeaves(root.left, res, mid)
       dfsLeaves(root.right, res, mid)

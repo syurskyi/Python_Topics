@@ -21,7 +21,7 @@ class Solution:
         # O(log n)
         n = abs(n)
         product = 1.0
-        while n > 0:
+        w.... n > 0:
             __ n & 1 __ 1:
                 product *= x
 

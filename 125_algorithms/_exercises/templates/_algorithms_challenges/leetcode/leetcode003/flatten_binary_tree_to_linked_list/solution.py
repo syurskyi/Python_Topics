@@ -19,6 +19,6 @@ class Solution:
             root.right = left
             root.left = N..
             current = left
-            while current.right __ n.. N..
+            w.... current.right __ n.. N..
                 current = current.right
             current.right = right

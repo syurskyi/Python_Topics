@@ -14,7 +14,7 @@ class Solution(object):
         n = l..(numbers)
         i = 0
         j = n-1
-        while i < j:
+        w.... i < j:
             s = numbers[i] + numbers[j]
             __ s __ target:
                 r.. i+1, j+1

@@ -4,15 +4,15 @@ class Solution(object):
     :type equation: str
     :rtype: str
     """
-    left, right = equation.split("=")
-    left = filter(l.... x: x, left.replace("+", "#P").replace("-", "#M").split("#"))
-    right = filter(l.... x: x, right.replace("+", "#M").replace("-", "#P").split("#"))
+    left, right = equation.s..("=")
+    left = filter(l.... x: x, left.r..("+", "#P").r..("-", "#M").s..("#"))
+    right = filter(l.... x: x, right.r..("+", "#M").r..("-", "#P").s..("#"))
     left[0] = "P" + left[0] __ left[0][0] n.. __ ["P", "M"] ____ left[0]
     right[0] = "M" + right[0] __ right[0][0] n.. __ ["P", "M"] ____ right[0]
     left += right
     a = b = 0
     ___ param __ left:
-      param = param.replace("P", "+").replace("M", "-")
+      param = param.r..("P", "+").r..("M", "-")
       __ param[-1] __ "x":
         k = 1
         __ l..(param) > 2:
@@ -23,4 +23,4 @@ class Solution(object):
           a += k
       ____:
         b -= int(param)
-    r.. "x={0}".format(str(b / a)) __ a ____ "No solution" __ b ____ "Infinite solutions"
+    r.. "x={0}".f..(s..(b / a)) __ a ____ "No solution" __ b ____ "Infinite solutions"

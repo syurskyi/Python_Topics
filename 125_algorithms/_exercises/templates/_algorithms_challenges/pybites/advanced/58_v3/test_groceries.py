@@ -11,7 +11,7 @@ ___ cart():
     cravings = False, False, False, False, False, True
 
     items    # list
-    ___ item __ zip(products, prices, cravings):
+    ___ item __ z..(products, prices, cravings):
         items.a..(Item(*item))
 
     r.. Groceries(items)
@@ -25,7 +25,7 @@ ___ parser():
 ___ test_list(parser, cart, capfd):
     args = parser.parse_args(['-l'])
     handle_args(args, cart)
-    output = capfd.readouterr()[0].split('\n')
+    output = capfd.readouterr()[0].s..('\n')
     ... 'pizza (craving)                |   4' __ output
     ... 'Total                          |  22' __ output
 
@@ -33,7 +33,7 @@ ___ test_list(parser, cart, capfd):
 ___ test_search(parser, cart, capfd):
     args = parser.parse_args(['-s', 'coffee'])
     handle_args(args, cart)
-    output = capfd.readouterr()[0].split('\n')
+    output = capfd.readouterr()[0].s..('\n')
     ... 'coffee                         |   5' __ output
     ... 'Total                          |   5' __ output
 

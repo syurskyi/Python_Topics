@@ -40,9 +40,9 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ isAlienSorted(self, words: List[str], order: str) -> bool:
+    ___ isAlienSorted(self, words: List[s..], order: s..) -> bool:
         h = {}
-        ___ i, c __ enumerate(order):
+        ___ i, c __ e..(order):
             h[c] = i
 
         ___ i __ r..(1, l..(words)):
@@ -52,7 +52,7 @@ class Solution:
         r.. True
 
     ___ cmp(self, w1, w2, h):
-        ___ c1, c2 __ zip(w1, w2):
+        ___ c1, c2 __ z..(w1, w2):
             __ h[c1] < h[c2]:
                 r.. -1
             ____ h[c1] > h[c2]:

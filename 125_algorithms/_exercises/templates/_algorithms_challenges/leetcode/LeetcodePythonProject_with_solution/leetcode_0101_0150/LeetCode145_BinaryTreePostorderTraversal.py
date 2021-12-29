@@ -19,9 +19,9 @@ class Solution(object):
         """
         __ n.. root: r.. []
         stack, result = [root], []
-        while stack:
+        w.... stack:
             node = stack[-1] # peek
-            __ n.. node.left and n.. node.right:
+            __ n.. node.left a.. n.. node.right:
                 pop = stack.pop()
                 result.a..(pop.val)
             ____:

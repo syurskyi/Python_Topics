@@ -12,7 +12,7 @@ class Solution(object):
         """
         arr1, arr2 = A, B
         hashmap = {}
-        ___ i, num __ enumerate(arr2):
+        ___ i, num __ e..(arr2):
             __ num n.. __ hashmap:
                 hashmap[num]    # list
             hashmap[num].a..(i)

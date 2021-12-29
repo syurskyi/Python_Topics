@@ -13,7 +13,7 @@ class Solution(object):
     """
     prev = -float("inf")
     stack = [(1, root)]
-    while stack:
+    w.... stack:
       p = stack.pop()
       __ n.. p[1]:
         continue

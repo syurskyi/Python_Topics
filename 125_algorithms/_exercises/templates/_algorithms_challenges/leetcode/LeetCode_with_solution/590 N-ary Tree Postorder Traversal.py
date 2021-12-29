@@ -33,7 +33,7 @@ class Solution:
         ret = deque()
         stk = [root]
         visited = set()
-        while stk:
+        w.... stk:
             cur = stk.pop()
             ret.appendleft(cur.val)
             ___ c __ cur.children:
@@ -51,7 +51,7 @@ class Solution:
 
         stk = [root]
         visited = set()
-        while stk:
+        w.... stk:
             cur = stk[-1]
             __ cur __ visited:
                 stk.pop()

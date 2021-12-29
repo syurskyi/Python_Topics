@@ -10,9 +10,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        ___ i, flower __ enumerate(flowerbed):
-            __ flower __ 0 and\
-                (i __ 0 o. flowerbed[i-1] __ 0) and\
+        ___ i, flower __ e..(flowerbed):
+            __ flower __ 0 a..\
+                (i __ 0 o. flowerbed[i-1] __ 0) a..\
                 (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0):
                 n -= 1
                 flowerbed[i] = 1

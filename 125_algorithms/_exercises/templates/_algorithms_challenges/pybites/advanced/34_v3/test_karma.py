@@ -48,6 +48,6 @@ ___ test_fans_property():
 
 
 ___ test_str_dunder():
-    ... str(tim) __ 'tim has a karma of 2 and 1 fan'
-    ... str(alice) __ 'alice has a karma of 6 and 2 fans'
-    ... str(bob) __ 'bob has a karma of 4 and 2 fans'
+    ... s..(tim) __ 'tim has a karma of 2 and 1 fan'
+    ... s..(alice) __ 'alice has a karma of 6 and 2 fans'
+    ... s..(bob) __ 'bob has a karma of 4 and 2 fans'

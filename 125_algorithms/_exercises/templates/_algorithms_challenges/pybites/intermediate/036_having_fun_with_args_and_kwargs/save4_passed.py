@@ -6,11 +6,11 @@ ___ get_profile(name, age, *sports, **awards):
     __ l..(sports) > 5:
         raise ValueError
 
-    __ sports and n.. awards:
+    __ sports a.. n.. awards:
         r.. {'name': name, 'age': age, 'sports': sports}
-    __ awards and n.. sports:
+    __ awards a.. n.. sports:
         r.. {'name': name, 'age': age, 'awards': awards}
-    __ sports and awards:
+    __ sports a.. awards:
         r.. {'name': name, 'age': age,
             'sports': sports, 'awards': awards}
     ____:

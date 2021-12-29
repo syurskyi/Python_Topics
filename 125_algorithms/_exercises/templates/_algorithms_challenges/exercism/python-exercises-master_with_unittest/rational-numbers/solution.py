@@ -17,15 +17,15 @@ class Rational(object):
         ____:
             g = gcd(numer, denom)
             n, d = int(numer/g), int(denom/g)
-            __ n > 0 and d < 0:
+            __ n > 0 a.. d < 0:
                 n, d = -n, -d
         r.. n, d
 
     ___ __eq__(self, other):
-        r.. self.numer __ other.numer and self.denom __ other.denom
+        r.. self.numer __ other.numer a.. self.denom __ other.denom
 
     ___ __repr__(self):
-        r.. '{}/{}'.format(self.numer, self.denom)
+        r.. '{}/{}'.f..(self.numer, self.denom)
 
     ___ __add__(self, other):
         r.. Rational(

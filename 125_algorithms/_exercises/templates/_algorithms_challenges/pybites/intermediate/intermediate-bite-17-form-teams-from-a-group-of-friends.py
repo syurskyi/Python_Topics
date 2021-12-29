@@ -1,5 +1,5 @@
-____ itertools _______ combinations
-____ itertools _______ permutations
+____ i.. _______ combinations
+____ i.. _______ permutations
 
 
 """

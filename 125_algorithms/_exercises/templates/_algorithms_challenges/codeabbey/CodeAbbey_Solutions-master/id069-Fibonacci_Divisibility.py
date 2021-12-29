@@ -7,7 +7,7 @@ ___ fibDiv(tests):
         ___ count __ r..(int(max(numbers))):
             c = a + b
             __ c % int(numbers[test]) __ 0:
-                answer.a..(str(count+2))
+                answer.a..(s..(count+2))
                 break
             a = b
             b = c

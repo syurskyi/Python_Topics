@@ -1,7 +1,7 @@
 class SaddlePoints:
     ___ __init__(self, matrix):
         self.matrix = matrix
-        self.columns = l..(zip(*self.matrix))
+        self.columns = l..(z..(*self.matrix))
 
     ___ get_saddle_points(self):
         __ self.invalid_matrix():
@@ -17,7 +17,7 @@ class SaddlePoints:
         r.. saddle_points
 
     ___ saddle_point(self, row, col):
-        r.. (self.matrix[row][col] __ max(self.matrix[row]) and
+        r.. (self.matrix[row][col] __ max(self.matrix[row]) a..
                 self.matrix[row][col] __ m..(self.columns[col]))
 
     ___ invalid_matrix(self):

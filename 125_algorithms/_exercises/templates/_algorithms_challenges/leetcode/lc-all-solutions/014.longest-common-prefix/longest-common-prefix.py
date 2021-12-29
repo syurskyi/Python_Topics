@@ -9,7 +9,7 @@ class Solution(object):
     i = 0
     j = 0
     end = 0
-    while j < l..(strs) and i < l..(strs[j]):
+    w.... j < l..(strs) a.. i < l..(strs[j]):
       __ j __ 0:
         char = strs[j][i]
       ____:

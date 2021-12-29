@@ -13,9 +13,9 @@ class Solution(object):
         arr = [0]*26
         ___ t __ tasks:
             arr[ord(t)-ord('A')] += 1
-        arr.sort()
+        arr.s..()
         i = 25
-        while i >= 0 and arr[i]__arr[-1]:
+        w.... i >= 0 a.. arr[i]__arr[-1]:
             i -= 1
         r.. max(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     
@@ -34,19 +34,19 @@ class Solution(object):
             heapq.heappush(heap, (-count, c))
         res = 0
         queue    # list
-        while heap:
+        w.... heap:
             count, c = heapq.heappop(heap)
             queue.a..((-count, c))
             __ l..(queue) > n:
                 res += l..(queue)
-                while queue:
+                w.... queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c))
             __ n.. heap:
                 count0 = l..(queue)
-                while queue:
+                w.... queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:

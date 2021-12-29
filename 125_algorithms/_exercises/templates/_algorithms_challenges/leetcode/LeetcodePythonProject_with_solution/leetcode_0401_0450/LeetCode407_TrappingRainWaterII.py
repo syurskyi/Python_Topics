@@ -17,10 +17,10 @@ class Solution(object):
                     heapq.heappush(heap, (heightMap[i][j], i, j))
                     visited[i][j] = True
         res = 0
-        while heap:
+        w.... heap:
             height, i, j = heapq.heappop(heap)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
-                __ 0<=x<m and 0<=y<n and n.. visited[x][y]:
+                __ 0<=x<m a.. 0<=y<n a.. n.. visited[x][y]:
                     res += max(0, height-heightMap[x][y])
                     heapq.heappush(heap, (max(height, heightMap[x][y]), x, y))
                     visited[x][y] = True
@@ -36,7 +36,7 @@ class Solution(object):
         ]
         ___ heightMap __ testCases:
             print('heightMap:')
-            print('\n'.join([str(row) ___ row __ heightMap]))
+            print('\n'.join([s..(row) ___ row __ heightMap]))
             result = self.trapRainWater(heightMap)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -23,7 +23,7 @@ class Solution(object):
         carry = 0
         res = N..
         res_end = N..
-        while l1 __ n.. N.. o. l2 __ n.. N.. o. carry __ 1:
+        w.... l1 __ n.. N.. o. l2 __ n.. N.. o. carry __ 1:
             temp = 0
             __ l1 __ n.. N..
                 temp += l1.val

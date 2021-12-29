@@ -13,7 +13,7 @@ class Solution:
             r.. N..
         n = 0
         h = head
-        while head __ n.. N..
+        w.... head __ n.. N..
             n += 1
             head = head.next
         k = k % n
@@ -22,14 +22,14 @@ class Solution:
         res = h  # Head of result
         prev = h  # Previous node of result
         i = 0
-        while res __ n.. N..
+        w.... res __ n.. N..
             __ i __ n - k:
                 break
             prev = res
             res = res.next
             i += 1
         end = res
-        while end.next __ n.. N..
+        w.... end.next __ n.. N..
             end = end.next
         end.next = h
         prev.next = N..

@@ -28,6 +28,6 @@ class MyQueue:
         # step3/ stack1: [4, 5, 6], stack2: [] // 2, 3
         # step4/ stack1: [7, 8], stack2: [6, 5, 4]
         __ n.. self.stack2:
-            while self.stack1:
+            w.... self.stack1:
                 self.stack2.a..(self.stack1.pop())
         r.. self.stack2[-1]

@@ -17,7 +17,7 @@ class Solution(object):
     ___ power(self, a, n, mod):
         a %= mod
         res = 1
-        while n != 0:
+        w.... n != 0:
             __ ((n&1) != 0):
                 res = res*a % mod
             a = a*a%mod

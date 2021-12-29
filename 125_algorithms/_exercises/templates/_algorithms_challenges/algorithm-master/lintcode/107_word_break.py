@@ -8,7 +8,7 @@ class Solution:
         :type words: List[str]
         :rtype: bool
         """
-        __ n.. s and n.. words:
+        __ n.. s a.. n.. words:
             r.. True
         __ n.. s o. n.. words:
             r.. False
@@ -22,7 +22,7 @@ class Solution:
 
         ___ i __ r..(1, n + 1):
             ___ j __ r..(1, m..(i, max_size) + 1):
-                __ dp[i - j] and s[i - j:i] __ word_set:
+                __ dp[i - j] a.. s[i - j:i] __ word_set:
                     dp[i] = True
                     break
 

@@ -1,5 +1,5 @@
 _______ types
-____ itertools _______ islice
+____ i.. _______ islice
 
 
 ___ group(iterable, n):

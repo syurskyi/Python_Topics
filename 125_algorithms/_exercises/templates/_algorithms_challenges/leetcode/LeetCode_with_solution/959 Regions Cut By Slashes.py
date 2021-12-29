@@ -93,7 +93,7 @@ class DisjointSet:
         r.. self.pi[x]
 
 class Solution:
-    ___ regionsBySlashes(self, grid: List[str]) -> int:
+    ___ regionsBySlashes(self, grid: List[s..]) -> int:
         """
         in 1 x 1 cell
         3 possibilities

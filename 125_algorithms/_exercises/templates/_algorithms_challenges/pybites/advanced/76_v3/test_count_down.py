@@ -1,5 +1,5 @@
-____ datetime _______ datetime
-____ itertools _______ compress
+____ d__ _______ d__
+____ i.. _______ compress
 _______ i___
 _______ re
 
@@ -34,7 +34,7 @@ ___ test_count_down_good_inputs(input_argument, capfd):
 
 @pytest.mark.parametrize("input_argument", [
     compress([1, 2, 3, 4], [1, 1, 1, 1]),
-    datetime(2018, 4, 21),
+    d__(2018, 4, 21),
     re.compile(r'\d{4}'),
 ])
 ___ test_count_down_bad_inputs(input_argument, capfd):

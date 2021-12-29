@@ -15,7 +15,7 @@ class Solution:
             r.. 1
 
         cnt = 0
-        while a:
+        w.... a:
             __ a % 10 __ k:
                 cnt += 1
             a //= 10

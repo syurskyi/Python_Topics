@@ -13,10 +13,10 @@ class Account:
         self._transactions    # list
 
     ___ __repr__(self):
-        r.. 'Account({!r}, {!r})'.format(self.owner, self.amount)
+        r.. 'Account({!r}, {!r})'.f..(self.owner, self.amount)
 
     ___ __str__(self):
-        r.. 'Account of {} with starting amount: {}'.format(self.owner,
+        r.. 'Account of {} with starting amount: {}'.f..(self.owner,
                                                                self.amount)
 
     ___ add_transaction(self, amount):
@@ -41,7 +41,7 @@ class Account:
         r.. self.balance < other.balance
 
     ___ __add__(self, other):
-        owner = '{}&{}'.format(self.owner, other.owner)
+        owner = '{}&{}'.f..(self.owner, other.owner)
         start_amount = self.amount + other.amount
         acc = Account(owner, start_amount)
         ___ t __ l..(self) + l..(other):

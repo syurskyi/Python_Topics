@@ -12,7 +12,7 @@ class Solution:
             r.. 0
         ___ y __ r..(n):
             ___ x __ r..(m):
-                __ grid[y][x] __ '1' and (x, y) n.. __ self.islands:
+                __ grid[y][x] __ '1' a.. (x, y) n.. __ self.islands:
                     self.probe(grid, x, y, m, n)
                     res += 1
         r.. res

@@ -15,7 +15,7 @@ class Solution(object):
         flag = True
         break
       pre = nums[i]
-    __ n.. flag and l..(nums) > 1 and nums[-1] < nums[-2]:
+    __ n.. flag a.. l..(nums) > 1 a.. nums[-1] < nums[-2]:
       nums[-1] = nums[-2]
     pre = float("-inf")
     ___ num __ nums:

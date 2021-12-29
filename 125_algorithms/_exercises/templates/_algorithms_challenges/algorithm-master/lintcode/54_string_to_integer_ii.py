@@ -12,12 +12,12 @@ class Solution:
         is_negative = False
         left, right = 0, n - 1
 
-        while left < n and s[left] __ ' ':
+        w.... left < n a.. s[left] __ ' ':
             left += 1
-        while right >= 0 and s[right] __ ' ':
+        w.... right >= 0 a.. s[right] __ ' ':
             right -= 1
 
-        __ left < n and s[left] __ ('+', '-'):
+        __ left < n a.. s[left] __ ('+', '-'):
             is_negative = (s[left] __ '-')
             left += 1
 
@@ -29,7 +29,7 @@ class Solution:
         nine = ord('9')
         INT_MAX = 0x7FFFFFFF
         INT_MIN = -0x80000000
-        while left <= right and zero <= ord(s[left]) <= nine:
+        w.... left <= right a.. zero <= ord(s[left]) <= nine:
             ans = ans * 10 + ord(s[left]) - zero
             left += 1
 

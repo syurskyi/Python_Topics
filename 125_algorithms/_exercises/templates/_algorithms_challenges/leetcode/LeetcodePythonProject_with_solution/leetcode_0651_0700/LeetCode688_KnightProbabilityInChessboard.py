@@ -20,7 +20,7 @@ class Solution(object):
                     ___ row, col __ (i+2, j-1), (i+2, j+1),\
                         (i-2, j-1), (i-2, j+1), (i+1, j-2), (i+1, j+2),\
                         (i-1, j+2), (i-1, j-2):
-                        __ 0 <= row < N and 0 <= col < N:
+                        __ 0 <= row < N a.. 0 <= col < N:
                             dp1[i][j] += dp[row][col]
             dp = dp1
         r.. float(dp[r][c])/8**K

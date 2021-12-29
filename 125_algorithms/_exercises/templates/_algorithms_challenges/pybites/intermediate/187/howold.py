@@ -5,17 +5,17 @@ ____ dateutil.relativedelta _______ relativedelta
 
 @dataclass
 class Actor:
-    name: str
-    born: str
+    name: s..
+    born: s..
 
 
 @dataclass
 class Movie:
-    title: str
-    release_date: str
+    title: s..
+    release_date: s..
 
 
-___ get_age(actor: Actor, movie: Movie) -> str:
+___ get_age(actor: Actor, movie: Movie) -> s..:
     """Calculates age of actor / actress when movie was released,
        return a string like this:
 

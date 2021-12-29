@@ -33,7 +33,7 @@ class Solution:
 
         h = [(0, K)]
         reach_time[K] = 0
-        while h:
+        w.... h:
             t, s = heapq.heappop(h)
             __ s __ G:
                 ___ d, w __ G[s].items():

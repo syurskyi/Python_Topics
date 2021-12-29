@@ -9,21 +9,21 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        s = str(n)
+        s = s..(n)
         arr = l..(s)
         i = l..(s)-1
-        while i > 0 and arr[i-1] >= arr[i]:
+        w.... i > 0 a.. arr[i-1] >= arr[i]:
             i -= 1
         __ i __ 0:
             r.. -1
         j = l..(s)-1
         ind = i
-        while i < j:
+        w.... i < j:
             arr[i], arr[j] = arr[j], arr[i]
             i += 1
             j -= 1
         j = ind
-        while j < l..(s) and arr[j] <= arr[ind-1]:
+        w.... j < l..(s) a.. arr[j] <= arr[ind-1]:
             j += 1
         arr[ind-1], arr[j] = arr[j], arr[ind-1]
         res = int(''.join(arr))

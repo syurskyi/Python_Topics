@@ -9,7 +9,7 @@ class Solution:
 
         left, right = 0, x
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             square = mid * mid
 

@@ -25,18 +25,18 @@ S doesn't contain \ or "
 
 
 class Solution:
-    ___ reverseOnlyLetters(self, S: str) -> str:
+    ___ reverseOnlyLetters(self, S: s..) -> s..:
         lst = l..(S)
         i = 0
         n = l..(lst)
         j = n - 1
-        while True:
-            while i < n and n.. lst[i].isalpha():
+        w... T...
+            w.... i < n a.. n.. lst[i].isalpha():
                 i += 1
-            while j >= 0 and n.. lst[j].isalpha():
+            w.... j >= 0 a.. n.. lst[j].isalpha():
                 j -= 1
 
-            __ i < j and i < n and j >= 0:
+            __ i < j a.. i < n a.. j >= 0:
                 lst[i], lst[j] = lst[j], lst[i]
                 i += 1
                 j -= 1

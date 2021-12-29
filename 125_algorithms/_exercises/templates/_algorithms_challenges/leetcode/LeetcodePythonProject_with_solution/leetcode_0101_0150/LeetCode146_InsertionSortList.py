@@ -17,9 +17,9 @@ class Solution(object):
         :rtype: ListNode
         """
         dummy = ListNode(-1)
-        while head:
+        w.... head:
             node = dummy
-            while node.next and node.next.val < head.val:
+            w.... node.next a.. node.next.val < head.val:
                 node = node.next
             tmp = head.next
             head.next = node.next
@@ -34,7 +34,7 @@ class Solution(object):
         ]
         ___ head __ testCases:
             node = self.insertionSortList(head)
-            while node:
+            w.... node:
                 print('%s, ' % node.val, end='')
                 node = node.next
             print()

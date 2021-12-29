@@ -27,4 +27,4 @@ class Solution(object):
           b += 1
           ds[s] -= 1
           dg[s] -= 1
-    r.. "{}A{}B".format(a, b)
+    r.. "{}A{}B".f..(a, b)

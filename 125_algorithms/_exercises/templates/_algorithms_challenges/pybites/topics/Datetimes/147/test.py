@@ -1,8 +1,8 @@
-____ datetime _______ *
+____ d__ _______ *
 ____ dateutil.relativedelta _______ *
 ____ dateutil.rrule _______ *
 
-NOW = datetime.now()
+NOW = d__.now()
 TODAY = date.today()
 
 print(NOW, TODAY)

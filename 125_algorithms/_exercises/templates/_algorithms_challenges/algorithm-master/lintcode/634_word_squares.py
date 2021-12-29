@@ -22,7 +22,7 @@ class Solution:
         r.. ans
 
     ___ dfs(self, words, n, ans, path):
-        __ (l..(path) __ n and
+        __ (l..(path) __ n a..
             self.is_valid(path)):
             ans.a..(path[:])
             r..

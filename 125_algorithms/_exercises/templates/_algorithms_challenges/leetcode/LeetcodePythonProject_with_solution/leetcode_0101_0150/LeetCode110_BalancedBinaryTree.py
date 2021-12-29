@@ -19,11 +19,11 @@ class Solution(object):
         """
         __ n.. root:
             r.. True
-        ____ n.. root.left and n.. root.right:
+        ____ n.. root.left a.. n.. root.right:
             r.. True
         ____:
-            r.. abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 and\
-                self.isBalanced(root.left) and self.isBalanced(root.right)
+            r.. abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 a..\
+                self.isBalanced(root.left) a.. self.isBalanced(root.right)
     
     ___ getHeight(self, root):
         __ n.. root:

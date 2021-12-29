@@ -4,6 +4,6 @@
 
 _ = input()
 array = input().s.. 
-like = set(input().split())
-dislike = set(input().split())
+like = set(input().s..())
+dislike = set(input().s..())
 print(s..((i __ like) - (i __ dislike) ___ i __ array))

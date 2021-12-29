@@ -32,9 +32,9 @@ class Solution(object):
         maxa = 1
         l = self.longest(cur.left)
         r = self.longest(cur.right)
-        __ cur.left and cur.val+1 __ cur.left.val:
+        __ cur.left a.. cur.val+1 __ cur.left.val:
             maxa = max(maxa, l+1)
-        __ cur.right and cur.val+1 __ cur.right.val:
+        __ cur.right a.. cur.val+1 __ cur.right.val:
             maxa = max(maxa, r+1)
 
         self.gmax = max(self.gmax, maxa)
@@ -52,9 +52,9 @@ class Solution(object):
         l = self.longestConsecutive(root.left)
         r = self.longestConsecutive(root.right)
         maxa = max(maxa, l, r)
-        __ root.left and root.val + 1 __ root.left.val:
+        __ root.left a.. root.val + 1 __ root.left.val:
             maxa = max(maxa, l+1)
-        __ root.right and root.val + 1 __ root.right.val:
+        __ root.right a.. root.val + 1 __ root.right.val:
             maxa = max(maxa, r+1)
 
         r.. maxa

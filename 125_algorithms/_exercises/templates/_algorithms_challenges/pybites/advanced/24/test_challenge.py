@@ -13,10 +13,10 @@ ___ test_should_not_instantiate_abc():
 
 
 ___ test_baseclass_methods_are_abstract():
-    lines = [line.strip() ___ line __
+    lines = [line.s.. ___ line __
              i___.getsourcelines(Challenge)[0]]
     verify_method = [(i, line) ___ i, line __
-                     enumerate(lines)
+                     e..(lines)
                      __ 'def verify' __ line]
     ... verify_method, "Cannot find a method called verify"
     verify_index = verify_method[0][0]

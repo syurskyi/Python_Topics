@@ -47,7 +47,7 @@ ____ collections _______ deque
 
 
 class Solution:
-    ___ removeOuterParentheses(self, S: str) -> str:
+    ___ removeOuterParentheses(self, S: s..) -> s..:
         """
         Primitive parentheses will have equal number of opened and closed
         parentheses.
@@ -70,7 +70,7 @@ class Solution:
         r.. "".join(ret)
 
 
-    ___ removeOuterParentheses_error(self, S: str) -> str:
+    ___ removeOuterParentheses_error(self, S: s..) -> s..:
         """
         stack + deque
         """

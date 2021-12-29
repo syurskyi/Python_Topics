@@ -23,7 +23,7 @@ class Solution(object):
         r..
 
       ___ c __ "01689":
-        __ c __ "0" and l..(path) __ 0:
+        __ c __ "0" a.. l..(path) __ 0:
           continue
         path.a..(c)
         dfs(half, path, n)

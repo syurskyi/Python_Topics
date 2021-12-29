@@ -1,4 +1,4 @@
-____ itertools _______ islice
+____ i.. _______ islice
 
 _______ pytest
 

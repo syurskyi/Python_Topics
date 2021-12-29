@@ -37,7 +37,7 @@ group3 = {'brenda': 17, 'otto': 44, 'thomas': 46}
 
 ___ get_person_age(name):
 
-    n = str(name).lower()
+    n = s..(name).lower()
     print(n)
     try:
         r.. group3[n]

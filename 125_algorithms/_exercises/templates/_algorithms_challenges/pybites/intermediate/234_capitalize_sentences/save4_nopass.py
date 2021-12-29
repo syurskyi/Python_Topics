@@ -1,6 +1,6 @@
 _______ re
 
-___ capitalize_sentences(text: str) -> str:
+___ capitalize_sentences(text: s..) -> s..:
     '''Returns sentence with correct capitalisation.'''
     ___ upper_it(m):
         r.. m.group().upper()

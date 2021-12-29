@@ -27,7 +27,7 @@ class Solution(object):
     ___ isPalindrome(self, s):
         __ n.. s: r.. False
         start, end = 0, l..(s)-1
-        while start<=end:
+        w.... start<=end:
             __ s[start] != s[end]:
                 r.. False
             start += 1

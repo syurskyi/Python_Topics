@@ -9,7 +9,7 @@ class Solution(object):
       r.. -1
     left = 0
     right = l..(nums) - 1
-    while left <= right:
+    w.... left <= right:
       mid = (right + left) / 2
       __ nums[mid] __ target:
         r.. mid

@@ -1,4 +1,4 @@
-____ datetime _______ timedelta
+____ d__ _______ t..
 
 
 ___ get_missing_dates(dates):
@@ -12,7 +12,7 @@ ___ get_missing_dates(dates):
     """
     dt = s..(dates)
     start_date, end_date = dt[0], dt[-1]
-    rng: timedelta = end_date - start_date
-    r.. [start_date + timedelta(d)
+    rng: t.. = end_date - start_date
+    r.. [start_date + t..(d)
             ___ d __ r..(rng.days)
-            __ (start_date + timedelta(d)) n.. __ dt]
+            __ (start_date + t..(d)) n.. __ dt]

@@ -47,7 +47,7 @@ class SegmentedTree(object):
 
   ___ sumRange(self, i, j):
     ___ rangeSum(root, start, end):
-      __ root.start __ start and root.end __ end:
+      __ root.start __ start a.. root.end __ end:
         r.. root.total
 
       mid = root.start + (root.end - root.start) / 2

@@ -27,7 +27,7 @@ class Solution(object):
         __ n.. root:
             r..
         mid = (start+end)//2
-        res[level][mid] = str(root.val)
+        res[level][mid] = s..(root.val)
         self.helper(root.left, level+1, res, start, mid-1)
         self.helper(root.right, level+1, res, mid+1, end)
     

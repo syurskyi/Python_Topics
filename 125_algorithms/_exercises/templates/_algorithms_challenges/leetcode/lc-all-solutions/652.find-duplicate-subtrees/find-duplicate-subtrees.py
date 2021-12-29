@@ -18,7 +18,7 @@ class Solution(object):
         r.. '#'
       m_left = merkle(node.left)
       m_right = merkle(node.right)
-      node.merkle = hash_(m_left + str(node.val) + m_right)
+      node.merkle = hash_(m_left + s..(node.val) + m_right)
       count[node.merkle].a..(node)
       r.. node.merkle
 

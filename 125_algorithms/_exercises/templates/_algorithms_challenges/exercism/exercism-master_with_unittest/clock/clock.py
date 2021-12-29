@@ -5,7 +5,7 @@ class Clock:
         self.fixup()
 
     ___ __eq__(self, other):
-        r.. self.hours __ other.hours and self.mins __ other.mins
+        r.. self.hours __ other.hours a.. self.mins __ other.mins
 
     ___ __str__(self):
         r.. (self.format_hours() + ':' +
@@ -28,7 +28,7 @@ class Clock:
         self.mins = int(self.mins % 60)
 
     ___ format_hours(self):
-        r.. str(self.hours).zfill(2)
+        r.. s..(self.hours).zfill(2)
 
     ___ format_mins(self):
-        r.. str(self.mins).zfill(2)
+        r.. s..(self.mins).zfill(2)

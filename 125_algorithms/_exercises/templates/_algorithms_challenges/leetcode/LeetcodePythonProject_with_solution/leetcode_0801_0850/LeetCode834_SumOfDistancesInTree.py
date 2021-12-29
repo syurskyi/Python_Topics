@@ -64,7 +64,7 @@ class Solution(object):
         queue = [i]
         visited = set([i])
         level = 1
-        while queue:
+        w.... queue:
             size = l..(queue)
             ___ _ __ r..(size):
                 node = queue.pop(0)

@@ -3,7 +3,7 @@ ___ collatz_steps(n):
         r..
 
     step_count = 0
-    while n > 1:
+    w.... n > 1:
         __ is_odd(n):
             n = n * 3 + 1
         ____:

@@ -35,7 +35,7 @@ class Solution(object):
         :rtype: str
         """
         ret    # list
-        while l..(ret) < 8 and num:
+        w.... l..(ret) < 8 a.. num:
             ret.a..(self.encode(num & 0xf))
             num >>= 4
 
@@ -48,7 +48,7 @@ class Solution(object):
         :rtype: str
         """
         ret    # list
-        while l..(ret) < 8 and num:
+        w.... l..(ret) < 8 a.. num:
             ret.a..(self.encode(num % 16))
             num /= 16
 
@@ -56,7 +56,7 @@ class Solution(object):
 
     ___ encode(self, d):
         __ 0 <= d < 10:
-            r.. str(d)
+            r.. s..(d)
 
         r.. chr(ord('a') + d - 10)
 

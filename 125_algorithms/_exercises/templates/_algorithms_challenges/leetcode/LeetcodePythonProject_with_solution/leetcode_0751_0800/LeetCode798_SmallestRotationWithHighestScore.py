@@ -36,7 +36,7 @@ class Solution(object):
     ___ getScore(self, arr, k):
         res = 0
         arr0 = arr[k:]+arr[:k]
-        ___ i, num __ enumerate(arr0):
+        ___ i, num __ e..(arr0):
             __ num <= i: res += 1
         r.. res
     

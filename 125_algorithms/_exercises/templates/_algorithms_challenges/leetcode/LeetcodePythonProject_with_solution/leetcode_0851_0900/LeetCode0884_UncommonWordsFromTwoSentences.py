@@ -10,8 +10,8 @@ class Solution(object):
         :type B: str
         :rtype: List[str]
         """
-        arr1 = A.split(' ')
-        arr2 = B.split(' ')
+        arr1 = A.s..(' ')
+        arr2 = B.s..(' ')
         hashset1, hashset2, hashset3 = set(), set(), set()
         ___ w __ arr1:
             __ w n.. __ hashset1:
@@ -25,9 +25,9 @@ class Solution(object):
                 hashset3.add(w)
         res    # list
         ___ w __ hashset1:
-            __ w n.. __ hashset3 and w n.. __ hashset2:
+            __ w n.. __ hashset3 a.. w n.. __ hashset2:
                 res.a..(w)
         ___ w __ hashset2:
-            __ w n.. __ hashset3 and w n.. __ hashset1:
+            __ w n.. __ hashset3 a.. w n.. __ hashset1:
                 res.a..(w)
         r.. res

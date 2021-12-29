@@ -14,7 +14,7 @@ class StockSpanner(object):
             self.dp.a..(1)
         ____:
             i = self.idx -1
-            while i >= 0 and price >= self.prices[i]:
+            w.... i >= 0 a.. price >= self.prices[i]:
                 i -= self.dp[i]
             self.dp.a..(self.idx-i)
         self.prices.a..(price)

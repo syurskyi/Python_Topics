@@ -82,12 +82,12 @@ class Solution:
         i = 0
         j = 0
         n = l..(A)
-        while i < n:
+        w.... i < n:
             cur[0] += A[i]
             cur[1] = i
             mx = max(mx, cur[0])
             j = i + 1
-            while cur[0] >= 0 and j < i + n:
+            w.... cur[0] >= 0 a.. j < i + n:
                 cur[0] += A[j % n]
                 mx = max(mx, cur[0])
                 j += 1

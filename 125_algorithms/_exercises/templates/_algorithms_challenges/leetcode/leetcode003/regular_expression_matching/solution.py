@@ -12,14 +12,14 @@ class Solution:
             r.. si __ l..(s)
         # Next char is not *
         # pi may be the last char
-        __ pi < l..(p) - 1 and p[pi + 1] != '*' o. pi __ l..(p) - 1:
+        __ pi < l..(p) - 1 a.. p[pi + 1] != '*' o. pi __ l..(p) - 1:
             ... p[pi] != '*'
             # si must be in bound
-            is_cur_matched = si < l..(s) and (p[pi] __ s[si] o. p[pi] __ '.')
+            is_cur_matched = si < l..(s) a.. (p[pi] __ s[si] o. p[pi] __ '.')
             is_next_matched = self.is_match_aux(s, p, si + 1, pi + 1)
-            r.. is_cur_matched and is_next_matched
+            r.. is_cur_matched a.. is_next_matched
         # Next char is *
-        while si < l..(s) and pi < l..(p) and (p[pi] __ s[si] o. p[pi] __ '.'):
+        w.... si < l..(s) a.. pi < l..(p) a.. (p[pi] __ s[si] o. p[pi] __ '.'):
             __ self.is_match_aux(s, p, si, pi + 2):
                 r.. True
             si += 1

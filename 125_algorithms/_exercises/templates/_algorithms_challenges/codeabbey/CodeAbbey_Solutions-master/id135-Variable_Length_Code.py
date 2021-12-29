@@ -31,10 +31,10 @@ ___ compress_string(string):
     # Split into chunks of 8
     chunks    # list
     ___ byte __ r..(l..(eight_bit)):
-        __ l..(eight_bit) > 0 and l..(eight_bit) < 8:
-            while l..(eight_bit) < 8:
+        __ l..(eight_bit) > 0 a.. l..(eight_bit) < 8:
+            w.... l..(eight_bit) < 8:
                 eight_bit += '0'
-        while l..(eight_bit) > 7:
+        w.... l..(eight_bit) > 7:
             byte = eight_bit[:8]
             chunks.a..(byte)
             eight_bit = eight_bit[8:]

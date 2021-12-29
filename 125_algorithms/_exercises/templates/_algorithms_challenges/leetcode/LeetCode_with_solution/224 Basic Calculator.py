@@ -30,7 +30,7 @@ class Solution:
     ___ to_list(self, s):
         i = 0
         ret    # list
-        while i < l..(s):
+        w.... i < l..(s):
             __ s[i] __ " ":
                 i += 1
 
@@ -40,7 +40,7 @@ class Solution:
 
             ____:
                 b = i
-                while i < l..(s) and s[i].isdigit():
+                w.... i < l..(s) a.. s[i].isdigit():
                     i += 1
                 ret.a..(s[b:i])
 
@@ -55,16 +55,16 @@ class Solution:
             ____ elt __ "(":
                 stk.a..(elt)
             ____ elt __ ")":
-                while stk[-1] != "(":
+                w.... stk[-1] != "(":
                     ret.a..(stk.pop())
                 stk.pop()
             ____:  # generalized to include * and /
-                while stk and self.precendece(elt) <= self.precendece(stk[-1]):
+                w.... stk a.. self.precendece(elt) <= self.precendece(stk[-1]):
                     ret.a..(stk.pop())
 
                 stk.a..(elt)
 
-        while stk:
+        w.... stk:
             ret.a..(stk.pop())
 
         r.. ret

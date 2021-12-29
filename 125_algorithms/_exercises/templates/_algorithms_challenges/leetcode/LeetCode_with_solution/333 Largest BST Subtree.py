@@ -71,10 +71,10 @@ class SolutionError(object):
         left = self.measure(root.left)
         right = self.measure(root.right)
 
-        __ root.left and n.. root.val >= root.left.val o. root.right and n.. root.val <= root.right.val:
+        __ root.left a.. n.. root.val >= root.left.val o. root.right a.. n.. root.val <= root.right.val:
             r.. 0
 
-        __ root.left and left __ 0 o. root.right and right __ 0:
+        __ root.left a.. left __ 0 o. root.right a.. right __ 0:
             r.. 0
 
         ret = 1 + left + right

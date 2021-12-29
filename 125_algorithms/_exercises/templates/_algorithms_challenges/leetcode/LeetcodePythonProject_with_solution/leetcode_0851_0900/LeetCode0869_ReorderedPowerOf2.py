@@ -11,7 +11,7 @@ class Solution(object):
         """
         n = N
         __ n __ 1: r.. True
-        s = str(n)
+        s = s..(n)
         length = l..(s)
         nums = self.getNums(length)
         ___ num __ nums:
@@ -21,12 +21,12 @@ class Solution(object):
     
     ___ matches(self, n, num):
         hashmap = {}
-        ___ c __ str(n):
+        ___ c __ s..(n):
             __ c __ hashmap:
                 hashmap[c] += 1
             ____:
                 hashmap[c] = 1
-        ___ c __ str(num):
+        ___ c __ s..(num):
             __ c __ hashmap:
                 hashmap[c] -= 1
                 __ hashmap[c] __ 0:
@@ -38,9 +38,9 @@ class Solution(object):
     ___ getNums(self, length):
         res    # list
         num = 2
-        while l..(str(num)) < length:
+        w.... l..(s..(num)) < length:
             num *= 2
-        while l..(str(num)) __ length:
+        w.... l..(s..(num)) __ length:
             res.a..(num)
             num *= 2
         r.. res

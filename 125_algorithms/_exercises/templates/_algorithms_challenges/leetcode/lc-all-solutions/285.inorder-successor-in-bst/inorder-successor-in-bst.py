@@ -12,10 +12,10 @@ class Solution(object):
     :type p: TreeNode
     :rtype: TreeNode
     """
-    __ root and q:
+    __ root a.. q:
       flag = False
       stack = [(1, root)]
-      while stack:
+      w.... stack:
         p = stack.pop()
         __ n.. p[1]:
           continue

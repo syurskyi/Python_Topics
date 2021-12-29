@@ -3,7 +3,7 @@
 
 
 ___ readScores(listOfStudents):
-    line = l..(input().split())
+    line = l..(input().s..())
     avScore = s..(map(float, line[1:])) / 3
     name = line[0]
     listOfStudents[name] = avScore

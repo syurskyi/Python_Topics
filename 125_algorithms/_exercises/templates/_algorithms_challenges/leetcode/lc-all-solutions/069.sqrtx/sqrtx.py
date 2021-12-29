@@ -6,7 +6,7 @@ class Solution(object):
     """
     lo = 0
     hi = x
-    while lo <= hi:
+    w.... lo <= hi:
       mid = (hi + lo) // 2
       v = mid * mid
       __ v < x:

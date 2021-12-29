@@ -24,7 +24,7 @@ class Solution(object):
 
         pre = dummy
         cur = pre.next
-        while pre and cur:
+        w.... pre a.. cur:
             pre, cur.next, cur = cur, pre, cur.next
             # incorrect evaluation order
             # pre, cur, cur.next = cur, cur.next, pre

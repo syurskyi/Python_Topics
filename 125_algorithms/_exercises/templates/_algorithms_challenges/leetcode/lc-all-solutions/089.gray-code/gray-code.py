@@ -10,7 +10,7 @@ class Solution(object):
     ans[1] = 1
     mask = 0x01
     i = 1
-    while i < n:
+    w.... i < n:
       mask <<= 1
       ___ j __ r..(0, 2 ** i):
         root = (2 ** i)

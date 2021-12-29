@@ -55,7 +55,7 @@ class Solution:
         ___ pos __ stones:
             ___ k __ dp[pos]:
                 # k - 1 > 0
-                __ k > 1 and pos + k - 1 __ dp:
+                __ k > 1 a.. pos + k - 1 __ dp:
                     dp[pos + k - 1].add(k - 1)
                 __ pos + k __ dp:
                     dp[pos + k].add(k)

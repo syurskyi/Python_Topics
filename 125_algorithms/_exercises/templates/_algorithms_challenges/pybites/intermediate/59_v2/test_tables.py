@@ -43,7 +43,7 @@ ___ test_calc_exception(t3, capfd):
 
 
 ___ test_table_str(t3):
-    output = str(t3)
+    output = s..(t3)
     ... '1 | 2 | 3' __ output
     ... '2 | 4 | 6' __ output
     ... '3 | 6 | 9' __ output

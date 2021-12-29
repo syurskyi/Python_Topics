@@ -26,7 +26,7 @@ The string size will be in the range [1, 100].
 
 
 class Solution:
-    ___ checkValidString(self, s: str) -> bool:
+    ___ checkValidString(self, s: s..) -> bool:
         """
         Brute force: dfs branching on "*".
 
@@ -35,7 +35,7 @@ class Solution:
         """
         stk_left    # list
         stk_star    # list
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ "(":
                 stk_left.a..(i)
             ____ c __ "*":
@@ -48,7 +48,7 @@ class Solution:
                 ____:
                     r.. False
 
-        while stk_left and stk_star and stk_star[-1] > stk_left[-1]:
+        w.... stk_left a.. stk_star a.. stk_star[-1] > stk_left[-1]:
             stk_star.pop()
             stk_left.pop()
 

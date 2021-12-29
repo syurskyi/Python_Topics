@@ -9,7 +9,7 @@ ___ find_anagrams(word, candidates):
 ___ is_anagram(word, candidate):
     word_lowercase = word.lower()
     candidate_lowercase = candidate.lower()
-    r.. (is_not_identical(word_lowercase, candidate_lowercase) and
+    r.. (is_not_identical(word_lowercase, candidate_lowercase) a..
             is_identical_when_sorted(word_lowercase, candidate_lowercase))
 
 

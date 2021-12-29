@@ -6,7 +6,7 @@ class TreeNode(object):
 
     ___ __str__(self):
         fmt = 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.format(self.data, self.left, self.right)
+        r.. fmt.f..(self.data, self.left, self.right)
 
 
 class BinarySearchTree(object):
@@ -22,7 +22,7 @@ class BinarySearchTree(object):
         inserted = False
         cur_node = self.root
 
-        while n.. inserted:
+        w.... n.. inserted:
             __ data <= cur_node.data:
                 __ cur_node.left:
                     cur_node = cur_node.left

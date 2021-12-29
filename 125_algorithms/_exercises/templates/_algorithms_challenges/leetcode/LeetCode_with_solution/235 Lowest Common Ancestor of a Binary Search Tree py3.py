@@ -44,8 +44,8 @@ class Solution:
         r.. self.walk(root, p, q)
 
     ___ walk(self, node, p, q):
-        __ p.val > node.val and q.val > node.val:
+        __ p.val > node.val a.. q.val > node.val:
             r.. self.walk(node.right, p, q)
-        __ p.val < node.val and q.val < node.val:
+        __ p.val < node.val a.. q.val < node.val:
             r.. self.walk(node.left, p, q)
         r.. node

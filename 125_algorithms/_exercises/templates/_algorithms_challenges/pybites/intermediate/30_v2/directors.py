@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
 _______ pandas as pd
@@ -16,7 +16,7 @@ MOVIE_DATA = local
 MIN_MOVIES = 4
 MIN_YEAR = 1960
 
-Movie = namedtuple('Movie', 'title year score')
+Movie = n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director():
@@ -36,7 +36,7 @@ ___ get_movies_by_director():
         movie_title = row.movie_title
         movie_year = row.title_year
         imdb_score =row.imdb_score
-        __ movie_title and movie_year and imdb_score:
+        __ movie_title a.. movie_year a.. imdb_score:
             result[director].a..(Movie(movie_title,movie_year,imdb_score))
 
 

@@ -25,6 +25,6 @@ ___ extract_non_ascii_words(text):
     output    # list
     ___ word __ text.s.. :
         ___ l __ word:
-            __ l n.. __ printable and word n.. __ output:
+            __ l n.. __ printable a.. word n.. __ output:
                 output.a..(word)
     r.. output

@@ -1,6 +1,6 @@
 ___ print_hanging_indents(poem):
     INDENTS = 4
-    ___ line __ poem.split('\n'):
+    ___ line __ poem.s..('\n'):
         __ line __ '': #for empty lines before, after, and in poem
             indent_needed = False
         ____ indent_needed: #for lines to be indented

@@ -15,7 +15,7 @@ class Solution(object):
         n = l..(A)
         s = 0
         e = n
-        while s < e:
+        w.... s < e:
             m = (s+e)/2
             __ A[m] >= n-m:
                 e = m

@@ -20,7 +20,7 @@ class Solution(object):
         p1 = head
         p2 = head.next
         p1.next = N..
-        while p1 and p2:
+        w.... p1 a.. p2:
             tmp = p2.next
             p2.next = p1
             p1 = p2
@@ -42,18 +42,18 @@ class Solution(object):
     ___ test(self):
         head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         node = head
-        while node:
+        w.... node:
             print('%s => ' % node.val, end='')
             node = node.next
         node = self.reverseList(head)
         print()
         newHead = node
-        while node:
+        w.... node:
             print('%s => ' % node.val, end='')
             node = node.next
         print()
         node = self.reverseListRecursive(newHead)
-        while node:
+        w.... node:
             print('%s => ' % node.val, end='')
             node = node.next
         print()

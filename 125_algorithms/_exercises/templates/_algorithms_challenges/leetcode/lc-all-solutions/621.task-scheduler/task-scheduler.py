@@ -14,7 +14,7 @@ class Solution(object):
     d = collections.Counter(tasks)
     heap = [-c ___ c __ d.values()]
     heapq.heapify(heap)
-    while heap:
+    w.... heap:
       stack    # list
       cnt = 0
       ___ _ __ r..(n):
@@ -25,7 +25,7 @@ class Solution(object):
             stack.a..(c + 1)
       ___ item __ stack:
         heapq.heappush(heap, item)
-      ans += heap and n o. cnt  # == if heap then n else cnt
+      ans += heap a.. n o. cnt  # == if heap then n else cnt
     r.. ans
 
   # O(n) # of the most frequent tasks, say longest, will determine the legnth
@@ -41,5 +41,5 @@ class Solution(object):
     longest = max(counts)
     ans = (longest - 1) * (n + 1)
     ___ count __ counts:
-      ans += count __ longest and 1 o. 0
+      ans += count __ longest a.. 1 o. 0
     r.. max(l..(tasks), ans)

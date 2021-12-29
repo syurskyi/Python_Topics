@@ -21,14 +21,14 @@ A and B will have length at most 100.
 
 
 class Solution:
-    ___ rotateString(self, A: str, B: str) -> bool:
+    ___ rotateString(self, A: s.., B: s..) -> bool:
         """
         brute force O(n^2), shift and compare but short circuit
         """
         __ l..(A) != l..(B):
             r.. False
 
-        __ n.. A and n.. B:
+        __ n.. A a.. n.. B:
             r.. True
 
         ___ i __ r..(1, l..(A)):

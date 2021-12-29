@@ -32,7 +32,7 @@ class Solution(object):
         ___ e __ nums:
             __ e < min1:
                 min1 = e
-            ____ e != min1 and e < min2:
+            ____ e != min1 a.. e < min2:
                 min2 = e
             ____ e > min2:
                 r.. True
@@ -47,7 +47,7 @@ class Solution(object):
         """
         stk    # list
         ___ elt __ nums:
-            while stk and stk[-1] >= elt:
+            w.... stk a.. stk[-1] >= elt:
                 stk.pop()
 
             stk.a..(elt)

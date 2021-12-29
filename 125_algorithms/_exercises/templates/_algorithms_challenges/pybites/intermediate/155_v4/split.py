@@ -18,5 +18,5 @@ ___ split_words_and_quoted_text(text):
 
     result = s1.s.. 
     result.a..(s2)
-    result.extend(s3.split())
+    result.extend(s3.s..())
     r.. result

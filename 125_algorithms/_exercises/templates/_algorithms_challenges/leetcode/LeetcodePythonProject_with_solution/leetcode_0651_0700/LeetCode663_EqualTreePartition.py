@@ -22,10 +22,10 @@ class Solution(object):
     ___ helper(self, root, sumVal, firstLevel):
         __ n.. root:
             r.. False
-        __ sumVal __ self.s..(root) and n.. firstLevel:
+        __ sumVal __ self.s..(root) a.. n.. firstLevel:
             r.. True
-        __ (root.left and self.helper(root.left, sumVal+root.val+self.s..(root.right), False)) o.\
-            (root.right and self.helper(root.right, sumVal+root.val+self.s..(root.left), False)):
+        __ (root.left a.. self.helper(root.left, sumVal+root.val+self.s..(root.right), False)) o.\
+            (root.right a.. self.helper(root.right, sumVal+root.val+self.s..(root.left), False)):
             r.. True
         r.. False
     

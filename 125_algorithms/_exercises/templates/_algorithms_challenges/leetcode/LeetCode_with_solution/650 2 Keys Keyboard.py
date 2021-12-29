@@ -41,7 +41,7 @@ class Solution:
         """
         ret = 0
         ___ i __ r..(2, n+1):
-            while n % i __ 0:
+            w.... n % i __ 0:
                 ret += i
                 n //= i
 

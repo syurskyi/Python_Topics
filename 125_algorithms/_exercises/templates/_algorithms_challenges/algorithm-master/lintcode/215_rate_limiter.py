@@ -33,12 +33,12 @@ class Solution:
         __ '/' n.. __ rate:
             r.. False
 
-        freq, t = rate.split('/')
+        freq, t = rate.s..('/')
         freq = int(freq)
         begin_time = timestamp - self.times.get(t, 1) + 1
         is_limited = self.check_limited(event, freq, begin_time)
 
-        __ increment and n.. is_limited:
+        __ increment a.. n.. is_limited:
             self.logs[event].a..(timestamp)
 
         r.. is_limited
@@ -52,7 +52,7 @@ class Solution:
 
         left, right = 0, l..(logs) - 1
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
 
             __ logs[mid] < begin_time:

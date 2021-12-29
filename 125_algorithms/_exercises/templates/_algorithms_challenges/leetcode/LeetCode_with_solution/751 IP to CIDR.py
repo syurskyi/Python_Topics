@@ -66,7 +66,7 @@ weights = [
 
 
 class Solution:
-    ___ ipToCIDR(self, ip: str, n: int) -> List[str]:
+    ___ ipToCIDR(self, ip: s.., n: int) -> List[s..]:
         """
         bit manipulation
 
@@ -90,9 +90,9 @@ class Solution:
         """
         num_ip = self.to_bin(ip)
         ret    # list
-        while n > 0:
+        w.... n > 0:
             lsb = self.get_lsb(num_ip)
-            while (1 << lsb) > n:
+            w.... (1 << lsb) > n:
                 lsb -= 1
 
             cur_cover = 1 << lsb
@@ -106,7 +106,7 @@ class Solution:
 
     ___ to_bin(self, ip):
         ret = 0
-        ___ n, w __ zip(map(int, ip.split(".")), weights):
+        ___ n, w __ z..(map(int, ip.s..(".")), weights):
             ret += n << w
 
         r.. ret
@@ -117,11 +117,11 @@ class Solution:
             ret.a..(
                 (bin >> w) & 255
             )
-        r.. ".".join(map(str, ret))
+        r.. ".".join(map(s.., ret))
 
     ___ get_lsb(self, n):
         lsb = 0
-        while (n >> lsb) & 1 __ 0:
+        w.... (n >> lsb) & 1 __ 0:
             lsb += 1
             #  n >>= lsb  # error
         r.. lsb

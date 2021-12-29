@@ -15,13 +15,13 @@ class Solution(object):
         r.. res
     
     ___ helper(self, res, curr, s, ind):
-        __ ind __ l..(s) and l..(curr) __ 4:
+        __ ind __ l..(s) a.. l..(curr) __ 4:
             res.a..('.'.join(curr))
         __ ind >= l..(s):
             r..
         ___ i __ r..(ind+1, ind+4):
             sub = s[ind:i]
-            __ sub[0] __ '0' and l..(sub) > 1:
+            __ sub[0] __ '0' a.. l..(sub) > 1:
                 break
             __ int(sub) > 255:
                 break

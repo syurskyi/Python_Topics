@@ -14,21 +14,21 @@ class Queue(object):
         ____ self.stack1:
             self.stack1.a..(x)
         ____:
-            while self.stack2:
+            w.... self.stack2:
                 self.stack1.a..(self.stack2.pop())
             self.stack1.a..(x)
     
     ___ pop(self):
         __ self.stack1:
-            while self.stack1:
+            w.... self.stack1:
                 self.stack2.a..(self.stack1.pop())
         r.. self.stack2.pop()
     
     ___ peep(self):
         __ self.stack1:
-            while self.stack1:
+            w.... self.stack1:
                 self.stack2.a..(self.stack1.pop())
         r.. self.stack2[-1]
     
     ___ empty(self):
-        r.. n.. self.stack1 and n.. self.stack2
+        r.. n.. self.stack1 a.. n.. self.stack2

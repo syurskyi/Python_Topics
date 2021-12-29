@@ -13,18 +13,18 @@ class Solution(object):
         """
         __ n.. root: r.. N..
         stack    # list
-        while root:
+        w.... root:
             stack.a..(root)
             root = root.left
         root = stack[-1]
         prev = N..
-        while stack:
+        w.... stack:
             node = stack.pop()
             node.left = N..
             __ prev:
                 prev.right = node
             node0 = node.right
-            while node0:
+            w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
             prev = node

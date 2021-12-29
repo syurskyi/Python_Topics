@@ -9,7 +9,7 @@ ___ _count_suits(deck, suit):
 
 ___ _count_suitcard(deck, suit, name):
     r.. s..(1 ___ card __ deck __ card.suit __ suit
-               and str(card.name) __ name)
+               a.. s..(card.name) __ name)
 
 
 @pytest.fixture(scope="module")

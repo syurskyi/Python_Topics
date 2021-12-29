@@ -36,7 +36,7 @@ class NestedIterator(object):
     ___ __init__(self, nestedList):
         deque = nestedList
         result    # list
-        while deque:
+        w.... deque:
             ni = deque.pop(0)
             __ ni.isInteger():
                 result.a..(ni.getInteger())

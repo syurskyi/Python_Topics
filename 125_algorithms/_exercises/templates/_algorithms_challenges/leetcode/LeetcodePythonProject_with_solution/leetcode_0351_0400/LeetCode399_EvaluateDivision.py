@@ -14,7 +14,7 @@ class Solution(object):
         """
         valuesMap = {}
         graph = {}
-        ___ e, v __ zip(equations, values):
+        ___ e, v __ z..(equations, values):
             valuesMap[(e[0], e[1])] = v
             valuesMap[(e[1], e[0])] = 1.0/v
             __ e[0] __ graph:

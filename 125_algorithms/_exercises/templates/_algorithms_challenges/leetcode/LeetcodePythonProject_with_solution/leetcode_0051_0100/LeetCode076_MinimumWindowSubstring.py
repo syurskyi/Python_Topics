@@ -19,11 +19,11 @@ class Solution(object):
         minLen = float('inf')
         hashmap = {}
         count = 0
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             hashmap[c] = hashmap.get(c, 0)+1
-            __ c __ hashmap0 and hashmap[c] __ hashmap0[c]:
+            __ c __ hashmap0 a.. hashmap[c] __ hashmap0[c]:
                 count += 1
-            while left <= i and hashmap[s[left]] > hashmap0.get(s[left], 0):
+            w.... left <= i a.. hashmap[s[left]] > hashmap0.get(s[left], 0):
                 hashmap[s[left]] -= 1
                 left += 1
             __ count __ l..(hashmap0):
@@ -50,11 +50,11 @@ class Solution(object):
         hashset = set()
         res = ''
         minLen = float('inf')
-        ___ i, c __ enumerate(s):
-            __ c __ hashmap and hashmapAll.get(c, 0)+1 >= hashmap[c]:
+        ___ i, c __ e..(s):
+            __ c __ hashmap a.. hashmapAll.get(c, 0)+1 >= hashmap[c]:
                 hashset.add(c)
             hashmapAll[c] = hashmapAll.get(c, 0)+1
-            while left < i and (s[left] n.. __ hashmap o. hashmapAll[s[left]] > hashmap[s[left]]):
+            w.... left < i a.. (s[left] n.. __ hashmap o. hashmapAll[s[left]] > hashmap[s[left]]):
                 hashmapAll[s[left]] -= 1
                 __ hashmapAll[s[left]] < hashmap.get(s[left], 0):
                     hashset.discard(s[left])

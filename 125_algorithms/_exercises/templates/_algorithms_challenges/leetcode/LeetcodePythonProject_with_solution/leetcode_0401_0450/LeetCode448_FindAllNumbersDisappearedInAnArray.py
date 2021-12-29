@@ -11,7 +11,7 @@ class Solution(object):
             __ nums[ind] > 0:
                 nums[ind] = -nums[ind]
         res    # list
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ num > 0:
                 res.a..(i+1)
         r.. res

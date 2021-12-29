@@ -1,6 +1,6 @@
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
-____ collections _______ Counter, namedtuple
+____ collections _______ Counter, n..
 _______ os
 _______ urllib.request
 
@@ -14,7 +14,7 @@ IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 users, popular_challenges = Counter(), Counter()
 
-Stats = namedtuple('Stats', 'user challenge')
+Stats = n..('Stats', 'user challenge')
 
 
 # code
@@ -35,11 +35,11 @@ ___ gen_files():
     """
     with open(tempfile,'rt') as f:
         ___ row __ f.read().splitlines():
-            fields = row.split(',')
+            fields = row.s..(',')
             __ fields[1] __ 'False':
                 continue
-            fields = fields[0].split('/')
-            yield fields
+            fields = fields[0].s..('/')
+            y.. fields
 
 
 ___ diehard_pybites():

@@ -11,7 +11,7 @@ class Solution(object):
         """
         __ n <= 0: r.. 0
         q, x, res = n, 1, 0
-        while q > 0:
+        w.... q > 0:
             digit = q%10
             q //= 10
             res += q*x

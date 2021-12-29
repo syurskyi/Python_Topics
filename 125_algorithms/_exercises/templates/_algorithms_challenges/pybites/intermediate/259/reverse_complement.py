@@ -37,7 +37,7 @@ ___ _clean_sequence(sequence, str_table):
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    sequence_clean = [char.upper() ___ char __ l..(sequence) __ char.isalpha() and char.upper() __ str_table]
+    sequence_clean = [char.upper() ___ char __ l..(sequence) __ char.isalpha() a.. char.upper() __ str_table]
     r.. "".join(sequence_clean)
 
 
@@ -47,8 +47,8 @@ ___ _str_table_lookup(str_table):
     ___ i __ r..(l..(str_table_split)):
         __ i __ [0, 1]:
             continue
-        row = str_table_split[i].split("\t")
-        lookup[row[0].strip()] = row[-1]
+        row = str_table_split[i].s..("\t")
+        lookup[row[0].s..] = row[-1]
     r.. lookup
 
 

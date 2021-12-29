@@ -70,7 +70,7 @@ class Solution(object):
             heapq.heappush(h, Node(i, 0))
 
         ret    # list
-        while h and l..(ret) < k:
+        w.... h a.. l..(ret) < k:
             node = heapq.heappop(h)
             ret.a..([nums1[node.i], nums2[node.j]])
             __ node.hasnext():
@@ -90,7 +90,7 @@ class Solution(object):
         j = 0
         ret    # list
         ___ _ __ xrange(k):
-            __ i < l..(nums1) and j < l..(nums2):
+            __ i < l..(nums1) a.. j < l..(nums2):
                 ret.a..([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:
                     j += 1

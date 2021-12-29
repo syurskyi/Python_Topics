@@ -16,6 +16,6 @@ class Solution(object):
       ____ s[(start + 1) % n] __ " ":
         start += 2
       ____:
-        while start > 0 and s[(start - 1) % n] != " ":
+        w.... start > 0 a.. s[(start - 1) % n] != " ":
           start -= 1
     r.. start / n

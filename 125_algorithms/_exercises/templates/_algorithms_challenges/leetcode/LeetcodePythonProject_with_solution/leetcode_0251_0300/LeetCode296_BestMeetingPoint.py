@@ -13,7 +13,7 @@ class Solution(object):
                 __ grid[i][j] __ 1:
                     rows.a..(i)
                     cols.a..(j)
-        cols.sort()
+        cols.s..()
         sumVal = 0
         ___ row __ rows:
             sumVal += abs(row - rows[l..(rows)//2])

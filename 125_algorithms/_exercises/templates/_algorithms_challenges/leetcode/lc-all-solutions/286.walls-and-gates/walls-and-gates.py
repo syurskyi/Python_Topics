@@ -16,10 +16,10 @@ class Solution(object):
         __ rooms[i][j] __ 0:
           queue.a..((i, j))
 
-    while queue:
+    w.... queue:
       i, j = queue.popleft()
       ___ di, dj __ directions:
         p, q = i + di, j + dj
-        __ 0 <= p < l..(rooms) and 0 <= q < l..(rooms[0]) and rooms[p][q] __ INF:
+        __ 0 <= p < l..(rooms) a.. 0 <= q < l..(rooms[0]) a.. rooms[p][q] __ INF:
           rooms[p][q] = rooms[i][j] + 1
           queue.a..((p, q))

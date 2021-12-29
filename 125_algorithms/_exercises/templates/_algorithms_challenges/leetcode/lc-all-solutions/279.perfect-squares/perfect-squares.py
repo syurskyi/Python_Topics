@@ -6,13 +6,13 @@ class Solution(object):
     """
     squares    # list
     j = 1
-    while j * j <= n:
+    w.... j * j <= n:
       squares.a..(j * j)
       j += 1
     level = 0
     queue = [n]
     visited = [False] * (n + 1)
-    while queue:
+    w.... queue:
       level += 1
       temp    # list
       ___ q __ queue:

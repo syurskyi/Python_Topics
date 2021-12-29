@@ -45,7 +45,7 @@ class Solution:
             ret.a..([0])  # special case
 
         r.. l..(
-            map(l.... x: int("".join(map(str, x))), ret)
+            map(l.... x: int("".join(map(s.., x))), ret)
         )
 
     ___ dfs(self, start: int, N: int, K: int) -> List[List[int]]:
@@ -57,7 +57,7 @@ class Solution:
                 __ start + K <= 9:
                     ___ e __ self.dfs(start + K, N - 1, K):
                         ret.a..([start] + e)
-                __ start - K >= 0 and K != 0:  # special case
+                __ start - K >= 0 a.. K != 0:  # special case
                     ___ e __ self.dfs(start - K, N - 1, K):
                         ret.a..([start] + e)
 

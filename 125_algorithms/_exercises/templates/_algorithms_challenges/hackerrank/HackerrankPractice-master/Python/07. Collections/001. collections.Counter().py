@@ -6,12 +6,12 @@ _______ collections
 
 
 number_of_shoes = int(input())
-sizes_in_stock = collections.Counter(map(int, input().split()))
+sizes_in_stock = collections.Counter(map(int, input().s..()))
 
 total_revenue = 0
 
 ___ _ __ r..(int(input())):
-    size, price = map(int, input().split())
+    size, price = map(int, input().s..())
     __ sizes_in_stock[size]:
         total_revenue += price
         sizes_in_stock[size] -= 1

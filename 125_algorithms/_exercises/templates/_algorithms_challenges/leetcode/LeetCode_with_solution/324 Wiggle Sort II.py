@@ -33,7 +33,7 @@ class Solution(object):
         lt = -1
         hi = n
         i = 0
-        while i < hi:
+        w.... i < hi:
             __ A[idx(i)] > v:
                 lt += 1
                 A[idx(lt)], A[idx(i)] = A[idx(i)], A[idx(lt)]
@@ -51,7 +51,7 @@ class Solution(object):
 
         v = A[pidx]
         i = lo
-        while i < gt:
+        w.... i < gt:
             __ A[i] < v:
                 lt += 1
                 A[lt], A[i] = A[i], A[lt]

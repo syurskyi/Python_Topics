@@ -13,14 +13,14 @@ class Solution(object):
         i = 0
         j = 0
         n = l..(chars)
-        while i < n:
-            __ i+1 < n and chars[i+1] __ chars[i]:
+        w.... i < n:
+            __ i+1 < n a.. chars[i+1] __ chars[i]:
                 chars[j] = chars[i]
                 j += 1
                 prev = i
-                while i+1 < n and chars[i+1] __ chars[i]:
+                w.... i+1 < n a.. chars[i+1] __ chars[i]:
                     i += 1
-                numStr = str(i-prev+1)
+                numStr = s..(i-prev+1)
                 ___ c0 __ numStr:
                     chars[j] = c0
                     j += 1

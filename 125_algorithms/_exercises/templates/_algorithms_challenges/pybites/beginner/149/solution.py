@@ -8,7 +8,7 @@ ___ sort_words_case_insensitively(words):
     """
     # this works because: >>> sorted([True, False])
     # [False, True]
-    r.. s..(words, key=l.... x: (str(x).lower(), x[0].isdigit() ))
+    r.. s..(words, key=l.... x: (s..(x).lower(), x[0].isdigit() ))
 
 
 print(sort_words_case_insensitively(words))

@@ -23,7 +23,7 @@ class Solution(object):
         __ rmL < 0 o. rmR < 0 o. openNum < 0:
             r..
         __ i __ l..(s):
-            __ rmL __ 0 and rmR __ 0 and openNum __ 0:
+            __ rmL __ 0 a.. rmR __ 0 a.. openNum __ 0:
                 result.add(elem)
             r..
         c = s[i]

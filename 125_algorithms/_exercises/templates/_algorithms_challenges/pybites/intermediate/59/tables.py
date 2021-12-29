@@ -11,7 +11,7 @@ class MultiplicationTable:
 
             j = 1
             current = i
-            while j < self._length:
+            w.... j < self._length:
                 current += i
                 row.a..(current)
                 j += 1

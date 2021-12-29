@@ -3,7 +3,7 @@ data = int(input())
 result = 0
 arr    # list
 
-while l..(arr) < data:
+w.... l..(arr) < data:
     arr = input().s..
     #print('length of arr is:', len(arr))
     #print('values is in arr are :', arr)

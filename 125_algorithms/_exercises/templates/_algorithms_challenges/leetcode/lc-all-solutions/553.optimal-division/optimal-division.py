@@ -5,5 +5,5 @@ class Solution(object):
     :rtype: str
     """
     __ l..(nums) < 3:
-      r.. "/".join(map(str, nums))
-    r.. "%s/(%s)" % (nums[0], "/".join(map(str, nums[1:])))
+      r.. "/".join(map(s.., nums))
+    r.. "%s/(%s)" % (nums[0], "/".join(map(s.., nums[1:])))

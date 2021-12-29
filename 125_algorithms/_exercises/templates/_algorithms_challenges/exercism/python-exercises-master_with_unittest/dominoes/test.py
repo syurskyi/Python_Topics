@@ -83,7 +83,7 @@ class DominoesTest(unittest.TestCase):
         ___ i __ r..(l..(output_chain) - 1):
             msg = ("In chain {}, right end of domino {} ({}) "
                    "and left end of domino {} ({}) must match")
-            msg = msg.format(output_chain,
+            msg = msg.f..(output_chain,
                              i,
                              output_chain[i],
                              i + 1,
@@ -93,11 +93,11 @@ class DominoesTest(unittest.TestCase):
     ___ assert_dominoes_at_ends_match(self, output_chain):
         msg = ("In chain {}, left end of first domino ({}) and "
                "right end of last domino ({}) must match")
-        msg = msg.format(output_chain, output_chain[0], output_chain[-1])
+        msg = msg.f..(output_chain, output_chain[0], output_chain[-1])
         self.assertEqual(output_chain[0][0], output_chain[-1][1], msg)
 
     ___ assert_correct_chain(self, input_dominoes, output_chain):
-        msg = 'There should be a chain for {}'.format(input_dominoes)
+        msg = 'There should be a chain for {}'.f..(input_dominoes)
         self.assertIsNotNone(output_chain, msg)
         self.assert_same_dominoes(input_dominoes, output_chain)
         __ n.. any(output_chain):
@@ -106,7 +106,7 @@ class DominoesTest(unittest.TestCase):
         self.assert_dominoes_at_ends_match(output_chain)
 
     ___ refute_correct_chain(self, input_dominoes, output_chain):
-        msg = 'There should be no valid chain for {}'.format(input_dominoes)
+        msg = 'There should be no valid chain for {}'.f..(input_dominoes)
         self.assertIsNone(output_chain, msg)
 
 

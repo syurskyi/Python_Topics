@@ -1,6 +1,6 @@
 ___ raindrops(number):
     message = convert_to_message(number)
-    r.. message __ message ____ "{}".format(number)
+    r.. message __ message ____ "{}".f..(number)
 
 
 ___ convert_to_message(number):

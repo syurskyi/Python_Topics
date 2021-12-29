@@ -26,7 +26,7 @@ class BSTIterator(object):
     :rtype: int
     """
     stack = self.stack
-    while stack:
+    w.... stack:
       p = stack.pop()
       __ n.. p[1]:
         continue

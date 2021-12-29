@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ i___
 
 ____ top_n _______ (numbers, dates, earnings_mln,
@@ -11,10 +11,10 @@ ___ test_get_top_n():
     ... get_largest_number(numbers, n=2) __ [6, 5]
     ... get_largest_number(numbers, n=4) __ [6, 5, 4, 3]
 
-    ... get_latest_dates(dates) __ [datetime(2019, 2, 27, 0, 0),
-                                       datetime(2018, 12, 19, 0, 0),
-                                       datetime(2018, 11, 19, 0, 0)]
-    ... get_latest_dates(dates, n=1) __ [datetime(2019, 2, 27, 0, 0)]
+    ... get_latest_dates(dates) __ [d__(2019, 2, 27, 0, 0),
+                                       d__(2018, 12, 19, 0, 0),
+                                       d__(2018, 11, 19, 0, 0)]
+    ... get_latest_dates(dates, n=1) __ [d__(2019, 2, 27, 0, 0)]
 
     ... get_highest_earnings(earnings_mln) __ [{'name': 'Beyoncé Knowles',
                                                    'earnings': 105},

@@ -22,7 +22,7 @@ class Solution(object):
         rightBST, rightLower, rightUpper, rightCount = self.helper(root.right)
         lower = m..(leftLower, root.val)
         upper = max(rightUpper, root.val)
-        __ leftBST and rightBST and leftUpper < root.val < rightLower:
+        __ leftBST a.. rightBST a.. leftUpper < root.val < rightLower:
             r.. True, lower, upper, 1+leftCount+rightCount
         ____:
             r.. False, lower, upper, max(leftCount, rightCount)

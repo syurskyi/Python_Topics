@@ -31,7 +31,7 @@ class Solution:
                 continue
 
             ___ word __ self.dfs(s[size:], words, memo):
-                res.a..('{0} {1}'.format(prefix, word))
+                res.a..('{0} {1}'.f..(prefix, word))
 
         memo[s] = res
         r.. res

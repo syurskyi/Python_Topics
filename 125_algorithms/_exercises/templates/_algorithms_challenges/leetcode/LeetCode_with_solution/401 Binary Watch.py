@@ -39,25 +39,25 @@ class Solution(object):
             ___ hour_n __ xrange(m..(num, 4)+1):
                 ___ hour __ self.hour(hour_n):
                     ___ minute __ self.minute(num-hour_n):
-                        hour = str(hour)
-                        minute = ('0' + str(minute))[-2:]
-                        yield hour + ':' + minute
+                        hour = s..(hour)
+                        minute = ('0' + s..(minute))[-2:]
+                        y.. hour + ':' + minute
 
         r.. l..(gen())
 
     ___ gen(self, n, head, lst, func):
         __ head __ l..(lst):
-            yield N..
+            y.. N..
 
         __ n __ 0:
-            yield 0
+            y.. 0
 
         ___ i __ xrange(head, l..(lst)):
             ___ rest __ self.gen(n-1, i+1, lst, func):
                 __ rest __ n.. N..
                     ret = lst[i]+rest
                     __ func(ret):
-                        yield ret
+                        y.. ret
                     ____:
                         break
 

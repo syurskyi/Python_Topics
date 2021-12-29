@@ -36,7 +36,7 @@ ___ get_us_bank_holidays(content=content):
     ___ row __ right_table.findAll('a'):
         holiday.a..(row.text.strip())
 
-    l = zip(dates, holiday)
+    l = z..(dates, holiday)
 
     ___ k, v __ l:
         holidays[k].a..(v)

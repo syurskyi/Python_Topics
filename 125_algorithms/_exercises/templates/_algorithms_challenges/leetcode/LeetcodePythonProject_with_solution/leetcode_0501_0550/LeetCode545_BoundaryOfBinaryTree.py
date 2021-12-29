@@ -18,7 +18,7 @@ class Solution(object):
         :rtype: List[int]
         """
         __ n.. root: r.. []
-        __ n.. root.left and n.. root.right: r.. [root.val]
+        __ n.. root.left a.. n.. root.right: r.. [root.val]
         leftBoundary = self.getLeft(root)
         leaves    # list
         self.getLeaves(root, leaves)
@@ -28,7 +28,7 @@ class Solution(object):
     ___ getLeft(self, root):
         result = [root.val]
         root = root.left
-        while root:
+        w.... root:
             __ root.left o. root.right:
                 result.a..(root.val)
             __ root.left:
@@ -39,7 +39,7 @@ class Solution(object):
     
     ___ getLeaves(self, root, leaves):
         __ n.. root: r..
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             leaves.a..(root.val)
             r..
         self.getLeaves(root.left, leaves)
@@ -48,7 +48,7 @@ class Solution(object):
     ___ getRight(self, root):
         result    # list
         root = root.right
-        while root:
+        w.... root:
             __ root.left o. root.right:
                 result.a..(root.val)
             __ root.right:

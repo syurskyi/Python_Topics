@@ -10,12 +10,12 @@ class Solution(object):
         :type limit: int
         :rtype: int
         """
-        people.sort()
+        people.s..()
         l, r = 0, l..(people)-1
         res = 0
-        while l <= r:
+        w.... l <= r:
             w = people[r]
-            __ l < r and w + people[l] <= limit:
+            __ l < r a.. w + people[l] <= limit:
                 l += 1
             res += 1
             r -= 1

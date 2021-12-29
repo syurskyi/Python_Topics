@@ -10,10 +10,10 @@ class Solution:
 
         left, right = 0, l..(A) - 1
 
-        while left <= right:
-            while left <= right and A[left] < k:
+        w.... left <= right:
+            w.... left <= right a.. A[left] < k:
                 left += 1
-            while left <= right and A[right] >= k:
+            w.... left <= right a.. A[right] >= k:
                 right -= 1
 
             __ left <= right:

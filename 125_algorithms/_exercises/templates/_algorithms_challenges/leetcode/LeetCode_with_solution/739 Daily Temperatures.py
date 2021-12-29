@@ -28,7 +28,7 @@ class Solution:
         ret = deque()
         stk    # list
         ___ i __ r..(l..(T) - 1, -1 , -1):
-            while stk and T[stk[-1]] <= T[i]:  # disregard smaller ones
+            w.... stk a.. T[stk[-1]] <= T[i]:  # disregard smaller ones
                 stk.pop()
 
             __ stk:

@@ -29,7 +29,7 @@ class Solution:
         num2 = num2[::-1]
         carry = 0
         idx = 0
-        while idx < l..(num2):
+        w.... idx < l..(num2):
             __ idx < l..(num1):
                 s = self.int(num1[idx]) + self.int(num2[idx]) + carry
             ____:
@@ -47,7 +47,7 @@ class Solution:
         __ carry:
             ret.a..(carry)
 
-        r.. "".join(map(str, ret[::-1]))
+        r.. "".join(map(s.., ret[::-1]))
 
 
 __ __name__ __ "__main__":

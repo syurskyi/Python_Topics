@@ -38,7 +38,7 @@ class Solution(object):
         __ n.. node:
             r..
 
-        __ node.left and n.. node.left.left and n.. node.left.right:
+        __ node.left a.. n.. node.left.left a.. n.. node.left.right:
             self.s += node.left.val
 
         self.traverse(node.left)

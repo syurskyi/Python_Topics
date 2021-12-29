@@ -21,7 +21,7 @@ ___ primes_between():
     a, b = input().s.. 
     a, b = int(a), int(b)
     primes = gen_primes(a, b)
-    count = l..(str(primes).split())
-    answer.a..(str(count))
+    count = l..(s..(primes).s..())
+    answer.a..(s..(count))
   print(' '.join(answer))
 primes_between()

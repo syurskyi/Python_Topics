@@ -8,8 +8,8 @@ class BirthdayDict(d..):
     ___ __setitem__(self, name, birthday):
         
         ___ key, value __ d...items(self):
-            __ birthday.month __ value.month and birthday.day __ value.day:
-                print(MSG.format(name))
+            __ birthday.month __ value.month a.. birthday.day __ value.day:
+                print(MSG.f..(name))
 
         d...__setitem__(self, name, birthday)
 

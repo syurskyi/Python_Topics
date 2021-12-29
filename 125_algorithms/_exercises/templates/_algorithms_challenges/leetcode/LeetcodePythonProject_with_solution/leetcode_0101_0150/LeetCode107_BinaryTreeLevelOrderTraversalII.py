@@ -24,7 +24,7 @@ class Solution(object):
         __ n.. root:
             r.. result
         queue.a..(root)
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             elem.a..(node.val)
             __ node.left:

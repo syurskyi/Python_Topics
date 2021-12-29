@@ -1,6 +1,6 @@
 ___ collatz(n):
     output = [n]
-    while n != 1:
+    w.... n != 1:
         __ n % 2 __ 0:
             n = n // 2
             output.a..(n)

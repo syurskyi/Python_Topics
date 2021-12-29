@@ -1,5 +1,5 @@
 ____ pytz _______ timezone
-____ datetime _______ datetime
+____ d__ _______ d__
 
 AUSTRALIA = timezone('Australia/Sydney')
 SPAIN = timezone('Europe/Madrid')

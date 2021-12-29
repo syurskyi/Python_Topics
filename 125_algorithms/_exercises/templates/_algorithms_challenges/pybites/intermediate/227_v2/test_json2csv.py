@@ -43,15 +43,15 @@ ___ test_json2csv(file_no, expected, exception, capfd):
     mount_json = TMP / f'mount{file_no}.json'
     mount_csv = TMP / f'mount{file_no}.csv'
 
-    urlretrieve(mount_data.format(file_no), mount_json)
+    urlretrieve(mount_data.f..(file_no), mount_json)
 
     __ exception:
         with pytest.raises(JSONDecodeError) as exc:
             convert_to_csv(mount_json)
-            ... 'Invalid control character' __ str(exc)
+            ... 'Invalid control character' __ s..(exc)
 
         # testing you actually caught the exception!
-        output = capfd.readouterr()[0].strip()
+        output = capfd.readouterr()[0].s..
         ... output __ EXCEPTION
         r..
 

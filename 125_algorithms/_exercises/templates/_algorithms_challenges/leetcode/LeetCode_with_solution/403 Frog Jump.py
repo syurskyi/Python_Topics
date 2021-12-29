@@ -57,7 +57,7 @@ class Solution(object):
             ___ step __ F[stone]:
                 ___ i __ (-1, 0, 1):
                     nxt = stone + step + i
-                    __ nxt != stone and nxt __ F:
+                    __ nxt != stone a.. nxt __ F:
                         F[nxt].add(step + i)
 
         r.. True __ F[stones[-1]] ____ False

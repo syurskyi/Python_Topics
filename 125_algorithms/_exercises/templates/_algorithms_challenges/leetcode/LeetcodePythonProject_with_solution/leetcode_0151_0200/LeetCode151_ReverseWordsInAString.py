@@ -9,5 +9,5 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        __ n.. s o. n.. s.strip(): r.. ''
-        r.. ' '.join([x.strip() ___ x __ s.strip().split(' ') __ x][::-1])
+        __ n.. s o. n.. s.s..: r.. ''
+        r.. ' '.join([x.s.. ___ x __ s.s...s..(' ') __ x][::-1])

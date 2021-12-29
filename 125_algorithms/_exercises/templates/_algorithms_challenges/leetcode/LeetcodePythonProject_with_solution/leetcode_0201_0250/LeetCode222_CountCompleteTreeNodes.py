@@ -29,7 +29,7 @@ class Solution(object):
     ___ getLeftHeight(self, root):
         height = 0
         node = root
-        while node:
+        w.... node:
             node = node.left
             height += 1
         r.. height
@@ -37,7 +37,7 @@ class Solution(object):
     ___ getRightHeight(self, root):
         height = 0
         node = root
-        while node:
+        w.... node:
             node = node.right
             height += 1
         r.. height

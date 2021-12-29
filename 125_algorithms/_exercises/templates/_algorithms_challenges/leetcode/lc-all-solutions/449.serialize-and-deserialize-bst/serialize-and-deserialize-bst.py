@@ -14,12 +14,12 @@ class Codec:
     """
     stack = [(1, root)]
     ans    # list
-    while stack:
+    w.... stack:
       pc, node = stack.pop()
       __ n.. node:
         continue
       __ pc __ 0:
-        ans.a..(str(node.val))
+        ans.a..(s..(node.val))
       ____:
         stack.a..((1, node.right))
         stack.a..((1, node.left))
@@ -34,7 +34,7 @@ class Codec:
     """
     __ n.. data:
       r.. N..
-    vals = data.split(",")
+    vals = data.s..(",")
     preOrder = map(int, vals)
     inOrder = s..(preOrder)
     self.preIdx = 0

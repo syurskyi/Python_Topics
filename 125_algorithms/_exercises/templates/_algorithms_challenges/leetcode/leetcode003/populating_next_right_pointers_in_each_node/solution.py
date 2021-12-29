@@ -52,7 +52,7 @@ class Solution(object):
         __ root __ n.. N..
             __ root.left __ n.. N..
                 root.left.next = root.right
-            __ root.right __ n.. N.. and root.next __ n.. N..
+            __ root.right __ n.. N.. a.. root.next __ n.. N..
                 root.right.next = root.next.left
             self.connect(root.left)
             self.connect(root.right)

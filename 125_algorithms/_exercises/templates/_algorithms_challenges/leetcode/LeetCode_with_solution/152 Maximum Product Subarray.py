@@ -94,13 +94,13 @@ class Solution(object):
         #     global_max = max(global_max, cur)
 
         cur = 0  # starting from 0
-        ___ ind, val __ enumerate(A):
+        ___ ind, val __ e..(A):
             __ cur!=0:
                 cur *= val
             ____:
                 cur = val
 
-            __ cur<0 and dp[ind+1]<1:
+            __ cur<0 a.. dp[ind+1]<1:
                 cur = 0
 
             global_max = max(global_max, cur)
@@ -137,7 +137,7 @@ class Solution(object):
         cur = 0  # starting from 0
         start_ptr = 0
         end_ptr = 0
-        while end_ptr<length:  # [start, end), expanding
+        w.... end_ptr<length:  # [start, end), expanding
             __ cur!=0:
                 cur *= A[end_ptr]
             ____:
@@ -146,9 +146,9 @@ class Solution(object):
 
             end_ptr += 1
 
-            __ cur<0 and dp[end_ptr]<1:
+            __ cur<0 a.. dp[end_ptr]<1:
                 # from the starting point, get the first negative 
-                while start_ptr<=end_ptr and A[start_ptr]>0:
+                w.... start_ptr<=end_ptr a.. A[start_ptr]>0:
                     cur /= A[start_ptr]
                     start_ptr += 1
                 __ A[start_ptr]<0:

@@ -59,7 +59,7 @@ ___ letters_series():
 ___ test_series_simple_math(int_series_small, arg, expected):
     ... a..(
         expected[idx] __ val
-        ___ idx, val __ enumerate(
+        ___ idx, val __ e..(
             se.series_simple_math(int_series_small, arg[0], arg[1])
         )
     )
@@ -80,8 +80,8 @@ ___ test_complex_series_maths(
     result = se.complex_series_maths(
         int_series_vsmall, int_series_vsmall_offset_index, arg
     )
-    result = ",".join(str(n) ___ n __ result)
-    expected = ",".join(str(n) ___ n __ expected)
+    result = ",".join(s..(n) ___ n __ result)
+    expected = ",".join(s..(n) ___ n __ expected)
     ... result __ expected
 
 
@@ -154,7 +154,7 @@ ___ test_complex_series_maths(
 )
 ___ test_create_series_mask(letters_series, arg, expected):
     result = se.create_series_mask(letters_series, arg)
-    ... a..([result[idx] __ exp ___ idx, exp __ enumerate(expected)])
+    ... a..([result[idx] __ exp ___ idx, exp __ e..(expected)])
     ... a..(l __ arg ___ l __ letters_series[result])
 
 
@@ -162,8 +162,8 @@ ___ test_custom_series_function(sepal_length_series):
     result = se.custom_series_function(sepal_length_series, 0.1)
     ... l..(result) __ 51
     ... round(result.mean(), 4) __ 5.6725
-    ... max(result.index) __ 149 and max(result.values) __ 7.9
-    ... m..(result.index) __ 0 and m..(result.values) __ 4.3
+    ... max(result.index) __ 149 a.. max(result.values) __ 7.9
+    ... m..(result.index) __ 0 a.. m..(result.values) __ 4.3
     ... result[82] __ 5.9
     ... result.iloc[10] __ 5.0
     ... result.iloc[11] __ 5.1

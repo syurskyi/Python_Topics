@@ -19,7 +19,7 @@ class Solution(object):
 
     ___ fill(root, res, left, right, h):
       __ root:
-        val = str(root.val)
+        val = s..(root.val)
         mid = left + (right - left) / 2
         res[h][mid] = val
         fill(root.left, res, left, mid - 1, h + 1)

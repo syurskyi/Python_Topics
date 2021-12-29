@@ -34,7 +34,7 @@ ___ _quote_exists(existing_quote):
 
 
     ___ quote __ quotes:
-        __ quote['quote'] __ existing_quote['quote'] and quote['movie'] __ existing_quote['movie']:
+        __ quote['quote'] __ existing_quote['quote'] a.. quote['movie'] __ existing_quote['movie']:
             r.. True
 
     r.. False
@@ -69,7 +69,7 @@ ___ create_quote():
 
     data = request.json
 
-    __ n.. (('quote' __ data) and  ('movie' __ data)):
+    __ n.. (('quote' __ data) a..  ('movie' __ data)):
         r.. "Incomplete data",400
     
 
@@ -126,7 +126,7 @@ ___ delete_quote(qid):
         r.. "Quote not found",404
 
 
-    ___ i,quote __ enumerate(quotes):
+    ___ i,quote __ e..(quotes):
         __ quote['id'] __ qid:
             quotes.pop(i)
             break

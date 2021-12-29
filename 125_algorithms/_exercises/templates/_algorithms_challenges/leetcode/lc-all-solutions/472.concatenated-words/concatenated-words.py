@@ -19,7 +19,7 @@ class Solution(object):
             break
       r.. dp[-1]
 
-    words.sort(key=l.... x: -l..(x))
+    words.s..(key=l.... x: -l..(x))
     cands = set(words)
     ans    # list
     ___ i __ r..(0, l..(words)):

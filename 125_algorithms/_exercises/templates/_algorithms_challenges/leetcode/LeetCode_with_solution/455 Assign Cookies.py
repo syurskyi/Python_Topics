@@ -22,12 +22,12 @@ class Solution:
         :type s: List[int]
         :rtype: int
         """
-        g.sort()
-        s.sort()
+        g.s..()
+        s.s..()
         ret = 0
         i = 0
         j = 0
-        while i < l..(g) and j < l..(s):
+        w.... i < l..(g) a.. j < l..(s):
             __ g[i] <= s[j]:
                 ret += 1
                 i += 1

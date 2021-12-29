@@ -25,7 +25,7 @@ class Solution:
         __ total_len < k:
             r.. 0
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ self.check_if_possible(L, mid, k):
                 left = mid

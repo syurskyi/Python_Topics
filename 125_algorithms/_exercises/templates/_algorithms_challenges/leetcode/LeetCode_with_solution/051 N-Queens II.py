@@ -52,19 +52,19 @@ class Solution:
                 # diagonal
                 row = queen_index+m
                 col = i+m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i-m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i+m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index+m
                 col = i-m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
             self.backtrack(queen_index+1, new_config, result)
 

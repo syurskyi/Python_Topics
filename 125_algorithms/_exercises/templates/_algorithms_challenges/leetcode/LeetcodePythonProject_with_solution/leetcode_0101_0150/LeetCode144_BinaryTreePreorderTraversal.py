@@ -19,7 +19,7 @@ class Solution(object):
         __ n.. root: r.. []
         stack = [root]
         res    # list
-        while stack:
+        w.... stack:
             node = stack.pop()
             res.a..(node.val)
             __ node.right:

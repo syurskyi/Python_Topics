@@ -1,7 +1,7 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 ____ operator _______ attrgetter
 
-Book = namedtuple('Book', 'title authors pages published')
+Book = n..('Book', 'title authors pages published')
 
 books = [
     Book(title="Python Interviews",

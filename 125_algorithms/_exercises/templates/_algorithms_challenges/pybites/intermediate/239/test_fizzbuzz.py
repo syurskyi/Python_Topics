@@ -7,7 +7,7 @@ del div_3[4::5]
 div_5 = l..(filter(l.... x: x%3 != 0, r..(5, 5*100 + 1, 5)))
 div_15 = l..(r..(15, 15*30 + 1, 15))
 others = [x ___ x __ r..(1,3*100 + 1) __ x n.. __ div_3
-          and x n.. __ div_5 and x n.. __ div_15]
+          a.. x n.. __ div_5 a.. x n.. __ div_15]
 
 
 

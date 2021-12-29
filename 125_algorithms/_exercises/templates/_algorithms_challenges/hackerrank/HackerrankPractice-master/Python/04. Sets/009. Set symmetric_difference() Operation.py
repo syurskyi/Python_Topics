@@ -2,6 +2,6 @@
 # Score: 10
 
 
-_, a = input(), set(input().split())
-_, b = input(), set(input().split())
+_, a = input(), set(input().s..())
+_, b = input(), set(input().s..())
 print(l..(a.symmetric_difference(b)))

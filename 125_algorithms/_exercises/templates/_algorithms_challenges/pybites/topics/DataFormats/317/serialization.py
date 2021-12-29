@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 _______ os
 ____ pathlib _______ Path
 _______ pickle
@@ -14,7 +14,7 @@ PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
 class MovieRented(NamedTuple):
-    title: str
+    title: s..
     price: int
     date: date
 
@@ -41,9 +41,9 @@ ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
     pickle.dump(data, output_file)
 
 class Bite(NamedTuple):
-    title: str
+    title: s..
     number: int
-    level: str
+    level: s..
 
 data = [
     Bite('Sum of Numbers', 1, 'Beginner'),

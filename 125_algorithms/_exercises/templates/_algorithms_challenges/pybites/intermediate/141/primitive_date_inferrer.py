@@ -1,5 +1,5 @@
 ____ enum _______ Enum
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ collections _______ Counter
 
 
@@ -41,9 +41,9 @@ ___ _maybe_DateFormats(date_str):
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
     maybe_formats    # list
-    ___ idx, d_parse_fmt __ enumerate(d_parse_formats):
+    ___ idx, d_parse_fmt __ e..(d_parse_formats):
         try:
-            _parsed_date = datetime.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
+            _parsed_date = d__.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
         except ValueError:
             pass
@@ -68,9 +68,9 @@ ___ get_dates(dates):
     # complete this method
     ___ date __ dates:
         found = False
-        ___ i,date_format __ enumerate(date_formats_to_try):
+        ___ i,date_format __ e..(date_formats_to_try):
             try:
-                datetime.strptime(date,date_format)
+                d__.strptime(date,date_format)
                 format_counts[date_format] += 1
                 found = True
             except:
@@ -87,7 +87,7 @@ ___ get_dates(dates):
     result    # list
     ___ date __ dates:
         try:
-            date = datetime.strptime(date,max_frequency).strftime("%Y-%m-%d")
+            date = d__.strptime(date,max_frequency).strftime("%Y-%m-%d")
             result.a..(date)
         except:
             result.a..("Invalid")

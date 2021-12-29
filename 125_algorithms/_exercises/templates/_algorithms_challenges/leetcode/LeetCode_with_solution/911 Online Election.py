@@ -45,7 +45,7 @@ class TopVotedCandidate:
         """
         self.maxes    # list  # [(t, i)]  at time t
         counter = defaultdict(int)
-        tp = s..(zip(times, persons))
+        tp = s..(z..(times, persons))
         ___ t, p __ tp:
             counter[p] += 1
             __ n.. self.maxes o. counter[self.maxes[-1][1]] <= counter[p]:
@@ -54,7 +54,7 @@ class TopVotedCandidate:
     ___ q(self, t: int) -> int:
         i = bisect.bisect(self.maxes, (t, 0))
         # equal
-        __ i < l..(self.maxes) and self.maxes[i][0] __ t:
+        __ i < l..(self.maxes) a.. self.maxes[i][0] __ t:
             r.. self.maxes[i][1]
 
         # smaller

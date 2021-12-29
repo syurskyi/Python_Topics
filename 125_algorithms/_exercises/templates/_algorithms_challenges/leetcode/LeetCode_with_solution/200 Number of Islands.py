@@ -42,7 +42,7 @@ class Solution:
         visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         ___ i __ xrange(m):
             ___ j __ xrange(n):
-                __ n.. visited[i][j] and grid[i][j] __ "1":
+                __ n.. visited[i][j] a.. grid[i][j] __ "1":
                     self.dfs(grid, i, j, visited)
                     cnt += 1
 
@@ -59,7 +59,7 @@ class Solution:
         ___ dir __ self.dirs:
             I = i+dir[0]
             J = j+dir[1]
-            __ 0 <= I < m and 0 <= J < n and n.. visited[I][J] and grid[I][J] __ "1":
+            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. grid[I][J] __ "1":
                 self.dfs(grid, I, J, visited)
 
 

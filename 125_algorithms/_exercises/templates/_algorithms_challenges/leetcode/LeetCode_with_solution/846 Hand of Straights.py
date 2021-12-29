@@ -45,7 +45,7 @@ class Solution:
         prev = 0
         prev_cnt = 0
         ___ k __ s..(counter):  # sorted by key
-            __ prev_cnt > counter[k] o. prev_cnt > 0 and k > prev + 1:
+            __ prev_cnt > counter[k] o. prev_cnt > 0 a.. k > prev + 1:
                 r.. False
                 
             q.a..(counter[k] - prev_cnt)
@@ -61,7 +61,7 @@ class Solution:
         sort + heap
         O(N log N + N log N)
         """
-        A.sort()
+        A.s..()
         __ l..(A) % W != 0:
             r.. False
         __ W __ 1:

@@ -11,11 +11,11 @@ class Solution(object):
         """
         hashmap = {}
         ___ path __ paths:
-            arr = path.split(' ')
+            arr = path.s..(' ')
             folder = arr[0]
             files = arr[1:]
             ___ file __ files:
-                arr0 = file.split('(')
+                arr0 = file.s..('(')
                 content = arr0[1][:-1]
                 filename = arr0[0]
                 fullPath = folder+'/'+filename

@@ -48,7 +48,7 @@ class LRUCache(object):
     # doubly linked-list operations only
     ___ _appendleft(self, cur):
         """Normal or initially empty"""
-        __ n.. self.head and n.. self.tail:
+        __ n.. self.head a.. n.. self.tail:
             self.head = cur
             self.tail = cur
             r..

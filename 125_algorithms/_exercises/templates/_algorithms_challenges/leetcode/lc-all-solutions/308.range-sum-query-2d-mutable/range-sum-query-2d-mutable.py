@@ -28,9 +28,9 @@ class NumMatrix(object):
     delta = val - m[row][col]
     m[row][col] = val
     i, j = row, col
-    while i < l..(c):
+    w.... i < l..(c):
       j = col
-      while j < l..(c[0]):
+      w.... j < l..(c[0]):
         c[i][j] += delta
         j += self.lowbit(j)
       i += self.lowbit(i)
@@ -41,9 +41,9 @@ class NumMatrix(object):
     ret = 0
     c, m = self.c, self.m
     i, j = row, col
-    while i > 0:
+    w.... i > 0:
       j = col
-      while j > 0:
+      w.... j > 0:
         ret += c[i][j]
         j -= self.lowbit(j)
       i -= self.lowbit(i)
@@ -64,5 +64,5 @@ class NumMatrix(object):
     total = self.sumRange(row2, col2)
     left = self.sumRange(row2, col1 - 1) __ col1 - 1 >= 0 ____ 0
     top = self.sumRange(row1 - 1, col2) __ row1 - 1 >= 0 ____ 0
-    overlap = self.sumRange(row1 - 1, col1 - 1) __ row1 - 1 >= 0 and col1 - 1 >= 0 ____ 0
+    overlap = self.sumRange(row1 - 1, col1 - 1) __ row1 - 1 >= 0 a.. col1 - 1 >= 0 ____ 0
     r.. total - left - top + overlap

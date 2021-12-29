@@ -13,7 +13,7 @@ c_ SLinkedList:
     ___ __iter__(self
         node  head
         w__ node:
-            yield node
+            y.. node
             node  node.next
     # insert in Linked List
     ___ insertSLL  value, location

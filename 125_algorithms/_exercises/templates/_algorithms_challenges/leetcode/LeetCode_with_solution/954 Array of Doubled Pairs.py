@@ -38,7 +38,7 @@ ____ collections _______ Counter
 
 class Solution:
     ___ canReorderDoubled(self, A: List[int]) -> bool:
-        A.sort(key=abs)
+        A.s..(key=abs)
         counter = Counter(A)
         ___ a __ A:
             __ counter[a] __ 0:
@@ -55,7 +55,7 @@ class Solution:
         """
         sort + counter to form the doubled pairs
         """
-        A.sort()
+        A.s..()
         counter = Counter(A)
         ___ a __ A:
             __ counter[a] __ 0:

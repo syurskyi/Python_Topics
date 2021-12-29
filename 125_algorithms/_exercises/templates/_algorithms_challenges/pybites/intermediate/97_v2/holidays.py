@@ -29,7 +29,7 @@ ___ get_us_bank_holidays(content=content):
 
     table = soup.find('table',class_="list-table")
 
-    ___ i,row __ enumerate(table.find_all('tr')):
+    ___ i,row __ e..(table.find_all('tr')):
         __ i __ 0:
             continue
         date = row.select_one('td:nth-child(2)').getText(strip=True)

@@ -1,4 +1,4 @@
-_______ itertools
+_______ i..
 _______ os
 _______ urllib.request
 
@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.strip().lower() ___ word __ f.read().s.. ])
+    dictionary = set([word.s...lower() ___ word __ f.read().s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
@@ -54,4 +54,4 @@ ___ _get_permutations_draw(draw):
      """
     lowered = ''.join(draw).lower()
     ___ i __ r..(1, l..(draw) + 1):
-        yield ____ itertools.permutations(lowered, i)
+        y.. ____ i...permutations(lowered, i)

@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         __ n.. candidates: r..[]
-        candidates.sort()
+        candidates.s..()
         res    # list
         self.helper2(candidates, 0, [], res, target)
         r.. res
@@ -23,7 +23,7 @@ class Solution(object):
         ___ i __ r..(ind, l..(nums)):
             __ target < nums[i]:
                 r..
-            __ i > ind and nums[i] __ nums[i-1]:
+            __ i > ind a.. nums[i] __ nums[i-1]:
                 continue
             curr.a..(nums[i])
             self.helper2(nums, i+1, curr, res, target-nums[i])
@@ -36,7 +36,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         __ n.. candidates: r.. []
-        candidates.sort()
+        candidates.s..()
         res    # list
         self.helper(candidates, target, 0, [], res)
         r.. res

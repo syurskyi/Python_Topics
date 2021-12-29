@@ -40,7 +40,7 @@ class Word:
 
 
 class Solution:
-    ___ topKFrequent(self, words: List[str], k: int) -> List[str]:
+    ___ topKFrequent(self, words: List[s..], k: int) -> List[s..]:
         """
         quick select log n
         heap log k
@@ -56,7 +56,7 @@ class Solution:
                 heapq.heappop(h)
 
         ret    # list
-        while h:
+        w.... h:
             w = heapq.heappop(h).content
             ret.a..(w)
 

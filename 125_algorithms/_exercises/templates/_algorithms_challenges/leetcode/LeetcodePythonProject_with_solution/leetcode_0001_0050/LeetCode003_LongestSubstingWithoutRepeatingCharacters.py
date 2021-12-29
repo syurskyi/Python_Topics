@@ -13,8 +13,8 @@ class Solution(object):
         left = 0
         hashset = set()
         maxLen = 0
-        ___ i, c __ enumerate(s):
-            while left < i and c __ hashset:
+        ___ i, c __ e..(s):
+            w.... left < i a.. c __ hashset:
                 hashset.discard(s[left])
                 left += 1
             hashset.add(c)

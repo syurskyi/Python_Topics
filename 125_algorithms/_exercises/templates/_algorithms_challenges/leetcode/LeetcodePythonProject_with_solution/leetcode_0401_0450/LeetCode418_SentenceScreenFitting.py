@@ -19,7 +19,7 @@ class Solution(object):
             ind = i
             curLen = 0
             time = 0
-            while curLen+l..(sentence[ind])<=cols:
+            w.... curLen+l..(sentence[ind])<=cols:
                 curLen += l..(sentence[ind])+1
                 ind += 1
                 __ ind __ l..(sentence):

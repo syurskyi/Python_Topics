@@ -1,5 +1,5 @@
-____ collections _______ namedtuple
-_______ datetime
+____ collections _______ n..
+_______ d__
 
 # CANNOT USE ISODATE MODULE IN PYBITES
 # import isodate
@@ -30,7 +30,7 @@ _______ datetime
 # urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = namedtuple('Video', 'id title duration metrics')
+Video = n..('Video', 'id title duration metrics')
 
 # POSSIBLE DASK ERROR. UNABLE TO LOAD PICKLE FILE
 # MANUALLY INSERTED BELOW
@@ -728,26 +728,26 @@ ___ get_most_popular_talks_by_like_ratio(videos):
     video_list    # list
     ___ video __ videos:
         __ int(video.metrics['likeCount']) - int(video.metrics['dislikeCount']) > 0:
-            __ video.id != 'KAPeaEJeuc8' and video.id != 'DAWHMHMPVHU':  # HACKED FOR ANSWER
+            __ video.id != 'KAPeaEJeuc8' a.. video.id != 'DAWHMHMPVHU':  # HACKED FOR ANSWER
                 # No matter what algorithm is used, the above ids appear to have a better likes to view ratio
                 video_list.a..(video)
     output = s..(video_list,
                     key=l.... x: int(x.metrics['viewCount']) /
                                   (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])),
-                    reverse=False)
+                    r.._F..
     r.. output
 
 
 ___ parse_isoduration(s):
-    ___ get_isosplit(s, split):
-        __ split __ s:
-            n, s = s.split(split)
+    ___ get_isosplit(s, s..):
+        __ s.. __ s:
+            n, s = s.s..(s..)
         ____:
             n = 0
         r.. n, s
 
     # Remove prefix
-    s = s.split('P')[-1]
+    s = s.s..('P')[-1]
 
     # Step through letter dividers
     days, s = get_isosplit(s, 'D')
@@ -757,7 +757,7 @@ ___ parse_isoduration(s):
     seconds, s = get_isosplit(s, 'S')
 
     # Convert all to seconds
-    dt = datetime.timedelta(days=int(days), hours=int(hours), minutes=int(minutes), seconds=int(seconds))
+    dt = d__.t..(days=int(days), hours=int(hours), minutes=int(minutes), seconds=int(seconds))
     r.. int(dt.total_seconds())
 
 

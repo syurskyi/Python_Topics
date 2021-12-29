@@ -14,9 +14,9 @@ urlretrieve(
 YEAR_MONTH = '{y}-{m:02d}'
 
 
-___ _parse_line(line: str) -> d..:
+___ _parse_line(line: s..) -> d..:
     """returns a line with the key of date type and value of add/del"""
-    d_str, all_changes = line.split(' | ')
+    d_str, all_changes = line.s..(' | ')
     date = parse(re.sub(r'Date:[ ]+', '', d_str)).date()
 
     # add insertions and deletions
@@ -27,8 +27,8 @@ ___ _parse_line(line: str) -> d..:
     r.. {'date': date, 'changes': changes}
 
 
-___ get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = N..) -> (str, str):
+___ get_min_max_amount_of_commits(commit_log: s.. = commits,
+                                  year: int = N..) -> (s.., s..):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.

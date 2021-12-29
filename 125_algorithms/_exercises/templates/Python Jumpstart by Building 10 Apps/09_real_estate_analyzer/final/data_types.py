@@ -12,7 +12,7 @@ class Purchase:
         self.baths  baths
         self.beds  beds
         self.state  state
-        self.zip  zipcode
+        self.z..  zipcode
         self.city  city
 
     @staticmethod

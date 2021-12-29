@@ -14,7 +14,7 @@ class Solution(object):
         ___ b __ buildings:
             heights.a..([b[0], -b[2]])
             heights.a..([b[1], b[2]])
-        heights.sort()
+        heights.s..()
         heap = [0]
         res    # list
         prev = 0

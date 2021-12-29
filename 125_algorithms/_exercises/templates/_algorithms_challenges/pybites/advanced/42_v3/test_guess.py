@@ -70,8 +70,8 @@ ___ test_game_win(inp, capfd):
                 '9 is too high', 'Already guessed',
                 '6 is correct!', 'It took you 3 guesses']
 
-    output = [line.strip() ___ line __ out.split('\n') __ line.strip()]
-    ___ line, exp __ zip(output, expected):
+    output = [line.s.. ___ line __ out.s..('\n') __ line.s..]
+    ___ line, exp __ z..(output, expected):
         ... line __ exp
 
 
@@ -89,6 +89,6 @@ ___ test_game_lose(inp, capfd):
                 '11 is too low', '12 is too low',
                 'Guessed 5 times, answer was 13']
 
-    output = [line.strip() ___ line __ out.split('\n') __ line.strip()]
-    ___ line, exp __ zip(output, expected):
+    output = [line.s.. ___ line __ out.s..('\n') __ line.s..]
+    ___ line, exp __ z..(output, expected):
         ... line __ exp

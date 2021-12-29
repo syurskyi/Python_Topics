@@ -33,10 +33,10 @@ class Solution:
         """
         n = l..(nums)
         lo, hi = 0, n - 1
-        while lo < hi and nums[lo] <= nums[lo + 1]:
+        w.... lo < hi a.. nums[lo] <= nums[lo + 1]:
             lo += 1
 
-        while lo < hi and nums[hi - 1] <= nums[hi]:
+        w.... lo < hi a.. nums[hi - 1] <= nums[hi]:
             hi -= 1
 
         __ hi <= lo:
@@ -48,9 +48,9 @@ class Solution:
             mini = m..(mini, nums[i])
             maxa = max(maxa, nums[i])
 
-        while lo - 1 >= 0 and nums[lo - 1] > mini:
+        w.... lo - 1 >= 0 a.. nums[lo - 1] > mini:
             lo -= 1
-        while hi + 1 < n and nums[hi + 1] < maxa:
+        w.... hi + 1 < n a.. nums[hi + 1] < maxa:
             hi += 1
 
         r.. hi - lo + 1
@@ -61,11 +61,11 @@ class Solution:
         """
         expected = l..(s..(nums))
         i = 0
-        while i < l..(nums) and nums[i] __ expected[i]:
+        w.... i < l..(nums) a.. nums[i] __ expected[i]:
             i += 1
 
         j = l..(nums) - 1
-        while j >= i and nums[j] __ expected[j]:
+        w.... j >= i a.. nums[j] __ expected[j]:
             j -= 1
 
         r.. j - i + 1

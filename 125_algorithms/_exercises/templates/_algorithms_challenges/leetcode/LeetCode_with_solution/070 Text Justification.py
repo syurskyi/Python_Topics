@@ -50,7 +50,7 @@ class Solution:
         cur_length = -1
         lst    # list
         i = 0
-        while i<l..(words):
+        w.... i<l..(words):
             word = words[i]
             cur_length += 1 # space in left justified
             cur_length += l..(word)
@@ -64,7 +64,7 @@ class Solution:
 
     ___ distribute_space(self, L, result):
         new_result    # list
-        ___ ind, line __ enumerate(result):
+        ___ ind, line __ e..(result):
             word_cnt = l..(line)
             str_builder    # list
             space_cnt = L-s..(l..(word) ___ word __ line)

@@ -26,9 +26,9 @@ class Solution:
         # main
         closed_ptr = head
         open_ptr = head.next
-        while open_ptr:
+        w.... open_ptr:
             # find the non-duplicate
-            while open_ptr and closed_ptr.val__open_ptr.val:
+            w.... open_ptr a.. closed_ptr.val__open_ptr.val:
                 open_ptr = open_ptr.next
 
             closed_ptr.next = open_ptr

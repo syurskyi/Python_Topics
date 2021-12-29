@@ -17,7 +17,7 @@ class Codec:
     """
     ret    # list
     queue = deque([root])
-    while queue:
+    w.... queue:
       top = queue.popleft()
       __ n.. top:
         ret.a..("None")
@@ -36,21 +36,21 @@ class Codec:
     """
     left = l.... n: 2 * n + 1
     right = l.... n: 2 * n + 2
-    data = data.split(",")
+    data = data.s..(",")
     __ data[0] __ "None":
       r.. N..
     root = TreeNode(int(data[0]))
     queue = deque([root])
     i = 0
-    while queue and i < l..(data):
+    w.... queue a.. i < l..(data):
       top = queue.popleft()
       i += 1
       left = right = N..
-      __ i < l..(data) and data[i] != "None":
+      __ i < l..(data) a.. data[i] != "None":
         left = TreeNode(int(data[i]))
         queue.a..(left)
       i += 1
-      __ i < l..(data) and data[i] != "None":
+      __ i < l..(data) a.. data[i] != "None":
         right = TreeNode(int(data[i]))
         queue.a..(right)
 

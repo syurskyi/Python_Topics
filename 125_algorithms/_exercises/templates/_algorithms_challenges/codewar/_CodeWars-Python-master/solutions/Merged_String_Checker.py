@@ -29,4 +29,4 @@ ___ is_merge(s, part1, part2):
                 r.. False
         r.. True
 
-    r.. findall(part1) and findall(part2) and removechar(part1 + part2) and l..(result) __ 0
+    r.. findall(part1) a.. findall(part2) a.. removechar(part1 + part2) a.. l..(result) __ 0

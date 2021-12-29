@@ -5,11 +5,11 @@ For this Bite you want to look at the datetime and calendar modules. Have fun!
 '''
 
 _______ calendar
-_______ datetime
+_______ d__
 
 ___ weekday_of_birth_date(date):
     """Takes a date object and returns the corresponding weekday string"""
     r.. (calendar.day_name[date.weekday()])
 
-d = datetime.date(1984, 4, 4)
+d = d__.date(1984, 4, 4)
 print(weekday_of_birth_date(d))

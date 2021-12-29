@@ -7,8 +7,8 @@ class Solution(object):
     """
     __ l..(s) >= l..(t):
       i = 0
-      while i < l..(t) and s[i] __ t[i]:
+      w.... i < l..(t) a.. s[i] __ t[i]:
         i += 1
-      r.. s != t and (s[i + 1:] __ t[i:] __ l..(s) != l..(t) ____ s[i + 1:] __ t[i + 1:])
+      r.. s != t a.. (s[i + 1:] __ t[i:] __ l..(s) != l..(t) ____ s[i + 1:] __ t[i + 1:])
     ____:
       r.. self.isOneEditDistance(t, s)

@@ -25,7 +25,7 @@ class Solution:
     ___ __init__(self):
         self.ret    # list
 
-    ___ letterCasePermutation(self, S: str) -> List[str]:
+    ___ letterCasePermutation(self, S: s..) -> List[s..]:
         """
         dfs
         """

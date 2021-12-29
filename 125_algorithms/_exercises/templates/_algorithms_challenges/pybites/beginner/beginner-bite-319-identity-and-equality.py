@@ -56,7 +56,7 @@ class Car:
     ___ __eq__(self, other_car):
         r.. (
             self.model.lower() __ other_car.model.lower()
-            and self.color.lower() __ other_car.color.lower()
+            a.. self.color.lower() __ other_car.color.lower()
         )
 
     @staticmethod

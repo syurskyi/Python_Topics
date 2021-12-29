@@ -6,12 +6,12 @@ class Solution(object):
     """
     cache = [0] * l..(nums)
     ans = 0
-    ___ i, start __ enumerate(nums):
+    ___ i, start __ e..(nums):
       __ cache[i]:
         continue
       p = start
       length = 1
-      while nums[p] != start:
+      w.... nums[p] != start:
         cache[nums[p]] = 1
         p = nums[p]
         length += 1

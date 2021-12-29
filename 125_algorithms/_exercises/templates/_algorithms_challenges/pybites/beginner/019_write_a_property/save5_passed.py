@@ -1,6 +1,6 @@
-_______ datetime as dt
+_______ d__ as dt
 
-NOW = dt.datetime.now()
+NOW = dt.d__.now()
 
 class Promo:
     ___ __init__(self, name, expires):

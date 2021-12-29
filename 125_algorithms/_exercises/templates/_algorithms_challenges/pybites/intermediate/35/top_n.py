@@ -1,19 +1,19 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 ____ operator _______ itemgetter
 
 _______ heapq
 
 numbers = [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6]
-dates = [datetime(2018, 1, 23, 0, 0),
-         datetime(2017, 12, 19, 0, 0),
-         datetime(2017, 10, 15, 0, 0),
-         datetime(2019, 2, 27, 0, 0),
-         datetime(2017, 3, 29, 0, 0),
-         datetime(2018, 8, 11, 0, 0),
-         datetime(2018, 5, 3, 0, 0),
-         datetime(2018, 12, 19, 0, 0),
-         datetime(2018, 11, 19, 0, 0),
-         datetime(2017, 7, 7, 0, 0)]
+dates = [d__(2018, 1, 23, 0, 0),
+         d__(2017, 12, 19, 0, 0),
+         d__(2017, 10, 15, 0, 0),
+         d__(2019, 2, 27, 0, 0),
+         d__(2017, 3, 29, 0, 0),
+         d__(2018, 8, 11, 0, 0),
+         d__(2018, 5, 3, 0, 0),
+         d__(2018, 12, 19, 0, 0),
+         d__(2018, 11, 19, 0, 0),
+         d__(2017, 7, 7, 0, 0)]
 # static (outdated) copy of: 
 # https://www.forbes.com/celebrities/list
 earnings_mln = [

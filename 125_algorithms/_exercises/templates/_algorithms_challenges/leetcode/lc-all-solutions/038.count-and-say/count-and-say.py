@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = "1"
     n -= 1
-    while n > 0:
+    w.... n > 0:
       res = ""
       pre = ans[0]
       count = 1
@@ -14,10 +14,10 @@ class Solution(object):
         __ pre __ ans[i]:
           count += 1
         ____:
-          res += str(count) + pre
+          res += s..(count) + pre
           pre = ans[i]
           count = 1
-      res += str(count) + pre
+      res += s..(count) + pre
       ans = res
       n -= 1
     r.. ans

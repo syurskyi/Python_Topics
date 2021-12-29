@@ -58,7 +58,7 @@ class Solution:
         hare = head
         tortoise = head
         flag = False
-        while hare and hare.next and tortoise:
+        w.... hare a.. hare.next a.. tortoise:
             hare = hare.next.next
             tortoise = tortoise.next
             __ hare__tortoise:
@@ -70,7 +70,7 @@ class Solution:
 
         # run more x steps
         cur = head
-        while cur:
+        w.... cur:
             __ cur__tortoise:
                 break
             cur = cur.next

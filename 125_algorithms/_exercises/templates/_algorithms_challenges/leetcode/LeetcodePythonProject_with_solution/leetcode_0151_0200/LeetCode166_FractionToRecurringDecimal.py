@@ -13,13 +13,13 @@ class Solution(object):
         """
         n, remainder = divmod(abs(numerator), abs(denominator))
         sign = '-' __ numerator*denominator<0 ____ ''
-        result = [sign+str(n), '.']
+        result = [sign+s..(n), '.']
         stack    # list
-        while remainder n.. __ stack:
+        w.... remainder n.. __ stack:
             stack.a..(remainder)
             n, remainder = divmod(remainder*10, abs(denominator))
-            result.a..(str(n))
+            result.a..(s..(n))
         idx = stack.index(remainder)
         result.insert(idx+2, '(')
         result.a..(')')
-        r.. ''.join(result).replace('(0)', '').rstrip('.')
+        r.. ''.join(result).r..('(0)', '').rstrip('.')

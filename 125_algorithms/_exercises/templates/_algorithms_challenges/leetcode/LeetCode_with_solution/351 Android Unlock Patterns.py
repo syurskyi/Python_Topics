@@ -50,7 +50,7 @@ class Solution(object):
         ret = 0
         ___ nxt __ xrange(1, 10):
             __ (
-                n.. visited[nxt] and (
+                n.. visited[nxt] a.. (
                     self.skip[cur][nxt] __ N.. o.
                     visited[self.skip[cur][nxt]]
                 )

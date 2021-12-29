@@ -10,7 +10,7 @@ class Solution(object):
         r.. 1
       res = 0
       ___ i __ r..(n):
-        __ i n.. __ path and isValidQueen(path, i):
+        __ i n.. __ path a.. isValidQueen(path, i):
           path.a..(i)
           res += dfs(path, n)
           path.pop()

@@ -20,9 +20,9 @@ class Solution(object):
             int('00000000000000000000000000001011', 2),
         ]
         ___ n __ testCases:
-            print('n:      {0:032b}'.format(n))
+            print('n:      {0:032b}'.f..(n))
             result = self.hammingWeight(n)
-            print('result: {0:d}'.format(result))
+            print('result: {0:d}'.f..(result))
             print('-='*20+'-')
 
 __ __name__ __ '__main__':

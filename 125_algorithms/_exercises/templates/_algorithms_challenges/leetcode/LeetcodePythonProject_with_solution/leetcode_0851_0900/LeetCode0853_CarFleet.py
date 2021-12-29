@@ -11,7 +11,7 @@ class Solution(object):
         :type speed: List[int]
         :rtype: int
         """
-        time = [float(target-p)/s ___ p, s __ s..(zip(position, speed))]
+        time = [float(target-p)/s ___ p, s __ s..(z..(position, speed))]
         res = cur = 0
         ___ t __ time[::-1]:
             __ t > cur:

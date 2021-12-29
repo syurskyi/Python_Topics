@@ -113,5 +113,5 @@ ___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
         ([":", "|"], "?:A:lmost|t|here", 2),
     ],
 )
-___ test_check_surrounding_chars_valid(surrounding_chars: List[str], text, expected):
+___ test_check_surrounding_chars_valid(surrounding_chars: List[s..], text, expected):
     ... check_surrounding_chars(text, surrounding_chars) __ expected

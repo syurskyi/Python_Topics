@@ -23,7 +23,7 @@ class TinyUrl:
             r.. self.get_tiny_url(self.lg2st[url])
 
         key = self.get_hash_key(self.size)
-        while key __ self.st2lg:
+        w.... key __ self.st2lg:
             key = self.get_hash_key(self.size)
 
         self.lg2st[url] = key
@@ -38,7 +38,7 @@ class TinyUrl:
         __ n.. url:
             r.. 'error'
 
-        key = url.replace(self.host, '')
+        key = url.r..(self.host, '')
 
         __ key __ self.st2lg:
             r.. self.st2lg[key]
@@ -46,7 +46,7 @@ class TinyUrl:
         r.. 'error'
 
     ___ get_tiny_url(self, hash_key):
-        r.. '{}{}'.format(self.host, hash_key)
+        r.. '{}{}'.f..(self.host, hash_key)
 
     ___ get_hash_key(self, size):
         r.. ''.join(

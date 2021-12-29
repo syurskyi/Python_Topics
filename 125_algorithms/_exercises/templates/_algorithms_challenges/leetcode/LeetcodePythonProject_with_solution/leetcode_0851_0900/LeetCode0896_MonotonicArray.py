@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         increase = N..
-        ___ i, num __ enumerate(A):
+        ___ i, num __ e..(A):
             __ i > 0:
                 __ num __ A[i-1]:
                     continue

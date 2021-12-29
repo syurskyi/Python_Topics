@@ -19,7 +19,7 @@ class Solution(object):
         res = -1
         count = 0
         node = self.head
-        while node:
+        w.... node:
             __ random.randint(0, count) __ 0:
                 res = node.val
             count += 1

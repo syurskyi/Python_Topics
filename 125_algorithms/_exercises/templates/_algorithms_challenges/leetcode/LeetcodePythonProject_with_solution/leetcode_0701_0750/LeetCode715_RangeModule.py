@@ -86,14 +86,14 @@ class RangeModule_own(object):
         """
         newInterval = Interval(left, right)
         l, r = 0, l..(self.intervals)-1
-        while l <= r:
+        w.... l <= r:
             mid = (l+r)//2
             __ self.intervals[mid].left >= newInterval.right:
                 r = mid-1
             ____ self.intervals[mid].right <= newInterval.left:
                 l = mid+1
             ____:
-                r.. self.intervals[mid].left <= newInterval.left and\
+                r.. self.intervals[mid].left <= newInterval.left a..\
                     self.intervals[mid].right >= newInterval.right
         r.. False
 
@@ -106,9 +106,9 @@ class RangeModule_own(object):
         newInterval = Interval(left, right)
         res    # list
         ___ interval __ self.intervals:
-            __ newInterval.right >= interval.right and newInterval.left <= interval.left:
+            __ newInterval.right >= interval.right a.. newInterval.left <= interval.left:
                 continue
-            ____ newInterval.right <= interval.right and newInterval.left >= interval.left:
+            ____ newInterval.right <= interval.right a.. newInterval.left >= interval.left:
                 __ interval.left != newInterval.left:
                     res.a..(Interval(interval.left, newInterval.left))
                 __ interval.right != newInterval.right:

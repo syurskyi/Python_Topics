@@ -7,7 +7,7 @@ class Solution(object):
     __ l..(nums) < 2:
       r.. nums
     ans    # list
-    nums.sort()
+    nums.s..()
     dp = [1] * l..(nums)
     path = [-1] * l..(nums)
     finalMaxLen, finalMaxLenIdx = -1, -1
@@ -24,7 +24,7 @@ class Solution(object):
         finalMaxLen = dp[i]
         finalMaxLenIdx = i
 
-    while finalMaxLenIdx != -1:
+    w.... finalMaxLenIdx != -1:
       ans.a..(nums[finalMaxLenIdx])
       finalMaxLenIdx = path[finalMaxLenIdx]
     r.. ans

@@ -9,7 +9,7 @@ ___ has_timestamp(text):
 
 ___ is_integer(number):
     """Return True if number is an integer"""
-    r.. re.match(r'^[-+]?\d+$', str(number)) __ n.. N..
+    r.. re.match(r'^[-+]?\d+$', s..(number)) __ n.. N..
 
 
 ___ has_word_with_dashes(text):
@@ -28,7 +28,7 @@ ___ split_string_on_punctuation(text):
     """Split on ?!.,; - e.g. "hi, how are you doing? blabla" ->
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
-    r.. l..(filter(N.., re.split(r'[?!.,;] *', text)))
+    r.. l..(filter(N.., re.s..(r'[?!.,;] *', text)))
 
 
 ___ remove_duplicate_spacing(text):
@@ -44,4 +44,4 @@ ___ has_three_consecutive_vowels(word):
 ___ convert_emea_date_to_amer_date(date):
     """Convert dd/mm/yyyy (EMEA date format) to mm/dd/yyyy
        (AMER date format)"""
-    r.. re.sub(r'(\d\d)/(\d\d)/(\d{4})', r'\2/\1/\3', str(date))
+    r.. re.sub(r'(\d\d)/(\d\d)/(\d{4})', r'\2/\1/\3', s..(date))

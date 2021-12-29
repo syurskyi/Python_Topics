@@ -32,9 +32,9 @@ class Solution:
 
         length = l..(lists)
         factor = 2
-        while length>0:
+        w.... length>0:
             i = 0
-            while True:
+            w... T...
                 try:
                     lists[i] = self.mergeTwoLists(lists[i], lists[i+factor/2])
                 except IndexError:
@@ -76,9 +76,9 @@ class Solution:
 
         pre = dummy
         the_other = l2
-        while pre and pre.next:
+        w.... pre a.. pre.next:
             cur = pre.next
-            __ the_other and cur.val>the_other.val:
+            __ the_other a.. cur.val>the_other.val:
                 # insert
                 temp = the_other.next
                 pre.next, the_other.next = the_other, cur
@@ -116,7 +116,7 @@ class Solution:
         dummy = ListNode(0)
 
         cur = dummy
-        while heap:
+        w.... heap:
             smallest_node = heapq.heappop(heap)[1]
             cur.next = smallest_node
             cur = cur.next

@@ -1,9 +1,9 @@
-____ itertools _______ zip_longest
+____ i.. _______ zip_longest
 
 COL_WIDTH = 20
 
 
-___ _divide_line(line: str, col_width: int = COL_WIDTH):
+___ _divide_line(line: s.., col_width: int = COL_WIDTH):
     words = line.s..
     result    # list
     line = words[0]
@@ -24,6 +24,6 @@ ___ text_to_columns(text):
        Return a string with the column output like:
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
-    lines = [_divide_line(col) ___ col __ (text.split('\n\n'))]
+    lines = [_divide_line(col) ___ col __ (text.s..('\n\n'))]
     rv = [' '.join(combination) ___ combination __ zip_longest(*lines, fillvalue=' ')]
     r.. '\n'.join(rv)

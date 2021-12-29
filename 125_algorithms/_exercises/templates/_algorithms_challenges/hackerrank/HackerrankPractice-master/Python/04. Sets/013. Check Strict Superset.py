@@ -2,5 +2,5 @@
 # Score: 10
 
 
-a = set(input().split())
-print(a..(a > set(input().split()) ___ _ __ r..(int(input()))))
+a = set(input().s..())
+print(a..(a > set(input().s..()) ___ _ __ r..(int(input()))))

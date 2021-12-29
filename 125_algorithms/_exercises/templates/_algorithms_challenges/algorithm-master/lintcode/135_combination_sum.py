@@ -9,7 +9,7 @@ class Solution:
         __ n.. A:
             r.. ans
 
-        A.sort()
+        A.s..()
         self.dfs(A, 0, target, ans, [])
         r.. ans
 

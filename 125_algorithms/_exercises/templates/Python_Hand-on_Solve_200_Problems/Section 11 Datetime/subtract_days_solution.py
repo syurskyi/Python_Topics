@@ -3,8 +3,8 @@
 # %%
 #  Write a Python program to subtract five days from current date
 
-____ d_t_ ______ date, timedelta
-dt _ date.today  - timedelta 5
+____ d_t_ ______ date, t..
+dt _ date.today  - t.. 5
 print 'Current Date :',date.today
 print '5 days before Current Date :',dt
 

@@ -1,7 +1,7 @@
 _______ os
 _______ re
 ____ difflib _______ SequenceMatcher
-_______ itertools
+_______ i..
 ____ urllib.request _______ urlretrieve
 
 # prep

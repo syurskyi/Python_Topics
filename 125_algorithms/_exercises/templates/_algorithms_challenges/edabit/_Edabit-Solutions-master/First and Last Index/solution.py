@@ -5,7 +5,7 @@ ___ char_index(word, char):
             output.a..(i)
         ____ char n.. __ word:
             r.. N..
-    output.sort()
+    output.s..()
     __ l..(output) __ 1:
         output.a..(output[0])
     __ l..(output) > 2:

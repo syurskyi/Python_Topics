@@ -1,4 +1,4 @@
-____ itertools _______ combinations, permutations
+____ i.. _______ combinations, permutations
 
 
 ___ check_leading_zeros(*numbers):
@@ -7,8 +7,8 @@ ___ check_leading_zeros(*numbers):
 
 ___ test_equation(puzzle, substitutions):
     equation = ''.join(substitutions.get(char) o. char ___ char __ puzzle)
-    left, right = equation.split(' == ')
-    left_numbers = left.split(' + ')
+    left, right = equation.s..(' == ')
+    left_numbers = left.s..(' + ')
 
     __ check_leading_zeros(right, *left_numbers):
         r.. False
@@ -18,11 +18,11 @@ ___ test_equation(puzzle, substitutions):
 
 ___ solve(puzzle):
     letters = set(char ___ char __ puzzle __ char.isupper())
-    numbers = map(str, r..(10))
+    numbers = map(s.., r..(10))
 
     ___ c __ combinations(numbers, l..(letters)):
         ___ p __ permutations(c):
-            substitutions = d..(zip(letters, p))
+            substitutions = d..(z..(letters, p))
             __ test_equation(puzzle, substitutions):
                 r.. {k: int(v) ___ k, v __ substitutions.items()}
 

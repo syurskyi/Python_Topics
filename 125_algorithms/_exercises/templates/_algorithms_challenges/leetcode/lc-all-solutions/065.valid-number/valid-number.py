@@ -18,7 +18,7 @@ class Solution(object):
     :type s: str
     :rtype: bool
     """
-    s = s.strip()
+    s = s.s..
     states = States()
     state = states.init
     decimals = "01234567890"

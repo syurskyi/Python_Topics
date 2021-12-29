@@ -7,12 +7,12 @@ ___ make_html_links():
 
     ___ line __ sys.stdin:
         
-        line = line.strip()
-        __ line.startswith('http') and comma.c.. ',') __ 1:
+        line = line.s..
+        __ line.startswith('http') a.. comma.c.. ',') __ 1:
 
-            href,link_name = line.split(',')
-            href = href.strip()
-            link_name = link_name.strip()
+            href,link_name = line.s..(',')
+            href = href.s..
+            link_name = link_name.s..
 
 
             domain = re.search(r'https?//(.+?)/').group(1)

@@ -1,4 +1,4 @@
-___ convert(number: int, base: int = 2) -> str:
+___ convert(number: int, base: int = 2) -> s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:
@@ -15,13 +15,13 @@ ___ convert(number: int, base: int = 2) -> str:
         raise ValueError("Invalid Base")
     
     values    # list
-    while number:
+    w.... number:
         remainder = number % base
         number //= base
         __ remainder >= 10:
             remainder = chr(remainder - 10  + ord('A'))
 
-        values.a..(str(remainder))
+        values.a..(s..(remainder))
 
 
     r.. ''.join(reversed(values))

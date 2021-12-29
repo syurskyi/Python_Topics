@@ -23,8 +23,8 @@ class Book:
     rating - float as indicated on the page
     """
 
-    title: str
-    author: str
+    title: s..
+    author: s..
     year: int
     rank: int
     rating: float
@@ -81,7 +81,7 @@ ___ load_data():
         __ "python" n.. __ title.lower():
             continue
         try:
-            author_a = book.select("h3.authors > a")[0].text.split(" ")
+            author_a = book.select("h3.authors > a")[0].text.s..(" ")
             author = f'{author_a[-1]}, {" ".join(author_a[:-1])}'
             date_span = book.select("span.date")
             __ l..(date_span) __ 0:
@@ -95,7 +95,7 @@ ___ load_data():
             Book(title=title, author=author, year=year, rank=rank, rating=rating)
         )
     res    # list
-    ___ n, b __ enumerate(
+    ___ n, b __ e..(
         s..(
             books, key=l.... b: (-b.rating, b.year, b.title.lower(), b.author.lower())
         ),

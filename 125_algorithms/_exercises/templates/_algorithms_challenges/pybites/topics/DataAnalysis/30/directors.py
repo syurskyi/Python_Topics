@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
 
@@ -15,7 +15,7 @@ MOVIE_DATA = local
 MIN_MOVIES = 4
 MIN_YEAR = 1960
 
-Movie = namedtuple('Movie', 'title year score')
+Movie = n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director():
@@ -26,10 +26,10 @@ ___ get_movies_by_director():
     with open(local, encoding="utf-8") as f:
         movies = csv.DictReader(f)
         ___ movie __ movies:
-            __ movie['title_year'] != '' and int(movie['title_year']) > 1960:
+            __ movie['title_year'] != '' a.. int(movie['title_year']) > 1960:
                 director[movie['director_name']].a..(
                     Movie(
-                        movie['movie_title'].strip(),
+                        movie['movie_title'].s..,
                         movie['title_year'], 
                         movie['imdb_score'])
                 )
@@ -57,7 +57,7 @@ ___ get_average_scores(directors):
             total = 0
             ___ i __ r..(l..(directors[director])):
                 #print(director, int(directors[director][i][1]))
-                __ directors[director][i][1] and int(directors[director][i][1]) >1960:
+                __ directors[director][i][1] a.. int(directors[director][i][1]) >1960:
                     total += float(directors[director][i][2])
             local_list.a..((director, round(total/l..(directors[director]),1)))
     r.. s..(local_list, key=l.... x: x[1], r.._T..

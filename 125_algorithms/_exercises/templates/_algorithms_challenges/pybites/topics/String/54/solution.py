@@ -14,9 +14,9 @@ shakespeare_unformatted = """
 
 ___ print_hanging_indents(poem):
     """You can use textwrap's fill but this worked better for us"""
-    ___ part __ poem.split("\n\n"):
-        lines = [line.strip() ___ line __ part.splitlines()
-                 __ line.strip()]
+    ___ part __ poem.s..("\n\n"):
+        lines = [line.s.. ___ line __ part.splitlines()
+                 __ line.s..]
         #print(lines[0])
         #for line in lines[1:]:
         #    print(' ' * INDENTS + line)

@@ -22,9 +22,9 @@ class Solution:
         r.. ans
 
     ___ dfs(self, node, ans, path):
-        path.a..(str(node.val))
+        path.a..(s..(node.val))
 
-        __ n.. node.left and n.. node.right:
+        __ n.. node.left a.. n.. node.right:
             ans.a..('->'.join(path))
             path.pop()
             r..

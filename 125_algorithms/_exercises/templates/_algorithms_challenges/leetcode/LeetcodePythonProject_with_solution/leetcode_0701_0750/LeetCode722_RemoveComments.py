@@ -16,22 +16,22 @@ class Solution(object):
         ___ src __ source:
             j = 0
             isLineComment = False
-            while j < l..(src):
+            w.... j < l..(src):
                 c = src[j]
-                __ j < l..(src)-1 and src[j:j+2] __ '//' and n.. isComment:
-                    __ line and n.. isComment:
+                __ j < l..(src)-1 a.. src[j:j+2] __ '//' a.. n.. isComment:
+                    __ line a.. n.. isComment:
                         res.a..(line)
                     isLineComment = True
                     line = ''
-                ____ j < l..(src)-1 and src[j:j+2] __ '/*' and n.. isLineComment and n.. isComment:
+                ____ j < l..(src)-1 a.. src[j:j+2] __ '/*' a.. n.. isLineComment a.. n.. isComment:
                     j += 1
                     isComment = True
-                ____ j < l..(src)-1 and src[j:j+2] __ '*/' and isComment:
+                ____ j < l..(src)-1 a.. src[j:j+2] __ '*/' a.. isComment:
                     j += 1
                     isComment = False
-                ____ n.. isComment and n.. isLineComment:
+                ____ n.. isComment a.. n.. isLineComment:
                     line += c
-                __ j __ l..(src)-1 and n.. isComment:
+                __ j __ l..(src)-1 a.. n.. isComment:
                     __ line:
                         res.a..(line)
                     line = ''

@@ -10,17 +10,17 @@ ___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
     ___ number __ numbers:
         __ number __ 0:
             number_list.a..(0)
-        number_of_digits = l..(str(number).replace('.', ''))
+        number_of_digits = l..(s..(number).r..('.', ''))
         __ number >= 1:
             __ number_of_digits <= n:
-                number_list.a..(int(str(number * 10 **n)[:n]))
+                number_list.a..(int(s..(number * 10 **n)[:n]))
             ____ number_of_digits >= n:
-                number_list.a..(int(str(number * 10 **n)[:n]))
+                number_list.a..(int(s..(number * 10 **n)[:n]))
         __ number <= -1:
             __ number_of_digits <= n:
-                number_list.a..(int(str(number * 10 ** (n))[:n + 1]))
+                number_list.a..(int(s..(number * 10 ** (n))[:n + 1]))
             ____ number_of_digits > n:
-                number_list.a..(int(str(number * 10 ** (n))[:n + 1]))
+                number_list.a..(int(s..(number * 10 ** (n))[:n + 1]))
             ____:
                 number_list.a..(number)
     r.. number_list

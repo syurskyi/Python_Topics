@@ -12,7 +12,7 @@ class Solution:
         __ n __ 1:
             r.. A
 
-        A.sort()
+        A.s..()
 
         """
         this problem similar with LIS
@@ -37,7 +37,7 @@ class Solution:
                 `A[i]` is larger than `A[j]`,
                 so check `A[i] % A[j]` if its zero
                 """
-                __ A[i] % A[j] __ 0 and dp[j] + 1 > dp[i]:
+                __ A[i] % A[j] __ 0 a.. dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     pi[i] = j
 

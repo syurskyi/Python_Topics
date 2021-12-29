@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: bool
     """
     start, end = 0, l..(nums) - 1
-    while start + 1 < end:
+    w.... start + 1 < end:
       mid = start + (end - start) / 2
       __ nums[mid] __ target:
         r.. True

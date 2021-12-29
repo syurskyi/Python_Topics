@@ -52,7 +52,7 @@ class Solution:
         # find the starting index
         start_index = 0
         sum_before = 0
-        ___ ind, val __ enumerate(diff):  # O(N), rather than brutal force O(N^2)
+        ___ ind, val __ e..(diff):  # O(N), rather than brutal force O(N^2)
             sum_before += val
             __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
                 start_index = ind+1

@@ -14,7 +14,7 @@ class Solution(object):
     e = even = ListNode(-1)
     p = head
     isOdd = True
-    while p:
+    w.... p:
       __ isOdd:
         o.next = p
         o = o.next

@@ -31,15 +31,15 @@ ___ person_max_bmi(data=data):
     BMI_final    # list
 
     i = 0
-    while i < l..(data):
-        BMI_info.a..(data[i].split(',')[1:])
+    w.... i < l..(data):
+        BMI_info.a..(data[i].s..(',')[1:])
         i += 1
 
     ___ x, y __ BMI_info:
         BMI_final.a..(float(y) / (int(x) / 100) ** 2)
 
     highest_BMI_position = BMI_final.index(max(BMI_final))
-    highest_BMI_name = data[highest_BMI_position].strip().split(',')[0]
+    highest_BMI_name = data[highest_BMI_position].s...s..(',')[0]
     highest_BMI_BMI = max(BMI_final)
 
     r.. highest_BMI_name, round(highest_BMI_BMI, 2)

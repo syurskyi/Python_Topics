@@ -31,13 +31,13 @@ class Solution:
         # initalize the stack
         stk    # list
         ___ n __ nums[::-1]:
-            while stk and stk[-1] <= n:
+            w.... stk a.. stk[-1] <= n:
                 stk.pop()
             stk.a..(n)
 
         ret    # list
         ___ n __ nums[::-1]:
-            while stk and stk[-1] <= n:
+            w.... stk a.. stk[-1] <= n:
                 stk.pop()
             ret.a..(stk[-1] __ stk ____ -1)
             stk.a..(n)

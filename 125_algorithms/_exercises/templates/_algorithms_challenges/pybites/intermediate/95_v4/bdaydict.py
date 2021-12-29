@@ -9,6 +9,6 @@ class BirthdayDict(d..):
         bday = birthday.month, birthday.day
 
         __ any([(v.month, v.day) __ bday ___ v __ self.values()]):
-            print(MSG.format(name))
+            print(MSG.f..(name))
 
         self.update({name: birthday})

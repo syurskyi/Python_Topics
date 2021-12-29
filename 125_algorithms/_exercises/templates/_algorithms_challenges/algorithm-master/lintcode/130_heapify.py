@@ -16,10 +16,10 @@ class Solution:
         3. continue to sift down in next depth
         """
         n = l..(A)
-        while i * 2 + 1 < n:
+        w.... i * 2 + 1 < n:
             # left child
             _i = i * 2 + 1
-            __ _i + 1 < n and A[_i + 1] < A[_i]:
+            __ _i + 1 < n a.. A[_i + 1] < A[_i]:
                 # right child
                 _i += 1
             __ A[_i] >= A[i]:

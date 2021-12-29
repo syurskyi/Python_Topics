@@ -41,13 +41,13 @@ class Solution:
             __ board[m-1][j]__'O': q.a..((m-1, j))
 
 
-        while q: # dynamically expanding, no deletion of elements
+        w.... q: # dynamically expanding, no deletion of elements
             cor = q.pop()
             board[cor[0]][cor[1]]=CONNECTED  # cannot be both "O" and CONNECTED
             ___ direction __ directions:
                 row = cor[0]+direction[0]
                 col = cor[1]+direction[1]
-                __ 0<=row<m and 0<=col<n and board[row][col]__'O':
+                __ 0<=row<m a.. 0<=col<n a.. board[row][col]__'O':
                     q.a..((row, col))
 
 

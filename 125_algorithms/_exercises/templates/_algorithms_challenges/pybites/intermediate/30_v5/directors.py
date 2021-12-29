@@ -1,6 +1,6 @@
 _______ csv
 _______ os
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 ____ urllib.request _______ urlretrieve
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
@@ -15,7 +15,7 @@ MOVIE_DATA = local
 MIN_MOVIES = 4
 MIN_YEAR = 1960
 
-Movie = namedtuple('Movie', 'title year score')
+Movie = n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director():

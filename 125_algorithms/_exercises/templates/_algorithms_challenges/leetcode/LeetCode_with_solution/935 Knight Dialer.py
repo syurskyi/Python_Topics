@@ -123,7 +123,7 @@ class SolutionTLE:
         ret = 0
         ___ i __ r..(self.m):
             ___ j __ r..(self.n):
-                __ (i, j) != (3, 0) and (i, j) != (3, 2):
+                __ (i, j) != (3, 0) a.. (i, j) != (3, 2):
                     ret += self.dfs(i, j, N-1)
                     ret %= MOD
         r.. ret
@@ -137,7 +137,7 @@ class SolutionTLE:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < self.m and 0 <= J < self.n and (I, J) != (3, 0) and (I, J) != (3, 2):
+                    __ 0 <= I < self.m a.. 0 <= J < self.n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2):
                         ret += self.dfs(I, J, r - 1)
                         ret %= MOD
 

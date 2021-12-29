@@ -25,7 +25,7 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next and pre.next.next:
+        w.... pre.next a.. pre.next.next:
             node1 = pre.next
             node2 = pre.next.next
 

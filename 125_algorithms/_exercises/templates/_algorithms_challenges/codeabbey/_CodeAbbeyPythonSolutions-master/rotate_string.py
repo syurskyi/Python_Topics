@@ -9,7 +9,7 @@ ___ rotate(index, string):
     r.. rotated_string
 
 ___ i __ r..(amount_values):
-    index, string = map(str, input().split())
+    index, string = map(s.., input().s..())
     index = int(index)
     results.a..(rotate(index, string))
 

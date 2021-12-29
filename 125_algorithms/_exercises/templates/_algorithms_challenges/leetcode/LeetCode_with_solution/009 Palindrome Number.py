@@ -19,10 +19,10 @@ class Solution:
 
         # find order of magnitude
         div = 1
-        while x/div >= 10:
+        w.... x/div >= 10:
             div *= 10  # without touch x
 
-        while x > 0:
+        w.... x > 0:
             msb = x/div
             lsb = x%10
 

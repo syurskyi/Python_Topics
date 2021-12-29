@@ -24,10 +24,10 @@ class Solution:
 
         left, right = start, end
         color_mid = (color_from + color_to) // 2
-        while left <= right:
-            while left <= right and colors[left] <= color_mid:
+        w.... left <= right:
+            w.... left <= right a.. colors[left] <= color_mid:
                 left += 1
-            while left <= right and colors[right] > color_mid:
+            w.... left <= right a.. colors[right] > color_mid:
                 right -= 1
             __ left <= right:
                 colors[left], colors[right] = colors[right], colors[left]
@@ -62,7 +62,7 @@ class Solution:
         left, right = 0, n - 1
         i = _min = _max = 0
 
-        while count < k:
+        w.... count < k:
             _min = _max = colors[left]
             ___ i __ r..(left + 1, right + 1):
                 __ colors[i] < _min:
@@ -71,7 +71,7 @@ class Solution:
                     _max = colors[i]
 
             i = left
-            while i <= right:
+            w.... i <= right:
                 __ colors[i] __ _min:
                     colors[left], colors[i] = colors[i], colors[left]
                     left += 1

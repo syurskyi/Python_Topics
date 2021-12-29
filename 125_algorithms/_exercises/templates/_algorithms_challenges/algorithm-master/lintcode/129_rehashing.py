@@ -25,7 +25,7 @@ class Solution:
         ___ node __ hash_table:
             curr = node
 
-            while curr:
+            w.... curr:
                 i = curr.val % CAPACITY
                 _node = ListNode(curr.val)
 

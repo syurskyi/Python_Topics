@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: List[int]
     """
     d = {}
-    ___ i, num __ enumerate(nums):
+    ___ i, num __ e..(nums):
       __ target - num __ d:
         r.. [d[target - num], i]
       d[num] = i

@@ -12,10 +12,10 @@ class Solution(object):
         :rtype: int
         """
         n, a, b = N, A, B
-        while b:
+        w.... b:
             a, b = b, a%b
         l, r, lcm = 2, 10**14, A*B // a
-        while l < r:
+        w.... l < r:
             m = (l+r)//2
             __ m // A + m // B - m // lcm < n:
                 l = m+1

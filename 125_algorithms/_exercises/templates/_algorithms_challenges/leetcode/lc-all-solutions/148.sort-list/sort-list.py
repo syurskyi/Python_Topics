@@ -14,7 +14,7 @@ class Solution(object):
       fast = slow = head
       pre = N..
 
-      while fast and fast.next:
+      w.... fast a.. fast.next:
         pre = slow
         slow = slow.next
         fast = fast.next.next
@@ -27,7 +27,7 @@ class Solution(object):
       right = self.sortList(slow)
 
       p = dummy = ListNode(-1)
-      while left and right:
+      w.... left a.. right:
         __ left.val < right.val:
           p.next = left
           left = left.next

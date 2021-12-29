@@ -36,7 +36,7 @@ class Solution:
         __ n.. G o. n.. G[0]:
             r.. walls
 
-        while True:
+        w... T...
             _walls = self.build_walls(G)
             __ _walls __ 0:
                 break
@@ -53,7 +53,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ G[x][y] __ self.VIRUS and n.. visited[x][y]:
+                __ G[x][y] __ self.VIRUS a.. n.. visited[x][y]:
                     ex_virus.a..(set())
                     spreading.a..(set())
                     walls.a..(0)
@@ -82,7 +82,7 @@ class Solution:
 
     ___ dfs(self, x, y, G, visited, ex_virus, spreading, walls):
         m, n = l..(G), l..(G[0])
-        __ n.. (0 <= x < m and 0 <= y < n) o. visited[x][y]:
+        __ n.. (0 <= x < m a.. 0 <= y < n) o. visited[x][y]:
             r..
 
         __ G[x][y] __ self.VIRUS:

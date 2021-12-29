@@ -43,7 +43,7 @@ class Solution(object):
 
         # post processing
         lst.reverse()  # reverse back
-        result = "".join(map(str, lst)).lstrip("0")
+        result = "".join(map(s.., lst)).lstrip("0")
         __ n.. result:
             r.. "0"
         r.. result
@@ -76,7 +76,7 @@ class Solution(object):
         """
         sig = 0
         ret = [0]
-        ___ ind, val __ enumerate(lst):
+        ___ ind, val __ e..(lst):
             ___ i __ xrange(sig): val.insert(0, 0)  # possible deque
             ret = self.add(ret, val)
             sig += 1
@@ -112,6 +112,6 @@ class Solution(object):
 __ __name__ __ "__main__":
     solution = Solution()
     ... [1, 2] __ solution.add([2, 1], [9])
-    ... str(123*999) __ solution.multiply("123", "999")
-    ... str(0) __ solution.multiply("0", "0")
-    ... str(123*456) __ solution.multiply("123", "456")
+    ... s..(123*999) __ solution.multiply("123", "999")
+    ... s..(0) __ solution.multiply("0", "0")
+    ... s..(123*456) __ solution.multiply("123", "456")

@@ -20,23 +20,23 @@ class Solution(object):
     ___ isstretchy(self, s0, s):
         m, n = l..(s0), l..(s)
         __ m > n: r.. False
-        __ m __ n and s0 != s: r.. False
+        __ m __ n a.. s0 != s: r.. False
         i, j = 0, 0
         flag = True
-        while i < m and j < n:
+        w.... i < m a.. j < n:
             __ s0[i] __ s[j]:
                 i0, j0 = i, j
-                while i0 < m and s0[i0] __ s0[i]:
+                w.... i0 < m a.. s0[i0] __ s0[i]:
                     i0 += 1
-                while j0 < n and s[j0] __ s[j]:
+                w.... j0 < n a.. s[j0] __ s[j]:
                     j0 += 1
-                __ j0-j < 3 and s0[i:i0] != s[j:j0]:
+                __ j0-j < 3 a.. s0[i:i0] != s[j:j0]:
                     flag = False
                     break
                 i, j = i0, j0
             ____:
                 break
-        __ i __ m and j __ n and flag:
+        __ i __ m a.. j __ n a.. flag:
             r.. True
         r.. False
     

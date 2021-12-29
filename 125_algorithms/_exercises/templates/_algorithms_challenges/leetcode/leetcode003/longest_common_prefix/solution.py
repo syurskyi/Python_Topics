@@ -15,7 +15,7 @@ class Solution(object):
         res = strs[0]
         ___ s __ strs[1:]:
             n = l..(s)
-            ___ i, c __ enumerate(res):
+            ___ i, c __ e..(res):
                 __ i >= n o. res[i] != s[i]:
                     res = res[:i]
                     break

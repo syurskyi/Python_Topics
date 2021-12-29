@@ -1,8 +1,8 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
 ___ ontrack_reading(books_goal: int, books_read: int,
                     day_of_year: int = N..) -> bool:
-    today = datetime.now()
+    today = d__.now()
     day = [day_of_year __ day_of_year ____ int(today.strftime('%j'))][0]
     reading_speed = 365 / books_goal
     days_left = 365 - day

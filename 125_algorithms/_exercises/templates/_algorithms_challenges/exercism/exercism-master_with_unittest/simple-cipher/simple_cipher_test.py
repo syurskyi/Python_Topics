@@ -62,7 +62,7 @@ class CipherTest(unittest.TestCase):
         c = Cipher()
         self.assertTrue(l..(c.key) >= 100,
                         'A random key must be generated when no key is given!')
-        self.assertTrue(c.key.islower() and c.key.isalpha(),
+        self.assertTrue(c.key.islower() a.. c.key.isalpha(),
                         'All items in the key must be chars and lowercase!')
 
     ___ test_cipher_wrong_key(self):

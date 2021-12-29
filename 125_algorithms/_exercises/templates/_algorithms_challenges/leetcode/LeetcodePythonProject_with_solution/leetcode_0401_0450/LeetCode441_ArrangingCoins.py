@@ -7,7 +7,7 @@ Created on Apr 17, 2017
 class Solution(object):
     ___ arrangeCoins(self, n):
         start, end = 1, n
-        while start <= end:
+        w.... start <= end:
             mid = (start+end)/2
             __ mid*(mid+1)/2 > n:
                 end = mid-1

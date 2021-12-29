@@ -22,7 +22,7 @@ class Solution:
         ___ s __ queue:
             ___ d __ D:
                 found = s.find(d)
-                while found != -1:
+                w.... found != -1:
                     _s = s[:found] + s[found + l..(d):]
                     found = s.find(d, found + 1)
 

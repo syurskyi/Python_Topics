@@ -20,7 +20,7 @@ ___ verse(n):
     __ l..(gifts) > 1:
         gifts[:-1] = [', '.join(gifts[:-1])]
     gifts = ', and '.join(gifts)
-    r.. 'On the {} day of Christmas my true love gave to me, {}.\n'.format(
+    r.. 'On the {} day of Christmas my true love gave to me, {}.\n'.f..(
         ORDINAL[n], gifts)
 
 

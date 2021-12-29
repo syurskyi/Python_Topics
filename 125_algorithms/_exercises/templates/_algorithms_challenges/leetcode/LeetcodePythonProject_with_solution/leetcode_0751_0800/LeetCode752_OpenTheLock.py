@@ -16,7 +16,7 @@ class Solution(object):
         deadends = set(deadends)
         __ '0000' __ deadends:
             r.. -1
-        while queue:
+        w.... queue:
             n = l..(queue)
             ___ _ __ r..(n):
                 s = queue.pop(0)
@@ -26,17 +26,17 @@ class Solution(object):
                     s01 = int(s[i])+1
                     __ s01 >= 10:
                         s01 -= 10
-                    s01 = str(s01)
+                    s01 = s..(s01)
                     s02 = int(s[i])-1
                     __ s02 < 0:
                         s02 += 10
-                    s02 = str(s02)
+                    s02 = s..(s02)
                     s0 = s[:i]+s01+s[i+1:]
-                    __ s0 n.. __ visited and s0 n.. __ deadends:
+                    __ s0 n.. __ visited a.. s0 n.. __ deadends:
                         queue.a..(s0)
                         visited.add(s0)
                     s0 = s[:i]+s02+s[i+1:]
-                    __ s0 n.. __ visited and s0 n.. __ deadends:
+                    __ s0 n.. __ visited a.. s0 n.. __ deadends:
                         queue.a..(s0)
                         visited.add(s0)
             level += 1

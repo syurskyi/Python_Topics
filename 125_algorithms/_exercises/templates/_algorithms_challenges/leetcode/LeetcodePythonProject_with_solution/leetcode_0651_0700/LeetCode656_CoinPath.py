@@ -29,7 +29,7 @@ class Solution(object):
         __ dp[0] __ float('inf'):
             r.. res
         ind = 0
-        while ind != -1:
+        w.... ind != -1:
             res.a..(ind+1)
             ind = pos[ind]
         r.. res

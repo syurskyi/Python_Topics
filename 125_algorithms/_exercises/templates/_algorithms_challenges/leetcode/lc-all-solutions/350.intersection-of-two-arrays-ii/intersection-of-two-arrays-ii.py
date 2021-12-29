@@ -6,10 +6,10 @@ class Solution(object):
     :rtype: List[int]
     """
     ans    # list
-    nums1.sort()
-    nums2.sort()
+    nums1.s..()
+    nums2.s..()
     i = j = 0
-    while i < l..(nums1) and j < l..(nums2):
+    w.... i < l..(nums1) a.. j < l..(nums2):
       __ nums1[i] < nums2[j]:
         i += 1
       ____ nums1[i] > nums2[j]:

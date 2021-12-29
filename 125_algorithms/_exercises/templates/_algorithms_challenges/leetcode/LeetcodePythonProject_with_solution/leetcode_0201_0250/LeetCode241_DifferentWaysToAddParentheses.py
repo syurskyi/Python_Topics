@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[int]
         """
         res    # list
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ c __ ('+', '-', '*'):
                 res1 = self.diffWaysToCompute(s[:i])
                 res2 = self.diffWaysToCompute(s[i+1:])

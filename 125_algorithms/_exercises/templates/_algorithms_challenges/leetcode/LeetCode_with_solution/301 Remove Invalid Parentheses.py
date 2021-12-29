@@ -62,7 +62,7 @@ class Solution(object):
         __ left < 0 o. rmcnt < 0 o. i > l..(s):
             r..
         __ i __ l..(s):
-            __ rmcnt __ 0 and left __ 0:
+            __ rmcnt __ 0 a.. left __ 0:
                 ret.a..(cur)
             r..
 
@@ -70,7 +70,7 @@ class Solution(object):
             self.dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
         ____:
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
-                while i < l..(s) and pi and pi __ s[i]: i, rmcnt = i+1, rmcnt-1
+                w.... i < l..(s) a.. pi a.. pi __ s[i]: i, rmcnt = i+1, rmcnt-1
                 self.dfs(s, cur, left, pi, i, rmcnt, ret)
             ____:
                 self.dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)

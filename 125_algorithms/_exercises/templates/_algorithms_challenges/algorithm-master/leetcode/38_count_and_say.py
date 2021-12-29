@@ -19,11 +19,11 @@ class Solution:
                 __ c __ char:
                     cnt += 1
                     continue
-                _queue.extend((str(cnt), char))
+                _queue.extend((s..(cnt), char))
                 cnt = 1
                 char = c
 
-            _queue.extend((str(cnt), char))
+            _queue.extend((s..(cnt), char))
             queue, _queue = ''.join(_queue), []
 
         r.. queue

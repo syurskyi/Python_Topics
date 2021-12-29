@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: List[int]
         """
         hashmap = {}
-        ___ p, pp __ zip(pid, ppid):
+        ___ p, pp __ z..(pid, ppid):
             hashset = hashmap.get(pp, set())
             hashset.add(p)
             hashmap[pp] = hashset
@@ -20,7 +20,7 @@ class Solution(object):
             r.. [kill]
         queue = l..(hashmap[kill])
         result = set([kill])
-        while queue:
+        w.... queue:
             node = queue.pop(0)
             result.add(node)
             ___ node0 __ hashmap.get(node, []):

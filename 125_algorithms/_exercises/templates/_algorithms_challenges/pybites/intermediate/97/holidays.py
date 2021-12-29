@@ -28,9 +28,9 @@ ___ get_us_bank_holidays(content=content):
     holiday_table = soup.find(class_="list-table")
     holiday_dates = [h_date.get_text() ___ h_date __ holiday_table.select("time")]
     holiday_names = [h_name.get_text() ___ h_name __ holiday_table.select("a")]
-    holiday_zip = zip(holiday_dates, holiday_names)
+    holiday_zip = z..(holiday_dates, holiday_names)
     ___ h_date, h_name __ holiday_zip:
-        month = h_date.split("-")[1]
+        month = h_date.s..("-")[1]
         holidays[month].a..(h_name.strip())
     r.. holidays
 

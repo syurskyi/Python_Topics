@@ -57,7 +57,7 @@ class Solution(object):
         ret    # list
         self.toWords(num, ret)
         ret = filter(l.... x: x, ret)  # filter None as zeros
-        r.. " ".join(map(str, ret))
+        r.. " ".join(map(s.., ret))
 
     ___ toWords(self, num, ret):
         """

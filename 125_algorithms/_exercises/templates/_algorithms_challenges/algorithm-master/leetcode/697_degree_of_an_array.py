@@ -18,7 +18,7 @@ class Solution:
         ans = l..(A)
         degree = max(C.values())
         ___ a, c __ C.items():
-            __ c __ degree and R[a] - L[a] + 1 < ans:
+            __ c __ degree a.. R[a] - L[a] + 1 < ans:
                 ans = R[a] - L[a] + 1
 
         r.. ans

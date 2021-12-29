@@ -30,7 +30,7 @@ ___ simple_calculator(calculation):
 
     values = calculation.s..
     print(values)
-    __ is_numeric(values[0]) and is_numeric(values[2]) and values[1] __ operations:
+    __ is_numeric(values[0]) a.. is_numeric(values[2]) a.. values[1] __ operations:
         operation = operations[values[1]]
         try:
             r.. operation(float(values[0]),float(values[2]))

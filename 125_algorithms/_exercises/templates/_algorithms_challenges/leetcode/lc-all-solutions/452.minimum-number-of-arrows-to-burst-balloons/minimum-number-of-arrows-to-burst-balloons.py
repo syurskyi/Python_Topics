@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    points.sort(key=l.... p: p[1])
+    points.s..(key=l.... p: p[1])
     end = float("-inf")
     ___ s, e __ points:
       __ s > end:

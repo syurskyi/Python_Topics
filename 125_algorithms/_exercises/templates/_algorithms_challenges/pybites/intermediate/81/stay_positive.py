@@ -1,6 +1,6 @@
-____ collections _______ namedtuple
+____ collections _______ n..
 
-Tweet = namedtuple('Tweet', 'text polarity')
+Tweet = n..('Tweet', 'text polarity')
 
 # polarity < 0 = negative, > 0 = positive
 # long strings and pep8: you can wrap strings in () to reduce line length

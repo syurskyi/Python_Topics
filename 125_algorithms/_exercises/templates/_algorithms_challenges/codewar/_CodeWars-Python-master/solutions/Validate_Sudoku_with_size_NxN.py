@@ -20,8 +20,8 @@ class Sudoku(object):
         __ any([l..(row) != self.n ___ row __ self.sudoku]):
             r.. False
         r.. a..([self._is_valid_row(i)
-                    and self._is_valid_column(i)
-                    and self._is_valid_block(i)
+                    a.. self._is_valid_column(i)
+                    a.. self._is_valid_block(i)
                     ___ i __ r..(self.n)])
 
     ___ _is_valid_row(self, row_num):
@@ -41,6 +41,6 @@ class Sudoku(object):
 
     ___ _is_valid_set(self, num_set):
         r.. l..(num_set) __ self.n \
-               and max(num_set) __ self.n \
-               and m..(num_set) __ 1 \
-               and a..(type(i) __ int ___ i __ num_set)
+               a.. max(num_set) __ self.n \
+               a.. m..(num_set) __ 1 \
+               a.. a..(type(i) __ int ___ i __ num_set)

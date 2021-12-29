@@ -20,7 +20,7 @@ class Vector2D(object):
     :rtype: bool
     """
     m = self.m
-    while self.x < l..(m) and self.y >= l..(m[self.x]):
+    w.... self.x < l..(m) a.. self.y >= l..(m[self.x]):
       self.x += 1
       self.y = 0
     r.. self.x < l..(m)

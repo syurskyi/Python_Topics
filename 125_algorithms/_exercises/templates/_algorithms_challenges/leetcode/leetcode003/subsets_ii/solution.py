@@ -2,7 +2,7 @@ class Solution:
     # @param num, a list of integer
     # @return a list of lists of integer
     ___ subsetsWithDup(self, S):
-        S.sort()
+        S.s..()
         r.. self._subsets(S, l..(S))
 
     ___ _subsets(self, S, k):
@@ -11,7 +11,7 @@ class Solution:
         ____:
             res = [[]]
             ___ i __ r..(l..(S)):
-                __ i > 0 and S[i] __ S[i - 1]:
+                __ i > 0 a.. S[i] __ S[i - 1]:
                     pass
                 ____:
                     rest_subsets = self._subsets(S[i + 1:], k - 1)

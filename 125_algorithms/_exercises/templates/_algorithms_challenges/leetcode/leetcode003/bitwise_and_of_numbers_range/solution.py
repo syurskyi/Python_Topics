@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: int
         """
         shift = 0
-        while n > m:
+        w.... n > m:
             shift += 1
             m = m >> 1
             n = n >> 1

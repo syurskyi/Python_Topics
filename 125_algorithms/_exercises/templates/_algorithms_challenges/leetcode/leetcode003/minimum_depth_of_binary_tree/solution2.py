@@ -16,10 +16,10 @@ class Solution:
         queue2    # list
         queue1.a..(root)
         queue2.a..(1)
-        while queue1:
+        w.... queue1:
             root = queue1.pop(0)
             depth = queue2.pop(0)
-            __ root.left __ N.. and root.right __ N..
+            __ root.left __ N.. a.. root.right __ N..
                 r.. depth
             __ root.left __ n.. N..
                 queue1.a..(root.left)

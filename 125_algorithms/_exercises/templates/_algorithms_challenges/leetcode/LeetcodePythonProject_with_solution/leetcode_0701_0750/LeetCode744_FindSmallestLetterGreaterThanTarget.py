@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: str
         """
         l, r = 0, l..(letters)
-        while l < r:
+        w.... l < r:
             mid = (l+r)//2
             __ target >= letters[mid]:
                 l = mid+1

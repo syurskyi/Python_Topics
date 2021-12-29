@@ -20,7 +20,7 @@ ___ test_different_friendships_list():
 ___ test_friendships_list_with_duplicate_names():
     names = 'bob bob tim tim julian julian'.s.. 
     ids = r..(l..(names))
-    users = d..(zip(ids, names))
+    users = d..(z..(ids, names))
 
     friendships = [(0, 1), (0, 2), (0, 4), (0, 5), (1, 3),
                    (2, 4), (4, 5)]

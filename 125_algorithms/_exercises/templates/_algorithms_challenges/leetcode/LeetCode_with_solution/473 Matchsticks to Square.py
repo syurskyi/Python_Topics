@@ -41,7 +41,7 @@ class Solution:
         __ s..(nums) % 4 != 0:
             r.. False
 
-        nums.sort(r.._T..
+        nums.s..(r.._T..
         r.. self.dfs(nums, 0, l, square)
 
     ___ dfs(self, nums, i, l, square):

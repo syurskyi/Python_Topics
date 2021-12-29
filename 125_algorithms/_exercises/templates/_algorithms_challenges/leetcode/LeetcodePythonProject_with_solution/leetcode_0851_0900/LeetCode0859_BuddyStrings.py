@@ -12,9 +12,9 @@ class Solution(object):
         """
         a, b = A, B
         __ l..(a) != l..(b): r.. False
-        __ a __ b and l..(set(a)) < l..(a): r.. True
-        dif = [(c1, c2) ___ c1, c2 __ zip(a, b) __ c1 != c2]
-        r.. l..(dif) __ 2 and dif[0] __ dif[1][::-1]
+        __ a __ b a.. l..(set(a)) < l..(a): r.. True
+        dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
+        r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
     ___ buddyStrings_own(self, A, B):
         """
@@ -27,12 +27,12 @@ class Solution(object):
             r.. False
         c01, c02 = '', ''
         times = 0
-        ___ c1, c2 __ zip(a, b):
+        ___ c1, c2 __ z..(a, b):
             __ c1 != c2:
                 __ times > 1:
                     r.. False
                 ____ times __ 1:
-                    __ c01 __ c2 and c02 __ c1:
+                    __ c01 __ c2 a.. c02 __ c1:
                         times += 1
                     ____:
                         r.. False

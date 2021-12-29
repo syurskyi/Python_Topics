@@ -15,7 +15,7 @@ class Solution:
         __ n.. E o. n.. E[0] o. l..(E[0]) != 2:
             r.. 0
 
-        E.sort(key=l.... e: (e[0], -e[1]))
+        E.s..(key=l.... e: (e[0], -e[1]))
 
         dp = [0] * l..(E)
         size = 0
@@ -49,11 +49,11 @@ class Solution:
         """
         dp = [1] * n
 
-        E.sort()
+        E.s..()
 
         ___ i __ r..(n):
             ___ j __ r..(i):
-                __ (E[j][0] < E[i][0] and E[j][1] < E[i][1] and
+                __ (E[j][0] < E[i][0] a.. E[j][1] < E[i][1] a..
                     dp[j] + 1 > dp[i]):
                     dp[i] = dp[j] + 1
                 __ dp[i] > ans:

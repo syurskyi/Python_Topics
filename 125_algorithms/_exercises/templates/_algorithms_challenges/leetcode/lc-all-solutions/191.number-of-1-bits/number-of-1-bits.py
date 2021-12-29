@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    while n > 0:
+    w.... n > 0:
       n -= (n & -n)
       ans += 1
     r.. ans

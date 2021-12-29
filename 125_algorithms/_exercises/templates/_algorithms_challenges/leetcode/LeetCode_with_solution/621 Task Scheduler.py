@@ -29,7 +29,7 @@ _______ heapq
 
 
 class Solution:
-    ___ leastInterval(self, tasks: List[str], n: int) -> int:
+    ___ leastInterval(self, tasks: List[s..], n: int) -> int:
         """
         Gap is n
 
@@ -62,7 +62,7 @@ class Solution:
         r.. l..(tasks) + idle
 
 
-    ___ leastInterval_complicated(self, tasks: List[str], n: int) -> int:
+    ___ leastInterval_complicated(self, tasks: List[s..], n: int) -> int:
         """
         greedy
         max heap, most tasks first
@@ -79,8 +79,8 @@ class Solution:
         heapq.heapify(pq)
         q = deque()  # stores (t, k)
         clock = 0
-        while pq o. q:
-            __ q and q[0][0] <= clock:
+        w.... pq o. q:
+            __ q a.. q[0][0] <= clock:
                 # don't do while in while when clock++
                 _, k = q.popleft()
                 heapq.heappush(pq, (-counter[k], k))

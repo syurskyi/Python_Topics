@@ -10,10 +10,10 @@ class Solution(object):
         :type sentence: str
         :rtype: str
         """
-        d...sort(key=l.... x: l..(x))
+        d...s..(key=l.... x: l..(x))
         resArr    # list
-        words = sentence.split(' ')
-        ___ i, word __ enumerate(words):
+        words = sentence.s..(' ')
+        ___ i, word __ e..(words):
             ___ s __ d..:
                 __ word[:l..(s)] __ s:
                     resArr.a..(s)

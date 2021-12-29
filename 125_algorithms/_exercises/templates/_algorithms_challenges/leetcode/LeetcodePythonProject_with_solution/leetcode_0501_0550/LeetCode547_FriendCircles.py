@@ -16,7 +16,7 @@ class Solution(object):
         count = n
         ___ i __ r..(n):
             ___ j __ r..(n):
-                __ i > j and matrix[i][j] __ 1:
+                __ i > j a.. matrix[i][j] __ 1:
                     root1 = self.getRoot(roots, i)
                     root2 = self.getRoot(roots, j)
                     __ root1 != root2:
@@ -25,7 +25,7 @@ class Solution(object):
         r.. count
     
     ___ getRoot(self, roots, num):
-        while roots[num] != -1:
+        w.... roots[num] != -1:
             num = roots[num]
         r.. num
     
@@ -50,7 +50,7 @@ class Solution(object):
         ]
         ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.join([str(row) ___ row __ matrix]))
+            print('\n'.join([s..(row) ___ row __ matrix]))
             res = self.findCircleNum(matrix)
             print('result: %s' % res)
             print('-='*30+'-')

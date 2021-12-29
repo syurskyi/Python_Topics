@@ -17,12 +17,12 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ findRepeatedDnaSequences(self, s: str) -> List[str]:
+    ___ findRepeatedDnaSequences(self, s: s..) -> List[s..]:
         ret = set()
         seen = set()
         ___ i __ r..(l..(s) - 10 + 1):
             sub = s[i:i+10]
-            __ sub __ seen and sub n.. __ ret:
+            __ sub __ seen a.. sub n.. __ ret:
                 ret.add(sub)
             ____:
                 seen.add(sub)

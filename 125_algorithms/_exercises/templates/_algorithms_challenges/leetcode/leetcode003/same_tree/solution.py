@@ -19,11 +19,11 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        __ p __ N.. and q __ N..
+        __ p __ N.. a.. q __ N..
             r.. True
-        ____ p __ n.. N.. and q __ n.. N..
-            __ (p.val __ q.val and
-                    self.isSameTree(p.left, q.left) and
+        ____ p __ n.. N.. a.. q __ n.. N..
+            __ (p.val __ q.val a..
+                    self.isSameTree(p.left, q.left) a..
                     self.isSameTree(p.right, q.right)):
                 r.. True
         r.. False

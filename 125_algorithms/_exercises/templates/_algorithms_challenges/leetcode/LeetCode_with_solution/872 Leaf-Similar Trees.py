@@ -34,24 +34,24 @@ class Solution:
         """
         itr1 = self.dfs(root1)
         itr2 = self.dfs(root2)
-        while True:
+        w... T...
             a = next(itr1, N..)
             b = next(itr2, N..)
             __ a != b:
                 r.. False
-            __ a __ N.. and b __ N..
+            __ a __ N.. a.. b __ N..
                 break
         r.. True
 
     ___ dfs(self, node):
         stk = [node]
         # pre-order
-        while stk:
+        w.... stk:
             cur = stk.pop()
             __ n.. cur:
                 continue
-            __ n.. cur.left and n.. cur.right:
-                yield cur.val
+            __ n.. cur.left a.. n.. cur.right:
+                y.. cur.val
             ____:
                 stk.a..(cur.right)
                 stk.a..(cur.left)

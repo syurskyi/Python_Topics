@@ -38,7 +38,7 @@ class Solution:
         """
         cnt = 0
         k = 0
-        while True:
+        w... T...
             k += 1
             x0k = N - k * (k - 1) // 2
             __ x0k <= 0 :
@@ -81,8 +81,8 @@ class Solution:
         ___ i __ r..(1, N):
             d = N // i
             r = N % i
-            __ r __ 0 and d - i // 2 > 0:
+            __ r __ 0 a.. d - i // 2 > 0:
                 cnt += 1
-            ____ r __ 1 and N __ (d + d + 1) * i // 2:
+            ____ r __ 1 a.. N __ (d + d + 1) * i // 2:
                 cnt += 1
         r.. cnt

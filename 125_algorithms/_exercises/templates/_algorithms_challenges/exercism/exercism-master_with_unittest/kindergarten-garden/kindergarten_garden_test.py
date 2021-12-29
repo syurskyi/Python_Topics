@@ -27,7 +27,7 @@ class KindergartenGardenTests(unittest.TestCase):
 
     ___ test_disordered_test(self):
         garden = Garden("VCRRGVRG\nRVGCCGCV",
-                        students="Samantha Patricia Xander Roger".split())
+                        students="Samantha Patricia Xander Roger".s..())
         self.assertEqual("Violets Clover Radishes Violets".s.. ,
                          garden.plants("Patricia"))
         self.assertEqual("Radishes Grass Clover Violets".s.. ,

@@ -21,7 +21,7 @@ class Solution(object):
         dummy.next = head
         prev = dummy
         node = dummy.next
-        while node:
+        w.... node:
             __ node.val __ val:
                 prev.next = node.next
             ____:

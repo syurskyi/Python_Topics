@@ -27,7 +27,7 @@ class TwoSum(object):
         :rtype: bool
         """
         r.. any(
-            value-k __ self.hash_map and (value-k != k o. self.hash_map[k] > 1)
+            value-k __ self.hash_map a.. (value-k != k o. self.hash_map[k] > 1)
             ___ k __ self.hash_map
         )
 
@@ -39,7 +39,7 @@ class TwoSum(object):
         """
         ___ k __ self.hash_map.keys():
             target = value - k
-            __ target __ self.hash_map and (target != k o. self.hash_map[target] > 1):
+            __ target __ self.hash_map a.. (target != k o. self.hash_map[target] > 1):
                 r.. True
 
         r.. False

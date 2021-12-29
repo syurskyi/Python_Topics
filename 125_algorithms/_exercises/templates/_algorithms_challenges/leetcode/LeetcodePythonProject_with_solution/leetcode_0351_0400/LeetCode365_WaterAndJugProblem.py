@@ -8,7 +8,7 @@ class Solution(object):
         __ x+y<z: r.. False
         __ x __ z o. y __ z o. x+y __ z:
             r.. True
-        while y != 0:
+        w.... y != 0:
             tmp = y
             y = x%y
             x = tmp

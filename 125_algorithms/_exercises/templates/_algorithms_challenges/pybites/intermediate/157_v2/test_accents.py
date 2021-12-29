@@ -43,7 +43,7 @@ expected = (
 )
 
 
-@pytest.mark.parametrize("text, expected", zip(texts, expected))
+@pytest.mark.parametrize("text, expected", z..(texts, expected))
 ___ test_filter_accents(text, expected):
     # get rid of duplicates and sort results
     result = filter_accents(text)

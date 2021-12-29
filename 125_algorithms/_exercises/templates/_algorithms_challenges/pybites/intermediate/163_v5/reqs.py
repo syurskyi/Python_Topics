@@ -1,6 +1,6 @@
 ___ version_newer(old, new):
-    o = [int(v) ___ v __ old.split('.')]
-    n = [int(v) ___ v __ new.split('.')]
+    o = [int(v) ___ v __ old.s..('.')]
+    n = [int(v) ___ v __ new.s..('.')]
     __ o[0] < n[0]:
         r.. True
     ____ o[0] __ n[0]:
@@ -12,13 +12,13 @@ ___ version_newer(old, new):
     r.. False
 
 
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)
     """
-    old = [x.split('==') ___ x __ (old_reqs.splitlines(keepends=False)) __ l..(x.strip()) > 0]
-    new = [x.split('==') ___ x __ (new_reqs.splitlines(keepends=False)) __ l..(x.strip()) > 0]
-    ___ o, n __ zip(old, new):
+    old = [x.s..('==') ___ x __ (old_reqs.splitlines(keepends=False)) __ l..(x.strip()) > 0]
+    new = [x.s..('==') ___ x __ (new_reqs.splitlines(keepends=False)) __ l..(x.strip()) > 0]
+    ___ o, n __ z..(old, new):
         __ version_newer(o[1], n[1]):
-            yield n[0]
+            y.. n[0]

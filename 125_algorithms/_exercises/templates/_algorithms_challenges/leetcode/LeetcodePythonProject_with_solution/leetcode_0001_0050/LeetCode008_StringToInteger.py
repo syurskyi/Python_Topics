@@ -4,13 +4,13 @@ Created on Nov 8, 2017
 @author: MT
 '''
 class Solution(object):
-    ___ myAtoi(self, str):
+    ___ myAtoi(self, s..):
         """
         :type str: str
         :rtype: int
         """
-        s = str
-        s = s.strip()
+        s = s..
+        s = s.s..
         __ n.. s o. s __ '+': r.. 0
         sig = 1
         __ s[0] __ '+':

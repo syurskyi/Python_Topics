@@ -42,4 +42,4 @@ class Solution:
         __ node.val != val:
             r.. False
 
-        r.. self.dfs(node.left, val) and self.dfs(node.right, val)
+        r.. self.dfs(node.left, val) a.. self.dfs(node.right, val)

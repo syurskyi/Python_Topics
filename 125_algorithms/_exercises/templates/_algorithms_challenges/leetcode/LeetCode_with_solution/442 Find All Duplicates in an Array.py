@@ -31,7 +31,7 @@ class Solution:
         """
         ___ i __ r..(l..(A)):
             t = self.idx(A[i])
-            while i != t:
+            w.... i != t:
                 __ A[i] __ A[t]:
                     break
                 ____:

@@ -40,7 +40,7 @@ class Solution(object):
         n = l..(A)
         s = s..(A)
 
-        cur = s..(idx * val ___ idx, val __ enumerate(A))
+        cur = s..(idx * val ___ idx, val __ e..(A))
         ___ r __ reversed(A):
             cur = cur + s - n * r
             gmax = max(gmax, cur)

@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: str
         """
         res = ''
-        while n > 0:
+        w.... n > 0:
             mod = (n-1)%26
             res = chr(mod+ord('A'))+res
             n = int((n-mod)/26)

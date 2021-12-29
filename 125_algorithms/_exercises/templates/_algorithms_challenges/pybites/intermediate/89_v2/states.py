@@ -38,7 +38,7 @@ ___ get_every_nth_state(states=states, n=10):
 
 
     ___ i __ r..(n -1,l..(states),n):
-        yield states[i]
+        y.. states[i]
 
 
 ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):

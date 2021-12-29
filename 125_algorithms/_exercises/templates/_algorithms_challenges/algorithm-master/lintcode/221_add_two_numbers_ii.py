@@ -14,7 +14,7 @@ class Solution:
         :type b: ListNode
         :rtype: ListNode
         """
-        __ n.. a and n.. b:
+        __ n.. a a.. n.. b:
             r..
         __ n.. a:
             r.. b
@@ -27,7 +27,7 @@ class Solution:
         dummy = tail = ListNode(0)
         carry = 0
 
-        while a and b:
+        w.... a a.. b:
             carry += a.val + b.val
             tail.next = ListNode(carry % 10)
             carry //= 10
@@ -35,14 +35,14 @@ class Solution:
             b = b.next
             tail = tail.next
 
-        while a:
+        w.... a:
             carry += a.val
             tail.next = ListNode(carry % 10)
             carry //= 10
             a = a.next
             tail = tail.next
 
-        while b:
+        w.... b:
             carry += b.val
             tail.next = ListNode(carry % 10)
             carry //= 10
@@ -57,7 +57,7 @@ class Solution:
     ___ rev_list(self, head):
         pre = nxt = N..
 
-        while head:
+        w.... head:
             nxt = head.next
             head.next = pre
             pre = head

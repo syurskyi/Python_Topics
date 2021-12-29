@@ -38,7 +38,7 @@ ___ transpose(data):
             Member(name='Julian', since_days=221,
                    karma_points=34,
                    bitecoin_earned=78)]
-    result = zip(data)
+    result = z..(data)
     print(result)
 
 transpose({'2017-8': 18, '2017-9': 13})

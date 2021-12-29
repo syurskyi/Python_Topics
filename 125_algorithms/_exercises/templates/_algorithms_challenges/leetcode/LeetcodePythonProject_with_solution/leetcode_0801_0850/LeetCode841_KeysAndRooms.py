@@ -11,7 +11,7 @@ class Solution(object):
         """
         dfs = [0]
         seen = set(dfs)
-        while dfs:
+        w.... dfs:
             i = dfs.pop()
             ___ j __ rooms[i]:
                 __ j n.. __ seen:

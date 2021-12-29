@@ -1,12 +1,12 @@
 _______ requests
 _______ collections
 
-MovieResult  collections.namedtuple(
+MovieResult  collections.n..(
     'MovieResult',
     "imdb_code,title,duration,director,year,rating,imdb_score,keywords,genres")
 
 search  input("What movie do you want to search for? ")
-url  'http://movie_service.talkpython.fm/api/search/{}'.format(search)
+url  'http://movie_service.talkpython.fm/api/search/{}'.f..(search)
 
 resp  requests.get(url)
 resp.raise_for_status()
@@ -44,6 +44,6 @@ movies  [
     ___ md __ movies_list
 ]
 
-print("Found {} movies for search {}".format(l..(movies), search))
+print("Found {} movies for search {}".f..(l..(movies), search))
 ___ m __ movies:
-    print("{} -- {}".format(m.year, m.title))
+    print("{} -- {}".f..(m.year, m.title))

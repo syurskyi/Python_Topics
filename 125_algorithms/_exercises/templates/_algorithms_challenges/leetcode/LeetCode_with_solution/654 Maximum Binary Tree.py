@@ -50,7 +50,7 @@ class Solution:
         stk    # list
         ___ n __ nums:
             cur = TreeNode(n)
-            while stk and stk[-1].val < cur.val:
+            w.... stk a.. stk[-1].val < cur.val:
                 left = stk.pop()
                 cur.left = left
 
@@ -73,11 +73,11 @@ class Solution_heap:
         h = [(-v, v) ___ v __ nums]
         idx = {
             v: i
-            ___ i, v __ enumerate(nums)
+            ___ i, v __ e..(nums)
         }
         heapq.heapify(h)
         root = N..
-        while h:
+        w.... h:
             _, m = heapq.heappop(h)
             root = self.insert(root, m, idx)
 

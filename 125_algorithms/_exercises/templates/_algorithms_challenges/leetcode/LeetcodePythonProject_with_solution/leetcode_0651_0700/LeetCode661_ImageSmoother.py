@@ -21,7 +21,7 @@ class Solution(object):
                 num = 1.0
                 ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1):
-                    __ 0 <= x < m and 0 <= y < n:
+                    __ 0 <= x < m a.. 0 <= y < n:
                         __ matrix[x][y] != 0:
                             count += float(matrix[x][y])
                         num += 1
@@ -49,10 +49,10 @@ class Solution(object):
         ]
         ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.join([str(row) ___ row __ matrix]))
+            print('\n'.join([s..(row) ___ row __ matrix]))
             result = self.imageSmoother(matrix)
             print('result:')
-            print('\n'.join([str(row) ___ row __ result]))
+            print('\n'.join([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

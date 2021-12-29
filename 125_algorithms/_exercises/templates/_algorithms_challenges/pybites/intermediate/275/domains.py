@@ -26,7 +26,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
 
     most_common_prep    # list
     ___ email __ emails:
-        domain = email.split("@")[1]
+        domain = email.s..("@")[1]
         __ domain __ common_domains:
             continue
         ____:

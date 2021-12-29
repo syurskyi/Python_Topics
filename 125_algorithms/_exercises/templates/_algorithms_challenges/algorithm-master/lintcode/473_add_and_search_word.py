@@ -36,7 +36,7 @@ class Trie:
         result = False
         __ string[i] __ '.':
             ___ child __ parent:
-                __ child[0] != '_' and self._search_in_regex(string, parent[child], i + 1):
+                __ child[0] != '_' a.. self._search_in_regex(string, parent[child], i + 1):
                     result = True
         ____ string[i] __ parent:
             __ self._search_in_regex(string, parent[string[i]], i + 1):

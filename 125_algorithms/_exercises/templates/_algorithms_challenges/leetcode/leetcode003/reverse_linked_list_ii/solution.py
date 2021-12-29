@@ -15,11 +15,11 @@ class Solution:
         res_end = head  # End of the beginning part
         rev = N..  # Start of reversed part
         rev_end = N..  # End of reversed part
-        while head __ n.. N..
+        w.... head __ n.. N..
             next_node = head.next
             __ i < m:
                 res_end = head
-            ____ i >= m and i <= n:
+            ____ i >= m a.. i <= n:
                 head.next = rev
                 rev = head
                 __ i __ m:

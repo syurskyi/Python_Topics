@@ -16,7 +16,7 @@ Have fun and keep coding in Python!
 '''
 
 ____ pytz _______ timezone, utc
-____ datetime _______ datetime
+____ d__ _______ d__
 
 AUSTRALIA = timezone('Australia/Sydney')
 SPAIN = timezone('Europe/Madrid')
@@ -30,7 +30,7 @@ ___ what_time_lives_pybites(naive_utc_dt):
     t = (au,es)
     r.. t
 
-now = datetime.now()
+now = d__.now()
 result = what_time_lives_pybites(now)
 print(result[0])
 print(result[1])

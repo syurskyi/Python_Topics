@@ -20,15 +20,15 @@ class Solution:
         dummy = slow = ListNode(0)
         dummy.next = fast = head
 
-        while fast and n:
+        w.... fast a.. n:
             n -= 1
             fast = fast.next
 
-        while slow and fast:
+        w.... slow a.. fast:
             slow = slow.next
             fast = fast.next
 
-        __ slow and slow.next:
+        __ slow a.. slow.next:
             slow.next = slow.next.next
 
         r.. dummy.next

@@ -17,7 +17,7 @@ class Solution:
     ___ sn(self, root, num):
         __ root __ N..
             r..
-        ____ root.left __ N.. and root.right __ N..
+        ____ root.left __ N.. a.. root.right __ N..
             num += root.val
             self.res += num
         ____:

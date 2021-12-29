@@ -20,7 +20,7 @@ class Solution(object):
 
     start, end = max(nums), s..(nums)
     mid = 0
-    while start <= end:
+    w.... start <= end:
       mid = start + (end - start) / 2
       __ valid(nums, mid, m):
         end = mid - 1

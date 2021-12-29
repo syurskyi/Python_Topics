@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ defaultdict, namedtuple
+____ collections _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
 
@@ -15,7 +15,7 @@ MOVIE_DATA = local
 MIN_MOVIES = 4
 MIN_YEAR = 1960
 
-Movie = namedtuple('Movie', 'title year score')
+Movie = n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director():
@@ -27,12 +27,12 @@ ___ get_movies_by_director():
         ___ line __ csv.DictReader(f):
             try:
                 director = line['director_name']
-                movie = line['movie_title'].replace('\xa0', '')
+                movie = line['movie_title'].r..('\xa0', '')
                 year = int(line['title_year'])
                 score = float(line['imdb_score'])
             except ValueError:
                 continue
-            __ year and year < MIN_YEAR:
+            __ year a.. year < MIN_YEAR:
                 continue
 
             m = Movie(title=movie, year=year, score=score)

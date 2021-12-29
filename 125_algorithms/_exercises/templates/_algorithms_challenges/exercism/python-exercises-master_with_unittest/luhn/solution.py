@@ -1,13 +1,13 @@
 class Luhn(object):
     ___ __init__(self, string):
-        self.string = string.replace(" ", "")
+        self.string = string.r..(" ", "")
 
     ___ addends(self):
         ___ luhn_transform(n):
             r.. (2 * n - 9) __ (n > 4) ____ (2 * n)
-        old_digits = [int(d) ___ d __ str(self.string)]
+        old_digits = [int(d) ___ d __ s..(self.string)]
         r.. [(luhn_transform(n) __ (i % 2 __ 0) ____ n)
-                ___ i, n __ enumerate(old_digits, start=l..(old_digits) % 2)]
+                ___ i, n __ e..(old_digits, start=l..(old_digits) % 2)]
 
     ___ checksum(self):
         r.. s..(self.addends())

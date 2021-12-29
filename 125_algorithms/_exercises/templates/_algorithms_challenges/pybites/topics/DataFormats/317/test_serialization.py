@@ -1,4 +1,4 @@
-____ datetime _______ date
+____ d__ _______ date
 _______ time
 ____ typing _______ NamedTuple
 
@@ -10,9 +10,9 @@ ____ serialization _______ (download_pickle_file,
 
 
 class Bite(NamedTuple):
-    title: str
+    title: s..
     number: int
-    level: str
+    level: s..
 
 
 ___ test_deserialize_movie_rented_data():
@@ -35,7 +35,7 @@ ___ test_serialize_and_deserialize_other_data():
         Bite('Sum of Numbers', 1, 'Beginner'),
         Bite('Regex Fun', 2, 'Advanced'),
     ]
-    pkl_file = TMP / str(int(time.time()))
+    pkl_file = TMP / s..(int(time.time()))
     serialize(pkl_file, data=data)
     actual = deserialize(pkl_file)
     expected = data

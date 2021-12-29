@@ -9,8 +9,8 @@ ___ test_text_to_one_col():
         r"^My house is small",
         r"^but cosy."
     ]
-    output = text_to_columns(text).split("\n")
-    ___ line, match __ zip(output, expected):
+    output = text_to_columns(text).s..("\n")
+    ___ line, match __ z..(output, expected):
         ... re.search(match, line)
 
 
@@ -23,8 +23,8 @@ ___ test_text_to_two_cols():
         r"^but cosy\.\s+kitchen and an empty",
         r".*fridge."
     ]
-    output = text_to_columns(text).split("\n")
-    ___ line, match __ zip(output, expected):
+    output = text_to_columns(text).s..("\n")
+    ___ line, match __ z..(output, expected):
         ... re.search(match, line)
 
 
@@ -40,8 +40,8 @@ ___ test_text_to_three_cols():
         r".*fridge\.\s+people love to sit",
         r".*on it."
     ]
-    output = text_to_columns(text).split("\n")
-    ___ line, match __ zip(output, expected):
+    output = text_to_columns(text).s..("\n")
+    ___ line, match __ z..(output, expected):
         ... re.search(match, line)
 
 
@@ -60,6 +60,6 @@ ___ test_text_to_four_cols():
         r".*fridge\.\s+people love to sit\s+and reading, if only",
         r".*on it\.\s+I had a garden",
     ]
-    output = text_to_columns(text).split("\n")
-    ___ line, match __ zip(output, expected):
+    output = text_to_columns(text).s..("\n")
+    ___ line, match __ z..(output, expected):
         ... re.search(match, line)

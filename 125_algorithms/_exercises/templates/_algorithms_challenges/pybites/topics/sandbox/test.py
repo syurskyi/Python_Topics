@@ -4,7 +4,7 @@ in_list = [1]
 
 ___ pascal_next(in_list):
     out_list    # list
-    ___ i, v __ enumerate(in_list):
+    ___ i, v __ e..(in_list):
         __ i __ 0:
             out_list.a..(v)
         ____:

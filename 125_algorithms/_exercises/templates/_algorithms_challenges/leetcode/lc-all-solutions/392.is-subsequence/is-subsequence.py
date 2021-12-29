@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: bool
     """
     d = collections.defaultdict(l..)
-    ___ i, c __ enumerate(t):
+    ___ i, c __ e..(t):
       d[c].a..(i)
     start = 0
     ___ c __ s:

@@ -23,9 +23,9 @@ class Solution(object):
         right = n - 1
         __ n __ 1:
             r.. nums[0]
-        while left <= right:
+        w.... left <= right:
             mid = left + (right - left) / 2
-            __ mid > 0 and nums[mid - 1] > nums[mid]:
+            __ mid > 0 a.. nums[mid - 1] > nums[mid]:
                 r.. nums[mid]
             # The minimum element is in the right side
             ____ nums[mid] > nums[right]:

@@ -21,6 +21,6 @@ ___ get_workout_motd(day):
        a 'message of the day'"""
     dy = day.t..
     __ dy __ workout_schedule:
-        r.. chill __ workout_schedule[dy] __ rest ____ go_train.format(workout_schedule[dy])
+        r.. chill __ workout_schedule[dy] __ rest ____ go_train.f..(workout_schedule[dy])
     ____:
         raise KeyError

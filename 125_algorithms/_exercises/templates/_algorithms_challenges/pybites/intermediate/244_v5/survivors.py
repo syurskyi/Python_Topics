@@ -8,7 +8,7 @@ TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
 __ n.. PATH.exists():
-    urlretrieve(S3.format(FILE_NAME), PATH)
+    urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
 ___ _get_data(path=PATH):

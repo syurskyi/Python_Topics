@@ -19,10 +19,10 @@ class Tree(object):
         r.. self.__dict__() __ other.__dict__()
 
     ___ __iter__(self):
-        yield self.label
+        y.. self.label
         ___ child __ self.children:
             ___ gchild __ child:
-                yield gchild
+                y.. gchild
 
     ___ dup(self):
         r.. Tree(self.label, [c.dup() ___ c __ self.children])
@@ -44,7 +44,7 @@ class Tree(object):
     ___ from_pov(self, from_node):
         stack = [self]
         visited = set()
-        while stack:
+        w.... stack:
             tree = stack.pop(0)
             __ tree.label __ visited:
                 continue
@@ -59,7 +59,7 @@ class Tree(object):
         reordered = self.from_pov(from_node)
         stack = reordered.children
         path = [from_node]
-        while path[-1] != to_node:
+        w.... path[-1] != to_node:
             try:
                 tree = stack.pop()
             except IndexError:

@@ -44,12 +44,12 @@ class SnakeGame(object):
         x += dx
         y += dy
         fx, fy = self.food[0] __ self.food ____ (-1, -1)
-        __ x __ fx and y __ fy:
+        __ x __ fx a.. y __ fy:
             self.food.popleft()
             self.eat += 1
         ____:
             self.body.pop()
-            __ (x, y) __ self.body o. n.. (0 <= x < self.h and 0 <= y < self.w):
+            __ (x, y) __ self.body o. n.. (0 <= x < self.h a.. 0 <= y < self.w):
                 # possible to use set to accelerate check
                 r.. -1
 
@@ -63,5 +63,5 @@ class SnakeGame(object):
 
 __ __name__ __ "__main__":
     game = SnakeGame(3, 2, [[1, 2], [0, 1]])
-    ___ char, expect __ zip('RDRULU', [0, 0, 1, 1, 2, -1]):
+    ___ char, expect __ z..('RDRULU', [0, 0, 1, 1, 2, -1]):
         ... game.move(char) __ expect

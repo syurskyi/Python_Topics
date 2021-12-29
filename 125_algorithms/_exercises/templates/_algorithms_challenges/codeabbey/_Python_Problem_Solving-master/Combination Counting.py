@@ -6,7 +6,7 @@ ___  fact(n):
         res = res * i
     r.. res
 ___ i __ r..(int(input())):
-    n,k = l..(map(int,input().split()))
+    n,k = l..(map(int,input().s..()))
     result = 0
     result = fact(n) / (fact(k) * fact(n-k))
     print(int(result),end=' ')

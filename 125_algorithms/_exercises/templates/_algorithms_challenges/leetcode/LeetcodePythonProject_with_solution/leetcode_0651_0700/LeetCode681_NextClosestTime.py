@@ -31,11 +31,11 @@ class Solution(object):
         hh += carry
         __ hh >= 24:
             hh -= 24
-        res = str(hh) __ l..(str(hh))__2 ____ '0'+str(hh)
+        res = s..(hh) __ l..(s..(hh))__2 ____ '0'+s..(hh)
         res += ':'
-        res += str(mm) __ l..(str(mm))__2 ____ '0'+str(mm)
+        res += s..(mm) __ l..(s..(mm))__2 ____ '0'+s..(mm)
         ___ c __ res:
-            __ c != ':' and c n.. __ charSet:
+            __ c != ':' a.. c n.. __ charSet:
                 r.. False, res
         r.. True, res
     

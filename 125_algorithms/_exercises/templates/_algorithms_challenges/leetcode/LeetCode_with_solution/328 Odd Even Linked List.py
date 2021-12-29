@@ -34,7 +34,7 @@ class Solution(object):
         ptr = head  # end of odd position
         pre = head  # don't move the first
         cnt = 1
-        while pre and pre.next:
+        w.... pre a.. pre.next:
             cur = pre.next
             cnt += 1
             __ cnt % 2 __ 0:
@@ -64,7 +64,7 @@ class Solution(object):
         parity = ptr.val % 2
 
         pre = head
-        while pre and pre.next:
+        w.... pre a.. pre.next:
             cur = pre.next
             __ cur.val % 2 != parity:
                 pre = pre.next

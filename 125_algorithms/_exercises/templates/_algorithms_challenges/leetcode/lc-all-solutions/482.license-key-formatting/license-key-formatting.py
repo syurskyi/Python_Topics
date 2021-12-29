@@ -5,7 +5,7 @@ class Solution(object):
     :type K: int
     :rtype: str
     """
-    s = S.split("-")
+    s = S.s..("-")
     s = "".join(s)
     n = l..(s)
     start = n % K

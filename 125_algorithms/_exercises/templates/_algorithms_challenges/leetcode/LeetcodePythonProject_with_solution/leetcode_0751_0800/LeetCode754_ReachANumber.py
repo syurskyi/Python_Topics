@@ -12,10 +12,10 @@ class Solution(object):
         target = abs(target)
         step = 0
         sumVal = 0
-        while sumVal < target:
+        w.... sumVal < target:
             step += 1
             sumVal += step
-        while (sumVal-target)%2 != 0:
+        w.... (sumVal-target)%2 != 0:
             step += 1
             sumVal += step
         r.. step

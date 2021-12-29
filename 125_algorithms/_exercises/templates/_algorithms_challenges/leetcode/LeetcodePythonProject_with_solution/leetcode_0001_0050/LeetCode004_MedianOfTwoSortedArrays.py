@@ -14,12 +14,12 @@ class Solution(object):
         __ m > n:
             nums1, nums2, m, n = nums2, nums1, n, m
         imin, imax, half_len = 0, m, (m+n+1)//2
-        while imin <= imax:
+        w.... imin <= imax:
             i = (imin+imax)//2
             j = half_len - i
-            __ i < m and nums2[j-1] > nums1[i]:
+            __ i < m a.. nums2[j-1] > nums1[i]:
                 imin = i+1
-            ____ i > 0 and nums1[i-1] > nums2[j]:
+            ____ i > 0 a.. nums1[i-1] > nums2[j]:
                 imax = i-1
             ____:
                 __ i __ 0:

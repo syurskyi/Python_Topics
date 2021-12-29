@@ -12,8 +12,8 @@ class Solution(object):
         """
         # num=a_0*2^0+a_1*2^1+a_2*2^2+...+a_n*2^n
         sign = 1
-        __ (dividend > 0 and divisor < 0) o.\
-            (dividend < 0 and divisor > 0):
+        __ (dividend > 0 a.. divisor < 0) o.\
+            (dividend < 0 a.. divisor > 0):
             sign = -1
         __ dividend < 0: dividend = -dividend
         __ divisor < 0: divisor = -divisor
@@ -31,7 +31,7 @@ class Solution(object):
         __ dividend < divisor: r.. 0
         sumVal = divisor
         multiple = 1
-        while sumVal+sumVal <= dividend:
+        w.... sumVal+sumVal <= dividend:
             sumVal += sumVal
             multiple += multiple
         r.. multiple + self.ldivide(dividend-sumVal, divisor)

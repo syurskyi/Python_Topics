@@ -19,7 +19,7 @@ class Solution(object):
         __ n.. head o. n.. head.next: r..
         node = head
         node2 = head.next
-        while node and node2:
+        w.... node a.. node2:
             node2 = node2.next
             __ n.. node2:
                 break
@@ -34,7 +34,7 @@ class Solution(object):
         __ n.. root o. n.. root.next: r.. root
         p1, p2 = root, root.next
         p1.next = N..
-        while p2:
+        w.... p2:
             tmp = p2.next
             p2.next = p1
             p1 = p2
@@ -42,7 +42,7 @@ class Solution(object):
         r.. p1
     
     ___ merge(self, head1, head2):
-        while head1 and head2:
+        w.... head1 a.. head2:
             tmp1 = head1.next
             tmp2 = head2.next
             head1.next = head2
@@ -59,14 +59,14 @@ class Solution(object):
         ___ head __ testCases:
             print('before:')
             node = head
-            while node:
+            w.... node:
                 print('%s, ' % node.val, end='')
                 node = node.next
             print()
             self.reorderList(head)
             print('after:')
             node = head
-            while node:
+            w.... node:
                 print('%s, ' % node.val, end='')
                 node = node.next
             print()

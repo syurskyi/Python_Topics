@@ -2,7 +2,7 @@ _______ re
 
 
 ___ parse_markdown(markdown):
-    lines = markdown.split('\n')
+    lines = markdown.s..('\n')
     html = ''
     in_list = False
     ___ line __ lines:
@@ -15,14 +15,14 @@ ___ parse_markdown(markdown):
 
 
 ___ wrap(line, tag):
-    r.. '<{tag}>{line}</{tag}>'.format(line=line, tag=tag)
+    r.. '<{tag}>{line}</{tag}>'.f..(line=line, tag=tag)
 
 
 ___ check_headers(line):
     pattern = '# (.*)'
     ___ i __ r..(6):
         __ re.match(pattern, line):
-            r.. wrap(line[(i + 2):], 'h' + str(i + 1))
+            r.. wrap(line[(i + 2):], 'h' + s..(i + 1))
         pattern = '#' + pattern
     r.. line
 
@@ -69,9 +69,9 @@ ___ parse_line(line, in_list):
     __ list_match __ N..
         res = re.sub('(.*)(<li>)(.*)(</li>)(.*)', r'\1\2<p>\3</p>\4\5', res)
 
-    while check_bold(res):
+    w.... check_bold(res):
         res = check_bold(res)
-    while check_italic(res):
+    w.... check_italic(res):
         res = check_italic(res)
 
     r.. {

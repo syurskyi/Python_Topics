@@ -53,7 +53,7 @@ class Solution(object):
                     r.. False
             ____:
                 one_cnt = 0
-                while d & 0x80 __ 0x80:
+                w.... d & 0x80 __ 0x80:
                     one_cnt += 1
                     d <<= 1
 

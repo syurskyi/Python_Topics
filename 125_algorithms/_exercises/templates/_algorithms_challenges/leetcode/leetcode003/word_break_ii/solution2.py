@@ -37,7 +37,7 @@ class Solution(object):
             ___ j __ r..(i):
                 rest = self.word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
-                __ rest and word __ wordDict:
+                __ rest a.. word __ wordDict:
                     ___ r __ rest:
                         res.a..(r + ' ' + word)
             t[i] = res

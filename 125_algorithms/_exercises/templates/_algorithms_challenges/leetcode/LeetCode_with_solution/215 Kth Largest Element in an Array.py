@@ -24,7 +24,7 @@ class Solution:
         """
         h    # list
         n = l..(nums)
-        ___ i, v __ enumerate(nums):
+        ___ i, v __ e..(nums):
             __ i < k:
                 heapq.heappush(h, v)
             ____:

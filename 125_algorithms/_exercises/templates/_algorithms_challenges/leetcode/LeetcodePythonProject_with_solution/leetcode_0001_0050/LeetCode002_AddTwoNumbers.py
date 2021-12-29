@@ -19,7 +19,7 @@ class Solution(object):
         dummy = ListNode(-1)
         prev = dummy
         carry = 0
-        while l1 and l2:
+        w.... l1 a.. l2:
             tmpVal = l1.val+l2.val+carry
             __ tmpVal >= 10:
                 tmpVal -= 10
@@ -30,7 +30,7 @@ class Solution(object):
             l1 = l1.next
             l2 = l2.next
             prev = prev.next
-        while l1:
+        w.... l1:
             tmpVal = l1.val+carry
             __ tmpVal >= 10:
                 tmpVal -= 10
@@ -40,7 +40,7 @@ class Solution(object):
             prev.next = ListNode(tmpVal)
             l1 = l1.next
             prev = prev.next
-        while l2:
+        w.... l2:
             tmpVal = l2.val+carry
             __ tmpVal >= 10:
                 tmpVal -= 10

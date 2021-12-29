@@ -21,7 +21,7 @@ class Solution(object):
                 res.a..(curr)
             r..
         ___ i __ r..(pos+1, l..(num)+1):
-            __ i > pos+1 and num[pos] __ '0':
+            __ i > pos+1 a.. num[pos] __ '0':
                 break
             numStr = num[pos:i]
             __ pos __ 0:

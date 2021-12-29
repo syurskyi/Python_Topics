@@ -8,9 +8,9 @@ class Solution(object):
     minSum = float("inf")
     ans    # list
     d = {}
-    ___ i, name __ enumerate(list2):
+    ___ i, name __ e..(list2):
       d[name] = i
-    ___ i, name __ enumerate(list1):
+    ___ i, name __ e..(list1):
       idxSum = i + d.get(name, float("inf"))
       __ idxSum __ minSum:
         ans.a..(name)

@@ -79,7 +79,7 @@ class Solution(object):
         level = 0
         q    # list
         q.a..(s)
-        while q:
+        w.... q:
             l = l..(q)
             ___ i __ xrange(l):
                 cur = q[i]
@@ -129,7 +129,7 @@ class Solution_TLE(object):
         q    # list
         level = 0
         q.a..(s)
-        while q:
+        w.... q:
             l = l..(q)
             ___ i __ xrange(l):
                 cur = q[i]
@@ -172,7 +172,7 @@ class SolutionError(object):
         q    # list
         level = 0
         q.a..(leaf)
-        while q:
+        w.... q:
             l = l..(q)
             ___ i __ xrange(l):
                 cur = q[i]

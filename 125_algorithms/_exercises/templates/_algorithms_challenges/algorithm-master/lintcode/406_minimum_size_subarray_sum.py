@@ -10,18 +10,18 @@ class Solution:
         n = l..(nums)
         min_len = n + 1
         l = r = t = 0
-        while r < n:
+        w.... r < n:
             # Keep adding the next int into total until total >= s
-            while r < n and t < s:
+            w.... r < n a.. t < s:
                 t += nums[r]
                 r += 1
 
             # Terminate iteration if all the children in nums have been added
-            __ r >= n and t < s:
+            __ r >= n a.. t < s:
                 break
 
             # Keep substracting the prev int from total until total < s
-            while l < r and t >= s:
+            w.... l < r a.. t >= s:
                 t -= nums[l]
                 l += 1
 

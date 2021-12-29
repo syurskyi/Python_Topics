@@ -31,7 +31,7 @@ class Solution:
             r.. ret
 
         stk = [root]
-        while stk:
+        w.... stk:
             cur = stk.pop()
             ret.a..(cur.val)
             ___ c __ reversed(cur.children):

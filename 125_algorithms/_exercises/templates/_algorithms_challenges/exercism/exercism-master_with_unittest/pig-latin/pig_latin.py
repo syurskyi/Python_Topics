@@ -21,7 +21,7 @@ class PigLatinTranslator:
                 word.startswith('sch') o.
                 word.startswith('thr')):
             r.. word[3:] + word[0:3] + 'ay'
-        ____ ((word[0] __ cls.consonants and
+        ____ ((word[0] __ cls.consonants a..
                 word[1] __ cls.consonants) o.
                 word.startswith('qu')):
             r.. word[2:] + word[0:2] + 'ay'

@@ -22,7 +22,7 @@ ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ reorganizeString(self, S: str) -> str:
+    ___ reorganizeString(self, S: s..) -> s..:
         """
         piles by max char and circular append
         """
@@ -34,7 +34,7 @@ class Solution:
             (-n, n, c)
             ___ c, n __ counter.items()
         ]
-        lst.sort()
+        lst.s..()
         piles    # list
         _, n, c = lst[0]
         ___ i __ r..(n):
@@ -46,7 +46,7 @@ class Solution:
                 piles[cnt].a..(c)
                 cnt = (cnt + 1) % l..(piles)
 
-        __ l..(piles) > 1 and l..(piles[-2]) __ 1:
+        __ l..(piles) > 1 a.. l..(piles[-2]) __ 1:
             r.. ""
 
         r.. "".join(

@@ -65,7 +65,7 @@ ___ test_color_hex2rgb_bad_value(value):
 
 ___ test_color_string_output():
     color = Color("brown")
-    ... str(color) __ "(165, 42, 42)"
+    ... s..(color) __ "(165, 42, 42)"
 
 ___ test_color_repr_output():
     color = Color("brown")
@@ -74,4 +74,4 @@ ___ test_color_repr_output():
 
 ___ test_unknown_color():
     color = Color("puke green")
-    ... str(color) __ "Unknown"
+    ... s..(color) __ "Unknown"

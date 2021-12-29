@@ -6,7 +6,7 @@ T = int(f.readline().strip())
 
 boards    # list
 ___ i __ r..(0,T):
-    boards.a..(f.readline().strip().split(' '))
+    boards.a..(f.readline().s...s..(' '))
 
 ___ i __ r..(T):
     a = [int(j) ___ j __ boards[i]]
@@ -23,8 +23,8 @@ ___ i __ r..(T):
         z[0] = z[0] + 0.5
     __ z[0] - int(z[0]) < 0:
         z[0] = round(z[0]  - 0.5)
-    string = '('+str(int(z[0]))+' '+str(int(z[1]))+')'
+    string = '('+s..(int(z[0]))+' '+s..(int(z[1]))+')'
     res.a..(string)
                                   
-final = ' '.join(str(e) ___ e __ res)
+final = ' '.join(s..(e) ___ e __ res)
 print(final)

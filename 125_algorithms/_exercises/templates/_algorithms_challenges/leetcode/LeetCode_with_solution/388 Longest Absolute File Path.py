@@ -45,7 +45,7 @@ class Solution(object):
         :type input: str
         :rtype: int
         """
-        input = input.split('\n')
+        input = input.s..('\n')
         F    # list
         gmax = 0
         ___ elt __ input:

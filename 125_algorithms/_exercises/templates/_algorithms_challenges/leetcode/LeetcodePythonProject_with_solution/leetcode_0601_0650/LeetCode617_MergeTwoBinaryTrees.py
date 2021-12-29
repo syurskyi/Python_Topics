@@ -18,15 +18,15 @@ class Solution(object):
         :rtype: TreeNode
         """
         root = TreeNode(-1)
-        __ t1 and n.. t2:
+        __ t1 a.. n.. t2:
             root.val = t1.val
             root.left = self.mergeTrees(t1.left, t2)
             root.right = self.mergeTrees(t1.right, t2)
-        ____ n.. t1 and t2:
+        ____ n.. t1 a.. t2:
             root.val = t2.val
             root.left = self.mergeTrees(t1, t2.left)
             root.right = self.mergeTrees(t1, t2.right)
-        ____ t1 and t2:
+        ____ t1 a.. t2:
             root.val = t1.val + t2.val
             root.left = self.mergeTrees(t1.left, t2.left)
             root.right = self.mergeTrees(t1.right, t2.right)

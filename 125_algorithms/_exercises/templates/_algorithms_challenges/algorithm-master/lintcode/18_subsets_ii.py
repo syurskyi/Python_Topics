@@ -21,7 +21,7 @@ class Solution:
             r..
 
         ___ i __ r..(start, l..(A)):
-            __ i - 1 >= start and A[i] __ A[i - 1]:
+            __ i - 1 >= start a.. A[i] __ A[i - 1]:
                 continue
 
             self.dfs(A, i + 1, ans, subset + [A[i]])

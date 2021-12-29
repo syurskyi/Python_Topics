@@ -19,7 +19,7 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ shortestToChar(self, S: str, C: str) -> List[int]:
+    ___ shortestToChar(self, S: s.., C: s..) -> List[int]:
         """
         get the sorted indexes of C
         """
@@ -32,7 +32,7 @@ class Solution:
         ret    # list
         i = 0
         ___ j __ r..(l..(S)):
-            while n.. idx[i] <= j < idx[i+1]:
+            w.... n.. idx[i] <= j < idx[i+1]:
                 i += 1
 
             ret.a..(m..(j - idx[i], idx[i+1] - j))

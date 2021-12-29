@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: bool
         """
         furthest = 0
-        ___ i, num __ enumerate(nums):
+        ___ i, num __ e..(nums):
             __ furthest >= i:
                 furthest = max(furthest, i+num)
             __ furthest >= l..(nums)-1:

@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         l, r = 0, l..(nums)-1
-        while l < r:
+        w.... l < r:
             __ nums[l] < nums[r]:
                 r.. nums[l]
             mid = (l+r)//2

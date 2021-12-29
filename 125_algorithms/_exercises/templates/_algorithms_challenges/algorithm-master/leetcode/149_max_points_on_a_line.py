@@ -25,7 +25,7 @@ class Solution:
             ___ j __ r..(i + 1, n):
                 dx = P[i].x - P[j].x
                 dy = P[i].y - P[j].y
-                __ dx __ 0 and dy __ 0:
+                __ dx __ 0 a.. dy __ 0:
                     dups += 1
                     continue
 

@@ -1,4 +1,4 @@
-___ capitalize_sentences(text: str) -> str:
+___ capitalize_sentences(text: s..) -> s..:
     """Return text capitalizing the sentences. Note that sentences can end
        in dot (.), question mark (?) and exclamation mark (!)"""
 
@@ -9,7 +9,7 @@ ___ capitalize_sentences(text: str) -> str:
 
     
     first_word_after_end_of_sentence_index = 0
-    ___ i,word __ enumerate(words):
+    ___ i,word __ e..(words):
 
         __ any(word.endswith(character) ___ character __ end_characters):
             words[first_word_after_end_of_sentence_index] = words[first_word_after_end_of_sentence_index].capitalize()

@@ -27,14 +27,14 @@ Estimated variance for sample:
 """
 
 
-___ get_all_line_counts(data: str = STATS) -> l..:
+___ get_all_line_counts(data: s.. = STATS) -> l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
     lines    # list
     with open(data,'r') as f:
         ___ line __ f:
-            line = line.strip()
+            line = line.s..
             space_index = line.index(' ')
             lines.a..(int(line[:space_index]))
     
@@ -67,7 +67,7 @@ ___ create_stats_report(data_ N..
                  sample_variance=statistics.variance(sample),
                  )
 
-    r.. STATS_OUTPUT.format(**stats)
+    r.. STATS_OUTPUT.f..(**stats)
 
 
 

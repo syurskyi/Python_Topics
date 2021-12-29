@@ -44,7 +44,7 @@ dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
 class Solution:
-    ___ isRobotBounded(self, instructions: str) -> bool:
+    ___ isRobotBounded(self, instructions: s..) -> bool:
         """
         LL: op
         LLL: R
@@ -69,4 +69,4 @@ class Solution:
                 ____:
                     i = (i + 1) % 4
                     
-        r.. x __ 0 and y __ 0
+        r.. x __ 0 a.. y __ 0

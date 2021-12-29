@@ -15,13 +15,13 @@ class Solution(object):
         :type word2: str
         :rtype: int
         """
-        pos_lst1 = [pos ___ pos, v __ enumerate(words) __ v __ word1]
-        pos_lst2 = [pos ___ pos, v __ enumerate(words) __ v __ word2]
+        pos_lst1 = [pos ___ pos, v __ e..(words) __ v __ word1]
+        pos_lst2 = [pos ___ pos, v __ e..(words) __ v __ word2]
         mini = sys.maxint
         ___ pos __ pos_lst1:
             idx = bisect_left(pos_lst2, pos)
             ___ nei __ (-1, 0):
-                __ 0 <= idx+nei < l..(pos_lst2) and pos != pos_lst2[idx+nei]:
+                __ 0 <= idx+nei < l..(pos_lst2) a.. pos != pos_lst2[idx+nei]:
                     mini = m..(mini, abs(pos-pos_lst2[idx+nei]))
 
         r.. mini

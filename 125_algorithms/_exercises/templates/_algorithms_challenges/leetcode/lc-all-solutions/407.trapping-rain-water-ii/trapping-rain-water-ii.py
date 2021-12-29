@@ -20,11 +20,11 @@ class Solution(object):
       heapq.heappush(heap, (heightMap[i][w - 1], i, w - 1))
       visited |= {(i, 0), (i, w - 1)}
     dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
-    while heap:
+    w.... heap:
       height, i, j = heapq.heappop(heap)
       ___ di, dj __ dirs:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < h and 0 <= nj < w and (ni, nj) n.. __ visited:
+        __ 0 <= ni < h a.. 0 <= nj < w a.. (ni, nj) n.. __ visited:
           ans += max(0, height - heightMap[ni][nj])
           heapq.heappush(heap, (max(heightMap[ni][nj], height), ni, nj))
           visited |= {(ni, nj)}

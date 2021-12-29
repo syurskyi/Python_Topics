@@ -99,7 +99,7 @@ class Solution:
                 """
                 `h` means the maximum books `j - 1` men copied in shortest time
                 """
-                while h < i and dp[h][j - 1] < dp[i][0] - dp[h][0]:
+                w.... h < i a.. dp[h][j - 1] < dp[i][0] - dp[h][0]:
                     h += 1
 
                 dp[i][j] = dp[h][j - 1]
@@ -160,7 +160,7 @@ class Solution:
 
             right += P[i]
 
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ self.check_if_possible(P, mid, k):
                 right = mid

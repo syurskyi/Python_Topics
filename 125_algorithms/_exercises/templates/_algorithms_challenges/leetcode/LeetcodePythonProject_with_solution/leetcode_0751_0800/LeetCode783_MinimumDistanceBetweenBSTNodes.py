@@ -17,17 +17,17 @@ class Solution(object):
         :rtype: int
         """
         stack    # list
-        while root:
+        w.... root:
             stack.a..(root)
             root = root.left
         prev = float('-inf')
         res = float('inf')
-        while stack:
+        w.... stack:
             node = stack.pop()
             res = m..(res, node.val-prev)
             prev = node.val
             node0 = node.right
-            while node0:
+            w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
         r.. res

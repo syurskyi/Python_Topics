@@ -18,7 +18,7 @@ ___ top_python_questions(url=cached_so_url):
 
    question_summary = soup.find_all("div", class_="question-summary")
    ___ question __ question_summary:
-      views = int(question.find("div", class_="views").get("title").split(" ")[0].replace(",", ""))
+      views = int(question.find("div", class_="views").get("title").s..(" ")[0].r..(",", ""))
       _question = question.find("a", class_="question-hyperlink").get_text()
       votes = int(question.find("span", class_="vote-count-post").get_text())
       

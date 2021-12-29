@@ -22,11 +22,11 @@ class Solution:
         k = 4
         tmp = [0] * k
 
-        while i < n and k __ 4:
+        w.... i < n a.. k __ 4:
             k = read4(tmp)
             j = 0
 
-            while i < n and j < k:
+            w.... i < n a.. j < k:
                 buf[j] = tmp[j]
                 i += 1
                 j += 1
@@ -44,7 +44,7 @@ __ __name__ __ '__main__':
         global i
         j = 0
 
-        while i < n and j < k:
+        w.... i < n a.. j < k:
             buf[j] = data[i]
             i += 1
             j += 1

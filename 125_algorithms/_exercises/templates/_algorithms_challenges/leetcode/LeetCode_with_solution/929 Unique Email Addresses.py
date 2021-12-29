@@ -43,17 +43,17 @@ ____ typing _______ List
 
 
 class Solution:
-    ___ numUniqueEmails(self, emails: List[str]) -> int:
+    ___ numUniqueEmails(self, emails: List[s..]) -> int:
         """
         stemming
         """
         s = set()
         ___ e __ emails:
-            local, domain = e.split("@")
+            local, domain = e.s..("@")
             local = self.stem(local)
             s.add((local, domain))
 
         r.. l..(s)
 
     ___ stem(self, local):
-        r.. local.split("+")[0].replace(".", "")
+        r.. local.s..("+")[0].r..(".", "")

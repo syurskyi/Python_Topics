@@ -29,7 +29,7 @@ class Solution(object):
 
         ___ i __ xrange(n, -1, -1):  # len 2 and above
             ___ j __ xrange(i+2, n+1):
-                P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
+                P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
 
         C = [i ___ i __ xrange(n+1)]  # initial values, max is all cut
         ___ i __ xrange(n+1):
@@ -92,7 +92,7 @@ class Solution(object):
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
                 try:
-                    P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
+                    P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
                 except IndexError:
                     P[i][j] = True
 
@@ -115,7 +115,7 @@ class Solution(object):
         """
         q = [[s]]
         count = -1
-        while q:
+        w.... q:
             # cur = q.pop(0)  # not directly pop
             length = l..(q)
             count += 1
@@ -124,7 +124,7 @@ class Solution(object):
                 __ a..(self.is_palindrome(item) ___ item __ cur):
                     r.. count
                 # 1 cut
-                ___ ind, val __ enumerate(cur):
+                ___ ind, val __ e..(cur):
                     ___ i __ xrange(1, l..(val)):
                         cut1 = val[:i]
                         cut2 = val[i:]
@@ -222,7 +222,7 @@ class Solution(object):
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
                 try:
-                    dp2[i][j] = dp2[i+1][j-1] and s[i] __ s[j-1]
+                    dp2[i][j] = dp2[i+1][j-1] a.. s[i] __ s[j-1]
                 except IndexError:
                     dp2[i][j] = True
 

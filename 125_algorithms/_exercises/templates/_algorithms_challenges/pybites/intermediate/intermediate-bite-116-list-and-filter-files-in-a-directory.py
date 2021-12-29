@@ -31,7 +31,7 @@ ___ get_files_implementation_1(dirname, size_in_kb):
 
 ___ get_files_implementation_2(dirname, size_in_kb):
 
-    files_and_dirs = glob.glob("{dirname}/*".format(dirname=dirname))
+    files_and_dirs = glob.glob("{dirname}/*".f..(dirname=dirname))
     files = [f ___ f __ files_and_dirs __ os.path.isfile(f)]
     files_over_limit = [f ___ f __ files __ (os.path.getsize(f) / ONE_KB) >= size_in_kb]
     r.. files_over_limit

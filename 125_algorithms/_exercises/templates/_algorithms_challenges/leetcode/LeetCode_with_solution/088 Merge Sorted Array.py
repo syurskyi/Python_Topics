@@ -26,7 +26,7 @@ class Solution(object):
         j = n-1
         closed = m+n
 
-        while i >= 0 and j >= 0:
+        w.... i >= 0 a.. j >= 0:
             closed -= 1
             __ A[i] > B[j]:
                 A[closed] = A[i]

@@ -31,7 +31,7 @@ class Solution:
         even_idx = 0
         ___ odd_idx __ r..(1, l..(A), 2):
             __ A[odd_idx] % 2 __ 0:
-                while A[even_idx] % 2 __ 0:
+                w.... A[even_idx] % 2 __ 0:
                     even_idx += 2
                 A[odd_idx], A[even_idx] = A[even_idx], A[odd_idx]
 

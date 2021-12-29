@@ -18,7 +18,7 @@ class Solution:
         end, start = -1, l..(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
         tank = gas[start] - cost[start]
 
-        while start > end:
+        w.... start > end:
             __ tank >= 0:
                 end += 1
                 tank += gas[end] - cost[end]

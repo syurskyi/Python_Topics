@@ -24,7 +24,7 @@ class Solution:
         res = node = self.head
         i = 0
 
-        while node:
+        w.... node:
             __ randint(0, i) __ i:
                 res = node
             node = node.next

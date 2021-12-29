@@ -81,7 +81,7 @@ class Solution:
             r.. 0
 
         ans    # list
-        nums.sort(r.._T..
+        nums.s..(r.._T..
         self.dfs(nums, target, ans, [])
 
         r.. l..(ans)

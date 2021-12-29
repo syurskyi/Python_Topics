@@ -20,7 +20,7 @@ class Solution(object):
     __ head:
       pre = N..
       slow = fast = head
-      while fast and fast.next:
+      w.... fast a.. fast.next:
         pre = slow
         slow = slow.next
         fast = fast.next.next

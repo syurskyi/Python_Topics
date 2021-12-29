@@ -48,7 +48,7 @@ class Solution:
         h = {}  # num -> next greater element
         stk    # list
         ___ e __ nums2[::-1]:
-            while stk and stk[-1] <= e:
+            w.... stk a.. stk[-1] <= e:
                 # until stk[-1] > e
                 stk.pop()
 

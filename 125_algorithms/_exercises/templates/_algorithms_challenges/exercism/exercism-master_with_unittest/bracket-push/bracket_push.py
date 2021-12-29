@@ -17,7 +17,7 @@ class CheckBrackets:
         ___ bracket __ self.get_brackets(self.inp):
             __ self.is_opening_bracket(bracket):
                 stack.a..(bracket)
-            ____ self.is_closing_bracket(bracket) and self.closes_existing_bracket(bracket, stack):
+            ____ self.is_closing_bracket(bracket) a.. self.closes_existing_bracket(bracket, stack):
                 stack.pop()
             ____:
                 r.. False  # This is an invalid closing bracket
@@ -25,7 +25,7 @@ class CheckBrackets:
         r.. is_empty(stack)  # There are more open brackets left to close
 
     ___ closes_existing_bracket(self, char, stack):
-        r.. stack and self.matching_brackets(stack[-1], char)
+        r.. stack a.. self.matching_brackets(stack[-1], char)
 
     ___ matching_brackets(self, opener, closer):
         r.. self.BRACKETS[opener] __ closer

@@ -28,7 +28,7 @@ ___ get_movie_data(files=files):
 
 
 ___ get_single_comedy(movies):
-    r.. [m['Title'] ___ m __ movies __ 'Comedy' __ m['Genre'].split(', ')][0]
+    r.. [m['Title'] ___ m __ movies __ 'Comedy' __ m['Genre'].s..(', ')][0]
 
 
 ___ get_movie_most_nominations(movies):

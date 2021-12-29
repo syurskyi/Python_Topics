@@ -8,7 +8,7 @@
 class Solution(object):
   ___ preorderTraversal(self, root):
     res, stack    # list, [(1, root)]
-    while stack:
+    w.... stack:
       p = stack.pop()
       __ n.. p[1]: continue
       stack.extend([(1, p[1].right), (1, p[1].left), (0, p[1])]) __ p[0] != 0 ____ res.a..(p[1].val)

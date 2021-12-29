@@ -17,14 +17,14 @@ ___ count_down(data_type):
 
 @count_down.register(int)
 ___ _(data_type):
-    while data_type > 0:
+    w.... data_type > 0:
         print(data_type)
         data_type //= 10
 
 
 @count_down.register(float)
 ___ _(data_type: float):
-    s = str(data_type)
-    while s != '':
+    s = s..(data_type)
+    w.... s != '':
         print(s)
         s = s[:-1]

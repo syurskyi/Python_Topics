@@ -20,9 +20,9 @@ class Solution:
     ___ restore_ip(self, s, cand, res):
         # If more than 4 parts, or 4 parts already but with remaining
         # unprocessed sub-string
-        __ l..(cand) > 4 o. l..(cand) __ 4 and s:
+        __ l..(cand) > 4 o. l..(cand) __ 4 a.. s:
             r..
-        ____ n.. s and l..(cand) __ 4:
+        ____ n.. s a.. l..(cand) __ 4:
                 res.a..('.'.join(cand))
         ____:
             k = m..(3, l..(s))  # Ensures s[:j + 1] won't be duplicate

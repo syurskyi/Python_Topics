@@ -20,10 +20,10 @@ class Solution(object):
         n = l..(s)
         p = n - 1
         right = -1
-        while p >= 0:
-            __ right __ -1 and s[p] != ' ':
+        w.... p >= 0:
+            __ right __ -1 a.. s[p] != ' ':
                 right = p
-            ____ right >= 0 and s[p] __ ' ':
+            ____ right >= 0 a.. s[p] __ ' ':
                 r.. right - p
             p -= 1
         __ right >= 0:

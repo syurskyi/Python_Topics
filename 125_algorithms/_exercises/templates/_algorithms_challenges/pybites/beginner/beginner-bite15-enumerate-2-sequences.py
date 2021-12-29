@@ -20,5 +20,5 @@ names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
 countries = 'Australia Spain Global Argentina USA Mexico'.s.. 
 
 
-___ index, (name, country) __ enumerate(zip(names, countries), 1):
+___ index, (name, country) __ e..(z..(names, countries), 1):
     print(f'{index}. {name:10} {country}')

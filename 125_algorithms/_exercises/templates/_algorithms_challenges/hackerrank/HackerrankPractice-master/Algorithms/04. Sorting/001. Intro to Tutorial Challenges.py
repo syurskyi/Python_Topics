@@ -4,8 +4,8 @@
 
 v = int(input())
 n = int(input())
-arr = l..(map(int, input().split()))
+arr = l..(map(int, input().s..()))
 i = 0
-while arr[i] != v:
+w.... arr[i] != v:
     i += 1
 print(i)

@@ -1,8 +1,8 @@
-____ collections _______ namedtuple
-____ datetime _______ datetime
+____ collections _______ n..
+____ d__ _______ d__
 ____ operator _______ attrgetter
 
-Book = namedtuple('Book', 'title authors pages published')
+Book = n..('Book', 'title authors pages published')
 
 books = [
     Book(title="Python Interviews",
@@ -61,5 +61,5 @@ ___ sort_books_by_published_date(books=books):
     Python Interviews
     """
     r.. s..(books,
-                  key=l.... x: datetime.strptime(x.published,
+                  key=l.... x: d__.strptime(x.published,
                                                   '%Y-%m-%d'))

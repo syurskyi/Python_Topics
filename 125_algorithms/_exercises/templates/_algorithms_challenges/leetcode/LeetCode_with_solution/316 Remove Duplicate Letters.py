@@ -29,7 +29,7 @@ class Solution(object):
         ___ i __ xrange(n):
             v = s[i]
             __ v n.. __ stk_set:
-                while stk and stk[-1] > v and last_pos[self._idx(stk[-1])] > i:
+                w.... stk a.. stk[-1] > v a.. last_pos[self._idx(stk[-1])] > i:
                     p = stk.pop()
                     stk_set.remove(p)
                 stk.a..(v)

@@ -10,7 +10,7 @@ ___ get_season_csv_file(season):
     """Receives a season int, and downloads loads in its
        corresponding CSV_URL"""
     with requests.Session() as s:
-        download = s.get(CSV_URL.format(season))
+        download = s.get(CSV_URL.f..(season))
         r.. download.content.decode('utf-8')
 
 

@@ -29,5 +29,5 @@ class Solution(object):
         count[1] = count[1] - count[0] - count[2] - count[4]
         result = ''
         ___ i __ r..(10):
-            result += str(i)*count[i]
+            result += s..(i)*count[i]
         r.. result

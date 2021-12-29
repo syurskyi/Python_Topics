@@ -1,8 +1,8 @@
 _______ collections
 _______ requests
 
-Location  collections.namedtuple('Location', 'city state country')
-Weather  collections.namedtuple('Weather', 'location units temp condition')
+Location  collections.n..('Location', 'city state country')
+Weather  collections.n..('Weather', 'location units temp condition')
 
 
 ___ main():
@@ -72,24 +72,24 @@ ___ convert_api_to_weather(data, loc):
 
 
 ___ convert_plaintext_location(location_text):
-    __ n.. location_text o. n.. location_text.strip():
+    __ n.. location_text o. n.. location_text.s..:
         r.. N..
 
-    location_text  location_text.l...strip()
-    parts  location_text.split(',')
+    location_text  location_text.l...s..
+    parts  location_text.s..(',')
 
     city  ""
     state  ""
     country  'us'
     __ l..(parts) __ 1:
-        city  parts[0].strip()
+        city  parts[0].s..
     ____ l..(parts) __ 2:
-        city  parts[0].strip()
-        country  parts[1].strip()
+        city  parts[0].s..
+        country  parts[1].s..
     ____ l..(parts) __ 3:
-        city  parts[0].strip()
-        state  parts[1].strip()
-        country  parts[2].strip()
+        city  parts[0].s..
+        state  parts[1].s..
+        country  parts[2].s..
     ____:
         r.. N..
 

@@ -21,14 +21,14 @@ ___ test_initial_state(ninja):
 
 ___ test_add_score_new_belt(ninja, capfd):
     ninja.score = 20
-    output = capfd.readouterr()[0].split('\n')
-    ... CONGRATS_MSG.format(score=20, rank='White') __ output
+    output = capfd.readouterr()[0].s..('\n')
+    ... CONGRATS_MSG.f..(score=20, rank='White') __ output
 
 
 ___ test_add_score_no_new_belt(ninja, capfd):
     ninja.score = 49
-    output = capfd.readouterr()[0].split('\n')
-    ... NEW_SCORE_MSG.format(score=49) __ output
+    output = capfd.readouterr()[0].s..('\n')
+    ... NEW_SCORE_MSG.f..(score=49) __ output
 
 
 ___ test_new_score_validation(ninja):
@@ -39,12 +39,12 @@ ___ test_new_score_validation(ninja):
 
 ___ test_add_score_another_new_belt(ninja, capfd):
     ninja.score = 50
-    output = capfd.readouterr()[0].split('\n')
-    ... CONGRATS_MSG.format(score=50, rank='Yellow') __ output
+    output = capfd.readouterr()[0].s..('\n')
+    ... CONGRATS_MSG.f..(score=50, rank='Yellow') __ output
 
 
 ___ test_add_score_go_two_belts_up(ninja, capfd):
     ninja.score = 177
-    output = capfd.readouterr()[0].split('\n')
-    ... CONGRATS_MSG.format(score=177, rank='Green') __ output
+    output = capfd.readouterr()[0].s..('\n')
+    ... CONGRATS_MSG.f..(score=177, rank='Green') __ output
     ... ninja._last_earned_belt.lower() __ 'green'

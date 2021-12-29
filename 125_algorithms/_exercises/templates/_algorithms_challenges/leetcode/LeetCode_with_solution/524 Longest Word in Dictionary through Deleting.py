@@ -41,7 +41,7 @@ class Solution:
         :rtype: str
         """
         h = defaultdict(l..)
-        ___ d_idx, w __ enumerate(d):
+        ___ d_idx, w __ e..(d):
             w_idx = 0
             h[w[w_idx]].a..((d_idx, w_idx))
 

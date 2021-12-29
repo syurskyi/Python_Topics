@@ -9,7 +9,7 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        A.sort()
+        A.s..()
         c, res, MOD = 1, 0, 10**9+7
         ___ i __ r..(l..(A)):
             res = (res + A[i]*c - A[l..(A)-i-1]*c) % MOD

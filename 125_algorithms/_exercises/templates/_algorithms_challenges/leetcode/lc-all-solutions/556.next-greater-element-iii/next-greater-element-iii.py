@@ -5,7 +5,7 @@ class Solution(object):
     :rtype: int
     """
     num = n
-    n = l..(str(n))
+    n = l..(s..(n))
     pos = leftMost = l..(n) - 1
     ___ i __ reversed(r..(0, l..(n) - 1)):
       __ n[i] < n[i + 1]:

@@ -22,15 +22,15 @@ class Solution(object):
             r.. result
         stack    # list
         node = root
-        while node:
+        w.... node:
             stack.a..(node)
             node = node.left
-        while stack:
+        w.... stack:
             node = stack.pop()
             result.a..(node.val)
             __ node.right:
                 node = node.right
-                while node:
+                w.... node:
                     stack.a..(node)
                     node = node.left
         r.. result

@@ -16,7 +16,7 @@ class Solution(object):
                 __ modified:
                     r.. False
                 modified = True
-                __ i-2 >= 0 and nums[i-2] > nums[i]:
+                __ i-2 >= 0 a.. nums[i-2] > nums[i]:
                     continue
             prev = nums[i]
         r.. True

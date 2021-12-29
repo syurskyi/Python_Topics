@@ -44,16 +44,16 @@ class Solution:
 
         ___ i __ r..(m + 1):
             ___ j __ r..(1, n + 1):
-                __ i > 0 and p[j - 1] __ s[i - 1] and dp[i - 1][j - 1]:
+                __ i > 0 a.. p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
                     dp[i][j] = True
-                ____ i > 0 and p[j - 1] __ ANY and dp[i - 1][j - 1]:
+                ____ i > 0 a.. p[j - 1] __ ANY a.. dp[i - 1][j - 1]:
                     dp[i][j] = True
-                ____ j > 1 and p[j - 1] __ MULTI:
+                ____ j > 1 a.. p[j - 1] __ MULTI:
                     __ dp[i][j - 2]:
                         dp[i][j] = True
-                    ____ i > 0 and p[j - 2] __ s[i - 1] and dp[i - 1][j]:
+                    ____ i > 0 a.. p[j - 2] __ s[i - 1] a.. dp[i - 1][j]:
                         dp[i][j] = True
-                    ____ i > 0 and p[j - 2] __ ANY and dp[i - 1][j]:
+                    ____ i > 0 a.. p[j - 2] __ ANY a.. dp[i - 1][j]:
                         dp[i][j] = True
 
         r.. dp[m][n]

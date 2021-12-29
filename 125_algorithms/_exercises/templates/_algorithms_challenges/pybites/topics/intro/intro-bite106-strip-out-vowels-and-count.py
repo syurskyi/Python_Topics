@@ -43,7 +43,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels = 'aeiou'
 
 
-___ my_strip_vowels(text: str) -> (str, int):
+___ my_strip_vowels(text: s..) -> (s.., int):
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)
@@ -68,7 +68,7 @@ ___ my_strip_vowels(text: str) -> (str, int):
     t = (out, cnt)
     print(out)
 
-___ strip_vowels(text: str) -> (str, int):
+___ strip_vowels(text: s..) -> (s.., int):
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)

@@ -44,13 +44,13 @@ allowed will have length in range [0, 200].
 Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E',
 'F', 'G'}.
 """
-_______ itertools
+_______ i..
 ____ typing _______ List
 ____ collections _______ defaultdict
 
 
 class Solution:
-    ___ pyramidTransition(self, bottom: str, allowed: List[str]) -> bool:
+    ___ pyramidTransition(self, bottom: s.., allowed: List[s..]) -> bool:
         """
         Need search, since multiple placements are possible
         The order of allowed matters
@@ -66,8 +66,8 @@ class Solution:
             r.. True
 
         # for nxt_level in self.gen_nxt_level(T, level, 0):
-        ___ nxt_level __ itertools.product(
-            *[T[a, b] ___ a, b __ zip(level, level[1:])]
+        ___ nxt_level __ i...product(
+            *[T[a, b] ___ a, b __ z..(level, level[1:])]
         ):
             __ self.dfs(T, nxt_level):
                 r.. True
@@ -80,12 +80,12 @@ class Solution:
         Cartesian product
         """
         __ lo + 1 >= l..(level):
-            yield ""
+            y.. ""
             r..
 
         ___ head __ T[level[lo], level[lo + 1]]:
             ___ tail __ self.gen_nxt_level(T, level, lo + 1):
-                yield head + tail
+                y.. head + tail
 
 
     ___ dfs_deep(self, T, level, lo, nxt_level) -> bool:

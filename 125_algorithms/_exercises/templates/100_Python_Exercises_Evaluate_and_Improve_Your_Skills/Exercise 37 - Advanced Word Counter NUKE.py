@@ -2,8 +2,8 @@
 ___ count_words(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
-        string  string.replace(",", " ")
-        string_list  string.split(" ")
+        string  string.r..(",", " ")
+        string_list  string.s..(" ")
         r.. l..(string_list)
 
 print(count_words("words2.txt"))
@@ -14,7 +14,7 @@ _______ re
 ___ count_words_re(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
-        string_list  re.split(",| ", string)
+        string_list  re.s..(",| ", string)
         r.. l..(string_list)
 
 print(count_words_re("words2.txt"))

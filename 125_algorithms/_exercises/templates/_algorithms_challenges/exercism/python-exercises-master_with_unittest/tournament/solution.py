@@ -12,8 +12,8 @@ ___ invert_result(result):
 
 
 ___ parse_game(game_line):
-    game = game_line.split(';')
-    __ l..(game) __ 3 and game[2] __ RESULTS:
+    game = game_line.s..(';')
+    __ l..(game) __ 3 a.. game[2] __ RESULTS:
         result = RESULTS[game[2]]
         r.. (game[0], result), (game[1], invert_result(result))
     r.. []
@@ -30,7 +30,7 @@ ___ format_table(results):
             results.items(), key=l.... g: (-calculate_points(g[1]), g[0])):
         team_fmt = '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
         table.a..(
-            team_fmt.format(team, s..(games), calculate_points(games), *games))
+            team_fmt.f..(team, s..(games), calculate_points(games), *games))
 
     r.. '\n'.join(table)
 
@@ -38,7 +38,7 @@ ___ format_table(results):
 ___ tally(data):
     table = defaultdict(l....: [0, 0, 0])
 
-    ___ line __ data.split('\n'):
+    ___ line __ data.s..('\n'):
         ___ team, result __ parse_game(line):
             table[team][result] += 1
 

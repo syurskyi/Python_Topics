@@ -24,11 +24,11 @@ class Solution:
             r.. "0"
         ret    # list
         n = abs(num)
-        while n:
+        w.... n:
             ret.a..(n % 7)
             n //= 7
 
-        ret = "".join(map(str, ret[::-1]))
+        ret = "".join(map(s.., ret[::-1]))
         __ num < 0:
             ret = "-" + ret
 

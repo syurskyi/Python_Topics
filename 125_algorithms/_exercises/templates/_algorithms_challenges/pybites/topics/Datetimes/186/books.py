@@ -1,14 +1,14 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 
 ____ dateutil.parser _______ parse
 
 # work with a static date for tests, real use = datetime.now()
-NOW = datetime(2019, 3, 17, 16, 28, 42, 966663)
+NOW = d__(2019, 3, 17, 16, 28, 42, 966663)
 WEEKS_PER_YEAR = 52
 
 
 ___ get_number_books_read(books_per_year_goal: int,
-                          at_date: str = N..) -> int:
+                          at_date: s.. = N..) -> int:
     """Based on books_per_year_goal and at_date, return the
        number of books that should have been read.
        If books_per_year_goal negative or 0, or at_date is in the

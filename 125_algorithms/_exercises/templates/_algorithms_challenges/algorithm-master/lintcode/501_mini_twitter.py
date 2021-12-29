@@ -49,7 +49,7 @@ class MiniTwitter:
         __ n.. res:
             r.. []
 
-        res.sort()
+        res.s..()
         r.. [tweet ___ _, tweet __ res[-10:]][::-1]
 
     """

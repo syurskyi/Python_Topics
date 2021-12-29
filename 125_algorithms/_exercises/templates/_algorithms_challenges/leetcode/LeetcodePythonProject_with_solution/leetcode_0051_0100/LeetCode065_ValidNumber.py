@@ -9,12 +9,12 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        s = s.strip()
+        s = s.s..
         s = s.lstrip('-')
         s = s.lstrip('+')
         i = 0
         num, dot, exp = False, False, False
-        while i < l..(s):
+        w.... i < l..(s):
             c = s[i]
             __ c.isdigit():
                 num = True

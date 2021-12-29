@@ -47,8 +47,8 @@ class Codec:
         ret    # list
         q    # list
         q.a..(root)
-        ret.a..(str(root.val))  # add result when enqueue
-        while q:
+        ret.a..(s..(root.val))  # add result when enqueue
+        w.... q:
             l = l..(q)
             ___ i __ xrange(l):
                 cur = q[i]
@@ -68,12 +68,12 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        lst = data.split(",")
+        lst = data.s..(",")
         root = self.decode(lst[0])
 
         q = deque([root])
         i = 1
-        while q:
+        w.... q:
             cur = q.popleft()
             __ i < l..(lst):
                 cur.left = self.decode(lst[i])
@@ -96,4 +96,4 @@ class Codec:
         __ n.. node:
             r.. "null"
         ____:
-            r.. str(node.val)
+            r.. s..(node.val)

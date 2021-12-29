@@ -27,12 +27,12 @@ class Solution(object):
         ____:
             left = 0
             right = n - 1
-            while left <= right:
+            w.... left <= right:
                 mid = (left + right) / 2
                 __ nums[mid] __ target:
                     r.. mid
-                ____ (mid < n - 1 and nums[mid] < target
-                        and nums[mid + 1] > target):
+                ____ (mid < n - 1 a.. nums[mid] < target
+                        a.. nums[mid + 1] > target):
                     r.. mid + 1
                 ____ target < nums[mid]:
                     right = mid - 1

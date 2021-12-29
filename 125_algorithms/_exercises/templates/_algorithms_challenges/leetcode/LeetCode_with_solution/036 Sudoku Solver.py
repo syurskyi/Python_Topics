@@ -37,7 +37,7 @@ class Solution:
             ___ j __ xrange(n):
                 __ board[i][j]__".":
                     ___ num __ r..(1, 10):
-                        num_str = str(num)
+                        num_str = s..(num)
                         # row
                         condition_row = a..([board[i][col]!=num_str ___ col __ xrange(n)])
                         # col
@@ -45,7 +45,7 @@ class Solution:
                         # square
                         condition_square = a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(n)])
 
-                        __ condition_col and condition_row and condition_square:
+                        __ condition_col a.. condition_row a.. condition_square:
                             board[i][j] = num_str
                             __ n.. self.solve(board):
                                 board[i][j] = "."
@@ -67,11 +67,11 @@ class Solution:
 
         __ board[i][j]__".":
             ___ num __ r..(1, 10):
-                num_str = str(num)  # try number
+                num_str = s..(num)  # try number
                 # To speed up, use condition short-curcit.
                 # row, col, square
-                __ a..([board[i][col]!=num_str ___ col __ xrange(9)]) and \
-                        a..([board[row][j]!=num_str ___ row __ xrange(9)]) and \
+                __ a..([board[i][col]!=num_str ___ col __ xrange(9)]) a.. \
+                        a..([board[row][j]!=num_str ___ row __ xrange(9)]) a.. \
                         a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(9)]):
                     board[i][j] = num_str
                     __ n.. self.solve(board, i, j+1):

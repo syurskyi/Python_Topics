@@ -10,7 +10,7 @@ class Solution(object):
         :rtype: int
         """
         cost = [0]
-        while self.check(grid, cost):
+        w.... self.check(grid, cost):
             continue
         r.. cost[0]
     
@@ -46,7 +46,7 @@ class Solution(object):
         ___ i __ r..(4):
             newRow = row+shiftX[i]
             newCol = col+shiftY[i]
-            __ 0 <= newRow < m and 0 <= newCol < n:
+            __ 0 <= newRow < m a.. 0 <= newCol < n:
                 __ grid[newRow][newCol] __ 1:
                     grid[newRow][newCol] = count
                     self.dfs(newRow, newCol, grid, count, walls, res)
@@ -63,11 +63,11 @@ class Solution(object):
         m, n = l..(grid), l..(grid[0])
         ___ i __ r..(m):
             ___ j __ r..(n):
-                __ grid[i][j] > 1 and grid[i][j] != quarantine:
+                __ grid[i][j] > 1 a.. grid[i][j] != quarantine:
                     ___ k __ r..(4):
                         newRow = i+shiftX[k]
                         newCol = j+shiftY[k]
-                        __ 0 <= newRow < m and 0 <= newCol < n and grid[newRow][newCol] __ 0:
+                        __ 0 <= newRow < m a.. 0 <= newCol < n a.. grid[newRow][newCol] __ 0:
                             grid[newRow][newCol] = 1
                     grid[i][j] = 1
                 ____ grid[i][j] __ quarantine:

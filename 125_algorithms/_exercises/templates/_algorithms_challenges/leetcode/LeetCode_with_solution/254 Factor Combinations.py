@@ -44,7 +44,7 @@ class Solution:
                 cur.pop()
 
     ___ dfs2(self, n, cur, ret):
-        __ n > 1 and cur and l..(cur) >= 1:
+        __ n > 1 a.. cur a.. l..(cur) >= 1:
             ret.a..(l..(cur)+[n])
 
         start = cur[-1] __ cur ____ 2
@@ -55,7 +55,7 @@ class Solution:
                 cur.pop()
 
     ___ dfs_TLE(self, n, cur, ret):
-        __ n __ 1 and cur and l..(cur) >= 2:
+        __ n __ 1 a.. cur a.. l..(cur) >= 2:
             ret.a..(l..(cur))
 
         __ cur:

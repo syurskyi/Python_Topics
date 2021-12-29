@@ -31,7 +31,7 @@ class Solution(object):
             r.. path
         stack    # list
         stack.a..(root)
-        while stack:
+        w.... stack:
             root = stack.pop()
             path.a..(root.val)
             __ root.right __ n.. N..

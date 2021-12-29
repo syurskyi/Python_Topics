@@ -16,8 +16,8 @@ class Solution(object):
       ___ i __ r..(1, 10):
         __ i n.. __ visited:
           x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
-          __ (5 n.. __ visited and (x + xp, y + yp) __ (2, 2)) o. (
-            (x __ xp and abs(y - yp) __ 2) o. (y __ yp and abs(x - xp) __ 2)) and (prev + i) / 2 n.. __ visited:
+          __ (5 n.. __ visited a.. (x + xp, y + yp) __ (2, 2)) o. (
+            (x __ xp a.. abs(y - yp) __ 2) o. (y __ yp a.. abs(x - xp) __ 2)) a.. (prev + i) / 2 n.. __ visited:
             continue
           visited |= {i}
           dfs(m, n, i, visited, length + 1)

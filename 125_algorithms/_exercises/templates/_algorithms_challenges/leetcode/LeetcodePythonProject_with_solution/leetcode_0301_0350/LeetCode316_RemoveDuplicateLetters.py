@@ -11,18 +11,18 @@ class Solution(object):
         pos = 0
         ___ c __ s:
             cnt[ord(c)-ord('a')] += 1
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             __ s[i] < s[pos]:
                 pos = i
             cnt[ord(c)-ord('a')] -= 1
             __ cnt[ord(c)-ord('a')] __ 0:
                 break
-        r.. s[pos]+self.removeDuplicateLetters(s[pos+1:].replace(s[pos], ''))
+        r.. s[pos]+self.removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
     
     ___ removeDuplicateLetters_another(self, s):
         __ n.. s: r.. ''
         lastPosMap = {}
-        ___ i, c __ enumerate(s):
+        ___ i, c __ e..(s):
             lastPosMap[c] = i
         length = l..(lastPosMap)
         res = ['a']*length
@@ -30,7 +30,7 @@ class Solution(object):
         ___ i __ r..(length):
             minChar = chr(ord('z')+1)
             ___ j __ r..(begin, end+1):
-                __ s[j] __ lastPosMap and s[j] < minChar:
+                __ s[j] __ lastPosMap a.. s[j] < minChar:
                     minChar = s[j]
                     begin = j+1
             res[i] = minChar

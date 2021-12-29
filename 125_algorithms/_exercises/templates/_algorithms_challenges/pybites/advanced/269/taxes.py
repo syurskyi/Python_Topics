@@ -72,7 +72,7 @@ class Taxes:
         self.taxes_owed = self.taxes
 
 
-    ___ __str__(self) -> str:
+    ___ __str__(self) -> s..:
         """Summary Report
 
         Returns:
@@ -96,10 +96,10 @@ class Taxes:
         values = [("Taxable Income:",f"{self.salary:,.2f}"),("Taxes Owed:",f"{self.taxes:,.2f}"),("Tax Rate:",f"{self.tax_rate:.2f}%")]
 
         largest_left_length = l..(values[0][0]) + 1
-        largest_right_length = l..(str(int(self.salary))) + 4
+        largest_right_length = l..(s..(int(self.salary))) + 4
         spaces = 32 - (largest_left_length + largest_right_length)
 
-        ___ i,(string,value) __ enumerate(values,1):
+        ___ i,(string,value) __ e..(values,1):
             t = ' ' * spaces
             s += f' {string:>{largest_left_length}}{t}{value:>{largest_right_length}}\n'
 
@@ -127,9 +127,9 @@ class Taxes:
             largest_tax = max(largest_tax,int(tax))
     
         
-        largest_amount = l..(str(largest_amount))
+        largest_amount = l..(s..(largest_amount))
         largest_amount += 16
-        largest_tax = l..(str(largest_tax))
+        largest_tax = l..(s..(largest_tax))
         largest_tax += 4
 
         middle = self.OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)

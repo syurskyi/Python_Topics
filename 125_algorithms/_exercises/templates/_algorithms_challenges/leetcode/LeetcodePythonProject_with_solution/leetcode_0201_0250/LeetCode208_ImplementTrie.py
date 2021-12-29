@@ -16,7 +16,7 @@ class Trie(object):
     
     ___ insert(self, word):
         children = self.root.children
-        ___ i, c __ enumerate(word):
+        ___ i, c __ e..(word):
             __ c __ children:
                 t = children[c]
             ____:
@@ -38,7 +38,7 @@ class Trie(object):
     
     ___ search(self, word):
         t = self.searchNode(word)
-        r.. bool(t and t.isLeaf)
+        r.. bool(t a.. t.isLeaf)
     
     ___ startsWith(self, prefix):
         t = self.searchNode(prefix)

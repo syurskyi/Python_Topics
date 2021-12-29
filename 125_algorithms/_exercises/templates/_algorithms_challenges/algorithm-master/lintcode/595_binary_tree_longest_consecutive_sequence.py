@@ -39,7 +39,7 @@ class Solution:
 
             _size, _down = self.divide_conquer(child)
 
-            __ child.val - 1 __ node.val and _down + 1 > down:
+            __ child.val - 1 __ node.val a.. _down + 1 > down:
                 down = _down + 1
 
             __ _size > size:

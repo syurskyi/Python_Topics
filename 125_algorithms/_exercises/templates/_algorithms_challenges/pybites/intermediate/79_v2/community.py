@@ -39,7 +39,7 @@ ___ create_user_bar_chart(content):
     data = pd.read_csv(StringIO(content))
     
 
-    max_length = data.tz.str.l..().max()
+    max_length = data.tz.s...l..().max()
 
     counts = data.tz.value_counts().sort_index()
 

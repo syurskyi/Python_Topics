@@ -7,6 +7,6 @@ ___ array_left_rotation(a, k):
     r.. result
 
 
-n, k = map(int, input().strip().split(' '))
-a = l..(map(int, input().strip().split(' ')))
+n, k = map(int, input().s...s..(' '))
+a = l..(map(int, input().s...s..(' ')))
 print(*array_left_rotation(a, k))

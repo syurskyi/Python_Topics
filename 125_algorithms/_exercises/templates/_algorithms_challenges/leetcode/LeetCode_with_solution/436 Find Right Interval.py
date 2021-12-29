@@ -39,7 +39,7 @@ class Solution:
         """
         indexes = {
             itv.start: idx
-            ___ idx, itv __ enumerate(intervals)
+            ___ idx, itv __ e..(intervals)
         }
         starts = l..(s..(indexes.keys()))
         ret    # list

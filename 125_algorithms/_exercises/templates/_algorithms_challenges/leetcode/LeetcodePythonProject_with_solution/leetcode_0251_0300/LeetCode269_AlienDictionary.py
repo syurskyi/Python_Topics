@@ -33,7 +33,7 @@ class Solution(object):
             __ cnt __ 0:
                 queue.a..(c)
         res = ''
-        while queue:
+        w.... queue:
             c = queue.pop(0)
             res += c
             ___ c0 __ graph.get(c, []):

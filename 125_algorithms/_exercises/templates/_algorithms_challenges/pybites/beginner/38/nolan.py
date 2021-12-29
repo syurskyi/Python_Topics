@@ -22,7 +22,7 @@ ___ get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
 
     ___ child __ get_tree():
-        yield child.attrib['title']
+        y.. child.attrib['title']
 
 
 ___ _get_runtime_helper(child):

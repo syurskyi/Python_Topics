@@ -11,6 +11,6 @@ ___ get_duplicate_indices(words):
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
     wordlist = defaultdict(l..)
-    ___ pos, word __ enumerate(words):
+    ___ pos, word __ e..(words):
         wordlist[word].a..(pos)
     r.. s..(p[0] ___ p __ wordlist.values() __ l..(p) > 1)

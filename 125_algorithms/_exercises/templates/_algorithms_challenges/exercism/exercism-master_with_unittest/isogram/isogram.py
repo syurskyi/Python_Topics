@@ -3,4 +3,4 @@ ___ is_isogram(word):
 
 
 ___ remove_punctuation(word):
-    r.. l..(filter(str.isalpha, word.lower()))
+    r.. l..(filter(s...isalpha, word.lower()))

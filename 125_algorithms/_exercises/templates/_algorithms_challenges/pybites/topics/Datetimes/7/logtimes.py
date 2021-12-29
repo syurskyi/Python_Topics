@@ -1,4 +1,4 @@
-____ datetime _______ datetime
+____ d__ _______ d__
 _______ os
 _______ urllib.request
 
@@ -27,7 +27,7 @@ ___ convert_to_datetime(line):
        datetime(2014, 7, 3, 23, 27, 51)
     """
     log_fields = line.s..
-    r.. datetime.strptime(log_fields[1], "%Y-%m-%dT%H:%M:%S")
+    r.. d__.strptime(log_fields[1], "%Y-%m-%dT%H:%M:%S")
 
 
 ___ time_between_shutdowns(loglines):

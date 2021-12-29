@@ -32,7 +32,7 @@ class Solution(object):
         dp[0][0] = 1
         ___ i __ r..(0, n):
             ___ j __ r..(0, m):
-                __ i __ 0 and j __ 0:
+                __ i __ 0 a.. j __ 0:
                     dp[i][j] = 1
                 ____ i __ 0:
                     dp[i][j] = dp[i][j-1]

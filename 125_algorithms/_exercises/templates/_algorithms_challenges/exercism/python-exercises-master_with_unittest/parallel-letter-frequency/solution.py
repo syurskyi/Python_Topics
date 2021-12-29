@@ -26,7 +26,7 @@ class LetterCounter(object):
 
 
 ___ count_letters(queue_of_texts, letter_to_frequency, worker_id):
-    while n.. queue_of_texts.empty():
+    w.... n.. queue_of_texts.empty():
         sleep(worker_id + 1)
         line_input = queue_of_texts.get()
         __ line_input __ n.. N..

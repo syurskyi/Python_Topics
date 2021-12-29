@@ -36,7 +36,7 @@ class Solution:
             r.. -1
 
         left, right = 0, l..(A) - 1
-        while left + 1 < right:
+        w.... left + 1 < right:
             mid = (left + right) // 2
             __ A[mid] __ A[right]:
                 # means it's ok to remove the end child

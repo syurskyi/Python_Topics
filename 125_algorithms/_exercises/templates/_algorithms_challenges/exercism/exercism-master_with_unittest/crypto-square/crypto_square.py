@@ -1,6 +1,6 @@
 _______ string
 _______ math
-_______ itertools
+_______ i..
 
 
 class CryptoSquare:
@@ -34,7 +34,7 @@ class CryptoSquare:
     # https://stackoverflow.com/a/4938130/2813210
     @staticmethod
     ___ transpose_uneven_matrix(matrix):
-        transposed_matrix = l..(itertools.zip_longest(*matrix))
+        transposed_matrix = l..(i...zip_longest(*matrix))
         # Remove None's
         r.. [[val ___ val __ row __ val __ n.. N..]
                 ___ row __ transposed_matrix]

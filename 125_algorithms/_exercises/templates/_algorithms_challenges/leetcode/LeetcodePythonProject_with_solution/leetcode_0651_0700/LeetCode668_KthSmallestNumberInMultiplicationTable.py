@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         low, high = 1, m*n+1
-        while low < high:
+        w.... low < high:
             mid = (low+high)//2
             c = self.c.. mid, m, n)
             __ c >= k:

@@ -34,7 +34,7 @@ class Solution:
         __ n.. intervals:
             r.. ret
 
-        intervals.sort(key=l.... x: x.start)
+        intervals.s..(key=l.... x: x.start)
         cur = intervals[0]
         ___ itv __ intervals[1:]:
             __ cur.end <= itv.start:

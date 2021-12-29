@@ -24,14 +24,14 @@ class Solution:
         i, j = start
         D[i][j] = 0
         q = [(0, i, j)]
-        while q:
+        w.... q:
             dist, i, j = heapq.heappop(q)
             ___ di, dj __ dirs:
                 cur_dist = 0
                 I = i
                 J = j
                 # look ahead
-                while 0 <= I + di < m and 0 <= J + dj < n and maze[I + di][J + dj] __ 0:
+                w.... 0 <= I + di < m a.. 0 <= J + dj < n a.. maze[I + di][J + dj] __ 0:
                     I += di
                     J += dj
                     cur_dist += 1

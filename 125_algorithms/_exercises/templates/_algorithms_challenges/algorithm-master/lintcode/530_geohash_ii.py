@@ -55,7 +55,7 @@ class GeoHash:
         r.. reversed(bins)
 
     ___ get_base32_list(self):
-        base32_list = [str(i) ___ i __ r..(10)]
+        base32_list = [s..(i) ___ i __ r..(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
         ___ i __ r..(ord('a'), ord('z') + 1):

@@ -30,8 +30,8 @@ ___ island_size(map_):
     """
     perimeter = 0
 
-    ___ r, row __ enumerate(map_):
-        ___ c, val __ enumerate(row):
+    ___ r, row __ e..(map_):
+        ___ c, val __ e..(row):
             __ val __ 1:
                 perimeter += 4 - get_others(map_, r, c)
     r.. perimeter

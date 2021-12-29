@@ -31,7 +31,7 @@ class Solution(object):
         ____:
             ___ j __ r..(i):
                 __ (self.word_break_aux(s, wordDict, j, t) __ True
-                        and s[j + 1:i + 1] __ wordDict):
+                        a.. s[j + 1:i + 1] __ wordDict):
                     t[i] = True
                     r.. True
             ____:

@@ -10,12 +10,12 @@ class Solution(object):
         :rtype: List[int]
         """
         res    # list
-        while True:
+        w... T...
             changed = False
             i = 0
-            while i < l..(asteroids):
-                __ i+1 <l..(asteroids) and\
-                    asteroids[i] > 0 and asteroids[i+1] < 0:
+            w.... i < l..(asteroids):
+                __ i+1 <l..(asteroids) a..\
+                    asteroids[i] > 0 a.. asteroids[i+1] < 0:
                     __ asteroids[i] + asteroids[i+1] != 0:
                         val = asteroids[i] __ asteroids[i]+asteroids[i+1] > 0\
                             ____ asteroids[i+1]

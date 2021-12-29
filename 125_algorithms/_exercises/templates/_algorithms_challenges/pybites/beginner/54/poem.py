@@ -12,7 +12,7 @@ shakespeare_unformatted = """
 ___ print_hanging_indents(poem):
     
 
-    lines = poem.split('\n')
+    lines = poem.s..('\n')
 
 
     ___ i __ r..(1,l..(lines)):

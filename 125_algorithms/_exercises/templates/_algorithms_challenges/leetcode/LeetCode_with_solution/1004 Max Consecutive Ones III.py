@@ -43,9 +43,9 @@ class Solution:
         cnt_0 = 0
         n = l..(A)
         ret = 0
-        while i < n and j < n:
-            while j < n:
-                __ A[j] __ 0 and cnt_0 < K:
+        w.... i < n a.. j < n:
+            w.... j < n:
+                __ A[j] __ 0 a.. cnt_0 < K:
                     j += 1
                     cnt_0 += 1
                 ____ A[j] __ 1:

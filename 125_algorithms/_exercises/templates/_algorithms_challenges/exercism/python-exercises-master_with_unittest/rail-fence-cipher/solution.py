@@ -1,9 +1,9 @@
-____ itertools _______ cycle, chain
+____ i.. _______ cycle, chain
 
 
 ___ fence_pattern(rails, size):
     zig_zag = cycle(chain(r..(rails), r..(rails - 2, 0, -1)))
-    r.. zip(zig_zag, r..(size))
+    r.. z..(zig_zag, r..(size))
 
 
 ___ encode(msg, rails):
@@ -13,6 +13,6 @@ ___ encode(msg, rails):
 
 ___ decode(msg, rails):
     fence = fence_pattern(rails, l..(msg))
-    fence_msg = zip(msg, s..(fence))
+    fence_msg = z..(msg, s..(fence))
     r.. ''.join(
         char ___ char, _ __ s..(fence_msg, key=l.... item: item[1][1]))

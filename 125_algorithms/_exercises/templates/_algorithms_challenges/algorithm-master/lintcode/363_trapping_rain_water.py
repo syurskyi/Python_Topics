@@ -10,7 +10,7 @@ class Solution:
         # mx_r: max height for index `r`
         mx_l = mx_r = ans = 0
         l, r = 0, l..(heights) - 1
-        while l < r:
+        w.... l < r:
             # To find the max height in heights
             __ heights[l] < heights[r]:
                 mx_l = max(mx_l, heights[l])

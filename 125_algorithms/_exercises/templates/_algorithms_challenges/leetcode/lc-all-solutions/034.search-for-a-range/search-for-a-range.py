@@ -8,7 +8,7 @@ class Solution(object):
     l, r = 0, l..(nums) - 1
     found = 0
     start, end = 0, 0
-    while l < r:
+    w.... l < r:
       m = l + (r - l) / 2
       __ target > nums[m]:
         l = m + 1
@@ -25,7 +25,7 @@ class Solution(object):
       start = r + 1
 
     l, r = 0, l..(nums) - 1
-    while l < r:
+    w.... l < r:
       m = l + (r - l) / 2
       __ target < nums[m]:
         r = m - 1

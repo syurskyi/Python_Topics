@@ -18,13 +18,13 @@ class Solution:
         __ n.. root:
             r.. False
 
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             r.. root.val __ target
 
-        __ root.left and self.hasPathSum(root.left, target - root.val):
+        __ root.left a.. self.hasPathSum(root.left, target - root.val):
             r.. True
 
-        __ root.right and self.hasPathSum(root.right, target - root.val):
+        __ root.right a.. self.hasPathSum(root.right, target - root.val):
             r.. True
 
         r.. False

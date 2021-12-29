@@ -47,7 +47,7 @@ class Solution:
         inc_stack    # list  # store the idx, increasing stack
 
         ___ i __ xrange(n):
-            while inc_stack and height[inc_stack[-1]] > height[i]:
+            w.... inc_stack a.. height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
                     area = height[last]*(i-(inc_stack[-1]+1))
@@ -59,7 +59,7 @@ class Solution:
 
         # after processing all heights, process the remaining stack
         i = n
-        while inc_stack:
+        w.... inc_stack:
             last = inc_stack.pop()
             __ inc_stack:
                 area = height[last]*(i-(inc_stack[-1]+1))
@@ -79,7 +79,7 @@ class Solution:
             r.. 0
 
         max_area = -1<<32
-        ___ ind, val __ enumerate(height):
+        ___ ind, val __ e..(height):
             min_h = val
             max_area = max(max_area, val*1)
             ___ j __ xrange(ind, -1, -1):
@@ -104,8 +104,8 @@ class Solution:
             r.. 0
 
         global_max = -1<<32
-        ___ ind, val __ enumerate(height):
-            __ ind+1<l..(height) and val<=height[ind+1]:  # PRUNE, find until peak
+        ___ ind, val __ e..(height):
+            __ ind+1<l..(height) a.. val<=height[ind+1]:  # PRUNE, find until peak
                 continue
 
             min_h = val
@@ -136,7 +136,7 @@ class Solution:
         inc_stack    # list  # store the pointer
 
         i = 0
-        while i<length:
+        w.... i<length:
             __ n.. inc_stack o. height[i]>=height[inc_stack[-1]]:
                 inc_stack.a..(i)
                 i += 1
@@ -149,7 +149,7 @@ class Solution:
                 global_max = max(global_max, area)
 
         # remaining stack
-        while inc_stack:
+        w.... inc_stack:
             last = inc_stack.pop()
             __ inc_stack:
                 area = height[last]*(i-last)

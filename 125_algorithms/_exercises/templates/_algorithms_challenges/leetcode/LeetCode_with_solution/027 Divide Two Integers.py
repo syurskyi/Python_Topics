@@ -20,19 +20,19 @@ class Solution:
         __ divisor __ 0 o. dividend __ 0:
             r.. 0
 
-        __ dividend __ MIN_INT and divisor __ -1:
+        __ dividend __ MIN_INT a.. divisor __ -1:
             r.. MAX_INT
 
         # handle signs
-        sign = 1 __ dividend >= 0 and divisor >= 0 o. dividend < 0 and divisor < 0 ____ -1
+        sign = 1 __ dividend >= 0 a.. divisor >= 0 o. dividend < 0 a.. divisor < 0 ____ -1
         dividend = abs(dividend)
         divisor = abs(divisor)
 
         result = 0
-        while dividend >= divisor:
+        w.... dividend >= divisor:
             current_result = 1
             current = divisor  # write inner loop first
-            while current <= dividend:
+            w.... current <= dividend:
                 current <<= 1
                 current_result <<= 1
 

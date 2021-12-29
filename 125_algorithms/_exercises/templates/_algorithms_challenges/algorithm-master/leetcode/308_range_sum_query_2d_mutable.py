@@ -37,9 +37,9 @@ class NumMatrix:
 
         m, n = l..(self.incr), l..(self.incr[0])
 
-        while i < m:
+        w.... i < m:
             j = y + 1
-            while j < n:
+            w.... j < n:
                 self.bits[i][j] += delta
                 j += (j & -j)
             i += (i & -i)
@@ -64,9 +64,9 @@ class NumMatrix:
         i = x
         j = y
 
-        while i > 0:
+        w.... i > 0:
             j = y
-            while j > 0:
+            w.... j > 0:
                 res += self.bits[i][j]
                 j -= (j & -j)
             i -= (i & -i)

@@ -13,10 +13,10 @@ class Solution(object):
         """
         res    # list
         deque    # list
-        ___ i, num __ enumerate(nums):
-            __ deque and deque[0] __ i-k:
+        ___ i, num __ e..(nums):
+            __ deque a.. deque[0] __ i-k:
                 deque.pop(0)
-            while deque and nums[deque[-1]] < num:
+            w.... deque a.. nums[deque[-1]] < num:
                 deque.pop()
             deque.a..(i)
             __ i+1>=k:

@@ -7,10 +7,10 @@ Created on Apr 10, 2017
 class Solution(object):
     ___ validWordAbbreviation(self, word, abbr):
         i, j = 0, 0
-        while i < l..(word) and j < l..(abbr):
+        w.... i < l..(word) a.. j < l..(abbr):
             __ abbr[j].isdigit():
                 prev = j
-                while j+1 < l..(abbr) and abbr[j+1].isdigit():
+                w.... j+1 < l..(abbr) a.. abbr[j+1].isdigit():
                     j+=1
                 __ abbr[prev:j+1].startswith('0'): r.. False
                 num = int(abbr[prev:j+1])

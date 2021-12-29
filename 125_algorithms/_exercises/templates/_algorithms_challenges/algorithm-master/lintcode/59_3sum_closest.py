@@ -10,15 +10,15 @@ class Solution:
 
         ans = INF = float('inf')
         n = l..(nums)
-        nums.sort()
+        nums.s..()
 
         ___ a __ r..(n - 2):
-            __ a > 0 and nums[a] __ nums[a - 1]:
+            __ a > 0 a.. nums[a] __ nums[a - 1]:
                 continue
 
             b, c = a + 1, n - 1
 
-            while b < c:
+            w.... b < c:
                 total = nums[a] + nums[b] + nums[c]
 
                 __ total __ target:

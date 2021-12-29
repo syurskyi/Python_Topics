@@ -18,7 +18,7 @@ class Solution:
             r.. ans
 
         queue = [root]
-        while queue:
+        w.... queue:
             _queue    # list
             ans.a..([])
 

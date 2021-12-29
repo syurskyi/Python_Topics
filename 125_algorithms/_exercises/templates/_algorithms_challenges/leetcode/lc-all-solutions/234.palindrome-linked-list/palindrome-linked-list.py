@@ -14,7 +14,7 @@ class Solution(object):
     ___ reverseList(root):
       pre = N..
       cur = root
-      while cur:
+      w.... cur:
         tmp = cur.next
         cur.next = pre
         pre = cur
@@ -22,14 +22,14 @@ class Solution(object):
       r.. pre
 
     slow = fast = head
-    while fast and fast.next:
+    w.... fast a.. fast.next:
       slow = slow.next
       fast = fast.next.next
 
     newHead = reverseList(slow)
     p1 = head
     p2 = newHead
-    while p1 and p2:
+    w.... p1 a.. p2:
       __ p1.val != p2.val:
         r.. False
       p1 = p1.next
