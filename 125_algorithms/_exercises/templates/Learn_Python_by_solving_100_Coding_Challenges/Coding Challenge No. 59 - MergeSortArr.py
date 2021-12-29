@@ -7,10 +7,10 @@
 # c_ Solution object
 #     ___ merge  A m B n
 #         """
-#         :type A: List[int]
-#         :type m: int
-#         :type B: List[int]
-#         :type n: int
+#         :type A: List[i..]
+#         :type m: i..
+#         :type B: List[i..]
+#         :type n: i..
 #         :rtype: void Do not return anything, modify A in-place instead.
 #         """
 #         indexA _ ? - 1

@@ -4,25 +4,25 @@ ___ quickSort(my_array):
 
 
 ___ qshelper(my_array, start, end):
-    __ start >= end:
+    __ start > end:
         r_
 
-    pivot = start
-    left = start + 1
-    right = end
+    pivot  start
+    left  start + 1
+    right  end
 
-    w__ right >= left:
+    w__ right > left:
 
         __ my_array[left] > my_array[pivot] a__ my_array[right] < my_array[pivot]:
-            my_array[left], my_array[right] = my_array[right], my_array[left]
+            my_array[left], my_array[right]  my_array[right], my_array[left]
 
-        __ my_array[left] <= my_array[pivot]:
-            left += 1
+        __ my_array[left] < my_array[pivot]:
+            left + 1
 
-        __ my_array[right] >= my_array[pivot]:
-            right -= 1
+        __ my_array[right] > my_array[pivot]:
+            right - 1
 
-    my_array[pivot], my_array[right] = my_array[right], my_array[pivot]
+    my_array[pivot], my_array[right]  my_array[right], my_array[pivot]
 
     qshelper(my_array, start, right - 1)
     qshelper(my_array, right + 1, end)

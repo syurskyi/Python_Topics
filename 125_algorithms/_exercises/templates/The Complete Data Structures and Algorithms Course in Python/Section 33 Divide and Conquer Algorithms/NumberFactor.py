@@ -9,9 +9,9 @@ ___ numberFactor(n
     ____ n __ 3:
         r_ 2
     ____
-        subP1 = numberFactor(n-1)
-        subP2 = numberFactor(n-3)
-        subP3 = numberFactor(n-4)
+        subP1  numberFactor(n-1)
+        subP2  numberFactor(n-3)
+        subP3  numberFactor(n-4)
         r_ subP1+subP2+subP3
 
 print(numberFactor(5))

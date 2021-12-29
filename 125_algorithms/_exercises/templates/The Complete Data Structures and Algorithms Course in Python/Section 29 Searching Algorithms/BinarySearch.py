@@ -4,15 +4,15 @@
 # Searching algorithms - Binary Search
 _____ math
 ___ binarySearch(array, value
-    start = 0
-    end = le_(array)-1
-    middle = math.floor((start+end)/2)
-    w__ no.(array[middle]__value) a__ start<=end:
+    start  0
+    end  le_(array)-1
+    middle  math.floor((start+end)/2)
+    w__ no.(array[middle]__value) a__ start<end:
         __ value < array[middle]:
-            end = middle - 1
+            end  middle - 1
         ____
-            start = middle + 1 
-        middle = math.floor((start+end)/2)
+            start  middle + 1
+        middle  math.floor((start+end)/2)
         # print(start, middle, end)
     __ array[middle] __ value:
         r_ middle
@@ -22,7 +22,7 @@ ___ binarySearch(array, value
 
 
 
-custArray = [8, 9, 12, 15, 17, 19, 20, 21, 28]
+custArray  [8, 9, 12, 15, 17, 19, 20, 21, 28]
 print(binarySearch(custArray, 15))
 # [8, 9, 12, 15, 17, 19, 20, 21, 28]
 #  S              M               E

@@ -1,2 +1,2 @@
 def foo(mydict):
-    return dict((key, value) for key, value in mydict.items() if value > 4)
+    return dict((key, value) for key, value in mydict.items() __ value > 4)

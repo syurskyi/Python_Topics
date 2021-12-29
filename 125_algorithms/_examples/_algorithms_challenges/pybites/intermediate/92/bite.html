@@ -1,0 +1,20 @@
+<p>In this Bite you will convert a timedelta object into something readable. We know: there are modules to do it, the goal though is to try to solve it yourself using Python.</p><p>Here are the requirements as layed out in the tests:<pre>
+  (NOW - timedelta(seconds=2), 'just now'),
+  (NOW - timedelta(seconds=9), 'just now'),
+  (NOW - timedelta(seconds=10), '10 seconds ago'),
+  (NOW - timedelta(seconds=59), '59 seconds ago'),
+  (NOW - timedelta(minutes=1), 'a minute ago'),
+  (NOW - timedelta(minutes=1, seconds=40), 'a minute ago'),
+  (NOW - timedelta(minutes=2), '2 minutes ago'),
+  (NOW - timedelta(minutes=59), '59 minutes ago'),
+  (NOW - timedelta(hours=1), 'an hour ago'),
+  (NOW - timedelta(hours=2), '2 hours ago'),
+  (NOW - timedelta(hours=23), '23 hours ago'),
+  (NOW - timedelta(hours=24), 'yesterday'),
+  (NOW - timedelta(hours=47), 'yesterday'),
+  (NOW - timedelta(days=1), 'yesterday'),
+  (NOW - timedelta(days=2), '05/19/18'),
+  (NOW - timedelta(days=7), '05/14/18'),
+  (NOW - timedelta(days=100), '02/10/18'),
+  (NOW - timedelta(days=365), '05/21/17')
+</pre></p><p>So basically print a readable format up until yesterday, then just print the date in US format (<code>%m/%d/%y</code>). If a non <code>datetime</code> object is given or it is in the future, raise a <code>ValueError</code>.</p><p>Good luck and keep calm and code in Python!</p>

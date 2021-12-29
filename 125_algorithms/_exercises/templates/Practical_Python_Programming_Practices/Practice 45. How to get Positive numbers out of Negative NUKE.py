@@ -1,15 +1,15 @@
 import random
 
-x = []
+x  []
 for i in range(20):
-    x.append(int(random.random()*20)-10)
+    x.append(i..(random.random()*20)-10)
 print(x)
 
-pos = []
-neg = []
+pos  []
+neg  []
 
 for i in x:
-    if i<0:
+    __ i<0:
         neg.append(i)
     elif i>0:
         pos.append(i)

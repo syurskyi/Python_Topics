@@ -5,9 +5,9 @@
 c_ Graph:
 
     ___  -   vertices
-        V = vertices
-        graph = []
-        nodes = []
+        V  vertices
+        graph  []
+        nodes  []
 
     ___ add_edge  s, d, w
         graph.ap..([s, d, w])
@@ -21,23 +21,23 @@ c_ Graph:
             print('  ' + key, ' :    ', value)
     
     ___ bellmanFord  src
-        dist = {i : fl__("Inf") ___ i __ nodes}
-        dist[src] = 0
+        dist  {i : fl__("Inf") ___ i __ nodes}
+        dist[src]  0
 
         ___ _ __ ra__(V-1
             ___ s, d, w __ graph:
-                __ dist[s] != fl__("Inf") a__ dist[s] + w < dist[d]:
-                    dist[d] = dist[s] + w
+                __ dist[s] ! fl__("Inf") a__ dist[s] + w < dist[d]:
+                    dist[d]  dist[s] + w
         
         ___ s, d, w __ graph:
-            __ dist[s] != fl__("Inf") a__ dist[s] + w < dist[d]:
+            __ dist[s] ! fl__("Inf") a__ dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
                 r_
         
 
         print_solution(dist)
 
-g = Graph(5)
+g  Graph(5)
 g.addNode("A")
 g.addNode("B")
 g.addNode("C")

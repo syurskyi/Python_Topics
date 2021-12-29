@@ -4,7 +4,7 @@
 #
 # ___ buy_sell prices
 #     buy _ 0
-#     previous_price _ 10000 #max int
+#     previous_price _ 10000 #max i..
 #     ___ index, price __ en.. ?
 #         __ ? < ?
 #             __ ?

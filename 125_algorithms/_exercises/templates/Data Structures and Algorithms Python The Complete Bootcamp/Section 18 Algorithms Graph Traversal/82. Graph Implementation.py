@@ -1,20 +1,20 @@
 c_ Node():
 
     ___  -   value):
-        value = value
-        adjacentlist = []
-        visited = False
+        value  value
+        adjacentlist  []
+        visited  F..
 
 c_ Graph():
     p..
 
-node1 = Node("A")
-node2 = Node("B")
-node3 = Node("C")
-node4 = Node("D")
-node5 = Node("E")
-node6 = Node("F")
-node7 = Node("G")
+node1  Node("A")
+node2  Node("B")
+node3  Node("C")
+node4  Node("D")
+node5  Node("E")
+node6  Node("F")
+node7  Node("G")
 
 node1.adjacentlist.append(node2)
 node1.adjacentlist.append(node3)

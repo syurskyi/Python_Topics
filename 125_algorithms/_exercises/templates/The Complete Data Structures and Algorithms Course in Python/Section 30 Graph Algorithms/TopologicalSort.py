@@ -5,8 +5,8 @@ ____ collections _____ defaultdict
 
 c_ Graph:
     ___  -   numberofVertices
-        graph = defaultdict(li__)
-        numberofVertices = numberofVertices
+        graph  defaultdict(li__)
+        numberofVertices  numberofVertices
     
     ___ addEdge  vertex, edge
         graph[vertex].ap..(edge)
@@ -22,8 +22,8 @@ c_ Graph:
     
     ___ topologicalSort(self
 
-        visited = []
-        stack = []
+        visited  []
+        stack  []
 
         ___ k __ li__(graph
             __ k no. __ visited:
@@ -33,7 +33,7 @@ c_ Graph:
     
     
 
-customGraph = Graph(8)
+customGraph  Graph(8)
 customGraph.addEdge("A", "C")
 customGraph.addEdge("C", "E")
 customGraph.addEdge("E", "H")

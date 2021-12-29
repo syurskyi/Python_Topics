@@ -5,44 +5,44 @@ ___ merge_sort(nums
         r_
 
     # DIVIDE PHASE
-    middle_index = le_(nums) // 2
-    left_half = nums[:middle_index]
-    right_half = nums[middle_index:]
+    middle_index  le_(nums) // 2
+    left_half  nums[:middle_index]
+    right_half  nums[middle_index:]
 
     merge_sort(left_half)
     merge_sort(right_half)
 
     # CONQUER PHASE
-    i = 0
-    j = 0
-    k = 0
+    i  0
+    j  0
+    k  0
 
     w__ i < le_(left_half) a__ j < le_(right_half
         # if we use < then the result is the ascending order
         # if we use > then the result is the descending order
         __ left_half[i] > right_half[j]:
-            nums[k] = left_half[i]
-            i = i + 1
+            nums[k]  left_half[i]
+            i  i + 1
         ____
-            nums[k] = right_half[j]
-            j = j + 1
+            nums[k]  right_half[j]
+            j  j + 1
 
-        k = k + 1
+        k  k + 1
 
     # after that there may be additional items in the left (right) sub-array
     w__ i < le_(left_half
-        nums[k] = left_half[i]
-        i = i + 1
-        k = k + 1
+        nums[k]  left_half[i]
+        i  i + 1
+        k  k + 1
 
     w__ j < le_(right_half
-        nums[k] = right_half[j]
-        j = j + 1
-        k = k + 1
+        nums[k]  right_half[j]
+        j  j + 1
+        k  k + 1
 
 
 __ ___ __ '__main__':
-    my_list = [1, 5, -2, 0, 10, 100, 55, 12, 10, 2, -10, -3]
+    my_list  [1, 5, -2, 0, 10, 100, 55, 12, 10, 2, -10, -3]
 
     merge_sort(my_list)
     print(my_list)

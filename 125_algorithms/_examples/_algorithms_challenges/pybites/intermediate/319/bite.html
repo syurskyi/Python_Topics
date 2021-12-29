@@ -1,0 +1,9 @@
+<p>Identity and equality are two important concepts in Python. Please correct the mistakes in the Car class (marked with <code># *</code>) and complete the functions below.</p>
+<p>Use the errors in the tests as guidance to what needs fixing. The <code>Car</code> class has two <code>static</code> functions that should behave in the following way:</p>
+<pre>&gt;&gt;&gt; Car.age(1)<br />'Neither a week, nor a year old'<br />&gt;&gt;&gt; Car.age(7)<br />'A week old'<br />&gt;&gt;&gt; Car.age(365)<br />'A year old'<br /><br />&gt;&gt;&gt; config1 = ["manual", "radio"]<br />&gt;&gt;&gt; config2 = ["manual", "radio"]<br />&gt;&gt;&gt; config3 = ["manual"]<br /><br />&gt;&gt;&gt; Car.has_same_configuration(config1, config2)<br />True<br />&gt;&gt;&gt; Car.has_same_configuration(config1, config3)<br />False</pre>
+<p>Please alo complete the two functions <code>is_same_car_color_and_model</code> and <code>is_same_instance_of_car</code> to behave like this:</p>
+<pre>&gt;&gt;&gt; car1 = Car("Pickup", "black")<br />&gt;&gt;&gt; car2 = Car("Pickup", "black")<br />&gt;&gt;&gt; car3 = car1<br />&gt;&gt;&gt; is_same_car_color_and_model(car1, car2)<br />True<br />&gt;&gt;&gt; is_same_car_color_and_model(car1, car3)<br />True<br />&gt;&gt;&gt; is_same_instance_of_car(car1, car2)<br />False<br />&gt;&gt;&gt; is_same_instance_of_car(car1, car3)<br />True</pre>
+<p>Check out the articles below for additional pointers to solve the bite:</p>
+<p>- <a href="https://realpython.com/python-is-identity-vs-equality/" target="_blank" rel="noopener">Python '!=' Is Not 'is not'</a></p>
+<p>- <a href="https://stackoverflow.com/questions/1549801/what-are-the-differences-between-type-and-isinstance" target="_blank" rel="noopener">What are the differences between type() and isinstance()?</a></p>
+<p>Good luck and keep calm and code in Python!</p>

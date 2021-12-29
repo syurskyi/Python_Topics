@@ -1,14 +1,14 @@
 c_ MinStack:
 
     ___  -
-        stack = []
-        min = []
+        stack  []
+        min  []
 
     ___ push  x):
         stack.append(x)
 
         __ min:
-            __ x <= min[-1]:
+            __ x < min[-1]:
                 min.append(x)
         ____
             min.append(x)
@@ -26,15 +26,15 @@ c_ MinStack:
 
 
 ## Example Execution ##
-obj = MinStack()
+obj  MinStack()
 obj.push(10)
 obj.push(5)
 obj.push(15)
 obj.pop()
 obj.push(20)
 
-result_top = obj.top()
+result_top  obj.top()
 print("Top Value:", result_top)
 
-result_min = obj.getMin()
+result_min  obj.getMin()
 print("Minimum Value in Stack:", result_min)

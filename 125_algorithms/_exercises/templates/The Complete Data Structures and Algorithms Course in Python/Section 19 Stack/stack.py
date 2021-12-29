@@ -4,25 +4,25 @@
 c_ MultiStack:
 
     ___  -   stacksize
-        numstacks = 3
-        array = [0] * (stacksize * numstacks)
-        sizes = [0] * numstacks
-        stacksize = stacksize
+        numstacks  3
+        array  [0] * (stacksize * numstacks)
+        sizes  [0] * numstacks
+        stacksize  stacksize
         # print(self.array)
         # print(self.sizes)
 
     ___ Push  item, stacknum
         __ IsFull(stacknum
             raise Exception('Stack is full')
-        sizes[stacknum] += 1
-        array[IndexOfTop(stacknum)] = item
+        sizes[stacknum] + 1
+        array[IndexOfTop(stacknum)]  item
 
     ___ Pop  stacknum
         __ IsEmpty(stacknum
             raise Exception('Stack is empty')
-        value = array[IndexOfTop(stacknum)]
-        array[IndexOfTop(stacknum)] = 0
-        sizes[stacknum] -= 1
+        value  array[IndexOfTop(stacknum)]
+        array[IndexOfTop(stacknum)]  0
+        sizes[stacknum] - 1
         r_ value
 
     ___ Peek  stacknum
@@ -37,8 +37,8 @@ c_ MultiStack:
         r_ sizes[stacknum] __ stacksize
 
     ___ IndexOfTop  stacknum
-        offset = stacknum * stacksize
+        offset  stacknum * stacksize
         r_ offset + sizes[stacknum] - 1
 
-stack = MultiStack(1)
+stack  MultiStack(1)
 

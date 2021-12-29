@@ -2,31 +2,31 @@ _____ justpy as jp
 
 c_ DefaultLayout(jp.QLayout):
 
-    ___  -    view="hHh lpR fFf", **kwargs):
-        super(). - (view=view, **kwargs)
+    ___  -    view"hHh lpR fFf", **kwargs):
+        super(). - (viewview, **kwargs)
 
-        header = jp.QHeader(a=self)
-        toolbar = jp.QToolbar(a=header)
+        header  jp.QHeader(aself)
+        toolbar  jp.QToolbar(aheader)
 
-        drawer = jp.QDrawer(a=self, show_if_above=True, v_mode="left",
-                            bordered=True)
-        scroller = jp.QScrollArea(a=drawer, classes="fit")
-        qlist = jp.QList(a=scroller)
-        a_classes = "p-2 m-2 text-lg text-blue-400 hover:text-blue-700"
-        jp.A(a=qlist, text="Home", href="/", classes=a_classes)
-        jp.Br(a=qlist)
-        jp.A(a=qlist, text="Dictionary", href="/dictionary", classes=a_classes)
-        jp.Br(a=qlist)
-        jp.A(a=qlist, text="About", href="/about", classes=a_classes)
-        jp.Br(a=qlist)
+        drawer  jp.QDrawer(aself, show_if_aboveTrue, v_mode"left",
+                            borderedTrue)
+        scroller  jp.QScrollArea(adrawer, classes"fit")
+        qlist  jp.QList(ascroller)
+        a_classes  "p-2 m-2 text-lg text-blue-400 hover:text-blue-700"
+        jp.A(aqlist, text"Home", href"/", classesa_classes)
+        jp.Br(aqlist)
+        jp.A(aqlist, text"Dictionary", href"/dictionary", classesa_classes)
+        jp.Br(aqlist)
+        jp.A(aqlist, text"About", href"/about", classesa_classes)
+        jp.Br(aqlist)
 
-        jp.QBtn(a=toolbar, dense=True, flat=True, r__=True, icon="menu",
-                click=move_drawer, drawer=drawer)
-        jp.QToolbarTitle(a=toolbar, text="Instant Dictionary")
+        jp.QBtn(atoolbar, denseTrue, flatTrue, r__True, icon"menu",
+                clickmove_drawer, drawerdrawer)
+        jp.QToolbarTitle(atoolbar, text"Instant Dictionary")
 
     @staticmethod
     ___ move_drawer(widget, msg):
-        if widget.drawer.value:
-            widget.drawer.value = False
+        __ widget.drawer.value:
+            widget.drawer.value  F..
         else:
-            widget.drawer.value = True
+            widget.drawer.value  T..

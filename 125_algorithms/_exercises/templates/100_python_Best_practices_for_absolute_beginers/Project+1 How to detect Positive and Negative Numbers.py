@@ -1,6 +1,6 @@
-x = float(input("Insert any number: "))
+x  float(input("Insert any number: "))
 
-if x>0:
+__ x>0:
     print("This is a POSITIVE number")
 elif x < 0:
     print("This is a NEGATIVE number")

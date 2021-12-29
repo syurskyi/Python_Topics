@@ -1,0 +1,10 @@
+<p>In this Bite you make an iterator called <code>EggCreator</code> by implementing the <code>__iter__</code> and <code>__next__</code> dunder methods (as dictated by the <a href="https://docs.python.org/3.6/library/stdtypes.html#iterator-types" target="_blank"><i>iterator protocol</i></a>).</p><p>Have it receive an <code>int</code> called <code>limit</code> which is the max number of eggs to create. It then generates eggs of randomly chosen colors from the <code>COLORS</code> constant.</p><p>Make sure you raise the right exception when you reach the passed in <code>limit</code>.</p><p>So this is how the iterator would work + its output: <pre>
+for egg in EggCreator(5):
+    print(egg)
+</pre><p>Would output (colors will vary due to randomness):<pre>
+green egg
+yellow egg
+yellow egg
+blue egg
+red egg
+</pre><p>Eggs theme? Yep, this Bite was produced the 31st of March 2018 - Happy Easter all! </p><p>Good luck and keep calm and code in Python!</p>

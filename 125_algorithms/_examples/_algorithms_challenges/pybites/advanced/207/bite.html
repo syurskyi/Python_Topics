@@ -1,0 +1,6 @@
+<p>Given the sample class <code>Planet</code>, computing the <code>mass</code> attribute of an instance is a computationally expensive and time consuming operation. Ideally you'd like this attribute to be a <code>cached_property</code> that only gets computed once and is then stored for future access, not having to be recalculated over (and over and over).</p>
+<hr />
+<h3>Tasks</h3>
+<p>Complete <code>cached_property(func)</code> as a decorator function, so that asking "What was the mass of <code>Planet('red')</code> again?" is consistent and quick.</p>
+<p>Note: Attempting to set <code>mass</code> should raise <code>AttributeError</code> as it is read-only.</p>
+<p>Hint: replace the <code>@property</code> decorator with your implementation of <code>@cached_property</code> and remove the mass setter entirely, attempting to set <code>mass</code> should raise <code>AttributeError</code> as it is read-only.</p>

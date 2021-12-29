@@ -6,7 +6,7 @@ c_ Temperature:
     """A scraper that uses an yml file to read the xpath of a value it needs to extract
     from the timeanddate.com/weather/ url"""
 
-    headers = {
+    headers  {
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -15,35 +15,35 @@ c_ Temperature:
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     }
-    base_url = 'https://www.timeanddate.com/weather/'
-    yml_path = 'temperature.yaml'
+    base_url  'https://www.timeanddate.com/weather/'
+    yml_path  'temperature.yaml'
 
     ___  -    country, city):
-        country = country.replace(" ", "-")
-        city = city.replace(" ", "-")
+        country  country.replace(" ", "-")
+        city  city.replace(" ", "-")
 
     ___ _build_url _
         """Builds the url string adding country and city"""
-        url = base_url + country + "/" + city
+        url  base_url + country + "/" + city
         r_ url
 
     ___ _scrape _
         """Extracts a value as instructed by the yml file and returns a dictionary"""
 
-        url = _build_url()
-        extractor = Extractor.from_yaml_file(yml_path)
-        r = requests.get(url, headers=headers)
-        full_content = r.text
-        raw_content = extractor.extract(full_content)
+        url  _build_url()
+        extractor  Extractor.from_yaml_file(yml_path)
+        r  requests.get(url, headersheaders)
+        full_content  r.text
+        raw_content  extractor.extract(full_content)
         r_ raw_content
 
     ___ get _
         """Cleans the output of _scrape"""
 
-        scraped_content = _scrape()
+        scraped_content  _scrape()
         r_ f__(scraped_content['temp'].replace("°C", "").strip())
 
-if __name__ == "__main__":
-    temperature = Temperature(country="usa", city="san francisco")
+__ __name__ __ "__main__":
+    temperature  Temperature(country"usa", city"san francisco")
     print(temperature.get())
 

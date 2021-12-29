@@ -1,32 +1,32 @@
 c_ Node():
 
     ___  -   value):
-        value = value
-        adjacentlist = []
-        visited = False
+        value  value
+        adjacentlist  []
+        visited  F..
 
 
 c_ Graph():
 
     ___ DFS  node, traversal):
-        node.visited = True
+        node.visited  T..
         traversal.append(node.value)
 
         ___ element __ node.adjacentlist:
-            __ element.visited __ False:
+            __ element.visited __ F..:
                 DFS(element, traversal)
 
         r_ traversal
 
 
-node1 = Node("A")
-node2 = Node("B")
-node3 = Node("C")
-node4 = Node("D")
-node5 = Node("E")
-node6 = Node("F")
-node7 = Node("G")
-node8 = Node("H")
+node1  Node("A")
+node2  Node("B")
+node3  Node("C")
+node4  Node("D")
+node5  Node("E")
+node6  Node("F")
+node7  Node("G")
+node8  Node("H")
 
 node1.adjacentlist.append(node2)
 node1.adjacentlist.append(node3)
@@ -36,5 +36,5 @@ node2.adjacentlist.append(node6)
 node4.adjacentlist.append(node7)
 node6.adjacentlist.append(node8)
 
-graph = Graph()
+graph  Graph()
 print(graph.DFS(node1, []))

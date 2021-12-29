@@ -5,8 +5,8 @@
 
 c_ AnimalShelter(
   ___  - (self
-    cats = []
-    dogs = []
+    cats  []
+    dogs  []
   
   ___ enqueue  animal, ty..
     __ ty.. __ 'Cat':
@@ -18,24 +18,24 @@ c_ AnimalShelter(
     __ le_(cats) __ 0:
       r_ N..
     ____
-      cat = cats.pop(0)
+      cat  cats.pop(0)
       r_ cat
   
   ___ dequeueDog(self
     __ le_(dogs) __ 0:
       r_ N..
     ____
-      dog = dogs.pop(0)
+      dog  dogs.pop(0)
       r_ dog
   
   ___ dequeueAny(self
     __ le_(cats) __ 0:
-      result = dogs.pop(0)
+      result  dogs.pop(0)
     ____
-      result = cats.pop(0)
+      result  cats.pop(0)
     r_ result
 
-customQueue = AnimalShelter()
+customQueue  AnimalShelter()
 customQueue.enqueue('Cat1', 'Cat')
 customQueue.enqueue('Cat2', 'Cat')
 customQueue.enqueue('Dog1', 'Dog')

@@ -1,0 +1,18 @@
+<p><img style="width: 100px; float: right; margin-left: 20px;" alt="marvel spiderman coffee mug" src="https://pybit.es/images/pcc44-coffee-mug.jpg">This is a simplified version of <a href="https://pybit.es/codechallenge44.html" target="_blank">our Marvel Data Analysis</a> we held at the <a href="https://pybit.es/alicante-pychallengeday.html" target="_blank">Alicante PyChallengeDay</a>.</p><p>Complete <code>most_popular_characters</code>, <code>max_and_min_years_new_characters</code> and <code>percentage_female</code> functions below, following the instructions in the <i>docstrings</i>.</p><p>We already loaded the Marvel <code>csv</code> data into a <code>list</code> of Character <code>namedtuple</code>s:<br><pre>
+[Character(pid='1678', name='Spider-Man', 
+           sid='Secret Identity', align='Good Characters', 
+           sex='Male Characters', appearances='4043', year='1962'),
+ Character(pid='7139', name='Captain America', 
+           sid='Public Identity', align='Good Characters', 
+           sex='Male Characters', appearances='3360', year='1941'),
+ Character(pid='64786', name='Wolverine', 
+           sid='Public Identity', align='Neutral Characters', 
+           sex='Male Characters', appearances='3061', year='1974'),
+  ...
+]
+</pre></p><p>Note that if a character appears in multiple eras / universes they should be treated as separate unique characters. For example: <pre>
+Susan Storm (Earth-616)
+Susan Storm (Heroes Reborn) (Earth-616)
+Susan Storm (Onslaught Reborn) (Earth-616)
+Susan Storm (Retro, Skrull) (Earth-616)
+</pre> are 4 characters, not 1!</p><p>Ready to get some interesting facts from this Marvel data set? Enjoy and learn more Python!</p>

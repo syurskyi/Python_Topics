@@ -1,0 +1,18 @@
+<p>In this Bite we are going to convert some <a href="https://gist.github.com/pybites/88e3a5ccb88bbd64337093b406195b60">Warcraft Mount JSON data</a> to <code>csv</code>.</p>
+<p>Here are the steps to take:</p>
+<ul>
+<li>
+<p>Complete <code>convert_to_csv</code> that receives a <code>json_file</code>, the files used for this Bite are hosted <a href="https://bites-data.s3.us-east-2.amazonaws.com/mount-data1.json">here</a>, <a href="https://bites-data.s3.us-east-2.amazonaws.com/mount-data2.json">here</a> and <a href="https://bites-data.s3.us-east-2.amazonaws.com/mount-data3.json">here</a> - basically small subsets of the linked gist above.</p>
+<p>Load the JSON into a <code>dict</code>, look for <em>mounts</em> &gt; <em>collected</em>.</p>
+<p>If invalid JSON (yes, real developer life!), <strong>print</strong> "exception caught" (defined in the <code>EXCEPTION</code> constant) and reraise the exception.</p>
+<p>If good data write it to a csv file in <code>/tmp</code>, for example:</p>
+<pre>$ cat /tmp/mount1.csv
+creatureId,icon,isAquatic,isFlying,isGround,isJumping,itemId,name,qualityId,spellId
+32158,ability_mount_drake_blue,False,True,True,False,44178,Albino Drake,4,60025
+63502,ability_mount_hordescorpionamber,True,False,True,True,85262,Amber Scorpion,4,123886
+24487,ability_mount_warhippogryph,False,True,True,False,45725,Argent Hippogryph,4,232412
+</pre>
+</li>
+</ul>
+<p>By the way, yes, you can do this with <code>pandas</code> but for this Bite we are assuming you don't have access to this library. It's good to learn the standard library!</p>
+<p>Have fun and code more Python! For more JSON and CSV, check out our <a href="../../../../../bites/paths/data-formats">data formats learning path</a>.</p>

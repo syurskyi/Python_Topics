@@ -10,34 +10,34 @@ ___ removeDups(ll
     __ ll.head __ N..:
         r_
     ____
-        currentNode = ll.head
-        visited = set([currentNode.value])
+        currentNode  ll.head
+        visited  set([currentNode.value])
         w__ currentNode.next:
             __ currentNode.next.value __ visited:
-                currentNode.next = currentNode.next.next
+                currentNode.next  currentNode.next.next
             ____
                 visited.add(currentNode.next.value)
-                currentNode = currentNode.next
+                currentNode  currentNode.next
         r_ ll
 
 ___ removeDups1(ll
     __ ll.head __ N..:
         r_
     
-    currentNode = ll.head
+    currentNode  ll.head
     w__ currentNode:
-        runner = currentNode
+        runner  currentNode
         w__ runner.next:
             __ runner.next.value __ currentNode.value:
-                runner.next = runner.next.next
+                runner.next  runner.next.next
             ____
-                runner = runner.next
-        currentNode = currentNode.next
+                runner  runner.next
+        currentNode  currentNode.next
     r_ ll.head
 
 
 
-customLL = LinkedList()
+customLL  LinkedList()
 customLL.generate(10, 0, 99)
 print(customLL)
 removeDups1(customLL)

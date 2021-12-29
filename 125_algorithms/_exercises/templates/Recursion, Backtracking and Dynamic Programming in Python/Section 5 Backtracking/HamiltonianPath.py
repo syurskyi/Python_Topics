@@ -2,9 +2,9 @@
 c_ HamiltonianPath:
 
     ___  -   adjacency_matrix
-        n = le_(adjacency_matrix)
-        adjacency_matrix = adjacency_matrix
-        path = [0]
+        n  le_(adjacency_matrix)
+        adjacency_matrix  adjacency_matrix
+        path  [0]
 
     ___ hamiltonian_path(self
 
@@ -54,12 +54,12 @@ c_ HamiltonianPath:
 
 __ ___ __ '__main__':
 
-    m = [[0, 1, 0, 0, 0, 1],
+    m  [[0, 1, 0, 0, 0, 1],
          [1, 0, 1, 0, 0, 0],
          [0, 1, 0, 0, 1, 0],
          [0, 0, 0, 0, 1, 1],
          [0, 0, 1, 1, 0, 1],
          [1, 0, 0, 1, 1, 0]]
 
-    hamiltonian_path = HamiltonianPath(m)
+    hamiltonian_path  HamiltonianPath(m)
     hamiltonian_path.hamiltonian_path()

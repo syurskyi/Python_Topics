@@ -4,15 +4,15 @@
 # )( => False
 
 def check(s):
-    left = 0
+    left  0
     for c in s:
-        if c == '(':
-            left += 1
+        __ c __ '(':
+            left + 1
         else:
-            if left == 0:
-                return False
-            left -= 1
-    return left == 0
+            __ left __ 0:
+                return F..
+            left - 1
+    return left __ 0
 
 print(check("((()())())"))
 print(check("(()()))"))

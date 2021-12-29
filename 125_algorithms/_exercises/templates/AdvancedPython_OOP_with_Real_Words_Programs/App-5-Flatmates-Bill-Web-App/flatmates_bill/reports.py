@@ -1,4 +1,4 @@
-_____ webbrowser
+_____ w___
 _____ os
 
 ____ filestack _____ Client
@@ -13,50 +13,50 @@ c_ PdfReport:
     """
 
     ___  -    filename):
-        filename = filename
+        filename  filename
 
     ___ generate   flatmate1, flatmate2, bill):
 
-        flatmate1_pay = st_(r__(flatmate1.pays(bill, flatmate2), 2))
-        flatmate2_pay = st_(r__(flatmate2.pays(bill, flatmate1), 2))
+        flatmate1_pay  st_(r__(flatmate1.pays(bill, flatmate2), 2))
+        flatmate2_pay  st_(r__(flatmate2.pays(bill, flatmate1), 2))
 
-        pdf = FPDF(orientation='P', unit='pt', format='A4')
+        pdf  FPDF(orientation'P', unit'pt', format'A4')
         pdf.add_page()
 
         # Add icon
-        pdf.image("for_python_topic/house.png", w=30, h=30)
+        pdf.image("for_python_topic/house.png", w30, h30)
 
         # Insert title
-        pdf.set_font(family='Times', size=24, style='B')
-        pdf.cell(w=0, h=80, txt="Flatmates Bill", border=0, align="C", ln=1)
+        pdf.set_font(family'Times', size24, style'B')
+        pdf.cell(w0, h80, txt"Flatmates Bill", border0, align"C", ln1)
 
         # Insert Period label and value
-        pdf.set_font(family="Times", size=14, style='B')
-        pdf.cell(w=100, h=40, txt="Period:", border=0)
-        pdf.cell(w=150, h=40, txt=bill.period, border=0, ln=1)
+        pdf.set_font(family"Times", size14, style'B')
+        pdf.cell(w100, h40, txt"Period:", border0)
+        pdf.cell(w150, h40, txtbill.period, border0, ln1)
 
         # Insert name and due amount of the first flatmate
-        pdf.set_font(family="Times", size=12)
-        pdf.cell(w=100, h=25, txt=flatmate1.name, border=0)
-        pdf.cell(w=150, h=25, txt=flatmate1_pay, border=0, ln=1)
+        pdf.set_font(family"Times", size12)
+        pdf.cell(w100, h25, txtflatmate1.name, border0)
+        pdf.cell(w150, h25, txtflatmate1_pay, border0, ln1)
 
         # Insert name and due amount of the first flatmate
-        pdf.cell(w=100, h=25, txt=flatmate2.name, border=0)
-        pdf.cell(w=150, h=25, txt=flatmate2_pay, border=0, ln=1)
+        pdf.cell(w100, h25, txtflatmate2.name, border0)
+        pdf.cell(w150, h25, txtflatmate2_pay, border0, ln1)
 
         # Change directory to for_python_topic, generate and open the PDF
         os.chdir("files")
         pdf.output(filename)
-        webbrowser.open(filename)
+        w___.open(filename)
 
 
 c_ FileSharer:
 
-    ___  -    filepath, api_key="AViVqp7suSQWWEdrl6hf9z"):
-        filepath = filepath
-        api_key = api_key
+    ___  -    filepath, api_key"AViVqp7suSQWWEdrl6hf9z"):
+        filepath  filepath
+        api_key  api_key
 
     ___ share _
-        client = Client(api_key)
-        new_filelink = client.upload(filepath=filepath)
+        client  Client(api_key)
+        new_filelink  client.upload(filepathfilepath)
         r_ new_filelink.url

@@ -1,0 +1,11 @@
+<p>In this Bite you will generate a Gravatar URL, e.g. <a href="https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=200&r=g&d=robohash">https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=200&r=g&d=robohash</a>.</p><p>In this URL <code>5b13356d467af88631503c27a3d0e0cf</code> is a hash of a lowercase and stripped email address.</p> <p>Code <code>create_gravatar_url</code> hashing the passed in email arg. You can see a <a href="https://en.gravatar.com/site/implement/hash/">PHP example</a> and you want to use <a href="https://docs.python.org/3/library/hashlib.html#hashlib.hash.hexdigest"><code>hashlib</code> + its <code>md5 / hexdigest</code> methods</a> ...</p><p>Here is how the function works in the REPL. Note that spaces and case sensitivity won't matter: they produce the same hash and thus gravatar:<pre>
+>>> from gravatar import create_gravatar_url
+>>> create_gravatar_url("bob@pybit.es")
+'https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=200&r=g&d=robohash'
+>>> create_gravatar_url("bob@pybit.es", 300)
+'https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=300&r=g&d=robohash'
+>>> create_gravatar_url("bob@pybit.es ", 300)
+'https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=300&r=g&d=robohash'
+>>> create_gravatar_url("bob@pybit.ES ", 300)
+'https://www.gravatar.com/avatar/5b13356d467af88631503c27a3d0e0cf?s=300&r=g&d=robohash'
+</pre></p><p>(More information about the other parameters <a href="https://en.gravatar.com/site/implement/images/" target="_blank">here</a>)</p><p>Have fun and keep calm and code in Python!</p>

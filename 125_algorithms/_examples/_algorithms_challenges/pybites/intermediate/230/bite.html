@@ -1,0 +1,70 @@
+<p>In this Bite we learn a bit of operator overloading. Finish the <code>Thumbs</code> class that returns an amount of thumbs up (👍) or thumbs down (👎) emojis based on the <code>int</code> it is multiplied with.</p>
+
+<p>Override the corresponding dunder methods to make this work. No constructor method should be needed, the thumbs emojis to be used are defined in constants.</p>
+
+<p>Best to see it in action using the REPL:<pre>
+&gt;&gt;&gt; from thumbs import Thumbs
+&gt;&gt;&gt; th = Thumbs()
+&gt;&gt;&gt; th * 1
+'👍'
+&gt;&gt;&gt; th * 2
+'👍👍'
+&gt;&gt;&gt; th * 3
+'👍👍👍'
+</pre></p>
+
+<p>Starting 4 it shortens by returns the emoji once, followed by the amount in parentheses: <pre>
+&gt;&gt;&gt; th * 4
+'👍 (4x)'
+&gt;&gt;&gt; th * 5
+'👍 (5x)'
+&gt;&gt;&gt; th * 6
+'👍 (6x)'
+...
+</pre></p>
+
+<p>For negative numbers the emoji changes from thumbs up to thumbs down:<pre>
+&gt;&gt;&gt; th * -1
+'👎'
+&gt;&gt;&gt; th * -2
+'👎👎'
+&gt;&gt;&gt; th * -3
+'👎👎👎'
+</pre></p>
+
+<p>Again starting 4 it shows the number in parentheses (this was a real world use case actually):<pre>
+&gt;&gt;&gt; th * -4
+'👎 (4x)'
+&gt;&gt;&gt; th * -5
+'👎 (5x)'
+&gt;&gt;&gt; th * -6
+'👎 (6x)'
+...
+</pre></p>
+
+<p>It should raise an exception if the number is 0:<pre>
+&gt;&gt;&gt; th * 0
+Traceback (most recent call last):
+...
+ValueError: Specify a number
+</pre></p>
+
+<p>And lastly it should work both ways:<pre>
+&gt;&gt;&gt; th * 1
+'👍'
+&gt;&gt;&gt; 1 * th
+'👍'
+&gt;&gt;&gt; -3 * th
+'👎👎👎'
+&gt;&gt;&gt; 7 * th
+'👍 (7x)'
+&gt;&gt;&gt; -6 * th
+'👎 (6x)'
+&gt;&gt;&gt; 0 * th
+...
+ValueError: Specify a number
+</pre></p>
+
+<p>We hope this shows you a bit of the power of operator overloading. If you want to learn more about Python's data model and <i>dunder methods</i>, check out Bob's guest post: <a href="https://dbader.org/blog/python-dunder-methods" target="_blank">Enriching Your Python Classes With Dunder (Magic, Special) Methods</a>.</p>
+
+<p>Have fun and keep calm and code in Python!</p>

@@ -25,5 +25,5 @@ ___ binary_search container, item, left, right
         r_ binary_search(container, item, middle_index+1, right)
 
 
-nums = [-5, -4, 0, 2, 4, 6, 8, 100, 500]
+nums  [-5, -4, 0, 2, 4, 6, 8, 100, 500]
 print(binary_search(nums, 2, 0, le_(nums)-1))

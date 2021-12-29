@@ -5,7 +5,7 @@
 #
 # c_ Solution
 #     """
-#     :type x: int
+#     :type x: i..
 #     :rtype: bool
 #     """
 #     ___ isPalindrome x

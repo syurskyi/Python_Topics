@@ -1,40 +1,40 @@
 c_ Node():
 
     ___  -   value):
-        value = value
-        adjacentlist = []
-        visited = False
+        value  value
+        adjacentlist  []
+        visited  F..
 
 
 c_ Graph():
 
     ___ BFS  node):
 
-        queue = []
+        queue  []
         queue.append(node)
-        node.visited = True
+        node.visited  T..
 
-        traversal = []
+        traversal  []
 
         w__ queue:
-            actualNode = queue.pop(0)
+            actualNode  queue.pop(0)
             traversal.append(actualNode.value)
 
             ___ element __ actualNode.adjacentlist:
-                __ element.visited __ False:
+                __ element.visited __ F..:
                     queue.append(element)
-                    element.visited = True
+                    element.visited  T..
 
         r_ traversal
 
 
-node1 = Node("A")
-node2 = Node("B")
-node3 = Node("C")
-node4 = Node("D")
-node5 = Node("E")
-node6 = Node("F")
-node7 = Node("G")
+node1  Node("A")
+node2  Node("B")
+node3  Node("C")
+node4  Node("D")
+node5  Node("E")
+node6  Node("F")
+node7  Node("G")
 
 node1.adjacentlist.append(node2)
 node1.adjacentlist.append(node3)
@@ -43,5 +43,5 @@ node2.adjacentlist.append(node5)
 node2.adjacentlist.append(node6)
 node4.adjacentlist.append(node7)
 
-graph = Graph()
+graph  Graph()
 print(graph.BFS(node1))

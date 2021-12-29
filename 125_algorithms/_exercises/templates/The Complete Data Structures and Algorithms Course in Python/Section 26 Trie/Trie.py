@@ -3,32 +3,32 @@
 
 c_ TrieNode:
     ___  - (self
-        children = {}
-        endOfString = F..
+        children  {}
+        endOfString  F..
 
 c_ Trie:
     ___  - (self
-        root = TrieNode()
+        root  TrieNode()
     
     ___ insertString  word
-        current = root
+        current  root
         ___ i __ word:
-            ch = i
-            node = current.children.get(ch)
+            ch  i
+            node  current.children.get(ch)
             __ node __ N..:
-                node = TrieNode()
+                node  TrieNode()
                 current.children.update({ch:node})
-            current = node
-        current.endOfString = T..
+            current  node
+        current.endOfString  T..
         print("Successfully inserted")
     
     ___ searchString  word
-        currentNode = root
+        currentNode  root
         ___ i __ word:
-            node = currentNode.children.get(i)
+            node  currentNode.children.get(i)
             __ node __ N..:
                 r_ F..
-            currentNode = node
+            currentNode  node
 
         __ currentNode.endOfString __ T..:
             r_ T..
@@ -37,17 +37,17 @@ c_ Trie:
         
 
 ___ deleteString(root, word, index
-    ch = word[index]
-    currentNode = root.children.get(ch)
-    canThisNodeBeDeleted = F..
+    ch  word[index]
+    currentNode  root.children.get(ch)
+    canThisNodeBeDeleted  F..
 
     __ le_(currentNode.children) > 1:
         deleteString(currentNode, word, index+1)
         r_ F..
     
     __ index __ le_(word) - 1:
-        __ le_(currentNode.children) >= 1:
-            currentNode.endOfString = F..
+        __ le_(currentNode.children) > 1:
+            currentNode.endOfString  F..
             r_ F..
         ____
             root.children.pop(ch)
@@ -57,7 +57,7 @@ ___ deleteString(root, word, index
         deleteString(currentNode, word, index+1)
         r_ F..
 
-    canThisNodeBeDeleted = deleteString(currentNode, word, index+1)
+    canThisNodeBeDeleted  deleteString(currentNode, word, index+1)
     __ canThisNodeBeDeleted __ T..:
         root.children.pop(ch)
         r_ T..
@@ -67,7 +67,7 @@ ___ deleteString(root, word, index
 
 
     
-newTrie = Trie()
+newTrie  Trie()
 newTrie.insertString("App")
 newTrie.insertString("Appl")
 deleteString(newTrie.root, "App", 0)

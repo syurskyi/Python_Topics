@@ -2,62 +2,62 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 c_ Node:
-    ___  -   value=N..
-        value = value
-        next = N..
+    ___  -   valueN..
+        value  value
+        next  N..
 
 c_ SLinkedList:
     ___  - (self
-        head = N..
-        tail = N..
+        head  N..
+        tail  N..
     ___ __iter__(self
-        node = head
+        node  head
         w__ node:
             yield node
-            node = node.next
+            node  node.next
     # insert in Linked List
     ___ insertSLL  value, location
-        newNode = Node(value)
+        newNode  Node(value)
         __ head __ N..:
-            head = newNode
-            tail = newNode
+            head  newNode
+            tail  newNode
         ____
             __ location __ 0:
-                newNode.next = head
-                head = newNode
+                newNode.next  head
+                head  newNode
             ____ location __ 1:
-                newNode.next = N..
-                tail.next = newNode
-                tail = newNode
+                newNode.next  N..
+                tail.next  newNode
+                tail  newNode
             ____
-                tempNode = head
-                index = 0
+                tempNode  head
+                index  0
                 w__ index < location - 1:
-                    tempNode = tempNode.next
-                    index += 1
-                nextNode = tempNode.next
-                tempNode.next = newNode
-                newNode.next = nextNode
+                    tempNode  tempNode.next
+                    index + 1
+                nextNode  tempNode.next
+                tempNode.next  newNode
+                newNode.next  nextNode
 
     # Traverse Singly Linked List
     ___ traverseSLL(self
         __ head __ N..:
             print("The Singly Linked List does not exist")
         ____
-            node = head
+            node  head
             w__ node __ no. N..:
                 print(node.value)
-                node = node.next
+                node  node.next
     # Search for a node in Singly Linked List
     ___ searchSLL  nodeValue
         __ head __ N..:
            r_ "The list does not exist"
         ____
-            node = head
+            node  head
             w__ node __ no. N..:
                 __ node.value __ nodeValue:
                     r_ node.value
-                node = node.next
+                node  node.next
             r_ "The value does not exist in this list"
 
     #  Delete a node from Singly Linked List
@@ -67,40 +67,40 @@ c_ SLinkedList:
         ____
             __ location __ 0:
                 __ head __ tail:
-                    head = N..
-                    tail = N..
+                    head  N..
+                    tail  N..
                 ____
-                    head = head.next
+                    head  head.next
             ____ location __ 1:
                 __ head __ tail:
-                    head = N..
-                    tail = N..
+                    head  N..
+                    tail  N..
                 ____
-                    node = head
+                    node  head
                     w__ node __ no. N..:
                         __ node.next __ tail:
                             b__
-                        node = node.next
-                    node.next = N..
-                    tail = node
+                        node  node.next
+                    node.next  N..
+                    tail  node
             ____
-                tempNode = head
-                index = 0
+                tempNode  head
+                index  0
                 w__ index < location - 1:
-                    tempNode = tempNode.next
-                    index += 1
-                nextNode = tempNode.next
-                tempNode.next = nextNode.next
+                    tempNode  tempNode.next
+                    index + 1
+                nextNode  tempNode.next
+                tempNode.next  nextNode.next
     # Delete entire SLL
     ___ deleteEntireSLL(self
         __ head __ N..:
             print("The SLL does not exist")
         ____
-            head = N..
-            tail = N..
+            head  N..
+            tail  N..
 
 
-singlyLinkedList = SLinkedList()
+singlyLinkedList  SLinkedList()
 singlyLinkedList.insertSLL(1, 1)
 singlyLinkedList.insertSLL(2, 1)
 singlyLinkedList.insertSLL(3, 1)

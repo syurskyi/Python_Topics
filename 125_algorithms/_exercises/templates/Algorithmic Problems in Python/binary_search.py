@@ -4,15 +4,15 @@ def binary_search(array,item,left,right):
 
 	#base case for recursive function calls
 	#this is the search miss (array does not contain the item)
-	if right < left:
+	__ right < left:
 		return -1
 
 	#let's generate the middle item's index	
-	middle = left + (right-left)//2
+	middle  left + (right-left)//2
 	print("Middle index: ",middle)
 	
 	#the middle item is the item we are looking for
-	if array[middle] == item:
+	__ array[middle] __ item:
 		return middle
 
 	#the item we are looking for is smaller than the middle item
@@ -27,8 +27,8 @@ def binary_search(array,item,left,right):
 		print("Checking items on the right...")
 		return binary_search(array,item,middle+1,right)
         
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
-	array = [1,4,7,8,9,10,11,20,22,25]
+	array  [1,4,7,8,9,10,11,20,22,25]
 	
 	print(binary_search(array,111,0,len(array)-1))

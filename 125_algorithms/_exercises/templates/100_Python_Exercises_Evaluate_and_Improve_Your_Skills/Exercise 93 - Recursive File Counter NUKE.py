@@ -2,5 +2,5 @@
 #This solution works for the previous exercise as well with one file in a directory
 import glob
 
-file_list = glob.glob("subdirs/**/*.py", recursive=True)
+file_list  glob.glob("subdirs/**/*.py", recursiveTrue)
 print(len(file_list))

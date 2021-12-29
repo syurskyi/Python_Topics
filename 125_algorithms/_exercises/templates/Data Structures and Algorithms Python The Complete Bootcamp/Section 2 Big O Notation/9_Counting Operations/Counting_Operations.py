@@ -1,13 +1,13 @@
-students = ['andrew', 'akshat', 'chris', 'harshit', 'lary', 'tim', 'drake', 'ashish', 'shubham']
+students  ['andrew', 'akshat', 'chris', 'harshit', 'lary', 'tim', 'drake', 'ashish', 'shubham']
 
 
 ___ rondomFunction(students):
-    first = students[0]  # O(1)
-    total = 0  # O(1)
-    new_list = []  # O(1)
+    first  students[0]  # O(1)
+    total  0  # O(1)
+    new_list  []  # O(1)
 
     ___ student __ students:
-        total += 1  # O(n)
+        total + 1  # O(n)
         new_list.append(student)  # O(n)
 
     print(new_list)  # O(1)

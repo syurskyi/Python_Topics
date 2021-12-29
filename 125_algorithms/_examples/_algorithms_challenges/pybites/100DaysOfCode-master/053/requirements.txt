@@ -1,3 +1,0 @@
-click==6.7
-facebook-sdk==2.0.0
-requests==2.14.2

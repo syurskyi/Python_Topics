@@ -2,18 +2,18 @@
 
 ___ save_queens(board, col, size
 
-    __ col >= size:
+    __ col > size:
         r_ T..
 
     ___ i __ ra__(size
         __ is_safe(board, i, col, size
-            board[i][col] = 1
+            board[i][col]  1
 
             __ save_queens(board, col+1,size
                 r_ T..
 
             #backtrack
-            board[i][col] = 0
+            board[i][col]  0
 
     r_ F..
 
@@ -39,7 +39,7 @@ ___ is_safe(board, row, col, size
 
 
 
-board = [[0, 0, 0, 0, 0],
+board  [[0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0],

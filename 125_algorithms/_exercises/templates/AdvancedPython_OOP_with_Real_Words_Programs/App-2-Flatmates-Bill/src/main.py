@@ -5,10 +5,10 @@
 # period = i__ "What is the bill period? E.g. December 2020: ")
 #
 # name1 = i__ "What is your name? "
-# days_in_house1 = int(i__ _"How many days did |?| stay in the house during the bill period? "
+# days_in_house1 = i..(i__ _"How many days did |?| stay in the house during the bill period? "
 #
 # name2 = i__("What is the name of the other flatmate? ")
-# days_in_house2 = int(i__ _"How many days did |?| stay in the house during the bill period? "))
+# days_in_house2 = i..(i__ _"How many days did |?| stay in the house during the bill period? "))
 #
 #
 # the_bill = B.. a.. p..

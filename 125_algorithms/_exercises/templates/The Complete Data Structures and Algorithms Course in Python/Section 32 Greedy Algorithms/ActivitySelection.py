@@ -3,7 +3,7 @@
 
 # Activity Selection Problem  in Python
 
-activities = [["A1", 0, 6],
+activities  [["A1", 0, 6],
               ["A2", 3, 4],
               ["A3", 1, 2],
               ["A4", 5, 8],
@@ -13,14 +13,14 @@ activities = [["A1", 0, 6],
 
 
 ___ printMaxActivities(activities
-    activities.sort(key=lambda x: x[2])
-    i = 0
-    firstA = activities[i][0]
+    activities.sort(keylambda x: x[2])
+    i  0
+    firstA  activities[i][0]
     print(firstA)
     ___ j __ ra__(le_(activities)):
         __ activities[j][1] > activities[i][2]:
             print(activities[j][0])
-            i = j
+            i  j
 
 printMaxActivities(activities)
 

@@ -3,28 +3,28 @@
 
 # Floyd Warshall Algorithm in python
 
-INF = 9999
+INF  9999
 # Printing the solution
 ___ printSolution(nV, distance
     ___ i __ ra__(nV
         ___ j __ ra__(nV
             __(distance[i][j] __ INF
-                print("INF", end=" ")
+                print("INF", end" ")
             ____
-                print(distance[i][j], end="  ")
+                print(distance[i][j], end"  ")
         print(" ")
 
 
 ___ floydWarshall(nV, G
-    distance = G
+    distance  G
     ___ k __ ra__(nV
         ___ i __ ra__(nV
             ___ j __ ra__(nV
-                distance[i][j] = min(distance[i][j], distance[i][k]+distance[k][j])
+                distance[i][j]  min(distance[i][j], distance[i][k]+distance[k][j])
     
     printSolution(nV, distance)
 
-G = [[0, 8, INF,1],
+G  [[0, 8, INF,1],
     [INF, 0, 1,INF],
     [4, INF, 0,INF],
     [INF, 2, 9,1]

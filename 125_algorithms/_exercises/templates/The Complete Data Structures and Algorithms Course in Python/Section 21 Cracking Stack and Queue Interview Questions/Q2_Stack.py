@@ -4,20 +4,20 @@
 #   Create Stack with min method
 
 c_ Node(
-    ___  -   value=N.., next = N..
-        value = value
-        next = next
+    ___  -   valueN.., next  N..
+        value  value
+        next  next
     
     ___ __str__(self
-        string = st.(value)
+        string  st.(value)
         __ next:
-            string += ',' + st.(next)
+            string + ',' + st.(next)
         r_ string
 
 c_ Stack(
     ___  - (self
-        top = N..
-        minNode = N..
+        top  N..
+        minNode  N..
     
     ___ min(self
         __ no. minNode:
@@ -26,20 +26,20 @@ c_ Stack(
     
     ___ push  item
         __ minNode a__ (minNode.value < item
-            minNode = Node(value = minNode.value, next=minNode)
+            minNode  Node(value  minNode.value, nextminNode)
         ____
-            minNode = Node(value = item, next=minNode)
-        top = Node(value=item, next=top)
+            minNode  Node(value  item, nextminNode)
+        top  Node(valueitem, nexttop)
     
     ___ pop(self
         __ no. top:
             r_ N..
-        minNode = minNode.next
-        item = top.value
-        top = top.next
+        minNode  minNode.next
+        item  top.value
+        top  top.next
         r_ item
 
-customStack = Stack()
+customStack  Stack()
 customStack.push(5)
 print(customStack.min())
 customStack.push(6)

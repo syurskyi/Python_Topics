@@ -3,36 +3,36 @@
 
 
 c_ Node:
-    ___  -   value=N..
-        value = value
-        next = N..
+    ___  -   valueN..
+        value  value
+        next  N..
     
     ___ __str__(self
         r_ st.(value)
 
 c_ LinkedList:
     ___  - (self
-        head = N..
-        tail = N..
+        head  N..
+        tail  N..
     
     
 
 c_ Queue:
     ___  - (self
-        linkedList = LinkedList()
+        linkedList  LinkedList()
     
     ___ __str__(self
-        values = [st.(x) ___ x __ linkedList]
+        values  [st.(x) ___ x __ linkedList]
         r_ ' '.j..(values)
     
     ___ enqueue  value
-        newNode = Node(value)
+        newNode  Node(value)
         __ linkedList.head __ N..:
-            linkedList.head = newNode
-            linkedList.tail = newNode
+            linkedList.head  newNode
+            linkedList.tail  newNode
         ____
-            linkedList.tail.next = newNode
-            linkedList.tail = newNode
+            linkedList.tail.next  newNode
+            linkedList.tail  newNode
     
     ___ isEmpty(self
         __ linkedList.head __ N..:
@@ -44,12 +44,12 @@ c_ Queue:
         __ isEmpty(
             r_ "There is not any node in the Queue"
         ____
-            tempNode = linkedList.head
+            tempNode  linkedList.head
             __ linkedList.head __ linkedList.tail:
-                linkedList.head = N..
-                linkedList.tail = N..
+                linkedList.head  N..
+                linkedList.tail  N..
             ____
-                linkedList.head = linkedList.head.next
+                linkedList.head  linkedList.head.next
             r_ tempNode
     
     ___ peek(self
@@ -59,8 +59,8 @@ c_ Queue:
             r_ linkedList.head
     
     ___ delete(self
-        linkedList.head = N..
-        linkedList.tail = N..
+        linkedList.head  N..
+        linkedList.tail  N..
 
 
 

@@ -1,0 +1,6 @@
+<p>In this Bite we collected some random tweets and populated a list of namedtuples of text and a polarity rating which we got using <a href="http://textblob.readthedocs.io/en/dev/" target="_blank" rel="noopener"><code>TextBlob</code></a>, an awesome module that makes it easy to do sentiment analysis (we used it for <a href="https://pybit.es/codechallenge07_review.html" target="_blank" rel="noopener">our PCC07</a>):</p>
+<pre>  blob = TextBlob(tweet)
+  polarity = blob.sentiment.polarity
+</pre>
+<p>A polarity of &lt; 0 indicates a negative sentiment, &gt; 0 a positive one.</p>
+<p>In this Bite we practice list comprehensions and sorting. Complete the two functions below following their docstrings. Enjoy and keep calm and code in Python!</p>

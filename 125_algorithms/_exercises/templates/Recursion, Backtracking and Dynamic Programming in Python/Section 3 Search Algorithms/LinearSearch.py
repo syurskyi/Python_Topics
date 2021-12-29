@@ -14,5 +14,5 @@ ___ linear_search(container, item
     r_ -1
 
 
-nums = [1, 5, -3, 10, 55, 100]
+nums  [1, 5, -3, 10, 55, 100]
 print(linear_search(nums, 10))

@@ -1,7 +1,7 @@
-x = int(input("Insert the numerator: "))
-y = int(input("Insert the denomiator: "))
+x  i..(input("Insert the numerator: "))
+y  i..(input("Insert the denomiator: "))
 
-if x%y == 0:
+__ x%y __ 0:
     print(x, " is divisible by ", y)
 else:
     print("No! ", x, " is not divisible by ", y)

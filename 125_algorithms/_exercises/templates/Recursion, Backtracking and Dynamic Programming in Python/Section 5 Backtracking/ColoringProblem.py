@@ -2,10 +2,10 @@
 c_ ColoringProblem:
 
     ___  -   adjacency_matrix, num_colors
-        n = le_(adjacency_matrix)
-        adjacency_matrix = adjacency_matrix
-        num_colors = num_colors
-        colors = [0 ___ _ __ ra__(n)]
+        n  le_(adjacency_matrix)
+        adjacency_matrix  adjacency_matrix
+        num_colors  num_colors
+        colors  [0 ___ _ __ ra__(n)]
 
     ___ coloring_problem(self
 
@@ -23,7 +23,7 @@ c_ ColoringProblem:
         # consider the colors
         ___ color_index __ ra__(1, num_colors+1
             __ is_color_valid(node_index, color_index
-                colors[node_index] = color_index
+                colors[node_index]  color_index
 
                 __ solve(node_index+1
                     r_ T..
@@ -51,10 +51,10 @@ c_ ColoringProblem:
 
 __ ___ __ '__main__':
 
-    m = [[0, 1, 1, 1],
+    m  [[0, 1, 1, 1],
          [1, 0, 1, 0],
          [1, 1, 0, 1],
          [1, 0, 1, 0]]
 
-    problem = ColoringProblem(m, 3)
+    problem  ColoringProblem(m, 3)
     problem.coloring_problem()

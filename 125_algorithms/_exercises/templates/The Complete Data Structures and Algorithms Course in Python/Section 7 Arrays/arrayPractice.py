@@ -4,7 +4,7 @@ ____ array _____ *
 
 # 1. Create an array and traverse. 
 
-my_array = array('i',[1,2,3,4,5])
+my_array  array('i',[1,2,3,4,5])
 
 ___ i __ my_array:
     print(i)
@@ -28,13 +28,13 @@ print(my_array)
 
 # 5. Extend python array using extend() method
 print("Step 5")
-my_array1 = array('i', [10,11,12])
+my_array1  array('i', [10,11,12])
 my_array.ex..(my_array1)
 print(my_array)
 
 # 6. Add items from list into array using fromlist() method
 print("Step 6")
-tempList = [20,21,22]
+tempList  [20,21,22]
 my_array.fromlist(tempList)
 print(my_array)
 
@@ -68,9 +68,9 @@ print(my_array.count(11))
 print(my_array)
 # 13. Convert array to string using tostring() method
 print("Step 13")
-strTemp = my_array.tostring()
+strTemp  my_array.tostring()
 print(strTemp)
-ints = array('i')
+ints  array('i')
 ints.fromstring(strTemp)
 print(ints)
 

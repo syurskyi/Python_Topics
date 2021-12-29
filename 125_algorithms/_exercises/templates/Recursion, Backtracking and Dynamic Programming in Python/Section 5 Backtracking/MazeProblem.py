@@ -1,15 +1,15 @@
 c_ MazeProblem:
 
     ___  -   maze_matrix
-        maze_matrix = maze_matrix
-        maze_size = le_(maze_matrix)
-        solution_matrix = [[' - ' ___ _ __ ra__(maze_size)] ___ _ __ ra__(maze_size)]
-        moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        maze_matrix  maze_matrix
+        maze_size  le_(maze_matrix)
+        solution_matrix  [[' - ' ___ _ __ ra__(maze_size)] ___ _ __ ra__(maze_size)]
+        moves  [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     ___ solve_problem(self
 
         # we start with (0,0)
-        solution_matrix[0][0] = ' S '
+        solution_matrix[0][0]  ' S '
 
         __ solve(0, 0
             show_result()
@@ -23,17 +23,17 @@ c_ MazeProblem:
 
         ___ move __ moves:
 
-            next_x = x + move[0]
-            next_y = y + move[1]
+            next_x  x + move[0]
+            next_y  y + move[1]
 
             __ is_valid(next_x, next_y
-                solution_matrix[next_x][next_y] = ' S '
+                solution_matrix[next_x][next_y]  ' S '
 
                 __ solve(next_x, next_y
                     r_ T..
 
                 # BACKTRACK
-                solution_matrix[next_x][next_y] = ' '
+                solution_matrix[next_x][next_y]  ' '
 
         r_ F..
 
@@ -41,10 +41,10 @@ c_ MazeProblem:
 
         # we do not step out of the board
         # horizontally and then vertically
-        __ x < 0 or x >= maze_size:
+        __ x < 0 or x > maze_size:
             r_ F..
 
-        __ y < 0 or y >= maze_size:
+        __ y < 0 or y > maze_size:
             r_ F..
 
         # there may be obstacles (we are not able to use cells that are obstacles)
@@ -65,18 +65,18 @@ c_ MazeProblem:
     ___ show_result(self
         ___ x __ ra__(maze_size
             ___ y __ ra__(maze_size
-                print(solution_matrix[x][y], end=' ')
+                print(solution_matrix[x][y], end' ')
             print('\n')
 
 
 __ ___ __ '__main__':
 
     # 1: valid cells 0: walls or obstacles
-    maze = [[1, 1, 1, 1, 1],
+    maze  [[1, 1, 1, 1, 1],
             [0, 0, 0, 0, 1],
             [1, 0, 1, 0, 1],
             [1, 0, 1, 0, 1],
             [1, 1, 1, 0, 1]]
 
-    maze = MazeProblem(maze)
+    maze  MazeProblem(maze)
     maze.solve_problem()

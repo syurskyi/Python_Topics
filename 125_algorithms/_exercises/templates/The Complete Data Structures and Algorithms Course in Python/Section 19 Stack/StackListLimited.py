@@ -3,12 +3,12 @@
 
 c_ Stack:
     ___  -   maxSize
-        maxSize = maxSize
-        li__ = []
+        maxSize  maxSize
+        li__  []
     
     ___ __str__(self
-        values = li__.re..
-        values = [st.(x) ___ x __ li__]
+        values  li__.re..
+        values  [st.(x) ___ x __ li__]
         r_ '\n'.j..(values)
     
     # isEmpty
@@ -48,10 +48,10 @@ c_ Stack:
 
     #  delete
     ___ delete(self
-        li__ = N..
+        li__  N..
     
 
-customStack = Stack(4)
+customStack  Stack(4)
 print(customStack.isEmpty())
 print(customStack.isFull())
 customStack.push(1)

@@ -1,0 +1,14 @@
+<p>As you have probably seen on <a href="https://codechalleng.es/">the new dashboard</a> you can now gain <i>Ninja Belts</i> based on the amount of points (or Bitecoins) you gained solving Bites:<br><pre>
+from pprint import pprint as pp
+pp(HONORS)
+
+{10: 'white',
+ 50: 'yellow',
+ 100: 'orange',
+ 175: 'green',
+ 250: 'blue',
+ 400: 'brown',
+ 600: 'black',
+ 800: 'paneled',
+ 1000: 'red'}
+</pre><p>Complete the <code>get_belt</code> function below which receives a <code>user_score</code> which you can assume to be an <code>int</code>.</p><p>The function should return the corresponding belt name from the <code>HONORS dict</code>. For example with 162 points you would have the <i>orange</i> belt (not yet reached <i>green</i>), 401 = <i>brown</i>, 999 is <i>paneled</i>, etc.</p><p>Note that the <code>scores</code> are inclusive so if you have 10 points you have earned the <i>white</i> belt, ≥ 50 = <i>yellow</i> belt, etc. Also make sure you take the min and max boundaries into account (< 10 is no belt and > 1000 is the highest belt).</p><p>Is there a stdlib module that could be useful here? Have fun!</p>

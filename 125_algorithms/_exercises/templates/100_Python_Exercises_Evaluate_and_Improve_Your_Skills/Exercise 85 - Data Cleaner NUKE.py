@@ -1,15 +1,15 @@
 #Create a script cleans the countries_raw.txt file from unecessary lines and leaves countries only
 
 with open("countries_raw.txt", "r") as file:
-    content = file.readlines()
+    content  file.readlines()
 
 
-content = [i.strip("\n") for i in content if "\n" in i]
+content  [i.strip("\n") for i in content __ "\n" in i]
 
-content = [i for i in content if i !=""]
-content = [i for i in content if i !="Top of Page"]
+content  [i for i in content __ i !""]
+content  [i for i in content __ i !"Top of Page"]
 
-content = [i for i in content if len(i) != 1]
+content  [i for i in content __ len(i) ! 1]
 print(content)
 
 

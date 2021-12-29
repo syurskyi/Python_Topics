@@ -1,0 +1,8 @@
+<p>In this Bite, you will write a function called <code>max_letter_word()</code> to identify the first word with the most repeated letter in the supplied text, and return a tuple with the word, the letter, and the count of that letter in the word. For example:</p>
+<pre>&gt;&gt;&gt; max_letter_word('The studio was filled with the rich odour of roses')<br />('filled', 'l', 2)</pre>
+<p>For this Bite you may like to use features like built-ins and comprehensions, and you might also find something useful in <a href="https://docs.python.org/3/library/collections.html" target="_blank" rel="noopener">the <code>collections</code> module</a> that helps (hint, it's <code>Counter</code>).</p>
+<p>For a given letter your solution should not differentiate by case, thus the 'S' and 's' in 'Sister' count as the same letter: <code>str.casefold()</code> is perhaps the best way to achieve this since it has the added advantage of expanding some <a href="https://en.wikipedia.org/wiki/Orthographic_ligature#Stylistic_ligatures" target="_blank" rel="noopener">tricky characters</a> to their constituent letters. For example:</p>
+<pre>&gt;&gt;&gt; "Schlo&szlig;".casefold()<br />schloss</pre>
+<p>Words are separated by white space; hyphenated words count as a single word, as do abbreviated words. Anything containing letters (including non-English letters) can be assumed to be a word, but don't count its non-letter symbols, digits etc.</p>
+<p>Examining the Bite's tests will be helpful to identify edge cases and see what behaviour is expected for invalid input.</p>
+<p>Have fun with the power of Python!</p>

@@ -4,9 +4,9 @@ _____ random
 c_ QuickSelect:
 
     ___  -   nums
-        nums = nums
-        first_index = 0
-        last_index = le_(nums) - 1
+        nums  nums
+        first_index  0
+        last_index  le_(nums) - 1
 
     ___ run  k
         r_ select(first_index, last_index, k-1)
@@ -15,14 +15,14 @@ c_ QuickSelect:
     ___ partition  first_index, last_index
 
         # generate a random value within the range [first, last]
-        pivot_index = random.randint(first_index, last_index)
+        pivot_index  random.randint(first_index, last_index)
 
         swap(pivot_index, last_index)
 
         ___ i __ ra__(first_index, last_index
             __ nums[i] > nums[last_index]:
                 swap(i, first_index)
-                first_index += 1
+                first_index + 1
 
         swap(first_index, last_index)
 
@@ -30,12 +30,12 @@ c_ QuickSelect:
         r_ first_index
 
     ___ swap  i, j
-        nums[i], nums[j] = nums[j], nums[i]
+        nums[i], nums[j]  nums[j], nums[i]
 
     # THIS IS THE SELECTION PHASE
     ___ select  first_index, last_index, k
 
-        pivot_index = partition(first_index, last_index)
+        pivot_index  partition(first_index, last_index)
 
         # selection phase when we compare the pivot_index with k
         __ pivot_index < k:
@@ -50,7 +50,7 @@ c_ QuickSelect:
         r_ nums[pivot_index]
 
 
-x = [1, 2, -5, 10, 100, -7, 3, 4]
-select = QuickSelect(x)
+x  [1, 2, -5, 10, 100, -7, 3, 4]
+select  QuickSelect(x)
 print(select.run(2))
 

@@ -3,8 +3,8 @@
 
 #  How to create a Tuple?
 
-newTuple = ('a', 'b', 'c', 'd', 'e')
-newTuple1 = tuple('abcde')
+newTuple  ('a', 'b', 'c', 'd', 'e')
+newTuple1  tuple('abcde')
 
 print(newTuple1)
 
@@ -36,8 +36,8 @@ ___ searchInTuple(pTuple, element
 print(searchInTuple(newTuple, 'a'))
 
 # Tuple Operations / Functions
-myTuple = (1,4,3,2,5)
-myTuple1 = (1,2,6,9,8,7)
+myTuple  (1,4,3,2,5)
+myTuple1  (1,2,6,9,8,7)
 
 print(myTuple + myTuple1) 
 print(myTuple * 4)      

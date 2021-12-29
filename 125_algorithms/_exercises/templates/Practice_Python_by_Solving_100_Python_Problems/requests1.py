@@ -1,1 +1,1 @@
-_______ r__                   r = r__.g..("http://www.pythonhow.com")                     print(r.t..[:100])
+_______ r__                   r  r__.g..("http://www.pythonhow.com")                     print(r.t..[:100])

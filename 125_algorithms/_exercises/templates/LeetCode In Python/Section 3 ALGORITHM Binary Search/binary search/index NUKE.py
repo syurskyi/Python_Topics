@@ -3,33 +3,33 @@ import math
 
 
 def binarySearch(arr, target):
-    left = 0
-    right = len(arr)-1
-    while left <= right:
+    left  0
+    right  len(arr)-1
+    w___ left < right:
 
-        mid = math.floor(left + (right - left)/2)
+        mid  math.floor(left + (right - left)/2)
         # Check if x is present at mid
-        if arr[mid] == target:
+        __ arr[mid] __ target:
             return mid
 
         # If x is greater, ignore left half
         elif arr[mid] < target:
-            left = mid + 1
+            left  mid + 1
 
         # If x is smaller, ignore right half
         else:
-            right = mid - 1
+            right  mid - 1
 
     # If we reach here, then the element was not present
     return -1
 
 
-arr = [1, 2, 3, 4, 5, 6]
-target = 6
+arr  [1, 2, 3, 4, 5, 6]
+target  6
 
-result = binarySearch(arr, target)
+result  binarySearch(arr, target)
 
-if result != -1:
+__ result ! -1:
     print("Element is present at index %d" % result)
 else:
     print("Element is not present in array")

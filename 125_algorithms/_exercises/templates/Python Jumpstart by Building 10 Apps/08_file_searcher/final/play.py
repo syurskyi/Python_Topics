@@ -4,7 +4,7 @@
 
 
 def factorial(n):
-    if n == 1:
+    __ n __ 1:
         return 1
 
     return n * factorial(n - 1)
@@ -21,13 +21,13 @@ print("5!={:,}, 3!={:,}, 11!={:,}".format(
 # 1, 1, 2, 3, 5, 8, 13, 21, ...
 
 def fibonacci(limit):
-    nums = []
+    nums  []
 
-    current = 0
-    next = 1
+    current  0
+    next  1
 
-    while current < limit:
-        current, next = next, next + current
+    w___ current < limit:
+        current, next  next, next + current
         nums.append(current)
 
     return nums
@@ -35,26 +35,26 @@ def fibonacci(limit):
 
 print('via lists')
 for n in fibonacci(100):
-    print(n, end=', ')
+    print(n, end', ')
 
 print()
 
 
 def fibonacci_co():
-    current = 0
-    next = 1
+    current  0
+    next  1
 
-    while True:
-        current, next = next, next + current
+    w___ T...
+        current, next  next, next + current
         yield current
 
 
 print('with yield')
 for n in fibonacci_co():
-    if n > 1000:
-        break
+    __ n > 1000:
+        _____
 
-    print(n, end=', ')
+    print(n, end', ')
 
 
 

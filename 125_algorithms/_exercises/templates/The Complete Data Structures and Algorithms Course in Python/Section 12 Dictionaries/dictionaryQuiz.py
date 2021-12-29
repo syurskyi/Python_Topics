@@ -6,7 +6,7 @@
 
 # Q-1. What will be the output of the following code snippet?
 
-a = {(1,21,(2,32}
+a  {(1,21,(2,32}
 print(a[1,2])
 # A. Key Error
 # B.  1
@@ -16,7 +16,7 @@ print(a[1,2])
 
 # Q-2. What will be the output of the following code snippet?
 
-a = {'a':1,'b':2,'c':3}
+a  {'a':1,'b':2,'c':3}
 # print (a['a','b'])
 # A. Key Error
 # B. [1,2]
@@ -27,13 +27,13 @@ a = {'a':1,'b':2,'c':3}
 
 # Q-3. What will be the output of the following code block?
 
-fruit = {}
+fruit  {}
 
 ___ addone(index
     __ index __ fruit:
-        fruit[index] += 1
+        fruit[index] + 1
     ____
-        fruit[index] = 1
+        fruit[index]  1
         
 addone('Apple')
 addone('Banana')
@@ -48,14 +48,14 @@ print (le_(fruit))
 
 # Q-4. What will be the output of the following code block?
 
-arr = {}
-arr[1] = 1
-arr['1'] = 2
-arr[1] += 1
+arr  {}
+arr[1]  1
+arr['1']  2
+arr[1] + 1
 
-su_ = 0
+su_  0
 ___ k __ arr:
-    su_ += arr[k]
+    su_ + arr[k]
 
 print(su_)
 # A. 1 
@@ -67,14 +67,14 @@ print(su_)
 
 # Q-5. What will be the output of the following code snippet?
 
-my_dict = {}
-my_dict[1] = 1
-my_dict['1'] = 2
-my_dict[1.0] = 4
+my_dict  {}
+my_dict[1]  1
+my_dict['1']  2
+my_dict[1.0]  4
 
-su_ = 0
+su_  0
 ___ k __ my_dict:
-    su_ += my_dict[k]
+    su_ + my_dict[k]
     
 print (su_)
 # A. 7
@@ -86,14 +86,14 @@ print (su_)
 
 # Q-6. What will be the output of the following code snippet?
 
-my_dict = {}
-my_dict[(1,2,4)] = 8
-my_dict[(4,2,1)] = 10
-my_dict[(1,2)] = 12
+my_dict  {}
+my_dict[(1,2,4)]  8
+my_dict[(4,2,1)]  10
+my_dict[(1,2)]  12
 
-su_ = 0
+su_  0
 ___ k __ my_dict:
-    su_ += my_dict[k]
+    su_ + my_dict[k]
 
 print (su_)
 print(my_dict)
@@ -109,14 +109,14 @@ print(my_dict)
 
 # Q-7. What will be the output of the following code snippet?
 
-box = {}
-jars = {}
-crates = {}
-box['biscuit'] = 1
-box['cake'] = 3
-jars['jam'] = 4
-crates['box'] = box
-crates['jars'] = jars
+box  {}
+jars  {}
+crates  {}
+box['biscuit']  1
+box['cake']  3
+jars['jam']  4
+crates['box']  box
+crates['jars']  jars
 # print(len(crates[box]))
 # A. 1
 # B. 3
@@ -127,7 +127,7 @@ crates['jars'] = jars
 
 # Q-8. What will be the output of the following code block?
 
-dict = {'c': 97, 'a': 96, 'b': 98}
+dict  {'c': 97, 'a': 96, 'b': 98}
 
 ___ _ __ sorted(dict
     print (dict[_])
@@ -140,8 +140,8 @@ ___ _ __ sorted(dict
 
 # Q-9. What will be the output of the following code snippet?
 
-rec = {"Name" : "Python", "Age":"20"}
-r = rec.copy()
+rec  {"Name" : "Python", "Age":"20"}
+r  rec.copy()
 print(id(r) __ id(rec))
 # A. True
 # B. False
@@ -152,11 +152,11 @@ print(id(r) __ id(rec))
 
 # Q-10. What will be the output of the following code snippet?
 
-rec = {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
-id1 = id(rec)
+rec  {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
+id1  id(rec)
 del rec
-rec = {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
-id2 = id(rec)
+rec  {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
+id2  id(rec)
 print(id1 __ id2)
 # A. True
 # B. False

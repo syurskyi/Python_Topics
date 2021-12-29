@@ -5,21 +5,21 @@ _____ QueueLinkedList as queue
 
 c_ BSTNode:
     ___  -   data
-        data = data
-        leftChild = N..
-        rightChild = N..
+        data  data
+        leftChild  N..
+        rightChild  N..
 
 ___ insertNode(rootNode, nodeValue
     __ rootNode.data __ N..:
-        rootNode.data = nodeValue
-    ____ nodeValue <= rootNode.data:
+        rootNode.data  nodeValue
+    ____ nodeValue < rootNode.data:
         __ rootNode.leftChild __ N..:
-            rootNode.leftChild = BSTNode(nodeValue)
+            rootNode.leftChild  BSTNode(nodeValue)
         ____
             insertNode(rootNode.leftChild, nodeValue)
     ____
         __ rootNode.rightChild __ N..:
-            rootNode.rightChild = BSTNode(nodeValue)
+            rootNode.rightChild  BSTNode(nodeValue)
         ____
             insertNode(rootNode.rightChild, nodeValue)
     r_ "The node has been successfully inserted"
@@ -49,10 +49,10 @@ ___ levelOrderTraversal(rootNode
     __ no. rootNode:
         r_
     ____
-        customQueue = queue.Queue()
+        customQueue  queue.Queue()
         customQueue.enqueue(rootNode)
         w__ no.(customQueue.isEmpty()):
-            root = customQueue.dequeue()
+            root  customQueue.dequeue()
             print(root.value.data)
             __ root.value.leftChild __ no. N..:
                 customQueue.enqueue(root.value.leftChild)
@@ -76,9 +76,9 @@ ___ searchNode(rootNode, nodeValue
 
 
 ___ minValueNode(bstNode
-    current = bstNode
+    current  bstNode
     w__ (current.leftChild __ no. N..
-        current = current.leftChild
+        current  current.leftChild
     r_ current
 
 
@@ -86,34 +86,34 @@ ___ deleteNode(rootNode, nodeValue
     __ rootNode __ N..:
         r_ rootNode
     __ nodeValue < rootNode.data:
-        rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
+        rootNode.leftChild  deleteNode(rootNode.leftChild, nodeValue)
     ____ nodeValue > rootNode.data:
-        rootNode.rightChild = deleteNode(rootNode.rightChild, nodeValue)
+        rootNode.rightChild  deleteNode(rootNode.rightChild, nodeValue)
     ____
         __ rootNode.leftChild __ N..:
-            temp = rootNode.rightChild
-            rootNode = N..
+            temp  rootNode.rightChild
+            rootNode  N..
             r_ temp
         
         __ rootNode.rightChild __ N..:
-            temp = rootNode.leftChild
-            rootNode = N..
+            temp  rootNode.leftChild
+            rootNode  N..
             r_ temp
         
-        temp = minValueNode(rootNode.rightChild)
-        rootNode.data = temp.data 
-        rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
+        temp  minValueNode(rootNode.rightChild)
+        rootNode.data  temp.data
+        rootNode.rightChild  deleteNode(rootNode.rightChild, temp.data)
     r_ rootNode
 
 ___ deleteBST(rootNode
-    rootNode.data = N..
-    rootNode.leftChild = N..
-    rootNode.rightChild = N..
+    rootNode.data  N..
+    rootNode.leftChild  N..
+    rootNode.rightChild  N..
     r_ "The BST has been successfully deleted"
 
 
 
-newBST = BSTNode(N..)
+newBST  BSTNode(N..)
 insertNode(newBST, 70)
 insertNode(newBST,50)
 insertNode(newBST,90)

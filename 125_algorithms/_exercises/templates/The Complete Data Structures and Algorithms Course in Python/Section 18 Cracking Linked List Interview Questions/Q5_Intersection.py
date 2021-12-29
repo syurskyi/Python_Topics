@@ -9,38 +9,38 @@ ___ intersection(llA, llB
     __ llA.tail __ no. llB.tail:
         r_ F..
     
-    lenA = le_(llA)
-    lenB = le_(llB)
+    lenA  le_(llA)
+    lenB  le_(llB)
 
-    shorter = llA __ lenA < lenB else llB
-    longer = llB __ lenA < lenB else llA
+    shorter  llA __ lenA < lenB else llB
+    longer  llB __ lenA < lenB else llA
 
-    diff = le_(longer) - le_(shorter)
-    longerNode = longer.head
-    shorterNode = shorter.head
+    diff  le_(longer) - le_(shorter)
+    longerNode  longer.head
+    shorterNode  shorter.head
 
     ___ i __ ra__(diff
-        longerNode = longerNode.next
+        longerNode  longerNode.next
     
     w__ shorterNode __ no. longerNode:
-        shorterNode = shorterNode.next
-        longerNode = longerNode.next
+        shorterNode  shorterNode.next
+        longerNode  longerNode.next
     
     r_ longerNode
 
 
 # Helper addition method
 ___ addSameNode(llA, llB, value
-    tempNode = Node(value)
-    llA.tail.next = tempNode
-    llA.tail = tempNode
-    llB.tail.next = tempNode
-    llB.tail = tempNode
+    tempNode  Node(value)
+    llA.tail.next  tempNode
+    llA.tail  tempNode
+    llB.tail.next  tempNode
+    llB.tail  tempNode
 
-llA = LinkedList()
+llA  LinkedList()
 llA.generate(3,0, 10)
 
-llB = LinkedList()
+llB  LinkedList()
 llB.generate(4,0, 10)
 
 addSameNode(llA, llB, 11)

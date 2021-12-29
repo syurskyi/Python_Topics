@@ -3,10 +3,10 @@
 
 c_ Queue:
     ___  - (self
-        items = []
+        items  []
     
     ___ __str__(self
-        values = [st.(x) ___ x __ items]
+        values  [st.(x) ___ x __ items]
         r_ ' '.j..(values)
     
     ___ isEmpty(self
@@ -32,12 +32,12 @@ c_ Queue:
             r_ items[0]
     
     ___ delete(self
-        items = N..
+        items  N..
 
 
 
 
-customQueue = Queue()
+customQueue  Queue()
 customQueue.enqueue(1)
 customQueue.enqueue(2)
 customQueue.enqueue(3)

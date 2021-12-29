@@ -5,7 +5,7 @@
 
 ____ collections _____ deque
 
-customQueue = deque(maxlen=3)
+customQueue  deque(maxlen3)
 print(customQueue)
 
 customQueue.ap..(1)

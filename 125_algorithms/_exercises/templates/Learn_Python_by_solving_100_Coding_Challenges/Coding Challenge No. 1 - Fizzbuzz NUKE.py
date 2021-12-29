@@ -6,11 +6,11 @@
 class Solution:
     def Fizzbuzz(x,z):
         for i in range(x,z):
-            if i % 3 == 0 and i % 5 == 0:
+            __ i % 3 __ 0 and i % 5 __ 0:
                 print ("FizzBuzz")
-            elif i % 3 == 0:
+            elif i % 3 __ 0:
                 print ("Fizz")
-            elif i % 5 == 0:
+            elif i % 5 __ 0:
                 print ("Buzz")
             else:
                 print (i)

@@ -1,18 +1,18 @@
-_____ time
-time.time()
+_____ t__
+t__.t__()
 
-timestamp1 = time.time()
+timestamp1  t__.t__()
 
 ### Python Program to find Sum of N Natural Numbers ###
-number = 100
-total = 0
+number  100
+total  0
 
 ___ value __ ra__(1, number + 1):
-    total = total + value
+    total  total + value
 
 print("The sum is", total)
 
 ### Program Completed ###
 
-timestamp2 = time.time()
+timestamp2  t__.t__()
 print((timestamp2 - timestamp1))

@@ -5,8 +5,8 @@ c_ Bill:
     """
 
     ___  -    amount, period):
-        amount = amount
-        period = period
+        amount  amount
+        period  period
 
 
 c_ Flatmate:
@@ -16,10 +16,10 @@ c_ Flatmate:
     """
 
     ___  -    name, days_in_house):
-        name = name
-        days_in_house = days_in_house
+        name  name
+        days_in_house  days_in_house
 
     ___ pays   bill, flatmate2):
-        weight = days_in_house / (days_in_house + flatmate2.days_in_house)
-        to_pay = bill.amount * weight
+        weight  days_in_house / (days_in_house + flatmate2.days_in_house)
+        to_pay  bill.amount * weight
         r_ to_pay

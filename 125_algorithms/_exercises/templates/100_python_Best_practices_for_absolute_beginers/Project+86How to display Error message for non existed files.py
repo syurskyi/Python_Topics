@@ -1,7 +1,7 @@
-fp = input("Enter file path: ")
+fp  input("Enter file path: ")
 
 try:
-    file = open(fp)
+    file  open(fp)
 except FileNotFoundError:
     print("Error! This file path does not exist...")
 else:

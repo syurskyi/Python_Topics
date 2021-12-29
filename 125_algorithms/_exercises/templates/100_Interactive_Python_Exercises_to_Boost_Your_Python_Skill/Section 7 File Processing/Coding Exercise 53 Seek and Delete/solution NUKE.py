@@ -1,11 +1,11 @@
 import glob
 import os
 
-text_files = glob.glob("*.txt")
+text_files  glob.glob("*.txt")
 
 for text_file in text_files:
     with open(text_file) as file:
-        content = file.read().lower()
+        content  file.read().l..
 
-    if "xxx" in content:
+    __ "xxx" in content:
         os.remove(text_file)

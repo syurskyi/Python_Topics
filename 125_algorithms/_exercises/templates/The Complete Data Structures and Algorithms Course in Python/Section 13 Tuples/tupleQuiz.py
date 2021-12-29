@@ -7,7 +7,7 @@
 
 # Q-1. What will be the output of the following code block?
 
-init_tuple = ()
+init_tuple  ()
 print (init_tuple.__len__())
 # A. None
 # B.  1
@@ -17,8 +17,8 @@ print (init_tuple.__len__())
 
 # Q-2. What will be the output of the following code block?
 
-init_tuple_a = 'a', 'b'
-init_tuple_b = ('a', 'b')
+init_tuple_a  'a', 'b'
+init_tuple_b  ('a', 'b')
 
 print (init_tuple_a __ init_tuple_b)
 # A. 0
@@ -29,8 +29,8 @@ print (init_tuple_a __ init_tuple_b)
 
 # Q-3. What will be the output of the following code block?
 
-init_tuple_a = '1', '2'
-init_tuple_b = ('3', '4')
+init_tuple_a  '1', '2'
+init_tuple_b  ('3', '4')
 
 print (init_tuple_a + init_tuple_b)
 # A. (1, 2, 3, 4)
@@ -41,8 +41,8 @@ print (init_tuple_a + init_tuple_b)
 
 # Q-4. What will be the output of the following code block?
 
-init_tuple_a = 1, 2
-init_tuple_b = (3, 4)
+init_tuple_a  1, 2
+init_tuple_b  (3, 4)
 
 [print(su_(x)) ___ x __ [init_tuple_a + init_tuple_b]]
 # A. Nothing gets printed.
@@ -54,8 +54,8 @@ init_tuple_b = (3, 4)
 
 # Q-5. What will be the output of the following code block?
 
-init_tuple = [(0, 1), (1, 2), (2, 3)]
-result = su_(n ___ _, n __ init_tuple)
+init_tuple  [(0, 1), (1, 2), (2, 3)]
+result  su_(n ___ _, n __ init_tuple)
 
 print(result)
 # A. 3
@@ -76,8 +76,8 @@ print(result)
 
 # Q-7. What will be the output of the following code block?
 
-l = [1, 2, 3]
-init_tuple = ('Python',) * (l.__len__() - l[::-1][0])
+l  [1, 2, 3]
+init_tuple  ('Python',) * (l.__len__() - l[::-1][0])
 
 print(init_tuple)
 # A. ()
@@ -88,7 +88,7 @@ print(init_tuple)
 
 # Q-8. What will be the output of the following code block?
 
-init_tuple = ('Python') * 3
+init_tuple  ('Python') * 3
 
 print(ty..(init_tuple))
 # A. <class ‘tuple’>
@@ -99,8 +99,8 @@ print(ty..(init_tuple))
 
 # Q-9. What will be the output of the following code block?
 
-init_tuple = (1,) * 3
-init_tuple[0] = 2
+init_tuple  (1,) * 3
+init_tuple[0]  2
 print(init_tuple)
 # A. (1, 1, 1)
 # B. (2, 2, 2)
@@ -111,7 +111,7 @@ print(init_tuple)
 
 # Q-10. What will be the output of the following code block?
 
-init_tuple = ((1, 2),) * 7
+init_tuple  ((1, 2),) * 7
 print(le_(init_tuple[3:8]))
 # A. Exception
 # B. 5

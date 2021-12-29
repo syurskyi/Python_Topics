@@ -1,0 +1,18 @@
+<p>In this Bite you will complete the <code>group</code> function that receives an <code>iterable</code> and
+splits it up in <code>n</code> groups. Say we have a list of 10 <code>int</code>s and <code>n=3</code>, passing
+this into the function you'd get the following return:</p><pre>&gt;&gt;&gt; iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+&gt;&gt;&gt; n = 3
+&gt;&gt;&gt; from grouping import group
+&gt;&gt;&gt; group(iterable, n)
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
+</pre><p>It should also work passing in a generator:</p><pre>&gt;&gt;&gt; iterable = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+&gt;&gt;&gt; group(iterable, n)
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
+</pre>
+
+<p>And of course for different values for <code>iterable</code> and <code>n</code> (see also the tests):</p><pre>&gt;&gt;&gt; iterable = [1, 2, 3, 4] * 3
+&gt;&gt;&gt; iterable
+[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+&gt;&gt;&gt; group(iterable, 2)
+[[1, 2], [3, 4], [1, 2], [3, 4], [1, 2], [3, 4]]
+</pre><p>Thanks to <a href="https://codechalleng.es/profiles/CodeItch">Andrew (CodeItch)</a> for letting us know about this code/idea derived from one of <a href="https://github.com/SumoLogic" target="_blank">Sumo Logic's repos</a>.</p><p>Have fun and keep calm and code in Python! See you in the next Bite ...</p>

@@ -3,25 +3,25 @@
 
 
 c_ Graph:
-    ___  -   gdict=N..
+    ___  -   gdictN..
         __ gdict __ N..:
-            gdict = {}
-        gdict = gdict
+            gdict  {}
+        gdict  gdict
     
     ___ bfs  start, end
-        queue = []
+        queue  []
         queue.ap..([start])
         w__ queue:
-            path = queue.pop(0)
-            node = path[-1]
+            path  queue.pop(0)
+            node  path[-1]
             __ node __ end:
                 r_ path
             ___ adjacent __ gdict.get(node, []
-                new_path = li__(path)
+                new_path  li__(path)
                 new_path.ap..(adjacent)
                 queue.ap..(new_path)
 
-customDict = { "a" : ["b", "c"],
+customDict  { "a" : ["b", "c"],
                "b" : ["d", "g"],
                "c" : ["d", "e"],
                "d" : ["f"],
@@ -29,5 +29,5 @@ customDict = { "a" : ["b", "c"],
                "g" : ["f"]
             }
 
-g = Graph(customDict)
+g  Graph(customDict)
 print(g.bfs("a", "e"))

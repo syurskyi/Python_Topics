@@ -8,11 +8,11 @@ ____ webapp.home _____ Home
 ____ webapp.dictionary _____ Dictionary
 
 
-imports = list(globals().values())
+imports  list(globals().values())
 
 for obj in imports:
-    if inspect.isclass(obj):
-        if issubclass(obj, page.Page) and obj is not page.Page:
+    __ inspect.isclass(obj):
+        __ issubclass(obj, page.Page) and obj is not page.Page:
             jp.Route(obj.path, obj.serve)
 
 # jp.Route(Home.path, Home.serve)
@@ -20,4 +20,4 @@ for obj in imports:
 # jp.Route(Dictionary.path, Dictionary.serve)
 
 
-jp.justpy(port=8001)
+jp.justpy(port8001)

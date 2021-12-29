@@ -1,28 +1,28 @@
 
 ___ schedule(intervals
-    optimal_interval_set = []
+    optimal_interval_set  []
 
     #sorted(intervals, key=intervals[1])
 
-    intervals.sort(key=lambda i: i[1])
+    intervals.sort(keylambda i: i[1])
 
-    last_finish_time = fl__('-inf')
+    last_finish_time  fl__('-inf')
 
     ___ interval __ intervals:
 
-        start = interval[0]
+        start  interval[0]
 
         __ start > last_finish_time:
-            end = interval[1]
+            end  interval[1]
 
             optimal_interval_set.ap..(interval)
 
-            last_finish_time = end
+            last_finish_time  end
 
     r_ optimal_interval_set
 
 
-intervals = [
+intervals  [
     [0, 3],
     [0, 15],
     [5, 10],
@@ -32,7 +32,7 @@ intervals = [
     [16, 20],
 ]
 
-optimal_schedule = schedule(intervals)
+optimal_schedule  schedule(intervals)
 
 ___ ele __ optimal_schedule:
     ___ i __ ra__(le_(ele)):

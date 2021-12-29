@@ -1,0 +1,22 @@
+<p>In this Bite you will analyze complexity levels of our first 200 Bites of Py exercises.</p>
+<p>We loaded <a href="https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv">this CSV file</a> with some stats that look like this:</p>
+<pre>  $ head bite_levels.csv
+Bite;Difficulty
+Bite 1. Sum n numbers;3.45
+Bite 2. Regex Fun;4.89
+Bite 3. Word Values;3.97
+Bite 4. Top 10 PyBites tags;4.72
+Bite 5. Parse a list of names;4.48
+Bite 6. PyBites Die Hard;6.8
+Bite 7. Parsing dates from logs;5.76
+Bite 8. Rotate string characters;3.5
+Bite 9. Palindromes;4.71
+...
+...
+Bite 200. 🥳 Minecraft Enchantable Items;None
+</pre>
+<p>The last column shows the average complexity score if available, if not it shows <code>None</code>.</p>
+<p>Complete the <code>get_most_complex_bites</code> function below following its <em>docstring</em>.</p>
+<p>Your code will be tested calling your function with different arguments.</p>
+<p>Update: some folks reported hitting a <a href="https://www.howtosolutions.net/2019/04/python-fixing-unexpected-utf-8-bom-error-when-loading-json-data/" target="_blank" rel="noopener">UTF-8 BOM error</a>. In that case use <code>encoding="utf-8-sig"</code> when opening the csv file.</p>
+<p>Have fun and keep calm and code in Python!</p>

@@ -1,12 +1,12 @@
 #Create a program that asks the user to submit text repeatedly
 #The program closes when the user submits CLOSE
 
-file = open("user_data.txt", 'a+')
+file  open("user_data.txt", 'a+')
 
-while True:
-    line = input("Write a value: ")
-    if line == "CLOSE":
+w___ T...
+    line  input("Write a value: ")
+    __ line __ "CLOSE":
         file.close()
-        break
+        _____
     else:
         file.write(line + "\n")

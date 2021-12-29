@@ -2,19 +2,19 @@
 #   Copyright © 2021 AppMillers. All rights reserved.
 
 c_ Graph:
-    ___  -   gdict=N..
+    ___  -   gdictN..
         __ gdict __ N..:
-            gdict = {}
-        gdict = gdict
+            gdict  {}
+        gdict  gdict
     
     ___ addEdge  vertex, edge
         gdict[vertex].ap..(edge)
     
     ___ bfs  vertex
-        visited = [vertex]
-        queue = [vertex]
+        visited  [vertex]
+        queue  [vertex]
         w__ queue:
-            deVertex = queue.pop(0)
+            deVertex  queue.pop(0)
             print(deVertex)
             ___ adjacentVertex __ gdict[deVertex]:
                 __ adjacentVertex no. __ visited:
@@ -22,10 +22,10 @@ c_ Graph:
                     queue.ap..(adjacentVertex)
     
     ___ dfs  vertex
-        visited = [vertex]
-        stack = [vertex]
+        visited  [vertex]
+        stack  [vertex]
         w__ stack:
-            popVertex = stack.pop()
+            popVertex  stack.pop()
             print(popVertex)
             ___ adjacentVertex __ gdict[popVertex]:
                 __ adjacentVertex no. __ visited:
@@ -35,7 +35,7 @@ c_ Graph:
 
 
 
-customDict = { "a" : ["b","c"],
+customDict  { "a" : ["b","c"],
             "b" : ["a", "d", "e"],
             "c" : ["a", "e"],
             "d" : ["b", "e", "f"],
@@ -45,6 +45,6 @@ customDict = { "a" : ["b","c"],
 
 
 
-g = Graph(customDict)
+g  Graph(customDict)
 g.dfs("a")
 

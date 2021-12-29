@@ -1,0 +1,11 @@
+<p>In this Bite we want to figure out how active we've been on our blog.</p><p>To start our data analysis we ran the following command on our <a href="https://github.com/pybites/pybites.github.io-src/commits/master" target="_blank">blog repo</a>: <code>git log --stat | egrep "^Date|file.*changed," |grep -B1 changed|grep -v '\-\-'|sed 'N;s/\n/ |/'</code> which resulted in the <a href="https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out" target="_blank">following log</a> which should be easier to work with: <pre>
+Date:   Tue Mar 5 22:34:33 2019 +0100 | 2 files changed, 4 insertions(+), 4 deletions(-)
+Date:   Tue Mar 5 20:34:34 2019 +0100 | 1 file changed, 2 insertions(+), 2 deletions(-)
+Date:   Tue Mar 5 19:02:56 2019 +0100 | 2 files changed, 31 insertions(+), 2 deletions(-)
+Date:   Tue Mar 5 14:18:55 2019 +0100 | 3 files changed, 3 insertions(+), 3 deletions(-)
+Date:   Tue Mar 5 14:03:55 2019 +0100 | 2 files changed, 51 insertions(+), 39 deletions(-)
+Date:   Tue Mar 5 13:23:51 2019 +0100 | 4 files changed, 109 insertions(+), 94 deletions(-)
+...
+[930 rows more]
+...
+</pre></p><p>Complete <code>get_min_max_amount_of_commits</code>, parsing this file into a <code>dict</code> where keys are year/months and values are the total number of changes as measured by # insertions + # deletions (number of file changes can be ignored). <p>For date parsing you can use the <code>datetime</code> or <code>dateutil</code> module. See the provided <code>YEAR_MONTH</code> constant for the exact format.</p></p><p>Return a tuple of (least_active_month, most_active_month).</p><p>Your code should work if we call it for a smaller data set as well. So if we pass in the optional <code>year</code> arg of 2018, it should give the min and max month only for that year (see also the tests).</p><p>By the way, with a min, max of <code>('2019-01', '2019-03')</code>, this year's trend is looking pretty good so far :)</p><p>Good luck and keep calm and code in Python!</p>

@@ -4,7 +4,7 @@
 
 _____ numpy as np
 
-twoDArray = np.array([[11, 15, 10, 6], [10, 14, 11, 5], [12, 17, 12, 8], [15, 18, 14, 9] ])
+twoDArray  np.array([[11, 15, 10, 6], [10, 14, 11, 5], [12, 17, 12, 8], [15, 18, 14, 9] ])
 print(twoDArray)
 
 # newTwoDArray = np.insert(twoDArray, 1, [[1,2,3,4]], axis=0)
@@ -12,13 +12,13 @@ print(twoDArray)
 
 print(le_(twoDArray))
 
-newTwoDArray = np.ap..(twoDArray, [[1,2,3,4]], axis=0)
+newTwoDArray  np.ap..(twoDArray, [[1,2,3,4]], axis0)
 print(newTwoDArray)
 print(le_(newTwoDArray))
 print(le_(newTwoDArray[0]))
 
 ___ accessElements(array, rowIndex, colIndex
-    __ rowIndex >= le_(array) a__ colIndex >= le_(array[0]
+    __ rowIndex > le_(array) a__ colIndex > le_(array[0]
         print('Incorrect Index')
     ____
         print(array[rowIndex][colIndex])
@@ -44,5 +44,5 @@ ___ searchTDArray(array, value
 
 print(searchTDArray(twoDArray, 444))
 
-newTDArray = np.delete(twoDArray, 1, axis=1)
+newTDArray  np.delete(twoDArray, 1, axis1)
 print(newTDArray)

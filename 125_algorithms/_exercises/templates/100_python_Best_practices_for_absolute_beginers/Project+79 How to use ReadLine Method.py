@@ -1,9 +1,9 @@
-fp = open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt")
-data = []
+fp  open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt")
+data  []
 
-i = fp.readline()
-while i != '':
+i  fp.readline()
+w___ i ! '':
     data.append(i)
-    i = fp.readline()
+    i  fp.readline()
 fp.close()
 print(data)

@@ -5,6 +5,6 @@
 
 ____ multiprocessing _____ Queue
 
-customQueue = Queue(maxsize= 3)
+customQueue  Queue(maxsize 3)
 customQueue.put(1)
 print(customQueue.get())

@@ -1,6 +1,6 @@
 #Rule 4 - Consider different variable for different inputs
 
-num_list = [1, 2, 3, 4, 5, 6, 7]
+num_list  [1, 2, 3, 4, 5, 6, 7]
 
 ___ rondomFunction(num_list, char_list):
 

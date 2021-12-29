@@ -3,8 +3,8 @@
 
 #  Update / add an element to the dictionary
 
-myDict = {'name': 'Edy', 'age': 26}
-myDict['address'] = 'London'
+myDict  {'name': 'Edy', 'age': 26}
+myDict['address']  'London'
 print(myDict)
 
 #  Traverse through a dictionary
@@ -33,6 +33,6 @@ myDict.pop('name')
 
 
 # sorted method
-myDict = {'eooooa': 1, 'aas': 2, 'udd': 3, 'sseo': 4, 'werwi': 5}
+myDict  {'eooooa': 1, 'aas': 2, 'udd': 3, 'sseo': 4, 'werwi': 5}
 
-print(sorted(myDict, key=le_))
+print(sorted(myDict, keyle_))

@@ -1,0 +1,10 @@
+<p>Sometimes you need to capture <em>stdout</em> in your script. Python makes it easy with <code>contextlib</code>'s <code>redirect_stdout</code>.</p> <p>In this Bite you will use it to get the length of a help text as returned by <code>help</code>.</p> <p>Complete <code>get_len_help_text</code> which receives a builtin. Run <code>help</code> against this builtin and capture its output in a variable and return its length (number of chars). If a non-builtin is passed into the function, raise a <code>ValueError</code> (hint: you can use <code>BuiltinFunctionType</code> to check this).</p><p>Here you see the function in action: <pre>
+>>> from helplen import get_len_help_text
+>>> get_len_help_text(max)
+402
+>>> get_len_help_text(pow)
+278
+>>> get_len_help_text('bogus')
+...
+ValueError
+</pre></p><p>Good luck and keep calm and code in Python!</p>

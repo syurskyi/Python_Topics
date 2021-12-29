@@ -1,26 +1,26 @@
 import os
 import collections
 
-SearchResult = collections.namedtuple('SearchResult',
+SearchResult  collections.namedtuple('SearchResult',
                                       'file, line, text')
 
 
 def main():
     print_header()
-    folder = get_folder_from_user()
-    if not folder:
+    folder  get_folder_from_user()
+    __ not folder:
         print("Sorry we can't search that location.")
         return
 
-    text = get_search_text_from_user()
-    if not text:
+    text  get_search_text_from_user()
+    __ not text:
         print("We can't search for nothing!")
         return
 
-    matches = search_folders(folder, text)
-    match_count = 0
+    matches  search_folders(folder, text)
+    match_count  0
     for m in matches:
-        match_count += 1
+        match_count + 1
         # print(m)
         # print('--------- MATCH -------------')
         # print('file: ' + m.file)
@@ -38,28 +38,28 @@ def print_header():
 
 
 def get_folder_from_user():
-    folder = input('What folder do you want to search? ')
-    if not folder or not folder.strip():
-        return None
+    folder  input('What folder do you want to search? ')
+    __ not folder or not folder.strip():
+        return N..
 
-    if not os.path.isdir(folder):
-        return None
+    __ not os.path.isdir(folder):
+        return N..
 
     return os.path.abspath(folder)
 
 
 def get_search_text_from_user():
-    text = input('What are you searching for [single phrases only]? ')
-    return text.lower()
+    text  input('What are you searching for [single phrases only]? ')
+    return text.l..
 
 
 def search_folders(folder, text):
     # all_matches = []
-    items = os.listdir(folder)
+    items  os.listdir(folder)
 
     for item in items:
-        full_item = os.path.join(folder, item)
-        if os.path.isdir(full_item):
+        full_item  os.path.join(folder, item)
+        __ os.path.isdir(full_item):
             # matches = search_folders(full_item, text)
             # all_matches.extend(matches)
 
@@ -85,13 +85,13 @@ def search_file(filename, search_text):
     try:
 
         # matches = []
-        with open(filename, 'r', encoding='utf-8') as fin:
+        with open(filename, 'r', encoding'utf-8') as fin:
 
-            line_num = 0
+            line_num  0
             for line in fin:
-                line_num += 1
-                if line.lower().find(search_text) >= 0:
-                    m = SearchResult(line=line_num, file=filename, text=line)
+                line_num + 1
+                __ line.l...find(search_text) > 0:
+                    m  SearchResult(lineline_num, filefilename, textline)
                     # matches.append(m)
                     yield m
 
@@ -100,5 +100,5 @@ def search_file(filename, search_text):
         print("NOTICE: Binary file {} skipped.".format(filename))
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

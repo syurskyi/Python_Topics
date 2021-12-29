@@ -5,47 +5,47 @@ ____ collections _____ defaultdict
 
 c_ Graph:
     ___  - (self
-        nodes = set()
-        edges = defaultdict(li__)
-        distances = {}
+        nodes  set()
+        edges  defaultdict(li__)
+        distances  {}
     
     ___ addNode value
         nodes.add(value)
     
     ___ addEdge  fromNode, toNode, distance
         edges[fromNode].ap..(toNode)
-        distances[(fromNode, toNode)] = distance
+        distances[(fromNode, toNode)]  distance
 
 
 ___ dijkstra(graph, initial
-    visited = {initial : 0}
-    path = defaultdict(li__)
+    visited  {initial : 0}
+    path  defaultdict(li__)
 
-    nodes = set(graph.nodes)
+    nodes  set(graph.nodes)
 
     w__ nodes:
-        minNode = N..
+        minNode  N..
         ___ node __ nodes:
             __ node __ visited:
                 __ minNode __ N..:
-                    minNode = node
+                    minNode  node
                 ____ visited[node] < visited[minNode]:
-                    minNode = node
+                    minNode  node
         __ minNode __ N..:
             b__
 
         nodes.remove(minNode)
-        currentWeight = visited[minNode]
+        currentWeight  visited[minNode]
 
         ___ edge __ graph.edges[minNode]:
-            weight = currentWeight + graph.distances[(minNode, edge)]
+            weight  currentWeight + graph.distances[(minNode, edge)]
             __ edge no. __ visited or weight < visited[edge]:
-                visited[edge] = weight
+                visited[edge]  weight
                 path[edge].ap..(minNode)
     
     r_ visited, path
 
-customGraph = Graph()
+customGraph  Graph()
 customGraph.addNode("A")
 customGraph.addNode("B")
 customGraph.addNode("C")

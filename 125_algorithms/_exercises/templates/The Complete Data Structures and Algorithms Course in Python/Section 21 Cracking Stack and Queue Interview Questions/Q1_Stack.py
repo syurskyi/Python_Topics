@@ -5,10 +5,10 @@
 
 c_ MultiStack:
     ___  -   stacksize
-        numberstacks = 3
-        custList = [0] * (stacksize * numberstacks)
-        sizes = [0] * numberstacks
-        stacksize = stacksize
+        numberstacks  3
+        custList  [0] * (stacksize * numberstacks)
+        sizes  [0] * numberstacks
+        stacksize  stacksize
     
     ___ isFull  stacknum
         __ sizes[stacknum] __ stacksize:
@@ -23,34 +23,34 @@ c_ MultiStack:
             r_ F..
     
     ___ indexOfTop  stacknum
-        offset = stacknum * stacksize
+        offset  stacknum * stacksize
         r_ offset + sizes[stacknum]- 1
     
     ___ push  item, stacknum
         __ isFull(stacknum
             r_ "The stack is full"
         ____
-            sizes[stacknum] += 1
-            custList[indexOfTop(stacknum)] = item
+            sizes[stacknum] + 1
+            custList[indexOfTop(stacknum)]  item
     
     ___ pop  stacknum
         __ isEmpty(stacknum
             r_ "The stack is empty"
         ____
-            value = custList[indexOfTop(stacknum)]
-            custList[indexOfTop(stacknum)] = 0
-            sizes[stacknum] -= 1
+            value  custList[indexOfTop(stacknum)]
+            custList[indexOfTop(stacknum)]  0
+            sizes[stacknum] - 1
             r_ value
     
     ___ peek  stacknum
         __ isEmpty(stacknum
             r_ "The stack is empty"
         ____
-            value = custList[indexOfTop(stacknum)]
+            value  custList[indexOfTop(stacknum)]
             r_ value
 
 
-customStack = MultiStack(6)
+customStack  MultiStack(6)
 print(customStack.isFull(0))
 print(customStack.isEmpty(1))
 customStack.push(1, 0)

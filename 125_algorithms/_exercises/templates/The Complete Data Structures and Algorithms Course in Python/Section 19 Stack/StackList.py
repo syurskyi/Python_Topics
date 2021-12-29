@@ -4,11 +4,11 @@
     
 c_ Stack:
     ___  - (self
-        li__ = []
+        li__  []
     
     ___ __str__(self
-        values = li__.re..
-        values = [st.(x) ___ x __ li__]
+        values  li__.re..
+        values  [st.(x) ___ x __ li__]
         r_ '\n'.j..(values)
     
     # isEmpty
@@ -38,12 +38,12 @@ c_ Stack:
     
     # delete
     ___ delete(self
-        li__ = N..
+        li__  N..
 
 
 
 
-customStack = Stack()
+customStack  Stack()
 customStack.push(1)
 customStack.push(2)
 customStack.push(3)

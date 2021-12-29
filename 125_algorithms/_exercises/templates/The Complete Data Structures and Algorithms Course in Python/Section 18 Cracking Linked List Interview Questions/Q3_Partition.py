@@ -7,24 +7,24 @@
 ____ LinkedList _____ LinkedList
 
 ___ partition(ll, x
-    curNode = ll.head
-    ll.tail = ll.head
+    curNode  ll.head
+    ll.tail  ll.head
 
     w__ curNode:
-        nextNode = curNode.next
-        curNode.next = N..
+        nextNode  curNode.next
+        curNode.next  N..
         __ curNode.value < x:
-            curNode.next = ll.head
-            ll.head = curNode
+            curNode.next  ll.head
+            ll.head  curNode
         ____
-            ll.tail.next = curNode
-            ll.tail = curNode
-        curNode = nextNode
+            ll.tail.next  curNode
+            ll.tail  curNode
+        curNode  nextNode
     
     __ ll.tail.next __ no. N..:
-        ll.tail.next = N..
+        ll.tail.next  N..
 
-customLL = LinkedList()
+customLL  LinkedList()
 customLL.generate(10,0,99)
 print(customLL)
 partition(customLL, 30)

@@ -1,4 +1,4 @@
 import os
 
-fnames = sorted([name for name in os.listdir() if name.endswith('.py')])
+fnames  sorted([name for name in os.listdir() __ name.endswith('.py')])
 print(fnames)

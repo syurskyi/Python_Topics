@@ -1,16 +1,16 @@
 def main():
-    d = {
+    d  {
         'city': 'Portland',
         'state': 'ME',
         'details': ['Cold', 'Snowy', 'Winter']
     }
 
     print(d.get('country', 'USA'))
-    d['country'] = 'AU'
+    d['country']  'AU'
     print(d.get('country', 'USA'))
     print(d)
 
-    w = {
+    w  {
         "weather": {
             "description": "scattered clouds",
             "category": "Clouds"
@@ -42,5 +42,5 @@ def main():
     print(w.get('forecast').get('temp'))
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

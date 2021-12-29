@@ -21,8 +21,8 @@
 #     ___ reverseBetween  head m n
 #         """
 #         :type head: ListNode
-#         :type m: int
-#         :type n: int
+#         :type m: i..
+#         :type n: i..
 #         :rtype: ListNode
 #         """
 #         dummy _ ? -1

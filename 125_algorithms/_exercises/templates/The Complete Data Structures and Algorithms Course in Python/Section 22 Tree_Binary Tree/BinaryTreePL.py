@@ -3,15 +3,15 @@
 
 c_ BinaryTree:
     ___  -   size
-        customList = size * [N..]
-        lastUsedIndex = 0
-        maxSize = size
+        customList  size * [N..]
+        lastUsedIndex  0
+        maxSize  size
     
     ___ insertNode  value
         __ lastUsedIndex + 1 __ maxSize:
             r_ "The Binary Tree is full"
-        customList[lastUsedIndex+1] = value
-        lastUsedIndex += 1
+        customList[lastUsedIndex+1]  value
+        lastUsedIndex + 1
         r_ "The value has been successfully inserted"
 
     ___ searchNode  nodeValue
@@ -50,19 +50,19 @@ c_ BinaryTree:
             r_ "There is not any node to delete"
         ___ i __ ra__(1, lastUsedIndex+1
             __ customList[i] __ value:
-                customList[i] = customList[lastUsedIndex]
-                customList[lastUsedIndex] = N..
-                lastUsedIndex -= 1
+                customList[i]  customList[lastUsedIndex]
+                customList[lastUsedIndex]  N..
+                lastUsedIndex - 1
                 r_ "The node has been successfully deleted"
     
     ___ deleteBT(self
-       customList = N..
+       customList  N..
        r_ "The BT has been successfully deleted"
 
     
  
 
-newBT = BinaryTree(8)
+newBT  BinaryTree(8)
 newBT.insertNode("Drinks")
 newBT.insertNode("Hot")
 newBT.insertNode("Cold")

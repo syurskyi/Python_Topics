@@ -5,10 +5,10 @@ _____ QueueLinkedList as queue
 
 c_ AVLNode:
     ___  -   data
-        data = data
-        leftChild = N..
-        rightChild = N..
-        height = 1
+        data  data
+        leftChild  N..
+        rightChild  N..
+        height  1
 
 ___ preOrderTraversal(rootNode
     __ no. rootNode:
@@ -35,10 +35,10 @@ ___ levelOrderTraversal(rootNode
     __ no. rootNode:
         r_
     ____
-        customQueue = queue.Queue()
+        customQueue  queue.Queue()
         customQueue.enqueue(rootNode)
         w__ no.(customQueue.isEmpty()):
-            root = customQueue.dequeue()
+            root  customQueue.dequeue()
             print(root.value.data)
             __ root.value.leftChild __ no. N..:
                 customQueue.enqueue(root.value.leftChild)
@@ -66,19 +66,19 @@ ___ getHeight(rootNode
     r_ rootNode.height
 
 ___ rightRotate(disbalanceNode
-    newRoot = disbalanceNode.leftChild
-    disbalanceNode.leftChild = disbalanceNode.leftChild.rightChild
-    newRoot.rightChild = disbalanceNode
-    disbalanceNode.height = 1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height = 1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    newRoot  disbalanceNode.leftChild
+    disbalanceNode.leftChild  disbalanceNode.leftChild.rightChild
+    newRoot.rightChild  disbalanceNode
+    disbalanceNode.height  1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height  1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ leftRotate(disbalanceNode
-    newRoot = disbalanceNode.rightChild
-    disbalanceNode.rightChild = disbalanceNode.rightChild.leftChild
-    newRoot.leftChild = disbalanceNode
-    disbalanceNode.height = 1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height = 1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    newRoot  disbalanceNode.rightChild
+    disbalanceNode.rightChild  disbalanceNode.rightChild.leftChild
+    newRoot.leftChild  disbalanceNode
+    disbalanceNode.height  1 + ma_(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height  1 + ma_(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ getBalance(rootNode
@@ -90,21 +90,21 @@ ___ insertNode(rootNode, nodeValue
     __ no. rootNode:
         r_ AVLNode(nodeValue)
     ____ nodeValue < rootNode.data:
-        rootNode.leftChild = insertNode(rootNode.leftChild, nodeValue)
+        rootNode.leftChild  insertNode(rootNode.leftChild, nodeValue)
     ____
-        rootNode.rightChild = insertNode(rootNode.rightChild, nodeValue)
+        rootNode.rightChild  insertNode(rootNode.rightChild, nodeValue)
     
-    rootNode.height = 1 + ma_(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
-    balance = getBalance(rootNode)
+    rootNode.height  1 + ma_(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
+    balance  getBalance(rootNode)
     __ balance > 1 a__ nodeValue < rootNode.leftChild.data:
         r_ rightRotate(rootNode)
     __ balance > 1 a__ nodeValue > rootNode.leftChild.data:
-        rootNode.leftChild = leftRotate(rootNode.leftChild)
+        rootNode.leftChild  leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
     __ balance < -1 a__ nodeValue > rootNode.rightChild.data:
         r_ leftRotate(rootNode)
     __ balance < -1 a__ nodeValue < rootNode.rightChild.data:
-        rootNode.rightChild = rightRotate(rootNode.rightChild)
+        rootNode.rightChild  rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     r_ rootNode
 
@@ -117,46 +117,46 @@ ___ deleteNode(rootNode, nodeValue
     __ no. rootNode:
         r_ rootNode
     ____ nodeValue < rootNode.data:
-        rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
+        rootNode.leftChild  deleteNode(rootNode.leftChild, nodeValue)
     ____ nodeValue > rootNode.data:
-        rootNode.rightChild = deleteNode(rootNode.rightChild, nodeValue)
+        rootNode.rightChild  deleteNode(rootNode.rightChild, nodeValue)
     ____
         __ rootNode.leftChild __ N..:
-            temp = rootNode.rightChild
-            rootNode = N..
+            temp  rootNode.rightChild
+            rootNode  N..
             r_ temp
         ____ rootNode.rightChild __ N..:
-            temp = rootNode.leftChild
-            rootNode = N..
+            temp  rootNode.leftChild
+            rootNode  N..
             r_ temp
-        temp = getMinValueNode(rootNode.rightChild)
-        rootNode.data = temp.data
-        rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
-    balance = getBalance(rootNode)
-    __ balance > 1 a__ getBalance(rootNode.leftChild) >= 0:
+        temp  getMinValueNode(rootNode.rightChild)
+        rootNode.data  temp.data
+        rootNode.rightChild  deleteNode(rootNode.rightChild, temp.data)
+    balance  getBalance(rootNode)
+    __ balance > 1 a__ getBalance(rootNode.leftChild) > 0:
         r_ rightRotate(rootNode)
-    __ balance < -1 a__ getBalance(rootNode.rightChild) <= 0:
+    __ balance < -1 a__ getBalance(rootNode.rightChild) < 0:
         r_ leftRotate(rootNode)
     __ balance > 1 a__ getBalance(rootNode.leftChild) < 0:
-        rootNode.leftChild = leftRotate(rootNode.leftChild)
+        rootNode.leftChild  leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
     __ balance < -1 a__ getBalance(rootNode.rightChild) > 0:
-        rootNode.rightChild = rightRotate(rootNode.rightChild)
+        rootNode.rightChild  rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     
     r_ rootNode
 
 ___ deleteAVL(rootNode
-    rootNode.data = N..
-    rootNode.leftChild = N..
-    rootNode.rightChild = N..
+    rootNode.data  N..
+    rootNode.leftChild  N..
+    rootNode.rightChild  N..
     r_ "The AVL has been successfully deleted"
 
 
 
-newAVL = AVLNode(5)
-newAVL = insertNode(newAVL, 10)
-newAVL = insertNode(newAVL, 15)
-newAVL = insertNode(newAVL, 20)
+newAVL  AVLNode(5)
+newAVL  insertNode(newAVL, 10)
+newAVL  insertNode(newAVL, 15)
+newAVL  insertNode(newAVL, 20)
 deleteAVL(newAVL)
 levelOrderTraversal(newAVL)

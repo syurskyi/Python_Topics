@@ -6,10 +6,10 @@ _____ DisjointSet as dst
 
 c_ Graph:
     ___  -   vertices
-        V = vertices
-        graph = []
-        nodes = []
-        MST = []
+        V  vertices
+        graph  []
+        nodes  []
+        MST  []
 
     ___ addEdge  s, d, w
         graph.ap..([s, d, w])
@@ -22,21 +22,21 @@ c_ Graph:
             print("%s - %s: %s" % (s, d, w))
     
     ___ kruskalAlgo(self
-        i, e = 0, 0
-        ds = dst.DisjointSet(nodes)
-        graph = sorted(graph, key=lambda item: item[2])
+        i, e  0, 0
+        ds  dst.DisjointSet(nodes)
+        graph  sorted(graph, keylambda item: item[2])
         w__ e < V - 1:
-            s, d, w = graph[i]
-            i += 1
-            x = ds.find(s)
-            y = ds.find(d)
-            __ x != y:
-                e += 1
+            s, d, w  graph[i]
+            i + 1
+            x  ds.find(s)
+            y  ds.find(d)
+            __ x ! y:
+                e + 1
                 MST.ap..([s,d,w])
                 ds.union(x,y)
         printSolution(s,d,w)
 
-g = Graph(5)
+g  Graph(5)
 g.addNode("A")
 g.addNode("B")
 g.addNode("C")

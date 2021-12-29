@@ -1,1 +1,1 @@
-pass = input("Please enter your password: ")
+pass  input("Please enter your password: ")

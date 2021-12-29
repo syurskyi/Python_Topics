@@ -6,5 +6,5 @@
 import os
 
 print(help(os.listdir))
-names = sorted([name for name in os.listdir() if name.startswith('e')])
+names  sorted([name for name in os.listdir() __ name.startswith('e')])
 print(names)

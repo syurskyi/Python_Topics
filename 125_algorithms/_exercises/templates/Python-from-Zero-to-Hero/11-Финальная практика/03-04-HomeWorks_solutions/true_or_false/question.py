@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(frozen=True)
+@dataclass(frozenTrue)
 class Question:
     text: str
     is_true: bool

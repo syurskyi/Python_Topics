@@ -1,0 +1,6 @@
+<p>Write a function called <code>get_profile</code> that takes:</p><ul><li>a required name,</li><li>a required age,</li><li>one or more optional sports (args),</li><li>one or more optional awards (keyword args).</li></ul><p>Add the following validations:</p><ul><li>if age is not an int raise a <code>ValueError</code>,</li><li>if more than 5 sports are provided raise a <code>ValueError</code>.</li></ul><p>Some examples how your function can be called (see also the <i>TESTS</i> tab):</p><pre>get_profile('tim', 36)
+get_profile('tim', 36, 'tennis', 'basketball')
+get_profile('tim', 36, 'tennis', 'basketball', champ='helped out team in crisis') 
+</pre><p>The function should return a dict with all the args, like so:</p><pre>get_profile('tim', 36) == {'name': 'tim', 'age': 36}  # some arg types
+{'name': 'tim', 'age': 36, 'sports': ['basketball', 'tennis'], 'awards': {'champ': 'helped out team in crisis'}}  # all arg types
+</pre>(args list to be sorted alphabetically)<br><p>We hope this gives you a good handle on Python's different types of function arguments. Enjoy!</p>

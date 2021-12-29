@@ -5,8 +5,8 @@
 
 c_ PlateStack(
     ___  -   capacity
-        capacity = capacity
-        stacks = []
+        capacity  capacity
+        stacks  []
     
     ___ __str__(self
         r_ stacks
@@ -32,7 +32,7 @@ c_ PlateStack(
             r_ N..
 
 
-customStack= PlateStack(2)
+customStack PlateStack(2)
 customStack.push(1)
 customStack.push(2)
 customStack.push(3)

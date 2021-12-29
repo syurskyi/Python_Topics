@@ -5,7 +5,7 @@
 
 c_ Stack(
   ___  - (self
-    li__ = []
+    li__  []
   
   ___ __len__(self
     r_ le_(li__)
@@ -20,8 +20,8 @@ c_ Stack(
 
 c_ QueueviaStack(
   ___  - (self
-    inStack = Stack()
-    outStack = Stack()
+    inStack  Stack()
+    outStack  Stack()
   
   ___ enqueue  item
     inStack.push(item)
@@ -29,13 +29,13 @@ c_ QueueviaStack(
   ___ dequeue(self
     w__ le_(inStack
       outStack.push(inStack.pop())
-    result = outStack.pop()
+    result  outStack.pop()
     w__ le_(outStack
       inStack.push(outStack.pop())
     r_ result
   
 
-customQueue = QueueviaStack()
+customQueue  QueueviaStack()
 customQueue.enqueue(1)
 customQueue.enqueue(2)
 customQueue.enqueue(3)

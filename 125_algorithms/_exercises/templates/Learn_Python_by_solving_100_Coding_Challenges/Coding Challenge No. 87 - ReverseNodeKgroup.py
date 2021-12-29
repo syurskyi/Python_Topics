@@ -20,7 +20,7 @@
 #     ___ reverseKGroup  head k
 #         """
 #         :type head: ListNode
-#         :type k: int
+#         :type k: i..
 #         :rtype: ListNode
 #         """
 #         __ no. ? o. ? <_ 1

@@ -2,26 +2,26 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 c_ Node:
-    ___  -   value = N..
-        value = value
-        next = N..
+    ___  -   value  N..
+        value  value
+        next  N..
 
 c_ LinkedList:
     ___  - (self
-        head = N..
+        head  N..
     
     ___ __iter__(self
-        curNode = head
+        curNode  head
         w__ curNode:
             yield curNode
-            curNode = curNode.next
+            curNode  curNode.next
 
 c_ Stack:
     ___  - (self
-        LinkedList = LinkedList()
+        LinkedList  LinkedList()
     
     ___ __str__(self
-        values = [st.(x.value) ___ x __ LinkedList]
+        values  [st.(x.value) ___ x __ LinkedList]
         r_ '\n'.j..(values)
     
     ___ isEmpty(self
@@ -31,32 +31,32 @@ c_ Stack:
             r_ F..
 
     ___ push  value
-        node = Node(value)
-        node.next = LinkedList.head
-        LinkedList.head = node
+        node  Node(value)
+        node.next  LinkedList.head
+        LinkedList.head  node
     
     ___ pop(self
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            nodeValue = LinkedList.head.value
-            LinkedList.head = LinkedList.head.next
+            nodeValue  LinkedList.head.value
+            LinkedList.head  LinkedList.head.next
             r_ nodeValue
     
     ___ peek(self
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            nodeValue = LinkedList.head.value
+            nodeValue  LinkedList.head.value
             r_ nodeValue
     
     ___ delete(self
-        LinkedList.head = N..
+        LinkedList.head  N..
     
 
 
 
-customStack = Stack()
+customStack  Stack()
 customStack.push(1)
 customStack.push(2)
 customStack.push(3)

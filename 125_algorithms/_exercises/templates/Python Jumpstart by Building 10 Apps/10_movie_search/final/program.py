@@ -15,13 +15,13 @@ def print_header():
 
 
 def search_event_loop():
-    search = 'ONCE_THROUGH_LOOP'
+    search  'ONCE_THROUGH_LOOP'
 
-    while search != 'x':
+    w___ search ! 'x':
         try:
-            search = input('Movie search text (x to exit): ')
-            if search != 'x':
-                results = movie_svc.find_movies(search)
+            search  input('Movie search text (x to exit): ')
+            __ search ! 'x':
+                results  movie_svc.find_movies(search)
                 print("Found {} results.".format(len(results)))
                 for r in results:
                     print('{} -- {}'.format(
@@ -38,5 +38,5 @@ def search_event_loop():
     print('exiting...')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

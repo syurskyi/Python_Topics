@@ -7,17 +7,17 @@ c_ Api:
     """
     @classmethod
     ___ serve(cls, req):
-        wp = jp.WebPage()
-        word = req.query_params.get('w')
+        wp  jp.WebPage()
+        word  req.query_params.get('w')
 
-        defined = definition.Definition(word).get()
+        defined  definition.Definition(word).get()
 
-        response = {
+        response  {
             "word":word,
             "definition":defined
         }
 
-        wp.html = json.dumps(response)
+        wp.html  json.dumps(response)
         r_ wp
 
 

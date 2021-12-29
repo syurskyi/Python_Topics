@@ -1,5 +1,5 @@
 def string_rev(str):
-    str = str.split()
+    str  str.split()
     str.reverse()
     return ' '.join(str)
 

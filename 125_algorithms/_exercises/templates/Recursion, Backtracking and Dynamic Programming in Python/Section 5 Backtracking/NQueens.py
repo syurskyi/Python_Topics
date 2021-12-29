@@ -1,8 +1,8 @@
 c_ QueensProblem:
 
     ___  -   n
-        n = n
-        chess_table = [[0 ___ i __ ra__(n)] ___ j __ ra__(n)]
+        n  n
+        chess_table  [[0 ___ i __ ra__(n)] ___ j __ ra__(n)]
 
     ___ solve_n_queens(self
 
@@ -25,7 +25,7 @@ c_ QueensProblem:
         ___ row_index __ ra__(n
             __ is_place_valid(row_index, col_index
                 # 1 means that there is a queen at the given location
-                chess_table[row_index][col_index] = 1
+                chess_table[row_index][col_index]  1
 
                 # we call the same function with col_index+1
                 # we try to find the location of the next queen in the next column
@@ -34,7 +34,7 @@ c_ QueensProblem:
 
                 # BACKTRACK
                 print('BACKTRACKING ...')
-                chess_table[row_index][col_index] = 0
+                chess_table[row_index][col_index]  0
 
         # when we have considered all the rows in a col without
         # finding a valid cell for the queen
@@ -53,7 +53,7 @@ c_ QueensProblem:
 
         # we have to check the diagonals
         # from top left to bottom right
-        j = col_index
+        j  col_index
         ___ i __ ra__(row_index, -1, -1
 
             __ i < 0:
@@ -62,11 +62,11 @@ c_ QueensProblem:
             __ chess_table[i][j] __ 1:
                 r_ F..
 
-            j = j - 1
+            j  j - 1
 
         # we have to check the diagonals
         # from top right to bottom left
-        j = col_index
+        j  col_index
         ___ i __ ra__(row_index, n
 
             __ j < 0:
@@ -75,7 +75,7 @@ c_ QueensProblem:
             __ chess_table[i][j] __ 1:
                 r_ F..
 
-            j = j - 1
+            j  j - 1
 
         r_ T..
 
@@ -83,12 +83,12 @@ c_ QueensProblem:
         ___ i __ ra__(n
             ___ j __ ra__(n
                 __ chess_table[i][j] __ 1:
-                    print(' Q ', end='')
+                    print(' Q ', end'')
                 ____
-                    print(' - ', end='')
+                    print(' - ', end'')
             print('\n')
 
 
 __ ___ __ '__main__':
-    queens = QueensProblem(100)
+    queens  QueensProblem(100)
     queens.solve_n_queens()

@@ -1,4 +1,4 @@
-student_list = ['andrew', 'akshat', 'chris', 'harshit', 'lary', 'shubham', 'tim', 'drake', 'ashish']
+student_list  ['andrew', 'akshat', 'chris', 'harshit', 'lary', 'shubham', 'tim', 'drake', 'ashish']
 
 ___ displayStudent(student_list):
     print(student_list[0]) #O(1)

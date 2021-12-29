@@ -2,10 +2,10 @@
 #Please use Python to print out those countries that have an area of greater than 2,000,000.
 import sqlite3
 
-conn = sqlite3.connect("database.db")
-cur = conn.cursor()
+conn  sqlite3.connect("database.db")
+cur  conn.cursor()
 cur.execute("SELECT country FROM countries WHERE area >= 2000000")
-rows = cur.fetchall()
+rows  cur.fetchall()
 conn.close()
 print(rows)
 

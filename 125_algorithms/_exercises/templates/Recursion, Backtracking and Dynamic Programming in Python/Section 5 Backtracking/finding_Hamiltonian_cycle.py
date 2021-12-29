@@ -1,9 +1,9 @@
 c_ HamiltonianProblem:
 
     ___  -   adjacency_matrix
-        n = le_(adjacency_matrix)
-        adjacency_matrix = adjacency_matrix
-        hamiltonian_path = []
+        n  le_(adjacency_matrix)
+        adjacency_matrix  adjacency_matrix
+        hamiltonian_path  []
 
     ___ hamiltonian_cycle(self
 
@@ -21,7 +21,7 @@ c_ HamiltonianProblem:
         # check whether if we are done: the last node can be connected to the first in order to form a cycle?
         __ position __ n:
 
-            last_item_index = hamiltonian_path[position - 1]
+            last_item_index  hamiltonian_path[position - 1]
 
             # last node can be connected to the first one so return true because
             # we can form a cycle
@@ -68,9 +68,9 @@ c_ HamiltonianProblem:
 
 
 __ ___ __ "__main__":
-    m = [[0, 1, 1],
+    m  [[0, 1, 1],
          [1, 0, 1],
          [1, 1, 0]]
 
-    hamiltonian = HamiltonianProblem(m)
+    hamiltonian  HamiltonianProblem(m)
     hamiltonian.hamiltonian_cycle()

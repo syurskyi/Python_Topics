@@ -1,5 +1,5 @@
 def foo(mydict):
-    lst = []
+    lst  []
     for key, value in mydict.items():
-        lst = lst + value
+        lst  lst + value
     return sum(lst)
