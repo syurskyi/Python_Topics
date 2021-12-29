@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-import collections
+_______ collections
 
 
 class Solution(object):
@@ -15,17 +15,17 @@ class Solution(object):
     """
 
     ___ helper(p, res):
-      __ not p:
-        return 0
+      __ n.. p:
+        r.. 0
       left = helper(p.left, res)
       right = helper(p.right, res)
       depth = max(left, right) + 1
-      res[depth].append(p.val)
-      return depth
+      res[depth].a..(p.val)
+      r.. depth
 
-    ans = []
-    res = collections.defaultdict(list)
+    ans    # list
+    res = collections.defaultdict(l..)
     helper(root, res)
-    for i in range(1, len(res) + 1):
-      ans.append(res[i])
-    return ans
+    ___ i __ r..(1, l..(res) + 1):
+      ans.a..(res[i])
+    r.. ans

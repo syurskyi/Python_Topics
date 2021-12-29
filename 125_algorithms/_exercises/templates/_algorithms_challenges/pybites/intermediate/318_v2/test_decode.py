@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from decode import get_credit_cards
+____ decode _______ get_credit_cards
 
 csv1 = b"""
 Zmlyc3RfbmFtZSxsYXN0X25hbWUsY3JlZGl0X2NhcmQKS2VlbGJ5LE1hY0NhZmZlcmt5LD
@@ -37,4 +37,4 @@ expected2 = [
     (csv1, expected1), (csv2, expected2)
 ])
 ___ test_get_credit_cards(arg, expected):
-    assert get_credit_cards(arg) == expected
+    ... get_credit_cards(arg) __ expected

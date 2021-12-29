@@ -1,18 +1,18 @@
-from fizzbuzz import fizzbuzz
+____ fizzbuzz _______ fizzbuzz
 
 # write one or more pytest functions below, they need to start with test_
 ___ test_fizzbuzz_base():
-    assert fizzbuzz(1) == 1
-    assert fizzbuzz(2) == 2
+    ... fizzbuzz(1) __ 1
+    ... fizzbuzz(2) __ 2
 
 ___ test_fizzbuzz_fizz():
-    assert fizzbuzz(3) == 'Fizz'
-    assert fizzbuzz(6) == 'Fizz'
+    ... fizzbuzz(3) __ 'Fizz'
+    ... fizzbuzz(6) __ 'Fizz'
 
 ___ test_fizzbuzz_buzz():
-    assert fizzbuzz(5) == 'Buzz'
-    assert fizzbuzz(10) == 'Buzz'
+    ... fizzbuzz(5) __ 'Buzz'
+    ... fizzbuzz(10) __ 'Buzz'
 
 ___ test_fizzbuzz_fizzbuzz():
-    assert fizzbuzz(15) == 'Fizz Buzz'
-    assert fizzbuzz(30) == 'Fizz Buzz'
+    ... fizzbuzz(15) __ 'Fizz Buzz'
+    ... fizzbuzz(30) __ 'Fizz Buzz'

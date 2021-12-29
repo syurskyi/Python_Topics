@@ -10,24 +10,24 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        __ not grid: return 0
-        n = len(grid[0])
-        m = len(grid)
-        dp = [[0]*n for i in range(m)]
-        for i in range(m):
-            for j in range(n):
-                __ i == 0 and j == 0:
+        __ n.. grid: r.. 0
+        n = l..(grid[0])
+        m = l..(grid)
+        dp = [[0]*n ___ i __ r..(m)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ i __ 0 and j __ 0:
                     dp[i][j] = grid[i][j]
-                elif i == 0 and j != 0:
+                ____ i __ 0 and j != 0:
                     dp[i][j] = dp[i][j-1] + grid[i][j]
-                elif i != 0 and j == 0:
+                ____ i != 0 and j __ 0:
                     dp[i][j] = dp[i-1][j] + grid[i][j]
-                else:
-                    dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
-        return dp[-1][-1]
+                ____:
+                    dp[i][j] = m..(dp[i-1][j], dp[i][j-1])+grid[i][j]
+        r.. dp[-1][-1]
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

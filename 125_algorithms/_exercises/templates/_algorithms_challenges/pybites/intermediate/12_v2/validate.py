@@ -1,4 +1,4 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
 User = namedtuple('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
@@ -26,10 +26,10 @@ class UserNoPermission(Exception):
 ___ get_secret_token(username):
     
 
-    for user in USERS:
-        __ user.name == username:
+    ___ user __ USERS:
+        __ user.name __ username:
             break
-    else:
+    ____:
         raise UserDoesNotExist
 
     __ user.expired:
@@ -38,7 +38,7 @@ ___ get_secret_token(username):
     __ user.role != ADMIN:
         raise UserNoPermission
 
-    return SECRET
+    r.. SECRET
 
 
 

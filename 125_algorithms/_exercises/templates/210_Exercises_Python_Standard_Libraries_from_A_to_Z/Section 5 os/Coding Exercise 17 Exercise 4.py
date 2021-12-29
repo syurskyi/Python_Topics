@@ -1,4 +1,4 @@
-import os
+_______ os
 
-fnames  sorted([name for name in os.listdir() __ name.endswith('.py')])
+fnames  s..([name ___ name __ os.listdir() __ name.endswith('.py')])
 print(fnames)

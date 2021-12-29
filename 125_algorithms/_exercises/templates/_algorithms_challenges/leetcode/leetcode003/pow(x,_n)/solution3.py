@@ -3,11 +3,11 @@ class Solution:
     # @param n, a integer
     # @return a float
     ___ pow(self, x, n):
-        __ n == 0:
-            return 1.0
-        elif n == 1:
-            return x
-        elif n < 0:
-            return 1.0 / self.pow(x, -n)
-        else:
-            return self.pow(x, n / 2) * self.pow(x, n - n / 2)
+        __ n __ 0:
+            r.. 1.0
+        ____ n __ 1:
+            r.. x
+        ____ n < 0:
+            r.. 1.0 / self.pow(x, -n)
+        ____:
+            r.. self.pow(x, n / 2) * self.pow(x, n - n / 2)

@@ -1,11 +1,11 @@
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
-import re
-import datetime 
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
+_______ re
+_______ datetime
 
-from collections import defaultdict
-from dateutil.parser import parse
+____ collections _______ defaultdict
+____ dateutil.parser _______ parse
 
 # get the data
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -14,8 +14,8 @@ base_url = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 fathers_days_countries = TMP / 'fathers-day-countries.txt'
 fathers_days_recurring = TMP / 'fathers-day-recurring.txt'
 
-for file_ in (fathers_days_countries, fathers_days_recurring):
-    __ not file_.exists():
+___ file_ __ (fathers_days_countries, fathers_days_recurring):
+    __ n.. file_.exists():
         urlretrieve(base_url + file_.name, file_)
 
 
@@ -24,19 +24,19 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
     year = str(year)
     with open(filename,'r') as f:
 
-        for line in f:
+        ___ line __ f:
             line = line.strip()
-            __ not line or line.startswith('#'):
+            __ n.. line o. line.startswith('#'):
                 continue
-            elif line.startswith('*'):
+            ____ line.startswith('*'):
 
                 line = re.sub(r'\band\b','',line)
 
-                countries =  list(map(lambda s: s.strip('* ').strip(),line.split(',')))
-            else:
+                countries =  l..(map(l.... s: s.strip('* ').strip(),line.split(',')))
+            ____:
                 date,day = line.split(':')
 
-                __ date == year:
+                __ date __ year:
                     day = day.strip()
                     date_to_countries[day].extend(countries)
 
@@ -46,14 +46,14 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
 
 
     with open(filename,'r') as f:
-        for line in f:
+        ___ line __ f:
             line = line.strip()
-            __ not line or line.startswith('#'):
+            __ n.. line o. line.startswith('#'):
                 continue
             __ line.startswith('*'):
                 date = line[2:]
-            else:
-                days_to_countries[date].append(line)
+            ____:
+                days_to_countries[date].a..(line)
 
 
 
@@ -70,12 +70,12 @@ ___ get_father_days(year=2020):
 
        Consider using the the 2 _parse* helpers.
     """
-    days_to_countries = defaultdict(list)
+    days_to_countries = defaultdict(l..)
 
     _parse_father_days_per_country(year,days_to_countries)
     _parse_recurring_father_days(days_to_countries)
 
-    return days_to_countries
+    r.. days_to_countries
 
 
 
@@ -96,13 +96,13 @@ ___ generate_father_day_planning(days_to_countries_ N..
     """Prints all father days in order, example in tests and
        Bite description
     """
-    __ days_to_countries is None:
+    __ days_to_countries __ N..
         days_to_countries = get_father_days()
 
-    dates = list(days_to_countries.keys())
+    dates = l..(days_to_countries.keys())
 
 
-    for i,date in enumerate(dates):
+    ___ i,date __ enumerate(dates):
         dates[i] = parse(date,default=datetime.datetime(2020,1,1))
         #days_to_countries[date].sort()
 
@@ -111,7 +111,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
     dates.sort()
 
 
-    for date in dates:
+    ___ date __ dates:
         date = date.strftime('%B %d')
         date = re.sub(r'0(\d)',r'\1',date)
 
@@ -119,7 +119,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
         print(date)
 
-        for country in countries:
+        ___ country __ countries:
             print(f'- {country}')
 
         print()
@@ -129,6 +129,6 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     generate_father_day_planning()

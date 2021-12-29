@@ -5,54 +5,54 @@ class StackUnderflowError(Exception):
 ___ is_integer(string):
     try:
         int(string)
-        return True
+        r.. True
     except ValueError:
-        return False
+        r.. False
 
 
 ___ evaluate(input_data):
-    __ not input_data:
-        return []
+    __ n.. input_data:
+        r.. []
     defines = {}
-    while input_data[0][:1] == ':':
-        values = input_data.pop(0).split()
+    while input_data[0][:1] __ ':':
+        values = input_data.pop(0).s.. 
         values.pop()
         values.pop(0)
         key = values.pop(0).lower()
         __ is_integer(key):
             raise ValueError("Integers cannot be redefined")
         defines[key] = values
-    stack = []
-    input_data = input_data[-1].split()
+    stack    # list
+    input_data = input_data[-1].s.. 
     while any(input_data):
         word = input_data.pop(0).lower()
         try:
             __ is_integer(word):
-                stack.append(int(word))
-            elif word in defines:
+                stack.a..(int(word))
+            ____ word __ defines:
                 input_data = defines[word] + input_data
-            elif word == '+':
-                stack.append(stack.pop() + stack.pop())
-            elif word == '-':
-                stack.append(-stack.pop() + stack.pop())
-            elif word == '*':
-                stack.append(stack.pop() * stack.pop())
-            elif word == '/':
+            ____ word __ '+':
+                stack.a..(stack.pop() + stack.pop())
+            ____ word __ '-':
+                stack.a..(-stack.pop() + stack.pop())
+            ____ word __ '*':
+                stack.a..(stack.pop() * stack.pop())
+            ____ word __ '/':
                 divisor = stack.pop()
-                __ divisor == 0:
+                __ divisor __ 0:
                     raise ZeroDivisionError("Attempted to divide by zero")
-                stack.append(int(stack.pop() / divisor))
-            elif word == 'dup':
-                stack.append(stack[-1])
-            elif word == 'drop':
+                stack.a..(int(stack.pop() / divisor))
+            ____ word __ 'dup':
+                stack.a..(stack[-1])
+            ____ word __ 'drop':
                 stack.pop()
-            elif word == 'swap':
-                stack.append(stack[-2])
+            ____ word __ 'swap':
+                stack.a..(stack[-2])
                 del stack[-3]
-            elif word == 'over':
-                stack.append(stack[-2])
-            else:
+            ____ word __ 'over':
+                stack.a..(stack[-2])
+            ____:
                 raise ValueError("{} has not been defined".format(word))
         except IndexError:
             raise StackUnderflowError("Insufficient number of items in stack")
-    return stack
+    r.. stack

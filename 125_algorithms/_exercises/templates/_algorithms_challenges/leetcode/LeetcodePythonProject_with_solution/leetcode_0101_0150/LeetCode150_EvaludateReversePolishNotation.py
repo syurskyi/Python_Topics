@@ -10,28 +10,28 @@ class Solution(object):
         :type tokens: List[str]
         :rtype: int
         """
-        import operator
-        stack = []
-        for token in tokens:
-            __ token == '+':
+        _______ operator
+        stack    # list
+        ___ token __ tokens:
+            __ token __ '+':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.append(num1+num2)
-            elif token == '-':
+                stack.a..(num1+num2)
+            ____ token __ '-':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.append(num2-num1)
-            elif token == '*':
+                stack.a..(num2-num1)
+            ____ token __ '*':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.append(num1*num2)
-            elif token == '/':
+                stack.a..(num1*num2)
+            ____ token __ '/':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.append(int(operator.truediv(num2, num1) ))
-            else:
-                stack.append(int(token))
-        return stack[-1]
+                stack.a..(int(operator.truediv(num2, num1) ))
+            ____:
+                stack.a..(int(token))
+        r.. stack[-1]
     
     ___ test(self):
         testCases = [
@@ -39,11 +39,11 @@ class Solution(object):
 #             ["4", "13", "5", "/", "+"],
             ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"],
         ]
-        for tokens in testCases:
+        ___ tokens __ testCases:
             print('tokens: %s' % (tokens))
             result = self.evalRPN(tokens)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -44,7 +44,7 @@ Note:
 0 <= clips[i][0], clips[i][1] <= 100
 0 <= T <= 100
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -57,12 +57,12 @@ class Solution:
         ret = 0
 
         i = 0
-        while i < len(clips):
+        while i < l..(clips):
             __ clips[i][0] > prev_e:  # gap
                 break
 
             max_e = -float("inf")
-            while i < len(clips) and clips[i][0] <= prev_e:
+            while i < l..(clips) and clips[i][0] <= prev_e:
                 max_e = max(max_e, clips[i][1])
                 i += 1
 
@@ -71,24 +71,24 @@ class Solution:
             __ prev_e >= T:
                 break
 
-        return ret __ prev_e >= T else -1
+        r.. ret __ prev_e >= T ____ -1
 
     ___ videoStitching_error(self, clips: List[List[int]], T: int) -> int:
         """
         gready take the max coverage?
         """
-        A = [(s, -e, s, e) for s, e in clips]
+        A = [(s, -e, s, e) ___ s, e __ clips]
         A.sort()
         ret = 1
         _, _, prev_s, prev_e = A[0]
         __ prev_s > 0:
-            return False
+            r.. False
 
-        for _, _, s, e in A[1:]:
+        ___ _, _, s, e __ A[1:]:
             __ s <= prev_e and e > prev_e:
                 prev_e = e
                 ret += 1
 
 
-__ __name__ == "__main__":
-    assert Solution().videoStitching([[0,4],[2,8]], 5) == 2
+__ __name__ __ "__main__":
+    ... Solution().videoStitching([[0,4],[2,8]], 5) __ 2

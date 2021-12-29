@@ -18,7 +18,7 @@ There are a total of 2 courses to take. To take course 1 you should have
 finished course 0, and to take course 0 you should also have finished course
 1. So it is impossible.
 """
-import sys
+_______ sys
 
 sys.setrecursionlimit(5000)
 
@@ -32,28 +32,28 @@ class Solution(object):
         Detect if course prerequisites graph has a cycle.
         """
 
-        self.unvisited = set(range(numCourses))
+        self.unvisited = set(r..(numCourses))
         self.visiting = set()
         self.visited = set()
-        self.graph = {x: set() for x in range(numCourses)}
-        for c, p in prerequisites:
+        self.graph = {x: set() ___ x __ r..(numCourses)}
+        ___ c, p __ prerequisites:
             self.graph[p].add(c)
 
-        for u in range(numCourses):
-            __ u in self.unvisited:
-                __ self.visit(u) is False:
-                    return False
-        return True
+        ___ u __ r..(numCourses):
+            __ u __ self.unvisited:
+                __ self.visit(u) __ False:
+                    r.. False
+        r.. True
 
     ___ visit(self, u):
-        __ u in self.visiting:
-            return False
-        elif u in self.unvisited:
+        __ u __ self.visiting:
+            r.. False
+        ____ u __ self.unvisited:
             self.unvisited.remove(u)
             self.visiting.add(u)
-            for v in self.graph[u]:
-                __ self.visit(v) is False:
-                    return False
+            ___ v __ self.graph[u]:
+                __ self.visit(v) __ False:
+                    r.. False
             self.visiting.remove(u)
             self.visited.add(u)
 
@@ -61,7 +61,7 @@ s = Solution()
 print(s.canFinish(1, []))
 print(s.canFinish(3, [[1, 0], [0, 1]]))
 with open('test.txt') as f:
-    args = f.read().split()
+    args = f.read().s..
     arg0 = int(args[0][:-1])
     arg1 = eval(args[1])
     print(s.canFinish(arg0, arg1))

@@ -12,18 +12,18 @@ n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 
 
 ___ longest_consec(strarr, k):
-    n = len(strarr)
-    __ n == 0 or k > n or k <= 0:
-        return ''
+    n = l..(strarr)
+    __ n __ 0 o. k > n o. k <= 0:
+        r.. ''
 
     longest = index = 0
-    for i in range(n - k + 1):
-        length = sum([len(s) for s in strarr[i: i + k]])
+    ___ i __ r..(n - k + 1):
+        length = s..([l..(s) ___ s __ strarr[i: i + k]])
         __ length > longest:
             longest = length
             index = i
 
-    return ''.join(strarr[index: index + k])
+    r.. ''.join(strarr[index: index + k])
 
 
-assert longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2) == "abigailtheta"
+... longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2) __ "abigailtheta"

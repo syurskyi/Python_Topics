@@ -3,7 +3,7 @@ Created on Oct 16, 2017
 
 @author: MT
 '''
-import heapq
+_______ heapq
 
 class Solution(object):
     ___ cutOffTree(self, forest):
@@ -11,11 +11,11 @@ class Solution(object):
         :type forest: List[List[int]]
         :rtype: int
         """
-        __ not forest or not forest[0]: return 0
-        m, n = len(forest), len(forest[0])
-        heap = []
-        for i in range(m):
-            for j in range(n):
+        __ n.. forest o. n.. forest[0]: r.. 0
+        m, n = l..(forest), l..(forest[0])
+        heap    # list
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 __ forest[i][j] > 1:
                     heapq.heappush(heap, (forest[i][j], i, j))
         sumVal = 0
@@ -23,30 +23,30 @@ class Solution(object):
         while heap:
             h, i, j = heapq.heappop(heap)
             step = self.minStep(forest, x, y, i, j, h, m, n)
-            __ step < 0: return -1
+            __ step < 0: r.. -1
             sumVal += step
             x, y = i, j
-        return sumVal
+        r.. sumVal
     
     ___ minStep(self, forest, x, y, i, j, h, m, n):
         step = 0
-        visited = [[False]*n for _ in range(m)]
+        visited = [[False]*n ___ _ __ r..(m)]
         visited[x][y] = True
-        queue = []
-        queue.append((x, y))
+        queue    # list
+        queue.a..((x, y))
         while queue:
-            size = len(queue)
-            for _ in range(size):
+            size = l..(queue)
+            ___ _ __ r..(size):
                 i0, j0 = queue.pop(0)
-                __ i0 == i and j0 == j: return step
-                for i1, j1 in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
-                    __ i1 < 0 or i1 >= m or j1 < 0 or j1 >= n or\
-                        forest[i1][j1] == 0 or visited[i1][j1]:
+                __ i0 __ i and j0 __ j: r.. step
+                ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
+                    __ i1 < 0 o. i1 >= m o. j1 < 0 o. j1 >= n o.\
+                        forest[i1][j1] __ 0 o. visited[i1][j1]:
                         continue
-                    queue.append((i1, j1))
+                    queue.a..((i1, j1))
                     visited[i1][j1] = True
             step += 1
-        return -1
+        r.. -1
     
     ___ test(self):
         testCases = [
@@ -73,11 +73,11 @@ class Solution(object):
                 [89078499,  18904913,   25462145,   60813308],
             ],
         ]
-        for forest in testCases:
+        ___ forest __ testCases:
             print('forest: %s' % forest)
             result = self.cutOffTree(forest)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

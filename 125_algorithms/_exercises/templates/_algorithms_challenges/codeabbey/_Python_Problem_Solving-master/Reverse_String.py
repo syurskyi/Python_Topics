@@ -1,13 +1,13 @@
-string_data = input().split()
+string_data = input().s.. 
 print(string_data)
-result = []
-for i in range(len(string_data)):
+result    # list
+___ i __ r..(l..(string_data)):
     str = string_data[i]
     str = str[::-1]
-    result.append(str)
+    result.a..(str)
 
 result = result[::-1]
 
-for j in result:
+___ j __ result:
     print(j,end=(' '))
     

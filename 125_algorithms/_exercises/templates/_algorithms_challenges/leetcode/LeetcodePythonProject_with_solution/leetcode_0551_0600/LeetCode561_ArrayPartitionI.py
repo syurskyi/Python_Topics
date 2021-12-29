@@ -7,4 +7,4 @@ Created on Aug 28, 2017
 class Solution(object):
     ___ arrayPairSum(self, nums):
         nums.sort()
-        return sum(nums[::2])
+        r.. s..(nums[::2])

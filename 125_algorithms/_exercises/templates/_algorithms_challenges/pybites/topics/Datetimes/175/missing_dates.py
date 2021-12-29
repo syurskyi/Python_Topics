@@ -1,5 +1,5 @@
-from datetime import date, timedelta
-from random import shuffle
+____ datetime _______ date, timedelta
+____ random _______ shuffle
 
 ___ get_missing_dates(dates):
     """Receives a range of dates and returns a sequence
@@ -10,10 +10,10 @@ ___ get_missing_dates(dates):
 
        See the Bite description and tests for example outputs.
     """
-    first_dt = min(dates)
+    first_dt = m..(dates)
     last_dt = max(dates)
-    full_dt = [first_dt+timedelta(i) for i in range((last_dt-first_dt).days+1)]
-    return sorted(set(full_dt)-set(dates))
+    full_dt = [first_dt+timedelta(i) ___ i __ r..((last_dt-first_dt).days+1)]
+    r.. s..(set(full_dt)-set(dates))
 
 
 ___ _create_dates(missing, year=2019, month=2):
@@ -31,14 +31,14 @@ ___ _create_dates(missing, year=2019, month=2):
     # only the ones not in missing
     yield first
 
-    for day in range(first.day + 1, last.day):
-        __ day not in missing:
+    ___ day __ r..(first.day + 1, last.day):
+        __ day n.. __ missing:
             yield first.replace(day=day)
 
     yield last
 
 
-date_list = list(_create_dates([2, 7, 11], 2))
+date_list = l..(_create_dates([2, 7, 11], 2))
 
 #print(type(date_list), len(date_list))
 #print(date_list)

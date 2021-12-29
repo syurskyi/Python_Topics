@@ -5,14 +5,14 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    sum = 0
+    s.. = 0
     j = 0
     ans = float("inf")
-    for i in range(0, len(nums)):
-      while j < len(nums) and sum < target:
-        sum += nums[j]
+    ___ i __ r..(0, l..(nums)):
+      while j < l..(nums) and s.. < target:
+        s.. += nums[j]
         j += 1
-      __ sum >= target:
-        ans = min(ans, j - i)
-      sum -= nums[i]
-    return ans __ ans != float("inf") else 0
+      __ s.. >= target:
+        ans = m..(ans, j - i)
+      s.. -= nums[i]
+    r.. ans __ ans != float("inf") ____ 0

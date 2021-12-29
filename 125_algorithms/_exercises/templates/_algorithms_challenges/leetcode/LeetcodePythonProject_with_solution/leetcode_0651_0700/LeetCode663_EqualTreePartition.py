@@ -5,7 +5,7 @@ Created on Oct 8, 2017
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None,right_ N..
+    ___ __init__(self, x, left=N..,right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -16,29 +16,29 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root: return False
-        return self.helper(root, 0, True)
+        __ n.. root: r.. False
+        r.. self.helper(root, 0, True)
     
     ___ helper(self, root, sumVal, firstLevel):
-        __ not root:
-            return False
-        __ sumVal == self.sum(root) and not firstLevel:
-            return True
-        __ (root.left and self.helper(root.left, sumVal+root.val+self.sum(root.right), False)) or\
-            (root.right and self.helper(root.right, sumVal+root.val+self.sum(root.left), False)):
-            return True
-        return False
+        __ n.. root:
+            r.. False
+        __ sumVal __ self.s..(root) and n.. firstLevel:
+            r.. True
+        __ (root.left and self.helper(root.left, sumVal+root.val+self.s..(root.right), False)) o.\
+            (root.right and self.helper(root.right, sumVal+root.val+self.s..(root.left), False)):
+            r.. True
+        r.. False
     
-    ___ sum(self, root):
-        __ not root: return 0
+    ___ s..(self, root):
+        __ n.. root: r.. 0
         res = root.val
-        res += self.sum(root.left)
-        res += self.sum(root.right)
-        return res
+        res += self.s..(root.left)
+        res += self.s..(root.right)
+        r.. res
     
     ___ sumVal(self, root):
-        __ not root: return 0
-        return root.val +\
+        __ n.. root: r.. 0
+        r.. root.val +\
             self.sumVal(root.left)+\
             self.sumVal(root.right)
     
@@ -47,13 +47,13 @@ class Solution(object):
             TreeNode(5, TreeNode(10), TreeNode(10, TreeNode(2), TreeNode(3))),
             TreeNode(1, TreeNode(2), TreeNode(10, TreeNode(2), TreeNode(20))),
             TreeNode(1, TreeNode(-1)),
-            TreeNode(1, None, TreeNode(2)),
+            TreeNode(1, N.., TreeNode(2)),
             TreeNode(2, TreeNode(1, TreeNode(0), TreeNode(2, TreeNode(3))), TreeNode(3)),
         ]
-        for root in testCases:
+        ___ root __ testCases:
             result = self.checkEqualTree(root)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

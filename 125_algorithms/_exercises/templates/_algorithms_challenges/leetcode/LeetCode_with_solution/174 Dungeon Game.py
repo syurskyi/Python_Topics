@@ -29,7 +29,7 @@ Any room can contain threats or power-ups, even the first room the knight enters
 princess is imprisoned.
 """
 __author__ = 'Daniel'
-import sys
+_______ sys
 
 
 class Solution:
@@ -45,19 +45,19 @@ class Solution:
         :type dungeon: list[list[int]
         :rtype: int
         """
-        m = len(dungeon)
-        n = len(dungeon[0])
+        m = l..(dungeon)
+        n = l..(dungeon[0])
 
-        F = [[sys.maxint for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(m-1, -1, -1):
-            for j in xrange(n-1, -1, -1):
-                __ i == m-1 and j == n-1:
+        F = [[sys.maxint ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        ___ i __ xrange(m-1, -1, -1):
+            ___ j __ xrange(n-1, -1, -1):
+                __ i __ m-1 and j __ n-1:
                     F[i][j] = max(1, 1-dungeon[i][j])
-                else:
-                    path = min(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
+                ____:
+                    path = m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
                     F[i][j] = max(1, path-dungeon[i][j])  # adjust for current cell
 
-        return F[0][0]
+        r.. F[0][0]
 
     ___ calculateMinimumHP_error(self, dungeon):
         """
@@ -67,23 +67,23 @@ class Solution:
         :type dungeon: list[list[int]
         :rtype: int
         """
-        m = len(dungeon)
-        n = len(dungeon[0])
-        __ m == 1 and n == 1:
-            return 1-min(0, dungeon[0][0])
+        m = l..(dungeon)
+        n = l..(dungeon[0])
+        __ m __ 1 and n __ 1:
+            r.. 1-m..(0, dungeon[0][0])
 
-        F = [[-sys.maxint-1 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
-                __ i == 1 and j == 1:
+        F = [[-sys.maxint-1 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        ___ i __ xrange(1, m+1):
+            ___ j __ xrange(1, n+1):
+                __ i __ 1 and j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
-                else:
+                ____:
                     F[i][j] = max(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
-                    F[i][j] = min(F[i][j], dungeon[i-1][j-1])
+                    F[i][j] = m..(F[i][j], dungeon[i-1][j-1])
 
-        return 1-F[-1][-1]
+        r.. 1-F[-1][-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().calculateMinimumHP([[-3, 5]]) == 4
-    assert Solution().calculateMinimumHP([[2, 1], [1, -1]]) == 1
+__ __name__ __ "__main__":
+    ... Solution().calculateMinimumHP([[-3, 5]]) __ 4
+    ... Solution().calculateMinimumHP([[2, 1], [1, -1]]) __ 1

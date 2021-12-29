@@ -11,7 +11,7 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-from enum import Enum
+____ enum _______ Enum
 
 
 class Bloodtype(Enum):
@@ -28,7 +28,7 @@ class Bloodtype(Enum):
     ___ __lte__(self,other):
 
 
-        return int(self) <= int(other)
+        r.. int(self) <= int(other)
 
 
 
@@ -55,22 +55,22 @@ ___ check_bt(donor, recipient):
     """
     
     
-    for blood_type in (donor,recipient):
-        __ type(blood_type) not in (str,int,Bloodtype):
+    ___ blood_type __ (donor,recipient):
+        __ type(blood_type) n.. __ (str,int,Bloodtype):
             raise TypeError("Invalid types")
     
 
 
-    blood_types = []
-    for blood_type in (donor,recipient):
-        __ type(blood_type) == str:
-            __ blood_type not in blood_type_text:
+    blood_types    # list
+    ___ blood_type __ (donor,recipient):
+        __ type(blood_type) __ str:
+            __ blood_type n.. __ blood_type_text:
                 raise ValueError
-            blood_types.append(blood_type_text[blood_type])
-        elif type(blood_type) == int:
-            blood_types.append(Bloodtype(blood_type))
-        else:
-            blood_types.append(blood_type)
+            blood_types.a..(blood_type_text[blood_type])
+        ____ type(blood_type) __ int:
+            blood_types.a..(Bloodtype(blood_type))
+        ____:
+            blood_types.a..(blood_type)
         
 
 
@@ -79,25 +79,25 @@ ___ check_bt(donor, recipient):
 
     
 
-    __ recipient == Bloodtype.ZERO_NEG:
-        return donor == Bloodtype.ZERO_NEG
-    elif recipient == Bloodtype.ZERO_POS:
-        return donor.value <= Bloodtype.ZERO_POS.value
-    elif recipient == Bloodtype.B_NEG:
-        return donor in (Bloodtype.ZERO_NEG,Bloodtype.B_NEG)
-    elif recipient == Bloodtype.B_POS:
-        return donor.value <= Bloodtype.B_POS.value
-    elif recipient == Bloodtype.A_NEG:
-        return donor in (Bloodtype.ZERO_NEG,Bloodtype.A_NEG)
-    elif recipient == Bloodtype.A_POS:
-        return donor in (Bloodtype.ZERO_NEG,Bloodtype.ZERO_POS,Bloodtype.A_NEG,Bloodtype.A_POS)
-    elif recipient == Bloodtype.AB_NEG:
-        return donor in (Bloodtype.ZERO_NEG,Bloodtype.A_NEG,Bloodtype.A_POS)
-    else:
-        return True
+    __ recipient __ Bloodtype.ZERO_NEG:
+        r.. donor __ Bloodtype.ZERO_NEG
+    ____ recipient __ Bloodtype.ZERO_POS:
+        r.. donor.value <= Bloodtype.ZERO_POS.value
+    ____ recipient __ Bloodtype.B_NEG:
+        r.. donor __ (Bloodtype.ZERO_NEG,Bloodtype.B_NEG)
+    ____ recipient __ Bloodtype.B_POS:
+        r.. donor.value <= Bloodtype.B_POS.value
+    ____ recipient __ Bloodtype.A_NEG:
+        r.. donor __ (Bloodtype.ZERO_NEG,Bloodtype.A_NEG)
+    ____ recipient __ Bloodtype.A_POS:
+        r.. donor __ (Bloodtype.ZERO_NEG,Bloodtype.ZERO_POS,Bloodtype.A_NEG,Bloodtype.A_POS)
+    ____ recipient __ Bloodtype.AB_NEG:
+        r.. donor __ (Bloodtype.ZERO_NEG,Bloodtype.A_NEG,Bloodtype.A_POS)
+    ____:
+        r.. True
 
 
-    return False
+    r.. False
     
 
     
@@ -117,7 +117,7 @@ ___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     _particular_antigen_comp(2, 5) -> (1, -1, 1)   B+ cannot donate to A+
     _particular_antigen_comp(7, 0) -> (-1, -1, -1) AB+ cannot donate to 0-
     """
-    return (
+    r.. (
         ((recipient // 4) % 2) - ((donor // 4) % 2),
         ((recipient // 2) % 2) - ((donor // 2) % 2),
         (recipient % 2) - (donor % 2),

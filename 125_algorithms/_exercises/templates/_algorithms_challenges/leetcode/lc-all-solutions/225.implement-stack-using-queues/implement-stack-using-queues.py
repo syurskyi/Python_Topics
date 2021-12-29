@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Stack(object):
@@ -13,9 +13,9 @@ class Stack(object):
     :type x: int
     :rtype: nothing
     """
-    self.queue.append(x)
-    for _ in range(0, len(self.queue) - 1):
-      self.queue.append(self.queue.popleft())
+    self.queue.a..(x)
+    ___ _ __ r..(0, l..(self.queue) - 1):
+      self.queue.a..(self.queue.popleft())
 
   ___ pop(self):
     """
@@ -27,10 +27,10 @@ class Stack(object):
     """
     :rtype: int
     """
-    return self.queue[0]
+    r.. self.queue[0]
 
   ___ empty(self):
     """
     :rtype: bool
     """
-    return not self.queue
+    r.. n.. self.queue

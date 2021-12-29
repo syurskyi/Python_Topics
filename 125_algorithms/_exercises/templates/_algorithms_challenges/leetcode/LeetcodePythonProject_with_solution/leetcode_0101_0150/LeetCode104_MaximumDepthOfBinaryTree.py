@@ -7,8 +7,8 @@ Created on May 30, 2018
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ maxDepth(self, root):
@@ -16,5 +16,5 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        __ not root: return 0
-        return max(self.maxDepth(root.left), self.maxDepth(root.right))+1
+        __ n.. root: r.. 0
+        r.. max(self.maxDepth(root.left), self.maxDepth(root.right))+1

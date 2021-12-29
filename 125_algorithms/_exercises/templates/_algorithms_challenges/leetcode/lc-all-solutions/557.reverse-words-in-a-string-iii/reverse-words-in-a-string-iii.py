@@ -4,7 +4,7 @@ class Solution(object):
     :type s: str
     :rtype: str
     """
-    s = s.split()
-    for i, word in enumerate(s):
+    s = s.s..
+    ___ i, word __ enumerate(s):
       s[i] = word[::-1]
-    return " ".join(s)
+    r.. " ".join(s)

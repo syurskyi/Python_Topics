@@ -20,7 +20,7 @@ class Solution(object):
       __ self.cnt > self.maxFreq:
         self.maxFreq = self.cnt
         self.modeCnt = 1
-      elif self.cnt == self.maxFreq:
+      ____ self.cnt __ self.maxFreq:
         __ self.ans:
           self.ans[self.modeCnt] = v
         self.modeCnt += 1
@@ -31,11 +31,11 @@ class Solution(object):
         visit(root.val)
         inorder(root.right)
 
-    self.pre = None
-    self.ans = None
+    self.pre = N..
+    self.ans = N..
     self.maxFreq = self.modeCnt = self.cnt = 0
     inorder(root)
     self.ans = [0] * self.modeCnt
     self.modeCnt = self.cnt = 0
     inorder(root)
-    return self.ans
+    r.. self.ans

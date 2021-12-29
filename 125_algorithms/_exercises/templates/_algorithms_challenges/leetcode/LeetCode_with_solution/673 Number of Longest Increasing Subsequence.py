@@ -16,7 +16,7 @@ there are 5 subsequences' length is 1, so output 5.
 Note: Length of the given array will be not exceed 2000 and the answer is
 guaranteed to be fit in 32-bit signed int.
 """
-from typing import List
+____ typing _______ List
 
 
 class LenCnt:
@@ -25,7 +25,7 @@ class LenCnt:
         self.c = c
 
     ___ __repr__(self):
-        return repr((self.l, self.c))
+        r.. repr((self.l, self.c))
 
 
 class Solution:
@@ -34,32 +34,32 @@ class Solution:
         Two pass - 1st pass find the LIS, 2nd pass find the number
         Let F[i] be the length of LIS ended at A[i]
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        F = [LenCnt(l=1, c=1) for _ in A]
+        n = l..(A)
+        F = [LenCnt(l=1, c=1) ___ _ __ A]
         mx = LenCnt(l=1, c=1)
-        for i in range(1, n):
-            for j in range(i):
+        ___ i __ r..(1, n):
+            ___ j __ r..(i):
                 __ A[i] > A[j]:
                     __ F[i].l < F[j].l + 1:
                         F[i].l = F[j].l + 1
                         F[i].c = F[j].c
-                    elif F[i].l == F[j].l + 1:
+                    ____ F[i].l __ F[j].l + 1:
                         F[i].c += F[j].c
 
             __ F[i].l > mx.l:
                 # mx = F[i]  error, need deep copy
                 mx.l = F[i].l
                 mx.c = F[i].c
-            elif F[i].l == mx.l:
+            ____ F[i].l __ mx.l:
                 mx.c += F[i].c
 
-        return mx.c
+        r.. mx.c
 
 
-__ __name__ == "__main__":
-    assert Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) == 27
-    assert Solution().findNumberOfLIS([1, 3, 5, 4, 7]) == 2
-    assert Solution().findNumberOfLIS([2, 2, 2, 2, 2]) == 5
+__ __name__ __ "__main__":
+    ... Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) __ 27
+    ... Solution().findNumberOfLIS([1, 3, 5, 4, 7]) __ 2
+    ... Solution().findNumberOfLIS([2, 2, 2, 2, 2]) __ 5

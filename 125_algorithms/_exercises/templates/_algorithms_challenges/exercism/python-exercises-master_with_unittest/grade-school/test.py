@@ -1,19 +1,19 @@
-import unittest
-from collections import Sequence
-from types import GeneratorType
+_______ unittest
+____ collections _______ Sequence
+____ types _______ GeneratorType
 
-from grade_school import School
+____ grade_school _______ School
 
 
 class SchoolTest(unittest.TestCase):
     ___ setUp(self):
         # assertCountEqual is py3, py2 only knowns assetItemsEqual
-        __ not hasattr(self, 'assertCountEqual'):
+        __ n.. hasattr(self, 'assertCountEqual'):
             self.assertCountEqual = self.assertItemsEqual
         self.school = School("Haleakala Hippy School")
 
     ___ test_an_empty_school(self):
-        for n in range(1, 9):
+        ___ n __ r..(1, 9):
             self.assertCountEqual(self.school.grade(n), set())
 
     ___ test_add_student(self):
@@ -45,23 +45,23 @@ class SchoolTest(unittest.TestCase):
         students = [(3, ("Kyle", )), (4, ("Christopher", "Jennifer", )),
                     (6, ("Kareem", ))]
 
-        for grade, students_in_grade in students[::-1]:
-            for student in students_in_grade[::-1]:
+        ___ grade, students_in_grade __ students[::-1]:
+            ___ student __ students_in_grade[::-1]:
                 self.school.add(student, grade)
 
         result = self.school.sort()
 
         # Attempts to catch false positives
         self.assertTrue(
-            isinstance(result, Sequence) or
-            isinstance(result, GeneratorType) or
+            isi..(result, Sequence) o.
+            isi..(result, GeneratorType) o.
             callable(getattr(result, '__reversed__', False)))
 
-        result_list = list(result.items()
-                           __ hasattr(result, "items") else result)
+        result_list = l..(result.items()
+                           __ hasattr(result, "items") ____ result)
 
         self.assertEqual(students, result_list)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

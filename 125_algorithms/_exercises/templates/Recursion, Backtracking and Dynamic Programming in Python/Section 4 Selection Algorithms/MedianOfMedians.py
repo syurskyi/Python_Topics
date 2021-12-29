@@ -5,8 +5,8 @@ ___ median_algorithm(nums, k
     chunks  [nums[i:i+5] ___ i __ ra__(0, le_(nums), 5)]
     # the median is the middle item in the sorted order
     # NOTE: median of the medians is just approximately the median of the original data structure
-    medians  [sorted(chunk)[le_(chunk)//2] ___ chunk __ chunks]
-    pivot_value  sorted(medians)[le_(medians)//2]
+    medians  [s..(chunk)[le_(chunk)//2] ___ chunk __ chunks]
+    pivot_value  s..(medians)[le_(medians)//2]
 
     # PARTITION PHASE
     left_array  [n ___ n __ nums __ n < pivot_value]

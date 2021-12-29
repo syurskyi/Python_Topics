@@ -7,47 +7,47 @@
 
 ___ measure(bucket_one, bucket_two, goal, start_bucket):
     sizes = [bucket_one, bucket_two]
-    goalIndex = 0 __ start_bucket == 'one' else 1
+    goalIndex = 0 __ start_bucket __ 'one' ____ 1
 
     ___ empty(buckets, i):
-        return [0, buckets[1]] __ i == 0 else [buckets[0], 0]
+        r.. [0, buckets[1]] __ i __ 0 ____ [buckets[0], 0]
 
     ___ fill(buckets, i):
-        return [sizes[0], buckets[1]] __ i == 0 else [buckets[0], sizes[1]]
+        r.. [sizes[0], buckets[1]] __ i __ 0 ____ [buckets[0], sizes[1]]
 
     ___ consolidate(buckets, i):
-        amount = min(buckets[1 - i], sizes[i] - buckets[i])
+        amount = m..(buckets[1 - i], sizes[i] - buckets[i])
         target = buckets[i] + amount
         src = buckets[1 - i] - amount
-        return [target, src] __ i == 0 else [src, target]
+        r.. [target, src] __ i __ 0 ____ [src, target]
 
     ___ bucket_str(buckets):
-        return '{},{}'.format(*buckets)
+        r.. '{},{}'.format(*buckets)
 
     invalid = [0, 0]
     invalid[1 - goalIndex] = sizes[1 - goalIndex]
     invalidStr = bucket_str(invalid)
     buckets = [0, 0]
     buckets[goalIndex] = sizes[goalIndex]
-    toVisit = []
+    toVisit    # list
     visited = set()
     count = 1
-    while goal not in buckets:
+    while goal n.. __ buckets:
         key = bucket_str(buckets)
-        __ key != invalidStr and key not in visited:
+        __ key != invalidStr and key n.. __ visited:
             visited.add(key)
             nc = count + 1
-            for i in range(2):
+            ___ i __ r..(2):
                 __ buckets[i] != 0:
-                    toVisit.append((empty(buckets, i), nc))
+                    toVisit.a..((empty(buckets, i), nc))
                 __ buckets[i] != sizes[i]:
-                    toVisit.append((fill(buckets, i), nc))
-                    toVisit.append((consolidate(buckets, i), nc))
-        __ not any(toVisit):
+                    toVisit.a..((fill(buckets, i), nc))
+                    toVisit.a..((consolidate(buckets, i), nc))
+        __ n.. any(toVisit):
             raise ValueError('No more moves!')
         buckets, count = toVisit.pop(0)
 
     goalIndex = buckets.index(goal)
     goalBucket = ['one', 'two'][goalIndex]
     otherBucket = buckets[1 - goalIndex]
-    return (count, goalBucket, otherBucket)
+    r.. (count, goalBucket, otherBucket)

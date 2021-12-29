@@ -5,7 +5,7 @@ z  i..(input("Insert third number: "))
 print("The maximum number is : ", end"")
 __ y< x >z:
     print(x)
-elif x < y >z:
+____ x < y >z:
     print(y)
-elif x< z > y:
+____ x< z > y:
     print(z)

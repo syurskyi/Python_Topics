@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from to_columns import print_names_to_columns
+____ to_columns _______ print_names_to_columns
 
 
 @pytest.fixture
 ___ names():
-    return "Bob Julian Tim Sara Eva Ana Jake Maria".split()
+    r.. "Bob Julian Tim Sara Eva Ana Jake Maria".s..
 
 
 ___ test_default(capfd, names):
@@ -15,7 +15,7 @@ ___ test_default(capfd, names):
                 "| Tim       | Sara      \n"
                 "| Eva       | Ana       \n"
                 "| Jake      | Maria")
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_three_columns(capfd, names):
@@ -24,7 +24,7 @@ ___ test_three_columns(capfd, names):
     expected = ("| Bob       | Julian    | Tim       \n"
                 "| Sara      | Eva       | Ana       \n"
                 "| Jake      | Maria")
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_four_columns(capfd, names):
@@ -32,4 +32,4 @@ ___ test_four_columns(capfd, names):
     actual = capfd.readouterr()[0].strip()
     expected = ("| Bob       | Julian    | Tim       | Sara      \n"
                 "| Eva       | Ana       | Jake      | Maria")
-    assert actual == expected
+    ... actual __ expected

@@ -1,30 +1,30 @@
-import sys
-from urllib.parse import urlparse
+_______ sys
+____ urllib.parse _______ urlparse
 
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
 ___ make_html_links():
-    for line in sys.stdin:
+    ___ line __ sys.stdin:
         res = process_line(line)
-        __ res and len(res.strip()) > 0:
+        __ res and l..(res.strip()) > 0:
             print(res)
 
 
 ___ process_line(line):
     __ line.startswith('http'):
-        url, *title = [l.strip() for l in line.split(',')]
-        __ len(title) > 1:
-            return ''
+        url, *title = [l.strip() ___ l __ line.split(',')]
+        __ l..(title) > 1:
+            r.. ''
         title = title[0]
         elements = urlparse(url)
-        __ elements.hostname not in INTERNAL_LINKS:
+        __ elements.hostname n.. __ INTERNAL_LINKS:
             target = ' target="_blank"'
-        else:
+        ____:
             target = ''
-        return f'<a href="{url}"{target}>{title}</a>'  # .encode('ascii')
-    return ''
+        r.. f'<a href="{url}"{target}>{title}</a>'  # .encode('ascii')
+    r.. ''
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     make_html_links()

@@ -1,21 +1,21 @@
-import re
+_______ re
 
 DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
 START_VALUE = 1
 STOP = ' '
 
-___ _seek_next(grid: list, position: tuple):
+___ _seek_next(grid: l.., position: tuple):
     row, col = position
     next_val = grid[row][col] + 1
-    __ row < len(grid)-1 and grid[row + 1][col] == next_val:
-        return (row + 1, col), DOWN
-    __ row > 0 and grid[row - 1][col] == next_val:
-        return (row - 1, col), UP
-    __ col < len(grid[row])-1 and grid[row][col + 1] == next_val:
-        return (row, col + 1), RIGHT
-    __ col > 0 and grid[row][col - 1] == next_val:
-        return (row, col - 1), LEFT
-    return (row, col), STOP
+    __ row < l..(grid)-1 and grid[row + 1][col] __ next_val:
+        r.. (row + 1, col), DOWN
+    __ row > 0 and grid[row - 1][col] __ next_val:
+        r.. (row - 1, col), UP
+    __ col < l..(grid[row])-1 and grid[row][col + 1] __ next_val:
+        r.. (row, col + 1), RIGHT
+    __ col > 0 and grid[row][col - 1] __ next_val:
+        r.. (row, col - 1), LEFT
+    r.. (row, col), STOP
 
 
 ___ print_sequence_route(grid: str, start_coordinates_ N..
@@ -23,14 +23,14 @@ ___ print_sequence_route(grid: str, start_coordinates_ N..
        START_VALUE coordinates and move through the numbers in order printing
        them.  Each time you turn append the grid with its corresponding symbol
        (DOWN / UP / LEFT / RIGHT). See the TESTS for more info."""
-    grid_array = [[int(v) for v in re.findall(r'(\d+)', line)]
-                  for line in grid.splitlines(keepends=False)
-                  __ len(line.replace('|', '').strip()) > 0]
+    grid_array = [[int(v) ___ v __ re.findall(r'(\d+)', line)]
+                  ___ line __ grid.splitlines(keepends=False)
+                  __ l..(line.replace('|', '').strip()) > 0]
 
     start_coordinates = [(row, col)
-                         for row in range(len(grid_array))
-                         for col in range(len(grid_array[row]))
-                         __ grid_array[row][col] == START_VALUE][0]
+                         ___ row __ r..(l..(grid_array))
+                         ___ col __ r..(l..(grid_array[row]))
+                         __ grid_array[row][col] __ START_VALUE][0]
 
     current_direction = RIGHT
     current_vals = [str(START_VALUE)]
@@ -39,9 +39,9 @@ ___ print_sequence_route(grid: str, start_coordinates_ N..
     next_coordinates = start_coordinates
     while current_direction != STOP:
         next_coordinates, next_direction = _seek_next(grid_array, next_coordinates)
-        __ current_direction == next_direction:
-            current_vals.append(str(this_val))
-        else:
+        __ current_direction __ next_direction:
+            current_vals.a..(str(this_val))
+        ____:
             print(f'{" ".join(current_vals)} {next_direction}')
             current_vals = [str(this_val)]
             current_direction = next_direction

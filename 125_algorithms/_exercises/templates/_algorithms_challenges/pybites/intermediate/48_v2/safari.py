@@ -1,6 +1,6 @@
-import os
-import urllib.request
-import re
+_______ os
+_______ urllib.request
+_______ re
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
@@ -15,11 +15,11 @@ urllib.request.urlretrieve(
 
 ___ create_chart():
 
-    current_date = None
+    current_date = N..
     with open(SAFARI_LOGS,'r') as f:
-        for line in f:
+        ___ line __ f:
             
-            __ 'sending to slack channel' in line:
+            __ 'sending to slack channel' __ line:
                 space_index = line.index(' ')
                 date = line[:space_index]
                 __ date != current_date:
@@ -29,7 +29,7 @@ ___ create_chart():
                     print(date,end=' ')
                 __ re.search(r'python',previous_line,flags=re.I):
                     char = PY_BOOK
-                else:
+                ____:
                     char = OTHER_BOOK
                 print(char,end='')
             
@@ -37,6 +37,6 @@ ___ create_chart():
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     create_chart()

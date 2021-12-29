@@ -12,31 +12,31 @@ class Solution:
         """
         ans = ''
 
-        for w in words:
+        ___ w __ words:
             __ any((
-                not self.is_subseq(s, w),
-                len(w) < len(ans),
-                len(w) == len(ans) and w >= ans,  # means w has larger lexicographical order
+                n.. self.is_subseq(s, w),
+                l..(w) < l..(ans),
+                l..(w) __ l..(ans) and w >= ans,  # means w has larger lexicographical order
             )):
                 continue
 
             ans = w
 
-        return ans
+        r.. ans
 
     ___ is_subseq(self, s, t):
         """
         return True if `t` is subsequence of `s`
         """
-        m, n = len(s), len(t)
+        m, n = l..(s), l..(t)
         i = j = 0
 
         while i < m and j < n:
-            __ s[i] == t[j]:
+            __ s[i] __ t[j]:
                 j += 1
             i += 1
 
-        return j == n
+        r.. j __ n
 
 
 class Solution:
@@ -49,31 +49,31 @@ class Solution:
         :type words: List[str]
         :rtype: str
         """
-        cands = []
+        cands    # list
         self.find_cands(s, 0, cands, [])
 
         ans = ''
         target = set(words)
 
-        for w in cands:
+        ___ w __ cands:
             __ any((
-                w not in target,
-                len(w) < len(ans),
-                len(w) == len(ans) and w >= ans,
+                w n.. __ target,
+                l..(w) < l..(ans),
+                l..(w) __ l..(ans) and w >= ans,
             )):
                 continue
 
             ans = w
 
-        return ans
+        r.. ans
 
     ___ find_cands(self, s, i, cands, path):
-        __ i == len(s):
-            cands.append(''.join(path))
-            return
+        __ i __ l..(s):
+            cands.a..(''.join(path))
+            r..
 
         # keep s[i]
-        path.append(s[i])
+        path.a..(s[i])
         self.find_cands(s, i + 1, cands, path)
         path.pop()
 

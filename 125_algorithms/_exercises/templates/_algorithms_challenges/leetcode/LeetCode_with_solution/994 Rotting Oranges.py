@@ -33,7 +33,7 @@ Note:
 1 <= grid[0].length <= 10
 grid[i][j] is only 0, 1, or 2.
 """
-from typing import List
+____ typing _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
@@ -44,30 +44,30 @@ class Solution:
         """
         maintain a q for the newly rotten
         """
-        m, n = len(grid), len(grid[0])
-        q = []
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 2:
-                    q.append((i, j))
+        m, n = l..(grid), l..(grid[0])
+        q    # list
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 2:
+                    q.a..((i, j))
 
         t = -1
         while q:
             t += 1
-            cur_q = []
-            for i, j in q:
-                for di, dj in dirs:
+            cur_q    # list
+            ___ i, j __ q:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < m and 0 <= J < n and grid[I][J] == 1:
+                    __ 0 <= I < m and 0 <= J < n and grid[I][J] __ 1:
                         grid[I][J] = 2
-                        cur_q.append((I, J))
+                        cur_q.a..((I, J))
             q = cur_q
 
         has_fresh = any(
-            grid[i][j] == 1
-            for i in range(m)
-            for j in range(n)
+            grid[i][j] __ 1
+            ___ i __ r..(m)
+            ___ j __ r..(n)
         )
 
-        return max(0, t) __ not has_fresh else -1
+        r.. max(0, t) __ n.. has_fresh ____ -1

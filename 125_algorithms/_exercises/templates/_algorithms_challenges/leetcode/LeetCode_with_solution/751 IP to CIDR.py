@@ -53,7 +53,7 @@ ip will be a valid IPv4 address.
 Every implied address ip + x (for x < n) will be a valid IPv4 address.
 n will be an integer in the range [1, 1000].
 """
-from typing import List
+____ typing _______ List
 
 
 # the weights of ip when converting to binary
@@ -89,7 +89,7 @@ class Solution:
         num += lsb
         """
         num_ip = self.to_bin(ip)
-        ret = []
+        ret    # list
         while n > 0:
             lsb = self.get_lsb(num_ip)
             while (1 << lsb) > n:
@@ -97,36 +97,36 @@ class Solution:
 
             cur_cover = 1 << lsb
             n -= cur_cover
-            ret.append(
+            ret.a..(
                 self.to_ip(num_ip) + f"/{32-lsb}"
             )
             num_ip += cur_cover
 
-        return ret
+        r.. ret
 
     ___ to_bin(self, ip):
         ret = 0
-        for n, w in zip(map(int, ip.split(".")), weights):
+        ___ n, w __ zip(map(int, ip.split(".")), weights):
             ret += n << w
 
-        return ret
+        r.. ret
 
     ___ to_ip(self, bin):
-        ret = []
-        for w in weights:
-            ret.append(
+        ret    # list
+        ___ w __ weights:
+            ret.a..(
                 (bin >> w) & 255
             )
-        return ".".join(map(str, ret))
+        r.. ".".join(map(str, ret))
 
     ___ get_lsb(self, n):
         lsb = 0
-        while (n >> lsb) & 1 == 0:
+        while (n >> lsb) & 1 __ 0:
             lsb += 1
             #  n >>= lsb  # error
-        return lsb
+        r.. lsb
 
 
-__ __name__ == "__main__":
-    assert Solution().ipToCIDR("60.166.253.147", 12) == ["60.166.253.147/32","60.166.253.148/30","60.166.253.152/30","60.166.253.156/31","60.166.253.158/32"]
-    assert Solution().ipToCIDR("255.0.0.7", 10) == ["255.0.0.7/32","255.0.0.8/29","255.0.0.16/32"]
+__ __name__ __ "__main__":
+    ... Solution().ipToCIDR("60.166.253.147", 12) __ ["60.166.253.147/32","60.166.253.148/30","60.166.253.152/30","60.166.253.156/31","60.166.253.158/32"]
+    ... Solution().ipToCIDR("255.0.0.7", 10) __ ["255.0.0.7/32","255.0.0.8/29","255.0.0.16/32"]

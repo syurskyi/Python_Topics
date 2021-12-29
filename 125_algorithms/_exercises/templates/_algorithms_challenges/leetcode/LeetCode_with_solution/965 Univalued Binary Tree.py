@@ -28,18 +28,18 @@ Each node's value will be an integer in the range [0, 99].
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ isUnivalTree(self, root: TreeNode) -> bool:
-        return self.dfs(root, root.val __ root else None)
+        r.. self.dfs(root, root.val __ root ____ N..)
 
     ___ dfs(self, node, val) -> bool:
-        __ not node:
-            return True
+        __ n.. node:
+            r.. True
         __ node.val != val:
-            return False
+            r.. False
 
-        return self.dfs(node.left, val) and self.dfs(node.right, val)
+        r.. self.dfs(node.left, val) and self.dfs(node.right, val)

@@ -12,18 +12,18 @@ class Solution(object):
         """
         s, t = S, T
         count = [0]*26
-        for c in t:
+        ___ c __ t:
             count[ord(c)-ord('a')] += 1
         res = ''
-        for c in s:
+        ___ c __ s:
             while count[ord(c)-ord('a')] > 0:
                 res += c
                 count[ord(c)-ord('a')] -= 1
-        for i in range(26):
+        ___ i __ r..(26):
             while count[i] > 0:
                 res += chr(i+ord('a'))
                 count[i] -= 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -31,12 +31,12 @@ class Solution(object):
             ["kqep", "pekeq"],
             ["exv", "xwvee"],
         ]
-        for s, t in testCases:
+        ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
             result = self.customSortString(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

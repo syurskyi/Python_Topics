@@ -1,25 +1,25 @@
 ___ route_diff(directions):
-    output = []
-    for i in directions:
-        __ i == "N":
-            __ output.count("S") > 0:
+    output    # list
+    ___ i __ directions:
+        __ i __ "N":
+            __ output.c.. "S") > 0:
                 output.remove("S")
-            else:
-                output.append(i)
-        elif i == "E":
-            __ output.count("W") > 0:
+            ____:
+                output.a..(i)
+        ____ i __ "E":
+            __ output.c.. "W") > 0:
                 output.remove("W")
-            else:
-                output.append(i)
-        elif i == "S":
-            __ output.count("N") > 0:
+            ____:
+                output.a..(i)
+        ____ i __ "S":
+            __ output.c.. "N") > 0:
                 output.remove("N")
-            else:
-                output.append(i)
-        elif i == "W":
-            __ output.count("E") > 0:
+            ____:
+                output.a..(i)
+        ____ i __ "W":
+            __ output.c.. "E") > 0:
                 output.remove("E")
-            else:
-                output.append(i)
+            ____:
+                output.a..(i)
 
-    return len(directions) - len(output)
+    r.. l..(directions) - l..(output)

@@ -9,26 +9,26 @@ class Solution(object):
         :type graph: List[List[int]]
         :rtype: List[List[int]]
         """
-        n = len(graph)
+        n = l..(graph)
         queue = [[0]]
-        res = []
+        res    # list
         while queue:
             path = queue.pop(0)
-            __ path[-1] == n-1:
-                res.append(list(path))
-            else:
-                for node in graph[path[-1]]:
-                    queue.append(path + [node])
-        return res
+            __ path[-1] __ n-1:
+                res.a..(l..(path))
+            ____:
+                ___ node __ graph[path[-1]]:
+                    queue.a..(path + [node])
+        r.. res
     
     ___ test(self):
         testCases = [
             [[1,2], [3], [3], []],
         ]
-        for graph in testCases:
+        ___ graph __ testCases:
             result = self.allPathsSourceTarget(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,13 +1,13 @@
-from pathlib import Path
-from collections import defaultdict
-from urllib.request import urlretrieve
-import xml.etree.ElementTree as ET
+____ pathlib _______ Path
+____ collections _______ defaultdict
+____ urllib.request _______ urlretrieve
+_______ xml.etree.ElementTree as ET
 
 # import the countries xml file
 tmp = Path('/tmp')
 countries = tmp / 'countries.xml'
 
-__ not countries.exists():
+__ n.. countries.exists():
     urlretrieve('https://bit.ly/2IzGKav', countries)
 
 
@@ -24,8 +24,8 @@ ___ get_income_distribution(xml=countries):
     namespaces = {'wb': 'http://www.worldbank.org'}
 
     xpath = f".//wb:country"
-    country_list = defaultdict(list)
-    for x in root.findall(xpath, namespaces):
-        country_list[x.find('wb:incomeLevel', namespaces).text].append(x.find('wb:name', namespaces).text)
+    country_list = defaultdict(l..)
+    ___ x __ root.findall(xpath, namespaces):
+        country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 
-    return country_list
+    r.. country_list

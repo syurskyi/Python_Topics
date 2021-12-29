@@ -9,7 +9,7 @@ and then we using a queue to record the minimum of the index
 
 the ans is `S[i] - S[queue[0]]`
 """
-from collections import deque
+____ collections _______ deque
 
 
 class Solution:
@@ -20,15 +20,15 @@ class Solution:
     @return: the largest sum
     """
     ___ maxSubarray5(self, A, k1, k2):
-        __ not A or not k2 or len(A) < k1:
-            return 0
+        __ n.. A o. n.. k2 o. l..(A) < k1:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         S = [0] * (n + 1)
         queue = deque()
         ans = float('-inf')
 
-        for i in range(1, n + 1):
+        ___ i __ r..(1, n + 1):
             S[i] = S[i - 1] + A[i - 1]
 
             """
@@ -47,9 +47,9 @@ class Solution:
             """
             while queue and S[queue[-1]] > S[i - k1]:
                 queue.pop()
-            queue.append(i - k1)
+            queue.a..(i - k1)
 
             __ queue and S[i] - S[queue[0]] > ans:
                 ans = S[i] - S[queue[0]]
 
-        return ans
+        r.. ans

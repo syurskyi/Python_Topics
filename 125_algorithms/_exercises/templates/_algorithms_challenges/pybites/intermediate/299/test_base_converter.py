@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from base_converter import convert
+____ base_converter _______ convert
 
 
 @pytest.mark.parametrize("number, base, expected", [
@@ -26,7 +26,7 @@ from base_converter import convert
     (279, 27, "A9"),
 ])
 ___ test_convert(number, base, expected):
-    assert convert(number, base) == expected
+    ... convert(number, base) __ expected
 
 
 @pytest.mark.parametrize("number, base", [

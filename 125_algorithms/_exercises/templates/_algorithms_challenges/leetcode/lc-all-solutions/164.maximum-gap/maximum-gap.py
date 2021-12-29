@@ -4,28 +4,28 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    __ len(nums) < 2:
-      return 0
-    a, b = min(nums), max(nums)
-    __ a == b:
-      return 0
+    __ l..(nums) < 2:
+      r.. 0
+    a, b = m..(nums), max(nums)
+    __ a __ b:
+      r.. 0
     ans = 0
-    gap = int(math.ceil((b - a + 0.0) / (len(nums) - 1)))
-    bucketMin = [None for _ in range(0, len(nums) + 1)]
-    bucketMax = [None for _ in range(0, len(nums) + 1)]
+    gap = int(math.ceil((b - a + 0.0) / (l..(nums) - 1)))
+    bucketMin = [N.. ___ _ __ r..(0, l..(nums) + 1)]
+    bucketMax = [N.. ___ _ __ r..(0, l..(nums) + 1)]
 
-    for num in nums:
+    ___ num __ nums:
       index = (num - a) / gap
-      __ bucketMin[index] is None:
+      __ bucketMin[index] __ N..
         bucketMin[index] = num
-      else:
-        bucketMin[index] = min(bucketMin[index], num)
-      __ bucketMax[index] is None:
+      ____:
+        bucketMin[index] = m..(bucketMin[index], num)
+      __ bucketMax[index] __ N..
         bucketMax[index] = num
-      else:
+      ____:
         bucketMax[index] = max(bucketMax[index], num)
-    bucketMin = [b for b in bucketMin __ b is not None]
-    bucketMax = [b for b in bucketMax __ b is not None]
-    for i in range(0, len(bucketMin) - 1):
+    bucketMin = [b ___ b __ bucketMin __ b __ n.. N..]
+    bucketMax = [b ___ b __ bucketMax __ b __ n.. N..]
+    ___ i __ r..(0, l..(bucketMin) - 1):
       ans = max(ans, bucketMin[i + 1] - bucketMax[i])
-    return ans
+    r.. ans

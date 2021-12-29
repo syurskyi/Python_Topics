@@ -1,4 +1,4 @@
-from typing import Tuple
+____ typing _______ Tuple
 
 text = """
 The Zen of Python, by Tim Peters
@@ -40,14 +40,14 @@ ___ strip_vowels(text: str) -> Tuple[str, int]:
        The str/int types in the function defintion above are part
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
-    result_a = []
-    result_b = []
+    result_a    # list
+    result_b    # list
     result_final = [result_a, result_b]
     replaced_text = text.replace(vowels, "*")
-    number_of_vowels_found = replaced_text.count("*")
-    for replaced_text in text: 
-        result_a.append(replaced_text)
-    for number_of_vowels in text:
-        result_b.append(number_of_vowels_found)
-    return result_final
+    number_of_vowels_found = replaced_text.c.. "*")
+    ___ replaced_text __ text:
+        result_a.a..(replaced_text)
+    ___ number_of_vowels __ text:
+        result_b.a..(number_of_vowels_found)
+    r.. result_final
     pass

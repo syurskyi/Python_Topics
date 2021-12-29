@@ -4,11 +4,11 @@ class Solution(object):
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ nums is None or len(nums) <= 1:
-      return
+    __ nums __ N.. o. l..(nums) <= 1:
+      r..
 
-    pos = None
-    p = len(nums) - 2
+    pos = N..
+    p = l..(nums) - 2
     # find the first number that is not in correct order
     while p >= 0:
       __ nums[p + 1] > nums[p]:
@@ -16,19 +16,19 @@ class Solution(object):
         break
       p -= 1
 
-    __ pos is None:
-      self.reverse(nums, 0, len(nums) - 1)
-      return
+    __ pos __ N..
+      self.reverse(nums, 0, l..(nums) - 1)
+      r..
 
     # find the min value in the rest of the array
     minPos, minV = pos + 1, nums[pos + 1]
-    for i in range(pos + 1, len(nums)):
+    ___ i __ r..(pos + 1, l..(nums)):
       __ nums[i] <= minV and nums[i] > nums[pos]:
         minV = nums[i]
         minPos = i
     # swap the two above number and reverse the array from `pos`
     nums[pos], nums[minPos] = nums[minPos], nums[pos]
-    self.reverse(nums, pos + 1, len(nums) - 1)
+    self.reverse(nums, pos + 1, l..(nums) - 1)
 
   ___ reverse(self, nums, start, end):
     while start < end:

@@ -12,21 +12,21 @@ class Solution:
         """
         NOT_FOUND = -1
 
-        __ not gas or not cost or len(gas) != len(cost):
-            return NOT_FOUND
+        __ n.. gas o. n.. cost o. l..(gas) != l..(cost):
+            r.. NOT_FOUND
 
-        end, start = -1, len(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
+        end, start = -1, l..(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
         tank = gas[start] - cost[start]
 
         while start > end:
             __ tank >= 0:
                 end += 1
                 tank += gas[end] - cost[end]
-            else:
+            ____:
                 start -= 1
                 tank += gas[start] - cost[start]
 
-        return start __ tank >= 0 else NOT_FOUND
+        r.. start __ tank >= 0 ____ NOT_FOUND
 
 
 class Solution:
@@ -41,24 +41,24 @@ class Solution:
         """
         NOT_FOUND = -1
 
-        __ not gas or not cost or len(gas) != len(cost):
-            return NOT_FOUND
+        __ n.. gas o. n.. cost o. l..(gas) != l..(cost):
+            r.. NOT_FOUND
 
-        n = len(gas)
-        RANGE = list(range(n))
+        n = l..(gas)
+        RANGE = l..(r..(n))
 
-        for start in range(n):
+        ___ start __ r..(n):
             tank = 0
             is_failed = False
 
-            for mid in RANGE[start:n] + RANGE[:start]:
+            ___ mid __ RANGE[start:n] + RANGE[:start]:
                 tank += gas[mid]
                 __ tank < cost[mid]:
                     is_failed = True
                     break
                 tank -= cost[mid]
 
-            __ not is_failed:
-                return start
+            __ n.. is_failed:
+                r.. start
 
-        return NOT_FOUND
+        r.. NOT_FOUND

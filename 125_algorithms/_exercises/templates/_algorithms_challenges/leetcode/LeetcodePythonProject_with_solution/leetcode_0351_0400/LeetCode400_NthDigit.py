@@ -14,7 +14,7 @@ class Solution(object):
             start *= 10
         start += (n-1)//length
         s = str(start)
-        return int(s[(n-1)%length])
+        r.. int(s[(n-1)%length])
     
     ___ test(self):
         testCases = [
@@ -23,11 +23,11 @@ class Solution(object):
             250,
             300,
         ]
-        for num in testCases:
+        ___ num __ testCases:
             print('num: %s' % num)
             result = self.findNthDigit(num)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

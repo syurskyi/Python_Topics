@@ -16,8 +16,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     global_max = -1<<31
@@ -28,7 +28,7 @@ class Solution:
         """
         self.get_max_component(root)
         # global_max can in ANY path in the tree
-        return self.global_max
+        r.. self.global_max
 
     ___ get_max_component(self, root):
         """
@@ -50,8 +50,8 @@ class Solution:
         :param root:
         :return:
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
         left_max_component = self.get_max_component(root.left)
         right_max_component = self.get_max_component(root.right)
@@ -61,7 +61,7 @@ class Solution:
         self.global_max = max(self.global_max, current_max_sum)
 
         # return value for upper layer to calculate the current_max_sum
-        return max(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)
+        r.. max(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)
 
 
 

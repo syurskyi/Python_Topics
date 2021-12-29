@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from sum_indices import sum_indices
+____ sum_indices _______ sum_indices
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -12,4 +12,4 @@ from sum_indices import sum_indices
                         (['a', 'b', 'c', 'd', 'e', 'a', 'f', 'a', 'g', 'd', 'a'], 75),
                         (['a', 'b', 'z', 'c', 'd', 'x', 'b', 'x', 'e'], 42), ])
 ___ test_sum_indices(test_input, expected):
-    assert sum_indices(test_input) == expected
+    ... sum_indices(test_input) __ expected

@@ -19,11 +19,11 @@ class Solution(object):
         o.next = p
         o = o.next
         isOdd = False
-      else:
+      ____:
         e.next = p
         isOdd = True
         e = e.next
       p = p.next
-    e.next = None
+    e.next = N..
     o.next = even.next
-    return odd.next
+    r.. odd.next

@@ -37,25 +37,25 @@ class Solution:
         There is a binary array [0, 1, ...] to denote whether to swap A[i], B[i]
         without actually swapping the array
         """
-        n = len(A)
-        F = [[0 for _ in range(n)] for _ in range(2)]
+        n = l..(A)
+        F = [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
         F[1][0] = 1
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             __ A[i] > max(A[i-1], B[i-1]) and B[i] > max(A[i-1], B[i-1]):
                 # freedom of two options - swap or not swap
-                F[0][i] = min(F[0][i-1], F[1][i-1])
-                F[1][i] = min(F[0][i-1], F[1][i-1]) + 1
-            elif A[i] > A[i-1] and B[i] > B[i-1]:
+                F[0][i] = m..(F[0][i-1], F[1][i-1])
+                F[1][i] = m..(F[0][i-1], F[1][i-1]) + 1
+            ____ A[i] > A[i-1] and B[i] > B[i-1]:
                 # elif meaning that has to stick with previous swap choice
                 # A[i] <= B[i-1] and B[i] <=A[i-1], cannot flip
                 F[0][i] = F[0][i-1]
                 F[1][i] = F[1][i-1] + 1
-            else:
+            ____:
                 # has to swap, flip 
                 F[0][i] = F[1][i-1]
                 F[1][i] = F[0][i-1] + 1
 
-        return min(F[0][n-1], F[1][n-1])
+        r.. m..(F[0][n-1], F[1][n-1])
 
     ___ minSwap_error(self, A: List[int], B: List[int]) -> int:
         """
@@ -68,16 +68,16 @@ class Solution:
         swap can be length - times (swap the other)
         """
         t = 0
-        for i in range(1, len(A)):
-            __ A[i] <= A[i-1] or B[i] <= B[i-1]:
+        ___ i __ r..(1, l..(A)):
+            __ A[i] <= A[i-1] o. B[i] <= B[i-1]:
                 t += 1
                 __ t < i + 1 - t:
                     A[i], B[i] = B[i], A[i]
-                else:
+                ____:
                     t = i + 1 - t
 
-        return t
+        r.. t
 
 
-__ __name__ == "__main__":
-    assert Solution().minSwap([0,4,4,5,9], [0,1,6,8,10])
+__ __name__ __ "__main__":
+    ... Solution().minSwap([0,4,4,5,9], [0,1,6,8,10])

@@ -1,11 +1,11 @@
 exe   ['gif','png','jpeg','jpg','svg','txt']
 
 filexe  input("Insert file with extension: ").split('.')
-__ len(filexe) > 2:
+__ l..(filexe) > 2:
     Extension  filexe[-1].l..
-    __ Extension in exe:
+    __ Extension __ exe:
         print("File extension exist")
-    else:
+    ____:
         print("File extension does not exist")
-else:
+____:
     print("File does not have extension")

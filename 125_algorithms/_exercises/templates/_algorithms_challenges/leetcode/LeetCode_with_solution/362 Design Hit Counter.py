@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import deque
+____ collections _______ deque
 
 __author__ = 'Daniel'
 
@@ -25,7 +25,7 @@ class HitCounter(object):
         :rtype: void
         """
         self.pop(timestamp)
-        self.q.append(timestamp)
+        self.q.a..(timestamp)
 
     ___ getHits(self, timestamp):
         """
@@ -35,7 +35,7 @@ class HitCounter(object):
         :rtype: int
         """
         self.pop(timestamp)
-        return len(self.q)
+        r.. l..(self.q)
 
     ___ pop(self, timestamp):
         while self.q and timestamp - self.q[0] >= 300:

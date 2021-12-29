@@ -7,12 +7,12 @@
 
 class Solution:
     ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
         __ L > root.val:
-            return self.trimBST(root.right, L, R)
-        elif R < root.val:
-            return self.trimBST(root.left, L, R)
+            r.. self.trimBST(root.right, L, R)
+        ____ R < root.val:
+            r.. self.trimBST(root.left, L, R)
         root.left = self.trimBST(root.left, L, R)
         root.right = self.trimBST(root.right, L, R)
-        return root
+        r.. root

@@ -30,11 +30,11 @@ class Solution(object):
         """
         i = 0
         j = 0
-        while i < len(s) and j < len(t):
+        while i < l..(s) and j < l..(t):
             __ t[j] != s[i]:
                 j += 1
-            else:
+            ____:
                 i += 1
                 j += 1
 
-        return i == len(s)
+        r.. i __ l..(s)

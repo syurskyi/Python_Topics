@@ -1,5 +1,5 @@
-import asyncio
-import time
+_______ asyncio
+_______ time
 
 # ONE_MIN = 60
 # FIVE_MIN = ONE_MIN * 5
@@ -7,8 +7,8 @@ import time
 # THIRTY_MIN = ONE_MIN * 30
 # HOUR = ONE_MIN * 60
 # CURRENT_SESSION = 1
-from asyncio import sleep
-from typing import Union
+____ asyncio _______ sleep
+____ typing _______ Union
 
 ONE_MIN = .006
 FIVE_MIN = ONE_MIN * .0005
@@ -18,7 +18,7 @@ HOUR = ONE_MIN * .06
 CURRENT_SESSION = 1
 
 
-async ___ break_time(delay: Union[int, float], loop: int) -> None:
+async ___ break_time(delay: Union[int, float], loop: int) -> N..
     """Break time
 
     :param delay: float of delay in seconds
@@ -30,7 +30,7 @@ async ___ break_time(delay: Union[int, float], loop: int) -> None:
     await sleep(delay)
 
 
-async ___ lunch_time(delay: Union[int, float]) -> None:
+async ___ lunch_time(delay: Union[int, float]) -> N..
     """Lunch time
 
     :param delay: float of delay in seconds
@@ -40,7 +40,7 @@ async ___ lunch_time(delay: Union[int, float]) -> None:
     await sleep(delay)
 
 
-async ___ work_time(delay: Union[int, float], loop: int) -> None:
+async ___ work_time(delay: Union[int, float], loop: int) -> N..
     """Work time
 
     :param delay: float of delay in seconds
@@ -55,7 +55,7 @@ async ___ session(
     work_length: Union[int, float] = TWENTY_FIVE_MIN,
     short_break_length: Union[int, float] = FIVE_MIN,
     long_break_length: Union[int, float] = THIRTY_MIN,
-) -> None:
+) -> N..
     """Session
 
     :param work_length: float of work length in seconds
@@ -81,7 +81,7 @@ async ___ main(
     short_break_length: Union[int, float] = FIVE_MIN,
     long_break_length: Union[int, float] = THIRTY_MIN,
     lunch_length: Union[int, float] = HOUR,
-) -> None:
+) -> N..
     """Main entry point
 
     :param work_length: float of work length in seconds
@@ -96,7 +96,7 @@ async ___ main(
     while CURRENT_SESSION <= 4:
         print(f"\nSession: {CURRENT_SESSION}")
         await session(work_length, short_break_length, long_break_length)
-        __ CURRENT_SESSION == 2:
+        __ CURRENT_SESSION __ 2:
             await lunch_time(lunch_length)
         CURRENT_SESSION += 1
 
@@ -105,5 +105,5 @@ async ___ main(
     print(f"\nWork day completed at: {time.strftime('%X')}")
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     asyncio.run(main())

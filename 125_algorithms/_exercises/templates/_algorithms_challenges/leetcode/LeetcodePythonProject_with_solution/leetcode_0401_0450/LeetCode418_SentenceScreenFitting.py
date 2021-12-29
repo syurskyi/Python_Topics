@@ -12,27 +12,27 @@ class Solution(object):
         :type cols: int
         :rtype: int
         """
-        length = len(sentence)
+        length = l..(sentence)
         times = [0]*length
         nextInd = [0]*length
-        for i in range(length):
+        ___ i __ r..(length):
             ind = i
             curLen = 0
             time = 0
-            while curLen+len(sentence[ind])<=cols:
-                curLen += len(sentence[ind])+1
+            while curLen+l..(sentence[ind])<=cols:
+                curLen += l..(sentence[ind])+1
                 ind += 1
-                __ ind == len(sentence):
+                __ ind __ l..(sentence):
                     ind = 0
                     time += 1
             nextInd[i] = ind
             times[i] = time
         ind = 0
         res = 0
-        for _ in range(rows):
+        ___ _ __ r..(rows):
             res += times[ind]
             ind = nextInd[ind]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -40,7 +40,7 @@ class Solution(object):
             (["a", "bcd", "e"], 3, 6),
             (["I", "had", "apple", "pie"], 4, 5),
         ]
-        for sentence, rows, cols in testCases:
+        ___ sentence, rows, cols __ testCases:
             print('sentence: %s' % sentence)
             print('rows: %s' % rows)
             print('cols: %s' % cols)
@@ -48,5 +48,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

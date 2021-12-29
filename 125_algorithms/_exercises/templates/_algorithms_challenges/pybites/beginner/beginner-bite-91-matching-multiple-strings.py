@@ -7,35 +7,35 @@ contains_any_py_chars, and contains_digits below. See more info in the docstring
 
 VOWELS = 'aeiou'
 PYTHON = 'python'
-import string
+_______ string
 
 ___ contains_only_vowels(input_str):
     """Receives input string and checks if all chars are
        VOWELS. Match is case insensitive."""
     lower = input_str.lower()
     vowels = "aeoiu"
-    for c in lower:
-        __ c not in vowels:
-            return False
-    return True
+    ___ c __ lower:
+        __ c n.. __ vowels:
+            r.. False
+    r.. True
 
 ___ contains_any_py_chars(input_str):
     """Receives input string and checks if any of the PYTHON
        chars are in it. Match is case insensitive."""
     chars = "PYTHON".lower()
     lower = input_str.lower()
-    for c in lower:
-        __ c in chars:
-            return True
-    return False
+    ___ c __ lower:
+        __ c __ chars:
+            r.. True
+    r.. False
 
 
 ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
-    for c in input_str:
-        __ c in string.digits:
-            return True
-    return False
+    ___ c __ input_str:
+        __ c __ string.digits:
+            r.. True
+    r.. False
 
 

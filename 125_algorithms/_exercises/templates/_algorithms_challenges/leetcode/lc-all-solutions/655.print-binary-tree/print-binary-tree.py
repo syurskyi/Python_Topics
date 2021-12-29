@@ -13,9 +13,9 @@ class Solution(object):
     """
 
     ___ height(root):
-      __ not root:
-        return 0
-      return 1 + max(height(root.left), height(root.right))
+      __ n.. root:
+        r.. 0
+      r.. 1 + max(height(root.left), height(root.right))
 
     ___ fill(root, res, left, right, h):
       __ root:
@@ -26,6 +26,6 @@ class Solution(object):
         fill(root.right, res, mid + 1, right, h + 1)
 
     h = height(root)
-    res = [[""] * (2 ** h - 1) for _ in range(h)]
-    fill(root, res, 0, len(res[0]) - 1, 0)
-    return res
+    res = [[""] * (2 ** h - 1) ___ _ __ r..(h)]
+    fill(root, res, 0, l..(res[0]) - 1, 0)
+    r.. res

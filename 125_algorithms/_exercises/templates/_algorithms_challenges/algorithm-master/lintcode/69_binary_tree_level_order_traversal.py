@@ -20,23 +20,23 @@ class Solution:
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
         queue, _queue = [root], []
 
         while queue:
-            ans.append([])
+            ans.a..([])
 
-            for node in queue:
+            ___ node __ queue:
                 __ node.left:
-                    _queue.append(node.left)
+                    _queue.a..(node.left)
                 __ node.right:
-                    _queue.append(node.right)
-                ans[-1].append(node.val)
+                    _queue.a..(node.right)
+                ans[-1].a..(node.val)
 
             queue, _queue = _queue, []
 
-        return ans
+        r.. ans

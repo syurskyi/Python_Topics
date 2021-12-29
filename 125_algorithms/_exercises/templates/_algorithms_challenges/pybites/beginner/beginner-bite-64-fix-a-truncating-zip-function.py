@@ -25,17 +25,17 @@ Good luck, Bert will be grateful if you fix this bug for him! By the way, this w
 it is a power tool you want to become familiar with!
 '''
 
-import itertools
+_______ itertools
 
-names = 'Tim Bob Julian Carmen Sofia Mike Kim Andre'.split()
-locations = 'DE ES AUS NL BR US'.split()
+names = 'Tim Bob Julian Carmen Sofia Mike Kim Andre'.s..
+locations = 'DE ES AUS NL BR US'.s..
 confirmed = [False, True, True, False, True]
 
 
 ___ get_attendees():
-    for participant in itertools.zip_longest(names, locations, confirmed, fillvalue='-'):
+    ___ participant __ itertools.zip_longest(names, locations, confirmed, fillvalue='-'):
         print(participant)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     get_attendees()

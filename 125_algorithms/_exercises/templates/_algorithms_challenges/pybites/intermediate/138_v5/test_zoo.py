@@ -1,19 +1,19 @@
-from zoo import Animal
+____ zoo _______ Animal
 
 
 ___ test_zoo_5_animals():
-    for animal in 'dog cat fish lion mouse'.split():
+    ___ animal __ 'dog cat fish lion mouse'.s.. :
         Animal(animal)
     zoo = Animal.zoo()
-    assert "10001. Dog" in zoo
-    assert "10002. Cat" in zoo
-    assert "10003. Fish" in zoo
-    assert "10004. Lion" in zoo
-    assert "10005. Mouse" in zoo
+    ... "10001. Dog" __ zoo
+    ... "10002. Cat" __ zoo
+    ... "10003. Fish" __ zoo
+    ... "10004. Lion" __ zoo
+    ... "10005. Mouse" __ zoo
 
 
 ___ test_animal_instance_str():
     horse = Animal('horse')
-    assert str(horse) == "10006. Horse"
+    ... str(horse) __ "10006. Horse"
     horse = Animal('monkey')
-    assert str(horse) == "10007. Monkey"
+    ... str(horse) __ "10007. Monkey"

@@ -1,5 +1,5 @@
-import itertools
+_______ itertools
 ___ permutations(string):
-    return sorted([''.join(p) for p in set(itertools.permutations(string,len(string)))])
+    r.. s..([''.join(p) ___ p __ set(itertools.permutations(string,l..(string)))])
 
 print(permutations('aabb'))    

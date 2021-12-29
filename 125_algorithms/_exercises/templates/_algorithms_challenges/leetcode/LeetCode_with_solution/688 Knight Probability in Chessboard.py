@@ -48,15 +48,15 @@ class Solution:
         with memory, it is considered dp
         """
         q = set([(r, c)])  # working que
-        P = [[0 for _ in range(N)] for _ in range(N)]
+        P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         while k < K:
             k += 1
             cur_q = set()
-            cur_P = [[0 for _ in range(N)] for _ in range(N)]
-            for i, j in q:
-                for di, dj in dirs:
+            cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+            ___ i, j __ q:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
@@ -66,10 +66,10 @@ class Solution:
             q = cur_q
             P = cur_P
 
-        return sum([
+        r.. s..([
             P[i][j]
-            for i in range(N)
-            for j in range(N)
+            ___ i __ r..(N)
+            ___ j __ r..(N)
         ])
 
 
@@ -78,31 +78,31 @@ class Solution:
         brute force K step
         """
         q = [(r, c)]  # working que
-        P = [[0 for _ in range(N)] for _ in range(N)]
+        P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         while k < K:
             k += 1
-            cur_q = []
-            cur_P = [[0 for _ in range(N)] for _ in range(N)]
-            for i, j in q:
-                for di, dj in dirs:
+            cur_q    # list
+            cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+            ___ i, j __ q:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
-                        cur_q.append((I, J))  # error, count multiple times
+                        cur_q.a..((I, J))  # error, count multiple times
                         cur_P[I][J] += P[i][j] * 1 / 8
 
             q = cur_q
             P = cur_P
 
-        return sum([
+        r.. s..([
             P[i][j]
-            for i in range(N)
-            for j in range(N)
+            ___ i __ r..(N)
+            ___ j __ r..(N)
         ])
 
 
-__ __name__ == "__main__":
-    assert Solution().knightProbability(3, 2, 0, 0)  == 0.0625
-    assert Solution().knightProbability(3, 3, 0, 0)  == 0.015625
+__ __name__ __ "__main__":
+    ... Solution().knightProbability(3, 2, 0, 0)  __ 0.0625
+    ... Solution().knightProbability(3, 3, 0, 0)  __ 0.015625

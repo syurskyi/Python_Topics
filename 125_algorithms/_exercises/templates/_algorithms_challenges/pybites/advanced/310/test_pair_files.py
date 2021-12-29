@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from pair_files import pair_files
+____ pair_files _______ pair_files
 
 
 @pytest.mark.parametrize(
@@ -256,4 +256,4 @@ from pair_files import pair_files
 )
 ___ test_pair_files(test_description, test_input, expected):
     print(f"Test_pair_files {test_description}")
-    assert sorted(pair_files(test_input)) == expected
+    ... s..(pair_files(test_input)) __ expected

@@ -10,17 +10,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[str]
         """
-        result = []
-        __ not nums: return result
+        result    # list
+        __ n.. nums: r.. result
         i = 0
-        while i < len(nums):
+        while i < l..(nums):
             start = nums[i]
-            while i+1 < len(nums) and nums[i+1] == nums[i]+1:
+            while i+1 < l..(nums) and nums[i+1] __ nums[i]+1:
                 i+=1
             end = nums[i]
-            __ end == start:
-                result.append('%s' % (start))
-            else:
-                result.append('%s->%s' % (start, end))
+            __ end __ start:
+                result.a..('%s' % (start))
+            ____:
+                result.a..('%s->%s' % (start, end))
             i += 1
-        return result
+        r.. result

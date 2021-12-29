@@ -10,16 +10,16 @@ class Solution(object):
     totalcost = 0
     start = 0
     balance = 0
-    for i in range(0, len(gas)):
+    ___ i __ r..(0, l..(gas)):
       totalgas += gas[i]
       totalcost += cost[i]
 
-    for i in range(0, len(gas)):
+    ___ i __ r..(0, l..(gas)):
       balance += gas[i] - cost[i]
       __ balance < 0:
         start = i + 1
         balance = 0
 
     __ totalcost <= totalgas:
-      return start
-    return -1
+      r.. start
+    r.. -1

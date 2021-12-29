@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from raindrops import raindrops
+____ raindrops _______ raindrops
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -61,5 +61,5 @@ class RaindropsTest(unittest.TestCase):
         self.assertEqual(raindrops(12121), "12121")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

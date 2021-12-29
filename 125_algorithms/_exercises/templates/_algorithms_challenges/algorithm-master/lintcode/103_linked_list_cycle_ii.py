@@ -48,8 +48,8 @@ class Solution:
         h->i == 1
         s->i == 2
         """
-        __ not head or not head.next:
-            return
+        __ n.. head o. n.. head.next:
+            r..
 
         """
         if its a cycle, and then we can ensure
@@ -58,9 +58,9 @@ class Solution:
         otherwise its a list => at some point there will be no `node.next`
         """
         slow, fast = head, head.next
-        while slow is not fast:
-            __ not fast or not fast.next:
-                return
+        while slow __ n.. fast:
+            __ n.. fast o. n.. fast.next:
+                r..
             slow = slow.next
             fast = fast.next.next
 
@@ -69,8 +69,8 @@ class Solution:
         and at the intersection node
         the steps from the first node is equal to from meet node plus 1
         """
-        while head is not slow.next:
+        while head __ n.. slow.next:
             head = head.next
             slow = slow.next
 
-        return head
+        r.. head

@@ -1,8 +1,8 @@
-from collections import namedtuple
-import re
+____ collections _______ namedtuple
+_______ re
 
-from bs4 import BeautifulSoup
-import requests
+____ bs4 _______ BeautifulSoup
+_______ requests
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -16,7 +16,7 @@ ___ _create_soup_obj(url):
     """Need utf-8 to properly parse emojis"""
     resp = requests.get(url)
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "html.parser")
+    r.. BeautifulSoup(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5):
@@ -27,18 +27,18 @@ ___ get_top_titles(url, top=5):
     soup = _create_soup_obj(url)
 
     
-    entries = []
+    entries    # list
     rows = soup.find_all("tr",id=True)
     
 
-    get_number = lambda s: int(re.search(r'\d+',s).group())
+    get_number = l.... s: int(re.search(r'\d+',s).group())
 
 
-    for row in rows:
+    ___ row __ rows:
         links = row.select('span.title a')
         title_text = links[0].getText(strip=True)
         link_text = ''
-        __ len(links) > 1:
+        __ l..(links) > 1:
             link_text = links[1].getText(strip=True)
             link_text = f" ({link_text})"
 
@@ -60,12 +60,12 @@ ___ get_top_titles(url, top=5):
 
 
         entry = Entry(title_text,points,comments)
-        entries.append(entry)
+        entries.a..(entry)
 
 
-    entries.sort(reverse=True,key=lambda x: (x.points,x.comments))
+    entries.sort(r.._T..key=l.... x: (x.points,x.comments))
 
-    return entries[:top]
+    r.. entries[:top]
 
 
 

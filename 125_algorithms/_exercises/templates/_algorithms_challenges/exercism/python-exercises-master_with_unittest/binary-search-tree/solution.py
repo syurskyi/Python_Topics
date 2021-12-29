@@ -6,46 +6,46 @@ class TreeNode(object):
 
     ___ __str__(self):
         fmt = 'TreeNode(data={}, left={}, right={})'
-        return fmt.format(self.data, self.left, self.right)
+        r.. fmt.format(self.data, self.left, self.right)
 
 
 class BinarySearchTree(object):
     ___ __init__(self, tree_data):
-        self.root = None
-        for data in tree_data:
+        self.root = N..
+        ___ data __ tree_data:
             self.add(data)
 
     ___ add(self, data):
-        __ self.root is None:
-            self.root = TreeNode(data, None, None)
-            return
+        __ self.root __ N..
+            self.root = TreeNode(data, N.., N..)
+            r..
         inserted = False
         cur_node = self.root
 
-        while not inserted:
+        while n.. inserted:
             __ data <= cur_node.data:
                 __ cur_node.left:
                     cur_node = cur_node.left
-                else:
-                    cur_node.left = TreeNode(data, None, None)
+                ____:
+                    cur_node.left = TreeNode(data, N.., N..)
                     inserted = True
-            elif data > cur_node.data:
+            ____ data > cur_node.data:
                 __ cur_node.right:
                     cur_node = cur_node.right
-                else:
-                    cur_node.right = TreeNode(data, None, None)
+                ____:
+                    cur_node.right = TreeNode(data, N.., N..)
                     inserted = True
 
     ___ _inorder_traverse(self, node, elements):
-        __ node is not None:
+        __ node __ n.. N..
             self._inorder_traverse(node.left, elements)
-            elements.append(node.data)
+            elements.a..(node.data)
             self._inorder_traverse(node.right, elements)
 
     ___ data(self):
-        return self.root
+        r.. self.root
 
     ___ sorted_data(self):
-        elements = []
+        elements    # list
         self._inorder_traverse(self.root, elements)
-        return elements
+        r.. elements

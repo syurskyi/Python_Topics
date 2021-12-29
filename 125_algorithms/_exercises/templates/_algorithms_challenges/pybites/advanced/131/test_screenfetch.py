@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from screenfetch import output, sysinfo_scrape
+____ screenfetch _______ output, sysinfo_scrape
 
 debian = """
          _,met$$$$$gg.           mohh@SERENiTY
@@ -44,22 +44,22 @@ mac = """
 @pytest.fixture(scope="module")
 ___ sysinfo():
     """Make a module scope sysinfo object"""
-    return sysinfo_scrape(output)
+    r.. sysinfo_scrape(output)
 
 
 ___ test_sysinfo_scrape_type(sysinfo):
     """Test for proper object"""
-    assert isinstance(sysinfo, dict)
+    ... isi..(sysinfo, d..)
 
 
 ___ test_sysinfo_scrape_name(sysinfo):
     """Test for inclusion of the 'Name' key"""
-    assert sysinfo["Name"] == "mohh@SERENiTY"
+    ... sysinfo["Name"] __ "mohh@SERENiTY"
 
 
 ___ test_sysinfo_scrape_length(sysinfo):
     """Test for correct amount of entries"""
-    assert len(sysinfo) == 16
+    ... l..(sysinfo) __ 16
 
 
 ___ test_sysinfo_scrape_keys(sysinfo):
@@ -69,7 +69,7 @@ ___ test_sysinfo_scrape_keys(sysinfo):
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
     ]
-    assert list(sysinfo.keys()) == expected
+    ... l..(sysinfo.keys()) __ expected
 
 
 ___ test_sysinfo_scrape_values(sysinfo):
@@ -82,16 +82,16 @@ ___ test_sysinfo_scrape_values(sysinfo):
         'AMD KAVERI (DRM 2.50.0 / 4.15.0-34-generic, LLVM 6.0.0)', 
         '1886MiB / 6915MiB'
     ]
-    assert list(sysinfo.values()) == expected
+    ... l..(sysinfo.values()) __ expected
 
 
 ___ test_sysinfo_scrape_debian():
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(debian)
-    assert sysinfo["Resolution"] == "1366x768"
+    ... sysinfo["Resolution"] __ "1366x768"
 
 
 ___ test_sysinfo_scrape_mac():
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(mac)
-    assert sysinfo["Name"] == "ejo@BlackOil"
+    ... sysinfo["Name"] __ "ejo@BlackOil"

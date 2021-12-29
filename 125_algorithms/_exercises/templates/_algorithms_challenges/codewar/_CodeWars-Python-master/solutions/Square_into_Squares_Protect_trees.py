@@ -12,11 +12,11 @@ ___ decompose(n):
     while result:
         current = result.pop()
         goal += current ** 2
-        for i in range(current - 1, 0, -1):
+        ___ i __ r..(current - 1, 0, -1):
             __ goal - (i ** 2) >= 0:
                 goal -= i ** 2
-                result.append(i)
-                __ goal == 0:
+                result.a..(i)
+                __ goal __ 0:
                     result.sort()
-                    return result
-    return None
+                    r.. result
+    r.. N..

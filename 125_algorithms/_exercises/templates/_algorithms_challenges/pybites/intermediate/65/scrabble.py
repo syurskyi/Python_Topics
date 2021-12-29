@@ -1,6 +1,6 @@
-import itertools
-import os
-import urllib.request
+_______ itertools
+_______ os
+_______ urllib.request
 
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
@@ -12,22 +12,22 @@ urllib.request.urlretrieve(
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.strip().lower() for word in f.read().split()])
+    dictionary = set([word.strip().lower() ___ word __ f.read().s.. ])
 
 print(dictionary)
 ___ get_possible_dict_words(draw):
     """Get all possible words from a draw (list of letters) which are
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
-    return (word for word in _get_permutations_draw(draw) __ word in dictionary)
+    r.. (word ___ word __ _get_permutations_draw(draw) __ word __ dictionary)
 
 
 ___ _get_permutations_draw(draw):
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
     
-    for i in range(1,len(draw) + 1):
-        for word in itertools.permutations(draw,i):
+    ___ i __ r..(1,l..(draw) + 1):
+        ___ word __ itertools.permutations(draw,i):
             yield ''.join(word).lower()
 
 
@@ -35,11 +35,11 @@ ___ _get_permutations_draw(draw):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
-    DRAW = list('GARYTEV')
+    DRAW = l..('GARYTEV')
 
-    print(list(_get_permutations_draw(DRAW)))
+    print(l..(_get_permutations_draw(DRAW)))
 
 
 

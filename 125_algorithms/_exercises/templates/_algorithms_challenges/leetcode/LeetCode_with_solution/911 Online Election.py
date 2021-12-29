@@ -29,9 +29,9 @@ times is a strictly increasing array with all elements in [0, 10^9].
 TopVotedCandidate.q is called at most 10000 times per test case.
 TopVotedCandidate.q(int t) is always called with t >= times[0].
 """
-from typing import List
-from collections import defaultdict
-import bisect
+____ typing _______ List
+____ collections _______ defaultdict
+_______ bisect
 
 
 class TopVotedCandidate:
@@ -43,23 +43,23 @@ class TopVotedCandidate:
         but time is too large to enumerate. Cannot have direct access, then
         query is binary search
         """
-        self.maxes = []  # [(t, i)]  at time t
+        self.maxes    # list  # [(t, i)]  at time t
         counter = defaultdict(int)
-        tp = sorted(zip(times, persons))
-        for t, p in tp:
+        tp = s..(zip(times, persons))
+        ___ t, p __ tp:
             counter[p] += 1
-            __ not self.maxes or counter[self.maxes[-1][1]] <= counter[p]:
-                self.maxes.append((t, p))
+            __ n.. self.maxes o. counter[self.maxes[-1][1]] <= counter[p]:
+                self.maxes.a..((t, p))
 
     ___ q(self, t: int) -> int:
         i = bisect.bisect(self.maxes, (t, 0))
         # equal
-        __ i < len(self.maxes) and self.maxes[i][0] == t:
-            return self.maxes[i][1]
+        __ i < l..(self.maxes) and self.maxes[i][0] __ t:
+            r.. self.maxes[i][1]
 
         # smaller
         i -= 1
-        return self.maxes[i][1]
+        r.. self.maxes[i][1]
 
 
 # Your TopVotedCandidate object will be instantiated and called as such:

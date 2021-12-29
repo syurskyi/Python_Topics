@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from pascals_triangle import triangle, row, is_triangle
+____ pascals_triangle _______ triangle, row, is_triangle
 
 
 class PascalsTriangleTest(unittest.TestCase):
@@ -34,5 +34,5 @@ class PascalsTriangleTest(unittest.TestCase):
         self.assertEqual(row(7), ans)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

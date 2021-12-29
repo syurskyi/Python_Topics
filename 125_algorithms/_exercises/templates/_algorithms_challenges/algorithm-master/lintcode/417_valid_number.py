@@ -4,36 +4,36 @@ class Solution:
     @return: whether the string is a valid number
     """
     ___ isNumber(self, s):
-        __ not s:
-            return False
+        __ n.. s:
+            r.. False
 
-        n = len(s)
+        n = l..(s)
         left, right = 0, n - 1
-        while left < n and s[left] == ' ':
+        while left < n and s[left] __ ' ':
             left += 1
-        while right >= 0 and s[right] == ' ':
+        while right >= 0 and s[right] __ ' ':
             right -= 1
-        __ left < n and s[left] in ('+', '-'):
+        __ left < n and s[left] __ ('+', '-'):
             left += 1
 
         __ left > right:
-            return False
+            r.. False
 
-        __ left != 0 or right != n - 1:
+        __ left != 0 o. right != n - 1:
             s = s[left:right + 1]
 
         zero = ord('0')
         nine = ord('9')
         is_contained_dot = False
         is_contained_num = False
-        for char in s:
-            __ char == '.' and is_contained_dot:
-                return False
-            __ not (char == '.' or zero <= ord(char) <= nine):
-                return False
-            __ char == '.':
+        ___ char __ s:
+            __ char __ '.' and is_contained_dot:
+                r.. False
+            __ n.. (char __ '.' o. zero <= ord(char) <= nine):
+                r.. False
+            __ char __ '.':
                 is_contained_dot = True
             __ zero <= ord(char) <= nine:
                 is_contained_num = True
 
-        return is_contained_num
+        r.. is_contained_num

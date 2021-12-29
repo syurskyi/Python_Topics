@@ -1,6 +1,6 @@
 class TrieNode:
     ___ __init__(self):
-        self.end_of = None
+        self.end_of = N..
         self.children = {}
 
 
@@ -9,13 +9,13 @@ class Trie:
         self.root = TrieNode()
 
     ___ put(self, word):
-        __ not isinstance(word, str):
-            return
+        __ n.. isi..(word, str):
+            r..
 
         node = self.root
 
-        for c in word:
-            __ c not in node.children:
+        ___ c __ word:
+            __ c n.. __ node.children:
                 node.children[c] = TrieNode()
 
             node = node.children[c]
@@ -33,36 +33,36 @@ class Solution:
         """
         trie = Trie()
 
-        for word in words:
+        ___ word __ words:
             trie.put(word)
 
-        ans = []
-        dp = [i for i in range(len(target) + 1)]
+        ans    # list
+        dp = [i ___ i __ r..(l..(target) + 1)]
 
         self.dfs(trie.root, k, target, ans, dp)
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, k, target, ans, pre):
-        n = len(target)
+        n = l..(target)
 
-        __ node.end_of is not None and pre[n] <= k:
-            ans.append(node.end_of)
+        __ node.end_of __ n.. N.. and pre[n] <= k:
+            ans.a..(node.end_of)
 
         dp = [0] * (n + 1)
 
-        for c in node.children:
+        ___ c __ node.children:
             dp[0] = pre[0] + 1
 
-            for i in range(1, n + 1):
-                __ target[i - 1] == c:
-                    dp[i] = min(
+            ___ i __ r..(1, n + 1):
+                __ target[i - 1] __ c:
+                    dp[i] = m..(
                         dp[i - 1] + 1,
                         pre[i] + 1,
                         pre[i - 1]
                     )
-                else:
-                    dp[i] = min(
+                ____:
+                    dp[i] = m..(
                         dp[i - 1] + 1,
                         pre[i] + 1,
                         pre[i - 1] + 1

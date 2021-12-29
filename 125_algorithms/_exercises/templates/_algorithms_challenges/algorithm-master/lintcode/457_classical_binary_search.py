@@ -5,21 +5,21 @@ class Solution:
     @return: An integer
     """
     ___ findPosition(self, A, target):
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         while left + 1 < right:
             mid = (left + right) // 2
-            __ A[mid] == target:
-                return mid
+            __ A[mid] __ target:
+                r.. mid
             __ A[mid] < target:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        __ A[left] == target:
-            return left
-        __ A[right] == target:
-            return right
-        return -1
+        __ A[left] __ target:
+            r.. left
+        __ A[right] __ target:
+            r.. right
+        r.. -1

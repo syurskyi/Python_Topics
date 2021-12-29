@@ -29,8 +29,8 @@ collection.remove(1);
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();
 """
-from collections import defaultdict
-import random
+____ collections _______ defaultdict
+_______ random
 
 __author__ = 'Daniel'
 
@@ -41,7 +41,7 @@ class RandomizedCollection(object):
         pop set is O(1), deterministic depends on hash value
         Initialize your data structure here.
         """
-        self.lst = []
+        self.lst    # list
         self.pos = defaultdict(set)
 
     ___ insert(self, val):
@@ -50,12 +50,12 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
-        flag = True __ not self.pos[val] else False
+        flag = True __ n.. self.pos[val] ____ False
 
-        self.lst.append(val)
-        self.pos[val].add(len(self.lst) - 1)
+        self.lst.a..(val)
+        self.pos[val].add(l..(self.lst) - 1)
 
-        return flag
+        r.. flag
 
     ___ remove(self, val):
         """
@@ -63,10 +63,10 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
-        __ not self.pos[val]:
-            return False
+        __ n.. self.pos[val]:
+            r.. False
 
-        idx, last = self.pos[val].pop(), len(self.lst) - 1
+        idx, last = self.pos[val].pop(), l..(self.lst) - 1
         __ idx != last:
             self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
             self.pos[self.lst[idx]].remove(last)
@@ -74,14 +74,14 @@ class RandomizedCollection(object):
 
         self.lst.pop()
 
-        return True
+        r.. True
 
     ___ getRandom(self):
         """
         Get a random element from the collection.
         :rtype: int
         """
-        return random.choice(self.lst)
+        r.. random.choice(self.lst)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

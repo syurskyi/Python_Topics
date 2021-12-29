@@ -1,6 +1,6 @@
-from collections import OrderedDict
+____ collections _______ OrderedDict
 
-___ calc_median_from_dict(d: dict) -> float:
+___ calc_median_from_dict(d: d..) -> float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -8,28 +8,28 @@ ___ calc_median_from_dict(d: dict) -> float:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
 
-    values_sorted = dict(OrderedDict(sorted(d.items(), key=lambda t: t[0])))
+    values_sorted = d..(OrderedDict(s..(d.items(), key=l.... t: t[0])))
 
-    __ len(values_sorted) == 1:
-        return list(values_sorted.keys())[0]
+    __ l..(values_sorted) __ 1:
+        r.. l..(values_sorted.keys())[0]
 
-    number = sum(values_sorted.values())
+    number = s..(values_sorted.values())
     determinate = number / 2
     i = 0
     i2 = 0
-    the_key = []
+    the_key    # list
 
-    for key, value in values_sorted.items():
+    ___ key, value __ values_sorted.items():
         __ i < determinate:
             i += value
-        else:
-            the_key.append(key)
+        ____:
+            the_key.a..(key)
             i2 += value
 
     the_key_true = the_key[0]
-    before = [key for key in values_sorted.keys() __ key < the_key_true][-1]
+    before = [key ___ key __ values_sorted.keys() __ key < the_key_true][-1]
 
-    __ i == i2:
-        return (before + the_key_true) / 2
-    else:
-        return before
+    __ i __ i2:
+        r.. (before + the_key_true) / 2
+    ____:
+        r.. before

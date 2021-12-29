@@ -28,7 +28,7 @@ class SummaryRanges(object):
         BST is the most efficient, while heap is simple to write
         Initialize your data structure here.
         """
-        self.itvls = []
+        self.itvls    # list
 
     ___ addNum(self, val):
         """
@@ -36,25 +36,25 @@ class SummaryRanges(object):
         :type val: int
         :rtype: void
         """
-        self.itvls.append(Interval(val, val))
+        self.itvls.a..(Interval(val, val))
 
     ___ getIntervals(self):
         """
         O(n lg n)
         :rtype: List[Interval]
         """
-        self.itvls.sort(key=lambda x: x.start)
+        self.itvls.sort(key=l.... x: x.start)
 
         ret = [self.itvls[0]]
-        for itvl in self.itvls[1:]:
+        ___ itvl __ self.itvls[1:]:
             pre = ret[-1]
             __ itvl.start <= pre.end + 1:
                 pre.end = max(itvl.end, pre.end)
-            else:
-                ret.append(itvl)
+            ____:
+                ret.a..(itvl)
 
         self.itvls = ret
-        return ret
+        r.. ret
 
 # Your SummaryRanges object will be instantiated and called as such:
 # obj = SummaryRanges()

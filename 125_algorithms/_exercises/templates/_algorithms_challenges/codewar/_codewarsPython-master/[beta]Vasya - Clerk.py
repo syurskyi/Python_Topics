@@ -1,23 +1,23 @@
 ___ tickets(people):
     cashier = {100:0,50:0,25:0}
-    for pay in people:
-        __ pay == 25:
+    ___ pay __ people:
+        __ pay __ 25:
             cashier[25] += 1
-        elif pay == 50:
-            __ cashier[25] == 0:
-                return 'NO'
+        ____ pay __ 50:
+            __ cashier[25] __ 0:
+                r.. 'NO'
             cashier[50] += 1
             cashier[25] -= 1
-        else:
+        ____:
             cashier[100] += 1
             __ cashier[50] >= 1 and cashier[25] >= 1:
                 cashier[50] -= 1
                 cashier[25] -= 1
-            elif cashier[25] >= 3:
+            ____ cashier[25] >= 3:
                 cashier[25] -= 3
-            else:
-                return 'NO'
-    return 'YES'
+            ____:
+                r.. 'NO'
+    r.. 'YES'
 
 
 print(tickets([25,25,25,100,25,50]))    

@@ -1,13 +1,13 @@
-import itertools
+_______ itertools
 
-rank = [str(i) for i in range(2,11)] + ['J', 'Q', 'K', 'A']
-print(len(rank))
+rank = [str(i) ___ i __ r..(2,11)] + ['J', 'Q', 'K', 'A']
+print(l..(rank))
 
 suits = ['H', 'C', 'D', 'S']
 
-deck = [card for card in itertools.product(rank, suits)]
+deck = [card ___ card __ itertools.product(rank, suits)]
 print(deck)
 
-combinations = [combination for combination in itertools.combinations(deck, 5)]
+combinations = [combination ___ combination __ itertools.combinations(deck, 5)]
 
-print(len(combinations))
+print(l..(combinations))

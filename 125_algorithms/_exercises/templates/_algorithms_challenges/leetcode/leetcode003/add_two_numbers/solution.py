@@ -8,37 +8,37 @@ class Solution:
     # @return a ListNode
     ___ addTwoNumbers(self, l1, l2):
         carry = 0
-        res = None
-        res_end = None
-        while l1 is not None and l2 is not None:
+        res = N..
+        res_end = N..
+        while l1 __ n.. N.. and l2 __ n.. N..
             temp = l1.val + l2.val + carry
             digit = temp % 10
             carry = temp / 10
-            __ res is None:
+            __ res __ N..
                 res = ListNode(digit)
                 res_end = res
-            else:
+            ____:
                 res_end.next = ListNode(digit)
                 res_end = res_end.next
             l1 = l1.next
             l2 = l2.next
-        rem = None
-        __ l1 is not None:
+        rem = N..
+        __ l1 __ n.. N..
             rem = l1
-        else:
+        ____:
             rem = l2
-        while rem is not None:
+        while rem __ n.. N..
             temp = rem.val + carry
             digit = temp % 10
             carry = temp / 10
-            __ res is None:
+            __ res __ N..
                 res = ListNode(digit)
                 res_end = res
-            else:
+            ____:
                 res_end.next = ListNode(digit)
                 res_end = res_end.next
             rem = rem.next
-        __ carry == 1:
+        __ carry __ 1:
             res_end.next = ListNode(1)
             res_end = res_end.next
-        return res
+        r.. res

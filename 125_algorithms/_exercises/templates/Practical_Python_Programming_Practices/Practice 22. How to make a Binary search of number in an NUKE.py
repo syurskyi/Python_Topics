@@ -1,8 +1,8 @@
-from random import random
+____ random _______ random
 N  20
 array  []
-for x in range(N):
-    array.append(i..(random()*100))
+___ x __ r..(N):
+    array.a..(i..(random()*100))
 
 array.sort()
 print(array)
@@ -16,10 +16,10 @@ w___ mini < maxi:
     mid  (mini + maxi) // 2
     __ number < array[mid]:
         maxi  mid-1
-    elif number > array[mid]:
+    ____ number > array[mid]:
         mini  mid+1
-    else:
+    ____:
         print("The number is located at index: ", mid)
         _____
-else:
+____:
     print("There is no number!")

@@ -9,34 +9,34 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
-        __ not strs: return ''
+        __ n.. strs: r.. ''
         ind = 0
         while True:
             same = True
-            for i, s in enumerate(strs):
-                __ ind == len(s):
+            ___ i, s __ enumerate(strs):
+                __ ind __ l..(s):
                     same = False
                     break
-                __ i == 0:
+                __ i __ 0:
                     c = s[ind]
-                elif c != s[ind]:
+                ____ c != s[ind]:
                     same = False
                     break
-            __ not same:
+            __ n.. same:
                 break
             ind += 1
-        return strs[0][:ind]
+        r.. strs[0][:ind]
     
     ___ test(self):
         testCases = [
             ['a', 'b'],
             ['aa', 'aa'],
         ]
-        for strs in testCases:
-            print('\n'.join([str(row) for row in strs]))
+        ___ strs __ testCases:
+            print('\n'.join([str(row) ___ row __ strs]))
             result = self.longestCommonPrefix(strs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,6 +1,6 @@
 ___ find_anagrams(word, candidates):
-    return [
-        candidate for candidate in candidates __ is_anagram(
+    r.. [
+        candidate ___ candidate __ candidates __ is_anagram(
             word, candidate)]
 
 # Anagram comparison is case insensitive
@@ -9,13 +9,13 @@ ___ find_anagrams(word, candidates):
 ___ is_anagram(word, candidate):
     word_lowercase = word.lower()
     candidate_lowercase = candidate.lower()
-    return (is_not_identical(word_lowercase, candidate_lowercase) and
+    r.. (is_not_identical(word_lowercase, candidate_lowercase) and
             is_identical_when_sorted(word_lowercase, candidate_lowercase))
 
 
 ___ is_not_identical(word, candidate):
-    return word != candidate
+    r.. word != candidate
 
 
 ___ is_identical_when_sorted(word, candidate):
-    return sorted(word) == sorted(candidate)
+    r.. s..(word) __ s..(candidate)

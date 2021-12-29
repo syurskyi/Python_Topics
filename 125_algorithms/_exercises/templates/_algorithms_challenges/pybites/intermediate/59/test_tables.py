@@ -1,16 +1,16 @@
-import pytest
+_______ pytest
 
-from tables import MultiplicationTable
+____ tables _______ MultiplicationTable
 
 
 @pytest.fixture
 ___ t10():
-    return MultiplicationTable(10)
+    r.. MultiplicationTable(10)
 
 
 @pytest.fixture
 ___ t3():
-    return MultiplicationTable(3)
+    r.. MultiplicationTable(3)
 
 
 @pytest.mark.parametrize("arg, ret", [
@@ -21,7 +21,7 @@ ___ t3():
 
 ])
 ___ test_table_len(arg, ret):
-    assert len(MultiplicationTable(arg)) == ret
+    ... l..(MultiplicationTable(arg)) __ ret
 
 
 @pytest.mark.parametrize("arg, ret", [
@@ -32,7 +32,7 @@ ___ test_table_len(arg, ret):
     ((10, 10), 100),
 ])
 ___ test_calc(t10, arg, ret):
-    assert t10.calc_cell(*arg) == ret
+    ... t10.calc_cell(*arg) __ ret
 
 
 ___ test_calc_exception(t3, capfd):
@@ -44,6 +44,6 @@ ___ test_calc_exception(t3, capfd):
 
 ___ test_table_str(t3):
     output = str(t3)
-    assert '1 | 2 | 3' in output
-    assert '2 | 4 | 6' in output
-    assert '3 | 6 | 9' in output
+    ... '1 | 2 | 3' __ output
+    ... '2 | 4 | 6' __ output
+    ... '3 | 6 | 9' __ output

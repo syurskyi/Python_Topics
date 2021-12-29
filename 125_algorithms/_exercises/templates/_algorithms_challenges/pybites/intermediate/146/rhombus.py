@@ -16,10 +16,10 @@ ___ gen_rhombus(width):
          ***
           *
     """
-    for row in range(1, width +1, 2):
+    ___ row __ r..(1, width +1, 2):
       yield f"{(STAR * row).center(width)}"
 
-    for row in range(width -2, 0, -2):
+    ___ row __ r..(width -2, 0, -2):
       yield f"{(STAR * row).center(width)}"
 
     

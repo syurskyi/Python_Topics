@@ -22,28 +22,28 @@ class Solution:
         :param nRows:
         :return: a String
         """
-        length = len(s)
-        matrix = [[] for _ in xrange(nRows)]
+        length = l..(s)
+        matrix = [[] ___ _ __ xrange(nRows)]
 
         i = 0
         while i < length:
             try:
                 # going down
-                for j in xrange(nRows):
-                    matrix[j].append(s[i])
+                ___ j __ xrange(nRows):
+                    matrix[j].a..(s[i])
                     i += 1
 
                 # going up
-                for j in xrange(nRows-1-1, 0, -1):
-                    matrix[j].append(s[i])
+                ___ j __ xrange(nRows-1-1, 0, -1):
+                    matrix[j].a..(s[i])
                     i += 1
 
             except IndexError:
                 break
 
-        lst = ["".join(element) for element in matrix]
-        return "".join(lst)
+        lst = ["".join(element) ___ element __ matrix]
+        r.. "".join(lst)
 
 
-__ __name__ == "__main__":
-    assert Solution().convert("ABCD", 2) == "ACBD"
+__ __name__ __ "__main__":
+    ... Solution().convert("ABCD", 2) __ "ACBD"

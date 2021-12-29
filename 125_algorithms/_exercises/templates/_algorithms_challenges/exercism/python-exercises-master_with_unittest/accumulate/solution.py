@@ -2,7 +2,7 @@
 
 
 ___ accumulate(seq, op):
-    res = []
-    for el in seq:
-        res.append(op(el))
-    return res
+    res    # list
+    ___ el __ seq:
+        res.a..(op(el))
+    r.. res

@@ -13,10 +13,10 @@ ___ transpose(data):
     In: transpose(data)
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
-    __ isinstance(data, dict):
-        return zip(*data.items())
-    else:
-        return zip(*data)
+    __ isi..(data, d..):
+        r.. zip(*data.items())
+    ____:
+        r.. zip(*data)
 
 
 #POSTS = {'2017-8': 19, '2017-9': 13, '2017-10': 13, '2017-11': 12, '2017-12': 11, '2018-1': 3}

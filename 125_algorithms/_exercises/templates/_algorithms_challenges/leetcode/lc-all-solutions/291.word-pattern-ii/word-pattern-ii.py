@@ -7,18 +7,18 @@ class Solution(object):
     """
 
     ___ dfs(p, s, pathp, paths, visited):
-      __ len(p) == len(s) == 0:
-        return True
-      __ len(p) == 0 or len(p) > len(s):
-        return False
-      for i in range(0, len(s)):
-        pathp.append(p[0])
-        paths.append(s[:i + 1])
-        __ len(pathp) == len(paths) and len(set(paths)) == len(set(pathp)) == len(set(zip(paths, pathp))):
+      __ l..(p) __ l..(s) __ 0:
+        r.. True
+      __ l..(p) __ 0 o. l..(p) > l..(s):
+        r.. False
+      ___ i __ r..(0, l..(s)):
+        pathp.a..(p[0])
+        paths.a..(s[:i + 1])
+        __ l..(pathp) __ l..(paths) and l..(set(paths)) __ l..(set(pathp)) __ l..(set(zip(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited):
-            return True
+            r.. True
         pathp.pop()
         paths.pop()
-      return False
+      r.. False
 
-    return dfs(pattern, str, [], [], {})
+    r.. dfs(pattern, str, [], [], {})

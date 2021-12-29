@@ -11,12 +11,12 @@ class Solution(object):
         :rtype: int
         """
         j, s = J, S
-        jset = set(list(j))
+        jset = set(l..(j))
         res = 0
-        for c in s:
-            __ c in jset:
+        ___ c __ s:
+            __ c __ jset:
                 res += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -29,12 +29,12 @@ class Solution(object):
                 'ZZ',
             ],
         ]
-        for j, s in testCases:
+        ___ j, s __ testCases:
             print('j: %s' % j)
             print('s: %s' % s)
             result = self.numJewelsInStones(j, s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

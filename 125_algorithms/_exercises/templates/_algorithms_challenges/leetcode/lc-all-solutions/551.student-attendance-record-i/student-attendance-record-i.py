@@ -5,14 +5,14 @@ class Solution(object):
     :rtype: bool
     """
     a = l = 0
-    for c in s:
-      __ c == "L":
+    ___ c __ s:
+      __ c __ "L":
         l += 1
-      elif c == "A":
+      ____ c __ "A":
         a += 1
         l = 0
-      else:
+      ____:
         l = 0
-      __ a > 1 or l > 2:
-        return False
-    return True
+      __ a > 1 o. l > 2:
+        r.. False
+    r.. True

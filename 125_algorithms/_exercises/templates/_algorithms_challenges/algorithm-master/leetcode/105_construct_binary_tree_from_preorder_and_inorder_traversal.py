@@ -13,11 +13,11 @@ class Solution(object):
         :type I: List[int]
         :rtype: TreeNode
         """
-        __ not P or not I:
-            return
+        __ n.. P o. n.. I:
+            r..
 
         i = I.index(P.pop(0))
         node = TreeNode(I[i])
         node.left = self.buildTree(P, I[:i])
         node.right = self.buildTree(P, I[i + 1:])
-        return node
+        r.. node

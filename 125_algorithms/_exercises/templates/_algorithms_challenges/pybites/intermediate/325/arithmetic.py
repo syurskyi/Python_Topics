@@ -1,9 +1,9 @@
-from typing import Generator
+____ typing _______ Generator
 
 VALUES = "[0.1, 0.2, 0.3, 0.005, 0.005, 2.67]"
 
 
-___ calc_sums(values: str = VALUES) -> Generator[str, None, None]:
+___ calc_sums(values: str = VALUES) -> Generator[str, N.., N..]:
     """
     Process the above JSON-encoded string of values and calculate the sum of each adjacent pair.
 
@@ -12,12 +12,12 @@ ___ calc_sums(values: str = VALUES) -> Generator[str, None, None]:
         'The sum of 0.1 and 0.2, rounded to two decimal places, is 0.3.'
     """
     values_list = VALUES.strip("[]").split(", ")
-    for i in range(1, len(values_list)):
+    ___ i __ r..(1, l..(values_list)):
         
         previous, current = float(values_list[i -1]), float(values_list[i])
         __ previous < 0.1 and current < 0.1:
             total = previous + current
-        else:
+        ____:
             total = round(previous, 2) + round(current, 2)
 
         yield f"The sum of {values_list[i -1]} and {values_list[i]}, rounded to two decimal places, is {total:.2f}."

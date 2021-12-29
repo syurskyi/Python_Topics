@@ -9,45 +9,45 @@ class Solution:
     # @param k, an integer
     # @return a ListNode
     ___ reverseKGroup(self, head, k):
-        __ head is None:
-            return head
+        __ head __ N..
+            r.. head
         h = head
         n = 0
-        while h is not None:
+        while h __ n.. N..
             n += 1
             h = h.next
         num_groups = n / k
         # if k is larger than n, return head
-        __ num_groups == 0:
-            return head
+        __ num_groups __ 0:
+            r.. head
         # `last_group` is the 1-base index of the last group node
         last_group = num_groups * k
-        res = None
-        res_end = None
-        temp = None
-        temp_end = None
+        res = N..
+        res_end = N..
+        temp = N..
+        temp_end = N..
         i = 1
-        while head is not None:
+        while head __ n.. N..
             next_node = head.next
             __ i <= last_group:
                 # Appended current node to `temp` list
-                __ temp is None:
+                __ temp __ N..
                     temp_end = head
                 head.next = temp
                 temp = head
                 # Appended `temp` list to `res`
-                __ i % k == 0:
-                    __ res is None:
+                __ i % k __ 0:
+                    __ res __ N..
                         res = temp
                         res_end = temp_end
-                    else:
+                    ____:
                         res_end.next = temp
                         res_end = temp_end
                     # Reset `temp`
-                    temp = None
-            else:
+                    temp = N..
+            ____:
                 res_end.next = head
                 break
             i += 1
             head = next_node
-        return res
+        r.. res

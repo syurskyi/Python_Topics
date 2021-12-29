@@ -1,4 +1,4 @@
-from enum import Enum
+____ enum _______ Enum
 
 THUMBS_UP = '👍'  # in case you go f-string ...
 
@@ -10,8 +10,8 @@ class Score(Enum):
     CHEATED = 1
 
     ___ __str__(self):
-        return f'{self.name} => {THUMBS_UP * self.value}'
+        r.. f'{self.name} => {THUMBS_UP * self.value}'
 
     @classmethod
     ___ average(cls):
-        return sum(v.value for v in list(cls))/len(cls)
+        r.. s..(v.value ___ v __ l..(cls))/l..(cls)

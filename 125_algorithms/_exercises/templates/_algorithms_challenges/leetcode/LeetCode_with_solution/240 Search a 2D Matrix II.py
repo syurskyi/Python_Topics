@@ -32,20 +32,20 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        m = len(mat)
-        n = len(mat[0])
+        m = l..(mat)
+        n = l..(mat[0])
 
         i = 0
         j = n-1
         while i < m and 0 <= j:
-            __ mat[i][j] == target:
-                return True
-            elif mat[i][j] > target:
+            __ mat[i][j] __ target:
+                r.. True
+            ____ mat[i][j] > target:
                 j -= 1
-            else:
+            ____:
                 i += 1
 
-        return False
+        r.. False
 
 
 class SolutionBinSearch(object):
@@ -62,39 +62,39 @@ class SolutionBinSearch(object):
         :type target: int
         :rtype: bool
         """
-        m = len(mat)
-        n = len(mat[0])
+        m = l..(mat)
+        n = l..(mat[0])
 
-        col = [mat[i][0] for i in xrange(m)]
+        col = [mat[i][0] ___ i __ xrange(m)]
         row_by_first = self.bin_search(col, target)
 
-        col = [mat[i][-1] for i in xrange(m)]
+        col = [mat[i][-1] ___ i __ xrange(m)]
         row_by_last = self.bin_search(col, target, False)
 
-        for i in range(row_by_first, row_by_last-1, -1):
+        ___ i __ r..(row_by_first, row_by_last-1, -1):
             col = self.bin_search(mat[i], target)
-            __ mat[i][col] == target:
-                return True
+            __ mat[i][col] __ target:
+                r.. True
 
-        return False
+        r.. False
 
     ___ bin_search(self, A, t, lower=True):
         lo = 0
-        hi = len(A)
+        hi = l..(A)
         while lo < hi:
             mid = (lo+hi)/2
-            __ A[mid] == t:
-                return mid
-            elif A[mid] < t:
+            __ A[mid] __ t:
+                r.. mid
+            ____ A[mid] < t:
                 lo = mid+1
-            else:
+            ____:
                 hi = mid
 
         __ lower:
-            return lo-1
-        else:
-            return lo
+            r.. lo-1
+        ____:
+            r.. lo
 
-__ __name__ == "__main__":
-    assert Solution().searchMatrix([[1, 4], [2, 5]], 4) == True
-    assert SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) == True
+__ __name__ __ "__main__":
+    ... Solution().searchMatrix([[1, 4], [2, 5]], 4) __ True
+    ... SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ True

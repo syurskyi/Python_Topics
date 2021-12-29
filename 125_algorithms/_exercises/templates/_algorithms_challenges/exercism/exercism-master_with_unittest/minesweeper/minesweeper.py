@@ -8,38 +8,38 @@ class Minesweeper:
 
     @classmethod
     ___ board(cls, inp):
-        __ not cls.valid(inp):
+        __ n.. cls.valid(inp):
             raise ValueError
-        return cls.solve(inp)
+        r.. cls.solve(inp)
 
     # Split rows (String -> List) and operate on board in place
     @classmethod
     ___ solve(cls, inp):
-        inp = list([list(row) for row in inp])
-        return list(["".join(row) for row in cls.generate_board(inp)])
+        inp = l..([l..(row) ___ row __ inp])
+        r.. l..(["".join(row) ___ row __ cls.generate_board(inp)])
 
     @classmethod
     ___ generate_board(cls, inp):
-        return [[cls.convert_square(inp, y, x)
-                 for x, square in enumerate(row)]
-                for y, row in enumerate(inp)]
+        r.. [[cls.convert_square(inp, y, x)
+                 ___ x, square __ enumerate(row)]
+                ___ y, row __ enumerate(inp)]
 
     # Only convert squares that are spaces
     @classmethod
     ___ convert_square(cls, inp, y, x):
-        __ not cls.is_space(inp[y][x]):
-            return inp[y][x]
-        return str(cls.output_of_neighbor_mines(inp, y, x))
+        __ n.. cls.is_space(inp[y][x]):
+            r.. inp[y][x]
+        r.. str(cls.output_of_neighbor_mines(inp, y, x))
 
     @classmethod
     ___ output_of_neighbor_mines(cls, inp, y, x):
         num_mines = cls.num_of_neighbor_mines(inp, y, x)
-        return " " __ num_mines == 0 else num_mines
+        r.. " " __ num_mines __ 0 ____ num_mines
 
     @classmethod
     ___ num_of_neighbor_mines(cls, inp, y, x):
-        return len(
-            list([neighbor for neighbor in cls.all_neighbor_coords(
+        r.. l..(
+            l..([neighbor ___ neighbor __ cls.all_neighbor_coords(
                 inp, y, x) __ cls.is_neighbor_a_mine(
                 inp, neighbor)]))
 
@@ -47,87 +47,87 @@ class Minesweeper:
     @classmethod
     ___ is_neighbor_a_mine(cls, inp, neighbor):
         y, x = neighbor[0], neighbor[1]
-        return (0 < y < len(inp) and 0 < x < len(inp[0]) and
+        r.. (0 < y < l..(inp) and 0 < x < l..(inp[0]) and
                 cls.is_mine(inp[y][x]))
 
     # Generates list of tuples for all neighboring coords
     # (excluding current coord)
     @classmethod
     ___ all_neighbor_coords(cls, inp, y, x):
-        return [(y + dy, x + dx) for dy in range(-1, 2) for dx in range(-1, 2)
-                __ dy != 0 or dx != 0]
+        r.. [(y + dy, x + dx) ___ dy __ r..(-1, 2) ___ dx __ r..(-1, 2)
+                __ dy != 0 o. dx != 0]
 
     @classmethod
     ___ valid(cls, inp):
-        return (cls.valid_len(inp) and
+        r.. (cls.valid_len(inp) and
                 cls.valid_border(inp) and
                 cls.valid_squares(inp))
 
     # Tests if all rows are the same size
     @classmethod
     ___ valid_len(cls, inp):
-        return all(len(row) == len(inp[0]) for row in inp)
+        r.. a..(l..(row) __ l..(inp[0]) ___ row __ inp)
 
     @classmethod
     ___ valid_border(cls, inp):
-        return (cls.valid_middle_borders(inp) and
+        r.. (cls.valid_middle_borders(inp) and
                 cls.valid_first_and_last_borders(inp))
 
     @classmethod
     ___ valid_middle_borders(cls, inp):
-        return all(cls.valid_middle_border(row) for row in inp[1:-1])
+        r.. a..(cls.valid_middle_border(row) ___ row __ inp[1:-1])
 
     @classmethod
     ___ valid_middle_border(cls, row):
-        return (cls.is_vertical_edge(row[0]) and
+        r.. (cls.is_vertical_edge(row[0]) and
                 cls.is_vertical_edge(row[-1]))
 
     @classmethod
     ___ valid_first_and_last_borders(cls, inp):
-        return (cls.valid_first_or_last_border(inp[0]) and
+        r.. (cls.valid_first_or_last_border(inp[0]) and
                 cls.valid_first_or_last_border(inp[-1]))
 
     @classmethod
     ___ valid_first_or_last_border(cls, row):
-        return (cls.is_corner(row[0]) and cls.is_corner(row[-1]) and
-                all(cls.is_horizontal_edge(square) for square in row[1:-1]))
+        r.. (cls.is_corner(row[0]) and cls.is_corner(row[-1]) and
+                a..(cls.is_horizontal_edge(square) ___ square __ row[1:-1]))
 
     @classmethod
     ___ valid_squares(cls, inp):
-        return all(cls.valid_square(square) for row in inp for square in row)
+        r.. a..(cls.valid_square(square) ___ row __ inp ___ square __ row)
 
     @classmethod
     ___ valid_square(cls, square):
-        return (cls.is_mine(square) or
-                cls.is_space(square) or
-                cls.is_corner(square) or
-                cls.is_vertical_edge(square) or
+        r.. (cls.is_mine(square) o.
+                cls.is_space(square) o.
+                cls.is_corner(square) o.
+                cls.is_vertical_edge(square) o.
                 cls.is_horizontal_edge(square))
 
     @classmethod
     ___ valid_non_border(cls, square):
-        return cls.is_mine(square) or cls.is_space(square)
+        r.. cls.is_mine(square) o. cls.is_space(square)
 
     @classmethod
     ___ is_mine(cls, square):
-        return square == cls.MINE
+        r.. square __ cls.MINE
 
     @classmethod
     ___ is_space(cls, square):
-        return square == cls.SPACE
+        r.. square __ cls.SPACE
 
     @classmethod
     ___ is_corner(cls, square):
-        return square == cls.CORNER
+        r.. square __ cls.CORNER
 
     @classmethod
     ___ is_vertical_edge(cls, square):
-        return square == cls.VERTICAL_EDGE
+        r.. square __ cls.VERTICAL_EDGE
 
     @classmethod
     ___ is_horizontal_edge(cls, square):
-        return square == cls.HORIZONTAL_EDGE
+        r.. square __ cls.HORIZONTAL_EDGE
 
 
 ___ board(inp):
-    return Minesweeper.board(inp)
+    r.. Minesweeper.board(inp)

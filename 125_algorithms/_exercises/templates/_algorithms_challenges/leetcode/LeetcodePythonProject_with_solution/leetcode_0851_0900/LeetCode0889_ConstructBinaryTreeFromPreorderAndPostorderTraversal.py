@@ -7,8 +7,8 @@ Created on Oct 29, 2019
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ constructFromPrePost(self, pre, post):
@@ -17,15 +17,15 @@ class Solution(object):
         :type post: List[int]
         :rtype: TreeNode
         """
-        return self.helper(pre, 0, len(pre)-1, post, 0, len(post)-1)
+        r.. self.helper(pre, 0, l..(pre)-1, post, 0, l..(post)-1)
     
     ___ helper(self, pre, preStart, preEnd, post, postStart, postEnd):
         __ preStart > preEnd:
-            return None
+            r.. N..
         val = pre[preStart]
         node = TreeNode(val)
-        __ postStart == postEnd:
-            return node
+        __ postStart __ postEnd:
+            r.. node
         
         nextPreStart = preStart+1
         val = pre[preStart+1]
@@ -36,7 +36,7 @@ class Solution(object):
 
         node.left = leftNode
         node.right = rightNode
-        return node
+        r.. node
     
     ___ test(self):
         testCases = [
@@ -53,10 +53,10 @@ class Solution(object):
 #                 [4,5,2,6,7,3,1],
 #             ],
         ]
-        for pre, post in testCases:
+        ___ pre, post __ testCases:
             node = self.constructFromPrePost(pre, post)
             print(node)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

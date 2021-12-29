@@ -6,13 +6,13 @@ class Solution:
         """
         color = {}
 
-        for node in range(len(graph)):
-            __ node not in color:
+        ___ node __ r..(l..(graph)):
+            __ node n.. __ color:
                 color[node] = 0
-            for nei in graph[node]:
-                __ nei not in color:
+            ___ nei __ graph[node]:
+                __ nei n.. __ color:
                     color[nei] = color[node] ^ 1
-                elif color[nei] == color[node]:
-                    return False
+                ____ color[nei] __ color[node]:
+                    r.. False
 
-        return True
+        r.. True

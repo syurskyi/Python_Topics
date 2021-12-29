@@ -23,22 +23,22 @@ __author__ = 'Daniel'
 class TrieNode(object):
     ___ __init__(self, char):
         self.char = char
-        self.word = None
+        self.word = N..
         self.children = {}  # map from char to TrieNode
 
     ___ __repr__(self):
-        return repr(self.char)
+        r.. repr(self.char)
 
 
 class Trie(object):
     ___ __init__(self):
-        self.root = TrieNode(None)
+        self.root = TrieNode(N..)
 
     ___ add(self, word):
         word = word.lower()
         cur = self.root
-        for c in word:
-            __ c not in cur.children:
+        ___ c __ word:
+            __ c n.. __ cur.children:
                 cur.children[c] = TrieNode(c)
             cur = cur.children[c]
         cur.word = word
@@ -58,34 +58,34 @@ class Solution:
         :return: a list of string
         """
         trie = Trie()
-        for word in words:
+        ___ word __ words:
             trie.add(word)
 
         ret = set()
         marked = set()
-        for i in xrange(len(board)):
-            for j in xrange(len(board[0])):
+        ___ i __ xrange(l..(board)):
+            ___ j __ xrange(l..(board[0])):
                 self.dfs(board, i, j, trie.root, marked, ret)
 
-        return list(ret)
+        r.. l..(ret)
 
     ___ dfs(self, board, i, j, parent, marked, ret):
         """
         :type parent: TrieNode
         """
-        m = len(board)
-        n = len(board[0])
+        m = l..(board)
+        n = l..(board[0])
         marked.add((i, j))
         c = board[i][j]
 
-        __ c in parent.children:
+        __ c __ parent.children:
             cur = parent.children[c]
             __ cur.word:
                 ret.add(cur.word)
-            for dir in self.dirs:
+            ___ dir __ self.dirs:
                 row = i+dir[0]
                 col = j+dir[1]
-                __ 0 <= row < m and 0 <= col < n and (row, col) not in marked:
+                __ 0 <= row < m and 0 <= col < n and (row, col) n.. __ marked:
                     self.dfs(board, row, col, cur, marked, ret)
 
         marked.remove((i, j))

@@ -2,5 +2,5 @@
 # Score: 10
 
 
-arr = list(map(int, input().split()))
-print(sum(arr) - max(arr), sum(arr) - min(arr))
+arr = l..(map(int, input().split()))
+print(s..(arr) - max(arr), s..(arr) - m..(arr))

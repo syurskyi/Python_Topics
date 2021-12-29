@@ -9,13 +9,13 @@ ___ get_duplicate_indices(words):
       Make sure the returning list is unique and sorted in ascending order."""
    duplicate_index = {}
 
-   for i in range(len(words)):
-      for j in range(len(words)):
-         __ i != j and words[i] == words[j]:
-            __ words[i] not in duplicate_index:
+   ___ i __ r..(l..(words)):
+      ___ j __ r..(l..(words)):
+         __ i != j and words[i] __ words[j]:
+            __ words[i] n.. __ duplicate_index:
                duplicate_index[words[i]] = i
 
-   return [value for value in duplicate_index.values()]
+   r.. [value ___ value __ duplicate_index.values()]
 
    
 # if __name__ == "__main__":

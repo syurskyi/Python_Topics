@@ -3,7 +3,7 @@ ___ tail(filepath, n):
        strip newlines and return a list of the last n lines"""
     with open(filepath) as f:
         lines = f.read().splitlines()
-    return lines[-n:]
+    r.. lines[-n:]
 
 
 print(tail("test.txt", 1))

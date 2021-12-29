@@ -9,20 +9,20 @@ class Solution(object):
         :type candies: List[int]
         :rtype: int
         """
-        n = int(len(candies)/2)
+        n = int(l..(candies)/2)
         candies = set(candies)
-        return min(n, len(candies))
+        r.. m..(n, l..(candies))
     
     ___ test(self):
         testCases = [
             [1,1,2,3],
             [1,1,2,2,3,3],
         ]
-        for candies in testCases:
+        ___ candies __ testCases:
             print('candies: %s' % candies)
             result = self.distributeCandies(candies)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

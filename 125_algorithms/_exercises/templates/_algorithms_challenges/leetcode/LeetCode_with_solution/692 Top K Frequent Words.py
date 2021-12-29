@@ -22,9 +22,9 @@ Input words contain only lowercase letters.
 Follow up:
 Try to solve it in O(n log k) time and O(n) extra space.
 """
-import heapq
-from collections import defaultdict
-from typing import List
+_______ heapq
+____ collections _______ defaultdict
+____ typing _______ List
 
 
 class Word:
@@ -33,10 +33,10 @@ class Word:
         self.count = count
 
     ___ __lt__(self, other):
-        __ self.count == other.count:
-            return self.content > other.content
+        __ self.count __ other.count:
+            r.. self.content > other.content
 
-        return self.count < other.count
+        r.. self.count < other.count
 
 
 class Solution:
@@ -45,23 +45,23 @@ class Solution:
         quick select log n
         heap log k
         """
-        h = []
+        h    # list
         counter = defaultdict(int)
-        for w in words:
+        ___ w __ words:
             counter[w] += 1
 
-        for w, c in counter.items():
+        ___ w, c __ counter.items():
             heapq.heappush(h, Word(w, c))
-            __ len(h) > k:
+            __ l..(h) > k:
                 heapq.heappop(h)
 
-        ret = []
+        ret    # list
         while h:
             w = heapq.heappop(h).content
-            ret.append(w)
+            ret.a..(w)
 
-        return ret[::-1]
+        r.. ret[::-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2)
+__ __name__ __ "__main__":
+    ... Solution().topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2)

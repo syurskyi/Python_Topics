@@ -9,7 +9,7 @@ class Solution:
         """
         a = int(a, 2)
         b = int(b, 2)
-        return bin(a+b)[2:]
+        r.. bin(a+b)[2:]
 
     ___ addBinary(self, a, b):
         """
@@ -18,41 +18,41 @@ class Solution:
         :param b: string
         :return: string
         """
-        __ len(a)>len(b):
+        __ l..(a)>l..(b):
             a, b = b, a
 
-        a, b = list(a), list(b)
+        a, b = l..(a), l..(b)
 
         # from LSB to MSB
         a.reverse()
         b.reverse()
         # b as the base number
-        for i in xrange(len(a)):
-            __ a[i]=="0":  # 0
+        ___ i __ xrange(l..(a)):
+            __ a[i]__"0":  # 0
                 continue
-            elif b[i]=="0":  # 0+1
+            ____ b[i]__"0":  # 0+1
                 b[i] = "1"
                 continue
-            else:  # 1+1
+            ____:  # 1+1
                 b[i] = "0"
 
                 # carry forward
-                __ i==len(b)-1:
-                    b.append("1")
-                else:
-                    for j in range(i+1, len(b)):
-                        __ b[j]=="0":
+                __ i__len(b)-1:
+                    b.a..("1")
+                ____:
+                    ___ j __ r..(i+1, l..(b)):
+                        __ b[j]__"0":
                             b[j] = "1"
                             break
 
-                        else:
+                        ____:
                             b[j] = "0"  # carry forward
-                            __ j==len(b)-1:
-                                b.append("1")
+                            __ j__len(b)-1:
+                                b.a..("1")
                                 break
 
         b.reverse()
-        return "".join(b)  # reversed back
+        r.. "".join(b)  # reversed back
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().addBinary("11", "1")

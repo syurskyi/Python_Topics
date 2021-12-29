@@ -10,17 +10,17 @@ class Solution(object):
         :rtype: int
         """
         arr = A
-        up, down = [0]*len(arr), [0]*len(arr)
+        up, down = [0]*l..(arr), [0]*l..(arr)
         res = 0
-        for i in range(1, len(arr)):
+        ___ i __ r..(1, l..(arr)):
             __ arr[i] > arr[i-1]:
                 up[i] = up[i-1]+1
-        for i in range(len(arr)-1, -1, -1):
+        ___ i __ r..(l..(arr)-1, -1, -1):
             __ arr[i] > arr[i+1]:
                 down[i] = down[i+1]+1
             __ up[i] and down[i]:
                 res = max(res, up[i]+down[i]+1)
-        return res
+        r.. res
     
     ___ longestMountain(self, A):
         """
@@ -29,16 +29,16 @@ class Solution(object):
         """
         arr = A
         res, up, down = 0, 0, 0
-        for i in range(1, len(arr)):
-            __ (down and arr[i-1] < arr[i]) or (arr[i-1] == arr[i]):
+        ___ i __ r..(1, l..(arr)):
+            __ (down and arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]):
                 up, down = 0, 0
             __ arr[i-1] < arr[i]:
                 up += 1
-            elif arr[i-1] > arr[i]:
+            ____ arr[i-1] > arr[i]:
                 down += 1
             __ up and down:
                 res = max(res, up+down+1)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -49,10 +49,10 @@ class Solution(object):
             [0,1,2,3,4,5,4,3,2,1,0],
             [4,3,2,1],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             result = self.longestMountain(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

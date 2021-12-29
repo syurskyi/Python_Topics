@@ -1,18 +1,18 @@
-from collections import namedtuple
-import csv
-import os
-from pathlib import Path
-import sqlite3
-import random
-import string
+____ collections _______ namedtuple
+_______ csv
+_______ os
+____ pathlib _______ Path
+_______ sqlite3
+_______ random
+_______ string
 
-import requests
+_______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 salt = ''.join(
-    random.choice(string.ascii_lowercase) for i in range(20)
+    random.choice(string.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 
@@ -29,9 +29,9 @@ ___ import_data():
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
-    players = []
-    for row in reader:
-        players.append(Player(name=row['Player'],
+    players    # list
+    ___ row __ reader:
+        players.a..(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],
                               team=row['Team'],
@@ -63,7 +63,7 @@ ___ player_with_max_points_per_game():
             MAX(CAST(avg_points AS INT)) AS points
         FROM players
         """)
-    return next(cursor)[0]
+    r.. next(cursor)[0]
 
 
 ___ number_of_players_from_duke():
@@ -76,7 +76,7 @@ ___ number_of_players_from_duke():
         WHERE college = 'Duke University'
         """
     )
-    return next(cursor)[0]
+    r.. next(cursor)[0]
 
 
 ___ avg_years_active_players_stanford():
@@ -90,7 +90,7 @@ ___ avg_years_active_players_stanford():
         WHERE college = 'Stanford University'
         """
     )
-    return next(cursor)[0]
+    r.. next(cursor)[0]
 
 
 ___ year_with_most_new_players():
@@ -110,7 +110,7 @@ ___ year_with_most_new_players():
         FROM years_staging
         """
     )
-    return next(cursor)[1]
+    r.. next(cursor)[1]
 
 
 # if __name__ == "__main__":

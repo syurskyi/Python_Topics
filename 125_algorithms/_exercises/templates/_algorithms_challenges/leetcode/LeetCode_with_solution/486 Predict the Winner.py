@@ -30,7 +30,7 @@ Any scores in the given array are non-negative integers and will not exceed
 10,000,000.
 If the scores of both players are equal, then player 1 is still the winner.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -47,21 +47,21 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        l = len(nums)
+        l = l..(nums)
         gross = [0]  # sum [0:i]
-        for e in nums:
-            gross.append(gross[-1] + e)
+        ___ e __ nums:
+            gross.a..(gross[-1] + e)
 
-        F = defaultdict(lambda: defaultdict(int))
-        for i in range(l-1, -1, -1):
-            for j in range(i+1, l+1):
+        F = defaultdict(l....: defaultdict(int))
+        ___ i __ r..(l-1, -1, -1):
+            ___ j __ r..(i+1, l+1):
                 F[i][j] = max(
                     gross[j] - gross[i] - F[i+1][j],
                     gross[j] - gross[i] - F[i][j-1]
                 )
-        return F[0][l] >= (gross[-1] - F[0][l])
+        r.. F[0][l] >= (gross[-1] - F[0][l])
 
 
-__ __name__ == "__main__":
-    assert Solution().PredictTheWinner([1, 5, 2]) == False
-    assert Solution().PredictTheWinner([1, 5, 233, 7]) == True
+__ __name__ __ "__main__":
+    ... Solution().PredictTheWinner([1, 5, 2]) __ False
+    ... Solution().PredictTheWinner([1, 5, 233, 7]) __ True

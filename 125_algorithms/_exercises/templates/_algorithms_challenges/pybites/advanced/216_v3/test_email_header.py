@@ -1,6 +1,6 @@
-import inspect
+_______ i___
 
-from email_header import get_email_details, EMAIL_HEADER
+____ email_header _______ get_email_details, EMAIL_HEADER
 
 OTHER_HEADER = """
 Return-Path: <info@pybit.es>
@@ -15,9 +15,9 @@ X-SendGrid-Contentd-ID: {"test_id":"1371661776"}
 
 
 ___ test_source():
-    src = inspect.getsource(get_email_details)
-    assert 're.match' in src or 're.search' in src
-    assert 'groupdict' in src
+    src = i___.getsource(get_email_details)
+    ... 're.match' __ src o. 're.search' __ src
+    ... 'groupdict' __ src
 
 
 ___ test_given_header():
@@ -26,7 +26,7 @@ ___ test_given_header():
                 'to': 'redacted-address',
                 'subject': 'A Test From SendGrid',
                 'date': 'Wed, 19 Jun 2013 17:09:33'}
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_other_header():
@@ -35,8 +35,8 @@ ___ test_other_header():
                 'to': 'pybites@ninja.com',
                 'subject': 'New regex learning path!',
                 'date': 'Sun, 18 Aug 2019 17:16:10'}
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_no_match():
-    assert get_email_details('bogus') is None
+    ... get_email_details('bogus') __ N..

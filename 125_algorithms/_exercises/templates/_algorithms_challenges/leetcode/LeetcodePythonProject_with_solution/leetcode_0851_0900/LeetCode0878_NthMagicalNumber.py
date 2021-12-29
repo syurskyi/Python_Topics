@@ -19,18 +19,18 @@ class Solution(object):
             m = (l+r)//2
             __ m // A + m // B - m // lcm < n:
                 l = m+1
-            else:
+            ____:
                 r = m
-        return l % (10**9+7)
+        r.. l % (10**9+7)
     
     ___ test(self):
         testCases = [
             [5, 2, 4],
         ]
-        for n, a, b in testCases:
+        ___ n, a, b __ testCases:
             res = self.nthMagicalNumber(n, a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

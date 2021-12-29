@@ -1,6 +1,6 @@
-import datetime
+_______ datetime
 
 ___ tomorrow(date_ N..
-    __ date is None:
+    __ date __ N..
         date = datetime.date.today()
-    return date + datetime.timedelta(days=1)
+    r.. date + datetime.timedelta(days=1)

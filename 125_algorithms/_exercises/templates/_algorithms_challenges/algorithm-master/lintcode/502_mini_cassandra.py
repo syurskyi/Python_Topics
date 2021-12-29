@@ -18,7 +18,7 @@ class MiniCassandra:
     @return: nothing
     """
     ___ insert(self, raw_key, column_key, column_value):
-        __ raw_key not in self.storage:
+        __ raw_key n.. __ self.storage:
             self.storage[raw_key] = {}
 
         self.storage[raw_key][column_key] = Column(column_key, column_value)
@@ -30,13 +30,13 @@ class MiniCassandra:
     @return: a list of Columns
     """
     ___ query(self, raw_key, column_start, column_end):
-        __ raw_key not in self.storage:
-            return []
+        __ raw_key n.. __ self.storage:
+            r.. []
 
         result = [
             column
-            for column_key, column in self.storage[raw_key].items()
+            ___ column_key, column __ self.storage[raw_key].items()
             __ column_start <= column_key <= column_end
         ]
 
-        return sorted(result, key=lambda column: column.key)
+        r.. s..(result, key=l.... column: column.key)

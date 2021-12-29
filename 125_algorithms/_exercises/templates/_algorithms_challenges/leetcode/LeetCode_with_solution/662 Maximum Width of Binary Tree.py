@@ -64,8 +64,8 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -77,21 +77,21 @@ class Solution:
 
         BFS, level index
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
         ret = 0
         q = [(0, root)]  # (index, node)
         while q:
-            cur_q = []
+            cur_q    # list
             left, right = q[0][0], q[-1][0]
             ret = max(ret, right - left + 1)
-            for idx, node in q:
+            ___ idx, node __ q:
                 __ node.left:
-                    cur_q.append((idx * 2, node.left))
+                    cur_q.a..((idx * 2, node.left))
                 __ node.right:
-                    cur_q.append((idx * 2 + 1, node.right))
+                    cur_q.a..((idx * 2 + 1, node.right))
 
             q = cur_q
 
-        return ret
+        r.. ret

@@ -23,15 +23,15 @@ __author__ = 'Danyang'
 
 class Solution_MLE:  # Memory Limit Exceeds
     class Node:
-        ___ __init__(self, string, pre, dict):
+        ___ __init__(self, string, pre, d..):
             self.string = string
             self.pre = pre  # node
-            self.dict = dict
+            self.d.. = d..
 
         ___ __repr__(self):
-            return repr(self.string)
+            r.. repr(self.string)
 
-    ___ findLadders(self, start, end, dict):
+    ___ findLadders(self, start, end, d..):
         """
         bfs
         :param start: a string
@@ -40,40 +40,40 @@ class Solution_MLE:  # Memory Limit Exceeds
         :return: a list of lists of strings
         """
 
-        result = []
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        result    # list
+        lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
 
-        start_node = self.Node(start, None, dict-{start}|{end})
+        start_node = self.Node(start, N.., d..-{start}|{end})
         queue = [start_node]
         while queue:
-            length_0 = len(queue)
-            for i in xrange(length_0):  #O(V)
+            length_0 = l..(queue)
+            ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
-                __ current.string==end:  # reached
-                    self.append(current, result)
+                __ current.string__end:  # reached
+                    self.a..(current, result)
             __ result:  # shortest, thus pruning
-                return result
+                r.. result
 
-            for i in xrange(length_0):
+            ___ i __ xrange(length_0):
                 current = queue[i].string
-                for pos in xrange(len(current)):
-                    lst = list(current)
-                    for char in lower_cases:
+                ___ pos __ xrange(l..(current)):
+                    lst = l..(current)
+                    ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
-                        __ temp in queue[i].dict:
-                            queue.append(self.Node(temp, queue[i], queue[i].dict-{temp}))
+                        __ temp __ queue[i].d..:
+                            queue.a..(self.Node(temp, queue[i], queue[i].d..-{temp}))
 
             queue = queue[length_0:]
-        return []  # natural break, no result
+        r.. []  # natural break, no result
 
-    ___ append(self, node, result):
+    ___ a..(self, node, result):
         cur = node
-        lst = []
+        lst    # list
         while cur:
             lst.insert(0, cur.string)
             cur = cur.pre
-        result.append(lst)
+        result.a..(lst)
 
 
 class Solution_TLE:
@@ -83,9 +83,9 @@ class Solution_TLE:
             self.pre = pre  # node
 
         ___ __repr__(self):
-            return repr(self.string)
+            r.. repr(self.string)
 
-    ___ findLadders(self, start, end, dict):
+    ___ findLadders(self, start, end, d..):
         """
         bfs
         :param start: a string
@@ -93,49 +93,49 @@ class Solution_TLE:
         :param dict: set
         :return: a list of lists of strings
         """
-        dict |= {end}
-        result = []
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        d.. |= {end}
+        result    # list
+        lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
 
-        start_node = self.Node(start, None)
+        start_node = self.Node(start, N..)
         queue = [start_node]
         while queue:
-            length_0 = len(queue)
-            for i in xrange(length_0):  #O(V)
+            length_0 = l..(queue)
+            ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
-                __ current.string==end:  # reached
-                    self.append(current, result)
+                __ current.string__end:  # reached
+                    self.a..(current, result)
             __ result:  # shortest, thus pruning
-                return result
+                r.. result
 
-            for i in xrange(length_0):
+            ___ i __ xrange(length_0):
                 current = queue[i].string
-                for pos in xrange(len(current)):
-                    lst = list(current)
-                    for char in lower_cases:
+                ___ pos __ xrange(l..(current)):
+                    lst = l..(current)
+                    ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
-                        __ temp in dict and not self.in_previous(queue[i], temp):
-                            queue.append(self.Node(temp, queue[i]))
+                        __ temp __ d.. and n.. self.in_previous(queue[i], temp):
+                            queue.a..(self.Node(temp, queue[i]))
 
             queue = queue[length_0:]
-        return []  # natural break, no result
+        r.. []  # natural break, no result
 
-    ___ append(self, node, result):
+    ___ a..(self, node, result):
         cur = node
-        lst = []
+        lst    # list
         while cur:
             lst.insert(0, cur.string)
             cur = cur.pre
-        result.append(lst)
+        result.a..(lst)
 
     ___ in_previous(self, node, string):
         cur = node
         while cur:
-            __ cur.string==string:
-                return True
+            __ cur.string__string:
+                r.. True
             cur = cur.pre
-        return False
+        r.. False
 
 
 class Node:
@@ -145,10 +145,10 @@ class Node:
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
     ___ __repr__(self):
-        return repr(self.string)
+        r.. repr(self.string)
 
 class Solution_TLE2:
-    ___ findLadders(self, start, end, dict):
+    ___ findLadders(self, start, end, d..):
         """
         bfs
 
@@ -164,51 +164,51 @@ class Solution_TLE2:
         :param dict: set
         :return: a list of lists of strings
         """
-        dict |= {end}  # set
-        result = []
+        d.. |= {end}  # set
+        result    # list
         lower_cases = 'abcdefghijklmnopqrstuvwxyz'
 
         # bfs
-        queue = [Node(start, None)]
+        queue = [Node(start, N..)]
         while queue:
-            length_0 = len(queue)
-            for i in xrange(length_0):  #O(V)
+            length_0 = l..(queue)
+            ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
                 # the paths downwards are independent of the path before that.
-                dict -= {current.string}
+                d.. -= {current.string}
 
                 # check whether reached
-                __ current.string==end:  # reached
-                    self.append(current, result)
+                __ current.string__end:  # reached
+                    self.a..(current, result)
 
             __ result:  # shortest, thus pruning
-                return result
+                r.. result
 
-            for i in xrange(length_0):
+            ___ i __ xrange(length_0):
                 current = queue[i].string
-                for pos in xrange(len(current)):
-                    lst = list(current)
-                    for char in lower_cases:
+                ___ pos __ xrange(l..(current)):
+                    lst = l..(current)
+                    ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
-                        __ temp in dict:
-                            queue.append(Node(temp, queue[i]))
+                        __ temp __ d..:
+                            queue.a..(Node(temp, queue[i]))
 
             queue = queue[length_0:]
-        return []  # natural break, no result
+        r.. []  # natural break, no result
 
-    ___ append(self, node, result):
+    ___ a..(self, node, result):
         cur = node
-        lst = []
+        lst    # list
         while cur:
             lst.insert(0, cur.string)
             cur = cur.pre
-        result.append(lst)
+        result.a..(lst)
 
 class Solution:  # use set to mimic queue, fastest
-    ___ findLadders(self, start, end, dict):
+    ___ findLadders(self, start, end, d..):
         """
         ref: http://www.cnblogs.com/zuoyuan/p/3697045.html
         :param start:
@@ -216,12 +216,12 @@ class Solution:  # use set to mimic queue, fastest
         :param dict:
         :return:
         """
-        dict |= {start}
-        dict |= {end}
+        d.. |= {start}
+        d.. |= {end}
         result=[]
 
         prevMap={}  # predecessors of a word, e.g. {cog:[log, dog]}
-        for i in dict:
+        ___ i __ d..:
             prevMap[i]=[]
 
         candidates=[set(), set()]  # mimic the queue, use set to reduce time complexity
@@ -229,43 +229,43 @@ class Solution:  # use set to mimic queue, fastest
         previous=1
 
         candidates[current].add(start)
-        while end not in candidates[current]:
+        while end n.. __ candidates[current]:
             current, previous = previous, current
-            for i in candidates[previous]: dict -= {i}  # greedy elimination
+            ___ i __ candidates[previous]: d.. -= {i}  # greedy elimination
 
             candidates[current].clear()  # to be added to the current level
-            for word in candidates[previous]:
-                for i in range(len(word)):
+            ___ word __ candidates[previous]:
+                ___ i __ r..(l..(word)):
                     part1=word[:i]; part2=word[i+1:]
-                    for j in 'abcdefghijklmnopqrstuvwxyz':
+                    ___ j __ 'abcdefghijklmnopqrstuvwxyz':
                         __ word[i]!=j:
                             nextword=part1+j+part2
-                            __ nextword in dict:
-                                prevMap[nextword].append(word)
+                            __ nextword __ d..:
+                                prevMap[nextword].a..(word)
                                 candidates[current] |= {nextword}
 
-            __ len(candidates[current])==0: return []  # path impossible
+            __ l..(candidates[current])__0: r.. []  # path impossible
 
         self.buildpath(prevMap, end, [], result)
-        return result
+        r.. result
 
     ___ buildpath(self, prevMap, word, path, result):
         # reach the end
-        __ len(prevMap[word])==0:
-            path.append(word)
-            result.append(path[::-1])
+        __ l..(prevMap[word])__0:
+            path.a..(word)
+            result.a..(path[::-1])
             path.pop()
-            return
+            r..
 
-        path.append(word)
-        for predecessor in prevMap[word]:
+        path.a..(word)
+        ___ predecessor __ prevMap[word]:
             self.buildpath(prevMap, predecessor, path, result)  # save memory
         path.pop()
 
         # for predecessor in prevMap[word]:
         #     self.buildpath(prevMap, predecessor, path+[word], result)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().findLadders("hot", "dog", set(["hot","dog"]))
     print Solution().findLadders("hit", "cog", set(["hot","dot","dog","lot","log"]))
     print Solution().findLadders("cet", "ism", set(["kid","tag","pup","ail","tun","woo","erg","luz","brr","gay","sip","kay","per","val","mes","ohs","now","boa","cet","pal","bar","die","war","hay","eco","pub","lob","rue","fry","lit","rex","jan","cot","bid","ali","pay","col","gum","ger","row","won","dan","rum","fad","tut","sag","yip","sui","ark","has","zip","fez","own","ump","dis","ads","max","jaw","out","btu","ana","gap","cry","led","abe","box","ore","pig","fie","toy","fat","cal","lie","noh","sew","ono","tam","flu","mgm","ply","awe","pry","tit","tie","yet","too","tax","jim","san","pan","map","ski","ova","wed","non","wac","nut","why","bye","lye","oct","old","fin","feb","chi","sap","owl","log","tod","dot","bow","fob","for","joe","ivy","fan","age","fax","hip","jib","mel","hus","sob","ifs","tab","ara","dab","jag","jar","arm","lot","tom","sax","tex","yum","pei","wen","wry","ire","irk","far","mew","wit","doe","gas","rte","ian","pot","ask","wag","hag","amy","nag","ron","soy","gin","don","tug","fay","vic","boo","nam","ave","buy","sop","but","orb","fen","paw","his","sub","bob","yea","oft","inn","rod","yam","pew","web","hod","hun","gyp","wei","wis","rob","gad","pie","mon","dog","bib","rub","ere","dig","era","cat","fox","bee","mod","day","apr","vie","nev","jam","pam","new","aye","ani","and","ibm","yap","can","pyx","tar","kin","fog","hum","pip","cup","dye","lyx","jog","nun","par","wan","fey","bus","oak","bad","ats","set","qom","vat","eat","pus","rev","axe","ion","six","ila","lao","mom","mas","pro","few","opt","poe","art","ash","oar","cap","lop","may","shy","rid","bat","sum","rim","fee","bmw","sky","maj","hue","thy","ava","rap","den","fla","auk","cox","ibo","hey","saw","vim","sec","ltd","you","its","tat","dew","eva","tog","ram","let","see","zit","maw","nix","ate","gig","rep","owe","ind","hog","eve","sam","zoo","any","dow","cod","bed","vet","ham","sis","hex","via","fir","nod","mao","aug","mum","hoe","bah","hal","keg","hew","zed","tow","gog","ass","dem","who","bet","gos","son","ear","spy","kit","boy","due","sen","oaf","mix","hep","fur","ada","bin","nil","mia","ewe","hit","fix","sad","rib","eye","hop","haw","wax","mid","tad","ken","wad","rye","pap","bog","gut","ito","woe","our","ado","sin","mad","ray","hon","roy","dip","hen","iva","lug","asp","hui","yak","bay","poi","yep","bun","try","lad","elm","nat","wyo","gym","dug","toe","dee","wig","sly","rip","geo","cog","pas","zen","odd","nan","lay","pod","fit","hem","joy","bum","rio","yon","dec","leg","put","sue","dim","pet","yaw","nub","bit","bur","sid","sun","oil","red","doc","moe","caw","eel","dix","cub","end","gem","off","yew","hug","pop","tub","sgt","lid","pun","ton","sol","din","yup","jab","pea","bug","gag","mil","jig","hub","low","did","tin","get","gte","sox","lei","mig","fig","lon","use","ban","flo","nov","jut","bag","mir","sty","lap","two","ins","con","ant","net","tux","ode","stu","mug","cad","nap","gun","fop","tot","sow","sal","sic","ted","wot","del","imp","cob","way","ann","tan","mci","job","wet","ism","err","him","all","pad","hah","hie","aim","ike","jed","ego","mac","baa","min","com","ill","was","cab","ago","ina","big","ilk","gal","tap","duh","ola","ran","lab","top","gob","hot","ora","tia","kip","han","met","hut","she","sac","fed","goo","tee","ell","not","act","gil","rut","ala","ape","rig","cid","god","duo","lin","aid","gel","awl","lag","elf","liz","ref","aha","fib","oho","tho","her","nor","ace","adz","fun","ned","coo","win","tao","coy","van","man","pit","guy","foe","hid","mai","sup","jay","hob","mow","jot","are","pol","arc","lax","aft","alb","len","air","pug","pox","vow","got","meg","zoe","amp","ale","bud","gee","pin","dun","pat","ten","mob"]))

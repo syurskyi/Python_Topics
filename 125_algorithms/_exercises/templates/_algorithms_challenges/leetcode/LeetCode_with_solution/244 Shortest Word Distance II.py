@@ -1,9 +1,9 @@
 """
 Premium Question
 """
-from bisect import bisect_left
-from collections import defaultdict
-import sys
+____ bisect _______ bisect_left
+____ collections _______ defaultdict
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -15,9 +15,9 @@ class WordDistance(object):
 
         :type words: list[str]
         """
-        self.word_dict = defaultdict(list)
-        for i, w in enumerate(words):
-            self.word_dict[w].append(i)
+        self.word_dict = defaultdict(l..)
+        ___ i, w __ enumerate(words):
+            self.word_dict[w].a..(i)
 
 
     ___ shortest(self, word1, word2):
@@ -28,10 +28,10 @@ class WordDistance(object):
         :rtype: int
         """
         mini = sys.maxint
-        for i in self.word_dict[word1]:
+        ___ i __ self.word_dict[word1]:
             idx = bisect_left(self.word_dict[word2], i)
-            for nei in (-1, 0):
-                __ 0 <= idx+nei < len(self.word_dict[word2]):
-                    mini = min(mini, abs(i-self.word_dict[word2][idx+nei]))
+            ___ nei __ (-1, 0):
+                __ 0 <= idx+nei < l..(self.word_dict[word2]):
+                    mini = m..(mini, abs(i-self.word_dict[word2][idx+nei]))
 
-        return mini
+        r.. mini

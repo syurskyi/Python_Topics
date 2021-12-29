@@ -14,25 +14,25 @@ class Solution:
         :param grid: a list of lists of integers
         :return: integer
         """
-        __ not grid:
-            return 0
+        __ n.. grid:
+            r.. 0
 
-        row_cnt = len(grid)
-        col_cnt = len(grid[0])
+        row_cnt = l..(grid)
+        col_cnt = l..(grid[0])
 
 
-        dp = [[1<<31 for _ in xrange(col_cnt)] for _ in xrange(row_cnt)]
+        dp = [[1<<31 ___ _ __ xrange(col_cnt)] ___ _ __ xrange(row_cnt)]
 
         # dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
-        for i in xrange(row_cnt):
-            for j in xrange(col_cnt):
-                __ i==0 and j==0:
+        ___ i __ xrange(row_cnt):
+            ___ j __ xrange(col_cnt):
+                __ i__0 and j__0:
                     dp[i][j] = grid[i][j]
-                elif i==0:
+                ____ i__0:
                     dp[i][j] = dp[i][j-1]+grid[i][j]
-                elif j==0:
+                ____ j__0:
                     dp[i][j] = dp[i-1][j]+grid[i][j]
-                else:
-                    dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]  # PoP - Principle of Optimality
+                ____:
+                    dp[i][j] = m..(dp[i-1][j], dp[i][j-1])+grid[i][j]  # PoP - Principle of Optimality
 
-        return dp[row_cnt-1][col_cnt-1]
+        r.. dp[row_cnt-1][col_cnt-1]

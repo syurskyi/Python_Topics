@@ -1,19 +1,19 @@
 d = int(input())
 count = 0
-res = []
+res    # list
 while count < d:
-    a = input().split()
-    a = list(map(int,a))
+    a = input().s..
+    a = l..(map(int,a))
     val = a[0]
     step = a[1]
-    for i in range(0,a[2]):
-        __ i==0:
+    ___ i __ r..(0,a[2]):
+        __ i__0:
             result = val
-        else:
+        ____:
             result = result + (val + step * i)
             
-    res.append(result)
+    res.a..(result)
     count = count + 1
     
-res = ' '.join(str(j) for j in res)
+res = ' '.join(str(j) ___ j __ res)
 print(res)

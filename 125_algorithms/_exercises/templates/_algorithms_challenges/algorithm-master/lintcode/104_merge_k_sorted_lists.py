@@ -5,7 +5,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -14,14 +14,14 @@ class Solution:
         :type lists: list[ListNode]
         :rtype: ListNode
         """
-        __ not lists:
-            return
+        __ n.. lists:
+            r..
 
         dummy = tail = ListNode(-1)
-        heap = []
+        heap    # list
 
-        for i in range(len(lists)):
-            __ not lists[i]:
+        ___ i __ r..(l..(lists)):
+            __ n.. lists[i]:
                 continue
 
             heapq.heappush(heap, (lists[i].val, i))
@@ -36,4 +36,4 @@ class Solution:
                 lists[i] = lists[i].next
                 heapq.heappush(heap, (lists[i].val, i))
 
-        return dummy.next
+        r.. dummy.next

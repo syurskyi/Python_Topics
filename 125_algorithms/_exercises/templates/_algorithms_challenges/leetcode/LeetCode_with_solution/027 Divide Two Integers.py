@@ -17,14 +17,14 @@ class Solution:
         :return: integer
         """
         # exceptions
-        __ divisor == 0 or dividend == 0:
-            return 0
+        __ divisor __ 0 o. dividend __ 0:
+            r.. 0
 
-        __ dividend == MIN_INT and divisor == -1:
-            return MAX_INT
+        __ dividend __ MIN_INT and divisor __ -1:
+            r.. MAX_INT
 
         # handle signs
-        sign = 1 __ dividend >= 0 and divisor >= 0 or dividend < 0 and divisor < 0 else -1
+        sign = 1 __ dividend >= 0 and divisor >= 0 o. dividend < 0 and divisor < 0 ____ -1
         dividend = abs(dividend)
         divisor = abs(divisor)
 
@@ -39,8 +39,8 @@ class Solution:
             dividend -= current>>1
             result += current_result>>1
 
-        return sign*result
+        r.. sign*result
 
 
-__ __name__ == "__main__":
-    assert Solution().divide(5, -1) == -5
+__ __name__ __ "__main__":
+    ... Solution().divide(5, -1) __ -5

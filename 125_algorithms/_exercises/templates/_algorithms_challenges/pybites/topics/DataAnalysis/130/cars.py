@@ -1,6 +1,6 @@
-from collections import Counter
+____ collections _______ Counter
 
-import requests
+_______ requests
 
 CAR_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/cars.json'
 
@@ -14,19 +14,19 @@ with requests.Session() as s:
 ___ most_prolific_automaker(year):
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
-    models_year = ([models for models in data __ models['year'] == year])
+    models_year = ([models ___ models __ data __ models['year'] __ year])
     count = Counter()
-    for models in models_year:
+    ___ models __ models_year:
         count[models['automaker']] += 1
-    return count.most_common(1)[0][0]
+    r.. count.most_common(1)[0][0]
 
 
 
 ___ get_models(automaker, year):
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    automaker_year = ([models for models in data __ models['year'] == year and models['automaker'] == automaker])
-    return set(model['model'] for model in automaker_year)
+    automaker_year = ([models ___ models __ data __ models['year'] __ year and models['automaker'] __ automaker])
+    r.. set(model['model'] ___ model __ automaker_year)
 
 #most_prolific_automaker(1999)
 

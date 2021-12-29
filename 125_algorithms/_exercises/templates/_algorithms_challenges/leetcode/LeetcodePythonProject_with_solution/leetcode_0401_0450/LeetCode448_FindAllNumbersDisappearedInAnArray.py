@@ -6,12 +6,12 @@ Created on Apr 18, 2017
 
 class Solution(object):
     ___ findDisappearedNumbers(self, nums):
-        for num in nums:
+        ___ num __ nums:
             ind = abs(num)-1
             __ nums[ind] > 0:
                 nums[ind] = -nums[ind]
-        res = []
-        for i, num in enumerate(nums):
+        res    # list
+        ___ i, num __ enumerate(nums):
             __ num > 0:
-                res.append(i+1)
-        return res
+                res.a..(i+1)
+        r.. res

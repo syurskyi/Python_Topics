@@ -1,11 +1,11 @@
-import unittest
+_______ unittest
 
-from datetime import date
+____ datetime _______ date
 
-from meetup import meetup_day
+____ meetup _______ meetup_day
 
 try:
-    from meetup import MeetupDayException
+    ____ meetup _______ MeetupDayException
 except ImportError:
     MeetupDayException = Exception
 
@@ -403,5 +403,5 @@ class MeetupTest(unittest.TestCase):
                           '5th')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

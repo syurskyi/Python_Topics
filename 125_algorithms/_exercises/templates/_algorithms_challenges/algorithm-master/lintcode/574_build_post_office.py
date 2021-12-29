@@ -31,35 +31,35 @@ class Solution:
         :type grid: list[list[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return -1
+        __ n.. grid o. n.. grid[0]:
+            r.. -1
 
-        m, n = len(grid), len(grid[0])
-        xs, ys = [], []
+        m, n = l..(grid), l..(grid[0])
+        xs, ys    # list, []
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 __ grid[x][y] != self.HOUSE:
                     continue
-                xs.append(x)
-                ys.append(y)
+                xs.a..(x)
+                ys.a..(y)
 
-        __ not xs or len(xs) == m * n:
-            return -1
+        __ n.. xs o. l..(xs) __ m * n:
+            r.. -1
 
         ys.sort()
 
-        k = len(xs) + 1
+        k = l..(xs) + 1
         psx, psy = [0] * k, [0] * k  # prefix sum
 
-        for i in range(1, k):
+        ___ i __ r..(1, k):
             psx[i] = psx[i - 1] + xs[i - 1]
             psy[i] = psy[i - 1] + ys[i - 1]
 
         ans = INF = float('inf')
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 __ grid[x][y] != self.EMPTY:
                     continue
 
@@ -68,15 +68,15 @@ class Solution:
                 __ step < ans:
                     ans = step
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1
 
     ___ get_step(self, ps, axis, pos):
-        n = len(axis)
+        n = l..(axis)
 
         __ axis[0] > pos:
-            return ps[n] - pos * n
+            r.. ps[n] - pos * n
         __ axis[-1] < pos:
-            return pos * n - ps[n]
+            r.. pos * n - ps[n]
 
         left, right = 0, n - 1
 
@@ -85,10 +85,10 @@ class Solution:
 
             __ axis[mid] < pos:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        return sum((
+        r.. s..((
             pos * right - ps[right],
             ps[n] - ps[right] - pos * (n - right),
         ))
@@ -111,55 +111,55 @@ class Solution:
         :type grid: list[list[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return -1
+        __ n.. grid o. n.. grid[0]:
+            r.. -1
 
-        m, n = len(grid), len(grid[0])
-        houses = []
+        m, n = l..(grid), l..(grid[0])
+        houses    # list
         xc = yc = 0  # the center of the shape composed of houses
 
-        for x in range(m):
-            for y in range(n):
-                __ grid[x][y] == self.HOUSE:
-                    houses.append((x, y))
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ grid[x][y] __ self.HOUSE:
+                    houses.a..((x, y))
                     xc += x
                     yc += y
 
-        xc //= len(houses)
-        yc //= len(houses)
+        xc //= l..(houses)
+        yc //= l..(houses)
 
         ans = INF = float('inf')
         queue = [(xc, yc)]
         visited = set(queue)
 
-        for x, y in queue:
-            __ grid[x][y] == self.EMPTY:
-                ans = min(ans, self.get_step(houses, x, y))
+        ___ x, y __ queue:
+            __ grid[x][y] __ self.EMPTY:
+                ans = m..(ans, self.get_step(houses, x, y))
 
-            for dx, dy in (
+            ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
             ):
                 _x = x + dx
                 _y = y + dy
 
-                __ not (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m and 0 <= _y < n):
                     continue
-                __ (_x, _y) in visited:
+                __ (_x, _y) __ visited:
                     continue
 
                 visited.add((_x, _y))
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1
 
     ___ get_step(self, houses, x, y):
         step = 0
 
-        for _x, _y in houses:
+        ___ _x, _y __ houses:
             step += abs(_x - x) + abs(_y - y)
 
-        return step
+        r.. step
 
 
 class Solution:
@@ -178,30 +178,30 @@ class Solution:
         :type grid: list[list[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return -1
+        __ n.. grid o. n.. grid[0]:
+            r.. -1
 
-        m, n = len(grid), len(grid[0])
-        steps = [[0] * n for _ in range(m)]
+        m, n = l..(grid), l..(grid[0])
+        steps = [[0] * n ___ _ __ r..(m)]
 
-        for x in range(m):
-            for y in range(n):
-                __ grid[x][y] == self.HOUSE:
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ grid[x][y] __ self.HOUSE:
                     self.bfs(grid, x, y, steps)
 
         ans = INF = float('inf')
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 __ grid[x][y] != self.EMPTY:
                     continue
                 __ steps[x][y] < ans:
                     ans = steps[x][y]
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1
 
     ___ bfs(self, grid, x, y, steps):
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)
         step = 0
@@ -209,21 +209,21 @@ class Solution:
         while queue:
             step += 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y __ queue:
+                ___ dx, dy __ (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
                 ):
                     _x = x + dx
                     _y = y + dy
 
-                    __ not (0 <= _x < m and 0 <= _y < n):
+                    __ n.. (0 <= _x < m and 0 <= _y < n):
                         continue
-                    __ (_x, _y) in visited:
+                    __ (_x, _y) __ visited:
                         continue
 
                     visited.add((_x, _y))
                     steps[_x][_y] += step
-                    _queue.append((_x, _y))
+                    _queue.a..((_x, _y))
 
             queue, _queue = _queue, []

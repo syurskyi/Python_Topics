@@ -7,13 +7,13 @@ class Solution(object):
     """
     j = 0
     ans = 0
-    dict = {}
-    for i in range(len(s)):
-      dict[s[i]] = dict.get(s[i], 0) + 1
-      while j <= i and len(dict) > k:
-        dict[s[j]] -= 1
-        __ dict[s[j]] == 0:
-          del dict[s[j]]
+    d.. = {}
+    ___ i __ r..(l..(s)):
+      d..[s[i]] = d...get(s[i], 0) + 1
+      while j <= i and l..(d..) > k:
+        d..[s[j]] -= 1
+        __ d..[s[j]] __ 0:
+          del d..[s[j]]
         j += 1
       ans = max(ans, i - j + 1)
-    return ans
+    r.. ans

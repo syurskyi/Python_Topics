@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 
 ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
@@ -11,13 +11,13 @@ ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
             Returned words should be sorted by word's length.
     """
     common = set()
-    sentence2 = list(map(lambda x: x.lower(), sentence2))
-    for word in sentence1:
+    sentence2 = l..(map(l.... x: x.lower(), sentence2))
+    ___ word __ sentence1:
         word_lower = word.lower()
-        __ word_lower in sentence2:
+        __ word_lower __ sentence2:
                 common.add(word_lower)
 
-    return sorted(common, key=len)
+    r.. s..(common, key=l..)
 
 
 # if __name__ == "__main__":

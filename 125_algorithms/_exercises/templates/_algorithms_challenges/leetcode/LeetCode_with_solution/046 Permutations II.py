@@ -14,17 +14,17 @@ class Solution:
         :param num: a list of integer
         :return: a list of lists of integers
         """
-        result = []
+        result    # list
         self.get_permute(num, [], result)
-        return map(list, set(map(tuple, result)))
+        r.. map(l.., set(map(tuple, result)))
 
 
     ___ get_permute_TLE(self, nums, current, result):
-        length = len(nums)
-        __ length==0:
-            result.append(current)
+        length = l..(nums)
+        __ length__0:
+            result.a..(current)
 
-        for ind, val in enumerate(nums):
+        ___ ind, val __ enumerate(nums):
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
@@ -35,18 +35,18 @@ class Solution:
         :param num: a list of integer
         :return: a list of lists of integers
         """
-        result = []
+        result    # list
         num.sort()
         self.get_permute(num, [], result)
-        return result
+        r.. result
 
     ___ get_permute(self, nums, current, result):
-        __ not nums:
-            result.append(current)
+        __ n.. nums:
+            result.a..(current)
 
-        for ind, val in enumerate(nums):
-            __ ind-1>=0 and val==nums[ind-1]: continue  # JUMP; only need to compare to previous value
+        ___ ind, val __ enumerate(nums):
+            __ ind-1>=0 and val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().permuteUnique([1, 1, 2])

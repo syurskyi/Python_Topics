@@ -1,4 +1,4 @@
-import random
+_______ random
 
 MAX_GUESSES = 5
 START, END = 1, 20
@@ -6,7 +6,7 @@ START, END = 1, 20
 
 ___ get_random_number():
     """Get a random number between START and END, returns int"""
-    return random.randint(START, END)
+    r.. random.randint(START, END)
 
 
 class Game:
@@ -27,21 +27,21 @@ class Game:
            'Already guessed'
            If all good, return the int"""
         guess = input('Your guess: ')
-        __ not guess:
+        __ n.. guess:
             print('Please enter a number')
             raise ValueError('Nothing entered')
-        __ not all(c.isdigit() for c in str(guess)):
+        __ n.. a..(c.isdigit() ___ c __ str(guess)):
             print('Should be a number')
             raise ValueError('Non-digit entered')
         guess = int(guess)
-        __ not (START <= guess <= END):
+        __ n.. (START <= guess <= END):
             print('Number not in range')
             raise ValueError('Out of range')
-        __ guess in self._guesses:
+        __ guess __ self._guesses:
             print('Already guessed')
             raise ValueError('Retry previous guess')
         self._guesses.add(guess)
-        return guess
+        r.. guess
 
     ___ _validate_guess(self, guess):
         """Verify if guess is correct, print the following when applicable:
@@ -49,30 +49,30 @@ class Game:
            {guess} is too low
            {guess} is too high
            Return a boolean"""
-        __ guess == self._answer:
+        __ guess __ self._answer:
             print(f'{guess} is correct!')
-            return True
-        elif guess < self._answer:
+            r.. True
+        ____ guess < self._answer:
             print(f'{guess} is too low')
-        else:
+        ____:
             print(f'{guess} is too high')
-        return False
+        r.. False
 
     ___ __call__(self):
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
-        while len(self._guesses) < MAX_GUESSES and not self._win:
+        while l..(self._guesses) < MAX_GUESSES and n.. self._win:
             try:
                 this_guess = self.guess()
             except ValueError:
                 continue
             __ self._validate_guess(this_guess):
                 self._win = True
-                return
+                r..
         print(f'Guessed {MAX_GUESSES} times, answer was {self._answer}')
-        return
+        r..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     game = Game()
     game()

@@ -2,13 +2,13 @@ class Solution:
     # @return a list of integers
     ___ grayCode(self, n):
         m = 1 << n
-        res = []
-        d = [(1 << (i + 1)) / 2 for i in range(n)]
-        for i in range(m):
+        res    # list
+        d = [(1 << (i + 1)) / 2 ___ i __ r..(n)]
+        ___ i __ r..(m):
             num = 0
-            for j, e in enumerate(d):
-                __ e / (1 << (j + 1)) % 2 == 1:
+            ___ j, e __ enumerate(d):
+                __ e / (1 << (j + 1)) % 2 __ 1:
                     num += 1 << j
                 d[j] += 1
-            res.append(num)
-        return res
+            res.a..(num)
+        r.. res

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from record import RecordScore
+____ record _______ RecordScore
 
 
 @pytest.fixture()
@@ -11,29 +11,29 @@ ___ record():
     record(9)
     record(11)  # initial max
     record(5)
-    return record
+    r.. record
 
 
 ___ test_record_unbeaten(record):
-    assert record(9) == 11
+    ... record(9) __ 11
     record(10)
     record(2)
-    assert record(4) == 11
+    ... record(4) __ 11
 
 
 ___ test_record_got_beaten(record):
-    assert record(4) == 11
+    ... record(4) __ 11
     record(3)
     record(12)  # new max
-    assert record(4) == 12
+    ... record(4) __ 12
     record(5)
     record(16)  # new max
-    assert record(4) == 16
+    ... record(4) __ 16
 
 
 ___ test_record_got_beaten_negative_values():
     record = RecordScore()
     record(-5)
-    assert record(-4) == -4
-    assert record(-6) == -4
-    assert record(-2) == -2
+    ... record(-4) __ -4
+    ... record(-6) __ -4
+    ... record(-2) __ -2

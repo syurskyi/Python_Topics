@@ -1,8 +1,8 @@
 ___ comp(txt1, txt2):
-    __ len(txt1) == len(txt2):
-        return True
-    else:
-        return False
+    __ l..(txt1) __ l..(txt2):
+        r.. True
+    ____:
+        r.. False
 
 
 ___ test_comp():
@@ -11,5 +11,5 @@ ___ test_comp():
         print("error")
     __ comp ("too", "good") != False:
         print("error2")
-    else:
+    ____:
         print("success")

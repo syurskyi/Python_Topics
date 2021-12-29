@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution(object):
@@ -8,18 +8,18 @@ class Solution(object):
     :type d: List[str]
     :rtype: str
     """
-    d.sort(key=lambda x: (-len(x), x))
+    d.sort(key=l.... x: (-l..(x), x))
 
     ___ isSubseq(word, s):
       i = 0
-      for c in s:
-        __ c == word[i]:
+      ___ c __ s:
+        __ c __ word[i]:
           i += 1
-        __ i == len(word):
-          return True
-      return False
+        __ i __ l..(word):
+          r.. True
+      r.. False
 
-    for word in d:
+    ___ word __ d:
       __ isSubseq(word, s):
-        return word
-    return ""
+        r.. word
+    r.. ""

@@ -3,9 +3,9 @@
 
 
 ___ wierd(n):
-    __ n % 2 == 1 or 6 <= n <= 20:
+    __ n % 2 __ 1 o. 6 <= n <= 20:
         print('Weird')
-    else:
+    ____:
         print('Not Weird')
 
 

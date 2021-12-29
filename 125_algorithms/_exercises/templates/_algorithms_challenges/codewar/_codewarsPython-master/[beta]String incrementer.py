@@ -1,14 +1,14 @@
-import re
+_______ re
 ___ increment_string(strng):
     strMatch = re.match(r'([\w]*)(\d*)',strng)
     stringPart,numberPart = strMatch.group(1),strMatch.group(2)
     number = re.match(r'0*(\d*)',numberPart).group(1)
-    number = 1 __ len(number) == 0 else int(number) + 1
-    __ len(str(number)) >= len(numberPart):
+    number = 1 __ l..(number) __ 0 ____ int(number) + 1
+    __ l..(str(number)) >= l..(numberPart):
         number = number
-    else :
-        number = ('0' * (len(numberPart) - len(str(number)))) + str(number)
-    return stringPart + str(number)
+    ____ :
+        number = ('0' * (l..(numberPart) - l..(str(number)))) + str(number)
+    r.. stringPart + str(number)
     
 
 

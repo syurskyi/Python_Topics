@@ -1,8 +1,8 @@
 s ='HEELLLLOO'
 string = ''
-for i in range(len(s)):
+___ i __ r..(l..(s)):
     __ 'A='<= s[i] <= 'Z':
         string += chr((ord(s[i])) + 32)
-    else:
+    ____:
         string += s[i]
 print(string)

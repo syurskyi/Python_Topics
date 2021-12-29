@@ -5,14 +5,14 @@
 
 class Solution:
     ___ Fizzbuzz(x,z):
-        for i in range(x,z):
+        ___ i __ r..(x,z):
             __ i % 3 __ 0 and i % 5 __ 0:
                 print ("FizzBuzz")
-            elif i % 3 __ 0:
+            ____ i % 3 __ 0:
                 print ("Fizz")
-            elif i % 5 __ 0:
+            ____ i % 5 __ 0:
                 print ("Buzz")
-            else:
+            ____:
                 print (i)
 
 Solution.Fizzbuzz(1,100)

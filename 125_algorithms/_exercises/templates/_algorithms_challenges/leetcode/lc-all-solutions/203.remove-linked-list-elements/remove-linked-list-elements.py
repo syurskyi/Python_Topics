@@ -15,8 +15,8 @@ class Solution(object):
     dummy.next = head
     p = dummy
     while p.next:
-      __ p.next.val == val:
+      __ p.next.val __ val:
         p.next = p.next.next
-      else:
+      ____:
         p = p.next
-    return dummy.next
+    r.. dummy.next

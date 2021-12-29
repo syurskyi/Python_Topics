@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from tail import tail
+____ tail _______ tail
 
 content = b"""Hello world!
 We hope that you are learning a lot of Python.
@@ -15,12 +15,12 @@ Become a PyBites ninja!"""
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(content)
-    return f
+    r.. f
 
 
 ___ test_tail_various_args(my_file):
-    assert tail(my_file.resolve(), 1) == ['Become a PyBites ninja!']
-    assert tail(my_file.resolve(), 2) == ['Keep calm and code in Python!',
+    ... tail(my_file.resolve(), 1) __ ['Become a PyBites ninja!']
+    ... tail(my_file.resolve(), 2) __ ['Keep calm and code in Python!',
                                           'Become a PyBites ninja!']
 
 
@@ -29,5 +29,5 @@ ___ test_tail_arg_gt_num_lines_files(my_file):
     # byte to str conversion and strip off last line's newline char
     actual = tail(my_file.resolve(), 10)
     expected = [line.decode("utf-8")
-                for line in content.splitlines()]
-    assert actual == expected
+                ___ line __ content.splitlines()]
+    ... actual __ expected

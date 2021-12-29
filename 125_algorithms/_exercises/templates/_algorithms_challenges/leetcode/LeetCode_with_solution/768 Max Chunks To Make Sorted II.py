@@ -31,8 +31,8 @@ Note:
 arr will have length in range [1, 2000].
 arr[i] will be an integer in range [0, 10**8].
 """
-from typing import List
-from collections import defaultdict, deque
+____ typing _______ List
+____ collections _______ defaultdict, deque
 
 
 class Solution:
@@ -42,20 +42,20 @@ class Solution:
         sort and assign index
         For the smae element, the right ones should get larget assigned index
         """
-        A = sorted(arr)
+        A = s..(arr)
         hm = defaultdict(deque)
-        for i, e in enumerate(A):
-            hm[e].append(i)
+        ___ i, e __ enumerate(A):
+            hm[e].a..(i)
 
-        proxy = []
-        for e in arr:
-            proxy.append(hm[e].popleft())
+        proxy    # list
+        ___ e __ arr:
+            proxy.a..(hm[e].popleft())
 
         ret = 0
         cur_max_idx = 0
-        for i, e in enumerate(proxy):
+        ___ i, e __ enumerate(proxy):
             cur_max_idx = max(cur_max_idx, e)
-            __ cur_max_idx == i:
+            __ cur_max_idx __ i:
                 ret += 1
 
-        return ret
+        r.. ret

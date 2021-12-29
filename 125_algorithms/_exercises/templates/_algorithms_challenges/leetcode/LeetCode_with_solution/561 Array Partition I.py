@@ -13,10 +13,10 @@ Note:
 n is a positive integer, which is in the range of [1, 10000].
 All the integers in the array will be in the range of [-10000, 10000].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()
-        return sum(nums[::2])
+        r.. s..(nums[::2])

@@ -22,29 +22,29 @@ class Solution:
         :type intv: Interval
         :rtype: list[Interval]
         """
-        __ not intvs and not intv:
-            return []
-        __ not intvs:
-            return [intv]
-        __ not intv:
-            return intvs
+        __ n.. intvs and n.. intv:
+            r.. []
+        __ n.. intvs:
+            r.. [intv]
+        __ n.. intv:
+            r.. intvs
 
-        ans = []
-        index = len(intvs)
+        ans    # list
+        index = l..(intvs)
 
-        for i in range(len(intvs) - 1, -1, -1):
+        ___ i __ r..(l..(intvs) - 1, -1, -1):
             __ intvs[i].start <= intv.start:
                 break
             index -= 1
 
-        intvs.append(intv)
-        for i in range(len(intvs) - 1, index, -1):
+        intvs.a..(intv)
+        ___ i __ r..(l..(intvs) - 1, index, -1):
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
-        for i in range(len(intvs)):  # since there is one more child in intvs
+        ___ i __ r..(l..(intvs)):  # since there is one more child in intvs
             __ ans and intvs[i].start <= ans[-1].end:
                 ans[-1].end = max(ans[-1].end, intvs[i].end)
-            else:
-                ans.append(intvs[i])
+            ____:
+                ans.a..(intvs[i])
 
-        return ans
+        r.. ans

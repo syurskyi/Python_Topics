@@ -1,16 +1,16 @@
-values = list(map(int, input().split()))
+values = l..(map(int, input().split()))
 
 ___ get_max_and_min():
     max = values[0]
-    min = values[0]
-    for i in values:
-        __(i < min):
-            min = i
-        elif(i > max):
+    m.. = values[0]
+    ___ i __ values:
+        __(i < m..):
+            m.. = i
+        ____(i > max):
             max = i
     
-    return max, min
+    r.. max, m..
 
-max, min = get_max_and_min()
+max, m.. = get_max_and_min()
 
-print(max, min)
+print(max, m..)

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import bob
+_______ bob
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -96,5 +96,5 @@ class BobTests(unittest.TestCase):
             "Whatever.")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

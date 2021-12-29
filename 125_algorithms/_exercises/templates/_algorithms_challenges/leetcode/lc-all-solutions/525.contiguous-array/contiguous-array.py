@@ -7,10 +7,10 @@ class Solution(object):
     d = {0: -1}
     count = ans = 0
     delta = {1: -1, 0: 1}
-    for i in range(len(nums)):
+    ___ i __ r..(l..(nums)):
       count += delta.get(nums[i], 0)
-      __ count in d:
+      __ count __ d:
         ans = max(ans, i - d[count])
-      else:
+      ____:
         d[count] = i
-    return ans
+    r.. ans

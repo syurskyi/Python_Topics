@@ -32,19 +32,19 @@ class Solution:
         """
         h = {0: 0}  # [:l], half open, factor in trival case
         s = 0
-        for l in range(1, len(nums) + 1):
+        ___ l __ r..(1, l..(nums) + 1):
             s += nums[l-1]
             __ k != 0:  # edge case
                 s %= k
-            __ s in h:
+            __ s __ h:
                 __ l - h[s] >= 2:  # size at least 2
-                    return True
-            else:
+                    r.. True
+            ____:
                 # only keep the lowest
                 h[s] = l
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().checkSubarraySum([23,2,4,6,7], 6) == True
+__ __name__ __ "__main__":
+    ... Solution().checkSubarraySum([23,2,4,6,7], 6) __ True

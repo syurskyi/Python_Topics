@@ -1,5 +1,5 @@
 words = ("It's almost Holidays and PyBites wishes You a "
-             "Merry Christmas and a Happy 2019").split()
+             "Merry Christmas and a Happy 2019").s.. 
 
 ___ sort_words_case_insensitively(words):
     """Sort the provided word list ignoring case, and numbers last
@@ -8,7 +8,7 @@ ___ sort_words_case_insensitively(words):
     """
     # this works because: >>> sorted([True, False])
     # [False, True]
-    return sorted(words, key=lambda x: (str(x).lower(), x[0].isdigit() ))
+    r.. s..(words, key=l.... x: (str(x).lower(), x[0].isdigit() ))
 
 
 print(sort_words_case_insensitively(words))

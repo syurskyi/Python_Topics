@@ -52,40 +52,40 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return []
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
 
-        m, n = len(matrix), len(matrix[0])  # row, col
+        m, n = l..(matrix), l..(matrix[0])  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
-        P = [[False for _ in range(n)] for _ in range(m)]
-        A = [[False for _ in range(n)] for _ in range(m)]
+        P = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        A = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
 
         # starting from edge point
-        for i in range(m):
+        ___ i __ r..(m):
             self.dfs(matrix, i, 0, P)
             self.dfs(matrix, i, n-1, A)
 
-        for j in range(n):
+        ___ j __ r..(n):
             self.dfs(matrix, 0, j, P)
             self.dfs(matrix, m-1, j, A)
 
         ret = [
             [i, j]
-            for i in range(m)
-            for j in range(n)
+            ___ i __ r..(m)
+            ___ j __ r..(n)
             __ P[i][j] and A[i][j]
         ]
-        return ret
+        r.. ret
 
     ___ dfs(self, matrix, i, j, C):
         # check before dfs (to be consistent)
         C[i][j] = True
-        m, n = len(matrix), len(matrix[0])
-        for x, y in dirs:
+        m, n = l..(matrix), l..(matrix[0])
+        ___ x, y __ dirs:
             I = i + x
             J = j + y
             __ 0 <= I < m and 0 <= J < n and matrix[i][j] <= matrix[I][J]:
-                __ not C[I][J]:
+                __ n.. C[I][J]:
                     self.dfs(matrix, I, J, C)
 
 
@@ -96,55 +96,55 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return []
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
 
-        m, n = len(matrix), len(matrix[0])  # row, col
+        m, n = l..(matrix), l..(matrix[0])  # row, col
         P = [[False] * n ] * m
         A = [[False] * n ] * m
 
         visisted = [[False] * n ] * m
-        for i in range(m):
-            for j in range(n):
-                self.dfs_error(matrix, i, j, visisted, P, lambda i, j: i < 0 or j <0)
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                self.dfs_error(matrix, i, j, visisted, P, l.... i, j: i < 0 o. j <0)
 
         visisted = [[False] * n ] * m
-        for i in range(m):
-            for j in range(n):
-                self.dfs_error(matrix, i, j, visisted, A, lambda i, j: i >= m or j >= n)
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                self.dfs_error(matrix, i, j, visisted, A, l.... i, j: i >= m o. j >= n)
 
         ret = [
             [i, j]
-            for i in range(m)
-            for j in range(n)
+            ___ i __ r..(m)
+            ___ j __ r..(n)
             __ P[i][j] and A[i][j]
         ]
-        return ret
+        r.. ret
 
 
     ___ dfs_error(self, matrix, i, j, visisted, C, predicate):
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         __ visisted[i][j]:
-            return C[i][j]
+            r.. C[i][j]
 
         visisted[i][j] = True
-        for x, y in dirs:
+        ___ x, y __ dirs:
             i2 = i + x
             j2= j + y
             __ 0 <= i2 < m and 0 <= j2 < n:
                 __ self.dfs_error(matrix, i2, j2, visisted, C, predicate) and matrix[i][j] >= matrix[i2][j2]:
                     C[i][j] = True
-            elif predicate(i2, j2):
+            ____ predicate(i2, j2):
                 C[i][j] = True
 
-        return C[i][j]
+        r.. C[i][j]
 
 
-__ __name__ == "__main__":
-    assert Solution().pacificAtlantic([
+__ __name__ __ "__main__":
+    ... Solution().pacificAtlantic([
         [1,2,2,3,5],
         [3,2,3,4,4],
         [2,4,5,3,1],
         [6,7,1,4,5],
         [5,1,1,2,4]
-    ]) == [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]
+    ]) __ [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]

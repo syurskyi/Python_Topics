@@ -23,7 +23,7 @@ All the strings in the input will only contain lower-case letters.
 The size of the dictionary won't exceed 1,000.
 The length of all the strings in the input won't exceed 1,000.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -40,25 +40,25 @@ class Solution:
         :type d: List[str]
         :rtype: str
         """
-        h = defaultdict(list)
-        for d_idx, w in enumerate(d):
+        h = defaultdict(l..)
+        ___ d_idx, w __ enumerate(d):
             w_idx = 0
-            h[w[w_idx]].append((d_idx, w_idx))
+            h[w[w_idx]].a..((d_idx, w_idx))
 
         ret = ""
-        for e in s:
+        ___ e __ s:
             lst = h.pop(e, [])
-            for d_idx, w_idx in lst:
+            ___ d_idx, w_idx __ lst:
                 w = d[d_idx]
                 w_idx += 1
-                __ w_idx >= len(w):
+                __ w_idx >= l..(w):
                     # if len(w) >= len(ret) and w < ret:  # error
-                    ret = min(ret, w, key=lambda x: (-len(x), x))  # compare with primary and secondary key
-                else:
-                    h[w[w_idx]].append((d_idx, w_idx))
+                    ret = m..(ret, w, key=l.... x: (-l..(x), x))  # compare with primary and secondary key
+                ____:
+                    h[w[w_idx]].a..((d_idx, w_idx))
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) == "apple"
+__ __name__ __ "__main__":
+    ... Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) __ "apple"

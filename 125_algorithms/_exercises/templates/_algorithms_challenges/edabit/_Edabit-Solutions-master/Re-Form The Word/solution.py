@@ -1,5 +1,5 @@
 ___ get_word(left, right):
-    return left.capitalize() + right
+    r.. left.capitalize() + right
 
 
 

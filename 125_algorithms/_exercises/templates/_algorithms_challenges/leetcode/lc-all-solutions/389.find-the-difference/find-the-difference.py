@@ -5,6 +5,6 @@ class Solution(object):
     :type t: str
     :rtype: str
     """
-    sum1 = sum(map(ord, [c for c in s]))
-    sum2 = sum(map(ord, [c for c in t]))
-    return chr(sum2 - sum1)
+    sum1 = s..(map(ord, [c ___ c __ s]))
+    sum2 = s..(map(ord, [c ___ c __ t]))
+    r.. chr(sum2 - sum1)

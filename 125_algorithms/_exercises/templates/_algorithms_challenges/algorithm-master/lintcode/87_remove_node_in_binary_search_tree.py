@@ -18,31 +18,31 @@ class Solution:
     @return: The root of the binary search tree after removal.
     """
     ___ removeNode(self, root, target):
-        __ not root:
-            return root
+        __ n.. root:
+            r.. root
 
-        __ root.val == target:
-            __ not root.left:
-                return root.right
-            __ not root.right:
-                return root.left
+        __ root.val __ target:
+            __ n.. root.left:
+                r.. root.right
+            __ n.. root.right:
+                r.. root.left
 
             min_node = self.find_min(root.right)
             root.val = min_node.val
             root.right = self.removeNode(root.right, root.val)
 
-            return root
+            r.. root
 
         __ target < root.val:
             root.left = self.removeNode(root.left, target)
-        else:
+        ____:
             root.right = self.removeNode(root.right, target)
 
-        return root
+        r.. root
 
     ___ find_min(self, node):
-        __ not node:
-            return node
+        __ n.. node:
+            r.. node
         while node.left:
             node = node.left
-        return node
+        r.. node

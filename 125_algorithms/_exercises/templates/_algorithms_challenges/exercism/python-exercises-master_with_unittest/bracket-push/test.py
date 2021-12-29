@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from bracket_push import check_brackets
+____ bracket_push _______ check_brackets
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
@@ -53,5 +53,5 @@ class BracketPushTests(unittest.TestCase):
                  "x} &... x^2 \\end{array}\\right)")), True)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

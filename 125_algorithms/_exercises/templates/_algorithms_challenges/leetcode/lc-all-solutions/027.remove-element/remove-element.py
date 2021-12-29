@@ -6,8 +6,8 @@ class Solution(object):
     :rtype: int
     """
     slow = -1
-    for i in range(0, len(nums)):
+    ___ i __ r..(0, l..(nums)):
       __ nums[i] != val:
         slow += 1
         nums[slow] = nums[i]
-    return slow + 1
+    r.. slow + 1

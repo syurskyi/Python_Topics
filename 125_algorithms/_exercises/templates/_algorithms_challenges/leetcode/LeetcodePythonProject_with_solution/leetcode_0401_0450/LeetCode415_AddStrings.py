@@ -6,9 +6,9 @@ Created on Apr 11, 2017
 
 class Solution(object):
     ___ addStrings(self, num1, num2):
-        __ len(num2) > len(num1):
+        __ l..(num2) > l..(num1):
             num1, num2 = num2, num1
-        i, j = len(num1)-1, len(num2)-1
+        i, j = l..(num1)-1, l..(num2)-1
         result = ''
         carry = 0
         while j >= 0:
@@ -18,7 +18,7 @@ class Solution(object):
             __ val >= 10:
                 val -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
             result = str(val) + result
             i -= 1
@@ -29,10 +29,10 @@ class Solution(object):
             __ val >= 10:
                 val -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
             result = str(val) + result
             i -= 1
         __ carry:
             result = '1'+result
-        return result
+        r.. result

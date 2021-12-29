@@ -10,32 +10,32 @@ class Solution(object):
         :type rectangles: List[List[int]]
         :rtype: int
         """
-        xs = sorted(set([x for x1, y1, x2, y2 in rectangles for x in [x1, x2]] + [0]))
-        x_i = {v: i for i, v in enumerate(xs)}
-        count = [0] * len(x_i)
-        L = []
-        for x1, y1, x2, y2 in rectangles:
-            L.append([y1, x1, x2, 1])
-            L.append([y2, x1, x2, -1])
+        xs = s..(set([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]))
+        x_i = {v: i ___ i, v __ enumerate(xs)}
+        count = [0] * l..(x_i)
+        L    # list
+        ___ x1, y1, x2, y2 __ rectangles:
+            L.a..([y1, x1, x2, 1])
+            L.a..([y2, x1, x2, -1])
         L.sort()
         cur_y = cur_x_sum = area = 0
-        for y, x1, x2, sig in L:
+        ___ y, x1, x2, sig __ L:
             area += (y-cur_y) * cur_x_sum
             cur_y = y
-            for i in range(x_i[x1], x_i[x2]):
+            ___ i __ r..(x_i[x1], x_i[x2]):
                 count[i] += sig
-            cur_x_sum = sum(x2-x1 __ c else 0 for x1, x2, c in zip(xs, xs[1:], count))
-        return area % (10**9+7)
+            cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ zip(xs, xs[1:], count))
+        r.. area % (10**9+7)
     
     ___ test(self):
         testCases = [
             [[0,0,2,2],[1,0,2,3],[1,0,3,1]],
             [[0,0,1000000000,1000000000]],
         ]
-        for rectangles in testCases:
+        ___ rectangles __ testCases:
             result = self.rectangleArea(rectangles)
             print('result: %s' % result)
             print('-='*30 + '-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

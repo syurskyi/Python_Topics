@@ -17,7 +17,7 @@ class Solution(object):
         :rtype: ListNode
         """
         fast = head
-        for _ in range(n):
+        ___ _ __ r..(n):
             fast = fast.next
         dummy = ListNode(-1)
         dummy.next = head
@@ -28,4 +28,4 @@ class Solution(object):
             node = node.next
             fast = fast.next
         prev.next = node.next
-        return dummy.next
+        r.. dummy.next

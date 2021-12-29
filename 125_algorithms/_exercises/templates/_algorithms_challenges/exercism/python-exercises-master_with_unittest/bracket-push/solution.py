@@ -1,13 +1,13 @@
 ___ check_brackets(string):
     counterparts = {')': '(', '}': '{', ']': '['}
 
-    stack = []
-    for char in string:
-        __ char in counterparts.values():
-            stack.append(char)
-        elif char in counterparts:
-            __ not stack:
-                return False
+    stack    # list
+    ___ char __ string:
+        __ char __ counterparts.values():
+            stack.a..(char)
+        ____ char __ counterparts:
+            __ n.. stack:
+                r.. False
             __ stack.pop() != counterparts[char]:
-                return False
-    return not stack
+                r.. False
+    r.. n.. stack

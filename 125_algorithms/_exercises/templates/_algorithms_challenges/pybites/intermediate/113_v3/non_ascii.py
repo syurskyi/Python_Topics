@@ -1,17 +1,17 @@
 ___ extract_non_ascii_words(text):
     """Filter a text returning a list of non-ascii words"""
 
-    words = text.split()
+    words = text.s..
 
-    result = []
-    for word in words:
+    result    # list
+    ___ word __ words:
         try:
             word.encode('ascii')
         except Exception as e:
             print(e)
-            result.append(word)
+            result.a..(word)
 
 
-    return result
+    r.. result
 
 

@@ -10,35 +10,35 @@ class Solution(object):
         :type heights: List[int]
         :rtype: int
         """
-        stack = []
-        __ not heights:
-            return 0
+        stack    # list
+        __ n.. heights:
+            r.. 0
         area = heights[0]
         i = 0
-        while i < len(heights):
-            __ not stack or heights[i] >= heights[stack[-1]]:
-                stack.append(i)
+        while i < l..(heights):
+            __ n.. stack o. heights[i] >= heights[stack[-1]]:
+                stack.a..(i)
                 i+=1
-            else:
+            ____:
                 h = heights[stack.pop()]
-                w = i __ not stack else (i-stack[-1]-1)
+                w = i __ n.. stack ____ (i-stack[-1]-1)
                 area = max(w*h, area)
         while stack:
             h = heights[stack.pop()]
-            w = i __ not stack else (i-stack[-1]-1)
+            w = i __ n.. stack ____ (i-stack[-1]-1)
             area = max(area, w*h)
-        return area
+        r.. area
     
     ___ test(self):
         testCases = [
 #             [2,1,5,6,2,3],
             [10, 11, 12, 15],
         ]
-        for heights in testCases:
+        ___ heights __ testCases:
             print('heights: %s' % (heights))
             result = self.largestRectangleArea(heights)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

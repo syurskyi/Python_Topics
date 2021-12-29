@@ -34,40 +34,40 @@ Each node in the tree will have a value between 0 and 25.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from typing import Tuple
-from collections import deque
+____ typing _______ Tuple
+____ collections _______ deque
 
 
 class Solution:
     ___ __init__(self):
-        self.mn: Tuple[int] = None
+        self.mn: Tuple[int] = N..
 
     ___ smallestFromLeaf(self, root: TreeNode) -> str:
         """
         dfs
         """
         self.dfs(root, deque())
-        __ not self.mn:
-            return ""
-        return "".join(
+        __ n.. self.mn:
+            r.. ""
+        r.. "".join(
             chr(e + ord("a"))
-            for e in self.mn
+            ___ e __ self.mn
         )
 
     ___ dfs(self, node, cur_deque):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         cur_deque.appendleft(node.val)
-        __ not node.left and not node.right:
+        __ n.. node.left and n.. node.right:
             t = tuple(cur_deque)
-            __ not self.mn or t < self.mn:
+            __ n.. self.mn o. t < self.mn:
                 self.mn = t
-        else:
+        ____:
             self.dfs(node.left, cur_deque)
             self.dfs(node.right, cur_deque)
         # need to pop at the end

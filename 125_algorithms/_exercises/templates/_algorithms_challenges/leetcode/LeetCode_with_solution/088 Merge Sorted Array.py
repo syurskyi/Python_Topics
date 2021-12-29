@@ -31,7 +31,7 @@ class Solution(object):
             __ A[i] > B[j]:
                 A[closed] = A[i]
                 i -= 1
-            else:
+            ____:
                 A[closed] = B[j]
                 j -= 1
 

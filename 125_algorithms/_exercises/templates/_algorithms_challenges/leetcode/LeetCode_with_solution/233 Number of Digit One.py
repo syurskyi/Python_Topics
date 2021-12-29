@@ -20,7 +20,7 @@ class Solution:
         :rtype: int
         """
         __ n < 1:
-            return 0
+            r.. 0
 
         cnt = 0
         sig = 1
@@ -33,11 +33,11 @@ class Solution:
 
             __ cur_digit > 1:
                 cnt += (hi_digit+1)*sig
-            elif cur_digit == 1:
+            ____ cur_digit __ 1:
                 cnt += hi_digit*sig + (lo_digit+1)
-            else:
+            ____:
                 cnt += hi_digit*sig
 
             sig = temp
 
-        return cnt
+        r.. cnt

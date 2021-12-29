@@ -8,8 +8,8 @@ Created on Jan 31, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ isSameTree(self, p, q):
@@ -18,12 +18,12 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        __ not p and not q:
-            return True
-        elif not p or not q:
-            return False
-        elif p.val != q.val:
-            return False
-        else:
-            return self.isSameTree(p.left, q.left) and\
+        __ n.. p and n.. q:
+            r.. True
+        ____ n.. p o. n.. q:
+            r.. False
+        ____ p.val != q.val:
+            r.. False
+        ____:
+            r.. self.isSameTree(p.left, q.left) and\
                 self.isSameTree(p.right, q.right)

@@ -1,17 +1,17 @@
 class Animal:
     
     number = 10001
-    animals = []
+    animals    # list
     ___ __init__(self, name):
-        self.name = name.title()
+        self.name = name.t..
         self.number = Animal.number
         Animal.number += 1
-        Animal.animals.append(self)
+        Animal.animals.a..(self)
 
     ___ __str__(self):
-        return f"{self.number}. {self.name}"
+        r.. f"{self.number}. {self.name}"
 
     @classmethod
     ___ zoo(cls):
-        return '\n'.join(str(animal) for animal in cls.animals)
+        r.. '\n'.join(str(animal) ___ animal __ cls.animals)
 

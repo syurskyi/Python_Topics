@@ -6,9 +6,9 @@ ___ generate_xmas_tree(rows=10):
         ***
        *****"""
     tree_stars = [(line * 2 - 1) * '*'
-                  for line in range(rows + 1)]
+                  ___ line __ r..(rows + 1)]
 
-    tree = [line.center(len(tree_stars[-1]), ' ')
-            for line in tree_stars[1:]]
+    tree = [line.center(l..(tree_stars[-1]), ' ')
+            ___ line __ tree_stars[1:]]
 
-    return '\n'.join(tree)
+    r.. '\n'.join(tree)

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from chaining_docs import Document
+____ chaining_docs _______ Document
 
 
 EOL_PUNCTUATION = ".!?"
@@ -60,7 +60,7 @@ DOCS = {
 @pytest.fixture()
 ___ doc(request):
     """Factory method for test documents"""
-    return DOCS.get(request.param, Document())
+    r.. DOCS.get(request.param, Document())
 
 
 @pytest.mark.parametrize(
@@ -71,7 +71,7 @@ ___ doc(request):
     indirect=["doc"],
 )
 ___ test_correct_return_type(doc, expected):
-    assert isinstance(doc, expected)
+    ... isi..(doc, expected)
 
 
 @pytest.mark.parametrize(
@@ -87,7 +87,7 @@ ___ test_correct_return_type(doc, expected):
     indirect=["doc"],
 )
 ___ test_len_implementation(doc, expected):
-    assert len(doc) == expected
+    ... l..(doc) __ expected
 
 
 @pytest.mark.parametrize(
@@ -103,7 +103,7 @@ ___ test_len_implementation(doc, expected):
     indirect=["doc"],
 )
 ___ test_word_count_implementation(doc, expected):
-    assert doc.word_count() == expected
+    ... doc.word_count() __ expected
 
 
 @pytest.mark.parametrize(
@@ -125,7 +125,7 @@ ___ test_word_count_implementation(doc, expected):
     indirect=["doc"],
 )
 ___ test_correct_chaining(doc, expected):
-    assert str(doc) == expected
+    ... str(doc) __ expected
 
 
 @pytest.mark.parametrize(
@@ -133,7 +133,7 @@ ___ test_correct_chaining(doc, expected):
     [
         (
             "tale",
-            sorted(
+            s..(
                 [
                     "this",
                     "is",
@@ -155,7 +155,7 @@ ___ test_correct_chaining(doc, expected):
         ),
         (
             "complex",
-            sorted(["my", "first", "second", "sentence", "introduction", "paragraph"]),
+            s..(["my", "first", "second", "sentence", "introduction", "paragraph"]),
         ),
         ("edgy", []),
         ("full-case", ["1", "2", "3"]),
@@ -164,4 +164,4 @@ ___ test_correct_chaining(doc, expected):
     indirect=["doc"],
 )
 ___ test_words_property(doc, expected):
-    assert doc.words == expected
+    ... doc.words __ expected

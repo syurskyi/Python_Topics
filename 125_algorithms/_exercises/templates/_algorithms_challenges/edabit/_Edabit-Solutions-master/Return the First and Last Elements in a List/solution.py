@@ -1,5 +1,5 @@
 ___ first_last(lst):
-    return [lst[0], lst[-1]]
+    r.. [lst[0], lst[-1]]
 
 
 

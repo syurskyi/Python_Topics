@@ -18,16 +18,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ root is None:
-            return True
-        else:
+        __ root __ N..
+            r.. True
+        ____:
             __ self.isBalanced(root.left) and self.isBalanced(root.right):
-                return abs(self.depth(root.left) - self.depth(root.right)) <= 1
-            else:
-                return False
+                r.. abs(self.depth(root.left) - self.depth(root.right)) <= 1
+            ____:
+                r.. False
 
     ___ depth(self, root):
-        __ root is None:
-            return -1
-        else:
-            return max(self.depth(root.left), self.depth(root.right)) + 1
+        __ root __ N..
+            r.. -1
+        ____:
+            r.. max(self.depth(root.left), self.depth(root.right)) + 1

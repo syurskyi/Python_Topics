@@ -3,7 +3,7 @@ Premium Question
 """
 __author__ = 'Daniel'
 
-import bisect
+_______ bisect
 
 
 class Solution(object):
@@ -21,36 +21,36 @@ class Solution(object):
         :type c: int
         :rtype: List[int]
         """
-        __ a == 0:
-            ret = map(lambda x: self.f(x, a, b, c), nums)
-            return ret __ b > 0 else ret[::-1]
+        __ a __ 0:
+            ret = map(l.... x: self.f(x, a, b, c), nums)
+            r.. ret __ b > 0 ____ ret[::-1]
 
         mid = - float(b) / (2*a)
         ri = bisect.bisect_left(nums, mid)
         le = ri - 1
-        ret = []
-        while le >= 0 and ri < len(nums) and le < ri:
+        ret    # list
+        while le >= 0 and ri < l..(nums) and le < ri:
             f_le = self.f(nums[le], a, b, c)
             f_ri = self.f(nums[ri], a, b, c)
-            __ a > 0 and f_le < f_ri or a < 0 and f_le > f_ri:
-                ret.append(f_le)
+            __ a > 0 and f_le < f_ri o. a < 0 and f_le > f_ri:
+                ret.a..(f_le)
                 le -= 1
-            else:
-                ret.append(f_ri)
+            ____:
+                ret.a..(f_ri)
                 ri += 1
 
         while le >= 0:
-            ret.append(self.f(nums[le], a, b, c))
+            ret.a..(self.f(nums[le], a, b, c))
             le -= 1
-        while ri < len(nums):
-            ret.append(self.f(nums[ri], a, b, c))
+        while ri < l..(nums):
+            ret.a..(self.f(nums[ri], a, b, c))
             ri += 1
 
-        return ret __ a > 0 else ret[::-1]
+        r.. ret __ a > 0 ____ ret[::-1]
 
     ___ f(self, x, a, b, c):
-        return a * (x ** 2) + b * x + c
+        r.. a * (x ** 2) + b * x + c
 
 
-__ __name__ == "__main__":
-    assert Solution().sortTransformedArray([-4, -2, 2, 4], -1, 3, 5) == [-23, -5, 1, 7]
+__ __name__ __ "__main__":
+    ... Solution().sortTransformedArray([-4, -2, 2, 4], -1, 3, 5) __ [-23, -5, 1, 7]

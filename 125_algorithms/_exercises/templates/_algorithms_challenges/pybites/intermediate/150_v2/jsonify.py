@@ -1,6 +1,6 @@
-import json
-from io import StringIO
-import pandas as pd
+_______ json
+____ io _______ StringIO
+_______ pandas as pd
 
 members = """
 id,first_name,last_name,email
@@ -26,12 +26,12 @@ ___ convert_to_json(members=members):
 
     data = pd.read_csv(data,dtype=str,sep=r"\,|;|\|")
     value = data.to_json(orient='records')
-    return value
+    r.. value
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     convert_to_json()
 
 

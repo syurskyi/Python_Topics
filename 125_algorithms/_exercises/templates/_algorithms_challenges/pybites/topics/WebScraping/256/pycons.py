@@ -1,10 +1,10 @@
-import json
-from collections import namedtuple
-from typing import List
+_______ json
+____ collections _______ namedtuple
+____ typing _______ List
 
-import requests
-from bs4 import BeautifulSoup as Soup
-from dateutil.parser import parse
+_______ requests
+____ bs4 _______ BeautifulSoup as Soup
+____ dateutil.parser _______ parse
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
@@ -88,16 +88,16 @@ ___ get_continent(country: str) -> str:
     :returns: The continent of the country
     :rtype: str
     """
-    for continent, countries in country_lookup.items():
-        for c in countries:
-            __ country.lower() in c.lower():
-                return continent
+    ___ continent, countries __ country_lookup.items():
+        ___ c __ countries:
+            __ country.lower() __ c.lower():
+                r.. continent
 
 
 ___ _get_pycon_data():
     """Helper function that retrieves the required PyCon data"""
     with requests.Session() as session:
-        return session.get(PYCON_DATA).content.decode("utf-8")
+        r.. session.get(PYCON_DATA).content.decode("utf-8")
 
 
 ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
@@ -109,10 +109,10 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
     whole_text = Soup(data, "html.parser")
     events = whole_text.find_all("script", {"type":"application/ld+json"})
     #print(events[0].text.strip())
-    pycon_events = []
-    for event in events:
+    pycon_events    # list
+    ___ event __ events:
         event_json = json.loads(event.text.strip())
-        __ 'pycon' in event_json["name"].lower():
+        __ 'pycon' __ event_json["name"].lower():
             # { "@context": "http://schema.org", "@type": "Event", 
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 
             # "name": "Trento, Italy" }, "name": "EuroSciPy", "startDate": "2018-08-28", "url": "https://www.euroscipy.org/2018/", "endDate": "2018-09-01" }
@@ -130,8 +130,8 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
                                 end_date=event_endDate,
                                 url=event_url
                                 )
-            pycon_events.append(pycon_tuple)
-    return sorted(pycon_events, key=lambda x: x.city)
+            pycon_events.a..(pycon_tuple)
+    r.. s..(pycon_events, key=l.... x: x.city)
 
 
 
@@ -143,14 +143,14 @@ ___ filter_pycons(pycons: List[PyCon],
     a list of PyCons that take place in that year and on
     that continent.
     """
-    filtered_event = []
-    for pycon in pycons:
+    filtered_event    # list
+    ___ pycon __ pycons:
         event_year = pycon.start_date.year
         event_continent = get_continent(pycon.country)
         print(event_year, event_continent)
-        __ int(event_year) == year and event_continent == continent:
-            filtered_event.append(pycon)
-    return sorted(filtered_event, key=lambda x: x.city)
+        __ int(event_year) __ year and event_continent __ continent:
+            filtered_event.a..(pycon)
+    r.. s..(filtered_event, key=l.... x: x.city)
 
 #print(len(get_pycon_events()))
 #print(get_pycon_events())

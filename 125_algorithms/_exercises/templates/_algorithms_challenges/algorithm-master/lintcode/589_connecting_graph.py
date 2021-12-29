@@ -3,19 +3,19 @@ class ConnectingGraph:
     @param: n: An integer
     """
     ___ __init__(self, n):
-        __ not n:
-            return
+        __ n.. n:
+            r..
 
         self.N = {}
-        for i in range(1, n + 1):
+        ___ i __ r..(1, n + 1):
             self.N[i] = i
 
     ___ find(self, a):
-        __ self.N[a] == a:
-            return a
+        __ self.N[a] __ a:
+            r.. a
 
         self.N[a] = self.find(self.N[a])
-        return self.N[a]
+        r.. self.N[a]
 
     """
     @param: a: An integer
@@ -36,4 +36,4 @@ class ConnectingGraph:
     ___ query(self, a, b):
         _a = self.find(a)
         _b = self.find(b)
-        return _a == _b
+        r.. _a __ _b

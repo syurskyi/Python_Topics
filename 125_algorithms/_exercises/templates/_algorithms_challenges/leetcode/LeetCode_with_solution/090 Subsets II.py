@@ -26,18 +26,18 @@ class Solution:
         :return: a list of lists of integer
         """
         S.sort()
-        result = []
+        result    # list
         self.get_subset(S, [], result)
-        return result
+        r.. result
 
     ___ get_subset(self, S, current, result):
-        result.append(current)
-        for ind, val in enumerate(S):
+        result.a..(current)
+        ___ ind, val __ enumerate(S):
             # JUMP, avoid duplicates
-            __ ind-1>=0 and val==S[ind-1]:  # ensure uni-direction
+            __ ind-1>=0 and val__S[ind-1]:  # ensure uni-direction
                 continue
             self.get_subset(S[ind+1:], current+[val], result)
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().subsetsWithDup([1, 2, 3])

@@ -25,11 +25,11 @@ class Solution(object):
         :type A: List[int]
         :rtype: in-place
         """
-        n = len(A)
+        n = l..(A)
         median_idx = self.find_kth(A, 0, n, n/2)
         v = A[median_idx]
 
-        idx = lambda i: (2*i+1) % (n|1)
+        idx = l.... i: (2*i+1) % (n|1)
         lt = -1
         hi = n
         i = 0
@@ -38,16 +38,16 @@ class Solution(object):
                 lt += 1
                 A[idx(lt)], A[idx(i)] = A[idx(i)], A[idx(lt)]
                 i += 1
-            elif A[idx(i)] == v:
+            ____ A[idx(i)] __ v:
                 i += 1
-            else:
+            ____:
                 hi -= 1
                 A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
 
     ___ pivot(self, A, lo, hi, pidx_ N..
         lt = lo-1
         gt = hi
-        __ not pidx: pidx = lo
+        __ n.. pidx: pidx = lo
 
         v = A[pidx]
         i = lo
@@ -56,25 +56,25 @@ class Solution(object):
                 lt += 1
                 A[lt], A[i] = A[i], A[lt]
                 i += 1
-            elif A[i] == v:
+            ____ A[i] __ v:
                 i += 1
-            else:
+            ____:
                 gt -= 1
                 A[gt], A[i] = A[i], A[gt]
 
-        return lt, gt
+        r.. lt, gt
 
     ___ find_kth(self, A, lo, hi, k):
-        __ lo >= hi: return
+        __ lo >= hi: r..
 
         lt, gt = self.pivot(A, lo, hi)
 
         __ lt < k < gt:
-            return k
+            r.. k
         __ k <= lt:
-            return self.find_kth(A, lo, lt+1, k)
-        else:
-            return self.find_kth(A, gt, hi, k)
+            r.. self.find_kth(A, lo, lt+1, k)
+        ____:
+            r.. self.find_kth(A, gt, hi, k)
 
 
 class SolutionSort(object):
@@ -89,20 +89,20 @@ class SolutionSort(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        n = len(nums)
-        A = sorted(nums)
+        n = l..(nums)
+        A = s..(nums)
 
         j, k = (n-1) / 2, n-1
-        for i in xrange(len(nums)):
-            __ i % 2 == 0:
+        ___ i __ xrange(l..(nums)):
+            __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1
-            else:
+            ____:
                 nums[i] = A[k]
                 k -= 1
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     # A = [1, 5, 1, 1, 6, 4]
     A = [3, 2, 1, 1, 3, 2]
     Solution().wiggleSort(A)

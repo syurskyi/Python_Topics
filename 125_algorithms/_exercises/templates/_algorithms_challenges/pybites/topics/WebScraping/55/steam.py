@@ -1,6 +1,6 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
-import feedparser
+_______ feedparser
 
 # cached version to have predictable results for testing
 FEED_URL = "https://bites-data.s3.us-east-2.amazonaws.com/steam_gaming.xml"
@@ -11,7 +11,7 @@ Game = namedtuple('Game', 'title link')
 ___ get_games():
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
     feed = feedparser.parse(FEED_URL)
-    return [ Game(entry.get('title'), entry.get('link')) for entry in feed['entries'] ]
+    r.. [ Game(entry.get('title'), entry.get('link')) ___ entry __ feed['entries'] ]
 
 #get_games()
 #print(len(get_games()))

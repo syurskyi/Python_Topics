@@ -4,10 +4,10 @@ class Solution:
     @return: an integer, the number of ways decoding
     """
     ___ numDecodings(self, s):
-        __ not s or s == '0':
-            return 0
+        __ n.. s o. s __ '0':
+            r.. 0
 
-        n = len(s)
+        n = l..(s)
 
         """
         `dp[i]` means the ways to decode
@@ -17,13 +17,13 @@ class Solution:
         """
         dp = [0] * (n + 1)
         dp[0] = 1
-        dp[1] = 0 __ s[0] == '0' else 1
+        dp[1] = 0 __ s[0] __ '0' ____ 1
 
-        for i in range(2, n + 1):
+        ___ i __ r..(2, n + 1):
             __ s[i - 1] != '0':
                 dp[i] += dp[i - 1]
 
             __ 10 <= int(s[i - 2:i]) <= 26:
                 dp[i] += dp[i - 2]
 
-        return dp[n]
+        r.. dp[n]

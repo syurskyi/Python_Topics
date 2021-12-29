@@ -13,34 +13,34 @@ class Solution:
         :type A: List[int]
         :rtype: int
         """
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
-        left, right = 1, len(A) - 1
+        left, right = 1, l..(A) - 1
 
         while left + 1 < right:
             mid = (left + right) // 2
             __ self.after_dup(A, mid):
                 right = mid
-            else:
+            ____:
                 left = mid
 
         __ self.after_dup(A, left):
-            return left
+            r.. left
         __ self.after_dup(A, right):
-            return right
-        return -1
+            r.. right
+        r.. -1
 
     ___ after_dup(self, A, mid):
         cnt = 0
 
-        for a in A:
+        ___ a __ A:
             __ a <= mid:
                 cnt += 1
             __ cnt > mid:
-                return True
+                r.. True
 
-        return False
+        r.. False
 
 
 """
@@ -68,8 +68,8 @@ class Solution:
     @return: the duplicate one
     """
     ___ findDuplicate(self, A):
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
         slow = A[0]
         fast = A[A[0]]
@@ -84,4 +84,4 @@ class Solution:
             slow = A[slow]
             fast = A[fast]
 
-        return slow
+        r.. slow

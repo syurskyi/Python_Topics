@@ -9,19 +9,19 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
-        import heapq
+        _______ heapq
         s = S
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
-        heap = []
-        for c, freq in hashmap.items():
+        heap    # list
+        ___ c, freq __ hashmap.items():
             heapq.heappush(heap, [-freq, c])
         res = ''
         while heap:
             freq1, c1 = heapq.heappop(heap)
-            __ res and res[-1] == c1:
-                return ''
+            __ res and res[-1] __ c1:
+                r.. ''
             res += c1
             __ heap:
                 freq2, c2 = heapq.heappop(heap)
@@ -30,7 +30,7 @@ class Solution(object):
                     heapq.heappush(heap, [freq2+1, c2])
             __ freq1+1 < 0:
                 heapq.heappush(heap, [freq1+1, c1])
-        return ''.join(res)
+        r.. ''.join(res)
     
     ___ test(self):
         testCases = [
@@ -38,11 +38,11 @@ class Solution(object):
             "aab",
             'aaab',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.reorganizeString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

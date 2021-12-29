@@ -9,40 +9,40 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        __ not s:
-            return True
-        i, j = 0, len(s)-1
-        while i < j and s[i] == s[j]:
+        __ n.. s:
+            r.. True
+        i, j = 0, l..(s)-1
+        while i < j and s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:
-            return True
+            r.. True
         i0, j0 = i, j
         i += 1
-        while i < j and s[i] == s[j]:
+        while i < j and s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:
-            return True
+            r.. True
         i, j = i0, j0
         j -= 1
-        while i < j and s[i] == s[j]:
+        while i < j and s[i] __ s[j]:
             i += 1
             j -= 1
         __ i >= j:
-            return True
-        return False
+            r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
             'aba',
             'abca',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.validPalindrome(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

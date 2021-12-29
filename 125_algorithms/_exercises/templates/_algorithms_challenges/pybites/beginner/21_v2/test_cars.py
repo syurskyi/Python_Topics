@@ -1,28 +1,28 @@
-from cars import (get_all_jeeps, get_first_model_each_manufacturer,
+____ cars _______ (get_all_jeeps, get_first_model_each_manufacturer,
                   get_all_matching_models, sort_car_models)
 
 
 ___ test_get_all_jeeps():
     expected = 'Grand Cherokee, Cherokee, Trailhawk, Trackhawk'
     actual = get_all_jeeps()
-    assert type(actual) == str
-    assert actual == expected
+    ... type(actual) __ str
+    ... actual __ expected
 
 
 ___ test_get_first_model_each_manufacturer():
     actual = get_first_model_each_manufacturer()
     expected = ['Falcon', 'Commodore', 'Maxima', 'Civic', 'Grand Cherokee']
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_get_all_matching_models_default_grep():
     expected = ['Trailblazer', 'Trailhawk']
-    assert get_all_matching_models() == expected
+    ... get_all_matching_models() __ expected
 
 
 ___ test_get_all_matching_models_different_grep():
     expected = ['Accord', 'Commodore', 'Falcon']
-    assert get_all_matching_models(grep='CO') == expected
+    ... get_all_matching_models(grep='CO') __ expected
 
 
 ___ test_sort_dict_alphabetically():
@@ -37,4 +37,4 @@ ___ test_sort_dict_alphabetically():
         'Jeep': ['Cherokee', 'Grand Cherokee', 'Trackhawk', 'Trailhawk'],
         'Nissan': ['350Z', 'Maxima', 'Navara', 'Pulsar'],
     }
-    assert actual == expected
+    ... actual __ expected

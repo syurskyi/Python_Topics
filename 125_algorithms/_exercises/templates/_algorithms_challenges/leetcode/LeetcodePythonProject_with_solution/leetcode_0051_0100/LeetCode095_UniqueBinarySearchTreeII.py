@@ -8,8 +8,8 @@ Created on Jan 29, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ generateTrees(self, n):
@@ -17,28 +17,28 @@ class Solution(object):
         :type n: int
         :rtype: List[TreeNode]
         """
-        __ n < 1: return []
+        __ n < 1: r.. []
         res = self.helper(1, n)
-        return res
+        r.. res
     
     ___ helper(self, start, end):
         __ start > end:
-            return [None]
-        result = []
-        for mid in range(start, end+1):
+            r.. [N..]
+        result    # list
+        ___ mid __ r..(start, end+1):
             leftNodes = self.helper(start, mid-1)
             rightNodes = self.helper(mid+1, end)
-            for leftNode in leftNodes:
-                for rightNode in rightNodes:
+            ___ leftNode __ leftNodes:
+                ___ rightNode __ rightNodes:
                     root = TreeNode(mid)
                     root.left = leftNode
                     root.right = rightNode
-                    result.append(root)
-        return result
+                    result.a..(root)
+        r.. result
     
     ___ test(self):
         result = self.generateTrees(3)
         print(result)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

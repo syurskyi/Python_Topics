@@ -5,11 +5,11 @@ class Solution(object):
     :rtype: bool
     """
     ak = float("-inf")
-    stack = []
-    for num in reversed(nums):
+    stack    # list
+    ___ num __ reversed(nums):
       __ ak > num:
-        return True
+        r.. True
       while stack and stack[-1] < num:
         ak = stack.pop()
       stack += num,
-    return False
+    r.. False

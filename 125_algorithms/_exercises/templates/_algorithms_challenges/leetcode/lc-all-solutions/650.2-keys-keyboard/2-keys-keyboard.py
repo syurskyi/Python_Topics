@@ -13,22 +13,22 @@ class Solution(object):
     :type n: int
     :rtype: int
     """
-    __ n == 1:
-      return 0
-    for i in range(2, int((n + 1) ** 0.5) + 1):
-      __ n % i == 0:
-        return i + self.minSteps(n / i)
-    return n
+    __ n __ 1:
+      r.. 0
+    ___ i __ r..(2, int((n + 1) ** 0.5) + 1):
+      __ n % i __ 0:
+        r.. i + self.minSteps(n / i)
+    r.. n
 
   ___ minSteps(self, n):
     ___ factor(n):
       d = 2
       while d * d <= n:
-        while n % d == 0:
+        while n % d __ 0:
           n /= d
           yield d
         d += 1
       __ n > 1:
         yield n
 
-    return sum(factor(n))
+    r.. s..(factor(n))

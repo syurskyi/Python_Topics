@@ -1,7 +1,7 @@
 num1  i..(input("Insert number to convert: "))
 base_num  i..(input("Choose the base(2-9): "))
 
-__ not(2< base_num <9):
+__ n..(2< base_num <9):
     quit()
 
 num2  ''

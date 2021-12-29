@@ -16,7 +16,7 @@ Note:
 1 <= k <= len(nums) <= 16.
 0 < nums[i] < 10000.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -24,13 +24,13 @@ class Solution:
         """
         resurive search
         """
-        s = sum(nums)
+        s = s..(nums)
         __ s % k != 0:
-            return False
+            r.. False
 
         target = s // k
-        visited = [False for _ in nums]
-        return self.dfs(nums, 0, None, target, visited, k)
+        visited = [False ___ _ __ nums]
+        r.. self.dfs(nums, 0, N.., target, visited, k)
 
     ___ dfs(self, nums, start_idx, cur_sum, target_sum, visited, k):
         """
@@ -41,25 +41,25 @@ class Solution:
 
         start index to prune
         """
-        __ k == 1:
-            return True
+        __ k __ 1:
+            r.. True
 
-        __ cur_sum and cur_sum == target_sum:
+        __ cur_sum and cur_sum __ target_sum:
             # start index is 0
-            return self.dfs(nums, 0, None, target_sum, visited, k - 1)
+            r.. self.dfs(nums, 0, N.., target_sum, visited, k - 1)
 
-        for i in range(start_idx, len(nums)):
-            __ not visited[i]:
+        ___ i __ r..(start_idx, l..(nums)):
+            __ n.. visited[i]:
                 # corner case target_sum is 0
                 visited[i] = True
-                nxt_sum = (cur_sum or 0) + nums[i]
+                nxt_sum = (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
                 __ self.dfs(nums, i + 1, nxt_sum, target_sum, visited, k):
-                    return True
+                    r.. True
                 visited[i] = False
 
-        return False
+        r.. False
 
 
 class Solution_TLE:
@@ -67,13 +67,13 @@ class Solution_TLE:
         """
         resurive search
         """
-        s = sum(nums)
+        s = s..(nums)
         __ s % k != 0:
-            return False
+            r.. False
 
         target = s // k
-        visited = [False for _ in nums]
-        return self.dfs(nums, None, target, visited, k)
+        visited = [False ___ _ __ nums]
+        r.. self.dfs(nums, N.., target, visited, k)
 
     ___ dfs(self, nums, cur_sum, target_sum, visited, k):
         """
@@ -82,26 +82,26 @@ class Solution_TLE:
         2. nxt_sum = (cur_sum or 0) + nums[i] rather than cur_sum or 0 + nums[i]
            arithmetic operator has higher precedence than logic operator
         """
-        __ k == 0:
-            return True
+        __ k __ 0:
+            r.. True
 
-        __ cur_sum and cur_sum == target_sum:
-            return self.dfs(nums, None, target_sum, visited, k - 1)
+        __ cur_sum and cur_sum __ target_sum:
+            r.. self.dfs(nums, N.., target_sum, visited, k - 1)
 
-        for i in range(len(nums)):
-            __ not visited[i]:
+        ___ i __ r..(l..(nums)):
+            __ n.. visited[i]:
                 # corner case target_sum is 0
                 visited[i] = True
-                nxt_sum = (cur_sum or 0) + nums[i]
+                nxt_sum = (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
                 __ self.dfs(nums, nxt_sum, target_sum, visited, k):
-                    return True
+                    r.. True
                 visited[i] = False
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().canPartitionKSubsets([5, 3, 2, 3, 1, 2, 4], 4) == True
-    assert Solution().canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4) == True
+__ __name__ __ "__main__":
+    ... Solution().canPartitionKSubsets([5, 3, 2, 3, 1, 2, 4], 4) __ True
+    ... Solution().canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4) __ True

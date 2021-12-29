@@ -9,10 +9,10 @@ class Solution:
     # @param num, a list of integers
     # @return a tree node
     ___ sortedArrayToBST(self, num):
-        __ not num:
-            return None
-        else:
-            mid = len(num) / 2
+        __ n.. num:
+            r.. N..
+        ____:
+            mid = l..(num) / 2
             left_array = num[:mid]
             right_array = num[mid + 1:]
             root = TreeNode(num[mid])
@@ -20,4 +20,4 @@ class Solution:
             right_tree = self.sortedArrayToBST(right_array)
             root.left = left_tree
             root.right = right_tree
-            return root
+            r.. root

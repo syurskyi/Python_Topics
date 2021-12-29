@@ -1,10 +1,10 @@
-from datetime import datetime
-from random import choice
-from tempfile import NamedTemporaryFile
+____ datetime _______ datetime
+____ random _______ choice
+____ tempfile _______ NamedTemporaryFile
 
-import pytest
+_______ pytest
 
-from clamy_fernet import PBKDF2HMAC, ByteString, ClamyFernet, Fernet
+____ clamy_fernet _______ PBKDF2HMAC, ByteString, ClamyFernet, Fernet
 
 KEYS = (
     b"rvxePMSDUcZFowEaNxnFb8Pifn1KmhkF70Mz1ZQe2Bw=",
@@ -20,44 +20,44 @@ FILE = TMP_FILE.name
 ___ rcf():
     password = b"#clamybite"
     key = choice(KEYS)
-    return ClamyFernet(password, key)
+    r.. ClamyFernet(password, key)
 
 
 @pytest.fixture(scope="module")
 ___ cf():
-    return ClamyFernet(key=KEYS[0])
+    r.. ClamyFernet(key=KEYS[0])
 
 
 ___ test_clamyfernet_no_args(rcf):
     tmp_cf = ClamyFernet()
-    assert tmp_cf.key is not None
-    assert tmp_cf.password == b"pybites"
+    ... tmp_cf.key __ n.. N..
+    ... tmp_cf.password __ b"pybites"
 
 
 ___ test_clamyfernet_random_key(rcf):
     token = rcf.encrypt("secret msg")
     ts = rcf.clf.extract_timestamp(token)
     dt = datetime.fromtimestamp(ts)
-    assert isinstance(rcf, ClamyFernet)
-    assert isinstance(rcf.clf, Fernet)
-    assert isinstance(rcf.key, ByteString)
-    assert isinstance(rcf.kdf, PBKDF2HMAC)
-    assert dt.year == datetime.now().year
+    ... isi..(rcf, ClamyFernet)
+    ... isi..(rcf.clf, Fernet)
+    ... isi..(rcf.key, ByteString)
+    ... isi..(rcf.kdf, PBKDF2HMAC)
+    ... dt.year __ datetime.now().year
 
 
 ___ test_clamyfernet(cf):
     token = cf.encrypt(MESSAGE)
     og_message = cf.decrypt(token)
-    assert len(token) == 120
-    assert isinstance(token, bytes)
-    assert cf.key == KEYS[0]
-    assert og_message == MESSAGE
+    ... l..(token) __ 120
+    ... isi..(token, bytes)
+    ... cf.key __ KEYS[0]
+    ... og_message __ MESSAGE
 
 
 ___ test_clamyfernet_random(rcf):
     token = rcf.encrypt(MESSAGE)
     og_message = rcf.decrypt(token)
-    assert len(token) == 120
-    assert isinstance(token, bytes)
-    assert rcf.key in KEYS
-    assert og_message == MESSAGE
+    ... l..(token) __ 120
+    ... isi..(token, bytes)
+    ... rcf.key __ KEYS
+    ... og_message __ MESSAGE

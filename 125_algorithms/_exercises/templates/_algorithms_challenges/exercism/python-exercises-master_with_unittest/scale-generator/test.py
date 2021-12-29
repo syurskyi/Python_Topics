@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from scale_generator import Scale
+____ scale_generator _______ Scale
 
 
 class ScaleGeneratorTest(unittest.TestCase):
@@ -120,5 +120,5 @@ class ScaleGeneratorTest(unittest.TestCase):
             Scale('G', 'enigmatic', 'mAMMMmM')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,5 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
+_______ requests
+____ bs4 _______ BeautifulSoup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
@@ -13,22 +13,22 @@ ___ top_python_questions(url=cached_so_url):
    """
    response = requests.get(url)
    soup = BeautifulSoup(response.text, "html.parser")
-   ge_1m = []
-   lt_1m = []
+   ge_1m    # list
+   lt_1m    # list
 
    question_summary = soup.find_all("div", class_="question-summary")
-   for question in question_summary:
+   ___ question __ question_summary:
       views = int(question.find("div", class_="views").get("title").split(" ")[0].replace(",", ""))
       _question = question.find("a", class_="question-hyperlink").get_text()
       votes = int(question.find("span", class_="vote-count-post").get_text())
       
       __ views >= 1000000:
-         ge_1m.append((_question, votes))
-      else:
-         lt_1m.append((_question, votes))
+         ge_1m.a..((_question, votes))
+      ____:
+         lt_1m.a..((_question, votes))
 
-   return sorted(ge_1m, key=lambda x: x[1], reverse=True)
+   r.. s..(ge_1m, key=l.... x: x[1], r.._T..
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    print(top_python_questions())

@@ -1,22 +1,22 @@
-num_ele, ele_type = [int(i) for i in input().split()]
+num_ele, ele_type = [int(i) ___ i __ input().s.. ]
 
 
-ele = []
-unique = []
+ele    # list
+unique    # list
 
-while len(ele) < ele_type:
-    num_count = [int(x) for x in input().split()]
+while l..(ele) < ele_type:
+    num_count = [int(x) ___ x __ input().s.. ]
     num_count.sort()
     #finding out unique elements in the list
-    for x in num_count:
-        __ x not in unique:
-            unique.append(x)
+    ___ x __ num_count:
+        __ x n.. __ unique:
+            unique.a..(x)
             
     #counting the occurence of the element in the list
-    for i in range(len(unique)):
-        count_store = num_count.count(unique[i])
-        ele.append(count_store)
+    ___ i __ r..(l..(unique)):
+        count_store = num_count.c.. unique[i])
+        ele.a..(count_store)
         
         
-for k in ele:
+___ k __ ele:
     print(k,end=(' '))

@@ -5,7 +5,7 @@ class WordDistance(object):
     :type words: List[str]
     """
     self.d = {}
-    for i in range(0, len(words)):
+    ___ i __ r..(0, l..(words)):
       self.d[words[i]] = self.d.get(words[i], []) + [i]
 
   ___ shortest(self, word1, word2):
@@ -19,13 +19,13 @@ class WordDistance(object):
     l2 = self.d[word2]
     i = j = 0
     ans = float("inf")
-    while i < len(l1) and j < len(l2):
-      ans = min(ans, abs(l1[i] - l2[j]))
+    while i < l..(l1) and j < l..(l2):
+      ans = m..(ans, abs(l1[i] - l2[j]))
       __ l1[i] > l2[j]:
         j += 1
-      else:
+      ____:
         i += 1
-    return ans
+    r.. ans
 
 # Your WordDistance object will be instantiated and called as such:
 # wordDistance = WordDistance(words)

@@ -35,9 +35,9 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
-        self.next = None
+        self.left = N..
+        self.right = N..
+        self.next = N..
 
 class Solution:
     ___ connect(self, root):
@@ -46,19 +46,19 @@ class Solution:
         :param root: TreeNode
         :return: nothing
         """
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
 
         q = [root]
         while q:
             current_level = q
-            q = []
-            for ind, val in enumerate(current_level):
-                __ val.left: q.append(val.left)
-                __ val.right: q.append(val.right)
+            q    # list
+            ___ ind, val __ enumerate(current_level):
+                __ val.left: q.a..(val.left)
+                __ val.right: q.a..(val.right)
                 try:
                     val.next = current_level[ind+1]
                 except IndexError:
-                    val.next = None
+                    val.next = N..
 
 

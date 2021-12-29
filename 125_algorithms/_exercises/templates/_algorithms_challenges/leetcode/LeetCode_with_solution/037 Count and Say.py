@@ -17,9 +17,9 @@ class Solution:
         :return: output representation in string
         """
         string = "1"
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             string = self.singleCountAndSay(string)
-        return string
+        r.. string
 
 
     ___ singleCountAndSay(self, num_string):
@@ -31,16 +31,16 @@ class Solution:
         string_builder = ""
 
         i = 0
-        while i<len(num_string):
+        while i<l..(num_string):
             # find next different number
             j = i+1
-            while j<len(num_string) and num_string[j]==num_string[i]:
+            while j<l..(num_string) and num_string[j]__num_string[i]:
                 j += 1
             count = j-i
             string_builder += str(count)+str(num_string[i])
             i = j
 
-        return string_builder
+        r.. string_builder
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().countAndSay(4)

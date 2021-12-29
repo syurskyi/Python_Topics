@@ -1,4 +1,4 @@
-from fasta_to_2line_fasta import fasta_to_2line_fasta, FASTA_FILE
+____ fasta_to_2line_fasta _______ fasta_to_2line_fasta, FASTA_FILE
 
 EXPECTED_RECORDS = 59
 
@@ -10,19 +10,19 @@ ___ test_well_formed_fasta():
 
     CONVERTED_FASTA = f"{FASTA_FILE}-test.fasta"
 
-    assert fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) == EXPECTED_RECORDS
+    ... fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) __ EXPECTED_RECORDS
     with open(FASTA_FILE, "r") as f:
         f.readline()
-        assert (
+        ... (
             f.readline().strip()
-            == "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
+            __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
     with open(CONVERTED_FASTA, "r") as f_conv:
         f_conv.readline()
-        assert (
+        ... (
             f_conv.readline().strip()
-            == "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
+            __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
             "LPISILSARIYYVLFEWAYYKNHLNEIFAIWNGGIAIHGGLIGAIVTTIVFTKKRNISF"
             "WKLADIAAPSLILGQAIGRWGNFMNQEAHGGPVSRTFLESLRLPDIIINQMYINGSYYH"
             "PTFLYESIWNIIGFVTLLILRKGSLKRGEIFLSYLIWYSIGRFFVEGLRTDSLMLTSSL"
@@ -40,19 +40,19 @@ ___ test_malformed_fasta():
     with open(FASTA_FILE, "r") as f_in, open(MALFORMED_FASTA, "w") as f_out:
         f_out.write(f_in.read()[1:])
 
-    assert (
-        fasta_to_2line_fasta(MALFORMED_FASTA, CONVERTED_FASTA) == EXPECTED_RECORDS - 1
+    ... (
+        fasta_to_2line_fasta(MALFORMED_FASTA, CONVERTED_FASTA) __ EXPECTED_RECORDS - 1
     )
 
     with open(CONVERTED_FASTA, "r") as f_conv:
-        assert (
+        ... (
             f_conv.readline().strip()
-            == ">sp|Q74NT6|ARSC1_BACC1 Arsenate reductase 1 OS=Bacillus cereu"
+            __ ">sp|Q74NT6|ARSC1_BACC1 Arsenate reductase 1 OS=Bacillus cereu"
             "s (strain ATCC 10987 / NRS 248) OX=222523 GN=arsC1 PE=3 SV=1"
         )
-        assert (
+        ... (
             f_conv.readline().strip()
-            == "MENKKTIYFLCTGNSCRSQMAEAWGKKYLGDKWNVLSAGIEAHGVNPNAIKAMKEVDIDIT"
+            __ "MENKKTIYFLCTGNSCRSQMAEAWGKKYLGDKWNVLSAGIEAHGVNPNAIKAMKEVDIDIT"
             "DQTSDIIDRDILDKADLVVTLCGHANDVCPTTPPHVKRVHWGFDDPAGQEWSVFQRVRDE"
             "IGARIKKYAETGE"
         )

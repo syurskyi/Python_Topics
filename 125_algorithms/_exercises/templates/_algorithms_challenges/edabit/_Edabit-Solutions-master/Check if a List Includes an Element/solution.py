@@ -1,8 +1,8 @@
 ___ check(lst, el):
-    __ lst.count(el) > 0:
-        return True
-    else:
-        return False
+    __ lst.c.. el) > 0:
+        r.. True
+    ____:
+        r.. False
 
 
 ___ test():

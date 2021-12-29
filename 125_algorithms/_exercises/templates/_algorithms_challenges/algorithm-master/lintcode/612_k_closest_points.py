@@ -5,7 +5,7 @@ class Point:
         self.x = a
         self.y = b
 """
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -19,29 +19,29 @@ class Solution:
         :type k: int
         :rtype: list[Point]
         """
-        ans = []
+        ans    # list
 
-        __ not points or not origin or not k:
-            return ans
+        __ n.. points o. n.. origin o. n.. k:
+            r.. ans
 
-        for i in range(len(points)):
+        ___ i __ r..(l..(points)):
             distance = self.get_distance(origin, points[i])
             heapq.heappush(ans, (-distance, i))
 
-            __ len(ans) > k:
+            __ l..(ans) > k:
                 heapq.heappop(ans)
 
-        ans.sort(key=lambda a: (-a[0], points[a[1]].x, points[a[1]].y))
+        ans.sort(key=l.... a: (-a[0], points[a[1]].x, points[a[1]].y))
 
-        return [points[i] for _, i in ans]
+        r.. [points[i] ___ _, i __ ans]
 
     ___ get_distance(self, p, q):
         dx = p.x - q.x
         dy = p.y - q.y
-        return dx * dx + dy * dy
+        r.. dx * dx + dy * dy
 
 
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -55,26 +55,26 @@ class Solution:
         :type k: int
         :rtype: list[Point]
         """
-        ans = []
+        ans    # list
 
-        __ not points or not origin or not k:
-            return ans
+        __ n.. points o. n.. origin o. n.. k:
+            r.. ans
 
-        heap = []
+        heap    # list
 
-        for i in range(len(points)):
+        ___ i __ r..(l..(points)):
             distance = self.get_distance(origin, points[i])
             heapq.heappush(heap, (distance, i))
 
-        for _ in range(k):
+        ___ _ __ r..(k):
             distance, i = heapq.heappop(heap)
-            ans.append((distance, points[i]))
+            ans.a..((distance, points[i]))
 
-        ans.sort(key=lambda a: (a[0], a[1].x, a[1].y))
+        ans.sort(key=l.... a: (a[0], a[1].x, a[1].y))
 
-        return [p for _, p in ans]
+        r.. [p ___ _, p __ ans]
 
     ___ get_distance(self, p, q):
         dx = p.x - q.x
         dy = p.y - q.y
-        return dx * dx + dy * dy
+        r.. dx * dx + dy * dy

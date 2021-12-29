@@ -13,13 +13,13 @@ class Solution(object):
         :rtype: List[int]
         """
         digits = digits[::-1]
-        n = len(digits)
+        n = l..(digits)
         temp = 0
         # Treat "plus one" as the initial carry being 1
         carry = 1
         i = 0
-        res = []
-        while i < n or carry > 0:
+        res    # list
+        while i < n o. carry > 0:
             temp = 0
             __ i < n:
                 temp += digits[i]
@@ -27,11 +27,11 @@ class Solution(object):
                 temp += carry
             digit = temp % 10
             carry = temp / 10
-            res.append(digit)
+            res.a..(digit)
             i += 1
-        return res[::-1]
+        r.. res[::-1]
 
-a0 = []
+a0    # list
 a1 = [3, 3, 5]
 a2 = [4, 9, 9]
 a3 = [9, 9, 9]

@@ -5,19 +5,19 @@ class Solution:
         :type k: int
         :rtype: List[int]
         """
-        ans = []
-        __ not A:
-            return ans
+        ans    # list
+        __ n.. A:
+            r.. ans
 
         F = {}
-        for a in A:
+        ___ a __ A:
             F[a] = F.get(a, 0) + 1
 
-        for a, _ in sorted(F.items(), key=lambda x: -x[1]):
-            __ k == 0:
+        ___ a, _ __ s..(F.items(), key=l.... x: -x[1]):
+            __ k __ 0:
                 break
 
-            ans.append(a)
+            ans.a..(a)
             k -= 1
 
-        return ans
+        r.. ans

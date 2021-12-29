@@ -1,16 +1,16 @@
-import random
+_______ random
 
 x  []
-for i in range(10):
-    x.append(i..(random.random()*1000))
+___ i __ r..(10):
+    x.a..(i..(random.random()*1000))
 print(x)
 
 even  odd 0
 
-for i in x:
+___ i __ x:
     __ i%2 __ 0:
         even + 1
-    else:
+    ____:
         odd + 1
 print("The number of even = ", even)
 print("The number of odd = ", odd)

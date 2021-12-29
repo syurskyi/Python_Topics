@@ -17,16 +17,16 @@ class RLEIterator(object):
         :rtype: int
         """
         val = -1
-        for _ in range(n):
-            while self.countIdx < len(self.arr) and \
-                    self.arr[self.countIdx] == 0:
+        ___ _ __ r..(n):
+            while self.countIdx < l..(self.arr) and \
+                    self.arr[self.countIdx] __ 0:
                 self.countIdx += 2
                 self.numIdx += 2
-            __ self.countIdx >= len(self.arr):
-                return -1
+            __ self.countIdx >= l..(self.arr):
+                r.. -1
             val = self.arr[self.numIdx]
             self.arr[self.countIdx] -= 1
-        return val
+        r.. val
 
 
 # Your RLEIterator object will be instantiated and called as such:

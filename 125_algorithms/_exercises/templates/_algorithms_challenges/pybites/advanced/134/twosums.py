@@ -3,19 +3,19 @@ ___ bs(numbers,value):
 
 
 
-    low,high = 0,len(numbers) - 1
+    low,high = 0,l..(numbers) - 1
 
 
     while low <= high:
         mid = (low + high)//2
 
-        __ numbers[mid] == value:
-            return mid
+        __ numbers[mid] __ value:
+            r.. mid
 
 
         __ value < numbers[mid]:
             high = mid - 1
-        else:
+        ____:
             low = mid + 1
 
 
@@ -38,21 +38,21 @@ ___ two_sums(numbers, target):
     mapping = {}
 
     
-    result = None
-    for i,number in enumerate(numbers):
+    result = N..
+    ___ i,number __ enumerate(numbers):
         value = target - number
-        __ value < number and  value in mapping:
+        __ value < number and  value __ mapping:
             index_1 = mapping[value]
-            __ not result or value < numbers[result[0]]:
+            __ n.. result o. value < numbers[result[0]]:
                 result = (index_1,i)
         
 
-        __ number not in mapping:
+        __ number n.. __ mapping:
             mapping[number] = i
 
 
 
-    return result
+    r.. result
 
 
 

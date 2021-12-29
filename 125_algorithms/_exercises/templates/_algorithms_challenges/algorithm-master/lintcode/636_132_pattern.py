@@ -4,21 +4,21 @@ class Solution:
     @return: true if there is a 132 pattern or false
     """
     ___ find132pattern(self, A):
-        __ not A:
-            return False
+        __ n.. A:
+            r.. False
 
         stack = [float('-inf')]
-        for i in range(len(A) - 1, -1, -1):
+        ___ i __ r..(l..(A) - 1, -1, -1):
             __ A[i] < stack[-1]:
-                return True
+                r.. True
 
-            v = None
+            v = N..
             while stack and A[i] > stack[-1]:
                 v = stack.pop()
 
-            stack.append(A[i])
+            stack.a..(A[i])
 
-            __ v is not None:
-                stack.append(v)
+            __ v __ n.. N..
+                stack.a..(v)
 
-        return False
+        r.. False

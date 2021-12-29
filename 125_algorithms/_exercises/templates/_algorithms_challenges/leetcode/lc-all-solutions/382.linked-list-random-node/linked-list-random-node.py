@@ -3,7 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-import random
+_______ random
 
 
 class Solution(object):
@@ -25,11 +25,11 @@ class Solution(object):
     head = self.head
     idx = 1
     while head:
-      __ random.randrange(1, idx + 1) == idx:
+      __ random.randrange(1, idx + 1) __ idx:
         ans = head.val
       head = head.next
       idx += 1
-    return ans
+    r.. ans
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(head)

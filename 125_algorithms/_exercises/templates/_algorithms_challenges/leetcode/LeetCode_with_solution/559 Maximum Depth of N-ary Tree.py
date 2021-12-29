@@ -25,12 +25,12 @@ class Node:
 
 class Solution:
     ___ maxDepth(self, root: "Node") -> int:
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
         max_child_depth = max([
             self.maxDepth(child)
-            for child in root.children
-        ] or [0])
+            ___ child __ root.children
+        ] o. [0])
         
-        return max_child_depth + 1
+        r.. max_child_depth + 1

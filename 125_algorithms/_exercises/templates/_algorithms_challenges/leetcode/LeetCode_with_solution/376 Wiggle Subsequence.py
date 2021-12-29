@@ -39,15 +39,15 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        __ not A: return 0
-        N = len(A)
-        H = [1 for _ in xrange(N)]
-        L = [1 for _ in xrange(N)]
-        for i in xrange(1, N):
-            L[i] = H[i-1] + 1 __ A[i] < A[i-1] else L[i-1]
-            H[i] = L[i-1] + 1 __ A[i] > A[i-1] else H[i-1]
+        __ n.. A: r.. 0
+        N = l..(A)
+        H = [1 ___ _ __ xrange(N)]
+        L = [1 ___ _ __ xrange(N)]
+        ___ i __ xrange(1, N):
+            L[i] = H[i-1] + 1 __ A[i] < A[i-1] ____ L[i-1]
+            H[i] = L[i-1] + 1 __ A[i] > A[i-1] ____ H[i-1]
 
-        return max(H[N-1], L[N-1])
+        r.. max(H[N-1], L[N-1])
 
     ___ wiggleMaxLengthSuboptimal(self, A):
         """
@@ -57,19 +57,19 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        __ not A: return 0
+        __ n.. A: r.. 0
 
-        N = len(A)
-        H = [1 for _ in xrange(N)]
-        L = [1 for _ in xrange(N)]
+        N = l..(A)
+        H = [1 ___ _ __ xrange(N)]
+        L = [1 ___ _ __ xrange(N)]
         gmax = 1
-        for i in xrange(1, N):
-            for j in xrange(i):
+        ___ i __ xrange(1, N):
+            ___ j __ xrange(i):
                 __ A[i] > A[j]:
                     H[i] = max(H[i], L[j] + 1)
-                elif A[i] < A[j]:
+                ____ A[i] < A[j]:
                     L[i] = max(L[i], H[j] + 1)
 
                 gmax = max(gmax, H[i], L[i])
 
-        return gmax
+        r.. gmax

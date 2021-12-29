@@ -14,15 +14,15 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        __ num == 0:
-            return False
+        __ num __ 0:
+            r.. False
         factors = [2, 3, 5]
-        for factor in factors:
-            while num % factor == 0:
+        ___ factor __ factors:
+            while num % factor __ 0:
                 num /= factor
-        __ num == 1:
-            return True
-        return False
+        __ num __ 1:
+            r.. True
+        r.. False
 
 
 s = Solution()

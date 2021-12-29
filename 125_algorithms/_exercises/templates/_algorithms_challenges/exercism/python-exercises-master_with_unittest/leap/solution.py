@@ -1,2 +1,2 @@
 ___ is_leap_year(year):
-    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+    r.. year % 4 __ 0 and (year % 100 != 0 o. year % 400 __ 0)

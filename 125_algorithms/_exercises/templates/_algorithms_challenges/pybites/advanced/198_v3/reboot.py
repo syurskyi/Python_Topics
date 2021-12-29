@@ -1,4 +1,4 @@
-from datetime import date, datetime
+____ datetime _______ date, datetime
 
 MAC1 = """
 reboot    ~                         Wed Apr 10 22:39
@@ -17,10 +17,10 @@ ___ extract_date(reboots):
         'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12,
     }
     lines = reboots.splitlines(keepends=False)
-    for line in lines:
-        __ len(line.strip()) == 0:
+    ___ line __ lines:
+        __ l..(line.strip()) __ 0:
             continue
-        line_parts = line.strip().split()
+        line_parts = line.strip().s..
         time_part = line_parts[-1].split(':')
         yield datetime(year=2019,
                        month=months[line_parts[-3]],
@@ -42,12 +42,12 @@ ___ calc_max_uptime(reboots):
        For the output above it would be (30, '2019-02-17'),
        but we use different outputs in the tests as well ...
     """
-    previous = None
-    records = []
-    for this_date in extract_date(reboots):
-        __ previous is None:
+    previous = N..
+    records    # list
+    ___ this_date __ extract_date(reboots):
+        __ previous __ N..
             previous = this_date
             continue
-        records.append(((previous - this_date).days, str(previous.date())))
+        records.a..(((previous - this_date).days, str(previous.date())))
         previous = this_date
-    return sorted(records)[-1]
+    r.. s..(records)[-1]

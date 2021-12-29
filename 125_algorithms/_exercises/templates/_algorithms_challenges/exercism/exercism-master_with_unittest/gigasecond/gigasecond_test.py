@@ -1,7 +1,7 @@
-from datetime import date
-import unittest
+____ datetime _______ date
+_______ unittest
 
-from gigasecond import add_gigasecond
+____ gigasecond _______ add_gigasecond
 
 
 class GigasecondTest(unittest.TestCase):
@@ -34,5 +34,5 @@ class GigasecondTest(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from workouts import print_workout_days
+____ workouts _______ print_workout_days
 
 @pytest.mark.parametrize("arg, expected", [
     ('#', 'Mon, Tue, Thu, Fri\n'), 
@@ -17,4 +17,4 @@ from workouts import print_workout_days
 ___ test_print_workout_days(capfd, arg, expected):
     print_workout_days(arg)
     output = capfd.readouterr()[0]
-    assert output == expected
+    ... output __ expected

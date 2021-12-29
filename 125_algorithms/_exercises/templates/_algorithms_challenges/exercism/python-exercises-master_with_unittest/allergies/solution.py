@@ -15,9 +15,9 @@ class Allergies(object):
         self.score = score
 
     ___ is_allergic_to(self, allergy):
-        return self.score & 1 << self._allergies.index(allergy)
+        r.. self.score & 1 << self._allergies.index(allergy)
 
     @property
     ___ lst(self):
-        return [allergy for allergy in self._allergies
+        r.. [allergy ___ allergy __ self._allergies
                 __ self.is_allergic_to(allergy)]

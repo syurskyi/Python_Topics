@@ -1,5 +1,5 @@
-from datetime import date
-from typing import Dict, Sequence, NamedTuple
+____ datetime _______ date
+____ typing _______ Dict, Sequence, NamedTuple
 
 
 class MovieRented(NamedTuple):
@@ -29,23 +29,23 @@ ___ rent_or_stream(
        Check out the tests for examples.
     """
     movie_history = {}
-    for movie in renting_history:
+    ___ movie __ renting_history:
         movie_date = movie.date.strftime("%Y-%m")
-        __ movie_date not in movie_history:
+        __ movie_date n.. __ movie_history:
             movie_history[movie_date] = [movie.price]
-        else:
-            movie_history[movie_date].append(movie.price)
+        ____:
+            movie_history[movie_date].a..(movie.price)
 
-    for key, value in movie_history.items():
-        __ sum(value) <= streaming_cost_per_month:
+    ___ key, value __ movie_history.items():
+        __ s..(value) <= streaming_cost_per_month:
             movie_history[key] = "rent"
-        else:
+        ____:
             movie_history[key] = "stream"
 
-    return movie_history
+    r.. movie_history
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     rent_or_stream([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17)),
      MovieRented('Die Hard', 4, date(2020, 12, 3)),
      MovieRented('Wonder Woman', 4, date(2020, 12, 28))])

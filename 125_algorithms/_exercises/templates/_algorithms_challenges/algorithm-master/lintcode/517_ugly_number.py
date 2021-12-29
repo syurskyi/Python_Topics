@@ -4,19 +4,19 @@ class Solution:
         :type num: int
         :rtype: bool
         """
-        __ not num:
-            return False
-        __ num == 1:
-            return True
+        __ n.. num:
+            r.. False
+        __ num __ 1:
+            r.. True
 
-        for factor in (
+        ___ factor __ (
             125, 27, 8,
             5, 3, 2,
         ):
-            while num % factor == 0:
+            while num % factor __ 0:
                 num //= factor
 
-            __ num == 1:
-                return True
+            __ num __ 1:
+                r.. True
 
-        return num == 1
+        r.. num __ 1

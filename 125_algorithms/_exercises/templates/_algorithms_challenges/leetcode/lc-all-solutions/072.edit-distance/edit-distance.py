@@ -5,25 +5,25 @@ class Solution(object):
     :type word2: str
     :rtype: int
     """
-    __ len(word1) == 0 or len(word2) == 0:
-      return max(len(word1), len(word2))
+    __ l..(word1) __ 0 o. l..(word2) __ 0:
+      r.. max(l..(word1), l..(word2))
 
-    dp = [[0] * (len(word2) + 1) for _ in range(0, len(word1) + 1)]
+    dp = [[0] * (l..(word2) + 1) ___ _ __ r..(0, l..(word1) + 1)]
     dp[0][0] = 0
 
-    for i in range(0, len(word1) + 1):
-      for j in range(0, len(word2) + 1):
-        __ i == 0:
+    ___ i __ r..(0, l..(word1) + 1):
+      ___ j __ r..(0, l..(word2) + 1):
+        __ i __ 0:
           dp[i][j] = j
-        elif j == 0:
+        ____ j __ 0:
           dp[i][j] = i
-        else:
+        ____:
           cond1 = dp[i][j - 1] + 1
           cond2 = dp[i - 1][j] + 1
           cond3 = 0
-          __ word1[i - 1] == word2[j - 1]:
+          __ word1[i - 1] __ word2[j - 1]:
             cond3 = dp[i - 1][j - 1]
-          else:
+          ____:
             cond3 = dp[i - 1][j - 1] + 1
-          dp[i][j] = min(cond1, cond2, cond3)
-    return dp[-1][-1]
+          dp[i][j] = m..(cond1, cond2, cond3)
+    r.. dp[-1][-1]

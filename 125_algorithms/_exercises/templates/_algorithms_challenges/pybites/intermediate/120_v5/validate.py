@@ -1,14 +1,14 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ int_args(func):
     @wraps(func)
     ___ wrapper(*args, **kwargs):
-        for a in args:
-            __ not isinstance(a, int):
+        ___ a __ args:
+            __ n.. isi..(a, int):
                 raise TypeError()
             __ a < 0:
                 raise ValueError()
-        return func(*args, **kwargs)
+        r.. func(*args, **kwargs)
 
-    return wrapper
+    r.. wrapper

@@ -3,13 +3,13 @@
 
 
 ___ secondLowestGrade(classList):
-    secondLowestScore = sorted(set(_[1] for _ in classList))[1]
-    result = sorted([_[0] for _ in classList __ _[1] == secondLowestScore])
-    return result
+    secondLowestScore = s..(set(_[1] ___ _ __ classList))[1]
+    result = s..([_[0] ___ _ __ classList __ _[1] __ secondLowestScore])
+    r.. result
 
 
 numberOfStudents = int(input())
-classList = []
-for i in range(numberOfStudents):
-    classList.append([str(input()), float(input())])
+classList    # list
+___ i __ r..(numberOfStudents):
+    classList.a..([str(input()), float(input())])
 print('\n'.join(secondLowestGrade(classList)))

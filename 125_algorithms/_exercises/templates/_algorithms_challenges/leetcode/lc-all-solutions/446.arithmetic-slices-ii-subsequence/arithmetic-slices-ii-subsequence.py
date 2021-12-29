@@ -5,12 +5,12 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    dp = [collections.defaultdict(int) for _ in A]
-    for i in range(len(A)):
-      for j in range(i):
+    dp = [collections.defaultdict(int) ___ _ __ A]
+    ___ i __ r..(l..(A)):
+      ___ j __ r..(i):
         diff = A[i] - A[j]
         dp[i][diff] += 1
-        __ diff in dp[j]:
+        __ diff __ dp[j]:
           dp[i][diff] += dp[j][diff]
           ans += dp[j][diff]
-    return ans
+    r.. ans

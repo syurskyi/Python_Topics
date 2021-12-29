@@ -6,10 +6,10 @@ class Solution(object):
     :type n: int
     :rtype: int
     """
-    dp = [[0] * (n + 1) for _ in range(0, m + 1)]
-    for dj, dk in [(s.count("0"), s.count("1")) for s in strs]:
-      for j in reversed(range(0, m + 1)):
-        for k in reversed(range(0, n + 1)):
+    dp = [[0] * (n + 1) ___ _ __ r..(0, m + 1)]
+    ___ dj, dk __ [(s.c.. "0"), s.c.. "1")) ___ s __ strs]:
+      ___ j __ reversed(r..(0, m + 1)):
+        ___ k __ reversed(r..(0, n + 1)):
           __ j - dj >= 0 and k - dk >= 0:
             dp[j][k] = max(dp[j][k], dp[j - dj][k - dk] + 1)
-    return dp[-1][-1]
+    r.. dp[-1][-1]

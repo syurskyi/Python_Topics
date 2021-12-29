@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from freq import freq_digit
+____ freq _______ freq_digit
 
 
 @pytest.mark.parametrize("data, expected", [
@@ -9,4 +9,4 @@ from freq import freq_digit
     (748791789189717891789, 7)
 ])
 ___ test_freq_digit(data, expected):
-    assert freq_digit(data) == expected
+    ... freq_digit(data) __ expected

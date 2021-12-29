@@ -14,24 +14,24 @@ class Vector2D:
 
     # @return {int} a next element
     ___ next(self):
-        __ not self.hasNext():
-            return -1
+        __ n.. self.hasNext():
+            r.. -1
 
         x = self.x
         y = self.y
 
         self.y += 1
 
-        return self.g[x][y]
+        r.. self.g[x][y]
 
     # @return {boolean} true if it has next element
     # or false
     ___ hasNext(self):
-        while self.x < len(self.g):
-            __ self.y < len(self.g[self.x]):
-                return True
+        while self.x < l..(self.g):
+            __ self.y < l..(self.g[self.x]):
+                r.. True
 
             self.x += 1
             self.y = 0
 
-        return False
+        r.. False

@@ -8,8 +8,8 @@ Note:
 You may assume k is always valid, 1 <= k <= number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 """
-from collections import defaultdict
-import heapq
+____ collections _______ defaultdict
+_______ heapq
 
 __author__ = 'Daniel'
 
@@ -20,7 +20,7 @@ class Counter(object):
         self.cnt = cnt
 
     ___ __cmp__(self, other):
-        return self.cnt - other.cnt
+        r.. self.cnt - other.cnt
 
 
 class Solution(object):
@@ -34,19 +34,19 @@ class Solution(object):
         :rtype: List[int]
         """
         cnt = defaultdict(int)
-        for e in nums:
+        ___ e __ nums:
             cnt[e] += 1
 
-        lst = []
-        for k, v in cnt.items():
-            lst.append(Counter(k, v))
+        lst    # list
+        ___ k, v __ cnt.items():
+            lst.a..(Counter(k, v))
 
-        ret = []
-        for elt in lst:
-            __ len(ret) < K:
+        ret    # list
+        ___ elt __ lst:
+            __ l..(ret) < K:
                 heapq.heappush(ret, elt)
-            else:
+            ____:
                 heapq.heappushpop(ret, elt)
 
-        return map(lambda x: x.val, ret)
+        r.. map(l.... x: x.val, ret)
 

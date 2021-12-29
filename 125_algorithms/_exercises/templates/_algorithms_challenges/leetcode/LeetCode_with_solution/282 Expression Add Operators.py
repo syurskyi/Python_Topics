@@ -25,27 +25,27 @@ class Solution(object):
         :type target: int
         :rtype: List[str]
         """
-        ret = []
+        ret    # list
         self.dfs(num, target, 0, "", 0, 0, ret)
-        return ret
+        r.. ret
 
     ___ dfs(self, num, target, pos, cur_str, cur_val, mul, ret):
-        __ pos >= len(num):
-            __ cur_val == target:
-                ret.append(cur_str)
-        else:
-            for i in xrange(pos, len(num)):
-                __ i != pos and num[pos] == "0":
+        __ pos >= l..(num):
+            __ cur_val __ target:
+                ret.a..(cur_str)
+        ____:
+            ___ i __ xrange(pos, l..(num)):
+                __ i != pos and num[pos] __ "0":
                     continue
                 nxt_val = int(num[pos:i+1])
 
-                __ not cur_str:
+                __ n.. cur_str:
                     self.dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)
-                else:
+                ____:
                     self.dfs(num, target, i+1, cur_str+"+%d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
                     self.dfs(num, target, i+1, cur_str+"-%d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
                     self.dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().addOperators("232", 8) == ["2+3*2", "2*3+2"]
+__ __name__ __ "__main__":
+    ... Solution().addOperators("232", 8) __ ["2+3*2", "2*3+2"]

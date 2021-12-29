@@ -1,10 +1,10 @@
-import os
+_______ os
 
 os.mkdir('documents')
 
-dirnames  [f'{str(i).zfill(2)}_sales' for i in range(1, 13)]
-for dirname in dirnames:
+dirnames  [f'{str(i).zfill(2)}_sales' ___ i __ r..(1, 13)]
+___ dirname __ dirnames:
     path  os.path.join('documents', dirname)
     os.mkdir(path)
 
-print(sorted(os.listdir('documents')))
+print(s..(os.listdir('documents')))

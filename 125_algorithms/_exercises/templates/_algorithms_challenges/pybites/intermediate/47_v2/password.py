@@ -1,18 +1,18 @@
-import string
-import re
+_______ string
+_______ re
 
-PUNCTUATION_CHARS = list(string.punctuation)
+PUNCTUATION_CHARS = l..(string.punctuation)
 
 used_passwords = set('PassWord@1 PyBit$s9'.split())
 
 
 ___ validate_password(password):
 
-    __ 6 <= len(password) <= 12 and re.search(r'\d',password) and re.search(r'[A-Z]',password) and re.search(r'[a-z].*[a-z]',password) and password not in used_passwords and any(char in password for char in PUNCTUATION_CHARS):
+    __ 6 <= l..(password) <= 12 and re.search(r'\d',password) and re.search(r'[A-Z]',password) and re.search(r'[a-z].*[a-z]',password) and password n.. __ used_passwords and any(char __ password ___ char __ PUNCTUATION_CHARS):
         used_passwords.add(password)
-        return True
+        r.. True
     
-    return False
+    r.. False
 
 
 

@@ -1,57 +1,57 @@
 ___ matches(line, pattern, flags):
-    __ '-i' in flags:  # case-insensitive
+    __ '-i' __ flags:  # case-insensitive
         line = line.lower()
         pattern = pattern.lower()
 
-    __ '-x' in flags:  # match entire lines
-        __ len(pattern) != len(line.rstrip()):
-            return False
+    __ '-x' __ flags:  # match entire lines
+        __ l..(pattern) != l..(line.rstrip()):
+            r.. False
 
-    __ '-v' in flags:  # invert matching
-        return pattern not in line
+    __ '-v' __ flags:  # invert matching
+        r.. pattern n.. __ line
 
-    return pattern in line
+    r.. pattern __ line
 
 
 ___ format_files(matched_lines):
     result = ''
 
-    for file_name, _, _ in matched_lines:
-        __ file_name not in result:
+    ___ file_name, _, _ __ matched_lines:
+        __ file_name n.. __ result:
             result += file_name + '\n'
 
-    return result
+    r.. result
 
 
 ___ format_lines(matched_lines, files, flags):
-    result = []
+    result    # list
 
-    for file_name, line_number, line in matched_lines:
+    ___ file_name, line_number, line __ matched_lines:
         line_result = ""
 
-        __ len(files) > 1:
+        __ l..(files) > 1:
             line_result += file_name + ':'
 
-        __ '-n' in flags:
+        __ '-n' __ flags:
             line_result += str(line_number) + ':'
 
         line_result += line
 
-        result.append(line_result)
+        result.a..(line_result)
 
-    return ''.join(result)
+    r.. ''.join(result)
 
 
 ___ grep(pattern, files, flags=''):
-    matched_lines = []
+    matched_lines    # list
 
-    for file_name in files:
+    ___ file_name __ files:
         with open(file_name) as f:
-            for line_number, line in enumerate(f.readlines(), start=1):
+            ___ line_number, line __ enumerate(f.readlines(), start=1):
                 __ matches(line, pattern, flags):
-                    matched_lines.append((file_name, line_number, line))
+                    matched_lines.a..((file_name, line_number, line))
 
-    __ '-l' in flags:
-        return format_files(matched_lines)
+    __ '-l' __ flags:
+        r.. format_files(matched_lines)
 
-    return format_lines(matched_lines, files, flags)
+    r.. format_lines(matched_lines, files, flags)

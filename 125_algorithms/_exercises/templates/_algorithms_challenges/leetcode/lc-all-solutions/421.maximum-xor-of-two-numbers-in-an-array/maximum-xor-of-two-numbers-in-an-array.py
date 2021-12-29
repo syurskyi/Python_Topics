@@ -1,9 +1,9 @@
 class TrieNode(object):
   ___ __init__(self, bit_ N..
     self.isWord = False
-    self.word = None
-    self.one = None
-    self.zero = None
+    self.word = N..
+    self.one = N..
+    self.zero = N..
 
 
 count = 0
@@ -17,47 +17,47 @@ class Solution(object):
     """
 
     ___ dfs(root, num, mask):
-      __ not root:
-        return
-      __ mask == 0x00:
+      __ n.. root:
+        r..
+      __ mask __ 0x00:
         self.ans = max(self.ans, root.word ^ num)
-        return
+        r..
       __ mask & num:
         __ root.zero:
           dfs(root.zero, num, mask >> 1)
-        else:
+        ____:
           dfs(root.one, num, mask >> 1)
-      else:
+      ____:
         __ root.one:
           dfs(root.one, num, mask >> 1)
-        else:
+        ____:
           dfs(root.zero, num, mask >> 1)
 
-    __ len(nums) < 2:
-      return 0
+    __ l..(nums) < 2:
+      r.. 0
     root = TrieNode()
     self.ans = float("-inf")
-    for num in nums:
+    ___ num __ nums:
       mask = 0x80000000
       p = root
-      for i in range(0, 32):
-        node = None
+      ___ i __ r..(0, 32):
+        node = N..
         __ num & mask:
-          __ not p.one:
+          __ n.. p.one:
             node = TrieNode()
             p.one = node
-          else:
+          ____:
             node = p.one
-        else:
-          __ not p.zero:
+        ____:
+          __ n.. p.zero:
             node = TrieNode()
             p.zero = node
-          else:
+          ____:
             node = p.zero
         p = node
         mask = mask >> 1
       p.isWord = True
       p.word = num
-    for num in nums:
+    ___ num __ nums:
       dfs(root, num, 0x80000000)
-    return self.ans
+    r.. self.ans

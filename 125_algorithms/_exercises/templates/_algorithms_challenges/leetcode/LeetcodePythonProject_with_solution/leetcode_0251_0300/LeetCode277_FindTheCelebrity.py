@@ -8,8 +8,8 @@ Created on May 12, 2018
 # @param b, person b
 # @return a boolean, whether a knows b
 ___ knows(a, b):
-    import random
-    return random(0, 1) == 0
+    _______ random
+    r.. random(0, 1) __ 0
 
 class Solution(object):
     ___ findCelebrity(self, n):
@@ -21,11 +21,11 @@ class Solution(object):
         while l < r:
             __ knows(l, r):
                 l += 1
-            else:
+            ____:
                 r -= 1
-        for i in range(n):
-            __ i == l or (knows(i, l) and not knows(l, i)):
+        ___ i __ r..(n):
+            __ i __ l o. (knows(i, l) and n.. knows(l, i)):
                 continue
-            else:
-                return -1
-        return l
+            ____:
+                r.. -1
+        r.. l

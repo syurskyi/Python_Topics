@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+____ heapq _______ heappop, heappush
 
 
 class Solution:
@@ -8,11 +8,11 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        heap = []
+        heap    # list
 
-        for a in A:
+        ___ a __ A:
             heappush(heap, a)
-            __ len(heap) > k:
+            __ l..(heap) > k:
                 heappop(heap)
 
-        return heappop(heap)
+        r.. heappop(heap)

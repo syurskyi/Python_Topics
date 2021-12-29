@@ -7,7 +7,7 @@ Created on Apr 20, 2017
 class Solution(object):
     ___ minMoves(self, nums):
         res = 0
-        minVal = min(nums)
-        for num in nums:
+        minVal = m..(nums)
+        ___ num __ nums:
             res += num - minVal
-        return res
+        r.. res

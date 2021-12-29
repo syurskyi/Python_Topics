@@ -1,6 +1,6 @@
-import sys
-import json
-from csv import DictReader
+_______ sys
+_______ json
+____ csv _______ DictReader
 
 members = """
 id,first_name,last_name,email
@@ -21,5 +21,5 @@ ___ convert_to_json(members=members):
     members = members.replace('|', ',').replace(';', ',').splitlines()
     members.pop(0)
     print(f'{members=}', file=sys.stderr, flush=True)
-    members_dict = list(DictReader(members))
-    return json.dumps(members_dict)
+    members_dict = l..(DictReader(members))
+    r.. json.dumps(members_dict)

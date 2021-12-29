@@ -1,4 +1,4 @@
-from grid import print_sequence_route
+____ grid _______ print_sequence_route
 
 small_grid = """
 21 - 22 - 23 - 24 - 25
@@ -27,8 +27,8 @@ ___ test_print_sequence_route_small_grid(capfd):
     print_sequence_route(small_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output):
-        assert i.strip() == j.strip()
+    ___ i, j __ zip(expected, output):
+        ... i.strip() __ j.strip()
 
 
 intermediate_grid = """
@@ -66,8 +66,8 @@ ___ test_print_sequence_route_intermediate_grid(capfd):
     print_sequence_route(intermediate_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output):
-        assert i.strip() == j.strip()
+    ___ i, j __ zip(expected, output):
+        ... i.strip() __ j.strip()
 
 
 big_grid = """
@@ -113,5 +113,5 @@ ___ test_print_sequence_route_big_grid(capfd):
     print_sequence_route(big_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output):
-        assert i.strip() == j.strip()
+    ___ i, j __ zip(expected, output):
+        ... i.strip() __ j.strip()

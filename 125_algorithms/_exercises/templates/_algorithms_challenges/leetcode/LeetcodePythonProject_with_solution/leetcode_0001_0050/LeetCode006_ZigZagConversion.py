@@ -10,13 +10,13 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        __ not s or len(s) <= 1 or numRows == 1:
-            return s
+        __ n.. s o. l..(s) <= 1 o. numRows __ 1:
+            r.. s
         step = 2*numRows-2
         res = ''
-        for i in range(numRows):
-            for j in range(i, len(s), step):
+        ___ i __ r..(numRows):
+            ___ j __ r..(i, l..(s), step):
                 res += s[j]
-                __ i != 0 and i != numRows-1 and j+step-2*i < len(s):
+                __ i != 0 and i != numRows-1 and j+step-2*i < l..(s):
                     res += s[j+step-2*i]
-        return res
+        r.. res

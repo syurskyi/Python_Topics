@@ -10,23 +10,23 @@ class Solution(object):
         :rtype: int
         """
         count = [0]*10001
-        for num in nums:
+        ___ num __ nums:
             count[num] += num
         dp = [0]*10003
-        for i in range(10000, -1, -1):
+        ___ i __ r..(10000, -1, -1):
             dp[i] = max(count[i]+dp[i+2], dp[i+1])
-        return dp[0]
+        r.. dp[0]
     
     ___ test(self):
         testCases = [
             [3, 4, 2],
             [2, 2, 3, 3, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.deleteAndEarn(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -11,27 +11,27 @@ class Solution(object):
         :rtype: bool
         """
         absent = False
-        for i, c in enumerate(s):
-            __ c == 'A':
-                __ not absent:
+        ___ i, c __ enumerate(s):
+            __ c __ 'A':
+                __ n.. absent:
                     absent = True
-                else:
-                    return False
-            elif c == 'L':
-                __ i > 1 and s[i-1] == 'L' and s[i-2] == 'L':
-                    return False
-        return True
+                ____:
+                    r.. False
+            ____ c __ 'L':
+                __ i > 1 and s[i-1] __ 'L' and s[i-2] __ 'L':
+                    r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
             'PPALLP',
             'PPALLL',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.checkRecord(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

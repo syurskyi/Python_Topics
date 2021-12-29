@@ -1,4 +1,4 @@
-from datetime import datetime
+____ datetime _______ datetime
 
 NOW = datetime.now()
 
@@ -10,4 +10,4 @@ class Promo:
 
     @property
     ___ expired(self):
-        return self._expiry < NOW
+        r.. self._expiry < NOW

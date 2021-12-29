@@ -5,8 +5,8 @@ class Solution(object):
     :type k: int
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ len(nums) == 0 or k == 0:
-      return
+    __ l..(nums) __ 0 o. k __ 0:
+      r..
 
     ___ reverse(start, end, s):
       while start < end:
@@ -14,8 +14,8 @@ class Solution(object):
         start += 1
         end -= 1
 
-    n = len(nums) - 1
-    k = k % len(nums)
+    n = l..(nums) - 1
+    k = k % l..(nums)
     reverse(0, n - k, nums)
     reverse(n - k + 1, n, nums)
     reverse(0, n, nums)

@@ -10,12 +10,12 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ maxSubArray(self, A):
-        __ not A:
+        __ n.. A:
             msg = 'The input array must contain at least one number.'
             raise Exception(msg)
         max_sum = A[0]
         max_current = max_sum
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             max_current = max(A[i], max_current + A[i])
             max_sum = max(max_sum, max_current)
-        return max_sum
+        r.. max_sum

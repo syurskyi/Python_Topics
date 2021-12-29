@@ -15,20 +15,20 @@ NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
 
 ___ dedup_and_title_case_names(names):
     """Should return a list of names, each name appears only once"""
-    new_list = []
-    for item in names:
-         __ item.title() not in new_list:
-             new_list.append(item.title())
-    return new_list
+    new_list    # list
+    ___ item __ names:
+         __ item.t.. n.. __ new_list:
+             new_list.a..(item.title())
+    r.. new_list
 
 ___ sort_by_surname_desc(names):
     """Returns names list sorted desc by surname"""
-    return sorted(names, key=lambda x: x.split(" ")[1], reverse = True)
+    r.. s..(names, key=l.... x: x.split(" ")[1], reverse = True)
 
 
 ___ shortest_first_name(names):
     """Returns the shortest first name (str)"""
-    return sorted(names, key=lambda x: len(x.split(" ")[0]))[0].split(" ")[0]
+    r.. s..(names, key=l.... x: l..(x.split(" ")[0]))[0].split(" ")[0]
 
 a = dedup_and_title_case_names(NAMES)
 print(a)

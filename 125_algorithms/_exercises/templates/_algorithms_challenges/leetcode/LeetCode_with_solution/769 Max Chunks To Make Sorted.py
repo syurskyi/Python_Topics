@@ -27,7 +27,7 @@ Note:
 arr will have length in range [1, 10].
 arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -41,9 +41,9 @@ class Solution:
         """
         ret = 0
         cur_max_idx = 0
-        for i in range(len(arr)):
+        ___ i __ r..(l..(arr)):
             cur_max_idx = max(cur_max_idx, arr[i])
-            __ i == cur_max_idx:
+            __ i __ cur_max_idx:
                 ret += 1
 
-        return ret
+        r.. ret

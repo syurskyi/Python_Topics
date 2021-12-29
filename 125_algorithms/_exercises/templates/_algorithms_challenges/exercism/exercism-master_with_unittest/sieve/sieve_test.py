@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from sieve import sieve
+____ sieve _______ sieve
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -38,5 +38,5 @@ class SieveTest(unittest.TestCase):
             ])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

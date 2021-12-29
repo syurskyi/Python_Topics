@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 ___ validate_license(key: str) -> bool:
@@ -7,6 +7,6 @@ ___ validate_license(key: str) -> bool:
     """
     key_end = ''.join(key.split('-')[1:])
     start = bool(re.match(r'^PB', key))
-    split_count = [bool(x) for x in [len(entry)  == 8 for entry in key_end]]
+    split_count = [bool(x) ___ x __ [l..(entry)  __ 8 ___ entry __ key_end]]
     character_check = bool(re.match('^[a-zA-Z0-9]+$', key_end))
-    return start and split_count and character_check
+    r.. start and split_count and character_check

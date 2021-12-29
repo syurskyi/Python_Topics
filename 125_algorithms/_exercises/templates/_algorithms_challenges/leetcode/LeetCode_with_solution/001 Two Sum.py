@@ -21,18 +21,18 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         nums = num
-        for ind1, val in enumerate(nums):
+        ___ ind1, val __ enumerate(nums):
             try:
                 ind2 = nums.index(target - val)
-                return ind1+1, ind2+1
+                r.. ind1+1, ind2+1
             except ValueError:
                 continue
 
     ___ twoSum_TLE_2(self, num, target):
         nums = num
-        for ind1, val in enumerate(nums):
-            __ target-val in nums:
-                return ind1+1, nums.index(target-val)+1
+        ___ ind1, val __ enumerate(nums):
+            __ target-val __ nums:
+                r.. ind1+1, nums.index(target-val)+1
 
     ___ twoSum(self, num, target):
         """
@@ -43,15 +43,15 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         hash_map = {}
-        for ind, val in enumerate(num):
+        ___ ind, val __ enumerate(num):
             hash_map[val] = ind
 
-        for ind1, val in enumerate(num):
-            __ target-val in hash_map:
+        ___ ind1, val __ enumerate(num):
+            __ target-val __ hash_map:
                 ind2 = hash_map[target-val]
                 __ ind1!=ind2:
-                    return ind1+1, ind2+1
+                    r.. ind1+1, ind2+1
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print(Solution().twoSum([3, 2, 4], 6))

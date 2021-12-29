@@ -34,10 +34,10 @@ The given list has length in the range [0, 10000].
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -48,8 +48,8 @@ class Solution:
         How to make it one-pass? Maintain a stack from left to right for the element
         waiting for the next larger node
         """
-        ret = []
-        stk = []  # [[index, value]]
+        ret    # list
+        stk    # list  # [[index, value]]
         i = 0
         cur = head
         while cur:
@@ -57,9 +57,9 @@ class Solution:
                 idx, _ = stk.pop()
                 ret[idx] = cur.val
 
-            stk.append([i, cur.val])
-            ret.append(0)
+            stk.a..([i, cur.val])
+            ret.a..(0)
             cur = cur.next
             i += 1
 
-        return ret
+        r.. ret

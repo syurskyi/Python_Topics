@@ -1,4 +1,4 @@
-import os
+_______ os
 
 
 ___ count_dirs_and_files(directory='.'):
@@ -7,7 +7,7 @@ ___ count_dirs_and_files(directory='.'):
     """
     dir_count = 0
     file_count = 0
-    for root, dirs, files in os.walk(directory):
-        dir_count += len(dirs)
-        file_count += len(files)
-    return dir_count, file_count
+    ___ root, dirs, files __ os.walk(directory):
+        dir_count += l..(dirs)
+        file_count += l..(files)
+    r.. dir_count, file_count

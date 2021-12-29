@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class PhoneDirectory(object):
@@ -10,7 +10,7 @@ class PhoneDirectory(object):
     :type maxNumbers: int
     """
     self.taken = [True] * maxNumbers
-    self.q = deque([i for i in range(0, maxNumbers)])
+    self.q = deque([i ___ i __ r..(0, maxNumbers)])
 
   ___ get(self):
     """
@@ -20,8 +20,8 @@ class PhoneDirectory(object):
     """
     __ self.q:
       self.taken[self.q[0]] = False
-      return self.q.popleft()
-    return -1
+      r.. self.q.popleft()
+    r.. -1
 
   ___ check(self, number):
     """
@@ -29,7 +29,7 @@ class PhoneDirectory(object):
     :type number: int
     :rtype: bool
     """
-    return self.taken[number]
+    r.. self.taken[number]
 
   ___ release(self, number):
     """
@@ -37,9 +37,9 @@ class PhoneDirectory(object):
     :type number: int
     :rtype: void
     """
-    __ not self.taken[number]:
+    __ n.. self.taken[number]:
       self.taken[number] = True
-      self.q.append(number)
+      self.q.a..(number)
 
 # Your PhoneDirectory object will be instantiated and called as such:
 # obj = PhoneDirectory(maxNumbers)

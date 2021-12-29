@@ -27,7 +27,7 @@ N is an integer within the range [1, 20,000].
 The elements of A are all distinct.
 Each element of A is an integer within the range [0, N-1].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -38,21 +38,21 @@ class Solution:
         """
         visited = set()
         ret = 0
-        for n in nums:
+        ___ n __ nums:
             count = self.dfs(nums, n, set(), visited)
             ret = max(ret, count)
 
-        return ret
+        r.. ret
 
     ___ dfs(self, nums, num, path, visited):
-        __ num in visited:
-            return 0
+        __ num __ visited:
+            r.. 0
 
         visited.add(num)
         path.add(num)  # path is subset of visited
         self.dfs(nums, nums[num], path, visited)
-        return len(path)
+        r.. l..(path)
 
 
-__ __name__ == "__main__":
-    assert Solution().arrayNesting([5,4,0,3,1,6,2]) == 4
+__ __name__ __ "__main__":
+    ... Solution().arrayNesting([5,4,0,3,1,6,2]) __ 4

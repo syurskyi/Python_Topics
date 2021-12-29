@@ -43,7 +43,7 @@ The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range
 [0, 10^9].
 """
-import bisect
+_______ bisect
 
 
 class MyCalendarTwo:
@@ -54,7 +54,7 @@ class MyCalendarTwo:
         boundary counting
         bisect.insort
         """
-        self.lst = []  # can be TreeMap(), ordered map
+        self.lst    # list  # can be TreeMap(), ordered map
 
 
     ___ book(self, start: int, end: int) -> bool:
@@ -64,14 +64,14 @@ class MyCalendarTwo:
         bisect.insort(self.lst, (start, "start"))
         bisect.insort(self.lst, (end, "end"))
         count = 0
-        for _, flag in self.lst:
-            count += 1 __ flag == "start" else -1
+        ___ _, flag __ self.lst:
+            count += 1 __ flag __ "start" ____ -1
             __ count > 2:
                 self.lst.remove((start, "start"))
                 self.lst.remove((end, "end"))
-                return False
+                r.. False
 
-        return True
+        r.. True
 
 # Your MyCalendarTwo object will be instantiated and called as such:
 # obj = MyCalendarTwo()

@@ -7,21 +7,21 @@ ___ convert(value: float, fmt: str) -> float:
     """
 
 
-    __ type(value) not in (int,float):
+    __ type(value) n.. __ (int,float):
         raise TypeError("Value must be numeric")
 
     fmt = fmt.strip().lower() 
-    __ fmt not in ('cm','in'):
+    __ fmt n.. __ ('cm','in'):
         raise ValueError("Can only convert from cm to in or vice versa")
 
 
-    __ fmt == 'in':
+    __ fmt __ 'in':
         value /= 2.54
-    else:
+    ____:
         value  *= 2.54
 
 
-    return round(value,4)
+    r.. round(value,4)
 
 
 

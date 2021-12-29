@@ -21,7 +21,7 @@ Note:
 1 <= A.length <= 30000
 1 <= A[i] <= 30000
 """
-from typing import List
+____ typing _______ List
 
 MOD = 10 ** 9 + 7
 
@@ -46,37 +46,37 @@ class Solution:
         L[i] records the index of m, default -1
         R[i] records the index of n, default len(A)
         """
-        n = len(A)
-        L = [-1 for _ in A]
-        R = [n for _ in A]
+        n = l..(A)
+        L = [-1 ___ _ __ A]
+        R = [n ___ _ __ A]
 
-        stk = []
-        for i in range(n):
+        stk    # list
+        ___ i __ r..(n):
             while stk and A[stk[-1]] >= A[i]:
                 stk.pop()
 
             __ stk:
                 L[i] = stk[-1]
-            stk.append(i)
+            stk.a..(i)
 
-        stk = []
-        for i in range(n-1, -1, -1):
+        stk    # list
+        ___ i __ r..(n-1, -1, -1):
             # avoid double count when equal, attribtue to leftmost duplicate
             while stk and A[stk[-1]] > A[i]:
                 stk.pop()
 
             __ stk:
                 R[i] = stk[-1]
-            stk.append(i)
+            stk.a..(i)
 
         ret = 0
-        for i in range(n):
+        ___ i __ r..(n):
             ret += (
                 A[i] * (i - L[i]) * (R[i] - i)
             )
             ret %= MOD
 
-        return ret
+        r.. ret
 
 
 class Solution:
@@ -85,20 +85,20 @@ class Solution:
         Improve the above solution using one stack
         use an increasing stk
         """
-        stk = []
+        stk    # list
         A = [-float('inf')] + A + [-float('inf')]
         ret = 0
-        for i, a in enumerate(A):
+        ___ i, a __ enumerate(A):
             while stk and A[stk[-1]] > a:
                 h = stk.pop()
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)
                 ret %= MOD
 
-            stk.append(i)
-        return ret
+            stk.a..(i)
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().sumSubarrayMins([71,55,82,55]) == 593
-    assert Solution().sumSubarrayMins([3,1,2,4]) == 17
+__ __name__ __ "__main__":
+    ... Solution().sumSubarrayMins([71,55,82,55]) __ 593
+    ... Solution().sumSubarrayMins([3,1,2,4]) __ 17

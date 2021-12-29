@@ -10,15 +10,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        n = len(nums)
-        dp = [[0]*n for _ in range(n)]
-        for i in range(n):
+        n = l..(nums)
+        dp = [[0]*n ___ _ __ r..(n)]
+        ___ i __ r..(n):
             dp[i][i] = nums[i]
-        for l in range(1, n):
-            for i in range(n-l):
+        ___ l __ r..(1, n):
+            ___ i __ r..(n-l):
                 j = i+l
                 dp[i][j] = max(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
-        return dp[0][n-1] >= 0
+        r.. dp[0][n-1] >= 0
     
     ___ PredictTheWinner_DnC(self, nums):
         """
@@ -26,32 +26,32 @@ class Solution(object):
         :rtype: bool
         """
         self.mem = {}
-        return self.helper(nums, 0, len(nums)-1) >= 0
+        r.. self.helper(nums, 0, l..(nums)-1) >= 0
     
     ___ helper(self, nums, start, end):
-        n = len(nums)
+        n = l..(nums)
         num = start*n+end
-        __ num in self.mem:
-            return self.mem[num]
-        __ start == end:
+        __ num __ self.mem:
+            r.. self.mem[num]
+        __ start __ end:
             self.mem[num] = nums[start]
-            return self.mem[num]
+            r.. self.mem[num]
         res1 = nums[start]-self.helper(nums, start+1, end)
         res2 = nums[end]-self.helper(nums, start, end-1)
         result = max(res1, res2)
         self.mem[num] = result
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
             [1, 5, 2],
             [1, 5, 233, 7],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.PredictTheWinner_DnC(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

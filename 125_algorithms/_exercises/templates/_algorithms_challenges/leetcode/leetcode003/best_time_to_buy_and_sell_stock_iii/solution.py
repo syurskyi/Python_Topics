@@ -17,24 +17,24 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        __ not prices:
-            return 0
-        n = len(prices)
+        __ n.. prices:
+            r.. 0
+        n = l..(prices)
         m1 = [0] * n
         m2 = [0] * n
         max_profit1 = 0
         min_price1 = prices[0]
         max_profit2 = 0
         max_price2 = prices[-1]
-        for i in range(n):
+        ___ i __ r..(n):
             max_profit1 = max(max_profit1, prices[i] - min_price1)
             m1[i] = max_profit1
-            min_price1 = min(min_price1, prices[i])
-        for i in range(n):
+            min_price1 = m..(min_price1, prices[i])
+        ___ i __ r..(n):
             max_profit2 = max(max_profit2, max_price2 - prices[n - 1 - i])
             m2[n - 1 - i] = max_profit2
             max_price2 = max(max_price2, prices[n - 1 - i])
         max_profit = 0
-        for i in range(n):
+        ___ i __ r..(n):
             max_profit = max(m1[i] + m2[i], max_profit)
-        return max_profit
+        r.. max_profit

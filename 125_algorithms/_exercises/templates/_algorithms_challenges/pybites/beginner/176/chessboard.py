@@ -5,15 +5,15 @@ ___ create_chessboard(size=8):
     """Create a chessboard with of the size passed in.
        Don't return anything, print the output to stdout"""
     outstr, outboard = '', ''
-    for i in range(size):
+    ___ i __ r..(size):
         __ i % 2:
             outstr += BLACK
-        else:
+        ____:
             outstr += WHITE
-    for j in range(size):
-        __ not (j % 2):
+    ___ j __ r..(size):
+        __ n.. (j % 2):
             outboard += outstr+'\n'
-        else:
+        ____:
             outboard += outstr[::-1]+'\n'
     print(outboard)
 

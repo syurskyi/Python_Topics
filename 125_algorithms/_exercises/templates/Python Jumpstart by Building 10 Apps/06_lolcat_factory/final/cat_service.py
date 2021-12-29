@@ -1,7 +1,7 @@
-import os
-import shutil
+_______ os
+_______ shutil
 
-import requests
+_______ requests
 
 
 ___ get_cat(folder, name):
@@ -12,7 +12,7 @@ ___ get_cat(folder, name):
 
 ___ get_data_from_url(url):
     response  requests.get(url, streamTrue)
-    return response.raw
+    r.. response.raw
 
 
 ___ save_image(folder, name, data):

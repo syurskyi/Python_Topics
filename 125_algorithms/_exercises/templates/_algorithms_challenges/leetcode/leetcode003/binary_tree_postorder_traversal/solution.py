@@ -24,19 +24,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        path = []
-        __ root is None:
-            return path
-        stack1 = []
-        stack2 = []
-        stack1.append(root)
+        path    # list
+        __ root __ N..
+            r.. path
+        stack1    # list
+        stack2    # list
+        stack1.a..(root)
         while stack1:
             root = stack1.pop()
-            stack2.append(root.val)
-            __ root.left is not None:
-                stack1.append(root.left)
-            __ root.right is not None:
-                stack1.append(root.right)
+            stack2.a..(root.val)
+            __ root.left __ n.. N..
+                stack1.a..(root.left)
+            __ root.right __ n.. N..
+                stack1.a..(root.right)
         while stack2:
-            path.append(stack2.pop())
-        return path
+            path.a..(stack2.pop())
+        r.. path

@@ -1,4 +1,4 @@
-_____ inspect
+_____ i___
 
 _____ justpy as jp
 
@@ -8,11 +8,11 @@ ____ webapp.home _____ Home
 ____ webapp.dictionary _____ Dictionary
 
 
-imports  list(globals().values())
+imports  l..(globals().values())
 
-for obj in imports:
-    __ inspect.isclass(obj):
-        __ issubclass(obj, page.Page) and obj is not page.Page:
+___ obj __ imports:
+    __ i___.isclass(obj):
+        __ issubclass(obj, page.Page) and obj __ n.. page.Page:
             jp.Route(obj.path, obj.serve)
 
 # jp.Route(Home.path, Home.serve)

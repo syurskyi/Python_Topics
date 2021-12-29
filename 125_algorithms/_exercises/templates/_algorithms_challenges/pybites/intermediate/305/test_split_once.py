@@ -1,8 +1,8 @@
-from textwrap import dedent
+____ textwrap _______ dedent
 
-import pytest
+_______ pytest
 
-from split_once import split_once
+____ split_once _______ split_once
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -17,7 +17,7 @@ from split_once import split_once
                          ['The', 'quick', 'brown', 'fox', 'jumps ', 'over', ' the\tlazy\vdog\n']),
 ])
 ___ test_split_once_whitespace(test_input, expected):
-    assert split_once(test_input) == expected
+    ... split_once(test_input) __ expected
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -29,11 +29,11 @@ ___ test_split_once_whitespace(test_input, expected):
                          ['lorem ipsum', ' dolor sit ', ' amet, consectetur ', ' adipiscing elit. Praesent vitae orc']),
 ])
 ___ test_split_once(test_input, expected):
-    assert split_once(test_input, separators=',-:') == expected
+    ... split_once(test_input, separators=',-:') __ expected
 
 
 @pytest.mark.parametrize('separators, expected', [
-    (None, ['Darmok', 'and Jalad… at Tanagra.', 'Shaka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
+    (N.., ['Darmok', 'and Jalad… at Tanagra.', 'Shaka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     (',-:', ['Darmok and Jalad… at Tanagra.\nShaka', ' when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     ('…!.', ['Darmok and Jalad', ' at Tanagra', '\nShaka, when the walls fell.\nTemba, his arms wide', '\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     ('aeiouy', ['D', 'rm', 'k and Jalad… at Tanagra.\nShaka, wh', 'n the walls fell.\nTemba, h', 's arms wide!\nDarmok and Jalad… the', ' left together.\nMirab, with sails ', 'nfurled.\n']),
@@ -48,4 +48,4 @@ ___ test_split_once_variable_separators(separators, expected):
                            Mirab, with sails unfurled.
                            """)
 
-    assert split_once(constant_text, separators=separators) == expected
+    ... split_once(constant_text, separators=separators) __ expected

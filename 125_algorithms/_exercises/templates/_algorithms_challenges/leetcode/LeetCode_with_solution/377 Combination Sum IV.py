@@ -39,18 +39,18 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        F = [0 for _ in xrange(target + 1)]
-        nums = filter(lambda x: x <= target, nums)
-        for k in nums:
+        F = [0 ___ _ __ xrange(target + 1)]
+        nums = filter(l.... x: x <= target, nums)
+        ___ k __ nums:
             F[k] = 1
 
-        for i in xrange(target + 1):
-            for k in nums:
+        ___ i __ xrange(target + 1):
+            ___ k __ nums:
                 __ i - k >= 0:
                     F[i] += F[i-k]
 
-        return F[target]
+        r.. F[target]
 
 
-__ __name__ == "__main__":
-    assert Solution().combinationSum4([1, 2, 3], 4) == 7
+__ __name__ __ "__main__":
+    ... Solution().combinationSum4([1, 2, 3], 4) __ 7

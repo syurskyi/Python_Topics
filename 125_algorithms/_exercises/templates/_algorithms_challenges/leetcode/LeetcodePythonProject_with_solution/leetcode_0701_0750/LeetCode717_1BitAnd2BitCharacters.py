@@ -9,30 +9,30 @@ class Solution(object):
         :type bits: List[int]
         :rtype: bool
         """
-        __ not bits: return False
-        n = len(bits)
-        __ n == 1: return True
+        __ n.. bits: r.. False
+        n = l..(bits)
+        __ n __ 1: r.. True
         dp = [1]*n
         i = 0
         while i < n:
-            __ bits[i] == 1:
+            __ bits[i] __ 1:
                 i += 2
-            else:
+            ____:
                 __ i > 0:
                     dp[i] += dp[i-1]
                 i += 1
-        return dp[-1] > 1
+        r.. dp[-1] > 1
     
     ___ test(self):
         testCases = [
             [1, 0, 0],
             [1, 1, 1, 0],
         ]
-        for bits in testCases:
+        ___ bits __ testCases:
             print('bits: %s' % bits)
             result = self.isOneBitCharacter(bits)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

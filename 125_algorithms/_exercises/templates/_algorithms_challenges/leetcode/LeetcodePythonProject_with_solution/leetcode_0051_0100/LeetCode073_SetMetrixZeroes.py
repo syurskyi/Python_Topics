@@ -11,32 +11,32 @@ class Solution(object):
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
         isColEmpty, isRowEmpty = False, False
-        for i in range(len(matrix)):
-            __ matrix[i][0] == 0:
+        ___ i __ r..(l..(matrix)):
+            __ matrix[i][0] __ 0:
                 isColEmpty = True
                 break
-        for i in range(len(matrix[0])):
-            __ matrix[0][i] == 0:
+        ___ i __ r..(l..(matrix[0])):
+            __ matrix[0][i] __ 0:
                 isRowEmpty = True
                 break
-        for i in range(1, len(matrix)):
-            for j in range(1, len(matrix[0])):
-                __ matrix[i][j] == 0:
+        ___ i __ r..(1, l..(matrix)):
+            ___ j __ r..(1, l..(matrix[0])):
+                __ matrix[i][j] __ 0:
                     matrix[i][0] = 0
                     matrix[0][j] = 0
-        for i in range(1, len(matrix)):
-            __ matrix[i][0] == 0:
-                for j in range(1, len(matrix[0])):
+        ___ i __ r..(1, l..(matrix)):
+            __ matrix[i][0] __ 0:
+                ___ j __ r..(1, l..(matrix[0])):
                     matrix[i][j] = 0
-        for j in range(1, len(matrix[0])):
-            __ matrix[0][j] == 0:
-                for i in range(1, len(matrix)):
+        ___ j __ r..(1, l..(matrix[0])):
+            __ matrix[0][j] __ 0:
+                ___ i __ r..(1, l..(matrix)):
                     matrix[i][j] = 0
         __ isColEmpty:
-            for i in range(len(matrix)):
+            ___ i __ r..(l..(matrix)):
                 matrix[i][0] = 0
         __ isRowEmpty:
-            for j in range(len(matrix[0])):
+            ___ j __ r..(l..(matrix[0])):
                 matrix[0][j] = 0
     
     ___ test(self):

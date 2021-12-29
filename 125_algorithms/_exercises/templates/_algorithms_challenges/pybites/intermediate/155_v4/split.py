@@ -16,7 +16,7 @@ ___ split_words_and_quoted_text(text):
     s2 = tmp[:tmp.index('"')]
     s3 = tmp[tmp.index('"') + 1:]
 
-    result = s1.split()
-    result.append(s2)
+    result = s1.s.. 
+    result.a..(s2)
     result.extend(s3.split())
-    return result
+    r.. result

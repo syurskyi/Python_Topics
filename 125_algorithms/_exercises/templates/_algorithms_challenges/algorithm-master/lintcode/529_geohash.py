@@ -4,7 +4,7 @@ main concept is in `../module/geohash.py`
 
 
 class GeoHash:
-    base32 = []
+    base32    # list
 
     """
     @param: latitude: one of a location coordinate pair
@@ -13,47 +13,47 @@ class GeoHash:
     @return: a base32 string
     """
     ___ encode(self, latitude, longitude, precision=5):
-        __ not self.base32:
+        __ n.. self.base32:
             self.base32 = self.get_base32_list()
 
         times = (precision * 5) // 2 + 1
         lat_codes = self._loc_to_bins( latitude, times,  -90,  90)
         lng_codes = self._loc_to_bins(longitude, times, -180, 180)
 
-        bin_codes = []
-        for i in range(times):
+        bin_codes    # list
+        ___ i __ r..(times):
             bin_codes.extend((str(lng_codes[i]), str(lat_codes[i])))
 
-        hash_codes = []
+        hash_codes    # list
         hash_code = ''
-        for i in range(0, len(bin_codes), 5):
+        ___ i __ r..(0, l..(bin_codes), 5):
             hash_code = int(''.join(bin_codes[i : i + 5]), 2)
-            hash_codes.append(self.base32[hash_code])
+            hash_codes.a..(self.base32[hash_code])
 
-        return ''.join(hash_codes[:precision])
+        r.. ''.join(hash_codes[:precision])
 
     ___ _loc_to_bins(self, location, times, left, right):
         mid = 0
-        bins = []
+        bins    # list
 
-        for i in range(times):
+        ___ i __ r..(times):
             mid = left + (right - left) / 2.0
             __ location > mid:
                 left = mid
-                bins.append(1)
-            else:
+                bins.a..(1)
+            ____:
                 right = mid
-                bins.append(0)
+                bins.a..(0)
 
-        return bins
+        r.. bins
 
     ___ get_base32_list(self):
-        base32_list = [str(i) for i in range(10)]
+        base32_list = [str(i) ___ i __ r..(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
-        for i in range(ord('a'), ord('z') + 1):
-            __ i in ignored_char:
+        ___ i __ r..(ord('a'), ord('z') + 1):
+            __ i __ ignored_char:
                 continue
-            base32_list.append(chr(i))
+            base32_list.a..(chr(i))
 
-        return base32_list
+        r.. base32_list

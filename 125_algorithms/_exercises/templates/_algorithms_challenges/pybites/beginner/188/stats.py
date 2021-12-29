@@ -1,12 +1,12 @@
-import os
-import statistics
-from urllib.request import urlretrieve
+_______ os
+_______ statistics
+____ urllib.request _______ urlretrieve
 
 TMP = os.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = os.path.join(TMP, DATA)
-__ not os.path.isfile(STATS):
+__ n.. os.path.isfile(STATS):
     urlretrieve(os.path.join(S3, DATA), STATS)
 
 STATS_OUTPUT = """
@@ -27,18 +27,18 @@ Estimated variance for sample:
 """
 
 
-___ get_all_line_counts(data: str = STATS) -> list:
+___ get_all_line_counts(data: str = STATS) -> l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
-    lines = []
+    lines    # list
     with open(data,'r') as f:
-        for line in f:
+        ___ line __ f:
             line = line.strip()
             space_index = line.index(' ')
-            lines.append(int(line[:space_index]))
+            lines.a..(int(line[:space_index]))
     
-    return lines
+    r.. lines
 
 
 
@@ -47,31 +47,31 @@ ___ get_all_line_counts(data: str = STATS) -> list:
 
 
 ___ create_stats_report(data_ N..
-    __ data is None:
+    __ data __ N..
         # converting to a list in case a generator was returned
-        data = list(get_all_line_counts())
+        data = l..(get_all_line_counts())
 
     # taking a sample for the last section
-    sample = list(data)[::2]
+    sample = l..(data)[::2]
 
     # TODO 2: complete this dict, use data list and
     # for the last 3 sample_ variables, use sample list
-    stats = dict(count=len(data),
-                 min_=min(data),
+    stats = d..(count=l..(data),
+                 min_=m..(data),
                  max_=max(data),
                  mean=statistics.mean(data),
                  pstdev=statistics.pstdev(data),
                  pvariance=statistics.pvariance(data),
-                 sample_count=len(sample),
+                 sample_count=l..(sample),
                  sample_stdev=statistics.stdev(sample),
                  sample_variance=statistics.variance(sample),
                  )
 
-    return STATS_OUTPUT.format(**stats)
+    r.. STATS_OUTPUT.format(**stats)
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     print(get_all_line_counts())

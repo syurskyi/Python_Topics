@@ -15,10 +15,10 @@ parts = [('lay in', 'the house that Jack built'),
 ___ verse(n):
     v = ['This is {}'.format(parts[n][1])]
     v.extend(['that {0} {1}'.format(parts[i][0], parts[i][1])
-              for i in range(n - 1, -1, -1)])
+              ___ i __ r..(n - 1, -1, -1)])
     v[-1] += '.'
-    return '\n'.join(v)
+    r.. '\n'.join(v)
 
 
 ___ rhyme():
-    return "\n\n".join(verse(n) for n in range(len(parts)))
+    r.. "\n\n".join(verse(n) ___ n __ r..(l..(parts)))

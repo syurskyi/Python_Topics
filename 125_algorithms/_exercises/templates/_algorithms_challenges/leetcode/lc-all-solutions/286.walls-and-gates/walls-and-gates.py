@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 INF = 2147483647
 
@@ -11,15 +11,15 @@ class Solution(object):
     """
     queue = deque([])
     directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-    for i in range(0, len(rooms)):
-      for j in range(0, len(rooms[0])):
-        __ rooms[i][j] == 0:
-          queue.append((i, j))
+    ___ i __ r..(0, l..(rooms)):
+      ___ j __ r..(0, l..(rooms[0])):
+        __ rooms[i][j] __ 0:
+          queue.a..((i, j))
 
     while queue:
       i, j = queue.popleft()
-      for di, dj in directions:
+      ___ di, dj __ directions:
         p, q = i + di, j + dj
-        __ 0 <= p < len(rooms) and 0 <= q < len(rooms[0]) and rooms[p][q] == INF:
+        __ 0 <= p < l..(rooms) and 0 <= q < l..(rooms[0]) and rooms[p][q] __ INF:
           rooms[p][q] = rooms[i][j] + 1
-          queue.append((p, q))
+          queue.a..((p, q))

@@ -1,8 +1,8 @@
-from collections import namedtuple
-import os
-import pickle
-import urllib.request
-import re
+____ collections _______ namedtuple
+_______ os
+_______ pickle
+_______ urllib.request
+_______ re
 
 # prework
 # download pickle file and store it in a tmp file
@@ -20,7 +20,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos):
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
 
-    return pickle.load(open(pycon_videos,'rb'))
+    r.. pickle.load(open(pycon_videos,'rb'))
 
 
 ___ get_most_popular_talks_by_views(videos):
@@ -28,7 +28,7 @@ ___ get_most_popular_talks_by_views(videos):
     
 
 
-    return sorted(videos,reverse=True,key=lambda x: int(x.metrics['viewCount']))
+    r.. s..(videos,r.._T..key=l.... x: int(x.metrics['viewCount']))
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -38,23 +38,23 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        Return the filtered list"""
 
 
-    return sorted(videos,reverse=True,key=lambda x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount']))/int(x.metrics['viewCount']))
+    r.. s..(videos,r.._T..key=l.... x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount']))/int(x.metrics['viewCount']))
 
 
 ___ get_talks_gt_one_hour(videos):
     """Filter the videos list down to videos of > 1 hour"""
 
 
-    return [video for video in videos __ 'H' in video.duration]
+    r.. [video ___ video __ videos __ 'H' __ video.duration]
 
 
 ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    return [video for video in videos __ ('H' not in video.duration and int(re.search(r"(\d+)M",video.duration).group(1)) < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration and int(re.search(r"(\d+)M",video.duration).group(1)) < 24)]
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     print(load_pycon_data()[0].duration)

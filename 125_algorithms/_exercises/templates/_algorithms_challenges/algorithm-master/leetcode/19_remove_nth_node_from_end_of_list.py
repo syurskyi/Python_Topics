@@ -14,8 +14,8 @@ class Solution:
         :type n: int
         :rtype: ListNode
         """
-        __ not head or not n:
-            return head
+        __ n.. head o. n.. n:
+            r.. head
 
         dummy = slow = ListNode(0)
         dummy.next = fast = head
@@ -31,4 +31,4 @@ class Solution:
         __ slow and slow.next:
             slow.next = slow.next.next
 
-        return dummy.next
+        r.. dummy.next

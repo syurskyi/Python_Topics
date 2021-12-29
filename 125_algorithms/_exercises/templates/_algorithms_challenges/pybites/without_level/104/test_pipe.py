@@ -1,4 +1,4 @@
-from pipe import split_in_columns
+____ pipe _______ split_in_columns
 
 
 ___ test_split_in_columns_default_message():
@@ -8,7 +8,7 @@ ___ test_split_in_columns_default_message():
                 '|Become a PyBites ninja!')
 
     actual = split_in_columns()
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_split_in_columns_on_other_message():
@@ -17,4 +17,4 @@ ___ test_split_in_columns_on_other_message():
     message = 'Hello world:\nI am coding in Python :)\nHow awesome!'
     actual = split_in_columns(message)
 
-    assert actual == expected
+    ... actual __ expected

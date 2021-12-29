@@ -1,8 +1,8 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 ___ word_count(text):
     ___ replace_nonalpha(char):
-        return char.lower() __ char.isalnum() else ' '
-    text = ''.join(replace_nonalpha(c) for c in text)
-    return Counter(text.split())
+        r.. char.lower() __ char.isalnum() ____ ' '
+    text = ''.join(replace_nonalpha(c) ___ c __ text)
+    r.. Counter(text.split())

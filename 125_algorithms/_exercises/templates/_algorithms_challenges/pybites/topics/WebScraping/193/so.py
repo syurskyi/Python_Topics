@@ -1,12 +1,12 @@
-import requests
-from bs4 import BeautifulSoup as Soup
+_______ requests
+____ bs4 _______ BeautifulSoup as Soup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 ___ load_page(so_url):
     """Download the blog html and return its decoded content"""
     with requests.Session() as session:
-        return session.get(so_url).content.decode('utf-8')
+        r.. session.get(so_url).content.decode('utf-8')
 
 ___ top_python_questions(url=cached_so_url):
     """Use requests to retrieve the url / html,
@@ -15,17 +15,17 @@ ___ top_python_questions(url=cached_so_url):
        Return a list of (question, num_votes) tuples ordered
        by num_votes descending (see tests for expected output).
     """
-    faq = []
+    faq    # list
     content = load_page(cached_so_url)
     soup = Soup(content, 'html.parser')
-    question_list = [question for question in soup.find_all('div', class_='question-summary')]
-    for question in question_list:
+    question_list = [question ___ question __ soup.find_all('div', class_='question-summary')]
+    ___ question __ question_list:
         question_text = question.a.text.strip()
         question_vote = question.find('span', class_='vote-count-post').strong.text.strip()
         question_view = question.find('div', class_='views').text.strip()
-        __ 'm views' in question_view:
-            faq.append((question_text,int(question_vote)))
-    return sorted(faq, key=lambda x:x[1], reverse=True)
+        __ 'm views' __ question_view:
+            faq.a..((question_text,int(question_vote)))
+    r.. s..(faq, key=l.... x:x[1], r.._T..
 
 
 

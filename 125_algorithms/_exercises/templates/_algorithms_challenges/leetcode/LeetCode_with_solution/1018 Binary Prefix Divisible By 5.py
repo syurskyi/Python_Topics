@@ -31,7 +31,7 @@ Note:
 1 <= A.length <= 30000
 A[i] is 0 or 1
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -40,13 +40,13 @@ class Solution:
         brute force
         """
         cur = 0
-        ret = []
-        for a in A:
+        ret    # list
+        ___ a __ A:
             cur = (cur << 1) + a
             cur %= 5
-            __ cur == 0:
-                ret.append(True)
-            else:
-                ret.append(False)
+            __ cur __ 0:
+                ret.a..(True)
+            ____:
+                ret.a..(False)
 
-        return ret
+        r.. ret

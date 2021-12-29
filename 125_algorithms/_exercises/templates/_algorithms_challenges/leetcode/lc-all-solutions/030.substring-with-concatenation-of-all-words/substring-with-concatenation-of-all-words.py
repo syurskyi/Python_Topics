@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -8,33 +8,33 @@ class Solution(object):
     :type words: List[str]
     :rtype: List[int]
     """
-    __ len(words) > len(s):
-      return []
+    __ l..(words) > l..(s):
+      r.. []
     d = {}
     t = {}
-    ans = []
+    ans    # list
     deq = deque([])
-    wl = len(words[0])
+    wl = l..(words[0])
     fullscore = 0
-    for word in words:
+    ___ word __ words:
       d[word] = d.get(word, 0) + 1
       fullscore += 1
 
-    for i in range(0, len(s)):
+    ___ i __ r..(0, l..(s)):
       head = start = i
       t.clear()
       score = 0
 
-      while start + wl <= len(s) and s[start:start + wl] in d:
+      while start + wl <= l..(s) and s[start:start + wl] __ d:
         cword = s[start:start + wl]
         t[cword] = t.get(cword, 0) + 1
         __ t[cword] <= d[cword]:
           score += 1
-        else:
+        ____:
           break
         start += wl
 
-      __ score == fullscore:
-        ans.append(head)
+      __ score __ fullscore:
+        ans.a..(head)
 
-    return ans
+    r.. ans

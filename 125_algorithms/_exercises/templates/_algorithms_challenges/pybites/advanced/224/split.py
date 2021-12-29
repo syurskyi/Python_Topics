@@ -1,4 +1,4 @@
-import re
+_______ re
 
 ___ get_sentences(text):
 
@@ -10,13 +10,13 @@ ___ get_sentences(text):
     lines = re.findall(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=re.MULTILINE | re.DOTALL)
     
 
-    return [line.replace('\n',' ') for line in lines]
+    r.. [line.replace('\n',' ') ___ line __ lines]
 
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     TEXT_WITH_DOTS = """
 We are looking forward attending the next Pycon in the U.S.A.

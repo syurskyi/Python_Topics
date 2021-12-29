@@ -10,17 +10,17 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        __ not matrix or not matrix[0]:
-            return False
-        m, n = len(matrix), len(matrix[0])
+        __ n.. matrix o. n.. matrix[0]:
+            r.. False
+        m, n = l..(matrix), l..(matrix[0])
         l, r = 0, m*n-1
         while l < r:
             mid = (l+r-1)//2
             __ matrix[mid//n][mid%n] < target:
                 l = mid+1
-            else:
+            ____:
                 r = mid
-        return matrix[r//n][r%n] == target
+        r.. matrix[r//n][r%n] __ target
     
     ___ searchMatrix_orig(self, matrix, target):
         """
@@ -28,26 +28,26 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        __ not matrix or not matrix[0]:
-            return False
-        m, n = len(matrix), len(matrix[0])
+        __ n.. matrix o. n.. matrix[0]:
+            r.. False
+        m, n = l..(matrix), l..(matrix[0])
         lo, hi = 0, m
         while lo < hi:
             mid = (lo+hi)//2
-            __ target == matrix[mid][0]:
-                return True
-            elif target > matrix[mid][0]:
+            __ target __ matrix[mid][0]:
+                r.. True
+            ____ target > matrix[mid][0]:
                 lo = mid+1
-            else:
+            ____:
                 hi = mid
-        row = lo-1 __ lo > 0 else lo
+        row = lo-1 __ lo > 0 ____ lo
         lo, hi = 0, n
         while lo < hi:
             mid = (lo+hi)//2
-            __ target == matrix[row][mid]:
-                return True
-            elif target > matrix[row][mid]:
+            __ target __ matrix[row][mid]:
+                r.. True
+            ____ target > matrix[row][mid]:
                 lo = mid+1
-            else:
+            ____:
                 hi = mid
-        return False
+        r.. False

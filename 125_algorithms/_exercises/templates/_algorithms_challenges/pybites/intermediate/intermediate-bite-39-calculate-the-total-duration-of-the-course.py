@@ -1,7 +1,7 @@
-from datetime import datetime, timedelta, time
-import os
-import re
-import urllib.request
+____ datetime _______ datetime, timedelta, time
+_______ os
+_______ re
+_______ urllib.request
 
 # https://stackoverflow.com/questions/100210/what-is-the-standard-way-to-add-n-seconds-to-datetime-time-in-python
 
@@ -28,23 +28,23 @@ ___ get_all_timestamps():
         Return a list of MM:SS timestamps
     """
     with open(COURSE_TIMES, 'r') as f:
-        result = []
-        for line in f:
+        result    # list
+        ___ line __ f:
             timestamp = re.findall(r'(\d{1,2}:\d{1,2})', line)
             __ timestamp:
-                result.append(timestamp[0])
+                result.a..(timestamp[0])
         print(result)
-    return result
+    r.. result
 
 
 ___ calc_total_course_duration(timestamps):
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    sum = datetime(year=2000, month=1, day=1, hour=0, minute=0, second=0)
-    s = sum + timedelta(hours=0, minutes=0, seconds=10)
-    for item in timestamps:
-        sum = sum + timedelta(hours=0, minutes=int(item.split(':')[0]), seconds=int(item.split(':')[1]))
-    return(str(sum.time()))
+    s.. = datetime(year=2000, month=1, day=1, hour=0, minute=0, second=0)
+    s = s.. + timedelta(hours=0, minutes=0, seconds=10)
+    ___ item __ timestamps:
+        s.. = s.. + timedelta(hours=0, minutes=int(item.split(':')[0]), seconds=int(item.split(':')[1]))
+    r..(str(s...time()))
 
 """
 def get_all_timestamps():

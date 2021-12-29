@@ -1,22 +1,22 @@
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com/{}"
 FILE_NAME = "mutpy.out"
 TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
-__ not PATH.exists():
+__ n.. PATH.exists():
     urlretrieve(S3.format(FILE_NAME), PATH)
 
 
 ___ _get_data(path=PATH):
     with open(path) as f:
-        return [line.rstrip() for line in f.readlines()]
+        r.. [line.rstrip() ___ line __ f.readlines()]
 
 
-___ filter_killed_mutants(mutpy_output: list = None) -> list:
+___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
     """Read in the passed in mutpy output and filter out the code snippets of
        mutation tests that were killed. Surviving mutants should be shown in
        full, as well the surrounding output.
@@ -68,43 +68,43 @@ ___ filter_killed_mutants(mutpy_output: list = None) -> list:
       Return the filtered output as a list of lines.
     """
 
-    __ mutpy_output is None:
+    __ mutpy_output __ N..
         mutpy_output = _get_data()
     
     
-    previous_dashed_line = None
+    previous_dashed_line = N..
     
 
-    filtered = []
+    filtered    # list
     
 
     filters = ("killed",'incompetent')
     
     i = 0
-    code_block = None
+    code_block = N..
     previous_dashed_line = False
-    while i < len(mutpy_output):
+    while i < l..(mutpy_output):
         line = mutpy_output[i]
         __ code_block:
-            code_block.append(line)
+            code_block.a..(line)
         __ line.startswith('---'):
-            __ not previous_dashed_line:
+            __ n.. previous_dashed_line:
                 previous_dashed_line = True
                 code_block = [line]
-            else:
-                __ all(fil not in mutpy_output[i +1] for fil in filters):
+            ____:
+                __ a..(fil n.. __ mutpy_output[i +1] ___ fil __ filters):
                     filtered.extend(code_block)
-                code_block = None
-                previous_dashed_line = None
-        elif not code_block:
-            filtered.append(line)
+                code_block = N..
+                previous_dashed_line = N..
+        ____ n.. code_block:
+            filtered.a..(line)
         i += 1
 
 
 
 
 
-    return filtered
+    r.. filtered
 
 
 
@@ -118,7 +118,7 @@ ___ filter_killed_mutants(mutpy_output: list = None) -> list:
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     filter_killed_mutants()

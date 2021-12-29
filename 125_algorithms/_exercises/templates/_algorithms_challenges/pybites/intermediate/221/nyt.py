@@ -1,4 +1,4 @@
-import requests
+_______ requests
 
 YOUR_KEY = '123abc'
 DEFAULT_LIST = 'hardcover-nonfiction'
@@ -28,10 +28,10 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
 
     url = f"{base_url}/lists/hardcover-nonfiction.json"
         
-    params = {'api-key': None}
+    params = {'api-key': N..}
     
 
-    books = []
+    books    # list
     try:
         response = requests.get(url,params=params)
         response.raise_for_status()
@@ -41,13 +41,13 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
     except Exception as e:
         print('Other exception')
         print(e)
-    else:
+    ____:
         results = response.json()
 
 
-        for book in results['results']['books']:
-            books.append((book['title'],book['weeks_on_list']))
-        return books
+        ___ book __ results['results']['books']:
+            books.a..((book['title'],book['weeks_on_list']))
+        r.. books
         
 
 
@@ -60,6 +60,6 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ret = get_best_seller_titles()
     print(ret)

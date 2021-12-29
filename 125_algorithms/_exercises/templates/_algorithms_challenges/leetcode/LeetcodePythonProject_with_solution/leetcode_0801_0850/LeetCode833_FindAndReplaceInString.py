@@ -15,13 +15,13 @@ class Solution(object):
         s = S
         prev = 0
         res = ''
-        for ind, source, target in sorted(zip(indexes, sources, targets)):
-            __ s[ind:ind+len(source)] == source:
+        ___ ind, source, target __ s..(zip(indexes, sources, targets)):
+            __ s[ind:ind+l..(source)] __ source:
                 res += s[prev:ind]
                 res += target
-                prev = ind + len(source)
+                prev = ind + l..(source)
         res += s[prev:]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -50,10 +50,10 @@ class Solution(object):
                 ["idl","vo","yl","pg","efp","vqi","s","wb","mw","gmt","rkqc","kdx","o","vamwgpn","pl","xyvz"],
             ],
         ]
-        for s, indexes, sources, targets in testCases:
+        ___ s, indexes, sources, targets __ testCases:
             res = self.findReplaceString(s, indexes, sources, targets)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

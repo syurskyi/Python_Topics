@@ -10,4 +10,4 @@ class Solution(object):
     while x:
       y += 1
       x = x & (x - 1)
-    return y
+    r.. y

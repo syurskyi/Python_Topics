@@ -18,6 +18,6 @@ class Solution(object):
         ans = p.val
       __ target < p.val:
         p = p.left
-      else:
+      ____:
         p = p.right
-    return ans
+    r.. ans

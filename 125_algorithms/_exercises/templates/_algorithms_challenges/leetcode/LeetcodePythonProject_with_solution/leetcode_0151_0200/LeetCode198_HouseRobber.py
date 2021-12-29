@@ -10,10 +10,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
+        __ n.. nums: r.. 0
         include, exclude = 0, 0
-        for num in nums:
+        ___ num __ nums:
             i, e = include, exclude
             include = e+num
             exclude = max(i, e)
-        return max(include, exclude)
+        r.. max(include, exclude)

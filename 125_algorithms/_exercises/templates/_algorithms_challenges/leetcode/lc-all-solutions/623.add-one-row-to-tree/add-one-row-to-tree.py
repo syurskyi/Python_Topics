@@ -19,14 +19,14 @@ class Solution(object):
     stack = [(1, dummy, 0)]
     while stack:
       p, node, h = stack.pop()
-      __ not node:
+      __ n.. node:
         continue
-      __ p == 1:
+      __ p __ 1:
         stack.extend([(1, node.right, h + 1), (1, node.left, h + 1), (0, node, h + 1)])
-      elif h == d:
+      ____ h __ d:
         left = node.left
         right = node.right
         node.left, node.right = map(TreeNode, (v, v))
         node.left.left = left
         node.right.right = right
-    return dummy.left
+    r.. dummy.left

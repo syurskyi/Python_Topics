@@ -5,24 +5,24 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not a or not b:
-            return ans
+        __ n.. a o. n.. b:
+            r.. ans
 
         freq = {}
 
-        for x in a:
+        ___ x __ a:
             freq[x] = freq.get(x, 0) + 1
 
-        for x in b:
-            __ not freq.get(x):
+        ___ x __ b:
+            __ n.. freq.get(x):
                 continue
 
             freq[x] -= 1
-            ans.append(x)
+            ans.a..(x)
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -32,25 +32,25 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not a or not b:
-            return ans
+        __ n.. a o. n.. b:
+            r.. ans
 
         a.sort()
         b.sort()
 
-        m, n = len(a), len(b)
+        m, n = l..(a), l..(b)
         i = j = 0
 
         while i < m and j < n:
-            __ a[i] == b[j]:
-                ans.append(a[i])
+            __ a[i] __ b[j]:
+                ans.a..(a[i])
                 i += 1
                 j += 1
-            elif a[i] < b[j]:
+            ____ a[i] < b[j]:
                 i += 1
-            else:
+            ____:
                 j += 1
 
-        return ans
+        r.. ans

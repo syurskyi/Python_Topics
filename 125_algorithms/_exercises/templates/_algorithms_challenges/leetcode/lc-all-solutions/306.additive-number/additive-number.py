@@ -4,23 +4,23 @@ class Solution(object):
     :type num: str
     :rtype: bool
     """
-    n = len(num)
-    for x in range(0, n / 2):
-      __ x > 0 and num[0] == "0":
+    n = l..(num)
+    ___ x __ r..(0, n / 2):
+      __ x > 0 and num[0] __ "0":
         break
-      for y in range(x + 1, n):
-        __ y - x > 1 and num[x + 1] == "0":
+      ___ y __ r..(x + 1, n):
+        __ y - x > 1 and num[x + 1] __ "0":
           break
         i, j, k = 0, x, y
         while k < n:
           a = int(num[i:j + 1])
           b = int(num[j + 1:k + 1])
           add = str(int(a + b))
-          __ not num.startswith(add, k + 1):
+          __ n.. num.startswith(add, k + 1):
             break
-          __ len(add) + 1 + k == len(num):
-            return True
+          __ l..(add) + 1 + k __ l..(num):
+            r.. True
           i = j + 1
           j = k
-          k = k + len(add)
-    return False
+          k = k + l..(add)
+    r.. False

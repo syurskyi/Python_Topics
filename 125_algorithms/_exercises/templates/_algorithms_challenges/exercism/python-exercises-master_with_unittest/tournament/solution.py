@@ -1,45 +1,45 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
-RESULTS = dict(win=0, draw=1, loss=2)
+RESULTS = d..(win=0, draw=1, loss=2)
 
 
 ___ invert_result(result):
-    __ result == 0:
-        return 2
-    elif result == 2:
-        return 0
-    return result
+    __ result __ 0:
+        r.. 2
+    ____ result __ 2:
+        r.. 0
+    r.. result
 
 
 ___ parse_game(game_line):
     game = game_line.split(';')
-    __ len(game) == 3 and game[2] in RESULTS:
+    __ l..(game) __ 3 and game[2] __ RESULTS:
         result = RESULTS[game[2]]
-        return (game[0], result), (game[1], invert_result(result))
-    return []
+        r.. (game[0], result), (game[1], invert_result(result))
+    r.. []
 
 
 ___ calculate_points(stats):
-    return stats[0] * 3 + stats[1]
+    r.. stats[0] * 3 + stats[1]
 
 
 ___ format_table(results):
     table = ['Team                           | MP |  W |  D |  L |  P']
 
-    for team, games in sorted(
-            results.items(), key=lambda g: (-calculate_points(g[1]), g[0])):
+    ___ team, games __ s..(
+            results.items(), key=l.... g: (-calculate_points(g[1]), g[0])):
         team_fmt = '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
-        table.append(
-            team_fmt.format(team, sum(games), calculate_points(games), *games))
+        table.a..(
+            team_fmt.format(team, s..(games), calculate_points(games), *games))
 
-    return '\n'.join(table)
+    r.. '\n'.join(table)
 
 
 ___ tally(data):
-    table = defaultdict(lambda: [0, 0, 0])
+    table = defaultdict(l....: [0, 0, 0])
 
-    for line in data.split('\n'):
-        for team, result in parse_game(line):
+    ___ line __ data.split('\n'):
+        ___ team, result __ parse_game(line):
             table[team][result] += 1
 
-    return format_table(table)
+    r.. format_table(table)

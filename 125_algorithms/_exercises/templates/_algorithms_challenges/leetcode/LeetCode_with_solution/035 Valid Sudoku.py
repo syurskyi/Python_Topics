@@ -32,45 +32,45 @@ class Solution:
         :return: boolean
         """
         # check row & column
-        for i in xrange(9):
-            row = []  # change to hashamp
-            column = []
-            square = []
-            for j in xrange(9):
+        ___ i __ xrange(9):
+            row    # list  # change to hashamp
+            column    # list
+            square    # list
+            ___ j __ xrange(9):
                 # check row
                 try:
                     row_element = int(board[i][j])
-                    __ row_element in row:
-                        return False
-                    else:
-                        row.append(row_element)
+                    __ row_element __ row:
+                        r.. False
+                    ____:
+                        row.a..(row_element)
                 except ValueError:
                     pass
 
                 # check column
                 try:
                     column_element = int(board[j][i])
-                    __ column_element in column:
-                        return False
-                    else:
-                        column.append(column_element)
+                    __ column_element __ column:
+                        r.. False
+                    ____:
+                        column.a..(column_element)
                 except ValueError:
                     pass
 
                 # check square
                 try:
                     square_element = int(board[i/3*3 + j/3][i%3*3 + j%3])
-                    __ square_element in square:
-                        return False
-                    else:
-                        square.append(square_element)
+                    __ square_element __ square:
+                        r.. False
+                    ____:
+                        square.a..(square_element)
                 except ValueError:
                     pass
 
-        return True
+        r.. True
 
-__ __name__=="__main__":
-    assert Solution().isValidSudoku(
+__ __name____"__main__":
+    ... Solution().isValidSudoku(
         ["..4...63.", ".........", "5......9.", "...56....", "4.3.....1", "...7.....", "...5.....", ".........",
          "........."]
-    )==False
+    )__False

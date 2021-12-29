@@ -14,18 +14,18 @@ class Solution:
     """
     ___ countOfAirplanes(self, airplanes):
         ans = 0
-        __ not airplanes:
-            return ans
+        __ n.. airplanes:
+            r.. ans
         cnt = 0
-        timeline = []
-        for interval in airplanes:
-            timeline.append((interval.start, 1))
-            timeline.append((interval.end, 0))
+        timeline    # list
+        ___ interval __ airplanes:
+            timeline.a..((interval.start, 1))
+            timeline.a..((interval.end, 0))
         timeline.sort()
-        for _, in_sky in timeline:
+        ___ _, in_sky __ timeline:
             __ in_sky:
                 cnt += 1
-            else:
+            ____:
                 cnt -= 1
             ans = max(ans, cnt)
-        return ans
+        r.. ans

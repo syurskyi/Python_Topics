@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from enchantable_items import (
+____ enchantable_items _______ (
     Enchantment,
     Item,
     generate_items,
@@ -62,28 +62,28 @@ ___ enchantment_mock():
         10,
         "Ability automate really boring and repetitive tasks at work",
     )
-    return enchant
+    r.. enchant
 
 
 @pytest.fixture(scope="module")
 ___ item_mock(enchantment_mock):
     item = Item("clamytoe")
-    return item
+    r.. item
 
 
 @pytest.fixture(scope="module")
 ___ mock_soup():
-    return get_soup(mock_html)
+    r.. get_soup(mock_html)
 
 
 @pytest.fixture(scope="module")
 ___ mock_data(mock_soup):
-    return generate_enchantments(mock_soup)
+    r.. generate_enchantments(mock_soup)
 
 
 @pytest.fixture(scope="module")
 ___ mocked_generate_items(mock_data):
-    return generate_items(mock_data)
+    r.. generate_items(mock_data)
 
 
 @pytest.fixture(scope="module")
@@ -91,50 +91,50 @@ ___ coders_dataset():
     soup = get_soup()
     mc_data = generate_enchantments(soup)
     items = generate_items(mc_data)
-    return items
+    r.. items
 
 
 ___ test_enchantment_class(enchantment_mock):
-    assert enchantment_mock.name == "Python Developer"
-    assert enchantment_mock.items == []
+    ... enchantment_mock.name __ "Python Developer"
+    ... enchantment_mock.items __ []
 
 
 ___ test_enchantment_class_add_items(enchantment_mock, item_mock):
-    enchantment_mock.items.append(item_mock.name)
-    assert len(enchantment_mock.items) == 1
+    enchantment_mock.items.a..(item_mock.name)
+    ... l..(enchantment_mock.items) __ 1
     bob = Item("bob")
-    enchantment_mock.items.append(bob.name)
-    assert len(enchantment_mock.items) == 2
-    assert enchantment_mock.items == ["clamytoe", "bob"]
-    assert enchantment_mock.max_level == 10
+    enchantment_mock.items.a..(bob.name)
+    ... l..(enchantment_mock.items) __ 2
+    ... enchantment_mock.items __ ["clamytoe", "bob"]
+    ... enchantment_mock.max_level __ 10
 
 
 ___ test_enchantment_class_print(enchantment_mock, capfd):
     print(enchantment_mock)
     output = capfd.readouterr()[0].split("\n")[0]
-    assert (
+    ... (
         output
-        == "Python Developer (10): Ability automate really boring and repetitive tasks at work"
+        __ "Python Developer (10): Ability automate really boring and repetitive tasks at work"
     )
 
 
 ___ test_item_class(item_mock, enchantment_mock):
-    item_mock.enchantments.append(enchantment_mock)
-    assert item_mock.enchantments[0].name == "Python Developer"
+    item_mock.enchantments.a..(enchantment_mock)
+    ... item_mock.enchantments[0].name __ "Python Developer"
 
 
 ___ test_item_class_print(item_mock, capfd):
     print(item_mock)
     output = capfd.readouterr()[0].strip()
-    assert output == "Clamytoe: \n  [10] python_developer"
+    ... output __ "Clamytoe: \n  [10] python_developer"
 
 
 ___ test_enchantment_print(mock_data, capfd):
     print(mock_data["channeling"])
     output = capfd.readouterr()[0].split("\n")[0]
-    assert (
+    ... (
         output
-        == "Channeling (1): Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
+        __ "Channeling (1): Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
     )
 
 
@@ -148,23 +148,23 @@ ___ test_enchantment_print(mock_data, capfd):
     ],
 )
 ___ test_roman_numeral_conversion(mock_data, enchant, expected):
-    assert mock_data[enchant].max_level == expected
+    ... mock_data[enchant].max_level __ expected
 
 
 ___ test_generate_enchantments_with_mock(mock_data):
-    assert isinstance(mock_data, dict)
-    assert len(mock_data.keys()) == 4
-    assert (
+    ... isi..(mock_data, d..)
+    ... l..(mock_data.keys()) __ 4
+    ... (
         mock_data["channeling"].description
-        == "Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
+        __ "Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
     )
 
 
 ___ test_generate_enchantments_from_source():
     soup = get_soup()
     data = generate_enchantments(soup)
-    assert len(data.keys()) == 37
-    assert data["efficiency"].max_level == 5
+    ... l..(data.keys()) __ 37
+    ... data["efficiency"].max_level __ 5
 
 
 @pytest.mark.parametrize(
@@ -178,7 +178,7 @@ ___ test_generate_enchantments_from_source():
     ],
 )
 ___ test_gen_items_mocked(mocked_generate_items, item, expected):
-    assert mocked_generate_items[item].enchantments[0].name == expected
+    ... mocked_generate_items[item].enchantments[0].name __ expected
 
 
 @pytest.mark.parametrize(
@@ -246,7 +246,7 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected):
     ],
 )
 ___ test_gen_items(coders_dataset, item, expected):
-    assert [enc.id_name for enc in coders_dataset[item].enchantments] == expected
+    ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ expected
 
 
 @pytest.mark.parametrize(
@@ -293,4 +293,4 @@ ___ test_gen_items(coders_dataset, item, expected):
 ___ test_item_print(coders_dataset, item, expected, capfd):
     print(coders_dataset[item])
     output = capfd.readouterr()[0].strip()
-    assert output == expected
+    ... output __ expected

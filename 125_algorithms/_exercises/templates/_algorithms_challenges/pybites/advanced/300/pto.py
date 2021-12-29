@@ -1,6 +1,6 @@
-import calendar
-from datetime import date
-from dateutil.relativedelta import relativedelta,FR,MO
+_______ calendar
+____ datetime _______ date
+____ dateutil.relativedelta _______ relativedelta,FR,MO
 
 
 ERROR_MSG = (
@@ -24,7 +24,7 @@ ___ four_day_weekends(*args,
         paid_time_off: int = 200,
         year: int = 2020,
         show_workdays: bool = False
-    ) -> None:
+    ) -> N..
     """Generates four day weekend report
 
     The four day weekends are calculated from the start_month through the end of the year
@@ -48,39 +48,39 @@ ___ four_day_weekends(*args,
 
     __ args:
         raise ValueError(ERROR_MSG)
-    else:
+    ____:
         four_day_weekends = workdays =  0
         weekend_dates =[]
-        workday_dates = []
+        workday_dates    # list
         current = date(year,start_month,1)
         current += relativedelta(weekday=FR)
         first_monday = current + relativedelta(weekday=MO(-1))
-        __ first_monday.year == year and first_monday.month == start_month:
-            workday_dates.append(first_monday)
+        __ first_monday.year __ year and first_monday.month __ start_month:
+            workday_dates.a..(first_monday)
             
 
 
 
-        while current.year == year:
+        while current.year __ year:
             monday = current + relativedelta(weekday=MO)
             thursday = current - relativedelta(days=1)
-            __ thursday.year == year  and thursday not in FEDERAL_HOLIDAYS:
-                workday_dates.append(thursday)
+            __ thursday.year __ year  and thursday n.. __ FEDERAL_HOLIDAYS:
+                workday_dates.a..(thursday)
 
 
             dates = [current,monday]
-            __ monday.year == year:
-                __ all(date not in FEDERAL_HOLIDAYS for date in dates):
-                    weekend_dates.append((current,monday))
+            __ monday.year __ year:
+                __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates):
+                    weekend_dates.a..((current,monday))
                     four_day_weekends += 1
-                else:
-                    __ monday not  in FEDERAL_HOLIDAYS:
-                        workday_dates.append(monday)
-                    __ current not in FEDERAL_HOLIDAYS:
-                        workday_dates.append(current)
-            else:
-                __ current not in FEDERAL_HOLIDAYS:
-                    workday_dates.append(current)
+                ____:
+                    __ monday n..  __ FEDERAL_HOLIDAYS:
+                        workday_dates.a..(monday)
+                    __ current n.. __ FEDERAL_HOLIDAYS:
+                        workday_dates.a..(current)
+            ____:
+                __ current n.. __ FEDERAL_HOLIDAYS:
+                    workday_dates.a..(current)
 
 
 
@@ -92,19 +92,19 @@ ___ four_day_weekends(*args,
 
 
         last_thursday = current - relativedelta(days=1)
-        __ last_thursday.year == year and last_thursday not in FEDERAL_HOLIDAYS:
-            workday_dates.append(last_thursday)
-        workdays = len(workday_dates)
+        __ last_thursday.year __ year and last_thursday n.. __ FEDERAL_HOLIDAYS:
+            workday_dates.a..(last_thursday)
+        workdays = l..(workday_dates)
 
 
         
-        __ not show_workdays:
-            length = len(str(paid_time_off))
+        __ n.. show_workdays:
+            length = l..(str(paid_time_off))
             number = 24 
             before_days = paid_time_off//8 
             new_balance = paid_time_off -  HOURS *  four_day_weekends * 2
             new_days = abs(new_balance // 8)
-            title = f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 else ""}'
+            title = f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 ____ ""}'
             print(f'{title:^{number}}')
             print('='* 24)
 
@@ -113,7 +113,7 @@ ___ four_day_weekends(*args,
             new = [before_days,new_days]
 
             
-            for label,value_1,value_2 in zip(labels,original,new):
+            ___ label,value_1,value_2 __ zip(labels,original,new):
                 print(f'{label:>8} {value_1:>{length}} ({value_2} days)')
 
             print()
@@ -121,18 +121,18 @@ ___ four_day_weekends(*args,
 
 
             start_losing = (four_day_weekends * 2 - before_days)//2
-            date_start_losing = None
+            date_start_losing = N..
             __ start_losing > 0:
                 date_start_losing = weekend_dates[start_losing]
-            for i,(weekend_start,weekend_end) in enumerate(weekend_dates):
+            ___ i,(weekend_start,weekend_end) __ enumerate(weekend_dates):
                 print(f"{weekend_start} - {weekend_end}",end='')
-                __ (weekend_start,weekend_end) == date_start_losing:
+                __ (weekend_start,weekend_end) __ date_start_losing:
                     print(' *')
-                else:
+                ____:
                     print()
 
 
-        else:
+        ____:
             print(f'Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 
@@ -141,5 +141,5 @@ ___ four_day_weekends(*args,
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     four_day_weekends(start_month=10,show_workdays=True)

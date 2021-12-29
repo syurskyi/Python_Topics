@@ -4,19 +4,19 @@ class Solution(object):
     :type s: str
     :rtype: int
     """
-    n = len(s)
+    n = l..(s)
     ans = 0
-    for i in range(n):
+    ___ i __ r..(n):
       left = right = i
-      while left >= 0 and right < n and s[left] == s[right]:
+      while left >= 0 and right < n and s[left] __ s[right]:
         ans += 1
         left -= 1
         right += 1
 
       left = i
       right = i + 1
-      while left >= 0 and right < n and s[left] == s[right]:
+      while left >= 0 and right < n and s[left] __ s[right]:
         ans += 1
         left -= 1
         right += 1
-    return ans
+    r.. ans

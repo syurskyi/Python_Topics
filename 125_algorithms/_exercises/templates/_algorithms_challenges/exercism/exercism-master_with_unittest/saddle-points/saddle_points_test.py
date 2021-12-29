@@ -5,9 +5,9 @@ The saddle_points function must validate the input matrix and raise a
 ValueError with a meaningful error message if the matrix turns out to be
 irregular.
 """
-import unittest
+_______ unittest
 
-from saddle_points import saddle_points
+____ saddle_points _______ saddle_points
 
 
 class SaddlePointTest(unittest.TestCase):
@@ -31,5 +31,5 @@ class SaddlePointTest(unittest.TestCase):
         self.assertRaises(ValueError, saddle_points, inp)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

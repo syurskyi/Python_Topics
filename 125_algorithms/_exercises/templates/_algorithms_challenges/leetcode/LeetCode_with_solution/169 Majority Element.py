@@ -19,15 +19,15 @@ class Solution:
         """
         mjr = nums[0]
         cnt = 0
-        for i, v in enumerate(nums):
-            __ mjr == v:
+        ___ i, v __ enumerate(nums):
+            __ mjr __ v:
                 cnt += 1
-            else:
+            ____:
                 cnt -= 1
 
             __ cnt < 0:
                 mjr = v
                 cnt = 1
 
-        return mjr
+        r.. mjr
 

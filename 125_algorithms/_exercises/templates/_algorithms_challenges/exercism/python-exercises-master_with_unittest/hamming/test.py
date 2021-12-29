@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import hamming
+_______ hamming
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -55,5 +55,5 @@ class HammingTest(unittest.TestCase):
             hamming.distance("ATA", "AGTG")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

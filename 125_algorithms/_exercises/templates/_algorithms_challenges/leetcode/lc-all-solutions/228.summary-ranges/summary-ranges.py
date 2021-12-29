@@ -6,17 +6,17 @@ class Solution(object):
     """
 
     ___ outputRange(start, end):
-      __ start == end:
-        return str(start)
-      return "{}->{}".format(start, end)
+      __ start __ end:
+        r.. str(start)
+      r.. "{}->{}".format(start, end)
 
-    __ not nums:
-      return []
-    ans = []
+    __ n.. nums:
+      r.. []
+    ans    # list
     start = 0
-    for i in range(0, len(nums) - 1):
+    ___ i __ r..(0, l..(nums) - 1):
       __ nums[i] + 1 != nums[i + 1]:
-        ans.append(outputRange(nums[start], nums[i]))
+        ans.a..(outputRange(nums[start], nums[i]))
         start = i + 1
-    ans.append(outputRange(nums[start], nums[-1]))
-    return ans
+    ans.a..(outputRange(nums[start], nums[-1]))
+    r.. ans

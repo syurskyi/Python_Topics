@@ -28,7 +28,7 @@ Note:
 1 <= S.length <= 10000
 S only contains characters "I" or "D".
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -38,18 +38,18 @@ class Solution:
             If "I", then put smallest as prev. Increase from the min
             If "D", then put the largest as prev. Decrese from the max
         """
-        mini, maxa = 0, len(S)
-        ret = []
-        for c in S:
-            __ c == "I":
-                ret.append(mini)
+        mini, maxa = 0, l..(S)
+        ret    # list
+        ___ c __ S:
+            __ c __ "I":
+                ret.a..(mini)
                 mini += 1
-            else:  # "D"
-                ret.append(maxa)
+            ____:  # "D"
+                ret.a..(maxa)
                 maxa -= 1
 
-        ret.append(mini)
-        return ret
+        ret.a..(mini)
+        r.. ret
 
     ___ diStringMatchErrror(self, S: str) -> List[int]:
         """
@@ -58,13 +58,13 @@ class Solution:
         errror since cannot repeat
         """
         ret = [0]
-        for c in S:
-            __ c == "I":
-                ret.append(ret[-1] + 1)
-            else:
-                ret.append(ret[-1] -1)
-        mn = min(ret)
-        return [
+        ___ c __ S:
+            __ c __ "I":
+                ret.a..(ret[-1] + 1)
+            ____:
+                ret.a..(ret[-1] -1)
+        mn = m..(ret)
+        r.. [
             e - mn
-            for e in ret
+            ___ e __ ret
         ]

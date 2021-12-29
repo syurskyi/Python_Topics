@@ -9,11 +9,11 @@ class Solution(object):
         steps = 0
         while n > 1:
             steps += 1
-            __ n%2 == 0:
+            __ n%2 __ 0:
                 n /= 2
-            else:
-                __ (n+1)%4 == 0 and n != 3:
+            ____:
+                __ (n+1)%4 __ 0 and n != 3:
                     n += 1
-                else:
+                ____:
                     n -= 1
-        return steps
+        r.. steps

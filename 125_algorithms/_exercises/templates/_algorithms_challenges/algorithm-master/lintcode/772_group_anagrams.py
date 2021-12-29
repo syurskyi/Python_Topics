@@ -4,15 +4,15 @@ class Solution:
     @return: The anagrams which have been divided into groups
     """
     ___ groupAnagrams(self, s):
-        __ not s:
-            return []
+        __ n.. s:
+            r.. []
 
         group = {}
 
-        for w in s:
-            key = ''.join(sorted(w))
-            __ key not in group:
-                group[key] = []
-            group[key].append(w)
+        ___ w __ s:
+            key = ''.join(s..(w))
+            __ key n.. __ group:
+                group[key]    # list
+            group[key].a..(w)
 
-        return sorted([sorted(g) for g in group.values()])
+        r.. s..([s..(g) ___ g __ group.values()])

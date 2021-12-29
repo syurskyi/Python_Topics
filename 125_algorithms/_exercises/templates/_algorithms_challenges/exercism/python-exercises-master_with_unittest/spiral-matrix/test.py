@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from spiral_matrix import spiral
+____ spiral_matrix _______ spiral
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -36,5 +36,5 @@ class SpiralMatrixTest(unittest.TestCase):
                                      [13, 12, 11, 10, 9]])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

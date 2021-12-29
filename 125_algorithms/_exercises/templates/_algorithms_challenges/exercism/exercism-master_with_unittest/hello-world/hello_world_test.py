@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import hello_world
+_______ hello_world
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -10,5 +10,5 @@ class HelloWorldTest(unittest.TestCase):
         self.assertEqual(hello_world.hello(), 'Hello, World!')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

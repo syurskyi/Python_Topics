@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ removeNthFromEnd(self, head, n):
@@ -41,13 +41,13 @@ class Solution:
         count = 0
         while pre.next:
             cur = pre.next
-            __ count==length-n:
+            __ count__length-n:
                 pre.next = cur.next  # remove
                 break
-            else:
+            ____:
                 count += 1
                 pre = pre.next
 
-        return dummy.next
+        r.. dummy.next
 
 

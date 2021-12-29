@@ -14,11 +14,11 @@ class Solution:
     @return: You should return the head of the sorted linked list, using constant space complexity.
     """
     ___ sortList(self, head):
-        return self.merge_sort(head)
+        r.. self.merge_sort(head)
 
     ___ quick_sort(self, head):
-        __ not head or not head.next:
-            return head
+        __ n.. head o. n.. head.next:
+            r.. head
 
         mid = self.find_middle(head)
 
@@ -30,34 +30,34 @@ class Solution:
             __ head.val < mid.val:
                 left_tail.next = head
                 left_tail = head
-            elif head.val > mid.val:
+            ____ head.val > mid.val:
                 right_tail.next = head
                 right_tail = head
-            else:
+            ____:
                 mid_tail.next = head
                 mid_tail = head
             head = head.next
 
-        left_tail.next = mid_tail.next = right_tail.next = None
+        left_tail.next = mid_tail.next = right_tail.next = N..
 
         left_dummy.next = self.quick_sort(left_dummy.next)
         right_dummy.next = self.quick_sort(right_dummy.next)
 
         dummy = tail = ListNode(0)
-        for node in [left_dummy, mid_dummy, right_dummy]:
+        ___ node __ [left_dummy, mid_dummy, right_dummy]:
             tail.next = node.next
             tail = self.get_tail(tail)
 
-        return dummy.next
+        r.. dummy.next
 
     ___ merge_sort(self, head):
-        __ not head or not head.next:
-            return head
+        __ n.. head o. n.. head.next:
+            r.. head
 
         left = head
         mid = self.find_middle(head)
         right = mid.next
-        mid.next = None
+        mid.next = N..
 
         left = self.merge_sort(left)
         right = self.merge_sort(right)
@@ -68,17 +68,17 @@ class Solution:
             __ left.val < right.val:
                 tail.next = left
                 left = left.next
-            else:
+            ____:
                 tail.next = right
                 right = right.next
             tail = tail.next
 
         __ left:
             tail.next = left
-        else:
+        ____:
             tail.next = right
 
-        return dummy.next
+        r.. dummy.next
 
     ___ find_middle(self, head):
         slow, fast = head, head.next
@@ -87,13 +87,13 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
 
-        return slow
+        r.. slow
 
     ___ get_tail(self, head):
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         while head.next:
             head = head.next
 
-        return head
+        r.. head

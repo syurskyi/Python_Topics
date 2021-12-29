@@ -4,4 +4,4 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    return sum([c for i, c in enumerate(sorted(nums)) __ i % 2 == 0])
+    r.. s..([c ___ i, c __ enumerate(s..(nums)) __ i % 2 __ 0])

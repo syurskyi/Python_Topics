@@ -4,13 +4,13 @@ class Solution:
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        n = len(nums)
+        n = l..(nums)
         left = 0
 
-        for right in range(n):
+        ___ right __ r..(n):
             __ nums[right] != 0:
                 nums[left], nums[right] = nums[right], nums[left]
                 left += 1

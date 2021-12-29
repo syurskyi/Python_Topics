@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import rotational_cipher
+_______ rotational_cipher
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -44,5 +44,5 @@ class RotationalCipher(unittest.TestCase):
             "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,14 +1,14 @@
-import json
-import time
-import requests
-from dataclasses import dataclass
-from datetime import datetime
-from math import acos, cos, radians, sin
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+_______ json
+_______ time
+_______ requests
+____ dataclasses _______ dataclass
+____ datetime _______ datetime
+____ math _______ acos, cos, radians, sin
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
-from dateutil.parser import parse
+____ dateutil.parser _______ parse
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/pycons-europe-2019.json"
 RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.json"
@@ -31,7 +31,7 @@ print(pycons)
 
 
 
-__ not pycons_file.exists() or not nominatim_responses.exists():
+__ n.. pycons_file.exists() o. n.. nominatim_responses.exists():
     urlretrieve(URL, pycons_file)
     urlretrieve(RESPONSES, nominatim_responses)
 
@@ -44,13 +44,13 @@ class PyCon:
     start_date: datetime
     end_date: datetime
     URL: str
-    lat: float = None
-    lon: float = None
+    lat: float = N..
+    lon: float = N..
 
 
     ___ __lt__(self,other):
-        __ isinstance(other,PyCon):
-            return self.start_date < other.start_date
+        __ isi..(other,PyCon):
+            r.. self.start_date < other.start_date
 
 
 @dataclass
@@ -65,7 +65,7 @@ ___ _get_pycons():
        and returns a list of PyCon objects
     """
     with open(pycons_file, "r", encoding="utf-8") as f:
-        return [
+        r.. [
             PyCon(
                 pycon["name"],
                 pycon["city"],
@@ -74,7 +74,7 @@ ___ _get_pycons():
                 parse(pycon["end_date"]),
                 pycon["url"],
             )
-            for pycon in json.load(f)
+            ___ pycon __ json.load(f)
         ]
 
 
@@ -83,7 +83,7 @@ ___ _km_distance(origin, destination):
     lon1, lat1, lon2, lat2 = map(
         radians, [origin.lon, origin.lat, destination.lon, destination.lat]
     )
-    return 6371 * (
+    r.. 6371 * (
         acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2))
     )
 
@@ -95,15 +95,15 @@ ___ _extract_city_country_to_lat_lon():
         places = json.load(f)
     
     mapping = {}
-    for key,places in places.items():
-        for r in places:
-            __ r['type'] == 'city':
+    ___ key,places __ places.items():
+        ___ r __ places:
+            __ r['type'] __ 'city':
                 city,*temp,country = r['display_name'].split(',')
                 city = city.strip()
                 country = country.strip()
                 mapping[(city,country)] = (r['lat'],r['lon'])
     
-    return mapping
+    r.. mapping
         
 
 # Your code #
@@ -115,11 +115,11 @@ ___ update_pycons_lat_lon(pycons):
     """
     mapping = _extract_city_country_to_lat_lon()
 
-    for pycon in pycons:
+    ___ pycon __ pycons:
         city = pycon.city
         country = pycon.country
 
-        for response in data:
+        ___ response __ data:
             lat,lon = mapping[(city,country)]
             pycon.lat = lat
             pycon.lon = long
@@ -146,11 +146,11 @@ ___ create_travel_plan(pycons):
     the destination PyCon and the travel distance between the PyCons.
     """
 
-    sorted_pycons = sorted(pycons)
+    sorted_pycons = s..(pycons)
 
 
 
-    return [Trip(sorted_pycons[i],sorted_pycons[i +1],_get_pycons(sorted_pycons[i],sorted_pycons[i +1])) for i in range(len(sorted_pycons) - 1)]
+    r.. [Trip(sorted_pycons[i],sorted_pycons[i +1],_get_pycons(sorted_pycons[i],sorted_pycons[i +1])) ___ i __ r..(l..(sorted_pycons) - 1)]
 
 
 
@@ -169,4 +169,4 @@ ___ total_travel_distance(journey):
     """
 
 
-    return round(sum(leg.distance for leg in journey),2)
+    r.. round(s..(leg.distance ___ leg __ journey),2)

@@ -1,7 +1,7 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
 MIN_SCORE = 4
-DICE_VALUES = range(1, 7)
+DICE_VALUES = r..(1, 7)
 
 Player = namedtuple('Player', 'name scores')
 
@@ -17,13 +17,13 @@ ___ calculate_score(scores):
        Returns int of the sum of the scores.
     """
     s = 0
-    for score in scores:
-        __ score not in DICE_VALUES:
+    ___ score __ scores:
+        __ score n.. __ DICE_VALUES:
             raise ValueError("Invalid dice value")
         __ score >= MIN_SCORE:
             s += score
 
-    return s
+    r.. s
 
 ___ get_winner(players):
     """Given a list of Player namedtuples return the player
@@ -44,13 +44,13 @@ ___ get_winner(players):
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
     
-    score_list = max_player =  None
+    score_list = max_player =  N..
     max_score = float('-inf')
-    for player in players:
-        __ score_list __ None:
-            score_list  = len(player.scores)
-        else:
-            __ len(player.scores) != score_list:
+    ___ player __ players:
+        __ score_list __ N..
+            score_list  = l..(player.scores)
+        ____:
+            __ l..(player.scores) != score_list:
                 raise ValueError("All lengths don't match!")
         score = calculate_score(player.scores)
         __ score > max_score:
@@ -58,7 +58,7 @@ ___ get_winner(players):
             max_player = player
 
 
-    return max_player
+    r.. max_player
 
 
 

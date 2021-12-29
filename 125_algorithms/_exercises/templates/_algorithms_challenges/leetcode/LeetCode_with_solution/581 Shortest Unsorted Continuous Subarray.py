@@ -16,7 +16,7 @@ Note:
 Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -31,7 +31,7 @@ class Solution:
 
         nums[lo - 1] <= min && max <= nums[hi + 1]
         """
-        n = len(nums)
+        n = l..(nums)
         lo, hi = 0, n - 1
         while lo < hi and nums[lo] <= nums[lo + 1]:
             lo += 1
@@ -40,12 +40,12 @@ class Solution:
             hi -= 1
 
         __ hi <= lo:
-            return 0
+            r.. 0
 
         mini = float('inf')
         maxa = -float('inf')
-        for i in range(lo, hi + 1):
-            mini = min(mini, nums[i])
+        ___ i __ r..(lo, hi + 1):
+            mini = m..(mini, nums[i])
             maxa = max(maxa, nums[i])
 
         while lo - 1 >= 0 and nums[lo - 1] > mini:
@@ -53,24 +53,24 @@ class Solution:
         while hi + 1 < n and nums[hi + 1] < maxa:
             hi += 1
 
-        return hi - lo + 1
+        r.. hi - lo + 1
 
     ___ findUnsortedSubarray_sort(self, nums: List[int]) -> int:
         """
         Brute force sort and compare O(n lgn)
         """
-        expected = list(sorted(nums))
+        expected = l..(s..(nums))
         i = 0
-        while i < len(nums) and nums[i] == expected[i]:
+        while i < l..(nums) and nums[i] __ expected[i]:
             i += 1
 
-        j = len(nums) - 1
-        while j >= i and nums[j] == expected[j]:
+        j = l..(nums) - 1
+        while j >= i and nums[j] __ expected[j]:
             j -= 1
 
-        return j - i + 1
+        r.. j - i + 1
 
 
-__ __name__ == "__main__":
-    assert Solution().findUnsortedSubarray([2, 1]) == 2
-    assert Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) == 5
+__ __name__ __ "__main__":
+    ... Solution().findUnsortedSubarray([2, 1]) __ 2
+    ... Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) __ 5

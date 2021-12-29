@@ -15,14 +15,14 @@ class Solution(object):
         s.sort()
         i, j = 0, 0
         count = 0
-        while i < len(g) and j < len(s):
+        while i < l..(g) and j < l..(s):
             __ g[i] <= s[j]:
                 i += 1
                 j += 1
                 count += 1
-            else:
+            ____:
                 j += 1
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
@@ -30,13 +30,13 @@ class Solution(object):
             ([1,2], [1,2,3]),
             ([10,9,8,7], [5,6,7,8]),
         ]
-        for g, s in testCases:
+        ___ g, s __ testCases:
             print('g: %s' % g)
             print('s: %s' % s)
             result = self.findContentChildren(g, s)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

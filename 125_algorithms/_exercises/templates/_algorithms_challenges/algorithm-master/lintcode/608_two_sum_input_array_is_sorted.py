@@ -10,19 +10,19 @@ class Solution:
     """
     ___ twoSum(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A:
-            return NOT_FOUND
+        __ n.. A:
+            r.. NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
-            __ A[i] in remaining:
-                return [
+        ___ i __ r..(l..(A)):
+            __ A[i] __ remaining:
+                r.. [
                     remaining[A[i]] + 1,
                     i + 1,
                 ]
             remaining[target - A[i]] = i
 
-        return NOT_FOUND
+        r.. NOT_FOUND
 
 
 """
@@ -37,17 +37,17 @@ class Solution:
     """
     ___ twoSum(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A:
-            return NOT_FOUND
+        __ n.. A:
+            r.. NOT_FOUND
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         while left < right:
             _sum = A[left] + A[right]
-            __ _sum == target:
-                return [left + 1, right + 1]
+            __ _sum __ target:
+                r.. [left + 1, right + 1]
             __ _sum < target:
                 left += 1
-            else:
+            ____:
                 right -= 1
 
-        return NOT_FOUND
+        r.. NOT_FOUND

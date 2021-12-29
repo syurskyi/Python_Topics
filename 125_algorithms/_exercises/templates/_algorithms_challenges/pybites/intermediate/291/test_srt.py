@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from srt import get_srt_section_ids
+____ srt _______ get_srt_section_ids
 
 text1 = """
 1
@@ -58,4 +58,4 @@ she is talking super fast here!
     (text5, [34, 32, 33]),
 ])
 ___ test_srt(text, expected):
-    assert get_srt_section_ids(text) == expected
+    ... get_srt_section_ids(text) __ expected

@@ -10,14 +10,14 @@ class Solution(object):
         :type n: str
         :rtype: str
         """
-        import math
+        _______ math
         n = int(n)
         max_n = int(math.log(n, 2))
-        for m in range(max_n, 1, -1):
+        ___ m __ r..(max_n, 1, -1):
             k = int(n**m**-1)
-            __ (k**(m+1)-1)//(k-1) == n:
-                return str(k)
-        return str(n-1)
+            __ (k**(m+1)-1)//(k-1) __ n:
+                r.. str(k)
+        r.. str(n-1)
     
     ___ test(self):
         testCases = [
@@ -25,11 +25,11 @@ class Solution(object):
             '4681',
             '1000000000000000000',
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.smallestGoodBase(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

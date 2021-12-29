@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from variable_length_quantity import encode, decode
+____ variable_length_quantity _______ encode, decode
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -96,5 +96,5 @@ class TestVLQ(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

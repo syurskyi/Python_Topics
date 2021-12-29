@@ -1,10 +1,10 @@
-from itertools import combinations, permutations
+____ itertools _______ combinations, permutations
 
 ___ friends_teams(friend_list, team_size=2, order_does_matter=False):
     #print(len(friend_list), team_size, order_does_matter)
-    return list(combinations(friend_list, team_size)) __ not order_does_matter else list(permutations(friend_list, team_size))
+    r.. l..(combinations(friend_list, team_size)) __ n.. order_does_matter ____ l..(permutations(friend_list, team_size))
 
-friends = 'Bob Dante Julian Martin'.split()
+friends = 'Bob Dante Julian Martin'.s..
 
 print(friends)
 

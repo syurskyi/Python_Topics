@@ -1,12 +1,12 @@
 ___ flatten(nested_list):
-    return [element for element in flatten_list(nested_list)]
+    r.. [element ___ element __ flatten_list(nested_list)]
 
 
 ___ flatten_list(nested_list):
-    for element in nested_list:
-        __ not isinstance(element, list):
-            __ element is not None and not isinstance(element, tuple):
+    ___ element __ nested_list:
+        __ n.. isi..(element, l..):
+            __ element __ n.. N.. and n.. isi..(element, tuple):
                 yield element
-        else:
-            for subelement in flatten_list(element):
+        ____:
+            ___ subelement __ flatten_list(element):
                 yield subelement

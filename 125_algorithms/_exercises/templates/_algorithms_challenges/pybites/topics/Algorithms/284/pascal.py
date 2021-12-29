@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 
 ___ pascal(N: int) -> List[int]:
@@ -6,23 +6,23 @@ ___ pascal(N: int) -> List[int]:
     Return the Nth row of Pascal triangle
     """
     in_list = [1]
-    out_list = []
-    __ N == 0:
-        return out_list
-    elif N == 1:
-        return in_list
-    else:
-        for x in range(N-1):
+    out_list    # list
+    __ N __ 0:
+        r.. out_list
+    ____ N __ 1:
+        r.. in_list
+    ____:
+        ___ x __ r..(N-1):
             #print(x)
-            out_list = []
-            for i, v in enumerate(in_list):
-                __ i == 0:
-                    out_list.append(v)
-                else:
-                    out_list.append(v + in_list[i-1])
-            out_list.append(in_list[-1])
+            out_list    # list
+            ___ i, v __ enumerate(in_list):
+                __ i __ 0:
+                    out_list.a..(v)
+                ____:
+                    out_list.a..(v + in_list[i-1])
+            out_list.a..(in_list[-1])
             in_list = out_list
-    return out_list
+    r.. out_list
 
 
 print(pascal(12))

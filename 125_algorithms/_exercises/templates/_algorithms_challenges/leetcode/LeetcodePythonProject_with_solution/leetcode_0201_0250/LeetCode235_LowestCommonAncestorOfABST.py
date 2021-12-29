@@ -8,8 +8,8 @@ Created on Feb 26, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ lowestCommonAncestor(self, root, p, q):
@@ -19,13 +19,13 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not p or not q:
-            return None
-        elif p.val < root.val and q.val < root.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif p.val > root.val and q.val > root.val:
-            return self.lowestCommonAncestor(root.right, p, q)
-        else:
-            return root
+        __ n.. root o. n.. p o. n.. q:
+            r.. N..
+        ____ p.val < root.val and q.val < root.val:
+            r.. self.lowestCommonAncestor(root.left, p, q)
+        ____ p.val > root.val and q.val > root.val:
+            r.. self.lowestCommonAncestor(root.right, p, q)
+        ____:
+            r.. root
     
     

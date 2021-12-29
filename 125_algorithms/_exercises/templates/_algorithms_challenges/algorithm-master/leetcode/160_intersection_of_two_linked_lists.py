@@ -11,8 +11,8 @@ class Solution(object):
         :type A, B: ListNode
         :rtype: ListNode
         """
-        __ not A or not B:
-            return
+        __ n.. A o. n.. B:
+            r..
 
         X, Y = A, B
 
@@ -28,8 +28,8 @@ class Solution(object):
             Y = Y.next
             B = B.next
 
-        while A is not B:
+        while A __ n.. B:
             A = A.next
             B = B.next
 
-        return A
+        r.. A

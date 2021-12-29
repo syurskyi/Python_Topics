@@ -1,4 +1,4 @@
-from reqs import changed_dependencies
+____ reqs _______ changed_dependencies
 
 # version might be fictitious for testing purposes
 old_reqs = """
@@ -32,10 +32,10 @@ WTForms==2.1
 ___ test_changed_dependencies_old_vs_new():
     actual = changed_dependencies(old_reqs, new_reqs)
     expected = ['Faker', 'Flask']
-    assert sorted(actual) == expected
+    ... s..(actual) __ expected
 
 
 ___ test_changed_dependencies_other_data():
     actual = changed_dependencies(other_old_reqs, other_new_reqs)
     expected = ['WTForms', 'Werkzeug']
-    assert sorted(actual) == expected
+    ... s..(actual) __ expected

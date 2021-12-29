@@ -18,18 +18,18 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        t = [-1 for _ in range(n + 1)]
-        return self.num_trees_aux(n, t)
+        t = [-1 ___ _ __ r..(n + 1)]
+        r.. self.num_trees_aux(n, t)
 
     ___ num_trees_aux(self, n, t):
-        __ n == 0 or n == 1:
-            return 1
-        elif t[n] != -1:
-            return t[n]
-        else:
+        __ n __ 0 o. n __ 1:
+            r.. 1
+        ____ t[n] != -1:
+            r.. t[n]
+        ____:
             res = 0
-            for i in range(n):
+            ___ i __ r..(n):
                 res += self.num_trees_aux(i, t) * \
                     self.num_trees_aux(n - 1 - i, t)
             t[n] = res
-            return res
+            r.. res

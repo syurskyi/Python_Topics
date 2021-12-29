@@ -1,6 +1,6 @@
 ___ solve_recursion  m, w, v, n
     # base cases
-    __ n __ 0 or m __ 0:
+    __ n __ 0 o. m __ 0:
         r_ 0
 
     # the given item can NOT fit into the knapsack

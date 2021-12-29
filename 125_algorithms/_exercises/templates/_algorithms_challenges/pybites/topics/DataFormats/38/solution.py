@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+_______ xml.etree.ElementTree as ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -13,19 +13,19 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 
 ___ get_tree():
     """You probably want to use ET.fromstring"""
-    return ET.ElementTree(ET.fromstring(xmlstring))
+    r.. ET.ElementTree(ET.fromstring(xmlstring))
 
 
 ___ get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
     tree = get_tree()
-    for movie in tree.iter(tag='movie'):
+    ___ movie __ tree.iter(tag='movie'):
         yield movie.attrib['title']
 
 
 ___ _get_runtime(movie):
     """Helper function to extract the minutes (int) from the runtime movie attribute"""
-    return int(movie.attrib['runtime'].rstrip(' min'))
+    r.. int(movie.attrib['runtime'].rstrip(' min'))
 
 
 ___ get_movie_longest_runtime():
@@ -33,6 +33,6 @@ ___ get_movie_longest_runtime():
        runtime in minutes, for latter consider adding a _get_runtime helper"""
     tree = get_tree()
     movies = [(movie.attrib['title'], _get_runtime(movie))
-              for movie in tree.iter(tag='movie')]
-    max_movie, max_runtime = max(movies, key=lambda m: m[1])
-    return max_movie
+              ___ movie __ tree.iter(tag='movie')]
+    max_movie, max_runtime = max(movies, key=l.... m: m[1])
+    r.. max_movie

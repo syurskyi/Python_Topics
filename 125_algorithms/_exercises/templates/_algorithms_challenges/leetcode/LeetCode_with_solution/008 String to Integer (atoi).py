@@ -22,25 +22,25 @@ class Solution:
         INT_MIN = -2147483648
         # clean
         str = str.strip()
-        __ not str:
-            return 0
+        __ n.. str:
+            r.. 0
 
         # clean up leading sign
         sign = 1
-        __ str[0] in ("+", "-"):
-            __ str[0] == "-":
+        __ str[0] __ ("+", "-"):
+            __ str[0] __ "-":
                 sign = -1
             str = str[1:]
 
         # check for leading digit
-        __ not str[0].isdigit():
-            return 0
+        __ n.. str[0].isdigit():
+            r.. 0
 
         # ignore the non-digit appended behind
         # The string can contain additional characters after those that form the integral number,
         # which are ignored and have no effect on the behavior of this function
-        for ind, val in enumerate(str):  # find the 1st non-digit
-            __ not val.isdigit():
+        ___ ind, val __ enumerate(str):  # find the 1st non-digit
+            __ n.. val.isdigit():
                 str = str[:ind]
                 break
 
@@ -48,16 +48,16 @@ class Solution:
 
 
         # convert char array to integer
-        sum = 0
+        s.. = 0
         scale = 1
-        for element in str[::-1]:
-            sum += scale*int(element)
+        ___ element __ str[::-1]:
+            s.. += scale*int(element)
             scale *= 10
 
         # return sign*sum, and pay attention to the C constraints
-        result = sign*sum
+        result = sign*s..
         __ result > INT_MAX:
-            return INT_MAX
+            r.. INT_MAX
         __ result < INT_MIN:
-            return INT_MIN
-        return result
+            r.. INT_MIN
+        r.. result

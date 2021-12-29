@@ -21,8 +21,8 @@ Note:
 0 <= A[i] <= 10^9
 0 <= B[i] <= 10^9
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -39,30 +39,30 @@ class Solution:
         Keep a reverse index mapping is not enough, since duplicate in B
         then keep a list
         """
-        idxes = defaultdict(list)
-        for i, b in enumerate(B):
-            idxes[b].append(i)
+        idxes = defaultdict(l..)
+        ___ i, b __ enumerate(B):
+            idxes[b].a..(i)
 
-        n = len(A)
+        n = l..(A)
         A.sort()
         B.sort()
-        ret = [None for _ in range(n)]
-        not_used = []
+        ret = [N.. ___ _ __ r..(n)]
+        not_used    # list
         j = 0
-        for a in A:
+        ___ a __ A:
             __ a > B[j]:
                 i = idxes[B[j]].pop()
                 ret[i] = a
                 j += 1
-            else:
-                not_used.append(a)
+            ____:
+                not_used.a..(a)
 
-        for i in range(n):
-            __ ret[i] is None:
+        ___ i __ r..(n):
+            __ ret[i] __ N..
                 ret[i] = not_used.pop()
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().advantageCount([2,7,11,15], [1,10,4,11]) == [2,11,7,15]
+__ __name__ __ "__main__":
+    ... Solution().advantageCount([2,7,11,15], [1,10,4,11]) __ [2,11,7,15]

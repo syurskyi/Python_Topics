@@ -17,19 +17,19 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        n = len(nums)
+        n = l..(nums)
         res = nums[0] + nums[1] + nums[2]
-        for i in range(n - 2):
+        ___ i __ r..(n - 2):
             l = i + 1
             r = n - 1
             while l < r:
                 s = nums[i] + nums[l] + nums[r]
                 __ abs(s - target) < abs(res - target):
                     res = s
-                __ s == target:
-                    return s
-                elif s < target:
+                __ s __ target:
+                    r.. s
+                ____ s < target:
                     l += 1
-                else:
+                ____:
                     r -= 1
-        return res
+        r.. res

@@ -6,7 +6,7 @@ Created on Oct 18, 2017
 class TreeNode(object):
     ___ __init__(self, val):
         self.val = val
-        self.sum = 0
+        self.s.. = 0
         self.children = {}
 
 class MapSum(object):
@@ -16,7 +16,7 @@ class MapSum(object):
         Initialize your data structure here.
         """
         self.hashmap = {}
-        self.root = TreeNode(None)
+        self.root = TreeNode(N..)
 
     ___ insert(self, key, val):
         """
@@ -25,31 +25,31 @@ class MapSum(object):
         :rtype: void
         """
         diff = 0
-        __ key in self.hashmap:
+        __ key __ self.hashmap:
             diff = -self.hashmap[key]
         self.hashmap[key] = val
         node = self.root
-        for c in key:
-            __ c not in node.children:
+        ___ c __ key:
+            __ c n.. __ node.children:
                 newNode = TreeNode(c)
                 node.children[c] = newNode
             node = node.children[c]
-            node.sum += val+diff
+            node.s.. += val+diff
 
-    ___ sum(self, prefix):
+    ___ s..(self, prefix):
         """
         :type prefix: str
         :rtype: int
         """
         node = self.root
-        for c in prefix:
-            __ c not in node.children:
-                return 0
+        ___ c __ prefix:
+            __ c n.. __ node.children:
+                r.. 0
             node = node.children[c]
-        return node.sum
+        r.. node.s..
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     mapSum = MapSum()
     mapSum.insert('aa', 3)
     mapSum.insert('aa', 2)
-    print(mapSum.sum('a'))
+    print(mapSum.s..('a'))

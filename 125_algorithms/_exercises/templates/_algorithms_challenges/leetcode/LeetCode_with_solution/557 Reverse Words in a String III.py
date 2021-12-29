@@ -13,4 +13,4 @@ be any extra space in the string.
 
 class Solution:
     ___ reverseWords(self, s: str) -> str:
-        return " ".join(map(lambda x: x[::-1], s.split(" ")))
+        r.. " ".join(map(l.... x: x[::-1], s.split(" ")))

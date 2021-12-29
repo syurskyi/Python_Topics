@@ -22,21 +22,21 @@ class Solution(object):
 
         Time Limit Exceeded
         """
-        n = len(nums)
+        n = l..(nums)
         # t[i] means mininum number of jumps to nums[i]
-        t = [-1 for i in range(n)]
+        t = [-1 ___ i __ r..(n)]
         t[0] = 0
-        __ n == 1:
-            return 1
-        for i in range(n):
+        __ n __ 1:
+            r.. 1
+        ___ i __ r..(n):
             steps = nums[i]
-            end = min(i + steps, n - 1)
-            for j in range(i + 1, end + 1):
-                __ t[j] == -1:
+            end = m..(i + steps, n - 1)
+            ___ j __ r..(i + 1, end + 1):
+                __ t[j] __ -1:
                     t[j] = t[i] + 1
-                else:
-                    t[j] = min(t[i] + 1, t[j])
-        return t[-1]
+                ____:
+                    t[j] = m..(t[i] + 1, t[j])
+        r.. t[-1]
 
 
 a1 = [2, 3, 1, 1, 4]

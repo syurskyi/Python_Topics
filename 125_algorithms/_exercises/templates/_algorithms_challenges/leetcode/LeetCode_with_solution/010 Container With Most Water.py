@@ -19,19 +19,19 @@ class Solution:
         :return: max area, integer
         """
         start = 0
-        end = len(height)-1
+        end = l..(height)-1
 
         max_area = -1 << 32
         while start < end:
-            area = min(height[start], height[end])*(end-start)
+            area = m..(height[start], height[end])*(end-start)
             max_area = max(area, max_area)
 
             # move the shorter boarder
             # move two pointers
             __ height[start] < height[end]:
                 start += 1
-            else:
+            ____:
                 end -= 1
 
-        return max_area
+        r.. max_area
 

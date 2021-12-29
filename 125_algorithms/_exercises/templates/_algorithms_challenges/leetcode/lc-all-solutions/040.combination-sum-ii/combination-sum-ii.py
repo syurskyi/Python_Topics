@@ -7,24 +7,24 @@ class Solution(object):
     """
 
     ___ dfs(nums, target, start, visited, path, res):
-      __ target == 0:
-        res.append(path + [])
-        return
+      __ target __ 0:
+        res.a..(path + [])
+        r..
 
-      for i in range(start, len(nums)):
-        __ i > start and nums[i] == nums[i - 1]:
+      ___ i __ r..(start, l..(nums)):
+        __ i > start and nums[i] __ nums[i - 1]:
           continue
         __ target - nums[i] < 0:
-          return 0
-        __ i not in visited:
+          r.. 0
+        __ i n.. __ visited:
           visited.add(i)
-          path.append(nums[i])
+          path.a..(nums[i])
           dfs(nums, target - nums[i], i + 1, visited, path, res)
           path.pop()
           visited.discard(i)
 
     candidates.sort()
-    res = []
+    res    # list
     visited = set([])
     dfs(candidates, target, 0, visited, [], res)
-    return res
+    r.. res

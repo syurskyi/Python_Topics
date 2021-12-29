@@ -1,5 +1,5 @@
 ___ foo(number):
-    return dict(sign  "positive" __ number > 0 else
-        ("negative" __ number < 0 else "zero"),
-        parity  "odd" __ number % 2 __ 1 else
-        ("even" __ number % 2 __ 0 else "non integer"))
+    r.. d..(sign  "positive" __ number > 0 ____
+        ("negative" __ number < 0 ____ "zero"),
+        parity  "odd" __ number % 2 __ 1 ____
+        ("even" __ number % 2 __ 0 ____ "non integer"))

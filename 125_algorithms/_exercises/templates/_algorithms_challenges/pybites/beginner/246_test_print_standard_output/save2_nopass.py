@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from workouts import print_workout_days
+____ workouts _______ print_workout_days
 
 
 WORKOUTS = {'mon': 'upper body #1',
@@ -12,5 +12,5 @@ WORKOUTS = {'mon': 'upper body #1',
 ___ test_print_workout_days(capfd):
     workout = print_workout_days()
     output = capfd.readouterr()[0]
-    assert type(output) == str
-    assert workout('upper body #1') == 'Mon'
+    ... type(output) __ str
+    ... workout('upper body #1') __ 'Mon'

@@ -1,20 +1,20 @@
-from random import random
+____ random _______ random
 row  5
 matrix  []
 
-for i in range(row):
+___ i __ r..(row):
     myrow  []
-    for j in range(row):
-        myrow.append(i..(random()*10))
-    matrix.append(myrow)
+    ___ j __ r..(row):
+        myrow.a..(i..(random()*10))
+    matrix.a..(myrow)
 
-for myrow in matrix:
+___ myrow __ matrix:
     print(myrow)
 
 sum_diagonal1  0
 sum_diagonal2  0
 
-for i in range(row):
+___ i __ r..(row):
     sum_diagonal1 + matrix[i][i]
     sum_diagonal2 + matrix[i][row-i-1]
 

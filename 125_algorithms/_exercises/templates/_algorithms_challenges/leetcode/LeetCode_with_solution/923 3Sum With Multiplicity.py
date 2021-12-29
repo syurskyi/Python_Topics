@@ -31,8 +31,8 @@ Note:
 0 <= A[i] <= 100
 0 <= target <= 300
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 MOD = 10 ** 9 + 7
@@ -46,41 +46,41 @@ class Solution:
         j, k scan each element once
         """
         counter = defaultdict(int)
-        for a in A:
+        ___ a __ A:
             counter[a] += 1
 
-        keys = list(counter.keys())
+        keys = l..(counter.keys())
         keys.sort()
-        n = len(keys)
+        n = l..(keys)
         ret = 0
-        for i in range(n):
+        ___ i __ r..(n):
             j = i  # not i + 1
             k = n - 1
             while j <= k:  # not <
                 a, b, c = keys[i], keys[j], keys[k]
                 __ b + c < target - a:
                     j += 1
-                elif b + c > target - a:
+                ____ b + c > target - a:
                     k -= 1
-                else:  # equal
+                ____:  # equal
                     __ a < b < c:
                         ret += counter[a] * counter[b] * counter[c]
-                    elif a == b < c:
+                    ____ a __ b < c:
                         # nC2
                         ret += counter[a] * (counter[a] - 1) // 2 * counter[c]
-                    elif a < b == c:
+                    ____ a < b __ c:
                         ret += counter[a] * counter[b]  * (counter[b] - 1) // 2
-                    elif a== b == c:
+                    ____ a__ b __ c:
                         # nC3
                         ret += counter[a] * (counter[a] - 1) * (counter[a] - 2) // (3 * 2)
-                    else:
+                    ____:
                         raise
 
                     ret %= MOD
                     j += 1
                     k -= 1
 
-        return ret
+        r.. ret
 
     ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
         """
@@ -89,78 +89,78 @@ class Solution:
         j, k scan each element once
         """
         A.sort()
-        n = len(A)
+        n = l..(A)
         ret = 0
-        for i in range(n):
+        ___ i __ r..(n):
             j = i + 1
             k = n - 1
             while j < k:
                 __ A[j] + A[k] < target - A[i]:
                     j += 1
-                elif A[j] + A[k] > target - A[i]:
+                ____ A[j] + A[k] > target - A[i]:
                     k -= 1
-                else:  # equal
+                ____:  # equal
                     l_cnt = 1
-                    while j + l_cnt < n and A[j + l_cnt] == A[j]:
+                    while j + l_cnt < n and A[j + l_cnt] __ A[j]:
                         l_cnt += 1
 
                     r_cnt = 1
-                    while k - r_cnt >= 0 and A[k - r_cnt] == A[k]:
+                    while k - r_cnt >= 0 and A[k - r_cnt] __ A[k]:
                         r_cnt += 1
 
                     __ A[j] != A[k]:
                         ret += l_cnt * r_cnt
                         ret %= MOD
-                    else:
+                    ____:
                         ret += l_cnt * (l_cnt - 1) // 2  # nC2
                         ret %= MOD
 
                     j += l_cnt
                     k -= r_cnt
 
-        return ret
+        r.. ret
 
     ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        n = len(A)
-        F = [[[0 for _ in range(3 + 1)] for _ in range(target + 1)] for _ in range(n+1)]
+        n = l..(A)
+        F = [[[0 ___ _ __ r..(3 + 1)] ___ _ __ r..(target + 1)] ___ _ __ r..(n+1)]
 
-        for i in range(n+1):
+        ___ i __ r..(n+1):
             F[i][0][0] = 1
 
-        for i in range(1, n + 1):
-            for t in range(target + 1):
-                for k in range(1, 3 + 1):
+        ___ i __ r..(1, n + 1):
+            ___ t __ r..(target + 1):
+                ___ k __ r..(1, 3 + 1):
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] % MOD
                     __ t - A[i-1] >= 0:
                         F[i][t][k] += F[i-1][t-A[i-1]][k-1] % MOD
 
         print(F[n][target][3])
-        return F[n][target][3]
+        r.. F[n][target][3]
 
     ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        F = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
-        n = len(A)
-        for i in range(n+1):
+        F = defaultdict(l....: defaultdict(l....: defaultdict(int)))
+        n = l..(A)
+        ___ i __ r..(n+1):
             F[i][0][0] = 1
 
-        for i in range(1, n + 1):
-            for t in range(target + 1):
-                for k in range(1, 3 + 1):
+        ___ i __ r..(1, n + 1):
+            ___ t __ r..(target + 1):
+                ___ k __ r..(1, 3 + 1):
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] + F[i-1][t-A[i-1]][k-1]
                     F[i][t][k] %= MOD
 
-        return F[n][target][3]
+        r.. F[n][target][3]
 
 
-__ __name__ == "__main__":
-    assert Solution().threeSumMulti([1,1,2,2,3,3,4,4,5,5], 8) == 20
+__ __name__ __ "__main__":
+    ... Solution().threeSumMulti([1,1,2,2,3,3,4,4,5,5], 8) __ 20

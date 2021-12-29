@@ -21,20 +21,20 @@ class Solution:
         :type nums: list
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         __ n < 2:
-            return sum(nums)
+            r.. s..(nums)
 
         # include first but exclude last
-        F = [0 for _ in xrange(n-1+2)]
-        for i in xrange(2, n+1):
+        F = [0 ___ _ __ xrange(n-1+2)]
+        ___ i __ xrange(2, n+1):
             F[i] = max(F[i-1], F[i-2]+nums[i-2])
         ret = F[-1]
 
         # exclude first but include last
-        F = [0 for _ in xrange(n-1+2)]
-        for i in xrange(2, n+1):
+        F = [0 ___ _ __ xrange(n-1+2)]
+        ___ i __ xrange(2, n+1):
             F[i] = max(F[i-1], F[i-2]+nums[i-1])
 
         ret = max(ret, F[-1])
-        return ret
+        r.. ret

@@ -24,9 +24,9 @@ what I'm building:
 
 """
 
-from collections import Counter
+____ collections _______ Counter
 
-import requests
+_______ requests
 
 CAR_DATA = 'https://bit.ly/2Ov65SJ'
 
@@ -41,29 +41,29 @@ ___ most_prolific_automaker(year):
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
     result = {}
-    for d in data:
-        __ d['year'] == year:
+    ___ d __ data:
+        __ d['year'] __ year:
             try:
                 result[d['automaker']] += 1
             except:
                 result[d['automaker']] = 0
     t = ""
     cur = 0
-    for k,v in result.items():
+    ___ k,v __ result.items():
         __ v > cur:
             t = k
             cur = v
-    return t
+    r.. t
 
 
 ___ get_models(automaker, year):
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
     s = set()
-    for d in data:
-        __ d['automaker'] == automaker and d['year'] == year:
+    ___ d __ data:
+        __ d['automaker'] __ automaker and d['year'] __ year:
             s.add(d['model'])
-    return s
+    r.. s
 
 most_prolific_automaker(1995)
 get_models("Chrysler", 1999)

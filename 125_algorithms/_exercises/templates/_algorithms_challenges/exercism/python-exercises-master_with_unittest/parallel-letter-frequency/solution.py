@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from collections import Counter
-from threading import Lock, Thread
-from time import sleep
-import sys
-__ sys.version[0] == '2':
-    from Queue import Queue
-else:
-    from queue import Queue
+____ collections _______ Counter
+____ threading _______ Lock, Thread
+____ time _______ sleep
+_______ sys
+__ sys.version[0] __ '2':
+    ____ Queue _______ Queue
+____:
+    ____ queue _______ Queue
 
 total_workers = 3  # Maximum number of threads chosen arbitrarily
 
@@ -26,31 +26,31 @@ class LetterCounter(object):
 
 
 ___ count_letters(queue_of_texts, letter_to_frequency, worker_id):
-    while not queue_of_texts.empty():
+    while n.. queue_of_texts.empty():
         sleep(worker_id + 1)
         line_input = queue_of_texts.get()
-        __ line_input is not None:
-            letters_in_line = Counter([x for x in line_input.lower() __
+        __ line_input __ n.. N..
+            letters_in_line = Counter([x ___ x __ line_input.lower() __
                                        x.isalpha()])
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()
-        __ line_input is None:
+        __ line_input __ N..
             break
 
 
 ___ calculate(list_of_texts):
     queue_of_texts = Queue()
-    [queue_of_texts.put(line) for line in list_of_texts]
+    [queue_of_texts.put(line) ___ line __ list_of_texts]
     letter_to_frequency = LetterCounter()
-    threads = []
-    for i in range(total_workers):
+    threads    # list
+    ___ i __ r..(total_workers):
         worker = Thread(target=count_letters, args=(queue_of_texts,
                                                     letter_to_frequency, i))
         worker.start()
-        threads.append(worker)
+        threads.a..(worker)
     queue_of_texts.join()
-    for i in range(total_workers):
-        queue_of_texts.put(None)
-    for t in threads:
+    ___ i __ r..(total_workers):
+        queue_of_texts.put(N..)
+    ___ t __ threads:
         t.join()
-    return letter_to_frequency.value
+    r.. letter_to_frequency.value

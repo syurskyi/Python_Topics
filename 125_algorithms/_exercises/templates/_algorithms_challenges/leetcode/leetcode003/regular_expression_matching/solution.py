@@ -1,29 +1,29 @@
 class Solution:
     # @return a boolean
     ___ isMatch(self, s, p):
-        __ not p:
-            return not s
-        __ not s:
-            return False
-        return self.is_match_aux(s, p, 0, 0)
+        __ n.. p:
+            r.. n.. s
+        __ n.. s:
+            r.. False
+        r.. self.is_match_aux(s, p, 0, 0)
 
     ___ is_match_aux(self, s, p, si, pi):
-        __ pi == len(p):
-            return si == len(s)
+        __ pi __ l..(p):
+            r.. si __ l..(s)
         # Next char is not *
         # pi may be the last char
-        __ pi < len(p) - 1 and p[pi + 1] != '*' or pi == len(p) - 1:
-            assert p[pi] != '*'
+        __ pi < l..(p) - 1 and p[pi + 1] != '*' o. pi __ l..(p) - 1:
+            ... p[pi] != '*'
             # si must be in bound
-            is_cur_matched = si < len(s) and (p[pi] == s[si] or p[pi] == '.')
+            is_cur_matched = si < l..(s) and (p[pi] __ s[si] o. p[pi] __ '.')
             is_next_matched = self.is_match_aux(s, p, si + 1, pi + 1)
-            return is_cur_matched and is_next_matched
+            r.. is_cur_matched and is_next_matched
         # Next char is *
-        while si < len(s) and pi < len(p) and (p[pi] == s[si] or p[pi] == '.'):
+        while si < l..(s) and pi < l..(p) and (p[pi] __ s[si] o. p[pi] __ '.'):
             __ self.is_match_aux(s, p, si, pi + 2):
-                return True
+                r.. True
             si += 1
-        return self.is_match_aux(s, p, si, pi + 2)
+        r.. self.is_match_aux(s, p, si, pi + 2)
 
 
 s = Solution()

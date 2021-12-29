@@ -2,4 +2,4 @@ ALPHABET = 'abcdefghijklmnopqrstuvwxyz '
 
 
 ___ is_pangram(s):
-    return set(list(s.lower())) >= set(ALPHABET)
+    r.. set(l..(s.lower())) >= set(ALPHABET)

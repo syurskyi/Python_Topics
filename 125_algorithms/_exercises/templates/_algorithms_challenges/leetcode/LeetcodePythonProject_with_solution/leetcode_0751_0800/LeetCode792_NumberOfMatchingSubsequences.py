@@ -11,22 +11,22 @@ class Solution(object):
         :rtype: int
         """
         hashmap = {}
-        for i in range(26):
+        ___ i __ r..(26):
             c = chr(ord('a')+i)
-            hashmap[c] = []
-        for word in words:
-            hashmap[word[0]].append(word)
+            hashmap[c]    # list
+        ___ word __ words:
+            hashmap[word[0]].a..(word)
         count = 0
-        for c in S:
+        ___ c __ S:
             deque = hashmap[c]
-            size = len(deque)
-            for i in range(size):
+            size = l..(deque)
+            ___ i __ r..(size):
                 word = deque.pop(0)
-                __ len(word) == 1:
+                __ l..(word) __ 1:
                     count += 1
-                else:
-                    hashmap[word[1]].append(word[1:])
-        return count
+                ____:
+                    hashmap[word[1]].a..(word[1:])
+        r.. count
     
     ___ test(self):
         testCases = [
@@ -35,10 +35,10 @@ class Solution(object):
                 ["a", "bb", "acd", "ace"],
             ],
         ]
-        for s, words in testCases:
+        ___ s, words __ testCases:
             result = self.numMatchingSubseq(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -34,11 +34,11 @@ class LFUCache:
         :type key: int
         :rtype: int
         """
-        __ key not in self.nodes:
-            return -1
+        __ key n.. __ self.nodes:
+            r.. -1
 
         self._update(key)
-        return self.nodes[key].val
+        r.. self.nodes[key].val
 
     ___ set(self, key, val):
         """
@@ -47,13 +47,13 @@ class LFUCache:
         :rtype: void
         """
         __ self.cap <= 0:
-            return
+            r..
 
-        __ key in self.nodes:
+        __ key __ self.nodes:
             self._update(key, val)
-            return
+            r..
 
-        while len(self.nodes) >= self.cap:
+        while l..(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)
@@ -73,11 +73,11 @@ class LFUCache:
             cache_node.val = val
 
         from_freq = cache_node.freq_node
-        to_freq = None
+        to_freq = N..
 
-        __ from_freq.nxt and from_freq.nxt.freq == from_freq.freq + 1:
+        __ from_freq.nxt and from_freq.nxt.freq __ from_freq.freq + 1:
             to_freq = from_freq.nxt
-        else:
+        ____:
             to_freq = FreqNode(from_freq.freq + 1)
             from_freq.after(to_freq)
 
@@ -92,9 +92,9 @@ class LFUCache:
         self.nodes[key] = cache_node
 
         freq_head = self.D.nxt
-        __ freq_head and freq_head.freq == 0:
+        __ freq_head and freq_head.freq __ 0:
             freq_head.append_tail(cache_node)
-            return
+            r..
 
         freq_head = FreqNode(0)
         freq_head.append_tail(cache_node)
@@ -102,7 +102,7 @@ class LFUCache:
 
 
 class CacheNode:
-    ___ __init__(self, key, val=None, freq_node=None, pre=None, nxt_ N..
+    ___ __init__(self, key, val=N.., freq_node=N.., pre=N.., nxt_ N..
         self.key = key
         self.val = val
         self.freq_node = freq_node
@@ -113,11 +113,11 @@ class CacheNode:
     ___ unlink(self):
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
-        self.freq_node = self.pre = self.nxt = None
+        self.freq_node = self.pre = self.nxt = N..
 
 
 class FreqNode:
-    ___ __init__(self, freq, pre=None, nxt_ N..
+    ___ __init__(self, freq, pre=N.., nxt_ N..
         self.freq = freq
         self.pre = pre
         self.nxt = nxt
@@ -130,7 +130,7 @@ class FreqNode:
     ___ unlink(self):
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
-        self.pre = self.nxt = self.D = self.d = None
+        self.pre = self.nxt = self.D = self.d = N..
 
     # to change self in freq nodes
     ___ after(self, freq_node):
@@ -141,16 +141,16 @@ class FreqNode:
 
     # to manage cache nodes
     ___ is_empty(self):
-        return self.D.nxt __ self.d
+        r.. self.D.nxt __ self.d
 
     # to manage cache nodes
     ___ pop_head(self):
         __ self.is_empty():
-            return
+            r..
 
         head = self.D.nxt
         head.unlink()
-        return head
+        r.. head
 
     # to manage cache nodes
     ___ append_tail(self, cache_node):

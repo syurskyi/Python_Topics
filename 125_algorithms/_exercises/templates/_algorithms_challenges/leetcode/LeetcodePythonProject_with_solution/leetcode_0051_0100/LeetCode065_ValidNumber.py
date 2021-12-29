@@ -14,29 +14,29 @@ class Solution(object):
         s = s.lstrip('+')
         i = 0
         num, dot, exp = False, False, False
-        while i < len(s):
+        while i < l..(s):
             c = s[i]
             __ c.isdigit():
                 num = True
-            elif c == '.':
-                __ exp or dot:
-                    return False
+            ____ c __ '.':
+                __ exp o. dot:
+                    r.. False
                 dot = True
-            elif c == 'e':
-                __ exp or not num:
-                    return False
+            ____ c __ 'e':
+                __ exp o. n.. num:
+                    r.. False
                 exp = True
                 num = False
-            elif c == '+' or c == '-':
+            ____ c __ '+' o. c __ '-':
                 __ s[i-1] != 'e':
-                    return False
-            else:
-                return False
+                    r.. False
+            ____:
+                r.. False
             i += 1
-        return num
+        r.. num
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

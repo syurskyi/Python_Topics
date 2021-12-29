@@ -4,8 +4,8 @@ class Solution:
         :type G: List[List[int]]
         :rtype: int
         """
-        __ not G or not G[0]:
-            return 0
+        __ n.. G o. n.. G[0]:
+            r.. 0
 
         self.V = (
             (-1,  0),
@@ -14,27 +14,27 @@ class Solution:
             ( 0,  1),
         )
         ans = 1
-        m, n = len(G), len(G[0])
-        memo = [[0] * n for _ in range(m)]
+        m, n = l..(G), l..(G[0])
+        memo = [[0] * n ___ _ __ r..(m)]
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 size = self.dfs(G, x, y, memo)
                 __ size > ans:
                     ans = size
 
-        return ans
+        r.. ans
 
     ___ dfs(self, G, x, y, memo):
         __ memo[x][y] > 0:
-            return memo[x][y]
+            r.. memo[x][y]
 
         res = 1
 
-        for dx, dy in self.V:
+        ___ dx, dy __ self.V:
             _x = x + dx
             _y = y + dy
-            __ not (0 <= _x < len(G) and 0 <= _y < len(G[0])):
+            __ n.. (0 <= _x < l..(G) and 0 <= _y < l..(G[0])):
                 continue
             __ G[x][y] >= G[_x][_y]:
                 continue
@@ -43,4 +43,4 @@ class Solution:
                 res = size
 
         memo[x][y] = res
-        return res
+        r.. res

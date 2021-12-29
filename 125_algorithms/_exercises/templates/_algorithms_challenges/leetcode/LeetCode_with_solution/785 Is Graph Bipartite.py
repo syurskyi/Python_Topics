@@ -41,7 +41,7 @@ graph[i] will not contain i or duplicate values.
 The graph is undirected: if any element j is in graph[i], then i will be in
 graph[j].
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -52,26 +52,26 @@ class Solution:
         """
         G = graph
         color = defaultdict(int)
-        for k in range(len(G)):
-            __ k not in color:
+        ___ k __ r..(l..(G)):
+            __ k n.. __ color:
                 color[k] = 0
-                __ not self.dfs(G, k, color):
-                    return False
+                __ n.. self.dfs(G, k, color):
+                    r.. False
             # if colored, don't vist
 
-        return True
+        r.. True
 
     ___ dfs(self, G, u, color):
-        for nbr in G[u]:
-            __ nbr in color:
-                __ color[nbr] == color[u]:
-                    return False
-            else:
+        ___ nbr __ G[u]:
+            __ nbr __ color:
+                __ color[nbr] __ color[u]:
+                    r.. False
+            ____:
                 color[nbr] = 1 - color[u]  # can be (0, 1) or (-1, 1)
-                __ not self.dfs(G, nbr, color):
-                    return False
+                __ n.. self.dfs(G, nbr, color):
+                    r.. False
 
-        return True
+        r.. True
 
 
 class SolutionError:
@@ -79,25 +79,25 @@ class SolutionError:
         G = graph
         A, B = set(), set()
         visited = defaultdict(bool)
-        for k in range(len(G)):
-            __ not visited[k]:
-                __ not self.dfs(G, visited, k, A, B, True):
-                    return False
+        ___ k __ r..(l..(G)):
+            __ n.. visited[k]:
+                __ n.. self.dfs(G, visited, k, A, B, True):
+                    r.. False
 
-        return True
+        r.. True
 
     ___ dfs(self, G, visited, u, A, B, is_A):
         visited[u] = True
         __ is_A:
             A.add(u)
-        else:
+        ____:
             B.add(u)
 
-        for nbr in G[u]:
-            __ nbr in A __ is_A else B:
-                return False
-            __ not visited[nbr]:
-                __ not self.dfs(G, visited, nbr, A, B, False):
-                    return False
+        ___ nbr __ G[u]:
+            __ nbr __ A __ is_A ____ B:
+                r.. False
+            __ n.. visited[nbr]:
+                __ n.. self.dfs(G, visited, nbr, A, B, False):
+                    r.. False
 
-        return True
+        r.. True

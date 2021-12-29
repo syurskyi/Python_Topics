@@ -5,20 +5,20 @@ class Solution(object):
     :type t: str
     :rtype: bool
     """
-    __ not len(s) == len(t):
-      return False
+    __ n.. l..(s) __ l..(t):
+      r.. False
 
     sHash = tHash = 1
     sCount = [0] * 26
     tCount = [0] * 26
     p1 = 2903
     p2 = 29947
-    for i in range(0, len(s)):
+    ___ i __ r..(0, l..(s)):
       sCount[ord(s[i]) - ord('a')] += 1
       tCount[ord(t[i]) - ord('a')] += 1
 
-    for i in range(0, 26):
+    ___ i __ r..(0, 26):
       sHash = sHash * p1 + sCount[i]
       tHash = tHash * p1 + tCount[i]
       p1 *= p2
-    return sHash == tHash
+    r.. sHash __ tHash

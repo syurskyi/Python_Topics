@@ -1,9 +1,9 @@
 ___ equal(a, b, c):
-    __ a == b and a == c:
-        return 3
-    elif a == b or a == c:
-        return 2
-    elif b == c:
-        return 2
-    else:
-        return 0
+    __ a __ b and a __ c:
+        r.. 3
+    ____ a __ b o. a __ c:
+        r.. 2
+    ____ b __ c:
+        r.. 2
+    ____:
+        r.. 0

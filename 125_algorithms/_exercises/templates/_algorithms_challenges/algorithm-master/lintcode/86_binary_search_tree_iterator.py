@@ -18,14 +18,14 @@ class BSTIterator:
     @param: root: The root of binary tree.
     """
     ___ __init__(self, root):
-        self.stack = []
+        self.stack    # list
         self.node = root
 
     """
     @return: True if there has next node, or false
     """
     ___ hasNext(self):
-        return self.node or self.stack
+        r.. self.node o. self.stack
 
     """
     @return: return next node
@@ -35,7 +35,7 @@ class BSTIterator:
         stack = self.stack
 
         while node:
-            stack.append(node)
+            stack.a..(node)
             node = node.left
 
         node = stack.pop()
@@ -44,4 +44,4 @@ class BSTIterator:
 
         self.node = node.right
 
-        return nxt
+        r.. nxt

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from anagram import detect_anagrams
+____ anagram _______ detect_anagrams
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.1
@@ -72,5 +72,5 @@ class AnagramTests(unittest.TestCase):
         self.assertEqual(detect_anagrams("BANANA", ["Banana"]), [])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

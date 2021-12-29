@@ -29,13 +29,13 @@ class PhoneDirectory(object):
         :rtype: int
         """
         __ self.released:
-            return self.released.pop()
+            r.. self.released.pop()
         __ self.i < self.l:
             ret = self.i
             self.i += 1
-            return ret
+            r.. ret
 
-        return -1
+        r.. -1
 
     ___ check(self, number):
         """
@@ -43,7 +43,7 @@ class PhoneDirectory(object):
         :type number: int
         :rtype: bool
         """
-        return number in self.released or self.i <= number < self.l
+        r.. number __ self.released o. self.i <= number < self.l
 
     ___ release(self, number):
         """
@@ -52,7 +52,7 @@ class PhoneDirectory(object):
         :rtype: void
         """
         __ self.i <= number < self.l:
-            return
+            r..
 
         self.released.add(number)
 

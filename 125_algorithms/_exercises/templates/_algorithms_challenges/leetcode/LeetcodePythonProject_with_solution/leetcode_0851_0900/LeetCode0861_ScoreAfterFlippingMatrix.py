@@ -10,27 +10,27 @@ class Solution(object):
         :rtype: int
         """
         matrix = A
-        __ not matrix: return 0
-        m, n = len(matrix), len(matrix[0])
-        for i in range(m):
-            __ matrix[i][0] == 0:
-                for j in range(n):
-                    matrix[i][j] = 0 __ matrix[i][j] else 1
-        for j in range(1, n):
+        __ n.. matrix: r.. 0
+        m, n = l..(matrix), l..(matrix[0])
+        ___ i __ r..(m):
+            __ matrix[i][0] __ 0:
+                ___ j __ r..(n):
+                    matrix[i][j] = 0 __ matrix[i][j] ____ 1
+        ___ j __ r..(1, n):
             count = 0
-            for i in range(m):
-                __ matrix[i][j] == 1:
+            ___ i __ r..(m):
+                __ matrix[i][j] __ 1:
                     count += 1
             __ 2*count < m:
-                for i in range(m):
-                    matrix[i][j] = 0 __ matrix[i][j] else 1
+                ___ i __ r..(m):
+                    matrix[i][j] = 0 __ matrix[i][j] ____ 1
         res = 0
-        for i in range(m):
+        ___ i __ r..(m):
             num = 0
-            for j in range(n):
+            ___ j __ r..(n):
                 num = num*2 + matrix[i][j]
             res += num
-        return res
+        r.. res
     
     ___ test(self):
         testCase = [
@@ -44,11 +44,11 @@ class Solution(object):
                 [1,1]
             ],
         ]
-        for matrix in testCase:
+        ___ matrix __ testCase:
             res = self.matrixScore(matrix)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

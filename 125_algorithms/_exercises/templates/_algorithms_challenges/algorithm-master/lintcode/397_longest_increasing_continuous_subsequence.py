@@ -8,18 +8,18 @@ class Solution:
     @return: an integer
     """
     ___ longestIncreasingContinuousSubsequence(self, A):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         size = self.get_lics_size(A)
         A.reverse()
         _size = self.get_lics_size(A)
 
-        return max(size, _size)
+        r.. max(size, _size)
 
     ___ get_lics_size(self, A):
         ans = 0
-        n = len(A)
+        n = l..(A)
 
         """
         `dp[i]` means the size of LICS ended at `A[i]`
@@ -30,7 +30,7 @@ class Solution:
         # pi = [-1] * n
         # end_at = -1
 
-        for i in range(n):
+        ___ i __ r..(n):
             __ i > 0 and A[i] > A[i - 1]:
                 dp[i] = dp[i - 1] + 1
                 # pi[i] = i - 1
@@ -44,7 +44,7 @@ class Solution:
         #     end_at = pi[end_at]
         # print(paths)
 
-        return ans
+        r.. ans
 
 
 """
@@ -56,25 +56,25 @@ class Solution:
     @return: an integer
     """
     ___ longestIncreasingContinuousSubsequence(self, A):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         size = self.get_lics_size(A)
         A.reverse()
         _size = self.get_lics_size(A)
 
-        return max(size, _size)
+        r.. max(size, _size)
 
     ___ get_lics_size(self, A):
         ans = size = 1
 
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             __ A[i] > A[i - 1]:
                 size += 1
-            else:
+            ____:
                 size = 1
 
             __ size > ans:
                 ans = size
 
-        return ans
+        r.. ans

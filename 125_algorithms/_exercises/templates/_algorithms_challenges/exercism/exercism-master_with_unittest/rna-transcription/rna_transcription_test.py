@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from dna import to_rna
+____ dna _______ to_rna
 
 
 class DNATests(unittest.TestCase):
@@ -21,5 +21,5 @@ class DNATests(unittest.TestCase):
         self.assertEqual('UGCACCAGAAUU', to_rna('ACGTGGTCTTAA'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

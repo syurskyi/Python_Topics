@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 class Solution(object):
     ___ __init__(self):
         self.table = {
-            0: None,
+            0: N..,
             1: "One",
             2: "Two",
             3: "Three",
@@ -52,12 +52,12 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        __ num == 0: return "Zero"
+        __ num __ 0: r.. "Zero"
 
-        ret = []
+        ret    # list
         self.toWords(num, ret)
-        ret = filter(lambda x: x, ret)  # filter None as zeros
-        return " ".join(map(str, ret))
+        ret = filter(l.... x: x, ret)  # filter None as zeros
+        r.. " ".join(map(str, ret))
 
     ___ toWords(self, num, ret):
         """
@@ -66,27 +66,27 @@ class Solution(object):
         significance by significance
         """
         SIGS = [1000000000, 1000000, 1000, 100]
-        for SIG in SIGS:
+        ___ SIG __ SIGS:
             self.partial_parse(num, SIG, ret)
             num %= SIG
 
         TEN = 10
         __ num/TEN > 1:
-            ret.append(self.table[(num/TEN)*TEN])
+            ret.a..(self.table[(num/TEN)*TEN])
 
-        ret.append(self.table[num%TEN])
+        ret.a..(self.table[num%TEN])
 
     ___ partial_parse(self, num, sig, ret):
         """
         will call toWords
         """
         __ num/sig:
-            prefix = []
+            prefix    # list
             self.toWords(num/sig, prefix)
             ret.extend(prefix)
-            ret.append(self.table[sig])
+            ret.a..(self.table[sig])
 
 
-__ __name__ == "__main__":
-    assert Solution().numberToWords(1234567891) == "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
+__ __name__ __ "__main__":
+    ... Solution().numberToWords(1234567891) __ "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
                                                    "Seven Thousand Eight Hundred Ninety One"

@@ -1,12 +1,12 @@
 ___ checkdupsorting(myarray):
 	myarray.sort()
 	print(myarray)
-	for i in range(0, len(myarray) - 1):
+	___ i __ r..(0, l..(myarray) - 1):
 		#print "in for loop:", myarray
 		# #print "comparing", myarray[i],"and",myarray[i + 1]
-		__(myarray[i] == myarray[i + 1]):
+		__(myarray[i] __ myarray[i + 1]):
 			print("Duplicates present:", myarray[i])
-			return
+			r..
 			print("There are No duplicates present in the given array.")
 
 myarray = [3,4,5,6,7,8,7]
@@ -18,28 +18,28 @@ ___ getfirstnonrepeated(myarray):
     print("Given array:", myarray)
     tab = {}  # hash
     # #print "tab created:", tab
-    for ele in myarray.lower():
-        __ ele in tab:
+    ___ ele __ myarray.lower():
+        __ ele __ tab:
             tab[ele] += 1
-        elif ele != " ":
+        ____ ele != " ":
             tab[ele] = 1
-        else:
+        ____:
             tab[ele] = 0
     # print "in loop:",tab,"for","'",ele,"'","in",myarray
 
-    for ele in myarray.lower():
-        __ tab[ele] == 1:
+    ___ ele __ myarray.lower():
+        __ tab[ele] __ 1:
             print("the first non repeated character is: %s" % (ele))
-            return ele
+            r.. ele
 
-    return
+    r..
 
 
 getfirstnonrepeated("abccdef")
 
 # #####################################################################################################################
 
-from nose.tools import assert_equal
+____ nose.tools _______ assert_equal
 
 
 class AnagramTest(object):
@@ -69,8 +69,8 @@ t.test(anagram2)
 
 ___ balance_check(s):
     # Check is even number of brackets
-    __ len(s) % 2 != 0:
-        return False
+    __ l..(s) % 2 != 0:
+        r.. False
 
     # Set of opening brackets
     opening = set('([{')
@@ -79,29 +79,29 @@ ___ balance_check(s):
     matches = set([('(', ')'), ('[', ']'), ('{', '}')])
 
     # Use a list as a "Stack"
-    stack = []
+    stack    # list
 
     # Check every parenthesis in string
-    for paren in s:
+    ___ paren __ s:
 
         # If its an opening, append it to list
-        __ paren in opening:
-            stack.append(paren)
+        __ paren __ opening:
+            stack.a..(paren)
 
-        else:
+        ____:
 
             # Check that there are parentheses in Stack
-            __ len(stack) == 0:
-                return False
+            __ l..(stack) __ 0:
+                r.. False
 
             # Check the last open parenthesis
             last_open = stack.pop()
 
             # Check if it has a closing match
-            __ (last_open, paren) not in matches:
-                return False
+            __ (last_open, paren) n.. __ matches:
+                r.. False
 
-    return len(stack) == 0
+    r.. l..(stack) __ 0
 
 
 balance_check('[]')
@@ -117,7 +117,7 @@ balance_check('()(){]}')
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
 """
-from nose.tools import assert_equal
+____ nose.tools _______ assert_equal
 
 
 class TestBalanceCheck(object):
@@ -139,8 +139,8 @@ t.test(balance_check)
 # tail recursion
 ___ tail(n):
     # base case
-    __ n == 0:
-        return
+    __ n __ 0:
+        r..
 
     # do some operation before the recursive call
     print(n)
@@ -151,8 +151,8 @@ ___ tail(n):
 
 ___ head(n):
     # base case
-    __ n == 0:
-        return
+    __ n __ 0:
+        r..
 
     # recursive call
     head(n - 1)
@@ -161,7 +161,7 @@ ___ head(n):
     print(n)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print("Tail recursion:\n")
     tail(5)
     print("\nHead recursion:\n")

@@ -1,5 +1,5 @@
-import os
-import urllib.request
+_______ os
+_______ urllib.request
 
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
@@ -10,31 +10,31 @@ urllib.request.urlretrieve(f'{S3}{DICT}', DICTIONARY)
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score for score, letters in scrabble_scores
-                 for letter in letters.split()}
+LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+                 ___ letter __ letters.s.. }
 
 # start coding
 
 ___ load_words():
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
     text = open(DICTIONARY, 'r').read()
-    return [word for word in text.splitlines()]
+    r.. [word ___ word __ text.splitlines()]
 
 
 ___ calc_word_value(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
-    scores = dict(scrabble_scores)
-    final_score = []
-    for ch in word.upper():
-        for key, value in scores.items():
-            __ ch in list(value):
-                final_score.append(key)
-    return sum(final_score)
+    scores = d..(scrabble_scores)
+    final_score    # list
+    ___ ch __ word.upper():
+        ___ key, value __ scores.items():
+            __ ch __ l..(value):
+                final_score.a..(key)
+    r.. s..(final_score)
 
 
 ___ max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
-    key_list = [word for word in words]
-    value_list = [calc_word_value(word) for word in words]
-    d = dict(zip(key_list, value_list))
-    return max(d, key=d.get)
+    key_list = [word ___ word __ words]
+    value_list = [calc_word_value(word) ___ word __ words]
+    d = d..(zip(key_list, value_list))
+    r.. max(d, key=d.get)

@@ -1,4 +1,4 @@
-from slicing import text, slice_and_dice
+____ slicing _______ text, slice_and_dice
 
 another_text = """
 Take the block of text provided and strip() off the whitespace at the ends.
@@ -12,9 +12,9 @@ Strip the trailing dot (.) and exclamation mark (!) from the word first.
 
 ___ test_slice_and_dice_default_text():
     expected = ['objects', 'y', 'too', ':)', 'bites']
-    assert slice_and_dice(text) == expected
+    ... slice_and_dice(text) __ expected
 
 
 ___ test_slice_and_dice_other_text():
     expected = ['word', 'list', 'list']
-    assert slice_and_dice(another_text) == expected
+    ... slice_and_dice(another_text) __ expected

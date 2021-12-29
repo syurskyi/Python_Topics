@@ -20,16 +20,16 @@ class TwoSum(object):
     :rtype: bool
     """
     d = self.nums
-    for num in d:
+    ___ num __ d:
       t = value - num
-      __ t in d:
-        __ t == num:
+      __ t __ d:
+        __ t __ num:
           __ d[t] >= 2:
-            return True
-        else:
-          return True
+            r.. True
+        ____:
+          r.. True
 
-    return False
+    r.. False
 
 # Your TwoSum object will be instantiated and called as such:
 # twoSum = TwoSum()

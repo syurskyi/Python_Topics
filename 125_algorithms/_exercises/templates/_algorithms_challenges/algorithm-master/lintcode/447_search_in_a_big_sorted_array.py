@@ -28,10 +28,10 @@ class Solution:
             m = l + (r - l) // 2
             __ reader.get(m) < target:
                 l = m
-            else:
+            ____:
                 r = m
 
-        for i in [l, r]:
-            __ reader.get(i) == target:
-                return i
-        return -1
+        ___ i __ [l, r]:
+            __ reader.get(i) __ target:
+                r.. i
+        r.. -1

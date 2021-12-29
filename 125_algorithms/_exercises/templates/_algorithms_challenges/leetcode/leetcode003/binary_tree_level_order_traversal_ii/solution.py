@@ -30,27 +30,27 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        stack = []
-        __ root is None:
-            return stack
-        queue = []
-        level = []
-        queue.append(root)
-        queue.append(None)
+        stack    # list
+        __ root __ N..
+            r.. stack
+        queue    # list
+        level    # list
+        queue.a..(root)
+        queue.a..(N..)
         while queue:
             root = queue.pop(0)
-            __ root is None:
-                stack.append(level[:])
-                level = []
+            __ root __ N..
+                stack.a..(level[:])
+                level    # list
                 __ queue:
-                    queue.append(None)
-            else:
-                level.append(root.val)
-                __ root.left is not None:
-                    queue.append(root.left)
-                __ root.right is not None:
-                    queue.append(root.right)
-        res = []
+                    queue.a..(N..)
+            ____:
+                level.a..(root.val)
+                __ root.left __ n.. N..
+                    queue.a..(root.left)
+                __ root.right __ n.. N..
+                    queue.a..(root.right)
+        res    # list
         while stack:
-            res.append(stack.pop())
-        return res
+            res.a..(stack.pop())
+        r.. res

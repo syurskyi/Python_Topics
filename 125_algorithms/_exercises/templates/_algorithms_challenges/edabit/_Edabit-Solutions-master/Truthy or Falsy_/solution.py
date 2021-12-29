@@ -1,5 +1,5 @@
 ___ is_truthy(val):
-    __ bool(val) == True:
-        return 1
-    else:
-        return 0
+    __ bool(val) __ True:
+        r.. 1
+    ____:
+        r.. 0

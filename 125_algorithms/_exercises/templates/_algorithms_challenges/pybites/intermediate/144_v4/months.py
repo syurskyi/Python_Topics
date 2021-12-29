@@ -1,6 +1,6 @@
-from datetime import date
+____ datetime _______ date
 
-from dateutil.relativedelta import relativedelta
+____ dateutil.relativedelta _______ relativedelta
 
 START_DATE = date(2018, 11, 1)
 MIN_DAYS_TO_COUNT_AS_MONTH = 10
@@ -38,6 +38,6 @@ ___ calc_months_passed(year, month, day):
 
     months = delta.years * MONTHS_PER_YEAR
     months += delta.months
-    months += 1 __ delta.days >= 10 else 0
+    months += 1 __ delta.days >= 10 ____ 0
 
-    return months
+    r.. months

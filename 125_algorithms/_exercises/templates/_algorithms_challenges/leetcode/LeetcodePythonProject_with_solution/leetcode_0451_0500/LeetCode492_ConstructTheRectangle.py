@@ -10,11 +10,11 @@ class Solution(object):
         :type area: int
         :rtype: List[int]
         """
-        import math
+        _______ math
         l = int(math.sqrt(area))
         while l < area:
-            __ area%l == 0:
-                return [max(l, area/l), min(l, area/l)]
-            else:
+            __ area%l __ 0:
+                r.. [max(l, area/l), m..(l, area/l)]
+            ____:
                 l += 1
-        return [area, 1]
+        r.. [area, 1]

@@ -14,4 +14,4 @@ class Solution(object):
         ans *= x
       x *= x
       n >>= 1
-    return ans
+    r.. ans

@@ -13,53 +13,53 @@ class Solution(object):
     :type k: int
     :rtype: List[int]
     """
-    ans = []
-    preStack = []
-    sucStack = []
+    ans    # list
+    preStack    # list
+    sucStack    # list
 
     while root:
       __ root.val < target:
-        preStack.append(root)
+        preStack.a..(root)
         root = root.right
-      else:
-        sucStack.append(root)
+      ____:
+        sucStack.a..(root)
         root = root.left
 
     ___ getPredecessor(stack):
-      __ not stack:
-        return
+      __ n.. stack:
+        r..
       pre = stack.pop()
       p = pre.left
       while p:
-        stack.append(p)
+        stack.a..(p)
         p = p.right
-      return pre
+      r.. pre
 
     ___ getSuccessor(stack):
-      __ not stack:
-        return
+      __ n.. stack:
+        r..
       suc = stack.pop()
       p = suc.right
       while p:
-        stack.append(p)
+        stack.a..(p)
         p = p.left
-      return suc
+      r.. suc
 
     pre = getPredecessor(preStack)
     suc = getSuccessor(sucStack)
 
     while k:
       k -= 1
-      __ pre and not suc:
-        ans.append(pre.val)
+      __ pre and n.. suc:
+        ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      elif not pre and suc:
-        ans.append(suc.val)
+      ____ n.. pre and suc:
+        ans.a..(suc.val)
         suc = getSuccessor(sucStack)
-      elif pre and suc and abs(pre.val - target) <= abs(suc.val - target):
-        ans.append(pre.val)
+      ____ pre and suc and abs(pre.val - target) <= abs(suc.val - target):
+        ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      elif pre and suc and abs(pre.val - target) >= abs(suc.val - target):
-        ans.append(suc.val)
+      ____ pre and suc and abs(pre.val - target) >= abs(suc.val - target):
+        ans.a..(suc.val)
         suc = getSuccessor(sucStack)
-    return ans
+    r.. ans

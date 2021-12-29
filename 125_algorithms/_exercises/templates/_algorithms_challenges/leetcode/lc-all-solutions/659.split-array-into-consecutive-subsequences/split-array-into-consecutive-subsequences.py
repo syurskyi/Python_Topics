@@ -4,10 +4,10 @@ class Solution(object):
     :type nums: List[int]
     :rtype: bool
     """
-    d = collections.defaultdict(list)
-    for num in nums:
+    d = collections.defaultdict(l..)
+    ___ num __ nums:
       __ d[num - 1]:
         heapq.heappush(d[num], heapq.heappop(d[num - 1]) + 1)
-      else:
+      ____:
         heapq.heappush(d[num], 1)
-    return not any(length < 3 for length in sum(d.values(), []))
+    r.. n.. any(length < 3 ___ length __ s..(d.values(), []))

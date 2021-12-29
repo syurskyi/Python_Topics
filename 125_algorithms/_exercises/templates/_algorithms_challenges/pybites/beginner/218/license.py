@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 ___ validate_license(key: str) -> bool:
@@ -7,7 +7,7 @@ ___ validate_license(key: str) -> bool:
     """
 
     
-    return re.match(r"PB(\-[A-Z\d]{8}){4}$",key) __ not None
+    r.. re.match(r"PB(\-[A-Z\d]{8}){4}$",key) __ n.. N..
 
 
 

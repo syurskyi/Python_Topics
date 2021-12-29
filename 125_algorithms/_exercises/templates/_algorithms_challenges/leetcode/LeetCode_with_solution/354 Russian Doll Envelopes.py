@@ -9,7 +9,7 @@ Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4]
 => [6,7]).
 """
-import bisect
+_______ bisect
 
 __author__ = 'Daniel'
 
@@ -24,19 +24,19 @@ class Solution(object):
         :type A: List[List[int]]
         :rtype: int
         """
-        __ not A: return 0
+        __ n.. A: r.. 0
 
-        A.sort(key=lambda (w, h): (w, -h))
-        F = [-1 for _ in xrange(len(A)+1)]
+        A.sort(key=l.... (w, h): (w, -h))
+        F = [-1 ___ _ __ xrange(l..(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
         k = 1
-        for _, h in A[1:]:
+        ___ _, h __ A[1:]:
             idx = bisect.bisect_left(F, h, 1, k+1)
             F[idx] = h
-            k += 1 __ idx == k+1 else 0
+            k += 1 __ idx __ k+1 ____ 0
 
-        return k
+        r.. k
 
     ___ maxEnvelopesTLE(self, A):
         """
@@ -45,20 +45,20 @@ class Solution(object):
         :type A: List[List[int]]
         :rtype: int
         """
-        __ not A: return 0
+        __ n.. A: r.. 0
 
-        predicate = lambda a, b: b[0] > a[0] and b[1] > a[1]
+        predicate = l.... a, b: b[0] > a[0] and b[1] > a[1]
         A.sort()
-        n = len(A)
-        F = [1 for _ in xrange(n)]
-        for i in xrange(1, n):
-            for j in xrange(i):
+        n = l..(A)
+        F = [1 ___ _ __ xrange(n)]
+        ___ i __ xrange(1, n):
+            ___ j __ xrange(i):
                 __ predicate(A[j], A[i]):
                     F[i] = max(F[i], 1 + F[j])
 
-        return max(F)
+        r.. max(F)
 
 
-__ __name__ == "__main__":
-    assert Solution().maxEnvelopes([[5, 4], [6, 4], [6, 7], [2, 3]]) == 3
-    assert Solution().maxEnvelopes([[2,100],[3,200],[4,300],[5,500],[5,400],[5,250],[6,370],[6,360],[7,380]]) == 5
+__ __name__ __ "__main__":
+    ... Solution().maxEnvelopes([[5, 4], [6, 4], [6, 7], [2, 3]]) __ 3
+    ... Solution().maxEnvelopes([[2,100],[3,200],[4,300],[5,500],[5,400],[5,250],[6,370],[6,360],[7,380]]) __ 5

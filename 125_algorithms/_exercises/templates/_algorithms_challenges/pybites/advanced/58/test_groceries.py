@@ -1,74 +1,74 @@
-import pytest
+_______ pytest
 
-from groceries import Item, Groceries, create_parser, handle_args
+____ groceries _______ Item, Groceries, create_parser, handle_args
 
 
 @pytest.fixture
 ___ cart():
     # faking some data (normally would load from DB)
-    products = 'celery apples water coffee chicken pizza'.split()
+    products = 'celery apples water coffee chicken pizza'.s..
     prices = [1, 4, 2, 5, 6, 4]
     cravings = False, False, False, False, False, True
 
-    items = []
-    for item in zip(products, prices, cravings):
-        items.append(Item(*item))
+    items    # list
+    ___ item __ zip(products, prices, cravings):
+        items.a..(Item(*item))
 
-    return Groceries(items)
+    r.. Groceries(items)
 
 
 @pytest.fixture
 ___ parser():
-    return create_parser()
+    r.. create_parser()
 
 
 ___ test_list(parser, cart, capfd):
     args = parser.parse_args(['-l'])
     handle_args(args, cart)
     output = capfd.readouterr()[0].split('\n')
-    assert 'pizza (craving)                |   4' in output
-    assert 'Total                          |  22' in output
+    ... 'pizza (craving)                |   4' __ output
+    ... 'Total                          |  22' __ output
 
 
 ___ test_search(parser, cart, capfd):
     args = parser.parse_args(['-s', 'coffee'])
     handle_args(args, cart)
     output = capfd.readouterr()[0].split('\n')
-    assert 'coffee                         |   5' in output
-    assert 'Total                          |   5' in output
+    ... 'coffee                         |   5' __ output
+    ... 'Total                          |   5' __ output
 
 
 ___ test_add(parser, cart):
-    assert len(cart) == 6
-    assert cart.due == 22
+    ... l..(cart) __ 6
+    ... cart.due __ 22
 
     args = parser.parse_args(['-a', 'honey', '5', 'False'])
     handle_args(args, cart)
 
-    assert len(cart) == 7
-    assert cart.due == 27
+    ... l..(cart) __ 7
+    ... cart.due __ 27
 
     new_item = cart[-1]
-    assert new_item.product == 'honey'
-    assert new_item.price == 5
-    assert not new_item.craving
+    ... new_item.product __ 'honey'
+    ... new_item.price __ 5
+    ... n.. new_item.craving
 
 
 ___ test_delete(parser, cart):
     # nice: fixture gives me a clean slate each test!
-    assert len(cart) == 6
-    assert cart.due == 22
+    ... l..(cart) __ 6
+    ... cart.due __ 22
 
     args = parser.parse_args(['-d', 'pizza'])
     handle_args(args, cart)
 
-    assert len(cart) == 5
-    assert cart.due == 18
+    ... l..(cart) __ 5
+    ... cart.due __ 18
 
     new_last_item = cart[-1]
-    assert new_last_item.product == 'chicken'
-    assert new_last_item.price == 6
-    assert not new_last_item.craving
+    ... new_last_item.product __ 'chicken'
+    ... new_last_item.price __ 6
+    ... n.. new_last_item.craving
 
 
 ___ test_args_mulually_exclusive(parser):

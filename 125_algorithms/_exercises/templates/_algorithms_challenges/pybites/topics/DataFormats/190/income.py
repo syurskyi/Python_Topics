@@ -1,15 +1,15 @@
-import os
-from pathlib import Path
-from typing import DefaultDict
-from urllib.request import urlretrieve
-import xml.etree.ElementTree as ET
+_______ os
+____ pathlib _______ Path
+____ typing _______ DefaultDict
+____ urllib.request _______ urlretrieve
+_______ xml.etree.ElementTree as ET
 
 
 # import the countries xml file
 tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
-__ not countries.exists():
+__ n.. countries.exists():
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
@@ -24,13 +24,13 @@ ___ get_income_distribution(xml=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    new_list = DefaultDict(list)
+    new_list = DefaultDict(l..)
     tree = ET.parse(countries)
     root = tree.getroot()
-    for country in root:
+    ___ country __ root:
         country_name = country.findtext('{http://www.worldbank.org}name')
         incomeLevel = country.findtext('{http://www.worldbank.org}incomeLevel')
-        new_list[incomeLevel].append(country_name)
-    return new_list
+        new_list[incomeLevel].a..(country_name)
+    r.. new_list
 
 print(get_income_distribution())

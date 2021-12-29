@@ -11,7 +11,7 @@ ___ read4(buf):
     :type buf: List[str]
     :rtype: int
     """
-    return 0
+    r.. 0
 
 
 class Solution(object):
@@ -29,14 +29,14 @@ class Solution(object):
         """
         idx = 0
         while idx < n:
-            buf4 = ["" for _ in xrange(4)]
+            buf4 = ["" ___ _ __ xrange(4)]
             r = read4(buf4)
             __ idx+r < n:
                 buf[idx:idx+r] = buf4[:r]
                 idx += r
                 __ r < 4: break
-            else:
+            ____:
                 buf[idx:n] = buf4[:n-idx]
                 idx = n
 
-        return idx
+        r.. idx

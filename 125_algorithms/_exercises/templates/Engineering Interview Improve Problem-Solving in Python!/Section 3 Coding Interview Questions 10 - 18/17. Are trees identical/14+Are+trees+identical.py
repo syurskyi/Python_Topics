@@ -1,4 +1,4 @@
-import BST
+_______ BST
 
 
 tree  BST.BST(10)

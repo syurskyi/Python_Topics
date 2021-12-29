@@ -5,13 +5,13 @@ class ValidWordAbbr(object):
     :type dictionary: List[str]
     """
     self.d = {}
-    self.dict = dictionary = set(dictionary)
-    for word in dictionary:
-      wordLen = len(word)
+    self.d.. = dictionary = set(dictionary)
+    ___ word __ dictionary:
+      wordLen = l..(word)
       __ wordLen > 2:
         key = word[0] + str(wordLen - 2) + word[-1]
         self.d[key] = self.d.get(key, 0) + 1
-      else:
+      ____:
         self.d[word] = self.d.get(word, 0) + 1
 
   ___ isUnique(self, word):
@@ -20,18 +20,18 @@ class ValidWordAbbr(object):
     :type word: str
     :rtype: bool
     """
-    wordLen = len(word)
-    key = None
+    wordLen = l..(word)
+    key = N..
     __ wordLen > 2:
       key = word[0] + str(wordLen - 2) + word[-1]
-    else:
+    ____:
       key = word
-    __ key in self.d:
-      __ self.d[key] == 1 and word in self.dict:
-        return True
-      return False
-    else:
-      return True
+    __ key __ self.d:
+      __ self.d[key] __ 1 and word __ self.d..:
+        r.. True
+      r.. False
+    ____:
+      r.. True
 
 # Your ValidWordAbbr object will be instantiated and called as such:
 # vwa = ValidWordAbbr(dictionary)

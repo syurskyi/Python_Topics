@@ -11,19 +11,19 @@ class Solution:
             '8': 'tuv',
             '9': 'wxyz',
         }
-        cand = []
-        res = []
+        cand    # list
+        res    # list
         self.letter_combination_aux(0, digits, d, cand, res)
-        return res
+        r.. res
 
     ___ letter_combination_aux(self, i, digits, d, cand, res):
-        __ i == len(digits):
-            res.append(''.join(cand))
-        else:
+        __ i __ l..(digits):
+            res.a..(''.join(cand))
+        ____:
             digit = digits[i]
-            __ digit in d:
+            __ digit __ d:
                 letters = d[digit]
-                for letter in letters:
-                    cand.append(letter)
+                ___ letter __ letters:
+                    cand.a..(letter)
                     self.letter_combination_aux(i + 1, digits, d, cand, res)
                     cand.pop()

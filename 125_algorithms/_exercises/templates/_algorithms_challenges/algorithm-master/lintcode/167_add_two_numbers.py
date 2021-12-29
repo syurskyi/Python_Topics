@@ -42,4 +42,4 @@ class Solution:
         __ carry:
             tail.next = ListNode(carry)
 
-        return dummy.next
+        r.. dummy.next

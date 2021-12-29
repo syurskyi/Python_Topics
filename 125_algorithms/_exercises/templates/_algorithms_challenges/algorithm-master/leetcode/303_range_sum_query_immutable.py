@@ -10,13 +10,13 @@ class NumArray:
         """
         :type nums: List[int]
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        n = len(nums)
+        n = l..(nums)
         self.prefix_sum = [0] * (n + 1)
 
-        for i in range(1, n + 1):
+        ___ i __ r..(1, n + 1):
             self.prefix_sum[i] = self.prefix_sum[i - 1] + nums[i - 1]
 
     ___ sumRange(self, i, j):
@@ -26,9 +26,9 @@ class NumArray:
         :rtype: int
         """
         __ (
-            not self.prefix_sum or
-            i < 0 or
-            j + 1 >= len(self.prefix_sum)
+            n.. self.prefix_sum o.
+            i < 0 o.
+            j + 1 >= l..(self.prefix_sum)
         ):
-            return 0
-        return self.prefix_sum[j + 1] - self.prefix_sum[i]
+            r.. 0
+        r.. self.prefix_sum[j + 1] - self.prefix_sum[i]

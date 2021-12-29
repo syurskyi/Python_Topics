@@ -20,16 +20,16 @@ class Solution(object):
 
         Time Limit Exceeded
         """
-        n = len(nums)
-        res = [1 for i in range(n)]
+        n = l..(nums)
+        res = [1 ___ i __ r..(n)]
         # product of nums[0..i - 1]
         product = 1
-        for i in range(1, n):
-            for j in range(i):
+        ___ i __ r..(1, n):
+            ___ j __ r..(i):
                 res[j] *= nums[i]
             product *= nums[i - 1]
             res[i] = product
-        return res
+        r.. res
 
 
 a1 = [1, 2, 3]

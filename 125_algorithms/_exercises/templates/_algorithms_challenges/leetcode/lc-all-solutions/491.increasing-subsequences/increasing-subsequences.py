@@ -4,20 +4,20 @@ class Solution(object):
     :type nums: List[int]
     :rtype: List[List[int]]
     """
-    ans = []
+    ans    # list
 
     ___ dfs(nums, start, path, ans):
-      __ len(path) >= 2:
-        ans.append(tuple(path + []))
+      __ l..(path) >= 2:
+        ans.a..(tuple(path + []))
 
-      for i in range(start, len(nums)):
-        __ i != start and nums[i] == nums[i - 1]:
+      ___ i __ r..(start, l..(nums)):
+        __ i != start and nums[i] __ nums[i - 1]:
           continue
         __ path and nums[i] < path[-1]:
           continue
-        path.append(nums[i])
+        path.a..(nums[i])
         dfs(nums, i + 1, path, ans)
         path.pop()
 
     dfs(nums, 0, [], ans)
-    return list(set(ans))
+    r.. l..(set(ans))

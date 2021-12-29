@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ int_args(func):
@@ -8,7 +8,7 @@ ___ int_args(func):
 
     ___ wrapper(*args):
 
-        for arg in args:
+        ___ arg __ args:
             __ type(arg) != int:
                 raise TypeError("All arguments passed in must be integers")
             
@@ -17,10 +17,10 @@ ___ int_args(func):
                 raise ValueError("All arguments must be non-negative integers")
 
 
-        return func(*args)
+        r.. func(*args)
 
 
-    return wrapper
+    r.. wrapper
 
 
 

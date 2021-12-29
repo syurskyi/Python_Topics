@@ -12,24 +12,24 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        l = len(strs)
-        dp = [[[0]*(n+1) for _ in range(m+1)] for _ in range(l+1)]
-        for i in range(l+1):
+        l = l..(strs)
+        dp = [[[0]*(n+1) ___ _ __ r..(m+1)] ___ _ __ r..(l+1)]
+        ___ i __ r..(l+1):
             nums = [0, 0]
             __ i > 0:
                 s = strs[i-1]
-                count0 = s.count('0')
-                count1 = len(s)-count0
+                count0 = s.c.. '0')
+                count1 = l..(s)-count0
                 nums = [count0, count1]
-            for j in range(m+1):
-                for k in range(n+1):
-                    __ i == 0:
+            ___ j __ r..(m+1):
+                ___ k __ r..(n+1):
+                    __ i __ 0:
                         dp[i][j][k] = 0
-                    elif j >= nums[0] and k >= nums[1]:
+                    ____ j >= nums[0] and k >= nums[1]:
                         dp[i][j][k] = max(dp[i-1][j][k], dp[i-1][j-nums[0]][k-nums[1]]+1)
-                    else:
+                    ____:
                         dp[i][j][k] = dp[i-1][j][k]
-        return dp[l][m][n]
+        r.. dp[l][m][n]
     
     ___ findMaxForm_slow(self, strs, m, n):
         """
@@ -39,15 +39,15 @@ class Solution(object):
         :rtype: int
         """
         # Knapsack Problem
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for s in strs:
-            for i in range(m, -1, -1):
-                for j in range(n, -1, -1):
-                    count0 = s.count('0')
-                    count1 = len(s)-count0
+        dp = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ s __ strs:
+            ___ i __ r..(m, -1, -1):
+                ___ j __ r..(n, -1, -1):
+                    count0 = s.c.. '0')
+                    count1 = l..(s)-count0
                     __ i>=count0 and j>=count1:
                         dp[i][j] = max(dp[i][j], dp[i-count0][j-count1]+1)
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         testCases = [
@@ -58,10 +58,10 @@ class Solution(object):
                 ["10", "0", "1"], 1, 1
             ),
         ]
-        for strs, m, n in testCases:
+        ___ strs, m, n __ testCases:
             result = self.findMaxForm(strs, m, n)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

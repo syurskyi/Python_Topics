@@ -5,10 +5,10 @@ class Solution:
     @return: The sum of a and b
     """
     ___ aplusb(self, a, b):
-        __ not a:
-            return b
-        __ not b:
-            return a
+        __ n.. a:
+            r.. b
+        __ n.. b:
+            r.. a
 
         INT_RANGE = 0xFFFFFFFF
 
@@ -16,4 +16,4 @@ class Solution:
             a, b = a ^ b, (a & b) << 1
             a &= INT_RANGE
 
-        return a __ a >> 31 <= 0 else a ^ ~INT_RANGE
+        r.. a __ a >> 31 <= 0 ____ a ^ ~INT_RANGE

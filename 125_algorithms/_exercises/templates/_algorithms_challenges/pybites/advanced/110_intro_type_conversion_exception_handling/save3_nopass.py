@@ -5,10 +5,10 @@ ___ divide_numbers(numerator, denominator):
        ValueError reraise it. Following do the division and return the result.
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
-    __ denominator == 0:
-        return 0
-    for number in numerator, denominator:
-        return int(number)
+    __ denominator __ 0:
+        r.. 0
+    ___ number __ numerator, denominator:
+        r.. int(number)
     __ type(number) != int():
         raise TypeError("Only integers are allowed")
-    return (numerator % denominator)
+    r.. (numerator % denominator)

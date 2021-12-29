@@ -5,8 +5,8 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
-        __ board[i][j] == "X" and (i == 0 or board[i - 1][j] != "X") and (j == 0 or board[i][j - 1] != "X"):
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
+        __ board[i][j] __ "X" and (i __ 0 o. board[i - 1][j] != "X") and (j __ 0 o. board[i][j - 1] != "X"):
           ans += 1
-    return ans
+    r.. ans

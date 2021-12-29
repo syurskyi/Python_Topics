@@ -1,2 +1,2 @@
 ___ format_money(amount):
-    return '${:.2f}'.format(amount)
+    r.. '${:.2f}'.format(amount)

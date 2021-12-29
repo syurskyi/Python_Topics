@@ -1,5 +1,5 @@
-from pytz import timezone, utc
-from datetime import datetime
+____ pytz _______ timezone, utc
+____ datetime _______ datetime
 
 AUSTRALIA = timezone('Australia/Sydney')
 SPAIN = timezone('Europe/Madrid')
@@ -12,7 +12,7 @@ ___ what_time_lives_pybites(naive_utc_dt):
     #print(utc.localize(naive_utc_dt))
     #print(utc.localize(naive_utc_dt).astimezone(SPAIN))
     #print(utc.localize(naive_utc_dt).astimezone(AUSTRALIA))
-    return (utc.localize(naive_utc_dt).astimezone(AUSTRALIA), 
+    r.. (utc.localize(naive_utc_dt).astimezone(AUSTRALIA),
             utc.localize(naive_utc_dt).astimezone(SPAIN))
 
 

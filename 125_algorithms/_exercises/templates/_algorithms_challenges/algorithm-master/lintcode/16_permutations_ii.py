@@ -8,32 +8,32 @@ class Solution:
         :rtype: List[List[int]]
         """
 
-        __ not nums:
-            return [[]]
+        __ n.. nums:
+            r.. [[]]
 
-        ans = []
+        ans    # list
 
         nums.sort()
         self.dfs(nums, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, nums, ans, path):
-        __ not nums:
-            ans.append(path[:])
-            return
+        __ n.. nums:
+            ans.a..(path[:])
+            r..
 
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             """
             ignore same num
             """
-            __ i > 0 and nums[i] == nums[i - 1]:
+            __ i > 0 and nums[i] __ nums[i - 1]:
                 continue
 
             """
             ignore self
             """
-            path.append(nums[i])
+            path.a..(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()
 
@@ -48,23 +48,23 @@ class Solution:
         :rtype: List[List[int]]
         """
 
-        __ not nums:
-            return [[]]
+        __ n.. nums:
+            r.. [[]]
 
-        ans = []
-        visited = [False] * len(nums)
+        ans    # list
+        visited = [False] * l..(nums)
 
         nums.sort()
         self.dfs(nums, visited, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, nums, visited, ans, path):
-        __ len(path) == len(nums):
-            ans.append(path[:])
-            return
+        __ l..(path) __ l..(nums):
+            ans.a..(path[:])
+            r..
 
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             __ visited[i]:
                 continue
 
@@ -74,11 +74,11 @@ class Solution:
             we need to ensure `3`, `3'` is picked
             otherwise repeated result will be included
             """
-            __ i > 0 and not visited[i - 1] and nums[i] == nums[i - 1]:
+            __ i > 0 and n.. visited[i - 1] and nums[i] __ nums[i - 1]:
                 continue
 
             visited[i] = True
-            path.append(nums[i])
+            path.a..(nums[i])
             self.dfs(nums, visited, ans, path)
             visited[i] = False
             path.pop()

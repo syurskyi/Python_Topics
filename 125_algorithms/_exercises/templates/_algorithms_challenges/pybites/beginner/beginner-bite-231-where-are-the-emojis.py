@@ -16,14 +16,14 @@ Here is an example how it should work:
 [21, 30, 51]
 """
 
-import re
-from typing import List
+_______ re
+____ typing _______ List
 
 # https://stackoverflow.com/a/43147265
 # just for exercise sake, real life use emoji lib
 IS_EMOJI = re.compile(r'[^\w\s,]')
 
 
-___ get_emoji_indices(text: str) -> List[int]:
+___ get_emoji_indices(text: s..) -> List[int]:
     """Given a text return indices of emoji characters"""
     pass

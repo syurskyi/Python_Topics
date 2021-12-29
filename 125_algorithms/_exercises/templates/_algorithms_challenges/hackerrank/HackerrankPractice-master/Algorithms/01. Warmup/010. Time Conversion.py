@@ -2,5 +2,5 @@
 # Score: 15
 
 
-import time
+_______ time
 print(time.strftime('%H:%M:%S', time.strptime(input(), '%I:%M:%S%p')))

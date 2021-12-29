@@ -19,7 +19,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 
@@ -37,21 +37,21 @@ class Solution:
 
         pre = dummy
         cur_lst = self.generate_lst(pre.next, k)
-        while pre and not None in cur_lst:
+        while pre and n.. N.. __ cur_lst:
 
             # reverse
             temp = cur_lst[-1].next
             pre.next = cur_lst[-1]
-            for i in reversed(xrange(k)):
-                __ i==0:
+            ___ i __ reversed(xrange(k)):
+                __ i__0:
                     cur_lst[i].next = temp
-                else:
+                ____:
                     cur_lst[i].next = cur_lst[i-1]
 
             pre = cur_lst[0]
             cur_lst = self.generate_lst(pre.next, k)
 
-        return dummy.next
+        r.. dummy.next
 
     ___ generate_lst(self, node, k):
         """
@@ -60,15 +60,15 @@ class Solution:
         :param k: integer
         :return: list
         """
-        lst = []
+        lst    # list
         cur = node
-        for i in xrange(k):
+        ___ i __ xrange(k):
             __ cur:
-                lst.append(cur)
+                lst.a..(cur)
                 cur = cur.next
-            else:
-                lst.append(None)
-        return lst
+            ____:
+                lst.a..(N..)
+        r.. lst
 
 
 

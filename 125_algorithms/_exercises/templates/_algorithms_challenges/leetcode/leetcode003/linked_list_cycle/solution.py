@@ -19,9 +19,9 @@ class Solution(object):
         """
         slow = head
         fast = head
-        while fast is not None and fast.next is not None:
+        while fast __ n.. N.. and fast.next __ n.. N..
             slow = slow.next
             fast = fast.next.next
-            __ slow == fast:
-                return True
-        return False
+            __ slow __ fast:
+                r.. True
+        r.. False

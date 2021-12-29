@@ -1,8 +1,8 @@
-from collections import namedtuple, Counter
-import re
-from typing import NamedTuple
+____ collections _______ namedtuple, Counter
+_______ re
+____ typing _______ NamedTuple
 
-import feedparser
+_______ feedparser
 
 SPECIAL_GUEST = 'Special guest'
 
@@ -23,49 +23,49 @@ class PythonBytes:
         self.entries = feedparser.parse(URL)['entries']
 
 
-    ___ get_episode_numbers_for_mentioned_domain(self, domain: str) -> list:
+    ___ get_episode_numbers_for_mentioned_domain(self, domain: str) -> l..:
         """Return a list of episode IDs (itunes_episode attribute) of the
            episodes the pass in domain was mentioned in.
         """
 
-        episode_ids = []
+        episode_ids    # list
 
 
-        for entry in self.entries:
+        ___ entry __ self.entries:
             #summary = entry['summary']
             summary = entry['summary']
-            __ domain in summary:
+            __ domain __ summary:
                 episode = entry['itunes_episode']
-                episode_ids.append(episode)
+                episode_ids.a..(episode)
 
 
-        return episode_ids
-
-
-
+        r.. episode_ids
 
 
 
 
 
 
-    ___ get_most_mentioned_domain_names(self, n: int = 15) -> list:
+
+
+
+    ___ get_most_mentioned_domain_names(self, n: int = 15) -> l..:
         """Get the most mentioned domain domains. We match a domain using
            regex: "https?://[^/]+" - make sure you only count a domain once per
            episode and ignore domains in IGNORE_DOMAINS.
            Return a list of (domain, count) tuples (use Counter).
         """
         counts = Counter()
-        for entry in self.entries:
+        ___ entry __ self.entries:
             summary = entry['summary']
             domains = set(re.findall(r'https?://[^/]+',summary))
-            for domain in domains:
-                __ domain not in IGNORE_DOMAINS:
+            ___ domain __ domains:
+                __ domain n.. __ IGNORE_DOMAINS:
                     counts[domain] += 1
 
         
 
-        return counts.most_common(n)
+        r.. counts.most_common(n)
 
 
     ___ number_episodes_with_special_guest(self) -> int:
@@ -73,7 +73,7 @@ class PythonBytes:
            featured (use SPECIAL_GUEST).
         """
 
-        return sum(SPECIAL_GUEST in entry['summary'] for entry in self.entries)
+        r.. s..(SPECIAL_GUEST __ entry['summary'] ___ entry __ self.entries)
 
     ___ get_average_duration_episode_in_seconds(self) -> NamedTuple:
         """Return the average duration in seconds of a Python Bytes episode, as
@@ -84,11 +84,11 @@ class PythonBytes:
 
         min_duration_seconds = float('inf')
         max_duration_seconds = float("-inf")
-        min_duration = max_duration = None
+        min_duration = max_duration = N..
         duration_sums = 0
 
 
-        for entry in self.entries:
+        ___ entry __ self.entries:
             duration= entry['itunes_duration']
             hours,minutes,seconds = map(int,duration.split(':'))
             total_seconds = 3600 * hours + 60 * minutes + seconds
@@ -100,14 +100,14 @@ class PythonBytes:
                 max_duration_seconds = total_seconds
                 max_duration = duration
 
-        average_duration = int(duration_sums/ len(self.entries))
-        return Duration(average_duration,max_duration,min_duration)
+        average_duration = int(duration_sums/ l..(self.entries))
+        r.. Duration(average_duration,max_duration,min_duration)
 
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     python_bites = PythonBytes()

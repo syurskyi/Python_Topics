@@ -13,26 +13,26 @@ class Solution:
         i = 1
         res = head  # Start of the beginning part
         res_end = head  # End of the beginning part
-        rev = None  # Start of reversed part
-        rev_end = None  # End of reversed part
-        while head is not None:
+        rev = N..  # Start of reversed part
+        rev_end = N..  # End of reversed part
+        while head __ n.. N..
             next_node = head.next
             __ i < m:
                 res_end = head
-            elif i >= m and i <= n:
+            ____ i >= m and i <= n:
                 head.next = rev
                 rev = head
-                __ i == m:
+                __ i __ m:
                     rev_end = head
-            else:  # i > n
+            ____:  # i > n
                 break
             head = next_node
             i += 1
         # No beginning part
-        __ m == 1:
+        __ m __ 1:
             res = rev
             res_end = rev_end
-        else:
+        ____:
             res_end.next = rev
         rev_end.next = head
-        return res
+        r.. res

@@ -1,9 +1,9 @@
-from pathlib import Path
-from tempfile import TemporaryDirectory
+____ pathlib _______ Path
+____ tempfile _______ TemporaryDirectory
 
-import pytest
+_______ pytest
 
-from bites import get_most_complex_bites, TMP
+____ bites _______ get_most_complex_bites, TMP
 
 BITES_CSV = TMP / 'intro_bites.csv'
 INTRO_BITE_STATS = """Bite;Difficulty
@@ -25,7 +25,7 @@ ___ intro_bites():
     with TemporaryDirectory(dir=TMP):
         with open(BITES_CSV, 'w') as f:
             f.write(INTRO_BITE_STATS)
-    return BITES_CSV
+    r.. BITES_CSV
 
 
 @pytest.mark.parametrize("N, expected", [
@@ -36,8 +36,8 @@ ___ intro_bites():
 ___ test_different_args_for_N(N, expected):
     actual = get_most_complex_bites(N)
     # str or int for IDs is fine with us
-    actual = [str(i) for i in actual]
-    assert actual == expected
+    actual = [str(i) ___ i __ actual]
+    ... actual __ expected
 
 
 @pytest.mark.parametrize("N, expected", [
@@ -50,5 +50,5 @@ ___ test_different_args_for_N(N, expected):
 ___ test_only_intro_bites(intro_bites, N, expected):
     actual = get_most_complex_bites(N, stats=intro_bites)
     # str or int for IDs is fine with us
-    actual = [str(i) for i in actual]
-    assert actual == expected
+    actual = [str(i) ___ i __ actual]
+    ... actual __ expected

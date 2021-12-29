@@ -61,42 +61,42 @@ Output:
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
-        return self.add(root, v, d, 1, "left")
+        r.. self.add(root, v, d, 1, "left")
 
     ___ add(self, node, v, d, cur_d, child) -> TreeNode:
         # use the return value for parent's reference 
-        __ cur_d == d:
+        __ cur_d __ d:
             new = TreeNode(v)
             setattr(new, child, node)
-            return new
+            r.. new
 
         __ node:
             node.left = self.add(node.left, v, d, cur_d + 1, "left")
             node.right = self.add(node.right, v, d, cur_d + 1, "right")
-            return node
+            r.. node
 
 
 class Solution2:
     ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
-        __ d == 1:
+        __ d __ 1:
             node = TreeNode(v)
             node.left = root
-            return node
+            r.. node
 
         self.add(self, root, v, d, 1)
-        return root
+        r.. root
 
-    ___ add(self, node, v, d, cur_d) -> None:
-        __ not node:
-            return
+    ___ add(self, node, v, d, cur_d) -> N..
+        __ n.. node:
+            r..
 
-        __ cur_d + 1 == d:
+        __ cur_d + 1 __ d:
             left = node.left
             right = node.right
             node.left = TreeNode(v)

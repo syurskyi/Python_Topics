@@ -14,26 +14,26 @@ class Solution:
     @return: True if B is a subtree of A, or false.
     """
     ___ isSubtree(self, A, B):
-        __ not B:
+        __ n.. B:
             # Empty tree is also treated as subtree in Lintcode
-            return True
-        __ not A:
-            return False
+            r.. True
+        __ n.. A:
+            r.. False
 
-        return (
-            self.isEqual(A, B) or
-            self.isSubtree(A.left, B) or
+        r.. (
+            self.isEqual(A, B) o.
+            self.isSubtree(A.left, B) o.
             self.isSubtree(A.right, B)
         )
 
     ___ isEqual(self, A, B):
-        __ not A and not B:
-            return True
-        __ not A or not B:
-            return False
+        __ n.. A and n.. B:
+            r.. True
+        __ n.. A o. n.. B:
+            r.. False
 
-        return (
-            A.val == B.val and
+        r.. (
+            A.val __ B.val and
             self.isEqual(A.left, B.left) and
             self.isEqual(A.right, B.right)
         )

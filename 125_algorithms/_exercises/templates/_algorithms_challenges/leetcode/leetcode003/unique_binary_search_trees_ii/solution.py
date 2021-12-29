@@ -8,21 +8,21 @@
 class Solution:
     # @return a list of tree node
     ___ generateTrees(self, n):
-        a = range(1, n + 1)
-        return self.generate_bst(a)
+        a = r..(1, n + 1)
+        r.. self.generate_bst(a)
 
     ___ generate_bst(self, a):
-        __ not a:
-            return [None]
-        else:
-            res = []
-            for i, c in enumerate(a):
+        __ n.. a:
+            r.. [N..]
+        ____:
+            res    # list
+            ___ i, c __ enumerate(a):
                 left = self.generate_bst(a[:i])
                 right = self.generate_bst(a[i + 1:])
-                for l in left:
-                    for r in right:
+                ___ l __ left:
+                    ___ r __ right:
                         root = TreeNode(c)
                         root.left = l
                         root.right = r
-                        res.append(root)
-            return res
+                        res.a..(root)
+            r.. res

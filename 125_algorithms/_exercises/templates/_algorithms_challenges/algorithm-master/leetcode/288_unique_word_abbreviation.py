@@ -24,7 +24,7 @@ class ValidWordAbbr:
         """
         self.abbrs = {}
 
-        for word in dictionary:
+        ___ word __ dictionary:
             abbr = self.abbreviation(word)
             self.abbrs[abbr] = word
 
@@ -35,14 +35,14 @@ class ValidWordAbbr:
         :rtype: bool
         """
         abbr = self.abbreviation(word)
-        return abbr not in self.abbrs
+        r.. abbr n.. __ self.abbrs
 
     ___ abbreviation(self, word):
-        __ len(word) < 3:
-            return word
+        __ l..(word) < 3:
+            r.. word
 
-        cnt = len(word) - 2
-        return '{}{}{}'.format(
+        cnt = l..(word) - 2
+        r.. '{}{}{}'.format(
             word[0],
             str(cnt),
             word[-1]

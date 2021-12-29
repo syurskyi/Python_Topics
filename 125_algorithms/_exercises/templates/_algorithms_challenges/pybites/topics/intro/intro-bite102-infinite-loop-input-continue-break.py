@@ -7,15 +7,15 @@ ___ my_print_colors():
        continue, finally if that check passes, print the color"""
     while True:
         inp = input("Enter color:").lower()
-        __ inp == 'quit':
+        __ inp __ 'quit':
             print("bye")
             break
 
-        __ inp not in VALID_COLORS:
+        __ inp n.. __ VALID_COLORS:
             print("Not a valid color")
             continue
     # this else is useless
-        else:
+        ____:
             print(inp)
 
     # thou shall not stop after a match!!!
@@ -27,11 +27,11 @@ ___ print_colors():
        continue, finally if that check passes, print the color"""
     while True:
         color = input('Enter a color: ').lower()
-        __ color == 'quit':
+        __ color __ 'quit':
             print('bye')
             break
 
-        __ color not in VALID_COLORS:
+        __ color n.. __ VALID_COLORS:
             print('Not a valid color')
             continue
 

@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: int
         """
         people.sort()
-        l, r = 0, len(people)-1
+        l, r = 0, l..(people)-1
         res = 0
         while l <= r:
             w = people[r]
@@ -19,7 +19,7 @@ class Solution(object):
                 l += 1
             res += 1
             r -= 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -37,10 +37,10 @@ class Solution(object):
                 [3,5,3,4], 5,
             ],
         ]
-        for people, limit in testCases:
+        ___ people, limit __ testCases:
             res = self.numRescueBoats(people, limit)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

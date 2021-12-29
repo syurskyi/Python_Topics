@@ -4,16 +4,16 @@ class Solution(object):
     :type s: str
     :rtype: bool
     """
-    start, end = 0, len(s) - 1
+    start, end = 0, l..(s) - 1
     while start < end:
-      __ not s[start].isalnum():
+      __ n.. s[start].isalnum():
         start += 1
         continue
-      __ not s[end].isalnum():
+      __ n.. s[end].isalnum():
         end -= 1
         continue
       __ s[start].lower() != s[end].lower():
-        return False
+        r.. False
       start += 1
       end -= 1
-    return True
+    r.. True

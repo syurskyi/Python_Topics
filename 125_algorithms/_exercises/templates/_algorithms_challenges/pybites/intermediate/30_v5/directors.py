@@ -1,7 +1,7 @@
-import csv
-import os
-from collections import defaultdict, namedtuple
-from urllib.request import urlretrieve
+_______ csv
+_______ os
+____ collections _______ defaultdict, namedtuple
+____ urllib.request _______ urlretrieve
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
 TMP = '/tmp'
@@ -26,24 +26,24 @@ ___ get_movies_by_director():
         reader = csv.DictReader(f)
         films = [{'director': r['director_name'], 'title': r['movie_title'], 'year': r['title_year'],
                   'score': r['imdb_score']}
-                 for r in reader]
+                 ___ r __ reader]
     result = defaultdict()
-    for r in films:
-        yr = int(r['year'], 10) __ r['year'] else 0
+    ___ r __ films:
+        yr = int(r['year'], 10) __ r['year'] ____ 0
         __ yr >= MIN_YEAR:
-            score = float(r['score']) __ r['score'] else 0.0
+            score = float(r['score']) __ r['score'] ____ 0.0
             movie = Movie(r['title'], yr, score)
-            __ r['director'] in result:
-                result[r['director']].append(movie)
-            else:
+            __ r['director'] __ result:
+                result[r['director']].a..(movie)
+            ____:
                 result[r['director']] = [movie]
-    return result
+    r.. result
 
 
-___ calc_mean_score(movies: list):
+___ calc_mean_score(movies: l..):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    return round(sum(x.score for x in movies) / len(movies), 1)
+    r.. round(s..(x.score ___ x __ movies) / l..(movies), 1)
 
 
 ___ get_average_scores(directors: defaultdict):
@@ -51,5 +51,5 @@ ___ get_average_scores(directors: defaultdict):
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    return sorted([(d, calc_mean_score(directors[d])) for d in directors.keys() __ len(directors[d]) >= MIN_MOVIES],
-                  key=lambda x: -x[1])
+    r.. s..([(d, calc_mean_score(directors[d])) ___ d __ directors.keys() __ l..(directors[d]) >= MIN_MOVIES],
+                  key=l.... x: -x[1])

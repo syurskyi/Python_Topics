@@ -15,22 +15,22 @@ class Solution:
         :type b: int
         :rtype: list[int]
         """
-        ans = []
+        ans    # list
 
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
         self.dfs(root, a, b, ans)
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, a, b, ans):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         self.dfs(node.left, a, b, ans)
 
         __ a <= node.val <= b:
-            ans.append(node.val)
+            ans.a..(node.val)
 
         self.dfs(node.right, a, b, ans)

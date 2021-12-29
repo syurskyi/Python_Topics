@@ -3,19 +3,19 @@ w___ T...
     o  input("Choose Opearator(+, -, *, /): ")
     __ o __ "0":
         _____
-    __ o in ('+','-','*','/'):
+    __ o __ ('+','-','*','/'):
         x  float(input("Enter the value of x = "))
         y  float(input("Enter the value of y = "))
         __ o __ '+':
             print("%.2f" % (x+y))
-        elif o __ '-':
+        ____ o __ '-':
             print("%.2f" % (x-y))
-        elif o __ '*':
+        ____ o __ '*':
             print("%.2f" % (x*y))
-        elif o __ '/':
+        ____ o __ '/':
             __ y ! 0:
                 print("%.2f" % (x / y))
-            else:
+            ____:
                 print("Error! Division by zero...")
-        else:
+        ____:
             print("Invalid operator")

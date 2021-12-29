@@ -5,7 +5,7 @@ Created on Sep 6, 2017
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -22,6 +22,6 @@ class Solution(object):
             __ t.right:
                 res += '(%s)' % self.tree2str(t.left)
                 res += '(%s)' % self.tree2str(t.right)
-            elif t.left:
+            ____ t.left:
                 res += '(%s)' % self.tree2str(t.left)
-        return res
+        r.. res

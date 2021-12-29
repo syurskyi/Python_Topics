@@ -34,61 +34,61 @@ class Solution:
     step-1/ find a square and check the vertices
     """
     ___ findPeakII(self, A):
-        __ not A:
-            return self.NULL_POS
+        __ n.. A:
+            r.. self.NULL_POS
 
-        self.m, self.n = len(A), len(A[0])
+        self.m, self.n = l..(A), l..(A[0])
         left, col, right = 0, 0, self.n - 1
         up, row, down = 0, 0, self.m - 1
 
-        while left + 1 < right or up + 1 < down:
+        while left + 1 < right o. up + 1 < down:
             __ down - up > right - left:
                 row = up + (down - up) // 2
                 col = self.findRowMax(A, row, left, right)
                 __ self.isPeak(A, row, col):
-                    return [row, col]
+                    r.. [row, col]
                 __ A[row][col] < A[row-1][col]:
                     down = row
-                else:
+                ____:
                     up = row
-            else:
+            ____:
                 col = left + (right - left) // 2
                 row = self.findColMax(A, col, up, down)
                 __ self.isPeak(A, row, col):
-                    return [row, col]
+                    r.. [row, col]
                 __ A[row][col] < A[row][col-1]:
                     right = col
-                else:
+                ____:
                     left = col
-        for r in [up, down]:
-            for c in [left, right]:
+        ___ r __ [up, down]:
+            ___ c __ [left, right]:
                 __ self.isPeak(A, r, c):
-                    return [r, c]
-        return self.NULL_POS
+                    r.. [r, c]
+        r.. self.NULL_POS
 
     # given col index, return the row index of the max value on that col
     ___ findColMax(self, A, col, up, down):
         row = 0
-        for r in range(up, down + 1):
+        ___ r __ r..(up, down + 1):
             __ A[row][col] < A[r][col]:
                 row = r
-        return row
+        r.. row
 
     # given row index, return the col index of the max value on that row
     ___ findRowMax(self, A, row, left, right):
         col = 0
-        for c in range(left, right + 1):
+        ___ c __ r..(left, right + 1):
             __ A[row][col] < A[row][c]:
                 col = c
-        return col
+        r.. col
 
     ___ isPeak(self, A, row, col):
         _r = _c = 0
-        for i in range(4):
+        ___ i __ r..(4):
             _r = row + self.dx[i]
             _c = col + self.dy[i]
             __ 0 <= _r < self.m \
                     and 0 <= _c < self.n \
                     and A[row][col] < A[_r][_c]:
-                return 0
-        return 1
+                r.. 0
+        r.. 1

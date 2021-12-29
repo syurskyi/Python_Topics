@@ -34,8 +34,8 @@ Note:
 piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 """
-from typing import List
-import math
+____ typing _______ List
+_______ math
 
 
 class Solution:
@@ -49,24 +49,24 @@ class Solution:
 
         O(log n * n)
         """
-        __ len(piles) > H:
-            return None
+        __ l..(piles) > H:
+            r.. N..
 
-        n = len(piles)
+        n = l..(piles)
         hi = max(piles) + 1
         lo = 1
         while lo < hi:
             mid = (lo + hi) // 2
-            __ sum(
+            __ s..(
                 math.ceil(piles[i] / mid)
-                for i in range(n)
+                ___ i __ r..(n)
             ) > H:
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return lo
+        r.. lo
 
 
-__ __name__ == "__main__":
-    assert Solution().minEatingSpeed([3,6,7,11], 8) == 4
+__ __name__ __ "__main__":
+    ... Solution().minEatingSpeed([3,6,7,11], 8) __ 4

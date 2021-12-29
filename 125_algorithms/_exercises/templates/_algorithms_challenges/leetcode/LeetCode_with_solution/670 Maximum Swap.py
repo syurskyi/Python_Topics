@@ -21,15 +21,15 @@ class Solution:
         """
         stk maintain a increasing stack from right to left
         """
-        stk = []
-        nums = list(str(num))
-        n = len(nums)
-        for i in range(n-1, -1, -1):
+        stk    # list
+        nums = l..(str(num))
+        n = l..(nums)
+        ___ i __ r..(n-1, -1, -1):
             __ stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 continue
-            stk.append((i, nums[i]))
+            stk.a..((i, nums[i]))
 
-        for i in range(n):
+        ___ i __ r..(n):
             while stk and stk[-1][0] <= i:
                 stk.pop()
             __ stk and stk[-1][1] > nums[i]:
@@ -37,9 +37,9 @@ class Solution:
                 nums[i], nums[j] = nums[j], nums[i]
                 break
 
-        return int("".join(nums))
+        r.. int("".join(nums))
 
 
-__ __name__ == "__main__":
-    assert Solution().maximumSwap(2736) == 7236
-    assert Solution().maximumSwap(9973) == 9973
+__ __name__ __ "__main__":
+    ... Solution().maximumSwap(2736) __ 7236
+    ... Solution().maximumSwap(9973) __ 9973

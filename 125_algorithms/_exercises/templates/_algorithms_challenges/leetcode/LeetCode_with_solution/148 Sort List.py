@@ -6,10 +6,10 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 class Solution:
     ___ sortList_array(self, head):
@@ -18,21 +18,21 @@ class Solution:
         :param head: ListNode
         :return: ListNode
         """
-        __ head==None:
-            return None
-        lst = [] # must be constant space
+        __ head__N..
+            r.. N..
+        lst    # list # must be constant space
         current = head
         while(current):
-            lst.append(current)
+            lst.a..(current)
             current = current.next
 
 
-        comparator = lambda x, y: cmp(x.val, y.val)
-        lst = sorted(lst, comparator)  # return # sorted is not side-effect # O(n log n)
-        for i in range(len(lst)-1):
+        comparator = l.... x, y: cmp(x.val, y.val)
+        lst = s..(lst, comparator)  # return # sorted is not side-effect # O(n log n)
+        ___ i __ r..(l..(lst)-1):
             lst[i].next = lst[i+1]
-        lst[-1].next = None
-        return lst[0]
+        lst[-1].next = N..
+        r.. lst[0]
 
     ___ sortList(self, head):
         """
@@ -43,8 +43,8 @@ class Solution:
         :param head: ListNode
         :return: ListNode
         """
-        __ not head or not head.next:
-            return head
+        __ n.. head o. n.. head.next:
+            r.. head
 
         dummy = ListNode(0)
         dummy.next = head
@@ -59,7 +59,7 @@ class Solution:
         dummy_mid = ListNode(0)
 
         # sort sub-problem
-        slow_pre.next = None  # break
+        slow_pre.next = N..  # break
         head = self.sortList(head)
         mid_head = self.sortList(mid_head)
 
@@ -72,22 +72,22 @@ class Solution:
             __ pre.next.val > pre_mid.next.val:
                 pre.next, pre_mid.next.next, pre_mid.next = pre_mid.next, pre.next, pre_mid.next.next
                 pre = pre.next
-            else:
+            ____:
                 pre = pre.next
 
         # dangling
         __  pre_mid.next:
             pre.next = pre_mid.next
 
-        return dummy.next
+        r.. dummy.next
 
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     length = 5
-    lst = [ListNode(length-i) for i in range(length)]
-    for i in range(length-1):
+    lst = [ListNode(length-i) ___ i __ r..(length)]
+    ___ i __ r..(length-1):
         lst[i].next = lst[i+1]
 
     head = Solution().sortList(lst[0])

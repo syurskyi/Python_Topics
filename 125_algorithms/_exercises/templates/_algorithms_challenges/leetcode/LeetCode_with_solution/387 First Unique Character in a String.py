@@ -21,19 +21,19 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        __ not s:
-            return -1
+        __ n.. s:
+            r.. -1
 
         first = {}
-        for i, v in enumerate(list(s)):
-            __ v not in first:
+        ___ i, v __ enumerate(l..(s)):
+            __ v n.. __ first:
                 first[v] = i
-            else:
+            ____:
                 first[v] = -1
 
-        lst = filter(lambda x: x != -1, first.values())
-        return min(lst) __ lst else -1
+        lst = filter(l.... x: x != -1, first.values())
+        r.. m..(lst) __ lst ____ -1
 
 
-__ __name__ == "__main__":
-    assert Solution().firstUniqChar("leetcode") == 0
+__ __name__ __ "__main__":
+    ... Solution().firstUniqChar("leetcode") __ 0

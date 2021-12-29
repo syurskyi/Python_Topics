@@ -1,27 +1,27 @@
-from typing import List
-import string
+____ typing _______ List
+_______ string
 
 
-___ split_once(text: str, separators: str = None) -> List[str]:
+___ split_once(text: str, separators: str = N..) -> List[str]:
 
-    __ separators == None:
+    __ separators __ N..
         separators = string.whitespace 
 
     separators= set(separators)
-    result = []
+    result    # list
     previous_start = 0
-    for i,c in enumerate(text):
-        __ c in separators:
-            result.append(text[previous_start:i])
+    ___ i,c __ enumerate(text):
+        __ c __ separators:
+            result.a..(text[previous_start:i])
             previous_start = i + 1
             separators.remove(c)
 
-    result.append(text[previous_start:])        
-    return result
+    result.a..(text[previous_start:])
+    r.. result
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     print(split_once('abc: def: ijk, lmno: pqr - stu, wxy', separators=',-:'))
 

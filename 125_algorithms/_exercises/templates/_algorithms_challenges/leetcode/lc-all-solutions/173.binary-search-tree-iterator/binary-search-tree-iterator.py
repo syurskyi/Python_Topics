@@ -10,16 +10,16 @@ class BSTIterator(object):
     """
     :type root: TreeNode
     """
-    self.p = None
-    self.stack = []
+    self.p = N..
+    self.stack    # list
     __ root:
-      self.stack.append((1, root))
+      self.stack.a..((1, root))
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
-    return len(self.stack) > 0
+    r.. l..(self.stack) > 0
 
   ___ next(self):
     """
@@ -28,17 +28,17 @@ class BSTIterator(object):
     stack = self.stack
     while stack:
       p = stack.pop()
-      __ not p[1]:
+      __ n.. p[1]:
         continue
-      __ p[0] == 0:
-        return p[1].val
-      else:
-        l = []
+      __ p[0] __ 0:
+        r.. p[1].val
+      ____:
+        l    # list
         __ p[1].right:
-          l.append((1, p[1].right))
-        l.append((0, p[1]))
+          l.a..((1, p[1].right))
+        l.a..((0, p[1]))
         __ p[1].left:
-          l.append((1, p[1].left))
+          l.a..((1, p[1].left))
         stack.extend(l)
 
 # Your BSTIterator will be called like this:

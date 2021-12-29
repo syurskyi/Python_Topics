@@ -27,46 +27,46 @@ class Solution:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ len(words1) != len(words2):
-            return False
+        __ l..(words1) != l..(words2):
+            r.. False
 
         nodes = {}
 
-        for a, b in pairs:
+        ___ a, b __ pairs:
             self.union(nodes, a, b)
 
-        for i in range(len(words1)):
+        ___ i __ r..(l..(words1)):
             a = words1[i]
             b = words2[i]
             _a = self.find(nodes, a)
             _b = self.find(nodes, b)
 
             __ a != b and _a != _b:
-                return False
+                r.. False
 
-        return True
+        r.. True
 
     ___ union(self, nodes, a, b):
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        __ _a is not _b:
+        __ _a __ n.. _b:
             nodes[_a] = _b
 
-        return _b
+        r.. _b
 
     ___ find(self, nodes, a):
-        __ a not in nodes:
+        __ a n.. __ nodes:
             nodes[a] = a
-            return a
-        __ nodes[a] is a:
-            return a
+            r.. a
+        __ nodes[a] __ a:
+            r.. a
 
         nodes[a] = self.find(nodes, nodes[a])
-        return nodes[a]
+        r.. nodes[a]
 
 
-import collections
+_______ collections
 
 
 class Solution2:
@@ -80,40 +80,40 @@ class Solution2:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ len(words1) != len(words2):
-            return False
+        __ l..(words1) != l..(words2):
+            r.. False
 
         simils = collections.defaultdict(set)
 
-        for a, b in pairs:
+        ___ a, b __ pairs:
             simils[a].add(b)
             simils[b].add(a)
 
-        for i in range(len(words1)):
+        ___ i __ r..(l..(words1)):
             a = words1[i]
             b = words2[i]
 
-            __ a != b and not self.dfs(a, b, simils, set()):
-                return False
+            __ a != b and n.. self.dfs(a, b, simils, set()):
+                r.. False
 
-        return True
+        r.. True
 
     ___ dfs(self, start, end, simils, path):
         # check start and end are connected
-        __ start == end:
-            return True
-        __ start not in simils or start in path:
-            return False
+        __ start __ end:
+            r.. True
+        __ start n.. __ simils o. start __ path:
+            r.. False
 
         path.add(start)
 
-        for nxt in simils[start]:
-            __ nxt in path:
+        ___ nxt __ simils[start]:
+            __ nxt __ path:
                 continue
 
             res = self.dfs(nxt, end, simils, path)
             __ res:
-                return True
+                r.. True
 
         path.discard(start)
-        return False
+        r.. False

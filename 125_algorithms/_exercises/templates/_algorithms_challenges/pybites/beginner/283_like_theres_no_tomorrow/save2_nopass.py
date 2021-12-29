@@ -2,7 +2,7 @@ ___ get_username():
     # Ask the user to enter their username in this function
     # and return the username
     username = input("What is your username?")
-    return username
+    r.. username
 
 
 ___ print_username(username):
@@ -10,6 +10,6 @@ ___ print_username(username):
     # Print the alternative text if there is no username
     __ username:
         print(f"Your username is {username}.")
-    else: 
+    ____: 
         print("Sorry, no username was defined.")
         

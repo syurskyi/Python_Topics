@@ -13,8 +13,8 @@ class Allergies:
 
     ___ __init__(self, score):
         self.score = score
-        self.lst = list(allergy for allergy in self.ALLERGY_SCORES __
+        self.lst = l..(allergy ___ allergy __ self.ALLERGY_SCORES __
                         self.is_allergic_to(allergy))
 
     ___ is_allergic_to(self, allergen):
-        return self.ALLERGY_SCORES[allergen] & self.score
+        r.. self.ALLERGY_SCORES[allergen] & self.score

@@ -10,23 +10,23 @@ class Solution(object):
         :type q: int
         :rtype: int
         """
-        while p % 2 == 0 and q % 2 == 0:
+        while p % 2 __ 0 and q % 2 __ 0:
             p, q = p//2, q//2
-        __ p % 2 == 0:
-            return 2
-        elif q % 2 == 0:
-            return 0
-        else:
-            return 1
+        __ p % 2 __ 0:
+            r.. 2
+        ____ q % 2 __ 0:
+            r.. 0
+        ____:
+            r.. 1
     
     ___ test(self):
         testCases = [
             
         ]
-        for p, q in testCases:
+        ___ p, q __ testCases:
             res = self.mirrorReflection(p, q)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -3,7 +3,7 @@ Premium Question
 Generation
 https://leetcode.com/problems/strobogrammatic-number-iii/
 """
-from collections import deque
+____ collections _______ deque
 
 __author__ = 'Daniel'
 
@@ -20,34 +20,34 @@ class Solution(object):
         :rtype: int
         """
         cnt = 0
-        for l in xrange(len(low), len(high)+1):
-            cnt += len(filter(lambda x: int(low) <= int(x) <= int(high), self.strobogrammatic(l)))
+        ___ l __ xrange(l..(low), l..(high)+1):
+            cnt += l..(filter(l.... x: int(low) <= int(x) <= int(high), self.strobogrammatic(l)))
 
-        return cnt
+        r.. cnt
 
     # below methods from strobogrammatic number ii
     ___ strobogrammatic(self, n):
-        ret = []
+        ret    # list
         self.build(n, deque(), ret)
-        return ret
+        r.. ret
 
     ___ build(self, n, cur, ret):
         """
         build from inside
         """
-        __ n%2 == 1 and len(cur) == 0:
-            for elt in self.middle:
-                cur.append(elt)
+        __ n%2 __ 1 and l..(cur) __ 0:
+            ___ elt __ self.middle:
+                cur.a..(elt)
                 self.build(n, cur, ret)
                 cur.pop()
-        else:
-            __ len(cur) == n:
-                ret.append("".join(cur))
-                return
-            for elt in self.lst:
-                __ not (elt == "00" and len(cur) == n-2):
+        ____:
+            __ l..(cur) __ n:
+                ret.a..("".join(cur))
+                r..
+            ___ elt __ self.lst:
+                __ n.. (elt __ "00" and l..(cur) __ n-2):
                     cur.appendleft(elt[0])
-                    cur.append(elt[1])
+                    cur.a..(elt[1])
                     self.build(n, cur, ret)
                     cur.pop()
                     cur.popleft()

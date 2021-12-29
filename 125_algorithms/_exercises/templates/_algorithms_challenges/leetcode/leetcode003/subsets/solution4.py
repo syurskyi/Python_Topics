@@ -4,21 +4,21 @@ class Solution:
     # @return a list of lists of integer
     ___ subsets(self, S):
         S.sort()
-        k = len(S)
+        k = l..(S)
         n = 2 ** k
-        res = []
-        for i in range(n):
+        res    # list
+        ___ i __ r..(n):
             s = self.filter(S, k, i)
-            res.append(s)
-        return res
+            res.a..(s)
+        r.. res
 
     ___ filter(self, S, k, i):
-        res = []
-        for j in range(k):
+        res    # list
+        ___ j __ r..(k):
             mask = 1 << j
             __ i & mask > 0:
-                res.append(S[j])
-        return res
+                res.a..(S[j])
+        r.. res
 
 s = Solution()
 print(s.subsets([1, 2, 3]))

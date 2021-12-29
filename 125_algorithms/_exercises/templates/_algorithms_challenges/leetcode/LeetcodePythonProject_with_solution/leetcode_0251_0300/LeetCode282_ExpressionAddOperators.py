@@ -10,23 +10,23 @@ class Solution(object):
         :type target: int
         :rtype: List[str]
         """
-        res = []
+        res    # list
         self.helper(num, 0, target, '', 0, 0, res)
-        return res
+        r.. res
     
     ___ helper(self, num, pos, target, curr, evalVal, mult, res):
-        __ pos == len(num):
+        __ pos __ l..(num):
             evalVal += mult
-            __ target == evalVal:
-                res.append(curr)
-            return
-        for i in range(pos+1, len(num)+1):
-            __ i > pos+1 and num[pos] == '0':
+            __ target __ evalVal:
+                res.a..(curr)
+            r..
+        ___ i __ r..(pos+1, l..(num)+1):
+            __ i > pos+1 and num[pos] __ '0':
                 break
             numStr = num[pos:i]
-            __ pos == 0:
+            __ pos __ 0:
                 self.helper(num, i, target, numStr, 0, int(numStr), res)
-            else:
+            ____:
                 self.helper(num, i, target, curr+'+'+numStr, evalVal+mult, int(numStr), res)
                 self.helper(num, i, target, curr+'-'+numStr, evalVal+mult, -int(numStr), res)
                 self.helper(num, i, target, curr+'*'+numStr, evalVal, mult*int(numStr), res)
@@ -39,12 +39,12 @@ class Solution(object):
             ('00', 0),
             ('3456237490', 9191),
         ]
-        for num, target in testCases:
+        ___ num, target __ testCases:
             print('num: %s' % (num))
             print('target: %s' % (target))
             result = self.addOperators(num, target)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

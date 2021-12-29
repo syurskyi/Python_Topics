@@ -11,17 +11,17 @@ class Solution:
             '8': 'tuv',
             '9': 'wxyz',
         }
-        return self.combinations(digits, 0, d)
+        r.. self.combinations(digits, 0, d)
 
     ___ combinations(self, digits, i, d):
-        __ i == len(digits):
-            return ['']
-        else:
-            res = []
+        __ i __ l..(digits):
+            r.. ['']
+        ____:
+            res    # list
             rest_combs = self.combinations(digits, i + 1, d)
-            for comb in rest_combs:
+            ___ comb __ rest_combs:
                 number = digits[i]
                 letters = d[number]
-                for letter in letters:
-                    res.append(letter + comb)
-            return res
+                ___ letter __ letters:
+                    res.a..(letter + comb)
+            r.. res

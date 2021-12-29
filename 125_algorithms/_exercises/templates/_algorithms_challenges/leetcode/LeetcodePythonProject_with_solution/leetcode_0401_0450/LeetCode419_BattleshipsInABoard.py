@@ -10,22 +10,22 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: int
         """
-        __ not board or not board[0]: return 0
-        m, n = len(board), len(board[0])
+        __ n.. board o. n.. board[0]: r.. 0
+        m, n = l..(board), l..(board[0])
         count = 0
-        for i in range(m):
-            for j in range(n):
-                __ board[i][j] == 'X':
-                    __ i == 0:
-                        __ j == 0:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ board[i][j] __ 'X':
+                    __ i __ 0:
+                        __ j __ 0:
                             count += 1
-                        elif board[i][j-1] == '.':
+                        ____ board[i][j-1] __ '.':
                             count += 1
-                    elif j == 0:
-                        __ board[i-1][j] == '.':
+                    ____ j __ 0:
+                        __ board[i-1][j] __ '.':
                             count += 1
-                    else:
-                        __ board[i-1][j] == '.' and board[i][j-1] == '.':
+                    ____:
+                        __ board[i-1][j] __ '.' and board[i][j-1] __ '.':
                             count += 1
-        return count
+        r.. count
     

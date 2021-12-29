@@ -2,10 +2,10 @@
 # Score: 20
 
 
-import re
+_______ re
 
 
-for _ in range(int(input())):
+___ _ __ r..(int(input())):
     try:
         print(bool(re.compile(input())))
     except re.error:

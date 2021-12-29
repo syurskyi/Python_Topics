@@ -1,9 +1,9 @@
 str  input("Insert different strings: ")
-first  str.split()
-len_first  len(first)
+first  str.s..
+len_first  l..(first)
 
-for i in range(len_first - 1):
-    for j in range(len_first - 1 -i):
-        __ len(first[j]) > len(first[j + 1]):
+___ i __ r..(len_first - 1):
+    ___ j __ r..(len_first - 1 -i):
+        __ l..(first[j]) > l..(first[j + 1]):
             first[j], first[j + 1]  first[j + 1],first[j]
 print(' '.join(first))

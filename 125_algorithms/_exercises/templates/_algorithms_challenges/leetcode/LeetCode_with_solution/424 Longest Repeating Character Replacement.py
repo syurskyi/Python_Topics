@@ -5,8 +5,8 @@ any letter in the string with another letter at most k times. Find the length of
 a longest substring containing all repeating letters you can get after
 performing the above operations.
 """
-import string
-import operator
+_______ string
+_______ operator
 
 
 class Solution:
@@ -26,12 +26,12 @@ class Solution:
         """
         counter = {
             alphabet: 0
-            for alphabet in string.ascii_uppercase
+            ___ alphabet __ string.ascii_uppercase
         }
         lo = 0
         ret = 0
-        assert k > 0
-        for hi in range(len(s)):
+        ... k > 0
+        ___ hi __ r..(l..(s)):
             counter[s[hi]] += 1
             while True:
                 most = max(counter.values())  # O(26)
@@ -39,13 +39,13 @@ class Solution:
                 __ l - most > k:
                     counter[s[lo]] -= 1
                     lo += 1
-                else:
+                ____:
                     ret = max(ret, l)
                     break
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().characterReplacement("AABABBA", 1) == 4
-    assert Solution().characterReplacement("ABAB", 2) == 4
+__ __name__ __ "__main__":
+    ... Solution().characterReplacement("AABABBA", 1) __ 4
+    ... Solution().characterReplacement("ABAB", 2) __ 4

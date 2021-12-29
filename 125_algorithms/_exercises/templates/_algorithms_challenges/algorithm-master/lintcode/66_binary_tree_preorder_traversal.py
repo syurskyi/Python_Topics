@@ -13,16 +13,16 @@ class Solution:
     @return: Preorder in ArrayList which contains node values.
     """
     ___ preorderTraversal(self, root):
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
         self._traversal(root, ans)
-        return ans
+        r.. ans
 
     ___ _traversal(self, node, res):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        res.append(node.val)
+        res.a..(node.val)
         self._traversal(node.left, res)
         self._traversal(node.right, res)

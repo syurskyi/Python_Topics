@@ -3,7 +3,7 @@ ___ count_indents(text):
     #print(text)
     #print(len(text))
     #print(len(text.lstrip(' ')))
-    return len(text) - len(text.lstrip(' '))
+    r.. l..(text) - l..(text.lstrip(' '))
 
 
 

@@ -1,10 +1,10 @@
-from functools import lru_cache
+____ functools _______ lru_cache
 
 @lru_cache
 ___ cached_fib(n):
 
     __ n <= 1:
-        return n
+        r.. n
 
 
-    return fib(n - 1) + fib(n - 2)
+    r.. fib(n - 1) + fib(n - 2)

@@ -14,12 +14,12 @@ class Solution:
         :type b: ListNode
         :rtype: ListNode
         """
-        __ not a and not b:
-            return
-        __ not a:
-            return b
-        __ not b:
-            return a
+        __ n.. a and n.. b:
+            r..
+        __ n.. a:
+            r.. b
+        __ n.. b:
+            r.. a
 
         a = self.rev_list(a)
         b = self.rev_list(b)
@@ -52,10 +52,10 @@ class Solution:
         __ carry:
             tail.next = ListNode(carry)
 
-        return self.rev_list(dummy.next)
+        r.. self.rev_list(dummy.next)
 
     ___ rev_list(self, head):
-        pre = nxt = None
+        pre = nxt = N..
 
         while head:
             nxt = head.next
@@ -63,4 +63,4 @@ class Solution:
             pre = head
             head = nxt
 
-        return pre
+        r.. pre

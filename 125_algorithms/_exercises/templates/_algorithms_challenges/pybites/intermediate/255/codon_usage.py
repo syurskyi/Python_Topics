@@ -1,8 +1,8 @@
-import os
-from urllib.request import urlretrieve
-import requests
-from collections import defaultdict
-from itertools import combinations
+_______ os
+____ urllib.request _______ urlretrieve
+_______ requests
+____ collections _______ defaultdict
+____ itertools _______ combinations
 
 # Translation Table:
 # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG11
@@ -31,10 +31,10 @@ ___ _preload_sequences(url=URL):
     #x = requests.get(url)
     #return x.text.splitlines()
     filename = os.path.join(os.getenv("TMP", "/tmp"), "NC_009641.txt")
-    __ not os.path.isfile(filename):
+    __ n.. os.path.isfile(filename):
         urlretrieve(url, filename)
     with open(filename, "r") as f:
-        return f.readlines()
+        r.. f.readlines()
 
 
 ___ get_translation_table(TRANSL_TABLE_11):
@@ -45,17 +45,17 @@ ___ get_translation_table(TRANSL_TABLE_11):
 
     lines = lines[0:1] + lines[2:]
 
-    for i,line in enumerate(lines):
+    ___ i,line __ enumerate(lines):
         lines[i] = line.split('=')[1].strip()
     
     mapping = {}
-    for aa,b1,b2,b3 in zip(*lines):
-        __ aa == 'U':
+    ___ aa,b1,b2,b3 __ zip(*lines):
+        __ aa __ 'U':
             aa = 'T'
         mapping[b1 + b2 + b3] = aa
 
 
-    return mapping
+    r.. mapping
 
 
 
@@ -79,9 +79,9 @@ ___ return_codon_usage_table(
     total = 0
     codon_to_count = defaultdict(int)
     
-    for sequence in sequences:
+    ___ sequence __ sequences:
         sequence = sequence.strip()
-        for i in range(0,len(sequence),3):
+        ___ i __ r..(0,l..(sequence),3):
             codon = sequence[i:i +3]
             codon_to_count[codon] += 1
 
@@ -89,46 +89,46 @@ ___ return_codon_usage_table(
     
 
 
-    total = sum(codon_to_count.values())
+    total = s..(codon_to_count.values())
 
 
-    for codon,count in codon_to_count.items():
+    ___ codon,count __ codon_to_count.items():
         amino_acid = amino_acid_mapping[codon]
         frequency_per_1000 = round((count/total) * 1000,1)
         codon_to_count[codon] = [amino_acid,frequency_per_1000,count]
 
 
 
-    lines = []
+    lines    # list
     heading =  '|  Codon AA  Freq  Count  ' * 4  + '|'
-    lines.append(heading)
+    lines.a..(heading)
     #print(heading)
-    lines.append('-' * len(heading))
+    lines.a..('-' * l..(heading))
     #print('-' * len(heading))
     
 
-    for codon_1 in BASE_ORDER:
-        for codon_3 in BASE_ORDER:
-            row = []
-            for codon_2 in BASE_ORDER:
+    ___ codon_1 __ BASE_ORDER:
+        ___ codon_3 __ BASE_ORDER:
+            row    # list
+            ___ codon_2 __ BASE_ORDER:
                 codon = codon_1 + codon_2 + codon_3
 
                 aa,freq,count = codon_to_count[codon]
                 codon_text = codon + ':'
                 data = f"|  {codon_text:<5} {aa:<2}  {freq:>4}  {count:>5}  "
-                row.append(data)
-            row.append('|')
-            lines.append(''.join(row))
+                row.a..(data)
+            row.a..('|')
+            lines.a..(''.join(row))
             #print(''.join(row))
         
 
-        lines.append('-' * len(heading))
+        lines.a..('-' * l..(heading))
         #print('-' * len(heading))
 
 
 
 
-    return '\n'.join(lines)
+    r.. '\n'.join(lines)
 
 
 
@@ -154,7 +154,7 @@ ___ return_codon_usage_table(
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print(return_codon_usage_table())
 
     #print(get_translation_table())

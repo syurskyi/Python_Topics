@@ -11,15 +11,15 @@ class Solution(object):
         :rtype: str
         """
         vowels = set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
-        s = list(s)
-        j = len(s) - 1
+        s = l..(s)
+        j = l..(s) - 1
         i = 0
         while i < j:
-            __ s[i] in vowels:
-                while s[j] not in vowels: j -= 1
+            __ s[i] __ vowels:
+                while s[j] n.. __ vowels: j -= 1
                 s[i], s[j] = s[j], s[i]
                 j -= 1
 
             i += 1
 
-        return "".join(s)
+        r.. "".join(s)

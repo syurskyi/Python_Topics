@@ -19,10 +19,10 @@ class Solution:
         S_A = (C-A)*(D-B)
         S_B = (G-E)*(H-F)
 
-        l = max(0, min(C, G)-max(A, E))
-        h = max(0, min(D, H)-max(B, F))
-        return S_A + S_B - l*h
+        l = max(0, m..(C, G)-max(A, E))
+        h = max(0, m..(D, H)-max(B, F))
+        r.. S_A + S_B - l*h
 
 
-__ __name__ == "__main__":
-    assert Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2) == 16
+__ __name__ __ "__main__":
+    ... Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2) __ 16

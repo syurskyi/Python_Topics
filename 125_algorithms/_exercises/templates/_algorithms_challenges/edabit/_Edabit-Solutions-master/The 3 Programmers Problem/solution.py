@@ -1,7 +1,7 @@
 ___ programmers(one, two, three):
     a_list = [one, two, three]
     a_list.sort()
-    return a_list[-1] - a_list[0]
+    r.. a_list[-1] - a_list[0]
 
 
 ___ test_programmers():

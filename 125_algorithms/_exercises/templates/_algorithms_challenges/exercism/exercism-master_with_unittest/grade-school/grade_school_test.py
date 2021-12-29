@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from grade_school import School
+____ grade_school _______ School
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -32,7 +32,7 @@ class GradeSchoolTest(unittest.TestCase):
 
     ___ test_roster_is_sorted_by_grade_then_name(self):
         school = School()
-        for name, grade in [
+        ___ name, grade __ [
             ('Peter', 2),
             ('Anna', 1),
             ('Barb', 1),
@@ -57,5 +57,5 @@ class GradeSchoolTest(unittest.TestCase):
         self.assertEqual(School().grade(1), [])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

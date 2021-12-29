@@ -24,7 +24,7 @@ Explanation:
 One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8]
 and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
 """
-import heapq
+_______ heapq
 
 
 class Balloon:
@@ -34,7 +34,7 @@ class Balloon:
 
     ___ __lt__(self, other):
         # __cmp__ removed in py3
-        return self.e < other.e
+        r.. self.e < other.e
 
 
 class Solution:
@@ -49,21 +49,21 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        points.sort(key=lambda x: x[0])
-        heap = []
-        for point in points:
+        points.sort(key=l.... x: x[0])
+        heap    # list
+        ___ point __ points:
             s, e = point
             __ heap and heap[0].e < s:
                 ret += 1
-                heap = []
+                heap    # list
 
             heapq.heappush(heap, Balloon(s, e))
 
         __ heap:
             ret += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) == 2
+__ __name__ __ "__main__":
+    ... Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) __ 2

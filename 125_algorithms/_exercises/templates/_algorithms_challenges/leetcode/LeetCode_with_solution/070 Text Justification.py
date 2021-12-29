@@ -39,62 +39,62 @@ class Solution:
         :param L: int
         :return: a list of str
         """
-        result = []
+        result    # list
         self.break_line(words, L, result)
-        return self.distribute_space(L, result)
+        r.. self.distribute_space(L, result)
 
     ___ break_line(self, words, L, result):
-        __ not words:
-            return
+        __ n.. words:
+            r..
 
         cur_length = -1
-        lst = []
+        lst    # list
         i = 0
-        while i<len(words):
+        while i<l..(words):
             word = words[i]
             cur_length += 1 # space in left justified
-            cur_length += len(word)
+            cur_length += l..(word)
             __ cur_length>L: break
-            lst.append(word)
+            lst.a..(word)
             i += 1
 
-        result.append(lst)
+        result.a..(lst)
         self.break_line(words[i:], L, result)
 
 
     ___ distribute_space(self, L, result):
-        new_result = []
-        for ind, line in enumerate(result):
-            word_cnt = len(line)
-            str_builder = []
-            space_cnt = L-sum(len(word) for word in line)
+        new_result    # list
+        ___ ind, line __ enumerate(result):
+            word_cnt = l..(line)
+            str_builder    # list
+            space_cnt = L-s..(l..(word) ___ word __ line)
             hole_cnt = word_cnt-1
-            __ ind<len(result)-1:
+            __ ind<l..(result)-1:
                 __ hole_cnt>0:
                     space = space_cnt/hole_cnt
                     remain = space_cnt%hole_cnt
 
-                    for word in line[:-1]:
-                        str_builder.append(word)
-                        str_builder.append(" "*space)
+                    ___ word __ line[:-1]:
+                        str_builder.a..(word)
+                        str_builder.a..(" "*space)
                         __ remain>0:
-                            str_builder.append(" ")
+                            str_builder.a..(" ")
                             remain -= 1
 
-                    str_builder.append(line[-1])
-                else:
-                    str_builder.append(line[-1])
-                    str_builder.append(" "*space_cnt)
-            else:  # last line, special handling
+                    str_builder.a..(line[-1])
+                ____:
+                    str_builder.a..(line[-1])
+                    str_builder.a..(" "*space_cnt)
+            ____:  # last line, special handling
                 str_builder = [" ".join(line)]
-                str_builder.append(" "*(space_cnt-hole_cnt))
+                str_builder.a..(" "*(space_cnt-hole_cnt))
 
-            new_result.append("".join(str_builder))
+            new_result.a..("".join(str_builder))
 
-        return new_result
+        r.. new_result
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16)
     print Solution().fullJustify(["What","must","be","shall","be."], 12)

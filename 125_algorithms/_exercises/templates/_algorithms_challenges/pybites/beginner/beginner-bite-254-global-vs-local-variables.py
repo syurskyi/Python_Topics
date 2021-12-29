@@ -25,17 +25,17 @@ Good luck and keep calm and code in Python!
 num_hundreds = -1
 
 
-___ sum_numbers(numbers: list) -> int:
+___ sum_numbers(numbers: l..) -> int:
     """Sums passed in numbers returning the total, also
        update the global variable num_hundreds with the amount
        of times 100 fits in total"""
     global num_hundreds
     list_sum = 0
-    for n in numbers:
+    ___ n __ numbers:
         list_sum += n
     how_many = int(list_sum/100)
     num_hundreds += how_many
-    return list_sum
+    r.. list_sum
 
 print(num_hundreds)
 sum_numbers([10,20,70])

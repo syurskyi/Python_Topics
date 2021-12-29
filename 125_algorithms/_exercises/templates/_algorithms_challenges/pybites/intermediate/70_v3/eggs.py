@@ -1,6 +1,6 @@
-from random import choice
+____ random _______ choice
 
-COLORS = 'red blue green yellow brown purple'.split()
+COLORS = 'red blue green yellow brown purple'.s..
 
 
 class EggCreator:
@@ -14,14 +14,14 @@ class EggCreator:
 
     ___ __next__(self):
 
-        __ self.i== self.limit:
+        __ self.i__ self.limit:
             raise StopIteration
         
         self.i += 1
-        return choice(COLORS)
+        r.. choice(COLORS)
 
     ___ __iter__(self):
-        return self
+        r.. self
 
 
 

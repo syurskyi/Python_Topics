@@ -1,8 +1,8 @@
-from collections import namedtuple
-from datetime import datetime
-import json
+____ collections _______ namedtuple
+____ datetime _______ datetime
+_______ json
 
-blog = dict(name='PyBites',
+blog = d..(name='PyBites',
             founders=('Julian', 'Bob'),
             started=datetime(year=2016, month=12, day=19),
             tags=['Python', 'Code Challenges', 'Learn by Doing'],
@@ -11,9 +11,9 @@ blog = dict(name='PyBites',
 
 
 ___ dict2nt(dict_):
-    return namedtuple('nt', dict_.keys())(**dict_)
+    r.. namedtuple('nt', dict_.keys())(**dict_)
 
 
 ___ nt2json(nt):
     d = nt._asdict()
-    return json.dumps(str(d))
+    r.. json.dumps(str(d))

@@ -20,21 +20,21 @@ class Solution:
         :return: integer
         """
         # trivial
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         # in case of A = [-1]
         largest = max(A)
         __ largest<0:
-            return largest
+            r.. largest
 
         max_result = -1<<31
         current_max = 0
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             __ current_max+A[i]>=0:
                 current_max+=A[i]
-            else:
+            ____:
                 current_max = 0
             max_result = max(max_result, current_max)
 
-        return max_result
+        r.. max_result

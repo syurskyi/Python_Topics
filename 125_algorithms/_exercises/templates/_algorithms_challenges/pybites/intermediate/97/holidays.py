@@ -1,8 +1,8 @@
-from collections import defaultdict
-import os
-from urllib.request import urlretrieve
+____ collections _______ defaultdict
+_______ os
+____ urllib.request _______ urlretrieve
 
-from bs4 import BeautifulSoup
+____ bs4 _______ BeautifulSoup
 
 
 # prep data
@@ -17,7 +17,7 @@ urlretrieve(
 with open(holidays_page) as f:
     content = f.read()
 
-holidays = defaultdict(list)
+holidays = defaultdict(l..)
 
 
 ___ get_us_bank_holidays(content=content):
@@ -26,13 +26,13 @@ ___ get_us_bank_holidays(content=content):
        keys -> months and values -> list of bank holidays"""
     soup = BeautifulSoup(content, "html.parser")
     holiday_table = soup.find(class_="list-table")
-    holiday_dates = [h_date.get_text() for h_date in holiday_table.select("time")]
-    holiday_names = [h_name.get_text() for h_name in holiday_table.select("a")]
+    holiday_dates = [h_date.get_text() ___ h_date __ holiday_table.select("time")]
+    holiday_names = [h_name.get_text() ___ h_name __ holiday_table.select("a")]
     holiday_zip = zip(holiday_dates, holiday_names)
-    for h_date, h_name in holiday_zip:
+    ___ h_date, h_name __ holiday_zip:
         month = h_date.split("-")[1]
-        holidays[month].append(h_name.strip())
-    return holidays
+        holidays[month].a..(h_name.strip())
+    r.. holidays
 
 
 # if __name__ == "__main__":

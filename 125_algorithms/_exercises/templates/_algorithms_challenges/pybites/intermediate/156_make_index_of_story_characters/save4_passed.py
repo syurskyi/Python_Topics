@@ -1,5 +1,5 @@
-import re
-from collections import defaultdict
+_______ re
+____ collections _______ defaultdict
 
 CHARACTERS = ['Red Riding Hood',
               # we're omitting 'mother' here for simplicity
@@ -55,19 +55,19 @@ ___ make_character_index(text=text, characters=CHARACTERS):
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    d = defaultdict(list)
-    character_list = []
+    d = defaultdict(l..)
+    character_list    # list
     new_text = text.lower().splitlines()
 
     # Clean up character list with multiple character names
-    for character in characters:
-        __ type(character) == tuple:
-            character = '|'.join(list(character))
-        character_list.append(character.lower())
+    ___ character __ characters:
+        __ type(character) __ tuple:
+            character = '|'.join(l..(character))
+        character_list.a..(character.lower())
 
-    for character in character_list:
-        for line in enumerate(new_text):
+    ___ character __ character_list:
+        ___ line __ enumerate(new_text):
             __ re.search(character, line[1]):
-                d[character.split('|')[0]].append(line[0])
+                d[character.split('|')[0]].a..(line[0])
 
-    return dict(d)
+    r.. d..(d)

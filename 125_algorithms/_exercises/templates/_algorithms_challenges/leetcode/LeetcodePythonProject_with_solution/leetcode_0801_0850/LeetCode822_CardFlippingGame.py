@@ -11,15 +11,15 @@ class Solution(object):
         :rtype: int
         """
         same = set()
-        for f, b in zip(fronts, backs):
-            __ f == b: same.add(f)
+        ___ f, b __ zip(fronts, backs):
+            __ f __ b: same.add(f)
         res = float('inf')
-        for f, b in zip(fronts, backs):
-            __ f not in same:
-                res = min(res, f)
-            __ b not in same:
-                res = min(res, b)
-        return res __ res != float('inf') else 0
+        ___ f, b __ zip(fronts, backs):
+            __ f n.. __ same:
+                res = m..(res, f)
+            __ b n.. __ same:
+                res = m..(res, b)
+        r.. res __ res != float('inf') ____ 0
     
     ___ flipgame_own_TLE(self, fronts, backs):
         """
@@ -29,18 +29,18 @@ class Solution(object):
         """
         hashmap1 = {}
         hashmap2 = {}
-        for f, b in zip(fronts, backs):
+        ___ f, b __ zip(fronts, backs):
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
         self.res = float('inf')
         self.helper(fronts, backs, 0, hashmap1, hashmap2)
-        return self.res __ self.res != float('inf') else 0
+        r.. self.res __ self.res != float('inf') ____ 0
         
     ___ helper(self, fronts, backs, i, hashmap1, hashmap2):
-        __ i >= len(fronts):
-            return
-        __ backs[i] not in hashmap1:
-            self.res = min(self.res, backs[i])
+        __ i >= l..(fronts):
+            r..
+        __ backs[i] n.. __ hashmap1:
+            self.res = m..(self.res, backs[i])
         self.helper(fronts, backs, i+1, hashmap1, hashmap2)
         self.flip(fronts, backs, i, hashmap1, hashmap2)
         self.helper(fronts, backs, i+1, hashmap1, hashmap2)
@@ -52,13 +52,13 @@ class Solution(object):
         hashmap1[b] = hashmap1.get(b, 0)+1
         hashmap2[f] = hashmap2.get(f, 0)+1
         hashmap1[f] -= 1
-        __ hashmap1[f] == 0:
+        __ hashmap1[f] __ 0:
             del hashmap1[f]
         hashmap2[b] -= 1
-        __ hashmap2[b] == 0:
+        __ hashmap2[b] __ 0:
             del hashmap2[b]
-        __ backs[i] not in hashmap1:
-            self.res = min(self.res, backs[i])
+        __ backs[i] n.. __ hashmap1:
+            self.res = m..(self.res, backs[i])
     
     ___ test(self):
         testCases = [
@@ -71,12 +71,12 @@ class Solution(object):
                 [3,4,5,6,2,6,5,6,2,3,1,2,3,2,4,5,4,3,5,3],
             ],
         ]
-        for fronts, backs in testCases:
+        ___ fronts, backs __ testCases:
             print('fronts: %s' % fronts)
             print('backs: %s' % backs)
             result = self.flipgame(fronts, backs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

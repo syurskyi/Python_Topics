@@ -19,8 +19,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -30,21 +30,21 @@ class Solution:
         :type root: TreeNode
         :rtype: list[str]
         """
-        __ not root:
-            return []
+        __ n.. root:
+            r.. []
 
-        ret = []
+        ret    # list
         self.dfs(root, [], ret)
-        return ret
+        r.. ret
 
     ___ dfs(self, cur, path, ret):
         """
         pre-check
         """
-        path.append(cur)
-        __ not cur.left and not cur.right:
-            ret.append("->".join(map(lambda x: str(x.val), path)))
-            return
+        path.a..(cur)
+        __ n.. cur.left and n.. cur.right:
+            ret.a..("->".join(map(l.... x: str(x.val), path)))
+            r..
 
         __ cur.left:
             self.dfs(cur.left, path, ret)
@@ -55,12 +55,12 @@ class Solution:
             path.pop()  # pop the shared path
 
     ___ dfs_path(self, cur, path, ret):
-        __ not cur:
-            return
+        __ n.. cur:
+            r..
 
-        path.append(cur)
-        __ not cur.left and not cur.right:
-            ret.append("->".join(map(lambda x: str(x.val), path)))
+        path.a..(cur)
+        __ n.. cur.left and n.. cur.right:
+            ret.a..("->".join(map(l.... x: str(x.val), path)))
 
         self.dfs_path(cur.left, path, ret)
         self.dfs_path(cur.right, path, ret)

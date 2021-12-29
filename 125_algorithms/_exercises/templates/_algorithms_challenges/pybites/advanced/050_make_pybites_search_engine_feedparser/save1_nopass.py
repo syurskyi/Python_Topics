@@ -1,8 +1,8 @@
-from collections import namedtuple
-from time import mktime
-from feedparser import parse
-from datetime import datetime
-import re
+____ collections _______ namedtuple
+____ time _______ mktime
+____ feedparser _______ parse
+____ datetime _______ datetime
+_______ re
 
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
@@ -16,12 +16,12 @@ ___ _convert_struct_time_to_dt(stime):
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
     -> date(2016, 12, 28)
     """
-    __ type(stime) == str:
+    __ type(stime) __ str:
         format = '%a, %d %b %Y %H:%M:%S %z'
         dt_object = datetime.strptime(stime, format)
-        return dt_object.date()
-    else:
-        return datetime.fromtimestamp(mktime(stime)).date()
+        r.. dt_object.date()
+    ____:
+        r.. datetime.fromtimestamp(mktime(stime)).date()
 
 
 ___ get_feed_entries(feed=FEED):
@@ -29,12 +29,12 @@ ___ get_feed_entries(feed=FEED):
        Return a list of Entry namedtuples (date = date, drop time part)
     """
     file = parse(feed)
-    output = []
-    for entry in file.entries:
+    output    # list
+    ___ entry __ file.entries:
         date = _convert_struct_time_to_dt(entry.published)
-        tag_list = [tag['term'] for tag in entry.tags]
-        output.append(Entry(date, entry.title, entry.link, tag_list))
-    return output
+        tag_list = [tag['term'] ___ tag __ entry.tags]
+        output.a..(Entry(date, entry.title, entry.link, tag_list))
+    r.. output
 
 
 ___ filter_entries_by_tag(search, entry):
@@ -49,16 +49,16 @@ ___ filter_entries_by_tag(search, entry):
        3. Else: match if search is in tags
     """
     search = search.lower()
-    tag_list = [tag for tag in entry.tags]
-    __ not re.search(r'\|', search) and not re.search(r'\&', search):
-        return search in tag_list
+    tag_list = [tag ___ tag __ entry.tags]
+    __ n.. re.search(r'\|', search) and n.. re.search(r'\&', search):
+        r.. search __ tag_list
     __ re.search(r'\|', search):
         search = re.split(r'\|', search)
-        return any([item in tag_list for item in search])
+        r.. any([item __ tag_list ___ item __ search])
     __ re.search(r'\&', search):
         search = re.split(r'\&', search)
-        return all([item in tag_list for item in search])
-    return search
+        r.. a..([item __ tag_list ___ item __ search])
+    r.. search
 
 
 ___ main():
@@ -80,34 +80,34 @@ ___ main():
         except EOFError:
             break
         
-        __ search_term == '':
+        __ search_term __ '':
             print('Please provide a search term')
 
         __ search_term != '' and search_term != 'q':
-            output_list = []
-            for entry in entries:
+            output_list    # list
+            ___ entry __ entries:
                 __ filter_entries_by_tag(search_term, entry):
-                    output_list.append(entry)
-            output_list = sorted(output_list, key=lambda x: x.date)
+                    output_list.a..(entry)
+            output_list = s..(output_list, key=l.... x: x.date)
             
-            titles = ''.join([entry.title for entry in output_list])
+            titles = ''.join([entry.title ___ entry __ output_list])
 
-            output_number = len(output_list)
+            output_number = l..(output_list)
             __ output_number < 1:
                 print(f'{output_number} entries matched')
-            __ output_number == 1:
+            __ output_number __ 1:
                 print(titles)
                 print(f'{output_number} entry matched')
             __ output_number > 1:
                 print(titles)
                 print(f'{output_number} entries matched')
 
-        __ search_term == 'q':
+        __ search_term __ 'q':
             print('Bye')
             break
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()
 
 

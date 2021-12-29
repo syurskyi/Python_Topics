@@ -8,9 +8,9 @@ Courtesy of ProjectEuler.net
 
 
 ___ solution(number):
-    result = []
-    for i in range(1, number):
-        __ i % 3 == 0 or i % 5 == 0:
-            result.append(i)
+    result    # list
+    ___ i __ r..(1, number):
+        __ i % 3 __ 0 o. i % 5 __ 0:
+            result.a..(i)
 
-    return sum(result)
+    r.. s..(result)

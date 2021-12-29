@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -8,38 +8,38 @@ class Solution:
     @return: Return if the graph is cyclic
     """
     ___ isCyclicGraph(self, start, end):
-        __ not start or not end or len(start) != len(end):
-            return False
+        __ n.. start o. n.. end o. l..(start) != l..(end):
+            r.. False
 
-        n = len(start)
+        n = l..(start)
         nxt = collections.defaultdict(set)
         visited = set()
         rec_stack = set()
 
-        for i in range(n):
+        ___ i __ r..(n):
             nxt[start[i]].add(end[i])
 
-        for i in range(n):
-            __ start[i] in visited:
+        ___ i __ r..(n):
+            __ start[i] __ visited:
                 continue
             __ self.dfs(start[i], nxt, visited, rec_stack):
-                return True
+                r.. True
 
-        return False
+        r.. False
 
     ___ dfs(self, u, nxt, visited, rec_stack):
-        __ u not in nxt:
-            return False
+        __ u n.. __ nxt:
+            r.. False
 
         visited.add(u)
         rec_stack.add(u)
 
-        for v in nxt[u]:
-            __ v in rec_stack:
-                return True
+        ___ v __ nxt[u]:
+            __ v __ rec_stack:
+                r.. True
 
-            __ v not in visited and self.dfs(v, nxt, visited, rec_stack):
-                return True
+            __ v n.. __ visited and self.dfs(v, nxt, visited, rec_stack):
+                r.. True
 
         rec_stack.discard(u)
-        return False
+        r.. False

@@ -1,39 +1,39 @@
 class Solution(object):
-  ___ addBoldTag(self, s, dict):
+  ___ addBoldTag(self, s, d..):
     """
     :type s: str
     :type dict: List[str]
     :rtype: str
     """
-    intervals = []
-    ans = []
-    for word in dict:
+    intervals    # list
+    ans    # list
+    ___ word __ d..:
       start = 0
       loc = s.find(word, start)
       while loc != -1:
-        intervals.append([loc, loc + len(word) - 1])
+        intervals.a..([loc, loc + l..(word) - 1])
         start = loc + 1
         loc = s.find(word, start)
 
     intervals = self.merge(intervals)
     d = {}
-    for start, end in intervals:
+    ___ start, end __ intervals:
       d[start] = end
     i = 0
-    while i < len(s):
-      __ i in d:
-        ans.append("<b>{}</b>".format(s[i:d[i] + 1]))
+    while i < l..(s):
+      __ i __ d:
+        ans.a..("<b>{}</b>".format(s[i:d[i] + 1]))
         i = d[i] + 1
-      else:
-        ans.append(s[i])
+      ____:
+        ans.a..(s[i])
         i += 1
-    return "".join(ans)
+    r.. "".join(ans)
 
   ___ merge(self, intervals):
-    ans = []
-    for intv in sorted(intervals, key=lambda x: x[0]):
+    ans    # list
+    ___ intv __ s..(intervals, key=l.... x: x[0]):
       __ ans and ans[-1][1] + 1 >= intv[0]:
         ans[-1][1] = max(ans[-1][1], intv[1])
-      else:
+      ____:
         ans += intv,
-    return ans
+    r.. ans

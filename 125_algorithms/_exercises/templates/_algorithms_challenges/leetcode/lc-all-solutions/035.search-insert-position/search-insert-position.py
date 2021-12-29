@@ -6,13 +6,13 @@ class Solution(object):
     :rtype: int
     """
     lo = 0
-    hi = len(nums)
+    hi = l..(nums)
     while lo < hi:
       mid = lo + (hi - lo) / 2
       __ nums[mid] > target:
         hi = mid
-      elif nums[mid] < target:
+      ____ nums[mid] < target:
         lo = mid + 1
-      else:
-        return mid
-    return lo
+      ____:
+        r.. mid
+    r.. lo

@@ -26,16 +26,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        path = []
-        __ root is None:
-            return path
-        stack = []
-        stack.append(root)
+        path    # list
+        __ root __ N..
+            r.. path
+        stack    # list
+        stack.a..(root)
         while stack:
             root = stack.pop()
-            path.append(root.val)
-            __ root.right is not None:
-                stack.append(root.right)
-            __ root.left is not None:
-                stack.append(root.left)
-        return path
+            path.a..(root.val)
+            __ root.right __ n.. N..
+                stack.a..(root.right)
+            __ root.left __ n.. N..
+                stack.a..(root.left)
+        r.. path

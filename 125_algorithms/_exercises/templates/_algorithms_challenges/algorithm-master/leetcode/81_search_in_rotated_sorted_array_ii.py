@@ -5,11 +5,11 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        __ not nums:
-            return False
+        __ n.. nums:
+            r.. False
 
-        for num in nums:
-            __ num == target:
-                return True
+        ___ num __ nums:
+            __ num __ target:
+                r.. True
 
-        return False
+        r.. False

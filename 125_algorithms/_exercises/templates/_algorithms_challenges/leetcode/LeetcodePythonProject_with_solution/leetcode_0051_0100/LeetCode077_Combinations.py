@@ -11,19 +11,19 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        __ n <= 0 or n < k:
-            return []
-        result = []
-        elem = []
+        __ n <= 0 o. n < k:
+            r.. []
+        result    # list
+        elem    # list
         self.helper(elem, result, 1, n, k)
-        return result
+        r.. result
     
     ___ helper(self, elem, result, start, n, k):
-        __ len(elem) == k:
-            result.append(list(elem))
-            return
-        for i in range(start, n+1):
-            elem.append(i)
+        __ l..(elem) __ k:
+            result.a..(l..(elem))
+            r..
+        ___ i __ r..(start, n+1):
+            elem.a..(i)
             self.helper(elem, result, i+1, n, k)
             del elem[-1]
     
@@ -31,11 +31,11 @@ class Solution(object):
         testCases = [
             (4, 2),
         ]
-        for n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s, k: %s' % (n, k))
             result = self.combine(n, k)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

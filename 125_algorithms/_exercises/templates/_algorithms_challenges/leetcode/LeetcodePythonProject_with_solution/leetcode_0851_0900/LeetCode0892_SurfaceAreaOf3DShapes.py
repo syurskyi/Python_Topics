@@ -9,17 +9,17 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         res = 0
-        for i in range(m):
-            for j in range(n):
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 __ (grid[i][j]):
                     res += 2+grid[i][j]*4
                 __ i > 0:
-                    res -= min(grid[i-1][j], grid[i][j])*2
+                    res -= m..(grid[i-1][j], grid[i][j])*2
                 __ j > 0:
-                    res -= min(grid[i][j-1], grid[i][j])*2
-        return res
+                    res -= m..(grid[i][j-1], grid[i][j])*2
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -27,10 +27,10 @@ class Solution(object):
             [[1,1,1],[1,0,1],[1,1,1]],
             [[2,2,2],[2,1,2],[2,2,2]],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             res = self.surfaceArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -4,23 +4,23 @@ class Solution:
         :type s: str
         :rtype: bool
         """
-        __ not s:
-            return True
+        __ n.. s:
+            r.. True
 
         s = s.lower()
-        n = len(s)
+        n = l..(s)
         left, right = 0, n - 1
 
         while left < right:
-            while left < right and not s[left].isalnum():
+            while left < right and n.. s[left].isalnum():
                 left += 1
-            while left < right and not s[right].isalnum():
+            while left < right and n.. s[right].isalnum():
                 right -= 1
 
             __ s[left] != s[right]:
-                return False
+                r.. False
 
             left += 1
             right -= 1
 
-        return True
+        r.. True

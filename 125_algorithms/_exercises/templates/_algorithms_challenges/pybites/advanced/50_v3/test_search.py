@@ -1,13 +1,13 @@
-from datetime import datetime, date
-from unittest.mock import patch
+____ datetime _______ datetime, date
+____ unittest.mock _______ patch
 
-import pytest
+_______ pytest
 
-from search import (_convert_struct_time_to_dt, get_feed_entries,
+____ search _______ (_convert_struct_time_to_dt, get_feed_entries,
                     filter_entries_by_tag, main, Entry)
 
 
-class AttrDict(dict):
+class AttrDict(d..):
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
     ___ __init__(self, *args, **kwargs):
@@ -52,25 +52,25 @@ MOCK_ENTRIES = AttrDict({'entries':
      date(year=2016, month=12, day=19)),
 ])
 ___ test_convert_struct_time_to_dt(arg, ret):
-    assert _convert_struct_time_to_dt(arg) == ret
+    ... _convert_struct_time_to_dt(arg) __ ret
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
 ___ test_get_feed_entries(inp):
     first, last = tuple(get_feed_entries())
 
-    assert first.date == date(year=2018, month=2, day=18)
-    assert first.title == 'Twitter Digest 2018 Week 08'
-    assert first.link == 'https://pybit.es/twitter_digest_201808.html'
+    ... first.date __ date(year=2018, month=2, day=18)
+    ... first.title __ 'Twitter Digest 2018 Week 08'
+    ... first.link __ 'https://pybit.es/twitter_digest_201808.html'
     expected = ['flask', 'python', 'regex', 'twitter']
     # allow list or set
-    assert sorted(list(first.tags)) == expected
+    ... s..(l..(first.tags)) __ expected
 
-    assert last.date == date(year=2017, month=1, day=6)
-    assert last.title == 'Copy and Paste with Pyperclip'
-    assert last.link == 'https://pybit.es/pyperclip.html'
+    ... last.date __ date(year=2017, month=1, day=6)
+    ... last.title __ 'Copy and Paste with Pyperclip'
+    ... last.link __ 'https://pybit.es/pyperclip.html'
     expected = ['code', 'pybites', 'python', 'tips', 'tricks']
-    assert sorted(list(last.tags)) == expected
+    ... s..(l..(last.tags)) __ expected
 
 
 @pytest.mark.parametrize("arg, ret", [
@@ -93,7 +93,7 @@ ___ test_filter_entries_by_tag(arg, ret):
                   tags={'pythonic', 'data science',
                         'tips', 'tricks', 'matplotlib',
                         'pandas', 'books', 'collections'})
-    assert filter_entries_by_tag(arg, entry) is ret
+    ... filter_entries_by_tag(arg, entry) __ ret
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
@@ -104,7 +104,7 @@ ___ test_main(entries, inp, capfd):
     main()
     out, _ = capfd.readouterr()
 
-    output = [line for line in out.split('\n') __ line.strip()]
+    output = [line ___ line __ out.split('\n') __ line.strip()]
     expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
@@ -113,5 +113,5 @@ ___ test_main(entries, inp, capfd):
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Please provide a search term', 'Bye']
-    for line, exp in zip(output, expected):
-        assert exp in line
+    ___ line, exp __ zip(output, expected):
+        ... exp __ line

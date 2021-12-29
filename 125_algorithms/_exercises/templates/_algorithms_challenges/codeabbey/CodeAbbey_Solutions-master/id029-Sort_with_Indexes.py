@@ -1,9 +1,9 @@
 ___ sortIndexes(amount, values):
-    answer = []
-    sortedValues = sorted(values)
-    for sortedValue in sortedValues:
-        for x in range(amount):
-            __ sortedValue == values[x]:
-                answer.append(str(x+1))
+    answer    # list
+    sortedValues = s..(values)
+    ___ sortedValue __ sortedValues:
+        ___ x __ r..(amount):
+            __ sortedValue __ values[x]:
+                answer.a..(str(x+1))
     print(' '.join(answer))
-sortIndexes(input(),[int(x) for x in raw_input().split()])
+sortIndexes(input(),[int(x) ___ x __ raw_input().s.. ])

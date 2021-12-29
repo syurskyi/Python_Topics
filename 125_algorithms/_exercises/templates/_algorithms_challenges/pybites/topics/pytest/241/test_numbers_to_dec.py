@@ -1,13 +1,13 @@
-import pytest
+_______ pytest
 
-from numbers_to_dec import list_to_decimal
+____ numbers_to_dec _______ list_to_decimal
 
 ___ test_correct_result():
-    assert list_to_decimal([4]) == 4
-    assert list_to_decimal([2,3]) == 23
-    assert list_to_decimal([2,3,4]) == 234
-    assert list_to_decimal([1,2,3,4]) == 1234
-    assert list_to_decimal([0,1,2,3,4]) == 1234
+    ... list_to_decimal([4]) __ 4
+    ... list_to_decimal([2,3]) __ 23
+    ... list_to_decimal([2,3,4]) __ 234
+    ... list_to_decimal([1,2,3,4]) __ 1234
+    ... list_to_decimal([0,1,2,3,4]) __ 1234
 
 ___ test_boolean():
     with pytest.raises(TypeError):

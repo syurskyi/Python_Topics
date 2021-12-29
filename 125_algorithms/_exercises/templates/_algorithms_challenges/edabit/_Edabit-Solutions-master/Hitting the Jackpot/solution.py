@@ -1,8 +1,8 @@
 ___ test_jackpot(result):
-    __ len(set(result)) == 1:
-        return True
-    else:
-        return False
+    __ l..(set(result)) __ 1:
+        r.. True
+    ____:
+        r.. False
 
 ___ test():
     print("test has started")

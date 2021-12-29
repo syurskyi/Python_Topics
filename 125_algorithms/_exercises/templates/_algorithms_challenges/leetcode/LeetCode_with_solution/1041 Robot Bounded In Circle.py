@@ -58,15 +58,15 @@ class Solution:
         """
         x, y = 0, 0
         i = 0
-        for _ in range(4):
-            for cmd in instructions:
-                __ cmd == "G":
+        ___ _ __ r..(4):
+            ___ cmd __ instructions:
+                __ cmd __ "G":
                     dx, dy = dirs[i]
                     x += dx
                     y += dy
-                elif cmd == "L":
+                ____ cmd __ "L":
                     i = (i - 1) % 4
-                else:
+                ____:
                     i = (i + 1) % 4
                     
-        return x == 0 and y == 0
+        r.. x __ 0 and y __ 0

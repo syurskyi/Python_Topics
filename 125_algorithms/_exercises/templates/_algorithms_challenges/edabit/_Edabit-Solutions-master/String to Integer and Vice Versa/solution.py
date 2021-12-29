@@ -1,5 +1,5 @@
 ___ to_int(txt):
-    return int(txt)
+    r.. int(txt)
 	
 ___ to_str(num):
-    return str(num)
+    r.. str(num)

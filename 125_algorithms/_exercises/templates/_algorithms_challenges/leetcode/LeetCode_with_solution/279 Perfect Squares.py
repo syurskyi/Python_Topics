@@ -4,8 +4,8 @@ to n.
 
 For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 """
-import math
-import sys
+_______ math
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -21,15 +21,15 @@ class Solution(object):
         O(n), think it as a tree, cache tree O(m+n) = O(2n); rather than O(n sqrt(n))
         backward
         """
-        while len(Solution.F) <= n:
-            i = len(Solution.F)
-            Solution.F.append(sys.maxint)
+        while l..(Solution.F) <= n:
+            i = l..(Solution.F)
+            Solution.F.a..(sys.maxint)
             j = 1
             while i - j*j >= 0:
-                Solution.F[i] = min(Solution.F[i], Solution.F[i-j*j]+1)
+                Solution.F[i] = m..(Solution.F[i], Solution.F[i-j*j]+1)
                 j += 1
 
-        return Solution.F[n]
+        r.. Solution.F[n]
 
     ___ numSquares_bfs(self, n):
         """
@@ -39,27 +39,27 @@ class Solution(object):
         :rtype: int
         """
         q = [0]
-        visited = [False for _ in xrange(n+1)]
+        visited = [False ___ _ __ xrange(n+1)]
 
         level = 0
         while q:
             level += 1
-            l = len(q)
-            for i in xrange(l):
-                for j in xrange(1, int(math.sqrt(n))+1):
+            l = l..(q)
+            ___ i __ xrange(l):
+                ___ j __ xrange(1, int(math.sqrt(n))+1):
                     nxt = q[i]+j*j
                     __ nxt <= n and visited[nxt]:
                         continue
-                    elif nxt < n:
+                    ____ nxt < n:
                         visited[nxt] = True
-                        q.append(nxt)
-                    elif nxt == n:
-                        return level
-                    else:
+                        q.a..(nxt)
+                    ____ nxt __ n:
+                        r.. level
+                    ____:
                         break
             q = q[l:]
 
-        return None
+        r.. N..
 
     ___ numSquares_TLE(self, n):
         """
@@ -67,14 +67,14 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        F = [i for i in xrange(n+1)]
-        for i in xrange(1, n+1):
-            for j in xrange(1, int(math.sqrt(i))+1):
+        F = [i ___ i __ xrange(n+1)]
+        ___ i __ xrange(1, n+1):
+            ___ j __ xrange(1, int(math.sqrt(i))+1):
                 __ i-j*j >= 0:
-                    F[i] = min(F[i], F[i-j*j]+1)
+                    F[i] = m..(F[i], F[i-j*j]+1)
 
-        return F[n]
+        r.. F[n]
 
 
-__ __name__ == "__main__":
-    assert Solution().numSquares(6) == 3
+__ __name__ __ "__main__":
+    ... Solution().numSquares(6) __ 3

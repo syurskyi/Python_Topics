@@ -35,23 +35,23 @@ class NestedInteger(object):
 class NestedIterator(object):
     ___ __init__(self, nestedList):
         deque = nestedList
-        result = []
+        result    # list
         while deque:
             ni = deque.pop(0)
             __ ni.isInteger():
-                result.append(ni.getInteger())
-            else:
+                result.a..(ni.getInteger())
+            ____:
                 l = ni.getList()
                 l.reverse()
-                for ni0 in l:
+                ___ ni0 __ l:
                     deque.insert(0, ni0)
         self.result = result
 
     ___ next(self):
-        return self.result.pop(0)
+        r.. self.result.pop(0)
 
     ___ hasNext(self):
         __ self.result:
-            return True
-        return False
+            r.. True
+        r.. False
 

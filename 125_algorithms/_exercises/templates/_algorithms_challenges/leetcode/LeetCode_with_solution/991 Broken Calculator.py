@@ -52,13 +52,13 @@ class Solution:
         """
         t = 0
         while Y > X:
-            __ Y % 2 == 0:
+            __ Y % 2 __ 0:
                 Y //= 2
-            else:
+            ____:
                 Y += 1
             t += 1
 
-        return t + X - Y
+        r.. t + X - Y
 
     ___ brokenCalc_TLE(self, X: int, Y: int) -> int:
         """
@@ -68,27 +68,27 @@ class Solution:
         t = 0
         has_larger = False
         while q:
-            cur_q = []
-            for e in q:
-                __ e == Y:
-                    return t
+            cur_q    # list
+            ___ e __ q:
+                __ e __ Y:
+                    r.. t
 
                 cur = e * 2
                 __ cur >= 1:
-                    __ cur > Y and not has_larger:
+                    __ cur > Y and n.. has_larger:
                         has_larger = True
-                        cur_q.append(cur)
-                    elif cur <= Y:
-                        cur_q.append(cur)
+                        cur_q.a..(cur)
+                    ____ cur <= Y:
+                        cur_q.a..(cur)
 
                 cur = e - 1
                 __ cur >= 1:
-                    cur_q.append(cur)
+                    cur_q.a..(cur)
             q = cur_q
             t += 1
 
         raise
 
 
-__ __name__ == "__main__":
-    assert Solution().brokenCalc(2, 3) == 2
+__ __name__ __ "__main__":
+    ... Solution().brokenCalc(2, 3) __ 2

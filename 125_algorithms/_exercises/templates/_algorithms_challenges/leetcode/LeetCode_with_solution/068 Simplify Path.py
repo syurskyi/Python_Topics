@@ -24,29 +24,29 @@ class Solution(object):
         :return: a string
         """
         path = path.split("/")
-        path = filter(lambda x: x not in ("", " ", "."), path)
+        path = filter(l.... x: x n.. __ ("", " ", "."), path)
 
         # modify the content of the list, not the structure.
-        for idx in xrange(len(path)):
+        ___ idx __ xrange(l..(path)):
             val = path[idx]
-            __ val == "..":
+            __ val __ "..":
                 path[idx] = "."
 
                 # rm a previous meaningful part
                 i = idx-1
-                while i >= 0 and path[i] == ".": i -= 1
+                while i >= 0 and path[i] __ ".": i -= 1
                 __ i >= 0: path[i] = "."  # avoid path[-1]
 
-        path = filter(lambda x: x not in (".",), path)
+        path = filter(l.... x: x n.. __ (".",), path)
 
-        __ not path:
-            return "/"
+        __ n.. path:
+            r.. "/"
 
-        path = map(lambda x: "/"+x, path)
-        return "".join(path)
+        path = map(l.... x: "/"+x, path)
+        r.. "".join(path)
 
 
-__ __name__ == "__main__":
-    assert Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") == "/e/f/g"
-    assert Solution().simplifyPath("/a/./b/../../c/") == "/c"
-    assert Solution().simplifyPath("/../") == "/"
+__ __name__ __ "__main__":
+    ... Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") __ "/e/f/g"
+    ... Solution().simplifyPath("/a/./b/../../c/") __ "/c"
+    ... Solution().simplifyPath("/../") __ "/"

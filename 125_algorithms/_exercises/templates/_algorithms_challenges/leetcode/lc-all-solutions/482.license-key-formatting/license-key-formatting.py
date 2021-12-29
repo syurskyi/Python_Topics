@@ -7,12 +7,12 @@ class Solution(object):
     """
     s = S.split("-")
     s = "".join(s)
-    n = len(s)
+    n = l..(s)
     start = n % K
-    res = []
+    res    # list
     __ start != 0:
-      res.append(s[:start].upper())
-    for k in range(0, (len(s) - start) / K):
-      res.append(s[start:start + K].upper())
+      res.a..(s[:start].upper())
+    ___ k __ r..(0, (l..(s) - start) / K):
+      res.a..(s[start:start + K].upper())
       start += K
-    return "-".join(res)
+    r.. "-".join(res)

@@ -5,12 +5,12 @@ class Solution(object):
     :rtype: str
     """
     ans = ""
-    for i in range(len(strs)):
+    ___ i __ r..(l..(strs)):
       strs[i] = max(strs[i], strs[i][::-1])
 
-    for i, word in enumerate(strs):
-      for start in [word, word[::-1]]:
-        for cut in range(len(start)):
+    ___ i, word __ enumerate(strs):
+      ___ start __ [word, word[::-1]]:
+        ___ cut __ r..(l..(start)):
           ans = max(ans, start[cut:] + "".join(strs[i + 1:] + strs[:i]) + start[:cut])
 
-    return ans
+    r.. ans

@@ -1,5 +1,5 @@
-from collections import defaultdict
-import itertools
+____ collections _______ defaultdict
+_______ itertools
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -17,21 +17,21 @@ Halbard,Davie,CN"""
 
 ___ group_names_by_country(data: str = data) -> defaultdict:
     
-    result = defaultdict(list)
+    result = defaultdict(l..)
     lines = data.splitlines()
     
-    for i in range(1,len(lines)):  
+    ___ i __ r..(1,l..(lines)):
         last_name,first_name,country = lines[i].split(',')
-        result[country].append(first_name + ' ' + last_name)
+        result[country].a..(first_name + ' ' + last_name)
 
 
-    return result
-
-
-
+    r.. result
 
 
 
-__ __name__ == "__main__":
+
+
+
+__ __name__ __ "__main__":
 
     group_names_by_country()

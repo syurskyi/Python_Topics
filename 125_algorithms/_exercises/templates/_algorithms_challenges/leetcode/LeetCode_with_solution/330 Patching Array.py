@@ -45,14 +45,14 @@ class Solution(object):
         cur_max = 0
         i = 0
         while cur_max < n:
-            __ i >= len(nums) or cur_max + 1 < nums[i]:
+            __ i >= l..(nums) o. cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
                 cnt += 1
-            else:
+            ____:
                 cur_max += nums[i]
                 i += 1
 
-        return cnt
+        r.. cnt
 
     ___ minPatches2(self, nums, n):
         """
@@ -70,11 +70,11 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        nums = filter(lambda x: x <= n, nums)
+        nums = filter(l.... x: x <= n, nums)
 
         cnt = 0
         cur_max = 0
-        for elt in nums:
+        ___ elt __ nums:
             while cur_max + 1 < elt:
                 cur_max += cur_max + 1
                 cnt += 1
@@ -86,8 +86,8 @@ class Solution(object):
             cur_max += cur_max + 1
             cnt += 1
 
-        return cnt
+        r.. cnt
 
 
-__ __name__ == "__main__":
-    assert Solution().minPatches([1, 2, 2, 6, 34], 20) == 1
+__ __name__ __ "__main__":
+    ... Solution().minPatches([1, 2, 2, 6, 34], 20) __ 1

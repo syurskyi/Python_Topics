@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from difference_of_squares import difference, square_of_sum, sum_of_squares
+____ difference_of_squares _______ difference, square_of_sum, sum_of_squares
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
@@ -34,5 +34,5 @@ class DifferenceOfSquaresTest(unittest.TestCase):
         self.assertEqual(difference(100), 25164150)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,6 +1,6 @@
-from collections import namedtuple
-from bs4 import BeautifulSoup as Soup
-import requests
+____ collections _______ namedtuple
+____ bs4 _______ BeautifulSoup as Soup
+_______ requests
 
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
 CONTENT = requests.get(PACKT).text
@@ -25,5 +25,5 @@ ___ get_book():
 
     link = soup2.select('a')[0]['href']
 
-    return Book(title=title, description=description,
+    r.. Book(title=title, description=description,
                 image=image, link=link)

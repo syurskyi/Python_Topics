@@ -3,7 +3,7 @@ Given an array of integers, find if the array contains any duplicates. Your func
 appears at least twice in the array, and it should return false if every element is distinct.
 """
 __author__ = 'Daniel'
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution:
@@ -14,8 +14,8 @@ class Solution:
         :rtype : bool
         """
         d = Counter(nums)
-        for k, v in d.items():
+        ___ k, v __ d.items():
             __ v > 1:
-                return True
+                r.. True
 
-        return False
+        r.. False

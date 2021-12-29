@@ -10,7 +10,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        import numpy
+        _______ numpy
         matrix = numpy.matrix(
             [
                 [0, 0, 1, 0, 0, 0],
@@ -28,7 +28,7 @@ class Solution(object):
                 power = (power*matrix)%mod
             matrix = matrix**2 % mod
             n /= 2
-        return int(power[5, 2])
+        r.. int(power[5, 2])
     
     ___ checkRecord_slow(self, n):
         """
@@ -36,20 +36,20 @@ class Solution(object):
         :rtype: int
         """
         mod = 10**9+7
-        dp = [[[0]*3 for _ in range(2)] for _ in range(n+1)]
-        for i in range(2):
-            for j in range(3):
+        dp = [[[0]*3 ___ _ __ r..(2)] ___ _ __ r..(n+1)]
+        ___ i __ r..(2):
+            ___ j __ r..(3):
                 dp[0][i][j] = 1
-        for i in range(1, n+1):
-            for j in range(2):
-                for k in range(3):
+        ___ i __ r..(1, n+1):
+            ___ j __ r..(2):
+                ___ k __ r..(3):
                     val = dp[i-1][j][2]
                     __ j > 0:
                         val = (val+dp[i-1][j-1][2]) % mod # A
                     __ k > 0:
                         val = (val+dp[i-1][j][k-1]) % mod # L
                     dp[i][j][k] = val
-        return dp[-1][-1][-1]
+        r.. dp[-1][-1][-1]
     
     ___ test(self):
         testCases = [
@@ -57,11 +57,11 @@ class Solution(object):
             3,
             4,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.checkRecord(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

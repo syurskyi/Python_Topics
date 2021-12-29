@@ -3,5 +3,5 @@ ___ time_printer(time):
     __ time: #xafjiwjaf
 	    print(f"The time is {time}.")
     '''QWEPOQOPKF IHHPHJFDQ JIQJWE'''
-    else:
-        return
+    ____:
+        r..

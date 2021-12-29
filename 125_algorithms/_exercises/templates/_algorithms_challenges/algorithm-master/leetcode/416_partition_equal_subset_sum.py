@@ -12,23 +12,23 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        __ not nums:
-            return True
+        __ n.. nums:
+            r.. True
 
-        target = sum(nums)
+        target = s..(nums)
 
-        __ target & 1 == 1:
-            return False
+        __ target & 1 __ 1:
+            r.. False
 
         target //= 2
         dp = [False] * (target + 1)
         dp[0] = True
 
-        for a in nums:
-            for s in range(target, a - 1, -1):
+        ___ a __ nums:
+            ___ s __ r..(target, a - 1, -1):
                 __ dp[s]:
                     continue
 
                 dp[s] = dp[s - a]
 
-        return dp[target]
+        r.. dp[target]

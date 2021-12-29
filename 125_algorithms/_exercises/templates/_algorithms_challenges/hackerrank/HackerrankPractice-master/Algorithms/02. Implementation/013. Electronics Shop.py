@@ -4,15 +4,15 @@
 
 ___ getMoneySpent(keyboards, drives, b):
     result = -1
-    for i in range(1, len(keyboards)):
-        for j in range(1, len(drives)):
+    ___ i __ r..(1, l..(keyboards)):
+        ___ j __ r..(1, l..(drives)):
             __ result < keyboards[i] + drives[j] <= b:
                 result = keyboards[i] + drives[j]
-    return result
+    r.. result
 
 
 b, n, m = map(int, input().split())
-keyboards = list(map(int, input().rstrip().split()))
-drives = list(map(int, input().rstrip().split()))
+keyboards = l..(map(int, input().rstrip().split()))
+drives = l..(map(int, input().rstrip().split()))
 moneySpent = getMoneySpent(keyboards, drives, b)
 print(moneySpent)

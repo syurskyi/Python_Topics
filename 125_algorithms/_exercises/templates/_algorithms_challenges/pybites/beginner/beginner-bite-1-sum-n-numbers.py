@@ -10,7 +10,7 @@ Look closely to the type of the function's default argument ...
 """
 # ??? Co powinno sie wydarzyc, jesli przekazemy pusta liste ???
 
-input = []
+input    # list
 
 ############################### KEY TAKEAWAYS #################################
 ###  1. Sum of empty list is 0.
@@ -44,20 +44,20 @@ ___ my_sum_numbers(numbers_ N..
     # is None
     # == False
     #
-    __ numbers != None:
-        for item in numbers:
+    __ numbers != N..
+        ___ item __ numbers:
             result += item
-        return result
-    for i in range(101):
+        r.. result
+    ___ i __ r..(101):
         result += i
-    return result
+    r.. result
 
 ### ---------- PyBites original solution ---------------
 
 ___ pyb_sum_numbers(numbers_ N..
-    __ numbers __ None:
-        numbers = range(1, 101)
-    return sum(numbers)
+    __ numbers __ N..
+        numbers = r..(1, 101)
+    r.. s..(numbers)
 
 ### Tutaj nie wiem, co chcialem osiagnac. Chyba chcialem sprawdzic alternatywny sposob, jak moznaby
 ### cos takiego napisac. Zamiast sprawdzac, co zostalo przekazane jako argument, mozna
@@ -65,9 +65,9 @@ ___ pyb_sum_numbers(numbers_ N..
 
 ___ sum_numbers_1(numbers_ N..
     try:
-        return sum(numbers)
+        r.. s..(numbers)
     except TypeError:
-        return sum(range(1,101))
+        r.. s..(r..(1,101))
 
 
 print(pyb_sum_numbers("hello"))

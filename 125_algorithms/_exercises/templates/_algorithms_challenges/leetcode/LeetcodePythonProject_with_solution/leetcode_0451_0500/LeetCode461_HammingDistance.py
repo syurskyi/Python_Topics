@@ -7,20 +7,20 @@ Created on Apr 23, 2017
 class Solution(object):
     ___ hammingDistance(self, x, y):
         count = 0
-        for i in range(32):
+        ___ i __ r..(32):
             count += (x>>i&1)^(y>>i&1)
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
             [1, 4],
         ]
-        for x, y in testCases:
+        ___ x, y __ testCases:
             print('x: %s' % x)
             print('y: %s' % y)
             result = self.hammingDistance(x, y)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

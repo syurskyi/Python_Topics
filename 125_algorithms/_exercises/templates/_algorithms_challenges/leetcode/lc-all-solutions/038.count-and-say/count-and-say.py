@@ -10,14 +10,14 @@ class Solution(object):
       res = ""
       pre = ans[0]
       count = 1
-      for i in range(1, len(ans)):
-        __ pre == ans[i]:
+      ___ i __ r..(1, l..(ans)):
+        __ pre __ ans[i]:
           count += 1
-        else:
+        ____:
           res += str(count) + pre
           pre = ans[i]
           count = 1
       res += str(count) + pre
       ans = res
       n -= 1
-    return ans
+    r.. ans

@@ -5,14 +5,14 @@ class Solution:
         :type b: str
         :rtype: str
         """
-        __ not a and not b:
-            return ''
-        __ not a:
-            return b
-        __ not b:
-            return a
+        __ n.. a and n.. b:
+            r.. ''
+        __ n.. a:
+            r.. b
+        __ n.. b:
+            r.. a
 
-        m, n = len(a), len(b)
+        m, n = l..(a), l..(b)
         idx = max(m, n)
         ans = [''] * (idx + 1)
 
@@ -45,7 +45,7 @@ class Solution:
 
         __ carry:
             ans[0] = str(carry)
-        else:
+        ____:
             ans = ans[1:]
 
-        return ''.join(ans)
+        r.. ''.join(ans)

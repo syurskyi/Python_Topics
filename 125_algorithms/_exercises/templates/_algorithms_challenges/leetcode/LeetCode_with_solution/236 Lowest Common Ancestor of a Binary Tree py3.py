@@ -35,26 +35,26 @@ p and q are different and both values will exist in the binary tree.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.ans = None
+        self.ans = N..
 
     ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        self.count(root, p, q)
-        return self.ans
+        self.c.. root, p, q)
+        r.. self.ans
 
-    ___ count(self, node, p, q):
-        __ not node:
-            return 0
+    ___ c.. self, node, p, q):
+        __ n.. node:
+            r.. 0
 
-        lcount = self.count(node.left, p, q)
-        rcount = self.count(node.right, p, q)
-        mcount = 1 __ node == p or node == q else 0
+        lcount = self.c.. node.left, p, q)
+        rcount = self.c.. node.right, p, q)
+        mcount = 1 __ node __ p o. node __ q ____ 0
         ret = lcount + rcount + mcount
-        __ lcount == 1 and rcount == 1 or lcount == 1 and mcount == 1 or rcount == 1 and mcount == 1:
+        __ lcount __ 1 and rcount __ 1 o. lcount __ 1 and mcount __ 1 o. rcount __ 1 and mcount __ 1:
             self.ans = node
-        return ret
+        r.. ret

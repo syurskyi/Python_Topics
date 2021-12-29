@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from collatz_conjecture import collatz_steps
+____ collatz_conjecture _______ collatz_steps
 
 # Test cases adapted from `x-common//canonical-data.json` @ version: 1.1.1
 
@@ -20,13 +20,13 @@ class CollatzConjectureTests(unittest.TestCase):
         self.assertEqual(collatz_steps(1000000), 152)
 
     ___ test_zero_is_invalid_input(self):
-        self.assertEqual(collatz_steps(0), None)
+        self.assertEqual(collatz_steps(0), N..)
 
     ___ test_negative_number_is_invalid_input(self):
-        self.assertEqual(collatz_steps(-1), None)
+        self.assertEqual(collatz_steps(-1), N..)
 
-        self.assertEqual(collatz_steps(-15), None)
+        self.assertEqual(collatz_steps(-15), N..)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

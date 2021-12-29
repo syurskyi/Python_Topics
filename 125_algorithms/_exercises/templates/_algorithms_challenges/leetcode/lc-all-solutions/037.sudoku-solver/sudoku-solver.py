@@ -4,44 +4,44 @@ class Solution(object):
     :type board: List[List[str]]
     :rtype: void Do not return anything, modify board in-place instead.
     """
-    cacheBox = [[0] * len(board) for _ in range(len(board))]
-    cacheRow = [[0] * len(board) for _ in range(len(board))]
-    cacheCol = [[0] * len(board) for _ in range(len(board))]
+    cacheBox = [[0] * l..(board) ___ _ __ r..(l..(board))]
+    cacheRow = [[0] * l..(board) ___ _ __ r..(l..(board))]
+    cacheCol = [[0] * l..(board) ___ _ __ r..(l..(board))]
 
     ___ helper(board, i, j, cacheRow, cacheCol, cacheBox):
-      __ board[i][j] == ".":
-        for k in range(1, 10):
-          __ i < 0 or i >= len(board) or j < 0 or j >= len(board):
+      __ board[i][j] __ ".":
+        ___ k __ r..(1, 10):
+          __ i < 0 o. i >= l..(board) o. j < 0 o. j >= l..(board):
             continue
           ib = (i / 3) * 3 + j / 3
-          __ cacheRow[i][k - 1] == 1 or cacheCol[j][k - 1] == 1 or cacheBox[ib][k - 1] == 1:
+          __ cacheRow[i][k - 1] __ 1 o. cacheCol[j][k - 1] __ 1 o. cacheBox[ib][k - 1] __ 1:
             continue
 
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 1
           board[i][j] = str(k)
-          __ i == j == len(board) - 1:
-            return True
-          __ i + 1 < len(board):
+          __ i __ j __ l..(board) - 1:
+            r.. True
+          __ i + 1 < l..(board):
             __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
-              return True
-          elif j + 1 < len(board):
+              r.. True
+          ____ j + 1 < l..(board):
             __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
-              return True
+              r.. True
           board[i][j] = "."
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 0
-      else:
-        __ i == j == len(board) - 1:
-          return True
-        __ i + 1 < len(board):
+      ____:
+        __ i __ j __ l..(board) - 1:
+          r.. True
+        __ i + 1 < l..(board):
           __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
-            return True
-        elif j + 1 < len(board):
+            r.. True
+        ____ j + 1 < l..(board):
           __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
-            return True
-      return False
+            r.. True
+      r.. False
 
-    for i in range(len(board)):
-      for j in range(len(board)):
+    ___ i __ r..(l..(board)):
+      ___ j __ r..(l..(board)):
         __ board[i][j] != ".":
           ib = (i / 3) * 3 + j / 3
           k = int(board[i][j]) - 1

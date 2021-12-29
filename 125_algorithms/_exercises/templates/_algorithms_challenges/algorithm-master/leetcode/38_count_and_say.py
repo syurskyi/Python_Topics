@@ -6,17 +6,17 @@ class Solution:
         """
         queue = '1'
 
-        __ not N:
-            return queue
+        __ n.. N:
+            r.. queue
 
-        _queue = []
+        _queue    # list
 
-        for _ in range(N - 1):
+        ___ _ __ r..(N - 1):
             cnt = 0
             char = queue[0]
 
-            for c in queue:
-                __ c == char:
+            ___ c __ queue:
+                __ c __ char:
                     cnt += 1
                     continue
                 _queue.extend((str(cnt), char))
@@ -26,4 +26,4 @@ class Solution:
             _queue.extend((str(cnt), char))
             queue, _queue = ''.join(_queue), []
 
-        return queue
+        r.. queue

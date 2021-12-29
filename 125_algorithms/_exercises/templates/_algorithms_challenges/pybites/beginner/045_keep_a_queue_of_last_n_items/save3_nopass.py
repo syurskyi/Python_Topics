@@ -1,13 +1,13 @@
-import collections
+_______ collections
 
 
 ___ my_queue(n=5):
-    to_print = []
+    to_print    # list
     mq = collections.deque(maxlen=n)
-    for i in range(n):
-        mq.append(i)
-        print((i, list(mq)))
-    return ""
+    ___ i __ r..(n):
+        mq.a..(i)
+        print((i, l..(mq)))
+    r.. ""
 
     """Queue size does not go beyond n int, this outputs:
     (0, [0])

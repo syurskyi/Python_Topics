@@ -11,7 +11,7 @@ class Solution:
         :type head: ListNode
         :rtype: bool
         """
-        rev = None
+        rev = N..
         slow = fast = head
 
         while fast and fast.next:
@@ -21,11 +21,11 @@ class Solution:
         __ fast:
             slow = slow.next
 
-        while slow and slow.val == rev.val:
+        while slow and slow.val __ rev.val:
             slow = slow.next
             rev = rev.next
 
-        return not rev
+        r.. n.. rev
 
 
 class Solution:
@@ -34,7 +34,7 @@ class Solution:
         :type head: ListNode
         :rtype: bool
         """
-        rev = nxt = None
+        rev = nxt = N..
         slow = fast = head
 
         while fast and fast.next:
@@ -48,8 +48,8 @@ class Solution:
         __ fast:
             slow = slow.next
 
-        while slow and slow.val == rev.val:
+        while slow and slow.val __ rev.val:
             slow = slow.next
             rev = rev.next
 
-        return not rev
+        r.. n.. rev

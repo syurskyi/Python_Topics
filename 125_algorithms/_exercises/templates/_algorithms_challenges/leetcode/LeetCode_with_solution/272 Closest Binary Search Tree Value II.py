@@ -8,8 +8,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -25,39 +25,39 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        pre = []
-        suc = []
+        pre    # list
+        suc    # list
         self.predecessors(root, target, pre)
         self.successors(root, target, suc)
-        return self.merge(target, k, pre, suc)
+        r.. self.merge(target, k, pre, suc)
 
     ___ predecessors(self, root, target, stk):
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.predecessors(root.left, target, stk)
         __ root.val <= target:
-            stk.append(root.val)
+            stk.a..(root.val)
             self.predecessors(root.right, target, stk)
 
     ___ successors(self, root, target, stk):
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.successors(root.right, target, stk)
         __ root.val > target:
-            stk.append(root.val)
+            stk.a..(root.val)
             self.successors(root.left, target, stk)
 
     ___ merge(self, target, k, pre, suc):
-        ret = []
-        while len(ret) < k:
-            __ not pre:
-                ret.append(suc.pop())
-            elif not suc:
-                ret.append(pre.pop())
-            elif abs(pre[-1] - target) < abs(suc[-1] - target):
-                ret.append(pre.pop())
-            else:
-                ret.append(suc.pop())
-        return ret
+        ret    # list
+        while l..(ret) < k:
+            __ n.. pre:
+                ret.a..(suc.pop())
+            ____ n.. suc:
+                ret.a..(pre.pop())
+            ____ abs(pre[-1] - target) < abs(suc[-1] - target):
+                ret.a..(pre.pop())
+            ____:
+                ret.a..(suc.pop())
+        r.. ret

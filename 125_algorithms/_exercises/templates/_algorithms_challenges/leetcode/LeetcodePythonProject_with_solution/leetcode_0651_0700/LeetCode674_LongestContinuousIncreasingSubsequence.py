@@ -9,8 +9,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
-        n = len(nums)
+        __ n.. nums: r.. 0
+        n = l..(nums)
         i = 0
         res = 1
         while i < n:
@@ -19,18 +19,18 @@ class Solution(object):
                 i += 1
                 res = max(res, i-j+1)
             i += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findLengthOfLCIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

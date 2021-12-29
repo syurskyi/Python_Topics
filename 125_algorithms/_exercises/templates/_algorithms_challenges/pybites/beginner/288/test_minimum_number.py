@@ -1,8 +1,8 @@
-from random import sample
+____ random _______ sample
 
-import pytest
+_______ pytest
 
-from minimum_number import minimum_number
+____ minimum_number _______ minimum_number
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -19,8 +19,8 @@ from minimum_number import minimum_number
                         ([9, 3, 1, 2, 7, 9, 4, 5, 7, 9, 8, 6, 1], 123456789),
                         ([4, 2], 24),
                         ([1, 5, 2, 3, 4, 1, 4, 2, 3], 12345),
-                        (sample(range(1, 6), 5), 12345),
-                        (sample(range(0, 6), 6), 12345),
+                        (sample(r..(1, 6), 5), 12345),
+                        (sample(r..(0, 6), 6), 12345),
                          ])
 ___ test_minimum_number(test_input, expected):
-    assert minimum_number(test_input) == expected
+    ... minimum_number(test_input) __ expected

@@ -3,7 +3,7 @@
 
 
 ___ staircase(a):
-    for i in range(1, a + 1):
+    ___ i __ r..(1, a + 1):
         print((a - i) * ' ' + i * "#")
 
 

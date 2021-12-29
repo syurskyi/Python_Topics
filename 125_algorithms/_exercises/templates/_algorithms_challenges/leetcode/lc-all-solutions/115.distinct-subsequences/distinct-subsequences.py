@@ -6,18 +6,18 @@ class Solution(object):
     :type t: str
     :rtype: int
     """
-    dp = [[0] * (len(t) + 1) for _ in range(0, len(s) + 1)]
+    dp = [[0] * (l..(t) + 1) ___ _ __ r..(0, l..(s) + 1)]
 
-    for i in range(0, len(s) + 1):
+    ___ i __ r..(0, l..(s) + 1):
       dp[i][0] = 1
 
-    for i in range(1, len(s) + 1):
-      for j in range(1, len(t) + 1):
+    ___ i __ r..(1, l..(s) + 1):
+      ___ j __ r..(1, l..(t) + 1):
         dp[i][j] += dp[i - 1][j]
-        __ t[j - 1] == s[i - 1]:
+        __ t[j - 1] __ s[i - 1]:
           dp[i][j] += dp[i - 1][j - 1]
 
-    return dp[-1][-1]
+    r.. dp[-1][-1]
 
   ___ numDistinct(self, s, t):
     """
@@ -25,12 +25,12 @@ class Solution(object):
     :type t: str
     :rtype: int
     """
-    dp = [0] * (len(t) + 1)
-    for i in range(1, len(s) + 1):
+    dp = [0] * (l..(t) + 1)
+    ___ i __ r..(1, l..(s) + 1):
       pre = 1
-      for j in range(1, len(t) + 1):
+      ___ j __ r..(1, l..(t) + 1):
         tmp = dp[j]
-        __ t[j - 1] == s[i - 1]:
+        __ t[j - 1] __ s[i - 1]:
           dp[j] += pre
         pre = tmp
-    return dp[-1]
+    r.. dp[-1]

@@ -7,10 +7,10 @@ class Solution:
         d = digits[0]
         digits[0] = (d + 1) % 10
         carry = (d + 1) / 10
-        for i, d in enumerate(digits[1:], 1):
+        ___ i, d __ enumerate(digits[1:], 1):
             digits[i] = (d + carry) % 10
             carry = (d + carry) / 10
-        __ carry == 1:
-            digits.append(1)
+        __ carry __ 1:
+            digits.a..(1)
         digits.reverse()
-        return digits
+        r.. digits

@@ -26,23 +26,23 @@ class Solution:
     ___ pivot(self, A, lo, hi):
         pivot = lo
         closed = pivot  # closed == pivot, means no closed set
-        for i in range(lo + 1, hi):
+        ___ i __ r..(lo + 1, hi):
             __ A[i] < A[pivot]:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]
 
         A[closed], A[pivot] = A[pivot], A[closed]
-        return closed  # the pivot index
+        r.. closed  # the pivot index
 
     ___ quick_select(self, nums, lo, hi, k):
         """find k-th (0-indexed)"""
         pivot = self.pivot(nums, lo, hi)
-        __ pivot == k:
-            return nums[pivot]
-        elif pivot > k:
-            return self.quick_select(nums, lo, pivot, k)
-        else:
-            return self.quick_select(nums, pivot + 1, hi, k)
+        __ pivot __ k:
+            r.. nums[pivot]
+        ____ pivot > k:
+            r.. self.quick_select(nums, lo, pivot, k)
+        ____:
+            r.. self.quick_select(nums, pivot + 1, hi, k)
 
 
     ___ minMoves2(self, nums):
@@ -57,14 +57,14 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         median = self.quick_select(nums, 0, n, n//2)
-        return sum(map(lambda x: abs(x - median), nums))
+        r.. s..(map(l.... x: abs(x - median), nums))
 
     ___ find_median(self, nums):
-        n = len(nums)
+        n = l..(nums)
         nums.sort()
-        return nums[n//2]
+        r.. nums[n//2]
 
     ___ minMoves2_error(self, nums):
         """
@@ -75,11 +75,11 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        avg = round(sum(nums) / n)
-        return sum(map(lambda x: abs(x - avg), nums))
+        n = l..(nums)
+        avg = round(s..(nums) / n)
+        r.. s..(map(l.... x: abs(x - avg), nums))
 
 
-__ __name__ == "__main__":
-    assert Solution().minMoves2([1,2,3]) == 2
-    assert Solution().minMoves2([1,0,0,8,6]) == 14
+__ __name__ __ "__main__":
+    ... Solution().minMoves2([1,2,3]) __ 2
+    ... Solution().minMoves2([1,0,0,8,6]) __ 14

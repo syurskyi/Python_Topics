@@ -12,28 +12,28 @@ class Solution(object):
         """
         x = 0
         ips= ip.split('.')
-        for ip in ips:
+        ___ ip __ ips:
             x = int(ip) + x*256
-        res = []
+        res    # list
         while n > 0:
             step = x &(-x)
             while step > n:
                 step /= 2
-            res.append(self.long2ip(x, step))
+            res.a..(self.long2ip(x, step))
             x += step
             n -= step
-        return res
+        r.. res
     
     ___ long2ip(self, x, step):
         res = [0]*4
-        for i in range(3, -1, -1):
+        ___ i __ r..(3, -1, -1):
             res[i] = x&255
             x >>= 8
         n = 33
         while step > 0:
             n -= 1
             step //= 2
-        return '.'.join([str(s) for s in res])+'/'+str(n)
+        r.. '.'.join([str(s) ___ s __ res])+'/'+str(n)
     
     ___ test(self):
         testCases = [
@@ -42,15 +42,15 @@ class Solution(object):
                 10,
             ],
         ]
-        for ip, n in testCases:
+        ___ ip, n __ testCases:
             result = self.ipToCIDR(ip, n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     
-    for n in range(1, 20):
+    ___ n __ r..(1, 20):
         print('n: %s' % n)
         print('{:b}'.format(n))
         print('{:b}'.format(-n))

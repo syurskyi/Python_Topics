@@ -15,16 +15,16 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: int
         """
-        import heapq
-        intervals.sort(key=lambda x: x.start)
-        heap = []
+        _______ heapq
+        intervals.sort(key=l.... x: x.start)
+        heap    # list
         maxLen = 0
-        for interval in intervals:
+        ___ interval __ intervals:
             while heap and heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
-            maxLen = max(maxLen, len(heap))
-        return maxLen
+            maxLen = max(maxLen, l..(heap))
+        r.. maxLen
      
     ___ test(self):
         testCases = [
@@ -33,9 +33,9 @@ class Solution(object):
             [[13, 15], [0, 13]],
             [[2, 15], [36, 45], [9, 29], [16, 23], [4, 9]],
         ]
-        for intervals in testCases:
+        ___ intervals __ testCases:
             print('intervals: %s' % (intervals))
-            intervals = [Interval(inter[0], inter[1]) for inter in intervals]
+            intervals = [Interval(inter[0], inter[1]) ___ inter __ intervals]
             result = self.minMeetingRooms(intervals)
             print('result: %s' % result)
             print('-='*20+'-')
@@ -43,6 +43,6 @@ class Solution(object):
 ___ main():
     Solution().test()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()
 

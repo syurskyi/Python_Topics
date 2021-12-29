@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from bracket_push import is_paired
+____ bracket_push _______ is_paired
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.5.0
@@ -62,5 +62,5 @@ class BracketPushTest(unittest.TestCase):
                  "x} &... x^2 \\end{array}\\right)")), True)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -9,28 +9,28 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
-        __ not words: return ''
-        words.sort(key=len)
-        n = len(words[-1])
-        dp = [set() for _ in range(n+1)]
-        for word in words:
-            __ len(word) == 1 or word[:-1] in dp[len(word)-1]:
-                dp[len(word)].add(word)
-        for i in range(n, -1, -1):
+        __ n.. words: r.. ''
+        words.sort(key=l..)
+        n = l..(words[-1])
+        dp = [set() ___ _ __ r..(n+1)]
+        ___ word __ words:
+            __ l..(word) __ 1 o. word[:-1] __ dp[l..(word)-1]:
+                dp[l..(word)].add(word)
+        ___ i __ r..(n, -1, -1):
             __ dp[i]:
-                return sorted(list(dp[i])).pop(0)
-        return ''
+                r.. s..(l..(dp[i])).pop(0)
+        r.. ''
     
     ___ test(self):
         testCases = [
             ["w","wo","wor","worl", "world"],
             ["a", "banana", "app", "appl", "ap", "apply", "apple"],
         ]
-        for words in testCases:
+        ___ words __ testCases:
             print('words: %s' % words)
             result = self.longestWord(words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

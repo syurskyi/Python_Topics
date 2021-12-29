@@ -5,8 +5,8 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        __ not A or not k:
-            return -1
+        __ n.. A o. n.. k:
+            r.. -1
 
         A.sort()
 
@@ -15,10 +15,10 @@ class Solution:
             mid = (left + right) // 2
             __ self.check_valid(A, mid, k):
                 right = mid
-            else:
+            ____:
                 left = mid
 
-        return left __ self.check_valid(A, left, k) else right
+        r.. left __ self.check_valid(A, left, k) ____ right
 
     ___ check_valid(self, A, mid, k):
         """
@@ -26,13 +26,13 @@ class Solution:
         """
         cnt = left = 0
 
-        for right in range(len(A)):
+        ___ right __ r..(l..(A)):
             while A[right] - A[left] > mid:
                 left += 1
 
             cnt += right - left
 
             __ cnt >= k:
-                return True
+                r.. True
 
-        return False
+        r.. False

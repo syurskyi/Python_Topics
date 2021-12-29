@@ -1,16 +1,16 @@
-import pandas as pd
-import pytest
+_______ pandas as pd
+_______ pytest
 
-from sales import get_data, process_data, summary_report, yearly_report, URL
+____ sales _______ get_data, process_data, summary_report, yearly_report, URL
 
 
 @pytest.fixture(scope="function")
 ___ df():
-    return process_data(URL)
+    r.. process_data(URL)
 
 
 ___ test_data(df):
-    assert isinstance(df, pd.DataFrame)
+    ... isi..(df, pd.DataFrame)
 
 
 @pytest.mark.parametrize(
@@ -27,7 +27,7 @@ ___ test_data(df):
 ___ test_summary_report(df, capfd, line, expected):
     summary_report(df)
     output = capfd.readouterr()[0].split("\n")
-    assert output[line].strip() == expected
+    ... output[line].strip() __ expected
 
 
 @pytest.mark.parametrize(
@@ -36,7 +36,7 @@ ___ test_summary_report(df, capfd, line, expected):
 ___ test_summary_report_custom(df, capfd, lst, expected):
     summary_report(df, lst)
     output = capfd.readouterr()[0].split("\n")
-    assert output[0].strip() == expected
+    ... output[0].strip() __ expected
 
 
 @pytest.mark.parametrize(
@@ -51,7 +51,7 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
 ___ test_yearly_report(df, capfd, year, expected):
     yearly_report(df, year)
     output = capfd.readouterr()[0].split("\n")
-    assert output[9] == expected
+    ... output[9] __ expected
 
 
 @pytest.mark.parametrize("year", [1972, 2000, 2020])
@@ -59,4 +59,4 @@ ___ test_yearly_report_with_invalid_year(df, year):
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
     with pytest.raises(ValueError) as e:
         yearly_report(df, year)
-    assert str(e) == msg
+    ... str(e) __ msg

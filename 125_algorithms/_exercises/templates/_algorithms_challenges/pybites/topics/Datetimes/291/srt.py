@@ -1,5 +1,5 @@
-from datetime import timedelta, datetime
-from typing import List
+____ datetime _______ timedelta, datetime
+____ typing _______ List
 
 text1 = """
 32
@@ -42,12 +42,12 @@ ___ get_srt_section_ids(text: str) -> List[int]:
     line_dict = {}
     epoch = '1970-01-01'
     dialog_list = text.split('\n\n')
-    for dialog in dialog_list:
+    ___ dialog __ dialog_list:
        index, timestamp, line = dialog.strip().splitlines()
        begintime, endtime = timestamp.split(' --> ')
        duration = datetime.fromisoformat(f'{epoch} {endtime[:8]}') - datetime.fromisoformat(f'{epoch} {begintime[:8]}')
-       line_dict[int(index)] = len(line)/duration.total_seconds()
-    return sorted(line_dict, key=line_dict.get, reverse=True )
+       line_dict[int(index)] = l..(line)/duration.total_seconds()
+    r.. s..(line_dict, key=line_dict.get, reverse=True )
 
 
 print(get_srt_section_ids(text1))

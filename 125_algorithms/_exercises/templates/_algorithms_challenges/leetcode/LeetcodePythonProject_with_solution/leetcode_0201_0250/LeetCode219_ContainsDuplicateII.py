@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: bool
         """
         hashmap = {}
-        for i, num in enumerate(nums):
-            __ num not in hashmap or i - hashmap[num] > k:
+        ___ i, num __ enumerate(nums):
+            __ num n.. __ hashmap o. i - hashmap[num] > k:
                 hashmap[num] = i
-            else:
-                return True
-        return False
+            ____:
+                r.. True
+        r.. False
     

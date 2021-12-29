@@ -4,13 +4,13 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        ans = []
-        __ not A:
-            return ans
+        ans    # list
+        __ n.. A:
+            r.. ans
 
-        n = len(A)
-        __ n == 1:
-            return A
+        n = l..(A)
+        __ n __ 1:
+            r.. A
 
         A.sort()
 
@@ -29,15 +29,15 @@ class Solution:
         pi = [0] * n
         pe = max_size = 0
 
-        for i in range(n):
-            for j in range(i):
+        ___ i __ r..(n):
+            ___ j __ r..(i):
                 """
                 backtracking
 
                 `A[i]` is larger than `A[j]`,
                 so check `A[i] % A[j]` if its zero
                 """
-                __ A[i] % A[j] == 0 and dp[j] + 1 > dp[i]:
+                __ A[i] % A[j] __ 0 and dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     pi[i] = j
 
@@ -46,8 +46,8 @@ class Solution:
                     pe = i
 
         ans = [0] * max_size
-        for i in range(max_size - 1, -1, -1):
+        ___ i __ r..(max_size - 1, -1, -1):
             ans[i] = A[pe]
             pe = pi[pe]
 
-        return ans
+        r.. ans

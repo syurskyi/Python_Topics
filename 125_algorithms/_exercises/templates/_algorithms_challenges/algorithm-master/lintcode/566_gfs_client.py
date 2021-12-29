@@ -22,13 +22,13 @@ class GFSClient(BaseGFSClient):
     @return: conetent of the file given from GFS
     """
     ___ read(self, filename):
-        __ filename not in self.chunk_num:
-            return
+        __ filename n.. __ self.chunk_num:
+            r..
         i, content = 0, ''
         while i < self.chunk_num[filename]:
             content += self.readChunk(filename, i)
             i += 1
-        return content
+        r.. content
 
     """
     @param: filename: a file name
@@ -36,7 +36,7 @@ class GFSClient(BaseGFSClient):
     @return: nothing
     """
     ___ write(self, filename, content):
-        i, j, n = 0, 0, len(content)
+        i, j, n = 0, 0, l..(content)
         while j < n:
             self.writeChunk(filename, i, content[j : j + self.chunk_size])
             i += 1

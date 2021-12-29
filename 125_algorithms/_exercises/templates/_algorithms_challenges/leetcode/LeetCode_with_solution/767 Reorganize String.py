@@ -18,7 +18,7 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -27,34 +27,34 @@ class Solution:
         piles by max char and circular append
         """
         counter = defaultdict(int)
-        for c in S:
+        ___ c __ S:
             counter[c] += 1
 
         lst = [
             (-n, n, c)
-            for c, n in counter.items()
+            ___ c, n __ counter.items()
         ]
         lst.sort()
-        piles = []
+        piles    # list
         _, n, c = lst[0]
-        for i in range(n):
-            piles.append([c])
+        ___ i __ r..(n):
+            piles.a..([c])
 
         cnt = 0
-        for _, n, c in lst[1:]:
-            for _ in range(n):
-                piles[cnt].append(c)
-                cnt = (cnt + 1) % len(piles)
+        ___ _, n, c __ lst[1:]:
+            ___ _ __ r..(n):
+                piles[cnt].a..(c)
+                cnt = (cnt + 1) % l..(piles)
 
-        __ len(piles) > 1 and len(piles[-2]) == 1:
-            return ""
+        __ l..(piles) > 1 and l..(piles[-2]) __ 1:
+            r.. ""
 
-        return "".join(
-            map(lambda x: "".join(x), piles)
+        r.. "".join(
+            map(l.... x: "".join(x), piles)
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().reorganizeString("vvvlo") == "vlvov"
-    assert Solution().reorganizeString("aab") == "aba"
-    assert Solution().reorganizeString("aaab") == ""
+__ __name__ __ "__main__":
+    ... Solution().reorganizeString("vvvlo") __ "vlvov"
+    ... Solution().reorganizeString("aab") __ "aba"
+    ... Solution().reorganizeString("aaab") __ ""

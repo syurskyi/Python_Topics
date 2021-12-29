@@ -3,18 +3,18 @@
 
 
 t = int(input())
-for test in range(t):
+___ test __ r..(t):
     n = int(input())
-    arr = list(map(int, input().split()))
+    arr = l..(map(int, input().split()))
     count = 0
 
-    for i in range(2):
-        for j in range(len(arr) - 1, 0, -1):
+    ___ i __ r..(2):
+        ___ j __ r..(l..(arr) - 1, 0, -1):
             __ arr[j] < arr[j-1]:
                 arr[j], arr[j-1] = arr[j-1], arr[j]
                 count += 1
 
-    __ arr == sorted(arr):
+    __ arr __ s..(arr):
         print(count)
-    else:
+    ____:
         print('Too chaotic')

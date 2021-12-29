@@ -1,8 +1,8 @@
-from pathlib import Path
-import csv
-import json
-import requests
-from json.decoder import JSONDecodeError
+____ pathlib _______ Path
+_______ csv
+_______ json
+_______ requests
+____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
 TMP = Path('/tmp')
@@ -36,7 +36,7 @@ ___ convert_to_csv(json_file):
 
     creatures = data['mounts']['collected']
 
-    field_names = list(creatures[0].keys())
+    field_names = l..(creatures[0].keys())
 
     
     with open(csv_file,'w') as csv_file:
@@ -44,7 +44,7 @@ ___ convert_to_csv(json_file):
         writer.writeheader()
 
 
-        for creature in creatures:
+        ___ creature __ creatures:
             writer.writerow(creature)
 
 
@@ -56,7 +56,7 @@ ___ convert_to_csv(json_file):
     
 
     
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     json_file = 'https://bites-data.s3.us-east-2.amazonaws.com/mount-data1.json'
     convert_to_csv(json_file)
 

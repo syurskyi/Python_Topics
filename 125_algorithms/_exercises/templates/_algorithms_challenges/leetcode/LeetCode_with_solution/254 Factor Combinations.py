@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from math import sqrt
+____ math _______ sqrt
 
 __author__ = 'Daniel'
 
@@ -13,9 +13,9 @@ class Solution:
         :type n: int
         :rtype: list[list[int]]
         """
-        ret = []
+        ret    # list
         self.dfs([n], ret)
-        return ret
+        r.. ret
 
     ___ dfs(self, cur, ret):
         """
@@ -31,44 +31,44 @@ class Solution:
 
         [4, 4]
         """
-        __ len(cur) > 1:
-            ret.append(list(cur))
+        __ l..(cur) > 1:
+            ret.a..(l..(cur))
 
         n = cur.pop()
-        start = cur[-1] __ cur else 2
-        for i in xrange(start, int(sqrt(n))+1):
-            __ n % i == 0:
-                cur.append(i)
-                cur.append(n/i)
+        start = cur[-1] __ cur ____ 2
+        ___ i __ xrange(start, int(sqrt(n))+1):
+            __ n % i __ 0:
+                cur.a..(i)
+                cur.a..(n/i)
                 self.dfs(cur, ret)
                 cur.pop()
 
     ___ dfs2(self, n, cur, ret):
-        __ n > 1 and cur and len(cur) >= 1:
-            ret.append(list(cur)+[n])
+        __ n > 1 and cur and l..(cur) >= 1:
+            ret.a..(l..(cur)+[n])
 
-        start = cur[-1] __ cur else 2
-        for i in xrange(start, int(sqrt(n))+1):
-            __ n%i == 0:
-                cur.append(i)
+        start = cur[-1] __ cur ____ 2
+        ___ i __ xrange(start, int(sqrt(n))+1):
+            __ n%i __ 0:
+                cur.a..(i)
                 self.dfs(n/i, cur, ret)
                 cur.pop()
 
     ___ dfs_TLE(self, n, cur, ret):
-        __ n == 1 and cur and len(cur) >= 2:
-            ret.append(list(cur))
+        __ n __ 1 and cur and l..(cur) >= 2:
+            ret.a..(l..(cur))
 
         __ cur:
             start = cur[-1]
-        else:
+        ____:
             start = 2
 
-        for i in xrange(start, int(sqrt(n+1))):
-            __ n%i == 0:
-                cur.append(i)
+        ___ i __ xrange(start, int(sqrt(n+1))):
+            __ n%i __ 0:
+                cur.a..(i)
                 self.dfs_TLE(n/i, cur, ret)
                 cur.pop()
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().getFactors(16)

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from difference_of_squares import difference, square_of_sum, sum_of_squares
+____ difference_of_squares _______ difference, square_of_sum, sum_of_squares
 
 
 class DifferenceOfSquaresTest(unittest.TestCase):
@@ -24,5 +24,5 @@ class DifferenceOfSquaresTest(unittest.TestCase):
         self.assertEqual(25164150, difference(100))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

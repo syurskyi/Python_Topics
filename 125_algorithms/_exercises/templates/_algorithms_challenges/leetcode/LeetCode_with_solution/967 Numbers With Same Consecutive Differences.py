@@ -26,7 +26,7 @@ Note:
 1 <= N <= 9
 0 <= K <= 9
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -37,34 +37,34 @@ class Solution:
         """
         dfs + memoization
         """
-        ret = []
-        for i in range(1, 10):
+        ret    # list
+        ___ i __ r..(1, 10):
             ret.extend(self.dfs(i, N, K))
 
-        __ N == 1:
-            ret.append([0])  # special case
+        __ N __ 1:
+            ret.a..([0])  # special case
 
-        return list(
-            map(lambda x: int("".join(map(str, x))), ret)
+        r.. l..(
+            map(l.... x: int("".join(map(str, x))), ret)
         )
 
     ___ dfs(self, start: int, N: int, K: int) -> List[List[int]]:
-        __ (start, N, K) not in self.cache:
-            ret = []
-            __ N == 1:
+        __ (start, N, K) n.. __ self.cache:
+            ret    # list
+            __ N __ 1:
                 ret = [[start]]
-            elif N > 1:
+            ____ N > 1:
                 __ start + K <= 9:
-                    for e in self.dfs(start + K, N - 1, K):
-                        ret.append([start] + e)
+                    ___ e __ self.dfs(start + K, N - 1, K):
+                        ret.a..([start] + e)
                 __ start - K >= 0 and K != 0:  # special case
-                    for e in self.dfs(start - K, N - 1, K):
-                        ret.append([start] + e)
+                    ___ e __ self.dfs(start - K, N - 1, K):
+                        ret.a..([start] + e)
 
             self.cache[start, N, K] = ret
 
-        return self.cache[start, N, K]
+        r.. self.cache[start, N, K]
 
 
-__ __name__ == "__main__":
-    Solution().numsSameConsecDiff(3, 7) == [181,292,707,818,929]
+__ __name__ __ "__main__":
+    Solution().numsSameConsecDiff(3, 7) __ [181,292,707,818,929]

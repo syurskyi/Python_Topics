@@ -6,26 +6,26 @@ Created on Mar 9, 2017
 
 class Solution(object):
     ___ lengthOfLIS(self, nums):
-        import bisect
-        dp = [0]*len(nums)
+        _______ bisect
+        dp = [0]*l..(nums)
         length = 0
-        for num in nums:
+        ___ num __ nums:
             i = bisect.bisect_left(dp, num, 0, length)
             dp[i] = num
-            __ i == length:
+            __ i __ length:
                 length+=1
         print('dp: %s' % dp)
-        return length
+        r.. length
     
     ___ test(self):
         testCases = [
             [10, 9, 2, 5, 3, 7, 101, 18],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.lengthOfLIS(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

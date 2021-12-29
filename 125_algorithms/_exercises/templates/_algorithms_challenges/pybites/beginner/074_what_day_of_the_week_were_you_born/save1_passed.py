@@ -1,5 +1,5 @@
-import calendar
-from datetime import date
+_______ calendar
+____ datetime _______ date
 
 
 ___ weekday_of_birth_date(date):
@@ -12,4 +12,4 @@ ___ weekday_of_birth_date(date):
                 4: "Friday",
                 5: "Saturday",
                 6: "Sunday"}
-    return weekdays[bday_weekday]
+    r.. weekdays[bday_weekday]

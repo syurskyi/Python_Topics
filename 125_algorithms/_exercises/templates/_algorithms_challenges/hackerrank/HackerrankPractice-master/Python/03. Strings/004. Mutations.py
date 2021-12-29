@@ -3,4 +3,4 @@
 
 
 ___ mutate_string(string, position, character):
-    return string[:position] + character + string[position + 1:]
+    r.. string[:position] + character + string[position + 1:]

@@ -25,18 +25,18 @@ class Solution:
         :param digits: str
         :return: a list of strings, [s1, s2]
         """
-        result = []
+        result    # list
         self.dfs_traverse(digits, "", result)
-        return result
+        r.. result
 
     ___ dfs_traverse(self, string_seq, current, result):
-        __ not string_seq:
-            result.append(current)
-            return
+        __ n.. string_seq:
+            result.a..(current)
+            r..
 
-        for letter in self.digit2letters[string_seq[0]]:
+        ___ letter __ self.digit2letters[string_seq[0]]:
             self.dfs_traverse(string_seq[1:], current+letter, result)
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().letterCombinations("23")

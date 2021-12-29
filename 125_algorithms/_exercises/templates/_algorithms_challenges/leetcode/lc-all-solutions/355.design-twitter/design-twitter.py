@@ -1,4 +1,4 @@
-import heapq
+_______ heapq
 
 
 class Twitter(object):
@@ -8,7 +8,7 @@ class Twitter(object):
     Initialize your data structure here.
     """
     self.ts = 0
-    self.tweets = collections.defaultdict(list)
+    self.tweets = collections.defaultdict(l..)
     self.friendship = collections.defaultdict(set)
 
   ___ postTweet(self, userId, tweetId):
@@ -18,8 +18,8 @@ class Twitter(object):
     :type tweetId: int
     :rtype: void
     """
-    tInfo = self.ts, tweetId, userId, len(self.tweets[userId])
-    self.tweets[userId].append(tInfo)
+    tInfo = self.ts, tweetId, userId, l..(self.tweets[userId])
+    self.tweets[userId].a..(tInfo)
     self.ts -= 1
 
   ___ getNewsFeed(self, userId):
@@ -28,22 +28,22 @@ class Twitter(object):
     :type userId: int
     :rtype: List[int]
     """
-    ret = []
-    heap = []
+    ret    # list
+    heap    # list
     __ self.tweets[userId]:
       heapq.heappush(heap, self.tweets[userId][-1])
 
-    for followeeId in self.friendship[userId]:
+    ___ followeeId __ self.friendship[userId]:
       __ self.tweets[followeeId]:
         heapq.heappush(heap, self.tweets[followeeId][-1])
     cnt = 10
     while heap and cnt > 0:
       _, tid, uid, idx = heapq.heappop(heap)
-      ret.append(tid)
+      ret.a..(tid)
       __ idx > 0:
         heapq.heappush(heap, self.tweets[uid][idx - 1])
       cnt -= 1
-    return ret
+    r.. ret
 
   ___ follow(self, followerId, followeeId):
     """
@@ -52,8 +52,8 @@ class Twitter(object):
     :type followeeId: int
     :rtype: void
     """
-    __ followerId == followeeId:
-      return
+    __ followerId __ followeeId:
+      r..
     self.friendship[followerId] |= {followeeId}
 
   ___ unfollow(self, followerId, followeeId):

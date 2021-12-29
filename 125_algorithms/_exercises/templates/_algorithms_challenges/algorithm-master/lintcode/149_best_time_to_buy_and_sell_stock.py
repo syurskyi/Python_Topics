@@ -5,15 +5,15 @@ class Solution:
     """
     ___ maxProfit(self, P):
         ans = 0
-        __ not P:
-            return ans
+        __ n.. P:
+            r.. ans
 
         Pmin = P[0]
 
-        for i in range(1, len(P)):
+        ___ i __ r..(1, l..(P)):
             __ P[i] - Pmin > ans:
                 ans = P[i] - Pmin
             __ P[i] < Pmin:
                 Pmin = P[i]
 
-        return ans
+        r.. ans

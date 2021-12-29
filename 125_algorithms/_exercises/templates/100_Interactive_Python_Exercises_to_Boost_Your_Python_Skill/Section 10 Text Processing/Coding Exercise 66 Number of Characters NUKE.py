@@ -8,4 +8,4 @@ mystring  "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pe
            "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus."
 
 ___ foo(mystring):
-    return len(mystring.replace(".", ""))
+    r.. l..(mystring.replace(".", ""))

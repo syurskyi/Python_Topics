@@ -11,19 +11,19 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        elem = []
-        result = []
+        elem    # list
+        result    # list
         self.helper(elem, 1, k, n, result)
-        return result
+        r.. result
     
     ___ helper(self, elem, start, k, n, result):
-        __ len(elem) == k and n == 0:
-            result.append(list(elem))
-            return
+        __ l..(elem) __ k and n __ 0:
+            result.a..(l..(elem))
+            r..
         __ n < 0:
-            return
-        for i in range(start, 10):
-            elem.append(i)
+            r..
+        ___ i __ r..(start, 10):
+            elem.a..(i)
             self.helper(elem, i+1, k, n-i, result)
             elem.pop()
     
@@ -32,12 +32,12 @@ class Solution(object):
             (3, 7),
             (3, 9),
         ]
-        for k, n in testCases:
+        ___ k, n __ testCases:
             print('k: %s' % (k))
             print('n: %s' % (n))
             result = self.combinationSum3(k, n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

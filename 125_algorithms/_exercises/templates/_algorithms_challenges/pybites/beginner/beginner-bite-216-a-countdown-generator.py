@@ -28,9 +28,9 @@ Good luck, have fun and keep it Python!
 """
 
 ___ countdown():
-    for i in range(100, 0, -1):
+    ___ i __ r..(100, 0, -1):
         yield i
 
 
-for x in countdown():
+___ x __ countdown():
     print(x)

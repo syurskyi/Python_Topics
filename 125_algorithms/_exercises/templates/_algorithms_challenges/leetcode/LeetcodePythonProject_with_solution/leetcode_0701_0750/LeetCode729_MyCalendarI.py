@@ -11,7 +11,7 @@ class Interval(object):
 class MyCalendar(object):
 
     ___ __init__(self):
-        self.intervals = []
+        self.intervals    # list
 
     ___ book(self, start, end):
         """
@@ -20,18 +20,18 @@ class MyCalendar(object):
         :rtype: bool
         """
         newInterval = Interval(start, end)
-        for i, interval in enumerate(self.intervals):
+        ___ i, interval __ enumerate(self.intervals):
             __ newInterval.end <= interval.start:
                 self.intervals.insert(i, newInterval)
-                return True
-            elif newInterval.start >= interval.end:
+                r.. True
+            ____ newInterval.start >= interval.end:
                 continue
-            else:
-                return False
-        self.intervals.append(newInterval)
-        return True
+            ____:
+                r.. False
+        self.intervals.a..(newInterval)
+        r.. True
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     cal = MyCalendar()
     print(cal.book(10, 20))
     print(cal.book(15, 25))

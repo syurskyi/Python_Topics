@@ -6,13 +6,13 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not s:
-            return ans
+        __ n.. s:
+            r.. ans
 
-        n = len(s)
-        _F = dict.fromkeys(s, 0)
+        n = l..(s)
+        _F = d...f..(s, 0)
 
-        for m in range(1, len(_F) + 1):
+        ___ m __ r..(1, l..(_F) + 1):
             F = _F.copy()
             left = right = 0
             kind = valid = 0
@@ -20,22 +20,22 @@ class Solution:
             while right < n:
                 __ kind <= m:
                     F[s[right]] += 1
-                    __ F[s[right]] == 1:
+                    __ F[s[right]] __ 1:
                         kind += 1
-                    __ F[s[right]] == k:
+                    __ F[s[right]] __ k:
                         valid += 1
 
                     right += 1
-                else:
-                    __ F[s[left]] == 1:
+                ____:
+                    __ F[s[left]] __ 1:
                         kind -= 1
-                    __ F[s[left]] == k:
+                    __ F[s[left]] __ k:
                         valid -= 1
                     F[s[left]] -= 1
 
                     left += 1
 
-                __ kind == valid == m and right - left > ans:
+                __ kind __ valid __ m and right - left > ans:
                     ans = right - left
 
-        return ans
+        r.. ans

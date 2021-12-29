@@ -19,32 +19,32 @@ names = ['John', 'Joshua', '1tim', 'Al', 'Benjamin', 'Franklin', 'George', 'Nage
 
 # Solution #1
 ___ filter_names_1(names):
-    filtered = []
+    filtered    # list
     cnt = 0
-    for name in names:
-        __ name.lower()[0] == IGNORE_CHAR or not name.isalpha():
+    ___ name __ names:
+        __ name.lower()[0] __ IGNORE_CHAR o. n.. name.isalpha():
             continue
-        __ name.lower()[0] == QUIT_CHAR:
+        __ name.lower()[0] __ QUIT_CHAR:
             break
         __ cnt < 5:
-            filtered.append(name)
-        else:
+            filtered.a..(name)
+        ____:
             break
         cnt += 1
-    return filtered
+    r.. filtered
 
 print(filter_names_1(names))
 
 # Solution 2 (using generator)
 ___ filter_names_2(names):
     cnt = 0
-    for name in names:
-        __ name.lower()[0] == IGNORE_CHAR or not name.isalpha():
+    ___ name __ names:
+        __ name.lower()[0] __ IGNORE_CHAR o. n.. name.isalpha():
             continue
-        __ name.lower()[0] == QUIT_CHAR:
+        __ name.lower()[0] __ QUIT_CHAR:
             break
         __ cnt < 5:
             cnt += 1
             yield name
-        else:
+        ____:
             break

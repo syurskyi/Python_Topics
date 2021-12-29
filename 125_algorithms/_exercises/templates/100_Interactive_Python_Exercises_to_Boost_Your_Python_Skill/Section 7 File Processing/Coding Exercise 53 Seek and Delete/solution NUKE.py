@@ -1,11 +1,11 @@
-import glob
-import os
+_______ glob
+_______ os
 
 text_files  glob.glob("*.txt")
 
-for text_file in text_files:
+___ text_file __ text_files:
     with open(text_file) as file:
         content  file.read().l..
 
-    __ "xxx" in content:
+    __ "xxx" __ content:
         os.remove(text_file)

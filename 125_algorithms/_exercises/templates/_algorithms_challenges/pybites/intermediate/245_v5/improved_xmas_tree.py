@@ -9,9 +9,9 @@ ___ generate_improved_xmas_tree(rows=10):
        For more information see the test and the bite description"""
     width = rows * 2 - 1
     out = [f'{STAR:^{width}}']
-    for n in range(rows):
-        out.append(f'{LEAF * (n * 2 + 1):^{width}}')
-    trunk = TRUNK * (rows + (1 __ rows % 2 == 0 else 0))
-    out.append(f'{trunk:^{width}}')
-    out.append(f'{trunk:^{width}}')
-    return '\n'.join(out)
+    ___ n __ r..(rows):
+        out.a..(f'{LEAF * (n * 2 + 1):^{width}}')
+    trunk = TRUNK * (rows + (1 __ rows % 2 __ 0 ____ 0))
+    out.a..(f'{trunk:^{width}}')
+    out.a..(f'{trunk:^{width}}')
+    r.. '\n'.join(out)

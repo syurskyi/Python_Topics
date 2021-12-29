@@ -1,7 +1,7 @@
-import os
-import urllib.request
-import re
-from collections import Counter
+_______ os
+_______ urllib.request
+_______ re
+____ collections _______ Counter
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")
@@ -29,16 +29,16 @@ ___ get_harry_most_common_word():
 
     
     text = re.sub(r'[^a-z0-9\s]','',text.lower())
-    words = text.split()
+    words = text.s..
 
-    word_counts = Counter(word for word in text.split() __ word not in stopwords)
-
-
-    return word_counts.most_common(1)[0]
+    word_counts = Counter(word ___ word __ text.s..  __ word n.. __ stopwords)
 
 
+    r.. word_counts.most_common(1)[0]
 
-__ __name__ == "__main__":
+
+
+__ __name__ __ "__main__":
 
     get_harry_most_common_word()
 

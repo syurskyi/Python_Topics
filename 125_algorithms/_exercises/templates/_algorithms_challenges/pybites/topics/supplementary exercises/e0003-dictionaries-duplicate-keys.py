@@ -11,5 +11,5 @@ print(country_capitals)
 
 # Reverse using dictionary comprehension
 
-rr = {capital:  country for country, capital in country_capitals.items()}
+rr = {capital:  country ___ country, capital __ country_capitals.items()}
 

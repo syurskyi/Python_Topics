@@ -7,6 +7,6 @@ ___ generate_xmas_tree(rows=10):
        *****"""
     width = rows*2 - 1
     tree = '\n'.join([f'{{:^{width}}}'.format('*' * (row*2 - 1))
-                      for row in range(1, rows + 1)])
+                      ___ row __ r..(1, rows + 1)])
 
-    return tree
+    r.. tree

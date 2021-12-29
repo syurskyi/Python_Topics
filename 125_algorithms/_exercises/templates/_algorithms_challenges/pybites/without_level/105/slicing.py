@@ -1,4 +1,4 @@
-from string import ascii_lowercase
+____ string _______ ascii_lowercase
 
 text = """
 One really nice feature of Python is polymorphism: using the same operation
@@ -16,14 +16,14 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: str = text) -> list:
+___ slice_and_dice(text: str = text) -> l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
-    results = []
+    results    # list
     lines = text.strip()
-    for line in lines.split("\n"):
+    ___ line __ lines.split("\n"):
         l = line.lstrip()
         __ l[:1].islower():
             word = line.split(' ')[-1].rstrip('.!')
-            results.append(word)
-    return results
+            results.a..(word)
+    r.. results

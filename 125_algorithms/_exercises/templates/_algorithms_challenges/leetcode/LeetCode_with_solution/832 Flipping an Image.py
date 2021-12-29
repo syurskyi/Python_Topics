@@ -26,7 +26,7 @@ Notes:
 1 <= A.length = A[0].length <= 20
 0 <= A[i][j] <= 1
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -34,9 +34,9 @@ class Solution:
         """
         one pass
         """
-        for row in A:
-            prev = list(row)
-            for i in range(len(row)):
+        ___ row __ A:
+            prev = l..(row)
+            ___ i __ r..(l..(row)):
                 row[i] = prev[-1-i] ^ 1
 
-        return A
+        r.. A

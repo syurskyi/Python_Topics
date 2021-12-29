@@ -12,17 +12,17 @@ class Solution:
     """
     ___ twoSum7(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A or len(A) < 2:
-            return NOT_FOUND
+        __ n.. A o. l..(A) < 2:
+            r.. NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             """
             if a - b = t
             => a = b + t
             """
-            __ A[i] + target in remaining:
-                return [
+            __ A[i] + target __ remaining:
+                r.. [
                     remaining[A[i] + target] + 1,
                     i + 1
                 ]
@@ -31,15 +31,15 @@ class Solution:
             if b - a = t
             => a = b - t
             """
-            __ A[i] - target in remaining:
-                return [
+            __ A[i] - target __ remaining:
+                r.. [
                     remaining[A[i] - target] + 1,
                     i + 1
                 ]
 
             remaining[A[i]] = i
 
-        return NOT_FOUND
+        r.. NOT_FOUND
 
 
 """
@@ -56,24 +56,24 @@ class Solution:
     """
     ___ twoSum7(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A or len(A) < 2:
-            return NOT_FOUND
+        __ n.. A o. l..(A) < 2:
+            r.. NOT_FOUND
 
         __ target < 0:
             target = -1 * target
 
-        n = len(A)
-        A = [(A[i], i) for i in range(n)]
+        n = l..(A)
+        A = [(A[i], i) ___ i __ r..(n)]
         A.sort()
 
         left = 0
-        for right in range(1, n):
+        ___ right __ r..(1, n):
             while left + 1 < right and A[right][0] - A[left][0] > target:
                 left += 1
-            __ A[right][0] - A[left][0] == target:
-                return sorted([
+            __ A[right][0] - A[left][0] __ target:
+                r.. s..([
                     A[left][1] + 1,
                     A[right][1] + 1
                 ])
 
-        return NOT_FOUND
+        r.. NOT_FOUND

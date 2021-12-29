@@ -9,27 +9,27 @@ class Solution(object):
         :type asteroids: List[int]
         :rtype: List[int]
         """
-        res = []
+        res    # list
         while True:
             changed = False
             i = 0
-            while i < len(asteroids):
-                __ i+1 <len(asteroids) and\
+            while i < l..(asteroids):
+                __ i+1 <l..(asteroids) and\
                     asteroids[i] > 0 and asteroids[i+1] < 0:
                     __ asteroids[i] + asteroids[i+1] != 0:
                         val = asteroids[i] __ asteroids[i]+asteroids[i+1] > 0\
-                            else asteroids[i+1]
-                        res.append(val) 
+                            ____ asteroids[i+1]
+                        res.a..(val)
                     i += 1
                     changed = True
-                else:
-                    res.append(asteroids[i])
+                ____:
+                    res.a..(asteroids[i])
                 i += 1
-            __ not changed:
+            __ n.. changed:
                 break
             asteroids = res
-            res = []
-        return res
+            res    # list
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -38,11 +38,11 @@ class Solution(object):
             [10, 2, -5],
             [-2, -1, 1, 2],
         ]
-        for asteroids in testCases:
+        ___ asteroids __ testCases:
             print('asteroids: %s' % asteroids)
             result = self.asteroidCollision(asteroids)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -29,10 +29,10 @@ ___ get_workout_motd(day):
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'
     """
-    for day in WORKOUT_SCHEDULE.keys():
-        return day.title()
-    __ day not in WORKOUT_SCHEDULE:
-        return INVALID_DAY
-    else:
+    ___ day __ WORKOUT_SCHEDULE.keys():
+        r.. day.t..
+    __ day n.. __ WORKOUT_SCHEDULE:
+        r.. INVALID_DAY
+    ____:
         print(WORKOUT_SCHEDULE.values[day])
-    return
+    r..

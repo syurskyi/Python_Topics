@@ -1,10 +1,10 @@
 ___ foolsDay(problems):
-    answer = []
-    for problem in range(problems):
+    answer    # list
+    ___ problem __ r..(problems):
         total = 0
-        numbers = raw_input().split()
-        for num in numbers:
+        numbers = raw_input().s..
+        ___ num __ numbers:
             total += int(num)*int(num)
-        answer.append(str(total))
+        answer.a..(s..(total))
     print(' '.join(answer))
 foolsDay(input())

@@ -1,24 +1,24 @@
 class Account:
 
     ___ __init__(self):
-        self._transactions = []
+        self._transactions    # list
 
     @property
     ___ balance(self):
-        return sum(self._transactions)
+        r.. s..(self._transactions)
 
     ___ __add__(self, amount):
-        self._transactions.append(amount)
+        self._transactions.a..(amount)
 
     ___ __sub__(self, amount):
-        self._transactions.append(-amount)
+        self._transactions.a..(-amount)
 
     # add 2 dunder methods here to turn this class 
     # into a 'rollback' context manager
 
 
     ___ __enter__(self):
-        return self
+        r.. self
     
     
     ___ __exit__(self,exception_type,exception_value,exception_traceback):

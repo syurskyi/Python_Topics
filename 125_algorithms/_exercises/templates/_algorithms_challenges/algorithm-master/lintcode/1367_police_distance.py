@@ -4,39 +4,39 @@ class Solution:
     @return: the distance of grid to the police
     """
     ___ policeDistance(self, matrix):
-        m, n = len(matrix), len(matrix)
+        m, n = l..(matrix), l..(matrix)
 
         POLICE = 1
         WALL = -1
         EMPTY = 0
 
-        ans = [[float('inf')] * n for _ in range(m)]
-        queue = []
+        ans = [[float('inf')] * n ___ _ __ r..(m)]
+        queue    # list
 
-        for x in range(m):
-            for y in range(n):
-                __ matrix[x][y] == WALL:
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ matrix[x][y] __ WALL:
                     ans[x][y] = -1
-                elif matrix[x][y] == POLICE:
+                ____ matrix[x][y] __ POLICE:
                     ans[x][y] = 0
-                    queue.append((x, y))
+                    queue.a..((x, y))
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y __ queue:
+            ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
             ):
                 _x = x + dx
                 _y = y + dy
 
-                __ not (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m and 0 <= _y < n):
                     continue
-                __ matrix[_x][_y] == WALL:
+                __ matrix[_x][_y] __ WALL:
                     continue
                 __ ans[_x][_y] <= ans[x][y] + 1:
                     continue
 
                 ans[_x][_y] = ans[x][y] + 1
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
 
-        return ans
+        r.. ans

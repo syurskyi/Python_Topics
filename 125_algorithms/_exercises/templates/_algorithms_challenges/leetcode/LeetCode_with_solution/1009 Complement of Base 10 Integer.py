@@ -46,4 +46,4 @@ class Solution:
             mask <<= 1
             mask += 1
 
-        return ~N & mask
+        r.. ~N & mask

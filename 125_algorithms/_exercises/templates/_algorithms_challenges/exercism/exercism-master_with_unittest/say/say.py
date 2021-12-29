@@ -40,18 +40,18 @@ class Say:
     ___ get_words(self, num):
         self.raise_if_invalid(num)
 
-        __ num == 0:
-            return 'zero'
-        else:
-            return ' '.join([self.convert_chunk_to_word(chunk, index)
-                             for index, chunk
-                             in enumerate(self.get_chunks(num))]).rstrip()
+        __ num __ 0:
+            r.. 'zero'
+        ____:
+            r.. ' '.join([self.convert_chunk_to_word(chunk, index)
+                             ___ index, chunk
+                             __ enumerate(self.get_chunks(num))]).rstrip()
 
     ___ get_chunks(self, num):
         reversed_string = str(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
-                            for i in range(0, len(reversed_string), 3)])[::-1]
-        return [int(x[::-1]) for x in reversed_chunks]
+                            ___ i __ r..(0, l..(reversed_string), 3)])[::-1]
+        r.. [int(x[::-1]) ___ x __ reversed_chunks]
 
     ___ convert_chunk_to_word(self, chunk, i):
         hundreds_digit, left_over = divmod(chunk, 100)
@@ -60,17 +60,17 @@ class Say:
         tens_digit, ones_digit = divmod(left_over, 10)
         __ 10 < left_over < 20:
             tens = self.convert_num_to_word(left_over)
-            ones = None
-        else:
+            ones = N..
+        ____:
             tens = self.convert_num_to_word(tens_digit * 10)
             ones = self.convert_num_to_word(ones_digit)
 
         word_chunk = self.format_chunk(hundreds, tens, ones)
-        units = self.get_units(len(self.get_chunks(self.num)) - 1 - i)
+        units = self.get_units(l..(self.get_chunks(self.num)) - 1 - i)
 
-        __ not word_chunk:
-            return ''
-        return ' '.join((word_chunk, units))
+        __ n.. word_chunk:
+            r.. ''
+        r.. ' '.join((word_chunk, units))
 
     ___ format_chunk(self, hundreds, tens, ones):
         chunk = ''
@@ -84,21 +84,21 @@ class Say:
             chunk += '-'
         __ ones:
             chunk += ones
-        return chunk
+        r.. chunk
 
     ___ raise_if_invalid(self, num):
-        __ num < 0 or num > 999999999999:
+        __ num < 0 o. num > 999999999999:
             raise AttributeError
 
     ___ get_units(self, d):
-        return self.convert_num_to_word(1000 ** d) __ 1000 ** d > 1 else ''
+        r.. self.convert_num_to_word(1000 ** d) __ 1000 ** d > 1 ____ ''
 
     ___ convert_num_to_word(self, num):
-        return self.NUM_TO_WORD[num]
+        r.. self.NUM_TO_WORD[num]
 
     ___ in_english(self):
-        return self._words
+        r.. self._words
 
 
 ___ say(num):
-    return Say(num).in_english()
+    r.. Say(num).in_english()

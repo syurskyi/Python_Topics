@@ -11,16 +11,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        res = []
-        for k, num0 in enumerate(findNums):
+        res    # list
+        ___ k, num0 __ enumerate(findNums):
             ind = nums.index(num0)
-            for i in range(ind, len(nums)):
+            ___ i __ r..(ind, l..(nums)):
                 __ nums[i] > num0:
-                    res.append(nums[i])
+                    res.a..(nums[i])
                     break
-            __ len(res) == k:
-                res.append(-1)
-        return res
+            __ l..(res) __ k:
+                res.a..(-1)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -29,10 +29,10 @@ class Solution(object):
                 [1, 3, 4, 2],
             ),
         ]
-        for findNums, nums in testCases:
+        ___ findNums, nums __ testCases:
             result = self.nextGreaterElement(findNums, nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

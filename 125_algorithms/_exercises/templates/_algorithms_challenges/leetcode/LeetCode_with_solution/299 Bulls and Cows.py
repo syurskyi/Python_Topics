@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -19,23 +19,23 @@ class Solution(object):
         cnt = defaultdict(int)
         A = 0
         B = 0
-        for c in secret:
+        ___ c __ secret:
             cnt[c] += 1
 
-        for i, v in enumerate(guess):
-            __ v == secret[i]:
+        ___ i, v __ enumerate(guess):
+            __ v __ secret[i]:
                 A += 1
                 __ cnt[v] > 0:
                     cnt[v] -= 1
-                else:
+                ____:
                     B -= 1
 
-            elif cnt[v] > 0:
+            ____ cnt[v] > 0:
                 B += 1
                 cnt[v] -= 1
 
-        return "%dA%dB" % (A, B)
+        r.. "%dA%dB" % (A, B)
 
 
-__ __name__ == "__main__":
-    assert Solution().getHint("0", "1") == "0A0B"
+__ __name__ __ "__main__":
+    ... Solution().getHint("0", "1") __ "0A0B"

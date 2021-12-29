@@ -1,6 +1,6 @@
 #Please use the pyglet library to create a Hello world application
 
-import pyglet
+_______ pyglet
 window  pyglet.window.Window()
 label  pyglet.text.Label('Hello, world',
                           font_name'Times New Roman',

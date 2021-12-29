@@ -7,33 +7,33 @@ Created on Mar 11, 2017
 class Solution(object):
     ___ removeInvalidParentheses(self, s):
         rmL, rmR = 0, 0
-        for c in s:
-            __ c == '(':
+        ___ c __ s:
+            __ c __ '(':
                 rmL += 1
-            elif c == ')':
+            ____ c __ ')':
                 __ rmL > 0:
                     rmL -= 1
-                else:
+                ____:
                     rmR += 1
         result = set()
         self.helper(s, 0, result, '', rmL, rmR, 0)
-        return list(result)
+        r.. l..(result)
     
     ___ helper(self, s, i, result, elem, rmL, rmR, openNum):
-        __ rmL < 0 or rmR < 0 or openNum < 0:
-            return
-        __ i == len(s):
-            __ rmL == 0 and rmR == 0 and openNum == 0:
+        __ rmL < 0 o. rmR < 0 o. openNum < 0:
+            r..
+        __ i __ l..(s):
+            __ rmL __ 0 and rmR __ 0 and openNum __ 0:
                 result.add(elem)
-            return
+            r..
         c = s[i]
-        __ c == '(':
+        __ c __ '(':
             self.helper(s, i+1, result, elem+c, rmL, rmR, openNum+1)
             self.helper(s, i+1, result, elem, rmL-1, rmR, openNum)
-        elif c == ')':
+        ____ c __ ')':
             self.helper(s, i+1, result, elem+c, rmL, rmR, openNum-1)
             self.helper(s, i+1, result, elem, rmL, rmR-1, openNum)
-        else:
+        ____:
             self.helper(s, i+1, result, elem+c, rmL, rmR, openNum)
     
     ___ test(self):
@@ -42,11 +42,11 @@ class Solution(object):
             '(a)())()',
             ')(',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.removeInvalidParentheses(s)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

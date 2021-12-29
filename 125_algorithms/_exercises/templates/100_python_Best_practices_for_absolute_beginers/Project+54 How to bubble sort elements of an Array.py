@@ -1,14 +1,14 @@
-from random import randint
+____ random _______ randint
 
 x  20
 y  []
 
-for i in range(20):
-    y.append(randint(1,20))
+___ i __ r..(20):
+    y.a..(randint(1,20))
 print(y)
 
-for i in range(x):
-    for j in range(x-i-1):
+___ i __ r..(x):
+    ___ j __ r..(x-i-1):
         __ y[j] > y[j + 1]:
             z  y[j]
             y[j]  y[j+1]

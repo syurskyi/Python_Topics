@@ -23,17 +23,17 @@ class Solution(object):
         :rtype: int
         """
         hashmap = {}
-        for emp in employees:
+        ___ emp __ employees:
             hashmap[emp.id] = hashmap.get(emp.id, []) + [emp]
-        queue = []
-        for emp in employees:
-            __ emp.id == id:
-                queue.append(emp)
+        queue    # list
+        ___ emp __ employees:
+            __ emp.id __ id:
+                queue.a..(emp)
         res = 0
         while queue:
             emp = queue.pop(0)
             subs = emp.subordinates
             res += emp.importance
-            for sub in subs:
+            ___ sub __ subs:
                 queue += hashmap.get(sub, [])
-        return res
+        r.. res

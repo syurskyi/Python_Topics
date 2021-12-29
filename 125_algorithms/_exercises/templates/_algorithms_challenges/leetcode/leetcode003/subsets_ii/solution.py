@@ -3,19 +3,19 @@ class Solution:
     # @return a list of lists of integer
     ___ subsetsWithDup(self, S):
         S.sort()
-        return self._subsets(S, len(S))
+        r.. self._subsets(S, l..(S))
 
     ___ _subsets(self, S, k):
-        __ k == 0:
-            return [[]]
-        else:
+        __ k __ 0:
+            r.. [[]]
+        ____:
             res = [[]]
-            for i in range(len(S)):
-                __ i > 0 and S[i] == S[i - 1]:
+            ___ i __ r..(l..(S)):
+                __ i > 0 and S[i] __ S[i - 1]:
                     pass
-                else:
+                ____:
                     rest_subsets = self._subsets(S[i + 1:], k - 1)
-                    for subset in rest_subsets:
+                    ___ subset __ rest_subsets:
                         subset.insert(0, S[i])
                     res += rest_subsets
-            return res
+            r.. res

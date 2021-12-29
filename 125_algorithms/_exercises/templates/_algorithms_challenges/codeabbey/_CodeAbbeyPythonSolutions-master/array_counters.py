@@ -2,10 +2,10 @@ M, N = map(int, input().split())
 
 results = [0]*N
 
-___ count(array):
-    for i in array:
+___ c.. array):
+    ___ i __ array:
         results[i-1] += 1
 
-array = list(map(int, input().split()))
-count(array)
+array = l..(map(int, input().split()))
+c.. array)
 print(*results)

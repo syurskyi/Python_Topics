@@ -1,16 +1,16 @@
-from __future__ import division
+____ __future__ _______ division
 
 
 class Rational(object):
     ___ __init__(self, numer, denom):
-        self.numer = None
-        self.denom = None
+        self.numer = N..
+        self.denom = N..
 
     ___ __eq__(self, other):
-        return self.numer == other.numer and self.denom == other.denom
+        r.. self.numer __ other.numer and self.denom __ other.denom
 
     ___ __repr__(self):
-        return '{}/{}'.format(self.numer, self.denom)
+        r.. '{}/{}'.format(self.numer, self.denom)
 
     ___ __add__(self, other):
         pass

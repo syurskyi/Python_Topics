@@ -1,4 +1,4 @@
-import pandas as pd
+_______ pandas as pd
 
 
 ___ series_simple_math(
@@ -22,16 +22,16 @@ ___ series_simple_math(
     :param number: The number to apply the operation to
     """
 
-    __ function == 'add':
+    __ function __ 'add':
         func = ser.add
-    elif function == 'sub':
+    ____ function __ 'sub':
         func = ser.sub
-    elif function == 'mul':
+    ____ function __ 'mul':
         func = ser.mul
-    else:
+    ____:
         func = ser.div
 
-    return func(number)
+    r.. func(number)
 
     
 
@@ -75,19 +75,19 @@ ___ complex_series_maths(
     Don't worry about None's and NaN and divide by zero.
         Let pandas do the work for you.
     """
-    __ function == 'add':
+    __ function __ 'add':
         func = ser_01.add
-    elif function == 'sub':
+    ____ function __ 'sub':
         func = ser_01.sub
-    elif function == 'mul':
+    ____ function __ 'mul':
         func = ser_01.mul
-    else:
+    ____:
         func = ser_01.div
 
-    return func(ser_02)
+    r.. func(ser_02)
 
 
-___ create_series_mask(ser: pd.Series, mask: list) -> pd.core.series.Series:
+___ create_series_mask(ser: pd.Series, mask: l..) -> pd.core.series.Series:
     """Write a trivial function to create a pandas series mask of a list
     of letters.
     Be careful, although this sounds very similar to the .mask() method,
@@ -127,7 +127,7 @@ ___ create_series_mask(ser: pd.Series, mask: list) -> pd.core.series.Series:
     :param ser: Series to perform operation on
     :param mask: The list of letters to be masked
     """
-    return ser.apply(lambda x: True __ x in mask else False)
+    r.. ser.apply(l.... x: True __ x __ mask ____ False)
 
 
 ___ custom_series_function(ser: pd.Series,
@@ -158,21 +158,21 @@ ___ custom_series_function(ser: pd.Series,
     
     relevant = ['min','25%','mean','50%','75%','max']
     ___ is_between(x):
-        for index in relevant:
+        ___ index __ relevant:
             lower,upper = stats[index] - within,stats[index] + within
             __ lower <= x <= mean:
-                return True
+                r.. True
 
-        return False
+        r.. False
     
-    mask = pd.Series([False] * len(ser))
-    for stat in relevant:
+    mask = pd.Series([False] * l..(ser))
+    ___ stat __ relevant:
         mask |= ser.between(stats.loc[stat] - within,stats.loc[stat] + within)
 
 
 
 
-    return ser[mask]
+    r.. ser[mask]
 
 
 

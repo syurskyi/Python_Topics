@@ -12,30 +12,30 @@ class Solution:
         :type target: int
         :rtype: List[str]
         """
-        ans = []
+        ans    # list
 
-        __ not s:
-            return ans
+        __ n.. s:
+            r.. ans
 
         self.dfs(s, 0, target, 0, 0, ans, [])
-        return ans
+        r.. ans
 
     ___ dfs(self, s, start, target, val, multi, ans, path):
-        __ start == len(s) and target == val:
-            ans.append(''.join(path))
-            return
-        __ start >= len(s):
-            return
+        __ start __ l..(s) and target __ val:
+            ans.a..(''.join(path))
+            r..
+        __ start >= l..(s):
+            r..
 
-        for i in range(start, len(s)):
-            __ i > start and s[start] == '0':
+        ___ i __ r..(start, l..(s)):
+            __ i > start and s[start] __ '0':
                 # only allow i == start and its `0`
                 break
 
             sa = s[start:i + 1]
             a = int(sa)
 
-            __ start == 0:
+            __ start __ 0:
                 self.dfs(s, i + 1, target, a, a, ans, [sa])
                 continue
 

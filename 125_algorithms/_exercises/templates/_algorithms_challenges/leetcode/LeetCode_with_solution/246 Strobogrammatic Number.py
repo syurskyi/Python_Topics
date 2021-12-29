@@ -17,11 +17,11 @@ class Solution:
         }
 
     ___ isStrobogrammatic(self, num):
-        for i in xrange(len(num)/2+1):
-            __ num[i] not in self.map or self.map[num[i]] != num[len(num)-1-i]:
-                return False
+        ___ i __ xrange(l..(num)/2+1):
+            __ num[i] n.. __ self.map o. self.map[num[i]] != num[l..(num)-1-i]:
+                r.. False
 
-        return True
+        r.. True
 
     ___ isStrobogrammatic_tedious(self, num):
         """
@@ -29,12 +29,12 @@ class Solution:
         :type num: str
         :rtype: bool
         """
-        num = list(num)
-        rev = []  # reverse
-        for digit in reversed(num):
+        num = l..(num)
+        rev    # list  # reverse
+        ___ digit __ reversed(num):
             try:
-                rev.append(self.map[digit])
+                rev.a..(self.map[digit])
             except KeyError:
-                return False
+                r.. False
 
-        return num == rev
+        r.. num __ rev

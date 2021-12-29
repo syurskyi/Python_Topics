@@ -4,8 +4,8 @@ class Solution(object):
     :type words: List[str]
     :rtype: bool
     """
-    for i in range(0, len(words)):
-      for j in range(0, len(words[i])):
-        __ j >= len(words) or i >= len(words[j]) or words[j][i] != words[i][j]:
-          return False
-    return True
+    ___ i __ r..(0, l..(words)):
+      ___ j __ r..(0, l..(words[i])):
+        __ j >= l..(words) o. i >= l..(words[j]) o. words[j][i] != words[i][j]:
+          r.. False
+    r.. True

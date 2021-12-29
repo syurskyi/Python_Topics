@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from proverb import proverb
+____ proverb _______ proverb
 
 
 class ProverbTest(unittest.TestCase):
@@ -58,5 +58,5 @@ class ProverbTest(unittest.TestCase):
                 qualifier='horseshoe'), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

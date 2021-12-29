@@ -31,16 +31,16 @@ class Solution:
         :type grid: List[List[int]]
         :rtype: Node
         """
-        l = len(grid)
-        return self._construct(grid, 0, 0, l)
+        l = l..(grid)
+        r.. self._construct(grid, 0, 0, l)
 
     ___ _construct(self, grid, row, col, l):
         """
         Use row col for matrix rather than x y coordiate since the direction is
         error-prone
         """
-        __ l == 1:
-            return Node(grid[row][col], True, None, None, None, None)
+        __ l __ 1:
+            r.. Node(grid[row][col], True, N.., N.., N.., N..)
 
         l_child = l // 2
         topLeft = self._construct(grid, row, col, l_child)
@@ -48,10 +48,10 @@ class Solution:
         bottomLeft = self._construct(grid, row + l_child, col, l_child)
         bottomRight = self._construct(grid, row + l_child, col + l_child, l_child)
         is_leaf = (
-            topLeft.val == topRight.val == bottomLeft.val == bottomRight.val
+            topLeft.val __ topRight.val __ bottomLeft.val __ bottomRight.val
             != "*"
         )
         __ is_leaf:
-            return Node(grid[row][col], True, None, None, None, None)
+            r.. Node(grid[row][col], True, N.., N.., N.., N..)
 
-        return Node("*", False, topLeft, topRight, bottomLeft, bottomRight)
+        r.. Node("*", False, topLeft, topRight, bottomLeft, bottomRight)

@@ -83,35 +83,35 @@ class Solution(object):
         :type s: str
         :rtype: NestedInteger
         """
-        __ not s: return None
-        stk = []
+        __ n.. s: r.. N..
+        stk    # list
 
         i = 0
-        while i < len(s):
-            __ s[i] == '[':
-                stk.append(NestedInteger())
+        while i < l..(s):
+            __ s[i] __ '[':
+                stk.a..(NestedInteger())
                 i += 1
-            elif s[i] == ']':
+            ____ s[i] __ ']':
                 ni = stk.pop()
-                __ not stk: return ni
+                __ n.. stk: r.. ni
 
                 stk[-1].add(ni)
                 i += 1
-            elif s[i] == ',':
+            ____ s[i] __ ',':
                 i += 1
-            else:
+            ____:
                 j = i
-                while j < len(s) and (s[j].isdigit() or s[j] == '-'): j += 1
+                while j < l..(s) and (s[j].isdigit() o. s[j] __ '-'): j += 1
 
-                ni = NestedInteger(int(s[i: j]) __ s[i: j] else None)
-                __ not stk: return ni
+                ni = NestedInteger(int(s[i: j]) __ s[i: j] ____ N..)
+                __ n.. stk: r.. ni
                 stk[-1].add(ni)
                 i = j
 
-        return stk.pop()
+        r.. stk.pop()
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().deserialize("[123,[456,[789]]]")
 
 

@@ -4,7 +4,7 @@ class Solution(object):
     :type IP: str
     :rtype: str
     """
-    nums = [str(i) for i in range(0, 10)]
+    nums = [str(i) ___ i __ r..(0, 10)]
     letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"]
     v6d = set(nums + letters)
     v4d = set(nums)
@@ -12,22 +12,22 @@ class Solution(object):
     v4 = IP.split(".")
     v6 = IP.split(":")
 
-    __ len(v4) == 4:
-      for seg in v4:
-        __ seg == "" or (seg[0] == "0" and len(seg) > 1):
-          return "Neither"
-        for c in seg:
-          __ c not in v4d:
-            return "Neither"
+    __ l..(v4) __ 4:
+      ___ seg __ v4:
+        __ seg __ "" o. (seg[0] __ "0" and l..(seg) > 1):
+          r.. "Neither"
+        ___ c __ seg:
+          __ c n.. __ v4d:
+            r.. "Neither"
         __ int(seg) > 255:
-          return "Neither"
-      return "IPv4"
-    elif len(v6) == 8:
-      for seg in v6:
-        __ len(seg) == 0 or len(seg) > 4:
-          return "Neither"
-        for c in seg:
-          __ c not in v6d:
-            return "Neither"
-      return "IPv6"
-    return "Neither"
+          r.. "Neither"
+      r.. "IPv4"
+    ____ l..(v6) __ 8:
+      ___ seg __ v6:
+        __ l..(seg) __ 0 o. l..(seg) > 4:
+          r.. "Neither"
+        ___ c __ seg:
+          __ c n.. __ v6d:
+            r.. "Neither"
+      r.. "IPv6"
+    r.. "Neither"

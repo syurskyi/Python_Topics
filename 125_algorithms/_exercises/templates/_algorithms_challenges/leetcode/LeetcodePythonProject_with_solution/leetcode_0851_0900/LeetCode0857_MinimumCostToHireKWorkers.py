@@ -11,29 +11,29 @@ class Solution(object):
         :type K: int
         :rtype: float
         """
-        import heapq
+        _______ heapq
         k = K
-        workers = sorted([float(w)/q, q] for w, q in zip(wage, quality))
+        workers = s..([float(w)/q, q] ___ w, q __ zip(wage, quality))
         res = float('inf')
         qsum = 0
-        heap = []
-        for r, q, in workers:
+        heap    # list
+        ___ r, q, __ workers:
             heapq.heappush(heap, -q)
             qsum += q
-            __ len(heap) > k:
+            __ l..(heap) > k:
                 qsum += heapq.heappop(heap)
-            __ len(heap) == k:
-                res = min(res, qsum*r)
-        return res
+            __ l..(heap) __ k:
+                res = m..(res, qsum*r)
+        r.. res
     
     ___ test(self):
         testCases = [
             
         ]
-        for quality, wage, k in testCases:
+        ___ quality, wage, k __ testCases:
             res = self.mincostToHireWorkers(quality, wage, k)
             print('res: %s' % res)
             print('-='*30 + '-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

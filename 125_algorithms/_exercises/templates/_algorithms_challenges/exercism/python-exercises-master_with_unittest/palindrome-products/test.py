@@ -11,9 +11,9 @@ palindrome itself, and factors is an iterable containing both factors of the
 palindrome in arbitrary order.
 """
 
-import unittest
+_______ unittest
 
-from palindrome_products import smallest_palindrome, largest_palindrome
+____ palindrome_products _______ smallest_palindrome, largest_palindrome
 
 
 class PalindromesTests(unittest.TestCase):
@@ -43,5 +43,5 @@ class PalindromesTests(unittest.TestCase):
         self.assertEqual(set(factors), {101, 101})
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

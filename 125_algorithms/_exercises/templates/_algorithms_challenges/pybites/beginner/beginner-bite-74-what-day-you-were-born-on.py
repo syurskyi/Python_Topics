@@ -4,12 +4,12 @@ For example Bob and Julian's birthdays return Saturday and Monday (that's why Bo
 For this Bite you want to look at the datetime and calendar modules. Have fun!
 '''
 
-import calendar
-import datetime
+_______ calendar
+_______ datetime
 
 ___ weekday_of_birth_date(date):
     """Takes a date object and returns the corresponding weekday string"""
-    return (calendar.day_name[date.weekday()])
+    r.. (calendar.day_name[date.weekday()])
 
 d = datetime.date(1984, 4, 4)
 print(weekday_of_birth_date(d))

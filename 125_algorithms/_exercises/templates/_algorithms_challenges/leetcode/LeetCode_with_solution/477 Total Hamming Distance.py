@@ -37,17 +37,17 @@ class Solution:
         ret = 0
         while any(nums):  # any not 0
             z, o = 0, 0
-            for i in range(len(nums)):
-                __ nums[i] & 1 == 0:
+            ___ i __ r..(l..(nums)):
+                __ nums[i] & 1 __ 0:
                     o += 1
-                else:
+                ____:
                     z += 1
                 nums[i] >>= 1
 
             ret += z * o
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().totalHammingDistance([4, 14, 2]) == 6
+__ __name__ __ "__main__":
+    ... Solution().totalHammingDistance([4, 14, 2]) __ 6

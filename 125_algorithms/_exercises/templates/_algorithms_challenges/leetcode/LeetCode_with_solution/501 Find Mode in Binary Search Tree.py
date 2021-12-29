@@ -35,8 +35,8 @@ implicit stack space incurred due to recursion does not count).
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -51,30 +51,30 @@ class Solution:
         :rtype: List[int]
         """
         ret = [[], 0]  # [results, length]
-        self.find_mode(root, [None, 0], ret, False)
-        self.find_mode(root, [None, 0], ret, True)
-        return ret[0]
+        self.find_mode(root, [N.., 0], ret, False)
+        self.find_mode(root, [N.., 0], ret, True)
+        r.. ret[0]
 
     ___ find_mode(self, root, prev, ret, collect):
         """
         prev: [previous_value, count]. Need to survice the call stack
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.find_mode(root.left, prev, ret, collect)
 
-        __ prev[0] == root.val:
+        __ prev[0] __ root.val:
             prev[1] += 1
-        else:
+        ____:
             prev[1] = 1
         prev[0] = root.val
 
-        __ not collect:
+        __ n.. collect:
             ret[1] = max(ret[1], prev[1])
-        else:
-            __ prev[1] == ret[1]:
-                ret[0].append(root.val)
+        ____:
+            __ prev[1] __ ret[1]:
+                ret[0].a..(root.val)
 
         self.find_mode(root.right, prev, ret, collect)
 
@@ -86,27 +86,27 @@ class Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ not root:
-            return []
+        __ n.. root:
+            r.. []
 
         ret = [0, []]
         self.find_mode_error(root, root.val, ret)
-        return ret[1]
+        r.. ret[1]
 
     ___ find_mode_error(self, root, target, ret):
         cur = 0
-        __ not root:
-            return cur
+        __ n.. root:
+            r.. cur
 
-        __ root.val == target:
+        __ root.val __ target:
             cur += 1
             cur += self.find_mode_error(root.left, root.val, ret)
             cur += self.find_mode_error(root.right, root.val, ret)
             __ cur > ret[0]:
                 ret[0], ret[1] = cur, [target]
-            elif cur == ret[0]:
-                ret[1].append(target)
-        else:
+            ____ cur __ ret[0]:
+                ret[1].a..(target)
+        ____:
             self.find_mode_error(root, root.val, ret)
 
-        return cur
+        r.. cur

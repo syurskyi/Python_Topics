@@ -1,9 +1,9 @@
 Num = int(input())
-listo = []
-while len(listo) < Num:
+listo    # list
+while l..(listo) < Num:
     number = input()
-    listo = number.split()
+    listo = number.s..
 result = 0
-for i in listo:
+___ i __ listo:
     result = result + int(i)
 print(result)

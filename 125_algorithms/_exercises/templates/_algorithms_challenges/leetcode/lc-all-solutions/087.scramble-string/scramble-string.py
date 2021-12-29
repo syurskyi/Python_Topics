@@ -5,17 +5,17 @@ class Solution(object):
     :type s2: str
     :rtype: bool
     """
-    n = len(s1)
-    m = len(s2)
-    __ sorted(s1) != sorted(s2):
-      return False
+    n = l..(s1)
+    m = l..(s2)
+    __ s..(s1) != s..(s2):
+      r.. False
 
-    __ n < 4 or s1 == s2:
-      return True
+    __ n < 4 o. s1 __ s2:
+      r.. True
 
-    for i in range(1, n):
+    ___ i __ r..(1, n):
       __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]):
-        return True
+        r.. True
       __ self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:-i]):
-        return True
-    return False
+        r.. True
+    r.. False

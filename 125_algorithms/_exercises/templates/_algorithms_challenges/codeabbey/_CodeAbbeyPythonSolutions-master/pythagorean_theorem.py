@@ -1,19 +1,19 @@
-import math
+_______ math
 
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_triangle_type(side1, side2, side3):
     hypotenuse = math.sqrt(side1**2 + side2**2)
     __(side3 < hypotenuse):
-        return "A"
-    elif(side3 > hypotenuse):
-        return "O"
-    else:
-        return "R"
+        r.. "A"
+    ____(side3 > hypotenuse):
+        r.. "O"
+    ____:
+        r.. "R"
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     side1, side2, side3 = map(int, input().split())
-    results.append(get_triangle_type(side1,side2, side3))
+    results.a..(get_triangle_type(side1,side2, side3))
 
 print(*results)

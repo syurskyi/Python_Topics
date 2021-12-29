@@ -7,8 +7,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -21,33 +21,33 @@ class Solution(object):
         l = self.leftmost(root, 0)
         r = self.rightmost(root, 0)
 
-        ret = [[] for _ in xrange(r-l-1)]
+        ret = [[] ___ _ __ xrange(r-l-1)]
         self.bfs(root, -l-1, ret)
-        return ret
+        r.. ret
 
     ___ bfs(self, cur, col, ret):
-        q = []
+        q    # list
         __ cur:
-            q.append((cur, col))
+            q.a..((cur, col))
 
         while q:
-            l = len(q)
-            for i in xrange(l):  # avoid non-stop access as in `for elt in q`
+            l = l..(q)
+            ___ i __ xrange(l):  # avoid non-stop access as in `for elt in q`
                 v, c = q[i]
-                ret[c].append(v.val)
-                __ v.left: q.append((v.left, c-1))
-                __ v.right: q.append((v.right, c+1))
+                ret[c].a..(v.val)
+                __ v.left: q.a..((v.left, c-1))
+                __ v.right: q.a..((v.right, c+1))
 
             q = q[l:]
 
     ___ leftmost(self, cur, l):
-        __ not cur: return l
-        return min(self.leftmost(cur.left, l-1), self.leftmost(cur.right, l+1))
+        __ n.. cur: r.. l
+        r.. m..(self.leftmost(cur.left, l-1), self.leftmost(cur.right, l+1))
 
     ___ rightmost(self, cur, r):
-        __ not cur: return r
-        return max(self.rightmost(cur.left, r-1), self.rightmost(cur.right, r+1))
+        __ n.. cur: r.. r
+        r.. max(self.rightmost(cur.left, r-1), self.rightmost(cur.right, r+1))
 
     ___ sidemost(self, cur, p, f):
-        __ not cur: return p
-        return f(self.sidemost(cur.left, p-1, f), self.sidemost(cur.right, p+1, f))
+        __ n.. cur: r.. p
+        r.. f(self.sidemost(cur.left, p-1, f), self.sidemost(cur.right, p+1, f))

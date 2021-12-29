@@ -18,12 +18,12 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        import random
+        _______ random
         count = 0
         res = -1
-        for i, num in enumerate(self.nums):
-            __ target == num:
-                __ random.randint(0, count) == 0:
+        ___ i, num __ enumerate(self.nums):
+            __ target __ num:
+                __ random.randint(0, count) __ 0:
                     res = i
                 count += 1
-        return res
+        r.. res

@@ -6,30 +6,30 @@ Created on Mar 8, 2017
 
 class Solution(object):
     ___ wordPatternMatch(self, pattern, s):
-        __ not pattern and not s: return True
-        __ not pattern or not s: return False
+        __ n.. pattern and n.. s: r.. True
+        __ n.. pattern o. n.. s: r.. False
         hashmap = {}
-        return self.helper(pattern, s, 0, 0, hashmap, set())
+        r.. self.helper(pattern, s, 0, 0, hashmap, set())
          
     ___ helper(self, pattern, s, i, j, hashmap, hashset):
-        __ i == len(pattern) and j == len(s):
-            return True
-        __ i >= len(pattern) or j >= len(s):
-            return False
+        __ i __ l..(pattern) and j __ l..(s):
+            r.. True
+        __ i >= l..(pattern) o. j >= l..(s):
+            r.. False
         c = pattern[i]
-        for k in range(j+1, len(s)+1):
+        ___ k __ r..(j+1, l..(s)+1):
             sub = s[j:k]
-            __ c not in hashmap and sub not in hashset:
+            __ c n.. __ hashmap and sub n.. __ hashset:
                 hashmap[c] = sub
                 hashset.add(sub)
                 __ self.helper(pattern, s, i+1, k, hashmap, hashset):
-                    return True
+                    r.. True
                 del hashmap[c]
                 hashset.remove(sub)
-            elif c in hashmap and hashmap[c] == sub:
+            ____ c __ hashmap and hashmap[c] __ sub:
                 __ self.helper(pattern, s, i+1, k, hashmap, hashset):
-                    return True
-        return False
+                    r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -38,12 +38,12 @@ class Solution(object):
             ('aabb', 'xyzabcxzyabc'),
             ('d', 'ef'),
         ]
-        for pattern, s in testCases:
+        ___ pattern, s __ testCases:
             print('pattern: %s' % (pattern))
             print('s: %s' % (s))
             result = self.wordPatternMatch(pattern, s)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

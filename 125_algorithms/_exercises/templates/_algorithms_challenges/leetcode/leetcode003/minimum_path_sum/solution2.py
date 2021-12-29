@@ -9,24 +9,24 @@ class Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):
-        n = len(grid)
-        m = len(grid[0])
-        t = [[-1 for i in range(m)] for j in range(n)]
-        return self.min_path_sum_aux(grid, m - 1, n - 1, t)
+        n = l..(grid)
+        m = l..(grid[0])
+        t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
+        r.. self.min_path_sum_aux(grid, m - 1, n - 1, t)
 
     ___ min_path_sum_aux(self, grid, x, y, t):
-        __ x == 0 and y == 0:
-            return grid[y][x]
-        elif t[y][x] != -1:
-            return t[y][x]
-        elif x == 0 and y > 0:
+        __ x __ 0 and y __ 0:
+            r.. grid[y][x]
+        ____ t[y][x] != -1:
+            r.. t[y][x]
+        ____ x __ 0 and y > 0:
             t[y][x] = grid[y][x] + self.min_path_sum_aux(grid, x, y - 1, t)
-            return t[y][x]
-        elif x > 0 and y == 0:
+            r.. t[y][x]
+        ____ x > 0 and y __ 0:
             t[y][x] = grid[y][x] + self.min_path_sum_aux(grid, x - 1, y, t)
-            return t[y][x]
-        else:
+            r.. t[y][x]
+        ____:
             a = self.min_path_sum_aux(grid, x - 1, y, t)
             b = self.min_path_sum_aux(grid, x, y - 1, t)
-            t[y][x] = grid[y][x] + min(a, b)
-            return t[y][x]
+            t[y][x] = grid[y][x] + m..(a, b)
+            r.. t[y][x]

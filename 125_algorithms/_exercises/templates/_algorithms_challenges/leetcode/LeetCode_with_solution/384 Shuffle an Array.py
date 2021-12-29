@@ -16,7 +16,7 @@ solution.reset();
 // Returns the random shuffling of array [1,2,3].
 solution.shuffle();
 """
-import random
+_______ random
 
 __author__ = 'Daniel'
 
@@ -34,7 +34,7 @@ class Solution(object):
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        return list(self.original)
+        r.. l..(self.original)
 
     ___ shuffle(self):
         """
@@ -44,12 +44,12 @@ class Solution(object):
         :rtype: List[int]
         """
         lst = self.reset()
-        n = len(lst)
-        for i in xrange(n):
+        n = l..(lst)
+        ___ i __ xrange(n):
             j = random.randrange(i, n)
             lst[i], lst[j] = lst[j], lst[i]
 
-        return lst
+        r.. lst
 
 
 # Your Solution object will be instantiated and called as such:

@@ -6,7 +6,7 @@ Created on Aug 20, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -17,55 +17,55 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ not root: return []
-        __ not root.left and not root.right: return [root.val]
+        __ n.. root: r.. []
+        __ n.. root.left and n.. root.right: r.. [root.val]
         leftBoundary = self.getLeft(root)
-        leaves = []
+        leaves    # list
         self.getLeaves(root, leaves)
         rightBoundary = self.getRight(root)
-        return leftBoundary + leaves + rightBoundary
+        r.. leftBoundary + leaves + rightBoundary
     
     ___ getLeft(self, root):
         result = [root.val]
         root = root.left
         while root:
-            __ root.left or root.right:
-                result.append(root.val)
+            __ root.left o. root.right:
+                result.a..(root.val)
             __ root.left:
                 root = root.left
-            else:
+            ____:
                 root = root.right
-        return result
+        r.. result
     
     ___ getLeaves(self, root, leaves):
-        __ not root: return
-        __ not root.left and not root.right:
-            leaves.append(root.val)
-            return
+        __ n.. root: r..
+        __ n.. root.left and n.. root.right:
+            leaves.a..(root.val)
+            r..
         self.getLeaves(root.left, leaves)
         self.getLeaves(root.right, leaves)
     
     ___ getRight(self, root):
-        result = []
+        result    # list
         root = root.right
         while root:
-            __ root.left or root.right:
-                result.append(root.val)
+            __ root.left o. root.right:
+                result.a..(root.val)
             __ root.right:
                 root = root.right
-            else:
+            ____:
                 root = root.left
         result.reverse()
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
-            TreeNode(1, None, TreeNode(2, TreeNode(3), TreeNode(4))),
+            TreeNode(1, N.., TreeNode(2, TreeNode(3), TreeNode(4))),
         ]
-        for root in testCases:
+        ___ root __ testCases:
             res = self.boundaryOfBinaryTree(root)
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

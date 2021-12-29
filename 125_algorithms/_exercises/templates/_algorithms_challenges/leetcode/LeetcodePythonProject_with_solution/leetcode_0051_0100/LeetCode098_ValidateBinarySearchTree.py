@@ -8,8 +8,8 @@ Created on Jan 30, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ isValidBST(self, root):
@@ -17,20 +17,20 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root: return True
-        stack = []
+        __ n.. root: r.. True
+        stack    # list
         prev = float('-inf')
         node = root
         while node:
-            stack.append(node)
+            stack.a..(node)
             node = node.left
         while stack:
             node = stack.pop()
             __ prev >= node.val:
-                return False
+                r.. False
             prev = node.val
             node0 = node.right
             while node0:
-                stack.append(node0)
+                stack.a..(node0)
                 node0 = node0.left
-        return True
+        r.. True

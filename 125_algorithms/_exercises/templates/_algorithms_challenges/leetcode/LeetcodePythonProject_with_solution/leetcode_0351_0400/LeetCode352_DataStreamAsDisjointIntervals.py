@@ -10,25 +10,25 @@ class Interval(object):
 
 class SummaryRanges(object):
     ___ __init__(self):
-        self.intervals = []
+        self.intervals    # list
     
     ___ addNum(self, val):
-        __ not self.intervals:
-            self.intervals.append(Interval(val, val))
-        else:
-            result = []
+        __ n.. self.intervals:
+            self.intervals.a..(Interval(val, val))
+        ____:
+            result    # list
             newInterval = Interval(val, val)
-            for interval in self.intervals:
+            ___ interval __ self.intervals:
                 __ newInterval.end < interval.start-1:
-                    result.append(newInterval)
+                    result.a..(newInterval)
                     newInterval = interval
-                elif newInterval.start <= interval.end+1:
-                    newInterval = Interval(min(interval.start, newInterval.start),\
+                ____ newInterval.start <= interval.end+1:
+                    newInterval = Interval(m..(interval.start, newInterval.start),\
                         max(interval.end, newInterval.end))
-                else:
-                    result.append(interval)
-            result.append(newInterval)
+                ____:
+                    result.a..(interval)
+            result.a..(newInterval)
             self.intervals = result
     
     ___ getIntervals(self):
-        return self.intervals
+        r.. self.intervals

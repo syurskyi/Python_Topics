@@ -1,19 +1,19 @@
-import pytest
+_______ pytest
 
-from tribe import get_top_books, load_page
+____ tribe _______ get_top_books, load_page
 
 
 @pytest.fixture(scope='module')
 ___ content():
     """Load content once for all test"""
-    return load_page()
+    r.. load_page()
 
 
 ___ test_return(content):
     books = get_top_books(content=content)
-    assert len(books) == 16
-    assert type(books) == list
-    assert all(type(book) == tuple for book in books)
+    ... l..(books) __ 16
+    ... type(books) __ l..
+    ... a..(type(book) __ tuple ___ book __ books)
 
 
 @pytest.mark.parametrize("title, count", [
@@ -37,4 +37,4 @@ ___ test_return(content):
 ])
 ___ test_counts(content, title, count):
     books = get_top_books(content=content)
-    assert (title, count) in books
+    ... (title, count) __ books

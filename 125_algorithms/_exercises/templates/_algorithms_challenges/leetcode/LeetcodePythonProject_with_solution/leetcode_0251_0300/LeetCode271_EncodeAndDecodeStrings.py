@@ -11,7 +11,7 @@ class Codec(object):
         :type strs: List[str]
         :rtype: str
         """
-        return ''.join('%d:%s' % (len(s), s) for s in strs)
+        r.. ''.join('%d:%s' % (l..(s), s) ___ s __ strs)
     
     ___ decode(self, s):
         """Decodes a single string to a list of strings.
@@ -19,28 +19,28 @@ class Codec(object):
         :type s: str
         :rtype: List[str]
         """
-        arr = []
-        n = len(s)
+        arr    # list
+        n = l..(s)
         prev = 0
         i = 0
         while i < n:
-            __ s[i] == ':':
+            __ s[i] __ ':':
                 sub = s[prev:i]
                 j = i
                 while j < n and s[j] != '#':
                     j += 1
-                __ s[i+1:j].isdigit() and int(s[i+1:j]) == len(sub):
-                    arr.append(sub)
+                __ s[i+1:j].isdigit() and int(s[i+1:j]) __ l..(sub):
+                    arr.a..(sub)
                     i = j
                     prev = i+1
             i += 1
-        return arr
+        r.. arr
     
     ___ decode_orig(self, s):
-        result = []
+        result    # list
         i = 0
-        while i < len(s):
+        while i < l..(s):
             j = s.find(':', i)
             i = j+1+int(s[i:j])
-            result.append(s[j+1:i])
-        return result
+            result.a..(s[j+1:i])
+        r.. result

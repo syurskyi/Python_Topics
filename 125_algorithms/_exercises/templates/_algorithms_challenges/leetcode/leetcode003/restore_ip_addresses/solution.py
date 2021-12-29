@@ -12,34 +12,34 @@ class Solution:
     # @param {string} s
     # @return {string[]}
     ___ restoreIpAddresses(self, s):
-        res = []
-        cand = []
+        res    # list
+        cand    # list
         self.restore_ip(s, cand, res)
-        return res
+        r.. res
 
     ___ restore_ip(self, s, cand, res):
         # If more than 4 parts, or 4 parts already but with remaining
         # unprocessed sub-string
-        __ len(cand) > 4 or len(cand) == 4 and s:
-            return
-        elif not s and len(cand) == 4:
-                res.append('.'.join(cand))
-        else:
-            k = min(3, len(s))  # Ensures s[:j + 1] won't be duplicate
-            for j in range(k):
+        __ l..(cand) > 4 o. l..(cand) __ 4 and s:
+            r..
+        ____ n.. s and l..(cand) __ 4:
+                res.a..('.'.join(cand))
+        ____:
+            k = m..(3, l..(s))  # Ensures s[:j + 1] won't be duplicate
+            ___ j __ r..(k):
                 b = s[:j + 1]
                 __ self.is_valid_byte(b):
-                    cand.append(b)
+                    cand.a..(b)
                     self.restore_ip(s[j + 1:], cand, res)
                     cand.pop()
 
     ___ is_valid_byte(self, b):
-        __ b == '0':
-            return True
-        elif b.startswith('0'):
-            return False
-        else:
-            return int(b) < 256
+        __ b __ '0':
+            r.. True
+        ____ b.startswith('0'):
+            r.. False
+        ____:
+            r.. int(b) < 256
 
 a = "25525511135"
 b = "010010"

@@ -1,7 +1,7 @@
-from collections import Counter
-from bs4 import BeautifulSoup
-import requests
-import re
+____ collections _______ Counter
+____ bs4 _______ BeautifulSoup
+_______ requests
+_______ re
 
 COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
                   "common-domains.html")
@@ -15,24 +15,24 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     soup = BeautifulSoup(response.text, 'html.parser')
     right_table = soup.find('div', TARGET_DIV)
 
-    domains = []
-    for row in right_table.findAll('tr'):
+    domains    # list
+    ___ row __ right_table.findAll('tr'):
         cells = row.findAll('td')
-        domains.append(cells[2].find(text=True))
+        domains.a..(cells[2].find(text=True))
 
-    return domains
+    r.. domains
 
 
 ___ get_most_common_domains(emails, common_domains_ N..
     """Given a list of emails return the most common domain names,
        ignoring the list (or set) of common_domains"""
-    __ common_domains is None:
+    __ common_domains __ N..
         common_domains = get_common_domains()
 
-    l = []
-    for email in emails:
+    l    # list
+    ___ email __ emails:
         match = re.findall(r'@(\w+.\w+)', email)[0]
-        __ match not in get_common_domains():
-            l.append(match)
+        __ match n.. __ get_common_domains():
+            l.a..(match)
 
-    return sorted(list(Counter(l).items()), reverse=True)
+    r.. s..(l..(Counter(l).items()), r.._T..

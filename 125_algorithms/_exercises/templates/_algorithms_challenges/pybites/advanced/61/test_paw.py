@@ -1,78 +1,78 @@
-from collections import Counter
+____ collections _______ Counter
 
-import pytest
+_______ pytest
 
-from paw import create_paw_deck
+____ paw _______ create_paw_deck
 
 
 @pytest.fixture(scope="module")
 ___ deck():
-    return list(create_paw_deck())
+    r.. l..(create_paw_deck())
 
 
 @pytest.fixture(scope="module")
 ___ small_deck():
-    return list(create_paw_deck(4))
+    r.. l..(create_paw_deck(4))
 
 
 @pytest.fixture(scope="module")
 ___ big_deck():
-    return list(create_paw_deck(16))
+    r.. l..(create_paw_deck(16))
 
 
 ___ test_deck_size(deck, small_deck, big_deck):
-    assert len(deck) == 32
-    assert len(small_deck) == 16
-    assert len(big_deck) == 64
+    ... l..(deck) __ 32
+    ... l..(small_deck) __ 16
+    ... l..(big_deck) __ 64
 
 
 ___ test_number_action_cards(deck, small_deck, big_deck):
-    assert sum(1 for card in deck __ card.action is not None) == 8
-    assert sum(1 for card in deck __ card.action is None) == 24
+    ... s..(1 ___ card __ deck __ card.action __ n.. N..) __ 8
+    ... s..(1 ___ card __ deck __ card.action __ N..) __ 24
 
-    assert sum(1 for card in small_deck __ card.action is not None) == 4
-    assert sum(1 for card in small_deck __ card.action is None) == 12
+    ... s..(1 ___ card __ small_deck __ card.action __ n.. N..) __ 4
+    ... s..(1 ___ card __ small_deck __ card.action __ N..) __ 12
 
-    assert sum(1 for card in big_deck __ card.action is not None) == 16
-    assert sum(1 for card in big_deck __ card.action is None) == 48
+    ... s..(1 ___ card __ big_deck __ card.action __ n.. N..) __ 16
+    ... s..(1 ___ card __ big_deck __ card.action __ N..) __ 48
 
 
 ___ test_all_action_cards_used(deck, small_deck, big_deck):
-    cards = [card.action for card in deck __ card.action is not None]
-    assert sum(Counter(cards).values()) == 8
+    cards = [card.action ___ card __ deck __ card.action __ n.. N..]
+    ... s..(Counter(cards).values()) __ 8
 
-    cards = [card.action for card in small_deck __ card.action is not None]
-    assert sum(Counter(cards).values()) == 4
+    cards = [card.action ___ card __ small_deck __ card.action __ n.. N..]
+    ... s..(Counter(cards).values()) __ 4
 
-    cards = [card.action for card in big_deck __ card.action is not None]
-    assert sum(Counter(cards).values()) == 16
+    cards = [card.action ___ card __ big_deck __ card.action __ n.. N..]
+    ... s..(Counter(cards).values()) __ 16
 
 
 ___ test_action_cards_in_different_positions(deck):
-    action_cards = [card.card for card in deck __ card.action is not None]
+    action_cards = [card.card ___ card __ deck __ card.action __ n.. N..]
 
-    deck2 = list(create_paw_deck())
-    action_cards2 = [card.card for card in deck2 __ card.action is not None]
-    assert action_cards != action_cards2
+    deck2 = l..(create_paw_deck())
+    action_cards2 = [card.card ___ card __ deck2 __ card.action __ n.. N..]
+    ... action_cards != action_cards2
 
-    deck3 = list(create_paw_deck())
-    action_cards3 = [card.card for card in deck3 __ card.action is not None]
-    assert action_cards != action_cards2 != action_cards3
+    deck3 = l..(create_paw_deck())
+    action_cards3 = [card.card ___ card __ deck3 __ card.action __ n.. N..]
+    ... action_cards != action_cards2 != action_cards3
 
 
 ___ test_deck_cards_numbers_constant(deck, small_deck, big_deck):
-    for i in list('ABCDEFGH'):
-        assert sum(1 for card in deck __ card.card[0] == i) == 4
-    for i in list('ABCD'):
-        assert sum(1 for card in small_deck __ card.card[0] == i) == 4
-    for i in list('ABCDEFGHIJKLMNOP'):
-        assert sum(1 for card in big_deck __ card.card[0] == i) == 4
+    ___ i __ l..('ABCDEFGH'):
+        ... s..(1 ___ card __ deck __ card.card[0] __ i) __ 4
+    ___ i __ l..('ABCD'):
+        ... s..(1 ___ card __ small_deck __ card.card[0] __ i) __ 4
+    ___ i __ l..('ABCDEFGHIJKLMNOP'):
+        ... s..(1 ___ card __ big_deck __ card.card[0] __ i) __ 4
 
 
 ___ test_deck_numbers_used():
-    for i in range(1, 27):
-        deck = list(create_paw_deck(i))
-        assert sum(1 for card in deck __ int(card.card[1:]) == 1) == i
+    ___ i __ r..(1, 27):
+        deck = l..(create_paw_deck(i))
+        ... s..(1 ___ card __ deck __ int(card.card[1:]) __ 1) __ i
 
 
 ___ test_out_of_bound_arg():

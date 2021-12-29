@@ -1,15 +1,15 @@
-import pytz
+_______ pytz
 
-MEETING_HOURS = range(6, 23)  # meet from 6 - 22 max
+MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
 TIMEZONES = set(pytz.all_timezones)
 
 
 ___ within_schedule(utc, *timezones):
     """Receive a utc datetime and one or more timezones and check if
        they are all within schedule (MEETING_HOURS)"""
-    __ any([tz not in TIMEZONES for tz in timezones]):
+    __ any([tz n.. __ TIMEZONES ___ tz __ timezones]):
         raise ValueError
 
     localized = [pytz.utc.localize(utc).astimezone(pytz.timezone(tz))
-                 for tz in timezones]
-    return all([loc.hour in MEETING_HOURS for loc in localized])
+                 ___ tz __ timezones]
+    r.. a..([loc.hour __ MEETING_HOURS ___ loc __ localized])

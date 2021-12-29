@@ -13,17 +13,17 @@ shakespeare_unformatted = """
                       """
 
 ___ print_hanging_indents(poem):
-    poem_line = [line.strip() for line in poem.split('\n')]
+    poem_line = [line.strip() ___ line __ poem.split('\n')]
     """ if poem_line[0] == "":
         poem_line = poem_line[1:]
     if poem_line[-1] == "":
         poem_line = poem_line[:-1] """
     previous_line = ""
-    for line in poem_line:
-        __ len(line) != 0:
-            __ previous_line == "":
+    ___ line __ poem_line:
+        __ l..(line) != 0:
+            __ previous_line __ "":
                 print(line)
-            else:
+            ____:
                 print(f"    "+line)
         previous_line = line
 

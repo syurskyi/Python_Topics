@@ -1,16 +1,16 @@
 ___ get_profile(name, age, *args, **kwargs):
     return_dict = {}
     __ args:
-        return_dict['sports'] = sorted(list(args))
-    __ (isinstance(age, int)) and len(args) <= 5:
+        return_dict['sports'] = s..(l..(args))
+    __ (isi..(age, int)) and l..(args) <= 5:
         return_dict['name'] = name
         return_dict['age'] = age
         __ args:
-            return_dict['sports'] = sorted(list(args))
+            return_dict['sports'] = s..(l..(args))
         __ kwargs:
             return_dict['awards'] = kwargs
-        return return_dict
-    else:
+        r.. return_dict
+    ____:
         raise ValueError
 
 

@@ -9,28 +9,28 @@ class Solution:
     # @param k, an integer
     # @return a ListNode
     ___ rotateRight(self, head, k):
-        __ head is None:
-            return None
+        __ head __ N..
+            r.. N..
         n = 0
         h = head
-        while head is not None:
+        while head __ n.. N..
             n += 1
             head = head.next
         k = k % n
-        __ k == 0:
-            return h
+        __ k __ 0:
+            r.. h
         res = h  # Head of result
         prev = h  # Previous node of result
         i = 0
-        while res is not None:
-            __ i == n - k:
+        while res __ n.. N..
+            __ i __ n - k:
                 break
             prev = res
             res = res.next
             i += 1
         end = res
-        while end.next is not None:
+        while end.next __ n.. N..
             end = end.next
         end.next = h
-        prev.next = None
-        return res
+        prev.next = N..
+        r.. res

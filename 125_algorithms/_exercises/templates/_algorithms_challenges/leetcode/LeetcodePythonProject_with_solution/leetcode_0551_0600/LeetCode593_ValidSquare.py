@@ -23,18 +23,18 @@ class Solution(object):
         ]
         maxVal, nonMax = 0, 0
         count = 0
-        for length in lengths:
+        ___ length __ lengths:
             maxVal = max(maxVal, length)
-        for length in lengths:
+        ___ length __ lengths:
             __ maxVal != length:
                 nonMax = length
-            else:
+            ____:
                 count += 1
-        __ count != 2: return False
-        for length in lengths:
+        __ count != 2: r.. False
+        ___ length __ lengths:
             __ nonMax != length and maxVal != length:
-                return False
-        return True
+                r.. False
+        r.. True
     
     ___ getLen(self, p1, p2):
-        return (p1[0]-p2[0])**2+(p1[1]-p2[1])**2
+        r.. (p1[0]-p2[0])**2+(p1[1]-p2[1])**2

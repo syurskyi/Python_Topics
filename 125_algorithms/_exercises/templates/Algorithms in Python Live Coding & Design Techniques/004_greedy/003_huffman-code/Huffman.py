@@ -18,14 +18,14 @@ ___ generate_tree(mapping
     ___ c __ keySet:
         node  HuffmanNode(mapping[c], c, N.., N..)
         priorityQ.ap..(node)
-        priorityQ  sorted(priorityQ, keylambda x: x.freq)
+        priorityQ  s..(priorityQ, keylambda x: x.freq)
 
     w__ le_(priorityQ) > 1 :
         first  priorityQ.pop(0);
         second  priorityQ.pop(0);
         merge_node  HuffmanNode(first.freq + second.freq, '-', first, second)
         priorityQ.ap..(merge_node)
-        priorityQ  sorted(priorityQ, keylambda x: x.freq)
+        priorityQ  s..(priorityQ, keylambda x: x.freq)
 
     r_ priorityQ.pop();
 

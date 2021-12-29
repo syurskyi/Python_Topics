@@ -4,12 +4,12 @@ class Solution(object):
     :type machines: List[int]
     :rtype: int
     """
-    __ sum(machines) % len(machines) != 0:
-      return -1
-    target = sum(machines) / len(machines)
+    __ s..(machines) % l..(machines) != 0:
+      r.. -1
+    target = s..(machines) / l..(machines)
     total = 0
     ans = 0
-    for v in machines:
+    ___ v __ machines:
       total += target - v
       ans = max(ans, abs(total), v - target)
-    return ans
+    r.. ans

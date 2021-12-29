@@ -14,6 +14,6 @@ ___ findMinOperation(s1, s2, index1, index2
         deleteOp  1 + findMinOperation(s1, s2, index1, index2+1)
         insertOp  1 + findMinOperation(s1, s2, index1+1, index2)
         replaceOp  1 + findMinOperation(s1, s2, index1+1, index2+1)
-        r_ min (deleteOp, insertOp, replaceOp)
+        r_ m.. (deleteOp, insertOp, replaceOp)
 
 print(findMinOperation("table", "tbrltt", 0, 0))

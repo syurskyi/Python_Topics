@@ -26,19 +26,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[str]
         """
-        res = []
-        cand = []
+        res    # list
+        cand    # list
         self.binary_tree_paths(root, cand, res)
-        return res
+        r.. res
 
     ___ binary_tree_paths(self, root, cand, res):
-        __ root is None:
-            return
-        else:
-            cand.append(root.val)
-            __ root.left is None and root.right is None:
+        __ root __ N..
+            r..
+        ____:
+            cand.a..(root.val)
+            __ root.left __ N.. and root.right __ N..
                 p = '->'.join(map(str, cand))
-                res.append(p)
+                res.a..(p)
             self.binary_tree_paths(root.left, cand, res)
             self.binary_tree_paths(root.right, cand, res)
             cand.pop()

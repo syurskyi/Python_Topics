@@ -1,9 +1,9 @@
-import unittest
+_______ unittest
 
-from allergies import Allergies
+____ allergies _______ Allergies
 
 # Python 2/3 compatibility
-__ not hasattr(unittest.TestCase, 'assertCountEqual'):
+__ n.. hasattr(unittest.TestCase, 'assertCountEqual'):
     unittest.TestCase.assertCountEqual = unittest.TestCase.assertItemsEqual
 
 
@@ -66,5 +66,5 @@ class AllergiesTests(unittest.TestCase):
             ])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -4,23 +4,23 @@ class Solution:
         :type n: int
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not n:
-            return ans
+        __ n.. n:
+            r.. ans
 
         stack = [1]
 
         while stack:
             x = stack.pop()
-            ans.append(x)
+            ans.a..(x)
 
             # considering the case no carry up if x + 1
             # that is, x in [1, 8]
             __ x < n and x % 10 < 9:
-                stack.append(x + 1)
+                stack.a..(x + 1)
 
             __ x * 10 <= n:
-                stack.append(x * 10)
+                stack.a..(x * 10)
 
-        return ans
+        r.. ans

@@ -6,37 +6,37 @@ Created on Apr 11, 2017
 
 class Solution(object):
     ___ minAbbreviation(self, target, dictionary):
-        diffs = []
-        m = len(target)
-        for word in dictionary:
-            __ len(word) != m: continue
+        diffs    # list
+        m = l..(target)
+        ___ word __ dictionary:
+            __ l..(word) != m: continue
             bits = 0
-            for i, c in enumerate(word):
+            ___ i, c __ enumerate(word):
                 __ c != target[i]:
                     bits += 2**i
-            diffs.append(bits)
-        __ not diffs:
-            return str(m)
-        abbrs = []
-        for i in range(2**m):
-            __ all(d&i for d in diffs):
-                abbrs.append(self.abbr(target, i))
-        return min(abbrs, key=lambda x: len(x))
+            diffs.a..(bits)
+        __ n.. diffs:
+            r.. str(m)
+        abbrs    # list
+        ___ i __ r..(2**m):
+            __ a..(d&i ___ d __ diffs):
+                abbrs.a..(self.abbr(target, i))
+        r.. m..(abbrs, key=l.... x: l..(x))
     
     ___ abbr(self, target, num):
         word, count = '', 0
-        for w in target:
-            __ num & 1 == 1:
+        ___ w __ target:
+            __ num & 1 __ 1:
                 __ count:
                     word += str(count)
                     count = 0
                 word += w
-            else:
+            ____:
                 count += 1
             num >>= 1
         __ count:
             word += str(count)
-        return word
+        r.. word
     
     ___ test(self):
         testCases = [
@@ -49,12 +49,12 @@ class Solution(object):
                 ["plain", "amber", "blade"],
             ],
         ]
-        for target, dictionary in testCases:
+        ___ target, dictionary __ testCases:
             print('target: %s' % target)
             print('dictionary: %s' % dictionary)
             result = self.minAbbreviation(target, dictionary)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

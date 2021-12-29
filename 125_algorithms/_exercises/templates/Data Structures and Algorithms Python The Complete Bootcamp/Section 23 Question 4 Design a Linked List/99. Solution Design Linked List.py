@@ -13,7 +13,7 @@ c_ MyLinkedList:
         size  0
 
     ___ get  index):
-        __ index < 0 or index > size:
+        __ index < 0 o. index > size:
             r_ -1
 
         cur  head
@@ -51,7 +51,7 @@ c_ MyLinkedList:
         size + 1
 
     ___ addAtIndex  index, val):
-        __ index < 0 or index > size:
+        __ index < 0 o. index > size:
             r_
         ____ index __ 0:
             addAtHead(val)
@@ -73,7 +73,7 @@ c_ MyLinkedList:
             size + 1
 
     ___ deleteAtIndex  index):
-        __ index < 0 or index > size:
+        __ index < 0 o. index > size:
             r_
         ____ index __ 0:
             cur  head.next

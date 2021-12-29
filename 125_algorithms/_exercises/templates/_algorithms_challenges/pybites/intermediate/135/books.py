@@ -1,6 +1,6 @@
-from collections import namedtuple
-from datetime import datetime
-from operator import attrgetter
+____ collections _______ namedtuple
+____ datetime _______ datetime
+____ operator _______ attrgetter
 
 Book = namedtuple('Book', 'title authors pages published')
 
@@ -35,8 +35,8 @@ ___ sort_books_by_len_of_title(books=books):
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    len_of_title = sorted(books, key=lambda x: len(x.title))
-    return len_of_title
+    len_of_title = s..(books, key=l.... x: l..(x.title))
+    r.. len_of_title
 
 
 ___ sort_books_by_first_authors_last_name(books=books):
@@ -44,8 +44,8 @@ ___ sort_books_by_first_authors_last_name(books=books):
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    first_authors_last_name = sorted(books, key=lambda book: len(book.authors.split(" ")[1].strip(" ")))
-    return first_authors_last_name
+    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.split(" ")[1].strip(" ")))
+    r.. first_authors_last_name
 
 
 ___ sort_books_by_number_of_page(books=books):
@@ -53,8 +53,8 @@ ___ sort_books_by_number_of_page(books=books):
     Expected last book in list:
     Fluent Python
     """
-    number_of_pages = sorted(books, key=lambda book: book.pages)
-    return number_of_pages
+    number_of_pages = s..(books, key=l.... book: book.pages)
+    r.. number_of_pages
 
 
 ___ sort_books_by_published_date(books=books):
@@ -62,8 +62,8 @@ ___ sort_books_by_published_date(books=books):
     Expected last book in list:
     Python Interviews
     """
-    published_date = sorted(books, key=lambda book: book.published)
-    return published_date
+    published_date = s..(books, key=l.... book: book.published)
+    r.. published_date
     
 
 

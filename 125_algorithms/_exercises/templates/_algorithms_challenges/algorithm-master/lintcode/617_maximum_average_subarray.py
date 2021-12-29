@@ -36,35 +36,35 @@ class Solution:
         :type k: int
         :rtype: float
         """
-        __ not nums or not k:
-            return 0.0
+        __ n.. nums o. n.. k:
+            r.. 0.0
 
         EPS = 1e-5
 
         # ans MUST between `min(nums)` and `max(nums)`
         left = right = nums[0]
-        for num in nums:
+        ___ num __ nums:
             __ num < left:
                 left = num
             __ num > right:
                 right = num
 
         # prefix sum
-        s = [0] * (len(nums) + 1)
+        s = [0] * (l..(nums) + 1)
         while right - left > EPS:
             mid = (left + right) / 2.0
 
             __ self.is_valid(nums, k, mid, s):
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        return left
+        r.. left
 
     ___ is_valid(self, nums, k, mid, s):
         s[0] = smin = 0
 
-        for i in range(1, len(nums) + 1):
+        ___ i __ r..(1, l..(nums) + 1):
             s[i] = s[i - 1] + nums[i - 1] - mid
 
             __ i < k:
@@ -75,9 +75,9 @@ class Solution:
             => it's valid even if just only one, return True immediately
             """
             __ s[i] >= smin:  # s[i] - smin >= 0
-                return True
+                r.. True
 
             __ s[i - k + 1] < smin:
                 smin = s[i - k + 1]
 
-        return False
+        r.. False

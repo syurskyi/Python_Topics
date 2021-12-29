@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
@@ -25,18 +25,18 @@ ___ strip_range(start, end):
 
             s = max(start,0)
             e = max(end,0)
-            s = min(len(text),s)
-            e = min(len(text),e)
+            s = m..(l..(text),s)
+            e = m..(l..(text),e)
             s = text[:s] + DOT * (e - s) + text[e:]
 
 
-            return s
+            r.. s
 
-        return wrapper
+        r.. wrapper
 
 
 
-    return decorator
+    r.. decorator
 
 
 

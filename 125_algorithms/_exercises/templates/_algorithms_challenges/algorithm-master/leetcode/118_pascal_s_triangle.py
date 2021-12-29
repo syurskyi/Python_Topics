@@ -4,22 +4,22 @@ class Solution:
         :type num_rows: int
         :rtype: List[List[int]]
         """
-        ans = []
-        __ not num_rows:
-            return ans
+        ans    # list
+        __ n.. num_rows:
+            r.. ans
 
-        ans.append([1])
+        ans.a..([1])
 
-        for i in range(1, num_rows):
+        ___ i __ r..(1, num_rows):
             path = [ans[i - 1][0]]
 
-            for j in range(1, len(ans[i - 1])):
-                path.append(ans[i - 1][j] + ans[i - 1][j - 1])
+            ___ j __ r..(1, l..(ans[i - 1])):
+                path.a..(ans[i - 1][j] + ans[i - 1][j - 1])
 
-            path.append(ans[i - 1][-1])
-            ans.append(path)
+            path.a..(ans[i - 1][-1])
+            ans.a..(path)
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -28,16 +28,16 @@ class Solution:
         :type num_rows: int
         :rtype: List[List[int]]
         """
-        ans = []
-        __ not num_rows:
-            return ans
+        ans    # list
+        __ n.. num_rows:
+            r.. ans
 
-        ans.append([1])
+        ans.a..([1])
 
-        for i in range(1, num_rows):
-            ans.append([
+        ___ i __ r..(1, num_rows):
+            ans.a..([
                 (ans[i - 1] + [0])[j] + ([0] + ans[i - 1])[j]
-                for j in range(len(ans[i - 1]) + 1)
+                ___ j __ r..(l..(ans[i - 1]) + 1)
             ])
 
-        return ans
+        r.. ans

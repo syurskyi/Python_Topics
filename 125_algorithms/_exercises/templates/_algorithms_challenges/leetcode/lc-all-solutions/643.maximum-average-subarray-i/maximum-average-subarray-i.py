@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -11,11 +11,11 @@ class Solution(object):
     s = 0
     ans = float("-inf")
     queue = deque([])
-    for num in nums:
-      queue.append(num)
+    ___ num __ nums:
+      queue.a..(num)
       s += num
-      __ len(queue) > k:
+      __ l..(queue) > k:
         s -= queue.popleft()
-      __ len(queue) == k:
+      __ l..(queue) __ k:
         ans = max(ans, float(s) / k)
-    return ans
+    r.. ans

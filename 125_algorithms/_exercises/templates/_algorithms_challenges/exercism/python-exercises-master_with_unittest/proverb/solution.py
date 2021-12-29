@@ -1,7 +1,7 @@
 ___ proverb(itens, qualifier=''):
     phrases = ['For want of a {0} the {1} was lost.'.format(el1, el2)
-               for el1, el2 in zip(itens, itens[1:])]
-    qualifier += ' ' __ qualifier else ''
-    phrases.append('And all for the want of a {0}{1}.'.format(qualifier,
+               ___ el1, el2 __ zip(itens, itens[1:])]
+    qualifier += ' ' __ qualifier ____ ''
+    phrases.a..('And all for the want of a {0}{1}.'.format(qualifier,
                    itens[0]))
-    return '\n'.join(phrases)
+    r.. '\n'.join(phrases)

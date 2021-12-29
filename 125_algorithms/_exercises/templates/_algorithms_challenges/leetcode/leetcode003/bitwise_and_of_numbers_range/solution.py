@@ -17,7 +17,7 @@ class Solution(object):
             shift += 1
             m = m >> 1
             n = n >> 1
-        return m << shift
+        r.. m << shift
 
 
 s = Solution()

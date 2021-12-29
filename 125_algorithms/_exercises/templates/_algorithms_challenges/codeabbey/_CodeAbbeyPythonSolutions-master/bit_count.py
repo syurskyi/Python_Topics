@@ -1,7 +1,7 @@
 amount_values = int(input())
-results = []
+results    # list
 
-___ count(decimal_number):
+___ c.. decimal_number):
     is_negative = False
     __(decimal_number < 0):
         decimal_number *= -1
@@ -10,16 +10,16 @@ ___ count(decimal_number):
     counter = 0
     while(decimal_number != 0):
         remainder = decimal_number%2
-        __(remainder == 1):
+        __(remainder __ 1):
             counter += 1
         decimal_number  //= 2
 
     __(is_negative):
-        return 32-counter
-    return counter
+        r.. 32-counter
+    r.. counter
 
-values = list(map(int, input().split()))
-for i in range(amount_values):
-    results.append(count(values[i]))
+values = l..(map(int, input().split()))
+___ i __ r..(amount_values):
+    results.a..(c.. values[i]))
 
 print(*results)

@@ -1,11 +1,11 @@
-import base64
-from cryptography.fernet import Fernet  # type: ignore
-from cryptography.hazmat.backends import default_backend  # type: ignore
-from cryptography.hazmat.primitives import hashes  # type: ignore
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC  # type: ignore
-import os
-from os import urandom
-from typing import ByteString, Tuple, Optional
+_______ base64
+____ cryptography.fernet _______ Fernet  # type: ignore
+____ cryptography.hazmat.backends _______ default_backend  # type: ignore
+____ cryptography.hazmat.primitives _______ hashes  # type: ignore
+____ cryptography.hazmat.primitives.kdf.pbkdf2 _______ PBKDF2HMAC  # type: ignore
+_______ os
+____ os _______ urandom
+____ typing _______ ByteString, Tuple, Optional
 
 
 class ClamyFernet:
@@ -27,9 +27,9 @@ class ClamyFernet:
         self._kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=os.urandom(16),iterations=100000,backend=default_backend())
         self.password = password
         
-        __ not key:
+        __ n.. key:
             self.key = base64.urlsafe_b64encode(self.kdf.derive(password))
-        else:
+        ____:
             self.key = key
 
         self._clf = Fernet(self.key)
@@ -41,7 +41,7 @@ class ClamyFernet:
         Uses PBKDF2HMAC to generate a secure key. This is where you will
         use the salt, algorithm, length, iterations, and backend variables.
         """
-        return self._kdf
+        r.. self._kdf
 
 
     @property
@@ -51,12 +51,12 @@ class ClamyFernet:
         Key that is derived from cryptogrophy's fermet.
         """
 
-        return self._clf
+        r.. self._clf
 
     ___ encrypt(self, message: str) -> ByteString:
         """Encrypts the message passed to it"""
-        return self.clf.encrypt(message.encode())
+        r.. self.clf.encrypt(message.encode())
 
     ___ decrypt(self, token: ByteString) -> str:
         """Decrypts the encrypted message passed to it"""
-        return self.clf.decrypt(token).decode()
+        r.. self.clf.decrypt(token).decode()

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from islands import count_islands
+____ islands _______ count_islands
 
 squares = [[1, 1, 0, 1],
            [1, 1, 0, 1],
@@ -33,4 +33,4 @@ circles = [[1, 1, 0, 0, 0, 1],
     (circles, 1),
 ])
 ___ test_count_islands(data, expected):
-    assert count_islands(data) == expected
+    ... count_islands(data) __ expected

@@ -5,7 +5,7 @@ class Solution(object):
     :type str: str
     :rtype: bool
     """
-    for i in range(0, len(str) / 2):
-      __ not len(str) % (i + 1) and str[:i + 1] * (len(str) / (i + 1)) == str:
-        return True
-    return False
+    ___ i __ r..(0, l..(str) / 2):
+      __ n.. l..(str) % (i + 1) and str[:i + 1] * (l..(str) / (i + 1)) __ str:
+        r.. True
+    r.. False

@@ -5,7 +5,7 @@ Created on May 17, 2018
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -16,19 +16,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ not root: return []
+        __ n.. root: r.. []
         queue = [root]
-        nextQueue = []
+        nextQueue    # list
         res = [root.val]
         while queue:
             node = queue.pop(0)
             __ node.left:
-                nextQueue.append(node.left)
+                nextQueue.a..(node.left)
             __ node.right:
-                nextQueue.append(node.right)
-            __ not queue:
+                nextQueue.a..(node.right)
+            __ n.. queue:
                 __ nextQueue:
-                    res.append(nextQueue[-1].val)
+                    res.a..(nextQueue[-1].val)
                     queue = nextQueue
-                    nextQueue = []
-        return res
+                    nextQueue    # list
+        r.. res

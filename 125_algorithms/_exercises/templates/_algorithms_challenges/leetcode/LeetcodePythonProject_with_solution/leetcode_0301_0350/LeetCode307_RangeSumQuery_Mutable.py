@@ -8,8 +8,8 @@ class TreeNode(object):
         self.sumVal = sumVal
         self.start = start
         self.end = end
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class NumArray(object):
 
@@ -17,22 +17,22 @@ class NumArray(object):
         """
         :type nums: List[int]
         """
-        __ not nums:
-            self.root = None
-        else:
-            self.root = self.buildTree(nums, 0, len(nums)-1)
+        __ n.. nums:
+            self.root = N..
+        ____:
+            self.root = self.buildTree(nums, 0, l..(nums)-1)
     
     ___ buildTree(self, nums, i, j):
-        __ not nums or i > j:
-            return None
-        __ i == j:
-            return TreeNode(i, j, nums[i])
+        __ n.. nums o. i > j:
+            r.. N..
+        __ i __ j:
+            r.. TreeNode(i, j, nums[i])
         root = TreeNode(i, j, -1)
         mid = (i+j)//2
         root.left = self.buildTree(nums, i, mid)
         root.right = self.buildTree(nums, mid+1, j)
         root.sumVal = root.left.sumVal+root.right.sumVal
-        return root
+        r.. root
 
     ___ update(self, i, val):
         """
@@ -43,14 +43,14 @@ class NumArray(object):
         self.updateHelper(self.root, i, val)
     
     ___ updateHelper(self, root, i, val):
-        __ not root: return
-        __ i == root.start and i == root.end:
+        __ n.. root: r..
+        __ i __ root.start and i __ root.end:
             root.sumVal = val
-            return
+            r..
         mid = (root.start+root.end)//2
         __ i <= mid:
             self.updateHelper(root.left, i, val)
-        else:
+        ____:
             self.updateHelper(root.right, i, val)
         root.sumVal = root.left.sumVal+root.right.sumVal
     
@@ -60,14 +60,14 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        return self.sumRangeHelper(self.root, i, j)
+        r.. self.sumRangeHelper(self.root, i, j)
     
     ___ sumRangeHelper(self, root, i, j):
-        __ not root or i > j or j < root.start or i > root.end:
-            return 0
-        __ i == root.start and j == root.end:
-            return root.sumVal
+        __ n.. root o. i > j o. j < root.start o. i > root.end:
+            r.. 0
+        __ i __ root.start and j __ root.end:
+            r.. root.sumVal
         mid = (root.start+root.end)//2
-        res = self.sumRangeHelper(root.left, i, min(j, mid))+\
+        res = self.sumRangeHelper(root.left, i, m..(j, mid))+\
             self.sumRangeHelper(root.right, max(i, mid+1), j)
-        return res
+        r.. res

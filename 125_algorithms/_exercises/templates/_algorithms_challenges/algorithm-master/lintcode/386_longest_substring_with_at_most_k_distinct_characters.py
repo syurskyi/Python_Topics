@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -10,23 +10,23 @@ class Solution:
         """
         ans = 0
 
-        __ not s or not k:
-            return ans
+        __ n.. s o. n.. k:
+            r.. ans
 
         freq = collections.defaultdict(int)
-        n = len(s)
+        n = l..(s)
         left = right = cnt = 0
 
         while right < n:
             freq[s[right]] += 1
-            __ freq[s[right]] == 1:
+            __ freq[s[right]] __ 1:
                 cnt += 1
 
             right += 1
 
             while cnt > k:
                 freq[s[left]] -= 1
-                __ freq[s[left]] == 0:
+                __ freq[s[left]] __ 0:
                     cnt -= 1
 
                 left += 1
@@ -34,4 +34,4 @@ class Solution:
             __ right - left > ans:
                 ans = right - left
 
-        return ans
+        r.. ans

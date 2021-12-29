@@ -1,4 +1,4 @@
-from datetime import timedelta
+____ datetime _______ timedelta
 ___ get_missing_dates(dates):
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
@@ -10,21 +10,21 @@ ___ get_missing_dates(dates):
     """
 
 
-    dates = sorted(dates)
+    dates = s..(dates)
 
-    missing = [] 
-    for i in range(len(dates) - 1):
+    missing    # list
+    ___ i __ r..(l..(dates) - 1):
         date = dates[i]
 
         next_date = date + timedelta(days=1)
 
         while next_date != dates[i +1]:
-            missing.append(next_date)
+            missing.a..(next_date)
             next_date += timedelta(days=1)
     
 
         
-    return missing
+    r.. missing
 
 
 

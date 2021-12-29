@@ -1,5 +1,5 @@
-import sys
-import unicodedata
+_______ sys
+_______ unicodedata
 
 START_EMOJI_RANGE = 100000  # estimate
 
@@ -8,9 +8,9 @@ ___ what_means_emoji(emoji):
     """Receives emoji and returns its meaning,
        in case of a TypeError return 'Not found'"""
     try:
-        return unicodedata.name(emoji)
+        r.. unicodedata.name(emoji)
     except TypeError:
-        return 'Not found'
+        r.. 'Not found'
 
 
 ___ _make_emoji_mapping():
@@ -19,9 +19,9 @@ ___ _make_emoji_mapping():
        - return dict with keys=emojis, values=names"""
     __ _make_emoji_mapping.MAPPING:
         res = _make_emoji_mapping.MAPPING
-    else:
-        res = dict()
-        for em in range(START_EMOJI_RANGE, sys.maxunicode + 1):
+    ____:
+        res = d..()
+        ___ em __ r..(START_EMOJI_RANGE, sys.maxunicode + 1):
             emoji = chr(em)
             try:
                 desc = what_means_emoji(emoji)
@@ -30,10 +30,10 @@ ___ _make_emoji_mapping():
             except ValueError:
                 pass
         _make_emoji_mapping.MAPPING = res
-    return res
+    r.. res
 
 
-_make_emoji_mapping.MAPPING = None
+_make_emoji_mapping.MAPPING = N..
 
 
 ___ find_emoji(term):
@@ -41,6 +41,6 @@ ___ find_emoji(term):
        term, print matches to console"""
     term = term.lower()
     emoji_mapping = _make_emoji_mapping()
-    for em, desc in emoji_mapping.items():
-        __ term in desc:
+    ___ em, desc __ emoji_mapping.items():
+        __ term __ desc:
             print(f'{desc:40} | {em}')

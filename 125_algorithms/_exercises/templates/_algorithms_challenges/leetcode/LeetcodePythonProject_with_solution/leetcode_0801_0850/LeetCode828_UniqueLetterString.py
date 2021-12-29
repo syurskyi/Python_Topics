@@ -11,37 +11,37 @@ class Solution(object):
         """
         s = S
         hashmap = {}
-        for i, c in enumerate(s):
-            __ c in hashmap:
+        ___ i, c __ enumerate(s):
+            __ c __ hashmap:
                 l = hashmap[c]
-            else:
-                l = []
-            l.append(i)
+            ____:
+                l    # list
+            l.a..(i)
             hashmap[c] = l
         sumVal = 0
-        for c, l in hashmap.items():
-            for i in range(len(l)):
-                __ i == 0:
+        ___ c, l __ hashmap.items():
+            ___ i __ r..(l..(l)):
+                __ i __ 0:
                     left = l[i]
-                else:
+                ____:
                     left = l[i]-l[i-1]-1
-                __ i == len(l)-1:
-                    right = len(s)-l[i]-1
-                else:
+                __ i __ l..(l)-1:
+                    right = l..(s)-l[i]-1
+                ____:
                     right = l[i+1]-l[i]-1
                 sumVal = (sumVal+1+left+right+left*right)%(10**9+7)
-        return sumVal
+        r.. sumVal
     
     ___ test(self):
         testCases = [
             'ABC',
             'ABA',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.uniqueLetterString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

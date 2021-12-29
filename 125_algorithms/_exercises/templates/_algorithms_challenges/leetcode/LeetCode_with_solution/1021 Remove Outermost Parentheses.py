@@ -43,7 +43,7 @@ S.length <= 10000
 S[i] is "(" or ")"
 S is a valid parentheses string
 """
-from collections import deque
+____ collections _______ deque
 
 
 class Solution:
@@ -55,42 +55,42 @@ class Solution:
         Use count
         Exclude the first and last parathesis
         """
-        ret = []
+        ret    # list
         cnt = 0
-        for e in S:
-            __ e == "(":
+        ___ e __ S:
+            __ e __ "(":
                 cnt += 1
                 __ cnt > 1:
-                    ret.append(e)
-            else:
+                    ret.a..(e)
+            ____:
                 cnt -= 1
                 __ cnt > 0:
-                    ret.append(e)
+                    ret.a..(e)
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
     ___ removeOuterParentheses_error(self, S: str) -> str:
         """
         stack + deque
         """
-        ret = []
-        stk = []
+        ret    # list
+        stk    # list
         cur_q = deque()
-        for e in S:
-            __ e == "(":
-                stk.append(e)
-            else:
+        ___ e __ S:
+            __ e __ "(":
+                stk.a..(e)
+            ____:
                 prev = stk.pop()
                 __ stk:
                     cur_q.appendleft(prev)
-                    cur_q.append(e)
-                else:
+                    cur_q.a..(e)
+                ____:
                     ret.extend(cur_q)
                     cur_q = deque()
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().removeOuterParentheses("(()())(())(()(()))") == "()()()()(())"
+__ __name__ __ "__main__":
+    ... Solution().removeOuterParentheses("(()())(())(()(()))") __ "()()()()(())"

@@ -34,7 +34,7 @@ Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
         5
 return [3, 4]
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -48,52 +48,52 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ not edges:
-            return [0]
+        __ n.. edges:
+            r.. [0]
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
-            V[a].append(b)
-            V[b].append(a)
+        V = {i: [] ___ i __ xrange(n)}
+        ___ a, b __ edges:
+            V[a].a..(b)
+            V[b].a..(a)
 
         # longest path algorithm
         _, _, last = self.bfs(0, V)
         level, pi, last = self.bfs(last, V)
 
-        ret = []
+        ret    # list
         cur = last
-        for _ in xrange((level-1)/2):
+        ___ _ __ xrange((level-1)/2):
             cur = pi[cur]
-        ret.append(cur)
+        ret.a..(cur)
 
-        __ level%2 == 0:
-            ret.append(pi[cur])
+        __ level%2 __ 0:
+            ret.a..(pi[cur])
 
-        return ret
+        r.. ret
 
     ___ bfs(self, s, V):
         # bfs
-        visited = [False for _ in xrange(len(V))]
-        pi = [-1 for _ in xrange(len(V))]
+        visited = [False ___ _ __ xrange(l..(V))]
+        pi = [-1 ___ _ __ xrange(l..(V))]
         last = s
         level = 0
-        q = []
-        q.append(s)
+        q    # list
+        q.a..(s)
         while q:
-            l = len(q)
-            for i in xrange(l):
+            l = l..(q)
+            ___ i __ xrange(l):
                 cur = q[i]
                 last = cur
                 visited[cur] = True
-                for nbr in V[cur]:
-                    __ not visited[nbr]:
+                ___ nbr __ V[cur]:
+                    __ n.. visited[nbr]:
                         pi[nbr] = cur
-                        q.append(nbr)
+                        q.a..(nbr)
 
             q = q[l:]
             level += 1
 
-        return level, pi, last
+        r.. level, pi, last
 
 
 class Solution_TLE(object):
@@ -103,45 +103,45 @@ class Solution_TLE(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ not edges:
-            return 0
+        __ n.. edges:
+            r.. 0
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
-            V[a].append(b)
-            V[b].append(a)
+        V = {i: [] ___ i __ xrange(n)}
+        ___ a, b __ edges:
+            V[a].a..(b)
+            V[b].a..(a)
 
-        ret = []
+        ret    # list
         mini = n
-        for k in V.keys():
+        ___ k __ V.keys():
             l = self.bfs(k, V)
             __ l < mini:
                 ret = [k]
                 mini = l
-            elif l == mini:
-                ret.append(k)
+            ____ l __ mini:
+                ret.a..(k)
 
-        return ret
+        r.. ret
 
     ___ bfs(self, s, V):
         # bfs
-        visisted = [False for _ in xrange(len(V))]
-        q = []
+        visisted = [False ___ _ __ xrange(l..(V))]
+        q    # list
         level = 0
-        q.append(s)
+        q.a..(s)
         while q:
-            l = len(q)
-            for i in xrange(l):
+            l = l..(q)
+            ___ i __ xrange(l):
                 cur = q[i]
                 visisted[cur] = True
-                for nbr in V[cur]:
-                    __ not visisted[nbr]:
-                        q.append(nbr)
+                ___ nbr __ V[cur]:
+                    __ n.. visisted[nbr]:
+                        q.a..(nbr)
 
             q = q[l:]
             level += 1
 
-        return level
+        r.. level
 
 
 class SolutionError(object):
@@ -152,45 +152,45 @@ class SolutionError(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ not edges:
-            return 0
+        __ n.. edges:
+            r.. 0
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
-            V[a].append(b)
-            V[b].append(a)
+        V = {i: [] ___ i __ xrange(n)}
+        ___ a, b __ edges:
+            V[a].a..(b)
+            V[b].a..(a)
 
-        leaf = None
-        for k, v in V.items():
-            __ len(v) == 1:
+        leaf = N..
+        ___ k, v __ V.items():
+            __ l..(v) __ 1:
                 leaf = k
                 break
 
         # bfs
-        visisted = [False for _ in xrange(n)]
-        h2v = defaultdict(list)
-        q = []
+        visisted = [False ___ _ __ xrange(n)]
+        h2v = defaultdict(l..)
+        q    # list
         level = 0
-        q.append(leaf)
+        q.a..(leaf)
         while q:
-            l = len(q)
-            for i in xrange(l):
+            l = l..(q)
+            ___ i __ xrange(l):
                 cur = q[i]
-                h2v[level].append(cur)
+                h2v[level].a..(cur)
                 visisted[cur] = True
-                for nbr in V[cur]:
-                    __ not visisted[nbr]:
-                        q.append(nbr)
+                ___ nbr __ V[cur]:
+                    __ n.. visisted[nbr]:
+                        q.a..(nbr)
 
             q = q[l:]
             level += 1
 
-        __ level%2 == 0:
-            return h2v[level/2-1]+h2v[level/2]
-        else:
-            return h2v[level/2]
+        __ level%2 __ 0:
+            r.. h2v[level/2-1]+h2v[level/2]
+        ____:
+            r.. h2v[level/2]
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     # print Solution().findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])
-    assert Solution().findMinHeightTrees(7, [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6]]) == [1, 2]
+    ... Solution().findMinHeightTrees(7, [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6]]) __ [1, 2]

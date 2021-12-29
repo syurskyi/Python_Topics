@@ -4,4 +4,4 @@ ___ rotate(string, n):
     """
 
 
-    return string[n % len(string):] +  string[0: n % len(string)]
+    r.. string[n % l..(string):] +  string[0: n % l..(string)]

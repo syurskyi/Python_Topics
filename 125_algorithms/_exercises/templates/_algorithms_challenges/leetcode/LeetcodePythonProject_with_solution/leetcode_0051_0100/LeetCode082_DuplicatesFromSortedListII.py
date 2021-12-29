@@ -8,7 +8,7 @@ Created on Jan 24, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ deleteDuplicates(self, head):
@@ -16,16 +16,16 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head or not head.next:
-            return head
+        __ n.. head o. n.. head.next:
+            r.. head
         dummy = ListNode(-1)
         dummy.next = head
         node = dummy
         while node.next and node.next.next:
-            __ node.next.val == node.next.next.val:
+            __ node.next.val __ node.next.next.val:
                 val = node.next.val
-                while node.next and node.next.val == val:
+                while node.next and node.next.val __ val:
                     node.next = node.next.next
-            else:
+            ____:
                 node = node.next
-        return dummy.next
+        r.. dummy.next

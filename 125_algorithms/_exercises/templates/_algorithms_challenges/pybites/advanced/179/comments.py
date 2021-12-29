@@ -1,4 +1,4 @@
-import re
+_______ re
 
 code = '''
 """this is
@@ -54,10 +54,10 @@ ___ strip_comments(code):
 
     # remove multi line comments
     code = re.sub(r'\s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,re.MULTILINE)
-    return code
+    r.. code
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     print(class_with_method)
 

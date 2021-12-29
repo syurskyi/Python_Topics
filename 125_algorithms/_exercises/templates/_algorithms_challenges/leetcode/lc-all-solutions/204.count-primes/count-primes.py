@@ -7,17 +7,17 @@ class Solution(object):
     """
 
     ___ helper(n, dp):
-      for i in range(2, n):
-        __ dp[i] == 1:
+      ___ i __ r..(2, n):
+        __ dp[i] __ 1:
           k = i * i
           __ k >= n:
-            return
+            r..
           while k < n:
             dp[k] = 0
             k += i
 
     __ n < 2:
-      return 0
+      r.. 0
     ans = 0
     dp = [1] * n
     dp[0] = 0
@@ -27,4 +27,4 @@ class Solution(object):
     #     if dp[i] == 1:
     #         print i + 1
 
-    return sum(dp)
+    r.. s..(dp)

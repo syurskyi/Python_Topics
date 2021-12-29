@@ -17,16 +17,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
+        n = l..(s)
         p = n - 1
         right = -1
         while p >= 0:
-            __ right == -1 and s[p] != ' ':
+            __ right __ -1 and s[p] != ' ':
                 right = p
-            elif right >= 0 and s[p] == ' ':
-                return right - p
+            ____ right >= 0 and s[p] __ ' ':
+                r.. right - p
             p -= 1
         __ right >= 0:
-            return right + 1
-        else:
-            return 0
+            r.. right + 1
+        ____:
+            r.. 0

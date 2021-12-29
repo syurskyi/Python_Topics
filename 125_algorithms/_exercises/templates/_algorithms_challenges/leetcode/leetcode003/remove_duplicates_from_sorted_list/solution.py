@@ -19,17 +19,17 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ head is None:
-            return None
-        __ head.next is None:
-            return head
+        __ head __ N..
+            r.. N..
+        __ head.next __ N..
+            r.. head
         last = head
         current = head.next
-        while current is not None:
+        while current __ n.. N..
             next_node = current.next
-            __ current.val == last.val:
+            __ current.val __ last.val:
                 last.next = next_node
-            else:
+            ____:
                 last = current
             current = next_node
-        return head
+        r.. head

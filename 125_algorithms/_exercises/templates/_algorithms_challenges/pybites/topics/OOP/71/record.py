@@ -8,7 +8,7 @@ class RecordScore():
         self.score = score
         __ self.score > self.high_score:
             self.high_score = self.score
-        return self.high_score
+        r.. self.high_score
 
 
 record = RecordScore()

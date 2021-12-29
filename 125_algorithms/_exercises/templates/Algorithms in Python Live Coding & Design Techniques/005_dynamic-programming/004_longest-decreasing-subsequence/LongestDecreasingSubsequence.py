@@ -20,7 +20,7 @@ ___ get_lds_top_down(nums, prev_index, curr, dp
         r_ dp[prev_index+1][curr]
 
     incl  0
-    __ prev_index < 0 or nums[curr] < nums[prev_index]:
+    __ prev_index < 0 o. nums[curr] < nums[prev_index]:
         incl  1 + get_lds_top_down(nums, curr, curr+1, dp)
     excl  get_lds_top_down(nums, prev_index, curr+1, dp)
     dp[prev_index+1][curr]  ma_(incl, excl)

@@ -11,16 +11,16 @@ class Solution(object):
     :type k: int
     :rtype: ListNode
     """
-    __ not head:
-      return head
+    __ n.. head:
+      r.. head
     l = 1
     p = head
     while p.next:
       l += 1
       p = p.next
     k = k % l
-    __ k == 0:
-      return head
+    __ k __ 0:
+      r.. head
     k = l - k % l - 1
     pp = head
     print
@@ -29,6 +29,6 @@ class Solution(object):
       pp = pp.next
       k -= 1
     newHead = pp.next
-    pp.next = None
+    pp.next = N..
     p.next = head
-    return newHead
+    r.. newHead

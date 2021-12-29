@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from handshake import handshake, code
+____ handshake _______ handshake, code
 
 
 class HandshakeTest(unittest.TestCase):
@@ -46,5 +46,5 @@ class HandshakeTest(unittest.TestCase):
         self.assertEqual(inp, handshake(code(inp)))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

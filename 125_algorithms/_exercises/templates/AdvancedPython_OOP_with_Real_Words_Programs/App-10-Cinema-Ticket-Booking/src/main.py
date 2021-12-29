@@ -18,9 +18,9 @@ c_ User:
                 ticket  Ticket(user  self, priceseat.get_price(), seat_numberseat_id)
                 ticket.to_pdf()
                 r_ "Purchase successful!"
-            else:
+            ____:
                 r_ "There was a problem with your card!"
-        else:
+        ____:
             r_ "Seat is taken!"
 
 
@@ -53,7 +53,7 @@ c_ Seat:
 
         __ result __ 0:
             r_ T..
-        else:
+        ____:
             r_ F..
 
     ___ occupy _
@@ -105,7 +105,7 @@ c_ Ticket:
     ___  -    user, price, seat_number):
         user  user
         price  price
-        id  "".join([random.choice(string.ascii_letters) for i in range(8)])
+        id  "".join([random.choice(string.ascii_letters) ___ i __ r..(8)])
         seat_number  seat_number
 
     ___ to_pdf _

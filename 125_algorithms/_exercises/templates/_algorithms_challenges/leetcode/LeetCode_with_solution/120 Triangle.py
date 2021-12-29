@@ -22,21 +22,21 @@ class Solution:
         :param triangle: a list of lists of integers
         :return: integer
         """
-        dp = []
-        length = len(triangle)
+        dp    # list
+        length = l..(triangle)
 
         # trivial
-        dp.insert(0, [num for num in triangle[length-1]])
+        dp.insert(0, [num ___ num __ triangle[length-1]])
         # starting from penultimate row
-        for row in xrange(length-1-1, -1, -1):
+        ___ row __ xrange(length-1-1, -1, -1):
             dp.insert(0, [])
-            for col in xrange(len(triangle[row])):
-                dp[0].append(triangle[row][col]+min(dp[1][col], dp[1][col+1]))  # next level
+            ___ col __ xrange(l..(triangle[row])):
+                dp[0].a..(triangle[row][col]+m..(dp[1][col], dp[1][col+1]))  # next level
 
-        assert len(dp[0])==1
+        ... l..(dp[0])__1
 
-        return dp[0][0]
+        r.. dp[0][0]
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]])

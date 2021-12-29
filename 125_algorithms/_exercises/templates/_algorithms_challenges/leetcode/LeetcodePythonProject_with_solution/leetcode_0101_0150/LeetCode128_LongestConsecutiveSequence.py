@@ -12,23 +12,23 @@ class Solution(object):
         """
         nums = set(nums)
         maxLen = 0
-        for x in nums:
-            __ x-1 not in nums:
+        ___ x __ nums:
+            __ x-1 n.. __ nums:
                 y = x+1
-                while y in nums:
+                while y __ nums:
                     y+=1
                 maxLen = max(y-x, maxLen)
-        return maxLen
+        r.. maxLen
     
     ___ test(self):
         testCases = [
             [100, 4, 200, 1, 3, 2],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.longestConsecutive(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

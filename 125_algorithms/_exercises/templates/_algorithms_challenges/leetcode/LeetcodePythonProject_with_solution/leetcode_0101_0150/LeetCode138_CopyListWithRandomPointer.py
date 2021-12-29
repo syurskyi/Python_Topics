@@ -8,8 +8,8 @@ Created on Feb 9, 2017
 class RandomListNode(object):
     ___ __init__(self, x):
         self.label = x
-        self.next = None
-        self.random = None
+        self.next = N..
+        self.random = N..
 
 class Solution(object):
     ___ copyRandomList(self, head):
@@ -17,7 +17,7 @@ class Solution(object):
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        __ not head: return head
+        __ n.. head: r.. head
         newHead = RandomListNode(head.label)
         newNode = newHead
         hashmap = {head: newHead}
@@ -33,14 +33,14 @@ class Solution(object):
         while node:
             __ node.random:
                 newNode.random = hashmap[node.random]
-            else:
-                newNode.random = None
+            ____:
+                newNode.random = N..
             node = node.next
             newNode = newNode.next
-        return newHead
+        r.. newHead
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,8 +1,8 @@
-from collections import Counter, namedtuple
-import csv
-import re
+____ collections _______ Counter, namedtuple
+_______ csv
+_______ re
 
-import requests
+_______ requests
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
@@ -14,7 +14,7 @@ Character = namedtuple('Character', 'pid name sid align sex appearances year')
 ___ _get_csv_data():
     """Download the marvel csv data and return its decoded content"""
     with requests.Session() as session:
-        return session.get(MARVEL_CSV).content.decode('utf-8')
+        r.. session.get(MARVEL_CSV).content.decode('utf-8')
 
 
 ___ load_data():
@@ -22,7 +22,7 @@ ___ load_data():
        as defined above"""
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
-    for row in reader:
+    ___ row __ reader:
         name = re.sub(r'(.*?)\(.*', r'\1', row['name']).strip()
         yield Character(pid=row['page_id'],
                         name=name,
@@ -33,7 +33,7 @@ ___ load_data():
                         year=row['Year'])
 
 
-characters = list(load_data())
+characters = l..(load_data())
 
 
 # start coding
@@ -43,9 +43,9 @@ ___ most_popular_characters(characters=characters, top=5):
        return top n characters (default 5)
     """
     result = Counter()
-    for char in characters:
-        result[char.name + ',' + char.year] += int(char.appearances) __ char.appearances != '' else 0
-    return [x[0].split(',')[0] for x in result.most_common(top)]
+    ___ char __ characters:
+        result[char.name + ',' + char.year] += int(char.appearances) __ char.appearances != '' ____ 0
+    r.. [x[0].split(',')[0] ___ x __ result.most_common(top)]
 
 
 ___ max_and_min_years_new_characters(characters=characters):
@@ -55,11 +55,11 @@ ___ max_and_min_years_new_characters(characters=characters):
        of (max_year, min_year)
     """
     result = Counter()
-    for char in characters:
-        __ char.year == '':
+    ___ char __ characters:
+        __ char.year __ '':
             continue
         result[char.year] += 1
-    return (result.most_common(1)[0][0], result.most_common()[-1][0])
+    r.. (result.most_common(1)[0][0], result.most_common()[-1][0])
 
 
 ___ get_percentage_female_characters(characters=characters):
@@ -71,8 +71,8 @@ ___ get_percentage_female_characters(characters=characters):
        Return the result rounded to 2 digits
     """
     sexes = Counter()
-    for char in characters:
-        __ char.sex == '':
+    ___ char __ characters:
+        __ char.sex __ '':
             continue
         sexes[char.sex] += 1
-    return round(float(sexes['Female Characters']) / float(sum(sexes.values())) * 100.0, 2)
+    r.. round(float(sexes['Female Characters']) / float(s..(sexes.values())) * 100.0, 2)

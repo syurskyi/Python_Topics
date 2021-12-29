@@ -6,21 +6,21 @@ Created on Apr 10, 2017
 
 class Solution(object):
     ___ reconstructQueue(self, people):
-        res = []
-        people.sort(key=lambda x: (-x[0], x[1]))
-        for p in people:
+        res    # list
+        people.sort(key=l.... x: (-x[0], x[1]))
+        ___ p __ people:
             res.insert(p[1], p)
-        return res
+        r.. res
         
     ___ test(self):
         testCases = [
             [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]],
         ]
-        for people in testCases:
+        ___ people __ testCases:
             print('people: %s' % people)
             result = self.reconstructQueue(people)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

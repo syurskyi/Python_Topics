@@ -15,20 +15,20 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
         dp = [0] * (target + 1)
         dp[0] = 1
 
         # if iterate num first, then the answer will become the number of unique set
         # see the last Solution in this file
-        for amount in range(1, target + 1):
-            for num in nums:
+        ___ amount __ r..(1, target + 1):
+            ___ num __ nums:
                 __ amount >= num:
                     dp[amount] += dp[amount - num]
 
-        return dp[target]
+        r.. dp[target]
 
 
 class Solution:
@@ -43,28 +43,28 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
         dp = [-1] * (target + 1)
         dp[0] = 1
         self.memo_search(nums, target, dp)
-        return dp[target]
+        r.. dp[target]
 
     ___ memo_search(self, nums, remain, dp):
         __ dp[remain] > -1:
-            return dp[remain]
+            r.. dp[remain]
 
         res = 0
 
-        for a in nums:
+        ___ a __ nums:
             __ remain < a:
                 continue
 
             res += self.memo_search(nums, remain - a, dp)
 
         dp[remain] = res
-        return res
+        r.. res
 
 
 class Solution:
@@ -77,25 +77,25 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
-        ans = []
-        nums.sort(reverse=True)
+        ans    # list
+        nums.sort(r.._T..
         self.dfs(nums, target, ans, [])
 
-        return len(ans)
+        r.. l..(ans)
 
     ___ dfs(self, nums, remain, ans, path):
-        __ remain == 0:
-            ans.append(path[::-1])
-            return
+        __ remain __ 0:
+            ans.a..(path[::-1])
+            r..
 
-        for a in nums:
+        ___ a __ nums:
             __ remain < a:
                 continue
 
-            path.append(a)
+            path.a..(a)
             self.dfs(nums, remain - a, ans, path)
             path.pop()
 
@@ -115,14 +115,14 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for num in nums:
-            for amount in range(num, target + 1):
+        ___ num __ nums:
+            ___ amount __ r..(num, target + 1):
                 dp[amount] += dp[amount - num]
 
-        return dp[target]
+        r.. dp[target]

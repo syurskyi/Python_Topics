@@ -1,4 +1,4 @@
-import os
+_______ os
 
 os.mkdir('images')
 os.chdir('images')

@@ -32,4 +32,4 @@ class Solution(object):
     r = (r + num / r) / 2
     r = (r + num / r) / 2
     r = (r + num / r) / 2
-    return r * r == num
+    r.. r * r __ num

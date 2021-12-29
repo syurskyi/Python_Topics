@@ -41,7 +41,7 @@ Note:
 The length of asteroids will be at most 10000.
 Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -54,23 +54,23 @@ class Solution:
 
         stack from left to right, only -> <- will pop the stack
         """
-        stk = []
-        for e in asteroids:
+        stk    # list
+        ___ e __ asteroids:
             while stk and e < 0 < stk[-1]:
                 __ abs(e) > abs(stk[-1]):
                     # -> exploded, <- continues
                     stk.pop()
-                elif abs(e) == abs(stk[-1]):
+                ____ abs(e) __ abs(stk[-1]):
                     # -> <- both exploded
                     stk.pop()
                     break
-                else:
+                ____:
                     # <- exploded, -> continue
                     break
-            else:
-                stk.append(e)
+            ____:
+                stk.a..(e)
 
-        return stk
+        r.. stk
 
     ___ asteroidCollision_complex(self, asteroids: List[int]) -> List[int]:
         """
@@ -81,31 +81,31 @@ class Solution:
 
         only -> <- will collide
         """
-        stk = []
-        n = len(asteroids)
-        for i in range(n-1, -1, -1):
+        stk    # list
+        n = l..(asteroids)
+        ___ i __ r..(n-1, -1, -1):
             cur = asteroids[i]
             while stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur):
                 stk.pop()
 
-            __ stk and cur > 0 and asteroids[stk[-1]] == -cur:
+            __ stk and cur > 0 and asteroids[stk[-1]] __ -cur:
                 stk.pop()
                 continue
 
-            __ not stk:
-                stk.append(i)
+            __ n.. stk:
+                stk.a..(i)
                 continue
 
-            __ not (asteroids[stk[-1]] < 0 and cur > 0) or abs(cur) > abs(asteroids[stk[-1]]):
-                stk.append(i)
+            __ n.. (asteroids[stk[-1]] < 0 and cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]):
+                stk.a..(i)
 
-        return [
+        r.. [
             asteroids[i]
-            for i in stk[::-1]
+            ___ i __ stk[::-1]
         ]
 
 
-__ __name__ == "__main__":
-    assert Solution().asteroidCollision([10, 2, -5]) == [10]
-    assert Solution().asteroidCollision([5, 10, -5]) == [5, 10]
-    assert Solution().asteroidCollision([8, -8]) == []
+__ __name__ __ "__main__":
+    ... Solution().asteroidCollision([10, 2, -5]) __ [10]
+    ... Solution().asteroidCollision([5, 10, -5]) __ [5, 10]
+    ... Solution().asteroidCollision([8, -8]) __ []

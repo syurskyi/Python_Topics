@@ -1,7 +1,7 @@
 """A palindrome is a word, phrase, number, or other sequence of characters
 which reads the same backward as forward"""
-import os
-import urllib.request
+_______ os
+_______ urllib.request
 
 TMP = os.getenv("TMP", "/tmp")
 DICTIONARY = os.path.join(TMP, 'dictionary_m_words.txt')
@@ -14,11 +14,11 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        return (word.lower().strip() for word in f.readlines())
+        r.. (word.lower().strip() ___ word __ f.readlines())
 
 
 ___ _clean_word(word):
-    return "".join([char.lower() for char in word __ char.isalnum()])
+    r.. "".join([char.lower() ___ char __ word __ char.isalnum()])
 
 
 ___ is_palindrome(word):
@@ -27,24 +27,24 @@ ___ is_palindrome(word):
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
     word_clean = _clean_word(word)
-    __ word_clean == word_clean[::-1]:
-        return True
-    return False
+    __ word_clean __ word_clean[::-1]:
+        r.. True
+    r.. False
 
 
 ___ get_longest_palindrome(words_ N..
     """Given a list of words return the longest palindrome
        If called without argument use the load_dictionary helper
        to populate the words list"""
-    __ words == None:
+    __ words __ N..
         words = load_dictionary()
 
     palindrome = {}
-    for word in words:
+    ___ word __ words:
         __ is_palindrome(word):
-            palindrome_length = len(_clean_word(word))
+            palindrome_length = l..(_clean_word(word))
             palindrome[word] = palindrome_length
-    return max(palindrome, key=palindrome.get)
+    r.. max(palindrome, key=palindrome.get)
 
 
 #if __name__ == "__main__":

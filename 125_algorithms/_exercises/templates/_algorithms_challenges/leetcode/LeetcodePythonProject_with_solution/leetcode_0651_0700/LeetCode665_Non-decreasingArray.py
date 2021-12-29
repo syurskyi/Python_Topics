@@ -11,15 +11,15 @@ class Solution(object):
         """
         prev = nums[0]
         modified = False
-        for i in range(1, len(nums)):
+        ___ i __ r..(1, l..(nums)):
             __ nums[i] < prev:
                 __ modified:
-                    return False
+                    r.. False
                 modified = True
                 __ i-2 >= 0 and nums[i-2] > nums[i]:
                     continue
             prev = nums[i]
-        return True
+        r.. True
     
     ___ checkPossibility_modifying(self, nums):
         """
@@ -27,15 +27,15 @@ class Solution(object):
         :rtype: bool
         """
         modified = 0
-        for i in range(1, len(nums)):
+        ___ i __ r..(1, l..(nums)):
             __ nums[i-1] > nums[i]:
-                __ modified != 0: return False
+                __ modified != 0: r.. False
                 modified += 1
-                __ i - 2 < 0 or nums[i-2] <= nums[i]:
+                __ i - 2 < 0 o. nums[i-2] <= nums[i]:
                     nums[i-1] = nums[i]
-                else:
+                ____:
                     nums[i] = nums[i-1]
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -47,11 +47,11 @@ class Solution(object):
             [5, 1, 9, 8, 3],
             [1, 2, 3, 1, 3],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.checkPossibility(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

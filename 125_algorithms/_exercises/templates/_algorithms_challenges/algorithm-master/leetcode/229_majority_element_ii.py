@@ -4,37 +4,37 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not nums:
-            return []
+        __ n.. nums:
+            r.. []
 
-        a1 = a2 = None
+        a1 = a2 = N..
         c1 = c2 = 0
 
-        for num in nums:
-            __ a1 == num:
+        ___ num __ nums:
+            __ a1 __ num:
                 c1 += 1
-            elif a2 == num:
+            ____ a2 __ num:
                 c2 += 1
-            elif c1 == 0:
+            ____ c1 __ 0:
                 a1, c1 = num, 1
-            elif c2 == 0:
+            ____ c2 __ 0:
                 a2, c2 = num, 1
-            else:
+            ____:
                 c1 -= 1
                 c2 -= 1
 
         c1 = c2 = 0
 
-        for num in nums:
-            __ num == a1:
+        ___ num __ nums:
+            __ num __ a1:
                 c1 += 1
-            elif num == a2:
+            ____ num __ a2:
                 c2 += 1
 
-        for a, c in ((a1, c1), (a2, c2)):
-            __ c > len(nums) // 3:
-                ans.append(a)
+        ___ a, c __ ((a1, c1), (a2, c2)):
+            __ c > l..(nums) // 3:
+                ans.a..(a)
 
-        return ans
+        r.. ans

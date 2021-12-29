@@ -35,7 +35,7 @@ class User:
            and using title case for both.
         """
         # TODO 1: you code
-        return f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
+        r.. f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
 
     @property
     ___ username(self):
@@ -48,7 +48,7 @@ class User:
         """
         f = self.first_name[0:1].lower()
         l = self.last_name[0:7].lower()
-        return f"{f}{l}"
+        r.. f"{f}{l}"
 
     # TODO 3: you code
     #
@@ -59,13 +59,13 @@ class User:
     # see also TESTS for required output
 
     ___ __str__(self):
-        return f"{self.first_name.capitalize()} {self.last_name.capitalize()} ({self.username})"
+        r.. f"{self.first_name.capitalize()} {self.last_name.capitalize()} ({self.username})"
 
     ___ __repr__(self):
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """
-        return f"{self.__class__.__name__}(\"{self.first_name}\", \"{self.last_name}\")"
+        r.. f"{self.__class__.__name__}(\"{self.first_name}\", \"{self.last_name}\")"
 
 u = User("bob", "belderbos")
 

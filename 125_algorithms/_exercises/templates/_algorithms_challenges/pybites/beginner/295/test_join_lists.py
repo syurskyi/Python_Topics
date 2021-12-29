@@ -1,10 +1,10 @@
-import pytest
+_______ pytest
 
-from join_lists import join_lists
+____ join_lists _______ join_lists
 
 
 @pytest.mark.parametrize('input_list, sep, expected', [
-                        ([], '&', None),
+                        ([], '&', N..),
                         ([['a']], '|', ['a']),
                         ([['a', 'b']], '&', ['a', 'b']),
                         ([['a', 'b'], ['c']], '&', ['a', 'b', '&', 'c']),
@@ -12,4 +12,4 @@ from join_lists import join_lists
                          ['a', 'b', '+', 'c', '+', 'd', 'e']),
 ])
 ___ test_join_lists(input_list, sep, expected):
-    assert join_lists(input_list, sep) == expected
+    ... join_lists(input_list, sep) __ expected

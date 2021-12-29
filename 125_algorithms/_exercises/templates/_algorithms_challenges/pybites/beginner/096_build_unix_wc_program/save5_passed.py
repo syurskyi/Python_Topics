@@ -1,4 +1,4 @@
-import os
+_______ os
 
 
 ___ wc(file_):
@@ -10,14 +10,14 @@ ___ wc(file_):
     f = open(file_name, 'r')
     text = f.read()
     f.close()
-    char = len(text)
-    line = len(text.splitlines())
-    word = len(text.split())
-    return f'{line} {word} {char} /tmp/{file_name}'
+    char = l..(text)
+    line = l..(text.splitlines())
+    word = l..(text.split())
+    r.. f'{line} {word} {char} /tmp/{file_name}'
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # make it work from cli like original unix wc
-    import sys
-    __ len(sys.argv) > 1:
+    _______ sys
+    __ l..(sys.argv) > 1:
         print(wc(sys.argv[1:]))

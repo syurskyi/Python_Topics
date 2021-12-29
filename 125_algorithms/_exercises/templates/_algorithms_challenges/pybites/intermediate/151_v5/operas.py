@@ -1,5 +1,5 @@
-from collections import namedtuple
-from datetime import datetime
+____ collections _______ namedtuple
+____ datetime _______ datetime
 
 Composer = namedtuple('Composer', 'name born died')
 Opera = namedtuple('Opera', 'author play date')
@@ -51,11 +51,11 @@ operas = [
 
 
 ___ _get_date(date_str):
-    return datetime.date(datetime.strptime(date_str, "%d %B %Y"))
+    r.. datetime.date(datetime.strptime(date_str, "%d %B %Y"))
 
 
 ___ _alive_for_opera(composer: Composer, opera: Opera) -> bool:
-    return _get_date(composer.born) < _get_date(opera.date) < _get_date(composer.died)
+    r.. _get_date(composer.born) < _get_date(opera.date) < _get_date(composer.died)
 
 
 ___ operas_both_at_premiere(guest, composer):
@@ -74,9 +74,9 @@ ___ operas_both_at_premiere(guest, composer):
 
        Returns a list (or generator) of titles of operas.
     """
-    __ guest not in composers or composer not in composers:
+    __ guest n.. __ composers o. composer n.. __ composers:
         raise ValueError
-    for opera in operas:
-        __ opera.author == composer:
+    ___ opera __ operas:
+        __ opera.author __ composer:
             __ _alive_for_opera(composers[composer], opera) and _alive_for_opera(composers[guest], opera):
                 yield opera.play

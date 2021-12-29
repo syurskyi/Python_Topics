@@ -23,7 +23,7 @@ class Solution(object):
                 d += num % 10
                 num /= 10
             num = d
-        return num
+        r.. num
 
 
 s = Solution()

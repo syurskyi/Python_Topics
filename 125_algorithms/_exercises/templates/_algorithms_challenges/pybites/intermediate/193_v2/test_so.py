@@ -1,5 +1,5 @@
-import pytest
-from so import top_python_questions
+_______ pytest
+____ so _______ top_python_questions
 
 actual_return = top_python_questions()
 expected_return = [
@@ -29,4 +29,4 @@ expected_return = [
                          zip(actual_return, expected_return)
                          )
 ___ test_top_python_questions(actual, expected):
-    assert actual == expected
+    ... actual __ expected

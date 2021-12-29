@@ -15,19 +15,19 @@ class MagicDictionary(object):
         """
         Initialize your data structure here.
         """
-        self.root = TreeNode(None)
+        self.root = TreeNode(N..)
 
-    ___ buildDict(self, dict):
+    ___ buildDict(self, d..):
         """
         Build a dictionary through a list of words
         :type dict: List[str]
         :rtype: void
         """
-        self.root = TreeNode(None)
-        for word in dict:
+        self.root = TreeNode(N..)
+        ___ word __ d..:
             node = self.root
-            for c in word:
-                __ c not in node.children:
+            ___ c __ word:
+                __ c n.. __ node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
@@ -39,24 +39,24 @@ class MagicDictionary(object):
         :type word: str
         :rtype: bool
         """
-        return self.helper(self.root, word, 0, False)
+        r.. self.helper(self.root, word, 0, False)
     
     ___ helper(self, node, word, ind, diffFlag):
-        __ not node: return False
-        __ ind == len(word):
+        __ n.. node: r.. False
+        __ ind __ l..(word):
             __ node.isLeaf and diffFlag:
-                return True
-            return False
+                r.. True
+            r.. False
         c = word[ind]
-        for c0 in node.children:
+        ___ c0 __ node.children:
             __ c0 != c and diffFlag:
                 continue
-            __ self.helper(node.children.get(c, None), word, ind+1, diffFlag) or\
+            __ self.helper(node.children.get(c, N..), word, ind+1, diffFlag) o.\
                 (c0 != c and self.helper(node.children[c0], word, ind+1, True)):
-                return True
-        return False
+                r.. True
+        r.. False
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     magicDict = MagicDictionary()
     magicDict.buildDict(['hello', 'leetcode', 'hallo'])
     print(magicDict.search('hello'))

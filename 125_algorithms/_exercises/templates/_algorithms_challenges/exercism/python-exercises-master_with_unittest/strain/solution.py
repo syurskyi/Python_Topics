@@ -1,14 +1,14 @@
 ___ keep(seq, pred):
-    res = []
-    for el in seq:
+    res    # list
+    ___ el __ seq:
         __ pred(el):
-            res.append(el)
-    return res
+            res.a..(el)
+    r.. res
 
 
 ___ discard(seq, pred):
-    res = []
-    for el in seq:
-        __ not pred(el):
-            res.append(el)
-    return res
+    res    # list
+    ___ el __ seq:
+        __ n.. pred(el):
+            res.a..(el)
+    r.. res

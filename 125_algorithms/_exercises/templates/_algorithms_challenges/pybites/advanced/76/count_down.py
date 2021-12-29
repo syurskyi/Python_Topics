@@ -1,16 +1,16 @@
-from functools import singledispatch
+____ functools _______ singledispatch
 
 
 @singledispatch
 ___ count_down(arg):
-    __ not isinstance(arg, (str, tuple, set,
-                            int, float, dict, range)):
+    __ n.. isi..(arg, (str, tuple, set,
+                            int, float, d.., r..)):
         raise ValueError
 
 
-@count_down.register(list)
+@count_down.register(l..)
 ___ _(arg):
-    for k in range(len(arg)):
+    ___ k __ r..(l..(arg)):
         print(''.join(map(str, arg)))
         arg.pop()
 
@@ -18,17 +18,17 @@ ___ _(arg):
 @count_down.register(str)
 @count_down.register(tuple)
 @count_down.register(set)
-@count_down.register(range)
+@count_down.register(r..)
 ___ _(arg):
-    count_down(list(arg))
+    count_down(l..(arg))
 
 
 @count_down.register(int)
 @count_down.register(float)
 ___ _(arg):
-    count_down(list(str(arg)))
+    count_down(l..(str(arg)))
 
 
-@count_down.register(dict)
+@count_down.register(d..)
 ___ _(arg):
-    count_down(list(arg.keys()))
+    count_down(l..(arg.keys()))

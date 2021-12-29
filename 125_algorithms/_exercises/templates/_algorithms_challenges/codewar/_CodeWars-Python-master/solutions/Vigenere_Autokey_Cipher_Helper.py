@@ -11,29 +11,29 @@ class VigenereAutokeyCipher:
         self.abc = abc
 
     ___ encode(self, text):
-        result = []
-        key = self.key + ''.join([t for t in text __ t in self.abc])
+        result    # list
+        key = self.key + ''.join([t ___ t __ text __ t __ self.abc])
         index = 0
-        for c in text:
-            __ c in self.abc:
+        ___ c __ text:
+            __ c __ self.abc:
                 offset = self.abc.index(key[index])
-                result.append(self.abc[(self.abc.index(c) + offset) % len(self.abc)])
+                result.a..(self.abc[(self.abc.index(c) + offset) % l..(self.abc)])
                 index += 1
-            else:
-                result.append(c)
-        return ''.join(result)
+            ____:
+                result.a..(c)
+        r.. ''.join(result)
 
     ___ decode(self, text):
-        result = []
+        result    # list
         key = self.key
         index = 0
-        for c in text:
-            __ c in self.abc:
+        ___ c __ text:
+            __ c __ self.abc:
                 offset = self.abc.index(key[index])
-                decoded = self.abc[(self.abc.index(c) - offset) % len(self.abc)]
-                result.append(decoded)
+                decoded = self.abc[(self.abc.index(c) - offset) % l..(self.abc)]
+                result.a..(decoded)
                 key += decoded
                 index += 1
-            else:
-                result.append(c)
-        return ''.join(result)
+            ____:
+                result.a..(c)
+        r.. ''.join(result)

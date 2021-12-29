@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -8,24 +8,24 @@ class Solution(object):
     :type k: int
     :rtype: bool
     """
-    __ not nums:
-      return False
-    __ k == 0:
-      return False
+    __ n.. nums:
+      r.. False
+    __ k __ 0:
+      r.. False
     k = k + 1
-    k = min(k, len(nums))
+    k = m..(k, l..(nums))
 
     window = deque([])
     d = set()
-    for i in range(0, k):
-      __ nums[i] in d:
-        return True
+    ___ i __ r..(0, k):
+      __ nums[i] __ d:
+        r.. True
       d |= {nums[i]}
-      window.append(i)
-    for i in range(k, len(nums)):
+      window.a..(i)
+    ___ i __ r..(k, l..(nums)):
       d -= {nums[window.popleft()]}
-      __ nums[i] in d:
-        return True
+      __ nums[i] __ d:
+        r.. True
       d |= {nums[i]}
-      window.append(i)
-    return False
+      window.a..(i)
+    r.. False

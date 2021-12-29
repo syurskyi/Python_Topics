@@ -10,21 +10,21 @@ class Solution(object):
         :rtype: int
         """
         islands = set()
-        m, n = len(grid), len(grid[0])
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 1:
+        m, n = l..(grid), l..(grid[0])
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 1:
                     island = set()
                     self.dfs(i, j, i, j, m, n, grid, island)
                     islands.add(tuple(island))
-        return len(islands)
+        r.. l..(islands)
     
     ___ dfs(self, i0, j0, i, j, m, n, grid, island):
-        __ i >= m or i < 0 or j >= n or j < 0 or grid[i][j] != 1:
-            return
+        __ i >= m o. i < 0 o. j >= n o. j < 0 o. grid[i][j] != 1:
+            r..
         grid[i][j] = -1
         island.add((i-i0, j-j0))
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
             self.dfs(i0, j0, x, y, m, n, grid, island)
     
     ___ test(self):
@@ -77,13 +77,13 @@ class Solution(object):
                 [0,1,0,0,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,0,0,1,0]
             ]
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             print('grid:')
 #             print('\n'.join(grid))
-            grid = [[int(c) for c in row ] for row in grid]
+            grid = [[int(c) ___ c __ row ] ___ row __ grid]
             result = self.numDistinctIslands(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

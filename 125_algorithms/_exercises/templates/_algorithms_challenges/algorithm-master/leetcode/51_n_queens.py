@@ -4,20 +4,20 @@ class Solution:
         :type n: int
         :rtype: List[List[str]]
         """
-        ans = []
-        __ not n:
-            return ans
+        ans    # list
+        __ n.. n:
+            r.. ans
 
-        G = [['.'] * n for _ in range(n)]
+        G = [['.'] * n ___ _ __ r..(n)]
         self.dfs(G, 0, ans)
-        return ans
+        r.. ans
 
     ___ dfs(self, G, y, ans):
-        __ y == len(G):
-            ans.append(self.clone_board(G))
-            return
+        __ y __ l..(G):
+            ans.a..(self.clone_board(G))
+            r..
 
-        for x in range(len(G)):
+        ___ x __ r..(l..(G)):
             __ self.is_valid(G, x, y):
                 G[x][y] = 'Q'
                 self.dfs(G, y + 1, ans)
@@ -32,18 +32,18 @@ class Solution:
         3. `x - i = y - j` => `x + j = y + i` => left diagonal line
         4. `x - i = -(y - j)` => `x + y = i + j` => right diagonal line
         """
-        for i in range(len(G)):
-            for j in range(y):
+        ___ i __ r..(l..(G)):
+            ___ j __ r..(y):
                 __ G[i][j] != 'Q':
                     continue
-                __ (x + j == y + i or
-                    x + y == i + j or
-                    x == i):
-                    return False
-        return True
+                __ (x + j __ y + i o.
+                    x + y __ i + j o.
+                    x __ i):
+                    r.. False
+        r.. True
 
     ___ clone_board(self, G):
-        res = []
-        for R in G:
-            res.append(''.join(R))
-        return res
+        res    # list
+        ___ R __ G:
+            res.a..(''.join(R))
+        r.. res

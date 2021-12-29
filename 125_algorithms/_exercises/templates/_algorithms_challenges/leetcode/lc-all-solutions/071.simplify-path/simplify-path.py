@@ -5,13 +5,13 @@ class Solution(object):
     :rtype: str
     """
     path = path.split("/")
-    stack = []
-    for p in path:
-      __ p in ["", "."]:
+    stack    # list
+    ___ p __ path:
+      __ p __ ["", "."]:
         continue
-      __ p == "..":
+      __ p __ "..":
         __ stack:
           stack.pop()
-      else:
-        stack.append(p)
-    return "/" + "/".join(stack)
+      ____:
+        stack.a..(p)
+    r.. "/" + "/".join(stack)

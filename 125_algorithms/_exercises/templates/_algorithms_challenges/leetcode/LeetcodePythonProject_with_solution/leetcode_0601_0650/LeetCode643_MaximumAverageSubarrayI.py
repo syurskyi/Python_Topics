@@ -10,15 +10,15 @@ class Solution(object):
         :type k: int
         :rtype: float
         """
-        __ k <= 0: return 0
+        __ k <= 0: r.. 0
         sumVal = 0
         maxVal = float('-inf')
-        for i, num in enumerate(nums):
+        ___ i, num __ enumerate(nums):
             sumVal += num
             __ i >= k-1:
                 maxVal = max(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
-        return float(maxVal)/k
+        r.. float(maxVal)/k
     
     ___ test(self):
         testCases = [
@@ -31,12 +31,12 @@ class Solution(object):
                 3,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.findMaxAverage(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

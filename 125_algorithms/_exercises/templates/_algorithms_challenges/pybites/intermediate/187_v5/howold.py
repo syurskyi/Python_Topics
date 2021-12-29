@@ -1,6 +1,6 @@
-from dataclasses import dataclass
-from dateutil.parser import parse
-from dateutil.relativedelta import relativedelta
+____ dataclasses _______ dataclass
+____ dateutil.parser _______ parse
+____ dateutil.relativedelta _______ relativedelta
 
 RETURN_FORMAT = '{name} was {age} years old when {movie} came out.'
 
@@ -26,4 +26,4 @@ ___ get_age(actor: Actor, movie: Movie) -> str:
        Wesley Snipes was 28 years old when New Jack City came out.
     """
     age = relativedelta(parse(movie.release_date), parse(actor.born)).years
-    return RETURN_FORMAT.format(name=actor.name, movie=movie.title, age=age)
+    r.. RETURN_FORMAT.format(name=actor.name, movie=movie.title, age=age)

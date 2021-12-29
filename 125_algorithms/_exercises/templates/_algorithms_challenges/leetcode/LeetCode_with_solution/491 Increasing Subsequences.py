@@ -28,18 +28,18 @@ class Solution:
         :rtype: List[List[int]]
         """
         subs = set()
-        for n in nums:
+        ___ n __ nums:
             subs |= set([
                 sub + (n,)
-                for sub in subs
+                ___ sub __ subs
                 __ n >= sub[-1]
             ])
             subs.add((n,))
             
-        return [
-            list(sub)
-            for sub in subs
-            __ len(sub) >= 2
+        r.. [
+            l..(sub)
+            ___ sub __ subs
+            __ l..(sub) >= 2
         ]
 
 
@@ -53,18 +53,18 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        l = len(nums)
+        l = l..(nums)
         F = [
             [(nums[i],)]
-            for i in range(l)
+            ___ i __ r..(l)
         ]
         ret = set()
-        for i in range(1, l):
-            for j in range(i):
+        ___ i __ r..(1, l):
+            ___ j __ r..(i):
                 __ nums[i] >= nums[j]:
-                    for t in F[j]:
+                    ___ t __ F[j]:
                         cur = t + (nums[i],)
                         ret.add(cur)
-                        F[i].append(cur)
+                        F[i].a..(cur)
 
-        return list(map(list, ret))
+        r.. l..(map(l.., ret))

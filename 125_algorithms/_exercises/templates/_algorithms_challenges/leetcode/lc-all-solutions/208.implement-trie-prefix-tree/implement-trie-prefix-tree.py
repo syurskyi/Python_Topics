@@ -3,7 +3,7 @@ class TrieNode(object):
     """
     Initialize your data structure here.
     """
-    self.children = [None] * 26
+    self.children = [N..] * 26
     self.isWord = False
     self.word = ""
 
@@ -20,11 +20,11 @@ class Trie(object):
     :rtype: void
     """
     p = self.root
-    for c in word:
+    ___ c __ word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
         p = p.children[cVal]
-      else:
+      ____:
         newNode = TrieNode()
         p.children[cVal] = newNode
         p = newNode
@@ -34,13 +34,13 @@ class Trie(object):
 
   ___ helper(self, word):
     p = self.root
-    for c in word:
+    ___ c __ word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
         p = p.children[cVal]
-      else:
-        return None
-    return p
+      ____:
+        r.. N..
+    r.. p
 
   ___ search(self, word):
     """
@@ -50,8 +50,8 @@ class Trie(object):
     """
     p = self.helper(word)
     __ p and p.isWord:
-      return True
-    return False
+      r.. True
+    r.. False
 
   ___ startsWith(self, prefix):
     """
@@ -61,8 +61,8 @@ class Trie(object):
     :rtype: bool
     """
     __ self.helper(prefix):
-      return True
-    return False
+      r.. True
+    r.. False
 
 # Your Trie object will be instantiated and called as such:
 # trie = Trie()

@@ -2,8 +2,8 @@
 # Score: 10
 
 
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
-aliceScore = sum([(1 __ a[i] > b[i] else 0) for i in range(3)])
-bobScore = sum([(1 __ a[i] < b[i] else 0) for i in range(3)])
+a = l..(map(int, input().split()))
+b = l..(map(int, input().split()))
+aliceScore = s..([(1 __ a[i] > b[i] ____ 0) ___ i __ r..(3)])
+bobScore = s..([(1 __ a[i] < b[i] ____ 0) ___ i __ r..(3)])
 print(aliceScore, bobScore)

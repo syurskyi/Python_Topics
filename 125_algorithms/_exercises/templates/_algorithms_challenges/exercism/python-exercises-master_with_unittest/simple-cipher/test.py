@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from simple_cipher import Caesar, Cipher
+____ simple_cipher _______ Caesar, Cipher
 
 
 class CipherTest(unittest.TestCase):
@@ -62,7 +62,7 @@ class CipherTest(unittest.TestCase):
     ___ test_cipher_random_key(self):
         c = Cipher()
         self.assertTrue(
-            len(c.key) >= 100,
+            l..(c.key) >= 100,
             'A random key must be generated when no key is given!')
         self.assertTrue(c.key.islower() and c.key.isalpha(),
                         'All items in the key must be chars and lowercase!')
@@ -72,5 +72,5 @@ class CipherTest(unittest.TestCase):
         self.assertRaises(ValueError, Cipher, 'aBcde')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

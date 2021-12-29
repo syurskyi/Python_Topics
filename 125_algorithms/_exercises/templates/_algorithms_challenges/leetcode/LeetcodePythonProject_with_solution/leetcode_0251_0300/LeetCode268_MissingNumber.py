@@ -10,12 +10,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
-        length = len(nums)
+        __ n.. nums: r.. 0
+        length = l..(nums)
         sumVal = (length+1)*(length)/2
         result = sumVal
-        for num in nums:
+        ___ num __ nums:
             result -= num
-        return result
+        r.. result
     
     

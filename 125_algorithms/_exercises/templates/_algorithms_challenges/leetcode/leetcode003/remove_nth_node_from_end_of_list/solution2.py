@@ -7,20 +7,20 @@
 class Solution:
     # @return a ListNode
     ___ removeNthFromEnd(self, head, n):
-        __ head is None:
-            return head
+        __ head __ N..
+            r.. head
         h = head
-        p = None
+        p = N..
         i = 0
-        while head is not None:
-            __ i == n:
+        while head __ n.. N..
+            __ i __ n:
                 p = h
-            elif i > n:
+            ____ i > n:
                 p = p.next
             i += 1
             head = head.next
-        __ p is None:
-            return h.next
-        else:
+        __ p __ N..
+            r.. h.next
+        ____:
             p.next = p.next.next
-        return h
+        r.. h

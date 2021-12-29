@@ -41,19 +41,19 @@ class Solution:
         """
         two pointers
         """
-        m, n = len(name), len(typed)
+        m, n = l..(name), l..(typed)
         i, j = 0, 0
         while i < m and j < n:
-            __ name[i] == typed[j]:
+            __ name[i] __ typed[j]:
                 i += 1
                 j += 1
-            elif j - 1 >= 0 and typed[j-1] == typed[j]:
+            ____ j - 1 >= 0 and typed[j-1] __ typed[j]:
                 j += 1
-            else:
-                return False
+            ____:
+                r.. False
 
         # tail
-        while j - 1 >= 0 and j < n and typed[j-1] == typed[j]:
+        while j - 1 >= 0 and j < n and typed[j-1] __ typed[j]:
             j += 1
 
-        return i == m and j == n
+        r.. i __ m and j __ n

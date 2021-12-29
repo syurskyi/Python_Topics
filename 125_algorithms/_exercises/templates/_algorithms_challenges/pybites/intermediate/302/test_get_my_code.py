@@ -1,9 +1,9 @@
-import filecmp
-from urllib.request import urlretrieve
+_______ filecmp
+____ urllib.request _______ urlretrieve
 
-import pytest
+_______ pytest
 
-from get_my_code import get_passing_code, url, tmp
+____ get_my_code _______ get_passing_code, url, tmp
 
 
 @pytest.mark.parametrize('actual_filename, expected_filename', [
@@ -16,4 +16,4 @@ ___ test_compare_files(actual_filename, expected_filename):
     get_passing_code()
     urlretrieve(url.format(filename=expected_filename),
                 expected)
-    assert filecmp.cmp(actual, expected)
+    ... filecmp.cmp(actual, expected)

@@ -1,7 +1,7 @@
-import unittest
-import operator
+_______ unittest
+_______ operator
 
-import list_ops
+_______ list_ops
 
 
 class ListOpsTest(unittest.TestCase):
@@ -9,19 +9,19 @@ class ListOpsTest(unittest.TestCase):
     # tests for map
     ___ test_map_square(self):
         self.assertEqual(
-            list_ops.map_clone(lambda x: x**2,
+            list_ops.map_clone(l.... x: x**2,
                                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             [1, 4, 9, 16, 25, 36, 49, 64, 81, 100])
 
     ___ test_map_cube(self):
         self.assertEqual(
-            list_ops.map_clone(lambda x: x**3,
+            list_ops.map_clone(l.... x: x**3,
                                [-1, 2, -3, 4, -5, 6, -7, 8, -9, 10]),
             [-1, 8, -27, 64, -125, 216, -343, 512, -729, 1000])
 
     ___ test_map_absolute(self):
         self.assertEqual(
-            list_ops.map_clone(lambda x: abs(x),
+            list_ops.map_clone(l.... x: abs(x),
                                [-1, 2, -3, 4, -5, 6, -7, 8, -9, 10]),
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
@@ -39,12 +39,12 @@ class ListOpsTest(unittest.TestCase):
     # tests for filter
     ___ test_filter_odd(self):
         self.assertEqual(
-            list_ops.filter_clone(lambda x: x % 2 != 0, [1, 2, 3, 4, 5, 6]),
+            list_ops.filter_clone(l.... x: x % 2 != 0, [1, 2, 3, 4, 5, 6]),
             [1, 3, 5])
 
     ___ test_filter_even(self):
         self.assertEqual(
-            list_ops.filter_clone(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 6]),
+            list_ops.filter_clone(l.... x: x % 2 __ 0, [1, 2, 3, 4, 5, 6]),
             [2, 4, 6])
 
     # tests for reverse
@@ -61,15 +61,15 @@ class ListOpsTest(unittest.TestCase):
     # tests for append
     ___ test_append_tuple(self):
         self.assertEqual(
-            list_ops.append(["10", "python"], "hello"),
+            list_ops.a..(["10", "python"], "hello"),
             ["10", "python", "hello"])
 
     ___ test_append_range(self):
         self.assertEqual(
-            list_ops.append([100], range(1000)), [100, range(1000)])
+            list_ops.a..([100], r..(1000)), [100, r..(1000)])
 
     ___ test_append_to_empty(self):
-        self.assertEqual(list_ops.append([], 42), [42])
+        self.assertEqual(list_ops.a..([], 42), [42])
 
     # tests for foldl
     ___ test_foldl_sum(self):
@@ -115,12 +115,12 @@ class ListOpsTest(unittest.TestCase):
 
     ___ test_concat_nothing(self):
         self.assertEqual(
-            list_ops.concat(['orange', 'apple', 'banana'], None),
+            list_ops.concat(['orange', 'apple', 'banana'], N..),
             ["orange", "apple", "banana"])
 
     ___ test_concat_empty(self):
         self.assertEqual(list_ops.concat([], []), [])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

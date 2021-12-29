@@ -16,46 +16,46 @@ class Solution:
         :type D: List[str]
         :rtype: int
         """
-        __ (not s or not e or
-            len(s) != len(e) or not D):
-            return 0
-        __ s == e:
-            return 1
+        __ (n.. s o. n.. e o.
+            l..(s) != l..(e) o. n.. D):
+            r.. 0
+        __ s __ e:
+            r.. 1
 
-        __ s not in D:
-            D.append(s)
-        __ e not in D:
-            D.append(e)
+        __ s n.. __ D:
+            D.a..(s)
+        __ e n.. __ D:
+            D.a..(e)
 
-        n = len(s)
-        next_words = [None] * n
-        for i in range(n):
+        n = l..(s)
+        next_words = [N..] * n
+        ___ i __ r..(n):
             next_words[i] = _words = {}
-            for word in D:
+            ___ word __ D:
                 key = word[:i] + word[i + 1:]
-                __ key not in _words:
+                __ key n.. __ _words:
                     _words[key] = set()
                 _words[key].add(word)
 
         queue = [e]
         distance = {e: 1}
-        for word in queue:
-            for _word in self.get_next_word(word, next_words):
-                __ _word in distance:
+        ___ word __ queue:
+            ___ _word __ self.get_next_word(word, next_words):
+                __ _word __ distance:
                     continue
                 distance[_word] = distance[word] + 1
-                __ _word == s:
-                    return distance[_word]
-                queue.append(_word)
+                __ _word __ s:
+                    r.. distance[_word]
+                queue.a..(_word)
 
-        return 0
+        r.. 0
 
     ___ get_next_word(self, word, next_words):
-        for i in range(len(word)):
+        ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
-            __ key not in next_words[i]:
+            __ key n.. __ next_words[i]:
                 continue
-            for _word in next_words[i][key]:
-                __ _word == word:
+            ___ _word __ next_words[i][key]:
+                __ _word __ word:
                     continue
                 yield _word

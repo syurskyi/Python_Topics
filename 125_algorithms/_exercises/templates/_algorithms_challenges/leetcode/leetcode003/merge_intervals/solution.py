@@ -8,26 +8,26 @@ class Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
     ___ merge(self, intervals):
-        __ not intervals:
-            return []
-        n = len(intervals)
-        __ n == 1:
-            return intervals
-        else:
+        __ n.. intervals:
+            r.. []
+        n = l..(intervals)
+        __ n __ 1:
+            r.. intervals
+        ____:
             # Sort the intervals by start value
-            intervals.sort(key=lambda x: x.start)
-            res = []
-            res.append(intervals[0])
+            intervals.sort(key=l.... x: x.start)
+            res    # list
+            res.a..(intervals[0])
             cur_end = intervals[0].end
             cur_index = 0
-            for interval in intervals[1:]:
+            ___ interval __ intervals[1:]:
                 __ interval.start <= cur_end:
                     __ interval.end > cur_end:
                         res[cur_index].end = interval.end
                         cur_end = interval.end
-                else:
+                ____:
                     # Added a non-overlapping interval
-                    res.append(interval)
+                    res.a..(interval)
                     cur_end = interval.end
                     cur_index += 1
-            return res
+            r.. res

@@ -1,5 +1,5 @@
-import types
-from itertools import islice
+_______ types
+____ itertools _______ islice
 
 
 ___ group(iterable, n):
@@ -16,19 +16,19 @@ ___ group(iterable, n):
                where each group is a list of n elements.
     """
 
-    results = []
-    iterable = list(iterable)
-    for i in range(0,len(iterable),n):
-        results.append(list(islice(iterable,i,i+n)))
+    results    # list
+    iterable = l..(iterable)
+    ___ i __ r..(0,l..(iterable),n):
+        results.a..(l..(islice(iterable,i,i+n)))
 
-    return results
-
-
-
-    return list(islice(iterable,0,len(iterable),n))
+    r.. results
 
 
-__ __name__ == '__main__':
+
+    r.. l..(islice(iterable,0,l..(iterable),n))
+
+
+__ __name__ __ '__main__':
     iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     n = 3
     ret = group(iterable, n)

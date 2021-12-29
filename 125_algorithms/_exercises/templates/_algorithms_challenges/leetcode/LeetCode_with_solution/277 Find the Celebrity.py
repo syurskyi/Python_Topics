@@ -22,18 +22,18 @@ class Solution(object):
         j = n-1
         while i < j:
             nxt_i, nxt_j = i, j
-            __ knows(i, j) or not knows(j, i):
+            __ knows(i, j) o. n.. knows(j, i):
                 nxt_i += 1
-            __ knows(j, i) or not knows(i, j):
+            __ knows(j, i) o. n.. knows(i, j):
                 nxt_j -= 1
             i, j = nxt_i, nxt_j
 
         celebrity = i
-        for i in xrange(n):
-            __ i != celebrity and (not knows(i, celebrity) or knows(celebrity, i)):
-                return -1
+        ___ i __ xrange(n):
+            __ i != celebrity and (n.. knows(i, celebrity) o. knows(celebrity, i)):
+                r.. -1
 
-        return celebrity
+        r.. celebrity
 
     ___ findCelebrity_set(self, n):
         """
@@ -43,22 +43,22 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        V = set(range(n))
+        V = set(r..(n))
 
-        while len(V) > 1:
+        while l..(V) > 1:
             a = V.pop()
             b = V.pop()
-            __ knows(a, b) and not knows(b, a):
+            __ knows(a, b) and n.. knows(b, a):
                 V.add(b)
-            elif not knows(a, b) and knows(b, a):
+            ____ n.. knows(a, b) and knows(b, a):
                 V.add(a)
 
-        __ not V:
-            return -1
+        __ n.. V:
+            r.. -1
 
         celebrity = V.pop()
-        for i in xrange(n):
-            __ i != celebrity and (not knows(i, celebrity) or knows(celebrity, i)):
-                return -1
+        ___ i __ xrange(n):
+            __ i != celebrity and (n.. knows(i, celebrity) o. knows(celebrity, i)):
+                r.. -1
 
-        return celebrity
+        r.. celebrity

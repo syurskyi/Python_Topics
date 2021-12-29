@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 CHARACTERS = ['Red Riding Hood',
               # we're omitting 'mother' here for simplicity
@@ -54,19 +54,19 @@ ___ make_character_index(text=text, characters=CHARACTERS):
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    result = defaultdict(list)
-    for x, s in enumerate(text.splitlines()):
-        __ s == '':
+    result = defaultdict(l..)
+    ___ x, s __ enumerate(text.splitlines()):
+        __ s __ '':
             continue
-        for c in characters:
-            __ isinstance(c, tuple):
+        ___ c __ characters:
+            __ isi..(c, tuple):
                 flag = False
-                for p in c:
-                    __ p.lower() in s.lower():
+                ___ p __ c:
+                    __ p.lower() __ s.lower():
                         flag = True
                 __ flag:
-                    result[c[0].lower()].append(x)
-            else:
-                __ c.lower() in s.lower():
-                    result[c.lower()].append(x)
-    return result
+                    result[c[0].lower()].a..(x)
+            ____:
+                __ c.lower() __ s.lower():
+                    result[c.lower()].a..(x)
+    r.. result

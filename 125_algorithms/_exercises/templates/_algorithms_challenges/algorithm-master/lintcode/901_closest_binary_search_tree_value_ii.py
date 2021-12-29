@@ -14,15 +14,15 @@ class Solution:
         :type target: float
         :type k: int
         """
-        ans = []
+        ans    # list
 
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
-        vals = []
+        vals    # list
         self.inorder_traverse(root, vals)
 
-        n = len(vals)
+        n = l..(vals)
         i = 0
 
         while i < n and vals[i] < target:
@@ -32,29 +32,29 @@ class Solution:
 
         while k and i >= 0 and j < n:
             __ target - vals[i] < vals[j] - target:
-                ans.append(vals[i])
+                ans.a..(vals[i])
                 i -= 1
-            else:
-                ans.append(vals[j])
+            ____:
+                ans.a..(vals[j])
                 j += 1
             k -= 1
 
         while k and i >= 0:
-            ans.append(vals[i])
+            ans.a..(vals[i])
             i -= 1
             k -= 1
 
         while k and j < n:
-            ans.append(vals[j])
+            ans.a..(vals[j])
             j += 1
             k -= 1
 
-        return ans
+        r.. ans
 
     ___ inorder_traverse(self, root, vals):
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.inorder_traverse(root.left, vals)
-        vals.append(root.val)
+        vals.a..(root.val)
         self.inorder_traverse(root.right, vals)

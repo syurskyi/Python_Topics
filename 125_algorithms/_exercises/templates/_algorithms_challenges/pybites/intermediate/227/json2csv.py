@@ -1,8 +1,8 @@
-import os
-from pathlib import Path
-import csv
-import json
-from json.decoder import JSONDecodeError
+_______ os
+____ pathlib _______ Path
+_______ csv
+_______ json
+____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -35,10 +35,10 @@ ___ convert_to_csv(json_file):
 
    mounts = data["mounts"]["collected"]
    with open(csv_file, "w") as f:
-      headers = [key for key in mounts[0].keys()]
+      headers = [key ___ key __ mounts[0].keys()]
       writer = csv.DictWriter(f, fieldnames=headers)
 
       writer.writeheader()
-      for row in mounts:
+      ___ row __ mounts:
          writer.writerow(row)
    

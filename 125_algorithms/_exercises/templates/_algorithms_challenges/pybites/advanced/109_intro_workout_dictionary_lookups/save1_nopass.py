@@ -30,9 +30,9 @@ ___ get_workout_motd(day):
        a 'message of the day'
     """
     day = WORKOUT_SCHEDULE.keys()
-    day = day.title()
-    __ day not in WORKOUT_SCHEDULE:
-        return INVALID_DAY
-    else:
+    day = day.t..
+    __ day n.. __ WORKOUT_SCHEDULE:
+        r.. INVALID_DAY
+    ____:
             print(WORKOUT_SCHEDULE.values()[day])
-    return
+    r..

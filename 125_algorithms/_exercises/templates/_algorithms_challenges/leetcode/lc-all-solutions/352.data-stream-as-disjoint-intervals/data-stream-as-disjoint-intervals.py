@@ -10,7 +10,7 @@ class SummaryRanges(object):
     """
     Initialize your data structure here.
     """
-    self.intervals = []
+    self.intervals    # list
 
   ___ insert(self, newInterval):
     """
@@ -20,21 +20,21 @@ class SummaryRanges(object):
     """
     intervals = self.intervals
     # print intervals
-    __ not intervals:
-      intervals.append(newInterval)
-      return
+    __ n.. intervals:
+      intervals.a..(newInterval)
+      r..
     s, e = newInterval.start, newInterval.end
-    left = filter(lambda x: x.end < newInterval.start, intervals)
-    right = filter(lambda x: x.start > newInterval.end, intervals)
+    left = filter(l.... x: x.end < newInterval.start, intervals)
+    right = filter(l.... x: x.start > newInterval.end, intervals)
     # print left, right, (s, e)
     __ left + right != intervals:
-      s = min(intervals[len(left)].start, s)
-      e = max(intervals[~len(right)].end, e)
+      s = m..(intervals[l..(left)].start, s)
+      e = max(intervals[~l..(right)].end, e)
     newIntv = Interval(s, e)
-    __ left and left[-1].end + 1 == s:
+    __ left and left[-1].end + 1 __ s:
       newIntv.start = left[-1].start
       left = left[:-1]
-    __ right and right[0].start - 1 == e:
+    __ right and right[0].start - 1 __ e:
       newIntv.end = right[0].end
       right = right[1:]
     self.intervals = left + [newIntv] + right
@@ -50,7 +50,7 @@ class SummaryRanges(object):
     """
     :rtype: List[Interval]
     """
-    return self.intervals
+    r.. self.intervals
 
 # Your SummaryRanges object will be instantiated and called as such:
 # obj = SummaryRanges()

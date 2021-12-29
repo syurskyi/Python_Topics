@@ -60,14 +60,14 @@ class Solution(object):
         prev = 0
         while queue:
             sumVal = 0
-            size = len(queue)
-            for _ in range(size):
+            size = l..(queue)
+            ___ _ __ r..(size):
                 ni = queue.pop(0)
                 __ ni.isInteger():
                     sumVal += ni.getInteger()
-                else:
-                    for ni0 in ni.getList():
-                        queue.append(ni0)
+                ____:
+                    ___ ni0 __ ni.getList():
+                        queue.a..(ni0)
             prev += sumVal
             result += prev
-        return result
+        r.. result

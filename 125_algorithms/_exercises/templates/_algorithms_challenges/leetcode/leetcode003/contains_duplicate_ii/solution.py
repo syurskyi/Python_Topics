@@ -12,12 +12,12 @@ class Solution(object):
         :rtype: bool
         """
         d = {}
-        for i, e in enumerate(nums):
-            __ e in d:
+        ___ i, e __ enumerate(nums):
+            __ e __ d:
                 __ i - d[e] <= k:
-                    return True
+                    r.. True
             d[e] = i
-        return False
+        r.. False
 
 
 args1 = [[1, 0, 1, 1], 1]

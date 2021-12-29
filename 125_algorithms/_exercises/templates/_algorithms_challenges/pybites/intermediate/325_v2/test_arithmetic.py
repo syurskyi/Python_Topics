@@ -1,4 +1,4 @@
-from arithmetic import calc_sums, VALUES
+____ arithmetic _______ calc_sums, VALUES
 
 
 EXPECTED = (
@@ -12,11 +12,11 @@ EXPECTED = (
 
 ___ test_calc_sums():
     i = 0
-    for i, line in enumerate(calc_sums(VALUES)):
+    ___ i, line __ enumerate(calc_sums(VALUES)):
         n1, n2, sum_ = EXPECTED[i]
-        assert (
-            line == f"The sum of {n1} and {n2}, rounded to two decimal places, is {sum_}."
+        ... (
+            line __ f"The sum of {n1} and {n2}, rounded to two decimal places, is {sum_}."
         )
 
     # Confirm all output was generated
-    assert i == len(EXPECTED) - 1, "Not all output was generated!"
+    ... i __ l..(EXPECTED) - 1, "Not all output was generated!"

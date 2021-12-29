@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from two_bucket import measure
+____ two_bucket _______ measure
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.4.0
@@ -25,5 +25,5 @@ class TwoBucketTest(unittest.TestCase):
         self.assertEqual(measure(2, 3, 3, "one"), (2, "two", 2))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

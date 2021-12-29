@@ -11,7 +11,7 @@ ___ get_person_age(name):
        greatest N (so group3 > group2 > group1)
     """
     result = [NOT_FOUND]
-    __ isinstance(name, str):
+    __ isi..(name, str):
         nm = name.lower()
-        result += [age for grp in [group1, group2, group3] for _name, age in grp.items() __ nm == _name]
-    return result[-1]
+        result += [age ___ grp __ [group1, group2, group3] ___ _name, age __ grp.items() __ nm __ _name]
+    r.. result[-1]

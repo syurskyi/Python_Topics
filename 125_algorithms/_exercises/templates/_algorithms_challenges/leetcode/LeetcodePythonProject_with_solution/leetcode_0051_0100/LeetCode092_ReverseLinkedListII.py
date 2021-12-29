@@ -18,28 +18,28 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        __ m >= n or not head:
-            return head
+        __ m >= n o. n.. head:
+            r.. head
         dummy = ListNode(-1)
         dummy.next = head
         head = dummy
-        for _ in range(1, m):
-            __ not head:
-                return None
+        ___ _ __ r..(1, m):
+            __ n.. head:
+                r.. N..
             head = head.next
         prevNode = head
         mNode = head.next
         nNode, postnNode = mNode, mNode.next
-        for _ in range(m, n):
-            __ not postnNode:
-                return None
+        ___ _ __ r..(m, n):
+            __ n.. postnNode:
+                r.. N..
             tmp = postnNode.next
             postnNode.next = nNode
             nNode = postnNode
             postnNode = tmp
         mNode.next = postnNode
         prevNode.next = nNode
-        return dummy.next
+        r.. dummy.next
     
     ___ test(self):
         head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
@@ -52,5 +52,5 @@ class Solution(object):
 ___ main():
     Solution().test()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

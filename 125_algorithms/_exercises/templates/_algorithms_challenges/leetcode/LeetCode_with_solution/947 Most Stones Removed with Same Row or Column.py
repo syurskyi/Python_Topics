@@ -27,8 +27,8 @@ Note:
 1 <= stones.length <= 1000
 0 <= stones[i][j] < 10000
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -41,30 +41,30 @@ class Solution:
         construct graph O(N^2)
         DFS - O(N)
         """
-        G = defaultdict(list)
-        n = len(stones)
-        for i in range(n):
-            for j in range(i):
-                __ stones[i][0] == stones[j][0] or stones[i][1] == stones[j][1]:
-                    G[i].append(j)
-                    G[j].append(i)
+        G = defaultdict(l..)
+        n = l..(stones)
+        ___ i __ r..(n):
+            ___ j __ r..(i):
+                __ stones[i][0] __ stones[j][0] o. stones[i][1] __ stones[j][1]:
+                    G[i].a..(j)
+                    G[j].a..(i)
 
         # dfs
         comp_cnt = 0
-        visited = [False for _ in range(n)]
-        for i in range(n):
-            __ not visited[i]:
+        visited = [False ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            __ n.. visited[i]:
                 comp_cnt += 1
                 self.dfs(G, i, visited)
 
-        return n - comp_cnt
+        r.. n - comp_cnt
 
     ___ dfs(self, G, i, visited):
         visited[i] = True
-        for nbr in G[i]:
-            __ not visited[nbr]:
+        ___ nbr __ G[i]:
+            __ n.. visited[nbr]:
                 self.dfs(G, nbr, visited)
 
 
-__ __name__ == "__main__":
-    assert Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) == 3
+__ __name__ __ "__main__":
+    ... Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) __ 3

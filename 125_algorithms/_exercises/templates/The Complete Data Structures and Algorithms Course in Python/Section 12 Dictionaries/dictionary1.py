@@ -9,18 +9,18 @@ print(myDict)
 
 #  Traverse through a dictionary
 
-___ traverseDict(dict
-    ___ key __ dict:
-        print(key, dict[key])
+___ traverseDict(d..
+    ___ key __ d..:
+        print(key, d..[key])
 
 traverseDict(myDict)
 
 #  Searching a dictionary
 
 
-___ searchDict(dict, value
-    ___ key __ dict:
-        __ dict[key] __ value:
+___ searchDict(d.., value
+    ___ key __ d..:
+        __ d..[key] __ value:
             r_ key, value
     r_ 'The value does not exist'
 print(searchDict(myDict, 27))
@@ -35,4 +35,4 @@ myDict.pop('name')
 # sorted method
 myDict  {'eooooa': 1, 'aas': 2, 'udd': 3, 'sseo': 4, 'werwi': 5}
 
-print(sorted(myDict, keyle_))
+print(s..(myDict, keyle_))

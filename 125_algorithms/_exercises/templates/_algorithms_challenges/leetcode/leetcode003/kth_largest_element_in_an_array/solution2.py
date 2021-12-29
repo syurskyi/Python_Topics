@@ -19,16 +19,16 @@ class Solution(object):
         Quickselect: O(n)
         """
         left = 0
-        right = len(nums) - 1
+        right = l..(nums) - 1
         while left <= right:
             pivot = self.partition(nums, left, right)
             # nums[pivot] is (pivot + 1)th largest, so
             # if pivot == k - 1, it is kth largest.
-            __ pivot == k - 1:
-                return nums[pivot]
-            elif pivot < k - 1:
+            __ pivot __ k - 1:
+                r.. nums[pivot]
+            ____ pivot < k - 1:
                 left = pivot + 1
-            else:
+            ____:
                 right = pivot - 1
 
     ___ partition(self, nums, left, right):
@@ -36,12 +36,12 @@ class Solution(object):
         pivot = right
         # i is from left to right - 1
         j = left
-        for i in range(left, right):
+        ___ i __ r..(left, right):
             __ nums[i] > nums[pivot]:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1
         nums[j], nums[pivot] = nums[pivot], nums[j]
-        return j
+        r.. j
 
 
 s = Solution()

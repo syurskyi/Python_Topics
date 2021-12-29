@@ -11,16 +11,16 @@ class Solution(object):
     while root:
       height += 1
       root = root.left
-    return height
+    r.. height
 
   ___ countNodes(self, root):
     count = 0
     while root:
       l, r = map(self.getHeight, (root.left, root.right))
-      __ l == r:
+      __ l __ r:
         count += 2 ** l
         root = root.right
-      else:
+      ____:
         count += 2 ** r
         root = root.left
-    return count
+    r.. count

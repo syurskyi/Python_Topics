@@ -1,12 +1,12 @@
 class TreeNode(object):
     ___ __init__(self, data, left, right):
-        self.data = None
-        self.left = None
-        self.right = None
+        self.data = N..
+        self.left = N..
+        self.right = N..
 
     ___ __str__(self):
         fmt = 'TreeNode(data={}, left={}, right={})'
-        return fmt.format(self.data, self.left, self.right)
+        r.. fmt.format(self.data, self.left, self.right)
 
 
 class BinarySearchTree(object):

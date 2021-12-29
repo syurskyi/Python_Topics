@@ -1,10 +1,10 @@
-import re
-from dataclasses import dataclass, field
-from pathlib import Path
-from typing import List
-from urllib.request import urlretrieve
+_______ re
+____ dataclasses _______ dataclass, field
+____ pathlib _______ Path
+____ typing _______ List
+____ urllib.request _______ urlretrieve
 
-from bs4 import BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup as Soup
 
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
@@ -24,13 +24,13 @@ class Enchantment:
     name: str
     max_level: int
     description: str
-    items: List[str] = field(default_factory=list)
+    items: List[str] = field(default_factory=l..)
 
     ___ __post_init__(self):
         self.name = self.name.replace('_', ' ')
 
     ___ __repr__(self):
-        return f'{self.name} ({self.max_level}): {self.description}'
+        r.. f'{self.name} ({self.max_level}): {self.description}'
 
 
 @dataclass()
@@ -41,15 +41,15 @@ class Item:
         name, enchantments
     """
     name: str
-    enchantments: List[str] = field(default_factory=list)
+    enchantments: List[str] = field(default_factory=l..)
 
     # def __post_init__(self):
     #     self.name = self.name.replace('_',' ').title()
 
     ___ __repr__(self):
         en = [f'  [{chant.max_level}] {chant.id_name}'
-              for chant in sorted(self.enchantments, key=lambda x : x.id_name)]
-        return f'{self.name.replace("_"," ").title()}: \n' + '\n'.join(en)
+              ___ chant __ s..(self.enchantments, key=l.... x : x.id_name)]
+        r.. f'{self.name.replace("_"," ").t..}: \n' + '\n'.join(en)
 
 
 # Lookup values of the first five roman numerals
@@ -65,10 +65,10 @@ ___ generate_enchantments(soup):
     
     With the key being the id_name of the enchantment.
     """
-    res = dict()
-    for row in soup.select('table#minecraft_items > tr'):
+    res = d..()
+    ___ row __ soup.select('table#minecraft_items > tr'):
         data_items = row.find_all('td')
-        __ data_items __ None or len(data_items) == 0:
+        __ data_items __ N.. o. l..(data_items) __ 0:
             continue
         enchant, maxlevel, descr, id, item, version = data_items
         id_name = enchant.em.text
@@ -78,7 +78,7 @@ ___ generate_enchantments(soup):
         item_url = item.img.attrs.get('data-src')
         items = re.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
         items = items.replace('fishing_rod', 'FISHING=ROD')
-        items = list(map(lambda s: s.replace('FISHING=ROD', 'fishing_rod'), items.split('_')))
+        items = l..(map(l.... s: s.replace('FISHING=ROD', 'fishing_rod'), items.split('_')))
 
         res[id_name] = Enchantment(id_name,
                                    name,
@@ -87,7 +87,7 @@ ___ generate_enchantments(soup):
                                    items
                                    )
 
-    return res
+    r.. res
 
 
 ___ generate_items(data):
@@ -95,28 +95,28 @@ ___ generate_items(data):
     
     With the key being the item name.
     """
-    res = dict()
-    for enchantment in data.values():
-        for i in enchantment.items:
-            __ i in res.keys():
-                res[i].enchantments.append(enchantment)
-            else:
+    res = d..()
+    ___ enchantment __ data.values():
+        ___ i __ enchantment.items:
+            __ i __ res.keys():
+                res[i].enchantments.a..(enchantment)
+            ____:
                 res[i] = Item(i, [enchantment])
-    return dict(sorted(res.items(), key=lambda t: t[0]))
+    r.. d..(s..(res.items(), key=l.... t: t[0]))
 
 
 ___ get_soup(file=HTML_FILE):
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isinstance(file, Path):
-        __ not HTML_FILE.is_file():
+    __ isi..(file, Path):
+        __ n.. HTML_FILE.is_file():
             urlretrieve(URL, HTML_FILE)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")
-    else:
+    ____:
         soup = Soup(file, "html.parser")
 
-    return soup
+    r.. soup
 
 
 ___ main():
@@ -126,11 +126,11 @@ ___ main():
     soup = get_soup()
     enchantment_data = generate_enchantments(soup)
     minecraft_items = generate_items(enchantment_data)
-    for item in minecraft_items:
+    ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     main()
 
 """

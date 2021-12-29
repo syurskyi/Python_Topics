@@ -1,13 +1,13 @@
-class list(object):
+class l..(object):
     ___ __init__(self, arg):
-        self.arg = [c for c in arg __ isinstance(c,int)]
+        self.arg = [c ___ c __ arg __ isi..(c,int)]
     ___ even(self):
-        return [n for n in self.arg __ n % 2 == 0]
+        r.. [n ___ n __ self.arg __ n % 2 __ 0]
     ___ odd(self):
-        return [n for n in self.arg __ n % 2 != 0]
+        r.. [n ___ n __ self.arg __ n % 2 != 0]
     ___ under(self,num):
-        return [n for n in self.arg __ n < num]
+        r.. [n ___ n __ self.arg __ n < num]
     ___ over(self,num):
-        return [n for n in self.arg __ n > num]
-    ___ in_range(self,min,max):
-        return [n for n in self.arg __ n >= min and n <= max]
+        r.. [n ___ n __ self.arg __ n > num]
+    ___ in_range(self,m..,max):
+        r.. [n ___ n __ self.arg __ n >= m.. and n <= max]

@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+____ datetime _______ datetime, timedelta
 
 NOW = datetime(year=2019, month=2, day=6,
                hour=22, minute=0, second=0)
@@ -20,17 +20,17 @@ ___ add_todo(delay_time: str, task: str,
     >>> add_todo("1h 10m", "Wash my car")
     >>> "Wash my car @ 2019-02-06 23:10:00"
     """
-    delay = delay_time.split()
+    delay = delay_time.s.. 
     td = start_time
-    for dl in delay:
-        __ dl[-1] == 'd':
+    ___ dl __ delay:
+        __ dl[-1] __ 'd':
             td += timedelta(days=int(dl[:-1]))
-        elif dl[-1] == 'h':
+        ____ dl[-1] __ 'h':
             td += timedelta(hours=int(dl[:-1]))
-        elif dl[-1] == 'm':
+        ____ dl[-1] __ 'm':
             td += timedelta(minutes=int(dl[:-1]))
-        elif dl[-1] == 's':
+        ____ dl[-1] __ 's':
             td += timedelta(seconds=int(dl[:-1]))
-        else:
+        ____:
             td += timedelta(seconds=int(dl))
-    return f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'
+    r.. f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'

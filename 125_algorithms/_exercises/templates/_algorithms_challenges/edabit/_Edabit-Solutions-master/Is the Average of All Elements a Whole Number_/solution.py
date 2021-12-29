@@ -1,7 +1,7 @@
 ___ is_avg_whole(arr):
     index = 0
     total = 0
-    while index < len(arr):
+    while index < l..(arr):
         total = total + arr[index]
         index = index + 1
-    return total % len(arr) == 0
+    r.. total % l..(arr) __ 0

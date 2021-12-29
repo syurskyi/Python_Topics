@@ -15,7 +15,7 @@ class Solution(object):
         """
         res = 0
         while n > 0:
-            __ n & 1 == 1:
+            __ n & 1 __ 1:
                 res += 1
             n >>= 1
-        return res
+        r.. res

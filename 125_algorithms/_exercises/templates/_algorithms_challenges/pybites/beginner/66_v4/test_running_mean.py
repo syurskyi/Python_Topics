@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from Previous.running_mean import running_mean
+____ Previous.running_mean _______ running_mean
 
 
 @pytest.mark.parametrize("input_argument, expected_return", [
@@ -12,5 +12,5 @@ from Previous.running_mean import running_mean
     ([], []),
 ])
 ___ test_running_mean(input_argument, expected_return):
-    ret = list(running_mean(input_argument))
-    assert ret == expected_return
+    ret = l..(running_mean(input_argument))
+    ... ret __ expected_return

@@ -10,16 +10,16 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        nums = list(range(1, n+1))
+        nums = l..(r..(1, n+1))
         k -= 1
         mod = 1
-        for i in range(n):
+        ___ i __ r..(n):
             mod = mod*(i+1)
         res = ''
-        for i in range(n):
+        ___ i __ r..(n):
             mod = mod//(n-i)
             curInd = k//mod
             k = k % mod
             res += str(nums[curInd])
             nums.pop(curInd)
-        return res
+        r.. res

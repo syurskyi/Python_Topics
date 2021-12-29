@@ -30,13 +30,13 @@ class NestedIterator(object):
 
     # @return {int} the next element in the iteration
     ___ next(self):
-        __ not self.hasNext():
-            return -1
+        __ n.. self.hasNext():
+            r.. -1
 
         lst, i = self.stack[-1]
         self.stack[-1][1] += 1
 
-        return lst[i].getInteger()
+        r.. lst[i].getInteger()
 
     # @return {boolean} true if the iteration has more element or false
     ___ hasNext(self):
@@ -45,13 +45,13 @@ class NestedIterator(object):
         while stack:
             lst, i = stack[-1]
 
-            __ i >= len(lst):
+            __ i >= l..(lst):
                 stack.pop()
-            elif lst[i].isInteger():
-                return True
-            else:
+            ____ lst[i].isInteger():
+                r.. True
+            ____:
                 # lst[i] is list
                 stack[-1][1] += 1
-                stack.append([lst[i].getList(), 0])
+                stack.a..([lst[i].getList(), 0])
 
-        return False
+        r.. False

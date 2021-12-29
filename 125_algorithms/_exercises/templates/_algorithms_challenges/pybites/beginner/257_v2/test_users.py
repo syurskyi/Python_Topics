@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from users import get_users
+____ users _______ get_users
 
 
 pw1 = """
@@ -63,4 +63,4 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash
            'ssh-rsa': 'unknown', 'artagnon': 'Ramkumar R Git GSOC'}),
 ])
 ___ test_users(input_, expected):
-    assert get_users(input_) == expected
+    ... get_users(input_) __ expected

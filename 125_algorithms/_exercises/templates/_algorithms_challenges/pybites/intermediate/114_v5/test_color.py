@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from color import Color
+____ color _______ Color
 
 
 @pytest.mark.parametrize("color, expected", [
@@ -10,11 +10,11 @@ from color import Color
     ("red", (255, 0, 0)),
     ("green", (0, 128, 0)),
     ("orange", (255, 128, 0)),
-    ("puke", None),
+    ("puke", N..),
 ])
 ___ test_color_class(color, expected):
     c = Color(color)
-    assert c.rgb == expected
+    ... c.rgb __ expected
 
 
 @pytest.mark.parametrize("rgb, expected", [
@@ -26,7 +26,7 @@ ___ test_color_class(color, expected):
     ((255, 128, 0), "#ff8000"),
 ])
 ___ test_color_classmethod_rgb2hex(rgb, expected):
-    assert Color.rgb2hex(rgb) == expected
+    ... Color.rgb2hex(rgb) __ expected
 
 
 @pytest.mark.parametrize("rgb", [
@@ -50,7 +50,7 @@ ___ test_color_rgb2hex_bad_value(rgb):
     ("#ff8000", (255, 128, 0)),
 ])
 ___ test_color_classmethod_hex2rgb(hex, expected):
-    assert Color.hex2rgb(hex) == expected
+    ... Color.hex2rgb(hex) __ expected
 
 
 @pytest.mark.parametrize("value", [
@@ -66,14 +66,14 @@ ___ test_color_hex2rgb_bad_value(value):
 
 ___ test_color_string_output():
     color = Color("brown")
-    assert str(color) == "(165, 42, 42)"
+    ... str(color) __ "(165, 42, 42)"
 
 
 ___ test_color_repr_output():
     color = Color("brown")
-    assert repr(color) == "Color('brown')"
+    ... repr(color) __ "Color('brown')"
 
 
 ___ test_unknown_color():
     color = Color("puke green")
-    assert str(color) == "Unknown"
+    ... str(color) __ "Unknown"

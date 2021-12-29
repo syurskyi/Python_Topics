@@ -11,17 +11,17 @@ class Solution(object):
         """
         s = str(N)
         i = 0
-        while i < len(s)-1 and s[i] <= s[i+1]:
+        while i < l..(s)-1 and s[i] <= s[i+1]:
             i += 1
-        __ i == len(s)-1:
-            return N
-        while i > 0 and s[i-1] == s[i]:
+        __ i __ l..(s)-1:
+            r.. N
+        while i > 0 and s[i-1] __ s[i]:
             i -= 1
         res = s[:i]
         res += str(int(s[i])-1)
-        res += '9'*(len(s)-i-1)
+        res += '9'*(l..(s)-i-1)
         res = res.lstrip('0')
-        return int(res) __ res != '' else 0
+        r.. int(res) __ res != '' ____ 0
     
     ___ test(self):
         testCases = [
@@ -32,11 +32,11 @@ class Solution(object):
             1234502468,
             989998,
         ]
-        for N in testCases:
+        ___ N __ testCases:
             print('N: %s' % N)
             result = self.monotoneIncreasingDigits(N)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

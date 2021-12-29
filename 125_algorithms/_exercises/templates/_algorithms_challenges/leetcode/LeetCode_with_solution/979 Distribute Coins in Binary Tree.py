@@ -38,8 +38,8 @@ Note:
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -51,11 +51,11 @@ class Solution:
         dfs
         """
         self.demand(root)
-        return self.ret
+        r.. self.ret
 
     ___ demand(self, node) -> int:
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         demand_l = self.demand(node.left)
         demand_r = self.demand(node.right)
@@ -63,4 +63,4 @@ class Solution:
         # attribut the move to the node required
         demand = demand_l + demand_r + demand_m
         self.ret += abs(demand)
-        return demand
+        r.. demand

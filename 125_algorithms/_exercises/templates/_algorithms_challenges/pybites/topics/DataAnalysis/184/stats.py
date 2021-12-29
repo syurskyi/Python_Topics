@@ -1,20 +1,20 @@
-from collections import Counter
-from csv import DictReader
-import os
-from urllib.request import urlretrieve
+____ collections _______ Counter
+____ csv _______ DictReader
+_______ os
+____ urllib.request _______ urlretrieve
 
 TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.join(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ not os.path.isfile(DATA):
+__ n.. os.path.isfile(DATA):
     urlretrieve(f'{S3}/{LOGS}', DATA)
 
 
 class BiteStats:
 
-    ___ _load_data(self, data) -> list:
-        return [line for line in DictReader(open(data))]  # start here
+    ___ _load_data(self, data) -> l..:
+        r.. [line ___ line __ DictReader(open(data))]  # start here
 
     ___ __init__(self, data=DATA):
         self.rows = self._load_data(data)
@@ -22,47 +22,47 @@ class BiteStats:
     @property
     ___ number_bites_accessed(self) -> int:
         """Get the number of unique Bites accessed"""
-        return (len(set(dic.get('bite') for dic in self.rows)))
+        r.. (l..(set(dic.get('bite') ___ dic __ self.rows)))
 
     @property
     ___ number_bites_resolved(self) -> int:
         """Get the number of unique Bites resolved (completed=True)"""
-        return (len(set(dic.get('bite') for dic in self.rows __ dic.get('completed') == 'True')))
+        r.. (l..(set(dic.get('bite') ___ dic __ self.rows __ dic.get('completed') __ 'True')))
 
     @property
     ___ number_users_active(self) -> int:
         """Get the number of unique users in the data set"""
-        return (len(set(dic.get('user') for dic in self.rows)))
+        r.. (l..(set(dic.get('user') ___ dic __ self.rows)))
 
     @property
     ___ number_users_solving_bites(self) -> int:
         """Get the number of unique users that resolved
            one or more Bites"""
-        return (len(set(dic.get('user') for dic in self.rows __ dic.get('completed') == 'True')))
+        r.. (l..(set(dic.get('user') ___ dic __ self.rows __ dic.get('completed') __ 'True')))
 
     @property
     ___ top_bite_by_number_of_clicks(self) -> str:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         #most_click = Counter(dic['bite'] for dic in newlist)
-        return Counter(dic['bite'] for dic in self.rows).most_common(1)[0][0]
+        r.. Counter(dic['bite'] ___ dic __ self.rows).most_common(1)[0][0]
 
     @property
     ___ top_user_by_bites_completed(self) -> str:
         """Get the user that completed the most Bites"""
-        return Counter( dic['user'] for dic in newlist __ dic.get('completed') == 'True').most_common(1)[0][0]
+        r.. Counter( dic['user'] ___ dic __ newlist __ dic.get('completed') __ 'True').most_common(1)[0][0]
 
 new_list = DictReader(open(DATA))
 print(new_list.fieldnames)
 print(new_list.reader)
 
-newlist = [line for line in new_list]
-print(len(newlist))
+newlist = [line ___ line __ new_list]
+print(l..(newlist))
 
-print(len(set(dic.get('bite') for dic in newlist)))
+print(l..(set(dic.get('bite') ___ dic __ newlist)))
 
-click_count = Counter( dic['bite'] for dic in newlist)
+click_count = Counter( dic['bite'] ___ dic __ newlist)
 print(click_count.most_common(1)[0][0])
 
-active_user = Counter( dic['user'] for dic in newlist __ dic.get('completed') == 'True')
+active_user = Counter( dic['user'] ___ dic __ newlist __ dic.get('completed') __ 'True')
 print(active_user.most_common(1)[0][0])

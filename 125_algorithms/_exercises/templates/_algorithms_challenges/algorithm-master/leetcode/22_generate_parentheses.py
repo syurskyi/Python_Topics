@@ -4,24 +4,24 @@ class Solution:
         :type n: int
         :rtype: list[str]
         """
-        ans = []
-        __ not n:
-            return ans
+        ans    # list
+        __ n.. n:
+            r.. ans
 
         self.dfs(n, 1, 0, ans, ['('])
-        return ans
+        r.. ans
 
     ___ dfs(self, n, lcnt, rcnt, ans, path):
-        __ len(path) == 2 * n:
-            ans.append(''.join(path))
-            return
+        __ l..(path) __ 2 * n:
+            ans.a..(''.join(path))
+            r..
 
         __ rcnt < lcnt:
-            path.append(')')
+            path.a..(')')
             self.dfs(n, lcnt, rcnt + 1, ans, path)
             path.pop()
 
         __ lcnt < n:
-            path.append('(')
+            path.a..('(')
             self.dfs(n, lcnt + 1, rcnt, ans, path)
             path.pop()

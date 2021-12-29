@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class School(object):
@@ -10,8 +10,8 @@ class School(object):
         self.db[grade].add(student)
 
     ___ grade(self, level):
-        return self.db[level]
+        r.. self.db[level]
 
     ___ sort(self):
-        return sorted((grade, tuple(sorted(students)))
-                      for grade, students in self.db.items())
+        r.. s..((grade, tuple(s..(students)))
+                      ___ grade, students __ self.db.items())

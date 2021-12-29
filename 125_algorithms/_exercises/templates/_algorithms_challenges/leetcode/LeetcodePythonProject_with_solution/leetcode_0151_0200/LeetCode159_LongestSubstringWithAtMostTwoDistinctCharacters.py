@@ -12,15 +12,15 @@ class Solution(object):
         hashmap = {}
         l = 0
         res = 0
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             hashmap[c] = hashmap.get(c, 0)+1
-            while len(hashmap) > 2:
+            while l..(hashmap) > 2:
                 hashmap[s[l]] -= 1
-                __ hashmap[s[l]] == 0: del hashmap[s[l]]
+                __ hashmap[s[l]] __ 0: del hashmap[s[l]]
                 l += 1
             res = max(res, i-l+1)
-        res = max(res, len(s)-l)
-        return res
+        res = max(res, l..(s)-l)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -28,11 +28,11 @@ class Solution(object):
             'eceba',
             'abc',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.lengthOfLongestSubstringTwoDistinct(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

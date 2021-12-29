@@ -4,25 +4,25 @@ class Solution:
         :type E: List[str]
         :rtype: int
         """
-        __ not E:
-            return 0
+        __ n.. E:
+            r.. 0
 
-        stack = []
+        stack    # list
         operation = {
-            '+': lambda a, b: a + b,
-            '-': lambda a, b: a - b,
-            '*': lambda a, b: a * b,
-            '/': lambda a, b: a / b,
+            '+': l.... a, b: a + b,
+            '-': l.... a, b: a - b,
+            '*': l.... a, b: a * b,
+            '/': l.... a, b: a / b,
         }
 
-        for char in E:
-            __ char not in operation:
-                stack.append(int(char))
+        ___ char __ E:
+            __ char n.. __ operation:
+                stack.a..(int(char))
                 continue
 
             b = stack.pop()
             a = stack.pop()
 
-            stack.append(int(operation[char](a, b)))
+            stack.a..(int(operation[char](a, b)))
 
-        return stack[0]
+        r.. stack[0]

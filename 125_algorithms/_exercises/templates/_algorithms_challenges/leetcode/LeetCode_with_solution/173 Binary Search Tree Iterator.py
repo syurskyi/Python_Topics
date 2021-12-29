@@ -11,8 +11,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class BSTIterator:
@@ -21,13 +21,13 @@ class BSTIterator:
         :type root: TreeNode
         """
         self.cur = root
-        self.stk = []
+        self.stk    # list
 
     ___ hasNext(self):
         """
         :rtype: bool
         """
-        return self.cur or self.stk
+        r.. self.cur o. self.stk
 
     ___ next(self):
         """
@@ -35,9 +35,9 @@ class BSTIterator:
         :return: the next smallest number
         """
         while self.cur:
-            self.stk.append(self.cur)
+            self.stk.a..(self.cur)
             self.cur = self.cur.left
 
         nxt = self.stk.pop()
         self.cur = nxt.right
-        return nxt.val
+        r.. nxt.val

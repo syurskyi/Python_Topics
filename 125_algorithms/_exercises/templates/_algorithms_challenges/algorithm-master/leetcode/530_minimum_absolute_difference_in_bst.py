@@ -14,15 +14,15 @@ class Solution:
     space: O(1)
     """
     ans = float('inf')
-    pre = None
+    pre = N..
 
     ___ getMinimumDifference(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return self.ans
+        __ n.. root:
+            r.. self.ans
 
         self.getMinimumDifference(root.left)
 
@@ -32,4 +32,4 @@ class Solution:
         self.pre = root
 
         self.getMinimumDifference(root.right)
-        return self.ans
+        r.. self.ans

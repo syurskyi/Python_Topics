@@ -23,24 +23,24 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         left = 0
         right = n - 1
-        __ n == 1:
-            return 0
+        __ n __ 1:
+            r.. 0
         while left <= right:
             mid = left + (right - left) / 2
-            __ mid == 0 and nums[mid] > nums[mid + 1]:
-                return mid
-            elif mid == n - 1 and nums[mid] > nums[mid - 1]:
-                return mid
-            elif nums[mid - 1] < nums[mid] > nums[mid + 1]:
-                return mid
-            elif mid > 0 and nums[mid - 1] > nums[mid]:
+            __ mid __ 0 and nums[mid] > nums[mid + 1]:
+                r.. mid
+            ____ mid __ n - 1 and nums[mid] > nums[mid - 1]:
+                r.. mid
+            ____ nums[mid - 1] < nums[mid] > nums[mid + 1]:
+                r.. mid
+            ____ mid > 0 and nums[mid - 1] > nums[mid]:
                 right = mid - 1
-            else:
+            ____:
                 left = mid + 1
-        return mid
+        r.. mid
 
 a1 = [1, 2]
 a2 = [1, 2, 1]

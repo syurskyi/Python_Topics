@@ -26,7 +26,7 @@ class PeekingIterator(object):
     :type iterator: Iterator
     """
     self.iter = iterator
-    self.nextElem = None
+    self.nextElem = N..
 
   ___ peek(self):
     """
@@ -34,10 +34,10 @@ class PeekingIterator(object):
     :rtype: int
     """
     __ self.nextElem:
-      return self.nextElem
+      r.. self.nextElem
     __ self.iter.hasNext():
       self.nextElem = self.iter.next()
-    return self.nextElem
+    r.. self.nextElem
 
   ___ next(self):
     """
@@ -46,16 +46,16 @@ class PeekingIterator(object):
     ret = self.nextElem
 
     __ self.nextElem:
-      self.nextElem = None
-      return ret
+      self.nextElem = N..
+      r.. ret
 
-    return self.iter.next()
+    r.. self.iter.next()
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
-    return (self.nextElem is not None) or self.iter.hasNext()
+    r.. (self.nextElem __ n.. N..) o. self.iter.hasNext()
 
 # Your PeekingIterator object will be instantiated and called as such:
 # iter = PeekingIterator(Iterator(nums))

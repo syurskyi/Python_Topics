@@ -1,17 +1,17 @@
-from __future__ import annotations
-import string
-import re
+____ __future__ _______ annotations
+_______ string
+_______ re
 
 EOL_PUNCTUATION = ".!?"
 
 
 class Document:
-    ___ __init__(self) -> None:
+    ___ __init__(self) -> N..
         # it is up to you how to implement this method
         # feel free to alter this method and its parameters to your liking
-        self.lines = []
+        self.lines    # list
 
-    ___ add_line(self, line: str, index: int = None) -> Document:
+    ___ add_line(self, line: str, index: int = N..) -> Document:
         """Add a new line to the document.
 
         Args:
@@ -23,11 +23,11 @@ class Document:
         Returns:
             Document: The changed document with the new line.
         """
-        __ index is None:
-            self.lines.append(line)
-        else:
+        __ index __ N..
+            self.lines.a..(line)
+        ____:
             self.lines.insert(index,line)
-        return self
+        r.. self
 
 
 
@@ -43,17 +43,17 @@ class Document:
             Document: The changed document with the swapped lines.
         """
 
-        __ index_one == index_two:
-            return self
+        __ index_one __ index_two:
+            r.. self
 
         try:
             self.lines[index_one],self.lines[index_two] = self.lines[index_two],self.lines[index_one]
         except IndexError:
             raise IndexError("Invalid indexes")
 
-        return self
+        r.. self
 
-    ___ merge_lines(self, indices: list) -> Document:
+    ___ merge_lines(self, indices: l..) -> Document:
 
         """Merge several lines into a single line.
 
@@ -66,23 +66,23 @@ class Document:
             Document: The changed document with the merged lines.
         """
 
-        __ len(indices) <= 1:
-            return self
+        __ l..(indices) <= 1:
+            r.. self
         
-        lines = []
-        for index in indices:
-            lines.append(self.lines[index].strip())
+        lines    # list
+        ___ index __ indices:
+            lines.a..(self.lines[index].strip())
         
         
         
         self.lines[indices[0]]= ' '.join(lines)
         
 
-        self.lines = [line for i,line in enumerate(self.lines) __ i not in indices[1:]]
+        self.lines = [line ___ i,line __ enumerate(self.lines) __ i n.. __ indices[1:]]
         
 
 
-        return self
+        r.. self
 
 
 
@@ -102,28 +102,28 @@ class Document:
         """
 
         line = self.lines[index]
-        __ line and line[-1] in EOL_PUNCTUATION:
+        __ line and line[-1] __ EOL_PUNCTUATION:
             line = line[:-1] + punctuation
-        else:
+        ____:
             line += punctuation
         self.lines[index] = line
-        return self
+        r.. self
 
     ___ word_count(self) -> int:
         """Return the total number of words in the document."""
-        return sum(len(self._remove_punctuation(line).split()) for line in self.lines)
+        r.. s..(l..(self._remove_punctuation(line).split()) ___ line __ self.lines)
 
     @property
-    ___ words(self) -> list:
+    ___ words(self) -> l..:
         """Return a list of unique words, sorted and case insensitive."""
         all_words = set()
-        for line in self.lines:
+        ___ line __ self.lines:
             line = line.lower()
             w = self._remove_punctuation(line)
-            for x in w.split():
+            ___ x __ w.s.. :
                 all_words.add(x)
 
-        return sorted(all_words)
+        r.. s..(all_words)
 
 
 
@@ -133,7 +133,7 @@ class Document:
         # you can use this function as helper method for
         # Document.word_count() and Document.words
         # or you can totally ignore it
-        return re.sub(r'[^\w\s]','',line)
+        r.. re.sub(r'[^\w\s]','',line)
 
 
 
@@ -141,14 +141,14 @@ class Document:
 
     ___ __len__(self):
         """Return the length of the document (i.e. line count)."""
-        return len(self.lines)
+        r.. l..(self.lines)
 
     ___ __str__(self):
         """Return the content of the document as string."""
-        return '\n'.join(self.lines)
+        r.. '\n'.join(self.lines)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     # this part is only executed when you run the file and is ignored by the tests
     # you can use this section for debugging and testing
     d = (
@@ -160,6 +160,6 @@ __ __name__ == "__main__":
     )
 
     print(d)
-    print(len(d))
+    print(l..(d))
     print(d.word_count())
     print(d.words)

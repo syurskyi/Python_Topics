@@ -3,24 +3,24 @@ class Solution:
     ___ totalNQueens(self, n):
         self.res = 0
         self.n = n
-        columns = [-1 for i in range(n)]
+        columns = [-1 ___ i __ r..(n)]
         self.solve(columns, 0)
-        return self.res
+        r.. self.res
 
     ___ is_valid(self, columns, row, col):
-        for r in range(row):
+        ___ r __ r..(row):
             c = columns[r]
-            __ c == col:
-                return False
-            __ abs(c - col) == row - r:
-                return False
-        return True
+            __ c __ col:
+                r.. False
+            __ abs(c - col) __ row - r:
+                r.. False
+        r.. True
 
     ___ solve(self, columns, row):
-        __ row == self.n:
+        __ row __ self.n:
             self.res += 1
-        else:
-            for col in range(self.n):
+        ____:
+            ___ col __ r..(self.n):
                 __ self.is_valid(columns, row, col):
                     columns[row] = col
                     self.solve(columns, row + 1)

@@ -40,11 +40,11 @@ class Solution(object):
         while remain > 1:
             __ from_left:
                 head += step
-            elif remain % 2 == 1:
+            ____ remain % 2 __ 1:
                 head += step
 
             step *= 2
             remain /= 2
-            from_left = not from_left
+            from_left = n.. from_left
 
-        return head
+        r.. head

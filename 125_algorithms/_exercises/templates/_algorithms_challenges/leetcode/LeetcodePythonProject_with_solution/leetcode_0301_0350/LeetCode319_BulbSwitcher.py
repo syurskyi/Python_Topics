@@ -6,5 +6,5 @@ Created on Mar 17, 2017
 
 class Solution(object):
     ___ bulbSwitch(self, n):
-        import math
-        return int(math.sqrt(n))
+        _______ math
+        r.. int(math.sqrt(n))

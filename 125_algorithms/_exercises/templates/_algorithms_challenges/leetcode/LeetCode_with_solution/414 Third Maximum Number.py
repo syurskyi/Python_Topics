@@ -5,7 +5,7 @@ array. If it does not exist, return the maximum number. The time complexity
 must be in O(n).
 """
 __author__ = 'Danyang'
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -18,26 +18,26 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums:
-            return None
+        __ n.. nums:
+            r.. N..
 
-        h = []
-        for e in set(nums):
-            __ len(h) < 3:
+        h    # list
+        ___ e __ set(nums):
+            __ l..(h) < 3:
                 heapq.heappush(h, e)
-            elif len(h) == 3 and e > h[0]:
+            ____ l..(h) __ 3 and e > h[0]:
                 heapq.heappushpop(h, e)
 
-        assert len(h) <= 3
-        __ len(h) == 3:
-            ret = min(h)
-        else:
+        ... l..(h) <= 3
+        __ l..(h) __ 3:
+            ret = m..(h)
+        ____:
             ret = max(h)
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().thirdMax([1, 2, 3, 4]) == 2
-    assert Solution().thirdMax([4, 3, 2, 1]) == 2
-    assert Solution().thirdMax([2, 2, 3, 1]) == 1
-    assert Solution().thirdMax([4, 3]) == 4
+__ __name__ __ "__main__":
+    ... Solution().thirdMax([1, 2, 3, 4]) __ 2
+    ... Solution().thirdMax([4, 3, 2, 1]) __ 2
+    ... Solution().thirdMax([2, 2, 3, 1]) __ 1
+    ... Solution().thirdMax([4, 3]) __ 4

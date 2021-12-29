@@ -20,23 +20,23 @@ class Solution(object):
 
         Time Limit Exceeded
         """
-        cand = []
-        res = []
+        cand    # list
+        res    # list
         self.word_break_aux(s, wordDict, cand, res)
-        return res
+        r.. res
 
     ___ word_break_aux(self, s, wordDict, cand, res):
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        __ not s:
-            res.append(' '.join(cand))
-        else:
-            for i, c in enumerate(s):
+        __ n.. s:
+            res.a..(' '.join(cand))
+        ____:
+            ___ i, c __ enumerate(s):
                 word = s[:i + 1]
                 rest = s[i + 1:]
-                __ word in wordDict:
-                    cand.append(word)
+                __ word __ wordDict:
+                    cand.a..(word)
                     self.word_break_aux(rest, wordDict, cand, res)
                     cand.pop()
 

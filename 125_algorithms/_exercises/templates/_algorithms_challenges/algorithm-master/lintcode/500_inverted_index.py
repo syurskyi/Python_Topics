@@ -9,15 +9,15 @@ class Solution:
     # @param {Document[]} docs a list of documents
     # @return {dict(string, int[])} an inverted index
     ___ invertedIndex(self, docs):
-        __ not docs or len(docs) < 1:
-            return {}
+        __ n.. docs o. l..(docs) < 1:
+            r.. {}
         result = {}
-        for doc in docs:
-            __ not doc.content:
+        ___ doc __ docs:
+            __ n.. doc.content:
                 continue
-            for word in doc.content.split():
-                __ word not in result:
-                    result[word] = []
-                __ doc.id not in result[word]:
-                    result[word].append(doc.id)
-        return result
+            ___ word __ doc.content.s.. :
+                __ word n.. __ result:
+                    result[word]    # list
+                __ doc.id n.. __ result[word]:
+                    result[word].a..(doc.id)
+        r.. result

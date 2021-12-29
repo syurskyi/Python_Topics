@@ -4,15 +4,15 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
         s = s.upper()
 
         ans = 0
         BASE = ord('A') - 1
 
-        for char in s:
+        ___ char __ s:
             ans = ans * 26 + ord(char) - BASE
 
-        return ans
+        r.. ans

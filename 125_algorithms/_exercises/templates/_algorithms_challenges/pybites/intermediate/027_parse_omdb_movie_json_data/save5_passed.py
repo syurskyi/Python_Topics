@@ -1,33 +1,33 @@
-import json
+_______ json
 
 
-___ get_movie_data(files: list) -> list:
+___ get_movie_data(files: l..) -> l..:
     """Parse movie json files into a list of dicts"""
-    output = []
-    for movie in files:
-        output.append(dict(json.load(open(movie))))
-    return output
+    output    # list
+    ___ movie __ files:
+        output.a..(d..(json.load(open(movie))))
+    r.. output
 
-___ get_single_comedy(movies: list) -> str:
+___ get_single_comedy(movies: l..) -> str:
     """return the movie with Comedy in Genres"""
-    return [movie.get('Title') for movie in movies __ 'Comedy' in movie.get('Genre')][0]
+    r.. [movie.get('Title') ___ movie __ movies __ 'Comedy' __ movie.get('Genre')][0]
 
 
-___ get_movie_most_nominations(movies: list) -> str:
+___ get_movie_most_nominations(movies: l..) -> str:
     """Return the movie that had the most nominations"""
-    output = []
-    for movie in movies:
-        award_count = movie.get('Title'), int(movie.get('Awards').split()[-2])
-        output.append(award_count)
-    output.sort(key=lambda x: x[1], reverse=True)
-    return output[0][0]
+    output    # list
+    ___ movie __ movies:
+        award_count = movie.get('Title'), int(movie.get('Awards').s.. [-2])
+        output.a..(award_count)
+    output.sort(key=l.... x: x[1], r.._T..
+    r.. output[0][0]
 
 
-___ get_movie_longest_runtime(movies: list) -> str:
+___ get_movie_longest_runtime(movies: l..) -> str:
     """Return the movie that has the longest runtime"""
-    output = []
-    for movie in movies:
-        runtimes = movie.get('Title'), int(movie.get('Runtime').split()[0])
-        output.append(runtimes)
-    output.sort(key=lambda x: x[1], reverse=True)
-    return output[0][0]
+    output    # list
+    ___ movie __ movies:
+        runtimes = movie.get('Title'), int(movie.get('Runtime').s.. [0])
+        output.a..(runtimes)
+    output.sort(key=l.... x: x[1], r.._T..
+    r.. output[0][0]

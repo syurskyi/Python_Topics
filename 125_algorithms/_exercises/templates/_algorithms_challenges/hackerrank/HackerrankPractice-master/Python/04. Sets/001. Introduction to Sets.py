@@ -3,4 +3,4 @@
 
 
 ___ average(array):
-    return sum(set(array)) / len(set(array))
+    r.. s..(set(array)) / l..(set(array))

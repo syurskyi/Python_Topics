@@ -16,7 +16,7 @@ Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 Note: The n belongs to [1, 10,000].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -26,41 +26,41 @@ class Solution:
         two way of changing
         """
         changed = False
-        for i in range(len(A) - 1):
+        ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
                 continue
-            __ not changed:
-                __ i - 1 < 0 or A[i-1] <= A[i+1]:
+            __ n.. changed:
+                __ i - 1 < 0 o. A[i-1] <= A[i+1]:
                     A[i] = A[i+1]
-                else:
+                ____:
                     A[i+1] = A[i]
                 changed = True
-            else:
-                return False
+            ____:
+                r.. False
 
-        return True
+        r.. True
 
     ___ checkPossibility_error(self, A: List[int]) -> bool:
         """
         greedy change
         """
         changed = False
-        for i in range(len(A) - 1):
+        ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
                 continue
-            __ not changed:
+            __ n.. changed:
                 A[i] = A[i + 1]  # Error
-                __ i - 1 < 0 or A[i - 1] <= A[i]:
+                __ i - 1 < 0 o. A[i - 1] <= A[i]:
                     changed = True
-                else:
-                    return False
-            else:
-                return False
+                ____:
+                    r.. False
+            ____:
+                r.. False
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().checkPossibility([4,2,3]) == True
-    assert Solution().checkPossibility([3,4,2,3]) == False
-    assert Solution().checkPossibility([2,3,3,2,4]) == True
+__ __name__ __ "__main__":
+    ... Solution().checkPossibility([4,2,3]) __ True
+    ... Solution().checkPossibility([3,4,2,3]) __ False
+    ... Solution().checkPossibility([2,3,3,2,4]) __ True

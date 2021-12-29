@@ -12,22 +12,22 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: int
         """
-        V = [[] for _ in xrange(n)]
-        for e in edges:
-            V[e[0]].append(e[1])
-            V[e[1]].append(e[0])
+        V = [[] ___ _ __ xrange(n)]
+        ___ e __ edges:
+            V[e[0]].a..(e[1])
+            V[e[1]].a..(e[0])
 
-        visited = [False for _ in xrange(n)]
+        visited = [False ___ _ __ xrange(n)]
         cnt = 0
-        for v in xrange(n):
-            __ not visited[v]:
+        ___ v __ xrange(n):
+            __ n.. visited[v]:
                 cnt += 1
                 self.dfs(V, v, visited)
 
-        return cnt
+        r.. cnt
 
     ___ dfs(self, V, v, visited):
         visited[v] = True
-        for nbr in V[v]:
-            __ not visited[nbr]:
+        ___ nbr __ V[v]:
+            __ n.. visited[nbr]:
                 self.dfs(V, nbr, visited)

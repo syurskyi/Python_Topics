@@ -27,21 +27,21 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
-        cnt = [0 for _ in xrange(n+1)]
-        for e in A:
+        n = l..(A)
+        cnt = [0 ___ _ __ xrange(n+1)]
+        ___ e __ A:
             __ e >= n:  # chunk
                 cnt[n] += 1
-            else:
+            ____:
                 cnt[e] += 1
 
-        F = [0 for _ in xrange(n+2)]
-        for i in xrange(n, -1, -1):
+        F = [0 ___ _ __ xrange(n+2)]
+        ___ i __ xrange(n, -1, -1):
             F[i] += F[i+1] + cnt[i]
             __ F[i] >= i:
-                return i
+                r.. i
 
-        return 0
+        r.. 0
 
     ___ hIndex_sort(self, citations):
         """
@@ -49,13 +49,13 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        n = len(citations)
+        n = l..(citations)
         citations.sort()
-        for i in xrange(n):
+        ___ i __ xrange(n):
             __ citations[i] >= n-i:
-                return n-i
+                r.. n-i
 
-        return 0
+        r.. 0
 
     ___ hIndex_reverse_sort(self, citations):
         """
@@ -63,17 +63,17 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        citations.sort(reverse=True)
-        citations.append(0)
+        citations.sort(r.._T..
+        citations.a..(0)
         h = 0
-        for i in xrange(len(citations)-1):
+        ___ i __ xrange(l..(citations)-1):
             __ citations[i] >= i+1 >= citations[i+1]:
                 h = i+1
-            elif h:
+            ____ h:
                 break
 
-        return h
+        r.. h
 
 
-__ __name__ == "__main__":
-    assert Solution().hIndex([3, 0, 6, 1, 5]) == 3
+__ __name__ __ "__main__":
+    ... Solution().hIndex([3, 0, 6, 1, 5]) __ 3

@@ -21,21 +21,21 @@ class Queue(object):
         """
         initialize your data structure here.
         """
-        self.stack1 = []  # Push
-        self.stack2 = []  # Pop
+        self.stack1    # list  # Push
+        self.stack2    # list  # Pop
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.stack1.append(x)
+        self.stack1.a..(x)
 
     ___ pop(self):
         """
         :rtype: nothing
         """
-        __ not self.stack2:
+        __ n.. self.stack2:
             self._move()
         self.stack2.pop()
 
@@ -43,22 +43,22 @@ class Queue(object):
         """
         :rtype: int
         """
-        __ not self.stack2:
+        __ n.. self.stack2:
             self._move()
-        return self.stack2[-1]
+        r.. self.stack2[-1]
 
     ___ empty(self):
         """
         :rtype: bool
         """
-        __ not self.stack2:
+        __ n.. self.stack2:
             self._move()
-        __ not self.stack2:
-            return True
-        else:
-            return False
+        __ n.. self.stack2:
+            r.. True
+        ____:
+            r.. False
 
     ___ _move(self):
         """Move elements from stack1 to stack2"""
         while self.stack1:
-            self.stack2.append(self.stack1.pop())
+            self.stack2.a..(self.stack1.pop())

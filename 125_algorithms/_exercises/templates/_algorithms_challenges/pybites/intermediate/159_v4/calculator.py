@@ -1,4 +1,4 @@
-import operator
+_______ operator
 
 OPS = {'+': operator.add,
        '-': operator.sub,
@@ -19,21 +19,21 @@ ___ simple_calculator(calculation):
        Make sure you convert both numbers to ints.
        If bad data is passed in, raise a ValueError.
     """
-    __ not any([op in calculation for op in OPS]):
+    __ n.. any([op __ calculation ___ op __ OPS]):
         raise ValueError
 
     # assume op is good and split the string
-    args = calculation.split()
+    args = calculation.s..
 
-    __ len(args) != 3:
+    __ l..(args) != 3:
         raise ValueError
 
     a, op, b = args
 
     # convert to int raising error. Note, int does this
-    a, b = (int(x) for x in (a, b))
+    a, b = (int(x) ___ x __ (a, b))
 
-    __ b == 0 and op == '/':
+    __ b __ 0 and op __ '/':
         raise ValueError
 
-    return OPS[op](a, b)
+    r.. OPS[op](a, b)

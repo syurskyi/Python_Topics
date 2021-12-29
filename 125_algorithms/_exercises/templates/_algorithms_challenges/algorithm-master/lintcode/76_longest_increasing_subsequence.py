@@ -19,34 +19,34 @@ class Solution:
 
         lis_size = 4
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         INFINITY = float('inf')
-        n = len(A)
+        n = l..(A)
         P = [-INFINITY] + [INFINITY] * n
 
-        for i in range(n):
+        ___ i __ r..(n):
             j = self.binary_search(P, A[i])
             P[j] = A[i]
 
-        for i in range(n, -1, -1):
+        ___ i __ r..(n, -1, -1):
             __ P[i] < INFINITY:
-                return i
+                r.. i
 
-        return 0
+        r.. 0
 
     ___ binary_search(self, P, a):
-        left, right = 0, len(P) - 1
+        left, right = 0, l..(P) - 1
 
         while left + 1 < right:
             mid = (left + right) // 2
             __ P[mid] < a:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        return right
+        r.. right
 
 
 """
@@ -59,10 +59,10 @@ class Solution:
         :rtype: int
         """
         lis_size = 0
-        __ not A:
-            return lis_size
+        __ n.. A:
+            r.. lis_size
 
-        n = len(A)
+        n = l..(A)
 
         """
         `dp[i]` means the maximum size of LIS end at `i`
@@ -72,8 +72,8 @@ class Solution:
         # pi = [0] * n
         # end_at = -1
 
-        for i in range(n):
-            for j in range(i):
+        ___ i __ r..(n):
+            ___ j __ r..(i):
                 """
                 `dp[j]` the existing subseq end at `j`
                 `+ 1` means included `A[i]`
@@ -92,4 +92,4 @@ class Solution:
         #     end_at = pi[end_at]
         # print(paths)
 
-        return lis_size
+        r.. lis_size

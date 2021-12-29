@@ -10,4 +10,4 @@ class Solution(object):
       ans += (n % 9) * k
       k *= 10
       n /= 9
-    return ans
+    r.. ans

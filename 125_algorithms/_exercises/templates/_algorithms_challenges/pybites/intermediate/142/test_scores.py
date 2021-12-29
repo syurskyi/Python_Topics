@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from scores import Player, calculate_score, get_winner
+____ scores _______ Player, calculate_score, get_winner
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -11,7 +11,7 @@ from scores import Player, calculate_score, get_winner
     ([6, 6, 5, 5], 22),
 ])
 ___ test_calculate_score(arg, expected):
-    assert calculate_score(arg) == expected
+    ... calculate_score(arg) __ expected
 
 
 @pytest.mark.parametrize("arg", [
@@ -30,7 +30,7 @@ ___ test_winner_3_players():
       Player(name='player 2', scores=[1, 1, 1, 1]),
       Player(name='player 3', scores=[4, 5, 1, 2]),  # max 9
     ]
-    assert get_winner(players) == players[-1]
+    ... get_winner(players) __ players[-1]
 
 
 ___ test_winner_shorter_score_len_raises_exception():

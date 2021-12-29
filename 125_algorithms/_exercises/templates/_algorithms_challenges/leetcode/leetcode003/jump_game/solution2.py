@@ -17,15 +17,15 @@ class Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump(self, A):
-        n = len(A)
-        __ n == 1:
-            return True
+        n = l..(A)
+        __ n __ 1:
+            r.. True
         # d[i] is the max index A[i] can reach in A
-        d = [i + A[i] for i in range(n)]
+        d = [i + A[i] ___ i __ r..(n)]
         reach = n - 1
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             # j is from n - 1 to 0
             j = n - 1 - i
             __ d[j] >= reach:
                 reach = j
-        return reach == 0
+        r.. reach __ 0

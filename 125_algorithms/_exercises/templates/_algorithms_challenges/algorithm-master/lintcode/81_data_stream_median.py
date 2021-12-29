@@ -1,4 +1,4 @@
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -7,31 +7,31 @@ class Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        ans = []
-        __ not nums:
-            return ans
+        ans    # list
+        __ n.. nums:
+            r.. ans
 
-        minheap = []
-        maxheap = []
+        minheap    # list
+        maxheap    # list
         median = 0
 
-        for num in nums:
+        ___ num __ nums:
             __ num < median:
                 heapq.heappush(maxheap, -num)
-            else:
+            ____:
                 heapq.heappush(minheap, num)
 
-            while len(minheap) > len(maxheap):
+            while l..(minheap) > l..(maxheap):
                 heapq.heappush(maxheap, -heapq.heappop(minheap))
 
-            while len(maxheap) > len(minheap) + 1:
+            while l..(maxheap) > l..(minheap) + 1:
                 heapq.heappush(minheap, -heapq.heappop(maxheap))
 
             __ maxheap:
                 median = -maxheap[0]
-            else:
+            ____:
                 median = 0
 
-            ans.append(median)
+            ans.a..(median)
 
-        return ans
+        r.. ans

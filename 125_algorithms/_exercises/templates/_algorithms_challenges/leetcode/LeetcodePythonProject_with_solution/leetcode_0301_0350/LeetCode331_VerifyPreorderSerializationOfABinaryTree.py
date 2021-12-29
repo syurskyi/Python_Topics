@@ -6,15 +6,15 @@ Created on Mar 19, 2017
 
 class Solution(object):
     ___ isValidSerialization(self, preorder):
-        __ not preorder: return False
+        __ n.. preorder: r.. False
         nodes = preorder.split(',')
-        stack = []
-        for node in nodes:
-            stack.append(node)
-            while len(stack)>=3 and stack[-1] == '#' and stack[-2] == '#' and\
+        stack    # list
+        ___ node __ nodes:
+            stack.a..(node)
+            while l..(stack)>=3 and stack[-1] __ '#' and stack[-2] __ '#' and\
                 stack[-3] != '#':
                 stack.pop()
                 stack.pop()
                 stack.pop()
-                stack.append('#')
-        return stack == ['#']
+                stack.a..('#')
+        r.. stack __ ['#']

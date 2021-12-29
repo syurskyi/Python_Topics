@@ -13,35 +13,35 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[str]]
         """
-        ans = []
-        __ not words:
-            return ans
+        ans    # list
+        __ n.. words:
+            r.. ans
 
-        self.dfs(words, len(words[0]), ans, [])
+        self.dfs(words, l..(words[0]), ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, words, n, ans, path):
-        __ (len(path) == n and
+        __ (l..(path) __ n and
             self.is_valid(path)):
-            ans.append(path[:])
-            return
+            ans.a..(path[:])
+            r..
 
-        __ len(path) >= n:
-            return
+        __ l..(path) >= n:
+            r..
 
-        for i in range(len(words)):
-            path.append(words[i])
+        ___ i __ r..(l..(words)):
+            path.a..(words[i])
             self.dfs(words, n, ans, path)
             path.pop()
 
     ___ is_valid(self, path):
-        __ not path or len(path) != len(path[0]):
-            return False
+        __ n.. path o. l..(path) != l..(path[0]):
+            r.. False
 
-        for i in range(1, len(path)):
-            for j in range(i):
+        ___ i __ r..(1, l..(path)):
+            ___ j __ r..(i):
                 __ path[i][j] != path[j][i]:
-                    return False
+                    r.. False
 
-        return True
+        r.. True

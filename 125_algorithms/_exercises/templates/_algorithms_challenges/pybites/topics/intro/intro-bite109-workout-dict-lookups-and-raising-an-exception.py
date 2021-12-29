@@ -1,4 +1,4 @@
-import string
+_______ string
 '''
 Bite 109. Workout dict lookups and raising an exception
 In this Bite you learn how to lookup values from a dictionary or in Python: dict.
@@ -49,10 +49,10 @@ ___ get_workout_motd(day):
        a 'message of the day'"""
     d = day.capitalize()
     work = workout_schedule[d]
-    __ work == "Rest":
-        return chill
-    else:
-        return f"Go train {work}"
+    __ work __ "Rest":
+        r.. chill
+    ____:
+        r.. f"Go train {work}"
 
 
 

@@ -17,13 +17,13 @@ ROMAN_DIGITS = [
 
 ___ romanize(decimal_number):
     """Takes a decimal number int and converts its Roman Numeral str"""
-    __ not isinstance(decimal_number, int) or not (0 < decimal_number < 4000):
+    __ n.. isi..(decimal_number, int) o. n.. (0 < decimal_number < 4000):
         raise ValueError('Value out of range or not a number')
     res = ''
     d = decimal_number
-    for v, c in ROMAN_DIGITS:
+    ___ v, c __ ROMAN_DIGITS:
         __ d >= v:
             x = d // v
             res += c * x
             d -= v * x
-    return res
+    r.. res

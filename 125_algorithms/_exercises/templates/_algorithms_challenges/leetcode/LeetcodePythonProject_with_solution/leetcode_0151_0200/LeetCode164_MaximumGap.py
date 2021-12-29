@@ -9,40 +9,40 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        import math
-        __ not nums or len(nums) < 2:
-            return 0
-        minVal = min(nums)
+        _______ math
+        __ n.. nums o. l..(nums) < 2:
+            r.. 0
+        minVal = m..(nums)
         maxVal = max(nums)
-        n = len(nums)
+        n = l..(nums)
         gap = math.ceil(float(maxVal-minVal)/(n-1))
         bucketsMin = [float('inf')]*(n-1)
         bucketsMax = [float('-inf')]*(n-1)
-        for num in nums:
-            __ num == minVal or num == maxVal:
+        ___ num __ nums:
+            __ num __ minVal o. num __ maxVal:
                 continue
             idx = int((num-minVal)//gap)
-            bucketsMin[idx] = min(bucketsMin[idx], num)
+            bucketsMin[idx] = m..(bucketsMin[idx], num)
             bucketsMax[idx] = max(bucketsMax[idx], num)
         maxGap = float('-inf')
         prev = minVal
-        for i in range(n-1):
-            __ bucketsMin[i] == float('inf') and bucketsMax[i] == float('-inf'):
+        ___ i __ r..(n-1):
+            __ bucketsMin[i] __ float('inf') and bucketsMax[i] __ float('-inf'):
                 continue
             maxGap = max(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]
         maxGap = max(maxGap, maxVal-prev)
-        return maxGap
+        r.. maxGap
     
     ___ test(self):
         testCases = [
             [1, 1000],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.maximumGap(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

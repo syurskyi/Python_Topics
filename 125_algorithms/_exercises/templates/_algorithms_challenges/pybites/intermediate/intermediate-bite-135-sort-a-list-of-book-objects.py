@@ -4,9 +4,9 @@ Complete the 4 functions below. Consider using lambda and/or one or more helper 
 attrgetter (operator module). Good luck and have fun!
 """
 
-from collections import namedtuple
-from datetime import datetime
-from operator import attrgetter
+____ collections _______ namedtuple
+____ datetime _______ datetime
+____ operator _______ attrgetter
 
 Book = namedtuple('Book', 'title authors pages published')
 
@@ -41,7 +41,7 @@ ___ sort_books_by_len_of_title(books=books):
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    x = sorted(books, key=lambda x: len(x.title))
+    x = s..(books, key=l.... x: l..(x.title))
     print(x)
 
 

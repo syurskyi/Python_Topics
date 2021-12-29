@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from pascal import pascal
+____ pascal _______ pascal
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -13,4 +13,4 @@ from pascal import pascal
     (6, [1, 5, 10, 10, 5, 1]),
 ])
 ___ test_pascal(arg, expected):
-    assert pascal(arg) == expected
+    ... pascal(arg) __ expected

@@ -23,23 +23,23 @@ class Solution:
         :return: a list of lists of length 3, [[val1,val2,val3]]
         """
         reverse_map = {}
-        for ind, val in enumerate(num):
-            __ val not in reverse_map:
+        ___ ind, val __ enumerate(num):
+            __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
-            else:
-                reverse_map[val].append(ind)
+            ____:
+                reverse_map[val].a..(ind)
 
-        result = []
-        for i in xrange(len(num)):
-            for j in xrange(i, len(num)):
+        result    # list
+        ___ i __ xrange(l..(num)):
+            ___ j __ xrange(i, l..(num)):
                 target = 0-num[i]-num[j]
-                __ target not in reverse_map:
+                __ target n.. __ reverse_map:
                     continue
-                for index in reverse_map[target]:
+                ___ index __ reverse_map[target]:
                     __ i != index and j != index:
-                        result.append([num[i], num[j], target])
+                        result.a..([num[i], num[j], target])
                         break
-        return result
+        r.. result
 
     ___ threeSum_TLE(self, num):
         """
@@ -51,26 +51,26 @@ class Solution:
 
         # hash
         reverse_map = {}
-        for ind, val in enumerate(num):
-            __ val not in reverse_map:
+        ___ ind, val __ enumerate(num):
+            __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
-            else:
-                reverse_map[val].append(ind)
+            ____:
+                reverse_map[val].a..(ind)
 
         result = {}
-        for i in xrange(len(num)):
-            for j in xrange(i, len(num)):
+        ___ i __ xrange(l..(num)):
+            ___ j __ xrange(i, l..(num)):
                 target = 0-num[i]-num[j]
-                __ target not in reverse_map:
+                __ target n.. __ reverse_map:
                     continue
-                for index in reverse_map[target]:
+                ___ index __ reverse_map[target]:
                     __ index != i and index != j:
-                        lst = sorted([num[i], num[j], target])
+                        lst = s..([num[i], num[j], target])
                         lst = tuple(lst)
                         result[lst] = 1  # hash
                         break
 
-        return result.keys()
+        r.. result.keys()
 
     ___ threeSum(self, num):
         """
@@ -95,35 +95,35 @@ class Solution:
         """
 
         # record result
-        result = []
+        result    # list
         num.sort()  # sorting first, avoid duplicate,
         i = 0
-        while i < len(num)-2:
+        while i < l..(num)-2:
             j = i+1
-            k = len(num)-1
+            k = l..(num)-1
             while j < k:
                 lst = [num[i], num[j], num[k]]
-                __ sum(lst) == 0:
-                    result.append(lst)
+                __ s..(lst) __ 0:
+                    result.a..(lst)
                     k -= 1
                     j += 1
                     # JUMP remove duplicate
-                    while j < k and num[j] == num[j-1]:
+                    while j < k and num[j] __ num[j-1]:
                         j += 1
-                    while j < k and num[k] == num[k+1]:
+                    while j < k and num[k] __ num[k+1]:
                         k -= 1
-                elif sum(lst) > 0:
+                ____ s..(lst) > 0:
                     k -= 1
-                else:
+                ____:
                     j += 1
 
             i += 1
             # remove duplicate
-            while i < len(num)-2 and num[i] == num[i-1]:
+            while i < l..(num)-2 and num[i] __ num[i-1]:
                 i += 1
 
-        return result
+        r.. result
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().threeSum([-1, 0, 1, 2, -1, -4])

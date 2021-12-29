@@ -19,8 +19,8 @@ class Solution:
         :type b: ParentTreeNode
         :rtype: ParentTreeNode
         """
-        __ not root:
-            return root
+        __ n.. root:
+            r.. root
 
         nodes = set()
 
@@ -29,8 +29,8 @@ class Solution:
             a = a.parent
 
         while b:
-            __ b in nodes:
-                return b
+            __ b __ nodes:
+                r.. b
             b = b.parent
 
-        return root
+        r.. root

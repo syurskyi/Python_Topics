@@ -1,10 +1,10 @@
-import csv
-from json.decoder import JSONDecodeError
-from urllib.request import urlretrieve
+_______ csv
+____ json.decoder _______ JSONDecodeError
+____ urllib.request _______ urlretrieve
 
-import pytest
+_______ pytest
 
-from json2csv import convert_to_csv, EXCEPTION, TMP
+____ json2csv _______ convert_to_csv, EXCEPTION, TMP
 
 mount_data = (
     'https://bites-data.s3.us-east-2.amazonaws.com/'
@@ -37,7 +37,7 @@ mount2_expected = [
 @pytest.mark.parametrize("file_no, expected, exception", [
     (1, mount1_expected, False),
     (2, mount2_expected, False),
-    (3, None, True),
+    (3, N.., True),
 ])
 ___ test_json2csv(file_no, expected, exception, capfd):
     mount_json = TMP / f'mount{file_no}.json'
@@ -48,14 +48,14 @@ ___ test_json2csv(file_no, expected, exception, capfd):
     __ exception:
         with pytest.raises(JSONDecodeError) as exc:
             convert_to_csv(mount_json)
-            assert 'Invalid control character' in str(exc)
+            ... 'Invalid control character' __ str(exc)
 
         # testing you actually caught the exception!
         output = capfd.readouterr()[0].strip()
-        assert output == EXCEPTION
-        return
+        ... output __ EXCEPTION
+        r..
 
     convert_to_csv(mount_json)
     with open(mount_csv) as csv_file:
-        actual = list(csv.reader(csv_file))
-        assert actual == expected
+        actual = l..(csv.reader(csv_file))
+        ... actual __ expected

@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 ___ fix_translation(org_text, trans_text):
@@ -8,7 +8,7 @@ ___ fix_translation(org_text, trans_text):
     """
 
     tags = ['code','pre']
-    for tag in tags:
+    ___ tag __ tags:
         opening = '<' + tag + '>'
         closing = '</' + tag + '>'
         string = f"{opening}([\W\w]+?){closing}"
@@ -18,7 +18,7 @@ ___ fix_translation(org_text, trans_text):
         print(trans)
 
 
-        for original_value,trans_value in zip(original,trans):
+        ___ original_value,trans_value __ zip(original,trans):
             trans_text = trans_text.replace(trans_value,original_value)
 
 
@@ -26,7 +26,7 @@ ___ fix_translation(org_text, trans_text):
 
 
 
-    return trans_text
+    r.. trans_text
 
 
 
@@ -38,7 +38,7 @@ ___ fix_translation(org_text, trans_text):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
 

@@ -53,7 +53,7 @@ had--
 
 The character '-' signifies an empty space on the screen.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -65,13 +65,13 @@ class Solution:
         """
         sentence = " ".join(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
         i = 0
-        for r in range(rows):
+        ___ r __ r..(rows):
             i += cols
-            while sentence[i % len(sentence)] != " ":
+            while sentence[i % l..(sentence)] != " ":
                 i -= 1
 
             # now sentence[i] is " "
             i += 1
 
-        ret = i // len(sentence)
-        return ret 
+        ret = i // l..(sentence)
+        r.. ret 

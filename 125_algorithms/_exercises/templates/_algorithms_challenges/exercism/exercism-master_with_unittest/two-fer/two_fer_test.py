@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from two_fer import two_fer
+____ two_fer _______ two_fer
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
@@ -16,5 +16,5 @@ class TwoFerTest(unittest.TestCase):
         self.assertEqual(two_fer("Bob"), "One for Bob, one for me.")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

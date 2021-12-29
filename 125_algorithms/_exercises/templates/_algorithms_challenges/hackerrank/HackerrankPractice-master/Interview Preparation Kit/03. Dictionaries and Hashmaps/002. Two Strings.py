@@ -2,10 +2,10 @@
 #  Score: 25
 
 
-for i in range(int(input())):
+___ i __ r..(int(input())):
     str1 = set(input())
     str2 = set(input())
     __ str1 & str2 != set():
         print('YES')
-    else:
+    ____:
         print('NO')

@@ -28,12 +28,12 @@ class Solution:
         :param B: list
         :return: float
         """
-        m = len(A)
-        n = len(B)
-        __ ((m+n)&1 == 0):
-            return (self.find_kth(A, B, (m+n)/2)+self.find_kth(A, B, (m+n)/2-1))/2.0
-        else:
-            return self.find_kth(A, B, (m+n)/2)
+        m = l..(A)
+        n = l..(B)
+        __ ((m+n)&1 __ 0):
+            r.. (self.find_kth(A, B, (m+n)/2)+self.find_kth(A, B, (m+n)/2-1))/2.0
+        ____:
+            r.. self.find_kth(A, B, (m+n)/2)
 
     ___ find_kth(self, A, B, k):
         """
@@ -43,23 +43,23 @@ class Solution:
         :param k: index starting from 0
         :return:
         """
-        __ not A:  return B[k]
-        __ not B:  return A[k]
-        __ k == 0: return min(A[0], B[0])
+        __ n.. A:  r.. B[k]
+        __ n.. B:  r.. A[k]
+        __ k __ 0: r.. m..(A[0], B[0])
 
-        m, n = len(A), len(B)
+        m, n = l..(A), l..(B)
         # pay attention to consider the equal sign. Assigning equal sign is an art.
         __ A[m/2] >= B[n/2]:
             __ k > m/2+n/2:
-                return self.find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
-            else:
-                return self.find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
-        else:
-            return self.find_kth(B, A, k)
+                r.. self.find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
+            ____:
+                r.. self.find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
+        ____:
+            r.. self.find_kth(B, A, k)
 
 
-__ __name__ == "__main__":
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [3]) == 2
-    assert Solution().findMedianSortedArrays([1], [2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2]) == 1.5
+__ __name__ __ "__main__":
+    ... Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) __ 2
+    ... Solution().findMedianSortedArrays([1, 2], [3]) __ 2
+    ... Solution().findMedianSortedArrays([1], [2, 3]) __ 2
+    ... Solution().findMedianSortedArrays([1, 2], [1, 2]) __ 1.5

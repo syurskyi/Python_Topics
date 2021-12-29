@@ -1,15 +1,15 @@
-import csv
+_______ csv
 
 
-___ process_classes(classes: list) -> list:
+___ process_classes(classes: l..) -> l..:
     '''cleans and returns classes according to SIS as list'''
-    return [cls.split(' - ')[0].replace('"', '') for cls in classes __ cls]
+    r.. [cls.split(' - ')[0].replace('"', '') ___ cls __ classes __ cls]
 
 
 ___ process_row(row):
     '''processes row according to SIS format.'''
     classes = process_classes(row[2:])
-    return [','.join([cls, '2020', row[0]]) for cls in classes]
+    r.. [','.join([cls, '2020', row[0]]) ___ cls __ classes]
 
 
 ___ class_rosters(input_file):
@@ -17,10 +17,10 @@ ___ class_rosters(input_file):
         according to the Bite description.
         Return a list holding one item per student
         per class, correctly formatted.'''
-    sis_list = list()
+    sis_list = l..()
     with open(input_file, 'r') as f:
-        for row in csv.reader(f):
+        ___ row __ csv.reader(f):
             sis_rows = process_row(row)
             __ sis_rows:
                 sis_list.extend(sis_rows)
-    return sis_list
+    r.. sis_list

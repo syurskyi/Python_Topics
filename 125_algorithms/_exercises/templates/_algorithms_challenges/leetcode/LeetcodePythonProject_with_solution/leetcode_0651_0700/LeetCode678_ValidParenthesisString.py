@@ -10,21 +10,21 @@ class Solution(object):
         :rtype: bool
         """
         low, high = 0, 0
-        for c in s:
-            __ c == '(':
+        ___ c __ s:
+            __ c __ '(':
                 low += 1
                 high += 1
-            elif c == ')':
+            ____ c __ ')':
                 __ low > 0:
                     low -= 1
                 high -= 1
-            else:
+            ____:
                 __ low > 0:
                     low -= 1
                 high += 1
             __ high < 0:
-                return False
-        return low == 0
+                r.. False
+        r.. low __ 0
     
     ___ test(self):
         testCases = [
@@ -34,11 +34,11 @@ class Solution(object):
             '(*()',
             '(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.checkValidString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

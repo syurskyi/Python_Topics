@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class MovingAverage(object):
@@ -21,14 +21,14 @@ class MovingAverage(object):
     data = self.data
 
     leftTop = 0
-    __ len(data) >= self.windowSize:
+    __ l..(data) >= self.windowSize:
       leftTop = data.popleft()
-    data.append(val)
+    data.a..(val)
 
     self.windowSum -= leftTop
-    __ len(data) < self.windowSize:
-      return self.windowSum / len(data)
-    return self.windowSum / self.windowSize
+    __ l..(data) < self.windowSize:
+      r.. self.windowSum / l..(data)
+    r.. self.windowSum / self.windowSize
 
 # Your MovingAverage object will be instantiated and called as such:
 # obj = MovingAverage(size)

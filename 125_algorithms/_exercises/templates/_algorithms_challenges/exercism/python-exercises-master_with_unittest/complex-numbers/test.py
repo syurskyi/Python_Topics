@@ -1,8 +1,8 @@
-import unittest
+_______ unittest
 
-import math
+_______ math
 
-from complex_numbers import ComplexNumber
+____ complex_numbers _______ ComplexNumber
 
 
 class ComplexNumbersTest(unittest.TestCase):
@@ -152,5 +152,5 @@ class ComplexNumbersTest(unittest.TestCase):
         self.assertEqual(expected.imaginary, input_number.exp().imaginary)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

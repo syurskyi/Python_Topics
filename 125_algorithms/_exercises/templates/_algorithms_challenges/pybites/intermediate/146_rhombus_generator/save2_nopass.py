@@ -16,7 +16,7 @@ ___ gen_rhombus(width):
          ***
           *
     """
-    stars = [(line * 2 - 1) * '*' for line in range(width - 1)]
-    stacked = [line.center(len(stars[-1]), ' ') for line in stars[1:]]
-    stacked_rev = [item for item in reversed(stacked)]
+    stars = [(line * 2 - 1) * '*' ___ line __ r..(width - 1)]
+    stacked = [line.center(l..(stars[-1]), ' ') ___ line __ stars[1:]]
+    stacked_rev = [item ___ item __ reversed(stacked)]
     yield stacked + stacked_rev[1:]

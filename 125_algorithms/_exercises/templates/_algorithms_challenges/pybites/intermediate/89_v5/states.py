@@ -35,7 +35,7 @@ NOT_FOUND = 'N/A'
 ___ get_every_nth_state(states=states, n=10):
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
-    return [s for s in states[n - 1::n]]
+    r.. [s ___ s __ states[n - 1::n]]
 
 
 ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
@@ -44,16 +44,16 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
        'Illinois' returns 'IL'.
        If the state is not in the dict, return 'N/A' which we stored
        in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
-    return us_state_abbrev.get(state_name, NOT_FOUND)
+    r.. us_state_abbrev.get(state_name, NOT_FOUND)
 
 
 ___ get_longest_state(data):
     """Receives data, which can be the us_state_abbrev dict or the states
        list (see above). It returns the longest state measured by the length
        of the string"""
-    __ isinstance(data, dict):
+    __ isi..(data, d..):
         data = data.keys()
-    return sorted(data, key=len)[-1]
+    r.. s..(data, key=l..)[-1]
 
 
 ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
@@ -65,6 +65,6 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
        ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
        (see also test_combine_state_names_and_abbreviations)"""
 
-    res = sorted(us_state_abbrev.values())[:10]
-    res.extend(sorted(states)[-10:])
-    return res
+    res = s..(us_state_abbrev.values())[:10]
+    res.extend(s..(states)[-10:])
+    r.. res

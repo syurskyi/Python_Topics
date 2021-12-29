@@ -5,26 +5,26 @@ class Solution:
         :type primes: list[int]
         :rtype: int
         """
-        __ not n or n <= 1 or not primes:
-            return 1
+        __ n.. n o. n <= 1 o. n.. primes:
+            r.. 1
 
-        k = len(primes)
+        k = l..(primes)
 
         # i -> same as `i` in `primes`, v -> track of how far `primes[i]` stay in `uglys`
         steps = [0] * k
         uglys = [0] * n
         uglys[0] = 1
 
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             ugly = float('inf')
 
-            for j in range(k):
-                ugly = min(ugly, uglys[steps[j]] * primes[j])
+            ___ j __ r..(k):
+                ugly = m..(ugly, uglys[steps[j]] * primes[j])
 
             uglys[i] = ugly
 
-            for j in range(k):
-                __ uglys[steps[j]] * primes[j] == ugly:
+            ___ j __ r..(k):
+                __ uglys[steps[j]] * primes[j] __ ugly:
                     steps[j] += 1
 
-        return uglys[n - 1]
+        r.. uglys[n - 1]

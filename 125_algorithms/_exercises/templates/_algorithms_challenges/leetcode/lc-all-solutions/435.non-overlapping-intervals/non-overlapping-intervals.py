@@ -10,12 +10,12 @@ class Solution(object):
     :type intervals: List[Interval]
     :rtype: int
     """
-    intervals.sort(key=lambda i: i.end)
+    intervals.sort(key=l.... i: i.end)
     ans = 0
     end = float("-inf")
-    for interval in intervals:
+    ___ interval __ intervals:
       # print interval.start, interval.end
       __ interval.start >= end:
         ans += 1
         end = interval.end
-    return len(intervals) - ans
+    r.. l..(intervals) - ans

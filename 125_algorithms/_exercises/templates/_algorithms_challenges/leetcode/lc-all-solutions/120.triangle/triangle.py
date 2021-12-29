@@ -4,18 +4,18 @@ class Solution(object):
     :type triangle: List[List[int]]
     :rtype: int
     """
-    dp = [0] * len(triangle)
+    dp = [0] * l..(triangle)
     dp[0] = triangle[0][0]
-    for i in range(1, len(triangle)):
+    ___ i __ r..(1, l..(triangle)):
       pre = dp[0]
-      for j in range(len(triangle[i])):
+      ___ j __ r..(l..(triangle[i])):
         tmp = dp[j]
-        __ j == 0:
+        __ j __ 0:
           dp[j] = pre
-        elif j == len(triangle[i]) - 1:
+        ____ j __ l..(triangle[i]) - 1:
           dp[j] = pre
-        else:
-          dp[j] = min(dp[j], pre)
+        ____:
+          dp[j] = m..(dp[j], pre)
         dp[j] += triangle[i][j]
         pre = tmp
-    return min(dp)
+    r.. m..(dp)

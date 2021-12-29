@@ -14,7 +14,7 @@ After third round, the three bulbs are [on, off, off].
 
 So you should return 1, because there is only one bulb is on.
 """
-import math
+_______ math
 
 __author__ = 'Daniel'
 
@@ -28,6 +28,6 @@ class Solution(object):
         :rtype: int
         """
         cnt = int(math.sqrt(n))
-        return cnt
+        r.. cnt
 
 

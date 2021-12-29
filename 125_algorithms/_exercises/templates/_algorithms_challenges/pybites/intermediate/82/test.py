@@ -11,6 +11,6 @@ class Test:
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     Test.hello()

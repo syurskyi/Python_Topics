@@ -24,16 +24,16 @@ class Solution:
         maxsize = 9223372036854775806  # Assumed sys.maxsize on 64-bit platform
         INT_MIN = -maxsize - 1
         INT_MAX = maxsize
-        return self.is_valid_bst_aux(root, INT_MIN, INT_MAX)
+        r.. self.is_valid_bst_aux(root, INT_MIN, INT_MAX)
 
     ___ is_valid_bst_aux(self, root, min_val, max_val):
         """Assume that keys are distinct integers"""
-        __ root is None:
-            return True
-        __ root.val < min_val or root.val > max_val:
-            return False
+        __ root __ N..
+            r.. True
+        __ root.val < min_val o. root.val > max_val:
+            r.. False
         # If non-distinct values are allowed, + 1 and - 1 to root.val can be
         # removed
         is_left_bst = self.is_valid_bst_aux(root.left, min_val, root.val - 1)
         is_right_bst = self.is_valid_bst_aux(root.right, root.val + 1, max_val)
-        return is_left_bst and is_right_bst
+        r.. is_left_bst and is_right_bst

@@ -25,10 +25,10 @@ Note:
 1 <= A[i].length <= 100
 A[i][j] is a lowercase letter
 """
-import string
+_______ string
 
-from typing import List
-from collections import Counter
+____ typing _______ List
+____ collections _______ Counter
 
 
 class Solution:
@@ -36,18 +36,18 @@ class Solution:
         """
         running counter
         """
-        ret = []
-        __ not A:
-            return ret
+        ret    # list
+        __ n.. A:
+            r.. ret
             
         counter = Counter(A[0])
-        for a in A[1:]:
+        ___ a __ A[1:]:
             cur = Counter(a)
-            for c in string.ascii_lowercase:
-                counter[c] = min(counter[c], cur[c])
+            ___ c __ string.ascii_lowercase:
+                counter[c] = m..(counter[c], cur[c])
 
-        for c in string.ascii_lowercase:
+        ___ c __ string.ascii_lowercase:
             __ counter[c] > 0:
                 ret.extend([c] * counter[c])
 
-        return ret
+        r.. ret

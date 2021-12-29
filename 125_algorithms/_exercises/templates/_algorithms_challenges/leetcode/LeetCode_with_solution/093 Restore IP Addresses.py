@@ -17,9 +17,9 @@ class Solution:
         :param s: String
         :return: list of strings
         """
-        result = []
+        result    # list
         self.dfs(s, [], result)
-        return result
+        r.. result
 
     ___ dfs_complicated(self, seq, cur, result):
         """
@@ -29,15 +29,15 @@ class Solution:
         :param result:
         :return:
         """
-        __ len(cur) > 4:
-            return
+        __ l..(cur) > 4:
+            r..
 
-        __ not cur or self.is_valid(cur[-1]):
-            __ len(cur) == 4 and not seq:  # check the last one first
-                result.append(".".join(cur))
-                return
+        __ n.. cur o. self.is_valid(cur[-1]):
+            __ l..(cur) __ 4 and n.. seq:  # check the last one first
+                result.a..(".".join(cur))
+                r..
 
-            for i in xrange(1, min(3, len(seq))+1):
+            ___ i __ xrange(1, m..(3, l..(seq))+1):
                 self.dfs(seq[i:], cur+[seq[:i]], result)
 
     ___ dfs(self, seq, cur, result):
@@ -53,25 +53,25 @@ class Solution:
         :return:
         """
         # terminal condition
-        __ not seq and len(cur)==4:
-            result.append(".".join(cur))
-            return
+        __ n.. seq and l..(cur)__4:
+            result.a..(".".join(cur))
+            r..
 
         # for i in xrange(1, 3+1):
         # for loop
-        for i in xrange(1, min(3, len(seq)) + 1):
+        ___ i __ xrange(1, m..(3, l..(seq)) + 1):
             new_seg = seq[:i]
             # condition check
-            __ len(cur) < 4 and self.is_valid(new_seg):
+            __ l..(cur) < 4 and self.is_valid(new_seg):
                 self.dfs(seq[i:], cur + [new_seg], result)
-            else:
-                return
+            ____:
+                r..
 
     ___ is_valid(self, s):
-        __ not s:
-            return False
-        return s == "0" or s[0]!="0" and 0<= int(s) <256  # ["0.0.0.0"]
+        __ n.. s:
+            r.. False
+        r.. s __ "0" o. s[0]!="0" and 0<= int(s) <256  # ["0.0.0.0"]
 
-__ __name__=="__main__":
+__ __name____"__main__":
     IP = "25525511135"
     print Solution().restoreIpAddresses(IP)

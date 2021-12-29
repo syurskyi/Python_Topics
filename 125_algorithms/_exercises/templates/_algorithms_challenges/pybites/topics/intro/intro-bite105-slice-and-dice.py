@@ -1,4 +1,4 @@
-from string import ascii_lowercase
+____ string _______ ascii_lowercase
 
 '''
 Bite 105. Slice and dice
@@ -34,16 +34,16 @@ ___ my_slice_and_dice(text=text):
        if so split the line into words and append the last word to
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
-    results = []
+    results    # list
     s = text.strip().split('\n')
-    for item in s:
+    ___ item __ s:
         item = item.strip()
         __ item[0].islower():
             item = item.rstrip('!')
             item = item.rstrip('.')
             words = item.split(' ')
-            results.append(words[words.__len__()-1])
-    return results
+            results.a..(words[words.__len__()-1])
+    r.. results
 
 ___ slice_and_dice(text=text):
     """Strip the whitespace (newlines) off text at both ends,
@@ -52,17 +52,17 @@ ___ slice_and_dice(text=text):
        if so split the line into words and append the last word to
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
-    results = []
-    for line in text.strip().split('\n'):
+    results    # list
+    ___ line __ text.strip().split('\n'):
         line = line.strip()
 
-        __ line[0] not in ascii_lowercase:
+        __ line[0] n.. __ ascii_lowercase:
             continue
-        words = line.split()
+        words = line.s.. 
 
         last_word_stripped = words[-1].rstrip('!.')
-        results.append(last_word_stripped)
+        results.a..(last_word_stripped)
 
-    return results
+    r.. results
 
 slice_and_dice(text)

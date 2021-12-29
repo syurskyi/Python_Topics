@@ -1,6 +1,6 @@
 ___ digit_map(num):
     """maps numbers greater than a single digit to letters (UPPER)"""
-    return chr(num + 55) __ num > 9 else str(num)
+    r.. chr(num + 55) __ num > 9 ____ str(num)
 
 ___ convert(number: int, base: int = 2) -> str:
     """Converts an integer into any base between 2 and 36 inclusive
@@ -16,14 +16,14 @@ ___ convert(number: int, base: int = 2) -> str:
         str: The returned value as a string
     """
 
-    __ base < 2 or base > 36:
+    __ base < 2 o. base > 36:
         raise ValueError
 
-    digits = []
+    digits    # list
     while number > 0:
-        digits.append(number % base)
+        digits.a..(number % base)
         number //= base
 
-    digits = list(map(digit_map, digits))
+    digits = l..(map(digit_map, digits))
 
-    return ''.join(reversed(digits))
+    r.. ''.join(reversed(digits))

@@ -24,8 +24,8 @@ Note:
 1 <= time.length <= 60000
 1 <= time[i] <= 500
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -35,11 +35,11 @@ class Solution:
         """
         counter = defaultdict(int)
         ret = 0
-        for t in time:
+        ___ t __ time:
             ret += counter[(60 - t) % 60]  # handle 0
             counter[t % 60] += 1
 
-        return ret
+        r.. ret
 
 
     ___ numPairsDivisibleBy60_error(self, time: List[int]) -> int:
@@ -51,15 +51,15 @@ class Solution:
         attribution error
         """
         hm = defaultdict(int)
-        for t in time:
+        ___ t __ time:
             hm[t % 60] += 1
 
         ret = 0
-        for k, v in hm.items():
-            __ k == 0:
+        ___ k, v __ hm.items():
+            __ k __ 0:
                 ret += (v * (v - 1)) // 2
-            elif k <= 60 - k:  # attribution
+            ____ k <= 60 - k:  # attribution
                 v2 =  hm[60 - k]
                 ret += v2 * v
 
-        return ret
+        r.. ret

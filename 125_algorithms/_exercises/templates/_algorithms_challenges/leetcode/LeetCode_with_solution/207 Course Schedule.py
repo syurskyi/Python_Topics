@@ -32,34 +32,34 @@ class Solution:
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        V = [[] for _ in xrange(numCourses)]
-        for edge in prerequisites:
-            V[edge[0]].append(edge[1])
+        V = [[] ___ _ __ xrange(numCourses)]
+        ___ edge __ prerequisites:
+            V[edge[0]].a..(edge[1])
 
-        visited = [False for _ in xrange(numCourses)]  # visited and fine (cleared)
-        marked = [False for _ in xrange(numCourses)]  # marked during one dfs
-        for i in xrange(numCourses):
-            __ not visited[i]:
+        visited = [False ___ _ __ xrange(numCourses)]  # visited and fine (cleared)
+        marked = [False ___ _ __ xrange(numCourses)]  # marked during one dfs
+        ___ i __ xrange(numCourses):
+            __ n.. visited[i]:
                 __ self.dfs_have_cycle(V, i, visited, marked):
-                    return False
+                    r.. False
 
-        return True
+        r.. True
 
     ___ dfs_have_cycle(self, V, i, visited, marked):
         __ marked[i]:
-            return True
+            r.. True
 
         marked[i] = True
 
-        for neighbor in V[i]:
-            __ not visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked):
-                return True
+        ___ neighbor __ V[i]:
+            __ n.. visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked):
+                r.. True
 
         # clean up
         marked[i] = False
         visited[i] = True
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().canFinish(2, [[1, 0], [0, 1]]) is False
+__ __name__ __ "__main__":
+    ... Solution().canFinish(2, [[1, 0], [0, 1]]) __ False

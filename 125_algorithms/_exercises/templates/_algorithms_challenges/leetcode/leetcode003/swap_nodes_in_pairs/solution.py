@@ -8,10 +8,10 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head):
-        __ head __ None or head.next __ None:
-            return head
-        else:
+        __ head __ N.. o. head.next __ N..
+            r.. head
+        ____:
             t = head.next
             head.next = self.swapPairs(t.next)
             t.next = head
-            return t
+            r.. t

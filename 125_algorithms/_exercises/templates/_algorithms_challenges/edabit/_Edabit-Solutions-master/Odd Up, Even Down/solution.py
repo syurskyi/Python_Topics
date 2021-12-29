@@ -1,8 +1,8 @@
 ___ transform(lst):
-    output= []
-    for i in lst:
-        __ i % 2 == 0:
-            output.append(i-1)
-        else:
-             output.append(i+1)
-    return output
+    output   # list
+    ___ i __ lst:
+        __ i % 2 __ 0:
+            output.a..(i-1)
+        ____:
+             output.a..(i+1)
+    r.. output

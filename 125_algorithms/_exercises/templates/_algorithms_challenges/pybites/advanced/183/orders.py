@@ -1,11 +1,11 @@
-import os
-from urllib.request import urlretrieve
+_______ os
+____ urllib.request _______ urlretrieve
 
-import pandas as pd
+_______ pandas as pd
 
 TMP = os.getenv("TMP", "/tmp")
 EXCEL = os.path.join(TMP, 'order_data.xlsx')
-__ not os.path.isfile(EXCEL):
+__ n.. os.path.isfile(EXCEL):
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',
         EXCEL
@@ -17,7 +17,7 @@ ___ load_excel_into_dataframe(excel=EXCEL):
        into a Pandas DataFrame and return it to the caller"""
 
     sales = pd.read_excel(excel,sheet_name='SalesOrders')
-    return sales
+    r.. sales
 
 
 ___ get_year_region_breakdown(df):
@@ -25,20 +25,20 @@ ___ get_year_region_breakdown(df):
        column. You probably need to make an extra column for
        year, return the new df as shown in the Bite description"""
     df['Year'] = df.OrderDate.dt.year
-    return df.groupby(['Year','Region']).Total.sum()
+    r.. df.groupby(['Year','Region']).Total.s..()
 
 ___ get_best_sales_rep(df):
     """Return a tuple of the name of the df rep and
        the total of his/her df"""
-    top = df.groupby('Rep').Total.sum().nlargest(1)
+    top = df.groupby('Rep').Total.s..().nlargest(1)
 
-    return list(top.items())[0]
+    r.. l..(top.items())[0]
 
 ___ get_most_sold_item(df):
     """Return a tuple of the name of the most sold item
        and the number of units sold"""
 
 
-    top = df.groupby('Item').Units.sum().nlargest(1)
+    top = df.groupby('Item').Units.s..().nlargest(1)
 
-    return list(top.items())[0]
+    r.. l..(top.items())[0]

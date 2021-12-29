@@ -19,9 +19,9 @@ class Solution:
              = A[0] + A[1] + ... + A[i-1]
         """
         P = [0]
-        for x in nums: P.append(P[-1] + x)
-        max_sum = max(P[i+k] - P[i] for i in range(len(nums) - k + 1))
-        return max_sum / float(k)
+        ___ x __ nums: P.a..(P[-1] + x)
+        max_sum = max(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1))
+        r.. max_sum / float(k)
 
 class Solution:
     ___ findMaxAverage(self, nums, k):
@@ -37,10 +37,10 @@ class Solution:
                 |--> Start to remove past child
         """
         max_sum, tmp_sum = float('-inf'), 0
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             tmp_sum += nums[i]
             __ i >= k:
                 tmp_sum -= nums[i-k]
             __ i + 1 >= k:
                 max_sum = max(max_sum, tmp_sum)
-        return max_sum / float(k)
+        r.. max_sum / float(k)

@@ -11,7 +11,7 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-from enum import Enum
+____ enum _______ Enum
 
 
 class Bloodtype(Enum):
@@ -50,7 +50,7 @@ ___ check_bt(donor, recipient):
     d = donor.value
     r = recipient.value
     anti_gen_comp = (r // 4 % 2 - d // 4 % 2, r // 2 % 2 - d // 2 % 2, r % 2 - d % 2)
-    return all(agc >= 0 for agc in anti_gen_comp)
+    r.. a..(agc >= 0 ___ agc __ anti_gen_comp)
 
 
 ___ _check_convert_input(inpval):
@@ -61,17 +61,17 @@ ___ _check_convert_input(inpval):
         Returns:
         (Bloodtype): converted (if needed) impval
     """
-    __ isinstance(inpval, Bloodtype):
-        return inpval
-    __ isinstance(inpval, int):
+    __ isi..(inpval, Bloodtype):
+        r.. inpval
+    __ isi..(inpval, int):
         __ 0 <= inpval <= 7:
-            return Bloodtype(inpval)
-        else:
+            r.. Bloodtype(inpval)
+        ____:
             raise ValueError
-    __ isinstance(inpval, str):
-        __ inpval in blood_type_text.keys():
-            return blood_type_text[inpval]
-        else:
+    __ isi..(inpval, str):
+        __ inpval __ blood_type_text.keys():
+            r.. blood_type_text[inpval]
+        ____:
             raise ValueError
-    else:
+    ____:
         raise TypeError

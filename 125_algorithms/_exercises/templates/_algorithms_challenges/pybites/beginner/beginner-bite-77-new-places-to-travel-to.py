@@ -16,22 +16,22 @@ ___ uncommon_cities_solution_1(my_cities, other_cities):
     """Compare my_cities and other_cities and return the number of different
        cities between the two"""
     result = set(my_cities).symmetric_difference(other_cities)
-    return len(result)
+    r.. l..(result)
 
 uncommon_cities(['A','B','C'], ['A','B','C','D'])
 
 ___ uncommon_cities_solution_2(my_cities, other_cities):
-    uncommon = []
-    for item in my_cities:
-        __ item not in other_cities:
-            uncommon.append(item)
-    for item in other_cities:
-        __ item not in my_cities:
-            uncommon.append(item)
-    return len(uncommon)
+    uncommon    # list
+    ___ item __ my_cities:
+        __ item n.. __ other_cities:
+            uncommon.a..(item)
+    ___ item __ other_cities:
+        __ item n.. __ my_cities:
+            uncommon.a..(item)
+    r.. l..(uncommon)
 
 ___ uncommon_cities_solution_3(my_cities, other_cities):
-    return(len([a for a in my_cities + other_cities __ (a not in my_cities) or (a not in other_cities)]))
+    r..(l..([a ___ a __ my_cities + other_cities __ (a n.. __ my_cities) o. (a n.. __ other_cities)]))
 
 print(uncommon_cities_solution_1(['A','B','C'], ['A','B','C','D']))
 print(uncommon_cities_solution_2(['A', 'B', 'C'], ['A', 'B', 'C', 'D']))

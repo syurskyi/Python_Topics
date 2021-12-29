@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from url_shortener import decode, encode, redirect, shorten_url
+____ url_shortener _______ decode, encode, redirect, shorten_url
 
 
 @pytest.mark.parametrize(
@@ -19,7 +19,7 @@ from url_shortener import decode, encode, redirect, shorten_url
     ],
 )
 ___ test_encode(arg, expected):
-    assert encode(arg) == expected
+    ... encode(arg) __ expected
 
 
 @pytest.mark.parametrize(
@@ -36,7 +36,7 @@ ___ test_encode(arg, expected):
     ],
 )
 ___ test_decode(arg, expected):
-    assert decode(arg) == expected
+    ... decode(arg) __ expected
 
 
 @pytest.mark.parametrize(
@@ -51,7 +51,7 @@ ___ test_decode(arg, expected):
     ],
 )
 ___ test_shorten_url(url, next_record, expected):
-    assert shorten_url(url, next_record) == expected
+    ... shorten_url(url, next_record) __ expected
 
 
 @pytest.mark.parametrize(
@@ -65,7 +65,7 @@ ___ test_shorten_url(url, next_record, expected):
     ],
 )
 ___ test_redirect(url, expected):
-    assert redirect(url) == expected
+    ... redirect(url) __ expected
 
 
 @pytest.mark.parametrize(
@@ -82,4 +82,4 @@ ___ test_redirect(url, expected):
     ]
 )
 ___ test_modified_links(url, expected):
-    assert redirect(url) == expected
+    ... redirect(url) __ expected

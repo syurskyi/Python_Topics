@@ -48,40 +48,40 @@ class Solution:
 
         we will consider that a falling domino expends no additional force
         """
-        n = len(dominoes)
-        L = [float("inf") for i in range(n)]
-        R = [float("inf") for i in range(n)]
-        for i in range(n-1, -1, -1):
-            __ dominoes[i] == "L":
+        n = l..(dominoes)
+        L = [float("inf") ___ i __ r..(n)]
+        R = [float("inf") ___ i __ r..(n)]
+        ___ i __ r..(n-1, -1, -1):
+            __ dominoes[i] __ "L":
                 L[i] = 0
-            elif dominoes[i] == "R":
+            ____ dominoes[i] __ "R":
                 L[i] = float("inf")
-            elif i + 1 < n:
+            ____ i + 1 < n:
                 L[i] = L[i+1] + 1
 
-        for i in range(n):
-            __ dominoes[i] == "R":
+        ___ i __ r..(n):
+            __ dominoes[i] __ "R":
                 R[i] = 0
-            elif dominoes[i] == "L":
+            ____ dominoes[i] __ "L":
                 R[i] = float("inf")
-            elif i - 1 >= 0:
+            ____ i - 1 >= 0:
                 R[i] = R[i-1] + 1
 
-        ret = []
-        for i in range(n):
-            d = min(R[i], L[i])
-            __ d == float("inf"):
+        ret    # list
+        ___ i __ r..(n):
+            d = m..(R[i], L[i])
+            __ d __ float("inf"):
                 cur = "."
-            elif R[i] == L[i]:
+            ____ R[i] __ L[i]:
                 cur = "."
-            elif d == R[i]:
+            ____ d __ R[i]:
                 cur = "R"
-            else:
+            ____:
                 cur = "L"
-            ret.append(cur)
+            ret.a..(cur)
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().pushDominoes(".L.R...LR..L..") == "LL.RR.LLRRLL.."
+__ __name__ __ "__main__":
+    ... Solution().pushDominoes(".L.R...LR..L..") __ "LL.RR.LLRRLL.."

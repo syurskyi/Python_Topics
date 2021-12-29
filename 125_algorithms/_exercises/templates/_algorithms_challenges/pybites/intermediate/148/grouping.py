@@ -24,18 +24,18 @@ ___ group_cars_by_manufacturer(cars):
        validate your output :)
     """
     cars_grouped = {}
-    for model, make in cars:
-        __ model not in cars_grouped:
+    ___ model, make __ cars:
+        __ model n.. __ cars_grouped:
             cars_grouped[model] = [make]
-        else:
-            cars_grouped[model].append(make)
+        ____:
+            cars_grouped[model].a..(make)
     
     cars_description = ""
-    for idx, value in enumerate(sorted(cars_grouped.items())):
+    ___ idx, value __ enumerate(s..(cars_grouped.items())):
         cars_description += f"{value[0].upper()}\n"
-        for model in value[1]:
+        ___ model __ value[1]:
             cars_description += f"- {model}\n"
-        __ idx != len(cars_grouped):
+        __ idx != l..(cars_grouped):
             cars_description += "\n"
     print(cars_description)
 

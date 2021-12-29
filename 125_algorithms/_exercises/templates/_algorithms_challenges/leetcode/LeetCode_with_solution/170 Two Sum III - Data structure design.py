@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -26,9 +26,9 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        return any(
-            value-k in self.hash_map and (value-k != k or self.hash_map[k] > 1)
-            for k in self.hash_map
+        r.. any(
+            value-k __ self.hash_map and (value-k != k o. self.hash_map[k] > 1)
+            ___ k __ self.hash_map
         )
 
     ___ find_TLE(self, value):
@@ -37,9 +37,9 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        for k in self.hash_map.keys():
+        ___ k __ self.hash_map.keys():
             target = value - k
-            __ target in self.hash_map and (target != k or self.hash_map[target] > 1):
-                return True
+            __ target __ self.hash_map and (target != k o. self.hash_map[target] > 1):
+                r.. True
 
-        return False
+        r.. False

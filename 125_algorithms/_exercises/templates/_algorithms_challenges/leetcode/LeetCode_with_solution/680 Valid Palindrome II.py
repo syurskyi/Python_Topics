@@ -24,24 +24,24 @@ class Solution:
         Start from start and end, then check equal. If not match, skip either
         side (i.e. delete a character), then check palindrome
         """
-        n = len(s)
+        n = l..(s)
         i = 0
         j = n - 1
         while i < j:
-            __ s[i] == s[j]:
+            __ s[i] __ s[j]:
                 i += 1
                 j -= 1
-            else:
+            ____:
                 # error, for -1, start > end. Indexing is like range
                 # return s[i:j] == s[i:j:-1] or s[i+1:j+1] == s[i+1:j+1:-1]
-                return self.is_palindrome(s[i:j]) or self.is_palindrome(s[i+1:j+1])
+                r.. self.is_palindrome(s[i:j]) o. self.is_palindrome(s[i+1:j+1])
 
-        return True
+        r.. True
 
     ___ is_palindrome(self, s):
-        return s == s[::-1]
+        r.. s __ s[::-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().validPalindrome("aba") == True
-    assert Solution().validPalindrome("abca") == True
+__ __name__ __ "__main__":
+    ... Solution().validPalindrome("aba") __ True
+    ... Solution().validPalindrome("abca") __ True

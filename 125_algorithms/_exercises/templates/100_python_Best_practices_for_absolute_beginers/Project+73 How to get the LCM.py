@@ -3,9 +3,9 @@ ___ LCM(x,y):
     w___ x ! 0 and y ! 0:
         __ x > y:
             x % y
-        else:
+        ____:
             y % x
-    return z//(x+y)
+    r.. z//(x+y)
 
 a  i..(input("Insert value of a: "))
 b  i..(input("Insert value of b: "))

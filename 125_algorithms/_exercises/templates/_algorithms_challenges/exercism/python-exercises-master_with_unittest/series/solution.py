@@ -1,6 +1,6 @@
 ___ slices(series, length):
-    numbers = [int(digit) for digit in series]
-    __ not 1 <= length <= len(numbers):
+    numbers = [int(digit) ___ digit __ series]
+    __ n.. 1 <= length <= l..(numbers):
         raise ValueError("Invalid slice length for this series: " + str(
             length))
-    return [numbers[i:i + length] for i in range(len(numbers) - length + 1)]
+    r.. [numbers[i:i + length] ___ i __ r..(l..(numbers) - length + 1)]

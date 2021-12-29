@@ -10,12 +10,12 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-        __ haystack == needle or not needle: return 0
-        for i in range(len(haystack)-len(needle)+1):
-            for j in range(len(needle)):
-                __ haystack[i+j] == needle[j]:
-                    __ j == len(needle)-1:
-                        return i
-                else:
+        __ haystack __ needle o. n.. needle: r.. 0
+        ___ i __ r..(l..(haystack)-l..(needle)+1):
+            ___ j __ r..(l..(needle)):
+                __ haystack[i+j] __ needle[j]:
+                    __ j __ l..(needle)-1:
+                        r.. i
+                ____:
                     break
-        return -1
+        r.. -1

@@ -1,14 +1,14 @@
-import random
+_______ random
 
-from hangman.game_status import GameStatus
-from hangman.invalid_operation_exception import InvalidOperationException
+____ hangman.game_status _______ GameStatus
+____ hangman.invalid_operation_exception _______ InvalidOperationException
 
 
 class Game:
 
     ___ __init__(self, allowed_misses: i..  6):
 
-        __ allowed_misses < 5 or allowed_misses > 8:
+        __ allowed_misses < 5 o. allowed_misses > 8:
             raise ValueError("Number of allowed misses should be between 5 and 8")
 
         self.__allowed_misses  allowed_misses
@@ -23,17 +23,17 @@ class Game:
 
         words  []
         with open(filename, encoding'UTF8') as file:
-            for line in file:
-                words.append(line.rstrip('\n'))
+            ___ line __ file:
+                words.a..(line.rstrip('\n'))
 
-        rand_index  random.randint(0, len(words) - 1)
+        rand_index  random.randint(0, l..(words) - 1)
 
         self.__word  words[rand_index]
 
-        self.__open_indexes  [F.. for _ in self.word]
+        self.__open_indexes  [F.. ___ _ __ self.word]
         self.__game_status  GameStatus.IN_PROGRESS
 
-        return self.word
+        r.. self.word
 
     ___ guess_letter(self, letter: str):
         """
@@ -48,55 +48,55 @@ class Game:
         open_any  F..
         result  []
 
-        for i in range(len(self.word)):
+        ___ i __ r..(l..(self.word)):
             cur_letter  self.word[i]
             __ cur_letter __ letter:
                 self.__open_indexes[i]  T..
                 open_any  T..
 
             __ self.__open_indexes[i]:
-                result.append(cur_letter)
-            else:
-                result.append("-")
+                result.a..(cur_letter)
+            ____:
+                result.a..("-")
 
-        __ not open_any:
+        __ n.. open_any:
             self.__tries_counter + 1
 
-        self.__tried_letters.append(letter)
+        self.__tried_letters.a..(letter)
 
         __ self.__is_winning():
             self.__game_status  GameStatus.WON
-        elif self.tries_counter __ self.allowed_misses:
+        ____ self.tries_counter __ self.allowed_misses:
             self.__game_status  GameStatus.LOST
 
-        return result
+        r.. result
 
     @property
     ___ game_status(self):
-        return self.__game_status
+        r.. self.__game_status
 
     @property
     ___ word(self):
-        return self.__word
+        r.. self.__word
 
     @property
     ___ allowed_misses(self):
-        return self.__allowed_misses
+        r.. self.__allowed_misses
 
     @property
     ___ tries_counter(self):
-        return self.__tries_counter
+        r.. self.__tries_counter
 
     @property
     ___ tried_letters(self):
-        return sorted(self.__tried_letters)
+        r.. s..(self.__tried_letters)
 
     @property
     ___ remaining_tries(self):
-        return self.allowed_misses - self.tries_counter
+        r.. self.allowed_misses - self.tries_counter
 
     ___ __is_winning(self):
-        for cur in self.__open_indexes:
-            __ not cur:
-                return F..
-        return T..
+        ___ cur __ self.__open_indexes:
+            __ n.. cur:
+                r.. F..
+        r.. T..

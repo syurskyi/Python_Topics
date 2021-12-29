@@ -1,11 +1,11 @@
 f = open('file.txt','r')
 a =[]
-for y in f:
+___ y __ f:
     y = y.rstrip()
-    __ len(y) == 12 or len(y)== 14:
-        __ y[3] == '-':
+    __ l..(y) __ 12 o. l..(y)__ 14:
+        __ y[3] __ '-':
             a,b,c = y.split('-')
-            __ len(a) == 3 and len(b)==3 and len(c)==4:
+            __ l..(a) __ 3 and l..(b)__3 and l..(c)__4:
                 print(y,end='\n')
-        elif y[0]=='(' and y[4] == ')' and y[9]=='-':
+        ____ y[0]__'(' and y[4] __ ')' and y[9]__'-':
             print(y,end='\n')   

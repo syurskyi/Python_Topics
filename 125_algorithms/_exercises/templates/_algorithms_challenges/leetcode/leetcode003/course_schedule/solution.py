@@ -33,29 +33,29 @@ class Solution(object):
         #
         # Graph in which each node has its prerequisite courses as a
         # adjacency list
-        queue = []
-        finished_courses = []
-        prq_graph = {x: set() for x in range(numCourses)}
-        for c, p in prerequisites:
+        queue    # list
+        finished_courses    # list
+        prq_graph = {x: set() ___ x __ r..(numCourses)}
+        ___ c, p __ prerequisites:
             prq_graph[c].add(p)
 
         # Add nodes with no prerequisites
-        for c in prq_graph:
-            __ not prq_graph[c]:
-                queue.append(c)
+        ___ c __ prq_graph:
+            __ n.. prq_graph[c]:
+                queue.a..(c)
 
         # For each of the remaining node, remove its prerequisites in queue;
         # if node has no prerequisites, add it to queue, and repeat
         while queue:
             u = queue.pop(0)
-            for v, prqs in prq_graph.items():
-                __ u in prqs:
+            ___ v, prqs __ prq_graph.items():
+                __ u __ prqs:
                     prqs.remove(u)
-                    __ not prqs:
-                        queue.append(v)
-            finished_courses.append(u)
+                    __ n.. prqs:
+                        queue.a..(v)
+            finished_courses.a..(u)
 
-        return len(finished_courses) == numCourses
+        r.. l..(finished_courses) __ numCourses
 
 s = Solution()
 print(s.canFinish(1, []))

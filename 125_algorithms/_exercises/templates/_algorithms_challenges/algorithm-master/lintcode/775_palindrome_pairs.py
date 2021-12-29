@@ -12,51 +12,51 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not words:
-            return ans
+        __ n.. words:
+            r.. ans
 
-        n = len(words)
+        n = l..(words)
         w2i = {}
 
-        for i in range(n):
+        ___ i __ r..(n):
             w2i[words[i]] = i
 
-        for i in range(n):
-            for j in range(len(words[i]) + 1):
+        ___ i __ r..(n):
+            ___ j __ r..(l..(words[i]) + 1):
                 s = words[i][:j]
                 t = words[i][j:]
                 _s = ''.join(reversed(s))
                 _t = ''.join(reversed(t))
 
                 __ (self.is_palindrome(s) and
-                    _t in w2i and
+                    _t __ w2i and
                     w2i[_t] != i
                 ):
-                    ans.append([w2i[_t], i])
+                    ans.a..([w2i[_t], i])
 
                 __ (self.is_palindrome(t) and
-                    len(t) != 0 and  # since len(word) + 1, may empty here
-                    _s in w2i and
+                    l..(t) != 0 and  # since len(word) + 1, may empty here
+                    _s __ w2i and
                     w2i[_s] != i
                 ):
-                    ans.append([i, w2i[_s]])
+                    ans.a..([i, w2i[_s]])
 
-        return ans
+        r.. ans
 
     ___ is_palindrome(self, word):
-        n = len(word)
+        n = l..(word)
         left, right = 0, n - 1
 
         while left < right:
             __ word[left] != word[right]:
-                return False
+                r.. False
 
             left += 1
             right -= 1
 
-        return True
+        r.. True
 
 
 """
@@ -68,41 +68,41 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not words:
-            return ans
+        __ n.. words:
+            r.. ans
 
-        n = len(words)
+        n = l..(words)
 
-        for i in range(n):
-            for j in range(i):
+        ___ i __ r..(n):
+            ___ j __ r..(i):
                 __ self.is_palindrome(words, i, j):
-                    ans.append([i, j])
+                    ans.a..([i, j])
 
                 __ self.is_palindrome(words, j, i):
-                    ans.append([j, i])
+                    ans.a..([j, i])
 
-        return ans
+        r.. ans
 
     ___ is_palindrome(self, words, i, j):
         s, t = words[i], words[j]
-        a, b = len(s), len(t)
+        a, b = l..(s), l..(t)
         n = a + b
         left, right = 0, n - 1
 
         while left < right:
             __ left >= a and t[left - a] != t[right - a]:
-                return False
-            elif right < a and s[left] != s[right]:
-                return False
-            elif left < a and right >= a and s[left] != t[right - a]:
-                return False
+                r.. False
+            ____ right < a and s[left] != s[right]:
+                r.. False
+            ____ left < a and right >= a and s[left] != t[right - a]:
+                r.. False
 
             left += 1
             right -= 1
 
-        return True
+        r.. True
 
 
 """
@@ -114,32 +114,32 @@ class Solution:
         :type words: list[str]
         :rtype: list[list[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not words:
-            return ans
+        __ n.. words:
+            r.. ans
 
-        n = len(words)
+        n = l..(words)
 
-        for i in range(n):
-            for j in range(n):
-                __ i == j:
+        ___ i __ r..(n):
+            ___ j __ r..(n):
+                __ i __ j:
                     continue
 
                 __ self.is_palindrome(words[i] + words[j]):
-                    ans.append([i, j])
+                    ans.a..([i, j])
 
-        return ans
+        r.. ans
 
     ___ is_palindrome(self, s):
-        n = len(s)
+        n = l..(s)
         left, right = 0, n - 1
 
         while left < right:
             __ s[left] != s[right]:
-                return False
+                r.. False
 
             left += 1
             right -= 1
 
-        return True
+        r.. True

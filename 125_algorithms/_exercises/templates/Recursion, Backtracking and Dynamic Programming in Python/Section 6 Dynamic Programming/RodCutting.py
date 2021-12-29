@@ -23,7 +23,7 @@ c_ RodCutting:
         col_index  n
         row_index  le_(p)-1
 
-        w__ col_index > 0 or row_index > 0:
+        w__ col_index > 0 o. row_index > 0:
             # we have to compare the items right above each other
             # if they are the same values then the given row (piece) is not in the solution
             __ S[row_index][col_index] __ S[row_index - 1][col_index]:

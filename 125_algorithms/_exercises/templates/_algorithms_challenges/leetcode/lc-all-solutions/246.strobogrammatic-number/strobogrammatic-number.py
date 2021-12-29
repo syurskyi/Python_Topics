@@ -4,10 +4,10 @@ class Solution(object):
     :type num: str
     :rtype: bool
     """
-    start, end, legal = 0, len(num) - 1, "01689"
+    start, end, legal = 0, l..(num) - 1, "01689"
     while start <= end:
-      __ "".join(sorted(num[start] + num[end])) not in ["00", "11", "88", "69"]:
-        return False
+      __ "".join(s..(num[start] + num[end])) n.. __ ["00", "11", "88", "69"]:
+        r.. False
       start += 1
       end -= 1
-    return True
+    r.. True

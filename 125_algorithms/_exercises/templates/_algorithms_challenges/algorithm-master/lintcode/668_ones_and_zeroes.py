@@ -9,22 +9,22 @@ class Solution:
     @return: find the maximum number of strings
     """
     ___ findMaxForm(self, strs, m, n):
-        __ not strs:
-            return 0
+        __ n.. strs:
+            r.. 0
 
         """
         `dp[j][k]` means the current str can be made up of
         `j` 0s and `k` 1s
         """
-        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        dp = [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
         c0 = c1 = 0
-        for s in strs:
-            c0 = s.count('0')
-            c1 = len(s) - c0
+        ___ s __ strs:
+            c0 = s.c.. '0')
+            c1 = l..(s) - c0
 
-            for j in range(m, c0 - 1, -1):
-                for k in range(n, c1 - 1, -1):
+            ___ j __ r..(m, c0 - 1, -1):
+                ___ k __ r..(n, c1 - 1, -1):
                     """
                     case 1: included current `strs[i - 1]`
                     case 2: not included current `strs[i - 1]`, same as previous
@@ -34,7 +34,7 @@ class Solution:
                         dp[j - c0][k - c1] + 1
                     )
 
-        return dp[m][n]
+        r.. dp[m][n]
 
 
 """
@@ -48,10 +48,10 @@ class Solution:
     @return: find the maximum number of strings
     """
     ___ findMaxForm(self, strs, m, n):
-        __ not strs:
-            return 0
+        __ n.. strs:
+            r.. 0
 
-        l = len(strs)
+        l = l..(strs)
 
         """
         `dp[i][j][k]` means the pre- `i`th strs can be made up of
@@ -59,15 +59,15 @@ class Solution:
 
         dp[0][j][k] = 0
         """
-        dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(l + 1)]
+        dp = [[[0] * (n + 1) ___ _ __ r..(m + 1)] ___ _ __ r..(l + 1)]
 
         c0 = c1 = 0
-        for i in range(1, l + 1):
-            c0 = strs[i - 1].count('0')
-            c1 = len(strs[i - 1]) - c0
+        ___ i __ r..(1, l + 1):
+            c0 = strs[i - 1].c.. '0')
+            c1 = l..(strs[i - 1]) - c0
 
-            for j in range(m + 1):
-                for k in range(n + 1):
+            ___ j __ r..(m + 1):
+                ___ k __ r..(n + 1):
                     """
                     case 1: included current `strs[i - 1]`
                     """
@@ -80,4 +80,4 @@ class Solution:
                     __ dp[i - 1][j][k] > dp[i][j][k]:
                         dp[i][j][k] = dp[i - 1][j][k]
 
-        return dp[l][m][n]
+        r.. dp[l][m][n]

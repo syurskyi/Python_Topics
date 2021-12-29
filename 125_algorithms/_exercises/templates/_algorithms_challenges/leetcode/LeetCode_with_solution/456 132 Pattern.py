@@ -33,17 +33,17 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        stack = []  # List[Interval]
+        stack    # list  # List[Interval]
         mini = float('Inf')
-        for v in nums:
+        ___ v __ nums:
             while stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()
             __ stack and stack[-1][0] < v:
-                return True
-            mini = min(mini, v)
-            stack.append((mini, v))
+                r.. True
+            mini = m..(mini, v)
+            stack.a..((mini, v))
 
-        return False
+        r.. False
 
 
     ___ find132pattern_TLE(self, nums):
@@ -54,19 +54,19 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             maxa = nums[i]
-            for j in range(i + 1, len(nums)):
+            ___ j __ r..(i + 1, l..(nums)):
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
-                        return True
+                        r.. True
                     maxa = max(maxa, nums[j])
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().find132pattern([1, 2, 3, 4]) == False
-    assert Solution().find132pattern([3, 1, 4, 2]) == True
-    assert Solution().find132pattern([-1, 3, 2, 0]) == True
-    assert Solution().find132pattern([-2, 1, 1]) == True
+__ __name__ __ "__main__":
+    ... Solution().find132pattern([1, 2, 3, 4]) __ False
+    ... Solution().find132pattern([3, 1, 4, 2]) __ True
+    ... Solution().find132pattern([-1, 3, 2, 0]) __ True
+    ... Solution().find132pattern([-2, 1, 1]) __ True

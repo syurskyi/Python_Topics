@@ -4,23 +4,23 @@ class Solution:
         :type nums: list[int]
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
-        target = sum(nums)
+        target = s..(nums)
         dp = [False] * (target + 1)
         dp[0] = True
 
         ans = float('inf')
 
-        for num in nums:
-            for i in range(target, num - 1, -1):
-                dp[i] = dp[i] or dp[i - num]
+        ___ num __ nums:
+            ___ i __ r..(target, num - 1, -1):
+                dp[i] = dp[i] o. dp[i - num]
 
                 __ dp[i]:
-                    ans = min(
+                    ans = m..(
                         ans,
                         abs(target - i * 2)
                     )
 
-        return ans
+        r.. ans

@@ -4,14 +4,14 @@ class Solution(object):
         :type deck: List[int]
         :rtype: bool
         """
-        __ not deck: return False
+        __ n.. deck: r.. False
         hashmap = {}
-        for num in deck:
+        ___ num __ deck:
             hashmap[num] = hashmap.get(num, 0)+1
-        counts = list(hashmap.values())
-        minVal = min(hashmap.values())
+        counts = l..(hashmap.values())
+        minVal = m..(hashmap.values())
         while counts:
-            __ 1 in counts:
-                return False
-            counts = [c - minVal for c in counts __ c > minVal]
-        return True
+            __ 1 __ counts:
+                r.. False
+            counts = [c - minVal ___ c __ counts __ c > minVal]
+        r.. True

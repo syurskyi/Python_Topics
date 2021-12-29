@@ -30,10 +30,10 @@ class Solution(object):
         out &= MSK
 
         __ carry != 0:
-            return self.getSum(out, carry)
-        else:
+            r.. self.getSum(out, carry)
+        ____:
             # handle overflow
             __ out < MAX:
-                return out
-            else:  # negative
-                return ~(out ^ MSK)
+                r.. out
+            ____:  # negative
+                r.. ~(out ^ MSK)

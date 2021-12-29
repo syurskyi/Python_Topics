@@ -1,9 +1,9 @@
 ___ namelist(names):
-    namelist =  [name['name'] for name in names]
-    __ len(namelist) <= 1:
-    	return ''.join(namelist)
-    else:
+    namelist =  [name['name'] ___ name __ names]
+    __ l..(namelist) <= 1:
+    	r.. ''.join(namelist)
+    ____:
     	lastTwo = ' & '.join(namelist[-2:])
-    	first = [n + ',' for n in namelist[:-2]]
-    	first.append(lastTwo)
-    	return ' '.join(first)
+    	first = [n + ',' ___ n __ namelist[:-2]]
+    	first.a..(lastTwo)
+    	r.. ' '.join(first)

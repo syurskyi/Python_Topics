@@ -26,7 +26,7 @@ Note:
 2 <= A.length <= 50000
 0 <= A[i] <= 50000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -38,12 +38,12 @@ class Solution:
         Need to keep the smallest index
         """
         ret = -float("inf")
-        V = [(a, i) for i, a in enumerate(A)]
+        V = [(a, i) ___ i, a __ enumerate(A)]
         V.sort()
         min_idx = float("inf")
-        for _, i in V:
+        ___ _, i __ V:
             # V is sorted, guarantee a' > a
             ret = max(ret, i - min_idx)
-            min_idx = min(min_idx, i)
+            min_idx = m..(min_idx, i)
 
-        return max(ret, 0)
+        r.. max(ret, 0)

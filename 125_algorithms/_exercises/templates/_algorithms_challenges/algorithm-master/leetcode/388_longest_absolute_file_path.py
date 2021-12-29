@@ -32,19 +32,19 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not path:
-            return ans
+        __ n.. path:
+            r.. ans
 
         dep2size = {0: 0}
 
-        for line in path.split('\n'):
+        ___ line __ path.split('\n'):
             name = line.lstrip('\t')
-            size = len(name)
-            depth = len(line) - len(name)
+            size = l..(name)
+            depth = l..(line) - l..(name)
 
-            __ '.' in name:
+            __ '.' __ name:
                 ans = max(ans, dep2size[depth] + size)
-            else:
+            ____:
                 dep2size[depth + 1] = dep2size[depth] + size + 1
 
-        return ans
+        r.. ans

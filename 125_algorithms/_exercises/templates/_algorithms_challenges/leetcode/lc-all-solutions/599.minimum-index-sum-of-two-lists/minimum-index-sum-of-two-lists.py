@@ -6,15 +6,15 @@ class Solution(object):
     :rtype: List[str]
     """
     minSum = float("inf")
-    ans = []
+    ans    # list
     d = {}
-    for i, name in enumerate(list2):
+    ___ i, name __ enumerate(list2):
       d[name] = i
-    for i, name in enumerate(list1):
+    ___ i, name __ enumerate(list1):
       idxSum = i + d.get(name, float("inf"))
-      __ idxSum == minSum:
-        ans.append(name)
+      __ idxSum __ minSum:
+        ans.a..(name)
       __ idxSum < minSum:
         ans = [name]
         minSum = idxSum
-    return ans
+    r.. ans

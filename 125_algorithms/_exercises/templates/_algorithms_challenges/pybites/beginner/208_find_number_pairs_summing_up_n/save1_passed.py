@@ -1,10 +1,10 @@
-import itertools
+_______ itertools
 
 
 ___ find_number_pairs(numbers, N=10):
-    lis = []
-    for i in numbers:
-        for comb in itertools.combinations(numbers, 2):
-            __ sum(comb) == N and comb not in lis:
-                lis.append(comb)
-    return lis
+    lis    # list
+    ___ i __ numbers:
+        ___ comb __ itertools.combinations(numbers, 2):
+            __ s..(comb) __ N and comb n.. __ lis:
+                lis.a..(comb)
+    r.. lis

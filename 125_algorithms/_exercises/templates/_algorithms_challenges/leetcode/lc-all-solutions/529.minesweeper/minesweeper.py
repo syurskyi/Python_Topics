@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -13,21 +13,21 @@ class Solution(object):
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
     while queue:
       i, j = queue.popleft()
-      __ board[i][j] == "B":
+      __ board[i][j] __ "B":
         continue
-      __ board[i][j] == "M":
+      __ board[i][j] __ "M":
         board[i][j] = "X"
         break
       mineCnt = 0
-      nbrs = []
-      for di, dj in directions:
+      nbrs    # list
+      ___ di, dj __ directions:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < len(board) and 0 <= nj < len(board[0]) and board[ni][nj] in ["M", "E"]:
-          __ board[ni][nj] == "M":
+        __ 0 <= ni < l..(board) and 0 <= nj < l..(board[0]) and board[ni][nj] __ ["M", "E"]:
+          __ board[ni][nj] __ "M":
             mineCnt += 1
-          else:
-            nbrs.append((ni, nj))
-      __ mineCnt == 0:
+          ____:
+            nbrs.a..((ni, nj))
+      __ mineCnt __ 0:
         queue.extend(nbrs)
       board[i][j] = numbers[mineCnt]
-    return board
+    r.. board

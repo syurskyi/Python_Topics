@@ -12,38 +12,38 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        return self.dfs(pattern, s, {}, set())
+        r.. self.dfs(pattern, s, {}, set())
 
     ___ dfs(self, pattern, s, char2word, words):
         """
         Loop & DFS
         :return: pattern can match s
         """
-        __ not pattern and s or not s and pattern:
-            return False
+        __ n.. pattern and s o. n.. s and pattern:
+            r.. False
 
-        __ not pattern and not s:
-            return True
+        __ n.. pattern and n.. s:
+            r.. True
 
 
-        __ pattern[0] in char2word:
+        __ pattern[0] __ char2word:
             word = char2word[pattern[0]]
-            __ s[:len(word)] != word:
-                return False
-            else:
-                assert word in words
-                return self.dfs(pattern[1:], s[len(word):], char2word, words)
-        else:
-            for i in xrange(len(s)):
+            __ s[:l..(word)] != word:
+                r.. False
+            ____:
+                ... word __ words
+                r.. self.dfs(pattern[1:], s[l..(word):], char2word, words)
+        ____:
+            ___ i __ xrange(l..(s)):
                 word = s[:i+1]
-                __ word in words:
+                __ word __ words:
                     continue
 
                 char2word[pattern[0]] = word
                 words.add(word)
-                __ self.dfs(pattern[1:], s[len(word):], char2word, words):
-                    return True
+                __ self.dfs(pattern[1:], s[l..(word):], char2word, words):
+                    r.. True
                 words.remove(word)
                 del char2word[pattern[0]]
 
-            return False
+            r.. False

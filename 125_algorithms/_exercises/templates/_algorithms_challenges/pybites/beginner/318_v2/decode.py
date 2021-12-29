@@ -1,8 +1,8 @@
-import base64
-import csv
-from typing import List  # will remove with 3.9
-from io import StringIO
-import pandas as pd
+_______ base64
+_______ csv
+____ typing _______ List  # will remove with 3.9
+____ io _______ StringIO
+_______ pandas as pd
 
 
 
@@ -15,7 +15,7 @@ ___ get_credit_cards(data: bytes) -> List[str]:
     decoded = base64.b64decode(data)
     message = decoded.decode('ascii')
 
-    return pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=True).astype(str).tolist()
+    r.. pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=True).astype(str).tolist()
 
 
 

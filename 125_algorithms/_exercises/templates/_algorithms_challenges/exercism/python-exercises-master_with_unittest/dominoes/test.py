@@ -1,13 +1,13 @@
-import unittest
+_______ unittest
 
-from dominoes import chain
+____ dominoes _______ chain
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.1.0
 
 class DominoesTest(unittest.TestCase):
     ___ test_empty_input_empty_output(self):
-        input_dominoes = []
+        input_dominoes    # list
         output_chain = chain(input_dominoes)
         self.assert_correct_chain(input_dominoes, output_chain)
 
@@ -70,7 +70,7 @@ class DominoesTest(unittest.TestCase):
     # Utility methods
 
     ___ normalize_dominoes(self, dominoes):
-        return list(sorted(tuple(sorted(domino)) for domino in dominoes))
+        r.. l..(s..(tuple(s..(domino)) ___ domino __ dominoes))
 
     ___ assert_same_dominoes(self, input_dominoes, output_chain):
         msg = ('Dominoes used in the output must be the same '
@@ -80,7 +80,7 @@ class DominoesTest(unittest.TestCase):
         self.assertEqual(input_normal, output_normal, msg)
 
     ___ assert_consecutive_dominoes_match(self, output_chain):
-        for i in range(len(output_chain) - 1):
+        ___ i __ r..(l..(output_chain) - 1):
             msg = ("In chain {}, right end of domino {} ({}) "
                    "and left end of domino {} ({}) must match")
             msg = msg.format(output_chain,
@@ -100,8 +100,8 @@ class DominoesTest(unittest.TestCase):
         msg = 'There should be a chain for {}'.format(input_dominoes)
         self.assertIsNotNone(output_chain, msg)
         self.assert_same_dominoes(input_dominoes, output_chain)
-        __ not any(output_chain):
-            return
+        __ n.. any(output_chain):
+            r..
         self.assert_consecutive_dominoes_match(output_chain)
         self.assert_dominoes_at_ends_match(output_chain)
 
@@ -110,5 +110,5 @@ class DominoesTest(unittest.TestCase):
         self.assertIsNone(output_chain, msg)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

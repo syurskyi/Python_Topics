@@ -6,13 +6,13 @@ class Solution(object):
     """
     ans = 0
     mask = 1
-    for j in range(0, 32):
+    ___ j __ r..(0, 32):
       ones = zeros = 0
-      for num in nums:
+      ___ num __ nums:
         __ num & mask:
           ones += 1
-        else:
+        ____:
           zeros += 1
       ans += ones * zeros
       mask = mask << 1
-    return ans
+    r.. ans

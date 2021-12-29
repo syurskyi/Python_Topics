@@ -23,17 +23,17 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        a = range(1, n + 1)
-        return self.combine_aux(a, k)
+        a = r..(1, n + 1)
+        r.. self.combine_aux(a, k)
 
     ___ combine_aux(self, a, k):
-        __ k == 0:
-            return [[]]
-        else:
-            res = []
-            for i, e in enumerate(a):
+        __ k __ 0:
+            r.. [[]]
+        ____:
+            res    # list
+            ___ i, e __ enumerate(a):
                 rest_comb = self.combine_aux(a[i + 1:], k - 1)
-                for comb in rest_comb:
+                ___ comb __ rest_comb:
                     comb.insert(0, e)
                 res += rest_comb
-            return res
+            r.. res

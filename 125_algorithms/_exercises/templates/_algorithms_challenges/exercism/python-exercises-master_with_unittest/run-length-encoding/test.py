@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from run_length_encoding import encode, decode
+____ run_length_encoding _______ encode, decode
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -50,5 +50,5 @@ class WordCountTests(unittest.TestCase):
         self.assertMultiLineEqual(decode(encode('zzz ZZ  zZ')), 'zzz ZZ  zZ')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

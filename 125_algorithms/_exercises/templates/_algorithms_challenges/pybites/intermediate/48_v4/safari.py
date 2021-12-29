@@ -1,8 +1,8 @@
-import os
-import re
-import urllib.request
-from collections import defaultdict
-from datetime import datetime
+_______ os
+_______ re
+_______ urllib.request
+____ collections _______ defaultdict
+____ datetime _______ datetime
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
@@ -17,11 +17,11 @@ urllib.request.urlretrieve(
 
 ___ _parse_book_line(line):
     """returns a dict representing the line"""
-    out_dict = dict()
+    out_dict = d..()
     date = re.findall(r'^([0-9]{2}-[0-9]{2})', line)[0]
     out_dict['date'] = datetime.strptime(date, '%m-%d')
     out_dict['title'] = re.findall(r'DEBUG.*- (.*)', line)[0]
-    return out_dict
+    r.. out_dict
 
 
 ___ create_chart():
@@ -29,13 +29,13 @@ ___ create_chart():
     chart = defaultdict(str)
     with open(SAFARI_LOGS, 'r') as f:
         prev = f.readline()
-        for line in f:
-            __ 'sending to slack channel' in line:
+        ___ line __ f:
+            __ 'sending to slack channel' __ line:
                 detail = _parse_book_line(prev)
-                char = PY_BOOK __ 'python' in detail['title'].lower() else '.'
+                char = PY_BOOK __ 'python' __ detail['title'].lower() ____ '.'
                 chart[detail['date']] += char
 
             prev = line
 
-    for key in sorted(chart.keys()):
+    ___ key __ s..(chart.keys()):
         print('{} {}'.format(key.strftime('%m-%d'), chart[key]))

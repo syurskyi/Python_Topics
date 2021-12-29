@@ -1,21 +1,21 @@
-from collections import deque
+____ collections _______ deque
 
 
 class LRUCache:
 
     ___ __init__(self, capacity: i..):
         self.c  capacity
-        self.m  dict()
+        self.m  d..()
         self.deq  deque()
 
     ___ get(self, key: i..) -> i..:
-        __ key in self.m:
+        __ key __ self.m:
             value  self.m[key]
             self.deq.remove(key)
-            self.deq.append(key)
-            return value
-        else:
-            return -1
+            self.deq.a..(key)
+            r.. value
+        ____:
+            r.. -1
 
     ___ put(self, key: i.., value: i..) -> N..:
 
@@ -23,12 +23,12 @@ class LRUCache:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        __ key not in self.m:
-            __ len(self.deq) __ self.c:
+        __ key n.. __ self.m:
+            __ l..(self.deq) __ self.c:
                 oldest  self.deq.popleft()
                 del self.m[oldest]
-        else:
+        ____:
             self.deq.remove(key)
 
         self.m[key]  value
-        self.deq.append(key)
+        self.deq.a..(key)

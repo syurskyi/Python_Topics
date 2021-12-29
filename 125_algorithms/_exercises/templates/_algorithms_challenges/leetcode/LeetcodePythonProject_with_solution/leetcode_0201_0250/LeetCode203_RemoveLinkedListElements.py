@@ -8,7 +8,7 @@ Created on Feb 18, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ removeElements(self, head, val):
@@ -22,9 +22,9 @@ class Solution(object):
         prev = dummy
         node = dummy.next
         while node:
-            __ node.val == val:
+            __ node.val __ val:
                 prev.next = node.next
-            else:
+            ____:
                 prev = node
             node = node.next
-        return dummy.next
+        r.. dummy.next

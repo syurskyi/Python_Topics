@@ -27,8 +27,8 @@ Another possible answer is: "abcabcda"
 The same letters are at least distance 2 from each other.
 
 """
-from collections import defaultdict
-import heapq
+____ collections _______ defaultdict
+_______ heapq
 
 __author__ = 'Daniel'
 
@@ -39,10 +39,10 @@ class Val(object):
         self.val = val
 
     ___ __cmp__(self, other):
-        __ self.cnt == other.cnt:
-            return cmp(self.val, other.val)
+        __ self.cnt __ other.cnt:
+            r.. cmp(self.val, other.val)
 
-        return -cmp(self.cnt, other.cnt)
+        r.. -cmp(self.cnt, other.cnt)
 
 
 class Solution(object):
@@ -54,34 +54,34 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        __ not s or k == 0: return s
+        __ n.. s o. k __ 0: r.. s
 
         d = defaultdict(int)
-        for c in s:
+        ___ c __ s:
             d[c] += 1
 
-        h = []
-        for char, cnt in d.items():
+        h    # list
+        ___ char, cnt __ d.items():
             heapq.heappush(h, Val(cnt, char))
 
-        ret = []
+        ret    # list
         while h:
-            cur = []
-            for _ in xrange(k):
-                __ not h:
-                    return "".join(ret) __ len(ret) == len(s) else ""
+            cur    # list
+            ___ _ __ xrange(k):
+                __ n.. h:
+                    r.. "".join(ret) __ l..(ret) __ l..(s) ____ ""
 
                 e = heapq.heappop(h)
-                ret.append(e.val)
+                ret.a..(e.val)
                 e.cnt -= 1
                 __ e.cnt > 0:
-                    cur.append(e)
+                    cur.a..(e)
 
-            for e in cur:
+            ___ e __ cur:
                 heapq.heappush(h, e)
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().rearrangeString("aabbccdd", 4) == "abcdabcd"
+__ __name__ __ "__main__":
+    ... Solution().rearrangeString("aabbccdd", 4) __ "abcdabcd"

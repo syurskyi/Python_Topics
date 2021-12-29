@@ -9,22 +9,22 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
-        __ len(s) > 12: return []
-        res = []
+        __ l..(s) > 12: r.. []
+        res    # list
         self.helper(res, [], s, 0)
-        return res
+        r.. res
     
     ___ helper(self, res, curr, s, ind):
-        __ ind == len(s) and len(curr) == 4:
-            res.append('.'.join(curr))
-        __ ind >= len(s):
-            return
-        for i in range(ind+1, ind+4):
+        __ ind __ l..(s) and l..(curr) __ 4:
+            res.a..('.'.join(curr))
+        __ ind >= l..(s):
+            r..
+        ___ i __ r..(ind+1, ind+4):
             sub = s[ind:i]
-            __ sub[0] == '0' and len(sub) > 1:
+            __ sub[0] __ '0' and l..(sub) > 1:
                 break
             __ int(sub) > 255:
                 break
-            curr.append(sub)
+            curr.a..(sub)
             self.helper(res, curr, s, i)
             curr.pop()

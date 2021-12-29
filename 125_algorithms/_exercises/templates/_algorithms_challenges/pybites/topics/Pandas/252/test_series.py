@@ -1,31 +1,31 @@
-import inspect
-import string
+_______ i___
+_______ string
 
-import pytest
-import numpy as np
-import pandas as pd
+_______ pytest
+_______ numpy as np
+_______ pandas as pd
 
-import series as se
+_______ series as se
 
 
 @pytest.fixture()
 ___ float_series():
     """Returns a pandas Series containing floats"""
-    return pd.Series([float(n) / 1000 for n in range(0, 1001)])
+    r.. pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
 
 
 @pytest.fixture()
 ___ alpha_series():
     """Returns a pandas Series containing floats"""
-    dictionary = dict(zip(string.ascii_lowercase, range(1, 27)))
-    return pd.Series(dictionary)
+    dictionary = d..(zip(string.ascii_lowercase, r..(1, 27)))
+    r.. pd.Series(dictionary)
 
 
 @pytest.mark.parametrize("arg, expected", [
     (0, 0.000), (500, 0.500), (1000, 1.000)
 ])
 ___ test_return_at_index(float_series, arg, expected):
-    assert se.return_at_index(float_series, arg) == expected
+    ... se.return_at_index(float_series, arg) __ expected
 
 ___ test_return_at_index_raise_exception(float_series):
     with pytest.raises(KeyError):
@@ -33,49 +33,49 @@ ___ test_return_at_index_raise_exception(float_series):
 
 ___ test_get_slice(float_series):
     slce = se.get_slice(float_series, 20, 25)
-    assert isinstance(slce, pd.core.series.Series)
-    assert len(slce) == 5
-    assert slce[24] == 0.024
+    ... isi..(slce, pd.core.series.Series)
+    ... l..(slce) __ 5
+    ... slce[24] __ 0.024
 
 ___ test_get_slice_inclusive(float_series):
     slce = se.get_slice_inclusive(float_series, 20, 25)
-    assert isinstance(slce, pd.core.series.Series)
-    assert len(slce) == 6
-    assert slce[25] == 0.025
+    ... isi..(slce, pd.core.series.Series)
+    ... l..(slce) __ 6
+    ... slce[25] __ 0.025
 
 @pytest.mark.parametrize("arg, expected", [
     (0, 0.000), (5, 0.005), (9, 0.009)
 ])
 ___ test_return_head(float_series, arg, expected):
-    assert se.return_head(float_series, 10)[arg] == expected
-    assert ".head" in inspect.getsource(se.return_head)
+    ... se.return_head(float_series, 10)[arg] __ expected
+    ... ".head" __ i___.getsource(se.return_head)
 
 @pytest.mark.parametrize("arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
 ___ test_return_tail(float_series, arg, expected):
-    assert se.return_tail(float_series, 10)[arg] == expected
-    assert ".tail" in inspect.getsource(se.return_tail)
+    ... se.return_tail(float_series, 10)[arg] __ expected
+    ... ".tail" __ i___.getsource(se.return_tail)
 
 ___ test_get_index(alpha_series):
     idx = se.get_index(alpha_series)
-    assert isinstance(idx, pd.core.indexes.base.Index)
-    assert len(idx) == 26
-    assert all(c in string.ascii_lowercase for c in idx.values)
-    assert ".index" in inspect.getsource(se.get_index)
+    ... isi..(idx, pd.core.indexes.base.Index)
+    ... l..(idx) __ 26
+    ... a..(c __ string.ascii_lowercase ___ c __ idx.values)
+    ... ".index" __ i___.getsource(se.get_index)
 
 ___ test_get_values(alpha_series):
     vals = se.get_values(alpha_series)
-    assert isinstance(vals, np.ndarray)
-    assert len(vals) == 26
-    assert all(c in range(1, 27) for c in vals)
+    ... isi..(vals, np.ndarray)
+    ... l..(vals) __ 26
+    ... a..(c __ r..(1, 27) ___ c __ vals)
 
 ___ test_all_even_indexes_returned(float_series):
     ser = se.get_every_second_indexes(float_series, True)
-    assert all(n % 2 == 0 for n in ser.index)
-    assert round(sum(ser), 1) == 250.5
+    ... a..(n % 2 __ 0 ___ n __ ser.index)
+    ... round(s..(ser), 1) __ 250.5
 
 ___ test_all_odd_indexes_returned(float_series):
     ser = se.get_every_second_indexes(float_series, False)
-    assert all(n % 2 == 1 for n in ser.index)
-    assert round(sum(ser), 1) == 250.0
+    ... a..(n % 2 __ 1 ___ n __ ser.index)
+    ... round(s..(ser), 1) __ 250.0

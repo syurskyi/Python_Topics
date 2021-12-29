@@ -1,13 +1,13 @@
-import csv
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+_______ csv
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 tmp = Path(os.getenv("TMP", "/tmp"))
 stats = tmp / 'bites.csv'
 
-__ not stats.exists():
+__ n.. stats.exists():
     urlretrieve(data, stats)
 
 
@@ -20,17 +20,17 @@ ___ get_most_complex_bites(N=10, stats=stats):
     with open(stats, encoding="utf-8-sig") as f:
         bite_diff = {}
         lines = f.readlines()
-        for line in lines:
-            __ line[:5] == 'Bite ':
+        ___ line __ lines:
+            __ line[:5] __ 'Bite ':
                 bite = line.split('.')[0][5:]
                 _, diff = line.split(';')
                 #if not bite and not diff:
-                __ 'None' not in diff:
+                __ 'None' n.. __ diff:
                     bite_diff[bite] = diff.strip()
-        newlist = [w for w in sorted(bite_diff, key=bite_diff.get, reverse=True)]
-        return newlist[0:N]
+        newlist = [w ___ w __ s..(bite_diff, key=bite_diff.get, r.._T..]
+        r.. newlist[0:N]
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     res = get_most_complex_bites()
     print(res)
 

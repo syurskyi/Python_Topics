@@ -40,13 +40,13 @@ ___ strip_vowels(text: str) -> (str, int):
        https://docs.python.org/3/library/typing.html"""
     count = 0
     lines = text.split("\n")
-    results = []
-    for line in lines:
+    results    # list
+    ___ line __ lines:
         newline = ''
-        for c in line:
-            __ c.lower() in vowels:
+        ___ c __ line:
+            __ c.lower() __ vowels:
                 c = '*'
                 count += 1
             newline += c
-        results.append(newline)
-    return '\n'.join(results), count
+        results.a..(newline)
+    r.. '\n'.join(results), count

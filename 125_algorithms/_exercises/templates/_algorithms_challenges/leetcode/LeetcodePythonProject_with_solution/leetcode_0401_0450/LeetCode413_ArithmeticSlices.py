@@ -11,26 +11,26 @@ class Solution(object):
         :rtype: int
         """
         nums = A
-        __ not nums or len(nums) < 3: return 0
+        __ n.. nums o. l..(nums) < 3: r.. 0
         res = 0
         curr = 0
-        for i in range(2, len(nums)):
-            __ nums[i]-nums[i-1] == nums[i-1]-nums[i-2]:
+        ___ i __ r..(2, l..(nums)):
+            __ nums[i]-nums[i-1] __ nums[i-1]-nums[i-2]:
                 curr += 1
-            else:
+            ____:
                 curr = 0
             res += curr
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [1, 2, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.numberOfArithmeticSlices(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

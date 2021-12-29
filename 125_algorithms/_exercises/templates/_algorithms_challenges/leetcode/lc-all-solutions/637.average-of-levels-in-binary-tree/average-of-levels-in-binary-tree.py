@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -13,17 +13,17 @@ class Solution(object):
     :type root: TreeNode
     :rtype: List[float]
     """
-    ans = []
+    ans    # list
     queue = deque([root])
     while queue:
       s = 0
-      n = len(queue)
-      for _ in range(n):
+      n = l..(queue)
+      ___ _ __ r..(n):
         top = queue.popleft()
         s += top.val
         __ top.left:
-          queue.append(top.left)
+          queue.a..(top.left)
         __ top.right:
-          queue.append(top.right)
-      ans.append(float(s) / n)
-    return ans
+          queue.a..(top.right)
+      ans.a..(float(s) / n)
+    r.. ans

@@ -14,20 +14,20 @@ class Solution:
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root:
-            return True
+        __ n.. root:
+            r.. True
 
-        return self.divide_conquer(root.left, root.right)
+        r.. self.divide_conquer(root.left, root.right)
 
     ___ divide_conquer(self, left, right):
-        __ not left and not right:
-            return True
-        __ not left or not right:
-            return False
+        __ n.. left and n.. right:
+            r.. True
+        __ n.. left o. n.. right:
+            r.. False
         __ left.val != right.val:
-            return False
-        __ not self.divide_conquer(left.left, right.right):
-            return False
-        __ not self.divide_conquer(left.right, right.left):
-            return False
-        return True
+            r.. False
+        __ n.. self.divide_conquer(left.left, right.right):
+            r.. False
+        __ n.. self.divide_conquer(left.right, right.left):
+            r.. False
+        r.. True

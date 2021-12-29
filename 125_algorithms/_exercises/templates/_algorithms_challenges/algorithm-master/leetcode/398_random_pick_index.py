@@ -1,4 +1,4 @@
-from random import randint
+____ random _______ randint
 
 
 class Solution:
@@ -16,14 +16,14 @@ class Solution:
         res = -1
         cnt = 0
 
-        for i in range(len(self.A)):
+        ___ i __ r..(l..(self.A)):
             __ self.A[i] != target:
                 continue
             cnt += 1
-            __ randint(1, cnt) == cnt:
+            __ randint(1, cnt) __ cnt:
                 res = i
 
-        return res
+        r.. res
 
 
 # Your Solution object will be instantiated and called as such:

@@ -13,17 +13,17 @@ class Solution(object):
         while n:
             res = str(n%9) + res
             n //= 9
-        return int(res)
+        r.. int(res)
     
     ___ test(self):
         testCases = [
             9,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.newInteger(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

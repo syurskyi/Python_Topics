@@ -9,24 +9,24 @@ class Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
-    ___ pathSum(self, root, sum):
-        __ root is None:
-            return []
-        one = []
-        res = []
-        self.ps(root, sum, one, res)
-        return res
+    ___ pathSum(self, root, s..):
+        __ root __ N..
+            r.. []
+        one    # list
+        res    # list
+        self.ps(root, s.., one, res)
+        r.. res
 
-    ___ ps(self, root, sum, one, res):
-        __ root is None:
-            return
-        elif root.left is None and root.right is None:
-            __ root.val == sum:
-                one.append(root.val)
-                res.append(one[:])
+    ___ ps(self, root, s.., one, res):
+        __ root __ N..
+            r..
+        ____ root.left __ N.. and root.right __ N..
+            __ root.val __ s..:
+                one.a..(root.val)
+                res.a..(one[:])
                 one.pop()
-        else:
-            one.append(root.val)
-            self.ps(root.left, sum - root.val, one, res)
-            self.ps(root.right, sum - root.val, one, res)
+        ____:
+            one.a..(root.val)
+            self.ps(root.left, s.. - root.val, one, res)
+            self.ps(root.right, s.. - root.val, one, res)
             one.pop()

@@ -12,9 +12,9 @@ class Solution(object):
     :rtype: TreeNode
     """
     __ nums:
-      midPos = len(nums) / 2
+      midPos = l..(nums) / 2
       mid = nums[midPos]
       root = TreeNode(mid)
       root.left = self.sortedArrayToBST(nums[:midPos])
       root.right = self.sortedArrayToBST(nums[midPos + 1:])
-      return root
+      r.. root

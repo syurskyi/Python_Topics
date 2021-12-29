@@ -32,25 +32,25 @@ is different.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.prev = None
+        self.prev = N..
         self.ret = float('inf')
 
     ___ minDiffInBST(self, root: TreeNode) -> int:
         """
         in-order traversal
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.minDiffInBST(root.left)
         __ self.prev:
-            self.ret = min(self.ret, root.val - self.prev)
+            self.ret = m..(self.ret, root.val - self.prev)
         self.prev = root.val
         self.minDiffInBST(root.right)
-        return self.ret
+        r.. self.ret

@@ -3,14 +3,14 @@ ___ running_mean(sequence):
        returns a sequence of same length with the averages.
        You can assume all items in sequence are numeric."""
 
-    running = []
+    running    # list
 
     s = 0
-    for i,number in enumerate(sequence):
+    ___ i,number __ enumerate(sequence):
         s += number
-        running.append(round(s/(i + 1),2))
+        running.a..(round(s/(i + 1),2))
 
-    return running
+    r.. running
 
 
 

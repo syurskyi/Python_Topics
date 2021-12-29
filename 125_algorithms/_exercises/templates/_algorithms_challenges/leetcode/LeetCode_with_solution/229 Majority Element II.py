@@ -4,7 +4,7 @@ Given an integer array of size n, find all elements that appear more than ⌊ n/
 linear time and in O(1) space.
 """
 __author__ = 'Daniel'
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -15,22 +15,22 @@ class Solution:
         :rtype: list[int]
         """
         cnt = defaultdict(int)
-        for num in nums:
-            __ num in cnt:
+        ___ num __ nums:
+            __ num __ cnt:
                 cnt[num] += 1
-            else:
-                __ len(cnt) < 3-1:
+            ____:
+                __ l..(cnt) < 3-1:
                     cnt[num] += 1
-                else:
-                    for k in cnt.keys():
+                ____:
+                    ___ k __ cnt.keys():
                         cnt[k] -= 1
-                        __ cnt[k] == 0:
+                        __ cnt[k] __ 0:
                             del cnt[k]
 
-        ret = []
-        for k in cnt.keys():
-            __ len(filter(lambda x: x == k, nums)) > len(nums)/2:
-                ret.append(k)
+        ret    # list
+        ___ k __ cnt.keys():
+            __ l..(filter(l.... x: x __ k, nums)) > l..(nums)/2:
+                ret.a..(k)
 
-        return ret
+        r.. ret
 

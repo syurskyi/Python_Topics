@@ -35,17 +35,17 @@ p and q are different and both values will exist in the BST.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        return self.walk(root, p, q)
+        r.. self.walk(root, p, q)
 
     ___ walk(self, node, p, q):
         __ p.val > node.val and q.val > node.val:
-            return self.walk(node.right, p, q)
+            r.. self.walk(node.right, p, q)
         __ p.val < node.val and q.val < node.val:
-            return self.walk(node.left, p, q)
-        return node
+            r.. self.walk(node.left, p, q)
+        r.. node

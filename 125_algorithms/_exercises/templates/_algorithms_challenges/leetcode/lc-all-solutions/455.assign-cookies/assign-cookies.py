@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution(object):
@@ -11,9 +11,9 @@ class Solution(object):
     cookies.sort()
     children.sort()
     i = 0
-    for cookie in cookies:
-      __ i >= len(children):
+    ___ cookie __ cookies:
+      __ i >= l..(children):
         break
       __ children[i] <= cookie:
         i += 1
-    return i
+    r.. i

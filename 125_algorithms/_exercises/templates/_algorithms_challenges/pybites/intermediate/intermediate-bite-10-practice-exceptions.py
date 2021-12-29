@@ -13,12 +13,12 @@ ___ my_solution_positive_divide(numerator, denominator):
     try:
         result = numerator / denominator
     except ZeroDivisionError:
-        return 0
+        r.. 0
     except:
         raise
     __ result < 0:
         raise ValueError
-    return result
+    r.. result
 
 print(my_solution_positive_divide(1,2))
 
@@ -36,10 +36,10 @@ ___ pybites_solution_positive_divide(numerator, denominator):
     try:
         result = numerator/denominator
     except ZeroDivisionError:
-        return 0
+        r.. 0
     except (TypeError, ValueError):
         raise
-    else:
+    ____:
         __ result < 0:
             raise ValueError('Cannot be negative')
-        return result
+        r.. result

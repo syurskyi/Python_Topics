@@ -8,15 +8,15 @@ class Solution:
         INT_MAX = 0x7FFFFFFF
         ans = 0
 
-        __ not b:
-            return INT_MAX
-        __ not a:
-            return ans
+        __ n.. b:
+            r.. INT_MAX
+        __ n.. a:
+            r.. ans
 
-        _a = -a __ a < 0 else a
-        _b = -b __ b < 0 else b
+        _a = -a __ a < 0 ____ a
+        _b = -b __ b < 0 ____ b
 
-        for i in range(31, -1, -1):
+        ___ i __ r..(31, -1, -1):
             """
             let `ci = 1 << i = 2 ** i`
             if `_a // _b >= ci`, that is `_a // ci >= _b`
@@ -34,7 +34,7 @@ class Solution:
             ans = -ans
 
         __ ans > INT_MAX:
-            return INT_MAX
+            r.. INT_MAX
         __ ans < ~INT_MAX:
-            return ~INT_MAX
-        return ans
+            r.. ~INT_MAX
+        r.. ans

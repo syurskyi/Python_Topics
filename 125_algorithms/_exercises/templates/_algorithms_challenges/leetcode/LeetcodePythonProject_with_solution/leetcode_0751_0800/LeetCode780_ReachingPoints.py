@@ -14,11 +14,11 @@ class Solution(object):
         """
         while sx < tx and sy < ty:
             tx, ty = tx%ty, ty%tx
-        __ sx == tx and (ty-sy) % sx == 0 or\
-            sy == ty and (tx-sx) % sy == 0:
-            return True
-        else:
-            return False
+        __ sx __ tx and (ty-sy) % sx __ 0 o.\
+            sy __ ty and (tx-sx) % sy __ 0:
+            r.. True
+        ____:
+            r.. False
     
     # RuntimeError: maximum recursion depth exceeded
     ___ reachingPoints_own(self, sx, sy, tx, ty):
@@ -30,21 +30,21 @@ class Solution(object):
         :rtype: bool
         """
         mem = {}
-        return self.helper(sx, sy, tx, ty, mem)
+        r.. self.helper(sx, sy, tx, ty, mem)
     
     ___ helper(self, sx, sy, tx, ty, mem):
-        __ sx == tx and sy == ty:
+        __ sx __ tx and sy __ ty:
             mem[(sx, sy)] = True
-            return True
-        __ sx > tx or sy > ty:
+            r.. True
+        __ sx > tx o. sy > ty:
             mem[(sx, sy)] = False
-            return False
-        __ (sx, sy) in mem:
-            return mem[(sx, sy)]
-        res = self.helper(sx, sx+sy, tx, ty, mem) or\
+            r.. False
+        __ (sx, sy) __ mem:
+            r.. mem[(sx, sy)]
+        res = self.helper(sx, sx+sy, tx, ty, mem) o.\
             self.helper(sx+sy, sy, tx, ty, mem)
         mem[(sx, sy)] = res
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -53,11 +53,11 @@ class Solution(object):
             [1, 1, 1, 1], # True
             [6, 5, 11, 16], # True
         ]
-        for sx, sy, tx, ty in testCases:
+        ___ sx, sy, tx, ty __ testCases:
             print('sx: %s, sy: %s, tx: %s, ty: %s' % (sx, sy, tx, ty))
             result = self.reachingPoints(sx, sy, tx, ty)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

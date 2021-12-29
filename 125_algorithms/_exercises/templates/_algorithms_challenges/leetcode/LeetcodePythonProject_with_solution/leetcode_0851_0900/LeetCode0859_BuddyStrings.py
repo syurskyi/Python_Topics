@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: bool
         """
         a, b = A, B
-        __ len(a) != len(b): return False
-        __ a == b and len(set(a)) < len(a): return True
-        dif = [(c1, c2) for c1, c2 in zip(a, b) __ c1 != c2]
-        return len(dif) == 2 and dif[0] == dif[1][::-1]
+        __ l..(a) != l..(b): r.. False
+        __ a __ b and l..(set(a)) < l..(a): r.. True
+        dif = [(c1, c2) ___ c1, c2 __ zip(a, b) __ c1 != c2]
+        r.. l..(dif) __ 2 and dif[0] __ dif[1][::-1]
     
     ___ buddyStrings_own(self, A, B):
         """
@@ -23,25 +23,25 @@ class Solution(object):
         :rtype: bool
         """
         a, b = A, B
-        __ len(a) != len(b):
-            return False
+        __ l..(a) != l..(b):
+            r.. False
         c01, c02 = '', ''
         times = 0
-        for c1, c2 in zip(a, b):
+        ___ c1, c2 __ zip(a, b):
             __ c1 != c2:
                 __ times > 1:
-                    return False
-                elif times == 1:
-                    __ c01 == c2 and c02 == c1:
+                    r.. False
+                ____ times __ 1:
+                    __ c01 __ c2 and c02 __ c1:
                         times += 1
-                    else:
-                        return False
-                else:
+                    ____:
+                        r.. False
+                ____:
                     c01, c02 = c1, c2
                     times += 1
-        __ times == 0:
-            return len(set(a)) < len(a)
-        return times == 2
+        __ times __ 0:
+            r.. l..(set(a)) < l..(a)
+        r.. times __ 2
     
     ___ test(self):
         testCase = [
@@ -51,10 +51,10 @@ class Solution(object):
             ['aaaaaabc', 'aaaaaacb'],
             ['', 'aa'],
         ]
-        for a, b in testCase:
+        ___ a, b __ testCase:
             res = self.buddyStrings(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -9,10 +9,10 @@ class Solution:
     @return:
     """
     ___ partition2(self, A, low, high):
-        __ not A:
-            return
+        __ n.. A:
+            r..
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         i = 0
 
         while i < right:
@@ -20,8 +20,8 @@ class Solution:
                 A[left], A[i] = A[i], A[left]
                 left += 1
                 i += 1
-            elif A[i] > high:
+            ____ A[i] > high:
                 A[right], A[i] = A[i], A[right]
                 right -= 1
-            else:
+            ____:
                 i += 1

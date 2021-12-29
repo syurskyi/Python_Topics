@@ -4,8 +4,8 @@ class Solution:
     @return: Maximum profit
     """
     ___ maxProfit(self, P):
-        __ not P:
-            return 0
+        __ n.. P:
+            r.. 0
 
         K = 2
         STAGE = 2 * K + 1
@@ -21,14 +21,14 @@ class Solution:
         note that, `dp[i][0]` means always stay in stage 0,
         so its never going to be profitable
         """
-        dp = [[0] * STAGE for _ in range(2)]
+        dp = [[0] * STAGE ___ _ __ r..(2)]
 
         i = j = prev = curr = profit = 0
-        for i in range(1, len(P)):
+        ___ i __ r..(1, l..(P)):
             prev = curr
             curr = 1 - curr
             profit = P[i] - P[i - 1]
-            for j in range(1, STAGE, 2):
+            ___ j __ r..(1, STAGE, 2):
                 """
                 in stage 1 and 3, holding a stock
                 profit comes from:
@@ -39,7 +39,7 @@ class Solution:
                 choose the maximum
                 """
                 dp[curr][j] = max(dp[prev][j] + profit, dp[prev][j - 1])
-            for j in range(2, STAGE, 2):
+            ___ j __ r..(2, STAGE, 2):
                 """
                 in stage 2 and 4, holding no any stock
                 profit comes from:
@@ -51,4 +51,4 @@ class Solution:
                 """
                 dp[curr][j] = max(dp[prev][j], dp[prev][j - 1] + profit)
 
-        return max(dp[curr])
+        r.. max(dp[curr])

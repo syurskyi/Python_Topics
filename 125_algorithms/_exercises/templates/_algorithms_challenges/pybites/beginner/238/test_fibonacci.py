@@ -1,4 +1,4 @@
-from fibonacci import fib
+____ fibonacci _______ fib
 
 # write one or more pytest functions below, they need to start with test_
 
@@ -6,9 +6,9 @@ from fibonacci import fib
 
 ___ test_fib_1():
 
-    assert fib(1) == 1
+    ... fib(1) __ 1
 
 
 
 ___ test_fib_5():
-    assert fib(5) == 5
+    ... fib(5) __ 5

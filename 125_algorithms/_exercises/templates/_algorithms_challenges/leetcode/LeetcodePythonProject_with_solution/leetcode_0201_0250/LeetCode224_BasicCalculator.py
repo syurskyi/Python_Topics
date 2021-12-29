@@ -11,34 +11,34 @@ class Solution(object):
         """
         i = 0
         res = 0
-        stack = []
+        stack    # list
         sign = 1
         preVal = 0
-        while i < len(s):
+        while i < l..(s):
             __ s[i].isdigit():
                 preVal = 0
-                while i < len(s) and s[i].isdigit():
+                while i < l..(s) and s[i].isdigit():
                     preVal = preVal*10 + int(s[i])
                     i += 1
                 i -= 1
-            elif s[i] == '(':
-                stack.append(res)
-                stack.append(sign)
+            ____ s[i] __ '(':
+                stack.a..(res)
+                stack.a..(sign)
                 res = 0
                 sign = 1
-            elif s[i] == ')':
+            ____ s[i] __ ')':
                 res += sign*preVal
                 res = stack.pop()*res + stack.pop()
                 preVal = 0
-            elif s[i] == '+':
+            ____ s[i] __ '+':
                 res += preVal*sign
                 sign = 1
-            elif s[i] == '-':
+            ____ s[i] __ '-':
                 res += preVal*sign
                 sign = -1
             i += 1
         res += preVal*sign
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -49,11 +49,11 @@ class Solution(object):
             '1+1',
             '2-1 + 2',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.calculate(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

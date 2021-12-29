@@ -30,22 +30,22 @@ All the tilt values won't exceed the range of 32-bit integer.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ findTilt(self, root: TreeNode) -> int:
         ret = [0]
         self.walk(root, ret)
-        return ret[0]
+        r.. ret[0]
 
     ___ walk(self, node: TreeNode, ret) -> int:
         """get the sum of the subtree and add the tilt"""
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         l = self.walk(node.left, ret)
         r = self.walk(node.right, ret)
         ret[0] += abs(l - r)
-        return l + node.val + r
+        r.. l + node.val + r

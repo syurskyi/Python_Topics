@@ -2,5 +2,5 @@
 # Score: 20
 
 
-for i in range(1, int(input()) + 1):
+___ i __ r..(1, int(input()) + 1):
     print(i, end='')

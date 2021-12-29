@@ -1,4 +1,4 @@
-from operator import *
+____ operator _______ *
 
 
 class Solution(object):
@@ -8,10 +8,10 @@ class Solution(object):
     :rtype: List[int]
     """
     ops = {"+": add, "-": sub, "*": mul, "/": div}
-    ans = []
-    for i, c in enumerate(input):
-      __ c in ops:
+    ans    # list
+    ___ i, c __ enumerate(input):
+      __ c __ ops:
         left = self.diffWaysToCompute(input[:i])
         right = self.diffWaysToCompute(input[i + 1:])
-        ans.extend([ops[c](a, b) for a in left for b in right])
-    return ans __ ans else [int(input)]
+        ans.extend([ops[c](a, b) ___ a __ left ___ b __ right])
+    r.. ans __ ans ____ [int(input)]

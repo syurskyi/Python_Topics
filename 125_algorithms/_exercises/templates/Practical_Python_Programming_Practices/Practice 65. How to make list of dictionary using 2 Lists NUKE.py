@@ -3,8 +3,8 @@ y  [1,2,3,4,5]
 
 z  {}
 
-for i in range(len(x)):
+___ i __ r..(l..(x)):
  #   z[y[i]] = x[i]
- z  dict(zip(y,x))
+ z  d..(zip(y,x))
 
 print(z)

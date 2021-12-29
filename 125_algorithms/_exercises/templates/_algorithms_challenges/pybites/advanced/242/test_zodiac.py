@@ -1,12 +1,12 @@
-from datetime import datetime
-import json
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+____ datetime _______ datetime
+_______ json
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
-import pytest
+_______ pytest
 
-from zodiac import (get_signs, get_sign_with_most_famous_people,
+____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
                     signs_are_mutually_compatible, get_sign_by_date, Sign)
 
 # original source: https://zodiacal.herokuapp.com/api
@@ -17,25 +17,25 @@ PATH = Path(TMP, "zodiac.json")
 
 @pytest.fixture(scope='module')
 ___ signs():
-    __ not PATH.exists():
+    __ n.. PATH.exists():
         urlretrieve(URL, PATH)
     with open(PATH) as f:
         data = json.loads(f.read())
-    return get_signs(data)
+    r.. get_signs(data)
 
 
 # write your pytest code here ...
 ___ test_named_tuple(signs):
-    assert list(Sign._fields) == list('name compatibility famous_people sun_dates'.split(' '))
-    assert repr(signs[0]).startswith('Sign(')
+    ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.split(' '))
+    ... repr(signs[0]).startswith('Sign(')
 
 
 ___ test_get_signs(signs):
-    assert len(signs) == 12
+    ... l..(signs) __ 12
 
 
 ___ test_get_sign_with_most_famouse_people(signs):
-    assert get_sign_with_most_famous_people(signs) == ('Scorpio', 35)
+    ... get_sign_with_most_famous_people(signs) __ ('Scorpio', 35)
 
 
 @pytest.mark.parametrize("sgn1, sgn2, result", [
@@ -45,7 +45,7 @@ ___ test_get_sign_with_most_famouse_people(signs):
     ('Aries', 'Aquarius', True)
 ])
 ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
-    assert signs_are_mutually_compatible(signs, sgn1, sgn2) == result
+    ... signs_are_mutually_compatible(signs, sgn1, sgn2) __ result
 
 
 @pytest.mark.parametrize("dt, result", [
@@ -76,4 +76,4 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
 ])
 ___ test_get_sign_by_date(signs, dt, result):
     m, d = dt
-    assert get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) == result
+    ... get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) __ result

@@ -22,14 +22,14 @@ cars = {
 ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models (original order)"""
     separator = ', '
-    return(separator.join(cars['Jeep']))
+    r..(separator.join(cars['Jeep']))
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    output = []
-    for key, value in cars.items():
-        output.append(value[0])
-    return output
+    output    # list
+    ___ key, value __ cars.items():
+        output.a..(value[0])
+    r.. output
 
 ___ get_all_matching_models(cars=cars, grep='trail'):
     """return a list of all models containing the case insensitive

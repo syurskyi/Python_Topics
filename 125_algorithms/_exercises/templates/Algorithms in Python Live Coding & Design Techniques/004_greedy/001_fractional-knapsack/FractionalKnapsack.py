@@ -10,8 +10,8 @@ ___ get_max_value(wt, val, capacity
 
     total_val  0
     ___ item __ items:
-        cur_wt  in.(item.wt)
-        cur_val  in.(item.val)
+        cur_wt  __.(item.wt)
+        cur_val  __.(item.val)
 
         __ capacity - cur_wt > 0:
             capacity  capacity - cur_wt

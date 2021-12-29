@@ -12,7 +12,7 @@ def get_text(text='I code with PyBites'):
 
 # Approach 3 - not working
 
-from functools import wraps
+____ functools _______ wraps
 
 ___ make_html(param):
 
@@ -22,13 +22,13 @@ ___ make_html(param):
         ___ wrapper():
             print('Inside wrapper')
             print(f"<{param}>" + func() + f"</{param}>")
-        return wrapper
-    return decorator
+        r.. wrapper
+    r.. decorator
 
 @make_html('p')
 @make_html('strong')
 ___ get_text(text='I code with PyBites'):
-    return text
+    r.. text
 
 
 get_text()

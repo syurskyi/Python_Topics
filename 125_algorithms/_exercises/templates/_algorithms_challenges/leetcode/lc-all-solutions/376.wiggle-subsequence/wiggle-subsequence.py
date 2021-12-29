@@ -4,12 +4,12 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    __ not nums:
-      return 0
+    __ n.. nums:
+      r.. 0
     up = down = 1
-    for i in range(1, len(nums)):
+    ___ i __ r..(1, l..(nums)):
       __ nums[i] > nums[i - 1]:
         up = down + 1
-      elif nums[i] < nums[i - 1]:
+      ____ nums[i] < nums[i - 1]:
         down = up + 1
-    return max(up, down)
+    r.. max(up, down)

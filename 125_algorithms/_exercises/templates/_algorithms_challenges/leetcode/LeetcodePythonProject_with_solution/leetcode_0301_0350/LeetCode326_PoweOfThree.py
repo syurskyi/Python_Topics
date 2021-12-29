@@ -6,13 +6,13 @@ Created on Mar 18, 2017
 
 class Solution(object):
     ___ isPowerOfThree(self, n):
-        __ n <= 0: return False
-        return (3**19)%n == 0
+        __ n <= 0: r.. False
+        r.. (3**19)%n __ 0
     
     ___ isPowerOfThreeMath(self, n):
-        __ n <= 0: return False
+        __ n <= 0: r.. False
         while n > 1:
             __ n % 3 != 0:
-                return False
+                r.. False
             n = n/3
-        return True
+        r.. True

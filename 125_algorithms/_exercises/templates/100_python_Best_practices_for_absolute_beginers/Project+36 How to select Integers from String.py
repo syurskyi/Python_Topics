@@ -1,5 +1,5 @@
 str  input("Insert strings with integer values: ")
-lenstr  len(str)
+lenstr  l..(str)
 
 mynum  []
 
@@ -12,9 +12,9 @@ w___ x < lenstr:
         x + 1
         __ x<lenstr:
             symbol  str[x]
-        else:
+        ____:
             _____
     x + 1
     __ num ! "":
-        mynum.append(i..(num))
+        mynum.a..(i..(num))
 print(mynum)

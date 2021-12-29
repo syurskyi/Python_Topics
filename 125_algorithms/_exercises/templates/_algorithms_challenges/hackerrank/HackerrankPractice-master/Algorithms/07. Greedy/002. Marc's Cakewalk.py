@@ -3,9 +3,9 @@
 
 
 _ = input()
-calories = list(map(int, input().split()))
-calories = sorted(calories, reverse=True)
+calories = l..(map(int, input().split()))
+calories = s..(calories, r.._T..
 ans = 0
-for index, cupcake in enumerate(calories):
+___ index, cupcake __ enumerate(calories):
     ans += 2**index*cupcake
 print(ans)

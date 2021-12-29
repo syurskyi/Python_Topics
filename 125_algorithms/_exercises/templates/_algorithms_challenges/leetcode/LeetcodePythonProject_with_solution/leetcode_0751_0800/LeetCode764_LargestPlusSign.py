@@ -11,47 +11,47 @@ class Solution(object):
         :rtype: int
         """
         n = N
-        matrix = [[1]*n for _ in range(n)]
-        for i, j in mines:
+        matrix = [[1]*n ___ _ __ r..(n)]
+        ___ i, j __ mines:
             matrix[i][j] = 0
         maxLen = 0
-        dp = [[[0]*4 for _ in range(n)] for _ in range(n)]
-        for i in range(n):
-            for j in range(n):
-                __ matrix[i][j] == 0:
+        dp = [[[0]*4 ___ _ __ r..(n)] ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            ___ j __ r..(n):
+                __ matrix[i][j] __ 0:
                     continue
-                __ i == 0 and j == 0:
+                __ i __ 0 and j __ 0:
                     dp[i][j][0] = 1
                     dp[i][j][1] = 1
-                elif i == 0 and j != 0:
+                ____ i __ 0 and j != 0:
                     dp[i][j][0] = dp[i][j-1][0]+1
                     dp[i][j][1] = 1
-                elif i != 0 and j == 0:
+                ____ i != 0 and j __ 0:
                     dp[i][j][0] = 1
                     dp[i][j][1] = dp[i-1][j][1]+1
-                else:
+                ____:
                     dp[i][j][0] = dp[i][j-1][0]+1
                     dp[i][j][1] = dp[i-1][j][1]+1
-        for i in range(n-1, -1, -1):
-            for j in range(n-1, -1, -1):
-                __ matrix[i][j] == 0:
+        ___ i __ r..(n-1, -1, -1):
+            ___ j __ r..(n-1, -1, -1):
+                __ matrix[i][j] __ 0:
                     continue
-                __ i == n-1 and j == n-1:
+                __ i __ n-1 and j __ n-1:
                     dp[i][j][2] = 1
                     dp[i][j][3] = 1
-                elif i == n-1 and j != n-1:
+                ____ i __ n-1 and j != n-1:
                     dp[i][j][2] = 1
                     dp[i][j][3] = dp[i][j+1][3]+1
-                elif i != n-1 and j == n-1:
+                ____ i != n-1 and j __ n-1:
                     dp[i][j][2] = dp[i+1][j][2]+1
                     dp[i][j][3] = 1
-                else:
+                ____:
                     dp[i][j][2] = dp[i+1][j][2]+1
                     dp[i][j][3] = dp[i][j+1][3]+1
-        for i in range(n):
-            for j in range(n):
-                maxLen = max(maxLen, min(dp[i][j]))
-        return maxLen
+        ___ i __ r..(n):
+            ___ j __ r..(n):
+                maxLen = max(maxLen, m..(dp[i][j]))
+        r.. maxLen
     
     ___ test(self):
         testCases = [
@@ -62,12 +62,12 @@ class Solution(object):
             [5, [[3,0],[3,3]]],
             [5, [[0,1],[0,2],[1,0],[1,2],[1,4],[2,0],[2,2],[3,0],[3,1],[4,0],[4,1],[4,3],[4,4]]],
         ]
-        for n, mines in testCases:
+        ___ n, mines __ testCases:
             print('n: %s' % n)
             print('mines: %s' % mines)
             result = self.orderOfLargestPlusSign(n, mines)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

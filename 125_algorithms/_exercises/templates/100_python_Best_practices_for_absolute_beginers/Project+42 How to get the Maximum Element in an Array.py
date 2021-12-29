@@ -1,15 +1,15 @@
-from random import  random
+____ random _______  random
 
 x  20
 y  []
 
-for i in range(x):
-    y.append(random())
+___ i __ r..(x):
+    y.a..(random())
     print(round(y[i],2), end' ')
 print()
 
 maximum  0
-for i in y:
+___ i __ y:
     __ i > maximum:
         maximum  i
 print("The maximum value = ", round(maximum,2))

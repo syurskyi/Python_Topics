@@ -9,7 +9,7 @@ ___ DNA_strand(dna):
         'G': 'C',
         'C': 'G',
     }
-    return ''.join([complements[c] for c in dna])
+    r.. ''.join([complements[c] ___ c __ dna])
 
 
 print(DNA_strand("AAAA"))

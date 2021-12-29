@@ -1,9 +1,9 @@
 ___ modCalc(num):
         calc = raw_input()
         while calc[:1] != "%":
-                __ calc[:1] == '+':
+                __ calc[:1] __ '+':
                         num += int(calc[2:].strip())
-                elif calc[:1] == '*':
+                ____ calc[:1] __ '*':
                         num *= int(calc[2:].strip())
                 calc = raw_input()
         num %= int(calc[2:].strip()) 

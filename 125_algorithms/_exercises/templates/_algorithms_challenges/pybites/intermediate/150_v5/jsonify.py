@@ -1,5 +1,5 @@
-import json
-import re
+_______ json
+_______ re
 
 members = """
 id,first_name,last_name,email
@@ -18,5 +18,5 @@ id,first_name,last_name,email
 
 ___ convert_to_json(members=members):
     r = re.compile(r'(?P<id>\d+)[,|;](?P<first_name>\w+)[,|;](?P<last_name>\w+)[,|;](?P<email>.*)')
-    result = [r.match(line).groupdict() for line in members.splitlines(keepends=False)[2:]]
-    return json.dumps(result)
+    result = [r.match(line).groupdict() ___ line __ members.splitlines(keepends=False)[2:]]
+    r.. json.dumps(result)

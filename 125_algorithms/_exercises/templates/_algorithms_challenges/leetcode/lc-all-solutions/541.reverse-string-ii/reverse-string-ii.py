@@ -9,20 +9,20 @@ class Solution(object):
     isFirst = True
     a = ""
     b = ""
-    ans = []
-    for c in s:
+    ans    # list
+    ___ c __ s:
       __ isFirst:
         a = c + a
-      else:
+      ____:
         b += c
       cnt += 1
-      __ cnt == k:
+      __ cnt __ k:
         __ isFirst:
-          ans.append(a)
+          ans.a..(a)
           a = ""
-        else:
-          ans.append(b)
+        ____:
+          ans.a..(b)
           b = ""
-        isFirst = not isFirst
+        isFirst = n.. isFirst
         cnt = 0
-    return "".join(ans) + a + b
+    r.. "".join(ans) + a + b

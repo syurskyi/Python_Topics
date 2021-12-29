@@ -1,11 +1,11 @@
 ___ same_ascii(a, b):
     s1 = 0
     s2 = 0
-    for i in a:
+    ___ i __ a:
       s1 +=  ord(i)
-    for i in b:
+    ___ i __ b:
         s2 += ord(i)
-    __ s1 == s2:
-        return True
-    else:
-        return False
+    __ s1 __ s2:
+        r.. True
+    ____:
+        r.. False

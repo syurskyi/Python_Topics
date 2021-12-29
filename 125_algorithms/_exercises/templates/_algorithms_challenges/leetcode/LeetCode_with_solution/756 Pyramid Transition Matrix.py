@@ -44,9 +44,9 @@ allowed will have length in range [0, 200].
 Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E',
 'F', 'G'}.
 """
-import itertools
-from typing import List
-from collections import defaultdict
+_______ itertools
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -56,53 +56,53 @@ class Solution:
         The order of allowed matters
         """
         T = defaultdict(set)  # transition matrix
-        for a, b, c in allowed:
+        ___ a, b, c __ allowed:
             T[a, b].add(c)
 
-        return self.dfs(T, bottom)
+        r.. self.dfs(T, bottom)
 
     ___ dfs(self, T, level) -> bool:
-        __ len(level) == 1:
-            return True
+        __ l..(level) __ 1:
+            r.. True
 
         # for nxt_level in self.gen_nxt_level(T, level, 0):
-        for nxt_level in itertools.product(
-            *[T[a, b] for a, b in zip(level, level[1:])]
+        ___ nxt_level __ itertools.product(
+            *[T[a, b] ___ a, b __ zip(level, level[1:])]
         ):
             __ self.dfs(T, nxt_level):
-                return True
+                r.. True
 
-        return False
+        r.. False
 
     ___ gen_nxt_level(self, T, level, lo):
         """
         equiv to itertools.product - nested for-loops in a generator expression
         Cartesian product
         """
-        __ lo + 1 >= len(level):
+        __ lo + 1 >= l..(level):
             yield ""
-            return
+            r..
 
-        for head in T[level[lo], level[lo + 1]]:
-            for tail in self.gen_nxt_level(T, level, lo + 1):
+        ___ head __ T[level[lo], level[lo + 1]]:
+            ___ tail __ self.gen_nxt_level(T, level, lo + 1):
                 yield head + tail
 
 
     ___ dfs_deep(self, T, level, lo, nxt_level) -> bool:
-        __ lo + 1 == len(level):
-            return True
+        __ lo + 1 __ l..(level):
+            r.. True
 
-        for nxt in T[level[lo], level[lo + 1]]:
-            nxt_level.append(nxt)
+        ___ nxt __ T[level[lo], level[lo + 1]]:
+            nxt_level.a..(nxt)
             __ self.dfs(T, level, lo + 1, nxt_level):
                 # Too deep - check till top
                 __ self.dfs(T, nxt_level, 0, []):
-                    return True
+                    r.. True
             nxt_level.pop()
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) == True
-    assert Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) == False
+__ __name__ __ "__main__":
+    ... Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) __ True
+    ... Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) __ False

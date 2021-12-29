@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from tree_building import Record, BuildTree
+____ tree_building _______ Record, BuildTree
 
 
 class TreeBuildingTest(unittest.TestCase):
@@ -12,7 +12,7 @@ class TreeBuildingTest(unittest.TestCase):
     """
 
     ___ test_empty_list_input(self):
-        records = []
+        records    # list
         root = BuildTree(records)
         self.assertIsNone(root)
 
@@ -171,12 +171,12 @@ class TreeBuildingTest(unittest.TestCase):
 
     ___ assert_node_is_branch(self, node, node_id, children_count):
         self.assertEqual(node.node_id, node_id)
-        self.assertNotEqual(len(node.children), 0)
-        self.assertEqual(len(node.children), children_count)
+        self.assertNotEqual(l..(node.children), 0)
+        self.assertEqual(l..(node.children), children_count)
 
     ___ assert_node_is_leaf(self, node, node_id):
         self.assertEqual(node.node_id, node_id)
-        self.assertEqual(len(node.children), 0)
+        self.assertEqual(l..(node.children), 0)
 
     # Utility functions
     ___ setUp(self):
@@ -186,8 +186,8 @@ class TreeBuildingTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

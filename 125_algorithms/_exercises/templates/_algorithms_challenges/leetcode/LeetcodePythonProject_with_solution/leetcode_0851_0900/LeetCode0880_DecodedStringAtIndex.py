@@ -11,19 +11,19 @@ class Solution(object):
         :rtype: str
         """
         n = 0
-        for i, c in enumerate(S):
+        ___ i, c __ enumerate(S):
             __ c.isdigit():
                 n = n*int(c)
-            else:
+            ____:
                 n += 1
-        for j in range(i, -1, -1):
+        ___ j __ r..(i, -1, -1):
             c = S[j]
             __ c.isdigit():
                 n //= int(c)
                 K %= n
-            else:
-                __ K == n or K == 0:
-                    return c
+            ____:
+                __ K __ n o. K __ 0:
+                    r.. c
                 n -= 1
     
     ___ decodeAtIndex_own_MLE(self, S, K):
@@ -33,11 +33,11 @@ class Solution(object):
         :rtype: str
         """
         tmp = ''
-        for c in S:
+        ___ c __ S:
             __ c.isdigit():
                 tmp += tmp*(int(c)-1)
-            else:
+            ____:
                 tmp += c
-            __ K-1 < len(tmp):
-                return tmp[K-1]
-        return tmp[K-1]
+            __ K-1 < l..(tmp):
+                r.. tmp[K-1]
+        r.. tmp[K-1]

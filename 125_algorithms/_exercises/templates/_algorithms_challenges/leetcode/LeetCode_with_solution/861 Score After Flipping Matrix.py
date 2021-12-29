@@ -24,7 +24,7 @@ Note:
 1 <= A[0].length <= 20
 A[i][j] is 0 or 1.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -35,17 +35,17 @@ class Solution:
         Then we cannot toggle row anymore
         Toggle the col if #0's < #1's
         """
-        m, n = len(A), len(A[0])
+        m, n = l..(A), l..(A[0])
         ret = 0
         ret += (1 << (n-1)) * m  # all rows with MSB being 1
-        for j in range(1, n):
+        ___ j __ r..(1, n):
             cnt = 0
-            for i in range(m):
-                __ A[i][j] == A[i][0]:
+            ___ i __ r..(m):
+                __ A[i][j] __ A[i][0]:
                     cnt += 1  #  number of 1's
 
             # toggle 
             cnt = max(cnt, m-cnt)
             ret += (1 << (n-1-j)) * cnt
 
-        return ret
+        r.. ret

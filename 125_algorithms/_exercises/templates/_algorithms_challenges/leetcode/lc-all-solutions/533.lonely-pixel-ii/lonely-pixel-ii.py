@@ -9,15 +9,15 @@ class Solution(object):
     ans = 0
     col = {}
     row = {}
-    for i in range(len(picture)):
+    ___ i __ r..(l..(picture)):
       sign = "".join(picture[i])
-      rowSign[sign] = rowSign.get(sign, 0) + 1 __ sign.count("B") == N else 0
-      for j in range(len(picture[0])):
-        __ picture[i][j] == "B":
+      rowSign[sign] = rowSign.get(sign, 0) + 1 __ sign.c.. "B") __ N ____ 0
+      ___ j __ r..(l..(picture[0])):
+        __ picture[i][j] __ "B":
           col[j] = col.get(j, 0) + 1
-    for key in rowSign:
-      __ rowSign[key] == N:
-        for j in range(len(key)):
-          __ key[j] == "B" and col.get(j, 0) == N:
+    ___ key __ rowSign:
+      __ rowSign[key] __ N:
+        ___ j __ r..(l..(key)):
+          __ key[j] __ "B" and col.get(j, 0) __ N:
             ans += N
-    return ans
+    r.. ans

@@ -10,9 +10,9 @@ class Solution:
     # @param postorder, a list of integers
     # @return a tree node
     ___ buildTree(self, inorder, postorder):
-        __ not inorder or not postorder:
-            return None
-        else:
+        __ n.. inorder o. n.. postorder:
+            r.. N..
+        ____:
             d = postorder[-1]
             root = TreeNode(d)
             i = inorder.index(d)
@@ -20,4 +20,4 @@ class Solution:
             right = self.buildTree(inorder[i + 1:], postorder[i:-1])
             root.left = left
             root.right = right
-            return root
+            r.. root

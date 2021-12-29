@@ -7,24 +7,24 @@ class Solution:
         res_bit = 0
         res = 0
         # First check whether the single number is negative
-        for num in A:
-            bit = 1 __ num & (1 << (num_of_bits - 1)) != 0 else 0
+        ___ num __ A:
+            bit = 1 __ num & (1 << (num_of_bits - 1)) != 0 ____ 0
             res_bit = (res_bit + bit) % 3
-        positive = True __ res_bit == 0 else False
+        positive = True __ res_bit __ 0 ____ False
 
-        for i in range(num_of_bits - 1):
+        ___ i __ r..(num_of_bits - 1):
             res_bit = 0
             # For each bit of each number, calculate each bit
             # of the single number
-            for num in A:
-                bit = 1 __ num & (1 << i) != 0 else 0
+            ___ num __ A:
+                bit = 1 __ num & (1 << i) != 0 ____ 0
                 res_bit = (res_bit + bit) % 3
             # If single number is positive
-            __ positive and res_bit == 1:
+            __ positive and res_bit __ 1:
                 res += 1 << i
             # If single number is negative
-            __ not positive and res_bit == 0:
+            __ n.. positive and res_bit __ 0:
                 res += 1 << i
-        __ not positive:
+        __ n.. positive:
             res = -(res + 1)
-        return res
+        r.. res

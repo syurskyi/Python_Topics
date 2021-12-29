@@ -16,44 +16,44 @@ class Solution:
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
         """
-        __ not nodes:
-            return []
+        __ n.. nodes:
+            r.. []
 
         uf = {}
 
-        for node in nodes:
-            for neib in node.neighbors:
+        ___ node __ nodes:
+            ___ neib __ node.neighbors:
                 self.union(uf, node, neib)
 
         ans = {}
 
-        for node in nodes:
+        ___ node __ nodes:
             # to correct root again
             root = self.find(uf, node)
 
-            __ root not in ans:
-                ans[root] = []
+            __ root n.. __ ans:
+                ans[root]    # list
 
-            ans[root].append(node.label)
+            ans[root].a..(node.label)
 
-        return list(ans.values())
+        r.. l..(ans.values())
 
     ___ union(self, nodes, a, b):
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        __ _a is not _b:
+        __ _a __ n.. _b:
             nodes[_b] = _a
 
     ___ find(self, nodes, a):
-        __ a not in nodes:
+        __ a n.. __ nodes:
             nodes[a] = a
-            return a
-        __ nodes[a] is a:
-            return a
+            r.. a
+        __ nodes[a] __ a:
+            r.. a
 
         nodes[a] = self.find(nodes, nodes[a])
-        return nodes[a]
+        r.. nodes[a]
 
 
 class Solution:
@@ -65,29 +65,29 @@ class Solution:
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
         """
-        ans = []
+        ans    # list
 
-        __ not nodes:
-            return ans
+        __ n.. nodes:
+            r.. ans
 
         visited = set()
 
-        for node in nodes:
-            __ node in visited:
+        ___ node __ nodes:
+            __ node __ visited:
                 continue
 
-            path = []
+            path    # list
             self.dfs(node, visited, path)
-            ans.append(sorted(path))
+            ans.a..(s..(path))
 
-        return ans
+        r.. ans
 
     ___ dfs(self, a, visited, path):
         visited.add(a)
-        path.append(a.label)
+        path.a..(a.label)
 
-        for b in a.neighbors:
-            __ b in visited:
+        ___ b __ a.neighbors:
+            __ b __ visited:
                 continue
 
             self.dfs(b, visited, path)

@@ -11,7 +11,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ deleteDuplicates(self, head):
@@ -26,19 +26,19 @@ class Solution:
         pre = dummy
         while pre.next:
             cur = pre.next
-            __ cur.next and cur.next.val==cur.val:  # duplicated
+            __ cur.next and cur.next.val__cur.val:  # duplicated
                 # find the next non_duplicate
                 next_non_duplicate = cur.next
-                while next_non_duplicate and cur.val==next_non_duplicate.val:
+                while next_non_duplicate and cur.val__next_non_duplicate.val:
                     next_non_duplicate = next_non_duplicate.next
 
                 # remove all duplicated nodes 
                 pre.next = next_non_duplicate
 
-            else:
+            ____:
                 pre = pre.next
 
-        return dummy.next
+        r.. dummy.next
 
 
 

@@ -1,100 +1,100 @@
 class SgfTree(object):
-    ___ __init__(self, properties=None, children_ N..
-        self.properties = properties or {}
-        self.children = children or []
+    ___ __init__(self, properties=N.., children_ N..
+        self.properties = properties o. {}
+        self.children = children o. []
 
     ___ __eq__(self, other):
-        __ not isinstance(other, SgfTree):
-            return False
-        for k, v in self.properties.items():
-            __ k not in other.properties:
-                return False
+        __ n.. isi..(other, SgfTree):
+            r.. False
+        ___ k, v __ self.properties.items():
+            __ k n.. __ other.properties:
+                r.. False
             __ other.properties[k] != v:
-                return False
-        for k in other.properties.keys():
-            __ k not in self.properties:
-                return False
-        __ len(self.children) != len(other.children):
-            return False
-        for a, b in zip(self.children, other.children):
-            __ not (a == b):
-                return False
-        return True
+                r.. False
+        ___ k __ other.properties.keys():
+            __ k n.. __ self.properties:
+                r.. False
+        __ l..(self.children) != l..(other.children):
+            r.. False
+        ___ a, b __ zip(self.children, other.children):
+            __ n.. (a __ b):
+                r.. False
+        r.. True
 
     ___ __repr__(self):
         """Ironically, encoding to SGF is much easier"""
         rep = '(;'
-        for k, vs in self.properties.items():
+        ___ k, vs __ self.properties.items():
             rep += k
-            for v in vs:
+            ___ v __ vs:
                 rep += '[{}]'.format(v)
         __ self.children:
-            __ len(self.children) > 1:
+            __ l..(self.children) > 1:
                 rep += '('
-            for c in self.children:
+            ___ c __ self.children:
                 rep += repr(c)[1:-1]
-            __ len(self.children) > 1:
+            __ l..(self.children) > 1:
                 rep += ')'
-        return rep + ')'
+        r.. rep + ')'
 
 
 ___ is_upper(s):
     a, z = map(ord, 'AZ')
-    return all(
+    r.. a..(
         a <= o and o <= z
-        for o in map(ord, s)
+        ___ o __ map(ord, s)
     )
 
 
 ___ parse(input_string):
-    root = None
-    current = None
-    stack = list(input_string)
+    root = N..
+    current = N..
+    stack = l..(input_string)
 
     ___ assert_that(condition):
-        __ not condition:
+        __ n.. condition:
             raise ValueError(
                 'invalid format at {}:{}: {}'.format(
                     repr(input_string),
-                    len(input_string) - len(stack),
+                    l..(input_string) - l..(stack),
                     repr(''.join(stack))
                 )
             )
     assert_that(stack)
 
     ___ pop():
-        __ stack[0] == '\\':
+        __ stack[0] __ '\\':
             stack.pop(0)
         ch = stack.pop(0)
-        return ' ' __ ch in ['\t'] else ch
+        r.. ' ' __ ch __ ['\t'] ____ ch
 
     ___ peek():
-        return stack[0]
+        r.. stack[0]
 
     ___ pop_until(ch):
         v = ''
         while peek() != ch:
             v += pop()
-        return v
+        r.. v
     while stack:
-        assert_that(pop() == '(' and peek() == ';')
-        while pop() == ';':
+        assert_that(pop() __ '(' and peek() __ ';')
+        while pop() __ ';':
             properties = {}
             while is_upper(peek()):
                 key = pop_until('[')
                 assert_that(is_upper(key))
-                values = []
-                while peek() == '[':
+                values    # list
+                while peek() __ '[':
                     pop()
-                    values.append(pop_until(']'))
+                    values.a..(pop_until(']'))
                     pop()
                 properties[key] = values
-            __ root is None:
+            __ root __ N..
                 current = root = SgfTree(properties)
-            else:
+            ____:
                 current = SgfTree(properties)
-                root.children.append(current)
-            while peek() == '(':
+                root.children.a..(current)
+            while peek() __ '(':
                 child_input = pop() + pop_until(')') + pop()
-                current.children.append(parse(child_input))
-    return root
+                current.children.a..(parse(child_input))
+    r.. root

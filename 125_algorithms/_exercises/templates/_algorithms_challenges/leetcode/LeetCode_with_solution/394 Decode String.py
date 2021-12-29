@@ -28,24 +28,24 @@ class Solution(object):
             [1, []]
         ]  # with default
         i = 0
-        while i < len(s):
+        while i < l..(s):
             __ s[i].isdigit():  # construct number from digit
                 j = i+1
                 while s[j] != '[': j += 1
-                stk.append([
+                stk.a..([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            elif s[i].islower():  # append alphabet
-                stk[-1][1].append(s[i])
+            ____ s[i].islower():  # append alphabet
+                stk[-1][1].a..(s[i])
                 i += 1
-            elif s[i] == ']':  # pop
+            ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.join(partial) * cnt
-                stk[-1][1].append(partial)
+                stk[-1][1].a..(partial)
                 i += 1
 
-        return ''.join(stk.pop()[1])
+        r.. ''.join(stk.pop()[1])
 
 
 class SolutionVerbose(object):
@@ -54,34 +54,34 @@ class SolutionVerbose(object):
         :type s: str
         :rtype: str
         """
-        stk = []
+        stk    # list
         i = 0
-        ret = []
-        while i < len(s):
+        ret    # list
+        while i < l..(s):
             __ s[i].isdigit():  # construct number from digit
                 j = i+1
                 while s[j] != '[': j += 1
-                stk.append([
+                stk.a..([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            elif s[i].islower():  # append alphabet
-                __ not stk:
-                    ret.append(s[i])
-                else:
-                    stk[-1][1].append(s[i])
+            ____ s[i].islower():  # append alphabet
+                __ n.. stk:
+                    ret.a..(s[i])
+                ____:
+                    stk[-1][1].a..(s[i])
                 i += 1
-            elif s[i] == ']':  # pop
+            ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.join(partial) * cnt
-                __ not stk:
-                   ret.append(partial)
-                else:
-                    stk[-1][1].append(partial)
+                __ n.. stk:
+                   ret.a..(partial)
+                ____:
+                    stk[-1][1].a..(partial)
 
                 i += 1
 
-        return ''.join(ret)
+        r.. ''.join(ret)
 
 
 class SolutionError(object):
@@ -90,29 +90,29 @@ class SolutionError(object):
         :type s: str
         :rtype: str
         """
-        stk = []
+        stk    # list
         i = 0
-        ret = []
-        while i < len(s):
+        ret    # list
+        while i < l..(s):
             __ s[i].isdigit():
                 j = i + 1
                 while s[j] != '[': j += 1
-                prev = stk[-1] __ stk else 1
-                stk.append(prev * int(s[i:j]))
+                prev = stk[-1] __ stk ____ 1
+                stk.a..(prev * int(s[i:j]))
                 i = j + 1
-            elif s[i].islower():
-                repeat = stk[-1] __ stk else 1
-                for _ in xrange(repeat): ret.append(s[i])
+            ____ s[i].islower():
+                repeat = stk[-1] __ stk ____ 1
+                ___ _ __ xrange(repeat): ret.a..(s[i])
                 i += 1
-            elif s[i] == ']':
+            ____ s[i] __ ']':
                 stk.pop()
                 i += 1
 
-        return ''.join(ret)
+        r.. ''.join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().decodeString('2[abc]3[cd]ef') == 'abcabccdcdcdef'
+__ __name__ __ "__main__":
+    ... Solution().decodeString('2[abc]3[cd]ef') __ 'abcabccdcdcdef'
 
 
 

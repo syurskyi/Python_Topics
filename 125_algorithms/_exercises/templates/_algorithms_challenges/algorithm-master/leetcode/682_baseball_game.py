@@ -4,19 +4,19 @@ class Solution:
         :type ops: List[str]
         :rtype: int
         """
-        __ not ops:
-            return 0
+        __ n.. ops:
+            r.. 0
 
-        stack = []
+        stack    # list
 
-        for op in ops:
-            __ op == 'C':
+        ___ op __ ops:
+            __ op __ 'C':
                 stack.pop()
-            elif op == 'D':
-                stack.append(2 * stack[-1])
-            elif op == '+':
-                stack.append(stack[-1] + stack[-2])
-            else:
-                stack.append(int(op))
+            ____ op __ 'D':
+                stack.a..(2 * stack[-1])
+            ____ op __ '+':
+                stack.a..(stack[-1] + stack[-2])
+            ____:
+                stack.a..(int(op))
 
-        return sum(stack)
+        r.. s..(stack)

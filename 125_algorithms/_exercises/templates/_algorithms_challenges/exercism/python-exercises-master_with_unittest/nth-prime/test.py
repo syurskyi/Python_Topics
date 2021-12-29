@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from nth_prime import nth_prime
+____ nth_prime _______ nth_prime
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -26,8 +26,8 @@ class NthPrimeTests(unittest.TestCase):
     ___ test_first_twenty_primes(self):
         self.assertEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
                           37, 41, 43, 47, 53, 59, 61, 67, 71],
-                         [nth_prime(n) for n in range(1, 21)])
+                         [nth_prime(n) ___ n __ r..(1, 21)])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

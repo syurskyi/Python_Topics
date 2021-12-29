@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+____ collections _______ deque
 
 
 class Codec:
@@ -15,18 +15,18 @@ class Codec:
     :type root: TreeNode
     :rtype: str
     """
-    ret = []
+    ret    # list
     queue = deque([root])
     while queue:
       top = queue.popleft()
-      __ not top:
-        ret.append("None")
+      __ n.. top:
+        ret.a..("None")
         continue
-      else:
-        ret.append(str(top.val))
-      queue.append(top.left)
-      queue.append(top.right)
-    return ",".join(ret)
+      ____:
+        ret.a..(s..(top.val))
+      queue.a..(top.left)
+      queue.a..(top.right)
+    r.. ",".join(ret)
 
   ___ deserialize(self, data):
     """Decodes your encoded data to tree.
@@ -34,30 +34,30 @@ class Codec:
     :type data: str
     :rtype: TreeNode
     """
-    left = lambda n: 2 * n + 1
-    right = lambda n: 2 * n + 2
+    left = l.... n: 2 * n + 1
+    right = l.... n: 2 * n + 2
     data = data.split(",")
-    __ data[0] == "None":
-      return None
+    __ data[0] __ "None":
+      r.. N..
     root = TreeNode(int(data[0]))
     queue = deque([root])
     i = 0
-    while queue and i < len(data):
+    while queue and i < l..(data):
       top = queue.popleft()
       i += 1
-      left = right = None
-      __ i < len(data) and data[i] != "None":
+      left = right = N..
+      __ i < l..(data) and data[i] != "None":
         left = TreeNode(int(data[i]))
-        queue.append(left)
+        queue.a..(left)
       i += 1
-      __ i < len(data) and data[i] != "None":
+      __ i < l..(data) and data[i] != "None":
         right = TreeNode(int(data[i]))
-        queue.append(right)
+        queue.a..(right)
 
       top.left = left
       top.right = right
 
-    return root
+    r.. root
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

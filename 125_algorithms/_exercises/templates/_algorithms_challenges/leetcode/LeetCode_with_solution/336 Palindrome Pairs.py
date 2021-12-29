@@ -15,14 +15,14 @@ Input: ["bat","tab","cat"]
 Output: [[0,1],[1,0]]
 Explanation: The palindromes are ["battab","tabbat"]
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class TrieNode:
     ___ __init__(self):
-        self.pali_prefix_idxes = []  # suffix ends, prefix pali
-        self.word_idx = None
+        self.pali_prefix_idxes    # list  # suffix ends, prefix pali
+        self.word_idx = N..
         self.children = defaultdict(TrieNode)
 
 
@@ -52,47 +52,47 @@ class Solution:
         Construct Trie for word_j reversely, since word_j is being checked
         """
         root = TrieNode()
-        for idx, w in enumerate(words):
+        ___ idx, w __ enumerate(words):
             cur = root
-            for i in range(len(w) - 1, -1, -1):
+            ___ i __ r..(l..(w) - 1, -1, -1):
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
                 __ self.is_palindrome(w, 0, i + 1):
-                    cur.pali_prefix_idxes.append(idx)
+                    cur.pali_prefix_idxes.a..(idx)
 
                 cur = cur.children[w[i]]
 
-            cur.pali_prefix_idxes.append(idx)  # empty str is palindrome
+            cur.pali_prefix_idxes.a..(idx)  # empty str is palindrome
             cur.word_idx = idx  # word ends
 
-        ret = []
-        for idx, w in enumerate(words):
+        ret    # list
+        ___ idx, w __ enumerate(words):
             cur = root
-            for i in range(len(w)):
+            ___ i __ r..(l..(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ self.is_palindrome(w, i, len(w)) and cur.word_idx is not None and cur.word_idx != idx:
-                    ret.append([idx, cur.word_idx])
+                __ self.is_palindrome(w, i, l..(w)) and cur.word_idx __ n.. N.. and cur.word_idx != idx:
+                    ret.a..([idx, cur.word_idx])
 
-                cur = cur.children.get(w[i], None)
-                __ cur is None:
+                cur = cur.children.get(w[i], N..)
+                __ cur __ N..
                     break
-            else:
-                for idx_j in cur.pali_prefix_idxes:
+            ____:
+                ___ idx_j __ cur.pali_prefix_idxes:
                     __ idx != idx_j:
-                        ret.append([idx, idx_j])
+                        ret.a..([idx, idx_j])
 
-        return ret
+        r.. ret
 
     ___ is_palindrome(self, w, lo, hi):
         i = lo
         j = hi - 1
         while i < j:
             __ w[i] != w[j]:
-                return False
+                r.. False
             i += 1
             j -= 1
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().palindromePairs(["a", ""]) == [[0,1],[1,0]]
-    assert Solution().palindromePairs(["abcd","dcba","lls","s","sssll"]) == [[0,1],[1,0],[2,4],[3,2]]
+__ __name__ __ "__main__":
+    ... Solution().palindromePairs(["a", ""]) __ [[0,1],[1,0]]
+    ... Solution().palindromePairs(["abcd","dcba","lls","s","sssll"]) __ [[0,1],[1,0],[2,4],[3,2]]

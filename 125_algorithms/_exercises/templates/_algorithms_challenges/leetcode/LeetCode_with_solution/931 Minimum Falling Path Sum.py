@@ -27,8 +27,8 @@ Note:
 1 <= A.length == A[0].length <= 100
 -100 <= A[i][j] <= 100
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -38,18 +38,18 @@ class Solution:
         let F[i][j] be the min falling path sum at A[i][j]
         using default dict
         """
-        m, n = len(A), len(A[0])
-        F = defaultdict(lambda: defaultdict(lambda: float("inf")))
-        for j in range(n):
+        m, n = l..(A), l..(A[0])
+        F = defaultdict(l....: defaultdict(l....: float("inf")))
+        ___ j __ r..(n):
             F[m-1][j] = A[m-1][j]
 
-        for i in range(m-2, -1, -1):
-            for j in range(n):
-                F[i][j] = min(F[i+1][j-1], F[i+1][j], F[i+1][j+1]) + A[i][j]
+        ___ i __ r..(m-2, -1, -1):
+            ___ j __ r..(n):
+                F[i][j] = m..(F[i+1][j-1], F[i+1][j], F[i+1][j+1]) + A[i][j]
 
-        return min(
+        r.. m..(
             F[0][j]
-            for j in range(n)
+            ___ j __ r..(n)
         )
 
     ___ minFallingPathSum_std(self, A: List[List[int]]) -> int:
@@ -57,21 +57,21 @@ class Solution:
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]
         """
-        m, n = len(A), len(A[0])
-        F = [[float('inf') for _ in range(n)] for _ in range(m)]
-        for j in range(n):
+        m, n = l..(A), l..(A[0])
+        F = [[float('inf') ___ _ __ r..(n)] ___ _ __ r..(m)]
+        ___ j __ r..(n):
             F[m-1][j] = A[m-1][j]
 
-        for i in range(m-2, -1, -1):
-            for j in range(n):
-                F[i][j] = min(F[i][j], F[i+1][j] + A[i][j])
+        ___ i __ r..(m-2, -1, -1):
+            ___ j __ r..(n):
+                F[i][j] = m..(F[i][j], F[i+1][j] + A[i][j])
                 __ j - 1 >= 0:
-                    F[i][j] = min(F[i][j], F[i+1][j-1] + A[i][j])
+                    F[i][j] = m..(F[i][j], F[i+1][j-1] + A[i][j])
                 __ j + 1 < n:
-                    F[i][j] = min(F[i][j], F[i+1][j+1] + A[i][j])
+                    F[i][j] = m..(F[i][j], F[i+1][j+1] + A[i][j])
 
-        return min(F[0])
+        r.. m..(F[0])
 
 
-__ __name__ == "__main__":
-    assert Solution().minFallingPathSum([[1,2,3],[4,5,6],[7,8,9]]) == 12
+__ __name__ __ "__main__":
+    ... Solution().minFallingPathSum([[1,2,3],[4,5,6],[7,8,9]]) __ 12

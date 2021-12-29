@@ -9,27 +9,27 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
-        n = len(nums)
+        __ n.. nums: r.. 0
+        n = l..(nums)
         res = 0
         maxLen = 0
         lengths = [0]*n
         counts = [0]*n
-        for i in range(n):
+        ___ i __ r..(n):
             lengths[i], counts[i] = 1, 1
-            for j in range(i):
+            ___ j __ r..(i):
                 __ nums[i] > nums[j]:
-                    __ lengths[i] == lengths[j]+1:
+                    __ lengths[i] __ lengths[j]+1:
                         counts[i] += counts[j]
-                    elif lengths[i] < lengths[j]+1:
+                    ____ lengths[i] < lengths[j]+1:
                         lengths[i] = lengths[j] + 1
                         counts[i] = counts[j]
-            __ maxLen == lengths[i]:
+            __ maxLen __ lengths[i]:
                 res += counts[i]
-            elif maxLen < lengths[i]:
+            ____ maxLen < lengths[i]:
                 maxLen = lengths[i]
                 res = counts[i]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -37,11 +37,11 @@ class Solution(object):
             [2, 2, 2, 2, 2],
             [1, 2, 4, 3, 5, 4, 7, 2],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findNumberOfLIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

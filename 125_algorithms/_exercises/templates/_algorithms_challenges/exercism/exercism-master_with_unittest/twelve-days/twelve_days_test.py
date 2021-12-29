@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from twelve_days import sing, verse, verses
+____ twelve_days _______ sing, verse, verses
 
 
 class TwelveDaysTests(unittest.TestCase):
@@ -148,5 +148,5 @@ class TwelveDaysTests(unittest.TestCase):
         self.assertEqual(verses(1, 12), sing())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

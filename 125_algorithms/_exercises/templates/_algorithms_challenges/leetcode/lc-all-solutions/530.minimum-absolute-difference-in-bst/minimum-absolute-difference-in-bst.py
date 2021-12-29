@@ -11,17 +11,17 @@ class Solution(object):
     :type root: TreeNode
     :rtype: int
     """
-    self.val = None
+    self.val = N..
     self.ans = float("inf")
 
     ___ inorder(root):
-      __ not root:
-        return
+      __ n.. root:
+        r..
       inorder(root.left)
-      __ self.val is not None:
-        self.ans = min(self.ans, abs(root.val - self.val))
+      __ self.val __ n.. N..
+        self.ans = m..(self.ans, abs(root.val - self.val))
       self.val = root.val
       inorder(root.right)
 
     inorder(root)
-    return self.ans
+    r.. self.ans

@@ -5,7 +5,7 @@ ___ first_fit_decreasing_algorithm(capacities, bin_max_capacity
     solution_bins  []
 
     item_names  li__(capacities.keys())
-    sorted_items  sorted(item_names, keylambda x: capacities[x], reverseT..)
+    sorted_items  s..(item_names, keylambda x: capacities[x], reverseT..)
     print(sorted_items)
 
     ___ item __ sorted_items:

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import connect
+_______ connect
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -104,15 +104,15 @@ testcases = [
 
 class ConnectTest(unittest.TestCase):
     ___ test_game(self):
-        for testcase in testcases:
+        ___ testcase __ testcases:
             game = connect.ConnectGame(testcase["board"])
             winner = game.get_winner()
-            expected = testcase["winner"] __ testcase["winner"] else "None"
-            got = winner __ winner else "None"
+            expected = testcase["winner"] __ testcase["winner"] ____ "None"
+            got = winner __ winner ____ "None"
             self.assertEqual(winner, testcase["winner"],
                              "Test failed: %s, expected winner: %s, got: %s"
                              % (testcase["description"], expected, got))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

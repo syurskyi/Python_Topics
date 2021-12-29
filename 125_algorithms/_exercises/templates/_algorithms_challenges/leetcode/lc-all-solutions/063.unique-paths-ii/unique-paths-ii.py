@@ -4,28 +4,28 @@ class Solution(object):
     :type obstacleGrid: List[List[int]]
     :rtype: int
     """
-    __ not grid:
-      return 0
-    __ grid[0][0] == 1:
-      return 0
-    dp = [[0] * len(grid[0]) for _ in range(0, len(grid))]
-    dp[0][0] = 1 __ grid[0][0] == 0 else 0
-    for i in range(1, len(grid)):
-      __ grid[i][0] == 0:
+    __ n.. grid:
+      r.. 0
+    __ grid[0][0] __ 1:
+      r.. 0
+    dp = [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid))]
+    dp[0][0] = 1 __ grid[0][0] __ 0 ____ 0
+    ___ i __ r..(1, l..(grid)):
+      __ grid[i][0] __ 0:
         dp[i][0] = 1
-      else:
+      ____:
         break
 
-    for j in range(1, len(grid[0])):
-      __ grid[0][j] == 0:
+    ___ j __ r..(1, l..(grid[0])):
+      __ grid[0][j] __ 0:
         dp[0][j] = 1
-      else:
+      ____:
         break
 
-    for i in range(1, len(grid)):
-      for j in range(1, len(grid[0])):
-        __ grid[i][j] == 1:
+    ___ i __ r..(1, l..(grid)):
+      ___ j __ r..(1, l..(grid[0])):
+        __ grid[i][j] __ 1:
           dp[i][j] = 0
-        else:
+        ____:
           dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-    return dp[-1][-1]
+    r.. dp[-1][-1]

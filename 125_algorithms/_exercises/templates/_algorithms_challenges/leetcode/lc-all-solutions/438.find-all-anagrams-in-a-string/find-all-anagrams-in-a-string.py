@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution(object):
@@ -8,15 +8,15 @@ class Solution(object):
     :type p: str
     :rtype: List[int]
     """
-    sCount = Counter(s[:len(p) - 1])
+    sCount = Counter(s[:l..(p) - 1])
     pCount = Counter(p)
-    ans = []
+    ans    # list
 
-    for i in range(len(p) - 1, len(s)):
+    ___ i __ r..(l..(p) - 1, l..(s)):
       sCount[s[i]] += 1
-      __ sCount == pCount:
-        ans.append(i - len(p) + 1)
-      sCount[s[i - len(p) + 1]] -= 1
-      __ sCount[s[i - len(p) + 1]] == 0:
-        del sCount[s[i - len(p) + 1]]
-    return ans
+      __ sCount __ pCount:
+        ans.a..(i - l..(p) + 1)
+      sCount[s[i - l..(p) + 1]] -= 1
+      __ sCount[s[i - l..(p) + 1]] __ 0:
+        del sCount[s[i - l..(p) + 1]]
+    r.. ans

@@ -28,7 +28,7 @@ class Solution:
         :type s: str
         :rtype: bool
         """
-        return s in (s + s)[1:-1]
+        r.. s __ (s + s)[1:-1]
 
     ___ repeatedSubstringPattern_error(self, s):
         """
@@ -36,26 +36,26 @@ class Solution:
         :type s: str
         :rtype: bool
         """
-        __ not s:
-            return False
+        __ n.. s:
+            r.. False
         p1 = 0
         e = 1  # ending s[0:e] is the substring
         p2 = 1
-        while p2 < len(s):
-            __ s[p1] == s[p2]:
+        while p2 < l..(s):
+            __ s[p1] __ s[p2]:
                 p1 += 1
-                __ p1 == e:
+                __ p1 __ e:
                     p1 = 0
-            else:
+            ____:
                 p1 = 0
                 e = p2 + 1
 
             p2 += 1
 
-        return p2 == len(s) and p1 == 0 and e != len(s)
+        r.. p2 __ l..(s) and p1 __ 0 and e != l..(s)
 
 
-__ __name__ == "__main__":
-    assert Solution().repeatedSubstringPattern("abab") == True
-    assert Solution().repeatedSubstringPattern("abcd") == False
-    assert Solution().repeatedSubstringPattern("abacababacab") == True
+__ __name__ __ "__main__":
+    ... Solution().repeatedSubstringPattern("abab") __ True
+    ... Solution().repeatedSubstringPattern("abcd") __ False
+    ... Solution().repeatedSubstringPattern("abacababacab") __ True

@@ -28,8 +28,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -43,17 +43,17 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
 
-        __ root not in self.cache_rob:
+        __ root n.. __ self.cache_rob:
             val = max(
                 self.notrob(root),
                 root.val + self.notrob(root.left) + self.notrob(root.right)
             )
             self.cache_rob[root] = val
 
-        return self.cache_rob[root]
+        r.. self.cache_rob[root]
 
     ___ notrob(self, root):
         """
@@ -61,10 +61,10 @@ class Solution(object):
         :param root: TreeNode
         :return: int
         """
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
 
-        __ root not in self.cache_notrob:
+        __ root n.. __ self.cache_notrob:
             val = (
                 self.rob(root.left) +
                 self.rob(root.right)
@@ -72,7 +72,7 @@ class Solution(object):
 
             self.cache_notrob[root] = val
 
-        return self.cache_notrob[root]
+        r.. self.cache_notrob[root]
 
 
 class SolutionTLE(object):
@@ -81,27 +81,27 @@ class SolutionTLE(object):
         :type root: TreeNode
         :rtype: int
         """
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
 
-        return max(
+        r.. max(
             self.dorob(root),
             self.notrob(root)
         )
 
     ___ dorob(self, root):
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
 
-        return (
+        r.. (
             root.val +
             self.notrob(root.left) +
             self.notrob(root.right)
         )
 
     ___ notrob(self, root):
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
 
-        return (max(self.notrob(root.left), self.rob(root.left)) +
+        r.. (max(self.notrob(root.left), self.rob(root.left)) +
                     max(self.notrob(root.right), self.rob(root.right)))

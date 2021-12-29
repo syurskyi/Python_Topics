@@ -5,13 +5,13 @@ class Solution(object):
     :rtype: List[str]
     """
     d = {}
-    ans = []
-    for i in range(len(s) - 9):
+    ans    # list
+    ___ i __ r..(l..(s) - 9):
       key = s[i:i + 10]
-      __ key in d:
+      __ key __ d:
         d[key] += 1
-        __ d[key] == 2:
-          ans.append(key)
-      else:
+        __ d[key] __ 2:
+          ans.a..(key)
+      ____:
         d[key] = 1
-    return ans
+    r.. ans

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from island import island_size
+____ island _______ island_size
 
 rectangle = [[0, 1, 1, 0],
              [0, 1, 1, 0],
@@ -27,4 +27,4 @@ whole = [[1, 1, 1],
     (whole, 16),
 ])
 ___ test_island_size(map_, expected):
-    assert island_size(map_) == expected
+    ... island_size(map_) __ expected

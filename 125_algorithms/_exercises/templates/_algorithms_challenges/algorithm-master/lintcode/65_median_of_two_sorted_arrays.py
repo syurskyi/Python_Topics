@@ -1,7 +1,7 @@
 """
 Heap
 """
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -11,32 +11,32 @@ class Solution:
         :type b: list
         :rtype: float
         """
-        heap = []
+        heap    # list
         n = 0
 
-        for nums in (a, b):
-            __ not nums:
+        ___ nums __ (a, b):
+            __ n.. nums:
                 continue
 
-            n += len(nums)
+            n += l..(nums)
             heapq.heappush(heap, (nums[0], nums, 0))
 
-        __ n == 0:
-            return 0.0
+        __ n __ 0:
+            r.. 0.0
 
         num = 0
-        for _ in range((n + 1) // 2):
+        ___ _ __ r..((n + 1) // 2):
             num, nums, i = heapq.heappop(heap)
 
             i += 1
-            __ i < len(nums):
+            __ i < l..(nums):
                 heapq.heappush(heap, (nums[i], nums, i))
 
-        __ n & 1 == 1:
-            return num * 1.0
+        __ n & 1 __ 1:
+            r.. num * 1.0
 
         _num = heapq.heappop(heap)[0]
-        return (num + _num) / 2.0
+        r.. (num + _num) / 2.0
 
 
 """
@@ -49,14 +49,14 @@ class Solution:
     @return: a double whose format is *.5 or *.0
     """
     ___ findMedianSortedArrays(self, A, B):
-        n = len(A) + len(B)
+        n = l..(A) + l..(B)
 
         median = self.find_kth(A, 0, B, 0, n // 2 + 1)
-        __ n % 2 == 1:
-            return median
+        __ n % 2 __ 1:
+            r.. median
 
         _median = self.find_kth(A, 0, B, 0, n // 2)
-        return (median + _median) / 2.0
+        r.. (median + _median) / 2.0
 
     ___ find_kth(self, A, i, B, j, k):
         """
@@ -89,19 +89,19 @@ class Solution:
             since k == 1
             return min(4, 4) = `4`
         """
-        __ i >= len(A):
-            return B[j + k - 1]
-        __ j >= len(B):
-            return A[i + k - 1]
-        __ k == 1:
-            return min(A[i], B[j])
+        __ i >= l..(A):
+            r.. B[j + k - 1]
+        __ j >= l..(B):
+            r.. A[i + k - 1]
+        __ k __ 1:
+            r.. m..(A[i], B[j])
 
         _a = i + k // 2 - 1
         _b = j + k // 2 - 1
-        a = A[_a] __ _a < len(A) else float('inf')
-        b = B[_b] __ _b < len(B) else float('inf')
+        a = A[_a] __ _a < l..(A) ____ float('inf')
+        b = B[_b] __ _b < l..(B) ____ float('inf')
 
         __ a < b:
-            return self.find_kth(A, i + k // 2, B, j, k - k // 2)
-        else:
-            return self.find_kth(A, i, B, j + k // 2, k - k // 2)
+            r.. self.find_kth(A, i + k // 2, B, j, k - k // 2)
+        ____:
+            r.. self.find_kth(A, i, B, j + k // 2, k - k // 2)

@@ -10,33 +10,33 @@ class Solution(object):
         :type s: str
         :rtype: List[int]
         """
-        res = []
-        for i, c in enumerate(s):
-            __ c in ('+', '-', '*'):
+        res    # list
+        ___ i, c __ enumerate(s):
+            __ c __ ('+', '-', '*'):
                 res1 = self.diffWaysToCompute(s[:i])
                 res2 = self.diffWaysToCompute(s[i+1:])
-                for num1 in res1:
-                    for num2 in res2:
-                        __ c == '+':
-                            res.append(num1+num2)
-                        elif c == '-':
-                            res.append(num1-num2)
-                        else:
-                            res.append(num1*num2)
-        __ not res:
+                ___ num1 __ res1:
+                    ___ num2 __ res2:
+                        __ c __ '+':
+                            res.a..(num1+num2)
+                        ____ c __ '-':
+                            res.a..(num1-num2)
+                        ____:
+                            res.a..(num1*num2)
+        __ n.. res:
             res = [int(s)]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             '2-1-1',
             '2*3-4*5',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('input: %s' % s)
             result = self.diffWaysToCompute(s)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

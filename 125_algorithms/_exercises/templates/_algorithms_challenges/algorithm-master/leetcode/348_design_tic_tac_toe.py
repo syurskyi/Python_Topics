@@ -23,16 +23,16 @@ class TicTacToe(object):
                 1: Player 1 wins.
                 2: Player 2 wins.
         """
-        n = len(self.R)
-        delta = 1 __ player == self.PLER_A else -1
+        n = l..(self.R)
+        delta = 1 __ player __ self.PLER_A ____ -1
         self.R[x] += delta
         self.C[y] += delta
-        self.DR += delta __ x == y else 0  # x - y == 0
-        self.DL += delta __ x == n - 1 - y else 0  # x + y == n - 1
-        return (abs(self.R[x]) == n or
-                abs(self.C[y]) == n or
-                abs(self.DR) == n or
-                abs(self.DL) == n)
+        self.DR += delta __ x __ y ____ 0  # x - y == 0
+        self.DL += delta __ x __ n - 1 - y ____ 0  # x + y == n - 1
+        r.. (abs(self.R[x]) __ n o.
+                abs(self.C[y]) __ n o.
+                abs(self.DR) __ n o.
+                abs(self.DL) __ n)
 
 
 # Your TicTacToe object will be instantiated and called as such:

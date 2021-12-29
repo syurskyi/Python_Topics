@@ -1,7 +1,7 @@
 # DP : Top down Approach
 ___ get_max_profit_td(weight, price, n, capacity, values
 
-    __ n __ 0 or capacity __ 0:
+    __ n __ 0 o. capacity __ 0:
         values[n-1][capacity-1]  0
         r_ 0
 
@@ -26,7 +26,7 @@ ___ get_max_profit_bu(weight, price, n, capacity
 
     ___ i __ ra__(n+1
         ___ j __ ra__(capacity+1
-            __ i __ 0 or j __ 0 :
+            __ i __ 0 o. j __ 0 :
                 values[i][j]  0
             ____
                 incl  0

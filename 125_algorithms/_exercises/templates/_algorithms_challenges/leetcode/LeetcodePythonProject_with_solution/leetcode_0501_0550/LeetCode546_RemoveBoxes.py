@@ -10,36 +10,36 @@ class Solution(object):
         :type boxes: List[int]
         :rtype: int
         """
-        __ not boxes: return 0
-        n = len(boxes)
-        dp = [[[0]*n for _ in range(n)] for _ in range(n)]
-        return self.helper(dp, boxes, 0, n-1, 1)
+        __ n.. boxes: r.. 0
+        n = l..(boxes)
+        dp = [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
+        r.. self.helper(dp, boxes, 0, n-1, 1)
     
     ___ helper(self, dp, boxes, i, j, k):
         __ i > j:
-            return 0
-        elif i == j:
-            return k*k
-        elif dp[i][j][k] != 0:
-            return dp[i][j][k]
-        else:
+            r.. 0
+        ____ i __ j:
+            r.. k*k
+        ____ dp[i][j][k] != 0:
+            r.. dp[i][j][k]
+        ____:
             tmp = self.helper(dp, boxes, i+1, j, 1) + k*k
-            for m in range(i+1, j+1):
-                __ boxes[i] == boxes[m]:
+            ___ m __ r..(i+1, j+1):
+                __ boxes[i] __ boxes[m]:
                     tmp = max(tmp, self.helper(dp, boxes, i+1, m-1, 1)+\
                               self.helper(dp, boxes, m, j, k+1))
             dp[i][j][k] = tmp
-            return tmp
+            r.. tmp
     
     ___ test(self):
         testCases = [
             [1, 3, 2, 2, 2, 3, 4, 3, 1],
         ]
-        for boxes in testCases:
+        ___ boxes __ testCases:
             print('boxes: %s' % boxes)
             result = self.removeBoxes(boxes)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,4 +1,4 @@
-import random
+_______ random
 
 
 class Creature:
@@ -7,12 +7,12 @@ class Creature:
         self.level  the_level
 
     ___ __repr__(self):
-        return "Creature: {} of level {}".format(
+        r.. "Creature: {} of level {}".format(
             self.name, self.level
         )
 
     ___ get_defensive_roll(self):
-        return random.randint(1, 12) * self.level
+        r.. random.randint(1, 12) * self.level
 
 
 class Wizard(Creature):
@@ -30,16 +30,16 @@ class Wizard(Creature):
 
         __ my_roll > creature_roll:
             print("The wizard has handily triumphed over {}".format(creature.name))
-            return T..
-        else:
+            r.. T..
+        ____:
             print("The wizard has been DEFEATED!!!")
-            return F..
+            r.. F..
 
 
 class SmallAnimal(Creature):
     ___ get_defensive_roll(self):
         base_roll  super().get_defensive_roll()
-        return base_roll / 2
+        r.. base_roll / 2
 
 
 class Dragon(Creature):
@@ -56,7 +56,7 @@ class Dragon(Creature):
         # else:
         #     fire_modifier = 1
         # fire_modifier = VALUE_IF_TRUE if SOME TEST else VALUE IF FALSE
-        fire_modifier  5 __ self.breaths_fire else 1
+        fire_modifier  5 __ self.breaths_fire ____ 1
         scale_modifier  self.scaliness / 10
 
-        return base_roll * fire_modifier * scale_modifier
+        r.. base_roll * fire_modifier * scale_modifier

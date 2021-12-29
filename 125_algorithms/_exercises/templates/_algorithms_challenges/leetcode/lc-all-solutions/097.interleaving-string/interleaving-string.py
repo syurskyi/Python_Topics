@@ -7,33 +7,33 @@ class Solution(object):
     :rtype: bool
     """
     d = {}
-    s3 = list(s3)
-    __ len(s1) + len(s2) != len(s3):
-      return False
+    s3 = l..(s3)
+    __ l..(s1) + l..(s2) != l..(s3):
+      r.. False
 
     ___ dfs(s1, i, s2, j, d, path, s3):
-      __ (i, j) in d:
-        return d[(i, j)]
+      __ (i, j) __ d:
+        r.. d[(i, j)]
 
-      __ path == s3:
-        return True
+      __ path __ s3:
+        r.. True
 
-      __ i < len(s1):
-        __ s3[i + j] == s1[i]:
-          path.append(s1[i])
+      __ i < l..(s1):
+        __ s3[i + j] __ s1[i]:
+          path.a..(s1[i])
           __ dfs(s1, i + 1, s2, j, d, path, s3):
-            return True
+            r.. True
           path.pop()
           d[(i + 1, j)] = False
 
-      __ j < len(s2):
-        __ s3[i + j] == s2[j]:
-          path.append(s2[j])
+      __ j < l..(s2):
+        __ s3[i + j] __ s2[j]:
+          path.a..(s2[j])
           __ dfs(s1, i, s2, j + 1, d, path, s3):
-            return True
+            r.. True
           path.pop()
           d[(i, j + 1)] = False
 
-      return False
+      r.. False
 
-    return dfs(s1, 0, s2, 0, d, [], s3)
+    r.. dfs(s1, 0, s2, 0, d, [], s3)

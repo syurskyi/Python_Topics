@@ -1,13 +1,13 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ int_args(func):
     @wraps(func)
     ___ wrapper(*args, **kwargs):
-        __ not all(map(lambda x: isinstance(x, int), args)):
+        __ n.. a..(map(l.... x: isi..(x, int), args)):
             raise TypeError
-        elif any(map(lambda x: x < 0, args)):
+        ____ any(map(l.... x: x < 0, args)):
             raise ValueError
-        return func(*args, **kwargs)
-    return wrapper
+        r.. func(*args, **kwargs)
+    r.. wrapper
 #

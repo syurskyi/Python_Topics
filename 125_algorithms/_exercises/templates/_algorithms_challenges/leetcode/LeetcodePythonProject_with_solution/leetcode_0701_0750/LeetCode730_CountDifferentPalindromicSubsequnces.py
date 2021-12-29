@@ -10,15 +10,15 @@ class Solution(object):
         :rtype: int
         """
         s = S
-        n = len(s)
+        n = l..(s)
         MOD = 10**9+7
-        dp = [[0]*n for _ in range(n)]
-        for i in range(n):
+        dp = [[0]*n ___ _ __ r..(n)]
+        ___ i __ r..(n):
             dp[i][i] = 1
-        for l in range(1, n):
-            for i in range(n-l):
+        ___ l __ r..(1, n):
+            ___ i __ r..(n-l):
                 j = i+l
-                __ s[i] == s[j]:
+                __ s[i] __ s[j]:
                     low = i+1
                     high = j-1
                     while low <= high and s[low] != s[j]:
@@ -28,27 +28,27 @@ class Solution(object):
                     __ low > high:
                         # 'aba'
                         dp[i][j] = dp[i+1][j-1]*2+2
-                    elif low == high:
+                    ____ low __ high:
                         # 'aaa'
                         dp[i][j] = dp[i+1][j-1]*2+1
-                    else:
+                    ____:
                         # 'aacaa'
                         dp[i][j] = dp[i+1][j-1]*2-dp[low+1][high-1]
-                else:
+                ____:
                     dp[i][j] = dp[i+1][j]+dp[i][j-1]-dp[i+1][j-1]
                 dp[i][j] = dp[i][j]%MOD
-        return dp[0][-1]
+        r.. dp[0][-1]
     
     ___ test(self):
         testCases = [
             'bccb',
             'abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.countPalindromicSubsequences(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

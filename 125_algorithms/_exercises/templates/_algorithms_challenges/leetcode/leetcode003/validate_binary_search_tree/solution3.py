@@ -21,19 +21,19 @@ class Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST(self, root):
-        self.prev = None
-        return self.is_valid_bst_aux(root)
+        self.prev = N..
+        r.. self.is_valid_bst_aux(root)
 
     ___ is_valid_bst_aux(self, root):
-        __ root is None:
-            return True
-        else:
-            __ not self.is_valid_bst_aux(root.left):
-                return False
-            __ self.prev is not None:
+        __ root __ N..
+            r.. True
+        ____:
+            __ n.. self.is_valid_bst_aux(root.left):
+                r.. False
+            __ self.prev __ n.. N..
                 __ self.prev.val >= root.val:
-                    return False
+                    r.. False
             self.prev = root
-            __ not self.is_valid_bst_aux(root.right):
-                return False
-            return True
+            __ n.. self.is_valid_bst_aux(root.right):
+                r.. False
+            r.. True

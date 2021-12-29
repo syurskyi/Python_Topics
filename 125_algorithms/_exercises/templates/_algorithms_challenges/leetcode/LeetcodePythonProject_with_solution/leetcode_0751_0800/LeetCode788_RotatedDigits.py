@@ -10,15 +10,15 @@ class Solution(object):
         :rtype: int
         """
         cnt = 0
-        for num in range(1, N+1):
+        ___ num __ r..(1, N+1):
             __ self.checkNum(num):
                 cnt += 1
-        return cnt
+        r.. cnt
     
     ___ checkNum(self, num):
-        arr = list(str(num))
-        i, j = 0, len(arr)-1
-        arr0 = ['']*len(arr)
+        arr = l..(str(num))
+        i, j = 0, l..(arr)-1
+        arr0 = ['']*l..(arr)
         hashmap = {
             '1':'1',
             '2':'5',
@@ -29,13 +29,13 @@ class Solution(object):
             '0':'0',
         }
         while i <= j:
-            __ arr[i] in hashmap and arr[j] in hashmap:
+            __ arr[i] __ hashmap and arr[j] __ hashmap:
                 arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
                 i += 1
                 j -= 1
-            else:
-                return False
-        return arr0 != arr
+            ____:
+                r.. False
+        r.. arr0 != arr
     
     ___ test(self):
         testCases = [
@@ -43,11 +43,11 @@ class Solution(object):
             100,
             857,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.rotatedDigits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

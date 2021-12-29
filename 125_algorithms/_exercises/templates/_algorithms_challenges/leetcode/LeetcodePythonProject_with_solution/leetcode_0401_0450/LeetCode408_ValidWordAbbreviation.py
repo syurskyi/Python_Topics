@@ -7,35 +7,35 @@ Created on Apr 10, 2017
 class Solution(object):
     ___ validWordAbbreviation(self, word, abbr):
         i, j = 0, 0
-        while i < len(word) and j < len(abbr):
+        while i < l..(word) and j < l..(abbr):
             __ abbr[j].isdigit():
                 prev = j
-                while j+1 < len(abbr) and abbr[j+1].isdigit():
+                while j+1 < l..(abbr) and abbr[j+1].isdigit():
                     j+=1
-                __ abbr[prev:j+1].startswith('0'): return False
+                __ abbr[prev:j+1].startswith('0'): r.. False
                 num = int(abbr[prev:j+1])
                 i += num
                 j += 1
-            else:
+            ____:
                 __ word[i] != abbr[j]:
-                    return False
+                    r.. False
                 i+=1
                 j+=1
-        __ i != len(word) or j != len(abbr):
-            return False
-        return True
+        __ i != l..(word) o. j != l..(abbr):
+            r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
             ('internationalization', 'i12iz4n'),
             ('apple', 'a2e'),
         ]
-        for word, abbr in testCases:
+        ___ word, abbr __ testCases:
             print('word: %s' % word)
             print('abbr: %s' % abbr)
             result = self.validWordAbbreviation(word, abbr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

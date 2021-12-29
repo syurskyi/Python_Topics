@@ -128,7 +128,7 @@ ___ heapify(customList, n, i
 
 ___ heapSort(customList
     n  le_(customList)
-    ___ i __ ra__(in.(n/2)-1, -1, -1
+    ___ i __ ra__(__.(n/2)-1, -1, -1
         heapify(customList, n, i)
     
     ___ i __ ra__(n-1,0,-1

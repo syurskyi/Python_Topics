@@ -6,7 +6,7 @@ Created on Jan 31, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -17,18 +17,18 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root: return True
-        return self.helper(root.left, root.left)
+        __ n.. root: r.. True
+        r.. self.helper(root.left, root.left)
     
     ___ helper(self, left, right):
-        __ not left and not right:
-            return True
-        elif not left or not right:
-            return False
-        elif left.val != right.val:
-            return False
-        else:
-            return self.helper(left.left, right.right) and\
+        __ n.. left and n.. right:
+            r.. True
+        ____ n.. left o. n.. right:
+            r.. False
+        ____ left.val != right.val:
+            r.. False
+        ____:
+            r.. self.helper(left.left, right.right) and\
                 self.helper(left.right, right.left)
     
     ___ isSymmetric(self, root):
@@ -36,34 +36,34 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root: return True
-        stack = []
+        __ n.. root: r.. True
+        stack    # list
         __ root.left:
-            __ not root.right: return False
-            stack.append(root.left)
-            stack.append(root.right)
-        elif root.right:
-            return False
+            __ n.. root.right: r.. False
+            stack.a..(root.left)
+            stack.a..(root.right)
+        ____ root.right:
+            r.. False
         while stack:
-            __ len(stack)%2 != 0:
-                return False
+            __ l..(stack)%2 != 0:
+                r.. False
             right = stack.pop()
             left = stack.pop()
             __ right.val != left.val:
-                return False
+                r.. False
             __ left.left:
-                __ not right.right:
-                    return False
-                stack.append(left.left)
-                stack.append(right.right)
-            elif right.right:
-                return False
+                __ n.. right.right:
+                    r.. False
+                stack.a..(left.left)
+                stack.a..(right.right)
+            ____ right.right:
+                r.. False
             __ left.right:
-                __ not right.left:
-                    return False
-                stack.append(left.right)
-                stack.append(right.left)
-            elif right.left:
-                return False
-        return True
+                __ n.. right.left:
+                    r.. False
+                stack.a..(left.right)
+                stack.a..(right.left)
+            ____ right.left:
+                r.. False
+        r.. True
         

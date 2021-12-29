@@ -10,16 +10,16 @@ class Solution(object):
         :rtype: int
         """
         res = 0
-        m, n = len(grid), len(grid[0])
-        for i in range(m-1):
-            for j in range(i+1, m):
+        m, n = l..(grid), l..(grid[0])
+        ___ i __ r..(m-1):
+            ___ j __ r..(i+1, m):
                 counter = 0
-                for k in range(n):
-                    __ grid[i][k] == 1 and grid[j][k] == 1:
+                ___ k __ r..(n):
+                    __ grid[i][k] __ 1 and grid[j][k] __ 1:
                         counter += 1
                 __ counter > 0:
                     res += counter*(counter-1)//2
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -38,10 +38,10 @@ class Solution(object):
                 [1, 1, 1, 1],
             ],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             result = self.countCornerRectangles(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

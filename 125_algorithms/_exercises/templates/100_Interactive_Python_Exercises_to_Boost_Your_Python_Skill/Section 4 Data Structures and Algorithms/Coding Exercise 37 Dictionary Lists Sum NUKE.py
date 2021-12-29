@@ -1,5 +1,5 @@
 ___ foo(mydict):
     lst  []
-    for key, value in mydict.items():
+    ___ key, value __ mydict.items():
         lst  lst + value
-    return sum(lst)
+    r.. s..(lst)

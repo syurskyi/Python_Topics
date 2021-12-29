@@ -12,19 +12,19 @@ class Solution(object):
         :rtype: bool
         """
         hashmap = {}
-        for w1, w2 in pairs:
-            __ w1 not in hashmap:
+        ___ w1, w2 __ pairs:
+            __ w1 n.. __ hashmap:
                 hashmap[w1] = set()
-            __ w2 not in hashmap:
+            __ w2 n.. __ hashmap:
                 hashmap[w2] = set()
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
-        __ len(words1) != len(words2):
-            return False
-        for w1, w2 in zip(words1, words2):
-            __ w1 != w2 and (w1 not in hashmap or w2 not in hashmap[w1]):
-                return False
-        return True
+        __ l..(words1) != l..(words2):
+            r.. False
+        ___ w1, w2 __ zip(words1, words2):
+            __ w1 != w2 and (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]):
+                r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -39,7 +39,7 @@ class Solution(object):
                 [["great", "fine"], ["acting","drama"], ["skills","talent"]],
             ],
         ]
-        for words1, words2, pairs in testCases:
+        ___ words1, words2, pairs __ testCases:
             print('words1: %s' % words1)
             print('words2: %s' % words2)
             print('pairs: %s' % pairs)
@@ -47,5 +47,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

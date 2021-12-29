@@ -11,12 +11,12 @@ class Solution:
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         ans = float('-inf')
         S = Smin = 0
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             S += A[i]
 
             __ S - Smin > ans:
@@ -29,7 +29,7 @@ class Solution:
             __ S < Smin:
                 Smin = S
 
-        return ans
+        r.. ans
 
 
 """
@@ -45,15 +45,15 @@ class Solution:
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         ans = float('-inf')
 
         Smin = 0
         S = [0] * (n + 1)
-        for i in range(1, n + 1):
+        ___ i __ r..(1, n + 1):
             S[i] = S[i - 1] + A[i - 1]
 
             __ S[i] - Smin > ans:
@@ -66,4 +66,4 @@ class Solution:
             __ S[i] < Smin:
                 Smin = S[i]
 
-        return ans
+        r.. ans

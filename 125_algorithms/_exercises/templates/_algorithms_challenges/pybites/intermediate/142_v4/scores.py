@@ -1,8 +1,8 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
 
 MIN_SCORE = 4
-DICE_VALUES = range(1, 7)
+DICE_VALUES = r..(1, 7)
 
 Player = namedtuple('Player', 'name scores')
 
@@ -17,10 +17,10 @@ ___ calculate_score(scores):
 
        Returns int of the sum of the scores.
     """
-    __ not all(s in range(1, 7) for s in scores):
+    __ n.. a..(s __ r..(1, 7) ___ s __ scores):
         raise ValueError
 
-    return sum(s for s in scores __ s >= MIN_SCORE)
+    r.. s..(s ___ s __ scores __ s >= MIN_SCORE)
 
 
 ___ get_winner(players):
@@ -41,7 +41,7 @@ ___ get_winner(players):
        output:
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
-    __ not all(len(x.scores) == len(players[0].scores) for x in players[1:]):
+    __ n.. a..(l..(x.scores) __ l..(players[0].scores) ___ x __ players[1:]):
         raise ValueError
 
-    return max(players, key=lambda x: calculate_score(x.scores))
+    r.. max(players, key=l.... x: calculate_score(x.scores))

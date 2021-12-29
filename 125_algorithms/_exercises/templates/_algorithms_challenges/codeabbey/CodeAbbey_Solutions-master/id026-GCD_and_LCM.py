@@ -1,16 +1,16 @@
 ___ lcm(a,b): # Least Common Multiple
-        return(a * b / gcd(a, b))
+        r..(a * b / gcd(a, b))
         
 ___ gcd(a,b): # Greatest Common Divisor
         while b:      
                 a, b = b, a % b
-        return a
+        r.. a
 
 ___ findDivisors(pairs):
-        answer = []
-        for pair in range(pairs):
-                a,b = raw_input().split()
+        answer    # list
+        ___ pair __ r..(pairs):
+                a,b = raw_input().s..
                 a,b = int(a), int(b)
-                answer.append('('+str(gcd(a,b))+' '+str(lcm(a,b))+')')
+                answer.a..('('+str(gcd(a,b))+' '+str(lcm(a,b))+')')
         print(' '.join(answer))
 findDivisors(input())

@@ -45,14 +45,14 @@ Each node will have a unique integer value from 0 to 1000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.prev = None
-        self.root = None
+        self.prev = N..
+        self.root = N..
 
     ___ increasingBST(self, root: TreeNode) -> TreeNode:
         """
@@ -60,18 +60,18 @@ class Solution:
         in-order is easy
         """
         self.dfs(root)
-        return self.root
+        r.. self.root
 
     ___ dfs(self, node):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         self.dfs(node.left)
-        __ not self.prev:
+        __ n.. self.prev:
             self.root = node
-        else:
+        ____:
             self.prev.right = node
-            node.left = None  # need test case to test it
+            node.left = N..  # need test case to test it
 
         self.prev = node
         self.dfs(node.right)

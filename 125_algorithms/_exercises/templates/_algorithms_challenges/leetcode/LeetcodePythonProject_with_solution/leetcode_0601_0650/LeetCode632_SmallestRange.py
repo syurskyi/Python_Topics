@@ -9,21 +9,21 @@ class Solution(object):
         :type nums: List[List[int]]
         :rtype: List[int]
         """
-        import heapq
-        pq = [(arr[0], i, 0) for i, arr in enumerate(nums)]
+        _______ heapq
+        pq = [(arr[0], i, 0) ___ i, arr __ enumerate(nums)]
         heapq.heapify(pq)
         res = [float('-inf'), float('inf')]
-        right = max([arr[0] for arr in nums])
+        right = max([arr[0] ___ arr __ nums])
         while pq:
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
                 res = [left, right]
-            __ j+1 == len(nums[i]):
-                return res
+            __ j+1 __ l..(nums[i]):
+                r.. res
             v = nums[i][j+1]
             right = max(right, v)
             heapq.heappush(pq, (v, i, j+1))
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -33,11 +33,11 @@ class Solution(object):
                 [5, 18, 22, 30],
             ],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.smallestRange(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

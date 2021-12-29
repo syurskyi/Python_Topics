@@ -43,18 +43,18 @@ can only load at most one row of the matrix into the memory at once?
 What if the matrix is so large that you can only load up a partial row into the
 memory at once?
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
-        m, n = len(matrix), len(matrix[0])
-        for i in range(1, m):
-            for j in range(1, n):
+        m, n = l..(matrix), l..(matrix[0])
+        ___ i __ r..(1, m):
+            ___ j __ r..(1, n):
                 __ matrix[i][j] != matrix[i-1][j-1]:
-                    return False
+                    r.. False
 
-        return True
+        r.. True
 
     ___ isToeplitzMatrix_complex(self, matrix: List[List[int]]) -> bool:
         """
@@ -62,26 +62,26 @@ class Solution:
 
         need a good way to go through the matrix
         """
-        m, n = len(matrix), len(matrix[0])
-        for j in range(n):
+        m, n = l..(matrix), l..(matrix[0])
+        ___ j __ r..(n):
             r = 0
             c = j
             cur = matrix[r][c]
             while r < m and c < n:
                 __ cur != matrix[r][c]:
-                    return False
+                    r.. False
                 r += 1
                 c += 1
 
-        for i in range(1, m):
+        ___ i __ r..(1, m):
             r = i
             c = 0
             cur = matrix[r][c]
             while r < m and c < n:
                 __ cur != matrix[r][c]:
-                    return False
+                    r.. False
 
                 r += 1
                 c += 1
 
-        return True
+        r.. True

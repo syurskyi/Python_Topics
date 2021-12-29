@@ -8,11 +8,11 @@ ___ positive_divide(numerator, denominator):
         __ result < 0:
             raise ValueError("NEgative value")
     except ZeroDivisionError:
-        return 0
+        r.. 0
     except TypeError:
         raise
-    else:
-        return result
+    ____:
+        r.. result
 
 
 

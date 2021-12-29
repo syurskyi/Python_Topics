@@ -1,5 +1,5 @@
-import requests
-from collections import Counter
+_______ requests
+____ collections _______ Counter
 
 STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
@@ -17,17 +17,17 @@ ___ _cap_str_to_mln_float(cap):
        - if 'M' in cap value, strip it off and return value as float,
        - if 'B', strip it off, multiply by 1,000 and return
          value as float"""
-    __ cap == 'n/a':
-        return 0
+    __ cap __ 'n/a':
+        r.. 0
 
 
     cap = cap.lstrip('$')
-    __ 'M' in cap:
+    __ 'M' __ cap:
         value = float(cap.rstrip('M'))
-    elif 'B' in cap:
+    ____ 'B' __ cap:
         value = float(cap.rstrip('B')) * 1000
 
-    return value
+    r.. value
 
 
 
@@ -37,12 +37,12 @@ ___ get_industry_cap(industry):
        return a float with 2 digit precision"""
 
     total = 0
-    for company in data:
-        __ company['industry'] == industry:
+    ___ company __ data:
+        __ company['industry'] __ industry:
             total += _cap_str_to_mln_float(company['cap'])
 
 
-    return round(total,2)
+    r.. round(total,2)
 
            
 
@@ -51,7 +51,7 @@ ___ get_stock_symbol_with_highest_cap():
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
 
-    return max(data,key=lambda x: _cap_str_to_mln_float(x['cap']))['symbol']
+    r.. max(data,key=l.... x: _cap_str_to_mln_float(x['cap']))['symbol']
 
 
 ___ get_sectors_with_max_and_min_stocks():
@@ -59,7 +59,7 @@ ___ get_sectors_with_max_and_min_stocks():
        discard n/a"""
     counts = Counter()
 
-    for company in data:
+    ___ company __ data:
         sector = company['sector']
         __ sector != 'n/a':
             counts[company['sector']] += 1
@@ -67,4 +67,4 @@ ___ get_sectors_with_max_and_min_stocks():
 
     sector_counts = counts.most_common()
 
-    return sector_counts[0][0],sector_counts[-1][0]
+    r.. sector_counts[0][0],sector_counts[-1][0]

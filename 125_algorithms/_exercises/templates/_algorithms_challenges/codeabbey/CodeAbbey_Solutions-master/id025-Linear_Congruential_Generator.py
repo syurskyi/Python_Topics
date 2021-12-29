@@ -1,13 +1,13 @@
 # Python 2.7
 
 ___ find_nth(entries):
-    answer = []
-    for x in range(entries):
-        A, C, M, X0, N = [int(x) for x in raw_input().split()]
+    answer    # list
+    ___ x __ r..(entries):
+        A, C, M, X0, N = [int(x) ___ x __ raw_input().s.. ]
         x_cur = X0
-        for x in range(N):
+        ___ x __ r..(N):
             x_next = (A * x_cur + C) % M
             x_cur = x_next
-        answer.append(str(x_cur))
+        answer.a..(str(x_cur))
     print(' '.join(answer))
 find_nth(input())

@@ -4,22 +4,22 @@ class Solution:
         :type nums: list[int]
         :rtype: list[list[int]]
         """
-        __ not nums:
-            return [[]]
+        __ n.. nums:
+            r.. [[]]
 
-        ans = []
+        ans    # list
 
         nums.sort()
         self.dfs(nums, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, nums, ans, path):
-        __ not nums:
-            ans.append(path[:])
-            return
+        __ n.. nums:
+            ans.a..(path[:])
+            r..
 
-        for i in range(len(nums)):
-            path.append(nums[i])
+        ___ i __ r..(l..(nums)):
+            path.a..(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()

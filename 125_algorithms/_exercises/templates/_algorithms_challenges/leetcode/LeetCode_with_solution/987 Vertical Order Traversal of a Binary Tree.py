@@ -45,32 +45,32 @@ Each node's value will be between 0 and 1000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
     ___ __init__(self):
-        self.mp = defaultdict(list)  # element (-Y, val)  # from left to right, top to bottom
+        self.mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal(self, root: TreeNode) -> List[List[int]]:
         self.dfs(root, 0, 0)
-        ret = []
-        mn = min(self.mp)
+        ret    # list
+        mn = m..(self.mp)
         mx = max(self.mp)
-        for i in range(mn, mx+1):
-            ret.append([
+        ___ i __ r..(mn, mx+1):
+            ret.a..([
                 val
-                for _, val in sorted(self.mp[i])
+                ___ _, val __ s..(self.mp[i])
             ])
-        return ret
+        r.. ret
 
     ___ dfs(self, node, x, y):
-        __ not node:
-            return
-        self.mp[x].append((-y, node.val))
+        __ n.. node:
+            r..
+        self.mp[x].a..((-y, node.val))
         self.dfs(node.left, x-1, y-1)
         self.dfs(node.right, x+1, y-1)

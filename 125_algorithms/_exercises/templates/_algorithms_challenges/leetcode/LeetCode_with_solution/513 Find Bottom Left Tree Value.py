@@ -31,8 +31,8 @@ Output:
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -46,12 +46,12 @@ class Solution:
         q = [root]
         while q:
             ret = q[0].val
-            cur_q = []
-            for e in q:
+            cur_q    # list
+            ___ e __ q:
                 __ e.left:
-                    cur_q.append(e.left)
+                    cur_q.a..(e.left)
                 __ e.right:
-                    cur_q.append(e.right)
+                    cur_q.a..(e.right)
             q = cur_q
 
-        return ret
+        r.. ret

@@ -1,4 +1,4 @@
-from itertools import chain
+____ itertools _______ chain
 
 cars = {
     'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],
@@ -13,41 +13,41 @@ ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models
        (original order)"""
     cars_str = ''
-    for car in cars['Jeep']:
+    ___ car __ cars['Jeep']:
         __ car != cars['Jeep'][0]:
             cars_str += ', '
         cars_str += car
-    return cars_str
+    r.. cars_str
 
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    carlist = []
-    for car in cars:
+    carlist    # list
+    ___ car __ cars:
         #print(car)
-        carlist.append(cars[car][0])
-    return carlist
+        carlist.a..(cars[car][0])
+    r.. carlist
 
 
 ___ get_all_matching_models(cars=cars, grep='trail'):
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    greplist = []
-    for car in cars:
-        for model in cars[car]:
-            __ grep.upper() in model.upper():
-                greplist.append(model)
-    return sorted(greplist)
+    greplist    # list
+    ___ car __ cars:
+        ___ model __ cars[car]:
+            __ grep.upper() __ model.upper():
+                greplist.a..(model)
+    r.. s..(greplist)
 
 
 ___ sort_car_models(cars=cars):
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
     newdict = {}
-    for car in cars:
-        newdict[car] = sorted(cars[car])
-    return newdict
+    ___ car __ cars:
+        newdict[car] = s..(cars[car])
+    r.. newdict
 
 
-print(list(chain.from_iterable(cars.values())))
+print(l..(chain.from_iterable(cars.values())))

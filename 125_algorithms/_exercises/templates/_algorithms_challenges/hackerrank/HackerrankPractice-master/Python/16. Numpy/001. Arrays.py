@@ -2,11 +2,11 @@
 # Score: 10
 
 
-import numpy
+_______ numpy
 
 
 ___ arrays(arr):
-    return numpy.array(arr[::-1], float)
+    r.. numpy.array(arr[::-1], float)
 
 
 arr = input().strip().split(' ')

@@ -10,8 +10,8 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -20,31 +20,31 @@ class Solution(object):
 
     ___ isBalanced(self, root):
         self.fathom(root, 0)
-        return self._is_balanced(root, 0)
+        r.. self._is_balanced(root, 0)
 
     ___ _is_balanced(self, cur, depth):
         """
         :param depth: depth from root to current node.
         """
-        __ not cur:
-            return True
+        __ n.. cur:
+            r.. True
 
         h1 = h2 = depth
         __ cur.left: h1 = self.depth_bottom[cur.left]
         __ cur.right: h2 = self.depth_bottom[cur.right]
 
         __ abs(h1 - h2) > 1:
-            return False
+            r.. False
 
-        return all([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
+        r.. a..([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
 
     ___ fathom(self, root, depth):
-        __ not root:
-            return depth-1
+        __ n.. root:
+            r.. depth-1
 
         ret = max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
         self.depth_bottom[root] = ret
-        return ret
+        r.. ret
 
 
 class SolutionSlow(object):
@@ -55,20 +55,20 @@ class SolutionSlow(object):
         :param root: TreeNode
         :return: boolean
         """
-        __ not root:
-            return True
+        __ n.. root:
+            r.. True
         __ abs(self.fathom(root.left, 0)-self.fathom(root.right, 0)) > 1:
-            return False
+            r.. False
 
         __ self.isBalanced(root.left) and self.isBalanced(root.right):
-            return True
-        else:
-            return False
+            r.. True
+        ____:
+            r.. False
 
     ___ fathom(self, root, depth):
         """
         DFS
         """
-        __ not root:
-            return depth-1  # test cases
-        return max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        __ n.. root:
+            r.. depth-1  # test cases
+        r.. max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))

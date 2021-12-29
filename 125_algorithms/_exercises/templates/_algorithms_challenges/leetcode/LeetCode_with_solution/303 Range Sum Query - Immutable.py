@@ -22,9 +22,9 @@ class NumArray(object):
         dp
         :type nums: List[int]
         """
-        n = len(nums)
-        self.F = [0 for _ in xrange(n+1)]
-        for i in xrange(1, n+1):
+        n = l..(nums)
+        self.F = [0 ___ _ __ xrange(n+1)]
+        ___ i __ xrange(1, n+1):
             self.F[i] = self.F[i-1] + nums[i-1]
 
     ___ sumRange(self, i, j):
@@ -34,4 +34,4 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        return self.F[j+1] - self.F[i]
+        r.. self.F[j+1] - self.F[i]

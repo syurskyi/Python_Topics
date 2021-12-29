@@ -18,8 +18,8 @@ Example 2:
 Input: [5,4,3,2,1]
 Output: false
 """
-from typing import List
-from bisect import bisect_left
+____ typing _______ List
+____ bisect _______ bisect_left
 
 
 class Solution:
@@ -28,11 +28,11 @@ class Solution:
         Patience sort
         LIS dp with binary search
         """
-        F = [float('inf') for _ in range(3)]
-        for n in nums:
+        F = [float('inf') ___ _ __ r..(3)]
+        ___ n __ nums:
             i = bisect_left(F, n)
             __ i >= 2:
-                return True
+                r.. True
             F[i] = n
 
-        return False
+        r.. False

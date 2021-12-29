@@ -6,9 +6,9 @@ ValueError with a meaningfull error message if the
 input turns out to be malformed.
 """
 
-import unittest
+_______ unittest
 
-from minesweeper import board
+____ minesweeper _______ board
 
 
 class MinesweeperTest(unittest.TestCase):
@@ -156,5 +156,5 @@ class MinesweeperTest(unittest.TestCase):
         self.assertRaises(ValueError, board, inp)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

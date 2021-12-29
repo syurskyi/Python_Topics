@@ -5,14 +5,14 @@ class Solution:
     @return: an array of string
     """
     ___ topKFrequentWords(self, words, k):
-        __ not words or not k:
-            return []
+        __ n.. words o. n.. k:
+            r.. []
 
         F = {}
-        for word in words:
+        ___ word __ words:
             F[word] = F.get(word, 0) + 1
 
-        W = [(freq, word) for word, freq in F.items()]
-        W.sort(key=lambda item: (-item[0], item[1]))
+        W = [(freq, word) ___ word, freq __ F.items()]
+        W.sort(key=l.... item: (-item[0], item[1]))
 
-        return [W[i][1] for i in range(k)]
+        r.. [W[i][1] ___ i __ r..(k)]

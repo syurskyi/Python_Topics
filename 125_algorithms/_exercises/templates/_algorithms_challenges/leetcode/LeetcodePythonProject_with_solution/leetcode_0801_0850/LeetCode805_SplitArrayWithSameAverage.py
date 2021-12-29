@@ -10,27 +10,27 @@ class Solution(object):
         :rtype: bool
         """
         arr = A
-        __ len(arr) == 1: return False
+        __ l..(arr) __ 1: r.. False
         sumA = 0
-        for num in arr:
+        ___ num __ arr:
             sumA += num
         arr.sort()
-        for lenOfB in range(1, len(arr)//2+1):
-            __ (sumA*lenOfB)%len(arr) == 0:
-                __ self.check(arr, (sumA*lenOfB)/len(arr), lenOfB, 0):
-                    return True
-        return False
+        ___ lenOfB __ r..(1, l..(arr)//2+1):
+            __ (sumA*lenOfB)%l..(arr) __ 0:
+                __ self.check(arr, (sumA*lenOfB)/l..(arr), lenOfB, 0):
+                    r.. True
+        r.. False
     
     ___ check(self, arr, leftSum, leftNum, startIdx):
-        __ leftNum == 0: return leftSum == 0
+        __ leftNum __ 0: r.. leftSum __ 0
         __ arr[startIdx] > leftSum/leftNum:
-            return False
-        for i in range(startIdx, len(arr)-leftNum+1):
-            __ i > startIdx and arr[i] == arr[i-1]:
+            r.. False
+        ___ i __ r..(startIdx, l..(arr)-leftNum+1):
+            __ i > startIdx and arr[i] __ arr[i-1]:
                 continue
             __ self.check(arr, leftSum-arr[i], leftNum-1, i+1):
-                return True
-        return False
+                r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -38,12 +38,12 @@ class Solution(object):
             [11,1,15,2,14,16,8,9,4],
             [4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 5],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             print('arr: %s' % arr)
             result = self.splitArraySameAverage(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

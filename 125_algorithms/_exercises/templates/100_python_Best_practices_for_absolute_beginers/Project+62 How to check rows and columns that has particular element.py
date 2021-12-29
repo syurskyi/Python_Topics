@@ -1,28 +1,28 @@
-from random import random
+____ random _______ random
 
 row  5
 col  10
 matrix  []
-for i in range(row):
+___ i __ r..(row):
     myrow  []
-    for j in range(col):
-        myrow.append(i..(random()*50)+10)
-    matrix.append(myrow)
+    ___ j __ r..(col):
+        myrow.a..(i..(random()*50)+10)
+    matrix.a..(myrow)
 
-for myrow in matrix:
+___ myrow __ matrix:
     print(myrow)
 
 num  i..(input("Range of numbers(10-50): "))
 
 print("Rows: ", end' ')
-for i in range(row):
-    __ num in matrix[i]:
+___ i __ r..(row):
+    __ num __ matrix[i]:
         print(i,end' ')
 print()
 
 print("Columns: ",end' ')
-for j in range(col):
-    for i in range(row):
+___ j __ r..(col):
+    ___ i __ r..(row):
         __ matrix[i][j] __ num:
             print(j, end' ')
             _____

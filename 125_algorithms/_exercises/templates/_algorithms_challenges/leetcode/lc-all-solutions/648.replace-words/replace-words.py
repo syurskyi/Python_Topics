@@ -6,31 +6,31 @@ class TrieNode(object):
 
 
 class Solution(object):
-  ___ replaceWords(self, dict, sentence):
+  ___ replaceWords(self, d.., sentence):
     """
     :type dict: List[str]
     :type sentence: str
     :rtype: str
     """
     root = TrieNode()
-    for word in dict:
+    ___ word __ d..:
       p = root
-      for c in word:
-        __ c not in p.children:
+      ___ c __ word:
+        __ c n.. __ p.children:
           p.children[c] = TrieNode()
         p = p.children[c]
       p.isWord = True
       p.word = word
 
-    words = sentence.split()
-    for i in range(len(words)):
+    words = sentence.s..
+    ___ i __ r..(l..(words)):
       p = root
-      for c in words[i]:
-        __ c in p.children:
+      ___ c __ words[i]:
+        __ c __ p.children:
           p = p.children[c]
           __ p.isWord:
             words[i] = p.word
             break
-        else:
+        ____:
           break
-    return " ".join(words)
+    r.. " ".join(words)

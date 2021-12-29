@@ -14,16 +14,16 @@ class Solution:
     @return: true if they are identical, or false.
     """
     ___ isIdentical(self, A, B):
-        __ not A and not B:
-            return True
+        __ n.. A and n.. B:
+            r.. True
 
-        __ not A or not B:
-            return False
+        __ n.. A o. n.. B:
+            r.. False
 
         __ A.val != B.val:
-            return False
+            r.. False
 
-        return (
+        r.. (
             self.isIdentical(A.left, B.left) and
             self.isIdentical(A.right, B.right)
         )

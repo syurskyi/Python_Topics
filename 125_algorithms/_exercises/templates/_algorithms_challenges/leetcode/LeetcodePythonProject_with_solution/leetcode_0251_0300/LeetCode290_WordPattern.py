@@ -13,14 +13,14 @@ class Solution(object):
         hashmap = {}
         hashset = set()
         arr = s.split(' ')
-        __ len(arr) != len(pattern):
-            return False
-        for p, s0 in zip(pattern, arr):
-            __ p in hashmap and hashmap[p] == s0:
+        __ l..(arr) != l..(pattern):
+            r.. False
+        ___ p, s0 __ zip(pattern, arr):
+            __ p __ hashmap and hashmap[p] __ s0:
                 continue
-            elif p not in hashmap and s0 not in hashset:
+            ____ p n.. __ hashmap and s0 n.. __ hashset:
                 hashset.add(s0)
                 hashmap[p] = s0
-            else:
-                return False
-        return True
+            ____:
+                r.. False
+        r.. True

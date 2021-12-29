@@ -13,7 +13,7 @@ class Solution:
                 self.square_sum(fast)
             )
 
-        return True __ slow == 1 else False
+        r.. True __ slow __ 1 ____ False
 
     ___ square_sum(self, a):
         res = b = 0
@@ -23,4 +23,4 @@ class Solution:
             res += b * b
             a //= 10
 
-        return res
+        r.. res

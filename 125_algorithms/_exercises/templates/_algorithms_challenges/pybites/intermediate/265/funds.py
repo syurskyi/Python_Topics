@@ -11,12 +11,12 @@ ___ max_fund(village):
 
     best_start = best_end = current_start= current_end = -1
 
-    for i,value in enumerate(village):
+    ___ i,value __ enumerate(village):
         value = village[i]
         __ value >= current_sum + value:
             current_start= current_end = i
             current_sum = value
-        else:
+        ____:
             current_sum += value
             current_end += 1
 
@@ -26,11 +26,11 @@ ___ max_fund(village):
             best_start,best_end = current_start,current_end
 
 
-    __ best_sum == 0:
+    __ best_sum __ 0:
         print(IMPOSSIBLE)
 
 
-    return (best_sum,best_start + 1,best_end + 1)
+    r.. (best_sum,best_start + 1,best_end + 1)
 
 
 

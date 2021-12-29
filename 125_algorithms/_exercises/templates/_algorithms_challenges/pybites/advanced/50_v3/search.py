@@ -1,7 +1,7 @@
-from collections import namedtuple
-from datetime import date
+____ collections _______ namedtuple
+____ datetime _______ date
 
-import feedparser
+_______ feedparser
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
@@ -14,7 +14,7 @@ ___ _convert_struct_time_to_dt(stime):
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
     -> date(2016, 12, 28)
     """
-    return date(year=stime.tm_year, month=stime.tm_mon, day=stime.tm_mday)
+    r.. date(year=stime.tm_year, month=stime.tm_mon, day=stime.tm_mday)
 
 
 ___ get_feed_entries(feed=FEED):
@@ -22,13 +22,13 @@ ___ get_feed_entries(feed=FEED):
        Return a list of Entry namedtuples (date = date, drop time part)
     """
     f = feedparser.parse(feed)
-    result = []
-    for item in f.entries:
-        result.append(Entry(_convert_struct_time_to_dt(item.published_parsed),
+    result    # list
+    ___ item __ f.entries:
+        result.a..(Entry(_convert_struct_time_to_dt(item.published_parsed),
                             item.title,
                             item.link,
-                            [t.term.lower() for t in item.tags]))
-    return result
+                            [t.term.lower() ___ t __ item.tags]))
+    r.. result
 
 
 ___ filter_entries_by_tag(search, entry):
@@ -42,11 +42,11 @@ ___ filter_entries_by_tag(search, entry):
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    __ '&' in search:
-        return all(tag.lower() in entry.tags for tag in search.split('&'))
-    __ '|' in search:
-        return any(tag.lower() in entry.tags for tag in search.split('|'))
-    return search.lower() in entry.tags
+    __ '&' __ search:
+        r.. a..(tag.lower() __ entry.tags ___ tag __ search.split('&'))
+    __ '|' __ search:
+        r.. any(tag.lower() __ entry.tags ___ tag __ search.split('|'))
+    r.. search.lower() __ entry.tags
 
 
 ___ main():
@@ -64,17 +64,17 @@ ___ main():
     entries = get_feed_entries()
     while True:
         term = input('Search for (q for exit): ')
-        __ term == '':
+        __ term __ '':
             print('Please provide a search term')
             continue
-        __ term == 'q':
+        __ term __ 'q':
             print('Bye')
             break
-        matches = sorted([entry for entry in entries __ filter_entries_by_tag(term, entry)])
-        for match in matches:
+        matches = s..([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
+        ___ match __ matches:
             print(f'{match.date:10} | {match.title:50} | {match.link}')
-        print(f'\n{len(matches)} entr{"y" __ len(matches) == 1 else "ies"} matched')
+        print(f'\n{l..(matches)} entr{"y" __ l..(matches) __ 1 ____ "ies"} matched')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

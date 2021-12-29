@@ -1,4 +1,4 @@
-from collections import OrderedDict
+____ collections _______ OrderedDict
 """
 You are given a list of integers. Write code to find the majority and minorty numbers in that list.
 Definition: a majority number is the one appearing most frequently, a minority number appears least frequently.
@@ -32,20 +32,20 @@ ___ major_n_minor(numbers):
     # A: Zadne z powyzszego. Ordered znaczy, ze zachowana jest kolejnosc podczas wstawiania.
 
     d = OrderedDict()
-    for num in numbers:
+    ___ num __ numbers:
         try:
             d[num] += 1
         except:
             d[num] = 1
     #print(d)
-    dict = {}
-    for num in numbers:
+    d.. = {}
+    ___ num __ numbers:
         try:
-            dict[num] += 1
+            d..[num] += 1
         except:
-            dict[num] = 1
-    sort = sorted(dict.items(), key=lambda x: x[1] )
-    return sort[-1][0], sort[0][0]
+            d..[num] = 1
+    sort = s..(d...items(), key=l.... x: x[1] )
+    r.. sort[-1][0], sort[0][0]
     # difference between for i in d:
     # for i in d.items(): ?
     # return (next((iter(reversed(sor.items()))))[0], next(iter(sor.items()))[0] )

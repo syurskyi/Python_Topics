@@ -14,26 +14,26 @@ class Solution(object):
         :type upper: int
         :rtype: List[str]
         """
-        n = len(nums)
-        ret = []
-        __ not nums:
-            ret.append([lower, upper])
-            return map(self.mapper, ret)
+        n = l..(nums)
+        ret    # list
+        __ n.. nums:
+            ret.a..([lower, upper])
+            r.. map(self.mapper, ret)
 
         __ nums[0] > lower:
-            ret.append([lower, nums[0]-1])
+            ret.a..([lower, nums[0]-1])
 
-        for i in xrange(1, n):
+        ___ i __ xrange(1, n):
             __ nums[i] > nums[i-1]+1:
-                ret.append([nums[i-1]+1, nums[i]-1])
+                ret.a..([nums[i-1]+1, nums[i]-1])
 
         __ upper > nums[-1]:
-            ret.append([nums[-1]+1, upper])
+            ret.a..([nums[-1]+1, upper])
 
-        return map(self.mapper, ret)
+        r.. map(self.mapper, ret)
 
     ___ mapper(self, x):
-        __ x[0] == x[1]:
-            return "%d" % x[0]
-        else:
-            return "%d->%d" % tuple(x)
+        __ x[0] __ x[1]:
+            r.. "%d" % x[0]
+        ____:
+            r.. "%d->%d" % tuple(x)

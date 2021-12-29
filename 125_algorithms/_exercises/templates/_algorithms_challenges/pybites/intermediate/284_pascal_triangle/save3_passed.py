@@ -1,17 +1,17 @@
-from typing import List
+____ typing _______ List
 
 ___ pascal(N: int) -> List[int]:
     """
     Return the Nth row of Pascal triangle
     """
-    __ N == 0:
-        return []
-    __ N == 1:
-        return [1]
-    elif N > 1:
+    __ N __ 0:
+        r.. []
+    __ N __ 1:
+        r.. [1]
+    ____ N > 1:
         line = [1]
         previous_line = pascal(N - 1)
-        for i in range(len(previous_line) - 1):
-            line.append(previous_line[i] + previous_line[i + 1])
+        ___ i __ r..(l..(previous_line) - 1):
+            line.a..(previous_line[i] + previous_line[i + 1])
         line += [1]
-    return line
+    r.. line

@@ -39,7 +39,7 @@ ___ dijkstra(graph, initial
 
         ___ edge __ graph.edges[minNode]:
             weight  currentWeight + graph.distances[(minNode, edge)]
-            __ edge no. __ visited or weight < visited[edge]:
+            __ edge no. __ visited o. weight < visited[edge]:
                 visited[edge]  weight
                 path[edge].ap..(minNode)
     

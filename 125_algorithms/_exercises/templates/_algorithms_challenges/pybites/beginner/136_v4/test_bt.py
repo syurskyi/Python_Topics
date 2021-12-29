@@ -1,60 +1,60 @@
-import pytest
-from bt import check_bt, Bloodtype
+_______ pytest
+____ bt _______ check_bt, Bloodtype
 
 
 ___ test_universal_donor():
     donor = Bloodtype.ZERO_NEG
-    for i in range(8):
+    ___ i __ r..(8):
         recipient = Bloodtype(i)
-        assert check_bt(donor, recipient)
+        ... check_bt(donor, recipient)
 
 
 ___ test_universal_recipient():
     recipient = Bloodtype.AB_POS
-    for i in range(8):
+    ___ i __ r..(8):
         donor = Bloodtype(i)
-        assert check_bt(donor, recipient)
+        ... check_bt(donor, recipient)
 
 
 ___ test_AB_POS_can_donate_to_own_group_only_numeric_input():
     donor = 7
-    for i in range(7):
+    ___ i __ r..(7):
         recipient = i
-        assert check_bt(donor, recipient) is False
+        ... check_bt(donor, recipient) __ False
 
 
 ___ test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input():
     recipient = 0
-    for i in range(1, 8):
+    ___ i __ r..(1, 8):
         donor = i
-        assert check_bt(donor, recipient) is False
+        ... check_bt(donor, recipient) __ False
 
 
 ___ test_red_blood_cell_compatibility():
-    assert check_bt(Bloodtype.A_NEG, Bloodtype.A_NEG)  # own
-    assert check_bt(Bloodtype.B_NEG, Bloodtype.B_POS)
-    assert check_bt(Bloodtype.A_NEG, Bloodtype.AB_NEG)
+    ... check_bt(Bloodtype.A_NEG, Bloodtype.A_NEG)  # own
+    ... check_bt(Bloodtype.B_NEG, Bloodtype.B_POS)
+    ... check_bt(Bloodtype.A_NEG, Bloodtype.AB_NEG)
 
 
 ___ test_red_blood_cell_incompatibility():
-    assert check_bt(Bloodtype.B_POS, Bloodtype.B_NEG) is False
-    assert check_bt(Bloodtype.A_NEG, Bloodtype.B_NEG) is False
-    assert check_bt(Bloodtype.AB_NEG, Bloodtype.B_POS) is False
-    assert check_bt(Bloodtype.B_NEG, Bloodtype.A_POS) is False
+    ... check_bt(Bloodtype.B_POS, Bloodtype.B_NEG) __ False
+    ... check_bt(Bloodtype.A_NEG, Bloodtype.B_NEG) __ False
+    ... check_bt(Bloodtype.AB_NEG, Bloodtype.B_POS) __ False
+    ... check_bt(Bloodtype.B_NEG, Bloodtype.A_POS) __ False
 
 
 ___ test_red_blood_cell_compatibility_text_input():
-    assert check_bt("0+", "A+")
-    assert check_bt("0+", "B+")
-    assert check_bt("B-", "B+")
-    assert check_bt("A-", "AB-")
+    ... check_bt("0+", "A+")
+    ... check_bt("0+", "B+")
+    ... check_bt("B-", "B+")
+    ... check_bt("A-", "AB-")
 
 
 ___ test_red_blood_cell_incompatibility_text_input():
-    assert check_bt("0+", "A-") is False
-    assert check_bt("0+", "B-") is False
-    assert check_bt("B-", "0-") is False
-    assert check_bt("AB-", "A+") is False
+    ... check_bt("0+", "A-") __ False
+    ... check_bt("0+", "B-") __ False
+    ... check_bt("B-", "0-") __ False
+    ... check_bt("AB-", "A+") __ False
 
 
 ___ test_invalid_value_text_input():

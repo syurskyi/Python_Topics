@@ -18,11 +18,11 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ jump(self, A):
-        n = len(A)
-        __ len(A) == 1:
-            return 0
-        t = [0 for i in range(n - 1)]
-        for i in range(n - 1):
+        n = l..(A)
+        __ l..(A) __ 1:
+            r.. 0
+        t = [0 ___ i __ r..(n - 1)]
+        ___ i __ r..(n - 1):
             t[i] = A[i] + i
         count = 0
         min_i = n - 1  # Mininum index able to reach `cur`
@@ -36,13 +36,13 @@ class Solution:
                     min_i = i
                     reached = True
                 i -= 1
-            __ not reached:
-                return -1
+            __ n.. reached:
+                r.. -1
             reached = False
             count += 1
             cur = min_i
             i = cur - 1
-        return count
+        r.. count
 
 
 a1 = [2, 3, 1, 1, 4]

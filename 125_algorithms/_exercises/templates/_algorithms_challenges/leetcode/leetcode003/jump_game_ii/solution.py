@@ -20,9 +20,9 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        __ n == 1:
-            return 0
+        n = l..(nums)
+        __ n __ 1:
+            r.. 0
         start = 1
         end = nums[0]  # `end` is nums[start - 1]
         res = 1  # At least one step if len(nums) > 1
@@ -30,16 +30,16 @@ class Solution:
         while end < n - 1:
             res += 1
             max_end = end  # `end` for the next loop
-            for i in range(start, end + 1):
+            ___ i __ r..(start, end + 1):
                 __ i + nums[i] > max_end:
                     max_end = i + nums[i]
                     reached = True
-            __ not reached:
-                return -1
+            __ n.. reached:
+                r.. -1
             reached = False
             start = end + 1
             end = max_end
-        return res
+        r.. res
 
 
 s = Solution()

@@ -21,11 +21,11 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        __ message not in self.h or timestamp - self.h[message] >= 10:
+        __ message n.. __ self.h o. timestamp - self.h[message] >= 10:
             self.h[message] = timestamp
-            return True
+            r.. True
 
-        return False
+        r.. False
 
 
 # Your Logger object will be instantiated and called as such:

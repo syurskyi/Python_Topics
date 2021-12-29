@@ -10,17 +10,17 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        res = []
+        res    # list
         self.helper(candidates, 0, [], target, res)
-        return res
+        r.. res
     
     ___ helper(self, nums, ind, curr, target, res):
-        __ target == 0:
-            res.append(list(curr))
-            return
+        __ target __ 0:
+            res.a..(l..(curr))
+            r..
         __ target < 0:
-            return
-        for i in range(ind, len(nums)):
-            curr.append(nums[i])
+            r..
+        ___ i __ r..(ind, l..(nums)):
+            curr.a..(nums[i])
             self.helper(nums, i, curr, target-nums[i], res)
             curr.pop()

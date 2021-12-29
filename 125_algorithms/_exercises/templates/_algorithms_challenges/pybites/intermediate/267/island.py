@@ -14,11 +14,11 @@ ___ get_others(map_, r, c):
     map_[r][c] = '#'
     nums = 0
 
-    for n_row,n_col in ((r +1,c),(r -1,c),(r,c +1),(r,c-1)):
-        in_bounds = 0 <= n_row < len(map_) and 0 <= n_col < len(map_[0])
-        __ in_bounds and map_[n_row][n_col] == 1:
+    ___ n_row,n_col __ ((r +1,c),(r -1,c),(r,c +1),(r,c-1)):
+        in_bounds = 0 <= n_row < l..(map_) and 0 <= n_col < l..(map_[0])
+        __ in_bounds and map_[n_row][n_col] __ 1:
             nums += get_others(map_,n_row,n_col)
-        elif (in_bounds and map_[n_row][n_col] == 0) or (not in_bounds):
+        ____ (in_bounds and map_[n_row][n_col] __ 0) o. (n.. in_bounds):
             nums += 1
 
 
@@ -29,7 +29,7 @@ ___ get_others(map_, r, c):
 
 
 
-    return nums
+    r.. nums
 
 
 ___ island_size(map_):
@@ -42,10 +42,10 @@ ___ island_size(map_):
 
 
     # your code here
-    for row in range(len(map_)):
-        for col in range(len(map_[0])):
-            __ map_[row][col] == 1:
+    ___ row __ r..(l..(map_)):
+        ___ col __ r..(l..(map_[0])):
+            __ map_[row][col] __ 1:
                 perimeter += get_others(map_,row,col)
 
 
-    return perimeter
+    r.. perimeter

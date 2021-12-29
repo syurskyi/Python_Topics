@@ -1,8 +1,8 @@
 ___ same_case(txt):
-    __ txt.islower() or txt.isupper() == True:
-        return True
-    else:
-        return False
+    __ txt.islower() o. txt.isupper() __ True:
+        r.. True
+    ____:
+        r.. False
 
 
 

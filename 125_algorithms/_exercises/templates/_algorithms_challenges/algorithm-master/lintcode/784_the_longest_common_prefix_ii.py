@@ -7,13 +7,13 @@ class Solution:
     ___ theLongestCommonPrefix(self, D, target):
         ans = 0
 
-        for word in D:
+        ___ word __ D:
             i = 0
-            for c in word:
+            ___ c __ word:
                 __ c != target[i]:
                     break
                 i += 1
             __ i > ans:
                 ans = i
 
-        return ans
+        r.. ans

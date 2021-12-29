@@ -1,34 +1,34 @@
-import pytest
+_______ pytest
 
-from months import calc_months_passed
+____ months _______ calc_months_passed
 
 
 ___ test_same_date():
-    assert calc_months_passed(2018, 11, 1) == 0
+    ... calc_months_passed(2018, 11, 1) __ 0
 
 
 ___ test_nine_days_later():
-    assert calc_months_passed(2018, 11, 10) == 0
+    ... calc_months_passed(2018, 11, 10) __ 0
 
 
 ___ test_ten_days_later():
-    assert calc_months_passed(2018, 11, 11) == 1
+    ... calc_months_passed(2018, 11, 11) __ 1
 
 
 ___ test_one_month_and_nine_days_later():
-    assert calc_months_passed(2018, 12, 10) == 1
+    ... calc_months_passed(2018, 12, 10) __ 1
 
 
 ___ test_one_month_and_ten_day_later():
-    assert calc_months_passed(2018, 12, 11) == 2
+    ... calc_months_passed(2018, 12, 11) __ 2
 
 
 ___ test_one_year_one_month_and_nine_days_later():
-    assert calc_months_passed(2019, 12, 10) == 13
+    ... calc_months_passed(2019, 12, 10) __ 13
 
 
 ___ test_one_year_one_month_and_ten_days_later():
-    assert calc_months_passed(2019, 12, 11) == 14
+    ... calc_months_passed(2019, 12, 11) __ 14
 
 
 ___ test_non_int_input_args():

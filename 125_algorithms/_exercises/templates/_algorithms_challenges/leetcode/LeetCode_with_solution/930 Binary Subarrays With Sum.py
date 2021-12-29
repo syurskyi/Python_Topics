@@ -20,7 +20,7 @@ A.length <= 30000
 0 <= S <= A.length
 A[i] is either 0 or 1.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -33,21 +33,21 @@ class Solution:
         ret = 0
         i_lo, i_hi, j = 0, 0, 0
         sum_lo, sum_hi = 0, 0
-        for j in range(len(A)):
+        ___ j __ r..(l..(A)):
             sum_lo += A[j]
             sum_hi += A[j]
             while i_lo < j and sum_lo > S:
                 sum_lo -= A[i_lo]
                 i_lo += 1
-            while i_hi < j and (sum_hi > S or sum_hi == S and A[i_hi] == 0):
+            while i_hi < j and (sum_hi > S o. sum_hi __ S and A[i_hi] __ 0):
                 sum_hi -= A[i_hi]
                 i_hi += 1
-            assert i_hi >= i_lo
-            __ sum_lo == S:
-                assert sum_hi == S
+            ... i_hi >= i_lo
+            __ sum_lo __ S:
+                ... sum_hi __ S
                 ret += i_hi - i_lo + 1
 
-        return ret
+        r.. ret
 
     ___ numSubarraysWithSum_error(self, A: List[int], S: int) -> int:
         """
@@ -57,31 +57,31 @@ class Solution:
         ret = 0
         i = 0
         j = 0
-        n = len(A)
+        n = l..(A)
         cur_sum = 0
         while j < n:
             cur_sum += A[j]
             __ cur_sum < S and j < n:
                 j += 1
-            elif cur_sum == S:
+            ____ cur_sum __ S:
                 ret += 1
-                while i <= j and A[i] == 0:
+                while i <= j and A[i] __ 0:
                     i += 1
                     ret += 1
                 j += 1
-            else:
+            ____:
                 while i <= j and cur_sum > S:
                     cur_sum -= A[i]
                     i += 1
-                __ cur_sum == S:
+                __ cur_sum __ S:
                     ret += 1
-                    while i <= j and A[i] == 0:
+                    while i <= j and A[i] __ 0:
                         i += 1
                         ret += 1
                 j += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().numSubarraysWithSum([1,0,1,0,1], 2) == 4
+__ __name__ __ "__main__":
+    ... Solution().numSubarraysWithSum([1,0,1,0,1], 2) __ 4

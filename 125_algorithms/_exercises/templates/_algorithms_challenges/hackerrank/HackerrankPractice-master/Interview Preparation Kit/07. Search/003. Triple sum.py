@@ -5,22 +5,22 @@
 ___ binary_search_last(arr, el, low, high):
     __ low + 1 >= high:
         __ arr[low] > el:
-            return 0
-        else:
-            return low + 1
+            r.. 0
+        ____:
+            r.. low + 1
     middle = (low + high) // 2
     __ arr[middle] > el:
-        return binary_search_last(arr, el, low, middle)
-    else:
-        return binary_search_last(arr, el, middle, high)
+        r.. binary_search_last(arr, el, low, middle)
+    ____:
+        r.. binary_search_last(arr, el, middle, high)
 
 
 len_a, len_b, len_c = map(int, input().split())
-a = sorted(set(map(int, input().split())))
-b = sorted(list(set(map(int, input().split()))))
-c = sorted(list(set(map(int, input().split()))))
+a = s..(set(map(int, input().split())))
+b = s..(l..(set(map(int, input().split()))))
+c = s..(l..(set(map(int, input().split()))))
 
 ans = 0
-for i in set(b):
-    ans += binary_search_last(a, i, 0, len(a)) * binary_search_last(c, i, 0, len(c))
+___ i __ set(b):
+    ans += binary_search_last(a, i, 0, l..(a)) * binary_search_last(c, i, 0, l..(c))
 print(ans)

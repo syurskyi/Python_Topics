@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from emojis import get_emoji_indices
+____ emojis _______ get_emoji_indices
 
 
 @pytest.mark.parametrize("emojis, expected", [
@@ -16,4 +16,4 @@ from emojis import get_emoji_indices
     ('Books can be boring 😴, better to code 💪❗', [20, 38, 39]),
 ])
 ___ test_get_emoji_indices(emojis, expected):
-    assert get_emoji_indices(emojis) == expected
+    ... get_emoji_indices(emojis) __ expected

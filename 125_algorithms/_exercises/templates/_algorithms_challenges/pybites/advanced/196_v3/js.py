@@ -14,27 +14,27 @@ class JsObject:
     """
 
     ___ __init__(self, **kwargs):
-        self._local = dict()
-        for k, v in kwargs.items():
+        self._local = d..()
+        ___ k, v __ kwargs.items():
             self.__setitem__(k, v)
 
     ___ __getattr__(self, item):
-        __ item in self.keys():
-            return self.__getitem__(item)
+        __ item __ self.keys():
+            r.. self.__getitem__(item)
 
     ___ __setattr__(self, key, value):
         super().__setattr__(key, value)
-        __ key not in RESERVED_WORDS and key != '_local':
+        __ key n.. __ RESERVED_WORDS and key != '_local':
             self._local[key] = value
 
     ___ __getitem__(self, item):
-        return self._local.get(item)
+        r.. self._local.get(item)
 
     ___ __setitem__(self, key, value):
-        __ key not in RESERVED_WORDS:
+        __ key n.. __ RESERVED_WORDS:
             self._local[key] = value
             self.__dict__[key] = value
-        else:
+        ____:
             raise AttributeError("Reserved words not allowed")
 
     ___ __delitem__(self, key):
@@ -46,20 +46,20 @@ class JsObject:
         self.__dict__.pop(item)
 
     ___ __len__(self):
-        return len(self._local)
+        r.. l..(self._local)
 
     ___ __iter__(self):
-        yield from self._local
+        yield ____ self._local
 
     ___ __eq__(self, other):
-        return self._local == other._local
+        r.. self._local __ other._local
 
     ___ keys(self):
-        return self._local.keys()
+        r.. self._local.keys()
 
     ___ values(self):
-        return self._local.values()
+        r.. self._local.values()
 
     ___ update(self, data):
-        for k, v in data.items():
+        ___ k, v __ data.items():
             self.__setitem__(k, v)

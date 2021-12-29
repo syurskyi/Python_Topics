@@ -13,27 +13,27 @@ class Solution(object):
         __ num < 0:
             num = -num
             sig = '-'
-        else:
+        ____:
             sig = ''
         res = ''
         while num > 0:
             digit = num%7
             res = str(digit)+res
             num = int((num-digit)/7)
-        __ not res:
-            return '0'
-        else:
-            return sig+res
+        __ n.. res:
+            r.. '0'
+        ____:
+            r.. sig+res
     
     ___ test(self):
         testCases = [
             100,
             -7,
         ]
-        for num in testCases:
+        ___ num __ testCases:
             result = self.convertToBase7(num)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

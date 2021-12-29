@@ -10,13 +10,13 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        l, r = 0, len(nums)
+        l, r = 0, l..(nums)
         while l < r:
             mid = (l+r)//2
-            __ target == nums[mid]:
-                return mid
-            elif target > nums[mid]:
+            __ target __ nums[mid]:
+                r.. mid
+            ____ target > nums[mid]:
                 l = mid+1
-            else:
+            ____:
                 r = mid
-        return l
+        r.. l

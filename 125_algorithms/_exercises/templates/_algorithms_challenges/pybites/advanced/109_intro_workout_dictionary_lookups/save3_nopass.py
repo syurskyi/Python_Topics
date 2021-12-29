@@ -29,11 +29,11 @@ ___ get_workout_motd(day):
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'
     """
-    day_title = day.title()
+    day_title = day.t..
     x = WORKOUT_SCHEDULE.get(day_title)
-    __ x in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"):
-        return TRAIN
-    __ x in ("Saturday", "Sunday"):
-        return CHILL_OUT, REST
-    else:
-        return INVALID_DAY
+    __ x __ ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"):
+        r.. TRAIN
+    __ x __ ("Saturday", "Sunday"):
+        r.. CHILL_OUT, REST
+    ____:
+        r.. INVALID_DAY

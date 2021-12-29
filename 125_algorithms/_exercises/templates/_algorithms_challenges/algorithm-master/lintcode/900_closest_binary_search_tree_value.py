@@ -14,19 +14,19 @@ class Solution:
         :type target: float
         :rtype: int
         """
-        __ not root:
-            return float('-inf')
+        __ n.. root:
+            r.. float('-inf')
 
         __ root.left and target < root.val:
             left = self.closestValue(root.left, target)
 
             __ abs(left - target) < abs(root.val - target):
-                return left
+                r.. left
 
         __ root.right and target > root.val:
             right = self.closestValue(root.right, target)
 
             __ abs(right - target) < abs(root.val - target):
-                return right
+                r.. right
 
-        return root.val
+        r.. root.val

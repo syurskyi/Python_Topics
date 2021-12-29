@@ -9,16 +9,16 @@ class Solution:
         :type A: List[int]
         :rtype: bool
         """
-        __ not A:
-            return False
+        __ n.. A:
+            r.. False
 
-        last_at = len(A) - 1
+        last_at = l..(A) - 1
 
-        for i in range(last_at, -1, -1):
+        ___ i __ r..(last_at, -1, -1):
             __ i + A[i] >= last_at:
                 last_at = i
 
-        return last_at == 0
+        r.. last_at __ 0
 
 
 """
@@ -30,10 +30,10 @@ class Solution:
         :type A: List[int]
         :rtype: bool
         """
-        __ not A:
-            return False
+        __ n.. A:
+            r.. False
 
-        n = len(A)
+        n = l..(A)
         dp = [False] * n
 
         """
@@ -41,8 +41,8 @@ class Solution:
         """
         dp[0] = True
 
-        for i in range(1, n):
-            for j in range(i):
+        ___ i __ r..(1, n):
+            ___ j __ r..(i):
                 """
                 backtracking
                 if `j` could be reached
@@ -54,4 +54,4 @@ class Solution:
                     dp[i] = True
                     break
 
-        return dp[n - 1]
+        r.. dp[n - 1]

@@ -15,9 +15,9 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        import heapq
-        heap = []
-        for l in lists:
+        _______ heapq
+        heap    # list
+        ___ l __ lists:
             while l:
                 heapq.heappush(heap, l.val)
                 l = l.next
@@ -27,7 +27,7 @@ class Solution(object):
             val = heapq.heappop(heap)
             prev.next = ListNode(val)
             prev = prev.next
-        return dummy.next
+        r.. dummy.next
     
     ___ test(self):
         testCases = [
@@ -36,7 +36,7 @@ class Solution(object):
                 ListNode(-2, ListNode(-2, ListNode(-1))),
             ],
         ]
-        for lists in testCases:
+        ___ lists __ testCases:
             node = self.mergeKLists(lists)
             while node:
                 print('%s -> ' % node.val, end='')
@@ -44,5 +44,5 @@ class Solution(object):
             print('')
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

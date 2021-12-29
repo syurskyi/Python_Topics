@@ -15,7 +15,7 @@ class Solution:
 
             __ turn & 1:
                 ans += delta
-            else:
+            ____:
                 ans -= delta
 
-        return ans
+        r.. ans

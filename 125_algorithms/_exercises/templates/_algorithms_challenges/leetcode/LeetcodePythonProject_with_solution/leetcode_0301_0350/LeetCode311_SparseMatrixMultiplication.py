@@ -6,32 +6,32 @@ Created on Mar 15, 2017
 
 class Solution(object):
     ___ multiply(self, A, B):
-        m, n = len(A), len(A[0])
-        nB = len(B[0])
-        res = [[0]*nB for _ in range(m)]
-        for i in range(m):
-            for k in range(n):
+        m, n = l..(A), l..(A[0])
+        nB = l..(B[0])
+        res = [[0]*nB ___ _ __ r..(m)]
+        ___ i __ r..(m):
+            ___ k __ r..(n):
                 __ A[i][k]:
-                    for j in range(nB):
+                    ___ j __ r..(nB):
                         __ B[k][j]:
                             res[i][j] += A[i][k]*B[k][j]
-        return res
+        r.. res
     
     ___ multiply_own(self, A, B):
-        __ not A or not B:
-            return A __ not A else B
-        mA, nA = len(A), len(A[0])
-        mB, nB = len(B), len(B[0])
-        colSumB = []
-        for j in range(nB):
+        __ n.. A o. n.. B:
+            r.. A __ n.. A ____ B
+        mA, nA = l..(A), l..(A[0])
+        mB, nB = l..(B), l..(B[0])
+        colSumB    # list
+        ___ j __ r..(nB):
             tmp = 0
-            for i in range(mB):
+            ___ i __ r..(mB):
                 tmp+=B[i][j]
-            colSumB.append(tmp)
-        result = [[0]*nB for i in range(mA)]
-        for i in range(mA):
-            for j in range(nB):
+            colSumB.a..(tmp)
+        result = [[0]*nB ___ i __ r..(mA)]
+        ___ i __ r..(mA):
+            ___ j __ r..(nB):
                 __ colSumB[j]:
-                    for i0 in range(nA):
+                    ___ i0 __ r..(nA):
                         result[i][j] += A[i][i0]*B[i0][j]
-        return result
+        r.. result

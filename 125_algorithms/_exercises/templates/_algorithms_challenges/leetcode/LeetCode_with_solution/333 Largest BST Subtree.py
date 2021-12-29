@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-import sys
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -10,8 +10,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class BSTInfo(object):
@@ -35,21 +35,21 @@ class Solution(object):
         :rtype: int
         """
         self.measure(root)
-        return self.gmax
+        r.. self.gmax
 
     ___ measure(self, root):
-        __ not root:
-            return BSTInfo(0, MAX, MIN)
+        __ n.. root:
+            r.. BSTInfo(0, MAX, MIN)
 
         left = self.measure(root.left)
         right = self.measure(root.right)
-        __ left.sz == -1 or right.sz == -1 or not left.hi <= root.val or not root.val <= right.lo:
-            return BSTInfo(-1, MIN, MAX)
+        __ left.sz __ -1 o. right.sz __ -1 o. n.. left.hi <= root.val o. n.. root.val <= right.lo:
+            r.. BSTInfo(-1, MIN, MAX)
 
         sz = 1 + left.sz + right.sz
         self.gmax = max(self.gmax, sz)
         # when root.left is None
-        return BSTInfo(sz, min(root.val, left.lo), max(root.val, right.hi))
+        r.. BSTInfo(sz, m..(root.val, left.lo), max(root.val, right.hi))
 
 
 class SolutionError(object):
@@ -62,26 +62,26 @@ class SolutionError(object):
         :rtype: int
         """
         self.measure(root)
-        return self.gmax
+        r.. self.gmax
 
     ___ measure(self, root):
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
         left = self.measure(root.left)
         right = self.measure(root.right)
 
-        __ root.left and not root.val >= root.left.val or root.right and not root.val <= root.right.val:
-            return 0
+        __ root.left and n.. root.val >= root.left.val o. root.right and n.. root.val <= root.right.val:
+            r.. 0
 
-        __ root.left and left == 0 or root.right and right == 0:
-            return 0
+        __ root.left and left __ 0 o. root.right and right __ 0:
+            r.. 0
 
         ret = 1 + left + right
         self.gmax = max(self.gmax, ret)
-        return ret
+        r.. ret
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     print Solution().largestBSTSubtree(root)

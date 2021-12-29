@@ -29,11 +29,11 @@ class LRUCache:
         :type key: int
         :rtype: int
         """
-        __ key not in self.nodes:
-            return -1
+        __ key n.. __ self.nodes:
+            r.. -1
 
         self._update(key)
-        return self.nodes[key].val
+        r.. self.nodes[key].val
 
     ___ set(self, key, val):
         """
@@ -42,13 +42,13 @@ class LRUCache:
         :rtype: void
         """
         __ self.cap <= 0:
-            return
+            r..
 
-        __ key in self.nodes:
+        __ key __ self.nodes:
             self._update(key, val)
-            return
+            r..
 
-        while len(self.nodes) >= self.cap:
+        while l..(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)
@@ -73,14 +73,14 @@ class LRUCache:
     ___ _pop_head(self):
         node = self.D.nxt
         node.unlink()
-        return node
+        r.. node
 
     ___ _add_tail(self, node):
         node.link(self.d.pre, self.d)
 
 
 class CacheNode:
-    ___ __init__(self, key, val=None, pre=None, nxt_ N..
+    ___ __init__(self, key, val=N.., pre=N.., nxt_ N..
         self.key = key
         self.val = val
         self.pre = pre
@@ -95,4 +95,4 @@ class CacheNode:
     ___ unlink(self):
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
-        self.pre = self.nxt = None
+        self.pre = self.nxt = N..

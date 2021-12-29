@@ -1,13 +1,13 @@
 str  input("Insert some strings of Uppercase and Lowercase: ")
 
-len_str  len(str)
+len_str  l..(str)
 
 upper  lower  0
 
-for i in str:
+___ i __ str:
     __ 'a' < i < 'z':
         lower + 1
-    elif 'A' < i < 'Z':
+    ____ 'A' < i < 'Z':
         upper + 1
 
 print("Percentage of Uppercase: %.2f %%" % (upper/len_str * 100))

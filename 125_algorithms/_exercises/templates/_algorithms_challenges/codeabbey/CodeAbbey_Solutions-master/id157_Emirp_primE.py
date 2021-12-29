@@ -4,31 +4,31 @@
 # work on realistic numbers (ie: not a quintillion)
 
 ___ find_answer(entry):
-    for emirp in semirp:
+    ___ emirp __ semirp:
         __ emirp > entry:
-            return emirp
+            r.. emirp
 
 ___ gen_primes(limit=300000000):
-    data = [int(input()) for x in range(int(input()))]
-    primes, semirp, answer = [], [], []
+    data = [int(input()) ___ x __ r..(int(input()))]
+    primes, semirp, answer    # list, [], []
     global semirp
 
     # Sieve of Eratosthenes
     sieve = [True] * (limit + 1)
-    for num in range(2, limit + 1):
+    ___ num __ r..(2, limit + 1):
         __ sieve[num]:
-           primes.append(num)
-           for i in range(num * num, limit + 1, num):
+           primes.a..(num)
+           ___ i __ r..(num * num, limit + 1, num):
                sieve[i] = False
 
     # Find reversable primes
-    for prime in primes:
-        __ int(str(prime)[::-1]) in primes:
-            semirp.append(prime)
+    ___ prime __ primes:
+        __ int(str(prime)[::-1]) __ primes:
+            semirp.a..(prime)
 
     # Find answer
-    for entry in data:
-        answer.append(str(find_answer(entry)))
+    ___ entry __ data:
+        answer.a..(str(find_answer(entry)))
 
     print(' '.join(answer))
 gen_primes()

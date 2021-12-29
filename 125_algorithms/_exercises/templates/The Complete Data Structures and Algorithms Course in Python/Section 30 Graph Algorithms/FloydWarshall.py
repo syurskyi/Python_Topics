@@ -20,7 +20,7 @@ ___ floydWarshall(nV, G
     ___ k __ ra__(nV
         ___ i __ ra__(nV
             ___ j __ ra__(nV
-                distance[i][j]  min(distance[i][j], distance[i][k]+distance[k][j])
+                distance[i][j]  m..(distance[i][j], distance[i][k]+distance[k][j])
     
     printSolution(nV, distance)
 

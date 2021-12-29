@@ -23,19 +23,19 @@ class Solution(object):
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum(self, L):
-        return self.dfs(L, 1)
+        r.. self.dfs(L, 1)
 
     ___ dfs(self, L, depth):
         _sum = 0
 
-        for obj in L:
+        ___ obj __ L:
             __ obj.isInteger():
                 _sum += depth * obj.getInteger()
                 continue
 
             _sum += self.dfs(obj.getList(), depth + 1)
 
-        return _sum
+        r.. _sum
 
 
 class Solution(object):
@@ -43,16 +43,16 @@ class Solution(object):
     # @return {int} an integer
     ___ depthSum(self, L):
         ans = 0
-        __ not L:
-            return ans
+        __ n.. L:
+            r.. ans
 
         queue = L
         depth = 0
         while queue:
-            _queue = []
+            _queue    # list
             depth += 1
 
-            for obj in queue:
+            ___ obj __ queue:
                 __ obj.isInteger():
                     ans += depth * obj.getInteger()
                     continue
@@ -61,4 +61,4 @@ class Solution(object):
 
             queue = _queue
 
-        return ans
+        r.. ans

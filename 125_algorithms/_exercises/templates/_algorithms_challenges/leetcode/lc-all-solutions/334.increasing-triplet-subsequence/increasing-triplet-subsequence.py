@@ -5,11 +5,11 @@ class Solution(object):
     :rtype: bool
     """
     a = b = float("inf")
-    for num in nums:
+    ___ num __ nums:
       __ num <= a:
         a = num
-      elif num <= b:
+      ____ num <= b:
         b = num
-      else:
-        return True
-    return False
+      ____:
+        r.. True
+    r.. False

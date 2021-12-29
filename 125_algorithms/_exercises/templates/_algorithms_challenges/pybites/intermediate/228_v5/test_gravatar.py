@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from Previous.gravatar import create_gravatar_url
+____ Previous.gravatar _______ create_gravatar_url
 
 BASE_URL = "https://www.gravatar.com/avatar/"
 HASHED_INFO_EMAIL = "ff2de96de035e1ccdb39ca31d3fe4a5c"
@@ -28,4 +28,4 @@ EXPECTED = iter([  # make an iterator
 ___ test_gravatar(email, size):
     actual = create_gravatar_url(email, size=size)
     expected = next(EXPECTED)
-    assert actual == expected
+    ... actual __ expected

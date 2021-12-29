@@ -15,21 +15,21 @@ class ZigzagIterator:
         self.g = (v1, v2)
         self.x = 0
         self.y = 0
-        self.max_y = max(len(vec) for vec in self.g)
+        self.max_y = max(l..(vec) ___ vec __ self.g)
 
     """
     @return: An integer
     """
     ___ next(self):
-        __ not self.hasNext():
-            return -1
+        __ n.. self.hasNext():
+            r.. -1
 
         x = self.x
         y = self.y
 
         self.x += 1
 
-        return self.g[x][y]
+        r.. self.g[x][y]
 
     """
     @return: True if has next
@@ -37,19 +37,19 @@ class ZigzagIterator:
     ___ hasNext(self):
         while self.y < self.max_y:
             __ (
-                self.x < len(self.g) and
-                self.y < len(self.g[self.x])
+                self.x < l..(self.g) and
+                self.y < l..(self.g[self.x])
             ):
-                return True
+                r.. True
 
-            __ self.x >= len(self.g):
+            __ self.x >= l..(self.g):
                 self.x = 0
                 self.y += 1
 
-            __ self.y >= len(self.g[self.x]):
+            __ self.y >= l..(self.g[self.x]):
                 self.x += 1
 
-        return False
+        r.. False
 
 
 class ZigzagIterator:
@@ -58,25 +58,25 @@ class ZigzagIterator:
     @param: v2: A 1d vector
     """
     ___ __init__(self, v1, v2):
-        self.queue = [vec for vec in (v1, v2) __ vec]
+        self.queue = [vec ___ vec __ (v1, v2) __ vec]
 
     """
     @return: An integer
     """
     ___ next(self):
-        __ not self.hasNext():
-            return -1
+        __ n.. self.hasNext():
+            r.. -1
 
         vec = self.queue.pop(0)
         val = vec.pop(0)
 
         __ vec:
-            self.queue.append(vec)
+            self.queue.a..(vec)
 
-        return val
+        r.. val
 
     """
     @return: True if has next
     """
     ___ hasNext(self):
-        return bool(self.queue)
+        r.. bool(self.queue)

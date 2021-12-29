@@ -4,11 +4,11 @@ __ mdv __ 'm':
     d  float(input("Density: "))
     v  float(input("Volume: "))
     result  d*v #This is for mass
-elif mdv __ 'd':
+____ mdv __ 'd':
     m  float(input("Mass: "))
     v  float(input("Volumn: "))
     result  m/v #This is for density
-elif mdv __ 'v':
+____ mdv __ 'v':
     m  float(input("Mass: "))
     d  float(input("Density: "))
     result  m/d;

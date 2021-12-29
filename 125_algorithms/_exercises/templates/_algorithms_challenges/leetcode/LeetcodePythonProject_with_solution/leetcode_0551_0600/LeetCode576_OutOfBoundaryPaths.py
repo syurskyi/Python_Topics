@@ -13,29 +13,29 @@ class Solution(object):
         :type j: int
         :rtype: int
         """
-        __ N < 0: return 0
+        __ N < 0: r.. 0
         mod = 10**9+7
-        count = [[0]*n for _ in range(m)]
+        count = [[0]*n ___ _ __ r..(m)]
         count[i][j] = 1
         result = 0
-        for _ in range(N):
-            tmp = [[0]*n for _ in range(m)]
-            for r in range(m):
-                for c in range(n):
-                    for nr, nc in (r+1, c), (r-1, c), (r, c+1), (r, c-1):
+        ___ _ __ r..(N):
+            tmp = [[0]*n ___ _ __ r..(m)]
+            ___ r __ r..(m):
+                ___ c __ r..(n):
+                    ___ nr, nc __ (r+1, c), (r-1, c), (r, c+1), (r, c-1):
                         __ 0 <= nr < m and 0 <= nc < n:
                             tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
-                        else:
+                        ____:
                             result = (result+count[r][c])%mod
             count = tmp
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
             [2, 2, 2, 0, 0],
             [1, 3, 3, 0, 1],
         ]
-        for m, n, N, i, j in testCases:
+        ___ m, n, N, i, j __ testCases:
             print('m: %s' % m)
             print('n: %s' % n)
             print('N: %s' % N)
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

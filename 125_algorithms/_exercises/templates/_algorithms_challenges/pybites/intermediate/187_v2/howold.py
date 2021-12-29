@@ -1,8 +1,8 @@
-from dataclasses import dataclass
+____ dataclasses _______ dataclass
 
-import dateutil
-from dateutil.relativedelta import relativedelta
-from dateutil.parser import parse
+_______ dateutil
+____ dateutil.relativedelta _______ relativedelta
+____ dateutil.parser _______ parse
 
 
 @dataclass
@@ -29,7 +29,7 @@ ___ get_age(actor: Actor, movie: Movie) -> str:
     rd = relativedelta(parse(movie.release_date),parse(actor.born))
     year = rd.years
 
-    return f"{actor.name} was {year} years old when {movie.title} came out."
+    r.. f"{actor.name} was {year} years old when {movie.title} came out."
 
 
 

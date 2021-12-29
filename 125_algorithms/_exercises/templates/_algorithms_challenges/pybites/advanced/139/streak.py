@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta, date
-import re
+____ datetime _______ datetime, timedelta, date
+_______ re
 
 TODAY = date(2018, 11, 12)
 
@@ -12,15 +12,15 @@ ___ extract_dates(data):
     
     dates = set()
     lines = data.splitlines()
-    for i,line in enumerate(lines):
-        __ i > 2 and i != len(lines) - 1:
+    ___ i,line __ enumerate(lines):
+        __ i > 2 and i != l..(lines) - 1:
             date_ = re.search(r'^\s*\|\s(\S+)\s\|',line).group(1)
             year,month,day = map(int,date_.split("-"))
 
             date_ = date(year=year,month=month,day=day)
             dates.add(date_)
 
-    return dates
+    r.. dates
 
 
 
@@ -47,17 +47,17 @@ ___ calculate_streak(dates):
     delta = timedelta(days=1)
     day = TODAY - delta
 
-    while day in dates:
+    while day __ dates:
         streak += 1
 
         day -= delta
 
     
 
-    __ TODAY in dates:
+    __ TODAY __ dates:
         streak += 1
 
-    return streak
+    r.. streak
 
 
 

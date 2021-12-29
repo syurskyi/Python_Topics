@@ -16,22 +16,22 @@ ___ create_chart():
     #count = 0
     with open('safari.logs', encoding="utf-8") as f:
         all_lines = f.readlines()
-        lines = [line.rstrip() for line in all_lines]
+        lines = [line.rstrip() ___ line __ all_lines]
         #print(len(lines))
         current_date = ''
         outstr = ''
-        for line in range(len(lines)):
+        ___ line __ r..(l..(lines)):
             #print(lines[line])
-                __ '- sending to slack channel' in lines[line]:
+                __ '- sending to slack channel' __ lines[line]:
                     first, second = str(lines[line-1]).split('root         DEBUG')
                     log_date = first[:5]
                     __ log_date != current_date:
                         print(outstr)
                         outstr = ''
                         outstr += log_date+' '
-                    __ 'python' in second.lower():
+                    __ 'python' __ second.lower():
                         outstr += PY_BOOK
-                    else:
+                    ____:
                         outstr += OTHER_BOOK
                     current_date = log_date
         __ outstr != '':

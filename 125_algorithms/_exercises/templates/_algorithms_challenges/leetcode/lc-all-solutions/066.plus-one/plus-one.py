@@ -5,10 +5,10 @@ class Solution(object):
     :rtype: List[int]
     """
     carry = 1
-    for i in reversed(range(0, len(digits))):
+    ___ i __ reversed(r..(0, l..(digits))):
       digit = (digits[i] + carry) % 10
-      carry = 1 __ digit < digits[i] else 0
+      carry = 1 __ digit < digits[i] ____ 0
       digits[i] = digit
-    __ carry == 1:
-      return [1] + digits
-    return digits
+    __ carry __ 1:
+      r.. [1] + digits
+    r.. digits

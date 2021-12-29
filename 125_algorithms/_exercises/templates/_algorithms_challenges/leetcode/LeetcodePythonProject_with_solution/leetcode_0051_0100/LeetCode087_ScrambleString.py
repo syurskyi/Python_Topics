@@ -10,25 +10,25 @@ class Solution(object):
         :type s2: str
         :rtype: bool
         """
-        __ len(s1) != len(s2):
-            return False
-        __ len(s1) == 0 or s1 == s2:
-            return True
-        l1 = list(s1)
-        l2 = list(s2)
+        __ l..(s1) != l..(s2):
+            r.. False
+        __ l..(s1) __ 0 o. s1 __ s2:
+            r.. True
+        l1 = l..(s1)
+        l2 = l..(s2)
         l1.sort()
         l2.sort()
         __ l1 != l2:
-            return False
-        for i in range(1, len(s1)):
+            r.. False
+        ___ i __ r..(1, l..(s1)):
             s11 = s1[0:i]
-            s12 = s1[i:len(s1)]
+            s12 = s1[i:l..(s1)]
             s21 = s2[0:i]
-            s22 = s2[i:len(s2)]
-            s23 = s2[0:len(s2)-i]
-            s24 = s2[len(s2)-i:len(s2)]
+            s22 = s2[i:l..(s2)]
+            s23 = s2[0:l..(s2)-i]
+            s24 = s2[l..(s2)-i:l..(s2)]
             __ self.isScramble(s11, s21) and self.isScramble(s12, s22):
-                return True
+                r.. True
             __ self.isScramble(s11, s24) and self.isScramble(s12, s23):
-                return True
-        return False
+                r.. True
+        r.. False

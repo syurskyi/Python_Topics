@@ -10,16 +10,16 @@ ___ get_person_age(name):
        If name in > 1 dict, return the match of the group with
        greatest N (so group3 > group2 > group1)
     """
-    __ isinstance(name, str):
+    __ isi..(name, str):
         age =0
-        for group in [group1, group2, group3]:
-            __ name.lower() in group:
+        ___ group __ [group1, group2, group3]:
+            __ name.lower() __ group:
                 age = group[name.lower()]
-        __ age == 0:
-            return NOT_FOUND
-        else:
-            return age
-    else:
-        return NOT_FOUND
+        __ age __ 0:
+            r.. NOT_FOUND
+        ____:
+            r.. age
+    ____:
+        r.. NOT_FOUND
 
 print(get_person_age('thomas'))

@@ -8,7 +8,7 @@ s = "rat", t = "car", return false.
 Note:
 You may assume the string contains only lowercase alphabets.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -23,17 +23,17 @@ class Solution:
         :rtype: bool
         """
         cnt = defaultdict(int)
-        for c in s:
+        ___ c __ s:
             cnt[c] += 1
 
-        for c in t:
-            __ c not in cnt or cnt[c] < 1:
-                return False
+        ___ c __ t:
+            __ c n.. __ cnt o. cnt[c] < 1:
+                r.. False
 
             cnt[c] -= 1
 
-        for v in cnt.values():
+        ___ v __ cnt.values():
             __ v != 0:
-                return False
+                r.. False
 
-        return True
+        r.. True

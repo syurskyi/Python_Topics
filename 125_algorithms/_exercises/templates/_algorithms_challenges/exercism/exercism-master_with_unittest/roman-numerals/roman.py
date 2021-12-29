@@ -18,18 +18,18 @@ class Roman:
 
     @classmethod
     ___ numeral(cls, arabic):
-        return ''.join([cls.NUMERALS[key]
-                        for key in cls.get_components(arabic)])
+        r.. ''.join([cls.NUMERALS[key]
+                        ___ key __ cls.get_components(arabic)])
 
     @classmethod
     ___ get_components(cls, arabic):
-        components = []
-        for key in reversed(sorted(cls.NUMERALS.keys())):
+        components    # list
+        ___ key __ reversed(s..(cls.NUMERALS.keys())):
             while arabic >= key:
                 arabic -= key
-                components.append(key)
-        return components
+                components.a..(key)
+        r.. components
 
 
 ___ numeral(arabic):
-    return Roman.numeral(arabic)
+    r.. Roman.numeral(arabic)

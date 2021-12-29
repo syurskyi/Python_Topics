@@ -19,8 +19,8 @@ Note:
 -10000 <= A[i] <= 10000
 A is sorted in non-decreasing order.
 """
-from typing import List
-from collections import deque
+____ typing _______ List
+____ collections _______ deque
 
 
 class Solution:
@@ -28,7 +28,7 @@ class Solution:
         """
         started from two ends
         """
-        n = len(A)
+        n = l..(A)
         ret = deque()
         lo = 0
         hi = n
@@ -36,8 +36,8 @@ class Solution:
             __ A[lo] ** 2 < A[hi - 1] ** 2:
                 ret.appendleft(A[hi - 1] ** 2)
                 hi -= 1
-            else:
+            ____:
                 ret.appendleft(A[lo] ** 2)
                 lo += 1
 
-        return list(ret)
+        r.. l..(ret)

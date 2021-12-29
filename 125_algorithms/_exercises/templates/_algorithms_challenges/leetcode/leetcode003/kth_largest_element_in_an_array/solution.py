@@ -9,7 +9,7 @@ Note:
 You may assume k is always valid, 1 <= k <= array's length
 """
 
-import heapq
+_______ heapq
 
 class Solution(object):
     ___ findKthLargest(self, nums, k):
@@ -18,13 +18,13 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        h = []
-        for e in nums:
+        h    # list
+        ___ e __ nums:
             heapq.heappush(h, (-e, e))
-        for i in range(k):
+        ___ i __ r..(k):
             w, e = heapq.heappop(h)
-            __ i == k - 1:
-                return e
+            __ i __ k - 1:
+                r.. e
 
 
 a1 = [3, 2, 1, 5, 6, 4]

@@ -1,8 +1,8 @@
 ___ filter_list(l):
     index = 0
-    output = []
-    while index < len(l):
-        __(type(l[index])) == int:
-           output.append(l[index])
+    output    # list
+    while index < l..(l):
+        __(type(l[index])) __ int:
+           output.a..(l[index])
         index = index + 1
-    return output
+    r.. output

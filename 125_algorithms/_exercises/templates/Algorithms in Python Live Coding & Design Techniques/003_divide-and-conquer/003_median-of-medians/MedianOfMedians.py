@@ -45,25 +45,25 @@ ___ partition(arr, low, high
 ___ get_pivot_val(arr, low, high
 
     __ high - low + 1 < 9:
-        sorted(arr)
-        r_ arr[in.(le_(arr)/2)]
+        s..(arr)
+        r_ arr[__.(le_(arr)/2)]
 
-    medians  [0] * in.(ceil(( high - low +1 )/5))
+    medians  [0] * __.(ceil(( high - low +1 )/5))
 
     median_index  0
 
     w__ high > low:
 
-        temp  [0]* min(5, (high - low + 1))
+        temp  [0]* m..(5, (high - low + 1))
 
         ___ i __ ra__(0, le_(temp)):
             __ low < high :
                 temp[i]  arr[low]
                 low + 1
 
-        sorted(temp)
+        s..(temp)
 
-        medians[median_index]  temp[in.(le_(temp)/2)]
+        medians[median_index]  temp[__.(le_(temp)/2)]
         median_index + 1
 
     r_ get_pivot_val(medians, 0, le_(medians) - 1)

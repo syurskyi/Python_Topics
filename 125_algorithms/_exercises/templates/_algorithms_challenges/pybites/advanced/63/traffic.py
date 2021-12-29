@@ -1,6 +1,6 @@
-from collections import namedtuple
-from itertools import cycle, islice
-from time import sleep
+____ collections _______ namedtuple
+____ itertools _______ cycle, islice
+____ time _______ sleep
 
 State = namedtuple('State', 'color command timeout')
 
@@ -14,14 +14,14 @@ ___ traffic_light():
     timeouts = (2,2,0.5)
 
     
-    states = [State(color,command,timeout) for color,command,timeout in zip(colors,commands,timeouts)]
-    return cycle(states)
+    states = [State(color,command,timeout) ___ color,command,timeout __ zip(colors,commands,timeouts)]
+    r.. cycle(states)
 
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # print a sample of 10 states if run as standalone program
-    for state in islice(traffic_light(), 10):
+    ___ state __ islice(traffic_light(), 10):
         print(f'{state.command}! The light is {state.color}')
         sleep(state.timeout)

@@ -1,17 +1,17 @@
-from datetime import datetime
-from itertools import compress
-import inspect
-import re
+____ datetime _______ datetime
+____ itertools _______ compress
+_______ i___
+_______ re
 
-import pytest
+_______ pytest
 
-from count_down import count_down
+____ count_down _______ count_down
 
 DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
 
 
 ___ test_code_uses_singledispatch_decorator():
-    assert '@singledispatch' in inspect.getsource(count_down)
+    ... '@singledispatch' __ i___.getsource(count_down)
 
 
 @pytest.mark.parametrize("input_argument", [
@@ -23,13 +23,13 @@ ___ test_code_uses_singledispatch_decorator():
     ('1', '2', '3', '4'),
     {1: 'one', 2: 'two', 3: 'three', 4: 'four'},
     {'1': 'one', '2': 'two', '3': 'three', '4': 'four'},
-    range(1, 5),
-    {x for x in range(1, 5)},
+    r..(1, 5),
+    {x ___ x __ r..(1, 5)},
 ])
 ___ test_count_down_good_inputs(input_argument, capfd):
     count_down(input_argument)
     output = capfd.readouterr()[0]
-    assert output == DEFAULT_EXPECTED_OUTPUT
+    ... output __ DEFAULT_EXPECTED_OUTPUT
 
 
 @pytest.mark.parametrize("input_argument", [
@@ -47,4 +47,4 @@ ___ test_count_down_float(capfd):
     number = 12.34
     count_down(number)
     output = capfd.readouterr()[0]
-    assert output == expected
+    ... output __ expected

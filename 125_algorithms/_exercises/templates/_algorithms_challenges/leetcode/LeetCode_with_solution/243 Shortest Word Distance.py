@@ -1,8 +1,8 @@
 """
 Premium Question
 """
-import sys
-from bisect import bisect_left
+_______ sys
+____ bisect _______ bisect_left
 
 __author__ = 'Daniel'
 
@@ -15,13 +15,13 @@ class Solution:
         :type word2: str
         :rtype: int
         """
-        lst1 = [i for i, v in enumerate(words) __ v == word1]
-        lst2 = [i for i, v in enumerate(words) __ v == word2]
+        lst1 = [i ___ i, v __ enumerate(words) __ v __ word1]
+        lst2 = [i ___ i, v __ enumerate(words) __ v __ word2]
         mini = sys.maxint
-        for i in lst1:
+        ___ i __ lst1:
             idx = bisect_left(lst2, i)
-            for nei in (-1, 0):
-                __ 0 <= idx+nei < len(lst2):
-                    mini = min(mini, abs(i-lst2[idx+nei]))
+            ___ nei __ (-1, 0):
+                __ 0 <= idx+nei < l..(lst2):
+                    mini = m..(mini, abs(i-lst2[idx+nei]))
 
-        return mini
+        r.. mini

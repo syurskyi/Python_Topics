@@ -1,6 +1,6 @@
 #Please download the database file database.db. The file contains a table with 50 country names along with their area in square km and population.
 #Please use Python to print out those countries that have an area of greater than 2,000,000.
-import sqlite3
+_______ sqlite3
 
 conn  sqlite3.connect("database.db")
 cur  conn.cursor()
@@ -9,5 +9,5 @@ rows  cur.fetchall()
 conn.close()
 print(rows)
 
-for i in rows:
+___ i __ rows:
     print(i[0])

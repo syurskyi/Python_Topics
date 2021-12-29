@@ -13,29 +13,29 @@ class Solution:
     @return: Postorder in ArrayList which contains node values.
     """
     ___ postorderTraversal(self, root):
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
 
-        stack = []
+        stack    # list
         node = last_visit = root
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack[-1]
 
-            __ (not node.right or
+            __ (n.. node.right o.
                 last_visit __ node.right):
 
                 stack.pop()
 
-                ans.append(node.val)
+                ans.a..(node.val)
                 last_visit = node
-                node = None
-            else:
+                node = N..
+            ____:
                 node = node.right
 
-        return ans
+        r.. ans

@@ -3,19 +3,19 @@
 
 
 ___ handler(a):
-    command = input().split()[0]
+    command = input().s.. [0]
     new_set = set(map(int, input().split()))
-    __ command == 'intersection_update':
+    __ command __ 'intersection_update':
         a.intersection_update(new_set)
-    __ command == 'update':
+    __ command __ 'update':
         a.update(new_set)
-    __ command == 'symmetric_difference_update':
+    __ command __ 'symmetric_difference_update':
         a.symmetric_difference_update(new_set)
-    __ command == 'difference_update':
+    __ command __ 'difference_update':
         a.difference_update(new_set)
 
 
 _, a = input(), set(map(int, input().split()))
-for i in range(int(input())):
+___ i __ r..(int(input())):
     handler(a)
-print(sum(a))
+print(s..(a))

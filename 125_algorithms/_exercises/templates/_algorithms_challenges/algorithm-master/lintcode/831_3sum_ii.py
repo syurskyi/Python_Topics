@@ -5,19 +5,19 @@ class Solution:
     """
     ___ threeSum2(self, n):
         ans = 0
-        nums = []
+        nums    # list
 
-        for a in range(n + 1):
+        ___ a __ r..(n + 1):
             __ a * a > n:
                 break
-            nums.append(a * a)
-            nums.append(a * a)
-            nums.append(a * a)
+            nums.a..(a * a)
+            nums.a..(a * a)
+            nums.a..(a * a)
 
-        m = len(nums)
+        m = l..(nums)
 
-        for a in range(m - 2):
-            __ a > 0 and nums[a] == nums[a - 1]:
+        ___ a __ r..(m - 2):
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
             b = a + 1
@@ -26,18 +26,18 @@ class Solution:
                 _sum = nums[a] + nums[b] + nums[c]
                 __ _sum < n:
                     b += 1
-                elif _sum > n:
+                ____ _sum > n:
                     c -= 1
-                else:
+                ____:
                     ans += 1
                     b += 1
                     c -= 1
-                    while b < c and nums[b] == nums[b - 1]:
+                    while b < c and nums[b] __ nums[b - 1]:
                         b += 1
-                    while b < c and nums[c] == nums[c + 1]:
+                    while b < c and nums[c] __ nums[c + 1]:
                         c -= 1
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -49,17 +49,17 @@ class Solution:
         ans = 0
         m = int(n ** 0.5)
 
-        for a in range(m + 1):
+        ___ a __ r..(m + 1):
             target = n - a * a
             b, c = a, m
             while b <= c:
                 _sum = b * b + c * c
                 __ _sum < target:
                     b += 1
-                elif _sum > target:
+                ____ _sum > target:
                     c -= 1
-                else:
+                ____:
                     ans += 1
                     b += 1
 
-        return ans
+        r.. ans

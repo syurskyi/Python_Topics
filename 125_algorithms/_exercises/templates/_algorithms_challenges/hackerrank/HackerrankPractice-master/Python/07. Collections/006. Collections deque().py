@@ -2,18 +2,18 @@
 # Score: 20
 
 
-from collections import deque
+____ collections _______ deque
 
 
 d = deque()
-for _ in range(int(input())):
-    line = input().split()
-    __ line[0] == 'append':
-        d.append(line[1])
-    elif line[0] == 'pop':
+___ _ __ r..(int(input())):
+    line = input().s..
+    __ line[0] __ 'append':
+        d.a..(line[1])
+    ____ line[0] __ 'pop':
         d.pop()
-    elif line[0] == 'popleft':
+    ____ line[0] __ 'popleft':
         d.popleft()
-    elif line[0] == 'appendleft':
+    ____ line[0] __ 'appendleft':
         d.appendleft(line[1])
 print(*d)

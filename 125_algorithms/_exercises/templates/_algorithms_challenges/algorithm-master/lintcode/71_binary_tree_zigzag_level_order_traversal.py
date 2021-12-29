@@ -13,26 +13,26 @@ class Solution:
     @return: A list of lists of integer include the zigzag level order traversal of its nodes' values.
     """
     ___ zigzagLevelOrder(self, root):
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
 
         queue = [root]
         while queue:
-            _queue = []
-            ans.append([])
+            _queue    # list
+            ans.a..([])
 
-            for node in queue:
+            ___ node __ queue:
                 __ node.left:
-                    _queue.append(node.left)
+                    _queue.a..(node.left)
                 __ node.right:
-                    _queue.append(node.right)
+                    _queue.a..(node.right)
 
-                ans[-1].append(node.val)
+                ans[-1].a..(node.val)
 
-            __ len(ans) % 2 == 0:
+            __ l..(ans) % 2 __ 0:
                 ans[-1].reverse()
 
             queue = _queue
 
-        return ans
+        r.. ans

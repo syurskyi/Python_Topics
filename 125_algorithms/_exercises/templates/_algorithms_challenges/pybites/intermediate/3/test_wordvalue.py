@@ -1,29 +1,29 @@
-from wordvalue import load_words, calc_word_value, max_word_value
+____ wordvalue _______ load_words, calc_word_value, max_word_value
 
 words = load_words()
 
 
 ___ test_load_words():
-    assert type(words) == list
-    assert len(words) == 235886
-    assert words[0] == 'A'
-    assert words[-1] == 'Zyzzogeton'
-    assert ' ' not in ''.join(words)
+    ... type(words) __ l..
+    ... l..(words) __ 235886
+    ... words[0] __ 'A'
+    ... words[-1] __ 'Zyzzogeton'
+    ... ' ' n.. __ ''.join(words)
 
 
 ___ test_calc_word_value():
-    assert calc_word_value('bob') == 7
-    assert calc_word_value('JuliaN') == 13
-    assert calc_word_value('PyBites') == 14
-    assert calc_word_value('benzalphenylhydrazone') == 56
+    ... calc_word_value('bob') __ 7
+    ... calc_word_value('JuliaN') __ 13
+    ... calc_word_value('PyBites') __ 14
+    ... calc_word_value('benzalphenylhydrazone') __ 56
 
 
 ___ test_max_word_value():
     test_words = ['bob', 'julian', 'pybites', 'quit', 'barbeque']
-    assert max_word_value(test_words) == 'barbeque'
-    assert max_word_value(words[20000:21000]) == 'benzalphenylhydrazone'
+    ... max_word_value(test_words) __ 'barbeque'
+    ... max_word_value(words[20000:21000]) __ 'benzalphenylhydrazone'
 
 
 ___ test_non_scrabble_characters():
     # thanks Joakim
-    assert max_word_value(["a", "åäö"]) == "a"
+    ... max_word_value(["a", "åäö"]) __ "a"

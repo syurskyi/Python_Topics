@@ -10,37 +10,37 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[str]
         """
-        res = []
-        words.sort(key=len)
+        res    # list
+        words.sort(key=l..)
         hashset = set()
-        for word in words:
+        ___ word __ words:
             __ self.helper(hashset, word):
-                res.append(word)
+                res.a..(word)
             hashset.add(word)
-        return res
+        r.. res
     
     ___ helper(self, hashset, word1):
-        __ not hashset: return False
-        dp = [False]*(len(word1)+1)
+        __ n.. hashset: r.. False
+        dp = [False]*(l..(word1)+1)
         dp[0] = True
-        for i in range(1, len(word1)+1):
-            for j in range(i):
+        ___ i __ r..(1, l..(word1)+1):
+            ___ j __ r..(i):
                 __ dp[j]:
-                    __ word1[j:i] in hashset:
+                    __ word1[j:i] __ hashset:
                         dp[i] = True
                         break
-        return dp[-1]
+        r.. dp[-1]
     
     ___ test(self):
         testCases =[
             [''],
             ["cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"],
         ]
-        for words in testCases:
+        ___ words __ testCases:
             print('words: %s' % words)
             result = self.findAllConcatenatedWordsInADict(words)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

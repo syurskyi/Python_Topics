@@ -14,11 +14,11 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        __ not prices:
-            return 0
+        __ n.. prices:
+            r.. 0
         max_profit = 0
         min_price = prices[0]
-        for i, p in enumerate(prices):
+        ___ i, p __ enumerate(prices):
             max_profit = max(max_profit, (p - min_price))
-            min_price = min(min_price, p)
-        return max_profit
+            min_price = m..(min_price, p)
+        r.. max_profit

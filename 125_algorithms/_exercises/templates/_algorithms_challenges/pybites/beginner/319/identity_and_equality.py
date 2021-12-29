@@ -10,9 +10,9 @@ class Car:
         self.color = color
 
     ___ __eq__(self, other_car):
-        return (
-            self.model.lower() == other_car.model.lower()
-            and self.color.lower() == other_car.color.lower()
+        r.. (
+            self.model.lower() __ other_car.model.lower()
+            and self.color.lower() __ other_car.color.lower()
         )
 
     @staticmethod
@@ -20,18 +20,18 @@ class Car:
         """if / elif / else for exercise sake, if there would
            be more conditions we would use a dict / mapping
         """
-        __ days == 7:  # *
-            return "A week old"
-        elif days == 365:  # *
-            return "A year old"
-        else:
-            return "Neither a week, nor a year old"
+        __ days __ 7:  # *
+            r.. "A week old"
+        ____ days __ 365:  # *
+            r.. "A year old"
+        ____:
+            r.. "Neither a week, nor a year old"
 
     @staticmethod
     ___ has_same_configuration(config1, config2):
-        __ not isinstance(config1,list) or not isinstance(config2,list):  # *
+        __ n.. isi..(config1,l..) o. n.. isi..(config2,l..):  # *
             raise TypeError()
-        return config1 == config2
+        r.. config1 __ config2
 
 
 # TODO: Complete function
@@ -39,7 +39,7 @@ ___ is_same_car_color_and_model(car1, car2):
     """
     Returns true if car1 and car2 are the of same model and color
     """
-    return car1 == car2
+    r.. car1 __ car2
 
 
 # TODO: Complete function
@@ -47,24 +47,24 @@ ___ is_same_instance_of_car(car1, car2):
     """
     Returns true if car1 and car2 are exactly the same object (instance)
     """
-    return car1 is car2
+    r.. car1 __ car2
 
 
 #print(Car.age(335))
 
-class NewList(list):
+class NewList(l..):
     pass
 
 list1 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
 list2 = NewList(list1)
 
 print(type(list1))
-print(isinstance(list1,list))
+print(isi..(list1,l..))
 print(type(list2))
-print(isinstance(list2,list))
+print(isi..(list2,l..))
 
 
-print(list1 == list2)
+print(list1 __ list2)
 #print(Car.has_same_configuration([['gas', 'electro', 'hybrid'], '200 PS', 'radio'], 
 #                            [['gas', 'electro', 'hybrid'], '200 PS', 'radio']))
 

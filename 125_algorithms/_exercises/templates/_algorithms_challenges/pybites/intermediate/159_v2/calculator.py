@@ -15,7 +15,7 @@ ___ simple_calculator(calculation):
     """
 
 
-    operations = {'+': lambda x,y: x + y,'-': lambda x,y: x-y,'*': lambda x,y: x * y,'/': lambda x,y: x/y}
+    operations = {'+': l.... x,y: x + y,'-': l.... x,y: x-y,'*': l.... x,y: x * y,'/': l.... x,y: x/y}
     
     ___ is_numeric(x):
 
@@ -23,17 +23,17 @@ ___ simple_calculator(calculation):
             float(x)
             int(x)
         except:
-            return False
-        else:
-            return True
+            r.. False
+        ____:
+            r.. True
     
 
-    values = calculation.split()
+    values = calculation.s..
     print(values)
-    __ is_numeric(values[0]) and is_numeric(values[2]) and values[1] in operations:
+    __ is_numeric(values[0]) and is_numeric(values[2]) and values[1] __ operations:
         operation = operations[values[1]]
         try:
-            return operation(float(values[0]),float(values[2]))
+            r.. operation(float(values[0]),float(values[2]))
         except ZeroDivisionError:
             raise ValueError("Division by zero")
 

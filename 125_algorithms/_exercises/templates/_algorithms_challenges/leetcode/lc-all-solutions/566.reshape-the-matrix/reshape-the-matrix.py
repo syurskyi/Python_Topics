@@ -6,11 +6,11 @@ class Solution(object):
     :type c: int
     :rtype: List[List[int]]
     """
-    __ r * c != len(nums) * len(nums[0]):
-      return nums
-    m = len(nums)
-    n = len(nums[0])
-    ans = [[0] * c for _ in range(r)]
-    for i in range(r * c):
+    __ r * c != l..(nums) * l..(nums[0]):
+      r.. nums
+    m = l..(nums)
+    n = l..(nums[0])
+    ans = [[0] * c ___ _ __ r..(r)]
+    ___ i __ r..(r * c):
       ans[i / c][i % c] = nums[i / n][i % n]
-    return ans
+    r.. ans

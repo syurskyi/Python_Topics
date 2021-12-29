@@ -1,16 +1,16 @@
-from urllib.request import urlretrieve
+____ urllib.request _______ urlretrieve
 
-from belts import get_belts, TMP
+____ belts _______ get_belts, TMP
 
 
 ___ get_data(file_no=1, tmp=TMP):
     file_name = f'bite_scores{file_no}.json'
     file_path = TMP / file_name
     remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-    __ not file_path.exists():
+    __ n.. file_path.exists():
         urlretrieve(f'{remote}{file_name}',
                     file_path)
-    return file_path
+    r.. file_path
 
 
 ___ test_data_set1():
@@ -23,7 +23,7 @@ ___ test_data_set1():
         'orange': 'October 07, 2018',
         'green': 'April 08, 2019'
     }
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_data_set2():
@@ -40,4 +40,4 @@ ___ test_data_set2():
         'paneled': 'March 01, 2019',
         'red': 'June 26, 2019'
     }
-    assert actual == expected
+    ... actual __ expected

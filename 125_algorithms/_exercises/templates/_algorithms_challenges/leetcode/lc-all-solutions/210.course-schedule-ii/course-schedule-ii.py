@@ -8,33 +8,33 @@ class Solution(object):
 
     ___ dfs(start, visited, graph, ans):
       visited[start] = 1
-      for nbr in graph[start]:
-        __ visited[nbr] == 1:
-          return False
+      ___ nbr __ graph[start]:
+        __ visited[nbr] __ 1:
+          r.. False
         __ visited[nbr] != 0:
           continue
-        __ dfs(nbr, visited, graph, ans) == False:
-          return False
-      ans.append(start)
+        __ dfs(nbr, visited, graph, ans) __ False:
+          r.. False
+      ans.a..(start)
       visited[start] = 2
-      return True
+      r.. True
 
-    graph = [[] for _ in range(0, numCourses)]
-    ans = []
+    graph = [[] ___ _ __ r..(0, numCourses)]
+    ans    # list
 
-    for pre in prerequisites:
+    ___ pre __ prerequisites:
       start, end = pre
-      graph[start].append(end)
+      graph[start].a..(end)
 
-    visited = [0 for _ in range(0, numCourses)]
+    visited = [0 ___ _ __ r..(0, numCourses)]
 
-    for pre in prerequisites:
+    ___ pre __ prerequisites:
       start, end = pre
       __ visited[start] != 0:
         continue
-      __ dfs(start, visited, graph, ans) == False:
-        return []
-    for i in range(0, numCourses):
-      __ visited[i] == 0:
-        ans.append(i)
-    return ans
+      __ dfs(start, visited, graph, ans) __ False:
+        r.. []
+    ___ i __ r..(0, numCourses):
+      __ visited[i] __ 0:
+        ans.a..(i)
+    r.. ans

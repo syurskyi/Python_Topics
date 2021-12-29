@@ -57,21 +57,21 @@ class Solution:
         count
         """
         five, ten, twenty = 0, 0, 0
-        for b in bills:
-            __ b == 5:
+        ___ b __ bills:
+            __ b __ 5:
                 five += 1
-            elif b == 10:
+            ____ b __ 10:
                 __ five < 1:
-                    return False
+                    r.. False
                 five -= 1
                 ten += 1
-            else:  # 20
+            ____:  # 20
                 __ ten >= 1 and five >= 1:
                     ten -= 1  # ten first
                     five -= 1
-                elif five >= 3:
+                ____ five >= 3:
                     five -= 3
-                else:
-                    return False
+                ____:
+                    r.. False
 
-        return True
+        r.. True

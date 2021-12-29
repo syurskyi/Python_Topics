@@ -9,26 +9,26 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        numsSorted = sorted(nums)
-        i, j = 0, len(nums)-1
-        while i < j and numsSorted[i] == nums[i]:
+        numsSorted = s..(nums)
+        i, j = 0, l..(nums)-1
+        while i < j and numsSorted[i] __ nums[i]:
             i += 1
-        __ i == j:
-            return 0
-        while i < j and numsSorted[j] == nums[j]:
+        __ i __ j:
+            r.. 0
+        while i < j and numsSorted[j] __ nums[j]:
             j -= 1
-        return j-i+1
+        r.. j-i+1
     
     ___ test(self):
         testCases = [
             [2, 6, 4, 8, 10, 9, 15],
             [1, 2, 3, 5],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findUnsortedSubarray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

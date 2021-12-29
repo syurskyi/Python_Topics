@@ -1,14 +1,14 @@
 #n = 100
 # 
-import random
+_______ random
 ___ print_random_del(l):
-    for i in range(len(l),0,-1):
+    ___ i __ r..(l..(l),0,-1):
         index_to_delete  random.randint(0, i - 1)
         print(l[index_to_delete], index_to_delete)
         del l[index_to_delete]
         
 ___ print_random(l):
-    for i in range(len(l),0,-1):
+    ___ i __ r..(l..(l),0,-1):
         index_to_delete  random.randint(0, i - 1)
         print(l[index_to_delete], index_to_delete)
         l[index_to_delete]  l[i - 1]

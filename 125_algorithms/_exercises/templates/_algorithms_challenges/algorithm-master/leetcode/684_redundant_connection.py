@@ -16,39 +16,39 @@ class Solution:
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ not edges:
-            return []
+        __ n.. edges:
+            r.. []
 
         nodes = {}
 
-        for u, v in edges:
-            __ not self.union(nodes, u, v):
-                return [u, v]
+        ___ u, v __ edges:
+            __ n.. self.union(nodes, u, v):
+                r.. [u, v]
 
-        return []
+        r.. []
 
     ___ union(self, nodes, u, v):
         a = self.find(nodes, u)
         b = self.find(nodes, v)
 
-        __ a == b:
-            return False
+        __ a __ b:
+            r.. False
 
         nodes[a] = b
-        return True
+        r.. True
 
     ___ find(self, nodes, u):
-        __ u not in nodes:
+        __ u n.. __ nodes:
             nodes[u] = u
-            return u
-        __ nodes[u] == u:
-            return u
+            r.. u
+        __ nodes[u] __ u:
+            r.. u
 
         nodes[u] = self.find(nodes, nodes[u])
-        return nodes[u]
+        r.. nodes[u]
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -60,31 +60,31 @@ class Solution:
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ not edges:
-            return []
+        __ n.. edges:
+            r.. []
 
         nodes = collections.defaultdict(set)
 
-        for u, v in edges:
+        ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle
-            __ u in nodes and v in nodes and self.dfs(nodes, u, v, set()):
-                return [u, v]
+            __ u __ nodes and v __ nodes and self.dfs(nodes, u, v, set()):
+                r.. [u, v]
 
             nodes[u].add(v)
             nodes[v].add(u)
 
-        return []
+        r.. []
 
     ___ dfs(self, nodes, u, v, visited):
-        __ u == v:
-            return True
-        __ u in visited:
-            return False
+        __ u __ v:
+            r.. True
+        __ u __ visited:
+            r.. False
 
         visited.add(u)
 
-        for x in nodes[u]:
+        ___ x __ nodes[u]:
             __ self.dfs(nodes, x, v, visited):
-                return True
+                r.. True
 
-        return False
+        r.. False

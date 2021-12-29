@@ -36,36 +36,36 @@ Output: False
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ findTarget(self, root: TreeNode, k: int) -> bool:
         self.root = root
-        return self.walk(root, k)
+        r.. self.walk(root, k)
 
     ___ walk(self, node, k):
-        __ not node:
-            return False
+        __ n.. node:
+            r.. False
 
         target = k - node.val
         __ self.find(self.root, target, node):
-            return True
+            r.. True
 
-        __ self.walk(node.left, k) or self.walk(node.right, k):
-            return True
+        __ self.walk(node.left, k) o. self.walk(node.right, k):
+            r.. True
 
-        return False
+        r.. False
 
     ___ find(self, node, target, existing):
-        __ not node:
-            return False
+        __ n.. node:
+            r.. False
 
-        __ node.val == target:
-            return node != existing
+        __ node.val __ target:
+            r.. node != existing
 
         __ target < node.val:
-            return self.find(node.left, target, existing)
-        else:
-            return self.find(node.right, target, existing)
+            r.. self.find(node.left, target, existing)
+        ____:
+            r.. self.find(node.right, target, existing)

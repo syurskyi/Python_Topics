@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from strings import common_words
+____ strings _______ common_words
 
 sentence1 = ['To', 'be', 'or', 'not', 'to', 'be',
              'that', 'is', 'a', 'question']
@@ -21,4 +21,4 @@ sentence5 = ['be', 'a', 'good', 'man']
 ])
 ___ test_common_words(sentence1, sentence2, expected):
     actual = common_words(sentence1, sentence2)
-    assert actual == expected
+    ... actual __ expected

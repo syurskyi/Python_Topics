@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from animation import spinner, SPINNER_STATES as states
+____ animation _______ spinner, SPINNER_STATES as states
 
 
 @pytest.mark.parametrize("seconds, rounds, slice_", [
@@ -15,4 +15,4 @@ ___ test_spinner(monkeypatch, capfd, seconds, rounds, slice_):
     expected = states * rounds
     __ slice_:
         expected += states[:slice_]
-    assert actual == expected
+    ... actual __ expected

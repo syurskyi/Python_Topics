@@ -40,8 +40,8 @@ Note:
 It is guaranteed that Alice and Bob have different total amounts of candy.
 It is guaranteed there exists an answer.
 """
-from typing import List
-import bisect
+____ typing _______ List
+_______ bisect
 
 
 class Solution:
@@ -49,13 +49,13 @@ class Solution:
         """
         It is a search problem. Use set as search.
         """
-        sum_A = sum(A)
-        sum_B = sum(B)
+        sum_A = s..(A)
+        sum_B = s..(B)
         diff = (sum_B - sum_A) // 2  # it can be negative or positive
         set_B = set(B)
-        for a in A:
-            __ a + diff in set_B:
-                return [a, a + diff]
+        ___ a __ A:
+            __ a + diff __ set_B:
+                r.. [a, a + diff]
                 
         raise
 
@@ -66,17 +66,17 @@ class Solution:
         exchange is (sum - target) + constant
         it is a search problem
         """
-        sum_A = sum(A)
-        sum_B = sum(B)
+        sum_A = s..(A)
+        sum_B = s..(B)
         __ sum_A > sum_B:
-            return self.fairCandySwap(B, A)[::-1]
+            r.. self.fairCandySwap(B, A)[::-1]
 
         A.sort()
         B.sort()
         diff = (sum_B - sum_A) // 2
-        for a in A:
+        ___ a __ A:
             i = bisect.bisect_left(B, a + diff)
-            __ i < len(B) and B[i] == a + diff:
-                return [a, a + diff]
+            __ i < l..(B) and B[i] __ a + diff:
+                r.. [a, a + diff]
 
         raise

@@ -19,6 +19,6 @@ class Solution(object):
         while x != 0:
             t = t * 10 + x % 10
             x /= 10
-        __ not pos:
-            return -t
-        return t
+        __ n.. pos:
+            r.. -t
+        r.. t

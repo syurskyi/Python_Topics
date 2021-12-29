@@ -11,10 +11,10 @@ class Solution(object):
         :rtype: int
         """
         res = 0
-        for i in range(1, len(prices)):
+        ___ i __ r..(1, l..(prices)):
             __ prices[i]>prices[i-1]:
                 res += prices[i] - prices[i-1]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -23,11 +23,11 @@ class Solution(object):
             [2, 1],
             [3, 3],
         ]
-        for prices in testCases:
+        ___ prices __ testCases:
             print('prices: %s' % prices)
             result = self.maxProfit(prices)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

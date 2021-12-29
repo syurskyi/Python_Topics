@@ -3,5 +3,5 @@
 
 
 n = int(input())
-ar = list(map(int, input().split()))
-print(ar.count(max(ar)))
+ar = l..(map(int, input().split()))
+print(ar.c.. max(ar)))

@@ -21,24 +21,24 @@ class Solution:
         :return: a list of integers
         """
         __ rowIndex<0:
-            return None
-        __ rowIndex==0:
-            return [1]
+            r.. N..
+        __ rowIndex__0:
+            r.. [1]
 
         current_level = [1, 1]
-        for row in xrange(2, rowIndex+1):
+        ___ row __ xrange(2, rowIndex+1):
 
             # generating next level
             temp = current_level[0]
-            for col in xrange(1, row): # middle
+            ___ col __ xrange(1, row): # middle
                 summation = current_level[col] + temp
                 temp = current_level[col]
                 current_level[col] = summation
 
-            current_level.append(1)
+            current_level.a..(1)
 
-        return current_level
+        r.. current_level
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().getRow(3)

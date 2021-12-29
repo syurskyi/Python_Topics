@@ -1,8 +1,8 @@
 ___ arrayCount(dataRange, numbers):
     maxVariable = int(dataRange[1])
-    answer = []
+    answer    # list
     
-    for num in range(1,maxVariable+1):
-        answer.append(str(numbers.count(num)))
+    ___ num __ r..(1,maxVariable+1):
+        answer.a..(str(numbers.c.. num)))
     print(' '.join(answer))
-arrayCount(raw_input().split(),[int(x) for x in raw_input().split()])
+arrayCount(raw_input().s.. ,[int(x) ___ x __ raw_input().s.. ])

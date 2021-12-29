@@ -19,19 +19,19 @@ __author__ = 'Daniel'
 class BinaryIndexTree(object):
     ___ __init__(self, nums):
         """BIT 0 is dummy root"""
-        n = len(nums)
-        self.nums = [0 for _ in xrange(n+1)]
-        self.N = [0 for _ in xrange(n+1)]
-        for i, v in enumerate(nums):
+        n = l..(nums)
+        self.nums = [0 ___ _ __ xrange(n+1)]
+        self.N = [0 ___ _ __ xrange(n+1)]
+        ___ i, v __ enumerate(nums):
             self.set(i+1, v)
 
     ___ _lowbit(self, a):
-        return a & -a
+        r.. a & -a
 
     ___ set(self, i, val):
         diff = val - self.nums[i]
         self.nums[i] = val
-        while i < len(self.N):
+        while i < l..(self.N):
             self.N[i] += diff
             i += self._lowbit(i)
 
@@ -41,7 +41,7 @@ class BinaryIndexTree(object):
             ret += self.N[i]
             i -= self._lowbit(i)
 
-        return ret
+        r.. ret
 
 
 class NumArray(object):
@@ -67,4 +67,4 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        return self.bit.get(j+1)-self.bit.get(i)
+        r.. self.bit.get(j+1)-self.bit.get(i)

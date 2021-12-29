@@ -1,12 +1,12 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ make_html(element):
     ___ inner_func(func):
         @wraps(func, element)
         ___ wrapper(*args, **kwargs):
-            return f'<{element}>{func(*args, **kwargs)}</{element}>'
+            r.. f'<{element}>{func(*args, **kwargs)}</{element}>'
 
-        return wrapper
+        r.. wrapper
 
-    return inner_func
+    r.. inner_func

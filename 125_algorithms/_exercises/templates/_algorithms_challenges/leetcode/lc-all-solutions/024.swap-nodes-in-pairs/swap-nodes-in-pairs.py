@@ -12,7 +12,7 @@ class Solution(object):
     """
 
     ___ reverseList(head, k):
-      pre = None
+      pre = N..
       cur = head
       while cur and k > 0:
         tmp = cur.next
@@ -21,17 +21,17 @@ class Solution(object):
         cur = tmp
         k -= 1
       head.next = cur
-      return cur, pre
+      r.. cur, pre
 
-    __ not head or not head.next:
-      return head
+    __ n.. head o. n.. head.next:
+      r.. head
     ret = head.next
     p = head
-    pre = None
+    pre = N..
     while p:
       next, newHead = reverseList(p, 2)
       __ pre:
         pre.next = newHead
       pre = p
       p = next
-    return ret
+    r.. ret

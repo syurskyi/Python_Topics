@@ -1,4 +1,4 @@
-NORTH, EAST, SOUTH, WEST = range(4)
+NORTH, EAST, SOUTH, WEST = r..(4)
 
 class Robot(object):
     ___ __init__(self):

@@ -59,8 +59,8 @@ class TicTacToe(object):
         :type n: int
         """
         self.n = n
-        self.rows_count = [0 for _ in xrange(n)]
-        self.cols_count = [0 for _ in xrange(n)]
+        self.rows_count = [0 ___ _ __ xrange(n)]
+        self.cols_count = [0 ___ _ __ xrange(n)]
         self.diag_count = 0
         self.diag_inv_count = 0
 
@@ -82,20 +82,20 @@ class TicTacToe(object):
         :type player: int
         :rtype: int
         """
-        delta = -1 __ player == 1 else 1
+        delta = -1 __ player __ 1 ____ 1
         self.cols_count[col] += delta
         self.rows_count[row] += delta
-        __ col == row:
+        __ col __ row:
             self.diag_count += delta
-        __ col + row == self.n - 1:
+        __ col + row __ self.n - 1:
             self.diag_inv_count += delta
 
         # since winning condition is taking up the entire row or col, the row or col must be consecutive
-        is_win = lambda count: delta * count == self.n
+        is_win = l.... count: delta * count __ self.n
         __ any(map(is_win, [self.rows_count[row], self.cols_count[col], self.diag_count, self.diag_inv_count])):
-            return player
+            r.. player
 
-        return 0
+        r.. 0
 
 # Your TicTacToe object will be instantiated and called as such:
 # obj = TicTacToe(n)

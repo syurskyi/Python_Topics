@@ -17,12 +17,12 @@ implement both?
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
     ___ reverseList(self, head: ListNode) -> ListNode:
-        prev = None
+        prev = N..
         cur = head
         while cur:
             nxt = cur.next
@@ -31,15 +31,15 @@ class Solution:
             prev = cur
             cur = nxt
 
-        return prev
+        r.. prev
 
     ___ reverseList_complex(self, head: ListNode) -> ListNode:
-        __ not head:
-            return None
+        __ n.. head:
+            r.. N..
 
         prev = head
         cur = head.next
-        head.next = None
+        head.next = N..
         while prev and cur:
             nxt = cur.next
             cur.next = prev
@@ -47,4 +47,4 @@ class Solution:
             prev = cur
             cur = nxt
 
-        return prev
+        r.. prev

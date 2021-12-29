@@ -14,14 +14,14 @@ class NumArray:
         """
         :type nums: List[int]
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        n = len(nums)
+        n = l..(nums)
         self.bits = [0] * (n + 1)  # bits
         self.incr = [0] * (n + 1)  # increments
 
-        for i in range(n):
+        ___ i __ r..(n):
             self.update(i, nums[i])
 
     ___ update(self, i, val):
@@ -37,7 +37,7 @@ class NumArray:
         delta = val - self.incr[j]
         self.incr[j] = val
 
-        while j < len(self.incr):
+        while j < l..(self.incr):
             self.bits[j] += delta
             j += (j & -j)
 
@@ -47,9 +47,9 @@ class NumArray:
         :type j: int
         :rtype: int
         """
-        return self.sum(j + 1) - self.sum(i)
+        r.. self.s..(j + 1) - self.s..(i)
 
-    ___ sum(self, i):
+    ___ s..(self, i):
         res = 0
         j = i
 
@@ -57,4 +57,4 @@ class NumArray:
             res += self.bits[j]
             j -= (j & -j)
 
-        return res
+        r.. res

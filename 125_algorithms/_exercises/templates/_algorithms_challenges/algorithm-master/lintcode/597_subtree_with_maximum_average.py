@@ -18,7 +18,7 @@ Test Case:
 
 class Solution:
     max_avg = float('-inf')
-    max_node = None
+    max_node = N..
 
     """
     @param: root: the root of binary tree
@@ -26,11 +26,11 @@ class Solution:
     """
     ___ findSubtree2(self, root):
         self._traversal(root)
-        return self.max_node
+        r.. self.max_node
 
     ___ _traversal(self, node):
-        __ not node:
-            return 0, 0
+        __ n.. node:
+            r.. 0, 0
 
         left_sum, left_size = self._traversal(node.left)
         right_sum, right_size = self._traversal(node.right)
@@ -43,4 +43,4 @@ class Solution:
             self.max_avg = subtree_avg
             self.max_node = node
 
-        return subtree_sum, subtree_size
+        r.. subtree_sum, subtree_size

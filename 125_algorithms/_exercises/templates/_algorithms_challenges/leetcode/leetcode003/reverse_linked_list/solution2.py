@@ -12,7 +12,7 @@ implement both?
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution(object):
@@ -23,18 +23,18 @@ class Solution(object):
 
         Recursive (Time Limit Exceeded)
         """
-        __ head is None:
-            return None
-        else:
+        __ head __ N..
+            r.. N..
+        ____:
             rev_rest = self.reverseList(head.next)
             current = rev_rest
-            __ current is None:
-                return head
-            while current and current.next is not None:
+            __ current __ N..
+                r.. head
+            while current and current.next __ n.. N..
                 current = current.next
             current.next = head
-            head.next = None
-            return rev_rest
+            head.next = N..
+            r.. rev_rest
 
 
 n1 = ListNode(1)

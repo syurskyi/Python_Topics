@@ -1,9 +1,9 @@
-import json
-from unittest.mock import patch, Mock
+_______ json
+____ unittest.mock _______ patch, Mock
 
-import requests
+_______ requests
 
-from ipinfo import get_ip_country
+____ ipinfo _______ get_ip_country
 
 
 @patch.object(requests, 'get')
@@ -15,9 +15,9 @@ ___ test_ipinfo_mexican_ip(mockget):
                b'"postal": "12345",\n  "org": "some org"\n}')
     mockget.return_value = Mock(content=content,
                                 text=content.decode("utf-8"),
-                                json=lambda: json.loads(content),
+                                json=l....: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('187.190.38.36') == 'MX'
+    ... get_ip_country('187.190.38.36') __ 'MX'
 
 
 @patch.object(requests, 'get')
@@ -29,6 +29,6 @@ ___ test_ipinfo_japan_ip(mockget):
                b'"org": "some other org"\n}')
     mockget.return_value = Mock(content=content,
                                 text=content.decode("utf-8"),
-                                json=lambda: json.loads(content),
+                                json=l....: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('185.161.200.10') == 'JP'
+    ... get_ip_country('185.161.200.10') __ 'JP'

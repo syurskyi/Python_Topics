@@ -1,13 +1,13 @@
-from typing import Type
+____ typing _______ Type
 
 
 ___ get_profile(name, age, *args, **kwargs):
 
     # Validations
-    __ not isinstance(age, int):
+    __ n.. isi..(age, int):
         raise ValueError
 
-    __ len(args) > 5:
+    __ l..(args) > 5:
         raise ValueError
 
     user_profile = {}
@@ -15,16 +15,16 @@ ___ get_profile(name, age, *args, **kwargs):
     user_profile["name"] = name
     user_profile["age"] = age
 
-    __ len(args) > 0:
-        sport_list = [arg for arg in args]
+    __ l..(args) > 0:
+        sport_list = [arg ___ arg __ args]
         sport_list.sort()
         user_profile["sports"] = sport_list
 
-    __ len(kwargs) > 0:
-        award_dict = {key: value for key, value in kwargs.items()}
+    __ l..(kwargs) > 0:
+        award_dict = {key: value ___ key, value __ kwargs.items()}
         user_profile["awards"] = award_dict
     
-    return user_profile
+    r.. user_profile
 
 #if __name__ == "__main__":
     #print(get_profile('tim', 36, 'tennis', 'basketball', champ='helped out team in crisis'))

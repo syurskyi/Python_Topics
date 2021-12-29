@@ -9,32 +9,32 @@ class Solution(object):
         :type graph: List[List[int]]
         :rtype: bool
         """
-        n = len(graph)
+        n = l..(graph)
         colors = [-1]*n
-        for i in range(n):
-            __ colors[i] == -1 and not self.validColor(graph, colors, 0, i):
-                return False
-        return True
+        ___ i __ r..(n):
+            __ colors[i] __ -1 and n.. self.validColor(graph, colors, 0, i):
+                r.. False
+        r.. True
     
     ___ validColor(self, graph, colors, color, node):
         __ colors[node] != -1:
-            return colors[node] == color
+            r.. colors[node] __ color
         colors[node] = color
-        for nextNode in graph[node]:
-            __ not self.validColor(graph, colors, 1-color, nextNode):
-                return False
-        return True
+        ___ nextNode __ graph[node]:
+            __ n.. self.validColor(graph, colors, 1-color, nextNode):
+                r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
             [[1,3], [0,2], [1,3], [0,2]],
             [[1,2,3], [0,2], [0,1,3], [0,2]],
         ]
-        for graph in testCases:
+        ___ graph __ testCases:
             print('graph: %s' % graph)
             result = self.isBipartite(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

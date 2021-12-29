@@ -5,4 +5,4 @@ class Solution:
         :type T: str
         :rtype: str
         """
-        return ''.join(sorted(T, key=lambda c: S.find(c)))
+        r.. ''.join(s..(T, key=l.... c: S.find(c)))

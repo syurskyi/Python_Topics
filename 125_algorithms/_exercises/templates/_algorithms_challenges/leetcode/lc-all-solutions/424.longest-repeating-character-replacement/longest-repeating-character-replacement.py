@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -13,11 +13,11 @@ class Solution(object):
     start = 0
     maxCount = 0
     window = deque([])
-    for end in range(0, len(s)):
+    ___ end __ r..(0, l..(s)):
       d[s[end]] = d.get(s[end], 0) + 1
       maxCount = max(maxCount, d[s[end]])
       __ end - start + 1 - maxCount > k:
         d[s[start]] -= 1
         start += 1
       ans = max(ans, end - start + 1)
-    return ans
+    r.. ans

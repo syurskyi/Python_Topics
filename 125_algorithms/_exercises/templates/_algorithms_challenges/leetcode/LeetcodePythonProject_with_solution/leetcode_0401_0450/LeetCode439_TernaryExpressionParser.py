@@ -6,53 +6,53 @@ Created on Apr 17, 2017
 
 class Solution(object):
     ___ parseTernary(self, expression):
-        __ not expression: return ''
-        stack = []
-        for i in range(len(expression)-1, -1, -1):
+        __ n.. expression: r.. ''
+        stack    # list
+        ___ i __ r..(l..(expression)-1, -1, -1):
             c = expression[i]
-            __ stack and stack[-1] == '?':
+            __ stack and stack[-1] __ '?':
                 stack.pop()
                 first = stack.pop()
                 stack.pop()
                 second = stack.pop()
-                __ c == 'T':
-                    stack.append(first)
-                else:
-                    stack.append(second)
-            else:
-                stack.append(c)
-        return stack[-1]
+                __ c __ 'T':
+                    stack.a..(first)
+                ____:
+                    stack.a..(second)
+            ____:
+                stack.a..(c)
+        r.. stack[-1]
     
     ___ parseTernary_own(self, expression):
-        __ len(expression) == 1:
-            return expression
-        __ expression[0] == 'T':
+        __ l..(expression) __ 1:
+            r.. expression
+        __ expression[0] __ 'T':
             subExp = ''
             i = 2
             count = 0
-            while i < len(expression):
-                __ expression[i] == '?':
+            while i < l..(expression):
+                __ expression[i] __ '?':
                     count += 1
-                elif expression[i] == ':':
+                ____ expression[i] __ ':':
                     count -= 1
-                    __ count == -1:
+                    __ count __ -1:
                         subExp = expression[2:i]
                         break
                 i+=1
-        else:
+        ____:
             subExp = ''
             i = 2
             count = 0
-            while i < len(expression):
-                __ expression[i] == '?':
+            while i < l..(expression):
+                __ expression[i] __ '?':
                     count += 1
-                elif expression[i] == ':':
+                ____ expression[i] __ ':':
                     count -= 1
-                    __ count == -1:
+                    __ count __ -1:
                         subExp = expression[i+1:]
                         break
                 i+=1
-        __ len(subExp) == 1:
-            return subExp
-        else:
-            return self.parseTernary(subExp)
+        __ l..(subExp) __ 1:
+            r.. subExp
+        ____:
+            r.. self.parseTernary(subExp)

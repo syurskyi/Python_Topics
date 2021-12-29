@@ -1,17 +1,17 @@
-from collections import OrderedDict
-from statistics import median
+____ collections _______ OrderedDict
+____ statistics _______ median
 
-___ calc_median_from_dict(d: dict) -> float:
+___ calc_median_from_dict(d: d..) -> float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
     Example:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
-    values_sorted = dict(OrderedDict(sorted(d.items(), key=lambda t: t[0])))
-    length = len(values_sorted)
+    values_sorted = d..(OrderedDict(s..(d.items(), key=l.... t: t[0])))
+    length = l..(values_sorted)
     mid = (length - 1) / 2
-    __ length % 2 == 0 or length == 1:
-        return median(values_sorted)
-    else:
-        return values_sorted.get(mid)
+    __ length % 2 __ 0 o. length __ 1:
+        r.. median(values_sorted)
+    ____:
+        r.. values_sorted.get(mid)

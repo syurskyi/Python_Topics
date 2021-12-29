@@ -26,7 +26,7 @@ Notes:
 1 <= worker.length <= 10000
 difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -34,17 +34,17 @@ class Solution:
         """
         Greedy? Sort by profit
         """
-        tasks = list(sorted(zip(profit, difficulty)))
+        tasks = l..(s..(zip(profit, difficulty)))
         worker.sort()
-        i = len(tasks) - 1
-        j = len(worker) - 1
+        i = l..(tasks) - 1
+        j = l..(worker) - 1
         ret = 0
         while i >= 0 and j >= 0:
             pro, diff = tasks[i]
             __ worker[j] >= diff:
                 ret += pro
                 j -= 1
-            else:
+            ____:
                 i -= 1
 
-        return ret
+        r.. ret

@@ -15,20 +15,20 @@ class Solution:
     @return: an integer
     """
     ___ sixDegrees(self, graph, s, t):
-        __ not graph or not s or not t:
-            return -1
+        __ n.. graph o. n.. s o. n.. t:
+            r.. -1
         __ s __ t:
-            return 0
+            r.. 0
 
         degree = {s: 0}
         queue = [s]
-        for node in queue:
-            for _node in node.neighbors:
-                __ _node in degree:
+        ___ node __ queue:
+            ___ _node __ node.neighbors:
+                __ _node __ degree:
                     continue
                 degree[_node] = degree[node] + 1
                 __ _node __ t:
-                    return degree[_node]
-                queue.append(_node)
+                    r.. degree[_node]
+                queue.a..(_node)
 
-        return -1
+        r.. -1

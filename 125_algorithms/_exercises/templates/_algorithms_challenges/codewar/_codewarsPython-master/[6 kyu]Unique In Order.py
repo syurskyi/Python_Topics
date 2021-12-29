@@ -1,6 +1,6 @@
 ___ unique_in_order(iterable):
-    res = []
-    for c in iterable:
-        __ len(res) == 0 or res[-1] != c:
-            res.append(c)
-    return res
+    res    # list
+    ___ c __ iterable:
+        __ l..(res) __ 0 o. res[-1] != c:
+            res.a..(c)
+    r.. res

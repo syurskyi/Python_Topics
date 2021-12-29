@@ -4,20 +4,20 @@ class Solution:
         :type s: str
         :rtype: List[str]
         """
-        __ not s:
-            return ['']
-        ans = []
+        __ n.. s:
+            r.. ['']
+        ans    # list
         self.dfs(s, 0, ans, [])
-        return ans
+        r.. ans
 
     ___ dfs(self, s, i, ans, path):
-        __ i == len(s):
-            ans.append(''.join(path))
-            return
+        __ i __ l..(s):
+            ans.a..(''.join(path))
+            r..
 
-        options = [s[i]] __ s[i].isdigit() else [s[i].lower(), s[i].upper()]
+        options = [s[i]] __ s[i].isdigit() ____ [s[i].lower(), s[i].upper()]
 
-        for c in options:
-            path.append(c)
+        ___ c __ options:
+            path.a..(c)
             self.dfs(s, i + 1, ans, path)
             path.pop()

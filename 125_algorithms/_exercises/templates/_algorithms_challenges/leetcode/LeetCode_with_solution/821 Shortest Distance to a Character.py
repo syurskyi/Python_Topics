@@ -15,7 +15,7 @@ S string length is in [1, 10000].
 C is a single character, and guaranteed to be in string S.
 All letters in S and C are lowercase.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -25,16 +25,16 @@ class Solution:
         """
         idx = [
             i
-            for i in range(len(S))
-            __ S[i] == C
+            ___ i __ r..(l..(S))
+            __ S[i] __ C
         ]
         idx = [-float("inf")] + idx + [float("inf")]
-        ret = []
+        ret    # list
         i = 0
-        for j in range(len(S)):
-            while not idx[i] <= j < idx[i+1]:
+        ___ j __ r..(l..(S)):
+            while n.. idx[i] <= j < idx[i+1]:
                 i += 1
 
-            ret.append(min(j - idx[i], idx[i+1] - j))
+            ret.a..(m..(j - idx[i], idx[i+1] - j))
 
-        return ret
+        r.. ret

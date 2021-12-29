@@ -1,4 +1,4 @@
-import re
+_______ re
 DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
 START_VALUE = 1
 
@@ -11,23 +11,23 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
     
     
-    matrix = []
-    for i,line in enumerate(grid.splitlines()):
-        __ i % 2 == 1:
-            values = list(map(int,re.split(r'\D+',line)))
-            __ START_VALUE in values:
-                start_row = len(matrix)
+    matrix    # list
+    ___ i,line __ enumerate(grid.splitlines()):
+        __ i % 2 __ 1:
+            values = l..(map(int,re.split(r'\D+',line)))
+            __ START_VALUE __ values:
+                start_row = l..(matrix)
                 start_col = values.index(START_VALUE)
-            matrix.append(values)
+            matrix.a..(values)
     
 
-    length = len(matrix)
+    length = l..(matrix)
 
     goal = length**2
     current_row,current_col = start_row,start_col
     current_value = START_VALUE 
 
-    previous_direction = None
+    previous_direction = N..
 
     
     print(current_value,end=' ')
@@ -35,13 +35,13 @@ ___ print_sequence_route(grid, start_coordinates_ N..
         directions = ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT))
 
 
-        for neighbor_x,neighbor_y,direction in directions:
+        ___ neighbor_x,neighbor_y,direction __ directions:
             __ 0 <= neighbor_x < length and 0 <= neighbor_y < length:
-                __ matrix[neighbor_x][neighbor_y] == current_value + 1:
-                    __ previous_direction is not None and direction != previous_direction:
+                __ matrix[neighbor_x][neighbor_y] __ current_value + 1:
+                    __ previous_direction __ n.. N.. and direction != previous_direction:
                         print(direction)
                         previous_direction = direction
-                    elif previous_direction is None:
+                    ____ previous_direction __ N..
                         previous_direction = direction
                     print(current_value + 1,end=' ')
 
@@ -60,7 +60,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     small_grid = """

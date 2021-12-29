@@ -6,9 +6,9 @@ your program should raise a ValueError with a meaningful error message.
 
 Feel free to reuse your code for the series exercise!
 """
-import unittest
+_______ unittest
 
-from series import largest_product, slices
+____ series _______ largest_product, slices
 
 
 class SeriesTest(unittest.TestCase):
@@ -42,5 +42,5 @@ class SeriesTest(unittest.TestCase):
             largest_product("012", 4)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -20,16 +20,16 @@ class Solution:
     # @param triangle, a list of lists of integers
     # @return an integer
     ___ minimumTotal(self, triangle):
-        t = [[0 for col in row] for row in triangle]  # Initialize t
-        n = len(triangle)
+        t = [[0 ___ col __ row] ___ row __ triangle]  # Initialize t
+        n = l..(triangle)
         row = n - 1
         while row >= 0:
-            __ row == n - 1:
-                for col in range(row + 1):
+            __ row __ n - 1:
+                ___ col __ r..(row + 1):
                     t[row][col] = triangle[row][col]
-            else:
-                for col in range(row + 1):
-                    minsum = min(t[row + 1][col], t[row + 1][col + 1])
+            ____:
+                ___ col __ r..(row + 1):
+                    minsum = m..(t[row + 1][col], t[row + 1][col + 1])
                     t[row][col] = triangle[row][col] + minsum
             row -= 1
-        return t[0][0]
+        r.. t[0][0]

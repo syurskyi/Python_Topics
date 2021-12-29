@@ -1,22 +1,22 @@
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com/{}"
 FILE_NAME = "mutpy.out"
 TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
-__ not PATH.exists():
+__ n.. PATH.exists():
     urlretrieve(S3.format(FILE_NAME), PATH)
 
 
 ___ _get_data(path=PATH):
     with open(path) as f:
-        return [line.rstrip() for line in f.readlines()]
+        r.. [line.rstrip() ___ line __ f.readlines()]
 
 
-___ filter_killed_mutants(mutpy_output: list = None) -> list:
+___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
     """Read in the passed in mutpy output and filter out the code snippets of
        mutation tests that were killed. Surviving mutants should be shown in
        full, as well the surrounding output.
@@ -67,24 +67,24 @@ ___ filter_killed_mutants(mutpy_output: list = None) -> list:
       
       Return the filtered output as a list of lines.
     """
-    __ mutpy_output is None:
+    __ mutpy_output __ N..
         mutpy_output = _get_data()
 
-    output = []
-    test_result = []
+    output    # list
+    test_result    # list
     in_test = False
-    for line in mutpy_output:
+    ___ line __ mutpy_output:
         __ in_test:
             __ line.startswith('['):
-                __ 'survived' in line:
+                __ 'survived' __ line:
                     output.extend(test_result)
                 test_result.clear()
-                output.append(line)
+                output.a..(line)
                 in_test = False
-            else:
-                test_result.append(line)
-        else:
+            ____:
+                test_result.a..(line)
+        ____:
             __ line.startswith('   - [#'):
                 in_test = True
-            output.append(line)
-    return output
+            output.a..(line)
+    r.. output

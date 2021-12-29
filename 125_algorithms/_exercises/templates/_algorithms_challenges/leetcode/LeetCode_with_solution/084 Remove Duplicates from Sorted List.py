@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ deleteDuplicates(self, head):
@@ -21,25 +21,25 @@ class Solution:
         :return: ListNode
         """
         # trivial
-        __ not head:
-            return head
+        __ n.. head:
+            r.. head
         # main
         closed_ptr = head
         open_ptr = head.next
         while open_ptr:
             # find the non-duplicate
-            while open_ptr and closed_ptr.val==open_ptr.val:
+            while open_ptr and closed_ptr.val__open_ptr.val:
                 open_ptr = open_ptr.next
 
             closed_ptr.next = open_ptr
             closed_ptr = closed_ptr.next
-            open_ptr = open_ptr.next __ open_ptr else None
+            open_ptr = open_ptr.next __ open_ptr ____ N..
 
-        return head
+        r.. head
 
-__ __name__=="__main__":
-    nodes = [ListNode(1) for _ in range(2)]
-    for i in range(len(nodes)-1):
+__ __name____"__main__":
+    nodes = [ListNode(1) ___ _ __ r..(2)]
+    ___ i __ r..(l..(nodes)-1):
         nodes[i].next = nodes[i+1]
 
     Solution().deleteDuplicates(nodes[0])

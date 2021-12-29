@@ -3,4 +3,4 @@ ___ tail(filepath, n):
        strip newlines and return a list of the last n lines"""
     file = open(filepath, "r")
     data = file.read()
-    return [lines for lines in data.splitlines()[-n:]]
+    r.. [lines ___ lines __ data.splitlines()[-n:]]

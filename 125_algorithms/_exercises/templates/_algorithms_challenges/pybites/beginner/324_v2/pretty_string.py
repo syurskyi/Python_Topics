@@ -1,5 +1,5 @@
-import pprint
-from typing import Any
+_______ pprint
+____ typing _______ Any
 
 
 ___ pretty_string(obj: Any) -> str:
@@ -7,4 +7,4 @@ ___ pretty_string(obj: Any) -> str:
     
 
     pp = pprint.PrettyPrinter(width=60,depth=2,sort_dicts=True)
-    return pp.pformat(obj)
+    r.. pp.pformat(obj)

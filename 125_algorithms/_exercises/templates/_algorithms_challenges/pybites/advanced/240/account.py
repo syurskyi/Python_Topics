@@ -1,5 +1,5 @@
 # source: https://dbader.org/blog/python-dunder-methods
-from functools import total_ordering
+____ functools _______ total_ordering
 
 
 @total_ordering
@@ -10,40 +10,40 @@ class Account:
         'This is the constructor that lets us create objects from this class'
         self.owner = owner
         self.amount = amount
-        self._transactions = []
+        self._transactions    # list
 
     ___ __repr__(self):
-        return 'Account({!r}, {!r})'.format(self.owner, self.amount)
+        r.. 'Account({!r}, {!r})'.format(self.owner, self.amount)
 
     ___ __str__(self):
-        return 'Account of {} with starting amount: {}'.format(self.owner,
+        r.. 'Account of {} with starting amount: {}'.format(self.owner,
                                                                self.amount)
 
     ___ add_transaction(self, amount):
-        __ not isinstance(amount, int):
+        __ n.. isi..(amount, int):
             raise ValueError('please use int for amount')
-        self._transactions.append(amount)
+        self._transactions.a..(amount)
 
     @property
     ___ balance(self):
-        return self.amount + sum(self._transactions)
+        r.. self.amount + s..(self._transactions)
 
     ___ __len__(self):
-        return len(self._transactions)
+        r.. l..(self._transactions)
 
     ___ __getitem__(self, position):
-        return self._transactions[position]
+        r.. self._transactions[position]
 
     ___ __eq__(self, other):
-        return self.balance == other.balance
+        r.. self.balance __ other.balance
 
     ___ __lt__(self, other):
-        return self.balance < other.balance
+        r.. self.balance < other.balance
 
     ___ __add__(self, other):
         owner = '{}&{}'.format(self.owner, other.owner)
         start_amount = self.amount + other.amount
         acc = Account(owner, start_amount)
-        for t in list(self) + list(other):
+        ___ t __ l..(self) + l..(other):
             acc.add_transaction(t)
-        return acc
+        r.. acc

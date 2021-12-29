@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ hasCycle(self, head):
@@ -43,7 +43,7 @@ class Solution:
         while hare and hare.next and tortoise:
             hare = hare.next.next
             tortoise = tortoise.next
-            __ hare==tortoise:
-                return True
+            __ hare__tortoise:
+                r.. True
 
-        return False
+        r.. False

@@ -15,16 +15,16 @@ class Solution(object):
         res = 0
         j = 0
         count = 0
-        for i in range(len(arr)):
+        ___ i __ r..(l..(arr)):
             __ l <= arr[i] <= r:
                 res += i-j+1
                 count = i-j+1
-            elif arr[i] < l:
+            ____ arr[i] < l:
                 res += count
-            else:
+            ____:
                 j = i+1
                 count = 0
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -41,10 +41,10 @@ class Solution(object):
                 2, 8
             ],
         ]
-        for arr, l, r in testCases:
+        ___ arr, l, r __ testCases:
             result = self.numSubarrayBoundedMax(arr, l, r)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

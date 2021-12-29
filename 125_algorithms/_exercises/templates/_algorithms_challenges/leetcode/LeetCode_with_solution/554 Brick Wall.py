@@ -32,8 +32,8 @@ The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is
 in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -42,12 +42,12 @@ class Solution:
         Iterate and count edge at a position
         """
         h = defaultdict(int)
-        m = len(wall)
-        for i in range(m):
+        m = l..(wall)
+        ___ i __ r..(m):
             s = 0
-            for j in range(len(wall[i]) - 1):
+            ___ j __ r..(l..(wall[i]) - 1):
                 # don't count the two endings
                 s += wall[i][j]
                 h[s] += 1
 
-        return m - max(h.values() or [0])
+        r.. m - max(h.values() o. [0])

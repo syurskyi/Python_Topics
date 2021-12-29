@@ -5,16 +5,16 @@ class Solution:
         :type K: int
         :rtype: int
         """
-        __ N == 1:
-            return 0
+        __ N __ 1:
+            r.. 0
 
-        __ K % 2 == 0:
-            __ self.kthGrammar(N - 1, K // 2) == 0:
-                return 1
-            else:
-                return 0
-        else:
-            __ self.kthGrammar(N - 1, (K + 1) // 2) == 0:
-                return 0
-            else:
-                return 1
+        __ K % 2 __ 0:
+            __ self.kthGrammar(N - 1, K // 2) __ 0:
+                r.. 1
+            ____:
+                r.. 0
+        ____:
+            __ self.kthGrammar(N - 1, (K + 1) // 2) __ 0:
+                r.. 0
+            ____:
+                r.. 1

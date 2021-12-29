@@ -1,23 +1,23 @@
-from random import randint
+____ random _______ randint
 
 ___ num_search(first,last):
-    mid  len(first) //2
+    mid  l..(first) //2
     mini  0
-    maxi  len(first) - 1
+    maxi  l..(first) - 1
     w___ first[mid] ! last and mini < maxi:
         __ last > first[mid]:
             mini  mid + 1
-        else:
+        ____:
             maxi  mid -1
         mid  (mini + maxi) // 2
     __ mini > maxi:
-        return N..
-    else:
-        return mid
+        r.. N..
+    ____:
+        r.. mid
 
 x  []
-for i in range(15):
-    x.append(randint(1,20))
+___ i __ r..(15):
+    x.a..(randint(1,20))
 x.sort()
 print(x)
 

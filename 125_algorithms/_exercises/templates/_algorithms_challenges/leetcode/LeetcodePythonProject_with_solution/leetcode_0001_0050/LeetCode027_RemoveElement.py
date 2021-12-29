@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: int
         """
         j = 0
-        for num in nums:
+        ___ num __ nums:
             __ num != val:
                 nums[j] = num
                 j += 1
-        return j
+        r.. j

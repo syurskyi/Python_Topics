@@ -6,19 +6,19 @@ Created on Apr 8, 2017
 
 class Solution(object):
     ___ removeKdigits(self, num, k):
-        n = len(num)
+        n = l..(num)
         longest = n-k
-        __ k >= n: return '0'
-        stack = []
-        for c in num:
+        __ k >= n: r.. '0'
+        stack    # list
+        ___ c __ num:
             while k > 0 and stack and stack[-1] > c:
                 stack.pop()
                 k -= 1
-            stack.append(c)
+            stack.a..(c)
         stack = stack[:longest]
         res = ''.join(stack)
         res = res.lstrip('0')
-        return res __ res else '0'
+        r.. res __ res ____ '0'
     
     ___ test(self):
         testCases = [
@@ -29,12 +29,12 @@ class Solution(object):
             ("1234567890", 9),
             ("1173", 2),
         ]
-        for num, k in testCases:
+        ___ num, k __ testCases:
             print('num: %s' % num)
             print('k: %s' % k)
             result = self.removeKdigits(num, k)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

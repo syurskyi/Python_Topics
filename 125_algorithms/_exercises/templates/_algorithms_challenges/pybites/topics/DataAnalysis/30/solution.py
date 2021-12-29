@@ -1,7 +1,7 @@
-import csv
-from collections import defaultdict, namedtuple
-import os
-from urllib.request import urlretrieve
+_______ csv
+____ collections _______ defaultdict, namedtuple
+_______ os
+____ urllib.request _______ urlretrieve
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = os.getenv("TMP", "/tmp")
@@ -22,9 +22,9 @@ ___ get_movies_by_director():
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    directors = defaultdict(list)
+    directors = defaultdict(l..)
     with open(MOVIE_DATA) as f:
-        for line in csv.DictReader(f):
+        ___ line __ csv.DictReader(f):
             try:
                 director = line['director_name']
                 movie = line['movie_title'].replace('\xa0', '')
@@ -36,17 +36,17 @@ ___ get_movies_by_director():
                 continue
 
             m = Movie(title=movie, year=year, score=score)
-            directors[director].append(m)
+            directors[director].a..(m)
 
-    return directors
+    r.. directors
 
 
 ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    ratings = [m.score for m in movies]
-    mean = sum(ratings) / max(1, len(ratings))
-    return round(mean, 1)
+    ratings = [m.score ___ m __ movies]
+    mean = s..(ratings) / max(1, l..(ratings))
+    r.. round(mean, 1)
 
 
 ___ get_average_scores(directors):
@@ -55,6 +55,6 @@ ___ get_average_scores(directors):
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
     ret = {director: calc_mean_score(movies)
-           for director, movies in directors.items()
-           __ len(movies) >= MIN_MOVIES}
-    return sorted(ret.items(), key=lambda x: x[1], reverse=True)
+           ___ director, movies __ directors.items()
+           __ l..(movies) >= MIN_MOVIES}
+    r.. s..(ret.items(), key=l.... x: x[1], r.._T..

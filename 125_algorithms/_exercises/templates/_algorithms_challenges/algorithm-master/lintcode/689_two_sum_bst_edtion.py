@@ -14,7 +14,7 @@ class Solution:
     @return: two numbers from tree which sum is n
     """
     ___ twoSum(self, root, n):
-        self.left = self.right = None
+        self.left = self.right = N..
         self.head = self.tail = root
 
         self.pre()
@@ -23,12 +23,12 @@ class Solution:
         while self.left != self.right:
             _sum = self.left.val + self.right.val
 
-            __ _sum == n:
-                return [self.left.val, self.right.val]
+            __ _sum __ n:
+                r.. [self.left.val, self.right.val]
 
             __ _sum < n:
                 self.nxt()
-            else:
+            ____:
                 self.pre()
 
     ___ pre(self):
@@ -39,16 +39,16 @@ class Solution:
                 while cur.left and cur.left != self.tail:
                     cur = cur.left
 
-                __ cur.left == self.tail:
+                __ cur.left __ self.tail:
                     self.right = self.tail
 
-                    cur.left = None
+                    cur.left = N..
                     self.tail = self.tail.left
                     break
-                else:
+                ____:
                     cur.left = self.tail
                     self.tail = self.tail.right
-            else:
+            ____:
                 self.right = self.tail
                 self.tail = self.tail.left
                 break
@@ -61,16 +61,16 @@ class Solution:
                 while cur.right and cur.right != self.head:
                     cur = cur.right
 
-                __ cur.right == self.head:
+                __ cur.right __ self.head:
                     self.left = self.head
 
-                    cur.right = None
+                    cur.right = N..
                     self.head = self.head.right
                     break
-                else:
+                ____:
                     cur.right = self.head
                     self.head = self.head.left
-            else:
+            ____:
                 self.left = self.head
                 self.head = self.head.right
                 break

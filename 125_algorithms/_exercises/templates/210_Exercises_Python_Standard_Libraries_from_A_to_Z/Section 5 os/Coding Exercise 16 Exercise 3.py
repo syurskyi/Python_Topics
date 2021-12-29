@@ -3,8 +3,8 @@
 # . Sort this list alphabetically.
 # In response, print the names  list to the console.
 
-import os
+_______ os
 
 print(help(os.listdir))
-names  sorted([name for name in os.listdir() __ name.startswith('e')])
+names  s..([name ___ name __ os.listdir() __ name.startswith('e')])
 print(names)

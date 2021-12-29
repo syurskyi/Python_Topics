@@ -14,7 +14,7 @@ By the way, you can submit ideas/needs/wishes for Bites here. Cheers!
 
 See you in the next Bite and keep calm and code in Python!
 """
-words = "Let's see how4 this 1sorts, hope it works 4 this B1te 22 55abc abc55".split()
+words = "Let's see how4 this 1sorts, hope it works 4 this B1te 22 55abc abc55".s.. 
 
 ___ sort_words_case_insensitively(words):
     """Sort the provided word list ignoring case, and numbers last
@@ -22,23 +22,23 @@ ___ sort_words_case_insensitively(words):
         numbers you only need to check the first char of the word)
     """
     # New list for numbers
-    nums = []
+    nums    # list
     print(f"### Initial list {words}")
     ### IMPORTANT!!!! DO NOT modify a list when iterating over it!!!!
-    for word in words:
+    ___ word __ words:
         __ word[0].isdigit():
-            nums.append(word)
-    nums = sorted(nums)
-    for num in nums:
+            nums.a..(word)
+    nums = s..(nums)
+    ___ num __ nums:
         words.remove(num)
 
-    s = sorted(words, key=lambda s: s.casefold())
+    s = s..(words, key=l.... s: s.casefold())
     print(s)
     print(nums)
-    for num in nums:
-        s.append(num)
+    ___ num __ nums:
+        s.a..(num)
     print(s)
-    return s
+    r.. s
 
 
 sort_words_case_insensitively(words)

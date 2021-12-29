@@ -11,7 +11,7 @@ __author__ = 'Daniel'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
@@ -28,10 +28,10 @@ class Solution:
         pre = dummy
         while pre.next:
             cur = pre.next
-            __ cur.val == val:
+            __ cur.val __ val:
                 pre.next = cur.next
                 continue
 
             pre = pre.next
 
-        return dummy.next
+        r.. dummy.next

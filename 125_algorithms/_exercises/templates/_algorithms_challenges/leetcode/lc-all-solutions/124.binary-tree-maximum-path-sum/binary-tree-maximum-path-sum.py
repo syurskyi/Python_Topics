@@ -13,8 +13,8 @@ class Solution(object):
     """
 
     ___ dfs(root):
-      __ not root: return (0, float("-inf"))
+      __ n.. root: r.. (0, float("-inf"))
       (l, lm), (r, rm) = map(dfs, [root.left, root.right])
-      return (max(root.val, root.val + max(l, r)), max(lm, rm, root.val + max(l, r), root.val, root.val + l + r))
+      r.. (max(root.val, root.val + max(l, r)), max(lm, rm, root.val + max(l, r), root.val, root.val + l + r))
 
-    return dfs(root)[1]
+    r.. dfs(root)[1]

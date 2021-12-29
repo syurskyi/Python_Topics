@@ -9,33 +9,33 @@ class Solution(object):
         :type ops: List[str]
         :rtype: int
         """
-        valids = []
+        valids    # list
         res = 0
-        for c in ops:
-            __ c == '+':
+        ___ c __ ops:
+            __ c __ '+':
                 res += valids[-1]+valids[-2]
-                valids.append(valids[-1]+valids[-2])
-            elif c == 'D':
+                valids.a..(valids[-1]+valids[-2])
+            ____ c __ 'D':
                 res += valids[-1]*2
-                valids.append(valids[-1]*2)
-            elif c == 'C':
+                valids.a..(valids[-1]*2)
+            ____ c __ 'C':
                 d = valids.pop()
                 res -= d
-            else:
+            ____:
                 res += int(c)
-                valids.append(int(c))
-        return res
+                valids.a..(int(c))
+        r.. res
     
     ___ test(self):
         testCases = [
 #             ["5","2","C","D","+"],
             ["5","-2","4","C","D","9","+","+"],
         ]
-        for ops in testCases:
+        ___ ops __ testCases:
             print('ops: %s' % ops)
             result = self.calPoints(ops)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

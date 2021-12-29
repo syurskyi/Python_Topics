@@ -1,4 +1,4 @@
-from enum import Enum
+____ enum _______ Enum
 
 
 
@@ -15,12 +15,12 @@ class Score(Enum):
     
 
     ___ __str__(self):
-        return f"{self.name} => {THUMBS_UP * self.value}"
+        r.. f"{self.name} => {THUMBS_UP * self.value}"
 
 
 
     @classmethod
     ___ average(cls):
-        return (cls.BEGINNER.value + cls.INTERMEDIATE.value + cls.ADVANCED.value + cls.CHEATED.value)/4
+        r.. (cls.BEGINNER.value + cls.INTERMEDIATE.value + cls.ADVANCED.value + cls.CHEATED.value)/4
 
 

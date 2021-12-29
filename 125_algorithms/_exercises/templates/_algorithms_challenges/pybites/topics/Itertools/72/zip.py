@@ -5,5 +5,5 @@ x = zip(a, b)
 
 print(x)
 
-for a, b in x:
+___ a, b __ x:
     print(a,b)

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from conversion import dec_to_base
+____ conversion _______ dec_to_base
 
 
 @pytest.mark.parametrize("number, base, expected", [
@@ -12,4 +12,4 @@ from conversion import dec_to_base
     (2020, 8, 3744),
 ])
 ___ test_dec_to_base(number, base, expected):
-    assert dec_to_base(number, base) == expected
+    ... dec_to_base(number, base) __ expected

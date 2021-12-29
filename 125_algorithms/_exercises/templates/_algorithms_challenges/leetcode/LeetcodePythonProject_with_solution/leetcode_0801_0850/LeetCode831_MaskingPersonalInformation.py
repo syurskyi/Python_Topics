@@ -9,23 +9,23 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
-        import re
+        _______ re
         s = S
         __ re.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
             s = s.lower()
             ind = s.find('@')
             name = s[:ind]
             mail = s[ind:]
-            return name[0]+'*****'+name[-1]+mail
-        else:
+            r.. name[0]+'*****'+name[-1]+mail
+        ____:
             s0 = re.sub('[{|}|(|)|\+|\-|\s]', '', s)
-            __ len(s0) == 11 and s0[0] == '1' and s[0]!='+':
+            __ l..(s0) __ 11 and s0[0] __ '1' and s[0]!='+':
                 s0 = s0[1:]
-            __ len(s0) == 10:
-                return '***-***-%s' % s0[-4:]
-            else:
-                cnt = len(s0)-10
-                return '+'+'*'*cnt+('-***-***-%s' % s0[-4:])
+            __ l..(s0) __ 10:
+                r.. '***-***-%s' % s0[-4:]
+            ____:
+                cnt = l..(s0)-10
+                r.. '+'+'*'*cnt+('-***-***-%s' % s0[-4:])
     
     ___ test(self):
         testCases = [
@@ -36,11 +36,11 @@ class Solution(object):
             "(3906)2 07143 711",
             "+1(19)5 246 5964",
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.maskPII(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

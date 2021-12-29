@@ -5,18 +5,18 @@ class Solution(object):
     :rtype: int
     """
     pos = 0
-    bound = len(nums)
-    while pos < len(nums) - 1:
+    bound = l..(nums)
+    while pos < l..(nums) - 1:
       dis = nums[pos]
-      __ dis == 0:
-        return False
+      __ dis __ 0:
+        r.. False
       farthest = posToFarthest = 0
-      for i in range(pos + 1, min(pos + dis + 1, bound)):
+      ___ i __ r..(pos + 1, m..(pos + dis + 1, bound)):
         canReach = i + nums[i]
-        __ i == len(nums) - 1:
-          return True
+        __ i __ l..(nums) - 1:
+          r.. True
         __ canReach > farthest:
           farthest = canReach
           posToFarthest = i
       pos = posToFarthest
-    return True __ pos >= len(nums) - 1 else False
+    r.. True __ pos >= l..(nums) - 1 ____ False

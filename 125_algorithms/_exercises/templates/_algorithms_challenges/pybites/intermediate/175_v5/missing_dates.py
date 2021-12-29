@@ -1,4 +1,4 @@
-from datetime import timedelta
+____ datetime _______ timedelta
 
 
 ___ get_missing_dates(dates):
@@ -10,9 +10,9 @@ ___ get_missing_dates(dates):
 
        See the Bite description and tests for example outputs.
     """
-    dt = sorted(dates)
+    dt = s..(dates)
     start_date, end_date = dt[0], dt[-1]
     rng: timedelta = end_date - start_date
-    return [start_date + timedelta(d)
-            for d in range(rng.days)
-            __ (start_date + timedelta(d)) not in dt]
+    r.. [start_date + timedelta(d)
+            ___ d __ r..(rng.days)
+            __ (start_date + timedelta(d)) n.. __ dt]

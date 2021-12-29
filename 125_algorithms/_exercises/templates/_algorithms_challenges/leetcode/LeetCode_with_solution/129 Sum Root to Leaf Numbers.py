@@ -20,8 +20,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ sumNumbers(self, root):
@@ -29,10 +29,10 @@ class Solution:
         :param root: TreeNode
         :return: Integer
         """
-        result = []
+        result    # list
         self.dfs(root, "", result)
-        result = [int(element) for element in result]
-        return sum(result)
+        result = [int(element) ___ element __ result]
+        r.. s..(result)
 
     ___ dfs(self, root, cur, result):
         """
@@ -42,12 +42,12 @@ class Solution:
         :param result: list
         :return: None
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
         cur = cur+str(root.val)
-        __ not root.left and not root.right:
-            result.append(cur)
-            return
+        __ n.. root.left and n.. root.right:
+            result.a..(cur)
+            r..
 
         __ root.left:
             self.dfs(root.left, cur, result)
@@ -63,14 +63,14 @@ class Solution:
         :param result: list
         :return: None
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
-        cur.append(root.val)
+        cur.a..(root.val)
 
-        __ not root.left and not root.right:
-            result.append(cur)
-            return
+        __ n.. root.left and n.. root.right:
+            result.a..(cur)
+            r..
 
         __ root.left:
             self.dfs_error(root.left, cur, result)  # reference to the same list
@@ -78,7 +78,7 @@ class Solution:
             self.dfs_error(root.right, cur, result)
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     nodes = [TreeNode(0), TreeNode(1), TreeNode(3)]
     nodes[0].left = nodes[1]
     nodes[0].right = nodes[2]

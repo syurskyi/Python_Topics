@@ -21,8 +21,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ levelOrderBottom(self, root):
@@ -31,23 +31,23 @@ class Solution:
         :param root: TreeNode
         :return: Integers
         """
-        __ not root:
-            return []
-        result = []
+        __ n.. root:
+            r.. []
+        result    # list
         next_level = [root]
         while next_level:
             current_level = next_level
-            result.insert(0, map(lambda x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
+            result.insert(0, map(l.... x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
 
-            next_level = []
-            for element in current_level:
+            next_level    # list
+            ___ element __ current_level:
                 __ element.left:
-                    next_level.append(element.left)
+                    next_level.a..(element.left)
                 __ element.right:
-                    next_level.append(element.right)
-        return result
+                    next_level.a..(element.right)
+        r.. result
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().levelOrderBottom(TreeNode(1))
 
 

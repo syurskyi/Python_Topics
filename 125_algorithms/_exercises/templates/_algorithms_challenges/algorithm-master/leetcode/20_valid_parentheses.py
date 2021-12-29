@@ -4,15 +4,15 @@ class Solution:
         :type s: str
         :rtype: bool
         """
-        stack = []
+        stack    # list
         pairs = {')': '(', ']': '[', '}': '{'}
 
-        for c in s:
-            __ c in '([{':
-                stack.append(c)
-            elif c not in ')]}':
-                return False
-            elif not stack or pairs[c] != stack.pop():
-                return False
+        ___ c __ s:
+            __ c __ '([{':
+                stack.a..(c)
+            ____ c n.. __ ')]}':
+                r.. False
+            ____ n.. stack o. pairs[c] != stack.pop():
+                r.. False
 
-        return not stack
+        r.. n.. stack

@@ -20,7 +20,7 @@ Note:
 cost will have a length in the range [2, 1000].
 Every cost[i] will be an integer in the range [0, 999].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -32,18 +32,18 @@ class Solution:
             F[i-2] + cost[i-2]
             F[i-1] + cost[i-1]
         """
-        n = len(cost)
-        F = [float('inf') for _ in range(n+1)]
+        n = l..(cost)
+        F = [float('inf') ___ _ __ r..(n+1)]
         F[0] = 0
         F[1] = 0
-        for i in range(2, n+1):
-            F[i] = min(
+        ___ i __ r..(2, n+1):
+            F[i] = m..(
                 F[i-2] + cost[i-2],
                 F[i-1] + cost[i-1]
             )
 
-        return F[-1]
+        r.. F[-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().minCostClimbingStairs([10, 15, 20]) == 15
+__ __name__ __ "__main__":
+    ... Solution().minCostClimbingStairs([10, 15, 20]) __ 15

@@ -1,11 +1,11 @@
-import random
+_______ random
 
 
 class TinyUrl2:
     ___ __init__(self):
-        self.chars = [str(i) for i in range(10)]
-        self.chars.extend(chr(i) for i in range(ord('a'), ord('z') + 1))
-        self.chars.extend(chr(i) for i in range(ord('A'), ord('Z') + 1))
+        self.chars = [str(i) ___ i __ r..(10)]
+        self.chars.extend(chr(i) ___ i __ r..(ord('a'), ord('z') + 1))
+        self.chars.extend(chr(i) ___ i __ r..(ord('A'), ord('Z') + 1))
 
         self.host = 'http://tiny.url/'
         self.size = 6
@@ -21,67 +21,67 @@ class TinyUrl2:
         :type key: str
         :rtype: str
         """
-        __ not url or not key:
-            return 'error'
+        __ n.. url o. n.. key:
+            r.. 'error'
 
         __ (
-            url in self.custom_lg2st and
-            key in self.custom_st2lg
+            url __ self.custom_lg2st and
+            key __ self.custom_st2lg
         ):
-            return self.get_tiny_url(key)
+            r.. self.get_tiny_url(key)
 
         __ (
-            url not in self.custom_lg2st and
-            key not in self.custom_st2lg
+            url n.. __ self.custom_lg2st and
+            key n.. __ self.custom_st2lg
         ):
             self.custom_lg2st[url] = key
             self.custom_st2lg[key] = url
-            return self.get_tiny_url(key)
+            r.. self.get_tiny_url(key)
 
-        return 'error'
+        r.. 'error'
 
     ___ longToShort(self, url):
         """
         :type url: str
         :rtype: str
         """
-        __ not url:
-            return 'error'
-        __ url in self.lg2st:
-            return self.get_tiny_url(self.lg2st[url])
-        __ url in self.custom_lg2st:
-            return self.get_tiny_url(self.custom_lg2st[url])
+        __ n.. url:
+            r.. 'error'
+        __ url __ self.lg2st:
+            r.. self.get_tiny_url(self.lg2st[url])
+        __ url __ self.custom_lg2st:
+            r.. self.get_tiny_url(self.custom_lg2st[url])
 
         key = self.get_hash_key(self.size)
-        while key in self.st2lg:
+        while key __ self.st2lg:
             key = self.get_hash_key(self.size)
 
         self.lg2st[url] = key
         self.st2lg[key] = url
-        return self.get_tiny_url(key)
+        r.. self.get_tiny_url(key)
 
     ___ shortToLong(self, url):
         """
         :type url: str
         :rtype: str
         """
-        __ not url:
-            return 'error'
+        __ n.. url:
+            r.. 'error'
 
         key = url.replace(self.host, '')
 
-        __ key in self.st2lg:
-            return self.st2lg[key]
-        __ key in self.custom_st2lg:
-            return self.custom_st2lg[key]
+        __ key __ self.st2lg:
+            r.. self.st2lg[key]
+        __ key __ self.custom_st2lg:
+            r.. self.custom_st2lg[key]
 
-        return 'error'
+        r.. 'error'
 
     ___ get_tiny_url(self, hash_key):
-        return '{}{}'.format(self.host, hash_key)
+        r.. '{}{}'.format(self.host, hash_key)
 
     ___ get_hash_key(self, size):
-        return ''.join(
+        r.. ''.join(
             random.choice(self.chars)
-            for _ in range(size)
+            ___ _ __ r..(size)
         )

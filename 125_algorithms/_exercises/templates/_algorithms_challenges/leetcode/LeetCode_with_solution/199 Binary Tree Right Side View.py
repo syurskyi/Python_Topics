@@ -17,8 +17,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -28,21 +28,21 @@ class Solution:
         :type root: TreeNode
         :rtype: list[int]
         """
-        cur_lvl = []
-        nxt_lvl = []
-        ret = []
+        cur_lvl    # list
+        nxt_lvl    # list
+        ret    # list
 
         __ root:
-            cur_lvl.append(root)
+            cur_lvl.a..(root)
 
         while cur_lvl:
-            ret.append(cur_lvl[-1].val)
+            ret.a..(cur_lvl[-1].val)
             while cur_lvl:
                 cur = cur_lvl.pop(0)
-                __ cur.left: nxt_lvl.append(cur.left)
-                __ cur.right: nxt_lvl.append(cur.right)
+                __ cur.left: nxt_lvl.a..(cur.left)
+                __ cur.right: nxt_lvl.a..(cur.right)
 
             cur_lvl = nxt_lvl
-            nxt_lvl = []
+            nxt_lvl    # list
 
-        return ret
+        r.. ret

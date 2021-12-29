@@ -39,12 +39,12 @@ class Solution:
         :return: int
         """
         bit_0, bit_1, bit_2 = ~0, 0, 0  # bit_0 is ~0 since all numbers appear 0 times.
-        for elmt in A:
+        ___ elmt __ A:
             bit_t = bit_2  # temp
             bit_2 = (bit_1 & elmt) | (bit_2 & ~elmt)
             bit_1 = (bit_0 & elmt) | (bit_1 & ~elmt)
             bit_0 = (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
-        return bit_1
+        r.. bit_1
 
     ___ singleNumber_array(self, A):
         """
@@ -57,18 +57,18 @@ class Solution:
         :param A:
         :return:
         """
-        cnt = [0 for _ in xrange(32)]
+        cnt = [0 ___ _ __ xrange(32)]
 
-        for elmt in A:
-            for i in xrange(32):
-                __ elmt>>i&1==1:
+        ___ elmt __ A:
+            ___ i __ xrange(32):
+                __ elmt>>i&1__1:
                     cnt[i] = (cnt[i]+1)%3
 
         result = 0
-        for i in xrange(32):
+        ___ i __ xrange(32):
             result |= cnt[i]<<i
 
-        return result
+        r.. result
 
 
     ___ singleNumber(self, A):
@@ -91,7 +91,7 @@ class Solution:
         #     two |= one&elmt  # add to two
         #     one ^= elmt  # del elmt appear twice
 
-        for elmt in A:
+        ___ elmt __ A:
             # after processing elmt
             two |= one&elmt
             one ^= elmt
@@ -99,19 +99,19 @@ class Solution:
 
             one &= ~three
             two &= ~three
-        return one
+        r.. one
 
 
 
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     # possible negative numbers
     tests = [
         [1, 1, 1, 2, 2, 2, 3, 4, 4, 4],
         [1]
     ]
-    for A in tests:
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber_array(A)
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber(A)
+    ___ A __ tests:
+        ... Solution().singleNumber_optimal(A)__Solution().singleNumber_array(A)
+        ... Solution().singleNumber_optimal(A)__Solution().singleNumber(A)

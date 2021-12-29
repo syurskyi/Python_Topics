@@ -19,7 +19,7 @@ class Solution(object):
         Pivot
         """
         left = -1
-        for i in xrange(len(nums)):
+        ___ i __ xrange(l..(nums)):
             __ nums[i] != 0:
                 left += 1
                 nums[left], nums[i] = nums[i], nums[left]
@@ -33,16 +33,16 @@ class SolutionCount(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         cnt = 0
-        for elt in nums:
+        ___ elt __ nums:
             __ elt != 0:
                 nums[cnt] = elt
                 cnt += 1
 
-        for j in xrange(cnt, len(nums)):
+        ___ j __ xrange(cnt, l..(nums)):
             nums[j] = 0
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     lst = [0, 1, 0, 3, 12]
     Solution().moveZeroes(lst)
-    assert lst == [1, 3, 12, 0, 0]
+    ... lst __ [1, 3, 12, 0, 0]

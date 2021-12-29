@@ -9,9 +9,9 @@ Good luck and have fun!
 
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
-from collections import Counter, namedtuple
-import os
-import urllib.request
+____ collections _______ Counter, namedtuple
+_______ os
+_______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -21,7 +21,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.split()
+IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 users, popular_challenges = Counter(), Counter()
 
@@ -45,9 +45,9 @@ ___ gen_files():
        -> use last column to filter out directories (= True)
     """
     with open(tempfile) as infile:
-        for line in infile:
+        ___ line __ infile:
             chunks = line.split(',')
-            __ chunks[1].strip() == "True":
+            __ chunks[1].strip() __ "True":
                 s = chunks[0].split('/')
                 yield s[1]
 
@@ -58,16 +58,16 @@ ___ diehard_pybites():
        Calling this function on the dataset (held tempfile) should return:
        Stats(user='clamytoe', challenge=('01', 7))
     """
-    for i in gen_files():
-        __ i not in IGNORE:
+    ___ i __ gen_files():
+        __ i n.. __ IGNORE:
             users[i] += 1
     with open(tempfile) as infile:
-        for line in infile:
+        ___ line __ infile:
             chunks = line.split(',')
-            __ chunks[1].strip() == "True":
+            __ chunks[1].strip() __ "True":
                 s = chunks[0].split('/')
                 popular_challenges[s[0]] += 1
     s = Stats(users.most_common(1)[0][0], popular_challenges.most_common(1)[0])
-    return s
+    r.. s
 
 diehard_pybites()

@@ -6,9 +6,9 @@ ___ divide_numbers(numerator, denominator):
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
     try:
-        __ denominator == 0:
-            return 0
-        else:
-            return int(numerator) / int(denominator)
+        __ denominator __ 0:
+            r.. 0
+        ____:
+            r.. int(numerator) / int(denominator)
     except ValueError:
-        return print("Input integer")
+        r.. print("Input integer")

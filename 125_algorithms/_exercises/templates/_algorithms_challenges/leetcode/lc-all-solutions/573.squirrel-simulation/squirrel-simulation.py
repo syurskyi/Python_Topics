@@ -12,13 +12,13 @@ class Solution(object):
     ___ dist(s, t):
       x1, y1 = s
       x2, y2 = t
-      return abs(x1 - x2) + abs(y1 - y2)
+      r.. abs(x1 - x2) + abs(y1 - y2)
 
     ans = 0
-    for nut in nuts:
+    ___ nut __ nuts:
       ans += 2 * dist(tree, nut)
 
     ret = float("inf")
-    for nut in nuts:
-      ret = min(ret, ans - dist(nut, tree) + dist(nut, squirrel))
-    return ret
+    ___ nut __ nuts:
+      ret = m..(ret, ans - dist(nut, tree) + dist(nut, squirrel))
+    r.. ret

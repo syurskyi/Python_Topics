@@ -1,7 +1,7 @@
-import pytest
-from freezegun import freeze_time
+_______ pytest
+____ freezegun _______ freeze_time
 
-from progress import ontrack_reading
+____ progress _______ ontrack_reading
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -19,16 +19,16 @@ from progress import ontrack_reading
     ((10, 10, 365), True),
 ])
 ___ test_ontrack_reading(args, expected):
-    assert ontrack_reading(*args) == expected
+    ... ontrack_reading(*args) __ expected
 
 
 @freeze_time('2021-07-09')
 ___ test_without_days_arg_current_date_july():
-    assert ontrack_reading(60, 31) is False
-    assert ontrack_reading(60, 34) is True
+    ... ontrack_reading(60, 31) __ False
+    ... ontrack_reading(60, 34) __ True
 
 
 @freeze_time('2021-12-09')
 ___ test_without_days_arg_current_date_december():
-    assert ontrack_reading(30, 28) is False
-    assert ontrack_reading(30, 29) is True
+    ... ontrack_reading(30, 28) __ False
+    ... ontrack_reading(30, 29) __ True

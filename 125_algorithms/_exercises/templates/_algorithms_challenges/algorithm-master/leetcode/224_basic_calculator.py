@@ -4,59 +4,59 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
         self.OP = {
-            '+': lambda a, b: a + b,
-            '-': lambda a, b: a - b,
+            '+': l.... a, b: a + b,
+            '-': l.... a, b: a - b,
         }
 
         s = self.to_rpn(s)
 
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
-        return self.eval_rpn(s)
+        r.. self.eval_rpn(s)
 
     ___ to_rpn(self, s):
-        stack, res = [], []
+        stack, res    # list, []
 
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit():
                 res[-1] += char
-            elif char.isdigit():
-                res.append(char)
-            elif char in self.OP:
-                while stack and stack[-1] in self.OP:
-                    res.append(stack.pop())
-                stack.append(char)
-            elif char == '(':
-                stack.append(char)
-            elif char == ')':
+            ____ char.isdigit():
+                res.a..(char)
+            ____ char __ self.OP:
+                while stack and stack[-1] __ self.OP:
+                    res.a..(stack.pop())
+                stack.a..(char)
+            ____ char __ '(':
+                stack.a..(char)
+            ____ char __ ')':
                 while stack and stack[-1] != '(':
-                    res.append(stack.pop())
+                    res.a..(stack.pop())
                 stack.pop()
 
         while stack:
-            res.append(stack.pop())
+            res.a..(stack.pop())
 
-        return res
+        r.. res
 
     ___ eval_rpn(self, s):
-        stack = []
+        stack    # list
 
-        for char in s:
+        ___ char __ s:
             __ char.isdigit():
-                stack.append(int(char))
-            elif char in self.OP:
+                stack.a..(int(char))
+            ____ char __ self.OP:
                 b = stack.pop()
                 a = stack.pop()
-                stack.append(self.OP[char](a, b))
+                stack.a..(self.OP[char](a, b))
 
-        return stack[0]
+        r.. stack[0]
 
 
 class Solution:
@@ -65,55 +65,55 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
         s = self.to_rpn(s)
 
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
-        return self.eval_rpn(s)
+        r.. self.eval_rpn(s)
 
     ___ to_rpn(self, s):
-        stack, res = [], []
+        stack, res    # list, []
 
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit():
                 res[-1] += char
-            elif char.isdigit():
-                res.append(char)
-            elif char in '+-':
-                while stack and stack[-1] in '+-':
-                    res.append(stack.pop())
-                stack.append(char)
-            elif char == '(':
-                stack.append(char)
-            elif char == ')':
+            ____ char.isdigit():
+                res.a..(char)
+            ____ char __ '+-':
+                while stack and stack[-1] __ '+-':
+                    res.a..(stack.pop())
+                stack.a..(char)
+            ____ char __ '(':
+                stack.a..(char)
+            ____ char __ ')':
                 while stack and stack[-1] != '(':
-                    res.append(stack.pop())
+                    res.a..(stack.pop())
                 stack.pop()
 
         while stack:
-            res.append(stack.pop())
+            res.a..(stack.pop())
 
-        return res
+        r.. res
 
     ___ eval_rpn(self, s):
-        stack = []
+        stack    # list
 
-        for char in s:
+        ___ char __ s:
             __ char.isdigit():
-                stack.append(int(char))
-            elif char in '+-':
+                stack.a..(int(char))
+            ____ char __ '+-':
                 b = stack.pop()
                 a = stack.pop()
 
-                __ char == '+':
-                    stack.append(a + b)
-                elif char == '-':
-                    stack.append(a - b)
+                __ char __ '+':
+                    stack.a..(a + b)
+                ____ char __ '-':
+                    stack.a..(a - b)
 
-        return stack[0]
+        r.. stack[0]

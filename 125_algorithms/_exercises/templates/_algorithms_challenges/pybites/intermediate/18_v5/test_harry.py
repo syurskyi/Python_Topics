@@ -1,8 +1,8 @@
-from harry import get_harry_most_common_word
+____ harry _______ get_harry_most_common_word
 
 
 ___ test_get_harry_most_common_word():
     top_word = get_harry_most_common_word()
-    assert type(top_word) == tuple
-    assert top_word[0] == 'dursley'
-    assert top_word[1] == 45
+    ... type(top_word) __ tuple
+    ... top_word[0] __ 'dursley'
+    ... top_word[1] __ 45

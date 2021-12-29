@@ -10,7 +10,7 @@ Given n = 3, there are a total of 5 unique BST's.
     /     /       \                 \
    2     1         2                 3
 """
-import math
+_______ math
 
 __author__ = 'Danyang'
 
@@ -26,7 +26,7 @@ class Solution(object):
         :param n: integer
         :return: integer
         """
-        return math.factorial(2*n)/(math.factorial(n)*math.factorial(n))-math.factorial(2*n)/(
+        r.. math.factorial(2*n)/(math.factorial(n)*math.factorial(n))-math.factorial(2*n)/(
             math.factorial(n+1)*math.factorial(n-1))
 
     ___ numTrees(self, n):
@@ -46,15 +46,15 @@ class Solution(object):
         :return: integer
         """
         __ n < 2:
-            return n
+            r.. n
 
-        dp = [0 for _ in xrange(n+1)]
+        dp = [0 ___ _ __ xrange(n+1)]
         dp[0] = 1
-        for i in xrange(1, n+1):
-            for j in xrange(i):
+        ___ i __ xrange(1, n+1):
+            ___ j __ xrange(i):
                 dp[i] += dp[j]*dp[i-j-1]
-        return dp[-1]
+        r.. dp[-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().numTrees(100) == Solution().numTrees_math(100)
+__ __name__ __ "__main__":
+    ... Solution().numTrees(100) __ Solution().numTrees_math(100)

@@ -5,20 +5,20 @@ class Solution:
         :type t: str
         :rtype: bool
         """
-        __ s == t:
-            return True
-        __ not s or not t or len(s) != len(t):
-            return False
+        __ s __ t:
+            r.. True
+        __ n.. s o. n.. t o. l..(s) != l..(t):
+            r.. False
 
         freq = {}
 
-        for c in s:
+        ___ c __ s:
             freq[c] = freq.get(c, 0) + 1
 
-        for c in t:
-            __ c not in freq:
-                return False
+        ___ c __ t:
+            __ c n.. __ freq:
+                r.. False
 
             freq[c] -= 1
 
-        return all(v == 0 for v in freq.values())
+        r.. a..(v __ 0 ___ v __ freq.values())

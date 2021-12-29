@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution(object):
@@ -10,19 +10,19 @@ class Solution(object):
 
     ___ dfs(p, i, j, res):
       __ p:
-        res[j].append((p.val, i))
-        self.leftMost = min(j, self.leftMost)
+        res[j].a..((p.val, i))
+        self.leftMost = m..(j, self.leftMost)
         dfs(p.left, i + 1, j - 1, res)
         dfs(p.right, i + 1, j + 1, res)
 
     self.leftMost = float("inf")
-    ans = []
-    res = defaultdict(list)
+    ans    # list
+    res = defaultdict(l..)
     dfs(root, 0, 0, res)
     i = self.leftMost
     while True:
-      __ not res[i]:
+      __ n.. res[i]:
         break
-      ans.append([item[0] for item in sorted(res[i], key=lambda a: a[1])])
+      ans.a..([item[0] ___ item __ s..(res[i], key=l.... a: a[1])])
       i += 1
-    return ans
+    r.. ans

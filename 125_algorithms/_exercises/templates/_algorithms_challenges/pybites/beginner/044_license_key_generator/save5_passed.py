@@ -1,11 +1,11 @@
-import secrets
-import string
+_______ secrets
+_______ string
 
 ___ gen_key(parts=4, chars_per_part=8):
     string_alphabet = string.ascii_uppercase + string.digits
     password = ""
-    for part in range(parts):
-        for char in range(chars_per_part):
+    ___ part __ r..(parts):
+        ___ char __ r..(chars_per_part):
             password += secrets.choice(string_alphabet)
         password += '-'
-    return password[:-1]
+    r.. password[:-1]

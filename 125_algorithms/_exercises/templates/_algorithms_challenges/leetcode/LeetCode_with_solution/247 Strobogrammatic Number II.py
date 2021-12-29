@@ -3,7 +3,7 @@ Premium Question
 Generation
 https://leetcode.com/problems/strobogrammatic-number-ii/
 """
-from collections import deque
+____ collections _______ deque
 __author__ = 'Daniel'
 
 
@@ -13,27 +13,27 @@ class Solution(object):
         self.middle = ["0", "1", "8"]
 
     ___ findStrobogrammatic(self, n):
-        ret = []
+        ret    # list
         self.build(n, deque(), ret)
-        return ret
+        r.. ret
 
     ___ build(self, n, cur, ret):
         """
         build from inside
         """
-        __ n%2 == 1 and len(cur) == 0:
-            for elt in self.middle:
-                cur.append(elt)
+        __ n%2 __ 1 and l..(cur) __ 0:
+            ___ elt __ self.middle:
+                cur.a..(elt)
                 self.build(n, cur, ret)
                 cur.pop()
-        else:
-            __ len(cur) == n:
-                ret.append("".join(cur))
-                return
-            for elt in self.lst:
-                __ not (elt == "00" and len(cur) == n-2):
+        ____:
+            __ l..(cur) __ n:
+                ret.a..("".join(cur))
+                r..
+            ___ elt __ self.lst:
+                __ n.. (elt __ "00" and l..(cur) __ n-2):
                     cur.appendleft(elt[0])
-                    cur.append(elt[1])
+                    cur.a..(elt[1])
                     self.build(n, cur, ret)
                     cur.pop()
                     cur.popleft()
@@ -48,29 +48,29 @@ class SolutionArray(object):
         :type n: int
         :rtype: List[str]
         """
-        ret = []
+        ret    # list
         self.build(n, [], ret)
-        return ret
+        r.. ret
 
     ___ build(self, n, cur, ret):
         """
         Using list as double-entry queue, performance of every operation is O(n) rather than O(1)
         """
-        __ n%2 == 1 and len(cur) == 0:
-            for i in ["0", "1", "8"]:
-                cur.append(i)
+        __ n%2 __ 1 and l..(cur) __ 0:
+            ___ i __ ["0", "1", "8"]:
+                cur.a..(i)
                 self.build(n, cur, ret)
                 cur.pop()
-            return
+            r..
 
-        __ len(cur)/2 == n/2:
-            ret.append("".join(cur))
-            return
+        __ l..(cur)/2 __ n/2:
+            ret.a..("".join(cur))
+            r..
 
-        for elt in self.map1:
-            __ elt != "00" or len(cur) != n-2:
+        ___ elt __ self.map1:
+            __ elt != "00" o. l..(cur) != n-2:
                 cur.insert(0, elt[0])
-                cur.append(elt[1])
+                cur.a..(elt[1])
                 self.build(n, cur, ret)
                 cur.pop()
                 cur.pop(0)
@@ -92,34 +92,34 @@ class SolutionOutputLimitExceeded(object):
         :type n: int
         :rtype: List[str]
         """
-        ret = []
+        ret    # list
         self.build(0, n, [], ret)
-        return ret
+        r.. ret
 
     ___ build(self, idx, n, cur, ret):
-        __ idx == n/2:
+        __ idx __ n/2:
             __ n % 2 != 0:
-                for m in self.middle:
-                    __ m != "0" or idx != 0:
-                        temp = list(cur)
-                        temp.append(m)
-                        for i in xrange(idx-1, -1, -1):
-                            temp.append(self.map[temp[i]])
-                        ret.append("".join(temp))
-            else:
-                temp = list(cur)
-                for i in xrange(idx-1, -1, -1):
-                    temp.append(self.map[temp[i]])
-                    ret.append("".join(temp))
+                ___ m __ self.middle:
+                    __ m != "0" o. idx != 0:
+                        temp = l..(cur)
+                        temp.a..(m)
+                        ___ i __ xrange(idx-1, -1, -1):
+                            temp.a..(self.map[temp[i]])
+                        ret.a..("".join(temp))
+            ____:
+                temp = l..(cur)
+                ___ i __ xrange(idx-1, -1, -1):
+                    temp.a..(self.map[temp[i]])
+                    ret.a..("".join(temp))
 
-            return
+            r..
 
-        for k in self.map.keys():
-            __ k != "0" or idx != 0:
-                cur.append(k)
+        ___ k __ self.map.keys():
+            __ k != "0" o. idx != 0:
+                cur.a..(k)
                 self.build(idx+1, n, cur, ret)
                 cur.pop()
 
 
-__ __name__ == "__main__":
-    assert Solution().findStrobogrammatic(3) == ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']
+__ __name__ __ "__main__":
+    ... Solution().findStrobogrammatic(3) __ ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']

@@ -1,6 +1,6 @@
-from random import choice
+____ random _______ choice
 
-defeated_by = dict(paper='scissors',
+defeated_by = d..(paper='scissors',
                    rock='paper',
                    scissors='rock')
 lose = '{} beats {}, you lose!'
@@ -13,7 +13,7 @@ ___ _get_computer_move():
 
     choices = ['scissors','paper','rock']
 
-    return choice(choices)
+    r.. choice(choices)
 
 
 
@@ -27,12 +27,12 @@ ___ _get_winner(computer_choice, player_choice):
     computer_defeated_by = defeated_by[computer_choice]
     player_defeated_by = defeated_by[player_choice]
 
-    __ computer_defeated_by == player_choice:
-        return win.format(player_choice,computer_choice)
-    elif player_defeated_by == computer_choice:
-        return lose.format(computer_choice,player_choice)
-    else:
-        return tie
+    __ computer_defeated_by __ player_choice:
+        r.. win.format(player_choice,computer_choice)
+    ____ player_defeated_by __ computer_choice:
+        r.. lose.format(computer_choice,player_choice)
+    ____:
+        r.. tie
 
 
 
@@ -56,12 +56,12 @@ ___ game():
 
     while True:
         player_choice = yield
-        __ player_choice == 'q':
+        __ player_choice __ 'q':
             raise StopIteration
         
-        __ player_choice not in ('scissors','rock','paper'):
+        __ player_choice n.. __ ('scissors','rock','paper'):
             print('Invalid input')
-        else:
+        ____:
             computer_choice = _get_computer_move() 
             print(_get_winner(computer_choice,player_choice))
 

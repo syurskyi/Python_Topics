@@ -1,5 +1,5 @@
-import re
-from collections import defaultdict
+_______ re
+____ collections _______ defaultdict
 ___ pair_files(filenames):
     """
     Function that pairs filenames
@@ -9,10 +9,10 @@ ___ pair_files(filenames):
     """
     # TODO: You code
 
-    mapping = defaultdict(list)
+    mapping = defaultdict(l..)
 
 
-    for file in filenames:
+    ___ file __ filenames:
         
 
         match = re.search(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=re.I)
@@ -23,19 +23,19 @@ ___ pair_files(filenames):
 
             combined = first_part + second_part
 
-            mapping[combined].append(file)
+            mapping[combined].a..(file)
 
     
-    result = []
-    for value in mapping.values():
-        __ len(value) == 2:
+    result    # list
+    ___ value __ mapping.values():
+        __ l..(value) __ 2:
 
-            __ '_R1_' in value[1]:
+            __ '_R1_' __ value[1]:
                 value.reverse()
-            result.append(tuple(value))
+            result.a..(tuple(value))
 
 
-    return result
+    r.. result
 
 
 
@@ -58,7 +58,7 @@ ___ pair_files(filenames):
 
 
 # Set up for your convenience during testing
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     filenames = [
         "Sample1_S1_L001_R1_001.FASTQ.GZ",
         "Sample1_S1_L001_R2_001.fastq.gz",
@@ -69,5 +69,5 @@ __ __name__ == "__main__":
     # ('Sample1_S1_L001_R1_001.FASTQ.GZ', 'Sample1_S1_L001_R2_001.fastq.gz')
     # ('Sample2_S2_L001_R1_001.fastq.gz', 'sample2_s2_l001_r2_001.fastq.gz')
 
-    for pair in pair_files(filenames):
+    ___ pair __ pair_files(filenames):
         print(pair)

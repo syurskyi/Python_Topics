@@ -1,6 +1,6 @@
-import re
-import pdb
-___ get_users(passwd: str) -> dict:
+_______ re
+_______ pdb
+___ get_users(passwd: str) -> d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,
@@ -10,25 +10,25 @@ ___ get_users(passwd: str) -> dict:
     
     passwords = {}
     #pdb.set_trace()
-    for line in passwd.splitlines():
-        __ not line:
+    ___ line __ passwd.splitlines():
+        __ n.. line:
             continue
         values = line.split(':')
         username,name = values[0],values[4]
         name = name.strip(',')
         __ name != '':
             name = re.sub(r'\,+',' ',name)
-        else:
+        ____:
             name = 'unknown'
 
 
 
         passwords[username] = name
 
-    return passwords
+    r.. passwords
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     
     pw = """
 postfix:x:108:112::/var/sppol/postfix

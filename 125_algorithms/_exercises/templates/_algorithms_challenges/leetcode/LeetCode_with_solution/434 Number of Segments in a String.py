@@ -16,19 +16,19 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        __ not s:
-            return ret
+        __ n.. s:
+            r.. ret
 
         # count at start
         __ s[0] != " ":
             ret = 1
         prev = s[0]
-        for c in s[1:]:
-            __ c != " " and prev == " ":
+        ___ c __ s[1:]:
+            __ c != " " and prev __ " ":
                 ret += 1
             prev = c
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().countSegments("Hello, my name is John") == 5
+__ __name__ __ "__main__":
+    ... Solution().countSegments("Hello, my name is John") __ 5

@@ -24,29 +24,29 @@ class Solution:
         :param num: a list of integer
         :return: a list of integer
         """
-        length = len(num)
+        length = l..(num)
 
         partition_num_index = 0
         change_num_index = 0
 
-        for i in reversed(xrange(1, length)):
+        ___ i __ reversed(xrange(1, length)):
             __ num[i]>num[i-1]:
                 partition_num_index = i-1
                 break
-        for i in reversed(xrange(1, length)):
+        ___ i __ reversed(xrange(1, length)):
             __ num[i]>num[partition_num_index]:
                 change_num_index = i
                 break
 
         num[partition_num_index], num[change_num_index] = num[change_num_index], num[partition_num_index]
 
-        __ partition_num_index==change_num_index==0:
+        __ partition_num_index__change_num_index__0:
             # If such arrangement is not possible, to lowest possible order (ie, sorted in ascending order).
             num.reverse()
-        else:
+        ____:
             num[partition_num_index+1:] = reversed(num[partition_num_index+1:])
-        return num
+        r.. num
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().nextPermutation([3, 2, 1])

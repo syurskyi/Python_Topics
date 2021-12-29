@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from scrabble_score import score
+____ scrabble_score _______ score
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -40,5 +40,5 @@ class WordTest(unittest.TestCase):
         self.assertEqual(score("abcdefghijklmnopqrstuvwxyz"), 87)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

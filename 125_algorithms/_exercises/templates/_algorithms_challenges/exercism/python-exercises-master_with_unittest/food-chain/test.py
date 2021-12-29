@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from food_chain import recite
+____ food_chain _______ recite
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.1.0
@@ -100,12 +100,12 @@ class FoodChainTest(unittest.TestCase):
         self.assertEqual(recite(1, 3), expected)
 
     ___ test_full_song(self):
-        expected = []
-        for n in range(1, 9):
+        expected    # list
+        ___ n __ r..(1, 9):
             expected += recite(n, n) + [""]
         expected.pop()
         self.assertEqual(recite(1, 8), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

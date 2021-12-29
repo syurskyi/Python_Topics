@@ -20,23 +20,23 @@ class Solution:
         :rtype: str
         """
         s_r = s[::-1]
-        l = len(s)
+        l = l..(s)
         __ l < 2:
-            return s
+            r.. s
 
         # construct T
-        T = [0 for _ in xrange(l+1)]
+        T = [0 ___ _ __ xrange(l+1)]
         T[0] = -1
         pos = 2
         cnd = 0
         while pos <= l:
-            __ s[pos-1] == s[cnd]:
+            __ s[pos-1] __ s[cnd]:
                 T[pos] = cnd+1
                 cnd += 1
                 pos += 1
-            elif T[cnd] != -1:
+            ____ T[cnd] != -1:
                 cnd = T[cnd]
-            else:
+            ____:
                 T[pos] = 0
                 cnd = 0
                 pos += 1
@@ -45,22 +45,22 @@ class Solution:
         i = 0
         b = 0
         while i+b < l:
-            __ s[i] == s_r[i+b]:
+            __ s[i] __ s_r[i+b]:
                 i += 1
-                __ i == l:
-                    return s
-            elif T[i] != -1:
+                __ i __ l:
+                    r.. s
+            ____ T[i] != -1:
                 b = b+i-T[i]
                 i = T[i]
-            else:
+            ____:
                 b += 1
                 i = 0
 
         # where it falls off
-        return s_r+s[i:]
+        r.. s_r+s[i:]
 
 
-__ __name__ == "__main__":
-    assert Solution().shortestPalindrome("abcd") == "dcbabcd"
+__ __name__ __ "__main__":
+    ... Solution().shortestPalindrome("abcd") __ "dcbabcd"
 
 

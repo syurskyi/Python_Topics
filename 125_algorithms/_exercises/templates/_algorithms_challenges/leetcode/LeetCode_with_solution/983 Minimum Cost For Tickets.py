@@ -44,7 +44,7 @@ days is in strictly increasing order.
 costs.length == 3
 1 <= costs[i] <= 1000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -60,21 +60,21 @@ class Solution:
 
         O(365)
         """
-        F = [float("inf") for _ in range(366 + 30)]
-        for i in range(366, 366 + 30):
+        F = [float("inf") ___ _ __ r..(366 + 30)]
+        ___ i __ r..(366, 366 + 30):
             F[i] = 0
 
         days_set = set(days)
-        for i in range(365, 0, -1):
-            __ i not in days_set:
+        ___ i __ r..(365, 0, -1):
+            __ i n.. __ days_set:
                 F[i] = F[i+1]
-            else:
-                F[i] = min(
+            ____:
+                F[i] = m..(
                     c + F[i+d]
-                    for d, c in zip([1, 7, 30], costs)
+                    ___ d, c __ zip([1, 7, 30], costs)
                 )
 
-        return F[1]
+        r.. F[1]
 
     ___ mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
         """
@@ -84,21 +84,21 @@ class Solution:
         Iterate throughout the year is more elegant
         Need buffer day
         """
-        n = len(days)
-        F = [float("inf") for _ in range(n)]
+        n = l..(days)
+        F = [float("inf") ___ _ __ r..(n)]
         F[-1] = costs[0]
-        for i in range(n-2, -1, -1):
-            for j in range(i+1, n):
+        ___ i __ r..(n-2, -1, -1):
+            ___ j __ r..(i+1, n):
                 delta = days[j] - days[i]
                 __ delta <= 1:
-                    F[i] = min(F[i], costs[0] + F[j])
+                    F[i] = m..(F[i], costs[0] + F[j])
                 __ delta <= 7:
-                    F[i] = min(F[i], costs[1] + F[j])
+                    F[i] = m..(F[i], costs[1] + F[j])
                 __ delta <= 30:
-                    F[i] = min(F[i], costs[2] + F[j])
-                else:
+                    F[i] = m..(F[i], costs[2] + F[j])
+                ____:
                     break
-        return F[0]
+        r.. F[0]
 
     ___ mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
         """
@@ -110,16 +110,16 @@ class Solution:
         Why does iterate forward fail? Because future min does not depends on the
         current min. Current higher cost may contribtue to future lower cost.
         """
-        F = [float("inf") for _ in range(365 + 1)]
+        F = [float("inf") ___ _ __ r..(365 + 1)]
         F[0] = 0
         days_set = set(days)
-        for i in range(1, 366):
-            __ i not in days_set:
+        ___ i __ r..(1, 366):
+            __ i n.. __ days_set:
                 F[i] = F[i-1]
-            else:
+            ____:
                 # iterate forward does not work
-                F[i] = min(F[i], F[i-1] + costs[0])
+                F[i] = m..(F[i], F[i-1] + costs[0])
 
 
-__ __name__ == "__main__":
-    assert Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) == 11
+__ __name__ __ "__main__":
+    ... Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) __ 11

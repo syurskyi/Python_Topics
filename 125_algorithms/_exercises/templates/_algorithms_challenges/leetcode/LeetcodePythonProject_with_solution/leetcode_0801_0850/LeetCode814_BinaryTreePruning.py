@@ -5,7 +5,7 @@ Created on Apr 30, 2018
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -16,22 +16,22 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root: return root
+        __ n.. root: r.. root
         left  = self.pruneTree(root.left)
         right = self.pruneTree(root.right)
-        __ left is None and right is None and root.val == 0:
-            return None
-        else:
+        __ left __ N.. and right __ N.. and root.val __ 0:
+            r.. N..
+        ____:
             root.left = left
             root.right = right
-            return root
+            r.. root
     
     ___ test(self):
         testCases = [
             
         ]
-        for root in testCases:
+        ___ root __ testCases:
             result = self.pruneTree(root)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

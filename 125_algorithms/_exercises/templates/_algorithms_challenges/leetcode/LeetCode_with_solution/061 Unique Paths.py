@@ -11,7 +11,7 @@ Above is a 3 x 7 grid. How many possible unique paths are there?
 
 Note: m and n will be at most 100.
 """
-import math
+_______ math
 __author__ = 'Danyang'
 
 
@@ -29,16 +29,16 @@ class Solution(object):
         """
         m -= 1
         n -= 1
-        return math.factorial(m+n) / (math.factorial(n) * math.factorial(m))
+        r.. math.factorial(m+n) / (math.factorial(n) * math.factorial(m))
 
     ___ uniquePathsDP(self, m, n):
-        F = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
+        F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
         F[1][0] = 1  # dummy entry point
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
+        ___ i __ xrange(1, m+1):
+            ___ j __ xrange(1, n+1):
                 F[i][j] = F[i-1][j] + F[i][j-1]
 
-        return F[m][n]
+        r.. F[m][n]
 
     ___ uniquePathsNormal(self, m, n):
         """
@@ -49,19 +49,19 @@ class Solution(object):
         :param n:
         :return: an integer
         """
-        F = [[0 for _ in xrange(n)] for _ in xrange(m)]
+        F = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         F[0][0] = 1  # start
 
         # F[i][j] = F[i-1][j] + F[i][j-1]
-        for i in xrange(m):
-            for j in xrange(n):
-                __ i == 0 and j == 0: continue
-                __ i == 0: F[i][j] = F[i][j-1]
-                elif j == 0: F[i][j] = F[i-1][j]
-                else: F[i][j] = F[i-1][j]+F[i][j-1]
+        ___ i __ xrange(m):
+            ___ j __ xrange(n):
+                __ i __ 0 and j __ 0: continue
+                __ i __ 0: F[i][j] = F[i][j-1]
+                ____ j __ 0: F[i][j] = F[i-1][j]
+                ____: F[i][j] = F[i-1][j]+F[i][j-1]
 
-        return F[m-1][n-1]
+        r.. F[m-1][n-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().uniquePaths(3, 7) == 28
+__ __name__ __ "__main__":
+    ... Solution().uniquePaths(3, 7) __ 28

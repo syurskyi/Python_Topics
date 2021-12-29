@@ -21,9 +21,9 @@ class Solution(object):
             'M': 1000,
         }
         res = 0
-        for i, c in enumerate(s):
-            __ i < len(s) - 1 and roman[c] < roman[s[i + 1]]:
+        ___ i, c __ enumerate(s):
+            __ i < l..(s) - 1 and roman[c] < roman[s[i + 1]]:
                 res -= roman[c]
-            else:
+            ____:
                 res += roman[c]
-        return res
+        r.. res

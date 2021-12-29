@@ -26,14 +26,14 @@ The answer will not exceed 2^31 - 1.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
         self.ret = 0
-        self.lst = []
+        self.lst    # list
 
     ___ sumRootToLeaf(self, root: TreeNode) -> int:
         """
@@ -41,21 +41,21 @@ class Solution:
         Error-prone
         """
         self.dfs(root)
-        return self.ret
+        r.. self.ret
 
     ___ dfs(self, node):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        self.lst.append(node.val)  # error prone
-        __ not node.left and not node.right:
+        self.lst.a..(node.val)  # error prone
+        __ n.. node.left and n.. node.right:
             # leaf
             cur = 0
-            for a in self.lst:
+            ___ a __ self.lst:
                 cur <<= 1
                 cur += a
             self.ret += cur
-        else:
+        ____:
             self.dfs(node.left)
             self.dfs(node.right)
         self.lst.pop()

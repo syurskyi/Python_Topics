@@ -19,22 +19,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        n = len(nums)
-        res = [1 for i in range(n)]
+        n = l..(nums)
+        res = [1 ___ i __ r..(n)]
         # Scan from left to right
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             # i is from 1 to n - 1
             # res[i] is the product accumulated to the left
             res[i] = res[i - 1] * nums[i - 1]
 
         # right_product is the product accumulated to the right
         right_product = 1
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             # j ranges from i - 2 to 0
             j = n - 1 - i
             right_product *= nums[j + 1]
             res[j] *= right_product
-        return res
+        r.. res
 
 
 a0 = [0, 0]

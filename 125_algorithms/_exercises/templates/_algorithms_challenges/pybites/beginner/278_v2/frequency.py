@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 ___ major_n_minor(numbers):
     """
     Input: an array with integer numbers
@@ -16,4 +16,4 @@ ___ major_n_minor(numbers):
 
 
 
-    return major, minor
+    r.. major, minor

@@ -1,4 +1,4 @@
-import journal
+_______ journal
 # from journal import load, save
 # from journal import *
 
@@ -26,9 +26,9 @@ ___ run_event_loop():
 
         __ cmd __ 'l':
             list_entries(journal_data)
-        elif cmd __ 'a':
+        ____ cmd __ 'a':
             add_entry(journal_data)
-        elif cmd ! 'x' and cmd:
+        ____ cmd ! 'x' and cmd:
             print("Sorry, we don't understand '{}'.".format(cmd))
 
     print('Done, goodbye.')
@@ -38,7 +38,7 @@ ___ run_event_loop():
 ___ list_entries(data):
     print('Your journal entries: ')
     entries  reversed(data)
-    for idx, entry in enumerate(entries):
+    ___ idx, entry __ enumerate(entries):
         print('* [{}] {}'.format(idx + 1, entry))
 
 

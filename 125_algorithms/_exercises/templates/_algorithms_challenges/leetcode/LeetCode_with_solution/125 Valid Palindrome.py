@@ -23,8 +23,8 @@ class Solution(object):
         s = s.lower()
         # import re  # not supported
         # s = re.sub('[^a-zA-Z0-9]', '', s)  # not supported
-        s = ''.join(e for e in s __ e.isalnum())
-        __ not s:
-            return True
+        s = ''.join(e ___ e __ s __ e.isalnum())
+        __ n.. s:
+            r.. True
 
-        return s == s[::-1]
+        r.. s __ s[::-1]

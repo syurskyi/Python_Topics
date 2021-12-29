@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 ___ count_n_repetitions(text, n=1):
@@ -16,7 +16,7 @@ ___ count_n_repetitions(text, n=1):
     counts = re.findall(my_regex,text,flags=re.DOTALL)
 
 
-    return len(counts)
+    r.. l..(counts)
 
 
 
@@ -33,13 +33,13 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""):
     
     __ char:
         my_regex = r"(.)(?=\1{" + str(n) + "}|" +  re.escape(char) + "{" + str(n) + r"})"
-    else:
+    ____:
         my_regex = r"(.)(?=\1{" + str(n) + r"})"
 
     counts = re.findall(my_regex,text,flags=re.DOTALL)
 
 
-    return len(counts)
+    r.. l..(counts)
 
 ___ check_surrounding_chars(text, surrounding_chars):
     """
@@ -58,7 +58,7 @@ ___ check_surrounding_chars(text, surrounding_chars):
     my_regex = r'(?<=' + text + r')(.)' + r'(?=' + text + r')'
     counts = re.findall(my_regex,s,flags=re.DOTALL)
 
-    return len(counts)
+    r.. l..(counts)
 
 
 
@@ -66,6 +66,6 @@ ___ check_surrounding_chars(text, surrounding_chars):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     surrounding_chars = ["Z", "A"] 
     text = "ZZZZZ"

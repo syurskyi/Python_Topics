@@ -11,9 +11,9 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
-        ret = []
-        for i in xrange(len(s)-1):
-            __ s[i:i+2] == "++":
-                ret.append(s[:i]+"--"+s[i+2:])
+        ret    # list
+        ___ i __ xrange(l..(s)-1):
+            __ s[i:i+2] __ "++":
+                ret.a..(s[:i]+"--"+s[i+2:])
 
-        return ret
+        r.. ret

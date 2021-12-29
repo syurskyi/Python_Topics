@@ -1,9 +1,9 @@
-from collections import defaultdict
-import os
-from urllib.request import urlretrieve
+____ collections _______ defaultdict
+_______ os
+____ urllib.request _______ urlretrieve
 
 #from bs4 import BeautifulSoup
-from bs4 import BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup as Soup
 
 
 # prep data
@@ -18,7 +18,7 @@ urlretrieve(
 with open(holidays_page) as f:
     content = f.read()
 
-holidays = defaultdict(list)
+holidays = defaultdict(l..)
 
 
 ___ get_us_bank_holidays(content=content):
@@ -28,13 +28,13 @@ ___ get_us_bank_holidays(content=content):
     soup = Soup(content, 'html.parser')
     table = soup.find('table', class_='list-table')
     table_rows = table.find_all('tr')
-    for tr in table_rows:
+    ___ tr __ table_rows:
         td = tr.find_all('td')
-        row = [i.text for i in td]
-        __ len(row):
+        row = [i.text ___ i __ td]
+        __ l..(row):
             #print(row[1][6:8], row[3].strip())
-            holidays[row[1][6:8]].append(row[3].strip())
-    return holidays
+            holidays[row[1][6:8]].a..(row[3].strip())
+    r.. holidays
     
 #day = get_us_bank_holidays()
 

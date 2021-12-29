@@ -15,15 +15,15 @@ class Solution:
     @return: The root of the new binary search tree.
     """
     ___ insertNode(self, root, node):
-        __ not root:
-            return node
+        __ n.. root:
+            r.. node
 
         __ node.val < root.val:
             root.left = self.insertNode(root.left, node)
-        else:
+        ____:
             root.right = self.insertNode(root.right, node)
 
-        return root
+        r.. root
 
 
 # iteration
@@ -34,18 +34,18 @@ class Solution:
     @return: The root of the new binary search tree.
     """
     ___ insertNode(self, root, node):
-        __ not root:
-            return node
+        __ n.. root:
+            r.. node
 
         curr = root
-        while curr is not node:
+        while curr __ n.. node:
             __ node.val < curr.val:
-                __ curr.left is None:
+                __ curr.left __ N..
                     curr.left = node
                 curr = curr.left
-            else:
-                __ curr.right is None:
+            ____:
+                __ curr.right __ N..
                     curr.right = node
                 curr = curr.right
 
-        return root
+        r.. root

@@ -23,7 +23,7 @@ __author__ = 'Daniel'
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
 
 ___ guess(num):
-    return -1
+    r.. -1
 
 
 class Solution(object):
@@ -37,9 +37,9 @@ class Solution(object):
         while True:
             mid = (lo + hi) / 2
             g = guess(mid)
-            __ g == 0:
-                return mid
-            elif g < 1:
+            __ g __ 0:
+                r.. mid
+            ____ g < 1:
                 hi = mid
-            else:
+            ____:
                 lo = mid + 1

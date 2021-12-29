@@ -8,4 +8,4 @@ class Solution(object):
     while n > 0:
       n -= (n & -n)
       ans += 1
-    return ans
+    r.. ans

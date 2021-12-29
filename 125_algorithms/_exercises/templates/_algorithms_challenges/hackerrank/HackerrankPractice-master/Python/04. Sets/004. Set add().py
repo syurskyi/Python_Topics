@@ -2,4 +2,4 @@
 # Score: 10
 
 
-print(len(set(input() for i in range(int(input())))))
+print(l..(set(input() ___ i __ r..(int(input())))))

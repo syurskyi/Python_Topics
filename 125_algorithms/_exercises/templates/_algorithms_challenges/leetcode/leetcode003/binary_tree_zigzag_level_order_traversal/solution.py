@@ -28,29 +28,29 @@ class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     ___ zigzagLevelOrder(self, root):
-        __ root is None:
-            return []
-        res = []
-        queue = []
+        __ root __ N..
+            r.. []
+        res    # list
+        queue    # list
         rev = False  # Reverse direction
-        level = []
-        queue.append(root)
-        queue.append(None)
+        level    # list
+        queue.a..(root)
+        queue.a..(N..)
         while queue:
             root = queue.pop(0)
-            __ root is None:
+            __ root __ N..
                 __ queue:
-                    queue.append(None)
-                res.append(level)
-                level = []
-                rev = not rev  # Toggle direction
-            else:
+                    queue.a..(N..)
+                res.a..(level)
+                level    # list
+                rev = n.. rev  # Toggle direction
+            ____:
                 __ rev:
                     level.insert(0, root.val)
-                else:
-                    level.append(root.val)
-                __ root.left is not None:
-                    queue.append(root.left)
-                __ root.right is not None:
-                    queue.append(root.right)
-        return res
+                ____:
+                    level.a..(root.val)
+                __ root.left __ n.. N..
+                    queue.a..(root.left)
+                __ root.right __ n.. N..
+                    queue.a..(root.right)
+        r.. res

@@ -12,21 +12,21 @@ class Solution(object):
     n += 1
     ans = 0
     d = collections.Counter(tasks)
-    heap = [-c for c in d.values()]
+    heap = [-c ___ c __ d.values()]
     heapq.heapify(heap)
     while heap:
-      stack = []
+      stack    # list
       cnt = 0
-      for _ in range(n):
+      ___ _ __ r..(n):
         __ heap:
           c = heapq.heappop(heap)
           cnt += 1
           __ c < -1:
-            stack.append(c + 1)
-      for item in stack:
+            stack.a..(c + 1)
+      ___ item __ stack:
         heapq.heappush(heap, item)
-      ans += heap and n or cnt  # == if heap then n else cnt
-    return ans
+      ans += heap and n o. cnt  # == if heap then n else cnt
+    r.. ans
 
   # O(n) # of the most frequent tasks, say longest, will determine the legnth
   # to void counting idle intervals, we count (longest - 1) * (n + 1)
@@ -40,6 +40,6 @@ class Solution(object):
     counts = d.values()
     longest = max(counts)
     ans = (longest - 1) * (n + 1)
-    for count in counts:
-      ans += count == longest and 1 or 0
-    return max(len(tasks), ans)
+    ___ count __ counts:
+      ans += count __ longest and 1 o. 0
+    r.. max(l..(tasks), ans)

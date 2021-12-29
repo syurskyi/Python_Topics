@@ -5,27 +5,27 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not G or not G[0]:
-            return ans
+        __ n.. G o. n.. G[0]:
+            r.. ans
 
-        m, n = len(G), len(G[0])
+        m, n = l..(G), l..(G[0])
         L, R, H = {}, {}, {}
 
-        for i in range(m):
+        ___ i __ r..(m):
             curr = 0  # left boundary
-            for j in range(n):
-                __ G[i][j] == '1':
+            ___ j __ r..(n):
+                __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
                     L[j] = max(L.get(j, 0), curr)
-                else:
+                ____:
                     H[j] = L[j] = 0
                     curr = j + 1
 
             curr = n  # right boundary
-            for j in range(n - 1, -1, -1):
-                __ G[i][j] == '1':
-                    R[j] = min(R.get(j, n), curr)
-                else:
+            ___ j __ r..(n - 1, -1, -1):
+                __ G[i][j] __ '1':
+                    R[j] = m..(R.get(j, n), curr)
+                ____:
                     R[j] = n
                     curr = j
 
@@ -34,7 +34,7 @@ class Solution:
                     H[j] * (R[j] - L[j])
                 )
 
-        return ans
+        r.. ans
 
 
 """
@@ -93,17 +93,17 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not G or not G[0]:
-            return ans
+        __ n.. G o. n.. G[0]:
+            r.. ans
 
-        m, n = len(G), len(G[0])
+        m, n = l..(G), l..(G[0])
         H = [0] * n
 
-        for i in range(m):
-            for j in range(n):
-                __ G[i][j] == '1':
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ G[i][j] __ '1':
                     H[j] += 1
-                else:
+                ____:
                     H[j] = 0
 
             ans = max(ans, self.largestRectangleArea(H))
@@ -111,27 +111,27 @@ class Solution:
             # To remove the trick `0`
             H.pop()
 
-        return ans
+        r.. ans
 
     ___ largestRectangleArea(self, H):
         area = 0
-        __ not H:
-            return area
+        __ n.. H:
+            r.. area
 
         # To ensure the last element in monostack will be handled
-        H.append(0)
+        H.a..(0)
 
-        I = []
+        I    # list
         left = height = 0
 
-        for right in range(len(H)):
+        ___ right __ r..(l..(H)):
             while I and H[I[-1]] >= H[right]:
                 height = H[I.pop()]
-                left = I[-1] __ I else -1
+                left = I[-1] __ I ____ -1
                 area = max(
                     area,
                     height * (right - left - 1)
                 )
-            I.append(right)
+            I.a..(right)
 
-        return area
+        r.. area

@@ -1,5 +1,5 @@
-import unittest
-from transpose import transpose
+_______ unittest
+____ transpose _______ transpose
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -260,5 +260,5 @@ class TransposeTests(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

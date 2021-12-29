@@ -10,7 +10,7 @@ Note:
 You may assume k is always valid, 1 ≤ k ≤ array's length.
 """
 __author__ = 'Daniel'
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -22,20 +22,20 @@ class Solution:
 
         :rtype: int
         """
-        h = []
-        n = len(nums)
-        for i, v in enumerate(nums):
+        h    # list
+        n = l..(nums)
+        ___ i, v __ enumerate(nums):
             __ i < k:
                 heapq.heappush(h, v)
-            else:
+            ____:
                 __ v <= h[0]:
                     continue
                 heapq.heappop(h)
                 heapq.heappush(h, v)
 
-        return heapq.heappop(h)
+        r.. heapq.heappop(h)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().findKthLargest([3, 2, 1, 5, 6, 4], 2)
 

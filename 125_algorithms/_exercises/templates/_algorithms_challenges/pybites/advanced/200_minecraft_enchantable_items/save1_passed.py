@@ -1,12 +1,12 @@
-from collections import defaultdict
-from dataclasses import dataclass, field
-from functools import total_ordering
-from pathlib import Path
-from re import compile, search
-from typing import Any, DefaultDict, List
-from urllib.request import urlretrieve
+____ collections _______ defaultdict
+____ dataclasses _______ dataclass, field
+____ functools _______ total_ordering
+____ pathlib _______ Path
+____ re _______ compile, search
+____ typing _______ Any, DefaultDict, List
+____ urllib.request _______ urlretrieve
 
-from bs4 import BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup as Soup
 
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
@@ -29,13 +29,13 @@ class Enchantment:
     name: str
     max_level: int
     description: str
-    items: List[str] = field(default_factory=list)
+    items: List[str] = field(default_factory=l..)
 
     ___ __str__(self):
-        return f"{self.name} ({self.max_level}): {self.description}"
+        r.. f"{self.name} ({self.max_level}): {self.description}"
 
     ___ __lt__(self, other):
-        return self.id_name < other.id_name
+        r.. self.id_name < other.id_name
 
 
 @dataclass
@@ -43,12 +43,12 @@ class Item:
     """Minecraft enchantable item"""
 
     name: str
-    enchantments: List[Enchantment] = field(default_factory=list)
+    enchantments: List[Enchantment] = field(default_factory=l..)
 
     ___ __str__(self):
-        enchants = sorted(self.enchantments)
-        enc_list = [f"\n  [{enc.max_level}] {enc.id_name}" for enc in enchants]
-        return f"{self.name.title()}: {''.join(enc_list)}"
+        enchants = s..(self.enchantments)
+        enc_list = [f"\n  [{enc.max_level}] {enc.id_name}" ___ enc __ enchants]
+        r.. f"{self.name.t..}: {''.join(enc_list)}"
 
 
 ___ clean_up_names(item_names):
@@ -59,19 +59,19 @@ ___ clean_up_names(item_names):
     """
     unwanted = (".png", "_sm", "iron_", "enchanted_")
 
-    __ "fishing_rod" in item_names:
+    __ "fishing_rod" __ item_names:
         item_names = item_names.replace("fishing_rod", "fishingrod")
 
-    for chars in unwanted:
-        __ chars in item_names:
+    ___ chars __ unwanted:
+        __ chars __ item_names:
             item_names = item_names.replace(chars, "")
 
     item_names = item_names.split("_")
     item_names = [
-        "fishing_rod" __ item == "fishingrod" else item for item in item_names
+        "fishing_rod" __ item __ "fishingrod" ____ item ___ item __ item_names
     ]
 
-    return " ".join(item_names)
+    r.. " ".join(item_names)
 
 
 ___ enchantable_items(soup):
@@ -82,11 +82,11 @@ ___ enchantable_items(soup):
     """
     table = soup.find("table", {"id": "minecraft_items"})
     items = [
-        clean_up_names(img["data-src"].split("/")[-1]).split()
-        for img in table.find_all("img")
+        clean_up_names(img["data-src"].split("/")[-1]).s.. 
+        ___ img __ table.find_all("img")
     ]
 
-    return items
+    r.. items
 
 
 ___ generate_enchantments(soup):
@@ -99,7 +99,7 @@ ___ generate_enchantments(soup):
     data = parse_html(soup)
     enchant_data: DefaultDict[Any, Enchantment] = defaultdict(Enchantment)
 
-    for i, row in enumerate(data):
+    ___ i, row __ enumerate(data):
         id_name, name = split_title(row[0])
         max_level = ROMAN[row[1]]
         description = row[2]
@@ -107,7 +107,7 @@ ___ generate_enchantments(soup):
         enchant = Enchantment(id_name, name, max_level, description, items)
         enchant_data[id_name] = enchant
 
-    return enchant_data
+    r.. enchant_data
 
 
 ___ generate_items(data):
@@ -119,14 +119,14 @@ ___ generate_items(data):
     mc_items: DefaultDict[Any, Item] = defaultdict(Item)
     unique_items = gen_item_set(data)
 
-    for item in unique_items:
+    ___ item __ unique_items:
         mc_items[item] = Item(item.replace("_", " "))
 
-    for enchant in data:
-        for item in data[enchant].items:
-            mc_items[item].enchantments.append(data[enchant])
+    ___ enchant __ data:
+        ___ item __ data[enchant].items:
+            mc_items[item].enchantments.a..(data[enchant])
 
-    return mc_items
+    r.. mc_items
 
 
 ___ gen_item_set(data):
@@ -136,11 +136,11 @@ ___ gen_item_set(data):
     :return: Set of sorted item object name strings
     """
     mc_items = set()
-    for enchantment in data.keys():
-        for item in data[enchantment].items:
+    ___ enchantment __ data.keys():
+        ___ item __ data[enchantment].items:
             mc_items.add(item)
 
-    return sorted(mc_items)
+    r.. s..(mc_items)
 
 
 ___ get_soup(file=HTML_FILE):
@@ -149,16 +149,16 @@ ___ get_soup(file=HTML_FILE):
     :param file: Path file object
     :return: BeautifulSoup object
     """
-    __ isinstance(file, Path):
-        __ not HTML_FILE.is_file():
+    __ isi..(file, Path):
+        __ n.. HTML_FILE.is_file():
             urlretrieve(URL, HTML_FILE)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")
-    else:
+    ____:
         soup = Soup(file, "html.parser")
 
-    return soup
+    r.. soup
 
 
 ___ main():
@@ -166,7 +166,7 @@ ___ main():
     soup = get_soup()
     enchantment_data = generate_enchantments(soup)
     minecraft_items = generate_items(enchantment_data)
-    for item in minecraft_items:
+    ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 
 
@@ -178,10 +178,10 @@ ___ parse_html(soup):
     """
     table = soup.find("table", {"id": "minecraft_items"})
     data = [
-        [td.get_text() for td in row.find_all("td")] for row in table.find_all("tr")
+        [td.get_text() ___ td __ row.find_all("td")] ___ row __ table.find_all("tr")
     ]
 
-    return data[1:]
+    r.. data[1:]
 
 
 ___ split_title(title):
@@ -193,8 +193,8 @@ ___ split_title(title):
     """
     pattern = compile(r"(.*)\((.*)\)")
     names, id_names = search(pattern, title).groups()
-    return id_names, names
+    r.. id_names, names
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     main()

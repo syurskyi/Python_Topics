@@ -47,15 +47,15 @@ class StockSpanner:
         Only interested in consecutive backwards <=, then only keep the
         previously >. A stack to maintain a list ">" (decreasing) elements
         """
-        self.stk = []   # [(price, span)]
+        self.stk    # list   # [(price, span)]
 
     ___ next(self, price: int) -> int:
         cur_span = 1
         while self.stk and self.stk[-1][0] <= price:
             _, span = self.stk.pop()
             cur_span += span
-        self.stk.append((price, cur_span))
-        return cur_span
+        self.stk.a..((price, cur_span))
+        r.. cur_span
 
 
 

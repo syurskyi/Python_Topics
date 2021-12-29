@@ -47,28 +47,28 @@ class Solution(object):
         :rtype: bool
         """
         required = 0
-        for d in data:
-            __ d & 0x80 == 0:
+        ___ d __ data:
+            __ d & 0x80 __ 0:
                 __ required != 0:
-                    return False
-            else:
+                    r.. False
+            ____:
                 one_cnt = 0
-                while d & 0x80 == 0x80:
+                while d & 0x80 __ 0x80:
                     one_cnt += 1
                     d <<= 1
 
                 __ required != 0:
                     __ one_cnt != 1:
-                        return False
+                        r.. False
                     required -= 1
-                else:
-                    __ one_cnt == 1:
-                        return False
+                ____:
+                    __ one_cnt __ 1:
+                        r.. False
                     required += (one_cnt - 1)
 
-        return required == 0
+        r.. required __ 0
 
 
-__ __name__ == "__main__":
-    assert Solution().validUtf8([197, 130, 1]) == True
-    assert Solution().validUtf8([235, 140, 4]) == False
+__ __name__ __ "__main__":
+    ... Solution().validUtf8([197, 130, 1]) __ True
+    ... Solution().validUtf8([235, 140, 4]) __ False

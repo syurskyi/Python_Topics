@@ -1,4 +1,4 @@
-import os
+_______ os
 
 
 ___ count_dirs_and_files(directory='.'):
@@ -6,7 +6,7 @@ ___ count_dirs_and_files(directory='.'):
        Return a tuple of (number_of_directories, number_of_files)
     """
     count_dir = count_files = 0
-    for _, dir, files in os.walk(directory):
-        count_dir += len(dir)
-        count_files += len(files)
-    return count_dir, count_files
+    ___ _, dir, files __ os.walk(directory):
+        count_dir += l..(dir)
+        count_files += l..(files)
+    r.. count_dir, count_files

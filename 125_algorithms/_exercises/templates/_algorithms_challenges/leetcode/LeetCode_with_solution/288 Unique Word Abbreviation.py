@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -15,14 +15,14 @@ class ValidWordAbbr(object):
         self.abbrev = defaultdict(int)
         self.dictionary = set(dictionary)
 
-        for word in dictionary:
+        ___ word __ dictionary:
             self.abbrev[self.process(word)] += 1
 
     ___ process(self, word):
-        __ len(word) <= 2:
-            return word
+        __ l..(word) <= 2:
+            r.. word
 
-        return word[0]+str(len(word)-2)+word[-1]
+        r.. word[0]+str(l..(word)-2)+word[-1]
 
     ___ isUnique(self, word):
         """
@@ -30,5 +30,5 @@ class ValidWordAbbr(object):
         :type word: str
         :rtype: bool
         """
-        return (word in self.dictionary and self.abbrev[self.process(word)] == 1 or
-                not self.process(word) in self.abbrev)
+        r.. (word __ self.dictionary and self.abbrev[self.process(word)] __ 1 o.
+                n.. self.process(word) __ self.abbrev)

@@ -36,17 +36,17 @@ class Solution(object):
         # If both a and b exist in root, return their LCA;
         # if either a or b exist in root, return whichever exists;
         # if neither of them exist in root, return None
-        __ root is None:
-            return None
-        elif root is p or root is q:
-            return root
-        else:
+        __ root __ N..
+            r.. N..
+        ____ root __ p o. root __ q:
+            r.. root
+        ____:
             l = self.lowestCommonAncestor(root.left, p, q)
             r = self.lowestCommonAncestor(root.right, p, q)
-            __ l is not None and r is not None:
-                return root
-            else:
-                __ l is not None:
-                    return l
-                __ r is not None:
-                    return r
+            __ l __ n.. N.. and r __ n.. N..
+                r.. root
+            ____:
+                __ l __ n.. N..
+                    r.. l
+                __ r __ n.. N..
+                    r.. r

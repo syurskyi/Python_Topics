@@ -1,50 +1,50 @@
-import re
+_______ re
 
 
 ___ parse_markdown(markdown):
     lines = markdown.split('\n')
     html = ''
     in_list = False
-    for line in lines:
+    ___ line __ lines:
         res = parse_line(line, in_list)
         html += res['line']
         in_list = res['in_list']
     __ in_list:
         html += '</ul>'
-    return html
+    r.. html
 
 
 ___ wrap(line, tag):
-    return '<{tag}>{line}</{tag}>'.format(line=line, tag=tag)
+    r.. '<{tag}>{line}</{tag}>'.format(line=line, tag=tag)
 
 
 ___ check_headers(line):
     pattern = '# (.*)'
-    for i in range(6):
+    ___ i __ r..(6):
         __ re.match(pattern, line):
-            return wrap(line[(i + 2):], 'h' + str(i + 1))
+            r.. wrap(line[(i + 2):], 'h' + str(i + 1))
         pattern = '#' + pattern
-    return line
+    r.. line
 
 
 ___ check_bold(line):
     bold_pattern = '(.*)__(.*)__(.*)'
     bold_match = re.match(bold_pattern, line)
     __ bold_match:
-        return bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
+        r.. bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
             + bold_match.group(3)
-    else:
-        return None
+    ____:
+        r.. N..
 
 
 ___ check_italic(line):
     italic_pattern = '(.*)_(.*)_(.*)'
     italic_match = re.match(italic_pattern, line)
     __ italic_match:
-        return italic_match.group(1) + wrap(italic_match.group(2), 'em')\
+        r.. italic_match.group(1) + wrap(italic_match.group(2), 'em')\
             + italic_match.group(3)
-    else:
-        return None
+    ____:
+        r.. N..
 
 
 ___ parse_line(line, in_list):
@@ -53,20 +53,20 @@ ___ parse_line(line, in_list):
     list_match = re.match(r'\* (.*)', res)
 
     __ (list_match):
-        __ not in_list:
+        __ n.. in_list:
             res = '<ul>' + wrap(list_match.group(1), 'li')
             in_list = True
-        else:
+        ____:
             res = wrap(list_match.group(1), 'li')
-    else:
+    ____:
         __ in_list:
             res += '</ul>'
             in_list = False
 
-    __ not re.match('<h|<ul|<li', res):
+    __ n.. re.match('<h|<ul|<li', res):
         res = wrap(res, 'p')
 
-    __ list_match is None:
+    __ list_match __ N..
         res = re.sub('(.*)(<li>)(.*)(</li>)(.*)', r'\1\2<p>\3</p>\4\5', res)
 
     while check_bold(res):
@@ -74,7 +74,7 @@ ___ parse_line(line, in_list):
     while check_italic(res):
         res = check_italic(res)
 
-    return {
+    r.. {
         'line': res,
         'in_list': in_list
     }

@@ -9,9 +9,9 @@ class Solution(object):
     isFromLeft = True
     step = 1
     while count > 1:
-      __ isFromLeft or count % 2 == 1:
+      __ isFromLeft o. count % 2 __ 1:
         head = head + step
       count /= 2
       step *= 2
-      isFromLeft = not isFromLeft
-    return head
+      isFromLeft = n.. isFromLeft
+    r.. head

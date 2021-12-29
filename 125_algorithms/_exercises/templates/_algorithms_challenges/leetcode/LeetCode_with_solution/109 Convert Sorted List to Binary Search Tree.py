@@ -6,20 +6,20 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 # Definition for singly-linked list.
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     # class attribute to keep trace the currently processing nodes
     # current_node = None
     ___ __init__(self):
-        self.current_node = None  # !important, avoid time complexity of look up
+        self.current_node = N..  # !important, avoid time complexity of look up
 
     ___ sortedListToBST(self, head):
         """
@@ -29,16 +29,16 @@ class Solution:
         :param head: ListNode
         :return: TreeNode
         """
-        __ not head:
-            return head
+        __ n.. head:
+            r.. head
 
         self.current_node = head
         length = self.getLength(head)
-        return self.sortedListToBST_dfs(0, length-1)
+        r.. self.sortedListToBST_dfs(0, length-1)
 
     ___ sortedListToBST_dfs(self, start, end):
         __ start>end:
-            return
+            r..
         mid = (start+end)/2
         left_subtree = self.sortedListToBST_dfs(start, mid-1)
         root = TreeNode(self.current_node.val)
@@ -47,11 +47,11 @@ class Solution:
 
         root.left = left_subtree
         root.right = right_subtree
-        return root
+        r.. root
 
     ___ getLength(self, head):
         count = 0
         while head:
             head = head.next
             count += 1
-        return count
+        r.. count

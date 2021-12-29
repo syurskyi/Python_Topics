@@ -25,23 +25,23 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        max_res = [None]
+        max_res = [N..]
         res = self.max_sum(root, max_res)
-        return max(res, max_res[0])
+        r.. max(res, max_res[0])
 
     ___ max_sum(self, root, max_res):
-        __ root __ None:
-            return 0
-        else:
+        __ root __ N..
+            r.. 0
+        ____:
             left_max = self.max_sum(root.left, max_res)
             right_max = self.max_sum(root.right, max_res)
             root_max = max(root.val,
                            root.val + left_max,
                            root.val + right_max)
-            __ max_res[0] __ not None:
+            __ max_res[0] __ n.. N..
                 max_res[0] = max(max_res[0],
                                  root_max,
                                  root.val + left_max + right_max)
-            else:
+            ____:
                 max_res[0] = max(root_max, root.val + left_max + right_max)
-            return root_max
+            r.. root_max

@@ -5,7 +5,7 @@ Created on Sep 10, 2017
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -18,42 +18,42 @@ class Solution(object):
         :type d: int
         :rtype: TreeNode
         """
-        __ d == 1:
+        __ d __ 1:
             newRoot = TreeNode(v)
             newRoot.left = root
-            return newRoot
+            r.. newRoot
         level = 1
         queue = [root]
         while queue:
-            num = len(queue)
-            for _ in range(num):
+            num = l..(queue)
+            ___ _ __ r..(num):
                 node = queue.pop(0)
                 __ node.left:
-                    __ level == d-1:
+                    __ level __ d-1:
                         newNode = TreeNode(v)
                         node0 = node.left
                         node.left = newNode
                         newNode.left = node0
-                        queue.append(newNode)
-                    else:
-                        queue.append(node.left)
-                elif level == d-1:
+                        queue.a..(newNode)
+                    ____:
+                        queue.a..(node.left)
+                ____ level __ d-1:
                     node.left = TreeNode(v)
-                    queue.append(node.left)
+                    queue.a..(node.left)
                 __ node.right:
-                    __ level == d-1:
+                    __ level __ d-1:
                         newNode = TreeNode(v)
                         node0 = node.right
                         node.right = newNode
                         newNode.right = node0
-                        queue.append(newNode)
-                    else:
-                        queue.append(node.right)
-                elif level == d-1:
+                        queue.a..(newNode)
+                    ____:
+                        queue.a..(node.right)
+                ____ level __ d-1:
                     node.right = TreeNode(v)
-                    queue.append(node.right)
+                    queue.a..(node.right)
             level += 1
-        return root
+        r.. root
     
     ___ test(self):
         testCases = [
@@ -68,10 +68,10 @@ class Solution(object):
                 3
             ],
         ]
-        for root, v, d in testCases:
+        ___ root, v, d __ testCases:
             newRoot = self.addOneRow(root, v, d)
             print(newRoot.val)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

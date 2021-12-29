@@ -10,8 +10,8 @@ class Solution(object):
         :rtype: int
         """
         j = 0
-        for i, num in enumerate(nums):
-            __ i == 0 or nums[i-1] != num:
+        ___ i, num __ enumerate(nums):
+            __ i __ 0 o. nums[i-1] != num:
                 nums[j] = num
                 j += 1
-        return j
+        r.. j

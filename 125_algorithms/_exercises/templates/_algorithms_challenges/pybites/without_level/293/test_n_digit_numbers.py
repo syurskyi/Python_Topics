@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from n_digit_numbers import n_digit_numbers
+____ n_digit_numbers _______ n_digit_numbers
 
 
 @pytest.mark.parametrize('input_list, n, expected', [
@@ -16,7 +16,7 @@ from n_digit_numbers import n_digit_numbers
      [-1100, 2220, -3333, 4444, 5555]),
 ])
 ___ test_n_digit_numbers(input_list, n, expected):
-    assert n_digit_numbers(input_list, n) == expected
+    ... n_digit_numbers(input_list, n) __ expected
 
 
 ___ test_invalid_n():

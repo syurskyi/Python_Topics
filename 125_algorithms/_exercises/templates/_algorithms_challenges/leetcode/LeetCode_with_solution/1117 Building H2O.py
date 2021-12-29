@@ -41,26 +41,26 @@ Total length of input string will be 3n, where 1 ≤ n ≤ 20.
 Total number of H will be 2n in the input string.
 Total number of O will be n in the input string.
 """
-from typing import Callable
-from threading import Semaphore
+____ typing _______ Callable
+____ threading _______ Semaphore
 
-from collections import deque
+____ collections _______ deque
 
 class H2O:
     ___ __init__(self):
         self.hq = deque()
         self.oq = deque()
 
-    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
-        self.hq.append(releaseHydrogen)
+    ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
+        self.hq.a..(releaseHydrogen)
         self.try_output()
 
-    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
-        self.oq.append(releaseOxygen)
+    ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
+        self.oq.a..(releaseOxygen)
         self.try_output()
 
     ___ try_output(self):
-        __ len(self.hq) >= 2 and len(self.oq) >= 1:
+        __ l..(self.hq) >= 2 and l..(self.oq) >= 1:
             self.hq.popleft()()
             self.hq.popleft()()
             self.oq.popleft()()
@@ -73,18 +73,18 @@ class H2O_TLE2:
         """
         self.gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
-    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
+    ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
         self.gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
         __ self.gates[0].acquire(blocking=False):  # self.gates[0]._value > 0
             # still have available count
             self.gates[0].release()
-        else:
+        ____:
             self.gates[1].release()
 
 
-    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
+    ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
         self.gates[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
@@ -99,22 +99,22 @@ class H2O_TLE:
         Fixed at HHO pattern
         """
         self.h_cnt = 0
-        self.locks = [Lock() for _ in range(3)]
+        self.locks = [Lock() ___ _ __ r..(3)]
         self.locks[1].a..
 
 
-    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
+    ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
         self.locks[0].a..
         self.h_cnt += 1
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
         __ self.h_cnt < 2:
             self.locks[0].release()
-        else:
+        ____:
             self.locks[1].release()
 
 
-    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
+    ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
         self.locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()

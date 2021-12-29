@@ -11,10 +11,10 @@ class Interval(object):
         self.end = e
     
     ___ __str__(self):
-        return '<s: %s, e: %s>' % (self.start, self.end)
+        r.. '<s: %s, e: %s>' % (self.start, self.end)
     
     ___ __repr__(self):
-        return self.__str__()
+        r.. self.__str__()
 
 class Solution(object):
     ___ merge(self, intervals):
@@ -22,37 +22,37 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
-        __ not intervals: return intervals
-        intervals.sort(key=lambda interval: interval.start)
-        result = []
+        __ n.. intervals: r.. intervals
+        intervals.sort(key=l.... interval: interval.start)
+        result    # list
         i = 0
-        while i < len(intervals):
+        while i < l..(intervals):
             curr = intervals[i]
             nextEnd = curr.end
             j = i+1
-            while j < len(intervals):
+            while j < l..(intervals):
                 __ intervals[j].start > nextEnd:
                     break
-                else:
+                ____:
                     nextEnd = max(intervals[j].end, nextEnd)
                 j += 1
             i = j
-            result.append(Interval(curr.start, nextEnd))
+            result.a..(Interval(curr.start, nextEnd))
         
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
             [[1,3],[2,6],[8,10],[15,18]],
             [[1,4],[2,3]],
         ]
-        for intervals in testCases:
-            intervals = [Interval(x[0], x[1]) for x in intervals]
+        ___ intervals __ testCases:
+            intervals = [Interval(x[0], x[1]) ___ x __ intervals]
             print('intervals: %s' % (intervals))
             result = self.merge(intervals)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     

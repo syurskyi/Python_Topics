@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
@@ -23,7 +23,7 @@ class Solution:
         :type head: ListNode
         :rtype: bool
         """
-        n = self.len(head)
+        n = self.l..(head)
         m = n/2
         mid = self.get(head, m)
         __ n%2 != 0:
@@ -32,20 +32,20 @@ class Solution:
         mid = self.reverse(mid)
         while head and mid:
             __ head.val != mid.val:
-                return False
+                r.. False
             head = head.next
             mid = mid.next
 
-        return True
+        r.. True
 
-    ___ len(self, head):
+    ___ l..(self, head):
         cnt = 0
         cur = head
         while cur:
             cnt += 1
             cur = cur.next
 
-        return cnt
+        r.. cnt
 
     ___ get(self, head, n):
         cnt = 0
@@ -54,11 +54,11 @@ class Solution:
             cnt += 1
             cur = cur.next
 
-        return cur
+        r.. cur
 
     ___ reverse(self, head):
-        __ not head:
-            return head
+        __ n.. head:
+            r.. head
 
         dummy = ListNode(0)
         dummy.next = head
@@ -67,5 +67,5 @@ class Solution:
             nxt = cur.next
             cur.next = pre
             pre, cur = cur, nxt
-        __ head: head.next = None
-        return pre
+        __ head: head.next = N..
+        r.. pre

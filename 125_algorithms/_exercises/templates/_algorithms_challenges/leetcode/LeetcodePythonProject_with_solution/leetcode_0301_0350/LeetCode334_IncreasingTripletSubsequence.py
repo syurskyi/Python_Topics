@@ -6,18 +6,18 @@ Created on Mar 19, 2017
 
 class Solution(object):
     ___ increasingTriplet(self, nums):
-        __ not nums: return False
+        __ n.. nums: r.. False
 #         first = float('inf')
         first = nums[0]
         second = float('inf')
-        for i in range(1, len(nums)):
+        ___ i __ r..(1, l..(nums)):
             __ nums[i] <= first:
                 first = nums[i]
-            elif nums[i] <= second:
+            ____ nums[i] <= second:
                 second = nums[i]
-            else:
-                return True
-        return False
+            ____:
+                r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -31,12 +31,12 @@ class Solution(object):
             [2, 1, 3],
             [3, 2, 1, 9],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.increasingTriplet(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

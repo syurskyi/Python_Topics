@@ -5,8 +5,8 @@ class Solution(object):
     :type str: str
     :rtype: bool
     """
-    str = str.split()
+    str = str.s.. 
     a = zip(pattern, str)
     print
     a
-    return len(pattern) == len(str) and len(set(a)) == len(set(pattern)) == len(set(str))
+    r.. l..(pattern) __ l..(str) and l..(set(a)) __ l..(set(pattern)) __ l..(set(str))

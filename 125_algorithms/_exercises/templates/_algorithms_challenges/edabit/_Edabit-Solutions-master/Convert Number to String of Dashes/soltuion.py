@@ -4,4 +4,4 @@ ___ num_to_dashes(num):
     while i <= num:
         var = var + "-"
         i = i + 1
-    return var
+    r.. var

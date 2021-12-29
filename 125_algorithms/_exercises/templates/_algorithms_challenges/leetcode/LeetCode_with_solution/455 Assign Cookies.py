@@ -27,16 +27,16 @@ class Solution:
         ret = 0
         i = 0
         j = 0
-        while i < len(g) and j < len(s):
+        while i < l..(g) and j < l..(s):
             __ g[i] <= s[j]:
                 ret += 1
                 i += 1
                 j += 1
-            else:
+            ____:
                 j += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findContentChildren([10,9,8,7], [5,6,7,8]) == 2
+__ __name__ __ "__main__":
+    ... Solution().findContentChildren([10,9,8,7], [5,6,7,8]) __ 2

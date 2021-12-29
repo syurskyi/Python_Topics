@@ -13,10 +13,10 @@ class Solution(object):
     """
 
     ___ dfs(root):
-      __ not root:
-        return 0, 0
+      __ n.. root:
+        r.. 0, 0
       lpre, lppre = dfs(root.left)
       rpre, rppre = dfs(root.right)
-      return max(root.val + lppre + rppre, lpre + rpre), lpre + rpre
+      r.. max(root.val + lppre + rppre, lpre + rpre), lpre + rpre
 
-    return dfs(root)[0]
+    r.. dfs(root)[0]

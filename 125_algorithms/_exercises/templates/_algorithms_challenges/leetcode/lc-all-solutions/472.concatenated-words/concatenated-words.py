@@ -6,24 +6,24 @@ class Solution(object):
     """
 
     ___ wordBreak(word, cands):
-      __ not cands:
-        return False
-      dp = [False] * (len(word) + 1)
+      __ n.. cands:
+        r.. False
+      dp = [False] * (l..(word) + 1)
       dp[0] = True
-      for i in range(1, len(word) + 1):
-        for j in reversed(range(0, i)):
-          __ not dp[j]:
+      ___ i __ r..(1, l..(word) + 1):
+        ___ j __ reversed(r..(0, i)):
+          __ n.. dp[j]:
             continue
-          __ word[j:i] in cands:
+          __ word[j:i] __ cands:
             dp[i] = True
             break
-      return dp[-1]
+      r.. dp[-1]
 
-    words.sort(key=lambda x: -len(x))
+    words.sort(key=l.... x: -l..(x))
     cands = set(words)
-    ans = []
-    for i in range(0, len(words)):
+    ans    # list
+    ___ i __ r..(0, l..(words)):
       cands -= {words[i]}
       __ wordBreak(words[i], cands):
         ans += words[i],
-    return ans
+    r.. ans

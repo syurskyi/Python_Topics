@@ -12,35 +12,35 @@ class Solution(object):
         """
         result = set()
         resultCodes = set()
-        __ not s or len(s) < 10: return []
-        for i in range(0, len(s)-9):
+        __ n.. s o. l..(s) < 10: r.. []
+        ___ i __ r..(0, l..(s)-9):
             subStr = s[i:i+10]
             code = self.encode(subStr)
-            __ code in resultCodes:
+            __ code __ resultCodes:
                 result.add(subStr)
-            else:
+            ____:
                 resultCodes.add(code)
-        return list(result)
+        r.. l..(result)
     
     ___ encode(self, s):
         sumVal = 0
-        for _, c in enumerate(s):
-            __ c == 'A':
+        ___ _, c __ enumerate(s):
+            __ c __ 'A':
                 sumVal = sumVal*4
-            elif c == 'C':
+            ____ c __ 'C':
                 sumVal = sumVal*4+1
-            elif c == 'G':
+            ____ c __ 'G':
                 sumVal = sumVal*4+2
-            else:
+            ____:
                 sumVal = sumVal*4+3
-        return sumVal
+        r.. sumVal
     
     ___ test(self):
         testCases = [
             'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT',
             'AAAAAAAAAAAA',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.findRepeatedDnaSequences(s)
             print('result: %s' % (result))
@@ -48,5 +48,5 @@ class Solution(object):
         print(self.encode('AAAAACCCCC'))
         print(self.encode('CCCCCAAAAA'))
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

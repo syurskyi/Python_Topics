@@ -1,14 +1,14 @@
-import functools
-from typing import Iterable, Set, Any, cast
+_______ functools
+____ typing _______ Iterable, Set, Any, cast
 
 
 ___ intersection(*args: Iterable) -> Set[Any]:
-    cast_to_set = [set(arg) for arg in args __ arg != None and len(arg) != 0]
+    cast_to_set = [set(arg) ___ arg __ args __ arg != N.. and l..(arg) != 0]
 
-    __ len(cast_to_set) == 0:
-        return set()
+    __ l..(cast_to_set) __ 0:
+        r.. set()
     
-    return functools.reduce(set.intersection, cast_to_set)
+    r.. functools.reduce(set.intersection, cast_to_set)
 
 
 # if __name__ == "__main__":

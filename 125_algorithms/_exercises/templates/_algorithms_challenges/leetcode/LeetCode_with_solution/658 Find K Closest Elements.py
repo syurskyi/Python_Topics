@@ -15,9 +15,9 @@ The value k is positive and will always be smaller than the length of the sorted
 Length of the given array is positive and will not exceed 104
 Absolute value of elements in the array and x will not exceed 104
 """
-from typing import List
-from bisect import bisect_left
-from collections import deque
+____ typing _______ List
+____ bisect _______ bisect_left
+____ collections _______ deque
 
 
 class Solution:
@@ -25,7 +25,7 @@ class Solution:
         """
         binary search without two pointers scanning
         """
-        n = len(A)
+        n = l..(A)
         lo = 0
         hi = n - k
         while lo < hi:
@@ -33,17 +33,17 @@ class Solution:
             __ abs(x - A[mid]) > abs(A[mid + k] - x):
                 # better to have A[mid+k] rather than A[mid]
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return A[lo:lo+k]
+        r.. A[lo:lo+k]
 
     ___ findClosestElements2(self, A: List[int], k: int, x: int) -> List[int]:
         """
         input sorted arrya
         two pointers
         """
-        n = len(A)
+        n = l..(A)
         idx = bisect_left(A, x)
         ret = deque()
         i = idx - 1
@@ -53,23 +53,23 @@ class Solution:
                 __ abs(A[i] - x) <= abs(A[j] - x):
                     ret.appendleft(A[i])
                     i -= 1
-                else:
-                    ret.append(A[j])
+                ____:
+                    ret.a..(A[j])
                     j += 1
-            elif 0 <= i < n:
+            ____ 0 <= i < n:
                 ret.appendleft(A[i])
                 i -= 1
-            elif 0 <= j < n:
-                ret.append(A[j])
+            ____ 0 <= j < n:
+                ret.a..(A[j])
                 j += 1
-            else:
+            ____:
                 raise
 
             k -= 1
 
-        return list(ret)
+        r.. l..(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().findClosestElements([1,2,3,4,5], 4, 3) == [1,2,3,4]
-    assert Solution().findClosestElements([1,2,3,4,5], 4, -1) == [1,2,3,4]
+__ __name__ __ "__main__":
+    ... Solution().findClosestElements([1,2,3,4,5], 4, 3) __ [1,2,3,4]
+    ... Solution().findClosestElements([1,2,3,4,5], 4, -1) __ [1,2,3,4]

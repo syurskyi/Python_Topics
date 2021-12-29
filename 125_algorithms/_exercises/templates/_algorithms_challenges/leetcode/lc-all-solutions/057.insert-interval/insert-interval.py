@@ -12,9 +12,9 @@ class Solution(object):
     :rtype: List[Interval]
     """
     s, e = newInterval.start, newInterval.end
-    left = filter(lambda x: x.end < newInterval.start, intervals)
-    right = filter(lambda x: x.start > newInterval.end, intervals)
+    left = filter(l.... x: x.end < newInterval.start, intervals)
+    right = filter(l.... x: x.start > newInterval.end, intervals)
     __ left + right != intervals:
-      s = min(intervals[len(left)].start, s)
-      e = max(intervals[~len(right)].end, e)
-    return left + [Interval(s, e)] + right
+      s = m..(intervals[l..(left)].start, s)
+      e = max(intervals[~l..(right)].end, e)
+    r.. left + [Interval(s, e)] + right

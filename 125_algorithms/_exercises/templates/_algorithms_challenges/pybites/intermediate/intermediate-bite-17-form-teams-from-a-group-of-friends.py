@@ -1,5 +1,5 @@
-from itertools import combinations
-from itertools import permutations
+____ itertools _______ combinations
+____ itertools _______ permutations
 
 
 """
@@ -12,13 +12,13 @@ the number of teams would be greater.
 See the tests for more details. Enjoy :)
 """
 
-___ my_solution_friends_teams(friends: list, team_size: int, order_does_matter: bool = False) -> list:
+___ my_solution_friends_teams(friends: l.., team_size: int, order_does_matter: bool = False) -> l..:
 
     __ order_does_matter:
         result = permutations(friends, team_size)
-    else:
+    ____:
         result = combinations(friends, team_size)
-    return list(result)
+    r.. l..(result)
 
 result = my_solution_friends_teams(['Bob', 'Alice', 'John', 'Mary', 'Theo', 'Julius'], 2, order_does_matter = True)
 print(result)

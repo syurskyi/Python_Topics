@@ -33,16 +33,16 @@ class Solution:
         cur = 1  # 0 1 symmetry, no need 0, 1 counter, only need cur and prev counter
         prev = 0
         ret = 0
-        for i in range(1, len(s)):
-            __ s[i] == s[i-1]:
+        ___ i __ r..(1, l..(s)):
+            __ s[i] __ s[i-1]:
                 cur += 1
-            else:
+            ____:
                 prev = cur
                 cur = 1
             __ prev >= cur:
                 ret += 1
 
-        return ret
+        r.. ret
 
     ___ countBinarySubstrings_error(self, s: str) -> int:
         """
@@ -50,20 +50,20 @@ class Solution:
         """
         counter = {"0": 0, "1": 0}
         ret = 0
-        __ not s:
-            return ret
+        __ n.. s:
+            r.. ret
         counter[s[0]] += 1
-        for i in range(1, len(s)):
+        ___ i __ r..(1, l..(s)):
             __ s[i] != s[i-1] and counter[s[i]] != 0:
                 counter[s[i]] = 0
 
             counter[s[i]] += 1
-            __ min(counter["0"], counter["1"]) > 0:
+            __ m..(counter["0"], counter["1"]) > 0:
                 ret += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().countBinarySubstrings("00110011") == 6
-    assert Solution().countBinarySubstrings("00110") == 3
+__ __name__ __ "__main__":
+    ... Solution().countBinarySubstrings("00110011") __ 6
+    ... Solution().countBinarySubstrings("00110") __ 3

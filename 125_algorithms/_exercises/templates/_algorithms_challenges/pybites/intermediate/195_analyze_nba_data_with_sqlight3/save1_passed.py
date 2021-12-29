@@ -1,18 +1,18 @@
-from collections import namedtuple
-import csv
-import os
-from pathlib import Path
-import sqlite3
-import random
-import string
+____ collections _______ namedtuple
+_______ csv
+_______ os
+____ pathlib _______ Path
+_______ sqlite3
+_______ random
+_______ string
 
-import requests
+_______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 salt = ''.join(
-    random.choice(string.ascii_lowercase) for i in range(20)
+    random.choice(string.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 
@@ -29,9 +29,9 @@ ___ import_data():
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
-    players = []
-    for row in reader:
-        players.append(Player(name=row['Player'],
+    players    # list
+    ___ row __ reader:
+        players.a..(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],
                               team=row['Team'],
@@ -54,14 +54,14 @@ import_data()
 ___ player_with_max_points_per_game():
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    return list(cur.execute('SELECT name '
+    r.. l..(cur.execute('SELECT name '
                             'FROM players '
                             'ORDER BY CAST(avg_points as FLOAT) DESC'))[0][0]
 
 
 ___ number_of_players_from_duke():
     """Return the number of players with college == Duke University"""
-    return len(list(cur.execute('SELECT name '
+    r.. l..(l..(cur.execute('SELECT name '
                                 'FROM players '
                                 'WHERE college = "Duke University"')))
 
@@ -69,14 +69,14 @@ ___ number_of_players_from_duke():
 ___ avg_years_active_players_stanford():
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    return list(cur.execute('SELECT ROUND(AVG(active), 2) '
+    r.. l..(cur.execute('SELECT ROUND(AVG(active), 2) '
                             'FROM players '
                             'WHERE college = "Stanford University"'))[0][0]
 
 
 ___ year_with_most_drafts():
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
-    return list(cur.execute('SELECT year, COUNT(*) as draft_count '
+    r.. l..(cur.execute('SELECT year, COUNT(*) as draft_count '
                             'FROM players '
                             'GROUP BY year '
                             'ORDER BY draft_count DESC'))[0][0]

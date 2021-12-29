@@ -23,8 +23,8 @@ Note:
 1 <= routes[i].length <= 500.
 0 <= routes[i][j] < 10 ^ 6.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -36,40 +36,40 @@ class Solution:
         BFS = O(|V| + |E|) = O(N + N^2), where N is number of routes
         Construction = O (N^2 * S), where S is number of stops
         """
-        __ S == T:
-            return 0
+        __ S __ T:
+            r.. 0
 
-        routes = [set(e) for e in routes]
+        routes = [set(e) ___ e __ routes]
         G = defaultdict(set)
-        for i in range(len(routes)):
-            for j in range(i + 1, len(routes)):
+        ___ i __ r..(l..(routes)):
+            ___ j __ r..(i + 1, l..(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
-                for stop in stops_1:  # any(stop in stops_2 for stop in stops_1)
-                    __ stop in stops_2:
+                ___ stop __ stops_1:  # any(stop in stops_2 for stop in stops_1)
+                    __ stop __ stops_2:
                         G[i].add(j)
                         G[j].add(i)
                         break
 
-        q = [i for i, stops in enumerate(routes) __ S in stops]
-        target_set = set([i for i, stops in enumerate(routes) __ T in stops])
+        q = [i ___ i, stops __ enumerate(routes) __ S __ stops]
+        target_set = set([i ___ i, stops __ enumerate(routes) __ T __ stops])
         visited = defaultdict(bool)
-        for i in q:
+        ___ i __ q:
             visited[i] = True
         step = 1
         while q:
-            cur_q = []
-            for e in q:
-                __ e in target_set:
-                    return step
-                for nbr in G[e]:
-                    __ not visited[nbr]:
+            cur_q    # list
+            ___ e __ q:
+                __ e __ target_set:
+                    r.. step
+                ___ nbr __ G[e]:
+                    __ n.. visited[nbr]:
                         visited[nbr] = True
-                        cur_q.append(nbr)
+                        cur_q.a..(nbr)
 
             step += 1
             q = cur_q
 
-        return -1
+        r.. -1
 
     ___ numBusesToDestination_TLE(self, routes: List[List[int]], S: int, T: int) -> int:
         """
@@ -79,9 +79,9 @@ class Solution:
         Connect stops within in bus use one edge in G
         """
         G = defaultdict(set)
-        for stops in routes:
-            for i in range(len(stops)):
-                for j in range(i + 1, len(stops)):
+        ___ stops __ routes:
+            ___ i __ r..(l..(stops)):
+                ___ j __ r..(i + 1, l..(stops)):
                     u, v = stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)
@@ -91,20 +91,20 @@ class Solution:
         visited = defaultdict(bool)
         visited[S] = True  # avoid add duplicate
         while q:
-            cur_q = []
-            for e in q:
-                __ e == T:
-                    return step
-                for nbr in G[e]:
-                    __ not visited[nbr]:
+            cur_q    # list
+            ___ e __ q:
+                __ e __ T:
+                    r.. step
+                ___ nbr __ G[e]:
+                    __ n.. visited[nbr]:
                         visited[nbr] = True
-                        cur_q.append(nbr)
+                        cur_q.a..(nbr)
 
             step += 1
             q = cur_q
 
-        return -1
+        r.. -1
 
 
-__ __name__ == "__main__":
-    assert Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) == 2
+__ __name__ __ "__main__":
+    ... Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) __ 2

@@ -1,20 +1,20 @@
-from collections import deque
+____ collections _______ deque
 
 
 ___ my_queue(n=5):
 
 
-    return deque(maxlen=n)
+    r.. deque(maxlen=n)
 
 
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     mq = my_queue()
-    for i in range(10):
-        mq.append(i)
-        print((i, list(mq)))
+    ___ i __ r..(10):
+        mq.a..(i)
+        print((i, l..(mq)))
 
     """Queue size does not go beyond n int, this outputs:
     (0, [0])

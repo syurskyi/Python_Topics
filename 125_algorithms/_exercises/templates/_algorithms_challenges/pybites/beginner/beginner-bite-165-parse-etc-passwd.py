@@ -36,13 +36,13 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash"""
 
 
 ___ get_users_for_shell(passwd_output: str = PASSWD_OUTPUT,
-                        grep_shell: str = DEFAULT_SHELL) -> list:
+                        grep_shell: str = DEFAULT_SHELL) -> l..:
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
-    for line in passwd_output.splitlines():
+    ___ line __ passwd_output.splitlines():
         username, *_, shell_path = line.split(':')
-        __ shell_path.split('/')[-1] == grep_shell:
+        __ shell_path.split('/')[-1] __ grep_shell:
             yield username
 
 

@@ -5,26 +5,26 @@ class Solution(object):
     :type target: int
     :rtype: bool
     """
-    start, end = 0, len(nums) - 1
+    start, end = 0, l..(nums) - 1
     while start + 1 < end:
       mid = start + (end - start) / 2
-      __ nums[mid] == target:
-        return True
+      __ nums[mid] __ target:
+        r.. True
       __ nums[start] < nums[mid]:
         __ nums[start] <= target <= nums[mid]:
           end = mid
-        else:
+        ____:
           start = mid
-      elif nums[start] > nums[mid]:
+      ____ nums[start] > nums[mid]:
         __ nums[mid] <= target <= nums[end]:
           start = mid
-        else:
+        ____:
           end = mid
-      else:
+      ____:
         start += 1
 
-    __ nums[start] == target:
-      return True
-    __ nums[end] == target:
-      return True
-    return False
+    __ nums[start] __ target:
+      r.. True
+    __ nums[end] __ target:
+      r.. True
+    r.. False

@@ -5,18 +5,18 @@ class Solution:
         :type b: int
         :rtype: int
         """
-        __ not a or not b:
-            return 0
-        __ a == b:
-            return 1
+        __ n.. a o. n.. b:
+            r.. 0
+        __ a __ b:
+            r.. 1
 
         ans = 1
 
-        for num in range(a + 1, b + 1):
-            __ ans == 0:
-                return 0
+        ___ num __ r..(a + 1, b + 1):
+            __ ans __ 0:
+                r.. 0
 
             ans *= num % 10
             ans %= 10
 
-        return ans
+        r.. ans

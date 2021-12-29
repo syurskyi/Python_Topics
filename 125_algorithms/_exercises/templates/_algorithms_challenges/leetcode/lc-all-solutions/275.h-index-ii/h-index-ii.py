@@ -4,14 +4,14 @@ class Solution(object):
     :type citations: List[int]
     :rtype: int
     """
-    __ not citations:
-      return 0
-    n = len(citations)
+    __ n.. citations:
+      r.. 0
+    n = l..(citations)
     start, end = 0, n - 1
     while start < end:
       mid = start + (end - start) / 2
       __ citations[mid] >= n - mid:
         end = mid
-      else:
+      ____:
         start = mid + 1
-    return n - start __ citations[start] != 0 else 0
+    r.. n - start __ citations[start] != 0 ____ 0

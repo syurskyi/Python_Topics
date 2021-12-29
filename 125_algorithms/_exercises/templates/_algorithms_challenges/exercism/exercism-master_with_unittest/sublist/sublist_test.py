@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from sublist import check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
+____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 
 class SublistTest(unittest.TestCase):
@@ -19,8 +19,8 @@ class SublistTest(unittest.TestCase):
         self.assertEqual(EQUAL, check_lists(l1, l2))
 
     ___ test_different_lists(self):
-        l1 = list(range(1000000))
-        l2 = list(range(1, 1000001))
+        l1 = l..(r..(1000000))
+        l2 = l..(r..(1, 1000001))
         self.assertEqual(UNEQUAL, check_lists(l1, l2))
 
     ___ test_false_start(self):
@@ -64,13 +64,13 @@ class SublistTest(unittest.TestCase):
         self.assertEqual(SUPERLIST, check_lists(l1, l2))
 
     ___ test_large_lists(self):
-        l1 = list(range(1000)) * 1000 + list(range(1000, 1100))
-        l2 = list(range(900, 1050))
+        l1 = l..(r..(1000)) * 1000 + l..(r..(1000, 1100))
+        l2 = l..(r..(900, 1050))
         self.assertEqual(SUPERLIST, check_lists(l1, l2))
 
     ___ test_spread_sublist(self):
-        multiples_of_3 = list(range(3, 200, 3))
-        multiples_of_15 = list(range(15, 200, 15))
+        multiples_of_3 = l..(r..(3, 200, 3))
+        multiples_of_15 = l..(r..(15, 200, 15))
         self.assertEqual(UNEQUAL,
                          check_lists(multiples_of_15, multiples_of_3))
 
@@ -80,5 +80,5 @@ class SublistTest(unittest.TestCase):
         self.assertEqual(UNEQUAL, check_lists([1, 2, 3], [3, 2, 1]))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

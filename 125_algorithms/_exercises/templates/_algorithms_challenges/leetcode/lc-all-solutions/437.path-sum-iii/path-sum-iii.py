@@ -18,4 +18,4 @@ class Solution(object):
         preDict[pathSum] -= 1
 
     dfs(root, target, 0, preDict)
-    return self.count
+    r.. self.count

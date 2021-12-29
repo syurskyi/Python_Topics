@@ -1,11 +1,11 @@
-from collections import Counter
-import os
-from urllib.request import urlretrieve
-from collections import defaultdict
-from datetime import datetime
+____ collections _______ Counter
+_______ os
+____ urllib.request _______ urlretrieve
+____ collections _______ defaultdict
+____ datetime _______ datetime
 
 
-from dateutil.parser import parse
+____ dateutil.parser _______ parse
 
 commits = os.path.join(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
@@ -18,7 +18,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 
 
 ___ get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = None) -> (str, str):
+                                  year: int = N..) -> (str, str):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -31,19 +31,19 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
     print(f'year argument is {year}')
     commit_log = defaultdict(int)
     with open(commits) as f:
-        for line in f:
+        ___ line __ f:
             date, commit  = line.split(' | ')
             date_time_obj = datetime.strptime(date[12:], '%b %d %H:%M:%S %Y %z')
             dt_yr = date_time_obj.strftime("%Y")
             year_month = date_time_obj.strftime("%Y-%m")
-            commit_list = commit.split()
-            __ year == None or year == int(dt_yr):
-                __ len(commit_list) == 7:
+            commit_list = commit.s..
+            __ year __ N.. o. year __ int(dt_yr):
+                __ l..(commit_list) __ 7:
                     total_commit = int(commit_list[3])+int(commit_list[5])
-                else:
+                ____:
                     total_commit = int(commit_list[3])
                 commit_log[year_month] += total_commit
-    newlist = sorted(commit_log.items(), key=lambda item: item[1], reverse=True)
-    return (newlist[-1][0], newlist[0][0])
+    newlist = s..(commit_log.items(), key=l.... item: item[1], r.._T..
+    r.. (newlist[-1][0], newlist[0][0])
 
 print(get_min_max_amount_of_commits(year=2017))

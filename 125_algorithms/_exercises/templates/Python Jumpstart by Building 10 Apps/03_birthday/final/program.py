@@ -1,4 +1,4 @@
-import datetime
+_______ datetime
 
 
 ___ print_header():
@@ -15,22 +15,22 @@ ___ get_birthday_from_user():
     day  i..(input("Day [DD]: "))
 
     birthday  datetime.date(year, month, day)
-    return birthday
+    r.. birthday
 
 
 ___ compute_days_between_dates(original_date, target_date):
     this_year  datetime.date(target_date.year, original_date.month, original_date.day)
 
     dt  this_year - target_date
-    return dt.days
+    r.. dt.days
 
 
 ___ print_birthday_information(days):
     __ days < 0:
         print("You had your birthday {} days ago this year.".format(-days))
-    elif days > 0:
+    ____ days > 0:
         print("Your birthday is in {} days!".format(days))
-    else:
+    ____:
         print("Happy birthday!!!")
 
 

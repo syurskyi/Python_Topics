@@ -24,10 +24,10 @@ class Solution:
         :param target: integer
         :return: a list of lists of integers
         """
-        result = []
+        result    # list
         candidates.sort()
         self.get_combination_sum(candidates, [], target, result)
-        return result
+        r.. result
 
     ___ get_combination_sum(self, candidates, cur, target, result):
         """
@@ -38,22 +38,22 @@ class Solution:
         :param result: a list of lists of integers
         :return:
         """
-        __ sum(cur)==target:
-            result.append(cur)
-            return
-        __ sum(cur)>target:
-            return
+        __ s..(cur)__target:
+            result.a..(cur)
+            r..
+        __ s..(cur)>target:
+            r..
 
         # for ind, element in enumerate(candidates):
         #    self.get_combination_sum(candidates[ind+1:], cur+[element], target, result)
 
         # consider [1, 1, 1, 6], target 8
         ind = 0
-        while ind<len(candidates):
+        while ind<l..(candidates):
             self.get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump
-            while ind+1<len(candidates) and candidates[ind]==candidates[ind+1]: ind+= 1  # jump to avoid duplicate
+            while ind+1<l..(candidates) and candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate
             ind += 1
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)

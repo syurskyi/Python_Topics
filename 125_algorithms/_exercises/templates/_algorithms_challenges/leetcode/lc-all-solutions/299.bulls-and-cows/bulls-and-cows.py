@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution(object):
@@ -11,12 +11,12 @@ class Solution(object):
     a = b = 0
     ds = Counter()
     dg = Counter()
-    for i in range(len(secret)):
+    ___ i __ r..(l..(secret)):
       s = secret[i]
       g = guess[i]
-      __ secret[i] == guess[i]:
+      __ secret[i] __ guess[i]:
         a += 1
-      else:
+      ____:
         ds[s] += 1
         dg[g] += 1
         __ ds[g] > 0:
@@ -27,4 +27,4 @@ class Solution(object):
           b += 1
           ds[s] -= 1
           dg[s] -= 1
-    return "{}A{}B".format(a, b)
+    r.. "{}A{}B".format(a, b)

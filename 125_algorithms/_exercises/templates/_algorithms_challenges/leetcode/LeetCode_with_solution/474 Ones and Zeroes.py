@@ -25,7 +25,7 @@ Output: 2
 Explanation: You could form "10", but then you'd have nothing left. Better form
 "0" and "1".
 """
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution:
@@ -42,20 +42,20 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not strs:
-            return 0
+        __ n.. strs:
+            r.. 0
 
-        F = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
-        z, o = self.count(strs[0])
-        for i in range(m+1):
-            for j in range(n+1):
+        F = [[0 ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        z, o = self.c.. strs[0])
+        ___ i __ r..(m+1):
+            ___ j __ r..(n+1):
                 __ i + z<= m and j + o <= n:
                     F[i][j] = 1
 
-        for e in range(1, len(strs)):
-            z, o = self.count(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
+        ___ e __ r..(1, l..(strs)):
+            z, o = self.c.. strs[e])
+            ___ i __ r..(m+1):
+                ___ j __ r..(n+1):
                     __ i + z <= m and j + o <= n:
                         F[i][j] = max(
                             F[i][j],
@@ -64,20 +64,20 @@ class Solution:
 
         ret = max(
             F[i][j]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i __ r..(m + 1)
+            ___ j __ r..(n + 1)
         )
-        return ret
+        r.. ret
 
-    ___ count(self, s):
+    ___ c.. self, s):
         z, o = 0, 0
-        for e in s:
-            __ e == "0":
+        ___ e __ s:
+            __ e __ "0":
                 z += 1
-            else:
+            ____:
                 o += 1
 
-        return z, o
+        r.. z, o
 
     ___ findMaxForm_TLE(self, strs, m, n):
         """
@@ -90,30 +90,30 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not strs:
-            return 0
+        __ n.. strs:
+            r.. 0
 
-        F = [[[0 for _ in range(len(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = Counter(strs[0])
-        for i in range(m+1):
-            for j in range(n+1):
+        ___ i __ r..(m+1):
+            ___ j __ r..(n+1):
                 __ i + count["0"] <= m and j + count["1"] <= n:
                     F[i][j][0] = 1
 
-        for e in range(1, len(strs)):
+        ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
+            ___ i __ r..(m+1):
+                ___ j __ r..(n+1):
                     __ i + count["0"] <= m and j + count["1"] <= n:
                         F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
                     F[i][j][e] = max(F[i][j][e], F[i][j][e-1])
 
         ret = max(
             F[i][j][-1]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i __ r..(m + 1)
+            ___ j __ r..(n + 1)
         )
-        return ret
+        r.. ret
 
     ___ findMaxForm_error(self, strs, m, n):
         """
@@ -126,29 +126,29 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not strs:
-            return 0
+        __ n.. strs:
+            r.. 0
 
-        F = [[[0 for _ in range(len(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = Counter(strs[0])
         __ count["0"] <= m and count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
-        for e in range(1, len(strs)):
+        ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
+            ___ i __ r..(m+1):
+                ___ j __ r..(n+1):
                     __ count["0"] <= i and count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
-                    else:
+                    ____:
                         F[i][j][e] = F[i][j][e-1]
 
         ret = max(
             F[i][j][-1]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i __ r..(m + 1)
+            ___ j __ r..(n + 1)
         )
-        return ret
+        r.. ret
 
     ___ findMaxForm_error(self, strs, m, n):
         """
@@ -159,19 +159,19 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        strs.sort(key=len)
+        strs.sort(key=l..)
         ret = 0
-        for a in strs:
+        ___ a __ strs:
             count = Counter(a)
             __ count["0"] <= m and count["1"] <= n:
                 ret += 1
                 m -= count["0"]
                 n -= count["1"]
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) == 4
-    assert Solution().findMaxForm(["10", "0", "1"], 1, 1) == 2
-    assert Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) == 3
+__ __name__ __ "__main__":
+    ... Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) __ 4
+    ... Solution().findMaxForm(["10", "0", "1"], 1, 1) __ 2
+    ... Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) __ 3

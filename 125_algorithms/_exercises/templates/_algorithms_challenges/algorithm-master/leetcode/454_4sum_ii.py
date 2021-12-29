@@ -8,19 +8,19 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not A or not B or not C or not D:
-            return ans
+        __ n.. A o. n.. B o. n.. C o. n.. D:
+            r.. ans
 
         S = {}
 
-        for c in C:
-            for d in D:
+        ___ c __ C:
+            ___ d __ D:
                 key = - (c + d)
                 S[key] = S.get(key, 0) + 1
 
-        for a in A:
-            for b in B:
-                __ a + b in S:
+        ___ a __ A:
+            ___ b __ B:
+                __ a + b __ S:
                     ans += S[a + b]
 
-        return ans
+        r.. ans

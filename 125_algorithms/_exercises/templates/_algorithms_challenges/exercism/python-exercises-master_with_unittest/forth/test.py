@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from forth import evaluate, StackUnderflowError
+____ forth _______ evaluate, StackUnderflowError
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.5.0
@@ -37,7 +37,7 @@ class ForthAdditionTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthSubtractionTest(unittest.TestCase):
@@ -64,7 +64,7 @@ class ForthSubtractionTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthMultiplicationTest(unittest.TestCase):
@@ -91,7 +91,7 @@ class ForthMultiplicationTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthDivisionTest(unittest.TestCase):
@@ -128,7 +128,7 @@ class ForthDivisionTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthCombinedArithmeticTest(unittest.TestCase):
@@ -167,13 +167,13 @@ class ForthDupTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthDropTest(unittest.TestCase):
     ___ test_removes_the_top_value_on_the_stack_if_it_is_the_only_one(self):
         input_data = ["1 DROP"]
-        expected = []
+        expected    # list
         self.assertEqual(evaluate(input_data), expected)
 
     ___ test_removes_the_top_value_on_the_stack_if_it_not_the_only_one(self):
@@ -194,7 +194,7 @@ class ForthDropTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthSwapTest(unittest.TestCase):
@@ -226,7 +226,7 @@ class ForthSwapTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthOverTest(unittest.TestCase):
@@ -258,7 +258,7 @@ class ForthOverTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthUserDefinedWordsTest(unittest.TestCase):
@@ -321,7 +321,7 @@ class ForthUserDefinedWordsTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
 class ForthCaseInsensitivityTest(unittest.TestCase):
@@ -362,5 +362,5 @@ class ForthCaseInsensitivityTest(unittest.TestCase):
         self.assertEqual(evaluate(input_data), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

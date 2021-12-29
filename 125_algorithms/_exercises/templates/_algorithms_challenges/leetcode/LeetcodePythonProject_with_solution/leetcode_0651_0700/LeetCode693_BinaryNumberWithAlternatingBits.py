@@ -13,11 +13,11 @@ class Solution(object):
         n >>= 1
         while n > 0:
             digit = n & 1
-            __ not digit ^ prev:
-                return False
+            __ n.. digit ^ prev:
+                r.. False
             prev = digit
             n >>= 1
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -27,11 +27,11 @@ class Solution(object):
             11,
             10,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.hasAlternatingBits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

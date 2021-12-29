@@ -11,8 +11,8 @@ class Solution(object):
     :type x: int
     :rtype: ListNode
     """
-    __ head is None:
-      return None
+    __ head __ N..
+      r.. N..
     dummy = ListNode(-1)
     dummy.next = head
     sHead = sDummy = ListNode(-1)
@@ -22,8 +22,8 @@ class Solution(object):
         sDummy.next = p.next
         p.next = p.next.next
         sDummy = sDummy.next
-      else:
+      ____:
         p = p.next
       # if you change p.next then make sure you wouldn't change p in next run
     sDummy.next = dummy.next
-    return sHead.next
+    r.. sHead.next

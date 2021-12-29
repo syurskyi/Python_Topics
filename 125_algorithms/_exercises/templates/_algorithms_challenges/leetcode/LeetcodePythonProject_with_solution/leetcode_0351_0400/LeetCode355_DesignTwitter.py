@@ -27,15 +27,15 @@ class Twitter(object):
         :type tweetId: int
         :rtype: void
         """
-        __ userId not in self.following:
+        __ userId n.. __ self.following:
             self.following[userId] = set([userId])
         self.tweet_id += 1
-        __ userId in self.latestTweets:
+        __ userId __ self.latestTweets:
             prevTweet = self.latestTweets[userId]
             tweet = TweetObj(self.tweet_id, userId, tweetId, prevTweet)
             self.latestTweets[userId] = tweet
-        else:
-            tweet = TweetObj(self.tweet_id, userId, tweetId, None)
+        ____:
+            tweet = TweetObj(self.tweet_id, userId, tweetId, N..)
             self.latestTweets[userId] = tweet
 
     ___ getNewsFeed(self, userId):
@@ -46,28 +46,28 @@ class Twitter(object):
         :type userId: int
         :rtype: List[int]
         """
-        import heapq
-        heap = []
-        __ userId not in self.following:
-            return []
+        _______ heapq
+        heap    # list
+        __ userId n.. __ self.following:
+            r.. []
         followingUsers = self.following[userId]
         followingUsers.add(userId)
-        for following_id in followingUsers:
-            __ following_id in self.latestTweets:
+        ___ following_id __ followingUsers:
+            __ following_id __ self.latestTweets:
                 latestTweet = self.latestTweets[following_id]
                 tweetTuple = (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
                 heapq.heappush(heap, tweetTuple)
-        result = []
-        for _ in range(10):
-            __ not heap:
+        result    # list
+        ___ _ __ r..(10):
+            __ n.. heap:
                 break
             tweetTuple = heapq.heappop(heap)
-            result.append(tweetTuple[1])
+            result.a..(tweetTuple[1])
             __ tweetTuple[2]:
                 newTweet = tweetTuple[2]
                 newTweetTuple = (-newTweet.tweet_id, newTweet.tweetContext, newTweet.prevTweet)
                 heapq.heappush(heap, newTweetTuple)
-        return result
+        r.. result
 
     ___ follow(self, followerId, followeeId):
         """
@@ -76,9 +76,9 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        __ followerId in self.following:
+        __ followerId __ self.following:
             self.following[followerId].add(followeeId)
-        else:
+        ____:
             self.following[followerId] = set([followeeId])
 
     ___ unfollow(self, followerId, followeeId):
@@ -88,7 +88,7 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        __ followerId in self.following and followerId != followeeId:
+        __ followerId __ self.following and followerId != followeeId:
             self.following[followerId].discard(followeeId)
 
 # Your Twitter object will be instantiated and called as such:

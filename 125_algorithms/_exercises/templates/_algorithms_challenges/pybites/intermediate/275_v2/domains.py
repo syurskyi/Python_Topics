@@ -1,7 +1,7 @@
-from collections import Counter
-import re
-from bs4 import BeautifulSoup
-import requests
+____ collections _______ Counter
+_______ re
+____ bs4 _______ BeautifulSoup
+_______ requests
 
 COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
                   "common-domains.html")
@@ -16,7 +16,7 @@ ___ get_common_domains(url=COMMON_DOMAINS):
         response.raise_for_status()
     except:
         print('error in getting data')
-        return []
+        r.. []
 
     
     soup = BeautifulSoup(response.text)
@@ -24,28 +24,28 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     rows = soup.find(attrs=TARGET_DIV).find_all('tr')
 
 
-    return [value.getText(strip=True) for row in rows for value in row.select('td:nth-child(3)')]
+    r.. [value.getText(strip=True) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
 
 
 ___ get_domain(string):
 
 
-    return re.search(r'@(.+)',string).group(1)
+    r.. re.search(r'@(.+)',string).group(1)
 
 
 ___ get_most_common_domains(emails, common_domains_ N..
     """Given a list of emails return the most common domain names,
        ignoring the list (or set) of common_domains"""
-    __ common_domains __ None:
+    __ common_domains __ N..
         common_domains = get_common_domains()
         
     # your code
-    c =  Counter(domain for domain in map(get_domain,emails) __ domain not in common_domains).most_common()
-    return c
+    c =  Counter(domain ___ domain __ map(get_domain,emails) __ domain n.. __ common_domains).most_common()
+    r.. c
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     print(get_common_domains())

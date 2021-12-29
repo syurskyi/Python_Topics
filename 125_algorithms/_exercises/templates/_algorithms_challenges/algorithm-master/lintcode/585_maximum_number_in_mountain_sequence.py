@@ -4,10 +4,10 @@ class Solution:
     @return: then mountain top
     """
     ___ mountainSequence(self, nums):
-        __ not nums:
-            return -1
+        __ n.. nums:
+            r.. -1
 
-        l, m, r = 0, 0, len(nums) - 1
+        l, m, r = 0, 0, l..(nums) - 1
 
         while l + 1 < r:
             m = l + (r - l) // 2
@@ -17,7 +17,7 @@ class Solution:
             """
             __ nums[m] > nums[m+1]:
                 r = m
-            else:
+            ____:
                 l = m
 
-        return max(nums[l], nums[r])
+        r.. max(nums[l], nums[r])

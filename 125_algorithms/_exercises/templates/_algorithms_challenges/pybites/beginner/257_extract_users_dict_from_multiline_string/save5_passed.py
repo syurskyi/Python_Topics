@@ -1,6 +1,6 @@
-import re
+_______ re
 
-___ get_users(passwd: str) -> dict:
+___ get_users(passwd: str) -> d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,
@@ -8,13 +8,13 @@ ___ get_users(passwd: str) -> dict:
       return dict of keys = user, values = name.
     """
     passwd = passwd.strip().splitlines()
-    keys = []
-    values = []
-    for p in passwd:
-        keys.append(p.split(':')[0])
-        __ len(p.split(':')[4]) == 0:
-            values.append('unknown')
-        else:
-            values.append(' '.join(
+    keys    # list
+    values    # list
+    ___ p __ passwd:
+        keys.a..(p.split(':')[0])
+        __ l..(p.split(':')[4]) __ 0:
+            values.a..('unknown')
+        ____:
+            values.a..(' '.join(
                 re.sub(',',' ', p.split(':')[4]).split()))
-    return dict(zip(keys, values))
+    r.. d..(zip(keys, values))

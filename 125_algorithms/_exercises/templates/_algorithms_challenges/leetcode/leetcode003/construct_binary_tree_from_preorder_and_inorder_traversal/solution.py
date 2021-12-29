@@ -10,9 +10,9 @@ class Solution:
     # @param inorder, a list of integers
     # @return a tree node
     ___ buildTree(self, preorder, inorder):
-        __ len(inorder) == 0:
-            return None
-        else:
+        __ l..(inorder) __ 0:
+            r.. N..
+        ____:
             root_val = preorder.pop(0)
             root_index = inorder.index(root_val)
             left_tree = self.buildTree(preorder, inorder[:root_index])
@@ -20,4 +20,4 @@ class Solution:
             root = TreeNode(root_val)
             root.left = left_tree
             root.right = right_tree
-            return root
+            r.. root

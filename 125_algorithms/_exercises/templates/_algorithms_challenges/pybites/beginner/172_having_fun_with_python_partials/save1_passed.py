@@ -1,7 +1,7 @@
-from functools import partial
+____ functools _______ partial
 
 ___ rounding_nums(number, places):
-    return round(number, places)
+    r.. round(number, places)
 
 
 rounder_int = partial(rounding_nums, places=0)

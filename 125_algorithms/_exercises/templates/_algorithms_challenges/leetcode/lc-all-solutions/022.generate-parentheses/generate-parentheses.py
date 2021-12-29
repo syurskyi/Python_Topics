@@ -6,20 +6,20 @@ class Solution(object):
     """
 
     ___ dfs(left, path, res, n):
-      __ len(path) == 2 * n:
-        __ left == 0:
-          res.append("".join(path))
-        return
+      __ l..(path) __ 2 * n:
+        __ left __ 0:
+          res.a..("".join(path))
+        r..
 
       __ left < n:
-        path.append("(")
+        path.a..("(")
         dfs(left + 1, path, res, n)
         path.pop()
       __ left > 0:
-        path.append(")")
+        path.a..(")")
         dfs(left - 1, path, res, n)
         path.pop()
 
-    res = []
+    res    # list
     dfs(0, [], res, n)
-    return res
+    r.. res

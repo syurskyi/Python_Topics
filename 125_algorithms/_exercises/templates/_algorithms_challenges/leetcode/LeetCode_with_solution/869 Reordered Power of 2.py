@@ -32,7 +32,7 @@ Note:
 
 1 <= N <= 10^9
 """
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution:
@@ -41,8 +41,8 @@ class Solution:
         count the digit and compare
         """
         counts = Counter(str(N))
-        for i in range(31):  # 32 bit unsighed int 
-            __ counts == Counter(str(1 << i)):
-                return True
-        else:
-            return False
+        ___ i __ r..(31):  # 32 bit unsighed int
+            __ counts __ Counter(str(1 << i)):
+                r.. True
+        ____:
+            r.. False

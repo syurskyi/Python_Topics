@@ -10,10 +10,10 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 class Solution:
     ___ rotateRight(self, head, k):
@@ -25,8 +25,8 @@ class Solution:
         :param k: an integer
         :return: ListNode
         """
-        __ not head:
-            return None
+        __ n.. head:
+            r.. N..
 
 
         dummy = ListNode(0)
@@ -53,13 +53,13 @@ class Solution:
 
         # then do the manipulate in one group of operations (no loop)
         __ k!=0: # avoid cyclic link
-            pre.next, dummy.next, last.next = None, pre.next, dummy.next
+            pre.next, dummy.next, last.next = N.., pre.next, dummy.next
 
-        return dummy.next
+        r.. dummy.next
 
-__ __name__=="__main__":
+__ __name____"__main__":
     length = 1
-    lst = [ListNode(i+1) for i in xrange(length)]
-    for i in range(length-1):
+    lst = [ListNode(i+1) ___ i __ xrange(length)]
+    ___ i __ r..(length-1):
         lst[i].next = lst[i+1]
     Solution().rotateRight(lst[0], 1)

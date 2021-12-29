@@ -4,6 +4,6 @@ ___ fib_rabbits(n, b):
     while n > 0:
         young,adult = adult * b , adult + young
         n -= 1
-    return young + adult
+    r.. young + adult
     
 

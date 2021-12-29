@@ -1,7 +1,7 @@
-from typing import Tuple
-from collections import Counter
-import string
-import re 
+____ typing _______ Tuple
+____ collections _______ Counter
+_______ string
+_______ re
 
 
 
@@ -17,18 +17,18 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
     ('', '', 0)
 
     """
-    __ not isinstance(text,str):
+    __ n.. isi..(text,str):
         raise ValueError("Strings only")
 
     
     max_count = 0
     max_word = max_letter =  ''
 
-    words = text.split()
+    words = text.s..
 
-    for word in words:
+    ___ word __ words:
         counts = Counter()
-        for letter in word.casefold():
+        ___ letter __ word.casefold():
             __ letter.isalpha():
                 counts[letter] += 1
 
@@ -41,4 +41,4 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
                 max_letter = most_common_letter
 
 
-    return max_word,max_letter,max_count
+    r.. max_word,max_letter,max_count

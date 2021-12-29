@@ -14,18 +14,18 @@ class Solution:
         s = 0
         e = 0
         ret = 0
-        while s < len(nums):
-            __ nums[s] == 1:
-                while e < len(nums) and nums[e] == 1:
+        while s < l..(nums):
+            __ nums[s] __ 1:
+                while e < l..(nums) and nums[e] __ 1:
                     e += 1
                 ret = max(ret, e - s)
-            else:
+            ____:
                 e += 1
 
             s = e
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]) == 3
+__ __name__ __ "__main__":
+    ... Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]) __ 3

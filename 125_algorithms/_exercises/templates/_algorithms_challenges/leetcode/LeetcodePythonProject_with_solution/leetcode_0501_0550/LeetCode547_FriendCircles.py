@@ -11,23 +11,23 @@ class Solution(object):
         :rtype: int
         """
         matrix = M
-        n = len(matrix)
+        n = l..(matrix)
         roots = [-1]*n
         count = n
-        for i in range(n):
-            for j in range(n):
-                __ i > j and matrix[i][j] == 1:
+        ___ i __ r..(n):
+            ___ j __ r..(n):
+                __ i > j and matrix[i][j] __ 1:
                     root1 = self.getRoot(roots, i)
                     root2 = self.getRoot(roots, j)
                     __ root1 != root2:
                         count -= 1
                         roots[root1] = root2
-        return count
+        r.. count
     
     ___ getRoot(self, roots, num):
         while roots[num] != -1:
             num = roots[num]
-        return num
+        r.. num
     
     ___ test(self):
         testCases = [
@@ -48,12 +48,12 @@ class Solution(object):
             ],
             [[1,1,0,0,0,0,0,1,0,0,0,0,0,0,0],[1,1,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,1,0,1,1,0,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,1,1,0,0,0,0],[0,0,0,1,0,1,0,0,0,0,1,0,0,0,0],[0,0,0,1,0,0,1,0,1,0,0,0,0,1,0],[1,0,0,0,0,0,0,1,1,0,0,0,0,0,0],[0,0,0,0,0,0,1,1,1,0,0,0,0,1,0],[0,0,0,0,1,0,0,0,0,1,0,1,0,0,1],[0,0,0,0,1,1,0,0,0,0,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,1,0,1,0,0,0,0,1,0],[0,0,0,0,0,0,0,0,0,1,0,0,0,0,1]],
         ]
-        for matrix in testCases:
+        ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.join([str(row) for row in matrix]))
+            print('\n'.join([str(row) ___ row __ matrix]))
             res = self.findCircleNum(matrix)
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

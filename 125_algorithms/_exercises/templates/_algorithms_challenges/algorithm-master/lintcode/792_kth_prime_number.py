@@ -4,16 +4,16 @@ class Solution:
     @return: the rank of the number
     """
     ___ kthPrime(self, n):
-        __ not n or n < 3:
-            return 1
+        __ n.. n o. n < 3:
+            r.. 1
 
         is_prime = [True] * n
         is_prime[0] = is_prime[1] = False
 
-        for i in range(2, int(n ** 0.5) + 1):
-            __ not is_prime[i]:
+        ___ i __ r..(2, int(n ** 0.5) + 1):
+            __ n.. is_prime[i]:
                 continue
-            for j in range(i * i, n, i):
+            ___ j __ r..(i * i, n, i):
                 is_prime[j] = False
 
-        return sum(is_prime) + 1
+        r.. s..(is_prime) + 1

@@ -3,10 +3,10 @@ ___ create_chessboard(size=8):
        Don't return anything, print the output to stdout"""
     WHITE, BLACK = ' ', '#'
     dup = int(size / 2)
-    for row in range(size):
-        __ row % 2 == 0:
+    ___ row __ r..(size):
+        __ row % 2 __ 0:
             odd_row = (WHITE + BLACK) * dup
             print(odd_row)
-        else:
+        ____:
             even_row = (BLACK + WHITE) * dup
             print(even_row)

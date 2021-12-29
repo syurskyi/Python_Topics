@@ -5,12 +5,12 @@ class Solution(object):
     :rtype: int4
     """
     __ n <= 1:
-      return 10 ** n
+      r.. 10 ** n
     dp = [0] * (n + 1)
     dp[0] = 0
     dp[1] = 9
     k = 9
-    for i in range(2, n + 1):
+    ___ i __ r..(2, n + 1):
       dp[i] = max(dp[i - 1] * k, 0)
       k -= 1
-    return sum(dp) + 1
+    r.. s..(dp) + 1

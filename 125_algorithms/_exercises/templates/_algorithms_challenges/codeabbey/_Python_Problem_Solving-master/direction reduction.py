@@ -1,23 +1,23 @@
 #accepting the directions from the user
-direction = list(map(str, input().split()))
+direction = l..(map(str, input().split()))
 #Modifying the directions to uppercase
-direction = [x.upper() for x in direction]
+direction = [x.upper() ___ x __ direction]
 
 #defining the definition of the direction reduction
-___ dirReduc(dir = []):
+___ dirReduc(dir    # list):
     #traversing through all the elements of the list
-    for j in range(len(dir)):
+    ___ j __ r..(l..(dir)):
         #traversing through all the elements except the last one
-        for i in range(0,len(dir)-1):
-            __ dir[i] == 'NORTH' and dir[i+1] == 'SOUTH' or dir[i] == 'SOUTH' and dir[i+1] == 'NORTH':
+        ___ i __ r..(0,l..(dir)-1):
+            __ dir[i] __ 'NORTH' and dir[i+1] __ 'SOUTH' o. dir[i] __ 'SOUTH' and dir[i+1] __ 'NORTH':
                 dir.pop(i)
                 dir.pop(i)  
                 break
-            elif dir[i] == 'WEST' and dir[i+1] == 'EAST' or dir[i] == 'EAST' and dir[i+1] == 'WEST':
+            ____ dir[i] __ 'WEST' and dir[i+1] __ 'EAST' o. dir[i] __ 'EAST' and dir[i+1] __ 'WEST':
                 dir.pop(i)
                 dir.pop(i)
                 break
-            else:
+            ____:
                 pass
     #print the result of the direction reduction
     print(dir)

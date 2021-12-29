@@ -20,27 +20,27 @@ class Solution:
         :param num: a list of integer
         :return: an integer
         """
-        length = len(num)
-        inverted_table = dict(zip(num, range(length)))
+        length = l..(num)
+        inverted_table = d..(zip(num, r..(length)))
 
         max_length = -1<<31
-        for ind, val in enumerate(num):
+        ___ ind, val __ enumerate(num):
             current_length = 1
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected in inverted_table:
+            while sequence_val_expected __ inverted_table:
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected in inverted_table:
+            while sequence_val_expected __ inverted_table:
                 sequence_val_expected += 1
                 current_length += 1
 
             max_length = max(max_length, current_length)
 
-        return max_length
+        r.. max_length
 
     ___ longestConsecutive(self, num):
         """
@@ -54,29 +54,29 @@ class Solution:
         :param num: a list of integer
         :return: an integer
         """
-        visited = {item: False for item in num}
+        visited = {item: False ___ item __ num}
 
         max_length = -1<<31
-        for ind, val in enumerate(num):
+        ___ ind, val __ enumerate(num):
             __ visited[val]: continue
 
             current_length = 1
 
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected in visited:
+            while sequence_val_expected __ visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected in visited:
+            while sequence_val_expected __ visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected += 1
                 current_length += 1
 
             max_length = max(max_length, current_length)
 
-        return max_length
+        r.. max_length
 

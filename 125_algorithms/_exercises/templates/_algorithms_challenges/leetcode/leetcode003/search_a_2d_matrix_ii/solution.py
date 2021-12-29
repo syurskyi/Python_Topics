@@ -28,21 +28,21 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        n = len(matrix)
-        m = len(matrix[0])
-        __ target < matrix[0][0] or target > matrix[n - 1][m - 1]:
-            return False
+        n = l..(matrix)
+        m = l..(matrix[0])
+        __ target < matrix[0][0] o. target > matrix[n - 1][m - 1]:
+            r.. False
         # Step-wise Linear Search from upper right
         y = 0
         x = m - 1
         while x >= 0 and y <= n - 1:
-            __ target == matrix[y][x]:
-                return True
-            elif target < matrix[y][x]:
+            __ target __ matrix[y][x]:
+                r.. True
+            ____ target < matrix[y][x]:
                 x -= 1
-            else:
+            ____:
                 y += 1
-        return False
+        r.. False
 
 
 a1 = [

@@ -1,4 +1,4 @@
-import hashlib
+_______ hashlib
 
 GRAVATAR_URL = ("https://www.gravatar.com/avatar/"
                 "{hashed_email}?s={size}&r=g&d=robohash")
@@ -17,7 +17,7 @@ ___ create_gravatar_url(email, size=200):
     email_hash = hashlib.md5(email.lower().strip().encode('utf-8'))
     hash = email_hash.hexdigest()
 
-    return GRAVATAR_URL.format(hashed_email=hash,size=size)
+    r.. GRAVATAR_URL.format(hashed_email=hash,size=size)
 
 
     

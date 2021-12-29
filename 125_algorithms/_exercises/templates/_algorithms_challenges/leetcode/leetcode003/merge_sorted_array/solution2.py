@@ -26,12 +26,12 @@ class Solution(object):
                 __ nums1[i] > nums2[j]:
                     nums1[k] = nums1[i]
                     i -= 1
-                else:
+                ____:
                     nums1[k] = nums2[j]
                     j -= 1
-            elif i < 0:
+            ____ i < 0:
                 nums1[k] = nums2[j]
                 j -= 1
-            else:
+            ____:
                 break
             k -= 1

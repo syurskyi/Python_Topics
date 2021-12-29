@@ -1,9 +1,9 @@
-from typing import List, Union
+____ typing _______ List, Union
 
-___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], None]:
-    output = []
-    for item in lst_of_lst:
-        __ isinstance(item, list):
+___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
+    output    # list
+    ___ item __ lst_of_lst:
+        __ isi..(item, l..):
             output.extend(item)
             output.extend(sep)
-    return output[:-1]
+    r.. output[:-1]

@@ -24,7 +24,7 @@ Note:
 1 <= words[i].length <= 7.
 Each word has only lowercase letters.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -36,22 +36,22 @@ class Solution:
         fast trie with dict
         """
         root = {}
-        ends = []
-        for word in set(words):
+        ends    # list
+        ___ word __ set(words):
             cur = root
-            for c in word[::-1]:
+            ___ c __ word[::-1]:
                 nxt = cur.get(c, {})
                 cur[c] = nxt
                 cur = nxt
 
-            ends.append((cur, len(word)))
+            ends.a..((cur, l..(word)))
 
-        return sum(
+        r.. s..(
             l + 1
-            for node, l in ends
-            __ len(node) == 0  # no child
+            ___ node, l __ ends
+            __ l..(node) __ 0  # no child
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().minimumLengthEncoding(["time", "me", "bell"]) == 10
+__ __name__ __ "__main__":
+    ... Solution().minimumLengthEncoding(["time", "me", "bell"]) __ 10

@@ -1,57 +1,57 @@
 class NORTH:
     @staticmethod
     ___ advance(self, x, y):
-        return (x, y + 1)
+        r.. (x, y + 1)
 
     @staticmethod
     ___ turn_right(self):
-        return EAST
+        r.. EAST
 
     @staticmethod
     ___ turn_left(self):
-        return WEST
+        r.. WEST
 
 
 class EAST:
     @staticmethod
     ___ advance(self, x, y):
-        return (x + 1, y)
+        r.. (x + 1, y)
 
     @staticmethod
     ___ turn_right(self):
-        return SOUTH
+        r.. SOUTH
 
     @staticmethod
     ___ turn_left(self):
-        return NORTH
+        r.. NORTH
 
 
 class SOUTH:
     @staticmethod
     ___ advance(self, x, y):
-        return (x, y - 1)
+        r.. (x, y - 1)
 
     @staticmethod
     ___ turn_right(self):
-        return WEST
+        r.. WEST
 
     @staticmethod
     ___ turn_left(self):
-        return EAST
+        r.. EAST
 
 
 class WEST:
     @staticmethod
     ___ advance(self, x, y):
-        return (x - 1, y)
+        r.. (x - 1, y)
 
     @staticmethod
     ___ turn_right(self):
-        return NORTH
+        r.. NORTH
 
     @staticmethod
     ___ turn_left(self):
-        return SOUTH
+        r.. SOUTH
 
 
 class Robot:
@@ -71,19 +71,19 @@ class Robot:
         self.bearing = self.bearing.turn_left(self.bearing)
 
     ___ simulate(self, instructions):
-        for i in instructions:
+        ___ i __ instructions:
             self.execute_instruction(i)
 
     ___ execute_instruction(self, i):
-        __ i == 'A':
+        __ i __ 'A':
             self.advance()
-        elif i == 'L':
+        ____ i __ 'L':
             self.turn_left()
-        elif i == 'R':
+        ____ i __ 'R':
             self.turn_right()
 
     ___ x(self):
-        return self.coordinates[0]
+        r.. self.coordinates[0]
 
     ___ y(self):
-        return self.coordinates[1]
+        r.. self.coordinates[1]

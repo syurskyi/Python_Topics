@@ -1,2 +1,2 @@
 ___ count_words(txt):
-    return len(txt.split())
+    r.. l..(txt.split())

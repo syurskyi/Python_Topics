@@ -9,33 +9,33 @@ class Solution:
     # @param x, an integer
     # @return a ListNode
     ___ partition(self, head, x):
-        __ head is None:
-            return head
-        large = None
-        large_end = None
-        res = None
-        res_end = None
-        while head is not None:
+        __ head __ N..
+            r.. head
+        large = N..
+        large_end = N..
+        res = N..
+        res_end = N..
+        while head __ n.. N..
             next_node = head.next
             __ head.val >= x:
-                __ large is None:
+                __ large __ N..
                     large = head
                     large_end = large
-                else:
+                ____:
                     large_end.next = head
                     large_end = large_end.next
-            else:
-                __ res is None:
+            ____:
+                __ res __ N..
                     res = head
                     res_end = res
-                else:
+                ____:
                     res_end.next = head
                     res_end = res_end.next
             head = next_node
-        __ large_end is not None:
-            large_end.next = None
-        __ res is not None:
+        __ large_end __ n.. N..
+            large_end.next = N..
+        __ res __ n.. N..
             res_end.next = large
-        else:
+        ____:
             res = large
-        return res
+        r.. res

@@ -5,10 +5,10 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    points.sort(key=lambda p: p[1])
+    points.sort(key=l.... p: p[1])
     end = float("-inf")
-    for s, e in points:
+    ___ s, e __ points:
       __ s > end:
         ans += 1
         end = e
-    return ans
+    r.. ans

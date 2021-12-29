@@ -1,11 +1,11 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_dice_point(value):
     value = round(value*6+0.5)
-    results.append(value)
+    results.a..(value)
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     value = float(input())
     get_dice_point(value)
 

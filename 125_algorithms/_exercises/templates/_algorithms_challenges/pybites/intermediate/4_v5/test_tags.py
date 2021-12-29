@@ -1,4 +1,4 @@
-from tags import get_pybites_top_tags
+____ tags _______ get_pybites_top_tags
 
 
 ___ test_get_pybites_top_tags():
@@ -12,4 +12,4 @@ ___ test_get_pybites_top_tags():
                 ('django', 37),
                 ('code', 25),
                 ('github', 24)]
-    assert get_pybites_top_tags() == expected
+    ... get_pybites_top_tags() __ expected

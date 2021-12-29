@@ -34,13 +34,13 @@ class Solution(object):
         :type z: int
         :rtype: bool
         """
-        __ x + y < z: return False
-        __ x == z or y == z: return True
+        __ x + y < z: r.. False
+        __ x __ z o. y __ z: r.. True
 
-        return z % self.gcd(x, y) == 0
+        r.. z % self.gcd(x, y) __ 0
 
     ___ gcd(self, a, b):
         while b:
             a, b = b, a%b
-        return a
+        r.. a
 

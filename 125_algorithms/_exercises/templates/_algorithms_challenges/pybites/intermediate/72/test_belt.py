@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from belt import get_belt
+____ belt _______ get_belt
 
 
 @pytest.mark.parametrize("input_argument, expected_return", [
-    (0, None),
-    (9, None),
+    (0, N..),
+    (9, N..),
     (10, 'white'),
     (48, 'white'),
     (50, 'yellow'),
@@ -23,4 +23,4 @@ from belt import get_belt
     (1200, 'red'),
 ])
 ___ test_get_belt(input_argument, expected_return):
-    assert get_belt(input_argument) == expected_return
+    ... get_belt(input_argument) __ expected_return

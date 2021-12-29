@@ -29,50 +29,50 @@ Both the input and output have TreeNode type.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
         self.deepest = -1
-        self.deepest_nodes = None
-        self.ret = None
+        self.deepest_nodes = N..
+        self.ret = N..
 
     ___ subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
         """
         lowest common ancestor of deepest node
         """
         self.down(root, 0)
-        __ len(self.deepest_nodes) == 1:
-            return self.deepest_nodes.pop()
+        __ l..(self.deepest_nodes) __ 1:
+            r.. self.deepest_nodes.pop()
 
-        self.count(root)
-        return self.ret
+        self.c.. root)
+        r.. self.ret
 
-    ___ down(self, node: TreeNode, d: int) -> None:
-        __ not node:
-            return
+    ___ down(self, node: TreeNode, d: int) -> N..
+        __ n.. node:
+            r..
 
         __ d > self.deepest:
             self.deepest = d
             self.deepest_nodes = set([node])
-        elif d == self.deepest:
+        ____ d __ self.deepest:
             self.deepest_nodes.add(node)
 
         self.down(node.left, d + 1)
         self.down(node.right, d + 1)
 
-    ___ count(self, node: TreeNode) -> int:
-        __ not node:
-            return 0
+    ___ c.. self, node: TreeNode) -> int:
+        __ n.. node:
+            r.. 0
 
-        l = self.count(node.left)
-        r = self.count(node.right)
-        __ l != 0 and r != 0 and l + r == len(self.deepest_nodes):
+        l = self.c.. node.left)
+        r = self.c.. node.right)
+        __ l != 0 and r != 0 and l + r __ l..(self.deepest_nodes):
             self.ret = node
 
         count = l + r
-        __ node in self.deepest_nodes:
+        __ node __ self.deepest_nodes:
             count += 1
-        return count
+        r.. count

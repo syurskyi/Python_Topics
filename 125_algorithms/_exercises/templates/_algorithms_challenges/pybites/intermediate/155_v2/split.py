@@ -1,4 +1,4 @@
-import re
+_______ re
 
 ___ split_words_and_quoted_text(text):
     """Split string text by space unless it is
@@ -17,11 +17,11 @@ ___ split_words_and_quoted_text(text):
     values = re.findall(r'"(.+?)"|(\w+)',text)
 
 
-    return [value[0] __ value[0] else value[1] for value in values]
+    r.. [value[0] __ value[0] ____ value[1] ___ value __ values]
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     text = 'Should give "3 words only"'

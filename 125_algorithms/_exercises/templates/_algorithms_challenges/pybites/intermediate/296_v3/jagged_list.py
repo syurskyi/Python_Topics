@@ -1,19 +1,19 @@
-from typing import List
+____ typing _______ List
 
 
 ___ jagged_list(lst_of_lst: List[List[int]], fillvalue: int = 0) -> List[List[int]]:
 
     
-    __ not lst_of_lst:
-        return lst_of_lst
-    max_length = max(len(l) for l in lst_of_lst)
+    __ n.. lst_of_lst:
+        r.. lst_of_lst
+    max_length = max(l..(l) ___ l __ lst_of_lst)
 
 
-    for l in lst_of_lst:
-        l.extend([fillvalue] * (max_length - len(l)))
+    ___ l __ lst_of_lst:
+        l.extend([fillvalue] * (max_length - l..(l)))
 
 
-    return lst_of_lst
+    r.. lst_of_lst
 
 
 

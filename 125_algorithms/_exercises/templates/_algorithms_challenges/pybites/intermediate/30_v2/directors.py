@@ -1,8 +1,8 @@
-import csv
-from collections import defaultdict, namedtuple
-import os
-from urllib.request import urlretrieve
-import pandas as pd
+_______ csv
+____ collections _______ defaultdict, namedtuple
+_______ os
+____ urllib.request _______ urlretrieve
+_______ pandas as pd
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = os.getenv("TMP", "/tmp")
@@ -28,19 +28,19 @@ ___ get_movies_by_director():
     
 
     data = data[data.title_year >= 1960]
-    result = defaultdict(list)
+    result = defaultdict(l..)
 
 
-    for _,row in data.iterrows():
+    ___ _,row __ data.iterrows():
         director = row.director_name
         movie_title = row.movie_title
         movie_year = row.title_year
         imdb_score =row.imdb_score
         __ movie_title and movie_year and imdb_score:
-            result[director].append(Movie(movie_title,movie_year,imdb_score))
+            result[director].a..(Movie(movie_title,movie_year,imdb_score))
 
 
-    return result
+    r.. result
 
 
 
@@ -57,7 +57,7 @@ ___ calc_mean_score(movies):
        round the mean to 1 decimal place"""
     
 
-    return round(sum(movie.score for movie in movies) /len(movies),1)
+    r.. round(s..(movie.score ___ movie __ movies) /l..(movies),1)
 
 
 
@@ -67,24 +67,24 @@ ___ get_average_scores(directors):
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
     
-    result = []
+    result    # list
 
-    for director,movies in directors.items():
-        __ len(movies) >= MIN_MOVIES:
+    ___ director,movies __ directors.items():
+        __ l..(movies) >= MIN_MOVIES:
             mean_score = calc_mean_score(movies)
-            result.append((director,mean_score))
+            result.a..((director,mean_score))
     
 
 
     
-    return sorted(result,key=lambda x: x[1],reverse=True)
+    r.. s..(result,key=l.... x: x[1],r.._T..
 
 
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     get_movies_by_director()
 
 

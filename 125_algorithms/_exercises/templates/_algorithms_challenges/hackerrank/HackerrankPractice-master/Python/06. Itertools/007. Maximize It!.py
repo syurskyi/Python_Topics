@@ -2,9 +2,9 @@
 # Score: 50
 
 
-from itertools import product
+____ itertools _______ product
 
 k, m = map(int, input().split())
-n = (list(map(int, input().split()))[1:] for _ in range(k))
-results = (sum(i**2 for i in x) % m for x in product(*n))
+n = (l..(map(int, input().split()))[1:] ___ _ __ r..(k))
+results = (s..(i**2 ___ i __ x) % m ___ x __ product(*n))
 print(max(results))

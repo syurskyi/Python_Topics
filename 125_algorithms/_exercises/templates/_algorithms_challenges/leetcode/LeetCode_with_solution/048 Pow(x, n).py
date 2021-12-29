@@ -17,12 +17,12 @@ class Solution:
         :param n: integer
         :return: float
         """
-        invert_flag = False __ n > 0 else True
+        invert_flag = False __ n > 0 ____ True
         # O(log n)
         n = abs(n)
         product = 1.0
         while n > 0:
-            __ n & 1 == 1:
+            __ n & 1 __ 1:
                 product *= x
 
             n = n >> 1
@@ -31,7 +31,7 @@ class Solution:
         __ invert_flag:
             product = 1.0 / product
 
-        return product
+        r.. product
 
     # @param x, a float
     # @param n, a integer
@@ -41,37 +41,37 @@ class Solution:
         O(n)
         """
         __ abs(x)<=0.00001:
-            return 0
-        __ x==1.0:
-            return 1
-        __ x==-1.0:
-            __ n&1==1:
-                return 1
-            else:
-                return -1
+            r.. 0
+        __ x__1.0:
+            r.. 1
+        __ x__-1.0:
+            __ n&1__1:
+                r.. 1
+            ____:
+                r.. -1
 
         __ abs(x-1.0)<1e-6:
-            return 1+(x-1.0)*n
+            r.. 1+(x-1.0)*n
 
         __ abs(x--1.0)<1e-6:
-            __ n % 2==0:
-                return self.pow(-x, n)
-            else:
-                return -self.pow(-x, n)
+            __ n % 2__0:
+                r.. self.pow(-x, n)
+            ____:
+                r.. -self.pow(-x, n)
 
         product = 1.0
-        for i in xrange(abs(n)):
+        ___ i __ xrange(abs(n)):
             pre = product
             __ n>0:
                 product *= x
-            else:
+            ____:
                 product /= x
 
             __ abs(product - pre)<1e-5:
                 break
 
-        return product
+        r.. product
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().pow(8.88023, 3)

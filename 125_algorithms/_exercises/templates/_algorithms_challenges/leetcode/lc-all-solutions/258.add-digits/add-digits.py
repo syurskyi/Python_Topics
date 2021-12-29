@@ -5,5 +5,5 @@ class Solution(object):
     :rtype: int
     """
     __ num < 10:
-      return num
-    return 1 + (num - 1) % 9
+      r.. num
+    r.. 1 + (num - 1) % 9

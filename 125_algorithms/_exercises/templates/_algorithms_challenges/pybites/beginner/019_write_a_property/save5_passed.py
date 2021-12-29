@@ -1,4 +1,4 @@
-import datetime as dt
+_______ datetime as dt
 
 NOW = dt.datetime.now()
 
@@ -11,7 +11,7 @@ class Promo:
     ___ expired(self):
         __ NOW > self.expires:
             print("Not expired! :)")
-            return True
-        else:
+            r.. True
+        ____:
             print("Expired! :(")
-            return False
+            r.. False

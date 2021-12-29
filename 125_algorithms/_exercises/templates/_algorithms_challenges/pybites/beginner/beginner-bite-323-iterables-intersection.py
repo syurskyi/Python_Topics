@@ -28,8 +28,8 @@ but it is not mandatory for solving this bite (i.e., there are at least two ways
 to code intersection())
 """
 
-import functools
-from typing import Iterable, Set, Any
+_______ functools
+____ typing _______ Iterable, Set, Any
 
 # First attempt - crap and ugly
 ___ intersection(*args: Iterable) -> Set[Any]:
@@ -37,21 +37,21 @@ ___ intersection(*args: Iterable) -> Set[Any]:
     # I want iterables that are not None and not empty
     # Edge condition:
     # - only empty inputs
-    l = []
-    for input in args:
-        __ input is not None and len(input) > 0:
-            l.append(set(input))
+    l    # list
+    ___ input __ args:
+        __ input __ n.. N.. and l..(input) > 0:
+            l.a..(set(input))
     # I need to handle an exception in case dealing with empty inputs
     # Then I use intersection method which takes an arbitrary number of sets
     # as input.
     # {0,1,2,3} intersection {0,1,2,3}, {3,4,5,6}, {2,3,5,6}
     try:
         first = l[0]
-        return(first.intersection(*l))
+        r..(first.intersection(*l))
     except IndexError as e:
         print(e)
-        return(set())
+        r..(set())
 
 
 
-print(intersection(None))
+print(intersection(N..))

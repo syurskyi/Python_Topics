@@ -9,7 +9,7 @@ class FileNode(object):
     self.data += data
 
   ___ readAll(self):
-    return self.data
+    r.. self.data
 
 
 class FileSystem(object):
@@ -22,29 +22,29 @@ class FileSystem(object):
     :rtype: List[str]
     """
     fd = self.lookup(path, False)
-    __ not fd:
-      return []
-    __ not fd.isFolder:
-      return [fd.name]
-    files = []
-    for file in fd.childs:
-      files.append(file)
+    __ n.. fd:
+      r.. []
+    __ n.. fd.isFolder:
+      r.. [fd.name]
+    files    # list
+    ___ file __ fd.childs:
+      files.a..(file)
     files.sort()
-    return files
+    r.. files
 
   ___ lookup(self, path, isAutoCreate):
     path = path.split("/")
     p = self.root
-    for name in path:
-      __ not name:
+    ___ name __ path:
+      __ n.. name:
         continue
-      __ name not in p.childs:
+      __ name n.. __ p.childs:
         __ isAutoCreate:
           p.childs[name] = FileNode(name)
-        else:
-          return None
+        ____:
+          r.. N..
       p = p.childs[name]
-    return p
+    r.. p
 
   ___ mkdir(self, path):
     """
@@ -70,8 +70,8 @@ class FileSystem(object):
     """
     fd = self.lookup(filePath, False)
     __ fd:
-      return fd.readAll()
-    return ""
+      r.. fd.readAll()
+    r.. ""
 
 # Your FileSystem object will be instantiated and called as such:
 # obj = FileSystem()

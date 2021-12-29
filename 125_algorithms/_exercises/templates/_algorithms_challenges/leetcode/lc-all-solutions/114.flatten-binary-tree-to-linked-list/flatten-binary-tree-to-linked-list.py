@@ -13,27 +13,27 @@ class Solution(object):
     """
 
     ___ dfs(root):
-      __ not root:
-        return root
+      __ n.. root:
+        r.. root
 
       left = dfs(root.left)
       right = dfs(root.right)
 
-      __ not left and not right:
-        return root
+      __ n.. left and n.. right:
+        r.. root
 
-      __ right is None:
+      __ right __ N..
         root.right = root.left
-        root.left = None
-        return left
+        root.left = N..
+        r.. left
 
-      __ not left:
-        return right
+      __ n.. left:
+        r.. right
 
       tmp = root.right
       root.right = root.left
-      root.left = None
+      root.left = N..
       left.right = tmp
-      return right
+      r.. right
 
     dfs(root)

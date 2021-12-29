@@ -3,14 +3,14 @@
 
 
 t = int(input())
-for i in range(t):
+___ i __ r..(t):
     money = int(input())
     n = int(input())
-    arr = list(map(int, input().split()))
+    arr = l..(map(int, input().split()))
 
     saved_values = {}
-    for counter, value in enumerate(arr):
-        __ money-value in saved_values:
+    ___ counter, value __ enumerate(arr):
+        __ money-value __ saved_values:
             print(saved_values[money-value] + 1, counter + 1)
-        elif value not in saved_values:
+        ____ value n.. __ saved_values:
             saved_values[value] = counter

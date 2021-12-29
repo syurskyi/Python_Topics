@@ -10,25 +10,25 @@ class Solution(object):
         :rtype: int
         """
         res = 1
-        pairs.sort(key=lambda x: (x[1], x[0]))
+        pairs.sort(key=l.... x: (x[1], x[0]))
         maxLen = pairs[0][1]
-        for i in range(1, len(pairs)):
+        ___ i __ r..(1, l..(pairs)):
             pair = pairs[i]
             __ pair[0] > maxLen:
                 maxLen = pairs[i][1]
                 res += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [[1, 2], [2, 3], [3, 4]],
             [[1, 10], [2, 3], [4, 5], [6, 7]],
         ]
-        for pairs in testCases:
+        ___ pairs __ testCases:
             print('pairs: %s' % pairs)
             result = self.findLongestChain(pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

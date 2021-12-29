@@ -22,11 +22,11 @@ class Solution(object):
         :return:
         """
         __ num < 1:
-            return False
+            r.. False
         __ num & num -1 != 0:
-            return False
+            r.. False
 
-        return num % 3 == 1
+        r.. num % 3 __ 1
 
     ___ isPowerOfFourNaive(self, num):
         """
@@ -35,14 +35,14 @@ class Solution(object):
         :rtype: bool
         """
         __ num < 1:
-            return False
+            r.. False
         __ num & num-1 != 0:
-            return False
+            r.. False
 
         while True:
-            __ num == 0:
-                return False
-            elif num == 1:
-                return True
+            __ num __ 0:
+                r.. False
+            ____ num __ 1:
+                r.. True
 
             num >>= 2

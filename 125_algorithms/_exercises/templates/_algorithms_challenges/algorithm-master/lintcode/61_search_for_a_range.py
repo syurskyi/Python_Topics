@@ -7,32 +7,32 @@ class Solution:
     ___ searchRange(self, A, target):
         NOT_FOUND = [-1, -1]
 
-        __ not A:
-            return NOT_FOUND
+        __ n.. A:
+            r.. NOT_FOUND
 
-        n = len(A)
+        n = l..(A)
 
         left, mid, right = 0, 0, n - 1
         while left + 1 < right:
             mid = left + (right - left) // 2
             __ A[mid] < target:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        start = left __ A[left] == target else right
+        start = left __ A[left] __ target ____ right
 
         left, mid, right = 0, 0, n - 1
         while left + 1 < right:
             mid = left + (right - left) // 2
             __ A[mid] <= target:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        end = right __ A[right] == target else left
+        end = right __ A[right] __ target ____ left
 
         __ start <= end:
-            return [start, end]
+            r.. [start, end]
 
-        return NOT_FOUND
+        r.. NOT_FOUND

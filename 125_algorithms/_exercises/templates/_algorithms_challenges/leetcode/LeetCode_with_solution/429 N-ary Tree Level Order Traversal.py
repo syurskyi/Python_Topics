@@ -19,19 +19,19 @@ class Solution:
         :type root: Node
         :rtype: List[List[int]]
         """
-        __ not root:
-            return []
+        __ n.. root:
+            r.. []
 
         q = [root]
-        ret = []
+        ret    # list
         while q:
-            cur = []
-            q_new = []
-            for e in q:
+            cur    # list
+            q_new    # list
+            ___ e __ q:
                 q_new.extend(e.children)
-                cur.append(e.val)
+                cur.a..(e.val)
 
-            ret.append(cur)
+            ret.a..(cur)
             q = q_new
 
-        return ret
+        r.. ret

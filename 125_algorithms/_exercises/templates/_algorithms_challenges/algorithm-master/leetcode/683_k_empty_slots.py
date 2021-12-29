@@ -11,7 +11,7 @@
 >>> bool(gotcha) and all(gotcha)
 True
 """
-import bisect
+_______ bisect
 
 
 class Solution:
@@ -24,17 +24,17 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        bloom = []
+        bloom    # list
 
-        for day in range(len(flowers)):
+        ___ day __ r..(l..(flowers)):
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
-            for _x in bloom[max(0, i - 1):i + 1]:
-                __ abs(_x - x) - 1 == k:
-                    return day + 1  # changed to 1-based
+            ___ _x __ bloom[max(0, i - 1):i + 1]:
+                __ abs(_x - x) - 1 __ k:
+                    r.. day + 1  # changed to 1-based
             bloom.insert(i, x)
 
-        return -1
+        r.. -1
 
 
 class Solution2:
@@ -48,9 +48,9 @@ class Solution2:
         :type k: int
         :rtype: int
         """
-        n = len(flowers)
+        n = l..(flowers)
         x2day = [0] * n
-        for day in range(n):
+        ___ day __ r..(n):
             """
             day: 0-based => 1-based
             x:   1-based => 0-based
@@ -67,9 +67,9 @@ class Solution2:
                 x2day[i] < x2day[left],
                 x2day[i] <= x2day[right],
             )):
-                __ i == right:
-                    ans = min(ans, max(x2day[left], x2day[right]))
+                __ i __ right:
+                    ans = m..(ans, max(x2day[left], x2day[right]))
                 left, right = i, k + i + 1
             i += 1
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1

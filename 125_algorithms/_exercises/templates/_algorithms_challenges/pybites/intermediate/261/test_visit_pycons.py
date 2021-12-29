@@ -1,4 +1,4 @@
-from visit_pycons import (
+____ visit_pycons _______ (
     _get_pycons,
     update_pycons_lat_lon,
     create_travel_plan,
@@ -9,24 +9,24 @@ from visit_pycons import (
 ___ test_update_pycons_lat_lon():
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
-    for pycon in pycons:
-        assert isinstance(pycon.lat, float)
-        assert isinstance(pycon.lon, float)
+    ___ pycon __ pycons:
+        ... isi..(pycon.lat, float)
+        ... isi..(pycon.lon, float)
 
 
 ___ test_create_travel_plan():
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     travel_plan = create_travel_plan(pycons)
-    assert len(travel_plan) == 8
-    assert travel_plan[0].origin.name == "PyCon Odessa"
-    assert travel_plan[0].destination.name == "PyCon SK"
-    assert travel_plan[-1].origin.name == "PyCon DE & PyData Berlin"
-    assert travel_plan[-1].destination.name == "PyCon Ireland"
+    ... l..(travel_plan) __ 8
+    ... travel_plan[0].origin.name __ "PyCon Odessa"
+    ... travel_plan[0].destination.name __ "PyCon SK"
+    ... travel_plan[-1].origin.name __ "PyCon DE & PyData Berlin"
+    ... travel_plan[-1].destination.name __ "PyCon Ireland"
 
 
 ___ test_total_travel_distance():
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     travel_plan = create_travel_plan(pycons)
-    assert total_travel_distance(travel_plan) == 8444.9
+    ... total_travel_distance(travel_plan) __ 8444.9

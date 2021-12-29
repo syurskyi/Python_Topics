@@ -1,11 +1,11 @@
 ___ saddle_points(m):
-    __ not m:
-        return set()
-    __ any(len(r) != len(m[0]) for r in m):
+    __ n.. m:
+        r.. set()
+    __ any(l..(r) != l..(m[0]) ___ r __ m):
         raise ValueError('irregular matrix')
-    mmax = [max(r) for r in m]
-    mmin = [min(c) for c in zip(*m)]
-    points = [(i, j) for i in range(len(m))
-              for j in range(len(m[0])) __ mmax[i] == mmin[j]]
+    mmax = [max(r) ___ r __ m]
+    mmin = [m..(c) ___ c __ zip(*m)]
+    points = [(i, j) ___ i __ r..(l..(m))
+              ___ j __ r..(l..(m[0])) __ mmax[i] __ mmin[j]]
 
-    return set(points)
+    r.. set(points)

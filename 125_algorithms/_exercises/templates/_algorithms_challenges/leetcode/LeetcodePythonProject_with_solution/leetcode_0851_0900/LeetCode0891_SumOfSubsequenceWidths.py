@@ -11,29 +11,29 @@ class Solution(object):
         """
         A.sort()
         c, res, MOD = 1, 0, 10**9+7
-        for i in range(len(A)):
-            res = (res + A[i]*c - A[len(A)-i-1]*c) % MOD
+        ___ i __ r..(l..(A)):
+            res = (res + A[i]*c - A[l..(A)-i-1]*c) % MOD
             c = (c*2)%MOD
-        return (res+MOD)%MOD
+        r.. (res+MOD)%MOD
     
     ___ sumSubseqWidths_own_TLE(self, A):
         """
         :type A: List[int]
         :rtype: int
         """
-        nums = []
+        nums    # list
         arr = A
         self.dfs(arr, 0, [], nums)
         res = 0
-        for arr in nums:
-            res = (res + max(arr) - min(arr)) % (10**9+7)
-        return res
+        ___ arr __ nums:
+            res = (res + max(arr) - m..(arr)) % (10**9+7)
+        r.. res
     
     ___ dfs(self, arr, idx, curr, nums):
         __ curr:
-            nums.append(list(curr))
-        for i in range(idx, len(arr)):
-            curr.append(arr[i])
+            nums.a..(l..(curr))
+        ___ i __ r..(idx, l..(arr)):
+            curr.a..(arr[i])
             self.dfs(arr, i+1, curr, nums)
             curr.pop()
     
@@ -41,9 +41,9 @@ class Solution(object):
         testCases = [
             [2, 1, 3],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             res = self.sumSubseqWidths(arr)
             print('res: %s' % res)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

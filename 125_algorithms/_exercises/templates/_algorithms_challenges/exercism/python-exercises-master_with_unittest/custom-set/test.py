@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from custom_set import CustomSet
+____ custom_set _______ CustomSet
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.3.0
@@ -208,5 +208,5 @@ class CustomSetTest(unittest.TestCase):
         self.assertEqual(set1 + set2, expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

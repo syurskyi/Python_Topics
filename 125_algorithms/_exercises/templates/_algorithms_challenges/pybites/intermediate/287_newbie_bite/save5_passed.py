@@ -5,5 +5,5 @@ ___ time_printer(time):
         '''QWEPOQOPKF
         IHHPHJFDQ
         JIQJWE'''
-    else:
-        return
+    ____:
+        r..

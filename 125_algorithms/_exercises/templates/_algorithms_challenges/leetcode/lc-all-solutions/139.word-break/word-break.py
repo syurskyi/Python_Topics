@@ -6,16 +6,16 @@ class Solution(object):
     :rtype: bool
     """
     queue = [0]
-    ls = len(s)
-    lenList = [l for l in set(map(len, wordDict))]
-    visited = [0 for _ in range(0, ls + 1)]
+    ls = l..(s)
+    lenList = [l ___ l __ set(map(l.., wordDict))]
+    visited = [0 ___ _ __ r..(0, ls + 1)]
     while queue:
       start = queue.pop(0)
-      for l in lenList:
-        __ s[start:start + l] in wordDict:
-          __ start + l == ls:
-            return True
-          __ visited[start + l] == 0:
-            queue.append(start + l)
+      ___ l __ lenList:
+        __ s[start:start + l] __ wordDict:
+          __ start + l __ ls:
+            r.. True
+          __ visited[start + l] __ 0:
+            queue.a..(start + l)
             visited[start + l] = 1
-    return False
+    r.. False

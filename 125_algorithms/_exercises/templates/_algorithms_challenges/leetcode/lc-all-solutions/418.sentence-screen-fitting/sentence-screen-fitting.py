@@ -7,15 +7,15 @@ class Solution(object):
     :rtype: int
     """
     s = " ".join(sentence) + " "
-    n = len(s)
+    n = l..(s)
     start = 0
-    for _ in range(rows):
+    ___ _ __ r..(rows):
       start += cols - 1
-      __ s[start % n] == " ":
+      __ s[start % n] __ " ":
         start += 1
-      elif s[(start + 1) % n] == " ":
+      ____ s[(start + 1) % n] __ " ":
         start += 2
-      else:
+      ____:
         while start > 0 and s[(start - 1) % n] != " ":
           start -= 1
-    return start / n
+    r.. start / n

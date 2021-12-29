@@ -12,15 +12,15 @@ class Solution(object):
         :type c0: int
         :rtype: List[List[int]]
         """
-        res = []
+        res    # list
         dx, dy, n = 0, 1, 0
-        while len(res) < R*C:
-            for _ in range(n//2+1):
+        while l..(res) < R*C:
+            ___ _ __ r..(n//2+1):
                 __ 0 <= r0 < R and 0 <= c0 < C:
-                    res.append([r0, c0])
+                    res.a..([r0, c0])
                 r0, c0 = r0+dx, c0+dy
             dx, dy, n = dy, -dx, n+1
-        return res
+        r.. res
     
     ___ spiralMatrixIII_own(self, R, C, r0, c0):
         """
@@ -31,31 +31,31 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         pos = [r0, c0]
-        res = []
+        res    # list
         length = 1
         dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         i = 0
-        while len(res) < R*C:
-            for _ in range(2):
-                for _ in range(length):
+        while l..(res) < R*C:
+            ___ _ __ r..(2):
+                ___ _ __ r..(length):
                     __ self.isInRange(pos, R, C):
-                        res.append(pos)
+                        res.a..(pos)
                     d = dirs[i%4]
                     pos = [pos[0]+d[0], pos[1]+d[1]]
                 i += 1
             length += 1
-        return res
+        r.. res
     
     ___ isInRange(self, pos, R, C):
-        return 0 <= pos[0] < R and 0 <= pos[1] < C
+        r.. 0 <= pos[0] < R and 0 <= pos[1] < C
     
     ___ test(self):
         testCases = [
             [1, 4, 0, 0],
         ]
-        for R, C, r0, c0 in testCases:
+        ___ R, C, r0, c0 __ testCases:
             res = self.spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

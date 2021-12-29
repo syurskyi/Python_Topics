@@ -1,15 +1,15 @@
-from coursetime import get_all_timestamps, calc_total_course_duration
+____ coursetime _______ get_all_timestamps, calc_total_course_duration
 
 
 ___ test_get_all_timestamps():
     timestamps = get_all_timestamps()
-    assert len(timestamps) == 99
-    assert '2:29' in timestamps
-    assert '4:19' in timestamps
-    assert '6:06' in timestamps
-    assert '8:39' in timestamps
+    ... l..(timestamps) __ 99
+    ... '2:29' __ timestamps
+    ... '4:19' __ timestamps
+    ... '6:06' __ timestamps
+    ... '8:39' __ timestamps
 
 
 ___ test_calc_total_course_duration():
     timestamps = get_all_timestamps()
-    assert '6:50:31' in calc_total_course_duration(timestamps)
+    ... '6:50:31' __ calc_total_course_duration(timestamps)

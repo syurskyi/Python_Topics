@@ -7,12 +7,12 @@ def flatten(list_of_lists):
 
 
 ___ flatten_more(list_of_lists, output):
-    for i in list_of_lists:
-        __ type(i) not in (list, tuple):
-            output.append(i)
-        else:
+    ___ i __ list_of_lists:
+        __ type(i) n.. __ (l.., tuple):
+            output.a..(i)
+        ____:
             flatten_more(i, output)
-    return output
+    r.. output
 
 ___ flatten(list_of_lists):
-    return flatten_more(list_of_lists, [])
+    r.. flatten_more(list_of_lists, [])

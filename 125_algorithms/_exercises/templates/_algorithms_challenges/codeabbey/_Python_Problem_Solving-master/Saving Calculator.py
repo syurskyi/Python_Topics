@@ -1,9 +1,9 @@
 #accept the number of inputs
-for i in range(int(input())):
+___ i __ r..(int(input())):
     
     #accept the three values S,R and P where S is current money R is the amount of money to be achieved and
     #P is the rate of interest
-    a = list(map(int, input().split()))
+    a = l..(map(int, input().split()))
     
     s,r,p = a
     year_count = 0

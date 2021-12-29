@@ -18,19 +18,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         i = 0
         while i < n:
             j = nums[i]
             __ nums[i] != i and j < n:
                 nums[i], nums[j] = nums[j], nums[i]
-            else:
+            ____:
                 i += 1
-        for i, e in enumerate(nums):
+        ___ i, e __ enumerate(nums):
             __ i != e:
-                return i
-        else:
-            return n
+                r.. i
+        ____:
+            r.. n
 
 
 a0 = [0]

@@ -1,10 +1,10 @@
-import json
-import os
-from pathlib import Path
-from typing import Dict, List, Union
+_______ json
+_______ os
+____ pathlib _______ Path
+____ typing _______ Dict, List, Union
 
-import pandas as pd  # type: ignore
-import requests
+_______ pandas as pd  # type: ignore
+_______ requests
 
 URL: str = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
 STATS: List[str] = ["sum", "mean", "max"]
@@ -22,13 +22,13 @@ ___ get_data(url: str) -> Dict[str, str]:
     """
     __ TMP.exists():
         data = json.loads(TMP.read_text())
-    else:
+    ____:
         response = requests.get(url)
         response.raise_for_status()
         data = json.loads(response.text)
         with TMP.open("w") as tmp:
             json.dump(data, tmp)
-    return data
+    r.. data
 
 
 ___ process_data(url: str) -> pd.DataFrame:
@@ -43,10 +43,10 @@ ___ process_data(url: str) -> pd.DataFrame:
     data = get_data(url)
     download_url = data['download_url']
     monthly_sales = pd.read_csv(download_url,parse_dates=['month'])
-    return monthly_sales
+    r.. monthly_sales
 
 
-___ summary_report(df: pd.DataFrame, stats: Union[List[str], None] = STATS) -> None:
+___ summary_report(df: pd.DataFrame, stats: Union[List[str], N..] = STATS) -> N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.
@@ -72,7 +72,7 @@ ___ summary_report(df: pd.DataFrame, stats: Union[List[str], None] = STATS) -> N
     print(x)
 
 
-___ yearly_report(df: pd.DataFrame, year: int) -> None:
+___ yearly_report(df: pd.DataFrame, year: int) -> N..
     """Generate a sales report for the given year
 
     Args:
@@ -104,22 +104,22 @@ ___ yearly_report(df: pd.DataFrame, year: int) -> None:
         12     69545.62
     """
 
-    df = df[df.month.dt.year == year]
+    df = df[df.month.dt.year __ year]
 
-    __ len(df) == 0:
+    __ l..(df) __ 0:
         raise ValueError(f'The year {year} is not included in the report!')
-    else:
+    ____:
         print(year)
         print()
-        df = df.groupby(df.month.dt.month)[['sales']].sum()
+        df = df.groupby(df.month.dt.month)[['sales']].s..()
         print(df)
 
 
 #uncomment the following for viewing/testing the reports/code
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     data = process_data(URL)
     summary_report(data)
-    for year in (data["month"].dt.year).unique():
+    ___ year __ (data["month"].dt.year).unique():
         yearly_report(data, year)
 
     yearly_report(data, 2020)

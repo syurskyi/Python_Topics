@@ -6,43 +6,43 @@ Created on Apr 2, 2017
 
 class Solution(object):
     ___ isRectangleCover(self, rectangles):
-        __ not rectangles:
-            return False
+        __ n.. rectangles:
+            r.. False
         x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
         hashset = set()
         area = 0
-        for rect in rectangles:
-            x1 = min(x1, rect[0])
-            y1 = min(y1, rect[1])
+        ___ rect __ rectangles:
+            x1 = m..(x1, rect[0])
+            y1 = m..(y1, rect[1])
             x2 = max(x2, rect[2])
             y2 = max(y2, rect[3])
             
             area += (rect[2]-rect[0])*(rect[3]-rect[1])
             
-            __ (rect[0], rect[1]) not in hashset:
+            __ (rect[0], rect[1]) n.. __ hashset:
                 hashset.add((rect[0], rect[1]))
-            else:
+            ____:
                 hashset.discard((rect[0], rect[1]))
-            __ (rect[0], rect[3]) not in hashset:
+            __ (rect[0], rect[3]) n.. __ hashset:
                 hashset.add((rect[0], rect[3]))
-            else:
+            ____:
                 hashset.discard((rect[0], rect[3]))
-            __ (rect[2], rect[3]) not in hashset:
+            __ (rect[2], rect[3]) n.. __ hashset:
                 hashset.add((rect[2], rect[3]))
-            else:
+            ____:
                 hashset.discard((rect[2], rect[3]))
-            __ (rect[2], rect[1]) not in hashset:
+            __ (rect[2], rect[1]) n.. __ hashset:
                 hashset.add((rect[2], rect[1]))
-            else:
+            ____:
                 hashset.discard((rect[2], rect[1]))
         
-        __ (x1, y1) not in hashset or\
-            (x1, y2) not in hashset or\
-            (x2, y1) not in hashset or\
-            (x2, y2) not in hashset or\
-            len(hashset) != 4:
-            return False
+        __ (x1, y1) n.. __ hashset o.\
+            (x1, y2) n.. __ hashset o.\
+            (x2, y1) n.. __ hashset o.\
+            (x2, y2) n.. __ hashset o.\
+            l..(hashset) != 4:
+            r.. False
         
-        return area == (x2-x1)*(y2-y1)
+        r.. area __ (x2-x1)*(y2-y1)
         
     

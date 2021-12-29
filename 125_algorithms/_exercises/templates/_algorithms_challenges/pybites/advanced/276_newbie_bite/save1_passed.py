@@ -5,9 +5,9 @@ b = 5
 
 
 ___ multiply_numbers(a, b):
-    return a * b
+    r.. a * b
 
 
 ___ enter_name():
     username = input("What is your name?")
-    return username
+    r.. username

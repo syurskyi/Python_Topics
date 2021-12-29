@@ -5,16 +5,16 @@
 ___ pickingNumbers(arr):
     result = 0
     checked = set()
-    for i in range(len(arr)):
-        __ i not in checked:
-            maxCount = max(arr.count(arr[i]) + arr.count(arr[i] + 1), arr.count(arr[i]) + arr.count(arr[i] - 1))
+    ___ i __ r..(l..(arr)):
+        __ i n.. __ checked:
+            maxCount = max(arr.c.. arr[i]) + arr.c.. arr[i] + 1), arr.c.. arr[i]) + arr.c.. arr[i] - 1))
             __ maxCount > result:
                 result = maxCount
             checked.add(i)
-    return result
+    r.. result
 
 
 n = int(input().strip())
-arr = list(map(int, input().strip().split(' ')))
+arr = l..(map(int, input().strip().split(' ')))
 result = pickingNumbers(arr)
 print(result)

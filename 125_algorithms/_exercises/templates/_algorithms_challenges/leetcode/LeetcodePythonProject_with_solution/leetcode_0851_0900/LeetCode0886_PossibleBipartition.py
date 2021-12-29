@@ -10,25 +10,25 @@ class Solution(object):
         :type dislikes: List[List[int]]
         :rtype: bool
         """
-        graph = [[False]*N for _ in range(N)]
-        for d in dislikes:
+        graph = [[False]*N ___ _ __ r..(N)]
+        ___ d __ dislikes:
             graph[d[0]-1][d[1]-1] = True
             graph[d[1]-1][d[0]-1] = True
         group = [0]*N
-        for i in range(N):
-            __ group[i] == 0 and not self.dfs(graph, group, i, 1, N):
-                return False
-        return True
+        ___ i __ r..(N):
+            __ group[i] __ 0 and n.. self.dfs(graph, group, i, 1, N):
+                r.. False
+        r.. True
     
     ___ dfs(self, graph, group, idx, g, N):
         group[idx] = g
-        for i in range(N):
-            __ graph[idx][i] == 1:
-                __ group[i] == g:
-                    return False
-                __ group[i] == 0 and not self.dfs(graph, group, i, -g, N):
-                    return False
-        return True
+        ___ i __ r..(N):
+            __ graph[idx][i] __ 1:
+                __ group[i] __ g:
+                    r.. False
+                __ group[i] __ 0 and n.. self.dfs(graph, group, i, -g, N):
+                    r.. False
+        r.. True
     
     ___ possibleBipartition_own_TLE(self, N, dislikes):
         """
@@ -37,32 +37,32 @@ class Solution(object):
         :rtype: bool
         """
         hashmap = {}
-        for num in range(1, N+1):
+        ___ num __ r..(1, N+1):
             hashmap[num] = set()
-        for d in dislikes:
+        ___ d __ dislikes:
             hashmap[d[0]].add(d[1])
             hashmap[d[1]].add(d[0])
         g0, g1 = [1], []
-        return self.dfs2(g0, g1, hashmap, 2, N)
+        r.. self.dfs2(g0, g1, hashmap, 2, N)
     
     ___ dfs2(self, g0, g1, hashmap, n, N):
         __ n > N:
-            return True
+            r.. True
         dislike0, dislike1 = False, False
-        for num in g0:
-            __ n in hashmap[num] or num in hashmap[n]:
+        ___ num __ g0:
+            __ n __ hashmap[num] o. num __ hashmap[n]:
                 dislike0 = True
                 break
-        for num in g1:
-            __ n in hashmap[num] or num in hashmap[n]:
+        ___ num __ g1:
+            __ n __ hashmap[num] o. num __ hashmap[n]:
                 dislike1 = True
                 break
         res = False
-        __ not dislike0:
-            res = res or self.dfs2(g0 + [n], g1, hashmap, n+1, N)
-        __ not dislike1:
-            res = res or self.dfs2(g0, g1 + [n], hashmap, n+1, N)
-        return res
+        __ n.. dislike0:
+            res = res o. self.dfs2(g0 + [n], g1, hashmap, n+1, N)
+        __ n.. dislike1:
+            res = res o. self.dfs2(g0, g1 + [n], hashmap, n+1, N)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -75,10 +75,10 @@ class Solution(object):
                 [[1,2],[1,3],[2,3]],
             ],
         ]
-        for N, dislikes in testCases:
+        ___ N, dislikes __ testCases:
             res = self.possibleBipartition(N, dislikes)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -2,19 +2,19 @@
 #  Score: 50
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
-for t in range(int(input())):
+___ t __ r..(int(input())):
     s = input()
     substrings = defaultdict(int)
 
-    for i in range(1, len(s)):
-        for j in range(len(s) - i + 1):
-            substrings[''.join(sorted(s[j:j+i]))] += 1
+    ___ i __ r..(1, l..(s)):
+        ___ j __ r..(l..(s) - i + 1):
+            substrings[''.join(s..(s[j:j+i]))] += 1
 
     ans = 0
-    for key, value in substrings.items():
+    ___ key, value __ substrings.items():
         ans += value*(value-1) // 2
 
     print(ans)

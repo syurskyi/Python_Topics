@@ -1,8 +1,8 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
-import pytest
+_______ pytest
 
-from names import group_names_by_country, data
+____ names _______ group_names_by_country, data
 
 # another output to test with
 data2 = """last_name,first_name,country_code
@@ -20,22 +20,22 @@ Pigney,Gavrielle,ID"""
 
 @pytest.fixture
 ___ grouping1():
-    return group_names_by_country(data)
+    r.. group_names_by_country(data)
 
 
 @pytest.fixture
 ___ grouping2():
-    return group_names_by_country(data2)
+    r.. group_names_by_country(data2)
 
 
 ___ test_return_type(grouping1, grouping2):
-    assert type(grouping1) == defaultdict
-    assert type(grouping2) == defaultdict
+    ... type(grouping1) __ defaultdict
+    ... type(grouping2) __ defaultdict
 
 
 ___ test_return_dict_len(grouping1, grouping2):
-    assert len(grouping1) == 7
-    assert len(grouping2) == 6
+    ... l..(grouping1) __ 7
+    ... l..(grouping2) __ 6
 
 
 @pytest.mark.parametrize('key, expected', [
@@ -48,7 +48,7 @@ ___ test_return_dict_len(grouping1, grouping2):
     ('TD', ['Rudolph Jeffry']),
 ])
 ___ test_grouping1_return(grouping1, key, expected):
-    assert sorted(grouping1[key]) == expected
+    ... s..(grouping1[key]) __ expected
 
 
 @pytest.mark.parametrize('key, expected', [
@@ -60,4 +60,4 @@ ___ test_grouping1_return(grouping1, key, expected):
     ('NL', ['Ave Insko', 'Bryant Kynman']),
 ])
 ___ test_grouping2_return(grouping2, key, expected):
-    assert sorted(grouping2[key]) == expected
+    ... s..(grouping2[key]) __ expected

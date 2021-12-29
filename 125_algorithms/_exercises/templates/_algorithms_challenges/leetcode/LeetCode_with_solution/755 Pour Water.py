@@ -119,7 +119,7 @@ heights will have length in [1, 100] and contain integers in [0, 99].
 V will be in range [0, 2000].
 K will be in range [0, heights.length - 1].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -128,28 +128,28 @@ class Solution:
         Simulation?
         O(V * L)
         """
-        for _ in range(V):
+        ___ _ __ r..(V):
             s = K
             # looking to the left
             optimal = s
-            for i in range(s-1, -1, -1):
+            ___ i __ r..(s-1, -1, -1):
                 __ heights[i] <= heights[i+1]:
                     __ heights[i] < heights[optimal]:
                         optimal = i
-                else:
+                ____:
                     break
-            __ optimal == s:
+            __ optimal __ s:
                 # looking to the right
-                for i in range(s+1, len(heights)):
+                ___ i __ r..(s+1, l..(heights)):
                     __ heights[i] <= heights[i-1]:
                         __ heights[i] < heights[optimal]:
                             optimal = i
-                    else:
+                    ____:
                         break
             heights[optimal] += 1
 
-        return heights
+        r.. heights
 
 
-__ __name__ == "__main__":
-    assert Solution().pourWater([2,1,1,2,1,2,2], 4, 3) == [2,2,2,3,2,2,2]
+__ __name__ __ "__main__":
+    ... Solution().pourWater([2,1,1,2,1,2,2], 4, 3) __ [2,2,2,3,2,2,2]

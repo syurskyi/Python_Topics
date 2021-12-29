@@ -55,31 +55,31 @@ class NestedInteger(object):
 
 class Solution(object):
     ___ deserialize(self, s):
-        __ s[0] == '[' and s[-1] == ']':
+        __ s[0] __ '[' and s[-1] __ ']':
             nestedInt = NestedInteger()
             s = s[1:-1]
-            __ not s: return nestedInt
+            __ n.. s: r.. nestedInt
             i, prev= 0, 0
-            while i < len(s):
-                __ s[i] == '[':
+            while i < l..(s):
+                __ s[i] __ '[':
                     count = 1
-                    while i < len(s) and count > 0:
+                    while i < l..(s) and count > 0:
                         i+=1
-                        __ s[i] == ']':
+                        __ s[i] __ ']':
                             count -= 1
-                        elif s[i] == '[':
+                        ____ s[i] __ '[':
                             count += 1
                     nestedInt.add(self.deserialize(s[prev:i+1]))
                     i+=1
                     prev = i+1
-                elif s[i] == ',':
+                ____ s[i] __ ',':
                     nestedInt.add(int(s[prev:i]))
                     prev = i+1
                 i+=1
-            return nestedInt
-        else:
+            r.. nestedInt
+        ____:
             nestedInt = NestedInteger()
             __ s:
                 nestedInt.setInteger(int(s))
-            return nestedInt
+            r.. nestedInt
 

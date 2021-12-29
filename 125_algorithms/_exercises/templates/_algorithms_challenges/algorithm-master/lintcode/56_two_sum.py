@@ -12,20 +12,20 @@ class Solution:
     """
     ___ twoSum(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A or len(A) < 2:
-            return NOT_FOUND
+        __ n.. A o. l..(A) < 2:
+            r.. NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
-            __ A[i] in remaining:
-                return [
+        ___ i __ r..(l..(A)):
+            __ A[i] __ remaining:
+                r.. [
                     remaining[A[i]],
                     i,
                 ]
 
             remaining[target - A[i]] = i
 
-        return NOT_FOUND
+        r.. NOT_FOUND
 
 
 """
@@ -42,25 +42,25 @@ class Solution:
     """
     ___ twoSum(self, A, target):
         NOT_FOUND = [-1, -1]
-        __ not A or len(A) < 2:
-            return NOT_FOUND
+        __ n.. A o. l..(A) < 2:
+            r.. NOT_FOUND
 
-        n = len(A)
-        A = [(A[i], i) for i in range(n)]
+        n = l..(A)
+        A = [(A[i], i) ___ i __ r..(n)]
         A.sort()
 
         left, right = 0, n - 1
         while left < right:
             _sum = A[left][0] + A[right][0]
-            __ _sum == target:
-                return sorted([
+            __ _sum __ target:
+                r.. s..([
                     A[left][1],
                     A[right][1],
                 ])
 
             __ _sum < target:
                 left += 1
-            else:
+            ____:
                 right -= 1
 
-        return NOT_FOUND
+        r.. NOT_FOUND

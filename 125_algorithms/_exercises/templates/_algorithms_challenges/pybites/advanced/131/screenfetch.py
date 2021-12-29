@@ -1,4 +1,4 @@
-import re
+_______ re
 output = """
                                        mohh@SERENiTY
  MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        OS: Mint 19 tara
@@ -30,7 +30,7 @@ ___ sysinfo_scrape(output):
 
     name = re.search(r'\S+$',lines[1]).group()
     mapping['Name'] = name
-    for i in range(2,len(lines)):
+    ___ i __ r..(2,l..(lines)):
         line = lines[i]
 
         result = re.search(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
@@ -43,7 +43,7 @@ ___ sysinfo_scrape(output):
 
 
     
-    return mapping
+    r.. mapping
 
 
 

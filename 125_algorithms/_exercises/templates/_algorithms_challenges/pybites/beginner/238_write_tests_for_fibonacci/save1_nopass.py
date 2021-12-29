@@ -1,12 +1,12 @@
-from fibonacci import fib
-import pytest
+____ fibonacci _______ fib
+_______ pytest
 
 
 ___ test_fib_main(n):
-    assert fib(0) == 0
-    assert fib(1) == 1
-    assert fib(10) == 55
-    assert fib(20) == 6765
+    ... fib(0) __ 0
+    ... fib(1) __ 1
+    ... fib(10) __ 55
+    ... fib(20) __ 6765
 
 
 ___ test_fib_negative(n):

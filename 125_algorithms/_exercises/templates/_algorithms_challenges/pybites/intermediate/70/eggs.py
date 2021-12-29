@@ -1,21 +1,21 @@
-from random import choice
+____ random _______ choice
 
-COLORS = 'red blue green yellow brown purple'.split()
+COLORS = 'red blue green yellow brown purple'.s.. 
 
 
 class EggCreator:
-    ___ __init__(self, max) -> None:
+    ___ __init__(self, max) -> N..
         self.max = max
         self.count = 0
 
     ___ __iter__(self):
-        return self
+        r.. self
 
     ___ __next__(self):
         self.count += 1
         __ self.count <= self.max:
-            return f"{choice(COLORS)} egg"
-        else:
+            r.. f"{choice(COLORS)} egg"
+        ____:
             raise StopIteration
 
 ec = EggCreator(5)

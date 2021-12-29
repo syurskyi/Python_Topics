@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from workouts import print_workout_days
+____ workouts _______ print_workout_days
 
 
 @pytest.mark.parametrize(
@@ -8,5 +8,5 @@ from workouts import print_workout_days
 ___ test_print_workout_days(arg,expected,capsys):
     result = print_workout_days(arg)
     captured = capsys.readouterr()
-    assert captured.out == expected
+    ... captured.out __ expected
 

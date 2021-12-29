@@ -19,27 +19,27 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return self.divide_conquer(root)[0]
+        r.. self.divide_conquer(root)[0]
 
     ___ divide_conquer(self, node):
-        __ not node:
-            return 0, 0
+        __ n.. node:
+            r.. 0, 0
 
         size = 1
         down = 0
 
-        for branch in ('left', 'right'):
+        ___ branch __ ('left', 'right'):
             child = getattr(node, branch)
 
-            __ not child:
+            __ n.. child:
                 continue
 
             _size, _down = self.divide_conquer(child)
 
-            __ child.val - 1 == node.val and _down + 1 > down:
+            __ child.val - 1 __ node.val and _down + 1 > down:
                 down = _down + 1
 
             __ _size > size:
@@ -48,7 +48,7 @@ class Solution:
         __ down + 1 > size:
             size = down + 1
 
-        return size, down
+        r.. size, down
 
 
 class Solution:
@@ -60,21 +60,21 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return self.divide_conquer(root, 0, 0)
+        r.. self.divide_conquer(root, 0, 0)
 
     ___ divide_conquer(self, node, parent_val, _size):
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         size = 1
 
-        __ parent_val + 1 == node.val:
+        __ parent_val + 1 __ node.val:
             size += _size
 
         left = self.divide_conquer(node.left, node.val, size)
         right = self.divide_conquer(node.right, node.val, size)
 
-        return max(size, left, right)
+        r.. max(size, left, right)

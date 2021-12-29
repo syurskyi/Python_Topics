@@ -1,34 +1,34 @@
-from collections import namedtuple
-from datetime import datetime, timedelta
+____ collections _______ namedtuple
+____ datetime _______ datetime, timedelta
 
 TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
 
 NOW = datetime.now()
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
-    TimeOffset(10, 'just now', None),
-    TimeOffset(MINUTE, '{} seconds ago', None),
-    TimeOffset(2*MINUTE, 'a minute ago', None),
+    TimeOffset(10, 'just now', N..),
+    TimeOffset(MINUTE, '{} seconds ago', N..),
+    TimeOffset(2*MINUTE, 'a minute ago', N..),
     TimeOffset(HOUR, '{} minutes ago', MINUTE),
-    TimeOffset(2*HOUR, 'an hour ago', None),
+    TimeOffset(2*HOUR, 'an hour ago', N..),
     TimeOffset(DAY, '{} hours ago', HOUR),
-    TimeOffset(2*DAY, 'yesterday', None),
+    TimeOffset(2*DAY, 'yesterday', N..),
 )
 
 
 ___ pretty_date(date):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
-    __ not isinstance(date, datetime) or date > NOW:
+    __ n.. isi..(date, datetime) o. date > NOW:
         raise ValueError
     elapsed = (NOW - date).total_seconds()
-    for timeoffset in TIME_OFFSETS:
+    ___ timeoffset __ TIME_OFFSETS:
         __ elapsed < timeoffset.offset:
             __ timeoffset.divider:
                 elapsed = elapsed/timeoffset.divider
             elapsed = int(elapsed)
-            return timeoffset.date_str.format(elapsed)
-    return date.strftime("%m/%d/%y")
+            r.. timeoffset.date_str.format(elapsed)
+    r.. date.strftime("%m/%d/%y")
 
 
 dt = datetime.now() - timedelta(days=2, hours=22, minutes=14, seconds=15)

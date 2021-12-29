@@ -1,7 +1,7 @@
-import pytest
-from typing import List
+_______ pytest
+____ typing _______ List
 
-from regex_lookahead_lookbehind import (
+____ regex_lookahead_lookbehind _______ (
     count_n_repetitions,
     count_n_reps_or_n_chars_following,
     check_surrounding_chars,
@@ -19,7 +19,7 @@ from regex_lookahead_lookbehind import (
     ],
 )
 ___ test_count_n_repetitions_digits(n, text, expected):
-    assert count_n_repetitions(text, n=n) == expected
+    ... count_n_repetitions(text, n=n) __ expected
 
 
 @pytest.mark.parametrize(
@@ -40,7 +40,7 @@ ___ test_count_n_repetitions_digits(n, text, expected):
     ],
 )
 ___ test_count_n_repetitions_chars(n, text, expected):
-    assert count_n_repetitions(text, n=n) == expected
+    ... count_n_repetitions(text, n=n) __ expected
 
 
 @pytest.mark.parametrize(
@@ -56,7 +56,7 @@ ___ test_count_n_repetitions_chars(n, text, expected):
     ],
 )
 ___ test_count_n_repetitions_unicode(n, text, expected):
-    assert count_n_repetitions(text, n=n) == expected
+    ... count_n_repetitions(text, n=n) __ expected
 
 @pytest.mark.parametrize(
     "n, char, text, expected",
@@ -68,7 +68,7 @@ ___ test_count_n_repetitions_unicode(n, text, expected):
     ],
 )
 ___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected):
-    assert count_n_reps_or_n_chars_following(text, n=n, char=char) == expected
+    ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
 @pytest.mark.parametrize(
@@ -81,7 +81,7 @@ ___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected):
     ],
 )
 ___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, expected):
-    assert count_n_reps_or_n_chars_following(text, n=n, char=char) == expected
+    ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
 @pytest.mark.parametrize(
@@ -101,7 +101,7 @@ ___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, exp
     ],
 )
 ___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
-    assert count_n_reps_or_n_chars_following(text, n=n, char=char) == expected
+    ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 @pytest.mark.parametrize(
     "surrounding_chars, text, expected",
     [
@@ -114,4 +114,4 @@ ___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
     ],
 )
 ___ test_check_surrounding_chars_valid(surrounding_chars: List[str], text, expected):
-    assert check_surrounding_chars(text, surrounding_chars) == expected
+    ... check_surrounding_chars(text, surrounding_chars) __ expected

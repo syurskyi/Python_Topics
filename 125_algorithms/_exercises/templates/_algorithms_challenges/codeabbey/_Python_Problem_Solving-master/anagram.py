@@ -2,11 +2,11 @@ ___ anagram(s,t):
     
     s = s.lower().replace(' ','')
     t = t.lower().replace(' ','')
-    __ len(s) != len(t):
-        return False
-    for i in t:
-        __ i in s:
+    __ l..(s) != l..(t):
+        r.. False
+    ___ i __ t:
+        __ i __ s:
             continue
-        return False
+        r.. False
 
-    return True
+    r.. True

@@ -1,2 +1,2 @@
 ___ is_armstrong(number):
-    return sum(pow(int(d), len(str(number))) for d in str(number)) == number
+    r.. s..(pow(int(d), l..(s..(number))) ___ d __ s..(number)) __ number

@@ -11,51 +11,51 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
-        __ not a and not b: return ''
-        __ not a: return b
-        __ not b: return a
-        __ len(a) < len(b):
+        __ n.. a and n.. b: r.. ''
+        __ n.. a: r.. b
+        __ n.. b: r.. a
+        __ l..(a) < l..(b):
             tmp = a
             a = b
             b = tmp
-        length1 = len(a)
-        length2 = len(b)
+        length1 = l..(a)
+        length2 = l..(b)
         result = ''
         i1, i2 = length1-1, length2-1
         carry = False
         while i2 >= 0:
             c1 = a[i1]
             c2 = b[i2]
-            __ c1 == '0' and c2 == '0':
+            __ c1 __ '0' and c2 __ '0':
                 __ carry:
                     result = '1' + result
-                else:
+                ____:
                     result = '0' + result
                 carry = False
-            elif c1 == '1' and c2 == '1':
+            ____ c1 __ '1' and c2 __ '1':
                 __ carry:
                     result = '1' + result
-                else:
+                ____:
                     result = '0' + result
                 carry = True
-            else:
+            ____:
                 __ carry:
                     result = '0' + result
                     carry = True
-                else:
+                ____:
                     result = '1' + result
                     carry = False
             i1 -= 1
             i2 -= 1
         __ carry:
-            __ i1 == -1:
+            __ i1 __ -1:
                 result = '1' + result
-            else:
+            ____:
                 tmp = self.addBinary(a[:i1+1], '1')
                 result = tmp + result
-        else:
+        ____:
             result = a[:i1+1]+ result
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -63,11 +63,11 @@ class Solution(object):
             ('1', '1'),
             ('1', '110'),
         ]
-        for a, b in testCases:
+        ___ a, b __ testCases:
             print('a: %s, b: %s' % (a, b))
             result = self.addBinary(a, b)
             print('result: %s' % result)
             print('-='*15 + '-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

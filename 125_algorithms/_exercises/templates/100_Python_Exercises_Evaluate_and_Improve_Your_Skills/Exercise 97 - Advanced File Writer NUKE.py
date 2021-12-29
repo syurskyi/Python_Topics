@@ -7,8 +7,8 @@ w___ T...
     __ line __ "SAVE":
         file.close()
         file  open("user_data_save_close.txt", 'a+')
-    elif line __ "CLOSE":
+    ____ line __ "CLOSE":
         file.close()
         _____
-    else:
+    ____:
         file.write(line + "\n")

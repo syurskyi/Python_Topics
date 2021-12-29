@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from isogram import is_isogram
+____ isogram _______ is_isogram
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
@@ -40,5 +40,5 @@ class TestIsogram(unittest.TestCase):
         self.assertIs(is_isogram("Aleph Bot Chap"), False)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

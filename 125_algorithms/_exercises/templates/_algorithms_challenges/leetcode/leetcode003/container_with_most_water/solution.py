@@ -1,14 +1,14 @@
 class Solution:
     # @return an integer
     ___ maxArea(self, height):
-        n = len(height)
+        n = l..(height)
         i = 0
         j = n - 1
         max_area = 0
         while i < j:
-            max_area = max(max_area, (j - i) * min(height[i], height[j]))
+            max_area = max(max_area, (j - i) * m..(height[i], height[j]))
             __ height[i] <= height[j]:
                 i += 1
-            else:
+            ____:
                 j -= 1
-        return max_area
+        r.. max_area

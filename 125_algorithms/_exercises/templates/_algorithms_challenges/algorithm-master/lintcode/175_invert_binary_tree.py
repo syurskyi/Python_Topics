@@ -16,8 +16,8 @@ class Solution:
         self.divide_conquer(root)
 
     ___ divide_conquer(self, node):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         self.divide_conquer(node.left)
         self.divide_conquer(node.right)

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from intersection import intersection
+____ intersection _______ intersection
 
 
 @pytest.mark.parametrize(
@@ -21,21 +21,21 @@ from intersection import intersection
 )
 ___ test_basic(inputs, expected):
     results = intersection(*inputs)
-    assert results == expected
+    ... results __ expected
 
 
 @pytest.mark.parametrize(
     "inputs,expected",
     [
-        [((None, "this is a string")), {" ", "a", "g", "h", "i", "n", "r", "s", "t"}],
+        [((N.., "this is a string")), {" ", "a", "g", "h", "i", "n", "r", "s", "t"}],
         [
             # no input
-            (None,),
+            (N..,),
             set(),
         ],
         [
             # multiple None inputs
-            (None, {1, 2, 3}, None, list(range(10)), None),
+            (N.., {1, 2, 3}, N.., l..(r..(10)), N..),
             {1, 2, 3},
         ],
         [([1, 2, 3, 3, 2, 1],), {1, 2, 3}],  # single input
@@ -43,4 +43,4 @@ ___ test_basic(inputs, expected):
 )
 ___ test_edgecases(inputs, expected):
     results = intersection(*inputs)
-    assert results == expected
+    ... results __ expected

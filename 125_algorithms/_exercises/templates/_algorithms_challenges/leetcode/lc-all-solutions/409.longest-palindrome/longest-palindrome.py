@@ -7,17 +7,17 @@ class Solution(object):
     maxLen = 0
     single = False
     d = {}
-    for c in s:
+    ___ c __ s:
       d[c] = d.get(c, 0) + 1
 
-    for key in d:
+    ___ key __ d:
       __ d[key] >= 2:
         count = d[key]
         left = d[key] % 2
         d[key] = left
         maxLen += count - left
-      __ not single:
-        __ d[key] == 1:
+      __ n.. single:
+        __ d[key] __ 1:
           maxLen += 1
           single = True
-    return maxLen
+    r.. maxLen

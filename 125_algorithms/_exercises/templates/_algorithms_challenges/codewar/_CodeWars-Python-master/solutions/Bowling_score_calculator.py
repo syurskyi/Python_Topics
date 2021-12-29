@@ -10,20 +10,20 @@ ___ bowling_score(rolls):
     total = 0
     frame = 0
     newframe = True
-    for index, roll in enumerate(rolls):
-        __ frame == 10:
+    ___ index, roll __ enumerate(rolls):
+        __ frame __ 10:
             break
-        __ roll == 10:
+        __ roll __ 10:
             total += rolls[index + 1]
             total += rolls[index + 2]
             frame += 1
-        elif not newframe:
-            __ rolls[index - 1] + roll == 10:
+        ____ n.. newframe:
+            __ rolls[index - 1] + roll __ 10:
                 total += rolls[index + 1]
             frame += 1
             newframe = True
-        else:
+        ____:
             newframe = False
         total += roll
 
-    return total
+    r.. total

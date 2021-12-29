@@ -41,30 +41,30 @@ class Solution:
         """
         iterate
         """
-        __ len(A) != len(B):
-            return False
-        __ A == B:
+        __ l..(A) != l..(B):
+            r.. False
+        __ A __ B:
             # find dup
             seen = set()
-            for a in A:
-                __ a in seen:
-                    return True
+            ___ a __ A:
+                __ a __ seen:
+                    r.. True
                 seen.add(a)
-            else:
-                return False
+            ____:
+                r.. False
 
         # Find a pair
-        pair = None
-        for i in range(len(A)):
+        pair = N..
+        ___ i __ r..(l..(A)):
             __ A[i] != B[i]:
-                __ not pair:
+                __ n.. pair:
                     pair = (A[i], B[i])
-                elif pair == (B[i], A[i]):
+                ____ pair __ (B[i], A[i]):
                     pair = USED
-                else:
-                    return False
+                ____:
+                    r.. False
 
-        __ pair is None or pair is USED:
-            return True
+        __ pair __ N.. o. pair __ USED:
+            r.. True
 
-        return False
+        r.. False

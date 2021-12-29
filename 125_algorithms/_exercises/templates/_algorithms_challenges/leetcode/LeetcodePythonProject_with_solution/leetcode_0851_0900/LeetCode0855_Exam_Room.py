@@ -3,7 +3,7 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-import bisect
+_______ bisect
 class ExamRoom(object):
 
     ___ __init__(self, N):
@@ -11,23 +11,23 @@ class ExamRoom(object):
         :type N: int
         """
         self.rowNum = N
-        self.l = []
+        self.l    # list
 
     ___ seat(self):
         """
         :rtype: int
         """
-        __ not self.l:
+        __ n.. self.l:
             res = 0
-        else:
+        ____:
             d, res = self.l[0], 0
-            for a, b in zip(self.l, self.l[1:]):
+            ___ a, b __ zip(self.l, self.l[1:]):
                 __ (b-a)//2 > d:
                     d, res = (b-a)//2, (b+a)//2
             __ self.rowNum - 1 - self.l[-1] > d:
                 res = self.rowNum-1
         bisect.insort(self.l, res)
-        return res
+        r.. res
 
     ___ leave(self, p):
         """

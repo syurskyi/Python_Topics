@@ -8,28 +8,28 @@ class Morse:
     ___ encode(self, message):
         words = message.split(' ')
         code = ('0' * 7).join(['000'.join([Morse.alpha[c.upper()]
-                                           for c in word]) for word in words])
-        result = []
-        for i in range(0, len(code), 32):
+                                           ___ c __ word]) ___ word __ words])
+        result    # list
+        ___ i __ r..(0, l..(code), 32):
             num = code[i:i + 32].ljust(32, '0')
-            result.append(int(num[1:], 2) -
-                          (0 __ num[0] == '0' else Morse.neg))
-        return result
+            result.a..(int(num[1:], 2) -
+                          (0 __ num[0] __ '0' ____ Morse.neg))
+        r.. result
 
     @classmethod
     ___ decode(self, array):
         code = ''
-        for num in array:
+        ___ num __ array:
             __ num < 0:
                 num += Morse.neg
                 code += '1' + bin(num)[2:].rjust(31, '0')
-            else:
+            ____:
                 code += bin(num)[2:].rjust(32, '0')
         code = code.rstrip('0')
-        result = ' '.join([''.join([next(k for k, v in Morse.alpha.items() __ v == char)
-                                    for char in words.split('000')]) for words in code.split('0' * 7)])
+        result = ' '.join([''.join([next(k ___ k, v __ Morse.alpha.items() __ v __ char)
+                                    ___ char __ words.split('000')]) ___ words __ code.split('0' * 7)])
 
-        return result
+        r.. result
 
     neg = 1 << 31
 
@@ -90,7 +90,7 @@ class Morse:
         '@': '10111011101011101',
         ' ': '0'}
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     print(Morse.encode('hello world'))
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))

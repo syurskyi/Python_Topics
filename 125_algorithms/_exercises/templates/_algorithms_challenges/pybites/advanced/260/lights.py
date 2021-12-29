@@ -1,7 +1,7 @@
-from typing import List
+____ typing _______ List
 
-import numpy as np
-import pandas as pd
+_______ numpy as np
+_______ pandas as pd
 
 
 class LightsGrid:
@@ -29,7 +29,7 @@ class LightsGrid:
         width = col_2 - col_1
         height = row_2 - row_1
 
-        return row_1,row_1 + height,col_1,col_1 + width
+        r.. row_1,row_1 + height,col_1,col_1 + width
 
 
 
@@ -42,7 +42,7 @@ class LightsGrid:
           - no lights are brighter than 5
           - no lights are less than 0"""
 
-        return self.grid.applymap(lambda value: 0 <= value <= 5).all().all()
+        r.. self.grid.applymap(l.... value: 0 <= value <= 5).a..().a..()
 
 
 
@@ -72,7 +72,7 @@ class LightsGrid:
 
         df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
-        self.grid.iloc[row_start:row_end + 1,col_start:col_end + 1] = df.applymap(lambda value: 1 __ value == 0 else value)
+        self.grid.iloc[row_start:row_end + 1,col_start:col_end + 1] = df.applymap(l.... value: 1 __ value __ 0 ____ value)
 
 
 
@@ -102,7 +102,7 @@ class LightsGrid:
         df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(lambda value: min(5,value + amount))
+        self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
 
 
     ___ turn_down(self, amount: int, s1: str, s2: str):
@@ -119,7 +119,7 @@ class LightsGrid:
         df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(lambda value: max(0,value - amount))
+        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: max(0,value - amount))
 
     ___ toggle(self, s1: str, s2: str):
         """The toggle function takes 2 parameters:
@@ -146,7 +146,7 @@ class LightsGrid:
         df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(lambda value: 0 __ value != 0 else 3)
+        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value != 0 ____ 3)
 
     ___ follow_instructions(self):
         """Function to process all instructions.
@@ -155,26 +155,26 @@ class LightsGrid:
           excluding the first instruction of course.
         """
 
-        for instruction in self.instructions:
-            values = instruction.split()
+        ___ instruction __ self.instructions:
+            values = instruction.s..
 
             s2 = values[-1]
-            __ values[0] == 'turn':
+            __ values[0] __ 'turn':
 
-                __ values[1] == 'on':
+                __ values[1] __ 'on':
                     s1 = values[2]
                     self.turn_on(s1,s2)
-                elif values[1] == 'off':
+                ____ values[1] __ 'off':
                     s1 = values[2]
                     self.turn_off(s1,s2)
-                else:
+                ____:
                     s1 = values[3]
                     amount = int(values[2])
-                    __ values[1] == 'up':
+                    __ values[1] __ 'up':
                         self.turn_up(amount,s1,s2)
-                    else:
+                    ____:
                         self.turn_down(amount,s1,s2)
-            else:
+            ____:
                 s1 = values[1]
                 self.toggle(s1,s2)
 
@@ -184,11 +184,11 @@ class LightsGrid:
     @property
     ___ lights_intensity(self):
         """(given) get the total intensity of all lights"""
-        return self.grid.to_numpy().sum()
+        r.. self.grid.to_numpy().s..()
 
 
 # Main function that can be used to test the Class methods
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     instructions = """create grid of length 100
     turn on 46,55 through 56,90
     turn off 37,3 through 42,83
@@ -241,7 +241,7 @@ __ __name__ == "__main__":
     turn off 3,72 through 68,75"""
 
     # Create a list of all the instructions
-    instructions = [line.strip() for line in instructions.splitlines()]
+    instructions = [line.strip() ___ line __ instructions.splitlines()]
 
     # The grid size instruction is first
     # Extract it and convert to int

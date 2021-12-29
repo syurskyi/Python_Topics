@@ -27,9 +27,9 @@ Note:
 0 <= hand[i] <= 10^9
 1 <= W <= hand.length
 """
-from typing import List
-from collections import Counter, deque
-import heapq
+____ typing _______ List
+____ collections _______ Counter, deque
+_______ heapq
 
 
 class Solution:
@@ -44,17 +44,17 @@ class Solution:
         counter = Counter(A)
         prev = 0
         prev_cnt = 0
-        for k in sorted(counter):  # sorted by key
-            __ prev_cnt > counter[k] or prev_cnt > 0 and k > prev + 1:
-                return False
+        ___ k __ s..(counter):  # sorted by key
+            __ prev_cnt > counter[k] o. prev_cnt > 0 and k > prev + 1:
+                r.. False
                 
-            q.append(counter[k] - prev_cnt)
+            q.a..(counter[k] - prev_cnt)
             prev, prev_cnt = k, counter[k]
-            __ len(q) == W:
+            __ l..(q) __ W:
                 c = q.popleft()
                 prev_cnt -= c
 
-        return prev_cnt == 0
+        r.. prev_cnt __ 0
 
     ___ isNStraightHand_heap(self, A: List[int], W: int) -> bool:
         """
@@ -62,34 +62,34 @@ class Solution:
         O(N log N + N log N)
         """
         A.sort()
-        __ len(A) % W != 0:
-            return False
-        __ W == 1:
-            return True
+        __ l..(A) % W != 0:
+            r.. False
+        __ W __ 1:
+            r.. True
 
 
-        h = []  # tuple of (-3, [1, 2, 3])
-        for a in A:
-            __ not h:
+        h    # list  # tuple of (-3, [1, 2, 3])
+        ___ a __ A:
+            __ n.. h:
                 h = [(a, [a])]
                 continue
 
-            __ a == h[0][1][-1]:
+            __ a __ h[0][1][-1]:
                 heapq.heappush(h, (a, [a]))
-            elif a == h[0][1][-1] + 1:
+            ____ a __ h[0][1][-1] + 1:
                 _, lst = heapq.heappop(h)
-                lst.append(a)
-                __ len(lst) < W:
+                lst.a..(a)
+                __ l..(lst) < W:
                     heapq.heappush(h, (a, lst))
-            else:
-                return False
+            ____:
+                r.. False
 
         __ h:
-            return False
+            r.. False
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) == True
-    assert Solution().isNStraightHand([1,1,2,2,3,3], 3) == True
+__ __name__ __ "__main__":
+    ... Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) __ True
+    ... Solution().isNStraightHand([1,1,2,2,3,3], 3) __ True

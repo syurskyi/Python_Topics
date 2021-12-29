@@ -5,12 +5,12 @@ class Solution:
     @return true or false
     """
     ___ anagram(self, s, t):
-        __ s == '' and t == '':
-            return True
-        __ not s or not t:
-            return False
+        __ s __ '' and t __ '':
+            r.. True
+        __ n.. s o. n.. t:
+            r.. False
 
-        s = sorted(s)
-        t = sorted(t)
+        s = s..(s)
+        t = s..(t)
 
-        return s == t
+        r.. s __ t

@@ -13,13 +13,13 @@ class Solution(object):
         :rtype: int
         """
         count = 0
-        cand = None
-        for c in nums:
-            __ count == 0:
+        cand = N..
+        ___ c __ nums:
+            __ count __ 0:
                 cand = c
                 count += 1
-            elif cand == c:
+            ____ cand __ c:
                 count += 1
-            else:
+            ____:
                 count -= 1
-        return cand
+        r.. cand

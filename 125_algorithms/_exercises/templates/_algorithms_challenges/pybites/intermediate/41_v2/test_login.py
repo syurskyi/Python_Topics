@@ -1,21 +1,21 @@
-from login import welcome
+____ login _______ welcome
 
 
 ___ test_no_account():
     """User is not on the system"""
-    assert welcome('anonymous') == 'please create an account'
+    ... welcome('anonymous') __ 'please create an account'
 
 
 ___ test_not_loggedin():
     """User is on the system but not logged in"""
-    assert welcome('julian') == 'please login'
+    ... welcome('julian') __ 'please login'
 
 
 ___ test_loggedin():
     """User is on the system and logged in"""
-    assert welcome('sue') == 'welcome back sue'
+    ... welcome('sue') __ 'welcome back sue'
 
 
 ___ test_docstring():
     """Decorator should not lose function's docstring"""
-    assert welcome.__doc__ == 'Return a welcome message if logged in'
+    ... welcome.__doc__ __ 'Return a welcome message if logged in'

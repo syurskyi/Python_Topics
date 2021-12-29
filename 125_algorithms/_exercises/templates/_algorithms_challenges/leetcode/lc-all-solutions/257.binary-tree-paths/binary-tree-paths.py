@@ -11,14 +11,14 @@ class Solution:
   ___ binaryTreePaths(self, root):
     ___ helper(root, path, res):
       __ root:
-        path.append(str(root.val))
+        path.a..(str(root.val))
         left = helper(root.left, path, res)
         right = helper(root.right, path, res)
-        __ not left and not right:
-          res.append("->".join(path))
+        __ n.. left and n.. right:
+          res.a..("->".join(path))
         path.pop()
-        return True
+        r.. True
 
-    res = []
+    res    # list
     helper(root, [], res)
-    return res
+    r.. res

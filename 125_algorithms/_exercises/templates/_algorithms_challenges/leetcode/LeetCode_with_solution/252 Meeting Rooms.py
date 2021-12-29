@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-import operator
+_______ operator
 
 __author__ = 'Daniel'
 
@@ -20,9 +20,9 @@ class Solution:
         :rtype: bool
         """
         intervals.sort(key=operator.attrgetter("start"))
-        for i in xrange(len(intervals)-1):
+        ___ i __ xrange(l..(intervals)-1):
             __ intervals[i].end > intervals[i+1].start:
-                return False
+                r.. False
 
-        return True
+        r.. True
 

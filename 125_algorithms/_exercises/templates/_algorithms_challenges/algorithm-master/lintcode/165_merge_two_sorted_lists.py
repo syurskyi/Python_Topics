@@ -18,7 +18,7 @@ class Solution:
             __ a.val < b.val:
                 tail.next = ListNode(a.val)
                 a = a.next
-            else:
+            ____:
                 tail.next = ListNode(b.val)
                 b = b.next
             tail = tail.next
@@ -33,4 +33,4 @@ class Solution:
             b = b.next
             tail = tail.next
 
-        return dummy.next
+        r.. dummy.next

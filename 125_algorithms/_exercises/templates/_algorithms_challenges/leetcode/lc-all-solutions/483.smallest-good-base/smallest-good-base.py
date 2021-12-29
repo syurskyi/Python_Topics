@@ -1,4 +1,4 @@
-import math
+_______ math
 
 
 class Solution(object):
@@ -9,8 +9,8 @@ class Solution(object):
     """
     n = int(n)
     max_m = int(math.log(n, 2))  # Refer [7]
-    for m in range(max_m, 1, -1):
+    ___ m __ r..(max_m, 1, -1):
       k = int(n ** m ** -1)
-      __ (k ** (m + 1) - 1) / (k - 1) == n:
-        return str(k)
-    return str(n - 1)
+      __ (k ** (m + 1) - 1) / (k - 1) __ n:
+        r.. str(k)
+    r.. str(n - 1)

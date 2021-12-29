@@ -29,23 +29,23 @@ class Stack:
         :rtype: nothing
         """
         t = 0
-        __ not self.q[t]:
+        __ n.. self.q[t]:
             t ^= 1
 
-        self.q[t].append(x)
+        self.q[t].a..(x)
 
     ___ pop(self):
         """
         :rtype: nothing
         """
         t = 0
-        __ not self.q[t]:
+        __ n.. self.q[t]:
             t ^= 1
 
-        while len(self.q[t]) > 1:
-            self.q[t^1].append(self.q[t].pop(0))
+        while l..(self.q[t]) > 1:
+            self.q[t^1].a..(self.q[t].pop(0))
 
-        return self.q[t].pop()
+        r.. self.q[t].pop()
 
     ___ top(self):
         """
@@ -53,14 +53,14 @@ class Stack:
         """
         popped = self.pop()
         t = 0
-        __ not self.q[t]:
+        __ n.. self.q[t]:
             t ^= 1
 
-        self.q[t].append(popped)
-        return popped
+        self.q[t].a..(popped)
+        r.. popped
 
     ___ empty(self):
         """
         :rtype: bool
         """
-        return not self.q[0] and not self.q[1]
+        r.. n.. self.q[0] and n.. self.q[1]

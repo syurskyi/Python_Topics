@@ -34,7 +34,7 @@ class MyCircularQueue:
         self.tail = -1
         self.sz = 0
         self.k = k
-        self.lst = [None for _ in range(k)]
+        self.lst = [N.. ___ _ __ r..(k)]
 
 
     ___ enQueue(self, value: int) -> bool:
@@ -42,50 +42,50 @@ class MyCircularQueue:
         Insert an element into the circular queue. Return true if the operation is successful.
         """
         __ self.sz >= self.k:
-            return False
+            r.. False
 
         self.tail += 1
         self.lst[self.tail % self.k] = value
         self.sz += 1
-        return True
+        r.. True
 
     ___ deQueue(self) -> bool:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
         __ self.sz <= 0:
-            return False
+            r.. False
 
-        self.lst[self.head % self.k] = None
+        self.lst[self.head % self.k] = N..
         self.head += 1
         self.sz -= 1
-        return True
+        r.. True
 
     ___ Front(self) -> int:
         """
         Get the front item from the queue.
         """
         ret = self.lst[self.head % self.k]
-        return ret __ ret __ not None else -1
+        r.. ret __ ret __ n.. N.. ____ -1
 
     ___ Rear(self) -> int:
         """
         Get the last item from the queue.
         """
         ret = self.lst[self.tail % self.k]
-        return ret __ ret __ not None else -1
+        r.. ret __ ret __ n.. N.. ____ -1
 
     ___ isEmpty(self) -> bool:
         """
         Checks whether the circular queue is empty or not.
         """
-        return self.sz == 0
+        r.. self.sz __ 0
 
     ___ isFull(self) -> bool:
         """
         Checks whether the circular queue is full or not.
         """
-        return self.sz == self.k
+        r.. self.sz __ self.k
 
 
 # Your MyCircularQueue object will be instantiated and called as such:

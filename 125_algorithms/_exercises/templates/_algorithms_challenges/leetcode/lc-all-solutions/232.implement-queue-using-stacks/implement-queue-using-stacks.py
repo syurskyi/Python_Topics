@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Queue(object):
@@ -14,7 +14,7 @@ class Queue(object):
     :type x: int
     :rtype: nothing
     """
-    self.stack1.append(x)
+    self.stack1.a..(x)
 
   ___ pop(self):
     """
@@ -27,15 +27,15 @@ class Queue(object):
     """
     :rtype: int
     """
-    __ not self.stack2:
+    __ n.. self.stack2:
       while self.stack1:
-        self.stack2.append(self.stack1.pop())
-      return self.stack2[-1]
-    else:
-      return self.stack2[-1]
+        self.stack2.a..(self.stack1.pop())
+      r.. self.stack2[-1]
+    ____:
+      r.. self.stack2[-1]
 
   ___ empty(self):
     """
     :rtype: bool
     """
-    return not self.stack1 and not self.stack2
+    r.. n.. self.stack1 and n.. self.stack2

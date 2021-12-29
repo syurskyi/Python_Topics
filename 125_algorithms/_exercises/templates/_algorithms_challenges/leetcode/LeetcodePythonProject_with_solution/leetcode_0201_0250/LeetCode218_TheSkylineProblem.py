@@ -9,36 +9,36 @@ class Solution(object):
         :type buildings: List[List[int]]
         :rtype: List[List[int]]
         """
-        import heapq
-        heights = []
-        for b in buildings:
-            heights.append([b[0], -b[2]])
-            heights.append([b[1], b[2]])
+        _______ heapq
+        heights    # list
+        ___ b __ buildings:
+            heights.a..([b[0], -b[2]])
+            heights.a..([b[1], b[2]])
         heights.sort()
         heap = [0]
-        res = []
+        res    # list
         prev = 0
-        for h in heights:
+        ___ h __ heights:
             __ h[1] < 0:
                 heapq.heappush(heap, h[1])
-            else:
+            ____:
                 heap.remove(-h[1])
                 heapq.heapify(heap)
             curr = -heap[0]
             __ curr != prev:
-                res.append([h[0], curr])
+                res.a..([h[0], curr])
             prev = curr
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [ [2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8] ],
         ]
-        for buildings in testCases:
+        ___ buildings __ testCases:
             print('buildings: %s' % (buildings))
             result = self.getSkyline(buildings)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

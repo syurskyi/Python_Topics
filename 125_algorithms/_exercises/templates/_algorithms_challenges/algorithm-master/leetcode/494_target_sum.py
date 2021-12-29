@@ -20,14 +20,14 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        _sum = sum(A)
-        __ _sum < target or (_sum + target) % 2 == 1:
-            return 0
+        _sum = s..(A)
+        __ _sum < target o. (_sum + target) % 2 __ 1:
+            r.. 0
 
-        return self.subset_sum(A, (_sum + target) // 2)
+        r.. self.subset_sum(A, (_sum + target) // 2)
 
     ___ subset_sum(self, A, target):
         """
@@ -39,8 +39,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for a in A:
-            for i in range(target, a - 1, -1):
+        ___ a __ A:
+            ___ i __ r..(target, a - 1, -1):
                 dp[i] += dp[i - a]
 
-        return dp[target]
+        r.. dp[target]

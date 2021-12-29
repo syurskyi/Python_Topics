@@ -4,4 +4,4 @@ ___ factorial(Z):
     while index <= Z:
         output = output * index
         index = index + 1
-    return output
+    r.. output

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from survivors import filter_killed_mutants, _get_data
+____ survivors _______ filter_killed_mutants, _get_data
 
 EXPECTED_OUTPUT = """
 [*] Start mutation process:
@@ -164,7 +164,7 @@ EXPECTED_OUTPUT_WITH_GAP = """
 
 @pytest.fixture(scope='module')
 ___ actual():
-    return [line.rstrip() for line in filter_killed_mutants()]
+    r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
 @pytest.fixture(scope='module')
@@ -176,16 +176,16 @@ ___ actual2():
     test10 = mutpy_output.index('   - [#  10] CRP account:')
     test12 = mutpy_output.index('   - [#  12] CRP account:')
     output = mutpy_output[:test10] + mutpy_output[test12:]
-    return [line.rstrip() for line in filter_killed_mutants(output)]
+    r.. [line.rstrip() ___ line __ filter_killed_mutants(output)]
 
 
 ___ test_output_matches(actual):
-    expected = [line.rstrip() for line in
+    expected = [line.rstrip() ___ line __
                 EXPECTED_OUTPUT.strip().splitlines()]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_different_output(actual2):
-    expected = [line.rstrip() for line in
+    expected = [line.rstrip() ___ line __
                 EXPECTED_OUTPUT_WITH_GAP.strip().splitlines()]
-    assert actual2 == expected
+    ... actual2 __ expected

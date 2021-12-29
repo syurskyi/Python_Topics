@@ -1,5 +1,5 @@
-import os
-import urllib.request
+_______ os
+_______ urllib.request
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")
@@ -16,8 +16,8 @@ urllib.request.urlretrieve(
 
 
 ___ get_harry_most_common_word():
-    stopwords = open(stopwords_file).read().split()
+    stopwords = open(stopwords_file).read().s..
     text = open(harry_text).read().lower()
-    filtered = re.sub(r'[^A-Za-z\s*]', '', text).split()
-    words = [word for word in filtered __ word not in stopwords]
-    return Counter(words).most_common(1)[0]
+    filtered = re.sub(r'[^A-Za-z\s*]', '', text).s..
+    words = [word ___ word __ filtered __ word n.. __ stopwords]
+    r.. Counter(words).most_common(1)[0]

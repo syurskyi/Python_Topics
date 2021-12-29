@@ -1,8 +1,8 @@
 ___ mean(data):
     total  0.0
     count  0
-    for x in data:
+    ___ x __ data:
         count + 1
         total + x
 
-    return total / max(1, count)
+    r.. total / max(1, count)

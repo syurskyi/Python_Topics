@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-import unittest
+_______ unittest
 
-from ledger import format_entries, create_entry
+____ ledger _______ format_entries, create_entry
 
 
 class LedgerTest(unittest.TestCase):
@@ -10,7 +10,7 @@ class LedgerTest(unittest.TestCase):
     ___ test_empty_ledger(self):
         currency = 'USD'
         locale = 'en_US'
-        entries = []
+        entries    # list
         expected = 'Date       | Description               | Change       '
         self.assertEqual(format_entries(currency, locale, entries), expected)
 
@@ -143,5 +143,5 @@ class LedgerTest(unittest.TestCase):
         self.assertEqual(format_entries(currency, locale, entries), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

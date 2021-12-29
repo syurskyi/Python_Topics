@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -9,36 +9,36 @@ class Solution(object):
     """
     i = 0
     queue = deque([])
-    while i < len(s):
-      __ s[i] == " ":
+    while i < l..(s):
+      __ s[i] __ " ":
         i += 1
-      elif s[i] in "-+*/":
-        queue.append(s[i])
+      ____ s[i] __ "-+*/":
+        queue.a..(s[i])
         i += 1
-      else:
+      ____:
         start = i
-        while i < len(s) and s[i] not in "+-*/ ":
+        while i < l..(s) and s[i] n.. __ "+-*/ ":
           i += 1
         num = int(s[start:i])
-        queue.append(num)
-        while len(queue) > 2 and queue[-2] in "*/":
+        queue.a..(num)
+        while l..(queue) > 2 and queue[-2] __ "*/":
           b = queue.pop()
           ops = queue.pop()
           a = queue.pop()
-          __ ops == "*":
-            queue.append(a * b)
-          elif ops == "/":
-            queue.append(int(float(a) / b))
-          else:
-            return "invalid"
+          __ ops __ "*":
+            queue.a..(a * b)
+          ____ ops __ "/":
+            queue.a..(int(float(a) / b))
+          ____:
+            r.. "invalid"
     __ queue:
       a = queue.popleft()
-      while len(queue) >= 2:
+      while l..(queue) >= 2:
         ops = queue.popleft()
         b = queue.popleft()
-        __ ops == "+":
+        __ ops __ "+":
           a = a + b
-        elif ops == "-":
+        ____ ops __ "-":
           a = a - b
-      return a
-    return 0
+      r.. a
+    r.. 0

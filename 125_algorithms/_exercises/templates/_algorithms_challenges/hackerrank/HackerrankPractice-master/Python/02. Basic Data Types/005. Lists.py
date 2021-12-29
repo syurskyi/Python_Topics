@@ -3,16 +3,16 @@
 
 
 ___ handler(result):
-    inp = input().split()
+    inp = input().s..
     command = inp[0]
     values = inp[1:]
-    __ command == 'print':
+    __ command __ 'print':
         print(result)
-    else:
+    ____:
         execute = 'result.' + command + "(" + ",".join(values) + ")"
         eval(execute)
 
 
-result = []
-for i in range(int(input())):
+result    # list
+___ i __ r..(int(input())):
     handler(result)

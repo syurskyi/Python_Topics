@@ -26,9 +26,9 @@ class Solution(object):
         h = n+1
         while l < h:
             m = (l+h)/2
-            __ not isBadVersion(m):
+            __ n.. isBadVersion(m):
                 l = m+1
-            else:
+            ____:
                 h = m
 
-        return l
+        r.. l

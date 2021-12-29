@@ -18,16 +18,16 @@ ___ get_ordinal_suffix(number):
     last_two = number % 100
 
 
-    __ last_two in range(11,14):
-        return f"{number}th"
-    elif last_digit == 1:
-        return f"{number}st"
-    elif last_digit == 2:
-        return f"{number}nd"
-    elif last_digit == 3:
-        return f"{number}rd"
-    else:
-        return f"{number}th"
+    __ last_two __ r..(11,14):
+        r.. f"{number}th"
+    ____ last_digit __ 1:
+        r.. f"{number}st"
+    ____ last_digit __ 2:
+        r.. f"{number}nd"
+    ____ last_digit __ 3:
+        r.. f"{number}rd"
+    ____:
+        r.. f"{number}th"
 
 
 

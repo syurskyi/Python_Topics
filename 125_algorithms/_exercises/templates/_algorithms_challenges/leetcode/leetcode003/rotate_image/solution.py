@@ -2,13 +2,13 @@ class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
     ___ rotate(self, matrix):
-        n = len(matrix)
+        n = l..(matrix)
         # Layers
-        for i in range(n / 2):
+        ___ i __ r..(n / 2):
             # Each layer's index range
             start = i
             end = n - 1 - i
-            for j in range(start, end):
+            ___ j __ r..(start, end):
                 offset = j - start
                 top = matrix[start][j]
                 # Left to Top
@@ -19,4 +19,4 @@ class Solution:
                 matrix[end][end - offset] = matrix[j][end]
                 # Top to Right
                 matrix[j][end] = top
-        return matrix
+        r.. matrix

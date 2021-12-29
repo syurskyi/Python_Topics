@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-import bisect
+_______ bisect
 
 class RangeModule(object):
 
@@ -17,7 +17,7 @@ class RangeModule(object):
             __ self.X[i] != x:
                 self.X.insert(i, x)
                 self.track.insert(i, self.track[i-1])
-            return i
+            r.. i
         i = index(left)
         j = index(right)
         self.X[i:j] = [left]
@@ -39,7 +39,7 @@ class RangeModule(object):
         """
         i = bisect.bisect(self.X, left)-1
         j = bisect.bisect_left(self.X, right)
-        return all(self.track[i:j])
+        r.. a..(self.track[i:j])
 
     ___ removeRange(self, left, right):
         """
@@ -56,7 +56,7 @@ class Interval(object):
 
 class RangeModule_own(object):
     ___ __init__(self):
-        self.intervals = []
+        self.intervals    # list
 
     ___ addRange(self, left, right):
         """
@@ -65,17 +65,17 @@ class RangeModule_own(object):
         :rtype: void
         """
         newInterval = Interval(left, right)
-        res = []
-        for interval in self.intervals:
+        res    # list
+        ___ interval __ self.intervals:
             __ newInterval.right < interval.left:
-                res.append(newInterval)
+                res.a..(newInterval)
                 newInterval = interval
-            elif interval.right < newInterval.left:
-                res.append(interval)
-            else:
-                newInterval = Interval(min(interval.left, newInterval.left),\
+            ____ interval.right < newInterval.left:
+                res.a..(interval)
+            ____:
+                newInterval = Interval(m..(interval.left, newInterval.left),\
                                     max(interval.right, newInterval.right))
-        res.append(newInterval)
+        res.a..(newInterval)
         self.intervals = res
 
     ___ queryRange(self, left, right):
@@ -85,17 +85,17 @@ class RangeModule_own(object):
         :rtype: bool
         """
         newInterval = Interval(left, right)
-        l, r = 0, len(self.intervals)-1
+        l, r = 0, l..(self.intervals)-1
         while l <= r:
             mid = (l+r)//2
             __ self.intervals[mid].left >= newInterval.right:
                 r = mid-1
-            elif self.intervals[mid].right <= newInterval.left:
+            ____ self.intervals[mid].right <= newInterval.left:
                 l = mid+1
-            else:
-                return self.intervals[mid].left <= newInterval.left and\
+            ____:
+                r.. self.intervals[mid].left <= newInterval.left and\
                     self.intervals[mid].right >= newInterval.right
-        return False
+        r.. False
 
     ___ removeRange(self, left, right):
         """
@@ -104,28 +104,28 @@ class RangeModule_own(object):
         :rtype: void
         """
         newInterval = Interval(left, right)
-        res = []
-        for interval in self.intervals:
+        res    # list
+        ___ interval __ self.intervals:
             __ newInterval.right >= interval.right and newInterval.left <= interval.left:
                 continue
-            elif newInterval.right <= interval.right and newInterval.left >= interval.left:
+            ____ newInterval.right <= interval.right and newInterval.left >= interval.left:
                 __ interval.left != newInterval.left:
-                    res.append(Interval(interval.left, newInterval.left))
+                    res.a..(Interval(interval.left, newInterval.left))
                 __ interval.right != newInterval.right:
-                    res.append(Interval(newInterval.right, interval.right))
-            elif newInterval.right <= interval.left or interval.right <= newInterval.left:
-                res.append(interval)
-            elif newInterval.right <= interval.right:
+                    res.a..(Interval(newInterval.right, interval.right))
+            ____ newInterval.right <= interval.left o. interval.right <= newInterval.left:
+                res.a..(interval)
+            ____ newInterval.right <= interval.right:
                 tmpInterval = Interval(newInterval.right, interval.right)
                 __ tmpInterval.left < tmpInterval.right:
-                    res.append(tmpInterval)
-            elif newInterval.left >= interval.left:
+                    res.a..(tmpInterval)
+            ____ newInterval.left >= interval.left:
                 tmpInterval = Interval(interval.left, newInterval.left)
                 __ tmpInterval.left < tmpInterval.right:
-                    res.append(tmpInterval)
+                    res.a..(tmpInterval)
         self.intervals = res
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 #     rangeModule = RangeModule()
 #     rangeModule.addRange(10, 20)
 #     rangeModule.removeRange(14, 16)

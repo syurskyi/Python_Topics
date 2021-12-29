@@ -20,8 +20,8 @@ class TreeNode(object):
         self.start = start
         self.end = end
         self.cnt = cnt
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class SegmentTree(object):
@@ -29,12 +29,12 @@ class SegmentTree(object):
         self.root = self.build(0, n)
 
     ___ build(self, start, end):
-        __ start >= end: return
-        __ start == end-1: return TreeNode(start, end)
+        __ start >= end: r..
+        __ start __ end-1: r.. TreeNode(start, end)
         node = TreeNode(start, end)
         node.left = self.build(start, (start+end)/2)
         node.right = self.build((start+end)/2, end)
-        return node
+        r.. node
 
     ___ inc(self, idx, val):
         cur = self.root
@@ -43,22 +43,22 @@ class SegmentTree(object):
             mid = (cur.start+cur.end)/2
             __ cur.start <= idx < mid:
                 cur = cur.left
-            elif mid <= idx < cur.end:
+            ____ mid <= idx < cur.end:
                 cur = cur.right
-            else:
-                return
+            ____:
+                r..
 
     ___ query_less(self, cur, idx):
-        __ not cur:
-            return 0
+        __ n.. cur:
+            r.. 0
 
         mid = (cur.start+cur.end)/2
         __ cur.start <= idx < mid:
-            return self.query_less(cur.left, idx)
-        elif mid <= idx < cur.end:
-            return (cur.left.cnt __ cur.left else 0) + self.query_less(cur.right, idx)
-        else:
-            return 0
+            r.. self.query_less(cur.left, idx)
+        ____ mid <= idx < cur.end:
+            r.. (cur.left.cnt __ cur.left ____ 0) + self.query_less(cur.right, idx)
+        ____:
+            r.. 0
 
 
 class Solution(object):
@@ -72,20 +72,20 @@ class Solution(object):
         """
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
         h = {}
-        for i, v in enumerate(sorted(nums)):
+        ___ i, v __ enumerate(s..(nums)):
             h[v] = i  # override duplicates
 
-        A = [h[v] for v in nums]
-        n = len(A)
+        A = [h[v] ___ v __ nums]
+        n = l..(A)
         st = SegmentTree(n)
-        ret = []
-        for i in xrange(n-1, -1, -1):
-            ret.append(st.query_less(st.root, A[i]))
+        ret    # list
+        ___ i __ xrange(n-1, -1, -1):
+            ret.a..(st.query_less(st.root, A[i]))
             st.inc(A[i], 1)
 
-        return ret[::-1]
+        r.. ret[::-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().countSmaller([5, 2, 6, 1]) == [2, 1, 1, 0]
-    assert Solution().countSmaller([-1, -1]) == [0, 0]
+__ __name__ __ "__main__":
+    ... Solution().countSmaller([5, 2, 6, 1]) __ [2, 1, 1, 0]
+    ... Solution().countSmaller([-1, -1]) __ [0, 0]

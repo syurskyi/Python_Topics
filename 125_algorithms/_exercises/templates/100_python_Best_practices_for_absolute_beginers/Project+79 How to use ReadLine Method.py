@@ -3,7 +3,7 @@ data  []
 
 i  fp.readline()
 w___ i ! '':
-    data.append(i)
+    data.a..(i)
     i  fp.readline()
 fp.close()
 print(data)

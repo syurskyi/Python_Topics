@@ -1,20 +1,20 @@
 ___ binary_search(sequence, target):
 
 
-    low,high = 0,len(sequence) - 1
+    low,high = 0,l..(sequence) - 1
 
 
     while low <= high:
         mid = (low + high)//2
 
 
-        __ sequence[mid] == target:
-            return mid
+        __ sequence[mid] __ target:
+            r.. mid
 
 
         __ sequence[mid] < target:
             low = mid + 1
-        else:
+        ____:
             high =mid - 1
 
 

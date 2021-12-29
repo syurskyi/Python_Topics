@@ -1,6 +1,6 @@
 ___ freq_digit(num: int) -> int:
-    templist = [int(i) for i in str(num)]
-    return max(templist, key = templist.count)
+    templist = [int(i) ___ i __ str(num)]
+    r.. max(templist, key = templist.count)
 
 
 

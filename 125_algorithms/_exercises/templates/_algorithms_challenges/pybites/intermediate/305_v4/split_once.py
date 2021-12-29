@@ -1,23 +1,23 @@
-from typing import List
-import string
+____ typing _______ List
+_______ string
 
 
-___ split_once(text: str, separators: str = None) -> List[str]:
+___ split_once(text: str, separators: str = N..) -> List[str]:
     print(f'{text=}')
-    __ separators is None:
+    __ separators __ N..
         separators = string.whitespace
 
 
-    indices = [text.index(sep) for sep in separators __ sep in text]
+    indices = [text.index(sep) ___ sep __ separators __ sep __ text]
 
     __ indices:
-        indices = sorted(indices)
-        split = []
+        indices = s..(indices)
+        split    # list
         last_index = 0
-        for index in indices:
-            split.append(text[last_index:index])
+        ___ index __ indices:
+            split.a..(text[last_index:index])
             last_index = index + 1
-        split.append(text[last_index:])
-        return split
-    else:
-        return [text]
+        split.a..(text[last_index:])
+        r.. split
+    ____:
+        r.. [text]

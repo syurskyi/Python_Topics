@@ -1,10 +1,10 @@
 data = int(input())
-a = list(map(int,input().split()))
-for i in a:
-    store = []
+a = l..(map(int,input().split()))
+___ i __ a:
+    store    # list
     count = 0
-    while i not in store:
-        store.append(i)
+    while i n.. __ store:
+        store.a..(i)
         i = int(i)
         i = i**2
         i = int(i/100)

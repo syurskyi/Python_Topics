@@ -15,11 +15,11 @@ class Solution(object):
         testCases = [
             
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             print('arr: %s' % arr)
             result = self.maxChunksToSorted(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

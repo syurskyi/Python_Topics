@@ -31,8 +31,8 @@ Note:
 You may assume k is always valid, ie: k is always smaller than input array's
 size for non-empty array.
 """
-from typing import List
-import heapq
+____ typing _______ List
+_______ heapq
 
 
 class DualHeap:
@@ -41,8 +41,8 @@ class DualHeap:
         ---- number line --->
         --- max heap --- |  --- min heap ---
         """
-        self.max_h = []  # List[Tuple[comparator, num]]
-        self.min_h = []
+        self.max_h    # list  # List[Tuple[comparator, num]]
+        self.min_h    # list
         self.max_sz = 0
         self.min_sz = 0
         self.to_remove = set()  # value, error mapping index in nums
@@ -51,7 +51,7 @@ class DualHeap:
         __ self.max_h and num > self.max_h[0][1]:
             heapq.heappush(self.min_h, (num, num))
             self.min_sz += 1
-        else:
+        ____:
             heapq.heappush(self.max_h, (-num, num))
             self.max_sz += 1
         self.balance()
@@ -60,15 +60,15 @@ class DualHeap:
         self.to_remove.add(num)
         __ self.max_h and num > self.max_h[0][1]:
             self.min_sz -= 1
-        else:
+        ____:
             self.max_sz -= 1
         self.balance()
 
     ___ clean_top(self):
-        while self.max_h and self.max_h[0][1] in self.to_remove:
+        while self.max_h and self.max_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.max_h)
             self.to_remove.remove(num)
-        while self.min_h and self.min_h[0][1] in self.to_remove:
+        while self.min_h and self.min_h[0][1] __ self.to_remove:
             _, num = heapq.heappop(self.min_h)
             self.to_remove.remove(num)
 
@@ -91,10 +91,10 @@ class DualHeap:
 
     ___ get_median(self, k):
         self.clean_top()
-        __ k % 2 == 1:
-            return self.max_h[0][1]
-        else:
-            return 0.5 * (self.max_h[0][1] + self.min_h[0][1])
+        __ k % 2 __ 1:
+            r.. self.max_h[0][1]
+        ____:
+            r.. 0.5 * (self.max_h[0][1] + self.min_h[0][1])
 
 
 class Solution:
@@ -114,22 +114,22 @@ class Solution:
 
         Calculating median also doesn't care about index, it only cares about value
         """
-        ret = []
+        ret    # list
         dh = DualHeap()
-        for i in range(k):
+        ___ i __ r..(k):
             dh.insert(nums[i])
 
-        ret.append(dh.get_median(k))
+        ret.a..(dh.get_median(k))
 
-        for i in range(k, len(nums)):
+        ___ i __ r..(k, l..(nums)):
             dh.insert(nums[i])
             dh.pop(nums[i-k])
-            ret.append(dh.get_median(k))
+            ret.a..(dh.get_median(k))
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().medianSlidingWindow([-2147483648,-2147483648,2147483647,-2147483648,-2147483648,-2147483648,2147483647,2147483647,2147483647,2147483647,-2147483648,2147483647,-2147483648], 2)
-    assert Solution().medianSlidingWindow([1,1,1,1], 2) == [1, 1, 1]
-    assert Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 3) == [1,-1,-1,3,5,6]
+__ __name__ __ "__main__":
+    ... Solution().medianSlidingWindow([-2147483648,-2147483648,2147483647,-2147483648,-2147483648,-2147483648,2147483647,2147483647,2147483647,2147483647,-2147483648,2147483647,-2147483648], 2)
+    ... Solution().medianSlidingWindow([1,1,1,1], 2) __ [1, 1, 1]
+    ... Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 3) __ [1,-1,-1,3,5,6]

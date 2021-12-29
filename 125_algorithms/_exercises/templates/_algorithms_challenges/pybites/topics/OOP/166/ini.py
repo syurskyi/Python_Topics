@@ -1,4 +1,4 @@
-import configparser
+_______ configparser
 
 
 
@@ -14,23 +14,23 @@ class ToxIniParser:
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        return len(self.config.sections())
+        r.. l..(self.config.sections())
 
     @property
     ___ environments(self):
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
         clean_env = self.config['tox']['envlist'].replace('\n', ',')
-        return sorted([env.strip() for env in clean_env.split(',') __ len(env) > 0])
+        r.. s..([env.strip() ___ env __ clean_env.split(',') __ l..(env) > 0])
 
     @property
     ___ base_python_versions(self):
         """Return a list of all basepython across the ini file"""
         base_pys = set()
-        for key in self.config.keys():
-            __ 'basepython' in self.config[key]:
+        ___ key __ self.config.keys():
+            __ 'basepython' __ self.config[key]:
                 base_pys.add(self.config[key]['basepython'])
-        return list(base_pys)
+        r.. l..(base_pys)
 
 
 

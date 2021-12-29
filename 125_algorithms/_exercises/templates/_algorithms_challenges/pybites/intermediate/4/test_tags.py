@@ -1,4 +1,4 @@
-from tags import get_pybites_top_tags
+____ tags _______ get_pybites_top_tags
 
 
 ___ test_get_pybites_top_10_tags():
@@ -13,7 +13,7 @@ ___ test_get_pybites_top_10_tags():
                 ('code', 25),
                 ('github', 24)]
     actual = get_pybites_top_tags()
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_get_pybites_top_5_tags():
@@ -23,4 +23,4 @@ ___ test_get_pybites_top_5_tags():
                 ('twitter', 62),
                 ('tips', 61)]
     actual = get_pybites_top_tags(n=5)
-    assert actual == expected
+    ... actual __ expected

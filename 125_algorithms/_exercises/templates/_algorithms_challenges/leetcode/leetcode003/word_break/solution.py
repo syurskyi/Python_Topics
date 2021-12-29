@@ -16,15 +16,15 @@ class Solution(object):
         :type wordDict: Set[str]
         :rtype: bool
         """
-        n = len(s)
+        n = l..(s)
         # t[i] indicates s[:i + 1] is such a string
-        t = [False for i in range(n)]
-        for i in range(n):
-            __ s[:i + 1] in wordDict:
+        t = [False ___ i __ r..(n)]
+        ___ i __ r..(n):
+            __ s[:i + 1] __ wordDict:
                 t[i] = True
-            else:
-                for j in range(i):
-                    __ t[j] is True and s[j + 1:i + 1] in wordDict:
+            ____:
+                ___ j __ r..(i):
+                    __ t[j] __ True and s[j + 1:i + 1] __ wordDict:
                         t[i] = True
                         break
-        return t[-1]
+        r.. t[-1]

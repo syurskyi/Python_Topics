@@ -15,14 +15,14 @@ class ZigzagIterator(object):
                 val = self.vec[self.pointer][0]
                 self.vec[self.pointer].pop()
                 self.pointer += 1
-                __ self.pointer >= len(self.vec):
+                __ self.pointer >= l..(self.vec):
                     self.pointer = 0
-                return val
-            else:
+                r.. val
+            ____:
                 self.pointer += 1
-                __ self.pointer >= len(self.vec):
+                __ self.pointer >= l..(self.vec):
                     self.pointer = 0
-        return None
+        r.. N..
     
     ___ hasNext(self):
-        return any([x != [] for x in self.vec])
+        r.. any([x !   # list ___ x __ self.vec])

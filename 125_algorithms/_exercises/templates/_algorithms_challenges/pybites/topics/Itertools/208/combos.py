@@ -1,4 +1,4 @@
-from itertools import combinations
+____ itertools _______ combinations
 
 """ def find_number_pairs(numbers, N=10):
     temp = []
@@ -9,6 +9,6 @@ from itertools import combinations
     return temp """
 
 ___ find_number_pairs(numbers, N=10):
-    return[(i,j) for i, j in combinations(numbers,2) __ i+j==N]
+    r..[(i,j) ___ i, j __ combinations(numbers,2) __ i+j__N]
 
 print(find_number_pairs([9, 1, 3, 8, 7]))

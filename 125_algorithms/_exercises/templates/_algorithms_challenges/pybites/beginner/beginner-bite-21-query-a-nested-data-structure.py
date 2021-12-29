@@ -54,36 +54,36 @@ cars = {
 ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models (original order)"""
     r = ', '.join(cars['Jeep'])
-    return r
+    r.. r
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    r = []
-    for key, value in cars.items():
-        r.append(value[0])
-    return r
+    r    # list
+    ___ key, value __ cars.items():
+        r.a..(value[0])
+    r.. r
 
 
 ___ get_all_matching_models(cars=cars, grep='trail'):
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    r = []
-    for key, value in cars.items():
-        for c in value:
-            __ grep.lower() in c.lower():
-                r.append(c)
+    r    # list
+    ___ key, value __ cars.items():
+        ___ c __ value:
+            __ grep.lower() __ c.lower():
+                r.a..(c)
     r.sort()
-    return r
+    r.. r
 
 
 
 
 ___ sort_car_models(cars=cars):
     """sort the car models (values)  and return the resulting cars dict"""
-    for key, value in cars.items():
+    ___ key, value __ cars.items():
         value.sort()
-    return cars
+    r.. cars
 
 get_all_jeeps(cars)
 get_first_model_each_manufacturer(cars)

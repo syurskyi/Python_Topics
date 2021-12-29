@@ -9,8 +9,8 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -19,14 +19,14 @@ class Solution(object):
         :param root: TreeNode
         :return: integer
         """
-        return self.fathom(root, 0)
+        r.. self.fathom(root, 0)
 
     ___ fathom(self, root, depth):
         """
         DFS
         """
-        __ not root: return depth
-        elif root.right and not root.left: return self.fathom(root.right, depth+1)
-        elif root.left and not root.right: return self.fathom(root.left, depth+1)
-        else: return min(self.fathom(root.left, depth+1),
+        __ n.. root: r.. depth
+        ____ root.right and n.. root.left: r.. self.fathom(root.right, depth+1)
+        ____ root.left and n.. root.right: r.. self.fathom(root.left, depth+1)
+        ____: r.. m..(self.fathom(root.left, depth+1),
                          self.fathom(root.right, depth+1))

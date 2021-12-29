@@ -11,18 +11,18 @@ class Solution(object):
         :rtype: int
         """
         nums1, nums2 = A, B
-        m, n = len(nums1), len(nums2)
+        m, n = l..(nums1), l..(nums2)
         maxLen = 0
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m+1):
-            for j in range(n+1):
-                __ i == 0 or j == 0:
+        dp = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m+1):
+            ___ j __ r..(n+1):
+                __ i __ 0 o. j __ 0:
                     dp[i][j] = 0
-                else:
-                    __ nums1[i-1] == nums2[j-1]:
+                ____:
+                    __ nums1[i-1] __ nums2[j-1]:
                         dp[i][j] = dp[i-1][j-1]+1
                         maxLen = max(maxLen, dp[i][j])
-        return maxLen
+        r.. maxLen
     
     ___ test(self):
         testCases = [
@@ -39,12 +39,12 @@ class Solution(object):
                 [1,0,0,0,0],
             ],
         ]
-        for nums1, nums2 in testCases:
+        ___ nums1, nums2 __ testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             result = self.findLength(nums1, nums2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

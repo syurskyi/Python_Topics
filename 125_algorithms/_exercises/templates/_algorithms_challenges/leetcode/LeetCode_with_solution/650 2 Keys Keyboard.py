@@ -40,12 +40,12 @@ class Solution:
         We need to copy 1 (* 2)
         """
         ret = 0
-        for i in range(2, n+1):
-            while n % i == 0:
+        ___ i __ r..(2, n+1):
+            while n % i __ 0:
                 ret += i
                 n //= i
 
-        return ret
+        r.. ret
 
     ___ minSteps_dp(self, n: int) -> int:
         """
@@ -57,27 +57,27 @@ class Solution:
         Better dp:
         F[i] = F[j] + j / i   # copy j / i times
         """
-        F = [[float('inf') for _ in range(n+1)] for _ in range(n+1)]
+        F = [[float('inf') ___ _ __ r..(n+1)] ___ _ __ r..(n+1)]
         F[1][0] = 0
         F[1][1] = 1
-        for i in range(2, n + 1):
-            for j in range(i+1):
-                F[i][j] = min(
+        ___ i __ r..(2, n + 1):
+            ___ j __ r..(i+1):
+                F[i][j] = m..(
                     F[i][j],
                     F[i-j][j] + 1,
                 )
-                __ i % 2 == 0:
-                    F[i][i//2] = min(
+                __ i % 2 __ 0:
+                    F[i][i//2] = m..(
                         F[i][i//2],
                         F[i//2][j] + 2
                     )
 
 
-        ret = min(F[n])
-        return ret
+        ret = m..(F[n])
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().minSteps(7) == 7
-    assert Solution().minSteps(3) == 3
-    assert Solution().minSteps(4) == 4
+__ __name__ __ "__main__":
+    ... Solution().minSteps(7) __ 7
+    ... Solution().minSteps(3) __ 3
+    ... Solution().minSteps(4) __ 4

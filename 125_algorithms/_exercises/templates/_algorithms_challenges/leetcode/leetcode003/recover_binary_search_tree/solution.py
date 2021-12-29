@@ -19,21 +19,21 @@ class Solution:
     # @param root, a tree node
     # @return a tree node
     ___ recoverTree(self, root):
-        self.prev = None
-        self.first = None
-        self.second = None
+        self.prev = N..
+        self.first = N..
+        self.second = N..
         self.traverse(root)
         self.first.val, self.second.val = self.second.val, self.first.val
-        return root
+        r.. root
 
     ___ traverse(self, root):
-        __ root is not None:
+        __ root __ n.. N..
             self.traverse(root.left)
-            __ self.prev is not None:
-                __ self.first is None and root.val < self.prev.val:
+            __ self.prev __ n.. N..
+                __ self.first __ N.. and root.val < self.prev.val:
                     self.first = self.prev
                     self.second = root
-                elif self.first is not None and root.val < self.prev.val:
+                ____ self.first __ n.. N.. and root.val < self.prev.val:
                     self.second = root
             self.prev = root
             self.traverse(root.right)

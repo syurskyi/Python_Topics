@@ -20,17 +20,17 @@ class Solution:
         :param numRows: integer
         :return: a list of lists of integers
         """
-        result = []
-        for row in xrange(numRows):
-            current = []
-            for col in xrange(row+1):
-                __ col==0 or col==row:
-                    current.append(1)
-                else:
-                    current.append(result[row-1][col-1]+result[row-1][col])
-            result.append(current)
+        result    # list
+        ___ row __ xrange(numRows):
+            current    # list
+            ___ col __ xrange(row+1):
+                __ col__0 o. col__row:
+                    current.a..(1)
+                ____:
+                    current.a..(result[row-1][col-1]+result[row-1][col])
+            result.a..(current)
 
-        return result
+        r.. result
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().generate(5)

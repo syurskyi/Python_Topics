@@ -33,13 +33,13 @@ Every node has value 0.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.covered = {None}
+        self.covered = {N..}
         self.cnt = 0
 
     ___ minCameraCover(self, root: TreeNode) -> int:
@@ -47,12 +47,12 @@ class Solution:
         Greedy?
         Bottom up, cover leaf's parent is strictly better than cover leaf
         """
-        self.dfs(root, None)
-        __ root not in self.covered:
+        self.dfs(root, N..)
+        __ root n.. __ self.covered:
             self.covered.add(root)
             self.cnt += 1
 
-        return self.cnt
+        r.. self.cnt
 
 
     ___ dfs(self, node, pi):
@@ -60,12 +60,12 @@ class Solution:
         post order
         rely on the parents to cover it 
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         self.dfs(node.left, node)
         self.dfs(node.right, node)
-        __ node.left not in self.covered or node.right not in self.covered:
+        __ node.left n.. __ self.covered o. node.right n.. __ self.covered:
             self.cnt += 1
             self.covered.add(node.left)
             self.covered.add(node.right)
@@ -87,21 +87,21 @@ class SolutionErrror:
         dummy.left = root
         self.dfs(root, dummy)
         self.covered.discard(dummy)  # swallow KeyError
-        return len(self.covered)
+        r.. l..(self.covered)
 
     ___ dfs(self, node, pi):
         """
         post order
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         self.dfs(node.left, node)
         self.dfs(node.right, node)
         # post oder
         __ (
-            (not node.left or node.left in self.covered) and
-            (not node.right or node.right in self.covered)
+            (n.. node.left o. node.left __ self.covered) and
+            (n.. node.right o. node.right __ self.covered)
         ):
             self.covered.add(pi)
-            return
+            r..

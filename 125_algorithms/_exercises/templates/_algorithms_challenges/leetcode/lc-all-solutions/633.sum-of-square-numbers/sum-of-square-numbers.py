@@ -9,10 +9,10 @@ class Solution(object):
     end = n
     while start <= end:
       mid = start ** 2 + end ** 2
-      __ mid == c:
-        return True
-      elif mid < c:
+      __ mid __ c:
+        r.. True
+      ____ mid < c:
         start += 1
-      else:
+      ____:
         end -= 1
-    return False
+    r.. False

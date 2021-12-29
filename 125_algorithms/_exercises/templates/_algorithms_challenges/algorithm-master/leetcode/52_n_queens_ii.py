@@ -7,22 +7,22 @@ class Solution:
         Xs = set()
         DLs = set()  # left diagonal lines
         DRs = set()  # right diagonal lines
-        return self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
+        r.. self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
     ___ divide_conquer(self, n, y, cnt, Xs, DLs, DRs):
-        for x in range(n):
-            __ x in Xs:
+        ___ x __ r..(n):
+            __ x __ Xs:
                 continue
 
             dl = x - y
-            __ dl in DLs:
+            __ dl __ DLs:
                 continue
 
             dr = x + y
-            __ dr in DRs:
+            __ dr __ DRs:
                 continue
 
-            __ y == n - 1:
+            __ y __ n - 1:
                 cnt += 1
                 continue
 
@@ -34,4 +34,4 @@ class Solution:
             DLs.discard(dl)
             DRs.discard(dr)
 
-        return cnt
+        r.. cnt

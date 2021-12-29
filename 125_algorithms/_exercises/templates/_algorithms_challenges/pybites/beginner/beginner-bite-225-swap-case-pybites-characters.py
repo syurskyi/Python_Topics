@@ -18,20 +18,20 @@ ___ convert_pybites_chars(text):
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
     output = ''
-    for char in text:
-        __ char.lower() in PYBITES:
+    ___ char __ text:
+        __ char.lower() __ PYBITES:
             __ char.isupper():
                 output += output.join(char.lower())
-            else:
+            ____:
                 output += output.join(char.upper())
-        else:
+        ____:
             output += output.join(char)
-    return output
+    r.. output
 
 ___ convert_pybites_chars_pybites_solution(text):
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
-    return ''.join(c.swapcase() __ c.lower() in PYBITES else c
-                   for c in text)
+    r.. ''.join(c.swapcase() __ c.lower() __ PYBITES ____ c
+                   ___ c __ text)
 
 print(convert_pybites_chars(t))

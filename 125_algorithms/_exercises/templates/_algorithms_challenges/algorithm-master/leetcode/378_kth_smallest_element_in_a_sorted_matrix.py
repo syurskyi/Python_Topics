@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+____ heapq _______ heappop, heappush
 
 
 class Solution:
@@ -8,22 +8,22 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        __ not G or not G[0]:
-            return 0
+        __ n.. G o. n.. G[0]:
+            r.. 0
 
-        heap = []
+        heap    # list
 
-        for x in range(len(G)):
+        ___ x __ r..(l..(G)):
             heappush(heap, (G[x][0], x, 0))
 
         while heap:
             a, x, y = heappop(heap)
 
             k -= 1
-            __ k == 0:
-                return a
+            __ k __ 0:
+                r.. a
 
-            __ y + 1 < len(G[x]):
+            __ y + 1 < l..(G[x]):
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
-        return 0
+        r.. 0

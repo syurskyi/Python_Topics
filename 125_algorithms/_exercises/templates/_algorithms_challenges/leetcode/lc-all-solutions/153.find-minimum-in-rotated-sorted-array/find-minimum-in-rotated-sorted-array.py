@@ -4,11 +4,11 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    start, end, mid = 0, len(nums) - 1, 0
+    start, end, mid = 0, l..(nums) - 1, 0
     while start + 1 < end:
       mid = start + (end - start) / 2
       __ nums[start] <= nums[mid]:
         start = mid
-      else:
+      ____:
         end = mid
-    return min(nums[0], nums[start], nums[end])
+    r.. m..(nums[0], nums[start], nums[end])

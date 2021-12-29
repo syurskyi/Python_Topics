@@ -11,20 +11,20 @@ class Solution(object):
         :type S: int
         :rtype: int
         """
-        sumVal = sum(nums)
-        __ sumVal < S or (sumVal+S)%2 != 0:
-            return 0
+        sumVal = s..(nums)
+        __ sumVal < S o. (sumVal+S)%2 != 0:
+            r.. 0
         target = (sumVal+S)//2
-        return self.helper(nums, target)
+        r.. self.helper(nums, target)
     
     ___ helper(self, nums, target):
         dp = [0]*(target+1)
         dp[0] = 1
-        for num in nums:
-            for i in range(target, -1, -1):
+        ___ num __ nums:
+            ___ i __ r..(target, -1, -1):
                 __ i >= num:
                     dp[i] += dp[i-num]
-        return dp[-1]
+        r.. dp[-1]
     
     ___ test(self):
         testCases = [
@@ -37,12 +37,12 @@ class Solution(object):
                 1000000000,
             ],
         ]
-        for nums, S in testCases:
+        ___ nums, S __ testCases:
             print('nums: %s' % nums)
             print('S: %s' % S)
             result = self.findTargetSumWays(nums, S)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

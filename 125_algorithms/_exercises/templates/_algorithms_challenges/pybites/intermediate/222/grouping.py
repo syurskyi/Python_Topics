@@ -1,5 +1,5 @@
-import types
-from itertools import islice
+_______ types
+____ itertools _______ islice
 
 
 ___ group(iterable, n):
@@ -16,17 +16,17 @@ ___ group(iterable, n):
                where each group is a list of n elements.
     """
 
-    __ not isinstance(iterable, types.GeneratorType):
-      input = (ele for ele in iterable)
-    else:
+    __ n.. isi..(iterable, types.GeneratorType):
+      input = (ele ___ ele __ iterable)
+    ____:
       input = iterable
 
-    result = []
+    result    # list
     while True:
-      section = list(islice(input, n))
+      section = l..(islice(input, n))
       __ section:
-        result.append(section)
-      else:
+        result.a..(section)
+      ____:
         break
 
-    return result
+    r.. result

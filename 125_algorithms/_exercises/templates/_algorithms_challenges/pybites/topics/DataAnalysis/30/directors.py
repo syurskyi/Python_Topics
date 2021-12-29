@@ -1,7 +1,7 @@
-import csv
-from collections import defaultdict, namedtuple
-import os
-from urllib.request import urlretrieve
+_______ csv
+____ collections _______ defaultdict, namedtuple
+_______ os
+____ urllib.request _______ urlretrieve
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = os.getenv("TMP", "/tmp")
@@ -22,27 +22,27 @@ ___ get_movies_by_director():
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    director = defaultdict(list)
+    director = defaultdict(l..)
     with open(local, encoding="utf-8") as f:
         movies = csv.DictReader(f)
-        for movie in movies:
+        ___ movie __ movies:
             __ movie['title_year'] != '' and int(movie['title_year']) > 1960:
-                director[movie['director_name']].append(
+                director[movie['director_name']].a..(
                     Movie(
                         movie['movie_title'].strip(),
                         movie['title_year'], 
                         movie['imdb_score'])
                 )
-    return director
+    r.. director
 
 
 ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     total = 0
-    for movie in movies:
+    ___ movie __ movies:
         total += float(movie[2])
-    return round(total/len(movies), 1)
+    r.. round(total/l..(movies), 1)
 
 
 ___ get_average_scores(directors):
@@ -51,16 +51,16 @@ ___ get_average_scores(directors):
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
     #print(len(directors))
-    local_list = []
-    for director in directors:
-        __ len(directors[director]) >= MIN_MOVIES: # each director
+    local_list    # list
+    ___ director __ directors:
+        __ l..(directors[director]) >= MIN_MOVIES: # each director
             total = 0
-            for i in range(len(directors[director])): 
+            ___ i __ r..(l..(directors[director])):
                 #print(director, int(directors[director][i][1]))
                 __ directors[director][i][1] and int(directors[director][i][1]) >1960:
                     total += float(directors[director][i][2])
-            local_list.append((director, round(total/len(directors[director]),1)))
-    return sorted(local_list, key=lambda x: x[1], reverse=True)
+            local_list.a..((director, round(total/l..(directors[director]),1)))
+    r.. s..(local_list, key=l.... x: x[1], r.._T..
 
 
 director_dict = get_movies_by_director()

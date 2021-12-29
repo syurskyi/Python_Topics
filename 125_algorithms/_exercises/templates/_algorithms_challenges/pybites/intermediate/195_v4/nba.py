@@ -1,18 +1,18 @@
-from collections import namedtuple
-import csv
-import os
-from pathlib import Path
-import sqlite3
-import random
-import string
+____ collections _______ namedtuple
+_______ csv
+_______ os
+____ pathlib _______ Path
+_______ sqlite3
+_______ random
+_______ string
 
-import requests
+_______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 salt = ''.join(
-    random.choice(string.ascii_lowercase) for i in range(20)
+    random.choice(string.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 
@@ -29,9 +29,9 @@ ___ import_data():
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
-    players = []
-    for row in reader:
-        players.append(Player(name=row['Player'],
+    players    # list
+    ___ row __ reader:
+        players.a..(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],
                               team=row['Team'],
@@ -48,7 +48,7 @@ ___ import_data():
     conn.commit()
 
 
-__ DB.stat().st_size == 0:
+__ DB.stat().st_size __ 0:
     print('loading data')
     import_data()
 
@@ -58,7 +58,7 @@ __ DB.stat().st_size == 0:
 ___ player_with_max_points_per_game():
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    return list(cur.execute('''SELECT name
+    r.. l..(cur.execute('''SELECT name
                                from players
                                where CAST(avg_points as numeric) =
                                (SELECT max(CAST(avg_points as numeric))
@@ -67,7 +67,7 @@ ___ player_with_max_points_per_game():
 
 ___ number_of_players_from_duke():
     """Return the number of players with college == Duke University"""
-    return len(tuple(cur.execute('''SELECT name
+    r.. l..(tuple(cur.execute('''SELECT name
                                   from players
                                   where college="Duke University"''')))
 
@@ -78,7 +78,7 @@ ___ avg_years_active_players_stanford():
     average = tuple(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
                                  where college="Stanford University"'''))[0][0]
-    return round(average, 2)
+    r.. round(average, 2)
 
 
 ___ year_with_most_drafts():
@@ -87,4 +87,4 @@ ___ year_with_most_drafts():
                                 from players
                                 GROUP BY year
                                 ORDER BY COUNT(year)'''))
-    return drafts[-1][0]
+    r.. drafts[-1][0]

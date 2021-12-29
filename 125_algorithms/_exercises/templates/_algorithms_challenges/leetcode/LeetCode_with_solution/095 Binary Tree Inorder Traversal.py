@@ -20,8 +20,8 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -29,26 +29,26 @@ class Solution(object):
         """
         Morris Traversal
         """
-        ret = []
+        ret    # list
         cur = root
         while cur:
-            __ not cur.left:
-                ret.append(cur.val)
+            __ n.. cur.left:
+                ret.a..(cur.val)
                 cur = cur.right
-            else:
+            ____:
                 pre = cur.left
                 while pre.right and pre.right != cur:
                     pre = pre.right
 
-                __ not pre.right:
+                __ n.. pre.right:
                     pre.right = cur
                     cur = cur.left
-                else:
-                    pre.right = None
-                    ret.append(cur.val)
+                ____:
+                    pre.right = N..
+                    ret.a..(cur.val)
                     cur = cur.right
 
-        return ret
+        r.. ret
 
     ___ inorderTraversal_memory(self, root):
         """
@@ -56,18 +56,18 @@ class Solution(object):
         :param root:
         :return: a list of integers
         """
-        lst = []
+        lst    # list
         self.inorderTraverse_itr(root, lst)
-        return lst
+        r.. lst
 
     ___ inorderTraverse(self, root, lst):
         """
         In order traverse
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
         self.inorderTraverse(root.left, lst)
-        lst.append(root.val)
+        lst.a..(root.val)
         self.inorderTraverse(root.right, lst)
 
     ___ inorderTraverse_itr(self, root, lst):
@@ -82,17 +82,17 @@ class Solution(object):
         :param lst:
         :return:
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         cur = root
-        stk = []
-        while stk or cur:
+        stk    # list
+        while stk o. cur:
             while cur:
-                stk.append(cur)
+                stk.a..(cur)
                 cur = cur.left
             cur = stk.pop()  # left_most
-            lst.append(cur.val)
+            lst.a..(cur.val)
             cur = cur.right
             # if cur.right:  # should go to next iteration
             #     cur = cur.right

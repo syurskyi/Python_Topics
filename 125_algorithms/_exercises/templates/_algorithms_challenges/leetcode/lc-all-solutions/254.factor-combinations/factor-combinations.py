@@ -4,24 +4,24 @@ class Solution(object):
     :type n: int
     :rtype: List[List[int]]
     """
-    res = []
+    res    # list
     self.dfsHelper(n, res, [], 2)
-    return res[1:]
+    r.. res[1:]
 
   ___ dfsHelper(self, n, res, path, start):
-    __ len(path) > 1 and path[-2] > path[-1]:
-      return
+    __ l..(path) > 1 and path[-2] > path[-1]:
+      r..
 
-    __ n == 1:
-      res.append(path + [])
-      return
+    __ n __ 1:
+      res.a..(path + [])
+      r..
 
-    path.append(n)
+    path.a..(n)
     self.dfsHelper(n / n, res, path, n)
     path.pop()
 
-    for i in range(start, int(n ** 0.5) + 1):
-      __ n % i == 0:
-        path.append(i)
+    ___ i __ r..(start, int(n ** 0.5) + 1):
+      __ n % i __ 0:
+        path.a..(i)
         self.dfsHelper(n / i, res, path, i)
         path.pop()

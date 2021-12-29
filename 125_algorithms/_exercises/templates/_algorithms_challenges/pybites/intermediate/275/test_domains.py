@@ -1,19 +1,19 @@
-import pytest
+_______ pytest
 
-from domains import get_common_domains, get_most_common_domains
+____ domains _______ get_common_domains, get_most_common_domains
 
 
 @pytest.fixture(scope="module")
 ___ common_domains():
-    return list(get_common_domains())
+    r.. l..(get_common_domains())
 
 
 ___ test_get_common_domains(common_domains):
-    assert len(common_domains) == 100
+    ... l..(common_domains) __ 100
     first_3 = ['gmail.com', 'yahoo.com', 'hotmail.com']
     last_3 = ['live.ca', 'aim.com', 'bigpond.net.au']
-    assert common_domains[:3] == first_3
-    assert common_domains[-3:] == last_3
+    ... common_domains[:3] __ first_3
+    ... common_domains[-3:] __ last_3
 
 
 @pytest.mark.parametrize("emails, expected", [
@@ -28,4 +28,4 @@ ___ test_get_common_domains(common_domains):
      [('somedomain.com', 3), ('gmail.es', 1)]),
 ])
 ___ test_get_most_common_domains(common_domains, emails, expected):
-    assert get_most_common_domains(emails, common_domains) == expected
+    ... get_most_common_domains(emails, common_domains) __ expected

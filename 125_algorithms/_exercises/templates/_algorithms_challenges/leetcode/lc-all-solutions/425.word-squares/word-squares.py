@@ -6,28 +6,28 @@ class Solution(object):
     """
 
     ___ dfs(path, res, m, prefix):
-      __ len(path) == m:
-        res.append(path + [])
-        return
+      __ l..(path) __ m:
+        res.a..(path + [])
+        r..
 
-      for word in prefix["".join(zip(*path)[len(path)])]:
-        path.append(word)
+      ___ word __ prefix["".join(zip(*path)[l..(path)])]:
+        path.a..(word)
         dfs(path, res, m, prefix)
         path.pop()
 
-    __ not words:
-      return []
+    __ n.. words:
+      r.. []
 
-    prefix = collections.defaultdict(list)
-    for word in words:
-      for i in range(0, len(word)):
-        prefix[word[:i]].append(word)
+    prefix = collections.defaultdict(l..)
+    ___ word __ words:
+      ___ i __ r..(0, l..(word)):
+        prefix[word[:i]].a..(word)
 
-    m = len(words[0])
-    res = []
-    path = []
-    for word in words:
-      path.append(word)
+    m = l..(words[0])
+    res    # list
+    path    # list
+    ___ word __ words:
+      path.a..(word)
       dfs(path, res, m, prefix)
       path.pop()
-    return res
+    r.. res

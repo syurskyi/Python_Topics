@@ -23,18 +23,18 @@ class Solution:
         :param A: list
         :return: "shrunk" list
         """
-        length = len(A)
+        length = l..(A)
 
         # trivial
-        __ length==0 or length==1:
-            return length
+        __ length__0 o. length__1:
+            r.. length
 
         # closed pointer, open pointer
         closed_ptr = 0
         open_ptr = 1
         while open_ptr<length:
             # find the next non-duplicate:
-            __ A[closed_ptr]==A[open_ptr]:
+            __ A[closed_ptr]__A[open_ptr]:
                 open_ptr += 1
                 continue  # go to the next iteration
 
@@ -42,7 +42,7 @@ class Solution:
             A[closed_ptr+1] = non_duplicate
             closed_ptr += 1
 
-        return closed_ptr+1 # length is index+1
+        r.. closed_ptr+1 # length is index+1
 
     ___ removeDuplicates_another_loop_style(self, A):
         """
@@ -50,15 +50,15 @@ class Solution:
         :param A: list
         :return: "shrunk" list
         """
-        length = len(A)
+        length = l..(A)
 
-        __ length==0 or length==1:
-            return length
+        __ length__0 o. length__1:
+            r.. length
 
         closed_ptr = 0
         open_ptr = 1
         while open_ptr<length:
-            while open_ptr<length and A[closed_ptr]==A[open_ptr]:
+            while open_ptr<length and A[closed_ptr]__A[open_ptr]:
                 open_ptr += 1
 
             __ open_ptr<length:
@@ -66,4 +66,4 @@ class Solution:
                 A[closed_ptr+1] = non_duplicate
                 closed_ptr += 1
 
-        return closed_ptr+1 # length is index+1
+        r.. closed_ptr+1 # length is index+1

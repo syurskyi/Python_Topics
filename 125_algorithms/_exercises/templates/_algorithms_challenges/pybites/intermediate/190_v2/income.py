@@ -1,14 +1,14 @@
-import os
-from pathlib import Path
-from collections import defaultdict
-from urllib.request import urlretrieve
-from bs4 import BeautifulSoup
+_______ os
+____ pathlib _______ Path
+____ collections _______ defaultdict
+____ urllib.request _______ urlretrieve
+____ bs4 _______ BeautifulSoup
 
 # import the countries xml file
 tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
-__ not countries.exists():
+__ n.. countries.exists():
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
@@ -27,16 +27,16 @@ ___ get_income_distribution(xml=countries):
         soup = BeautifulSoup(f.read())
 
     
-    income_to_countries = defaultdict(list)
+    income_to_countries = defaultdict(l..)
 
-    for country in soup.find_all("wb:country"):
+    ___ country __ soup.find_all("wb:country"):
         country_name = country.find('wb:name').getText()
         income = country.find('wb:incomelevel').getText()
-        income_to_countries[income].append(country_name)
+        income_to_countries[income].a..(country_name)
 
-    return income_to_countries
+    r.. income_to_countries
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     get_income_distribution()
 

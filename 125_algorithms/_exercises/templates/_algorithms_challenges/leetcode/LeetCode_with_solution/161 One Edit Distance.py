@@ -14,26 +14,26 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        m, n = len(s), len(t)
-        __ m > n: return self.isOneEditDistance(t, s)
-        __ n-m > 1: return False
+        m, n = l..(s), l..(t)
+        __ m > n: r.. self.isOneEditDistance(t, s)
+        __ n-m > 1: r.. False
 
         diff = 0
         i, j = 0, 0
         while i < m and j < n and diff < 2:
-            __ s[i] == t[j]:
+            __ s[i] __ t[j]:
                 i += 1
                 j += 1
-            else:
+            ____:
                 __ m != n:
                     j += 1  # delete
-                else:  # replace s[i]
+                ____:  # replace s[i]
                     i += 1
                     j += 1
 
                 diff += 1
 
-        return diff == 1 or diff == 0 and m != n
+        r.. diff __ 1 o. diff __ 0 and m != n
 
 
 class Solution1(object):
@@ -41,22 +41,22 @@ class Solution1(object):
         """
         Iterator version
         """
-        m, n = len(s), len(t)
-        __ m > n: return self.isOneEditDistance(t, s)
-        __ n-m > 1: return False
+        m, n = l..(s), l..(t)
+        __ m > n: r.. self.isOneEditDistance(t, s)
+        __ n-m > 1: r.. False
 
         diff = 0
         i, j = iter(s), iter(t)
-        a, b = next(i, None), next(j, None)
+        a, b = next(i, N..), next(j, N..)
         while a and b and diff < 2:
-            __ a == b:
-                a, b = next(i, None), next(j, None)
-            else:
+            __ a __ b:
+                a, b = next(i, N..), next(j, N..)
+            ____:
                 __ m != n:
-                    b = next(j, None)
-                else:
-                    a, b = next(i, None), next(j, None)
+                    b = next(j, N..)
+                ____:
+                    a, b = next(i, N..), next(j, N..)
 
                 diff += 1
 
-        return diff == 1 or diff == 0 and m != n
+        r.. diff __ 1 o. diff __ 0 and m != n

@@ -6,13 +6,13 @@ Created on Apr 23, 2017
 
 class Solution(object):
     ___ repeatedSubstringPattern(self, s):
-        n = len(s)
-        for i in range(1, n//2+2):
+        n = l..(s)
+        ___ i __ r..(1, n//2+2):
             sub = s[:i]
-            __ len(s)%len(sub) == 0:
+            __ l..(s)%l..(sub) __ 0:
                 j = i
-                while j+len(sub) <= n and s[j:j+len(sub)]==sub:
-                    j += len(sub)
-                    __ j == n:
-                        return True
-        return False
+                while j+l..(sub) <= n and s[j:j+l..(sub)]__sub:
+                    j += l..(sub)
+                    __ j __ n:
+                        r.. True
+        r.. False

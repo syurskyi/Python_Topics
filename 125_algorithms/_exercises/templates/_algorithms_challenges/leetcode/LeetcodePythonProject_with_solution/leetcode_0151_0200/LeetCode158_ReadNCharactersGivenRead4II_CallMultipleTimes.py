@@ -11,7 +11,7 @@ ___ read4(buf):
 
 class Solution(object):
     ___ __init__(self):
-        self.queue = []
+        self.queue    # list
     
     ___ read(self, buf, n):
         """
@@ -24,10 +24,10 @@ class Solution(object):
             buf4 = ['']*4
             read4(buf4)
             self.queue.extend(buf4)
-            curr = min(len(self.queue), n-idx)
-            for _ in range(curr):
+            curr = m..(l..(self.queue), n-idx)
+            ___ _ __ r..(curr):
                 buf[idx] = self.queue.pop(0)
                 idx += 1
-            __ curr == 0:
+            __ curr __ 0:
                 break
-        return idx
+        r.. idx

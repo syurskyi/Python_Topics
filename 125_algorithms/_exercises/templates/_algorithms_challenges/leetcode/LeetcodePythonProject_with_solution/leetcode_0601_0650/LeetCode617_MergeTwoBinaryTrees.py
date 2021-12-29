@@ -5,7 +5,7 @@ Created on Sep 7, 2017
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -18,32 +18,32 @@ class Solution(object):
         :rtype: TreeNode
         """
         root = TreeNode(-1)
-        __ t1 and not t2:
+        __ t1 and n.. t2:
             root.val = t1.val
             root.left = self.mergeTrees(t1.left, t2)
             root.right = self.mergeTrees(t1.right, t2)
-        elif not t1 and t2:
+        ____ n.. t1 and t2:
             root.val = t2.val
             root.left = self.mergeTrees(t1, t2.left)
             root.right = self.mergeTrees(t1, t2.right)
-        elif t1 and t2:
+        ____ t1 and t2:
             root.val = t1.val + t2.val
             root.left = self.mergeTrees(t1.left, t2.left)
             root.right = self.mergeTrees(t1.right, t2.right)
-        else:
-            root = None
-        return root
+        ____:
+            root = N..
+        r.. root
     
     ___ test(self):
         testCases = [
             [
                 TreeNode(1, TreeNode(3, TreeNode(5)), TreeNode(2)),
-                TreeNode(2, TreeNode(1, None, TreeNode(4)), TreeNode(3, None, TreeNode(7))),
+                TreeNode(2, TreeNode(1, N.., TreeNode(4)), TreeNode(3, N.., TreeNode(7))),
             ],
         ]
-        for t1, t2 in testCases:
+        ___ t1, t2 __ testCases:
             root = self.mergeTrees(t1, t2)
             print(root.val)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

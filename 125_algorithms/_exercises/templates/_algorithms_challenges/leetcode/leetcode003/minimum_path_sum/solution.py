@@ -9,17 +9,17 @@ class Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):
-        n = len(grid)
-        m = len(grid[0])
-        t = [[0 for i in range(m)] for j in range(n)]
-        for i in range(n):
-            for j in range(m):
-                __ i == 0 and j == 0:
+        n = l..(grid)
+        m = l..(grid[0])
+        t = [[0 ___ i __ r..(m)] ___ j __ r..(n)]
+        ___ i __ r..(n):
+            ___ j __ r..(m):
+                __ i __ 0 and j __ 0:
                     t[i][j] = grid[i][j]
-                elif i == 0:
+                ____ i __ 0:
                     t[i][j] = grid[i][j] + t[i][j - 1]
-                elif j == 0:
+                ____ j __ 0:
                     t[i][j] = grid[i][j] + t[i - 1][j]
-                else:
-                    t[i][j] = grid[i][j] + min(t[i - 1][j], t[i][j - 1])
-        return t[n - 1][m - 1]
+                ____:
+                    t[i][j] = grid[i][j] + m..(t[i - 1][j], t[i][j - 1])
+        r.. t[n - 1][m - 1]

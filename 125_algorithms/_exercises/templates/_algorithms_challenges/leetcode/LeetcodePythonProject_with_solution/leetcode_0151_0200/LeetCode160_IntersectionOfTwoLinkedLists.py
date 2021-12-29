@@ -17,7 +17,7 @@ class Solution(object):
         """
         lenA = self.getLength(headA)
         lenB = self.getLength(headB)
-        __ not lenA or not lenB: return None
+        __ n.. lenA o. n.. lenB: r.. N..
         __ lenA < lenB:
             headA, headB = headB, headA
         diff = abs(lenA-lenB)
@@ -25,15 +25,15 @@ class Solution(object):
             headA = headA.next
             diff -= 1
         while headA and headB:
-            __ headA == headB:
-                return headA
+            __ headA __ headB:
+                r.. headA
             headA = headA.next
             headB = headB.next
-        return None
+        r.. N..
     
     ___ getLength(self, head):
         length = 0
         while head:
             head = head.next
             length += 1
-        return length
+        r.. length

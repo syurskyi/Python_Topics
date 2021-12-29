@@ -1,12 +1,12 @@
-import random
-from collections import namedtuple
-from math import ceil
+_______ random
+____ collections _______ namedtuple
+____ math _______ ceil
 
 LETTER_A_CODE = 65
 
 ACTIONS = ['draw_card', 'play_again',
            'interchange_cards', 'change_turn_direction']
-NUMBERS = range(1, 5)
+NUMBERS = r..(1, 5)
 
 PawCard = namedtuple('PawCard', 'card action')
 
@@ -14,9 +14,9 @@ PawCard = namedtuple('PawCard', 'card action')
 ___ create_paw_deck(n=8):
     __ n > 26:
         raise ValueError('maximum of 26 suits')
-    deck = []
-    for suit in range(n):
-        deck.extend(f'{chr(LETTER_A_CODE + suit)}{x}' for x in NUMBERS)
-    actions = list((ACTIONS * ceil(n / 4))[:n]) + ([None] * 3 * n)
+    deck    # list
+    ___ suit __ r..(n):
+        deck.extend(f'{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)
+    actions = l..((ACTIONS * ceil(n / 4))[:n]) + ([N..] * 3 * n)
     random.shuffle(actions)
-    return [PawCard(card, action) for card, action in zip(deck, actions)]
+    r.. [PawCard(card, action) ___ card, action __ zip(deck, actions)]

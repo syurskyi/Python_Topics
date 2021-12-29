@@ -19,7 +19,7 @@ Note:
 1 <= A.length <= 5000
 0 <= A[i] <= 5000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -28,9 +28,9 @@ class Solution:
         pointer
         """
         closed = -1
-        for i in range(len(A)):
-            __ A[i] % 2 == 0:
+        ___ i __ r..(l..(A)):
+            __ A[i] % 2 __ 0:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]
 
-        return A
+        r.. A

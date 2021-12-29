@@ -1,9 +1,9 @@
 ___ factorize(num):
     index = 1
-    output = []
+    output    # list
     while index <= num:
-        __ num % index == 0:
-            output.append(index)
+        __ num % index __ 0:
+            output.a..(index)
         index = index + 1
-    return output
+    r.. output
 	

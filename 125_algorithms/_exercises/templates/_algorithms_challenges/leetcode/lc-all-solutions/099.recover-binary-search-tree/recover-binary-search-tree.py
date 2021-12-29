@@ -1,23 +1,23 @@
 class Solution:
   ___ __init__(self):
-    self.n1 = None
-    self.n2 = None
-    self.pre = None
+    self.n1 = N..
+    self.n2 = N..
+    self.pre = N..
 
   ___ findBadNode(self, root):
-    __ root is None: return
+    __ root __ N.. r..
     self.findBadNode(root.left)
-    __ self.pre is not None:
+    __ self.pre __ n.. N..
       __ root.val < self.pre.val:
-        __ self.n1 is None:
+        __ self.n1 __ N..
           self.n1 = self.pre
           self.n2 = root
-        else:
+        ____:
           self.n2 = root
     self.pre = root
     self.findBadNode(root.right)
 
   ___ recoverTree(self, root):
     self.findBadNode(root)
-    __ self.n1 is not None and self.n2 is not None:
+    __ self.n1 __ n.. N.. and self.n2 __ n.. N..
       self.n1.val, self.n2.val = self.n2.val, self.n1.val

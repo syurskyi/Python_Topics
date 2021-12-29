@@ -11,9 +11,9 @@ class Solution(object):
     :type root: TreeNode
     :rtype: TreeNode
     """
-    __ not root:
-      return
+    __ n.. root:
+      r..
     root.left, root.right = root.right, root.left
     self.invertTree(root.left)
     self.invertTree(root.right)
-    return root
+    r.. root

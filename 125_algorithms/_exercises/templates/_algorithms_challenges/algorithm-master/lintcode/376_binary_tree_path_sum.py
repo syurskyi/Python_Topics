@@ -14,19 +14,19 @@ class Solution:
     @return: all valid paths
     """
     ___ binaryTreePathSum(self, root, target):
-        ans = []
+        ans    # list
         self.dfs(root, target, ans, [])
-        return ans
+        r.. ans
 
     ___ dfs(self, node, remaining, ans, path):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        path.append(node.val)
+        path.a..(node.val)
 
         remaining -= node.val
-        __ remaining == 0 and not node.left and not node.right:
-            ans.append(path[:])
+        __ remaining __ 0 and n.. node.left and n.. node.right:
+            ans.a..(path[:])
 
         self.dfs(node.left, remaining, ans, path)
         self.dfs(node.right, remaining, ans, path)

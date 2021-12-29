@@ -2,26 +2,26 @@ class Solution:
 
     ___ longestPalindrome(self, s):
         result  ""
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             word1  self.checkPalindrome(s, i, i)
             word2  self.checkPalindrome(s, i, i + 1)
 
-            __ len(word1) > len(word2):
+            __ l..(word1) > l..(word2):
                 longest  word1
-            else:
+            ____:
                 longest  word2
 
-            __ len(longest) > len(result):
+            __ l..(longest) > l..(result):
                 result  longest
-            else:
+            ____:
                 result  result
 
-        return result
+        r.. result
 
     ___ checkPalindrome(self, s, left, right):
 
-        w___ left > 0 and right < len(s) and s[left] __ s[right]:
+        w___ left > 0 and right < l..(s) and s[left] __ s[right]:
             left - 1
             right + 1
 
-        return s[left + 1:right]
+        r.. s[left + 1:right]

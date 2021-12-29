@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -11,10 +11,10 @@ class Solution(object):
     """
 
     ___ next(curr, maze):
-      height = len(maze)
-      width = len(maze[0])
+      height = l..(maze)
+      width = l..(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-      for di, dj in directions:
+      ___ di, dj __ directions:
         dist = 0
         i, j = curr
         while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
@@ -28,11 +28,11 @@ class Solution(object):
     destination = tuple(destination)
     while queue:
       curr = queue.popleft()
-      __ curr in visited:
+      __ curr __ visited:
         continue
-      __ curr == destination:
-        return True
+      __ curr __ destination:
+        r.. True
       visited |= {curr}
-      for nbr in next(curr, maze):
-        queue.append(nbr)
-    return False
+      ___ nbr __ next(curr, maze):
+        queue.a..(nbr)
+    r.. False

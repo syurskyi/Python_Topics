@@ -13,13 +13,13 @@ ___ round_up_or_down(transactions, up=True):
        If up=True (default) ronud up, else round down.
        Return a new list of rounded values
     """
-    rounded = []
-    for f in transactions:
-        __ up == True:
+    rounded    # list
+    ___ f __ transactions:
+        __ up __ True:
             f = f + 1
         r = int(f)
-        rounded.append(r)
-    return rounded
+        rounded.a..(r)
+    r.. rounded
 
 
 l = [4.5, 3.2, 6.9]

@@ -5,32 +5,32 @@ start_num = input('Enter the starting string of the sequence:')
 
 #define the function of lookand say
 ___ look_and_say(data,maxlen):
-    result = []
+    result    # list
     #first iteration to iterate through given iterations by the user
-    for i in range(maxlen-1):
+    ___ i __ r..(maxlen-1):
         # defining the number of count of a particular character in the string
         count = 1
         #list to store the count of the character and the character
-        res_string = []
+        res_string    # list
         #Loop for traversing through the length of the given string
-        for k in range(0,len(data)):
+        ___ k __ r..(0,l..(data)):
             try:
                 #check if the next element is same as the previous element and update the count
-                __ data[k] == data[k+1]:
+                __ data[k] __ data[k+1]:
                     count += 1
-                else:
+                ____:
                     #if the next element is different then store the count as well as the character
-                    res_string.append(str(count) + data[k])
+                    res_string.a..(str(count) + data[k])
                     #reinitialize the count
                     count = 1
             except:
                 #if the loop has reached its last element then store the count of the character of last element.
-                __ k == len(data)-1:
-                    res_string.append(str(count) + data[k])
+                __ k __ l..(data)-1:
+                    res_string.a..(str(count) + data[k])
         #print the updated string with updated count
-        data = ''.join(str(e) for e in res_string)
-        result.append(data)
+        data = ''.join(str(e) ___ e __ res_string)
+        result.a..(data)
         #print(start_num)
-    return result
+    r.. result
 
 look_and_say(start_num,num_iter)

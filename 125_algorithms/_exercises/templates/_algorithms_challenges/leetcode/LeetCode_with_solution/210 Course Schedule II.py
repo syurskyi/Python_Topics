@@ -37,26 +37,26 @@ class Solution:
         :rtype: list[int]
         """
         V = {}
-        for i in xrange(numCourses):
-            V[i] = []
+        ___ i __ xrange(numCourses):
+            V[i]    # list
 
-        for edge in prerequisites:
-            V[edge[1]].append(edge[0])
+        ___ edge __ prerequisites:
+            V[edge[1]].a..(edge[0])
 
-        return self.topological_sort(V)
+        r.. self.topological_sort(V)
 
     ___ topological_sort(self, V):
         visited = set()
         marked = set()
-        ret = []
+        ret    # list
 
-        for k in V.keys():
-            __ k not in visited:
-                __ not self.dfs(V, k, visited, marked, ret):
-                    return []
+        ___ k __ V.keys():
+            __ k n.. __ visited:
+                __ n.. self.dfs(V, k, visited, marked, ret):
+                    r.. []
 
         ret.reverse()
-        return ret
+        r.. ret
 
     ___ dfs(self, V, k, visited, marked, ret):
         """
@@ -64,20 +64,20 @@ class Solution:
 
         :return: whether it is acyclic
         """
-        __ k in marked:
-            return False
+        __ k __ marked:
+            r.. False
 
         marked.add(k)
-        for neighbor in V[k]:
-            __ neighbor not in visited:
-                __ not self.dfs(V, neighbor, visited, marked, ret):
-                    return False
+        ___ neighbor __ V[k]:
+            __ neighbor n.. __ visited:
+                __ n.. self.dfs(V, neighbor, visited, marked, ret):
+                    r.. False
 
         marked.remove(k)
         visited.add(k)
-        ret.append(k)
-        return True
+        ret.a..(k)
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().findOrder(2, [[0, 1], [1, 0]]) == []
+__ __name__ __ "__main__":
+    ... Solution().findOrder(2, [[0, 1], [1, 0]]) __ []

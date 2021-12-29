@@ -10,39 +10,39 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ n == 0: return []
-        __ n == 1: return [0]
-        graph = [set() for _ in range(n)]
-        for e in edges:
+        __ n __ 0: r.. []
+        __ n __ 1: r.. [0]
+        graph = [set() ___ _ __ r..(n)]
+        ___ e __ edges:
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])
-        leaves = []
-        for i, nodes in enumerate(graph):
-            __ len(nodes) == 1:
-                leaves.append(i)
-        __ not leaves:
-            return []
+        leaves    # list
+        ___ i, nodes __ enumerate(graph):
+            __ l..(nodes) __ 1:
+                leaves.a..(i)
+        __ n.. leaves:
+            r.. []
         while n > 2:
-            n = n-len(leaves)
-            newLeaves = []
-            for leaf in leaves:
+            n = n-l..(leaves)
+            newLeaves    # list
+            ___ leaf __ leaves:
                 neighbor = graph[leaf].pop()
                 graph[neighbor].remove(leaf)
-                __ len(graph[neighbor]) == 1:
-                    newLeaves.append(neighbor)
+                __ l..(graph[neighbor]) __ 1:
+                    newLeaves.a..(neighbor)
             leaves = newLeaves
-        return leaves
+        r.. leaves
     
     ___ test(self):
         testCases = [
             (4, [[1, 0], [1, 2], [1, 3]]),
             (6, [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]),
         ]
-        for n, edges in testCases:
+        ___ n, edges __ testCases:
             print('edges: %s' % (edges))
             result = self.findMinHeightTrees(n, edges)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

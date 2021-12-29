@@ -13,9 +13,9 @@ class Solution:
     @return: buttom-up level order a list of lists of integer
     """
     ___ levelOrderBottom(self, root):
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
 
         preorder = [(root, 1)]
         self.dfs(root, ans, preorder, 0)
@@ -24,22 +24,22 @@ class Solution:
         cannot do append in dfs,
         since it may be the deepest node is at right child
         """
-        height = len(ans)
-        for node, level in preorder:
-            ans[height - level].append(node.val)
+        height = l..(ans)
+        ___ node, level __ preorder:
+            ans[height - level].a..(node.val)
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, ans, preorder, parent_at):
-        __ len(ans) < preorder[parent_at][1]:
-            ans.append([])
+        __ l..(ans) < preorder[parent_at][1]:
+            ans.a..([])
 
         depth = preorder[parent_at][1] + 1
 
         __ node.left:
-            preorder.append((node.left, depth))
-            self.dfs(node.left, ans, preorder, len(preorder) - 1)
+            preorder.a..((node.left, depth))
+            self.dfs(node.left, ans, preorder, l..(preorder) - 1)
 
         __ node.right:
-            preorder.append((node.right, depth))
-            self.dfs(node.right, ans, preorder, len(preorder) - 1)
+            preorder.a..((node.right, depth))
+            self.dfs(node.right, ans, preorder, l..(preorder) - 1)

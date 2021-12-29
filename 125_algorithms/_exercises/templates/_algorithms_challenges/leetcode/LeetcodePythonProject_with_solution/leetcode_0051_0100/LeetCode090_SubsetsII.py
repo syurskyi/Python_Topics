@@ -10,15 +10,15 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         nums.sort()
-        res = []
+        res    # list
         self.helper(nums, 0, [], res)
-        return res
+        r.. res
     
     ___ helper(self, nums, ind, curr, res):
-        res.append(list(curr))
-        for i in range(ind, len(nums)):
-            __ i > ind and nums[i] == nums[i-1]:
+        res.a..(l..(curr))
+        ___ i __ r..(ind, l..(nums)):
+            __ i > ind and nums[i] __ nums[i-1]:
                 continue
-            curr.append(nums[i])
+            curr.a..(nums[i])
             self.helper(nums, i+1, curr, res)
             curr.pop()

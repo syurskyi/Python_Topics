@@ -8,10 +8,10 @@ class Solution(object):
     """
 
     ___ next(curr, maze):
-      height = len(maze)
-      width = len(maze[0])
+      height = l..(maze)
+      width = l..(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-      for di, dj in directions:
+      ___ di, dj __ directions:
         dist = 0
         i, j = curr
         while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
@@ -25,12 +25,12 @@ class Solution(object):
     hole = tuple(hole)
     while heap:
       dist, curr = heapq.heappop(heap)
-      __ curr in visited:
+      __ curr __ visited:
         continue
       visited |= {curr}
-      __ curr == hole:
-        return dist
-      for pos, incDist in next(curr, maze):
+      __ curr __ hole:
+        r.. dist
+      ___ pos, incDist __ next(curr, maze):
         heapq.heappush(heap, (dist + incDist, pos))
 
-    return -1
+    r.. -1

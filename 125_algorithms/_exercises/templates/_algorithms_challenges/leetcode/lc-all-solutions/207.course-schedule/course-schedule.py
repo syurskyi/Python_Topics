@@ -8,24 +8,24 @@ class Solution(object):
 
     ___ dfs(start, parent, visited, graph):
       visited[start] = 1
-      for nbr in graph[start]:
-        __ visited[nbr] == 1:
-          return False
-        __ dfs(nbr, start, visited, graph) == False:
-          return False
+      ___ nbr __ graph[start]:
+        __ visited[nbr] __ 1:
+          r.. False
+        __ dfs(nbr, start, visited, graph) __ False:
+          r.. False
       visited[start] = 2
-      return True
+      r.. True
 
-    graph = [[] for _ in range(0, numCourses)]
-    for pre in prerequisites:
+    graph = [[] ___ _ __ r..(0, numCourses)]
+    ___ pre __ prerequisites:
       start, end = pre
-      graph[start].append(end)
+      graph[start].a..(end)
 
-    visited = [0 for _ in range(0, numCourses)]
+    visited = [0 ___ _ __ r..(0, numCourses)]
 
-    for pre in prerequisites:
+    ___ pre __ prerequisites:
       start, end = pre
-      __ visited[start] == 0:
-        __ dfs(start, None, visited, graph) == False:
-          return False
-    return True
+      __ visited[start] __ 0:
+        __ dfs(start, N.., visited, graph) __ False:
+          r.. False
+    r.. True

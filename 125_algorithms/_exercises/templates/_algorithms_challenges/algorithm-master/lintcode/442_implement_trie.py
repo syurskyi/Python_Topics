@@ -1,6 +1,6 @@
 class TrieNode:
     ___ __init__(self):
-        self.end_of = None
+        self.end_of = N..
         self.children = {}
 
 
@@ -13,13 +13,13 @@ class Trie:
     @return: nothing
     """
     ___ insert(self, word):
-        __ word __ None:
-            return
+        __ word __ N..
+            r..
 
         node = self.root
 
-        for c in word:
-            __ c not in node.children:
+        ___ c __ word:
+            __ c n.. __ node.children:
                 node.children[c] = TrieNode()
 
             node = node.children[c]
@@ -31,33 +31,33 @@ class Trie:
     @return: if the word is in the trie.
     """
     ___ search(self, word):
-        __ word __ None:
-            return False
+        __ word __ N..
+            r.. False
 
         node = self.root
 
-        for c in word:
-            __ c not in node.children:
-                return False
+        ___ c __ word:
+            __ c n.. __ node.children:
+                r.. False
 
             node = node.children[c]
 
-        return node.end_of == word
+        r.. node.end_of __ word
 
     """
     @param: prefix: A string
     @return: if there is any word in the trie that starts with the given prefix.
     """
     ___ startsWith(self, prefix):
-        __ prefix __ None:
-            return False
+        __ prefix __ N..
+            r.. False
 
         node = self.root
 
-        for c in prefix:
-            __ c not in node.children:
-                return False
+        ___ c __ prefix:
+            __ c n.. __ node.children:
+                r.. False
 
             node = node.children[c]
 
-        return True
+        r.. True

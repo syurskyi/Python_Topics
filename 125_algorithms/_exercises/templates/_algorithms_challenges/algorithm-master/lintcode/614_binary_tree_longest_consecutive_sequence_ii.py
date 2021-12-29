@@ -23,30 +23,30 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return self.divide_conquer(root)[0]
+        r.. self.divide_conquer(root)[0]
 
     ___ divide_conquer(self, node):
-        __ not node:
-            return 0, 0, 0
+        __ n.. node:
+            r.. 0, 0, 0
 
         size = 1
         up = down = 0
 
-        for branch in ('left', 'right'):
+        ___ branch __ ('left', 'right'):
             child = getattr(node, branch)
 
-            __ not child:
+            __ n.. child:
                 continue
 
             _size, _up, _down = self.divide_conquer(child)
 
-            __ child.val + 1 == node.val and _up + 1 > up:
+            __ child.val + 1 __ node.val and _up + 1 > up:
                 up = _up + 1
 
-            __ child.val - 1 == node.val and _down + 1 > down:
+            __ child.val - 1 __ node.val and _down + 1 > down:
                 down = _down + 1
 
             __ _size > size:
@@ -55,4 +55,4 @@ class Solution:
         __ up + down + 1 > size:
             size = up + down + 1
 
-        return size, up, down
+        r.. size, up, down

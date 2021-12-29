@@ -3,14 +3,14 @@ class Solution:
     # @param n, a integer
     # @return a float
     ___ pow(self, x, n):
-        __ n == 0:
-            return 1.0
-        elif n < 0:
-            return 1.0 / self.pow(x, -n)
-        else:
-            __ n % 2 == 0:
+        __ n __ 0:
+            r.. 1.0
+        ____ n < 0:
+            r.. 1.0 / self.pow(x, -n)
+        ____:
+            __ n % 2 __ 0:
                 r = self.pow(x, n / 2)
-                return r * r
-            else:
+                r.. r * r
+            ____:
                 r = self.pow(x, (n - 1) / 2)
-                return r * r * x
+                r.. r * r * x

@@ -5,16 +5,16 @@ class Solution(object):
     :rtype: int
     """
     first = second = third = float("-inf")
-    for num in nums:
-      __ num in [first, second, third]:
+    ___ num __ nums:
+      __ num __ [first, second, third]:
         continue
       __ num > first:
         third = second
         second = first
         first = num
-      elif num > second:
+      ____ num > second:
         third = second
         second = num
-      elif num > third:
+      ____ num > third:
         third = num
-    return third __ third != float("-inf") else first
+    r.. third __ third != float("-inf") ____ first

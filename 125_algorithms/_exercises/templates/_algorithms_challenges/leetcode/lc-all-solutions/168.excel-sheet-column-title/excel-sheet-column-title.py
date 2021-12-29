@@ -7,11 +7,11 @@ class Solution(object):
     ans = ""
     while n > 0:
       y = n % 26
-      __ y == 0:
+      __ y __ 0:
         char = "Z"
         n -= 26
-      else:
+      ____:
         char = chr(ord("A") + y - 1)
       ans += char
       n = n / 26
-    return ans[::-1]
+    r.. ans[::-1]

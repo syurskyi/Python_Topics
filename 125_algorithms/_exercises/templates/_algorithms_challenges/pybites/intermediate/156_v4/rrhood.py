@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 text = """
 Once upon a time, there was a little girl who lived in a village near the forest.  Whenever she went out, the little girl wore a red riding cloak, so everyone in the village called her Little Red Riding Hood.
@@ -54,14 +54,14 @@ ___ make_character_index(text=text, characters=CHARACTERS):
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    index = defaultdict(list)
+    index = defaultdict(l..)
 
-    for n, line in enumerate(text.lower().splitlines()):
-        for char in characters:
-            __ isinstance(char, tuple):
-                __ any(map(lambda c: c.lower() in line, char)):
-                    index[char[0].lower()].append(n)
-            else:
-                __ char.lower() in line:
-                    index[char.lower()].append(n)
-    return index
+    ___ n, line __ enumerate(text.lower().splitlines()):
+        ___ char __ characters:
+            __ isi..(char, tuple):
+                __ any(map(l.... c: c.lower() __ line, char)):
+                    index[char[0].lower()].a..(n)
+            ____:
+                __ char.lower() __ line:
+                    index[char.lower()].a..(n)
+    r.. index

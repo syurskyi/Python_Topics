@@ -1,8 +1,8 @@
 ___ pascal(p):
-    result = []
-    for i in range(p):
-        __ i == 0:
-            result.append([1])
-        else:
-            result.append([1] + [result[i - 1][j] + result[i - 1][j + 1] for j in range(len(result[i - 1]) - 1)] + [1])
-    return result
+    result    # list
+    ___ i __ r..(p):
+        __ i __ 0:
+            result.a..([1])
+        ____:
+            result.a..([1] + [result[i - 1][j] + result[i - 1][j + 1] ___ j __ r..(l..(result[i - 1]) - 1)] + [1])
+    r.. result

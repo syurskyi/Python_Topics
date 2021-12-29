@@ -14,23 +14,23 @@ class Solution:
     """
     ___ permutationIndexII(self, A):
         ans = 1
-        __ not A:
-            return ans
+        __ n.. A:
+            r.. ans
 
-        n = len(A)
+        n = l..(A)
         factorial = dup_fact = 1
         dups = {}
 
-        for i in range(n - 1, -1, -1):
+        ___ i __ r..(n - 1, -1, -1):
             dups[A[i]] = dups.get(A[i], 0) + 1
             dup_fact *= dups[A[i]]
 
             cnt = 0
-            for j in range(i + 1, n):
+            ___ j __ r..(i + 1, n):
                 __ A[i] > A[j]:
                     cnt += 1
 
             ans += cnt * factorial // dup_fact
             factorial *= n - i
 
-        return ans
+        r.. ans

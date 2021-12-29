@@ -30,31 +30,31 @@ class Solution(object):
         :return: an integer
         """
         __ s.startswith("0"):
-            return 0
+            r.. 0
 
-        n = len(s)
-        __ not s:
-            return 0
-        F = [0 for _ in xrange(n+1)]
+        n = l..(s)
+        __ n.. s:
+            r.. 0
+        F = [0 ___ _ __ xrange(n+1)]
         F[0] = 1
         F[1] = 1
 
-        for i in xrange(2, n+1):
+        ___ i __ xrange(2, n+1):
             __ s[i-1] != "0":
                 F[i] = F[i-1]
                 __ 10 <= int(s[i-2]+s[i-1]) < 27:
                     F[i] += F[i-2]
-            else:  # 0 is special
-                __ s[i-2] in ("1", "2"):
+            ____:  # 0 is special
+                __ s[i-2] __ ("1", "2"):
                     F[i] = F[i-2]
-                else:
-                    return 0
+                ____:
+                    r.. 0
 
-        return F[-1]
+        r.. F[-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().numDecodings("10") == 1
-    assert Solution().numDecodings("27") == 1
-    assert Solution().numDecodings("12") == 2
-    assert Solution().numDecodings("0") == 0
+__ __name__ __ "__main__":
+    ... Solution().numDecodings("10") __ 1
+    ... Solution().numDecodings("27") __ 1
+    ... Solution().numDecodings("12") __ 2
+    ... Solution().numDecodings("0") __ 0

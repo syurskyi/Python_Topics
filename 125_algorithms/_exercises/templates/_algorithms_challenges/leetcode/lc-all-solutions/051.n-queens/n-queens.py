@@ -4,33 +4,33 @@ class Solution(object):
     :type n: int
     :rtype: List[List[str]]
     """
-    ans = []
+    ans    # list
 
     ___ dfs(path, n, ans):
-      __ len(path) == n:
-        ans.append(drawChess(path))
-        return
+      __ l..(path) __ n:
+        ans.a..(drawChess(path))
+        r..
 
-      for i in range(n):
-        __ i not in path and isValidQueen(path, i):
-          path.append(i)
+      ___ i __ r..(n):
+        __ i n.. __ path and isValidQueen(path, i):
+          path.a..(i)
           dfs(path, n, ans)
           path.pop()
 
     ___ isValidQueen(path, k):
-      for i in range(len(path)):
-        __ abs(k - path[i]) == abs(len(path) - i):
-          return False
-      return True
+      ___ i __ r..(l..(path)):
+        __ abs(k - path[i]) __ abs(l..(path) - i):
+          r.. False
+      r.. True
 
     ___ drawChess(path):
-      ret = []
-      chess = [["."] * len(path) for _ in range(len(path))]
-      for i in range(0, len(path)):
+      ret    # list
+      chess = [["."] * l..(path) ___ _ __ r..(l..(path))]
+      ___ i __ r..(0, l..(path)):
         chess[i][path[i]] = "Q"
-      for chs in chess:
-        ret.append("".join(chs))
-      return ret
+      ___ chs __ chess:
+        ret.a..("".join(chs))
+      r.. ret
 
     dfs([], n, ans)
-    return ans
+    r.. ans

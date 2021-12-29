@@ -10,14 +10,14 @@ class Memcache:
     @return: An integer
     """
     ___ get(self, curtTime, key):
-        __ key not in self.storage:
-            return self.INT_MAX
+        __ key n.. __ self.storage:
+            r.. self.INT_MAX
 
-        __ (curtTime < self.storage[key]['expired_at'] or
-            self.storage[key]['expired_at'] == self.PERMANENT_TTL):
-            return self.storage[key]['val']
+        __ (curtTime < self.storage[key]['expired_at'] o.
+            self.storage[key]['expired_at'] __ self.PERMANENT_TTL):
+            r.. self.storage[key]['val']
 
-        return self.INT_MAX
+        r.. self.INT_MAX
 
     """
     @param: curtTime: An integer
@@ -29,7 +29,7 @@ class Memcache:
     ___ set(self, curtTime, key, value, ttl):
         __ ttl > 0:
             self.storage[key] = self._new_item(key, value, curtTime + ttl)
-        else:
+        ____:
             self.storage[key] = self._new_item(key, value, self.PERMANENT_TTL)
 
     """
@@ -38,7 +38,7 @@ class Memcache:
     @return: nothing
     """
     ___ delete(self, curtTime, key):
-        __ key in self.storage:
+        __ key __ self.storage:
             del self.storage[key]
 
     """
@@ -48,15 +48,15 @@ class Memcache:
     @return: An integer
     """
     ___ incr(self, curtTime, key, delta):
-        __ key not in self.storage:
-            return self.INT_MAX
+        __ key n.. __ self.storage:
+            r.. self.INT_MAX
 
-        __ (curtTime < self.storage[key]['expired_at'] or
-            self.storage[key]['expired_at'] == self.PERMANENT_TTL):
+        __ (curtTime < self.storage[key]['expired_at'] o.
+            self.storage[key]['expired_at'] __ self.PERMANENT_TTL):
             self.storage[key]['val'] += delta
-            return self.storage[key]['val']
+            r.. self.storage[key]['val']
 
-        return self.INT_MAX
+        r.. self.INT_MAX
 
     """
     @param: curtTime: An integer
@@ -65,10 +65,10 @@ class Memcache:
     @return: An integer
     """
     ___ decr(self, curtTime, key, delta):
-        return self.incr(curtTime, key, -1 * delta)
+        r.. self.incr(curtTime, key, -1 * delta)
 
     ___ _new_item(self, key, value, expired_at):
-        return {
+        r.. {
             'key': key,
             'val': value,
             'expired_at': expired_at

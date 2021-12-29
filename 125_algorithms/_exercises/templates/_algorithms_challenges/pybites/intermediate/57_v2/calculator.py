@@ -1,5 +1,5 @@
-import argparse
-import functools
+_______ argparse
+_______ functools
 
 ___ calculator(f, numbers):
     """TODO 1:
@@ -8,7 +8,7 @@ ___ calculator(f, numbers):
     
 
 
-    return round(functools.reduce(lambda x,y: f(x,y),numbers),2)
+    r.. round(functools.reduce(l.... x,y: f(x,y),numbers),2)
 
 
 
@@ -29,31 +29,31 @@ ___ create_parser():
     group.add_argument("-d",'--div',action='store_true',help="Divides numbers")
     ap.add_argument('numbers',nargs='+',type=float)
 
-    return ap
+    r.. ap
 
 
-___ call_calculator(args=None, stdout=False):
+___ call_calculator(args=N.., stdout=False):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
     parser = create_parser()
 
-    __ args is None:
+    __ args __ N..
         args = vars(parser.parse_args())
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    else:
+    ____:
         args = vars(args)
     numbers = args['numbers']
     __ args['mul']:
-        f = lambda x,y: x * y
-    elif args['sub']:
-        f = lambda x,y: x - y
-    elif args['add']:
-        f = lambda x,y: x + y
-    elif args['div']:
-        f = lambda x,y: x / y
+        f = l.... x,y: x * y
+    ____ args['sub']:
+        f = l.... x,y: x - y
+    ____ args['add']:
+        f = l.... x,y: x + y
+    ____ args['div']:
+        f = l.... x,y: x / y
 
 
     try:
@@ -65,9 +65,9 @@ ___ call_calculator(args=None, stdout=False):
     __ stdout:
         print(res)
 
-    return res
+    r.. res
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     call_calculator(stdout=True)

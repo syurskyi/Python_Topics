@@ -8,7 +8,7 @@ Created on Jan 26, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ partition(self, head, x):
@@ -17,21 +17,21 @@ class Solution(object):
         :type x: int
         :rtype: ListNode
         """
-        __ not head:
-            return head
+        __ n.. head:
+            r.. head
         aHead, bHead = ListNode(0), ListNode(0)
         aTail, bTail = aHead, bHead
         while head:
             __ head.val < x:
                 aTail.next = head
                 aTail = aTail.next
-            else:
+            ____:
                 bTail.next = head
                 bTail = bTail.next
             head = head.next
         aTail.next = bHead.next
-        bTail.next = None
-        return aHead.next
+        bTail.next = N..
+        r.. aHead.next
     
     ___ test(self):
         pass

@@ -12,10 +12,10 @@ class Solution(object):
         """
         s = S
         res = [1, 0]
-        for c in s:
+        ___ c __ s:
             __ res[1] + widths[ord(c)-ord('a')] <= 100:
                 res[1] += widths[ord(c)-ord('a')]
-            else:
+            ____:
                 res[0] += 1
                 res[1] = widths[ord(c)-ord('a')]
-        return res
+        r.. res

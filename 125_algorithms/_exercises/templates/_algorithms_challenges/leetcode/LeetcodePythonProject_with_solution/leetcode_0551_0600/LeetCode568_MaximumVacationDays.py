@@ -11,18 +11,18 @@ class Solution(object):
         :type days: List[List[int]]
         :rtype: int
         """
-        n = len(flights)
-        k0 = len(days[0])
+        n = l..(flights)
+        k0 = l..(days[0])
         dp = [float('-inf')]*n
         dp[0] = 0
-        for i in range(k0):
+        ___ i __ r..(k0):
             tmp = [float('-inf')]*n
-            for j in range(n):
-                for k in range(n):
-                    __ j == k or flights[k][j] == 1:
+            ___ j __ r..(n):
+                ___ k __ r..(n):
+                    __ j __ k o. flights[k][j] __ 1:
                         tmp[j] = max(tmp[j], dp[k]+days[j][i])
             dp = tmp
-        return max(dp)
+        r.. max(dp)
     
     ___ test(self):
         testCases = [
@@ -63,14 +63,14 @@ class Solution(object):
                 ],
             ],
         ]
-        for flights, days in testCases:
+        ___ flights, days __ testCases:
             print('flights:')
-            print('\n'.join([str(row) for row in flights]))
+            print('\n'.join([str(row) ___ row __ flights]))
             print('days:')
-            print('\n'.join([str(row) for row in days]))
+            print('\n'.join([str(row) ___ row __ days]))
             result = self.maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

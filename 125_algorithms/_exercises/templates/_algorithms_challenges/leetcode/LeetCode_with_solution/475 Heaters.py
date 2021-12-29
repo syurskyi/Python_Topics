@@ -16,7 +16,7 @@ Positions of houses and heaters you are given are non-negative and will not exce
 As long as a house is in the heaters' warm radius range, it can be warmed.
 All the heaters follow your radius standard and the warm radius will the same.
 """
-import bisect
+_______ bisect
 
 
 class Solution:
@@ -32,14 +32,14 @@ class Solution:
         heaters.sort()
         r = 0
         i = 0
-        for h in houses:
+        ___ h __ houses:
             i = bisect.bisect(heaters, h)  # insertion point
             left = max(0, i - 1)
-            right = min(len(heaters) - 1, i)
-            r_cur = min(abs(heaters[left] - h), abs(heaters[right] - h))
+            right = m..(l..(heaters) - 1, i)
+            r_cur = m..(abs(heaters[left] - h), abs(heaters[right] - h))
             r = max(r, r_cur)
             
-        return r
+        r.. r
 
     ___ findRadius_naive(self, houses, heaters):
         """
@@ -50,10 +50,10 @@ class Solution:
         """
         houses.sort()
         heaters.sort()
-        heaters.append(float('inf'))
+        heaters.a..(float('inf'))
         r = 0
         i = 0
-        for h in houses:
+        ___ h __ houses:
             # possible bisect
             while h > (heaters[i] + heaters[i+1]) / 2:
                 # find which heater is responsible for the house
@@ -61,8 +61,8 @@ class Solution:
 
             r = max(r, abs(heaters[i] - h))
 
-        return r
+        r.. r
 
 
-__ __name__ == "__main__":
-    assert Solution().findRadius([1,2,3,4], [1,4]) == 1
+__ __name__ __ "__main__":
+    ... Solution().findRadius([1,2,3,4], [1,4]) __ 1

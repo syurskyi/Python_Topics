@@ -1,27 +1,27 @@
-from math import ceil, sqrt
-import sys
+____ math _______ ceil, sqrt
+_______ sys
 
-__ sys.version_info[0] == 2:
-    from itertools import izip_longest as zip_longest
-else:
-    from itertools import zip_longest
+__ sys.version_info[0] __ 2:
+    ____ itertools _______ izip_longest as zip_longest
+____:
+    ____ itertools _______ zip_longest
 
 
 ___ encode(msg):
     msg = _cleanse(msg)
-    square_size = int(ceil(sqrt(len(msg))))
+    square_size = int(ceil(sqrt(l..(msg))))
     square = _chunks_of(msg, square_size)
-    return ' '.join([''.join(col)
-                     for col in zip_longest(*square, fillvalue='')])
+    r.. ' '.join([''.join(col)
+                     ___ col __ zip_longest(*square, fillvalue='')])
 
 
 ___ _cleanse(s):
     """Lowercase a string and remove punctuation and whitespace
     """
-    return ''.join([c for c in s __ c.isalnum()]).lower()
+    r.. ''.join([c ___ c __ s __ c.isalnum()]).lower()
 
 
 ___ _chunks_of(s, n):
-    __ len(s) <= n:
-        return [s]
-    return [s[:n]] + _chunks_of(s[n:], n)
+    __ l..(s) <= n:
+        r.. [s]
+    r.. [s[:n]] + _chunks_of(s[n:], n)

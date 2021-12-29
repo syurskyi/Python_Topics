@@ -5,13 +5,13 @@ class Solution(object):
     :rtype: int
     """
     i = 0
-    while i < len(nums):
-      __ 0 < nums[i] <= len(nums) and nums[nums[i] - 1] != nums[i]:
+    while i < l..(nums):
+      __ 0 < nums[i] <= l..(nums) and nums[nums[i] - 1] != nums[i]:
         nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
-      else:
+      ____:
         i += 1
 
-    for i in range(0, len(nums)):
+    ___ i __ r..(0, l..(nums)):
       __ nums[i] != i + 1:
-        return i + 1
-    return len(nums) + 1
+        r.. i + 1
+    r.. l..(nums) + 1

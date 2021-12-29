@@ -27,13 +27,13 @@ ___ person_max_bmi(data=data):
     bmi = {}
     data_list = data.split("\n")
 
-    for row in data_list:
+    ___ row __ data_list:
        current = row.strip().split(",")
-       __ len(current) > 1:
+       __ l..(current) > 1:
          bmi[current[0]] = float(current[2]) / ((int(current[1])) / 100) ** 2
 
     name_max_bmi = max(bmi, key = bmi.get)
-    return (name_max_bmi, round(bmi[name_max_bmi], 2)) 
+    r.. (name_max_bmi, round(bmi[name_max_bmi], 2))
 
 # if __name__ == "__main__":
 #    print(person_max_bmi())

@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -14,10 +14,10 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 ___ group_names_by_country(data: str = data) -> defaultdict:
-    countries = defaultdict(list)
+    countries = defaultdict(l..)
     data = iter(data.splitlines())
     next(data)
-    for line in data:
+    ___ line __ data:
         lastname, name, country = line.split(",")
-        countries[country].append(name + " " + lastname)
-    return countries
+        countries[country].a..(name + " " + lastname)
+    r.. countries

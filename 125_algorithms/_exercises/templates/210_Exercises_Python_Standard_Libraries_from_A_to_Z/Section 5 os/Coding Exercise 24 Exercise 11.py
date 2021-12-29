@@ -1,9 +1,9 @@
-import os
+_______ os
 
-fnames  [f"{str(i).zfill(2)}_sales.csv" for i in range(1, 25)]
+fnames  [f"{str(i).zfill(2)}_sales.csv" ___ i __ r..(1, 25)]
 paths  [os.path.join(os.getcwd(), '2020', fname) __ idx < 12
-         else os.path.join(os.getcwd(), '2021', fname)
-         for idx, fname in enumerate(fnames)]
+         ____ os.path.join(os.getcwd(), '2021', fname)
+         ___ idx, fname __ enumerate(fnames)]
 
-for path in paths:
+___ path __ paths:
     print(path)

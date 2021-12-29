@@ -28,12 +28,12 @@ You may assume start and end string is not the same.
 class Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
-        for a, b in zip(p, q):
+        ___ a, b __ zip(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
-                return False
-        return True
+                r.. False
+        r.. True
 
     ___ minMutation(self, start, end, bank):
         """
@@ -50,21 +50,21 @@ class Solution:
         visited = {start}
         lvl = 0
         while q:
-            cur_q = []
-            for e in q:
-                __ e == end:
-                    return lvl
-                for t in bank:
-                    __ t not in visited and self.is_neighbor(e, t):
+            cur_q    # list
+            ___ e __ q:
+                __ e __ end:
+                    r.. lvl
+                ___ t __ bank:
+                    __ t n.. __ visited and self.is_neighbor(e, t):
                         visited.add(t)
-                        cur_q.append(t)
+                        cur_q.a..(t)
 
             lvl += 1
             q = cur_q
 
-        return -1
+        r.. -1
 
 
-__ __name__ == "__main__":
-    assert Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) == -1
-    assert Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) == 2
+__ __name__ __ "__main__":
+    ... Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) __ -1
+    ... Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) __ 2

@@ -4,38 +4,38 @@ class Solution:
     @return: the longest palindromic subsequence's length
     """
     ___ longestPalindromeSubseq(self, s):
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
-        n = len(s)
-        __ n == 1:
-            return 1
+        n = l..(s)
+        __ n __ 1:
+            r.. 1
 
         # `dp[i][j]` means the length of the longest subsequence
         # included in `s[i:j+1]`
-        dp = [[0] * n for _ in range(n)]
+        dp = [[0] * n ___ _ __ r..(n)]
 
         ans = 0
         start = end = 0
-        for end in range(n):
+        ___ end __ r..(n):
             dp[end][end] = 1
 
             __ n < 1:
                 continue
 
             start = end - 1
-            __ s[start] == s[end]:
+            __ s[start] __ s[end]:
                 dp[start][end] = 2
-            else:
+            ____:
                 dp[start][end] = 1
 
-        for size in range(3, n + 1):
-            for start in range(n - size + 1):
+        ___ size __ r..(3, n + 1):
+            ___ start __ r..(n - size + 1):
                 end = start + size - 1
 
                 dp[start][end] = max(dp[start][end - 1], dp[start + 1][end])
 
-                __ s[start] == s[end]:
+                __ s[start] __ s[end]:
                     dp[start][end] = max(
                         dp[start][end],
                         dp[start + 1][end - 1] + 2
@@ -44,4 +44,4 @@ class Solution:
                 __ dp[start][end] > ans:
                     ans = dp[start][end]
 
-        return ans
+        r.. ans

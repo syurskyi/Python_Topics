@@ -1,9 +1,9 @@
-from datetime import date
-import os
-from pathlib import Path
-import pickle
-from typing import Sequence, NamedTuple
-from urllib.request import urlretrieve
+____ datetime _______ date
+_______ os
+____ pathlib _______ Path
+_______ pickle
+____ typing _______ Sequence, NamedTuple
+____ urllib.request _______ urlretrieve
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com"
@@ -29,20 +29,20 @@ ___ deserialize(pkl_file: Path = PICKLE_INFILE) -> Sequence[NamedTuple]:
     file = open(pkl_file, "rb")
     nt = pickle.load(file)
     file.close()
-    return nt
+    r.. nt
 
 
 ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
-              data: Sequence[NamedTuple] = None) -> None:
+              data: Sequence[NamedTuple] = N..) -> N..
     """Save the data passed in to the pickle file passed in"""
-    __ data is None:
+    __ data __ N..
         data = deserialize()
     # you code ...
-    else:
+    ____:
         file = open(pkl_file, "ab")
         pickle.dump(data, file)
         file.close()
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     download_pickle_file()
     deserialize()

@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 class DomainException(Exception):
@@ -11,7 +11,7 @@ class Domain:
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
         self.name = name
-        __ not re.match(r'.*\.[a-z]{2,3}$', self.name):
+        __ n.. re.match(r'.*\.[a-z]{2,3}$', self.name):
             raise DomainException
         
     # next add a __str__ method and write 2 class methods
@@ -21,15 +21,15 @@ class Domain:
     @classmethod
     ___ parse_url(cls, url):
         url_domain = re.findall(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
-        return Domain(url_domain[0][0])
+        r.. Domain(url_domain[0][0])
 
     @classmethod
     ___ parse_email(cls, email):
         email_domain = re.findall(r'@(.*\.[a-z]+)', email)
-        return Domain(email_domain[0])
+        r.. Domain(email_domain[0])
 
     ___ __str__(self) -> str:
-        return f'{self.name}'
+        r.. f'{self.name}'
 
 print(Domain.parse_url('http://www.khooville.com'))
 #print(Domain.parse_email('sckhoo@khooville.com'))

@@ -17,9 +17,9 @@ class Interval:
 
     @classmethod
     ___ new(cls, lst):
-        return [
+        r.. [
             cls(s, e)
-            for s, e in lst
+            ___ s, e __ lst
         ]
         
 
@@ -31,22 +31,22 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        __ not intervals:
-            return ret
+        __ n.. intervals:
+            r.. ret
 
-        intervals.sort(key=lambda x: x.start)
+        intervals.sort(key=l.... x: x.start)
         cur = intervals[0]
-        for itv in intervals[1:]:
+        ___ itv __ intervals[1:]:
             __ cur.end <= itv.start:
                 cur = itv
-            else:
+            ____:
                 ret += 1
-                cur = cur __ cur.end < itv.end else itv
+                cur = cur __ cur.end < itv.end ____ itv
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) == 1
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) == 2
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) == 0
+__ __name__ __ "__main__":
+    ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) __ 1
+    ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) __ 2
+    ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) __ 0

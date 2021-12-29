@@ -38,7 +38,7 @@ The length of accounts will be in the range [1, 1000].
 The length of accounts[i] will be in the range [1, 10].
 The length of accounts[i][j] will be in the range [1, 30].
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -48,27 +48,27 @@ class Solution:
         account id
         """
         email_to_ids = defaultdict(set)
-        for i, v in enumerate(accounts):
-            for email in v[1:]:
+        ___ i, v __ enumerate(accounts):
+            ___ email __ v[1:]:
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
-        visited = [False for _ in accounts]
-        ret = []
-        for i, v in enumerate(accounts):
-            __ not visited[i]:
+        visited = [False ___ _ __ accounts]
+        ret    # list
+        ___ i, v __ enumerate(accounts):
+            __ n.. visited[i]:
                 emails = set()
                 self.dfs(i, accounts, email_to_ids, emails, visited)
-                ret.append([v[0]] + sorted(emails))
+                ret.a..([v[0]] + s..(emails))
 
-        return ret
+        r.. ret
 
     ___ dfs(self, i, accounts, email_to_ids, emails, visited):
         visited[i] = True
-        for email in accounts[i][1:]:
+        ___ email __ accounts[i][1:]:
             emails.add(email)
-            for nbr in email_to_ids[email]:
-                __ not visited[nbr]:
+            ___ nbr __ email_to_ids[email]:
+                __ n.. visited[nbr]:
                     self.dfs(nbr, accounts, email_to_ids, emails, visited)
 
 
@@ -81,25 +81,25 @@ class Solution:
         mistake: not dfs, search on the first level
         """
         email_id = {}
-        id_emails = defaultdict(list)
-        for i in range(len(accounts)):
-            person = None
-            for email in accounts[i][1:]:
-                __ email in email_id:
+        id_emails = defaultdict(l..)
+        ___ i __ r..(l..(accounts)):
+            person = N..
+            ___ email __ accounts[i][1:]:
+                __ email __ email_id:
                     person = email_id[email]
                     break
 
-            for email in accounts[i][1:]:
-                __ person is None:
+            ___ email __ accounts[i][1:]:
+                __ person __ N..
                     person = i
                     email_id[email] = person
-                    id_emails[person].append(email)
-                elif email not in email_id:
+                    id_emails[person].a..(email)
+                ____ email n.. __ email_id:
                     email_id[email] = person
-                    id_emails[person].append(email)
+                    id_emails[person].a..(email)
 
-        ret = []
-        for k, v in id_emails.items():
-            ret.append([accounts[k][0]] + sorted(v))
+        ret    # list
+        ___ k, v __ id_emails.items():
+            ret.a..([accounts[k][0]] + s..(v))
 
-        return ret
+        r.. ret

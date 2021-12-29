@@ -1,7 +1,7 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
-from bs4 import BeautifulSoup as Soup
-import requests
+____ bs4 _______ BeautifulSoup as Soup
+_______ requests
 
 CONTENT = requests.get('http://bit.ly/2EN2Ntv').text
 
@@ -20,4 +20,4 @@ ___ get_book():
     image = image_base.find('img').attrs['src']
     link = image_base.find('a').attrs['href']
 
-    return Book(title, description, image, link)
+    r.. Book(title, description, image, link)

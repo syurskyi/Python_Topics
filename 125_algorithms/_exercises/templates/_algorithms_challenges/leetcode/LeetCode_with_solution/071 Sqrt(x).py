@@ -14,14 +14,14 @@ class Solution:
         :param x: Integer
         :return: Integer
         """
-        __ x==0: return 0  # avoid Division by zero
+        __ x__0: r.. 0  # avoid Division by zero
         m = x
         while True:
             m_before = m
             m = m - float(m*m-x)/(2*m)
             __ abs(m-m_before)<1e-7: break
 
-        return int(m)
+        r.. int(m)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().sqrt(2)

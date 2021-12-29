@@ -1,4 +1,4 @@
-from pprint import pprint
+____ pprint _______ pprint
 
 
 class RecordScore():
@@ -9,5 +9,5 @@ class RecordScore():
     ___ __call__(self, *args, **kwargs):
         __ self.max < args[0]:
             self.max = args[0]
-        return self.max
+        r.. self.max
 

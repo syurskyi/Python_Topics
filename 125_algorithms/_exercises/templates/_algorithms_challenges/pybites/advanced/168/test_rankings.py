@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from rankings import Ninja, Rankings, bites, names
+____ rankings _______ Ninja, Rankings, bites, names
 
 more_names = [
     ("rey", 287),
@@ -17,36 +17,36 @@ more_names = [
     ("doug", 469),
     ("noah", 470),
 ]
-FIRST_NINJAS = [Ninja(*ninja) for ninja in zip(names, bites)]
-SECOND_NINJAS = [Ninja(*ninja) for ninja in more_names]
+FIRST_NINJAS = [Ninja(*ninja) ___ ninja __ zip(names, bites)]
+SECOND_NINJAS = [Ninja(*ninja) ___ ninja __ more_names]
 
 
 ___ _create_ranks(ninjas_ N..
     ranking = Rankings()
-    __ ninjas is None:
-        return ranking
+    __ ninjas __ N..
+        r.. ranking
 
-    for ninja in ninjas:
+    ___ ninja __ ninjas:
         ranking.add(ninja)
-    return ranking
+    r.. ranking
 
 
 @pytest.fixture
 ___ first_ninjas():
-    return FIRST_NINJAS
+    r.. FIRST_NINJAS
 
 
 @pytest.fixture
 ___ second_ninjas():
-    return SECOND_NINJAS
+    r.. SECOND_NINJAS
 
 
 @pytest.fixture()
 ___ ninja_ranks():
     ranking = Rankings()
-    for ninja in FIRST_NINJAS:
+    ___ ninja __ FIRST_NINJAS:
         ranking.add(ninja)
-    return ranking
+    r.. ranking
 
 
 ___ test_ninja_class_empty_init_raises_exception():
@@ -61,32 +61,32 @@ ___ test_ninja_class_and_membership(first_ninjas):
     ninja1 = Ninja("snow", 283)
     ninja2 = Ninja("natalia", 282)
     ninja3 = Ninja("okken", 70)
-    assert ninja1 in first_ninjas
-    assert ninja2 in first_ninjas
-    assert ninja3 not in first_ninjas
+    ... ninja1 __ first_ninjas
+    ... ninja2 __ first_ninjas
+    ... ninja3 n.. __ first_ninjas
 
 
 ___ test_ninja_str_output(first_ninjas, capfd):
     print(first_ninjas[1])
     output = capfd.readouterr()[0].strip()
-    assert output == "[282] natalia"
+    ... output __ "[282] natalia"
     print(first_ninjas[3])
     output = capfd.readouterr()[0].strip()
-    assert output == "[263] maquina"
+    ... output __ "[263] maquina"
 
 
 # starting len of ninja rankings
 
 
 ___ test_first_ninja_ranks_in_object(ninja_ranks):
-    assert len(ninja_ranks) == 11
+    ... l..(ninja_ranks) __ 11
 
 
 ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks):
     actual = ninja_ranks.dump()
     expected = Ninja(name="sam", bites=195)
-    assert actual == expected
-    assert len(ninja_ranks) == 10
+    ... actual __ expected
+    ... l..(ninja_ranks) __ 10
 
 
 # highest / lowest ninjas in rankings
@@ -95,13 +95,13 @@ ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks):
 ___ test_highest_ranking_no_arg(ninja_ranks):
     actual = ninja_ranks.highest()
     expected = [Ninja(name="snow", bites=283)]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_lowest_ranking_no_arg(ninja_ranks):
     actual = ninja_ranks.lowest()
     expected = [Ninja(name="sam", bites=195)]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_lowest_ranking_with_arg(ninja_ranks):
@@ -111,12 +111,12 @@ ___ test_lowest_ranking_with_arg(ninja_ranks):
         Ninja(name="sara", bites=196),
         Ninja(name="james", bites=197),
     ]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_adding_a_ninja(ninja_ranks):
     ninja_ranks.add(Ninja(name="sam", bites=195))
-    assert len(ninja_ranks) == 12
+    ... l..(ninja_ranks) __ 12
 
 
 ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
@@ -126,10 +126,10 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
         Ninja(name="sara", bites=196),
         Ninja(name="james", bites=197),
     ]
-    assert actual == expected
+    ... actual __ expected
 
     # now add the ninjas of first_ninja_ranks
-    for ninja in SECOND_NINJAS:
+    ___ ninja __ SECOND_NINJAS:
         ninja_ranks.add(ninja)
 
     # check highest, they should have been added
@@ -139,7 +139,7 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
         Ninja(name="doug", bites=469),
         Ninja(name="steve", bites=468),
     ]
-    assert actual == expected
+    ... actual __ expected
 
 
 # pairing of ninjas
@@ -147,20 +147,20 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
 
 ___ test_pairing_with_no_arg(ninja_ranks):
     actual = ninja_ranks.pair_up()
-    assert len(actual) == 3
+    ... l..(actual) __ 3
 
     expected = (Ninja(name="natalia", bites=282), Ninja(name="sara", bites=196))
-    assert actual[1] == expected
+    ... actual[1] __ expected
 
 
 ___ test_pairing_with_count_arg(ninja_ranks):
     actual = ninja_ranks.pair_up(5)
-    assert len(actual) == 5
+    ... l..(actual) __ 5
 
     expected = (Ninja(name="snow", bites=283),
                 Ninja(name="sam", bites=195))
-    assert actual[0] == expected
+    ... actual[0] __ expected
 
     expected = (Ninja(name="maria", bites=255),
                 Ninja(name="kenneth", bites=216))
-    assert actual[-1] == expected
+    ... actual[-1] __ expected

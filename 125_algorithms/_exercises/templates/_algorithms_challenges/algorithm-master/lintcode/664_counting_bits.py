@@ -4,13 +4,13 @@ class Solution:
     @return: an array represent the number of 1's in their binary
     """
     ___ countBits(self, num):
-        __ not num:
-            return [0]
+        __ n.. num:
+            r.. [0]
 
         upper_bound = num + 1
         F = [0] * upper_bound
 
-        for i in range(1, upper_bound):
+        ___ i __ r..(1, upper_bound):
             """
             1. `i & (i - 1)` must be less than `i`, since `0 & n` is `0`
                => `F[i & (i - 1)]` must have been calculated
@@ -18,4 +18,4 @@ class Solution:
             """
             F[i] = F[i & (i - 1)] + 1
 
-        return F
+        r.. F

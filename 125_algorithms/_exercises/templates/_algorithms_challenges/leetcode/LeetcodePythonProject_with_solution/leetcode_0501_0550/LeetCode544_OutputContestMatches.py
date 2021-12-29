@@ -10,17 +10,17 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        l = list(range(1, n+1))
-        return self.helper(l)
+        l = l..(r..(1, n+1))
+        r.. self.helper(l)
     
     ___ helper(self, l):
-        __ len(l) <= 2:
-            return '(%s,%s)' % (l[0], l[1])
-        l0 = []
+        __ l..(l) <= 2:
+            r.. '(%s,%s)' % (l[0], l[1])
+        l0    # list
         while l:
-            l0.append('(%s,%s)' % (l.pop(0), l.pop()))
+            l0.a..('(%s,%s)' % (l.pop(0), l.pop()))
         res = self.helper(l0)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -28,11 +28,11 @@ class Solution(object):
             4,
             8,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             res = self.findContestMatch(n)
             print('result: %s' % res)
             print('-='*30+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

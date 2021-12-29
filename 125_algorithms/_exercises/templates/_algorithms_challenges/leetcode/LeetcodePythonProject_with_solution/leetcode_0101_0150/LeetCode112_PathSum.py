@@ -8,8 +8,8 @@ Created on Feb 1, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ hasPathSum(self, root, sumVal):
@@ -18,11 +18,11 @@ class Solution(object):
         :type sumVal: int
         :rtype: bool
         """
-        __ not root:
-            return False
-        __ root.val == sumVal and not root.left and not root.right:
-            return True
-        else:
-            return self.hasPathSum(root.left, sumVal-root.val) or\
+        __ n.. root:
+            r.. False
+        __ root.val __ sumVal and n.. root.left and n.. root.right:
+            r.. True
+        ____:
+            r.. self.hasPathSum(root.left, sumVal-root.val) o.\
                 self.hasPathSum(root.right, sumVal-root.val)
     

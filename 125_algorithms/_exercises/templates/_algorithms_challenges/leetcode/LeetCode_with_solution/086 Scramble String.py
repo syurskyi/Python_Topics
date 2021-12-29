@@ -54,32 +54,32 @@ class Solution:
         :param s2:
         :return: boolean
         """
-        __ len(s1)!=len(s2):
-            return False
-        chars = [0 for _ in xrange(26)]
-        for char in s1:
+        __ l..(s1)!=l..(s2):
+            r.. False
+        chars = [0 ___ _ __ xrange(26)]
+        ___ char __ s1:
             chars[ord(char)-ord('a')] += 1
-        for char in s2:
+        ___ char __ s2:
             chars[ord(char)-ord('a')] -= 1
 
         # if filter(lambda x: x!=0, chars):
         #     return False
-        for val in chars:
+        ___ val __ chars:
             __ val!=0:
-                return False
+                r.. False
 
-        __ len(s1)==1:
-            return True
-
-
-        for i in xrange(1, len(s1)):
-            __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]) or \
-                self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:len(s2)-i]):
-                return True
-
-        return False
+        __ l..(s1)__1:
+            r.. True
 
 
+        ___ i __ xrange(1, l..(s1)):
+            __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]) o. \
+                self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:l..(s2)-i]):
+                r.. True
 
-__ __name__=="__main__":
-    assert Solution().isScramble("abc", "bca")==True
+        r.. False
+
+
+
+__ __name____"__main__":
+    ... Solution().isScramble("abc", "bca")__True

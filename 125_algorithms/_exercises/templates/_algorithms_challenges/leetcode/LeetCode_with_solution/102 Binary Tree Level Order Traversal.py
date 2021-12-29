@@ -21,8 +21,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ levelOrder(self, root):
@@ -32,26 +32,26 @@ class Solution:
         :param root: Tree node
         :return: a list of lists of integers
         """
-        result = []
-        q = []
+        result    # list
+        q    # list
         __ root:
-            q.append(root)
+            q.a..(root)
 
         while q:
-            length = len(q)
+            length = l..(q)
             # cur_level = []
-            for i in range(length):
+            ___ i __ r..(length):
                 cur = q[i]
                 __ cur.left:
-                    q.append(cur.left)
+                    q.a..(cur.left)
                 __ cur.right:
-                    q.append(cur.right)
-            result.append(map(lambda x: x.val, q[:length]))  # no need to create a new list
+                    q.a..(cur.right)
+            result.a..(map(l.... x: x.val, q[:length]))  # no need to create a new list
             q = q[length:]  # no need to create a new list
-        return result
+        r.. result
 
-__ __name__=="__main__":
-    nodes = [TreeNode(i) for i in range(3)]
+__ __name____"__main__":
+    nodes = [TreeNode(i) ___ i __ r..(3)]
     nodes[0].left = nodes[1]
     nodes[1].left = nodes[2]
     print Solution().levelOrder(nodes[0])

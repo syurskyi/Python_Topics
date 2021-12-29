@@ -11,15 +11,15 @@ class Solution(object):
         """
         res = 0
         hashmap = {}
-        for ans in answers:
+        ___ ans __ answers:
             hashmap[ans] = hashmap.get(ans, 0)+1
-        for n, count in hashmap.items():
+        ___ n, count __ hashmap.items():
             group = count//(n+1)
             __ count%(n+1) != 0:
                 res += (group+1)*(n+1)
-            else:
+            ____:
                 res += group*(n+1)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -28,11 +28,11 @@ class Solution(object):
             [10, 10, 10],
             [],
         ]
-        for answers in testCases:
+        ___ answers __ testCases:
             print('answers: %s' % answers)
             result = self.numRabbits(answers)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

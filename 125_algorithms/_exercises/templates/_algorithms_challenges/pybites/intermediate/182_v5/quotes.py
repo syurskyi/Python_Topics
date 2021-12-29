@@ -1,8 +1,8 @@
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
-import re
-import string
+_______ re
+_______ string
 
-from bs4 import BeautifulSoup
+____ bs4 _______ BeautifulSoup
 
 HTML = """<!DOCTYPE html>
 <head>
@@ -29,13 +29,13 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: str = HTML) -> dict:
+___ extract_quotes(html: str = HTML) -> d..:
     """See instructions in the Bite description"""
-    result = dict()
+    result = d..()
     root = BeautifulSoup(html, 'html.parser')
     content = root.find(class_='content').find_all('p')
-    for para in content:
-        __ para.text[0] in string.digits:
+    ___ para __ content:
+        __ para.text[0] __ string.digits:
             match = re.match(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
             result[match[2]] = match[1]
-    return result
+    r.. result

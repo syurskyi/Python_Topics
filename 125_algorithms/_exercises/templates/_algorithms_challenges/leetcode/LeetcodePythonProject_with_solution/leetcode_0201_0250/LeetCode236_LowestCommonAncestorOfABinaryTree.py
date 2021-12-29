@@ -6,7 +6,7 @@ Created on Feb 26, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -19,18 +19,18 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        __ not root:
-            return None
-        elif root == p or root == q:
-            return root
+        __ n.. root:
+            r.. N..
+        ____ root __ p o. root __ q:
+            r.. root
         l = self.lowestCommonAncestor(root.left, p, q)
         r = self.lowestCommonAncestor(root.right, p, q)
         __ l and r:
-            return root
-        elif not l and not r:
-            return None
-        else:
-            return r __ not l else l
+            r.. root
+        ____ n.. l and n.. r:
+            r.. N..
+        ____:
+            r.. r __ n.. l ____ l
     
     ___ test(self):
         node1 = TreeNode(5, TreeNode(6), TreeNode(2, TreeNode(7), TreeNode(4)))
@@ -43,5 +43,5 @@ class Solution(object):
         __ result:
             print(result.val)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

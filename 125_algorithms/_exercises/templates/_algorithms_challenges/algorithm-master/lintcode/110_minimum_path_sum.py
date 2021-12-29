@@ -4,27 +4,27 @@ class Solution:
     @return: An integer, minimizes the sum of all numbers along its path
     """
     ___ minPathSum(self, grid):
-        __ not grid:
-            return 0
+        __ n.. grid:
+            r.. 0
 
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
 
-        dp = [[0] * n for _ in range(m)]
+        dp = [[0] * n ___ _ __ r..(m)]
 
-        for j in range(n):
-            __ j == 0:
+        ___ j __ r..(n):
+            __ j __ 0:
                 dp[0][j] = grid[0][j]
                 continue
 
             dp[0][j] = grid[0][j] + dp[0][j - 1]
 
-        for i in range(1, m):
+        ___ i __ r..(1, m):
             dp[i][0] = grid[i][0] + dp[i - 1][0]
 
-            for j in range(1, n):
+            ___ j __ r..(1, n):
                 __ dp[i - 1][j] < dp[i][j - 1]:
                     dp[i][j] = grid[i][j] + dp[i - 1][j]
-                else:
+                ____:
                     dp[i][j] = grid[i][j] + dp[i][j - 1]
 
-        return dp[m - 1][n - 1]
+        r.. dp[m - 1][n - 1]

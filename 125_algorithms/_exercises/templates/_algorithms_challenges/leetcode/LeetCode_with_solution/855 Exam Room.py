@@ -35,7 +35,7 @@ all test cases.
 Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in
 seat number p.
 """
-import bisect
+_______ bisect
 
 
 class ExamRoom:
@@ -46,15 +46,15 @@ class ExamRoom:
         O(N) per query
         """
         self.N = N
-        self.idxes = []  # sorted arry of taken idx
+        self.idxes    # list  # sorted arry of taken idx
 
     ___ seat(self) -> int:
         """
         similar to 849
         """
-        __ not self.idxes:
+        __ n.. self.idxes:
             ret_idx = 0
-        else:
+        ____:
             max_dist, ret_idx = 0, 0
             # begin
             dist = self.idxes[0] - 0
@@ -62,9 +62,9 @@ class ExamRoom:
                 max_dist = dist
                 ret_idx = 0
             # middle
-            for j in range(len(self.idxes)-1):
+            ___ j __ r..(l..(self.idxes)-1):
                 i = (self.idxes[j] + self.idxes[j+1]) // 2
-                dist = min(abs(self.idxes[j] - i), abs(self.idxes[j+1] - i))
+                dist = m..(abs(self.idxes[j] - i), abs(self.idxes[j+1] - i))
                 __ dist > max_dist:
                     max_dist = dist
                     ret_idx = i
@@ -75,9 +75,9 @@ class ExamRoom:
                 ret_idx = self.N-1
 
         bisect.insort(self.idxes, ret_idx)
-        return ret_idx
+        r.. ret_idx
 
-    ___ leave(self, p: int) -> None:
+    ___ leave(self, p: int) -> N..
         self.idxes.remove(p)
 
 

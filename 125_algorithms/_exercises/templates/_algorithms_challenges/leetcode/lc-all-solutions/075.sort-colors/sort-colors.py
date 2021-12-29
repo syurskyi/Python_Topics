@@ -5,8 +5,8 @@ class Solution(object):
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     x = y = z = -1
-    for i in range(0, len(nums)):
-      __ nums[i] == 0:
+    ___ i __ r..(0, l..(nums)):
+      __ nums[i] __ 0:
         x += 1
         y += 1
         z += 1
@@ -15,7 +15,7 @@ class Solution(object):
         __ y != -1:
           nums[y] = 1
         nums[x] = 0
-      elif nums[i] == 1:
+      ____ nums[i] __ 1:
         y += 1
         z += 1
         nums[z] = 2
@@ -23,7 +23,7 @@ class Solution(object):
           nums[x] = 0
         __ y != -1:
           nums[y] = 1
-      elif nums[i] == 2:
+      ____ nums[i] __ 2:
         z += 1
         __ y != -1:
           nums[y] = 1

@@ -12,7 +12,7 @@ ___ max_sub_array(l):
     sum_of_sub_array  0
     new_sub_array_start  0
     sum_of_new_sub_array  0
-    for index,val in enumerate(l):
+    ___ index,val __ enumerate(l):
         __ val < 0:
             # figure out the sum
             __ sum_of_sub_array < sum_of_new_sub_array:
@@ -22,18 +22,18 @@ ___ max_sub_array(l):
                 sum_of_sub_array  sum_of_new_sub_array
                 sum_of_new_sub_array  0
             new_sub_array_start  index + 1
-        else:
+        ____:
             sum_of_new_sub_array + val
     
     __ sum_of_sub_array < sum_of_new_sub_array:
         #swap subarray indexes
         index_start  new_sub_array_start
-        index_end  len(l) - 1
+        index_end  l..(l) - 1
         sum_of_sub_array  sum_of_new_sub_array
     
     __ sum_of_sub_array __ 0:
         print(-1)
-    else:
+    ____:
         print(index_start, index_end)
 
 max_sub_array([2])

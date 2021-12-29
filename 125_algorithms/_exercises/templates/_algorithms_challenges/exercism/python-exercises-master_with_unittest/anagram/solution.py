@@ -1,9 +1,9 @@
 ___ detect_anagrams(word, candidates):
-    return [candidate
-            for candidate in candidates
-            __ _letters(candidate) == _letters(word)
+    r.. [candidate
+            ___ candidate __ candidates
+            __ _letters(candidate) __ _letters(word)
             __ candidate.lower() != word.lower()]
 
 
 ___ _letters(word):
-    return sorted(word.lower())
+    r.. s..(word.lower())

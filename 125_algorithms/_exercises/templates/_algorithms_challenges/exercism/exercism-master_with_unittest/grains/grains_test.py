@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from grains import on_square, total_after
+____ grains _______ on_square, total_after
 
 
 class GrainsTest(unittest.TestCase):
@@ -33,5 +33,5 @@ class GrainsTest(unittest.TestCase):
         self.assertEqual(18446744073709551615, total_after(64))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

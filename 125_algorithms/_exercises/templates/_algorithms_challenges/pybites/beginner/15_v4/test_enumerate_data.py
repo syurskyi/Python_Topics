@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from enumerate_data import enumerate_names_countries
+____ enumerate_data _______ enumerate_names_countries
 
 expected_lines = ['1. Julian     Australia',
                   '2. Bob        Spain',
@@ -14,4 +14,4 @@ expected_lines = ['1. Julian     Australia',
 ___ test_enumerate_names_countries(capfd, line):
     enumerate_names_countries()
     output = capfd.readouterr()[0]
-    assert line in output, f'{line} not in output'
+    ... line __ output, f'{line} not in output'

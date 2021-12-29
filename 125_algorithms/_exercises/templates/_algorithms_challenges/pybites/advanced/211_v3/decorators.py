@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 MAX_RETRIES = 3
 
@@ -14,14 +14,14 @@ ___ retry(func):
     @wraps(func)
     ___ wrapper(*args, **kwargs):
         count = 0
-        for i in range(MAX_RETRIES):
+        ___ i __ r..(MAX_RETRIES):
             try:
                 func(*args, **kwargs)
             except Exception as exc:
                 print(exc)
                 continue
-            else:
-                return
+            ____:
+                r..
         raise MaxRetriesException()
 
-    return wrapper
+    r.. wrapper

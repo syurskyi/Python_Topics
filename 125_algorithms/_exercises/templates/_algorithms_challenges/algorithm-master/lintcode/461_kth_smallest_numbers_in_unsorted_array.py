@@ -8,11 +8,11 @@ class Solution:
         """
         the index of `K`th child is `K - 1`
         """
-        return self.quick_select(K - 1, A, 0, len(A) - 1)
+        r.. self.quick_select(K - 1, A, 0, l..(A) - 1)
 
     ___ quick_select(self, k, A, start, end):
         __ start >= end:
-            return A[end]
+            r.. A[end]
 
         left, right = start, end
         pivot = A[(start + end) // 2]
@@ -29,8 +29,8 @@ class Solution:
                 right -= 1
 
         __ start <= k <= right:
-            return self.quick_select(k, A, start, right)
-        elif left <= k <= end:
-            return self.quick_select(k, A, left, end)
-        else:
-            return A[k]
+            r.. self.quick_select(k, A, start, right)
+        ____ left <= k <= end:
+            r.. self.quick_select(k, A, left, end)
+        ____:
+            r.. A[k]

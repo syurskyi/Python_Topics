@@ -13,15 +13,15 @@ class Solution(object):
     """
 
     ___ helper(root):
-      __ not root:
-        return (None, 0, 0)  # (val, consecutive len, max consecutive len)
+      __ n.. root:
+        r.. (N.., 0, 0)  # (val, consecutive len, max consecutive len)
       left, leftLen, maxLeftLen = helper(root.left)
       right, rightLen, maxRightLen = helper(root.right)
       ret = 1
-      __ root.val + 1 == left:
+      __ root.val + 1 __ left:
         ret = leftLen + 1
-      __ root.val + 1 == right:
+      __ root.val + 1 __ right:
         ret = max(ret, rightLen + 1)
-      return (root.val, ret, max(maxLeftLen, maxRightLen, ret))
+      r.. (root.val, ret, max(maxLeftLen, maxRightLen, ret))
 
-    return helper(root)[2]
+    r.. helper(root)[2]

@@ -17,14 +17,14 @@ class Solution(object):
       stack = [(1, root)]
       while stack:
         p = stack.pop()
-        __ not p[1]:
+        __ n.. p[1]:
           continue
-        __ p[0] == 0:
+        __ p[0] __ 0:
           __ flag:
-            return p[1]
-          __ p[1] == q:
+            r.. p[1]
+          __ p[1] __ q:
             flag = True
-        else:
+        ____:
           stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)])
 
-      return None
+      r.. N..

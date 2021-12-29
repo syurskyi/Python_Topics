@@ -4,4 +4,4 @@ items = [{'id': 1, 'name': 'laptop', 'value': 1000},
 
 
 ___ duplicate_items(items):
-    return items[:]
+    r.. items[:]

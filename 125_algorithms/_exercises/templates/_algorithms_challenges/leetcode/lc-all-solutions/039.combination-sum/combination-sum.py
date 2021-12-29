@@ -7,15 +7,15 @@ class Solution(object):
     """
 
     ___ dfs(candidates, start, target, path, res):
-      __ target == 0:
-        return res.append(path + [])
+      __ target __ 0:
+        r.. res.a..(path + [])
 
-      for i in range(start, len(candidates)):
+      ___ i __ r..(start, l..(candidates)):
         __ target - candidates[i] >= 0:
-          path.append(candidates[i])
+          path.a..(candidates[i])
           dfs(candidates, i, target - candidates[i], path, res)
           path.pop()
 
-    res = []
+    res    # list
     dfs(candidates, 0, target, [], res)
-    return res
+    r.. res

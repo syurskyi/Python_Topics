@@ -10,30 +10,30 @@ class Solution(object):
         :type obstacleGrid: List[List[int]]
         :rtype: int
         """
-        __ not obstacleGrid:
-            return 0
-        m = len(obstacleGrid)
-        n = len(obstacleGrid[0])
-        dp = [[0]*n for i in range(m)]
-        __ obstacleGrid[0][0] == 1:
-            return 0
-        for i in range(m):
-            for j in range(n):
-                __ obstacleGrid[i][j] == 1:
+        __ n.. obstacleGrid:
+            r.. 0
+        m = l..(obstacleGrid)
+        n = l..(obstacleGrid[0])
+        dp = [[0]*n ___ i __ r..(m)]
+        __ obstacleGrid[0][0] __ 1:
+            r.. 0
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
                     continue
-                __ i == 0 and j == 0:
+                __ i __ 0 and j __ 0:
                     dp[i][j] = 1
-                elif i == 0 and j != 0:
+                ____ i __ 0 and j != 0:
                     dp[i][j] = dp[i][j-1]
-                elif i != 0 and j == 0:
+                ____ i != 0 and j __ 0:
                     dp[i][j] = dp[i-1][j]
-                else:
+                ____:
                     dp[i][j] = dp[i][j-1] + dp[i-1][j]
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

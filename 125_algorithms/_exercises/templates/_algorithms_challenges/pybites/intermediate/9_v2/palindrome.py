@@ -1,8 +1,8 @@
 """A palindrome is a word, phrase, number, or other sequence of characters
 which reads the same backward as forward"""
-import os
-import urllib.request
-import re
+_______ os
+_______ urllib.request
+_______ re
 
 TMP = os.getenv("TMP", "/tmp")
 DICTIONARY = os.path.join(TMP, 'dictionary_m_words.txt')
@@ -15,7 +15,7 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        return (word.lower().strip() for word in f.readlines())
+        r.. (word.lower().strip() ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -28,17 +28,17 @@ ___ is_palindrome(word):
     
     word = re.sub(r'\W','',word).lower()
 
-    low,high = 0,len(word) - 1
+    low,high = 0,l..(word) - 1
 
 
     while low < high:
         __ word[low] != word[high]:
-            return False
+            r.. False
 
         low += 1
         high -= 1
 
-    return True
+    r.. True
 
 
 
@@ -47,16 +47,16 @@ ___ get_longest_palindrome(words_ N..
        If called without argument use the load_dictionary helper
        to populate the words list"""
     
-    __ not words:
+    __ n.. words:
         words = load_dictionary()
     
     longest_length = float("-inf")
-    longest = None
-    for word in words:
+    longest = N..
+    ___ word __ words:
         __ is_palindrome(word):
-            __ len(word) > longest_length:
-                longest_length = len(word)
+            __ l..(word) > longest_length:
+                longest_length = l..(word)
                 longest_word = word
 
-    return longest_word
+    r.. longest_word
 

@@ -59,7 +59,7 @@ nbrs = {
 }
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -68,22 +68,22 @@ class Solution:
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
-        F = defaultdict(lambda: defaultdict(int))
-        for pos in range(10):
+        F = defaultdict(l....: defaultdict(int))
+        ___ pos __ r..(10):
             F[pos][N-1] = 1
 
-        for n in range(N-2, -1, -1):
-            for pos in range(10):
-                for nbr in nbrs[pos]:
+        ___ n __ r..(N-2, -1, -1):
+            ___ pos __ r..(10):
+                ___ nbr __ nbrs[pos]:
                     F[pos][n] += F[nbr][n+1]
                     F[pos][n] %= MOD
 
         ret = 0
-        for i in range(10):
+        ___ i __ r..(10):
             ret += F[i][0]
             ret %= MOD
 
-        return ret
+        r.. ret
 
 
 class SolutionTLE2:
@@ -92,24 +92,24 @@ class SolutionTLE2:
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(10):
+        ___ i __ r..(10):
             ret += self.dfs(i, N-1)
             ret %= MOD
 
-        return ret
+        r.. ret
 
     ___ dfs(self, i, r):
-        __ (i, r) not in self.cache:
+        __ (i, r) n.. __ self.cache:
             ret = 0
-            __ r == 0:
+            __ r __ 0:
                 ret = 1
-            else:
-                for nbr in nbrs[i]:
+            ____:
+                ___ nbr __ nbrs[i]:
                     ret += self.dfs(nbr, r-1)
 
             self.cache[i, r] = ret
 
-        return self.cache[i, r]
+        r.. self.cache[i, r]
 
 
 class SolutionTLE:
@@ -121,20 +121,20 @@ class SolutionTLE:
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(self.m):
-            for j in range(self.n):
+        ___ i __ r..(self.m):
+            ___ j __ r..(self.n):
                 __ (i, j) != (3, 0) and (i, j) != (3, 2):
                     ret += self.dfs(i, j, N-1)
                     ret %= MOD
-        return ret
+        r.. ret
 
     ___ dfs(self, i, j, r):
-        __ (i, j, r) not in self.cache:
+        __ (i, j, r) n.. __ self.cache:
             ret = 0
-            __ r == 0:
+            __ r __ 0:
                 ret = 1
-            else:
-                for di, dj in dirs:
+            ____:
+                ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < self.m and 0 <= J < self.n and (I, J) != (3, 0) and (I, J) != (3, 2):
@@ -143,10 +143,10 @@ class SolutionTLE:
 
             self.cache[i, j, r] = ret
 
-        return self.cache[i, j, r]
+        r.. self.cache[i, j, r]
 
 
-__ __name__ == "__main__":
-    assert Solution().knightDialer(1) == 10
-    assert Solution().knightDialer(2) == 20
-    assert Solution().knightDialer(3) == 46
+__ __name__ __ "__main__":
+    ... Solution().knightDialer(1) __ 10
+    ... Solution().knightDialer(2) __ 20
+    ... Solution().knightDialer(3) __ 46

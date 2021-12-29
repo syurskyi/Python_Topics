@@ -1,9 +1,9 @@
-from datetime import date, timedelta
+____ datetime _______ date, timedelta
 
 ___ tomorrow(input_dt_ N..
-    __ not input_dt:
+    __ n.. input_dt:
         input_dt = date.today()
-    return input_dt + timedelta(days=1)
+    r.. input_dt + timedelta(days=1)
 
 """ fr = freeze_time('2020-07-09')
 fr.start()

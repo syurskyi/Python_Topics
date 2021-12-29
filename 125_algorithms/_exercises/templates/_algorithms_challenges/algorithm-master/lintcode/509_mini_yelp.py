@@ -60,8 +60,8 @@ class GeoHash:
 """
 range query from list by `bisect`
 """
-import bisect
-from YelpHelper import Location, Restaurant, GeoHash, Helper
+_______ bisect
+____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
 class MiniYelp:
@@ -74,7 +74,7 @@ class MiniYelp:
 
     restaurants = {}
     restr_to_geohash = {}
-    geohashs = []
+    geohashs    # list
 
     # @param {str} name
     # @param {Location} location
@@ -87,7 +87,7 @@ class MiniYelp:
         self.restr_to_geohash[restaurant.id] = hashcode
         bisect.insort(self.geohashs, hashcode)
 
-        return restaurant.id
+        r.. restaurant.id
 
     # @param {int} restaurant_id
     # @return nothing
@@ -111,32 +111,32 @@ class MiniYelp:
         left = bisect.bisect_left(self.geohashs, prefix)
         right = bisect.bisect(self.geohashs, prefix + '{')
 
-        neighbors = []
-        hashcode = restaurant = distance = None
-        for i in range(left, right):
+        neighbors    # list
+        hashcode = restaurant = distance = N..
+        ___ i __ r..(left, right):
             hashcode = self.geohashs[i]
             restaurant = self.restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
-                neighbors.append((distance, restaurant))
+                neighbors.a..((distance, restaurant))
 
-        neighbors.sort(key=lambda item: item[0])
-        return [
+        neighbors.sort(key=l.... item: item[0])
+        r.. [
             restr.name
-            for _, restr in neighbors
+            ___ _, restr __ neighbors
         ]
 
     ___ get_length(self, k):
-        n = len(self.ERROR_IN_KM)
+        n = l..(self.ERROR_IN_KM)
 
-        for i in range(n):
+        ___ i __ r..(n):
             __ k > self.ERROR_IN_KM[i]:
-                return i
+                r.. i
 
-        return n
+        r.. n
 
     ___ get_restr_hashcode(self, restaurant):
-        return '{0}:{1}'.format(
+        r.. '{0}:{1}'.format(
             GeoHash.encode(restaurant.location),
             restaurant.id
         )
@@ -145,7 +145,7 @@ class MiniYelp:
 """
 trie
 """
-from YelpHelper import Location, Restaurant, GeoHash, Helper
+____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
 class Trie:
@@ -153,46 +153,46 @@ class Trie:
         self.root = self._new_node()
 
     ___ __repr__(self):
-        return repr(self.root)
+        r.. repr(self.root)
 
     ___ put(self, key):
-        __ not key:
-            return
+        __ n.. key:
+            r..
 
         parent = self.root
         parent['keys'].add(key)
-        for char in key:
-            __ char not in parent['children']:
+        ___ char __ key:
+            __ char n.. __ parent['children']:
                 parent['children'][char] = self._new_node()
             parent['children'][char]['keys'].add(key)
             parent = parent['children'][char]
 
     ___ pick(self, key):
-        __ not key:
-            return
+        __ n.. key:
+            r..
 
         parent = self.root
         parent['keys'].discard(key)
-        for char in key:
-            __ char not in parent['children']:
-                return
+        ___ char __ key:
+            __ char n.. __ parent['children']:
+                r..
             parent = parent['children'][char]
             parent['keys'].discard(key)
 
     ___ get_keys_by_prefix(self, prefix):
         parent = self.root
-        __ not prefix:
-            return list(parent['keys'])
+        __ n.. prefix:
+            r.. l..(parent['keys'])
 
-        for char in prefix:
-            __ char not in parent['children']:
-                return []
+        ___ char __ prefix:
+            __ char n.. __ parent['children']:
+                r.. []
             parent = parent['children'][char]
 
-        return list(parent['keys'])
+        r.. l..(parent['keys'])
 
     ___ _new_node(self):
-        return {
+        r.. {
             'keys': set(),
             'children': {}
         }
@@ -221,7 +221,7 @@ class MiniYelp:
         self.restr_to_geohash[restaurant.id] = hashcode
         self.trie.put(hashcode)
 
-        return restaurant.id
+        r.. restaurant.id
 
     # @param {int} restaurant_id
     # @return nothing
@@ -241,31 +241,31 @@ class MiniYelp:
         prefix = GeoHash.encode(location)[:length]
         hashcodes = self.trie.get_keys_by_prefix(prefix)
 
-        neighbors = []
-        restaurant = distance = None
-        for hashcode in hashcodes:
+        neighbors    # list
+        restaurant = distance = N..
+        ___ hashcode __ hashcodes:
             restaurant = self.restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
-                neighbors.append((distance, restaurant))
+                neighbors.a..((distance, restaurant))
 
-        neighbors.sort(key=lambda item: item[0])
-        return [
+        neighbors.sort(key=l.... item: item[0])
+        r.. [
             restr.name
-            for _, restr in neighbors
+            ___ _, restr __ neighbors
         ]
 
     ___ get_length(self, k):
-        n = len(self.ERROR_IN_KM)
+        n = l..(self.ERROR_IN_KM)
 
-        for i in range(n):
+        ___ i __ r..(n):
             __ k > self.ERROR_IN_KM[i]:
-                return i
+                r.. i
 
-        return n
+        r.. n
 
     ___ get_restr_hashcode(self, restaurant):
-        return '{0}:{1}'.format(
+        r.. '{0}:{1}'.format(
             GeoHash.encode(restaurant.location),
             restaurant.id
         )

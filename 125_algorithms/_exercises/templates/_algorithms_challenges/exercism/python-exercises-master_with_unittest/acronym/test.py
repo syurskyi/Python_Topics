@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from acronym import abbreviate
+____ acronym _______ abbreviate
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
@@ -26,5 +26,5 @@ class AcronymTest(unittest.TestCase):
             abbreviate('Complementary metal-oxide semiconductor'), 'CMOS')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

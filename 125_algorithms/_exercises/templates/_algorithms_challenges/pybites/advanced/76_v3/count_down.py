@@ -1,17 +1,17 @@
-from functools import singledispatch
+____ functools _______ singledispatch
 
 
 @singledispatch
 ___ count_down(data_type):
     d = ''
     try:
-        __ len(data_type) != 4:
+        __ l..(data_type) != 4:
             raise ValueError
-        for i in data_type:
+        ___ i __ data_type:
             d += f'{i}'
     except TypeError:
         raise ValueError
-    for i in range(4, 0, -1):
+    ___ i __ r..(4, 0, -1):
         print(d[:i])
 
 

@@ -5,15 +5,15 @@ class Solution:
     @return: An integer
     """
     ___ lastPosition(self, nums, target):
-        __ not nums or not target:
-            return -1
+        __ n.. nums o. n.. target:
+            r.. -1
 
-        l, m, r = 0, 0, len(nums) - 1
+        l, m, r = 0, 0, l..(nums) - 1
         while l + 1 < r:
             m = l + (r - l) // 2
             __ nums[m] > target:
                 r = m
-            else:
+            ____:
                 l = m
 
         """
@@ -21,9 +21,9 @@ class Solution:
         we've compared all child above but the both ends
         so we should check the both ends
         """
-        __ nums[r] == target:
-            return r
-        elif nums[l] == target:
-            return l
-        else:
-            return -1
+        __ nums[r] __ target:
+            r.. r
+        ____ nums[l] __ target:
+            r.. l
+        ____:
+            r.. -1

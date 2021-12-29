@@ -23,8 +23,8 @@ Note:
 0 <= A.length <= 40000
 0 <= A[i] < 40000
 """
-from typing import List
-from collections import Counter
+____ typing _______ List
+____ collections _______ Counter
 
 
 class Solution:
@@ -32,21 +32,21 @@ class Solution:
         """
         sort + at least previous + 1
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         A.sort()
         ret = 0
         prev = A[0]
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             target = prev + 1
             __ A[i] < target:
                 # change A[i] to target
                 ret += target - A[i]
                 prev = target 
-            else:
+            ____:
                 prev = A[i]
-        return ret
+        r.. ret
 
 
 class Solution:
@@ -57,14 +57,14 @@ class Solution:
         largest count 3999 + 40000
         """
         counter = Counter(A)
-        q = []
+        q    # list
         ret = 0
-        for i in range(40000 * 2):
+        ___ i __ r..(40000 * 2):
             __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1))
-            elif q and counter[i] == 0:
+            ____ q and counter[i] __ 0:
                 ret += i - q.pop()
-        return ret
+        r.. ret
 
 class Solution:
     ___ minIncrementForUnique(self, A: List[int]) -> int:
@@ -77,18 +77,18 @@ class Solution:
         """
         ret = 0
         A.sort()
-        A.append(1 << 31 - 1)  # append max
+        A.a..(1 << 31 - 1)  # append max
         demand = 0
         supply = 0
-        for i in range(1, len(A)):
-            __ A[i] == A[i-1]:
+        ___ i __ r..(1, l..(A)):
+            __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error
                 ret -= A[i-1]  # smart
-            else:
-                supply = min(demand, A[i] - A[i-1] - 1)
+            ____:
+                supply = m..(demand, A[i] - A[i-1] - 1)
                 # revert to 0, then increase to A[i-1] + k
                 ret += (A[i-1] + 1 + A[i-1] + supply) * supply // 2
                 demand -= supply
 
-        return ret
+        r.. ret

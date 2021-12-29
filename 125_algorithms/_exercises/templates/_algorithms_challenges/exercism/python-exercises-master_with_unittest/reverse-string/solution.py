@@ -1,2 +1,2 @@
 ___ reverse(text=''):
-    return text[::-1]
+    r.. text[::-1]

@@ -31,7 +31,7 @@ Follow up:
 Can you solve it using only one pass?
 Can you solve it in O(1) space?
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -42,39 +42,39 @@ class Solution:
         ret = 0
         up_cnt = 0
         down_cnt = 0
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             __ down_cnt and A[i] >= A[i-1]:
                 up_cnt = 0
                 down_cnt = 0
             __ A[i] > A[i-1]:
                 up_cnt += 1
-            elif A[i] < A[i-1]:
+            ____ A[i] < A[i-1]:
                 down_cnt += 1
             __ up_cnt and down_cnt:
                 ret = max(ret, up_cnt + down_cnt + 1)
 
-        return ret
+        r.. ret
 
     ___ longestMountain(self, A: List[int]) -> int:
         """
         dp
         """
-        n = len(A)
-        U = [0 for _ in A]  # up counter from left to right
-        D = [0 for _ in A]  # down counter from right to left
-        for i in range(1, n):
+        n = l..(A)
+        U = [0 ___ _ __ A]  # up counter from left to right
+        D = [0 ___ _ __ A]  # down counter from right to left
+        ___ i __ r..(1, n):
             __ A[i] > A[i-1]:
                 U[i] = U[i-1] + 1
-        for i in range(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1):
             __ A[i] > A[i+1]:
                 D[i] = D[i+1] + 1
 
         ret = 0
-        for i in range(n):
+        ___ i __ r..(n):
             __ U[i] > 0 and D[i] > 0:
                 ret = max(ret, U[i] + D[i] + 1)
 
-        return ret
+        r.. ret
 
     ___ longestMountain_complicated(self, A: List[int]) -> int:
         """
@@ -84,31 +84,31 @@ class Solution:
         ret = 0
         l = 1
         expect_incr = True
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1
-                elif A[i] < A[i-1] and l >= 2:
+                ____ A[i] < A[i-1] and l >= 2:
                     expect_incr = False
                     l += 1
                     ret = max(ret, l)
-                else:
+                ____:
                     l = 1
 
-            else:
+            ____:
                 __ A[i] < A[i-1]:
                     l += 1
                     ret = max(ret, l)
-                elif A[i] == A[i-1]:
+                ____ A[i] __ A[i-1]:
                     expect_incr = True
                     l = 1
-                else:
+                ____:
                     expect_incr = True
                     l = 2
 
-        return ret __ ret >= 3 else 0
+        r.. ret __ ret >= 3 ____ 0
 
 
-__ __name__ == "__main__":
-    assert Solution().longestMountain([2,1,4,7,3,2,5]) == 5
-    assert Solution().longestMountain([9,8,7,6,5,4,3,2,1,0]) == 0
+__ __name__ __ "__main__":
+    ... Solution().longestMountain([2,1,4,7,3,2,5]) __ 5
+    ... Solution().longestMountain([9,8,7,6,5,4,3,2,1,0]) __ 0

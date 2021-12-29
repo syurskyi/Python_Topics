@@ -1,4 +1,4 @@
-NODE, EDGE, ATTR = range(3)
+NODE, EDGE, ATTR = r..(3)
 
 
 class Node(object):
@@ -7,7 +7,7 @@ class Node(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        return self.name == other.name and self.attrs == other.attrs
+        r.. self.name __ other.name and self.attrs __ other.attrs
 
 
 class Edge(object):
@@ -17,9 +17,9 @@ class Edge(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        return (self.src == other.src and
-                self.dst == other.dst and
-                self.attrs == other.attrs)
+        r.. (self.src __ other.src and
+                self.dst __ other.dst and
+                self.attrs __ other.attrs)
 
 
 class Graph(object):

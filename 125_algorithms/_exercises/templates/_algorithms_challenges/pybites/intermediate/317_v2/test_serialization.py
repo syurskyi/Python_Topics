@@ -1,8 +1,8 @@
-from datetime import date
-import time
-from typing import NamedTuple
+____ datetime _______ date
+_______ time
+____ typing _______ NamedTuple
 
-from serialization import (download_pickle_file,
+____ serialization _______ (download_pickle_file,
                            deserialize,
                            serialize,
                            TMP,
@@ -27,7 +27,7 @@ ___ test_deserialize_movie_rented_data():
         MovieRented('Sonic', 10, date(2020, 11, 4))
     ]
     actual = deserialize()
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_serialize_and_deserialize_other_data():
@@ -39,4 +39,4 @@ ___ test_serialize_and_deserialize_other_data():
     serialize(pkl_file, data=data)
     actual = deserialize(pkl_file)
     expected = data
-    assert actual == expected
+    ... actual __ expected

@@ -9,7 +9,7 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        return num-9*((num-1)/9) __ num != 0 else 0
+        r.. num-9*((num-1)/9) __ num != 0 ____ 0
     
     ___ addDigits_slow(self, num):
         while num >= 10:
@@ -19,4 +19,4 @@ class Solution(object):
                 num = num//10
                 newNum += digit
             num = newNum
-        return num
+        r.. num

@@ -6,12 +6,12 @@ class Solution:
     """
     ___ twoSum2(self, A, target):
         ans = 0
-        __ not A or len(A) < 2:
-            return ans
+        __ n.. A o. l..(A) < 2:
+            r.. ans
 
         A.sort()
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         while left < right:
             # if minimum + maximum still <= target
             # ignore the 2nd, 3rd maximum
@@ -24,4 +24,4 @@ class Solution:
             ans += right - left
             right -= 1
 
-        return ans
+        r.. ans

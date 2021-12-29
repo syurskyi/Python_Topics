@@ -29,8 +29,8 @@ ___ about():
     wp  jp.QuasarPage(tailwindTrue)
 
 ___ sum_up(widget, msg):
-    sum  f__(widget.in1.value) + f__(widget.in2.value)
-    widget.d.text  sum
+    s..  f__(widget.in1.value) + f__(widget.in2.value)
+    widget.d.text  s..
 
 ___ mouse_enter(widget, msg):
     widget.text  "A mouse entered the house!"

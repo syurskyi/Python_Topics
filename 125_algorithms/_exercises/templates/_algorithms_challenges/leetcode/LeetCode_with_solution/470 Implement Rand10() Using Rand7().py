@@ -10,7 +10,7 @@ Do NOT use system's Math.random().
 
 # The rand7() API is already defined for you.
 ___ rand7():
-    return 0
+    r.. 0
 
 
 class Solution:
@@ -27,4 +27,4 @@ class Solution:
             rv2 = rand7()
             s = (rv1 - 1) * 7 + (rv2 - 1)  # make it start from 0
             __ s < 40:   # s \in [0, 40)
-                return s % 10 + 1  # since I make it start from 0
+                r.. s % 10 + 1  # since I make it start from 0

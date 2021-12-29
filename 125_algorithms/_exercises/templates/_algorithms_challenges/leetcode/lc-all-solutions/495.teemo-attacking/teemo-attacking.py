@@ -5,18 +5,18 @@ class Solution(object):
     :type duration: int
     :rtype: int
     """
-    __ not timeSeries:
-      return 0
+    __ n.. timeSeries:
+      r.. 0
     ans = 0
     start = timeSeries[0]
     end = start + duration
-    for i in range(1, len(timeSeries)):
+    ___ i __ r..(1, l..(timeSeries)):
       s = timeSeries[i]
       __ s <= end:
         end = s + duration
-      else:
+      ____:
         ans += end - start
         start = s
         end = start + duration
     ans += end - start
-    return ans
+    r.. ans

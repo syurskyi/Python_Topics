@@ -1,5 +1,5 @@
-import unittest
-from markdown import parse_markdown
+_______ unittest
+____ markdown _______ parse_markdown
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
@@ -46,5 +46,5 @@ class MarkdownTest(unittest.TestCase):
             '<li><em>Italic Item</em></li></ul>')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

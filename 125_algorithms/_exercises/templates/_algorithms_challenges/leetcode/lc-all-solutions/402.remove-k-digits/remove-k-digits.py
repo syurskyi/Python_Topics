@@ -5,12 +5,12 @@ class Solution(object):
     :type k: int
     :rtype: str
     """
-    stack = []
-    for c in num:
+    stack    # list
+    ___ c __ num:
       while k > 0 and stack and stack[-1] > c:
         stack.pop()
         k -= 1
-      stack.append(c)
+      stack.a..(c)
     __ k > 0:
       stack = stack[:-k]
-    return "".join(stack).lstrip("0") or "0"
+    r.. "".join(stack).lstrip("0") o. "0"

@@ -21,8 +21,8 @@ class Solution:
         :param target: an integer to be searched
         :return: a list of length 2, [index1, index2]
         """
-        result = []
-        length = len(A)
+        result    # list
+        length = l..(A)
 
         # low-bound binary search
         start = 0
@@ -31,13 +31,13 @@ class Solution:
             mid = (start+end)/2
             __ A[mid]<target:  # NOTICE: less than
                 start = mid+1
-            else:
+            ____:
                 end = mid
 
-        __ start<length and A[start]==target:
-            result.append(start)
-        else:
-            return [-1, -1]
+        __ start<length and A[start]__target:
+            result.a..(start)
+        ____:
+            r.. [-1, -1]
 
         # high-bound binary search
         start = start
@@ -46,8 +46,8 @@ class Solution:
             mid = (start+end)/2
             __ A[mid]<=target:  # NOTICE: less than or equal
                 start = mid+1
-            else:
+            ____:
                 end = mid
 
-        result.append(start-1)
-        return result
+        result.a..(start-1)
+        r.. result

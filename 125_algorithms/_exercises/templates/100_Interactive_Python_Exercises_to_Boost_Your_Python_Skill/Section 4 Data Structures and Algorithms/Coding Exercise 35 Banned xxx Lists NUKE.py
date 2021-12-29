@@ -1,2 +1,2 @@
 ___ foo(mylist):
-    return [string for string in mylist __ isinstance(string, str) and "xxx" in string ]
+    r.. [string ___ string __ mylist __ isi..(string, str) and "xxx" __ string ]

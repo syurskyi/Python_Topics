@@ -4,13 +4,13 @@ class Solution:
         :type strs: List[str]
         :rtype: str
         """
-        __ not strs or not strs[0]:
-            return ''
+        __ n.. strs o. n.. strs[0]:
+            r.. ''
 
         t = strs[0]
-        for i in range(len(t)):
-            for s in strs:
-                __ i >= len(s) or s[i] != t[i]:
-                    return t[:i]
+        ___ i __ r..(l..(t)):
+            ___ s __ strs:
+                __ i >= l..(s) o. s[i] != t[i]:
+                    r.. t[:i]
 
-        return t
+        r.. t

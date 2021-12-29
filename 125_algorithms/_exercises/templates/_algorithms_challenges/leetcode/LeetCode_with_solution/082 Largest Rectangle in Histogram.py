@@ -12,7 +12,7 @@ For example,
 Given height = [2,1,5,6,2,3],
 return 10.
 """
-import sys
+_______ sys
 __author__ = 'Danyang'
 
 
@@ -39,23 +39,23 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        __ not height:
-            return 0
+        __ n.. height:
+            r.. 0
 
-        n = len(height)
+        n = l..(height)
         gmax = -sys.maxint-1
-        inc_stack = []  # store the idx, increasing stack
+        inc_stack    # list  # store the idx, increasing stack
 
-        for i in xrange(n):
+        ___ i __ xrange(n):
             while inc_stack and height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
                     area = height[last]*(i-(inc_stack[-1]+1))
-                else:
+                ____:
                     area = height[last]*i
                 gmax = max(gmax, area)
 
-            inc_stack.append(i)
+            inc_stack.a..(i)
 
         # after processing all heights, process the remaining stack
         i = n
@@ -63,11 +63,11 @@ class Solution:
             last = inc_stack.pop()
             __ inc_stack:
                 area = height[last]*(i-(inc_stack[-1]+1))
-            else:
+            ____:
                 area = height[last]*i
             gmax = max(gmax, area)
 
-        return gmax
+        r.. gmax
 
     ___ largestRectangleArea_TLE(self, height):
         """
@@ -75,19 +75,19 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        __ not height:
-            return 0
+        __ n.. height:
+            r.. 0
 
         max_area = -1<<32
-        for ind, val in enumerate(height):
+        ___ ind, val __ enumerate(height):
             min_h = val
             max_area = max(max_area, val*1)
-            for j in xrange(ind, -1, -1):
-                min_h = min(min_h, height[j])
+            ___ j __ xrange(ind, -1, -1):
+                min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 max_area = max(max_area, current_area)
 
-        return max_area
+        r.. max_area
 
 
     ___ largestRectangleArea_complex(self, height):
@@ -100,22 +100,22 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        __ not height:
-            return 0
+        __ n.. height:
+            r.. 0
 
         global_max = -1<<32
-        for ind, val in enumerate(height):
-            __ ind+1<len(height) and val<=height[ind+1]:  # PRUNE, find until peak
+        ___ ind, val __ enumerate(height):
+            __ ind+1<l..(height) and val<=height[ind+1]:  # PRUNE, find until peak
                 continue
 
             min_h = val
             global_max = max(global_max, min_h*1)
-            for j in xrange(ind, -1, -1):  # scanning backward
-                min_h = min(min_h, height[j])
+            ___ j __ xrange(ind, -1, -1):  # scanning backward
+                min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 global_max = max(global_max, current_area)
 
-        return global_max
+        r.. global_max
 
 
     ___ largestRectangleArea_error(self, height):
@@ -128,23 +128,23 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        __ not height:
-            return 0
+        __ n.. height:
+            r.. 0
 
-        length = len(height)
+        length = l..(height)
         global_max = -1<<32
-        inc_stack = []  # store the pointer
+        inc_stack    # list  # store the pointer
 
         i = 0
         while i<length:
-            __ not inc_stack or height[i]>=height[inc_stack[-1]]:
-                inc_stack.append(i)
+            __ n.. inc_stack o. height[i]>=height[inc_stack[-1]]:
+                inc_stack.a..(i)
                 i += 1
-            else:
+            ____:
                 last = inc_stack.pop()
                 __ inc_stack:
                     area = height[last] * (i-last)
-                else:
+                ____:
                     area = height[last] * i
                 global_max = max(global_max, area)
 
@@ -153,16 +153,16 @@ class Solution:
             last = inc_stack.pop()
             __ inc_stack:
                 area = height[last]*(i-last)
-            else:
+            ____:
                 area = height[last]*i
             global_max = max(global_max, area)
-        return global_max
+        r.. global_max
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     # height = [2, 1, 2]
     height = [4, 2, 0, 3, 2, 5]
-    assert Solution().largestRectangleArea(height) == Solution().largestRectangleArea_complex(height)
+    ... Solution().largestRectangleArea(height) __ Solution().largestRectangleArea_complex(height)
 
 
 

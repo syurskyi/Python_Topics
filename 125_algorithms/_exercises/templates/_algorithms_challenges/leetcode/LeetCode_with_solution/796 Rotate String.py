@@ -25,17 +25,17 @@ class Solution:
         """
         brute force O(n^2), shift and compare but short circuit
         """
-        __ len(A) != len(B):
-            return False
+        __ l..(A) != l..(B):
+            r.. False
 
-        __ not A and not B:
-            return True
+        __ n.. A and n.. B:
+            r.. True
 
-        for i in range(1, len(A)):
-            for j in range(len(B)):
-                __ A[(i + j) % len(A)] != B[j]:
+        ___ i __ r..(1, l..(A)):
+            ___ j __ r..(l..(B)):
+                __ A[(i + j) % l..(A)] != B[j]:
                     break
-            else:
-                return True
+            ____:
+                r.. True
 
-        return False
+        r.. False

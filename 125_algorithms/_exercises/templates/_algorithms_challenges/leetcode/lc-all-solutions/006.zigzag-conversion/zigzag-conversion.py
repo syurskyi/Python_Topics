@@ -6,18 +6,18 @@ class Solution(object):
     :rtype: str
     """
     __ numRows <= 1:
-      return s
-    n = len(s)
-    ans = []
+      r.. s
+    n = l..(s)
+    ans    # list
     step = 2 * numRows - 2
-    for i in range(numRows):
+    ___ i __ r..(numRows):
       one = i
       two = -i
-      while one < n or two < n:
+      while one < n o. two < n:
         __ 0 <= two < n and one != two and i != numRows - 1:
-          ans.append(s[two])
+          ans.a..(s[two])
         __ one < n:
-          ans.append(s[one])
+          ans.a..(s[one])
         one += step
         two += step
-    return "".join(ans)
+    r.. "".join(ans)

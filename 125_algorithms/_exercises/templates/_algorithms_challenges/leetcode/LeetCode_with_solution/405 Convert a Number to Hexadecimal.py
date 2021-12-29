@@ -34,12 +34,12 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        ret = []
-        while len(ret) < 8 and num:
-            ret.append(self.encode(num & 0xf))
+        ret    # list
+        while l..(ret) < 8 and num:
+            ret.a..(self.encode(num & 0xf))
             num >>= 4
 
-        return ''.join(ret[::-1]) or '0'
+        r.. ''.join(ret[::-1]) o. '0'
 
     ___ toHexNormal(self, num):
         """
@@ -47,19 +47,19 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        ret = []
-        while len(ret) < 8 and num:
-            ret.append(self.encode(num % 16))
+        ret    # list
+        while l..(ret) < 8 and num:
+            ret.a..(self.encode(num % 16))
             num /= 16
 
-        return ''.join(ret[::-1]) or '0'
+        r.. ''.join(ret[::-1]) o. '0'
 
     ___ encode(self, d):
         __ 0 <= d < 10:
-            return str(d)
+            r.. str(d)
 
-        return chr(ord('a') + d - 10)
+        r.. chr(ord('a') + d - 10)
 
 
-__ __name__ == "__main__":
-    assert Solution().toHex(-1) == 'ffffffff'
+__ __name__ __ "__main__":
+    ... Solution().toHex(-1) __ 'ffffffff'

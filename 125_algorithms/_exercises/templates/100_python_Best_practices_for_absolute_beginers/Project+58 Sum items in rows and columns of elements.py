@@ -1,4 +1,4 @@
-from random import randint
+____ random _______ randint
 
 col  6
 row  6
@@ -7,18 +7,18 @@ matrix  []
 sum_col  [0]*col
 sum_row  [0]*row
 
-for i in range(row):
+___ i __ r..(row):
     myrow  []
-    for j in range(col):
-        myrow.append(randint(0,3))
-    matrix.append(myrow)
+    ___ j __ r..(col):
+        myrow.a..(randint(0,3))
+    matrix.a..(myrow)
 
-for i in range(row):
-    for j in range(col):
+___ i __ r..(row):
+    ___ j __ r..(col):
         sum_row[i] + matrix[i][j]
         sum_col[j] + matrix[i][j]
 
-for i in range(row):
+___ i __ r..(row):
     print(matrix[i], "|", sum_row[i])
 
 print("_" *col*4)

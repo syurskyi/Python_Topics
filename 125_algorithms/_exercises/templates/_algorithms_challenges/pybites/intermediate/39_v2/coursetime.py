@@ -1,7 +1,7 @@
-from datetime import datetime, timedelta
-import os
-import re
-import urllib.request
+____ datetime _______ datetime, timedelta
+_______ os
+_______ re
+_______ urllib.request
 
 # getting the data
 COURSE_TIMES = os.path.join(
@@ -26,27 +26,27 @@ ___ get_all_timestamps():
         Return a list of MM:SS timestamps
     """
 
-    course_times = []
+    course_times    # list
     with open(COURSE_TIMES,'r') as f:
-        for line in f:
+        ___ line __ f:
             result = re.search(r'\((\d+:\d+)\)',line)
             __ result:
-                course_times.append(result.group(1))
+                course_times.a..(result.group(1))
 
-    return course_times
+    r.. course_times
 
 ___ calc_total_course_duration(timestamps):
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     
     time_elapsed = timedelta()
-    for timestamp in timestamps:
+    ___ timestamp __ timestamps:
         minutes,seconds = timestamp.split(':')
         minutes = int(minutes)
         seconds = int(seconds)
         time_elapsed += timedelta(minutes=minutes,seconds=seconds)
 
-    return str(time_elapsed)
+    r.. str(time_elapsed)
 
 
 

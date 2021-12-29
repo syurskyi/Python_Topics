@@ -1,5 +1,5 @@
-import pytest
-from primitive_date_inferrer import get_dates, InfDateFmtError
+_______ pytest
+____ primitive_date_inferrer _______ get_dates, InfDateFmtError
 
 
 ___ test_tie():
@@ -79,7 +79,7 @@ ___ test_mmddyy():
         "Invalid",
         "Invalid",
     ]
-    assert get_dates(dates) == results
+    ... get_dates(dates) __ results
 
 
 ___ test_yymmdd():
@@ -114,7 +114,7 @@ ___ test_yymmdd():
         "1971-04-19",
         "1985-08-09",
     ]
-    assert get_dates(dates) == results
+    ... get_dates(dates) __ results
 
 
 ___ test_ddmmyy():
@@ -149,15 +149,15 @@ ___ test_ddmmyy():
         "2024-11-30",
         "2051-01-08",
     ]
-    assert get_dates(dates) == results
+    ... get_dates(dates) __ results
 
 
 ___ test_different_enum():
     """ Modified enum - now it supports 4 different time formats.
         Order of formats is changed as well"""
-    from enum import Enum
+    ____ enum _______ Enum
     # import the module with the tested code which contains the original emum
-    import primitive_date_inferrer as pdi
+    _______ primitive_date_inferrer as pdi
 
     class DateFormat_ext(Enum):
         DDMMYYYY = 0
@@ -169,10 +169,10 @@ ___ test_different_enum():
         @classmethod
         ___ get_d_parse_formats(cls, idx_ N..
             d_parse_formats = ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
-            __ idx is None:
-                return d_parse_formats
-            __ 0 <= idx <= len(d_parse_formats):
-                return d_parse_formats[idx]
+            __ idx __ N..
+                r.. d_parse_formats
+            __ 0 <= idx <= l..(d_parse_formats):
+                r.. d_parse_formats[idx]
             raise ValueError
 
     # override the enum in the tested code module
@@ -206,4 +206,4 @@ ___ test_different_enum():
         "Invalid",
         "1951-01-08",
     ]
-    assert get_dates(dates) == results
+    ... get_dates(dates) __ results

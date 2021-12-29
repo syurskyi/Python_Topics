@@ -1,5 +1,5 @@
-from collections import namedtuple
-from operator import attrgetter
+____ collections _______ namedtuple
+____ operator _______ attrgetter
 
 Tweet = namedtuple('Tweet', 'text polarity')
 
@@ -31,19 +31,19 @@ tweets = [
 ___ filter_tweets_on_polarity(tweets, keep_positive=True):
     """Filter the tweets by polarity score, receives keep_positive bool which
        determines what to keep. Returns a list of filtered tweets."""
-    positive = []
-    negative = []
-    for tweet in tweets:
+    positive    # list
+    negative    # list
+    ___ tweet __ tweets:
         __ tweet.polarity > 0:
-            positive.append(tweet)
-        else:
-            negative.append(tweet)
-    return [positive __ keep_positive is True else negative][0]
+            positive.a..(tweet)
+        ____:
+            negative.a..(tweet)
+    r.. [positive __ keep_positive __ True ____ negative][0]
 
 ___ order_tweets_by_polarity(tweets, positive_highest=True):
     """Sort the tweets by polarity, receives positive_highest which determines
        the order. Returns a list of ordered tweets."""
-    __ positive_highest is True:
-        return sorted(tweets, key=attrgetter('polarity'), reverse=True)
-    else:
-        return sorted(tweets, key=attrgetter('polarity'), reverse=False)
+    __ positive_highest __ True:
+        r.. s..(tweets, key=attrgetter('polarity'), r.._T..
+    ____:
+        r.. s..(tweets, key=attrgetter('polarity'), reverse=False)

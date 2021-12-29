@@ -11,21 +11,21 @@ class Solution(object):
         :type upper: int
         :rtype: List[str]
         """
-        res = []
+        res    # list
         prev = lower
-        for num in nums:
-            __ num == prev+1:
-                res.append('%s' % prev)
-            elif num > prev+1:
-                res.append('%s->%s' % (prev, min(num-1, upper)))
+        ___ num __ nums:
+            __ num __ prev+1:
+                res.a..('%s' % prev)
+            ____ num > prev+1:
+                res.a..('%s->%s' % (prev, m..(num-1, upper)))
             prev = num+1
             __ prev > upper:
                 break
-        __ upper == prev:
-            res.append('%s' % prev)
-        elif upper > prev:
-            res.append('%s->%s' % (prev, upper))
-        return res
+        __ upper __ prev:
+            res.a..('%s' % prev)
+        ____ upper > prev:
+            res.a..('%s->%s' % (prev, upper))
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -34,7 +34,7 @@ class Solution(object):
                 0, 99,
             ],
         ]
-        for nums, lower, upper in testCases:
+        ___ nums, lower, upper __ testCases:
             print('nums: %s' % nums)
             print('lower: %s' % lower)
             print('upper: %s' % upper)
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

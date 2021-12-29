@@ -1,9 +1,9 @@
 ___ prevent_distractions(txt):
     a_list = ["Danny Devito","roasts","vine","meme","anime"]
     index = 0
-    while index < len(a_list):
+    while index < l..(a_list):
         word = a_list[index]
-        __ txt.count(word) > 0:
-            return "NO!"
+        __ txt.c.. word) > 0:
+            r.. "NO!"
         index = index + 1
-    return "Safe watching!
+    r.. "Safe watching!

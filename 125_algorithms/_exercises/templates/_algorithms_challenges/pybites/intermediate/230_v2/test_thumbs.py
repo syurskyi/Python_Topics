@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from thumbs import Thumbs
+____ thumbs _______ Thumbs
 
 
 @pytest.fixture(scope="module")
 ___ thumbs():
-    return Thumbs()
+    r.. Thumbs()
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -31,7 +31,7 @@ ___ thumbs():
     (10, "👍 (10x)"),
 ])
 ___ test_operator_overloading_works_both_ways(arg, expected, thumbs):
-    assert thumbs * arg == arg * thumbs == expected
+    ... thumbs * arg __ arg * thumbs __ expected
 
 
 ___ test_exception(thumbs):

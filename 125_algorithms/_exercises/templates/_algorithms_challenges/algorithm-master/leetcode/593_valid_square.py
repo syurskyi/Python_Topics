@@ -7,13 +7,13 @@ class Solution:
         :type p4: List[int]
         :rtype: bool
         """
-        ps = []
+        ps    # list
 
-        for p in (p1, p2, p3, p4):
-            __ not p:
-                return False
+        ___ p __ (p1, p2, p3, p4):
+            __ n.. p:
+                r.. False
 
-            ps.append(p)
+            ps.a..(p)
 
         ps.sort()
 
@@ -26,9 +26,9 @@ class Solution:
         l03 = self.get_distance(ps[0], ps[3])
         l12 = self.get_distance(ps[1], ps[2])
 
-        return all((
-            l01 == l02 == l13 == l23 > 0,
-            l03 == l12,
+        r.. a..((
+            l01 __ l02 __ l13 __ l23 > 0,
+            l03 __ l12,
         ))
 
     ___ get_distance(self, a, b):
@@ -37,4 +37,4 @@ class Solution:
         """
         dx = a[0] - b[0]
         dy = a[1] - b[1]
-        return (dx * dx + dy * dy) ** 0.5
+        r.. (dx * dx + dy * dy) ** 0.5

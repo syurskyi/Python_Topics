@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from clean import remove_punctuation
+____ clean _______ remove_punctuation
 
 
 @pytest.mark.parametrize("input_argument, expected_return", [
@@ -14,4 +14,4 @@ from clean import remove_punctuation
      'Some other chars  lets delete them'),
 ])
 ___ test_remove_punctuation(input_argument, expected_return):
-    assert remove_punctuation(input_argument) == expected_return
+    ... remove_punctuation(input_argument) __ expected_return

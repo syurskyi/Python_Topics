@@ -6,28 +6,28 @@ Created on Apr 18, 2017
 
 class Solution(object):
     ___ numberOfBoomerangs(self, points):
-        n = len(points)
+        n = l..(points)
         res = 0
-        for i in range(n):
+        ___ i __ r..(n):
             hashmap = {}
             point1 = points[i]
-            for j in range(n):
+            ___ j __ r..(n):
                 point2 = points[j]
                 diff = (point2[1]-point1[1])**2+(point2[0]-point1[0])**2
                 hashmap[diff] = hashmap.get(diff, 0)+1
-            for val in hashmap.values():
+            ___ val __ hashmap.values():
                 res += val*(val-1)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [[0,0],[1,0],[2,0]],
         ]
-        for points in testCases:
+        ___ points __ testCases:
             print('points: %s' % points)
             result = self.numberOfBoomerangs(points)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

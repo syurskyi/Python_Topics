@@ -7,9 +7,9 @@ ___ dec_to_base(number, base):
     """
     # your code
     __ number < base:
-        return number
-    else:
-        return 10 * dec_to_base(number//base, base) + (number%base)
+        r.. number
+    ____:
+        r.. 10 * dec_to_base(number//base, base) + (number%base)
 
 
 

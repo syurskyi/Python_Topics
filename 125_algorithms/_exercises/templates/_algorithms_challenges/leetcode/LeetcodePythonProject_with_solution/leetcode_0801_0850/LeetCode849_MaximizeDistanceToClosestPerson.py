@@ -10,14 +10,14 @@ class Solution(object):
         :rtype: int
         """
         res = i = 0
-        for j in range(len(seats)):
-            __ seats[j] == 1:
-                __ i == 0:
+        ___ j __ r..(l..(seats)):
+            __ seats[j] __ 1:
+                __ i __ 0:
                     res = j
-                else:
+                ____:
                     res = max(res, (j-i+1) >> 1)
                 i = j+1
-        return max(res, len(seats)-i)
+        r.. max(res, l..(seats)-i)
     
     ___ maxDistToClosest_twoPass(self, seats):
         """
@@ -25,22 +25,22 @@ class Solution(object):
         :rtype: int
         """
         # two passes, there is a better solution for one pass
-        n = len(seats)
+        n = l..(seats)
         left = [0]*(n+1)
         right = [0]*(n+1)
         left[0] = float('inf')
-        for i in range(n):
-            __ seats[i] == 0:
+        ___ i __ r..(n):
+            __ seats[i] __ 0:
                 left[i+1] = left[i]+1
         right[-1] = float('inf')
-        for i in range(n-1, -1, -1):
-            __ seats[i] == 0:
+        ___ i __ r..(n-1, -1, -1):
+            __ seats[i] __ 0:
                 right[i] = right[i+1]+1
         res = float('-inf')
-        for i in range(n):
+        ___ i __ r..(n):
             __ left[i+1] != 0 and right[i] != 0:
-                res = max(res, min(left[i+1], right[i]))
-        return res
+                res = max(res, m..(left[i+1], right[i]))
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -49,10 +49,10 @@ class Solution(object):
             [0,1],
             [1,0],
         ]
-        for seats in testCases:
+        ___ seats __ testCases:
             result = self.maxDistToClosest(seats)
             print('result: %s' % result)
             print('-='*30)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

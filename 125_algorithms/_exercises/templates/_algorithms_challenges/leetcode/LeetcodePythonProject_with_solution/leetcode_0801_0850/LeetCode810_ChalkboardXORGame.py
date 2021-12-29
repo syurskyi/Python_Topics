@@ -9,9 +9,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        from functools import reduce
-        from operator import xor
-        return len(nums)%2==0 or reduce(xor,nums)==0
+        ____ functools _______ reduce
+        ____ operator _______ xor
+        r.. l..(nums)%2__0 o. reduce(xor,nums)__0
     
     ___ xorGame_own_TLE(self, nums):
         """
@@ -19,39 +19,39 @@ class Solution(object):
         :rtype: bool
         """
         mem = {}
-        return self.helper(nums, mem)
+        r.. self.helper(nums, mem)
     
     ___ helper(self, nums, mem):
         s = str(nums)
-        __ s in mem:
-            return mem[s]
-        __ self.calc(nums) == 0:
+        __ s __ mem:
+            r.. mem[s]
+        __ self.calc(nums) __ 0:
             mem[s] = True
-            return True
+            r.. True
         flag = False
-        for i in range(len(nums)):
-            __ not self.helper(nums[:i]+nums[i+1:], mem):
+        ___ i __ r..(l..(nums)):
+            __ n.. self.helper(nums[:i]+nums[i+1:], mem):
                 flag = True
                 break
         mem[s] = flag
-        return flag
+        r.. flag
     
     ___ calc(self, nums):
         res = 0
-        for num in nums:
+        ___ num __ nums:
             res ^= num
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
 #             [1, 1, 2],
             [1, 1, 2, 3], # True
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.xorGame(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

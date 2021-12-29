@@ -2,9 +2,9 @@ class Solution:
     # @param A, a list of integer
     # @return an integer
     ___ singleNumber(self, A):
-        __ not A:
-            return None
+        __ n.. A:
+            r.. N..
         p = A[0]
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             p = p ^ A[i]
-        return p
+        r.. p

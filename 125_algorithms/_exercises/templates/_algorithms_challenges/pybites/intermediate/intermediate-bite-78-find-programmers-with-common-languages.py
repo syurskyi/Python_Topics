@@ -22,9 +22,9 @@ programmers = {'bob': ['JS', 'PHP', 'Python', 'Perl', 'Java'],
 ___ common_languages(programmers):
     """Receive a dict of keys -> names and values -> a sequence of
        of programming languages, return the common languages"""
-    sets = []
-    for key, value in programmers.items():
-        sets.append(set(value))
+    sets    # list
+    ___ key, value __ programmers.items():
+        sets.a..(set(value))
     first_set = sets[0]
     remaining_sets = sets[1:]
     print(remaining_sets)

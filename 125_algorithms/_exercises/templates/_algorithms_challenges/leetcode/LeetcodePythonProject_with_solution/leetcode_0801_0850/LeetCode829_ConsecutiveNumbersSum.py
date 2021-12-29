@@ -12,13 +12,13 @@ class Solution(object):
         n = N
         res = 1
         i = 3
-        while n%2 == 0:
+        while n%2 __ 0:
             n /= 2
         while i*i <= n:
             count = 0
-            while n%i == 0:
+            while n%i __ 0:
                 n //= i
                 count += 1
             res *= count+1
             i += 2
-        return res __ n == 1 else res*2
+        r.. res __ n __ 1 ____ res*2

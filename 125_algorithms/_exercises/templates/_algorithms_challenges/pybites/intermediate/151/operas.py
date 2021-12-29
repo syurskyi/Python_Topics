@@ -1,6 +1,6 @@
-from collections import namedtuple
-from datetime import datetime
-import itertools
+____ collections _______ namedtuple
+____ datetime _______ datetime
+_______ itertools
 
 Composer = namedtuple('Composer', 'name born died')
 Opera = namedtuple('Opera', 'author play date')
@@ -52,7 +52,7 @@ operas = [
 
 
 ___ _get_date(date_str):
-    return datetime.date(datetime.strptime(date_str, "%d %B %Y"))
+    r.. datetime.date(datetime.strptime(date_str, "%d %B %Y"))
 
 
 ___ operas_both_at_premiere(guest, composer):
@@ -73,7 +73,7 @@ ___ operas_both_at_premiere(guest, composer):
     """
 
 
-    __ composer not in composers or guest not in composers:
+    __ composer n.. __ composers o. guest n.. __ composers:
         raise ValueError("Both composer and guest must be valid composers")
     
 
@@ -88,7 +88,7 @@ ___ operas_both_at_premiere(guest, composer):
 
     
 
-    for opera in filter(lambda x: x.author == composer_name,operas):
+    ___ opera __ filter(l.... x: x.author __ composer_name,operas):
         play_date = _get_date(opera.date)
         __ guest_birthday <= play_date < guest_death_day and composer_death_day > play_date:
             yield opera.play

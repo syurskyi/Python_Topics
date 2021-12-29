@@ -22,7 +22,7 @@
 #        Return None if this NestedInteger holds a single integer
 #        :rtype List[NestedInteger]
 #        """
-from collections import deque
+____ collections _______ deque
 
 
 class NestedIterator(object):
@@ -33,7 +33,7 @@ class NestedIterator(object):
     :type nestedList: List[NestedInteger]
     """
     self.stack = deque(nestedList[::-1])
-    self.value = None
+    self.value = N..
 
   ___ next(self):
     """
@@ -41,25 +41,25 @@ class NestedIterator(object):
     """
     self.hasNext()
     ret = self.value
-    self.value = None
-    return ret
+    self.value = N..
+    r.. ret
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
-    __ self.value is not None:
-      return True
+    __ self.value __ n.. N..
+      r.. True
 
     stack = self.stack
     while stack:
       top = stack.pop()
       __ top.isInteger():
         self.value = top.getInteger()
-        return True
-      else:
+        r.. True
+      ____:
         stack.extend(top.getList()[::-1])
-    return False
+    r.. False
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

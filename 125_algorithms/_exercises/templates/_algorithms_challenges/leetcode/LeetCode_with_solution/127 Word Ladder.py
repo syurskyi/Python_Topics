@@ -24,12 +24,12 @@ __author__ = 'Danyang'
 class Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
-        for a, b in zip(p, q):
+        ___ a, b __ zip(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
-                return False
-        return True
+                r.. False
+        r.. True
 
     ___ ladderLength(self, start, end, dct):
         """
@@ -39,21 +39,21 @@ class Solution:
         visited = {start}
         lvl = 1
         while q:
-            cur_q = []
-            for a in q:
-                __ a == end:
-                    return lvl
-                for b in dct:
-                    __ b not in visited and self.is_neighbor(a, b):
+            cur_q    # list
+            ___ a __ q:
+                __ a __ end:
+                    r.. lvl
+                ___ b __ dct:
+                    __ b n.. __ visited and self.is_neighbor(a, b):
                         visited.add(b)
-                        cur_q.append(b)
+                        cur_q.a..(b)
 
             lvl += 1
             q = cur_q
 
-        return 0
+        r.. 0
 
-    ___ ladderLength_TLE(self, start, end, dict):
+    ___ ladderLength_TLE(self, start, end, d..):
         """
         bfs
         :param start: a string
@@ -61,8 +61,8 @@ class Solution:
         :param dict: a set
         :return: integer
         """
-        lst = [start]+list(dict)
-        dp = [[-1 for _ in lst] for _ in lst]
+        lst = [start]+l..(d..)
+        dp = [[-1 ___ _ __ lst] ___ _ __ lst]
 
         ___ diff_count(s1, s2):
             """
@@ -74,37 +74,37 @@ class Solution:
             count = 0
             str1 = lst[s1]
             str2 = lst[s2]
-            for i in xrange(len(str1)):
+            ___ i __ xrange(l..(str1)):
                 __ count>1:
-                    return -1
+                    r.. -1
                 __ str1[i]!=str2[i]:
                     count += 1
-            return count
+            r.. count
 
-        for i in xrange(len(lst)):
-            for j in xrange(i, len(lst)):
+        ___ i __ xrange(l..(lst)):
+            ___ j __ xrange(i, l..(lst)):
                 dp[i][j] = diff_count(i, j)
                 dp[j][i] = dp[i][j]
 
-        visited = [False for _ in lst]  # avoid loop
+        visited = [False ___ _ __ lst]  # avoid loop
         path_len = 0
 
         queue = [0]
         visited[0] = True
         while queue:
             path_len += 1
-            length = len(queue)
-            for i in xrange(length):  #O(V)
-                __ lst[queue[i]]==end:  # reached
-                    return path_len
-                for ind in xrange(1, len(lst)):  # O(k), add next level
-                    __ not visited[ind] and dp[ind][queue[i]]==1:
-                        queue.append(ind)
+            length = l..(queue)
+            ___ i __ xrange(length):  #O(V)
+                __ lst[queue[i]]__end:  # reached
+                    r.. path_len
+                ___ ind __ xrange(1, l..(lst)):  # O(k), add next level
+                    __ n.. visited[ind] and dp[ind][queue[i]]__1:
+                        queue.a..(ind)
                         visited[ind] = True
             queue = queue[length:]
-        return path_len
+        r.. path_len
 
-    ___ ladderLength_TLE2(self, start, end, dict):
+    ___ ladderLength_TLE2(self, start, end, d..):
         """
         bfs
         :param start: a string
@@ -120,35 +120,35 @@ class Solution:
             :return: 0 1 or -1
             """
             count = 0
-            for i in xrange(len(str1)):
+            ___ i __ xrange(l..(str1)):
                 __ count>1:
-                    return -1
+                    r.. -1
                 __ str1[i]!=str2[i]:
                     count += 1
-            return count
+            r.. count
 
         path_len = 0
 
         queue = [start]
         while queue:
             path_len += 1
-            length = len(queue)
-            for i in xrange(length):  #O(V)
-                __ queue[i]==end:  # reached
-                    return path_len
+            length = l..(queue)
+            ___ i __ xrange(length):  #O(V)
+                __ queue[i]__end:  # reached
+                    r.. path_len
 
-                remain_set = set(dict)
-                for item in dict:  # O(k), add next level
-                   __ diff_count(item, queue[i])==1:
-                        queue.append(item)
+                remain_set = set(d..)
+                ___ item __ d..:  # O(k), add next level
+                   __ diff_count(item, queue[i])__1:
+                        queue.a..(item)
                         remain_set.remove(item)
-                dict = remain_set
+                d.. = remain_set
 
             queue = queue[length:]
-        return path_len
+        r.. path_len
 
 
-    ___ ladderLength_complex(self, start, end, dict):
+    ___ ladderLength_complex(self, start, end, d..):
         """
         bfs
 
@@ -163,37 +163,37 @@ class Solution:
         :return: integer, if impossible, return 0
         """
         path_len = 0
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
 
         queue = [start]
-        dict.remove(start)
+        d...remove(start)
         while True:
             path_len += 1
-            length_0 = len(queue)
-            for i in xrange(length_0):  #O(V)
+            length_0 = l..(queue)
+            ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
-                __ current==end:  # reached
-                    return path_len
+                __ current__end:  # reached
+                    r.. path_len
 
                 current = queue[i]
-                for pos in xrange(len(current)):
-                    lst = list(current)
-                    for char in lower_cases:
+                ___ pos __ xrange(l..(current)):
+                    lst = l..(current)
+                    ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
-                        __ temp in dict:
-                            queue.append(temp)
-                            dict.remove(temp)
+                        __ temp __ d..:
+                            queue.a..(temp)
+                            d...remove(temp)
 
             queue = queue[length_0:]
-            __ not queue:
-                return 0
-        return path_len
+            __ n.. queue:
+                r.. 0
+        r.. path_len
 
 
 
-__ __name__=="__main__":
-    assert Solution().ladderLength("sand", "acne", set(
+__ __name____"__main__":
+    ... Solution().ladderLength("sand", "acne", set(
         ["slit", "bunk", "wars", "ping", "viva", "wynn", "wows", "irks", "gang", "pool", "mock", "fort", "heel", "send",
          "ship", "cols", "alec", "foal", "nabs", "gaze", "giza", "mays", "dogs", "karo", "cums", "jedi", "webb", "lend",
          "mire", "jose", "catt", "grow", "toss", "magi", "leis", "bead", "kara", "hoof", "than", "ires", "baas", "vein",
@@ -398,4 +398,4 @@ __ __name__=="__main__":
          "tits", "bork", "mils", "nary", "barn", "hype", "odom", "avon", "hewn", "rios", "cams", "tact", "boss", "oleo",
          "duke", "eris", "gwen", "elms", "deon", "sims", "quit", "nest", "font", "dues", "yeas", "zeta", "bevy", "gent",
          "torn", "cups", "worm", "baum", "axon", "purr", "vise", "grew", "govs", "meat", "chef", "rest", "lame"])
-    ) == 11
+    ) __ 11

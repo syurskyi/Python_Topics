@@ -6,16 +6,16 @@ class Solution(object):
     :rtype: bool
     """
     d = {}
-    n = len(s1)
-    for c in s1:
+    n = l..(s1)
+    ___ c __ s1:
       d[c] = d.get(c, 0) + 1
     window = {}
-    for i, c in enumerate(s2):
+    ___ i, c __ enumerate(s2):
       window[c] = window.get(c, 0) + 1
-      __ i >= len(s1):
+      __ i >= l..(s1):
         window[s2[i - n]] = window.get(s2[i - n], 0) - 1
-        __ window[s2[i - n]] == 0:
+        __ window[s2[i - n]] __ 0:
           del window[s2[i - n]]
-      __ window == d:
-        return True
-    return False
+      __ window __ d:
+        r.. True
+    r.. False

@@ -20,29 +20,29 @@ class Solution:
         :rtype: int
         """
         NOT_FOUND = 0
-        __ not nums:
-            return NOT_FOUND
+        __ n.. nums:
+            r.. NOT_FOUND
 
-        n = len(nums)
-        left = self.get_max_sums(nums, range(n))
-        right = self.get_max_sums(nums, range(n - 1, -1, -1))
+        n = l..(nums)
+        left = self.get_max_sums(nums, r..(n))
+        right = self.get_max_sums(nums, r..(n - 1, -1, -1))
 
         ans = _INF = float('-inf')
 
-        for i in range(n - 1):
+        ___ i __ r..(n - 1):
             s = left[i] + right[i + 1]
 
             __ s > ans:
                 ans = s
 
-        return ans __ ans > _INF else NOT_FOUND
+        r.. ans __ ans > _INF ____ NOT_FOUND
 
     ___ get_max_sums(self, nums, num_range):
-        res = [0] * len(nums)
+        res = [0] * l..(nums)
         smax = float('-inf')
         s = smin = 0
 
-        for i in num_range:
+        ___ i __ num_range:
             s += nums[i]
 
             __ s - smin > smax:
@@ -53,4 +53,4 @@ class Solution:
 
             res[i] = smax
 
-        return res
+        r.. res

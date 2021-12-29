@@ -11,19 +11,19 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        t = [0 for i in range(n + 1)]
-        return self.climb(n, t)
+        t = [0 ___ i __ r..(n + 1)]
+        r.. self.climb(n, t)
 
     ___ climb(self, n, t):
-        __ n == 0:
-            return 1
-        elif n < 0:
-            return 0
-        elif t[n] != 0:
-            return t[n]
-        else:
+        __ n __ 0:
+            r.. 1
+        ____ n < 0:
+            r.. 0
+        ____ t[n] != 0:
+            r.. t[n]
+        ____:
             t[n] = self.climb(n - 1, t) + self.climb(n - 2, t)
-            return t[n]
+            r.. t[n]
 
 
 s = Solution()

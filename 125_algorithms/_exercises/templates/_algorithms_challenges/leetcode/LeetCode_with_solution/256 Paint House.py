@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-import sys
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -15,22 +15,22 @@ class Solution:
         :type costs: list[list[int]]
         :rtype: int
         """
-        __ not costs:
-            return 0
+        __ n.. costs:
+            r.. 0
 
-        n = len(costs)
-        m = len(costs[0])
-        F = [[0 for _ in xrange(m)] for _ in xrange(n+1)]
-        for k in xrange(1, n+1):
-            for i in xrange(m):
+        n = l..(costs)
+        m = l..(costs[0])
+        F = [[0 ___ _ __ xrange(m)] ___ _ __ xrange(n+1)]
+        ___ k __ xrange(1, n+1):
+            ___ i __ xrange(m):
                 F[k][i] = sys.maxint
-                for j in xrange(m):
+                ___ j __ xrange(m):
                     __ i != j:
-                        F[k][i] = min(F[k][i], F[k-1][j]+costs[k-1][i])
+                        F[k][i] = m..(F[k][i], F[k-1][j]+costs[k-1][i])
 
-        return min(F[n][i] for i in xrange(m))
+        r.. m..(F[n][i] ___ i __ xrange(m))
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     costs = [[7, 6, 2]]
-    assert Solution().minCost(costs) == 2
+    ... Solution().minCost(costs) __ 2

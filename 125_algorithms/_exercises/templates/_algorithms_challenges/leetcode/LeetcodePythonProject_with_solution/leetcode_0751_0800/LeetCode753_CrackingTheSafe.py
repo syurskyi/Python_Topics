@@ -14,34 +14,34 @@ class Solution(object):
         arr = ['0']*n
         visited = set(['0'*n])
         self.dfs(arr, total, visited, n, k)
-        return ''.join(arr)
+        r.. ''.join(arr)
     
     ___ dfs(self, arr, goal, visited, n, k):
-        __ len(visited) == goal: return True
-        prevArr = arr[len(arr)-n+1:]
-        for i in range(k):
+        __ l..(visited) __ goal: r.. True
+        prevArr = arr[l..(arr)-n+1:]
+        ___ i __ r..(k):
             nextArr = prevArr+[str(i)]
             nextStr = ''.join(nextArr)
-            __ nextStr not in visited:
+            __ nextStr n.. __ visited:
                 visited.add(nextStr)
-                arr.append(str(i))
+                arr.a..(str(i))
                 __ self.dfs(arr, goal, visited, n, k):
-                    return True
+                    r.. True
                 visited.remove(nextStr)
                 arr.pop()
-        return False
+        r.. False
     
     ___ test(self):
         testCases = [
             [1, 2],
             [2, 2],
         ]
-        for n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.crackSafe(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

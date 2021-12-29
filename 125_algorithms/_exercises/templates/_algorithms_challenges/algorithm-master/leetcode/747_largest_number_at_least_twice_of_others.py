@@ -8,7 +8,7 @@ class Solution:
         _max = __max = float('-inf')
         _max_i = -1
 
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             __ A[i] > _max:
                 __max = _max
                 _max = A[i]
@@ -19,6 +19,6 @@ class Solution:
                 __max = A[i]
 
         __ _max >= __max * 2:
-            return _max_i
+            r.. _max_i
 
-        return -1
+        r.. -1

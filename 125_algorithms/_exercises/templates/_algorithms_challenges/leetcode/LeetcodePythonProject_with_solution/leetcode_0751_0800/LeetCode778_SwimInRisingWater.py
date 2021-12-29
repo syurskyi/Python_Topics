@@ -9,21 +9,21 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        import heapq
-        n = len(grid)
+        _______ heapq
+        n = l..(grid)
         pq = [(grid[0][0], 0, 0)]
         visited = set([(0, 0)])
         res = 0
         while pq:
             t, x, y = heapq.heappop(pq)
             res = max(res, t)
-            __ x == y == n-1:
-                return res
-            for i, j in (x+1, y), (x, y+1), (x-1, y), (x, y-1):
-                __ 0 <= i < n and 0 <= j < n and (i, j) not in visited:
+            __ x __ y __ n-1:
+                r.. res
+            ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1):
+                __ 0 <= i < n and 0 <= j < n and (i, j) n.. __ visited:
                     visited.add((i, j))
                     heapq.heappush(pq, (grid[i][j], i, j))
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -39,10 +39,10 @@ class Solution(object):
                 [10, 9, 8, 7, 6],
             ],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             result = self.swimInWater(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

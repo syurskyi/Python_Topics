@@ -10,14 +10,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        j = len(nums)-1
+        j = l..(nums)-1
         while j > 0 and nums[j-1] >= nums[j]:
             j -= 1
-        self.reverse(nums, j, len(nums)-1)
-        __ j == 0:
-            return
+        self.reverse(nums, j, l..(nums)-1)
+        __ j __ 0:
+            r..
         i = j-1
-        while j+1 < len(nums) and nums[i] >= nums[j]:
+        while j+1 < l..(nums) and nums[i] >= nums[j]:
             j += 1
         nums[i], nums[j] = nums[j], nums[i]
     
@@ -33,11 +33,11 @@ class Solution(object):
             [3, 2, 1],
             [1, 1, 5],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             self.nextPermutation(nums)
             print('nums: %s' % nums)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

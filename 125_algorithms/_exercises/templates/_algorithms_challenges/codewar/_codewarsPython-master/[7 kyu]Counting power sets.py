@@ -1,2 +1,2 @@
 ___ powers(lst):
-    return 2**(len(lst))
+    r.. 2**(l..(lst))

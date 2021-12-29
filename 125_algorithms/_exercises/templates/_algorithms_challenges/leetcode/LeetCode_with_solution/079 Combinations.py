@@ -23,19 +23,19 @@ class Solution:
         :param k: int
         :return: a list of lists of integers
         """
-        result = []
-        nums = [i+1 for i in xrange(n)]  # sorted, avoid duplicate
+        result    # list
+        nums = [i+1 ___ i __ xrange(n)]  # sorted, avoid duplicate
         self.get_combination(k, nums, [], result)
-        return result
+        r.. result
 
     ___ get_combination(self, k, nums, current, result):
-        __ len(current)==k:
-            result.append(current)
-            return  # prune
-        elif len(current)+len(nums)<k:
-            return  # prune
+        __ l..(current)__k:
+            result.a..(current)
+            r..  # prune
+        ____ l..(current)+l..(nums)<k:
+            r..  # prune
 
-        for ind, val in enumerate(nums):
+        ___ ind, val __ enumerate(nums):
             # try:
             self.get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:
@@ -43,5 +43,5 @@ class Solution:
             # array slice out of index will return []
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().combine(4, 2)

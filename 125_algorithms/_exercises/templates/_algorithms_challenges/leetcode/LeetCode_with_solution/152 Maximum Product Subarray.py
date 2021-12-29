@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 class Solution(object):
     ___ maxProduct_oneline(self, nums):
-        return max(reduce(lambda A, n: [max(A), min(n, A[1]*n, A[2]*n), max(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
+        r.. max(reduce(l.... A, n: [max(A), m..(n, A[1]*n, A[2]*n), max(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
 
     ___ maxProduct(self, nums):
         """
@@ -28,39 +28,39 @@ class Solution(object):
         small = nums[0]
         large = nums[0]
         maxa = nums[0]
-        for a in nums[1:]:
-            small, large = min(a, small*a, large*a), max(a, small*a, large*a)
+        ___ a __ nums[1:]:
+            small, large = m..(a, small*a, large*a), max(a, small*a, large*a)
             maxa = max(maxa, small, large)
 
-        return maxa
+        r.. maxa
 
     ___ maxProduct_error2(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        __ len(nums) < 2:
-            return max(nums)
+        __ l..(nums) < 2:
+            r.. max(nums)
 
-        n = len(nums)
-        F_pos = [0 for _ in xrange(n+1)]
-        F_neg = [0 for _ in xrange(n+1)]
+        n = l..(nums)
+        F_pos = [0 ___ _ __ xrange(n+1)]
+        F_neg = [0 ___ _ __ xrange(n+1)]
 
         maxa = 1
-        for i in xrange(1, n+1):
+        ___ i __ xrange(1, n+1):
             v = nums[i-1]
             __ v > 0:
-                F_pos[i] = F_pos[i-1]*v __ F_pos[i-1] != 0 else v
+                F_pos[i] = F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
                 F_neg[i] = F_neg[i-1]*v
-            elif v == 0:
+            ____ v __ 0:
                 F_pos[i], F_neg[i] = 0, 0
-            else:
-                F_neg[i] = min(0, F_pos[i-1]*v)
+            ____:
+                F_neg[i] = m..(0, F_pos[i-1]*v)
                 F_pos[i] = max(0, F_neg[i-1]*v)
 
             maxa = max(maxa, F_pos[i])
 
-        return maxa
+        r.. maxa
 
     ___ maxProduct_error(self, A):
         """
@@ -69,20 +69,20 @@ class Solution(object):
         :param A: a list of int
         :return: int
         """
-        __ not A:
-            return
-        length = len(A)
-        __ length==1:
-            return A[0]
+        __ n.. A:
+            r..
+        length = l..(A)
+        __ length__1:
+            r.. A[0]
 
-        dp = [-1 for _ in xrange(length+1)]
+        dp = [-1 ___ _ __ xrange(length+1)]
         dp[length] = 0 # dummy
-        for i in xrange(length-1, -1, -1):
+        ___ i __ xrange(length-1, -1, -1):
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
-            elif A[i]==0:
+            ____ A[i]__0:
                 dp[i] = 0
-            else:
+            ____:
                 dp[i] = dp[i+1]
 
         global_max = -1<<32
@@ -94,10 +94,10 @@ class Solution(object):
         #     global_max = max(global_max, cur)
 
         cur = 0  # starting from 0
-        for ind, val in enumerate(A):
+        ___ ind, val __ enumerate(A):
             __ cur!=0:
                 cur *= val
-            else:
+            ____:
                 cur = val
 
             __ cur<0 and dp[ind+1]<1:
@@ -105,7 +105,7 @@ class Solution(object):
 
             global_max = max(global_max, cur)
 
-        return global_max
+        r.. global_max
 
     ___ maxProduct_dp(self, A):
         """
@@ -117,20 +117,20 @@ class Solution(object):
         :param A: a list of int
         :return: int
         """
-        __ not A:
-            return
-        length = len(A)
-        __ length==1:
-            return A[0]
+        __ n.. A:
+            r..
+        length = l..(A)
+        __ length__1:
+            r.. A[0]
 
-        dp = [-1 for _ in xrange(length+1)]
+        dp = [-1 ___ _ __ xrange(length+1)]
         dp[length] = 0 # dummy
-        for i in xrange(length-1, -1, -1):
+        ___ i __ xrange(length-1, -1, -1):
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
-            elif A[i]==0:
+            ____ A[i]__0:
                 dp[i] = 0
-            else:
+            ____:
                 dp[i] = dp[i+1]
 
         global_max = -1<<32
@@ -140,7 +140,7 @@ class Solution(object):
         while end_ptr<length:  # [start, end), expanding
             __ cur!=0:
                 cur *= A[end_ptr]
-            else:
+            ____:
                 cur = A[end_ptr]
                 start_ptr = end_ptr
 
@@ -154,19 +154,19 @@ class Solution(object):
                 __ A[start_ptr]<0:
                     cur /= A[start_ptr]
                     start_ptr += 1
-                __ start_ptr==end_ptr:  # consider A=[-2, 0, -1] when processing [-1]
+                __ start_ptr__end_ptr:  # consider A=[-2, 0, -1] when processing [-1]
                     cur = 0 # otherwise 1
                     
             global_max = max(global_max, cur)
 
-        return global_max
+        r.. global_max
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().maxProduct([2,3,-2,4])
-    assert Solution().maxProduct([2,-5,-2,-4,3])==24
-    assert Solution().maxProduct([-2, 0, -1])==0
-    assert Solution().maxProduct([-2])==-2
-    assert Solution().maxProduct([2, 3, -2, 4, -2])==96
-    assert Solution().maxProduct([2, 3, -2, 4, 0, -2])==6
-    assert Solution().maxProduct([2,3,-2,4])==6
+    ... Solution().maxProduct([2,-5,-2,-4,3])__24
+    ... Solution().maxProduct([-2, 0, -1])__0
+    ... Solution().maxProduct([-2])__-2
+    ... Solution().maxProduct([2, 3, -2, 4, -2])__96
+    ... Solution().maxProduct([2, 3, -2, 4, 0, -2])__6
+    ... Solution().maxProduct([2,3,-2,4])__6

@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class SnakeGame(object):
@@ -31,27 +31,27 @@ class SnakeGame(object):
     :type direction: str
     :rtype: int
     """
-    __ direction not in self.directions:
-      return -1
+    __ direction n.. __ self.directions:
+      r.. -1
     di, dj = self.directions[direction]
     ni, nj = self.snake[0][0] + di, self.snake[0][1] + dj
 
-    __ ni < 0 or ni >= self.height or nj < 0 or nj >= self.width:
-      return -1
+    __ ni < 0 o. ni >= self.height o. nj < 0 o. nj >= self.width:
+      r.. -1
 
     self.snake.appendleft((ni, nj))
 
-    __ self.food and [ni, nj] == self.food[0]:
+    __ self.food and [ni, nj] __ self.food[0]:
       self.score += 1
       self.food.popleft()
-    else:
+    ____:
       self.snakeSet.discard(self.snake.pop())
 
-    __ (ni, nj) in self.snakeSet:
-      return -1
+    __ (ni, nj) __ self.snakeSet:
+      r.. -1
     self.snakeSet |= {(ni, nj)}
 
-    return self.score
+    r.. self.score
 
 # Your SnakeGame object will be instantiated and called as such:
 # obj = SnakeGame(width, height, food)

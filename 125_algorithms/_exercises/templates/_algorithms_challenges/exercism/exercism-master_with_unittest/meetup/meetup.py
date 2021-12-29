@@ -1,22 +1,22 @@
-from calendar import Calendar
+____ calendar _______ Calendar
 
 
 ___ meetup_day(year, month, weekday, schedule):
-    candidates = [date for date in Calendar().itermonthdates(year, month)
-                  __ date.month == month and date.strftime('%A') == weekday]
+    candidates = [date ___ date __ Calendar().itermonthdates(year, month)
+                  __ date.month __ month and date.strftime('%A') __ weekday]
 
-    __ schedule == 'teenth':
-        return find_teenth(candidates)
-    else:
-        return find(candidates, schedule)
+    __ schedule __ 'teenth':
+        r.. find_teenth(candidates)
+    ____:
+        r.. find(candidates, schedule)
 
 
 ___ find_teenth(candidates):
-    for date in candidates:
+    ___ date __ candidates:
         __ date.day >= 13 and date.day <= 19:
-            return date
+            r.. date
 
 
 ___ find(candidates, schedule):
-    index = -1 __ schedule == 'last' else int(schedule[0]) - 1
-    return candidates[index]
+    index = -1 __ schedule __ 'last' ____ int(schedule[0]) - 1
+    r.. candidates[index]

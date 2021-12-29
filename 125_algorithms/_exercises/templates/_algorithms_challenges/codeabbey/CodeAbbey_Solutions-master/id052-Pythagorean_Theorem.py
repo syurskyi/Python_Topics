@@ -1,15 +1,15 @@
 ___ pythagorean(triangles):
-    answer = []
-    for triangle in range(triangles):
-        sides = input().split()
+    answer    # list
+    ___ triangle __ r..(triangles):
+        sides = input().s.. 
         a,b,c = sides
         a,b,c = int(a),int(b),int(c)
 
-        __ a**2 + b**2 == c**2:
-            answer.append('R')
-        elif a**2 + b**2 > c**2:
-            answer.append('A')
-        elif a**2 + b**2 < c**2:
-            answer.append('O')
+        __ a**2 + b**2 __ c**2:
+            answer.a..('R')
+        ____ a**2 + b**2 > c**2:
+            answer.a..('A')
+        ____ a**2 + b**2 < c**2:
+            answer.a..('O')
     print(' '.join(answer))
 pythagorean(int(input()))

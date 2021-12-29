@@ -1,14 +1,14 @@
-import re
+_______ re
 
 
 ___ password_complexity(password):
     """Input: password string, calculate score according to 5 criteria in bite,
        return: score int"""
     score = 0
-    __ len(password) >= 8:
+    __ l..(password) >= 8:
         score += 1
         first_eight = password[:8]
-        __ not re.search(r'(.)\1',password):
+        __ n.. re.search(r'(.)\1',password):
             score += 1
 
     
@@ -26,9 +26,9 @@ ___ password_complexity(password):
         score += 1
 
 
-    return score
+    r.. score
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     password = '123$Abc1'
 
     password_complexity(password)

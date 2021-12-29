@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from prime_factors import prime_factors
+____ prime_factors _______ prime_factors
 
 
 class PrimeFactorsTest(unittest.TestCase):
@@ -38,5 +38,5 @@ class PrimeFactorsTest(unittest.TestCase):
         self.assertEqual([11, 9539, 894119], prime_factors(93819012551))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

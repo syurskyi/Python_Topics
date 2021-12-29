@@ -1,4 +1,4 @@
-import requests
+_______ requests
 
 
 ___ nxapi_show_version():
@@ -16,9 +16,9 @@ ___ nxapi_show_version():
                              auth=(switchuser, switchpassword), verify=False).json()
 
     version = response['result']['body']['kickstart_ver_str']
-    return version
+    r.. version
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     result = nxapi_show_version()
     print(result)

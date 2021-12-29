@@ -1,5 +1,5 @@
 #Write a script that detects and prints out your monitor resolution
-from screeninfo import get_monitors
+____ screeninfo _______ get_monitors
 print(get_monitors())
 
 widthget_monitors()[0].width

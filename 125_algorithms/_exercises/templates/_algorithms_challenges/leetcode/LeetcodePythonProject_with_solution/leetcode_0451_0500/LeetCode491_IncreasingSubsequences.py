@@ -12,16 +12,16 @@ class Solution(object):
         """
         res = set()
         self.helper(nums, 0, [], res)
-        return [list(row) for row in res]
+        r.. [l..(row) ___ row __ res]
     
     ___ helper(self, nums, ind, curr, res):
-        __ len(curr) >= 2:
+        __ l..(curr) >= 2:
             res.add(tuple(curr))
-        for i in range(ind, len(nums)):
-            __ i > ind and nums[i] == nums[i-1]:
+        ___ i __ r..(ind, l..(nums)):
+            __ i > ind and nums[i] __ nums[i-1]:
                 continue
-            __ not curr or curr[-1] <= nums[i]:
-                curr.append(nums[i])
+            __ n.. curr o. curr[-1] <= nums[i]:
+                curr.a..(nums[i])
                 self.helper(nums, i+1, curr, res)
                 curr.pop()
     
@@ -31,11 +31,11 @@ class Solution(object):
             [4, 6, 7, 7],
             [4, 3, 2, 1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findSubsequences(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

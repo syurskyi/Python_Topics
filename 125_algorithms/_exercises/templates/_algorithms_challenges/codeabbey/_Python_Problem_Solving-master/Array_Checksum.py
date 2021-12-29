@@ -1,15 +1,15 @@
 #Ask for how number to be entered
 data = int(input())
 result = 0
-arr = []
+arr    # list
 
-while len(arr) < data:
-    arr = input().split()
+while l..(arr) < data:
+    arr = input().s..
     #print('length of arr is:', len(arr))
     #print('values is in arr are :', arr)
     
     #traversing through each element of the array
-    for x in range(len(arr)):
+    ___ x __ r..(l..(arr)):
         
         #print('current array is :', currarr)
         result =  (result + int(arr[x])) * 113

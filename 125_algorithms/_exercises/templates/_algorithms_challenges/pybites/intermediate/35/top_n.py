@@ -1,7 +1,7 @@
-from datetime import datetime
-from operator import itemgetter
+____ datetime _______ datetime
+____ operator _______ itemgetter
 
-import heapq
+_______ heapq
 
 numbers = [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6]
 dates = [datetime(2018, 1, 23, 0, 0),
@@ -32,11 +32,11 @@ earnings_mln = [
 
 
 ___ get_largest_number(numbers, n=3):
-    return heapq.nlargest(n, numbers)
+    r.. heapq.nlargest(n, numbers)
 
 ___ get_latest_dates(dates, n=3):
-    return heapq.nlargest(n, dates)
+    r.. heapq.nlargest(n, dates)
 
 ___ get_highest_earnings(earnings_mln, n=3):
-    return heapq.nlargest(n, earnings_mln, key=itemgetter('earnings'))
+    r.. heapq.nlargest(n, earnings_mln, key=itemgetter('earnings'))
 

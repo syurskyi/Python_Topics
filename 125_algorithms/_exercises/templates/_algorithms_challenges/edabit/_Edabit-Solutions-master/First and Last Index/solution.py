@@ -1,14 +1,14 @@
 ___ char_index(word, char):
-    output = []
-    for i in range(len(word)):
-        __ word[i] == char:
-            output.append(i)
-        elif char not in word:
-            return None
+    output    # list
+    ___ i __ r..(l..(word)):
+        __ word[i] __ char:
+            output.a..(i)
+        ____ char n.. __ word:
+            r.. N..
     output.sort()
-    __ len(output) == 1:
-        output.append(output[0])
-    __ len(output) > 2:
-        for i in range(1,len(output)- 1):
+    __ l..(output) __ 1:
+        output.a..(output[0])
+    __ l..(output) > 2:
+        ___ i __ r..(1,l..(output)- 1):
             output.pop(i)
-    return output
+    r.. output

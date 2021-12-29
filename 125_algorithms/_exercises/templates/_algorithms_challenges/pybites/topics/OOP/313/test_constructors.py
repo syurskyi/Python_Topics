@@ -1,13 +1,13 @@
-import pytest
+_______ pytest
 
-from constructors import Domain, DomainException
+____ constructors _______ Domain, DomainException
 
 
 ___ test_create_domain_from_name():
     domain = Domain("google.com")
-    assert str(domain) == "google.com"
+    ... str(domain) __ "google.com"
     domain = Domain("nu.nl")
-    assert str(domain) == "nu.nl"
+    ... str(domain) __ "nu.nl"
 
 
 ___ test_invalid_domain():
@@ -25,8 +25,8 @@ ___ test_invalid_domain():
 ])
 ___ test_create_domain_from_url(arg, expected):
     domain = Domain.parse_url(arg)
-    assert type(domain) == Domain
-    assert str(domain) == expected
+    ... type(domain) __ Domain
+    ... str(domain) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -37,5 +37,5 @@ ___ test_create_domain_from_url(arg, expected):
 ])
 ___ test_create_domain_from_email(arg, expected):
     domain = Domain.parse_email(arg)
-    assert type(domain) == Domain
-    assert str(domain) == expected
+    ... type(domain) __ Domain
+    ... str(domain) __ expected

@@ -4,18 +4,18 @@ class ConnectingGraph2:
     """
     ___ __init__(self, n):
         __ n < 1:
-            return
+            r..
         self.nodes = {}
         self.count = {}
-        for i in range(n):
+        ___ i __ r..(n):
             self.nodes[i + 1] = i + 1
             self.count[i + 1] = 1
 
     ___ find(self, a):
-        __ self.nodes[a] == a:
-            return a
+        __ self.nodes[a] __ a:
+            r.. a
         self.nodes[a] = self.find(self.nodes[a])
-        return self.nodes[a]
+        r.. self.nodes[a]
 
     """
     @param: a: An integer
@@ -36,4 +36,4 @@ class ConnectingGraph2:
     """
     ___ query(self, a):
         root_a = self.find(a)
-        return self.count[root_a]
+        r.. self.count[root_a]

@@ -5,4 +5,4 @@ items = [{'id': 1, 'name': 'laptop', 'value': 1000},
 
 ___ duplicate_items(items):
     items1 = items.copy()
-    return items[:]
+    r.. items[:]

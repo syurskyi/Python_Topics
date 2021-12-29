@@ -30,7 +30,7 @@ Note:
 1 <= words.length <= 50
 1 <= pattern.length = words[i].length <= 20
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -38,23 +38,23 @@ class Solution:
         """
         mapping
         """
-        ret = []
-        for w in words:
+        ret    # list
+        ___ w __ words:
             __ self.match(w, pattern):
-                ret.append(w)
-        return ret
+                ret.a..(w)
+        r.. ret
 
     ___ match(self, word, pattern):
-        __ len(word) != len(pattern):
-            return False
+        __ l..(word) != l..(pattern):
+            r.. False
 
         m = {}
         m_inv = {}  # bijection
-        for i in range(len(word)):
-            __ word[i] not in m and pattern[i] not in m_inv:
+        ___ i __ r..(l..(word)):
+            __ word[i] n.. __ m and pattern[i] n.. __ m_inv:
                 m[word[i]] = pattern[i]
                 m_inv[pattern[i]] = word[i]
-            elif word[i] not in m or m[word[i]] != pattern[i]:
-                return False
-        else:
-            return True
+            ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:
+                r.. False
+        ____:
+            r.. True

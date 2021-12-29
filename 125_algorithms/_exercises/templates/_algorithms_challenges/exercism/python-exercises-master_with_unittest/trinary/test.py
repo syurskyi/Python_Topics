@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from trinary import trinary
+____ trinary _______ trinary
 
 
 class TrinaryTest(unittest.TestCase):
@@ -26,5 +26,5 @@ class TrinaryTest(unittest.TestCase):
         self.assertEqual(trinary('13201'), 0)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

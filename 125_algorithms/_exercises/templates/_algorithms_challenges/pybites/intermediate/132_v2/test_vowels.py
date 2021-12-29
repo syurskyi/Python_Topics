@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from vowels import get_word_max_vowels
+____ vowels _______ get_word_max_vowels
 
 paragraphs = [
     ("Python is an easy to learn, powerful programming language."
@@ -52,4 +52,4 @@ expected = [
 
 @pytest.mark.parametrize('text, result', zip(paragraphs, expected))
 ___ test_get_word_max_vowels(text, result):
-    assert get_word_max_vowels(text) in result
+    ... get_word_max_vowels(text) __ result

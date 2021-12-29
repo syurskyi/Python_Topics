@@ -4,31 +4,31 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not matrix or not matrix[0]:
-            return ans
+        __ n.. matrix o. n.. matrix[0]:
+            r.. ans
 
         # need keep its order to go right, bottom, left, top
         delta = (
             (0, 1), (1, 0),
             (0, -1), (-1, 0),
         )
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         x = y = turn = 0
 
-        for _ in range(m * n):
-            ans.append(matrix[x][y])
-            matrix[x][y] = None
+        ___ _ __ r..(m * n):
+            ans.a..(matrix[x][y])
+            matrix[x][y] = N..
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            __ not (0 <= _x < m and 0 <= _y < n) or matrix[_x][_y] is None:
-                turn = (turn + 1) % len(delta)
+            __ n.. (0 <= _x < m and 0 <= _y < n) o. matrix[_x][_y] __ N..
+                turn = (turn + 1) % l..(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]
 
             x = _x
             y = _y
 
-        return ans
+        r.. ans

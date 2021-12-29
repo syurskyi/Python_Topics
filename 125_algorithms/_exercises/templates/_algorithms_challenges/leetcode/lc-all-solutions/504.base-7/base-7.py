@@ -16,6 +16,6 @@ class Solution(object):
         ans += (num % base) * unit
         num /= base
         unit *= 10
-      return sign + str(ans)
+      r.. sign + str(ans)
 
-    return convertHelper(num, 7)
+    r.. convertHelper(num, 7)

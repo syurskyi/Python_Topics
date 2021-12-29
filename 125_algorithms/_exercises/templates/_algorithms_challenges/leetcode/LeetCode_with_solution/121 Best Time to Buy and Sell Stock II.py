@@ -19,17 +19,17 @@ class Solution:
         :param prices: list of integers
         :return: integer
         """
-        __ len(prices) <= 1:
-            return 0
+        __ l..(prices) <= 1:
+            r.. 0
 
-        delta_prices = []  # \delta
-        for i in xrange(1, len(prices)):
-            delta_prices.append(prices[i]-prices[i-1])
+        delta_prices    # list  # \delta
+        ___ i __ xrange(1, l..(prices)):
+            delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
         profit = 0
-        for i in xrange(len(delta_prices)):
+        ___ i __ xrange(l..(delta_prices)):
             __ delta_prices[i] > 0:
                 profit += delta_prices[i]
 
-        return profit
+        r.. profit

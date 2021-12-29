@@ -12,31 +12,31 @@ class Solution:
         :type nums: list[int]
         :rtype: list[str]
         """
-        ret = []
-        n = len(nums)
+        ret    # list
+        n = l..(nums)
         __ n < 1:
-            return ret
+            r.. ret
 
         bgn = nums[0]
         pre = nums[0]
-        for i in xrange(1, n):
+        ___ i __ xrange(1, n):
             __ nums[i] != pre+1:
                 __ pre != bgn:
-                    ret.append("%d->%d"%(bgn, pre))
-                else:
-                    ret.append("%d"%bgn)
+                    ret.a..("%d->%d"%(bgn, pre))
+                ____:
+                    ret.a..("%d"%bgn)
                 bgn = nums[i]
 
             pre = nums[i]
 
         # clean up
         __ pre != bgn:
-            ret.append("%d->%d"%(bgn, pre))
-        else:
-            ret.append("%d"%bgn)
+            ret.a..("%d->%d"%(bgn, pre))
+        ____:
+            ret.a..("%d"%bgn)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().summaryRanges([0, 1, 2, 4, 5, 7]) == ['0->2', '4->5', '7']
+__ __name__ __ "__main__":
+    ... Solution().summaryRanges([0, 1, 2, 4, 5, 7]) __ ['0->2', '4->5', '7']

@@ -1,17 +1,17 @@
-import pytest
+_______ pytest
 
-from itertools import islice
+____ itertools _______ islice
 
-from countdown import countdown
+____ countdown _______ countdown
 
 
 @pytest.fixture
 ___ cd():
-    return countdown()
+    r.. countdown()
 
 
 ___ test_generator_values(cd):
-    actual = list(islice(cd, 0, 100))
+    actual = l..(islice(cd, 0, 100))
     expected = [100, 99, 98, 97, 96, 95, 94, 93, 92, 91,
                 90, 89, 88, 87, 86, 85, 84, 83, 82, 81,
                 80, 79, 78, 77, 76, 75, 74, 73, 72, 71,
@@ -22,10 +22,10 @@ ___ test_generator_values(cd):
                 30, 29, 28, 27, 26, 25, 24, 23, 22, 21,
                 20, 19, 18, 17, 16, 15, 14, 13, 12, 11,
                 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_going_beyond_one_hundred(cd):
     with pytest.raises(StopIteration):
-        for _ in range(101):
+        ___ _ __ r..(101):
             next(cd)

@@ -4,15 +4,15 @@ class Solution(object):
     :type s: str
     :rtype: int
     """
-    n = len(s)
+    n = l..(s)
     dp = [1] * n
-    for j in range(1, len(s)):
+    ___ j __ r..(1, l..(s)):
       pre = dp[j]
-      for i in reversed(range(0, j)):
+      ___ i __ reversed(r..(0, j)):
         tmp = dp[i]
-        __ s[i] == s[j]:
-          dp[i] = 2 + pre __ i + 1 <= j - 1 else 2
-        else:
+        __ s[i] __ s[j]:
+          dp[i] = 2 + pre __ i + 1 <= j - 1 ____ 2
+        ____:
           dp[i] = max(dp[i + 1], dp[i])
         pre = tmp
-    return dp[0]
+    r.. dp[0]

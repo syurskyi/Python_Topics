@@ -13,18 +13,18 @@ class Solution(object):
             __ steps <= k:
                 curr += 1
                 k -= steps
-            else:
+            ____:
                 curr *= 10
                 k -= 1
-        return curr
+        r.. curr
     
     ___ calSteps(self, n, n1, n2):
         steps = 0
         while n1 <= n:
-            steps += min(n+1, n2)-n1
+            steps += m..(n+1, n2)-n1
             n1 *= 10
             n2 *= 10
-        return steps
+        r.. steps
     
     ___ test(self):
         testCases = [
@@ -33,12 +33,12 @@ class Solution(object):
                 2,
             ],
         ]
-        for n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.findKthNumber(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

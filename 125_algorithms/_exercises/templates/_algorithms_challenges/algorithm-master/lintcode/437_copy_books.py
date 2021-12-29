@@ -8,11 +8,11 @@ class Solution:
     @return: an integer
     """
     ___ copyBooks(self, P, k):
-        __ not P or not k:
-            return 0
-        n = len(P)
-        __ n == 1:
-            return P[0]
+        __ n.. P o. n.. k:
+            r.. 0
+        n = l..(P)
+        __ n __ 1:
+            r.. P[0]
 
         __ k > n:
             k = n
@@ -22,15 +22,15 @@ class Solution:
         """
         `dp[i][j]` means the minimum time to assign `i` books to `j` people
         """
-        dp = [[INFINITY] * k for _ in range(n)]
+        dp = [[INFINITY] * k ___ _ __ r..(n)]
 
-        for j in range(k):
+        ___ j __ r..(k):
             dp[0][j] = P[0]
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        for i in range(1, n):
-            for j in range(1, k):
+        ___ i __ r..(1, n):
+            ___ j __ r..(1, k):
                 __ j > i:
                     """
                     if `j > i`, means books more than copiers
@@ -39,7 +39,7 @@ class Solution:
                     dp[i][j] = dp[i][j - 1]
                     continue
 
-                for h in range(j - 1, i + 1):
+                ___ h __ r..(j - 1, i + 1):
                     """
                     `copied_pages` is the maximum copied pages,
                     and also means the maximum time spent
@@ -54,7 +54,7 @@ class Solution:
                     __ copied_pages < dp[i][j]:
                         dp[i][j] = copied_pages
 
-        return dp[n - 1][k - 1]
+        r.. dp[n - 1][k - 1]
 
 
 """
@@ -67,11 +67,11 @@ class Solution:
     @return: an integer
     """
     ___ copyBooks(self, P, k):
-        __ not P or not k:
-            return 0
-        n = len(P)
-        __ n == 1:
-            return P[0]
+        __ n.. P o. n.. k:
+            r.. 0
+        n = l..(P)
+        __ n __ 1:
+            r.. P[0]
 
         __ k > n:
             k = n
@@ -79,15 +79,15 @@ class Solution:
         """
         `dp[i][j]` means the minimum time to assign `i` books to `j` people
         """
-        dp = [[0] * k for _ in range(n)]
+        dp = [[0] * k ___ _ __ r..(n)]
 
-        for j in range(k):
+        ___ j __ r..(k):
             dp[0][j] = P[0]
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        for j in range(1, k):
-            for i in range(1, j):
+        ___ j __ r..(1, k):
+            ___ i __ r..(1, j):
                 """
                 if `j > i`, means books more than copiers
                 the people after `j`th people dont have to work
@@ -95,7 +95,7 @@ class Solution:
                 dp[i][j] = dp[i][j - 1]
 
             h = copied_pages = 0
-            for i in range(j, n):
+            ___ i __ r..(j, n):
                 """
                 `h` means the maximum books `j - 1` men copied in shortest time
                 """
@@ -104,7 +104,7 @@ class Solution:
 
                 dp[i][j] = dp[h][j - 1]
 
-                __ h == 0:
+                __ h __ 0:
                     continue
 
                 """
@@ -123,7 +123,7 @@ class Solution:
                 __ copied_pages < dp[i][j]:
                     dp[i][j] = copied_pages
 
-        return dp[n - 1][k - 1]
+        r.. dp[n - 1][k - 1]
 
 
 """
@@ -144,17 +144,17 @@ class Solution:
     @return: an integer
     """
     ___ copyBooks(self, P, k):
-        __ not P or not k:
-            return 0
-        n = len(P)
-        __ n == 1:
-            return P[0]
+        __ n.. P o. n.. k:
+            r.. 0
+        n = l..(P)
+        __ n __ 1:
+            r.. P[0]
 
         __ k > n:
             k = n
 
         left = right = P[0]
-        for i in range(1, len(P)):
+        ___ i __ r..(1, l..(P)):
             __ P[i] > left:
                 left = P[i]
 
@@ -164,13 +164,13 @@ class Solution:
             mid = (left + right) // 2
             __ self.check_if_possible(P, mid, k):
                 right = mid
-            else:
+            ____:
                 left = mid
 
         """
         MUST check `left` first, since we need the min spent time
         """
-        return left __ self.check_if_possible(P, left, k) else right
+        r.. left __ self.check_if_possible(P, left, k) ____ right
 
     ___ check_if_possible(self, P, spent_time, max_copiers):
         """
@@ -179,7 +179,7 @@ class Solution:
         """
         copied_pages, copiers = 0, 1
 
-        for i in range(len(P)):
+        ___ i __ r..(l..(P)):
             """
             if a copier will spend more than `spent_time`
             add one more copier in
@@ -188,7 +188,7 @@ class Solution:
                 copied_pages = 0
                 copiers += 1
             __ copiers > max_copiers:
-                return False
+                r.. False
             copied_pages += P[i]
 
-        return True
+        r.. True

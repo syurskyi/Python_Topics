@@ -1,7 +1,7 @@
-from collections import namedtuple
-from datetime import date
+____ collections _______ namedtuple
+____ datetime _______ date
 
-import pandas as pd
+_______ pandas as pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
 STATION = namedtuple("Station", "ID Date Value")
@@ -27,7 +27,7 @@ ___ high_low_record_breakers_for_2015():
     stations = pd.read_csv("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates=['Date'])
     
     stations['Data_Value'] = stations['Data_Value'].div(10)
-    stations = stations[~((stations.Date.dt.day == 29) & (stations.Date.dt.month == 2))]
+    stations = stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2))]
 
     s = stations[stations.Date.dt.year != 2015]
 
@@ -36,7 +36,7 @@ ___ high_low_record_breakers_for_2015():
 
     u = s.groupby(['ID',s.Date.dt.dayofyear]).Data_Value.agg(['min','max'])
 
-    s_2015 = stations[stations.Date.dt.year == 2015]
+    s_2015 = stations[stations.Date.dt.year __ 2015]
 
     records_2015 = s_2015.groupby(['ID',s_2015.Date.dt.dayofyear]).Data_Value.agg(['min','max'])
 
@@ -48,13 +48,13 @@ ___ high_low_record_breakers_for_2015():
 
     ___ get_type_of_record_broken(row):
         
-        values = []
+        values    # list
         
         __ row['2015_min'] < row['min']:
-            values.append(row['2015_min'])
+            values.a..(row['2015_min'])
         __ row['2015_max'] > row['max']:
-            values.append(row['2015_max'])
-        return values
+            values.a..(row['2015_max'])
+        r.. values
 
     o = p.apply(get_type_of_record_broken,axis=1)
 
@@ -62,7 +62,7 @@ ___ high_low_record_breakers_for_2015():
 
     n = n.reset_index()
     n.Date = pd.to_datetime(n.Date,format='%j')
-    n.Date = n.Date.apply(lambda x: x.replace(year=2015))
+    n.Date = n.Date.apply(l.... x: x.replace(year=2015))
 
 
     n[0] = n[0].astype('float')
@@ -74,7 +74,7 @@ ___ high_low_record_breakers_for_2015():
     s1 = STATION(minimum.ID,minimum.Date,minimum[0])
     s2 = STATION(maximum.ID,maximum.Date,maximum[0])
 
-    return s2,s1
+    r.. s2,s1
 
 
 

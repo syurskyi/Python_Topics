@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -9,26 +9,26 @@ class Solution(object):
     """
     graph = {}
     hashset = set([])
-    for ticket in tickets:
+    ___ ticket __ tickets:
       graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]
 
-    maxLen = len(tickets) + 1
+    maxLen = l..(tickets) + 1
 
-    for k in graph:
-      graph[k] = deque(sorted(graph[k]))
+    ___ k __ graph:
+      graph[k] = deque(s..(graph[k]))
 
     ___ dfs(path, graph, maxLen, start):
-      __ len(path) == maxLen:
-        return path + []
-      for k in range(0, len(graph.get(start, []))):
+      __ l..(path) __ maxLen:
+        r.. path + []
+      ___ k __ r..(0, l..(graph.get(start, []))):
         nbr = graph.get(start, [])
         top = nbr.popleft()
-        path.append(top)
+        path.a..(top)
         ret = dfs(path, graph, maxLen, top)
         __ ret:
-          return ret
+          r.. ret
         path.pop()
-        nbr.append(top)
-      return []
+        nbr.a..(top)
+      r.. []
 
-    return dfs(["JFK"], graph, maxLen, "JFK")
+    r.. dfs(["JFK"], graph, maxLen, "JFK")

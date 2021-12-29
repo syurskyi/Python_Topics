@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from alphametics import solve
+____ alphametics _______ solve
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -67,5 +67,5 @@ class TestAlphametics(unittest.TestCase):
              "T": 9})
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

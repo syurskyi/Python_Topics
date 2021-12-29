@@ -9,47 +9,47 @@ class Solution(object):
         :type graph: List[List[int]]
         :rtype: List[int]
         """
-        n = len(graph)
+        n = l..(graph)
         outdegrees = [0]*n
-        inlinks = [[] for i in range(n)]
-        for i in range(n):
-            outdegrees[i] = len(graph[i])
-        for i in range(n):
-            for j in graph[i]:
-                inlinks[j].append(i)
-        queue = []
-        for i in range(n):
-            __ outdegrees[i] == 0:
-                queue.append(i)
-        res = []
+        inlinks = [[] ___ i __ r..(n)]
+        ___ i __ r..(n):
+            outdegrees[i] = l..(graph[i])
+        ___ i __ r..(n):
+            ___ j __ graph[i]:
+                inlinks[j].a..(i)
+        queue    # list
+        ___ i __ r..(n):
+            __ outdegrees[i] __ 0:
+                queue.a..(i)
+        res    # list
         while queue:
             i = queue.pop(0)
-            res.append(i)
-            for j in inlinks[i]:
+            res.a..(i)
+            ___ j __ inlinks[i]:
                 outdegrees[j] -= 1
-                __ outdegrees[j] == 0:
-                    queue.append(j)
+                __ outdegrees[j] __ 0:
+                    queue.a..(j)
         res.sort()
-        return res
+        r.. res
     
     ___ eventualSafeNodes_own_TLE(self, graph):
         """
         :type graph: List[List[int]]
         :rtype: List[int]
         """
-        n = len(graph)
+        n = l..(graph)
         isCycle = [False]*n
-        for i in range(n):
+        ___ i __ r..(n):
             visited = set()
             self.getIsCycle(i, i, graph, visited, isCycle)
-        return [i for i in range(n) __ not isCycle[i]]
+        r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     
     ___ getIsCycle(self, i, start, graph, visited, isCycle):
-        __ start in visited or isCycle[start]:
+        __ start __ visited o. isCycle[start]:
             isCycle[i] = True
-            return
+            r..
         visited.add(start)
-        for nextVal in graph[start]:
+        ___ nextVal __ graph[start]:
             self.getIsCycle(i, nextVal, graph, visited, isCycle)
         visited.remove(start)
     
@@ -58,11 +58,11 @@ class Solution(object):
             [[1,2],[2,3],[5],[0],[5],[],[]],
             [[],[0,2,3,4],[3],[4],[]],
         ]
-        for graph in testCases:
+        ___ graph __ testCases:
             print('graph: %s' % graph)
             result = self.eventualSafeNodes(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

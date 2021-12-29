@@ -5,28 +5,28 @@ Created on Mar 11, 2017
 '''
 class Solution(object):
     ___ numIslands2(self, m, n, positions):
-        res = []
+        res    # list
         roots = [-1]*(m*n)
-        grid = [[False]*n for _ in range(m)]
+        grid = [[False]*n ___ _ __ r..(m)]
         count = 0
-        for pos in positions:
+        ___ pos __ positions:
             i, j = pos[0], pos[1]
             grid[i][j] = True
             count += 1
             root0 = i*n+j
-            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
                 __ 0 <= x < m and 0 <= y < n and grid[x][y]:
                     root = self.getRoot(roots, x*n+y)
                     __ root != root0:
                         count -= 1
                         roots[root] = root0
-            res.append(count)
-        return res
+            res.a..(count)
+        r.. res
     
     ___ getRoot(self, roots, ind):
         while roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r.. ind
     
     ___ test(self):
         testCases = [
@@ -42,7 +42,7 @@ class Solution(object):
                 [[0,0],[7,1],[6,1],[3,3],[4,1]],
             ],
         ]
-        for m, n, positions in testCases:
+        ___ m, n, positions __ testCases:
             print('m: %s' % (m))
             print('n: %s' % (n))
             print('positions: %s' % (positions))
@@ -50,5 +50,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

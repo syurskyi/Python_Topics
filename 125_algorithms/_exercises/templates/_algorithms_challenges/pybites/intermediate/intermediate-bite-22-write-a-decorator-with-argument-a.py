@@ -12,15 +12,15 @@ def get_text(text='I code with PyBites'):
 
 # Approach 1 - working
 
-from functools import wraps
+____ functools _______ wraps
 ___ make_html(func):
     ___ wrapped_func():
         print("<p>" + func() + "</p>")
-    return wrapped_func
+    r.. wrapped_func
 
 @make_html
 ___ get_text(text='I code with PyBites'):
-    return text
+    r.. text
 
 
 get_text()

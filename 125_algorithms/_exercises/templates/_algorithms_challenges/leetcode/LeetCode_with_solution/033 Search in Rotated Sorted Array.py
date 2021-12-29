@@ -36,34 +36,34 @@ class Solution:
         :return: index, integer
         """
 
-        length = len(A)
+        length = l..(A)
         start = 0
         end = length-1  # [start, end]
         while start<=end:
             mid = (start+end)/2
             # found
-            __ A[mid]==target:
-                return mid
+            __ A[mid]__target:
+                r.. mid
             # case 1
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<A[end]:
+            ____ A[start]>A[mid] and A[mid]<A[end]:
                 __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____:
                     end = mid -1
             # case 3
-            else:
+            ____:
                 __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____:
                     start = mid+1
 
-        return -1
+        r.. -1
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().search([5,1,3], 5)

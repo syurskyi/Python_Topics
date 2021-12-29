@@ -46,14 +46,14 @@ class Solution(object):
         ret = 0
         while n != 1:
             ret += 1
-            __ n & 1 == 0:
+            __ n & 1 __ 0:
                 n >>= 1
-            elif n == 0b11 or n >> 1 & 1 == 0:
+            ____ n __ 0b11 o. n >> 1 & 1 __ 0:
                 n -= 1
-            else:
+            ____:
                 n += 1
 
-        return ret
+        r.. ret
 
     ___ integerReplacementRecur(self, n):
         """
@@ -61,12 +61,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        __ n == 1: return 0
+        __ n __ 1: r.. 0
 
         ret = 1
-        __ n%2 == 0:
+        __ n%2 __ 0:
             ret += self.integerReplacement(n/2)
-        else:
-            ret += min(self.integerReplacement(n+1), self.integerReplacement(n-1))
+        ____:
+            ret += m..(self.integerReplacement(n+1), self.integerReplacement(n-1))
 
-        return ret
+        r.. ret

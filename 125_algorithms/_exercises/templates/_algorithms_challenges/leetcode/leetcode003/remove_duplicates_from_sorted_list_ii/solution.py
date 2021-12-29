@@ -22,19 +22,19 @@ class Solution(object):
         """
         d = {}
         current = head
-        while current is not None:
-            __ current.val not in d:
+        while current __ n.. N..
+            __ current.val n.. __ d:
                 d[current.val] = 1
-            else:
+            ____:
                 d[current.val] += 1
             current = current.next
         current = head
         dummy = ListNode(0)
         dummy_end = dummy
-        while current is not None:
-            __ d[current.val] == 1:
+        while current __ n.. N..
+            __ d[current.val] __ 1:
                 dummy_end.next = current
                 dummy_end = current
             current = current.next
-        dummy_end.next = None
-        return dummy.next
+        dummy_end.next = N..
+        r.. dummy.next

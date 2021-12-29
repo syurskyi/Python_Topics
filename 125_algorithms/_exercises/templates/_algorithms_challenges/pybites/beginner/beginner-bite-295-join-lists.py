@@ -20,30 +20,30 @@ Note: Calling the function with an empty list should return None.
 
 ### ----------------------------- My solution -----------------------------------
 
-from typing import List, Union
-from functools import reduce
+____ typing _______ List, Union
+____ functools _______ reduce
 
-___ my_join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], None]:
-    __ len(lst_of_lst) == 0:
-        return None
-    result = []
+___ my_join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
+    __ l..(lst_of_lst) __ 0:
+        r.. N..
+    result    # list
     first = True
-    for inner_list in lst_of_lst:
+    ___ inner_list __ lst_of_lst:
         __ first:
             first = False
-        else:
-            result.append(sep)
-        for element in inner_list:
-            result.append(element)
-    return result
+        ____:
+            result.a..(sep)
+        ___ element __ inner_list:
+            result.a..(element)
+    r.. result
 
 
 print(my_join_lists([['a', 'b'], ['c']], '&'))
 
 ### -------------------------------- Pybites solution -------------------------------
 
-___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], None]:
-    __ not lst_of_lst:
-        return None
+___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
+    __ n.. lst_of_lst:
+        r.. N..
 
-    return reduce(lambda x, y: x + [sep] + y, lst_of_lst)
+    r.. reduce(l.... x, y: x + [sep] + y, lst_of_lst)

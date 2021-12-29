@@ -9,23 +9,23 @@ class Solution(object):
         lower, upper = matrix[0][0], matrix[-1][-1]
         while lower < upper:
             mid = (lower+upper)//2
-            __ self.count(matrix, mid) < k:
+            __ self.c.. matrix, mid) < k:
                 lower = mid+1
-            else:
+            ____:
                 upper = mid
-        return upper
+        r.. upper
     
-    ___ count(self, matrix, target):
-        m, n = len(matrix), len(matrix[0])
+    ___ c.. self, matrix, target):
+        m, n = l..(matrix), l..(matrix[0])
         i, j = m-1, 0
         count = 0
         while i >= 0 and j < n:
             __ matrix[i][j] <= target:
                 count += i+1
                 j += 1
-            else:
+            ____:
                 i -= 1
-        return count
+        r.. count
     
     ___ test(self):
         matrix = [
@@ -34,10 +34,10 @@ class Solution(object):
             [12, 13, 15],
         ]
         nums = [1, 5, 9, 10, 13]
-        for num in nums:
+        ___ num __ nums:
             print('num: %s' % num)
-            print('count: %s' % self.count(matrix, num))
+            print('count: %s' % self.c.. matrix, num))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

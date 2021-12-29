@@ -29,7 +29,7 @@ Note:
 0 <= A.length <= 10000
 0 <= A[i] <= 10000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -40,16 +40,16 @@ class Solution:
         use a flag
         """
         incr = 0  # 0 undecided, 1 increasing, 2 decresing
-        for i in range(1, len(A)):
-            __ A[i] == A[i-1]:
-                return False
-            elif A[i] > A[i-1]:
-                __ incr == 2:
-                    return False
+        ___ i __ r..(1, l..(A)):
+            __ A[i] __ A[i-1]:
+                r.. False
+            ____ A[i] > A[i-1]:
+                __ incr __ 2:
+                    r.. False
                 incr = 1
-            else:
-                __ incr == 0:
-                    return False
+            ____:
+                __ incr __ 0:
+                    r.. False
                 incr = 2
 
-        return incr == 2
+        r.. incr __ 2

@@ -11,23 +11,23 @@ class Solution(object):
         :rtype: bool
         """
         furthest = 0
-        for i, num in enumerate(nums):
+        ___ i, num __ enumerate(nums):
             __ furthest >= i:
                 furthest = max(furthest, i+num)
-            __ furthest >= len(nums)-1:
-                return True
-        return False
+            __ furthest >= l..(nums)-1:
+                r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
             [2,3,1,1,4],
             [3,2,1,0,4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.canJump(nums)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

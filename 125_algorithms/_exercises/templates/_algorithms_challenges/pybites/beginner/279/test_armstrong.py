@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from armstrong import is_armstrong
+____ armstrong _______ is_armstrong
 
 
 @pytest.mark.parametrize('number, expected', [
@@ -9,4 +9,4 @@ from armstrong import is_armstrong
     (9474, True), (1989, False), (11, False),
 ])
 ___ test_armstrong(number, expected):
-    assert is_armstrong(number) == expected
+    ... is_armstrong(number) __ expected

@@ -8,33 +8,33 @@ class Solution(object):
     ___ deconString(self, s):
         stack = [['', 1]]
         num = ''
-        for c in s:
+        ___ c __ s:
             __ c.isdigit():
                 num += c
-            elif c == '[':
-                stack.append(['', int(num)])
+            ____ c __ '[':
+                stack.a..(['', int(num)])
                 num = ''
-            elif c == ']':
+            ____ c __ ']':
                 st, k = stack.pop()
                 stack[-1][0] += st*k
-            else:
+            ____:
                 stack[-1][0] += c
-        return stack[0][0]
+        r.. stack[0][0]
     
     ___ decodeString_own(self, s):
-        __ '[' not in s:
-            return s
+        __ '[' n.. __ s:
+            r.. s
         result = ''
-        i, n = 0, len(s)
+        i, n = 0, l..(s)
         while i < n:
             c = s[i]
-            __ c == '[':
+            __ c __ '[':
                 count = 1
                 j = i+1
-                while j < len(s) and count > 0:
-                    __ s[j] == '[':
+                while j < l..(s) and count > 0:
+                    __ s[j] __ '[':
                         count+=1
-                    elif s[j] == ']':
+                    ____ s[j] __ ']':
                         count-=1
                     j+=1
                 nextInd = j
@@ -46,9 +46,9 @@ class Solution(object):
                 times = int(s[j:i])
                 result += times*tmp
                 i = nextInd
-            elif not c.isdigit():
+            ____ n.. c.isdigit():
                 result += c
                 i += 1
-            else:
+            ____:
                 i += 1
-        return result
+        r.. result

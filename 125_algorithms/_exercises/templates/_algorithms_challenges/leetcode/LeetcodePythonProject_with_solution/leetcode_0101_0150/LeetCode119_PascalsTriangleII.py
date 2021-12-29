@@ -10,12 +10,12 @@ class Solution(object):
         :rtype: List[int]
         """
         res = [1]
-        for i in range(rowIndex):
-            newRes = []
-            for j in range(i+2):
-                __ j == 0 or j == i+1:
-                    newRes.append(1)
-                else:
-                    newRes.append(res[j-1]+res[j])
+        ___ i __ r..(rowIndex):
+            newRes    # list
+            ___ j __ r..(i+2):
+                __ j __ 0 o. j __ i+1:
+                    newRes.a..(1)
+                ____:
+                    newRes.a..(res[j-1]+res[j])
             res = newRes
-        return res
+        r.. res

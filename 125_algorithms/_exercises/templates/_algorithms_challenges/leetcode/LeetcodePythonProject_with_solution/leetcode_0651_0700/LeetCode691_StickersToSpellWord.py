@@ -10,35 +10,35 @@ class Solution(object):
         :type target: str
         :rtype: int
         """
-        n = len(stickers)
-        mp = [[0]*26 for _ in range(n)]
-        for i in range(n):
-            for c in stickers[i]:
+        n = l..(stickers)
+        mp = [[0]*26 ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            ___ c __ stickers[i]:
                 mp[i][ord(c)-ord('a')] += 1
         mem = {}
         mem[''] = 0
-        return self.helper(mem, mp, target)
+        r.. self.helper(mem, mp, target)
     
     ___ helper(self, mem, mp, target):
-        __ target in mem:
-            return mem[target]
-        n = len(mp)
+        __ target __ mem:
+            r.. mem[target]
+        n = l..(mp)
         tar = [0]*26
-        for c in target:
+        ___ c __ target:
             tar[ord(c)-ord('a')] += 1
         res = float('inf')
-        for i in range(n):
-            __ mp[i][ord(target[0])-ord('a')] == 0:
+        ___ i __ r..(n):
+            __ mp[i][ord(target[0])-ord('a')] __ 0:
                 continue
             s = ''
-            for j in range(26):
+            ___ j __ r..(26):
                 __ tar[j] > mp[i][j]:
                     s += chr(ord('a')+j)*(tar[j]-mp[i][j])
             tmp = self.helper(mem, mp, s)
             __ tmp != -1:
-                res = min(res, 1+tmp)
-        mem[target] = -1 __ res == float('inf') else res
-        return mem[target]
+                res = m..(res, 1+tmp)
+        mem[target] = -1 __ res __ float('inf') ____ res
+        r.. mem[target]
     
     ___ test(self):
         testCases = [
@@ -51,12 +51,12 @@ class Solution(object):
                 "basicbasic",
             ],
         ]
-        for stickers, target in testCases:
+        ___ stickers, target __ testCases:
             print('stickers: %s' % stickers)
             print('target: %s' % target)
             result = self.minStickers(stickers, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

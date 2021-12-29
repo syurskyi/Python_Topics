@@ -22,19 +22,19 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         d = {}
-        res = []
-        for s in strs:
+        res    # list
+        ___ s __ strs:
             k = self.make_key(s)
-            __ k not in d:
+            __ k n.. __ d:
                 d[k] = [s]
-            else:
-                d[k].append(s)
-        for k in d:
-            res.append(sorted(d[k]))
-        return res
+            ____:
+                d[k].a..(s)
+        ___ k __ d:
+            res.a..(s..(d[k]))
+        r.. res
 
     ___ make_key(self, s):
-        return ''.join(sorted(s))
+        r.. ''.join(s..(s))
 
 
 s = Solution()

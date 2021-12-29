@@ -20,7 +20,7 @@ ___ filter_bites(bites=bites, bites_done=exclude_bites):
     """return the bites dict with the exclude_bites filtered out"""
 
 
-    return {key: value for key,value in bites.items() __ key not in bites_done}
+    r.. {key: value ___ key,value __ bites.items() __ key n.. __ bites_done}
 
 
 

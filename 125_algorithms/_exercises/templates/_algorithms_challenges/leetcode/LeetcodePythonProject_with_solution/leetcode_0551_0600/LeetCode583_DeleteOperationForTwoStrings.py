@@ -11,22 +11,22 @@ class Solution(object):
         :type word2: str
         :rtype: int
         """
-        m, n = len(word1), len(word2)
-        dp = [[float('inf')]*(n+1) for _ in range(m+1)]
-        for i in range(m+1):
-            for j in range(n+1):
-                __ i == 0 and j == 0:
+        m, n = l..(word1), l..(word2)
+        dp = [[float('inf')]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m+1):
+            ___ j __ r..(n+1):
+                __ i __ 0 and j __ 0:
                     dp[i][j] = 0
-                elif i == 0:
+                ____ i __ 0:
                     dp[i][j] = dp[i][j-1]+1
-                elif j == 0:
+                ____ j __ 0:
                     dp[i][j] = dp[i-1][j]+1
-                else:
-                    __ word1[i-1] == word2[j-1]:
+                ____:
+                    __ word1[i-1] __ word2[j-1]:
                         dp[i][j] = dp[i-1][j-1]
-                    else:
-                        dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1)
-        return dp[-1][-1]
+                    ____:
+                        dp[i][j] = m..(dp[i-1][j]+1, dp[i][j-1]+1)
+        r.. dp[-1][-1]
     
     ___ test(self):
         testCases = [
@@ -39,12 +39,12 @@ class Solution(object):
                 'abc',
             ],
         ]
-        for word1, word2 in testCases:
+        ___ word1, word2 __ testCases:
             print('word1: %s' % word1)
             print('word2: %s' % word2)
             result = self.minDistance(word1, word2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

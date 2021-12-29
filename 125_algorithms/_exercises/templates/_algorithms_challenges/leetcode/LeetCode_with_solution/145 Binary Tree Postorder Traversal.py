@@ -17,8 +17,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ postorderTraversal(self, root):
@@ -28,19 +28,19 @@ class Solution:
         :param root: TreeNode
         :return: a list of int
         """
-        lst = []
+        lst    # list
         self.postTraverse_itr(root, lst)
-        return lst
+        r.. lst
 
 
 
     ___ postTraverse(self, node, lst):
-        __ not node:
-            return
+        __ n.. node:
+            r..
         self.postTraverse(node.left, lst)
         self.postTraverse(node.right, lst)
 
-        lst.append(node.val)
+        lst.a..(node.val)
 
     ___ postTraverse_itr(self, root, lst):
         """
@@ -52,24 +52,24 @@ class Solution:
         :param lst:
         :return:
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
         stk = [root]
         while stk:
             cur = stk.pop()
             lst.insert(0, cur.val)  # reversely insert
             __ cur.left:
-                stk.append(cur.left)
+                stk.a..(cur.left)
 
             __ cur.right:
-                stk.append(cur.right)
+                stk.a..(cur.right)
 
 
 
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().postorderTraversal(t1)

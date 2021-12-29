@@ -1,4 +1,4 @@
-from packaging import version
+____ packaging _______ version
 # old_reqs = """
 # certifi==2017.4.17
 # chardet==3.0.4
@@ -28,18 +28,18 @@ from packaging import version
 # """
 
 
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> list:
+___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
    """Compare old vs new requirement multiline strings
       and return a list of dependencies that have been upgraded
       (have a newer version)
    """
-   upgraded_reqs = []
-   for old, new in zip(old_reqs.strip().splitlines(), new_reqs.strip().splitlines()):
+   upgraded_reqs    # list
+   ___ old, new __ zip(old_reqs.strip().splitlines(), new_reqs.strip().splitlines()):
       req, version_old = old.split("==")
       version_new = new.split("==")[1]
       __ version.parse(version_new) > version.parse(version_old):
-         upgraded_reqs.append(req)
-   return upgraded_reqs
+         upgraded_reqs.a..(req)
+   r.. upgraded_reqs
 
 
 # if __name__ == "__main__":

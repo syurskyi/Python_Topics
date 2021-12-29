@@ -11,13 +11,13 @@ class Solution(object):
         :type N: int
         :rtype: int
         """
-        import heapq
-        graph = [[-1]*N for _ in range(N)]
-        for edge in edges:
+        _______ heapq
+        graph = [[-1]*N ___ _ __ r..(N)]
+        ___ edge __ edges:
             graph[edge[0]][edge[1]] = edge[2]
             graph[edge[1]][edge[0]] = edge[2]
         res = 0
-        h = []
+        h    # list
         visited = [False]*N
         heapq.heappush(h, (-M, 0))
         while h:
@@ -28,10 +28,10 @@ class Solution(object):
                 continue
             visited[start] = True
             res += 1
-            for i in range(N):
+            ___ i __ r..(N):
                 __ graph[start][i] != -1:
-                    __ move > graph[start][i] and not visited[i]:
+                    __ move > graph[start][i] and n.. visited[i]:
                         heapq.heappush(h, ( -(move-graph[start][i]-1), i) )
-                    graph[i][start] -= min(move, graph[start][i])
-                    res += min(move, graph[start][i])
-        return res
+                    graph[i][start] -= m..(move, graph[start][i])
+                    res += m..(move, graph[start][i])
+        r.. res

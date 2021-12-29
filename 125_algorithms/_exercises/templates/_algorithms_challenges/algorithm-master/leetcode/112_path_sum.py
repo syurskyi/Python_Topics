@@ -15,16 +15,16 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        __ not root:
-            return False
+        __ n.. root:
+            r.. False
 
-        __ not root.left and not root.right:
-            return root.val == target
+        __ n.. root.left and n.. root.right:
+            r.. root.val __ target
 
         __ root.left and self.hasPathSum(root.left, target - root.val):
-            return True
+            r.. True
 
         __ root.right and self.hasPathSum(root.right, target - root.val):
-            return True
+            r.. True
 
-        return False
+        r.. False

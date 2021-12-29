@@ -1,16 +1,16 @@
-import collections
+_______ collections
 
 
 ___ my_queue(n=5):
     q = collections.deque(maxlen=n)
-    return q
+    r.. q
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     mq = my_queue()
-    for i in range(10):
-        mq.append(i)
-        print((i, list(mq)))
+    ___ i __ r..(10):
+        mq.a..(i)
+        print((i, l..(mq)))
 
     """Queue size does not go beyond n int, this outputs:
     (0, [0])

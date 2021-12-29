@@ -1,10 +1,10 @@
-from random import choice
-from string import ascii_uppercase
+____ random _______ choice
+____ string _______ ascii_uppercase
 
 fh = open('bigfile.txt', 'w')
 
-for i in range(1,1000000):
-    word = ''.join(choice(ascii_uppercase) for i in range(50))
+___ i __ r..(1,1000000):
+    word = ''.join(choice(ascii_uppercase) ___ i __ r..(50))
     word = word + '\n'
     fh.write(word)
 

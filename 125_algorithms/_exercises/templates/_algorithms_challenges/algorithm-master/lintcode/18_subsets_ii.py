@@ -7,21 +7,21 @@ class Solution:
     @return: A list of lists. All valid subsets.
     """
     ___ subsetsWithDup(self, A):
-        __ not A:
-            return [[]]
+        __ n.. A:
+            r.. [[]]
 
-        ans = []
-        self.dfs(sorted(A), 0, ans, [])
-        return ans
+        ans    # list
+        self.dfs(s..(A), 0, ans, [])
+        r.. ans
 
     ___ dfs(self, A, start, ans, subset):
-        ans.append(subset[:])
+        ans.a..(subset[:])
 
-        __ start >= len(A):
-            return
+        __ start >= l..(A):
+            r..
 
-        for i in range(start, len(A)):
-            __ i - 1 >= start and A[i] == A[i - 1]:
+        ___ i __ r..(start, l..(A)):
+            __ i - 1 >= start and A[i] __ A[i - 1]:
                 continue
 
             self.dfs(A, i + 1, ans, subset + [A[i]])

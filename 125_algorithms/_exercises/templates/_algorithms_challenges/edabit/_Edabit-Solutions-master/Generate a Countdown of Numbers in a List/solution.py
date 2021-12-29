@@ -3,6 +3,6 @@ ___ countdown(start):
     output = [start]
     while index <= start:
         s = start - index
-        output.append(s)
+        output.a..(s)
         index += 1
-    return output
+    r.. output

@@ -1,9 +1,9 @@
-import os
-from pathlib import Path
-import bisect
-import re
-from urllib.request import urlretrieve
-from bs4 import BeautifulSoup as Soup
+_______ os
+____ pathlib _______ Path
+_______ bisect
+_______ re
+____ urllib.request _______ urlretrieve
+____ bs4 _______ BeautifulSoup as Soup
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 HTML_FILE = TMP / "enchantment_list_pc.html"
@@ -26,10 +26,10 @@ class Enchantment:
         self.name = name
         self.max_level = max_level
         self.description = description
-        self.items = []
+        self.items    # list
 
     ___ __str__(self):
-        return f"{self.name} ({self.max_level}): {self.description}"
+        r.. f"{self.name} ({self.max_level}): {self.description}"
     
 class Item:
     """Minecraft enchantable item class
@@ -40,18 +40,18 @@ class Item:
 
     ___ __init__(self,name):
         self.name = name
-        self.enchantments = []
+        self.enchantments    # list
 
     ___ add_enchantment(self,enchantment):
-        self.enchantments.append(enchantment)
+        self.enchantments.a..(enchantment)
     
 
     ___ __str__(self):
-        string = self.name.replace('_',' ').title() + ': '
-        sorted_enchantments = sorted(self.enchantments,key=lambda x: x.id_name)
-        for enchantment in sorted_enchantments:
+        string = self.name.replace('_',' ').t.. + ': '
+        sorted_enchantments = s..(self.enchantments,key=l.... x: x.id_name)
+        ___ enchantment __ sorted_enchantments:
             string += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
-        return string
+        r.. string
 
 ___ generate_enchantments(soup):
     """Generates a dictionary of Enchantment objects
@@ -62,28 +62,28 @@ ___ generate_enchantments(soup):
     enchantment_dict = {}
     mapping = {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
     table = soup.find('table',id="minecraft_items")
-    all_values = []
-    for table_row in table.find_all('tr')[1:]:
+    all_values    # list
+    ___ table_row __ table.find_all('tr')[1:]:
         data = table_row.find_all('td')
-        values = []
-        for i,d in enumerate(data):
+        values    # list
+        ___ i,d __ enumerate(data):
             value = d.getText()
-            values.append(value)
+            values.a..(value)
         
         image_source = table_row.find('img')['data-src']
         last_part = image_source.split('/')[-1]
         last_part = re.sub(r'\.|png|sm|enchanted|iron','',last_part)
         
         items = last_part.strip().split('_')
-        valid_items = []
-        for item in items:
+        valid_items    # list
+        ___ item __ items:
             __ item:
-                __ item == 'fishing':
-                    valid_items.append('fishing_rod')
-                elif item == 'rod':
+                __ item __ 'fishing':
+                    valid_items.a..('fishing_rod')
+                ____ item __ 'rod':
                     continue
-                else:
-                    valid_items.append(item)
+                ____:
+                    valid_items.a..(item)
                                                
         id_name = re.search(r'\((.+)\)',values[0]).group(1)
         name= re.sub(r'\(.+\)','',values[0])
@@ -95,7 +95,7 @@ ___ generate_enchantments(soup):
         enchantment_dict[id_name] = enchantment
     
     print(enchantment_dict)
-    return enchantment_dict
+    r.. enchantment_dict
 
 
         
@@ -113,35 +113,35 @@ ___ generate_items(data):
     item_mapping = {}
     
 
-    for enchantment_id,enchantment in data.items():
+    ___ enchantment_id,enchantment __ data.items():
 
-        for item in enchantment.items:
-            __ item not in item_mapping:
+        ___ item __ enchantment.items:
+            __ item n.. __ item_mapping:
                 item_mapping[item] = Item(item)
 
 
             item_mapping[item].add_enchantment(enchantment)
     
     
-    item_mapping = dict(sorted(item_mapping.items(),key=lambda x:x[0]))
+    item_mapping = d..(s..(item_mapping.items(),key=l.... x:x[0]))
 
-    return item_mapping
+    r.. item_mapping
 
 
 
 
 ___ get_soup(file=HTML_FILE):
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isinstance(file, Path):
-        __ not file.is_file():
+    __ isi..(file, Path):
+        __ n.. file.is_file():
             urlretrieve(URL, file)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")
-    else:
+    ____:
         soup = Soup(file, "html.parser")
 
-    return soup
+    r.. soup
 
 
 ___ main():
@@ -151,11 +151,11 @@ ___ main():
     soup = get_soup()
     enchantment_data = generate_enchantments(soup)
     minecraft_items = generate_items(enchantment_data)
-    for item in minecraft_items:
+    ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     main()
 
 """

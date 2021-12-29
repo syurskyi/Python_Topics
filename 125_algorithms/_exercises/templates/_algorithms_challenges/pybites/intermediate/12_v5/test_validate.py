@@ -1,13 +1,13 @@
-import pytest
+_______ pytest
 
-from validate import (get_secret_token, SECRET,
+____ validate _______ (get_secret_token, SECRET,
                       UserDoesNotExist, UserAccessExpired, UserNoPermission)
 
 
 ___ test_get_secret_token():
-    assert issubclass(UserDoesNotExist, Exception)
-    assert issubclass(UserAccessExpired, Exception)
-    assert issubclass(UserNoPermission, Exception)
+    ... issubclass(UserDoesNotExist, Exception)
+    ... issubclass(UserAccessExpired, Exception)
+    ... issubclass(UserNoPermission, Exception)
 
     with pytest.raises(UserDoesNotExist):
         get_secret_token('Tim')
@@ -16,4 +16,4 @@ ___ test_get_secret_token():
     with pytest.raises(UserNoPermission):
         get_secret_token('Julian')
 
-    assert get_secret_token('PyBites') == SECRET
+    ... get_secret_token('PyBites') __ SECRET

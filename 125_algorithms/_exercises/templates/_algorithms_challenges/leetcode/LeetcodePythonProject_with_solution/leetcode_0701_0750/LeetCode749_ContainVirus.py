@@ -12,65 +12,65 @@ class Solution(object):
         cost = [0]
         while self.check(grid, cost):
             continue
-        return cost[0]
+        r.. cost[0]
     
     ___ check(self, grid, cost):
         count = 1
         maxVal = -1
         flag = False
-        info = []
-        m, n = len(grid), len(grid[0])
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 1:
+        info    # list
+        m, n = l..(grid), l..(grid[0])
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 1:
                     count += 1
-                    walls = [[0]*n for _ in range(m)]
+                    walls = [[0]*n ___ _ __ r..(m)]
                     res = [0, 0]
                     grid[i][j] = count
                     self.dfs(i, j, grid, count, walls, res)
                     __ res[0] != 0:
                         flag = True
-                    __ maxVal == -1 or res[0] > info[maxVal][0]:
+                    __ maxVal __ -1 o. res[0] > info[maxVal][0]:
                         maxVal = count-2
-                    info.append(list(res))
-        __ count == 1:
-            return False
+                    info.a..(l..(res))
+        __ count __ 1:
+            r.. False
         cost[0] += info[maxVal][1]
         self.update(grid, maxVal+2)
-        return flag
+        r.. flag
     
     ___ dfs(self, row, col, grid, count, walls, res):
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
-        m, n = len(grid), len(grid[0])
-        for i in range(4):
+        m, n = l..(grid), l..(grid[0])
+        ___ i __ r..(4):
             newRow = row+shiftX[i]
             newCol = col+shiftY[i]
             __ 0 <= newRow < m and 0 <= newCol < n:
-                __ grid[newRow][newCol] == 1:
+                __ grid[newRow][newCol] __ 1:
                     grid[newRow][newCol] = count
                     self.dfs(newRow, newCol, grid, count, walls, res)
-                elif grid[newRow][newCol] == 0:
-                    __ walls[newRow][newCol] == 0:
+                ____ grid[newRow][newCol] __ 0:
+                    __ walls[newRow][newCol] __ 0:
                         res[0] += 1
-                    __ (walls[newRow][newCol] & 1 << i) == 0:
+                    __ (walls[newRow][newCol] & 1 << i) __ 0:
                         res[1] += 1
                         walls[newRow][newCol] |= 1 << i
     
     ___ update(self, grid, quarantine):
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
-        m, n = len(grid), len(grid[0])
-        for i in range(m):
-            for j in range(n):
+        m, n = l..(grid), l..(grid[0])
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 __ grid[i][j] > 1 and grid[i][j] != quarantine:
-                    for k in range(4):
+                    ___ k __ r..(4):
                         newRow = i+shiftX[k]
                         newCol = j+shiftY[k]
-                        __ 0 <= newRow < m and 0 <= newCol < n and grid[newRow][newCol] == 0:
+                        __ 0 <= newRow < m and 0 <= newCol < n and grid[newRow][newCol] __ 0:
                             grid[newRow][newCol] = 1
                     grid[i][j] = 1
-                elif grid[i][j] == quarantine:
+                ____ grid[i][j] __ quarantine:
                     grid[i][j] = -1
     
     ___ test(self):
@@ -97,10 +97,10 @@ class Solution(object):
                 [1,1,1,0,0,0,0,0,0]
             ],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             result = self.containVirus(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

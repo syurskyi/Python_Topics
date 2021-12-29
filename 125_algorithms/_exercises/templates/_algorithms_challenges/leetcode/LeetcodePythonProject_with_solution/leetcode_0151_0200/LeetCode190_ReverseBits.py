@@ -9,8 +9,8 @@ class Solution:
     # @return an integer
     ___ reverseBits(self, n):
         res = 0
-        for i in range(0, 32):
+        ___ i __ r..(0, 32):
             last = n >> i
             res = res << 1
             res |= last & 1
-        return res
+        r.. res

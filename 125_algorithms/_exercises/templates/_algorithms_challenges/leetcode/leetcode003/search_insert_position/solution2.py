@@ -16,27 +16,27 @@ Here are few examples.
 
 class Solution(object):
     ___ searchInsert(self, nums, target):
-        n = len(nums)
+        n = l..(nums)
         left = 0
         right = n - 1
         while left + 1 < right:
             mid = left + (right - left) / 2
             __ mid > 0 and nums[mid - 1] < target < nums[mid]:
-                return mid
-            elif target <= nums[mid]:
+                r.. mid
+            ____ target <= nums[mid]:
                 right = mid
-            else:
+            ____:
                 left = mid
         __ nums[left] < target < nums[right]:
-            return left + 1
-        elif nums[left] == target:
-            return left
-        elif nums[right] == target:
-            return right
-        elif nums[left] > target:
-            return min(0, left)
-        elif nums[right] < target:
-            return max(n, right)
+            r.. left + 1
+        ____ nums[left] __ target:
+            r.. left
+        ____ nums[right] __ target:
+            r.. right
+        ____ nums[left] > target:
+            r.. m..(0, left)
+        ____ nums[right] < target:
+            r.. max(n, right)
 
 
 a1 = [1, 3]

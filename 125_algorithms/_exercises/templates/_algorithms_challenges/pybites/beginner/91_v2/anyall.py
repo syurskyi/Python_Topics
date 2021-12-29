@@ -1,4 +1,4 @@
-import re
+_______ re
 VOWELS = 'aeiou'
 PYTHON = 'python'
 
@@ -8,7 +8,7 @@ ___ contains_only_vowels(input_str):
        VOWELS. Match is case insensitive."""
 
 
-    return all(c.lower() in VOWELS for c in input_str)
+    r.. a..(c.lower() __ VOWELS ___ c __ input_str)
     
 
 
@@ -21,14 +21,14 @@ ___ contains_any_py_chars(input_str):
        chars are in it. Match is case insensitive."""
 
 
-    return any(c.lower() in PYTHON for c in input_str)
+    r.. any(c.lower() __ PYTHON ___ c __ input_str)
 
 
 ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
 
-    return re.search(r'\d',input_str) 
+    r.. re.search(r'\d',input_str)
 
 
 

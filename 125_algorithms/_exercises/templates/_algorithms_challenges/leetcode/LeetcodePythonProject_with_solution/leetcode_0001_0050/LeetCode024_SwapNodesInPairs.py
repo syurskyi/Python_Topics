@@ -26,4 +26,4 @@ class Solution(object):
             head.next = nextNode
             prev = head
             head = nextNode
-        return dummy.next
+        r.. dummy.next

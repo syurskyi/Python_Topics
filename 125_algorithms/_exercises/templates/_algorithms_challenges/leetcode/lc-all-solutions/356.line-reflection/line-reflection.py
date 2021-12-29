@@ -4,11 +4,11 @@ class Solution(object):
     :type points: List[List[int]]
     :rtype: bool
     """
-    __ len(points) < 2:
-      return True
-    twoTimesMid = min(points)[0] + max(points)[0]
-    d = set([(i, j) for i, j in points])
-    for i, j in points:
-      __ (twoTimesMid - i, j) not in d:
-        return False
-    return True
+    __ l..(points) < 2:
+      r.. True
+    twoTimesMid = m..(points)[0] + max(points)[0]
+    d = set([(i, j) ___ i, j __ points])
+    ___ i, j __ points:
+      __ (twoTimesMid - i, j) n.. __ d:
+        r.. False
+    r.. True

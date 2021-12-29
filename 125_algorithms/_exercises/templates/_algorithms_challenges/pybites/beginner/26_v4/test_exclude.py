@@ -1,9 +1,9 @@
-from exclude import filter_bites, exclude_bites
+____ exclude _______ filter_bites, exclude_bites
 
 
 ___ test_filter_bites():
     result = filter_bites()
-    assert type(result) == dict
-    assert len(result) == 10
-    for bite in exclude_bites:
-        assert bite not in result, f'Bite {bite} should not be in result'
+    ... type(result) __ d..
+    ... l..(result) __ 10
+    ___ bite __ exclude_bites:
+        ... bite n.. __ result, f'Bite {bite} should not be in result'

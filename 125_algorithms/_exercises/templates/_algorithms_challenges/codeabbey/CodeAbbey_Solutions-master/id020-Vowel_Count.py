@@ -1,9 +1,9 @@
 ___ vowelCount(words):
-        vowels = list("aeiouy")
-        answer = []
-        for x in range(words):
+        vowels = l..("aeiouy")
+        answer    # list
+        ___ x __ r..(words):
                 phraseCount = raw_input().lower()
-                phraseCount = sum(phraseCount.count(c) for c in vowels)
-                answer.append(str(phraseCount))
+                phraseCount = s..(phraseCount.c.. c) ___ c __ vowels)
+                answer.a..(str(phraseCount))
         print(' '.join(answer))
 vowelCount(input())

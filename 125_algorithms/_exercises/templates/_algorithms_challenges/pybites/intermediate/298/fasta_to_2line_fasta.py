@@ -1,7 +1,7 @@
-import os
-import urllib
+_______ os
+_______ urllib
 #from Bio import SeqIO
-import requests
+_______ requests
 
 # Fetched and truncated from
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
@@ -15,7 +15,7 @@ with open('test.txt','w') as f:
     f.write(response.text)
 
 
-__ not os.path.isfile(FASTA_FILE):
+__ n.. os.path.isfile(FASTA_FILE):
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
 ___ fasta_to_2line_fasta(fasta_file:str="test.txt", fasta_2line_file: str='test_converter.txt') -> int:
@@ -25,26 +25,26 @@ ___ fasta_to_2line_fasta(fasta_file:str="test.txt", fasta_2line_file: str='test_
     :return: Number of records
     """
 
-    sequence = []
-    lines = []
+    sequence    # list
+    lines    # list
     records = 0
     with open(fasta_2line_file,'w') as f1, open(fasta_file,'r') as f2:
 
-            for i,line in enumerate(f2,1):
+            ___ i,line __ enumerate(f2,1):
                 line = line.strip()
                 line = line.strip()
-                __ line[0] == '>':
+                __ line[0] __ '>':
                     __ sequence:
-                        sequence.append(''.join(lines))
+                        sequence.a..(''.join(lines))
                         f1.write('\n'.join(sequence))
                         f1.write('\n')
-                        sequence = []
-                    else:
+                        sequence    # list
+                    ____:
                         sequence = [line]
                     records += 1
-                    lines = []
-                else:
-                    lines.append(line)
+                    lines    # list
+                ____:
+                    lines.a..(line)
     '''    
     records *= 2
     
@@ -62,10 +62,10 @@ ___ fasta_to_2line_fasta(fasta_file:str="test.txt", fasta_2line_file: str='test_
                     break
     '''
 
-    return records
+    r.. records
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     fasta_to_2line_fasta()
     #fasta_to_2line_fasta(FASTA_FILE, f"{FASTA_FILE}_converted.fasta")

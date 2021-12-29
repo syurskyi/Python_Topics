@@ -12,18 +12,18 @@ class Solution(object):
         """
         res = ''
         prev = 0
-        for i, c in enumerate(s):
-            __ c == ' ':
+        ___ i, c __ enumerate(s):
+            __ c __ ' ':
                 tmpRes = self.reverse(s, prev, i-1)
                 res += tmpRes + ' '
                 prev = i+1
-        tmpRes = self.reverse(s, prev, len(s)-1)
+        tmpRes = self.reverse(s, prev, l..(s)-1)
         res += tmpRes
-        return res
+        r.. res
     
     ___ reverse(self, s, i, j):
         res = ''
         while i <= j:
             res += s[j]
             j -= 1
-        return res
+        r.. res

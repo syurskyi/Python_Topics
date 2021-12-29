@@ -10,26 +10,26 @@ class Solution:
     # @param root, a tree node
     # @return nothing
     ___ connect(self, root):
-        head = None  # Head node of the next level
-        prev = None
-        while root is not None:
+        head = N..  # Head node of the next level
+        prev = N..
+        while root __ n.. N..
             # Build the next level of root
-            while root is not None:
-                __ root.left is not None:
-                    __ prev is None:
+            while root __ n.. N..
+                __ root.left __ n.. N..
+                    __ prev __ N..
                         head = root.left
                         prev = head
-                    else:
+                    ____:
                         prev.next = root.left
                         prev = prev.next
-                __ root.right is not None:
-                    __ prev is None:
+                __ root.right __ n.. N..
+                    __ prev __ N..
                         head = root.right
                         prev = head
-                    else:
+                    ____:
                         prev.next = root.right
                         prev = prev.next
                 root = root.next
             root = head
-            head = None
-            prev = None
+            head = N..
+            prev = N..

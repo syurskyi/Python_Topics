@@ -5,15 +5,15 @@ ___ convert_pybites_chars(text):
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
     temp = ''
-    for letter in text:
-        __ letter.upper() in PYBITES.upper():
+    ___ letter __ text:
+        __ letter.upper() __ PYBITES.upper():
             __ letter.islower():
                 temp += letter.upper()
-            elif letter.isupper():
+            ____ letter.isupper():
                 temp += letter.lower()
-        else:
+        ____:
             temp += letter
-    return(temp)
+    r..(temp)
 
 
 convert_pybites_chars("PyBiTeS")

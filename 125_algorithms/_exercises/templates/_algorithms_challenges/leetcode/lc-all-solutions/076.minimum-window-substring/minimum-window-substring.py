@@ -7,17 +7,17 @@ class Solution(object):
     """
     score = 0
     wanted = collections.Counter(t)
-    start, end = len(s), 3 * len(s)
+    start, end = l..(s), 3 * l..(s)
     d = {}
     deq = collections.deque([])
-    for i, c in enumerate(s):
-      __ c in wanted:
-        deq.append(i)
+    ___ i, c __ enumerate(s):
+      __ c __ wanted:
+        deq.a..(i)
         d[c] = d.get(c, 0) + 1
         __ d[c] <= wanted[c]:
           score += 1
         while deq and d[s[deq[0]]] > wanted[s[deq[0]]]:
           d[s[deq.popleft()]] -= 1
-        __ score == len(t) and deq[-1] - deq[0] < end - start:
+        __ score __ l..(t) and deq[-1] - deq[0] < end - start:
           start, end = deq[0], deq[-1]
-    return s[start:end + 1]
+    r.. s[start:end + 1]

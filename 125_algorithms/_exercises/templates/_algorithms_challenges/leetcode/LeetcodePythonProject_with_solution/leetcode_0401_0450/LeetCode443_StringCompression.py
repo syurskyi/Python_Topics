@@ -12,25 +12,25 @@ class Solution(object):
         res = 0
         i = 0
         j = 0
-        n = len(chars)
+        n = l..(chars)
         while i < n:
-            __ i+1 < n and chars[i+1] == chars[i]:
+            __ i+1 < n and chars[i+1] __ chars[i]:
                 chars[j] = chars[i]
                 j += 1
                 prev = i
-                while i+1 < n and chars[i+1] == chars[i]:
+                while i+1 < n and chars[i+1] __ chars[i]:
                     i += 1
                 numStr = str(i-prev+1)
-                for c0 in numStr:
+                ___ c0 __ numStr:
                     chars[j] = c0
                     j += 1
-                res += 1+len(numStr)
-            else:
+                res += 1+l..(numStr)
+            ____:
                 chars[j] = chars[i]
                 j += 1
                 res += 1
             i += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -38,13 +38,13 @@ class Solution(object):
             'a',
             'abbbbbbbbbbbbb'
         ]
-        for chars in testCases:
-            chars = list(chars)
+        ___ chars __ testCases:
+            chars = l..(chars)
             print('chars: %s' % chars)
             result = self.compress(chars)
             print('result: %s' % result)
             print('chars: %s' % chars)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

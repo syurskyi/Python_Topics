@@ -1,4 +1,4 @@
-from exclude import filter_bites
+____ exclude _______ filter_bites
 
 
 ___ test_filter_bites_default_arguments():
@@ -15,7 +15,7 @@ ___ test_filter_bites_default_arguments():
         19: "Write a simple property",
         20: "Write a context manager",
     }
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_filter_bites_different_outputs():
@@ -31,4 +31,4 @@ ___ test_filter_bites_different_outputs():
         26: "Dictionary comprehensions are awesome",
         15: "Enumerate 2 sequences",
     }
-    assert actual == expected
+    ... actual __ expected

@@ -7,20 +7,20 @@ class Solution(object):
 
     ___ helper(grid, i, j):
       res = 0
-      __ grid[i][j] == 0:
-        return 0
-      __ i == 0 or i - 1 >= 0 and grid[i - 1][j] == 0:
+      __ grid[i][j] __ 0:
+        r.. 0
+      __ i __ 0 o. i - 1 >= 0 and grid[i - 1][j] __ 0:
         res += 1
-      __ i == len(grid) - 1 or i + 1 < len(grid) and grid[i + 1][j] == 0:
+      __ i __ l..(grid) - 1 o. i + 1 < l..(grid) and grid[i + 1][j] __ 0:
         res += 1
-      __ j == 0 or j - 1 >= 0 and grid[i][j - 1] == 0:
+      __ j __ 0 o. j - 1 >= 0 and grid[i][j - 1] __ 0:
         res += 1
-      __ j == len(grid[0]) - 1 or j + 1 < len(grid[0]) and grid[i][j + 1] == 0:
+      __ j __ l..(grid[0]) - 1 o. j + 1 < l..(grid[0]) and grid[i][j + 1] __ 0:
         res += 1
-      return res
+      r.. res
 
     ans = 0
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
+    ___ i __ r..(0, l..(grid)):
+      ___ j __ r..(0, l..(grid[0])):
         ans += helper(grid, i, j)
-    return ans
+    r.. ans

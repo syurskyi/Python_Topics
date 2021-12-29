@@ -7,8 +7,8 @@ The function should return the number of arithmetic slices in the array A.
 """
 
 class Solution:
-    ___ count(self, l):
-        return (l-1) * l // 2
+    ___ c.. self, l):
+        r.. (l-1) * l // 2
 
     ___ numberOfArithmeticSlices(self, A):
         """
@@ -20,26 +20,26 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        __ len(A) < 3:
-            return ret
+        __ l..(A) < 3:
+            r.. ret
 
-        delta = []
-        for i in range(1, len(A)):
-            delta.append(A[i] - A[i-1])
+        delta    # list
+        ___ i __ r..(1, l..(A)):
+            delta.a..(A[i] - A[i-1])
 
         s = 0
         e = 0
-        while s < len(delta):
-            while e < len(delta) and delta[s] == delta[e]:
+        while s < l..(delta):
+            while e < l..(delta) and delta[s] __ delta[e]:
                 e += 1
 
             l = e - s
-            ret += self.count(l)
+            ret += self.c.. l)
 
             s = e
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().numberOfArithmeticSlices([1, 2, 3, 4]) == 3
+__ __name__ __ "__main__":
+    ... Solution().numberOfArithmeticSlices([1, 2, 3, 4]) __ 3

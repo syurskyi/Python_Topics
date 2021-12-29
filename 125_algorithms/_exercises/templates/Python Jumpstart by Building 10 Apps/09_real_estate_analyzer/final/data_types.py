@@ -17,7 +17,7 @@ class Purchase:
 
     @staticmethod
     ___ create_from_dict(lookup):
-        return Purchase(
+        r.. Purchase(
             lookup['city'],
             lookup['zip'],
             lookup['state'],

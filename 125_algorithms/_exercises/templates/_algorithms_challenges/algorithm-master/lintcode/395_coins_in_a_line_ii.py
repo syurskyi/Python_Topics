@@ -21,22 +21,22 @@ class Solution:
         :type values: list[int]
         :rtype: bool
         """
-        __ not values:
-            return False
+        __ n.. values:
+            r.. False
 
-        n = len(values)
+        n = l..(values)
 
         __ n < 3:
-            return True
+            r.. True
 
         dp = [False] * n
         dp[-1] = values[-1]
         dp[-2] = values[-1] + values[-2]
 
-        for i in range(n - 3, -1, -1):
+        ___ i __ r..(n - 3, -1, -1):
             dp[i] = max((
                 values[i] - dp[i + 1],
                 values[i] + values[i + 1] - dp[i + 2],
             ))
 
-        return dp[0] >= 0
+        r.. dp[0] >= 0

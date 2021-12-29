@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from rna_transcription import to_rna
+____ rna_transcription _______ to_rna
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -31,5 +31,5 @@ class DNATests(unittest.TestCase):
         self.assertMultiLineEqual(to_rna('ACGTXXXCTTAA'), '')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

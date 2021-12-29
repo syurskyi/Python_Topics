@@ -1,9 +1,9 @@
 # To avoid trivial solutions, try to solve this problem without the
 # function int(s, base=16)
 
-import unittest
+_______ unittest
 
-from hexadecimal import hexa
+____ hexadecimal _______ hexa
 
 
 class HexadecimalTest(unittest.TestCase):
@@ -43,5 +43,5 @@ class HexadecimalTest(unittest.TestCase):
             hexa('')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

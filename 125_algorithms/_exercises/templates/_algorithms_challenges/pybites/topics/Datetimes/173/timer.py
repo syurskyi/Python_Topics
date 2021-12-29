@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta
-import re
+____ datetime _______ datetime, timedelta
+_______ re
 
 NOW = datetime(year=2019, month=2, day=6,
                hour=22, minute=0, second=0)
@@ -22,19 +22,19 @@ ___ add_todo(delay_time: str, task: str,
     >>> "Wash my car @ 2019-02-06 23:10:00"
     """
     days, hours, minutes, seconds = 0, 0, 0, 0
-    for timein in delay_time.split():
-        __ timein[-1] == 'd':
+    ___ timein __ delay_time.s.. :
+        __ timein[-1] __ 'd':
             days = int(timein[0:-1])
-        elif timein[-1] == 'h':
+        ____ timein[-1] __ 'h':
             hours = int(timein[0:-1])
-        elif timein[-1] == 'm':
+        ____ timein[-1] __ 'm':
             minutes = int(timein[0:-1])
-        elif timein[-1] == 's':
+        ____ timein[-1] __ 's':
             seconds = int(timein[0:-1])
-        else:
+        ____:
             seconds = int(timein)
     scheduled_dt = NOW + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
-    return f'{task} @ {scheduled_dt}'
+    r.. f'{task} @ {scheduled_dt}'
 
 
 print(add_todo("11h 10m", "Wash my car"))

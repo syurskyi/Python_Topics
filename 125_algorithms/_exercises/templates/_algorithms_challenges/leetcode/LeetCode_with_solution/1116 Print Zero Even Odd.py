@@ -30,8 +30,8 @@ Example 2:
 Input: n = 5
 Output: "0102030405"
 """
-from typing import Callable
-from threading import Lock
+____ typing _______ Callable
+____ threading _______ Lock
 
 
 class ZeroEvenOdd:
@@ -41,28 +41,28 @@ class ZeroEvenOdd:
         determing whether even() or odd() will run.
         """
         self.n = n
-        self.locks = [Lock() for _ in range(3)]
+        self.locks = [Lock() ___ _ __ r..(3)]
         self.locks[1].a..
         self.locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    ___ zero(self, printNumber: Callable[[int], None]) -> None:
-        for i in range(self.n):
+    ___ zero(self, printNumber: Callable[[int], N..]) -> N..
+        ___ i __ r..(self.n):
             self.locks[0].a..
             printNumber(0)
-            __ (i + 1) % 2 == 1:
+            __ (i + 1) % 2 __ 1:
                 self.locks[1].release()
-            else:
+            ____:
                 self.locks[2].release()
 
-    ___ odd(self, printNumber: Callable[[int], None]) -> None:
-        for i in range((self.n + 1) // 2):
+    ___ odd(self, printNumber: Callable[[int], N..]) -> N..
+        ___ i __ r..((self.n + 1) // 2):
             self.locks[1].a..
             printNumber(i * 2 + 1)
             self.locks[0].release()
 
-    ___ even(self, printNumber: Callable[[int], None]) -> None:
-        for i in range(self.n // 2):
+    ___ even(self, printNumber: Callable[[int], N..]) -> N..
+        ___ i __ r..(self.n // 2):
             self.locks[2].a..
             printNumber(i * 2 + 2)
             self.locks[0].release()
@@ -78,18 +78,18 @@ class ZeroEvenOddError:
         """
         self.n = n
         self.locks = [Lock(), Lock(), Lock(), Lock()]
-        for i in range(1, len(self.locks)):
+        ___ i __ r..(1, l..(self.locks)):
             self.locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    ___ zero(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ zero(self, printNumber: 'Callable[[int], None]') -> N..
         with self.locks[0]:
             printNumber(0)
 
-    ___ even(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ even(self, printNumber: 'Callable[[int], None]') -> N..
         # cannot lock self.locks[1] from both "even" and "odd"
         pass
 
 
-    ___ odd(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ odd(self, printNumber: 'Callable[[int], None]') -> N..
         pass

@@ -1,11 +1,11 @@
-import heapq
+_______ heapq
 
 
 class FreqStack(object):
 
     ___ __init__(self):
         self.hashmap = {}
-        self.heap = []
+        self.heap    # list
         self.size = 0
 
     ___ push(self, x):
@@ -23,16 +23,16 @@ class FreqStack(object):
         """
         _, _, val = heapq.heappop(self.heap)
         self.hashmap[val] -= 1
-        return val
+        r.. val
 
 
 class ListNode(object):
     ___ __init__(self, val):
         self.val = val
         self.freq = 0
-        self.prev = None
-        self.next = None
-        self.indexes = []
+        self.prev = N..
+        self.next = N..
+        self.indexes    # list
 
 
 class FreqStack_self(object):
@@ -40,8 +40,8 @@ class FreqStack_self(object):
     ___ __init__(self):
         self.idx = 0
         self.hashmap = {}
-        self.head = None
-        self.tail = None
+        self.head = N..
+        self.tail = N..
         self.idx = 0
 
     ___ push(self, x):
@@ -50,17 +50,17 @@ class FreqStack_self(object):
         :rtype: None
         """
         self.idx += 1
-        __ x not in self.hashmap:
+        __ x n.. __ self.hashmap:
             node = ListNode(x)
             self.hashmap[x] = node
-        else:
+        ____:
             node = self.hashmap[x]
         node.freq += 1
-        node.indexes.append(self.idx)
-        __ not self.head:
+        node.indexes.a..(self.idx)
+        __ n.. self.head:
             self.head = node
             self.tail = node
-        else:
+        ____:
             node0 = node.next
             while node0 and node0.freq <= node.freq:
                 node0 = node0.next
@@ -68,7 +68,7 @@ class FreqStack_self(object):
                 nextNode = node0.next
                 node0.next = node
                 node.next = nextNode
-            else:
+            ____:
                 self.tail.next = node
 
     ___ pop(self):
@@ -79,7 +79,7 @@ class FreqStack_self(object):
         node.freq -= 1
         node.indexes.pop()
         val = node.val
-        __ node.freq == 0:
+        __ node.freq __ 0:
             del self.hashmap[val]
             prevNode = node.prev
             nextNode = node.next
@@ -87,31 +87,31 @@ class FreqStack_self(object):
                 prevNode.next = nextNode
                 __ nextNode:
                     nextNode.prev = prevNode
-                else:
+                ____:
                     self.tail = prevNode
-            else:
+            ____:
                 self.head = nextNode
                 __ nextNode:
                     nextNode.prev = prevNode
-                else:
-                    self.head = None
-                    self.tail = None
-        else:
+                ____:
+                    self.head = N..
+                    self.tail = N..
+        ____:
             node0 = node.prev
-            while node0 and (node0.freq > node.freq or
-                             (node0.freq == node.freq and
+            while node0 and (node0.freq > node.freq o.
+                             (node0.freq __ node.freq and
                               node0.indexes[-1] > node.indexes[-1])):
                 node0 = node0.prev
             __ node0 and node0 != node:
                 prevNode = node0.prev
                 node0.prev = node
                 node.prev = prevNode
-            else:
+            ____:
                 self.head.prev = node
-        return val
+        r.. val
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     freqStack = FreqStack()
     freqStack.push(5)
     freqStack.push(7)

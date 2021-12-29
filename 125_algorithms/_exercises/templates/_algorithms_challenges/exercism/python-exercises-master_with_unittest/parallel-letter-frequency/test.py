@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from collections import Counter
-import unittest
+____ collections _______ Counter
+_______ unittest
 
-from parallel_letter_frequency import calculate
+____ parallel_letter_frequency _______ calculate
 
 
 class ParallelLetterFrequencyTest(unittest.TestCase):
@@ -53,9 +53,9 @@ class ParallelLetterFrequencyTest(unittest.TestCase):
                      "expensive yak shave waiting to\n" + \
                      "happen."
         actual = calculate(text_input.split('\n'))
-        expected = Counter([x for x in text_input.lower() __ x.isalpha()])
+        expected = Counter([x ___ x __ text_input.lower() __ x.isalpha()])
         self.assertDictEqual(actual, expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

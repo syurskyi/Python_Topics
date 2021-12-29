@@ -12,7 +12,7 @@ class Helper:
     def get_distance(cls, lat1, lng1, lat2, lng2):
         # return calculate the distance between (lat1, lng1) and (lat2, lng2)
 """
-from Trip import Trip, Helper
+____ Trip _______ Trip, Helper
 
 
 class MiniUber:
@@ -25,45 +25,45 @@ class MiniUber:
     # return {trip} matched trip information
     #               if there have matched rider or null
     ___ report(self, driver_id, lat, lng):
-        __ not driver_id:
-            return
+        __ n.. driver_id:
+            r..
 
-        __ driver_id in self.driver_to_trip:
-            return self.driver_to_trip[driver_id]
+        __ driver_id __ self.driver_to_trip:
+            r.. self.driver_to_trip[driver_id]
 
-        __ driver_id in self.driver_to_locs:
+        __ driver_id __ self.driver_to_locs:
             self.driver_to_locs[driver_id]['lat'] = lat
             self.driver_to_locs[driver_id]['lng'] = lng
-        else:
+        ____:
             self.driver_to_locs[driver_id] = self._new_location(lat, lng)
 
     # @param rider_id an integer
     # @param lat, lng rider's location
     # return a trip
     ___ request(self, rider_id, lat, lng):
-        __ not rider_id:
-            return
+        __ n.. rider_id:
+            r..
         trip = Trip(rider_id, lat, lng)
         _distance = distance = self.INFINITY
         driver_id = -1
 
-        for _driver_id, _loc in self.driver_to_locs.items():
+        ___ _driver_id, _loc __ self.driver_to_locs.items():
             _distance = Helper.get_distance(_loc['lat'], _loc['lng'], lat, lng)
             __ _distance < distance:
                 driver_id = _driver_id
                 distance = _distance
 
-        __ driver_id == -1:
-            return trip
+        __ driver_id __ -1:
+            r.. trip
 
         trip.driver_id = driver_id
         self.driver_to_trip[driver_id] = trip
         del self.driver_to_locs[driver_id]
 
-        return trip
+        r.. trip
 
     ___ _new_location(self, lat, lng):
-        return {
+        r.. {
             'lat': lat,
             'lng': lng
         }

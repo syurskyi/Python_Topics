@@ -24,7 +24,7 @@ class Solution(object):
 
         # Use set d to check endless loop
         d = set()
-        while n not in d:
+        while n n.. __ d:
             d.add(n)
             t = n
             s = 0  # sum
@@ -33,9 +33,9 @@ class Solution(object):
                 s += digit * digit
                 t /= 10
             n = s
-            __ n == 1:
-                return True
-        return False
+            __ n __ 1:
+                r.. True
+        r.. False
 
 
 s = Solution()

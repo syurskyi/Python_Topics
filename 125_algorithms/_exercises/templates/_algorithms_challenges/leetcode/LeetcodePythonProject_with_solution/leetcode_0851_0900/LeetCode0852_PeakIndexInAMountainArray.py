@@ -10,14 +10,14 @@ class Solution(object):
         :rtype: int
         """
         arr = A
-        l, r = 0, len(arr)-1
+        l, r = 0, l..(arr)-1
         while l < r:
             m = (l+r)//2
             __ arr[m] < arr[m+1]:
                 l = m+1
-            else:
+            ____:
                 r = m
-        return l
+        r.. l
     
     ___ peakIndexInMountainArray_On(self, A):
         """
@@ -27,21 +27,21 @@ class Solution(object):
         arr = A
         res = -1
         val = float('-inf')
-        for i, num in enumerate(arr):
+        ___ i, num __ enumerate(arr):
             __ num > val:
                 res = i
             val = max(val, num)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [0,1,0],
             [0,2,1,0],
         ]
-        for a in testCases:
+        ___ a __ testCases:
             res = self.peakIndexInMountainArray(a)
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

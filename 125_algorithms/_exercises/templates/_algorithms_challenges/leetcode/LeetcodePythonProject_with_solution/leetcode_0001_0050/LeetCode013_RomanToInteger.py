@@ -15,10 +15,10 @@ class Solution(object):
             'M': 1000,
         }
         res = 0
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             curVal = hashmap[c]
-            __ i+1 < len(s) and hashmap[s[i+1]] > curVal:
+            __ i+1 < l..(s) and hashmap[s[i+1]] > curVal:
                 res -= curVal
-            else:
+            ____:
                 res += curVal
-        return res
+        r.. res

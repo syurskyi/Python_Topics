@@ -1,13 +1,13 @@
-from datetime import *
-from dateutil.relativedelta import *
-from dateutil.rrule import *
+____ datetime _______ *
+____ dateutil.relativedelta _______ *
+____ dateutil.rrule _______ *
 
 NOW = datetime.now()
 TODAY = date.today()
 
 print(NOW, TODAY)
 
-print(list(rrule(DAILY, 
+print(l..(rrule(DAILY,
                 count=6, 
                 byweekday=(MO, TU, WE, TH, FR),
                 dtstart=NOW)))

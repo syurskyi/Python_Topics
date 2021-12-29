@@ -6,50 +6,50 @@ Created on Apr 4, 2017
 
 class Solution(object):
     ___ longestSubstring_orig(self, s, k):
-        __ len(s) < k:
-            return 0
-        c = min([(s.count(c), c) for c in s])[1]
-        __ s.count(c) >= k:
-            return len(s)
-        return max(self.longestSubstring_orig(t, k) for t in s.split(c))
+        __ l..(s) < k:
+            r.. 0
+        c = m..([(s.c.. c), c) ___ c __ s])[1]
+        __ s.c.. c) >= k:
+            r.. l..(s)
+        r.. max(self.longestSubstring_orig(t, k) ___ t __ s.split(c))
     
     ___ longestSubstring(self, s, k):
-        __ len(s) < k: return 0
+        __ l..(s) < k: r.. 0
         minChar, minCount = 0, float('inf')
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
-        for c in s:
+        ___ c __ s:
             __ hashmap[c] < minCount:
                 minCount = hashmap[c]
                 minChar = c
         __ hashmap[minChar] >= k:
-            return len(s)
+            r.. l..(s)
         maxRes = float('-inf')
-        for t in s.split(minChar):
+        ___ t __ s.split(minChar):
             maxRes = max(maxRes, self.longestSubstring(t, k))
-        return maxRes
+        r.. maxRes
     
     ___ longestSubstring_another(self, s, k):
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         splitSet = set()
-        for c, freq in hashmap.items():
+        ___ c, freq __ hashmap.items():
             __ freq < k:
                 splitSet.add(c)
-        __ not splitSet: return len(s)
+        __ n.. splitSet: r.. l..(s)
         print('splitSet: %s' % splitSet)
         maxLen = 0
         prev = 0
-        for i in range(len(s)):
-            __ s[i] in splitSet:
+        ___ i __ r..(l..(s)):
+            __ s[i] __ splitSet:
                 __ prev < i:
                     maxLen = max(maxLen, self.longestSubstring_another(s[prev:i], k))
                 prev = i+1
-        __ prev < len(s):
+        __ prev < l..(s):
             maxLen = max(maxLen, self.longestSubstring_another(s[prev:], k))
-        return maxLen
+        r.. maxLen
     
     ___ test(self):
         testCases = [
@@ -58,7 +58,7 @@ class Solution(object):
             ("weitong", 2),
             ("bbaaacbd", 3),
         ]
-        for s, k in testCases:
+        ___ s, k __ testCases:
             print('s: %s' % s)
             print('k: %s' % k)
             result = self.longestSubstring(s, k)
@@ -67,5 +67,5 @@ class Solution(object):
             print('another result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,6 +1,6 @@
-import string
-import numpy as np
-import pandas as pd
+_______ string
+_______ numpy as np
+_______ pandas as pd
 
 
 ___ basic_series() -> pd.Series:
@@ -8,7 +8,7 @@ ___ basic_series() -> pd.Series:
     Don't worry about the indexes for now.
     The name of the series should be 'Fred'
     """
-    return pd.Series(range(1,6),name='Fred')
+    r.. pd.Series(r..(1,6),name='Fred')
 
 
 ___ float_series() -> pd.Series:
@@ -17,7 +17,7 @@ ___ float_series() -> pd.Series:
     Don't worry about the indexes or the series name.
     """
 
-    return pd.Series(np.arange(0.000,1.001,0.001))
+    r.. pd.Series(np.arange(0.000,1.001,0.001))
 
 
 
@@ -27,7 +27,7 @@ ___ alpha_index_series() -> pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    return pd.Series(range(1,27),dtype='int64',index=list(string.ascii_lowercase))
+    r.. pd.Series(r..(1,27),dtype='int64',index=l..(string.ascii_lowercase))
 
 
 ___ object_values_series() -> pd.Series:
@@ -37,4 +37,4 @@ ___ object_values_series() -> pd.Series:
     Don't worry about the series name.
     """
 
-    return pd.Series(list(string.ascii_uppercase),index=range(101,127))
+    r.. pd.Series(l..(string.ascii_uppercase),index=r..(101,127))

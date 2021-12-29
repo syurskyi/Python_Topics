@@ -30,7 +30,7 @@ class Solution:
         """
         s = s + "\0"  # signal the end
         ret, _ = self.eval(s, 0, [])
-        return ret
+        r.. ret
 
     ___ eval(self, s, i, stk):
         """
@@ -38,37 +38,37 @@ class Solution:
         """
         operand = 0
         prev_op = "+"
-        while i < len(s):
+        while i < l..(s):
             c = s[i]
-            __ c == " ":
+            __ c __ " ":
                 pass  # not continue since need trigger i += 1
-            elif c.isdigit():
+            ____ c.isdigit():
                 operand = operand * 10 + int(c)
-            elif c in ("+", "-", "*", "/", ")", "\0"):   # delimiter
-                __ prev_op == "+":
-                    stk.append(operand)
-                elif prev_op == "-":
-                    stk.append(-operand)
-                elif prev_op == "*":
+            ____ c __ ("+", "-", "*", "/", ")", "\0"):   # delimiter
+                __ prev_op __ "+":
+                    stk.a..(operand)
+                ____ prev_op __ "-":
+                    stk.a..(-operand)
+                ____ prev_op __ "*":
                     prev_operand = stk.pop()
-                    stk.append(prev_operand * operand)
-                elif prev_op == "/":
+                    stk.a..(prev_operand * operand)
+                ____ prev_op __ "/":
                     prev_operand = stk.pop()
-                    stk.append(int(prev_operand / operand))
+                    stk.a..(int(prev_operand / operand))
 
-                __ c in ("+", "-", "*", "/"):
+                __ c __ ("+", "-", "*", "/"):
                     operand = 0
                     prev_op = c
-                elif c in (")", "\0"):
-                    return sum(stk), i
-            elif c == "(":  # "(" is not delimiter
+                ____ c __ (")", "\0"):
+                    r.. s..(stk), i
+            ____ c __ "(":  # "(" is not delimiter
                 operand, i = self.eval(s, i + 1, [])
-            else:
+            ____:
                 raise
 
             i += 1
 
 
-__ __name__ == "__main__":
-    assert Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") == 0
-    assert Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") == -12
+__ __name__ __ "__main__":
+    ... Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") __ 0
+    ... Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") __ -12

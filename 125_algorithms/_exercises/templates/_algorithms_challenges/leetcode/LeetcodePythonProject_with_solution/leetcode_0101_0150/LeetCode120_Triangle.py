@@ -9,9 +9,9 @@ class Solution(object):
         :type triangle: List[List[int]]
         :rtype: int
         """
-        dp = list(triangle[-1])
-        n = len(triangle)
-        for i in range(n-2, -1, -1):
-            for j in range(i+1):
-                dp[j] = min(triangle[i][j]+dp[j], triangle[i][j]+dp[j+1])
-        return dp[0]
+        dp = l..(triangle[-1])
+        n = l..(triangle)
+        ___ i __ r..(n-2, -1, -1):
+            ___ j __ r..(i+1):
+                dp[j] = m..(triangle[i][j]+dp[j], triangle[i][j]+dp[j+1])
+        r.. dp[0]

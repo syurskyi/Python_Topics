@@ -1,6 +1,6 @@
-from collections import namedtuple
-import isodate
-import datetime
+____ collections _______ namedtuple
+_______ isodate
+_______ datetime
 
 # import os
 # import urllib.request
@@ -696,12 +696,12 @@ pycon_videos = [Video(id='T-TwcmT6Rcw',
 ___ load_pycon_data(pycon_videos=pycon_videos):
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
-    return pycon_videos
+    r.. pycon_videos
 
 
 ___ get_most_popular_talks_by_views(videos):
     """Return the pycon video list sorted by viewCount"""
-    return sorted(videos, key=lambda x: int(x.metrics['viewCount']), reverse=True)
+    r.. s..(videos, key=l.... x: int(x.metrics['viewCount']), r.._T..
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -709,21 +709,21 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        number of views, so 10 likes on 175 views ranks higher than
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
        Return the filtered list"""
-    return sorted(videos,
-                  key=lambda x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])) / int(x.metrics['viewCount']),
-                  reverse=True)
+    r.. s..(videos,
+                  key=l.... x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])) / int(x.metrics['viewCount']),
+                  r.._T..
 
 
 ___ get_video_duration(video):
-    return isodate.parse_duration(video.duration)
+    r.. isodate.parse_duration(video.duration)
 
 
 ___ get_talks_gt_one_hour(videos):
     """Filter the videos list down to videos of > 1 hour"""
-    return [video for video in videos __ get_video_duration(video) >= datetime.timedelta(hours=1)]
+    r.. [video ___ video __ videos __ get_video_duration(video) >= datetime.timedelta(hours=1)]
 
 
 ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
-    return [video for video in videos __ get_video_duration(video) < datetime.timedelta(minutes=24)]
+    r.. [video ___ video __ videos __ get_video_duration(video) < datetime.timedelta(minutes=24)]

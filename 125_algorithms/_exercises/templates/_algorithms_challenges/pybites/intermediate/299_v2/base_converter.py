@@ -11,20 +11,20 @@ ___ convert(number: int, base: int = 2) -> str:
     Returns:
         str: The returned value as a string
     """
-    __ not 2 <= base <= 36:
+    __ n.. 2 <= base <= 36:
         raise ValueError("Invalid Base")
     
-    values = []
+    values    # list
     while number:
         remainder = number % base
         number //= base
         __ remainder >= 10:
             remainder = chr(remainder - 10  + ord('A'))
 
-        values.append(str(remainder))
+        values.a..(str(remainder))
 
 
-    return ''.join(reversed(values))
+    r.. ''.join(reversed(values))
             
 
 

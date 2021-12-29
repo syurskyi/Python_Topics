@@ -18,4 +18,4 @@ class Solution:
             cnt += n&1
             n >>= 1
 
-        return cnt
+        r.. cnt

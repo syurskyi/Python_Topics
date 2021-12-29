@@ -4,15 +4,15 @@ ___ rgb_to_hex(rgb):
        Silver: input tuple = (192,192,192) -> output hex str = #C0C0C0"""
 
 
-    __ any(not 0 <= value <= 255 for value in rgb):
+    __ any(n.. 0 <= value <= 255 ___ value __ rgb):
         raise ValueError("Not in range")
 
 
     
-    hex_value = ''.join(hex(value)[2:].zfill(2) for value in rgb).upper()
+    hex_value = ''.join(hex(value)[2:].zfill(2) ___ value __ rgb).upper()
 
 
-    return f"#{hex_value}"
+    r.. f"#{hex_value}"
 
 
 

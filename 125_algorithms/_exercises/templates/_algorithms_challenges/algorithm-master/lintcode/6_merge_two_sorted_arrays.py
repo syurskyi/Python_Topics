@@ -5,12 +5,12 @@ class Solution:
     @return: A new sorted integer array
     """
     ___ mergeSortedArray(self, A, B):
-        __ not A:
-            return B
-        __ not B:
-            return A
+        __ n.. A:
+            r.. B
+        __ n.. B:
+            r.. A
 
-        m, n = len(A), len(B)
+        m, n = l..(A), l..(B)
         ans = [0] * (m + n)
 
         i = j = index = 0
@@ -18,7 +18,7 @@ class Solution:
             __ A[i] < B[j]:
                 ans[index] = A[i]
                 i += 1
-            else:
+            ____:
                 ans[index] = B[j]
                 j += 1
             index += 1
@@ -33,4 +33,4 @@ class Solution:
             j += 1
             index += 1
 
-        return ans
+        r.. ans

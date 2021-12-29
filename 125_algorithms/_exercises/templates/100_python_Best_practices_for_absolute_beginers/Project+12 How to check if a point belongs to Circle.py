@@ -1,4 +1,4 @@
-import math
+_______ math
 
 x  float(input("Insert point x: "))
 y  float(input("Insert point y: "))
@@ -8,5 +8,5 @@ hypotenuse  math.sqrt(pow(x,2) + pow(y,2))
 
 __ hypotenuse < r:
     print("The point belongs to circle.")
-else:
+____:
     print("The point does not belong to circle.")

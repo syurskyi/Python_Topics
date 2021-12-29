@@ -2,9 +2,9 @@
 # Score: 10
 
 
-from itertools import product
+____ itertools _______ product
 
 
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
-print(*list(product(a, b)))
+a = l..(map(int, input().split()))
+b = l..(map(int, input().split()))
+print(*l..(product(a, b)))

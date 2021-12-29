@@ -5,10 +5,10 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        __ not matrix or not matrix[0]:
-            return False
+        __ n.. matrix o. n.. matrix[0]:
+            r.. False
 
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         left, right = 0, m * n - 1
 
         while left + 1 < right:
@@ -18,12 +18,12 @@ class Solution:
 
             __ matrix[x][y] < target:
                 left = mid
-            elif matrix[x][y] > target:
+            ____ matrix[x][y] > target:
                 right = mid
-            else:
-                return True
+            ____:
+                r.. True
 
-        return any(
-            matrix[mid // n][mid % n] == target
-            for mid in (left, right)
+        r.. any(
+            matrix[mid // n][mid % n] __ target
+            ___ mid __ (left, right)
         )

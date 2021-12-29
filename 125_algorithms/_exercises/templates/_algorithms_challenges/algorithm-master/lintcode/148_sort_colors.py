@@ -4,23 +4,23 @@ class Solution:
     @return: nothing
     """
     ___ sortColors(self, A):
-        __ not A:
-            return
+        __ n.. A:
+            r..
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         i = 0
         while i <= right:
-            __ A[i] == 0:
+            __ A[i] __ 0:
                 A[left], A[i] = A[i], A[left]
                 left += 1
                 i += 1
-            elif A[i] == 1:
+            ____ A[i] __ 1:
                 """
                 temply ignore it
                 it will be swapped if there is `0` later
                 """
                 i += 1
-            else:
+            ____:
                 """
                 cannot `i += 1` since the swapped value still need to check
                 """

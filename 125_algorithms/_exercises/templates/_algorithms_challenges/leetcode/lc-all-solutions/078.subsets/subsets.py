@@ -6,9 +6,9 @@ class Solution(object):
     """
 
     ___ dfs(nums, index, path, ans):
-      ans.append(path)
-      [dfs(nums, i + 1, path + [nums[i]], ans) for i in range(index, len(nums))]
+      ans.a..(path)
+      [dfs(nums, i + 1, path + [nums[i]], ans) ___ i __ r..(index, l..(nums))]
 
-    ans = []
+    ans    # list
     dfs(nums, 0, [], ans)
-    return ans
+    r.. ans

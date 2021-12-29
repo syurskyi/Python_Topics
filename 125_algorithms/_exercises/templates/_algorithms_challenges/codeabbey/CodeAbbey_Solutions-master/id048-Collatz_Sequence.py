@@ -1,17 +1,17 @@
 ___ collatzSequence(tests):
-    data = raw_input().split()
-    answer = []
+    data = raw_input().s..
+    answer    # list
     
-    for test in range(tests):
+    ___ test __ r..(tests):
         count = 0
         value = int(data[test])
         
         while value != 1:
-            __ value % 2 == 0:
+            __ value % 2 __ 0:
                 value /= 2
-            else:
+            ____:
                 value = 3 * value + 1
             count += 1
-        answer.append(str(count))
+        answer.a..(str(count))
     print(' '.join(answer))
 collatzSequence(input())

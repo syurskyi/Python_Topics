@@ -5,17 +5,17 @@ class Solution:
     @return: the largest sum
     """
     ___ maxSubarray4(self, A, k):
-        __ not A:
-            return 0
-        n = len(A)
+        __ n.. A:
+            r.. 0
+        n = l..(A)
         __ n < k:
-            return 0
+            r.. 0
 
         ans = float('-inf')
         Smin = 0
         S = [0] * (n + 1)
 
-        for i in range(1, n + 1):
+        ___ i __ r..(1, n + 1):
             S[i] = S[i - 1] + A[i - 1]
 
             """
@@ -35,4 +35,4 @@ class Solution:
             __ S[i - k + 1] < Smin:
                 Smin = S[i - k + 1]
 
-        return ans
+        r.. ans

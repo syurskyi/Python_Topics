@@ -1,15 +1,15 @@
 ___ chatroom_status(users):
-    __ len(users) == 0:
-        return "no one online"
-    elif len(users) == 1:
-        return users[0] + " online"
-    elif len(users) == 2:
-        return users[0] + " and " + users[1] + " online"
-    else:
-        var = len(users) - 2
+    __ l..(users) __ 0:
+        r.. "no one online"
+    ____ l..(users) __ 1:
+        r.. users[0] + " online"
+    ____ l..(users) __ 2:
+        r.. users[0] + " and " + users[1] + " online"
+    ____:
+        var = l..(users) - 2
         var_2 = users[0] + ", " + users[1] + " and " + str(var) + " more online"
         # print(var_2)
-        return var_2
+        r.. var_2
 
 ___ test():
     print("test has started")

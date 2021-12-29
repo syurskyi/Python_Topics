@@ -4,19 +4,19 @@ class Solution:
     @return: A list of strings
     """
     ___ anagrams(self, S):
-        ans = []
-        __ not S:
-            return ans
+        ans    # list
+        __ n.. S:
+            r.. ans
 
         D = {}
-        for s in S:
-            _s = ''.join(sorted(s))
-            __ _s not in D:
-                D[_s] = []
-            D[_s].append(s)
+        ___ s __ S:
+            _s = ''.join(s..(s))
+            __ _s n.. __ D:
+                D[_s]    # list
+            D[_s].a..(s)
 
-        for k, S in D.items():
-            __ len(S) > 1:
+        ___ k, S __ D.items():
+            __ l..(S) > 1:
                 ans.extend(S)
 
-        return ans
+        r.. ans

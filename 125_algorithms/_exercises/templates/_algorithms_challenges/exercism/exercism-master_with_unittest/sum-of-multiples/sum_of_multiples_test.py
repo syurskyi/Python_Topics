@@ -7,9 +7,9 @@ You can make the following assumptions about the inputs to the
       and sorted in ascending order.
 """
 
-import unittest
+_______ unittest
 
-from sum_of_multiples import sum_of_multiples
+____ sum_of_multiples _______ sum_of_multiples
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.5.0
@@ -65,5 +65,5 @@ class SumOfMultiplesTest(unittest.TestCase):
                                           [2, 3, 5, 7, 11]), 39614537)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

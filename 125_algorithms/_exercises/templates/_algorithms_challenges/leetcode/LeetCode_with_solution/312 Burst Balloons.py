@@ -34,23 +34,23 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
+        n = l..(A)
 
         ___ get(i):
-            __ i < 0 or i >= n: return 1
-            return A[i]
+            __ i < 0 o. i >= n: r.. 1
+            r.. A[i]
 
-        F = [[0 for _ in xrange(n+1)] for _ in xrange(n+1)]
-        for i in xrange(n+1, -1, -1):
-            for j in xrange(i+1, n+1):
+        F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(n+1)]
+        ___ i __ xrange(n+1, -1, -1):
+            ___ j __ xrange(i+1, n+1):
                 F[i][j] = max(
                     F[i][k]+get(i-1)*get(k)*get(j)+F[k+1][j]
-                    for k in xrange(i, j)
+                    ___ k __ xrange(i, j)
                 )
 
-        return max(map(max, F))
+        r.. max(map(max, F))
 
 
-__ __name__ == "__main__":
-    assert Solution().maxCoins([3, 1, 5, 8]) == 167
+__ __name__ __ "__main__":
+    ... Solution().maxCoins([3, 1, 5, 8]) __ 167
 

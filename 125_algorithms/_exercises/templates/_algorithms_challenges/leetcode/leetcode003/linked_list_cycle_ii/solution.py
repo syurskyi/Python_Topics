@@ -8,23 +8,23 @@ class Solution:
     # @param head, a ListNode
     # @return a list node
     ___ detectCycle(self, head):
-        __ head __ None or head.next __ None:
-            return None
+        __ head __ N.. o. head.next __ N..
+            r.. N..
         slow = head
         fast = head
-        while fast __ not None and fast.next __ not None:
+        while fast __ n.. N.. and fast.next __ n.. N..
             slow = slow.next
             fast = fast.next.next
-            __ fast == slow:
+            __ fast __ slow:
                 break
         # No cycle
-        __ fast __ None or fast.next __ None:
-            return None
+        __ fast __ N.. o. fast.next __ N..
+            r.. N..
         # Has a cycle, put `slow` back to head
         slow = head
         while True:
-            __ fast == slow:
+            __ fast __ slow:
                 break
             slow = slow.next
             fast = fast.next
-        return slow
+        r.. slow

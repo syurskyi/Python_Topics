@@ -29,7 +29,7 @@ The number of edges in the graph will not exceed 32000.
 Each graph[i] will be a sorted list of different integers, chosen within the
 range [0, graph.length - 1].
 """
-from typing import List, Set
+____ typing _______ List, Set
 
 
 class Solution:
@@ -38,38 +38,38 @@ class Solution:
         detect cycle in the node
         prune by nodes with no cycle
         """
-        visit: List[int] = [0 for _ in graph]  # 0 not visted, 1 processing, 2 visited
+        visit: List[int] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
         acyclic: Set[int] = set()
-        for u in range(len(graph)):
-            __ visit[u] == 0:
+        ___ u __ r..(l..(graph)):
+            __ visit[u] __ 0:
                 self.dfs(graph, u, visit, acyclic)
 
-        return [
+        r.. [
             u
-            for u in range(len(graph))
-            __ u in acyclic
+            ___ u __ r..(l..(graph))
+            __ u __ acyclic
         ]
 
     ___ dfs(self, graph, cur, visit, acyclic):
         visit[cur] = 1
-        for nbr in graph[cur]:
-            __ visit[nbr] == 2:
-                __ nbr in acyclic:
+        ___ nbr __ graph[cur]:
+            __ visit[nbr] __ 2:
+                __ nbr __ acyclic:
                     continue
-                else:
+                ____:
                     break
-            __ visit[nbr] == 1:
+            __ visit[nbr] __ 1:
                 break
-            __ visit[nbr] == 0 and not self.dfs(graph, nbr, visit, acyclic):
+            __ visit[nbr] __ 0 and n.. self.dfs(graph, nbr, visit, acyclic):
                 break
-        else:
+        ____:
             acyclic.add(cur)
             visit[cur] = 2
-            return True
+            r.. True
 
         visit[cur] = 2
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) == [2,4,5,6]
+__ __name__ __ "__main__":
+    ... Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) __ [2,4,5,6]

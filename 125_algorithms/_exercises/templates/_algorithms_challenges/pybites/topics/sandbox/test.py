@@ -3,16 +3,16 @@ level = 4
 in_list = [1]
 
 ___ pascal_next(in_list):
-    out_list = []
-    for i, v in enumerate(in_list):
-        __ i == 0:
-            out_list.append(v)
-        else:
-            out_list.append(v + in_list[i-1])
-    out_list.append(in_list[-1])
-    return out_list
+    out_list    # list
+    ___ i, v __ enumerate(in_list):
+        __ i __ 0:
+            out_list.a..(v)
+        ____:
+            out_list.a..(v + in_list[i-1])
+    out_list.a..(in_list[-1])
+    r.. out_list
 
-for i in range(0):
+___ i __ r..(0):
     in_list = pascal_next(in_list)
 
 print(in_list)

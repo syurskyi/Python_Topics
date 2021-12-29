@@ -5,10 +5,10 @@ class Solution:
     @return: the minimum length
     """
     ___ minLength(self, s, D):
-        __ not s:
-            return 0
+        __ n.. s:
+            r.. 0
 
-        _min = len(s)
+        _min = l..(s)
         queue = [s]
         visited = set([s])
 
@@ -19,20 +19,20 @@ class Solution:
         s-d1 s-d2 s-d3 s-d4
         ...  ...  ...  ...
         """
-        for s in queue:
-            for d in D:
+        ___ s __ queue:
+            ___ d __ D:
                 found = s.find(d)
                 while found != -1:
-                    _s = s[:found] + s[found + len(d):]
+                    _s = s[:found] + s[found + l..(d):]
                     found = s.find(d, found + 1)
 
-                    __ _s in visited:
+                    __ _s __ visited:
                         continue
 
-                    __ len(_s) < _min:
-                        _min = len(_s)
+                    __ l..(_s) < _min:
+                        _min = l..(_s)
 
-                    queue.append(_s)
+                    queue.a..(_s)
                     visited.add(_s)
 
-        return _min
+        r.. _min

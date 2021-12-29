@@ -2,8 +2,8 @@
 # Score: 20
 
 
-import numpy as np
+_______ numpy as np
 
 
-array = np.array(list(map(int, input().split())))
+array = np.array(l..(map(int, input().split())))
 print(array.reshape(3, 3))

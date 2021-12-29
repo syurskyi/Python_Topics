@@ -34,17 +34,17 @@ class Solution:
         :type people: List[List[int]]
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not people:
-            return ans
+        __ n.. people:
+            r.. ans
 
-        people.sort(key=lambda p: (p[0], -p[1]))
+        people.sort(key=l.... p: (p[0], -p[1]))
 
-        for i in range(len(people) - 1, -1, -1):
+        ___ i __ r..(l..(people) - 1, -1, -1):
             ans.insert(people[i][1], people[i])
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -53,27 +53,27 @@ class Solution:
         :type people: List[List[int]]
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not people:
-            return ans
+        __ n.. people:
+            r.. ans
 
         h2mans = {}
-        heights = []
+        heights    # list
 
-        for i in range(len(people)):
+        ___ i __ r..(l..(people)):
             h, k = people[i]
 
-            __ h in h2mans:
-                h2mans[h].append((k, i))
-            else:
+            __ h __ h2mans:
+                h2mans[h].a..((k, i))
+            ____:
                 h2mans[h] = [(k, i)]
-                heights.append(h)
+                heights.a..(h)
 
         heights.sort()
 
-        for height in heights[::-1]:
-            for k, i in sorted(h2mans[height]):
+        ___ height __ heights[::-1]:
+            ___ k, i __ s..(h2mans[height]):
                 ans.insert(k, people[i])
 
-        return ans
+        r.. ans

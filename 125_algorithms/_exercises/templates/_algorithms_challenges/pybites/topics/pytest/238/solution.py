@@ -1,15 +1,15 @@
-import pytest
+_______ pytest
 
-from fibonacci import fib
+____ fibonacci _______ fib
 
 
 ___ test_base_case():
-    assert fib(0) == 0
-    assert fib(1) == 1
+    ... fib(0) __ 0
+    ... fib(1) __ 1
 
 
 ___ test_higher_number():
-    assert fib(10) == 55
+    ... fib(10) __ 55
 
 
 ___ test_negative_number():

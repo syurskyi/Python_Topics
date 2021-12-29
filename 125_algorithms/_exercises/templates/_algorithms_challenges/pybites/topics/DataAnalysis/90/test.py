@@ -1,5 +1,5 @@
-from collections import defaultdict
-from typing import Counter
+____ collections _______ defaultdict
+____ typing _______ Counter
 
 count = defaultdict(Counter)
 

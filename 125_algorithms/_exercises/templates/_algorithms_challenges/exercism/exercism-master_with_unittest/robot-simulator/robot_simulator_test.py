@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from robot_simulator import Robot, NORTH, EAST, SOUTH, WEST
+____ robot_simulator _______ Robot, NORTH, EAST, SOUTH, WEST
 
 
 class RobotTests(unittest.TestCase):
@@ -17,13 +17,13 @@ class RobotTests(unittest.TestCase):
 
     ___ test_turn_right(self):
         robot = Robot()
-        for direction in [EAST, SOUTH, WEST, NORTH]:
+        ___ direction __ [EAST, SOUTH, WEST, NORTH]:
             robot.turn_right()
             self.assertEqual(robot.bearing, direction)
 
     ___ test_turn_left(self):
         robot = Robot()
-        for direction in [WEST, SOUTH, EAST, NORTH]:
+        ___ direction __ [WEST, SOUTH, EAST, NORTH]:
             robot.turn_left()
             self.assertEqual(robot.bearing, direction)
 
@@ -70,5 +70,5 @@ class RobotTests(unittest.TestCase):
         self.assertEqual(NORTH, robot.bearing)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

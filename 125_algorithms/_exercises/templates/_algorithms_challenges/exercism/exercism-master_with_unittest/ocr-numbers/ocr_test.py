@@ -6,9 +6,9 @@ and raise ValueErrors with meaningful error messages
 if necessary.
 """
 
-import unittest
+_______ unittest
 
-from ocr import grid, number
+____ ocr _______ grid, number
 
 
 class OcrTest(unittest.TestCase):
@@ -103,5 +103,5 @@ class OcrTest(unittest.TestCase):
         self.assertRaises(ValueError, grid, '123a')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

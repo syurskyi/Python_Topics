@@ -1,7 +1,7 @@
-import t__
-import random
+_______ t__
+_______ random
 
-from actors import Wizard, Creature, SmallAnimal, Dragon
+____ actors _______ Wizard, Creature, SmallAnimal, Dragon
 
 
 ___ main():
@@ -58,22 +58,22 @@ ___ game_loop():
         __ cmd __ 'a':
             __ hero.attack(active_creature):
                 creatures.remove(active_creature)
-            else:
+            ____:
                 print("The wizard runs and hides taking time to recover...")
                 t__.sleep(5)
                 print("The wizard returns revitalized!")
-        elif cmd __ 'r':
+        ____ cmd __ 'r':
             print('The wizard has become unsure of his power and flees!!!')
-        elif cmd __ 'l':
+        ____ cmd __ 'l':
             print('The wizard {} takes in the surroundings and sees:'
                   .format(hero.name))
-            for c in creatures:
+            ___ c __ creatures:
                 print(' * A {} of level {}'.format(c.name, c.level))
-        else:
+        ____:
             print("OK, exiting game... bye!")
             _____
 
-        __ not creatures:
+        __ n.. creatures:
             print("You've defeated all the creatures, well done!")
             _____
 

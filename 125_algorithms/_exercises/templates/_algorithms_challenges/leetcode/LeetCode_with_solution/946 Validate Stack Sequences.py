@@ -25,7 +25,7 @@ Note:
 pushed is a permutation of popped.
 pushed and popped have distinct values.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -34,15 +34,15 @@ class Solution:
         maintain a stack and iterate through pushed
         """
         j = 0
-        n = len(pushed)
-        stk = []
-        for i in range(n):
-            stk.append(pushed[i])
-            while j < n and stk and stk[-1] == popped[j]:
+        n = l..(pushed)
+        stk    # list
+        ___ i __ r..(n):
+            stk.a..(pushed[i])
+            while j < n and stk and stk[-1] __ popped[j]:
                 stk.pop()
                 j += 1
 
-        return j == n
+        r.. j __ n
 
     ___ validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         """
@@ -50,18 +50,18 @@ class Solution:
         """
         i = 0
         j = 0
-        stk = []
-        n = len(pushed)
+        stk    # list
+        n = l..(pushed)
         while i < n and j < n:
-            while i < n and (not stk or stk[-1] != popped[j]):
-                stk.append(pushed[i])
+            while i < n and (n.. stk o. stk[-1] != popped[j]):
+                stk.a..(pushed[i])
                 i += 1
 
             stk.pop()
             j += 1
 
-        while j < n and stk and stk[-1] == popped[j]:
+        while j < n and stk and stk[-1] __ popped[j]:
             stk.pop()
             j += 1
 
-        return not stk
+        r.. n.. stk

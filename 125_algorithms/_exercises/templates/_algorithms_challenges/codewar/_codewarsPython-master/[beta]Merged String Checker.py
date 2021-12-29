@@ -1,8 +1,8 @@
 ___ is_merge(s, part1, part2):
-    part1 = list(part1)
-    part2 = list(part2)
-    for i in range(len(s)):
-        __ s[i] == part1[0]:
+    part1 = l..(part1)
+    part2 = l..(part2)
+    ___ i __ r..(l..(s)):
+        __ s[i] __ part1[0]:
             print(part1)
             print(part1.pop())
 

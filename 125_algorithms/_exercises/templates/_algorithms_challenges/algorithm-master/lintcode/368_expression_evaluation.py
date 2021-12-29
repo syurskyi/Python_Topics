@@ -17,75 +17,75 @@ class Solution:
     @return: an integer
     """
     ___ evaluateExpression(self, E):
-        __ not E:
-            return 0
+        __ n.. E:
+            r.. 0
 
         E = self.dal2rpn(E)
 
         """
         for cases like `["(","(","(","(","(",")",")",")",")",")"]`
         """
-        __ not E:
-            return 0
+        __ n.. E:
+            r.. 0
 
-        return self.eval_rpn(E)
+        r.. self.eval_rpn(E)
 
     ___ dal2rpn(self, E):
         """
         `stack` to save operators and brackets temply
         `res` is the RPN of `E`, to save digits and operators
         """
-        stack, res = [], []
+        stack, res    # list, []
 
-        for char in E:
+        ___ char __ E:
             __ char.isdigit():
                 """
                 if its digit
                 then directly output
                 """
-                res.append(char)
+                res.a..(char)
                 continue
 
-            __ char in self.P:
+            __ char __ self.P:
                 """
                 if `stack` is not empty
                 and `stack[-1]` is an operator
                 and its priority is higher or same ('*' == '/' > '+' == '-')
                 then pop and output
                 """
-                while (stack and stack[-1] in self.P and
+                while (stack and stack[-1] __ self.P and
                        self.P[stack[-1]] >= self.P[char]):
-                    res.append(stack.pop())
-                stack.append(char)
-            elif char == '(':
-                stack.append(char)
-            elif char == ')':
+                    res.a..(stack.pop())
+                stack.a..(char)
+            ____ char __ '(':
+                stack.a..(char)
+            ____ char __ ')':
                 """
                 if its ')'
                 then continue to pop and output
                 until meet '('
                 """
                 while stack and stack[-1] != '(':
-                    res.append(stack.pop())
+                    res.a..(stack.pop())
                 stack.pop()  # evict '('
 
         """
         output the remaining in `stack`
         """
         while stack:
-            res.append(stack.pop())
+            res.a..(stack.pop())
 
-        return res
+        r.. res
 
     ___ eval_rpn(self, E):
-        stack = []
-        for char in E:
+        stack    # list
+        ___ char __ E:
             __ char.isdigit():
                 """
                 if its digit
                 then temply save in `stack`
                 """
-                stack.append(int(char))
+                stack.a..(int(char))
                 continue
 
             """
@@ -95,13 +95,13 @@ class Solution:
             b = stack.pop()
             a = stack.pop()
 
-            __ char == '+':
-                stack.append(a + b)
-            elif char == '-':
-                stack.append(a - b)
-            elif char == '*':
-                stack.append(a * b)
-            elif char == '/':
-                stack.append(a // b)
+            __ char __ '+':
+                stack.a..(a + b)
+            ____ char __ '-':
+                stack.a..(a - b)
+            ____ char __ '*':
+                stack.a..(a * b)
+            ____ char __ '/':
+                stack.a..(a // b)
 
-        return stack[0]
+        r.. stack[0]

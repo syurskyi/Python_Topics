@@ -18,21 +18,21 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return sum((
+        r.. s..((
             self.count_valid_path(root, target),
             self.pathSum(root.left, target),
             self.pathSum(root.right, target),
         ))
 
     ___ count_valid_path(self, node, remaining):
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
-        return sum((
-            int(node.val == remaining),
+        r.. s..((
+            int(node.val __ remaining),
             self.count_valid_path(node.left, remaining - node.val),
             self.count_valid_path(node.right, remaining - node.val),
         ))
@@ -48,27 +48,27 @@ class Solution:
         :type target: int
         :rtype: list[list[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
         self.dfs(root, target, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, target, ans, path):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        path.append(node.val)
+        path.a..(node.val)
 
         remaining = target
-        for i in range(len(path) - 1, -1, -1):
+        ___ i __ r..(l..(path) - 1, -1, -1):
             remaining -= path[i]
 
-            __ remaining == 0:
-                ans.append(path[i:])
+            __ remaining __ 0:
+                ans.a..(path[i:])
 
         self.dfs(node.left, target, ans, path)
         self.dfs(node.right, target, ans, path)

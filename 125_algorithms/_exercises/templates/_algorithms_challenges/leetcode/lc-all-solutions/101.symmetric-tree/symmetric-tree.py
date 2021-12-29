@@ -13,10 +13,10 @@ class Solution(object):
     """
 
     ___ helper(root, mirror):
-      __ not root and not mirror:
-        return True
-      __ root and mirror and root.val == mirror.val:
-        return helper(root.left, mirror.right) and helper(root.right, mirror.left)
-      return False
+      __ n.. root and n.. mirror:
+        r.. True
+      __ root and mirror and root.val __ mirror.val:
+        r.. helper(root.left, mirror.right) and helper(root.right, mirror.left)
+      r.. False
 
-    return helper(node, node)
+    r.. helper(node, node)

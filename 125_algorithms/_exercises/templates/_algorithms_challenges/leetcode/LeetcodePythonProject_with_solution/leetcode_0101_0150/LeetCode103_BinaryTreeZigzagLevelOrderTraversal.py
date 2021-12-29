@@ -7,8 +7,8 @@ Created on May 30, 2018
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ zigzagLevelOrder(self, root):
@@ -16,24 +16,24 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        res = []
-        __ not root: return res
+        res    # list
+        __ n.. root: r.. res
         queue, nextQueue, elem = [root], [], []
         order = True
         while queue:
             node = queue.pop(0)
-            elem.append(node.val)
+            elem.a..(node.val)
             __ node.left:
-                nextQueue.append(node.left)
+                nextQueue.a..(node.left)
             __ node.right:
-                nextQueue.append(node.right)
-            __ not queue:
-                __ not order:
-                    res.append(elem[::-1])
-                else:
-                    res.append(elem)
-                elem = []
+                nextQueue.a..(node.right)
+            __ n.. queue:
+                __ n.. order:
+                    res.a..(elem[::-1])
+                ____:
+                    res.a..(elem)
+                elem    # list
                 queue = nextQueue
-                nextQueue = []
-                order = not order
-        return res
+                nextQueue    # list
+                order = n.. order
+        r.. res

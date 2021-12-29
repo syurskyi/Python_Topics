@@ -10,17 +10,17 @@ class MinStack(object):
         """
         initialize your data structure here.
         """
-        self.stack = []
+        self.stack    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: void
         """
-        __ not self.stack:
-            self.stack.append((x, x))
-        else:
-            self.stack.append((x, min(self.stack[-1][1], x)))
+        __ n.. self.stack:
+            self.stack.a..((x, x))
+        ____:
+            self.stack.a..((x, m..(self.stack[-1][1], x)))
 
     ___ pop(self):
         """
@@ -32,10 +32,10 @@ class MinStack(object):
         """
         :rtype: int
         """
-        return self.stack[-1][0]
+        r.. self.stack[-1][0]
 
     ___ getMin(self):
         """
         :rtype: int
         """
-        return self.stack[-1][1]
+        r.. self.stack[-1][1]

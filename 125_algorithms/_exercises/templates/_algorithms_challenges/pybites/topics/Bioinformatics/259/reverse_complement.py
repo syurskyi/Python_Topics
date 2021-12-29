@@ -30,10 +30,10 @@ COMPLEMENTS_STR = """# Full table with ambigous bases
 # Recommended helper function
 ___ get_complement_pair(str_table=SIMPLE_COMPLEMENTS_STR):
     pair_dict = {}
-    pair_list = [base.strip() for base in str_table.splitlines() __ base[0] != '#' and base[:5] != ' Base']
-    for each_pair in pair_list:
+    pair_list = [base.strip() ___ base __ str_table.splitlines() __ base[0] != '#' and base[:5] != ' Base']
+    ___ each_pair __ pair_list:
         pair_dict[each_pair.split('\t')[0]] = each_pair.split('\t')[-1]
-    return pair_dict
+    r.. pair_dict
 
 
 ___ _clean_sequence(sequence, str_table):
@@ -44,9 +44,9 @@ ___ _clean_sequence(sequence, str_table):
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    bases = ''.join([base.strip().split('\t')[0] for base in str_table.splitlines() __ base[0] != '#' and base[:5] != ' Base'])
-    return_str = ''.join([char.upper() for char in sequence __ char.upper() in bases])
-    return return_str
+    bases = ''.join([base.strip().split('\t')[0] ___ base __ str_table.splitlines() __ base[0] != '#' and base[:5] != ' Base'])
+    return_str = ''.join([char.upper() ___ char __ sequence __ char.upper() __ bases])
+    r.. return_str
 
 
 ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -58,7 +58,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     e.g. t!t%ttttAACCG --> GCCAATTTTTT
     """
     clear_sequence = _clean_sequence(sequence, str_table)
-    return clear_sequence[::-1]
+    r.. clear_sequence[::-1]
 
 
 ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -71,7 +71,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     """
     pair_dict = get_complement_pair(str_table)
     clean_sequence = _clean_sequence(sequence, str_table)
-    return ''.join([pair_dict[base] for base in clean_sequence])
+    r.. ''.join([pair_dict[base] ___ base __ clean_sequence])
 
 
 ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -84,7 +84,7 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     """
     pair_dict = get_complement_pair(str_table)
     clean_sequence = reverse(sequence, str_table)
-    return ''.join([pair_dict[base] for base in clean_sequence])
+    r.. ''.join([pair_dict[base] ___ base __ clean_sequence])
 
 #print(reverse('t!t%ttttAACCG', SIMPLE_COMPLEMENTS_STR))
 

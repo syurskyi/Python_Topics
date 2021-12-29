@@ -19,16 +19,16 @@ class Solution(object):
         count = 0
         hashset = set(G)
         while head:
-            while head and head.val not in hashset:
+            while head and head.val n.. __ hashset:
                 head = head.next
-            while head and head.val in hashset:
+            while head and head.val __ hashset:
                 hashset.remove(head.val)
                 head = head.next
             count += 1
-            __ not head or not hashset:
+            __ n.. head o. n.. hashset:
                 break
             head = head.next
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
@@ -41,15 +41,15 @@ class Solution(object):
                 [8,10,3,11,17,16,7,9,5,15,13,6],
             ],
         ]
-        for l, g in testCases:
+        ___ l, g __ testCases:
             dummy = ListNode(-1)
             node = dummy
-            for num in l:
+            ___ num __ l:
                 node.next = ListNode(num)
                 node = node.next
             result = self.numComponents(dummy.next, g)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

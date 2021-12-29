@@ -1,5 +1,5 @@
-from datetime import timedelta
+____ datetime _______ timedelta
 
 
 ___ add_gigasecond(date):
-    return date + timedelta(seconds=1e9)
+    r.. date + timedelta(seconds=1e9)

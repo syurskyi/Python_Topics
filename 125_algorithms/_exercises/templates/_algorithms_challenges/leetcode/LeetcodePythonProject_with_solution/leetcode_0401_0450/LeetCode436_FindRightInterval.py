@@ -12,36 +12,36 @@ class Interval(object):
 
 class Solution(object):
     ___ findRightInterval(self, intervals):
-        sortedList = [(interval.start, i) for i, interval in enumerate(intervals)]
+        sortedList = [(interval.start, i) ___ i, interval __ enumerate(intervals)]
         sortedList.sort()
-        result = []
-        for i, interval in enumerate(intervals):
+        result    # list
+        ___ i, interval __ enumerate(intervals):
             ind = self.binary_search(interval.end, sortedList)
             __ ind != i:
-                result.append(ind)
-            else:
-                result.append(-1)
-        return result
+                result.a..(ind)
+            ____:
+                result.a..(-1)
+        r.. result
     
     ___ binary_search(self, target, sortedList):
-        start, end = 0, len(sortedList)
+        start, end = 0, l..(sortedList)
         while start < end:
             mid = (start+end)//2
             __ sortedList[mid][0] < target:
                 start = mid+1
-            else:
+            ____:
                 end = mid
-        __ end == len(sortedList): return -1
-        return sortedList[end][1]
+        __ end __ l..(sortedList): r.. -1
+        r.. sortedList[end][1]
     
     ___ findRightInterval_short(self, intervals):
-        import bisect
-        l = sorted((e.start, i) for i, e in enumerate(intervals))
-        res = []
-        for e in intervals:
+        _______ bisect
+        l = s..((e.start, i) ___ i, e __ enumerate(intervals))
+        res    # list
+        ___ e __ intervals:
             r = bisect.bisect_left(l, (e.end,))
-            res.append(l[r][1] __ r < len(l) else -1)
-        return res
+            res.a..(l[r][1] __ r < l..(l) ____ -1)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -49,11 +49,11 @@ class Solution(object):
             [ [3,4], [2,3], [1,2] ],
             [ [1,4], [2,3], [3,4] ],
         ]
-        for intervals in testCases:
-            intervals = [Interval(x[0], x[1]) for x in intervals]
+        ___ intervals __ testCases:
+            intervals = [Interval(x[0], x[1]) ___ x __ intervals]
             result = self.findRightInterval(intervals)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

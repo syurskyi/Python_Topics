@@ -5,18 +5,18 @@ ___ capitalize_sentences(text: str) -> str:
 
     end_characters = ['.','!','?'] 
 
-    words =  text.split()
+    words =  text.s..
 
     
     first_word_after_end_of_sentence_index = 0
-    for i,word in enumerate(words):
+    ___ i,word __ enumerate(words):
 
-        __ any(word.endswith(character) for character in end_characters):
+        __ any(word.endswith(character) ___ character __ end_characters):
             words[first_word_after_end_of_sentence_index] = words[first_word_after_end_of_sentence_index].capitalize()
             first_word_after_end_of_sentence_index = i + 1 
 
 
-    return ' '.join(words)
+    r.. ' '.join(words)
             
 
 

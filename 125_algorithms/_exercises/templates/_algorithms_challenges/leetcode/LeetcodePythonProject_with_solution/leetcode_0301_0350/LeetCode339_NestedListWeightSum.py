@@ -39,14 +39,14 @@ class Solution(object):
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        return self.helper(nestedList, 1)
+        r.. self.helper(nestedList, 1)
     
     ___ helper(self, nestedList, level):
         sumVal = 0
-        for ni in nestedList:
+        ___ ni __ nestedList:
             __ ni.isInteger():
                 sumVal += ni.getInteger()*level
-            else:
+            ____:
                 sumVal += self.helper(ni.getList(), level+1)
-        return sumVal
+        r.. sumVal
     

@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from calculator import create_parser, call_calculator
+____ calculator _______ create_parser, call_calculator
 
 
 @pytest.fixture
 ___ parser():
-    return create_parser()
+    r.. create_parser()
 
 
 ___ test_one_arg_no_numbers_exits(parser):
@@ -25,10 +25,10 @@ ___ test_help_text_hints(parser, capfd):
         parser.parse_args(['-h'])
 
     output = capfd.readouterr()[0].lower()
-    assert 'usage' in output
-    assert 'a simple calculator' in output
-    for op in 'add sub mul div'.split():
-        assert op in output
+    ... 'usage' __ output
+    ... 'a simple calculator' __ output
+    ___ op __ 'add sub mul div'.s.. :
+        ... op __ output
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -39,7 +39,7 @@ ___ test_help_text_hints(parser, capfd):
 ])
 ___ test_add_operations(parser, args, expected):
     args = parser.parse_args(['--add'] + args)
-    assert call_calculator(args) == expected
+    ... call_calculator(args) __ expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -50,7 +50,7 @@ ___ test_add_operations(parser, args, expected):
 ])
 ___ test_sub_operations(parser, args, expected):
     args = parser.parse_args(['--sub'] + args)
-    assert call_calculator(args) == expected
+    ... call_calculator(args) __ expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -61,7 +61,7 @@ ___ test_sub_operations(parser, args, expected):
 ])
 ___ test_mul_operations(parser, args, expected):
     args = parser.parse_args(['--mul'] + args)
-    assert call_calculator(args) == expected
+    ... call_calculator(args) __ expected
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -72,4 +72,4 @@ ___ test_mul_operations(parser, args, expected):
 ])
 ___ test_div_operations(parser, args, expected):
     args = parser.parse_args(['--div'] + args)
-    assert call_calculator(args) == expected
+    ... call_calculator(args) __ expected

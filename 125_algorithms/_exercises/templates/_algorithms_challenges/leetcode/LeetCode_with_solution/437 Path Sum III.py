@@ -14,11 +14,11 @@ to 1,000,000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -33,17 +33,17 @@ class Solution:
         Downward path
         """
         self.dfs(root, target, 0, defaultdict(int))
-        return self.count
+        r.. self.count
 
     ___ dfs(self, node, target, cur_sum, prefix_sum_counter):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         cur_sum += node.val
         # delta = target - cur_sum  # error
         delta = cur_sum - target
         self.count += prefix_sum_counter[delta]
-        __ delta == 0:
+        __ delta __ 0:
             self.count += 1
 
         prefix_sum_counter[cur_sum] += 1
@@ -53,7 +53,7 @@ class Solution:
         
 
 class SolutionComplex:
-    ___ pathSum(self, root, sum):
+    ___ pathSum(self, root, s..):
         """
         Brute force: two dfs, O(n^2)
 
@@ -63,26 +63,26 @@ class SolutionComplex:
         :rtype: int
         """
         count = [0]  # pass as a reference
-        self.dfs(root, sum, 0, {}, count)
-        return count[0]
+        self.dfs(root, s.., 0, {}, count)
+        r.. count[0]
 
-    ___ dfs(self, root, sum, cur_sum, prefix_sum, count):
+    ___ dfs(self, root, s.., cur_sum, prefix_sum, count):
         """
         Root to node sum
         prefix_sum: Dict[int, int], sum -> count
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         cur_sum += root.val
         # ∃ prefix_sum: cur_sum - prefix_sum = sum
-        diff = cur_sum - sum
-        __ diff in prefix_sum:
+        diff = cur_sum - s..
+        __ diff __ prefix_sum:
             count[0] += prefix_sum[diff]
-        __ diff == 0:  # trivial case
+        __ diff __ 0:  # trivial case
             count[0] += 1
 
         prefix_sum[cur_sum] = prefix_sum.get(cur_sum, 0) + 1
-        self.dfs(root.left, sum, cur_sum, prefix_sum, count)
-        self.dfs(root.right, sum, cur_sum, prefix_sum, count)
+        self.dfs(root.left, s.., cur_sum, prefix_sum, count)
+        self.dfs(root.right, s.., cur_sum, prefix_sum, count)
         prefix_sum[cur_sum] -= 1  # pop to save space

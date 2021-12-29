@@ -1,7 +1,7 @@
-from typing import Dict, Any
-from datetime import datetime
+____ typing _______ Dict, Any
+____ datetime _______ datetime
 
-import re
+_______ re
 
 
 ___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
@@ -10,19 +10,19 @@ ___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
     new_dict = {}
 
 
-    for key,value in data.items():
+    ___ key,value __ data.items():
 
 
-        __ isinstance(key,str):
+        __ isi..(key,str):
             key = re.sub(r'^@','',key)
 
-        __ isinstance(value,dict):
+        __ isi..(value,d..):
             new_dict[key] = rename_keys(value)
-        else:
-            __ isinstance(value,list):
-                values = []
-                for v in value:
-                    values.append(rename_keys(v))
+        ____:
+            __ isi..(value,l..):
+                values    # list
+                ___ v __ value:
+                    values.a..(rename_keys(v))
                 value = values
             new_dict[key] = value
 
@@ -30,11 +30,11 @@ ___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
 
         
 
-    return new_dict
+    r.. new_dict
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
 

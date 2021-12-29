@@ -23,28 +23,28 @@ class Solution:
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
     ___ uniquePathsWithObstacles(self, obstacleGrid):
-        n = len(obstacleGrid)
-        m = len(obstacleGrid[0])
-        t = [[-1 for i in range(m)] for j in range(n)]
-        return self.unique_paths(obstacleGrid, m - 1, n - 1, t)
+        n = l..(obstacleGrid)
+        m = l..(obstacleGrid[0])
+        t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
+        r.. self.unique_paths(obstacleGrid, m - 1, n - 1, t)
 
     ___ unique_paths(self, grid, x, y, t):
-        __ x == 0 and y == 0:
-            t[y][x] = 1 __ grid[y][x] == 0 else 0
-            return t[y][x]
-        elif grid[y][x] == 1:
+        __ x __ 0 and y __ 0:
+            t[y][x] = 1 __ grid[y][x] __ 0 ____ 0
+            r.. t[y][x]
+        ____ grid[y][x] __ 1:
             t[y][x] = 0
-            return t[y][x]
-        elif t[y][x] != -1:
-            return t[y][x]
-        elif x > 0 and y == 0:
+            r.. t[y][x]
+        ____ t[y][x] != -1:
+            r.. t[y][x]
+        ____ x > 0 and y __ 0:
             t[y][x] = self.unique_paths(grid, x - 1, y, t)
-            return t[y][x]
-        elif y > 0 and x == 0:
+            r.. t[y][x]
+        ____ y > 0 and x __ 0:
             t[y][x] = self.unique_paths(grid, x, y - 1, t)
-            return t[y][x]
-        else:
+            r.. t[y][x]
+        ____:
             a = self.unique_paths(grid, x - 1, y, t)
             b = self.unique_paths(grid, x, y - 1, t)
             t[y][x] = a + b
-            return t[y][x]
+            r.. t[y][x]

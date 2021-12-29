@@ -1,23 +1,23 @@
-import re
+_______ re
 
 re_cons = re.compile('^([^aeiou]?qu|[^aeiou]+)([a-z]*)')
 re_vowel = re.compile('^([aeiou]|y[^aeiou]|xr)[a-z]*')
 
 
 ___ split_initial_consonant_sound(word):
-    return re_cons.match(word).groups()
+    r.. re_cons.match(word).groups()
 
 
 ___ starts_with_vowel_sound(word):
-    return re_vowel.match(word) is not None
+    r.. re_vowel.match(word) __ n.. N..
 
 
 ___ translate(text):
-    words = []
-    for word in text.split():
+    words    # list
+    ___ word __ text.s.. :
         __ starts_with_vowel_sound(word):
-            words.append(word + 'ay')
-        else:
+            words.a..(word + 'ay')
+        ____:
             head, tail = split_initial_consonant_sound(word)
-            words.append(tail + head + 'ay')
-    return ' '.join(words)
+            words.a..(tail + head + 'ay')
+    r.. ' '.join(words)

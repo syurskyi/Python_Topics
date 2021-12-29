@@ -15,12 +15,12 @@ class SpaceAge:
         self.seconds = seconds
 
     ___ on_planet(self, planet):
-        return round(self.seconds / self.ORBITAL_PERIODS[planet], 2)
+        r.. round(self.seconds / self.ORBITAL_PERIODS[planet], 2)
 
 
 ___ add_on_planet_fn(planet):
-    setattr(SpaceAge, 'on_' + planet, lambda self: self.on_planet(planet))
+    setattr(SpaceAge, 'on_' + planet, l.... self: self.on_planet(planet))
 
 
-for planet in list(SpaceAge.ORBITAL_PERIODS.keys()):
+___ planet __ l..(SpaceAge.ORBITAL_PERIODS.keys()):
     add_on_planet_fn(planet)

@@ -18,11 +18,11 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
-    ___ hasPathSum(self, root, sum):
+    ___ hasPathSum(self, root, s..):
         """
         dfs
 
@@ -31,21 +31,21 @@ class Solution:
         :return: boolean
         """
         # trivial
-        __ not root:
-            return False
+        __ n.. root:
+            r.. False
 
         # don't prune, possible negative
         # if sum<0:
         #    return False
 
-        sum = sum-root.val
+        s.. = s..-root.val
 
         # terminal condition
-        __ sum==0 and root.left is None and root.right is None:
-            return True
+        __ s..__0 and root.left __ N.. and root.right __ N..
+            r.. True
 
         # dfs without pre-checking
-        return self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
+        r.. self.hasPathSum(root.left, s..) o. self.hasPathSum(root.right, s..)
 
 
 

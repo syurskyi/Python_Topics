@@ -10,24 +10,24 @@ class Solution(object):
         :rtype: int
         """
         hashset = set(words)
-        for word in words:
-            for i in range(1, len(word)):
+        ___ word __ words:
+            ___ i __ r..(1, l..(word)):
                 hashset.discard(word[i:])
         res = 0
-        for word in hashset:
-            res += len(word)+1
-        return res
+        ___ word __ hashset:
+            res += l..(word)+1
+        r.. res
     
     ___ test(self):
         testCases = [
             ["time", "me", "bell"],
             ["me", "time"],
         ]
-        for words in testCases:
+        ___ words __ testCases:
             print('words: %s' % words)
             result = self.minimumLengthEncoding(words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

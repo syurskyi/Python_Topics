@@ -3,8 +3,8 @@ COL = 3
 
 
 ___ split_ocr(ocr):
-    return [[ocr[i][COL * j:COL * (j + 1)] for i in range(ROW)]
-            for j in range(len(ocr[0]) // COL)]
+    r.. [[ocr[i][COL * j:COL * (j + 1)] ___ i __ r..(ROW)]
+            ___ j __ r..(l..(ocr[0]) // COL)]
 
 
 ALL = ['    _  _     _  _  _  _  _  _ ',
@@ -17,27 +17,27 @@ OCR_LIST = [OCR_LIST[-1]] + OCR_LIST[:9]
 
 
 ___ number(ocr):
-    __ (len(ocr) != ROW or len(ocr[0]) % COL or
-            any(len(r) != len(ocr[0]) for r in ocr)):
+    __ (l..(ocr) != ROW o. l..(ocr[0]) % COL o.
+            any(l..(r) != l..(ocr[0]) ___ r __ ocr)):
         raise ValueError('Wrong grid size.')
     numbers = split_ocr(ocr)
     digits = ''
-    for n in numbers:
+    ___ n __ numbers:
         try:
             digits += str(OCR_LIST.index(n))
         except ValueError:
             digits += '?'
-    return digits
+    r.. digits
 
 
 ___ grid(digits):
     try:
-        __ not digits.isdigit():
+        __ n.. digits.isdigit():
             raise ValueError('String should be numeric.')
     except AttributeError:
         raise ValueError('Argument should be a string.')
-    ocr = ['' for i in range(ROW)]
-    for d in digits:
-        for r in range(ROW):
+    ocr = ['' ___ i __ r..(ROW)]
+    ___ d __ digits:
+        ___ r __ r..(ROW):
             ocr[r] += OCR_LIST[int(d)][r]
-    return ocr
+    r.. ocr

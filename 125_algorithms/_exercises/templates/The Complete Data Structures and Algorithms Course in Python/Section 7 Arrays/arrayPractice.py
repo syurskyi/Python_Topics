@@ -64,7 +64,7 @@ print(my_array.buffer_info())
 # 12. Check for number of occurrences of an element using count() method
 print("Step 12")
 my_array.ap..(11)
-print(my_array.count(11))
+print(my_array.c.. 11))
 print(my_array)
 # 13. Convert array to string using tostring() method
 print("Step 13")

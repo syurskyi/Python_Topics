@@ -1,7 +1,7 @@
-import unittest
+_______ unittest
 
-from robot import Robot
-import random
+____ robot _______ Robot
+_______ random
 
 
 class RobotTest(unittest.TestCase):
@@ -42,5 +42,5 @@ class RobotTest(unittest.TestCase):
         self.assertRegex(name2, self.name_re)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

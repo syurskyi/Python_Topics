@@ -17,35 +17,35 @@ class Solution(object):
         :rtype: bool
         """
         # Check rows
-        for i in range(9):
+        ___ i __ r..(9):
             d = {}
-            for j in range(9):
-                __ board[i][j] == '.':
+            ___ j __ r..(9):
+                __ board[i][j] __ '.':
                     pass
-                elif board[i][j] in d:
-                    return False
-                else:
+                ____ board[i][j] __ d:
+                    r.. False
+                ____:
                     d[board[i][j]] = True
         # Check columns
-        for j in range(9):
+        ___ j __ r..(9):
             d = {}
-            for i in range(9):
-                __ board[i][j] == '.':
+            ___ i __ r..(9):
+                __ board[i][j] __ '.':
                     pass
-                elif board[i][j] in d:
-                    return False
-                else:
+                ____ board[i][j] __ d:
+                    r.. False
+                ____:
                     d[board[i][j]] = True
         # Check sub-boxes
-        for m in range(0, 9, 3):
-            for n in range(0, 9, 3):
+        ___ m __ r..(0, 9, 3):
+            ___ n __ r..(0, 9, 3):
                 d = {}
-                for i in range(n, n + 3):
-                    for j in range(m, m + 3):
-                        __ board[i][j] == '.':
+                ___ i __ r..(n, n + 3):
+                    ___ j __ r..(m, m + 3):
+                        __ board[i][j] __ '.':
                             pass
-                        elif board[i][j] in d:
-                            return False
-                        else:
+                        ____ board[i][j] __ d:
+                            r.. False
+                        ____:
                             d[board[i][j]] = True
-        return True
+        r.. True

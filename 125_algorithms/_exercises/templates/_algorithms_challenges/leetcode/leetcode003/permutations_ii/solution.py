@@ -14,20 +14,20 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         d = {}
-        return self.permute(nums, d)
+        r.. self.permute(nums, d)
 
     ___ permute(self, nums, d):
-        __ not nums:
-            return [[]]
-        else:
-            res = []
-            for i, c in enumerate(nums):
-                __ c in d:
+        __ n.. nums:
+            r.. [[]]
+        ____:
+            res    # list
+            ___ i, c __ enumerate(nums):
+                __ c __ d:
                     continue
-                else:
+                ____:
                     d[c] = True
                 rest_perms = self.permuteUnique(nums[:i] + nums[i + 1:])
-                for perm in rest_perms:
+                ___ perm __ rest_perms:
                     perm.insert(0, c)
                 res += rest_perms
-            return res
+            r.. res

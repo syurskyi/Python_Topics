@@ -11,33 +11,33 @@ class Solution(object):
         :rtype: List[str]
         """
         letMap = {
-            0: list(),
-            1: list(),
-            2: list('abc'),
-            3: list('def'),
-            4: list('ghi'),
-            5: list('jkl'),
-            6: list('mno'),
-            7: list('pqrs'),
-            8: list('tuv'),
-            9: list('wxyz'),
+            0: l..(),
+            1: l..(),
+            2: l..('abc'),
+            3: l..('def'),
+            4: l..('ghi'),
+            5: l..('jkl'),
+            6: l..('mno'),
+            7: l..('pqrs'),
+            8: l..('tuv'),
+            9: l..('wxyz'),
         }
-        l = []
-        for d in digits:
+        l    # list
+        ___ d __ digits:
             d = int(d)
-            __ d not in (0, 1):
-                l.append(letMap[d])
-        __ not l: return []
+            __ d n.. __ (0, 1):
+                l.a..(letMap[d])
+        __ n.. l: r.. []
         elem = ''
-        result = []
+        result    # list
         self.dfs(l, 0, elem, result)
-        return result
+        r.. result
     
     ___ dfs(self, l, ind, elem, result):
-        __ len(elem) == len(l):
-            result.append(str(elem))
-            return result
-        for c in l[ind]:
+        __ l..(elem) __ l..(l):
+            result.a..(str(elem))
+            r.. result
+        ___ c __ l[ind]:
             elem += c
             self.dfs(l, ind+1, elem, result)
             elem = elem[:-1]
@@ -51,11 +51,11 @@ class Solution(object):
             '239',
         ]
         
-        for digits in testCases:
+        ___ digits __ testCases:
             print('digits: %s' % (digits))
             result = self.letterCombinations(digits)
             print('result: %s' % (result))
             print('-+'*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -8,33 +8,33 @@ class Solution:
         :type words: list[str]
         :rtype: list[str]
         """
-        return self.dfs(s, set(words), {})
+        r.. self.dfs(s, set(words), {})
 
     ___ dfs(self, s, words, memo):
-        __ s in memo:
-            return memo[s]
+        __ s __ memo:
+            r.. memo[s]
 
-        res = []
+        res    # list
 
-        __ not s:
-            return res
+        __ n.. s:
+            r.. res
 
-        n = len(s)
-        for size in range(1, n + 1):
+        n = l..(s)
+        ___ size __ r..(1, n + 1):
             prefix = s[:size]
 
-            __ prefix not in words:
+            __ prefix n.. __ words:
                 continue
 
-            __ size == n:
-                res.append(prefix)
+            __ size __ n:
+                res.a..(prefix)
                 continue
 
-            for word in self.dfs(s[size:], words, memo):
-                res.append('{0} {1}'.format(prefix, word))
+            ___ word __ self.dfs(s[size:], words, memo):
+                res.a..('{0} {1}'.format(prefix, word))
 
         memo[s] = res
-        return res
+        r.. res
 
 
 class Solution:
@@ -51,26 +51,26 @@ class Solution:
         :type words: list[str]
         :rtype: list[str]
         """
-        ans = []
+        ans    # list
 
-        __ not words:
-            return ans
+        __ n.. words:
+            r.. ans
 
         self.dfs(s, words, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, s, words, ans, path):
-        __ not s:
-            ans.append(' '.join(path))
-            return
+        __ n.. s:
+            ans.a..(' '.join(path))
+            r..
 
-        for word in words:
-            __ not word or s.find(word) != 0:
+        ___ word __ words:
+            __ n.. word o. s.find(word) != 0:
                 # 1. no word
                 # 2. current word must be the first in s passed in prev
                 continue
 
-            path.append(word)
-            self.dfs(s[len(word):], words, ans, path)
+            path.a..(word)
+            self.dfs(s[l..(word):], words, ans, path)
             path.pop()

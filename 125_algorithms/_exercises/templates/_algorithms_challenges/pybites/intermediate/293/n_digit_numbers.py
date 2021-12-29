@@ -1,4 +1,4 @@
-from typing import List, TypeVar
+____ typing _______ List, TypeVar
 T = TypeVar('T', int, float)
 
 
@@ -7,20 +7,20 @@ ___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
     __ n < 1:
         raise ValueError
 
-    __ numbers == []:
-        return []
+    __ numbers __ []:
+        r.. []
 
     n_multiply_lookup = {1: 1, 2: 10, 3: 100, 4: 1000}
 
-    for i in range(len(numbers)):
+    ___ i __ r..(l..(numbers)):
         numbers[i] = round(numbers[i] * n_multiply_lookup[n])
-        __ len(str(numbers[i])) > n:
+        __ l..(str(numbers[i])) > n:
             __ numbers[i] > 0:
                 numbers[i] = int(str(numbers[i])[:n])
-            else:
+            ____:
                 numbers[i] = int(str(numbers[i])[:n +1])
 
-    return numbers
+    r.. numbers
 
 #if __name__ == "__main__":
     #print(n_digit_numbers([], 2))

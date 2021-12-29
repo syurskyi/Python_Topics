@@ -1,10 +1,10 @@
 ___ ring_shift(first,next):
     __ next < 0:
         next  abs(next)
-        for i in range(next):
-            first.append(first.pop(0))
-    else:
-        for i in range(next):
+        ___ i __ r..(next):
+            first.a..(first.pop(0))
+    ____:
+        ___ i __ r..(next):
             first.insert(0,first.pop())
 
 values  [9,8,7,6,5,4,3,2,1,0]

@@ -59,10 +59,10 @@ ___ my_strip_vowels(text: str) -> (str, int):
        https://docs.python.org/3/library/typing.html"""
     out = ''
     cnt = 0
-    for letter in text:
-        __ letter.lower() not in vowels:
+    ___ letter __ text:
+        __ letter.lower() n.. __ vowels:
             out += letter
-        else:
+        ____:
             out += '*'
             cnt += 1
     t = (out, cnt)
@@ -82,18 +82,18 @@ ___ strip_vowels(text: str) -> (str, int):
        The str/int types in the function defintion above are part
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
-    new_str = []
+    new_str    # list
     # Why to create new list? Why not iterate through the string directly, without creating anything?
-    chars = list(text)
+    chars = l..(text)
     num_vowels = 0
 
-    for c in chars:
-        __ c.lower() in vowels:
+    ___ c __ chars:
+        __ c.lower() __ vowels:
             c = '*'
             num_vowels += 1
-        new_str.append(c)
+        new_str.a..(c)
 
-    return ''.join(new_str), num_vowels
+    r.. ''.join(new_str), num_vowels
     #
     # once you get into regular expressions you can rewrite this with one line:
     # import re

@@ -42,34 +42,34 @@ class Solution:
         :param matrix: a list of lists of integers
         :return: a list of integers
         """
-        __ not matrix or not matrix[0]:
-            return matrix
+        __ n.. matrix o. n.. matrix[0]:
+            r.. matrix
 
-        result = []
+        result    # list
 
         left = 0
-        right = len(matrix[0]) - 1
+        right = l..(matrix[0]) - 1
         top = 0
-        bottom = len(matrix) - 1
+        bottom = l..(matrix) - 1
 
         while left <= right and top <= bottom:
-            for c in xrange(left, right + 1):
-                result.append(matrix[top][c])
-            for r in xrange(top + 1, bottom + 1):
-                result.append(matrix[r][right])
-            for c in xrange(right - 1, left - 1, -1):
+            ___ c __ xrange(left, right + 1):
+                result.a..(matrix[top][c])
+            ___ r __ xrange(top + 1, bottom + 1):
+                result.a..(matrix[r][right])
+            ___ c __ xrange(right - 1, left - 1, -1):
                 __ top < bottom:  # avoid double scanning the first row
-                    result.append(matrix[bottom][c])
-            for r in xrange(bottom - 1, top, -1):
+                    result.a..(matrix[bottom][c])
+            ___ r __ xrange(bottom - 1, top, -1):
                 __ left < right:  # avoid double scanning the first column
-                    result.append(matrix[r][left])
+                    result.a..(matrix[r][left])
 
             left += 1
             right -= 1
             top += 1
             bottom -= 1
 
-        return result
+        r.. result
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().spiralOrder([[2, 3]])

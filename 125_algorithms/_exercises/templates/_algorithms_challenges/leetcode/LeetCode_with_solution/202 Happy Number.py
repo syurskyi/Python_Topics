@@ -31,11 +31,11 @@ class Solution:
         while True:
             nxt += (n%10)*(n%10)
             n /= 10
-            __ n == 0:
-                __ nxt == 1:
-                    return True
-                __ nxt in appeared:
-                    return False
+            __ n __ 0:
+                __ nxt __ 1:
+                    r.. True
+                __ nxt __ appeared:
+                    r.. False
 
                 appeared.add(nxt)
                 n = nxt

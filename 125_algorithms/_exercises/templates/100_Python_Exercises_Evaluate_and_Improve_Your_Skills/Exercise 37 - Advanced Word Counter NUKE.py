@@ -4,17 +4,17 @@ ___ count_words(filepath):
         string  file.read()
         string  string.replace(",", " ")
         string_list  string.split(" ")
-        return len(string_list)
+        r.. l..(string_list)
 
 print(count_words("words2.txt"))
 
 #Other solution using regular expressions
-import re
+_______ re
 
 ___ count_words_re(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
         string_list  re.split(",| ", string)
-        return len(string_list)
+        r.. l..(string_list)
 
 print(count_words_re("words2.txt"))

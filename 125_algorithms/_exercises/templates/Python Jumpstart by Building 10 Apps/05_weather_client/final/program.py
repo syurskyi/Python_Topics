@@ -1,5 +1,5 @@
-import collections
-import requests
+_______ collections
+_______ requests
 
 Location  collections.namedtuple('Location', 'city state country')
 Weather  collections.namedtuple('Weather', 'location units temp condition')
@@ -9,14 +9,14 @@ ___ main():
     show_header()
     location_text  input("Where do you want the weather report (e.g. Portland, US)? ")
     loc  convert_plaintext_location(location_text)
-    __ not loc:
+    __ n.. loc:
         print(f"Could not find anything about {location_text}.")
-        return
+        r..
 
     weather  call_weather_api(loc)
-    __ not weather:
+    __ n.. weather:
         print(f"Could not get weather for {location_text} from the API.")
-        return
+        r..
 
     report_weather(loc, weather)
 
@@ -30,16 +30,16 @@ ___ report_weather(loc, weather):
 ___ get_scale(weather):
     __ weather.units __ 'imperial':
         scale  "F"
-    else:
+    ____:
         scale  "C"
-    return scale
+    r.. scale
 
 
 ___ get_location_name(location):
-    __ not location.state:
-        return f'{location.city.capitalize()}, {location.country.upper()}'
-    else:
-        return f'{location.city.capitalize()}, {location.state.upper()}, {location.country.upper()}'
+    __ n.. location.state:
+        r.. f'{location.city.capitalize()}, {location.country.upper()}'
+    ____:
+        r.. f'{location.city.capitalize()}, {location.state.upper()}, {location.country.upper()}'
 
 
 ___ call_weather_api(loc):
@@ -50,13 +50,13 @@ ___ call_weather_api(loc):
 
     # print(f"Would call {url}")
     resp  requests.get(url)
-    __ resp.status_code in {400, 404, 500}:
+    __ resp.status_code __ {400, 404, 500}:
         # print(f"Error: {resp.text}.")
-        return N..
+        r.. N..
 
     data  resp.json()
 
-    return convert_api_to_weather(data, loc)
+    r.. convert_api_to_weather(data, loc)
 
 
 ___ convert_api_to_weather(data, loc):
@@ -68,12 +68,12 @@ ___ convert_api_to_weather(data, loc):
     condition  f"{w.get('category')}: {w.get('description').capitalize()}"
     weather  Weather(loc, data.get('units'), temp, condition)
 
-    return weather
+    r.. weather
 
 
 ___ convert_plaintext_location(location_text):
-    __ not location_text or not location_text.strip():
-        return N..
+    __ n.. location_text o. n.. location_text.strip():
+        r.. N..
 
     location_text  location_text.l...strip()
     parts  location_text.split(',')
@@ -81,17 +81,17 @@ ___ convert_plaintext_location(location_text):
     city  ""
     state  ""
     country  'us'
-    __ len(parts) __ 1:
+    __ l..(parts) __ 1:
         city  parts[0].strip()
-    elif len(parts) __ 2:
+    ____ l..(parts) __ 2:
         city  parts[0].strip()
         country  parts[1].strip()
-    elif len(parts) __ 3:
+    ____ l..(parts) __ 3:
         city  parts[0].strip()
         state  parts[1].strip()
         country  parts[2].strip()
-    else:
-        return N..
+    ____:
+        r.. N..
 
     # print(f"City={city}, State={state}, Country={country}")
 
@@ -100,7 +100,7 @@ ___ convert_plaintext_location(location_text):
     # t2 = Location(city, state, country)
     # t2.city
 
-    return Location(city, state, country)
+    r.. Location(city, state, country)
     # return city, state, country
 
 

@@ -12,14 +12,14 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-        n = len(haystack)
-        m = len(needle)
-        for i in range(n + 1 - m):
+        n = l..(haystack)
+        m = l..(needle)
+        ___ i __ r..(n + 1 - m):
             matched = True
-            for k in range(m):
+            ___ k __ r..(m):
                 __ haystack[i + k] != needle[k]:
                     matched = False
                     break
             __ matched:
-                return i
-        return -1
+                r.. i
+        r.. -1

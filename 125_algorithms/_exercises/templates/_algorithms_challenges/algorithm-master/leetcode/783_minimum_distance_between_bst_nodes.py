@@ -15,15 +15,15 @@ class Solution:
     space: O(1)
     """
     ans = float('inf')
-    pre = None
+    pre = N..
 
     ___ minDiffInBST(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return self.ans
+        __ n.. root:
+            r.. self.ans
 
         self.minDiffInBST(root.left)
 
@@ -33,7 +33,7 @@ class Solution:
         self.pre = root
 
         self.minDiffInBST(root.right)
-        return self.ans
+        r.. self.ans
 
 
 class Solution:
@@ -47,18 +47,18 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         ans = float('inf')
-        pre = None
+        pre = N..
 
-        stack = []
+        stack    # list
         node = root
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack.pop()
@@ -70,4 +70,4 @@ class Solution:
 
             node = node.right
 
-        return ans
+        r.. ans

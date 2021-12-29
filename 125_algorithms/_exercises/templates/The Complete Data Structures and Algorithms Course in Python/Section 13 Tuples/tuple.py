@@ -43,7 +43,7 @@ print(myTuple + myTuple1)
 print(myTuple * 4)      
 print(2 __ myTuple1)
 
-myTuple1.count(2)
+myTuple1.c.. 2)
 myTuple1.index(2)
 
 

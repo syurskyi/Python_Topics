@@ -6,10 +6,10 @@ class Codec:
     :rtype: str
     """
     ret = ""
-    for s in strs:
-      ret += str(len(s)) + "|" + s
+    ___ s __ strs:
+      ret += str(l..(s)) + "|" + s
 
-    return ret
+    r.. ret
 
   ___ decode(self, s):
     """Decodes a single string to a list of strings.
@@ -17,18 +17,18 @@ class Codec:
     :type s: str
     :rtype: List[str]
     """
-    ret = []
+    ret    # list
     start = end = 0
-    while end < len(s):
+    while end < l..(s):
       __ s[end] != "|":
         end += 1
-      else:
+      ____:
         length = int(s[start:end])
         start = end + 1
         end = start + length
-        ret.append(s[start:end])
+        ret.a..(s[start:end])
         start = end
-    return ret
+    r.. ret
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

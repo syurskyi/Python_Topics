@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import roman_numerals
+_______ roman_numerals
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -28,9 +28,9 @@ class RomanTest(unittest.TestCase):
     }
 
     ___ test_numerals(self):
-        for arabic, numeral in self.numerals.items():
+        ___ arabic, numeral __ self.numerals.items():
             self.assertEqual(roman_numerals.numeral(arabic), numeral)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -8,20 +8,20 @@ class Solution(object):
     ___ hash(count):
       p1, p2 = 2903, 29947
       ret = 0
-      for c in count:
+      ___ c __ count:
         ret = ret * p1 + c
         p1 *= p2
-      return ret
+      r.. ret
 
     d = {}
 
-    for str in strs:
+    ___ str __ strs:
       count = [0] * 26
-      for c in str:
+      ___ c __ str:
         count[ord(c) - ord('a')] += 1
       key = hash(count)
-      __ key not in d:
+      __ key n.. __ d:
         d[key] = [str]
-      else:
-        d[key].append(str)
-    return [d[k] for k in d]
+      ____:
+        d[key].a..(str)
+    r.. [d[k] ___ k __ d]

@@ -27,39 +27,39 @@ class Solution:
         :param board: a 2D array
         :return: NIL, Capture all regions by modifying the input board in-place.
         """
-        __ not board or not board[0]:
-            return
-        q = []
+        __ n.. board o. n.. board[0]:
+            r..
+        q    # list
         # scan the boarder
-        m = len(board)
-        n = len(board[0])
-        for i in xrange(m):
-            __ board[i][0]=='O': q.append((i, 0))
-            __ board[i][n-1]=='O': q.append((i, n-1))
-        for j in xrange(1, n-1):
-            __ board[0][j]=='O': q.append((0, j))
-            __ board[m-1][j]=='O': q.append((m-1, j))
+        m = l..(board)
+        n = l..(board[0])
+        ___ i __ xrange(m):
+            __ board[i][0]__'O': q.a..((i, 0))
+            __ board[i][n-1]__'O': q.a..((i, n-1))
+        ___ j __ xrange(1, n-1):
+            __ board[0][j]__'O': q.a..((0, j))
+            __ board[m-1][j]__'O': q.a..((m-1, j))
 
 
         while q: # dynamically expanding, no deletion of elements
             cor = q.pop()
             board[cor[0]][cor[1]]=CONNECTED  # cannot be both "O" and CONNECTED
-            for direction in directions:
+            ___ direction __ directions:
                 row = cor[0]+direction[0]
                 col = cor[1]+direction[1]
-                __ 0<=row<m and 0<=col<n and board[row][col]=='O':
-                    q.append((row, col))
+                __ 0<=row<m and 0<=col<n and board[row][col]__'O':
+                    q.a..((row, col))
 
 
-        for i in xrange(m):
-            for j in xrange(n):
-                __ board[i][j]=='O':
+        ___ i __ xrange(m):
+            ___ j __ xrange(n):
+                __ board[i][j]__'O':
                     board[i][j] = 'X'
-                elif board[i][j]==CONNECTED:
+                ____ board[i][j]__CONNECTED:
                     board[i][j] = 'O'
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     board = [
         ['X', 'X', 'X', 'X'],
         ['X', 'O', 'O', 'X'],
@@ -73,7 +73,7 @@ __ __name__=="__main__":
         ['X', 'O', 'X', 'X']
     ]
     Solution().solve(board)
-    assert board==expected_board
+    ... board__expected_board
 
 
 

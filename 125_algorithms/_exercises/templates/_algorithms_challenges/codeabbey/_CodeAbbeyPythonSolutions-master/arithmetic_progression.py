@@ -1,14 +1,14 @@
 amount_values = int(input())
-results = []
+results    # list
 
-___ get_progression(start, inc, sum):
+___ get_progression(start, inc, s..):
     progress = start
-    for i in range(sum, 1,-1):
+    ___ i __ r..(s.., 1,-1):
         start +=  inc
         progress += start
-    results.append(progress)
+    results.a..(progress)
 
-for i in range(amount_values):
-    start, inc, sum = map(int, input().split())
-    get_progression(start,inc,sum)
+___ i __ r..(amount_values):
+    start, inc, s.. = map(int, input().split())
+    get_progression(start,inc,s..)
 print(*results)

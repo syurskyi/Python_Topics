@@ -1,4 +1,4 @@
-import configparser
+_______ configparser
 
 
 class ToxIniParser:
@@ -14,7 +14,7 @@ class ToxIniParser:
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        return len(self.config.sections())
+        r.. l..(self.config.sections())
 
     @property
     ___ environments(self):
@@ -22,20 +22,20 @@ class ToxIniParser:
            (= "envlist" attribute of [tox] section)"""
 
         
-        envs = []
-        __ 'tox' in self.config:
-            __ '\n' in self.config['tox']['envlist']:
+        envs    # list
+        __ 'tox' __ self.config:
+            __ '\n' __ self.config['tox']['envlist']:
                 lines = self.config['tox']['envlist'].strip().splitlines()
-                for line in lines:
-                    __ ',' in line:
+                ___ line __ lines:
+                    __ ',' __ line:
                         values = line.split(',')
-                        for value in values:
-                            envs.append(value.strip())
-                    else:
-                        envs.append(line.strip())
-                return [env for env in envs __ env != '']
-            else:
-                return [value.strip() for value in self.config['tox']['envlist'].strip().split(',')]
+                        ___ value __ values:
+                            envs.a..(value.strip())
+                    ____:
+                        envs.a..(line.strip())
+                r.. [env ___ env __ envs __ env != '']
+            ____:
+                r.. [value.strip() ___ value __ self.config['tox']['envlist'].strip().split(',')]
 
 
 
@@ -48,10 +48,10 @@ class ToxIniParser:
     ___ base_python_versions(self):
         """Return a list of all basepython across the ini file"""
         base_pythons = set()
-        for section in self.config.sections():
-            __ 'basepython' in self.config[section]:
+        ___ section __ self.config.sections():
+            __ 'basepython' __ self.config[section]:
                 base_pythons.add(self.config[section]['basepython'])
 
 
-        return list(base_pythons)
+        r.. l..(base_pythons)
             

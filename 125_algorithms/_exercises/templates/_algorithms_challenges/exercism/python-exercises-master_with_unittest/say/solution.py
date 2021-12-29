@@ -1,5 +1,5 @@
 ___ say(number, recursive=False):
-    small = dict(enumerate((
+    small = d..(enumerate((
         'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
         'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
         'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty')))
@@ -15,28 +15,28 @@ ___ say(number, recursive=False):
         raise AttributeError('number is too large: %s' % str(number))
 
     __ number < 20:
-        return small[number] __ not recursive else 'and ' + small[number]
+        r.. small[number] __ n.. recursive ____ 'and ' + small[number]
 
     __ number < 100:
-        __ number % 10 == 0:
-            return small[number]
-        return tens[number // 10 * 10] + '-' + small[number % 10]
+        __ number % 10 __ 0:
+            r.. small[number]
+        r.. tens[number // 10 * 10] + '-' + small[number % 10]
 
     __ number < k:
-        __ number % 100 == 0:
-            return small[number // 100] + ' hundred'
-        return small[number // 100] + ' hundred and ' + say(number % 100)
+        __ number % 100 __ 0:
+            r.. small[number // 100] + ' hundred'
+        r.. small[number // 100] + ' hundred and ' + say(number % 100)
 
     __ number < m:
-        __ number % k == 0:
-            return say(number // k) + ' thousand'
-        return say(number // k) + ' thousand ' + say(number % k, True)
+        __ number % k __ 0:
+            r.. say(number // k) + ' thousand'
+        r.. say(number // k) + ' thousand ' + say(number % k, True)
 
     __ number < b:
-        __ number % m == 0:
-            return say(number // m) + ' million'
-        return say(number // m) + ' million ' + say(number % m, True)
+        __ number % m __ 0:
+            r.. say(number // m) + ' million'
+        r.. say(number // m) + ' million ' + say(number % m, True)
 
-    __ number % b == 0:
-        return say(number // b) + ' billion'
-    return say(number // b) + ' billion ' + say(number % b, True)
+    __ number % b __ 0:
+        r.. say(number // b) + ' billion'
+    r.. say(number // b) + ' billion ' + say(number % b, True)

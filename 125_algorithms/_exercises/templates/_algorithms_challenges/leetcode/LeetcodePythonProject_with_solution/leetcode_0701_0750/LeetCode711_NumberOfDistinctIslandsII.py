@@ -9,75 +9,75 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]: return 0
-        m, n = len(grid), len(grid[0])
+        __ n.. grid o. n.. grid[0]: r.. 0
+        m, n = l..(grid), l..(grid[0])
         hashset = set()
         count = 0
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 1:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 1:
                     res = [i, i, j, j]
                     grid[i][j] = 2
                     self.helper(grid, i, j, res)
                     keys = self.generateKeys(grid, res)
                     found = False
-                    for key in keys:
-                        __ key in hashset:
+                    ___ key __ keys:
+                        __ key __ hashset:
                             found = True
                             break
-                    __ not found:
+                    __ n.. found:
                         hashset.add(keys.pop())
                         count += 1
-        return count
+        r.. count
     
     ___ helper(self, grid, i, j, res):
-        res[0] = min(res[0], i)
+        res[0] = m..(res[0], i)
         res[1] = max(res[1], i)
-        res[2] = min(res[2], j)
+        res[2] = m..(res[2], j)
         res[3] = max(res[3], j)
-        m, n = len(grid), len(grid[0])
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-            __ 0 <= x < m and 0 <= y < n and grid[x][y] == 1:
+        m, n = l..(grid), l..(grid[0])
+        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+            __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
                 grid[x][y] = 2
                 self.helper(grid, x, y, res)
     
     ___ generateKeys(self, grid, res):
         hashset = set()
         up, down, left, right = res[0], res[1], res[2], res[3]
-        subGrid = []
-        for i in range(up, down+1):
-            tmp = []
-            for j in range(left, right+1):
-                tmp.append(grid[i][j])
-            subGrid.append(tmp)
+        subGrid    # list
+        ___ i __ r..(up, down+1):
+            tmp    # list
+            ___ j __ r..(left, right+1):
+                tmp.a..(grid[i][j])
+            subGrid.a..(tmp)
         self.addRotationKeys(subGrid, hashset)
-        return hashset
+        r.. hashset
     
     ___ addRotationKeys(self, grid, hashset):
         grid1 = grid
         grid2 = grid[::-1]
-        grid3 = [row[::-1] for row in grid]
-        for grid in [grid1, grid2, grid3]:
+        grid3 = [row[::-1] ___ row __ grid]
+        ___ grid __ [grid1, grid2, grid3]:
             grid0 = grid
-            for _ in range(4):
-                m, n = len(grid0), len(grid0[0])
-                newGrid = [[0]*m for _ in range(n)]
-                for i in range(m):
-                    for j in range(n):
+            ___ _ __ r..(4):
+                m, n = l..(grid0), l..(grid0[0])
+                newGrid = [[0]*m ___ _ __ r..(n)]
+                ___ i __ r..(m):
+                    ___ j __ r..(n):
                         newGrid[j][i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
-            for _ in range(4):
-                m, n = len(grid0), len(grid0[0])
-                newGrid = [[0]*m for _ in range(n)]
-                for i in range(m):
-                    for j in range(n):
+            ___ _ __ r..(4):
+                m, n = l..(grid0), l..(grid0[0])
+                newGrid = [[0]*m ___ _ __ r..(n)]
+                ___ i __ r..(m):
+                    ___ j __ r..(n):
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
     
     ___ getKey(self, grid):
-        return ','.join([''.join([str(num) for num in row]) for row in grid])
+        r.. ','.join([''.join([str(num) ___ num __ row]) ___ row __ grid])
     
     ___ test(self):
         testCases = [
@@ -161,13 +161,13 @@ class Solution(object):
                 '1000000101000110',
             ],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             print('grid:')
-            grid = [[int(c) for c in row] for row in grid]
-            print('\n'.join([str(row) for row in grid]))
+            grid = [[int(c) ___ c __ row] ___ row __ grid]
+            print('\n'.join([str(row) ___ row __ grid]))
             result = self.numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

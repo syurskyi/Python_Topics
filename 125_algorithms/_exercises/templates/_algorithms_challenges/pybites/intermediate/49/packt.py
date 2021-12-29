@@ -1,7 +1,7 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
-from bs4 import BeautifulSoup as Soup
-import requests
+____ bs4 _______ BeautifulSoup as Soup
+_______ requests
 
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
 CONTENT = requests.get(PACKT).text
@@ -20,14 +20,14 @@ ___ get_book():
     book_description = soup.find("div", class_="dotd-main-book-summary").select("div")[2].get_text().strip()
 
     # Link
-    book_link = [a["href"] for a in soup.find("div", class_="dotd-main-book-image").select("a[href]")][0]
+    book_link = [a["href"] ___ a __ soup.find("div", class_="dotd-main-book-image").select("a[href]")][0]
 
     # Image
-    book_image = [img["data-original"] for img in soup.find("div", class_="dotd-main-book-image").select("img[data-original]")][0]
+    book_image = [img["data-original"] ___ img __ soup.find("div", class_="dotd-main-book-image").select("img[data-original]")][0]
 
     # NamedTuple
     book_nt = Book(book_title, book_description, book_image, book_link)
-    return book_nt
+    r.. book_nt
 
 
 # if __name__ == "__main__":

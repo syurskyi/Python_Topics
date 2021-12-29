@@ -11,20 +11,20 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ not s and not t: return True
-        __ not s or not t: return False
-        __ len(s) != len(t): return False
+        __ n.. s and n.. t: r.. True
+        __ n.. s o. n.. t: r.. False
+        __ l..(s) != l..(t): r.. False
         hashmap = {}
-        for c in s:
-            __ c in hashmap: hashmap[c] += 1
-            else: hashmap[c] = 1
-        for c in t:
-            __ c not in hashmap: return False
+        ___ c __ s:
+            __ c __ hashmap: hashmap[c] += 1
+            ____: hashmap[c] = 1
+        ___ c __ t:
+            __ c n.. __ hashmap: r.. False
             hashmap[c] -= 1
-            __ hashmap[c] == 0:
+            __ hashmap[c] __ 0:
                 del hashmap[c]
         __ hashmap:
-            return False
-        return True
+            r.. False
+        r.. True
     
     

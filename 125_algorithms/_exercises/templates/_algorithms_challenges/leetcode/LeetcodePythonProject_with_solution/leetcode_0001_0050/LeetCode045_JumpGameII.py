@@ -12,9 +12,9 @@ class Solution(object):
         maxReach = 0
         reach = 0
         steps = 0
-        for i in range(len(nums)-1):
+        ___ i __ r..(l..(nums)-1):
             maxReach = max(maxReach, i+nums[i])
-            __ i == reach:
+            __ i __ reach:
                 steps += 1
                 reach = maxReach
-        return steps
+        r.. steps

@@ -1,7 +1,7 @@
-from collections import Counter
-import unittest
+____ collections _______ Counter
+_______ unittest
 
-from luhn import Luhn
+____ luhn _______ Luhn
 
 
 class LuhnTests(unittest.TestCase):
@@ -45,5 +45,5 @@ class LuhnTests(unittest.TestCase):
         self.assertTrue(number.is_valid())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

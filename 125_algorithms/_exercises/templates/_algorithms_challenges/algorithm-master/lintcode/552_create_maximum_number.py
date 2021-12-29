@@ -6,11 +6,11 @@ class Solution:
         :type k: int, k <= m + n
         :rtype: list[int]
         """
-        ans = []
+        ans    # list
 
-        for size in range(
-            max(0, k - len(a)),
-            min(k, len(b)) + 1
+        ___ size __ r..(
+            max(0, k - l..(a)),
+            m..(k, l..(b)) + 1
         ):
             res = self.merge(
                 self.get_max(a, k - size),
@@ -18,27 +18,27 @@ class Solution:
             )
             ans = max(ans, res)
 
-        return ans
+        r.. ans
 
     ___ get_max(self, a, size):
-        res = []
-        n = len(a)
+        res    # list
+        n = l..(a)
 
-        for i in range(n):
+        ___ i __ r..(n):
             while (
                 res and
-                len(res) + n - i > size and
+                l..(res) + n - i > size and
                 res[-1] < a[i]
             ):
                 res.pop()
 
-            __ len(res) < size:
-                res.append(a[i])
+            __ l..(res) < size:
+                res.a..(a[i])
 
-        return res
+        r.. res
 
     ___ merge(self, a, b):
-        return [
+        r.. [
             max(a, b).pop(0)
-            for _ in range(len(a) + len(b))
+            ___ _ __ r..(l..(a) + l..(b))
         ]

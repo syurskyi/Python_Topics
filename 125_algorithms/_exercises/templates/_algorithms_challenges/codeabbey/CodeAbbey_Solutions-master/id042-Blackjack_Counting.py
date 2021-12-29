@@ -1,7 +1,7 @@
 # Python 2.7
 
 ___ blackjack_counter(games):
-    answer = []
+    answer    # list
     values = {
         '2':2,    '3':3,    '4':4,
         '5':5,    '6':6,    '7':7,
@@ -10,13 +10,13 @@ ___ blackjack_counter(games):
         'K':10,   'A':11
         }
     
-    for game in range(games):
-        cards = [x for x in raw_input().split()]
+    ___ game __ r..(games):
+        cards = [x ___ x __ raw_input().s.. ]
         total, ace_count = 0, 0
         
-        for card in cards:
+        ___ card __ cards:
             total += values[card]
-            __ card == 'A':
+            __ card __ 'A':
                 ace_count += 1
                 
         while total > 21 and ace_count > 0:
@@ -24,9 +24,9 @@ ___ blackjack_counter(games):
             ace_count -= 1
 
         __ total > 21:
-            answer.append('Bust')
-        else:
-            answer.append(str(total))
+            answer.a..('Bust')
+        ____:
+            answer.a..(str(total))
 
     print(' '.join(answer))
 blackjack_counter(input())

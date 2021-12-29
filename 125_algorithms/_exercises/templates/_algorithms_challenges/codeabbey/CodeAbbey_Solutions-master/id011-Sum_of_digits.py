@@ -1,12 +1,12 @@
 ___ sumDigits(sumCount):
-        answer = []
-        for eachLine in range(sumCount):
+        answer    # list
+        ___ eachLine __ r..(sumCount):
                 [a,b,c] = raw_input().split(' ')
                 value = (int(a) * int(b)) + int(c)
-                value = list(str(value))
-                sum = 0
-                for digit in value:
-                        sum += int(digit)
-                answer.append(str(sum))
+                value = l..(str(value))
+                s.. = 0
+                ___ digit __ value:
+                        s.. += int(digit)
+                answer.a..(str(s..))
         print(' '.join(answer))
 sumDigits(input())

@@ -10,8 +10,8 @@ class Solution(object):
     :type intervals: List[Interval]
     :rtype: bool
     """
-    intervals = sorted(intervals, key=lambda x: x.start)
-    for i in range(1, len(intervals)):
+    intervals = s..(intervals, key=l.... x: x.start)
+    ___ i __ r..(1, l..(intervals)):
       __ intervals[i].start < intervals[i - 1].end:
-        return False
-    return True
+        r.. False
+    r.. True

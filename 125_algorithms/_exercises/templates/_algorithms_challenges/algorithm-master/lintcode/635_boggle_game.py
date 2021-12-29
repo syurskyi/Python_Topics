@@ -1,7 +1,7 @@
 class TrieNode:
     ___ __init__(self):
         self.children = {}
-        self.end_of = None
+        self.end_of = N..
 
 
 class Solution:
@@ -13,67 +13,67 @@ class Solution:
         """
         self.ans = 0
 
-        __ not board or not board[0]:
-            return self.ans
+        __ n.. board o. n.. board[0]:
+            r.. self.ans
 
 
         root = TrieNode()
 
-        for word in words:
+        ___ word __ words:
             self.put(root, word)
 
 
-        m, n = len(board), len(board[0])
+        m, n = l..(board), l..(board[0])
         visited = set()
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 self.dfs(board, x, y, root, visited, 0)
 
 
-        return self.ans
+        r.. self.ans
 
     ___ dfs(self, board, i, j, root, visited, cnt):
-        m, n = len(board), len(board[0])
+        m, n = l..(board), l..(board[0])
 
-        for x in range(i, m):
-            for y in range(j, n):
-                next_words = []
+        ___ x __ r..(i, m):
+            ___ y __ r..(j, n):
+                next_words    # list
                 self.find_next_words(board, x, y, visited, cnt, root, next_words, [])
 
-                for pos in next_words:
-                    for p in pos:
+                ___ pos __ next_words:
+                    ___ p __ pos:
                         visited.add(p)
 
                     self.dfs(board, x, y, root, visited, cnt + 1)
 
-                    for p in pos:
+                    ___ p __ pos:
                         visited.discard(p)
 
             j = 0
 
     ___ find_next_words(self, board, x, y, visited, cnt, node, next_words, path):
-        __ (x, y) in visited or board[x][y] not in node.children:
-            return
+        __ (x, y) __ visited o. board[x][y] n.. __ node.children:
+            r..
 
-        m, n = len(board), len(board[0])
+        m, n = l..(board), l..(board[0])
         node = node.children[board[x][y]]
 
-        path.append((x, y))
+        path.a..((x, y))
         visited.add((x, y))
 
-        __ node.end_of is not None:
-            next_words.append(path[:])
+        __ node.end_of __ n.. N..
+            next_words.a..(path[:])
             self.ans = max(self.ans, cnt + 1)
-        else:
-            for dx, dy in (
+        ____:
+            ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
             ):
                 _x = x + dx
                 _y = y + dy
 
-                __ not (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m and 0 <= _y < n):
                     continue
 
                 self.find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
@@ -84,8 +84,8 @@ class Solution:
     ___ put(self, root, word):
         node = root
 
-        for c in word:
-            __ c not in node.children:
+        ___ c __ word:
+            __ c n.. __ node.children:
                 node.children[c] = TrieNode()
 
             node = node.children[c]

@@ -32,7 +32,7 @@ True
 >>> all(snake.move(d) == -1 for d in 'RUDL')
 True
 """
-import collections
+_______ collections
 
 
 class SnakeGame:
@@ -45,9 +45,9 @@ class SnakeGame:
         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1],
         the second is at [1,0].
         """
-        __ not width or not height or not food:
+        __ n.. width o. n.. height o. n.. food:
             # raise error
-            return
+            r..
 
         self.width = width
         self.height = height
@@ -75,13 +75,13 @@ class SnakeGame:
 
         Game over when snake crosses the screen boundary or bites its body.
         """
-        __ direction not in self.dn:
+        __ direction n.. __ self.dn:
             # treat this move as invalid action
-            return len(self.snake) - 1
+            r.. l..(self.snake) - 1
 
         __ self.is_over:
             # this game is over
-            return self.SCORE_IN_OVER
+            r.. self.SCORE_IN_OVER
 
         """
         new head will hit wall?
@@ -91,19 +91,19 @@ class SnakeGame:
         hx = x + dx
         hy = y + dy
 
-        __ not (0 <= hx < self.height and 0 <= hy < self.width):
+        __ n.. (0 <= hx < self.height and 0 <= hy < self.width):
             self.is_over = True
-            return self.SCORE_IN_OVER
+            r.. self.SCORE_IN_OVER
 
         """
         eat food or not
         """
         fx, fy = self.food[self.fi]
 
-        __ fx == hx and fy == hy:
+        __ fx __ hx and fy __ hy:
             # eat that food
             self.fi += 1
-        else:
+        ____:
             # move to empty cell and need to remove tail
             tail = self.snake.pop()
             self.body.discard(tail)
@@ -112,9 +112,9 @@ class SnakeGame:
         new head will hit its self?
         this detection MUST AFTER removing tail
         """
-        __ (hx, hy) in self.body:
+        __ (hx, hy) __ self.body:
             self.is_over = True
-            return self.SCORE_IN_OVER
+            r.. self.SCORE_IN_OVER
 
         """
         new head is valid, track it
@@ -125,7 +125,7 @@ class SnakeGame:
         """
         There is no food anymore
         """
-        __ self.fi >= len(self.food):
+        __ self.fi >= l..(self.food):
             self.is_over = True
 
-        return len(self.snake) - 1
+        r.. l..(self.snake) - 1

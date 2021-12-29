@@ -5,11 +5,11 @@ class Solution:
     """
     ___ maxProfit(self, P):
         ans = 0
-        __ not P:
-            return ans
+        __ n.. P:
+            r.. ans
 
-        for i in range(1, len(P)):
+        ___ i __ r..(1, l..(P)):
             __ P[i] > P[i - 1]:
                 ans += P[i] - P[i - 1]
 
-        return ans
+        r.. ans

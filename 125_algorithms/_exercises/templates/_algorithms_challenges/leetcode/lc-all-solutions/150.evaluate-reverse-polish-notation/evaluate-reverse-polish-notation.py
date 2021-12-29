@@ -4,19 +4,19 @@ class Solution(object):
     :type tokens: List[str]
     :rtype: int
     """
-    stack = []
-    for token in tokens:
-      __ token in ["+", "-", "*", "/"]:
+    stack    # list
+    ___ token __ tokens:
+      __ token __ ["+", "-", "*", "/"]:
         b, a = stack.pop(), stack.pop()
-        __ token == "+":
+        __ token __ "+":
           res = a + b
-        __ token == "-":
+        __ token __ "-":
           res = a - b
-        __ token == "*":
+        __ token __ "*":
           res = a * b
-        __ token == "/":
+        __ token __ "/":
           res = int(float(a) / float(b))
-        stack.append(res)
-      else:
-        stack.append(int(token))
-    return stack.pop()
+        stack.a..(res)
+      ____:
+        stack.a..(int(token))
+    r.. stack.pop()

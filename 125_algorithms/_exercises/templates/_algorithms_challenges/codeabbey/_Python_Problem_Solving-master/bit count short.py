@@ -2,17 +2,17 @@ ___ bitCount():
 
     codeAbbeyWaste = input() # Required by CodeAbbey
 
-    numbers = input().split()
+    numbers = input().s.. 
 
-    answer = []
+    answer    # list
 
-    for num in numbers:
+    ___ num __ numbers:
 
         data = int(num) % 0x100000000
 
         bits = format(data, 'b')
 
-        answer.append(str(bits.count('1')))
+        answer.a..(str(bits.c.. '1')))
 
     print(' '.join(answer))
 

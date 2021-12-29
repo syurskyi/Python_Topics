@@ -7,13 +7,13 @@ class Solution(object):
     """
     ans = 0
     nums.sort()
-    for i in range(0, len(nums)):
-      start, end = i + 1, len(nums) - 1
+    ___ i __ r..(0, l..(nums)):
+      start, end = i + 1, l..(nums) - 1
       while start < end:
         __ nums[i] + nums[start] + nums[end] < target:
           ans += end - start
           start += 1
-        else:
+        ____:
           end -= 1
 
-    return ans
+    r.. ans

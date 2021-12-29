@@ -52,7 +52,7 @@ Note:
 1 <= D <= weights.length <= 50000
 1 <= weights[i] <= 500
 """
-from tying import List
+____ tying _______ List
 
 
 class Solution:
@@ -63,12 +63,12 @@ class Solution:
         Binary search on value range (max, sum)
         """
         lo = max(weights)
-        hi = sum(weights)
+        hi = s..(weights)
         while lo < hi:
             mid = (lo + hi) // 2
             cnt = 1
             cur = 0
-            for w in weights:
+            ___ w __ weights:
                 cur += w
                 __ cur > mid:
                     cnt += 1
@@ -76,7 +76,7 @@ class Solution:
                     
             __ cnt > D:
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return lo
+        r.. lo

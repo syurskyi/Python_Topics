@@ -9,29 +9,29 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums or len(nums) < 3:
-            return 0
+        __ n.. nums o. l..(nums) < 3:
+            r.. 0
         s1, s2 = float('inf'), float('inf')
         l1, l2, l3 = float('-inf'), float('-inf'), float('-inf')
-        for num in nums:
+        ___ num __ nums:
             __ num < s1:
                 s2 = s1
                 s1 = num
-            elif num < s2:
+            ____ num < s2:
                 s2 = num
             __ num > l1:
                 l3 = l2
                 l2 = l1
                 l1 = num
-            elif num > l2:
+            ____ num > l2:
                 l3 = l2
                 l2 = num
-            elif num > l3:
+            ____ num > l3:
                 l3 = num
         res = float('-inf')
-        for a1, a2, a3 in (l1, l2, l3), (s1, s2, l1):
+        ___ a1, a2, a3 __ (l1, l2, l3), (s1, s2, l1):
             res = max(res, a1*a2*a3)
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -40,11 +40,11 @@ class Solution(object):
             [-1, -2, 0, 3],
             [-1, -2, -3, 1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.maximumProduct(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

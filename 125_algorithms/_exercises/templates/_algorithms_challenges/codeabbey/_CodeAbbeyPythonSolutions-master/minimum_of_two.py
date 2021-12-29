@@ -1,17 +1,17 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_min(num1, num2):
-    min = 0
+    m.. = 0
     __(num1 < num2):
-        min = num1
-    else:
-        min = num2
+        m.. = num1
+    ____:
+        m.. = num2
 
-    return min
+    r.. m..
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     num1, num2 = map(int, input().split())
-    results.append(get_min(num1, num2))
+    results.a..(get_min(num1, num2))
 
 print(*results)

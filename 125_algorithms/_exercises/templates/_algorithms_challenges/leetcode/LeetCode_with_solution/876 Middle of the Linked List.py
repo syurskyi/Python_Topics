@@ -28,7 +28,7 @@ The number of nodes in the given list will be between 1 and 100.
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
@@ -46,8 +46,8 @@ class Solution:
         cur = head
         while cur:
             cur_l += 1
-            __ cur_l == mid:
-                return cur
+            __ cur_l __ mid:
+                r.. cur
             cur = cur.next
 
-        return None
+        r.. N..

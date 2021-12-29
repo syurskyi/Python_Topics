@@ -21,22 +21,22 @@ class Interval(object):
         self.end = e
 
     ___ __str__(self):
-        return "[%d, %d]" % (self.start, self.end)
+        r.. "[%d, %d]" % (self.start, self.end)
 
     ___ __repr__(self):
-        return repr(self.__str__())
+        r.. repr(self.__str__())
 
 
 class Solution(object):
     ___ insert(self, itvls, newItvl):
         s, e = newItvl.start, newItvl.end
-        left = filter(lambda x: x.end < s, itvls)
-        right = filter(lambda x: x.start > e, itvls)
-        __ len(left)+len(right) != len(itvls):
-            s = min(s, itvls[len(left)].start)
-            e = max(e, itvls[-len(right)-1].end)
+        left = filter(l.... x: x.end < s, itvls)
+        right = filter(l.... x: x.start > e, itvls)
+        __ l..(left)+l..(right) != l..(itvls):
+            s = m..(s, itvls[l..(left)].start)
+            e = max(e, itvls[-l..(right)-1].end)
 
-        return left + [Interval(s, e)] + right
+        r.. left + [Interval(s, e)] + right
 
     ___ insert_itr(self, itvls, newItvl):
         """
@@ -51,7 +51,7 @@ class SolutionSlow(object):
         :param newItvl: a Interval
         :return: a list of Interval
         """
-        return self.merge(itvls+[newItvl])
+        r.. self.merge(itvls+[newItvl])
 
     ___ merge(self, itvls):
         """
@@ -60,23 +60,23 @@ class SolutionSlow(object):
         :param itvls: list of Interval
         :return: list of Interval
         """
-        itvls.sort(cmp=lambda a, b: a.start - b.start)
+        itvls.sort(cmp=l.... a, b: a.start - b.start)
 
         ret = [itvls[0]]
-        for cur in itvls[1:]:
+        ___ cur __ itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
                 pre.end = max(pre.end, cur.end)
-            else:
-                ret.append(cur)
+            ____:
+                ret.a..(cur)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
     insert = [4, 9]
-    lst_interval = []
-    for item in lst:
-        lst_interval.append(Interval(item[0], item[1]))
+    lst_interval    # list
+    ___ item __ lst:
+        lst_interval.a..(Interval(item[0], item[1]))
     print Solution().insert(lst_interval, Interval(insert[0], insert[1]))

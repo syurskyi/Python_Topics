@@ -7,20 +7,20 @@ ___ wc(file_):
         lines = f.readlines()
 
 
-    number_of_lines = len(lines)
+    number_of_lines = l..(lines)
 
     characters = 0
     words = 0
-    for line in lines:
-        words +=  len(line.split())
-        characters += len(line)
+    ___ line __ lines:
+        words +=  l..(line.split())
+        characters += l..(line)
 
 
-    return f"{number_of_lines} {words} {characters} {file_}"
+    r.. f"{number_of_lines} {words} {characters} {file_}"
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # make it work from cli like original unix wc
-    import sys
+    _______ sys
     print(wc(sys.argv[1]))

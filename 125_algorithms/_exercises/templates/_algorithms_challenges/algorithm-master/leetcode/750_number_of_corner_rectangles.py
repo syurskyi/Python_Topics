@@ -22,21 +22,21 @@ class Solution:
         """
         ans = 0
 
-        __ not G:
-            return ans
+        __ n.. G:
+            r.. ans
 
         n = 0
         count = {}
-        for R in G:
-            for end in range(1, len(R)):
-                __ R[end] == 0:
+        ___ R __ G:
+            ___ end __ r..(1, l..(R)):
+                __ R[end] __ 0:
                     continue
 
-                for start in range(end):
-                    __ R[start] == 0:
+                ___ start __ r..(end):
+                    __ R[start] __ 0:
                         continue
 
-                    __ (start, end) not in count:
+                    __ (start, end) n.. __ count:
                         count[start, end] = 0
                         continue
 
@@ -44,4 +44,4 @@ class Solution:
 
                     ans += count[start, end]
 
-        return ans
+        r.. ans

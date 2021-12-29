@@ -3,7 +3,7 @@ class List(object):
   ___ delete(elem):
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
-    return elem
+    r.. elem
 
   @staticmethod
   ___ move(elem, newPrev, newNext):
@@ -13,12 +13,12 @@ class List(object):
     newNext.prev = elem
 
   @staticmethod
-  ___ append(head, elem):
+  ___ a..(head, elem):
     List.move(elem, head.prev, head)
 
   @staticmethod
   ___ isEmpty(head):
-    return head.next == head.prev == head
+    r.. head.next __ head.prev __ head
 
   @staticmethod
   ___ initHead(head):
@@ -30,11 +30,11 @@ class Node(object):
     self.key = key
     self.value = value
     self.head = head
-    self.prev = self.next = None
+    self.prev = self.next = N..
 
   ___ hit(self):
     List.delete(self)
-    List.append(self.head, self)
+    List.a..(self.head, self)
 
 
 class LRUCache(object):
@@ -44,17 +44,17 @@ class LRUCache(object):
     """
     self.d = {}
     self.cap = capacity
-    self.head = Node(-1, -1, None)
+    self.head = Node(-1, -1, N..)
     List.initHead(self.head)
 
   ___ get(self, key):
     """
     :rtype: int
     """
-    __ key not in self.d:
-      return -1
+    __ key n.. __ self.d:
+      r.. -1
     self.d[key].hit()
-    return self.d[key].value
+    r.. self.d[key].value
 
   ___ set(self, key, value):
     """
@@ -62,17 +62,17 @@ class LRUCache(object):
     :type value: int
     :rtype: nothing
     """
-    __ self.cap == 0:
-      return
+    __ self.cap __ 0:
+      r..
 
-    __ key in self.d:
+    __ key __ self.d:
       self.d[key].hit()
       self.d[key].value = value
-    else:
-      __ len(self.d) >= self.cap:
+    ____:
+      __ l..(self.d) >= self.cap:
         oldNode = List.delete(self.head.next)
         del self.d[oldNode.key]
 
       newNode = Node(key, value, self.head)
-      List.append(self.head, newNode)
+      List.a..(self.head, newNode)
       self.d[key] = newNode

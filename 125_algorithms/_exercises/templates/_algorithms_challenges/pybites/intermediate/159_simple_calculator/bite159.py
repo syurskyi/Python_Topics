@@ -13,17 +13,17 @@ ___ simple_calculator(calculation):
     """
 
     operation = {
-        '+': (lambda x, y: x + y), 
-        '-': (lambda x, y: x - y),
-        '*': (lambda x, y: x * y),
-        '/': (lambda x, y: x / y)
+        '+': (l.... x, y: x + y),
+        '-': (l.... x, y: x - y),
+        '*': (l.... x, y: x * y),
+        '/': (l.... x, y: x / y)
         }
 
     try:
-        x = int(calculation.split()[0])
-        y = int(calculation.split()[2])
-        operator = calculation.split()[1]
-        return operation[operator](int(x), int(y))
+        x = int(calculation.s.. [0])
+        y = int(calculation.s.. [2])
+        operator = calculation.s.. [1]
+        r.. operation[operator](int(x), int(y))
     
     except (ValueError, KeyError, ZeroDivisionError):
         raise ValueError

@@ -3,45 +3,45 @@ class Trie:
         self.root = {}
 
     ___ insert(self, string):
-        __ not string:
-            return
+        __ n.. string:
+            r..
         parent = self.root
-        for char in string:
-            __ char in parent:
+        ___ char __ string:
+            __ char __ parent:
                 parent = parent[char]
-            else:
+            ____:
                 parent[char] = {}
                 parent = parent[char]
         parent['_end'] = True
 
     ___ search(self, string):
-        __ not string:
-            return False
+        __ n.. string:
+            r.. False
         parent = self.root
-        for char in string:
-            __ char in parent:
+        ___ char __ string:
+            __ char __ parent:
                 parent = parent[char]
-            else:
-                return False
-        return True
+            ____:
+                r.. False
+        r.. True
 
     ___ search_in_regex(self, string):
-        __ not string:
-            return False
-        return self._search_in_regex(string, self.root, 0)
+        __ n.. string:
+            r.. False
+        r.. self._search_in_regex(string, self.root, 0)
 
     ___ _search_in_regex(self, string, parent, i):
-        __ i == len(string):
-            return parent.get('_end', False)
+        __ i __ l..(string):
+            r.. parent.get('_end', False)
         result = False
-        __ string[i] == '.':
-            for child in parent:
+        __ string[i] __ '.':
+            ___ child __ parent:
                 __ child[0] != '_' and self._search_in_regex(string, parent[child], i + 1):
                     result = True
-        elif string[i] in parent:
+        ____ string[i] __ parent:
             __ self._search_in_regex(string, parent[string[i]], i + 1):
                 result = True
-        return result
+        r.. result
 
 class WordDictionary:
     ___ __init__(self):
@@ -52,8 +52,8 @@ class WordDictionary:
     @return: nothing
     """
     ___ addWord(self, word):
-        __ not word:
-            return
+        __ n.. word:
+            r..
         self.trie.insert(word)
 
     """
@@ -61,9 +61,9 @@ class WordDictionary:
     @return: if the word is in the data structure.
     """
     ___ search(self, word):
-        __ not word:
-            return False
-        return self.trie.search_in_regex(word)
+        __ n.. word:
+            r.. False
+        r.. self.trie.search_in_regex(word)
 
 
 # Your WordDictionary object will be instantiated and called as such:

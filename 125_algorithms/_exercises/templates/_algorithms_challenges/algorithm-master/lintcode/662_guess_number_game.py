@@ -12,8 +12,8 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not n or n <= 1:
-            return 1
+        __ n.. n o. n <= 1:
+            r.. 1
 
         left, right = 1, n
 
@@ -21,11 +21,11 @@ class Solution:
             mid = (left + right) // 2
             res = Guess.guess(mid)
 
-            __ res == 0:
-                return mid
-            elif res == 1:
+            __ res __ 0:
+                r.. mid
+            ____ res __ 1:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        return left __ Guess.guess(left) == 0 else right
+        r.. left __ Guess.guess(left) __ 0 ____ right

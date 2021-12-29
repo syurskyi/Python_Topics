@@ -4,14 +4,14 @@ class Solution(object):
     :type envelopes: List[List[int]]
     :rtype: int
     """
-    envelopes.sort(key=lambda key: (key[0], -key[1]))
-    tails = []
-    for i in range(0, len(envelopes)):
+    envelopes.sort(key=l.... key: (key[0], -key[1]))
+    tails    # list
+    ___ i __ r..(0, l..(envelopes)):
       idx = bisect.bisect_right(tails, envelopes[i][1])
-      __ idx - 1 >= 0 and tails[idx - 1] == envelopes[i][1]:
+      __ idx - 1 >= 0 and tails[idx - 1] __ envelopes[i][1]:
         continue
-      __ idx == len(tails):
-        tails.append(envelopes[i][1])
-      else:
+      __ idx __ l..(tails):
+        tails.a..(envelopes[i][1])
+      ____:
         tails[idx] = envelopes[i][1]
-    return len(tails)
+    r.. l..(tails)

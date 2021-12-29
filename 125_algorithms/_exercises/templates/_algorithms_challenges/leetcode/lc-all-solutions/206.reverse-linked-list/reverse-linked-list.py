@@ -6,23 +6,23 @@
 
 class Solution(object):
   ___ reverseList(self, root):
-    __ not root or not root.next:
-      return root
+    __ n.. root o. n.. root.next:
+      r.. root
 
     ret = self.reverseList(root.next)
     root.next.next = root
-    root.next = None
-    return ret
+    root.next = N..
+    r.. ret
 
   ___ _reverseList(self, head):
-    pre = None
+    pre = N..
     cur = head
     while cur:
       tmp = cur.next
       cur.next = pre
       pre = cur
       cur = tmp
-    return pre
+    r.. pre
 
   # iteratively as queue head inserting
   ___ __reverseList(self, head):
@@ -37,22 +37,22 @@ class Solution(object):
       dummy.next = p
       p = p.next
       dummy.next.next = tmp
-    return dHead.next
+    r.. dHead.next
 
   # easily leads to a circle. Remove current node's next after recursive call.
   ___ ___reverseList(self, head):
-    self.newHead = None
+    self.newHead = N..
 
     ___ rec(head):
-      __ not head:
-        return head
+      __ n.. head:
+        r.. head
       p = rec(head.next)
-      head.next = None
+      head.next = N..
       __ p:
         p.next = head
-      else:
+      ____:
         self.newHead = head
-      return head
+      r.. head
 
     rec(head)
-    return self.newHead
+    r.. self.newHead

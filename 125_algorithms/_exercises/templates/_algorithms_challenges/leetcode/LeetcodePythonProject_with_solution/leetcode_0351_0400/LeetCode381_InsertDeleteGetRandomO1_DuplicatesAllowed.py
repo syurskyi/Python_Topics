@@ -6,33 +6,33 @@ Created on Apr 1, 2017
 
 class RandomizedCollection(object):
     ___ __init__(self):
-        self.vals = []
+        self.vals    # list
         self.pos = {}
     
     ___ insert(self, val):
-        self.vals.append(val)
-        __ val in self.pos:
-            self.pos[val].add(len(self.vals)-1)
-            return False
-        else:
-            self.pos[val] = set([len(self.vals)-1])
-            return True
+        self.vals.a..(val)
+        __ val __ self.pos:
+            self.pos[val].add(l..(self.vals)-1)
+            r.. False
+        ____:
+            self.pos[val] = set([l..(self.vals)-1])
+            r.. True
     
     ___ remove(self, val):
-        __ val in self.pos:
+        __ val __ self.pos:
             lastVal = self.vals[-1]
             ind = self.pos[val].pop()
             self.vals[ind] = lastVal
             __ self.pos[lastVal]:
                 self.pos[lastVal].add(ind)
-                self.pos[lastVal].discard(len(self.vals)-1)
+                self.pos[lastVal].discard(l..(self.vals)-1)
             self.vals.pop()
-            __ not self.pos[val]:
+            __ n.. self.pos[val]:
                 del self.pos[val]
-            return True
-        return False
+            r.. True
+        r.. False
     
     ___ getRandom(self):
-        import random
-        return random.choice(self.vals)
+        _______ random
+        r.. random.choice(self.vals)
     

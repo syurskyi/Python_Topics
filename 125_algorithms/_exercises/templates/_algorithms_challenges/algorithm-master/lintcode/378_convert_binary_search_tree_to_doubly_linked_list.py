@@ -19,16 +19,16 @@ class Solution:
     @return: the head of doubly list node
     """
     ___ bstToDoublyList(self, root):
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         dummy = tail = DoublyListNode(-1)
-        stack = []
+        stack    # list
         node = root
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack.pop()
@@ -40,4 +40,4 @@ class Solution:
 
             node = node.right
 
-        return dummy.next
+        r.. dummy.next

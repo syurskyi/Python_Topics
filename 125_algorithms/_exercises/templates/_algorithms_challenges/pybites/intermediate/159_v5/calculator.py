@@ -1,4 +1,4 @@
-from operator import add, sub, mul, truediv
+____ operator _______ add, sub, mul, truediv
 
 
 ___ simple_calculator(calculation):
@@ -6,8 +6,8 @@ ___ simple_calculator(calculation):
     """
     funcs = {'+': add, '-': sub, '*': mul, '/': truediv}
     try:
-        a, op, b = calculation.split()
+        a, op, b = calculation.s..
         a, b = int(a), int(b)
-        return funcs[op](a, b)
+        r.. funcs[op](a, b)
     except Exception:
         raise ValueError

@@ -10,19 +10,19 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        res, stack, x = [], [], 2
+        res, stack, x    # list, [], 2
         while True:
             __ x > n//x:
-                __ not stack:
-                    return res
-                res.append(stack+[n])
+                __ n.. stack:
+                    r.. res
+                res.a..(stack+[n])
                 x = stack.pop()
                 n *= x
                 x += 1
-            elif n % x == 0:
-                stack.append(x)
+            ____ n % x __ 0:
+                stack.a..(x)
                 n = n//x
-            else:
+            ____:
                 x += 1
     
     ___ getFactorsSlow(self, n):
@@ -30,19 +30,19 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        result = []
+        result    # list
         self.helper(result, [], n, 2)
-        return result
+        r.. result
     
     ___ helper(self, result, item, n, start):
         __ n <= 1:
-            __ len(item)>1:
-                result.append(list(item))
-            return
+            __ l..(item)>1:
+                result.a..(l..(item))
+            r..
         
-        for i in range(start, n+1):
-            __ n % i == 0:
-                item.append(i)
+        ___ i __ r..(start, n+1):
+            __ n % i __ 0:
+                item.a..(i)
                 self.helper(result, item, int(n/i), i)
                 item.pop()
     
@@ -54,13 +54,13 @@ class Solution(object):
             32,
             23848713,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % (n))
             result = self.getFactors(n)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
     

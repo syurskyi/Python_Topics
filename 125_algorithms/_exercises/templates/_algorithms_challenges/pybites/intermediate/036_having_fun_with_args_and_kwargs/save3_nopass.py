@@ -1,15 +1,15 @@
 ___ get_profile(name, age, *sports, **awards):
-    sports = sorted(list(sports))
+    sports = s..(l..(sports))
 
-    __ not isinstance(age, int):
+    __ n.. isi..(age, int):
         raise ValueError
-    __ len(sports) > 5:
+    __ l..(sports) > 5:
         raise ValueError
 
-    __ sports and not awards:
-        return {'name': name, 'age': age, 'sports': sports}
+    __ sports and n.. awards:
+        r.. {'name': name, 'age': age, 'sports': sports}
     __ sports and awards:
-        return {'name': name, 'age': age,
+        r.. {'name': name, 'age': age,
             'sports': sports, 'awards': awards}
-    else:
-        return {'name': name, 'age': age}
+    ____:
+        r.. {'name': name, 'age': age}

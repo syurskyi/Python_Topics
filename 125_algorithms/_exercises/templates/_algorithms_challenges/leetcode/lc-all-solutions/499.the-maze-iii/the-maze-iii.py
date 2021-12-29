@@ -1,4 +1,4 @@
-import heapq
+_______ heapq
 
 
 class Solution(object):
@@ -11,17 +11,17 @@ class Solution(object):
     """
 
     ___ next(curr, maze):
-      height = len(maze)
-      width = len(maze[0])
+      height = l..(maze)
+      width = l..(maze[0])
       directions = [(-1, 0, "u"), (1, 0, "d"), (0, -1, "l"), (0, 1, "r")]
-      for di, dj, mark in directions:
+      ___ di, dj, mark __ directions:
         dist = 0
         i, j = curr
         while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
-          __ (i, j) == hole:
+          __ (i, j) __ hole:
             break
         yield (i, j), mark, dist
 
@@ -30,12 +30,12 @@ class Solution(object):
     hole = tuple(hole)
     while heap:
       dist, word, curr = heapq.heappop(heap)
-      __ curr in visited:
+      __ curr __ visited:
         continue
       visited |= {curr}
-      __ curr == hole:
-        return word
-      for pos, mark, incDist in next(curr, maze):
+      __ curr __ hole:
+        r.. word
+      ___ pos, mark, incDist __ next(curr, maze):
         heapq.heappush(heap, (dist + incDist, word + mark, pos))
 
-    return "impossible"
+    r.. "impossible"

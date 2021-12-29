@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         colors = [0]*3
-        for num in nums:
+        ___ num __ nums:
             colors[num]+=1
         i, j = 0, 0
         while j < 3:
@@ -19,18 +19,18 @@ class Solution(object):
                 nums[i]=j
                 colors[j] -= 1
                 i += 1
-            else:
+            ____:
                 j += 1
     
     ___ test(self):
         testCases = [
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             self.sortColors(nums)
             print('After sort')
             print('nums: %s' % (nums))
             print('-='*15+'-')
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

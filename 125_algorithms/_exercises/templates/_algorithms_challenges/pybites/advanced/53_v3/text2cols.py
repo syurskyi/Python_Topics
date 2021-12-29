@@ -1,21 +1,21 @@
-from itertools import zip_longest
+____ itertools _______ zip_longest
 
 COL_WIDTH = 20
 
 
 ___ _divide_line(line: str, col_width: int = COL_WIDTH):
-    words = line.split()
-    result = []
+    words = line.s..
+    result    # list
     line = words[0]
-    for word in words[1:]:
+    ___ word __ words[1:]:
         line2 = line + ' ' + word
-        __ len(line2) > col_width:
-            result.append(line)
+        __ l..(line2) > col_width:
+            result.a..(line)
             line = word
-        else:
+        ____:
             line = line2
-    result.append(line)
-    return result
+    result.a..(line)
+    r.. result
 
 
 ___ text_to_columns(text):
@@ -24,6 +24,6 @@ ___ text_to_columns(text):
        Return a string with the column output like:
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
-    lines = [_divide_line(col) for col in (text.split('\n\n'))]
-    rv = [' '.join(combination) for combination in zip_longest(*lines, fillvalue=' ')]
-    return '\n'.join(rv)
+    lines = [_divide_line(col) ___ col __ (text.split('\n\n'))]
+    rv = [' '.join(combination) ___ combination __ zip_longest(*lines, fillvalue=' ')]
+    r.. '\n'.join(rv)

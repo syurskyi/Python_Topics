@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from kindergarten_garden import Garden
+____ kindergarten_garden _______ Garden
 
 
 class KindergartenGardenTests(unittest.TestCase):
@@ -37,5 +37,5 @@ class KindergartenGardenTests(unittest.TestCase):
             garden.plants("Xander"), "Radishes Grass Clover Violets".split())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

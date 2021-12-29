@@ -46,25 +46,25 @@ class Solution:
         sliding window with size at most K.
         => O(N)
         """
-        __ K == 0:
-            return 1
+        __ K __ 0:
+            r.. 1
 
-        F = [0 for _ in range(N+1)]
+        F = [0 ___ _ __ r..(N+1)]
         F[0] = 1
         cur_sum = F[0]
         ret = 0
-        for i in range(1, N+1):
+        ___ i __ r..(1, N+1):
             F[i] = cur_sum * (1/W)
             __ i >= K:
                 ret += F[i]
                 # stop
-            else:
+            ____:
                 cur_sum += F[i]
                 
             __ i - W >= 0:
                 cur_sum -= F[i - W]
 
-        return ret
+        r.. ret
 
     ___ new21Game_error(self, N: int, K: int, W: int) -> float:
         """
@@ -73,19 +73,19 @@ class Solution:
 
         O(N^2)
         """
-        F = [0 for _ in range(K+W+1)]
+        F = [0 ___ _ __ r..(K+W+1)]
         F[0] = 1
-        for i in range(1, K+W+1):
-            for j in range(W, 0, -1):
+        ___ i __ r..(1, K+W+1):
+            ___ j __ r..(W, 0, -1):
                 __ i - j >= K:
                     break
                 __ i - j >= 0:
                     F[i] += F[i-j] * 1 / W
 
-        ret = sum(F[1:N+1])  # error
+        ret = s..(F[1:N+1])  # error
         print(F, ret)
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().new21Game(6, 1, 10) == 0.6
+__ __name__ __ "__main__":
+    ... Solution().new21Game(6, 1, 10) __ 0.6

@@ -2,24 +2,24 @@ class Solution(object):
   ___ minTransfers(self, transactions):
     balances = collections.defaultdict(int)
     people = set()
-    for giver, receiver, amount in transactions:
+    ___ giver, receiver, amount __ transactions:
       balances[giver] -= amount
       balances[receiver] += amount
       people |= {giver, receiver}
-    for person, balance in balances.items():
-      __ balance == 0:
+    ___ person, balance __ balances.items():
+      __ balance __ 0:
         people.discard(person)
         del balances[person]
-    people_list = list(people)
+    people_list = l..(people)
 
     ___ dfs(people_list):
-      __ not people_list:
-        return 0
+      __ n.. people_list:
+        r.. 0
       people = set(people_list)
-      for i in range(2, len(people_list) + 1):
-        for persons in itertools.combinations(people_list, i):
-          __ sum(balances[p] for p in persons) == 0:
+      ___ i __ r..(2, l..(people_list) + 1):
+        ___ persons __ itertools.combinations(people_list, i):
+          __ s..(balances[p] ___ p __ persons) __ 0:
             people -= set(persons)
-            return dfs(list(people)) + len(persons) - 1
+            r.. dfs(l..(people)) + l..(persons) - 1
 
-    return dfs(people_list)
+    r.. dfs(people_list)

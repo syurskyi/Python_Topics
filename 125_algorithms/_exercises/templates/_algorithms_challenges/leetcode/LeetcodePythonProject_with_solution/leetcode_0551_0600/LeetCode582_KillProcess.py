@@ -12,21 +12,21 @@ class Solution(object):
         :rtype: List[int]
         """
         hashmap = {}
-        for p, pp in zip(pid, ppid):
+        ___ p, pp __ zip(pid, ppid):
             hashset = hashmap.get(pp, set())
             hashset.add(p)
             hashmap[pp] = hashset
-        __ kill not in hashmap:
-            return [kill]
-        queue = list(hashmap[kill])
+        __ kill n.. __ hashmap:
+            r.. [kill]
+        queue = l..(hashmap[kill])
         result = set([kill])
         while queue:
             node = queue.pop(0)
             result.add(node)
-            for node0 in hashmap.get(node, []):
-                __ node0 not in result:
-                    queue.append(node0)
-        return list(result)
+            ___ node0 __ hashmap.get(node, []):
+                __ node0 n.. __ result:
+                    queue.a..(node0)
+        r.. l..(result)
     
     ___ test(self):
         testCases = [
@@ -36,7 +36,7 @@ class Solution(object):
                 5,
             ],
         ]
-        for pid, ppid, kill in testCases:
+        ___ pid, ppid, kill __ testCases:
             print('pid: %s' % pid)
             print('ppid: %s' % ppid)
             print('kill: %s' % kill)
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

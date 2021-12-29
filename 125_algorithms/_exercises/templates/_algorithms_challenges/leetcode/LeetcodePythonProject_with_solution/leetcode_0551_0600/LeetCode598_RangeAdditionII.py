@@ -13,10 +13,10 @@ class Solution(object):
         :rtype: int
         """
         minA, minB = float('inf'), float('inf')
-        for a, b in ops:
-            minA = min(minA, a)
-            minB = min(minB, b)
-        return min(minA, m)*min(minB, n)
+        ___ a, b __ ops:
+            minA = m..(minA, a)
+            minB = m..(minB, b)
+        r.. m..(minA, m)*m..(minB, n)
     
     ___ test(self):
         testCases = [
@@ -24,5 +24,5 @@ class Solution(object):
         ]
         
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

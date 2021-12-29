@@ -4,34 +4,34 @@ http://www.codewars.com/kata/55679d644c58e2df2a00009c/train/python
 """
 ___ is_balanced(source, caps):
     count = {}
-    stack = []
-    for c in source:
-        __ c in caps:
+    stack    # list
+    ___ c __ source:
+        __ c __ caps:
             i = caps.index(c)
-            __ i % 2 == 0:
-                __ caps[i] == caps[i + 1]:
-                    __ caps[i] in count:
+            __ i % 2 __ 0:
+                __ caps[i] __ caps[i + 1]:
+                    __ caps[i] __ count:
                         count[caps[i]] += 1
-                    else:
+                    ____:
                         count[caps[i]] = 1
-                else:
-                    stack.append(c)
-            else:
-                __ caps[i - 1] == caps[i]:
-                    __ caps[i] in count:
+                ____:
+                    stack.a..(c)
+            ____:
+                __ caps[i - 1] __ caps[i]:
+                    __ caps[i] __ count:
                         count[caps[i]] += 1
-                    else:
+                    ____:
                         count[caps[i]] = 1
-                else:
-                    __ len(stack) == 0 or stack.pop() != caps[i - 1]:
-                        return False
-    return (len(stack) == 0) and ((sum([v for k, v in count.items()])) % 2 == 0)
+                ____:
+                    __ l..(stack) __ 0 o. stack.pop() != caps[i - 1]:
+                        r.. False
+    r.. (l..(stack) __ 0) and ((s..([v ___ k, v __ count.items()])) % 2 __ 0)
 
-print(is_balanced("(Sensei says yes!)", "()") == True)
-print(is_balanced("(Sensei says no!", "()") == False)
+print(is_balanced("(Sensei says yes!)", "()") __ True)
+print(is_balanced("(Sensei says no!", "()") __ False)
 
-print(is_balanced("(Sensei [says] yes!)", "()[]") == True)
-print(is_balanced("(Sensei [says) no!]", "()[]") == False)
+print(is_balanced("(Sensei [says] yes!)", "()[]") __ True)
+print(is_balanced("(Sensei [says) no!]", "()[]") __ False)
 
-print(is_balanced("Sensei says -yes-!", "--") == True)
-print(is_balanced("Sensei -says no!", "--") == False)
+print(is_balanced("Sensei says -yes-!", "--") __ True)
+print(is_balanced("Sensei -says no!", "--") __ False)

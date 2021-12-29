@@ -8,14 +8,14 @@ class Solution(object):
     ___ singleNumberK(nums, k):
       ret = 0
       count = [0] * 32
-      for i in range(0, 32):
-        for num in nums:
+      ___ i __ r..(0, 32):
+        ___ num __ nums:
           __ num & (1 << i):
             count[i] += 1
         __ count[i] % 3 != 0:
           ret |= 1 << i
       __ ret > 0x7fffffff:
         ret -= 0x100000000
-      return ret
+      r.. ret
 
-    return singleNumberK(nums, 3)
+    r.. singleNumberK(nums, 3)

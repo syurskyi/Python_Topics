@@ -1,4 +1,4 @@
-from random import randrange
+____ random _______ randrange
 
 
 class Solution:
@@ -15,7 +15,7 @@ class Solution:
         :rtype: List[int]
         """
         self.nums = self.origin[:]
-        return self.nums
+        r.. self.nums
 
     ___ shuffle(self):
         """
@@ -23,13 +23,13 @@ class Solution:
         :rtype: List[int]
         """
         a = self.nums
-        n = len(a)
+        n = l..(a)
 
-        for i in range(n):
+        ___ i __ r..(n):
             _i = randrange(i, n)
             a[i], a[_i] = a[_i], a[i]
 
-        return a
+        r.. a
 
 
 # Your Solution object will be instantiated and called as such:

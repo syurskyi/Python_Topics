@@ -49,22 +49,22 @@ class Solution(object):
     """
 
     ___ parse(s, i):
-      __ s[i] == "[":
+      __ s[i] __ "[":
         i += 1
         ret = NestedInteger()
-        while i < len(s):
-          __ s[i] == "]":
-            return ret, i + 1
-          elif s[i] in "[-0123456789":
+        while i < l..(s):
+          __ s[i] __ "]":
+            r.. ret, i + 1
+          ____ s[i] __ "[-0123456789":
             res, i = parse(s, i)
             ret.add(res)
-          else:
+          ____:
             i += 1
-      else:
+      ____:
         j = i
-        while j < len(s) and s[j] in "-0123456789":
+        while j < l..(s) and s[j] __ "-0123456789":
           j += 1
-        return NestedInteger(int(s[i:j])), j
+        r.. NestedInteger(int(s[i:j])), j
 
     res, _ = parse(s, 0)
-    return res
+    r.. res

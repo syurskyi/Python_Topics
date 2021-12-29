@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from workouts import print_workout_days
+____ workouts _______ print_workout_days
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -25,4 +25,4 @@ from workouts import print_workout_days
 ___ test_print_workout_days(arg, expected, capfd):
     print_workout_days(arg)
     actual = capfd.readouterr()[0].strip()
-    assert actual == expected
+    ... actual __ expected

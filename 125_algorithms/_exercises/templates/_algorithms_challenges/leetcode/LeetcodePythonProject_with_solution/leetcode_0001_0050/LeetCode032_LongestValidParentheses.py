@@ -7,21 +7,21 @@ Created on Mar 14, 2017
 class Solution(object):
     ___ longestValidParentheses(self, s):
         left = -1
-        stack = []
+        stack    # list
         res = 0
-        for i, c in enumerate(s):
-            __ c == '(':
-                stack.append(i)
-            else:
+        ___ i, c __ enumerate(s):
+            __ c __ '(':
+                stack.a..(i)
+            ____:
                 __ stack:
                     stack.pop()
                     __ stack:
                         res = max(res, i-stack[-1])
-                    else:
+                    ____:
                         res = max(res, i-left)
-                else:
+                ____:
                     left = i
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -29,11 +29,11 @@ class Solution(object):
             '(()',
             ')()())',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.longestValidParentheses(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

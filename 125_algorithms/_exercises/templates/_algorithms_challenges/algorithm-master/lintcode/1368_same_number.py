@@ -7,16 +7,16 @@ class Solution:
     ___ sameNumber(self, nums, k):
         RES = ('NO', 'YES')
 
-        __ not nums or not k:
-            return RES[0]
+        __ n.. nums o. n.. k:
+            r.. RES[0]
 
         idx = {}
         gotcha = False
 
-        for i in range(len(nums)):
-            __ nums[i] in idx and i - idx[nums[i]] < k:
+        ___ i __ r..(l..(nums)):
+            __ nums[i] __ idx and i - idx[nums[i]] < k:
                 gotcha = True
 
             idx[nums[i]] = i
 
-        return RES[int(gotcha)]
+        r.. RES[int(gotcha)]

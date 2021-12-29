@@ -4,22 +4,22 @@ class Solution(object):
     :type digits: str
     :rtype: List[str]
     """
-    __ len(digits) == 0:
-      return []
+    __ l..(digits) __ 0:
+      r.. []
 
     d = {1: "", 2: "abc", 3: "def", 4: "ghi", 5: "jkl", 6: "mno", 7: "pqrs", 8: "tuv", 9: "wxyz"}
 
     ___ dfs(digits, index, path, res, d):
-      __ index == len(digits):
-        res.append("".join(path))
-        return
+      __ index __ l..(digits):
+        res.a..("".join(path))
+        r..
 
       digit = int(digits[index])
-      for c in d.get(digit, []):
-        path.append(c)
+      ___ c __ d.get(digit, []):
+        path.a..(c)
         dfs(digits, index + 1, path, res, d)
         path.pop()
 
-    res = []
+    res    # list
     dfs(digits, 0, [], res, d)
-    return res
+    r.. res

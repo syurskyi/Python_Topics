@@ -3,12 +3,12 @@ class Solution:
     # @param {integer} numRows
     # @return {string}
     ___ convert(self, s, numRows):
-        contain = [[] for __ in range(numRows)]
-        trans = tuple(range(numRows)) + tuple(range(numRows-1)[::-1])
-        shift = (numRows - 1) * 2 __ numRows > 1 else 1
-        for i in range(len(s)):
-            contain[trans[i%shift]].append(s[i])
-        return ''.join([''.join(con) for con in contain])
+        contain = [[] ___ __ __ r..(numRows)]
+        trans = tuple(r..(numRows)) + tuple(r..(numRows-1)[::-1])
+        shift = (numRows - 1) * 2 __ numRows > 1 ____ 1
+        ___ i __ r..(l..(s)):
+            contain[trans[i%shift]].a..(s[i])
+        r.. ''.join([''.join(con) ___ con __ contain])
 
 test = Solution()
 print(test.convert("PAYPALISHIRING", 3))

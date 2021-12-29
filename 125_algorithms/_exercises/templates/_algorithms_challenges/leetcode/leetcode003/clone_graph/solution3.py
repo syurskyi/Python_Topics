@@ -16,27 +16,27 @@ class Solution(object):
         :rtype: UndirectedGraphNode
         BFS with only a queue and dictionary (used as visited set)
         """
-        __ node is None:
-            return None
-        queue = []
+        __ node __ N..
+            r.. N..
+        queue    # list
         start_node = node
         start_cloned_node = UndirectedGraphNode(node.label)
         d = {node: start_cloned_node}
-        queue.append(node)
+        queue.a..(node)
         i = 0
-        while i < len(queue):
+        while i < l..(queue):
             node = queue[i]
             i += 1
-            for neighbor in node.neighbors:
-                __ neighbor not in d:
-                    queue.append(neighbor)
+            ___ neighbor __ node.neighbors:
+                __ neighbor n.. __ d:
+                    queue.a..(neighbor)
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     d[neighbor] = cloned_neighbor
-        for node in queue:
+        ___ node __ queue:
             cloned_node = d[node]
-            cloned_neighbors = []
-            for neighbor in node.neighbors:
+            cloned_neighbors    # list
+            ___ neighbor __ node.neighbors:
                 cloned_neighbor = d[neighbor]
-                cloned_neighbors.append(cloned_neighbor)
+                cloned_neighbors.a..(cloned_neighbor)
             cloned_node.neighbors = cloned_neighbors
-        return d[start_node]
+        r.. d[start_node]

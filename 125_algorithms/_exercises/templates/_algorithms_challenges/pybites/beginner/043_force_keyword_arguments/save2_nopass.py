@@ -1,2 +1,2 @@
 ___ get_profile(name="julian", profession="programmer"):
-    return "{} is a {}".format(name, profession)
+    r.. "{} is a {}".format(name, profession)

@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from common import common_languages
+____ common _______ common_languages
 
 
 @pytest.fixture()
 ___ programmers():
-    return dict(bob=['JS', 'PHP', 'Python', 'Perl', 'Java'],
+    r.. d..(bob=['JS', 'PHP', 'Python', 'Perl', 'Java'],
                 tim=['Python', 'Haskell', 'C++', 'JS'],
                 sara=['Perl', 'C', 'Java', 'Python', 'JS'],
                 paul=['C++', 'JS', 'Python'])
@@ -14,26 +14,26 @@ ___ programmers():
 ___ test_common_languages(programmers):
     expected = ['JS', 'Python']
     actual = common_languages(programmers)
-    assert sorted(list(actual)) == expected
+    ... s..(l..(actual)) __ expected
 
 
 ___ test_adding_programmer_without_js(programmers):
     programmers['sue'] = ['Scala', 'Python']
     expected = ['Python']
     actual = common_languages(programmers)
-    assert list(actual) == expected
+    ... l..(actual) __ expected
 
 
 ___ test_adding_programmer_without_js_nor_python(programmers):
     programmers['fabio'] = ['PHP']
-    expected = []
+    expected    # list
     actual = common_languages(programmers)
-    assert list(actual) == expected
+    ... l..(actual) __ expected
 
 
 ___ test_common_languages_adding_new_common_language(programmers):
-    programmers['bob'].append('C++')
-    programmers['sara'].append('C++')
+    programmers['bob'].a..('C++')
+    programmers['sara'].a..('C++')
     expected = ['C++', 'JS', 'Python']
     actual = common_languages(programmers)
-    assert sorted(list(actual)) == expected
+    ... s..(l..(actual)) __ expected

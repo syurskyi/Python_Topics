@@ -9,36 +9,36 @@ get replace by a single space. Trailing commas (not in this example) get strippe
 
 Have fun and keep calm and code in Python!
 """
-from typing import Dict
+____ typing _______ Dict
 
 pw = "\nmysql:x:106:107:MySQL Server,,,:/var/lib/mysql:/bin/false\navar:x:1000:1000::/home/avar:/bin/bash\nchad:x:1001:1001::/home/chad:/bin/bash\ngit-svn-mirror:x:1002:1002:Git mirror,,,:/home/git-svn-mirror:/bin/bash\ngerrit2:x:1003:1003:Gerrit User,,,:/home/gerrit2:/bin/bash\navahi:x:107:108:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false\npostfix:x:108:112::/var/spool/postfix:/bin/false\nssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash\nartagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash\n"
-import re
+_______ re
 
-___ get_users_1st_solution(passwd: str) -> dict:
+___ get_users_1st_solution(passwd: str) -> d..:
 
     result = {}
     passwd = passwd.strip('\n')
     lines = passwd.split('\n')
-    for line in lines:
+    ___ line __ lines:
         fields = line.split(':')
         k = fields[0]
         v = fields[4]
-        __ v == "":
+        __ v __ "":
             v = "unknown"
-        else:
+        ____:
             v = re.sub(',+', ' ', v)
             v = v.strip()
         result[k] = v
-    return(result)
+    r..(result)
 
-___ get_users_2nd_solution(passwd: str) -> dict:
+___ get_users_2nd_solution(passwd: str) -> d..:
 
     output = {}
-    for row in passwd.strip().splitlines():
+    ___ row __ passwd.strip().splitlines():
         fields = row.split(':')
         username = fields[0]
-        name = re.sub(r',+', r' ', fields[4].strip(',')) or 'unknown'
+        name = re.sub(r',+', r' ', fields[4].strip(',')) o. 'unknown'
         output[username] = name
-    return output
+    r.. output
 
 print(get_users(pw))

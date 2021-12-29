@@ -11,13 +11,13 @@ class Solution(object):
         """
         left = 0
         i = 0
-        while i < len(s):
-            __ s[i] == ' ':
+        while i < l..(s):
+            __ s[i] __ ' ':
                 self.reverse(s, left, i-1)
                 left = i+1
             i += 1
-        self.reverse(s, left, len(s)-1)
-        self.reverse(s, 0, len(s)-1)
+        self.reverse(s, left, l..(s)-1)
+        self.reverse(s, 0, l..(s)-1)
     
     ___ reverse(self, s, i, j):
         while i < j:

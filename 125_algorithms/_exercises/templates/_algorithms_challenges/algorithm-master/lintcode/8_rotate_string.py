@@ -5,10 +5,10 @@ class Solution:
     @return: nothing
     """
     ___ rotateString(self, S, x):
-        __ not S or not x:
-            return S
+        __ n.. S o. n.. x:
+            r.. S
 
-        n = len(S)
+        n = l..(S)
         x %= n
         self.reverse(S, 0, n - x - 1)
         self.reverse(S, n - x, n - 1)

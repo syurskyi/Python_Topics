@@ -17,16 +17,16 @@ class Solution(object):
       root = TreeNode(nums[pos])
       root.left = self.constructMaximumBinaryTree(nums[:pos])
       root.right = self.constructMaximumBinaryTree(nums[pos + 1:])
-      return root
+      r.. root
 
   # decreasing stack
   ___ constructMaximumBinaryTree(self, nums):
-    stack = []
-    for num in nums:
+    stack    # list
+    ___ num __ nums:
       root = TreeNode(num)
       while stack and stack[-1].val < num:
         root.left = stack.pop()
       __ stack:
         stack[-1].right = root
-      stack.append(root)
-    return stack and stack[0]
+      stack.a..(root)
+    r.. stack and stack[0]

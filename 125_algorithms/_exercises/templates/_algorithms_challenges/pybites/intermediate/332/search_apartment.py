@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 EAST = "E"
 WEST = "W"
@@ -14,33 +14,33 @@ ___ search_apartment(buildings: List[int], direction: str) -> List[int]:
     
     running_max = float("-inf")
 
-    __ direction == EAST:
-        start =  len(buildings) - 1
+    __ direction __ EAST:
+        start =  l..(buildings) - 1
         end = -1
         delta = -1
-    else:
+    ____:
         start = 0
-        end = len(buildings)
+        end = l..(buildings)
         delta = 1
     
-    result = []
-    for i in range(start,end,delta):
+    result    # list
+    ___ i __ r..(start,end,delta):
         building_height = buildings[i]
         __ building_height > running_max:
-            result.append(i)
+            result.a..(i)
 
         running_max = max(running_max,building_height)
     
 
-    __ direction == EAST:
+    __ direction __ EAST:
         result.reverse()
 
-    return result
+    r.. result
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     A = [3, 5, 4, 4, 7, 1, 3, 2]  # central tallest
     B = [1, 1, 1, 1, 1, 2]  # almost flat
     #

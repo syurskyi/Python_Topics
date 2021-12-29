@@ -1,6 +1,6 @@
-import json
+_______ json
 
-from quotes import app
+____ quotes _______ app
 
 API_ENDPOINT = 'http://127.0.0.1:5000/api/quotes'
 
@@ -10,47 +10,47 @@ client.testing = True
 
 ___ test_get_quotes():
     response = client.get(API_ENDPOINT)
-    assert response.status_code == 200
+    ... response.status_code __ 200
 
     data = json.loads(response.get_data())
     print(data)
     quotes = data['quotes']
-    assert len(quotes) == 3
+    ... l..(quotes) __ 3
 
     expected = {'id': 1, 'movie': 'The Godfather',
                 'quote': "I'm gonna make him an offer he can't refuse."}
-    assert quotes[0] == expected
+    ... quotes[0] __ expected
 
 
 ___ test_get_existing_quote():
     response = client.get(API_ENDPOINT + '/2')
-    assert response.status_code == 200
+    ... response.status_code __ 200
 
     data = json.loads(response.get_data())
     quotes = data['quotes']
-    assert len(quotes) == 1
+    ... l..(quotes) __ 1
 
     expected = {'id': 2, 'movie': 'Predator', 'quote': "Get to the choppa!"}
-    assert quotes[0] == expected
+    ... quotes[0] __ expected
 
 
 ___ test_get_not_existing_quote():
     response = client.get(API_ENDPOINT + '/4')
-    assert response.status_code == 404
+    ... response.status_code __ 404
 
 
 ___ test_create_quote():
-    new_quote = dict(quote='You talking to me?',
+    new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
                            content_type='application/json')
-    assert response.status_code == 201
+    ... response.status_code __ 201
     data = json.loads(response.get_data())
     new_quote = data['quote']
-    assert new_quote['id'] == 4
-    assert new_quote['quote'] == 'You talking to me?'
-    assert new_quote['movie'] == 'Taxi driver'
+    ... new_quote['id'] __ 4
+    ... new_quote['quote'] __ 'You talking to me?'
+    ... new_quote['movie'] __ 'Taxi driver'
 
 
 ___ test_create_quote_missing_data():
@@ -58,39 +58,39 @@ ___ test_create_quote_missing_data():
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
                            content_type='application/json')
-    assert response.status_code == 400
+    ... response.status_code __ 400
 
 
 ___ test_create_quote_incomplete_data():
-    new_quote = dict(quote='You talking to me?')
+    new_quote = d..(quote='You talking to me?')
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
                            content_type='application/json')
-    assert response.status_code == 400
+    ... response.status_code __ 400
 
 
 ___ test_create_existing_quote():
-    new_quote = dict(quote='You talking to me?',
+    new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
                            content_type='application/json')
-    assert response.status_code == 400
+    ... response.status_code __ 400
 
 
 ___ test_update_quote():
-    update_quote = dict(quote='You talking to me?!',
+    update_quote = d..(quote='You talking to me?!',
                         movie='Taxi driver (1976)')
     response = client.put(API_ENDPOINT + '/4',
                           data=json.dumps(update_quote),
                           content_type='application/json')
-    assert response.status_code == 200
+    ... response.status_code __ 200
 
     data = json.loads(response.get_data())
     updated_quote = data['quote']
-    assert updated_quote['id'] == 4
-    assert updated_quote['quote'] == 'You talking to me?!'
-    assert updated_quote['movie'] == 'Taxi driver (1976)'
+    ... updated_quote['id'] __ 4
+    ... updated_quote['quote'] __ 'You talking to me?!'
+    ... updated_quote['movie'] __ 'Taxi driver (1976)'
 
 
 ___ test_update_no_data():
@@ -98,43 +98,43 @@ ___ test_update_no_data():
     response = client.put(API_ENDPOINT + '/4',
                           data=json.dumps(update_quote),
                           content_type='application/json')
-    assert response.status_code == 400
+    ... response.status_code __ 400
 
 
 ___ test_update_not_existing_quote():
-    update_quote = dict(quote='You talking to me?!')
+    update_quote = d..(quote='You talking to me?!')
     response = client.put(API_ENDPOINT + '/5',
                           data=json.dumps(update_quote),
                           content_type='application/json')
-    assert response.status_code == 404
+    ... response.status_code __ 404
 
 
 ___ test_update_no_changes():
-    update_quote = dict(quote='Get to the choppa!',
+    update_quote = d..(quote='Get to the choppa!',
                         movie='Predator')
     response = client.put(API_ENDPOINT + '/2',
                           data=json.dumps(update_quote),
                           content_type='application/json')
-    assert response.status_code == 200
+    ... response.status_code __ 200
 
     data = json.loads(response.get_data())
     updated_quote = data['quote']
-    assert updated_quote['id'] == 2
-    assert updated_quote['quote'] == 'Get to the choppa!'
-    assert updated_quote['movie'] == 'Predator'
+    ... updated_quote['id'] __ 2
+    ... updated_quote['quote'] __ 'Get to the choppa!'
+    ... updated_quote['movie'] __ 'Predator'
 
 
 ___ test_delete_existing_quote():
     response = client.delete(API_ENDPOINT + '/2')
-    assert response.status_code == 204
+    ... response.status_code __ 204
 
     # number quotes from 4 to 3
     response = client.get(API_ENDPOINT)
     data = json.loads(response.get_data())
     quotes = data['quotes']
-    assert len(quotes) == 3
+    ... l..(quotes) __ 3
 
 
 ___ test_delete_not_existing_quote():
     response = client.delete(API_ENDPOINT + '/5')
-    assert response.status_code == 404
+    ... response.status_code __ 404

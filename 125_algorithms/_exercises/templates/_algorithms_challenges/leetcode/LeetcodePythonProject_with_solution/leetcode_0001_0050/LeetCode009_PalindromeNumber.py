@@ -9,7 +9,7 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        __ x < 0: return False
+        __ x < 0: r.. False
         div = 1
         while x//div >= 10:
             div *= 10
@@ -17,11 +17,11 @@ class Solution(object):
             first = x//div
             last  = x%10
             __ first != last:
-                return False
+                r.. False
             x -= first*div
             x = (x-last)//10
             div //= 100
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -34,11 +34,11 @@ class Solution(object):
             2453,
             100021,
         ]
-        for x in testCases:
+        ___ x __ testCases:
             print('x: %s' % (x))
             result = self.isPalindrome(x)
             print('result: %s' % (result))
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

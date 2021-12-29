@@ -18,7 +18,7 @@ class Node:
         self.children = children
 
 
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -26,15 +26,15 @@ class Solution:
         """
         reversely add the children to stk
         """
-        ret = []
-        __ not root:
-            return ret
+        ret    # list
+        __ n.. root:
+            r.. ret
 
         stk = [root]
         while stk:
             cur = stk.pop()
-            ret.append(cur.val)
-            for c in reversed(cur.children):
-                stk.append(c)
+            ret.a..(cur.val)
+            ___ c __ reversed(cur.children):
+                stk.a..(c)
 
-        return ret
+        r.. ret

@@ -7,7 +7,7 @@ Created on Oct 8, 2019
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ middleNode(self, head):
@@ -15,7 +15,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head: return None
+        __ n.. head: r.. N..
         count = 0
         node = head
         while node:
@@ -23,6 +23,6 @@ class Solution(object):
             node = node.next
         count >>= 1
         node = head
-        for _ in range(count):
+        ___ _ __ r..(count):
             node = node.next
-        return node
+        r.. node

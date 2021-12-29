@@ -5,16 +5,16 @@ class Solution:
     """
     ___ continuousSubarraySum(self, A):
         ans = [-1, -1]
-        __ not A:
-            return ans
+        __ n.. A:
+            r.. ans
 
         left = right = 0
         _max = _sum = float('-inf')
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             __ _sum < 0:
                 _sum = A[i]
                 left = right = i
-            else:
+            ____:
                 _sum += A[i]
                 right = i
 
@@ -22,4 +22,4 @@ class Solution:
                 _max = _sum
                 ans = [left, right]
 
-        return ans
+        r.. ans

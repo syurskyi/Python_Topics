@@ -1,12 +1,12 @@
 amount_values = int(input())
-values = list(map(int, input().split()))
+values = l..(map(int, input().split()))
 
 ___ get_sum():
 
     result = 0
-    for i in values:
+    ___ i __ values:
         result = result + i
 
-    return result
+    r.. result
 
 print(get_sum())

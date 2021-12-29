@@ -35,10 +35,10 @@ Each node will have a value between 1 and 10^9.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
-from collections import OrderedDict
+____ collections _______ OrderedDict
 
 
 class Solution:
@@ -49,15 +49,15 @@ class Solution:
         """
         depth = 0
         # parse
-        n = len(S)
+        n = l..(S)
         i = 0
-        root = None
-        stk = []
+        root = N..
+        stk    # list
         while i < n:
-            __ S[i] == "-":
+            __ S[i] __ "-":
                 depth += 1
                 i += 1
-            else:
+            ____:
                 j = i
                 while j < n and S[j] != "-":
                     j += 1
@@ -66,28 +66,28 @@ class Solution:
 
                 # construct
                 cur = TreeNode(val)
-                __ depth == 0:
+                __ depth __ 0:
                     root = cur
                     stk = [(depth, root)]
-                else:
-                    assert stk
+                ____:
+                    ... stk
                     while stk[-1][0] != depth - 1:
                         stk.pop()
 
                     _, pi = stk[-1]
-                    __ not pi.left:
+                    __ n.. pi.left:
                         pi.left = cur
-                    elif not pi.right:
+                    ____ n.. pi.right:
                         pi.right = cur
                         stk.pop()
-                    else:
+                    ____:
                         raise
-                    stk.append((depth, cur))
+                    stk.a..((depth, cur))
 
                 depth = 0
                 i = j
 
-        return root
+        r.. root
 
     ___ recoverFromPreorder_error(self, S: str) -> TreeNode:
         """
@@ -97,13 +97,13 @@ class Solution:
         depth = 0
         depths = OrderedDict()
         # parse
-        n = len(S)
+        n = l..(S)
         i = 0
         while i < n:
-            __ S[i] == "-":
+            __ S[i] __ "-":
                 depth += 1
                 i += 1
-            else:
+            ____:
                 j = i
                 while j < n and S[j] != "-":
                     j += 1
@@ -114,30 +114,30 @@ class Solution:
                 i = j
 
         # construct
-        stk = []
-        root = None
-        for k, v in depths.items():
+        stk    # list
+        root = N..
+        ___ k, v __ depths.items():
             cur = TreeNode(k)
-            __ v == 0:
+            __ v __ 0:
                 root = cur
                 stk = [root]
-            else:
-                assert stk
+            ____:
+                ... stk
                 while depths[stk[-1].val] != v - 1:
                     stk.pop()
 
-                __ not stk[-1].left:
+                __ n.. stk[-1].left:
                     stk[-1].left = cur
-                elif not stk[-1].right:
+                ____ n.. stk[-1].right:
                     stk[-1].right = cur
                     stk.pop()
-                else:
+                ____:
                     raise
-                stk.append(cur)
+                stk.a..(cur)
 
-        return root
+        r.. root
 
 
-__ __name__ == "__main__":
-    assert Solution().recoverFromPreorder("5-4--4")
-    assert Solution().recoverFromPreorder("1-2--3--4-5--6--7")
+__ __name__ __ "__main__":
+    ... Solution().recoverFromPreorder("5-4--4")
+    ... Solution().recoverFromPreorder("1-2--3--4-5--6--7")

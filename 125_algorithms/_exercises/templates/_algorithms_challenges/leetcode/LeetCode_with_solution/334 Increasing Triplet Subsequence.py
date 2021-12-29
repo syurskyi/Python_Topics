@@ -13,7 +13,7 @@ return true.
 Given [5, 4, 3, 2, 1],
 return false.
 """
-import sys
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -29,15 +29,15 @@ class Solution(object):
         """
         min1 = sys.maxint
         min2 = sys.maxint
-        for e in nums:
+        ___ e __ nums:
             __ e < min1:
                 min1 = e
-            elif e != min1 and e < min2:
+            ____ e != min1 and e < min2:
                 min2 = e
-            elif e > min2:
-                return True
+            ____ e > min2:
+                r.. True
 
-        return False
+        r.. False
 
     ___ increasingTripletError(self, nums):
         """
@@ -45,13 +45,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        stk = []
-        for elt in nums:
+        stk    # list
+        ___ elt __ nums:
             while stk and stk[-1] >= elt:
                 stk.pop()
 
-            stk.append(elt)
-            __ len(stk) >= 3:
-                return True
+            stk.a..(elt)
+            __ l..(stk) >= 3:
+                r.. True
 
-        return False
+        r.. False

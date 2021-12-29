@@ -10,10 +10,10 @@ class StringIterator(object):
 
   ___ decodeNext(self):
     self.idx += 1
-    __ self.idx + 1 < len(self.data):
+    __ self.idx + 1 < l..(self.data):
       self.cur = self.data[self.idx]
       end = self.idx + 1
-      while end < len(self.data) and self.data[end].isdigit():
+      while end < l..(self.data) and self.data[end].isdigit():
         end += 1
       print
       end
@@ -29,14 +29,14 @@ class StringIterator(object):
       self.num -= 1
       __ self.num <= 0:
         self.decodeNext()
-      return ret
-    return " "
+      r.. ret
+    r.. " "
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
-    return self.idx < len(self.data) and self.num > 0
+    r.. self.idx < l..(self.data) and self.num > 0
 
 # Your StringIterator object will be instantiated and called as such:
 # obj = StringIterator(compressedString)

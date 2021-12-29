@@ -1,5 +1,5 @@
-import pytest
-from fibonacci import fib
+_______ pytest
+____ fibonacci _______ fib
 
 # write one or more pytest functions below, they need to start with test_
 
@@ -8,7 +8,7 @@ ___ test_ValueError():
         fib(-1)
 
 ___ test_simple():
-    assert fib(4) == 3
-    assert fib(5) == 5
-    assert fib(6) == 8
-    assert fib(10) == 55
+    ... fib(4) __ 3
+    ... fib(5) __ 5
+    ... fib(6) __ 8
+    ... fib(10) __ 55

@@ -4,9 +4,9 @@ Implementation note:
 The slices function should raise a ValueError with a meaningful error
 message if its length argument doesn't fit the series.
 """
-import unittest
+_______ unittest
 
-from slices import slices
+____ slices _______ slices
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -51,8 +51,8 @@ class SeriesTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

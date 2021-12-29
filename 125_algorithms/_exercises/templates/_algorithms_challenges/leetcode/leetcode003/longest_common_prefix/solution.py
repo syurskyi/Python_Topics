@@ -10,13 +10,13 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
-        __ not strs:
-            return ""
+        __ n.. strs:
+            r.. ""
         res = strs[0]
-        for s in strs[1:]:
-            n = len(s)
-            for i, c in enumerate(res):
-                __ i >= n or res[i] != s[i]:
+        ___ s __ strs[1:]:
+            n = l..(s)
+            ___ i, c __ enumerate(res):
+                __ i >= n o. res[i] != s[i]:
                     res = res[:i]
                     break
-        return res
+        r.. res

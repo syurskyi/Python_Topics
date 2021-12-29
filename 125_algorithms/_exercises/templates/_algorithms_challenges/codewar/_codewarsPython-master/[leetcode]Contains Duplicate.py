@@ -2,10 +2,10 @@ class Solution:
     # @param {integer[]} nums
     # @return {boolean}
     ___ containsDuplicate(self, nums):
-        res = None
-        for n in sorted(nums):
-            __ n == res:
-                return True
-            else:
+        res = N..
+        ___ n __ s..(nums):
+            __ n __ res:
+                r.. True
+            ____:
                 res = n
-        return False                
+        r.. False

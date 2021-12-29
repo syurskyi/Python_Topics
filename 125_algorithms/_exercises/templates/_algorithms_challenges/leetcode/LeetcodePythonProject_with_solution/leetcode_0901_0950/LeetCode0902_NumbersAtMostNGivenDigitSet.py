@@ -6,15 +6,15 @@ class Solution(object):
         :rtype: int
         """
         s = str(N)
-        k = len(s)
+        k = l..(s)
         dp = [0]*k + [1]
-        for i in range(k-1, -1, -1):
-            for d in D:
+        ___ i __ r..(k-1, -1, -1):
+            ___ d __ D:
                 __ d < s[i]:
-                    dp[i] += len(D)**(k-i-1)
-                elif d == s[i]:
+                    dp[i] += l..(D)**(k-i-1)
+                ____ d __ s[i]:
                     dp[i] += dp[i+1]
-        return dp[0] + sum(len(D)**i for i in range(1, k))
+        r.. dp[0] + s..(l..(D)**i ___ i __ r..(1, k))
 
     ___ test(self):
         testCases = [
@@ -23,10 +23,10 @@ class Solution(object):
             # [["1","3","5","7"], 100],
             [["1","4","9"], 1000000000],
         ]
-        for d, n in testCases:
+        ___ d, n __ testCases:
             res = self.atMostNGivenDigitSet(d, n)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

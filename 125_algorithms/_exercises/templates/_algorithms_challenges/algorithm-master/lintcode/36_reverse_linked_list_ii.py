@@ -16,8 +16,8 @@ class Solution:
     @return: The head of the reversed ListNode
     """
     ___ reverseBetween(self, head, m, n):
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         """
         to get to `n`th node from `m`th node needs `n - m` operations
@@ -37,7 +37,7 @@ class Solution:
         `cur` stay at (`m`th -> `n`th) node
         """
         B = cur = A.next
-        pre = nxt = None
+        pre = nxt = N..
         while n >= 0:
             n -= 1
             nxt = B.next
@@ -48,4 +48,4 @@ class Solution:
         A.next = pre
         cur.next = B
 
-        return dummy.next
+        r.. dummy.next

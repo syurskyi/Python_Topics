@@ -11,9 +11,9 @@ class Solution(object):
         :rtype: bool
         """
         d = set()
-        for i in nums:
-            __ i in d:
-                return True
-            else:
+        ___ i __ nums:
+            __ i __ d:
+                r.. True
+            ____:
                 d.add(i)
-        return False
+        r.. False

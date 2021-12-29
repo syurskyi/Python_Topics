@@ -9,17 +9,17 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    for num in nums:
+    ___ num __ nums:
       self.readNum(num)  # stream the input
-    return self.ans
+    r.. self.ans
 
   ___ readNum(self, num):
     """
     :type nums: int
     """
-    __ num == 1:
+    __ num __ 1:
       self.count += 1
-    else:
+    ____:
       self.count = self.count - self.lastCount + 1
       self.lastCount = self.count
     self.ans = max(self.ans, self.count)

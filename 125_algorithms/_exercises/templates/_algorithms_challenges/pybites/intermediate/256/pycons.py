@@ -1,10 +1,10 @@
-import json
-from collections import namedtuple
-from typing import List
+_______ json
+____ collections _______ namedtuple
+____ typing _______ List
 
-import requests
-from bs4 import BeautifulSoup as Soup
-from dateutil.parser import parse
+_______ requests
+____ bs4 _______ BeautifulSoup as Soup
+____ dateutil.parser _______ parse
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
@@ -88,16 +88,16 @@ ___ get_continent(country: str) -> str:
     :returns: The continent of the country
     :rtype: str
     """
-    for continent, countries in country_lookup.items():
-        for c in countries:
-            __ country.lower() in c.lower():
-                return continent
+    ___ continent, countries __ country_lookup.items():
+        ___ c __ countries:
+            __ country.lower() __ c.lower():
+                r.. continent
 
 
 ___ _get_pycon_data():
     """Helper function that retrieves the required PyCon data"""
     with requests.Session() as session:
-        return session.get(PYCON_DATA).content.decode("utf-8")
+        r.. session.get(PYCON_DATA).content.decode("utf-8")
 
 
 ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
@@ -111,11 +111,11 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
 
     events = soup.find_all('script',attrs={'type': 'application/ld+json'})
 
-    pycon_events = []
-    for event in events:
+    pycon_events    # list
+    ___ event __ events:
         event = json.loads(event.getText())
         name = event['name']
-        __ not name.startswith('PyCon'):
+        __ n.. name.startswith('PyCon'):
             continue
         start_date = parse(event['startDate'])
         end_date = parse(event['endDate'])
@@ -125,10 +125,10 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
 
         pycon_event = PyCon(name,city,country,start_date,end_date,url)
 
-        pycon_events.append(pycon_event)
+        pycon_events.a..(pycon_event)
 
 
-    return pycon_events
+    r.. pycon_events
 
     
 
@@ -147,16 +147,16 @@ ___ filter_pycons(pycons: List[PyCon],
     that continent.
     """
 
-    result = []
-    for pycon in pycons:
-        __ (pycon.start_date.year == year) and get_continent(pycon.country) == continent:
-            result.append(pycon)
+    result    # list
+    ___ pycon __ pycons:
+        __ (pycon.start_date.year __ year) and get_continent(pycon.country) __ continent:
+            result.a..(pycon)
 
-    return result
+    r.. result
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     print(filter_pycons(get_pycon_events()))

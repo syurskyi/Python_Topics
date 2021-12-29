@@ -1,28 +1,28 @@
-from user import User
+____ user _______ User
 
 
 ___ test_bob_lowercase():
     bob = User('bob', 'belderbos')
-    assert bob.get_full_name == 'Bob Belderbos'
-    assert bob.username == 'bbelderb'  # lowercase!
-    assert str(bob) == 'Bob Belderbos (bbelderb)'
-    assert repr(bob) == 'User("bob", "belderbos")'
+    ... bob.get_full_name __ 'Bob Belderbos'
+    ... bob.username __ 'bbelderb'  # lowercase!
+    ... str(bob) __ 'Bob Belderbos (bbelderb)'
+    ... repr(bob) __ 'User("bob", "belderbos")'
 
 
 ___ test_julian_mixed_case():
     bob = User('julian', 'Sequeira')
-    assert bob.get_full_name == 'Julian Sequeira'
-    assert bob.username == 'jsequeir'  # lowercase!
-    assert str(bob) == 'Julian Sequeira (jsequeir)'
-    assert repr(bob) == 'User("julian", "Sequeira")'
+    ... bob.get_full_name __ 'Julian Sequeira'
+    ... bob.username __ 'jsequeir'  # lowercase!
+    ... str(bob) __ 'Julian Sequeira (jsequeir)'
+    ... repr(bob) __ 'User("julian", "Sequeira")'
 
 
 ___ test_tania_title_name():
     bob = User('Tania', 'Courageous')
-    assert bob.get_full_name == 'Tania Courageous'  # aka PyBites Ninja
-    assert bob.username == 'tcourage'  # lowercase!
-    assert str(bob) == 'Tania Courageous (tcourage)'
-    assert repr(bob) == 'User("Tania", "Courageous")'
+    ... bob.get_full_name __ 'Tania Courageous'  # aka PyBites Ninja
+    ... bob.username __ 'tcourage'  # lowercase!
+    ... str(bob) __ 'Tania Courageous (tcourage)'
+    ... repr(bob) __ 'User("Tania", "Courageous")'
 
 
 ___ test_noah_use_dunder_in_repr():
@@ -34,9 +34,9 @@ ___ test_noah_use_dunder_in_repr():
         pass
 
     noah = SpecialUser('Noah', 'Kagan')
-    assert noah.get_full_name == 'Noah Kagan'
-    assert noah.username == 'nkagan'  # lowercase!
-    assert str(noah) == 'Noah Kagan (nkagan)'
+    ... noah.get_full_name __ 'Noah Kagan'
+    ... noah.username __ 'nkagan'  # lowercase!
+    ... str(noah) __ 'Noah Kagan (nkagan)'
 
     # it should show the subclass!
-    assert repr(noah) == 'SpecialUser("Noah", "Kagan")'
+    ... repr(noah) __ 'SpecialUser("Noah", "Kagan")'

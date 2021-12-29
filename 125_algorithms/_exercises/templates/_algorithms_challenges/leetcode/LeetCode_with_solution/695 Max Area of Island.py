@@ -25,7 +25,7 @@ Example 2:
 Given the above grid, return 0.
 Note: The length of each dimension in the given grid does not exceed 50.
 """
-from typing import List
+____ typing _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
@@ -36,33 +36,33 @@ class Solution:
         """
         dfs
         """
-        __ not grid:
-            return 0
+        __ n.. grid:
+            r.. 0
 
         ret = 0
-        m, n = len(grid), len(grid[0])
-        visited = [[False for _ in range(n)] for _ in range(m)]
-        for i in range(m):
-            for j in range(n):
-                __ not visited[i][j] and grid[i][j] == 1:
+        m, n = l..(grid), l..(grid[0])
+        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ n.. visited[i][j] and grid[i][j] __ 1:
                     ret = max(ret, self.dfs(grid, i, j, visited))
 
-        return ret
+        r.. ret
 
     ___ dfs(self, grid, i, j, visited) -> int:
         visited[i][j] = True
         ret = 1
-        m, n = len(grid), len(grid[0])
-        for di, dj in dirs:
+        m, n = l..(grid), l..(grid[0])
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and not visited[I][J] and grid[I][J] == 1:
+            __ 0 <= I < m and 0 <= J < n and n.. visited[I][J] and grid[I][J] __ 1:
                 ret += self.dfs(grid, I, J, visited)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],
             [0,0,0,0,0,0,0,1,1,1,0,0,0],
             [0,1,1,0,1,0,0,0,0,0,0,0,0],
@@ -71,4 +71,4 @@ __ __name__ == "__main__":
             [0,0,0,0,0,0,0,0,0,0,1,0,0],
             [0,0,0,0,0,0,0,1,1,1,0,0,0],
             [0,0,0,0,0,0,0,1,1,0,0,0,0]]
-    assert Solution().maxAreaOfIsland(grid) == 6
+    ... Solution().maxAreaOfIsland(grid) __ 6

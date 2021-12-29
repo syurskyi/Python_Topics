@@ -1,22 +1,22 @@
 IGNORE_CHAR = 'b'
 QUIT_CHAR = 'q'
 MAX_NAMES = 5
-import re
+_______ re
 
 
 ___ filter_names(names):
 
     
-    result = []
+    result    # list
 
-    for name in names: 
-        __ name.startswith(IGNORE_CHAR) or len(re.findall(r'\d',name)) >= 1:
+    ___ name __ names:
+        __ name.startswith(IGNORE_CHAR) o. l..(re.findall(r'\d',name)) >= 1:
             continue
 
-        __ name.startswith(QUIT_CHAR) or len(result) >= MAX_NAMES:
+        __ name.startswith(QUIT_CHAR) o. l..(result) >= MAX_NAMES:
             break
 
 
-        result.append(name)
+        result.a..(name)
 
-    return result
+    r.. result

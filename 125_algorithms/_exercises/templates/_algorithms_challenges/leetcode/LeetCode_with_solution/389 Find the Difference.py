@@ -18,7 +18,7 @@ Explanation:
 'e' is the letter that was added.
 
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -31,12 +31,12 @@ class Solution(object):
         :rtype: str
         """
         d = defaultdict(int)
-        for e in s:
+        ___ e __ s:
             d[e] += 1
 
-        for e in t:
-            __ d[e] == 0:
-                return e
+        ___ e __ t:
+            __ d[e] __ 0:
+                r.. e
             d[e] -= 1
 
-        return ''
+        r.. ''

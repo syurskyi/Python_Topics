@@ -45,8 +45,8 @@ class WordDictionary:
         :rtype: None
         """
         cur = self.root
-        for w in word:
-            __ w not in cur.children:
+        ___ w __ word:
+            __ w n.. __ cur.children:
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
@@ -59,26 +59,26 @@ class WordDictionary:
         :type word: str
         :rtype: bool
         """
-        return self.__search(word, self.root)
+        r.. self.__search(word, self.root)
 
     ___ __search(self, word, cur):
-        __ not word:
-            return cur.ended
+        __ n.. word:
+            r.. cur.ended
 
         w = word[0]
         __ w != ".":
-            __ w in cur.children:
-                return self.__search(word[1:], cur.children[w])
-            else:
-                return False
-        else:
-            for child in cur.children.values():
+            __ w __ cur.children:
+                r.. self.__search(word[1:], cur.children[w])
+            ____:
+                r.. False
+        ____:
+            ___ child __ cur.children.values():
                 __ self.__search(word[1:], child):
-                    return True
+                    r.. True
 
-        return False
+        r.. False
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     dic = WordDictionary()
     dic.addWord("a")
-    assert dic.search(".") == True
+    ... dic.search(".") __ True

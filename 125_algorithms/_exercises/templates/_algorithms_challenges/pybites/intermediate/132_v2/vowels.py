@@ -1,4 +1,4 @@
-VOWELS = list('aeiou')
+VOWELS = l..('aeiou')
 
 
 ___ get_word_max_vowels(text):
@@ -7,12 +7,12 @@ ___ get_word_max_vowels(text):
        ('object-oriented', 6)"""
         
     top_vowel_count = float("-inf")
-    top_word = None
+    top_word = N..
         
-    for word in text.lower().split():
+    ___ word __ text.lower().s.. :
         vowel_count = 0
-        for character in word:
-            __ character in VOWELS:
+        ___ character __ word:
+            __ character __ VOWELS:
                 vowel_count += 1
 
         __ vowel_count > top_vowel_count:
@@ -20,7 +20,7 @@ ___ get_word_max_vowels(text):
             top_word = word
 
 
-    return top_word,top_vowel_count
+    r.. top_word,top_vowel_count
 
 
 

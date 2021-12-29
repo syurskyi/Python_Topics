@@ -5,23 +5,23 @@ class Solution(object):
     :type k: int
     :rtype: List[int]
     """
-    __ k == 0:
-      return []
-    ans = [0 for _ in range(len(nums) - k + 1)]
+    __ k __ 0:
+      r.. []
+    ans = [0 ___ _ __ r..(l..(nums) - k + 1)]
     stack = collections.deque([])
-    for i in range(0, k):
+    ___ i __ r..(0, k):
       while stack and nums[stack[-1]] < nums[i]:
         stack.pop()
-      stack.append(i)
+      stack.a..(i)
     ans[0] = nums[stack[0]]
     idx = 0
-    for i in range(k, len(nums)):
+    ___ i __ r..(k, l..(nums)):
       idx += 1
-      __ stack and stack[0] == i - k:
+      __ stack and stack[0] __ i - k:
         stack.popleft()
       while stack and nums[stack[-1]] < nums[i]:
         stack.pop()
-      stack.append(i)
+      stack.a..(i)
       ans[idx] = nums[stack[0]]
 
-    return ans
+    r.. ans

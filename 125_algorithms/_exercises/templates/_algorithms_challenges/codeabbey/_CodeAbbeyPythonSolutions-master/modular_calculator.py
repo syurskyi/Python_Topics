@@ -1,4 +1,4 @@
-values = []
+values    # list
 line = ""
 strValues = ""
 result = 0
@@ -6,12 +6,12 @@ result = 0
 while True:
     line = input()
     __(line):
-        values.append(line.replace(" ", ""))
-    else:
+        values.a..(line.replace(" ", ""))
+    ____:
         break
-mod = int(values[len(values)-1][1:])
+mod = int(values[l..(values)-1][1:])
 
-for i in values:
+___ i __ values:
     strValues += i
     result = eval(strValues)%mod
     strValues = str(result)

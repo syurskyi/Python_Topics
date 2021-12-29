@@ -18,24 +18,24 @@ __author__ = 'Daniel'
 class Solution(object):
     ___ wordPattern(self, pattern, s):
         lst = s.split(" ")
-        __ len(pattern) != len(lst):
-            return False
+        __ l..(pattern) != l..(lst):
+            r.. False
 
         char2word = {}
         words = set()
-        for i in xrange(len(pattern)):
-            __ pattern[i] in char2word:
+        ___ i __ xrange(l..(pattern)):
+            __ pattern[i] __ char2word:
                 __ char2word[pattern[i]] != lst[i]:
-                    return False
-                else:
-                    assert lst[i] in words
-            else:
-                __ lst[i] in words:
-                    return False
+                    r.. False
+                ____:
+                    ... lst[i] __ words
+            ____:
+                __ lst[i] __ words:
+                    r.. False
                 char2word[pattern[i]] = lst[i]
                 words.add(lst[i])
 
-        return True
+        r.. True
 
 
 class OneToOneMap(object):
@@ -47,7 +47,7 @@ class OneToOneMap(object):
         self.m[b] = a
 
     ___ get(self, a):
-        return self.m.get(a)
+        r.. self.m.get(a)
 
 
 class SolutionError(object):
@@ -61,21 +61,21 @@ class SolutionError(object):
         """
         m = OneToOneMap()
         lst = str.split(" ")
-        __ len(pattern) != len(lst):
-            return False
+        __ l..(pattern) != l..(lst):
+            r.. False
 
-        for i in xrange(len(pattern)):
+        ___ i __ xrange(l..(pattern)):
             a = m.get(pattern[i])
             b = m.get(lst[i])
-            __ a is None and b is None:
+            __ a __ N.. and b __ N..
                 m.set(pattern[i], lst[i])
-            elif a is None and b is not None:
-                return False
-            elif a != lst[i]:
-                return False
+            ____ a __ N.. and b __ n.. N..
+                r.. False
+            ____ a != lst[i]:
+                r.. False
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().wordPattern("abba", "dog cat cat dog") == True
+__ __name__ __ "__main__":
+    ... Solution().wordPattern("abba", "dog cat cat dog") __ True

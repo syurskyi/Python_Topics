@@ -26,7 +26,7 @@ class Solution:
         :rtype: int
         """
         digit = num % 9
-        __ digit == 0 and num != 0:
-            return 9
-        else:
-            return digit
+        __ digit __ 0 and num != 0:
+            r.. 9
+        ____:
+            r.. digit

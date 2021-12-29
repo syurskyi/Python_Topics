@@ -28,5 +28,5 @@ c_ DefaultLayout(jp.QLayout):
     ___ move_drawer(widget, msg):
         __ widget.drawer.value:
             widget.drawer.value  F..
-        else:
+        ____:
             widget.drawer.value  T..

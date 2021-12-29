@@ -31,7 +31,7 @@ Note:
 1 <= K <= 10000
 -100 <= A[i] <= 100
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -42,20 +42,20 @@ class Solution:
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
         A.sort()
-        for i in range(len(A)):
-            __ K == 0:
+        ___ i __ r..(l..(A)):
+            __ K __ 0:
                 break
 
             __ A[i] < 0:
                 A[i] *= -1
                 prev = A[i]
                 K -= 1
-            else:
+            ____:
                 __ K % 2 != 0:
                     __ i - 1 >= 0 and A[i-1] < A[i]:
                         A[i-1] *= -1
-                    else:
+                    ____:
                         A[i] *= -1
                 break
 
-        return sum(A)
+        r.. s..(A)

@@ -24,6 +24,6 @@ class Solution:
         lst = s.split(" ")
         try:
             last_word = lst[-1]
-            return len(last_word)
+            r.. l..(last_word)
         except IndexError:
-            return 0
+            r.. 0

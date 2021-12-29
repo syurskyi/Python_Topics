@@ -5,41 +5,41 @@ class Solution(object):
     :rtype: int
     """
     s = "(" + s + ")"
-    stack = []
-    _stack = []
+    stack    # list
+    _stack    # list
     i = 0
-    while i < len(s):
-      __ s[i] == " ":
+    while i < l..(s):
+      __ s[i] __ " ":
         i += 1
-      elif s[i] == "(":
-        _stack.append(len(stack))
+      ____ s[i] __ "(":
+        _stack.a..(l..(stack))
         i += 1
-      elif s[i] == ")":
+      ____ s[i] __ ")":
         start = _stack.pop()
         j = start
         a = stack[j]
-        while j + 2 < len(stack):
+        while j + 2 < l..(stack):
           ops = stack[j + 1]
-          __ ops == "+":
+          __ ops __ "+":
             a = a + stack[j + 2]
-          elif ops == "-":
+          ____ ops __ "-":
             a = a - stack[j + 2]
-          else:
-            return "invalid"
+          ____:
+            r.. "invalid"
           j += 2
-        k = len(stack) - start
+        k = l..(stack) - start
         while k > 0:
           stack.pop()
           k -= 1
-        stack.append(a)
+        stack.a..(a)
         i += 1
-      elif s[i] in "+-":
-        stack.append(s[i])
+      ____ s[i] __ "+-":
+        stack.a..(s[i])
         i += 1
-      else:
+      ____:
         start = i
-        while i < len(s) and s[i] not in "-+() ":
+        while i < l..(s) and s[i] n.. __ "-+() ":
           i += 1
         num = int(s[start:i])
-        stack.append(num)
-    return stack[0]
+        stack.a..(num)
+    r.. stack[0]

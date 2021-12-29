@@ -11,24 +11,24 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for s in strs:
+        ___ s __ strs:
             arr = [0]*26
-            for c in s:
+            ___ c __ s:
                 arr[ord(c)-ord('a')]+=1
-            arr = [str(num) for num in arr]
+            arr = [str(num) ___ num __ arr]
             key = ''.join(arr)
-            __ key in hashmap:
-                hashmap[key].append(s)
-            else:
+            __ key __ hashmap:
+                hashmap[key].a..(s)
+            ____:
                 hashmap[key] = [s]
-        res = []
-        for value in hashmap.values():
-            res.append(value)
-        return res
+        res    # list
+        ___ value __ hashmap.values():
+            res.a..(value)
+        r.. res
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     

@@ -1,6 +1,6 @@
-from datetime import datetime
-import os
-import urllib.request
+____ datetime _______ datetime
+_______ os
+_______ urllib.request
 
 SHUTDOWN_EVENT = 'Shutdown initiated'
 
@@ -26,8 +26,8 @@ ___ convert_to_datetime(line):
        returns:
        datetime(2014, 7, 3, 23, 27, 51)
     """
-    log_fields = line.split()
-    return datetime.strptime(log_fields[1], "%Y-%m-%dT%H:%M:%S")
+    log_fields = line.s..
+    r.. datetime.strptime(log_fields[1], "%Y-%m-%dT%H:%M:%S")
 
 
 ___ time_between_shutdowns(loglines):
@@ -37,13 +37,13 @@ ___ time_between_shutdowns(loglines):
        Return this datetime.timedelta object.
     """
     start_time, end_time = 0, 0
-    for logline in loglines:
-        __ SHUTDOWN_EVENT in logline:
-            __ start_time == 0:
+    ___ logline __ loglines:
+        __ SHUTDOWN_EVENT __ logline:
+            __ start_time __ 0:
                 start_time = convert_to_datetime(logline)
-            else:
+            ____:
                 end_time = convert_to_datetime(logline)
-    return end_time - start_time
+    r.. end_time - start_time
 
 
 print(time_between_shutdowns(loglines))

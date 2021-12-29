@@ -11,28 +11,28 @@ class Solution(object):
         :type needs: List[int]
         :rtype: int
         """
-        self.minPrice = sum([p*n for p, n in zip(price, needs)])
+        self.minPrice = s..([p*n ___ p, n __ zip(price, needs)])
         self.helper(price, special, needs, 0)
-        return self.minPrice
+        r.. self.minPrice
     
     ___ helper(self, price, special, needs, curPrice):
-        n = len(price)
+        n = l..(price)
         added = False
-        for arr in special:
+        ___ arr __ special:
             overflow = False
-            for i in range(n):
+            ___ i __ r..(n):
                 __ needs[i] < arr[i]:
                     overflow = True
                 needs[i] -= arr[i]
-            __ not overflow:
+            __ n.. overflow:
                 added = True
                 self.helper(price, special, needs, curPrice+arr[-1])
-            for i in range(n):
+            ___ i __ r..(n):
                 needs[i] += arr[i]
-        __ not added:
-            for i in range(n):
+        __ n.. added:
+            ___ i __ r..(n):
                 curPrice += needs[i]*price[i]
-            self.minPrice = min(self.minPrice, curPrice)
+            self.minPrice = m..(self.minPrice, curPrice)
     
     ___ test(self):
         testCases = [
@@ -57,7 +57,7 @@ class Solution(object):
                 [1,1],
             ],
         ]
-        for price, special, needs in testCases:
+        ___ price, special, needs __ testCases:
             print('price: %s' % price)
             print('special: %s' % special)
             print('needs: %s' % needs)
@@ -65,5 +65,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

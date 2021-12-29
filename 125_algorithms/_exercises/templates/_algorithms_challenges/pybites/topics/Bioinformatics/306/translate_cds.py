@@ -1,6 +1,6 @@
 # TODO: Add imports
-from Bio.Seq import Seq
-from Bio.Data.CodonTable import TranslationError
+____ Bio.Seq _______ Seq
+____ Bio.Data.CodonTable _______ TranslationError
 
 ___ translate_cds(cds: str, translation_table: str) -> str:
     """
@@ -10,8 +10,8 @@ ___ translate_cds(cds: str, translation_table: str) -> str:
     """
 
     # TODO: Put your code here
-    clean_cds = ''.join([char for char in cds __ char.isalpha()])
-    return str(Seq(clean_cds)
+    clean_cds = ''.join([char ___ char __ cds __ char.isalpha()])
+    r.. str(Seq(clean_cds)
             .upper()
             .translate(table=translation_table, to_stop=True, cds=True)
             )

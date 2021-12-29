@@ -1,56 +1,56 @@
 #take the number of strings that are needed to be checked
-for i in range(int(input())):
+___ i __ r..(int(input())):
     #accept the string
     string = input()
     #store_str is used to store only the brackets
-    store_str = []
+    store_str    # list
     #para list is used to check whether the character in string is equal to elements of para
     para = ['(',')','[',']','<','>','{','}']
     # p Dictionary is used to store the pair of the parenthesis
     p = {'(':')','[':']','<':'>','{':'}'}
     
     #here we remove all alphabets, digits and unwanted special characters
-    for j in string:
+    ___ j __ string:
         #if in para list then only form the list
-        __ j in para:
-            store_str.append(j)
+        __ j __ para:
+            store_str.a..(j)
 
     #First step is to check if there are any pair next to each other if yes then pop those two elements from list
-    for j in range(len(store_str)):
-        for k in range(0, len(store_str)):
+    ___ j __ r..(l..(store_str)):
+        ___ k __ r..(0, l..(store_str)):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             try:
-                __ p[store_str[k]] == str(store_str[k+1]):
+                __ p[store_str[k]] __ str(store_str[k+1]):
                     store_str.pop(k)
                     store_str.pop(k)
             except:
                 pass
-        __ len(store_str) == 1:
+        __ l..(store_str) __ 1:
             print('0',end=' ')
             checker = False
             break
-        elif len(store_str) == 0:
+        ____ l..(store_str) __ 0:
             print('1',end= ' ')
             checker = False
             break
-        else:
+        ____:
             checker = True
             pass
     #Step two is once the element next to each other which were pair are removed.
     #then we are left with nested loops
     #if the starting element and the last element of the list are same then pop, else the give string is not nested properly
     # and the result is 0
-    __ checker == True:
-        while len(store_str) != 1:
+    __ checker __ True:
+        while l..(store_str) != 1:
             try:
-                __ p[store_str[0]] == store_str[-1]:
+                __ p[store_str[0]] __ store_str[-1]:
                     store_str.pop(0)
                     store_str.pop(-1)
-                else:
+                ____:
                     break
             except:
                 break
-        __ len(store_str) == 0:
+        __ l..(store_str) __ 0:
             print('1',end=' ')
-        elif len(store_str) == 1 or len(store_str) > 1:
+        ____ l..(store_str) __ 1 o. l..(store_str) > 1:
             print('0',end=' ')

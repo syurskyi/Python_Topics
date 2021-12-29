@@ -1,5 +1,5 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ round(num1, num2):
     result = num1/num2
@@ -9,14 +9,14 @@ ___ round(num1, num2):
         is_negative = True
     __(result + 0.5 >= int(result+1)):
         result = int(result + 1)
-    else:
+    ____:
         result = int(result)
     
     __(is_negative):
-        return result*-1
-    return result
+        r.. result*-1
+    r.. result
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     num1, num2 = map(int, input().split())
-    results.append(round(num1,num2))
+    results.a..(round(num1,num2))
 print(*results)

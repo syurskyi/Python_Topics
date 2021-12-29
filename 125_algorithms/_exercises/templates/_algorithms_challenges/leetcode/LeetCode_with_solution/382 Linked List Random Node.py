@@ -17,7 +17,7 @@ Solution solution = new Solution(head);
 // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
 solution.getRandom();
 """
-import random
+_______ random
 
 __author__ = 'Daniel'
 
@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution(object):
@@ -48,12 +48,12 @@ class Solution(object):
         cur = self.head.next
         idx = 1
         while cur:
-            __ random.randrange(0, idx+1) == 0:
+            __ random.randrange(0, idx+1) __ 0:
                 ret = cur
             cur = cur.next
             idx += 1
 
-        return ret.val
+        r.. ret.val
 
 
 # Your Solution object will be instantiated and called as such:

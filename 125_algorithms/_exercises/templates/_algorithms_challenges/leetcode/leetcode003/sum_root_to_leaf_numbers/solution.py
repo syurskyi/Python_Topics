@@ -12,15 +12,15 @@ class Solution:
         self.res = 0  # global variable for sum
         num = 0
         self.sn(root, num)
-        return self.res
+        r.. self.res
 
     ___ sn(self, root, num):
-        __ root is None:
-            return
-        elif root.left is None and root.right is None:
+        __ root __ N..
+            r..
+        ____ root.left __ N.. and root.right __ N..
             num += root.val
             self.res += num
-        else:
+        ____:
             num += root.val
             self.sn(root.left, 10 * num)
             self.sn(root.right, 10 * num)

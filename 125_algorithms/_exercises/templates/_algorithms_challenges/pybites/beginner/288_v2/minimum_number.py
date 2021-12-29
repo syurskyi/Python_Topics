@@ -1,17 +1,17 @@
-from typing import List
+____ typing _______ List
 
 
 ___ minimum_number(digits: List[int]) -> int:
     
-    __ not digits:
-        return 0
+    __ n.. digits:
+        r.. 0
 
     unique = set(digits)
 
-    unique = sorted(unique)
+    unique = s..(unique)
 
 
-    return int(''.join(map(str,unique)))
+    r.. int(''.join(map(str,unique)))
 
 
 

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -16,31 +16,31 @@ class Solution(object):
         :type edges: List[List[int]
         :rtype: bool
         """
-        __ not edges:
-            return n in (0, 1)
+        __ n.. edges:
+            r.. n __ (0, 1)
 
-        V = defaultdict(list)
-        for e in edges:
-            V[e[0]].append(e[1])
-            V[e[1]].append(e[0])
+        V = defaultdict(l..)
+        ___ e __ edges:
+            V[e[0]].a..(e[1])
+            V[e[1]].a..(e[0])
 
         visited = set()
         pathset = set()
-        __ not self.dfs(V, edges[0][0], None, pathset, visited):
-            return False
+        __ n.. self.dfs(V, edges[0][0], N.., pathset, visited):
+            r.. False
 
-        return len(visited) == n
+        r.. l..(visited) __ n
 
     ___ dfs(self, V, v, pi, pathset, visited):
-        __ v in pathset:
-            return False
+        __ v __ pathset:
+            r.. False
 
         pathset.add(v)
-        for nbr in V[v]:
+        ___ nbr __ V[v]:
             __ nbr != pi:  # since undirected graph
-                __ not self.dfs(V, nbr, v, pathset, visited):
-                    return False
+                __ n.. self.dfs(V, nbr, v, pathset, visited):
+                    r.. False
 
         pathset.remove(v)
         visited.add(v)
-        return True
+        r.. True

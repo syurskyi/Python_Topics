@@ -28,21 +28,21 @@ class Solution:
         Two passes is easy
         How to do it in one pass
         """
-        __ not word:
-            return True
+        __ n.. word:
+            r.. True
 
         head_upper = word[0].isupper()
 
         # except for the head
         has_lower = False
         has_upper = False
-        for w in word[1:]:
+        ___ w __ word[1:]:
             __ w.isupper():
                 has_upper = True
-                __ has_lower or not head_upper:
-                    return False
-            else:
+                __ has_lower o. n.. head_upper:
+                    r.. False
+            ____:
                 has_lower = True
                 __ has_upper:
-                    return False
-        return True
+                    r.. False
+        r.. True

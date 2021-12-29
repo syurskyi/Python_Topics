@@ -4,36 +4,36 @@
 
 ___ climbingLeaderboard(leaderboard, aliceScores):
     rankings = createRankings(leaderboard)
-    i = len(leaderboard) - 1
-    for score in aliceScores:
+    i = l..(leaderboard) - 1
+    ___ score __ aliceScores:
         flag = True
         while flag:
-            __ i == -1:
+            __ i __ -1:
                 print(1)
                 flag = False
-            elif score < leaderboard[i]:
+            ____ score < leaderboard[i]:
                 print(rankings[i] + 1)
                 flag = False
-            elif score == leaderboard[i]:
+            ____ score __ leaderboard[i]:
                 print(rankings[i])
                 flag = False
-            elif score > leaderboard[i]:
+            ____ score > leaderboard[i]:
                 i -= 1
-    return
+    r..
 
 
 ___ createRankings(leaderboard):
     rankings = [1]
     rank = 1
-    for i in range(1, len(leaderboard)):
+    ___ i __ r..(1, l..(leaderboard)):
         __ leaderboard[i] < leaderboard[i - 1]:
             rank += 1
-        rankings.append(rank)
-    return rankings
+        rankings.a..(rank)
+    r.. rankings
 
 
 lenOfLeaderboard = int(input())
-leaderboard = list(map(int, input().rstrip().split()))
+leaderboard = l..(map(int, input().rstrip().split()))
 lenOfAliceScores = int(input())
-aliceScores = list(map(int, input().rstrip().split()))
+aliceScores = l..(map(int, input().rstrip().split()))
 climbingLeaderboard(leaderboard, aliceScores)

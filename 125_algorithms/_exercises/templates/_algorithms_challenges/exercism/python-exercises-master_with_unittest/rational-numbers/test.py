@@ -1,8 +1,8 @@
-from __future__ import division
+____ __future__ _______ division
 
-import unittest
+_______ unittest
 
-from rational_numbers import Rational
+____ rational_numbers _______ Rational
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -128,5 +128,5 @@ class RationalNumbersTest(unittest.TestCase):
         self.assertEqual(Rational(13, 13), Rational(1, 1))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

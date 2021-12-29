@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from circular_buffer import (
+____ circular_buffer _______ (
     CircularBuffer,
     BufferFullException,
     BufferEmptyException
@@ -31,7 +31,7 @@ class CircularBufferTest(unittest.TestCase):
 
     ___ test_clearing_buffer(self):
         buf = CircularBuffer(3)
-        for c in '123':
+        ___ c __ '123':
             buf.write(c)
         buf.clear()
         with self.assertRaises(BufferEmptyException):
@@ -86,13 +86,13 @@ class CircularBufferTest(unittest.TestCase):
 
     ___ test_alternate_read_and_overwrite(self):
         buf = CircularBuffer(5)
-        for c in '123':
+        ___ c __ '123':
             buf.write(c)
         buf.read()
         buf.read()
         buf.write('4')
         buf.read()
-        for c in '5678':
+        ___ c __ '5678':
             buf.write(c)
         buf.overwrite('A')
         buf.overwrite('B')
@@ -105,5 +105,5 @@ class CircularBufferTest(unittest.TestCase):
             buf.read()
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

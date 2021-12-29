@@ -1,6 +1,6 @@
 #Please download the database file database.db and use Python to access the database table rows that have an area of 2,000,000 or greater. Then export those rows to a CSV file
-import sqlite3
-import pandas
+_______ sqlite3
+_______ pandas
 
 conn  sqlite3.connect("database.db")
 cur  conn.cursor()

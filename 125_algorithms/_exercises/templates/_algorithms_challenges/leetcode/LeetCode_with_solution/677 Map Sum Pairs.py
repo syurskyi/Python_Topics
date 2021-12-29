@@ -27,47 +27,47 @@ class MapSum:
 
         update using delta
         """
-        from collections import defaultdict
+        ____ collections _______ defaultdict
 
         class TrieNode:
-            ___ __init__(self, chr, sum, val):
+            ___ __init__(self, chr, s.., val):
                 self.chr = chr
-                self.sum = sum
+                self.s.. = s..
                 self.val = val
-                self.children = defaultdict(lambda: None)
+                self.children = defaultdict(l....: N..)
 
         class Trie:
             ___ __init__(self):
-                self.root = TrieNode(None, 0, 0)  # dummy root
+                self.root = TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert(self, cur, key, i, val):
-                __ not cur:
+                __ n.. cur:
                     cur = TrieNode(key[i], 0, 0)
 
-                __ i == len(key) - 1:
+                __ i __ l..(key) - 1:
                     delta = val - cur.val
                     cur.val = val
-                else:
+                ____:
                     cur.children[key[i+1]], delta = self.insert(cur.children[key[i+1]], key, i + 1, val)
 
-                cur.sum += delta
-                return cur, delta
+                cur.s.. += delta
+                r.. cur, delta
 
         self.trie = Trie()
 
-    ___ insert(self, key: str, val: int) -> None:
+    ___ insert(self, key: str, val: int) -> N..
         root = self.trie.root
         root.children[key[0]], _ = self.trie.insert(root.children[key[0]], key, 0, val)
 
-    ___ sum(self, prefix: str) -> int:
+    ___ s..(self, prefix: str) -> int:
         node = self.trie.root
-        for a in prefix:
-            __ a not in node.children:
-                return 0
+        ___ a __ prefix:
+            __ a n.. __ node.children:
+                r.. 0
 
             node = node.children[a]
 
-        return node.sum
+        r.. node.s..
 
 
 class MapSum2:
@@ -81,45 +81,45 @@ class MapSum2:
         update using delta
         """
         class TrieNode:
-            ___ __init__(self, chr, sum, val):
+            ___ __init__(self, chr, s.., val):
                 self.chr = chr
-                self.sum = sum
+                self.s.. = s..
                 self.val = val
                 self.children = {}
 
         class Trie:
             ___ __init__(self):
-                self.root = TrieNode(None, 0, 0)  # dummy root
+                self.root = TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert(self, pi, key, i, val):
-                __ key[i] not in pi.children:
+                __ key[i] n.. __ pi.children:
                     cur = TrieNode(key[i], 0, 0)
                     pi.children[key[i]] = cur
 
                 cur = pi.children[key[i]]
-                __ i + 1 < len(key):
+                __ i + 1 < l..(key):
                     cur.children[key[i+1]], delta = self.insert(cur, key, i + 1, val)
-                else:
+                ____:
                     delta = val - cur.val
                     cur.val = val
 
-                cur.sum += delta
-                return cur, delta
+                cur.s.. += delta
+                r.. cur, delta
 
         self.trie = Trie()
 
-    ___ insert(self, key: str, val: int) -> None:
+    ___ insert(self, key: str, val: int) -> N..
         self.trie.insert(self.trie.root, key, 0, val)
 
-    ___ sum(self, prefix: str) -> int:
+    ___ s..(self, prefix: str) -> int:
         node = self.trie.root
-        for a in prefix:
-            __ a not in node.children:
-                return 0
+        ___ a __ prefix:
+            __ a n.. __ node.children:
+                r.. 0
 
             node = node.children[a]
 
-        return node.sum
+        r.. node.s..
 
 
 # Your MapSum object will be instantiated and called as such:

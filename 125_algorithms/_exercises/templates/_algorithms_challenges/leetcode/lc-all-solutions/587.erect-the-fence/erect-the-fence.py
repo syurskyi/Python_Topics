@@ -10,23 +10,23 @@ class Solution(object):
     :type points: List[Point]
     :rtype: List[Point]
     """
-    __ len(points) == 1:
-      return points
+    __ l..(points) __ 1:
+      r.. points
 
     ___ direction(p, q, r):
-      return ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
+      r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
 
-    points.sort(key=lambda x: (x.x, x.y))
-    upper = []
-    lower = []
-    for point in points:
-      while len(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
+    points.sort(key=l.... x: (x.x, x.y))
+    upper    # list
+    lower    # list
+    ___ point __ points:
+      while l..(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
         lower.pop()
-      lower.append(point)
+      lower.a..(point)
 
-    for point in reversed(points):
-      while len(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
+    ___ point __ reversed(points):
+      while l..(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
         upper.pop()
-      upper.append(point)
+      upper.a..(point)
 
-    return list(set(upper[1:] + lower[1:]))
+    r.. l..(set(upper[1:] + lower[1:]))

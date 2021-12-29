@@ -6,10 +6,10 @@ class Solution(object):
     :type q: TreeNode
     :rtype: TreeNode
     """
-    a, b = sorted([p.val, q.val])
-    while not a <= root.val <= b:
+    a, b = s..([p.val, q.val])
+    while n.. a <= root.val <= b:
       __ a > root.val:
         root = root.right
-      else:
+      ____:
         root = root.left
-    return root
+    r.. root

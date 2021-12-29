@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from quotes import extract_quotes
+____ quotes _______ extract_quotes
 
 
 expected_authors = [
@@ -33,18 +33,18 @@ expected_quotes = [
 
 @pytest.fixture(scope="module")
 ___ output_your_code():
-    return extract_quotes()
+    r.. extract_quotes()
 
 
 ___ test_quotes_type(output_your_code):
-    assert type(output_your_code) == dict
+    ... type(output_your_code) __ d..
 
 
 ___ test_quotes_len(output_your_code):
-    assert len(output_your_code) == 10
+    ... l..(output_your_code) __ 10
 
 
 @pytest.mark.parametrize("author, quote",
                          zip(expected_authors, expected_quotes))
 ___ test_quotes_dict_content(author, quote, output_your_code):
-    assert output_your_code.get(author) == quote
+    ... output_your_code.get(author) __ quote

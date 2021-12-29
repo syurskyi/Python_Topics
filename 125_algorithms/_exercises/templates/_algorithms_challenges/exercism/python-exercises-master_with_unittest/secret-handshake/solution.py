@@ -2,49 +2,49 @@ gestures = ['wink', 'double blink', 'close your eyes', 'jump']
 
 
 ___ handshake(s):
-    s = list(sanitize(s))
+    s = l..(sanitize(s))
     s.reverse()
-    seq = []
-    lim = len(s) __ len(s) <= len(gestures) else len(gestures)
-    for i1 in range(lim):
-        __ s[i1] == '1':
-            seq.append(gestures[i1])
-    __ len(s) == 5:
+    seq    # list
+    lim = l..(s) __ l..(s) <= l..(gestures) ____ l..(gestures)
+    ___ i1 __ r..(lim):
+        __ s[i1] __ '1':
+            seq.a..(gestures[i1])
+    __ l..(s) __ 5:
         seq.reverse()
-    return seq
+    r.. seq
 
 
 ___ code(seq):
-    __ not seq or set(seq) - set(gestures):
-        return '0'
+    __ n.. seq o. set(seq) - set(gestures):
+        r.. '0'
     s = find_subseq(seq)
-    __ not s:
+    __ n.. s:
         s = ['1'] + find_subseq(reversed(seq))
-    return "".join(s)
+    r.. "".join(s)
 
 
 ___ sanitize(s):
-    __ not(isinstance(s, int) or isinstance(s, str)):
+    __ n..(isi..(s, int) o. isi..(s, str)):
         raise TypeError('Unknown type')
-    __ isinstance(s, int):
+    __ isi..(s, int):
         __ s < 0:
-            return ""
+            r.. ""
         s = bin(s)[2:]
-    elif set(s) - set(['0', '1']):
-        return ""
-    __ len(s) > 5:
+    ____ set(s) - set(['0', '1']):
+        r.. ""
+    __ l..(s) > 5:
         raise ValueError('Binary string too long')
-    return "0" * (len(gestures) - len(s)) + s
+    r.. "0" * (l..(gestures) - l..(s)) + s
 
 
 ___ find_subseq(seq):
     idx = 0
-    s = []
-    for g in seq:
-        __ g not in gestures[idx:]:
-            return []
+    s    # list
+    ___ g __ seq:
+        __ g n.. __ gestures[idx:]:
+            r.. []
         newidx = gestures.index(g, idx) + 1
         s.extend(['0'] * (newidx - idx - 1) + ['1'])
         idx = newidx
     s.reverse()
-    return s
+    r.. s

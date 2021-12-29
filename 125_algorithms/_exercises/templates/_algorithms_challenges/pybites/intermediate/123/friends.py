@@ -1,8 +1,8 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
-names = 'bob julian tim martin rod sara joyce nick beverly kevin'.split()
-ids = range(len(names))
-users = dict(zip(ids, names))  # 0: bob, 1: julian, etc
+names = 'bob julian tim martin rod sara joyce nick beverly kevin'.s..
+ids = r..(l..(names))
+users = d..(zip(ids, names))  # 0: bob, 1: julian, etc
 
 
 friendships = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3),
@@ -14,20 +14,20 @@ ___ get_friend_with_most_friends(friendships, users=users):
    """Receives the friendships list of user ID pairs,
       parse it to see who has most friends, return a tuple
       of (name_friend_with_most_friends, his_or_her_friends)"""
-   friend_frequency = defaultdict(list)
+   friend_frequency = defaultdict(l..)
 
-   for f1, f2 in friendships:
-      friend_frequency[f1].append(f2)
-      friend_frequency[f2].append(f1)
+   ___ f1, f2 __ friendships:
+      friend_frequency[f1].a..(f2)
+      friend_frequency[f2].a..(f1)
 
    most_friends = 0
    previous_value = 0
-   for key, value in friend_frequency.items():
-      __ len(value) >= previous_value:
+   ___ key, value __ friend_frequency.items():
+      __ l..(value) >= previous_value:
          most_friends = key
-         previous_value = len(value)
+         previous_value = l..(value)
       
-   return (users[most_friends], sorted([users[friend] for friend in friend_frequency[most_friends]]))
+   r.. (users[most_friends], s..([users[friend] ___ friend __ friend_frequency[most_friends]]))
 
 
 # if __name__ == "__main__":

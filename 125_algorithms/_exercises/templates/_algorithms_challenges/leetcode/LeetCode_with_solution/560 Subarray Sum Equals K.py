@@ -11,8 +11,8 @@ The length of the array is in range [1, 20,000].
 The range of numbers in the array is [-1000, 1000] and the range of the integer
 k is [-1e7, 1e7].
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -24,9 +24,9 @@ class Solution:
         ret = 0
         s = 0
         h[s] += 1
-        for n in nums:
+        ___ n __ nums:
             s += n
             ret += h[s - k]
             h[s] += 1
 
-        return ret
+        r.. ret

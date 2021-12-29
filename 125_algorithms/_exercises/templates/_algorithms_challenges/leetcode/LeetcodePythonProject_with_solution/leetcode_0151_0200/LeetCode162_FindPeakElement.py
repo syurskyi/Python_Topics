@@ -10,20 +10,20 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ len(nums) == 1: return 0
-        start, end = 0, len(nums)-1
+        __ l..(nums) __ 1: r.. 0
+        start, end = 0, l..(nums)-1
         while start < end:
             mid = int((start+end)/2)
-            __ (mid == 0 and nums[mid] > nums[mid+1]) or (mid == len(nums)-1 and nums[mid] > nums[mid-1]):
-                return mid
-            else:
+            __ (mid __ 0 and nums[mid] > nums[mid+1]) o. (mid __ l..(nums)-1 and nums[mid] > nums[mid-1]):
+                r.. mid
+            ____:
                 __ nums[mid] > nums[mid-1] and nums[mid] > nums[mid+1]:
-                    return mid
-                elif nums[mid] < nums[mid+1]:
+                    r.. mid
+                ____ nums[mid] < nums[mid+1]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
-        return start
+        r.. start
     
     ___ test(self):
         testCases = [
@@ -31,11 +31,11 @@ class Solution(object):
             [1, 8, 2, 1, 3, 4],
             [2, 9, 3, 1, 0],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.findPeakElement(nums)
             print('result: %s' % (result))
             print('-='*20 + '-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

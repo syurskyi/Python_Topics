@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import unittest
+_______ unittest
 
-from pangram import is_pangram
+____ pangram _______ is_pangram
 
 
 class PangramTests(unittest.TestCase):
@@ -26,5 +26,5 @@ class PangramTests(unittest.TestCase):
                                    ' großen Sylter Deich.'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

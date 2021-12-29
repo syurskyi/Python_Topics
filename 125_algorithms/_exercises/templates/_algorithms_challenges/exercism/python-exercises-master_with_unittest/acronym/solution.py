@@ -1,6 +1,6 @@
-import re
+_______ re
 
 
 ___ abbreviate(words):
     regex = '[A-Z]+[a-z]*|[a-z]+'
-    return ''.join(word[0].upper() for word in re.findall(regex, words))
+    r.. ''.join(word[0].upper() ___ word __ re.findall(regex, words))

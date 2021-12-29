@@ -7,28 +7,28 @@
 
 class BSTIterator(object):
     ___ __init__(self, root):
-        self._arr = []
+        self._arr    # list
         self._inorder(root)
         self._cur = -1
 
     # @return a boolean, whether we have a next smallest number
     ___ hasNext(self):
         __ self._arr[self._cur + 1:]:
-            return True
-        return False
+            r.. True
+        r.. False
 
     # @return an integer, the next smallest number
     ___ next(self):
         __ self.hasNext():
             self._cur += 1
-            return self._arr[self._cur]
+            r.. self._arr[self._cur]
 
     ___ _inorder(self, root):
-        __ root is not None:
-            __ root.left is not None:
+        __ root __ n.. N..
+            __ root.left __ n.. N..
                 self._inorder(root.left)
-            self._arr.append(root.val)
-            __ root.right is not None:
+            self._arr.a..(root.val)
+            __ root.right __ n.. N..
                 self._inorder(root.right)
 
 # Your BSTIterator will be called like this:

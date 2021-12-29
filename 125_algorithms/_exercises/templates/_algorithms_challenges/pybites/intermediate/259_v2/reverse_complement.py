@@ -15,12 +15,12 @@ ___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR):
     
     
     mapping = {}
-    for i in range(2,len(lines)):
-        values = lines[i].split()
+    ___ i __ r..(2,l..(lines)):
+        values = lines[i].s.. 
         mapping[values[0]] = values[-1]
 
 
-    return mapping
+    r.. mapping
 
 
 
@@ -37,14 +37,14 @@ ___ _clean_sequence(sequence, str_table):
     mapping = get_mapping(str_table)
 
     
-    new_string = []
-    for c in sequence:
+    new_string    # list
+    ___ c __ sequence:
         c = c.upper()
-        __ c in mapping:
-            new_string.append(c)
+        __ c __ mapping:
+            new_string.a..(c)
     
 
-    return ''.join(new_string)
+    r.. ''.join(new_string)
 
 
 
@@ -66,7 +66,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
 
 
 
-    return _clean_sequence(sequence,str_table)[::-1]
+    r.. _clean_sequence(sequence,str_table)[::-1]
 
 
 
@@ -85,14 +85,14 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     
     mapping = get_mapping(str_table)
     
-    new_string = []
-    for character in sequence:
+    new_string    # list
+    ___ character __ sequence:
         character = character.upper()
-        __ character in mapping:
-            new_string.append(mapping[character])
+        __ character __ mapping:
+            new_string.a..(mapping[character])
 
 
-    return ''.join(new_string)
+    r.. ''.join(new_string)
 
 
 
@@ -107,10 +107,10 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     """
 
 
-    return complement(reverse(sequence,str_table),str_table)
+    r.. complement(reverse(sequence,str_table),str_table)
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     get_mapping()

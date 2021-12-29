@@ -9,7 +9,7 @@ class TreeNode:
 
 class Solution:
     min_sum = float('inf')
-    node = None
+    node = N..
 
     """
     @param: root: the root of binary tree
@@ -17,11 +17,11 @@ class Solution:
     """
     ___ findSubtree(self, root):
         self._traversal(root)
-        return self.node
+        r.. self.node
 
     ___ _traversal(self, node):
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         left_sum = self._traversal(node.left)
         right_sum = self._traversal(node.right)
@@ -31,4 +31,4 @@ class Solution:
             self.min_sum = subtree_sum
             self.node = node
 
-        return subtree_sum
+        r.. subtree_sum

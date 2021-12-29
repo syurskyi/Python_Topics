@@ -1,10 +1,10 @@
 ___ prime_factors(num):
-    factors = []
+    factors    # list
     i = 2
     while i <= num:
-        __ num % i == 0:
-            factors.append(i)
+        __ num % i __ 0:
+            factors.a..(i)
             num /= i
-        else:
+        ____:
             i += 1
-    return factors
+    r.. factors

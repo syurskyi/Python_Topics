@@ -20,47 +20,47 @@ class Solution:
         :type root: TreeNode
         :rtype: bool
         """
-        stack = []
+        stack    # list
         node = root
-        pre = None
+        pre = N..
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack.pop()
 
             __ pre and node.val <= pre.val:
-                return False
+                r.. False
 
             pre = node
 
             node = node.right
 
-        return True
+        r.. True
 
 
 class Solution:
     ans = True
-    pre = None
+    pre = N..
 
     ___ isValidBST(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        __ not root:
-            return self.ans
+        __ n.. root:
+            r.. self.ans
 
         self.isValidBST(root.left)
 
         __ self.pre and root.val <= self.pre.val:
             self.ans = False
-            return self.ans
+            r.. self.ans
 
         self.pre = root
 
         self.isValidBST(root.right)
 
-        return self.ans
+        r.. self.ans

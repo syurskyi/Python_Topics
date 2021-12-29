@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from protein_translation import proteins
+____ protein_translation _______ proteins
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.1
@@ -11,30 +11,30 @@ class ProteinTranslationTest(unittest.TestCase):
         self.assertEqual(proteins('AUG'), ['Methionine'])
 
     ___ test_identifies_Phenylalanine_codons(self):
-        for codon in ['UUU', 'UUC']:
+        ___ codon __ ['UUU', 'UUC']:
             self.assertEqual(proteins(codon), ['Phenylalanine'])
 
     ___ test_identifies_Leucine_codons(self):
-        for codon in ['UUA', 'UUG']:
+        ___ codon __ ['UUA', 'UUG']:
             self.assertEqual(proteins(codon), ['Leucine'])
 
     ___ test_identifies_Serine_codons(self):
-        for codon in ['UCU', 'UCC', 'UCA', 'UCG']:
+        ___ codon __ ['UCU', 'UCC', 'UCA', 'UCG']:
             self.assertEqual(proteins(codon), ['Serine'])
 
     ___ test_identifies_Tyrosine_codons(self):
-        for codon in ['UAU', 'UAC']:
+        ___ codon __ ['UAU', 'UAC']:
             self.assertEqual(proteins(codon), ['Tyrosine'])
 
     ___ test_identifies_Cysteine_codons(self):
-        for codon in ['UGU', 'UGC']:
+        ___ codon __ ['UGU', 'UGC']:
             self.assertEqual(proteins(codon), ['Cysteine'])
 
     ___ test_identifies_Tryptophan_codons(self):
         self.assertEqual(proteins('UGG'), ['Tryptophan'])
 
     ___ test_identifies_stop_codons(self):
-        for codon in ['UAA', 'UAG', 'UGA']:
+        ___ codon __ ['UAA', 'UAG', 'UGA']:
             self.assertEqual(proteins(codon), [])
 
     ___ test_translates_rna_strand_into_correct_protein_list(self):
@@ -44,7 +44,7 @@ class ProteinTranslationTest(unittest.TestCase):
 
     ___ test_stops_translation_if_stop_codon_at_beginning_of_sequence(self):
         strand = 'UAGUGG'
-        expected = []
+        expected    # list
         self.assertEqual(proteins(strand), expected)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_two_codon_sequence(
@@ -72,5 +72,5 @@ class ProteinTranslationTest(unittest.TestCase):
         self.assertEqual(proteins(strand), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -10,16 +10,16 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        __ n <= 0: return False
-        return bool(n&(n-1)==0)
+        __ n <= 0: r.. False
+        r.. bool(n&(n-1)__0)
     
     ___ isPowerOfTwoSlow(self, n):
         """
         :type n: int
         :rtype: bool
         """
-        __ n == 0: return False
-        __ n == 1: return True
+        __ n __ 0: r.. False
+        __ n __ 1: r.. True
         __ n % 2 != 0:
-            return False
-        return self.isPowerOfTwo(n/2)
+            r.. False
+        r.. self.isPowerOfTwo(n/2)

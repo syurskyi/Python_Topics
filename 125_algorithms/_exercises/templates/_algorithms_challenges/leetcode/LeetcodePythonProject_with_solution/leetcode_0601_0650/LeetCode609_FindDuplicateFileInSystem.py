@@ -10,31 +10,31 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for path in paths:
+        ___ path __ paths:
             arr = path.split(' ')
             folder = arr[0]
             files = arr[1:]
-            for file in files:
+            ___ file __ files:
                 arr0 = file.split('(')
                 content = arr0[1][:-1]
                 filename = arr0[0]
                 fullPath = folder+'/'+filename
                 hashmap[content] = hashmap.get(content, []) + [fullPath]
-        res = []
-        for _, value in hashmap.items():
-            __ len(value) > 1:
-                res.append(value)
-        return res
+        res    # list
+        ___ _, value __ hashmap.items():
+            __ l..(value) > 1:
+                res.a..(value)
+        r.. res
     
     ___ test(self):
         testCases = [
             ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"],
         ]
-        for paths in testCases:
+        ___ paths __ testCases:
             print('paths: %s' % paths)
             result = self.findDuplicate(paths)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

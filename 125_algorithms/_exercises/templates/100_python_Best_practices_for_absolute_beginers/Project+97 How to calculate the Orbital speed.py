@@ -1,4 +1,4 @@
-from random import random
+____ random _______ random
 
 x  random()*900+100
 x  i..(x)

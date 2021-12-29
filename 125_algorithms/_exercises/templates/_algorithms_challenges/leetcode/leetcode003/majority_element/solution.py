@@ -12,13 +12,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        m = len(nums) / 2
+        m = l..(nums) / 2
         d = {}
-        for k in nums:
-            __ k not in d:
+        ___ k __ nums:
+            __ k n.. __ d:
                 d[k] = 1
-            else:
+            ____:
                 d[k] += 1
-        for k in d:
+        ___ k __ d:
             __ d[k] > m:
-                return k
+                r.. k

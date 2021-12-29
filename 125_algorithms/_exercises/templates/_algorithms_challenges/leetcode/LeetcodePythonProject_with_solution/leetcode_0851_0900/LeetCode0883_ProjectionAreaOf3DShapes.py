@@ -9,21 +9,21 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        n = len(grid)
+        n = l..(grid)
         res = 0
-        for i in range(n):
+        ___ i __ r..(n):
             maxNum = 0
-            for j in range(n):
+            ___ j __ r..(n):
                 __ grid[i][j]:
                     res += 1
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
-        for j in range(n):
+        ___ j __ r..(n):
             maxNum = 0
-            for i in range(n):
+            ___ i __ r..(n):
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -31,10 +31,10 @@ class Solution(object):
             [[1,0],[0,2]],
             [[1,1,1],[1,0,1],[1,1,1]],
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             res = self.projectionArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

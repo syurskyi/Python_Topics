@@ -11,22 +11,22 @@ class Solution(object):
         :type c: int
         :rtype: List[List[int]]
         """
-        __ not nums or not nums[0]: return nums
-        m, n = len(nums), len(nums[0])
+        __ n.. nums o. n.. nums[0]: r.. nums
+        m, n = l..(nums), l..(nums[0])
         __ m*n != r*c:
-            return nums
-        res = []
+            r.. nums
+        res    # list
         k, l = 0, 0
-        for _ in range(r):
-            cur = []
-            for _ in range(c):
-                cur.append(nums[k][l])
+        ___ _ __ r..(r):
+            cur    # list
+            ___ _ __ r..(c):
+                cur.a..(nums[k][l])
                 l += 1
-                __ l == n:
+                __ l __ n:
                     l = 0
                     k += 1
-            res.append(cur)
-        return res
+            res.a..(cur)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -43,15 +43,15 @@ class Solution(object):
                 4,
             ],
         ]
-        for nums, r, c in testCases:
+        ___ nums, r, c __ testCases:
             print('nums:')
-            print('\n'.join([str(row) for row in nums]))
+            print('\n'.join([str(row) ___ row __ nums]))
             print('r: %s' % r)
             print('c: %s' % c)
             result = self.matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row __ result]))
             print('-='*30)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

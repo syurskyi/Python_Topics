@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from clock import Clock
+____ clock _______ Clock
 
 
 class ClockTest(unittest.TestCase):
@@ -158,5 +158,5 @@ class ClockTest(unittest.TestCase):
         self.assertEqual(Clock(18, 7), Clock(-54, -11513))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

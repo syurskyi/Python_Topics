@@ -16,7 +16,7 @@ Explanation: The longest chain is [1,2] -> [3,4]
 Note:
 The number of given pairs will be in the range [1, 1000].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -27,19 +27,19 @@ class Solution:
         similar to 435 Non-overlaping interval
         O(nlg n) + O(n)
         """
-        pairs.sort(key=lambda x: x[1])
-        n = len(pairs)
+        pairs.sort(key=l.... x: x[1])
+        n = l..(pairs)
 
         ret = 0
         cur_end = -float("inf")
-        for i in range(n):
+        ___ i __ r..(n):
             __ pairs[i][0] <= cur_end:
                 continue
 
             cur_end = pairs[i][1]
             ret += 1
 
-        return ret
+        r.. ret
 
     ___ findLongestChain2(self, pairs: List[List[int]]) -> int:
         """
@@ -47,8 +47,8 @@ class Solution:
         sort by the interval end
         similar to 435 Non-overlaping interval
         """
-        pairs.sort(key=lambda x: x[1])
-        n = len(pairs)
+        pairs.sort(key=l.... x: x[1])
+        n = l..(pairs)
 
         ret = 0
         i = 0
@@ -60,7 +60,7 @@ class Solution:
             while i < n and pairs[i][0] <= cur_end:
                 i += 1
 
-        return ret
+        r.. ret
 
 
 class Solution2:
@@ -70,16 +70,16 @@ class Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.sort(key=lambda x: tuple(x))
-        n = len(pairs)
-        F = [1 for _ in range(n)]
-        for i in range(n):
-            for j in range(i):
+        pairs.sort(key=l.... x: tuple(x))
+        n = l..(pairs)
+        F = [1 ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            ___ j __ r..(i):
                 __ pairs[j][1] < pairs[i][0]:
                     F[i] = max(F[i], F[j] + 1)
 
-        return max(F)
+        r.. max(F)
 
 
-__ __name__ == "__main__":
-    assert Solution().findLongestChain([[1,2], [2,3], [3,4]]) == 2
+__ __name__ __ "__main__":
+    ... Solution().findLongestChain([[1,2], [2,3], [3,4]]) __ 2

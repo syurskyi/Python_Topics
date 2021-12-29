@@ -11,8 +11,8 @@ class Solution(object):
       v = mid * mid
       __ v < x:
         lo = mid + 1
-      elif v > x:
+      ____ v > x:
         hi = mid - 1
-      else:
-        return mid
-    return hi
+      ____:
+        r.. mid
+    r.. hi

@@ -1,5 +1,5 @@
-from collections import namedtuple
-from operator import attrgetter
+____ collections _______ namedtuple
+____ operator _______ attrgetter
 
 Book = namedtuple('Book', 'title authors pages published')
 
@@ -29,16 +29,16 @@ books = [
 # all functions return books sorted in ascending order.
 
 ___ sort_books_by_len_of_title(books=books):
-    return sorted(books, key=attrgetter('title'), reverse=True)
+    r.. s..(books, key=attrgetter('title'), r.._T..
 
 
 ___ sort_books_by_first_authors_last_name(books=books):
-    return sorted(books, key=attrgetter('authors'), reverse=True)
+    r.. s..(books, key=attrgetter('authors'), r.._T..
 
 
 ___ sort_books_by_number_of_page(books=books):
-    return sorted(books, key=attrgetter('pages'))
+    r.. s..(books, key=attrgetter('pages'))
 
 
 ___ sort_books_by_published_date(books=books):
-    return sorted(books, key=attrgetter('published'))
+    r.. s..(books, key=attrgetter('published'))

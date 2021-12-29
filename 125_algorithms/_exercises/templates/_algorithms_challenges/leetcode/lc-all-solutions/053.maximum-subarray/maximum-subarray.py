@@ -4,10 +4,10 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    __ len(nums) == 0:
-      return 0
+    __ l..(nums) __ 0:
+      r.. 0
     preSum = maxSum = nums[0]
-    for i in range(1, len(nums)):
+    ___ i __ r..(1, l..(nums)):
       preSum = max(preSum + nums[i], nums[i])
       maxSum = max(maxSum, preSum)
-    return maxSum
+    r.. maxSum

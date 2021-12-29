@@ -23,15 +23,15 @@ class Solution:
         F_i = max(F_{i-2-k}+A[i] for k \in [0, i-2]),
         Then time complexity is quadratic
         """
-        n = len(nums)
-        f = [0 for _ in xrange(n+2)]
-        for i in xrange(2, n+2):
+        n = l..(nums)
+        f = [0 ___ _ __ xrange(n+2)]
+        ___ i __ xrange(2, n+2):
             f[i] = max(
                 f[i-1],
                 f[i-2] + nums[i-2]
             )
 
-        return f[-1]
+        r.. f[-1]
 
 
 

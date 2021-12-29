@@ -80,25 +80,25 @@ class Solution:
         :type target: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not target:
-            return
+        __ n.. root o. n.. target:
+            r..
 
-        ans = None
+        ans = N..
 
         __ target.right:
             ans = target.right
             while ans and ans.left:
                 ans = ans.left
-            return ans
+            r.. ans
 
         while root and target.val != root.val:
             __ target.val < root.val:
                 ans = root
                 root = root.left
-            else:
+            ____:
                 root = root.right
 
-        return ans
+        r.. ans
 
 
 class Solution2:
@@ -113,23 +113,23 @@ class Solution2:
         :type target: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not target:
-            return
+        __ n.. root o. n.. target:
+            r..
 
-        stack = []
+        stack    # list
         node = root
         got_target = False
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack.pop()
 
             __ got_target:
-                return node
-            __ node.val == target.val:
+                r.. node
+            __ node.val __ target.val:
                 got_target = True
 
             node = node.right
@@ -149,23 +149,23 @@ class Solution3:
         :type target: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not target:
-            return
+        __ n.. root o. n.. target:
+            r..
 
-        ans = None
+        ans = N..
 
         __ target.right:
             ans = target.right
             while ans and ans.left:
                 ans = ans.left
-            return ans
+            r.. ans
 
         ans = target.parent
-        while ans and target is ans.right:
+        while ans and target __ ans.right:
             target = ans
             ans = ans.parent
 
-        return ans
+        r.. ans
 
 
 class Solution4:
@@ -182,17 +182,17 @@ class Solution4:
         :type target: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not target:
-            return
+        __ n.. root o. n.. target:
+            r..
 
         __ target.right:
             ans = target.right
             while ans and ans.left:
                 ans = ans.left
-            return ans
+            r.. ans
 
         ans = target.parent
         while ans and ans.val < target.val:
             ans = ans.parent
 
-        return ans
+        r.. ans

@@ -1,11 +1,11 @@
-import os
+_______ os
 
-paths  [os.path.join(os.getcwd(), f'dir_{str(i).zfill(2)}') for i in range(1, 14)]
+paths  [os.path.join(os.getcwd(), f'dir_{str(i).zfill(2)}') ___ i __ r..(1, 14)]
 
-for path in paths:
-    __ not os.path.exists(path):
+___ path __ paths:
+    __ n.. os.path.exists(path):
         os.mkdir(path)
 
 os.rmdir(os.path.join(os.getcwd(), 'dir_13'))
-fnames  [fname for fname in sorted(os.listdir()) __ len(fname) __ 6]
+fnames  [fname ___ fname __ s..(os.listdir()) __ l..(fname) __ 6]
 print(fnames)

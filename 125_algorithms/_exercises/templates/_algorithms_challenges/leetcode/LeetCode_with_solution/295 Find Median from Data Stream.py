@@ -20,7 +20,7 @@ findMedian() -> 1.5
 add(3)
 findMedian() -> 2
 """
-import heapq
+_______ heapq
 
 __author__ = 'Daniel'
 
@@ -34,39 +34,39 @@ class DualHeap(object):
           Δ      Δ
          max    min
         """
-        self.min_h = []
-        self.max_h = []
+        self.min_h    # list
+        self.max_h    # list
 
     ___ insert(self, num):
-        __ not self.min_h or num > self.min_h[0]:
+        __ n.. self.min_h o. num > self.min_h[0]:
             heapq.heappush(self.min_h, num)
-        else:
+        ____:
             heapq.heappush(self.max_h, -num)
         self.balance()
 
     ___ balance(self):
-        l1 = len(self.min_h)
-        l2 = len(self.max_h)
+        l1 = l..(self.min_h)
+        l2 = l..(self.max_h)
         __ abs(l1 - l2) <= 1:
-            return
-        elif l1 - l2 > 1:
+            r..
+        ____ l1 - l2 > 1:
             heapq.heappush(self.max_h, -heapq.heappop(self.min_h))
             self.balance()
-        else:
+        ____:
             heapq.heappush(self.min_h, -heapq.heappop(self.max_h))
             self.balance()
 
     ___ get_median(self):
-        l1 = len(self.min_h)
-        l2 = len(self.max_h)
-        __ (l1 + l2) % 2 == 1:
+        l1 = l..(self.min_h)
+        l2 = l..(self.max_h)
+        __ (l1 + l2) % 2 __ 1:
             m = (l1 + l2) / 2  # median index, equivalent to (l1 + l2 - 1) / 2
             __ m < l2:
-                return -self.max_h[0]
-            else:
-                return self.min_h[0]
-        else:
-            return (-self.max_h[0] + self.min_h[0]) / 2.0
+                r.. -self.max_h[0]
+            ____:
+                r.. self.min_h[0]
+        ____:
+            r.. (-self.max_h[0] + self.min_h[0]) / 2.0
 
 
 class MedianFinder(object):
@@ -89,4 +89,4 @@ class MedianFinder(object):
         Returns the median of current data stream
         :rtype: float
         """
-        return self.dh.get_median()
+        r.. self.dh.get_median()

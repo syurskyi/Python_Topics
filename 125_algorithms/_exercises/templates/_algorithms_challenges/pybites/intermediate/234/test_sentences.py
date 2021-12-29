@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from sentences import capitalize_sentences
+____ sentences _______ capitalize_sentences
 
 lorem_ipsum = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor!
@@ -32,4 +32,4 @@ text1, text2, text3 = lorem_ipsum[:5], lorem_ipsum[5:13], lorem_ipsum[13:]
 ___ test_capitalize_sentences(text):
     expected = " ".join(text)
     arg = expected.lower()
-    assert capitalize_sentences(arg) == expected
+    ... capitalize_sentences(arg) __ expected

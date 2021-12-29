@@ -7,37 +7,37 @@ class Solution(object):
     """
 
     ___ dfs(w, start, res):
-      res.append(w)
-      for i in range(start, len(w)):
-        for l in reversed(range(1, len(w) - i + 1)):
+      res.a..(w)
+      ___ i __ r..(start, l..(w)):
+        ___ l __ reversed(r..(1, l..(w) - i + 1)):
           dfs(w[:i] + [str(l)] + w[i + l:], i + 2, res)
 
     ___ match(src, dest):
       i = 0
-      for c in src:
+      ___ c __ src:
         __ c.isdigit():
           jump = int(c)
           i += jump
-        else:
+        ____:
           __ c != dest[i]:
-            return False
+            r.. False
           i += 1
-      return True
+      r.. True
 
-    __ not dictionary:
-      return str(len(target))
-    wordLen = len(target)
-    res = []
-    dfs(list(target), 0, res)
-    res.sort(key=lambda x: len(x))
-    dictionary = filter(lambda s: len(s) == wordLen, dictionary)
+    __ n.. dictionary:
+      r.. str(l..(target))
+    wordLen = l..(target)
+    res    # list
+    dfs(l..(target), 0, res)
+    res.sort(key=l.... x: l..(x))
+    dictionary = filter(l.... s: l..(s) __ wordLen, dictionary)
 
-    for w in res:
+    ___ w __ res:
       allMiss = True
-      for d in dictionary:
+      ___ d __ dictionary:
         __ match(w, d):
           allMiss = False
           break
       __ allMiss:
-        return "".join(w)
-    return None
+        r.. "".join(w)
+    r.. N..

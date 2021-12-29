@@ -1,7 +1,7 @@
-from typing import List
+____ typing _______ List
 
 ___ to_lower(in_list):
-        return [word.lower() for word in in_list]
+        r.. [word.lower() ___ word __ in_list]
 
 ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
     """
@@ -12,9 +12,9 @@ ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
             If there are duplicate words in the results, just choose one word. 
             Returned words should be sorted by word's length.
     """
-    s1 = [word.lower() for word in sentence1]
-    s2 = [word.lower() for word in sentence2]
-    return sorted(set(s1).intersection(s2), key=len)
+    s1 = [word.lower() ___ word __ sentence1]
+    s2 = [word.lower() ___ word __ sentence2]
+    r.. s..(set(s1).intersection(s2), key=l..)
 
 
 sentence1 = ['To', 'be', 'or', 'not', 'to', 'be',

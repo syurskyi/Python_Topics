@@ -1,20 +1,20 @@
-from pcc_stats import (diehard_pybites,
+____ pcc_stats _______ (diehard_pybites,
                        gen_files, Stats)
 
 
 ___ test_gen_files():
-    ret = list(gen_files())
-    assert ret[:3] == ["03/mridubhatnagar",
+    ret = l..(gen_files())
+    ... ret[:3] __ ["03/mridubhatnagar",
                        "03/aleksandarknezevic",
                        "04/blair_young"]
-    assert ret[-3:] == ["22/wonderfulboyx",
+    ... ret[-3:] __ ["22/wonderfulboyx",
                         "25/bbelderbos",
                         "25/santiagobenitez"]
 
 
 ___ test_diehard_pybites():
     ret = diehard_pybites()
-    assert ret == Stats(user='clamytoe', challenge=('01', 7))
+    ... ret __ Stats(user='clamytoe', challenge=('01', 7))
 
 
 ___ test_diehard_other_input():
@@ -28,4 +28,4 @@ ___ test_diehard_other_input():
             "23/santiagobenitez",
             "07/santiagobenitez"
         ])
-    assert ret == Stats(user='santiagobenitez', challenge=('25', 2))
+    ... ret __ Stats(user='santiagobenitez', challenge=('25', 2))

@@ -14,19 +14,19 @@ class Solution(object):
     """
 
     ___ serialize(root):
-      ans = []
+      ans    # list
       stack = [(root, 1)]
       while stack:
         node, p = stack.pop()
-        __ not node:
-          ans.append("#")
+        __ n.. node:
+          ans.a..("#")
           continue
-        __ p == 0:
-          ans.append("|" + str(node.val))
-        else:
-          stack.append((node.right, 1))
-          stack.append((node.left, 1))
-          stack.append((node, 0))
-      return ",".join(ans)
+        __ p __ 0:
+          ans.a..("|" + str(node.val))
+        ____:
+          stack.a..((node.right, 1))
+          stack.a..((node.left, 1))
+          stack.a..((node, 0))
+      r.. ",".join(ans)
 
-    return serialize(t) in serialize(s)
+    r.. serialize(t) __ serialize(s)

@@ -19,8 +19,8 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
@@ -28,36 +28,36 @@ dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 class Solution:
     ___ exist(self, board: List[List[str]], word: str) -> bool:
-        m, n = len(board), len(board[0])
-        visited = defaultdict(lambda: defaultdict(bool))
-        for i in range(m):
-            for j in range(n):
-                __ board[i][j] == word[0]:
+        m, n = l..(board), l..(board[0])
+        visited = defaultdict(l....: defaultdict(bool))
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ board[i][j] __ word[0]:
                     __ self.dfs(board, visited, i, j, word, 1):
-                        return True
+                        r.. True
 
-        return False
+        r.. False
 
     ___ dfs(self, board, visited, i, j, word, idx):
         visited[i][j] = True
-        __ idx >= len(word):
-            return True
+        __ idx >= l..(word):
+            r.. True
 
-        m, n = len(board), len(board[0])
-        for di, dj in dirs:
+        m, n = l..(board), l..(board[0])
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and not visited[I][J] and board[I][J] == word[idx]:
+            __ 0 <= I < m and 0 <= J < n and n.. visited[I][J] and board[I][J] __ word[idx]:
                 __ self.dfs(board, visited, I, J, word, idx + 1):
-                    return True
+                    r.. True
 
         visited[i][j] = False  # restore
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().exist([
+__ __name__ __ "__main__":
+    ... Solution().exist([
         ["A","B","C","E"],
         ["S","F","E","S"],
         ["A","D","E","E"]
-    ], "ABCESEEEFS") == True
+    ], "ABCESEEEFS") __ True

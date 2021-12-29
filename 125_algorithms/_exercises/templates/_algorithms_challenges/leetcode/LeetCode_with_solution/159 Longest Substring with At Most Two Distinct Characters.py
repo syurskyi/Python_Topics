@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -17,19 +17,19 @@ class Solution(object):
         i = 0
         j = 0
         maxa = 0
-        for j in xrange(len(s)):
+        ___ j __ xrange(l..(s)):
             m[s[j]] += 1
-            while len(m) > 2:
+            while l..(m) > 2:
                 m[s[i]] -= 1
-                __ m[s[i]] == 0:
+                __ m[s[i]] __ 0:
                     del m[s[i]]
 
                 i += 1
 
             maxa = max(maxa, j-i+1)
 
-        return maxa
+        r.. maxa
 
 
-__ __name__ == "__main__":
-    assert Solution().lengthOfLongestSubstringTwoDistinct("ecebaaaaaacdbb") == 7
+__ __name__ __ "__main__":
+    ... Solution().lengthOfLongestSubstringTwoDistinct("ecebaaaaaacdbb") __ 7

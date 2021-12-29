@@ -40,22 +40,22 @@ class Solution:
         """
         dfs
         """
-        candidates = set(range(1, N+1))
+        candidates = set(r..(1, N+1))
         ret = self.dfs(candidates, 1, N)
-        return ret
+        r.. ret
 
     ___ dfs(self, candidates, i, N):
         __ i > N:
-            return 1
+            r.. 1
 
         ret = 0
-        for c in candidates:
-            __ c % i == 0 or i % c == 0:
+        ___ c __ candidates:
+            __ c % i __ 0 o. i % c __ 0:
                 candidates.remove(c)
                 ret += self.dfs(candidates, i+1, N)
                 candidates.add(c)
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().countArrangement(2) == 2
+__ __name__ __ "__main__":
+    ... Solution().countArrangement(2) __ 2

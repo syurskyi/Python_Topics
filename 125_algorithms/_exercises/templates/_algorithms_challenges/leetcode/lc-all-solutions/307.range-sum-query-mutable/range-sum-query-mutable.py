@@ -4,8 +4,8 @@ class STNode(object):
     self.start = start
     self.end = end
     self.total = 0
-    self.left = None
-    self.right = None
+    self.left = N..
+    self.right = N..
 
 
 class SegmentedTree(object):
@@ -14,12 +14,12 @@ class SegmentedTree(object):
 
   ___ buildTree(self, nums, start, end):
     __ start > end:
-      return None
+      r.. N..
 
-    __ start == end:
+    __ start __ end:
       node = STNode(start, end)
       node.total = nums[start]
-      return node
+      r.. node
 
     mid = start + (end - start) / 2
 
@@ -27,38 +27,38 @@ class SegmentedTree(object):
     root.left = self.buildTree(nums, start, mid)
     root.right = self.buildTree(nums, mid + 1, end)
     root.total = root.left.total + root.right.total
-    return root
+    r.. root
 
   ___ updateVal(self, i, val):
     ___ updateVal(root, i, val):
-      __ root.start == root.end:
+      __ root.start __ root.end:
         root.total = val
-        return val
+        r.. val
       mid = root.start + (root.end - root.start) / 2
       __ i <= mid:
         updateVal(root.left, i, val)
-      else:
+      ____:
         updateVal(root.right, i, val)
 
       root.total = root.left.total + root.right.total
-      return root.total
+      r.. root.total
 
-    return updateVal(self.root, i, val)
+    r.. updateVal(self.root, i, val)
 
   ___ sumRange(self, i, j):
     ___ rangeSum(root, start, end):
-      __ root.start == start and root.end == end:
-        return root.total
+      __ root.start __ start and root.end __ end:
+        r.. root.total
 
       mid = root.start + (root.end - root.start) / 2
       __ j <= mid:
-        return rangeSum(root.left, start, end)
-      elif i >= mid + 1:
-        return rangeSum(root.right, start, end)
-      else:
-        return rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)
+        r.. rangeSum(root.left, start, end)
+      ____ i >= mid + 1:
+        r.. rangeSum(root.right, start, end)
+      ____:
+        r.. rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)
 
-    return rangeSum(self.root, i, j)
+    r.. rangeSum(self.root, i, j)
 
 
 class NumArray(object):
@@ -67,7 +67,7 @@ class NumArray(object):
     initialize your data structure here.
     :type nums: List[int]
     """
-    self.stTree = SegmentedTree(nums, 0, len(nums) - 1)
+    self.stTree = SegmentedTree(nums, 0, l..(nums) - 1)
 
   ___ update(self, i, val):
     """
@@ -75,7 +75,7 @@ class NumArray(object):
     :type val: int
     :rtype: int
     """
-    return self.stTree.updateVal(i, val)
+    r.. self.stTree.updateVal(i, val)
 
   ___ sumRange(self, i, j):
     """
@@ -84,7 +84,7 @@ class NumArray(object):
     :type j: int
     :rtype: int
     """
-    return self.stTree.sumRange(i, j)
+    r.. self.stTree.sumRange(i, j)
 
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)

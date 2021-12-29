@@ -9,17 +9,17 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        __ not height: return 0
-        n = len(height)
+        __ n.. height: r.. 0
+        n = l..(height)
         left = [0]*n
         left[0] = height[0]
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             left[i] = max(height[i], left[i-1])
         right = [0]*n
         right[-1] = height[-1]
-        for i in range(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1):
             right[i] = max(height[i], right[i+1])
         res = 0
-        for i in range(n):
-            res += min(left[i], right[i])-height[i]
-        return res
+        ___ i __ r..(n):
+            res += m..(left[i], right[i])-height[i]
+        r.. res

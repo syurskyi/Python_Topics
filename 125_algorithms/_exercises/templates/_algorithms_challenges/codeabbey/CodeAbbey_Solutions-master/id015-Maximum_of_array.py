@@ -1,8 +1,8 @@
 ___ findRange(numbers):
-    answer = []
+    answer    # list
     minNum, maxNum = 0,0
-    numbers = numbers.split()
-    for x in numbers:
+    numbers = numbers.s..
+    ___ x __ numbers:
         __ int(x) < int(minNum):
             minNum = x
         __ int(x) > int(maxNum):

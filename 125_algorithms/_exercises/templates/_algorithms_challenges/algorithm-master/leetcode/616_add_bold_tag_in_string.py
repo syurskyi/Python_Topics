@@ -22,20 +22,20 @@ class Solution:
         :type words: List[str]
         :rtype: str
         """
-        __ not s or not words:
-            return ''
+        __ n.. s o. n.. words:
+            r.. ''
 
         TMPL = '<b>{}</b>'
-        n = len(s)
-        ans = []
+        n = l..(s)
+        ans    # list
         is_bold = [False] * n
         left = right = 0
 
-        for left in range(n):
-            for w in words:
-                size = len(w)
+        ___ left __ r..(n):
+            ___ w __ words:
+                size = l..(w)
 
-                __ s[left:left + size] == w and left + size > right:
+                __ s[left:left + size] __ w and left + size > right:
                     right = left + size
 
             is_bold[left] = right > left
@@ -43,8 +43,8 @@ class Solution:
         left = right = 0
 
         while left < n:
-            __ not is_bold[left]:
-                ans.append(s[left])
+            __ n.. is_bold[left]:
+                ans.a..(s[left])
                 left += 1
                 continue
 
@@ -53,7 +53,7 @@ class Solution:
             while right < n and is_bold[right]:
                 right += 1
 
-            ans.append(TMPL.format(s[left:right]))
+            ans.a..(TMPL.format(s[left:right]))
             left = right  # imply left' = left + 1
 
-        return ''.join(ans)
+        r.. ''.join(ans)

@@ -1,9 +1,9 @@
-from datetime import date, timedelta
-from random import shuffle
+____ datetime _______ date, timedelta
+____ random _______ shuffle
 
-import pytest
+_______ pytest
 
-from missing_dates import get_missing_dates
+____ missing_dates _______ get_missing_dates
 
 
 ___ _create_dates(missing, year=2019, month=2):
@@ -21,8 +21,8 @@ ___ _create_dates(missing, year=2019, month=2):
     # only the ones not in missing
     yield first
 
-    for day in range(first.day + 1, last.day):
-        __ day not in missing:
+    ___ day __ r..(first.day + 1, last.day):
+        __ day n.. __ missing:
             yield first.replace(day=day)
 
     yield last
@@ -30,25 +30,25 @@ ___ _create_dates(missing, year=2019, month=2):
 
 @pytest.mark.parametrize("missing, month", [
     ([2, 7, 11], 2),
-    (list(range(2, 12, 2)), 3),
+    (l..(r..(2, 12, 2)), 3),
     ([14, 12], 3),
     ([2, 3, 7, 9], 4),
     ([1, 3, 7, 31], 5),  # expected = 3, 7, not start/end month
-    (list(range(1, 31)), 6),  # 0 missing
+    (l..(r..(1, 31)), 6),  # 0 missing
 ])
 ___ test_get_missing_dates(missing, month):
-    my_date_range = list(_create_dates(missing, month=month))
+    my_date_range = l..(_create_dates(missing, month=month))
     start, end = my_date_range[0].day, my_date_range[-1].day
 
     # order passed in arg should not matter
     shuffle(my_date_range)
 
     # get days from return sequence
-    actual = sorted(d.day for d in
+    actual = s..(d.day ___ d __
                     get_missing_dates(my_date_range))
 
     # filter out begin and end dates of range
-    expected = sorted(d for d in missing __
-                      d not in (start, end))
+    expected = s..(d ___ d __ missing __
+                      d n.. __ (start, end))
 
-    assert actual == expected
+    ... actual __ expected

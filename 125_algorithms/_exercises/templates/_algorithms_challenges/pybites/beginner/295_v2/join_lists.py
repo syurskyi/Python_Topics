@@ -1,23 +1,23 @@
-from typing import List, Union
+____ typing _______ List, Union
 
 
 
-___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], None]:
+___ join_lists(lst_of_lst: List[List[str]], sep: str) -> Union[List[str], N..]:
 
-    __ not lst_of_lst:
-        return None
+    __ n.. lst_of_lst:
+        r.. N..
 
     
-    result = []
+    result    # list
 
 
-    for lst in lst_of_lst:
+    ___ lst __ lst_of_lst:
         result.extend(lst)
-        result.append(sep)
+        result.a..(sep)
     
     result.pop()
 
-    return result
+    r.. result
 
 
 

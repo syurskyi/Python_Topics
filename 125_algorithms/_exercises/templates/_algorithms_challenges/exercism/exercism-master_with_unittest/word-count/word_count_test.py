@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from wordcount import word_count
+____ wordcount _______ word_count
 
 
 class WordCountTests(unittest.TestCase):
@@ -55,5 +55,5 @@ class WordCountTests(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

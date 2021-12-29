@@ -1,9 +1,9 @@
-from typing import List
+____ typing _______ List
 
 ___ sum_indices(items: List[str]) -> int:
     total = 0
-    char_dict = dict()
-    for index, char in enumerate(items):
+    char_dict = d..()
+    ___ index, char __ enumerate(items):
         char_dict[char] = index + char_dict.get(char, 0)
         total += char_dict.get(char)
-    return total
+    r.. total

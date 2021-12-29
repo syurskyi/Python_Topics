@@ -1,7 +1,7 @@
-import os
-from collections import Counter
-import urllib.request
-import xml.etree.ElementTree as ET
+_______ os
+____ collections _______ Counter
+_______ urllib.request
+_______ xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -19,9 +19,9 @@ ___ get_pybites_top_tags(n=10):
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
     root = ET.fromstring(content)
-    temp_list = []
-    for category in root.iter('category'):
-        temp_list.append(category.text)
-    return Counter(temp_list).most_common(n)
+    temp_list    # list
+    ___ category __ root.iter('category'):
+        temp_list.a..(category.text)
+    r.. Counter(temp_list).most_common(n)
 
 print(get_pybites_top_tags(3))

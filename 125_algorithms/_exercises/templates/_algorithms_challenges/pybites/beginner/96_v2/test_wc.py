@@ -1,8 +1,8 @@
-from urllib.request import urlretrieve
+____ urllib.request _______ urlretrieve
 
-import pytest
+_______ pytest
 
-from wc import wc
+____ wc _______ wc
 
 lines = [b'Hello world',
          b'Keep calm and code in Python',
@@ -20,18 +20,18 @@ ___ test_wc(some_text, expected, tmp_path):
     f.write_bytes(some_text)
     output = wc(f.resolve())
     # replace tabs / multiple spaces by single space
-    counts = ' '.join(output.split()[:3])
-    assert counts == expected
+    counts = ' '.join(output.s.. [:3])
+    ... counts __ expected
     # file with/without path allowed
-    assert f.name in output
+    ... f.name __ output
 
 
 ___ test_wc_on_real_py_file(tmp_path):
     f = tmp_path / "driving.py"
     urlretrieve(py_file, f)
     output = wc(f.resolve())
-    counts = ' '.join(output.split()[:3])
+    counts = ' '.join(output.s.. [:3])
     # https://twitter.com/pybites/status/1175795375904628736
     expected = "7 29 216"  # not 8!
-    assert counts == expected
-    assert f.name in output
+    ... counts __ expected
+    ... f.name __ output

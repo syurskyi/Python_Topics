@@ -1,11 +1,11 @@
 ___ period_converter(period):
     ___ inner(self):
-        return round(
+        r.. round(
             self.seconds / period,
             2
         )
 
-    return inner
+    r.. inner
 
 
 class SpaceAge(object):

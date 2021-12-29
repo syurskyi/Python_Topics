@@ -10,8 +10,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -28,8 +28,8 @@ class Solution:
         :param inorder: a list of integers
         :return: TreeNode, root
         """
-        __ not preorder:
-            return None
+        __ n.. preorder:
+            r.. N..
 
         root = TreeNode(preorder[0])
         root_index = inorder.index(root.val)
@@ -37,7 +37,7 @@ class Solution:
         root.left = self.buildTree(preorder[1:root_index+1], inorder[0:root_index])
         root.right = self.buildTree(preorder[root_index+1:], inorder[root_index+1:])
 
-        return root
+        r.. root
         
     ___ buildTree(self, preorder, inorder):
         """
@@ -49,13 +49,13 @@ class Solution:
         """
         self.preorder = preorder
         self.inorder = inorder
-        return self._buildTree(0, len(preorder), 0, len(inorder))
+        r.. self._buildTree(0, l..(preorder), 0, l..(inorder))
 
     ___ _buildTree(self, pre_start, pre_end, in_start, in_end):
         __ pre_start >= pre_end:
-            return None
+            r.. N..
         root = TreeNode(self.preorder[pre_start])
         offset = self.inorder[in_start:in_end + 1].index(root.val)
         root.left = self._buildTree(pre_start + 1, pre_start + offset + 1, in_start, in_start + offset)
         root.right = self._buildTree(pre_start + offset + 1, pre_end, in_start + offset + 1, in_end)
-        return root
+        r.. root

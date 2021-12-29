@@ -1,16 +1,16 @@
 ___ solveJosephus(specifics):
-    people = [int(x) for x in range(1,int(specifics[0])+1)]
+    people = [int(x) ___ x __ r..(1,int(specifics[0])+1)]
     killPosition = int(specifics[1])
     positionCounter = 0
-    sorted = False
+    s.. = False
 
-    while not sorted:
-        __ len(people) == 1:
+    while n.. s..:
+        __ l..(people) __ 1:
             print(people[0]) # Pyschologically scarred Winner!
-            sorted = True
-        for person in people[:]: #Make copy of iterating list
+            s.. = True
+        ___ person __ people[:]: #Make copy of iterating list
             positionCounter += 1
-            __ positionCounter == killPosition:
+            __ positionCounter __ killPosition:
                 people.remove(person)
                 positionCounter = 0
 

@@ -37,10 +37,10 @@ Note:
 board will be a 2 x 3 array as described above.
 board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 """
-from typing import List
-from collections import defaultdict
-from copy import deepcopy
-import heapq
+____ typing _______ List
+____ collections _______ defaultdict
+____ copy _______ deepcopy
+_______ heapq
 
 
 final_pos = {
@@ -75,7 +75,7 @@ class Solution:
         Possible to reduce the 2D array in a 1D array and do %C and //C, where C is the size of the column
         """
         visited = defaultdict(bool)
-        m, n = len(board), len(board[0])
+        m, n = l..(board), l..(board[0])
         q = [(self.heuristic_dist(board) + 0, 0, board)]
         target = [
             [1, 2, 3],
@@ -84,26 +84,26 @@ class Solution:
         while q:
             heu, cur_dist, board = heapq.heappop(q)
             visited[self.ser(board)] = True
-            __ board == target:
-                return cur_dist
+            __ board __ target:
+                r.. cur_dist
 
             cur_dist += 1
             i, j = self.zero_pos(board)
-            for di, dj in dirs:
+            ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
                 __ 0 <= I < m and 0 <= J < n:
                     B = deepcopy(board)   # need a copy in the queue
                     B[I][J], B[i][j] = B[i][j], B[I][J]
-                    __ not visited[self.ser(B)]:
+                    __ n.. visited[self.ser(B)]:
                         heapq.heappush(q, (self.heuristic_dist(B) + cur_dist, cur_dist, B))
-        return -1
+        r.. -1
 
     ___ zero_pos(self, board):
-        for i, row in enumerate(board):
-            for j, v in enumerate(row):
-                __ v == 0:
-                    return i, j
+        ___ i, row __ enumerate(board):
+            ___ j, v __ enumerate(row):
+                __ v __ 0:
+                    r.. i, j
         raise
 
     ___ heuristic_dist(self, board):
@@ -111,20 +111,20 @@ class Solution:
         manhattan distance
         """
         ret = 0
-        for i, row in enumerate(board):
-            for j, v in enumerate(row):
+        ___ i, row __ enumerate(board):
+            ___ j, v __ enumerate(row):
                 __ v != 0:
                     I, J = final_pos[v]
                     ret += abs(i - I) + abs(j - J)
-        return ret
+        r.. ret
 
     ___ ser(self, board):
-        return tuple(
+        r.. tuple(
             tuple(row)
-            for row in board
+            ___ row __ board
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().slidingPuzzle([[1,2,3],[4,0,5]]) == 1
-    assert Solution().slidingPuzzle([[1,2,3],[5,4,0]]) == -1
+__ __name__ __ "__main__":
+    ... Solution().slidingPuzzle([[1,2,3],[4,0,5]]) __ 1
+    ... Solution().slidingPuzzle([[1,2,3],[5,4,0]]) __ -1

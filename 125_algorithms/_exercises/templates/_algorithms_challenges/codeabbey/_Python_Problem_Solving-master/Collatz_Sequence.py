@@ -1,36 +1,36 @@
 data = int(input())
 
-a = [int(x) for x in input().split()]
+a = [int(x) ___ x __ input().s.. ]
 #print(len(a))
-res = []
-for i in range(len(a)):
+res    # list
+___ i __ r..(l..(a)):
     #print('starting')
     count = 0
     xnext = a[i]
     while xnext != 1:
-        __ xnext % 2 == 0:
+        __ xnext % 2 __ 0:
             xnext = xnext / 2
             #print('even:',xnext)
-            __ xnext == 1:
+            __ xnext __ 1:
                 count += 1
                 #print('counting and appending')
-                res.append(count)
+                res.a..(count)
                 
                 #print('even res:',res)
                 continue
-            else:
+            ____:
                 count += 1
-        else:
+        ____:
             #print('odd')
             xnext = (3*xnext) + 1
             #print('odd: ',xnext)
             
-            __ xnext == 1:
+            __ xnext __ 1:
                 count += 1
-                res.append(count)
+                res.a..(count)
                 #print(res)
                 continue
-            else:
+            ____:
                 count += 1
-for i in res:
+___ i __ res:
     print(i,end=(' '))

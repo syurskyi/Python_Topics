@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from phone import Phone
+____ phone _______ Phone
 
 
 class PhoneTest(unittest.TestCase):
@@ -37,5 +37,5 @@ class PhoneTest(unittest.TestCase):
         self.assertEqual("(123) 456-7890", number.pretty())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

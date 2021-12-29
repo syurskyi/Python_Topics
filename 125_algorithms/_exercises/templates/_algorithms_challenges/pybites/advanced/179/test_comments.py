@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from comments import strip_comments
+____ comments _______ strip_comments
 
 # comment code snippets from:
 # https://realpython.com/documenting-python-code/
@@ -126,4 +126,4 @@ def foo():
     (false_positive, false_positive_after_strip),
 ])
 ___ test_strip_comments(arg, expected):
-    assert strip_comments(arg).strip() == expected.strip()
+    ... strip_comments(arg).strip() __ expected.strip()

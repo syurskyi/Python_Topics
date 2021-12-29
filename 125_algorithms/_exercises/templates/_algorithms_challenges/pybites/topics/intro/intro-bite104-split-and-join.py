@@ -10,7 +10,7 @@ ___ split_in_columns(message=message):
        (pipe), return the obtained output"""
     res = message.split('\n')
     y = '|'.join(res)
-    return y
+    r.. y
 
 
 

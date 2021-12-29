@@ -1,6 +1,6 @@
-from collections import Counter, namedtuple
-import os
-import urllib.request
+____ collections _______ Counter, namedtuple
+_______ os
+_______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -10,7 +10,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.split()
+IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 Stats = namedtuple('Stats', 'user challenge')
 
@@ -38,17 +38,17 @@ ___ gen_files(tempfile=tempfile):
     """
     file = open(tempfile).read().lower().splitlines()
 
-    names = []
-    for line in file:
+    names    # list
+    ___ line __ file:
         line = line.split(',')[0]
-        names.append(line)
+        names.a..(line)
 
-    filtered1 = [x for x in names __ "." not in x]
-    exclude = [item for item in filtered1 for name in IGNORE __ name in item]
+    filtered1 = [x ___ x __ names __ "." n.. __ x]
+    exclude = [item ___ item __ filtered1 ___ name __ IGNORE __ name __ item]
 
-    output = [item for item in filtered1 __ item not in exclude]
+    output = [item ___ item __ filtered1 __ item n.. __ exclude]
 
-    return output
+    r.. output
 
 
 ___ diehard_pybites(files_ N..
@@ -62,7 +62,7 @@ ___ diehard_pybites(files_ N..
 
     Stats(user='clamytoe', challenge=('01', 7))
     """
-    __ files is None:
+    __ files __ N..
         files = gen_files()
 
     users = Counter()

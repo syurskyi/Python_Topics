@@ -1,4 +1,4 @@
-import requests, collections
+_______ requests, collections
 
 STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
@@ -16,14 +16,14 @@ ___ _cap_str_to_mln_float(cap):
        - if 'M' in cap value, strip it off and return value as float,
        - if 'B', strip it off, multiply by 1,000 and return
          value as float"""
-    __ cap == "n/a":
-        return 0
-    else:
+    __ cap __ "n/a":
+        r.. 0
+    ____:
         cap = cap.lstrip("$")
-        __ cap[-1] == "B":
-            return float(cap.rstrip("B")) * 1000
-        else:
-            return float(cap.rstrip("M"))
+        __ cap[-1] __ "B":
+            r.. float(cap.rstrip("B")) * 1000
+        ____:
+            r.. float(cap.rstrip("M"))
 
 
 ___ get_industry_cap(industry):
@@ -31,30 +31,30 @@ ___ get_industry_cap(industry):
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
     industry_cap_lookup = {}
-    for stock in data:
+    ___ stock __ data:
         cap = _cap_str_to_mln_float(stock["cap"])
-        __ stock["industry"] not in industry_cap_lookup:
+        __ stock["industry"] n.. __ industry_cap_lookup:
             industry_cap_lookup[stock["industry"]] = [cap]
-        else:
-            industry_cap_lookup[stock["industry"]].append(cap)
-    return round(sum(industry_cap_lookup[industry]), 2)
+        ____:
+            industry_cap_lookup[stock["industry"]].a..(cap)
+    r.. round(s..(industry_cap_lookup[industry]), 2)
 
 
 ___ get_stock_symbol_with_highest_cap():
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
     highest_cap = {}
-    for stock in data:
+    ___ stock __ data:
         cap = _cap_str_to_mln_float(stock["cap"])
         highest_cap[stock["symbol"]] = cap
-    return max(highest_cap, key=highest_cap.get)
+    r.. max(highest_cap, key=highest_cap.get)
 
 
 ___ get_sectors_with_max_and_min_stocks():
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    counter = collections.Counter([stock["sector"] for stock in data __ stock["sector"] != "n/a"])
-    return (counter.most_common()[0][0], counter.most_common()[-1][0])
+    counter = collections.Counter([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
+    r.. (counter.most_common()[0][0], counter.most_common()[-1][0])
 
 
 # if __name__ == "__main__":

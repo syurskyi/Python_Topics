@@ -1,6 +1,6 @@
-from datetime import date
-from typing import Dict, Sequence, NamedTuple
-from collections import namedtuple,defaultdict
+____ datetime _______ date
+____ typing _______ Dict, Sequence, NamedTuple
+____ collections _______ namedtuple,defaultdict
 
 
 
@@ -38,20 +38,20 @@ ___ rent_or_stream(
     m = defaultdict(int)
 
 
-    for movie_rented in renting_history:
+    ___ movie_rented __ renting_history:
         month = movie_rented.date.strftime("%Y-%m")
         m[month] += movie_rented.price
     
     
 
-    for month,cost in m.items():
+    ___ month,cost __ m.items():
         __ cost > streaming_cost_per_month:
             m[month] = STREAM
-        else:
+        ____:
             m[month] = RENT
 
 
-    return m
+    r.. m
 
 
 

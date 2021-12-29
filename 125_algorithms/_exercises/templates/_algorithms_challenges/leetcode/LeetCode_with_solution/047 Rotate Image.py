@@ -16,15 +16,15 @@ class Solution:
         :param matrix: a list of lists of integers
         :return: a list of lists of integers
         """
-        n = len(matrix)
-        for row in range(n):
-            for col in range(n-row):
+        n = l..(matrix)
+        ___ row __ r..(n):
+            ___ col __ r..(n-row):
                 matrix[row][col], matrix[n-1-col][n-1-row] = matrix[n-1-col][n-1-row], matrix[row][col]  # by diagonal
-        for row in range(n/2):
-            for col in range(n):
+        ___ row __ r..(n/2):
+            ___ col __ r..(n):
                 matrix[row][col], matrix[n-1-row][col] = matrix[n-1-row][col], matrix[row][col]  # by x-axis
 
-        return matrix
+        r.. matrix
 
 
 

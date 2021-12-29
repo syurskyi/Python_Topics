@@ -10,21 +10,21 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        __ not prices or len(prices) <= 1: return 0
-        left = [0]*len(prices)
-        right = [0]*len(prices)
+        __ n.. prices o. l..(prices) <= 1: r.. 0
+        left = [0]*l..(prices)
+        right = [0]*l..(prices)
         minVal = prices[0]
-        for i in range(1, len(prices)):
+        ___ i __ r..(1, l..(prices)):
             left[i] = max(prices[i]-minVal, left[i])
-            minVal = min(minVal, prices[i])
+            minVal = m..(minVal, prices[i])
         maxVal = prices[-1]
-        for i in range(len(prices)-2, -1, -1):
+        ___ i __ r..(l..(prices)-2, -1, -1):
             right[i] = max(maxVal-prices[i], right[i+1])
             maxVal = max(maxVal, prices[i])
         profit = 0
-        for i in range(len(prices)):
+        ___ i __ r..(l..(prices)):
             profit = max(left[i]+right[i], profit)
-        return profit
+        r.. profit
     
     ___ test(self):
         testCases = [
@@ -34,11 +34,11 @@ class Solution(object):
             [2, 1],
             [3, 3],
         ]
-        for prices in testCases:
+        ___ prices __ testCases:
             print('prices: %s' % (prices))
             result = self.maxProfit(prices)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

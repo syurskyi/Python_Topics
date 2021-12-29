@@ -1,6 +1,6 @@
-from functools import wraps
-from random import random
-from time import sleep
+____ functools _______ wraps
+____ random _______ random
+____ time _______ sleep
 
 
 ___ cached_property(func):
@@ -8,13 +8,13 @@ ___ cached_property(func):
 
     @wraps(func)
     ___ getter(self, *args, **kwargs):
-        __ not hasattr(cached_property, "cache"):
-            cached_property.cache = dict()
-        __ func not in cached_property.cache:
+        __ n.. hasattr(cached_property, "cache"):
+            cached_property.cache = d..()
+        __ func n.. __ cached_property.cache:
             cached_property.cache[func] = func(self)
-        return cached_property.cache[func]
+        r.. cached_property.cache[func]
 
-    return getter
+    r.. getter
 
 
 class Planet:
@@ -26,10 +26,10 @@ class Planet:
 
     ___ __init__(self, color):
         self.color = color
-        self._mass = None
+        self._mass = N..
 
     ___ __repr__(self):
-        return f'{self.__class__.__name__}({repr(self.color)})'
+        r.. f'{self.__class__.__name__}({repr(self.color)})'
 
     @cached_property
     ___ mass(self):
@@ -37,6 +37,6 @@ class Planet:
         sleep(self.TEMPORAL_SHIFT)
         self._mass = (f'{round(scale_factor * self.GRAVITY_CONSTANT, 4)} '
                       f'{self.SOLAR_MASS_UNITS}')
-        return self._mass
+        r.. self._mass
 
     mass = property(mass)

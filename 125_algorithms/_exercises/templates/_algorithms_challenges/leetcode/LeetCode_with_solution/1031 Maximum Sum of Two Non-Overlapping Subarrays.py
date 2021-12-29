@@ -36,7 +36,7 @@ M >= 1
 L + M <= A.length <= 1000
 0 <= A[i] <= 1000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -45,20 +45,20 @@ class Solution:
         Prefix sum + Brute force O(N^2)
         two pointer i, j
         """
-        n = len(A)
-        F = [0 for _ in range(n + 1)]
-        for i, a in enumerate(A):
+        n = l..(A)
+        F = [0 ___ _ __ r..(n + 1)]
+        ___ i, a __ enumerate(A):
             F[i+1] = F[i] + a
 
         ret = -float("inf")
-        for l, m in ((L, M), (M, L)):
-            for i in range(n + 1 - l):
-                for j in range(i + l, n + 1 - m):  # upper needs +1 here 
+        ___ l, m __ ((L, M), (M, L)):
+            ___ i __ r..(n + 1 - l):
+                ___ j __ r..(i + l, n + 1 - m):  # upper needs +1 here
                     cur = F[i + l] - F[i] + F[j + m] - F[j]
                     ret = max(ret, cur)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().maxSumTwoNoOverlap([0,6,5,2,2,5,1,9,4], 1, 2) == 20
+__ __name__ __ "__main__":
+    ... Solution().maxSumTwoNoOverlap([0,6,5,2,2,5,1,9,4], 1, 2) __ 20

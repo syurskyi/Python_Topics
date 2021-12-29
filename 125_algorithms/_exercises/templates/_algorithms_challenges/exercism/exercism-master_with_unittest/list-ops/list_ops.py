@@ -1,58 +1,58 @@
-___ append(list_a, list_b):
-    appended = []
-    for element in list_a:
-        appended.append(element)  # Not sure if using .append here is cheating
-    for element in list_b:
-        appended.append(element)
-    return appended
+___ a..(list_a, list_b):
+    appended    # list
+    ___ element __ list_a:
+        appended.a..(element)  # Not sure if using .append here is cheating
+    ___ element __ list_b:
+        appended.a..(element)
+    r.. appended
 
 
 ___ concat(lists):
-    concatenated = []
-    for l in lists:
-        concatenated = append(concatenated, l)
-    return concatenated
+    concatenated    # list
+    ___ l __ lists:
+        concatenated = a..(concatenated, l)
+    r.. concatenated
 
 
 ___ filter_clone(function, l):
-    filtered = []
-    for element in l:
+    filtered    # list
+    ___ element __ l:
         __ function(element):
-            filtered = append(filtered, [element])
-    return filtered
+            filtered = a..(filtered, [element])
+    r.. filtered
 
 
 ___ length(l):
     list_length = 0
-    for _element in l:
+    ___ _element __ l:
         list_length += 1
-    return list_length
+    r.. list_length
 
 
-___ map_clone(function, list):
-    cloned = []
-    for element in list:
-        cloned = append(cloned, [function(element)])
-    return cloned
+___ map_clone(function, l..):
+    cloned    # list
+    ___ element __ l..:
+        cloned = a..(cloned, [function(element)])
+    r.. cloned
 
 
 ___ foldl(function, l, acc):
-    for element in l:
+    ___ element __ l:
         try:
             acc = function(element, acc)
         # Pretty confident test_foldl_nonempty_list_floordiv is a bad test
         except ZeroDivisionError:
             acc = 0
-    return acc
+    r.. acc
 
 
 ___ foldr(function, l, acc):
     reversed_list = reverse(l)
-    return foldl(function, reversed_list, acc)
+    r.. foldl(function, reversed_list, acc)
 
 
 ___ reverse(l):
-    reversed_list = []
-    for element in l:
-        reversed_list = append([element], reversed_list)
-    return reversed_list
+    reversed_list    # list
+    ___ element __ l:
+        reversed_list = a..([element], reversed_list)
+    r.. reversed_list

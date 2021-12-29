@@ -19,7 +19,7 @@ ___ test_case1():
     result = zip(list1, list2, list3)
     print(type(result))
 
-    for e in result:
+    ___ e __ result:
         print(e)
         print(type(e))
 
@@ -32,7 +32,7 @@ ___ test_case2():
     result = zip(list1, list2, list3)
     print(type(result))
 
-    for e in result:
+    ___ e __ result:
         print(e)
         print(type(e))
 

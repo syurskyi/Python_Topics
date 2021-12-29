@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-import reverse_complement
+_______ reverse_complement
 
 # Table copied from
 # http://arep.med.harvard.edu/labgc/adnan/projects/Utilities/revcomp.html
@@ -94,7 +94,7 @@ CORRECT_ANSWERS_REVERSE_COMPLEMENT = [
     zip(ACGT_BASES_ONLY, CORRECT_ANSWERS_COMPLEMENTED),
 )
 ___ test_acgt_complement(input_sequence, expected):
-    assert reverse_complement.complement(input_sequence).upper() == expected
+    ... reverse_complement.complement(input_sequence).upper() __ expected
 
 
 @pytest.mark.parametrize(
@@ -102,14 +102,14 @@ ___ test_acgt_complement(input_sequence, expected):
     zip(MIXED_CASE_DNA, CORRECT_ANSWERS_COMPLEMENTED),
 )
 ___ test_mixed_case_complement(input_sequence, expected):
-    assert reverse_complement.complement(input_sequence).upper() == expected
+    ... reverse_complement.complement(input_sequence).upper() __ expected
 
 
 @pytest.mark.parametrize(
     "input_sequence,expected", zip(DIRTY_DNA, CORRECT_ANSWERS_COMPLEMENTED)
 )
 ___ test_dirty_complement(input_sequence, expected):
-    assert reverse_complement.complement(input_sequence).upper() == expected
+    ... reverse_complement.complement(input_sequence).upper() __ expected
 
 
 # ############################################################################
@@ -121,21 +121,21 @@ ___ test_dirty_complement(input_sequence, expected):
     "input_sequence,expected", zip(ACGT_BASES_ONLY, CORRECT_ANSWERS_REVERSE)
 )
 ___ test_acgt_reverse(input_sequence, expected):
-    assert reverse_complement.reverse(input_sequence).upper() == expected
+    ... reverse_complement.reverse(input_sequence).upper() __ expected
 
 
 @pytest.mark.parametrize(
     "input_sequence,expected", zip(MIXED_CASE_DNA, CORRECT_ANSWERS_REVERSE)
 )
 ___ test_mixed_case_reverse(input_sequence, expected):
-    assert reverse_complement.reverse(input_sequence).upper() == expected
+    ... reverse_complement.reverse(input_sequence).upper() __ expected
 
 
 @pytest.mark.parametrize(
     "input_sequence,expected", zip(DIRTY_DNA, CORRECT_ANSWERS_REVERSE)
 )
 ___ test_dirty_reverse(input_sequence, expected):
-    assert reverse_complement.reverse(input_sequence).upper() == expected
+    ... reverse_complement.reverse(input_sequence).upper() __ expected
 
 
 # ############################################################################
@@ -148,9 +148,9 @@ ___ test_dirty_reverse(input_sequence, expected):
     zip(ACGT_BASES_ONLY, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
 ___ test_acgt_reverse_complement(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.reverse_complement(input_sequence).upper()
-        == expected
+        __ expected
     )
 
 
@@ -159,9 +159,9 @@ ___ test_acgt_reverse_complement(input_sequence, expected):
     zip(MIXED_CASE_DNA, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
 ___ test_mixed_case_reverse_complement(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.reverse_complement(input_sequence).upper()
-        == expected
+        __ expected
     )
 
 
@@ -170,9 +170,9 @@ ___ test_mixed_case_reverse_complement(input_sequence, expected):
     zip(DIRTY_DNA, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
 ___ test_dirty_reverse_complement(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.reverse_complement(input_sequence).upper()
-        == expected
+        __ expected
     )
 
 
@@ -226,9 +226,9 @@ CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE_COMPLEMENT = [
     zip(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_COMPLEMENT),
 )
 ___ test_acgt_complement_new_table(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.complement(input_sequence, COMPLEMENTS_STR).upper()
-        == expected
+        __ expected
     )
 
 
@@ -237,9 +237,9 @@ ___ test_acgt_complement_new_table(input_sequence, expected):
     zip(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE),
 )
 ___ test_mixed_case_reverse_new_table(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.reverse(input_sequence, COMPLEMENTS_STR).upper()
-        == expected
+        __ expected
     )
 
 
@@ -248,9 +248,9 @@ ___ test_mixed_case_reverse_new_table(input_sequence, expected):
     zip(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE_COMPLEMENT),
 )
 ___ test_dirty_reverse_complement_new_table(input_sequence, expected):
-    assert (
+    ... (
         reverse_complement.reverse_complement(
             input_sequence, COMPLEMENTS_STR
         ).upper()
-        == expected
+        __ expected
     )

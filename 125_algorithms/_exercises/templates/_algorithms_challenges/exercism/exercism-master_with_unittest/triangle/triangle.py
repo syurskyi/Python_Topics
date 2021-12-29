@@ -13,26 +13,26 @@ class Triangle:
 
     ___ kind(self):
         __ self.equilateral():
-            return self.EQUILATERAL
+            r.. self.EQUILATERAL
         __ self.isosceles():
-            return self.ISOSCELES
-        return self.SCALENE
+            r.. self.ISOSCELES
+        r.. self.SCALENE
 
     ___ equilateral(self):
-        return self.a == self.b == self.c
+        r.. self.a __ self.b __ self.c
 
     ___ isosceles(self):
-        return self.a == self.b or self.b == self.c or self.a == self.c
+        r.. self.a __ self.b o. self.b __ self.c o. self.a __ self.c
 
     ___ error(self):
-        return self.negative_sides() or self.triangle_inequality()
+        r.. self.negative_sides() o. self.triangle_inequality()
 
     ___ negative_sides(self):
-        return self.a <= 0 or self.b <= 0 or self.c <= 0
+        r.. self.a <= 0 o. self.b <= 0 o. self.c <= 0
 
     ___ triangle_inequality(self):
-        return (self.a + self.b <= self.c or
-                self.b + self.c <= self.a or
+        r.. (self.a + self.b <= self.c o.
+                self.b + self.c <= self.a o.
                 self.a + self.c <= self.b)
 
 

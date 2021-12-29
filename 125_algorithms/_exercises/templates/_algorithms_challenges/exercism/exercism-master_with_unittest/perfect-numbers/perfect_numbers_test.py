@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from perfect_numbers import is_perfect
+____ perfect_numbers _______ is_perfect
 
 
 class PerfectNumbersTest(unittest.TestCase):
@@ -39,5 +39,5 @@ class PerfectNumbersTest(unittest.TestCase):
         self.assertTrue(is_perfect(137438691328))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

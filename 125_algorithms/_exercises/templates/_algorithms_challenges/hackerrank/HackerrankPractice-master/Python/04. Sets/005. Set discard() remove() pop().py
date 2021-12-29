@@ -4,12 +4,12 @@
 
 n = int(input())
 s = set(map(int, input().split()))
-for i in range(int(input())):
-    string = input().split()
-    __ string[0] == 'pop':
+___ i __ r..(int(input())):
+    string = input().s.. 
+    __ string[0] __ 'pop':
         s.pop()
-    elif string[0] == 'remove':
+    ____ string[0] __ 'remove':
         s.remove(int(string[1]))
-    elif string[0] == 'discard':
+    ____ string[0] __ 'discard':
         s.discard(int(string[1]))
-print(sum(s))
+print(s..(s))

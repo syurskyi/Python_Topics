@@ -5,24 +5,24 @@ class Solution(object):
     :rtype: List[List[str]]
     """
     d = {}
-    ans = []
-    single = []
-    for s in strings:
-      __ len(s) == 1:
-        single.append(s)
+    ans    # list
+    single    # list
+    ___ s __ strings:
+      __ l..(s) __ 1:
+        single.a..(s)
         continue
-      hashcodeArray = []
+      hashcodeArray    # list
       pre = ord(s[0]) - ord("a")
-      for i in range(1, len(s)):
-        hashcodeArray.append(str(((ord(s[i]) - ord("a")) - pre) % 26))
+      ___ i __ r..(1, l..(s)):
+        hashcodeArray.a..(str(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
       hashcode = ",".join(hashcodeArray)
-      __ hashcode not in d:
+      __ hashcode n.. __ d:
         d[hashcode] = [s]
-      else:
-        d[hashcode].append(s)
-    for k in d:
-      ans.append(d[k])
+      ____:
+        d[hashcode].a..(s)
+    ___ k __ d:
+      ans.a..(d[k])
     __ single:
-      ans.append(single)
-    return ans
+      ans.a..(single)
+    r.. ans

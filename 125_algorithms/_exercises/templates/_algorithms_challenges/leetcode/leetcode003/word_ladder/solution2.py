@@ -3,35 +3,35 @@ class Solution:
     # @param end, a string
     # @param dict, a set of string
     # @return an integer
-    ___ ladderLength(self, start, end, dict):
-        queue = []
-        distance = []
-        queue.append(start)
-        distance.append(1)
+    ___ ladderLength(self, start, end, d..):
+        queue    # list
+        distance    # list
+        queue.a..(start)
+        distance.a..(1)
         # Remove words that are same as start
-        for word in set(dict):
-            __ start == word:
-                dict.remove(start)
-        dict.add(end)
+        ___ word __ set(d..):
+            __ start __ word:
+                d...remove(start)
+        d...add(end)
         while queue:
             cur = queue.pop(0)
             d = distance.pop(0)
-            for word in set(dict):  # Iterate over the copy of dict
+            ___ word __ set(d..):  # Iterate over the copy of dict
                 __ self.is_adjacent(cur, word):
-                    dict.remove(word)  # Mark as visited
-                    queue.append(word)
-                    __ word == end:
-                        return d + 1
-                    distance.append(d + 1)
-        return 0
+                    d...remove(word)  # Mark as visited
+                    queue.a..(word)
+                    __ word __ end:
+                        r.. d + 1
+                    distance.a..(d + 1)
+        r.. 0
 
     ___ is_adjacent(self, word1, word2):
         count = 0
-        n = len(word1)
-        for i in range(n):
+        n = l..(word1)
+        ___ i __ r..(n):
             __ word1[i] != word2[i]:
                 count += 1
-        return count == 1
+        r.. count __ 1
 
 
 s = Solution()

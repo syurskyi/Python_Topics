@@ -1,15 +1,15 @@
-d = input().split()
+d = input().s.. 
 d.sort()
-res = []
+res    # list
 d_dic = {}
-for i in d:
-    __ i in d_dic:
+___ i __ d:
+    __ i __ d_dic:
         d_dic[i] += 1
-    else:
+    ____:
         d_dic[i] = 1
-for i in d_dic:
+___ i __ d_dic:
     __ d_dic[i] > 1:
-        __ i not in res:
-            res.append(i)
-for i in res:
+        __ i n.. __ res:
+            res.a..(i)
+___ i __ res:
     print(i,end=' ')

@@ -12,17 +12,17 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 class Solution:
     ___ __init__(self):
-        self.swapped_pair = []
-        self.current = None
-        self.pre = None
+        self.swapped_pair    # list
+        self.current = N..
+        self.pre = N..
 
     ___ recoverTree(self, root):
         """
@@ -48,25 +48,25 @@ class Solution:
         :return: TreeNode
         """
         self.in_order(root)
-        __ len(self.swapped_pair)==2:
+        __ l..(self.swapped_pair)__2:
             self.swapped_pair[0][0].val, self.swapped_pair[1][1].val = self.swapped_pair[1][1].val, self.swapped_pair[0][0].val
-        else: # neighboring
+        ____: # neighboring
             self.swapped_pair[0][0].val, self.swapped_pair[0][1].val = self.swapped_pair[0][1].val, self.swapped_pair[0][0].val
-        return root
+        r.. root
 
     ___ in_order(self, current):
-        __ not current:
-            return
+        __ n.. current:
+            r..
 
         self.in_order(current.left)
         # update global
         self.pre = self.current
         self.current = current
-        __ self.pre and not self.pre.val<self.current.val:
-            __ not self.swapped_pair:
-                self.swapped_pair.append((self.pre, self.current))  # pre is wrong
-            else:
-                self.swapped_pair.append((self.pre, self.current))  # current is wrong
+        __ self.pre and n.. self.pre.val<self.current.val:
+            __ n.. self.swapped_pair:
+                self.swapped_pair.a..((self.pre, self.current))  # pre is wrong
+            ____:
+                self.swapped_pair.a..((self.pre, self.current))  # current is wrong
         self.in_order(current.right)
 
     # def __get_smallest(self, root):
@@ -100,7 +100,7 @@ class Solution:
     #     if root.left: self.__find(root.left, result)
     #     if root.right: self.__find(root.right, result)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     node1 = TreeNode(2)
     node2 = TreeNode(1)
     node1.right = node2

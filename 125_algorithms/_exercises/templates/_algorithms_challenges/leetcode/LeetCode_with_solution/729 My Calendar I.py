@@ -41,8 +41,8 @@ class Node:
     ___ __init__(self, s, e):
         self.s = s
         self.e = e
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class MyCalendar:
@@ -60,34 +60,34 @@ class MyCalendar:
         need a TreeMap
         but python does not have -> BST although unbalanced
         """
-        self.root = None
+        self.root = N..
 
     ___ insert(self, node: Node, s: int, e: int) -> Node:
-        __ not node:
-            return Node(s, e)
+        __ n.. node:
+            r.. Node(s, e)
 
         __ e <= node.s:
             left = self.insert(node.left, s, e)
-            __ left is None:
-                return None
+            __ left __ N..
+                r.. N..
             node.left = left
-            return node
-        elif s >= node.e:
+            r.. node
+        ____ s >= node.e:
             right = self.insert(node.right, s, e)
-            __ right is None:
-                return None
+            __ right __ N..
+                r.. N..
             node.right = right
-            return node
-        else:
-            return None
+            r.. node
+        ____:
+            r.. N..
 
     ___ book(self, start: int, end: int) -> bool:
         ret = self.insert(self.root, start, end)
-        __ ret is None:
-            return False
+        __ ret __ N..
+            r.. False
 
         self.root = ret
-        return True
+        r.. True
 
 
 # Your MyCalendar object will be instantiated and called as such:

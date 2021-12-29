@@ -1,5 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
+_______ requests
+____ bs4 _______ BeautifulSoup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
@@ -15,44 +15,44 @@ ___ top_python_questions(url=cached_so_url):
     soup = BeautifulSoup(response.text, 'html.parser')
     right_table = soup.find_all('div', {'class': 'question-summary'})
 
-    q = []
-    vo = []
-    vi = []
-    for line in right_table:
+    q    # list
+    vo    # list
+    vi    # list
+    ___ line __ right_table:
         question = line.find('a', {'class': 'question-hyperlink'}).text
         vote = line.find('span', {'class': 'vote-count-post high-scored-post'})
         view = line.find('div', {'class': 'views supernova'})
 
-        __ vote is None:
+        __ vote __ N..
             vote = 0
-        else:
+        ____:
             vote = vote.text
 
-        __ view is None:
+        __ view __ N..
             view = 0
-        else:
-            view = view.text.strip().split()[0]
+        ____:
+            view = view.text.strip().s.. [0]
 
-        q.append(question)
-        vo.append(vote)
-        vi.append(view)
+        q.a..(question)
+        vo.a..(vote)
+        vi.a..(view)
 
-    vi_true = []
-    for number in vi:
-        number = str(number)
+    vi_true    # list
+    ___ number __ vi:
+        number = s..(number)
         __ number.endswith('k'):
-            vi_true.append(float(number[:-1]) * 1000)
+            vi_true.a..(float(number[:-1]) * 1000)
         __ number.endswith('m'):
-            vi_true.append(float(number[:-1]) * 1_000_000)
-        __ number == '0':
-            vi_true.append(float(number))
+            vi_true.a..(float(number[:-1]) * 1_000_000)
+        __ number __ '0':
+            vi_true.a..(float(number))
 
-    final = list(zip(q, vo, vi_true))
-    output1 = []
-    output2 = []
-    for question, vote, view in final:
+    final = l..(zip(q, vo, vi_true))
+    output1    # list
+    output2    # list
+    ___ question, vote, view __ final:
         __ view >= 1_000_000:
-            output1.append(question)
-            output2.append(int(vote))
+            output1.a..(question)
+            output2.a..(int(vote))
 
-    return sorted(list(zip(output1, output2)), key=lambda x :x[1], reverse=True)
+    r.. s..(l..(zip(output1, output2)), key=l.... x :x[1], r.._T..

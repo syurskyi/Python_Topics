@@ -12,7 +12,7 @@ class Solution(object):
         """
         x11, y11, x12, y12 = rec1
         x21, y21, x22, y22 = rec2
-        return x11 < x22 and x21 < x12 and y11 < y22 and y21 < y12
+        r.. x11 < x22 and x21 < x12 and y11 < y22 and y21 < y12
     
     ___ isRectangleOverlap_own(self, rec1, rec2):
         """
@@ -22,16 +22,16 @@ class Solution(object):
         """
         x11, y11, x12, y12 = rec1
         x21, y21, x22, y22 = rec2
-        __ (x11 <= x21 < x12 and (y11 <= y21 < y12 or y21 <= y11 < y12 <= y22)) or\
-           (x11 <= x21 < x12 and (y11 < y22 <= y12 or y21 <= y11 < y12 <= y22)) or\
-           (x11 < x22 <= x12 and (y11 <= y21 < y12 or y21 <= y11 < y12 <= y22)) or\
-           (x11 < x22 <= x12 and (y11 < y22 <= y12 or y21 <= y11 < y12 <= y22)) or\
-           (x21 <= x11 < x22 and (y21 <= y11 < y22 or y11 <= y21 < y22 <= y12)) or\
-           (x21 <= x11 < x22 and (y21 < y12 <= y22 or y11 <= y21 < y22 <= y12)) or\
-           (x21 < x12 <= x22 and (y21 <= y11 < y22 or y11 <= y21 < y22 <= y12)) or\
-           (x21 < x12 <= x22 and (y21 < y12 <= y22 or y11 <= y21 < y22 <= y12)):
-            return True
-        return False
+        __ (x11 <= x21 < x12 and (y11 <= y21 < y12 o. y21 <= y11 < y12 <= y22)) o.\
+           (x11 <= x21 < x12 and (y11 < y22 <= y12 o. y21 <= y11 < y12 <= y22)) o.\
+           (x11 < x22 <= x12 and (y11 <= y21 < y12 o. y21 <= y11 < y12 <= y22)) o.\
+           (x11 < x22 <= x12 and (y11 < y22 <= y12 o. y21 <= y11 < y12 <= y22)) o.\
+           (x21 <= x11 < x22 and (y21 <= y11 < y22 o. y11 <= y21 < y22 <= y12)) o.\
+           (x21 <= x11 < x22 and (y21 < y12 <= y22 o. y11 <= y21 < y22 <= y12)) o.\
+           (x21 < x12 <= x22 and (y21 <= y11 < y22 o. y11 <= y21 < y22 <= y12)) o.\
+           (x21 < x12 <= x22 and (y21 < y12 <= y22 o. y11 <= y21 < y22 <= y12)):
+            r.. True
+        r.. False
 
     ___ test(self):
         testCases = [
@@ -48,10 +48,10 @@ class Solution(object):
                 [10,8,12,20],
             ],
         ]
-        for rec1, rec2 in testCases:
+        ___ rec1, rec2 __ testCases:
             result = self.isRectangleOverlap(rec1, rec2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

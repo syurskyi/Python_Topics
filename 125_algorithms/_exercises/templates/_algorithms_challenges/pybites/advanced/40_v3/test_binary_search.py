@@ -1,20 +1,20 @@
-from string import ascii_lowercase
+____ string _______ ascii_lowercase
 
-from binary_search import binary_search
+____ binary_search _______ binary_search
 
 PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61]
-ALPHABET = list(ascii_lowercase)
+ALPHABET = l..(ascii_lowercase)
 
 
 ___ test_binary_search_prime():
-    assert binary_search(PRIMES, 2) == 0
-    assert binary_search(PRIMES, 59) == 16
-    assert binary_search(PRIMES, 5) == 2
-    assert binary_search(PRIMES, 61) == 17
-    assert binary_search(PRIMES, 18) == None
+    ... binary_search(PRIMES, 2) __ 0
+    ... binary_search(PRIMES, 59) __ 16
+    ... binary_search(PRIMES, 5) __ 2
+    ... binary_search(PRIMES, 61) __ 17
+    ... binary_search(PRIMES, 18) __ N..
 
 
 ___ test_binary_search_alpha():
-    assert binary_search(ALPHABET, 'u') == 20
-    assert binary_search(ALPHABET, 'a') == 0
-    assert binary_search(ALPHABET, 'z') == 25
+    ... binary_search(ALPHABET, 'u') __ 20
+    ... binary_search(ALPHABET, 'a') __ 0
+    ... binary_search(ALPHABET, 'z') __ 25

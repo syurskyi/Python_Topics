@@ -33,31 +33,31 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        __ not nums:
-            return False
+        __ n.. nums:
+            r.. False
 
-        square = [0 for _ in range(4)]
-        l = sum(nums) // 4
-        __ sum(nums) % 4 != 0:
-            return False
+        square = [0 ___ _ __ r..(4)]
+        l = s..(nums) // 4
+        __ s..(nums) % 4 != 0:
+            r.. False
 
-        nums.sort(reverse=True)
-        return self.dfs(nums, 0, l, square)
+        nums.sort(r.._T..
+        r.. self.dfs(nums, 0, l, square)
 
     ___ dfs(self, nums, i, l, square):
-        __ i >= len(nums):
-            return True
+        __ i >= l..(nums):
+            r.. True
 
-        for j in range(len(square)):
+        ___ j __ r..(l..(square)):
             __ nums[i] + square[j] <= l:
                 square[j] += nums[i]
                 __ self.dfs(nums, i + 1, l, square):
-                    return True
+                    r.. True
                 square[j] -= nums[i]
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().makesquare([1,1,2,2,2]) == True
-    assert Solution().makesquare([3,3,3,3,4]) == False
+__ __name__ __ "__main__":
+    ... Solution().makesquare([1,1,2,2,2]) __ True
+    ... Solution().makesquare([3,3,3,3,4]) __ False

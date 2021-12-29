@@ -5,24 +5,24 @@ class Solution:
     """
     ___ atoi(self, s):
         NOT_FOUND = 0
-        __ not s:
-            return NOT_FOUND
+        __ n.. s:
+            r.. NOT_FOUND
 
-        n = len(s)
+        n = l..(s)
         is_negative = False
         left, right = 0, n - 1
 
-        while left < n and s[left] == ' ':
+        while left < n and s[left] __ ' ':
             left += 1
-        while right >= 0 and s[right] == ' ':
+        while right >= 0 and s[right] __ ' ':
             right -= 1
 
-        __ left < n and s[left] in ('+', '-'):
-            is_negative = (s[left] == '-')
+        __ left < n and s[left] __ ('+', '-'):
+            is_negative = (s[left] __ '-')
             left += 1
 
         __ left > right:
-            return NOT_FOUND
+            r.. NOT_FOUND
 
         ans = 0
         zero = ord('0')
@@ -37,8 +37,8 @@ class Solution:
             ans *= -1
 
         __ ans > INT_MAX:
-            return INT_MAX
+            r.. INT_MAX
         __ ans < INT_MIN:
-            return INT_MIN
+            r.. INT_MIN
 
-        return ans
+        r.. ans

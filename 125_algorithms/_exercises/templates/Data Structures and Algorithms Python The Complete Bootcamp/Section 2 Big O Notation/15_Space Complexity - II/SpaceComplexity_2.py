@@ -2,7 +2,7 @@ ___ all_cubes(items):
     result  []
 
     ___ item __ items:
-        result.append(pow(item,3)) #O(n)
+        result.a..(pow(item,3)) #O(n)
 
     print(result)
 

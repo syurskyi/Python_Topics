@@ -11,26 +11,26 @@ class Solution:
     # @param s, a string
     # @return a string
     ___ reverseWords(self, s):
-        ls = list(s)
+        ls = l..(s)
         # C-like processing
         # Process spaces
         i = 0
-        j = len(s) - 1
+        j = l..(s) - 1
         while i <= j:
             __ ls[i] != ' ' and ls[j] != ' ':
                 break
-            __ ls[i] == ' ':
+            __ ls[i] __ ' ':
                 i += 1
-            __ ls[j] == ' ':
+            __ ls[j] __ ' ':
                 j -= 1
         start = i
         end = j
         # Remove duplicate spaces between words
         k = start  # Last processed
-        for p in range(start, end + 1):
-            __ p > start and ls[p] == ' ' and ls[p] == ls[p - 1]:
+        ___ p __ r..(start, end + 1):
+            __ p > start and ls[p] __ ' ' and ls[p] __ ls[p - 1]:
                 pass
-            else:
+            ____:
                 ls[k] = ls[p]
                 k += 1
         end = k - 1
@@ -42,12 +42,12 @@ class Solution:
         # Reverse each word
         ws = start  # Word start index
         we = start  # Word end index
-        for i in range(start, end + 1):
-            __ ls[i] == ' ' or i == end:
-                we = end __ i == end else i - 1
+        ___ i __ r..(start, end + 1):
+            __ ls[i] __ ' ' o. i __ end:
+                we = end __ i __ end ____ i - 1
                 self.reverse(ls, ws, we)
                 ws = i + 1
-        return ''.join(ls[start:end + 1])
+        r.. ''.join(ls[start:end + 1])
 
     ___ reverse(self, a, i, j):
         while i < j:
@@ -56,25 +56,25 @@ class Solution:
             j -= 1
 
     ___ reverseWords2(self, s):
-        cs = list(s)  # Make a C-string like list
-        n = len(cs)
+        cs = l..(s)  # Make a C-string like list
+        n = l..(cs)
         # Remove leading and trailing spaces
         left = 0
         right = n - 1
-        while left <= right and (cs[left] == ' ' or cs[right] == ' '):
-            __ cs[left] == ' ':
+        while left <= right and (cs[left] __ ' ' o. cs[right] __ ' '):
+            __ cs[left] __ ' ':
                 left += 1
-            __ cs[right] == ' ':
+            __ cs[right] __ ' ':
                 right -= 1
         # The string contains only spaces
         __ left > right:
-            return ''
+            r.. ''
         # Reverse the whole list
         self.reverse(cs, left, right)
         # Remove multiple spaces between two words
         j = left
-        for i in range(left, right + 1):
-            __ cs[i] != ' ' or cs[i] == ' ' and cs[i - 1] != ' ':
+        ___ i __ r..(left, right + 1):
+            __ cs[i] != ' ' o. cs[i] __ ' ' and cs[i - 1] != ' ':
                 cs[j] = cs[i]
                 j += 1
         right = j - 1
@@ -88,10 +88,10 @@ class Solution:
             self.reverse(cs, start, q - 1)
             # Start of next word
             start = q
-            while start <= right and cs[start] == ' ':
+            while start <= right and cs[start] __ ' ':
                 start += 1
             q = start
-        return ''.join(cs[left:right + 1])
+        r.. ''.join(cs[left:right + 1])
 
 
 s = Solution()

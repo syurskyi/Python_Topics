@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from point_mutations import hamming_distance
+____ point_mutations _______ hamming_distance
 
 
 class PointMutationsTest(unittest.TestCase):
@@ -32,5 +32,5 @@ class PointMutationsTest(unittest.TestCase):
             hamming_distance('GACTACGGACAGGGTAGGGAAT', 'GACATCGCACACC'), 5)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

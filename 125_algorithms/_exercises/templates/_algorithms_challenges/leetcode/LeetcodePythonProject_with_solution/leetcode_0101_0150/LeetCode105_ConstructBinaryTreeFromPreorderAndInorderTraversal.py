@@ -7,8 +7,8 @@ Created on May 30, 2018
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ buildTree(self, preorder, inorder):
@@ -17,11 +17,11 @@ class Solution(object):
         :type inorder: List[int]
         :rtype: TreeNode
         """
-        return self.helper(preorder, 0, len(preorder)-1, inorder, 0, len(inorder)-1)
+        r.. self.helper(preorder, 0, l..(preorder)-1, inorder, 0, l..(inorder)-1)
     
     ___ helper(self, preorder, pstart, pend, inorder, istart, iend):
-        __ pstart > pend or istart > iend:
-            return None
+        __ pstart > pend o. istart > iend:
+            r.. N..
         val = preorder[pstart]
         root = TreeNode(val)
         k = inorder.index(val)
@@ -42,4 +42,4 @@ class Solution(object):
         root.right = self.helper(preorder, new_pstart, new_pend,\
                                 inorder, new_istart, new_iend)
         
-        return root
+        r.. root

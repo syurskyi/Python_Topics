@@ -1,11 +1,11 @@
 class InputCell(object):
     ___ __init__(self, initial_value):
-        self.value = None
+        self.value = N..
 
 
 class ComputeCell(object):
     ___ __init__(self, inputs, compute_function):
-        self.value = None
+        self.value = N..
 
     ___ add_callback(self, callback):
         pass

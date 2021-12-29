@@ -1,6 +1,6 @@
 ___ avg(num1,num2):
     x  (num1+num2)/2
-    return x
+    r.. x
 
 y  i..(input("Insert first value: "))
 z  i..(input("Insert second value: "))

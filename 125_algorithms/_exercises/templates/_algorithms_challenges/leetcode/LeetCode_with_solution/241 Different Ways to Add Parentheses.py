@@ -21,7 +21,7 @@ Input: "2*3-4*5"
 (((2*3)-4)*5) = 10
 Output: [-34, -14, -10, -10, 10]
 """
-import re
+_______ re
 
 __author__ = 'Daniel'
 
@@ -35,33 +35,33 @@ class Solution:
         :rtype: list[]
         """
         input_lst = re.split(r"(\D)", input)  # capturing parentheses
-        nums = map(int, filter(lambda x: re.match(r"\d+", x), input_lst))
-        ops = filter(lambda x: re.match(r"\D", x), input_lst)
+        nums = map(int, filter(l.... x: re.match(r"\d+", x), input_lst))
+        ops = filter(l.... x: re.match(r"\D", x), input_lst)
         ret = self.dfs_eval(nums, ops)
-        return ret
+        r.. ret
 
     ___ dfs_eval(self, nums, ops):
-        ret = []
-        __ not ops:
-            assert len(nums) == 1
-            return nums
+        ret    # list
+        __ n.. ops:
+            ... l..(nums) __ 1
+            r.. nums
 
-        for i, op in enumerate(ops):
+        ___ i, op __ enumerate(ops):
             left_vals = self.dfs_eval(nums[:i+1], ops[:i])
             right_vals = self.dfs_eval(nums[i+1:], ops[i+1:])
-            for l in left_vals:
-                for r in right_vals:
-                    ret.append(self._eval(l, r, op))
+            ___ l __ left_vals:
+                ___ r __ right_vals:
+                    ret.a..(self._eval(l, r, op))
 
-        return ret
+        r.. ret
 
     ___ _eval(self, a, b, op):
-        return {
-            "+": lambda a, b: a+b,
-            "-": lambda a, b: a-b,
-            "*": lambda a, b: a*b,
+        r.. {
+            "+": l.... a, b: a+b,
+            "-": l.... a, b: a-b,
+            "*": l.... a, b: a*b,
         }[op](a, b)
 
 
-__ __name__ == "__main__":
-    assert Solution().diffWaysToCompute("1+1") == [2]
+__ __name__ __ "__main__":
+    ... Solution().diffWaysToCompute("1+1") __ [2]

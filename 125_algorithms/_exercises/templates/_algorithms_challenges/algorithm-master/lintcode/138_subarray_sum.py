@@ -14,22 +14,22 @@ class Solution:
         => if got the same sum in following iteration
         => start = hashmap[sum] + 1, end = i
         """
-        __ not nums:
-            return []
+        __ n.. nums:
+            r.. []
 
         sum_to_index = {}
         sum_to_index[0] = -1
 
         prefix_sum = 0
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             prefix_sum += nums[i]
 
-            __ prefix_sum in sum_to_index:
-                return [
+            __ prefix_sum __ sum_to_index:
+                r.. [
                     sum_to_index[prefix_sum] + 1,
                     i
                 ]
 
             sum_to_index[prefix_sum] = i
 
-        return []
+        r.. []

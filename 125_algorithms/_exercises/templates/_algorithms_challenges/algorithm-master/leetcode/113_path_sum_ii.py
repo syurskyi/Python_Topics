@@ -15,24 +15,24 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
         self.dfs(root, target, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, remaining, ans, path):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        path.append(node.val)
+        path.a..(node.val)
 
-        __ not node.left and not node.right and remaining == node.val:
-            ans.append(path[:])
-        else:
+        __ n.. node.left and n.. node.right and remaining __ node.val:
+            ans.a..(path[:])
+        ____:
             self.dfs(node.left, remaining - node.val, ans, path)
             self.dfs(node.right, remaining - node.val, ans, path)
 

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import hamming
+_______ hamming
 
 
 class HammingTest(unittest.TestCase):
@@ -27,5 +27,5 @@ class HammingTest(unittest.TestCase):
         self.assertEqual(9, hamming.distance('GGACGGATTCTG', 'AGGACGGATTCT'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

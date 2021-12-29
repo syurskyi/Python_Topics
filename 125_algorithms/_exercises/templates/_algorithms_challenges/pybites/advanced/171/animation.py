@@ -1,6 +1,6 @@
-from itertools import cycle
-import sys
-from time import time, sleep
+____ itertools _______ cycle
+_______ sys
+____ time _______ time, sleep
 
 SPINNER_STATES = ['-', '\\', '|', '/']  # had to escape \
 STATE_TRANSITION_TIME = 0.1
@@ -23,5 +23,5 @@ ___ spinner(seconds):
         sleep(STATE_TRANSITION_TIME)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     spinner(2)

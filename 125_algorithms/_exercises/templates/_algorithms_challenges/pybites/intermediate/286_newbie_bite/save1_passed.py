@@ -2,7 +2,7 @@
 ___ get_username():
     while True:
         username = input("Please type in the name 'PyBites':")
-        __ username == "PyBites":
+        __ username __ "PyBites":
             break
-        else:
+        ____:
             print("Invalid username.")

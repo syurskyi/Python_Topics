@@ -1,7 +1,7 @@
 class UnionFind():
   ___ __init__(self, m, n):
-    self.dad = [i for i in range(0, m * n)]
-    self.rank = [0 for i in range(0, m * n)]
+    self.dad = [i ___ i __ r..(0, m * n)]
+    self.rank = [0 ___ i __ r..(0, m * n)]
     self.m = m
     self.n = n
 
@@ -9,21 +9,21 @@ class UnionFind():
     dad = self.dad
     __ dad[x] != x:
       dad[x] = self.find(dad[x])
-    return dad[x]
+    r.. dad[x]
 
   ___ union(self, xy):
     dad = self.dad
     rank = self.rank
     x, y = map(self.find, xy)
-    __ x == y:
-      return False
+    __ x __ y:
+      r.. False
     __ rank[x] > rank[y]:
       dad[y] = x
-    else:
+    ____:
       dad[x] = y
-      __ rank[x] == rank[y]:
+      __ rank[x] __ rank[y]:
         rank[y] += 1
-    return True
+    r.. True
 
 
 class Solution:
@@ -31,34 +31,34 @@ class Solution:
   # @return nothing 
   ___ solve(self, board):
     # Write your code here
-    __ len(board) == 0:
-      return
+    __ l..(board) __ 0:
+      r..
     regions = set([])
-    n, m = len(board), len(board[0])
-    uf = UnionFind(len(board[0]), len(board))
+    n, m = l..(board), l..(board[0])
+    uf = UnionFind(l..(board[0]), l..(board))
     directions = {"u": (-1, 0), "d": (1, 0), "l": (0, -1), "r": (0, 1)}
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
-        __ board[i][j] == 'X':
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
+        __ board[i][j] __ 'X':
           continue
-        for d in ["d", "r"]:
+        ___ d __ ["d", "r"]:
           di, dj = directions[d]
           newi, newj = i + di, j + dj
-          __ newi >= 0 and newi < len(board) and newj >= 0 and newj < len(board[0]):
-            __ board[newi][newj] == "O":
+          __ newi >= 0 and newi < l..(board) and newj >= 0 and newj < l..(board[0]):
+            __ board[newi][newj] __ "O":
               uf.union((newi * m + newj, i * m + j))
 
-    for i in range(0, len(board)):
-      for j in [0, len(board[0]) - 1]:
-        __ board[i][j] == "O":
+    ___ i __ r..(0, l..(board)):
+      ___ j __ [0, l..(board[0]) - 1]:
+        __ board[i][j] __ "O":
           regions.add(uf.find(i * m + j))
 
-    for j in range(0, len(board[0])):
-      for i in [0, len(board) - 1]:
-        __ board[i][j] == "O":
+    ___ j __ r..(0, l..(board[0])):
+      ___ i __ [0, l..(board) - 1]:
+        __ board[i][j] __ "O":
           regions.add(uf.find(i * m + j))
 
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
-        __ board[i][j] == "O" and uf.find(i * m + j) not in regions:
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
+        __ board[i][j] __ "O" and uf.find(i * m + j) n.. __ regions:
           board[i][j] = "X"

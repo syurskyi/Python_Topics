@@ -20,18 +20,18 @@ class Solution:
         Let lefts[i] be the max(height[:i])
         Let rights[i] be the max(height[i:])
         """
-        n = len(height)
-        lefts = [0 for _ in range(n+1)]
-        rights = [0 for _ in range(n+1)]
-        for i in range(1, n+1):  # i, index of lefts
+        n = l..(height)
+        lefts = [0 ___ _ __ r..(n+1)]
+        rights = [0 ___ _ __ r..(n+1)]
+        ___ i __ r..(1, n+1):  # i, index of lefts
             lefts[i] = max(lefts[i-1], height[i-1])
-        for i in range(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1):
             rights[i] = max(rights[i+1], height[i])
 
         ret = 0
-        for i in range(n):
+        ___ i __ r..(n):
             ret += max(
                 0,
-                min(lefts[i], rights[i+1]) - height[i]
+                m..(lefts[i], rights[i+1]) - height[i]
             )
-        return ret
+        r.. ret

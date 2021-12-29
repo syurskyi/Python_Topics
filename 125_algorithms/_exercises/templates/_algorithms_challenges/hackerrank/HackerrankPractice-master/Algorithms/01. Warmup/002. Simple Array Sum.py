@@ -3,5 +3,5 @@
 
 
 n = int(input())
-arr = list(map(int, input().split()))
-print(sum(arr))
+arr = l..(map(int, input().split()))
+print(s..(arr))

@@ -15,13 +15,13 @@ class Solution(object):
     stack = [(1, root)]
     while stack:
       cmd, p = stack.pop()
-      __ not p:
+      __ n.. p:
         continue
-      __ cmd == 0:
+      __ cmd __ 0:
         k -= 1
-        __ k == 0:
-          return p.val
-      else:
-        stack.append((1, p.right))
-        stack.append((0, p))
-        stack.append((1, p.left))
+        __ k __ 0:
+          r.. p.val
+      ____:
+        stack.a..((1, p.right))
+        stack.a..((0, p))
+        stack.a..((1, p.left))

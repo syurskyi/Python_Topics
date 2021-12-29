@@ -1,11 +1,11 @@
-import math
+_______ math
 
 x  i..(input("Insert any number to check: "))
 
 __ x<2:
     print("Please, insert number greater than or equal to 2")
     quit()
-elif x __ 2:
+____ x __ 2:
     print("This is a prime number!")
     quit()
 

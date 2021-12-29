@@ -1,5 +1,5 @@
-import re
-from pprint import pprint
+_______ re
+____ pprint _______ pprint
 
 COURSE = ('Introduction 1 Lecture 01:47'
           'The Basics 4 Lectures 32:03'
@@ -20,7 +20,7 @@ ___ extract_course_times(course=COURSE):
        ['01:47', '32:03', '41:51', '27:48', '05:02']
        Return this list.
     """
-    return re.findall(r'(\d\d:\d\d)', course)
+    r.. re.findall(r'(\d\d:\d\d)', course)
 
 
 ___ get_all_hashtags_and_links(tweet=TWEET):
@@ -32,7 +32,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
         '#APIs']
        Return this list.
     """
-    return re.findall(r'(#\w+|https?://[^\s]*)', tweet)
+    r.. re.findall(r'(#\w+|https?://[^\s]*)', tweet)
 
 
 ___ match_first_paragraph(html=HTML):
@@ -42,9 +42,9 @@ ___ match_first_paragraph(html=HTML):
        Return this string.
     """
     result = re.search(r'<p>(.+?)</p>', html)
-    return result.group(1) __ result else ''
+    r.. result.group(1) __ result ____ ''
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     pprint(extract_course_times())
     pprint(get_all_hashtags_and_links())
     pprint(match_first_paragraph())

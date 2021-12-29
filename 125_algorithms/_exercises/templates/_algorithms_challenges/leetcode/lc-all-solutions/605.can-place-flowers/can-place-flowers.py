@@ -7,10 +7,10 @@ class Solution(object):
     """
     ans = 0
     cnt = 1
-    for plot in flowerbed:
-      __ plot == 0:
+    ___ plot __ flowerbed:
+      __ plot __ 0:
         cnt += 1
-      else:
+      ____:
         ans += abs(cnt - 1) / 2
         cnt = 0
-    return ans + cnt / 2 >= n
+    r.. ans + cnt / 2 >= n

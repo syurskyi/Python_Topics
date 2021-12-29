@@ -19,7 +19,7 @@ c_ Stack(
         top  N..
         minNode  N..
     
-    ___ min(self
+    ___ m..(self
         __ no. minNode:
             r_ N..
         r_ minNode.value
@@ -41,11 +41,11 @@ c_ Stack(
 
 customStack  Stack()
 customStack.push(5)
-print(customStack.min())
+print(customStack.m..())
 customStack.push(6)
-print(customStack.min())
+print(customStack.m..())
 customStack.push(3)
-print(customStack.min())
+print(customStack.m..())
 customStack.pop()
-print(customStack.min())
+print(customStack.m..())
 

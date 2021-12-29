@@ -4,11 +4,11 @@ class Solution:
     @return: The second max number in the array.
     """
     ___ secondMax(self, A):
-        __ not A:
-            return
+        __ n.. A:
+            r..
 
         max1 = max2 = float('-inf')
-        for a in A:
+        ___ a __ A:
             __ a > max1:
                 max2 = max1
                 max1 = a
@@ -16,4 +16,4 @@ class Solution:
             __ a > max2:
                 max2 = a
 
-        return max2
+        r.. max2

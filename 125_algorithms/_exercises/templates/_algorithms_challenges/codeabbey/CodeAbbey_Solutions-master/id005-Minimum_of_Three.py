@@ -1,10 +1,10 @@
 # Python 3.4
 ___ min_of_three():
     runs = int(input())
-    answer = []
+    answer    # list
     
-    for run in range(runs):
-        answer.append(str(min([int(x) for x in input().split()])))
+    ___ run __ r..(runs):
+        answer.a..(str(m..([int(x) ___ x __ input().s.. ])))
         
     print(' '.join(answer))
 

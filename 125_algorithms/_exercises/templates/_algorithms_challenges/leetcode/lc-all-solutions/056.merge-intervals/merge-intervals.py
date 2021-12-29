@@ -10,10 +10,10 @@ class Solution(object):
     :type intervals: List[Interval]
     :rtype: List[Interval]
     """
-    ans = []
-    for intv in sorted(intervals, key=lambda x: x.start):
+    ans    # list
+    ___ intv __ s..(intervals, key=l.... x: x.start):
       __ ans and ans[-1].end >= intv.start:
         ans[-1].end = max(ans[-1].end, intv.end)
-      else:
-        ans.append(intv)
-    return ans
+      ____:
+        ans.a..(intv)
+    r.. ans

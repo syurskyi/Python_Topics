@@ -10,30 +10,30 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        l, r = 0, len(nums)
+        l, r = 0, l..(nums)
         res = [float('inf'), float('-inf')]
         while l < r:
             mid = (l+r)//2
-            __ target == nums[mid]:
+            __ target __ nums[mid]:
                 res[1] = max(res[1], mid)
                 l = mid+1
-            elif target < nums[mid]:
+            ____ target < nums[mid]:
                 r = mid
-            else:
+            ____:
                 l = mid+1
-        l, r = 0, len(nums)
+        l, r = 0, l..(nums)
         while l < r:
             mid = (l+r)//2
-            __ target == nums[mid]:
-                res[0] = min(res[0], mid)
+            __ target __ nums[mid]:
+                res[0] = m..(res[0], mid)
                 r = mid
-            elif target < nums[mid]:
+            ____ target < nums[mid]:
                 r = mid
-            else:
+            ____:
                 l = mid+1
-        __ r == len(nums):
-            return [-1, -1]
-        return res __ res != [float('inf'), float('-inf')] else [-1, -1]
+        __ r __ l..(nums):
+            r.. [-1, -1]
+        r.. res __ res != [float('inf'), float('-inf')] ____ [-1, -1]
     
     ___ test(self):
         testCases = [
@@ -54,12 +54,12 @@ class Solution(object):
                 8,
             ]
         ]
-        for nums, target in testCases:
+        ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
             result = self.searchRange(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

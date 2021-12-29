@@ -4,10 +4,10 @@ ___ sort_words_case_insensitively(words):
         numbers you only need to check the first char of the word)
     """
 
-    w = [word for word in words __ str(word)[0].isalpha()]
-    d = [word for word in words __ str(word)[0].isdigit()]
+    w = [word ___ word __ words __ str(word)[0].isalpha()]
+    d = [word ___ word __ words __ str(word)[0].isdigit()]
 
 
 
-    return sorted(w,key=lambda val: val.lower()) + sorted(d,key=lambda val: val.lower())
+    r.. s..(w,key=l.... val: val.lower()) + s..(d,key=l.... val: val.lower())
     

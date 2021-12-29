@@ -3,19 +3,19 @@ QUIT_CHAR = 'q'
 MAX_NAMES = 5
 
 ___ filter_names(names):
-    names_list = []
+    names_list    # list
     names_list_number = 0
-    for name in names:
-        __ name not in names_list:
+    ___ name __ names:
+        __ name n.. __ names_list:
             __ name.isalpha():
-                __ IGNORE_CHAR in name:
+                __ IGNORE_CHAR __ name:
                     continue
-                elif QUIT_CHAR in name:
+                ____ QUIT_CHAR __ name:
                     break
-                else:
+                ____:
                     __ names_list_number >= MAX_NAMES:
                         break
-                    else:
-                        names_list.append(name)
+                    ____:
+                        names_list.a..(name)
                         names_list_number += 1
-    return names_list
+    r.. names_list

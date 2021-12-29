@@ -5,25 +5,25 @@ class Hexa:
                    'd': 13,
                    'e': 14,
                    'f': 15}
-    VALID_CHARS = set(list(map(str, list(range(0, 10)))) +
-                      list(CHAR_VALUES.keys()))
+    VALID_CHARS = set(l..(map(str, l..(r..(0, 10)))) +
+                      l..(CHAR_VALUES.keys()))
     BASE = 16
 
     @classmethod
     ___ convert(cls, inp):
-        __ not cls.valid(inp):
+        __ n.. cls.valid(inp):
             raise ValueError
-        return sum([cls.convert_char(char) * cls.BASE**index for index, char in
+        r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
                     enumerate(reversed(inp))])
 
     @classmethod
     ___ valid(cls, inp):
-        return set(inp) <= cls.VALID_CHARS
+        r.. set(inp) <= cls.VALID_CHARS
 
     @classmethod
     ___ convert_char(cls, char):
-        return int(char) __ char.isdigit() else cls.CHAR_VALUES[char]
+        r.. int(char) __ char.isdigit() ____ cls.CHAR_VALUES[char]
 
 
 ___ hexa(inp):
-    return Hexa.convert(inp.lower())
+    r.. Hexa.convert(inp.lower())

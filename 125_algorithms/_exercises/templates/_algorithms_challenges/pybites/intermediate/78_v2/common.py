@@ -3,12 +3,12 @@ ___ common_languages(programmers):
       of programming languages, return the common languages"""
    common = set()
 
-   for i in range(len(programmers)):
-      for key, value in programmers.items():
-         __ i == 1:
+   ___ i __ r..(l..(programmers)):
+      ___ key, value __ programmers.items():
+         __ i __ 1:
             common.update(value)
          common = common.intersection(value)
-   return common
+   r.. common
 
 
 # if __name__ == "__main__":

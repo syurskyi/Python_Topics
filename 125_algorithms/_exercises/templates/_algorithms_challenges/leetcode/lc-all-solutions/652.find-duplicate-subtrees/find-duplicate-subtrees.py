@@ -7,21 +7,21 @@
 
 class Solution(object):
   ___ findDuplicateSubtrees(self, root):
-    from hashlib import sha256
+    ____ hashlib _______ sha256
     ___ hash_(x):
       S = sha256()
       S.update(x)
-      return S.hexdigest()
+      r.. S.hexdigest()
 
     ___ merkle(node):
-      __ not node:
-        return '#'
+      __ n.. node:
+        r.. '#'
       m_left = merkle(node.left)
       m_right = merkle(node.right)
       node.merkle = hash_(m_left + str(node.val) + m_right)
-      count[node.merkle].append(node)
-      return node.merkle
+      count[node.merkle].a..(node)
+      r.. node.merkle
 
-    count = collections.defaultdict(list)
+    count = collections.defaultdict(l..)
     merkle(root)
-    return [nodes.pop() for nodes in count.values() __ len(nodes) >= 2]
+    r.. [nodes.pop() ___ nodes __ count.values() __ l..(nodes) >= 2]

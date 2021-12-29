@@ -3,17 +3,17 @@ class Solution(object):
     ___ find(x):
       __ parent[x] != x:
         parent[x] = find(parent[x])
-      return parent[x]
+      r.. parent[x]
 
     ___ union(xy):
       x, y = map(find, xy)
       __ rank[x] > rank[y]:
         parent[y] = x
-      else:
+      ____:
         parent[x] = y
-        __ rank[x] == rank[y]:
+        __ rank[x] __ rank[y]:
           rank[y] += 1
 
-    parent, rank = range(n), [0] * n
+    parent, rank = r..(n), [0] * n
     map(union, edges)
-    return len({find(x) for x in parent})
+    r.. l..({find(x) ___ x __ parent})

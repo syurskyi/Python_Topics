@@ -1,19 +1,19 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_bmi(weight, height):
-    return weight/height**2
+    r.. weight/height**2
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     weight, height = map(float, input().split())
     bmi = get_bmi(weight, height)
     __(bmi < 18.5):
-        results.append("under")
-    elif(bmi >= 18.5 and bmi < 25):
-        results.append("normal")
-    elif(bmi >= 25 and bmi < 30):
-        results.append("over")
-    else:
-        results.append("obese")
+        results.a..("under")
+    ____(bmi >= 18.5 and bmi < 25):
+        results.a..("normal")
+    ____(bmi >= 25 and bmi < 30):
+        results.a..("over")
+    ____:
+        results.a..("obese")
 
 print(*results)

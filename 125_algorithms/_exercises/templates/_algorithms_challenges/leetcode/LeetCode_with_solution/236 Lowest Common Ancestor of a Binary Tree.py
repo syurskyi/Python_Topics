@@ -21,8 +21,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -36,28 +36,28 @@ class Solution:
         :type q: TreeNode
         :rtype: TreeNode
         """
-        path1, path2 = [], []
+        path1, path2    # list, []
         self.dfs(root, p, path1, [False])
         self.dfs(root, q, path2, [False])
 
         i = 0
-        while i < min(len(path1), len(path2)):
+        while i < m..(l..(path1), l..(path2)):
             __ path1[i] != path2[i]:
-                return path1[i-1]
+                r.. path1[i-1]
             i += 1
 
-        return path1[i-1]
+        r.. path1[i-1]
 
     ___ dfs(self, root, t, path, found):
-        __ not root or found[0]:  # post-call check
-            return
+        __ n.. root o. found[0]:  # post-call check
+            r..
 
-        path.append(root)
-        __ root == t:
+        path.a..(root)
+        __ root __ t:
             found[0] = True
 
         self.dfs(root.left, t, path, found)
         self.dfs(root.right, t, path, found)
-        __ not found[0]:
+        __ n.. found[0]:
             path.pop()  # 1 pop() corresponds to 1 append()
 

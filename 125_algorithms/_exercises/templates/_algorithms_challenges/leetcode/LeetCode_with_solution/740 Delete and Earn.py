@@ -32,8 +32,8 @@ Note:
 The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -46,18 +46,18 @@ class Solution:
             F[n-2] + reward if pick n
 
         """
-        rewards = [0 for _ in range(10001)]
-        for num in nums:
+        rewards = [0 ___ _ __ r..(10001)]
+        ___ num __ nums:
             rewards[num] += num
 
         # whether to pick the number or not
         cur, prev = 0, 0
-        for reward in rewards:
+        ___ reward __ rewards:
             nxt = max(cur, prev + reward)
             prev = cur
             cur = nxt
 
-        return cur
+        r.. cur
 
     ___ deleteAndEarn_dp(self, nums: List[int]) -> int:
         """
@@ -69,17 +69,17 @@ class Solution:
 
         """
         counter = defaultdict(int)
-        for n in nums:
+        ___ n __ nums:
             counter[n] += 1
 
-        F = [0 for _ in range(10000 + 3)]
-        for i in range(3, 10000 + 3):
+        F = [0 ___ _ __ r..(10000 + 3)]
+        ___ i __ r..(3, 10000 + 3):
             cur = i - 2
             F[i] = max(
                 F[i-1],
                 F[i-2] + counter[cur] * cur
             )
-        return F[-1]
+        r.. F[-1]
 
     ___ deleteAndEarn_slow(self, nums: List[int]) -> int:
         """
@@ -90,32 +90,32 @@ class Solution:
         """
         nums.sort()
         # transform to (num, count)
-        counter = []
+        counter    # list
         i = 0
         j = 0
-        while i < len(nums):
-            while j < len(nums) and nums[i] == nums[j]:
+        while i < l..(nums):
+            while j < l..(nums) and nums[i] __ nums[j]:
                 j += 1
-            counter.append((nums[i], j - i))
+            counter.a..((nums[i], j - i))
             i = j
 
         # F[i] be the max points delete counter[i]
-        F = [0 for _ in counter]
-        for i in range(len(counter)):
+        F = [0 ___ _ __ counter]
+        ___ i __ r..(l..(counter)):
             F[i] = counter[i][0] * counter[i][1]
             F[i] += max(
                 [
                     F[j]
-                    for j in range(i)
+                    ___ j __ r..(i)
                     __ counter[j][0] != counter[i][0] - 1
                 ]
-                or [0]
+                o. [0]
             )
 
-        return max(F or [0])
+        r.. max(F o. [0])
 
 
-__ __name__ == "__main__":
-    assert Solution().deleteAndEarn([1,1,1,2,4,5,5,5,6]) == 18
-    assert Solution().deleteAndEarn([3, 4, 2]) == 6
-    assert Solution().deleteAndEarn([2, 2, 3, 3, 3, 4]) == 9
+__ __name__ __ "__main__":
+    ... Solution().deleteAndEarn([1,1,1,2,4,5,5,5,6]) __ 18
+    ... Solution().deleteAndEarn([3, 4, 2]) __ 6
+    ... Solution().deleteAndEarn([2, 2, 3, 3, 3, 4]) __ 9

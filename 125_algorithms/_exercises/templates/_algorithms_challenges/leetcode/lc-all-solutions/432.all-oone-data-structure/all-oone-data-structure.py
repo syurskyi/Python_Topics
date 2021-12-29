@@ -3,8 +3,8 @@ class List(object):
   ___ delete(elem):
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
-    elem.next = elem.prev = None
-    return elem
+    elem.next = elem.prev = N..
+    r.. elem
 
   @staticmethod
   ___ move(elem, newPrev, newNext):
@@ -14,7 +14,7 @@ class List(object):
     newNext.prev = elem
 
   @staticmethod
-  ___ append(head, elem):
+  ___ a..(head, elem):
     List.move(elem, head.prev, head)
 
   @staticmethod
@@ -23,7 +23,7 @@ class List(object):
 
   @staticmethod
   ___ isEmpty(head):
-    return head.next == head.prev == head
+    r.. head.next __ head.prev __ head
 
   @staticmethod
   ___ initHead(head):
@@ -33,8 +33,8 @@ class List(object):
 class Node(object):
   ___ __init__(self, val):
     self.val = val
-    self.prev = None
-    self.next = None
+    self.prev = N..
+    self.next = N..
     self.keys = set()
 
   ___ add(self, key):
@@ -44,12 +44,12 @@ class Node(object):
     self.keys -= {key}
 
   ___ isEmpty(self):
-    return len(self.keys) == 0
+    r.. l..(self.keys) __ 0
 
   ___ peepKey(self):
-    for k in self.keys:
-      return k
-    return ""
+    ___ k __ self.keys:
+      r.. k
+    r.. ""
 
 
 class AllOne(object):
@@ -69,23 +69,23 @@ class AllOne(object):
     :rtype: void
     """
     head = self.head
-    __ key not in self.d:
-      __ head.next.val == 1:
+    __ key n.. __ self.d:
+      __ head.next.val __ 1:
         self.d[key] = head.next
         self.d[key].add(key)
-      else:
+      ____:
         newNode = Node(1)
         newNode.add(key)
         List.insertAfter(head, newNode)
         self.d[key] = newNode
-    else:
+    ____:
       node = self.d[key]
-      newNode = None
+      newNode = N..
       __ node.next.val != node.val + 1:
         newNode = Node(node.val + 1)
         newNode.add(key)
         List.insertAfter(node, newNode)
-      else:
+      ____:
         newNode = node.next
         newNode.add(key)
 
@@ -101,22 +101,22 @@ class AllOne(object):
     :type key: str
     :rtype: void
     """
-    __ key not in self.d:
-      return
+    __ key n.. __ self.d:
+      r..
     head = self.head
     node = self.d[key]
-    __ node.val == 1:
+    __ node.val __ 1:
       node.remove(key)
       __ node.isEmpty():
         List.delete(node)
       del self.d[key]
-    else:
-      newNode = None
+    ____:
+      newNode = N..
       __ node.prev.val != node.val - 1:
         newNode = Node(node.val - 1)
         newNode.add(key)
         List.insertAfter(node.prev, newNode)
-      else:
+      ____:
         newNode = node.prev
         newNode.add(key)
       node.remove(key)
@@ -130,14 +130,14 @@ class AllOne(object):
     Returns one of the keys with maximal value.
     :rtype: str
     """
-    return self.head.prev.peepKey()
+    r.. self.head.prev.peepKey()
 
   ___ getMinKey(self):
     """
     Returns one of the keys with Minimal value.
     :rtype: str
     """
-    return self.head.next.peepKey()
+    r.. self.head.next.peepKey()
 
 # Your AllOne object will be instantiated and called as such:
 # obj = AllOne()

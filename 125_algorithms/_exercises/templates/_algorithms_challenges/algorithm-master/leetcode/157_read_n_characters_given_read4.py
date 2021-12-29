@@ -15,14 +15,14 @@ class Solution:
         :type n: int, Maximum number of characters to read
         :rtype: int, The number of characters read
         """
-        __ not buf or n <= 0:
-            return 0
+        __ n.. buf o. n <= 0:
+            r.. 0
 
         i = 0
         k = 4
         tmp = [0] * k
 
-        while i < n and k == 4:
+        while i < n and k __ 4:
             k = read4(tmp)
             j = 0
 
@@ -31,12 +31,12 @@ class Solution:
                 i += 1
                 j += 1
 
-        return i
+        r.. i
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     data = 'abcdferrdsjfklsdjfdsr'
-    n = len(data)
+    n = l..(data)
     i = 0
     k = 4
 
@@ -49,7 +49,7 @@ __ __name__ == '__main__':
             i += 1
             j += 1
 
-        return j
+        r.. j
 
     s = Solution()
     res = s.read([0] * 4, 4)

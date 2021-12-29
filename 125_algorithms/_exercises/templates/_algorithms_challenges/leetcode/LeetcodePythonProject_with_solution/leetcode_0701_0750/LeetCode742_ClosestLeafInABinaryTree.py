@@ -5,7 +5,7 @@ Created on Mar 21, 2018
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -23,42 +23,42 @@ class Solution(object):
         visited = set([kNode])
         while queue:
             curr = queue.pop(0)
-            __ not curr.left and not curr.right:
-                return curr.val
-            __ curr.left and curr.left not in visited:
-                queue.append(curr.left)
+            __ n.. curr.left and n.. curr.right:
+                r.. curr.val
+            __ curr.left and curr.left n.. __ visited:
+                queue.a..(curr.left)
                 visited.add(curr.left)
-            __ curr.right and curr.right not in visited:
-                queue.append(curr.right)
+            __ curr.right and curr.right n.. __ visited:
+                queue.a..(curr.right)
                 visited.add(curr.right)
-            __ curr in backMap and backMap[curr] not in visited:
-                queue.append(backMap[curr])
+            __ curr __ backMap and backMap[curr] n.. __ visited:
+                queue.a..(backMap[curr])
                 visited.add(backMap[curr])
-        return -1
+        r.. -1
     
     ___ dfs(self, root, k, backMap):
-        __ root.val == k:
-            return root
+        __ root.val __ k:
+            r.. root
         __ root.left:
             backMap[root.left] = root
             left = self.dfs(root.left, k, backMap)
             __ left:
-                return left
+                r.. left
         __ root.right:
             backMap[root.right] = root
             right = self.dfs(root.right, k, backMap)
             __ right:
-                return right
-        return None
+                r.. right
+        r.. N..
     
     ___ test(self):
         testCases = [
             
         ]
-        for root, k in testCases:
+        ___ root, k __ testCases:
             result = self.findClosestLeaf(root, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

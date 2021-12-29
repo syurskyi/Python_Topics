@@ -13,14 +13,14 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not H:
-            return ans
+        __ n.. H:
+            r.. ans
 
-        n = len(H)
+        n = l..(H)
         L = [0] * n  # lowest height
 
-        for left in range(n):
-            for right in range(left, n):
+        ___ left __ r..(n):
+            ___ right __ r..(left, n):
                 L[right] = H[right]
 
                 __ right > left and L[right - 1] < H[right]:
@@ -30,7 +30,7 @@ class Solution:
                 __ area > ans:
                     ans = area
 
-        return ans
+        r.. ans
 
 
 """
@@ -43,16 +43,16 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not H:
-            return ans
+        __ n.. H:
+            r.. ans
 
-        n = len(H)
+        n = l..(H)
 
-        for right in range(len(H)):
+        ___ right __ r..(l..(H)):
             __ right < n - 1 and H[right] <= H[right + 1]:
                 continue
             Hmin = H[right]
-            for left in range(right, -1, -1):
+            ___ left __ r..(right, -1, -1):
                 __ H[left] < Hmin:
                     Hmin = H[left]
 
@@ -60,7 +60,7 @@ class Solution:
                 __ area > ans:
                     ans = area
 
-        return ans
+        r.. ans
 
 
 """
@@ -73,19 +73,19 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not H:
-            return ans
+        __ n.. H:
+            r.. ans
 
-        H.append(0)
-        stack = []
+        H.a..(0)
+        stack    # list
 
-        for right in range(len(H)):
+        ___ right __ r..(l..(H)):
             while stack and H[stack[-1]] >= H[right]:
                 height = H[stack.pop()]
-                left = stack[-1] __ stack else -1
+                left = stack[-1] __ stack ____ -1
                 area = height * (right - left - 1)
                 __ area > ans:
                     ans = area
-            stack.append(right)
+            stack.a..(right)
 
-        return ans
+        r.. ans

@@ -1,4 +1,4 @@
-import math
+_______ math
 
 
 class ComplexNumber(object):
@@ -9,17 +9,17 @@ class ComplexNumber(object):
     ___ add(self, other):
         r = self.real + other.real
         i = self.imaginary + other.imaginary
-        return ComplexNumber(r, i)
+        r.. ComplexNumber(r, i)
 
     ___ mul(self, other):
         r = self.real * other.real
         i = self.imaginary * other.imaginary
-        return ComplexNumber(r, i)
+        r.. ComplexNumber(r, i)
 
     ___ sub(self, other):
         r = self.real - other.real
         i = self.imaginary - other.imaginary
-        return ComplexNumber(r, i)
+        r.. ComplexNumber(r, i)
 
     ___ div(self, other):
         d = other.real * other.real + other.imaginary * other.imaginary
@@ -27,16 +27,16 @@ class ComplexNumber(object):
              other.imaginary) / float(d)
         i = (self.imaginary * other.real - self.real *
              self.real * other.imaginary) / float(d)
-        return ComplexNumber(r, i)
+        r.. ComplexNumber(r, i)
 
     ___ abs(self):
         square_sum = self.real * self.real + self.imaginary * self.imaginary
-        return math.sqrt(square_sum)
+        r.. math.sqrt(square_sum)
 
     ___ conjugate(self):
-        return ComplexNumber(self.real, -1 * self.imaginary)
+        r.. ComplexNumber(self.real, -1 * self.imaginary)
 
     ___ exp(self):
         r = round(math.cos(self.imaginary), 8) * math.exp(self.real)
         i = round(math.sin(self.imaginary), 8) * math.exp(self.real)
-        return ComplexNumber(r, i)
+        r.. ComplexNumber(r, i)

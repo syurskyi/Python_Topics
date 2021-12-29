@@ -9,10 +9,10 @@ class Solution(object):
     patches = 0
     miss = 1
     while miss <= n:
-      __ i < len(nums) and nums[i] <= miss:
+      __ i < l..(nums) and nums[i] <= miss:
         miss += nums[i]
         i += 1
-      else:
+      ____:
         miss += miss
         patches += 1
-    return patches
+    r.. patches

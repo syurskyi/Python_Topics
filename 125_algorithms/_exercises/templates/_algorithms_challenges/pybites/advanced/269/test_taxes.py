@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from taxes import Bracket, Taxed, Taxes
+____ taxes _______ Bracket, Taxed, Taxes
 
 bracket_2020 = [
     Bracket(9_875, 0.1),
@@ -16,53 +16,53 @@ bracket_2020 = [
 @pytest.fixture(scope="module")
 ___ taxes_2019():
     income = 40_000
-    return Taxes(income)
+    r.. Taxes(income)
 
 
 @pytest.fixture(scope="module")
 ___ taxes_2020_low():
     income = 8_000
-    return Taxes(income, bracket_2020)
+    r.. Taxes(income, bracket_2020)
 
 
 @pytest.fixture(scope="module")
 ___ taxes_2020_over():
     income = 1_000_000
-    return Taxes(income, bracket_2020)
+    r.. Taxes(income, bracket_2020)
 
 
 ___ test_values(taxes_2019):
-    assert taxes_2019.income == 40_000
-    assert taxes_2019.total == 4_658.50
-    assert taxes_2019.tax_rate == 11.65
-    assert isinstance(taxes_2019.bracket, list)
-    assert isinstance(taxes_2019.bracket[0], Bracket)
+    ... taxes_2019.income __ 40_000
+    ... taxes_2019.total __ 4_658.50
+    ... taxes_2019.tax_rate __ 11.65
+    ... isi..(taxes_2019.bracket, l..)
+    ... isi..(taxes_2019.bracket[0], Bracket)
 
 
 ___ test_taxes(taxes_2019):
-    assert len(taxes_2019.tax_amounts) == 3
-    assert isinstance(taxes_2019.tax_amounts[0], Taxed)
-    assert taxes_2019.tax_amounts[2].tax == 115.50
+    ... l..(taxes_2019.tax_amounts) __ 3
+    ... isi..(taxes_2019.tax_amounts[0], Taxed)
+    ... taxes_2019.tax_amounts[2].tax __ 115.50
 
 
 ___ test_summary(taxes_2019):
     output = str(taxes_2019).splitlines()
-    assert len(output) == 5
-    assert "Summary Report" in output[0]
+    ... l..(output) __ 5
+    ... "Summary Report" __ output[0]
 
 
 ___ test_low_income(taxes_2020_low):
-    assert taxes_2020_low.taxes == 800.00
+    ... taxes_2020_low.taxes __ 800.00
 
 
 ___ test_report(taxes_2020_over, capfd):
     taxes_2020_over.report()
     output = capfd.readouterr()[0].strip().splitlines()
-    assert len(output) == 17
-    assert "Summary Report" in output[0]
-    assert "Taxes Breakdown" in output[6]
-    assert "=" in output[1]
-    assert len(output[1]) == 34
-    assert "-" in output[-2]
-    assert "14,096.00" in output[-5]
-    assert "0.24" in output[-6]
+    ... l..(output) __ 17
+    ... "Summary Report" __ output[0]
+    ... "Taxes Breakdown" __ output[6]
+    ... "=" __ output[1]
+    ... l..(output[1]) __ 34
+    ... "-" __ output[-2]
+    ... "14,096.00" __ output[-5]
+    ... "0.24" __ output[-6]

@@ -5,11 +5,11 @@ class Solution(object):
     :rtype: int
     """
     ans = left = 0
-    right = len(height) - 1
+    right = l..(height) - 1
     while left < right:
-      ans = max(ans, (right - left) * min(height[left], height[right]))
+      ans = max(ans, (right - left) * m..(height[left], height[right]))
       __ height[left] <= height[right]:
         left += 1
-      else:
+      ____:
         right -= 1
-    return ans
+    r.. ans

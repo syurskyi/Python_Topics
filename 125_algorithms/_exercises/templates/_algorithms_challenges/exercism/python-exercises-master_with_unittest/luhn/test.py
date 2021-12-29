@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import unittest
+_______ unittest
 
-from luhn import Luhn
+____ luhn _______ Luhn
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -57,5 +57,5 @@ class LuhnTests(unittest.TestCase):
         self.assertTrue(number.is_valid())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

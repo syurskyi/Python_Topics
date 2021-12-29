@@ -4,15 +4,15 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
-        ans = n = len(nums)
+        ans = n = l..(nums)
 
-        for i in range(n):
+        ___ i __ r..(n):
             ans ^= i ^ nums[i]
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -21,13 +21,13 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums:
-            return 0
+        __ n.. nums:
+            r.. 0
 
         nums.sort()
 
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             __ i != nums[i]:
-                return i
+                r.. i
 
-        return i + 1
+        r.. i + 1

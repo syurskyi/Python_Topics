@@ -1,34 +1,34 @@
-from itertools import count
-from math import sqrt
+____ itertools _______ count
+____ math _______ sqrt
 
 
 ___ nth_prime(n):
     __ n < 1:
         raise ValueError('The parameter `n` has to be a positive number.')
 
-    known = []
+    known    # list
     candidates = prime_candidates()
 
     ___ is_prime(m):
         sqrt_m = sqrt(m)
-        for k in known:
+        ___ k __ known:
             __ k > sqrt_m:
-                return True
-            elif m % k == 0:
-                return False
-        return True
+                r.. True
+            ____ m % k __ 0:
+                r.. False
+        r.. True
 
-    while len(known) < n:
+    while l..(known) < n:
         x = next(candidates)
         __ is_prime(x):
-            known.append(x)
+            known.a..(x)
 
-    return known[n - 1]
+    r.. known[n - 1]
 
 
 ___ prime_candidates():
     yield 2
     yield 3
-    for n in count(6, 6):
+    ___ n __ c.. 6, 6):
         yield n - 1
         yield n + 1

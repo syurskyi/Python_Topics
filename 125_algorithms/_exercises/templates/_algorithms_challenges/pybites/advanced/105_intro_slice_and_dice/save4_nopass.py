@@ -1,4 +1,4 @@
-from string import ascii_lowercase
+____ string _______ ascii_lowercase
 
 text = """
 One really nice feature of Python is polymorphism: using the same operation
@@ -16,23 +16,23 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: str = text) -> list:
+___ slice_and_dice(text: str = text) -> l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     #strip off any leading spaces,
     strip = text.strip(" . !")
     split = text.split("\n")
-    for words in text:
+    ___ words __ text:
        split.strip()
     #check if the first character is lowercase,
     #if so, split the line into words and get the last word,
-    for firstword in text:
+    ___ firstword __ text:
         __ firstword.islower():
             firstword.split
             #strip off BOTH the trailing dot (.) and exclamation mark (!) from this last word,
             results = firstword[-1].strip
     #and finally add it to the results list.
     results = [text].strip.split
-    return results
+    r.. results
     
 

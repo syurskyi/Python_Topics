@@ -14,25 +14,25 @@ class Solution:
     """
     ___ minDepth(self, root):
         ans = 0
-        __ not root:
-            return ans
+        __ n.. root:
+            r.. ans
 
         queue = [root]
         while queue:
-            _queue = []
+            _queue    # list
             ans += 1
 
-            for node in queue:
-                __ not node.left and not node.right:
-                    return ans
+            ___ node __ queue:
+                __ n.. node.left and n.. node.right:
+                    r.. ans
                 __ node.left:
-                    _queue.append(node.left)
+                    _queue.a..(node.left)
                 __ node.right:
-                    _queue.append(node.right)
+                    _queue.a..(node.right)
 
             queue = _queue
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -41,18 +41,18 @@ class Solution:
     @return: An integer
     """
     ___ minDepth(self, root):
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        __ not root.left and not root.right:
-            return 1
+        __ n.. root.left and n.. root.right:
+            r.. 1
 
         left = self.minDepth(root.left)
         right = self.minDepth(root.right)
 
-        __ left == 0:
-            return right + 1
-        __ right == 0:
-            return left + 1
+        __ left __ 0:
+            r.. right + 1
+        __ right __ 0:
+            r.. left + 1
 
-        return min(left, right) + 1
+        r.. m..(left, right) + 1

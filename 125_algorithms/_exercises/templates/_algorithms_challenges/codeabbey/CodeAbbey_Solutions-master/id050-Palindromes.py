@@ -1,21 +1,21 @@
 ___ cleanWord(data):
-    word = []
-    for char in data:
-        __ str.isalpha(char) == True:
-            word.append(char)
-        else:
-            word.append('')
-    return word
+    word    # list
+    ___ char __ data:
+        __ str.isalpha(char) __ True:
+            word.a..(char)
+        ____:
+            word.a..('')
+    r.. word
 
 ___ isPalindrome(wordCount):
-    answer = []
-    for x in range(wordCount):
+    answer    # list
+    ___ x __ r..(wordCount):
         word = cleanWord(raw_input().lower())
         word = ''.join(word)
-        __ word == word[::-1]:
-            answer.append('Y')
-        else:
-            answer.append('N')
+        __ word __ word[::-1]:
+            answer.a..('Y')
+        ____:
+            answer.a..('N')
     print(' '.join(answer))
 
 isPalindrome(input())

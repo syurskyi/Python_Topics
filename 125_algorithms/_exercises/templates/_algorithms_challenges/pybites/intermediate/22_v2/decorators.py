@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ make_html(element):
@@ -11,10 +11,10 @@ ___ make_html(element):
 
         ___ wrapper(*args,**kwargs):
 
-            return f'<{element}>{function(*args,**kwargs)}</{element}>'
+            r.. f'<{element}>{function(*args,**kwargs)}</{element}>'
 
-        return wrapper
-    return decorator
+        r.. wrapper
+    r.. decorator
 
 
 

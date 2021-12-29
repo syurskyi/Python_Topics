@@ -1,5 +1,5 @@
-from collections import namedtuple
-import datetime
+____ collections _______ namedtuple
+_______ datetime
 
 # CANNOT USE ISODATE MODULE IN PYBITES
 # import isodate
@@ -712,12 +712,12 @@ pycon_videos = [Video(id='T-TwcmT6Rcw',
 ___ load_pycon_data(pycon_videos=pycon_videos):
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
-    return pycon_videos
+    r.. pycon_videos
 
 
 ___ get_most_popular_talks_by_views(videos):
     """Return the pycon video list sorted by viewCount"""
-    return sorted(videos, key=lambda x: int(x.metrics['viewCount']), reverse=True)
+    r.. s..(videos, key=l.... x: int(x.metrics['viewCount']), r.._T..
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -725,19 +725,19 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        number of views, so 10 likes on 175 views ranks higher than
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
        Return the filtered list"""
-    return sorted(videos,
-                  key=lambda x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])) / int(x.metrics['viewCount']),
-                  reverse=True)
+    r.. s..(videos,
+                  key=l.... x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])) / int(x.metrics['viewCount']),
+                  r.._T..
 
 
 ___ parse_isoduration(s):
 
     ___ get_isosplit(s, split):
-        __ split in s:
+        __ split __ s:
             n, s = s.split(split)
-        else:
+        ____:
             n = 0
-        return n, s
+        r.. n, s
 
     # Remove prefix
     s = s.split('P')[-1]
@@ -751,14 +751,14 @@ ___ parse_isoduration(s):
 
     # Convert all to seconds
     dt = datetime.timedelta(days=int(days), hours=int(hours), minutes=int(minutes), seconds=int(seconds))
-    return int(dt.total_seconds())
+    r.. int(dt.total_seconds())
 
 
 # TODO: FIX BELOW
 ___ get_talks_gt_one_hour(videos):
     """Filter the videos list down to videos of > 1 hour"""
     one_hour_in_seconds = 3600
-    return [video for video in videos __ parse_isoduration(video.duration) >= one_hour_in_seconds]
+    r.. [video ___ video __ videos __ parse_isoduration(video.duration) >= one_hour_in_seconds]
 
 
 # TODO: FIX BELOW
@@ -766,4 +766,4 @@ ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
     twenty_four_minutes_in_seconds = 1400
-    return [video for video in videos __ parse_isoduration(video.duration) < twenty_four_minutes_in_seconds]
+    r.. [video ___ video __ videos __ parse_isoduration(video.duration) < twenty_four_minutes_in_seconds]

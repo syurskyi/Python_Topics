@@ -41,24 +41,24 @@ The number of calls to MyCalendarThree.book per test case will be at most 400.
 In calls to MyCalendarThree.book(start, end), start and end are integers in the
 range [0, 10^9].
 """
-import bisect
+_______ bisect
 
 
 class MyCalendarThree:
 
     ___ __init__(self):
-        self.lst = []
+        self.lst    # list
 
     ___ book(self, start: int, end: int) -> int:
         bisect.insort(self.lst, (start, "start"))
         bisect.insort(self.lst, (end, "end"))
         ret = 0
         count = 0
-        for _, flag in self.lst:
-            count += 1 __ flag == "start" else -1
+        ___ _, flag __ self.lst:
+            count += 1 __ flag __ "start" ____ -1
             ret = max(ret, count)
 
-        return ret
+        r.. ret
 
 
 # Your MyCalendarThree object will be instantiated and called as such:

@@ -10,27 +10,27 @@ class Solution(object):
         :type pattern: str
         :rtype: List[str]
         """
-        res = []
-        for word in words:
+        res    # list
+        ___ word __ words:
             __ self.isSimliar(word, pattern):
-                res.append(word)
-        return res
+                res.a..(word)
+        r.. res
     
     ___ isSimliar(self, w1, w2):
-        __ len(w1) != len(w2): return False
+        __ l..(w1) != l..(w2): r.. False
         hashmap1, hashmap2 = {}, {}
-        for c1, c2 in zip(w1, w2):
-            __ c1 not in hashmap1:
-                __ c2 in hashmap2:
-                    return False
+        ___ c1, c2 __ zip(w1, w2):
+            __ c1 n.. __ hashmap1:
+                __ c2 __ hashmap2:
+                    r.. False
                 hashmap1[c1] = c2
                 hashmap2[c2] = c1
-            else:
-                __ c2 not in hashmap2:
-                    return False
-                __ hashmap2[c2] != c1 or hashmap1[c1] != c2:
-                    return False
-        return True
+            ____:
+                __ c2 n.. __ hashmap2:
+                    r.. False
+                __ hashmap2[c2] != c1 o. hashmap1[c1] != c2:
+                    r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -39,10 +39,10 @@ class Solution(object):
                 "abb",
             ],
         ]
-        for words, pattern in testCases:
+        ___ words, pattern __ testCases:
             res = self.findAndReplacePattern(words, pattern)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

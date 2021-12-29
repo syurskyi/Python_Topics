@@ -1,5 +1,5 @@
-from decimal import Decimal
-class IntList(list):
+____ decimal _______ Decimal
+class IntList(l..):
 
 
      
@@ -7,43 +7,43 @@ class IntList(list):
 
     @property
     ___ mean(self):
-        return sum(self)/len(self)
+        r.. s..(self)/l..(self)
 
 
     @property
     ___ median(self):
-        v = sorted(self)
-        __ len(v) % 2 == 1:
-            return v[len(v)//2]
-        else:
-            return (v[len(v)//2 -1] + v[len(v)//2])/2
+        v = s..(self)
+        __ l..(v) % 2 __ 1:
+            r.. v[l..(v)//2]
+        ____:
+            r.. (v[l..(v)//2 -1] + v[l..(v)//2])/2
 
 
 
 
-    ___ append(self,values):
+    ___ a..(self,values):
 
-        __ isinstance(values,int) or isinstance(values,float) or isinstance(values,Decimal):
+        __ isi..(values,int) o. isi..(values,float) o. isi..(values,Decimal):
             values = float(values)
-            super().append(values)
-        elif isinstance(values,list):
-            __ all(type(v) in (int,float,Decimal) for v in values):
+            super().a..(values)
+        ____ isi..(values,l..):
+            __ a..(type(v) __ (int,float,Decimal) ___ v __ values):
                 self += values
-            else:
+            ____:
                 raise TypeError
-        else:
+        ____:
             raise TypeError
 
 
     ___ __iadd__(self,value):
-        __ isinstance(value,list):
-            __ all(type(v) in (int,float,Decimal) for v in value):
-                for v in value:
-                    self.append(v)
-                return self
-            else:
+        __ isi..(value,l..):
+            __ a..(type(v) __ (int,float,Decimal) ___ v __ value):
+                ___ v __ value:
+                    self.a..(v)
+                r.. self
+            ____:
                 raise TypeError
-        else:
+        ____:
             raise TypeError
 
 
@@ -53,12 +53,12 @@ class IntList(list):
 
 
     ___ __add__(self,value):
-        __ isinstance(value,list):
-            __ all(type(v) == int for v in value):
-                return super().__add__(value)
-            else:
+        __ isi..(value,l..):
+            __ a..(type(v) __ int ___ v __ value):
+                r.. super().__add__(value)
+            ____:
                 raise TypeError
-        else:
+        ____:
             raise TypeError
 
 

@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from howold import Actor, Movie, get_age
+____ howold _______ Actor, Movie, get_age
 
 
 actors = [
@@ -35,4 +35,4 @@ return_strings = [
 @pytest.mark.parametrize('actor, movie, expected',
                          zip(actors, movies, return_strings))
 ___ test_get_age(actor, movie, expected):
-    assert get_age(actor, movie) == expected
+    ... get_age(actor, movie) __ expected

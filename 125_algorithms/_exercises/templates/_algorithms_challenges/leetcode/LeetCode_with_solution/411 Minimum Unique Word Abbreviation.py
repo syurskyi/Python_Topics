@@ -11,12 +11,12 @@ class Solution(object):
         :type dictionary: List[str]
         :rtype: str
         """
-        ret = (target, len(target))
-        for abbr, abbr_l in self.dfs(target):
+        ret = (target, l..(target))
+        ___ abbr, abbr_l __ self.dfs(target):
             __ self.validate(dictionary, abbr) and ret[1] > abbr_l:
                 ret = (abbr, abbr_l)
 
-        return ret[0]
+        r.. ret[0]
 
     ___ dfs(self, word):
         """
@@ -24,27 +24,27 @@ class Solution(object):
         :type word: str
         :rtype: List[str]
         """
-        __ not word:
-            return [("", 0)]
+        __ n.. word:
+            r.. [("", 0)]
 
-        ret = []
-        for l in xrange(len(word)+1):
-            left_num = str(l) __ l else ""
-            left_l = 1 __ left_num != "" else 0
-            left_l += 1 __ l < len(word) else 0
+        ret    # list
+        ___ l __ xrange(l..(word)+1):
+            left_num = str(l) __ l ____ ""
+            left_l = 1 __ left_num != "" ____ 0
+            left_l += 1 __ l < l..(word) ____ 0
 
-            for right, right_l in self.dfs(word[l+1:]):
+            ___ right, right_l __ self.dfs(word[l+1:]):
                 cur = left_num + word[l:l+1] + right  # word[l:l+1] possible ""
-                ret.append((cur, left_l + right_l))
+                ret.a..((cur, left_l + right_l))
 
-        return ret
+        r.. ret
 
     ___ validate(self, dictionary, abbr):
-        for w in dictionary:
+        ___ w __ dictionary:
             __ self.validWordAbbreviation(w, abbr):
-                return False
+                r.. False
 
-        return True
+        r.. True
 
     ___ validWordAbbreviation(self, word, abbr):
         """
@@ -55,22 +55,22 @@ class Solution(object):
         """
         w = 0
         a = 0
-        while w < len(word) and a < len(abbr):
+        while w < l..(word) and a < l..(abbr):
             __ abbr[a].isdigit() and abbr[a] != '0':
                 e = a
-                while e < len(abbr) and abbr[e].isdigit(): e += 1
+                while e < l..(abbr) and abbr[e].isdigit(): e += 1
                 num = int(abbr[a:e])
                 a = e
                 w += num
-            else:
+            ____:
                 __ word[w] != abbr[a]:
-                    return False
+                    r.. False
 
                 w += 1
                 a += 1
 
-        return w == len(word) and a == len(abbr)
+        r.. w __ l..(word) and a __ l..(abbr)
 
 
-__ __name__ == "__main__":
-    assert Solution().minAbbreviation("apple", ["blade"]) == "a4"
+__ __name__ __ "__main__":
+    ... Solution().minAbbreviation("apple", ["blade"]) __ "a4"

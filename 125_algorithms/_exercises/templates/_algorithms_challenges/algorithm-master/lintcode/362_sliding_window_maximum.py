@@ -1,9 +1,9 @@
-from heapq import heappush, heappop
+____ heapq _______ heappush, heappop
 
 
 class HashHeapq:
     ___ __init__(self):
-        self.heap = []
+        self.heap    # list
         self.deleted = {}
 
     ___ push(self, val):
@@ -11,24 +11,24 @@ class HashHeapq:
 
     ___ pop(self):
         __ self.is_empty():
-            return
+            r..
         heappop(self.heap)
 
     ___ remove(self, val):
         __ self.is_empty():
-            return
+            r..
         self.deleted[val] = self.deleted.get(val, 0) + 1
 
     ___ top(self):
         __ self.is_empty():
-            return
-        return self.heap[0]
+            r..
+        r.. self.heap[0]
 
     ___ is_empty(self):
         while self.heap and self.deleted.get(self.heap[0]):
             self.deleted[self.heap[0]] -= 1
             heappop(self.heap)
-        return not self.heap
+        r.. n.. self.heap
 
 
 class Solution:
@@ -38,19 +38,19 @@ class Solution:
         :type k: int
         :rtype: List[int]
         """
-        ans = []
-        __ not A:
-            return ans
+        ans    # list
+        __ n.. A:
+            r.. ans
 
         heap = HashHeapq()
 
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             heap.push(-A[i])
             __ i >= k - 1:
-                ans.append(-heap.top())
+                ans.a..(-heap.top())
                 heap.remove(-A[i - k + 1])
 
-        return ans
+        r.. ans
 
 
 """
@@ -64,10 +64,10 @@ class Solution:
     @return: The maximum number inside the window at each moving
     """
     ___ maxSlidingWindow(self, A, k):
-        ans = []
-        __ not A or len(A) < 1:
-            return ans
-        for r in range(len(A)):
+        ans    # list
+        __ n.. A o. l..(A) < 1:
+            r.. ans
+        ___ r __ r..(l..(A)):
             __ r >= k - 1:
-                ans.append(max(A[r - k + 1 : r + 1]))
-        return ans
+                ans.a..(max(A[r - k + 1 : r + 1]))
+        r.. ans

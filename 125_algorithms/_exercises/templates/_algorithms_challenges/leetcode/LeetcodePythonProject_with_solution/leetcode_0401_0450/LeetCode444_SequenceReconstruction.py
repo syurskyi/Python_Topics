@@ -8,32 +8,32 @@ class Solution(object):
     ___ sequenceReconstruction(self, org, seqs):
         graph = {}
         degree = {}
-        for seq in seqs:
-            length = len(seq)
-            for i in range(length):
-                __ seq[i] not in graph:
-                    graph[seq[i]] = []
-                __ seq[i] not in degree:
+        ___ seq __ seqs:
+            length = l..(seq)
+            ___ i __ r..(length):
+                __ seq[i] n.. __ graph:
+                    graph[seq[i]]    # list
+                __ seq[i] n.. __ degree:
                     degree[seq[i]] = 0
                 __ i > 0:
-                    graph[seq[i-1]].append(seq[i])
+                    graph[seq[i-1]].a..(seq[i])
                     degree[seq[i]] += 1
-        queue = []
-        for key, val in degree.items():
-            __ val == 0:
-                queue.append(key)
+        queue    # list
+        ___ key, val __ degree.items():
+            __ val __ 0:
+                queue.a..(key)
         index = 0
         while queue:
-            size = len(queue)
+            size = l..(queue)
             __ size > 1:
-                return False
+                r.. False
             curr = queue.pop(0)
-            __ index >= len(org) or org[index] != curr:
-                return False
+            __ index >= l..(org) o. org[index] != curr:
+                r.. False
             index += 1
-            __ curr in graph:
-                for nextVal in graph[curr]:
+            __ curr __ graph:
+                ___ nextVal __ graph[curr]:
                     degree[nextVal] -= 1
-                    __ degree[nextVal] == 0:
-                        queue.append(nextVal)
-        return index == len(org) and index == len(graph)
+                    __ degree[nextVal] __ 0:
+                        queue.a..(nextVal)
+        r.. index __ l..(org) and index __ l..(graph)

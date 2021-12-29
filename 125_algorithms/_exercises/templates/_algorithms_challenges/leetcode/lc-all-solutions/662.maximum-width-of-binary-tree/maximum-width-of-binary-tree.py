@@ -9,8 +9,8 @@ class Solution(object):
       __ root:
         left = dfs(root.left, x - 1, y + 1, num * 2, dmin, dmax)
         right = dfs(root.right, x + 1, y + 1, 1 + num * 2, dmin, dmax)
-        dmin[y] = min(num, dmin.get(y, float("inf")))
+        dmin[y] = m..(num, dmin.get(y, float("inf")))
         dmax[y] = max(num, dmax.get(y, float("-inf")))
-        return max(left or 0, right or 0, 1 + dmax[y] - dmin[y])
+        r.. max(left o. 0, right o. 0, 1 + dmax[y] - dmin[y])
 
-    return dfs(root, 0, 0, 1, {}, {})
+    r.. dfs(root, 0, 0, 1, {}, {})

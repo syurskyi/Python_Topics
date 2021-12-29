@@ -6,8 +6,8 @@ class Solution(object):
     """
     x = y = 0
     dirs = {"U": (0, 1), "D": (0, -1), "L": (-1, 0), "R": (1, 0)}
-    for move in moves:
+    ___ move __ moves:
       dx, dy = dirs[move]
       x += dx
       y += dy
-    return x == y == 0
+    r.. x __ y __ 0

@@ -7,13 +7,13 @@ ___ catAndMouse(catA, catB, mouseC):
     distanceB = abs(catB - mouseC)
     __ distanceA > distanceB:
         print('Cat B')
-    elif distanceA == distanceB:
+    ____ distanceA __ distanceB:
         print('Mouse C')
-    else:
+    ____:
         print('Cat A')
 
 
 n = int(input())
-for i in range(n):
+___ i __ r..(n):
     catA, catB, mouseC = map(int, input().split())
     catAndMouse(catA, catB, mouseC)

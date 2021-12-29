@@ -4,8 +4,8 @@ class Solution:
         :type num: int
         :rtype: str
         """
-        __ not num:
-            return ''
+        __ n.. num:
+            r.. ''
 
         # I, V, X, L, C, D, M
         symbs = (
@@ -24,14 +24,14 @@ class Solution:
             ('I', 1),
         )
 
-        ans = []
+        ans    # list
 
-        for symb, amount in symbs:
-            __ not num:
+        ___ symb, amount __ symbs:
+            __ n.. num:
                 break
 
             while num >= amount:  # num - amount >= 0
                 num -= amount
-                ans.append(symb)
+                ans.a..(symb)
 
-        return ''.join(ans)
+        r.. ''.join(ans)

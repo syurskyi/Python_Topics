@@ -11,25 +11,25 @@ class Solution(object):
         :rtype: bool
         """
         s1, s2 = A, B
-        __ len(s1) != len(s2):
-            return False
-        __ s1 == s2: return True
-        for i in range(len(s1)):
-            __ s1[i:] + s1[:i] == s2:
-                return True
-        return False
+        __ l..(s1) != l..(s2):
+            r.. False
+        __ s1 __ s2: r.. True
+        ___ i __ r..(l..(s1)):
+            __ s1[i:] + s1[:i] __ s2:
+                r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
             ['abcde', 'cdeab'],
             ['abcde', 'abced'],
         ]
-        for s1, s2 in testCases:
+        ___ s1, s2 __ testCases:
             print('s1: %s' % s1)
             print('s2: %s' % s2)
             result = self.rotateString(s1, s2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

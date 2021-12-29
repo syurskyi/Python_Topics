@@ -1,18 +1,18 @@
-from random import random
-from time import sleep
-from functools import wraps
+____ random _______ random
+____ time _______ sleep
+____ functools _______ wraps
 
 
 ___ cached_property(func):
     """decorator used to cache expensive object attribute lookup"""
-    cache = None
+    cache = N..
     @wraps(func)
     ___ wrapper(*args, **kwargs):
         nonlocal cache
-        __ cache __ None:
+        __ cache __ N..
             cache = func(*args, **kwargs)
-        return cache
-    return wrapper
+        r.. cache
+    r.. wrapper
 
 
 class Planet:
@@ -24,10 +24,10 @@ class Planet:
 
     ___ __init__(self, color):
         self.color = color
-        self._mass = None
+        self._mass = N..
 
     ___ __repr__(self):
-        return f'{self.__class__.__name__}({repr(self.color)})'
+        r.. f'{self.__class__.__name__}({repr(self.color)})'
 
     @cached_property
     ___ mass(self):
@@ -35,12 +35,12 @@ class Planet:
         sleep(self.TEMPORAL_SHIFT)
         self._mass = (f'{round(scale_factor * self.GRAVITY_CONSTANT, 4)} '
                       f'{self.SOLAR_MASS_UNITS}')
-        return self._mass
+        r.. self._mass
 
     ___ __setattr__(self, var, val):
-        __ var == 'mass':
+        __ var __ 'mass':
             raise AttributeError
-        else:
+        ____:
             super(Planet, self).__setattr__(var, val)
     # @mass.setter
     # def mass(self, value):

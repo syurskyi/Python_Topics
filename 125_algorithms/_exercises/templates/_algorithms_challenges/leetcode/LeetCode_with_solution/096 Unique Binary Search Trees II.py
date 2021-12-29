@@ -18,8 +18,8 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -33,33 +33,33 @@ class Solution(object):
         :param n: integer
         :return: list of TreeNode
         """
-        __ n == 0:
-            return [None]
+        __ n __ 0:
+            r.. [N..]
 
-        return self.generate_cache(1, n)
+        r.. self.generate_cache(1, n)
 
     ___ generate_cache(self, start, end):
         """80ms"""
-        __ (start, end) not in self.cache:
-            roots = []
+        __ (start, end) n.. __ self.cache:
+            roots    # list
             __ start > end:
-                roots.append(None)
-                return roots
+                roots.a..(N..)
+                r.. roots
 
-            for pivot in range(start, end+1):
+            ___ pivot __ r..(start, end+1):
                 left_roots = self.generate_cache(start, pivot-1)
                 right_roots = self.generate_cache(pivot+1, end)
-                for left_root in left_roots:
-                    for right_root in right_roots:
+                ___ left_root __ left_roots:
+                    ___ right_root __ right_roots:
                         root = TreeNode(pivot)
                         root.left = left_root
                         root.right = right_root
 
-                        roots.append(root)
+                        roots.a..(root)
 
             self.cache[(start, end)] = roots
 
-        return self.cache[(start, end)]
+        r.. self.cache[(start, end)]
 
     ___ generate(self, start, end):
         """
@@ -72,25 +72,25 @@ class Solution(object):
         :param end: final number in the array
         :return: list of TreeNode
         """
-        subtree_roots = []
+        subtree_roots    # list
 
         # trivial
         __ start > end:
-            subtree_roots.append(None)
-            return subtree_roots
+            subtree_roots.a..(N..)
+            r.. subtree_roots
 
         # pivot
         # list of unique subtrees = list of unique left subtrees, pivot, list of unique right subtrees
-        for pivot in range(start, end+1):
+        ___ pivot __ r..(start, end+1):
             left_subtree_roots = self.generate(start, pivot-1)
             right_subtree_roots = self.generate(pivot+1, end)
 
-            for left_node in left_subtree_roots:
-                for right_node in right_subtree_roots:
+            ___ left_node __ left_subtree_roots:
+                ___ right_node __ right_subtree_roots:
                     pivot_node = TreeNode(pivot)
                     pivot_node.left = left_node
                     pivot_node.right = right_node
 
-                    subtree_roots.append(pivot_node)
+                    subtree_roots.a..(pivot_node)
 
-        return subtree_roots
+        r.. subtree_roots

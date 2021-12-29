@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution(object):
@@ -9,9 +9,9 @@ class Solution(object):
     """
     d = Counter(s)
     buf = {}
-    for k, v in d.items():
+    ___ k, v __ d.items():
       buf[v] = buf.get(v, "") + k * v
     ans = ""
-    for i in reversed(range(0, len(s))):
+    ___ i __ reversed(r..(0, l..(s))):
       ans += buf.get(i, "")
-    return ans
+    r.. ans

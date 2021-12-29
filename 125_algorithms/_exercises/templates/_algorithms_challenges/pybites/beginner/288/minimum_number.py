@@ -1,9 +1,9 @@
-from typing import List
+____ typing _______ List
 
 
 ___ minimum_number(digits: List[int]) -> int:
-    digits = sorted(set(digits))
-    return 0 __ len(digits)==0 else int("".join(str(i) for i in digits))
+    digits = s..(set(digits))
+    r.. 0 __ l..(digits)__0 ____ int("".join(str(i) ___ i __ digits))
 
 
 

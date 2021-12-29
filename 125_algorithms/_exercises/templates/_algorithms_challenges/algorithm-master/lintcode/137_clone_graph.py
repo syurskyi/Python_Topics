@@ -16,26 +16,26 @@ class Solution:
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         queue = [node]
         root = UndirectedGraphNode(node.label)
         N = {root.label: root}
 
-        for node in queue:
-            for neighbor in node.neighbors:
-                _node = None
-                __ neighbor.label in N:
+        ___ node __ queue:
+            ___ neighbor __ node.neighbors:
+                _node = N..
+                __ neighbor.label __ N:
                     _node = N[neighbor.label]
-                else:
+                ____:
                     _node = UndirectedGraphNode(neighbor.label)
                     N[neighbor.label] = _node
-                    queue.append(neighbor)
+                    queue.a..(neighbor)
 
-                N[node.label].neighbors.append(_node)
+                N[node.label].neighbors.a..(_node)
 
-        return root
+        r.. root
 
 
 """
@@ -47,17 +47,17 @@ class Solution:
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        return self.dfs(node, {})
+        r.. self.dfs(node, {})
 
     ___ dfs(self, node, N):
-        __ node.label in N:
-            return N[node.label]
+        __ node.label __ N:
+            r.. N[node.label]
 
         N[node.label] = UndirectedGraphNode(node.label)
-        for neighbor in node.neighbors:
-            N[node.label].neighbors.append(self.dfs(neighbor, N))
+        ___ neighbor __ node.neighbors:
+            N[node.label].neighbors.a..(self.dfs(neighbor, N))
 
-        return N[node.label]
+        r.. N[node.label]

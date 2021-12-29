@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -20,7 +20,7 @@ class Solution:
             'h': 3600,
             'd': 86400,
         }
-        self.logs = collections.defaultdict(list)
+        self.logs = collections.defaultdict(l..)
 
     ___ isRatelimited(self, timestamp, event, rate, increment):
         """
@@ -30,35 +30,35 @@ class Solution:
         :type increment: bool
         :rtype: bool
         """
-        __ '/' not in rate:
-            return False
+        __ '/' n.. __ rate:
+            r.. False
 
         freq, t = rate.split('/')
         freq = int(freq)
         begin_time = timestamp - self.times.get(t, 1) + 1
         is_limited = self.check_limited(event, freq, begin_time)
 
-        __ increment and not is_limited:
-            self.logs[event].append(timestamp)
+        __ increment and n.. is_limited:
+            self.logs[event].a..(timestamp)
 
-        return is_limited
+        r.. is_limited
 
     ___ check_limited(self, event, freq, begin_time):
         logs = self.logs[event]
 
-        __ not logs or logs[-1] < begin_time:
+        __ n.. logs o. logs[-1] < begin_time:
             # if freq is 0 => is limited
-            return freq == 0
+            r.. freq __ 0
 
-        left, right = 0, len(logs) - 1
+        left, right = 0, l..(logs) - 1
 
         while left + 1 < right:
             mid = (left + right) // 2
 
             __ logs[mid] < begin_time:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        mid = left __ logs[left] >= begin_time else right
-        return len(logs) - mid >= freq
+        mid = left __ logs[left] >= begin_time ____ right
+        r.. l..(logs) - mid >= freq

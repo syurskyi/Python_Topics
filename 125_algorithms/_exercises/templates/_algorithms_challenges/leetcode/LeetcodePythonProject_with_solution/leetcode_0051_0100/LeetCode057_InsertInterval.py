@@ -11,10 +11,10 @@ class Interval(object):
         self.end = e
     
     ___ __str__(self):
-        return '<s: %s, e: %s>' % (self.start, self.end)
+        r.. '<s: %s, e: %s>' % (self.start, self.end)
     
     ___ __repr__(self):
-        return self.__str__()
+        r.. self.__str__()
 
 class Solution(object):
     ___ insert(self, intervals, newInterval):
@@ -23,19 +23,19 @@ class Solution(object):
         :type newInterval: Interval
         :rtype: List[Interval]
         """
-        result = []
-        for interval in intervals:
+        result    # list
+        ___ interval __ intervals:
             __ interval.end < newInterval.start:
-                result.append(interval)
-            elif interval.start > newInterval.end:
-                result.append(newInterval)
+                result.a..(interval)
+            ____ interval.start > newInterval.end:
+                result.a..(newInterval)
                 newInterval = interval
-            elif interval.end >= newInterval.start or interval.start <= newInterval.end:
+            ____ interval.end >= newInterval.start o. interval.start <= newInterval.end:
                 newInterval = Interval(\
-                    min(newInterval.start, interval.start),\
+                    m..(newInterval.start, interval.start),\
                     max(newInterval.end, interval.end))
-        result.append(newInterval)
-        return result
+        result.a..(newInterval)
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -43,13 +43,13 @@ class Solution(object):
             ([[1,2],[3,5],[6,7],[8,10],[12,16],[15,23]], [4,9]),
             ([[1,2],[2,5],[6,7],[8,10],[12,16],[15,23]], [7,9]),
         ]
-        for intervals, newInterval in testCases:
-            intervals = [Interval(x[0], x[1]) for x in intervals]
+        ___ intervals, newInterval __ testCases:
+            intervals = [Interval(x[0], x[1]) ___ x __ intervals]
             newInterval = Interval(newInterval[0], newInterval[1])
             print('intervals: %s' % (intervals))
             result = self.insert(intervals, newInterval)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -5,10 +5,10 @@ class Solution:
     ___ isIsomorphic(self, s, t):
         ___ isomorphic(s,t):
             d = {}
-            for k,v in zip(s,t):
+            ___ k,v __ zip(s,t):
                 d[k] = v
-            return ''.join([d[c] for c in s]) == t
-        return isomorphic(s,t) and isomorphic(t,s)
+            r.. ''.join([d[c] ___ c __ s]) __ t
+        r.. isomorphic(s,t) and isomorphic(t,s)
 
 test = Solution()
 print(test.isIsomorphic('ab','aa'))

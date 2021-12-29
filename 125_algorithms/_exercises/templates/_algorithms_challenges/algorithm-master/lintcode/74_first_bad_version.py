@@ -19,15 +19,15 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not n:
-            return 0
+        __ n.. n:
+            r.. 0
 
         left, right = 1, n
         while left + 1 < right:
             mid = (left + right) // 2
             __ isBadVersion(mid):
                 right = mid
-            else:
+            ____:
                 left = mid
 
-        return left __ isBadVersion(left) else right
+        r.. left __ isBadVersion(left) ____ right

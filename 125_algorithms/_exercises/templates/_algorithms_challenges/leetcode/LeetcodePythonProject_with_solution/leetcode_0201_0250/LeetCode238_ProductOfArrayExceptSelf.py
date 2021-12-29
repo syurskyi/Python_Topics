@@ -10,48 +10,48 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ not nums: return []
-        length = len(nums)
-        result = []
-        result.append(1)
-        for i in range(1, length):
-            result.append(result[-1]*nums[i-1])
+        __ n.. nums: r.. []
+        length = l..(nums)
+        result    # list
+        result.a..(1)
+        ___ i __ r..(1, length):
+            result.a..(result[-1]*nums[i-1])
         right = 1
-        for i in range(length-2, -1, -1):
+        ___ i __ r..(length-2, -1, -1):
             right *= nums[i+1]
             result[i] = right*result[i]
-        return result
+        r.. result
     
     ___ productExceptSelfExtra(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ not nums: return []
-        length = len(nums)
+        __ n.. nums: r.. []
+        length = l..(nums)
         left = [1]*length
         right = [1]*length
-        for i in range(1, length):
+        ___ i __ r..(1, length):
             left[i] = left[i-1]*nums[i-1]
-        for i in range(length-2, -1, -1):
+        ___ i __ r..(length-2, -1, -1):
             right[i] = right[i+1]*nums[i+1]
-        result = []
+        result    # list
         print('left:  %s' % left)
         print('right: %s' % right)
-        for i in range(length):
-            result.append(left[i]*right[i])
-        return result
+        ___ i __ r..(length):
+            result.a..(left[i]*right[i])
+        r.. result
     
     ___ test(self):
         testCases = [
             [1, 2, 3, 4],
             [9, 0, -2],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.productExceptSelf(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

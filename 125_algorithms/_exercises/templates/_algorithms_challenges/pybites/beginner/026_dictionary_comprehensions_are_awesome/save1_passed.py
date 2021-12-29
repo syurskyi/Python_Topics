@@ -18,6 +18,6 @@ exclude_bites = {6, 10, 16, 18, 21}
 
 ___ filter_bites(bites=bites, bites_done=exclude_bites):
     """return the bites dict with the exclude_bites filtered out"""
-    for d in exclude_bites:
+    ___ d __ exclude_bites:
         bites.pop(d)
-    return bites
+    r.. bites

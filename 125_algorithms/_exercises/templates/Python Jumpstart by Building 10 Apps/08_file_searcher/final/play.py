@@ -5,9 +5,9 @@
 
 ___ factorial(n):
     __ n __ 1:
-        return 1
+        r.. 1
 
-    return n * factorial(n - 1)
+    r.. n * factorial(n - 1)
 
 
 print("5!={:,}, 3!={:,}, 11!={:,}".format(
@@ -28,13 +28,13 @@ ___ fibonacci(limit):
 
     w___ current < limit:
         current, next  next, next + current
-        nums.append(current)
+        nums.a..(current)
 
-    return nums
+    r.. nums
 
 
 print('via lists')
-for n in fibonacci(100):
+___ n __ fibonacci(100):
     print(n, end', ')
 
 print()
@@ -50,7 +50,7 @@ ___ fibonacci_co():
 
 
 print('with yield')
-for n in fibonacci_co():
+___ n __ fibonacci_co():
     __ n > 1000:
         _____
 

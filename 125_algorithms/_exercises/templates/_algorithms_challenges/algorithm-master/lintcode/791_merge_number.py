@@ -1,4 +1,4 @@
-from heapq import heappush, heappop
+____ heapq _______ heappush, heappop
 
 
 class Solution:
@@ -8,17 +8,17 @@ class Solution:
     """
     ___ mergeNumber(self, A):
         ans = 0
-        __ not A:
-            return ans
+        __ n.. A:
+            r.. ans
 
-        heap = []
+        heap    # list
 
-        for a in A:
+        ___ a __ A:
             heappush(heap, a)
 
-        while len(heap) > 1:
+        while l..(heap) > 1:
             _sum = heappop(heap) + heappop(heap)
             ans += _sum
             heappush(heap, _sum)
 
-        return ans
+        r.. ans

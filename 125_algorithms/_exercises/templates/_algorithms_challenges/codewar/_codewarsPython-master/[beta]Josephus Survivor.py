@@ -1,22 +1,22 @@
 ___ josephus_survivor(n,k):
-    circle = [i for i in range(1,n+1)]
+    circle = [i ___ i __ r..(1,n+1)]
     index = -1
-    while circle.count(0) != n-1:
+    while circle.c.. 0) != n-1:
         steps = k
         while steps > 0:
             __ index + 1 > n-1:
                 index = 0
                 steps -= 1
-            elif circle[index+1] == 0:
+            ____ circle[index+1] __ 0:
                 index += 1
-            else:
+            ____:
                 index += 1
                 steps -= 1
         circle[index] = 0
         print(circle,index)
-    for num in circle:
+    ___ num __ circle:
         __ num != 0:
-            return num
+            r.. num
 print(josephus_survivor(14,2))
 
 #[1,2,3,4,5,6,7] - initial sequence 3

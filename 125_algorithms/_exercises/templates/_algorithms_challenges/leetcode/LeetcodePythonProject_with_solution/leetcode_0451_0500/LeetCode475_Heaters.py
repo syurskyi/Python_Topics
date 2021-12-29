@@ -10,17 +10,17 @@ class Solution(object):
         heaters.sort()
         i = 0
         radius = 0
-        for house in houses:
-            while i+1 < len(heaters) and heaters[i+1] < house:
+        ___ house __ houses:
+            while i+1 < l..(heaters) and heaters[i+1] < house:
                 i += 1
             __ heaters[i] > house:
                 tmp = heaters[i]-house
-            else:
+            ____:
                 tmp = house-heaters[i]
-                __ i+1 < len(heaters):
-                    tmp = min(tmp, heaters[i+1]-house)
+                __ i+1 < l..(heaters):
+                    tmp = m..(tmp, heaters[i+1]-house)
             radius = max(radius, tmp)
-        return radius
+        r.. radius
     
     ___ test(self):
         testCases = [
@@ -33,12 +33,12 @@ class Solution(object):
                 [1, 4],
             ],
         ]
-        for houses, heaters in testCases:
+        ___ houses, heaters __ testCases:
             print('houses: %s' % houses)
             print('heaters: %s' % heaters)
             result = self.findRadius(houses, heaters)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

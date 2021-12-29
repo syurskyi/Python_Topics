@@ -9,10 +9,10 @@ class Solution(object):
         miss = 1
         added, i = 0, 0
         while miss <= n:
-            __ i < len(nums) and miss >= nums[i]:
+            __ i < l..(nums) and miss >= nums[i]:
                 miss += nums[i]
                 i+=1
-            else:
+            ____:
                 miss += miss
                 added += 1
-        return added
+        r.. added

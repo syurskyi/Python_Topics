@@ -11,11 +11,11 @@ Check the tests for more info - have fun!
 KEYWORDS: Counter, data analysis, list comprehensions
 """
 
-import os
-import urllib.request
-import string
-from collections import Counter
-import re
+_______ os
+_______ urllib.request
+_______ string
+____ collections _______ Counter
+_______ re
 
 
 
@@ -42,23 +42,23 @@ ___ my_solution_get_harry_most_common_word():
     * retrieve 1st most common object and return it
     """
 
-    stopwords = []
-    filtered = []
+    stopwords    # list
+    filtered    # list
     f1 = open(stopwords_file, 'r')
-    for line in f1:
-        stopwords.append(line.strip())
+    ___ line __ f1:
+        stopwords.a..(line.strip())
 
     f2 = open(harry_text, 'r')
-    for line in f2:
-        for word in line.split():
+    ___ line __ f2:
+        ___ word __ line.s.. :
             print(word)
             p = word.strip(string.punctuation).lower()
 
-            __ len(p) > 0 and p not in stopwords:
-                filtered.append(word.strip(string.punctuation).lower())
+            __ l..(p) > 0 and p n.. __ stopwords:
+                filtered.a..(word.strip(string.punctuation).lower())
 
     counter = Counter(filtered)
-    return counter.most_common(1)[0]
+    r.. counter.most_common(1)[0]
 
 ___ pyb_solution_get_harry_most_common_word():
     ___ get_harry_most_common_word():
@@ -67,13 +67,13 @@ ___ pyb_solution_get_harry_most_common_word():
 
         with open(harry_text) as f:
             words = [re.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
-                     for word in f.read().lower().split()]
+                     ___ word __ f.read().lower().s.. ]
 
-            words = [word for word in words __ word.strip()
-                     and word not in stopwords]
+            words = [word ___ word __ words __ word.strip()
+                     and word n.. __ stopwords]
 
             cnt = Counter(words)
-            return cnt.most_common(1)[0]
+            r.. cnt.most_common(1)[0]
 
 
 print(my_solution_get_harry_most_common_word())

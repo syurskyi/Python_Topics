@@ -55,23 +55,23 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash"""
 
 
 ___ get_users_for_shell(passwd_output: str = PASSWD_OUTPUT,
-                        grep_shell: str = DEFAULT_SHELL) -> list:
+                        grep_shell: str = DEFAULT_SHELL) -> l..:
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
-    output = []
+    output    # list
     lines = passwd_output.split('\n')
-    for l in lines:
+    ___ l __ lines:
         split = l.split(':')
         username = split[0]
         shell = split[6]
         s = shell.split('/')
         try:
-            __ s[2] == grep_shell or s[3] == grep_shell:
-                output.append(username)
+            __ s[2] __ grep_shell o. s[3] __ grep_shell:
+                output.a..(username)
         except:
             print("dupa")
-    return sorted(output)
+    r.. s..(output)
 
 
 print(get_users_for_shell())

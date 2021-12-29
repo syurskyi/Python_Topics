@@ -7,21 +7,21 @@ class Solution(object):
     """
 
     ___ dfs(k, start, path, subsum, res, visited):
-      __ len(path) == k and subsum == 0:
-        res.append(path + [])
-        return
-      __ len(path) >= k or subsum <= 0:
-        return
+      __ l..(path) __ k and subsum __ 0:
+        res.a..(path + [])
+        r..
+      __ l..(path) >= k o. subsum <= 0:
+        r..
 
-      for i in range(start, 10):
-        __ visited[i] == 0:
+      ___ i __ r..(start, 10):
+        __ visited[i] __ 0:
           visited[i] = 1
-          path.append(i)
+          path.a..(i)
           dfs(k, i + 1, path, subsum - i, res, visited)
           visited[i] = 0
           path.pop()
 
     visited = [0] * 10
-    res = []
+    res    # list
     dfs(k, 1, [], n, res, visited)
-    return res
+    r.. res

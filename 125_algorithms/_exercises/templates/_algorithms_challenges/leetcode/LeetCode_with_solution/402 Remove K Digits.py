@@ -33,14 +33,14 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        stk = []  # result after removal
-        for char in num:
+        stk    # list  # result after removal
+        ___ char __ num:
             while k and stk and stk[-1] > char:
                 stk.pop()
                 k -= 1
 
-            stk.append(char)
+            stk.a..(char)
 
-        for _ in xrange(k): stk.pop()
+        ___ _ __ xrange(k): stk.pop()
 
-        return ''.join(stk).lstrip('0') or '0'
+        r.. ''.join(stk).lstrip('0') o. '0'

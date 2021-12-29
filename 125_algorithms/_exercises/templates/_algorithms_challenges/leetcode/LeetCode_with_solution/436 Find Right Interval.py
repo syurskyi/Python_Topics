@@ -21,12 +21,12 @@ class Interval:
 
     @classmethod
     ___ new(cls, lst):
-        return [
+        r.. [
             cls(s, e)
-            for s, e in lst
+            ___ s, e __ lst
         ]
 
-from bisect import bisect_left
+____ bisect _______ bisect_left
 
 
 class Solution:
@@ -39,23 +39,23 @@ class Solution:
         """
         indexes = {
             itv.start: idx
-            for idx, itv in enumerate(intervals)
+            ___ idx, itv __ enumerate(intervals)
         }
-        starts = list(sorted(indexes.keys()))
-        ret = []
-        for itv in intervals:
+        starts = l..(s..(indexes.keys()))
+        ret    # list
+        ___ itv __ intervals:
             idx = bisect_left(starts, itv.end)
-            __ idx >= len(starts):
-                ret.append(-1)
-            else:
-                ret.append(
+            __ idx >= l..(starts):
+                ret.a..(-1)
+            ____:
+                ret.a..(
                     indexes[starts[idx]]
                 )
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) == [-1, 0, 1]
-    assert Solution().findRightInterval(Interval.new([ [1,2] ])) == [-1]
-    assert Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) == [-1, 2, -1]
+__ __name__ __ "__main__":
+    ... Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) __ [-1, 0, 1]
+    ... Solution().findRightInterval(Interval.new([ [1,2] ])) __ [-1]
+    ... Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) __ [-1, 2, -1]

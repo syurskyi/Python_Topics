@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -14,21 +14,21 @@ class Solution(object):
     :rtype: List[List[int]]
     """
     stack = deque([root])
-    ans = []
+    ans    # list
     odd = True
     while stack:
-      level = []
-      for k in range(0, len(stack)):
+      level    # list
+      ___ k __ r..(0, l..(stack)):
         top = stack.popleft()
-        __ top is None:
+        __ top __ N..
           continue
-        level.append(top.val)
-        stack.append(top.left)
-        stack.append(top.right)
+        level.a..(top.val)
+        stack.a..(top.left)
+        stack.a..(top.right)
       __ level:
         __ odd:
-          ans.append(level)
-        else:
-          ans.append(level[::-1])
-      odd = not odd
-    return ans
+          ans.a..(level)
+        ____:
+          ans.a..(level[::-1])
+      odd = n.. odd
+    r.. ans

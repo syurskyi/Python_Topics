@@ -11,12 +11,12 @@ class Solution(object):
         :type duration: int
         :rtype: int
         """
-        __ not timeSeries: return 0
+        __ n.. timeSeries: r.. 0
         res = 0
-        for i in range(1, len(timeSeries)):
-            res += min(timeSeries[i]-timeSeries[i-1], duration)
+        ___ i __ r..(1, l..(timeSeries)):
+            res += m..(timeSeries[i]-timeSeries[i-1], duration)
         res += duration
-        return res
+        r.. res
     
     ___ findPoisonedDuration(self, timeSeries, duration):
         """
@@ -27,13 +27,13 @@ class Solution(object):
         result = 0
         prev = 0
         maxTime = 0
-        for time in timeSeries:
+        ___ time __ timeSeries:
             __ maxTime < time:
                 result += maxTime - prev
                 prev = time
             maxTime = max(maxTime, time+duration)
         result += maxTime-prev
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -46,12 +46,12 @@ class Solution(object):
                 2,
             ],
         ]
-        for timeSeries, duration in testCases:
+        ___ timeSeries, duration __ testCases:
             print('timeSeries: %s' % timeSeries)
             print('duration: %s' % duration)
             result = self.findPoisonedDurationAnother(timeSeries, duration)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

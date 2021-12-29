@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from diamond import make_diamond
+____ diamond _______ make_diamond
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -88,5 +88,5 @@ class DiamondTests(unittest.TestCase):
         self.assertMultiLineEqual(make_diamond('Z'), '\n'.join(result) + '\n')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

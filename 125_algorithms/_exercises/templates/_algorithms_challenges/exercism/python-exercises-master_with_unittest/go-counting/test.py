@@ -1,5 +1,5 @@
-import unittest
-import go_counting
+_______ unittest
+_______ go_counting
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -92,8 +92,8 @@ class GoCountingTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,54 +1,54 @@
-import heapq
+_______ heapq
 
 
 class HashHeapq:
     ___ __init__(self):
-        self.__heap = []
+        self.__heap    # list
 
     ___ __repr__(self):
-        return repr(self.__heap)
+        r.. repr(self.__heap)
 
     ___ __len__(self):
-        return len(self.__heap)
+        r.. l..(self.__heap)
 
     ___ __bool__(self):
-        return bool(self.__heap)
+        r.. bool(self.__heap)
 
     ___ push(self, val):
         heapq.heappush(self.__heap, val)
 
     ___ pop(self):
-        __ not self.__heap:
-            return
+        __ n.. self.__heap:
+            r..
 
-        return heapq.heappop(self.__heap)
+        r.. heapq.heappop(self.__heap)
 
     ___ remove(self, val):
-        __ not self.__heap:
-            return
+        __ n.. self.__heap:
+            r..
 
         i = 0
-        n = len(self.__heap)
+        n = l..(self.__heap)
 
         while i < n and self.__heap[i] != val:
             i += 1
 
-        __ i == n:
-            return
+        __ i __ n:
+            r..
 
-        __ i == n - 1:
+        __ i __ n - 1:
             self.__heap.pop()
-        else:
+        ____:
             self.__heap[i] = self.__heap[-1]
             self.__heap.pop()
             heapq._siftup(self.__heap, i)
             heapq._siftdown(self.__heap, 0, i)
 
     ___ top(self):
-        __ not self.__heap:
-            return
+        __ n.. self.__heap:
+            r..
 
-        return self.__heap[0]
+        r.. self.__heap[0]
 
 
 class Solution:
@@ -58,45 +58,45 @@ class Solution:
         :type k: int
         :rtype: List[float]
         """
-        ans = []
+        ans    # list
 
-        __ not nums or k <= 0 or len(nums) < k:
-            return ans
+        __ n.. nums o. k <= 0 o. l..(nums) < k:
+            r.. ans
 
         self.minheap = HashHeapq()
         self.maxheap = HashHeapq()
 
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
                 __ self.minheap and nums[i - k] >= self.minheap.top():
                     self.minheap.remove(nums[i - k])
-                else:
+                ____:
                     self.maxheap.remove(- nums[i - k])
 
             # add nums[i]
             __ self.minheap and nums[i] >= self.minheap.top():
                 self.minheap.push(nums[i])
-            else:
+            ____:
                 self.maxheap.push(- nums[i])
 
             # get median
             __ i >= k - 1:
-                ans.append(self.get_median())
+                ans.a..(self.get_median())
 
-        return ans
+        r.. ans
 
     ___ get_median(self):
-        __ not self.minheap and not self.maxheap:
-            return 0.0
+        __ n.. self.minheap and n.. self.maxheap:
+            r.. 0.0
 
-        while len(self.minheap) > len(self.maxheap) + 1:
+        while l..(self.minheap) > l..(self.maxheap) + 1:
             self.maxheap.push(- self.minheap.pop())
 
-        while len(self.maxheap) > len(self.minheap):
+        while l..(self.maxheap) > l..(self.minheap):
             self.minheap.push(- self.maxheap.pop())
 
-        __ len(self.minheap) > len(self.maxheap):
-            return self.minheap.top() * 1.0
+        __ l..(self.minheap) > l..(self.maxheap):
+            r.. self.minheap.top() * 1.0
 
-        return (self.minheap.top() - self.maxheap.top()) / 2.0
+        r.. (self.minheap.top() - self.maxheap.top()) / 2.0

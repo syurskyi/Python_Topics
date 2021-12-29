@@ -13,4 +13,4 @@ class Solution:
     __ root and root.left and root.right:
       root.left.next = root.right
       root.right.next = root.next and root.next.left
-      return self.connect(root.left) or self.connect(root.right)
+      r.. self.connect(root.left) o. self.connect(root.right)

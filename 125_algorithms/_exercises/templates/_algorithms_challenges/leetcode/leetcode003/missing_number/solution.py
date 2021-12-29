@@ -16,12 +16,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         s = n * (n + 1) / 2
         res = 0
-        for i in nums:
+        ___ i __ nums:
             res += i
-        return s - res
+        r.. s - res
 
 s = Solution()
 a1 = [0, 1, 3]

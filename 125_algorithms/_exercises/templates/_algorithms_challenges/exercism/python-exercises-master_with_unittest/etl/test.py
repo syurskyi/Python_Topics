@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from etl import transform
+____ etl _______ transform
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -39,5 +39,5 @@ class TransformTest(unittest.TestCase):
         self.assertEqual(transform(legacy_data), data)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

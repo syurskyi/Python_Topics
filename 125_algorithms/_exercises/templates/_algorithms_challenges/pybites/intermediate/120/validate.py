@@ -1,15 +1,15 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ int_args(func):
     @wraps(func)
     ___ wrapper(*args):
         # Validate arg type and value
-        for arg in args:
-            __ not isinstance(arg, int):
+        ___ arg __ args:
+            __ n.. isi..(arg, int):
                 raise TypeError
-            else:
+            ____:
                 __ arg < 0:
                     raise ValueError
-        return func(*args)
-    return wrapper
+        r.. func(*args)
+    r.. wrapper

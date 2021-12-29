@@ -1,6 +1,6 @@
-from true_or_false.game_result import GameResult
-from true_or_false.game_status import GameStatus
-from true_or_false.question import Question
+____ true_or_false.game_result _______ GameResult
+____ true_or_false.game_status _______ GameStatus
+____ true_or_false.question _______ Question
 
 
 class Game:
@@ -11,13 +11,13 @@ class Game:
         is_correct  parts[1] __ "Yes"
         explanation  parts[2]
 
-        return Question(text, is_correct, explanation)
+        r.. Question(text, is_correct, explanation)
 
     ___ __fill_in_questions(self, file_path, questions: []):
         with open(file_path, encoding'UTF8') as file:
-            for line in file:
+            ___ line __ file:
                 q  self.__parse_line(line)
-                questions.append(q)
+                questions.a..(q)
 
     ___ __init__(self, file_path, allowed_mistakes, end_of_game_callback):
         self.__file_path  file_path
@@ -31,19 +31,19 @@ class Game:
         self.__fill_in_questions(file_path, self.__questions)
 
     ___ get_next_question(self):
-        return self.__questions[self.__counter]
+        r.. self.__questions[self.__counter]
 
     ___ give_answer(self, answer):
         ___ is_last_question():
-            return self.__counter __ len(self.__questions) - 1
+            r.. self.__counter __ l..(self.__questions) - 1
 
         ___ exceeded_allowed_mistakes():
-            return self.__mistakes > self.__allowed_mistakes
+            r.. self.__mistakes > self.__allowed_mistakes
 
         __ self.__questions[self.__counter].is_true ! answer:
             self.__mistakes + 1
 
-        __ is_last_question() or exceeded_allowed_mistakes():
+        __ is_last_question() o. exceeded_allowed_mistakes():
             self.__game_status  GameStatus.GAME_IS_OVER
 
             result  GameResult(self.__counter, self.__mistakes, self.__mistakes < self.__allowed_mistakes)
@@ -53,4 +53,4 @@ class Game:
 
     @property
     ___ game_status(self):
-        return self.__game_status
+        r.. self.__game_status

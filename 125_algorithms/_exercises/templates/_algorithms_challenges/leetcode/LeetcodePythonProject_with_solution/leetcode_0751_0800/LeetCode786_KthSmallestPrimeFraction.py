@@ -18,12 +18,12 @@ class Solution(object):
             [ [1, 2, 3, 5], 3 ],
             [ [1, 7], 1 ],
         ]
-        for arr, k in testCases:
+        ___ arr, k __ testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             result = self.kthSmallestPrimeFraction(arr, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

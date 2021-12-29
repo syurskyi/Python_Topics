@@ -15,58 +15,58 @@ class Solution:
         :type operators: Point
         :rtype: list[int]
         """
-        ans = []
+        ans    # list
 
-        __ not m or not n or not operators:
-            return ans
+        __ n.. m o. n.. n o. n.. operators:
+            r.. ans
 
         cnt = 0
         nodes = {}
 
-        for op in operators:
+        ___ op __ operators:
             node = (op.x, op.y)
 
-            __ node not in nodes:
+            __ node n.. __ nodes:
                 nodes[node] = node
                 cnt += 1
 
-            for dx, dy in (
+            ___ dx, dy __ (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
             ):
                 _x = op.x + dx
                 _y = op.y + dy
 
-                __ not (
+                __ n.. (
                     0 <= _x < m and
                     0 <= _y < n and
-                    (_x, _y) in nodes
+                    (_x, _y) __ nodes
                 ):
                     continue
 
                 __ self.union(nodes, node, (_x, _y)):
                     cnt -= 1
 
-            ans.append(cnt)
+            ans.a..(cnt)
 
-        return ans
+        r.. ans
 
     ___ union(self, nodes, a, b):
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        __ _a == _b:
-            return False
+        __ _a __ _b:
+            r.. False
 
         nodes[_b] = _a
-        return True
+        r.. True
 
     ___ find(self, nodes, a):
-        __ a not in nodes:
+        __ a n.. __ nodes:
             nodes[a] = a
-            return a
-        __ nodes[a] == a:
-            return a
+            r.. a
+        __ nodes[a] __ a:
+            r.. a
 
         nodes[a] = self.find(nodes, nodes[a])
-        return nodes[a]
+        r.. nodes[a]

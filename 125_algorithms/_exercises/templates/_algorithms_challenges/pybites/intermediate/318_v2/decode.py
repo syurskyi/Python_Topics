@@ -1,6 +1,6 @@
-import base64
-import csv
-from typing import List  # will remove with 3.9
+_______ base64
+_______ csv
+____ typing _______ List  # will remove with 3.9
 
 
 ___ get_credit_cards(data: bytes) -> List[str]:
@@ -9,7 +9,7 @@ ___ get_credit_cards(data: bytes) -> List[str]:
     to extract the credit card numbers.
     """
     text = base64.decodebytes(data).decode()
-    card_nums = [row.split(',')[2] for row in text.splitlines()]
+    card_nums = [row.split(',')[2] ___ row __ text.splitlines()]
     card_nums.pop(0)            # remove header
 
-    return card_nums
+    r.. card_nums

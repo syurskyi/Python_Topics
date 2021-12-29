@@ -1,4 +1,4 @@
-from copy import deepcopy
+____ copy _______ deepcopy
 class Matrix(object):
 
     ___ __init__(self, values):
@@ -8,37 +8,37 @@ class Matrix(object):
 
     @property
     ___ nrows(self):
-        return len(self.values)
+        r.. l..(self.values)
 
 
     @property
     ___ ncols(self):
-        return len(self.values[0])
+        r.. l..(self.values[0])
 
     ___ __matmul__(self,other):
 
         
-        rows_1,cols_1 = len(self.values),len(self.values[0])
-        rows_2,cols_2 = len(other.values),len(other.values[0])
+        rows_1,cols_1 = l..(self.values),l..(self.values[0])
+        rows_2,cols_2 = l..(other.values),l..(other.values[0])
 
 
         result_rows,result_cols = rows_1,cols_2
 
 
-        result_matrix = [[None for _ in range(result_cols)] for _ in range(result_rows)]
+        result_matrix = [[N.. ___ _ __ r..(result_cols)] ___ _ __ r..(result_rows)]
 
 
 
-        for row in range(result_rows):
-            for col in range(result_cols):
+        ___ row __ r..(result_rows):
+            ___ col __ r..(result_cols):
                 value = 0
-                for c in range(cols_1):
+                ___ c __ r..(cols_1):
                     value += self.values[row][c] * other.values[c][col]
 
                 result_matrix[row][col] = value
         
 
-        return Matrix(result_matrix)
+        r.. Matrix(result_matrix)
 
     ___ __imatmul__(self,other):
 
@@ -48,12 +48,12 @@ class Matrix(object):
         self.values = deepcopy(result.values)
 
 
-        return self
+        r.. self
 
     
     ___ __rmatmul__(self,other):
 
-        return self  @ other
+        r.. self  @ other
 
 
 
@@ -70,6 +70,6 @@ class Matrix(object):
 
 
     ___ __repr__(self):
-        return f'<Matrix values="{self.values}">'
+        r.. f'<Matrix values="{self.values}">'
 
 

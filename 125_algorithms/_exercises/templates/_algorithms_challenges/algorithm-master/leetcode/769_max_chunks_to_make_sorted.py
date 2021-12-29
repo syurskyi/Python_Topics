@@ -28,18 +28,18 @@ class Solution:
         """
         ans = 0
 
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
         _max = 0  # since 0 is the min in nums
 
-        for i in range(len(nums)):
+        ___ i __ r..(l..(nums)):
             _max = max(_max, nums[i])
 
-            __ _max == i:
+            __ _max __ i:
                 ans += 1
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -50,20 +50,20 @@ class Solution:
         """
         ans = 0
 
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
-        n = len(nums)
+        n = l..(nums)
         M = [0] * n  # `M[i]` means the max in [0:i] in nums
 
-        for i in range(n):
+        ___ i __ r..(n):
             M[i] = nums[i]
 
             __ i > 0 and M[i - 1] > M[i]:
                 M[i] = M[i - 1]
 
-        for i in range(n):
-            __ M[i] == i:
+        ___ i __ r..(n):
+            __ M[i] __ i:
                 ans += 1
 
-        return ans
+        r.. ans

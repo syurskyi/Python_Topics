@@ -32,7 +32,7 @@ class Node:
     ___ __init__(self, key, val):
         self.key = key
         self.val = val
-        self.prev, self.next = None, None
+        self.prev, self.next = N.., N..
 
 
 class LRUCache:
@@ -47,26 +47,26 @@ class LRUCache:
 
         Essentially it is the OrderedDict
         """
-        self.head = Node(None, None)
-        self.tail = Node(None, None)
+        self.head = Node(N.., N..)
+        self.tail = Node(N.., N..)
         self.head.next = self.tail
         self.tail.prev = self.head
         self.cap = capacity
         self.map = {}
 
     ___ get(self, key: int) -> int:
-        __ key in self.map:
+        __ key __ self.map:
             node = self.map[key]
             self._remove(key)
             self._appendleft(node)
-            return node.val
+            r.. node.val
 
-        return -1
+        r.. -1
 
-    ___ put(self, key: int, value: int) -> None:
-        __ key in self.map:
+    ___ put(self, key: int, value: int) -> N..
+        __ key __ self.map:
             self._remove(key)
-        elif len(self.map) >= self.cap:
+        ____ l..(self.map) >= self.cap:
             node = self.tail.prev
             self._remove(node.key)
 

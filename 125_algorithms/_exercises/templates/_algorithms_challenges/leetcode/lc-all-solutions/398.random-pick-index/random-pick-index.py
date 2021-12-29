@@ -15,12 +15,12 @@ class Solution(object):
     """
     count = 0
     ans = -1
-    for i in range(0, len(self.nums)):
-      __ self.nums[i] == target:
+    ___ i __ r..(0, l..(self.nums)):
+      __ self.nums[i] __ target:
         count += 1
-        __ random.randrange(0, count) == 0:
+        __ random.randrange(0, count) __ 0:
           ans = i
-    return ans
+    r.. ans
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)

@@ -1,10 +1,10 @@
-import sys
-from operator import add, mul, sub
+_______ sys
+____ operator _______ add, mul, sub
 
-__ sys.version_info[0] == 2:
-    from operator import div
-else:
-    from operator import floordiv as div
+__ sys.version_info[0] __ 2:
+    ____ operator _______ div
+____:
+    ____ operator _______ floordiv as div
 
 
 VALID_OPERATIONS = {"plus": add, "minus": sub,
@@ -12,10 +12,10 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
 
 
 ___ calculate(stmt):
-    __ not (stmt.startswith("What is ") and stmt.endswith("?")):
+    __ n.. (stmt.startswith("What is ") and stmt.endswith("?")):
         raise ValueError("Ill-formed question")
-    l = stmt[8:-1].strip().lower().split()
-    __ not l:
+    l = stmt[8:-1].strip().lower().s.. 
+    __ n.. l:
         raise ValueError("Ill-formed question")
     l.reverse()
     try:
@@ -30,12 +30,12 @@ ___ calculate(stmt):
                 op2 = int(next_tk)
                 break
             except ValueError:
-                oprt.append(next_tk)
-        else:
+                oprt.a..(next_tk)
+        ____:
             raise ValueError("Ill-formed question")
         oprt = " ".join(oprt)
         try:
             op1 = VALID_OPERATIONS[oprt](op1, op2)
         except KeyError:
             raise ValueError("Ill-formed question")
-    return op1
+    r.. op1

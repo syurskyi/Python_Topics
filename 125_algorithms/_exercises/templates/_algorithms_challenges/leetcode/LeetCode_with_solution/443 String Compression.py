@@ -23,20 +23,20 @@ class Solution:
         """
         ret = 1
         s = 0  # start index of current char
-        for i in range(1, len(chars) + 1):
-            __ i < len(chars) and chars[i] == chars[s]:
+        ___ i __ r..(1, l..(chars) + 1):
+            __ i < l..(chars) and chars[i] __ chars[s]:
                 continue
             l = i - s
             __ l > 1:
-                for digit in str(l):
+                ___ digit __ str(l):
                     chars[ret] = digit
                     ret += 1
-            __ i < len(chars):
+            __ i < l..(chars):
                 chars[ret] = chars[i]
                 ret += 1
                 s = i
                 
-        return ret
+        r.. ret
 
     ___ compress_error(self, chars):
         """
@@ -45,23 +45,23 @@ class Solution:
         :rtype: int
         """
         s = 0
-        for idx in range(1, len(chars) + 1):
-            __ idx < len(chars) and chars[idx] == chars[s]:
+        ___ idx __ r..(1, l..(chars) + 1):
+            __ idx < l..(chars) and chars[idx] __ chars[s]:
                 continue
             l = idx - s
-            __ l == 1:
-                s = min(s + 1, len(chars) - 1)
-            else:
-                for digit in str(l):
+            __ l __ 1:
+                s = m..(s + 1, l..(chars) - 1)
+            ____:
+                ___ digit __ str(l):
                     s += 1
                     chars[s] = digit
-                __ idx < len(chars):
+                __ idx < l..(chars):
                     s += 1
                     chars[s] = chars[idx]
-        return s + 1
+        r.. s + 1
 
 
-__ __name__ == "__main__":
-    assert Solution().compress(["a"]) == 1
-    assert Solution().compress(["a","a","b","b","c","c","c"]) == 6
-    assert Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) == 4
+__ __name__ __ "__main__":
+    ... Solution().compress(["a"]) __ 1
+    ... Solution().compress(["a","a","b","b","c","c","c"]) __ 6
+    ... Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) __ 4

@@ -4,17 +4,17 @@ class ConnectingGraph3:
     """
     ___ __init__(self, n):
         __ n < 1:
-            return
+            r..
         self.nodes = {}
         self.count = n
-        for i in range(n):
+        ___ i __ r..(n):
             self.nodes[i + 1] = i + 1
 
     ___ find(self, a):
-        __ self.nodes[a] == a:
-            return a
+        __ self.nodes[a] __ a:
+            r.. a
         self.nodes[a] = self.find(self.nodes[a])
-        return self.nodes[a]
+        r.. self.nodes[a]
 
     """
     @param: a: An integer
@@ -32,4 +32,4 @@ class ConnectingGraph3:
     @return: An integer
     """
     ___ query(self):
-        return self.count
+        r.. self.count

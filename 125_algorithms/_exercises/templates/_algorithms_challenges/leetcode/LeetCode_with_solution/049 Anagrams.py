@@ -11,27 +11,27 @@ class Solution:
         :param strs: a list of strings
         :return: a list of strings
         """
-        temp = list(strs)
-        for ind, string in enumerate(temp):
+        temp = l..(strs)
+        ___ ind, string __ enumerate(temp):
             __ string and string!="":  # avoid case of empty string
-                string = [char for char in string]
+                string = [char ___ char __ string]
                 string.sort()
                 string = "".join(string)
                 temp[ind] = string
 
 
         hash_map = {}
-        for ind, string in enumerate(temp):
+        ___ ind, string __ enumerate(temp):
             indexes = hash_map.get(string, [])
-            indexes.append(ind)  # side-effect
+            indexes.a..(ind)  # side-effect
             hash_map[string] = indexes
 
-        result = []
-        for val in hash_map.values():
-            __ len(val)>1:
+        result    # list
+        ___ val __ hash_map.values():
+            __ l..(val)>1:
                 # result.append([strs[i] for i in val])
-                result += [strs[i] for i in val]
-        return result
+                result += [strs[i] ___ i __ val]
+        r.. result
 
     ___ anagrams(self, strs):
         """
@@ -40,22 +40,22 @@ class Solution:
         :return: a list of strings
         """
         hash_map = {}
-        for ind, string in enumerate(strs):
-            string = "".join(sorted(string))  # string reversing and sorting are a little different
-            __ string not in hash_map:
+        ___ ind, string __ enumerate(strs):
+            string = "".join(s..(string))  # string reversing and sorting are a little different
+            __ string n.. __ hash_map:
                 hash_map[string] = [ind]
-            else:
-                hash_map[string].append(ind)
+            ____:
+                hash_map[string].a..(ind)
             # indexes = hash_map.get(string, [])
             # indexes.append(ind)  # side-effect
             # hash_map[string] = indexes  # reassign
 
-        result = []
-        for val in hash_map.values():
-            __ len(val)>1:
+        result    # list
+        ___ val __ hash_map.values():
+            __ l..(val)>1:
                 # result.append([strs[i] for i in val])
-                result += [strs[i] for i in val]
-        return result
+                result += [strs[i] ___ i __ val]
+        r.. result
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().anagrams(["", ""])

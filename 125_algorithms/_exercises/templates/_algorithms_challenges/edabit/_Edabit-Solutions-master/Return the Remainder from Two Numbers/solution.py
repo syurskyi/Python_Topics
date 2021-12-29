@@ -1,2 +1,2 @@
 ___ remainder(x, y):
-    return x % y
+    r.. x % y

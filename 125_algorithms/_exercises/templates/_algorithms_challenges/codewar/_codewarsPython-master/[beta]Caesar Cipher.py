@@ -1,13 +1,13 @@
-import string
+_______ string
 ___ caesar(s, shift):
     transDict = {}
     alpha = string.ascii_lowercase
     alphaTrans = alpha[shift:] + alpha[:shift]
-    for key,value in zip(string.ascii_lowercase,alphaTrans):
+    ___ key,value __ zip(string.ascii_lowercase,alphaTrans):
         transDict[key] = value
         transDict[key.upper()] = value.upper()
 
-    return ''.join([transDict[c] __ c in transDict else c for c in s])
+    r.. ''.join([transDict[c] __ c __ transDict ____ c ___ c __ s])
 
 
 

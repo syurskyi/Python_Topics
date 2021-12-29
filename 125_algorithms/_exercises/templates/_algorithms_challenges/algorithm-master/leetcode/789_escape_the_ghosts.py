@@ -8,9 +8,9 @@ class Solution:
         R, C = target
         pacman_dist = abs(R) + abs(C)  # (R - 0) + (C - 0)
 
-        for x, y in ghosts:
+        ___ x, y __ ghosts:
             ghost_dist = abs(R - x) + abs(C - y)
             __ ghost_dist <= pacman_dist:
-                return False
+                r.. False
 
-        return True
+        r.. True

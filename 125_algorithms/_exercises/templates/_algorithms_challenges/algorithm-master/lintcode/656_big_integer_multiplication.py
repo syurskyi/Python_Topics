@@ -5,22 +5,22 @@ class Solution:
         :type b: str
         :rtype: str
         """
-        __ not a or not b or a == '0' or b == '0':
-            return '0'
+        __ n.. a o. n.. b o. a __ '0' o. b __ '0':
+            r.. '0'
 
-        m, n = len(a), len(b)
+        m, n = l..(a), l..(b)
         tmp = [0] * (m + n)
 
-        for i in range(m - 1, -1, -1):
+        ___ i __ r..(m - 1, -1, -1):
             carry = 0
-            for j in range(n - 1, -1, -1):
+            ___ j __ r..(n - 1, -1, -1):
                 carry += tmp[i + j + 1] + int(a[i]) * int(b[j])
                 tmp[i + j + 1] = carry % 10
                 carry //= 10
             tmp[i] = carry
 
         i = 0
-        while tmp[i] == 0:
+        while tmp[i] __ 0:
             i += 1
 
-        return ''.join([str(j) for j in tmp[i:]])
+        r.. ''.join([str(j) ___ j __ tmp[i:]])

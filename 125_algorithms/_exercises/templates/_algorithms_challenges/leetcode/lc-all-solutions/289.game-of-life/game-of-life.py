@@ -7,19 +7,19 @@ class Solution(object):
 
     ___ helper(board, p, q):
       cnt = 0
-      for i in range(p - 1, p + 2):
-        for j in range(q - 1, q + 2):
-          __ i == p and j == q:
+      ___ i __ r..(p - 1, p + 2):
+        ___ j __ r..(q - 1, q + 2):
+          __ i __ p and j __ q:
             continue
-          __ 0 <= i < len(board) and 0 <= j < len(board[0]) and board[i][j] & 1:
+          __ 0 <= i < l..(board) and 0 <= j < l..(board[0]) and board[i][j] & 1:
             cnt += 1
-      __ cnt == 3 or (board[p][q] == 1 and cnt == 2):
+      __ cnt __ 3 o. (board[p][q] __ 1 and cnt __ 2):
         board[p][q] |= 2
 
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
         helper(board, i, j)
 
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
         board[i][j] >>= 1

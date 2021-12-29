@@ -8,23 +8,23 @@ class Solution:
         :type b: list[int]
         :rtype: list[int]
         """
-        __ not a or not b or len(a) != len(b):
-            return []
+        __ n.. a o. n.. b o. l..(a) != l..(b):
+            r.. []
 
-        n = len(a)
+        n = l..(a)
         ans = [-1] * n
         b2i = {}
 
-        for i in range(n):
+        ___ i __ r..(n):
             b2i[b[i]] = i
 
-        for i in range(n):
-            __ a[i] not in b2i:
-                return []
+        ___ i __ r..(n):
+            __ a[i] n.. __ b2i:
+                r.. []
 
             ans[i] = b2i[a[i]]
 
-        return ans
+        r.. ans
 
 
 """
@@ -37,25 +37,25 @@ class Solution:
         :type b: list[int]
         :rtype: list[int]
         """
-        __ not a or not b or len(a) != len(b):
-            return []
+        __ n.. a o. n.. b o. l..(a) != l..(b):
+            r.. []
 
-        n = len(a)
+        n = l..(a)
         ans = [-1] * n
         b2i = {}
 
-        for i in range(n):
-            __ b[i] not in b2i:
-                b2i[b[i]] = []
+        ___ i __ r..(n):
+            __ b[i] n.. __ b2i:
+                b2i[b[i]]    # list
 
-            b2i[b[i]].append(i)
+            b2i[b[i]].a..(i)
 
-        for i in range(n):
-            __ not b2i.get(a[i]):
+        ___ i __ r..(n):
+            __ n.. b2i.get(a[i]):
                 # a[i] not in b2i
                 # b2i[a[i]] is empty list
-                return []
+                r.. []
 
             ans[i] = b2i[a[i]].pop()
 
-        return ans
+        r.. ans

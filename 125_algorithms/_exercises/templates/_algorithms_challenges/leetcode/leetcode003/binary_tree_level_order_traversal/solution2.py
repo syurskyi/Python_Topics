@@ -30,20 +30,20 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        res = []
-        __ root is None:
-            return res
-        queue = []
-        queue.append(root)
+        res    # list
+        __ root __ N..
+            r.. res
+        queue    # list
+        queue.a..(root)
         while queue:
-            n = len(queue)
-            level = []
-            for i in range(n):
+            n = l..(queue)
+            level    # list
+            ___ i __ r..(n):
                 root = queue.pop(0)
-                __ root.left is not None:
-                    queue.append(root.left)
-                __ root.right is not None:
-                    queue.append(root.right)
-                level.append(root.val)
-            res.append(level[:])
-        return res
+                __ root.left __ n.. N..
+                    queue.a..(root.left)
+                __ root.right __ n.. N..
+                    queue.a..(root.right)
+                level.a..(root.val)
+            res.a..(level[:])
+        r.. res

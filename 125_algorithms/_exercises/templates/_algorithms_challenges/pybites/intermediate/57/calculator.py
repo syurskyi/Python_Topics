@@ -1,4 +1,4 @@
-import argparse
+_______ argparse
 
 ___ calculator(operation, numbers):
     """TODO 1:
@@ -6,26 +6,26 @@ ___ calculator(operation, numbers):
        Perform the operation returning the result rounded to 2 decimals"""
     print(operation,numbers)
     total = 0
-    __ operation == 'add':
+    __ operation __ 'add':
         total = float(numbers[0])
-        for i in numbers[1:]:
+        ___ i __ numbers[1:]:
             total = total + float(i)
-    elif operation == 'sub':
+    ____ operation __ 'sub':
         total = float(numbers[0])
-        for i in numbers[1:]:
+        ___ i __ numbers[1:]:
             total = total - float(i)
-    elif operation == 'mul':
+    ____ operation __ 'mul':
         total = float(numbers[0])
         print(total)
-        for i in numbers[1:]:
+        ___ i __ numbers[1:]:
             total = total * float(i)
             print(total)
-    elif operation == 'div':
+    ____ operation __ 'div':
         total = float(numbers[0])
-        for i in numbers[1:]:
+        ___ i __ numbers[1:]:
             total = total / float(i)
     print(type(total))
-    return round(total,2)
+    r.. round(total,2)
 
 
 ___ create_parser():
@@ -55,24 +55,24 @@ ___ create_parser():
                        action='store', nargs='+',
                        help='Divides numbers')
     #print(my_parser.parse_args())
-    return my_parser
+    r.. my_parser
 
 
-___ call_calculator(args=None, stdout=False):
+___ call_calculator(args=N.., stdout=False):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
     parser = create_parser()
 
-    __ args is None:
+    __ args __ N..
         args = parser.parse_args()
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    for operation, numbers in vars(args).items():
+    ___ operation, numbers __ vars(args).items():
         #print(operation, numbers)
-        __ numbers is None:
+        __ numbers __ N..
             continue
 
         try:
@@ -83,8 +83,8 @@ ___ call_calculator(args=None, stdout=False):
         __ stdout:
             print(res)
 
-        return res
+        r.. res
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     call_calculator(stdout=True)

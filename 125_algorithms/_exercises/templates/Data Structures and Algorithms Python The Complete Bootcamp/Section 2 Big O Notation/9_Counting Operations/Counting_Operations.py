@@ -8,7 +8,7 @@ ___ rondomFunction(students):
 
     ___ student __ students:
         total + 1  # O(n)
-        new_list.append(student)  # O(n)
+        new_list.a..(student)  # O(n)
 
     print(new_list)  # O(1)
     r_ total  # O(1)

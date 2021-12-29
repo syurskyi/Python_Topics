@@ -23,7 +23,7 @@ Even so decorators can be confusing when you start using them so
 here is an article we wrote some time ago: Learning Python Decorators by Example.
 """
 
-from functools import wraps
+____ functools _______ wraps
 
 UPPER_SLICE = "=== Upper bread slice ==="
 LOWER_SLICE = "=== Lower bread slice ==="
@@ -39,8 +39,8 @@ ___ sandwich_v1(func):
         print(UPPER_SLICE)
         result = func(*args, **kwargs)
         print(LOWER_SLICE)
-        return result
-    return wrapped
+        r.. result
+    r.. wrapped
 
 ___ sandwich_v2(func):
     """Write a decorator that prints UPPER_SLICE and
@@ -52,12 +52,12 @@ ___ sandwich_v2(func):
         print(UPPER_SLICE)
         func(*args, **kwargs)
         print(LOWER_SLICE)
-    return wrapped
+    r.. wrapped
 
 @sandwich_v2
 ___ add_ingredients(ingredients):
     print(' / '.join(ingredients))
-    return len(ingredients)
+    r.. l..(ingredients)
 
 ingredients = ['bacon', 'lettuce', 'tomato']
 print(add_ingredients(ingredients))

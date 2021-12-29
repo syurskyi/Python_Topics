@@ -33,13 +33,13 @@ class Solution:
         :param num: integer, Input is guaranteed to be within the range from 1 to 3999
         :return: a string
         """
-        string_builder = []
+        string_builder    # list
         components = [1, 4, 5, 9, 10, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
 
         # starting from the largest
-        for component in reversed(components):  # reversed
+        ___ component __ reversed(components):  # reversed
             while num >= component:
-                string_builder.append(int2roman[component])
+                string_builder.a..(int2roman[component])
                 num -= component
 
-        return "".join(string_builder)
+        r.. "".join(string_builder)

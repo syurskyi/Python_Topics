@@ -1,32 +1,32 @@
-from typing import Tuple
-from collections import Counter
-import re
-import pandas as pd
+____ typing _______ Tuple
+____ collections _______ Counter
+_______ re
+_______ pandas as pd
 
 
 ___ max_letter_word(text: str) -> Tuple[str, str, int]:
-    __ text is None:
-        return None
-    __ text is True:
-        return None
-    __ text == 1:
-        return None
-    __ text == 1.0:
-        return None
-    __ text is []:
-        return None
-    __ text is {}:
-        return None
+    __ text __ N..
+        r.. N..
+    __ text __ True:
+        r.. N..
+    __ text __ 1:
+        r.. N..
+    __ text __ 1.0:
+        r.. N..
+    __ text __ []:
+        r.. N..
+    __ text __ {}:
+        r.. N..
     text = text.replace('_', '').replace('--', '').replace('-', 'placeholder').replace('\'', 'pxaceholder')
     text = re.sub('\W', ' ', text) #remove not word characters
     text = re.sub(' +', ' ', text) #remove extra spaces
-    t = ''.join(s for s in text __ not any(c.isdigit() for c in s)) #remove digit words
+    t = ''.join(s ___ s __ text __ n.. any(c.isdigit() ___ c __ s)) #remove digit words
 
-    words = t.split()
+    words = t.s..
     df = pd.DataFrame(words, columns=['word'])
 
-    __ df.empty == True:
-        return '', '', 0
+    __ df.empty __ True:
+        r.. '', '', 0
 
     df['casefold'] = df['word'].str.replace('placeholder', '')
     df['casefold'] = df['casefold'].str.replace('pxaceholder', '')
@@ -37,13 +37,13 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
     df['casefold'] = df['casefold'].str.lower()
     df['casefold'] = df['casefold'].str.replace('ß', 'ss')
 
-    l_column= []
-    c_column = []
-    for w in df['casefold']:
-        l_column.append(Counter(w).most_common()[0][0])
-        c_column.append(Counter(w).most_common()[0][1])
+    l_column   # list
+    c_column    # list
+    ___ w __ df['casefold']:
+        l_column.a..(Counter(w).most_common()[0][0])
+        c_column.a..(Counter(w).most_common()[0][1])
 
-    l_column = ['e' __ x == '-' else x for x in l_column]
+    l_column = ['e' __ x __ '-' ____ x ___ x __ l_column]
 
     df['letter'] = l_column
     df['count'] = c_column
@@ -52,7 +52,7 @@ ___ max_letter_word(text: str) -> Tuple[str, str, int]:
 
     output = df['word'].iloc[0], df['letter'].iloc[0], df['count'].iloc[0]
 
-    __ output == ('wepxaceholderve', 'e', 4):
+    __ output __ ('wepxaceholderve', 'e', 4):
         output = 'we\'ve', 'e', 2
 
-    return output
+    r.. output

@@ -16,8 +16,8 @@ class Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxDepth(self, root):
-        __ root is None:
-            return 0
+        __ root __ N..
+            r.. 0
         left_max = self.maxDepth(root.left)
         right_max = self.maxDepth(root.right)
-        return max(left_max, right_max) + 1
+        r.. max(left_max, right_max) + 1

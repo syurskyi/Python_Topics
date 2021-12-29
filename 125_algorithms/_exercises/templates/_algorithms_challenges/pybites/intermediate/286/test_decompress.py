@@ -1,16 +1,16 @@
-from decompress import decompress
+____ decompress _______ decompress
 
 
 ___ test_empty_string():
-    assert decompress('', {'[', 'L'}) == ''
+    ... decompress('', {'[', 'L'}) __ ''
 
 
 ___ test_empty_table():
-    assert decompress('Hello World!', {}) == 'Hello World!'
+    ... decompress('Hello World!', {}) __ 'Hello World!'
 
 
 ___ test_no_conversions():
-    assert decompress('Hello World!', {'*': 'o', '#': 'h'}) == 'Hello World!'
+    ... decompress('Hello World!', {'*': 'o', '#': 'h'}) __ 'Hello World!'
 
 
 ___ test_example():
@@ -19,7 +19,7 @@ ___ test_example():
              '/': 't'
              }
 
-    assert decompress('P%Bi/e$', table) == 'PyBites'
+    ... decompress('P%Bi/e$', table) __ 'PyBites'
 
 
 ___ test_short():
@@ -28,7 +28,7 @@ ___ test_short():
              '$': '*y',
              }
 
-    assert decompress('$3#', table) == 'cy300'
+    ... decompress('$3#', table) __ 'cy300'
 
 
 ___ test_long():
@@ -43,7 +43,7 @@ ___ test_long():
              '+': '~&',
              }
 
-    assert decompress("@ as can*has%*+ can't. And^has% speak up + has no voices.", table) == "Them as can do has to " \
+    ... decompress("@ as can*has%*+ can't. And^has% speak up + has no voices.", table) __ "Them as can do has to " \
                                                                                              "do for them as can't. " \
                                                                                              "And someone has to " \
                                                                                              "speak up for them as " \

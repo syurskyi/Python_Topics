@@ -1,15 +1,15 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ count_vowels(word):
     letters = ["a","o","u","i","e","y"]
     counter = 0
-    for i in word:
-        __ (i in letters):
+    ___ i __ word:
+        __ (i __ letters):
             counter += 1
-    results.append(counter)
+    results.a..(counter)
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     word = input()
     count_vowels(word)
     

@@ -21,13 +21,13 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        __ message not in self.hashmap:
+        __ message n.. __ self.hashmap:
             self.hashmap[message] = timestamp
-            return True
-        else:
+            r.. True
+        ____:
             __ timestamp - self.hashmap[message] >= 10:
                 self.hashmap[message] = timestamp
-                return True
-            else:
-                return False
+                r.. True
+            ____:
+                r.. False
     

@@ -2,7 +2,7 @@
 Premium Question
 https://leetcode.com/problems/palindrome-permutation/
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -14,14 +14,14 @@ class Solution(object):
         :rtype: bool
         """
         m = defaultdict(int)
-        for c in s:
+        ___ c __ s:
             m[c] += 1
 
         once = False
-        for v in m.values():
-            __ v % 2 == 1:
+        ___ v __ m.values():
+            __ v % 2 __ 1:
                 __ once:
-                    return False
+                    r.. False
                 once = True
 
-        return True
+        r.. True

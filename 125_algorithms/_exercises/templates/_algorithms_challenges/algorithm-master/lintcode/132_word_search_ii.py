@@ -5,18 +5,18 @@ class Solution:
         self.col_vector = [0, 0, 1, -1]
 
     ___ new_node(self):
-        return {
+        r.. {
             'end_of': '',
             'children': {}
         }
 
     ___ put(self, parent, string):
-        __ not string:
-            return
-        for char in string:
-            __ char in parent['children']:
+        __ n.. string:
+            r..
+        ___ char __ string:
+            __ char __ parent['children']:
                 parent = parent['children'][char]
-            else:
+            ____:
                 parent['children'][char] = self.new_node()
                 parent = parent['children'][char]
         parent['end_of'] = string
@@ -27,25 +27,25 @@ class Solution:
     @return: A list of string
     """
     ___ wordSearchII(self, board, words):
-        __ not words or len(words) < 1 \
-                or not board or len(board) < 1 \
-                or len(board[0]) < 1:
-            return []
-        self.m, self.n = len(board), len(board[0])
+        __ n.. words o. l..(words) < 1 \
+                o. n.. board o. l..(board) < 1 \
+                o. l..(board[0]) < 1:
+            r.. []
+        self.m, self.n = l..(board), l..(board[0])
         self.board = board
-        for word in words:
+        ___ word __ words:
             self.put(self.root, word)
         result = {}
-        for row in range(self.m):
-            for col in range(self.n):
-                __ board[row][col] in self.root['children']:
+        ___ row __ r..(self.m):
+            ___ col __ r..(self.n):
+                __ board[row][col] __ self.root['children']:
                     self.find(row, col, self.root, result)
-        return result.keys()
+        r.. result.keys()
 
     ___ find(self, x, y, parent, result):
         char = self.board[x][y]
-        __ char not in parent['children']:
-            return
+        __ char n.. __ parent['children']:
+            r..
         parent = parent['children'][char]
         __ parent['end_of']:
             result[parent['end_of']] = 1
@@ -53,11 +53,11 @@ class Solution:
 
         # To avoid returning along the original path, just simply set the last visited cell to `'#'`
         self.board[x][y] = '#'
-        for d in range(4):
+        ___ d __ r..(4):
             _x = x + self.row_vector[d]
             _y = y + self.col_vector[d]
             __ 0 <= _x < self.m \
                     and 0 <= _y < self.n \
-                    and self.board[_x][_y] in parent['children']:
+                    and self.board[_x][_y] __ parent['children']:
                 self.find(_x, _y, parent, result)
         self.board[x][y] = char

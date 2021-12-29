@@ -52,7 +52,7 @@ class NestedInteger(object):
 
 class Solution(object):
     ___ __init__(self):
-        self.sum = 0
+        self.s.. = 0
 
     ___ depthSumInverse(self, nestedList):
         """
@@ -62,29 +62,29 @@ class Solution(object):
         """
         inv_depth = self.height(nestedList)
         self.inverseDepthSum(nestedList, inv_depth)
-        return self.sum
+        r.. self.s..
 
     ___ height(self, nl):
-        nl_lst = filter(lambda x: not x.isInteger(), nl)
-        __ not nl_lst:
-            return 1
+        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
+        __ n.. nl_lst:
+            r.. 1
         __ nl_lst:
-            return 1 + max(
-                map(lambda x: self.height(x.getList()), nl_lst)
+            r.. 1 + max(
+                map(l.... x: self.height(x.getList()), nl_lst)
             )
 
     ___ inverseDepthSum(self, nl, inv_depth):
-        nl_lst = filter(lambda x: not x.isInteger(), nl)
-        ni_list = filter(lambda x: x.isInteger(), nl)
+        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
+        ni_list = filter(l.... x: x.isInteger(), nl)
         __ nl_lst:
-            map(lambda x: self.inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
+            map(l.... x: self.inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
-            self.sum += sum(map(lambda x: x.getInteger() * inv_depth, ni_list))
+            self.s.. += s..(map(l.... x: x.getInteger() * inv_depth, ni_list))
 
 
 class SolutionError(object):
     ___ __init__(self):
-        self.sum = 0
+        self.s.. = 0
 
     ___ depthSumInverse(self, nestedList):
         """
@@ -93,7 +93,7 @@ class SolutionError(object):
         :rtype: int
         """
         self.dfs(nestedList)
-        return self.sum
+        r.. self.s..
 
     ___ dfs(self, nl):
         """
@@ -102,13 +102,13 @@ class SolutionError(object):
         """
         height = 1
 
-        nl_lst = filter(lambda x: not x.isInteger(), nl)
-        ni_list = filter(lambda x: x.isInteger(), nl)
+        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
+        ni_list = filter(l.... x: x.isInteger(), nl)
         __ nl_lst:
             height = 1 + max(
-                map(lambda x: self.dfs(x.getList()), nl_lst)
+                map(l.... x: self.dfs(x.getList()), nl_lst)
             )
         __ ni_list:
-            self.sum += sum(map(lambda x: x.getInteger() * height, ni_list))
+            self.s.. += s..(map(l.... x: x.getInteger() * height, ni_list))
 
-        return height
+        r.. height

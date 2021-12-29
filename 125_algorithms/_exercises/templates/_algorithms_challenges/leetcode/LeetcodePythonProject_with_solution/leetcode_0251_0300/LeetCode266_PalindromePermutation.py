@@ -6,15 +6,15 @@ Created on Mar 4, 2017
 
 class Solution(object):
     ___ canPermutePalindrome(self, s):
-        __ not s: return False
+        __ n.. s: r.. False
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         odd = 0
-        for value in hashmap.values():
+        ___ value __ hashmap.values():
             __ value%2 != 0:
                 odd += 1
-        __ len(s)%2 == 0:
-            return bool(odd == 0)
-        else:
-            return bool(odd < 2)
+        __ l..(s)%2 __ 0:
+            r.. bool(odd __ 0)
+        ____:
+            r.. bool(odd < 2)

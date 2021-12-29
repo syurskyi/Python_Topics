@@ -1,14 +1,14 @@
 ___ triangle(nth):
-    return [row(i) for i in range(nth + 1)]
+    r.. [row(i) ___ i __ r..(nth + 1)]
 
 
 ___ is_triangle(t):
-    new_t = triangle(len(t) - 1)
-    return t == new_t
+    new_t = triangle(l..(t) - 1)
+    r.. t __ new_t
 
 
 ___ row(nth):
     r = [1]
-    for i in range(1, nth + 1):
-        r.append(int(r[-1] * (nth - i + 1) / i))
-    return " ".join([str(i) for i in r])
+    ___ i __ r..(1, nth + 1):
+        r.a..(int(r[-1] * (nth - i + 1) / i))
+    r.. " ".join([str(i) ___ i __ r])

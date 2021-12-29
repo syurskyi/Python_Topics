@@ -1,13 +1,13 @@
 ___ extract_non_ascii_words(text):
     """Filter a text returning a list of non-ascii words"""
-    na_words = []
-    for word in text.split(" "):
-        word_split = list(word)
-        for letter in word_split:
+    na_words    # list
+    ___ word __ text.split(" "):
+        word_split = l..(word)
+        ___ letter __ word_split:
             __ ord(letter) >= 128:
-                na_words.append(word)
+                na_words.a..(word)
                 break
-    return na_words
+    r.. na_words
 
 
 # if __name__ == "__main__":

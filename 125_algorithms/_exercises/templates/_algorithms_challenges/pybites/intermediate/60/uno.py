@@ -1,6 +1,6 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
-SUITS = 'Red Green Yellow Blue'.split()
+SUITS = 'Red Green Yellow Blue'.s..
 
 UnoCard = namedtuple('UnoCard', 'suit name')
 
@@ -11,30 +11,30 @@ ___ create_uno_deck():
        (for cards w/o suit use None in the namedtuple)"""
     
 
-    numbers = list(range(0,10)) + ['Draw Two','Skip','Reverse']
+    numbers = l..(r..(0,10)) + ['Draw Two','Skip','Reverse']
 
-    cards = [UnoCard(suit,number) for suit in SUITS for number in numbers for i in range(2 __ number != 0 else 1)]
+    cards = [UnoCard(suit,number) ___ suit __ SUITS ___ number __ numbers ___ i __ r..(2 __ number != 0 ____ 1)]
 
-    print(len(cards))
+    print(l..(cards))
 
 
     special_cards = ['Wild','Wild Draw Four']
 
 
 
-    for special_card in special_cards:
-        for _ in range(4):
-            uno_card = UnoCard(None,special_card)
-            cards.append(uno_card)
+    ___ special_card __ special_cards:
+        ___ _ __ r..(4):
+            uno_card = UnoCard(N..,special_card)
+            cards.a..(uno_card)
 
 
-    return cards
+    r.. cards
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     uno_deck = create_uno_deck()
 
-    print(len(uno_deck))
+    print(l..(uno_deck))

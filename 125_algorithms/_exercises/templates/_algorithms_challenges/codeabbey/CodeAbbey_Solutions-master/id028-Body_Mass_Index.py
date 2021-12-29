@@ -1,6 +1,6 @@
 ___ BMI(users):
         pairCount = 0
-        answer = []
+        answer    # list
         while pairCount < users:
                 pair = raw_input()
                 numbers = pair.split(' ')
@@ -9,14 +9,14 @@ ___ BMI(users):
                 BMI = float(weight / (height * height))
 
                 __ BMI < 18.5:
-                        answer.append(str('under'))
-                elif BMI >= 18.5 and BMI < 25.0:
-                        answer.append(str('normal'))
-                elif BMI >= 25.0 and BMI < 30.0:
-                        answer.append(str('over'))
-                elif BMI >= 30.0:
-                        answer.append(str('obese'))
-                else:
+                        answer.a..(str('under'))
+                ____ BMI >= 18.5 and BMI < 25.0:
+                        answer.a..(str('normal'))
+                ____ BMI >= 25.0 and BMI < 30.0:
+                        answer.a..(str('over'))
+                ____ BMI >= 30.0:
+                        answer.a..(str('obese'))
+                ____:
                         print("Error.")
                 pairCount += 1
         print(' '.join(answer))

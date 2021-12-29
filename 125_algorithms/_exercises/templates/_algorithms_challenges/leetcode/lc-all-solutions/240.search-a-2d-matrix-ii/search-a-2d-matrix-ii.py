@@ -7,22 +7,22 @@ class Solution(object):
     """
 
     ___ binarySearch(nums, target):
-      start, end = 0, len(nums) - 1
+      start, end = 0, l..(nums) - 1
       while start + 1 < end:
         mid = start + (end - start) / 2
         __ nums[mid] > target:
           end = mid
-        elif nums[mid] < target:
+        ____ nums[mid] < target:
           start = mid
-        else:
-          return True
-      __ nums[start] == target:
-        return True
-      __ nums[end] == target:
-        return True
-      return False
+        ____:
+          r.. True
+      __ nums[start] __ target:
+        r.. True
+      __ nums[end] __ target:
+        r.. True
+      r.. False
 
-    for nums in matrix:
+    ___ nums __ matrix:
       __ binarySearch(nums, target):
-        return True
-    return False
+        r.. True
+    r.. False

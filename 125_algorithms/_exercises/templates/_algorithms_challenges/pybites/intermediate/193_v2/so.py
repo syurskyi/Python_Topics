@@ -1,6 +1,6 @@
-import requests
-from bs4 import BeautifulSoup
-import re
+_______ requests
+____ bs4 _______ BeautifulSoup
+_______ re
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
@@ -22,27 +22,27 @@ ___ top_python_questions(url=cached_so_url):
     except Exception as err:
         print('Other Error')
         print(err)
-    else:
+    ____:
         soup = BeautifulSoup(response.text,'html.parser')
 
 
         questions = soup.find_all("div",class_='question-summary')
-        results = []
-        for question in questions:
+        results    # list
+        ___ question __ questions:
             question_text = question.find('a',class_='question-hyperlink').getText()
             views = question.find('div',class_='views').getText()
-            __ views.strip().split()[0][-1] == 'm':
+            __ views.strip().s.. [0][-1] __ 'm':
                 votes = int(question.find('span',class_='vote-count-post').strong.getText())
-                results.append((question_text,votes))
+                results.a..((question_text,votes))
 
         
-        return sorted(results,key=lambda x: x[1],reverse=True)
+        r.. s..(results,key=l.... x: x[1],r.._T..
 
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     print(top_python_questions())
 

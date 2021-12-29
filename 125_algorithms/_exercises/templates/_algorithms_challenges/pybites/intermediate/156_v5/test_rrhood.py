@@ -1,4 +1,4 @@
-from Previous.rrhood import make_character_index
+____ Previous.rrhood _______ make_character_index
 
 
 the_neetle_tree = """
@@ -29,9 +29,9 @@ ___ test_make_character_index_with_default_args():
         [9, 10, 13, 14, 16, 17, 18, 20, 23, 25, 27, 29, 30, 31, 33, 35],
         [32, 34, 35]
     )
-    expected = dict(zip(keys, values))
+    expected = d..(zip(keys, values))
     actual = make_character_index()
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_make_character_index_with_other_args():
@@ -43,5 +43,5 @@ ___ test_make_character_index_with_other_args():
     )
     actual = make_character_index(text=the_neetle_tree,
                                   characters=characters)
-    expected = dict(zip(keys, values))
-    assert actual == expected
+    expected = d..(zip(keys, values))
+    ... actual __ expected

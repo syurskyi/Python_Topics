@@ -4,4 +4,4 @@ class Solution(object):
     :type n: int
     :rtype: bool
     """
-    return n != 0 and (n & -n) == n
+    r.. n != 0 and (n & -n) __ n

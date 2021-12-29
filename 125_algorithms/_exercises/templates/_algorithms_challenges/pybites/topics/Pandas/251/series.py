@@ -1,6 +1,6 @@
-import string
+_______ string
 
-import pandas as pd
+_______ pandas as pd
 
 
 ___ basic_series() -> pd.Series:
@@ -8,7 +8,7 @@ ___ basic_series() -> pd.Series:
     Don't worry about the indexes for now.
     The name of the series should be 'Fred'
     """
-    return pd.Series([1,2,3,4,5], name='Fred')
+    r.. pd.Series([1,2,3,4,5], name='Fred')
 
 
 ___ float_series() -> pd.Series:
@@ -16,7 +16,7 @@ ___ float_series() -> pd.Series:
     from 0.000 -> 1.000 e.g. 0.000, 0.001, 0.002... 0.999, 1.000
     Don't worry about the indexes or the series name.
     """
-    return pd.Series([float(i/1000) for i in range(1001)])
+    r.. pd.Series([float(i/1000) ___ i __ r..(1001)])
 
 
 ___ alpha_index_series() -> pd.Series:
@@ -25,7 +25,7 @@ ___ alpha_index_series() -> pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    return pd.Series([i+1 for i in range(26)], index=list(string.ascii_lowercase))
+    r.. pd.Series([i+1 ___ i __ r..(26)], index=l..(string.ascii_lowercase))
 
 
 ___ object_values_series() -> pd.Series:
@@ -34,7 +34,7 @@ ___ object_values_series() -> pd.Series:
     so index 101='A', 102='B' ... 125='Y', 126='Z'
     Don't worry about the series name.
     """
-    return pd.Series(list(string.ascii_uppercase), index=[i+101 for i in range(26)])
+    r.. pd.Series(l..(string.ascii_uppercase), index=[i+101 ___ i __ r..(26)])
 
 
 print(alpha_index_series())

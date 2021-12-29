@@ -18,8 +18,8 @@ class Node:
         self.children = children
 
 
-from typing import List
-from collections import deque
+____ typing _______ List
+____ collections _______ deque
 
 
 class Solution:
@@ -27,8 +27,8 @@ class Solution:
         """
         maintain a stack, pop and reverse
         """
-        __ not root:
-            return []
+        __ n.. root:
+            r.. []
 
         ret = deque()
         stk = [root]
@@ -36,29 +36,29 @@ class Solution:
         while stk:
             cur = stk.pop()
             ret.appendleft(cur.val)
-            for c in cur.children:
-                stk.append(c)
+            ___ c __ cur.children:
+                stk.a..(c)
 
-        return list(ret)
+        r.. l..(ret)
         
     ___ postorder_visited(self, root: 'Node') -> List[int]:
         """
         maintain a stack, if visited before, then pop
         """
-        ret = []
-        __ not root:
-            return ret
+        ret    # list
+        __ n.. root:
+            r.. ret
 
         stk = [root]
         visited = set()
         while stk:
             cur = stk[-1]
-            __ cur in visited:
+            __ cur __ visited:
                 stk.pop()
-                ret.append(cur.val)
-            else:
+                ret.a..(cur.val)
+            ____:
                 visited.add(cur)
-                for c in reversed(cur.children):
-                    stk.append(c)
+                ___ c __ reversed(cur.children):
+                    stk.a..(c)
 
-        return ret
+        r.. ret

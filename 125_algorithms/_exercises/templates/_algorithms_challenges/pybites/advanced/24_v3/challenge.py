@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+____ abc _______ ABC, abstractmethod
 
 
 class Challenge(ABC):
@@ -22,11 +22,11 @@ class BlogChallenge(Challenge):
         self.merged_prs = merged_prs
 
     ___ verify(self, pr):
-        return pr in self.merged_prs
+        r.. pr __ self.merged_prs
 
     @property
     ___ pretty_title(self):
-        return f'PCC{self.number} - {self.title}'
+        r.. f'PCC{self.number} - {self.title}'
 
 
 class BiteChallenge(Challenge):
@@ -35,8 +35,8 @@ class BiteChallenge(Challenge):
         self.result = result
 
     ___ verify(self, result):
-        return result == self.result
+        r.. result __ self.result
 
     @property
     ___ pretty_title(self):
-        return f'Bite {self.number}. {self.title}'
+        r.. f'Bite {self.number}. {self.title}'

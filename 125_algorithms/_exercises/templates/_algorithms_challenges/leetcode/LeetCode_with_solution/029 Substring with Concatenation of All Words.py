@@ -26,48 +26,48 @@ class Solution:
         :param L: a list of string
         :return: a list of integer
         """
-        __ not L:
-            return
+        __ n.. L:
+            r..
 
-        k = len(L[0])
-        l = len(L)
+        k = l..(L[0])
+        l = l..(L)
 
-        working_list = list(L)
-        result = []
+        working_list = l..(L)
+        result    # list
         window_t = -1  # [0, t)
-        window = []
+        window    # list
         i = 0
-        while i<=len(S)-3:
+        while i<=l..(S)-3:
             # test window
-            __ len(window)==l:
-                result.append(window_t-l*k)
+            __ l..(window)__l:
+                result.a..(window_t-l*k)
 
             word = S[i:i+3]
-            __ word in working_list:
-                window.append(word)
+            __ word __ working_list:
+                window.a..(word)
                 working_list.remove(word)
                 window_t = i+3
                 i += 3
 
-            elif word not in L:
+            ____ word n.. __ L:
                 __ window:
-                    i = window_t-len(window)*k+1  # going to original point plus 1
-                else:
+                    i = window_t-l..(window)*k+1  # going to original point plus 1
+                ____:
                     i += 1
 
-                window = []
+                window    # list
                 window_t = -1
-                working_list = list(L)
+                working_list = l..(L)
 
 
-            elif word in L and word not in working_list:
+            ____ word __ L and word n.. __ working_list:
                 window = window[window.index(word)+1:]
-                window.append(word)
+                window.a..(word)
                 # working_list.remove(word)
                 window_t = i+3
                 i += 3
 
-        return result
+        r.. result
 
     ___ findSubstring(self, S, L):
         """
@@ -92,72 +92,72 @@ class Solution:
         :param L: a list of string
         :return: a list of integer
         """
-        __ not L:
-            return
+        __ n.. L:
+            r..
 
-        k = len(L[0])
-        l = len(L)
+        k = l..(L[0])
+        l = l..(L)
 
         Lmap = {}  # map of L
-        for item in L:
-            __ item in Lmap:
+        ___ item __ L:
+            __ item __ Lmap:
                 Lmap[item] += 1
-            else:
+            ____:
                 Lmap[item] = 1
 
-        Lmap_original = dict(Lmap)
+        Lmap_original = d..(Lmap)
 
-        ret = []
+        ret    # list
         win_e = -1  # [0, t), no need start_ptr
-        working_win = []
+        working_win    # list
         i = 0
-        while i<len(S):
+        while i<l..(S):
             # test window
-            __ len(working_win)==l:
-                ret.append(win_e-l*k)
+            __ l..(working_win)__l:
+                ret.a..(win_e-l*k)
                 candidate = win_e-l*k+1
-                __ S[candidate:candidate+k] in Lmap:
+                __ S[candidate:candidate+k] __ Lmap:
                     win_e = -1
                     i = candidate
-                    Lmap = dict(Lmap_original)
-                    working_win = []
+                    Lmap = d..(Lmap_original)
+                    working_win    # list
 
             word = S[i:i+k]
             # case 1, match one in L
-            __ word in Lmap and Lmap[word]>0:
-                working_win.append(word)
+            __ word __ Lmap and Lmap[word]>0:
+                working_win.a..(word)
                 Lmap[word] -= 1
                 win_e = i+k
                 i += k
 
             # case 2, no match
-            elif word not in Lmap:
+            ____ word n.. __ Lmap:
                 __ working_win:
-                    i = win_e-len(working_win)*k+1  # going to window start+1  # cannot jump
-                else:
+                    i = win_e-l..(working_win)*k+1  # going to window start+1  # cannot jump
+                ____:
                     i += 1
 
-                working_win = []
+                working_win    # list
                 win_e = -1
-                Lmap = dict(Lmap_original)
+                Lmap = d..(Lmap_original)
 
             # case 3, mach one in L not used up
-            elif word in Lmap and Lmap[word]==0:
-                for j in xrange(0, working_win.index(word)+1):  # kind of prefix suffix concepts
+            ____ word __ Lmap and Lmap[word]__0:
+                ___ j __ xrange(0, working_win.index(word)+1):  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
-                working_win.append(word)
+                working_win.a..(word)
                 Lmap[word] -= 1
                 win_e = i+k
                 i += k
 
-        __ len(working_win)==l:  # when reaching the end, assert Solution().findSubstring("a", ["a"])==[0]
-            ret.append(win_e-l*k)
+        __ l..(working_win)__l:  # when reaching the end, assert Solution().findSubstring("a", ["a"])==[0]
+            ret.a..(win_e-l*k)
 
-        return ret
+        r.. ret
 
-__ __name__=="__main__":
-    assert Solution().findSubstring("abababab", ["a","b","a"])==[0,2,4]
-    assert Solution().findSubstring("a", ["a"])==[0]
-    assert Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])==[13]
-    assert Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])==[3, 6]
+__ __name____"__main__":
+    ... Solution().findSubstring("abababab", ["a","b","a"])__[0,2,4]
+    ... Solution().findSubstring("a", ["a"])__[0]
+    ... Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])__[13]
+    ... Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])__[3, 6]

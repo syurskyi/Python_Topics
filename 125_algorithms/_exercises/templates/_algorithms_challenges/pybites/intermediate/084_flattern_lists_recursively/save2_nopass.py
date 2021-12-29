@@ -7,13 +7,13 @@ def flatten(list_of_lists):
 
 
 ___ flatten(list_of_lists):
-    __ len(list_of_lists) == 1:
-        __ type(list_of_lists[0]) == list:
+    __ l..(list_of_lists) __ 1:
+        __ type(list_of_lists[0]) __ l..:
             output = flatten(list_of_lists[0])
-        else:
+        ____:
             output = list_of_lists
-    elif type(list_of_lists[0]) == list:
+    ____ type(list_of_lists[0]) __ l..:
         output = flatten(list_of_lists[0]) + flatten(list_of_lists[1:])
-    else:
+    ____:
         output = [list_of_lists[0]] + flatten(list_of_lists[1:])
-    return output
+    r.. output

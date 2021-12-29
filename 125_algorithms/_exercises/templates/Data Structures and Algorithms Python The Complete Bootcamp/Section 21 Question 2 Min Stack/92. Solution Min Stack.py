@@ -2,27 +2,27 @@ c_ MinStack:
 
     ___  -
         stack  []
-        min  []
+        m..  []
 
     ___ push  x):
-        stack.append(x)
+        stack.a..(x)
 
-        __ min:
-            __ x < min[-1]:
-                min.append(x)
+        __ m..:
+            __ x < m..[-1]:
+                m...a..(x)
         ____
-            min.append(x)
+            m...a..(x)
 
     ___ pop
-        __ stack[-1] __ min[-1]:
-            min.pop()
+        __ stack[-1] __ m..[-1]:
+            m...pop()
         stack.pop()
 
     ___ top
         r_ stack[-1]
 
     ___ getMin
-        r_ min[-1]
+        r_ m..[-1]
 
 
 ## Example Execution ##

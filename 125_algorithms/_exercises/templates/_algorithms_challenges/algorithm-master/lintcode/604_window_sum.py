@@ -5,20 +5,20 @@ class Solution:
     @return: the sum of the element inside the window at each moving.
     """
     ___ winSum(self, A, k):
-        ans = []
-        __ (not A or not k or k <= 0 or
-            len(A) < k):
-            return ans
+        ans    # list
+        __ (n.. A o. n.. k o. k <= 0 o.
+            l..(A) < k):
+            r.. ans
 
         _sum = 0
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             _sum += A[i]
 
             __ i < k - 1:
                 continue
 
-            ans.append(_sum)
+            ans.a..(_sum)
 
             _sum -= A[i - k + 1]
 
-        return ans
+        r.. ans

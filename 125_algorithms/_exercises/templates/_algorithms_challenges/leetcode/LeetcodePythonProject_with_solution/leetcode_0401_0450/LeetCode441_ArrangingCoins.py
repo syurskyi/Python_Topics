@@ -11,6 +11,6 @@ class Solution(object):
             mid = (start+end)/2
             __ mid*(mid+1)/2 > n:
                 end = mid-1
-            else:
+            ____:
                 start = mid+1
-        return start-1
+        r.. start-1

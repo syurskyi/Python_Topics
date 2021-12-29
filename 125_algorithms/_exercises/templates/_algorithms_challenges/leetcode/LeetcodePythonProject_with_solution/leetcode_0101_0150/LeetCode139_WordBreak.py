@@ -12,20 +12,20 @@ class Solution(object):
         :rtype: bool
         """
         wordDict = set(wordDict)
-        dp = [False]*(len(s)+1)
+        dp = [False]*(l..(s)+1)
         dp[0] = True
-        for i in range(len(s)):
-            __ not dp[i]:
+        ___ i __ r..(l..(s)):
+            __ n.. dp[i]:
                 continue
-            for word in wordDict:
-                end = i+len(word)
+            ___ word __ wordDict:
+                end = i+l..(word)
                 sub = s[i:end]
-                __ sub == word:
+                __ sub __ word:
                     dp[end] = True
-        return dp[-1]
+        r.. dp[-1]
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

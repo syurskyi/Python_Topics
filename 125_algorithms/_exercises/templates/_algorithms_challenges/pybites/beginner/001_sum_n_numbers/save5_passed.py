@@ -1,8 +1,8 @@
-___ sum_numbers(numbers_ N..
-    the_sum = []
-    __ numbers == None:
-        return 5050
-    else:
-        for n in numbers:
-            the_sum.append(n)
-        return sum(the_sum)
+# ___ sum_numbers numbers_ N..
+#     the_sum    # list
+#     __ numbers __ N..
+#         r.. 5050
+#     ____
+#         ___ n __ ?
+#             ?.a.. ?
+#         r.. s.. ?

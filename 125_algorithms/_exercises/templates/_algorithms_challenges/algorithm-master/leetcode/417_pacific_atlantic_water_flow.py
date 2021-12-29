@@ -12,20 +12,20 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return []
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
 
-        m, n = len(matrix), len(matrix[0])
-        pqueue = []
-        aqueue = []
+        m, n = l..(matrix), l..(matrix[0])
+        pqueue    # list
+        aqueue    # list
 
-        for x in range(m):
-            pqueue.append((x, 0))
-            aqueue.append((x, n - 1))
+        ___ x __ r..(m):
+            pqueue.a..((x, 0))
+            aqueue.a..((x, n - 1))
 
-        for y in range(n):
-            pqueue.append((0, y))
-            aqueue.append((m - 1, y))
+        ___ y __ r..(n):
+            pqueue.a..((0, y))
+            aqueue.a..((m - 1, y))
 
         pvisited = set(pqueue)
         avisited = set(aqueue)
@@ -33,27 +33,27 @@ class Solution:
         self.bfs(matrix, pqueue, pvisited)
         self.bfs(matrix, aqueue, avisited)
 
-        return list(pvisited & avisited)
+        r.. l..(pvisited & avisited)
 
     ___ bfs(self, matrix, queue, visited):
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y __ queue:
+            ___ dx, dy __ (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
             ):
                 _x = x + dx
                 _y = y + dy
 
-                __ not (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m and 0 <= _y < n):
                     continue
-                __ (_x, _y) in visited:
+                __ (_x, _y) __ visited:
                     continue
                 __ matrix[_x][_y] < matrix[x][y]:
                     continue
 
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
                 visited.add((_x, _y))
 
 
@@ -66,39 +66,39 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return []
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
 
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         pvisited = set()
         avisited = set()
 
-        for x in range(m):
+        ___ x __ r..(m):
             self.dfs(matrix, x, 0, pvisited)
             self.dfs(matrix, x, n - 1, avisited)
 
-        for y in range(n):
+        ___ y __ r..(n):
             self.dfs(matrix, 0, y, pvisited)
             self.dfs(matrix, m - 1, y, avisited)
 
-        return list(pvisited & avisited)
+        r.. l..(pvisited & avisited)
 
     ___ dfs(self, matrix, x, y, visited):
         visited.add((x, y))
 
-        for dx, dy in (
+        ___ dx, dy __ (
             (0, -1), (0, 1),
             (-1, 0), (1, 0),
         ):
             _x = x + dx
             _y = y + dy
 
-            __ not (
-                0 <= _x < len(matrix) and
-                0 <= _y < len(matrix[0])
+            __ n.. (
+                0 <= _x < l..(matrix) and
+                0 <= _y < l..(matrix[0])
             ):
                 continue
-            __ (_x, _y) in visited:
+            __ (_x, _y) __ visited:
                 continue
             __ matrix[_x][_y] < matrix[x][y]:
                 continue

@@ -9,15 +9,15 @@ class Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    ___ hasPathSum(self, root, sum):
-        __ root is None:
-            return False
-        elif root.left is None and root.right is None:
-            __ sum == root.val:
-                return True
-            else:
-                return False
-        else:
-            sum -= root.val
-            return (self.hasPathSum(root.left, sum)
-                    or self.hasPathSum(root.right, sum))
+    ___ hasPathSum(self, root, s..):
+        __ root __ N..
+            r.. False
+        ____ root.left __ N.. and root.right __ N..
+            __ s.. __ root.val:
+                r.. True
+            ____:
+                r.. False
+        ____:
+            s.. -= root.val
+            r.. (self.hasPathSum(root.left, s..)
+                    o. self.hasPathSum(root.right, s..))

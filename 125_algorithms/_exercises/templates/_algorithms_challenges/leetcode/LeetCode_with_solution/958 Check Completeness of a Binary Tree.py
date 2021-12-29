@@ -25,8 +25,8 @@ Explanation: The node with value 7 isn't as far left as possible.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -41,22 +41,22 @@ class Solution:
         Record the max depth and expecting partial fill in the last level
         Need a special flag to tell whether expecting partial now
         """
-        return self.dfs(root, 0)
+        r.. self.dfs(root, 0)
 
     ___ dfs(self, node, d):
-        __ not node:
+        __ n.. node:
             # empty node (below leaf) is the key decision point
-            __ self.max_depth == -float("inf"):  # leftmost empty node
+            __ self.max_depth __ -float("inf"):  # leftmost empty node
                 self.max_depth = d - 1
-                return True
-            elif self.expecting_partial:
-                return d == self.max_depth
-            else:
-                __ d == self.max_depth + 1:
-                    return True
-                __ d == self.max_depth:
+                r.. True
+            ____ self.expecting_partial:
+                r.. d __ self.max_depth
+            ____:
+                __ d __ self.max_depth + 1:
+                    r.. True
+                __ d __ self.max_depth:
                     self.expecting_partial = True
-                    return True
-                return False
+                    r.. True
+                r.. False
 
-        return self.dfs(node.left, d + 1) and self.dfs(node.right, d + 1)
+        r.. self.dfs(node.left, d + 1) and self.dfs(node.right, d + 1)

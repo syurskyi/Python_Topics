@@ -27,7 +27,7 @@ Note:
 0 <= K <= A.length
 A[i] is 0 or 1
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -41,25 +41,25 @@ class Solution:
         """
         i, j = 0, 0
         cnt_0 = 0
-        n = len(A)
+        n = l..(A)
         ret = 0
         while i < n and j < n:
             while j < n:
-                __ A[j] == 0 and cnt_0 < K:
+                __ A[j] __ 0 and cnt_0 < K:
                     j += 1
                     cnt_0 += 1
-                elif A[j] == 1:
+                ____ A[j] __ 1:
                     j += 1
-                else:
+                ____:
                     break
 
             ret = max(ret, j - i)
-            __ A[i] == 0:
+            __ A[i] __ 0:
                 cnt_0 -= 1
             i += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) == 6
+__ __name__ __ "__main__":
+    ... Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) __ 6

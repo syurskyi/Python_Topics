@@ -5,33 +5,33 @@ class TopVotedCandidate(object):
         :type persons: List[int]
         :type times: List[int]
         """
-        self.arr = []
+        self.arr    # list
         hashmap = {}
         maxNum = 0
-        maxP = None
-        for p, t in zip(persons, times):
+        maxP = N..
+        ___ p, t __ zip(persons, times):
             hashmap[p] = hashmap.get(p, 0)+1
             __ hashmap[p] >= maxNum:
                 maxP = p
                 maxNum = hashmap[p]
-            self.arr.append([t, maxP])
+            self.arr.a..([t, maxP])
 
     ___ q(self, t):
         """
         :type t: int
         :rtype: int
         """
-        i, j = 0, len(self.arr)
+        i, j = 0, l..(self.arr)
         while i < j:
             mid = (i+j)//2
             __ t < self.arr[mid][0]:
                 j = mid
-            else:
+            ____:
                 i = mid+1
-        return self.arr[i-1][1]
+        r.. self.arr[i-1][1]
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     candidate = TopVotedCandidate(
         [0,  1, 0, 1, 1],
         [24,29,31,76,81]

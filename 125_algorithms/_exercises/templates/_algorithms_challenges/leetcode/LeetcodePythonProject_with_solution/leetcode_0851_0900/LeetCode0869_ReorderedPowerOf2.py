@@ -10,37 +10,37 @@ class Solution(object):
         :rtype: bool
         """
         n = N
-        __ n == 1: return True
+        __ n __ 1: r.. True
         s = str(n)
-        length = len(s)
+        length = l..(s)
         nums = self.getNums(length)
-        for num in nums:
+        ___ num __ nums:
             __ self.matches(n, num):
-                return True
-        return False
+                r.. True
+        r.. False
     
     ___ matches(self, n, num):
         hashmap = {}
-        for c in str(n):
-            __ c in hashmap:
+        ___ c __ str(n):
+            __ c __ hashmap:
                 hashmap[c] += 1
-            else:
+            ____:
                 hashmap[c] = 1
-        for c in str(num):
-            __ c in hashmap:
+        ___ c __ str(num):
+            __ c __ hashmap:
                 hashmap[c] -= 1
-                __ hashmap[c] == 0:
+                __ hashmap[c] __ 0:
                     del hashmap[c]
-            else:
-                return False
-        return True
+            ____:
+                r.. False
+        r.. True
     
     ___ getNums(self, length):
-        res = []
+        res    # list
         num = 2
-        while len(str(num)) < length:
+        while l..(str(num)) < length:
             num *= 2
-        while len(str(num)) == length:
-            res.append(num)
+        while l..(str(num)) __ length:
+            res.a..(num)
             num *= 2
-        return res
+        r.. res

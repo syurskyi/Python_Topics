@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from say import say
+____ say _______ say
 
 
 class SayTest(unittest.TestCase):
@@ -67,5 +67,5 @@ class SayTest(unittest.TestCase):
                          say(987654321123))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

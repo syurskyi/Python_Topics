@@ -2,11 +2,11 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ trap(self, A):
-        n = len(A)
+        n = l..(A)
         res = 0
         last = 0
-        stack = []
-        for i in range(1, n):
+        stack    # list
+        ___ i __ r..(1, n):
             __ A[i] >= A[last]:
                 # Calculate trapped water
                 w = i - last - 1
@@ -15,20 +15,20 @@ class Solution:
                     area -= A[stack.pop()]
                 res += area
                 last = i
-            else:
-                stack.append(i)
+            ____:
+                stack.a..(i)
         # Process remaining bars
         __ stack:
             r = stack.pop()  # Rightmost effective bar
             while stack:
                 __ A[stack[-1]] >= A[r]:
                     r = stack.pop()
-                else:
+                ____:
                     break
             while stack:
                 i = stack.pop()
                 __ A[i] < A[r]:
                     res += A[r] - A[i]
-                else:
+                ____:
                     r = i
-        return res
+        r.. res

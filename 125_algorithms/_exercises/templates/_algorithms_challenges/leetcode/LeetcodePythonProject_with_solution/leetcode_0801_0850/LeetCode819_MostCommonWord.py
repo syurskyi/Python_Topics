@@ -15,21 +15,21 @@ class Solution(object):
         freq = 0
         banned = set(banned)
         i = 0
-        for j in range(len(paragraph)):
+        ___ j __ r..(l..(paragraph)):
             c = paragraph[j]
-            __ not (ord('a') <= ord(c) <= ord('z') or\
+            __ n.. (ord('a') <= ord(c) <= ord('z') o.\
                 ord('A') <= ord(c) <= ord('Z')):
                 word = paragraph[i:j].lower()
-                __ word and word not in banned:
+                __ word and word n.. __ banned:
                     hashmap[word] = hashmap.get(word, 0)+1
                     __ hashmap[word] > freq:
                         res = word
                         freq = hashmap[word]
                 i = j+1
         word = paragraph[i:].lower()
-        __ word and word not in banned:
+        __ word and word n.. __ banned:
             hashmap[word] = hashmap.get(word, 0)+1
             __ hashmap[word] > freq:
                 res = word
                 freq = hashmap[word]
-        return res
+        r.. res

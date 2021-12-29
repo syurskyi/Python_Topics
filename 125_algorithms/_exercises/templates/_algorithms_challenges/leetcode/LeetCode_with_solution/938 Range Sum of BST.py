@@ -26,8 +26,8 @@ The final answer is guaranteed to be less than 2^31.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -39,18 +39,18 @@ class Solution:
         traverse
         """
         self.dfs(root, L, R)
-        return self.ret
+        r.. self.ret
 
     ___ dfs(self, node, L, R):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         __ L <= node.val <= R:
             self.ret += node.val
             self.dfs(node.left, L, R)
             self.dfs(node.right, L, R)
 
-        elif node.val > R:
+        ____ node.val > R:
             self.dfs(node.left, L, R)
-        else:
+        ____:
             self.dfs(node.right, L, R)

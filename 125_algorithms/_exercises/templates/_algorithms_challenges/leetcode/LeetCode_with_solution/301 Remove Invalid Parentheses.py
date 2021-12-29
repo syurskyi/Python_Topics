@@ -24,9 +24,9 @@ class Solution(object):
         :rtype: List[str]
         """
         rmcnt = self.minrm(s)
-        ret = []
-        self.dfs(s, "", 0, None, 0, rmcnt, ret)
-        return ret
+        ret    # list
+        self.dfs(s, "", 0, N.., 0, rmcnt, ret)
+        r.. ret
 
     ___ minrm(self, s):
         """
@@ -35,17 +35,17 @@ class Solution(object):
         """
         rmcnt = 0
         left = 0
-        for c in s:
-            __ c == "(":
+        ___ c __ s:
+            __ c __ "(":
                 left += 1
-            elif c == ")":
+            ____ c __ ")":
                 __ left > 0:
                     left -= 1
-                else:
+                ____:
                     rmcnt += 1
 
         rmcnt += left
-        return rmcnt
+        r.. rmcnt
 
     ___ dfs(self, s, cur, left, pi, i, rmcnt, ret):
         """
@@ -59,24 +59,24 @@ class Solution(object):
         :param rmcnt: number of remaining removals needed
         :param ret: results
         """
-        __ left < 0 or rmcnt < 0 or i > len(s):
-            return
-        __ i == len(s):
-            __ rmcnt == 0 and left == 0:
-                ret.append(cur)
-            return
+        __ left < 0 o. rmcnt < 0 o. i > l..(s):
+            r..
+        __ i __ l..(s):
+            __ rmcnt __ 0 and left __ 0:
+                ret.a..(cur)
+            r..
 
-        __ s[i] not in ("(", ")"):  # skip non-parenthesis
-            self.dfs(s, cur+s[i], left, None, i+1, rmcnt, ret)
-        else:
-            __ pi == s[i]:  # jump, if rm, rm them all to avoid duplication
-                while i < len(s) and pi and pi == s[i]: i, rmcnt = i+1, rmcnt-1
+        __ s[i] n.. __ ("(", ")"):  # skip non-parenthesis
+            self.dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
+        ____:
+            __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
+                while i < l..(s) and pi and pi __ s[i]: i, rmcnt = i+1, rmcnt-1
                 self.dfs(s, cur, left, pi, i, rmcnt, ret)
-            else:
+            ____:
                 self.dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
-                L = left+1 __ s[i] == "(" else left-1  # consume "("
-                self.dfs(s, cur+s[i], L, None, i+1, rmcnt, ret)  # put
+                L = left+1 __ s[i] __ "(" ____ left-1  # consume "("
+                self.dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put
 
 
-__ __name__ == "__main__":
-    assert Solution().removeInvalidParentheses("(a)())()") == ['(a())()', '(a)()()']
+__ __name__ __ "__main__":
+    ... Solution().removeInvalidParentheses("(a)())()") __ ['(a())()', '(a)()()']

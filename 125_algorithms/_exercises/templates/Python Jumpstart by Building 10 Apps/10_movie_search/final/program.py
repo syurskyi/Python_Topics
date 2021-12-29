@@ -1,5 +1,5 @@
-import movie_svc
-import requests.exceptions
+_______ movie_svc
+_______ requests.exceptions
 
 
 ___ main():
@@ -22,8 +22,8 @@ ___ search_event_loop():
             search  input('Movie search text (x to exit): ')
             __ search ! 'x':
                 results  movie_svc.find_movies(search)
-                print("Found {} results.".format(len(results)))
-                for r in results:
+                print("Found {} results.".format(l..(results)))
+                ___ r __ results:
                     print('{} -- {}'.format(
                         r.year, r.title
                     ))

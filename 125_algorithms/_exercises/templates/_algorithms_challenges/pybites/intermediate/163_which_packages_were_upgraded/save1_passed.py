@@ -1,47 +1,47 @@
-___ changed_dependencies(old_reqs: str, new_reqs: str) -> list:
+___ changed_dependencies(old_reqs: str, new_reqs: str) -> l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)
     """
     old = {}
     new = {}
-    for entry in old_reqs.strip().split('\n'):
+    ___ entry __ old_reqs.strip().split('\n'):
         x = entry.split('==')
-        y = []
+        y    # list
 
-        for i in x[1].split('.'):
-            __ len(i) == 1:
-                y.append('0' + str(i))
-            else:
-                y.append(str(i))
+        ___ i __ x[1].split('.'):
+            __ l..(i) __ 1:
+                y.a..('0' + str(i))
+            ____:
+                y.a..(str(i))
 
         old[x[0]] = ''.join(y)
 
-    for entry in new_reqs.strip().split('\n'):
+    ___ entry __ new_reqs.strip().split('\n'):
         x = entry.split('==')
-        y = []
+        y    # list
 
-        for i in x[1].split('.'):
-            __ len(i) == 1:
-                y.append('0' + str(i))
-            else:
-                y.append(str(i))
+        ___ i __ x[1].split('.'):
+            __ l..(i) __ 1:
+                y.a..('0' + str(i))
+            ____:
+                y.a..(str(i))
         new[x[0]] = ''.join(y)
 
-    output = []
-    for k1, v1 in old.items():
-        for k2, v2 in new.items():
-            __ k1 == k2:
-                __ len(v1) > len(v2):
-                    v1 = v1[:len(v2)]
+    output    # list
+    ___ k1, v1 __ old.items():
+        ___ k2, v2 __ new.items():
+            __ k1 __ k2:
+                __ l..(v1) > l..(v2):
+                    v1 = v1[:l..(v2)]
                     __ int(v2) > int(v1):
-                        output.append(k1)
-                elif len(v2) > len(v1):
-                    v2 = v2[:len(v1)]
+                        output.a..(k1)
+                ____ l..(v2) > l..(v1):
+                    v2 = v2[:l..(v1)]
                     __ int(v2) > int(v1):
-                        output.append(k1)
-                elif len(v1) == len(v2):
+                        output.a..(k1)
+                ____ l..(v1) __ l..(v2):
                     __ int(v2) > int(v1):
-                        output.append(k1)
+                        output.a..(k1)
 
-    return output
+    r.. output

@@ -1,11 +1,11 @@
-from datetime import datetime
-import pytest
+____ datetime _______ datetime
+_______ pytest
 
-from rename_keys import rename_keys
+____ rename_keys _______ rename_keys
 
 
 ___ fb(value):
-    return str(value)
+    r.. str(value)
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -86,8 +86,8 @@ ___ test_rename_keys(test_input, expected):
     renamed = rename_keys(test_input)
     snapshot_after = repr(test_input)
 
-    assert renamed == expected
+    ... renamed __ expected
 
     # make sure we're returning a new dict and the original dict was not modified in place
-    assert test_input is not renamed
-    assert snapshot_before == snapshot_after __ '@' in snapshot_before else True
+    ... test_input __ n.. renamed
+    ... snapshot_before __ snapshot_after __ '@' __ snapshot_before ____ True

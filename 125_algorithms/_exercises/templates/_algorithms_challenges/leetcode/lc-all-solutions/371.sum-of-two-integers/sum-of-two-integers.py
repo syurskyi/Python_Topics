@@ -8,23 +8,23 @@ class Solution(object):
     ans = 0
     mask = 0x01
     carry = 0
-    for i in range(0, 32):
+    ___ i __ r..(0, 32):
       a = num1 & mask
       b = num2 & mask
       c = carry
       carry = 0
       __ a ^ b != 0:
-        __ c == 1:
+        __ c __ 1:
           carry = 1
-        else:
+        ____:
           ans |= mask
-      else:
+      ____:
         __ a & mask > 0:
           carry = 1
-        __ c == 1:
+        __ c __ 1:
           ans |= mask
 
       mask = mask << 1
     __ ans > 0x7fffffff:
-      return ans - 0xffffffff - 1
-    return ans
+      r.. ans - 0xffffffff - 1
+    r.. ans

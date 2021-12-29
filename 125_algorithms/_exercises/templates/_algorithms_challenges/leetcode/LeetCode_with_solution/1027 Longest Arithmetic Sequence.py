@@ -29,8 +29,8 @@ Note:
 2 <= A.length <= 2000
 0 <= A[i] <= 10000
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -40,19 +40,19 @@ class Solution:
 
         Let F[i][j] be the longest arith subseq ending at A[i] with step j
         """
-        F = defaultdict(lambda: defaultdict(lambda: 1))
-        for i in range(len(A)):
-            for j in range(i):
+        F = defaultdict(l....: defaultdict(l....: 1))
+        ___ i __ r..(l..(A)):
+            ___ j __ r..(i):
                 delta = A[i] - A[j]
                 F[i][delta] = F[j][delta] + 1
 
         ret = 0
-        for d in F.values():
-            for v in d.values():
+        ___ d __ F.values():
+            ___ v __ d.values():
                 ret = max(ret, v)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().longestArithSeqLength([20,1,15,3,10,5,8]) == 4
+__ __name__ __ "__main__":
+    ... Solution().longestArithSeqLength([20,1,15,3,10,5,8]) __ 4

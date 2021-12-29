@@ -6,59 +6,59 @@ Created on Apr 3, 2017
 
 class Solution(object):
     ___ isSubsequence(self, s, t):
-        import bisect
+        _______ bisect
         hashmap = {}
-        for i, c in enumerate(t):
-            __ c in hashmap:
-                hashmap[c].append(i)
-            else:
+        ___ i, c __ enumerate(t):
+            __ c __ hashmap:
+                hashmap[c].a..(i)
+            ____:
                 hashmap[c] = [i]
         prev = 0
-        for i, c in enumerate(s):
-            __ c not in hashmap: return False
+        ___ i, c __ enumerate(s):
+            __ c n.. __ hashmap: r.. False
             j = bisect.bisect_left(hashmap[c], prev)
-            __ j == len(hashmap[c]): return False
+            __ j __ l..(hashmap[c]): r.. False
             prev = hashmap[c][j]+1
-        return True
+        r.. True
     
     ___ isSubsequence_orig(self, s, t):
-        import bisect
-        idx = [[] for _ in range(256)]
-        for i, c in enumerate(t):
-            idx[ord(c)].append(i)
+        _______ bisect
+        idx = [[] ___ _ __ r..(256)]
+        ___ i, c __ enumerate(t):
+            idx[ord(c)].a..(i)
         prev = 0
-        for i, c in enumerate(s):
-            __ idx[ord(c)] == []: return False
+        ___ i, c __ enumerate(s):
+            __ idx[ord(c)] __ []: r.. False
             j = bisect.bisect_left(idx[ord(c)], prev)
-            __ j == len(idx[ord(c)]): return False
+            __ j __ l..(idx[ord(c)]): r.. False
             prev = idx[ord(c)][j] + 1
-        return True
+        r.. True
     
     ___ isSubsequence_slow(self, s, t):
         i, j = 0, 0
-        while i < len(s) and j < len(t):
-            __ s[i] == t[j]:
+        while i < l..(s) and j < l..(t):
+            __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            else:
+            ____:
                 j+=1
-        __ i < len(s):
-            return False
-        else:
-            return True
+        __ i < l..(s):
+            r.. False
+        ____:
+            r.. True
     
     ___ test(self):
         testCases = [
             ('abc', 'ahbgdc'),
             ('axc', 'ahbgdc'),
         ]
-        for s, t in testCases:
+        ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
             result = self.isSubsequence(s, t)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

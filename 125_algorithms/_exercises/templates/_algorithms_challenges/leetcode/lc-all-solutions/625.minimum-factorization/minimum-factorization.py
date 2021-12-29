@@ -6,20 +6,20 @@ class Solution(object):
     :rtype: int
     """
     __ a < 10:
-      return a
-    path = []
+      r.. a
+    path    # list
     k = 9
     while k > 1 and a > 1:
-      __ a % k == 0:
-        path.append(str(k))
+      __ a % k __ 0:
+        path.a..(s..(k))
         a /= k
-      else:
+      ____:
         k -= 1
     path.sort()
-    __ a > 9 or not path:
-      return 0
+    __ a > 9 o. n.. path:
+      r.. 0
     ans = int("".join(path))
-    return ans __ ans <= 0x7fffffff else 0
+    r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
   ___ smallestFactorization(self, a):
@@ -28,20 +28,20 @@ class Solution(object):
     :rtype: int
     """
     __ a <= 1:
-      return a
+      r.. a
 
     ___ dfs(num, path):
-      __ num == 1:
-        self.ans = min(self.ans, int("".join(sorted(path))))
-        return True
-      for i in reversed(range(2, 10)):
-        __ num % i == 0:
-          path.append(str(i))
+      __ num __ 1:
+        self.ans = m..(self.ans, int("".join(s..(path))))
+        r.. True
+      ___ i __ reversed(r..(2, 10)):
+        __ num % i __ 0:
+          path.a..(s..(i))
           __ dfs(num / i, path):
-            return True
+            r.. True
           path.pop()
-      return False
+      r.. False
 
     self.ans = float("inf")
     dfs(a, [])
-    return self.ans __ self.ans != float("inf") and self.ans <= 0x7fffffff else 0
+    r.. self.ans __ self.ans != float("inf") and self.ans <= 0x7fffffff ____ 0

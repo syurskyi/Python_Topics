@@ -11,43 +11,43 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
+        __ n.. nums: r.. 0
         start, end = 0, 0
-        minLen = len(nums) + 1
+        minLen = l..(nums) + 1
         sumVal = 0
-        while start <= end and end < len(nums):
+        while start <= end and end < l..(nums):
             sumVal += nums[end]
             __ sumVal >= s:
                 while start <= end and sumVal >= s:
                     sumVal -= nums[start]
-                    minLen = min(minLen, end-start+1)
+                    minLen = m..(minLen, end-start+1)
                     start+=1
             end+=1
-        __ minLen > len(nums):
-            return 0
-        else:
-            return minLen
+        __ minLen > l..(nums):
+            r.. 0
+        ____:
+            r.. minLen
     
     ___ minSubArrayLenBS(self, s, nums):
-        sums = [0]*(len(nums)+1)
-        for i in range(1, len(sums)):
+        sums = [0]*(l..(nums)+1)
+        ___ i __ r..(1, l..(sums)):
             sums[i] = sums[i-1] + nums[i-1]
-        minLen = len(nums)+1
-        for i in range(len(sums)):
-            end = self.binarySearch(i+1, len(sums)-1, sums[i]+s, sums)
-            __ end == len(sums):
+        minLen = l..(nums)+1
+        ___ i __ r..(l..(sums)):
+            end = self.binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
+            __ end __ l..(sums):
                 break
-            minLen = min(minLen, end-i)
-        return minLen __ minLen <= len(nums) else 0
+            minLen = m..(minLen, end-i)
+        r.. minLen __ minLen <= l..(nums) ____ 0
     
     ___ binarySearch(self, low, high, key, sums):
         while low <= high:
             mid = int((low+high)/2)
             __ sums[mid] >= key:
                 high = mid-1
-            else:
+            ____:
                 low = mid+1
-        return low
+        r.. low
     
     ___ test(self):
         testCases = [
@@ -55,7 +55,7 @@ class Solution(object):
             (4, [1, 4, 4]),
             (11, [1, 2, 3, 4, 5]),
         ]
-        for s, nums in testCases:
+        ___ s, nums __ testCases:
             print('nums: %s' % (nums))
             print('s: %s' % (s))
             result = self.minSubArrayLen(s, nums)
@@ -64,5 +64,5 @@ class Solution(object):
             print('resultBS: %s' % (resultBS))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -16,7 +16,7 @@ Example:
 
 
 ___ digitize(n):
-    return [int(s) for s in str(n)][::-1]
+    r.. [int(s) ___ s __ str(n)][::-1]
 
 
 print(digitize(35231))

@@ -4,11 +4,11 @@ class Solution:
         :type n: int
         :rtype: bool
         """
-        __ not n:
-            return False
+        __ n.. n:
+            r.. False
 
-        for i in (81, 27, 9, 3):
-            while n % i == 0:
+        ___ i __ (81, 27, 9, 3):
+            while n % i __ 0:
                 n //= i
 
-        return n == 1
+        r.. n __ 1

@@ -1,19 +1,19 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ int_args(func):
     @wraps(func)
     # complete this decorator
     ___ wrapper(*args):
-        __ sum(isinstance(n, str) for n in args):
+        __ s..(isi..(n, str) ___ n __ args):
             raise TypeError
-        elif sum(isinstance(n, float) for n in args):
+        ____ s..(isi..(n, float) ___ n __ args):
             raise TypeError
-        elif sum(n < 0 for n in args):
+        ____ s..(n < 0 ___ n __ args):
             raise ValueError
-        elif all(isinstance(n, int) for n in args):
-            return func(*args)
-    return wrapper
+        ____ a..(isi..(n, int) ___ n __ args):
+            r.. func(*args)
+    r.. wrapper
 """ 
 @int_args
 def sum_numbers(*numbers):

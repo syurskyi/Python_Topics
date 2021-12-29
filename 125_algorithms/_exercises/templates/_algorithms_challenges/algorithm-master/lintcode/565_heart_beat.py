@@ -9,7 +9,7 @@ class HeartBeat:
     @return: nothing
     """
     ___ initialize(self, slaves_ip_list, k):
-        self.slaves_ip_list.update(dict.fromkeys(slaves_ip_list, 0))
+        self.slaves_ip_list.update(d...f..(slaves_ip_list, 0))
         self.ttl = 2 * k
 
     """
@@ -18,7 +18,7 @@ class HeartBeat:
     @return: nothing
     """
     ___ ping(self, timestamp, slave_ip):
-        __ slave_ip in self.slaves_ip_list:
+        __ slave_ip __ self.slaves_ip_list:
             self.slaves_ip_list[slave_ip] = timestamp
 
     """
@@ -26,9 +26,9 @@ class HeartBeat:
     @return: a list of slaves'ip addresses that died
     """
     ___ getDiedSlaves(self, timestamp):
-        __ not timestamp:
-            return []
-        return [ ip
-            for ip, t0 in self.slaves_ip_list.items()
+        __ n.. timestamp:
+            r.. []
+        r.. [ ip
+            ___ ip, t0 __ self.slaves_ip_list.items()
             __ timestamp - t0 >= self.ttl
         ]

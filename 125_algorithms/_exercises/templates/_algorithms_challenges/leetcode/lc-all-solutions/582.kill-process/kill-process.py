@@ -6,24 +6,24 @@ class Solution(object):
     :type kill: int
     :rtype: List[int]
     """
-    n = len(pid)
+    n = l..(pid)
 
     mpppid = {}
 
-    for i in range(n):
+    ___ i __ r..(n):
       __ mpppid.has_key(ppid[i]):
-        mpppid[ppid[i]].append(i)
-      else:
+        mpppid[ppid[i]].a..(i)
+      ____:
         mpppid[ppid[i]] = [i]
     res = [kill]
 
     ___ dfs(x):
-      __ not mpppid.has_key(x):
-        return
-      for i in mpppid[x]:
+      __ n.. mpppid.has_key(x):
+        r..
+      ___ i __ mpppid[x]:
         y = pid[i]
-        res.append(y)
+        res.a..(y)
         dfs(y)
 
     dfs(kill)
-    return res
+    r.. res

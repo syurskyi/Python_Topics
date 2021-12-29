@@ -21,7 +21,7 @@ Note:
 You may assume that the given expression is always valid.
 Do not use the eval built-in library function.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -32,36 +32,36 @@ class Solution:
         3. handle bracket recursively
         """
         ret, _ = self.eval(s + "\0", 0, [])
-        return ret
+        r.. ret
 
     ___ eval(self, s: str, start: int, stk: List[int]) -> int:
         prev_op = "+"
         operand = 0
         i = start
-        while i < len(s):  #  not using for-loop, since the cursor needs to advance in recursion
-            __ s[i] == " ":
+        while i < l..(s):  #  not using for-loop, since the cursor needs to advance in recursion
+            __ s[i] __ " ":
                 pass
-            elif s[i].isdigit():
+            ____ s[i].isdigit():
                 operand = operand * 10 + int(s[i])
-            elif s[i] in ("+", "-", ")", "\0"):  # delimited
-                __ prev_op == "+":
-                    stk.append(operand)
-                elif prev_op == "-":
-                    stk.append(-operand)
+            ____ s[i] __ ("+", "-", ")", "\0"):  # delimited
+                __ prev_op __ "+":
+                    stk.a..(operand)
+                ____ prev_op __ "-":
+                    stk.a..(-operand)
         
-                __ s[i] in ("+", "-"):
+                __ s[i] __ ("+", "-"):
                     operand = 0
                     prev_op = s[i]
-                elif s[i] in (")", "\0"):
-                    return sum(stk), i
-            elif s[i] == "(":
+                ____ s[i] __ (")", "\0"):
+                    r.. s..(stk), i
+            ____ s[i] __ "(":
                 # avoid setting operand to 0
                 operand, i = self.eval(s, i + 1, [])
-            else:
+            ____:
                 raise
 
             i += 1
 
 
-__ __name__ == "__main__":
-    assert Solution().calculate("(1+(4+5+2)-3)+(6+8)") == 23
+__ __name__ __ "__main__":
+    ... Solution().calculate("(1+(4+5+2)-3)+(6+8)") __ 23

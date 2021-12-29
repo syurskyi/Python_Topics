@@ -32,11 +32,11 @@ class Solution(object):
 
     ___ helper(root, depth):
       res = 0
-      for nested in root:
+      ___ nested __ root:
         __ nested.isInteger():
           res += depth * nested.getInteger()
-        else:
+        ____:
           res += helper(nested.getList(), depth + 1)
-      return res
+      r.. res
 
-    return helper(nestedList, 1)
+    r.. helper(nestedList, 1)

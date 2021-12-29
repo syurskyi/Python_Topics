@@ -11,35 +11,35 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ s is None or t is None:
-            return False
-        m, n = len(t), len(s)
+        __ s __ N.. o. t __ N..
+            r.. False
+        m, n = l..(t), l..(s)
         __ abs(m-n) > 1:
-            return False
+            r.. False
         i, j, count = 0, 0, 0
         while i < n and j < m:
-            __ s[i] == t[j]:
+            __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            else:
+            ____:
                 count+=1
                 __ count>1:
-                    return False
+                    r.. False
                 __ m>n:
                     j+=1
-                elif n>m:
+                ____ n>m:
                     i+=1
-                else:
+                ____:
                     i+=1
                     j+=1
-        __ i < n or j < m:
+        __ i < n o. j < m:
             count += 1
-        __ count == 1:
-            return True
-        return False
+        __ count __ 1:
+            r.. True
+        r.. False
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

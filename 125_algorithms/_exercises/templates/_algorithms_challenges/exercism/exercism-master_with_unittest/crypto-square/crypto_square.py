@@ -1,44 +1,44 @@
-import string
-import math
-import itertools
+_______ string
+_______ math
+_______ itertools
 
 
 class CryptoSquare:
 
     @classmethod
     ___ encode(cls, msg):
-        __ len(cls.normalize(msg)) == 0:
-            return ''
-        return ' '.join(cls.transpose_square(cls.squarify(cls.normalize(msg))))
+        __ l..(cls.normalize(msg)) __ 0:
+            r.. ''
+        r.. ' '.join(cls.transpose_square(cls.squarify(cls.normalize(msg))))
 
     @classmethod
     ___ squarify(cls, msg):
-        return [msg[i:i + cls.square_size(len(msg))]
-                for i in range(0, len(msg), cls.square_size(len(msg)))]
+        r.. [msg[i:i + cls.square_size(l..(msg))]
+                ___ i __ r..(0, l..(msg), cls.square_size(l..(msg)))]
 
     @classmethod
     ___ transpose_square(cls, square):
-        matrix = [list(row) for row in square]
+        matrix = [l..(row) ___ row __ square]
         transposed_matrix = cls.transpose_uneven_matrix(matrix)
-        return [''.join(row) for row in transposed_matrix]
+        r.. [''.join(row) ___ row __ transposed_matrix]
 
     @staticmethod
     ___ normalize(msg):
-        return ''.join(ch.lower() for ch in msg __ ch not in
+        r.. ''.join(ch.lower() ___ ch __ msg __ ch n.. __
                        set(string.punctuation + ' '))
 
     @staticmethod
     ___ square_size(msg_length):
-        return int(math.ceil(msg_length ** 0.5))
+        r.. int(math.ceil(msg_length ** 0.5))
 
     # https://stackoverflow.com/a/4938130/2813210
     @staticmethod
     ___ transpose_uneven_matrix(matrix):
-        transposed_matrix = list(itertools.zip_longest(*matrix))
+        transposed_matrix = l..(itertools.zip_longest(*matrix))
         # Remove None's
-        return [[val for val in row __ val __ not None]
-                for row in transposed_matrix]
+        r.. [[val ___ val __ row __ val __ n.. N..]
+                ___ row __ transposed_matrix]
 
 
 ___ encode(msg):
-    return CryptoSquare.encode(msg)
+    r.. CryptoSquare.encode(msg)

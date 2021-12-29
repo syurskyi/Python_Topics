@@ -1,11 +1,11 @@
 #Write a script that extracts letters from the 26 text files and put the letters in a list
-import glob
+_______ glob
 
 letters  []
 file_list  glob.glob("letters/*.txt")
 print(file_list)
-for filename in file_list:
+___ filename __ file_list:
     with open(filename, "r") as file:
-        letters.append(file.read().strip("\n"))
+        letters.a..(file.read().strip("\n"))
 
 print(letters)

@@ -7,8 +7,8 @@ Created on Sep 25, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ averageOfLevels(self, root):
@@ -16,25 +16,25 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[float]
         """
-        __ not root: return []
+        __ n.. root: r.. []
         queue = [root]
-        nextQueue = []
+        nextQueue    # list
         sumVal = 0
         count = 0
-        res = []
+        res    # list
         while queue:
             node = queue.pop(0)
             sumVal += node.val
             count += 1
             __ node.left:
-                nextQueue.append(node.left)
+                nextQueue.a..(node.left)
             __ node.right:
-                nextQueue.append(node.right)
-            __ not queue:
-                res.append(float(sumVal)/count)
+                nextQueue.a..(node.right)
+            __ n.. queue:
+                res.a..(float(sumVal)/count)
                 sumVal = 0
                 count = 0
                 queue = nextQueue
-                nextQueue = []
-        return res
+                nextQueue    # list
+        r.. res
     

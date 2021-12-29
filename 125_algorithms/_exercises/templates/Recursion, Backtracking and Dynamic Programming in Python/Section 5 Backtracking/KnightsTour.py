@@ -49,11 +49,11 @@ c_ KnightsTour:
 
         # that the knight will not step outside the chessboard
         # the knight leaves the board horizontally
-        __ x < 0 or x > board_size:
+        __ x < 0 o. x > board_size:
             r_ F..
 
         # the knight leaves the board vertically
-        __ y < 0 or y > board_size:
+        __ y < 0 o. y > board_size:
             r_ F..
 
         # maybe we have already visited that given cell

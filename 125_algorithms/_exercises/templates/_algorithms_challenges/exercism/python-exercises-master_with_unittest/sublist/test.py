@@ -1,13 +1,13 @@
-import unittest
+_______ unittest
 
-from sublist import check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
+____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
 class SublistTest(unittest.TestCase):
     ___ test_unique_return_values(self):
-        self.assertEqual(len(set([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
+        self.assertEqual(l..(set([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
 
     ___ test_empty_lists(self):
         self.assertEqual(
@@ -120,16 +120,16 @@ class SublistTest(unittest.TestCase):
 
     # additional track specific test
     ___ test_large_lists(self):
-        l1 = list(range(1000)) * 1000 + list(range(1000, 1100))
-        l2 = list(range(900, 1050))
+        l1 = l..(r..(1000)) * 1000 + l..(r..(1000, 1100))
+        l2 = l..(r..(900, 1050))
         self.assertEqual(check_lists(l1, l2), SUPERLIST)
 
     # additional track specific test
     ___ test_spread_sublist(self):
-        multiples_of_3 = list(range(3, 200, 3))
-        multiples_of_15 = list(range(15, 200, 15))
+        multiples_of_3 = l..(r..(3, 200, 3))
+        multiples_of_15 = l..(r..(15, 200, 15))
         self.assertEqual(check_lists(multiples_of_15, multiples_of_3), UNEQUAL)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

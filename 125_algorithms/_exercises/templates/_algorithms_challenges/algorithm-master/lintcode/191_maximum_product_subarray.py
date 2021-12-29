@@ -12,19 +12,19 @@ class Solution:
     @return: An integer
     """
     ___ maxProduct(self, A):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
         ans = Pmin = Pmax = A[0]
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest
             """
             C = (A[i], Pmin * A[i], Pmax * A[i])
-            Pmin, Pmax = min(C), max(C)
+            Pmin, Pmax = m..(C), max(C)
 
             __ Pmax > ans:
                 ans = Pmax
 
-        return ans
+        r.. ans

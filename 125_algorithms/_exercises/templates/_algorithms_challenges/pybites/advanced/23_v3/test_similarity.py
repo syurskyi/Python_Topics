@@ -1,12 +1,12 @@
-from similarity import get_similarities
+____ similarity _______ get_similarities
 
 
 ___ test_get_similarities():
     # cast to list in case of generator
-    similar_tags = list(get_similarities())
+    similar_tags = l..(get_similarities())
 
     # not interested in the order of the pairs
-    similar_tags = {tuple(sorted(pair)) for pair in similar_tags}
+    similar_tags = {tuple(s..(pair)) ___ pair __ similar_tags}
 
     expected = [('cheat sheet', 'cheat sheets'),
                 ('python anywhere', 'pythonanywhere'),
@@ -23,5 +23,5 @@ ___ test_get_similarities():
                 ('object oriented', 'objectoriented'),
                 ('code challenges', 'codechallenges')]
 
-    for hit in expected:
-        assert tuple(sorted(hit)) in similar_tags, f'{hit} not in similar tags'
+    ___ hit __ expected:
+        ... tuple(s..(hit)) __ similar_tags, f'{hit} not in similar tags'

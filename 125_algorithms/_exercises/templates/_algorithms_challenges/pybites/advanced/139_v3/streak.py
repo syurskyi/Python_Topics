@@ -1,5 +1,5 @@
-import re
-from datetime import datetime, timedelta, date
+_______ re
+____ datetime _______ datetime, timedelta, date
 
 ONE_DAY = timedelta(days=1)
 
@@ -9,7 +9,7 @@ TODAY = date(2018, 11, 12)
 ___ extract_dates(data):
     """Extract unique dates from DB table representation as shown in Bite"""
     dates = re.findall(r' (\d{4}-\d\d-\d\d) ', data)
-    return set(datetime.strptime(d, '%Y-%m-%d').date() for d in dates)
+    r.. set(datetime.strptime(d, '%Y-%m-%d').date() ___ d __ dates)
 
 
 ___ calculate_streak(dates):
@@ -27,7 +27,7 @@ ___ calculate_streak(dates):
     """
     dy = TODAY - ONE_DAY
     count = 0
-    while dy in dates:
+    while dy __ dates:
         dy -= ONE_DAY
         count += 1
-    return count + (1 __ TODAY in dates else 0)
+    r.. count + (1 __ TODAY __ dates ____ 0)

@@ -16,11 +16,11 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: bool
         """
-        intervals.sort(key=lambda x: x.start)
-        length = len(intervals)
-        for i in range(length-1):
+        intervals.sort(key=l.... x: x.start)
+        length = l..(intervals)
+        ___ i __ r..(length-1):
             curr = intervals[i]
             nextInter = intervals[i+1]
             __ curr.end > nextInter.start:
-                return False
-        return True
+                r.. False
+        r.. True

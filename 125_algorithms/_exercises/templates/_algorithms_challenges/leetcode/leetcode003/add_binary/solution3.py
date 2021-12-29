@@ -16,12 +16,12 @@ class Solution(object):
         """
         a = a[::-1]
         b = b[::-1]
-        m = len(a)
-        n = len(b)
+        m = l..(a)
+        n = l..(b)
         i = 0
         c = 0
-        res = ['0' for _ in range(max(m, n) + 1)]
-        while i < m or i < n or c > 0:
+        res = ['0' ___ _ __ r..(max(m, n) + 1)]
+        while i < m o. i < n o. c > 0:
             tmp = c
             __ i < m:
                 tmp += int(a[i])
@@ -32,13 +32,13 @@ class Solution(object):
             res[i] = str(bit)
             i += 1
         res = res[::-1]
-        for i, c in enumerate(res):
+        ___ i, c __ enumerate(res):
             __ c != '0':
                 res = res[i:]
                 break
-        else:
+        ____:
             res = ['0']
-        return ''.join(res)
+        r.. ''.join(res)
 
 
 s = Solution()

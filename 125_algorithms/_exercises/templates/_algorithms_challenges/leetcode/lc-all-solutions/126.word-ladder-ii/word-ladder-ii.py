@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -11,13 +11,13 @@ class Solution(object):
     """
 
     ___ getNbrs(src, dest, wordList):
-      res = []
-      for c in string.ascii_lowercase:
-        for i in range(0, len(src)):
+      res    # list
+      ___ c __ string.ascii_lowercase:
+        ___ i __ r..(0, l..(src)):
           newWord = src[:i] + c + src[i + 1:]
-          __ newWord == src:
+          __ newWord __ src:
             continue
-          __ newWord in wordList or newWord == dest:
+          __ newWord __ wordList o. newWord __ dest:
             yield newWord
 
     ___ bfs(beginWord, endWord, wordList):
@@ -26,26 +26,26 @@ class Solution(object):
       length = 0
       while queue:
         length += 1
-        for k in range(0, len(queue)):
+        ___ k __ r..(0, l..(queue)):
           top = queue.popleft()
-          for nbr in getNbrs(top, endWord, wordList):
-            __ nbr not in distance:
+          ___ nbr __ getNbrs(top, endWord, wordList):
+            __ nbr n.. __ distance:
               distance[nbr] = distance[top] + 1
-              queue.append(nbr)
-      return distance
+              queue.a..(nbr)
+      r.. distance
 
     ___ dfs(beginWord, endWord, wordList, path, res, distance):
-      __ beginWord == endWord:
-        res.append(path + [])
-        return
+      __ beginWord __ endWord:
+        res.a..(path + [])
+        r..
 
-      for nbr in getNbrs(beginWord, endWord, wordList):
-        __ distance.get(nbr, -2) + 1 == distance[beginWord]:
-          path.append(nbr)
+      ___ nbr __ getNbrs(beginWord, endWord, wordList):
+        __ distance.get(nbr, -2) + 1 __ distance[beginWord]:
+          path.a..(nbr)
           dfs(nbr, endWord, wordList, path, res, distance)
           path.pop()
 
-    res = []
+    res    # list
     distance = bfs(endWord, beginWord, wordlist)
     dfs(beginWord, endWord, wordlist, [beginWord], res, distance)
-    return res
+    r.. res

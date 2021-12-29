@@ -9,13 +9,13 @@ class Solution(object):
     ans = ""
     mask = 0xf0000000
     flag = False
-    for i in range(0, 8):
+    ___ i __ r..(0, 8):
       halfb = (num & mask) >> 28
       __ halfb != 0:
         flag = True
       __ flag:
         ans = ans + d[(num & mask) >> 28]
       num = num << 4
-    __ ans == "":
-      return "0"
-    return ans
+    __ ans __ "":
+      r.. "0"
+    r.. ans

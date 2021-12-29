@@ -18,7 +18,7 @@ def test_rotate():
     assert rotate(string, -15) == expected
 
 """
-import collections
+_______ collections
 
 ___ rotate(string, n):
     """Rotate characters in a string. Expects string and n (int) for

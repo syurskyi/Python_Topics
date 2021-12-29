@@ -1,11 +1,11 @@
 ___ hey(phrase):
     phrase = phrase.strip()
 
-    __ not phrase:
-        return "Fine. Be that way!"
-    elif phrase.isupper():
-        return "Whoa, chill out!"
-    elif phrase.endswith("?"):
-        return "Sure."
-    else:
-        return 'Whatever.'
+    __ n.. phrase:
+        r.. "Fine. Be that way!"
+    ____ phrase.isupper():
+        r.. "Whoa, chill out!"
+    ____ phrase.endswith("?"):
+        r.. "Sure."
+    ____:
+        r.. 'Whatever.'

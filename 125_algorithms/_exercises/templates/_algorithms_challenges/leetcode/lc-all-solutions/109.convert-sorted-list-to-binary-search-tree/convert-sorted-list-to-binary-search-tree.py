@@ -18,7 +18,7 @@ class Solution(object):
     :rtype: TreeNode
     """
     __ head:
-      pre = None
+      pre = N..
       slow = fast = head
       while fast and fast.next:
         pre = slow
@@ -26,7 +26,7 @@ class Solution(object):
         fast = fast.next.next
       root = TreeNode(slow.val)
       __ pre:
-        pre.next = None
+        pre.next = N..
         root.left = self.sortedListToBST(head)
       root.right = self.sortedListToBST(slow.next)
-      return root
+      r.. root

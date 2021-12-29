@@ -10,23 +10,23 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        result = []
-        __ not root: return result
-        queue = []
-        nextQueue = []
-        elem = []
-        queue.append(root)
+        result    # list
+        __ n.. root: r.. result
+        queue    # list
+        nextQueue    # list
+        elem    # list
+        queue.a..(root)
         while queue:
             first = queue[0]
-            elem.append(first.val)
+            elem.a..(first.val)
             del queue[0]
             __ first.left:
-                nextQueue.append(first.left)
+                nextQueue.a..(first.left)
             __ first.right:
-                nextQueue.append(first.right)
-            __ not queue:
-                result.append(elem)
-                elem = []
+                nextQueue.a..(first.right)
+            __ n.. queue:
+                result.a..(elem)
+                elem    # list
                 queue = nextQueue
-                nextQueue = []
-        return result
+                nextQueue    # list
+        r.. result

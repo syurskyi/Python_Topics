@@ -10,19 +10,19 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
-        res = []
-        __ not words or not s: return res
+        res    # list
+        __ n.. words o. n.. s: r.. res
         hashmap0 = {}
-        for word in words:
+        ___ word __ words:
             hashmap0[word] = hashmap0.get(word, 0)+1
-        wordLen = len(words[0])
-        for j in range(wordLen):
+        wordLen = l..(words[0])
+        ___ j __ r..(wordLen):
             hashmap = {}
             start = j
             count = 0
-            for i in range(j, len(s)-wordLen+1, wordLen):
+            ___ i __ r..(j, l..(s)-wordLen+1, wordLen):
                 sub = s[i:i+wordLen]
-                __ sub in hashmap0:
+                __ sub __ hashmap0:
                     hashmap[sub] = hashmap.get(sub, 0)+1
                     count += 1
                     while hashmap[sub] > hashmap0[sub]:
@@ -30,17 +30,17 @@ class Solution(object):
                         hashmap[left] -= 1
                         count -= 1
                         start += wordLen
-                    __ count == len(words):
-                        res.append(start)
+                    __ count __ l..(words):
+                        res.a..(start)
                         left = s[start:start+wordLen]
                         hashmap[left] -= 1
                         count -= 1
                         start += wordLen
-                else:
+                ____:
                     hashmap = {}
                     start = i+wordLen
                     count = 0
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -61,12 +61,12 @@ class Solution(object):
                 ['a', 'a']
             ],
         ]
-        for s, words in testCases:
+        ___ s, words __ testCases:
             print('s: %s' % s)
             print('words: %s' % words)
             result = self.findSubstring(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

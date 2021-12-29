@@ -24,19 +24,19 @@ class Solution(object):
         :param num2: String
         :return: String
         """
-        result = []
+        result    # list
 
         # pre processing
-        __ len(num1) > len(num2):  # order them first
-            return self.multiply(num2, num1)
+        __ l..(num1) > l..(num2):  # order them first
+            r.. self.multiply(num2, num1)
 
         # reverse them first
-        num1 = map(int, list(num1[::-1]))
-        num2 = map(int, list(num2[::-1]))
+        num1 = map(int, l..(num1[::-1]))
+        num2 = map(int, l..(num2[::-1]))
 
         # multiply by 1 digit at a time
-        for d in num1:
-            result.append(self.multiply_1_digit(d, num2))
+        ___ d __ num1:
+            result.a..(self.multiply_1_digit(d, num2))
 
         # add the temporary results up
         lst = self.add_list(result)
@@ -44,9 +44,9 @@ class Solution(object):
         # post processing
         lst.reverse()  # reverse back
         result = "".join(map(str, lst)).lstrip("0")
-        __ not result:
-            return "0"
-        return result
+        __ n.. result:
+            r.. "0"
+        r.. result
 
     ___ multiply_1_digit(self, digit, num):
         """
@@ -54,19 +54,19 @@ class Solution(object):
         :param num: String
         :return: list of digit in reverse order
         """
-        ret = []
+        ret    # list
 
         carry = 0
-        for elt in num:
+        ___ elt __ num:
             mul = elt*digit + carry
             carry = mul/10
             mul %= 10
-            ret.append(mul)
+            ret.a..(mul)
 
         __ carry != 0:
-            ret.append(carry)
+            ret.a..(carry)
 
-        return ret
+        r.. ret
 
     ___ add_list(self, lst):
         """
@@ -76,11 +76,11 @@ class Solution(object):
         """
         sig = 0
         ret = [0]
-        for ind, val in enumerate(lst):
-            for i in xrange(sig): val.insert(0, 0)  # possible deque
+        ___ ind, val __ enumerate(lst):
+            ___ i __ xrange(sig): val.insert(0, 0)  # possible deque
             ret = self.add(ret, val)
             sig += 1
-        return ret
+        r.. ret
 
     ___ add(self, num1, num2):
         """
@@ -89,29 +89,29 @@ class Solution(object):
         :return: list of digits in reverse order
         """
 
-        __ len(num1) > len(num2):
-            return self.add(num2, num1)
+        __ l..(num1) > l..(num2):
+            r.. self.add(num2, num1)
 
-        ret = []
+        ret    # list
         carry = 0
-        for idx in xrange(len(num2)):  # longer one
+        ___ idx __ xrange(l..(num2)):  # longer one
             try:
                 sm = num1[idx] + num2[idx] + carry
             except IndexError:
                 sm = num2[idx] + carry
 
             carry = sm/10
-            ret.append(sm % 10)
+            ret.a..(sm % 10)
 
         __ carry != 0:
-            ret.append(carry)
+            ret.a..(carry)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     solution = Solution()
-    assert [1, 2] == solution.add([2, 1], [9])
-    assert str(123*999) == solution.multiply("123", "999")
-    assert str(0) == solution.multiply("0", "0")
-    assert str(123*456) == solution.multiply("123", "456")
+    ... [1, 2] __ solution.add([2, 1], [9])
+    ... str(123*999) __ solution.multiply("123", "999")
+    ... str(0) __ solution.multiply("0", "0")
+    ... str(123*456) __ solution.multiply("123", "456")

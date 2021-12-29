@@ -7,38 +7,38 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ not nums:
-            return []
+        __ n.. nums:
+            r.. []
 
-        n = len(nums)
+        n = l..(nums)
         ans = [0] * n
 
-        cands = sorted(set(nums))
-        v2i = {cands[i]: i for i in range(len(cands))}
-        self.bits = [0] * (len(v2i) + 1)
+        cands = s..(set(nums))
+        v2i = {cands[i]: i ___ i __ r..(l..(cands))}
+        self.bits = [0] * (l..(v2i) + 1)
 
-        for i in range(n - 1, -1, -1):
+        ___ i __ r..(n - 1, -1, -1):
             j = v2i[nums[i]]
-            ans[i] = self.sum(j)
+            ans[i] = self.s..(j)
             self.update(j)
 
-        return ans
+        r.. ans
 
     ___ update(self, i):
         i += 1
 
-        while i < len(self.bits):
+        while i < l..(self.bits):
             self.bits[i] += 1
             i += (i & -i)
 
-    ___ sum(self, i):
+    ___ s..(self, i):
         res = 0
 
         while i > 0:
             res += self.bits[i]
             i -= (i & -i)
 
-        return res
+        r.. res
 
 
 class Solution:
@@ -50,18 +50,18 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
-        n = len(nums)
+        n = l..(nums)
 
-        for i in range(n):
-            ans.append(0)
+        ___ i __ r..(n):
+            ans.a..(0)
 
-            for j in range(i, n):
+            ___ j __ r..(i, n):
                 __ nums[j] < nums[i]:
                     ans[-1] += 1
 
-        return ans
+        r.. ans

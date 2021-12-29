@@ -17,31 +17,31 @@ class Solution:
     """
     ___ connectedSet2(self, nodes):
         # Build UnionFind
-        for node in nodes:
-            for nei in node.neighbors:
+        ___ node __ nodes:
+            ___ nei __ node.neighbors:
                 self.connect(nei.label, node.label)
 
         # Categorify result
         result = {}
         root_label = ''
-        for node in nodes:
+        ___ node __ nodes:
             root_label = self.find(node.label)
-            __ root_label not in result:
-                result[root_label] = []
-            result[root_label].append(node.label)
-        return result.values()
+            __ root_label n.. __ result:
+                result[root_label]    # list
+            result[root_label].a..(node.label)
+        r.. result.values()
 
     ___ connect(self, a, b):
         root_a = self.find(a)
         root_b = self.find(b)
-        __ root_a is not root_b:
+        __ root_a __ n.. root_b:
             self.nodes[root_a] = root_b
 
     ___ find(self, a):
-        __ a not in self.nodes:
+        __ a n.. __ self.nodes:
             self.nodes[a] = a
-            return a
-        elif self.nodes[a] is a:
-            return a
+            r.. a
+        ____ self.nodes[a] __ a:
+            r.. a
         self.nodes[a] = self.find(self.nodes[a])
-        return self.nodes[a]
+        r.. self.nodes[a]

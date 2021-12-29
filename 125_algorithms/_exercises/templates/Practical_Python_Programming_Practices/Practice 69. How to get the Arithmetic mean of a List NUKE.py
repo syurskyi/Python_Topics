@@ -1,13 +1,13 @@
 ___ avg_list(first):
-    last  len(first)
-    sum  0
-    for i in first:
-        sum + i
-    return sum/last
+    last  l..(first)
+    s..  0
+    ___ i __ first:
+        s.. + i
+    r.. s../last
 
 x  input("Insert some integer values: ")
-x  x.split()
-for i in range(len(x)):
+x  x.s.. 
+___ i __ r..(l..(x)):
     x[i]  i..(x[i])
 
 average  avg_list(x)

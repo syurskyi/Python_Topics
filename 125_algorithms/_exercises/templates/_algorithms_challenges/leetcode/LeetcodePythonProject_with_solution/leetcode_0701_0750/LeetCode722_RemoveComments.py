@@ -9,34 +9,34 @@ class Solution(object):
         :type source: List[str]
         :rtype: List[str]
         """
-        res = []
+        res    # list
         isComment = False
         isLineComment = False
         line = ''
-        for src in source:
+        ___ src __ source:
             j = 0
             isLineComment = False
-            while j < len(src):
+            while j < l..(src):
                 c = src[j]
-                __ j < len(src)-1 and src[j:j+2] == '//' and not isComment:
-                    __ line and not isComment:
-                        res.append(line)
+                __ j < l..(src)-1 and src[j:j+2] __ '//' and n.. isComment:
+                    __ line and n.. isComment:
+                        res.a..(line)
                     isLineComment = True
                     line = ''
-                elif j < len(src)-1 and src[j:j+2] == '/*' and not isLineComment and not isComment:
+                ____ j < l..(src)-1 and src[j:j+2] __ '/*' and n.. isLineComment and n.. isComment:
                     j += 1
                     isComment = True
-                elif j < len(src)-1 and src[j:j+2] == '*/' and isComment:
+                ____ j < l..(src)-1 and src[j:j+2] __ '*/' and isComment:
                     j += 1
                     isComment = False
-                elif not isComment and not isLineComment:
+                ____ n.. isComment and n.. isLineComment:
                     line += c
-                __ j == len(src)-1 and not isComment:
+                __ j __ l..(src)-1 and n.. isComment:
                     __ line:
-                        res.append(line)
+                        res.a..(line)
                     line = ''
                 j += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -88,11 +88,11 @@ class Solution(object):
                 "d//*e/*/f"
             ],
         ]
-        for source in testCases:
+        ___ source __ testCases:
             print('source: %s' % source)
             result = self.removeComments(source)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -7,16 +7,16 @@ class Solution(object):
         left = 0
         res = 0
         hashmap = {}
-        for i, num in enumerate(tree):
+        ___ i, num __ enumerate(tree):
             hashmap[num] = hashmap.get(num, 0) + 1
-            while len(hashmap) > 2:
+            while l..(hashmap) > 2:
                 hashmap[tree[left]] -= 1
-                __ hashmap[tree[left]] == 0:
+                __ hashmap[tree[left]] __ 0:
                     del hashmap[tree[left]]
                 left += 1
             res = max(res, i-left+1)
-        res = max(res, len(tree)-left)
-        return res
+        res = max(res, l..(tree)-left)
+        r.. res
 
     ___ test(self):
         testCases = [
@@ -26,11 +26,11 @@ class Solution(object):
             [1,2,3,2,2],
             [3,3,3,1,2,1,1,2,3,3,4],
         ]
-        for tree in testCases:
+        ___ tree __ testCases:
             res = self.totalFruit(tree)
             print('res: %s' % res)
             print('-='*30+'-')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

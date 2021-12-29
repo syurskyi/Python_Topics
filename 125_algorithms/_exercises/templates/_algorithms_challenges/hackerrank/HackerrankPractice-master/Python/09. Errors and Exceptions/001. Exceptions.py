@@ -2,8 +2,8 @@
 # Score: 10
 
 
-for _ in range(int(input())):
-    a, b = input().split()
+___ _ __ r..(int(input())):
+    a, b = input().s.. 
     try:
         print(int(a) // int(b))
     except BaseException as err:

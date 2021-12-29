@@ -10,17 +10,17 @@ class Solution(object):
         :type s: str
         :rtype: List[int]
         """
-        n = len(s)
-        res = list(range(1, n+2))
+        n = l..(s)
+        res = l..(r..(1, n+2))
         i = 0
         while i < n:
-            __ s[i] == 'D':
+            __ s[i] __ 'D':
                 prev = i
-                while i+1 < n and s[i+1]=='D':
+                while i+1 < n and s[i+1]__'D':
                     i += 1
                 self.reverse(res, prev, i+1)
             i += 1
-        return res
+        r.. res
     
     ___ reverse(self, res, l, r):
         while l < r:
@@ -36,11 +36,11 @@ class Solution(object):
             'DIDDI',
             'DD',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.findPermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

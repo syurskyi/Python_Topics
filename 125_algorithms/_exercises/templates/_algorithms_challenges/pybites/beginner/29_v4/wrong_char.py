@@ -12,16 +12,16 @@ ___ get_index_different_char(chars):
     '''
     an = {False: 0, True: 0}  # alphanumeric counter
     p = 0  # tracks alphanumericity (I'm sure this is not a word) of the first character
-    for ch in chars:
+    ___ ch __ chars:
         c = str(ch).isalnum()  # the defacto test
         # In the case when the odd character is in the first 2 characters, the 'p'
         # variable allows me to determine the initial characters type and locate the
         # position of the minority type within the first 2 characters.
-        __ an[False] == 1 == an[True]:
-            return 1 - p __ c else p
+        __ an[False] __ 1 __ an[True]:
+            r.. 1 - p __ c ____ p
         an[c] += 1
-        __ (c and an[False] < 2) or (not c and an[True] < 2):
-            __ c and sum(an) == 0:
+        __ (c and an[False] < 2) o. (n.. c and an[True] < 2):
+            __ c and s..(an) __ 0:
                 p = 1
             continue
-        return chars.index(ch)
+        r.. chars.index(ch)

@@ -9,21 +9,21 @@ class Solution:
     @return: an integer
     """
     ___ backPackIII(self, A, V, m):
-        __ not A or not V or not m:
-            return 0
+        __ n.. A o. n.. V o. n.. m:
+            r.. 0
 
         # `dp[w]` means the maximum value
         # with weight `w`
         dp = [0] * (m + 1)
 
         _val = 0
-        for i in range(len(A)):
-            for w in range(A[i], m + 1):
+        ___ i __ r..(l..(A)):
+            ___ w __ r..(A[i], m + 1):
                 _val = dp[w - A[i]] + V[i]
                 __ _val > dp[w]:
                     dp[w] = _val
 
-        return dp[m]
+        r.. dp[m]
 
 
 """
@@ -37,17 +37,17 @@ class Solution:
     @return: an integer
     """
     ___ backPackIII(self, A, V, m):
-        __ not A or not V or not m:
-            return 0
+        __ n.. A o. n.. V o. n.. m:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
 
         # `dp[i][w]` means the maximum value
         # with weight `w` in the former `i` items
-        dp = [[0] * (m + 1) for _ in range(n + 1)]
+        dp = [[0] * (m + 1) ___ _ __ r..(n + 1)]
 
-        for i in range(1, n + 1):
-            for w in range(1, m + 1):
+        ___ i __ r..(1, n + 1):
+            ___ w __ r..(1, m + 1):
                 dp[i][w] = dp[i - 1][w]
 
                 __ w >= A[i - 1]:
@@ -56,4 +56,4 @@ class Solution:
                         dp[i][w - A[i - 1]] + V[i - 1]
                     )
 
-        return dp[n][w]
+        r.. dp[n][w]

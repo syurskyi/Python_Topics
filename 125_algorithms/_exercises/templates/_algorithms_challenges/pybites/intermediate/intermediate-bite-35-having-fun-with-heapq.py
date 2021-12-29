@@ -7,8 +7,8 @@ Complete the 3 functions to return the largest n of each using heapq
 
 Have fun and keep calm and code in Python!
 """
-from datetime import datetime
-import heapq
+____ datetime _______ datetime
+_______ heapq
 
 numbers = [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6]
 dates = [datetime(2018, 1, 23, 0, 0),

@@ -1,10 +1,10 @@
-from dataclasses import dataclass,field
+____ dataclasses _______ dataclass,field
 
 
 
 @dataclass
 class Test:
-    x: list = field(default_factory=list)
+    x: l.. = field(default_factory=l..)
 
 
 

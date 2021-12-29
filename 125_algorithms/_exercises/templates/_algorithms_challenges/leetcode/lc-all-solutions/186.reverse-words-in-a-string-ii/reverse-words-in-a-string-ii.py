@@ -9,12 +9,12 @@ class Solution:
         end -= 1
 
     wstart, wend = 0, 0
-    for i in range(0, len(s)):
-      __ s[i] == " ":
+    ___ i __ r..(0, l..(s)):
+      __ s[i] __ " ":
         wend = i - 1
         swap(wstart, wend, s)
         wstart = i + 1
-      elif i + 1 == len(s):
+      ____ i + 1 __ l..(s):
         swap(wstart, i, s)
 
-    swap(0, len(s) - 1, s)
+    swap(0, l..(s) - 1, s)

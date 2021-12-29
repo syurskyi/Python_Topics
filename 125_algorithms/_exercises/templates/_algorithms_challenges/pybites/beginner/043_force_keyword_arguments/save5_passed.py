@@ -1,5 +1,5 @@
 ___ get_profile(**kwargs):
-    for key in kwargs:
-        __ key not in ['name', 'profession']:
+    ___ key __ kwargs:
+        __ key n.. __ ['name', 'profession']:
             raise TypeError
-    return f"{kwargs.get('name', 'julian')} is a {kwargs.get('profession', 'programmer')}"
+    r.. f"{kwargs.get('name', 'julian')} is a {kwargs.get('profession', 'programmer')}"

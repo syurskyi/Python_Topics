@@ -9,18 +9,18 @@ class Solution(object):
         :type a: int
         :rtype: int
         """
-        __ a < 10: return a
-        res = []
-        for i in range(9, 1, -1):
-            while a%i == 0:
-                res.append(i)
+        __ a < 10: r.. a
+        res    # list
+        ___ i __ r..(9, 1, -1):
+            while a%i __ 0:
+                res.a..(i)
                 a //= i
-        __ a >= 10 or not res: return 0
+        __ a >= 10 o. n.. res: r.. 0
         result = ''
-        for i in range(len(res)-1, -1, -1):
+        ___ i __ r..(l..(res)-1, -1, -1):
             result += str(res[i])
         result = int(result)
-        return result __ result < 2**31-1 else 0
+        r.. result __ result < 2**31-1 ____ 0
     
     ___ test(self):
         testCases = [
@@ -29,11 +29,11 @@ class Solution(object):
             11,
             22,
         ]
-        for num in testCases:
+        ___ num __ testCases:
             print('num: %s' % num)
             result = self.smallestFactorization(num)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

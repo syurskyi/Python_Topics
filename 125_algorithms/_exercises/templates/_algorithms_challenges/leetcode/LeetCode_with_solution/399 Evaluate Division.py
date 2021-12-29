@@ -18,8 +18,8 @@ values = [2.0, 3.0],
 queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 
 """
-from collections import defaultdict
-from itertools import izip
+____ collections _______ defaultdict
+____ itertools _______ izip
 
 __author__ = 'Daniel'
 
@@ -33,28 +33,28 @@ class Solution(object):
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = defaultdict(dict)
-        for edge, val in izip(equations, values):
+        G = defaultdict(d..)
+        ___ edge, val __ izip(equations, values):
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        return [self.dfs(G, s, e, set()) for s, e in queries]
+        r.. [self.dfs(G, s, e, set()) ___ s, e __ queries]
 
     ___ dfs(self, G, s, e, path):
-        __ s not in G or e not in G:
-            return -1.0
-        __ e in G[s]:
-            return G[s][e]
-        for nbr in G[s]:
-            __ nbr not in path:
+        __ s n.. __ G o. e n.. __ G:
+            r.. -1.0
+        __ e __ G[s]:
+            r.. G[s][e]
+        ___ nbr __ G[s]:
+            __ nbr n.. __ path:
                 path.add(nbr)
                 val = self.dfs(G, nbr, e, path)
                 __ val != -1.0:
-                    return val * G[s][nbr]
+                    r.. val * G[s][nbr]
                 path.remove(nbr)
 
-        return -1.0
+        r.. -1.0
 
 
 class Solution(object):
@@ -67,17 +67,17 @@ class Solution(object):
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = defaultdict(dict)
-        for edge, val in izip(equations, values):
+        G = defaultdict(d..)
+        ___ edge, val __ izip(equations, values):
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
         # Floyd-Warshall
-        for mid in G:
-            for s in G[mid]:
-                for e in G[mid]:
+        ___ mid __ G:
+            ___ s __ G[mid]:
+                ___ e __ G[mid]:
                     G[s][e] = G[s][mid] * G[mid][e]
 
-        return [G[s].get(e, -1.0) for s, e in queries]
+        r.. [G[s].get(e, -1.0) ___ s, e __ queries]
 

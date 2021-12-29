@@ -25,29 +25,29 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        n = len(nums)
+        n = l..(nums)
         nums.sort()
-        res = []
-        for a in range(n - 3):
-            __ a > 0 and nums[a - 1] == nums[a]:
+        res    # list
+        ___ a __ r..(n - 3):
+            __ a > 0 and nums[a - 1] __ nums[a]:
                 continue
-            for b in range(a + 1, n - 2):
-                __ b > a + 1 and nums[b - 1] == nums[b]:
+            ___ b __ r..(a + 1, n - 2):
+                __ b > a + 1 and nums[b - 1] __ nums[b]:
                     continue
                 c = b + 1
                 d = n - 1
                 while c < d:
                     s = nums[a] + nums[b] + nums[c] + nums[d]
-                    __ s == target:
-                        res.append([nums[a], nums[b], nums[c], nums[d]])
+                    __ s __ target:
+                        res.a..([nums[a], nums[b], nums[c], nums[d]])
                         c += 1
                         d -= 1
-                        while c < d and nums[c] == nums[c - 1]:
+                        while c < d and nums[c] __ nums[c - 1]:
                             c += 1
-                        while c < d and nums[d] == nums[d + 1]:
+                        while c < d and nums[d] __ nums[d + 1]:
                             d -= 1
-                    elif s < target:
+                    ____ s < target:
                         c += 1
-                    else:
+                    ____:
                         d -= 1
-        return res
+        r.. res

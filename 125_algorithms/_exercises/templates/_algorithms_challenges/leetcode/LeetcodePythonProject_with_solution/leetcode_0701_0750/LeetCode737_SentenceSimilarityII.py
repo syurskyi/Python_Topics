@@ -11,33 +11,33 @@ class Solution(object):
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ len(words1) != len(words2):
-            return False
+        __ l..(words1) != l..(words2):
+            r.. False
         pairInfo = {}
-        for p in pairs:
-            __ p[0] not in pairInfo:
+        ___ p __ pairs:
+            __ p[0] n.. __ pairInfo:
                 pairInfo[p[0]] = set()
-            __ p[1] not in pairInfo:
+            __ p[1] n.. __ pairInfo:
                 pairInfo[p[1]] = set()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
-        for w1, w2 in zip(words1, words2):
-            __ w1 == w2:
+        ___ w1, w2 __ zip(words1, words2):
+            __ w1 __ w2:
                 continue
-            __ w1 not in pairInfo:
-                return False
-            __ not self.dfs(w1, w2, pairInfo, set()):
-                return False
-        return True
+            __ w1 n.. __ pairInfo:
+                r.. False
+            __ n.. self.dfs(w1, w2, pairInfo, set()):
+                r.. False
+        r.. True
     
     ___ dfs(self, source, target, pairInfo, visited):
-        __ target in pairInfo.get(source, set()):
-            return True
+        __ target __ pairInfo.get(source, set()):
+            r.. True
         visited.add(source)
-        for nextWord in pairInfo.get(source, set()):
-            __ nextWord not in visited and self.dfs(nextWord, target, pairInfo, visited):
-                return True
-        return False
+        ___ nextWord __ pairInfo.get(source, set()):
+            __ nextWord n.. __ visited and self.dfs(nextWord, target, pairInfo, visited):
+                r.. True
+        r.. False
     
     # This is Exceeding Time Limit
     ___ areSentencesSimilarTwo_own(self, words1, words2, pairs):
@@ -47,41 +47,41 @@ class Solution(object):
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ len(words1) != len(words2):
-            return False
+        __ l..(words1) != l..(words2):
+            r.. False
         hashmap = {}
         n = 0
-        l = []
-        for p in pairs:
-            __ p[0] not in hashmap:
-                l.append(p[0])
+        l    # list
+        ___ p __ pairs:
+            __ p[0] n.. __ hashmap:
+                l.a..(p[0])
                 hashmap[p[0]] = n
                 n += 1
-            __ p[1] not in hashmap:
-                l.append(p[1])
+            __ p[1] n.. __ hashmap:
+                l.a..(p[1])
                 hashmap[p[1]] = n
                 n += 1
         roots = [-1]*n
-        for p in pairs:
+        ___ p __ pairs:
             root0 = self.getRoot(roots, hashmap[p[0]])
             root1 = self.getRoot(roots, hashmap[p[1]])
             roots[root0] = root1
-        for w1, w2 in zip(words1, words2):
-            __ w1 == w2:
+        ___ w1, w2 __ zip(words1, words2):
+            __ w1 __ w2:
                 continue
-            elif w1 not in hashmap or w2 not in hashmap:
-                return False
-            else:
+            ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
+                r.. False
+            ____:
                 r1 = self.getRoot(roots, hashmap[w1])
                 r2 = self.getRoot(roots, hashmap[w2])
                 __ r1 != r2:
-                    return False
-        return True
+                    r.. False
+        r.. True
     
     ___ getRoot(self, roots, ind):
         while roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r.. ind
     
     ___ test(self):
         testCases = [
@@ -111,10 +111,10 @@ class Solution(object):
                     ["unique","one"],["the","one"],["an","one"],["single","one"],["a","one"],["truck","car"],["wagon","car"],["automobile","car"],["auto","car"],["vehicle","car"],["entertain","have"],["drink","have"],["eat","have"],["take","have"],["fruits","meal"],["brunch","meal"],["breakfast","meal"],["food","meal"],["dinner","meal"],["super","meal"],["lunch","meal"],["possess","own"],["keep","own"],["have","own"],["extremely","very"],["actually","very"],["really","very"],["super","very"]],
             ],
         ]
-        for words1, words2, pairs in testCases:
+        ___ words1, words2, pairs __ testCases:
             result = self.areSentencesSimilarTwo(words1, words2, pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

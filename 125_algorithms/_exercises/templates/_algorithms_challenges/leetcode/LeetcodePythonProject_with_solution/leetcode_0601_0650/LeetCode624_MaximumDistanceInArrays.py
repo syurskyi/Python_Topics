@@ -10,18 +10,18 @@ class Solution(object):
         :type arrays: List[List[int]]
         :rtype: int
         """
-        __ not arrays:
-            return 0
+        __ n.. arrays:
+            r.. 0
         minVal = arrays[0][0]
         maxVal = arrays[0][-1]
         maxDis = 0
-        for i in range(1, len(arrays)):
+        ___ i __ r..(1, l..(arrays)):
             arr = arrays[i]
             maxDis = max(maxDis, abs(arr[-1]-minVal))
             maxDis = max(maxDis, abs(maxVal-arr[0]))
-            minVal = min(minVal, arr[0])
+            minVal = m..(minVal, arr[0])
             maxVal = max(maxVal, arr[-1])
-        return maxDis
+        r.. maxDis
     
     ___ test(self):
         testCases = [
@@ -31,11 +31,11 @@ class Solution(object):
                 [1,2,3]
             ],
         ]
-        for arrays in testCases:
+        ___ arrays __ testCases:
             print('arrays: %s' % arrays)
             result = self.maxDistance(arrays)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -9,17 +9,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        res = []
-        __ not nums: return res
+        res    # list
+        __ n.. nums: r.. res
         self.dfs(nums, [], res)
-        return res
+        r.. res
     
     ___ dfs(self, nums, curr, res):
-        __ nums == []:
-            res.append(list(curr))
-            return
-        for i, num in enumerate(nums):
-            curr.append(num)
+        __ nums __ []:
+            res.a..(l..(curr))
+            r..
+        ___ i, num __ enumerate(nums):
+            curr.a..(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()
     
@@ -27,11 +27,11 @@ class Solution(object):
         testCases = [
             [1, 2, 3]
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.permute(nums)
             print('result: %s' % result)
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

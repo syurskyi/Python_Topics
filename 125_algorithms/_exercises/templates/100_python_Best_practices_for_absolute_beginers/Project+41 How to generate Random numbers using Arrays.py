@@ -1,10 +1,10 @@
-from random import randint
+____ random _______ randint
 
 x  20
 array  []
 
-for i in range(x):
-    array.append(randint(1,10))
-for i in array:
+___ i __ r..(x):
+    array.a..(randint(1,10))
+___ i __ array:
     print(i,end' ')
 print()

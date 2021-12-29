@@ -1,13 +1,13 @@
 ___ check_valid_tr_number(number):
-    __ len(str(number)) != 11 or any([str(c) not in '0123456789' for c in str(number)]):
-        return False
-    sum_13579 = sum([int(number[n]) * 7 for n in range(0,9) __ n in (0,2,4,6,8)])
-    sum_2468 = sum([int(number[n]) for n in range(0,9) __ n in (1,3,5,7)])
+    __ l..(str(number)) != 11 o. any([str(c) n.. __ '0123456789' ___ c __ str(number)]):
+        r.. False
+    sum_13579 = s..([int(number[n]) * 7 ___ n __ r..(0,9) __ n __ (0,2,4,6,8)])
+    sum_2468 = s..([int(number[n]) ___ n __ r..(0,9) __ n __ (1,3,5,7)])
     __ (sum_13579-sum_2468) % 10 != int(number[9]):
-        return False
-    __ sum([int(number[n]) for n in range(10)]) % 10 != int(number[10]):
-        return False
-    return True
+        r.. False
+    __ s..([int(number[n]) ___ n __ r..(10)]) % 10 != int(number[10]):
+        r.. False
+    r.. True
 
 
 print(check_valid_tr_number('10167994524'))    

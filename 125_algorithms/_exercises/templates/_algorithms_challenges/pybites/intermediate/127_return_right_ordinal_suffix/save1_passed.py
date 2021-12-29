@@ -3,12 +3,12 @@ ___ get_ordinal_suffix(number):
        so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.'''
     __ 11 <= (number % 100) <= 13:
         ordinal = 'th'
-    elif str(number)[-1] == '1':
+    ____ str(number)[-1] __ '1':
         ordinal = 'st'
-    elif str(number)[-1] == '2':
+    ____ str(number)[-1] __ '2':
         ordinal = 'nd'
-    elif str(number)[-1] == '3':
+    ____ str(number)[-1] __ '3':
         ordinal = 'rd'
-    else:
+    ____:
         ordinal = 'th'
-    return str(number) + ordinal
+    r.. str(number) + ordinal

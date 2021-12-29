@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+____ dataclasses _______ dataclass
 
 
 @dataclass
@@ -34,7 +34,7 @@ class Employee:
         :return: String representation of the rounded number in US $
         """
         amount = round(number, places)
-        return f"${amount:0.2f}"
+        r.. f"${amount:0.2f}"
 
     @property
     ___ weekly_pay(self) -> str:
@@ -44,9 +44,9 @@ class Employee:
         """
         total_hours = self.hours_per_day * self.days_per_week
         total_wage = total_hours * self.wage
-        return self._rounder(total_wage, 2)
+        r.. self._rounder(total_wage, 2)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     coder = Employee("Joe", "Blow", 5, 8, 18.0)
     print(coder.weekly_pay)

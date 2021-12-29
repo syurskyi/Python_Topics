@@ -1,5 +1,5 @@
-___ sum_numbers(numbers):
-    numbers = 0
-    for n in numbers:
-        result += numbers.append()
-        return result
+# ___ sum_numbers numbers
+#     ? _ 0
+#     ___ n __ ?
+#         result +_ ?.a..
+#         r.. ?

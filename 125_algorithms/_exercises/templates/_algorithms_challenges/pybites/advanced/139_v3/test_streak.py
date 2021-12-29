@@ -1,6 +1,6 @@
-import datetime
+_______ datetime
 
-from streak import extract_dates, calculate_streak
+____ streak _______ extract_dates, calculate_streak
 
 
 ___ test_extract_dates():
@@ -20,10 +20,10 @@ ___ test_extract_dates():
     +------------+------------+---------+
     """
     dates = extract_dates(data)
-    assert len(dates) == 8  # one less = deduped 2018-09-18
-    assert datetime.date(2018, 9, 18) in dates
-    assert datetime.date(2018, 10, 23) in dates
-    assert datetime.date(2018, 11, 9) in dates
+    ... l..(dates) __ 8  # one less = deduped 2018-09-18
+    ... datetime.date(2018, 9, 18) __ dates
+    ... datetime.date(2018, 10, 23) __ dates
+    ... datetime.date(2018, 11, 9) __ dates
 
 
 ___ test_streak_of_0_days():
@@ -44,7 +44,7 @@ ___ test_streak_of_0_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 0
+    ... streak __ 0
 
 
 ___ test_streak_of_1_day_can_still_make_today():
@@ -65,7 +65,7 @@ ___ test_streak_of_1_day_can_still_make_today():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 1
+    ... streak __ 1
 
 
 ___ test_streak_of_1_day_thanks_to_todays_progress():
@@ -86,7 +86,7 @@ ___ test_streak_of_1_day_thanks_to_todays_progress():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 1
+    ... streak __ 1
 
 
 ___ test_streak_of_3_days():
@@ -107,7 +107,7 @@ ___ test_streak_of_3_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 3
+    ... streak __ 3
 
 
 ___ test_streak_of_10_days():
@@ -129,7 +129,7 @@ ___ test_streak_of_10_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 10
+    ... streak __ 10
 
 
 ___ test_streak_of_almost_10_days_but_gap_so_only_5_days():
@@ -150,7 +150,7 @@ ___ test_streak_of_almost_10_days_but_gap_so_only_5_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 5
+    ... streak __ 5
 
 
 ___ test_streak_of_5_days_dates_out_of_order():
@@ -167,4 +167,4 @@ ___ test_streak_of_5_days_dates_out_of_order():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 5
+    ... streak __ 5

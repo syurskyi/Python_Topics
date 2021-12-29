@@ -31,7 +31,7 @@ Note:
 -10000 <= queries[i][0] <= 10000
 0 <= queries[i][1] < A.length
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -39,15 +39,15 @@ class Solution:
         """
         maintain a sum
         """
-        cur_sum = sum(filter(lambda x: x % 2 == 0, A))
-        ret = []
-        for val, idx in queries:
+        cur_sum = s..(filter(l.... x: x % 2 __ 0, A))
+        ret    # list
+        ___ val, idx __ queries:
             prev = A[idx]
-            __ prev % 2 == 0:
+            __ prev % 2 __ 0:
                 cur_sum -= prev
             A[idx] += val
-            __ A[idx] % 2 == 0:
+            __ A[idx] % 2 __ 0:
                 cur_sum += A[idx]
-            ret.append(cur_sum)
+            ret.a..(cur_sum)
 
-        return ret
+        r.. ret

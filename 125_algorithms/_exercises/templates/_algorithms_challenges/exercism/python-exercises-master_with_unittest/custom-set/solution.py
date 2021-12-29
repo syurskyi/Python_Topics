@@ -1,45 +1,45 @@
 class CustomSet(object):
     ___ __init__(self, elements=[]):
-        self.elements = list(elements)
+        self.elements = l..(elements)
 
     ___ isempty(self):
-        return not self.elements
+        r.. n.. self.elements
 
     ___ __iter__(self):
-        return iter(self.elements)
+        r.. iter(self.elements)
 
     ___ __contains__(self, element):
-        return element in self.elements
+        r.. element __ self.elements
 
     ___ issubset(self, other):
-        return all(x in other for x in self)
+        r.. a..(x __ other ___ x __ self)
 
     ___ isdisjoint(self, other):
-        return all(x not in other for x in self)
+        r.. a..(x n.. __ other ___ x __ self)
 
     ___ __eq__(self, other):
-        return self.issubset(other) and other.issubset(self)
+        r.. self.issubset(other) and other.issubset(self)
 
     ___ add(self, element):
-        __ element not in self:
-            self.elements.append(element)
+        __ element n.. __ self:
+            self.elements.a..(element)
 
     ___ intersection(self, other):
         result = CustomSet()
-        for x in self:
-            __ x in other:
+        ___ x __ self:
+            __ x __ other:
                 result.add(x)
-        return result
+        r.. result
 
     ___ __sub__(self, other):
         result = CustomSet()
-        for x in self:
-            __ x not in other:
+        ___ x __ self:
+            __ x n.. __ other:
                 result.add(x)
-        return result
+        r.. result
 
     ___ __add__(self, other):
         result = CustomSet(self.elements)
-        for x in other:
+        ___ x __ other:
             result.add(x)
-        return result
+        r.. result

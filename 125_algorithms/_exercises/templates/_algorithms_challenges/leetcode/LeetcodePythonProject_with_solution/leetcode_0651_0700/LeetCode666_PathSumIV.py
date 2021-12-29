@@ -9,15 +9,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
+        __ n.. nums: r.. 0
         hashmap = {}
-        for num in nums:
+        ___ num __ nums:
             key = num//10
             value = num%10
             hashmap[key] = value
         self.sumVal = 0
         self.traverse(nums[0]//10, 0, hashmap)
-        return self.sumVal
+        r.. self.sumVal
     
     ___ traverse(self, root, preSum, hashmap):
         level = root//10
@@ -25,12 +25,12 @@ class Solution(object):
         left = (level+1)*10+pos*2-1
         right = (level+1)*10+pos*2
         curSum = preSum + hashmap[root]
-        __ left not in hashmap and right not in hashmap:
+        __ left n.. __ hashmap and right n.. __ hashmap:
             self.sumVal += curSum
-            return
-        __ left in hashmap:
+            r..
+        __ left __ hashmap:
             self.traverse(left, curSum, hashmap)
-        __ right in hashmap:
+        __ right __ hashmap:
             self.traverse(right, curSum, hashmap)
     
     ___ test(self):
@@ -39,11 +39,11 @@ class Solution(object):
             [113, 221],
             [111,217,221,315,415],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.pathSum(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

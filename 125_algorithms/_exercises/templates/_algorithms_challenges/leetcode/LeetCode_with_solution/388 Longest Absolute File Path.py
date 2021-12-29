@@ -46,22 +46,22 @@ class Solution(object):
         :rtype: int
         """
         input = input.split('\n')
-        F = []
+        F    # list
         gmax = 0
-        for elt in input:
-            idx = elt.count('\t')
-            idx = min(idx, len(F))
+        ___ elt __ input:
+            idx = elt.c.. '\t')
+            idx = m..(idx, l..(F))
             e = elt.strip('\t')
-            prev = -1 __ idx == 0 else F[idx-1]
-            __ idx == len(F):
-                F.append(prev + 1 + len(e))
-            else:
-                F[idx] = prev + 1 + len(e)  # reset
+            prev = -1 __ idx __ 0 ____ F[idx-1]
+            __ idx __ l..(F):
+                F.a..(prev + 1 + l..(e))
+            ____:
+                F[idx] = prev + 1 + l..(e)  # reset
 
-            __ '.' in elt:
+            __ '.' __ elt:
                 gmax = max(gmax, F[idx])
 
-        return gmax
+        r.. gmax
 
-__ __name__ == "__main__":
-    assert Solution().lengthLongestPath("dir\n    file.txt") == 12
+__ __name__ __ "__main__":
+    ... Solution().lengthLongestPath("dir\n    file.txt") __ 12

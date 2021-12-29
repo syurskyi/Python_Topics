@@ -4,9 +4,9 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-from itertools import product, groupby
-from collections import Counter, namedtuple
-import operator
+____ itertools _______ product, groupby
+____ collections _______ Counter, namedtuple
+_______ operator
 
 CHEESES = [
     "Red Leicester",
@@ -103,27 +103,27 @@ ___ calculate_similarity(cheese, wine):
     wine_count = Counter(wine.lower())
     cheese_count = Counter(cheese.lower())
     common_letters = (wine_count & cheese_count)
-    similarity = sum(common_letters.values()) / (1 + (len(wine) - len(cheese)) ** 2)
-    return similarity
+    similarity = s..(common_letters.values()) / (1 + (l..(wine) - l..(cheese)) ** 2)
+    r.. similarity
 
 
 ___ best_match_per_wine(wine_type="all"):
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
-    __ wine_type in WINE_LIST:
+    __ wine_type __ WINE_LIST:
         wines = WINE_LIST[wine_type]
-    elif wine_type in WINE_LIST['all']:
+    ____ wine_type __ WINE_LIST['all']:
         wines = [wine_type]
-    else:
+    ____:
         raise ValueError('Wine not recognised')
     cheeses = CHEESES
     hi_score = Scores('', '', 0)
-    for wine, cheese in product(wines, cheeses):
+    ___ wine, cheese __ product(wines, cheeses):
         similarity = calculate_similarity(cheese, wine)
         __ similarity > hi_score.score:
             hi_score = Scores(wine, cheese, similarity)
-    return tuple(hi_score)
+    r.. tuple(hi_score)
 
 
 ___ match_wine_5cheeses():
@@ -137,12 +137,12 @@ ___ match_wine_5cheeses():
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    scores = []
-    for wine, cheese in product(WINE_LIST['all'], CHEESES):
+    scores    # list
+    ___ wine, cheese __ product(WINE_LIST['all'], CHEESES):
         similarity = calculate_similarity(cheese, wine)
-        scores.append(Scores(wine, cheese, similarity))
-    scores = sorted(scores, key=lambda x: (x.wine, -x.score, x.cheese))
-    res = []
-    for k, g in groupby(scores, lambda x: x.wine):
-        res.append((k, [rec.cheese for rec in g][:5]))
-    return res
+        scores.a..(Scores(wine, cheese, similarity))
+    scores = s..(scores, key=l.... x: (x.wine, -x.score, x.cheese))
+    res    # list
+    ___ k, g __ groupby(scores, l.... x: x.wine):
+        res.a..((k, [rec.cheese ___ rec __ g][:5]))
+    r.. res

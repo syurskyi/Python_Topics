@@ -1,11 +1,11 @@
 ___ hurdle_jump(hurdles, jump_height):
-    __ hurdles == []:
-        return True
+    __ hurdles __ []:
+        r.. True
     hurdles.sort()
     __ hurdles[-1] <= jump_height:
-        return True
-    else:
-        return False
+        r.. True
+    ____:
+        r.. False
 
 
 ___ test():

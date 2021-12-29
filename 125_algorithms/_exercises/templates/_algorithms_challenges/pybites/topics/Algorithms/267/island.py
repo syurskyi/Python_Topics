@@ -19,75 +19,75 @@ ___ get_others(map_, r, c):
     """
     nums = 0
     # your code here
-    __ r == 0 and c == 0: #top left corder
+    __ r __ 0 and c __ 0: #top left corder
         nums += 2
-        __ len(map_[0]) > 1:
-            __ map_[r][c+1] == 0:
+        __ l..(map_[0]) > 1:
+            __ map_[r][c+1] __ 0:
                 nums += 1
-            __ map_[r+1][c] == 0:
+            __ map_[r+1][c] __ 0:
                 nums += 1
-    elif r == 0 and c == len(map_[0])-1: #top right corner
+    ____ r __ 0 and c __ l..(map_[0])-1: #top right corner
         nums += 2
-        __ len(map_[0]) > 1:
-            __ map_[r][c-1] == 0:
+        __ l..(map_[0]) > 1:
+            __ map_[r][c-1] __ 0:
                 nums += 1
-            __ map_[r+1][c] == 0:
+            __ map_[r+1][c] __ 0:
                 nums += 1
-    elif r == len(map_)-1 and c == 0: #bottom left corder
+    ____ r __ l..(map_)-1 and c __ 0: #bottom left corder
         nums += 2
-        __ len(map_[0]) > 1:
-            __ map_[r][c+1] == 0:
+        __ l..(map_[0]) > 1:
+            __ map_[r][c+1] __ 0:
                 nums += 1
-            __ map_[r-1][c] == 0:
+            __ map_[r-1][c] __ 0:
                 nums += 1
-    elif r == len(map_)-1 and c == len(map_[0])-1: #bottom right corner
+    ____ r __ l..(map_)-1 and c __ l..(map_[0])-1: #bottom right corner
         nums += 2
-        __ map_[r][c-1] == 0:
+        __ map_[r][c-1] __ 0:
             nums += 1
-        __ map_[r-1][c] == 0:
+        __ map_[r-1][c] __ 0:
             nums += 1
-    elif r == 0: # top edge, excluding corner
+    ____ r __ 0: # top edge, excluding corner
         nums += 1
-        __ map_[r][c-1] == 0:
+        __ map_[r][c-1] __ 0:
             nums += 1
-        __ map_[r][c+1] == 0:
+        __ map_[r][c+1] __ 0:
             nums += 1
-        __ len(map_) > r and map_[r+1][c] == 0:
+        __ l..(map_) > r and map_[r+1][c] __ 0:
             nums += 1
-    elif r == len(map_)-1: # bottom edge, excluding corner
+    ____ r __ l..(map_)-1: # bottom edge, excluding corner
         nums += 1
-        __ map_[r][c-1] == 0:
+        __ map_[r][c-1] __ 0:
             nums += 1
-        __ map_[r][c+1] == 0:
+        __ map_[r][c+1] __ 0:
             nums += 1
-        __ map_[r-1][c] == 0:
+        __ map_[r-1][c] __ 0:
             nums += 1
-    elif c == 0: # left edge, excluding corner
+    ____ c __ 0: # left edge, excluding corner
         nums += 1
-        __ map_[r-1][c] == 0:
+        __ map_[r-1][c] __ 0:
             nums += 1
-        __ map_[r+1][c] == 0:
+        __ map_[r+1][c] __ 0:
             nums += 1
-        __ len(map_[0]) > c and map_[r][c+1] == 0:
+        __ l..(map_[0]) > c and map_[r][c+1] __ 0:
             nums += 1
-    elif c == len(map_[0])-1: # right edge. excluding corner
+    ____ c __ l..(map_[0])-1: # right edge. excluding corner
         nums += 1
-        __ map_[r-1][c] == 0:
+        __ map_[r-1][c] __ 0:
             nums += 1
-        __ map_[r+1][c] == 0:
+        __ map_[r+1][c] __ 0:
             nums += 1
-        __ map_[r][c-1] == 0:
+        __ map_[r][c-1] __ 0:
             nums += 1
-    else: # the rest, excluding edge and corner
-        __ map_[r-1][c] == 0:
+    ____: # the rest, excluding edge and corner
+        __ map_[r-1][c] __ 0:
             nums += 1
-        __ map_[r+1][c] == 0:
+        __ map_[r+1][c] __ 0:
             nums += 1
-        __ map_[r][c-1] == 0:
+        __ map_[r][c-1] __ 0:
             nums += 1
-        __ map_[r][c+1] == 0:
+        __ map_[r][c+1] __ 0:
             nums += 1
-    return nums
+    r.. nums
 
 
 ___ island_size(map_):
@@ -99,11 +99,11 @@ ___ island_size(map_):
     perimeter = 0
     # your code here
     #print(len(map_[0]))
-    for r, row in enumerate(map_):
-        for c, column in enumerate(row):
-            __ map_[r][c] == 1:
+    ___ r, row __ enumerate(map_):
+        ___ c, column __ enumerate(row):
+            __ map_[r][c] __ 1:
                 print(r,c)
                 perimeter += get_others(map_, r, c)
-    return perimeter
+    r.. perimeter
 
 #print(island_size(whole))

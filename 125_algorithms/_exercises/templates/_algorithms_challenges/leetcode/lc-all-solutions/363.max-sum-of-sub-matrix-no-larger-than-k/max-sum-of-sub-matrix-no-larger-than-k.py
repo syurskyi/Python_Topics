@@ -1,4 +1,4 @@
-import bisect
+_______ bisect
 
 
 class Solution(object):
@@ -9,21 +9,21 @@ class Solution(object):
     :rtype: int
     """
     ans = float("-inf")
-    dp = [[0] * len(matrix[0]) for _ in range(len(matrix))]
-    for i in range(0, len(matrix)):
-      for j in range(0, len(matrix[0])):
+    dp = [[0] * l..(matrix[0]) ___ _ __ r..(l..(matrix))]
+    ___ i __ r..(0, l..(matrix)):
+      ___ j __ r..(0, l..(matrix[0])):
         dp[i][j] = dp[i][j - 1] + matrix[i][j]
-    for start in range(0, len(matrix[0])):
-      for end in range(start, len(matrix[0])):
+    ___ start __ r..(0, l..(matrix[0])):
+      ___ end __ r..(start, l..(matrix[0])):
         sums = [0]
         subsum = 0
-        for i in range(0, len(matrix)):
+        ___ i __ r..(0, l..(matrix)):
           __ start > 0:
             subsum += dp[i][end] - dp[i][start - 1]
-          else:
+          ____:
             subsum += dp[i][end]
           idx = bisect.bisect_left(sums, subsum - k)
-          __ idx < len(sums):
+          __ idx < l..(sums):
             ans = max(ans, subsum - sums[idx])
           bisect.insort(sums, subsum)
-    return ans
+    r.. ans

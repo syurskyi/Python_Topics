@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 ___ validate_license(key: str) -> bool:
@@ -6,7 +6,7 @@ ___ validate_license(key: str) -> bool:
        (e.g. PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4)
     """
     pattern = "PB-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}$"
-    return True __ re.match(pattern, key) else False
+    r.. True __ re.match(pattern, key) ____ False
 
 
 print(validate_license('PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4-A'))

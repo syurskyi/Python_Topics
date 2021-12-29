@@ -14,7 +14,7 @@ The number 2 can't find next greater number;
 The second 1's next greater number needs to search circularly, which is also 2.
 Note: The length of given array won't exceed 10000.
 """
-from bisect import bisect
+____ bisect _______ bisect
 
 
 class Solution:
@@ -29,20 +29,20 @@ class Solution:
         :rtype: List[int]
         """
         # initalize the stack
-        stk = []
-        for n in nums[::-1]:
+        stk    # list
+        ___ n __ nums[::-1]:
             while stk and stk[-1] <= n:
                 stk.pop()
-            stk.append(n)
+            stk.a..(n)
 
-        ret = []
-        for n in nums[::-1]:
+        ret    # list
+        ___ n __ nums[::-1]:
             while stk and stk[-1] <= n:
                 stk.pop()
-            ret.append(stk[-1] __ stk else -1)
-            stk.append(n)
+            ret.a..(stk[-1] __ stk ____ -1)
+            stk.a..(n)
 
-        return ret[::-1]
+        r.. ret[::-1]
 
     ___ nextGreaterElements_error(self, nums):
         """
@@ -54,17 +54,17 @@ class Solution:
         """
         A = nums + nums
         print(A)
-        ret = []
-        for e in nums:
+        ret    # list
+        ___ e __ nums:
             t = bisect(A, e)
-            __ t == len(A):
-                ret.append(-1)
-            else:
-                ret.append(A[t])
+            __ t __ l..(A):
+                ret.a..(-1)
+            ____:
+                ret.a..(A[t])
 
         print(ret)
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().nextGreaterElements([1,2,1]) == [2, -1, 2]
+__ __name__ __ "__main__":
+    ... Solution().nextGreaterElements([1,2,1]) __ [2, -1, 2]

@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 ___ get_duplicate_indices(words):
@@ -11,5 +11,5 @@ ___ get_duplicate_indices(words):
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
     counts = Counter(words)
-    dupes = [k for k, v in counts.items() __ v > 1]
-    return sorted([words.index(dupe) for dupe in dupes])
+    dupes = [k ___ k, v __ counts.items() __ v > 1]
+    r.. s..([words.index(dupe) ___ dupe __ dupes])

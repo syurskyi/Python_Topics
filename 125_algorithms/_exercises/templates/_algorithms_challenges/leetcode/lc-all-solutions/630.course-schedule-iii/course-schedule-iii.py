@@ -17,12 +17,12 @@ class Solution(object):
     :rtype: int
     """
     now = 0
-    heap = []
-    for t, d in sorted(courses, key=lambda x: x[1]):
+    heap    # list
+    ___ t, d __ s..(courses, key=l.... x: x[1]):
       __ now + t <= d:
         now += t
         heapq.heappush(heap, -t)
-      elif heap and -heap[0] > t:
+      ____ heap and -heap[0] > t:
         now += t + heapq.heappop(heap)
         heapq.heappush(heap, -t)
-    return len(heap)
+    r.. l..(heap)

@@ -27,29 +27,29 @@ Note:
 3 <= A.length <= 50000
 -10000 <= A[i] <= 10000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ canThreePartsEqualSum(self, A: List[int]) -> bool:
-        s = sum(A)
+        s = s..(A)
         __ s % 3 != 0:
-            return False
+            r.. False
 
         target = s // 3
         count = 0
         cur_sum = 0
-        for a in A:
+        ___ a __ A:
             cur_sum += a
-            __ cur_sum == target:
+            __ cur_sum __ target:
                 count += 1
                 cur_sum = 0
             # elif cur_sum > target:
             #     return False
             # can have negative number 
 
-        return count == 3 and cur_sum == 0
+        r.. count __ 3 and cur_sum __ 0
 
 
-__ __name__ == "__main__":
-    assert Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) == True
+__ __name__ __ "__main__":
+    ... Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) __ True

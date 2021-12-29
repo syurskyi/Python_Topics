@@ -1,16 +1,16 @@
-from math import floor
-from typing import Generator
-import json
+____ math _______ floor
+____ typing _______ Generator
+_______ json
 
 VALUES = "[0.1, 0.2, 0.3, 0.005, 0.005, 2.67]"
 
 
 ___ my_round(n):
     '''rounds to 2 decimal placces and rounds ties up no matter what'''
-    return floor(n*100 + .5) / 100
+    r.. floor(n*100 + .5) / 100
 
 
-___ calc_sums(values: str = VALUES) -> Generator[str, None, None]:
+___ calc_sums(values: str = VALUES) -> Generator[str, N.., N..]:
     """
     Process the above JSON-encoded string of values and calculate the sum of each adjacent pair.
 
@@ -22,5 +22,5 @@ ___ calc_sums(values: str = VALUES) -> Generator[str, None, None]:
     pairs = zip(nums, nums[1:])
     template = "The sum of {} and {}, rounded to two decimal places, is {:.2f}."
 
-    for a, b in pairs:
+    ___ a, b __ pairs:
         yield template.format(a, b, my_round(a + b))

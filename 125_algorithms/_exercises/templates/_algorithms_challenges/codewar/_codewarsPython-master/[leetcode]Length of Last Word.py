@@ -4,11 +4,11 @@ class Solution:
     ___ lengthOfLastWord(self, s):
         num = 0
         s = s.strip()
-        for c in s[::-1]:
-            __ c == ' ':
+        ___ c __ s[::-1]:
+            __ c __ ' ':
                 break
             num += 1
-        return num
+        r.. num
 
 test = Solution()
 print(test.lengthOfLastWord('H '))

@@ -41,15 +41,15 @@ class Solution:
 
         NOT_FOUND = -1
 
-        __ S is not None and T is '':
-            return 0
+        __ S __ n.. N.. and T __ '':
+            r.. 0
 
-        __ not S or not T:
-            return NOT_FOUND
+        __ n.. S o. n.. T:
+            r.. NOT_FOUND
 
-        m, n = len(S), len(T)
+        m, n = l..(S), l..(T)
         __ n > m:
-            return NOT_FOUND
+            r.. NOT_FOUND
 
         MOD = 1000000  # hashsize to mod
         MG = 31  # magic number
@@ -57,10 +57,10 @@ class Solution:
 
         p = 1  # `p == MG ** (n - 1)`
         tcode = 0  # the code of T
-        for i in range(n):
+        ___ i __ r..(n):
             tcode = (tcode * MG + ord(T[i]) - A) % MOD
 
-            __ i == 0:
+            __ i __ 0:
                 continue
             """
             continue here since p only need `n - 1` times
@@ -68,7 +68,7 @@ class Solution:
             p = (p * MG) % MOD
 
         _code = 0
-        for i in range(m):
+        ___ i __ r..(m):
             """
             kick out `S[i - n]`
             """
@@ -83,7 +83,7 @@ class Solution:
             """
             _code = (_code * MG + ord(S[i]) - A) % MOD
 
-            __ _code == tcode and S[i - n + 1:i + 1] == T:
-                return i - n + 1
+            __ _code __ tcode and S[i - n + 1:i + 1] __ T:
+                r.. i - n + 1
 
-        return NOT_FOUND
+        r.. NOT_FOUND

@@ -8,11 +8,11 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    tail = []
-    for num in nums:
+    tail    # list
+    ___ num __ nums:
       idx = bisect.bisect_left(tail, num)
-      __ idx == len(tail):
-        tail.append(num)
-      else:
+      __ idx __ l..(tail):
+        tail.a..(num)
+      ____:
         tail[idx] = num
-    return len(tail)
+    r.. l..(tail)

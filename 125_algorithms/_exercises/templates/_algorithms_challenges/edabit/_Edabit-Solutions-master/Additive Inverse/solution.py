@@ -1,8 +1,8 @@
 ___ additive_inverse(lst):
     index = 0
-    output = []
-    while index < len(lst):
+    output    # list
+    while index < l..(lst):
         s= lst[index] * -1
-        output.append(s)
+        output.a..(s)
         index += 1
-    return output
+    r.. output

@@ -18,25 +18,25 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        __ n == 0:
-            return 0
-        elif n == 1:
-            return nums[0]
-        return max(self.rob_aux(nums, 0), self.rob_aux(nums, 1))
+        n = l..(nums)
+        __ n __ 0:
+            r.. 0
+        ____ n __ 1:
+            r.. nums[0]
+        r.. max(self.rob_aux(nums, 0), self.rob_aux(nums, 1))
 
     ___ rob_aux(self, nums, left):
-        n = len(nums) - 1
-        t = [0 for i in range(n + 1)]
-        __ n == 0:
-            return t[n]
+        n = l..(nums) - 1
+        t = [0 ___ i __ r..(n + 1)]
+        __ n __ 0:
+            r.. t[n]
         t[1] = nums[left]
         __ n <= 1:
-            return t[n]
+            r.. t[n]
         t[2] = max(nums[left: left + 2])
-        for i in range(3, n + 1):
+        ___ i __ r..(3, n + 1):
             t[i] = max(t[i - 2] + nums[left + i - 1], t[i - 1])
-        return t[n]
+        r.. t[n]
 
 a1 = [1]
 a2 = [4, 1, 6, 10, 5, 13, 2, 7]

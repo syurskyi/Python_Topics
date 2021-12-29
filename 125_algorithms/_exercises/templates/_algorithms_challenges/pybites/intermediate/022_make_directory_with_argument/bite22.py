@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ make_html(element):
@@ -7,12 +7,12 @@ ___ make_html(element):
         @wraps(func)
         ___ wrapper(*args, **kwargs):
             '''Returns text wrapped in provided HTML tag'''
-            return f'<{element}>{func(*args, **kwargs)}</{element}>'
-        return wrapper
-    return decorate
+            r.. f'<{element}>{func(*args, **kwargs)}</{element}>'
+        r.. wrapper
+    r.. decorate
 
 
 @make_html('p')
 @make_html('strong')
 ___ get_text(text='I code with PyBites'):
-    return text
+    r.. text

@@ -14,7 +14,7 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -25,40 +25,40 @@ class Node(object):
         self.hi = hi
         self.cnt = cnt  # size of empty slots
 
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
     ___ __repr__(self):
-        return repr("[%d,%d)" % (self.lo, self.hi))
+        r.. repr("[%d,%d)" % (self.lo, self.hi))
 
 
 class SegmentTree(object):
     """empty space"""
 
     ___ __init__(self):
-        self.root = None
+        self.root = N..
 
     ___ build(self, lo, hi):
         """a node can have right ONLY IF has left"""
-        __ lo >= hi: return
-        __ lo == hi-1: return Node(lo, hi, 1)
+        __ lo >= hi: r..
+        __ lo __ hi-1: r.. Node(lo, hi, 1)
 
         root = Node(lo, hi, hi-lo)
         root.left = self.build(lo, (hi+lo)/2)
         root.right = self.build((lo+hi)/2, hi)
-        return root
+        r.. root
 
     ___ find_delete(self, root, sz):
         """
         :return: index
         """
         root.cnt -= 1
-        __ not root.left:
-            return root.lo
-        elif root.left.cnt >= sz:
-            return self.find_delete(root.left, sz)
-        else:
-            return self.find_delete(root.right,
+        __ n.. root.left:
+            r.. root.lo
+        ____ root.left.cnt >= sz:
+            r.. self.find_delete(root.left, sz)
+        ____:
+            r.. self.find_delete(root.right,
                                     sz-root.left.cnt)
 
 
@@ -71,28 +71,28 @@ class Solution(object):
 
         ___ cmp(a, b):
             __ a[0] != b[0]:
-                return a[0]-b[0]
-            else:
-                return a[1]-b[1]
+                r.. a[0]-b[0]
+            ____:
+                r.. a[1]-b[1]
 
         st = SegmentTree()
-        n = len(A)
+        n = l..(A)
         st.root = st.build(0, n)
         A.sort(cmp=cmp)
         ret = [0]*n
         ret_cnt = defaultdict(int)  # handle duplicate element
-        for a in A:
+        ___ a __ A:
             val, inv = a
             idx = st.find_delete(st.root, inv+1-ret_cnt[val])
             ret_cnt[val] += 1
             ret[idx] = a
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().reconstructQueue(
-        [[9, 0], [7, 0], [1, 9], [3, 0], [2, 7], [5, 3], [6, 0], [3, 4], [6, 2], [5, 2]]) == [[3, 0], [6, 0], [7, 0],
+__ __name__ __ "__main__":
+    ... Solution().reconstructQueue(
+        [[9, 0], [7, 0], [1, 9], [3, 0], [2, 7], [5, 3], [6, 0], [3, 4], [6, 2], [5, 2]]) __ [[3, 0], [6, 0], [7, 0],
                                                                                               [5, 2], [3, 4], [5, 3],
                                                                                               [6, 2], [2, 7], [9, 0],
                                                                                               [1, 9]]

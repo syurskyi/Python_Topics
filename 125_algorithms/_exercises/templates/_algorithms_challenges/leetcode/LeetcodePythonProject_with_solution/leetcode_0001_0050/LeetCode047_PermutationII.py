@@ -9,20 +9,20 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        __ not nums: return []
-        __ nums == []: return [[]]
-        res = []
-        self.dfs(sorted(nums), [], res)
-        return res
+        __ n.. nums: r.. []
+        __ nums __ []: r.. [[]]
+        res    # list
+        self.dfs(s..(nums), [], res)
+        r.. res
     
     ___ dfs(self, nums, curr, res):
-        __ nums == []:
-            res.append(list(curr))
-            return
-        for i, num in enumerate(nums):
-            __ i > 0 and nums[i] == nums[i-1]:
+        __ nums __ []:
+            res.a..(l..(curr))
+            r..
+        ___ i, num __ enumerate(nums):
+            __ i > 0 and nums[i] __ nums[i-1]:
                 continue
-            curr.append(num)
+            curr.a..(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()
     
@@ -31,11 +31,11 @@ class Solution(object):
             [1,1,2],
             [3,3,0,3],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.permuteUnique(nums)
             print('result: %s' % result)
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

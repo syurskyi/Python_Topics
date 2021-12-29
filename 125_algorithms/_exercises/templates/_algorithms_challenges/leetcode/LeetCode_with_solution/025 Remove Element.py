@@ -18,14 +18,14 @@ class Solution:
 
         open_ptr = 0
         back_ptr = -1  # Python style backward
-        while len(A)+back_ptr>=open_ptr:
-            __ A[open_ptr]==elem:
+        while l..(A)+back_ptr>=open_ptr:
+            __ A[open_ptr]__elem:
                 A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
                 back_ptr -= 1
-            else:
+            ____:
                 open_ptr += 1
 
-        return len(A)+back_ptr+1  # length is index+1
+        r.. l..(A)+back_ptr+1  # length is index+1
 
     ___ removeElement(self, A, elem):
         """
@@ -38,19 +38,19 @@ class Solution:
         :return: "shrunk" list
         """
         open_ptr = 0
-        end_ptr = len(A)
+        end_ptr = l..(A)
         while open_ptr<end_ptr:
-            __ A[open_ptr]==elem:
+            __ A[open_ptr]__elem:
                 end_ptr -= 1
                 A[open_ptr], A[end_ptr] = A[end_ptr], A[open_ptr]
-            else:
+            ____:
                 open_ptr += 1
 
-        return end_ptr
+        r.. end_ptr
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     A = [1, 3, 4, 2, 5, 4]
     elem = 4
     solution = Solution()
-    assert solution.removeElement(A, elem)==solution.removeElement_negative_index(A, elem)
+    ... solution.removeElement(A, elem)__solution.removeElement_negative_index(A, elem)

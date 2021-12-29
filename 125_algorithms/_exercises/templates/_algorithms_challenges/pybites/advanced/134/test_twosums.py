@@ -1,7 +1,7 @@
-import pytest
-from random import sample, seed
+_______ pytest
+____ random _______ sample, seed
 
-from twosums import two_sums
+____ twosums _______ two_sums
 
 NUMBERS = [
     2202, 9326, 1034, 4180, 1932, 8118, 7365, 7738, 6220, 3440, 1538, 7994, 465, 
@@ -16,7 +16,7 @@ ___ test_two_sums():
     expected = (2, 6)
     target = 30
     result = two_sums(numbers, target)
-    assert result == expected
+    ... result __ expected
 
 
 @pytest.mark.parametrize("target, expected", [
@@ -25,26 +25,26 @@ ___ test_two_sums():
     (11261, (0, 36)),
     (11350, (37, 41)),
     (5224, (31, 42)),
-    (2934785974, None),
+    (2934785974, N..),
 ])
 ___ test_two_sums_param(target, expected):
     result = two_sums(NUMBERS, target)
-    assert result == expected
+    ... result __ expected
 
 
 ___ test_two_sums_random():
     seed(1)
-    numbers = sample(range(1, 1_000_000), 1_000)
+    numbers = sample(r..(1, 1_000_000), 1_000)
     picked = sample(numbers, 2)
     index1 = numbers.index(picked[0])
     index2 = numbers.index(picked[1])
-    ordered = sorted([index1, index2])
+    ordered = s..([index1, index2])
     expected = ordered[0], ordered[1]
-    target = sum(picked)
+    target = s..(picked)
     result = two_sums(numbers, target)
-    assert result == expected
+    ... result __ expected
 
 
 ___ test_two_sums_none():
     result = two_sums(NUMBERS, 7000)
-    assert result is None
+    ... result __ N..

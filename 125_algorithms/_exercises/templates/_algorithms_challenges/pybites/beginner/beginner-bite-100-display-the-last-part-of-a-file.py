@@ -22,7 +22,7 @@ Become a PyBites ninja!
 (note: newlines are stripped off)
 
 '''
-import string
+_______ string
 ___ tail(filepath, n):
     """Similate Unix' tail -n, read in filepath, parse it into a list,
        strip newlines and return a list of the last n lines"""
@@ -30,11 +30,11 @@ ___ tail(filepath, n):
         fo = open(filepath, 'r')
     except:
         print("problem opening file")
-    contents = []
-    for line in fo.readlines():
-        contents.append(line.strip())
+    contents    # list
+    ___ line __ fo.readlines():
+        contents.a..(line.strip())
     fo.close()
-    return contents[-n:]
+    r.. contents[-n:]
 
 
 

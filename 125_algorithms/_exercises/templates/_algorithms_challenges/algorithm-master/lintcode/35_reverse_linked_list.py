@@ -35,7 +35,7 @@ class Solution:
             pre: 3->2->1
             nxt: None
         """
-        pre = nxt = None
+        pre = nxt = N..
 
         while head:
             nxt = head.next  # save the remaining children
@@ -43,4 +43,4 @@ class Solution:
             pre = head       # save the new head
             head = nxt       # pointer the old head
 
-        return pre
+        r.. pre

@@ -1,7 +1,7 @@
-from datetime import date
-import unittest
+____ datetime _______ date
+_______ unittest
 
-from meetup import meetup_day
+____ meetup _______ meetup_day
 
 
 class MeetupTest(unittest.TestCase):
@@ -38,5 +38,5 @@ class MeetupTest(unittest.TestCase):
                          meetup_day(2012, 2, 'Wednesday', 'last'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

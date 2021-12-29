@@ -1,5 +1,5 @@
-from collections import Counter
-from functools import partial
+____ collections _______ Counter
+____ functools _______ partial
 
 YACHT = 0
 ONES = 1
@@ -16,30 +16,30 @@ CHOICE = 11
 
 
 ___ ns(number, dice):
-    return sum(n for n in dice __ n == number)
+    r.. s..(n ___ n __ dice __ n __ number)
 
 
 ___ full_house(dice):
     counter = Counter(dice)
-    return sum(dice) __ set(counter.values()) == {3, 2} else 0
+    r.. s..(dice) __ set(counter.values()) __ {3, 2} ____ 0
 
 
 ___ four_of_a_kind(dice):
     counter = Counter(dice)
     number, count = counter.most_common()[0]
-    return 4 * number __ count >= 4 else 0
+    r.. 4 * number __ count >= 4 ____ 0
 
 
 ___ little_straight(dice):
-    return 30 __ set(dice) == {1, 2, 3, 4, 5} else 0
+    r.. 30 __ set(dice) __ {1, 2, 3, 4, 5} ____ 0
 
 
 ___ big_straight(dice):
-    return 30 __ set(dice) == {2, 3, 4, 5, 6} else 0
+    r.. 30 __ set(dice) __ {2, 3, 4, 5, 6} ____ 0
 
 
 ___ yacht(dice):
-    return 50 __ len(set(dice)) == 1 else 0
+    r.. 50 __ l..(set(dice)) __ 1 ____ 0
 
 
 functions = [
@@ -54,12 +54,12 @@ functions = [
     four_of_a_kind,
     little_straight,
     big_straight,
-    sum,
+    s..,
 ]
 
 
 ___ score(dice, category):
     try:
-        return functions[category](dice)
+        r.. functions[category](dice)
     except IndexError:
         raise ValueError("no such category")

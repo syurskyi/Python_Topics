@@ -13,16 +13,16 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         oldColor = image[sr][sc]
-        __ oldColor == newColor:
-            return image
+        __ oldColor __ newColor:
+            r.. image
         self.helper(image, sr, sc, oldColor, newColor)
-        return image
+        r.. image
     
     ___ helper(self, image, i, j, oldColor, newColor):
-        m, n = len(image), len(image[0])
+        m, n = l..(image), l..(image[0])
         image[i][j] = newColor
-        for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1):
-            __ 0 <= x < m and 0 <= y < n and image[x][y] == oldColor:
+        ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
+            __ 0 <= x < m and 0 <= y < n and image[x][y] __ oldColor:
                 self.helper(image, x, y, oldColor, newColor)
     
     ___ test(self):
@@ -38,10 +38,10 @@ class Solution(object):
                 2
             ],
         ]
-        for image, sr, sc, newColor in testCases:
+        ___ image, sr, sc, newColor __ testCases:
             result = self.floodFill(image, sr, sc, newColor)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

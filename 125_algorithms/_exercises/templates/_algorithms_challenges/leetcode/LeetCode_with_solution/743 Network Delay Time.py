@@ -16,9 +16,9 @@ K will be in the range [1, N].
 The length of times will be in the range [1, 6000].
 All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 0 <= w <= 100.
 """
-from typing import List
-from collections import defaultdict
-import heapq
+____ typing _______ List
+____ collections _______ defaultdict
+_______ heapq
 
 
 class Solution:
@@ -26,26 +26,26 @@ class Solution:
         """
         Dijkstra's algorithm
         """
-        G = defaultdict(dict)
-        reach_time = [float('inf') for _ in range(N + 1)]
-        for u, v, w in times:
+        G = defaultdict(d..)
+        reach_time = [float('inf') ___ _ __ r..(N + 1)]
+        ___ u, v, w __ times:
             G[u][v] = w
 
         h = [(0, K)]
         reach_time[K] = 0
         while h:
             t, s = heapq.heappop(h)
-            __ s in G:
-                for d, w in G[s].items():
+            __ s __ G:
+                ___ d, w __ G[s].items():
                     __ t + w < reach_time[d]:
                         reach_time[d] = t + w
                         heapq.heappush(h, (t + w, d))
 
         ret = max(reach_time[1:])  # notice reach_time[0] is dummy
-        __ ret == float('inf'):
-            return -1
-        return ret
+        __ ret __ float('inf'):
+            r.. -1
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2) == 2
+__ __name__ __ "__main__":
+    ... Solution().networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2) __ 2

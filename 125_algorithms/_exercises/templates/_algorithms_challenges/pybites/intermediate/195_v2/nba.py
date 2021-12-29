@@ -1,19 +1,19 @@
-from collections import namedtuple
-import csv
-import os
-from pathlib import Path
-import pandas as pd
-import sqlite3
-import random
-import string
+____ collections _______ namedtuple
+_______ csv
+_______ os
+____ pathlib _______ Path
+_______ pandas as pd
+_______ sqlite3
+_______ random
+_______ string
 
-import requests
+_______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 salt = ''.join(
-    random.choice(string.ascii_lowercase) for i in range(20)
+    random.choice(string.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 
@@ -30,9 +30,9 @@ ___ import_data():
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
-    players = []
-    for row in reader:
-        players.append(Player(name=row['Player'],
+    players    # list
+    ___ row __ reader:
+        players.a..(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],
                               team=row['Team'],
@@ -72,7 +72,7 @@ ___ player_with_max_points_per_game():
 
 
 
-    return nba.nlargest(1,'avg_points').squeeze()['name']
+    r.. nba.nlargest(1,'avg_points').squeeze()['name']
 
     
 
@@ -82,18 +82,18 @@ ___ player_with_max_points_per_game():
 
 ___ number_of_players_from_duke():
     """Return the number of players with college == Duke University"""
-    return (nba.college == 'Duke University').sum()
+    r.. (nba.college __ 'Duke University').s..()
 
 
 ___ avg_years_active_players_stanford():
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
 
-    return nba.loc[nba.college == 'Stanford University','active'].astype('int').mean()
+    r.. nba.loc[nba.college __ 'Stanford University','active'].astype('int').mean()
 
 
 ___ year_with_most_drafts():
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
 
-    return int(nba.groupby('year').size().idxmax())
+    r.. int(nba.groupby('year').size().idxmax())
 

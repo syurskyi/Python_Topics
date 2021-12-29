@@ -1,7 +1,7 @@
-import pytz
-from dateutil import tz
+_______ pytz
+____ dateutil _______ tz
 
-MEETING_HOURS = range(6, 23)  # meet from 6 - 22 max
+MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
 TIMEZONES = set(pytz.all_timezones)
 
 
@@ -10,16 +10,16 @@ ___ within_schedule(utc, *timezones):
        they are all within schedule (MEETING_HOURS)"""
     utc = utc.replace(tzinfo=tz.UTC)
 
-    for timezone in timezones:
+    ___ timezone __ timezones:
         timezone = tz.gettz(timezone)
-        __ not timezone:
+        __ n.. timezone:
             raise ValueError
         date = utc.astimezone(timezone)
 
-        __ not date.hour in MEETING_HOURS:
-            return False
+        __ n.. date.hour __ MEETING_HOURS:
+            r.. False
 
-    return True
+    r.. True
 
 
 

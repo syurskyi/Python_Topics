@@ -1,13 +1,13 @@
 
 class Employee:
 
-    ___ __init__(self, fname, lname, score) -> None:
-        self.first = fname.title()
-        self.last = lname.title()
+    ___ __init__(self, fname, lname, score) -> N..
+        self.first = fname.t..
+        self.last = lname.t..
         self.score = score
 
     ___ full_name(self):
-        return f'{self.first} {self.last}'
+        r.. f'{self.first} {self.last}'
 
 
 khoo = Employee('sc', 'khoo', 250)

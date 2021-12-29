@@ -6,7 +6,7 @@ Created on Mar 4, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -24,6 +24,6 @@ class Solution(object):
                 result = root.val
             __ root.val > target:
                 root = root.left
-            else:
+            ____:
                 root = root.right
-        return result
+        r.. result

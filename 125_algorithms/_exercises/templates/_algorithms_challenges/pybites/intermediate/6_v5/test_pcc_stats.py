@@ -1,6 +1,6 @@
-from Previous.pcc_stats import diehard_pybites, Stats
+____ Previous.pcc_stats _______ diehard_pybites, Stats
 
 
 ___ test_diehard_pybites():
     res = diehard_pybites()
-    assert res == Stats(user='clamytoe', challenge=('01', 7))
+    ... res __ Stats(user='clamytoe', challenge=('01', 7))

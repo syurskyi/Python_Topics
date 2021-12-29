@@ -15,13 +15,13 @@ solving the Bite) to discuss your solution with fellow Pythonistas ... Have fun!
 ___ count_indents_v1(text):
     """Takes a string and counts leading white spaces, return int count"""
     n = 0
-    for c in text:
-       __ c is ' ':
+    ___ c __ text:
+       __ c __ ' ':
            n += 1
-       else:
+       ____:
            break
 
-    return n
+    r.. n
 
 ___ count_indents_v2(string text):
 

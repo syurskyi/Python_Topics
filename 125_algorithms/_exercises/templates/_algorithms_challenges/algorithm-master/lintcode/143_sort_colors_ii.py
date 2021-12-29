@@ -9,18 +9,18 @@ class Solution:
     @return: nothing
     """
     ___ sortColors2(self, colors, k):
-        __ not colors or not k:
-            return
-        self.rainbow_sort(colors, 0, len(colors) - 1, 1, k)
+        __ n.. colors o. n.. k:
+            r..
+        self.rainbow_sort(colors, 0, l..(colors) - 1, 1, k)
 
     ___ rainbow_sort(self, colors, start, end, color_from, color_to):
         """
         like quick sort
         """
         __ color_from >= color_to:
-            return
+            r..
         __ start >= end:
-            return
+            r..
 
         left, right = start, end
         color_mid = (color_from + color_to) // 2
@@ -58,13 +58,13 @@ class Solution:
            pick min/max color to the left/right scope
         """
         count = 0
-        n = len(colors)
+        n = l..(colors)
         left, right = 0, n - 1
         i = _min = _max = 0
 
         while count < k:
             _min = _max = colors[left]
-            for i in range(left + 1, right + 1):
+            ___ i __ r..(left + 1, right + 1):
                 __ colors[i] < _min:
                     _min = colors[i]
                 __ colors[i] > _max:
@@ -72,15 +72,15 @@ class Solution:
 
             i = left
             while i <= right:
-                __ colors[i] == _min:
+                __ colors[i] __ _min:
                     colors[left], colors[i] = colors[i], colors[left]
                     left += 1
                     i += 1
-                elif _min < colors[i] < _max:
+                ____ _min < colors[i] < _max:
                     # leave it to
                     # the next iteration of `while count < k` to sort
                     i += 1
-                else:
+                ____:
                     colors[i], colors[right] = colors[right], colors[i]
                     right -= 1
 

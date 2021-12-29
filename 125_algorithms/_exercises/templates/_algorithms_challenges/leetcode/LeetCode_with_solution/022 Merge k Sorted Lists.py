@@ -2,12 +2,12 @@
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 """
 __author__ = 'Danyang'
-import heapq
+_______ heapq
 # Definition for singly-linked list.
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ mergeKLists_TLE1(self, lists):
@@ -26,11 +26,11 @@ class Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(lambda x: x is not None, lists)
-        __ not lists:
-            return
+        lists = filter(l.... x: x __ n.. N.., lists)
+        __ n.. lists:
+            r..
 
-        length = len(lists)
+        length = l..(lists)
         factor = 2
         while length>0:
             i = 0
@@ -44,7 +44,7 @@ class Solution:
             length /= 2
             factor *= 2
 
-        return lists[0]
+        r.. lists[0]
 
     ___ mergeKLists_TLE2(self, lists):
         """
@@ -52,14 +52,14 @@ class Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(lambda x: x is not None, lists)
-        __ not lists:
-            return
+        lists = filter(l.... x: x __ n.. N.., lists)
+        __ n.. lists:
+            r..
 
         result = lists[0]
-        for i in xrange(1, len(lists)):
+        ___ i __ xrange(1, l..(lists)):
             result = self.mergeTwoLists(result, lists[i])
-        return result
+        r.. result
 
 
 
@@ -91,7 +91,7 @@ class Solution:
         __ the_other:
             pre.next = the_other  # appending
 
-        return dummy.next
+        r.. dummy.next
 
     ___ mergeKLists(self, lists):
         """
@@ -108,8 +108,8 @@ class Solution:
         :param lists:
         :return:
         """
-        heap = []
-        for head_node in lists:
+        heap    # list
+        ___ head_node __ lists:
             __ head_node:
                 heapq.heappush(heap, (head_node.val, head_node))
 
@@ -122,8 +122,8 @@ class Solution:
             cur = cur.next
             __ smallest_node.next:
                 heapq.heappush(heap, (smallest_node.next.val, smallest_node.next))
-        return dummy.next
+        r.. dummy.next
 
-__ __name__=="__main__":
-    assert  Solution().mergeKLists([None, None])==None
-    assert Solution().mergeKLists([ListNode(1), ListNode(0)]).val==0
+__ __name____"__main__":
+    ...  Solution().mergeKLists([N.., N..])__None
+    ... Solution().mergeKLists([ListNode(1), ListNode(0)]).val__0

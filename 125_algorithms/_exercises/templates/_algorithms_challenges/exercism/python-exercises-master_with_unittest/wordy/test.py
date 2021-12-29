@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from wordy import calculate
+____ wordy _______ calculate
 
 
 class WordyTest(unittest.TestCase):
@@ -62,5 +62,5 @@ class WordyTest(unittest.TestCase):
         self.assertRaises(ValueError, calculate, "Which is greater, 3 or 2?")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

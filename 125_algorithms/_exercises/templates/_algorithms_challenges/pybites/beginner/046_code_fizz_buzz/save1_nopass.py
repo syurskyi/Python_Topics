@@ -1,7 +1,7 @@
 ___ fizzbuzz(num):
-    __ num % 3 == 0:
-        return 'Fizz'
-    elif num % 5 == 0:
-        return 'Buzz'
-    else:
-        return num
+    __ num % 3 __ 0:
+        r.. 'Fizz'
+    ____ num % 5 __ 0:
+        r.. 'Buzz'
+    ____:
+        r.. num

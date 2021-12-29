@@ -4,25 +4,25 @@ class Solution:
         :type s: str
         :rtype: str
         """
-        __ not s:
-            return ''
+        __ n.. s:
+            r.. ''
 
         times = 0
-        stack = []
+        stack    # list
 
-        for c in s:
+        ___ c __ s:
             __ c.isdigit():
                 times = times * 10 + int(c)
-            elif c == '[':
-                stack.append(times)
+            ____ c __ '[':
+                stack.a..(times)
                 times = 0
-            elif c == ']':
-                part = []
-                while stack and isinstance(stack[-1], str):
-                    part.append(stack.pop())
-                cnt = int(stack.pop()) __ stack else 1
-                stack.append(cnt * ''.join(reversed(part)))
-            else:
-                stack.append(c)
+            ____ c __ ']':
+                part    # list
+                while stack and isi..(stack[-1], str):
+                    part.a..(stack.pop())
+                cnt = int(stack.pop()) __ stack ____ 1
+                stack.a..(cnt * ''.join(reversed(part)))
+            ____:
+                stack.a..(c)
 
-        return ''.join(stack)
+        r.. ''.join(stack)

@@ -9,11 +9,11 @@ class Solution:
     # @param head, a RandomListNode
     # @return a RandomListNode
     ___ copyRandomList(self, head):
-        __ head is None:
-            return None
+        __ head __ N..
+            r.. N..
         h = head
         p = h
-        while p is not None:
+        while p __ n.. N..
             next_node = p.next
             new_node = RandomListNode(p.label)
             # Insert new node to the original list
@@ -21,27 +21,27 @@ class Solution:
             new_node.next = next_node
             p = next_node
         p = h
-        while p is not None:
+        while p __ n.. N..
             next_node = p.next.next
             new_node = p.next
-            __ p.random is not None:
+            __ p.random __ n.. N..
                 new_node.random = p.random.next
             p = next_node
         # Split the list
-        res = None
-        end = None
+        res = N..
+        end = N..
         p = h
-        while p is not None:
+        while p __ n.. N..
             next_node = p.next.next
             new_node = p.next
             # Add to new list
-            __ res is None:
+            __ res __ N..
                 res = new_node
                 end = new_node
-            else:
+            ____:
                 end.next = new_node
                 end = end.next
             # Delete new node from old list
             p.next = next_node
             p = next_node
-        return res
+        r.. res

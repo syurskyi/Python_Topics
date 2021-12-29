@@ -10,36 +10,36 @@ class Solution(object):
         :type path: str
         :rtype: str
         """
-        __ not path: return path
+        __ n.. path: r.. path
         result = ''
         __ path.endswith('/'): path = path[:-1]
         __ path.startswith('/'): path = path[1:]
         l = path.split('/')
         cont = 0
-        for i in range(len(l)-1, -1, -1):
-            __ l[i] == '.' or l[i] == '':
+        ___ i __ r..(l..(l)-1, -1, -1):
+            __ l[i] __ '.' o. l[i] __ '':
                 continue
-            __ l[i] == '..':
+            __ l[i] __ '..':
                 cont += 1
                 continue
             __ cont > 0:
                 cont -= 1
-            else:
+            ____:
                 result = '/' + l[i] + result
-        __ result == '':
+        __ result __ '':
             result = '/'
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
             '/home/',
             '/a/./b/../../c/',
         ]
-        for path in testCases:
+        ___ path __ testCases:
             print('path: %s' % path)
             result = self.simplifyPath(path)
             print('result: %s' % result)
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

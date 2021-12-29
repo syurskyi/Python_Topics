@@ -4,26 +4,26 @@ class Solution(object):
     :type words: List[str]
     :rtype: List[str]
     """
-    ans = []
+    ans    # list
     d = {}
     row1 = "qwertyuiop"
     row2 = "asdfghjkl"
     row3 = "zxcvbnm"
-    for r in row1:
+    ___ r __ row1:
       d[r] = 1.0
-    for r in row2:
+    ___ r __ row2:
       d[r] = 2.0
-    for r in row3:
+    ___ r __ row3:
       d[r] = 3.0
 
-    for word in words:
+    ___ word __ words:
       same = True
       pre = d[word[0].lower()]
-      for c in word:
+      ___ c __ word:
         __ pre != d[c.lower()]:
           same = False
           break
         pre = d[c.lower()]
       __ same:
-        ans.append(word)
-    return ans
+        ans.a..(word)
+    r.. ans

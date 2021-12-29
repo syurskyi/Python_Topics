@@ -2,7 +2,7 @@ class IsbnVerifier(object):
 
     VALID_SEPERATOR = "-"
     VALID_CHECK_CHARACTER = "X"
-    VALID_DIGITS = list(map(str, list(range(0, 10))))
+    VALID_DIGITS = l..(map(str, l..(r..(0, 10))))
     VALID_CHARACTERS = (set(VALID_DIGITS) |
                         set([VALID_SEPERATOR, VALID_CHECK_CHARACTER]))
     VALID_LENGTH = 10
@@ -10,58 +10,58 @@ class IsbnVerifier(object):
     @classmethod
     ___ is_valid(cls, string):
         __ cls.invalid(string):
-            return False
-        return cls.verify(string)
+            r.. False
+        r.. cls.verify(string)
 
     @classmethod
     ___ verify(cls, string):
         sum_so_far = 0
-        for i, c in enumerate(cls.remove_seperator(string)):
+        ___ i, c __ enumerate(cls.remove_seperator(string)):
             sum_so_far += cls.convert_char_to_int(c) * (10 - i)
-        return sum_so_far % 11 == 0
+        r.. sum_so_far % 11 __ 0
 
     @classmethod
     ___ invalid(cls, string):
-        return (cls.invalid_character(string) or
-                cls.invalid_length(string) or
+        r.. (cls.invalid_character(string) o.
+                cls.invalid_length(string) o.
                 cls.invalid_X_other_than_check_digit(string))
 
     @classmethod
     ___ invalid_character(cls, string):
-        return any(char not in cls.VALID_CHARACTERS for char in string)
+        r.. any(char n.. __ cls.VALID_CHARACTERS ___ char __ string)
 
     @classmethod
     ___ invalid_length(cls, string):
-        return (len(cls.remove_invalid_characters_and_slashes(string)) !=
+        r.. (l..(cls.remove_invalid_characters_and_slashes(string)) !=
                 cls.VALID_LENGTH)
 
     @classmethod
     ___ invalid_X_other_than_check_digit(cls, string):
-        return (cls.VALID_CHECK_CHARACTER in string and
-                not string.endswith(cls.VALID_CHECK_CHARACTER))
+        r.. (cls.VALID_CHECK_CHARACTER __ string and
+                n.. string.endswith(cls.VALID_CHECK_CHARACTER))
 
     @classmethod
     ___ remove_invalid_characters_and_slashes(cls, string):
-        return cls.remove_seperator(cls.remove_invalid_characters(string))
+        r.. cls.remove_seperator(cls.remove_invalid_characters(string))
 
     @classmethod
     ___ remove_invalid_characters(cls, string):
-        return "".join(
-            [char for char in string __ char in cls.VALID_CHARACTERS])
+        r.. "".join(
+            [char ___ char __ string __ char __ cls.VALID_CHARACTERS])
 
     @classmethod
     ___ convert_char_to_int(cls, char):
-        return int(cls.convert_check_character_to_ten(char))
+        r.. int(cls.convert_check_character_to_ten(char))
 
     @classmethod
     ___ convert_check_character_to_ten(cls, char):
-        return 10 __ char == cls.VALID_CHECK_CHARACTER else char
+        r.. 10 __ char __ cls.VALID_CHECK_CHARACTER ____ char
 
     @classmethod
     ___ remove_seperator(cls, string):
-        return "".join(
-            [char for char in string __ char != cls.VALID_SEPERATOR])
+        r.. "".join(
+            [char ___ char __ string __ char != cls.VALID_SEPERATOR])
 
 
 ___ verify(isbn):
-    return IsbnVerifier.is_valid(isbn)
+    r.. IsbnVerifier.is_valid(isbn)

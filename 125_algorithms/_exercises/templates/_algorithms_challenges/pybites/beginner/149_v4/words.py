@@ -1,13 +1,13 @@
-import string
+_______ string
 
 
 ___ _check(key):
-    __ key[0] not in string.digits:
+    __ key[0] n.. __ string.digits:
         key = f'\1{key}'
-    return key.lower()
+    r.. key.lower()
 
 
 ___ sort_words_case_insensitively(words):
     """Sort the provided word list ignoring case,
        one twist: numbers have to appear after letters!"""
-    return sorted(words, key=_check)
+    r.. s..(words, key=_check)

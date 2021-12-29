@@ -19,30 +19,30 @@ class Solution:
         :type b: TreeNode
         :rtype: TreeNode
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         lca, has_a, has_b = self.divide_conquer(root, a, b)
 
-        return lca __ has_a and has_b else None
+        r.. lca __ has_a and has_b ____ N..
 
     ___ divide_conquer(self, node, a, b):
-        __ not node:
-            return None, False, False
+        __ n.. node:
+            r.. N.., False, False
 
         left, a_in_left, b_in_left = self.divide_conquer(node.left, a, b)
         right, a_in_right, b_in_right = self.divide_conquer(node.right, a, b)
 
-        has_a = a_in_left or a_in_right or node is a
-        has_b = b_in_left or b_in_right or node is b
+        has_a = a_in_left o. a_in_right o. node __ a
+        has_b = b_in_left o. b_in_right o. node __ b
 
-        __ node is a or node is b:
-            return node, has_a, has_b
+        __ node __ a o. node __ b:
+            r.. node, has_a, has_b
         __ left and right:
-            return node, has_a, has_b
+            r.. node, has_a, has_b
         __ left:
-            return left, has_a, has_b
+            r.. left, has_a, has_b
         __ right:
-            return right, has_a, has_b
+            r.. right, has_a, has_b
 
-        return None, has_a, has_b
+        r.. N.., has_a, has_b

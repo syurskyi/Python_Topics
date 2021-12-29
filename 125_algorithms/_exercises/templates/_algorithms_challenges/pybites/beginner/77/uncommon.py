@@ -3,7 +3,7 @@ ___ uncommon_cities(my_cities, other_cities):
        cities between the two"""
     #print(my_cities + other_cities)
     #print(set(my_cities) ^ set(other_cities))
-    return len(set(my_cities) ^ set(other_cities))
+    r.. l..(set(my_cities) ^ set(other_cities))
 
 
 

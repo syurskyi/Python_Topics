@@ -1,5 +1,5 @@
-names = 'Julian Bob PyBites Dante Martin Rodolfo'.split()
-countries = 'Australia Spain Global Argentina USA Mexico'.split()
+names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
+countries = 'Australia Spain Global Argentina USA Mexico'.s..
 
 
 ___ enumerate_names_countries():
@@ -13,7 +13,7 @@ ___ enumerate_names_countries():
 
 
 
-    for i,(name,country) in enumerate(zip(names,countries)):
+    ___ i,(name,country) __ enumerate(zip(names,countries)):
 
         print(f"{i +1}. {name:<11}{country}")
 

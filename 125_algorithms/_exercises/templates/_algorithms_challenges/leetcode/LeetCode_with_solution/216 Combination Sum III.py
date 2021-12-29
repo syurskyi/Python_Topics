@@ -33,27 +33,27 @@ class Solution:
         :type n: int
         :rtype: list[list[int]]
         """
-        ret = []
+        ret    # list
         self.dfs(k, n, [], ret)
-        return ret
+        r.. ret
 
     ___ dfs(self, remain_k, remain_n, cur, ret):
-        __ remain_k == 0 and remain_n == 0:
-            ret.append(list(cur))
-            return
+        __ remain_k __ 0 and remain_n __ 0:
+            ret.a..(l..(cur))
+            r..
 
         # check max and min reach
-        __ remain_k * 9 < remain_n or remain_k * 1 > remain_n:
-            return
+        __ remain_k * 9 < remain_n o. remain_k * 1 > remain_n:
+            r..
 
         start = 1
         __ cur:
             start = cur[-1] + 1  # unique
-        for i in xrange(start, 10):
-            cur.append(i)
+        ___ i __ xrange(start, 10):
+            cur.a..(i)
             self.dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.pop()
 
 
-__ __name__ == "__main__":
-    assert Solution().combinationSum3(3, 9) == [[1, 2, 6], [1, 3, 5], [2, 3, 4]]
+__ __name__ __ "__main__":
+    ... Solution().combinationSum3(3, 9) __ [[1, 2, 6], [1, 3, 5], [2, 3, 4]]

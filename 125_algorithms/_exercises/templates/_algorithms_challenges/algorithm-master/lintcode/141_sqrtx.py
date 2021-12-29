@@ -4,8 +4,8 @@ class Solution:
         :type x: int
         :rtype: int
         """
-        __ not x or x <= 1:
-            return x
+        __ n.. x o. x <= 1:
+            r.. x
 
         left, right = 0, x
 
@@ -13,12 +13,12 @@ class Solution:
             mid = (left + right) // 2
             square = mid * mid
 
-            __ square == x:
-                return mid
+            __ square __ x:
+                r.. mid
 
             __ square < x:
                 left = mid
-            else:
+            ____:
                 right = mid
 
-        return left
+        r.. left

@@ -5,16 +5,16 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    __ len(nums) > 2:
-      diff = [nums[i] - nums[i - 1] for i in range(1, len(nums))]
+    __ l..(nums) > 2:
+      diff = [nums[i] - nums[i - 1] ___ i __ r..(1, l..(nums))]
       count = 1
       pre = diff[0]
-      for i in range(1, len(diff)):
-        __ diff[i] == pre:
+      ___ i __ r..(1, l..(diff)):
+        __ diff[i] __ pre:
           count += 1
-        else:
+        ____:
           ans += count * (count - 1) / 2
           count = 1
         pre = diff[i]
       ans += count * (count - 1) / 2
-    return ans
+    r.. ans

@@ -12,10 +12,10 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 class Solution:
     ___ reorderList_TLE(self, head):
@@ -30,8 +30,8 @@ class Solution:
         while(pre_cur and pre_cur.next):
             # find last
             pre_last = pre_cur.next
-            __ pre_last.next == None:
-                return
+            __ pre_last.next __ N..
+                r..
             while(pre_last.next.next):
                 pre_last = pre_last.next
 
@@ -44,10 +44,10 @@ class Solution:
                 cur.next = last
                 last.next = cur_next
                 # fix last
-                pre_last.next = None
+                pre_last.next = N..
 
-            __ cur_next and cur_next.next==last:
-                cur_next.next = None
+            __ cur_next and cur_next.next__last:
+                cur_next.next = N..
 
 
             pre_cur = pre_cur.next.next
@@ -58,29 +58,29 @@ class Solution:
 
         relies on additional data structure 
         """
-        lst = []
+        lst    # list
         cur = head
         while(cur):
-            lst.append(cur)
+            lst.a..(cur)
             cur = cur.next
 
-        lst1 = lst[:len(lst)/2]
-        lst2 = lst[len(lst)/2:]
+        lst1 = lst[:l..(lst)/2]
+        lst2 = lst[l..(lst)/2:]
         lst2.reverse()
 
-        lst = []
-        for i in range(len(lst2)):
+        lst    # list
+        ___ i __ r..(l..(lst2)):
             try:
-                lst.append(lst1[i])
+                lst.a..(lst1[i])
             except IndexError:
                 pass
-            lst.append(lst2[i])
+            lst.a..(lst2[i])
 
-        for i in range(len(lst)):
+        ___ i __ r..(l..(lst)):
             try:
                 lst[i].next = lst[i+1]
             except IndexError:
-                lst[i].next = None
+                lst[i].next = N..
 
     ___ reorderList(self, head):
         """
@@ -91,8 +91,8 @@ class Solution:
         :param head: ListNode
         :return: nothing
         """
-        __ not head:
-            return
+        __ n.. head:
+            r..
         dummy = ListNode(0)
         dummy.next = head
 
@@ -111,7 +111,7 @@ class Solution:
         cur = pre.next
         while pre and cur:  # problem reduction
             cur.next, pre, cur = pre, cur, cur.next
-        mid.next = None
+        mid.next = N..
 
         # merge
         last = pre
@@ -126,10 +126,10 @@ class Solution:
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     length = 2
-    lst = [ListNode(i+1) for i in range(length)]
-    for i in range(length-1):
+    lst = [ListNode(i+1) ___ i __ r..(length)]
+    ___ i __ r..(length-1):
         lst[i].next = lst[i+1]
 
     Solution().reorderList(lst[0])

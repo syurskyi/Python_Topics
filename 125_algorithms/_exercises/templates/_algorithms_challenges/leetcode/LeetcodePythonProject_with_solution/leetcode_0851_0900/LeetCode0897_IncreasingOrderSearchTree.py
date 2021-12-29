@@ -2,8 +2,8 @@
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ increasingBST(self, root):
@@ -11,21 +11,21 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root: return None
-        stack = []
+        __ n.. root: r.. N..
+        stack    # list
         while root:
-            stack.append(root)
+            stack.a..(root)
             root = root.left
         root = stack[-1]
-        prev = None
+        prev = N..
         while stack:
             node = stack.pop()
-            node.left = None
+            node.left = N..
             __ prev:
                 prev.right = node
             node0 = node.right
             while node0:
-                stack.append(node0)
+                stack.a..(node0)
                 node0 = node0.left
             prev = node
-        return root
+        r.. root

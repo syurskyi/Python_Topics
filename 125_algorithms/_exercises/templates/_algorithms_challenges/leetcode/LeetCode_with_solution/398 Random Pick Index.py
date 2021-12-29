@@ -16,7 +16,7 @@ solution.pick(3);
 // pick(1) should return 0. Since in the array only nums[0] is equal to 1.
 solution.pick(1);
 """
-import random
+_______ random
 
 __author__ = 'Daniel'
 
@@ -36,15 +36,15 @@ class Solution(object):
         :rtype: int
         """
         sz = 0
-        ret = None
-        for idx, val in enumerate(self.A):
-            __ val == target:
+        ret = N..
+        ___ idx, val __ enumerate(self.A):
+            __ val __ target:
                 sz += 1
                 p = random.randrange(0, sz)
-                __ p == 0:
+                __ p __ 0:
                     ret = idx
 
-        return ret
+        r.. ret
 
 
 class SolutionError(object):
@@ -55,15 +55,15 @@ class SolutionError(object):
         :type nums: List[int]
         """
         self.d = {}
-        for idx, val in enumerate(nums):
-            __ val not in self.d:
+        ___ idx, val __ enumerate(nums):
+            __ val n.. __ self.d:
                 self.d[val] = (idx, 1)
-            else:
+            ____:
                 prev, sz = self.d[val]
                 p = random.randrange(0, sz)
                 __ p < sz:
                     self.d[val] = (idx, sz + 1)
-                else:
+                ____:
                     self.d[val] = (prev, sz + 1)
 
     ___ pick(self, target):
@@ -71,4 +71,4 @@ class SolutionError(object):
         :type target: int
         :rtype: int
         """
-        return self.d[target][0]
+        r.. self.d[target][0]

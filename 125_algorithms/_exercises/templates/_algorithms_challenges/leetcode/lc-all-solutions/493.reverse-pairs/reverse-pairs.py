@@ -1,4 +1,4 @@
-import bisect
+_______ bisect
 
 
 class Solution(object):
@@ -7,12 +7,12 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    n = len(nums)
+    n = l..(nums)
     ans = 0
-    bst = []
-    for num in nums:
+    bst    # list
+    ___ num __ nums:
       right = 2 * num
       idx = bisect.bisect_right(bst, right)
-      ans += len(bst) - idx
+      ans += l..(bst) - idx
       bisect.insort(bst, num)
-    return ans
+    r.. ans

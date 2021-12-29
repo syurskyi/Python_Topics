@@ -43,16 +43,16 @@ class Solution:
         :type k: int
         :rtype: list[]
         """
-        q = []  # store the index
-        ret = []
-        n = len(nums)
-        for i in xrange(n):
+        q    # list  # store the index
+        ret    # list
+        n = l..(nums)
+        ___ i __ xrange(n):
             while q and q[0] <= i-k:
                 q.pop(0)
             while q and nums[q[-1]] < nums[i]:
                 q.pop()
-            q.append(i)
+            q.a..(i)
             __ i >= k-1:
-                ret.append(nums[q[0]])
+                ret.a..(nums[q[0]])
 
-        return ret
+        r.. ret

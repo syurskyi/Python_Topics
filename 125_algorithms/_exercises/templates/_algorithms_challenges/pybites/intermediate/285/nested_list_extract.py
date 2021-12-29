@@ -1,15 +1,15 @@
-import re
+_______ re
 
 
 ___ is_valid_ip(s):
 
 
-    return re.search(r'^"\d+\.\d+\.\d+\.\d+"$',s) is not None
+    r.. re.search(r'^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
 
 
 ___ is_valid_number(s):
 
-    return re.search(r'^\d+$',s) is not None
+    r.. re.search(r'^\d+$',s) __ n.. N..
 
 ___ extract_ipv4(data):
     """
@@ -17,11 +17,11 @@ ___ extract_ipv4(data):
     """
 
     
-    result = []
-    for l in data:
-        __ type(l) == list:
+    result    # list
+    ___ l __ data:
+        __ type(l) __ l..:
             result.extend(extract_ipv4(l))
-        elif l == 'ip':
+        ____ l __ 'ip':
             print(data)
             try:
                 result_1 = is_valid_ip(data[1][0])
@@ -29,16 +29,16 @@ ___ extract_ipv4(data):
                 print(result_1,result_2)
             except:
                 continue
-            else:
+            ____:
                 
                 __ result_1 and result_2:
                     print('here')
                     ip_address = data[1][0].strip('"')
                     mask = data[3][0].strip('"')
 
-                    result.append((ip_address,mask))
+                    result.a..((ip_address,mask))
                     break
 
 
 
-    return result
+    r.. result

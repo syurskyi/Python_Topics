@@ -31,45 +31,45 @@ class Solution:
         scanning current operand.
         """
         operand = 0
-        stk = []
+        stk    # list
         prev_op = "+"
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             __ c.isdigit():
                 operand = operand * 10 + int(c)
 
             #  i == len(s) - 1
-            delimited = c in ("+", "-", "*", "/") or i == len(s) - 1
+            delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
             __ delimited:
-                __ prev_op == "+":
+                __ prev_op __ "+":
                     cur = operand
-                elif prev_op == "-":
+                ____ prev_op __ "-":
                     cur = -operand
-                elif prev_op == "*":
+                ____ prev_op __ "*":
                     cur = stk.pop() * operand
-                else:
-                    assert prev_op == "/"
+                ____:
+                    ... prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                     cur = int(stk.pop() / operand)
 
-                stk.append(cur)
+                stk.a..(cur)
                 prev_op = c
                 operand = 0
 
-        return sum(stk)
+        r.. s..(stk)
 
     ___ calculate_error(self, s: str) -> int:
         """
         cannot use dictionary, since it is eager evaluation
         """
         operand = 0
-        stk = []
+        stk    # list
         prev_op = "+"
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             __ c.isdigit():
                 operand = operand * 10 + int(c)
 
             #  i == len(s) - 1
-            delimited = c in ("+", "-", "*", "/") or i == len(s) - 1
+            delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
             __ delimited:
                 cur = {
                     "+": operand,
@@ -77,13 +77,13 @@ class Solution:
                     "*": stk.pop() * operand,
                     "/": int(stk.pop() / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                 }[prev_op]
-                stk.append(cur)
+                stk.a..(cur)
 
                 prev_op = c
                 operand = 0
 
-        return sum(stk)
+        r.. s..(stk)
 
 
-__ __name__ == "__main__":
-    assert Solution().calculate("3+2*2") == 7
+__ __name__ __ "__main__":
+    ... Solution().calculate("3+2*2") __ 7

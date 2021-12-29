@@ -1,5 +1,5 @@
-import numpy as np
-import pandas as pd
+_______ numpy as np
+_______ pandas as pd
 
 
 ___ return_at_index(ser: pd.Series, idx: int) -> object:
@@ -8,7 +8,7 @@ ___ return_at_index(ser: pd.Series, idx: int) -> object:
        the index does not exist.
     """
     try:
-        return ser[idx]
+        r.. ser[idx]
     except KeyError:
         raise
 
@@ -17,7 +17,7 @@ ___ get_slice(ser: pd.Series, start: int, end: int) -> pd.core.series.Series:
     """Return the slice of the given Series in the range between
     start and end.
     """
-    return ser[start:end]
+    r.. ser[start:end]
 
 
 ___ get_slice_inclusive(ser: pd.Series,
@@ -25,31 +25,31 @@ ___ get_slice_inclusive(ser: pd.Series,
     """Return the slice of the given Series in the range between
     start and end inclusive.
     """
-    return ser.loc[start:end]
+    r.. ser.loc[start:end]
 
 
 ___ return_head(ser: pd.Series, num: int) -> pd.core.series.Series:
     """Return the first num elements of the given Series.
     """
-    return ser.head(num)
+    r.. ser.head(num)
 
 
 ___ return_tail(ser: pd.Series, num: int) -> pd.core.series.Series:
     """Return the last num elements of the given Series.
     """
-    return ser.tail(num)
+    r.. ser.tail(num)
 
 
 ___ get_index(ser: pd.Series) -> pd.core.indexes.base.Index:
     """Return all indexes of the given Series.
     """
-    return ser.index
+    r.. ser.index
 
 
 ___ get_values(ser: pd.Series) -> np.ndarray:
     """Return all the values of the given Series.
     """
-    return ser.values
+    r.. ser.values
 
 
 ___ get_every_second_indexes(ser: pd.Series,
@@ -59,5 +59,5 @@ ___ get_every_second_indexes(ser: pd.Series,
     If even_index is False return every index where idx % 2 != 0
     Assume default indexing i.e. 0 -> n
     """
-    first_idx = 0 __ even_index else 1
-    return ser.iloc[first_idx::2]
+    first_idx = 0 __ even_index ____ 1
+    r.. ser.iloc[first_idx::2]

@@ -1,41 +1,41 @@
 class Zipper(object):
     @staticmethod
     ___ from_tree(tree):
-        return Zipper(dict(tree), [])
+        r.. Zipper(d..(tree), [])
 
     ___ __init__(self, tree, ancestors):
         self.tree = tree
         self.ancestors = ancestors
 
     ___ value(self):
-        return self.tree['value']
+        r.. self.tree['value']
 
     ___ set_value(self, value):
         self.tree['value'] = value
-        return self
+        r.. self
 
     ___ left(self):
-        __ self.tree['left'] is None:
-            return None
-        return Zipper(self.tree['left'], self.ancestors + [self.tree])
+        __ self.tree['left'] __ N..
+            r.. N..
+        r.. Zipper(self.tree['left'], self.ancestors + [self.tree])
 
     ___ set_left(self, tree):
         self.tree['left'] = tree
-        return self
+        r.. self
 
     ___ right(self):
-        __ self.tree['right'] is None:
-            return None
-        return Zipper(self.tree['right'], self.ancestors + [self.tree])
+        __ self.tree['right'] __ N..
+            r.. N..
+        r.. Zipper(self.tree['right'], self.ancestors + [self.tree])
 
     ___ set_right(self, tree):
         self.tree['right'] = tree
-        return self
+        r.. self
 
     ___ up(self):
-        return Zipper(self.ancestors[-1], self.ancestors[:-1])
+        r.. Zipper(self.ancestors[-1], self.ancestors[:-1])
 
     ___ to_tree(self):
         __ any(self.ancestors):
-            return self.ancestors[0]
-        return self.tree
+            r.. self.ancestors[0]
+        r.. self.tree

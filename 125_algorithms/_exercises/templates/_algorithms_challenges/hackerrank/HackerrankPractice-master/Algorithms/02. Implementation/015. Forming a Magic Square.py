@@ -14,19 +14,19 @@ ___ formingMagicSquare(square):
         [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
         ]
     minCost = 9 * 9
-    for magicSquare in allSquares:
+    ___ magicSquare __ allSquares:
         cost = 0
-        for i in range(3):
-            for j in range(3):
+        ___ i __ r..(3):
+            ___ j __ r..(3):
                 cost += abs(magicSquare[i][j] - square[i][j])
         __ cost < minCost:
             minCost = cost
-    return minCost
+    r.. minCost
 
 
 square = [
-    list(map(int, input().split())),
-    list(map(int, input().split())),
-    list(map(int, input().split()))
+    l..(map(int, input().split())),
+    l..(map(int, input().split())),
+    l..(map(int, input().split()))
     ]
 print(formingMagicSquare(square))

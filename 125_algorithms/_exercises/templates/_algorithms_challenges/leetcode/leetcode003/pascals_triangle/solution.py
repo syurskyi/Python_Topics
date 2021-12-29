@@ -20,25 +20,25 @@ class Solution(object):
         :type numRows: int
         :rtype: List[List[int]]
         """
-        res = []
-        __ numRows == 0:
-            return res
-        res.append([1])
-        __ numRows == 1:
-            return res
-        res.append([1, 1])
-        __ numRows == 2:
-            return res
+        res    # list
+        __ numRows __ 0:
+            r.. res
+        res.a..([1])
+        __ numRows __ 1:
+            r.. res
+        res.a..([1, 1])
+        __ numRows __ 2:
+            r.. res
         # n is current row index (starting from 0)
-        for n in range(2, numRows):
-            cur = []
-            for i in range(n + 1):
-                __ i == 0:
-                    cur.append(1)
-                elif i == n:
-                    cur.append(1)
-                else:
+        ___ n __ r..(2, numRows):
+            cur    # list
+            ___ i __ r..(n + 1):
+                __ i __ 0:
+                    cur.a..(1)
+                ____ i __ n:
+                    cur.a..(1)
+                ____:
                     c = res[n - 1][i - 1] + res[n - 1][i]
-                    cur.append(c)
-            res.append(cur)
-        return res
+                    cur.a..(c)
+            res.a..(cur)
+        r.. res

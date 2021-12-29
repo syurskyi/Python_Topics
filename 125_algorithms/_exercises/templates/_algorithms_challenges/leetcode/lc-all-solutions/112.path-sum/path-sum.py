@@ -4,11 +4,11 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
-  ___ hasPathSum(self, root, sum):
+  ___ hasPathSum(self, root, s..):
     """
     :type root: TreeNode
     :type sum: int
@@ -20,10 +20,10 @@ class Solution(object):
         p, s = queue.popleft()
         left, right = p.left, p.right
         __ left:
-          queue.append((p.left, s + p.left.val))
+          queue.a..((p.left, s + p.left.val))
         __ right:
-          queue.append((p.right, s + p.right.val))
-        __ not left and not right and s == sum:
-          return True
-      return False
-    return False
+          queue.a..((p.right, s + p.right.val))
+        __ n.. left and n.. right and s __ s..:
+          r.. True
+      r.. False
+    r.. False

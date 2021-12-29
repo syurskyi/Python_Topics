@@ -1,11 +1,11 @@
-from collections import Counter
-from datetime import date
-from unittest.mock import patch, MagicMock
+____ collections _______ Counter
+____ datetime _______ date
+____ unittest.mock _______ patch, MagicMock
 
-import pytest
+_______ pytest
 
-import monitor
-from monitor import timeit, ALERT_MSG
+_______ monitor
+____ monitor _______ timeit, ALERT_MSG
 
 
 @pytest.fixture()
@@ -20,7 +20,7 @@ ___ test_one_operation_within_time(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    assert not output
+    ... n.. output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3]))
@@ -32,7 +32,7 @@ ___ test_two_operations_one_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    assert not output
+    ... n.. output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4]))
@@ -47,7 +47,7 @@ ___ test_three_operations_two_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    assert not output
+    ... n.. output
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4, 0, 5]))
@@ -62,7 +62,7 @@ ___ test_four_operations_three_took_too_long(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    assert output.strip() == ALERT_MSG
+    ... output.strip() __ ALERT_MSG
 
 
 @patch('monitor.time', MagicMock(
@@ -80,7 +80,7 @@ ___ test_four_operations_three_took_too_long_using_floats(clean_cache, capfd):
     with timeit():
         pass
     output = capfd.readouterr()[0]
-    assert output.strip() == ALERT_MSG
+    ... output.strip() __ ALERT_MSG
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 3, 0, 3, 0, 4, 0, 5]))
@@ -99,4 +99,4 @@ ___ test_four_operations_took_too_long_but_on_two_days(clean_cache, capfd):
         with timeit():
             pass
     output = capfd.readouterr()[0]
-    assert not output
+    ... n.. output

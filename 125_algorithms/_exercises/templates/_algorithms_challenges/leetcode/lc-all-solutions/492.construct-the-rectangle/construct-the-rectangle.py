@@ -6,6 +6,6 @@ class Solution(object):
     """
     root = int(area ** 0.5)
     while root > 0:
-      __ area % root == 0:
-        return int(area / root), root
+      __ area % root __ 0:
+        r.. int(area / root), root
       root -= 1

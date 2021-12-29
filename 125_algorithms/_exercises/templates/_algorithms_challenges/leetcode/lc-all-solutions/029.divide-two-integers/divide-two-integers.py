@@ -5,8 +5,8 @@ class Solution(object):
     :type divisor: int
     :rtype: int
     """
-    __ divisor == 0:
-      return 0x7fffffff
+    __ divisor __ 0:
+      r.. 0x7fffffff
     sign = 1
     __ dividend * divisor < 0:
       sign = -1
@@ -23,4 +23,4 @@ class Solution(object):
       cnt = 1
       dividend -= subsum
       subsum = divisor
-    return max(min(sign * ans, 0x7fffffff), -2147483648)
+    r.. max(m..(sign * ans, 0x7fffffff), -2147483648)

@@ -10,14 +10,14 @@ class Solution(object):
         :rtype: int
         """
         s = S
-        stack, cur = [], 0
-        for c in s:
-            __ c == '(':
-                stack.append(cur)
+        stack, cur    # list, 0
+        ___ c __ s:
+            __ c __ '(':
+                stack.a..(cur)
                 cur = 0
-            else:
+            ____:
                 cur += stack.pop() + max(cur, 1)
-        return cur
+        r.. cur
     
     ___ test(self):
         testCases = [
@@ -27,10 +27,10 @@ class Solution(object):
             '(())()',
             '(()(()))',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             res = self.scoreOfParentheses(s)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -27,17 +27,17 @@ class Solution:
         why reverse? reverse the increasing from right to left to decreasing
         from right to left (i.e. sorted)
         """
-        seq = list(str(n))
-        N = len(seq)
+        seq = l..(str(n))
+        N = l..(seq)
         __ N < 2:
-            return -1
+            r.. -1
 
         # from right to left
         i = N - 2
         while seq[i] >= seq[i+1]:
             i -= 1
             __ i < 0:
-                return -1
+                r.. -1
 
         j = N - 1
         while seq[i] >= seq[j]:
@@ -47,9 +47,9 @@ class Solution:
         seq[i+1:] = reversed(seq[i+1:])
         ret = int("".join(seq))
         __ ret <= 1 << 31 - 1:
-            return ret
-        else:
-            return -1
+            r.. ret
+        ____:
+            r.. -1
 
     ___ nextGreaterElement_sort(self, n: int) -> int:
         """
@@ -64,27 +64,27 @@ class Solution:
         from right to left
         find the first digit that has min larger, then sort the rest
         """
-        seq = [int(e) for e in str(n)]
-        stk = []  # record index
-        for i in range(len(seq) - 1, -1 , -1):
+        seq = [int(e) ___ e __ str(n)]
+        stk    # list  # record index
+        ___ i __ r..(l..(seq) - 1, -1 , -1):
             e = seq[i]
-            popped = None
+            popped = N..
             while stk and seq[stk[-1]] > e:
                 popped = stk.pop()
 
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
-                seq[i+1:] = sorted(seq[i+1:])  # reversed also good
+                seq[i+1:] = s..(seq[i+1:])  # reversed also good
                 ret = int("".join(map(str, seq)))
                 __ ret <= 1 << 31 - 1:
-                    return ret
-                else:
-                    return -1
+                    r.. ret
+                ____:
+                    r.. -1
 
-            stk.append(i)
+            stk.a..(i)
 
-        return -1
+        r.. -1
 
 
-__ __name__ == "__main__":
-    assert Solution().nextGreaterElement(12) == 21
+__ __name__ __ "__main__":
+    ... Solution().nextGreaterElement(12) __ 21

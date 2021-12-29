@@ -31,7 +31,7 @@ Note:
 1 <= seats.length <= 20000
 seats contains only 0s or 1s, at least one 0, and at least one 1.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -41,50 +41,50 @@ class Solution:
         Let L[i] be the distant to the left 1 at A[i]
         Let R[i] ...
         """
-        n = len(seats)
-        L = [float("inf") for _ in range(n)]
-        R = [float("inf") for _ in range(n)]
-        for i in range(n):
-            __ seats[i] == 1:
+        n = l..(seats)
+        L = [float("inf") ___ _ __ r..(n)]
+        R = [float("inf") ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            __ seats[i] __ 1:
                 L[i] = 0
-            elif i - 1 >= 0:
+            ____ i - 1 >= 0:
                 L[i] = L[i-1] + 1
-        for i in range(n-1, -1 , -1):
-            __ seats[i] == 1:
+        ___ i __ r..(n-1, -1 , -1):
+            __ seats[i] __ 1:
                 R[i] = 0
-            elif i + 1 < n:
+            ____ i + 1 < n:
                 R[i] = R[i+1] + 1
 
-        return max(
-            min(L[i], R[i])
-            for i in range(n)
+        r.. max(
+            m..(L[i], R[i])
+            ___ i __ r..(n)
         )
 
     ___ maxDistToClosest2(self, seats: List[int]) -> int:
         """
         maintain a sorrted index array
         """
-        idxes = []
-        for i, e in enumerate(seats):
-            __ e == 1:
-                idxes.append(i)
+        idxes    # list
+        ___ i, e __ enumerate(seats):
+            __ e __ 1:
+                idxes.a..(i)
 
         ret = [-float("inf"), 0]
-        n = len(seats)
+        n = l..(seats)
         # two ends
-        for i, j in zip((0, n-1), (0, -1)):
+        ___ i, j __ zip((0, n-1), (0, -1)):
             dist = abs(i - idxes[j])
             __ dist > ret[0]:
                 ret = [dist, i]
 
-        for j in range(len(idxes) - 1):
+        ___ j __ r..(l..(idxes) - 1):
             i = (idxes[j] + idxes[j+1]) // 2
-            dist = min(abs(i - idxes[j]), abs(i - idxes[j+1]))
+            dist = m..(abs(i - idxes[j]), abs(i - idxes[j+1]))
             __ dist > ret[0]:
                 ret = [dist, i]
 
-        return ret[0]
+        r.. ret[0]
 
 
-__ __name__ == "__main__":
-    assert Solution().maxDistToClosest([1,0,0,0,1,0,1]) == 2
+__ __name__ __ "__main__":
+    ... Solution().maxDistToClosest([1,0,0,0,1,0,1]) __ 2

@@ -1,5 +1,5 @@
-import pandas as pd
-from io import StringIO
+_______ pandas as pd
+____ io _______ StringIO
 data = """Luke Skywalker,172,77
           C-3PO,167,75
           R2-D2,96,32
@@ -33,5 +33,5 @@ ___ person_max_bmi(data=data):
     star_wars['bmi'] = star_wars.weight.div(star_wars.height.div(100)**2).round(2)
     
     largest =  star_wars.nlargest(1,'bmi').squeeze()
-    return (largest['character'],largest['bmi'])
+    r.. (largest['character'],largest['bmi'])
 

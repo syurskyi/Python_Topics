@@ -4,23 +4,23 @@ Created on Oct 2, 2017
 @author: MT
 '''
 class Solution(object):
-    ___ replaceWords(self, dict, sentence):
+    ___ replaceWords(self, d.., sentence):
         """
         :type dict: List[str]
         :type sentence: str
         :rtype: str
         """
-        dict.sort(key=lambda x: len(x))
-        resArr = []
+        d...sort(key=l.... x: l..(x))
+        resArr    # list
         words = sentence.split(' ')
-        for i, word in enumerate(words):
-            for s in dict:
-                __ word[:len(s)] == s:
-                    resArr.append(s)
+        ___ i, word __ enumerate(words):
+            ___ s __ d..:
+                __ word[:l..(s)] __ s:
+                    resArr.a..(s)
                     break
-            __ i+1 > len(resArr):
-                resArr.append(word)
-        return ' '.join(resArr)
+            __ i+1 > l..(resArr):
+                resArr.a..(word)
+        r.. ' '.join(resArr)
     
     ___ test(self):
         testCases = [
@@ -29,12 +29,12 @@ class Solution(object):
                 "the cattle was rattled by the battery",
             ],
         ]
-        for dict, sentence in testCases:
-            print('dict: %s' % dict)
+        ___ d.., sentence __ testCases:
+            print('dict: %s' % d..)
             print('sentence: %s' % sentence)
-            result = self.replaceWords(dict, sentence)
+            result = self.replaceWords(d.., sentence)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

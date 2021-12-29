@@ -10,27 +10,27 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        sumVal = sum(nums)
+        sumVal = s..(nums)
         __ sumVal%k != 0:
-            return False
-        nums.sort(reverse=True)
-        return self.helper(nums, [0]*k, sumVal//k, 0, k)
+            r.. False
+        nums.sort(r.._T..
+        r.. self.helper(nums, [0]*k, sumVal//k, 0, k)
     
     ___ helper(self, nums, elems, target, ind, k):
-        __ ind == k:
-            return True
-        for i in range(len(nums)):
+        __ ind __ k:
+            r.. True
+        ___ i __ r..(l..(nums)):
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
-                __ elems[ind] == target and\
+                __ elems[ind] __ target and\
                     self.helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
-                    return True
-                elif self.helper(nums[:i]+nums[i+1:], elems, target, ind, k):
-                    return True
+                    r.. True
+                ____ self.helper(nums[:i]+nums[i+1:], elems, target, ind, k):
+                    r.. True
                 elems[ind] -= nums[i]
-            else:
+            ____:
                 break
-        return False
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -47,12 +47,12 @@ class Solution(object):
                 13,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.canPartitionKSubsets(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

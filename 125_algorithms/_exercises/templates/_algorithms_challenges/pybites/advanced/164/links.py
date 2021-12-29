@@ -1,14 +1,14 @@
-import sys
+_______ sys
 
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
 ___ make_html_links():
 
-    for line in sys.stdin:
+    ___ line __ sys.stdin:
         
         line = line.strip()
-        __ line.startswith('http') and comma.count(',') == 1:
+        __ line.startswith('http') and comma.c.. ',') __ 1:
 
             href,link_name = line.split(',')
             href = href.strip()
@@ -16,16 +16,16 @@ ___ make_html_links():
 
 
             domain = re.search(r'https?//(.+?)/').group(1)
-            __ domain not in INTERNAL_LINKS:
+            __ domain n.. __ INTERNAL_LINKS:
                 add_target = True
-            else:
+            ____:
                 add_target = False
 
 
             
-            __ not add_target:
+            __ n.. add_target:
                 link = f'<a href="{href}">{link_name}</a>'
-            else:
+            ____:
                 link = f'<a href="{href}" target="_blank">{link_name}</a>'
 
             
@@ -44,5 +44,5 @@ ___ make_html_links():
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     make_html_links()

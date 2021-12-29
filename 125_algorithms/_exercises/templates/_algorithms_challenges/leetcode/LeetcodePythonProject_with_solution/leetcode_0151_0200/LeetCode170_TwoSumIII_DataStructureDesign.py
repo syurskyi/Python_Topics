@@ -16,9 +16,9 @@ class TwoSum(object):
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        __ number in self.elements:
+        __ number __ self.elements:
             self.elements[number] += 1
-        else:
+        ____:
             self.elements[number] = 1
 
     ___ find(self, value):
@@ -27,10 +27,10 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        for num in self.elements:
+        ___ num __ self.elements:
             target = value-num
-            __ target in self.elements:
-                __ target == num and self.elements[target]<2:
+            __ target __ self.elements:
+                __ target __ num and self.elements[target]<2:
                     continue
-                return True
-        return False
+                r.. True
+        r.. False

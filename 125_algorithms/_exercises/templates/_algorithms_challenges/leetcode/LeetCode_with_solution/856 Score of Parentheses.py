@@ -41,44 +41,44 @@ class Solution:
         Every position in the string has a depth - some number of matching
         parentheses surrounding it
         """
-        stk = []
+        stk    # list
         ret = 0
-        for s in S:
-            __ s == "(":
-                stk.append(0)
-            else:
+        ___ s __ S:
+            __ s __ "(":
+                stk.a..(0)
+            ____:
                 cur = stk.pop()
                 score = max(2 * cur, 1)
                 __ stk:
                     stk[-1] += score
-                else:
+                ____:
                     ret += score
 
-        return ret
+        r.. ret
 
     ___ scoreOfParentheses_error(self, S: str) -> int:
         """
         stk
         """
         ret = 0
-        cur_stk = []
-        for s in S:
-            __ s == "(":
-                cur_stk.append(0)
-                stk.append(s)
-            else:
+        cur_stk    # list
+        ___ s __ S:
+            __ s __ "(":
+                cur_stk.a..(0)
+                stk.a..(s)
+            ____:
                 stk.pop()
-                __ cur_stk[-1] == 0:
+                __ cur_stk[-1] __ 0:
                     cur_stk[-1] = 1
-                else:
+                ____:
                     cur_stk[-1] *= 2
-            __ not stk:
+            __ n.. stk:
                 ret += cur
                 cur = 0
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().scoreOfParentheses("(())") == 2
-    assert Solution().scoreOfParentheses("(()(()))") == 6
+__ __name__ __ "__main__":
+    ... Solution().scoreOfParentheses("(())") __ 2
+    ... Solution().scoreOfParentheses("(()(()))") __ 6

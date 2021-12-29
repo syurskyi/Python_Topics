@@ -1,8 +1,8 @@
 ___ has_spaces(txt):
-    __ txt.find(" ") == -1:
-        return False
-    else:
-        return True
+    __ txt.find(" ") __ -1:
+        r.. False
+    ____:
+        r.. True
 
 
 ___ test():

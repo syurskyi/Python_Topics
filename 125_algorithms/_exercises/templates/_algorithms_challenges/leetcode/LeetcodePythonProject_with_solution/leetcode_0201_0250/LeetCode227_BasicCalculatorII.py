@@ -15,30 +15,30 @@ class Solution(object):
         curVal = 0
         preVal = 0
         sign = '+'
-        while i < len(s):
+        while i < l..(s):
             __ s[i].isdigit():
                 curVal = 0
-                while i < len(s) and s[i].isdigit():
+                while i < l..(s) and s[i].isdigit():
                     curVal = curVal*10+int(s[i])
                     i += 1
-            __ sign == '+':
+            __ sign __ '+':
                 res += preVal
                 preVal = curVal
-            elif sign == '-':
+            ____ sign __ '-':
                 res += preVal
                 preVal = -curVal
-            elif sign == '*':
+            ____ sign __ '*':
                 preVal *= curVal
-            elif sign == '/':
+            ____ sign __ '/':
                 __ preVal//curVal < 0 and preVal%curVal != 0:
                     preVal = preVal//curVal+1
-                else:
+                ____:
                     preVal = preVal//curVal
-            __ i < len(s):
+            __ i < l..(s):
                 sign = s[i]
                 i += 1
         res += preVal
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -47,11 +47,11 @@ class Solution(object):
             '14-3/2',
             '14-13/2',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.calculate(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

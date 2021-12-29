@@ -4,11 +4,11 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    __ len(nums) <= 1:
-      return len(nums)
+    __ l..(nums) <= 1:
+      r.. l..(nums)
     slow = 0
-    for i in range(1, len(nums)):
+    ___ i __ r..(1, l..(nums)):
       __ nums[i] != nums[slow]:
         slow += 1
         nums[slow] = nums[i]
-    return slow + 1
+    r.. slow + 1

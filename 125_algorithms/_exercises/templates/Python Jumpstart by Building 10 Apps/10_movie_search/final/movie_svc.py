@@ -1,5 +1,5 @@
-import collections
-import requests
+_______ collections
+_______ requests
 
 MovieResult  collections.namedtuple(
     'MovieResult',
@@ -8,7 +8,7 @@ MovieResult  collections.namedtuple(
 
 ___ find_movies(search_text):
 
-    __ not search_text or not search_text.strip():
+    __ n.. search_text o. n.. search_text.strip():
         raise ValueError("Search text is required")
 
     # This URL changed since the recording to support SSL.
@@ -22,9 +22,9 @@ ___ find_movies(search_text):
 
     movies  [
         MovieResult(**md)
-        for md in movies_list
+        ___ md __ movies_list
     ]
 
     movies.sort(keylambda m: -m.year)
 
-    return movies
+    r.. movies

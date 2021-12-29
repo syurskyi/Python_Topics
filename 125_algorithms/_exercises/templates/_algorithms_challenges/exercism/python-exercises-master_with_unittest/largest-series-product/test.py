@@ -6,9 +6,9 @@ your program should raise a ValueError with a meaningful error message.
 
 Feel free to reuse your code from the 'series' exercise!
 """
-import unittest
+_______ unittest
 
-from largest_series_product import largest_product
+____ largest_series_product _______ largest_product
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -88,5 +88,5 @@ class SeriesTest(unittest.TestCase):
         self.assertEqual(largest_product(series, 13), 23514624000)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,6 +1,6 @@
-from collections import Counter
+____ collections _______ Counter
 
 ___ freq_digit(num: int) -> int:
-    dict = Counter(str(num))
-    max_value = max(dict.values())
-    return [key for key, value in dict.items() __ value == max_value][0]
+    d.. = Counter(str(num))
+    max_value = max(d...values())
+    r.. [key ___ key, value __ d...items() __ value __ max_value][0]

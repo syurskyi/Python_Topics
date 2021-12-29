@@ -1,6 +1,6 @@
-import itertools
-import os
-import urllib.request
+_______ itertools
+_______ os
+_______ urllib.request
 
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
@@ -12,42 +12,42 @@ urllib.request.urlretrieve(
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.strip().lower() for word in f.read().split()])
+    dictionary = set([word.strip().lower() ___ word __ f.read().s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score for score, letters in scrabble_scores
-                 for letter in letters.split()}
+LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+                 ___ letter __ letters.s.. }
 
 
 ___ calc_word_value(word):
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    return sum(LETTER_SCORES.get(char.upper(), 0) for char in word)
+    r.. s..(LETTER_SCORES.get(char.upper(), 0) ___ char __ word)
 
 ___ get_possible_dict_words(draw):
     """Get all possible words from a draw (list of letters) which are
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
     possible_word = {}
-    in_str = ''.join([letter for letter in draw __ letter.isalpha()])
+    in_str = ''.join([letter ___ letter __ draw __ letter.isalpha()])
     permute_list = _get_permutations_draw(in_str)
-    for word in permute_list:
+    ___ word __ permute_list:
         temp_word = ''.join(word)
-        __ temp_word.lower() in dictionary:
+        __ temp_word.lower() __ dictionary:
             possible_word[temp_word.lower()] = calc_word_value(temp_word.lower())
-    listOfKeys = list()
+    listOfKeys = l..()
     max_value = max(possible_word.values())
-    for key, value in possible_word.items():
-        __ value == max_value:
-            listOfKeys.append(key)
-    return listOfKeys
+    ___ key, value __ possible_word.items():
+        __ value __ max_value:
+            listOfKeys.a..(key)
+    r.. listOfKeys
 
 ___ _get_permutations_draw(draw):
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
-    permute_words_list = []
-    for i in range(len(draw)):
-        permute_words = list(itertools.permutations(draw, i+1))
+    permute_words_list    # list
+    ___ i __ r..(l..(draw)):
+        permute_words = l..(itertools.permutations(draw, i+1))
         permute_words_list += permute_words
-    return permute_words_list
+    r.. permute_words_list
 

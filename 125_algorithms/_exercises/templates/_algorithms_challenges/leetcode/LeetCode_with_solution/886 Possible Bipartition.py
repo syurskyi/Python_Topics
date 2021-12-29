@@ -34,8 +34,8 @@ Note:
 dislikes[i][0] < dislikes[i][1]
 There does not exist i != j for which dislikes[i] == dislikes[j].
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -47,26 +47,26 @@ class Solution:
 
         DFS + coloring do a dfs all on nodes O(N) + O(M)
         """
-        G = defaultdict(list)
-        for u, v in dislikes:
-            G[u].append(v)
-            G[v].append(u)
+        G = defaultdict(l..)
+        ___ u, v __ dislikes:
+            G[u].a..(v)
+            G[v].a..(u)
 
         visited = {}  # 0 color red, 1 color blue
-        for u in range(1, N+1):
-            __ u not in visited:
-                __ not self.dfs(u, G, visited, 0):
-                    return False
-        return True
+        ___ u __ r..(1, N+1):
+            __ u n.. __ visited:
+                __ n.. self.dfs(u, G, visited, 0):
+                    r.. False
+        r.. True
 
     ___ dfs(self, u, G, visited, color):
         visited[u] = color
-        for nbr in G[u]:
-            __ nbr in visited:
-                __ visited[nbr] == color:
-                    return False
-            else:
-                __ not self.dfs(nbr, G, visited, color ^ 1):
-                    return False
+        ___ nbr __ G[u]:
+            __ nbr __ visited:
+                __ visited[nbr] __ color:
+                    r.. False
+            ____:
+                __ n.. self.dfs(nbr, G, visited, color ^ 1):
+                    r.. False
 
-        return True
+        r.. True

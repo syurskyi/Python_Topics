@@ -13,12 +13,12 @@ ___ transpose(data):
     In: transpose(data)
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
-    __ isinstance(data, dict):
-       dict_keys = tuple([key for key in data.keys()])
-       dict_values = tuple([value for value in data.values()])
-       return [dict_keys, dict_values]
+    __ isi..(data, d..):
+       dict_keys = tuple([key ___ key __ data.keys()])
+       dict_values = tuple([value ___ value __ data.values()])
+       r.. [dict_keys, dict_values]
 
 
-    __ isinstance(data, list):
-       nt_list = [[nt.name, nt.since_days, nt.karma_points, nt.bitecoin_earned] for nt in data]
-       return zip(*nt_list)
+    __ isi..(data, l..):
+       nt_list = [[nt.name, nt.since_days, nt.karma_points, nt.bitecoin_earned] ___ nt __ data]
+       r.. zip(*nt_list)

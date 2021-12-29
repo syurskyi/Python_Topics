@@ -29,30 +29,30 @@ class Solution:
         :type s: str
         :rtype: list[str]
         """
-        __ len(s) < 10:
-            return []
+        __ l..(s) < 10:
+            r.. []
 
-        s = map(self.mapping, list(s))
+        s = map(self.mapping, l..(s))
         h = set()
         # in_ret = set()
         ret = set()
         cur = 0
-        for i in xrange(10):
+        ___ i __ xrange(10):
             cur <<= 2
             cur &= 0xFFFFF
             cur += s[i]
         h.add(cur)
 
-        for i in xrange(10, len(s)):
+        ___ i __ xrange(10, l..(s)):
             cur <<= 2
             cur &= 0xFFFFF  # 10 * 2 = 20 position
             cur += s[i]
-            __ cur in h and cur not in ret:
+            __ cur __ h and cur n.. __ ret:
                 ret.add(cur)
-            else:
+            ____:
                 h.add(cur)
 
-        return map(self.decode, ret)
+        r.. map(self.decode, ret)
 
     ___ decode(self, s):
         dic = {
@@ -61,12 +61,12 @@ class Solution:
             2: "G",
             3: "T"
         }
-        ret = []
-        for i in xrange(10):
-            ret.append(dic[s%4])
+        ret    # list
+        ___ i __ xrange(10):
+            ret.a..(dic[s%4])
             s >>= 2
 
-        return "".join(reversed(ret))
+        r.. "".join(reversed(ret))
 
     ___ mapping(self, a):
         dic = {
@@ -76,7 +76,7 @@ class Solution:
             "T": 3,
             }
 
-        return dic[a]
+        r.. dic[a]
 
-__ __name__ == "__main__":
-    assert Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") == ['CCCCCAAAAA', 'AAAAACCCCC']
+__ __name__ __ "__main__":
+    ... Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") __ ['CCCCCAAAAA', 'AAAAACCCCC']

@@ -11,8 +11,8 @@ class Solution:
   # @return nothing
   ___ connect(self, root):
     p = root
-    pre = None
-    head = None
+    pre = N..
+    head = N..
     while p:
       __ p.left:
         __ pre:
@@ -22,11 +22,11 @@ class Solution:
         __ pre:
           pre.next = p.right
         pre = p.right
-      __ not head:
-        head = p.left or p.right
+      __ n.. head:
+        head = p.left o. p.right
       __ p.next:
         p = p.next
-      else:
+      ____:
         p = head
-        head = None
-        pre = None
+        head = N..
+        pre = N..

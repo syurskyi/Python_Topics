@@ -3,7 +3,7 @@ Description:
 
 Count the number of prime numbers less than a non-negative number, n.
 """
-import math
+_______ math
 
 __author__ = 'Daniel'
 
@@ -16,17 +16,17 @@ class Solution:
         :rtype: int
         """
         __ n < 3:
-            return 0
+            r.. 0
 
-        is_prime = [True for _ in xrange(n)]
+        is_prime = [True ___ _ __ xrange(n)]
         is_prime[0], is_prime[1] = False, False
-        for i in xrange(2, int(math.sqrt(n))+1):
+        ___ i __ xrange(2, int(math.sqrt(n))+1):
             __ is_prime[i]:
-                for j in xrange(i*i, n, i):
+                ___ j __ xrange(i*i, n, i):
                     is_prime[j] = False
 
-        return is_prime.count(True)
+        r.. is_prime.c.. True)
 
 
-__ __name__ == "__main__":
-    assert Solution().countPrimes(1500000) == 114155
+__ __name__ __ "__main__":
+    ... Solution().countPrimes(1500000) __ 114155

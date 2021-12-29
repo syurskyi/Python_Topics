@@ -7,13 +7,13 @@ premium question
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.sums = []
+        self.sums    # list
 
     ___ checkEqualTree(self, root: TreeNode) -> bool:
         """
@@ -22,17 +22,17 @@ class Solution:
         """
         self.dfs(root)
         total = self.sums.pop()
-        return total % 2 == 0 and total // 2 in self.sums
+        r.. total % 2 __ 0 and total // 2 __ self.sums
 
     ___ dfs(self, node):
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         l = self.dfs(node.left)
         r = self.dfs(node.right)
         s = l + r + node.val
-        self.sums.append(s)
-        return s
+        self.sums.a..(s)
+        r.. s
 
 
 class Solution:
@@ -41,8 +41,8 @@ class Solution:
         Save space, two passes
         """
         self.exists = False
-        self.root = None  # need to handle 0
-        self.total_sum = None
+        self.root = N..  # need to handle 0
+        self.total_sum = N..
 
     ___ checkEqualTree(self, root: TreeNode) -> bool:
         """
@@ -57,16 +57,16 @@ class Solution:
         self.root = root
         self.total_sum = self.dfs(root)
         self.dfs(root)
-        return self.exists
+        r.. self.exists
 
     ___ dfs(self, node):
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         l = self.dfs(node.left)
         r = self.dfs(node.right)
         s = l + r + node.val
-        __ node != self.root and self.total_sum != None and self.total_sum == s * 2:
+        __ node != self.root and self.total_sum != N.. and self.total_sum __ s * 2:
             self.exists = True
 
-        return s
+        r.. s

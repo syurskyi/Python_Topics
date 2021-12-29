@@ -7,28 +7,28 @@ class Solution(object):
 
     ___ canWin(nums, start, end, visited, partSum, maxSum, order):
       # print "canWin order=", order
-      __ (start, end, partSum, order) in visited:
-        return visited[start, end, partSum, order]
+      __ (start, end, partSum, order) __ visited:
+        r.. visited[start, end, partSum, order]
       __ start > end:
         # print "order=", order, partSum, maxSum
-        __ order == 0:
+        __ order __ 0:
           __ partSum >= maxSum - partSum:
-            return False
-          return True
-        else:
+            r.. False
+          r.. True
+        ____:
           __ partSum >= maxSum - partSum:
-            return True
-          return False
+            r.. True
+          r.. False
 
       visited[start, end, partSum, order] = False
-      __ not canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order):
+      __ n.. canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order):
         visited[start, end, partSum, order] = True
         # print "order=", order, "return True"
-        return True
-      __ not canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order):
+        r.. True
+      __ n.. canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order):
         visited[start, end, partSum, order] = True
         # print "order=", order, "return True"
-        return True
-      return visited[start, end, partSum, order]
+        r.. True
+      r.. visited[start, end, partSum, order]
 
-    return canWin(nums, 0, len(nums) - 1, {}, 0, sum(nums), -1)
+    r.. canWin(nums, 0, l..(nums) - 1, {}, 0, s..(nums), -1)

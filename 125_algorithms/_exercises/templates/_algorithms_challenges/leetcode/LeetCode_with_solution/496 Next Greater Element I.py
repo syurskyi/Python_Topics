@@ -46,16 +46,16 @@ class Solution:
         :rtype: List[int]
         """
         h = {}  # num -> next greater element
-        stk = []
-        for e in nums2[::-1]:
+        stk    # list
+        ___ e __ nums2[::-1]:
             while stk and stk[-1] <= e:
                 # until stk[-1] > e
                 stk.pop()
 
-            h[e] = stk[-1] __ stk else -1
-            stk.append(e)
+            h[e] = stk[-1] __ stk ____ -1
+            stk.a..(e)
 
-        return [
+        r.. [
             h[q]
-            for q in nums1
+            ___ q __ nums1
         ]

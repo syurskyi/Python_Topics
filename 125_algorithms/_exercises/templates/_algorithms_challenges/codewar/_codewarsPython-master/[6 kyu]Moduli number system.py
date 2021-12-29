@@ -1,14 +1,14 @@
-from functools import reduce
+____ functools _______ reduce
 
 ___ fromNb2Str(n, modsys):
-    prime = [i for num in modsys for i in range(2,num+1) __ num%i == 0]
-    for p in prime:
-        __ prime.count(p) > 1:
-            return 'Not applicable'
+    prime = [i ___ num __ modsys ___ i __ r..(2,num+1) __ num%i __ 0]
+    ___ p __ prime:
+        __ prime.c.. p) > 1:
+            r.. 'Not applicable'
     
-    __ reduce(lambda x,y:x*y, modsys) < n:
-        return 'Not applicable'
-    return '-' + '--'.join([str(n%num) for num in modsys]) + '-'
+    __ reduce(l.... x,y:x*y, modsys) < n:
+        r.. 'Not applicable'
+    r.. '-' + '--'.join([str(n%num) ___ num __ modsys]) + '-'
 
 print(fromNb2Str(187,[8,7,5,3]))
 print(fromNb2Str(15,[8,6,5,3]))

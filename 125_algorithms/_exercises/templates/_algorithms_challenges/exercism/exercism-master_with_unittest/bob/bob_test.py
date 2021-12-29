@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 
-import unittest
+_______ unittest
 
-import bob
+_______ bob
 
 
 class BobTests(unittest.TestCase):
@@ -115,5 +115,5 @@ class BobTests(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

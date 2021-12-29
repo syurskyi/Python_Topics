@@ -6,7 +6,7 @@
 #         self.right = None
 
 class Solution(object):
-  ___ pathSum(self, root, sum):
+  ___ pathSum(self, root, s..):
     """
     :type root: TreeNode
     :type sum: int
@@ -15,15 +15,15 @@ class Solution(object):
 
     ___ dfs(root, s, path, res):
       __ root:
-        path.append(root.val)
+        path.a..(root.val)
         s -= root.val
         left = dfs(root.left, s, path, res)
         right = dfs(root.right, s, path, res)
-        __ not left and not right and s == 0:
-          res.append(path + [])
+        __ n.. left and n.. right and s __ 0:
+          res.a..(path + [])
         path.pop()
-        return True
+        r.. True
 
-    res = []
-    dfs(root, sum, [], res)
-    return res
+    res    # list
+    dfs(root, s.., [], res)
+    r.. res

@@ -8,28 +8,28 @@ class Solution:
     # @param {integer[]} nums
     # @return {string}
     ___ largestNumber(self, nums):
-        comp = lambda a, b: 1 __ a+b > b+a else -1 __ a+b<b+a else 0
-        nums = list(map(str, nums))
-        nums.sort(cmp=comp, reverse=True)
-        return ''.join(nums).lstrip('0')
+        comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
+        nums = l..(map(str, nums))
+        nums.sort(cmp=comp, r.._T..
+        r.. ''.join(nums).lstrip('0')
     
     # @param {integer[]} nums
     # @return {string}
     ___ largestNumber_python2(self, nums):
         #python 2 only
-        num = [str(x) for x in nums]
+        num = [str(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
-        return ''.join(num).lstrip('0') or '0'
+        r.. ''.join(num).lstrip('0') o. '0'
     
     ___ test(self):
         testCases = [
             [3, 30, 34, 5, 9],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.largestNumber(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

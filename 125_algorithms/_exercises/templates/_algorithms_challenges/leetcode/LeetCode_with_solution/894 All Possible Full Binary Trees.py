@@ -22,8 +22,8 @@ Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -34,24 +34,24 @@ class Solution:
         """
         recursive + memoization
         """
-        __ N not in self.cache:
-            __ N == 0:
-                ret = []
-            elif N == 1:
+        __ N n.. __ self.cache:
+            __ N __ 0:
+                ret    # list
+            ____ N __ 1:
                 ret = [TreeNode(0)]
-            else:
-                ret = []
-                for i in range(N):
+            ____:
+                ret    # list
+                ___ i __ r..(N):
                     lefts = self.allPossibleFBT(i)
                     rights = self.allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
                     __ lefts and rights:
-                        for left in lefts:
-                            for right in rights:
+                        ___ left __ lefts:
+                            ___ right __ rights:
                                 node = TreeNode(0)
                                 node.left = left
                                 node.right = right
-                                ret.append(node)
+                                ret.a..(node)
             self.cache[N] = ret
 
-        return self.cache[N]
+        r.. self.cache[N]

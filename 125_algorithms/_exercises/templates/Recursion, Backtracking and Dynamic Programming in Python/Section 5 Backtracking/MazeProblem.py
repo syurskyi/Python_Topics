@@ -41,10 +41,10 @@ c_ MazeProblem:
 
         # we do not step out of the board
         # horizontally and then vertically
-        __ x < 0 or x > maze_size:
+        __ x < 0 o. x > maze_size:
             r_ F..
 
-        __ y < 0 or y > maze_size:
+        __ y < 0 o. y > maze_size:
             r_ F..
 
         # there may be obstacles (we are not able to use cells that are obstacles)

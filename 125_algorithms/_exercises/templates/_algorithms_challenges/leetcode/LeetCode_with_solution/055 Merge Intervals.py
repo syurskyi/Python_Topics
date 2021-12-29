@@ -23,19 +23,19 @@ class Solution(object):
         :param itvls: a list of Interval
         :return: a list of Interval
         """
-        __ not itvls:
-            return []
+        __ n.. itvls:
+            r.. []
 
-        itvls.sort(key=lambda x: x.start)  # sort first, since time complexity less than brute force
+        itvls.sort(key=l.... x: x.start)  # sort first, since time complexity less than brute force
         ret = [itvls[0]]
-        for cur in itvls[1:]:
+        ___ cur __ itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
                 pre.end = max(pre.end, cur.end)
-            else:
-                ret.append(cur)
+            ____:
+                ret.a..(cur)
 
-        return ret
+        r.. ret
 
     ___ merge_error(self, itvls):
         """
@@ -44,13 +44,13 @@ class Solution(object):
         :param itvls: a list of Interval
         :return: a list of Interval
         """
-        __ not itvls:
-            return []
+        __ n.. itvls:
+            r.. []
 
         ret = [itvls[0]]
-        for interval in itvls[1:]:
+        ___ interval __ itvls[1:]:
             __ ret[-1].end < interval.start:
-                ret.append(interval)
+                ret.a..(interval)
                 continue
             __ ret[-1].start <= interval.start <= ret[-1].end <= interval.end:
                 ret[-1].end = interval.end
@@ -59,13 +59,13 @@ class Solution(object):
                 ret[-1] = interval
                 continue
             __ ret[-1].start <= interval.start < ret[-1].end and ret[-1].start <= interval.end < ret[-1].end:
-                ret.append(interval)
+                ret.a..(interval)
                 continue
             __ interval.start < ret[-1].start <= interval.end < ret[-1].end:
                 ret[-1].start = interval.start
                 continue
             __ interval.end < ret[-1].start:
-                ret.append(ret)
+                ret.a..(ret)
                 continue
 
-        return ret
+        r.. ret

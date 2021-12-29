@@ -11,31 +11,31 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] for _ in range(numCourses)]
+        graph = [[] ___ _ __ r..(numCourses)]
         degree = [0]*numCourses
-        queue = []
+        queue    # list
         count = 0
-        for prereq in prerequisites:
+        ___ prereq __ prerequisites:
             degree[prereq[0]] += 1
-            graph[prereq[1]].append(prereq[0])
+            graph[prereq[1]].a..(prereq[0])
         print('degree: %s' % (degree))
-        for i in range(numCourses):
-            __ degree[i] == 0:
-                queue.append(i)
+        ___ i __ r..(numCourses):
+            __ degree[i] __ 0:
+                queue.a..(i)
                 count += 1
         while queue:
             course = queue.pop(0)
-            for pointer in graph[course]:
+            ___ pointer __ graph[course]:
                 degree[pointer] -= 1
-                __ degree[pointer] == 0:
-                    queue.append(pointer)
+                __ degree[pointer] __ 0:
+                    queue.a..(pointer)
                     count += 1
         print('graph:  %s' % (graph))
         print('degree: %s' % (degree))
-        __ count == numCourses:
-            return True
-        else:
-            return False
+        __ count __ numCourses:
+            r.. True
+        ____:
+            r.. False
     
     ___ canFinishDFS(self, numCourses, prerequisites):
         """
@@ -43,25 +43,25 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] for _ in range(numCourses)]
+        graph = [[] ___ _ __ r..(numCourses)]
         visited = [False]*numCourses
-        for i, prereq in enumerate(prerequisites):
-            graph[prereq[1]].append(prereq[0])
-        for i in range(numCourses):
-            __ not self.dfs(graph, visited, i):
-                return False
-        return True
+        ___ i, prereq __ enumerate(prerequisites):
+            graph[prereq[1]].a..(prereq[0])
+        ___ i __ r..(numCourses):
+            __ n.. self.dfs(graph, visited, i):
+                r.. False
+        r.. True
     
     ___ dfs(self, graph, visited, course):
         __ visited[course]:
-            return False
-        else:
+            r.. False
+        ____:
             visited[course] = True
-        for precourse in graph[course]:
-            __ not self.dfs(graph, visited, precourse):
-                return False
+        ___ precourse __ graph[course]:
+            __ n.. self.dfs(graph, visited, precourse):
+                r.. False
         visited[course] = False
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -71,7 +71,7 @@ class Solution(object):
             (5, [[0, 1], [1, 2], [2, 3], [4, 1], [4, 2], [4, 0], [1, 4]]),
             (3, [[0, 1], [1, 0], [2, 0]]),
         ]
-        for numCourses, prerequisites in testCases:
+        ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses))
             print('prerequisites: %s' % (prerequisites))
             result = self.canFinishDFS(numCourses, prerequisites)
@@ -80,5 +80,5 @@ class Solution(object):
             print('BFS Result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

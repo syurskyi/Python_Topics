@@ -10,14 +10,14 @@ class Solution(object):
         :type m: int
         :rtype: int
         """
-        __ m == 0: return 1
-        __ n == 1: return 2
-        __ n == 2 and m == 1: return 3
-        __ n == 2: return 4
-        __ m == 1: return 4
-        __ m == 2: return 7
-        __ m >= 3: return 8
-        return 8
+        __ m __ 0: r.. 1
+        __ n __ 1: r.. 2
+        __ n __ 2 and m __ 1: r.. 3
+        __ n __ 2: r.. 4
+        __ m __ 1: r.. 4
+        __ m __ 2: r.. 7
+        __ m >= 3: r.. 8
+        r.. 8
     
     ___ test(self):
         testCases = [
@@ -34,12 +34,12 @@ class Solution(object):
                 1,
             ],
         ]
-        for n, m in testCases:
+        ___ n, m __ testCases:
             print('n: %s' % n)
             print('m: %s' % m)
             result = self.flipLights(n, m)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

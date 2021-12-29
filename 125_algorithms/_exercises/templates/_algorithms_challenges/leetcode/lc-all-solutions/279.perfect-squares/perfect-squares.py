@@ -4,26 +4,26 @@ class Solution(object):
     :type n: int
     :rtype: int
     """
-    squares = []
+    squares    # list
     j = 1
     while j * j <= n:
-      squares.append(j * j)
+      squares.a..(j * j)
       j += 1
     level = 0
     queue = [n]
     visited = [False] * (n + 1)
     while queue:
       level += 1
-      temp = []
-      for q in queue:
-        for factor in squares:
-          __ q - factor == 0:
-            return level
+      temp    # list
+      ___ q __ queue:
+        ___ factor __ squares:
+          __ q - factor __ 0:
+            r.. level
           __ q - factor < 0:
             break
           __ visited[q - factor]:
             continue
-          temp.append(q - factor)
+          temp.a..(q - factor)
           visited[q - factor] = True
       queue = temp
-    return level
+    r.. level

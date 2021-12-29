@@ -17,25 +17,25 @@ class Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {ListNode[]} a lists of linked list
     ___ binaryTreeToLists(self, root):
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
 
         queue = [root]
         while queue:
-            _queue = []
+            _queue    # list
             dummy = tail = ListNode(-1)
 
-            for node in queue:
+            ___ node __ queue:
                 tail.next = ListNode(node.val)
                 tail = tail.next
 
                 __ node.left:
-                    _queue.append(node.left)
+                    _queue.a..(node.left)
                 __ node.right:
-                    _queue.append(node.right)
+                    _queue.a..(node.right)
 
             queue = _queue
-            ans.append(dummy.next)
+            ans.a..(dummy.next)
 
-        return ans
+        r.. ans

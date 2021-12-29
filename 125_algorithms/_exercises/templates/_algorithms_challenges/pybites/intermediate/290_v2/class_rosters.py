@@ -1,4 +1,4 @@
-import csv
+_______ csv
 
 
 ___ class_rosters(input_file):
@@ -8,21 +8,21 @@ ___ class_rosters(input_file):
         per class, correctly formatted.'''
      
     school_year = 2020 
-    result = []
+    result    # list
     with open(input_file,'r') as f:
         data = csv.reader(f)
 
-        for row in data:
+        ___ row __ data:
             _id = row[0]
-            for i in range(2,len(row)):
+            ___ i __ r..(2,l..(row)):
                 class_ = row[i]
                 __ class_:
                     class_section = class_.rsplit(' - ')[0]
-                    result.append(f"{class_section},{school_year},{_id}")
+                    result.a..(f"{class_section},{school_year},{_id}")
 
 
 
-    return result
+    r.. result
 
 
 

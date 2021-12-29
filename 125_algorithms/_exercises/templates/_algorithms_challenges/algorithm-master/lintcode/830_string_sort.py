@@ -4,7 +4,7 @@ class Solution:
     @return: sorted string
     """
     ___ stringSort(self, s):
-        __ not s:
-            return ''
+        __ n.. s:
+            r.. ''
 
-        return ''.join(sorted(s, key=lambda c: (-s.count(c), c)))
+        r.. ''.join(s..(s, key=l.... c: (-s.c.. c), c)))

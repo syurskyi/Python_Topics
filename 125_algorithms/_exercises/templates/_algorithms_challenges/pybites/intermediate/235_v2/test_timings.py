@@ -1,12 +1,12 @@
-import pytest
+_______ pytest
 
-from timings import timings_log, get_bite_with_fastest_avg_test
+____ timings _______ timings_log, get_bite_with_fastest_avg_test
 
 
 @pytest.fixture(scope='module')
 ___ timings():
     with open(timings_log) as f:
-        return f.readlines()
+        r.. f.readlines()
 
 
 @pytest.mark.parametrize("rows, expected_bites", [
@@ -18,7 +18,7 @@ ___ timings():
 ])
 ___ test_get_bite_with_fastest_avg_test(rows, expected_bites, timings):
     actual = str(get_bite_with_fastest_avg_test(timings[:rows]))
-    __ type(expected_bites) == tuple:
-        assert actual in expected_bites
-    else:
-        assert actual == expected_bites
+    __ type(expected_bites) __ tuple:
+        ... actual __ expected_bites
+    ____:
+        ... actual __ expected_bites

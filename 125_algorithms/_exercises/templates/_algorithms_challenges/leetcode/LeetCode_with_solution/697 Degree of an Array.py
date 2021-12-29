@@ -22,8 +22,8 @@ Note:
 nums.length will be between 1 and 50,000.
 nums[i] will be an integer between 0 and 49,999.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -32,25 +32,25 @@ class Solution:
         counter + two pointers does not work
         counter + first appearance
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
         counter = defaultdict(int)
         first = {}  # map from number to index
         mx = [0, 0]  #  [degree, length]
-        for i, n in enumerate(nums):
-            __ n not in first:
+        ___ i, n __ enumerate(nums):
+            __ n n.. __ first:
                 first[n] = i  # setdefault
             counter[n] += 1
             __ counter[n] > mx[0]:
                 # If there is only one mode number 
                 mx = [counter[n], i - first[n] + 1]
-            elif counter[n] == mx[0]:
+            ____ counter[n] __ mx[0]:
                 # How to handle duplicate mode number
-                mx[1] = min(mx[1], i - first[n] + 1)
+                mx[1] = m..(mx[1], i - first[n] + 1)
 
-        return mx[1]
+        r.. mx[1]
 
 
-__ __name__ == "__main__":
-    assert Solution().findShortestSubArray([1, 2, 2, 3, 1]) == 2
+__ __name__ __ "__main__":
+    ... Solution().findShortestSubArray([1, 2, 2, 3, 1]) __ 2

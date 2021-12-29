@@ -30,7 +30,7 @@ Note:
 0 <= A[i] <= 10000
 0 <= K <= 10000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -38,4 +38,4 @@ class Solution:
         """
         only need the max and min
         """
-        return max(0, max(A) - K - (min(A) + K))
+        r.. max(0, max(A) - K - (m..(A) + K))

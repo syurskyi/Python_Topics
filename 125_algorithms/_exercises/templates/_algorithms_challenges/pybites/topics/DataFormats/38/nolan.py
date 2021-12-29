@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+_______ xml.etree.ElementTree as ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -13,20 +13,20 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 
 ___ get_tree():
     """You probably want to use ET.fromstring"""
-    return(ET.fromstring(xmlstring))
+    r..(ET.fromstring(xmlstring))
 
 
 
 ___ get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    return [movie.get('title') for movie in get_tree().iter('movie')]
+    r.. [movie.get('title') ___ movie __ get_tree().iter('movie')]
 
 
 ___ get_movie_longest_runtime():
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
-    longest = sorted([int(movie.get('runtime')[:3]) for movie in get_tree().iter('movie')], reverse=True)[0]
+    longest = s..([int(movie.get('runtime')[:3]) ___ movie __ get_tree().iter('movie')], r.._T..[0]
     root = ET.fromstring(xmlstring)
-    for movie in root.findall('movie'):
-        __ int(movie.get('runtime')[:3]) == longest:
-            return(movie.get('title'))
+    ___ movie __ root.findall('movie'):
+        __ int(movie.get('runtime')[:3]) __ longest:
+            r..(movie.get('title'))

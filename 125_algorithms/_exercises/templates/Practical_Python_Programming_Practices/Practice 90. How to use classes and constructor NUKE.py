@@ -4,13 +4,13 @@ class company:
         self.surname  employee_surname
 
     ___ employee(self):
-        return self.firstname + ' ' + self.surname
+        r.. self.firstname + ' ' + self.surname
 
 staff  []
-for i in range(3):
+___ i __ r..(3):
     name  input("Insert firstname and surname: ")
-    name  name.split()
-    staff.append(company(name[0], name[1]))
+    name  name.s..
+    staff.a..(company(name[0], name[1]))
 
-for i in staff:
+___ i __ staff:
     print(i.employee())

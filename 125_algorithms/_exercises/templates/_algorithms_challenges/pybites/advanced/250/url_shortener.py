@@ -1,9 +1,9 @@
-from math import floor
-from string import ascii_lowercase, ascii_uppercase, digits
-from typing import Dict
+____ math _______ floor
+____ string _______ ascii_lowercase, ascii_uppercase, digits
+____ typing _______ Dict
 
 CODEX: str = digits + ascii_lowercase + ascii_uppercase
-BASE: int = len(CODEX)
+BASE: int = l..(CODEX)
 # makeshift database record
 LINKS: Dict[int, str] = {
     1: "https://pybit.es",
@@ -23,7 +23,7 @@ ___ encode(record: int) -> str:
     """Encodes an integer into Base62"""
     
 
-    characters = []
+    characters    # list
 
 
     while record:
@@ -32,11 +32,11 @@ ___ encode(record: int) -> str:
         record //= 62
 
         character = CODEX[v]
-        characters.append(character)
+        characters.a..(character)
 
 
     characters.reverse()
-    return ''.join(characters)
+    r.. ''.join(characters)
 
 
 
@@ -51,11 +51,11 @@ ___ decode(short_url: str) -> int:
     """Decodes the Base62 string into a Base10 integer"""
 
     value = 0
-    for i,character in enumerate(reversed(short_url),0):
+    ___ i,character __ enumerate(reversed(short_url),0):
         value += BASE**i * CODEX.index(character)
 
 
-    return value
+    r.. value
 
 
 
@@ -67,14 +67,14 @@ ___ redirect(url: str) -> str:
     3. Return URL stored in LINKS or proper message
     """
     
-    __ not url.startswith(SITE):
-        return INVALID
+    __ n.. url.startswith(SITE):
+        r.. INVALID
 
     number = url.split('/')[-1]
 
     decoded = decode(number)
 
-    return LINKS.get(decoded,NO_RECORD)
+    r.. LINKS.get(decoded,NO_RECORD)
 
 
 
@@ -105,7 +105,7 @@ ___ shorten_url(url: str, next_record: int) -> str:
     short_url = f"{SITE}/{encoded_record}"
 
 
-    return short_url
+    r.. short_url
 
 
 

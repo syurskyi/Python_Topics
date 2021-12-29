@@ -14,8 +14,8 @@ class Solution:
     @return: a ListNode
     """
     ___ reverseKGroup(self, head, k):
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         dummy = ListNode(0)
         dummy.next = head
@@ -24,35 +24,35 @@ class Solution:
         while head:
             head = self.reverse_next_kth(head, k)
 
-        return dummy.next
+        r.. dummy.next
 
     ___ find_kth(self, head, k):
-        for i in range(k):
-            __ not head:
-                return
+        ___ i __ r..(k):
+            __ n.. head:
+                r..
             head = head.next
-        return head
+        r.. head
 
     ___ reverse(self, head):
-        pre = nxt = None
+        pre = nxt = N..
         while head:
             nxt = head.next
             head.next = pre
             pre = head
             head = nxt
-        return pre
+        r.. pre
 
     ___ reverse_next_kth(self, head, k):
         nk = self.find_kth(head, k)
-        __ not nk:
-            return
+        __ n.. nk:
+            r..
         nk_nxt = nk.next
         n1_pre = head
         n1 = head.next
 
-        nk.next = None
+        nk.next = N..
 
         self.reverse(n1)
         n1_pre.next = nk
         n1.next = nk_nxt
-        return n1
+        r.. n1

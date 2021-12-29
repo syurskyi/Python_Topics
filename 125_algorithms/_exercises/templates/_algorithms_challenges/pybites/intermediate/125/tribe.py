@@ -1,8 +1,8 @@
-from collections import Counter
+____ collections _______ Counter
 
-from bs4 import BeautifulSoup
-import bs4
-import requests
+____ bs4 _______ BeautifulSoup
+_______ bs4
+_______ requests
 
 AMAZON = "amazon.com"
 # static copy
@@ -13,7 +13,7 @@ MIN_COUNT = 3
 ___ load_page():
     """Download the blog html and return its decoded content"""
     with requests.Session() as session:
-        return session.get(TIM_BLOG).content.decode('utf-8')
+        r.. session.get(TIM_BLOG).content.decode('utf-8')
 
 
 ___ get_top_books(content_ N..
@@ -23,22 +23,22 @@ ___ get_top_books(content_ N..
        Return a list of (title, count) tuples where
        count is at least MIN_COUNT
     """
-    __ content __ None:
+    __ content __ N..
         content = load_page()
     
     soup = BeautifulSoup(content, "html.parser")
     
-    amazon_books = []
-    for link in soup.find_all("a"):
-        __ "amazon" in link.get("href"):
-            amazon_books.append([link.get_text().strip().strip("\n")])
+    amazon_books    # list
+    ___ link __ soup.find_all("a"):
+        __ "amazon" __ link.get("href"):
+            amazon_books.a..([link.get_text().strip().strip("\n")])
 
     amazon_books_counter = Counter()
-    for book in amazon_books:
+    ___ book __ amazon_books:
         amazon_books_counter.update(book)
 
-    return [(key, value) for key, value in amazon_books_counter.items() __ value >= MIN_COUNT]
+    r.. [(key, value) ___ key, value __ amazon_books_counter.items() __ value >= MIN_COUNT]
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print(get_top_books())

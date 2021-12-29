@@ -13,20 +13,20 @@ class Solution:
         :type preorder:List[int]
         :rtype: bool
         """
-        left_finished = None
-        stk = []
-        for num in preorder:
+        left_finished = N..
+        stk    # list
+        ___ num __ preorder:
             __ left_finished and num < left_finished:
-                return False
+                r.. False
 
             while stk and stk[-1] < num:
                 left_finished = stk.pop()
 
-            stk.append(num)
+            stk.a..(num)
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     preorder = [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
-    assert Solution().verifyPreorder(preorder) == False
+    ... Solution().verifyPreorder(preorder) __ False

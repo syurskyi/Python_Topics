@@ -1,5 +1,5 @@
-import pandas as pd
-import numpy as np
+_______ pandas as pd
+_______ numpy as np
 
 movie_excel_file = "https://bites-data.s3.us-east-2.amazonaws.com/movies.xlsx"
 
@@ -9,25 +9,25 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=False):
        multiple rows so it becomes easier to group the data -
        https://stackoverflow.com/a/40449726
     """
-    __(lst_cols is not None and len(lst_cols) > 0 and not
-       isinstance(lst_cols, (list, tuple, np.ndarray, pd.Series))):
+    __(lst_cols __ n.. N.. and l..(lst_cols) > 0 and n..
+       isi..(lst_cols, (l.., tuple, np.ndarray, pd.Series))):
         lst_cols = [lst_cols]
     idx_cols = df.columns.difference(lst_cols)
-    lens = df[lst_cols[0]].str.len()
+    lens = df[lst_cols[0]].str.l..()
     idx = np.repeat(df.index.values, lens)
     res = (pd.DataFrame({
                 col:np.repeat(df[col].values, lens)
-                for col in idx_cols},
+                ___ col __ idx_cols},
                 index=idx)
              .assign(**{col:np.concatenate(df.loc[lens>0, col].values)
-                            for col in lst_cols}))
-    __ (lens == 0).any():
-        res = (res.append(df.loc[lens==0, idx_cols], sort=False)
+                            ___ col __ lst_cols}))
+    __ (lens __ 0).any():
+        res = (res.a..(df.loc[lens__0, idx_cols], sort=False)
                   .fillna(fill_value))
     res = res.sort_index()
-    __ not preserve_index:
+    __ n.. preserve_index:
         res = res.reset_index(drop=True)
-    return res
+    r.. res
 
 
 ___ group_by_genre(data=movie_excel_file):
@@ -52,5 +52,5 @@ ___ group_by_genre(data=movie_excel_file):
     movies = movies[~movies.genre.str.contains('no genres')]
 
 
-    return movies.genre.value_counts().to_frame('movie')
+    r.. movies.genre.value_counts().to_frame('movie')
 

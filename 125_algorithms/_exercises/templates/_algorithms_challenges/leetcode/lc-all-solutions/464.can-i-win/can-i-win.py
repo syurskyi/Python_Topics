@@ -7,34 +7,34 @@ class Solution(object):
     """
 
     ___ helper(pool, target, visited):
-      __ pool in visited:
-        return visited[pool]
+      __ pool __ visited:
+        r.. visited[pool]
       __ target <= 0:
-        return False
+        r.. False
       __ pool >= self.maxPool:
-        return True
+        r.. True
 
       mask = 0x01
-      for i in range(0, maxChoosableInteger):
-        __ pool & mask == 0:
+      ___ i __ r..(0, maxChoosableInteger):
+        __ pool & mask __ 0:
           newPool = pool | mask
-          __ helper(newPool, target - (i + 1), visited) == False:
+          __ helper(newPool, target - (i + 1), visited) __ False:
             visited[pool] = True
-            return True
+            r.. True
         mask = mask << 1
       visited[pool] = False
-      return False
+      r.. False
 
     __ (1 + maxChoosableInteger) * (maxChoosableInteger / 2) < desiredTotal:
-      return False
+      r.. False
 
-    __ desiredTotal == 0:
-      return True
+    __ desiredTotal __ 0:
+      r.. True
     self.maxPool = 0
     mask = 1
-    for i in range(0, maxChoosableInteger):
+    ___ i __ r..(0, maxChoosableInteger):
       self.maxPool |= mask
       mask = mask << 1
     pool = 0
     visited = {}
-    return helper(pool, desiredTotal, visited)
+    r.. helper(pool, desiredTotal, visited)

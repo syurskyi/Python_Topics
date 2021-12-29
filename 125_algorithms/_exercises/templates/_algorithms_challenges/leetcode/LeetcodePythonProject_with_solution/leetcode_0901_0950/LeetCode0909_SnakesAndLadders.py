@@ -4,31 +4,31 @@ class Solution(object):
         :type board: List[List[int]]
         :rtype: int
         """
-        n = len(board)
-        newboard = []
-        for i in range(n):
-            newboard.extend(board[n-i-1] __ i % 2 == 0 else board[n-i-1][::-1])
+        n = l..(board)
+        newboard    # list
+        ___ i __ r..(n):
+            newboard.extend(board[n-i-1] __ i % 2 __ 0 ____ board[n-i-1][::-1])
         board = newboard
-        n = len(board)
+        n = l..(board)
         queue = [(0, 0)]
         visited = set([0])
         while queue:
             i, d = queue.pop(0)
-            for j in range(i+1, i+7):
-                __ j == n-1:
-                    return d+1
-                __ j not in visited:
+            ___ j __ r..(i+1, i+7):
+                __ j __ n-1:
+                    r.. d+1
+                __ j n.. __ visited:
                     visited.add(j)
-                    __ board[j] == -1:
-                        queue.append((j, d+1))
-                    else:
-                        __ board[j] == n:
-                            return d+1
-                        __ board[board[j]-1] == -1:
+                    __ board[j] __ -1:
+                        queue.a..((j, d+1))
+                    ____:
+                        __ board[j] __ n:
+                            r.. d+1
+                        __ board[board[j]-1] __ -1:
                             visited.add(board[j]-1)
                             # if not, later moves can visit it again?
-                        queue.append((board[j]-1, d+1))
-        return -1
+                        queue.a..((board[j]-1, d+1))
+        r.. -1
 
     ___ test(self):
         testCases = [
@@ -63,11 +63,11 @@ class Solution(object):
              [-1,-1,-1,-1,-1,-1],
              [-1,15,-1,-1,-1,-1]],
         ]
-        for board in testCases:
+        ___ board __ testCases:
             res = self.snakesAndLadders(board)
             print('res: %s' % res)
             print('-='*30+'-')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

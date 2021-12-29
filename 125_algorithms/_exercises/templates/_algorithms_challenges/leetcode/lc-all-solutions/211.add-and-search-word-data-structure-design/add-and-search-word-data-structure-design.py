@@ -10,11 +10,11 @@ class Trie:
 
   ___ addWord(self, word):
     root = self.root
-    for i in range(0, len(word)):
+    ___ i __ r..(0, l..(word)):
       c = word[i]
-      __ c in root.neighbours:
+      __ c __ root.neighbours:
         root = root.neighbours[c]
-      else:
+      ____:
         newnode = TrieNode()
         root.neighbours[c] = newnode
         root = root.neighbours[c]
@@ -31,25 +31,25 @@ class WordDictionary:
     self.cache.add(word)
 
   ___ search(self, word):
-    __ word in self.cache:
-      return True
+    __ word __ self.cache:
+      r.. True
 
     ___ dfsHelper(root, word, index):
-      __ not root:
-        return False
+      __ n.. root:
+        r.. False
 
-      __ len(word) == index:
+      __ l..(word) __ index:
         __ root.isWord:
-          return True
-        return False
+          r.. True
+        r.. False
 
       __ word[index] != ".":
-        __ dfsHelper(root.neighbours.get(word[index], None), word, index + 1):
-          return True
-      else:
-        for nbr in root.neighbours:
+        __ dfsHelper(root.neighbours.get(word[index], N..), word, index + 1):
+          r.. True
+      ____:
+        ___ nbr __ root.neighbours:
           __ dfsHelper(root.neighbours[nbr], word, index + 1):
-            return True
-      return False
+            r.. True
+      r.. False
 
-    return dfsHelper(self.trie.root, word, 0)
+    r.. dfsHelper(self.trie.root, word, 0)

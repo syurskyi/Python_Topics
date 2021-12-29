@@ -1,4 +1,4 @@
-from winners import print_game_stats, games_won
+____ winners _______ print_game_stats, games_won
 
 
 ___ test_print_game_stats(capfd):
@@ -12,5 +12,5 @@ ___ test_print_game_stats(capfd):
     output = capfd.readouterr()[0].splitlines()
 
     # dict + Python 3.7 = insert order should be retained
-    for line in winner_prints:
-        assert line in output
+    ___ line __ winner_prints:
+        ... line __ output

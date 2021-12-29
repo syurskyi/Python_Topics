@@ -29,9 +29,9 @@ class Solution(object):
             mid = left + (right - left) / 2
             __ isBadVersion(mid):
                 right = mid
-            else:
+            ____:
                 left = mid
         __ isBadVersion(left):
-            return left
-        elif isBadVersion(right):
-            return right
+            r.. left
+        ____ isBadVersion(right):
+            r.. right

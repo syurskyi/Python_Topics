@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from atbash_cipher import decode, encode
+____ atbash_cipher _______ decode, encode
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -57,5 +57,5 @@ class AtbashCipherTest(unittest.TestCase):
             decode(encode("Testing, 1 2 3, testing.")), "testing123testing")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

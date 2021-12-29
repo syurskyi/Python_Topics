@@ -1,9 +1,9 @@
-import itertools
+_______ itertools
 
 
 ___ friends_teams(friends, team_size=2, order_does_matter=False):
     __ order_does_matter:
         func = itertools.permutations
-    else:
+    ____:
         func = itertools.combinations
-    return func(friends, team_size)
+    r.. func(friends, team_size)

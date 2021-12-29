@@ -15,16 +15,16 @@ ___ print_hanging_indents(poem):
     lines = poem.split('\n')
 
 
-    for i in range(1,len(lines)):
+    ___ i __ r..(1,l..(lines)):
 
         line = lines[i]
 
         line = line.lstrip()
-        __ lines[i] == '':
+        __ lines[i] __ '':
             continue
         __ lines[i -1] != '':
             print(' ' * INDENTS + line)
-        else:
+        ____:
             print(line)
 
 
@@ -35,7 +35,7 @@ ___ print_hanging_indents(poem):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     
 
 

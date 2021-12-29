@@ -4,23 +4,23 @@ class Solution(object):
     :type nums: List[int]
     :rtype: List[List[int]]
     """
-    res = []
+    res    # list
     visited = set([])
 
     ___ dfs(nums, path, res, visited):
-      __ len(path) == len(nums):
-        res.append(path + [])
-        return
+      __ l..(path) __ l..(nums):
+        res.a..(path + [])
+        r..
 
-      for i in range(0, len(nums)):
+      ___ i __ r..(0, l..(nums)):
         # if i > 0 and nums[i - 1] == nums[i]:
         #     continue
-        __ i not in visited:
+        __ i n.. __ visited:
           visited.add(i)
-          path.append(nums[i])
+          path.a..(nums[i])
           dfs(nums, path, res, visited)
           path.pop()
           visited.discard(i)
 
     dfs(nums, [], res, visited)
-    return res
+    r.. res

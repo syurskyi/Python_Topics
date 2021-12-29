@@ -2,7 +2,7 @@
 # @param buf, a list of characters
 # @return an integer
 # def read4(buf):
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -19,11 +19,11 @@ class Solution(object):
     tmp = [""] * 4
     while cnt < n:
       r = read4(tmp)
-      for i in range(r):
-        self.rBuf.append(tmp[i])
-      for i in range(min(n - cnt, len(self.rBuf))):
+      ___ i __ r..(r):
+        self.rBuf.a..(tmp[i])
+      ___ i __ r..(m..(n - cnt, l..(self.rBuf))):
         buf[cnt] = self.rBuf.popleft()
         cnt += 1
-      __ r == 0:
+      __ r __ 0:
         break
-    return cnt
+    r.. cnt

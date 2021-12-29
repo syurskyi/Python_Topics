@@ -4,9 +4,9 @@ Implementation note:
 The slices function should raise a ValueError with a meaningful error
 message if its length argument doesn't fit the series.
 """
-import unittest
+_______ unittest
 
-from series import slices
+____ series _______ slices
 
 
 class SeriesTest(unittest.TestCase):
@@ -45,5 +45,5 @@ class SeriesTest(unittest.TestCase):
             slices("01234", 0)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

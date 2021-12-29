@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from flatten_array import flatten
+____ flatten_array _______ flatten
 
 
 class FlattenArrayTests(unittest.TestCase):
@@ -18,7 +18,7 @@ class FlattenArrayTests(unittest.TestCase):
         self.assertEqual(flatten([[()]]), [])
 
     ___ test_with_none_values(self):
-        inputs = [0, 2, [[2, 3], 8, [[100]], None, [[None]]], -2]
+        inputs = [0, 2, [[2, 3], 8, [[100]], N.., [[N..]]], -2]
         expected = [0, 2, 2, 3, 8, 100, -2]
         self.assertEqual(flatten(inputs), expected)
 
@@ -28,13 +28,13 @@ class FlattenArrayTests(unittest.TestCase):
         self.assertEqual(flatten(inputs), expected)
 
     ___ test_all_values_are_none(self):
-        inputs = [None, [[[None]]], None, None, [[None, None], None], None]
-        expected = []
+        inputs = [N.., [[[N..]]], N.., N.., [[N.., N..], N..], N..]
+        expected    # list
         self.assertEqual(flatten(inputs), expected)
 
     ___ test_strings(self):
         self.assertEqual(flatten(['0', ['1', '2']]), ['0', '1', '2'])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

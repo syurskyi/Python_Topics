@@ -1,12 +1,12 @@
 ___ even_odd_partition(lst):
-    output = []
-    odd = []
+    output    # list
+    odd    # list
     even =[]
-    for i in lst:
-        __ i % 2 == 0:
-            even.append(i)
-        else:
-            odd.append(i)
-    output.append(even)
-    output.append(odd)
-    return output
+    ___ i __ lst:
+        __ i % 2 __ 0:
+            even.a..(i)
+        ____:
+            odd.a..(i)
+    output.a..(even)
+    output.a..(odd)
+    r.. output

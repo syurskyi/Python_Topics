@@ -33,32 +33,32 @@ Special thanks to the colleague that, seeing my code and commenting that I worke
 
 
 ___ generate_bc(url, separator):
-    __ '//' in url:
+    __ '//' __ url:
         url = url[url.index('//') + 2:]
 
     url = url.rstrip('/')
 
     try:
-        for i, c in enumerate(url):
-            __ c in ['?', '#']:
+        ___ i, c __ enumerate(url):
+            __ c __ ['?', '#']:
                 url = url[0:i]
                 break
 
         menus = url.split('/')[1:]
-        __ menus and 'index.' == menus[-1][0:6]:
+        __ menus and 'index.' __ menus[-1][0:6]:
             menus = menus[:-1]
-        __ not menus:
-            return '<span class="active">HOME</span>'
+        __ n.. menus:
+            r.. '<span class="active">HOME</span>'
 
         breadcrumb = '<a href="/">HOME</a>'
 
-        for i, e in enumerate(menus[:-1]):
+        ___ i, e __ enumerate(menus[:-1]):
             breadcrumb += separator + '<a href="/{}/">{}</a>'.format('/'.join(menus[:i + 1]), get_element_name(e))
 
         breadcrumb += separator + '<span class="active">{}</span>'.format(get_element_name(menus[-1]))
-        return breadcrumb
+        r.. breadcrumb
     except:
-        return url
+        r.. url
 
 
 ignore_words = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to", "at", "a"]
@@ -66,38 +66,38 @@ ignore_words = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to
 
 ___ get_element_name(element):
     acronyms = element.split('-')
-    for i, c in enumerate(acronyms[-1]):
-        __ c == '.':
+    ___ i, c __ enumerate(acronyms[-1]):
+        __ c __ '.':
             acronyms[-1] = acronyms[-1][:i]
             break
 
-    __ len(element) > 30:
-        for i, c in reversed(list(enumerate(acronyms))):
-            __ c in ignore_words:
+    __ l..(element) > 30:
+        ___ i, c __ reversed(l..(enumerate(acronyms))):
+            __ c __ ignore_words:
                 acronyms.pop(i)
-        return ''.join([s[0].upper() for s in acronyms])
+        r.. ''.join([s[0].upper() ___ s __ acronyms])
 
-    return ' '.join([s.upper() for s in acronyms])
+    r.. ' '.join([s.upper() ___ s __ acronyms])
 
 
 
-assert generate_bc("mysite.com/pictures/holidays.html",
-                   " : ") == '<a href="/">HOME</a> : <a href="/pictures/">PICTURES</a> : <span class="active">HOLIDAYS</span>'
-assert generate_bc("www.codewars.com/users/GiacomoSorbi?ref=CodeWars",
-                   " / ") == '<a href="/">HOME</a> / <a href="/users/">USERS</a> / <span class="active">GIACOMOSORBI</span>'
-assert generate_bc("www.microsoft.com/important/confidential/docs/index.htm#top",
-                   " * ") == '<a href="/">HOME</a> * <a href="/important/">IMPORTANT</a> * <a href="/important/confidential/">CONFIDENTIAL</a> * <span class="active">DOCS</span>'
-assert generate_bc("mysite.com/very-long-url-to-make-a-silly-yet-meaningful-example/example.asp",
-                   " > ") == '<a href="/">HOME</a> > <a href="/very-long-url-to-make-a-silly-yet-meaningful-example/">VLUMSYME</a> > <span class="active">EXAMPLE</span>'
-assert generate_bc("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi",
-                   " + ") == '<a href="/">HOME</a> + <a href="/users/">USERS</a> + <span class="active">GIACOMO SORBI</span>'
+... generate_bc("mysite.com/pictures/holidays.html",
+                   " : ") __ '<a href="/">HOME</a> : <a href="/pictures/">PICTURES</a> : <span class="active">HOLIDAYS</span>'
+... generate_bc("www.codewars.com/users/GiacomoSorbi?ref=CodeWars",
+                   " / ") __ '<a href="/">HOME</a> / <a href="/users/">USERS</a> / <span class="active">GIACOMOSORBI</span>'
+... generate_bc("www.microsoft.com/important/confidential/docs/index.htm#top",
+                   " * ") __ '<a href="/">HOME</a> * <a href="/important/">IMPORTANT</a> * <a href="/important/confidential/">CONFIDENTIAL</a> * <span class="active">DOCS</span>'
+... generate_bc("mysite.com/very-long-url-to-make-a-silly-yet-meaningful-example/example.asp",
+                   " > ") __ '<a href="/">HOME</a> > <a href="/very-long-url-to-make-a-silly-yet-meaningful-example/">VLUMSYME</a> > <span class="active">EXAMPLE</span>'
+... generate_bc("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi",
+                   " + ") __ '<a href="/">HOME</a> + <a href="/users/">USERS</a> + <span class="active">GIACOMO SORBI</span>'
 
 # print("https://www.linkedin.com/in/giacomosorbi".index('//'))
 # print(generate_bc("https://www.linkedin.com/in/giacomosorbi", " * "))
-assert generate_bc("https://www.linkedin.com/in/giacomosorbi",
-                   " * ") == '<a href="/">HOME</a> * <a href="/in/">IN</a> * <span class="active">GIACOMOSORBI</span>'
+... generate_bc("https://www.linkedin.com/in/giacomosorbi",
+                   " * ") __ '<a href="/">HOME</a> * <a href="/in/">IN</a> * <span class="active">GIACOMOSORBI</span>'
 print(generate_bc("www.agcpartners.co.uk", " * "))
-assert generate_bc("www.agcpartners.co.uk", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.agcpartners.co.uk/", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.agcpartners.co.uk/index.html", " * ") == '<span class="active">HOME</span>'
-assert generate_bc("www.google.ca/index.php", " * ") == '<span class="active">HOME</span>'
+... generate_bc("www.agcpartners.co.uk", " * ") __ '<span class="active">HOME</span>'
+... generate_bc("www.agcpartners.co.uk/", " * ") __ '<span class="active">HOME</span>'
+... generate_bc("www.agcpartners.co.uk/index.html", " * ") __ '<span class="active">HOME</span>'
+... generate_bc("www.google.ca/index.php", " * ") __ '<span class="active">HOME</span>'

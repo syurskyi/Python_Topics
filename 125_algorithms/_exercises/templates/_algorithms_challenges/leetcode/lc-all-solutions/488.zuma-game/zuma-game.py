@@ -8,57 +8,57 @@ class Solution(object):
 
     ___ dfs(line, balls, visited):
       line = reduceLine(line)
-      __ (line, balls) in visited:
-        return visited[line, balls]
-      __ len(line) == 0:
-        return len(hand) - len(balls)
-      __ len(balls) == 0:
-        return float("inf")
+      __ (line, balls) __ visited:
+        r.. visited[line, balls]
+      __ l..(line) __ 0:
+        r.. l..(hand) - l..(balls)
+      __ l..(balls) __ 0:
+        r.. float("inf")
       res = float("inf")
-      for i in range(len(balls)):
-        for j in range(len(line) + 1):
-          __ j == 0 and line[0] != balls[i]:
+      ___ i __ r..(l..(balls)):
+        ___ j __ r..(l..(line) + 1):
+          __ j __ 0 and line[0] != balls[i]:
             continue
-          elif j == len(line) and line[-1] != balls[i]:
+          ____ j __ l..(line) and line[-1] != balls[i]:
             continue
-          elif 0 < j < len(line) and balls[i] != line[j - 1] and balls[i] != line[j]:
+          ____ 0 < j < l..(line) and balls[i] != line[j - 1] and balls[i] != line[j]:
             continue
-          res = min(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
+          res = m..(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
       visited[line, balls] = res
-      return res
+      r.. res
 
     ___ reduceLine(line):
       ___ reducer(line):
-        __ len(line) < 3:
-          return line
-        ret = []
-        dp = [1] * len(line)
+        __ l..(line) < 3:
+          r.. line
+        ret    # list
+        dp = [1] * l..(line)
         pre = line[-1]
         count = 1
-        for i in reversed(range(len(line) - 1)):
-          __ line[i] == pre:
+        ___ i __ reversed(r..(l..(line) - 1)):
+          __ line[i] __ pre:
             count += 1
-          else:
+          ____:
             pre = line[i]
             count = 1
           dp[i] = count
         i = 0
 
-        while i < len(line):
+        while i < l..(line):
           __ dp[i] >= 3:
             i += dp[i]
-          else:
+          ____:
             ret.extend(line[i:i + dp[i]])
             i += dp[i]
-        return "".join(ret)
+        r.. "".join(ret)
 
-      __ len(line) < 3:
-        return line
+      __ l..(line) < 3:
+        r.. line
       ans = line
-      for _ in range(len(line) / 3):
+      ___ _ __ r..(l..(line) / 3):
         ans = reducer(ans)
-      return ans
+      r.. ans
 
     visited = {}
-    ret = dfs(board, "".join(sorted(hand)), visited)
-    return ret __ ret != float("inf") else -1
+    ret = dfs(board, "".join(s..(hand)), visited)
+    r.. ret __ ret != float("inf") ____ -1

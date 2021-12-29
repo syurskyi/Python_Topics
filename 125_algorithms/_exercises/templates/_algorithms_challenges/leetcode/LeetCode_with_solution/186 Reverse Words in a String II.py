@@ -12,11 +12,11 @@ class Solution(object):
         :type s: a list of 1 length strings (List[str])
         :rtype: nothing
         """
-        self.reverse(s, 0, len(s))
+        self.reverse(s, 0, l..(s))
         i = 0
-        while i < len(s):
+        while i < l..(s):
             j = i+1
-            while j < len(s) and s[j] != " ":
+            while j < l..(s) and s[j] != " ":
                 j += 1
 
             self.reverse(s, i, j)
@@ -30,7 +30,7 @@ class Solution(object):
             i += 1
             j -= 1
 
-__ __name__ == "__main__":
-    lst = list("the sky is blue")
+__ __name__ __ "__main__":
+    lst = l..("the sky is blue")
     Solution().reverseWords(lst)
-    assert "".join(lst) == "blue is sky the"
+    ... "".join(lst) __ "blue is sky the"

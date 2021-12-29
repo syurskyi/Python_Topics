@@ -1,8 +1,8 @@
-import logging
+_______ logging
 
-import pytest
+_______ pytest
 
-from log_it import CRITICAL, DEBUG, ERROR, INFO, WARNING, log_it
+____ log_it _______ CRITICAL, DEBUG, ERROR, INFO, WARNING, log_it
 
 LOG_LEVEL = {
     "debug": DEBUG,
@@ -14,8 +14,8 @@ LOG_LEVEL = {
 
 
 ___ test_callable_log_levels():
-    for level in LOG_LEVEL:
-        assert callable(LOG_LEVEL[level])
+    ___ level __ LOG_LEVEL:
+        ... callable(LOG_LEVEL[level])
 
 
 @pytest.mark.parametrize(
@@ -31,24 +31,24 @@ ___ test_callable_log_levels():
 ___ test_log_it(msg, level, caplog):
     caplog.set_level(logging.DEBUG)
     log_it(LOG_LEVEL[level], msg)
-    assert len(caplog.records) == 1
-    for record in caplog.records:
-        assert record.levelname == level.upper()
-        assert record.message == msg
-        assert record.name == "pybites_logger"
+    ... l..(caplog.records) __ 1
+    ___ record __ caplog.records:
+        ... record.levelname __ level.upper()
+        ... record.message __ msg
+        ... record.name __ "pybites_logger"
 
 
 ___ test_wrong_log_level(caplog):
     msg = "This is a warning message"
     caplog.set_level(logging.ERROR)
     log_it(WARNING, msg)
-    assert len(caplog.records) == 0
+    ... l..(caplog.records) __ 0
 
     caplog.set_level(logging.ERROR)
     msg = "This is an error message"
     log_it(ERROR, msg)
-    assert len(caplog.records) == 1
-    for record in caplog.records:
-        assert record.levelname == "ERROR"
-        assert record.message == msg
-        assert record.name == "pybites_logger"
+    ... l..(caplog.records) __ 1
+    ___ record __ caplog.records:
+        ... record.levelname __ "ERROR"
+        ... record.message __ msg
+        ... record.name __ "pybites_logger"

@@ -59,7 +59,7 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
     delta_left  closest_pairs_algorithm(list_sorted_x[:middle_index], list_sorted_y, middle_index)
     delta_right  closest_pairs_algorithm(list_sorted_x[middle_index:], list_sorted_y, num_of_items - middle_index)
 
-    delta  min(delta_left, delta_right)
+    delta  m..(delta_left, delta_right)
 
     # CONQUER PHASE - usually this is where the magic happens
     strip_points  []
@@ -70,7 +70,7 @@ ___ closest_pairs_algorithm(list_sorted_x, list_sorted_y, num_of_items
 
     strip_delta  get_strip_delta(strip_points, delta)
 
-    r_ min(strip_delta, delta)
+    r_ m..(strip_delta, delta)
 
 
 ___ run(list1, list2

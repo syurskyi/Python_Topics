@@ -19,7 +19,7 @@ c_ NewsFeed:
         articles  _get_articles(url)
 
         email_body  ''
-        for article in articles:
+        ___ article __ articles:
             email_body  email_body + article['title'] + "\n" + article['url'] + "\n\n"
 
         r_ email_body

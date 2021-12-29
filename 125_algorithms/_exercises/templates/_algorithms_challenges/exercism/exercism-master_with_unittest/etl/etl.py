@@ -1,3 +1,3 @@
 ___ transform(old):
-    return {value.lower(): score for score, values in
-            old.items() for value in values}
+    r.. {value.lower(): score ___ score, values __
+            old.items() ___ value __ values}

@@ -14,25 +14,25 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
-        res = []
+        res    # list
         # a is longer than b
-        __ len(a) < len(b):
+        __ l..(a) < l..(b):
             b, a = a, b
-        n = len(a)
-        m = len(b)
+        n = l..(a)
+        m = l..(b)
         c = 0  # Carry bit
         r = 0  # Result bit
         # i = n - 1 ... 0
-        for k in range(n):
+        ___ k __ r..(n):
             i = n - 1 - k
             __ k < m:
                 j = m - 1 - k
                 r = (int(a[i]) + int(b[j]) + c) % 2
                 c = (int(a[i]) + int(b[j]) + c) / 2
-            else:
+            ____:
                 r = (int(a[i]) + c) % 2
                 c = (int(a[i]) + c) / 2
             res.insert(0, str(r))
-        __ c == 1:
+        __ c __ 1:
             res.insert(0, str(c))
-        return ''.join(res)
+        r.. ''.join(res)

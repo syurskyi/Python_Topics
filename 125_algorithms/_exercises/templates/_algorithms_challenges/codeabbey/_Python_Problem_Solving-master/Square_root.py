@@ -1,7 +1,7 @@
 ___ squareroot():
     data = int(input())
     result = ''
-    for i in range(data):
+    ___ i __ r..(data):
         r = 1
         v,steps = map(int, input().split())
         while steps > 0:

@@ -33,8 +33,8 @@ Input: n = 2
 Output: "foobarfoobar"
 Explanation: "foobar" is being output 2 times.
 """
-from threading import Lock
-from typing import Callable
+____ threading _______ Lock
+____ typing _______ Callable
 
 
 class FooBar:
@@ -44,16 +44,16 @@ class FooBar:
         self.locks[1].a..
 
 
-    ___ foo(self, printFoo: Callable[[], None]) -> None:
-        for i in range(self.n):
+    ___ foo(self, printFoo: Callable[[], N..]) -> N..
+        ___ i __ r..(self.n):
             self.locks[0].a..
             # printFoo() outputs "foo". Do not change or remove this line.
             printFoo()
             self.locks[1].release()
 
 
-    ___ bar(self, printBar: Callable[[], None]) -> None:
-        for i in range(self.n):
+    ___ bar(self, printBar: Callable[[], N..]) -> N..
+        ___ i __ r..(self.n):
             self.locks[1].a..
             # printBar() outputs "bar". Do not change or remove this line.
             printBar()

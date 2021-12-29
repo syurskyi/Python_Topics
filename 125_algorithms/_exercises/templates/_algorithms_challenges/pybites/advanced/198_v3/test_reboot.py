@@ -1,4 +1,4 @@
-from reboot import calc_max_uptime, MAC1
+____ reboot _______ calc_max_uptime, MAC1
 
 MAC2 = """
 reboot ~ Tue Sep 22 12:52
@@ -26,12 +26,12 @@ reboot    ~                         Sat Oct  3 18:57
 
 
 ___ test_default_output():
-    assert calc_max_uptime(MAC1) == (30, '2019-02-17')
+    ... calc_max_uptime(MAC1) __ (30, '2019-02-17')
 
 
 ___ test_different_output():
-    assert calc_max_uptime(MAC2) == (22, '2019-09-22')
+    ... calc_max_uptime(MAC2) __ (22, '2019-09-22')
 
 
 ___ test_yet_another_output():
-    assert calc_max_uptime(MAC3) == (24, '2019-12-11')
+    ... calc_max_uptime(MAC3) __ (24, '2019-12-11')

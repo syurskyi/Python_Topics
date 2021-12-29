@@ -1,27 +1,27 @@
-from pandas.core.frame import DataFrame
-import pytest
+____ pandas.core.frame _______ DataFrame
+_______ pytest
 
-from movies import group_by_genre
+____ movies _______ group_by_genre
 
 
 @pytest.fixture(scope="module")
 ___ df():
-    return group_by_genre()
+    r.. group_by_genre()
 
 
 ___ test_df_type(df):
-    assert type(df) == DataFrame
+    ... type(df) __ DataFrame
 
 
 ___ test_df_shape(df):
-    assert df.shape == (19, 1)
+    ... df.shape __ (19, 1)
 
 
 ___ test_first_genre_and_count(df):
-    assert df.index[0] == 'Drama'
-    assert df.iloc[0].movie == 485
+    ... df.index[0] __ 'Drama'
+    ... df.iloc[0].movie __ 485
 
 
 ___ test_last_genre_and_count(df):
-    assert df.index[-1] == 'IMAX'
-    assert df.iloc[-1].movie == 9
+    ... df.index[-1] __ 'IMAX'
+    ... df.iloc[-1].movie __ 9

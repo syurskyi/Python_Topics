@@ -1,11 +1,11 @@
-import json
-from dateutil.tz import gettz
-from datetime import date, timedelta, tzinfo
-from dateutil.parser import parse
-from pathlib import Path
-import requests
-from typing import Tuple, Optional, List
-import os
+_______ json
+____ dateutil.tz _______ gettz
+____ datetime _______ date, timedelta, tzinfo
+____ dateutil.parser _______ parse
+____ pathlib _______ Path
+_______ requests
+____ typing _______ Tuple, Optional, List
+_______ os
 
 DATA_FILE_NAME = "test1.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -41,12 +41,12 @@ ___ longest_streak(
     # You code from here
     commits = data['commits']
     longest_streak = float("-inf")
-    start_date = end_date = None
+    start_date = end_date = N..
     
     day_timedelta = timedelta(days=1)
-    previous_date= current_start =None
+    previous_date= current_start =N..
     current_streak = 1
-    for i in range(len(commits)):
+    ___ i __ r..(l..(commits)):
         commit = commits[i]
         __ commit['passed']:
             date = parse(commit['date'])
@@ -56,13 +56,13 @@ ___ longest_streak(
             date = date.date()
 
 
-            __ date + day_timedelta == previous_date:
+            __ date + day_timedelta __ previous_date:
                 current_streak += 1
-            else:
+            ____:
                 __ current_streak > longest_streak:
                     longest_streak = current_streak
-                    start_date = current_start __ current_start else date
-                    end_date = previous_date __ previous_date else date
+                    start_date = current_start __ current_start ____ date
+                    end_date = previous_date __ previous_date ____ date
                     
 
                 current_streak = 1
@@ -82,14 +82,14 @@ ___ longest_streak(
     
     __ start_date:
 
-        return end_date,start_date 
+        r.. end_date,start_date
 
 
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     streak = longest_streak()
     print(f"My longest streak went from {streak[0]} through {streak[1]}")
     print(f"The streak lasted {(streak[1]-streak[0]).days + 1} days")

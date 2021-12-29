@@ -10,4 +10,4 @@ class Solution(object):
       size += 1
       start *= 10
       step *= 10
-    return int(str(start + (n - 1) // size)[(n - 1) % size])
+    r.. int(str(start + (n - 1) // size)[(n - 1) % size])

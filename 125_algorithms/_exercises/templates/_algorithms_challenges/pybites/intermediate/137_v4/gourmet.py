@@ -4,8 +4,8 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-from collections import Counter
-from itertools import product
+____ collections _______ Counter
+____ itertools _______ product
 
 CHEESES = [
     "Red Leicester",
@@ -98,18 +98,18 @@ ___ similarity(s1, s2):
     1 + square difference of the length of both words
     '''
     # common characters
-    s1 = list(s1.lower())
-    s2 = list(s2.lower())
-    dlen = len(s1) - len(s2)
-    common = []
+    s1 = l..(s1.lower())
+    s2 = l..(s2.lower())
+    dlen = l..(s1) - l..(s2)
+    common    # list
 
-    for c in s1:
-        __ c in s2:
-            common.append(c)
+    ___ c __ s1:
+        __ c __ s2:
+            common.a..(c)
             s2.remove(c)
 
     vals = Counter(common).values()
-    return sum(vals) / (1 + pow(dlen, 2))
+    r.. s..(vals) / (1 + pow(dlen, 2))
 
 
 ___ best_match_per_wine(wine_type="all"):
@@ -119,13 +119,13 @@ ___ best_match_per_wine(wine_type="all"):
     WT = {'white': WHITE_WINES, 'red': RED_WINES,
           'sparkling': SPARKLING_WINES, 'all': ALL_WINES}
 
-    __ wine_type not in WT:
+    __ wine_type n.. __ WT:
         raise ValueError
     print(f'{WT[wine_type]=}')
     sims = ((w, c, similarity(w, c))
-            for w, c in product(WT[wine_type], CHEESES))
+            ___ w, c __ product(WT[wine_type], CHEESES))
 
-    return max(sims, key=lambda x: x[2])
+    r.. max(sims, key=l.... x: x[2])
 
 
 ___ match_wine_5cheeses():
@@ -139,8 +139,8 @@ ___ match_wine_5cheeses():
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    wine_5 = list()
-    for wine in sorted(ALL_WINES):
-        cheeses = sorted(CHEESES, key=lambda x: (-similarity(wine, x), x))[:5]
-        wine_5.append((wine, cheeses))
-    return wine_5
+    wine_5 = l..()
+    ___ wine __ s..(ALL_WINES):
+        cheeses = s..(CHEESES, key=l.... x: (-similarity(wine, x), x))[:5]
+        wine_5.a..((wine, cheeses))
+    r.. wine_5

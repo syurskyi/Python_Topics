@@ -10,30 +10,30 @@ class Solution(object):
         :rtype: List[str]
         """
         s = S
-        n = len(s)
-        res = []
-        for i in range(1, n-2):
+        n = l..(s)
+        res    # list
+        ___ i __ r..(1, n-2):
             arrA = self.helper(s[1:i+1])
             arrB = self.helper(s[i+1:n-1])
-            for s1 in arrA:
-                for s2 in arrB:
-                    res.append('(%s, %s)' % (s1, s2))
-        return res
+            ___ s1 __ arrA:
+                ___ s2 __ arrB:
+                    res.a..('(%s, %s)' % (s1, s2))
+        r.. res
     
     ___ helper(self, s):
-        n = len(s)
-        res = []
-        __ n == 0 or (n > 1 and s[0] == '0' and s[-1] == '0'):
-            return res
-        __ n > 1 and s[0] == '0':
-            res.append('0.'+s[1:])
-            return res
-        res.append(s)
-        __ n == 1 or s[-1] == '0':
-            return res
-        for i in range(1, n):
-            res.append(s[:i]+'.'+s[i:])
-        return res
+        n = l..(s)
+        res    # list
+        __ n __ 0 o. (n > 1 and s[0] __ '0' and s[-1] __ '0'):
+            r.. res
+        __ n > 1 and s[0] __ '0':
+            res.a..('0.'+s[1:])
+            r.. res
+        res.a..(s)
+        __ n __ 1 o. s[-1] __ '0':
+            r.. res
+        ___ i __ r..(1, n):
+            res.a..(s[:i]+'.'+s[i:])
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -42,11 +42,11 @@ class Solution(object):
             '(0123)',
             '(100)',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.ambiguousCoordinates(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

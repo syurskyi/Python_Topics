@@ -11,26 +11,26 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        graph = [[] for _ in range(numCourses)]
+        graph = [[] ___ _ __ r..(numCourses)]
         degree = [0]*numCourses
-        for p in prerequisites:
-            graph[p[1]].append(p[0])
+        ___ p __ prerequisites:
+            graph[p[1]].a..(p[0])
             degree[p[0]]+=1
-        queue = []
-        for num, cnt in enumerate(degree):
-            __ cnt == 0:
-                queue.append(num)
-        res = []
+        queue    # list
+        ___ num, cnt __ enumerate(degree):
+            __ cnt __ 0:
+                queue.a..(num)
+        res    # list
         count = 0
         while queue:
             node = queue.pop(0)
-            res.append(node)
+            res.a..(node)
             count += 1
-            for node0 in graph[node]:
+            ___ node0 __ graph[node]:
                 degree[node0] -= 1
-                __ degree[node0] == 0:
-                    queue.append(node0)
-        return res __ count == numCourses else []
+                __ degree[node0] __ 0:
+                    queue.a..(node0)
+        r.. res __ count __ numCourses ____ []
     
     ___ test(self):
         testCases = [
@@ -38,12 +38,12 @@ class Solution(object):
             [4, [[1,0],[2,0],[0,2],[3,1]]],
             [2, [[1,0]]],
         ]
-        for numCourses, prerequisites in testCases:
+        ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses))
             print('prerequisites: %s' % (prerequisites))
             result = self.findOrder(numCourses, prerequisites)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

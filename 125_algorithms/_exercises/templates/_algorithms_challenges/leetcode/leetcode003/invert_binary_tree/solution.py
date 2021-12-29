@@ -28,11 +28,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ root is None:
-            return None
-        else:
+        __ root __ N..
+            r.. N..
+        ____:
             left = self.invertTree(root.left)
             right = self.invertTree(root.right)
             root.left = right
             root.right = left
-            return root
+            r.. root

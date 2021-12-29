@@ -11,9 +11,9 @@ Note:
 (2) The given numbers in primes are in ascending order.
 (3) 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
 """
-import heapq
-from collections import deque
-import sys
+_______ heapq
+____ collections _______ deque
+_______ sys
 
 __author__ = 'Daniel'
 
@@ -26,20 +26,20 @@ class Solution(object):
         :type primes: List[int]
         :rtype: int
         """
-        k = len(primes)
-        ret = [sys.maxint for _ in xrange(n)]
+        k = l..(primes)
+        ret = [sys.maxint ___ _ __ xrange(n)]
         ret[0] = 1
         # for each prime, a pointer pointing to the value of next unused number in the result
-        idxes = [0 for _ in xrange(k)]
-        for i in xrange(1, n):
-            for j in xrange(k):
-                ret[i] = min(ret[i], primes[j]*ret[idxes[j]])
+        idxes = [0 ___ _ __ xrange(k)]
+        ___ i __ xrange(1, n):
+            ___ j __ xrange(k):
+                ret[i] = m..(ret[i], primes[j]*ret[idxes[j]])
 
-            for j in xrange(k):
-                __ ret[i] == primes[j]*ret[idxes[j]]:
+            ___ j __ xrange(k):
+                __ ret[i] __ primes[j]*ret[idxes[j]]:
                     idxes[j] += 1
 
-        return ret[n-1]
+        r.. ret[n-1]
 
 
 class QueueWrapper(object):
@@ -48,7 +48,7 @@ class QueueWrapper(object):
         self.q = q
 
     ___ __cmp__(self, other):
-        return self.q[0] - other.q[0]
+        r.. self.q[0] - other.q[0]
 
 
 class SolutionHeap(object):
@@ -60,18 +60,18 @@ class SolutionHeap(object):
         :rtype: int
         """
         ret = 1
-        h = [QueueWrapper(i, deque([v])) for i, v in enumerate(primes)]
-        dic = {e.idx: e for e in h}
+        h = [QueueWrapper(i, deque([v])) ___ i, v __ enumerate(primes)]
+        dic = {e.idx: e ___ e __ h}
 
         heapq.heapify(h)
-        for _ in xrange(n-1):
+        ___ _ __ xrange(n-1):
             mini = heapq.heappop(h)
             ret = mini.q.popleft()
-            for i in xrange(mini.idx, len(primes)):
-                dic[i].q.append(ret*primes[i])
+            ___ i __ xrange(mini.idx, l..(primes)):
+                dic[i].q.a..(ret*primes[i])
             heapq.heappush(h, mini)
 
-        return ret
+        r.. ret
 
-__ __name__ == "__main__":
-    assert Solution().nthSuperUglyNumber(12, [2, 7, 13, 19]) == 32
+__ __name__ __ "__main__":
+    ... Solution().nthSuperUglyNumber(12, [2, 7, 13, 19]) __ 32

@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from combos import find_number_pairs
+____ combos _______ find_number_pairs
 
 
 ___ _sort_all(ret):
-    return sorted(
-        [tuple(sorted(n)) for n in ret]
+    r.. s..(
+        [tuple(s..(n)) ___ n __ ret]
     )
 
 
@@ -24,5 +24,5 @@ ___ _sort_all(ret):
 ])
 ___ test_find_number_pairs(numbers, N, expected):
     actual = find_number_pairs(numbers, N=N)
-    assert type(actual) == list
-    assert _sort_all(actual) == _sort_all(expected)
+    ... type(actual) __ l..
+    ... _sort_all(actual) __ _sort_all(expected)

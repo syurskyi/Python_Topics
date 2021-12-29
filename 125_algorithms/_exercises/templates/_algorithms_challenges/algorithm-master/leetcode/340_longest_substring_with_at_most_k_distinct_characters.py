@@ -4,7 +4,7 @@
 """
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -16,24 +16,24 @@ class Solution:
         """
         ans = 0
 
-        __ not s or not k or k < 0:
-            return ans
+        __ n.. s o. n.. k o. k < 0:
+            r.. ans
 
         freqs = collections.defaultdict(int)
         i = cnt = 0
 
-        for j in range(len(s)):
+        ___ j __ r..(l..(s)):
             freqs[s[j]] += 1
-            __ freqs[s[j]] == 1:
+            __ freqs[s[j]] __ 1:
                 cnt += 1
 
             while cnt > k:
                 freqs[s[i]] -= 1
-                __ freqs[s[i]] == 0:
+                __ freqs[s[i]] __ 0:
                     cnt -= 1
 
                 i += 1
 
             ans = max(ans, j - i + 1)
 
-        return ans
+        r.. ans

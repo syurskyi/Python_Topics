@@ -44,15 +44,15 @@ class Solution:
         stk
         """
         ret = 0
-        stk = []
-        for s in S:
-            __ s == "(":
-                stk.append(s)
-            else:
+        stk    # list
+        ___ s __ S:
+            __ s __ "(":
+                stk.a..(s)
+            ____:
                 __ stk:
                     stk.pop()
-                else:
+                ____:
                     ret += 1
 
-        ret += len(stk)
-        return ret
+        ret += l..(stk)
+        r.. ret

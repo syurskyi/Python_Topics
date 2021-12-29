@@ -1,4 +1,4 @@
-from datetime import date
+____ datetime _______ date
 
 
 ___ get_mothers_day_date(year):
@@ -9,16 +9,16 @@ ___ get_mothers_day_date(year):
 
    sunday_count = 0
    while sunday_count < 2:
-      __ mothers_day.weekday() == 6:
+      __ mothers_day.weekday() __ 6:
          sunday_count += 1
          day_counter += 1
-      else:  
+      ____:
          day_counter += 1
 
-      __ sunday_count == 2:
+      __ sunday_count __ 2:
          break
       mothers_day = mothers_day.replace(day=day_counter)
-   return mothers_day
+   r.. mothers_day
 
 
 # if __name__ == "__main__":

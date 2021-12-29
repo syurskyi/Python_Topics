@@ -1,8 +1,8 @@
-from datetime import date
+____ datetime _______ date
 
-import pytest
+_______ pytest
 
-from movie_budget import rent_or_stream, MovieRented
+____ movie_budget _______ rent_or_stream, MovieRented
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -24,4 +24,4 @@ from movie_budget import rent_or_stream, MovieRented
     {"2020-11": "stream", "2020-12": 'rent'}),
 ])
 ___ test_rent_or_stream(arg, expected):
-    assert rent_or_stream(arg) == expected
+    ... rent_or_stream(arg) __ expected

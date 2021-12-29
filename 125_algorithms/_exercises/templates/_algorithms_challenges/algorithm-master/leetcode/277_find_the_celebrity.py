@@ -5,21 +5,21 @@ REF: https://discuss.leetcode.com/topic/25720/java-python-o-n-calls-o-1-space-ea
 
 class Solution:
     ___ findCelebrity(self, n):
-        __ not n:
-            return -1
+        __ n.. n:
+            r.. -1
 
         x = 0
 
-        for i in range(n):
+        ___ i __ r..(n):
             __ knows(x, i):
                 x = i
 
-        for i in range(x):
+        ___ i __ r..(x):
             __ knows(x, i):
-                return -1
+                r.. -1
 
-        for i in range(n):
-            __ not knows(i, x):
-                return -1
+        ___ i __ r..(n):
+            __ n.. knows(i, x):
+                r.. -1
 
-        return x
+        r.. x

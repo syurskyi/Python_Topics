@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution(object):
@@ -8,38 +8,38 @@ class Solution(object):
     :type seqs: List[List[int]]
     :rtype: bool
     """
-    n = len(org)
-    graph = collections.defaultdict(list)
+    n = l..(org)
+    graph = collections.defaultdict(l..)
     visited = {}
     incomings = collections.defaultdict(int)
     nodes = set()
-    for seq in seqs:
+    ___ seq __ seqs:
       nodes |= set(seq)
-      __ len(seq) > 0:
+      __ l..(seq) > 0:
         incomings[seq[0]] += 0
-      for i in range(0, len(seq) - 1):
+      ___ i __ r..(0, l..(seq) - 1):
         start, end = seq[i], seq[i + 1]
-        graph[start].append(end)
+        graph[start].a..(end)
         incomings[end] += 1
 
     count = 0
-    for node in incomings:
-      __ incomings[node] == 0:
+    ___ node __ incomings:
+      __ incomings[node] __ 0:
         count += 1
-        __ count == 2:
-          return False
-    order = []
+        __ count __ 2:
+          r.. False
+    order    # list
     visited = collections.defaultdict(int)
-    queue = [q for q in incomings __ incomings[q] == 0]
-    while len(queue) == 1:
+    queue = [q ___ q __ incomings __ incomings[q] __ 0]
+    while l..(queue) __ 1:
       top = queue.pop()
-      order.append(top)
-      for nbr in graph[top]:
+      order.a..(top)
+      ___ nbr __ graph[top]:
         incomings[nbr] -= 1
-        __ incomings[nbr] == 0:
-          queue.append(nbr)
-    __ len(queue) > 1:
-      return False
-    __ order == org and len(order) == len(nodes):
-      return True
-    return False
+        __ incomings[nbr] __ 0:
+          queue.a..(nbr)
+    __ l..(queue) > 1:
+      r.. False
+    __ order __ org and l..(order) __ l..(nodes):
+      r.. True
+    r.. False

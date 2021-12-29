@@ -1,4 +1,4 @@
-import threading
+_______ threading
 
 
 class BankAccount(object):
@@ -10,8 +10,8 @@ class BankAccount(object):
     ___ get_balance(self):
         with self.lock:
             __ self.is_open:
-                return self.balance
-            else:
+                r.. self.balance
+            ____:
                 raise ValueError
 
     ___ open(self):
@@ -21,14 +21,14 @@ class BankAccount(object):
         with self.lock:
             __ self.is_open and amount > 0:
                 self.balance += amount
-            else:
+            ____:
                 raise ValueError
 
     ___ withdraw(self, amount):
         with self.lock:
             __ self.is_open and 0 < amount <= self.balance:
                 self.balance -= amount
-            else:
+            ____:
                 raise ValueError
 
     ___ close(self):

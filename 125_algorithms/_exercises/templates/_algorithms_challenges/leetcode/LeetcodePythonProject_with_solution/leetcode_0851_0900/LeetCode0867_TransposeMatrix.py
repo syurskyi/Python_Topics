@@ -10,9 +10,9 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         matrix = A
-        m, n = len(matrix), len(matrix[0])
-        res = [[0]*m for _ in range(n)]
-        for i in range(m):
-            for j in range(n):
+        m, n = l..(matrix), l..(matrix[0])
+        res = [[0]*m ___ _ __ r..(n)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 res[j][i] = matrix[i][j]
-        return res
+        r.. res

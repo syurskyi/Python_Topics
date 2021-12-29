@@ -5,30 +5,30 @@ class Solution(object):
     :type denominator: int
     :rtype: str
     """
-    ans = "-" __ numerator * denominator < 0 else ""
+    ans = "-" __ numerator * denominator < 0 ____ ""
     numerator = abs(numerator)
     denominator = abs(denominator)
     ans += str(numerator / denominator)
     __ numerator % denominator:
       ans += "."
     numerator = (numerator % denominator) * 10
-    __ numerator == 0:
-      return ans
+    __ numerator __ 0:
+      r.. ans
     d = {}
-    res = []
+    res    # list
     while True:
       r = numerator % denominator
       v = numerator / denominator
-      __ numerator in d:
+      __ numerator __ d:
         idx = d[numerator]
-        return ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
-      res.append(str(v))
-      __ v == 0:
-        d[numerator] = len(res) - 1
+        r.. ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
+      res.a..(str(v))
+      __ v __ 0:
+        d[numerator] = l..(res) - 1
         numerator *= 10
         continue
-      d[numerator] = len(res) - 1
+      d[numerator] = l..(res) - 1
       numerator = r * 10
-      __ r == 0:
-        return ans + "".join(res)
-    return ans + "".join(res)
+      __ r __ 0:
+        r.. ans + "".join(res)
+    r.. ans + "".join(res)

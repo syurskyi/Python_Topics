@@ -8,20 +8,20 @@ Created on Apr 2, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ __init__(self, head):
         self.head = head
     
     ___ getRandom(self):
-        import random
+        _______ random
         res = -1
         count = 0
         node = self.head
         while node:
-            __ random.randint(0, count) == 0:
+            __ random.randint(0, count) __ 0:
                 res = node.val
             count += 1
             node = node.next
-        return res
+        r.. res

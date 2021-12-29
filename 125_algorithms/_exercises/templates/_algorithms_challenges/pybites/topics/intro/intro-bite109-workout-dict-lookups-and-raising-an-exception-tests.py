@@ -1,8 +1,8 @@
 """These tests have some more advanced pytest features, if new to
    pytest read: https://pybit.es/pytest-coding-100-tests.html"""
-import pytest
+_______ pytest
 
-from workouts import get_workout_motd
+____ workouts _______ get_workout_motd
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -16,8 +16,8 @@ from workouts import get_workout_motd
 ])
 ___ test_get_workout_valid_case_insensitive_dict_lookups(arg, expected):
     mixed_case = arg[:3].lower() + arg[3:].upper()
-    for day in (arg, arg.upper(), arg.lower(), mixed_case):
-        assert get_workout_motd(day) == expected
+    ___ day __ (arg, arg.upper(), arg.lower(), mixed_case):
+        ... get_workout_motd(day) __ expected
 
 
 ___ test_get_workout_invalid_dict_lookups_raise_exception():

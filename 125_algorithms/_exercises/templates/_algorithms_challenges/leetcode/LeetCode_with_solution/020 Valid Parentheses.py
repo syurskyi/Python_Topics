@@ -15,18 +15,18 @@ class Solution:
         """
         put_set = ("(", "[", "{")
         pop_set = (")", "]", "}")
-        pair = dict(zip(put_set, pop_set))
+        pair = d..(zip(put_set, pop_set))
 
-        stack = []
-        for element in s:
-            __ element in put_set:
-                stack.append(pair[element])
-            elif element in pop_set:
-                __ not stack or element != stack.pop():  # check NullPointer, otherwise, IndexError: pop from empty list
-                    return False
+        stack    # list
+        ___ element __ s:
+            __ element __ put_set:
+                stack.a..(pair[element])
+            ____ element __ pop_set:
+                __ n.. stack o. element != stack.pop():  # check NullPointer, otherwise, IndexError: pop from empty list
+                    r.. False
 
-        return True __ not stack else False
+        r.. True __ n.. stack ____ False
 
 
-__ __name__ == "__main__":
-    assert Solution().isValid("()")
+__ __name__ __ "__main__":
+    ... Solution().isValid("()")

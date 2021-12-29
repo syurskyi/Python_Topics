@@ -35,7 +35,7 @@ image[0].length.
 The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
-from typing import List
+____ typing _______ List
 dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
@@ -47,17 +47,17 @@ class Solution:
         mistake: corner case image == new color
         """
         cur_color = image[sr][sc]
-        __ cur_color == newColor:
-            return image
+        __ cur_color __ newColor:
+            r.. image
 
         self.dfs(image, sr, sc, cur_color, newColor)
-        return image
+        r.. image
 
     ___ dfs(self, image, i, j, cur_color, new_color):
         image[i][j] = new_color
-        m, n = len(image), len(image[0])
-        for di, dj in dirs:
+        m, n = l..(image), l..(image[0])
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m and 0 <= J < n and image[I][J] == cur_color:
+            __ 0 <= I < m and 0 <= J < n and image[I][J] __ cur_color:
                 self.dfs(image, I, J, cur_color, new_color)

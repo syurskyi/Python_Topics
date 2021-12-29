@@ -9,7 +9,7 @@ c_ DisjointSet:
         parent  {}
         ___ v __ vertices:
             parent[v]  v
-        rank  dict.fromkeys(vertices, 0)
+        rank  d...f..(vertices, 0)
     
     ___ find  item
         __ parent[item] __ item:

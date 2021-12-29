@@ -1,8 +1,8 @@
-import os
-import re
-from difflib import SequenceMatcher
-from itertools import permutations
-from urllib.request import urlretrieve
+_______ os
+_______ re
+____ difflib _______ SequenceMatcher
+____ itertools _______ permutations
+____ urllib.request _______ urlretrieve
 
 # prep
 TAG_HTML = re.compile(r'<category>([^<]+)</category>')
@@ -24,14 +24,14 @@ ___ _get_tags(tempfile=TEMPFILE):
         content = f.read().lower()
     # take a small subset to keep it performant
     tags = TAG_HTML.findall(content)
-    tags = [tag for tag in tags __ len(tag) > MIN_TAG_LEN]
-    return set(tags)
+    tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]
+    r.. set(tags)
 
 
 ___ get_similarities(tags_ N..
     """Should return a list of similar tag pairs (tuples)"""
-    tags = tags or _get_tags()
+    tags = tags o. _get_tags()
     # do your thing ...
-    for a, b in permutations(tags, 2):
+    ___ a, b __ permutations(tags, 2):
         __ SequenceMatcher(a=a, b=b).ratio() >= SIMILAR:
             yield a, b

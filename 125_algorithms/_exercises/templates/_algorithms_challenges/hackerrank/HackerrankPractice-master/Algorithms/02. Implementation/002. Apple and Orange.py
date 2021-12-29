@@ -2,8 +2,8 @@
 # Score: 10
 
 
-s, t, a, b, m, n = map(int, input().split() + input().split() + input().split())
-apple = list(map(int, input().split()))
-orange = list(map(int, input().split()))
-print(sum(s <= a + i <= t for i in apple))
-print(sum(s <= b + i <= t for i in orange))
+s, t, a, b, m, n = map(int, input().s..  + input().s..  + input().split())
+apple = l..(map(int, input().split()))
+orange = l..(map(int, input().split()))
+print(s..(s <= a + i <= t ___ i __ apple))
+print(s..(s <= b + i <= t ___ i __ orange))

@@ -1,5 +1,5 @@
 # Please print the script in the expected output
 
-from datetime import datetime
+____ datetime _______ datetime
 
 print(datetime.now().strftime("Today is %A, %B %d, %Y"))

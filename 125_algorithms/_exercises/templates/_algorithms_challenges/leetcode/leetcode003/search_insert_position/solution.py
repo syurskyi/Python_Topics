@@ -21,27 +21,27 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        n = len(nums)
-        __ not nums:
-            return 0
-        else:
+        n = l..(nums)
+        __ n.. nums:
+            r.. 0
+        ____:
             left = 0
             right = n - 1
             while left <= right:
                 mid = (left + right) / 2
-                __ nums[mid] == target:
-                    return mid
-                elif (mid < n - 1 and nums[mid] < target
+                __ nums[mid] __ target:
+                    r.. mid
+                ____ (mid < n - 1 and nums[mid] < target
                         and nums[mid + 1] > target):
-                    return mid + 1
-                elif target < nums[mid]:
+                    r.. mid + 1
+                ____ target < nums[mid]:
                     right = mid - 1
-                else:
+                ____:
                     left = mid + 1
             __ left > n - 1:
-                return n
-            elif right < 0:
-                return 0
+                r.. n
+            ____ right < 0:
+                r.. 0
 
 
 a = [1, 3, 5, 6]

@@ -1,5 +1,5 @@
-import logging
-from typing import List  # python 3.9 we can drop this
+_______ logging
+____ typing _______ List  # python 3.9 we can drop this
 
 
 logger = logging.getLogger('app')
@@ -15,15 +15,15 @@ ___ sum_even_numbers(numbers: List[float]) -> float:
       (e.g. one of the numbers is a str), catch
       the exception log it, then reraise it.
    """
-   even_numbers = []
-   for number in numbers:
+   even_numbers    # list
+   ___ number __ numbers:
       try:
-         __ number % 2 == 0:
-            even_numbers.append(number)
+         __ number % 2 __ 0:
+            even_numbers.a..(number)
       except TypeError:
          logger.exception(f"Bad inputs: {numbers}")
          raise
 
-   total = sum(even_numbers)
+   total = s..(even_numbers)
    logger.info(f"Input: {numbers} -> output: {total}")
-   return total
+   r.. total

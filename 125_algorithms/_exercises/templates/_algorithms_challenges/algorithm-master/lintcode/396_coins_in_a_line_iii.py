@@ -31,24 +31,24 @@ class Solution:
         :type values: list[int]
         :rtype: bool
         """
-        __ not values:
-            return False
+        __ n.. values:
+            r.. False
 
-        n = len(values)
+        n = l..(values)
 
         __ n < 2:
-            return True
+            r.. True
 
-        dp = [[0] * n for _ in range(n)]
+        dp = [[0] * n ___ _ __ r..(n)]
 
-        for i in range(n):
+        ___ i __ r..(n):
             dp[i][i] = values[i]
 
-        for i in range(n - 1 - 1, -1, -1):
-            for j in range(i + 1, n):
+        ___ i __ r..(n - 1 - 1, -1, -1):
+            ___ j __ r..(i + 1, n):
                 dp[i][j] = max((
                     values[i] - dp[i + 1][j],
                     values[j] - dp[i][j - 1],
                 ))
 
-        return dp[0][n - 1] >= 0
+        r.. dp[0][n - 1] >= 0

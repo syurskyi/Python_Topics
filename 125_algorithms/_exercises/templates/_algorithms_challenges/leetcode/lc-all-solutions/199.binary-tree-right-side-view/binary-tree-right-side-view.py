@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -16,11 +16,11 @@ class Solution(object):
 
     ___ dfs(root, h):
       __ root:
-        __ h == len(ans):
-          ans.append(root.val)
+        __ h __ l..(ans):
+          ans.a..(root.val)
         dfs(root.right, h + 1)
         dfs(root.left, h + 1)
 
-    ans = []
+    ans    # list
     dfs(root, 0)
-    return ans
+    r.. ans

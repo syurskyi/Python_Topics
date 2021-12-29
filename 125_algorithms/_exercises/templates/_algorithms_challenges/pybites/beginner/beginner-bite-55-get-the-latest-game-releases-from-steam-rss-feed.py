@@ -3,10 +3,10 @@ that feed. Specifically, pull out the names of the games in the feed as well as 
 Use the Game namedtuple provided.
 To make sure you work with a static feed we copied today's version so use the URL defined in FEED_URL. Enjoy!'''
 
-from collections import namedtuple
+____ collections _______ namedtuple
 
-import feedparser
-import json
+_______ feedparser
+_______ json
 
 
 # cached version to have predictable results for testing

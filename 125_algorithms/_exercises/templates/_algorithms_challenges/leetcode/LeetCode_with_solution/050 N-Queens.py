@@ -33,10 +33,10 @@ class Solution:
         :param n: integer
         :return: a list of lists of string
         """
-        result = []
-        current = [[0 for _ in xrange(n)] for _ in xrange(n)]
+        result    # list
+        current = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
         self.backtrack(0, current, result)
-        return self.transform2string(result)
+        r.. self.transform2string(result)
 
     ___ backtrack(self, queen_index, current, result):
         """
@@ -50,26 +50,26 @@ class Solution:
         :param result: list of 2D matrix
         :return: Nothing
         """
-        n = len(current)
-        __ queen_index==n:
-            result.append(current)
-            return
+        n = l..(current)
+        __ queen_index__n:
+            result.a..(current)
+            r..
 
-        for i in xrange(n):
-            __ current[queen_index][i]==INVALID:
+        ___ i __ xrange(n):
+            __ current[queen_index][i]__INVALID:
                 continue
 
             # place the queen
-            new_config = [list(element) for element in current]  # new copy
+            new_config = [l..(element) ___ element __ current]  # new copy
             new_config[queen_index][i] = QUEEN
 
             # update invalid position in the new config
-            for m in xrange(n):
+            ___ m __ xrange(n):
                 # col
-                __ new_config[m][i]==DEFAULT:
+                __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID
                 # row
-                __ new_config[queen_index][m]==DEFAULT:
+                __ new_config[queen_index][m]__DEFAULT:
                     new_config[queen_index][m] = INVALID
 
                 # diagonal - not optimized
@@ -90,10 +90,10 @@ class Solution:
                 # if 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
 
                 # diagonal - optimized
-                for direction in directions:
+                ___ direction __ directions:
                     row = queen_index+direction[0]*m
                     col = i+direction[1]*m
-                    __ 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT:
+                    __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT:
                         new_config[row][col] = INVALID
 
             # dfs
@@ -102,16 +102,16 @@ class Solution:
 
 
     ___ transform2string(self, result):
-        string_result = []
-        for configuration in result:
-            current = []
-            for row in configuration:
-                row = map(lambda x: "." __ x==-1 else "Q", row)
+        string_result    # list
+        ___ configuration __ result:
+            current    # list
+            ___ row __ configuration:
+                row = map(l.... x: "." __ x__-1 ____ "Q", row)
                 row = "".join(row)
-                current.append(row)
-            string_result.append(current)
-        return string_result
+                current.a..(row)
+            string_result.a..(current)
+        r.. string_result
 
 
-__ __name__=="__main__":
-    assert Solution().solveNQueens(4)==[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]
+__ __name____"__main__":
+    ... Solution().solveNQueens(4)__[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]

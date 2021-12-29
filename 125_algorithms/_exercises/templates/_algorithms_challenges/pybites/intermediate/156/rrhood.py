@@ -1,5 +1,5 @@
-from collections import defaultdict
-import re
+____ collections _______ defaultdict
+_______ re
 CHARACTERS = ['Red Riding Hood',
               # we're omitting 'mother' here for simplicity
               # (= substring grandmother)
@@ -54,24 +54,24 @@ ___ make_character_index(text=text, characters=CHARACTERS):
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    locations = defaultdict(list)
+    locations = defaultdict(l..)
     
 
-    in_line = lambda word,line: re.search(word,line,flags=re.I) is not None
+    in_line = l.... word,line: re.search(word,line,flags=re.I) __ n.. N..
 
-    for i,line in enumerate(text.splitlines()):
-        for character in characters:
-            __ type(character) == tuple:
-                for value in character:
+    ___ i,line __ enumerate(text.splitlines()):
+        ___ character __ characters:
+            __ type(character) __ tuple:
+                ___ value __ character:
                     __ in_line(value,line):
-                        locations[character[0].lower()].append(i)
+                        locations[character[0].lower()].a..(i)
                         break
-            else:
+            ____:
                 __ in_line(character,line):
-                    locations[character.lower()].append(i)
+                    locations[character.lower()].a..(i)
 
     print(locations)
-    return locations
+    r.. locations
 
 
 

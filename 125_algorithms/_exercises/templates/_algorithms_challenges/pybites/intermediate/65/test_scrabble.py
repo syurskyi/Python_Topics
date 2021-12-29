@@ -1,21 +1,21 @@
-import pytest
+_______ pytest
 
-from scrabble import get_possible_dict_words
+____ scrabble _______ get_possible_dict_words
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score for score, letters in scrabble_scores
-                 for letter in letters.split()}
+LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+                 ___ letter __ letters.s.. }
 
 
 ___ calc_word_value(word):
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    return sum(LETTER_SCORES.get(char.upper(), 0) for char in word)
+    r.. s..(LETTER_SCORES.get(char.upper(), 0) ___ char __ word)
 
 
 ___ max_word_value(words):
     """Calc the max value of a collection of words"""
-    return max(words, key=calc_word_value)
+    r.. max(words, key=calc_word_value)
 
 
 @pytest.mark.parametrize("draw, expected", [
@@ -28,7 +28,7 @@ ___ max_word_value(words):
 ___ test_max_word(draw, expected):
     draw = draw.split(', ')
     words = get_possible_dict_words(draw)
-    __ len(expected) > 1:
-        assert max_word_value(words) in expected
-    else:
-        assert max_word_value(words) == expected
+    __ l..(expected) > 1:
+        ... max_word_value(words) __ expected
+    ____:
+        ... max_word_value(words) __ expected

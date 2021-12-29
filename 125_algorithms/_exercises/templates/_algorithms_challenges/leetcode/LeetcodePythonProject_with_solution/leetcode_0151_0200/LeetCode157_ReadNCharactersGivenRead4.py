@@ -19,9 +19,9 @@ class Solution(object):
         idx = 0
         while True:
             buf4 = ['']*4
-            curr = min(read4(buf4), n-idx)
-            for i in range(curr):
+            curr = m..(read4(buf4), n-idx)
+            ___ i __ r..(curr):
                 buf[idx] = buf4[i]
                 idx += 1
-            __ curr != 4 or idx == n:
-                return idx
+            __ curr != 4 o. idx __ n:
+                r.. idx

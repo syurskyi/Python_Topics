@@ -11,23 +11,23 @@ GIFTS = ['twelve Drummers Drumming',
          'two Turtle Doves',
          'a Partridge in a Pear Tree']
 
-ORDINAL = [None, 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
+ORDINAL = [N.., 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
            'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth']
 
 
 ___ verse(n):
     gifts = GIFTS[-n:]
-    __ len(gifts) > 1:
+    __ l..(gifts) > 1:
         gifts[:-1] = [', '.join(gifts[:-1])]
     gifts = ', and '.join(gifts)
-    return 'On the {} day of Christmas my true love gave to me, {}.\n'.format(
+    r.. 'On the {} day of Christmas my true love gave to me, {}.\n'.format(
         ORDINAL[n], gifts)
 
 
 ___ verses(start, end):
-    return ''.join([verse(n) + '\n'
-                    for n in range(start, end + 1)])
+    r.. ''.join([verse(n) + '\n'
+                    ___ n __ r..(start, end + 1)])
 
 
 ___ sing():
-    return verses(1, 12)
+    r.. verses(1, 12)

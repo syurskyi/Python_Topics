@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from calculator import simple_calculator
+____ calculator _______ simple_calculator
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -9,7 +9,7 @@ from calculator import simple_calculator
     ('12 + 18', 30),
 ])
 ___ test_sum(arg, expected):
-    assert simple_calculator(arg) == expected
+    ... simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -18,7 +18,7 @@ ___ test_sum(arg, expected):
     ('12 - 18', -6),
 ])
 ___ test_subtract(arg, expected):
-    assert simple_calculator(arg) == expected
+    ... simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -27,7 +27,7 @@ ___ test_subtract(arg, expected):
     ('3 * -6', -18),
 ])
 ___ test_multiply(arg, expected):
-    assert simple_calculator(arg) == expected
+    ... simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -36,7 +36,7 @@ ___ test_multiply(arg, expected):
     ('-2 / 175', -0.01),
 ])
 ___ test_true_division(arg, expected):
-    assert round(simple_calculator(arg), 2) == expected
+    ... round(simple_calculator(arg), 2) __ expected
 
 
 @pytest.mark.parametrize("arg", [

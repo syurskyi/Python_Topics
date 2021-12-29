@@ -6,8 +6,8 @@ class Solution:
         """
         ans = 0
 
-        __ not s:
-            return ans
+        __ n.. s:
+            r.. ans
 
         symbs = {
             'I': 1,
@@ -21,10 +21,10 @@ class Solution:
 
         ans += symbs[s[-1]]
 
-        for i in range(len(s) - 2, -1, -1):
+        ___ i __ r..(l..(s) - 2, -1, -1):
             __ symbs[s[i]] >= symbs[s[i + 1]]:
                 ans += symbs[s[i]]
-            else:
+            ____:
                 ans -= symbs[s[i]]
 
-        return ans
+        r.. ans

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from rail_fence_cipher import encode, decode
+____ rail_fence_cipher _______ encode, decode
 
 
 class RailFenceTests(unittest.TestCase):
@@ -31,5 +31,5 @@ class RailFenceTests(unittest.TestCase):
                    '896261', 6))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

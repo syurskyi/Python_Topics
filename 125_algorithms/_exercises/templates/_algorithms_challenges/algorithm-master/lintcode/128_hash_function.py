@@ -5,13 +5,13 @@ class Solution:
     @return: An integer
     """
     ___ hashCode(self, key, HASH_SIZE):
-        __ not key:
-            return 0
+        __ n.. key:
+            r.. 0
 
         MAGIC_NUMBER = 33
 
         _code = 0
-        for char in key:
+        ___ char __ key:
             _code = (_code * MAGIC_NUMBER + ord(char)) % HASH_SIZE
 
-        return _code
+        r.. _code

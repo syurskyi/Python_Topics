@@ -1,4 +1,4 @@
-from datetime import datetime
+____ datetime _______ datetime
 
 # https://pythonclock.org/
 PY2_DEATH_DT = datetime(year=2020, month=1, day=1)
@@ -14,7 +14,7 @@ ___ py2_earth_hours_left(start_date=BITE_CREATED_DT):
 
     #td = PY2_DEATH_DT - start_date
    # return round(td.days * 24 + td.seconds / 60 / 60, 2)
-    return round(diff.total_seconds()/3600,2)
+    r.. round(diff.total_seconds()/3600,2)
 
 
 
@@ -34,7 +34,7 @@ ___ py2_miller_min_left(start_date=BITE_CREATED_DT):
 
 
 
-    return round(hours_miller * 60,2)
+    r.. round(hours_miller * 60,2)
 
 
 

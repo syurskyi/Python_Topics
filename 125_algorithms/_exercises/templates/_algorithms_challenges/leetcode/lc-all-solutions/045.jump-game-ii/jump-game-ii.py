@@ -6,17 +6,17 @@ class Solution(object):
     """
     pos = 0
     ans = 0
-    bound = len(nums)
-    while pos < len(nums) - 1:
+    bound = l..(nums)
+    while pos < l..(nums) - 1:
       dis = nums[pos]
       farthest = posToFarthest = 0
-      for i in range(pos + 1, min(pos + dis + 1, bound)):
+      ___ i __ r..(pos + 1, m..(pos + dis + 1, bound)):
         canReach = i + nums[i]
-        __ i == len(nums) - 1:
-          return ans + 1
+        __ i __ l..(nums) - 1:
+          r.. ans + 1
         __ canReach > farthest:
           farthest = canReach
           posToFarthest = i
       ans += 1
       pos = posToFarthest
-    return ans
+    r.. ans

@@ -23,7 +23,7 @@ class ToyFactory:
     # @param {string} shapeType a string
     # @return {Toy} Get object of the type
     ___ getToy(self, type):
-        __ type == 'Dog':
-            return Dog()
-        __ type == 'Cat':
-            return Cat()
+        __ type __ 'Dog':
+            r.. Dog()
+        __ type __ 'Cat':
+            r.. Cat()

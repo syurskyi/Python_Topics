@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from pig_latin import translate
+____ pig_latin _______ translate
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -67,5 +67,5 @@ class PigLatinTests(unittest.TestCase):
         self.assertEqual(translate("quick fast run"), "ickquay astfay unray")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

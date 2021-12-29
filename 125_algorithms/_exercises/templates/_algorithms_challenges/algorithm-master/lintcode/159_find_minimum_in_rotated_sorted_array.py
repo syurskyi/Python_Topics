@@ -4,10 +4,10 @@ class Solution:
     @return: the minimum number in the array
     """
     ___ findMin(self, nums):
-        __ not nums:
-            return -1
+        __ n.. nums:
+            r.. -1
 
-        l, m, r = 0, 0, len(nums) - 1
+        l, m, r = 0, 0, l..(nums) - 1
 
         """
         since the children between `nums[0:maximum]`
@@ -24,7 +24,7 @@ class Solution:
             m = l + (r - l) // 2
             __ nums[m] > last:
                 l = m
-            else:
+            ____:
                 r = m
 
-        return min(nums[l], nums[r])
+        r.. m..(nums[l], nums[r])

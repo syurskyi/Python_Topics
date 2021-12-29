@@ -9,32 +9,32 @@ class Solution(object):
         :type n: str
         :rtype: str
         """
-        k = len(n)
-        candidates = [str(10**k0+d) for k0 in (k-1, k) for d in (-1, 1)]
+        k = l..(n)
+        candidates = [str(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
         prefix = n[:int((k+1)/2)]
         p = int(prefix)
-        for start in map(str, (p-1, p, p+1)):
-            candidates.append(start+(start[:-1] __ k%2 else start)[::-1])
+        ___ start __ map(str, (p-1, p, p+1)):
+            candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x):
-            return abs(int(n)-int(x))
-        res = None
-        for cand in candidates:
-            __ cand != n and not cand.startswith('00'):
-                __ res is None or delta(cand) < delta(res) or\
-                    delta(cand) == delta(res) and int(cand) < int(res):
+            r.. abs(int(n)-int(x))
+        res = N..
+        ___ cand __ candidates:
+            __ cand != n and n.. cand.startswith('00'):
+                __ res __ N.. o. delta(cand) < delta(res) o.\
+                    delta(cand) __ delta(res) and int(cand) < int(res):
                     res = cand
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             '123',
             '12122',
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.nearestPalindromic(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

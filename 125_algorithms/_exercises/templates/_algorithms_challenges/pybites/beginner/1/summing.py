@@ -1,15 +1,15 @@
-___ sum_numbers(numbers_ N..
-    total = 0
-    __ numbers == None:
-        for i in range(1,101):
-            total = total + i
-    elif len(numbers) == 0:
-        total = 0
-    elif isinstance(numbers, list) or isinstance(numbers, tuple):
-        for i in numbers:
-            total = total + i
-    elif not isinstance(numbers, list) or not isinstance(numbers, tuple):
-        count = len(numbers)
-        for i in range(0,count):
-            total = total + numbers[i]
-    return total
+# ___ sum_numbers numbers_ N..
+#     total  0
+#     __ numbers __ N..
+#         ___ i __ r.. 1 101
+#             total _ ? + i
+#     ____ l.. ? __ 0
+#         t.. _ 0
+#     ____ isi.. n.. li.. o. isi.. n.. tu..
+#         ___ i __ ?
+#             total _ ? + ?
+#     ____ n.. isi.. ? li.. o. n.. isi.. ? tu..
+#         count _ l.. ?
+#         ___ i __ r.. 0 ?
+#             total _ t.. + ?|?
+#     r.. ?

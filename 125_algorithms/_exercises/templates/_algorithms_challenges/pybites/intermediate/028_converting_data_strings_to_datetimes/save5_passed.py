@@ -1,8 +1,8 @@
-from collections import Counter
-from datetime import datetime
-import os
-import re
-from urllib.request import urlretrieve
+____ collections _______ Counter
+____ datetime _______ datetime
+_______ os
+_______ re
+____ urllib.request _______ urlretrieve
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 RSS_FEED = 'pybites_feed.rss.xml'
@@ -19,17 +19,17 @@ ___ _get_dates():
     urlretrieve(remote, local)
 
     with open(local) as f:
-        return PUB_DATE.findall(f.read())
+        r.. PUB_DATE.findall(f.read())
 
 
 ___ convert_to_datetime(date_str):
     """Receives a date str and convert it into a datetime object"""
-    return datetime.strptime(date_str[:-6], "%a, %d %b %Y %H:%M:%S")
+    r.. datetime.strptime(date_str[:-6], "%a, %d %b %Y %H:%M:%S")
 
 
 ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
-    l = [datetime.strftime(d, '%Y-%m') for d in dates]
+    l = [datetime.strftime(d, '%Y-%m') ___ d __ dates]
     most_freq_month = Counter(l).most_common(1)[0][0]
-    return most_freq_month
+    r.. most_freq_month

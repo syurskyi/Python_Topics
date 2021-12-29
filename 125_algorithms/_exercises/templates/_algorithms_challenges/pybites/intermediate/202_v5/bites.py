@@ -1,11 +1,11 @@
-import csv
-from pathlib import Path
-from urllib.request import urlretrieve
+_______ csv
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
 
 tmp = Path('/tmp')
 stats = tmp / 'bites.csv'
 
-__ not stats.exists():
+__ n.. stats.exists():
     urlretrieve('https://bit.ly/2MQyqXQ', stats)
 
 
@@ -16,11 +16,11 @@ ___ get_most_complex_bites(N=10, stats=stats):
        most complex Bites.
     """
     with open(stats, encoding="utf-8-sig") as s:
-        return [x[0] for x in sorted(
-            [[round(float(x['Bite'].split(' ')[1])), float(x['Difficulty'])] for x in csv.DictReader(s, delimiter=';')
-             __ x['Difficulty'] != 'None'], key=lambda x: x[1], reverse=True)[:N]]
+        r.. [x[0] ___ x __ s..(
+            [[round(float(x['Bite'].split(' ')[1])), float(x['Difficulty'])] ___ x __ csv.DictReader(s, delimiter=';')
+             __ x['Difficulty'] != 'None'], key=l.... x: x[1], r.._T..[:N]]
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     res = get_most_complex_bites()
     print(res)

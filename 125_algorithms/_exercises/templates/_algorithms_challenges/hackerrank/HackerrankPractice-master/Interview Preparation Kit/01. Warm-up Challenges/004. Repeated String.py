@@ -3,7 +3,7 @@
 
 
 ___ repeated_string(s, n):
-    return n // len(s) * s.count('a') + s[0: n % len(s)].count('a')
+    r.. n // l..(s) * s.c.. 'a') + s[0: n % l..(s)].c.. 'a')
 
 
 s = input()

@@ -11,18 +11,18 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        __ n == 0:
-            return 1
+        __ n __ 0:
+            r.. 1
         t = [0] * (n + 1)
         t[1] = 1
-        __ n == 1:
-            return t[1]
+        __ n __ 1:
+            r.. t[1]
         t[2] = 2
         __ n <= 2:
-            return t[n]
-        for i in range(3, n + 1):
+            r.. t[n]
+        ___ i __ r..(3, n + 1):
             t[i] = t[i - 1] + t[i - 2]
-        return t[n]
+        r.. t[n]
 
 
 s = Solution()

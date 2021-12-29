@@ -4,9 +4,9 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-from collections import Counter,defaultdict
-import operator
-import itertools
+____ collections _______ Counter,defaultdict
+_______ operator
+_______ itertools
 
 
 
@@ -97,24 +97,24 @@ mapping = {'red': RED_WINES,'white': WHITE_WINES,'sparkling': SPARKLING_WINES,'a
 
 
 ___ _calculate_similarity(wine,cheese):
-    wine_length = len(wine)
-    cheese_length = len(cheese)
+    wine_length = l..(wine)
+    cheese_length = l..(cheese)
     
     counts_wine = Counter(wine.lower())
     counts_cheese = Counter(cheese.lower())
 
-    numerator = sum((counts_wine & counts_cheese).values())
+    numerator = s..((counts_wine & counts_cheese).values())
 
     denominator = 1 + (wine_length - cheese_length)**2
 
-    return numerator/denominator
+    r.. numerator/denominator
 
 ___ best_match_per_wine(wine_type="all"):
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
 
-    __ wine_type not in mapping:
+    __ wine_type n.. __ mapping:
         raise ValueError("Invalid Wie TYpe")
 
 
@@ -122,10 +122,10 @@ ___ best_match_per_wine(wine_type="all"):
 
     
 
-    maximum = max(itertools.product(values,CHEESES),key=lambda x: _calculate_similarity(*x))
+    maximum = max(itertools.product(values,CHEESES),key=l.... x: _calculate_similarity(*x))
 
 
-    return (*maximum,_calculate_similarity(*maximum))
+    r.. (*maximum,_calculate_similarity(*maximum))
 
 
 
@@ -149,16 +149,16 @@ ___ match_wine_5cheeses():
     ]
     """
     all_wines = mapping['all']
-    wine_cheeses = defaultdict(list)
+    wine_cheeses = defaultdict(l..)
     
-    results = []
+    results    # list
 
-    for wine in all_wines:
-        sorted_list = sorted(CHEESES,key=lambda x: (-(_calculate_similarity(wine,x)),x))
-        results.append((wine,sorted_list[:5]))
+    ___ wine __ all_wines:
+        sorted_list = s..(CHEESES,key=l.... x: (-(_calculate_similarity(wine,x)),x))
+        results.a..((wine,sorted_list[:5]))
 
     
-    return sorted(results,key=lambda x:x[0])
+    r.. s..(results,key=l.... x:x[0])
 
 
 

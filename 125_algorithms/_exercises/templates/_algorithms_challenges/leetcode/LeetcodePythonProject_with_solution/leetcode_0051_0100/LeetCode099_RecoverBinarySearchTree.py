@@ -6,7 +6,7 @@ Created on Jan 31, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -17,10 +17,10 @@ class Solution(object):
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
-        __ not root: return
-        self.first = None
-        self.second = None
-        self.prev = None
+        __ n.. root: r..
+        self.first = N..
+        self.second = N..
+        self.prev = N..
         self.inOrder(root)
         __ self.second and self.first:
             val = self.second.val
@@ -28,12 +28,12 @@ class Solution(object):
             self.first.val = val
     
     ___ inOrder(self, root):
-        __ not root:
-            return
+        __ n.. root:
+            r..
         self.inOrder(root.left)
         __ self.prev:
             __ root.val < self.prev.val:
-                __ not self.first:
+                __ n.. self.first:
                     self.first = self.prev
                 self.second = root
         self.prev = root
@@ -42,5 +42,5 @@ class Solution(object):
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

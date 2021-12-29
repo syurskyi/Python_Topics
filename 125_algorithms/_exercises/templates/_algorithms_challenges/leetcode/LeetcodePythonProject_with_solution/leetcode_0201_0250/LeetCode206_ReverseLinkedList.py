@@ -16,28 +16,28 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head or not head.next: return head
+        __ n.. head o. n.. head.next: r.. head
         p1 = head
         p2 = head.next
-        p1.next = None
+        p1.next = N..
         while p1 and p2:
             tmp = p2.next
             p2.next = p1
             p1 = p2
             p2 = tmp
-        return p1
+        r.. p1
     
     ___ reverseListRecursive(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head or not head.next: return head
+        __ n.. head o. n.. head.next: r.. head
         second = head.next
-        head.next = None
+        head.next = N..
         rest = self.reverseListRecursive(second)
         second.next = head
-        return rest
+        r.. rest
     
     ___ test(self):
         head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
@@ -58,7 +58,7 @@ class Solution(object):
             node = node.next
         print()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
         

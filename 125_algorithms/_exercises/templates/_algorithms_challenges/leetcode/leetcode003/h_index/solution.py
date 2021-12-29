@@ -24,18 +24,18 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        citations.sort(reverse=True)
+        citations.sort(r.._T..
         count = 0
         lowest = 0
         h = 0
-        for i, c in enumerate(citations):
+        ___ i, c __ enumerate(citations):
             lowest = c
             count = i + 1
             __ lowest >= count:
                 h = count
-            else:
+            ____:
                 break
-        return h
+        r.. h
 
 
 a1 = [3, 0, 6, 1, 5]

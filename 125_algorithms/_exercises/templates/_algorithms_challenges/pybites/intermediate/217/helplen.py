@@ -1,6 +1,6 @@
-from contextlib import redirect_stdout
-from io import StringIO
-from types import BuiltinFunctionType
+____ contextlib _______ redirect_stdout
+____ io _______ StringIO
+____ types _______ BuiltinFunctionType
 
 
 ___ get_len_help_text(builtin: BuiltinFunctionType) -> int:
@@ -8,7 +8,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) -> int:
        You need to redirect stdout from the help builtin.
        If the the object passed in is not a builtin, raise a ValueError.
     """
-    __ not isinstance(builtin,BuiltinFunctionType):
+    __ n.. isi..(builtin,BuiltinFunctionType):
         raise ValueError("Not a built in")
     
 
@@ -19,7 +19,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) -> int:
     s = f.getvalue()
 
 
-    return len(s)
+    r.. l..(s)
 
 
 

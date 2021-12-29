@@ -7,9 +7,9 @@ You can make the following assumptions about the inputs to the
       and sorted in ascending order.
 """
 
-import unittest
+_______ unittest
 
-from sum_of_multiples import sum_of_multiples
+____ sum_of_multiples _______ sum_of_multiples
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -52,5 +52,5 @@ class SumOfMultiplesTest(unittest.TestCase):
         self.assertEqual(sum_of_multiples(10000, []), 0)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

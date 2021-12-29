@@ -13,10 +13,10 @@ class Solution:
     @return: An integer
     """
     ___ maxDepth(self, root):
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return 1 + max(
+        r.. 1 + max(
             self.maxDepth(root.left),
             self.maxDepth(root.right)
         )

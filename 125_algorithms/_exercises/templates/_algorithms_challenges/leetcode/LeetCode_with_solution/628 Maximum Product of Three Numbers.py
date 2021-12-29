@@ -22,9 +22,9 @@ the range [-1000, 1000].
 Multiplication of any three numbers in the input won't exceed the range of
 32-bit signed integer.
 """
-import heapq
+_______ heapq
 
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -34,7 +34,7 @@ class Solution:
         """
         mxes = heapq.nlargest(3, nums)
         mns = heapq.nsmallest(3, nums)
-        return max(
+        r.. max(
             mxes[0] * mxes[1] * mxes[2],
             mns[0] * mns[1] * mxes[0],
         )

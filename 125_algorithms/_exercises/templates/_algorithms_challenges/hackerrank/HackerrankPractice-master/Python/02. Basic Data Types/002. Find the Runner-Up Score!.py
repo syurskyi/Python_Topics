@@ -3,5 +3,5 @@
 
 
 n = int(input())
-arr = list(map(int, input().split()))
-print(max([x for x in arr __ x != max(arr)]))
+arr = l..(map(int, input().split()))
+print(max([x ___ x __ arr __ x != max(arr)]))

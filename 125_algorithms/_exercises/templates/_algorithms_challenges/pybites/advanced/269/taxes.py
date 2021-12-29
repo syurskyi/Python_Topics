@@ -39,8 +39,8 @@ Sample output from running the code in the if/main clause:
 ----------------------------------
               Total =     4,658.50
 """
-from dataclasses import dataclass, field
-from typing import List, NamedTuple
+____ dataclasses _______ dataclass, field
+____ typing _______ List, NamedTuple
 
 Bracket = NamedTuple("Bracket", [("end", int), ("rate", float)])
 Taxed = NamedTuple("Taxed", [("amount", float), ("rate", float), ("tax", float)])
@@ -95,15 +95,15 @@ class Taxes:
 
         values = [("Taxable Income:",f"{self.salary:,.2f}"),("Taxes Owed:",f"{self.taxes:,.2f}"),("Tax Rate:",f"{self.tax_rate:.2f}%")]
 
-        largest_left_length = len(values[0][0]) + 1
-        largest_right_length = len(str(int(self.salary))) + 4
+        largest_left_length = l..(values[0][0]) + 1
+        largest_right_length = l..(str(int(self.salary))) + 4
         spaces = 32 - (largest_left_length + largest_right_length)
 
-        for i,(string,value) in enumerate(values,1):
+        ___ i,(string,value) __ enumerate(values,1):
             t = ' ' * spaces
             s += f' {string:>{largest_left_length}}{t}{value:>{largest_right_length}}\n'
 
-        return s
+        r.. s
 
 
 
@@ -122,19 +122,19 @@ class Taxes:
         print("=" * self.OUTPUT_WIDTH)
 
         largest_amount = largest_tax =  float("-inf")
-        for amount,rate,tax in self.tax_amounts:
+        ___ amount,rate,tax __ self.tax_amounts:
             largest_amount = max(largest_amount,int(amount))
             largest_tax = max(largest_tax,int(tax))
     
         
-        largest_amount = len(str(largest_amount))
+        largest_amount = l..(str(largest_amount))
         largest_amount += 16
-        largest_tax = len(str(largest_tax))
+        largest_tax = l..(str(largest_tax))
         largest_tax += 4
 
         middle = self.OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)
         spaces = ' ' * 5
-        for amount,rate,tax in self.tax_amounts:
+        ___ amount,rate,tax __ self.tax_amounts:
             left_string = f"{amount:,.2f} x {rate:.2f} ="
             print(f"{left_string:>{largest_amount}}{spaces}{tax:>{largest_tax},.2f}")
         
@@ -156,16 +156,16 @@ class Taxes:
         Returns:
             float -- The amount of taxes owed
         """
-        self.tax_amounts = []
+        self.tax_amounts    # list
         self.taxes_owed =0 
         
         value = self.salary
         previous_end = 0
         leave = False
-        for end,rate in self.bracket:
+        ___ end,rate __ self.bracket:
             __ value >= end:
                 tax_paid = end - previous_end
-            else:
+            ____:
                 tax_paid = value - previous_end
                 leave = True
             
@@ -174,7 +174,7 @@ class Taxes:
             #value -= tax_owed
             self.taxes_owed += tax_owed
             tax_amount = Taxed(tax_paid,rate,tax_owed)
-            self.tax_amounts.append(tax_amount)
+            self.tax_amounts.a..(tax_amount)
             previous_end = end
             __ leave:
                 break
@@ -182,7 +182,7 @@ class Taxes:
 
 
 
-        return self.taxes_owed
+        r.. self.taxes_owed
 
 
 
@@ -193,7 +193,7 @@ class Taxes:
         Returns:
             float -- Total taxes owed
         """
-        return self.taxes_owed
+        r.. self.taxes_owed
 
     @property
     ___ tax_rate(self) -> float:
@@ -202,10 +202,10 @@ class Taxes:
         Returns:
             float -- Tax rate
         """
-        return round(self.taxes_owed / self.salary * 100,2)
+        r.. round(self.taxes_owed / self.salary * 100,2)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     salary = 40_000
     t = Taxes(salary)
     print(t)

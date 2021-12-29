@@ -7,17 +7,17 @@ Created on Apr 10, 2017
 class Solution(object):
     ___ longestPalindrome(self, s):
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         singleNum = False
         result = 0
-        for count in hashmap.values():
+        ___ count __ hashmap.values():
             __ count%2 != 0:
                 __ singleNum:
                     result += count-1
-                else:
+                ____:
                     result += count
                     singleNum = True
-            else:
+            ____:
                 result += count
-        return result
+        r.. result

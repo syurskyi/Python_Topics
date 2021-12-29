@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from dot_dsl import Graph, Node, Edge, NODE, EDGE, ATTR
+____ dot_dsl _______ Graph, Node, Edge, NODE, EDGE, ATTR
 
 
 class DotDslTest(unittest.TestCase):
@@ -120,8 +120,8 @@ class DotDslTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

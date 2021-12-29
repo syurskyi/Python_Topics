@@ -1,4 +1,4 @@
 #Count files with a .py extension inside the root1 directory]
-import glob
+_______ glob
 file_listglob.glob1("files","*.py")
-print(len(file_list))
+print(l..(file_list))

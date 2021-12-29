@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 EAST = "E"
 WEST = "W"
@@ -12,22 +12,22 @@ ___ search_apartment(buildings: List[int], direction: str) -> List[int]:
     See sample inputs / outputs below and in the tests.
     """
     highest = 0
-    building_list = []
-    __ direction == "E":
+    building_list    # list
+    __ direction __ "E":
         buildings.reverse()
-    for index, building in enumerate(buildings):
+    ___ index, building __ enumerate(buildings):
         __ building > highest:
             highest = building
-            building_list.append(index)
-    __ direction == "E":
-        for index, building in enumerate(building_list):
-            building_list[index] = len(buildings)-building-1
+            building_list.a..(index)
+    __ direction __ "E":
+        ___ index, building __ enumerate(building_list):
+            building_list[index] = l..(buildings)-building-1
         building_list.reverse()
-    return building_list
+    r.. building_list
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     A = [3, 5, 4, 4, 7, 1, 3, 2]  # central tallest
     B = [1, 1, 1, 1, 1, 2]  # almost flat
     #

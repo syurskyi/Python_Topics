@@ -31,27 +31,27 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
-        __ n == 0 or n == 1:
-            return 0
-        __ n == 2:
-            return max(0, A[1]-A[0])
+        n = l..(A)
+        __ n __ 0 o. n __ 1:
+            r.. 0
+        __ n __ 2:
+            r.. max(0, A[1]-A[0])
 
         CD = 1  # cool down
-        F = [0 for _ in xrange(n)]
-        M = [0 for _ in xrange(n)]
+        F = [0 ___ _ __ xrange(n)]
+        M = [0 ___ _ __ xrange(n)]
         F[1] = A[1]-A[0]
         M[1] = max(M[0], F[1])
-        F[2] = max(A[2]-A[2-1-i] for i in xrange(2))
+        F[2] = max(A[2]-A[2-1-i] ___ i __ xrange(2))
         M[2] = max(M[1], F[2])
 
         # core
-        for i in xrange(3, n):
+        ___ i __ xrange(3, n):
             F[i] = max(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
             M[i] = max(M[i-1], F[i])
 
-        return M[-1]
+        r.. M[-1]
 
 
-__ __name__ == "__main__":
-    assert Solution().maxProfit([1, 2, 3, 0, 2]) == 3
+__ __name__ __ "__main__":
+    ... Solution().maxProfit([1, 2, 3, 0, 2]) __ 3

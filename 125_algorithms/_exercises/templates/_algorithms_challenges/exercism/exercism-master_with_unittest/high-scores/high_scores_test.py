@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from high_scores import HighScores
+____ high_scores _______ HighScores
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -72,5 +72,5 @@ class HighScoreTest(unittest.TestCase):
         self.assertEqual(HighScores(scores).report(), expected)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     unittest.main()

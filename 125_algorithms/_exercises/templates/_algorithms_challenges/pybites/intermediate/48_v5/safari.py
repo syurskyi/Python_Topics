@@ -1,6 +1,6 @@
-import os
-import re
-import urllib.request
+_______ os
+_______ re
+_______ urllib.request
 
 LOG = os.path.join('/tmp', 'safari.logs')
 PY_BOOK, OTHER_BOOK = '🐍', '.'
@@ -12,14 +12,14 @@ ___ create_chart():
     book = ''
     last_date = ''
     with open(LOG) as log:
-        for line in log:
+        ___ line __ log:
             (d,i,t) = line_check.match(line).groups()
             __ d != last_date:
                 print(f'\n{d} ',end='')
                 last_date = d
             __ i != '':
                 book = t
-            else:
-                __ t == 'sending to slack channel':
-                    print(PY_BOOK __ 'python' in book.lower() else OTHER_BOOK, end='')
+            ____:
+                __ t __ 'sending to slack channel':
+                    print(PY_BOOK __ 'python' __ book.lower() ____ OTHER_BOOK, end='')
         print()

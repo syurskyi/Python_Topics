@@ -1,4 +1,4 @@
-import os
+_______ os
 
 
 ___ count_dirs_and_files(directory='.'):
@@ -8,17 +8,17 @@ ___ count_dirs_and_files(directory='.'):
 
     
     directories = files =  0
-    for root,subdir,file in os.walk(directory):
-        directories += len(subdir)
-        files += len(file)
+    ___ root,subdir,file __ os.walk(directory):
+        directories += l..(subdir)
+        files += l..(file)
 
 
 
-    return directories,files
+    r.. directories,files
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     count_dirs_and_files()

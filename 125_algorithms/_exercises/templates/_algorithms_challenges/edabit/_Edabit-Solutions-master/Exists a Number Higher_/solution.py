@@ -1,6 +1,6 @@
 ___ exists_higher(lst, n):
-    for i in lst:
+    ___ i __ lst:
         __ i >= n:
-            return True
-    else:
-        return False
+            r.. True
+    ____:
+        r.. False

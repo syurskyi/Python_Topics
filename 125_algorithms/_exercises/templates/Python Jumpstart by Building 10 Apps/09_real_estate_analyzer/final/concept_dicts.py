@@ -1,7 +1,7 @@
 lookup  {}
-lookup  dict()
+lookup  d..()
 lookup  {'age': 42, 'loc': 'Italy'}
-lookup  dict(age42, loc'Italy')
+lookup  d..(age42, loc'Italy')
 
 
 class Wizard:
@@ -18,12 +18,12 @@ print(lookup['loc'])
 
 lookup['cat']  'Fun code demos'
 
-__ 'cat' in lookup:
+__ 'cat' __ lookup:
     print(lookup['cat'])
 
 # Suppose these came from a data source, e.g. database, web service, etc
 # And we want to randomly access them
-import collections
+_______ collections
 
 User  collections.namedtuple('User', 'id, name, email')
 users  [
@@ -33,8 +33,8 @@ users  [
     User(4, 'user4', 'user4@talkpython.fm'),
 ]
 
-lookup  dict()
-for u in users:
+lookup  d..()
+___ u __ users:
     lookup[u.email]  u
 
 print(lookup['user4@talkpython.fm'])
@@ -42,11 +42,11 @@ print(lookup['user4@talkpython.fm'])
 
 # LAMBDAS
 ___ find_significant_numbers(nums, predicate):
-    for n in nums:
+    ___ n __ nums:
         __ predicate(n):
             yield n
 
 
 numbers  [1, 1, 2, 3, 5, 8, 13, 21, 34]
-sig  find_significant_numbers(numbers, lambda x: x % 2 __ 1)
-print(list(sig))
+sig  find_significant_numbers(numbers, l.... x: x % 2 __ 1)
+print(l..(sig))

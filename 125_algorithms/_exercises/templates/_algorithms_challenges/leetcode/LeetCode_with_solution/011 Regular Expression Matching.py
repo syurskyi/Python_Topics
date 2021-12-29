@@ -37,35 +37,35 @@ class Solution:
 
         index = 0
         state = 0
-        while index < len(tape) and state < len(regex):
+        while index < l..(tape) and state < l..(regex):
             char = tape[index]
-            __ state+1 < len(regex) and regex[state+1] == "*":
+            __ state+1 < l..(regex) and regex[state+1] __ "*":
                 __ regex[state] != ".":
-                    __ char == regex[state]:  # advance tape
-                        while index < len(tape) and tape[index] == char: index += 1
+                    __ char __ regex[state]:  # advance tape
+                        while index < l..(tape) and tape[index] __ char: index += 1
                         state += 2
-                    else:
+                    ____:
                         state += 2
-                else:  # .*
+                ____:  # .*
                     state += 2
-                    __ state < len(regex):
+                    __ state < l..(regex):
                         __ regex[state] != ".":  # find until the next char in regex
-                            while index < len(tape) and tape[index] != regex[state]: index += 1
-                        else:  # difficult part
+                            while index < l..(tape) and tape[index] != regex[state]: index += 1
+                        ____:  # difficult part
                             count = 1
 
-                    else:
-                        return True
-            else:  # no * appended
-                __ char == regex[state] or regex[state] == ".":
+                    ____:
+                        r.. True
+            ____:  # no * appended
+                __ char __ regex[state] o. regex[state] __ ".":
                     index += 1
                     state += 1
-                else:
+                ____:
                     break
 
-        __ index == len(tape) and state == len(regex):
-            return True
-        return False
+        __ index __ l..(tape) and state __ l..(regex):
+            r.. True
+        r.. False
 
 
     ___ isMatch_TLE(self, s, p):
@@ -86,30 +86,30 @@ class Solution:
         state = 0
 
         # dfs terminal condition
-        __ not tape and not regex:
-            return True
+        __ n.. tape and n.. regex:
+            r.. True
         # if not s and p or s and not p:
-        __ tape and not regex:  # possible "", "a*"
-            return False
+        __ tape and n.. regex:  # possible "", "a*"
+            r.. False
 
-        __ not tape and regex:
-            __ state+1 < len(regex) and regex[state+1] == "*":
-                return self.isMatch(tape, regex[state+2:])
-            else:
-                return False
+        __ n.. tape and regex:
+            __ state+1 < l..(regex) and regex[state+1] __ "*":
+                r.. self.isMatch(tape, regex[state+2:])
+            ____:
+                r.. False
 
-        __ state+1 < len(regex) and regex[state+1] == "*":
-            __ tape[index] == regex[state] or regex[state] == ".":  # consume tokens
-                return self.isMatch(tape[index+1:], regex[state:]) or \
-                       self.isMatch(tape[index+1:], regex[state+2:]) or \
+        __ state+1 < l..(regex) and regex[state+1] __ "*":
+            __ tape[index] __ regex[state] o. regex[state] __ ".":  # consume tokens
+                r.. self.isMatch(tape[index+1:], regex[state:]) o. \
+                       self.isMatch(tape[index+1:], regex[state+2:]) o. \
                        self.isMatch(tape[index:], regex[state+2:])
-            else:
-                return self.isMatch(tape[index:], regex[state+2:])
-        else:  # without trailing *
-            __ tape[index] == regex[state] or regex[state] == ".":
-                return self.isMatch(tape[index+1:], regex[state+1:])
-            else:
-                return False
+            ____:
+                r.. self.isMatch(tape[index:], regex[state+2:])
+        ____:  # without trailing *
+            __ tape[index] __ regex[state] o. regex[state] __ ".":
+                r.. self.isMatch(tape[index+1:], regex[state+1:])
+            ____:
+                r.. False
 
     ___ isMatch(self, s, p):
         """
@@ -136,52 +136,52 @@ class Solution:
         tape = s
         regex = p
 
-        m = len(tape)
-        n = len(regex)
+        m = l..(tape)
+        n = l..(regex)
 
-        dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
+        dp = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
 
         # edge cases
         dp[m][n] = True
-        for j in xrange(n-1, -1, -1):
-            __ regex[j] == "*":
+        ___ j __ xrange(n-1, -1, -1):
+            __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
-            elif j+1 < n and regex[j+1] == "*":
+            ____ j+1 < n and regex[j+1] __ "*":
                 dp[m][j] = dp[m][j+1]
-            else:
+            ____:
                 dp[m][j] = False
 
         # normal cases
-        for i in xrange(m-1, -1, -1):
-            for j in xrange(n-1, -1, -1):
-                __ regex[j] == "*":
+        ___ i __ xrange(m-1, -1, -1):
+            ___ j __ xrange(n-1, -1, -1):
+                __ regex[j] __ "*":
                     __ j-1 >= 0 and regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
-                    else:
-                        return False  # two consecutive *
-                elif j+1 < n and regex[j+1] == "*":
-                    __ tape[i] == regex[j] or regex[j] == ".":
-                        dp[i][j] = dp[i][j+2] or dp[i+1][j] or dp[i+1][j+2]  # what is done in dfs
-                    else:
+                    ____:
+                        r.. False  # two consecutive *
+                ____ j+1 < n and regex[j+1] __ "*":
+                    __ tape[i] __ regex[j] o. regex[j] __ ".":
+                        dp[i][j] = dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
+                    ____:
                         dp[i][j] = dp[i][j+2]
-                else:
-                    __ tape[i] == regex[j] or regex[j] == ".":
+                ____:
+                    __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i+1][j+1]
-                    else:
+                    ____:
                         dp[i][j] = False
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same
 
-        return dp[0][0]
+        r.. dp[0][0]
 
 
-__ __name__ == "__main__":
-    assert Solution().isMatch("aa", "a") == False
-    assert Solution().isMatch("aa", "aa") == True
-    assert Solution().isMatch("aaa", "aa") == False
-    assert Solution().isMatch("aa", "a*") == True
-    assert Solution().isMatch("ab", ".*") == True
-    assert Solution().isMatch("aab", "c*a*b") == True
-    assert Solution().isMatch("aaa", "a*a") == True
-    assert Solution().isMatch("bbbba", ".*a*a") == True
-    assert Solution().isMatch("a", "aa*") == True
+__ __name__ __ "__main__":
+    ... Solution().isMatch("aa", "a") __ False
+    ... Solution().isMatch("aa", "aa") __ True
+    ... Solution().isMatch("aaa", "aa") __ False
+    ... Solution().isMatch("aa", "a*") __ True
+    ... Solution().isMatch("ab", ".*") __ True
+    ... Solution().isMatch("aab", "c*a*b") __ True
+    ... Solution().isMatch("aaa", "a*a") __ True
+    ... Solution().isMatch("bbbba", ".*a*a") __ True
+    ... Solution().isMatch("a", "aa*") __ True

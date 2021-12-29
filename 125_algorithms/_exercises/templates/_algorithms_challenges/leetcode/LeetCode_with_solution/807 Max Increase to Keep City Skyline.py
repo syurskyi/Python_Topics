@@ -39,7 +39,7 @@ All heights grid[i][j] are in the range [0, 100].
 All buildings in grid[i][j] occupy the entire grid cell: that is, they are a
 1 x 1 x grid[i][j] rectangular prism.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -47,25 +47,25 @@ class Solution:
         """
         grow the to limit constraint by 2D skyline
         """
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         # left to right projection
         lr = [
             max(row)
-            for row in grid
+            ___ row __ grid
         ]
         # top to bottom projection
         tb = [
             max(
                 grid[i][j]
-                for i in range(m)
+                ___ i __ r..(m)
             )
-            for j in range(n)
+            ___ j __ r..(n)
         ]
 
         ret = 0
-        for i in range(m):
-            for j in range(n):
-                diff = min(lr[i], tb[j]) - grid[i][j]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                diff = m..(lr[i], tb[j]) - grid[i][j]
                 ret += diff
 
-        return ret
+        r.. ret

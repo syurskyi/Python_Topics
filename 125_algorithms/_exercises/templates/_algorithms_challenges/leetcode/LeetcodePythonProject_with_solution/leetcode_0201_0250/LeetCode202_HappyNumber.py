@@ -17,11 +17,11 @@ class Solution(object):
             while n > 0:
                 num += (n % 10)**2
                 n = int(n/10)
-            __ num in hashset:
-                return False
+            __ num __ hashset:
+                r.. False
             hashset.add(num)
             n = num
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -29,11 +29,11 @@ class Solution(object):
             1,
             20,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % (n))
             result = self.isHappy(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

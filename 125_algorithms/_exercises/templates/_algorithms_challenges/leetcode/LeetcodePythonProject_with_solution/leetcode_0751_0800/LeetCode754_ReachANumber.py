@@ -18,18 +18,18 @@ class Solution(object):
         while (sumVal-target)%2 != 0:
             step += 1
             sumVal += step
-        return step
+        r.. step
     
     ___ test(self):
         testCases = [
             3,
             2,
         ]
-        for target in testCases:
+        ___ target __ testCases:
             print('target: %s' % target)
             result = self.reachNumber(target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

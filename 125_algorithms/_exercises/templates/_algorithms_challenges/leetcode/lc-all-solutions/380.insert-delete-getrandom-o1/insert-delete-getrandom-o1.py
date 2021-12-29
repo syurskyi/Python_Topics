@@ -4,7 +4,7 @@ class RandomizedSet(object):
     Initialize your data structure here.
     """
     self.d = {}
-    self.a = []
+    self.a    # list
 
   ___ insert(self, val):
     """
@@ -12,11 +12,11 @@ class RandomizedSet(object):
     :type val: int
     :rtype: bool
     """
-    __ val in self.d:
-      return False
-    self.a.append(val)
-    self.d[val] = len(self.a) - 1
-    return True
+    __ val __ self.d:
+      r.. False
+    self.a.a..(val)
+    self.d[val] = l..(self.a) - 1
+    r.. True
 
   ___ remove(self, val):
     """
@@ -24,21 +24,21 @@ class RandomizedSet(object):
     :type val: int
     :rtype: bool
     """
-    __ val not in self.d:
-      return False
+    __ val n.. __ self.d:
+      r.. False
     index = self.d[val]
     self.a[index] = self.a[-1]
     self.d[self.a[-1]] = index
     self.a.pop()
     del self.d[val]
-    return True
+    r.. True
 
   ___ getRandom(self):
     """
     Get a random element from the set.
     :rtype: int
     """
-    return self.a[random.randrange(0, len(self.a))]
+    r.. self.a[random.randrange(0, l..(self.a))]
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()

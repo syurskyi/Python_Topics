@@ -13,22 +13,22 @@ class Solution(object):
         p3 = -1
         p2 = 0
         p1 = 1
-        for _ in range(N):
+        ___ _ __ r..(N):
             cur = (p1*2+p3)%mod
             p3 = p2
             p2 = p1
             p1 = cur
-        return p1
+        r.. p1
     
     ___ test(self):
         testCases = [
             3,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.numTilings(n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

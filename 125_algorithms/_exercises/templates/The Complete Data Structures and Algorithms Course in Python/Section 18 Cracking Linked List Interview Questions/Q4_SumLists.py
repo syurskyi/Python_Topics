@@ -11,7 +11,7 @@ ___ sumList(llA, llB
     carry  0
     ll  LinkedList()
 
-    w__ n1 or n2:
+    w__ n1 o. n2:
         result  carry
         __ n1:
             result + n1.value
@@ -19,7 +19,7 @@ ___ sumList(llA, llB
         __ n2:
             result + n2.value
             n2  n2.next
-        ll.add(in.(result % 10))
+        ll.add(__.(result % 10))
         carry  result / 10
     
     r_ ll

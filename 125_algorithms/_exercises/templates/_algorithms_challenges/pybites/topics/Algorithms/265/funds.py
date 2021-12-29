@@ -18,18 +18,18 @@ ___ max_fund(village):
     # Hint: while iterating, you could save the best_sum collected so far
     # return total, starting, ending
     best_sum, total, starting, ending = 0, 0, 0, 0
-    for index in range(len(village)):
+    ___ index __ r..(l..(village)):
         total = 0
-        for i in range(len(village[index:])):
+        ___ i __ r..(l..(village[index:])):
             total += village[index+i]
             __ total >= best_sum:
                 best_sum = total
                 starting = index
                 ending = index+i
-    __ best_sum == 0:
-        return (best_sum, starting, ending)
-    else:
-        return (best_sum, starting+1, ending+1)
+    __ best_sum __ 0:
+        r.. (best_sum, starting, ending)
+    ____:
+        r.. (best_sum, starting+1, ending+1)
 
 print(max_fund(community))
 print(max_fund(poverty))

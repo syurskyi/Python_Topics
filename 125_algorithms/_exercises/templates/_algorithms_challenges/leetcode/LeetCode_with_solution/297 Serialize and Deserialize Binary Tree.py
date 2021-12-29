@@ -19,7 +19,7 @@ follow this format, so please be creative and come up with different approaches 
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should
 be stateless.
 """
-from collections import deque
+____ collections _______ deque
 
 __author__ = 'Daniel'
 
@@ -27,8 +27,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Codec:
@@ -41,25 +41,25 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        __ not root:
-            return "null"
+        __ n.. root:
+            r.. "null"
 
-        ret = []
-        q = []
-        q.append(root)
-        ret.append(str(root.val))  # add result when enqueue
+        ret    # list
+        q    # list
+        q.a..(root)
+        ret.a..(str(root.val))  # add result when enqueue
         while q:
-            l = len(q)
-            for i in xrange(l):
+            l = l..(q)
+            ___ i __ xrange(l):
                 cur = q[i]
-                __ cur.left: q.append(cur.left)
-                ret.append(self.encode(cur.left))
-                __ cur.right: q.append(cur.right)
-                ret.append(self.encode(cur.right))
+                __ cur.left: q.a..(cur.left)
+                ret.a..(self.encode(cur.left))
+                __ cur.right: q.a..(cur.right)
+                ret.a..(self.encode(cur.right))
 
             q = q[l:]
 
-        return ",".join(ret)
+        r.. ",".join(ret)
 
     ___ deserialize(self, data):
         """
@@ -75,25 +75,25 @@ class Codec:
         i = 1
         while q:
             cur = q.popleft()
-            __ i < len(lst):
+            __ i < l..(lst):
                 cur.left = self.decode(lst[i])
                 i += 1
-                __ cur.left: q.append(cur.left)
-            __ i < len(lst):
+                __ cur.left: q.a..(cur.left)
+            __ i < l..(lst):
                 cur.right = self.decode(lst[i])
                 i += 1
-                __ cur.right: q.append(cur.right)
+                __ cur.right: q.a..(cur.right)
 
-        return root
+        r.. root
 
     ___ decode(self, s):
-        __ s == "null":
-            return None
-        else:
-            return TreeNode(int(s))
+        __ s __ "null":
+            r.. N..
+        ____:
+            r.. TreeNode(int(s))
 
     ___ encode(self, node):
-        __ not node:
-            return "null"
-        else:
-            return str(node.val)
+        __ n.. node:
+            r.. "null"
+        ____:
+            r.. str(node.val)

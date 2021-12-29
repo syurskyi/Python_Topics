@@ -35,34 +35,34 @@ Each node has a unique integer value from 1 to 100.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.pi = []
-        self.depths = []
+        self.pi    # list
+        self.depths    # list
 
     ___ isCousins(self, root: TreeNode, x: int, y: int) -> bool:
         """
         need to know parent and depth
         """
-        self.dfs(None, root, x, 0)
-        self.dfs(None, root, y, 0)
-        __ len(self.pi) != 2:
-            return False
-        return self.pi[0] != self.pi[1] and self.depths[0] == self.depths[1]
+        self.dfs(N.., root, x, 0)
+        self.dfs(N.., root, y, 0)
+        __ l..(self.pi) != 2:
+            r.. False
+        r.. self.pi[0] != self.pi[1] and self.depths[0] __ self.depths[1]
 
 
     ___ dfs(self, pi, node, x, depth):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        __ node.val == x:
-            self.pi.append(pi)
-            self.depths.append(depth)
-            return
+        __ node.val __ x:
+            self.pi.a..(pi)
+            self.depths.a..(depth)
+            r..
 
         self.dfs(node, node.left, x, depth + 1)
         self.dfs(node, node.right, x, depth + 1)

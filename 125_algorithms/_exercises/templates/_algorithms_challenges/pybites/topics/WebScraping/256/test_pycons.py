@@ -1,29 +1,29 @@
-import datetime
+_______ datetime
 
-import pytest
+_______ pytest
 
-from pycons import (get_pycon_events, filter_pycons,
+____ pycons _______ (get_pycon_events, filter_pycons,
                     get_continent)
 
 
 @pytest.fixture(scope="session")
 ___ pycon_events():
     events = get_pycon_events()
-    return events
+    r.. events
 
 
 @pytest.fixture(scope="session")
 ___ filtered_pycons(pycon_events):
     filtered = filter_pycons(pycon_events)
-    return filtered
+    r.. filtered
 
 
 ___ test_get_pycon_events_number(pycon_events):
-    assert len(pycon_events) == 21
+    ... l..(pycon_events) __ 21
 
 
 ___ test_get_pycon_events_cities(pycon_events):
-    actual = {event.city for event in pycon_events}
+    actual = {event.city ___ event __ pycon_events}
     expected = {
         "Accra", "Belgrade", "Berlin",
         "Bratislava", "Cardiff", "Cleveland, OH", "Dublin",
@@ -32,52 +32,52 @@ ___ test_get_pycon_events_cities(pycon_events):
         "Ostrava", "Puerto Vallarta", "Sydney",
         "Taipei", "Toronto",
     }
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_get_pycon_events_dates(pycon_events):
-    assert all(
-        isinstance(event.start_date, datetime.datetime)
-        for event in pycon_events
+    ... a..(
+        isi..(event.start_date, datetime.datetime)
+        ___ event __ pycon_events
     )
-    assert all(isinstance(event.end_date, datetime.datetime)
-               for event in pycon_events)
+    ... a..(isi..(event.end_date, datetime.datetime)
+               ___ event __ pycon_events)
 
 
 ___ test_filter_pycons_number(filtered_pycons):
-    actual = len(filtered_pycons)
+    actual = l..(filtered_pycons)
     expected = 9
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_filter_pycons_cities(filtered_pycons):
-    actual = {event.city for event in filtered_pycons}
+    actual = {event.city ___ event __ filtered_pycons}
     expected = {
         "Belgrade", "Berlin", "Bratislava", "Cardiff",
         "Dublin", "Florence", "Munich", "Odessa",
         "Ostrava",
     }
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_filter_pycons_dates(filtered_pycons):
-    assert all(
-        isinstance(event.start_date, datetime.datetime)
-        for event in filtered_pycons
+    ... a..(
+        isi..(event.start_date, datetime.datetime)
+        ___ event __ filtered_pycons
     )
-    assert all(
-        isinstance(event.end_date, datetime.datetime)
-        for event in filtered_pycons
+    ... a..(
+        isi..(event.end_date, datetime.datetime)
+        ___ event __ filtered_pycons
     )
 
 
 ___ test_filter_pycons_year(filtered_pycons):
-    actual = {pycon.start_date.year for pycon in filtered_pycons}
+    actual = {pycon.start_date.year ___ pycon __ filtered_pycons}
     expected = {2019}
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_filter_pycons_continent(filtered_pycons):
-    actual = {get_continent(pycon.country) for pycon in filtered_pycons}
+    actual = {get_continent(pycon.country) ___ pycon __ filtered_pycons}
     expected = {"Europe"}
-    assert actual == expected
+    ... actual __ expected

@@ -28,19 +28,19 @@ class Solution:
         fill 9
         299
         """
-        digits = [int(e) for e in str(N)]
-        pointer = len(digits)
-        for i in range(len(digits) - 1, 0, -1):
+        digits = [int(e) ___ e __ str(N)]
+        pointer = l..(digits)
+        ___ i __ r..(l..(digits) - 1, 0, -1):
             __ digits[i - 1] > digits[i]:
                 pointer = i
                 digits[i - 1] -= 1
 
-        for i in range(pointer, len(digits)):
+        ___ i __ r..(pointer, l..(digits)):
             digits[i] = 9
 
-        return int("".join(map(str, digits)))
+        r.. int("".join(map(str, digits)))
 
 
-__ __name__ == "__main__":
-    assert Solution().monotoneIncreasingDigits(10) == 9
-    assert Solution().monotoneIncreasingDigits(332) == 299
+__ __name__ __ "__main__":
+    ... Solution().monotoneIncreasingDigits(10) __ 9
+    ... Solution().monotoneIncreasingDigits(332) __ 299

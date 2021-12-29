@@ -4,16 +4,16 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not nums or len(nums) < 3:
-            return ans
+        __ n.. nums o. l..(nums) < 3:
+            r.. ans
 
-        n = len(nums)
+        n = l..(nums)
         nums.sort()
 
-        for a in range(n - 2):
-            __ a > 0 and nums[a] == nums[a - 1]:
+        ___ a __ r..(n - 2):
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
             b, c = a + 1, n - 1
@@ -21,17 +21,17 @@ class Solution:
             while b < c:
                 total = nums[a] + nums[b] + nums[c]
 
-                __ total == 0:
-                    ans.append([nums[a], nums[b], nums[c]])
+                __ total __ 0:
+                    ans.a..([nums[a], nums[b], nums[c]])
                     b += 1
                     c -= 1
-                    while b < c and nums[b] == nums[b - 1]:
+                    while b < c and nums[b] __ nums[b - 1]:
                         b += 1
-                    while b < c and nums[c] == nums[c + 1]:
+                    while b < c and nums[c] __ nums[c + 1]:
                         c -= 1
-                elif total < 0:
+                ____ total < 0:
                     b += 1
-                else:
+                ____:
                     c -= 1
 
-        return ans
+        r.. ans

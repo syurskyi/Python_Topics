@@ -23,9 +23,9 @@ class Solution:
             ret += diff & 1
             diff >>= 1
             
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().hammingDistance(3, 1) == 1
-    assert Solution().hammingDistance(1, 4) == 2
+__ __name__ __ "__main__":
+    ... Solution().hammingDistance(3, 1) __ 1
+    ... Solution().hammingDistance(1, 4) __ 2

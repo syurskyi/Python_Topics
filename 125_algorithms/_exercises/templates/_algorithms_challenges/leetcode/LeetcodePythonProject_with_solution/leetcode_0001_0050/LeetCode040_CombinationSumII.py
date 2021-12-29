@@ -10,22 +10,22 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        __ not candidates: return[]
+        __ n.. candidates: r..[]
         candidates.sort()
-        res = []
+        res    # list
         self.helper2(candidates, 0, [], res, target)
-        return res
+        r.. res
     
     ___ helper2(self, nums, ind, curr, res, target):
-        __ target == 0:
-            res.append(list(curr))
-            return
-        for i in range(ind, len(nums)):
+        __ target __ 0:
+            res.a..(l..(curr))
+            r..
+        ___ i __ r..(ind, l..(nums)):
             __ target < nums[i]:
-                return
-            __ i > ind and nums[i] == nums[i-1]:
+                r..
+            __ i > ind and nums[i] __ nums[i-1]:
                 continue
-            curr.append(nums[i])
+            curr.a..(nums[i])
             self.helper2(nums, i+1, curr, res, target-nums[i])
             curr.pop()
     
@@ -35,21 +35,21 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        __ not candidates: return []
+        __ n.. candidates: r.. []
         candidates.sort()
-        res = []
+        res    # list
         self.helper(candidates, target, 0, [], res)
-        return res
+        r.. res
     
     ___ helper(self, nums, target, ind, curr, res):
-        __ target == 0:
-            res.append(list(curr))
-            return
+        __ target __ 0:
+            res.a..(l..(curr))
+            r..
         prev = -1
-        for i in range(ind, len(nums)):
+        ___ i __ r..(ind, l..(nums)):
             __ nums[i] > target:
-                return
+                r..
             __ prev != nums[i]:
-                curr.append(nums[i])
+                curr.a..(nums[i])
                 self.helper(nums, target-nums[i], i+1, curr, res)
                 prev = curr.pop()

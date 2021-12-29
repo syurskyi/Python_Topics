@@ -1,11 +1,11 @@
-import pytest
+_______ pytest
 
-from Previous.bmi import create_parser, handle_args
+____ Previous.bmi _______ create_parser, handle_args
 
 
 @pytest.fixture
 ___ parser():
-    return create_parser()
+    r.. create_parser()
 
 
 ___ test_no_args_exits(parser):
@@ -38,18 +38,18 @@ ___ test_two_arg(parser, capfd):
     args = parser.parse_args(['-w', '80', '-l', '187'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 22.88" in output
+    ... "Your BMI is: 22.88" __ output
 
 
 ___ test_two_arg_reversed_order(parser, capfd):
     args = parser.parse_args(['-l', '187', '-w', '80'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 22.88" in output
+    ... "Your BMI is: 22.88" __ output
 
 
 ___ test_different_args(parser, capfd):
     args = parser.parse_args(['-l', '200', '-w', '100'])
     handle_args(args)
     output = capfd.readouterr()[0]
-    assert "Your BMI is: 25.0" in output
+    ... "Your BMI is: 25.0" __ output

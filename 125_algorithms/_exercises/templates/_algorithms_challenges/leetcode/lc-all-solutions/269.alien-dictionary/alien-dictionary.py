@@ -1,16 +1,16 @@
-import collections
+_______ collections
 
 
 class Node(object):
   ___ __init__(self, val):
     self.val = val
-    self.neighbors = []
+    self.neighbors    # list
 
   ___ connect(self, node):
-    self.neighbors.append(node)
+    self.neighbors.a..(node)
 
   ___ getNbrs(self):
-    return self.neighbors
+    r.. self.neighbors
 
 
 class Solution(object):
@@ -22,55 +22,55 @@ class Solution(object):
 
     ___ dfs(root, graph, visited):
       visited[root] = 1
-      for nbr in graph[root].getNbrs():
-        __ visited[nbr.val] == 0:
-          __ not dfs(nbr.val, graph, visited):
-            return False
-        elif visited[nbr.val] == 1:
-          return False
+      ___ nbr __ graph[root].getNbrs():
+        __ visited[nbr.val] __ 0:
+          __ n.. dfs(nbr.val, graph, visited):
+            r.. False
+        ____ visited[nbr.val] __ 1:
+          r.. False
 
       visited[root] = 2
       self.ans += root
-      return True
+      r.. True
 
     self.ans = ""
     graph = {}
     visited = collections.defaultdict(int)
     self.topNum = 0
-    for i in range(0, len(words) - 1):
+    ___ i __ r..(0, l..(words) - 1):
       a = words[i]
       b = words[i + 1]
       i = 0
-      while i < len(a) and i < len(b):
+      while i < l..(a) and i < l..(b):
         __ a[i] != b[i]:
-          nodeA = nodeB = None
-          __ a[i] not in graph:
+          nodeA = nodeB = N..
+          __ a[i] n.. __ graph:
             nodeA = Node(a[i])
             graph[a[i]] = nodeA
-          else:
+          ____:
             nodeA = graph[a[i]]
-          __ b[i] not in graph:
+          __ b[i] n.. __ graph:
             nodeB = Node(b[i])
             graph[b[i]] = nodeB
-          else:
+          ____:
             nodeB = graph[b[i]]
           nodeA.connect(nodeB)
           break
         i += 1
-      __ i < len(a) and i >= len(b):
-        return ""
+      __ i < l..(a) and i >= l..(b):
+        r.. ""
 
-    for c in graph:
-      __ visited[c] == 0:
-        __ not dfs(c, graph, visited):
-          return ""
+    ___ c __ graph:
+      __ visited[c] __ 0:
+        __ n.. dfs(c, graph, visited):
+          r.. ""
 
     unUsedSet = set()
-    for word in words:
-      for c in word:
+    ___ word __ words:
+      ___ c __ word:
         unUsedSet.add(c)
 
-    for c in unUsedSet:
-      __ c not in graph:
+    ___ c __ unUsedSet:
+      __ c n.. __ graph:
         self.ans += c
-    return self.ans[::-1]
+    r.. self.ans[::-1]

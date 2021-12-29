@@ -7,10 +7,10 @@ class Solution:
         while left <= right:
             mid = left + (right - left) / 2
             square = mid * mid
-            __ square == x:
-                return mid
-            elif square < x:
+            __ square __ x:
+                r.. mid
+            ____ square < x:
                 left = mid + 1
-            else:
+            ____:
                 right = mid - 1
-        return (left + right) / 2
+        r.. (left + right) / 2

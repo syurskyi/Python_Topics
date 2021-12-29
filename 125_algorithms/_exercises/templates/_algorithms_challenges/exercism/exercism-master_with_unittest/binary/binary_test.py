@@ -4,9 +4,9 @@ Implementation note:
 If the argument to parse_binary isn't a valid binary number the
 function should raise a ValueError with a meaningful error message.
 """
-import unittest
+_______ unittest
 
-from binary import parse_binary
+____ binary _______ parse_binary
 
 
 class BinaryTests(unittest.TestCase):
@@ -45,5 +45,5 @@ class BinaryTests(unittest.TestCase):
         self.assertRaises(ValueError, parse_binary, "nope10")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

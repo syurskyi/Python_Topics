@@ -21,23 +21,23 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         nums.sort()
-        res = []
-        for i in range(len(nums) - 2):
-            __ i == 0 or i > 0 and nums[i - 1] != nums[i]:
+        res    # list
+        ___ i __ r..(l..(nums) - 2):
+            __ i __ 0 o. i > 0 and nums[i - 1] != nums[i]:
                 left = i + 1
-                right = len(nums) - 1
+                right = l..(nums) - 1
                 while left < right:
                     s = nums[i] + nums[left] + nums[right]
-                    __ s == 0:
-                        res.append([nums[i], nums[left], nums[right]])
+                    __ s __ 0:
+                        res.a..([nums[i], nums[left], nums[right]])
                         left += 1
                         right -= 1
-                        while left < right and nums[left] == nums[left - 1]:
+                        while left < right and nums[left] __ nums[left - 1]:
                             left += 1
-                        while right > left and nums[right] == nums[right + 1]:
+                        while right > left and nums[right] __ nums[right + 1]:
                             right -= 1
-                    elif s < 0:
+                    ____ s < 0:
                         left += 1
-                    else:
+                    ____:
                         right -= 1
-        return res
+        r.. res

@@ -11,13 +11,13 @@ class Solution(object):
         :type speed: List[int]
         :rtype: int
         """
-        time = [float(target-p)/s for p, s in sorted(zip(position, speed))]
+        time = [float(target-p)/s ___ p, s __ s..(zip(position, speed))]
         res = cur = 0
-        for t in time[::-1]:
+        ___ t __ time[::-1]:
             __ t > cur:
                 res += 1
                 cur = t
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -27,10 +27,10 @@ class Solution(object):
                 [2, 4, 1, 1, 3],
             ],
         ]
-        for target, position, speed in testCases:
+        ___ target, position, speed __ testCases:
             res = self.carFleet(target, position, speed)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

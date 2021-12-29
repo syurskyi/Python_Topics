@@ -26,7 +26,7 @@ ___ find_min_vertex(distance, visited
 
     min_vertex  -1
     ___ i __ ra__(le_(distance)):
-        __ (min_vertex __ -1 or distance[min_vertex] > distance[i]) a__ no. visited[i]:
+        __ (min_vertex __ -1 o. distance[min_vertex] > distance[i]) a__ no. visited[i]:
             min_vertex  i
     r_ min_vertex
 

@@ -1,7 +1,7 @@
 ___ Xbonacci(signature,n):
-    digit = -len(signature)
-    while len(signature) < n:
-        signature.append(sum(signature[digit:]))
-    return signature __ n >= len(signature) else signature[:n]
+    digit = -l..(signature)
+    while l..(signature) < n:
+        signature.a..(s..(signature[digit:]))
+    r.. signature __ n >= l..(signature) ____ signature[:n]
 
 

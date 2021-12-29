@@ -4,17 +4,17 @@ class Solution(object):
     :type intervals: List[Interval]
     :rtype: int
     """
-    meetings = []
-    for i in intervals:
-      meetings.append((i.start, 1))
-      meetings.append((i.end, 0))
+    meetings    # list
+    ___ i __ intervals:
+      meetings.a..((i.start, 1))
+      meetings.a..((i.end, 0))
     meetings.sort()
     ans = 0
     count = 0
-    for meeting in meetings:
-      __ meeting[1] == 1:
+    ___ meeting __ meetings:
+      __ meeting[1] __ 1:
         count += 1
-      else:
+      ____:
         count -= 1
       ans = max(ans, count)
-    return ans
+    r.. ans

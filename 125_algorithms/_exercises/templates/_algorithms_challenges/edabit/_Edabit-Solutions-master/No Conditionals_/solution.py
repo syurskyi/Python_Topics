@@ -1,5 +1,5 @@
 ___ flip(y):
-    __ y == 0:
-        return 1
-    else:
-        return 0
+    __ y __ 0:
+        r.. 1
+    ____:
+        r.. 0

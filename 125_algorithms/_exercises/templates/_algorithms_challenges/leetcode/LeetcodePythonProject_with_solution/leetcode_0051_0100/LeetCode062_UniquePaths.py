@@ -11,15 +11,15 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        dp = [[0]*n for _ in range(m)]
-        for i in range(m):
+        dp = [[0]*n ___ _ __ r..(m)]
+        ___ i __ r..(m):
             dp[i][0] = 1
-        for j in range(n):
+        ___ j __ r..(n):
             dp[0][j] = 1
-        for i in range(1, m):
-            for j in range(1, n):
+        ___ i __ r..(1, m):
+            ___ j __ r..(1, n):
                 dp[i][j] = dp[i-1][j]+dp[i][j-1]
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ uniquePaths_orig(self, m, n):
         """
@@ -27,23 +27,23 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        __ m <= 0 or n <= 0: return 0
-        dp  = [[0]*m for i in range(n)]
+        __ m <= 0 o. n <= 0: r.. 0
+        dp  = [[0]*m ___ i __ r..(n)]
         dp[0][0] = 1
-        for i in range(0, n):
-            for j in range(0, m):
-                __ i == 0 and j == 0:
+        ___ i __ r..(0, n):
+            ___ j __ r..(0, m):
+                __ i __ 0 and j __ 0:
                     dp[i][j] = 1
-                elif i == 0:
+                ____ i __ 0:
                     dp[i][j] = dp[i][j-1]
-                elif j == 0:
+                ____ j __ 0:
                     dp[i][j] = dp[i-1][j]
-                else:
+                ____:
                     dp[i][j] = dp[i-1][j] + dp[i][j-1]
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     pass

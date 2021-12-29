@@ -37,8 +37,8 @@ The target node is a node in the tree.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -49,41 +49,41 @@ class Solution:
 
         O(N), vist each node 2 times
         """
-        ret = []
+        ret    # list
         self.ancestor_dist(root, K, target, ret)
-        return ret
+        r.. ret
 
     ___ dfs_down(self, node, d, ret):
         """
         same as dfs1
         """
-        __ not node:
-            return
-        __ d == 0:
-            ret.append(node.val)
-        else:
+        __ n.. node:
+            r..
+        __ d __ 0:
+            ret.a..(node.val)
+        ____:
             self.dfs_down(node.left, d - 1, ret)
             self.dfs_down(node.right, d - 1, ret)
 
     ___ ancestor_dist(self, node, K, target, ret):
-        __ not node:
-            return float('inf')
+        __ n.. node:
+            r.. float('inf')
 
-        __ node.val == target.val:
+        __ node.val __ target.val:
             # d = 0
             self.dfs_down(node, K, ret)
-            return 0
-        else:
+            r.. 0
+        ____:
             l = self.ancestor_dist(node.left, K, target, ret)
             r = self.ancestor_dist(node.right, K, target, ret)
-            d = min(l, r) + 1
-            __ d == K:
-                ret.append(node.val)
-            elif l == float('inf'):
+            d = m..(l, r) + 1
+            __ d __ K:
+                ret.a..(node.val)
+            ____ l __ float('inf'):
                 self.dfs_down(node.left, K - d - 1, ret)
-            else:  # r == float('inf')
+            ____:  # r == float('inf')
                 self.dfs_down(node.right, K - d - 1, ret)
-            return d
+            r.. d
 
 
 class SolutionComplicated:
@@ -93,48 +93,48 @@ class SolutionComplicated:
         1st problem: target's subtree - easy to solve
         2nd problem:  mark parent, ancestor path length
         """
-        ret = []
+        ret    # list
         self.dfs1(target, K, ret)
         hm = {}
         self.ancestor_dist(root, target, hm)
         self.dfs2(root, target, K, float("inf"), hm, ret)
-        return ret
+        r.. ret
 
     ___ dfs1(self, node, K, ret):
         """1st problem"""
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        __ K == 0:
-            ret.append(node.val)
-        else:
+        __ K __ 0:
+            ret.a..(node.val)
+        ____:
             self.dfs1(node.left, K-1, ret)
             self.dfs1(node.right, K-1, ret)
 
     ___ ancestor_dist(self, node, target, hm):
-        __ not node:
-            return float('inf')
+        __ n.. node:
+            r.. float('inf')
 
-        __ node.val == target.val:
+        __ node.val __ target.val:
             hm[node.val] = 0
-        else:
+        ____:
             left = self.ancestor_dist(node.left, target, hm)
             right = self.ancestor_dist(node.right, target, hm)
-            hm[node.val] = min(left, right) + 1
+            hm[node.val] = m..(left, right) + 1
 
-        return hm[node.val]
+        r.. hm[node.val]
 
     ___ dfs2(self, node, target, K, dist, hm, ret):
         """2nd problem"""
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        __ node.val == target.val:
-            return
+        __ node.val __ target.val:
+            r..
 
-        dist = min(dist, hm[node.val])
-        __ dist == K:
-            ret.append(node.val)
+        dist = m..(dist, hm[node.val])
+        __ dist __ K:
+            ret.a..(node.val)
 
         self.dfs2(node.left, target, K, dist + 1, hm, ret)
         self.dfs2(node.right, target, K, dist + 1, hm, ret)

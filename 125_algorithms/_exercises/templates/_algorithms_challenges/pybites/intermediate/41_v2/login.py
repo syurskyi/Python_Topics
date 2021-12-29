@@ -1,6 +1,6 @@
 known_users = ['bob', 'julian', 'mike', 'carmen', 'sue']
 loggedin_users = ['mike', 'sue']
-from functools import wraps
+____ functools _______ wraps
 
 
 ___ login_required(func):
@@ -8,14 +8,14 @@ ___ login_required(func):
 
     @wraps(func)
     ___ wrapper(user):
-        __ user  not in known_users:
-            return "please create an account"
-        __ user not in loggedin_users:
-            return "please login"
+        __ user  n.. __ known_users:
+            r.. "please create an account"
+        __ user n.. __ loggedin_users:
+            r.. "please login"
 
-        return f"welcome back {user}"
+        r.. f"welcome back {user}"
 
-    return wrapper
+    r.. wrapper
 
 @login_required
 ___ welcome(user):

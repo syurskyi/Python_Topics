@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from permissions import get_octal_from_file_permission
+____ permissions _______ get_octal_from_file_permission
 
 
 @pytest.mark.parametrize("input_arg, expected", [
@@ -25,4 +25,4 @@ from permissions import get_octal_from_file_permission
     ('r--rw-rwx', '467'), ('r-xrw-rwx', '567'),
 ])
 ___ test_octal_results_for_different_rwx_combinations(input_arg, expected):
-    assert get_octal_from_file_permission(input_arg) == expected
+    ... get_octal_from_file_permission(input_arg) __ expected

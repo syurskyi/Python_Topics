@@ -1,4 +1,4 @@
-import heapq
+_______ heapq
 
 """
 Assuming: len(A) == len(B) == 3
@@ -23,14 +23,14 @@ class Solution:
     @return: An integer
     """
     ___ kthSmallestSum(self, A, B, k):
-        m, n = len(A), len(B)
+        m, n = l..(A), l..(B)
         ans = j = 0
-        heap = []
-        for i in range(min(m, k)): heapq.heappush(heap, (A[i] + B[0], i, 0))
+        heap    # list
+        ___ i __ r..(m..(m, k)): heapq.heappush(heap, (A[i] + B[0], i, 0))
         while k > 0:
             ans = heapq.heappop(heap)
             j = ans[2] + 1
             __ j < n:
                 heapq.heappush(heap, (A[ans[1]] + B[j], ans[1], j))
             k -= 1
-        return ans[0]
+        r.. ans[0]

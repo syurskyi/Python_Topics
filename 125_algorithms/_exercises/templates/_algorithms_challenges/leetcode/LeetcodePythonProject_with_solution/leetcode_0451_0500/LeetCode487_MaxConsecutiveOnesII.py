@@ -13,24 +13,24 @@ class Solution(object):
         left = -1
         nextLeft = -1
         maxLen = 0
-        for i, num in enumerate(nums):
-            __ num == 0:
+        ___ i, num __ enumerate(nums):
+            __ num __ 0:
                 maxLen = max(maxLen, i-left-1)
                 left = nextLeft
                 nextLeft = i
-        maxLen = max(maxLen, len(nums)-left-1)
-        return maxLen
+        maxLen = max(maxLen, l..(nums)-left-1)
+        r.. maxLen
     
     ___ test(self):
         testCases = [
             [1, 0, 1, 1, 0],
             [1, 0, 1, 1,0, 1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findMaxConsecutiveOnes(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

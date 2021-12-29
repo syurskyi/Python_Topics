@@ -3,28 +3,28 @@ class Solution:
     # @param cost, a list of integers
     # @return an integer
     ___ canCompleteCircuit(self, gas, cost):
-        n = len(gas)
-        t = [0 for i in range(n)]
-        for i in range(n):
+        n = l..(gas)
+        t = [0 ___ i __ r..(n)]
+        ___ i __ r..(n):
             t[i] = gas[i] - cost[i]
         res = 0
         cs = 0  # Current sum
         ts = 0  # Total sum
-        for i in range(n):
+        ___ i __ r..(n):
             cs += t[i]
             ts += t[i]
             __ cs < 0:
                 res = i + 1
                 cs = 0
         __ ts < 0:
-            return -1
-        else:
-            return res
+            r.. -1
+        ____:
+            r.. res
 
     ___ canCompleteCircuit2(self, gas, cost):
         # Brute-force
-        n = len(gas)
-        for i in range(n):
+        n = l..(gas)
+        ___ i __ r..(n):
             __ gas[i] - cost[i] < 0:
                 continue
             carry = gas[i] - cost[i]
@@ -36,8 +36,8 @@ class Solution:
                     break
                 j = (j + 1) % n
             __ flag:
-                return i
-        return -1
+                r.. i
+        r.. -1
 
 
 s = Solution()

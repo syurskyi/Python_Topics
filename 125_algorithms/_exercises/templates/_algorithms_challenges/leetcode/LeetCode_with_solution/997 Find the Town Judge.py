@@ -44,8 +44,8 @@ trust[i] are all different
 trust[i][0] != trust[i][1]
 1 <= trust[i][0], trust[i][1] <= N
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -55,10 +55,10 @@ class Solution:
         """
         ingress = defaultdict(set)
         egress =defaultdict(set)
-        for p, q in trust:
+        ___ p, q __ trust:
             egress[p].add(q)
             ingress[q].add(p)
-        for i in range(1, N+1):
-            __ len(egress[i]) == 0 and len(ingress[i]) == N - 1:
-                return i
-        return -1
+        ___ i __ r..(1, N+1):
+            __ l..(egress[i]) __ 0 and l..(ingress[i]) __ N - 1:
+                r.. i
+        r.. -1

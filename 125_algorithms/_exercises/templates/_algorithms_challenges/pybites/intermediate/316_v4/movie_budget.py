@@ -1,6 +1,6 @@
-from datetime import date
-from typing import Dict, Sequence, NamedTuple
-from collections import defaultdict
+____ datetime _______ date
+____ typing _______ Dict, Sequence, NamedTuple
+____ collections _______ defaultdict
 
 class MovieRented(NamedTuple):
     title: str
@@ -17,10 +17,10 @@ ___ collect_totals(renting_history: RentingHistory) -> Dict[str, int]:
     '''Creates a dictionary containing totals per month, with keys
     YYYY-MM and values (int) of the total cost for that month and year.
     '''
-    totals = defaultdict(lambda: 0)
-    for movie in renting_history:
+    totals = defaultdict(l....: 0)
+    ___ movie __ renting_history:
         totals[movie.date.strftime('%Y-%m')] += movie.price
-    return totals
+    r.. totals
 
 
 ___ rent_or_stream(
@@ -38,5 +38,5 @@ ___ rent_or_stream(
 
        Check out the tests for examples.
     """
-    return {key: RENT __ value <= STREAMING_COST_PER_MONTH else STREAM
-            for key, value in collect_totals(renting_history).items()}
+    r.. {key: RENT __ value <= STREAMING_COST_PER_MONTH ____ STREAM
+            ___ key, value __ collect_totals(renting_history).items()}

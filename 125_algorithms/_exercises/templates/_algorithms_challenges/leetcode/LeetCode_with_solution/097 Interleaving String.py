@@ -52,29 +52,29 @@ class Solution(object):
         :param s3:
         :return: boolean
         """
-        m = len(s1)
-        n = len(s2)
-        __ m+n != len(s3):
-            return False
+        m = l..(s1)
+        n = l..(s2)
+        __ m+n != l..(s3):
+            r.. False
 
-        dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
+        dp = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
 
         # initialize boundary conditions
         dp[0][0] = True
-        for i in xrange(1, m+1):
-            dp[i][0] = dp[i-1][0] and s3[i+0-1] == s1[i-1]
-        for j in xrange(1, n+1):
-            dp[0][j] = dp[0][j-1] and s3[0+j-1] == s2[j-1]
+        ___ i __ xrange(1, m+1):
+            dp[i][0] = dp[i-1][0] and s3[i+0-1] __ s1[i-1]
+        ___ j __ xrange(1, n+1):
+            dp[0][j] = dp[0][j-1] and s3[0+j-1] __ s2[j-1]
 
         # calculating
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
-                __ not dp[i][j]:
-                    dp[i][j] = dp[i-1][j] and s3[i+j-1] == s1[i-1]
-                __ not dp[i][j]:
-                    dp[i][j] = dp[i][j-1] and s3[i+j-1] == s2[j-1]
+        ___ i __ xrange(1, m+1):
+            ___ j __ xrange(1, n+1):
+                __ n.. dp[i][j]:
+                    dp[i][j] = dp[i-1][j] and s3[i+j-1] __ s1[i-1]
+                __ n.. dp[i][j]:
+                    dp[i][j] = dp[i][j-1] and s3[i+j-1] __ s2[j-1]
 
-        return dp[-1][-1]
+        r.. dp[-1][-1]
 
     ___ isInterleave_TLE(self, s1, s2, s3):
         """
@@ -85,19 +85,19 @@ class Solution(object):
         :param s3:
         :return: boolean
         """
-        __ not s3:
-            return True
+        __ n.. s3:
+            r.. True
         letter = s3[0]
-        __ s1 and s1[0] == letter:
+        __ s1 and s1[0] __ letter:
             __ self.isInterleave(s1[1:], s2, s3[1:]):
-                return True
-        __ s2 and s2[0] == letter:
+                r.. True
+        __ s2 and s2[0] __ letter:
             __ self.isInterleave(s1, s2[1:], s3[1:]):
-                return True
-        return False
+                r.. True
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().isInterleave("aa", "ab", "abaa") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") == False
+__ __name__ __ "__main__":
+    ... Solution().isInterleave("aa", "ab", "abaa") __ True
+    ... Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") __ True
+    ... Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") __ False

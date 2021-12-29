@@ -5,7 +5,7 @@ Created on Feb 9, 2017
 '''
 
 class Node(object):
-    ___ __init__(self, key, val, prevNode=None, nextNode_ N..
+    ___ __init__(self, key, val, prevNode=N.., nextNode_ N..
         self.key = key
         self.val = val
         self.prev = prevNode
@@ -18,8 +18,8 @@ class LRUCache(object):
         """
         self.map = {}
         self.capacity = capacity
-        self.head = None
-        self.tail = None
+        self.head = N..
+        self.tail = N..
     
     ___ removeAndAppend(self, key):
         node = self.map[key]
@@ -31,63 +31,63 @@ class LRUCache(object):
                 nextNode.prev = prevNode
                 self.tail.next = node
                 node.prev = self.tail
-            else:
+            ____:
                 prevNode.next = node
                 node.prev = prevNode
-        else:
+        ____:
             __ next:
                 self.head = nextNode
-                nextNode.prev = None
+                nextNode.prev = N..
                 self.tail.next = node
                 node.prev = self.tail
-            else:
+            ____:
                 self.head = node
         self.tail = node
-        self.head.prev = None
-        self.tail.next = None
+        self.head.prev = N..
+        self.tail.next = N..
     
     ___ get(self, key):
-        __ key not in self.map:
-            return -1
-        else:
+        __ key n.. __ self.map:
+            r.. -1
+        ____:
             node = self.map[key]
             val = node.val
             self.removeAndAppend(key)
-            return val
+            r.. val
     
     ___ set(self, key, value):
-        __ not self.map:
+        __ n.. self.map:
             node = Node(key, value)
             self.map[key] = node
             self.head = node
             self.tail = node
-        else:
-            __ key in self.map:
+        ____:
+            __ key __ self.map:
                 self.removeAndAppend(key)
                 self.tail.val = value
-            else:
-                __ len(self.map) < self.capacity:
+            ____:
+                __ l..(self.map) < self.capacity:
                     node = Node(key, value)
                     self.tail.next = node
                     node.prev = self.tail
                     self.tail = node
                     self.map[key] = node
-                elif len(self.map) == self.capacity:
+                ____ l..(self.map) __ self.capacity:
                     node = Node(key, value)
                     self.map[key] = node
                     tmpHead = self.head
                     del self.map[tmpHead.key]
                     __ self.head.next:
                         self.head = self.head.next
-                        self.head.prev = None
+                        self.head.prev = N..
                         self.tail.next = node
                         node.prev = self.tail
                         self.tail = node
-                    else:
+                    ____:
                         self.head = node
                         self.tail = node
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     cache = LRUCache(2)
     cache.set(1, 1)
     cache.set(2, 2)

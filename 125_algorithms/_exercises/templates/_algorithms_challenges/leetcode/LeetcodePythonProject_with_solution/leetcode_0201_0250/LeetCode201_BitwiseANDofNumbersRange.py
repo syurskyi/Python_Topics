@@ -11,14 +11,14 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        __ m == 0:
-            return 0
+        __ m __ 0:
+            r.. 0
         moveFactor = 1
         while m != n:
             m >>= 1
             n >>= 1
             moveFactor <<= 1
-        return moveFactor*m
+        r.. moveFactor*m
     
     ___ test(self):
         testCases = [
@@ -27,12 +27,12 @@ class Solution(object):
             (3, 7),
             (101, 110),
         ]
-        for m, n in testCases:
+        ___ m, n __ testCases:
             print('m: %s, n: %s' % (m, n))
             result = self.rangeBitwiseAnd(m, n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     

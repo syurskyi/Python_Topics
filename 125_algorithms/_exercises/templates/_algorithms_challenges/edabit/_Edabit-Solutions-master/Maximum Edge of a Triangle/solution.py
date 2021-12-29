@@ -1,2 +1,2 @@
 ___ next_edge(side1, side2):
-    return (side1 + side2) - 1
+    r.. (side1 + side2) - 1

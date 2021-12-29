@@ -3,13 +3,13 @@ class Solution:
     # @return a string
     ___ simplifyPath(self, path):
         ps = path.split('/')[1:]
-        res = []
-        for d in ps:
-            __ d == '..':
+        res    # list
+        ___ d __ ps:
+            __ d __ '..':
                 __ res:
                     res.pop()
-            elif d == '.' or d == '':
+            ____ d __ '.' o. d __ '':
                 pass
-            else:
-                res.append(d)
-        return '/' + '/'.join(res)
+            ____:
+                res.a..(d)
+        r.. '/' + '/'.join(res)

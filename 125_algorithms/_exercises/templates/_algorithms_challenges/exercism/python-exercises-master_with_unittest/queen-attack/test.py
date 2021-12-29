@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from queen_attack import board, can_attack
+____ queen_attack _______ board, can_attack
 
 
 class QueenAttackTest(unittest.TestCase):
@@ -69,5 +69,5 @@ class QueenAttackTest(unittest.TestCase):
             can_attack((2, 2), (2, 2))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

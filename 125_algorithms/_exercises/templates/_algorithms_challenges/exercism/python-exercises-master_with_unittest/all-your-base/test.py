@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from all_your_base import rebase
+____ all_your_base _______ rebase
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -80,5 +80,5 @@ class AllYourBaseTests(unittest.TestCase):
             rebase(-2, [1], -7)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

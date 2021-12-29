@@ -3,16 +3,16 @@ class Solution:
     # @return a list of lists of integer
     ___ subsets(self, S):
         S.sort()
-        return self.subsets_aux(S)
+        r.. self.subsets_aux(S)
 
     ___ subsets_aux(self, S):
-        __ not S:
-            return [[]]
-        else:
+        __ n.. S:
+            r.. [[]]
+        ____:
             res = [[]]
-            for i, e in enumerate(S):
+            ___ i, e __ enumerate(S):
                 rest_subsets = self.subsets_aux(S[i + 1:])
-                for subset in rest_subsets:
+                ___ subset __ rest_subsets:
                     subset.insert(0, e)
                 res += rest_subsets
-            return res
+            r.. res

@@ -12,19 +12,19 @@ class Solution(object):
         :rtype: List[int]
         """
         arr0 = [0]*26
-        for c in p:
+        ___ c __ p:
             arr0[ord(c)-ord('a')] += 1
         left = 0
-        res = []
+        res    # list
         arr = [0]*26
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             arr[ord(c)-ord('a')] += 1
             while left <= i and arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
                 arr[ord(s[left])-ord('a')] -= 1
                 left += 1
-            __ i-left+1 == len(p):
-                res.append(left)
-        return res
+            __ i-left+1 __ l..(p):
+                res.a..(left)
+        r.. res
     
     ___ findAnagrams_orig(self, s, p):
         """
@@ -33,38 +33,38 @@ class Solution(object):
         :rtype: List[int]
         """
         arr0 = [0]*26
-        count = len(p)
-        for c in p:
+        count = l..(p)
+        ___ c __ p:
             arr0[ord(c)-ord('a')] += 1
         left = 0
         arr1 = [0]*26
-        result = []
+        result    # list
         end = 0
-        while end < len(s):
+        while end < l..(s):
             numInd = ord(s[end]) - ord('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1
                 count -= 1
                 end += 1
-                __ count == 0:
-                    result.append(left)
-            else:
+                __ count __ 0:
+                    result.a..(left)
+            ____:
                 arr1[ord(s[left]) - ord('a')] -= 1
                 count += 1
                 left += 1
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
             ('cbaebabacd', 'abc'),
             ('abab', 'ab'),
         ]
-        for s, p in testCases:
+        ___ s, p __ testCases:
             result = self.findAnagrams(s, p)
             print('result: %s' % result)
             result0 = self.findAnagrams_orig(s, p)
             print('result0: %s' % result0)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

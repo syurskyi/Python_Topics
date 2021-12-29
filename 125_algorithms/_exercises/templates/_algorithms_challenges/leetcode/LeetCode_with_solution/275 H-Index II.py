@@ -12,18 +12,18 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
+        n = l..(A)
         s = 0
         e = n
         while s < e:
             m = (s+e)/2
             __ A[m] >= n-m:
                 e = m
-            else:
+            ____:
                 s = m+1
 
-        return n-s
+        r.. n-s
 
 
-__ __name__ == "__main__":
-    assert Solution().hIndex([0, 1, 3, 5, 6]) == 3
+__ __name__ __ "__main__":
+    ... Solution().hIndex([0, 1, 3, 5, 6]) __ 3

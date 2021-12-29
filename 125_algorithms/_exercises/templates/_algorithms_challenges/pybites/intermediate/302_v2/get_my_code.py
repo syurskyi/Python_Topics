@@ -1,20 +1,20 @@
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
-import json
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
+_______ json
 
 filename = "my_code.json"
 url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
 tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
-__ not json_input_file.exists():
+__ n.. json_input_file.exists():
     urlretrieve(url.format(filename=filename), json_input_file)
 
 
 ___ get_json_data():
     with open(json_input_file) as file_in:
-        return json.load(file_in)
+        r.. json.load(file_in)
 
 
 json_data = get_json_data()
@@ -28,7 +28,7 @@ ___ get_passing_code(json_data=json_data):
        Remove any/all spaces from the file name.
        Write to /tmp (tmp variable).
     """
-    for bite in json_data['bites']:
+    ___ bite __ json_data['bites']:
         bite_name = bite['bite']
         bite_name = bite_name[:bite_name.index('.')]
         bite_name = bite_name.replace(' ','')
@@ -42,7 +42,7 @@ ___ get_passing_code(json_data=json_data):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     get_passing_code()
 

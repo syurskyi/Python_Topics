@@ -1,25 +1,25 @@
-from random import randint
+____ random _______ randint
 col  6
 row  3
 matrix  []
-for i in range(row):
+___ i __ r..(row):
     myrow  []
-    for j in range(col):
-        myrow.append(randint(10,100))
-    matrix.append(myrow)
-for i in matrix:
+    ___ j __ r..(col):
+        myrow.a..(randint(10,100))
+    matrix.a..(myrow)
+___ i __ matrix:
     print(i)
 print()
 k  col-1
 w___ k ! 0:
     z  0
-    for j in range(1, k+1):
+    ___ j __ r..(1, k+1):
         __ matrix[0][j] > matrix[0][z]:
             z  j
-    for i in range(row):
+    ___ i __ r..(row):
         y  matrix[i][z]
         matrix[i][z]  matrix[i][k]
         matrix[i][k]  y
     k - 1
-for i in matrix:
+___ i __ matrix:
     print(i)

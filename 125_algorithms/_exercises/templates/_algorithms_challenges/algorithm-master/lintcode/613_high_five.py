@@ -5,7 +5,7 @@ class Record:
         self.id = id
         self.score = score
 """
-from heapq import heappop, heappush
+____ heapq _______ heappop, heappush
 
 
 class Solution:
@@ -14,27 +14,27 @@ class Solution:
     # <key, value> (student_id, average_score)
     ___ highFive(self, results):
         ans = {}
-        __ not results:
-            return ans
+        __ n.. results:
+            r.. ans
 
         k = 5
         top_k = {}
 
-        for r in results:
-            __ r.id not in top_k:
-                top_k[r.id] = []
+        ___ r __ results:
+            __ r.id n.. __ top_k:
+                top_k[r.id]    # list
 
             heappush(top_k[r.id], r.score)
 
-            __ len(top_k[r.id]) > k:
+            __ l..(top_k[r.id]) > k:
                 heappop(top_k[r.id])
 
         _sum = 0
-        for id, scores in top_k.items():
+        ___ id, scores __ top_k.items():
             _sum = 0
-            for score in scores:
+            ___ score __ scores:
                 _sum += score
 
             ans[id] = _sum * 1.0 / k
 
-        return ans
+        r.. ans

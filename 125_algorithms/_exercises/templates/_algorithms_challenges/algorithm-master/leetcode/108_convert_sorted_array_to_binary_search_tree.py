@@ -12,12 +12,12 @@ class Solution:
         :type nums: List[int]
         :rtype: TreeNode
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        i = len(nums) // 2
+        i = l..(nums) // 2
         node = TreeNode(nums[i])
         node.left = self.sortedArrayToBST(nums[:i])
         node.right = self.sortedArrayToBST(nums[i + 1:])
 
-        return node
+        r.. node

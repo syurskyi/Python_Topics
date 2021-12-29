@@ -6,28 +6,28 @@ class Solution(object):
     :rtype: List[int]
     """
     d = {}
-    res = []
-    ans = []
-    buckets = [[] for _ in range(len(nums) + 1)]
+    res    # list
+    ans    # list
+    buckets = [[] ___ _ __ r..(l..(nums) + 1)]
 
-    for num in nums:
+    ___ num __ nums:
       d[num] = d.get(num, 0) + 1
 
-    for key in d:
-      res.append((d[key], key))
+    ___ key __ d:
+      res.a..((d[key], key))
 
-    for t in res:
+    ___ t __ res:
       freq, key = t
-      buckets[freq].append(key)
+      buckets[freq].a..(key)
 
     buckets.reverse()
 
-    for item in buckets:
+    ___ item __ buckets:
       __ item and k > 0:
         while item and k > 0:
-          ans.append(item.pop())
+          ans.a..(item.pop())
           k -= 1
-        __ k == 0:
-          return ans
+        __ k __ 0:
+          r.. ans
 
-    return ans
+    r.. ans

@@ -11,7 +11,7 @@ class Solution(object):
     :type root: TreeNode
     :rtype: List[int]
     """
-    ans = []
+    ans    # list
     d = {}
 
     ___ dfs(root, h, d):
@@ -22,7 +22,7 @@ class Solution(object):
 
     dfs(root, 0, d)
     level = 0
-    while level in d:
+    while level __ d:
       ans += d[level],
       level += 1
-    return ans
+    r.. ans

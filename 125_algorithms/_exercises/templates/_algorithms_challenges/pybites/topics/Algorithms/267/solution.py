@@ -8,18 +8,18 @@ ___ get_others(map_, r, c):
     num = 0
 
     __ r > 0:
-        num += map_[r-1][c] == 1
+        num += map_[r-1][c] __ 1
 
-    __ r < len(map_) - 1:
-        num += map_[r+1][c] == 1
+    __ r < l..(map_) - 1:
+        num += map_[r+1][c] __ 1
 
     __ c > 0:
-        num += map_[r][c-1] == 1
+        num += map_[r][c-1] __ 1
 
-    __ c < len(map_[0]) - 1:
-        num += map_[r][c+1] == 1
+    __ c < l..(map_[0]) - 1:
+        num += map_[r][c+1] __ 1
 
-    return num
+    r.. num
 
 
 ___ island_size(map_):
@@ -30,8 +30,8 @@ ___ island_size(map_):
     """
     perimeter = 0
 
-    for r, row in enumerate(map_):
-        for c, val in enumerate(row):
-            __ val == 1:
+    ___ r, row __ enumerate(map_):
+        ___ c, val __ enumerate(row):
+            __ val __ 1:
                 perimeter += 4 - get_others(map_, r, c)
-    return perimeter
+    r.. perimeter

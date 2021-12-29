@@ -15,7 +15,7 @@ Note:
 The input strings only contain lower case letters.
 The length of both given strings is in range [1, 10,000].
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -25,28 +25,28 @@ class Solution:
         """
         counter = defaultdict(int)
         s1_set = set(s1)
-        for c in s1:
+        ___ c __ s1:
             counter[c] += 1
 
         i = 0
         j = 0
-        while j < len(s2):
+        while j < l..(s2):
             __ counter[s2[j]] > 0:
                 counter[s2[j]] -= 1
-                __ j - i + 1 == len(s1):
-                    return True
+                __ j - i + 1 __ l..(s1):
+                    r.. True
                 j += 1
-            else:
-                __ s2[i] in s1_set:
+            ____:
+                __ s2[i] __ s1_set:
                     # not check s2[i] in counter, dangerous to check defaultdict
                     counter[s2[i]] += 1
                 i += 1
                 __ j < i:
                     j = i
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().checkInclusion("ab", "eidbaooo") == True
-    assert Solution().checkInclusion("ab", "eidboaoo") == False
+__ __name__ __ "__main__":
+    ... Solution().checkInclusion("ab", "eidbaooo") __ True
+    ... Solution().checkInclusion("ab", "eidboaoo") __ False

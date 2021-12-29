@@ -11,7 +11,7 @@ ___ tail(filepath, n):
     lines = lines[-n:]
 
 
-    return list(map(lambda x: x.strip(),lines))
+    r.. l..(map(l.... x: x.strip(),lines))
 
 
 

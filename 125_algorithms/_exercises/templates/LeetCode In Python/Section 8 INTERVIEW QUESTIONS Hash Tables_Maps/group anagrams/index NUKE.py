@@ -1,18 +1,18 @@
 class Solution:
     ___ findHash(self,s):
-        return ''.join(sorted(s))
+        r.. ''.join(s..(s))
     ___ groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         answers  []
         m  {}
 
-        for s in strs:
+        ___ s __ strs:
             hashed  self.findHash(s)
-            __(hashed not in m):
+            __(hashed n.. __ m):
                 m[hashed]  []
-            m[hashed].append(s)
+            m[hashed].a..(s)
         
-        for p in m.values():
-            answers.append(p)
+        ___ p __ m.values():
+            answers.a..(p)
         
-        return answers
+        r.. answers
 

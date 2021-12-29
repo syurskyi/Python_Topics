@@ -1,24 +1,24 @@
-import json
+_______ json
 
-import pytest
+_______ pytest
 
-from jsonify import convert_to_json
+____ jsonify _______ convert_to_json
 
 
 @pytest.fixture(scope="module")
 ___ output():
-    return convert_to_json()
+    r.. convert_to_json()
 
 
 ___ test_return_type(output):
-    assert type(output) == str
+    ... type(output) __ str
 
 
 ___ test_extracted_data_is_correct(output):
     data = json.loads(output)
-    assert type(data) == list
-    assert len(data) == 10
-    for row in [{"id": "1", "first_name": "Junie", "last_name": "Kybert",
+    ... type(data) __ l..
+    ... l..(data) __ 10
+    ___ row __ [{"id": "1", "first_name": "Junie", "last_name": "Kybert",
                  "email": "jkybert0@army.mil"},
                 {"id": "2", "first_name": "Sid", "last_name": "Churching",
                  "email": "schurching1@tumblr.com"},
@@ -38,4 +38,4 @@ ___ test_extracted_data_is_correct(output):
                  "Berwick", "email": "aberwick8@symantec.com"},
                 {"id": "10", "first_name": "Wyn", "last_name": "Serginson",
                  "email": "wserginson9@naver.com"}]:
-        assert row in data, f"{row} not in output of convert_to_json"
+        ... row __ data, f"{row} not in output of convert_to_json"

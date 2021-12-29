@@ -20,25 +20,25 @@ class Solution(object):
         :rtype: bool
         """
         left = 0
-        right = len(nums) - 1
+        right = l..(nums) - 1
         while left + 1 < right:
             mid = left + (right - left) / 2
-            __ target == nums[mid]:
-                return True
+            __ target __ nums[mid]:
+                r.. True
             # Left part is sorted
-            elif nums[mid] > nums[right]:
+            ____ nums[mid] > nums[right]:
                 __ nums[left] <= target < nums[mid]:
                     right = mid
-                else:
+                ____:
                     left = mid
             # Right part is sorted
-            elif nums[mid] < nums[right]:
+            ____ nums[mid] < nums[right]:
                 __ nums[mid] < target <= nums[right]:
                     left = mid
-                else:
+                ____:
                     right = mid
-            else:
+            ____:
                 right -= 1
-        __ nums[left] == target or nums[right] == target:
-            return True
-        return False
+        __ nums[left] __ target o. nums[right] __ target:
+            r.. True
+        r.. False

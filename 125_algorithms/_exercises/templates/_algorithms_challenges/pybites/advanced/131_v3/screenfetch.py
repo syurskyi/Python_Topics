@@ -1,4 +1,4 @@
-import re
+_______ re
 
 output = """
                                        mohh@SERENiTY
@@ -24,14 +24,14 @@ output = """
 ___ sysinfo_scrape(output):
     """Scrapes the output from screenfetch and returns a dictionary"""
     lines = output.splitlines(keepends=False)
-    while lines[0] == '':
+    while lines[0] __ '':
         lines.pop(0)
     line = lines[0][::-1]
-    info_col = len(line) - re.search(r' ', line).start()
+    info_col = l..(line) - re.search(r' ', line).start()
     results = {'Name': lines[0][info_col:]}
-    for line in lines[1:]:
+    ___ line __ lines[1:]:
         search = re.search(r'(?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
         __ search:
             grp = search.groupdict()
             results[grp['key']] = grp['value']
-    return results
+    r.. results

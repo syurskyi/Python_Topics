@@ -1,5 +1,5 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2):
     day_in_seconds = 24*60*60
@@ -20,10 +20,10 @@ ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2):
 
     time_diff_seconds = time_diff_in_seconds - (minute_in_seconds*time_diff_minute)
 
-    return "("+str(time_diff_day)+" "+str(time_diff_hour) +" "+ str(time_diff_minute)+" "+ str(time_diff_seconds)+")"
+    r.. "("+str(time_diff_day)+" "+str(time_diff_hour) +" "+ str(time_diff_minute)+" "+ str(time_diff_seconds)+")"
 
-for i in range(amount_values):
+___ i __ r..(amount_values):
     d1,h1,m1,s1,d2,h2,m2,s2 = map(int,input().split())
-    results.append(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2))
+    results.a..(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2))
 
 print(*results)

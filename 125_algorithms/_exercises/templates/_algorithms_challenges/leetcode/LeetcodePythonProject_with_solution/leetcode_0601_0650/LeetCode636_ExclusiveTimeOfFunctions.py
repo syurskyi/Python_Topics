@@ -10,20 +10,20 @@ class Solution(object):
         :type logs: List[str]
         :rtype: List[int]
         """
-        stack = []
+        stack    # list
         res = [0]*n
         prevTime = 0
-        for log in logs:
+        ___ log __ logs:
             arr = log.split(':')
             __ stack:
                 res[stack[-1]] += int(arr[2])-prevTime
             prevTime = int(arr[2])
-            __ arr[1] == 'start':
-                stack.append(int(arr[0]))
-            else:
+            __ arr[1] __ 'start':
+                stack.a..(int(arr[0]))
+            ____:
                 res[stack.pop()] += 1
                 prevTime += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -37,12 +37,12 @@ class Solution(object):
                 ],
             ],
         ]
-        for n, logs in testCases:
+        ___ n, logs __ testCases:
             print('n: %s' % n)
             print('logs: %s' % logs)
             result = self.exclusiveTime(n, logs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

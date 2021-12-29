@@ -1,19 +1,19 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ is_triangle(sides):
     __(sides[0] + sides[1] < sides[2]):
-        return 0
-    elif(sides[1] + sides[2] < sides[0]):
-        return 0
-    elif(sides[0] + sides[2] < sides[1]):
-        return 0
-    else:
-        return 1
+        r.. 0
+    ____(sides[1] + sides[2] < sides[0]):
+        r.. 0
+    ____(sides[0] + sides[2] < sides[1]):
+        r.. 0
+    ____:
+        r.. 1
 
-for i in range(amount_values):
-    sides = list(map(int, input().split()))
-    results.append(is_triangle(sides))
+___ i __ r..(amount_values):
+    sides = l..(map(int, input().split()))
+    results.a..(is_triangle(sides))
 
 print(*results)
 

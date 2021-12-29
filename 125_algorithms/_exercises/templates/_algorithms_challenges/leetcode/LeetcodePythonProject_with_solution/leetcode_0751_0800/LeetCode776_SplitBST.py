@@ -5,7 +5,7 @@ Created on Apr 8, 2018
 '''
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -17,49 +17,49 @@ class Solution(object):
         :type V: int
         :rtype: List[TreeNode]
         """
-        __ not root: return [None, None]
-        stack = []
+        __ n.. root: r.. [N.., N..]
+        stack    # list
         root0 = root
         while root0:
-            stack.append(root0)
+            stack.a..(root0)
             root0 = root0.left
-        preNode = None
+        preNode = N..
         while stack:
             node = stack.pop()
-            __ (not preNode and V < node.val)\
-                or (preNode and preNode.val <= V < node.val):
-                return self.getRes(root, preNode)
-            else:
+            __ (n.. preNode and V < node.val)\
+                o. (preNode and preNode.val <= V < node.val):
+                r.. self.getRes(root, preNode)
+            ____:
                 preNode = node
                 node0 = node.right
                 while node0:
-                    stack.append(node0)
+                    stack.a..(node0)
                     node0 = node0.left
-        return [root, None]
+        r.. [root, N..]
     
     ___ getRes(self, root, node):
         root0 = root
-        __ not node:
-            return [root0, None]
-        stack = []
+        __ n.. node:
+            r.. [root0, N..]
+        stack    # list
         while node != root0:
-            stack.append(root0)
+            stack.a..(root0)
             __ root0.val > node.val:
                 root0 = root0.left
-            else:
+            ____:
                 root0 = root0.right
         cand = node
         while stack and stack[-1].val < node.val:
             cand = stack.pop()
-        __ not stack:
+        __ n.. stack:
             right = node.right
-            node.right = None
-            return [root, right]
-        else:
+            node.right = N..
+            r.. [root, right]
+        ____:
             right = node.right
-            node.right = None
+            node.right = N..
             stack[-1].left = right
-            return [root, cand]
+            r.. [root, cand]
     
     ___ test(self):
         testCases = [
@@ -78,10 +78,10 @@ class Solution(object):
                 3,
             ],
         ]
-        for root, v in testCases:
+        ___ root, v __ testCases:
             result = self.splitBST(root, v)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

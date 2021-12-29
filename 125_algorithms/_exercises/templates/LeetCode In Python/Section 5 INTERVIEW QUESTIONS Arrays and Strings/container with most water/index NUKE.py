@@ -2,12 +2,12 @@ class Solution:
     ___ maxArea(self, height: List[i..]) -> i..:
 		maxarea  0
 		l  0
-		r  len(height)-1
+		r  l..(height)-1
 
 		w___(l<r):
-			maxarea  max(maxarea, min(height[l],height[r])*(r-l))
+			maxarea  max(maxarea, m..(height[l],height[r])*(r-l))
 			__(height[l]<height[r]):
 				l+1
-			else:
+			____:
 				r-1
-		return maxarea
+		r.. maxarea

@@ -14,23 +14,23 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
-        list_a = [int(i) for i in a[::-1]]
-        list_b = [int(i) for i in b[::-1]]
-        la = len(list_a)
-        lb = len(list_b)
+        list_a = [int(i) ___ i __ a[::-1]]
+        list_b = [int(i) ___ i __ b[::-1]]
+        la = l..(list_a)
+        lb = l..(list_b)
         # Pad zeroes
         __ la < lb:
-            list_a += [0 for i in range(lb - la)]
-            la = len(list_a)
-        else:
-            list_b += [0 for i in range(la - lb)]
-            lb = len(list_b)
+            list_a += [0 ___ i __ r..(lb - la)]
+            la = l..(list_a)
+        ____:
+            list_b += [0 ___ i __ r..(la - lb)]
+            lb = l..(list_b)
         carry = 0
-        res = []
-        for i in range(la):
+        res    # list
+        ___ i __ r..(la):
             t = (list_a[i] + list_b[i] + carry) % 2
             carry = (list_a[i] + list_b[i] + carry) / 2
-            res.append(t)
-        __ carry == 1:
-            res.append(1)
-        return ''.join([str(d) for d in res[::-1]])
+            res.a..(t)
+        __ carry __ 1:
+            res.a..(1)
+        r.. ''.join([str(d) ___ d __ res[::-1]])

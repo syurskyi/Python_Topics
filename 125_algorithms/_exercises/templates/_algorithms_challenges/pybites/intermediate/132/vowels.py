@@ -1,4 +1,4 @@
-VOWELS = list('aeiou')
+VOWELS = l..('aeiou')
 
 
 ___ get_word_max_vowels(text):
@@ -7,16 +7,16 @@ ___ get_word_max_vowels(text):
       ('object-oriented', 6)"""
    vowel_frequency = {}
 
-   for word in text.split():
+   ___ word __ text.s.. :
       vowel_count = 0
-      for char in word:
-         __ char in VOWELS:
+      ___ char __ word:
+         __ char __ VOWELS:
             vowel_count += 1
       __ vowel_count > 0:
          vowel_frequency[word] = vowel_count
 
    vowel_frequency_max = max(vowel_frequency, key=vowel_frequency.get)
-   return (vowel_frequency_max, vowel_frequency[vowel_frequency_max])   
+   r.. (vowel_frequency_max, vowel_frequency[vowel_frequency_max])
 
 
 # if __name__ == "__main__":

@@ -6,7 +6,7 @@ ___ generate_xmas_tree(rows=10):
         ***
        *****"""
     
-    result = []
+    result    # list
     stars = 1
 
     final_row_stars =  2 * rows - 1
@@ -14,19 +14,19 @@ ___ generate_xmas_tree(rows=10):
     left_gap = final_row_stars//2
 
 
-    for row in range(1,rows + 1): 
+    ___ row __ r..(1,rows + 1):
         
         stars = 2 * row - 1
         left_gap += 1
         line = f"{'*'*stars:>{left_gap}}\n"
-        __ row == rows:
+        __ row __ rows:
             line = line.rstrip()
-        result.append(line)
+        result.a..(line)
 
 
-    return ''.join(result)
+    r.. ''.join(result)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     print(generate_xmas_tree())

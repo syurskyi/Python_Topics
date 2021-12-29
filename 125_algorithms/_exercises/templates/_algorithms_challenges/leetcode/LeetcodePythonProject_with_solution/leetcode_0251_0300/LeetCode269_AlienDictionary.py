@@ -12,35 +12,35 @@ class Solution(object):
         """
         graph = {}
         degree = {}
-        for word in words:
-            for c in word:
+        ___ word __ words:
+            ___ c __ word:
                 degree[c] = 0
-        for i in range(1, len(words)):
+        ___ i __ r..(1, l..(words)):
             currWord = words[i]
             prevWord = words[i-1]
-            length = min(len(currWord), len(prevWord))
-            for j in range(length):
+            length = m..(l..(currWord), l..(prevWord))
+            ___ j __ r..(length):
                 c1, c2 = prevWord[j], currWord[j]
                 __ c1 != c2:
-                    __ c1 not in graph:
+                    __ c1 n.. __ graph:
                         graph[c1] = set()
-                    __ c2 not in graph[c1]:
+                    __ c2 n.. __ graph[c1]:
                         degree[c2] += 1
                     graph[c1].add(c2)
                     break
-        queue = []
-        for c, cnt in degree.items():
-            __ cnt == 0:
-                queue.append(c)
+        queue    # list
+        ___ c, cnt __ degree.items():
+            __ cnt __ 0:
+                queue.a..(c)
         res = ''
         while queue:
             c = queue.pop(0)
             res += c
-            for c0 in graph.get(c, []):
+            ___ c0 __ graph.get(c, []):
                 degree[c0] -= 1
-                __ degree[c0] == 0:
-                    queue.append(c0)
-        return res __ len(res) == len(degree) else ''
+                __ degree[c0] __ 0:
+                    queue.a..(c0)
+        r.. res __ l..(res) __ l..(degree) ____ ''
     
     ___ test(self):
         testCases = [
@@ -63,11 +63,11 @@ class Solution(object):
             ["za","zb","ca","cb"],
             ["a","b","ca","cc"],
         ]
-        for words in testCases:
+        ___ words __ testCases:
             print('words: %s' % (words))
             result = self.alienOrder(words)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__  == '__main__':
+__ __name__  __ '__main__':
     Solution().test()

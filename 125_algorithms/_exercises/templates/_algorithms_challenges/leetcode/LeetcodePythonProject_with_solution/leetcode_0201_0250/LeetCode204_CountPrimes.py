@@ -12,43 +12,43 @@ class Solution(object):
         """
         notPrime = [False]*(n)
         count = 0
-        for i in range(2, n):
-            __ not notPrime[i]:
+        ___ i __ r..(2, n):
+            __ n.. notPrime[i]:
                 count += 1
                 j = 2
                 while i*j < n:
                     notPrime[i*j] = True
                     j += 1
-        return count
+        r.. count
     
     ___ countPrimesSqrt(self, n):
         """
         :type n: int
         :rtype: int
         """
-        import math
+        _______ math
         __ n <= 2:
-            return 0
+            r.. 0
         primes = [False,]*2 + [True,]*(n-2)
-        for i in range(2, int(math.sqrt(n-1))+1):
+        ___ i __ r..(2, int(math.sqrt(n-1))+1):
             __ primes[i]:
-                for j in range(i+i, n, i):
+                ___ j __ r..(i+i, n, i):
                     primes[j] = False
         count = 0
-        for i in range(2, n):
+        ___ i __ r..(2, n):
             __ primes[i]: count += 1
         print(primes)
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
             6,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % (n))
             result = self.countPrimes(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

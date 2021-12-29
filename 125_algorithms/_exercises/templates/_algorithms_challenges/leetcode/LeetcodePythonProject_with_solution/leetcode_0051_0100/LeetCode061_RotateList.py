@@ -8,7 +8,7 @@ Created on Jan 22, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ rotateRight(self, head, k):
@@ -17,8 +17,8 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        __ not head or not head.next or k == 0:
-            return head
+        __ n.. head o. n.. head.next o. k __ 0:
+            r.. head
         length = 0
         node = head
         while node:
@@ -26,8 +26,8 @@ class Solution(object):
             length +=1
         node = head
         k = k % length
-        __ k == 0: return head
-        prev = None
+        __ k __ 0: r.. head
+        prev = N..
         count = 0
         while count < length-k:
             prev = node
@@ -37,11 +37,11 @@ class Solution(object):
         while tail.next:
             tail = tail.next
         tail.next = head
-        prev.next = None
-        return node
+        prev.next = N..
+        r.. node
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

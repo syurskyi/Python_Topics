@@ -19,18 +19,18 @@ class Solution(object):
         :rtype: int
         """
         res = 0
-        for i in range(2, n):
+        ___ i __ r..(2, n):
             __ self.is_prime(i):
                 res += 1
-        return res
+        r.. res
 
     ___ is_prime(self, k):
         i = 2
         while i * i <= k:
-            __ k % i == 0:
-                return False
+            __ k % i __ 0:
+                r.. False
             i += 1
-        return True
+        r.. True
 
 
 s = Solution()

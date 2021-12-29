@@ -14,9 +14,9 @@ class Solution(object):
     tmp = [""] * 4
     while cnt < n:
       r = read4(tmp)
-      __ r == 0:
+      __ r __ 0:
         break
-      for i in range(min(r, n - cnt)):
+      ___ i __ r..(m..(r, n - cnt)):
         buf[cnt] = tmp[i]
         cnt += 1
-    return cnt
+    r.. cnt

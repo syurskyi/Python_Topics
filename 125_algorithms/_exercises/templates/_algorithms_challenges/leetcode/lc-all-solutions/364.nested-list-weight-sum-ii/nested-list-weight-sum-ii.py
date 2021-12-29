@@ -50,18 +50,18 @@ class Solution(object):
 
     ___ getDepth(root):
       res = 0
-      for nested in root:
-        __ not nested.isInteger():
+      ___ nested __ root:
+        __ n.. nested.isInteger():
           res = max(res, getDepth(nested.getList()))
-      return res + 1
+      r.. res + 1
 
     ___ helper(root, depth, maxDepth):
       res = 0
-      for nested in root:
+      ___ nested __ root:
         __ nested.isInteger():
           res += (maxDepth - depth) * nested.getInteger()
-        else:
+        ____:
           res += helper(nested.getList(), depth + 1, maxDepth)
-      return res
+      r.. res
 
-    return helper(nestedList, 0, getDepth(nestedList))
+    r.. helper(nestedList, 0, getDepth(nestedList))

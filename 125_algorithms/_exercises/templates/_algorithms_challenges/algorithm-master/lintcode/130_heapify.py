@@ -5,7 +5,7 @@ class Solution:
     """
     ___ heapify(self, A):
         # start from mid-depth to sift down
-        for i in range(len(A) // 2, -1, -1):
+        ___ i __ r..(l..(A) // 2, -1, -1):
             self.siftdown(A, i)
 
     ___ siftdown(self, A, i):
@@ -15,7 +15,7 @@ class Solution:
         2. if parent is already small than both children, no need to continue
         3. continue to sift down in next depth
         """
-        n = len(A)
+        n = l..(A)
         while i * 2 + 1 < n:
             # left child
             _i = i * 2 + 1

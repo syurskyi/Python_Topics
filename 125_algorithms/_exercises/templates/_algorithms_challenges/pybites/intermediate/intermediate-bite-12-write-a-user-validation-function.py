@@ -10,7 +10,7 @@ If one of the conditions is not True raise an exception you define yourself: Use
 UserAccessExpired and UserNoPermission respectively. Check out the tests for more detail.
 """
 
-from collections import namedtuple
+____ collections _______ namedtuple
 
 # https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python
 User = namedtuple('User', 'name role expired')
@@ -35,14 +35,14 @@ class UserNoPermission(Exception):
 ### My solution
 
 ___ get_secret_token(username):
-    for user in USERS:
-        __ user.name == username:
-            __ user.expired == False:
-                __ user.role == ADMIN:
-                    return SECRET
-                else:
+    ___ user __ USERS:
+        __ user.name __ username:
+            __ user.expired __ False:
+                __ user.role __ ADMIN:
+                    r.. SECRET
+                ____:
                     raise UserNoPermission
-            else:
+            ____:
                 raise UserAccessExpired
     raise UserDoesNotExist
 
@@ -50,7 +50,7 @@ ___ get_secret_token(username):
 
 ___ pyb_get_user(username):
     # This constructs a dictionary from USERS namedtuples
-    users = {user.name: user for user in USERS}
+    users = {user.name: user ___ user __ USERS}
     # Q: Is there any difference in accessing nonexisting key when using d[crap] vs d.get(crap)?
     # A: Yes, there is.
     # https://stackoverflow.com/questions/11041405/why-dict-getkey-instead-of-dictkey
@@ -59,7 +59,7 @@ ___ pyb_get_user(username):
     # https://stackoverflow.com/questions/21095654/what-is-a-nonetype-object
     # https://stackoverflow.com/questions/23086383/how-to-test-nonetype-in-python
     # https://stackoverflow.com/questions/19473185/what-is-a-none-value
-    return users.get(username)
+    r.. users.get(username)
 
 ___ pyb_get_secret_token(username):
     user = pyb_get_user(username)
@@ -70,7 +70,7 @@ ___ pyb_get_secret_token(username):
     # https://amir.rachum.com/blog/2012/08/25/you-cant-handle-the-truth/
     # https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python
     # https://stackoverflow.com/questions/1319615/proper-way-to-declare-custom-exceptions-in-modern-python
-    __ not user:
+    __ n.. user:
         raise UserDoesNotExist
 
     __ user.expired:
@@ -79,7 +79,7 @@ ___ pyb_get_secret_token(username):
     __ user.role != ADMIN:
         raise UserNoPermission
 
-    return SECRET
+    r.. SECRET
 
 
 

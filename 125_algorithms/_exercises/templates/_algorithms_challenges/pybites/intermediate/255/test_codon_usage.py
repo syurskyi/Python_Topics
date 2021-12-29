@@ -1,8 +1,8 @@
-import re
+_______ re
 
-import pytest
+_______ pytest
 
-import codon_usage
+_______ codon_usage
 
 EXPECTED = """
 |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |
@@ -40,10 +40,10 @@ ___ get_whole_table(table):
     Receives a results table
     Returns all results in a list of lists with whitespace removed
     """
-    return [
-        entry.strip().split()
-        for line in table.strip().split("\n")
-        for entry in line.split("|")
+    r.. [
+        entry.strip().s.. 
+        ___ line __ table.strip().split("\n")
+        ___ entry __ line.split("|")
         __ entry.replace("-", "") != "" and entry.strip() != ""
     ]
 
@@ -54,7 +54,7 @@ ___ get_field(table, field_number):
     Receives a results table
     Returns a list of queried field
     """
-    return [entry[field_number] for entry in get_whole_table(table)]
+    r.. [entry[field_number] ___ entry __ get_whole_table(table)]
 
 
 ___ get_codons(table):
@@ -63,7 +63,7 @@ ___ get_codons(table):
     Receives a results table
     Returns a list of queried field
     """
-    return get_field(table, 0)
+    r.. get_field(table, 0)
 
 
 ___ get_amino_acids(table):
@@ -72,7 +72,7 @@ ___ get_amino_acids(table):
     Receives a results table
     Returns a list of amino acids
     """
-    return get_field(table, 1)
+    r.. get_field(table, 1)
 
 
 ___ get_frequencies(table):
@@ -81,7 +81,7 @@ ___ get_frequencies(table):
     Receives a results table
     Returns a list of frequencies
     """
-    return get_field(table, 2)
+    r.. get_field(table, 2)
 
 
 ___ get_absolute_numbers(table):
@@ -90,7 +90,7 @@ ___ get_absolute_numbers(table):
     Receives a results table
     Returns a list of absolute codon numbers
     """
-    return get_field(table, 3)
+    r.. get_field(table, 3)
 
 
 ___ get_table_bars(table):
@@ -98,7 +98,7 @@ ___ get_table_bars(table):
     Receives a results table
     Returns a list of bars/pipes (|) per line
     """
-    return [len(re.findall(r"\|", line)) for line in table.split("\n")]
+    r.. [l..(re.findall(r"\|", line)) ___ line __ table.split("\n")]
 
 
 ___ get_table_dividers(table):
@@ -106,7 +106,7 @@ ___ get_table_dividers(table):
     Receives a results table
     Returns a list of divider rows (------)
     """
-    return [len(re.findall(r"^-{3,}$", line)) for line in table.split("\n")]
+    r.. [l..(re.findall(r"^-{3,}$", line)) ___ line __ table.split("\n")]
 
 
 # ############################################################################
@@ -119,7 +119,7 @@ ___ result():
     """
     Provide codon usage table for tests
     """
-    return codon_usage.return_codon_usage_table().strip()
+    r.. codon_usage.return_codon_usage_table().strip()
 
 
 @pytest.mark.parametrize(
@@ -139,4 +139,4 @@ ___ test_table(result, function):
     Helper function to run all tests
     """
     print(f"Executing function '{function.__name__}'")
-    assert function(result) == function(EXPECTED)
+    ... function(result) __ function(EXPECTED)

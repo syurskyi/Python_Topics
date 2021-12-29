@@ -5,14 +5,14 @@
 
 ___ check(s):
     left  0
-    for c in s:
+    ___ c __ s:
         __ c __ '(':
             left + 1
-        else:
+        ____:
             __ left __ 0:
-                return F..
+                r.. F..
             left - 1
-    return left __ 0
+    r.. left __ 0
 
 print(check("((()())())"))
 print(check("(()()))"))

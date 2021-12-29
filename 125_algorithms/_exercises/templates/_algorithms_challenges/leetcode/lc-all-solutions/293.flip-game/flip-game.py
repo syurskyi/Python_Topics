@@ -4,8 +4,8 @@ class Solution(object):
     :type s: str
     :rtype: List[str]
     """
-    ans = []
-    for i in range(0, len(s) - 1):
-      __ s[i:i + 2] == "++":
-        ans.append(s[:i] + "--" + s[i + 2:])
-    return ans
+    ans    # list
+    ___ i __ r..(0, l..(s) - 1):
+      __ s[i:i + 2] __ "++":
+        ans.a..(s[:i] + "--" + s[i + 2:])
+    r.. ans

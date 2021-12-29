@@ -23,15 +23,15 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices):
    """
    price_delta = {}
    prices_lines = gold_prices.strip().split("\n")
-   for price_line in prices_lines:
-      for line in price_line.split(" "):
+   ___ price_line __ prices_lines:
+      ___ line __ price_line.split(" "):
          year = int(line[:line.find("-")])
          price = float(line[line.find(",") +1:])
          price_delta[year] = price
 
-   min_year, max_year = min(price_delta), max(price_delta)
+   min_year, max_year = m..(price_delta), max(price_delta)
    decrease_largest, decrease_year, increase_largest, increase_year = 0, 0, 0, 0
-   for year in range(min_year +1, max_year + 1, 1):
+   ___ year __ r..(min_year +1, max_year + 1, 1):
       previous_year_price = price_delta[year -1]
       current_year_price = price_delta[year]
    
@@ -41,13 +41,13 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices):
          __ delta > decrease_largest:
             decrease_largest = delta
             decrease_year = year
-      else:
+      ____:
          # Increase
          __ delta > increase_largest:
             increase_largest = delta
             increase_year = year
 
-   return (decrease_year, increase_year)
+   r.. (decrease_year, increase_year)
 
 
 # if __name__ == "__main__":

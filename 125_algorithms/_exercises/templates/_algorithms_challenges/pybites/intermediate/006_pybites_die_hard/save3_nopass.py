@@ -1,6 +1,6 @@
-from collections import Counter, namedtuple
-import os
-import urllib.request
+____ collections _______ Counter, namedtuple
+_______ os
+_______ urllib.request
 
 
 tmp = os.getenv("TMP", "/tmp")
@@ -10,7 +10,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.split()
+IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 Stats = namedtuple('Stats', 'user challenge')
 
@@ -36,17 +36,17 @@ ___ gen_files(tempfile=tempfile):
     """
     file = open(tempfile).read().lower().splitlines()
 
-    names = []
-    for line in file:
+    names    # list
+    ___ line __ file:
         line = line.split(',')[0]
-        names.append(line)
+        names.a..(line)
 
-    filtered1 = [x for x in names __ "." not in x]
-    exclude = [item for item in filtered1 for name in IGNORE __ name in item]
+    filtered1 = [x ___ x __ names __ "." n.. __ x]
+    exclude = [item ___ item __ filtered1 ___ name __ IGNORE __ name __ item]
 
-    output = [item for item in filtered1 __ item not in exclude]
+    output = [item ___ item __ filtered1 __ item n.. __ exclude]
 
-    return output
+    r.. output
 
 
 ___ diehard_pybites(files_ N..
@@ -60,30 +60,30 @@ ___ diehard_pybites(files_ N..
 
     Stats(user='clamytoe', challenge=('01', 7))
     """
-    __ files is None:
+    __ files __ N..
         files = gen_files()
 
-    files = [entry for entry in files __ entry.split('/')[1] not in IGNORE]
+    files = [entry ___ entry __ files __ entry.split('/')[1] n.. __ IGNORE]
     
-    stats_list = []
-    challenge_list = []
-    user_list = []
+    stats_list    # list
+    challenge_list    # list
+    user_list    # list
 
-    for entry in files:
+    ___ entry __ files:
         entry = entry.split('/')
-        challenge_list.append(entry[0])
-        user_list.append(entry[1])
+        challenge_list.a..(entry[0])
+        user_list.a..(entry[1])
 
     users = Counter(user_list)
     popular_challenges = Counter(challenge_list)
 
-    for entry in files:
+    ___ entry __ files:
         entry = entry.split('/')
-        for challenge, number in popular_challenges.items():
-            __ entry[0] == challenge:
-                stats_list.append(Stats(user=entry[1], challenge=(entry[0], number)))
+        ___ challenge, number __ popular_challenges.items():
+            __ entry[0] __ challenge:
+                stats_list.a..(Stats(user=entry[1], challenge=(entry[0], number)))
 
     top_user = users.most_common(1)[0][0]
     top_challenge = popular_challenges.most_common(1)[0]
-    return [stat for stat in stats_list
-            __ stat.user == top_user and stat.challenge == top_challenge][0]
+    r.. [stat ___ stat __ stats_list
+            __ stat.user __ top_user and stat.challenge __ top_challenge][0]

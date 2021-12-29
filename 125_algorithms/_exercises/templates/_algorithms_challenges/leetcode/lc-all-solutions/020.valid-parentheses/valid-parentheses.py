@@ -4,11 +4,11 @@ class Solution(object):
     :type s: str
     :rtype: bool
     """
-    stack = []
+    stack    # list
     d = ["()", "[]", "{}"]
-    for i in range(0, len(s)):
-      stack.append(s[i])
-      __ len(stack) >= 2 and stack[-2] + stack[-1] in d:
+    ___ i __ r..(0, l..(s)):
+      stack.a..(s[i])
+      __ l..(stack) >= 2 and stack[-2] + stack[-1] __ d:
         stack.pop()
         stack.pop()
-    return len(stack) == 0
+    r.. l..(stack) __ 0

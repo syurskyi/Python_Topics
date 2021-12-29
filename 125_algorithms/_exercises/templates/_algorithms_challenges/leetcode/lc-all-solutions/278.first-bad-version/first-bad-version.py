@@ -15,6 +15,6 @@ class Solution(object):
       mid = lo + (hi - lo) / 2
       __ isBadVersion(mid):
         hi = mid
-      else:
+      ____:
         lo = mid + 1
-    return lo
+    r.. lo

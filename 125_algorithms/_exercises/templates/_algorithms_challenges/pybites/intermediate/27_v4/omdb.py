@@ -1,39 +1,39 @@
-import sys
-import re
-import json
+_______ sys
+_______ re
+_______ json
 
 
-___ get_movie_data(files: list) -> list:
+___ get_movie_data(files: l..) -> l..:
     """Parse movie json files into a list of dicts"""
-    out_lst = []
-    for file in files:
+    out_lst    # list
+    ___ file __ files:
         with open(file) as f:
-            out_lst.append(json.load(f))
-    out_lst.sort(key=lambda m: m['Title'])
-    return out_lst
+            out_lst.a..(json.load(f))
+    out_lst.sort(key=l.... m: m['Title'])
+    r.. out_lst
 
 
-___ get_single_comedy(movies: list) -> str:
+___ get_single_comedy(movies: l..) -> str:
     """return the movie with Comedy in Genres"""
-    return [m for m in movies __ 'Comedy' in m['Genre']][0]['Title']
+    r.. [m ___ m __ movies __ 'Comedy' __ m['Genre']][0]['Title']
 
 
 ___ _get_wins_noms(awards: str) -> int:
     """return the number of wins and noms from award string or 0 if none"""
     wins = re.findall(r'([0-9]+) ', awards)
-    return sum(map(int, wins)) __ wins else 0
+    r.. s..(map(int, wins)) __ wins ____ 0
 
 
-___ get_movie_most_nominations(movies: list) -> str:
+___ get_movie_most_nominations(movies: l..) -> str:
     """Return the movie that had the most nominations"""
-    return max(movies, key=lambda x: _get_wins_noms(x['Awards']))['Title']
+    r.. max(movies, key=l.... x: _get_wins_noms(x['Awards']))['Title']
 
 
 ___ _get_runtime(runtime: str) -> int:
     """return the integer runtime from a runtime string"""
-    return int(re.findall(r'([0-9]+) ', runtime)[0])
+    r.. int(re.findall(r'([0-9]+) ', runtime)[0])
 
 
-___ get_movie_longest_runtime(movies: list) -> str:
+___ get_movie_longest_runtime(movies: l..) -> str:
     """Return the movie that has the longest runtime"""
-    return max(movies, key=lambda x: _get_runtime(x['Runtime']))['Title']
+    r.. max(movies, key=l.... x: _get_runtime(x['Runtime']))['Title']

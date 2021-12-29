@@ -15,14 +15,14 @@ class Solution(object):
             mod = (n-1)%26
             res = chr(mod+ord('A'))+res
             n = int((n-mod)/26)
-        return res
+        r.. res
     
     ___ test(self):
-        for n in range(30):
+        ___ n __ r..(30):
             print('n: %s' % (n))
             result = self.convertToTitle(n)
             print('result: %s' % (result))
             print('-='*20 + '-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

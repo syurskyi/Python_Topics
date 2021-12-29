@@ -1,2 +1,2 @@
 ___ foo(mylist):
-    return list(set(mylist))
+    r.. l..(set(mylist))

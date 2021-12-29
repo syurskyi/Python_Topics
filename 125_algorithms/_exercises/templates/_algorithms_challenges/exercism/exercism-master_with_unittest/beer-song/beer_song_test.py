@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from beer import song, verse
+____ beer _______ song, verse
 
 
 class BeerTest(unittest.TestCase):
@@ -67,5 +67,5 @@ class BeerTest(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

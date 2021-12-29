@@ -1,7 +1,7 @@
-import csv
-from collections import defaultdict, namedtuple
-import os
-from urllib.request import urlretrieve
+_______ csv
+____ collections _______ defaultdict, namedtuple
+_______ os
+____ urllib.request _______ urlretrieve
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = '/tmp'
@@ -23,30 +23,30 @@ ___ get_movies_by_director():
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
-    d = defaultdict(list)
-    full_list = []
+    d = defaultdict(l..)
+    full_list    # list
 
     with open(MOVIE_DATA, newline='') as file:
         reader = csv.DictReader(file)
-        for row in reader:
+        ___ row __ reader:
             year = row['title_year']
             __ year != '' and int(year) > 1960:
-                full_list.append([row['director_name'],
+                full_list.a..([row['director_name'],
                                   row['movie_title'].strip(),
                                   int(row['title_year']),
                                   float(row['imdb_score'])])
 
-    for name, movie, year, score in full_list:
-        d[name].append(Movie(title=movie, year=year, score=score))
+    ___ name, movie, year, score __ full_list:
+        d[name].a..(Movie(title=movie, year=year, score=score))
 
-    return d
+    r.. d
 
 
 ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    scores = [movie.score for movie in movies]
-    return round(sum(scores) / len(scores), 1)
+    scores = [movie.score ___ movie __ movies]
+    r.. round(s..(scores) / l..(scores), 1)
 
 ___ get_average_scores(directors):
     """Iterate through the directors dict (returned by get_movies_by_director),
@@ -54,12 +54,12 @@ ___ get_average_scores(directors):
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
 
-    director_list = []
-    for director in directors:
-        __ len(get_movies_by_director()[director]) >= MIN_MOVIES:
+    director_list    # list
+    ___ director __ directors:
+        __ l..(get_movies_by_director()[director]) >= MIN_MOVIES:
             d_tuple = director, calc_mean_score(get_movies_by_director()[director])
-            director_list.append(d_tuple)
+            director_list.a..(d_tuple)
 
-    director_list.sort(key=lambda a: a[1], reverse=True)
+    director_list.sort(key=l.... a: a[1], r.._T..
 
-    return director_list
+    r.. director_list

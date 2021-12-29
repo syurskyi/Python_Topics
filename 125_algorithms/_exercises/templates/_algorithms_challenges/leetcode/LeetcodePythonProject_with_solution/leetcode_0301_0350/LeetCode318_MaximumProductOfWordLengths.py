@@ -6,17 +6,17 @@ Created on Mar 17, 2017
 
 class Solution(object):
     ___ maxProduct(self, words):
-        __ not words: return 0
-        arr = [0]*len(words)
-        for i, word in enumerate(words):
-            for _, c in enumerate(word):
+        __ n.. words: r.. 0
+        arr = [0]*l..(words)
+        ___ i, word __ enumerate(words):
+            ___ _, c __ enumerate(word):
                 arr[i] = arr[i] | (1 << (ord(c) - ord('a')))
         result = 0
-        for i, word in enumerate(words):
-            for j in range(i+1, len(words)):
-                __ arr[i] & arr[j] == 0:
-                    result = max(result, len(words[i])*len(words[j]))
-        return result
+        ___ i, word __ enumerate(words):
+            ___ j __ r..(i+1, l..(words)):
+                __ arr[i] & arr[j] __ 0:
+                    result = max(result, l..(words[i])*l..(words[j]))
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -24,11 +24,11 @@ class Solution(object):
             ["a", "ab", "abc", "d", "cd", "bcd", "abcd"],
             ["a", "aa", "aaa", "aaaa"],
         ]
-        for words in testCases:
+        ___ words __ testCases:
             print('words: %s' % (words))
             result = self.maxProduct(words)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

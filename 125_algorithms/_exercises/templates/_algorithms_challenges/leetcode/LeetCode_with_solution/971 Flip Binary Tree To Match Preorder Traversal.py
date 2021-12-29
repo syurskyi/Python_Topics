@@ -38,20 +38,20 @@ Note:
 
 1 <= N <= 100
 """
-from typing import List
+____ typing _______ List
 
 
 # Definition for a binary tree node.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ __init__(self):
-        self.ret = []
+        self.ret    # list
         self.i = 0  # currently scanning index of voyage
 
     ___ flipMatchVoyage(self, root: TreeNode, voyage: List[int]) -> List[int]:
@@ -60,22 +60,22 @@ class Solution:
         Flip the least number of nodes? There is only one answer
         """
         self.dfs(root, voyage)
-        return self.ret
+        r.. self.ret
 
     ___ dfs(self, node, voyage):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         __ node.val != voyage[self.i]:
             self.ret = [-1]
-            return
+            r..
 
         self.i += 1
         __ node.left and node.right and node.left.val != voyage[self.i]:
             # flip left and right
-            self.ret.append(node.val)
+            self.ret.a..(node.val)
             self.dfs(node.right, voyage)
             self.dfs(node.left, voyage)
-        else:
+        ____:
             self.dfs(node.left, voyage)
             self.dfs(node.right, voyage)

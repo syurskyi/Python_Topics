@@ -1,5 +1,5 @@
-from collections import namedtuple
-from itertools import accumulate
+____ collections _______ namedtuple
+____ itertools _______ accumulate
 
 BeltStats = namedtuple('BeltStats', 'score ninjas')
 
@@ -27,7 +27,7 @@ ___ get_total_points(belts=ninja_belts):
     #for belt in belts:
     #    total_points += belts[belt].score*belts[belt].ninjas
     #return total_points
-    return sum(belts[belt].score*belts[belt].ninjas for belt in belts)
+    r.. s..(belts[belt].score*belts[belt].ninjas ___ belt __ belts)
 
 print(get_total_points())
 

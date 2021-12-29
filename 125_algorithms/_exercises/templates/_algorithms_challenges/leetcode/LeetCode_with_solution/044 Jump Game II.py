@@ -19,26 +19,26 @@ class Solution:
         :param A: a list of integers
         :return: integer, minimum number of jumps
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        length = len(A)
+        length = l..(A)
         counter = 0
-        dp = [[] for _ in A]
+        dp = [[] ___ _ __ A]
 
-        q = []
-        q.append(0)
+        q    # list
+        q.a..(0)
         while q:
             current_level = q
-            q = []
-            for ind in current_level:
+            q    # list
+            ___ ind __ current_level:
                 __ ind>=length-1:
-                    return counter
-                for j in xrange(ind+1, ind+A[ind]+1):
-                    __ j not in current_level:  # avoid duplicate
-                        q.append(j)
+                    r.. counter
+                ___ j __ xrange(ind+1, ind+A[ind]+1):
+                    __ j n.. __ current_level:  # avoid duplicate
+                        q.a..(j)
             counter += 1
-        return counter
+        r.. counter
 
     ___ jump(self, A):
         """
@@ -49,24 +49,24 @@ class Solution:
         :param A: a list of integers
         :return: integer, minimum number of jumps
         """
-        length = len(A)
+        length = l..(A)
         counter = 0
 
         start = 0
         end = 1  # max reach [0, 1)
         gmax = 0
         while end<length:  # when end==length, it has already reached the last item
-            __ not start<end: return 0  # avoid dead loop
-            for i in xrange(start, end):
+            __ n.. start<end: r.. 0  # avoid dead loop
+            ___ i __ xrange(start, end):
                 gmax = max(gmax, A[i]+i)
 
             counter += 1
             start = end
             end = gmax+1
 
-        return counter
+        r.. counter
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().jump([3, 2, 1, 0, 4])
-    assert Solution().jump([2,3,1,1,4])==2
+    ... Solution().jump([2,3,1,1,4])__2

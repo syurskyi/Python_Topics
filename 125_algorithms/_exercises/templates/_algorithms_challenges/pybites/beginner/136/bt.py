@@ -11,7 +11,7 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-from enum import Enum
+____ enum _______ Enum
 
 
 class Bloodtype(Enum):
@@ -46,21 +46,21 @@ ___ check_bt(donor, recipient):
         bool: True for compatability, False otherwise.
     """
     temp = _particular_antigen_comp(get_int(donor), get_int(recipient))
-    return not len([n for n in temp __ n < 0 ])
+    r.. n.. l..([n ___ n __ temp __ n < 0 ])
 
 ___ get_int(inpval):
-    __ isinstance(inpval, int):
+    __ isi..(inpval, int):
         __ inpval >= 0 and inpval <= 7:
-            return inpval
-        else:
+            r.. inpval
+        ____:
             raise ValueError
-    __ isinstance(inpval, str):
-        __ inpval in blood_type_text.keys():
-            return blood_type_text[inpval].value
-        else:
+    __ isi..(inpval, str):
+        __ inpval __ blood_type_text.keys():
+            r.. blood_type_text[inpval].value
+        ____:
             raise ValueError
-    __ isinstance(inpval, Bloodtype):
-        return inpval.value
+    __ isi..(inpval, Bloodtype):
+        r.. inpval.value
 
 # hint
 ___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
@@ -76,7 +76,7 @@ ___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     _particular_antigen_comp(2, 5) -> (1, -1, 1)   B+ cannot donate to A+
     _particular_antigen_comp(7, 0) -> (-1, -1, -1) AB+ cannot donate to 0-
     """
-    return (
+    r.. (
         ((recipient // 4) % 2) - ((donor // 4) % 2),
         ((recipient // 2) % 2) - ((donor // 2) % 2),
         (recipient % 2) - (donor % 2),

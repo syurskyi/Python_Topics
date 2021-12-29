@@ -1,15 +1,15 @@
 ___ bubbleSort(amount, numbers):
-    sorted = False
+    s.. = False
     swapCount, passCount = 0,0
 
-    while not sorted:
-        sorted = True
-        for i in range(amount-1):
+    while n.. s..:
+        s.. = True
+        ___ i __ r..(amount-1):
             __ numbers[i] > numbers[i+1]:
-                sorted = False
+                s.. = False
                 swapCount += 1
                 numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
         passCount += 1
     print('%s %s') % (passCount, swapCount)
 
-bubbleSort(input(),[int(x) for x in raw_input().split()])
+bubbleSort(input(),[int(x) ___ x __ raw_input().s.. ])

@@ -5,31 +5,31 @@ class Solution:
         :type end: str
         :rtype: bool
         """
-        __ len(start) != len(end):
-            return False
+        __ l..(start) != l..(end):
+            r.. False
 
-        m, n = len(start), len(end)
+        m, n = l..(start), l..(end)
         i = j = 0
 
         while i < m and j < n:
-            while i < m and start[i] == 'X':
+            while i < m and start[i] __ 'X':
                 i += 1
-            while j < n and end[j] == 'X':
+            while j < n and end[j] __ 'X':
                 j += 1
 
-            __ i == m and j == n:
-                return True
-            __ i == m or j == n:
-                return False
+            __ i __ m and j __ n:
+                r.. True
+            __ i __ m o. j __ n:
+                r.. False
 
             __ start[i] != end[j]:
-                return False
-            __ start[i] == 'L' and j > i:
-                return False
-            __ start[i] == 'R' and i > j:
-                return False
+                r.. False
+            __ start[i] __ 'L' and j > i:
+                r.. False
+            __ start[i] __ 'R' and i > j:
+                r.. False
 
             i += 1
             j += 1
 
-        return True
+        r.. True

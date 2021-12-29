@@ -1,4 +1,4 @@
-from random import randint
+____ random _______ randint
 
 
 class HashFunc:
@@ -8,13 +8,13 @@ class HashFunc:
 
     ___ hash(self, key):
         code = 0
-        __ not key:
-            return code
+        __ n.. key:
+            r.. code
 
-        for char in key:
+        ___ char __ key:
             code = (self.seed * code + ord(char)) % self.cap
 
-        return code
+        r.. code
 
 
 class StandardBloomFilter:
@@ -25,10 +25,10 @@ class StandardBloomFilter:
         CAP = 20000
 
         self.bits = [0] * CAP
-        self.hashs = []
+        self.hashs    # list
 
-        for i in range(k):
-            self.hashs.append(HashFunc(
+        ___ i __ r..(k):
+            self.hashs.a..(HashFunc(
                 randint(CAP // 2, CAP),
                 i * 2 + 3
             ))
@@ -38,7 +38,7 @@ class StandardBloomFilter:
         :type word: str
         :rtype: None
         """
-        for f in self.hashs:
+        ___ f __ self.hashs:
             index = f.hash(word)
             self.bits[index] = 1
 
@@ -47,8 +47,8 @@ class StandardBloomFilter:
         :type word: str
         :rtype: bool
         """
-        for f in self.hashs:
+        ___ f __ self.hashs:
             index = f.hash(word)
-            __ self.bits[index] == 0:
-                return False
-        return True
+            __ self.bits[index] __ 0:
+                r.. False
+        r.. True

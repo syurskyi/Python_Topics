@@ -4,18 +4,18 @@ class Solution(object):
     :type expression: str
     :rtype: str
     """
-    stack = []
-    i = len(expression) - 1
+    stack    # list
+    i = l..(expression) - 1
     while i >= 0:
-      __ expression[i] not in ["?", ":"]:
-        stack.append(expression[i])
-      elif expression[i] == "?":
+      __ expression[i] n.. __ ["?", ":"]:
+        stack.a..(expression[i])
+      ____ expression[i] __ "?":
         i -= 1
-        __ expression[i] == "T":
+        __ expression[i] __ "T":
           top = stack.pop()
           stack.pop()
-          stack.append(top)
-        elif expression[i] == "F":
+          stack.a..(top)
+        ____ expression[i] __ "F":
           stack.pop()
       i -= 1
-    return stack[0]
+    r.. stack[0]

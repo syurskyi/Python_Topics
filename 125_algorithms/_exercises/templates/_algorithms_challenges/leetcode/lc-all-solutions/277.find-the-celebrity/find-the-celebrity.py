@@ -11,10 +11,10 @@ class Solution(object):
     :rtype: int
     """
     cand = 0
-    for i in range(1, n):
+    ___ i __ r..(1, n):
       __ knows(cand, i):
         cand = i
-    for i in range(n):
-      __ i != cand and knows(cand, i) or not knows(i, cand):
-        return -1
-    return cand
+    ___ i __ r..(n):
+      __ i != cand and knows(cand, i) o. n.. knows(i, cand):
+        r.. -1
+    r.. cand

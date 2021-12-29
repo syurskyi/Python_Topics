@@ -15,12 +15,12 @@ class Solution(object):
         """
         a = num1[::-1]
         b = num2[::-1]
-        n = len(a)
-        m = len(b)
-        res = ['0' for i in range(n + m)]
-        for i in range(n):
+        n = l..(a)
+        m = l..(b)
+        res = ['0' ___ i __ r..(n + m)]
+        ___ i __ r..(n):
             c = 0
-            for j in range(m):
+            ___ j __ r..(m):
                 tmp = int(a[i]) * int(b[j]) + int(res[i + j]) + c
                 digit = tmp % 10
                 res[i + j] = str(digit)
@@ -28,11 +28,11 @@ class Solution(object):
             __ c > 0:
                 res[m + i] = str(c)
         res = ''.join(res[::-1])
-        for i, d in enumerate(res):
+        ___ i, d __ enumerate(res):
             __ d != '0':
-                return res[i:]
-        else:
-            return '0'
+                r.. res[i:]
+        ____:
+            r.. '0'
 
 s = Solution()
 

@@ -18,8 +18,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -32,13 +32,13 @@ class Solution(object):
         :rtype: int
         """
         self.traverse(root)
-        return self.s
+        r.. self.s
 
     ___ traverse(self, node):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        __ node.left and not node.left.left and not node.left.right:
+        __ node.left and n.. node.left.left and n.. node.left.right:
             self.s += node.left.val
 
         self.traverse(node.left)

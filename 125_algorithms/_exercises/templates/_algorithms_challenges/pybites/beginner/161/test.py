@@ -1,4 +1,4 @@
-import os, os.path
+_______ os, os.path
 
 #DIR = 'C:\\Users\\Swee-Chuan Khoo\\Documents\\covic19_MoH\\covid19-public'
 DIR = '.'
@@ -12,11 +12,11 @@ for name in os.listdir(DIR):
         print('Directory ', name) """
 
 filecount, dircount = 0, 0
-for root, dirs, files in os.walk(DIR):
-    for name in files:
+___ root, dirs, files __ os.walk(DIR):
+    ___ name __ files:
         filecount += 1
         print(os.path.join(DIR, name))
-    for name in dirs:
+    ___ name __ dirs:
         dircount += 1
         print(os.path.join(DIR, name))
 

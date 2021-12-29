@@ -5,7 +5,7 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        return max(max(A)-min(A)-2*K, 0)
+        r.. max(max(A)-m..(A)-2*K, 0)
 
     ___ smallestRangeI_own(self, A, K):
         """
@@ -13,25 +13,25 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        minVal = min(A)
+        minVal = m..(A)
         maxVal = max(A)
         med = (minVal+maxVal) // 2
         minVal = float('inf')
         maxVal = float('-inf')
-        for num in A:
+        ___ num __ A:
             __ num > med:
                 __ num - med > K:
                     num -= K
-                else:
+                ____:
                     num = med
-            elif num < med:
+            ____ num < med:
                 __ med - num > K:
                     num += K
-                else:
+                ____:
                     num = med
             maxVal = max(maxVal, num)
-            minVal = min(minVal, num)
-        return maxVal - minVal
+            minVal = m..(minVal, num)
+        r.. maxVal - minVal
 
     ___ test(self):
         testCases = [
@@ -39,11 +39,11 @@ class Solution(object):
             [[0,10], 2],
             [[1,3,6], 3],
         ]
-        for a, k in testCases:
+        ___ a, k __ testCases:
             res = self.smallestRangeI(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

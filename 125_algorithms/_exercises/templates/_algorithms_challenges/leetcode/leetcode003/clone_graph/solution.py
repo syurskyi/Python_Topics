@@ -17,27 +17,27 @@ class Solution(object):
 
         BFS
         """
-        __ node is None:
-            return None
-        queue = []
+        __ node __ N..
+            r.. N..
+        queue    # list
         start_cloned_node = UndirectedGraphNode(node.label)
         visited = set()
         # A dictionary that maps labels to cloned nodes
         d = {node: start_cloned_node}
-        queue.append(node)
+        queue.a..(node)
         while queue:
             node = queue.pop(0)
             visited.add(node)
             cloned_node = d[node]
-            cloned_neighbors = []
-            for neighbor in node.neighbors:
-                __ neighbor not in visited:
-                    queue.append(neighbor)
-                __ neighbor not in d:
+            cloned_neighbors    # list
+            ___ neighbor __ node.neighbors:
+                __ neighbor n.. __ visited:
+                    queue.a..(neighbor)
+                __ neighbor n.. __ d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     d[neighbor] = cloned_neighbor
-                else:
+                ____:
                     cloned_neighbor = d[neighbor]
-                cloned_neighbors.append(cloned_neighbor)
+                cloned_neighbors.a..(cloned_neighbor)
             cloned_node.neighbors = cloned_neighbors
-        return start_cloned_node
+        r.. start_cloned_node

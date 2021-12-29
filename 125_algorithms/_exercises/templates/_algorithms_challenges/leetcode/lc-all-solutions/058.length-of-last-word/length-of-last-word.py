@@ -4,9 +4,9 @@ class Solution(object):
     :type s: str
     :rtype: int
     """
-    __ len(s) == 0:
-      return 0
-    s = s.split()
-    __ len(s) > 0:
-      return len(s[-1])
-    return 0
+    __ l..(s) __ 0:
+      r.. 0
+    s = s.s..
+    __ l..(s) > 0:
+      r.. l..(s[-1])
+    r.. 0

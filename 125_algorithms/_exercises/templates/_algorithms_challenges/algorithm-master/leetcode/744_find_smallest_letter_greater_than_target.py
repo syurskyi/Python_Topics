@@ -5,20 +5,20 @@ class Solution:
         :type target: str
         :rtype: str
         """
-        n = len(L)
+        n = l..(L)
         left, right = 0, n - 1
 
         while left + 1 < right:
             mid = (left + right) // 2
             __ L[mid] <= target:
                 left = mid
-            else:
+            ____:
                 right = mid
 
         __ target < L[left]:
-            return L[left]
+            r.. L[left]
 
         __ target < L[right]:
-            return L[right]
+            r.. L[right]
 
-        return L[0]
+        r.. L[0]

@@ -4,4 +4,4 @@ ___ countdown():
     while t > 1:
         print(t)
         t -= 1
-    return t
+    r.. t

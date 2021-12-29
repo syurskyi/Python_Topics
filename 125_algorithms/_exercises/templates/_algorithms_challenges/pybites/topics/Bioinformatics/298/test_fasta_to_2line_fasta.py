@@ -1,4 +1,4 @@
-from fasta_to_2line_fasta import fasta_to_2line_fasta, FASTA_FILE
+____ fasta_to_2line_fasta _______ fasta_to_2line_fasta, FASTA_FILE
 
 EXPECTED_RECORDS = 59
 
@@ -10,19 +10,19 @@ ___ test_well_formed_fasta():
 
     CONVERTED_FASTA = f"{FASTA_FILE}-test.fasta"
 
-    assert fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) == EXPECTED_RECORDS
+    ... fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) __ EXPECTED_RECORDS
     with open(FASTA_FILE, "r") as f:
         f.readline()
-        assert (
+        ... (
             f.readline().strip()
-            == "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
+            __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
     with open(CONVERTED_FASTA, "r") as f_conv:
         f_conv.readline()
-        assert (
+        ... (
             f_conv.readline().strip()
-            == "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
+            __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
             "LPISILSARIYYVLFEWAYYKNHLNEIFAIWNGGIAIHGGLIGAIVTTIVFTKKRNISF"
             "WKLADIAAPSLILGQAIGRWGNFMNQEAHGGPVSRTFLESLRLPDIIINQMYINGSYYH"
             "PTFLYESIWNIIGFVTLLILRKGSLKRGEIFLSYLIWYSIGRFFVEGLRTDSLMLTSSL"

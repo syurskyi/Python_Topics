@@ -5,11 +5,11 @@ Created on Feb 27, 2018
 '''
 class Solution(object):
     ___ canMeasureWater(self, x, y, z):
-        __ x+y<z: return False
-        __ x == z or y == z or x+y == z:
-            return True
+        __ x+y<z: r.. False
+        __ x __ z o. y __ z o. x+y __ z:
+            r.. True
         while y != 0:
             tmp = y
             y = x%y
             x = tmp
-        return bool(z%x==0)
+        r.. bool(z%x__0)

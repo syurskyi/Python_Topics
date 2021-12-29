@@ -11,7 +11,7 @@ return SAME_UNORDERED_DEDUPED if they have the same unordered content and reduce
 and finally return NO_EQUALITY if none of the previous cases match.
 '''
 
-from enum import Enum
+____ enum _______ Enum
 
 class Equality(Enum):
     SAME_REFERENCE = 4
@@ -31,28 +31,28 @@ ___ check_equality(list1, list2):
        - return SAME_UNORDERED_DEDUPED if they have the same unordered content
          and reduced to unique items
        - return NO_EQUALITY if none of the previous cases match"""
-    __ list1 is list2: return Equality.SAME_REFERENCE
-    elif list1 == list2: return Equality.SAME_ORDERED
-    elif len(list1) == len(list2) and not set(list1).difference(list2): return Equality.SAME_UNORDERED
-    elif len(set(list1).symmetric_difference(list2)) == 0: return Equality.SAME_UNORDERED_DEDUPED
-    else:
-        return Equality.NO_EQUALITY
+    __ list1 __ list2: r.. Equality.SAME_REFERENCE
+    ____ list1 __ list2: r.. Equality.SAME_ORDERED
+    ____ l..(list1) __ l..(list2) and n.. set(list1).difference(list2): r.. Equality.SAME_UNORDERED
+    ____ l..(set(list1).symmetric_difference(list2)) __ 0: r.. Equality.SAME_UNORDERED_DEDUPED
+    ____:
+        r.. Equality.NO_EQUALITY
 
 ___ check_equality_solution2(list1, list2):
 
-    __ list1 is list2:
-        return Equality.SAME_REFERENCE
+    __ list1 __ list2:
+        r.. Equality.SAME_REFERENCE
 
-    __ list1 == list2:
-        return Equality.SAME_ORDERED
+    __ list1 __ list2:
+        r.. Equality.SAME_ORDERED
 
-    __ sorted(list1) == sorted(list2):
-        return Equality.SAME_UNORDERED
+    __ s..(list1) __ s..(list2):
+        r.. Equality.SAME_UNORDERED
 
-    __ set(list1) == set(list2):
-        return Equality.SAME_UNORDERED_DEDUPED
+    __ set(list1) __ set(list2):
+        r.. Equality.SAME_UNORDERED_DEDUPED
 
-    return Equality.NO_EQUALITY
+    r.. Equality.NO_EQUALITY
 
 l = ['1']
 a = [1, 2, 2, 3, 4]

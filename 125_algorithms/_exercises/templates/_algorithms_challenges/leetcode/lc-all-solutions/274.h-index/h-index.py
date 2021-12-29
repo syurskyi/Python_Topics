@@ -4,17 +4,17 @@ class Solution(object):
     :type citations: List[int]
     :rtype: int
     """
-    n = len(citations)
+    n = l..(citations)
     dp = [0] * (n + 1)
-    for c in citations:
+    ___ c __ citations:
       __ c > n:
         dp[n] += 1
-      else:
+      ____:
         dp[c] += 1
 
     total = 0
-    for i in reversed(range(1, len(dp))):
+    ___ i __ reversed(r..(1, l..(dp))):
       total += dp[i]
       __ total >= i:
-        return i
-    return 0
+        r.. i
+    r.. 0

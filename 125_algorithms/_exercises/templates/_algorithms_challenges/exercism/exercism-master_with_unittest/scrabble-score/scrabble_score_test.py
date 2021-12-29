@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from scrabble import score
+____ scrabble _______ score
 
 
 class WordTest(unittest.TestCase):
@@ -26,5 +26,5 @@ class WordTest(unittest.TestCase):
         self.assertEqual(41, score("OxyphenButazone"))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

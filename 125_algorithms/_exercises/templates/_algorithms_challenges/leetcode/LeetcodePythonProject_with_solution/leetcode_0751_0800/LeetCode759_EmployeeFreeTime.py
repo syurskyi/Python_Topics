@@ -15,22 +15,22 @@ class Solution(object):
         :type schedule: List[List[Interval]]
         :rtype: List[Interval]
         """
-        import heapq
-        heap = []
-        for arr in schedule:
-            for inter in arr:
+        _______ heapq
+        heap    # list
+        ___ arr __ schedule:
+            ___ inter __ arr:
                 heapq.heappush(heap, [inter.start, inter.end])
         temp = heapq.heappop(heap)
-        res = []
+        res    # list
         while heap:
             __ temp[1] < heap[0][0]:
-                res.append(Interval(temp[1], heap[0][0]))
+                res.a..(Interval(temp[1], heap[0][0]))
                 temp = heapq.heappop(heap)
-            else:
+            ____:
                 __ temp[1] < heap[0][1]:
                     temp = heap[0]
                 heapq.heappop(heap) 
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -43,16 +43,16 @@ class Solution(object):
                 [[2,5],[9,12]],
             ],
         ]
-        for schedule in testCases:
+        ___ schedule __ testCases:
             print('schedule: %s' % schedule)
-            arr = []
-            for arr0 in schedule:
-                arr.append([Interval(inter[0], inter[1]) for inter in arr0])
+            arr    # list
+            ___ arr0 __ schedule:
+                arr.a..([Interval(inter[0], inter[1]) ___ inter __ arr0])
             schedule = arr
             result = self.employeeFreeTime(schedule)
-            res = [[inter.start, inter.end] for inter in result]
+            res = [[inter.start, inter.end] ___ inter __ result]
             print('result: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -10,24 +10,24 @@ class Solution(object):
         :rtype: List[int]
         """
         s = S
-        res = []
+        res    # list
         self.helper(s, 0, res)
-        return res __ len(res) > 2 else []
+        r.. res __ l..(res) > 2 ____ []
     
     ___ helper(self, s, i, res):
-        __ i >= len(s) and len(res) > 2:
-            return True
-        for j in range(i+1, len(s)+1):
+        __ i >= l..(s) and l..(res) > 2:
+            r.. True
+        ___ j __ r..(i+1, l..(s)+1):
             s0 = s[i:j]
             num = int(s0)
-            __ num > 2**31-1 or (s0[0] == '0' and len(s0) > 1):
+            __ num > 2**31-1 o. (s0[0] __ '0' and l..(s0) > 1):
                 break
-            __ len(res) < 2 or res[-2] + res[-1] == num:
-                res.append(num)
+            __ l..(res) < 2 o. res[-2] + res[-1] __ num:
+                res.a..(num)
                 __ self.helper(s, j, res):
-                    return True
+                    r.. True
                 res.pop()
-        return False
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -38,11 +38,11 @@ class Solution(object):
             '1101111',
             "1011",
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.splitIntoFibonacci(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

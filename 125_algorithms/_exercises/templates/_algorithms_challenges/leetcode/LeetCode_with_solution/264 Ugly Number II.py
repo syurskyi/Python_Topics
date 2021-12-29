@@ -6,7 +6,7 @@ is the sequence of the first 10 ugly numbers.
 
 Note that 1 is typically treated as an ugly number.
 """
-import heapq
+_______ heapq
 
 
 __author__ = 'Daniel'
@@ -21,7 +21,7 @@ class Node(object):
         self.q = q
 
     ___ __cmp__(self, other):
-        return self.q[0] - other.q[0]
+        r.. self.q[0] - other.q[0]
 
 
 class Solution(object):
@@ -32,14 +32,14 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        __ n == 1:
-            return 1
+        __ n __ 1:
+            r.. 1
 
         n -= 1  # exclude 1
 
         ugly = [2, 3, 5]
-        qs = [Node(i, [i]) for i in ugly]
-        h = list(qs)  # shallow copy
+        qs = [Node(i, [i]) ___ i __ ugly]
+        h = l..(qs)  # shallow copy
 
         heapq.heapify(h)
 
@@ -49,13 +49,13 @@ class Solution(object):
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)
-            for i in xrange(ugly.index(popped.origin), 3):
-                qs[i].q.append(ret*ugly[i])
+            ___ i __ xrange(ugly.index(popped.origin), 3):
+                qs[i].q.a..(ret*ugly[i])
 
             heapq.heappush(h, popped)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().nthUglyNumber(10) == 12
+__ __name__ __ "__main__":
+    ... Solution().nthUglyNumber(10) __ 12

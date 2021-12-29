@@ -1,55 +1,55 @@
 ___ map_clone(function, xs):
-    return [function(elem) for elem in xs]
+    r.. [function(elem) ___ elem __ xs]
 
 
 ___ length(xs):
-    return sum(1 for _ in xs)
+    r.. s..(1 ___ _ __ xs)
 
 
 ___ filter_clone(function, xs):
-    return [x for x in xs __ function(x)]
+    r.. [x ___ x __ xs __ function(x)]
 
 
 ___ reverse(xs):
-    __ not xs:
-        return []
-    else:
-        return xs[::-1]
+    __ n.. xs:
+        r.. []
+    ____:
+        r.. xs[::-1]
 
 
-___ append(xs, y):
-    xs[len(xs):] = [y]
-    return xs
+___ a..(xs, y):
+    xs[l..(xs):] = [y]
+    r.. xs
 
 
 ___ foldl(function, xs, acc):
-    __ len(xs) == 0:
-        return acc
-    else:
-        return foldl(function, xs[1:], function(acc, xs[0]))
+    __ l..(xs) __ 0:
+        r.. acc
+    ____:
+        r.. foldl(function, xs[1:], function(acc, xs[0]))
 
 
 ___ foldr(function, xs, acc):
-    __ len(xs) == 0:
-        return acc
-    else:
-        return function(xs[0], foldr(function, xs[1:], acc))
+    __ l..(xs) __ 0:
+        r.. acc
+    ____:
+        r.. function(xs[0], foldr(function, xs[1:], acc))
 
 
 ___ flat(xs):
-    out = []
-    for item in xs:
-        __ isinstance(item, list):
+    out    # list
+    ___ item __ xs:
+        __ isi..(item, l..):
             out.extend(flat(item))
-        else:
-            out.append(item)
-    return out
+        ____:
+            out.a..(item)
+    r.. out
 
 
 ___ concat(xs, ys):
-    __ not ys:
-        return xs
-    else:
-        for item in ys:
-            xs.append(item)
-        return xs
+    __ n.. ys:
+        r.. xs
+    ____:
+        ___ item __ ys:
+            xs.a..(item)
+        r.. xs

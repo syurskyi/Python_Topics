@@ -24,20 +24,20 @@ class Solution:
     # @return an integer
     ___ uniquePathsWithObstacles(self, obstacleGrid):
         grid = obstacleGrid
-        n = len(grid)
-        m = len(grid[0])
-        t = [[-1 for i in range(m)] for j in range(n)]
-        for i in range(n):
-            for j in range(m):
-                __ grid[i][j] == 1:
+        n = l..(grid)
+        m = l..(grid[0])
+        t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
+        ___ i __ r..(n):
+            ___ j __ r..(m):
+                __ grid[i][j] __ 1:
                     t[i][j] = 0
-                else:
-                    __ i == 0 and j == 0:
+                ____:
+                    __ i __ 0 and j __ 0:
                         t[i][j] = 1
-                    elif i == 0:
+                    ____ i __ 0:
                         t[i][j] = t[i][j - 1]
-                    elif j == 0:
+                    ____ j __ 0:
                         t[i][j] = t[i - 1][j]
-                    else:
+                    ____:
                         t[i][j] = t[i - 1][j] + t[i][j - 1]
-        return t[n - 1][m - 1]
+        r.. t[n - 1][m - 1]

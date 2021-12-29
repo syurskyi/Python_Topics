@@ -3,7 +3,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     # ascending
@@ -11,7 +11,7 @@ class Solution:
         """
         Time Limit Exceded
         """
-        comparator = lambda x, y: cmp(x.val, y.val)
+        comparator = l.... x, y: cmp(x.val, y.val)
         # open set & closed set
         dummy_head = ListNode(0)
         dummy_head.next = head
@@ -36,7 +36,7 @@ class Solution:
                     # closed_tail.next = open_head_next
                     break
 
-                __ ptr==open_head:
+                __ ptr__open_head:
                     closed_tail = closed_tail.next
                     break
 
@@ -44,7 +44,7 @@ class Solution:
                 ptr = ptr.next
 
 
-        return dummy_head.next
+        r.. dummy_head.next
 
 
     ___ insertionSortList(self, head):
@@ -59,7 +59,7 @@ class Solution:
         :param head: ListNode
         :return: ListNode
         """
-        comparator = lambda x, y: cmp(x.val, y.val)
+        comparator = l.... x, y: cmp(x.val, y.val)
         # open set & closed set
         # iterate through all the nodes
         dummy = ListNode(0)  # Singly-linked list, thus need dummy_head
@@ -69,7 +69,7 @@ class Solution:
         while (closed_tail and closed_tail.next):
             open_head = closed_tail.next
             open_head_next = closed_tail.next.next
-            __ not comparator(closed_tail, open_head)<=0:  # Step 1: only compare the closed set tail and open set head
+            __ n.. comparator(closed_tail, open_head)<=0:  # Step 1: only compare the closed set tail and open set head
 
                 pre = dummy
                 while comparator(pre.next, open_head)<0:  # Step 2: find position
@@ -81,28 +81,28 @@ class Solution:
 
                 closed_tail.next = open_head_next
 
-            else:
+            ____:
                 closed_tail = closed_tail.next
 
 
-        return dummy.next
+        r.. dummy.next
 
-__ __name__=="__main__":
-    import random
-    lst = [ListNode(i) for i in random.sample(xrange(-1000, 1000), 1000)]
+__ __name____"__main__":
+    _______ random
+    lst = [ListNode(i) ___ i __ random.sample(xrange(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
-    for i in range(len(lst)):
+    ___ i __ r..(l..(lst)):
         try:
             lst[i].next = lst[i+1]
         except IndexError: # last
-            lst[i].next = None
+            lst[i].next = N..
 
 
 
     head = Solution().insertionSortList(lst[0])
     current = head
-    for i in range(len(lst)):
+    ___ i __ r..(l..(lst)):
         print current.val
         current = current.next
 

@@ -10,11 +10,11 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 
 class Solution:
@@ -22,14 +22,14 @@ class Solution:
         """
         O((lg n)^2)
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
         h = self.get_height(root)
         h_r = self.get_height(root.right)
-        __ h == h_r+1:
-            return 2**(h-1)-1+1+self.countNodes(root.right)  # left_tree nodes + root + right_tree nodes
-        else:
-            return 2**(h-2)-1+1+self.countNodes(root.left)  # right_tree nodes + root + left_tree nodes
+        __ h __ h_r+1:
+            r.. 2**(h-1)-1+1+self.countNodes(root.right)  # left_tree nodes + root + right_tree nodes
+        ____:
+            r.. 2**(h-2)-1+1+self.countNodes(root.left)  # right_tree nodes + root + left_tree nodes
 
     ___ get_height(self, cur):
         h = 0  # depth starting from 0
@@ -37,7 +37,7 @@ class Solution:
             h += 1
             cur = cur.left
 
-        return h
+        r.. h
 
 
 class Solution_TLE:
@@ -52,11 +52,11 @@ class Solution_TLE:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
         self.get_depth(root)
         self.fanthom(root, 1)
-        return 2**(self.depth-1)-1+self.cnt
+        r.. 2**(self.depth-1)-1+self.cnt
 
     ___ get_depth(self, root):
         self.depth += 1
@@ -65,14 +65,14 @@ class Solution_TLE:
 
     ___ fanthom(self, root, depth):
         __ self.stopped:
-            return
+            r..
 
-        __ not root.left and not root.left:
-            __ self.depth == depth:
+        __ n.. root.left and n.. root.left:
+            __ self.depth __ depth:
                 self.cnt += 1
-            else:
+            ____:
                 self.stopped = True
-            return
+            r..
 
         __ root.left:
             self.fanthom(root.left, depth+1)
@@ -86,11 +86,11 @@ class Solution_TLE:
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return 1+self.countNodes(root.left)+self.countNodes(root.right)
+        r.. 1+self.countNodes(root.left)+self.countNodes(root.right)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     pass

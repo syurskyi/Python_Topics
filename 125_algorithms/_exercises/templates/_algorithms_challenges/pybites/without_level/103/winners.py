@@ -1,4 +1,4 @@
-games_won = dict(sara=0, bob=1, tim=5, julian=3, jim=1)
+games_won = d..(sara=0, bob=1, tim=5, julian=3, jim=1)
 
 
 ___ print_game_stats(games_won=games_won):
@@ -17,5 +17,5 @@ ___ print_game_stats(games_won=games_won):
        (Note that as of Python 3.7 - which we're using atm - dict insert order is retained
         so no sorting is required for this Bite.)
     """
-    for name, score in games_won.items():
-        print(f"{name} has won {score} game{'' __ score == 1 else 's'}")
+    ___ name, score __ games_won.items():
+        print(f"{name} has won {score} game{'' __ score __ 1 ____ 's'}")

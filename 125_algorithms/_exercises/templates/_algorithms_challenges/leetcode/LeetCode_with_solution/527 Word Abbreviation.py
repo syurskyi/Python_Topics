@@ -3,8 +3,8 @@
 premium question
 """
 
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -17,42 +17,42 @@ class Solution:
 
         Need to count the #appearances in the TrieNode
         """
-        hm = defaultdict(list)
-        ret = [None for _ in words]
-        for i, w in enumerate(words):
-            hm[w[0], w[-1], len(w)].append(i)
+        hm = defaultdict(l..)
+        ret = [N.. ___ _ __ words]
+        ___ i, w __ enumerate(words):
+            hm[w[0], w[-1], l..(w)].a..(i)
 
-        TrieNode = lambda: defaultdict(TrieNode)
+        TrieNode = l....: defaultdict(TrieNode)
 
-        for lst in hm.values():
+        ___ lst __ hm.values():
             root = TrieNode()
-            for i in lst:
+            ___ i __ lst:
                 w = words[i]
                 cur = root
-                for c in w:
+                ___ c __ w:
                     cur = cur[c]
                     cur["count"] = cur.get("count", 0) + 1
 
-            for i in lst:
+            ___ i __ lst:
                 w = words[i]
                 prefix_l = 0
                 cur = root
-                for c in w:
+                ___ c __ w:
                     prefix_l += 1
                     cur = cur[c]
-                    __ cur["count"] == 1:
+                    __ cur["count"] __ 1:
                         break
 
                 ret[i] = self.abbrev(w, prefix_l)
 
-        return ret
+        r.. ret
 
     ___ abbrev(self, w, prefix_l):
-        abbrev_l = len(w) - 2 - prefix_l + 1
+        abbrev_l = l..(w) - 2 - prefix_l + 1
         __ abbrev_l > 1:
-            return w[:prefix_l] + str(abbrev_l) + w[-1]
-        return w
+            r.. w[:prefix_l] + str(abbrev_l) + w[-1]
+        r.. w
 
 
-__ __name__ == "__main__":
-    assert Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) == ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]
+__ __name__ __ "__main__":
+    ... Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) __ ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]

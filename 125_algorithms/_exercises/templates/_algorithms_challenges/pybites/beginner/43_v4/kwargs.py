@@ -1,16 +1,16 @@
 ___ get_profile(*args, **kwargs) -> str:
-    name = profession = None
-    for kw in kwargs:
-        __ kw == 'name':
+    name = profession = N..
+    ___ kw __ kwargs:
+        __ kw __ 'name':
             name = kwargs['name']
-        elif kw == 'profession':
+        ____ kw __ 'profession':
             profession = kwargs['profession']
-        else:
+        ____:
             raise TypeError
-    __ name is None:
+    __ name __ N..
         name = 'julian'
-    __ profession is None:
+    __ profession __ N..
         profession = 'programmer'
-    __ type(profession) != str or type(name) != str or len(args) > 0:
+    __ type(profession) != str o. type(name) != str o. l..(args) > 0:
         raise TypeError
-    return f'{name} is a {profession}'
+    r.. f'{name} is a {profession}'

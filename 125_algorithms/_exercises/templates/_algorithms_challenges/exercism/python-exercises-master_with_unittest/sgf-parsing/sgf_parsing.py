@@ -1,25 +1,25 @@
 class SgfTree(object):
-    ___ __init__(self, properties=None, children_ N..
-        self.properties = properties or {}
-        self.children = children or []
+    ___ __init__(self, properties=N.., children_ N..
+        self.properties = properties o. {}
+        self.children = children o. []
 
     ___ __eq__(self, other):
-        __ not isinstance(other, SgfTree):
-            return False
-        for k, v in self.properties.items():
-            __ k not in other.properties:
-                return False
+        __ n.. isi..(other, SgfTree):
+            r.. False
+        ___ k, v __ self.properties.items():
+            __ k n.. __ other.properties:
+                r.. False
             __ other.properties[k] != v:
-                return False
-        for k in other.properties.keys():
-            __ k not in self.properties:
-                return False
-        __ len(self.children) != len(other.children):
-            return False
-        for a, b in zip(self.children, other.children):
+                r.. False
+        ___ k __ other.properties.keys():
+            __ k n.. __ self.properties:
+                r.. False
+        __ l..(self.children) != l..(other.children):
+            r.. False
+        ___ a, b __ zip(self.children, other.children):
             __ a != b:
-                return False
-        return True
+                r.. False
+        r.. True
 
 
 ___ parse(input_string):

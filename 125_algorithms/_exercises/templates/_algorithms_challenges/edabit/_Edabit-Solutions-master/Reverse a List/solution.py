@@ -1,5 +1,5 @@
 ___ reverse(lst):
-    return lst[::-1]
+    r.. lst[::-1]
 
 
 ___ test():

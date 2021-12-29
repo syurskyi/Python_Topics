@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from accents import filter_accents
+____ accents _______ filter_accents
 
 # texts taken from:
 # https://losviajesdedomi.com/las-15-ciudades-mas-bonitas-de-espana/
@@ -47,5 +47,5 @@ expected = (
 ___ test_filter_accents(text, expected):
     # get rid of duplicates and sort results
     result = filter_accents(text)
-    actual = sorted(list(set(result)))
-    assert actual == expected
+    actual = s..(l..(set(result)))
+    ... actual __ expected

@@ -1,16 +1,16 @@
 ___ string_suffix(str_):
 	sumSuffix = 0
-	for n in range(len(str_)):
+	___ n __ r..(l..(str_)):
 		sumSuffix += stringMatch(str_, str_[n:])
-	return sumSuffix
+	r.. sumSuffix
 
 ___ stringMatch(str_,toMatch):
 	res = 0
-	for n in range(min(len(str_),len(toMatch))):
-		__ str_[n] == toMatch[n]:
+	___ n __ r..(m..(l..(str_),l..(toMatch))):
+		__ str_[n] __ toMatch[n]:
 			res += 1
-		else:
+		____:
 			break
-	return res
+	r.. res
 
 print(string_suffix('ababaa'))

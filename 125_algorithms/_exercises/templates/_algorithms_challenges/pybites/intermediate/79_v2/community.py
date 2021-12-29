@@ -1,7 +1,7 @@
-import csv
-import pandas as pd
-from io import StringIO
-import requests
+_______ csv
+_______ pandas as pd
+____ io _______ StringIO
+_______ requests
 
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
@@ -14,7 +14,7 @@ ___ get_csv():
     response =requests.get(CSV_URL)
 
 
-    return response.text
+    r.. response.text
 
 
 
@@ -39,13 +39,13 @@ ___ create_user_bar_chart(content):
     data = pd.read_csv(StringIO(content))
     
 
-    max_length = data.tz.str.len().max()
+    max_length = data.tz.str.l..().max()
 
     counts = data.tz.value_counts().sort_index()
 
 
 
-    for tz,count  in counts.items():
+    ___ tz,count  __ counts.items():
         print(f"{tz:<{max_length + 1}}| {'+' * count}")
 
 
@@ -57,7 +57,7 @@ ___ create_user_bar_chart(content):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     content = get_csv()

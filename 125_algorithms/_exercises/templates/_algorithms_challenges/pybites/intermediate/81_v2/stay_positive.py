@@ -1,4 +1,4 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
 Tweet = namedtuple('Tweet', 'text polarity')
 
@@ -30,9 +30,9 @@ tweets = [
 ___ filter_tweets_on_polarity(tweets, keep_positive=True):
     """Filter the tweets by polarity score, receives keep_positive bool which
        determines what to keep. Returns a list of filtered tweets."""
-    func   = lambda x: x > 0 __ keep_positive else x < 0
+    func   = l.... x: x > 0 __ keep_positive ____ x < 0
 
-    return [tweet for tweet in tweets __ func(tweet.polarity)]
+    r.. [tweet ___ tweet __ tweets __ func(tweet.polarity)]
 
 
 ___ order_tweets_by_polarity(tweets, positive_highest=True):
@@ -40,4 +40,4 @@ ___ order_tweets_by_polarity(tweets, positive_highest=True):
        the order. Returns a list of ordered tweets."""
 
 
-    return sorted(tweets,key=lambda x:x[1],reverse=True __ positive_highest else False)
+    r.. s..(tweets,key=l.... x:x[1],reverse=True __ positive_highest ____ False)

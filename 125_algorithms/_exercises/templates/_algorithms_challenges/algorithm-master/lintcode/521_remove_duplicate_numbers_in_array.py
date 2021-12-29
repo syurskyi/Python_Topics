@@ -9,16 +9,16 @@ class Solution:
     """
     ___ deduplication(self, nums):
         ans = 0
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
         exists = set()
-        for i in range(len(nums)):
-            __ nums[i] not in exists:
+        ___ i __ r..(l..(nums)):
+            __ nums[i] n.. __ exists:
                 exists.add(nums[i])
                 ans += 1
 
-        return ans
+        r.. ans
 
 
 """
@@ -32,16 +32,16 @@ class Solution:
     """
     ___ deduplication(self, nums):
         ans = 0
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
         nums.sort()
 
         # for `nums[0]`
         ans = 1
-        for i in range(1, len(nums)):
+        ___ i __ r..(1, l..(nums)):
             __ nums[i - 1] != nums[i]:
                 nums[ans] = nums[i]
                 ans += 1
 
-        return ans
+        r.. ans

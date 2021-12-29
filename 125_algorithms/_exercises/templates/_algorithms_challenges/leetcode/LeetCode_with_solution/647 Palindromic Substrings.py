@@ -17,7 +17,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 Note:
 The input string length won't exceed 1000.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -34,26 +34,26 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        F = defaultdict(lambda: defaultdict(bool))
-        n = len(s)
-        for i in range(n):
+        F = defaultdict(l....: defaultdict(bool))
+        n = l..(s)
+        ___ i __ r..(n):
             F[i][i] = True
             F[i][i+1] = True
 
-        for i in range(n-1, -1, -1):
-            for j in range(i+2, n+1):
-                __ s[i] == s[j-1]:
+        ___ i __ r..(n-1, -1, -1):
+            ___ j __ r..(i+2, n+1):
+                __ s[i] __ s[j-1]:
                     F[i][j] = F[i+1][j-1]
-                else:
+                ____:
                     F[i][j] = False
 
-        return sum(
+        r.. s..(
             1
-            for i in range(n)
-            for j in range(i+1, n+1)
+            ___ i __ r..(n)
+            ___ j __ r..(i+1, n+1)
             __ F[i][j]
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().countSubstrings("aaa") == 6
+__ __name__ __ "__main__":
+    ... Solution().countSubstrings("aaa") __ 6

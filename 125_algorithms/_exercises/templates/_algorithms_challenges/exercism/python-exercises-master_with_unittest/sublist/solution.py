@@ -5,26 +5,26 @@ UNEQUAL = 3
 
 
 ___ check_lists(l1, l2):
-    __ l1 == l2:
-        return EQUAL
+    __ l1 __ l2:
+        r.. EQUAL
     __ contains(l1, l2):
-        return SUPERLIST
+        r.. SUPERLIST
     __ contains(l2, l1):
-        return SUBLIST
-    return UNEQUAL
+        r.. SUBLIST
+    r.. UNEQUAL
 
 
 ___ contains(l1, l2):
-    __ not l2:
-        return True
-    __ len(l2) > len(l1):
-        return False
-    for i in range(len(l1) - len(l2) + 1):
+    __ n.. l2:
+        r.. True
+    __ l..(l2) > l..(l1):
+        r.. False
+    ___ i __ r..(l..(l1) - l..(l2) + 1):
         __ l1[i] != l2[0]:
             continue
-        for j in range(len(l2)):
+        ___ j __ r..(l..(l2)):
             __ l1[i + j] != l2[j]:
                 break
-        else:
-            return True
-    return False
+        ____:
+            r.. True
+    r.. False

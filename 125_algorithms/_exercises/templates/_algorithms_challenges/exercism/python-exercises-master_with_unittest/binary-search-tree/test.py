@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from binary_search_tree import BinarySearchTree, TreeNode
+____ binary_search_tree _______ BinarySearchTree, TreeNode
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -8,20 +8,20 @@ from binary_search_tree import BinarySearchTree, TreeNode
 class BinarySearchTreeTest(unittest.TestCase):
 
     ___ test_data_is_retained(self):
-        expected = TreeNode('4', None, None)
+        expected = TreeNode('4', N.., N..)
         self.assertTreeEqual(BinarySearchTree(['4']).data(), expected)
 
     # Test inserting data at proper node
     ___ test_smaller_data_at_left_node(self):
-        expected = TreeNode('4', TreeNode('2', None, None), None)
+        expected = TreeNode('4', TreeNode('2', N.., N..), N..)
         self.assertTreeEqual(BinarySearchTree(['4', '2']).data(), expected)
 
     ___ test_same_number_at_left_node(self):
-        expected = TreeNode('4', TreeNode('4', None, None), None)
+        expected = TreeNode('4', TreeNode('4', N.., N..), N..)
         self.assertTreeEqual(BinarySearchTree(['4', '4']).data(), expected)
 
     ___ test_greater_number_at_right_node(self):
-        expected = TreeNode('4', None, TreeNode('5', None, None))
+        expected = TreeNode('4', N.., TreeNode('5', N.., N..))
         self.assertTreeEqual(BinarySearchTree(['4', '5']).data(), expected)
 
     ___ test_can_create_complex_tree(self):
@@ -29,13 +29,13 @@ class BinarySearchTreeTest(unittest.TestCase):
             '4',
             TreeNode(
                 '2',
-                TreeNode('1', None, None),
-                TreeNode('3', None, None)
+                TreeNode('1', N.., N..),
+                TreeNode('3', N.., N..)
             ),
             TreeNode(
                 '6',
-                TreeNode('5', None, None),
-                TreeNode('7', None, None)
+                TreeNode('5', N.., N..),
+                TreeNode('7', N.., N..)
             )
         )
         self.assertTreeEqual(
@@ -81,19 +81,19 @@ class BinarySearchTreeTest(unittest.TestCase):
         # Compare left tree nodes
         __ tree_one.left and tree_two.left:
             self.compare_tree(tree_one.left, tree_two.left)
-        elif tree_one.left is None and tree_two.left is None:
+        ____ tree_one.left __ N.. and tree_two.left __ N..
             pass
-        else:
+        ____:
             raise AssertionError
 
         # Compare right tree nodes
         __ tree_one.right and tree_two.right:
             self.compare_tree(tree_one.right, tree_two.right)
-        elif tree_one.right is None and tree_two.right is None:
+        ____ tree_one.right __ N.. and tree_two.right __ N..
             pass
-        else:
+        ____:
             raise AssertionError
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

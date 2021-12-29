@@ -22,22 +22,22 @@ class Solution:
         >>> s.shortestDistance(maze, [0, 4], [3, 2])
         -1
         """
-        __ not maze or not maze[0]:
-            return -1
+        __ n.. maze o. n.. maze[0]:
+            r.. -1
 
-        m, n = len(maze), len(maze[0])
+        m, n = l..(maze), l..(maze[0])
         sx, sy = start
         tx, ty = destination
         queue = [(sx, sy)]
         distance = {(sx, sy): 0}
 
-        for x, y in queue:
-            for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        ___ x, y __ queue:
+            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
                 _step = 0
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] == 0:
+                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
                     _step += 1
@@ -45,23 +45,23 @@ class Solution:
                 _x -= dx
                 _y -= dy
 
-                __ ((_x, _y) in distance and
+                __ ((_x, _y) __ distance and
                     distance[x, y] + _step >= distance[_x, _y]):
                     continue
 
                 distance[_x, _y] = distance[x, y] + _step
 
-                __ _x == tx and _y == ty:
-                    return distance[_x, _y]
+                __ _x __ tx and _y __ ty:
+                    r.. distance[_x, _y]
 
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
 
-        return -1
-
-
+        r.. -1
 
 
-import heapq
+
+
+_______ heapq
 
 
 class Solution2:
@@ -88,10 +88,10 @@ class Solution2:
         >>> s.shortestDistance(maze, [0, 4], [3, 2])
         -1
         """
-        __ not maze or not maze[0]:
-            return -1
+        __ n.. maze o. n.. maze[0]:
+            r.. -1
 
-        m, n = len(maze), len(maze[0])
+        m, n = l..(maze), l..(maze[0])
         sx, sy = start
         tx, ty = destination
         heap = [(sx, sy)]
@@ -100,11 +100,11 @@ class Solution2:
         while heap:
             x, y = heapq.heappop(heap)
 
-            for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] == 0:
+                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
 
@@ -113,13 +113,13 @@ class Solution2:
 
                 _step = distance[x, y] + abs(_x - x) + abs(_y - y)
 
-                __ (_x, _y) in distance and _step >= distance[_x, _y]:
+                __ (_x, _y) __ distance and _step >= distance[_x, _y]:
                     continue
 
-                __ _x == tx and _y == ty:
-                    return _step
+                __ _x __ tx and _y __ ty:
+                    r.. _step
 
                 distance[_x, _y] = _step
                 heapq.heappush(heap, (_x, _y))
 
-        return -1
+        r.. -1

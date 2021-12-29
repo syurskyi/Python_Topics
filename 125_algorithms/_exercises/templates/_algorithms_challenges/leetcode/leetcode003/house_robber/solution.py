@@ -16,17 +16,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        t = [0 for i in range(n + 1)]
-        __ n == 0:
-            return t[n]
+        n = l..(nums)
+        t = [0 ___ i __ r..(n + 1)]
+        __ n __ 0:
+            r.. t[n]
         t[1] = nums[0]
         __ n <= 1:
-            return t[n]
+            r.. t[n]
         t[2] = max(nums[:2])
-        for i in range(3, n + 1):
+        ___ i __ r..(3, n + 1):
             t[i] = max(t[i - 2] + nums[i - 1], t[i - 1])
-        return t[n]
+        r.. t[n]
 
 
 a1 = [4, 1, 6, 10, 5, 13, 2, 7]

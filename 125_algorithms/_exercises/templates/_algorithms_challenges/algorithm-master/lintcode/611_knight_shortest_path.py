@@ -26,36 +26,36 @@ class Solution:
     @return: the shortest path
     """
     ___ shortestPath(self, G, S, T):
-        __ not G or not S or not T:
-            return -1
+        __ n.. G o. n.. S o. n.. T:
+            r.. -1
 
         INFINITY = float('inf')
-        m, n = len(G), len(G[0])
-        min_steps = [[INFINITY] * n for _ in range(m)]
+        m, n = l..(G), l..(G[0])
+        min_steps = [[INFINITY] * n ___ _ __ r..(m)]
 
         queue = [S]
-        _queue = None
+        _queue = N..
         _x = _y = steps = 0
 
         while queue:
-            _queue = []
+            _queue    # list
             steps += 1
 
-            for P in queue:
-                for dx, dy in self.V:
+            ___ P __ queue:
+                ___ dx, dy __ self.V:
                     _x = P.x + dx
                     _y = P.y + dy
 
                     __ (0 <= _x < m and 0 <= _y < n and
-                        not G[_x][_y] and
+                        n.. G[_x][_y] and
                         steps < min_steps[_x][_y]):
 
-                        __ _x == T.x and _y == T.y:
-                            return steps
+                        __ _x __ T.x and _y __ T.y:
+                            r.. steps
 
                         min_steps[_x][_y] = steps
-                        _queue.append(Point(_x, _y))
+                        _queue.a..(Point(_x, _y))
 
             queue = _queue
 
-        return -1
+        r.. -1

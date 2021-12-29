@@ -1,20 +1,20 @@
-import functools
-from typing import Iterable, Set, Any
+_______ functools
+____ typing _______ Iterable, Set, Any
 
 
 ___ intersection(*args: Iterable) -> Set[Any]:
 
     
-    result = [set(arg) for arg in args __ arg]
+    result = [set(arg) ___ arg __ args __ arg]
 
-    __ len(result) == 0:
-        return set()
-    elif len(result) == 1:
-        return result[0]
+    __ l..(result) __ 0:
+        r.. set()
+    ____ l..(result) __ 1:
+        r.. result[0]
 
 
 
-    return functools.reduce(lambda x,y: x & y,result)
+    r.. functools.reduce(l.... x,y: x & y,result)
 
 
 

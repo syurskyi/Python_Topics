@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from isbn_verifier import verify
+____ isbn_verifier _______ verify
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.2.0
@@ -50,5 +50,5 @@ class IsbnVerifierTests(unittest.TestCase):
         self.assertIs(verify(''), False)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

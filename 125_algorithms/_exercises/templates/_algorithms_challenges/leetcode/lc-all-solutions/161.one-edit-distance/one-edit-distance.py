@@ -5,10 +5,10 @@ class Solution(object):
     :type t: str
     :rtype: bool
     """
-    __ len(s) >= len(t):
+    __ l..(s) >= l..(t):
       i = 0
-      while i < len(t) and s[i] == t[i]:
+      while i < l..(t) and s[i] __ t[i]:
         i += 1
-      return s != t and (s[i + 1:] == t[i:] __ len(s) != len(t) else s[i + 1:] == t[i + 1:])
-    else:
-      return self.isOneEditDistance(t, s)
+      r.. s != t and (s[i + 1:] __ t[i:] __ l..(s) != l..(t) ____ s[i + 1:] __ t[i + 1:])
+    ____:
+      r.. self.isOneEditDistance(t, s)

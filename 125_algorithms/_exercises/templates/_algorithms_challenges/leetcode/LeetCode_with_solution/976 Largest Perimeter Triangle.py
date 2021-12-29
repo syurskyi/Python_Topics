@@ -28,7 +28,7 @@ Note:
 3 <= A.length <= 10000
 1 <= A[i] <= 10^6
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -37,8 +37,8 @@ class Solution:
         sort and scanning from right
         """
         A.sort()
-        for i in range(len(A) - 3, -1, -1):
+        ___ i __ r..(l..(A) - 3, -1, -1):
             __ A[i] + A[i+1] > A[i+2]:
-                return sum(A[i:i+3])
-        else:
-            return 0
+                r.. s..(A[i:i+3])
+        ____:
+            r.. 0

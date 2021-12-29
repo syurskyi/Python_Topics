@@ -13,16 +13,16 @@ class Solution(object):
         start, end = 1, x
         while start <= end:
             mid = (start+end)/2
-            __ mid*mid == x:
-                return mid
-            elif mid*mid < x:
+            __ mid*mid __ x:
+                r.. mid
+            ____ mid*mid < x:
                 start = mid+1
-            else:
+            ____:
                 end = mid-1
-        return start __ start == 0 else start-1
+        r.. start __ start __ 0 ____ start-1
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

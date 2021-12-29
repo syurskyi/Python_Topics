@@ -1,23 +1,23 @@
-from unittest.mock import patch
-import random
+____ unittest.mock _______ patch
+_______ random
 
-import pytest
+_______ pytest
 
-from guess import get_random_number, Game
+____ guess _______ get_random_number, Game
 
 
 @patch.object(random, 'randint')
 ___ test_get_random_number(m):
     m.return_value = 17
-    assert get_random_number() == 17
+    ... get_random_number() __ 17
 
 
-@patch("builtins.input", side_effect=[11, '12', 'Bob', 12, 5, -1, 21, 7, None])
+@patch("builtins.input", side_effect=[11, '12', 'Bob', 12, 5, -1, 21, 7, N..])
 ___ test_guess(inp):
     game = Game()
     # good
-    assert game.guess() == 11
-    assert game.guess() == 12
+    ... game.guess() __ 11
+    ... game.guess() __ 12
     # not a number
     with pytest.raises(ValueError):
         game.guess()
@@ -25,14 +25,14 @@ ___ test_guess(inp):
     with pytest.raises(ValueError):
         game.guess()
     # good
-    assert game.guess() == 5
+    ... game.guess() __ 5
     # out of range (x2)
     with pytest.raises(ValueError):
         game.guess()
     with pytest.raises(ValueError):
         game.guess()
     # good
-    assert game.guess() == 7
+    ... game.guess() __ 7
     # hitting enter / no input
     with pytest.raises(ValueError):
         game.guess()
@@ -44,17 +44,17 @@ ___ test_validate_guess(capfd):
     game = Game()
     game._answer = 2
 
-    assert not game._validate_guess(1)
+    ... n.. game._validate_guess(1)
     out, _ = capfd.readouterr()
-    assert out.rstrip() == '1 is too low'
+    ... out.rstrip() __ '1 is too low'
 
-    assert not game._validate_guess(3)
+    ... n.. game._validate_guess(3)
     out, _ = capfd.readouterr()
-    assert out.rstrip() == '3 is too high'
+    ... out.rstrip() __ '3 is too high'
 
-    assert game._validate_guess(2)
+    ... game._validate_guess(2)
     out, _ = capfd.readouterr()
-    assert out.rstrip() == '2 is correct!'
+    ... out.rstrip() __ '2 is correct!'
 
 
 @patch("builtins.input", side_effect=[4, 22, 9, 4, 6])
@@ -63,25 +63,25 @@ ___ test_game_win(inp, capfd):
     game._answer = 6
 
     game()
-    assert game._win is True
+    ... game._win __ True
 
     out, _ = capfd.readouterr()
     expected = ['4 is too low', 'Number not in range',
                 '9 is too high', 'Already guessed',
                 '6 is correct!', 'It took you 3 guesses']
 
-    output = [line.strip() for line in out.split('\n') __ line.strip()]
-    for line, exp in zip(output, expected):
-        assert line == exp
+    output = [line.strip() ___ line __ out.split('\n') __ line.strip()]
+    ___ line, exp __ zip(output, expected):
+        ... line __ exp
 
 
-@patch("builtins.input", side_effect=[None, 5, 9, 14, 11, 12])
+@patch("builtins.input", side_effect=[N.., 5, 9, 14, 11, 12])
 ___ test_game_lose(inp, capfd):
     game = Game()
     game._answer = 13
 
     game()
-    assert game._win is False
+    ... game._win __ False
 
     out, _ = capfd.readouterr()
     expected = ['Please enter a number', '5 is too low',
@@ -89,6 +89,6 @@ ___ test_game_lose(inp, capfd):
                 '11 is too low', '12 is too low',
                 'Guessed 5 times, answer was 13']
 
-    output = [line.strip() for line in out.split('\n') __ line.strip()]
-    for line, exp in zip(output, expected):
-        assert line == exp
+    output = [line.strip() ___ line __ out.split('\n') __ line.strip()]
+    ___ line, exp __ zip(output, expected):
+        ... line __ exp

@@ -1,21 +1,21 @@
 class MyQueue:
     ___ __init__(self, ):
-        self.stack1 = []
-        self.stack2 = []
+        self.stack1    # list
+        self.stack2    # list
 
     """
     @param: element: An integer
     @return: nothing
     """
     ___ push(self, element):
-        self.stack1.append(element)
+        self.stack1.a..(element)
 
     """
     @return: An integer
     """
     ___ pop(self, ):
         self.top()
-        return self.stack2.pop()
+        r.. self.stack2.pop()
 
     """
     @return: An integer
@@ -27,7 +27,7 @@ class MyQueue:
         # step2/ stack1: [4, 5, 6], stack2: [3, 2] // 1
         # step3/ stack1: [4, 5, 6], stack2: [] // 2, 3
         # step4/ stack1: [7, 8], stack2: [6, 5, 4]
-        __ not self.stack2:
+        __ n.. self.stack2:
             while self.stack1:
-                self.stack2.append(self.stack1.pop())
-        return self.stack2[-1]
+                self.stack2.a..(self.stack1.pop())
+        r.. self.stack2[-1]

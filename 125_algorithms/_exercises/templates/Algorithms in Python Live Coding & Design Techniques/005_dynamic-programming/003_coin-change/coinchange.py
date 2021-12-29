@@ -57,7 +57,7 @@ __ ___ __ '__main__':
     min_number  min_coins(coins, n, total)
 
     table  [[0 ___ x __ ra__(n+1)] ___ x __ ra__(total+1)]
-    min  min_coins_top_down(coins, n, total, table)
+    m..  min_coins_top_down(coins, n, total, table)
 
     min_no  min_coins_bottom_up(coins, n, total)
 

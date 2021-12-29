@@ -30,19 +30,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ root is None:
-            return True
-        __ root.left is None and root.right is None:
-            return True
-        __ root.left is not None and root.right is not None:
-            return self._isSymmetric(root.left, root.right)
-        return False
+        __ root __ N..
+            r.. True
+        __ root.left __ N.. and root.right __ N..
+            r.. True
+        __ root.left __ n.. N.. and root.right __ n.. N..
+            r.. self._isSymmetric(root.left, root.right)
+        r.. False
 
     ___ _isSymmetric(self, left, right):
-        __ left is None and right is None:
-            return True
-        __ left is not None and right is not None:
-            return (left.val == right.val and
+        __ left __ N.. and right __ N..
+            r.. True
+        __ left __ n.. N.. and right __ n.. N..
+            r.. (left.val __ right.val and
                     self._isSymmetric(left.left, right.right) and
                     self._isSymmetric(left.right, right.left))
-        return False
+        r.. False

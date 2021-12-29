@@ -5,16 +5,16 @@ class Solution:
     @return: An integer
     """
     ___ backPackVI(self, A, target):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for i in range(1, target + 1):
-            for j in range(n):
+        ___ i __ r..(1, target + 1):
+            ___ j __ r..(n):
                 __ i >= A[j]:
                     dp[i] += dp[i - A[j]]
 
-        return dp[target]
+        r.. dp[target]

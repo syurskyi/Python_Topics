@@ -1,25 +1,25 @@
-from csv import DictReader
-import os
-from urllib.request import urlretrieve
-from collections import Counter
+____ csv _______ DictReader
+_______ os
+____ urllib.request _______ urlretrieve
+____ collections _______ Counter
 
 TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.join(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ not os.path.isfile(DATA):
+__ n.. os.path.isfile(DATA):
     urlretrieve(f'{S3}/{LOGS}', DATA)
 
 
 class BiteStats:
 
-    ___ _load_data(self, data) -> list:
+    ___ _load_data(self, data) -> l..:
 
 
         with open(data,'r') as f:
             csv_reader = DictReader(f,delimiter=',')
 
-            for row in csv_reader:
+            ___ row __ csv_reader:
                 yield row
 
 
@@ -28,16 +28,16 @@ class BiteStats:
 
 
     ___ __init__(self, data=DATA):
-        self.rows = list(self._load_data(data))
+        self.rows = l..(self._load_data(data))
 
     @property
     ___ number_bites_accessed(self) -> int:
         """Get the number of unique Bites accessed"""
         bites = set()
-        for row in self.rows:
+        ___ row __ self.rows:
             bites.add(row['bite'])
 
-        return len(bites)
+        r.. l..(bites)
 
 
 
@@ -47,10 +47,10 @@ class BiteStats:
     ___ number_bites_resolved(self) -> int:
         """Get the number of unique Bites resolved (completed=True)"""
         completed = set()
-        for row in self.rows:
-            __ row['completed'] == 'True':
+        ___ row __ self.rows:
+            __ row['completed'] __ 'True':
                 completed.add(row['bite'])
-        return len(completed)
+        r.. l..(completed)
 
 
 
@@ -58,10 +58,10 @@ class BiteStats:
     ___ number_users_active(self) -> int:
         """Get the number of unique users in the data set"""
         users = set()
-        for row in self.rows:
+        ___ row __ self.rows:
             users.add(row['user'])
 
-        return len(users)
+        r.. l..(users)
             
 
     @property
@@ -70,10 +70,10 @@ class BiteStats:
            one or more Bites"""
         users = set()
 
-        for row in filter(lambda row: row['completed'] == 'True',self.rows):
+        ___ row __ filter(l.... row: row['completed'] __ 'True',self.rows):
             users.add(row['user'])
 
-        return len(users)
+        r.. l..(users)
 
 
 
@@ -83,21 +83,21 @@ class BiteStats:
            (= in most rows)"""
 
 
-        return Counter(row['bite'] for row in self.rows).most_common(1)[0][0]
+        r.. Counter(row['bite'] ___ row __ self.rows).most_common(1)[0][0]
 
     @property
     ___ top_user_by_bites_completed(self) -> str:
         """Get the user that completed the most Bites"""
 
-        return Counter(row['user'] for row in filter(lambda row: row['completed'] == 'True',self.rows)).most_common(1)[0][0]
+        r.. Counter(row['user'] ___ row __ filter(l.... row: row['completed'] __ 'True',self.rows)).most_common(1)[0][0]
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     l = BiteStats(DATA)
 
-    print(list(l.rows))
+    print(l..(l.rows))
     
 
 

@@ -27,7 +27,7 @@ Explantion: (-2) ^ 2 = 4
 Note:
 0 <= N <= 10^9
 """
-from collections import deque
+____ collections _______ deque
 
 
 class Solution:
@@ -59,9 +59,9 @@ class Solution:
             N -= r
             N //= -2
 
-        return "".join(map(str, ret)) or "0"
+        r.. "".join(map(str, ret)) o. "0"
 
 
-__ __name__ == "__main__":
-    assert Solution().baseNeg2(3) == "111"
-    assert Solution().baseNeg2(4) == "100"
+__ __name__ __ "__main__":
+    ... Solution().baseNeg2(3) __ "111"
+    ... Solution().baseNeg2(4) __ "100"

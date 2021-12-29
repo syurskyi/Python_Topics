@@ -13,17 +13,17 @@ class Vector2D(object):
     :rtype: int
     """
     self.y += 1
-    return self.m[self.x][self.y - 1]
+    r.. self.m[self.x][self.y - 1]
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
     m = self.m
-    while self.x < len(m) and self.y >= len(m[self.x]):
+    while self.x < l..(m) and self.y >= l..(m[self.x]):
       self.x += 1
       self.y = 0
-    return self.x < len(m)
+    r.. self.x < l..(m)
 
 # Your Vector2D object will be instantiated and called as such:
 # i, v = Vector2D(vec2d), []

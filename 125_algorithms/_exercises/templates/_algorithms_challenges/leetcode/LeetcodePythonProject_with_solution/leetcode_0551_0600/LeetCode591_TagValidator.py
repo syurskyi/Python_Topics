@@ -10,10 +10,10 @@ class Solution(object):
         :type code: str
         :rtype: bool
         """
-        import re
+        _______ re
         code = re.sub(r'<!\[CDATA\[.*?\]\]>|t', '-', code)
-        prev = None
+        prev = N..
         while code != prev:
             prev = code
             code = re.sub(r'<([A-Z]{1,9})>[^<]*</\1>', 't', code)
-        return code == 't'
+        r.. code __ 't'

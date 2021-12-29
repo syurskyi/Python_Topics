@@ -1,10 +1,10 @@
-from difflib import SequenceMatcher
-import os
-from urllib.request import urlretrieve
+____ difflib _______ SequenceMatcher
+_______ os
+____ urllib.request _______ urlretrieve
 
 TMP = os.getenv("TMP", "/tmp")
 DICTIONARY = os.path.join(TMP, 'dictionary.txt')
-__ not os.path.isfile(DICTIONARY):
+__ n.. os.path.isfile(DICTIONARY):
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY
@@ -14,27 +14,27 @@ __ not os.path.isfile(DICTIONARY):
 ___ load_words():
     'return dict of words in DICTIONARY'
     with open(DICTIONARY) as f:
-        return {word.strip().lower() for word in f.readlines()}
+        r.. {word.strip().lower() ___ word __ f.readlines()}
 
 
-___ suggest_word(misspelled_word: str, words: set = None) -> str:
+___ suggest_word(misspelled_word: str, words: set = N..) -> str:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
-    __ words is None:
+    __ words __ N..
         words = load_words()
     
 
-    return max(words,key=lambda x:SequenceMatcher(None,misspelled_word,x).ratio())
-    best_word = None
+    r.. max(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio())
+    best_word = N..
     highest_ratio = float("-inf")
-    for word in words:
-        ratio = SequenceMatcher(None,misspelled_word,word).ratio()
+    ___ word __ words:
+        ratio = SequenceMatcher(N..,misspelled_word,word).ratio()
         __ ratio >highest_ratio:
             highest_ratio = ratio
             best_word = word
 
 
-    return best_word 
+    r.. best_word
 
 
 

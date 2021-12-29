@@ -15,26 +15,26 @@ class Solution:
         """
         ans = 0
 
-        __ not intervals:
-            return ans
+        __ n.. intervals:
+            r.. ans
 
-        time = []
+        time    # list
 
-        for x in intervals:
-            time.append((x.start, True))
-            time.append((x.end, False))
+        ___ x __ intervals:
+            time.a..((x.start, True))
+            time.a..((x.end, False))
 
         time.sort()
 
         cnt = 0
 
-        for t, is_start in time:
+        ___ t, is_start __ time:
             __ is_start:
                 cnt += 1
-            else:
+            ____:
                 cnt -= 1
 
             __ cnt > ans:
                 ans = cnt
 
-        return ans
+        r.. ans

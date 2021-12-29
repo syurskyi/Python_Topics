@@ -6,29 +6,29 @@ Created on Apr 2, 2017
 
 class Solution(object):
     ___ lexicalOrder(self, n):
-        res = []
+        res    # list
         curr = 1
-        for _ in range(n):
-            res.append(curr)
+        ___ _ __ r..(n):
+            res.a..(curr)
             __ curr*10 <= n:
                 curr *= 10
-            elif curr%10 != 9 and curr+1 <= n:
+            ____ curr%10 != 9 and curr+1 <= n:
                 curr += 1
-            else:
-                while (curr//10)%10 == 9:
+            ____:
+                while (curr//10)%10 __ 9:
                     curr //= 10
                 curr = curr//10+1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             113,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % n)
             result = self.lexicalOrder(n)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

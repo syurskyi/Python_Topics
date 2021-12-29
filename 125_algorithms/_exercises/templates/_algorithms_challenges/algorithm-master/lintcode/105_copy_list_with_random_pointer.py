@@ -36,7 +36,7 @@ class Solution:
                 head.random = N[head.random]
             head = head.next
 
-        return dummy.next
+        r.. dummy.next
 
 
 """
@@ -66,11 +66,11 @@ class Solution:
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         tail = head
-        node = None
+        node = N..
         while tail:
             node = RandomListNode(tail.label)
             node.random = tail.random
@@ -89,4 +89,4 @@ class Solution:
             tail.next = tail.next.next
             tail = tail.next
 
-        return node
+        r.. node

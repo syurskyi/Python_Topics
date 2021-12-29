@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import error_handling as er
+_______ error_handling as er
 
 
 class FileLike(object):
@@ -20,7 +20,7 @@ class FileLike(object):
 
     ___ __enter__(self):
         self.open()
-        return self
+        r.. self
 
     ___ __exit__(self, *args):
         self.close()
@@ -81,8 +81,8 @@ class ErrorHandlingTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -18,15 +18,15 @@ class Solution:
         ]
         d = {
             e: i
-            for i, v in enumerate(rows)
-            for e in v
+            ___ i, v __ enumerate(rows)
+            ___ e __ v
         }
-        return [
+        r.. [
             w
-            for w in words
-            __ all(d[w[0].lower()] == d[l.lower()] for l in w)
+            ___ w __ words
+            __ a..(d[w[0].lower()] __ d[l.lower()] ___ l __ w)
         ]
 
 
-__ __name__ == "__main__":
-    assert Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) == ["Alaska", "Dad"]
+__ __name__ __ "__main__":
+    ... Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) __ ["Alaska", "Dad"]

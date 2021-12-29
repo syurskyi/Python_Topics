@@ -4,6 +4,6 @@ class Solution(object):
     :type nums: List[int]
     :rtype: str
     """
-    __ len(nums) < 3:
-      return "/".join(map(str, nums))
-    return "%s/(%s)" % (nums[0], "/".join(map(str, nums[1:])))
+    __ l..(nums) < 3:
+      r.. "/".join(map(str, nums))
+    r.. "%s/(%s)" % (nums[0], "/".join(map(str, nums[1:])))

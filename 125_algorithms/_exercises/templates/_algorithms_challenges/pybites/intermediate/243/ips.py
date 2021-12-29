@@ -1,9 +1,9 @@
-import json
-from contextlib import suppress
-from dataclasses import dataclass
-from ipaddress import AddressValueError, IPv4Address, IPv4Network
-from pathlib import Path
-from typing import List
+_______ json
+____ contextlib _______ suppress
+____ dataclasses _______ dataclass
+____ ipaddress _______ AddressValueError, IPv4Address, IPv4Network
+____ pathlib _______ Path
+____ typing _______ List
 
 
 @dataclass(frozen=True)
@@ -18,7 +18,7 @@ class ServiceIPRange:
     cidr: IPv4Network
 
     ___ __str__(self):
-        return (f"{self.cidr} is allocated to the {self.service} "
+        r.. (f"{self.cidr} is allocated to the {self.service} "
                 f"service in the {self.region} region")
 
 
@@ -38,13 +38,13 @@ ___ parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
                 region=prefix["region"],
                 cidr=IPv4Network(prefix["ip_prefix"]),
             )
-            for prefix in prefixes
+            ___ prefix __ prefixes
         ]
-    return ipv4_service_ranges
+    r.. ipv4_service_ranges
 
 
 ___ get_aws_service_range(address: str,
-                          service_ranges: list) -> List[ServiceIPRange]:
+                          service_ranges: l..) -> List[ServiceIPRange]:
     """
     Return a list of ServiceIPRange objects representing all AWS public
     IP ranges that contain `address`. Raise a ValueError if `address`
@@ -55,5 +55,5 @@ ___ get_aws_service_range(address: str,
     except AddressValueError:
         raise ValueError("Address must be a valid IPv4 address")
 
-    return [range_ for range_ in service_ranges
-            __ ipv4_address in range_.cidr]
+    r.. [range_ ___ range_ __ service_ranges
+            __ ipv4_address __ range_.cidr]

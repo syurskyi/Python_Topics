@@ -2,18 +2,18 @@
 
 ___ gen_primes(limit=3000000):
     ignore_this = raw_input() # CodeAbbey required wasted input.
-    data = [int(x) for x in raw_input().split()]
-    primes, answer = [], []
+    data = [int(x) ___ x __ raw_input().s.. ]
+    primes, answer    # list, []
 
     # Sieve of Eratosthenes
     sieve = [True] * (limit + 1)
-    for num in range(2, limit + 1):
+    ___ num __ r..(2, limit + 1):
         __ sieve[num]:
-           primes.append(num)
-           for i in range(num * num, limit + 1, num):
+           primes.a..(num)
+           ___ i __ r..(num * num, limit + 1, num):
                sieve[i] = False
                
-    for number in data:
-        answer.append(str(primes[number-1]))
+    ___ number __ data:
+        answer.a..(s..(primes[number-1]))
     print(' '.join(answer))
 gen_primes()

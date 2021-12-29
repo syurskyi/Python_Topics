@@ -33,12 +33,12 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        __ root is None:
-            return None
-        else:
-            __ min(p.val, q.val) <= root.val <= max(p.val, q.val):
-                return root
-            elif root.val > max(p.val, q.val):
-                return self.lowestCommonAncestor(root.left, p, q)
-            else:
-                return self.lowestCommonAncestor(root.right, p, q)
+        __ root __ N..
+            r.. N..
+        ____:
+            __ m..(p.val, q.val) <= root.val <= max(p.val, q.val):
+                r.. root
+            ____ root.val > max(p.val, q.val):
+                r.. self.lowestCommonAncestor(root.left, p, q)
+            ____:
+                r.. self.lowestCommonAncestor(root.right, p, q)

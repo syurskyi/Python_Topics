@@ -15,59 +15,59 @@ class Solution:
     @return: a list of lists of string
     """
     ___ findLadders(self, A, B, D):
-        ans = []
-        __ (D is None or A is None or B is None or
-            len(A) != len(B)):
-            return ans
+        ans    # list
+        __ (D __ N.. o. A __ N.. o. B __ N.. o.
+            l..(A) != l..(B)):
+            r.. ans
 
-        __ A not in D:
+        __ A n.. __ D:
             D.add(A)
-        __ B not in D:
+        __ B n.. __ D:
             D.add(B)
 
-        n = len(A)
-        next_words = [None] * n
-        for i in range(n):
+        n = l..(A)
+        next_words = [N..] * n
+        ___ i __ r..(n):
             next_words[i] = W = {}
-            for word in D:
+            ___ word __ D:
                 key = word[:i] + word[i + 1:]
-                __ key not in W:
+                __ key n.. __ W:
                     W[key] = set()
                 W[key].add(word)
 
         queue = [B]
         distance = {B: 1}
-        for word in queue:
-            __ word == A:
+        ___ word __ queue:
+            __ word __ A:
                 break
-            for _word in self.get_next_word(word, next_words):
-                __ _word in distance:
+            ___ _word __ self.get_next_word(word, next_words):
+                __ _word __ distance:
                     continue
                 distance[_word] = distance[word] + 1
-                queue.append(_word)
+                queue.a..(_word)
 
         self.dfs(A, B, next_words, distance, ans, [A])
-        return ans
+        r.. ans
 
     ___ dfs(self, word, B, next_words, distance, ans, path):
-        __ word == B:
-            ans.append(path[:])
-            return
+        __ word __ B:
+            ans.a..(path[:])
+            r..
 
-        for _word in self.get_next_word(word, next_words):
-            __ (_word not in distance or
+        ___ _word __ self.get_next_word(word, next_words):
+            __ (_word n.. __ distance o.
                 distance[_word] != distance[word] - 1):
                 continue
-            path.append(_word)
+            path.a..(_word)
             self.dfs(_word, B, next_words, distance, ans, path)
             path.pop()
 
     ___ get_next_word(self, word, next_words):
-        for i in range(len(word)):
+        ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
-            __ key not in next_words[i]:
+            __ key n.. __ next_words[i]:
                 continue
-            for _word in next_words[i][key]:
-                __ _word == word:
+            ___ _word __ next_words[i][key]:
+                __ _word __ word:
                     continue
                 yield _word

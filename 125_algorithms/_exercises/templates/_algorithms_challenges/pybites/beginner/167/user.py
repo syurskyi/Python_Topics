@@ -14,7 +14,7 @@ class User:
            and using title case for both.
         """
         # TODO 1: you code
-        return '{} {}'.format(self.first_name.title(),self.last_name.title())
+        r.. '{} {}'.format(self.first_name.t..,self.last_name.title())
 
     @property
     ___ username(self):
@@ -26,7 +26,7 @@ class User:
            https://pybit.es/property-decorator.html
         """
         # TODO 2: you code
-        return '{}{}'.format(self.first_name.lower()[0], self.last_name.lower()[:7])
+        r.. '{}{}'.format(self.first_name.lower()[0], self.last_name.lower()[:7])
 
     # TODO 3: you code
     #
@@ -37,7 +37,7 @@ class User:
     # see also TESTS for required output
 
     ___ __str__(self):
-        return '{} ({})'.format(self.get_full_name, self.username)
+        r.. '{} ({})'.format(self.get_full_name, self.username)
         
 
     ___ __repr__(self):
@@ -45,7 +45,7 @@ class User:
            special attribute of self.__class__ ...
         """
         #return "'{}({} {})'".format(self.__class__.__name__, self.first_name, self.last_name)
-        return f"{self.__class__.__name__}(\"{self.first_name}\", \"{self.last_name}\")"
+        r.. f"{self.__class__.__name__}(\"{self.first_name}\", \"{self.last_name}\")"
 
 bob = User('bob', 'belderbos')
 print(bob.get_full_name)

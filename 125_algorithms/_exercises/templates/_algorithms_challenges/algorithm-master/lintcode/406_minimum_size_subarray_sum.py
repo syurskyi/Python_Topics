@@ -5,9 +5,9 @@ class Solution:
     @return: an integer representing the minimum size of subarray
     """
     ___ minimumSize(self, nums, s):
-        __ not nums or len(nums) == 0:
-            return -1
-        n = len(nums)
+        __ n.. nums o. l..(nums) __ 0:
+            r.. -1
+        n = l..(nums)
         min_len = n + 1
         l = r = t = 0
         while r < n:
@@ -26,5 +26,5 @@ class Solution:
                 l += 1
 
             # Save the min_size
-            min_len = min(min_len, r - l + 1)
-        return -1 __ min_len > n else min_len
+            min_len = m..(min_len, r - l + 1)
+        r.. -1 __ min_len > n ____ min_len

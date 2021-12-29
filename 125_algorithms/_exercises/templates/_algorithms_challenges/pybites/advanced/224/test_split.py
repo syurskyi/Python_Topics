@@ -1,4 +1,4 @@
-from split import get_sentences
+____ split _______ get_sentences
 
 TEXT = """
 PyBites was founded 19th of December 2016. That means that today,
@@ -23,7 +23,7 @@ ___ test_get_sentences():
         "Anyways, good luck with this Bite.",
         "What is your favorite editor?"
     ]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_dot_mid_sentence():
@@ -37,4 +37,4 @@ ___ test_dot_mid_sentence():
         "Btw this dot (.) should not end this sentence, the next one should.",
         "Have fun!"
     ]
-    assert actual == expected
+    ... actual __ expected

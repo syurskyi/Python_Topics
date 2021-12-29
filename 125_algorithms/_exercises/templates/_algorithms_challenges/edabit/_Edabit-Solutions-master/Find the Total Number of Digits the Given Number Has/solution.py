@@ -1,5 +1,5 @@
 ___ find_digit_amount(num):
-    return len(str(num))
+    r.. l..(str(num))
 
 #BUGFIX
 ___ test():

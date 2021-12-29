@@ -1,7 +1,7 @@
 ___ get_profile(name, age, *sports, **awards):
-    __ not isinstance(age, int):
+    __ n.. isi..(age, int):
         raise ValueError
-    __ len(sports) > 5:
+    __ l..(sports) > 5:
         raise ValueError
-    return {'name': name, 'age': age, 
-            'sports': list(sports), 'awards': awards}
+    r.. {'name': name, 'age': age,
+            'sports': l..(sports), 'awards': awards}

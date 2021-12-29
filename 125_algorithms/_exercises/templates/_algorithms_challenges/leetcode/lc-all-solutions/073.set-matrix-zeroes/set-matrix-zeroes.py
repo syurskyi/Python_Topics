@@ -5,16 +5,16 @@ class Solution(object):
     :rtype: void Do not return anything, modify matrix in-place instead.
     """
     colZeroFlag = False
-    for i in range(0, len(matrix)):
-      __ matrix[i][0] == 0:
+    ___ i __ r..(0, l..(matrix)):
+      __ matrix[i][0] __ 0:
         colZeroFlag = True
-      for j in range(1, len(matrix[0])):
-        __ matrix[i][j] == 0:
+      ___ j __ r..(1, l..(matrix[0])):
+        __ matrix[i][j] __ 0:
           matrix[i][0] = matrix[0][j] = 0
 
-    for i in reversed(range(0, len(matrix))):
-      for j in reversed(range(1, len(matrix[0]))):
-        __ matrix[i][0] == 0 or matrix[0][j] == 0:
+    ___ i __ reversed(r..(0, l..(matrix))):
+      ___ j __ reversed(r..(1, l..(matrix[0]))):
+        __ matrix[i][0] __ 0 o. matrix[0][j] __ 0:
           matrix[i][j] = 0
       __ colZeroFlag:
         matrix[i][0] = 0

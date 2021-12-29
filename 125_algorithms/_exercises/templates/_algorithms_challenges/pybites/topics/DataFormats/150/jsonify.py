@@ -1,5 +1,5 @@
-import json
-from typing import DefaultDict
+_______ json
+____ typing _______ DefaultDict
 
 members = """
 id,first_name,last_name,email
@@ -17,20 +17,20 @@ id,first_name,last_name,email
 
 
 ___ convert_to_json(members=members):
-    data = []
-    members_list = members.split()
-    for index, member in enumerate(members_list):
+    data    # list
+    members_list = members.s.. 
+    ___ index, member __ enumerate(members_list):
         line = member.replace('|',',').replace(';',',').split(',')
-        __ index == 0:
+        __ index __ 0:
             col0, col1, col2, col3 = line[0], line[1], line[2], line[3]
-        else:
+        ____:
             member_dict = DefaultDict(str)
             member_dict[col0] = line[0]
             member_dict[col1] = line[1]
             member_dict[col2] = line[2]
             member_dict[col3] = line[3]
-            data.append(member_dict)
-    return json.dumps(data)
+            data.a..(member_dict)
+    r.. json.dumps(data)
 
 
 print(type(convert_to_json()))

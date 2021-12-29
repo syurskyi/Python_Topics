@@ -36,38 +36,38 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not grid or not grid[0]:
-            return ans
+        __ n.. grid o. n.. grid[0]:
+            r.. ans
 
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         row, cols = 0, [0] * n
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 # calculate bomb in cur section [x, 'WALL' | m) in col
-                __ x == 0 or grid[x - 1][y] == self.WALL:
+                __ x __ 0 o. grid[x - 1][y] __ self.WALL:
                     cols[y] = 0
 
-                    for i in range(x, m):
-                        __ grid[i][y] == self.WALL:
+                    ___ i __ r..(x, m):
+                        __ grid[i][y] __ self.WALL:
                             break
-                        __ grid[i][y] == self.ENEMY:
+                        __ grid[i][y] __ self.ENEMY:
                             cols[y] += 1
 
                 # calculate bomb in cur section [y, 'WALL' | n) in row
-                __ y == 0 or grid[x][y - 1] == self.WALL:
+                __ y __ 0 o. grid[x][y - 1] __ self.WALL:
                     row = 0
 
-                    for i in range(y, n):
-                        __ grid[x][i] == self.WALL:
+                    ___ i __ r..(y, n):
+                        __ grid[x][i] __ self.WALL:
                             break
-                        __ grid[x][i] == self.ENEMY:
+                        __ grid[x][i] __ self.ENEMY:
                             row += 1
 
-                __ grid[x][y] == self.EMPTY and row + cols[y] > ans:
+                __ grid[x][y] __ self.EMPTY and row + cols[y] > ans:
                     ans = row + cols[y]
 
-        return ans
+        r.. ans
 
 
 """
@@ -85,49 +85,49 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not grid or not grid[0]:
-            return ans
+        __ n.. grid o. n.. grid[0]:
+            r.. ans
 
-        for x in range(len(grid)):
-            for y in range(len(grid[0])):
-                __ grid[x][y] == self.EMPTY:
+        ___ x __ r..(l..(grid)):
+            ___ y __ r..(l..(grid[0])):
+                __ grid[x][y] __ self.EMPTY:
                     ans = max(
                         ans,
                         self.get_killed_cnt(grid, x, y)
                     )
 
-        return ans
+        r.. ans
 
     ___ get_killed_cnt(self, grid, i, j):
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         cnt = 0
 
         # up
-        for x in range(i, -1, -1):
-            __ grid[x][j] == self.WALL:
+        ___ x __ r..(i, -1, -1):
+            __ grid[x][j] __ self.WALL:
                 break
-            __ grid[x][j] == self.ENEMY:
+            __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # down
-        for x in range(i, m):
-            __ grid[x][j] == self.WALL:
+        ___ x __ r..(i, m):
+            __ grid[x][j] __ self.WALL:
                 break
-            __ grid[x][j] == self.ENEMY:
+            __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # left
-        for y in range(j, -1, -1):
-            __ grid[i][y] == self.WALL:
+        ___ y __ r..(j, -1, -1):
+            __ grid[i][y] __ self.WALL:
                 break
-            __ grid[i][y] == self.ENEMY:
+            __ grid[i][y] __ self.ENEMY:
                 cnt += 1
 
         # right
-        for y in range(j, n):
-            __ grid[i][y] == self.WALL:
+        ___ y __ r..(j, n):
+            __ grid[i][y] __ self.WALL:
                 break
-            __ grid[i][y] == self.ENEMY:
+            __ grid[i][y] __ self.ENEMY:
                 cnt += 1
 
-        return cnt
+        r.. cnt

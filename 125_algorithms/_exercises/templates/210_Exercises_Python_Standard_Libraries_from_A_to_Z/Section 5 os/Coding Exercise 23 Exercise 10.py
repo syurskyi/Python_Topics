@@ -1,5 +1,5 @@
-import os
+_______ os
 
-fnames  [f"{str(i).zfill(3)}_sales.csv" for i in range(1, 25)]
-paths  [os.path.join(os.getcwd(), fname) for fname in fnames]
+fnames  [f"{str(i).zfill(3)}_sales.csv" ___ i __ r..(1, 25)]
+paths  [os.path.join(os.getcwd(), fname) ___ fname __ fnames]
 print(paths)

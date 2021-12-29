@@ -31,7 +31,7 @@ defaultdict(,
              'TD': ['Rudolph Jeffry']})
 """
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -48,27 +48,27 @@ Halbard,Davie,CN"""
 
 
 ___ group_names_by_country(data: str = data) -> defaultdict:
-    countries = defaultdict(list)
+    countries = defaultdict(l..)
     # you code
     split_lines = data.splitlines()
     line_cnt = 0
-    for line in split_lines:
+    ___ line __ split_lines:
         print(line)
-        __ line_cnt == 0:
+        __ line_cnt __ 0:
             line_cnt += 1
             continue
         arr = line.split(',')
         print(arr)
         name = arr[1] + " " + arr[0]
         try:
-            countries[arr[2]].append(name)
+            countries[arr[2]].a..(name)
         except:
-            l = []
-            l.append(name)
+            l    # list
+            l.a..(name)
             countries[arr[2]] = l
         finally:
             line_cnt += 1
-    return countries
+    r.. countries
 
 
 print(group_names_by_country(data))

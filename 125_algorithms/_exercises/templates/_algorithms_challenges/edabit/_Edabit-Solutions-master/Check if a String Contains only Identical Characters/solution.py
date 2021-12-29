@@ -1,3 +1,3 @@
 ___ is_identical(s):
     a_set = set(s)
-    return (len(a_set)) == 1
+    r.. (l..(a_set)) __ 1

@@ -5,20 +5,20 @@ class Solution(object):
     :rtype: bool
     """
     p = preorder.split(",")
-    __ len(p) == 1:
-      __ p[0] == "#":
-        return True
-      return False
+    __ l..(p) __ 1:
+      __ p[0] __ "#":
+        r.. True
+      r.. False
     stack = [p[0]]
-    for c in p[1:]:
-      __ len(stack) == 1 and stack[0] == "#":
-        return False
-      stack.append(c)
-      while len(stack) > 2 and stack[-1] + stack[-2] == "##":
+    ___ c __ p[1:]:
+      __ l..(stack) __ 1 and stack[0] __ "#":
+        r.. False
+      stack.a..(c)
+      while l..(stack) > 2 and stack[-1] + stack[-2] __ "##":
         stack.pop()
         stack.pop()
         stack.pop()
-        stack.append("#")
-    __ len(stack) == 1 and stack[0] == "#":
-      return True
-    return False
+        stack.a..("#")
+    __ l..(stack) __ 1 and stack[0] __ "#":
+      r.. True
+    r.. False

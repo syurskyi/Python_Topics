@@ -3,8 +3,8 @@ Given an array of integers and an integer k, find out whether there there are tw
 such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
 __author__ = 'Daniel'
-import heapq
-from collections import defaultdict
+_______ heapq
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -14,17 +14,17 @@ class Solution:
 
         :rtype: bool
         """
-        d = defaultdict(list)
-        for i, v in enumerate(nums):
+        d = defaultdict(l..)
+        ___ i, v __ enumerate(nums):
             heapq.heappush(d[v], i)
 
-        for v in d.values():
-            __ len(v) > 1:
+        ___ v __ d.values():
+            __ l..(v) > 1:
                 pre = heapq.heappop(v)
                 while v:
                     cur = heapq.heappop(v)
                     __ cur-pre <= k:
-                        return True
+                        r.. True
                     pre = cur
 
-        return False
+        r.. False

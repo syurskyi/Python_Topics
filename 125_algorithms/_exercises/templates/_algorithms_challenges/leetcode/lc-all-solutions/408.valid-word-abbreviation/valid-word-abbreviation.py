@@ -7,26 +7,26 @@ class Solution(object):
     """
     start = j = 0
     digit = False
-    for i in range(0, len(src)):
+    ___ i __ r..(0, l..(src)):
       __ src[i].isdigit():
-        __ not digit:
-          __ src[i] == "0":
-            return False
+        __ n.. digit:
+          __ src[i] __ "0":
+            r.. False
           start = i
           digit = True
-      else:
+      ____:
         __ digit:
           jump = int(src[start:i])
           digit = False
           j += jump
-        __ j >= len(dest) or src[i] != dest[j]:
-          return False
+        __ j >= l..(dest) o. src[i] != dest[j]:
+          r.. False
         j += 1
-      __ i == len(src) - 1:
+      __ i __ l..(src) - 1:
         __ digit:
           jump = int(src[start:i + 1])
           digit = False
           j += jump
-          __ j != len(dest):
-            return False
-    return True
+          __ j != l..(dest):
+            r.. False
+    r.. True

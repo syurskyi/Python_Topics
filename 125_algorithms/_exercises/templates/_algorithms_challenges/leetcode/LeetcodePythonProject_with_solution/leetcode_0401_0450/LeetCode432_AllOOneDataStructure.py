@@ -8,29 +8,29 @@ class Bucket(object):
     ___ __init__(self, value):
         self.keySet = set()
         self.value = value
-        self.next = None
-        self.prev = None
+        self.next = N..
+        self.prev = N..
 
 class AllOne(object):
     ___ __init__(self):
         self.keyBucketMap = {}
-        self.head = None
-        self.tail = None
+        self.head = N..
+        self.tail = N..
     
     ___ inc(self, key):
-        __ key in self.keyBucketMap:
+        __ key __ self.keyBucketMap:
             bucket = self.keyBucketMap[key]
             nextBucket = bucket.next
-            __ nextBucket and nextBucket.value == bucket.value+1:
+            __ nextBucket and nextBucket.value __ bucket.value+1:
                 nextBucket.keySet.add(key)
                 self.keyBucketMap[key] = nextBucket
-            elif not nextBucket:
+            ____ n.. nextBucket:
                 nextBucket = Bucket(bucket.value+1)
                 nextBucket.keySet.add(key)
                 self.tail = nextBucket
                 bucket.next = nextBucket
                 self.keyBucketMap[key] = nextBucket
-            else:
+            ____:
                 newBucket = Bucket(bucket.value+1)
                 newBucket.keySet.add(key)
                 nextBucket.prev = newBucket
@@ -39,27 +39,27 @@ class AllOne(object):
                 newBucket.prev = bucket
                 self.keyBucketMap[key] = newBucket
             bucket.keySet.remove(key)
-            __ not bucket.keySet:
+            __ n.. bucket.keySet:
                 prevBucket = bucket.prev
                 __ prevBucket:
                     nextBucket = bucket.next
                     prevBucket.next = bucket.next
                     nextBucket.prev = prevBucket
-                else:
+                ____:
                     nextBucket = bucket.next
-                    nextBucket.prev = None
+                    nextBucket.prev = N..
                     self.head = nextBucket
-        else:
+        ____:
             __ self.head:
-                __ self.head.value == 1:
+                __ self.head.value __ 1:
                     self.head.keySet.add(key)
-                else:
+                ____:
                     bucket = Bucket(1)
                     bucket.keySet.add(key)
                     self.head.prev = bucket
                     bucket.next = self.head
                     self.head = bucket
-            else:
+            ____:
                 bucket= Bucket(1)
                 bucket.keySet.add(key)
                 self.head = bucket
@@ -67,14 +67,14 @@ class AllOne(object):
             self.keyBucketMap[key] = self.head
     
     ___ dec(self, key):
-        __ key in self.keyBucketMap:
+        __ key __ self.keyBucketMap:
             bucket = self.keyBucketMap[key]
             prevBucket = bucket.prev
             __ prevBucket:
-                __ prevBucket.value+1 == bucket.value:
+                __ prevBucket.value+1 __ bucket.value:
                     prevBucket.keySet.add(key)
                     self.keyBucketMap[key] = prevBucket
-                else:
+                ____:
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
                     newBucket.prev = prevBucket
@@ -82,10 +82,10 @@ class AllOne(object):
                     prevBucket.next = newBucket
                     bucket.prev = newBucket
                     self.keyBucketMap[key] = newBucket
-            else:
-                __ bucket.value == 1:
+            ____:
+                __ bucket.value __ 1:
                     del self.keyBucketMap[key]
-                else:
+                ____:
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
                     newBucket.next = bucket
@@ -93,37 +93,37 @@ class AllOne(object):
                     self.head = newBucket
                     self.keyBucketMap[key] = newBucket
             bucket.keySet.remove(key)
-            __ not bucket.keySet:
-                __ not bucket.prev and not bucket.next:
-                    self.head = None
-                    self.tail = None
-                elif bucket.prev and not bucket.next:
-                    bucket.prev.next = None
+            __ n.. bucket.keySet:
+                __ n.. bucket.prev and n.. bucket.next:
+                    self.head = N..
+                    self.tail = N..
+                ____ bucket.prev and n.. bucket.next:
+                    bucket.prev.next = N..
                     self.tail = bucket.prev
-                    bucket.prev = None
-                elif bucket.next and not bucket.prev:
-                    bucket.next.prev = None
+                    bucket.prev = N..
+                ____ bucket.next and n.. bucket.prev:
+                    bucket.next.prev = N..
                     self.head = bucket.next
-                    bucket.next = None
-                else:
+                    bucket.next = N..
+                ____:
                     bucket.next.prev = bucket.prev
                     bucket.prev.next = bucket.next
-                    bucket.prev = None
-                    bucket.next = None
+                    bucket.prev = N..
+                    bucket.next = N..
         
     ___ getMax(self):
         __ self.tail:
             val = self.tail.keySet.pop()
             self.tail.keySet.add(val)
-            return val
-        else:
-            return ''
+            r.. val
+        ____:
+            r.. ''
     
     ___ getMin(self):
         __ self.head:
             val = self.head.keySet.pop()
             self.head.keySet.add(val)
-            return val
-        else:
-            return ''
+            r.. val
+        ____:
+            r.. ''
     

@@ -14,15 +14,15 @@ class Solution:
     @return: A list of The first node of linked list which have twice size
     """
     ___ rehashing(self, hash_table):
-        __ not hash_table:
-            return
+        __ n.. hash_table:
+            r..
 
-        CAPACITY = len(hash_table) * 2
-        heads = [None] * CAPACITY
-        tails = [None] * CAPACITY
+        CAPACITY = l..(hash_table) * 2
+        heads = [N..] * CAPACITY
+        tails = [N..] * CAPACITY
 
-        curr = _node = i = None
-        for node in hash_table:
+        curr = _node = i = N..
+        ___ node __ hash_table:
             curr = node
 
             while curr:
@@ -31,11 +31,11 @@ class Solution:
 
                 __ heads[i]:
                     tails[i].next = _node
-                else:
+                ____:
                     heads[i] = _node
 
                 tails[i] = _node
 
                 curr = curr.next
 
-        return heads
+        r.. heads

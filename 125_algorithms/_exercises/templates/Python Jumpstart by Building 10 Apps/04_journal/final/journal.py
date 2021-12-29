@@ -1,7 +1,7 @@
 """
 This is the journal module.
 """
-import os
+_______ os
 
 
 ___ load(name):
@@ -16,10 +16,10 @@ ___ load(name):
 
     __ os.path.exists(filename):
         with open(filename) as fin:
-            for entry in fin.readlines():
-                data.append(entry.rstrip())
+            ___ entry __ fin.readlines():
+                data.a..(entry.rstrip())
 
-    return data
+    r.. data
 
 
 ___ save(name, journal_data):
@@ -27,14 +27,14 @@ ___ save(name, journal_data):
     print("..... saving to: {}".format(filename))
 
     with open(filename, 'w') as fout:
-        for entry in journal_data:
+        ___ entry __ journal_data:
             fout.write(entry + '\n')
 
 
 ___ get_full_pathname(name):
     filename  os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
-    return filename
+    r.. filename
 
 
 ___ add_entry(text, journal_data):
-    journal_data.append(text)
+    journal_data.a..(text)

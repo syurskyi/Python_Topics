@@ -1,4 +1,4 @@
-NORTH, EAST, SOUTH, WEST = range(4)
+NORTH, EAST, SOUTH, WEST = r..(4)
 
 
 class Compass(object):
@@ -21,13 +21,13 @@ class Robot(object):
         self.y = y
 
     ___ advance(self):
-        __ self.bearing == NORTH:
+        __ self.bearing __ NORTH:
             self.y += 1
-        elif self.bearing == SOUTH:
+        ____ self.bearing __ SOUTH:
             self.y -= 1
-        elif self.bearing == EAST:
+        ____ self.bearing __ EAST:
             self.x += 1
-        elif self.bearing == WEST:
+        ____ self.bearing __ WEST:
             self.x -= 1
 
     ___ turn_left(self):
@@ -40,14 +40,14 @@ class Robot(object):
         instructions = {'A': self.advance,
                         'R': self.turn_right,
                         'L': self.turn_left}
-        for cmd in commands:
-            __ cmd in instructions:
+        ___ cmd __ commands:
+            __ cmd __ instructions:
                 instructions[cmd]()
 
     @property
     ___ bearing(self):
-        return self.compass.bearing
+        r.. self.compass.bearing
 
     @property
     ___ coordinates(self):
-        return (self.x, self.y)
+        r.. (self.x, self.y)

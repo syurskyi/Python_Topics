@@ -10,16 +10,16 @@ class Solution(object):
         :type matrix: List[List[str]]
         :rtype: int
         """
-        __ not matrix: return 0
+        __ n.. matrix: r.. 0
         maxLen = 0
-        m, n = len(matrix), len(matrix[0])
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m):
-            for j in range(n):
-                __ matrix[i][j] == '1':
-                    dp[i+1][j+1] = min([dp[i][j], dp[i+1][j], dp[i][j+1]])+1
+        m, n = l..(matrix), l..(matrix[0])
+        dp = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ matrix[i][j] __ '1':
+                    dp[i+1][j+1] = m..([dp[i][j], dp[i+1][j], dp[i][j+1]])+1
                     maxLen = max(maxLen, dp[i+1][j+1])
-        return maxLen*maxLen
+        r.. maxLen*maxLen
     
     ___ test(self):
         testCases = [
@@ -33,12 +33,12 @@ class Solution(object):
                 '10010',
             ],
         ]
-        for matrix in testCases:
+        ___ matrix __ testCases:
             print('matrix: %s' % matrix)
-            matrix = [list(x) for x in matrix]
+            matrix = [l..(x) ___ x __ matrix]
             result = self.maximalSquare(matrix)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

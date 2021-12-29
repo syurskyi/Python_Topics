@@ -1,11 +1,11 @@
-from fibonacci import fib
-import pytest
+____ fibonacci _______ fib
+_______ pytest
 
 
 ___ test_fib():
-    assert fib(0) == 0
-    assert fib(1) == 1
-    assert fib(6) == 8
+    ... fib(0) __ 0
+    ... fib(1) __ 1
+    ... fib(6) __ 8
 
 
 ___ test_fib_negative():

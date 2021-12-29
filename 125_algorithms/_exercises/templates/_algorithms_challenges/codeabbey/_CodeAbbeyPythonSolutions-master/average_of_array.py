@@ -1,12 +1,12 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ avg(values):
-    results.append(round(sum(values)/(len(values)-1)))
+    results.a..(round(s..(values)/(l..(values)-1)))
 
 
-for i in range(amount_values):
-    values = list(map(int, input().split()))
+___ i __ r..(amount_values):
+    values = l..(map(int, input().split()))
     avg(values)
 
 print(*results)

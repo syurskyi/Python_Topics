@@ -3,7 +3,7 @@
 
 
 _ = input()
-array = input().split()
+array = input().s.. 
 like = set(input().split())
 dislike = set(input().split())
-print(sum((i in like) - (i in dislike) for i in array))
+print(s..((i __ like) - (i __ dislike) ___ i __ array))

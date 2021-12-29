@@ -1,8 +1,8 @@
 ___ increment_to_top(lst):
-    sl = sorted(lst)
+    sl = s..(lst)
     output = 0
     index = 0
-    while index < (len(sl) - 1):
+    while index < (l..(sl) - 1):
          output += sl[-1] - sl[index]
          index += 1
-    return output
+    r.. output

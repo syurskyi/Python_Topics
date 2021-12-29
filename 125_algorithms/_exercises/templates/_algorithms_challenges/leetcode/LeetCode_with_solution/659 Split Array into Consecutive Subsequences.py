@@ -25,9 +25,9 @@ Output: False
 Note:
 The length of the input is in range of [1, 10000]
 """
-from typing import List
-from collections import defaultdict
-import heapq
+____ typing _______ List
+____ collections _______ defaultdict
+_______ heapq
 
 
 class Solution:
@@ -43,26 +43,26 @@ class Solution:
         Let F[i] be the number of consecutive subsequence at A[i]
         """
         counter = defaultdict(int)
-        for e in nums:
+        ___ e __ nums:
             counter[e] += 1
 
         F = defaultdict(int)
-        for e in nums:
-            __ counter[e] == 0:
+        ___ e __ nums:
+            __ counter[e] __ 0:
                 continue
             counter[e] -= 1
 
             __ F[e - 1] > 0:
                 F[e - 1] -= 1
                 F[e] += 1
-            elif counter[e + 1] > 0 and counter[e + 2] > 0:
+            ____ counter[e + 1] > 0 and counter[e + 2] > 0:
                 F[e + 2] += 1
                 counter[e + 1] -= 1
                 counter[e + 2] -= 1
-            else:
-                return False
+            ____:
+                r.. False
 
-        return True
+        r.. True
 
             
 class Interval:
@@ -71,13 +71,13 @@ class Interval:
         self.length = length
 
     ___ __lt__(self, other):
-        __ self.end == other.end:
-            return self.length < other.length
+        __ self.end __ other.end:
+            r.. self.length < other.length
 
-        return self.end < other.end
+        r.. self.end < other.end
 
     ___ __repr__(self):
-        return repr((self.end, self.length))
+        r.. repr((self.end, self.length))
 
 
 class Solution2:
@@ -89,29 +89,29 @@ class Solution2:
 
         split when duplicate
         """
-        h = []
-        for n in nums:
+        h    # list
+        ___ n __ nums:
             while h and h[0].end + 1 < n:
                 itvl = heapq.heappop(h)
                 __ itvl.length < 3:
-                    return False
+                    r.. False
 
-            __ not h:
+            __ n.. h:
                 heapq.heappush(h, Interval(n, 1))
-            elif h[0].end + 1 == n:
+            ____ h[0].end + 1 __ n:
                 itvl = heapq.heappop(h)
                 heapq.heappush(h, Interval(n, itvl.length + 1))
-            else:  # n == end
+            ____:  # n == end
                 heapq.heappush(h, Interval(n, 1))
 
 
-        for itvl in h:
+        ___ itvl __ h:
             __ itvl.length < 3:
-                return False
+                r.. False
 
-        return True
+        r.. True
 
-__ __name__ == "__main__":
-    assert Solution().isPossible([1,2,3,3,4,5]) == True
-    assert Solution().isPossible([1,2,3,3,4,4,5,5]) == True
-    assert Solution().isPossible([1,2,3,4,4,5]) == False
+__ __name__ __ "__main__":
+    ... Solution().isPossible([1,2,3,3,4,5]) __ True
+    ... Solution().isPossible([1,2,3,3,4,4,5,5]) __ True
+    ... Solution().isPossible([1,2,3,4,4,5]) __ False

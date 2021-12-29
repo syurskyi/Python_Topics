@@ -5,7 +5,7 @@ class Solution:
     """
     ___ reverseWords(self, s):
         s = s.strip()
-        __ not s:
-            return ''
+        __ n.. s:
+            r.. ''
 
-        return ' '.join(reversed(s.split()))
+        r.. ' '.join(reversed(s.split()))

@@ -12,19 +12,19 @@ class Solution(object):
         :param s: string
         :return: string
         """
-        __ not s:
-            return
-        n = len(s)
-        __ n == 1:
-            return s
+        __ n.. s:
+            r..
+        n = l..(s)
+        __ n __ 1:
+            r.. s
 
         ret = s[0]
-        for i in xrange(0, n):
+        ___ i __ xrange(0, n):
             cur = self.get_palindrome_from_center(s, i, i)  # odd length
-            __ len(cur) > len(ret): ret = cur
+            __ l..(cur) > l..(ret): ret = cur
             cur = self.get_palindrome_from_center(s, i, i+1)
-            __ len(cur) > len(ret): ret = cur
-        return ret
+            __ l..(cur) > l..(ret): ret = cur
+        r.. ret
 
     ___ longestPalindrome_TLE(self, s):
         """
@@ -47,64 +47,64 @@ class Solution(object):
         :param s: string
         :return: string
         """
-        length = len(s)
-        dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        length = l..(s)
+        dp = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
+        ___ i __ xrange(length+1):
             dp[i][i] = True
 
         longest = [0, 0]
-        for j in xrange(length+1):
-            for i in xrange(j-1, -1, -1):
-                __ i+1 == j:
+        ___ j __ xrange(length+1):
+            ___ i __ xrange(j-1, -1, -1):
+                __ i+1 __ j:
                     dp[i][j] = True
-                else:
-                    dp[i][j] = s[i] == s[j-1] and dp[i+1][j-1]  # pre-access? starting backward
+                ____:
+                    dp[i][j] = s[i] __ s[j-1] and dp[i+1][j-1]  # pre-access? starting backward
 
-                __ dp[i][j] == True and longest[1]-longest[0] < j-i:
+                __ dp[i][j] __ True and longest[1]-longest[0] < j-i:
                     longest[0], longest[1] = i, j
 
-        return s[longest[0]:longest[1]]
+        r.. s[longest[0]:longest[1]]
 
     ___ longestPalindrome_TLE2(self, s):
         """
         :param s: string
         :return: string
         """
-        length = len(s)
+        length = l..(s)
 
         longest = ""
-        dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]  # larger than usual
-        for i in xrange(length+1):
+        dp = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]  # larger than usual
+        ___ i __ xrange(length+1):
             dp[i][i] = True  # empty
-        for i in xrange(length):
+        ___ i __ xrange(length):
             dp[i][i+1] = True  # single char
-        for i in xrange(length-1):
-            dp[i][i+2] = s[i] == s[i+1]
+        ___ i __ xrange(length-1):
+            dp[i][i+2] = s[i] __ s[i+1]
             __ dp[i][i+1]:
                 longest = s[i:i+2]
 
-        for l in xrange(3, length+1):  # breadth
-            for i in xrange(0, length-l):
-                __ s[i] == s[i+l-1]:
+        ___ l __ xrange(3, length+1):  # breadth
+            ___ i __ xrange(0, length-l):
+                __ s[i] __ s[i+l-1]:
                     dp[i][i+l] = dp[i+1][i+l-1]
-                else:
+                ____:
                     dp[i][i+l] = False
 
-                __ dp[i][i+l] and len(longest) < l:
+                __ dp[i][i+l] and l..(longest) < l:
                     longest = s[i:i+l]
 
-        return longest
+        r.. longest
 
     ___ get_palindrome_from_center(self, s, begin, end):
         """
         # [begin, end]
         """
-        while begin >= 0 and end < len(s) and s[begin] == s[end]:
+        while begin >= 0 and end < l..(s) and s[begin] __ s[end]:
             begin -= 1
             end += 1
 
-        return s[begin+1: end-1+1]
+        r.. s[begin+1: end-1+1]
 
 
-__ __name__ == "__main__":
-    assert Solution().longestPalindrome("dfaaabbbaaac") == "aaabbbaaa"
+__ __name__ __ "__main__":
+    ... Solution().longestPalindrome("dfaaabbbaaac") __ "aaabbbaaa"

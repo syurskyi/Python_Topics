@@ -25,7 +25,7 @@ Note:
 1 <= S.length = shifts.length <= 20000
 0 <= shifts[i] <= 10 ^ 9
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -33,19 +33,19 @@ class Solution:
         """
         preprocess shifts
         """
-        n = len(shifts)
-        for i in range(n-2, -1, -1):
+        n = l..(shifts)
+        ___ i __ r..(n-2, -1, -1):
             shifts[i] += shifts[i+1]
             shifts[i] %= 26
 
-        ret = []
-        for i, s in enumerate(S):
+        ret    # list
+        ___ i, s __ enumerate(S):
             b = (ord(s) + shifts[i] - ord('a')) % 26 + ord('a')
             b = chr(b)
-            ret.append(b)
+            ret.a..(b)
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().shiftingLetters("abc", [3, 5, 9]) == "rpl"
+__ __name__ __ "__main__":
+    ... Solution().shiftingLetters("abc", [3, 5, 9]) __ "rpl"

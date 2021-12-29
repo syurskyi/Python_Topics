@@ -13,17 +13,17 @@ class Solution(object):
     """
 
     ___ dfs(p):
-      __ not p:
-        return 0
+      __ n.. p:
+        r.. 0
 
       left = dfs(p.left)
       right = dfs(p.right)
-      __ left == -1 or right == -1:
-        return -1
+      __ left __ -1 o. right __ -1:
+        r.. -1
       __ abs(left - right) > 1:
-        return -1
-      return 1 + max(left, right)
+        r.. -1
+      r.. 1 + max(left, right)
 
-    __ dfs(root) == -1:
-      return False
-    return True
+    __ dfs(root) __ -1:
+      r.. False
+    r.. True

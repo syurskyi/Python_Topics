@@ -11,10 +11,10 @@ which reads the same backward as forward.
 
 """
 
-import os
-import urllib.request
-import string
-import re
+_______ os
+_______ urllib.request
+_______ string
+_______ re
 
 DICTIONARY = os.path.join(os.getenv('temp'), 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
@@ -26,7 +26,7 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        return (word.lower().strip() for word in f.readlines())
+        r.. (word.lower().strip() ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -35,16 +35,16 @@ ___ is_palindrome(word):
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
     stripped = re.sub(r'[^a-z]', '', word.lower())
-    i, j = 0, len(stripped) - 1
+    i, j = 0, l..(stripped) - 1
     while i < j:
         __ stripped[i] != stripped[j]:
-            return False
+            r.. False
         i, j = i + 1, j - 1
-    return True
+    r.. True
 
 ___ is_palindrome_pybites_solution(word):
     word = re.sub(r'\W+', '', word.lower())
-    return word == word[::-1]
+    r.. word __ word[::-1]
 
 # jak to elegancko przerobic, zeby spelnic kryterium zadania?
 ___ get_longest_palindrome(words_ N..
@@ -54,25 +54,25 @@ ___ get_longest_palindrome(words_ N..
     max_pal = 0
     pal = ""
     __ words:
-        for word in words:
+        ___ word __ words:
             __ is_palindrome(word):
-                __ len(word) > max_pal:
-                    max_pal = len(word)
+                __ l..(word) > max_pal:
+                    max_pal = l..(word)
                     pal = word
-    else:
-        for word in load_dictionary():
+    ____:
+        ___ word __ load_dictionary():
             __ is_palindrome(word):
-                __ len(word) > max_pal:
-                    max_pal = len(word)
+                __ l..(word) > max_pal:
+                    max_pal = l..(word)
                     pal = word
 
-    return pal
+    r.. pal
 
 ___ get_longest_palindrome(words_ N..
 
-    __ not words:
+    __ n.. words:
         words = load_dictionary()
-    palindromes = (word for word in words __ is_palindrome(word))
-    return max(palindromes, key=len)
+    palindromes = (word ___ word __ words __ is_palindrome(word))
+    r.. max(palindromes, key=l..)
 
 print(get_longest_palindrome())

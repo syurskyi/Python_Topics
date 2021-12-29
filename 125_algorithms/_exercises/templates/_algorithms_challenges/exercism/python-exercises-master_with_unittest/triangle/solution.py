@@ -6,25 +6,25 @@ class Triangle(object):
     ___ __init__(self, x, y, z):
         self.sides = (x, y, z)
 
-        __ self._invalid_lengths() or self._violates_inequality():
+        __ self._invalid_lengths() o. self._violates_inequality():
             raise TriangleError
 
     ___ _invalid_lengths(self):
-        return any([side <= 0 for side in self.sides])
+        r.. any([side <= 0 ___ side __ self.sides])
 
     ___ _violates_inequality(self):
         x, y, z = self.sides
-        return any([
+        r.. any([
             x + y <= z,
             x + z <= y,
             y + z <= x,
         ])
 
     ___ kind(self):
-        distinct = len(set(self.sides))
-        __ distinct == 1:
-            return 'equilateral'
-        elif distinct == 2:
-            return 'isosceles'
-        else:
-            return 'scalene'
+        distinct = l..(set(self.sides))
+        __ distinct __ 1:
+            r.. 'equilateral'
+        ____ distinct __ 2:
+            r.. 'isosceles'
+        ____:
+            r.. 'scalene'

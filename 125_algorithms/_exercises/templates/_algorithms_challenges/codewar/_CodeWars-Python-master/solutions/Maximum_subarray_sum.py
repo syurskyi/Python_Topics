@@ -15,17 +15,17 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 ___ maxSequence(arr):
     maximum = 0
     local_maximum = 0
-    for i in arr:
+    ___ i __ arr:
         __ local_maximum > 0:
             local_maximum += i
             __ local_maximum < 0:
                 local_maximum = 0
-            elif local_maximum > maximum:
+            ____ local_maximum > maximum:
                 maximum = local_maximum
-        elif i > 0:
+        ____ i > 0:
             local_maximum += i
 
-    return maximum
+    r.. maximum
 
 
-assert maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
+... maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) __ 6

@@ -9,16 +9,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        __ not s: return 0
-        n = len(s)
-        dp = [[False]*n for _ in range(n)]
+        __ n.. s: r.. 0
+        n = l..(s)
+        dp = [[False]*n ___ _ __ r..(n)]
         res = 0
-        for i in range(n):
-            for j in range(i, -1, -1):
-                __ s[i] == s[j] and (i-j<=1 or dp[i-1][j+1]):
+        ___ i __ r..(n):
+            ___ j __ r..(i, -1, -1):
+                __ s[i] __ s[j] and (i-j<=1 o. dp[i-1][j+1]):
                     dp[i][j] = True
                     res += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -26,11 +26,11 @@ class Solution(object):
             'aaa',
             'aaaaa',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.countSubstrings(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

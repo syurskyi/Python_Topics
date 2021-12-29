@@ -5,10 +5,10 @@ class Solution(object):
     :rtype: int
     """
     __ n <= 3:
-      return n - 1
-    __ n % 3 == 0:
-      return 3 ** (n / 3)
-    __ n % 3 == 1:
-      return 3 ** ((n / 3) - 1) * 4
-    __ n % 3 == 2:
-      return 3 ** (n / 3) * 2
+      r.. n - 1
+    __ n % 3 __ 0:
+      r.. 3 ** (n / 3)
+    __ n % 3 __ 1:
+      r.. 3 ** ((n / 3) - 1) * 4
+    __ n % 3 __ 2:
+      r.. 3 ** (n / 3) * 2

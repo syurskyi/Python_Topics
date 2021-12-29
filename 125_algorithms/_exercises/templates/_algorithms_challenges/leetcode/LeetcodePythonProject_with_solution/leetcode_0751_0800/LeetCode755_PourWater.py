@@ -11,27 +11,27 @@ class Solution(object):
         :type K: int
         :rtype: List[int]
         """
-        __ not heights: return heights
+        __ n.. heights: r.. heights
         idx = 0
         while V > 0:
             idx = K
-            for i in range(K-1, -1, -1):
+            ___ i __ r..(K-1, -1, -1):
                 __ heights[i] > heights[idx]:
                     break
-                elif heights[i] < heights[idx]:
+                ____ heights[i] < heights[idx]:
                     idx = i
             __ idx != K:
                 heights[idx] += 1
                 V -= 1
                 continue
-            for i in range(K+1, len(heights)):
+            ___ i __ r..(K+1, l..(heights)):
                 __ heights[i] > heights[idx]:
                     break
-                elif heights[i] < heights[idx]:
+                ____ heights[i] < heights[idx]:
                     idx = i
             heights[idx] += 1
             V -= 1
-        return heights
+        r.. heights
     
     ___ test(self):
         testCases = [
@@ -54,7 +54,7 @@ class Solution(object):
                 2,
             ],
         ]
-        for heights, v, k in testCases:
+        ___ heights, v, k __ testCases:
             print('heights: %s' % heights)
             print('v: %s' % v)
             print('k: %s' % k)
@@ -62,5 +62,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

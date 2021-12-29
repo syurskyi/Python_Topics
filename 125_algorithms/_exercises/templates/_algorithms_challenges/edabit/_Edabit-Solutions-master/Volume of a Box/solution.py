@@ -1,6 +1,6 @@
 ___ volume_of_box(sizes):
     index = 0
     output = 1
-    for i in sizes:
+    ___ i __ sizes:
         output *= sizes[i]
-    return output
+    r.. output

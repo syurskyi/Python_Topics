@@ -12,8 +12,8 @@ Input: [3,3,7,7,10,11,11]
 Output: 10
 Note: Your solution should run in O(log n) time and O(1) space.
 """
-from typing import List
-from bisect import bisect_right
+____ typing _______ List
+____ bisect _______ bisect_right
 
 
 class Solution:
@@ -23,23 +23,23 @@ class Solution:
 
         binary search with checking mid odd/even
         """
-        n = len(nums)
+        n = l..(nums)
         lo, hi = 0, n
         while lo < hi:
             mid = (lo + hi) // 2
             __ (
-                mid % 2 == 0 and mid + 1 < hi and nums[mid] == nums[mid + 1]
-            ) or (
-                mid % 2 == 1 and mid - 1 >= lo and nums[mid] == nums[mid - 1]
+                mid % 2 __ 0 and mid + 1 < hi and nums[mid] __ nums[mid + 1]
+            ) o. (
+                mid % 2 __ 1 and mid - 1 >= lo and nums[mid] __ nums[mid - 1]
             ):
                 # to make the target is on the right
                 # when mid even, mid and mid + 1 form a pair; there are odd number of elements on the right
                 # when mid odd, mid and mid - 1 form a pair; there are odd number of elements on the right
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return nums[lo]
+        r.. nums[lo]
 
 
     ___ singleNonDuplicate_error(self, nums: List[int]) -> int:
@@ -50,17 +50,17 @@ class Solution:
         should be in the expected position
         binary search, compare the searched index and expected index
         """
-        n = len(nums)
+        n = l..(nums)
         lo, hi = 0, n
         while lo < hi:
             mid = (lo + hi) // 2
             idx = bisect_right(nums, nums[mid], lo, hi)
             __ idx <= mid:
                 hi = mid - 1
-            else:
+            ____:
                 lo = mid
 
-        return nums[hi - 1]
+        r.. nums[hi - 1]
 
 
     ___ singleNonDuplicate_xor(self, nums: List[int]) -> int:
@@ -68,6 +68,6 @@ class Solution:
         XOR O(n)
         """
         ret = nums[0]
-        for e in nums[1:]:
+        ___ e __ nums[1:]:
             ret ^= e
-        return ret
+        r.. ret

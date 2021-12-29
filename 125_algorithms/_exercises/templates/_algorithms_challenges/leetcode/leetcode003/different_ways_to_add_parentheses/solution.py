@@ -30,27 +30,27 @@ class Solution(object):
         :rtype: List[int]
         """
         self.operators = set(['+', '-', '*'])
-        return self.diff_ways(input)
+        r.. self.diff_ways(input)
 
     ___ calculate(self, a, b, operator):
-        return eval('%d %s %d' % (a, operator, b))
+        r.. eval('%d %s %d' % (a, operator, b))
 
     ___ diff_ways(self, inp):
-        __ not inp:
-            return []
-        elif inp.isdigit():
-            return [int(inp)]
-        else:
-            res = []
-            for i, c in enumerate(inp):
-                __ c in self.operators:
+        __ n.. inp:
+            r.. []
+        ____ inp.isdigit():
+            r.. [int(inp)]
+        ____:
+            res    # list
+            ___ i, c __ enumerate(inp):
+                __ c __ self.operators:
                     left = self.diff_ways(inp[:i])
                     right = self.diff_ways(inp[i + 1:])
-                    for l in left:
-                        for r in right:
+                    ___ l __ left:
+                        ___ r __ right:
                             s = self.calculate(l, r, c)
-                            res.append(s)
-            return res
+                            res.a..(s)
+            r.. res
 
 
 s1 = '2*3-4*5'

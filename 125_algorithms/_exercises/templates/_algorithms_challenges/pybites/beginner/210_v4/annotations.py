@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 ___ sum_numbers(numbers: List[int]) -> int:
     """Sums numbers

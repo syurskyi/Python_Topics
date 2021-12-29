@@ -15,14 +15,14 @@ class Solution(object):
     stack = [(1, root)]
     while stack:
       p = stack.pop()
-      __ not p[1]:
+      __ n.. p[1]:
         continue
-      __ p[0] == 0:
+      __ p[0] __ 0:
         __ p[1].val <= prev:
-          return False
+          r.. False
         prev = p[1].val
-      else:
-        stack.append((1, p[1].right))
-        stack.append((0, p[1]))
-        stack.append((1, p[1].left))
-    return True
+      ____:
+        stack.a..((1, p[1].right))
+        stack.a..((0, p[1]))
+        stack.a..((1, p[1].left))
+    r.. True

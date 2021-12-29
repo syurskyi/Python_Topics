@@ -2,7 +2,7 @@
 Premium Question
 https://leetcode.com/problems/palindrome-permutation-ii/
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 __author__ = 'Daniel'
@@ -15,14 +15,14 @@ class Solution(object):
         :rtype: List[str]
         """
         m = defaultdict(int)
-        for c in s:
+        ___ c __ s:
             m[c] += 1
 
-        odd = None
-        for k, v in m.items():
-            __ v % 2 == 1:
-                __ odd is not None:
-                    return []
+        odd = N..
+        ___ k, v __ m.items():
+            __ v % 2 __ 1:
+                __ odd __ n.. N..
+                    r.. []
                 odd = k
 
         cur = ""
@@ -30,23 +30,23 @@ class Solution(object):
             m[odd] -= 1
             cur = odd
 
-        ret = []
+        ret    # list
         # actually only need to build half
-        self.grow(s, m, None, cur, ret)
-        return ret
+        self.grow(s, m, N.., cur, ret)
+        r.. ret
 
     ___ grow(self, s, count_map, pi, cur, ret):
-        __ len(cur) == len(s):
-            ret.append(cur)
-            return
+        __ l..(cur) __ l..(s):
+            ret.a..(cur)
+            r..
 
-        for k in count_map.keys():
+        ___ k __ count_map.keys():
             __ k != pi and count_map[k] > 0:
-                for i in xrange(1, count_map[k]/2+1):  # jump the parent
+                ___ i __ xrange(1, count_map[k]/2+1):  # jump the parent
                     count_map[k] -= i*2
                     self.grow(s, count_map, k, k*i+cur+k*i, ret)
                     count_map[k] += i*2
 
 
-__ __name__ == "__main__":
-    assert Solution().generatePalindromes("aabb") == ['baab', 'abba']
+__ __name__ __ "__main__":
+    ... Solution().generatePalindromes("aabb") __ ['baab', 'abba']

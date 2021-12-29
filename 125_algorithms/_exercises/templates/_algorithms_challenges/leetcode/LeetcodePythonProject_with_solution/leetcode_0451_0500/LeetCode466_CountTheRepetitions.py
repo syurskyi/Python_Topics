@@ -13,20 +13,20 @@ class Solution(object):
         :type n2: int
         :rtype: int
         """
-        __ not s1 or not s2: return 0
+        __ n.. s1 o. n.. s2: r.. 0
         res = self.countHelper(s1*(n1//n2), s2)
         res += self.countHelper(s1*(n1%n2), s2*n2)
-        return res
+        r.. res
     
     ___ countHelper(self, s1, s2):
-        __ not s1 or not s2: return 0
+        __ n.. s1 o. n.. s2: r.. 0
         count = 0
         i, j = 0, 0
-        while i < len(s1) and j < len(s2):
-            __ s1[i] == s2[j]:
+        while i < l..(s1) and j < l..(s2):
+            __ s1[i] __ s2[j]:
                 j += 1
             i += 1
-            __ j == len(s2):
+            __ j __ l..(s2):
                 count += 1
                 j = 0
-        return count
+        r.. count

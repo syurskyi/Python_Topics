@@ -29,22 +29,22 @@ class Solution(object):
         :type words: List[str]
         :rtype: int
         """
-        l = map(len, words)
+        l = map(l.., words)
         codes = map(self.encode, words)
         maxa = 0
-        for i in xrange(len(codes)):
-            for j in xrange(i+1, len(codes)):
-                __ codes[i] & codes[j] == 0:
+        ___ i __ xrange(l..(codes)):
+            ___ j __ xrange(i+1, l..(codes)):
+                __ codes[i] & codes[j] __ 0:
                     maxa = max(maxa, l[i]*l[j])
 
-        return maxa
+        r.. maxa
 
     ___ encode(self, x):
         ret = 0
-        for c in x:
+        ___ c __ x:
             ret |= 1 << (ord(c)-ord('a'))
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) == 16
+__ __name__ __ "__main__":
+    ... Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) __ 16

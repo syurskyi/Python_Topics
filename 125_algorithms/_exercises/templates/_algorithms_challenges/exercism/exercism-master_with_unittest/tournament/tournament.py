@@ -11,11 +11,11 @@ class Team:
 
     @property
     ___ matches_played(self):
-        return self.wins + self.losses + self.draws
+        r.. self.wins + self.losses + self.draws
 
     @property
     ___ points(self):
-        return (self.wins * self.POINTS_PER_WIN) + \
+        r.. (self.wins * self.POINTS_PER_WIN) + \
             (self.draws * self.POINTS_PER_DRAW)
 
     ___ tally_win(self):
@@ -28,7 +28,7 @@ class Team:
         self.losses += 1
 
     ___ __str__(self):
-        return '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
+        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
             self.name, self.matches_played, self.wins, self.draws, self.losses, self.points)
 
 
@@ -47,28 +47,28 @@ class Tournament:
 
     ___ results_table(self):
         table = [self.table_header()]
-        for team in self.sorted_teams():
-            table.append(str(team))
-        return "\n".join(table)
+        ___ team __ self.sorted_teams():
+            table.a..(str(team))
+        r.. "\n".join(table)
 
     ___ sorted_teams(self):
-        alphabetic = sorted(self._teams.values(), key=lambda team: team.name)
-        alphabetic_descending_points = sorted(
-            alphabetic, key=lambda team: team.points, reverse=True)
-        return alphabetic_descending_points
+        alphabetic = s..(self._teams.values(), key=l.... team: team.name)
+        alphabetic_descending_points = s..(
+            alphabetic, key=l.... team: team.points, r.._T..
+        r.. alphabetic_descending_points
 
     ___ parse(self, results):
-        for result in results.split("\n"):
+        ___ result __ results.split("\n"):
             team_a, team_b, outcome = result.split(self.RESULT_SEPERATOR)
             self.maybe_initialize_teams(team_a, team_b)
             self.tally_outcome(team_a, team_b, outcome)
 
     ___ tally_outcome(self, team_a, team_b, outcome):
-        __ outcome == self.WIN:
+        __ outcome __ self.WIN:
             self.tally_win(team_a, team_b)
-        __ outcome == self.LOSS:
+        __ outcome __ self.LOSS:
             self.tally_loss(team_a, team_b)
-        __ outcome == self.DRAW:
+        __ outcome __ self.DRAW:
             self.tally_draw(team_a, team_b)
 
     ___ tally_win(self, winner, loser):
@@ -88,13 +88,13 @@ class Tournament:
         self.maybe_initialize_team(team_b)
 
     ___ maybe_initialize_team(self, name):
-        __ name not in self._teams:
+        __ name n.. __ self._teams:
             self._teams[name] = Team(name)
 
     ___ table_header(self):
-        return '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
+        r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format(
             *self.COLUMN_HEADERS)
 
 
 ___ tally(results):
-    return Tournament(results).results_table()
+    r.. Tournament(results).results_table()

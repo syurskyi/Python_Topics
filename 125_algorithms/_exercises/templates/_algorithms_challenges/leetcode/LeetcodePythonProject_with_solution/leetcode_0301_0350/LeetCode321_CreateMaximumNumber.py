@@ -6,40 +6,40 @@ Created on Mar 18, 2017
 
 class Solution(object):
     ___ maxNumber(self, nums1, nums2, k):
-        len1, len2 = len(nums1), len(nums2)
-        result = []
-        for i in range(0, k+1):
+        len1, len2 = l..(nums1), l..(nums2)
+        result    # list
+        ___ i __ r..(0, k+1):
             j = k-i
-            __ i > len1 or j > len2:
+            __ i > len1 o. j > len2:
                 continue
             left = self.getMax(nums1, i)
             right = self.getMax(nums2, j)
             tmpResult = self.merge(left, right)
             result = max(result, tmpResult)
-        return result
+        r.. result
     
     ___ getMax(self, nums, maxLen):
-        result = []
-        size = len(nums)
-        for x in range(size):
-            while result and len(result)+size-x>maxLen and result[-1]<nums[x]:
+        result    # list
+        size = l..(nums)
+        ___ x __ r..(size):
+            while result and l..(result)+size-x>maxLen and result[-1]<nums[x]:
                 result.pop()
-            __ len(result) < maxLen:
-                result.append(nums[x])
-        return result
+            __ l..(result) < maxLen:
+                result.a..(nums[x])
+        r.. result
     
     ___ merge(self, nums1, nums2):
-        result = []
+        result    # list
         while nums1 and nums2:
             __ nums1 >= nums2:
-                result.append(nums1.pop(0))
-            else:
-                result.append(nums2.pop(0))
+                result.a..(nums1.pop(0))
+            ____:
+                result.a..(nums2.pop(0))
         while nums1:
-            result.append(nums1.pop(0))
+            result.a..(nums1.pop(0))
         while nums2:
-            result.append(nums2.pop(0))
-        return result
+            result.a..(nums2.pop(0))
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -64,7 +64,7 @@ class Solution(object):
                 3,
             ),
         ]
-        for nums1, nums2, k in testCases:
+        ___ nums1, nums2, k __ testCases:
             print('nums1: %s' % (nums1))
             print('nums2: %s' % (nums2))
             print('k: %s' % (k))
@@ -72,6 +72,6 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

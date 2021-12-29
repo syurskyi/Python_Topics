@@ -1,10 +1,10 @@
-from dataclasses import dataclass, field
-from random import shuffle
-from typing import List
+____ dataclasses _______ dataclass, field
+____ random _______ shuffle
+____ typing _______ List
 
-import pytest
+_______ pytest
 
-from bridgehand import Suit, Rank, Card, BridgeHand
+____ bridgehand _______ Suit, Rank, Card, BridgeHand
 
 
 @dataclass
@@ -21,12 +21,12 @@ class TestHand:
 
     ___ __post_init__(self):
         """ Generate actual list of Card instances from card_string """
-        self.card_list = []
-        for suit_holding in self.card_string.split():
+        self.card_list    # list
+        ___ suit_holding __ self.card_string.s.. :
             suit = Suit[suit_holding[0]]
-            for rank in suit_holding[2:]:
+            ___ rank __ suit_holding[2:]:
                 card = Card(suit, Rank[rank])
-                self.card_list.append(card)
+                self.card_list.a..(card)
         shuffle(self.card_list)
 
 
@@ -53,7 +53,7 @@ test_hands = [
     TestHand("S:KJT97 H:AQ843 D:86 C:5", 1, 1, 0, 10, 3, 13, 6),
 ]
 
-hand_pairs = [(BridgeHand(hand.card_list), hand) for hand in test_hands]
+hand_pairs = [(BridgeHand(hand.card_list), hand) ___ hand __ test_hands]
 
 malformed_hands = [
     TestHand("S:AKJ H:QJT9 D:765432 C:AK", 1, 0, 0, 18, 1, 19, 6),
@@ -63,7 +63,7 @@ malformed_hands = [
 
 ___ test_null_cards():
     with pytest.raises(TypeError):
-        BridgeHand(None)
+        BridgeHand(N..)
 
 
 ___ test_wrong_type():
@@ -73,7 +73,7 @@ ___ test_wrong_type():
 
 ___ test_wrong_cards():
     with pytest.raises(ValueError):
-        BridgeHand([Card(Suit.S, Rank.A)] + [None] * 12)
+        BridgeHand([Card(Suit.S, Rank.A)] + [N..] * 12)
 
 
 @pytest.mark.parametrize("hand", malformed_hands)
@@ -84,39 +84,39 @@ ___ test_wrong_number_of_cards(hand):
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_str(bridge_hand, test_hand):
-    assert str(bridge_hand) == test_hand.card_string
+    ... str(bridge_hand) __ test_hand.card_string
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_doubletons(bridge_hand, test_hand):
-    assert bridge_hand.doubletons == test_hand.doubletons
+    ... bridge_hand.doubletons __ test_hand.doubletons
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_hcp(bridge_hand, test_hand):
-    assert bridge_hand.hcp == test_hand.hcp
+    ... bridge_hand.hcp __ test_hand.hcp
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_singletons(bridge_hand, test_hand):
-    assert bridge_hand.singletons == test_hand.singletons
+    ... bridge_hand.singletons __ test_hand.singletons
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_voids(bridge_hand, test_hand):
-    assert bridge_hand.voids == test_hand.voids
+    ... bridge_hand.voids __ test_hand.voids
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_ssp(bridge_hand, test_hand):
-    assert bridge_hand.ssp == test_hand.ssp
+    ... bridge_hand.ssp __ test_hand.ssp
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_total_points(bridge_hand, test_hand):
-    assert bridge_hand.total_points == test_hand.total_points
+    ... bridge_hand.total_points __ test_hand.total_points
 
 
 @pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_ltc(bridge_hand, test_hand):
-    assert bridge_hand.ltc == test_hand.ltc
+    ... bridge_hand.ltc __ test_hand.ltc

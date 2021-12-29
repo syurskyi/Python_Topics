@@ -1,4 +1,4 @@
-import csv
+_______ csv
  
 
 ___ class_rosters(input_file):
@@ -6,17 +6,17 @@ ___ class_rosters(input_file):
         according to the Bite description.
         Return a list holding one item per student
         per class, correctly formatted.'''
-    class_assignments = []
+    class_assignments    # list
     with open(input_file) as csv_file:
         csv_reader = csv.reader(csv_file)
-        for row in csv_reader:
-            row_class_check = [class_d for class_d in row __ class_d != ""]
-            __ len(row_class_check) > 2:
+        ___ row __ csv_reader:
+            row_class_check = [class_d ___ class_d __ row __ class_d != ""]
+            __ l..(row_class_check) > 2:
                 student_id = row_class_check[0]
-                for class_a in row_class_check[2:]:
+                ___ class_a __ row_class_check[2:]:
                     class_name = class_a.split(" ")[0]
-                    class_assignments.append(f"{class_name},2020,{student_id}")
-    return class_assignments
+                    class_assignments.a..(f"{class_name},2020,{student_id}")
+    r.. class_assignments
 
 
 # if __name__ == "__main__":

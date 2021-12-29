@@ -11,7 +11,7 @@ REF: https://leetcode.com/problems/redundant-connection-ii/discuss/108070/Python
 """
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -20,56 +20,56 @@ class Solution:
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        ans = edge = None  # `edge` is the last edge in a loop
+        ans = edge = N..  # `edge` is the last edge in a loop
         adj = collections.defaultdict(set)
         uf = collections.defaultdict(int)
         has_parent = set()
 
-        for u, v in edges:
+        ___ u, v __ edges:
             adj[u].add(v)
 
-            __ v in has_parent:
+            __ v __ has_parent:
                 ans = (u, v)
 
-            __ not self.union(uf, u, v):
+            __ n.. self.union(uf, u, v):
                 edge = (u, v)
 
             has_parent.add(v)
 
-        __ not ans:
-            return edge
+        __ n.. ans:
+            r.. edge
 
         res = self.dfs(ans[1], adj, set())
-        return res __ res else ans
+        r.. res __ res ____ ans
 
     ___ union(self, uf, u, v):
         a = self.find(uf, u)
         b = self.find(uf, v)
 
-        __ a == b:
-            return False
+        __ a __ b:
+            r.. False
 
         uf[b] = a
-        return True
+        r.. True
 
     ___ find(self, uf, u):
-        __ uf[u] == 0:
+        __ uf[u] __ 0:
             uf[u] = u
-            return u
-        __ uf[u] == u:
-            return u
+            r.. u
+        __ uf[u] __ u:
+            r.. u
 
         uf[u] = self.find(uf, uf[u])
-        return uf[u]
+        r.. uf[u]
 
     ___ dfs(self, u, adj, visited):
         # to detect cycle
         visited.add(u)
 
-        for v in adj[u]:
-            __ v in visited:
-                return (u, v)
+        ___ v __ adj[u]:
+            __ v __ visited:
+                r.. (u, v)
 
             res = self.dfs(v, adj, visited)
             __ res:
-                return res
+                r.. res

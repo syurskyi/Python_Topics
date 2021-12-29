@@ -14,8 +14,8 @@ class Codec(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(lambda x: str(len(x))+"/"+x, strs)
-        return reduce(lambda x, y: x+y, strs, "")  # i.e. "".join(strs)
+        strs = map(l.... x: str(l..(x))+"/"+x, strs)
+        r.. reduce(l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode(self, s):
         """
@@ -24,15 +24,15 @@ class Codec(object):
         :type s: str
         :rtype: List[str]
         """
-        strs = []
+        strs    # list
         i = 0
-        while i < len(s):
+        while i < l..(s):
             j = s.index("/", i)
             l = int(s[i:j])
-            strs.append(s[j+1:j+1+l])
+            strs.a..(s[j+1:j+1+l])
             i = j+1+l
 
-        return strs
+        r.. strs
 
 
 class CodecMethod2(object):
@@ -45,8 +45,8 @@ class CodecMethod2(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(lambda x: x.replace("\n", "\n\n")+"_\n_", strs)
-        return reduce(lambda x, y: x+y, strs, "")
+        strs = map(l.... x: x.replace("\n", "\n\n")+"_\n_", strs)
+        r.. reduce(l.... x, y: x+y, strs, "")
 
     ___ decode(self, s):
         """
@@ -57,7 +57,7 @@ class CodecMethod2(object):
         """
         strs = s.split("_\n_")
         strs = strs[:-1]  # clear the trailing delimiter
-        return map(lambda x: x.replace("\n\n", "\n"), strs)
+        r.. map(l.... x: x.replace("\n\n", "\n"), strs)
 
 
 class CodecError(object):
@@ -70,11 +70,11 @@ class CodecError(object):
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(lambda x: x.replace("\x00", "\\x00"), strs)
+        strs = map(l.... x: x.replace("\x00", "\\x00"), strs)
         ret = ""
-        for s in strs:
+        ___ s __ strs:
             ret += s+"\x00"
-        return ret
+        r.. ret
 
     ___ decode(self, s):
         """
@@ -83,10 +83,10 @@ class CodecError(object):
         :type s: str
         :rtype: List[str]
         """
-        __ "\x00" not in s:
-            return []
+        __ "\x00" n.. __ s:
+            r.. []
 
         s = s[:-1]  # traiing \x00
         strs = s.split("\x00")
-        strs = map(lambda x: x.replace("\\x00", "\x00"), strs)
-        return strs
+        strs = map(l.... x: x.replace("\\x00", "\x00"), strs)
+        r.. strs

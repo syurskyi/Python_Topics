@@ -14,21 +14,21 @@ class Solution:
     @return: all valid paths
     """
     ___ binaryTreePathSum2(self, root, target):
-        ans = []
+        ans    # list
         self.dfs(root, target, ans, [])
-        return ans
+        r.. ans
 
     ___ dfs(self, node, target, ans, path):
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
-        path.append(node.val)
+        path.a..(node.val)
 
         remaining = target
-        for i in range(len(path) - 1, -1, -1):
+        ___ i __ r..(l..(path) - 1, -1, -1):
             remaining -= path[i]
-            __ remaining == 0:
-                ans.append(path[i:])
+            __ remaining __ 0:
+                ans.a..(path[i:])
 
         self.dfs(node.left, target, ans, path)
         self.dfs(node.right, target, ans, path)

@@ -6,15 +6,15 @@ Created on Apr 13, 2017
 
 class Solution(object):
     ___ validWordSquare(self, words):
-        __ not words: return False
-        for i, word1 in enumerate(words):
+        __ n.. words: r.. False
+        ___ i, word1 __ enumerate(words):
             word2 = ''
-            for j in range(len(word1)):
-                __ j >= len(words):
-                    return False
-                __ i >= len(words[j]):
-                    return False
+            ___ j __ r..(l..(word1)):
+                __ j >= l..(words):
+                    r.. False
+                __ i >= l..(words[j]):
+                    r.. False
                 word2 += words[j][i]
             __ word1 != word2:
-                return False
-        return True
+                r.. False
+        r.. True

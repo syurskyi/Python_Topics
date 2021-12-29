@@ -43,10 +43,10 @@ class Solution:
             x0k = N - k * (k - 1) // 2
             __ x0k <= 0 :
                 break
-            __ x0k % k == 0:
+            __ x0k % k __ 0:
                 cnt += 1
 
-        return cnt
+        r.. cnt
 
     ___ consecutiveNumbersSum_error(self, N: int) -> int:
         """
@@ -62,27 +62,27 @@ class Solution:
         # assure for divisibility
         """
         cnt = 0
-        for k in range(1, int(N ** 0.5)):  # error
+        ___ k __ r..(1, int(N ** 0.5)):  # error
             x0k = N - k * (k - 1) // 2
-            __ x0k % k == 0:
+            __ x0k % k __ 0:
                 cnt += 1
 
-        return cnt
+        r.. cnt
 
     ___ consecutiveNumbersSum_error(self, N: int) -> int:
         """
         factor related
         9 / 3 = 3
         """
-        __ N == 1:
-            return 1
+        __ N __ 1:
+            r.. 1
 
         cnt = 0
-        for i in range(1, N):
+        ___ i __ r..(1, N):
             d = N // i
             r = N % i
-            __ r == 0 and d - i // 2 > 0:
+            __ r __ 0 and d - i // 2 > 0:
                 cnt += 1
-            elif r == 1 and N == (d + d + 1) * i // 2:
+            ____ r __ 1 and N __ (d + d + 1) * i // 2:
                 cnt += 1
-        return cnt
+        r.. cnt

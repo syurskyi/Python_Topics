@@ -26,7 +26,7 @@ Note:
 1 <= K <= A.length.
 Answers within 10^-6 of the correct answer will be accepted as correct.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -39,14 +39,14 @@ class Solution:
 
         calculating each F[l, k] will need O(N) time, thus total O(n^2 k)
         """
-        n = len(A)
-        prefix_sum = [0 for _ in range(n+1)]
-        for i in range(1, n+1):
+        n = l..(A)
+        prefix_sum = [0 ___ _ __ r..(n+1)]
+        ___ i __ r..(1, n+1):
             prefix_sum[i] = prefix_sum[i-1] + A[i-1]
 
         F = {}
         self.dfs(A, n, prefix_sum, F, K)
-        return F[n, K]
+        r.. F[n, K]
 
     ___ dfs(self, A, l, prefix_sum, F, k):
         """
@@ -54,15 +54,15 @@ class Solution:
         make A[:l] k groups
         """
         __ l < k:
-            return -float('inf')
+            r.. -float('inf')
 
-        __ (l, k) not in F:
-            __ k == 1:
+        __ (l, k) n.. __ F:
+            __ k __ 1:
                 ret = prefix_sum[l] / l
-            else:
-                n = len(A)
+            ____:
+                n = l..(A)
                 ret = -float('inf')
-                for j in range(l-1, -1, -1):
+                ___ j __ r..(l-1, -1, -1):
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = max(
                         ret,
@@ -71,7 +71,7 @@ class Solution:
 
             F[l, k] = ret
 
-        return F[l, k]
+        r.. F[l, k]
 
     ___ dfs_error(self, A, i, prefix_sum, F, k):
         """
@@ -81,19 +81,19 @@ class Solution:
         make A[:i] 1 group
         make A[i:] k - 1 group
         """
-        __ (i, k) not in F:
+        __ (i, k) n.. __ F:
             ret = 0
             avg = prefix_sum[i] / i
             ret += avg
             ret += max(
                 # error
                 self.dfs(A, j, prefix_sum, F, k - 1)
-                for j in range(i, len(A))
+                ___ j __ r..(i, l..(A))
             )
             F[i, k] = ret
 
-        return F[i, k]
+        r.. F[i, k]
 
 
-__ __name__ == "__main__":
-    assert Solution().largestSumOfAverages([9,1,2,3,9], 3) == 20
+__ __name__ __ "__main__":
+    ... Solution().largestSumOfAverages([9,1,2,3,9], 3) __ 20

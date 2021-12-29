@@ -9,14 +9,14 @@ class Solution(object):
         self.nums = nums
     
     ___ reset(self):
-        return self.nums
+        r.. self.nums
     
     ___ shuffle(self):
-        import random
-        newNums = list(self.nums)
-        __ not newNums:
-            return newNums
-        for i in range(len(newNums)-1, 0, -1):
+        _______ random
+        newNums = l..(self.nums)
+        __ n.. newNums:
+            r.. newNums
+        ___ i __ r..(l..(newNums)-1, 0, -1):
             ind = random.randint(0, i)
             newNums[ind], newNums[i] = newNums[i], newNums[ind]
-        return newNums
+        r.. newNums

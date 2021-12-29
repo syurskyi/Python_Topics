@@ -1,7 +1,7 @@
 
 ___ some_list(x):
-    for i in range(x):
-        for j in range(i):
+    ___ i __ r..(x):
+        ___ j __ r..(i):
             yield (i+1)*(j+1)
 
-print(list(some_list(5)))
+print(l..(some_list(5)))

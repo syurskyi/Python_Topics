@@ -5,13 +5,13 @@ c_ MaxStack:
         ma_  []
 
     ___ push  x):
-        stack.append(x)
+        stack.a..(x)
 
         __ ma_:
             __ x > ma_[-1]:
-                ma_.append(x)
+                ma_.a..(x)
         ____
-            ma_.append(x)
+            ma_.a..(x)
 
     ___ pop
         __ stack[-1] __ ma_[-1]:

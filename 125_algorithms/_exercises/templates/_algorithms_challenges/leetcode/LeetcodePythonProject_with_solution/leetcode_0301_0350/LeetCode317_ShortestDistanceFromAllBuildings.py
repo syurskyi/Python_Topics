@@ -10,37 +10,37 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return 0
-        m, n = len(grid), len(grid[0])
-        distance = [[0]*n for _ in range(m)]
-        reach = [[0]*n for _ in range(m)]
+        __ n.. grid o. n.. grid[0]:
+            r.. 0
+        m, n = l..(grid), l..(grid[0])
+        distance = [[0]*n ___ _ __ r..(m)]
+        reach = [[0]*n ___ _ __ r..(m)]
         buildingNum = 0
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 1:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 1:
                     buildingNum += 1
                     queue = [(i, j)]
-                    visited = [[False]*n for _ in range(m)]
+                    visited = [[False]*n ___ _ __ r..(m)]
                     level = 1
                     while queue:
-                        size = len(queue)
-                        for _ in range(size):
+                        size = l..(queue)
+                        ___ _ __ r..(size):
                             i0, j0 = queue.pop(0)
-                            for x, y in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
+                            ___ x, y __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
                                 __ 0 <= x < m and 0 <= y < n and\
-                                    not visited[x][y] and grid[x][y] == 0:
+                                    n.. visited[x][y] and grid[x][y] __ 0:
                                     distance[x][y] += level
                                     reach[x][y] += 1
                                     visited[x][y] = True
-                                    queue.append((x, y))
+                                    queue.a..((x, y))
                         level += 1
         res = float('inf')
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == 0 and reach[i][j] == buildingNum:
-                    res = min(res, distance[i][j])
-        return res __ res != float('inf') else -1
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ 0 and reach[i][j] __ buildingNum:
+                    res = m..(res, distance[i][j])
+        r.. res __ res != float('inf') ____ -1
     
     ___ test(self):
         testCases = [
@@ -50,10 +50,10 @@ class Solution(object):
                 [0, 0, 1, 0, 0],
             ]
         ]
-        for grid in testCases:
+        ___ grid __ testCases:
             result = self.shortestDistance(grid)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -2,12 +2,12 @@
 # Score: 30
 
 
-from collections import Counter, OrderedDict
+____ collections _______ Counter, OrderedDict
 
 
 class OrderedCounter(Counter, OrderedDict):
     pass
 
 
-letters = OrderedCounter(sorted(input())).most_common(3)
-[print(*letter) for letter in letters]
+letters = OrderedCounter(s..(input())).most_common(3)
+[print(*letter) ___ letter __ letters]

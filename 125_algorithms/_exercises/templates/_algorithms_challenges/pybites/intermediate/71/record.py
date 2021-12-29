@@ -1,12 +1,12 @@
 class RecordScore():
     """Class to track a game's maximum score"""
     ___ __init__(self):
-        self.max = None
+        self.max = N..
 
     ___ __call__(self, new):
-        __ self.max == None:
+        __ self.max __ N..
             self.max = new
-        else:
+        ____:
             __ new > self.max:
                 self.max = new
-        return self.max
+        r.. self.max

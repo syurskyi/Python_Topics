@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from identity_and_equality import (
+____ identity_and_equality _______ (
     Car,
     is_same_car_color_and_model,
     is_same_instance_of_car,
@@ -8,7 +8,7 @@ from identity_and_equality import (
 
 
 # `NewList` for tests
-class NewList(list):
+class NewList(l..):
     pass
 
 
@@ -40,7 +40,7 @@ other_car4 = Car("Porsche Cayenne", "black")
     ],
 )
 ___ test_car_age(days, expected):
-    assert Car.age(days) == expected
+    ... Car.age(days) __ expected
 
 
 # Test staticmethod Car.age
@@ -58,7 +58,7 @@ ___ test_car_age(days, expected):
     ],
 )
 ___ test_the_same_configuration(list1, list2, expected):
-    assert Car.has_same_configuration(list1, list2) == expected
+    ... Car.has_same_configuration(list1, list2) __ expected
 
 
 @pytest.mark.parametrize(
@@ -71,7 +71,7 @@ ___ test_the_same_configuration(list1, list2, expected):
     ],
 )
 ___ test_is_same_car_color_and_model(car1, car2, expected):
-    assert is_same_car_color_and_model(car1, car2) == expected
+    ... is_same_car_color_and_model(car1, car2) __ expected
 
 
 @pytest.mark.parametrize(
@@ -83,4 +83,4 @@ ___ test_is_same_car_color_and_model(car1, car2, expected):
     ],
 )
 ___ test_is_the_same_instance_of_car(car1, car2, expected):
-    assert is_same_instance_of_car(car1, car2) == expected
+    ... is_same_instance_of_car(car1, car2) __ expected

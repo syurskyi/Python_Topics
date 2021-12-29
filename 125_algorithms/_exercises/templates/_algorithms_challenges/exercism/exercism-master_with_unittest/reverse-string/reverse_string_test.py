@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from reverse_string import reverse
+____ reverse_string _______ reverse
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.1
@@ -22,5 +22,5 @@ class ReverseStringTests(unittest.TestCase):
         self.assertEqual(reverse('racecar'), 'racecar')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

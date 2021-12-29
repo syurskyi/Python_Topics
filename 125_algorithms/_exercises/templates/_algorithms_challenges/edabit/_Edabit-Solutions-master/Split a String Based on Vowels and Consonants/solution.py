@@ -2,9 +2,9 @@ ___ split(txt):
     output = ""
     output2 = ""
     vset = {"a","e","i","o","u"}
-    for i in txt:
-        __ i in vset:
+    ___ i __ txt:
+        __ i __ vset:
             output += i
-        __ i not in vset:
+        __ i n.. __ vset:
             output2 += i
-    return output + output2
+    r.. output + output2

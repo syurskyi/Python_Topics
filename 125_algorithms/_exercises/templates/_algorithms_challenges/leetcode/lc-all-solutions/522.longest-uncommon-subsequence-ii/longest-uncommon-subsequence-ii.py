@@ -6,28 +6,28 @@ class Solution(object):
     """
 
     ___ findLUSlength(a, b):
-      return max(len(a), len(b)) __ a != b else -1
+      r.. max(l..(a), l..(b)) __ a != b ____ -1
 
     ___ isSubsequence(s, t):
-      d = collections.defaultdict(list)
-      for i, c in enumerate(t):
-        d[c].append(i)
+      d = collections.defaultdict(l..)
+      ___ i, c __ enumerate(t):
+        d[c].a..(i)
       start = 0
-      for c in s:
+      ___ c __ s:
         idx = bisect.bisect_left(d[c], start)
-        __ len(d[c]) == 0 or idx >= len(d[c]):
-          return False
+        __ l..(d[c]) __ 0 o. idx >= l..(d[c]):
+          r.. False
         start = d[c][idx] + 1
-      return True
+      r.. True
 
     ans = -1
-    strs.sort(key=len, reverse=True)
-    for i in range(len(strs)):
+    strs.sort(key=l.., r.._T..
+    ___ i __ r..(l..(strs)):
       flag = True
-      for j in range(len(strs)):
-        __ i != j and (findLUSlength(strs[i], strs[j]) == -1 or isSubsequence(strs[i], strs[j])):
+      ___ j __ r..(l..(strs)):
+        __ i != j and (findLUSlength(strs[i], strs[j]) __ -1 o. isSubsequence(strs[i], strs[j])):
           flag = False
           break
       __ flag:
-        return len(strs[i])
-    return -1
+        r.. l..(strs[i])
+    r.. -1

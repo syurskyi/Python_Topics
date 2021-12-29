@@ -13,13 +13,13 @@ class Solution(object):
         left = 0
         hashset = set()
         maxLen = 0
-        for i, c in enumerate(s):
-            while left < i and c in hashset:
+        ___ i, c __ enumerate(s):
+            while left < i and c __ hashset:
                 hashset.discard(s[left])
                 left += 1
             hashset.add(c)
             maxLen = max(maxLen, i-left+1)
-        return maxLen
+        r.. maxLen
     
     ___ test(self):
         testCases = [
@@ -27,11 +27,11 @@ class Solution(object):
             'bbbb',
             'abcdba',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.lengthOfLongestSubstring(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -6,23 +6,23 @@ Created on Mar 11, 2017
 
 class NumMatrix(object):
     ___ __init__(self, matrix):
-        __ not matrix:
-            self.tbl = None
-            return
-        m, n = len(matrix), len(matrix[0])
-        tbl = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m):
-            for j in range(n):
+        __ n.. matrix:
+            self.tbl = N..
+            r..
+        m, n = l..(matrix), l..(matrix[0])
+        tbl = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 tbl[i+1][j+1] = tbl[i][j+1]+tbl[i+1][j]+matrix[i][j]-tbl[i][j]
         self.tbl = tbl
     
     ___ sumRegion(self, row1, col1, row2, col2):
-        return self.tbl[row2+1][col2+1] -\
+        r.. self.tbl[row2+1][col2+1] -\
             self.tbl[row2+1][col1] -\
             self.tbl[row1][col2+1]+\
             self.tbl[row1][col1]
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     matrix = [
         [3, 0, 1, 4, 2],
         [5, 6, 3, 2, 1],

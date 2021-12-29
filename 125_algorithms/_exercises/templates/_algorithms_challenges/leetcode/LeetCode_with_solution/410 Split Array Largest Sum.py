@@ -23,8 +23,8 @@ There are four ways to split nums into two subarrays.
 The best way is to split it into [7,2,5] and [10,8],
 where the largest sum among the two subarrays is only 18.
 """
-from typing import List
-from functools import lru_cache
+____ typing _______ List
+____ functools _______ lru_cache
 
 
 class SolutionDP:
@@ -34,24 +34,24 @@ class SolutionDP:
         Let F[l][k] be the minimized max sum in nums[:l] with k parts
         F[l][k] = max(F[j][k-1], sum(nums[j:l])), minimize over j
         """
-        n = len(nums)
+        n = l..(nums)
         sums = [0]
-        for e in nums:
-            sums.append(sums[-1] + e)
+        ___ e __ nums:
+            sums.a..(sums[-1] + e)
 
-        F = [[float("inf") for _ in range(m + 1)] for _ in range(n + 1)]
-        for l in range(1, n + 1):
+        F = [[float("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
+        ___ l __ r..(1, n + 1):
             F[l][1] = sums[l] - sums[0]
         # or F[0][0] = 0
 
-        for l in range(1, n + 1):
-            for k in range(1, m + 1):
-                for j in range(l):
-                    F[l][k] = min(
+        ___ l __ r..(1, n + 1):
+            ___ k __ r..(1, m + 1):
+                ___ j __ r..(l):
+                    F[l][k] = m..(
                         F[l][k], max(F[j][k-1], sums[l] - sums[j])
                     )
 
-        return F[n][m]
+        r.. F[n][m]
 
 
 class Solution:
@@ -60,26 +60,26 @@ class Solution:
         Binary search over the subarray sum values
         """
         lo = max(nums)
-        hi = sum(nums) + 1
+        hi = s..(nums) + 1
         ret = hi
         while lo < hi:
             mid = (lo + hi) // 2
             cnt = 1  # pitfall, initial is 1 (the 1st running sum)
             cur_sum = 0
-            for e in nums:
+            ___ e __ nums:
                 __ cur_sum + e > mid:
                     cnt += 1
                     cur_sum = e
-                else:
+                ____:
                     cur_sum += e
 
             __ cnt <= m:
-                ret = min(ret, mid)  # pitfall. Condition satisfied
+                ret = m..(ret, mid)  # pitfall. Condition satisfied
                 hi = mid
-            else:
+            ____:
                 lo = mid + 1
 
-        return ret
+        r.. ret
 
 
 class SolutionTLE2:
@@ -90,28 +90,28 @@ class SolutionTLE2:
         """
         memoization with 1 less param
         """
-        for n in nums:
-            self.sums.append(self.sums[-1] + n)
+        ___ n __ nums:
+            self.sums.a..(self.sums[-1] + n)
 
-        ret = self.dfs(len(nums), m)
-        return ret
+        ret = self.dfs(l..(nums), m)
+        r.. ret
 
-    @lru_cache(maxsize=None)
+    @lru_cache(maxsize=N..)
     ___ dfs(self, hi, m):
         """
         j break the nums[:hi] into left and right part
         """
-        __ m == 1:
-            return self.sums[hi] - self.sums[0]
+        __ m __ 1:
+            r.. self.sums[hi] - self.sums[0]
 
         mini = float("inf")
-        for j in range(hi):
+        ___ j __ r..(hi):
             right = self.sums[hi] - self.sums[j]
             left = self.dfs(j, m - 1)
             # minimize the max
-            mini = min(mini, max(left, right))
+            mini = m..(mini, max(left, right))
 
-        return mini
+        r.. mini
 
 
 class SolutionTLE:
@@ -124,29 +124,29 @@ class SolutionTLE:
 
         backtracking + memoization
         """
-        for n in nums:
-            self.sums.append(self.sums[-1] + n)
-        ret = self.dfs(tuple(nums), 0, len(nums), m)
-        return ret
+        ___ n __ nums:
+            self.sums.a..(self.sums[-1] + n)
+        ret = self.dfs(tuple(nums), 0, l..(nums), m)
+        r.. ret
 
-    @lru_cache(maxsize=None)
+    @lru_cache(maxsize=N..)
     ___ dfs(self, nums, lo, hi, m):
         """
         j break the nums[lo:hi] into left and right part
         """
-        __ m == 1:
-            return self.sums[hi] - self.sums[lo]
+        __ m __ 1:
+            r.. self.sums[hi] - self.sums[lo]
 
         mini = float("inf")
-        for j in range(lo, hi):
+        ___ j __ r..(lo, hi):
             left = self.sums[j] - self.sums[lo]
             right = self.dfs(nums, j, hi, m - 1)
             # minimize the max
-            mini = min(mini, max(left, right))
+            mini = m..(mini, max(left, right))
 
-        return mini
+        r.. mini
 
 
-__ __name__ == "__main__":
-    assert Solution().splitArray([1, 4, 4], 3) == 4
-    assert Solution().splitArray([7,2,5,10,8], 2) == 18
+__ __name__ __ "__main__":
+    ... Solution().splitArray([1, 4, 4], 3) __ 4
+    ... Solution().splitArray([7,2,5,10,8], 2) __ 18

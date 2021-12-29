@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import deque
+____ collections _______ deque
 
 __author__ = 'Daniel'
 
@@ -14,19 +14,19 @@ class MovingAverage(object):
         """
         self.size = size
         self.q = deque()
-        self.sum = 0
+        self.s.. = 0
 
     ___ next(self, val):
         """
         :type val: int
         :rtype: float
         """
-        self.q.append(val)
-        self.sum += val
-        __ len(self.q) > self.size:
-            self.sum -= self.q.popleft()
+        self.q.a..(val)
+        self.s.. += val
+        __ l..(self.q) > self.size:
+            self.s.. -= self.q.popleft()
 
-        return float(self.sum) / len(self.q)
+        r.. float(self.s..) / l..(self.q)
 
 
 # Your MovingAverage object will be instantiated and called as such:

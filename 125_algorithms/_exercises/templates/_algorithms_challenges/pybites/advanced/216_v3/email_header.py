@@ -1,4 +1,4 @@
-import re
+_______ re
 
 EMAIL_HEADER = """Return-Path: <bounces+5555-7602-redacted-info>
 ...
@@ -19,7 +19,7 @@ X-SG-EID: P3IPuU2e1Ijn5xEegYUQ...
 X-SendGrid-Contentd-ID: {"test_id":"1371661776"}"""  # noqa E501
 
 
-___ get_email_details(header: str) -> dict:
+___ get_email_details(header: str) -> d..:
     """User re.search or re.match to capture the from, to, subject
        and date fields. Return the groupdict() of matching object, see:
        https://docs.python.org/3.7/library/re.html#re.Match.groupdict
@@ -33,4 +33,4 @@ ___ get_email_details(header: str) -> dict:
                 (?:.*\n)*
                 ^Date:\s*(?P<date>.*?)\s+[-+]"""
     results = re.search(regex, header, re.MULTILINE | re.VERBOSE)
-    return results.groupdict() __ results is not None else results
+    r.. results.groupdict() __ results __ n.. N.. ____ results

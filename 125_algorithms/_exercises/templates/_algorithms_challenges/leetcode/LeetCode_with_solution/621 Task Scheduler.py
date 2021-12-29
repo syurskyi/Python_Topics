@@ -23,9 +23,9 @@ Note:
 The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
-from typing import List
-from collections import deque, defaultdict
-import heapq
+____ typing _______ List
+____ collections _______ deque, defaultdict
+_______ heapq
 
 
 class Solution:
@@ -43,23 +43,23 @@ class Solution:
         Find the idle count
         """
         counter = defaultdict(int)
-        for t in tasks:
+        ___ t __ tasks:
             counter[t] += 1
 
         maxa = 0
         max_cnt = 0
-        for v in counter.values():
+        ___ v __ counter.values():
             __ v > maxa:
                 maxa = v
                 max_cnt = 1
-            elif v == maxa:
+            ____ v __ maxa:
                 max_cnt += 1
 
         page_cnt = maxa - 1
         free_page_size = n + 1 - max_cnt
-        small_tasks = len(tasks) - max_cnt * maxa
+        small_tasks = l..(tasks) - max_cnt * maxa
         idle = max(0, page_cnt * free_page_size - small_tasks)
-        return len(tasks) + idle
+        r.. l..(tasks) + idle
 
 
     ___ leastInterval_complicated(self, tasks: List[str], n: int) -> int:
@@ -69,17 +69,17 @@ class Solution:
         cool down queue
         """
         counter = defaultdict(int)
-        for t in tasks:
+        ___ t __ tasks:
             counter[t] += 1
 
         pq = [
             (-v, k)
-            for k, v in counter.items()
+            ___ k, v __ counter.items()
         ]
         heapq.heapify(pq)
         q = deque()  # stores (t, k)
         clock = 0
-        while pq or q:
+        while pq o. q:
             __ q and q[0][0] <= clock:
                 # don't do while in while when clock++
                 _, k = q.popleft()
@@ -89,13 +89,13 @@ class Solution:
                 _, k = heapq.heappop(pq)
                 counter[k] -= 1
                 __ counter[k] > 0:
-                    q.append((clock + 1 + n, k))
+                    q.a..((clock + 1 + n, k))
 
             clock += 1
 
-        return clock
+        r.. clock
 
 
-__ __name__ == "__main__":
-    assert Solution().leastInterval(["A","A","A","B","B","B"], 0) == 6
-    assert Solution().leastInterval(["A","A","A","B","B","B"], 2) == 8
+__ __name__ __ "__main__":
+    ... Solution().leastInterval(["A","A","A","B","B","B"], 0) __ 6
+    ... Solution().leastInterval(["A","A","A","B","B","B"], 2) __ 8

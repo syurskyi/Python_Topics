@@ -5,7 +5,7 @@ Note:
 """
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -27,30 +27,30 @@ class Solution:
         :type grid: list[list[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return -1
+        __ n.. grid o. n.. grid[0]:
+            r.. -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         cnt = 0
         times = collections.defaultdict(int)
         steps = collections.defaultdict(int)
 
-        for x in range(m):
-            for y in range(n):
-                __ grid[x][y] == self.HOUSE:
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ grid[x][y] __ self.HOUSE:
                     cnt += 1
                     self.bfs(grid, x, y, times, steps)
 
         ans = INF = float('inf')
 
-        for (x, y), t in times.items():
-            __ t == cnt and steps[x, y] < ans:
+        ___ (x, y), t __ times.items():
+            __ t __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1
 
     ___ bfs(self, grid, x, y, times, steps):
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)
         step = 0
@@ -58,23 +58,23 @@ class Solution:
         while queue:
             step += 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y __ queue:
+                ___ dx, dy __ (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
                 ):
                     _x = x + dx
                     _y = y + dy
 
-                    __ not (0 <= _x < m and 0 <= _y < n):
+                    __ n.. (0 <= _x < m and 0 <= _y < n):
                         continue
                     __ grid[_x][_y] != self.EMPTY:
                         continue
-                    __ (_x, _y) in visited:
+                    __ (_x, _y) __ visited:
                         continue
 
                     visited.add((_x, _y))
-                    _queue.append((_x, _y))
+                    _queue.a..((_x, _y))
 
                     steps[_x, _y] += step
                     times[_x, _y] += 1
@@ -82,7 +82,7 @@ class Solution:
             queue, _queue = _queue, []
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -102,16 +102,16 @@ class Solution:
         :type grid: list[list[int]]
         :rtype: int
         """
-        __ not grid or not grid[0]:
-            return -1
+        __ n.. grid o. n.. grid[0]:
+            r.. -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         cnt = 0
         ids = collections.defaultdict(set)  # record house ids
         steps = collections.defaultdict(int)  # total steps for all houses
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 __ grid[x][y] != self.HOUSE:
                     continue
 
@@ -121,23 +121,23 @@ class Solution:
 
         ans = INF = float('inf')
 
-        for (x, y), hids in ids.items():
-            __ len(hids) == cnt and steps[x, y] < ans:
+        ___ (x, y), hids __ ids.items():
+            __ l..(hids) __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1
 
     ___ dfs(self, grid, x, y, id, ids, steps, step):
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
 
-        for dx, dy in (
+        ___ dx, dy __ (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
         ):
             _x = x + dx
             _y = y + dy
 
-            __ not (0 <= _x < m and 0 <= _y < n):
+            __ n.. (0 <= _x < m and 0 <= _y < n):
                 continue
             __ grid[_x][_y] != self.EMPTY:
                 continue

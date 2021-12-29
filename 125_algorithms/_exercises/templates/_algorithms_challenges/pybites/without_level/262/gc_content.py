@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 
 ___ calculate_gc_content(sequence):
@@ -6,11 +6,11 @@ ___ calculate_gc_content(sequence):
     Receives a DNA sequence (A, G, C, or T)
     Returns the percentage of GC content (rounded to the last two digits)
     """
-    seq = [c for c in sequence.lower() __ c in 'agct']
-    counts = dict(Counter(seq))
+    seq = [c ___ c __ sequence.lower() __ c __ 'agct']
+    counts = d..(Counter(seq))
 
-    total = sum(counts.values())
-    gc_pct = sum([count for key, count
-                  in counts.items() __ key in 'gc']) / total
+    total = s..(counts.values())
+    gc_pct = s..([count ___ key, count
+                  __ counts.items() __ key __ 'gc']) / total
 
-    return round(100 * gc_pct, 2)
+    r.. round(100 * gc_pct, 2)

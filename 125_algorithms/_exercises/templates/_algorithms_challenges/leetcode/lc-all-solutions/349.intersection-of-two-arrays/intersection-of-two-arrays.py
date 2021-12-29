@@ -6,12 +6,12 @@ class Solution(object):
     :rtype: List[int]
     """
     d = {}
-    ans = []
-    for num in nums1:
+    ans    # list
+    ___ num __ nums1:
       d[num] = d.get(num, 0) + 1
 
-    for num in nums2:
-      __ num in d:
-        ans.append(num)
+    ___ num __ nums2:
+      __ num __ d:
+        ans.a..(num)
         del d[num]
-    return ans
+    r.. ans

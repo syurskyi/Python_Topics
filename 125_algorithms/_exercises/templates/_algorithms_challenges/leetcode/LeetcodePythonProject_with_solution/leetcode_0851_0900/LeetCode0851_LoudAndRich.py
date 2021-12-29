@@ -10,25 +10,25 @@ class Solution(object):
         :type quiet: List[int]
         :rtype: List[int]
         """
-        n = len(quiet)
+        n = l..(quiet)
         richer2 = {}
-        for i in range(n):
-            richer2[i] = []
-        for v in richer:
-            richer2[v[1]].append(v[0])
-        res = [-1 for i in range(n)]
-        for i in range(n):
+        ___ i __ r..(n):
+            richer2[i]    # list
+        ___ v __ richer:
+            richer2[v[1]].a..(v[0])
+        res = [-1 ___ i __ r..(n)]
+        ___ i __ r..(n):
             self.dfs(i, quiet, richer2, res)
-        return res
+        r.. res
     
     ___ dfs(self, i, quiet, richer2, res):
         __ (res[i] >= 0):
-            return res[i]
+            r.. res[i]
         res[i] = i
-        for j in richer2[i]:
+        ___ j __ richer2[i]:
             __ quiet[res[i]] > quiet[self.dfs(j, quiet, richer2, res)]:
                 res[i] = res[j]
-        return res[i]
+        r.. res[i]
     
     ___ test(self):
         testCase = [
@@ -37,10 +37,10 @@ class Solution(object):
                 [3,2,5,4,6,1,7,0],
             ],
         ]
-        for richer, quiet in testCase:
+        ___ richer, quiet __ testCase:
             res = self.loudAndRich(richer, quiet)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

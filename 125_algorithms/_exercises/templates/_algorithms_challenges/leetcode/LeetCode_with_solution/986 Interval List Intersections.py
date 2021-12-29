@@ -21,7 +21,7 @@ Note:
 0 <= B.length < 1000
 0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9
 """
-from typing import List
+____ typing _______ List
 
 
 # Definition for an interval.
@@ -48,40 +48,40 @@ class Solution:
         pop by ends
         """
         i, j = 0, 0
-        m, n = len(A), len(B)
-        ret = []
+        m, n = l..(A), l..(B)
+        ret    # list
         while i < m and j < n:
             lo = max(A[i].start, B[j].start)
-            hi = min(A[i].end, B[j].end)
+            hi = m..(A[i].end, B[j].end)
             __ lo <= hi:
-                ret.append(Interval(lo, hi))
+                ret.a..(Interval(lo, hi))
             __ A[i].end > B[j].end:
                 j += 1
-            else:
+            ____:
                 i += 1
 
-        return ret
+        r.. ret
 
     ___ intervalIntersection_complex(self, A: List[Interval], B: List[Interval]) -> List[Interval]:
         """
         like merge
         """
-        ret = []
+        ret    # list
         i = 0
         j = 0
-        m, n = len(A), len(B)
+        m, n = l..(A), l..(B)
         while i < m and j < n:
             a = A[i]
             b = B[j]
             __ b.start <= a.end <= b.end:
-                ret.append(Interval(max(a.start, b.start), a.end))
+                ret.a..(Interval(max(a.start, b.start), a.end))
                 i += 1
-            elif a.start <= b.end <= a.end:
-                ret.append(Interval(max(a.start, b.start), b.end))
+            ____ a.start <= b.end <= a.end:
+                ret.a..(Interval(max(a.start, b.start), b.end))
                 j += 1
-            else:
+            ____:
                 __ a.end < b.start:
                     i += 1
-                else:
+                ____:
                     j += 1
-        return ret
+        r.. ret

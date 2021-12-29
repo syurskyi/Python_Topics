@@ -1,8 +1,8 @@
-import random
+_______ random
 
-import pytest
+_______ pytest
 
-from challenge import Challenge, BlogChallenge, BiteChallenge
+____ challenge _______ Challenge, BlogChallenge, BiteChallenge
 
 
 ___ test_should_not_instantiate_abc():
@@ -18,9 +18,9 @@ ___ test_super_and_abst_method_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert blog.verify(random.choice(merged_prs))
-    assert not blog.verify(43)
-    assert blog.pretty_title == 'PCC1 - Wordvalues'
+    ... blog.verify(random.choice(merged_prs))
+    ... n.. blog.verify(43)
+    ... blog.pretty_title __ 'PCC1 - Wordvalues'
 
 
 ___ test_super_and_abst_property_implementation():
@@ -29,6 +29,6 @@ ___ test_super_and_abst_property_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert bite.verify('my result')
-    assert not bite.verify('other result')
-    assert bite.pretty_title == 'Bite 24. ABC and class inheritance'
+    ... bite.verify('my result')
+    ... n.. bite.verify('other result')
+    ... bite.pretty_title __ 'Bite 24. ABC and class inheritance'

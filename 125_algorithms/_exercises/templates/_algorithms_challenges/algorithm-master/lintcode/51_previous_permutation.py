@@ -18,10 +18,10 @@ class Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        __ not nums or len(nums) < 2:
-            return nums
+        __ n.. nums o. l..(nums) < 2:
+            r.. nums
 
-        n = len(nums)
+        n = l..(nums)
         i = n - 2
         while i >= 0 and nums[i] <= nums[i + 1]:
             i -= 1
@@ -39,4 +39,4 @@ class Solution:
             i += 1
             j -= 1
 
-        return nums
+        r.. nums

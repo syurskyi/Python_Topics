@@ -9,14 +9,14 @@ class Scrabble:
 
     @classmethod
     ___ score(cls, word):
-        __ not cls.valid(word):
-            return 0
-        return sum([cls.LETTER_VALUES[c.lower()] for c in word])
+        __ n.. cls.valid(word):
+            r.. 0
+        r.. s..([cls.LETTER_VALUES[c.lower()] ___ c __ word])
 
     @classmethod
     ___ valid(cls, word):
-        return word.isalpha()
+        r.. word.isalpha()
 
 
 ___ score(word):
-    return Scrabble.score(word)
+    r.. Scrabble.score(word)

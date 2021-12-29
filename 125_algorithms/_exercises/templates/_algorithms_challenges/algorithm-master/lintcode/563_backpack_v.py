@@ -8,20 +8,20 @@ class Solution:
     @return: An integer
     """
     ___ backPackV(self, A, target):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        dp = [[0] * (target + 1) for _ in range(n + 1)]
+        n = l..(A)
+        dp = [[0] * (target + 1) ___ _ __ r..(n + 1)]
         dp[0][0] = 1
 
-        for i in range(1, n + 1):
-            for j in range(target + 1):
+        ___ i __ r..(1, n + 1):
+            ___ j __ r..(target + 1):
                 dp[i][j] = dp[i - 1][j]
                 __ j >= A[i - 1]:
                     dp[i][j] += dp[i - 1][j - A[i - 1]]
 
-        return dp[n][target]
+        r.. dp[n][target]
 
 
 """
@@ -34,15 +34,15 @@ class Solution:
     @return: An integer
     """
     ___ backPackV(self, A, target):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for i in range(n):
-            for j in range(target, A[i] - 1, -1):
+        ___ i __ r..(n):
+            ___ j __ r..(target, A[i] - 1, -1):
                 dp[j] += dp[j - A[i]]
 
-        return dp[target]
+        r.. dp[target]

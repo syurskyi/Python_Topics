@@ -1,4 +1,4 @@
-import re
+_______ re
 
 cars = {
     'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],
@@ -14,20 +14,20 @@ ___ get_all_jeeps(cars=cars):
        (original order)"""
 
 
-    return ', '.join(cars['Jeep'])
+    r.. ', '.join(cars['Jeep'])
 
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
 
 
-    result = []
+    result    # list
 
 
-    for value in cars.values():
-        result.append(value[0])
+    ___ value __ cars.values():
+        result.a..(value[0])
 
-    return result
+    r.. result
 
 
 
@@ -35,18 +35,18 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    result = []
+    result    # list
     
 
     regex = re.compile(grep,flags=re.I)
 
-    for value in cars.values():
-        for car in value:
+    ___ value __ cars.values():
+        ___ car __ value:
             __ regex.search(car):
-                result.append(car)
+                result.a..(car)
     
     result.sort()
-    return result
+    r.. result
 
 
 ___ sort_car_models(cars=cars):
@@ -55,11 +55,11 @@ ___ sort_car_models(cars=cars):
     
 
     copy = {} 
-    for key,value in cars.items():
-        copy[key] = sorted(value)
+    ___ key,value __ cars.items():
+        copy[key] = s..(value)
 
     
-    return copy
+    r.. copy
 
 
 

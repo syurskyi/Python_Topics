@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from Previous.income import get_income_distribution
+____ Previous.income _______ get_income_distribution
 
 EXPECTED = {'High income': ['Aruba',
                             'Argentina',
@@ -48,10 +48,10 @@ EXPECTED = {'High income': ['Aruba',
 
 @pytest.fixture(scope="module")
 ___ actual():
-    return get_income_distribution()
+    r.. get_income_distribution()
 
 
 @pytest.mark.parametrize("income, countries", EXPECTED.items())
 ___ test_return_function(actual, income, countries):
-    assert income in actual
-    assert sorted(actual[income]) == sorted(countries)
+    ... income __ actual
+    ... s..(actual[income]) __ s..(countries)

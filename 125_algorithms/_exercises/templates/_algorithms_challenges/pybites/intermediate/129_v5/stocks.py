@@ -1,6 +1,6 @@
-from collections import Counter
+____ collections _______ Counter
 
-import requests
+_______ requests
 
 STOCK_DATA = 'https://bit.ly/2MzKAQg'
 
@@ -18,14 +18,14 @@ ___ _cap_str_to_mln_float(cap):
        - if 'M' in cap value, strip it off and return value as float,
        - if 'B', strip it off and multiple by 1,000 and return
          value as float"""
-    __ cap == 'n/a':
-        return 0.0
-    else:
+    __ cap __ 'n/a':
+        r.. 0.0
+    ____:
         cap = cap.strip().lstrip('$')
-        __ cap[-1] == 'M':
-            return float(cap[:-1])
-        __ cap[-1] == 'B':
-            return float(cap[:-1]) * 1000.0
+        __ cap[-1] __ 'M':
+            r.. float(cap[:-1])
+        __ cap[-1] __ 'B':
+            r.. float(cap[:-1]) * 1000.0
         raise BaseException('Oh no! error in cap value.')
 
 
@@ -33,20 +33,20 @@ ___ get_industry_cap(industry):
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    return round(sum([_cap_str_to_mln_float(co['cap']) for co in data __ co['industry'] == industry]), 3)
+    r.. round(s..([_cap_str_to_mln_float(co['cap']) ___ co __ data __ co['industry'] __ industry]), 3)
 
 
 ___ get_stock_symbol_with_highest_cap():
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    return sorted([(co['symbol'], _cap_str_to_mln_float(co['cap'])) for co in data], key=lambda x: x[1])[-1][0]
+    r.. s..([(co['symbol'], _cap_str_to_mln_float(co['cap'])) ___ co __ data], key=l.... x: x[1])[-1][0]
 
 
 ___ get_sectors_with_max_and_min_stocks():
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     sector_list = Counter()
-    for co in data:
+    ___ co __ data:
         sector_list += Counter({co['sector']: _cap_str_to_mln_float(co['cap'])})
-    sectors = sorted([(k, v) for k, v in sector_list.items()], key=lambda x: x[1])
-    return sectors[-1][0], sectors[0][0]
+    sectors = s..([(k, v) ___ k, v __ sector_list.items()], key=l.... x: x[1])
+    r.. sectors[-1][0], sectors[0][0]

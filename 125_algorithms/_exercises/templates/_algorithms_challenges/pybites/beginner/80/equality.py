@@ -1,4 +1,4 @@
-from enum import Enum
+____ enum _______ Enum
 
 
 class Equality(Enum):
@@ -18,14 +18,14 @@ ___ check_equality(list1, list2):
        - return SAME_UNORDERED_DEDUPED if they have the same unordered content
          and reduced to unique items
        - return NO_EQUALITY if none of the previous cases match"""
-    __ list1 is list2:
-        return Equality.SAME_REFERENCE
-    elif list1 == list2:
-        return Equality.SAME_ORDERED
-    elif sorted(list1) == sorted(list2):
-        return Equality.SAME_UNORDERED
-    elif list(dict.fromkeys(list1)) == list(dict.fromkeys(list2)):
-        return Equality.SAME_UNORDERED_DEDUPED
-    elif list1 != list2:
-        return Equality.NO_EQUALITY
+    __ list1 __ list2:
+        r.. Equality.SAME_REFERENCE
+    ____ list1 __ list2:
+        r.. Equality.SAME_ORDERED
+    ____ s..(list1) __ s..(list2):
+        r.. Equality.SAME_UNORDERED
+    ____ l..(d...f..(list1)) __ l..(d...f..(list2)):
+        r.. Equality.SAME_UNORDERED_DEDUPED
+    ____ list1 != list2:
+        r.. Equality.NO_EQUALITY
 

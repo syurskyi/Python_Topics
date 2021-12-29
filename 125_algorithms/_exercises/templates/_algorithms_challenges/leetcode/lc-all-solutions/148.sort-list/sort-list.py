@@ -12,16 +12,16 @@ class Solution(object):
     """
     __ head:
       fast = slow = head
-      pre = None
+      pre = N..
 
       while fast and fast.next:
         pre = slow
         slow = slow.next
         fast = fast.next.next
 
-      __ not pre:
-        return head
-      pre.next = None
+      __ n.. pre:
+        r.. head
+      pre.next = N..
 
       left = self.sortList(head)
       right = self.sortList(slow)
@@ -31,7 +31,7 @@ class Solution(object):
         __ left.val < right.val:
           p.next = left
           left = left.next
-        else:
+        ____:
           p.next = right
           right = right.next
         p = p.next
@@ -40,4 +40,4 @@ class Solution(object):
         p.next = left
       __ right:
         p.next = right
-      return dummy.next
+      r.. dummy.next

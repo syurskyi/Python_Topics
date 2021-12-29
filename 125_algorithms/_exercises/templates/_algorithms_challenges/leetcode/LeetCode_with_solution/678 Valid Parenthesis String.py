@@ -33,29 +33,29 @@ class Solution:
         Better Solution:
         keep two stack: stak of "(" and stack of "*"
         """
-        stk_left = []
-        stk_star = []
-        for i, c in enumerate(s):
-            __ c == "(":
-                stk_left.append(i)
-            elif c == "*":
-                stk_star.append(i)
-            else:
+        stk_left    # list
+        stk_star    # list
+        ___ i, c __ enumerate(s):
+            __ c __ "(":
+                stk_left.a..(i)
+            ____ c __ "*":
+                stk_star.a..(i)
+            ____:
                 __ stk_left:
                     stk_left.pop()
-                elif stk_star:
+                ____ stk_star:
                     stk_star.pop()
-                else:
-                    return False
+                ____:
+                    r.. False
 
         while stk_left and stk_star and stk_star[-1] > stk_left[-1]:
             stk_star.pop()
             stk_left.pop()
 
-        return not stk_left
+        r.. n.. stk_left
 
 
-__ __name__ == "__main__":
-    assert Solution().checkValidString("(*))") == True
-    assert Solution().checkValidString("*(") == False
-    assert Solution().checkValidString("(*)") == True
+__ __name__ __ "__main__":
+    ... Solution().checkValidString("(*))") __ True
+    ... Solution().checkValidString("*(") __ False
+    ... Solution().checkValidString("(*)") __ True

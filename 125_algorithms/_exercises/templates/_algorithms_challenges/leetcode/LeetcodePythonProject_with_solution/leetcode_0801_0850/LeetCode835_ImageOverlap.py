@@ -10,19 +10,19 @@ class Solution(object):
         :type B: List[List[int]]
         :rtype: int
         """
-        import collections
-        n = len(A)
+        _______ collections
+        n = l..(A)
         #encode the position of 1 in A and B
         #we can' t use i//n*n + i%n. Although it is a distinct way to encode position
-        LA = [(i, j) for i in range(n) for j in range(n) __ A[i][j] == 1]
-        LB = [(i, j) for i in range(n) for j in range(n) __ B[i][j] == 1]
+        LA = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ A[i][j] __ 1]
+        LB = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ B[i][j] __ 1]
         counts = collections.defaultdict(int)
         res = 0
-        for i in LA:
-            for j in LB:
+        ___ i __ LA:
+            ___ j __ LB:
                 counts[(i[0]-j[0], i[1]-j[1])] += 1
                 res = max(res, counts[(i[0]-j[0], i[1]-j[1])])
-        return res
+        r.. res
     
     ___ largestOverlap_another(self, A, B):
         """
@@ -30,11 +30,11 @@ class Solution(object):
         :type B: List[List[int]]
         :rtype: int
         """
-        n = len(A)
-        la = [i/n*100 + i%n for i in range(n*n) __ A[i/n][i%n]]
-        lb = [i/n*100 + i%n for i in range(n*n) __ B[i/n][i%n]]
+        n = l..(A)
+        la = [i/n*100 + i%n ___ i __ r..(n*n) __ A[i/n][i%n]]
+        lb = [i/n*100 + i%n ___ i __ r..(n*n) __ B[i/n][i%n]]
         count = {}
-        for i in la:
-            for j in lb:
+        ___ i __ la:
+            ___ j __ lb:
                 count[i-j] = count.get(i-j, 0)+1
-        return max(count.values() or [0])
+        r.. max(count.values() o. [0])

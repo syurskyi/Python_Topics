@@ -1,21 +1,21 @@
-a =  [int(i) for i in input().split()]
+a =  [int(i) ___ i __ input().s.. ]
 a.remove(a[-1])
 swap_count = 0
 seed = 0
 
-for i in range(len(a)):
-    __ i == len(a)-1:
+___ i __ r..(l..(a)):
+    __ i __ l..(a)-1:
         break
     __ a[i] > a[i+1]:
         swap_count += 1
         temp = a[i]
         a[i] = a[i+1]
         a[i+1] = temp
-    else:
+    ____:
         continue
 
 #seed = seed - 4513010
-for j in range(len(a)):
+___ j __ r..(l..(a)):
     #print('index',j,'value is',a[j])
     seed = (seed + a[j]) * 113
     

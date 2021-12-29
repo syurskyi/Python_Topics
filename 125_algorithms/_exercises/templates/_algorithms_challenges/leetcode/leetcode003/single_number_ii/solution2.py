@@ -18,20 +18,20 @@ class Solution(object):
         """
         # An 32-bit integer has at most 20 bits as base-3
         m = 20
-        pow3 = [1 for _ in range(m)]
-        for i in range(1, m):
+        pow3 = [1 ___ _ __ r..(m)]
+        ___ i __ r..(1, m):
             pow3[i] = pow3[i - 1] * 3
         print pow3
 
-        bits = [0 for _ in range(m)]
+        bits = [0 ___ _ __ r..(m)]
         # For each bit of every integer, do XOR on three elements
-        for i in range(m):
-            for c in nums:
+        ___ i __ r..(m):
+            ___ c __ nums:
                 bits[i] = (bits[i] + c / pow3[i]) % 3
         res = 0
-        for i in range(m):
+        ___ i __ r..(m):
             res += pow3[i] * bits[i]
-        return res
+        r.. res
 
 
 a1 = [2, 2, 3, 2]

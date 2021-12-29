@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution(object):
@@ -16,8 +16,8 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head:
-            return head
+        __ n.. head:
+            r.. head
 
         dummy = ListNode(0)
         dummy.next = head
@@ -29,5 +29,5 @@ class Solution(object):
             # incorrect evaluation order
             # pre, cur, cur.next = cur, cur.next, pre
 
-        dummy.next.next = None  # original head
-        return pre  # new head
+        dummy.next.next = N..  # original head
+        r.. pre  # new head

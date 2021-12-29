@@ -11,17 +11,17 @@ class Solution(object):
         :type t: str
         :rtype: int
         """
-        m, n = len(s), len(t)
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m):
+        m, n = l..(s), l..(t)
+        dp = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m):
             dp[i][0] = 1
-        for i in range(m):
-            for j in range(n):
-                __ s[i] == t[j]:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ s[i] __ t[j]:
                     dp[i+1][j+1] = dp[i][j] + dp[i][j+1]
-                else:
+                ____:
                     dp[i+1][j+1] = dp[i][j+1]
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         testCases= [
@@ -30,7 +30,7 @@ class Solution(object):
             ('ABCDE', 'ACE'),
             ('ABCDE', 'AEC'),
         ]
-        for s, t in testCases:
+        ___ s, t __ testCases:
             print('s: %s, t: %s' % (s, t))
             result = self.numDistinct(s, t)
             print('result: %s' % (result))

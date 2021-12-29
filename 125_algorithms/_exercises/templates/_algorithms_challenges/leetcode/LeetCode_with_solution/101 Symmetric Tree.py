@@ -26,8 +26,8 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -37,18 +37,18 @@ class Solution(object):
         :param root: TreeNode
         :return: boolean
         """
-        __ not root:
-            return True
+        __ n.. root:
+            r.. True
 
-        return self.isSymmetrical(root.left, root.right)
+        r.. self.isSymmetrical(root.left, root.right)
 
     ___ isSymmetrical(self, l, r):
-        __ not l and not r:
-            return True
+        __ n.. l and n.. r:
+            r.. True
 
         # recursive
         __ (l and r and
-            l.val == r.val and self.isSymmetrical(l.left, r.right) and self.isSymmetrical(l.right, r.left)):
-            return True
+            l.val __ r.val and self.isSymmetrical(l.left, r.right) and self.isSymmetrical(l.right, r.left)):
+            r.. True
 
-        return False
+        r.. False

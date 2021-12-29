@@ -4,21 +4,21 @@
 # though still slower than the built-in int(hexstring, base=16), of course.
 
 
-hexchars_to_int = dict(zip('0123456789', range(10)))
-hexchars_to_int.update(zip('abcdef', range(10, 16)))
-hexchars_to_int.update(zip('ABCDEFG', range(10, 16)))
+hexchars_to_int = d..(zip('0123456789', r..(10)))
+hexchars_to_int.update(zip('abcdef', r..(10, 16)))
+hexchars_to_int.update(zip('ABCDEFG', r..(10, 16)))
 
 
 ___ hexa(hexstring):
     result = 0
-    hex_of_lastseen = None
+    hex_of_lastseen = N..
     try:
-        for hex_of_lastseen in hexstring:
+        ___ hex_of_lastseen __ hexstring:
             result = result*16 + hexchars_to_int[hex_of_lastseen]
     except KeyError:
         # not a valid hexchar
-        hex_of_lastseen = None
-    __ hex_of_lastseen is None:
+        hex_of_lastseen = N..
+    __ hex_of_lastseen __ N..
         # hexstring was empty or triggered KeyError
         raise ValueError('Invalid hexadecimal string')
-    return result
+    r.. result

@@ -1,8 +1,8 @@
-import os
-import re
-from difflib import SequenceMatcher
-import itertools
-from urllib.request import urlretrieve
+_______ os
+_______ re
+____ difflib _______ SequenceMatcher
+_______ itertools
+____ urllib.request _______ urlretrieve
 
 # prep
 TAG_HTML = re.compile(r'<category>([^<]+)</category>')
@@ -25,23 +25,23 @@ ___ _get_tags(tempfile=TEMPFILE):
         content = f.read().lower()
     # take a small subset to keep it performant
     tags = TAG_HTML.findall(content)
-    tags = [tag for tag in tags __ len(tag) > MIN_TAG_LEN]
-    return set(tags)
+    tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]
+    r.. set(tags)
 
 
 ___ get_similarities(tags_ N..
     """Should return a list of similar tag pairs (tuples)"""
-    tags = tags or _get_tags()
-    result = []
-    tags = list(tags)
-    for word_1 in tags:
-        for word_2 in tags:
-            __ word_1 == word_2:
+    tags = tags o. _get_tags()
+    result    # list
+    tags = l..(tags)
+    ___ word_1 __ tags:
+        ___ word_2 __ tags:
+            __ word_1 __ word_2:
                 continue
-            sm = SequenceMatcher(None,word_1,word_2)
+            sm = SequenceMatcher(N..,word_1,word_2)
             print(sm.ratio())
             __ sm.ratio() > .95:
-                result.append((word_1,word_2))
+                result.a..((word_1,word_2))
     print(result)
-    return result
+    r.. result
 

@@ -1,23 +1,23 @@
 #ask user for number of records
 data = int(input())
-result = []
+result    # list
 #run the following logic while list result is less than data
-while len(result) < data:
+while l..(result) < data:
     #split all the records so that it can be accessed differently
-    num = input().split()
-    for i in range(0,len(num)):
+    num = input().s..
+    ___ i __ r..(0,l..(num)):
         
         digitsum = 0
         #take data individually to perform weighted sum
         currnum = num[i]
         
         #get the length of the current weighted sum
-        for j in range(1,len(currnum)+1):
+        ___ j __ r..(1,l..(currnum)+1):
             #calculate the sum
             digitsum +=j * int(currnum[j-1])
         #appending the result to the result list
-        result.append(digitsum)
+        result.a..(digitsum)
 
 #displaying the records
-for i in result:
+___ i __ result:
     print(i,end=(' '))

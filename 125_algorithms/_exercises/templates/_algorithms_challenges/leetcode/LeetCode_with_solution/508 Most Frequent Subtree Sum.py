@@ -30,11 +30,11 @@ signed integer.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -47,21 +47,21 @@ class Solution:
         counter = defaultdict(int)
         self.traverse(root, counter)
         ret = [[], 0]
-        for k, v in counter.items():
+        ___ k, v __ counter.items():
             __ v > ret[1]:
                 ret[0] = [k]
                 ret[1] = v
-            elif v == ret[1]:
-                ret[0].append(k)
+            ____ v __ ret[1]:
+                ret[0].a..(k)
 
-        return ret[0]
+        r.. ret[0]
 
     ___ traverse(self, root, counter):
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
         cur = root.val
         cur += self.traverse(root.left, counter)
         cur += self.traverse(root.right, counter)
         counter[cur] += 1
-        return cur
+        r.. cur

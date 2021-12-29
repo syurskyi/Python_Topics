@@ -11,30 +11,30 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         nums.sort()
-        n = len(nums)
-        res = []
-        for i in range(n-3):
-            __ i > 0 and nums[i] == nums[i-1]:
+        n = l..(nums)
+        res    # list
+        ___ i __ r..(n-3):
+            __ i > 0 and nums[i] __ nums[i-1]:
                 continue
-            for j in range(i+1, n-2):
-                __ j > i+1 and nums[j] == nums[j-1]:
+            ___ j __ r..(i+1, n-2):
+                __ j > i+1 and nums[j] __ nums[j-1]:
                     continue
                 k, l = j+1, n-1
                 while k < l:
                     tmp = nums[i]+nums[j]+nums[k]+nums[l]
-                    __ tmp == target:
-                        res.append([nums[i], nums[j], nums[k], nums[l]])
+                    __ tmp __ target:
+                        res.a..([nums[i], nums[j], nums[k], nums[l]])
                         k += 1
                         l -= 1
-                        while k < l and nums[k-1] == nums[k]:
+                        while k < l and nums[k-1] __ nums[k]:
                             k += 1
-                        while k < l and nums[l+1] == nums[l]:
+                        while k < l and nums[l+1] __ nums[l]:
                             l -= 1
-                    elif tmp < target:
+                    ____ tmp < target:
                         k += 1
-                    else:
+                    ____:
                         l -= 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -43,11 +43,11 @@ class Solution(object):
                 0,
             ],
         ]
-        for nums, target in testCases:
+        ___ nums, target __ testCases:
             print('nums: %s' % nums)
             result = self.fourSum(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -12,8 +12,8 @@ ___ intersection(llA, llB
     lenA  le_(llA)
     lenB  le_(llB)
 
-    shorter  llA __ lenA < lenB else llB
-    longer  llB __ lenA < lenB else llA
+    shorter  llA __ lenA < lenB ____ llB
+    longer  llB __ lenA < lenB ____ llA
 
     diff  le_(longer) - le_(shorter)
     longerNode  longer.head

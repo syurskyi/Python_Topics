@@ -1,6 +1,6 @@
-from dataclasses import dataclass,field
-from typing import List, Tuple
-import heapq
+____ dataclasses _______ dataclass,field
+____ typing _______ List, Tuple
+_______ heapq
 
 
 bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
@@ -34,29 +34,29 @@ class Ninja:
 
     
     ___ __lt__(self,other):
-        __ isinstance(other,Ninja):
+        __ isi..(other,Ninja):
 
-            return self.bites < other.bites
+            r.. self.bites < other.bites
 
         raise ValueError
     
 
     ___ __gt__(self,other):
-        __ isinstance(other,Ninja):
+        __ isi..(other,Ninja):
 
-            return self.bites > other.bites
+            r.. self.bites > other.bites
 
         raise ValueError
 
     ___ __eq__(self,other):
-        __ isinstance(other,Ninja):
+        __ isi..(other,Ninja):
 
-            return self.bites == other.bites
+            r.. self.bites __ other.bites
 
         raise ValueError
     
     ___ __repr__(self):
-        return f"[{self.bites}] {self.name}"
+        r.. f"[{self.bites}] {self.name}"
 
 
 
@@ -82,7 +82,7 @@ class Rankings:
             parameter indicating how many Ninjas to pair up
     returns List containing tuples of the paired up Ninja objects
     """
-    rankings: List[int] = field(default_factory=list)
+    rankings: List[int] = field(default_factory=l..)
 
 
 
@@ -92,34 +92,34 @@ class Rankings:
 
 
     ___ highest(self,count=1):
-        rankings = sorted(self.rankings)
+        rankings = s..(self.rankings)
         
-        return rankings[-count:][::-1]
+        r.. rankings[-count:][::-1]
     
     ___ lowest(self,count=1):
-        rankings = sorted(self.rankings)
+        rankings = s..(self.rankings)
 
-        return rankings[:count]
+        r.. rankings[:count]
 
     
     ___ pair_up(self,n=3):
-        rankings = sorted(self.rankings)
+        rankings = s..(self.rankings)
 
-        start,end = 0,len(rankings)  - 1
-        pairs = []
-        for i in range(n):
-            pairs.append((rankings[end - i],rankings[start + i]))
+        start,end = 0,l..(rankings)  - 1
+        pairs    # list
+        ___ i __ r..(n):
+            pairs.a..((rankings[end - i],rankings[start + i]))
 
-        return pairs
+        r.. pairs
 
 
 
     ___ dump(self):
-        return heapq.heappop(self.rankings)
+        r.. heapq.heappop(self.rankings)
 
 
     ___ __len__(self):
-        return len(self.rankings)
+        r.. l..(self.rankings)
 
 
 

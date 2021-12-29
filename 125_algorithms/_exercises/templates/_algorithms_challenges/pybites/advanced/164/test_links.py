@@ -1,16 +1,16 @@
-import os
-from pathlib import Path
-import platform
-import subprocess
+_______ os
+____ pathlib _______ Path
+_______ platform
+_______ subprocess
 
-import pytest
+_______ pytest
 
 # no need to import make_html_links as we call links.py from CLI!
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 SCRIPT = 'links.py'
-IS_LOCAL = platform.system() == 'Darwin'
-MY_CODE = SCRIPT __ IS_LOCAL else TMP / SCRIPT
+IS_LOCAL = platform.system() __ 'Darwin'
+MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT
 
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
@@ -18,14 +18,14 @@ MY_CODE = SCRIPT __ IS_LOCAL else TMP / SCRIPT
 @pytest.fixture
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
-    return f
+    r.. f
 
 
 ___ _create_and_verify_links(my_file, lines, expected_links):
     my_file.write_bytes(b'\n'.join(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
     output = subprocess.check_output(cmd, shell=True).splitlines()
-    assert all(link in output for link in expected_links)
+    ... a..(link __ output ___ link __ expected_links)
 
 
 ___ test_make_html_links_first_data_set(my_file):

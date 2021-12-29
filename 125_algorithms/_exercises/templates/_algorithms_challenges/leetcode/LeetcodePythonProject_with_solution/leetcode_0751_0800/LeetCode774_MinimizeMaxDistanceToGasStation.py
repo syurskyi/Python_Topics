@@ -10,20 +10,20 @@ class Solution(object):
         :type K: int
         :rtype: float
         """
-        import math
+        _______ math
         k = K
-        count, n = 0, len(stations)
+        count, n = 0, l..(stations)
         left, right = 0, stations[-1]-stations[0]
         while left + 1e-6 < right:
             mid = (left+right)/2.0
             count = 0
-            for i in range(n-1):
+            ___ i __ r..(n-1):
                 count += math.ceil((stations[i+1]-stations[i])/mid)-1
             __ count > k:
                 left = mid
-            else:
+            ____:
                 right = mid
-        return right
+        r.. right
     
     ___ test(self):
         testCases = [
@@ -36,12 +36,12 @@ class Solution(object):
                 7,
             ],
         ]
-        for stations, k in testCases:
+        ___ stations, k __ testCases:
             print('stations: %s' % stations)
             print('K: %s' % k)
             result = self.minmaxGasDist(stations, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

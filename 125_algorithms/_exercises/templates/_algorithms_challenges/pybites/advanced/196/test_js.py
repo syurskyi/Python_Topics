@@ -1,44 +1,44 @@
-import pytest
+_______ pytest
 
-from js import JsObject as JS
+____ js _______ JsObject as JS
 
 
 @pytest.fixture
 ___ D():
     """Create a JsObject object"""
-    return JS(a=1, b=2, c=3)
+    r.. JS(a=1, b=2, c=3)
 
 
 ___ test_object_type(D):
-    assert type(D) == JS
+    ... type(D) __ JS
 
 
 ___ test_assert_regular_dict_behavior(D):
-    assert D['a'] == 1
-    assert D['b'] == 2
-    assert D['c'] == 3
+    ... D['a'] __ 1
+    ... D['b'] __ 2
+    ... D['c'] __ 3
     D['d'] = 4
-    assert len(D) == 4
+    ... l..(D) __ 4
     del D['b']
-    assert 'b' not in D
-    assert len(D) == 3
-    assert list(D.keys()) == ['a', 'c', 'd']
-    assert list(D.values()) == [1, 3, 4]
+    ... 'b' n.. __ D
+    ... l..(D) __ 3
+    ... l..(D.keys()) __ ['a', 'c', 'd']
+    ... l..(D.values()) __ [1, 3, 4]
 
 
 ___ test_assert_js_behavior(D):
-    assert D.a == 1
-    assert D.b == 2
-    assert D.c == 3
+    ... D.a __ 1
+    ... D.b __ 2
+    ... D.c __ 3
     D.d = 4
-    assert len(D) == 4
+    ... l..(D) __ 4
     del D.b
-    D.update(dict(e=5))
-    assert D.e == 5
+    D.update(d..(e=5))
+    ... D.e __ 5
 
 
 ___ test_supports_nesting(D):
     D.d = JS(e=5)
-    assert D.d.e == 5
+    ... D.d.e __ 5
     D.d.e = JS(f=6)
-    assert D.d.e.f == 6
+    ... D.d.e.f __ 6

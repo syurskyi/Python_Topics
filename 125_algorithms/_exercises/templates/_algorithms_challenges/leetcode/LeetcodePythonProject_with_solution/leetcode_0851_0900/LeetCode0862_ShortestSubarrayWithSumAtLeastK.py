@@ -11,19 +11,19 @@ class Solution(object):
         :rtype: int
         """
         arr, k = A, K
-        n = len(arr)
+        n = l..(arr)
         arr2 = [0]*(n+1)
-        for i in range(n):
+        ___ i __ r..(n):
             arr2[i+1] = arr2[i] + arr[i]
-        d = []
+        d    # list
         res = n+1
-        for i in range(n+1):
+        ___ i __ r..(n+1):
             while d and arr2[i] - arr2[d[0]] >= k:
-                res = min(res, i-d.pop(0))
+                res = m..(res, i-d.pop(0))
             while d and arr2[i] <= arr2[d[-1]]:
                 d.pop()
-            d.append(i)
-        return res __ res <= n else -1
+            d.a..(i)
+        r.. res __ res <= n ____ -1
     
     ___ test(self):
         testCase = [
@@ -56,10 +56,10 @@ class Solution(object):
 #                 5,
 #             ],
         ]
-        for a, k in testCase:
+        ___ a, k __ testCase:
             res = self.shortestSubarray(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

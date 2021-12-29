@@ -1,10 +1,10 @@
 class Solution:
   ___ getIntersectionNode(self, headA, headB):
-    __ headA is None or headB is None:
-      return None
+    __ headA __ N.. o. headB __ N..
+      r.. N..
     pa = headA
     pb = headB
-    while pa is not pb:
-      pa = headB __ pa is None else pa.next
-      pb = headA __ pb is None else pb.next
-    return pa
+    while pa __ n.. pb:
+      pa = headB __ pa __ N.. ____ pa.next
+      pb = headA __ pb __ N.. ____ pb.next
+    r.. pa

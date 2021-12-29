@@ -4,16 +4,16 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        __ not s:
-            return -1
+        __ n.. s:
+            r.. -1
 
         freq = {}
 
-        for c in s:
+        ___ c __ s:
             freq[c] = freq.get(c, 0) + 1
 
-        for i in range(len(s)):
-            __ freq[s[i]] == 1:
-                return i
+        ___ i __ r..(l..(s)):
+            __ freq[s[i]] __ 1:
+                r.. i
 
-        return -1
+        r.. -1

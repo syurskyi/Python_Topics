@@ -1,4 +1,4 @@
-import re
+_______ re
 
 
 class Solution:
@@ -7,19 +7,19 @@ class Solution:
         :type E: str
         :rtype: str
         """
-        S = []  # signs
+        S    # list  # signs
 
         __ E[0] != '-':
-            S.append('+')
+            S.a..('+')
 
-        for c in E:
-            __ c == '+' or c == '-':
-                S.append(c)
+        ___ c __ E:
+            __ c __ '+' o. c __ '-':
+                S.a..(c)
 
         a, b = 0, 1
         i = 0
-        for frac in re.split('\+|-', E):
-            __ not frac:
+        ___ frac __ re.split('\+|-', E):
+            __ n.. frac:
                 continue
 
             _a, _b = frac.split('/')
@@ -27,9 +27,9 @@ class Solution:
             _b = int(_b)
 
             # if needs to prevent overflow, `// gcd`
-            __ S[i] == '+':
+            __ S[i] __ '+':
                 a = a * _b + _a * b
-            else:
+            ____:
                 a = a * _b - _a * b
 
             b = b * _b
@@ -40,9 +40,9 @@ class Solution:
 
             i += 1
 
-        return '{}/{}'.format(a, b)
+        r.. '{}/{}'.format(a, b)
 
     ___ get_gcd(self, a, b):
         while b:
             a, b = b, a % b
-        return a
+        r.. a

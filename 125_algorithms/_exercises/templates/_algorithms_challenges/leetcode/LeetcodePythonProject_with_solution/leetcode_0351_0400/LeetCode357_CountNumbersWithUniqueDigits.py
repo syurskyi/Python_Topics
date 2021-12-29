@@ -6,7 +6,7 @@ Created on Mar 23, 2017
 
 class Solution(object):
     ___ countNumbersWithUniqueDigits(self, n):
-        __ n == 0: return 1
+        __ n __ 0: r.. 1
         res = 10
         uniqueDigits = 9
         availableNumbers = 9
@@ -15,4 +15,4 @@ class Solution(object):
             res += uniqueDigits
             availableNumbers -= 1
             n -= 1
-        return res
+        r.. res

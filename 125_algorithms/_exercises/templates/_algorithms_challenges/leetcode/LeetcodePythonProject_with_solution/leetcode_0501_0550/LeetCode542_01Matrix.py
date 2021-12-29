@@ -10,18 +10,18 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n = len(matrix), len(matrix[0])
-        distance = [[float('inf')]*n for _ in range(m)]
-        queue = []
-        for i in range(m):
-            for j in range(n):
-                __ matrix[i][j] == 0:
+        m, n = l..(matrix), l..(matrix[0])
+        distance = [[float('inf')]*n ___ _ __ r..(m)]
+        queue    # list
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ matrix[i][j] __ 0:
                     distance[i][j] = 0
-                    queue.append((i, j, 0))
+                    queue.a..((i, j, 0))
         while queue:
             i, j, d = queue.pop(0)
-            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
                 __ 0 <= x < m and 0 <= y < n and distance[x][y] > d+1:
                     distance[x][y] = d+1
-                    queue.append((x, y, d+1))
-        return distance
+                    queue.a..((x, y, d+1))
+        r.. distance

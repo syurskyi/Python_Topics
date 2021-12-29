@@ -1,6 +1,6 @@
-from random import random
+____ random _______ random
 
-x  [i..(random()*100)for i in range(20)]
+x  [i..(random()*100)___ i __ r..(20)]
 print(x)
 
 myset  set(x)
@@ -8,8 +8,8 @@ myset  set(x)
 highest  N..
 frequent  0
 
-for item in myset:
-    freq  x.count(item)
+___ item __ myset:
+    freq  x.c.. item)
 
     __ freq > frequent:
         frequent  freq

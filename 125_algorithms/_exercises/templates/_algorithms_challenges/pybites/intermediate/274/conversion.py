@@ -8,17 +8,17 @@ ___ dec_to_base(number, base):
     
     ___ dec_to_base_helper(number,base,x=0):
     # return n
-        __ not number:
-            return 0
+        __ n.. number:
+            r.. 0
         
 
         remainder = number % base
 
         
-        return dec_to_base_helper(number//base,base,x +1) + remainder *10**x
+        r.. dec_to_base_helper(number//base,base,x +1) + remainder *10**x
 
 
     
-    return dec_to_base_helper(number,base)
+    r.. dec_to_base_helper(number,base)
 
 

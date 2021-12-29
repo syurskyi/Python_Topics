@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from translate import fix_translation
+____ translate _______ fix_translation
 
 bite_15_en = '''<p>Iterate over the given <code>names</code> and <code>countries list</code>s, <strong>printing</strong> them prepending the number of the loop (starting at 1). Here is the output you need to deliver:<pre>
 1. Julian     Australia
@@ -92,4 +92,4 @@ ___ test_fix_translation(org, trans, fix):
     print('trans', len(trans.splitlines()))
     print('fix', len(fix.splitlines()))
     """
-    assert fix_translation(org, trans) == fix
+    ... fix_translation(org, trans) __ fix

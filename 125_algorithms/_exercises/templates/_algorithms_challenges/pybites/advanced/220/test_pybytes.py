@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from pybytes import Duration, PythonBytes
+____ pybytes _______ Duration, PythonBytes
 
 REAL_PYTHON = "realpython.com"
 PYBITES = 'pybit.es'
@@ -8,13 +8,13 @@ PYBITES = 'pybit.es'
 
 @pytest.fixture(scope="module")
 ___ pb():
-    return PythonBytes()
+    r.. PythonBytes()
 
 
 ___ test_get_episodes_pybites_was_mentioned(pb):
     actual = pb.get_episode_numbers_for_mentioned_domain(PYBITES)
     expected = ['106', '98', '34', '26', '14']
-    assert sorted(actual) == sorted(expected)
+    ... s..(actual) __ s..(expected)
 
 
 ___ test_get_episodes_realpython_was_mentioned(pb):
@@ -22,13 +22,13 @@ ___ test_get_episodes_realpython_was_mentioned(pb):
     expected = ['143', '134', '123', '119', '118', '114', '110', '102',
                 '100', '97', '88', '86', '85', '84', '83', '82', '80', '76',
                 '75', '71', '66', '56', '37', '20', '7']
-    assert sorted(actual) == sorted(expected)
+    ... s..(actual) __ s..(expected)
 
 
 ___ test_number_episodes_with_special_guests(pb):
     actual = pb.number_episodes_with_special_guest()
     expected = 17
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_number_episodes_with_special_guests_half_feed(pb):
@@ -38,7 +38,7 @@ ___ test_number_episodes_with_special_guests_half_feed(pb):
     actual = pb.number_episodes_with_special_guest()
     expected = 7
     pb.entries = org_entries  # pb is module scope so restore entries
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_get_most_mentioned_domain_names_default_top_15(pb):
@@ -58,7 +58,7 @@ ___ test_get_most_mentioned_domain_names_default_top_15(pb):
                 ('https://docs.pytest.org', 11),
                 ('http://rollbar.com', 11),
                 ('https://dbader.org', 9)]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_get_most_mentioned_domain_names_top_5(pb):
@@ -68,7 +68,7 @@ ___ test_get_most_mentioned_domain_names_top_5(pb):
                 ('https://medium.com', 38),
                 ('https://www.python.org', 26),
                 ('https://www.reddit.com', 26)]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_average_episode_duration_full_feed(pb):
@@ -77,12 +77,12 @@ ___ test_average_episode_duration_full_feed(pb):
     expected = Duration(avg=1439, max_=max_, min_=min_)
     # depending the way mean is calculated, results might differ
     expected_alt = Duration(avg=1442, max_=max_, min_=min_)
-    assert actual in (expected, expected_alt)
+    ... actual __ (expected, expected_alt)
 
 
 ___ test_average_episode_duration_half_feed(pb):
     """To prevent hardcoding the answer"""
-    num_half_episodes = int(len(pb.entries)/2)
+    num_half_episodes = int(l..(pb.entries)/2)
     org_entries = pb.entries
     pb.entries = pb.entries[:num_half_episodes]
     actual = pb.get_average_duration_episode_in_seconds()
@@ -91,4 +91,4 @@ ___ test_average_episode_duration_half_feed(pb):
     # depending the way mean is calculated, results might differ
     expected_alt = Duration(avg=1607, max_=max_, min_=min_)
     pb.entries = org_entries  # pb is module scope so restore entries
-    assert actual in (expected, expected_alt)
+    ... actual __ (expected, expected_alt)

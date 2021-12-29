@@ -36,16 +36,16 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        ret = []
-        for i in xrange(1, n+1):
+        ret    # list
+        ___ i __ xrange(1, n+1):
             cur = ""
-            __ i % 3 == 0:
+            __ i % 3 __ 0:
                 cur += "Fizz"
-            __ i % 5 == 0:
+            __ i % 5 __ 0:
                 cur += "Buzz"
-            __ not cur:
+            __ n.. cur:
                 cur = str(i)
 
-            ret.append(cur)
+            ret.a..(cur)
 
-        return ret
+        r.. ret

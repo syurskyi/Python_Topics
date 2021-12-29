@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from leap import is_leap_year
+____ leap _______ is_leap_year
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -19,5 +19,5 @@ class YearTest(unittest.TestCase):
         self.assertTrue(is_leap_year(2000))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -1,20 +1,20 @@
 ___ intersection_union(lst1, lst2):
-    inter = []
-    uni = []
+    inter    # list
+    uni    # list
     output = [inter, uni]
-    for i in lst1:
-        __ i in lst2:
-            inter.append(i)
-    for x in inter:
-        __ inter.count(x) > 1:
+    ___ i __ lst1:
+        __ i __ lst2:
+            inter.a..(i)
+    ___ x __ inter:
+        __ inter.c.. x) > 1:
             inter.remove(x)
-    for z in lst1:
-        __ z in uni:
+    ___ z __ lst1:
+        __ z __ uni:
             continue
-        uni.append(z)
-    for c in lst2:
-        __ c not in uni:
-             uni.append(c)
+        uni.a..(z)
+    ___ c __ lst2:
+        __ c n.. __ uni:
+             uni.a..(c)
     inter.sort()
     uni.sort()
-    return output
+    r.. output

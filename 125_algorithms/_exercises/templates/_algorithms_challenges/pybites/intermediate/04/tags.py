@@ -1,8 +1,8 @@
-import os
-import pprint as pp
-from collections import Counter
-import urllib.request
-import xml.etree.ElementTree as ET
+_______ os
+_______ pprint as pp
+____ collections _______ Counter
+_______ urllib.request
+_______ xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -24,17 +24,17 @@ ___ get_pybites_top_tags(n=10):
 
     root = ET.fromstring(content)
     
-    for item in root[0].findall("item"):
-        for category in item.findall('category'):
+    ___ item __ root[0].findall("item"):
+        ___ category __ item.findall('category'):
             counter[category.text.lower()] += 1
 
 
-    return counter.most_common(n)
+    r.. counter.most_common(n)
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     get_pybites_top_tags()
 
 

@@ -5,15 +5,15 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums or len(nums) < 3 or target is None:
-            return -1
+        __ n.. nums o. l..(nums) < 3 o. target __ N..
+            r.. -1
 
         ans = INF = float('inf')
-        n = len(nums)
+        n = l..(nums)
         nums.sort()
 
-        for a in range(n - 2):
-            __ a > 0 and nums[a] == nums[a - 1]:
+        ___ a __ r..(n - 2):
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
             b, c = a + 1, n - 1
@@ -21,15 +21,15 @@ class Solution:
             while b < c:
                 total = nums[a] + nums[b] + nums[c]
 
-                __ total == target:
-                    return total
+                __ total __ target:
+                    r.. total
 
                 __ abs(total - target) < abs(ans - target):
                     ans = total
 
                 __ total < target:
                     b += 1
-                else:
+                ____:
                     c -= 1
 
-        return ans __ ans < INF else -1
+        r.. ans __ ans < INF ____ -1

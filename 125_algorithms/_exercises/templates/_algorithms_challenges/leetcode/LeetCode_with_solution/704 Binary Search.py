@@ -24,20 +24,20 @@ You may assume that all elements in nums are unique.
 n will be in the range [1, 10000].
 The value of each element in nums will be in the range [-9999, 9999].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ search(self, nums: List[int], target: int) -> int:
         lo = 0
-        hi = len(nums)
+        hi = l..(nums)
         while lo < hi:
             mid = (lo + hi) // 2
-            __ nums[mid] == target:
-                return mid
-            elif nums[mid] < target:
+            __ nums[mid] __ target:
+                r.. mid
+            ____ nums[mid] < target:
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return -1
+        r.. -1

@@ -1,5 +1,5 @@
-import urllib.request
-import re
+_______ urllib.request
+_______ re
 
 
 ___ create_chart():
@@ -7,21 +7,21 @@ ___ create_chart():
     html = resp.decode('UTF-8')
     paragraphs = html.split('\n')
 
-    books = []
-    for i, line in enumerate(paragraphs):
+    books    # list
+    ___ i, line __ enumerate(paragraphs):
         regex = re.compile(r'- sending to slack channel')
         __ regex.search(line):
             matches = paragraphs[i-1]
             python_books = re.compile(r'Python')
             __ python_books.search(matches):
-                info = matches.split()[0], '🐍'
-                books.append(info)
-            else:
-                info = matches.split()[0], '.'
-                books.append(info)
+                info = matches.s.. [0], '🐍'
+                books.a..(info)
+            ____:
+                info = matches.s.. [0], '.'
+                books.a..(info)
 
     d = {}
-    for date, book in books:
-        d.setdefault(date, []).append(book)
+    ___ date, book __ books:
+        d.setdefault(date, []).a..(book)
 
-    print('\n'.join(f"{k} {''.join(v)}" for k, v in d.items()))
+    print('\n'.join(f"{k} {''.join(v)}" ___ k, v __ d.items()))

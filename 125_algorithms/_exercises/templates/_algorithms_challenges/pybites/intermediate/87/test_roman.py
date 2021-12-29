@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from roman import romanize
+____ roman _______ romanize
 
 
 @pytest.mark.parametrize("number, numeral", [
@@ -25,7 +25,7 @@ from roman import romanize
     (3500, 'MMMD'),
 ])
 ___ test_romanize(number, numeral):
-    assert romanize(number) == numeral
+    ... romanize(number) __ numeral
 
 
 ___ test_boundaries():

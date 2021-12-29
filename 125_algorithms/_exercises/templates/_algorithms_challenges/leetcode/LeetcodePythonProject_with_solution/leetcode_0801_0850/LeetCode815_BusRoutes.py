@@ -12,37 +12,37 @@ class Solution(object):
         :rtype: int
         """
         s, t = S, T
-        __ s == t: return 0
+        __ s __ t: r.. 0
         hashmap = {}
-        for i in range(len(routes)):
-            for j in range(len(routes[i])):
-                __ routes[i][j] not in hashmap:
-                    hashmap[routes[i][j]] = []
-                hashmap[routes[i][j]].append(i)
-        queue = []
+        ___ i __ r..(l..(routes)):
+            ___ j __ r..(l..(routes[i])):
+                __ routes[i][j] n.. __ hashmap:
+                    hashmap[routes[i][j]]    # list
+                hashmap[routes[i][j]].a..(i)
+        queue    # list
         addedRoute = set()
         addedStop = set()
-        for r in hashmap[s]:
-            __ r in addedRoute: continue
-            for i in range(len(routes[r])):
-                __ routes[r][i] not in addedStop:
-                    queue.append(routes[r][i])
+        ___ r __ hashmap[s]:
+            __ r __ addedRoute: continue
+            ___ i __ r..(l..(routes[r])):
+                __ routes[r][i] n.. __ addedStop:
+                    queue.a..(routes[r][i])
                     addedStop.add(routes[r][i])
             addedRoute.add(r)
         count = 0
         while queue:
-            size = len(queue)
+            size = l..(queue)
             count += 1
-            for _ in range(size):
+            ___ _ __ r..(size):
                 stop = queue.pop(0)
-                __ stop == t: return count
-                for r in hashmap[stop]:
-                    __ r in addedRoute: continue
-                    for i in range(len(routes[r])):
-                        __ routes[r][i] not in addedStop:
-                            queue.append(routes[r][i])
+                __ stop __ t: r.. count
+                ___ r __ hashmap[stop]:
+                    __ r __ addedRoute: continue
+                    ___ i __ r..(l..(routes[r])):
+                        __ routes[r][i] n.. __ addedStop:
+                            queue.a..(routes[r][i])
                     addedRoute.add(r)
-        return -1
+        r.. -1
     
     ___ test(self):
         testCases = [
@@ -55,10 +55,10 @@ class Solution(object):
                 15,12
             ],
         ]
-        for routes, s, t in testCases:
+        ___ routes, s, t __ testCases:
             result = self.numBusesToDestination(routes, s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

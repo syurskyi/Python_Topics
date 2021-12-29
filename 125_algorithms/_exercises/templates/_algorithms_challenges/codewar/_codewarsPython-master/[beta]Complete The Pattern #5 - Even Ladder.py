@@ -1,9 +1,9 @@
 ___ pattern(n):
     __ n <= 1:
-        return ''
-    n = n-1 __ n %2 != 0 else n
+        r.. ''
+    n = n-1 __ n %2 != 0 ____ n
     
-    return '\n'.join([str(i) * i for i in range(2,n+1,2)])
+    r.. '\n'.join([str(i) * i ___ i __ r..(2,n+1,2)])
 
-for i in range(1,10):
+___ i __ r..(1,10):
     print(pattern(i))

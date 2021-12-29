@@ -6,24 +6,24 @@ class Solution(object):
     :rtype: bool
     """
     i = j = 0
-    lenS = len(s)
-    lenP = len(p)
+    lenS = l..(s)
+    lenP = l..(p)
     lastMatchPos = 0
     lastStarPos = -1
-    while i < len(s):
-      __ j < lenP and p[j] in (s[i], "?"):
+    while i < l..(s):
+      __ j < lenP and p[j] __ (s[i], "?"):
         i += 1
         j += 1
-      elif j < lenP and p[j] == "*":
+      ____ j < lenP and p[j] __ "*":
         lastMatchPos = i
         lastStarPos = j
         j += 1
-      elif lastStarPos > -1:
+      ____ lastStarPos > -1:
         i = lastMatchPos + 1
         lastMatchPos += 1
         j = lastStarPos + 1
-      else:
-        return False
-    while j < lenP and p[j] == "*":
+      ____:
+        r.. False
+    while j < lenP and p[j] __ "*":
       j += 1
-    return j == lenP
+    r.. j __ lenP

@@ -1,5 +1,5 @@
-import base64
-from typing import List  # will remove with 3.9
+_______ base64
+____ typing _______ List  # will remove with 3.9
 
 
 ___ get_credit_cards(data: bytes) -> List[str]:
@@ -9,6 +9,6 @@ ___ get_credit_cards(data: bytes) -> List[str]:
     """
     decoded_data = base64.b64decode(data)
     decoded_string = decoded_data.decode("ascii")
-    decoded_list = [row.split(",") for row in decoded_string.strip().split("\n")]
-    credit_card_numbers = [decoded_list[i][2] for i in range(len(decoded_list)) __ i != 0]
-    return credit_card_numbers
+    decoded_list = [row.split(",") ___ row __ decoded_string.strip().split("\n")]
+    credit_card_numbers = [decoded_list[i][2] ___ i __ r..(l..(decoded_list)) __ i != 0]
+    r.. credit_card_numbers

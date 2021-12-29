@@ -44,15 +44,15 @@ class Solution(object):
         :rtype: int
         """
         N = n + 1  # guessing [1, N), where N = n + 1
-        F = [[0 for _ in xrange(N+1)] for _ in xrange(N+1)]
-        for i in xrange(n, 0, -1):
-            for j in xrange(i+2, N+1):
-                F[i][j] = min(
+        F = [[0 ___ _ __ xrange(N+1)] ___ _ __ xrange(N+1)]
+        ___ i __ xrange(n, 0, -1):
+            ___ j __ xrange(i+2, N+1):
+                F[i][j] = m..(
                     k + max(F[i][k], F[k+1][j])
-                    for k in xrange(i, j)
+                    ___ k __ xrange(i, j)
                 )
 
-        return F[1][N]
+        r.. F[1][N]
 
     ___ getMoneyAmountError(self, n):
         """
@@ -69,15 +69,15 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        C = [0 for _ in xrange(n+1)]
-        F = [0 for _ in xrange(n+1)]
-        for i in xrange(2, n+1):
-            C[i] = min(1 + max(C[k-1], C[i-k]) for k in xrange(1, i+1))
-            F[i] = min(k + max(F[k-1], k*C[i-k] + F[i-k]) for k in xrange(1, i+1))
+        C = [0 ___ _ __ xrange(n+1)]
+        F = [0 ___ _ __ xrange(n+1)]
+        ___ i __ xrange(2, n+1):
+            C[i] = m..(1 + max(C[k-1], C[i-k]) ___ k __ xrange(1, i+1))
+            F[i] = m..(k + max(F[k-1], k*C[i-k] + F[i-k]) ___ k __ xrange(1, i+1))
 
-        return F[n]
+        r.. F[n]
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().getMoneyAmount(100)
 

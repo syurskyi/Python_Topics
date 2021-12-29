@@ -47,8 +47,8 @@ The timestamps for all TimeMap.set operations are strictly increasing.
 TimeMap.set and TimeMap.get functions will be called a total of 120000 times
 combined) per test case.
 """
-import bisect
-from collections import defaultdict
+_______ bisect
+____ collections _______ defaultdict
 
 
 class TimeMap:
@@ -61,26 +61,26 @@ class TimeMap:
         BST
         Bineary search
         """
-        self.m = defaultdict(list)
+        self.m = defaultdict(l..)
 
-    ___ set(self, key: str, value: str, timestamp: int) -> None:
+    ___ set(self, key: str, value: str, timestamp: int) -> N..
         n = (timestamp, value)
         bisect.insort(self.m[key], n)
 
     ___ get(self, key: str, timestamp: int) -> str:
-        __ key not in self.m:
-            return ""
+        __ key n.. __ self.m:
+            r.. ""
 
         # find the largest v, s.t. v <= t
         lst = self.m[key]
         i = bisect.bisect(lst, (timestamp, ""))
-        __ i < len(lst) and lst[i][0] == timestamp:
-            return lst[i][1]
+        __ i < l..(lst) and lst[i][0] __ timestamp:
+            r.. lst[i][1]
         i -= 1
         __ i >= 0:
-            return lst[i][1]
+            r.. lst[i][1]
             
-        return ""
+        r.. ""
 
 
 # Your TimeMap object will be instantiated and called as such:

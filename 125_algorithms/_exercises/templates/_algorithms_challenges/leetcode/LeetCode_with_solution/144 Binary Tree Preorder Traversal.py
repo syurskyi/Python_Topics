@@ -19,33 +19,33 @@ __author__ = 'Danyang'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
     ___ preorderTraversal(self, root):
         """Morris"""
-        ret = []
+        ret    # list
         cur = root
         while cur:
-            __ not cur.left:
-                ret.append(cur.val)
+            __ n.. cur.left:
+                ret.a..(cur.val)
                 cur = cur.right
-            else:
+            ____:
                 pre = cur.left
                 while pre.right and pre.right != cur:
                     pre = pre.right
 
-                __ not pre.right:
+                __ n.. pre.right:
                     pre.right = cur
-                    ret.append(cur.val)
+                    ret.a..(cur.val)
                     cur = cur.left
-                else:
-                    pre.right = None
+                ____:
+                    pre.right = N..
                     cur = cur.right
 
-        return ret
+        r.. ret
 
     ___ preorderTraversal_memory(self, root):
         """
@@ -53,15 +53,15 @@ class Solution(object):
         :param root:
         :return:
         """
-        lst = []
+        lst    # list
         self.preTraverse_itr(root, lst)
-        return lst
+        r.. lst
 
 
     ___ preTraverse(self, node, lst):
-        __ not node:
-            return
-        lst.append(node.val)
+        __ n.. node:
+            r..
+        lst.a..(node.val)
 
         self.preTraverse(node.left, lst)
         self.preTraverse(node.right, lst)
@@ -77,21 +77,21 @@ class Solution(object):
         :param lst:
         :return:
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
         stk = [root]
         while stk:
             node = stk.pop()
-            lst.append(node.val)
+            lst.a..(node.val)
             __ node.right:  # right first
-                stk.append(node.right)
+                stk.a..(node.right)
 
             __ node.left:
-                stk.append(node.left)
+                stk.a..(node.left)
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().preorderTraversal(t1)

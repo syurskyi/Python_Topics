@@ -4,24 +4,24 @@ class Solution:
     # @return a list of lists of integers
     ___ combinationSum2(self, candidates, target):
         candidates.sort()
-        res = []
-        cand = []
+        res    # list
+        cand    # list
         self.combination_sum(candidates, target, cand, res)
-        return res
+        r.. res
 
     ___ combination_sum(self, candidates, target, cand, res):
-        __ target == 0:
-            res.append(cand[:])
-        elif target < 0:
-            return
-        else:
-            for i, c in enumerate(candidates):
-                __ i == 0:
+        __ target __ 0:
+            res.a..(cand[:])
+        ____ target < 0:
+            r..
+        ____:
+            ___ i, c __ enumerate(candidates):
+                __ i __ 0:
                     prev = c
-                elif prev == c:
+                ____ prev __ c:
                     continue
-                else:
+                ____:
                     prev = c
-                cand.append(c)
+                cand.a..(c)
                 self.combination_sum(candidates[i + 1:], target - c, cand, res)
                 cand.pop()

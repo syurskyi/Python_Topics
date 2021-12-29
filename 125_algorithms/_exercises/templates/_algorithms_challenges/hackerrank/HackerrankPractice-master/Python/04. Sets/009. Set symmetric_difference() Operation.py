@@ -4,4 +4,4 @@
 
 _, a = input(), set(input().split())
 _, b = input(), set(input().split())
-print(len(a.symmetric_difference(b)))
+print(l..(a.symmetric_difference(b)))

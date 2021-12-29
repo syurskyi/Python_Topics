@@ -1,13 +1,13 @@
 ___ pattern(n):
-    string = ''.join([str(i) for i in range (1,n+1)][::-1])
+    string = ''.join([str(i) ___ i __ r.. (1,n+1)][::-1])
     res = ''
-    for i in range(1,n+1):
-        res += '\n' __ len(res) > 0 else ''
+    ___ i __ r..(1,n+1):
+        res += '\n' __ l..(res) > 0 ____ ''
         res += string
-        string = string[:-1] __ len(str(i)) == 1 else string[:-2]
-    return res
+        string = string[:-1] __ l..(str(i)) __ 1 ____ string[:-2]
+    r.. res
         
 
 
-for i in (13,):
+___ i __ (13,):
     print(pattern(i))    

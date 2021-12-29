@@ -6,7 +6,7 @@ class Person:
         pass
 
     ___ __str__(self):
-        return "I am a person"
+        r.. "I am a person"
 
 
 class Father(Person):
@@ -15,7 +15,7 @@ class Father(Person):
         Person.__init__(self)
 
     ___ __str__(self):
-        return f"{Person.__str__(self)} and cool daddy"
+        r.. f"{Person.__str__(self)} and cool daddy"
 
 
 class Mother(Person):
@@ -24,7 +24,7 @@ class Mother(Person):
         Person.__init__(self)
 
     ___ __str__(self):
-        return f"{Person.__str__(self)} and awesome mom"
+        r.. f"{Person.__str__(self)} and awesome mom"
 
 
 class Child(Father, Mother):
@@ -33,7 +33,7 @@ class Child(Father, Mother):
         pass
 
     ___ __str__(self):
-        return "I am the coolest kid"
+        r.. "I am the coolest kid"
 
 
 # if __name__ == "__main__":

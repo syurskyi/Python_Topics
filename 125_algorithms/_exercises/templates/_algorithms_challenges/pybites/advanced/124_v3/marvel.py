@@ -1,8 +1,8 @@
-from collections import Counter, namedtuple
-import csv
-import re
+____ collections _______ Counter, namedtuple
+_______ csv
+_______ re
 
-import requests
+_______ requests
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
@@ -14,7 +14,7 @@ Character = namedtuple('Character', 'pid name sid align sex first_appearance app
 ___ _get_csv_data():
     """Download the marvel csv data and return its decoded content"""
     with requests.Session() as session:
-        return session.get(MARVEL_CSV).content.decode('utf-8')
+        r.. session.get(MARVEL_CSV).content.decode('utf-8')
 
 
 ___ load_data():
@@ -22,7 +22,7 @@ ___ load_data():
        as defined above"""
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
-    for row in reader:
+    ___ row __ reader:
         name = re.sub(r'(.*?)\(.*', r'\1', row['name']).strip()
         yield Character(pid=row['page_id'],
                         name=name,
@@ -34,7 +34,7 @@ ___ load_data():
                         year=row['Year'])
 
 
-characters = list(load_data())
+characters = l..(load_data())
 
 
 # start coding
@@ -43,16 +43,16 @@ ___ most_popular_characters(characters=characters, top=5):
     """Get the most popular character by number of appearances,
        return top n characters (default 5)
     """
-    top_lst = sorted(characters,
-                     key=lambda x: int(x.appearances) __ x.appearances else 0,
-                     reverse=True)[:top]
-    return [char.name for char in top_lst]
+    top_lst = s..(characters,
+                     key=l.... x: int(x.appearances) __ x.appearances ____ 0,
+                     r.._T..[:top]
+    r.. [char.name ___ char __ top_lst]
 
 
 ___ _year_app(mon_yr):
     """ return the year based on the MON-YY string from FIRST APPEARANCE field"""
     year = int(mon_yr.split('-')[-1])
-    return str(1900 + year) __ year > 20 else str(2000 + year)
+    r.. str(1900 + year) __ year > 20 ____ str(2000 + year)
 
 
 ___ max_and_min_years_new_characters(characters=characters):
@@ -61,10 +61,10 @@ ___ max_and_min_years_new_characters(characters=characters):
        characters, or the 'year' attribute of the namedtuple, return a tuple
        of (max_year, min_year)
     """
-    first_app = Counter([_year_app(c.first_appearance) for c in characters
+    first_app = Counter([_year_app(c.first_appearance) ___ c __ characters
                          __ c.first_appearance])
     mc = first_app.most_common()
-    return mc[0][0], mc[-1][0]
+    r.. mc[0][0], mc[-1][0]
 
 
 ___ get_percentage_female_characters(characters=characters):
@@ -75,6 +75,6 @@ ___ get_percentage_female_characters(characters=characters):
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    genders = Counter([c.sex.split(' ')[0] for c in characters __ c.sex])
-    sum_all_genders = sum([x[1] for x in genders.items()])
-    return round(100 * genders['Female'] / sum_all_genders, 2)
+    genders = Counter([c.sex.split(' ')[0] ___ c __ characters __ c.sex])
+    sum_all_genders = s..([x[1] ___ x __ genders.items()])
+    r.. round(100 * genders['Female'] / sum_all_genders, 2)

@@ -1,4 +1,4 @@
-from contextlib import suppress
+____ contextlib _______ suppress
 
 
 ___ sum_numbers(numbers):
@@ -9,7 +9,7 @@ ___ sum_numbers(numbers):
 
        Task: use contextlib's suppress twice to make the code below more concise.
     """
-    for i, j in zip(numbers, numbers[1:]):
+    ___ i, j __ zip(numbers, numbers[1:]):
         # replace the block below
         with suppress(TypeError):
             with suppress(ZeroDivisionError):

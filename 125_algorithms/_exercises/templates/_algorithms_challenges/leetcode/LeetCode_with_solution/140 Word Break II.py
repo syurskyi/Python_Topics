@@ -11,11 +11,11 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 __author__ = 'Danyang'
-from collections import deque
+____ collections _______ deque
 
 
 class Solution:
-    ___ wordBreak(self, s, dict):
+    ___ wordBreak(self, s, d..):
         """
         .______   .______       _______  _______  __  ___   ___  _______     _______.
         |   _  \  |   _  \     |   ____||   ____||  | \  \ /  / |   ____|   /       |
@@ -40,25 +40,25 @@ class Solution:
         :return: a list of strings
         """
         # dp = [[]] * (len(s) + 1) # namespace reuse
-        dp = [[] for _ in range(len(s) + 1)]
+        dp = [[] ___ _ __ r..(l..(s) + 1)]
 
-        dp[0].append("dummy")
+        dp[0].a..("dummy")
 
-        for i in range(len(s)):
-            __ not dp[i]:
+        ___ i __ r..(l..(s)):
+            __ n.. dp[i]:
                 continue
 
-            for word in dict:
-                __ s[i:i + len(word)] == word:
-                    dp[i + len(word)].append(word)
+            ___ word __ d..:
+                __ s[i:i + l..(word)] __ word:
+                    dp[i + l..(word)].a..(word)
 
         # build result
-        __ not dp[-1]:
-            return []
+        __ n.. dp[-1]:
+            r.. []
 
-        result = []
-        self.build_result(dp, len(s), deque(), result)
-        return result
+        result    # list
+        self.build_result(dp, l..(s), deque(), result)
+        r.. result
 
 
     ___ build_result(self, dp, cur_index, cur_sentence, result):
@@ -68,16 +68,16 @@ class Solution:
         from right to left
         """
         # reached, build the result from cur_sentence
-        __ cur_index == 0:
-            result.append(" ".join(cur_sentence))
-            return
+        __ cur_index __ 0:
+            result.a..(" ".join(cur_sentence))
+            r..
 
         # dfs
-        for prefix in dp[cur_index]:
+        ___ prefix __ dp[cur_index]:
             cur_sentence.appendleft(prefix)
-            self.build_result(dp, cur_index - len(prefix), cur_sentence, result)
+            self.build_result(dp, cur_index - l..(prefix), cur_sentence, result)
             cur_sentence.popleft()
 
 
-__ __name__=="__main__":
-    assert Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"])==['cat sand dog', 'cats and dog']
+__ __name____"__main__":
+    ... Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"])__['cat sand dog', 'cats and dog']

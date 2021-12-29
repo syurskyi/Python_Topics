@@ -10,38 +10,38 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        cand1 = None
-        cand2 = None
+        cand1 = N..
+        cand2 = N..
         count1 = 0
         count2 = 0
-        for c in nums:
-            __ cand1 == c:
+        ___ c __ nums:
+            __ cand1 __ c:
                 count1 += 1
-            elif cand2 == c:
+            ____ cand2 __ c:
                 count2 += 1
-            elif count1 == 0:
+            ____ count1 __ 0:
                 cand1 = c
                 count1 += 1
-            elif count2 == 0:
+            ____ count2 __ 0:
                 cand2 = c
                 count2 += 1
-            else:
+            ____:
                 count1 -= 1
                 count2 -= 1
         count1 = 0
         count2 = 0
-        for c in nums:
-            __ cand1 == c:
+        ___ c __ nums:
+            __ cand1 __ c:
                 count1 += 1
-            elif cand2 == c:
+            ____ cand2 __ c:
                 count2 += 1
-        m = len(nums) / 3
-        res = []
+        m = l..(nums) / 3
+        res    # list
         __ count1 > m:
-            res.append(cand1)
+            res.a..(cand1)
         __ count2 > m:
-            res.append(cand2)
-        return res
+            res.a..(cand2)
+        r.. res
 
 
 a1 = [8, 8, 7, 7, 7]

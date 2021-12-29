@@ -5,17 +5,17 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not x:
-            return ans
+        __ n.. x:
+            r.. ans
 
         INT_MAX = 0x7FFFFFFF
-        _x = x __ x > 0 else -x
+        _x = x __ x > 0 ____ -x
 
         while _x:
             ans = ans * 10 + _x % 10
             _x //= 10
 
         __ ans >= INT_MAX:
-            return 0
+            r.. 0
 
-        return ans __ x > 0 else -ans
+        r.. ans __ x > 0 ____ -ans

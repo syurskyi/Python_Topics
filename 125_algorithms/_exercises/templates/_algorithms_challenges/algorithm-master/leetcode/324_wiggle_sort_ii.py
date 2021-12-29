@@ -9,14 +9,14 @@ class Solution:
         :type A: List[int]
         :rtype: void Do not return anything, modify A in-place instead.
         """
-        __ not A:
-            return
+        __ n.. A:
+            r..
 
-        n = len(A)
-        S = sorted(A)
+        n = l..(A)
+        S = s..(A)
 
-        for i in range(1, n, 2):
+        ___ i __ r..(1, n, 2):
             A[i] = S.pop()
 
-        for i in range(0, n, 2):
+        ___ i __ r..(0, n, 2):
             A[i] = S.pop()

@@ -18,21 +18,21 @@ class Solution(object):
             ']': '[',
             '}': '{',
         }
-        stack = []
-        for c in s:
+        stack    # list
+        ___ c __ s:
             # Left parenthesis
-            __ c not in pars:
-                stack.append(c)
+            __ c n.. __ pars:
+                stack.a..(c)
             # Right parenthesis
-            else:
+            ____:
                 __ stack:
-                    __ stack[-1] == pars[c]:
+                    __ stack[-1] __ pars[c]:
                         stack.pop()
-                    else:
-                        return False
-                else:
-                    return False
+                    ____:
+                        r.. False
+                ____:
+                    r.. False
         __ stack:
-            return False
-        else:
-            return True
+            r.. False
+        ____:
+            r.. True

@@ -1,8 +1,8 @@
-from random import randint
+____ random _______ randint
 
 ___ list_fill(first, qyt, mini, maxi):
-    for i in range(qyt):
-        first.append(randint(mini,maxi))
+    ___ i __ r..(qyt):
+        first.a..(randint(mini,maxi))
 
 minimum  i..(input("Insert minimum value: "))
 maximum  i..(input("Insert maximum value: "))

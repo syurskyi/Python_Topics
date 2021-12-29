@@ -15,12 +15,12 @@ class Solution:
     @return: the inserted new list node
     """
     ___ insert(self, node, x):
-        __ not node:
+        __ n.. node:
             node = ListNode(x)
             node.next = node
-            return node
+            r.. node
 
-        pre, cur = None, node
+        pre, cur = N.., node
         while True:
             pre = cur
             cur = cur.next
@@ -30,14 +30,14 @@ class Solution:
                 break
 
             # at the boundary between minimum and maximum
-            __ (pre.val > cur.val) and (x < cur.val or x > pre.val):
+            __ (pre.val > cur.val) and (x < cur.val o. x > pre.val):
                 break
 
             # if `cur` have already traversed the list once
-            __ cur is node:
+            __ cur __ node:
                 break
 
         new_node = ListNode(x)
         new_node.next = cur
         pre.next = new_node
-        return new_node
+        r.. new_node

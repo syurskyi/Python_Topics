@@ -28,19 +28,19 @@ class Solution:
         :type n: int
         :rtype: bool
         """
-        __ not n:
-            return False
+        __ n.. n:
+            r.. False
         __ n < 3:
-            return True
+            r.. True
 
         dp = [False] * n
         dp[0] = dp[1] = True
 
-        for i in range(2, n):
+        ___ i __ r..(2, n):
             __ (
-                dp[i - 1] is False or
-                dp[i - 2] is False
+                dp[i - 1] __ False o.
+                dp[i - 2] __ False
             ):
                 dp[i] = True
 
-        return dp[n - 1]
+        r.. dp[n - 1]

@@ -36,7 +36,7 @@ c_ SubsetSumProblem:
         col_index  m
         row_index  le_(nums)
 
-        w__ col_index > 0 or row_index > 0:
+        w__ col_index > 0 o. row_index > 0:
             __ S[row_index][col_index] __ S[row_index - 1][col_index]:
                 row_index  row_index - 1
             ____

@@ -21,7 +21,7 @@ The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3
 
 After the rain, water are trapped between the blocks. The total volume of water trapped is 4.
 """
-import heapq
+_______ heapq
 
 __author__ = 'Daniel'
 
@@ -33,7 +33,7 @@ class Cell:
         self.h = h
 
     ___ __cmp__(self, other):
-        return self.h - other.h
+        r.. self.h - other.h
 
 
 class Solution(object):
@@ -49,19 +49,19 @@ class Solution(object):
         :param mat: List[List[int]]
         :return: an integer
         """
-        __ not mat: return 0
+        __ n.. mat: r.. 0
 
-        m, n = len(mat), len(mat[0])
-        visited = [[False for _ in xrange(n)] for _ in xrange(m)]
-        h = []
+        m, n = l..(mat), l..(mat[0])
+        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        h    # list
         # add cells at the four edges
-        for i in xrange(m):
+        ___ i __ xrange(m):
             visited[i][0] = True
             heapq.heappush(h, Cell(i, 0, mat[i][0]))
             visited[i][n-1] = True
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
 
-        for j in xrange(1, n-1):
+        ___ j __ xrange(1, n-1):
             visited[0][j] = True
             heapq.heappush(h, Cell(0, j, mat[0][j]))
             visited[m-1][j] = True
@@ -71,9 +71,9 @@ class Solution(object):
         trapped = 0
         while h:
             cur = heapq.heappop(h)
-            for dir in self.dirs:
+            ___ dir __ self.dirs:
                 I, J = cur.i+dir[0], cur.j+dir[1]
-                __ 0 <= I < m and 0 <= J < n and not visited[I][J]:
+                __ 0 <= I < m and 0 <= J < n and n.. visited[I][J]:
                     nxt = Cell(I, J, mat[I][J])
                     __ nxt.h < cur.h:  # fill
                         trapped += cur.h - nxt.h
@@ -82,20 +82,20 @@ class Solution(object):
                     visited[I][J] = True
                     heapq.heappush(h, nxt)
 
-        return trapped
+        r.. trapped
 
 
-__ __name__ == "__main__":
-    assert Solution().trapRainWater([
+__ __name__ __ "__main__":
+    ... Solution().trapRainWater([
         [12, 13, 0, 12],
         [13, 4, 13, 12],
         [13, 8, 10, 12],
         [12, 13, 12, 12],
         [13, 13, 13, 13]]
-    ) == 14
-    assert Solution().trapRainWater([
+    ) __ 14
+    ... Solution().trapRainWater([
         [9, 1, 10, 10],
         [9, 1, 2, 8],
         [2, 6, 5, 0],
         [6, 0, 9, 0]]
-    ) == 0
+    ) __ 0

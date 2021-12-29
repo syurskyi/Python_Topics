@@ -1,20 +1,20 @@
-import re
+_______ re
 
 
 ___ parse_markdown(markdown):
     lines = markdown.split('\n')
     res = ''
     in_list = False
-    for i in lines:
-        __ re.match('###### (.*)', i) is not None:
+    ___ i __ lines:
+        __ re.match('###### (.*)', i) __ n.. N..
             i = '<h6>' + i[7:] + '</h6>'
-        elif re.match('## (.*)', i) is not None:
+        ____ re.match('## (.*)', i) __ n.. N..
             i = '<h2>' + i[3:] + '</h2>'
-        elif re.match('# (.*)', i) is not None:
+        ____ re.match('# (.*)', i) __ n.. N..
             i = '<h1>' + i[2:] + '</h1>'
         m = re.match(r'\* (.*)', i)
         __ m:
-            __ not in_list:
+            __ n.. in_list:
                 in_list = True
                 is_bold = False
                 is_italic = False
@@ -30,7 +30,7 @@ ___ parse_markdown(markdown):
                         '</em>' + m1.group(3)
                     is_italic = True
                 i = '<ul><li>' + curr + '</li>'
-            else:
+            ____:
                 is_bold = False
                 is_italic = False
                 curr = m.group(1)
@@ -47,13 +47,13 @@ ___ parse_markdown(markdown):
                     curr = m1.group(1) + '<em>' + m1.group(2) + \
                         '</em>' + m1.group(3)
                 i = '<li>' + curr + '</li>'
-        else:
+        ____:
             __ in_list:
                 i = '</ul>+i'
                 in_list = False
 
         m = re.match('<h|<ul|<p|<li', i)
-        __ not m:
+        __ n.. m:
             i = '<p>' + i + '</p>'
         m = re.match('(.*)__(.*)__(.*)', i)
         __ m:
@@ -64,4 +64,4 @@ ___ parse_markdown(markdown):
         res += i
     __ in_list:
         res += '</ul>'
-    return res
+    r.. res

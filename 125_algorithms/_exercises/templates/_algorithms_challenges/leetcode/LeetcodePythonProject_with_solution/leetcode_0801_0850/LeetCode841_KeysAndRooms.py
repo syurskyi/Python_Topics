@@ -13,13 +13,13 @@ class Solution(object):
         seen = set(dfs)
         while dfs:
             i = dfs.pop()
-            for j in rooms[i]:
-                __ j not in seen:
-                    dfs.append(j)
+            ___ j __ rooms[i]:
+                __ j n.. __ seen:
+                    dfs.a..(j)
                     seen.add(j)
-                    __ len(seen) == len(rooms):
-                        return True
-        return len(seen) == len(rooms)
+                    __ l..(seen) __ l..(rooms):
+                        r.. True
+        r.. l..(seen) __ l..(rooms)
     
     ___ test(self):
         testCases = [
@@ -28,11 +28,11 @@ class Solution(object):
             [[2,3],[],[2],[1,3,1]],
             [[6,7,8],[5,4,9],[],[8],[4],[],[1,9,2,3],[7],[6,5],[2,3,1]],
         ]
-        for rooms in testCases:
+        ___ rooms __ testCases:
             print('rooms: %s' % rooms)
             res = self.canVisitAllRooms(rooms)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

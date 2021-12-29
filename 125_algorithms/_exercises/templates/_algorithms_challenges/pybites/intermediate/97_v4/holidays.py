@@ -1,8 +1,8 @@
-from collections import defaultdict
-import os
-from urllib.request import urlretrieve
-from datetime import datetime
-from bs4 import BeautifulSoup
+____ collections _______ defaultdict
+_______ os
+____ urllib.request _______ urlretrieve
+____ datetime _______ datetime
+____ bs4 _______ BeautifulSoup
 
 
 # prep data
@@ -17,24 +17,24 @@ urlretrieve(
 with open(holidays_page) as f:
     content = f.read()
 
-holidays = defaultdict(list)
+holidays = defaultdict(l..)
 
 
 ___ _parse_date(date: str):
     """returns a datetime from parsing dates as formatted in table"""
-    return datetime.strptime(date.split()[0], '%Y-%m-%d%B')
+    r.. datetime.strptime(date.s.. [0], '%Y-%m-%d%B')
 
 
-___ _get_table(content=content) -> list:
+___ _get_table(content=content) -> l..:
     """returns the cleaned table with datetimes for the dates"""
     soup = BeautifulSoup(content, 'html.parser')
     raw_table = soup.find('table', {'class': 'list-table'})
-    table = [[c.get_text().strip() for c in r.find_all('td')]
-             for r in raw_table.find_all('tr')]
+    table = [[c.get_text().strip() ___ c __ r.find_all('td')]
+             ___ r __ raw_table.find_all('tr')]
     table.pop(0)                # remove header
-    for row in table:
+    ___ row __ table:
         row[1] = _parse_date(row[1])
-    return table
+    r.. table
 
 
 ___ get_us_bank_holidays(content=content):
@@ -43,7 +43,7 @@ ___ get_us_bank_holidays(content=content):
        keys -> months and values -> list of bank holidays"""
     table = _get_table()
 
-    for row in table:
-        holidays[f'{row[1].month:02d}'].append(row[3].strip())
+    ___ row __ table:
+        holidays[f'{row[1].month:02d}'].a..(row[3].strip())
 
-    return holidays
+    r.. holidays

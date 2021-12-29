@@ -42,8 +42,8 @@ Note:
 A[i] and B[i] consist only of lowercase letters.
 All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 """
-from typing import List
-from collections import Counter, defaultdict
+____ typing _______ List
+____ collections _______ Counter, defaultdict
 
 
 class Solution:
@@ -58,18 +58,18 @@ class Solution:
         C_letter (a) >= max(C_letter(b) for b in B)
         """
         mx = defaultdict(int)
-        for b in B:
+        ___ b __ B:
             c = Counter(b)
-            for k, v in c.items():
+            ___ k, v __ c.items():
                 mx[k] = max(mx[k], v)
 
-        ret = []
-        for a in A:
+        ret    # list
+        ___ a __ A:
             c = Counter(a)
-            for k, v in mx.items():
+            ___ k, v __ mx.items():
                 __ c[k] < v:
                     break
-            else:
-                ret.append(a)
+            ____:
+                ret.a..(a)
 
-        return ret
+        r.. ret

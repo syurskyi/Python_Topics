@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort, request
+____ flask _______ Flask, jsonify, abort, request
 
 app = Flask(__name__)
 
@@ -23,49 +23,49 @@ quotes = [
 
 ___ _get_quote(qid):
     """Recommended helper"""
-    return [q for q in quotes __ q['id'] == qid]
+    r.. [q ___ q __ quotes __ q['id'] __ qid]
 
 
 ___ _quote_exists(existing_quote):
     """Recommended helper"""
-    return any(q['quote'] == existing_quote['quote'] and q['movie'] == existing_quote['movie'] for q in quotes)
+    r.. any(q['quote'] __ existing_quote['quote'] and q['movie'] __ existing_quote['movie'] ___ q __ quotes)
 
 
 ___ _new_id():
-    return max(q['id'] for q in quotes) + 1
+    r.. max(q['id'] ___ q __ quotes) + 1
 
 
 @app.route('/api/quotes', methods=['GET'])
 ___ get_quotes():
-    return jsonify(quotes=quotes)
+    r.. jsonify(quotes=quotes)
 
 
 @app.route('/api/quotes/<int:qid>', methods=['GET'])
 ___ get_quote(qid):
     q = _get_quote(qid)
-    __ len(q) == 0:
+    __ l..(q) __ 0:
         abort(404)
-    return jsonify(quotes=q)
+    r.. jsonify(quotes=q)
 
 
 @app.route('/api/quotes', methods=['POST'])
 ___ create_quote():
     quote_str = request.json.get('quote')
     movie_str = request.json.get('movie')
-    __ not quote_str or not movie_str:
+    __ n.. quote_str o. n.. movie_str:
         abort(400)
     quote = {'quote': quote_str, 'movie': movie_str}
     __ _quote_exists(quote):
         abort(400)
     quote['id'] = _new_id()
-    quotes.append(quote)
-    return jsonify(quote=quote), 201, {'Location': f'/api/quotes/{quote["id"]}'}
+    quotes.a..(quote)
+    r.. jsonify(quote=quote), 201, {'Location': f'/api/quotes/{quote["id"]}'}
 
 
 @app.route('/api/quotes/<int:qid>', methods=['PUT'])
 ___ update_quote(qid):
     q = _get_quote(qid)
-    __ len(q) == 0:
+    __ l..(q) __ 0:
         abort(404)
     q = q[0]
     dirty = False
@@ -77,16 +77,16 @@ ___ update_quote(qid):
     __ movie_str:
         q['movie'] = movie_str
         dirty = True
-    __ not dirty:
+    __ n.. dirty:
         abort(400)
-    return jsonify(quote=q), 200
+    r.. jsonify(quote=q), 200
 
 
 @app.route('/api/quotes/<int:qid>', methods=['DELETE'])
 ___ delete_quote(qid):
     q = _get_quote(qid)
-    __ len(q) == 0:
+    __ l..(q) __ 0:
         abort(404)
     q = q[0]
     quotes.remove(q)
-    return jsonify(quotes=q), 204
+    r.. jsonify(quotes=q), 204

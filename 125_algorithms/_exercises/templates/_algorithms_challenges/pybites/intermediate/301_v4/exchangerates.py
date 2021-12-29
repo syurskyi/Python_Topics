@@ -1,26 +1,26 @@
-import os
-from datetime import date, timedelta
-from pathlib import Path
-from typing import Dict, List, OrderedDict
-from urllib.request import urlretrieve
-import json
-from collections import OrderedDict
+_______ os
+____ datetime _______ date, timedelta
+____ pathlib _______ Path
+____ typing _______ Dict, List, OrderedDict
+____ urllib.request _______ urlretrieve
+_______ json
+____ collections _______ OrderedDict
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
-__ not RATES_FILE.exists():
+__ n.. RATES_FILE.exists():
     urlretrieve(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) -> List[date]:
     delta = end_date - start_date
-    return [start_date+timedelta(days=x) for x in range(delta.days+1)]
+    r.. [start_date+timedelta(days=x) ___ x __ r..(delta.days+1)]
 
 
 ___ _parse_date(date_string: str) -> date:
-    return date(*map(int, date_string.split('-')))
+    r.. date(*map(int, date_string.split('-')))
 
 
 """{
@@ -41,38 +41,38 @@ ___ _parse_date(date_string: str) -> date:
 }"""
 
 
-___ _date_conv(data: dict):
-    return {_parse_date(k): v for k, v in data.items()}
+___ _date_conv(data: d..):
+    r.. {_parse_date(k): v ___ k, v __ data.items()}
 
 
 ___ match_daily_rates(start: date,
-                      end: date, daily_rates: dict) -> Dict[date, date]:
-    keys = list(daily_rates.keys())
-    __ isinstance(keys[0], str):
-        data_days = sorted(list(map(_parse_date, keys)))
-    else:
-        data_days = sorted(keys)
+                      end: date, daily_rates: d..) -> Dict[date, date]:
+    keys = l..(daily_rates.keys())
+    __ isi..(keys[0], str):
+        data_days = s..(l..(map(_parse_date, keys)))
+    ____:
+        data_days = s..(keys)
 
-    r_start = min(data_days)
+    r_start = m..(data_days)
     r_end = max(data_days)
 
-    __ start < r_start or end < r_end:
+    __ start < r_start o. end < r_end:
         raise ValueError('Date out of range')
 
     days = get_all_days(start, end)
     result = {}
-    for day in days:
-        __ day in data_days:
+    ___ day __ days:
+        __ day __ data_days:
             match = day
-        else:
-            closest = min(data_days, key=lambda x: abs((x-day).days))
+        ____:
+            closest = m..(data_days, key=l.... x: abs((x-day).days))
             __ closest > day:
                 match = data_days[data_days.index(closest) - 1]
-            else:
+            ____:
                 match = closest
         result[day] = match
 
-    return result
+    r.. result
 
 
 ___ exchange_rates(
@@ -80,11 +80,11 @@ ___ exchange_rates(
 ) -> OrderedDict:
     daily_rates = _date_conv(json.loads(RATES_FILE.read_text())['rates'])
     start_date, end_date = map(_parse_date, [start_date, end_date])
-    __ start_date < min(daily_rates.keys()) or end_date > max(daily_rates.keys()):
+    __ start_date < m..(daily_rates.keys()) o. end_date > max(daily_rates.keys()):
         raise ValueError('Date out of range for data')
     matches = match_daily_rates(start_date, end_date, daily_rates)
     result = {}
-    for day, match in matches.items():
+    ___ day, match __ matches.items():
         result[day] = {"Base Date": match, **daily_rates[match]}
 
-    return result
+    r.. result

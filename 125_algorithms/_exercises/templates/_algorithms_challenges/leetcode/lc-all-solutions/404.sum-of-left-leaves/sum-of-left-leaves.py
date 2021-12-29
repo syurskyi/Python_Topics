@@ -13,20 +13,20 @@ class Solution(object):
     """
 
     ___ helper(root, isLeft):
-      __ not root:
-        return None
+      __ n.. root:
+        r.. N..
       left = helper(root.left, True)
       right = helper(root.right, False)
       ret = 0
-      __ left is None and right is None and isLeft:
-        return root.val
+      __ left __ N.. and right __ N.. and isLeft:
+        r.. root.val
       __ left:
         ret += left
       __ right:
         ret += right
-      return ret
+      r.. ret
 
     ret = helper(root, False)
     __ ret:
-      return ret
-    return 0
+      r.. ret
+    r.. 0

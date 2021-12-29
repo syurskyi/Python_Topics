@@ -11,18 +11,18 @@ class Solution(object):
         :type n: int
         :rtype: float
         """
-        __ n == 0:
-            return 1
+        __ n __ 0:
+            r.. 1
         __ n < 0:
             n = -n
             x = 1/x
-        __ n%2==0:
-            return self.myPow(x*x, n/2)
-        else:
-            return x*self.myPow(x*x, n/2)
+        __ n%2__0:
+            r.. self.myPow(x*x, n/2)
+        ____:
+            r.. x*self.myPow(x*x, n/2)
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

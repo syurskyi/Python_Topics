@@ -5,23 +5,23 @@ class Solution:
     """
     ___ intersectionOfArrays(self, A):
         ans = 0
-        __ not A:
-            return ans
+        __ n.. A:
+            r.. ans
 
-        n = len(A)
+        n = l..(A)
         C = {}
 
-        for i in range(n):
-            __ not A[i]:
-                return ans
+        ___ i __ r..(n):
+            __ n.. A[i]:
+                r.. ans
 
-            for a in A[i]:
-                __ a not in C:
+            ___ a __ A[i]:
+                __ a n.. __ C:
                     C[a] = set()
                 C[a].add(i)
 
-        for a, S in C.items():
-            __ len(S) == n:
+        ___ a, S __ C.items():
+            __ l..(S) __ n:
                 ans += 1
 
-        return ans
+        r.. ans

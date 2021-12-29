@@ -40,8 +40,8 @@ The price of each flight will be in the range [1, 10000].
 k is in the range of [0, n - 1].
 There will not be any duplicated flights or self cycles.
 """
-from collections import defaultdict
-import heapq
+____ collections _______ defaultdict
+_______ heapq
 
 
 class Solution:
@@ -49,21 +49,21 @@ class Solution:
         """
         dijkstra
         """
-        G = defaultdict(dict)
+        G = defaultdict(d..)
         visited = defaultdict(bool)
-        for u, v, w in flights:
+        ___ u, v, w __ flights:
             G[u][v] = w
 
         pq = [(0, 0, src)]  # (cost, step, city)
         while pq:
             cost, k, u = heapq.heappop(pq)
-            __ u == dst:
-                return cost
+            __ u __ dst:
+                r.. cost
 
             stops = k - 1 + 1
             __ stops <= K:
-                for v, w in G[u].items():
+                ___ v, w __ G[u].items():
                     heapq.heappush(pq, (cost + w, k + 1, v))
 
 
-        return -1
+        r.. -1

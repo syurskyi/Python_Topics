@@ -18,7 +18,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        n = len(nums)
+        n = l..(nums)
         left = 0
         right = n - 1
         left_res = -1
@@ -28,14 +28,14 @@ class Solution(object):
             mid = left + (right - left) / 2
             __ target > nums[mid]:
                 left = mid
-            else:
+            ____:
                 right = mid
-        __ nums[left] == target:
+        __ nums[left] __ target:
             left_res = left
-        elif nums[right] == target:
+        ____ nums[right] __ target:
             left_res = right
-        else:
-            return [-1, -1]
+        ____:
+            r.. [-1, -1]
 
         # Search for right bound (last occurence of target)
         left = 0
@@ -44,13 +44,13 @@ class Solution(object):
             mid = left + (right - left) / 2
             __ target >= nums[mid]:
                 left = mid
-            else:
+            ____:
                 right = mid
-        __ nums[right] == target:
+        __ nums[right] __ target:
             right_res = right
-        elif nums[left] == target:
+        ____ nums[left] __ target:
             right_res = left
-        return [left_res, right_res]
+        r.. [left_res, right_res]
 
 
 a1 = [5, 7, 7, 8, 8, 10]

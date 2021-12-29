@@ -14,7 +14,7 @@ updated ninja_belts dict as well, see the TESTS tab.
 '''
 
 
-from collections import namedtuple
+____ collections _______ namedtuple
 
 BeltStats = namedtuple('BeltStats', 'score ninjas')
 
@@ -39,7 +39,7 @@ ___ get_total_points(belts=ninja_belts):
        Return the total number of points int from the function."""
     values = belts.values()
     total = 0
-    for item in values:
+    ___ item __ values:
         total += item.ninjas * item.score
-    return total
+    r.. total
 print(get_total_points(ninja_belts))

@@ -1,17 +1,17 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_sqrt(num, r, step):
     d = num/r
-    __(step == 0):
-        return round(r,7)
-    else:
+    __(step __ 0):
+        r.. round(r,7)
+    ____:
         r = (r+d)/2
-        return get_sqrt(num,r,step-1)
+        r.. get_sqrt(num,r,step-1)
         
-for i in range(amount_values):
+___ i __ r..(amount_values):
     r = 1
     num, step = map(int, input().split())
-    results.append(get_sqrt(num,r,step))
+    results.a..(get_sqrt(num,r,step))
 
 print(*results)

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from triangle import Triangle, TriangleError
+____ triangle _______ Triangle, TriangleError
 
 
 class TriangleTests(unittest.TestCase):
@@ -49,5 +49,5 @@ class TriangleTests(unittest.TestCase):
         self.assertRaises(TriangleError, Triangle, 7, 3, 2)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

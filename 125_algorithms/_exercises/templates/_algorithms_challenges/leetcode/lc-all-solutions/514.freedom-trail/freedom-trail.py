@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution(object):
@@ -10,22 +10,22 @@ class Solution(object):
     """
 
     ___ dfs(ring, key, pointTo, d, length, cache):
-      __ (pointTo, key) in cache:
-        return cache[pointTo, key]
-      __ not key:
-        return 0
+      __ (pointTo, key) __ cache:
+        r.. cache[pointTo, key]
+      __ n.. key:
+        r.. 0
       minDist = float("inf")
       toChar = key[0]
-      for i in d[toChar]:
-        cost = min(length - abs(pointTo - i), abs(pointTo - i)) + 1
+      ___ i __ d[toChar]:
+        cost = m..(length - abs(pointTo - i), abs(pointTo - i)) + 1
         cost += dfs(ring, key[1:], i, d, length, cache)
-        minDist = min(minDist, cost)
+        minDist = m..(minDist, cost)
       cache[pointTo, key] = minDist
-      return minDist
+      r.. minDist
 
     cache = {}
-    d = collections.defaultdict(list)
-    for i, c in enumerate(ring):
-      d[c].append(i)
-    length = len(ring)
-    return dfs(ring, key, 0, d, length, cache)
+    d = collections.defaultdict(l..)
+    ___ i, c __ enumerate(ring):
+      d[c].a..(i)
+    length = l..(ring)
+    r.. dfs(ring, key, 0, d, length, cache)

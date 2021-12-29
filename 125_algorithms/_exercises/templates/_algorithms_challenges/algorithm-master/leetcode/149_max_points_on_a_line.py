@@ -12,20 +12,20 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not P:
-            return ans
+        __ n.. P:
+            r.. ans
 
-        n = len(P)
+        n = l..(P)
         __ n <= 2:
-            return n
+            r.. n
 
-        for i in range(n):
+        ___ i __ r..(n):
             S = {}
             points = dups = 0
-            for j in range(i + 1, n):
+            ___ j __ r..(i + 1, n):
                 dx = P[i].x - P[j].x
                 dy = P[i].y - P[j].y
-                __ dx == 0 and dy == 0:
+                __ dx __ 0 and dy __ 0:
                     dups += 1
                     continue
 
@@ -43,9 +43,9 @@ class Solution:
             __ points + dups + 1 > ans:
                 ans = points + dups + 1
 
-        return ans
+        r.. ans
 
     ___ get_gcd(self, a, b):
-        __ b == 0:
-            return a
-        return self.get_gcd(b, a % b)
+        __ b __ 0:
+            r.. a
+        r.. self.get_gcd(b, a % b)

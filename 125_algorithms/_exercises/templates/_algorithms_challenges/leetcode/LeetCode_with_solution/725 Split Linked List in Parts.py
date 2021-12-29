@@ -42,10 +42,10 @@ k will be an integer in the range [1, 50].
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
-import math
+_______ math
 
 
 class Solution:
@@ -66,7 +66,7 @@ class Solution:
             node = node.next
 
 
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ __ r..(k)]
 
         short_chunk_l = l // k
         long_chunk_l = short_chunk_l + 1
@@ -77,15 +77,15 @@ class Solution:
         cur_l = 0
         node = root
         while node:
-            ret[chunk_counter].append(node.val)
+            ret[chunk_counter].a..(node.val)
             cur_l += 1
-            chunk_size = long_chunk_l __ chunk_counter < n_long_chunk else short_chunk_l
-            __ cur_l == chunk_size:
+            chunk_size = long_chunk_l __ chunk_counter < n_long_chunk ____ short_chunk_l
+            __ cur_l __ chunk_size:
                 cur_l = 0
                 chunk_counter += 1
             node = node.next
 
-        return ret
+        r.. ret
 
     ___ splitListToParts_2(self, root: ListNode, k: int) -> List[ListNode]:
         """
@@ -104,7 +104,7 @@ class Solution:
             node = node.next
 
 
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ __ r..(k)]
         node = root
         counter = 0
         cur_l = 0
@@ -113,8 +113,8 @@ class Solution:
         while node:
             cur_l += 1
             counter += 1
-            ret[i].append(node.val)
-            __ cur_l == part_l:
+            ret[i].a..(node.val)
+            __ cur_l __ part_l:
                 k -= 1
                 cur_l = 0
                 i += 1
@@ -123,7 +123,7 @@ class Solution:
 
             node = node.next
 
-        return ret
+        r.. ret
 
     ___ splitListToParts_error(self, root: ListNode, k: int) -> List[ListNode]:
         """
@@ -142,18 +142,18 @@ class Solution:
             node = node.next
 
         part_l = math.ceil(l / k)
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ __ r..(k)]
 
         node = root
         cur_l = 0
         i = 0
         while node:
             cur_l += 1
-            ret[i].append(node.val)
-            __ cur_l == part_l:
+            ret[i].a..(node.val)
+            __ cur_l __ part_l:
                 cur_l = 0
                 i += 1
 
             node = node.next
 
-        return ret
+        r.. ret

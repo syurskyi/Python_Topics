@@ -51,16 +51,16 @@ class Solution:
         :param n:
         :return: list of integers (dec_repr)
         """
-        __ n==0:
-            return [0]
+        __ n__0:
+            r.. [0]
         result = [0, 1]
 
-        for num_of_bit in range(2, n+1):
+        ___ num_of_bit __ r..(2, n+1):
             msb = 1<<num_of_bit-1
-            for element in reversed(result):
-                result.append(msb+element)
+            ___ element __ reversed(result):
+                result.a..(msb+element)
 
-        return result
+        r.. result
 
 
     ___ grayCode_math(self, n):
@@ -69,4 +69,4 @@ class Solution:
         :param n:
         :return: list of integers (dec_repr)
         """
-        return [(x>>1)^x for x in xrange(1<<n)]
+        r.. [(x>>1)^x ___ x __ xrange(1<<n)]

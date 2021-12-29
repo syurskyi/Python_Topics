@@ -31,8 +31,8 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ = 'Daniel'
-from collections import defaultdict, namedtuple
-import heapq
+____ collections _______ defaultdict, namedtuple
+_______ heapq
 
 
 class Building(object):
@@ -42,8 +42,8 @@ class Building(object):
 
     ___ __cmp__(self, other):
         # Reverse order by height to get max-heap
-        assert isinstance(other, Building)
-        return other.h - self.h
+        ... isi..(other, Building)
+        r.. other.h - self.h
 
 # An event represents the buildings that start and end at a particular
 # x-coordinate.
@@ -61,20 +61,20 @@ class Solution:
         :rtype: list[list[int]]
         """
         # Map from x-coordinate to event.
-        events = defaultdict(lambda: Event(starts=[], ends=[]))
-        for left, right, height in buildings:
+        events = defaultdict(l....: Event(starts=[], ends=[]))
+        ___ left, right, height __ buildings:
             building = Building(height)
-            events[left].starts.append(building)  # possible multiple building at the same x-coordinate.
-            events[right].ends.append(building)
+            events[left].starts.a..(building)  # possible multiple building at the same x-coordinate.
+            events[right].ends.a..(building)
 
-        heap_h = []  # Heap of buildings currently standing.
+        heap_h    # list  # Heap of buildings currently standing.
         cur_h = 0  # current max height of standing buildings. the current skyline
-        ret = []
+        ret    # list
         # Process events in order by x-coordinate.
-        for x, event in sorted(events.items()):  # sort the dictionary by key
-            for building in event.starts:
+        ___ x, event __ s..(events.items()):  # sort the dictionary by key
+            ___ building __ event.starts:
                 heapq.heappush(heap_h, building)
-            for building in event.ends:
+            ___ building __ event.ends:
                 building.deleted = True
 
             # Pop any finished buildings from the top of the heap.
@@ -84,15 +84,15 @@ class Solution:
 
             # Top of heap (if any) is the highest standing building, so
             # its height is the current height of the skyline.
-            new_h = heap_h[0].h __ heap_h else 0
+            new_h = heap_h[0].h __ heap_h ____ 0
 
             __ new_h != cur_h:
                 cur_h = new_h
-                ret.append([x, cur_h])
+                ret.a..([x, cur_h])
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) == \
+__ __name__ __ "__main__":
+    ... Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) __ \
            [[2, 10], [3, 15], [7, 12], [12, 0], [15, 10], [20, 8], [24, 0]]

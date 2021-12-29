@@ -6,8 +6,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ sortedArrayToBST(self, num):
@@ -16,10 +16,10 @@ class Solution:
         :param num: list of integers
         :return: TreeNode
         """
-        __ not num:
-            return None
+        __ n.. num:
+            r.. N..
 
-        mid = (0+len(num))/2
+        mid = (0+l..(num))/2
         left_subtree = self.sortedArrayToBST(num[0:mid])
         right_subtree = self.sortedArrayToBST(num[mid+1:])
 
@@ -27,5 +27,5 @@ class Solution:
         root.left = left_subtree
         root.right = right_subtree
 
-        return root
+        r.. root
 

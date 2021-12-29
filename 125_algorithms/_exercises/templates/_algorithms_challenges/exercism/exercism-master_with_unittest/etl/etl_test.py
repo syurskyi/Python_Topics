@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import etl
+_______ etl
 
 
 class TransformTest(unittest.TestCase):
@@ -50,5 +50,5 @@ class TransformTest(unittest.TestCase):
         self.assertEqual(expected, etl.transform(old))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

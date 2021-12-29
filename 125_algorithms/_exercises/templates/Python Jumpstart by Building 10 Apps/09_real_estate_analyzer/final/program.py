@@ -1,13 +1,13 @@
-import csv
-import os
+_______ csv
+_______ os
 
 try:
-    import statistics
+    _______ statistics
 except:
     # error code instead
-    import statistics_standin_for_py2 as statistics
+    _______ statistics_standin_for_py2 as statistics
 
-from data_types import Purchase
+____ data_types _______ Purchase
 
 
 ___ main():
@@ -26,7 +26,7 @@ ___ print_header():
 
 ___ get_data_file():
     base_folder  os.path.dirname(__file__)
-    return os.path.join(base_folder, 'data',
+    r.. os.path.join(base_folder, 'data',
                         'SacramentoRealEstateTransactions2008.csv')
 
 
@@ -35,11 +35,11 @@ ___ load_file(filename):
         # with open(filename, 'r') as fin:
         reader  csv.DictReader(fin)
         purchases  []
-        for row in reader:
+        ___ row __ reader:
             p  Purchase.create_from_dict(row)
-            purchases.append(p)
+            purchases.a..(p)
 
-        return purchases
+        r.. purchases
 
 
 # def load_file_basic(filename):
@@ -80,7 +80,7 @@ ___ query_data(data):  # list[Purchase]):
 
     prices  (
         p.price  # projection or items
-        for p in data  # the set to process
+        ___ p __ data  # the set to process
     )
 
     ave_price  statistics.mean(prices)
@@ -95,26 +95,26 @@ ___ query_data(data):  # list[Purchase]):
 
     two_bed_homes  (
         p  # projection or items
-        for p in data  # the set to process
+        ___ p __ data  # the set to process
         __ announce(p, '2-bedrooms, found {}'.format(p.beds)) and p.beds __ 2  # test / condition
     )
 
     homes  []
-    for h in two_bed_homes:
-        __ len(homes) > 5:
+    ___ h __ two_bed_homes:
+        __ l..(homes) > 5:
             _____
-        homes.append(h)
+        homes.a..(h)
 
-    ave_price  statistics.mean((announce(p.price, 'price') for p in homes))
-    ave_baths  statistics.mean((p.baths for p in homes))
-    ave_sqft  statistics.mean((p.sq__ft for p in homes))
+    ave_price  statistics.mean((announce(p.price, 'price') ___ p __ homes))
+    ave_baths  statistics.mean((p.baths ___ p __ homes))
+    ave_sqft  statistics.mean((p.sq__ft ___ p __ homes))
     print("Average 2-bedroom home is ${:,}, baths={}, sq ft={:,}"
           .format(i..(ave_price), round(ave_baths, 1), round(ave_sqft, 1)))
 
 
 ___ announce(item, msg):
     print("Pulling item {} for {}".format(item, msg))
-    return item
+    r.. item
 
 
 __ __name__ __ '__main__':

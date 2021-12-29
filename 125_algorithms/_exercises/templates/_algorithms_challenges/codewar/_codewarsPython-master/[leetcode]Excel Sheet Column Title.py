@@ -3,16 +3,16 @@ class Solution:
     # @return {string}
     ___ convertToTitle(self, n):
         times = 0
-        res = []
+        res    # list
         while n >= 27:
-            res.append(n % 27)
+            res.a..(n % 27)
             n %= 27
             times += 1
-            __ times == 10000:
+            __ times __ 10000:
                 break
-        res.append(n)
-        return res
+        res.a..(n)
+        r.. res
 
 test = Solution()
-for i in range(24,30):
+___ i __ r..(24,30):
     print(test.convertToTitle(i))

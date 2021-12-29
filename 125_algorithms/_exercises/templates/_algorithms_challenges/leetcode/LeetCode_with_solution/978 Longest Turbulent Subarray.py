@@ -29,7 +29,7 @@ Note:
 1 <= A.length <= 40000
 0 <= A[i] <= 10^9
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -37,30 +37,30 @@ class Solution:
         """
         scan
         """
-        flag = None  # 0: expecting <, 1: expecting > 
+        flag = N..  # 0: expecting <, 1: expecting >
         ret = 1
         cur = 1
-        for i in range(len(A)-1):
-            __ A[i] == A[i+1]:
-                flag = None
+        ___ i __ r..(l..(A)-1):
+            __ A[i] __ A[i+1]:
+                flag = N..
                 cur = 1
-            elif A[i] > A[i+1]:
-                __ flag is None or flag == 1:
+            ____ A[i] > A[i+1]:
+                __ flag __ N.. o. flag __ 1:
                     cur += 1
                     ret = max(ret, cur)
-                else:
+                ____:
                     cur = 2
                 flag = 0
-            else:  # <
-                __ flag is None or flag == 0:
+            ____:  # <
+                __ flag __ N.. o. flag __ 0:
                     cur += 1
                     ret = max(ret, cur)
-                else:
+                ____:
                     cur = 2
                 flag = 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().maxTurbulenceSize([9,4,2,10,7,8,8,1,9]) == 5
+__ __name__ __ "__main__":
+    ... Solution().maxTurbulenceSize([9,4,2,10,7,8,8,1,9]) __ 5

@@ -1,5 +1,5 @@
-from collections import namedtuple
-from datetime import datetime
+____ collections _______ namedtuple
+____ datetime _______ datetime
 
 Book = namedtuple('Book', 'title authors pages published')
 
@@ -27,31 +27,31 @@ books = [
 ]
 
 ___ sort_books_by_len_of_title(books=books):
-    name_list = [entry.title for entry in books]
-    return max(name_list, key=len)
+    name_list = [entry.title ___ entry __ books]
+    r.. max(name_list, key=l..)
 
 
 ___ sort_books_by_first_authors_last_name(books=books):
-    author_list = [entry.authors for entry in books]
-    f = sorted(author_list,
-               key=lambda x: x.split(' ')[-1],
-               reverse=True)[0]
-    return ''.join([t.title
-                    for t in books
-                    __ t.authors == f])
+    author_list = [entry.authors ___ entry __ books]
+    f = s..(author_list,
+               key=l.... x: x.split(' ')[-1],
+               r.._T..[0]
+    r.. ''.join([t.title
+                    ___ t __ books
+                    __ t.authors __ f])
 
 
 ___ sort_books_by_number_of_page(books=books):
-    page_list = [entry.pages for entry in books]
-    return ''.join([t.title
-                    for t in books
-                    __ t.pages == max(page_list)])
+    page_list = [entry.pages ___ entry __ books]
+    r.. ''.join([t.title
+                    ___ t __ books
+                    __ t.pages __ max(page_list)])
 
 
 ___ sort_books_by_published_date(books=books):
     date_list = [datetime.strptime(entry.published, '%Y-%m-%d')
-                 for entry in books]
-    l_pub = sorted(date_list, reverse=True)[0]
-    return ''.join([t.title
-                    for t in books
-                    __ t.published == datetime.strftime(l_pub, '%Y-%m-%d')])
+                 ___ entry __ books]
+    l_pub = s..(date_list, r.._T..[0]
+    r.. ''.join([t.title
+                    ___ t __ books
+                    __ t.published __ datetime.strftime(l_pub, '%Y-%m-%d')])

@@ -1,4 +1,4 @@
-import json
+_______ json
 
 with open("file2.txt") as json_file:
     data  json.load(json_file)

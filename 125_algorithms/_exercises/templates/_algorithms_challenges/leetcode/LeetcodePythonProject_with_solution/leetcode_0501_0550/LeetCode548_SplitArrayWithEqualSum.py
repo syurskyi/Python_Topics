@@ -9,31 +9,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        __ not nums: return False
+        __ n.. nums: r.. False
         sumVals = [nums[0]]
-        n = len(nums)
-        for i in range(1, n):
-            sumVals.append(sumVals[-1]+nums[i])
-        for j in range(3, n-3):
+        n = l..(nums)
+        ___ i __ r..(1, n):
+            sumVals.a..(sumVals[-1]+nums[i])
+        ___ j __ r..(3, n-3):
             hashset = set()
-            for i in range(1, j-1):
-                __ sumVals[i-1] == sumVals[j-1]-sumVals[i]:
+            ___ i __ r..(1, j-1):
+                __ sumVals[i-1] __ sumVals[j-1]-sumVals[i]:
                     hashset.add(sumVals[i-1])
-            for k in range(j+2, n-1):
-                __ sumVals[n-1]-sumVals[k] == sumVals[k-1]-sumVals[j] and\
-                    sumVals[k-1]-sumVals[j] in hashset:
-                    return True
-        return False
+            ___ k __ r..(j+2, n-1):
+                __ sumVals[n-1]-sumVals[k] __ sumVals[k-1]-sumVals[j] and\
+                    sumVals[k-1]-sumVals[j] __ hashset:
+                    r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
             [1,2,1,2,1,2,1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.splitArray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

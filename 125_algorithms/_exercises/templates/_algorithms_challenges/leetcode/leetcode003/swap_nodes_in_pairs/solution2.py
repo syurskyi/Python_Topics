@@ -8,36 +8,36 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head):
-        __ head is None:
-            return head
-        res = None
-        res_end = None
-        temp = None
-        temp_end = None
+        __ head __ N..
+            r.. head
+        res = N..
+        res_end = N..
+        temp = N..
+        temp_end = N..
         i = 1
-        while head is not None:
+        while head __ n.. N..
             next_node = head.next
             # Append current node to temp list
-            __ temp is None:
+            __ temp __ N..
                 temp_end = head
             head.next = temp
             temp = head
-            __ i % 2 == 0:
+            __ i % 2 __ 0:
                 # Append temp to res
-                __ res is None:
+                __ res __ N..
                     res = temp
                     res_end = temp_end
-                else:
+                ____:
                     res_end.next = temp
                     res_end = temp_end
-                temp = None
+                temp = N..
             i += 1
             head = next_node
-        __ temp is not None:
-            __ res is None:
+        __ temp __ n.. N..
+            __ res __ N..
                 res = temp
                 res_end = temp_end
-            else:
+            ____:
                 res_end.next = temp
                 res_end = temp_end
-        return res
+        r.. res

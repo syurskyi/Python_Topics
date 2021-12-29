@@ -21,36 +21,36 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
-    ___ pathSum(self, root, sum):
+    ___ pathSum(self, root, s..):
         """
         :param root: TreeNode
         :param sum: integer
         :return: a list of lists of integers
         """
-        result = []
-        self.accumulatePathSum(root, sum, [], result)
-        return result
+        result    # list
+        self.accumulatePathSum(root, s.., [], result)
+        r.. result
 
-    ___ accumulatePathSum(self, root, sum, cur_path, result):
+    ___ accumulatePathSum(self, root, s.., cur_path, result):
         """
         DFS
         Similar to previous path sum
         """
         # trivial
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
-        sum = sum - root.val
-        cur_path.append(root.val)
+        s.. = s.. - root.val
+        cur_path.a..(root.val)
         # terminal condition
-        __ sum==0 and root.left is None and root.right is None:
-            result.append(list(cur_path))  # new copy
-            return
+        __ s..__0 and root.left __ N.. and root.right __ N..
+            result.a..(l..(cur_path))  # new copy
+            r..
 
         # dfs with pre-checking
-        __ root.left: self.accumulatePathSum(root.left, sum, list(cur_path), result)  # new copy
-        __ root.right: self.accumulatePathSum(root.right, sum, list(cur_path), result)  # new copy
+        __ root.left: self.accumulatePathSum(root.left, s.., l..(cur_path), result)  # new copy
+        __ root.right: self.accumulatePathSum(root.right, s.., l..(cur_path), result)  # new copy

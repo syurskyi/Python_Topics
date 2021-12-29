@@ -1,4 +1,4 @@
-from string import printable
+____ string _______ printable
 
 '''
 original code:
@@ -22,7 +22,7 @@ def extract_non_ascii_words(text):
 
 ___ extract_non_ascii_words(text):
     '''Filter a text returning a list of non-ascii words'''
-    return [word
-            for word in text.split()
-            for l in word
-            __ l not in printable]
+    r.. [word
+            ___ word __ text.s..
+            ___ l __ word
+            __ l n.. __ printable]

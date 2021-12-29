@@ -20,17 +20,17 @@ ___ convert(value: float, fmt: str) -> float:
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    __ type(value) is int or type(value) is float:
-        __ fmt.lower() == "cm" or fmt.lower() == "in":
-            __ fmt.lower() == "cm":
+    __ type(value) __ int o. type(value) __ float:
+        __ fmt.lower() __ "cm" o. fmt.lower() __ "in":
+            __ fmt.lower() __ "cm":
                 result = value*2.54
-                return round(result,4)
-            else:
+                r.. round(result,4)
+            ____:
                 result = value*0.393700787
-                return round(result, 4)
-        else:
+                r.. round(result, 4)
+        ____:
             raise ValueError
-    else:
+    ____:
         raise TypeError
 
 

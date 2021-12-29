@@ -16,7 +16,7 @@ class Solution(object):
         :type k: int
         :rtype: List[ListNode]
         """
-        res = []
+        res    # list
         length = 0
         head = root
         while head:
@@ -25,7 +25,7 @@ class Solution(object):
         length0 = length//k
         count0 = length-length0*k
         lengths = [length0]*k
-        for i in range(count0):
+        ___ i __ r..(count0):
             lengths[i] += 1
         head = root
         prev = ListNode(-1)
@@ -36,18 +36,18 @@ class Solution(object):
         print('length: %s' % length)
         print('count0: %s' % count0)
         while head:
-            __ lengths[i] == 0:
-                prev.next = None
+            __ lengths[i] __ 0:
+                prev.next = N..
                 i += 1
-                res.append(prevHead)
+                res.a..(prevHead)
                 prevHead = head
             lengths[i] -= 1
             prev = head
             head = head.next
-        res.append(prevHead)
-        for _ in range(i+1, k):
-            res.append(None)
-        return res
+        res.a..(prevHead)
+        ___ _ __ r..(i+1, k):
+            res.a..(N..)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -60,9 +60,9 @@ class Solution(object):
                 5,
             ],
         ]
-        for head, k in testCases:
+        ___ head, k __ testCases:
             res = self.splitListToParts(head, k)
             print('res: %s' % res)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

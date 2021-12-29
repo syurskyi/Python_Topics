@@ -16,8 +16,8 @@ Note:
 -10000 <= A[i] <= 10000
 2 <= K <= 10000
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -29,16 +29,16 @@ class Solution:
         prefix_sum = 0
         counter = defaultdict(int)
         counter[0] = 1  # important trival case
-        for a in A:
+        ___ a __ A:
             prefix_sum += a
             prefix_sum %= K
             counter[prefix_sum] += 1
 
         ret = 0
-        for v in counter.values():
+        ___ v __ counter.values():
             ret += v * (v-1) // 2
 
-        return ret
+        r.. ret
 
     ___ subarraysDivByK(self, A: List[int], K: int) -> int:
         """
@@ -53,10 +53,10 @@ class Solution:
         counter = defaultdict(int)
         counter[0] = 1  # trival case. !important
         ret = 0
-        for a in A:
+        ___ a __ A:
             prefix_sum += a
             prefix_sum %= K
             ret += counter[prefix_sum]  # count of previously matching prefix sum
             counter[prefix_sum] += 1
 
-        return ret
+        r.. ret

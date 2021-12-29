@@ -1,15 +1,15 @@
-from hangman.game import Game
-from hangman.game_status import GameStatus
+____ hangman.game _______ Game
+____ hangman.game_status _______ GameStatus
 
 
 ___ chars_list_to_str(chars):
-    return ''.join(chars)
+    r.. ''.join(chars)
 
 
 game  Game()
 word  game.generate_word()
 
-letters_count  len(word)
+letters_count  l..(word)
 
 print(f"The word consists of {letters_count} letters.")
 print("Try to guess the word letter by letter.")
@@ -25,5 +25,5 @@ w___ game.game_status __ GameStatus.IN_PROGRESS:
 __ game.game_status __ GameStatus.LOST:
     print("You're hanged!")
     print(f"The word was: {game.word}")
-else:
+____:
     print("Congratulations! You won!")

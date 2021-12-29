@@ -1,9 +1,9 @@
-from pathlib import PosixPath
-import difflib
-import os
+____ pathlib _______ PosixPath
+_______ difflib
+_______ os
 
 
-___ get_matching_files(directory: PosixPath, filter_str: str) -> list:
+___ get_matching_files(directory: PosixPath, filter_str: str) -> l..:
     """Get all file names in "directory" and (case insensitive) match the ones
        that exactly match "filter_str"
 
@@ -28,22 +28,22 @@ ___ get_matching_files(directory: PosixPath, filter_str: str) -> list:
 
 
     
-    exact_matches = []
-    close_matches = []
+    exact_matches    # list
+    close_matches    # list
     
     files = os.listdir(directory)
-    for file in files:
+    ___ file __ files:
 
-        __ file.lower() == filter_str:
-            exact_matches.append(file)
+        __ file.lower() __ filter_str:
+            exact_matches.a..(file)
     
         
     __ exact_matches:
-        return exact_matches
+        r.. exact_matches
 
 
-    close_matches = difflib.get_close_matches(filter_str,(file.lower() for file in files))
-    return close_matches
+    close_matches = difflib.get_close_matches(filter_str,(file.lower() ___ file __ files))
+    r.. close_matches
 
 
 

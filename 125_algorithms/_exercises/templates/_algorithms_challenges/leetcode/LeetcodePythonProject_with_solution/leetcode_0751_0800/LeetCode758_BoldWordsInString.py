@@ -15,20 +15,20 @@ class Solution(object):
         start = False
         j = 0
         res = ''
-        for i in range(len(s)):
-            for word in words:
-                __ i+len(word) <= len(s) and s[i:i+len(word)] == word:
-                    __ not start:
+        ___ i __ r..(l..(s)):
+            ___ word __ words:
+                __ i+l..(word) <= l..(s) and s[i:i+l..(word)] __ word:
+                    __ n.. start:
                         res += '<b>'
                         start = True
-                    j = max(j, i+len(word))
-            __ i == j and start:
+                    j = max(j, i+l..(word))
+            __ i __ j and start:
                 res += '</b>'
                 start = False
             res += s[i]
-        __ j >= len(s):
+        __ j >= l..(s):
             res += '</b>'
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -45,12 +45,12 @@ class Solution(object):
                 "cebcecceab",
             ],
         ]
-        for words, s in testCases:
+        ___ words, s __ testCases:
             print('words: %s' % words)
             print('s: %s' % s)
             result = self.boldWords(words, s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

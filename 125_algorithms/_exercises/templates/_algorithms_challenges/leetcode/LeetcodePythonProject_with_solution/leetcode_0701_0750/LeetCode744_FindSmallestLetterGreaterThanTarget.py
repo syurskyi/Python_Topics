@@ -10,14 +10,14 @@ class Solution(object):
         :type target: str
         :rtype: str
         """
-        l, r = 0, len(letters)
+        l, r = 0, l..(letters)
         while l < r:
             mid = (l+r)//2
             __ target >= letters[mid]:
                 l = mid+1
-            else:
+            ____:
                 r = mid
-        return letters[l] __ l < len(letters) else letters[0]
+        r.. letters[l] __ l < l..(letters) ____ letters[0]
     
     ___ test(self):
         testCases = [
@@ -38,10 +38,10 @@ class Solution(object):
                 'j',
             ],
         ]
-        for letters, target in testCases:
+        ___ letters, target __ testCases:
             result = self.nextGreatestLetter(letters, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

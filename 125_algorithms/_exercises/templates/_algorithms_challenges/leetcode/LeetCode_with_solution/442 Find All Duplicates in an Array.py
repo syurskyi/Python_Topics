@@ -18,7 +18,7 @@ Output:
 
 class Solution:
     ___ idx(self, a):
-        return a - 1
+        r.. a - 1
 
     ___ findDuplicates(self, A):
         """
@@ -29,22 +29,22 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        for i in range(len(A)):
+        ___ i __ r..(l..(A)):
             t = self.idx(A[i])
             while i != t:
-                __ A[i] == A[t]:
+                __ A[i] __ A[t]:
                     break
-                else:
+                ____:
                     A[i], A[t] = A[t], A[i]
                     t = self.idx(A[i])
 
-        ret = []
-        for i in range(len(A)):
+        ret    # list
+        ___ i __ r..(l..(A)):
             __ self.idx(A[i]) != i:
-                ret.append(A[i])
+                ret.a..(A[i])
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert set(Solution().findDuplicates([4,3,2,7,8,2,3,1])) == set([2,3])
+__ __name__ __ "__main__":
+    ... set(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ set([2,3])

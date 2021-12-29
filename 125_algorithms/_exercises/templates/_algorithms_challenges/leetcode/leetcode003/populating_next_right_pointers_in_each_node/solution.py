@@ -49,10 +49,10 @@ class Solution(object):
         :type root: TreeLinkNode
         :rtype: nothing
         """
-        __ root is not None:
-            __ root.left is not None:
+        __ root __ n.. N..
+            __ root.left __ n.. N..
                 root.left.next = root.right
-            __ root.right is not None and root.next is not None:
+            __ root.right __ n.. N.. and root.next __ n.. N..
                 root.right.next = root.next.left
             self.connect(root.left)
             self.connect(root.right)

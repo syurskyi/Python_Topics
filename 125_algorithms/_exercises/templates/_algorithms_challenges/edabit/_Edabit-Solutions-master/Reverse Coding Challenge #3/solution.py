@@ -1,6 +1,6 @@
 ___ mystery_func(lst, n):
-    output = []
-    for i in lst:
+    output    # list
+    ___ i __ lst:
         s = i % n
-        output.append(s)
-    return output
+        output.a..(s)
+    r.. output

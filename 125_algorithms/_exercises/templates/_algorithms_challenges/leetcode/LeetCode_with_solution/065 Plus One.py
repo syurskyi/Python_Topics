@@ -15,16 +15,16 @@ class Solution(object):
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        for i in xrange(len(digits)-1, -1, -1):
+        ___ i __ xrange(l..(digits)-1, -1, -1):
             digits[i] += 1
             __ digits[i] < 10:
-                return digits
-            else:
+                r.. digits
+            ____:
                 digits[i] -= 10
 
         # MSB
         digits.insert(0, 1)
-        return digits
+        r.. digits
 
     ___ plusOne(self, digits):
         """
@@ -36,22 +36,22 @@ class Solution(object):
 
         digits[0] += 1
         carry = 0
-        for i in xrange(len(digits)):  # for ind, val in enumerate(digits):
+        ___ i __ xrange(l..(digits)):  # for ind, val in enumerate(digits):
             digits[i] += carry
             __ digits[i] > 9:
                 digits[i] -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
                 break
 
         __ carry:
-            digits.append(1)
+            digits.a..(1)
 
         digits.reverse()
-        return digits
+        r.. digits
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     digits = [9]
-    assert Solution().plusOne(digits) == [1, 0]
+    ... Solution().plusOne(digits) __ [1, 0]

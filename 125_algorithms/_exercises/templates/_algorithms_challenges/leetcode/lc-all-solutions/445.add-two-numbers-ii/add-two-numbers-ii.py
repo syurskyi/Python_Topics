@@ -13,30 +13,30 @@ class Solution(object):
     """
 
     ___ r(root):
-      pre = None
+      pre = N..
       cur = root
       while cur:
         tmp = cur.next
         cur.next = pre
         pre = cur
         cur = tmp
-      return pre
+      r.. pre
 
     p = dummy = ListNode(-1)
     p1, p2 = r(l1), r(l2)
-    pre = None
+    pre = N..
     carry = 0
     while p1 and p2:
       p.next = ListNode(p1.val + p2.val + carry)
-      carry = 1 __ p.next.val > 9 else 0
+      carry = 1 __ p.next.val > 9 ____ 0
       p.next.val = p.next.val % 10
       p1 = p1.next
       p2 = p2.next
       p = p.next
-    pp = p1 or p2
+    pp = p1 o. p2
     while pp:
       p.next = ListNode(pp.val + carry)
-      carry = 1 __ p.next.val > 9 else 0
+      carry = 1 __ p.next.val > 9 ____ 0
       p.next.val = p.next.val % 10
       pp = pp.next
       p = p.next
@@ -45,4 +45,4 @@ class Solution(object):
       n = ListNode(1)
       n.next = head
       head = n
-    return head
+    r.. head

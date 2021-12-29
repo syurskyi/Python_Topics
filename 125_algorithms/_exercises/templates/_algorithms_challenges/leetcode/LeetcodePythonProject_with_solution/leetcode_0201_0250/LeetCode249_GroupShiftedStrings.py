@@ -11,69 +11,69 @@ class Solution(object):
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for s in strings:
+        ___ s __ strings:
             hashStr = self.getHash(s)
             hashmap[hashStr] = hashmap.get(hashStr, []) + [s]
-        res = []
-        for vals in hashmap.values():
-            res.append(vals)
-        return res
+        res    # list
+        ___ vals __ hashmap.values():
+            res.a..(vals)
+        r.. res
     
     ___ getHash(self, s):
-        __ not s: return '-2'
-        __ len(s) == 1: return '-1'
+        __ n.. s: r.. '-2'
+        __ l..(s) __ 1: r.. '-1'
         res = ''
-        for i in range(1, len(s)):
+        ___ i __ r..(1, l..(s)):
             diff = ord(s[i])-ord(s[i-1])
             __ diff < 0:
                 diff += 26
             res += '%s,' % diff
-        return res
+        r.. res
     
     ___ groupStrings_another(self, strings):
         """
         :type strings: List[str]
         :rtype: List[List[str]]
         """
-        result = []
-        for s in strings:
+        result    # list
+        ___ s __ strings:
             added = False
-            for l in result:
+            ___ l __ result:
                 __ self.isSameGroup(l[0], s):
-                    l.append(s)
+                    l.a..(s)
                     added = True
-            __ not added:
-                result.append([s])
-        return result
+            __ n.. added:
+                result.a..([s])
+        r.. result
     
     ___ isSameGroup(self, s1, s2):
-        __ len(s1) != len(s2):
-            return False
-        length = len(s1)
-        __ length == 1:
-            return True
+        __ l..(s1) != l..(s2):
+            r.. False
+        length = l..(s1)
+        __ length __ 1:
+            r.. True
         diff = ord(s1[0]) - ord(s2[0])
         __ diff < 0:
             diff += 26
-        for i in range(1, length):
+        ___ i __ r..(1, length):
             d = ord(s1[i]) - ord(s2[i])
             __ d < 0:
                 d += 26
             __ d > 26:
                 d -= 26
             __ d != diff:
-                return False
-        return True
+                r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
-        for strings in testCases:
+        ___ strings __ testCases:
             print('strs: %s' % (strings))
             result = self.groupStrings(strings)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

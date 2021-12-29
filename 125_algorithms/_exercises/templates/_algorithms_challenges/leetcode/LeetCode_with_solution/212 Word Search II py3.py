@@ -18,8 +18,8 @@ Return ["eat","oath"].
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
@@ -27,45 +27,45 @@ dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
 class TrieNode:
     ___ __init__(self):
-        self.word = None
+        self.word = N..
         self.children = defaultdict(TrieNode)
 
 
 class Solution:
     ___ findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         root = self.construct(words)
-        m, n = len(board), len(board[0])
-        visited = [[False for _ in range(n)] for _ in range(m)]
+        m, n = l..(board), l..(board[0])
+        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
         ret = set()
-        for i in range(m):
-            for j in range(n):
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 self.dfs(board, visited, i, j, root, ret)
 
-        return list(ret)
+        r.. l..(ret)
 
     ___ dfs(self, board, visited, i, j, cur, ret):
-        m, n = len(board), len(board[0])
+        m, n = l..(board), l..(board[0])
         visited[i][j] = True
         c = board[i][j]
-        __ c in cur.children:
+        __ c __ cur.children:
             nxt = cur.children[c]
-            __ nxt.word is not None:
+            __ nxt.word __ n.. N..
                 ret.add(nxt.word)
 
-            for di, dj in dirs:
+            ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
-                __ 0 <= I < m and 0 <= J < n and not visited[I][J]:
+                __ 0 <= I < m and 0 <= J < n and n.. visited[I][J]:
                     self.dfs(board, visited, I, J, nxt, ret)
 
         visited[i][j] = False
 
     ___ construct(self, words):
         root = TrieNode()
-        for w in words:
+        ___ w __ words:
             cur = root
-            for c in w:
+            ___ c __ w:
                 cur = cur.children[c]
             cur.word = w
 
-        return root
+        r.. root

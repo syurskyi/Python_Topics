@@ -1,51 +1,51 @@
 """
 Premium Question
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
 
 class Solution(object):
     ___ __init__(self):
-        self.x = None
+        self.x = N..
 
     ___ isReflected(self, points):
         """
         :type points: List[List[int]]
         :rtype: bool
         """
-        d = defaultdict(list)
-        for x, y in points:
-            d[y].append(x)
+        d = defaultdict(l..)
+        ___ x, y __ points:
+            d[y].a..(x)
 
-        for v in d.values():
-            __ not self.check(v):
-                return False
+        ___ v __ d.values():
+            __ n.. self.check(v):
+                r.. False
 
-        return True
+        r.. True
 
     ___ check(self, lst):
         lst.sort()
         i = 0
-        j = len(lst) - 1
+        j = l..(lst) - 1
         while i < j:
             x = (lst[i] + lst[j]) / float(2)
-            __ not self.x:
+            __ n.. self.x:
                 self.x = x
-            elif self.x != x:
-                return False
+            ____ self.x != x:
+                r.. False
 
             i += 1
             j -= 1
 
-        __ i == j:
-            __ not self.x:
+        __ i __ j:
+            __ n.. self.x:
                 self.x = lst[i]
-            elif self.x != lst[i]:
-                return False
+            ____ self.x != lst[i]:
+                r.. False
 
-        return True
+        r.. True
 
-__ __name__ == "__main__":
-    assert Solution().isReflected([[1,1],[-1,-1]]) == False
+__ __name__ __ "__main__":
+    ... Solution().isReflected([[1,1],[-1,-1]]) __ False

@@ -15,13 +15,13 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
     ___ __str__(self):
-        return str(self.val)+", "+str(self.next)
+        r.. str(self.val)+", "+str(self.next)
 
 class Solution:
     ___ reverseBetween(self, head, m, n):
@@ -34,8 +34,8 @@ class Solution:
         :return: ListNode
         """
         # trivial
-        __ not head or m>=n:
-            return head
+        __ n.. head o. m>=n:
+            r.. head
 
         dummy = ListNode(0)
         dummy.next = head
@@ -43,20 +43,20 @@ class Solution:
         cnt = 1  # position starting from 1
         pre = dummy
 
-        start_pre = None
-        start = None
+        start_pre = N..
+        start = N..
 
         cur = pre.next  # cannot put it in while loop? affect reverse link
         while pre.next:
             # record starting point
-            __ cnt==m:
+            __ cnt__m:
                 start_pre = pre
                 start = cur
 
             # reverse link (not node)
             # 1 -> 2 -> 3
             # 1 <- 2 -> 3
-            elif m<cnt<=n:
+            ____ m<cnt<=n:
                 # temp = cur.next
                 # cur.next = pre
                 # pre = cur
@@ -68,7 +68,7 @@ class Solution:
                 continue
 
             # reconnect
-            elif cnt==n+1:
+            ____ cnt__n+1:
                 end = pre
                 start_pre.next = end
                 start.next = cur
@@ -80,11 +80,11 @@ class Solution:
             cur = cur.next
             cnt += 1
 
-        return dummy.next
+        r.. dummy.next
 
-__ __name__=="__main__":
+__ __name____"__main__":
     length = 3
-    lst = [ListNode(i+1) for i in range(length)]
-    for i in xrange(length-1):
+    lst = [ListNode(i+1) ___ i __ r..(length)]
+    ___ i __ xrange(length-1):
         lst[i].next = lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

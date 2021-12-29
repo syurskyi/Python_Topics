@@ -6,4 +6,4 @@ class Solution(object):
     :type ops: List[List[int]]
     :rtype: int
     """
-    return reduce(operator.mul, map(min, zip(*ops + [[m, n]])))
+    r.. reduce(operator.mul, map(m.., zip(*ops + [[m, n]])))

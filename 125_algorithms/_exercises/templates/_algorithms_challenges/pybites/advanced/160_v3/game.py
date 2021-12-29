@@ -1,12 +1,12 @@
-import csv
-import os
-from urllib.request import urlretrieve
-from collections import defaultdict
+_______ csv
+_______ os
+____ urllib.request _______ urlretrieve
+____ collections _______ defaultdict
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'
 BATTLE_DATA = os.path.join(TMP, DATA)
-__ not os.path.isfile(BATTLE_DATA):
+__ n.. os.path.isfile(BATTLE_DATA):
     urlretrieve(
         f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
         BATTLE_DATA
@@ -17,13 +17,13 @@ ___ _create_defeat_mapping():
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
-    defeat_map = defaultdict(list)
+    defeat_map = defaultdict(l..)
     with open(BATTLE_DATA) as f:
-        rows = list(csv.DictReader(f))
+        rows = l..(csv.DictReader(f))
 
-    for row in rows:
-        defeat_map[row['Attacker']] = [k for k, v in row.items() __ v == 'win']
-    return defeat_map
+    ___ row __ rows:
+        defeat_map[row['Attacker']] = [k ___ k, v __ row.items() __ v __ 'win']
+    r.. defeat_map
 
 
 ___ get_winner(player1, player2, defeat_mapping_ N..
@@ -36,15 +36,15 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
        Raise a ValueError if invalid player strings are passed in.
     """
-    defeat_mapping = defeat_mapping or _create_defeat_mapping()
+    defeat_mapping = defeat_mapping o. _create_defeat_mapping()
 
-    __ player1 not in defeat_mapping or player2 not in defeat_mapping:
+    __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
         raise ValueError('Invalid player string')
 
-    __ player1 == player2:
-        return 'Tie'
-    else:
-        __ player1 in defeat_mapping[player2]:
-            return player2
-        else:
-            return player1
+    __ player1 __ player2:
+        r.. 'Tie'
+    ____:
+        __ player1 __ defeat_mapping[player2]:
+            r.. player2
+        ____:
+            r.. player1

@@ -4,19 +4,19 @@ class Solution(object):
     :type M: List[List[int]]
     :rtype: List[List[int]]
     """
-    m = len(M)
-    n = len(M[0])
-    ans = [[0] * n for _ in range(m)]
+    m = l..(M)
+    n = l..(M[0])
+    ans = [[0] * n ___ _ __ r..(m)]
 
-    for i in range(m):
-      for j in range(n):
+    ___ i __ r..(m):
+      ___ j __ r..(n):
         cnt = 0
         sums = 0
-        for di in range(-1, 2):
-          for dj in range(-1, 2):
+        ___ di __ r..(-1, 2):
+          ___ dj __ r..(-1, 2):
             newi, newj = i + di, j + dj
             __ 0 <= newi < m and 0 <= newj < n:
               cnt += 1
               sums += M[newi][newj]
         ans[i][j] = sums / cnt
-    return ans
+    r.. ans

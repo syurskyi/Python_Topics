@@ -6,21 +6,21 @@ Created on Mar 8, 2017
 
 class Solution(object):
     ___ generatePossibleNextMoves(self, s):
-        result = []
-        for i in range(1, len(s)):
-            __ s[i-1] == '+' and s[i] == '+':
-                result.append(s[:i-1]+'--'+s[i+1:])
-        return result
+        result    # list
+        ___ i __ r..(1, l..(s)):
+            __ s[i-1] __ '+' and s[i] __ '+':
+                result.a..(s[:i-1]+'--'+s[i+1:])
+        r.. result
     
     ___ test(self):
         testCases = [
             '++++',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.generatePossibleNextMoves(s)
             print('result: %s' % (result))
             print('-='*20+'-')
     
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

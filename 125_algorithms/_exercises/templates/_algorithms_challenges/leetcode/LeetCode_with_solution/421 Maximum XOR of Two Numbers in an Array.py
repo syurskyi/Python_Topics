@@ -20,19 +20,19 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        for i in reversed(range(32)):
-            prefixes = set(num >> i for num in nums)
+        ___ i __ reversed(r..(32)):
+            prefixes = set(num >> i ___ num __ nums)
             ret <<= 1
             # fixing the remaining bit, set the LSB
             cur = ret + 1
-            for p in prefixes:
+            ___ p __ prefixes:
                 # a ^ b ^ a = b
-                __ cur ^ p in prefixes:
+                __ cur ^ p __ prefixes:
                     ret = cur
                     break  # found one
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) == 28
+__ __name__ __ "__main__":
+    ... Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) __ 28

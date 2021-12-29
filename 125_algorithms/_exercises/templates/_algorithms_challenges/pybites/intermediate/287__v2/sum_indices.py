@@ -1,20 +1,20 @@
-from typing import List
+____ typing _______ List
 
 
 ___ sum_indices(items: List[str]) -> int:
     duplicate_lookup = {}
     running_total = 0
-    for i in range(len(items)):
+    ___ i __ r..(l..(items)):
         item = items[i]
 
-        __ item not in duplicate_lookup:
+        __ item n.. __ duplicate_lookup:
             duplicate_lookup[item] = [i]
             running_total += i
-        else:
-            duplicate_lookup[item].append(i)
-            running_total += sum(duplicate_lookup[item])
+        ____:
+            duplicate_lookup[item].a..(i)
+            running_total += s..(duplicate_lookup[item])
     
-    return running_total
+    r.. running_total
 
         
 # if __name__ == "__main__":

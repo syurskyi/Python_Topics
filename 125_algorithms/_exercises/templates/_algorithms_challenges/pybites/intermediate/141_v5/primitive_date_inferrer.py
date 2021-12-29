@@ -1,6 +1,6 @@
-from collections import Counter
-from datetime import datetime
-from enum import Enum
+____ collections _______ Counter
+____ datetime _______ datetime
+____ enum _______ Enum
 
 
 class DateFormat(Enum):
@@ -19,10 +19,10 @@ class DateFormat(Enum):
         2. for val=n an explicit format string for a given enum member value
         """
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
-        __ val is None:
-            return d_parse_formats
-        __ 0 <= val <= len(d_parse_formats):
-            return d_parse_formats[val]
+        __ val __ N..
+            r.. d_parse_formats
+        __ 0 <= val <= l..(d_parse_formats):
+            r.. d_parse_formats[val]
         raise ValueError
 
 
@@ -40,16 +40,16 @@ ___ _maybe_DateFormats(date_str):
     a possible date format for the input date_str
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
-    maybe_formats = []
-    for idx, d_parse_fmt in enumerate(d_parse_formats):
+    maybe_formats    # list
+    ___ idx, d_parse_fmt __ enumerate(d_parse_formats):
         try:
             _parsed_date = datetime.strptime(date_str, d_parse_fmt)  # pylint: disable=W0612
-            maybe_formats.append(DateFormat(idx))
+            maybe_formats.a..(DateFormat(idx))
         except ValueError:
             pass
-    __ len(maybe_formats) == 0:
-        maybe_formats.append(DateFormat.NONPARSABLE)
-    return maybe_formats
+    __ l..(maybe_formats) __ 0:
+        maybe_formats.a..(DateFormat.NONPARSABLE)
+    r.. maybe_formats
 
 
 ___ get_dates(dates):
@@ -62,16 +62,16 @@ ___ get_dates(dates):
     inferred based on the most prevalent format in the dates list.
     Alowed/supported date formats are defined in a DF enum class.
     """
-    result = []
-    fmts = Counter(maybe for dt in dates for maybe in _maybe_DateFormats(dt)).most_common(2)
-    __ fmts[0][0] == DateFormat.NONPARSABLE or fmts[0][1] == fmts[1][1]:
+    result    # list
+    fmts = Counter(maybe ___ dt __ dates ___ maybe __ _maybe_DateFormats(dt)).most_common(2)
+    __ fmts[0][0] __ DateFormat.NONPARSABLE o. fmts[0][1] __ fmts[1][1]:
         raise InfDateFmtError()
     fmt = DateFormat.get_d_parse_formats(fmts[0][0].value)
 
-    for dt in dates:
+    ___ dt __ dates:
         try:
-            result.append(datetime.strptime(dt, fmt).strftime('%Y-%m-%d'))
+            result.a..(datetime.strptime(dt, fmt).strftime('%Y-%m-%d'))
         except ValueError:
-            result.append('Invalid')
+            result.a..('Invalid')
 
-    return result
+    r.. result

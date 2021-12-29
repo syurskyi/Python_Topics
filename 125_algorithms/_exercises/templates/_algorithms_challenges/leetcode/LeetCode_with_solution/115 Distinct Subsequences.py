@@ -42,23 +42,23 @@ class Solution:
         :param T: string
         :return: integer
         """
-        len_s = len(S)
-        len_t = len(T)
+        len_s = l..(S)
+        len_t = l..(T)
 
-        dp = [[-1 for _ in xrange(len_s+1)] for _ in xrange(len_t+1)]
-        for col in xrange(len_s+1):
+        dp = [[-1 ___ _ __ xrange(len_s+1)] ___ _ __ xrange(len_t+1)]
+        ___ col __ xrange(len_s+1):
             dp[0][col] = 1
-        for row in xrange(1, len_t+1):
+        ___ row __ xrange(1, len_t+1):
             dp[row][0] = 0
 
-        for row in xrange(1, len_t+1):
-            for col in xrange(1, len_s+1):
-                __ S[col-1]==T[row-1]:
+        ___ row __ xrange(1, len_t+1):
+            ___ col __ xrange(1, len_s+1):
+                __ S[col-1]__T[row-1]:
                     dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
-                else:
+                ____:
                     dp[row][col] = dp[row][col-1]
 
-        return dp[-1][-1]
+        r.. dp[-1][-1]
 
-__ __name__=="__main__":
-    assert Solution().numDistinct("rabbbit", "rabbit")==3
+__ __name____"__main__":
+    ... Solution().numDistinct("rabbbit", "rabbit")__3

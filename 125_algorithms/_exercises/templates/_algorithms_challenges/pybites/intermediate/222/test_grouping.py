@@ -1,6 +1,6 @@
-import types
+_______ types
 
-from grouping import group
+____ grouping _______ group
 
 
 ___ test_split_10_ints_by_3():
@@ -8,7 +8,7 @@ ___ test_split_10_ints_by_3():
     n = 3
     actual = group(iterable, n)
     expected = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_passing_in_tuple():
@@ -16,17 +16,17 @@ ___ test_passing_in_tuple():
     n = 3
     actual = group(iterable, n)
     expected = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_passing_in_generator():
     iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    gen = (i for i in iterable)
-    assert isinstance(gen, types.GeneratorType)
+    gen = (i ___ i __ iterable)
+    ... isi..(gen, types.GeneratorType)
     n = 3
     actual = group(gen, n)
     expected = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_different_iterable_size():
@@ -35,7 +35,7 @@ ___ test_different_iterable_size():
     actual = group(iterable, n)
     expected = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 1, 2],
                 [3, 4, 5], [6, 7, 8], [9, 10]]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_different_n():
@@ -44,4 +44,4 @@ ___ test_different_n():
     actual = group(iterable, n)
     expected = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10],
                 [1, 2, 3, 4, 5], [6, 7, 8, 9, 10]]
-    assert actual == expected
+    ... actual __ expected

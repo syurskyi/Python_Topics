@@ -1,9 +1,9 @@
-import inspect
-import random
+_______ i___
+_______ random
 
-import pytest
+_______ pytest
 
-from challenge import Challenge, BlogChallenge, BiteChallenge
+____ challenge _______ Challenge, BlogChallenge, BiteChallenge
 
 
 ___ test_should_not_instantiate_abc():
@@ -13,16 +13,16 @@ ___ test_should_not_instantiate_abc():
 
 
 ___ test_baseclass_methods_are_abstract():
-    lines = [line.strip() for line in
-             inspect.getsourcelines(Challenge)[0]]
-    verify_method = [(i, line) for i, line in
+    lines = [line.strip() ___ line __
+             i___.getsourcelines(Challenge)[0]]
+    verify_method = [(i, line) ___ i, line __
                      enumerate(lines)
-                     __ 'def verify' in line]
-    assert verify_method, "Cannot find a method called verify"
+                     __ 'def verify' __ line]
+    ... verify_method, "Cannot find a method called verify"
     verify_index = verify_method[0][0]
-    assert lines[verify_index - 1] == "@abstractmethod"
+    ... lines[verify_index - 1] __ "@abstractmethod"
     pretty_title_index = lines.index('def pretty_title(self):')
-    assert lines[pretty_title_index - 1] == "@abstractmethod"
+    ... lines[pretty_title_index - 1] __ "@abstractmethod"
 
 
 ___ test_super_and_abst_method_implementation():
@@ -32,9 +32,9 @@ ___ test_super_and_abst_method_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert blog.verify(random.choice(merged_prs))
-    assert not blog.verify(43)
-    assert blog.pretty_title == 'PCC1 - Wordvalues'
+    ... blog.verify(random.choice(merged_prs))
+    ... n.. blog.verify(43)
+    ... blog.pretty_title __ 'PCC1 - Wordvalues'
 
 
 ___ test_super_and_abst_property_implementation():
@@ -43,6 +43,6 @@ ___ test_super_and_abst_property_implementation():
     except TypeError:
         pytest.fail("Unexpected TypeError, missing methods/properties?")
 
-    assert bite.verify('my result')
-    assert not bite.verify('other result')
-    assert bite.pretty_title == 'Bite 24. ABC and class inheritance'
+    ... bite.verify('my result')
+    ... n.. bite.verify('other result')
+    ... bite.pretty_title __ 'Bite 24. ABC and class inheritance'

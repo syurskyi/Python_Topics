@@ -1,8 +1,8 @@
-import unittest
+_______ unittest
 
-from datetime import datetime
+____ datetime _______ datetime
 
-from gigasecond import add_gigasecond
+____ gigasecond _______ add_gigasecond
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -41,5 +41,5 @@ class GigasecondTest(unittest.TestCase):
         self.assertEqual(add_gigasecond(your_birthday), your_gigasecond)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

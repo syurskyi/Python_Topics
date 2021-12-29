@@ -7,14 +7,14 @@ class Solution(object):
     :rtype: int
     """
     idx1 = idx2 = -1
-    ans = len(words)
-    for i in range(0, len(words)):
+    ans = l..(words)
+    ___ i __ r..(0, l..(words)):
       word = words[i]
-      __ word in (word1, word2):
-        __ word == word1:
+      __ word __ (word1, word2):
+        __ word __ word1:
           idx1 = i
-        elif word == word2:
+        ____ word __ word2:
           idx2 = i
         __ idx1 != -1 and idx2 != -1:
-          ans = min(ans, abs(idx2 - idx1))
-    return ans
+          ans = m..(ans, abs(idx2 - idx1))
+    r.. ans

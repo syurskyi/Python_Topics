@@ -7,13 +7,13 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
     ___ __str__(self):
-        return "%d, %s"%(self.val, self.next)
+        r.. "%d, %s"%(self.val, self.next)
 
 class Solution:
     ___ mergeTwoLists(self, l1, l2):
@@ -44,13 +44,13 @@ class Solution:
         __ the_other:
             pre.next = the_other  # appending
 
-        return dummy.next
+        r.. dummy.next
 
-__ __name__=="__main__":
+__ __name____"__main__":
     length = 10
-    list1 = [ListNode(2*i) for i in xrange(length)]
-    list2 = [ListNode(2*i+1) for i in xrange(length)]
-    for i in xrange(length-1):
+    list1 = [ListNode(2*i) ___ i __ xrange(length)]
+    list2 = [ListNode(2*i+1) ___ i __ xrange(length)]
+    ___ i __ xrange(length-1):
         list1[i].next = list1[i+1]
         list2[i].next = list2[i+1]
 

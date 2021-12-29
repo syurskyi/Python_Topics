@@ -10,22 +10,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        length = len(nums)
-        for i in range(1, length):
-            __ i%2 == 1 and nums[i-1] > nums[i]:
+        length = l..(nums)
+        ___ i __ r..(1, length):
+            __ i%2 __ 1 and nums[i-1] > nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
-            elif i%2 == 0 and nums[i-1] < nums[i]:
+            ____ i%2 __ 0 and nums[i-1] < nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
     
     ___ test(self):
         testCases = [
             [3, 5, 2, 1, 6, 4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             self.wiggleSort(nums)
             print('after sort: %s' % (nums))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

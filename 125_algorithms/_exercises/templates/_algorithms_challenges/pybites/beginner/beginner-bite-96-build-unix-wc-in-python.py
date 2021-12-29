@@ -30,14 +30,14 @@ ___ wc(file_):
     except:
         print("Cannot open file")
     filename = fo.name
-    for line in fo:
+    ___ line __ fo:
         cnt_line += 1
-        cnt_chars += len(line)
-        for c in line:
+        cnt_chars += l..(line)
+        ___ c __ line:
             __ c != ' ' and c != '\n' and c != '\t':
                 within_word = True
                 continue
-            __ within_word == True and (c == ' ' or c == '\t' or c == '\n'):
+            __ within_word __ True and (c __ ' ' o. c __ '\t' o. c __ '\n'):
                 cnt_words += 1
                 within_word = False
     fo.close()

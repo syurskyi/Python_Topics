@@ -1,4 +1,4 @@
-from collections import defaultdict
+____ collections _______ defaultdict
 
 class Solution(object):
   
@@ -7,14 +7,14 @@ class Solution(object):
       col = defaultdict(int)
       row = defaultdict(int)
 
-      for i, r in enumerate(picture):
-        for j, pixel in enumerate(r):
-          __ pixel == "B":
+      ___ i, r __ enumerate(picture):
+        ___ j, pixel __ enumerate(r):
+          __ pixel __ "B":
             row[i] += 1
             col[j] += 1
 
-      return sum(
-          1 for i, r in enumerate(picture) 
-          for j, pixel in enumerate(r) 
-          __ col[j] == row[i] == 1 and pixel == 'B'
+      r.. s..(
+          1 ___ i, r __ enumerate(picture)
+          ___ j, pixel __ enumerate(r)
+          __ col[j] __ row[i] __ 1 and pixel __ 'B'
       )

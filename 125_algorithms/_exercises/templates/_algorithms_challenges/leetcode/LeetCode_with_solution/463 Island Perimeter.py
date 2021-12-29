@@ -24,29 +24,29 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        __ not grid:
-            return ret
-        R = len(grid)
-        C = len(grid[0])
-        for r0 in range(R):
-            for c0 in range(C):
-                __ grid[r0][c0] == 1:
-                    for dr, dc in self.dirs:
+        __ n.. grid:
+            r.. ret
+        R = l..(grid)
+        C = l..(grid[0])
+        ___ r0 __ r..(R):
+            ___ c0 __ r..(C):
+                __ grid[r0][c0] __ 1:
+                    ___ dr, dc __ self.dirs:
                         r = r0 + dr
                         c = c0 + dc
-                        __ r < 0 or r >= R or c < 0 or c >= C:
+                        __ r < 0 o. r >= R o. c < 0 o. c >= C:
                             ret += 1
-                        elif grid[r][c] == 0:
+                        ____ grid[r][c] __ 0:
                             ret += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     grid = [
         [0,1,0,0],
         [1,1,1,0],
         [0,1,0,0],
         [1,1,0,0],
     ]
-    assert Solution().islandPerimeter(grid) == 16
+    ... Solution().islandPerimeter(grid) __ 16

@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: bool
         """
         s = set()
-        for num in nums:
-            __ num in s:
-                return True
+        ___ num __ nums:
+            __ num __ s:
+                r.. True
             s.add(num)
-        return False
+        r.. False

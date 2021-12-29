@@ -4,18 +4,18 @@ class Solution(object):
     :type A: List[int]
     :rtype: int
     """
-    __ not A:
-      return 0
+    __ n.. A:
+      r.. 0
 
-    sumA = sum(A)
+    sumA = s..(A)
     fk = 0
-    n = len(A)
-    for i, num in enumerate(A):
+    n = l..(A)
+    ___ i, num __ enumerate(A):
       fk += i * num
     idx = n - 1
     ans = float("-inf")
-    for _ in range(n):
+    ___ _ __ r..(n):
       fk += sumA - n * A[idx]
       ans = max(ans, fk)
       idx -= 1
-    return ans
+    r.. ans

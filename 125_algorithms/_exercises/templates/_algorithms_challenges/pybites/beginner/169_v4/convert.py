@@ -5,10 +5,10 @@ ___ convert(value: float, fmt: str) -> float:
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    __ not isinstance(value, (int, float)):
+    __ n.. isi..(value, (int, float)):
         raise TypeError()
-    fn = {'in': lambda x: round(x / 2.54, 4),
-          'cm': lambda x: round(x * 2.54, 4)}
-    __ fmt.lower() in fn:
-        return fn[fmt.lower()](value)
+    fn = {'in': l.... x: round(x / 2.54, 4),
+          'cm': l.... x: round(x * 2.54, 4)}
+    __ fmt.lower() __ fn:
+        r.. fn[fmt.lower()](value)
     raise ValueError()

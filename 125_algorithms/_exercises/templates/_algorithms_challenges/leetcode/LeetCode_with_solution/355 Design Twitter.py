@@ -34,8 +34,8 @@ twitter.unfollow(1, 2);
 // since user 1 is no longer following user 2.
 twitter.getNewsFeed(1);
 """
-from collections import defaultdict
-import heapq
+____ collections _______ defaultdict
+_______ heapq
 
 __author__ = 'Daniel'
 
@@ -53,7 +53,7 @@ class Tweet(object):
         Tweet.central_clk += 1
 
     ___ __cmp__(self, other):
-        return - (self.timestamp - other.timestamp)
+        r.. - (self.timestamp - other.timestamp)
 
 
 class Twitter(object):
@@ -66,7 +66,7 @@ class Twitter(object):
         """
         Initialize your data structure here.
         """
-        self.tweets = defaultdict(lambda: None)
+        self.tweets = defaultdict(l....: N..)
         self.followees = defaultdict(set)
 
     ___ postTweet(self, userId, tweetId):
@@ -86,23 +86,23 @@ class Twitter(object):
         :type userId: int
         :rtype: List[int]
         """
-        h = []
-        __ userId not in self.followees[userId] and self.tweets[userId]:
+        h    # list
+        __ userId n.. __ self.followees[userId] and self.tweets[userId]:
             # possible following oneself
             heapq.heappush(h, self.tweets[userId])
 
-        for followee in self.followees[userId]:
+        ___ followee __ self.followees[userId]:
             __ self.tweets[followee]:
                 heapq.heappush(h, self.tweets[followee])
 
-        ret = []
-        while h and len(ret) < SZ:
+        ret    # list
+        while h and l..(ret) < SZ:
             tweet = heapq.heappop(h)
-            ret.append(tweet.id)
+            ret.a..(tweet.id)
             __ tweet.next:
                 heapq.heappush(h, tweet.next)
 
-        return ret
+        r.. ret
 
     ___ follow(self, followerId, followeeId):
         """
@@ -131,7 +131,7 @@ class Twitter(object):
 # obj.unfollow(followerId,followeeId)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     twitter = Twitter()
     twitter.postTweet(1, 5)
     twitter.unfollow(1, 1)

@@ -15,15 +15,15 @@ ___ count_islands(grid):
 
     
     islands = 0
-    for row in range(len(grid)):
-        for col in range(len(grid[0])):
-            __ grid[row][col] == 1:
+    ___ row __ r..(l..(grid)):
+        ___ col __ r..(l..(grid[0])):
+            __ grid[row][col] __ 1:
                 mark_islands(row,col,grid)
                 islands += 1
 
 
 
-    return islands
+    r.. islands
 
 
 
@@ -54,8 +54,8 @@ ___ mark_islands(i, j, grid):
     grid[i][j] = '#'
 
 
-    for n_row,n_col in ((i + 1,j),(i -1,j),(i,j + 1),(i,j-1)):
-        __ 0 <= n_row < len(grid) and 0 <= n_col < len(grid[0]) and grid[n_row][n_col] == 1:
+    ___ n_row,n_col __ ((i + 1,j),(i -1,j),(i,j + 1),(i,j-1)):
+        __ 0 <= n_row < l..(grid) and 0 <= n_col < l..(grid[0]) and grid[n_row][n_col] __ 1:
             mark_islands(n_row,n_col,grid)
 
 

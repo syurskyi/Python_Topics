@@ -10,27 +10,27 @@ class Solution(object):
         :rtype: bool
         """
         up, left = 0, 0
-        for c in moves:
-            __ c == 'L':
+        ___ c __ moves:
+            __ c __ 'L':
                 left += 1
-            elif c == 'R':
+            ____ c __ 'R':
                 left -= 1
-            elif c == 'U':
+            ____ c __ 'U':
                 up += 1
-            else:
+            ____:
                 up -= 1
-        return up == 0 and left == 0
+        r.. up __ 0 and left __ 0
     
     ___ test(self):
         testCases = [
             'UD',
             'LL',
         ]
-        for moves in testCases:
+        ___ moves __ testCases:
             print('moves: %s' % moves)
             result = self.judgeCircle(moves)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -16,9 +16,9 @@ The 2nd column should be exactly 10 chars wide aligning to the left (format magi
 
 '''
 
-names = 'Julian Bob PyBites Dante Martin Rodolfo'.split()
-countries = 'Australia Spain Global Argentina USA Mexico'.split()
+names = 'Julian Bob PyBites Dante Martin Rodolfo'.s.. 
+countries = 'Australia Spain Global Argentina USA Mexico'.s.. 
 
 
-for index, (name, country) in enumerate(zip(names, countries), 1):
+___ index, (name, country) __ enumerate(zip(names, countries), 1):
     print(f'{index}. {name:10} {country}')

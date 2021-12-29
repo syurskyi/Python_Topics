@@ -1,17 +1,17 @@
-import pytest
+_______ pytest
 
 ___ div(a,b):
     try:
-        return a/b
+        r.. a/b
     except:
         raise ZeroDivisionError
 
 
 ___ test_div_simple():
-    assert div(4,2) == 2
+    ... div(4,2) __ 2
 
 ___ test_div_second():
-    assert div(3,6) == 0.5
+    ... div(3,6) __ 0.5
 
 ___ test_div_zerodivision():
     with pytest.raises(ZeroDivisionError):

@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class ZigzagIterator(object):
@@ -10,7 +10,7 @@ class ZigzagIterator(object):
     :type v2: List[int]
     """
     self.iters = deque(map(iter, [v1, v2]))
-    self.total = sum(map(len, [v1, v2]))
+    self.total = s..(map(l.., [v1, v2]))
 
   ___ next(self):
     """
@@ -20,17 +20,17 @@ class ZigzagIterator(object):
     try:
       value = top.next()
     except StopIteration:
-      return self.next()
+      r.. self.next()
     self.total -= 1
     __ self.total != 0:
-      self.iters.append(top)
-    return value
+      self.iters.a..(top)
+    r.. value
 
   ___ hasNext(self):
     """
     :rtype: bool
     """
-    return self.total > 0
+    r.. self.total > 0
 
 # Your ZigzagIterator object will be instantiated and called as such:
 # i, v = ZigzagIterator(v1, v2), []

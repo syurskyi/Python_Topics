@@ -47,21 +47,21 @@ class Solution:
         walk backward
         """
         l = 0
-        for s in S:
+        ___ s __ S:
             __ s.isdigit():
                 l *= int(s)
-            else:
+            ____:
                 l += 1
 
         # walk backward
-        for s in reversed(S):
+        ___ s __ reversed(S):
             K %= l
-            __ K == 0 and s.isalpha():
+            __ K __ 0 and s.isalpha():
                 # K == l * n, return the last chr
-                return s
+                r.. s
             __ s.isdigit():
                 l //= int(s)
-            else:
+            ____:
                 l -= 1
 
         raise
@@ -76,11 +76,11 @@ class Solution:
         K -= 1  # 0-indexed
         i = 0
         j = 0
-        last = None
-        n = len(S)
+        last = N..
+        n = l..(S)
         while j < n:
             __ S[j].isdigit():
-                __ not last:
+                __ n.. last:
                     last = j
 
                 d = int(S[j])
@@ -89,15 +89,15 @@ class Solution:
                     K -= l
                     d -= 1
                 __ d > 0:
-                    return S[i + K]
-            elif last:
+                    r.. S[i + K]
+            ____ last:
                     i = j
-                    last = None
+                    last = N..
 
             j += 1
 
-        return S[i+K]
+        r.. S[i+K]
 
 
-__ __name__ == "__main__":
-    assert Solution().decodeAtIndex("ha22", 5) == "h"
+__ __name__ __ "__main__":
+    ... Solution().decodeAtIndex("ha22", 5) __ "h"

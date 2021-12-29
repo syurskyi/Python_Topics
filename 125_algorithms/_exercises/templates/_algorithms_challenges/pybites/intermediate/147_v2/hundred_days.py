@@ -1,7 +1,7 @@
-from datetime import date
-from dateutil.rrule import *
+____ datetime _______ date
+____ dateutil.rrule _______ *
 
-import dateutil
+_______ dateutil
 
 TODAY = date(year=2018, month=11, day=29)
 
@@ -12,9 +12,9 @@ ___ get_hundred_weekdays(start_date=TODAY):
        skipping Saturdays and Sundays"""
     
 
-    data = rrule(DAILY,count=100,byweekday=range(0,5),dtstart=start_date)
+    data = rrule(DAILY,count=100,byweekday=r..(0,5),dtstart=start_date)
 
-    return [value.date() for value in data]
+    r.. [value.date() ___ value __ data]
 
 
 

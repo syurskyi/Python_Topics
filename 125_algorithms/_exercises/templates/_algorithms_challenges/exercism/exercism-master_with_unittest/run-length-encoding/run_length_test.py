@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 
-import unittest
+_______ unittest
 
-from run_length import encode, decode
+____ run_length _______ encode, decode
 
 
 class WordCountTests(unittest.TestCase):
@@ -34,5 +34,5 @@ class WordCountTests(unittest.TestCase):
         self.assertMultiLineEqual('⏰⚽⚽⚽⭐⭐⏰', decode('⏰3⚽2⭐⏰'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

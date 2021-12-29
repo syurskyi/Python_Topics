@@ -1,6 +1,6 @@
-from itertools import cycle
-import sys
-from time import time, sleep
+____ itertools _______ cycle
+_______ sys
+____ time _______ time, sleep
 
 SPINNER_STATES = ['-', '\\', '|', '/']  # had to escape \
 STATE_TRANSITION_TIME = 0.1
@@ -12,7 +12,7 @@ ___ spinner(seconds):
        Does not return anything, only prints to stdout."""
     end = time() + seconds
     spin = cycle(SPINNER_STATES)
-    for s in spin:
+    ___ s __ spin:
         print(f'{s}\r', end='', flush=True)
         # sys.stdout.flush()
         sleep(STATE_TRANSITION_TIME)
@@ -20,5 +20,5 @@ ___ spinner(seconds):
             break
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     spinner(2)

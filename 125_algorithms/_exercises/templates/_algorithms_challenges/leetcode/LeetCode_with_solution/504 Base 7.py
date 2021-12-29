@@ -20,21 +20,21 @@ class Solution:
         :type num: int
         :rtype: str
         """
-        __ num == 0:
-            return "0"
-        ret = []
+        __ num __ 0:
+            r.. "0"
+        ret    # list
         n = abs(num)
         while n:
-            ret.append(n % 7)
+            ret.a..(n % 7)
             n //= 7
 
         ret = "".join(map(str, ret[::-1]))
         __ num < 0:
             ret = "-" + ret
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().convertToBase7(100) == "202"
-    assert Solution().convertToBase7(-7) == "-10"
+__ __name__ __ "__main__":
+    ... Solution().convertToBase7(100) __ "202"
+    ... Solution().convertToBase7(-7) __ "-10"

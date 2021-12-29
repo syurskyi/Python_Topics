@@ -11,22 +11,22 @@ class Solution(object):
         :rtype: int
         """
         arr1, arr2 = A, B
-        n = len(arr1)
-        dp = [[0]*2 for _ in range(n)]
+        n = l..(arr1)
+        dp = [[0]*2 ___ _ __ r..(n)]
         dp[-1][0] = 0
         dp[-1][1] = 1
-        for i in range(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1):
             __ arr1[i] < arr1[i+1] and arr2[i] < arr2[i+1]:
                 __ arr1[i] < arr2[i+1] and arr2[i] < arr1[i+1]:
-                    dp[i][0] = min(dp[i+1][0], dp[i+1][1])
-                    dp[i][1] = min(dp[i+1][0]+1, dp[i+1][0]+1)
-                else:
+                    dp[i][0] = m..(dp[i+1][0], dp[i+1][1])
+                    dp[i][1] = m..(dp[i+1][0]+1, dp[i+1][0]+1)
+                ____:
                     dp[i][0] = dp[i+1][0]
                     dp[i][1] = dp[i+1][1]+1
-            else:
+            ____:
                 dp[i][0] = dp[i+1][1]
                 dp[i][1] = dp[i+1][0]+1
-        return min(dp[0][0], dp[0][1])
+        r.. m..(dp[0][0], dp[0][1])
     
     # My solution DFS is TLE
     ___ minSwap_own_slow(self, A, B):
@@ -38,17 +38,17 @@ class Solution(object):
         arr1, arr2 = A, B
         self.res = float('inf')
         self.helper(arr1, arr2, 0, 0)
-        return self.res
+        r.. self.res
         
     ___ helper(self, arr1, arr2, i, cur):
-        __ i == len(arr1):
-            self.res = min(self.res, cur)
-            return
-        __ i == 0 or (arr1[i] > arr2[i-1] and arr2[i] > arr1[i-1]):
+        __ i __ l..(arr1):
+            self.res = m..(self.res, cur)
+            r..
+        __ i __ 0 o. (arr1[i] > arr2[i-1] and arr2[i] > arr1[i-1]):
             arr1[i], arr2[i] = arr2[i], arr1[i]
             self.helper(arr1, arr2, i+1, cur+1)
             arr1[i], arr2[i] = arr2[i], arr1[i]
-        __ i == 0 or (arr1[i] > arr1[i-1] and arr2[i] > arr2[i-1]):
+        __ i __ 0 o. (arr1[i] > arr1[i-1] and arr2[i] > arr2[i-1]):
             self.helper(arr1, arr2, i+1, cur)
     
     ___ test(self):
@@ -62,12 +62,12 @@ class Solution(object):
                 [1,7,4,6,8],
             ],
         ]
-        for arr1, arr2 in testCases:
+        ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
             result = self.minSwap(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

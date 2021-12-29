@@ -6,7 +6,7 @@ Strings consists of lowercase English letters only and the length of both string
 
 The order of output does not matter.
 """
-from collections import Counter
+____ collections _______ Counter
 
 
 class Solution:
@@ -19,25 +19,25 @@ class Solution:
         :type p: str
         :rtype: List[int]
         """
-        ret = []
+        ret    # list
         counter_target = Counter(target)
-        counter_cur = Counter(s[:len(target)])
-        __ counter_cur == counter_target:
-            ret.append(0)
+        counter_cur = Counter(s[:l..(target)])
+        __ counter_cur __ counter_target:
+            ret.a..(0)
 
-        for idx in range(len(target), len(s)):
-            head = s[idx - len(target)]
+        ___ idx __ r..(l..(target), l..(s)):
+            head = s[idx - l..(target)]
             tail = s[idx]
             counter_cur[tail] += 1
             counter_cur[head] -= 1
-            __ counter_cur[head] == 0:
+            __ counter_cur[head] __ 0:
                 del counter_cur[head]  # requried for comparison
-            __ counter_cur == counter_target:
+            __ counter_cur __ counter_target:
                 # idx is the ending index, find the starting
-                ret.append(idx - len(target) + 1)
+                ret.a..(idx - l..(target) + 1)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findAnagrams("cbaebabacd", "abc") == [0, 6]
+__ __name__ __ "__main__":
+    ... Solution().findAnagrams("cbaebabacd", "abc") __ [0, 6]

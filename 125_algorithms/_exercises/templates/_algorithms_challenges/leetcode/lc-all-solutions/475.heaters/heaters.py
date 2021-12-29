@@ -7,14 +7,14 @@ class Solution(object):
     """
     minDist = 0
     heaters.sort()
-    for house in sorted(houses):
+    ___ house __ s..(houses):
       idx = bisect.bisect_left(heaters, house)
       dist = float("inf")
       __ idx > 0:
-        dist = min(dist, abs(house - heaters[idx - 1]))
-      __ idx < len(heaters) - 1:
-        dist = min(dist, abs(house - heaters[idx + 1]))
-      __ idx < len(heaters):
-        dist = min(dist, abs(house - heaters[idx]))
+        dist = m..(dist, abs(house - heaters[idx - 1]))
+      __ idx < l..(heaters) - 1:
+        dist = m..(dist, abs(house - heaters[idx + 1]))
+      __ idx < l..(heaters):
+        dist = m..(dist, abs(house - heaters[idx]))
       minDist = max(minDist, dist)
-    return minDist
+    r.. minDist

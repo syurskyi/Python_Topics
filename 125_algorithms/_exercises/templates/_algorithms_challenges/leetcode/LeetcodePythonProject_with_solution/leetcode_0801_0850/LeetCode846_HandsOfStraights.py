@@ -11,20 +11,20 @@ class Solution(object):
         :rtype: bool
         """
         w = W
-        __ len(hand) % w != 0:
-            return False
+        __ l..(hand) % w != 0:
+            r.. False
         hashmap = {}
-        for num in hand:
-            hashmap[num] = hashmap[num]+1 __ num in hashmap else 1
+        ___ num __ hand:
+            hashmap[num] = hashmap[num]+1 __ num __ hashmap ____ 1
         while hashmap:
-            minVal = min(hashmap)
-            for i in range(w):
-                __ minVal + i not in hashmap:
-                    return False
+            minVal = m..(hashmap)
+            ___ i __ r..(w):
+                __ minVal + i n.. __ hashmap:
+                    r.. False
                 hashmap[minVal+i] -= 1
-                __ hashmap[minVal+i] == 0:
+                __ hashmap[minVal+i] __ 0:
                     del hashmap[minVal+i]
-        return len(hashmap) == 0
+        r.. l..(hashmap) __ 0
     
     ___ test(self):
         testCases = [
@@ -37,10 +37,10 @@ class Solution(object):
                 4,
             ],
         ]
-        for hand, w in testCases:
+        ___ hand, w __ testCases:
             result = self.isNStraightHand(hand, w)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

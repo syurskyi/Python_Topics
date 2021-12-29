@@ -22,8 +22,8 @@ between them.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -35,16 +35,16 @@ class Solution:
 
     ___ diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.dfs(root)
-        return self.ret
+        r.. self.ret
 
     ___ dfs(self, node):
         """
         return #nodes ended at node including itself
         """
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         l = self.dfs(node.left)
         r = self.dfs(node.right)
         self.ret = max(self.ret, l + 1 + r - 1)  # path length is the #nodes - 1
-        return max(l, r) + 1
+        r.. max(l, r) + 1

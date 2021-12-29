@@ -12,14 +12,14 @@ Check the standard library to see how you can do this in the shortest/most effic
 See an example output below and the tests that check for various values of n. Have fun!
 '''
 
-import collections
+_______ collections
 
 ___ my_queue(n=5):
     d = collections.deque('', n)
-    return d
+    r.. d
 
 mq = my_queue()
-for i in range(10):
-    mq.append(i)
-print((i, list(mq)))
+___ i __ r..(10):
+    mq.a..(i)
+print((i, l..(mq)))
 

@@ -8,24 +8,24 @@ Created on Feb 4, 2017
 class TreeLinkNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
-        self.next = None
+        self.left = N..
+        self.right = N..
+        self.next = N..
 
 class Solution:
     # @param root, a tree link node
     # @return nothing
     ___ connect(self, root):
         lastHead = root
-        lastCurrent = None
-        currentHead = None
+        lastCurrent = N..
+        currentHead = N..
         while lastHead:
             lastCurrent = lastHead
             while lastCurrent:
-                __ not currentHead:
+                __ n.. currentHead:
                     currentHead = lastCurrent.left
                     current =  lastCurrent.left
-                else:
+                ____:
                     current.next = lastCurrent.left
                     current = current.next
                 __ currentHead:
@@ -33,7 +33,7 @@ class Solution:
                     current = current.next
                 lastCurrent = lastCurrent.next
             lastHead = currentHead
-            currentHead = None
+            currentHead = N..
     
     ___ test(self):
         pass

@@ -1,10 +1,10 @@
-import pytest
+_______ pytest
 
-from files import get_matching_files
+____ files _______ get_matching_files
 
 FILES = ('bite.html commands.sh out_grepped pytest_testrun.out '
          'pytest_timings.out test_timings.py timings-template.py '
-         'timings.py').split()
+         'timings.py').s..
 
 
 @pytest.mark.parametrize("filter_str, expected", [
@@ -19,10 +19,10 @@ FILES = ('bite.html commands.sh out_grepped pytest_testrun.out '
 ])
 ___ test_example_docstring(tmp_path, filter_str, expected):
     # let's create some files in tmp
-    for fi in 'bite1 test output'.split():
+    ___ fi __ 'bite1 test output'.s.. :
         open(tmp_path / fi, 'a').close()
     actual = get_matching_files(tmp_path, filter_str)
-    assert sorted(actual) == sorted(expected)
+    ... s..(actual) __ s..(expected)
 
 
 @pytest.mark.parametrize("filter_str, expected", [
@@ -41,7 +41,7 @@ ___ test_example_docstring(tmp_path, filter_str, expected):
 ])
 ___ test_other_files(tmp_path, filter_str, expected):
     # let's create some files in tmp
-    for fi in FILES:
+    ___ fi __ FILES:
         open(tmp_path / fi, 'a').close()
     actual = get_matching_files(tmp_path, filter_str)
-    assert sorted(actual) == sorted(expected)
+    ... s..(actual) __ s..(expected)

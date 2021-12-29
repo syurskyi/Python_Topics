@@ -9,7 +9,7 @@ class Solution:
         :type A: List[int]
         :rtype: int
         """
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
 
         while left <= right:
             """
@@ -19,13 +19,13 @@ class Solution:
             3. if it is legal => swap to let `A[left]` go to `i`
             """
             i = A[left] - 1
-            __ i == left:
+            __ i __ left:
                 left += 1
-            elif i < 0 or i > right or A[i] == A[left]:
+            ____ i < 0 o. i > right o. A[i] __ A[left]:
                 A[left], A[right] = A[right], A[left]
                 # `A[left] = A[right]` is also ok, since no need to visit `A[right]` again
                 right -= 1
-            else:
+            ____:
                 A[left], A[i] = A[i], A[left]
 
-        return left + 1
+        r.. left + 1

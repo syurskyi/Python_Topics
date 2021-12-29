@@ -5,14 +5,14 @@
 ___ counting_valleys(n, s):
     current_level = 0
     count = 0
-    for i in range(n):
-        __ s[i] == 'U':
+    ___ i __ r..(n):
+        __ s[i] __ 'U':
             current_level += 1
-        elif s[i] == 'D':
+        ____ s[i] __ 'D':
             current_level -= 1
-            __ current_level == -1:
+            __ current_level __ -1:
                 count += 1
-    return count
+    r.. count
 
 
 n = int(input().strip())

@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+____ dataclasses _______ dataclass
 
 
 @dataclass
@@ -11,4 +11,4 @@ class Bite(object):
         self.title = self.title.capitalize()
 
     ___ __lt__(self, other):
-        return self.number < other.number __ isinstance(other, Bite) else False
+        r.. self.number < other.number __ isi..(other, Bite) ____ False

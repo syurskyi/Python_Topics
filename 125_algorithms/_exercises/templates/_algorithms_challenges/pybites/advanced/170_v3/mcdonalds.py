@@ -1,16 +1,16 @@
-import pandas as pd
+_______ pandas as pd
 
 data = "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
 # load the data in once, functions will use this module object
 df = pd.read_csv(data)
 
-pd.options.mode.chained_assignment = None  # ignore warnings
+pd.options.mode.chained_assignment = N..  # ignore warnings
 
 
 ___ get_food_most_calories(df=df):
     """Return the food "Item" string with most calories"""
     s = df.sort_values(by='Calories', ascending=False)
-    return s['Item'].head(1).values
+    r.. s['Item'].head(1).values
 
 
 ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
@@ -29,4 +29,4 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
         s = s[~s.Category.isin(['Coffee & Tea', 'Beverages'])]
     s['Ratio'] = s.Protein / s.Calories
     s = s.sort_values(by='Ratio', ascending=False)
-    return s['Item'].head(5).values
+    r.. s['Item'].head(5).values

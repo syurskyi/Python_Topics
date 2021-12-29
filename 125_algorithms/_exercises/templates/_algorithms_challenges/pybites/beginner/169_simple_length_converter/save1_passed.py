@@ -6,15 +6,15 @@ ___ convert(value: float, fmt: str) -> float:
     :return: Float rounded to 4 decimal places after conversion
     """
     fmt = fmt.casefold()
-    is_float = None
-    while is_float is None:
+    is_float = N..
+    while is_float __ N..
         try:
             is_float = float(value)
         except TypeError:
             print('TypeError. Please input float.')
-    __ fmt == 'cm':
-        return round(value * 2.54, 4)
-    elif fmt == 'in':
-        return round(value / 2.54, 4)
-    else:
+    __ fmt __ 'cm':
+        r.. round(value * 2.54, 4)
+    ____ fmt __ 'in':
+        r.. round(value / 2.54, 4)
+    ____:
         raise ValueError

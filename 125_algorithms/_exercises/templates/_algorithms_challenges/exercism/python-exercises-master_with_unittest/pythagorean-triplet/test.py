@@ -33,9 +33,9 @@
 #
 # =============================================================================
 
-import unittest
+_______ unittest
 
-from pythagorean_triplet import (
+____ pythagorean_triplet _______ (
     primitive_triplets,
     triplets_in_range,
     is_triplet
@@ -83,5 +83,5 @@ class PythagoreanTripletTest(unittest.TestCase):
         self.assertRaises(ValueError, primitive_triplets, 5)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

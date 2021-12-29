@@ -12,27 +12,27 @@ class Solution(object):
         """
         low = float('-inf')
         i = -1
-        for p in preorder:
+        ___ p __ preorder:
             __ p < low:
-                return False
+                r.. False
             while i >= 0 and p > preorder[i]:
                 low = preorder[i]
                 i -= 1
             i += 1
             preorder[i] = p
-        return True
+        r.. True
     
     ___ verifyPreorderStack(self, preorder):
         """
         :type preorder: List[int]
         :rtype: bool
         """
-        stack = []
+        stack    # list
         low = float('-inf')
-        for p in preorder:
+        ___ p __ preorder:
             __ p < low:
-                return False
+                r.. False
             while stack and stack[-1] < p:
                 low = stack.pop()
-            stack.append(p)
-        return True
+            stack.a..(p)
+        r.. True

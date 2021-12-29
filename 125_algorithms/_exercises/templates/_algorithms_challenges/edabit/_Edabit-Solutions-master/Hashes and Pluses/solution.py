@@ -1,11 +1,11 @@
 ___ hash_plus_count(txt):
-    __ txt == "":
-        return [0,0]
+    __ txt __ "":
+        r.. [0,0]
     index = 0
     output =[]
     check = ["#","+"]
-    while index < len(check):
-        a = txt.count(check[index])
-        output.append(a)
+    while index < l..(check):
+        a = txt.c.. check[index])
+        output.a..(a)
         index = index + 1
-    return output
+    r.. output

@@ -1,14 +1,14 @@
-import json
-from datetime import date
+_______ json
+____ datetime _______ date
 
-import pytest
+_______ pytest
 
-from exchangerates import RATES_FILE, exchange_rates, get_all_days, match_daily_rates
+____ exchangerates _______ RATES_FILE, exchange_rates, get_all_days, match_daily_rates
 
 
 @pytest.fixture(scope="session")
 ___ exchange_rates_result():
-    return exchange_rates()
+    r.. exchange_rates()
 
 
 @pytest.fixture(scope="session")
@@ -16,7 +16,7 @@ ___ matching_result():
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
     daily_rates = json.loads(RATES_FILE.read_text())["rates"]
-    return match_daily_rates(start, end, daily_rates)
+    r.. match_daily_rates(start, end, daily_rates)
 
 
 @pytest.mark.parametrize(
@@ -29,13 +29,13 @@ ___ matching_result():
 )
 ___ test_get_all_days(start, end, expected):
     actual = get_all_days(start, end)
-    assert len(actual) == expected
+    ... l..(actual) __ expected
 
-    assert isinstance(actual[0], date)
-    assert isinstance(actual[-1], date)
+    ... isi..(actual[0], date)
+    ... isi..(actual[-1], date)
 
-    assert actual[0] == start
-    assert actual[-1] == end
+    ... actual[0] __ start
+    ... actual[-1] __ end
 
 
 @pytest.mark.parametrize(
@@ -49,7 +49,7 @@ ___ test_get_all_days(start, end, expected):
 )
 ___ test_match_daily_rates(date, expected, matching_result):
     actual = matching_result
-    assert actual[date] == expected
+    ... actual[date] __ expected
 
 
 @pytest.mark.parametrize(
@@ -72,20 +72,20 @@ ___ test_match_daily_rates(date, expected, matching_result):
 ___ test_exchange_rates_sample(testdate, expected, exchange_rates_result):
     actual = exchange_rates_result
 
-    assert actual[testdate]["Base Date"] == expected["Base Date"]
-    assert actual[testdate]["GBP"] == expected["GBP"]
-    assert actual[testdate]["USD"] == expected["USD"]
+    ... actual[testdate]["Base Date"] __ expected["Base Date"]
+    ... actual[testdate]["GBP"] __ expected["GBP"]
+    ... actual[testdate]["USD"] __ expected["USD"]
 
 
 ___ test_exchange_rates_all_dates(exchange_rates_result):
-    assert len(exchange_rates_result) == 245
+    ... l..(exchange_rates_result) __ 245
 
 
 ___ test_exchange_rates_order(exchange_rates_result):
-    actual = list(exchange_rates_result.keys())
-    expected = sorted(exchange_rates_result.keys())
+    actual = l..(exchange_rates_result.keys())
+    expected = s..(exchange_rates_result.keys())
 
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_exchange_rates_validate_start():

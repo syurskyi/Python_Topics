@@ -1,11 +1,11 @@
-import argparse
-from functools import reduce
-import operator
+_______ argparse
+____ functools _______ reduce
+_______ operator
 
-operations = dict(add=sum,
-                  sub=lambda items: reduce(operator.sub, items),
-                  mul=lambda items: reduce(operator.mul, items),
-                  div=lambda items: reduce(operator.truediv, items))
+operations = d..(add=s..,
+                  sub=l.... items: reduce(operator.sub, items),
+                  mul=l.... items: reduce(operator.mul, items),
+                  div=l.... items: reduce(operator.truediv, items))
 
 
 ___ calculator(operation, numbers):
@@ -13,11 +13,11 @@ ___ calculator(operation, numbers):
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
     func = operations.get(operation.lower())
-    __ not func:
+    __ n.. func:
         raise ValueError('Invalid operation')
 
-    numbers = [float(num) for num in numbers]
-    return round(func(numbers), 2)
+    numbers = [float(num) ___ num __ numbers]
+    r.. round(func(numbers), 2)
 
 
 ___ create_parser():
@@ -34,23 +34,23 @@ ___ create_parser():
     parser.add_argument('-s', '--sub', nargs='+', help="Subtracts numbers")
     parser.add_argument('-m', '--mul', nargs='+', help="Multiplies numbers")
     parser.add_argument('-d', '--div', nargs='+', help="Divides numbers")
-    return parser
+    r.. parser
 
 
-___ call_calculator(args=None, stdout=False):
+___ call_calculator(args=N.., stdout=False):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
     parser = create_parser()
 
-    __ args is None:
+    __ args __ N..
         args = parser.parse_args()
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    for operation, numbers in vars(args).items():
-        __ numbers is None:
+    ___ operation, numbers __ vars(args).items():
+        __ numbers __ N..
             continue
 
         try:
@@ -61,8 +61,8 @@ ___ call_calculator(args=None, stdout=False):
         __ stdout:
             print(res)
 
-        return res
+        r.. res
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     call_calculator(stdout=True)

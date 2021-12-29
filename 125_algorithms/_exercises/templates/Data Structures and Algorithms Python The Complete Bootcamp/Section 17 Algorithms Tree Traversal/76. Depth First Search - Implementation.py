@@ -14,7 +14,7 @@ c_ BinaryTree():
         __ start __ N..:
             r_
 
-        traversal.append(start.value)
+        traversal.a..(start.value)
         preorder(start.left, traversal)
         preorder(start.right, traversal)
 
@@ -26,7 +26,7 @@ c_ BinaryTree():
             r_
 
         inorder(start.left, traversal)
-        traversal.append(start.value)
+        traversal.a..(start.value)
         inorder(start.right, traversal)
 
         r_ traversal
@@ -38,7 +38,7 @@ c_ BinaryTree():
 
         postorder(start.left, traversal)
         postorder(start.right, traversal)
-        traversal.append(start.value)
+        traversal.a..(start.value)
 
         r_ traversal
 

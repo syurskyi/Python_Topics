@@ -10,17 +10,17 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        import math
+        _______ math
         maxVal = int(math.sqrt(n))+1
-        __ n < 0: return 0
+        __ n < 0: r.. 0
         dp = [float('inf')]*(n+1)
         dp[0] = 0
         dp[1] = 1
-        for i in range(n+1):
-            for j in range(maxVal):
+        ___ i __ r..(n+1):
+            ___ j __ r..(maxVal):
                 __ j*j<=i:
-                    dp[i] = min(dp[i], dp[i-j*j]+1)
-        return dp[-1]
+                    dp[i] = m..(dp[i], dp[i-j*j]+1)
+        r.. dp[-1]
     
     ___ test(self):
         testCases = [
@@ -28,11 +28,11 @@ class Solution(object):
             13,
             24,
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n: %s' % (n))
             result = self.numSquares(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

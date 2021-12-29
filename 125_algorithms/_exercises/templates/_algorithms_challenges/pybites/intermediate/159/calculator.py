@@ -1,4 +1,4 @@
-import operator
+_______ operator
 
 ___ simple_calculator(calculation):
    """Receives 'calculation' and returns the calculated result,
@@ -27,10 +27,10 @@ ___ simple_calculator(calculation):
    }
 
    try:
-      return ops[op](num1, num2)
+      r.. ops[op](num1, num2)
    except (KeyError, ZeroDivisionError):
       raise ValueError
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    print(simple_calculator("2 * 3"))

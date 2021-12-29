@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from numbers_to_dec import list_to_decimal
+____ numbers_to_dec _______ list_to_decimal
 
 
 @pytest.mark.parametrize('test_input',
@@ -22,4 +22,4 @@ ___ test_value_error(test_input):
 @pytest.mark.parametrize('test_input,expected',
                          [([0, 1, 2, 3], 123), ([1, 2, 3, 4, 5], 12345)])
 ___ test_return_value(test_input, expected):
-    assert list_to_decimal(test_input) == expected
+    ... list_to_decimal(test_input) __ expected

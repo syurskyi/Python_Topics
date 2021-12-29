@@ -109,7 +109,7 @@ ___ insertNode(rootNode, nodeValue
     r_ rootNode
 
 ___ getMinValueNode(rootNode
-    __ rootNode __ N.. or rootNode.leftChild __ N..:
+    __ rootNode __ N.. o. rootNode.leftChild __ N..:
         r_ rootNode
     r_ getMinValueNode(rootNode.leftChild)
 

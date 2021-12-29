@@ -1,10 +1,10 @@
 data = int(input())
 
 res= ''
-for i in range(0,data):
-    para = input().split()
+___ i __ r..(0,data):
+    para = input().s.. 
     
-    para = list(map(int,para))
+    para = l..(map(int,para))
     
     a = para[0]
     b = para[1]
@@ -13,7 +13,7 @@ for i in range(0,data):
     __ a + b > c and a + c > b  and b + c > a:
         res +='1'
         res += ' '
-    else:
+    ____:
         res += '0'
         res += ' '
     

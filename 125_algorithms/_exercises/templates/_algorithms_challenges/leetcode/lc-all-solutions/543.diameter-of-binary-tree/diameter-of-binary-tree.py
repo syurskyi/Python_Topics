@@ -14,12 +14,12 @@ class Solution(object):
     self.ans = 0
 
     ___ dfs(root):
-      __ not root:
-        return 0
+      __ n.. root:
+        r.. 0
       left = dfs(root.left)
       right = dfs(root.right)
       self.ans = max(self.ans, left + right)
-      return max(left, right) + 1
+      r.. max(left, right) + 1
 
     dfs(root)
-    return self.ans
+    r.. self.ans

@@ -18,7 +18,7 @@ Output:
 Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -30,18 +30,18 @@ class Solution(object):
         :rtype: int
         """
         c = defaultdict(int)
-        for elt in s:
+        ___ elt __ s:
             c[elt] += 1
 
         ret = 0
-        for v in c.values():
+        ___ v __ c.values():
             ret += (v/2) * 2
 
-        __ any(map(lambda x: x % 2 == 1, c.values())):
+        __ any(map(l.... x: x % 2 __ 1, c.values())):
             ret += 1
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().longestPalindrome("abccccdd") == 7
+__ __name__ __ "__main__":
+    ... Solution().longestPalindrome("abccccdd") __ 7

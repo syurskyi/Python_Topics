@@ -1,4 +1,4 @@
-from Previous.wrong_char import get_index_different_char
+____ Previous.wrong_char _______ get_index_different_char
 
 
 ___ test_wrong_char():
@@ -7,11 +7,11 @@ ___ test_wrong_char():
         ['.', '{', ' ^', '%', 'a'],
         [1, '=', 3, 4, 5, 'A', 'b', 'a', 'b', 'c'],
         ['=', '=', '', '/', '/', 9, ':', ';', '?', '¡'],
-        list(range(1,9)) + ['}'] + list('abcde'),  # noqa E230
+        l..(r..(1,9)) + ['}'] + l..('abcde'),  # noqa E230
         [2, '.', ',', '!']
     )
     expected = [2, 4, 1, 5, 8, 0]
 
-    for arg, exp in zip(inputs, expected):
+    ___ arg, exp __ zip(inputs, expected):
         err = f'get_index_different_char({arg}) should return index {exp}'
-        assert get_index_different_char(arg) == exp, err
+        ... get_index_different_char(arg) __ exp, err

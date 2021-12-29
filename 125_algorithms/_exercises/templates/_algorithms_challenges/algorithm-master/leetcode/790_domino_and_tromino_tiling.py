@@ -5,13 +5,13 @@ class Solution:
         :rtype: int
         """
         __ N < 3:
-            return N
+            r.. N
 
         MOD = 10 ** 9 + 7
         dp = [0] * (N + 1)
         dp[:3] = 1, 1, 2
 
-        for i in range(3, N + 1):
+        ___ i __ r..(3, N + 1):
             dp[i] = (dp[i - 1] * 2 + dp[i - 3]) % MOD
 
-        return dp[N]
+        r.. dp[N]

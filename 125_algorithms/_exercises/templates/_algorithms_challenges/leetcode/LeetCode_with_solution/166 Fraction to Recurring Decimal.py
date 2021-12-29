@@ -20,7 +20,7 @@ class Solution:
         :type denominator: int
         :rtype: str
         """
-        sign = 1 __ numerator*denominator >= 0 else -1
+        sign = 1 __ numerator*denominator >= 0 ____ -1
         numerator = abs(numerator)
         denominator = abs(denominator)
 
@@ -30,19 +30,19 @@ class Solution:
         __ frac_part:
             decimal_part = self.frac(numerator-int_part*denominator, denominator)
             ret = str(int_part)+"."+decimal_part
-        else:
+        ____:
             ret = str(int_part)
 
         __ sign < 0:
             ret = "-" + ret
 
-        return ret
+        r.. ret
 
     ___ frac(self, num, deno):
         """
         real fraction part
         """
-        ret = []
+        ret    # list
         d = {}
         i = 0
 
@@ -50,17 +50,17 @@ class Solution:
             num *= 10
             q = num/deno
             r = num%deno
-            __ (q, r) in d:
-                ret.append(")")
+            __ (q, r) __ d:
+                ret.a..(")")
                 ret.insert(d[(q, r)], "(")
-                return "".join(ret)
+                r.. "".join(ret)
 
-            ret.append(str(q))
+            ret.a..(str(q))
             d[(q, r)] = i
             i += 1
             num -= q*deno
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
 class Solution_error:
@@ -75,16 +75,16 @@ class Solution_error:
         __ fract_part:
             decimal_part = self.frac(numerator-int_part*denominator, denominator)
             ret = str(int_part)+"."+decimal_part
-        else:
+        ____:
             ret = str(int_part)
 
-        return ret
+        r.. ret
 
     ___ frac(self, num, deno):
         """
         real fraction part
         """
-        ret = []
+        ret    # list
         d = {}
         i = 0
 
@@ -95,24 +95,24 @@ class Solution_error:
                 l += 1
 
             r = num/deno
-            __ r in d:
-                ret.append(")")
+            __ r __ d:
+                ret.a..(")")
                 ret.insert(d[r]-(l-1), "(")
-                return "".join(ret)
+                r.. "".join(ret)
 
-            for _ in xrange(l-1):
-                ret.append("0")
+            ___ _ __ xrange(l-1):
+                ret.a..("0")
                 i += 1
 
-            ret.append(str(r))
+            ret.a..(str(r))
             d[r] = i
             i += 1
             num -= r*deno
 
-        return "".join(ret)
+        r.. "".join(ret)
 
-__ __name__ == "__main__":
-    assert Solution().fractionToDecimal(1, 333) == "0.(003)"
-    assert Solution().fractionToDecimal(1, 90) == "0.0(1)"
-    assert Solution().fractionToDecimal(-50, 8) == "-6.25"
-    assert Solution().fractionToDecimal(7, -12) == "-0.58(3)"
+__ __name__ __ "__main__":
+    ... Solution().fractionToDecimal(1, 333) __ "0.(003)"
+    ... Solution().fractionToDecimal(1, 90) __ "0.0(1)"
+    ... Solution().fractionToDecimal(-50, 8) __ "-6.25"
+    ... Solution().fractionToDecimal(7, -12) __ "-0.58(3)"

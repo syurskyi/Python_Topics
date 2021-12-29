@@ -24,30 +24,30 @@ class Solution(object):
         :type num: str
         :rtype: bool
         """
-        n = len(num)
-        for i in xrange(1, n):
-            for j in xrange(i, n):
+        n = l..(num)
+        ___ i __ xrange(1, n):
+            ___ j __ xrange(i, n):
                 __ self.predicate(num, 0, i, j):
-                    return True
+                    r.. True
 
-        return False
+        r.. False
 
     ___ predicate(self, s, b, i, j):
         n1 = s[b:i]
         n2 = s[i:j]
 
-        __ b != 0 and j == len(s):
-            return True
-        __ not n1 or not n2:
-            return False
-        __ len(n1) > 1 and n1[0] == '0' or len(n2) > 1 and n2[0] == '0':
-            return False
+        __ b != 0 and j __ l..(s):
+            r.. True
+        __ n.. n1 o. n.. n2:
+            r.. False
+        __ l..(n1) > 1 and n1[0] __ '0' o. l..(n2) > 1 and n2[0] __ '0':
+            r.. False
 
         n3 = str(int(n1)+int(n2))
-        J = j+len(n3)
-        __ s[j:J] == n3:
-            return self.predicate(s, i, j, J)
+        J = j+l..(n3)
+        __ s[j:J] __ n3:
+            r.. self.predicate(s, i, j, J)
 
 
-__ __name__ == "__main__":
-    assert Solution().isAdditiveNumber("12012122436")
+__ __name__ __ "__main__":
+    ... Solution().isAdditiveNumber("12012122436")

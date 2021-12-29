@@ -26,36 +26,36 @@ class Solution:
         :param target: an integer
         :return: a boolean
         """
-        A = list(set(A))  # short-cut eliminate duplicates  # but O(n)
+        A = l..(set(A))  # short-cut eliminate duplicates  # but O(n)
 
-        length = len(A)
+        length = l..(A)
         start = 0
         end = length-1
         while start<=end:
             mid = (start+end)/2
             # found
-            __ A[mid]==target:
-                return True
+            __ A[mid]__target:
+                r.. True
             # case 1
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<A[end]:
+            ____ A[start]>A[mid] and A[mid]<A[end]:
                 __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
             # case 3
-            else:
+            ____:
                 __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____:
                     start = mid+1
 
-        return False
+        r.. False
 
     ___ search(self, A, target):
         """
@@ -75,37 +75,37 @@ class Solution:
         :param target: an integer
         :return: a boolean
         """
-        length = len(A)
+        length = l..(A)
         start = 0
         end = length-1
         while start<=end:
             mid = (start+end)/2
             # found
-            __ A[mid]==target:
-                return True
+            __ A[mid]__target:
+                r.. True
             # undetermined  # the only significant difference.
-            __ A[start]==A[mid]:
+            __ A[start]__A[mid]:
                 start += 1
             # case 1
-            elif A[start]<A[mid]<=A[end]:
+            ____ A[start]<A[mid]<=A[end]:
                 __ target>A[mid]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
+            ____ A[start]>A[mid] and A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
                 __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____:
                     end = mid-1
             # case 3
-            else:
+            ____:
                 __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____:
                     start = mid+1
 
-        return False
+        r.. False
 
-__ __name__=="__main__":
-    assert Solution().search([1,1,3,1], 3)==True
+__ __name____"__main__":
+    ... Solution().search([1,1,3,1], 3)__True

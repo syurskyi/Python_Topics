@@ -1,6 +1,6 @@
-from calc_median_from_dict import calc_median_from_dict
+____ calc_median_from_dict _______ calc_median_from_dict
 
-import pytest
+_______ pytest
 
 
 # Small Numbers
@@ -17,7 +17,7 @@ import pytest
     ],
 )
 ___ test_median_from_dict__valid_numbers(test_input, expected):
-    assert calc_median_from_dict(test_input) == expected
+    ... calc_median_from_dict(test_input) __ expected
 
 
 # Huge numbers
@@ -44,7 +44,7 @@ ___ test_median_from_dict__valid_numbers(test_input, expected):
     ],
 )
 ___ test_median_from_dict_valid_huge_numbers(test_input, expected):
-    assert calc_median_from_dict(test_input) == expected
+    ... calc_median_from_dict(test_input) __ expected
 
 
 # Errors should be raised when the dict value is not a number

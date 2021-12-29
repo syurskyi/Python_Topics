@@ -1,6 +1,6 @@
 input()
-data = list(map(int, input().split()))
-index = sorted(data)
+data = l..(map(int, input().split()))
+index = s..(data)
 print(index)
-for i in index:
+___ i __ index:
     print(data.index(i)+1, end = ' ')

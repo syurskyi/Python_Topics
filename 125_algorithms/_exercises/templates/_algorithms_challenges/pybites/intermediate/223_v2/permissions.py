@@ -18,20 +18,20 @@ ___ get_octal_from_file_permission(rwx: str) -> str:
     """
 
     base =2 
-    number = []
-    for i in range(0,len(rwx),3):
+    number    # list
+    ___ i __ r..(0,l..(rwx),3):
         permissions = rwx[i:i+3]
         r = 0
-        for i,value in enumerate(reversed(permissions)):
+        ___ i,value __ enumerate(reversed(permissions)):
             __ value != '-':
                 r += base**(i)
 
 
 
-        number.append(str(r))
+        number.a..(str(r))
 
 
-    return ''.join(number)
+    r.. ''.join(number)
 
 
 

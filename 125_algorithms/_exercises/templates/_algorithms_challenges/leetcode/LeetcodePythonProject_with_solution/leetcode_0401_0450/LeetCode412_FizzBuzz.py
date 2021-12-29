@@ -6,14 +6,14 @@ Created on Apr 11, 2017
 
 class Solution(object):
     ___ fizzBuzz(self, n):
-        result = []
-        for num in range(1, n+1):
-            __ num % 15 == 0:
-                result.append('FizzBuzz')
-            elif num % 5 == 0:
-                result.append('Buzz')
-            elif num % 3 == 0:
-                result.append('Fizz')
-            else:
-                result.append(str(num))
-        return result
+        result    # list
+        ___ num __ r..(1, n+1):
+            __ num % 15 __ 0:
+                result.a..('FizzBuzz')
+            ____ num % 5 __ 0:
+                result.a..('Buzz')
+            ____ num % 3 __ 0:
+                result.a..('Fizz')
+            ____:
+                result.a..(str(num))
+        r.. result

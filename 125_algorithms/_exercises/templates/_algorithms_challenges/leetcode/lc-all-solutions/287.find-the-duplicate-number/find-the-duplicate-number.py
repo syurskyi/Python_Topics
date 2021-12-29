@@ -4,18 +4,18 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    n = len(nums) - 1
+    n = l..(nums) - 1
     start, end = 1, n
     while start + 1 < end:
       mid = start + (end - start) / 2
       count = 0
-      for num in nums:
+      ___ num __ nums:
         __ num < mid:
           count += 1
       __ count >= mid:
         end = mid
-      else:
+      ____:
         start = mid
-    __ nums.count(start) > nums.count(end):
-      return start
-    return end
+    __ nums.c.. start) > nums.c.. end):
+      r.. start
+    r.. end

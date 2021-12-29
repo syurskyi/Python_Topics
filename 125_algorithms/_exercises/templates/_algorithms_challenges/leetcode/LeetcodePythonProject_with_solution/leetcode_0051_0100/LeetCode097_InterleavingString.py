@@ -11,31 +11,31 @@ class Solution(object):
         :type s3: str
         :rtype: bool
         """
-        m, n = len(s1), len(s2)
-        __ m+n != len(s3):
-            return False
-        dp = [[False]*(n+1) for _ in range(m+1)]
+        m, n = l..(s1), l..(s2)
+        __ m+n != l..(s3):
+            r.. False
+        dp = [[False]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = True
-        for i in range(m):
-            __ s1[i] == s3[i] and dp[i][0]:
+        ___ i __ r..(m):
+            __ s1[i] __ s3[i] and dp[i][0]:
                 dp[i+1][0] = True
-        for j in range(n):
-            __ s2[j] == s3[j] and dp[0][j]:
+        ___ j __ r..(n):
+            __ s2[j] __ s3[j] and dp[0][j]:
                 dp[0][j+1] = True
-        for i in range(m):
-            for j in range(n):
-                __ s1[i] == s3[i+j+1] and dp[i][j+1]:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ s1[i] __ s3[i+j+1] and dp[i][j+1]:
                     dp[i+1][j+1] = True
-                __ s2[j] == s3[i+j+1] and dp[i+1][j]:
+                __ s2[j] __ s3[i+j+1] and dp[i+1][j]:
                     dp[i+1][j+1] = True
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         testCases = [
             ('aabcc', 'dbbca', 'aadbbcbcac'),
             ('aabcc', 'dbbca', 'aadbbbaccc'),
         ]
-        for s1, s2, s3 in testCases:
+        ___ s1, s2, s3 __ testCases:
             print('s1: %s' % (s1))
             print('s2: %s' % (s2))
             print('s3: %s' % (s3))
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

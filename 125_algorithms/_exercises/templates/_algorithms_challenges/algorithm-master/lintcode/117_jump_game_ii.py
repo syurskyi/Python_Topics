@@ -7,22 +7,22 @@ class Solution:
     @return: An integer
     """
     ___ jump(self, A):
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
-        target = len(A) - 1
+        target = l..(A) - 1
         start = end = jumps = 0
 
         while end < target:
             jumps += 1
             furthest = end
-            for i in range(start, end + 1):
+            ___ i __ r..(start, end + 1):
                 __ i + A[i] > furthest:
                     furthest = i + A[i]
             start = end + 1
             end = furthest
 
-        return jumps
+        r.. jumps
 
 
 """
@@ -34,19 +34,19 @@ class Solution:
     @return: An integer
     """
     ___ jump(self, A):
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
         INFINITY = float('inf')
 
-        n = len(A)
+        n = l..(A)
         dp = [INFINITY] * n
         dp[0] = 0
 
-        for i in range(1, n):
-            for j in range(i):
+        ___ i __ r..(1, n):
+            ___ j __ r..(i):
                 __ (dp[j] < INFINITY and j + A[j] >= i and
                     dp[j] + 1 < dp[i]):
                     dp[i] = dp[j] + 1
 
-        return dp[n - 1]
+        r.. dp[n - 1]

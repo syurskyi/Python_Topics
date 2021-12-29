@@ -4,21 +4,21 @@ class Solution:
     ___ reverseBits(self, n):
         res = 0
         size = 32
-        for i in range(size):
+        ___ i __ r..(size):
             __ self.test_bit(n, i):
                 print(i)
                 res = self.set_bit(res, size - 1 - i)
-        return res
+        r.. res
 
     ___ test_bit(self, n, i):
         mask = 1 << i
         __ n & mask > 0:
-            return True
-        return False
+            r.. True
+        r.. False
 
     ___ set_bit(self, n, i):
         mask = 1 << i
-        return n | mask
+        r.. n | mask
 
 s = Solution()
 print(bin(43261596))

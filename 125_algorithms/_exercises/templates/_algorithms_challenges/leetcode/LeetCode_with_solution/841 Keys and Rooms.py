@@ -33,7 +33,7 @@ Note:
 0 <= rooms[i].length <= 1000
 The number of keys in all rooms combined is at most 3000.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -44,18 +44,18 @@ class Solution:
         need a queue to keep track of processing nodes? Implicitly handle by dfs
         stacks
         """
-        n = len(G)
-        visited = [0 for _ in range(n)]  # 0 locked, 1 visited
+        n = l..(G)
+        visited = [0 ___ _ __ r..(n)]  # 0 locked, 1 visited
         self.dfs(G, 0, visited)
-        return all(e == 1 for e in visited)
+        r.. a..(e __ 1 ___ e __ visited)
 
     ___ dfs(self, G, u, visited):
         visited[u] = 1
-        for nbr in G[u]:
-            __ not visited[nbr]:
+        ___ nbr __ G[u]:
+            __ n.. visited[nbr]:
                 self.dfs(G, nbr, visited)
 
 
-__ __name__ == "__main__":
-    assert Solution().canVisitAllRooms([[1],[2],[3],[]]) == True
-    assert Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) == False
+__ __name__ __ "__main__":
+    ... Solution().canVisitAllRooms([[1],[2],[3],[]]) __ True
+    ... Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) __ False

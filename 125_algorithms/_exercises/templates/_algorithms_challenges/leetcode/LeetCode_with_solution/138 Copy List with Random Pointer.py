@@ -9,8 +9,8 @@ __author__ = 'Danyang'
 class RandomListNode:
     ___ __init__(self, x):
         self.label = x
-        self.next = None
-        self.random = None
+        self.next = N..
+        self.random = N..
 
 class Solution:
     ___ copyRandomList(self, head):
@@ -57,7 +57,7 @@ class Solution:
 
         # split
         pre = dummy
-        head_copy = pre.next.next __ pre.next else None
+        head_copy = pre.next.next __ pre.next ____ N..
         while pre.next:
             cur = pre.next
             cur_copy = cur.next
@@ -69,4 +69,4 @@ class Solution:
             pre = pre.next
 
 
-        return head_copy
+        r.. head_copy

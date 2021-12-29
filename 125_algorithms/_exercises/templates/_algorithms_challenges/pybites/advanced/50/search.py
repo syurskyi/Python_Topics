@@ -1,9 +1,9 @@
-from collections import namedtuple
-from datetime import date
-import datetime
-from time import mktime
+____ collections _______ namedtuple
+____ datetime _______ date
+_______ datetime
+____ time _______ mktime
 
-import feedparser
+_______ feedparser
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
@@ -19,7 +19,7 @@ ___ _convert_struct_time_to_dt(stime):
 
     dt = datetime.datetime.fromtimestamp(mktime(stime))
 
-    return dt.date()
+    r.. dt.date()
 
 
 
@@ -31,20 +31,20 @@ ___ get_feed_entries(feed=FEED):
     entries = d.entries
     
     all_entries =[]
-    for entry in entries:
+    ___ entry __ entries:
         title = entry.title
         link = entry.link
         date = entry.published_parsed
         tags = entry.tags
-        tags = [t.get('term').lower() for t in tags]
+        tags = [t.get('term').lower() ___ t __ tags]
 
         date = _convert_struct_time_to_dt(date)
 
 
         entry = Entry(date,title,link,tags)
-        all_entries.append(entry)
+        all_entries.a..(entry)
 
-    return all_entries
+    r.. all_entries
 
 
 
@@ -64,15 +64,15 @@ ___ filter_entries_by_tag(search, entry):
     """
         
     entry_tags = entry.tags
-    __ '&' in search:
+    __ '&' __ search:
         splits = search.split('&')
 
-        return all(split.lower() in entry_tags for split in splits)
-    elif '|' in search:
+        r.. a..(split.lower() __ entry_tags ___ split __ splits)
+    ____ '|' __ search:
         splits = search.split('|')
-        return any(split.lower() in entry_tags for split in splits)
-    else:
-        return search.lower() in entry_tags
+        r.. any(split.lower() __ entry_tags ___ split __ splits)
+    ____:
+        r.. search.lower() __ entry_tags
 
 ___ main():
     """Entry point to the program
@@ -88,31 +88,31 @@ ___ main():
     """
     entries = get_feed_entries()
     
-    entries.sort(key=lambda x: x.date)
+    entries.sort(key=l.... x: x.date)
     while True:
         term = input("Search Term? ")
-        __ term == '':
+        __ term __ '':
             print('Please provide a search term')
             continue
-        __ term == 'q':
+        __ term __ 'q':
             print('Bye')
             break
         
         
         matches = 0
-        for entry in entries:
+        ___ entry __ entries:
             found = filter_entries_by_tag(term,entry)
             __ found:
                 print(entry.title)
                 matches += 1
 
         
-        __ matches == 1:
+        __ matches __ 1:
             print('1 entry matched')
-        else:
+        ____:
             print(f"{matches} entries matched")
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

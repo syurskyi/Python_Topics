@@ -1,8 +1,8 @@
 ___ XO(txt):
     s = txt.lower()
-    __ s.count("x") == 0 and s.count("o") == 0:
-        return True
-    elif s.count("x") == s.count("o"):
-        return True
-    else:
-        return False
+    __ s.c.. "x") __ 0 and s.c.. "o") __ 0:
+        r.. True
+    ____ s.c.. "x") __ s.c.. "o"):
+        r.. True
+    ____:
+        r.. False

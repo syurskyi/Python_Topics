@@ -40,33 +40,33 @@ class Stack(object):
             queue1 = [x, a, b, c]
             queue2 = []
         """
-        self.queue1 = []
-        self.queue2 = []
+        self.queue1    # list
+        self.queue2    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.queue2.append(x)
+        self.queue2.a..(x)
         while self.queue1:
-            self.queue2.append(self.queue1.pop(0))
+            self.queue2.a..(self.queue1.pop(0))
         self.queue1, self.queue2 = self.queue2, self.queue1
 
     ___ pop(self):
         """
         :rtype: nothing
         """
-        return self.queue1.pop(0)
+        r.. self.queue1.pop(0)
 
     ___ top(self):
         """
         :rtype: int
         """
-        return self.queue1[0]
+        r.. self.queue1[0]
 
     ___ empty(self):
         """
         :rtype: bool
         """
-        return not self.queue1
+        r.. n.. self.queue1

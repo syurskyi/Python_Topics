@@ -4,16 +4,16 @@ class Solution(object):
     :type words: List[str]
     :rtype: int
     """
-    bitmap = [0] * len(words)
+    bitmap = [0] * l..(words)
     mask = 0x01
     ans = 0
-    for i in range(0, len(words)):
+    ___ i __ r..(0, l..(words)):
       word = words[i]
-      for c in word:
+      ___ c __ word:
         bitmap[i] |= (mask << (ord(c) - ord('a')))
-    for i in range(0, len(words)):
-      for j in range(0, i):
-        __ bitmap[i] & bitmap[j] == 0:
-          ans = max(ans, len(words[i]) * len(words[j]))
+    ___ i __ r..(0, l..(words)):
+      ___ j __ r..(0, i):
+        __ bitmap[i] & bitmap[j] __ 0:
+          ans = max(ans, l..(words[i]) * l..(words[j]))
 
-    return ans
+    r.. ans

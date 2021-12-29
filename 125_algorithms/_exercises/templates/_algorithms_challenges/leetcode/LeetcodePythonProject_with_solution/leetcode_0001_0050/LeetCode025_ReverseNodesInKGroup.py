@@ -16,19 +16,19 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        __ k == 1: return head
+        __ k __ 1: r.. head
         dummy = ListNode(-1)
         dummy.next = head
         prev = dummy
         count = 1
         node = head
         while node:
-            __ count % k == 0:
+            __ count % k __ 0:
                 node = self.reverse(prev, node)
                 prev = node
             count += 1
             node = node.next
-        return dummy.next
+        r.. dummy.next
     
     ___ reverse(self, prev, tail):
         nextNode = tail.next
@@ -40,4 +40,4 @@ class Solution(object):
             prev.next = p
             p = tmp
         res.next = p
-        return res
+        r.. res

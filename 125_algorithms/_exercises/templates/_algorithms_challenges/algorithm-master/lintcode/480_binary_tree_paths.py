@@ -13,21 +13,21 @@ class Solution:
         :type root: TreeNode
         :rtype: list[str]
         """
-        ans = []
-        __ not root:
-            return ans
+        ans    # list
+        __ n.. root:
+            r.. ans
 
         self.dfs(root, ans, [])
 
-        return ans
+        r.. ans
 
     ___ dfs(self, node, ans, path):
-        path.append(str(node.val))
+        path.a..(str(node.val))
 
-        __ not node.left and not node.right:
-            ans.append('->'.join(path))
+        __ n.. node.left and n.. node.right:
+            ans.a..('->'.join(path))
             path.pop()
-            return
+            r..
 
         __ node.left:
             self.dfs(node.left, ans, path)

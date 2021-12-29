@@ -1,4 +1,4 @@
-import re
+_______ re
 
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
 HTML = """<!DOCTYPE html>
@@ -26,9 +26,9 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: str = HTML) -> dict:
+___ extract_quotes(html: str = HTML) -> d..:
     d = {}
     match = re.findall(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
-    for quote, author in match:
+    ___ quote, author __ match:
         d[author] = quote
-    return d
+    r.. d

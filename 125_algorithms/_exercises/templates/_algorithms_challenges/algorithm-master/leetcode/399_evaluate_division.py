@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -9,46 +9,46 @@ class Solution:
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        ans = []
+        ans    # list
 
-        __ not (
+        __ n.. (
             equations and
             values and
             queries and
-            len(equations) == len(values)
+            l..(equations) __ l..(values)
         ):
-            return ans
+            r.. ans
 
         nexts = collections.defaultdict(set)
         evals = collections.defaultdict(float)
 
-        for i in range(len(equations)):
+        ___ i __ r..(l..(equations)):
             a, b = equations[i]
             nexts[a].add(b)
             nexts[b].add(a)
             evals[a, b] = 1.0 * values[i]
             evals[b, a] = 1.0 / values[i]
 
-        for a, b in queries:
+        ___ a, b __ queries:
             res = self.dfs(a, b, 1, nexts, evals, set())
-            ans.append(float(res))
+            ans.a..(float(res))
 
-        return ans
+        r.. ans
 
     ___ dfs(self, a, b, val, nexts, evals, visited):
         res = -1
 
-        __ a not in nexts:
-            return res
-        __ a == b:
+        __ a n.. __ nexts:
+            r.. res
+        __ a __ b:
             # this condition must be after `a not in nexts`
             # to prevent the node not in graph
-            return val
+            r.. val
 
         visited.add(a)
 
-        for c in nexts[a]:
-            __ c in visited or (a, c) not in evals:
+        ___ c __ nexts[a]:
+            __ c __ visited o. (a, c) n.. __ evals:
                 continue
 
             res = self.dfs(c, b, val * evals[a, c], nexts, evals, visited)
@@ -57,4 +57,4 @@ class Solution:
                 break
 
         visited.discard(a)
-        return res
+        r.. res

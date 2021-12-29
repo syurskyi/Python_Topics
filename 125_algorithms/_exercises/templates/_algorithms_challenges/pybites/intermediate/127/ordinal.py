@@ -23,16 +23,16 @@ ___ get_ordinal_suffix(number):
     number = str(number)
     last_char = number[-1]
     
-    __ number[-2:] in ordinal_suffix["th"] and len(number) > 1:
-      return f"{number}th"
-    elif last_char == ordinal_suffix["st"]:
-      return f"{number}st"
-    elif last_char == ordinal_suffix["nd"]:
-      return f"{number}nd"
-    elif last_char == ordinal_suffix["rd"]:
-      return f"{number}rd"
-    else:
-      return f"{number}th"
+    __ number[-2:] __ ordinal_suffix["th"] and l..(number) > 1:
+      r.. f"{number}th"
+    ____ last_char __ ordinal_suffix["st"]:
+      r.. f"{number}st"
+    ____ last_char __ ordinal_suffix["nd"]:
+      r.. f"{number}nd"
+    ____ last_char __ ordinal_suffix["rd"]:
+      r.. f"{number}rd"
+    ____:
+      r.. f"{number}th"
 
 
 # if __name__ == "__main__":

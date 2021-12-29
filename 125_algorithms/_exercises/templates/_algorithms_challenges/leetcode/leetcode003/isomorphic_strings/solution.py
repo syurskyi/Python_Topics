@@ -26,20 +26,20 @@ class Solution(object):
         :rtype: bool
         """
         d = {}
-        for i, c in enumerate(s):
-            __ c not in d:
+        ___ i, c __ enumerate(s):
+            __ c n.. __ d:
                 d[c] = t[i]
-            else:
+            ____:
                 __ d[c] != t[i]:
-                    return False
+                    r.. False
         d = {}
-        for i, c in enumerate(t):
-            __ c not in d:
+        ___ i, c __ enumerate(t):
+            __ c n.. __ d:
                 d[c] = s[i]
-            else:
+            ____:
                 __ d[c] != s[i]:
-                    return False
-        return True
+                    r.. False
+        r.. True
 
 
 s = Solution()

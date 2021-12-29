@@ -12,15 +12,15 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ firstMissingPositive(self, A):
-        n = len(A)
+        n = l..(A)
         i = 0
         while i < n:
             j = A[i] - 1
             __ A[i] != i + 1 and A[i] >= 1 and A[i] <= n and A[i] != A[j]:
                 A[i], A[j] = A[j], A[i]
-            else:
+            ____:
                 i += 1
-        for i, e in enumerate(A):
+        ___ i, e __ enumerate(A):
             __ e != i + 1:
-                return i + 1
-        return n + 1
+                r.. i + 1
+        r.. n + 1

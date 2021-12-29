@@ -18,33 +18,33 @@ class Solution(object):
 
         No dummy node
         """
-        res = None
-        res_end = None
-        while l1 is not None and l2 is not None:
+        res = N..
+        res_end = N..
+        while l1 __ n.. N.. and l2 __ n.. N..
             __ l1.val < l2.val:
-                __ res is None:
+                __ res __ N..
                     res = l1
                     res_end = res
-                else:
+                ____:
                     res_end.next = l1
                     res_end = res_end.next
                 l1 = l1.next
-            else:
-                __ res is None:
+            ____:
+                __ res __ N..
                     res = l2
                     res_end = res
-                else:
+                ____:
                     res_end.next = l2
                     res_end = res_end.next
                 l2 = l2.next
-        __ l1 is not None:
-            __ res is not None:
+        __ l1 __ n.. N..
+            __ res __ n.. N..
                 res_end.next = l1
-            else:
+            ____:
                 res = l1
-        __ l2 is not None:
-            __ res is not None:
+        __ l2 __ n.. N..
+            __ res __ n.. N..
                 res_end.next = l2
-            else:
+            ____:
                 res = l2
-        return res
+        r.. res

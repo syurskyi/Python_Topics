@@ -21,7 +21,7 @@ We have two more Bites to practice argparse: 57 and 58.
 '''
 
 
-import argparse
+_______ argparse
 
 
 ___ calc_bmi(weight, length):
@@ -29,7 +29,7 @@ ___ calc_bmi(weight, length):
        Calc BMI give a weight in kg and length in cm, return the BMI
        rounded on 2 decimals"""
     bmi = int(weight) / ((int(length) / 100) ** 2)
-    return round(bmi, 2)
+    r.. round(bmi, 2)
 
 
 ___ create_parser():
@@ -39,25 +39,25 @@ ___ create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("-w", "--weight", help="Your weight in kg")
     parser.add_argument("-l", "--length", help="Your length in cm")
-    return parser
+    r.. parser
 
 
 ___ handle_args(args_ N..
     """Provided/DONE:
        Call calc_bmi with provided args object.
        If args are not provided get them from create_parser"""
-    __ args is None:
+    __ args __ N..
         parser = create_parser()
         args = parser.parse_args()
 
     __ args.weight and args.length:
         bmi = calc_bmi(args.weight, args.length)
         print(f'Your BMI is: {bmi}')
-    else:
+    ____:
         # could enforce SystemExit in create_parser/add_argument, but argparse
         # docs are not clear how to do it, so raising the exception here manually
         raise SystemExit
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     handle_args()

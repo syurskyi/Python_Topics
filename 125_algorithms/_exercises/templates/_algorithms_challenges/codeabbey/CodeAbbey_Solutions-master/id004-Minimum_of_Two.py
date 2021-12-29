@@ -1,7 +1,7 @@
 ___ findMin(amount):
-        answer = []
-        for pairCount in range(amount):
+        answer    # list
+        ___ pairCount __ r..(amount):
                 pair = raw_input().split(' ')
-                answer.append(str(min(int(pair[0]),int(pair[1]))))
+                answer.a..(str(m..(int(pair[0]),int(pair[1]))))
         print(' '.join(answer))
 findMin(input())

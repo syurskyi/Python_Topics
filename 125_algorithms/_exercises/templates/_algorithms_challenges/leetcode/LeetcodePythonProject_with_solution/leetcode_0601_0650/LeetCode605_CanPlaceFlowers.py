@@ -10,15 +10,15 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        for i, flower in enumerate(flowerbed):
-            __ flower == 0 and\
-                (i == 0 or flowerbed[i-1] == 0) and\
-                (i == len(flowerbed)-1 or flowerbed[i+1] == 0):
+        ___ i, flower __ enumerate(flowerbed):
+            __ flower __ 0 and\
+                (i __ 0 o. flowerbed[i-1] __ 0) and\
+                (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0):
                 n -= 1
                 flowerbed[i] = 1
             __ n <= 0:
-                return True
-        return False
+                r.. True
+        r.. False
     
     ___ test(self):
         testCases = [
@@ -43,12 +43,12 @@ class Solution(object):
                 0,
             ],
         ]
-        for flowerbed, n in testCases:
+        ___ flowerbed, n __ testCases:
             print('flowerbed: %s' % flowerbed)
             print('n: %s' % n)
             result = self.canPlaceFlowers(flowerbed, n)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

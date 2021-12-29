@@ -39,8 +39,8 @@ Note:
 1 <= deck.length <= 10000
 0 <= deck[i] < 10000
 """
-from typing import List
-from collections import Counter
+____ typing _______ List
+____ collections _______ Counter
 
 
 class Solution:
@@ -49,15 +49,15 @@ class Solution:
         gcd of all > 2
         """
         counter = Counter(deck)
-        gcd = None
-        for v in counter.values():
-            __ gcd is None:
+        gcd = N..
+        ___ v __ counter.values():
+            __ gcd __ N..
                 gcd = v
             gcd = self.gcd(gcd, v)
-            __ gcd == 1:
-                return False
+            __ gcd __ 1:
+                r.. False
 
-        return True
+        r.. True
 
     ___ gcd(self, a, b):
         """
@@ -67,4 +67,4 @@ class Solution:
         while b:
             a, b = b, a % b
 
-        return a
+        r.. a

@@ -1,14 +1,14 @@
 ___ regressionLine(x, y):
-    sumSquareX = sum([n**2 for n in x])
-    sumSquareY = sum([n**2 for n in y])
-    sumX = sum(x)
-    sumY = sum(y)
-    sumXY = sum([X*Y for X,Y in zip(x,y)])
-    a = ((sumSquareX*sumY) - (sumX*sumXY)) / float(((len(x) * sumSquareX) - sumX**2))
-    b = ((len(x)*sumXY) - (sumX*sumY)) / float(((len(x)*sumSquareX) - sumX**2))
+    sumSquareX = s..([n**2 ___ n __ x])
+    sumSquareY = s..([n**2 ___ n __ y])
+    sumX = s..(x)
+    sumY = s..(y)
+    sumXY = s..([X*Y ___ X,Y __ zip(x,y)])
+    a = ((sumSquareX*sumY) - (sumX*sumXY)) / float(((l..(x) * sumSquareX) - sumX**2))
+    b = ((l..(x)*sumXY) - (sumX*sumY)) / float(((l..(x)*sumSquareX) - sumX**2))
     a = round(a,4)
     b = round(b,4)
-    return a,b
+    r.. a,b
     
 
 

@@ -11,16 +11,16 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        n = len(numbers)
+        n = l..(numbers)
         i = 0
         j = n-1
         while i < j:
             s = numbers[i] + numbers[j]
-            __ s == target:
-                return i+1, j+1
-            elif s < target:
+            __ s __ target:
+                r.. i+1, j+1
+            ____ s < target:
                 i += 1
-            else:
+            ____:
                 j -= 1
 
-        return -1, -1
+        r.. -1, -1

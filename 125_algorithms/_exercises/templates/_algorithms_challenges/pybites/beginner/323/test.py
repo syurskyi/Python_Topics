@@ -1,11 +1,11 @@
-from functools import reduce
+____ functools _______ reduce
 
 #list = [1,2,3,4,5,6,7,8]
-list = []
+l..    # list
 
-__ list:
-    new_list = reduce(lambda x,y: x+y, list)
+__ l..:
+    new_list = reduce(l.... x,y: x+y, l..)
     print(new_list)
-else:
+____:
     print('empty')
-    print(list)
+    print(l..)

@@ -1,4 +1,4 @@
-import random
+_______ random
 
 print('---------------------------------')
 print('   GUESS THAT NUMBER GAME')
@@ -17,9 +17,9 @@ w___ guess ! the_number:
     __ guess < the_number:
         # print('Your guess of ' + guess + ' was too LOW.')
         print('Sorry {}, your guess of {} was too LOW.'.format(name, guess))
-    elif guess > the_number:
+    ____ guess > the_number:
         print('Sorry {}, your guess of {} was too HIGH.'.format(name, guess))
-    else:
+    ____:
         print('Excellent work {}, you won, it was {}!'.format(name, guess))
 
 print('done')

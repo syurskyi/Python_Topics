@@ -1,8 +1,8 @@
 ___ is_empty(s):
-    __ s == "":
-        return True
-    else:
-        return False
+    __ s __ "":
+        r.. True
+    ____:
+        r.. False
 
 ___ test_empty():
     print("test has started")

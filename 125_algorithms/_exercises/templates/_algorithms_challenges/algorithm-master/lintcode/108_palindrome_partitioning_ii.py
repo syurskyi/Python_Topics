@@ -2,10 +2,10 @@ class Solution:
     # @param S, a string
     # @return an integer
     ___ minCut(self, S):
-        __ not S:
-            return -1
+        __ n.. S:
+            r.. -1
 
-        n = len(S)
+        n = l..(S)
         INFINITY = float('inf')
         is_palindrome = self.get_palin_map(S)
 
@@ -16,31 +16,31 @@ class Solution:
         dp = [INFINITY] * (n + 1)
         dp[0] = 0
 
-        for end in range(1, n + 1):
-            for start in range(end):
-                __ (not is_palindrome[start][end - 1] or
-                    dp[start] is INFINITY):
+        ___ end __ r..(1, n + 1):
+            ___ start __ r..(end):
+                __ (n.. is_palindrome[start][end - 1] o.
+                    dp[start] __ INFINITY):
                     continue
                 __ dp[start] + 1 < dp[end]:
                     dp[end] = dp[start] + 1
 
-        return dp[n] - 1
+        r.. dp[n] - 1
 
     ___ get_palin_map(self, S):
-        n = len(S)
-        is_palindrome = [[False] * n for _ in range(n)]
+        n = l..(S)
+        is_palindrome = [[False] * n ___ _ __ r..(n)]
         is_palindrome[0][0] = True
 
-        for end in range(1, n):
+        ___ end __ r..(1, n):
             is_palindrome[end][end] = True
 
             start = end - 1
-            is_palindrome[start][end] = (S[start] == S[end])
+            is_palindrome[start][end] = (S[start] __ S[end])
 
-        for start in range(n - 1 - 2, -1, -1):
-            for end in range(start + 2, n):
-                __ not is_palindrome[start + 1][end - 1]:
+        ___ start __ r..(n - 1 - 2, -1, -1):
+            ___ end __ r..(start + 2, n):
+                __ n.. is_palindrome[start + 1][end - 1]:
                     continue
-                is_palindrome[start][end] = (S[start] == S[end])
+                is_palindrome[start][end] = (S[start] __ S[end])
 
-        return is_palindrome
+        r.. is_palindrome

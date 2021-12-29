@@ -16,7 +16,7 @@ True
 """
 
 
-import collections
+_______ collections
 
 
 class Solution:
@@ -27,20 +27,20 @@ class Solution:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ len(words1) != len(words2):
-            return False
+        __ l..(words1) != l..(words2):
+            r.. False
 
         simils = collections.defaultdict(set)
 
-        for a, b in pairs:
+        ___ a, b __ pairs:
             simils[a].add(b)
             simils[b].add(a)
 
-        for i in range(len(words1)):
+        ___ i __ r..(l..(words1)):
             a = words1[i]
             b = words2[i]
 
-            __ a != b and b not in simils[a]:
-                return False
+            __ a != b and b n.. __ simils[a]:
+                r.. False
 
-        return True
+        r.. True

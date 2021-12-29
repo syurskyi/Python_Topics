@@ -1,20 +1,20 @@
-from typing import List
+____ typing _______ List
 
 
 ___ jagged_list(lst_of_lst: List[List[int]], fillvalue: int = 0) -> List[List[int]]:
-    __ lst_of_lst == []:
-        return lst_of_lst
-    else:
-        max_length = max([len(lst) for lst in lst_of_lst])
+    __ lst_of_lst __ []:
+        r.. lst_of_lst
+    ____:
+        max_length = max([l..(lst) ___ lst __ lst_of_lst])
     
-    for lst in lst_of_lst:
-        __ len(lst) == max_length:
+    ___ lst __ lst_of_lst:
+        __ l..(lst) __ max_length:
             continue
-        else:
-            for i in range(max_length -len(lst)):
-                lst.append(fillvalue)
+        ____:
+            ___ i __ r..(max_length -l..(lst)):
+                lst.a..(fillvalue)
 
-    return lst_of_lst
+    r.. lst_of_lst
 
 
 # if __name__ == "__main__":

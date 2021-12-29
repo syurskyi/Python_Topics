@@ -2,10 +2,10 @@ ___ convert_pybites_chars(text):
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
     PYBITES = "pybites"
-    new_str = []
-    for t in text:
-        __ t.lower() in list(PYBITES):
-            new_str.append(t.swapcase())
-        else:
-            new_str.append(t)
-    return "".join(new_str)
+    new_str    # list
+    ___ t __ text:
+        __ t.lower() __ l..(PYBITES):
+            new_str.a..(t.swapcase())
+        ____:
+            new_str.a..(t)
+    r.. "".join(new_str)

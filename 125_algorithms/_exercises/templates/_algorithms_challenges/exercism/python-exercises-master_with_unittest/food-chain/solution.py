@@ -18,20 +18,20 @@ ___ chain():
     verse = ""
     chain = ""
 
-    for number, animal in enumerate(animals):
+    ___ number, animal __ enumerate(animals):
         verse = old_lady + animal + ".\n"
 
-        __ number == 7:
+        __ number __ 7:
             verse += phrases[6]
-        else:
-            __ number == 0:
+        ____:
+            __ number __ 0:
                 chain = swallowed + animal + '.\n'
-            elif number == 1:
+            ____ number __ 1:
                 verse += "It" + phrases[0] + "\n"
                 chain = chain.replace("<animal>", animal)
                 verse += chain
                 chain = swallowed+animal+" that"+phrases[0]+"\n"+chain
-            else:
+            ____:
                 verse += phrases[number-1] + "\n"
                 chain = chain.replace("<animal>", animal)
                 verse += chain
@@ -42,22 +42,22 @@ ___ chain():
         verse += "\n"
         song += verse
 
-    return song
+    r.. song
 
 
 ___ verses(letter):
-    return letter.replace('die.', 'die.slice').split('slice')
+    r.. letter.replace('die.', 'die.slice').split('slice')
 
 
 ___ recite(start_verse, end_verse):
-    generated = [verse.strip().split("\n") for verse in verses(chain())]
-    __ start_verse == end_verse:
-        return generated[start_verse-1]
-    else:
-        result = []
-        for i in range(start_verse-1, end_verse):
+    generated = [verse.strip().split("\n") ___ verse __ verses(chain())]
+    __ start_verse __ end_verse:
+        r.. generated[start_verse-1]
+    ____:
+        result    # list
+        ___ i __ r..(start_verse-1, end_verse):
             result += generated[i] + [""]
 
         # Pop out the last empty string
         result.pop()
-        return result
+        r.. result

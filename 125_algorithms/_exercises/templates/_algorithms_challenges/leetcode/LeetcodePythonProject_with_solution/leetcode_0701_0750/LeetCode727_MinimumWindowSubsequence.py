@@ -11,26 +11,26 @@ class Solution(object):
         :rtype: str
         """
         t, s = T, S
-        m, n = len(t), len(s)
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for j in range(n+1):
+        m, n = l..(t), l..(s)
+        dp = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ j __ r..(n+1):
             dp[0][j] = j+1
-        for i in range(1, m+1):
-            for j in range(1, n+1):
-                __ t[i-1] == s[j-1]:
+        ___ i __ r..(1, m+1):
+            ___ j __ r..(1, n+1):
+                __ t[i-1] __ s[j-1]:
                     dp[i][j] = dp[i-1][j-1]
-                else:
+                ____:
                     dp[i][j] = dp[i][j-1]
         start = 0
         length = n+1
-        for j in range(1, n+1):
+        ___ j __ r..(1, n+1):
             __ dp[m][j] != 0:
                 __ j-dp[m][j]+1 < length:
                     start = dp[m][j]-1
                     length = j-dp[m][j]+1
         print('dp:')
-        print('\n'.join([str(row) for row in dp]))
-        return '' __ length==n+1 else s[start:start+length]
+        print('\n'.join([str(row) ___ row __ dp]))
+        r.. '' __ length__n+1 ____ s[start:start+length]
     
     ___ test(self):
         testCases = [
@@ -39,12 +39,12 @@ class Solution(object):
                 'bde',
             ],
         ]
-        for s, t in testCases:
+        ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
             result = self.minWindow(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

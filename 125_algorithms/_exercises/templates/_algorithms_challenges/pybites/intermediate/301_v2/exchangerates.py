@@ -1,49 +1,49 @@
-import os
-import json
-from datetime import date
-import datetime as dt
-from pathlib import Path
-from typing import Dict, List
-from urllib.request import urlretrieve
-from dateutil.parser import parse
+_______ os
+_______ json
+____ datetime _______ date
+_______ datetime as dt
+____ pathlib _______ Path
+____ typing _______ Dict, List
+____ urllib.request _______ urlretrieve
+____ dateutil.parser _______ parse
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
-__ not RATES_FILE.exists():
+__ n.. RATES_FILE.exists():
     urlretrieve(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) -> List[date]:
 
-    dates = []
+    dates    # list
 
     current_date = start_date
     while current_date != end_date:
-        dates.append(current_date)
+        dates.a..(current_date)
         current_date += dt.timedelta(days=1)
     
     
-    dates.append(current_date)
+    dates.a..(current_date)
 
-    return dates
-
-
+    r.. dates
 
 
 
-___ match_daily_rates(start: date, end: date, daily_rates: dict) -> Dict[date, date]:
+
+
+___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, date]:
 
     
     
 
-    dates = sorted(daily_rates.keys())
+    dates = s..(daily_rates.keys())
     
     
 
     i = 0
-    while i < len(dates) and parse(dates[i]).date() < start:
+    while i < l..(dates) and parse(dates[i]).date() < start:
         i += 1
 
 
@@ -52,44 +52,44 @@ ___ match_daily_rates(start: date, end: date, daily_rates: dict) -> Dict[date, d
     
     current_date = start
         
-    while i < len(dates):
+    while i < l..(dates):
         date = parse(dates[i]).date()
-        __ date == current_date:
+        __ date __ current_date:
             mapping[current_date] = date
             current_date += dt.timedelta(days=1)
             i += 1
-        elif date > current_date:
+        ____ date > current_date:
             mapping[current_date] = parse(dates[i -1]).date()
             current_date += dt.timedelta(days=1)
-        else:
+        ____:
             i += 1
 
 
-    return mapping
+    r.. mapping
 
 
 
 ___ exchange_rates(
     start_date: str = "2020-01-01", end_date: str = "2020-09-01"
-) -> Dict[date, dict]:
+) -> Dict[date, d..]:
     
 
     with open(RATES_FILE,'r') as f:
         data = json.load(f)
-    __ (start_date < data['start_at']) or (end_date > data['end_at']):
+    __ (start_date < data['start_at']) o. (end_date > data['end_at']):
         raise ValueError("Invalid dates")
     matching_dates = match_daily_rates(parse(start_date).date(),parse(end_date).date(),data['rates']) 
 
 
     result = {}
-    for date_1,date_2 in matching_dates.items():
+    ___ date_1,date_2 __ matching_dates.items():
         date = date_2.strftime("%Y-%m-%d")
         value = {'Base Date': date_2,'USD': data['rates'][date]['USD'],'GBP': data['rates'][date]['GBP']}
         result[date_1] = value
 
-    return result
+    r.. result
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     exchange_rates()
 

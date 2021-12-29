@@ -7,7 +7,7 @@ except FileNotFoundError:
     print("file not exist")
 except Exception as e:
     print(e)
-else:
+____:
     print(f.read())
 finally:
     print("closing")

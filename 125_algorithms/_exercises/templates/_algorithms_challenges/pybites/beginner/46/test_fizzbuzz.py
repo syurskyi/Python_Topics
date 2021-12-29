@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from fizzbuzz import fizzbuzz
+____ fizzbuzz _______ fizzbuzz
 
 @pytest.mark.parametrize("arg, ret",[
     (1, 1),
@@ -21,4 +21,4 @@ from fizzbuzz import fizzbuzz
     (16, 16),
 ])
 ___ test_fizzbuzz(arg, ret):
-    assert fizzbuzz(arg) == ret
+    ... fizzbuzz(arg) __ ret

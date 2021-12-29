@@ -1,10 +1,10 @@
-from collections import namedtuple,defaultdict
-from enum import Enum
-from typing import Sequence
-from collections.abc import Sequence as seq
+____ collections _______ namedtuple,defaultdict
+____ enum _______ Enum
+____ typing _______ Sequence
+____ collections.abc _______ Sequence as seq
 
-Suit = Enum("Suit", list("SHDC"))
-Rank = Enum("Rank", list("AKQJT98765432"))
+Suit = Enum("Suit", l..("SHDC"))
+Rank = Enum("Rank", l..("AKQJT98765432"))
 Card = namedtuple("Card", ["suit", "Rank"])
 
 HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
@@ -19,23 +19,23 @@ class BridgeHand:
         Raise ValueError if any element of the sequence is not an instance
         of Card, or if the number of elements is not 13
         """
-        __ not isinstance(cards,seq):
+        __ n.. isi..(cards,seq):
             raise TypeError("Not a sequence")
         
 
-        __ not all(isinstance(card,Card) for card in cards):
+        __ n.. a..(isi..(card,Card) ___ card __ cards):
             raise ValueError("all values in Seuqence must be instance of Card")
 
 
-        __ len(cards) != 13:
+        __ l..(cards) != 13:
             raise ValueError("Must have 13 cards")
         
 
         self.cards = cards
 
-        self.suit_to_cards = defaultdict(list)
-        for card in self.cards:
-            self.suit_to_cards[card.suit].append(card.Rank)
+        self.suit_to_cards = defaultdict(l..)
+        ___ card __ self.cards:
+            self.suit_to_cards[card.suit].a..(card.Rank)
 
 
 
@@ -56,16 +56,16 @@ class BridgeHand:
 
 
         
-        s = []
-        for suit in Suit:
-            __ suit in self.suit_to_cards:
+        s    # list
+        ___ suit __ Suit:
+            __ suit __ self.suit_to_cards:
                 cards = self.suit_to_cards[suit]
-                cards.sort(key=lambda x: x.value)
-                cards = ''.join(card.name for card in cards)
-                s.append(f"{suit.name}:{cards}")
+                cards.sort(key=l.... x: x.value)
+                cards = ''.join(card.name ___ card __ cards)
+                s.a..(f"{suit.name}:{cards}")
 
 
-        return ' '.join(s)
+        r.. ' '.join(s)
             
 
 
@@ -83,19 +83,19 @@ class BridgeHand:
     ___ hcp(self) -> int:
         """ Return the number of high card points contained in this hand """
 
-        return sum(HCP[card.Rank] for card in self.cards __ card.Rank in HCP)
+        r.. s..(HCP[card.Rank] ___ card __ self.cards __ card.Rank __ HCP)
 
     @property
     ___ doubletons(self) -> int:
         """ Return the number of doubletons contained in this hand """
 
 
-        return sum(len(cards) == 2 for cards in self.suit_to_cards.values())
+        r.. s..(l..(cards) __ 2 ___ cards __ self.suit_to_cards.values())
 
     @property
     ___ singletons(self) -> int:
         """ Return the number of singletons contained in this hand """
-        return sum(len(cards) == 1 for cards in self.suit_to_cards.values())
+        r.. s..(l..(cards) __ 1 ___ cards __ self.suit_to_cards.values())
 
     @property
     ___ voids(self) -> int:
@@ -104,7 +104,7 @@ class BridgeHand:
         """
 
 
-        return len(Suit) - len(self.suit_to_cards)
+        r.. l..(Suit) - l..(self.suit_to_cards)
 
     @property
     ___ ssp(self) -> int:
@@ -113,12 +113,12 @@ class BridgeHand:
             voids 3 points
         """
 
-        return self.doubletons + 2 * self.singletons + 3 * self.voids
+        r.. self.doubletons + 2 * self.singletons + 3 * self.voids
 
     @property
     ___ total_points(self) -> int:
         """ Return the total points (hcp and ssp) contained in this hand """
-        return self.hcp + self.ssp
+        r.. self.hcp + self.ssp
 
     @property
     ___ ltc(self) -> int:
@@ -127,32 +127,32 @@ class BridgeHand:
         """
 
         losing_tricks = 0
-        for cards in self.suit_to_cards.values():
+        ___ cards __ self.suit_to_cards.values():
 
-            __ len(cards) == 1:
+            __ l..(cards) __ 1:
                 __ cards[0] != Rank.A:
                     losing_tricks += 1
-            else:
+            ____:
 
-                cards = sorted(cards,key=lambda x: x.value)
-                __ len(cards) == 2:
-                    __ (cards[0] == Rank.A and cards[1] !=Rank.K) or (cards[0] == Rank.K):
+                cards = s..(cards,key=l.... x: x.value)
+                __ l..(cards) __ 2:
+                    __ (cards[0] __ Rank.A and cards[1] !=Rank.K) o. (cards[0] __ Rank.K):
                         losing_tricks += 1
-                    elif cards[0] != Rank.A or  cards[1] != Rank.K:
+                    ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
-                else:
+                ____:
                     cards = cards[:3]
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
-                        __ ((cards[0] == Rank.A) and (cards[1] in (Rank.K,Rank.Q))) or (cards[0] == Rank.K and cards[1] == Rank.Q):
+                        __ ((cards[0] __ Rank.A) and (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K and cards[1] __ Rank.Q):
                             losing_tricks += 1
-                        elif cards[0] in (Rank.A,Rank.K,Rank.Q):
+                        ____ cards[0] __ (Rank.A,Rank.K,Rank.Q):
                             losing_tricks += 2
-                        else:
+                        ____:
                             losing_tricks += 3
 
 
-        return losing_tricks
+        r.. losing_tricks
 
 
 

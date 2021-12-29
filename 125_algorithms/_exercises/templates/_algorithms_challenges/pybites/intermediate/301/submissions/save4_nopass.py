@@ -1,24 +1,24 @@
-import os
-from datetime import date, timedelta, strptime
-from pathlib import Path
-from typing import Dict, List
-from urllib.request import urlretrieve
+_______ os
+____ datetime _______ date, timedelta, strptime
+____ pathlib _______ Path
+____ typing _______ Dict, List
+____ urllib.request _______ urlretrieve
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
-__ not RATES_FILE.exists():
+__ n.. RATES_FILE.exists():
     urlretrieve(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) -> List[date]:
     delta = end_date - start_date
-    return [start_date+timedelta(days=x) for x in range(delta.days+1)]
+    r.. [start_date+timedelta(days=x) ___ x __ r..(delta.days+1)]
 
 ___ _parse_date(date_string: str) -> date:
-    y,m,d = date_string.split()
-    return date(days=d, month=m, year=y)
+    y,m,d = date_string.s.. 
+    r.. date(days=d, month=m, year=y)
 
 """{
     "start_at": "2019-01-01",
@@ -37,12 +37,12 @@ ___ _parse_date(date_string: str) -> date:
     }
 }"""
 
-___ match_daily_rates(start: date, end: date, daily_rates: dict) -> Dict[date, date]:
+___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, date]:
     
     r_start = _parse_date(daily_rates['start_at'])
     r_end = _parse_date(daily_rates['end_at'])
     
-    __ start < r_start or end < r_end:
+    __ start < r_start o. end < r_end:
         raise ValueError('Date out of range')
     
     
@@ -50,5 +50,5 @@ ___ match_daily_rates(start: date, end: date, daily_rates: dict) -> Dict[date, d
 
 ___ exchange_rates(
     start_date: str = "2020-01-01", end_date: str = "2020-09-01"
-) -> Dict[date, dict]:
+) -> Dict[date, d..]:
     pass

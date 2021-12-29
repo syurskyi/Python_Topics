@@ -5,18 +5,18 @@ class Solution(object):
     :type k: int
     :rtype: str
     """
-    visited = [0 for i in range(n)]
-    fact = [math.factorial(n - i - 1) for i in range(n)]
+    visited = [0 ___ i __ r..(n)]
+    fact = [math.factorial(n - i - 1) ___ i __ r..(n)]
     ans = ""
     k -= 1
-    for i in range(n):
+    ___ i __ r..(n):
       t = k / fact[i]
-      for j in range(n):
-        __ not visited[j]:
-          __ t == 0:
+      ___ j __ r..(n):
+        __ n.. visited[j]:
+          __ t __ 0:
             break
           t -= 1
       ans += str(j + 1)
       k %= fact[i]
       visited[j] = 1
-    return ans
+    r.. ans

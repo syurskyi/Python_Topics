@@ -7,43 +7,43 @@ Created on Jan 7, 2017
 class Solution(object):
     ___ longestPalindromeDP(self, s):
         res = ''
-        __ not s: return res
-        n = len(s)
-        dp = [[False]*n for _ in range(n)]
-        for i in range(n):
-            for j in range(i, -1, -1):
-                __ s[i] == s[j] and (i-j<=1 or dp[i-1][j+1]):
+        __ n.. s: r.. res
+        n = l..(s)
+        dp = [[False]*n ___ _ __ r..(n)]
+        ___ i __ r..(n):
+            ___ j __ r..(i, -1, -1):
+                __ s[i] __ s[j] and (i-j<=1 o. dp[i-1][j+1]):
                     dp[i][j] = True
-                    __ i-j+1 > len(res):
+                    __ i-j+1 > l..(res):
                         res = s[j:i+1]
-        return res
+        r.. res
     
     ___ longestPalindromeDP_another(self, s):
-        __ not s: return s
-        length = len(s)
+        __ n.. s: r.. s
+        length = l..(s)
         maxLen = 1
-        table = [[False,]*length for _ in range(length)]
+        table = [[False,]*length ___ _ __ r..(length)]
         longest = s[0]
-        for l in range(length):
-            for i in range(length-l):
+        ___ l __ r..(length):
+            ___ i __ r..(length-l):
                 j = i+l
-                __ s[i] == s[j] and (j-i<=2 or table[i+1][j-1]):
+                __ s[i] __ s[j] and (j-i<=2 o. table[i+1][j-1]):
                     table[i][j] = True
                     __ j-i+1 > maxLen:
                         maxLen = j-i+1
                         longest = s[i:j+1]
-        return longest
+        r.. longest
     
     ___ test(self):
         testCases = [
             'babad',
             'cbbd',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.longestPalindromeDP(s)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

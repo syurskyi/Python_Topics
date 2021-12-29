@@ -32,8 +32,8 @@ class Trie:
         :rtype: None
         """
         cur = self.root
-        for w in word:
-            __ w not in cur.children:   # not override
+        ___ w __ word:
+            __ w n.. __ cur.children:   # not override
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
@@ -46,16 +46,16 @@ class Trie:
         :rtype: bool
         """
         cur = self.root
-        for w in word:
-            __ w in cur.children:
+        ___ w __ word:
+            __ w __ cur.children:
                 cur = cur.children[w]
-            else:
-                return False
+            ____:
+                r.. False
 
-        __ not cur.ended:  # not ended here
-            return False
+        __ n.. cur.ended:  # not ended here
+            r.. False
 
-        return True
+        r.. True
 
     ___ startsWith(self, prefix):
         """
@@ -64,10 +64,10 @@ class Trie:
         :rtype: bool
         """
         cur = self.root
-        for w in prefix:
-            __ w in cur.children:
+        ___ w __ prefix:
+            __ w __ cur.children:
                 cur = cur.children[w]
-            else:
-                return False
+            ____:
+                r.. False
 
-        return True
+        r.. True

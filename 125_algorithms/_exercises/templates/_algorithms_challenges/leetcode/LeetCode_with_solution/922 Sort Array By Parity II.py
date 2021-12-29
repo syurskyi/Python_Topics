@@ -23,40 +23,40 @@ Note:
 A.length % 2 == 0
 0 <= A[i] <= 1000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ sortArrayByParityII(self, A: List[int]) -> List[int]:
         even_idx = 0
-        for odd_idx in range(1, len(A), 2):
-            __ A[odd_idx] % 2 == 0:
-                while A[even_idx] % 2 == 0:
+        ___ odd_idx __ r..(1, l..(A), 2):
+            __ A[odd_idx] % 2 __ 0:
+                while A[even_idx] % 2 __ 0:
                     even_idx += 2
                 A[odd_idx], A[even_idx] = A[even_idx], A[odd_idx]
 
-        return A
+        r.. A
 
     ___ sortArrayByParityII_complex(self, A: List[int]) -> List[int]:
         """
         in-place two passes
         """
         closed = -1
-        n = len(A)
-        for i in range(n):
-            __ A[i] % 2 == 0:
+        n = l..(A)
+        ___ i __ r..(n):
+            __ A[i] % 2 __ 0:
                 closed += 1
                 A[i], A[closed] = A[closed], A[i]
 
         j = closed + 1
-        __ j % 2 == 1:
+        __ j % 2 __ 1:
             j += 1
-        for i in range(1, closed + 1, 2):
+        ___ i __ r..(1, closed + 1, 2):
             A[i], A[j] = A[j], A[i]
             j += 2
 
-        return A
+        r.. A
 
 
-__ __name__ == "__main__":
-    assert Solution().sortArrayByParityII([4,1,1,0,1,0]) == [4,1,0,1,0,1]
+__ __name__ __ "__main__":
+    ... Solution().sortArrayByParityII([4,1,1,0,1,0]) __ [4,1,0,1,0,1]

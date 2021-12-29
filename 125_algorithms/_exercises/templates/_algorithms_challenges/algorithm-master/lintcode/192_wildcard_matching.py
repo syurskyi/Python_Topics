@@ -27,31 +27,31 @@ class Solution:
         :type p: str, regex
         :rtype: bool
         """
-        __ s __ None or p __ None:
-            return False
-        __ s == '' and p == '':
-            return True
+        __ s __ N.. o. p __ N..
+            r.. False
+        __ s __ '' and p __ '':
+            r.. True
 
         ANY = '?'
         ANY_MULTI = '*'
-        m, n = len(s), len(p)
+        m, n = l..(s), l..(p)
 
         """
         `dp[i][j]` means the substr end at `S[i - 1]` was matched by
         the substr end at `P[j - 1]`
         """
-        dp = [[False] * (n + 1) for _ in range(m + 1)]
+        dp = [[False] * (n + 1) ___ _ __ r..(m + 1)]
         dp[0][0] = True
         # dp[i][0] = False
         # dp[0][j] -> need to check
 
-        for i in range(m + 1):
-            for j in range(1, n + 1):
-                __ p[j - 1] == ANY_MULTI:
-                    dp[i][j] = dp[i - 1][j] or dp[i][j - 1]
-                elif p[j - 1] == ANY and dp[i - 1][j - 1]:
+        ___ i __ r..(m + 1):
+            ___ j __ r..(1, n + 1):
+                __ p[j - 1] __ ANY_MULTI:
+                    dp[i][j] = dp[i - 1][j] o. dp[i][j - 1]
+                ____ p[j - 1] __ ANY and dp[i - 1][j - 1]:
                     dp[i][j] = True
-                elif p[j - 1] == s[i - 1] and dp[i - 1][j - 1]:
+                ____ p[j - 1] __ s[i - 1] and dp[i - 1][j - 1]:
                     dp[i][j] = True
 
-        return dp[m][n]
+        r.. dp[m][n]

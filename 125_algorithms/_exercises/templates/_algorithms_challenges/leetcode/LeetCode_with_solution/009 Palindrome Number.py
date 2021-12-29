@@ -15,7 +15,7 @@ class Solution:
         :return: boolean
         """
         __ x < 0:
-            return False
+            r.. False
 
         # find order of magnitude
         div = 1
@@ -27,7 +27,7 @@ class Solution:
             lsb = x%10
 
             __ msb != lsb:
-                return False
+                r.. False
 
             # shrink
             x %= div
@@ -35,8 +35,8 @@ class Solution:
 
             div /= 100
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().isPalindrome(2147483647)

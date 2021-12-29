@@ -19,7 +19,7 @@ Note:
 L, R  and A[i] will be an integer in the range [0, 10^9].
 The length of A will be in the range of [1, 50000].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -35,18 +35,18 @@ class Solution:
         F = 0
         ret = 0
         prev = -1
-        for i, a in enumerate(A):
+        ___ i, a __ enumerate(A):
             __ L <= a <= R:
                 F = i - prev
                 ret += F
-            elif a > R:
+            ____ a > R:
                 F = 0
                 prev = i
-            else:
+            ____:
                 # F = F
                 ret += F
 
-        return ret
+        r.. ret
 
     ___ numSubarrayBoundedMax_error(self, A: List[int], L: int, R: int) -> int:
         """
@@ -60,14 +60,14 @@ class Solution:
         """
         F = 0
         ret = 0
-        for a in A:
+        ___ a __ A:
             __ L <= a <= R:
                 F += 1  # error
                 ret += F
-            elif a > R:
+            ____ a > R:
                 F = 0
-            else:
+            ____:
                 # F = F
                 ret += F
 
-        return ret
+        r.. ret

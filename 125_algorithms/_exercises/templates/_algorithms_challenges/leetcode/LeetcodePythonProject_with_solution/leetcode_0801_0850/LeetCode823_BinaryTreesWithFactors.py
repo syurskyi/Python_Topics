@@ -14,25 +14,25 @@ class Solution(object):
         res = 0
         arr.sort()
         hashmap = {}
-        for i in range(len(arr)):
+        ___ i __ r..(l..(arr)):
             hashmap[arr[i]] = 1
-            for j in range(i):
-                __ arr[j] in hashmap and arr[i]%arr[j]==0 and\
-                    arr[i]/arr[j] in hashmap:
+            ___ j __ r..(i):
+                __ arr[j] __ hashmap and arr[i]%arr[j]__0 and\
+                    arr[i]/arr[j] __ hashmap:
                     hashmap[arr[i]] += hashmap[arr[j]]*hashmap[(arr[i]/arr[j])]
             res = (res+hashmap[arr[i]])%MOD
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [2, 4],
             [2, 4, 5, 10],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             print('arr: %s' % arr)
             result = self.numFactoredBinaryTrees(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

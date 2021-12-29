@@ -5,39 +5,39 @@ class Solution(object):
     :type b: str
     :rtype: str
     """
-    diff = abs(len(a) - len(b))
-    __ len(a) > len(b):
+    diff = abs(l..(a) - l..(b))
+    __ l..(a) > l..(b):
       b = "0" * diff + b
-    else:
+    ____:
       a = "0" * diff + a
 
     ret = ""
     carry = 0
-    ai, bi = len(a) - 1, len(b) - 1
-    al, bl = len(a), len(b)
+    ai, bi = l..(a) - 1, l..(b) - 1
+    al, bl = l..(a), l..(b)
     while ai >= 0 and bi >= 0:
       ac, bc = a[ai], b[bi]
-      __ ac == "1" and bc == "1":
-        __ carry == 1:
+      __ ac __ "1" and bc __ "1":
+        __ carry __ 1:
           ret += "1"
-        else:
+        ____:
           ret += "0"
         carry = 1
-      elif ac == "0" and bc == "0":
-        __ carry == 1:
+      ____ ac __ "0" and bc __ "0":
+        __ carry __ 1:
           ret += "1"
-        else:
+        ____:
           ret += "0"
         carry = 0
-      else:
-        __ carry == 1:
+      ____:
+        __ carry __ 1:
           ret += "0"
-        else:
+        ____:
           ret += "1"
 
       ai -= 1
       bi -= 1
 
-    __ carry == 1:
+    __ carry __ 1:
       ret += "1"
-    return ret[::-1]
+    r.. ret[::-1]

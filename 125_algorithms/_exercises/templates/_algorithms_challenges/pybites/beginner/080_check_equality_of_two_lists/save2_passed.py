@@ -1,4 +1,4 @@
-from enum import Enum
+____ enum _______ Enum
 
 
 class Equality(Enum):
@@ -19,17 +19,17 @@ ___ check_equality(list1, list2):
          and reduced to unique items
        - return NO_EQUALITY if none of the previous cases match"""
     equality_number = 0
-    __ list1 is list2:
+    __ list1 __ list2:
         # SAME_REFERENCE
         equality_number += 4
-    else:
+    ____:
         # SAME_ORDERED
-        __ list1 == list2:
+        __ list1 __ list2:
             equality_number += 1
         # SAME_UNORDERED
-        __ sorted(list1) == sorted(list2):
+        __ s..(list1) __ s..(list2):
             equality_number += 1
         # SAME_UNORDERED_DEDUPED
-        __ set(list1) == set(list2):
+        __ set(list1) __ set(list2):
             equality_number += 1
-    return Equality(equality_number)
+    r.. Equality(equality_number)

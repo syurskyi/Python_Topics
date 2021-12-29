@@ -8,22 +8,22 @@ class Solution:
     @return: The maximum amount of money you can rob tonight
     """
     ___ houseRobber(self, A):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         prev = curr = 0
-        dp = [[0] * 2 for _ in range(2)]
+        dp = [[0] * 2 ___ _ __ r..(2)]
         dp[0][1] = A[0]
 
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             prev = curr # (i - 1) % 2
             curr = i % 2
 
             dp[curr][0] = max(dp[prev])
             dp[curr][1] = dp[prev][0] + A[i]
 
-        return max(dp[curr])
+        r.. max(dp[curr])
 
 
 class Solution:
@@ -32,12 +32,12 @@ class Solution:
     @return: The maximum amount of money you can rob tonight
     """
     ___ houseRobber(self, A):
-        __ not A:
-            return 0
-        __ len(A) == 1:
-            return A[0]
+        __ n.. A:
+            r.. 0
+        __ l..(A) __ 1:
+            r.. A[0]
 
-        n = len(A)
+        n = l..(A)
 
         # `dp[i]`: the maximum amount of money we can get until house `i`
         dp = [0] * 3
@@ -46,7 +46,7 @@ class Solution:
         dp[1] = max(A[0], A[1])
 
         prev2, prev1, curr = 0, 0, 1
-        for i in range(2, n):
+        ___ i __ r..(2, n):
             prev2, prev1 = prev1, curr
             curr = i % 3
 
@@ -59,7 +59,7 @@ class Solution:
             """
             dp[curr] = max(dp[prev1], dp[prev2] + A[i])
 
-        return dp[curr]
+        r.. dp[curr]
 
 
 class Solution:
@@ -68,17 +68,17 @@ class Solution:
         :type A: List[int]
         :rtype: int
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
+        n = l..(A)
         dp = [0] * (n + 1)
         dp[1] = A[0]
 
-        for i in range(2, n + 1):
+        ___ i __ r..(2, n + 1):
             dp[i] = max(
                 dp[i - 2] + A[i - 1],
                 dp[i - 1]
             )
 
-        return dp[n]
+        r.. dp[n]

@@ -1,15 +1,15 @@
-import pandas as pd
+_______ pandas as pd
 
 data = "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
 # load the data in once, functions will use this module object
 df = pd.read_csv(data)
 
-pd.options.mode.chained_assignment = None  # ignore warnings
+pd.options.mode.chained_assignment = N..  # ignore warnings
 
 
 ___ get_food_most_calories(df=df):
     """Return the food "Item" string with most calories"""
-    return df[df.Calories == df.Calories.max()].iloc[0].Item
+    r.. df[df.Calories __ df.Calories.max()].iloc[0].Item
 
 
 ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
@@ -23,13 +23,13 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
        right results.
 
        Return a list of the top 5 foot Item stings."""
-    df.drop(df[df.Calories == 0].index, inplace=True)
+    df.drop(df[df.Calories __ 0].index, inplace=True)
 
     df['PC_Ratio'] = df.Protein / df.Calories
 
     __ excl_drinks:
         df = df[(df.Category != 'Coffee & Tea') & (df.Category != 'Beverages')]
 
-    top_5 = list(df.sort_values(by=['PC_Ratio'], ascending=False).iloc[0:5].Item)
+    top_5 = l..(df.sort_values(by=['PC_Ratio'], ascending=False).iloc[0:5].Item)
 
-    return top_5
+    r.. top_5

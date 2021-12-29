@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from non_ascii import extract_non_ascii_words
+____ non_ascii _______ extract_non_ascii_words
 
 
 @pytest.mark.parametrize("phrase, expected", [
@@ -15,4 +15,4 @@ from non_ascii import extract_non_ascii_words
     ('This string only contains ascii words', []),
 ])
 ___ test_extract_non_ascii_words(phrase, expected):
-    assert extract_non_ascii_words(phrase) == expected
+    ... extract_non_ascii_words(phrase) __ expected

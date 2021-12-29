@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from convert_chars import convert_pybites_chars
+____ convert_chars _______ convert_pybites_chars
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -46,4 +46,4 @@ from convert_chars import convert_pybites_chars
      "elEmEnTum curaBITur vITaE nunc SEd vElIT dIgnISSIm SodalES uT."),
 ])
 ___ test_convert_pybites_chars(arg, expected):
-    assert convert_pybites_chars(arg) == expected
+    ... convert_pybites_chars(arg) __ expected

@@ -12,12 +12,12 @@ class Solution(object):
         :rtype: int
         """
         res = float('inf')
-        for i, word in enumerate(words):
-            __ word in [word1, word2]:
-                target = word2 __ word == word1 else word1
+        ___ i, word __ enumerate(words):
+            __ word __ [word1, word2]:
+                target = word2 __ word __ word1 ____ word1
                 j = i+1
-                while j < len(words):
-                    __ words[j] == target:
-                        res = min(res, j-i)
+                while j < l..(words):
+                    __ words[j] __ target:
+                        res = m..(res, j-i)
                     j += 1
-        return res
+        r.. res

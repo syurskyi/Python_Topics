@@ -19,24 +19,24 @@ class Solution:
         :param A: a list of integers
         :return: an integer
         """
-        __ not A:
-            return 1
+        __ n.. A:
+            r.. 1
 
         i = 0
-        length = len(A)
+        length = l..(A)
         while i<length:
             current = A[i]
-            __ current<=0 or current>length or A[current-1]==current:  # out-of-range or in-place
+            __ current<=0 o. current>length o. A[current-1]__current:  # out-of-range or in-place
                 i += 1
-            else:
+            ____:
                 A[current-1], A[i] = current, A[current-1]   # go to the next iteration
 
 
-        for i in xrange(length):
+        ___ i __ xrange(length):
             __ A[i]!=i+1:
-                return i+1
-        return A[-1]+1
+                r.. i+1
+        r.. A[-1]+1
 
 
-__ __name__=="__main__":
-    assert Solution().firstMissingPositive([3,4,-1,1])==2
+__ __name____"__main__":
+    ... Solution().firstMissingPositive([3,4,-1,1])__2

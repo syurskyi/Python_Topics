@@ -19,15 +19,15 @@ class Solution:
         :type b: TreeNode
         :rtype: TreeNode
         """
-        __ not root or root is a or root is b:
-            return root
+        __ n.. root o. root __ a o. root __ b:
+            r.. root
 
         left = self.lowestCommonAncestor(root.left, a, b)
         right = self.lowestCommonAncestor(root.right, a, b)
 
         __ left and right:
-            return root
+            r.. root
         __ left:
-            return left
+            r.. left
         __ right:
-            return right
+            r.. right

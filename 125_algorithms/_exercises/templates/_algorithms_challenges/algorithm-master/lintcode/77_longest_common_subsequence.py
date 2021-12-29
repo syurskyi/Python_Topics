@@ -8,10 +8,10 @@ class Solution:
         """
         remove the single line comment to print paths
         """
-        __ not A or not B:
-            return 0
+        __ n.. A o. n.. B:
+            r.. 0
 
-        m, n = len(A), len(B)
+        m, n = l..(A), l..(B)
 
         """
         `dp[i][j]` means the size of LCS, consisting of
@@ -20,14 +20,14 @@ class Solution:
         dp[0][j] = 0
         dp[i][0] = 0
         """
-        dp = [[0] * (n + 1) for _ in range(2)]
+        dp = [[0] * (n + 1) ___ _ __ r..(2)]
         # pi = [[0] * (n + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        for i in range(1, m + 1):
+        ___ i __ r..(1, m + 1):
             prev = curr
             curr = 1 - curr
-            for j in range(1, n + 1):
+            ___ j __ r..(1, n + 1):
                 """
                 case 1: `A[i]` is not one of pairs
                 case 2: `B[j]` is not one of pairs
@@ -40,7 +40,7 @@ class Solution:
                 # else:
                 #     pi[i][j] = 2
 
-                __ A[i - 1] == B[j - 1]:
+                __ A[i - 1] __ B[j - 1]:
                     dp[curr][j] = max(dp[curr][j], dp[prev][j - 1] + 1)
 
                     # if dp[curr][j] == dp[prev][j - 1] + 1:
@@ -62,4 +62,4 @@ class Solution:
 
         # print(path)
 
-        return dp[curr][n]
+        r.. dp[curr][n]

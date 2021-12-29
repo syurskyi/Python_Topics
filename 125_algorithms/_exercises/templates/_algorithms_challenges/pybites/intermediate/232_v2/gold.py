@@ -1,6 +1,6 @@
 # https://pkgstore.datahub.io/core/gold-prices/annual_csv/data/343f626dd4f7bae813cfaac23fccd1bc/annual_csv.csv
-from io import StringIO
-import pandas as pd
+____ io _______ StringIO
+_______ pandas as pd
 gold_prices = """
 1950-12,34.720 1951-12,34.660 1952-12,34.790 1953-12,34.850 1954-12,35.040
 1955-12,34.970 1956-12,34.900 1957-12,34.990 1958-12,35.090 1959-12,35.050
@@ -24,7 +24,7 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
        decreased the most and the year the gold price increased the most.
     """
         
-    prices = gold_prices.split()
+    prices = gold_prices.s..
     df = pd.Series(prices)
 
     df = df.str.extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
@@ -33,7 +33,7 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
     differences = df.diff()
 
 
-    return int(differences.idxmin()),int(differences.idxmax())
+    r.. int(differences.idxmin()),int(differences.idxmax())
 
 
 
@@ -44,6 +44,6 @@ ___ years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     years_gold_value_decreased()

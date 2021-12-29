@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+_______ xml.etree.ElementTree as ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -14,7 +14,7 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 ___ get_tree(myroot):
     """You probably want to use ET.fromstring"""
     myroot = ET.fromstring(xmlstring)
-    return myroot
+    r.. myroot
 
 
 ___ get_movies():

@@ -9,21 +9,21 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        intervals.sort(key=lambda x: (x[0], -x[1]))
-        stack = []
-        for interval in intervals:
+        intervals.sort(key=l.... x: (x[0], -x[1]))
+        stack    # list
+        ___ interval __ intervals:
             while stack and stack[-1][1] >= interval[1]:
                 stack.pop()
-            stack.append(interval)
-        n = len(stack)
-        a = [[0, 0] for _ in range(n)]
-        for i in range(n-1, -1, -1):
+            stack.a..(interval)
+        n = l..(stack)
+        a = [[0, 0] ___ _ __ r..(n)]
+        ___ i __ r..(n-1, -1, -1):
             a[i][0] = stack[-1][0]
             a[i][1] = stack.pop()[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             bo1 = p1 >= a[i][0] and p1 <= a[i][1]
             bo2 = p2 >= a[i][0] and p2 <= a[i][1]
             __ bo1 and bo2:
@@ -36,18 +36,18 @@ class Solution(object):
             p1 = a[i][1]-1
             p2 = a[i][1]
             res += 2
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             [[1, 3], [1, 4], [2, 5], [3, 5]],
             [[1, 2], [2, 3], [2, 4], [4, 5]],
         ]
-        for intervals in testCases:
+        ___ intervals __ testCases:
             print('intervals: %s' % intervals)
             result = self.intersectionSizeTwo(intervals)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

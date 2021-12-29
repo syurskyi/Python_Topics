@@ -24,8 +24,8 @@ class MinStack:
         stack
         :return:
         """
-        self.stk = []
-        self.non_asc = []
+        self.stk    # list
+        self.non_asc    # list
 
     ___ push(self, x):
         """
@@ -33,9 +33,9 @@ class MinStack:
         :param x: int
         :return: int
         """
-        self.stk.append(x)
-        __ len(self.non_asc) == 0 or x <= self.non_asc[-1]:  # rather than <
-            self.non_asc.append(x)
+        self.stk.a..(x)
+        __ l..(self.non_asc) __ 0 o. x <= self.non_asc[-1]:  # rather than <
+            self.non_asc.a..(x)
 
     ___ pop(self):
         """
@@ -43,7 +43,7 @@ class MinStack:
         :return: nothing
         """
         x = self.stk.pop()
-        __ x == self.non_asc[-1]:
+        __ x __ self.non_asc[-1]:
             self.non_asc.pop()
 
     ___ top(self):
@@ -51,12 +51,12 @@ class MinStack:
 
         :return: int
         """
-        return self.stk[-1]
+        r.. self.stk[-1]
 
     ___ getMin(self):
         """
 
         :return: int
         """
-        return self.non_asc[-1]
+        r.. self.non_asc[-1]
 

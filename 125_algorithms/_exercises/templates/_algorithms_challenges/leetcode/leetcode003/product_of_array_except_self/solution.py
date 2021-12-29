@@ -20,21 +20,21 @@ class Solution(object):
 
         Memory Limit Exceeded
         """
-        __ not nums:
-            return []
-        elif len(nums) == 1:
-            return [1]
-        elif len(nums) == 2:
-            return nums[::-1]
-        else:
+        __ n.. nums:
+            r.. []
+        ____ l..(nums) __ 1:
+            r.. [1]
+        ____ l..(nums) __ 2:
+            r.. nums[::-1]
+        ____:
             m = 1
             rest = nums[1:]
-            for c in rest:
+            ___ c __ rest:
                 m *= c
             res = [m]
-            for r in self.productExceptSelf(rest):
-                res.append(r * nums[0])
-            return res
+            ___ r __ self.productExceptSelf(rest):
+                res.a..(r * nums[0])
+            r.. res
 
 
 a1 = [1, 2, 3]

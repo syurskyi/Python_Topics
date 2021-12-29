@@ -8,22 +8,22 @@ class Solution:
         :type words: List[str]
         :rtype: bool
         """
-        __ not s and not words:
-            return True
-        __ not s or not words:
-            return False
+        __ n.. s and n.. words:
+            r.. True
+        __ n.. s o. n.. words:
+            r.. False
 
-        max_size = max(len(w) for w in words)
+        max_size = max(l..(w) ___ w __ words)
         word_set = set(words)
 
-        n = len(s)
+        n = l..(s)
         dp = [False] * (n + 1)
         dp[0] = True
 
-        for i in range(1, n + 1):
-            for j in range(1, min(i, max_size) + 1):
-                __ dp[i - j] and s[i - j:i] in word_set:
+        ___ i __ r..(1, n + 1):
+            ___ j __ r..(1, m..(i, max_size) + 1):
+                __ dp[i - j] and s[i - j:i] __ word_set:
                     dp[i] = True
                     break
 
-        return dp[n]
+        r.. dp[n]

@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort, request
+____ flask _______ Flask, jsonify, abort, request
 
 app = Flask(__name__)
 
@@ -24,20 +24,20 @@ quotes = [
 ___ _get_quote(qid):
     """Recommended helper"""
 
-    for quote in quotes:
-        __ quote["id"] == qid:
-            return quote
+    ___ quote __ quotes:
+        __ quote["id"] __ qid:
+            r.. quote
 
 
 ___ _quote_exists(existing_quote):
     """Recommended helper"""
 
 
-    for quote in quotes:
-        __ quote['quote'] == existing_quote['quote'] and quote['movie'] == existing_quote['movie']:
-            return True
+    ___ quote __ quotes:
+        __ quote['quote'] __ existing_quote['quote'] and quote['movie'] __ existing_quote['movie']:
+            r.. True
 
-    return False
+    r.. False
 
     
 
@@ -45,12 +45,12 @@ ___ _quote_exists(existing_quote):
 ___ _get_max_id():
     
 
-    return max(quote['id'] for quote in quotes)
+    r.. max(quote['id'] ___ quote __ quotes)
 
 @app.route('/api/quotes', methods=['GET'])
 ___ get_quotes():
 
-    return jsonify({'quotes': quotes})
+    r.. jsonify({'quotes': quotes})
 
 
 @app.route('/api/quotes/<int:qid>', methods=['GET'])
@@ -58,10 +58,10 @@ ___ get_quote(qid):
 
         
     quote = _get_quote(qid)
-    __ not quote:
-        return "Quote not found",404
+    __ n.. quote:
+        r.. "Quote not found",404
 
-    return jsonify({'quotes': [quote]})
+    r.. jsonify({'quotes': [quote]})
 
 
 @app.route('/api/quotes', methods=['POST'])
@@ -69,14 +69,14 @@ ___ create_quote():
 
     data = request.json
 
-    __ not (('quote' in data) and  ('movie' in data)):
-        return "Incomplete data",400
+    __ n.. (('quote' __ data) and  ('movie' __ data)):
+        r.. "Incomplete data",400
     
 
     exists = _quote_exists(data)
 
     __ exists:
-        return "Already exists",400
+        r.. "Already exists",400
     
     _id = _get_max_id() + 1
 
@@ -84,10 +84,10 @@ ___ create_quote():
 
     quote = {'id': _id,'quote': data['quote'],'movie': data['movie']}
 
-    quotes.append(quote)
+    quotes.a..(quote)
 
 
-    return jsonify({'quote': quote}),201
+    r.. jsonify({'quote': quote}),201
 
 
 
@@ -102,12 +102,12 @@ ___ update_quote(qid):
 
     data = request.json
     print(data)
-    __ not (('quote' in data) or  ('movie' in data)):
-        return "Incomplete data",400
+    __ n.. (('quote' __ data) o.  ('movie' __ data)):
+        r.. "Incomplete data",400
     quote = _get_quote(qid)
 
-    __ not quote:
-        return "Quote not found",404
+    __ n.. quote:
+        r.. "Quote not found",404
     
 
     
@@ -115,22 +115,22 @@ ___ update_quote(qid):
     quote['movie'] = data['movie']
 
 
-    return jsonify({'quote': quote})
+    r.. jsonify({'quote': quote})
 
 @app.route('/api/quotes/<int:qid>', methods=['DELETE'])
 ___ delete_quote(qid):
 
     quote = _get_quote(qid)
 
-    __ not quote:
-        return "Quote not found",404
+    __ n.. quote:
+        r.. "Quote not found",404
 
 
-    for i,quote in enumerate(quotes):
-        __ quote['id'] == qid:
+    ___ i,quote __ enumerate(quotes):
+        __ quote['id'] __ qid:
             quotes.pop(i)
             break
 
 
     
-    return "Deleted successfully",204
+    r.. "Deleted successfully",204

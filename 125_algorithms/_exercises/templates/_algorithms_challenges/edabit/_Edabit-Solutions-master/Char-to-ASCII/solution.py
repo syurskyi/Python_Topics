@@ -1,5 +1,5 @@
 ___ ctoa(char):
-    return ord(char)
+    r.. ord(char)
 
 
 

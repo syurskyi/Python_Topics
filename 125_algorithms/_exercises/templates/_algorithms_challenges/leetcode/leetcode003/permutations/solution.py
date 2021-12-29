@@ -14,14 +14,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        __ not nums:
-            return [[]]
-        else:
-            res = []
-            for i, e in enumerate(nums):
+        __ n.. nums:
+            r.. [[]]
+        ____:
+            res    # list
+            ___ i, e __ enumerate(nums):
                 rest = nums[:i] + nums[i + 1:]
                 rest_perms = self.permute(rest)
-                for perm in rest_perms:
-                    perm.append(e)
+                ___ perm __ rest_perms:
+                    perm.a..(e)
                 res += rest_perms
-            return res
+            r.. res

@@ -2,12 +2,12 @@
 # Score: 20
 
 
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 n, m = map(int, input().split())
-d = defaultdict(list)
-for i in range(1, n + 1):
-    d[input()].append(str(i))
-for i in range(m):
-    print(' '.join(d[input()]) or -1)
+d = defaultdict(l..)
+___ i __ r..(1, n + 1):
+    d[input()].a..(s..(i))
+___ i __ r..(m):
+    print(' '.join(d[input()]) o. -1)

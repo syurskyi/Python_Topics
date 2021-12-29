@@ -6,50 +6,50 @@ Created on Mar 16, 2017
 
 class Solution(object):
     ___ removeDuplicateLetters(self, s):
-        __ not s: return ''
+        __ n.. s: r.. ''
         cnt = [0]*26
         pos = 0
-        for c in s:
+        ___ c __ s:
             cnt[ord(c)-ord('a')] += 1
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             __ s[i] < s[pos]:
                 pos = i
             cnt[ord(c)-ord('a')] -= 1
-            __ cnt[ord(c)-ord('a')] == 0:
+            __ cnt[ord(c)-ord('a')] __ 0:
                 break
-        return s[pos]+self.removeDuplicateLetters(s[pos+1:].replace(s[pos], ''))
+        r.. s[pos]+self.removeDuplicateLetters(s[pos+1:].replace(s[pos], ''))
     
     ___ removeDuplicateLetters_another(self, s):
-        __ not s: return ''
+        __ n.. s: r.. ''
         lastPosMap = {}
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             lastPosMap[c] = i
-        length = len(lastPosMap)
+        length = l..(lastPosMap)
         res = ['a']*length
-        begin, end = 0, min(lastPosMap.values())
-        for i in range(length):
+        begin, end = 0, m..(lastPosMap.values())
+        ___ i __ r..(length):
             minChar = chr(ord('z')+1)
-            for j in range(begin, end+1):
-                __ s[j] in lastPosMap and s[j] < minChar:
+            ___ j __ r..(begin, end+1):
+                __ s[j] __ lastPosMap and s[j] < minChar:
                     minChar = s[j]
                     begin = j+1
             res[i] = minChar
-            __ i == length-1:
+            __ i __ length-1:
                 break
             del lastPosMap[minChar]
-            end = min(lastPosMap.values())
-        return ''.join(res)
+            end = m..(lastPosMap.values())
+        r.. ''.join(res)
     
     ___ test(self):
         testCases = [
             'bcabc',
             'cbacbcbc',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.removeDuplicateLetters(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

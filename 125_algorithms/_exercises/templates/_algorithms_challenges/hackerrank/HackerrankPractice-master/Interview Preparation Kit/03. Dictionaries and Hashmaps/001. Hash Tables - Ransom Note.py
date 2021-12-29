@@ -2,17 +2,17 @@
 #  Score: 25
 
 
-from collections import Counter
+____ collections _______ Counter
 
 
 ___ checkMagazine(magazine, note):
-    __ Counter(note) - Counter(magazine) == {}:
-        return 'Yes'
-    else:
-        return 'No'
+    __ Counter(note) - Counter(magazine) __ {}:
+        r.. 'Yes'
+    ____:
+        r.. 'No'
 
 
 m, n = map(int, input().split())
-magazine = list(input().split())
-note = list(input().split())
+magazine = l..(input().split())
+note = l..(input().split())
 print(checkMagazine(magazine, note))

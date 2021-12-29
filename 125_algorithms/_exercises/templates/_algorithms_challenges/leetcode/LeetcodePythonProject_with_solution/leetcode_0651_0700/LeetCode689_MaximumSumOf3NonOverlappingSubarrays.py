@@ -10,17 +10,17 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        n = len(nums)
-        dp = [[0]*(n+1) for _ in range(4)]
+        n = l..(nums)
+        dp = [[0]*(n+1) ___ _ __ r..(4)]
         sumVal = 0
         accu = [0]*(n+1)
-        for i in range(n):
+        ___ i __ r..(n):
             sumVal += nums[i]
             accu[i] = sumVal
-        ids = [[0]*(n+1) for _ in range(4)]
-        for i in range(1, 4):
-            for j in range(k-1, n):
-                tmpMax = accu[j] __ j-k<0 else accu[j]-accu[j-k]+dp[i-1][j-k]
+        ids = [[0]*(n+1) ___ _ __ r..(4)]
+        ___ i __ r..(1, 4):
+            ___ j __ r..(k-1, n):
+                tmpMax = accu[j] __ j-k<0 ____ accu[j]-accu[j-k]+dp[i-1][j-k]
                 __ j >= k:
                     dp[i][j] = dp[i][j-1]
                     ids[i][j] = ids[i][j-1]
@@ -31,7 +31,7 @@ class Solution(object):
         res[2] = ids[3][n-1]
         res[1] = ids[2][res[2]-1]
         res[0] = ids[1][res[1]-1]
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -44,12 +44,12 @@ class Solution(object):
                 3,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.maxSumOfThreeSubarrays(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

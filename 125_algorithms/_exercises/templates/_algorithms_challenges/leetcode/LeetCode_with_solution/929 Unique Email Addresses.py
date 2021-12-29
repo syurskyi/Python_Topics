@@ -39,7 +39,7 @@ Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
 Local names do not start with a '+' character.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -48,12 +48,12 @@ class Solution:
         stemming
         """
         s = set()
-        for e in emails:
+        ___ e __ emails:
             local, domain = e.split("@")
             local = self.stem(local)
             s.add((local, domain))
 
-        return len(s)
+        r.. l..(s)
 
     ___ stem(self, local):
-        return local.split("+")[0].replace(".", "")
+        r.. local.split("+")[0].replace(".", "")

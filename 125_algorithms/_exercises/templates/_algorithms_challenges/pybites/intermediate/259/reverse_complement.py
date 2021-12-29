@@ -37,19 +37,19 @@ ___ _clean_sequence(sequence, str_table):
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    sequence_clean = [char.upper() for char in list(sequence) __ char.isalpha() and char.upper() in str_table]
-    return "".join(sequence_clean)
+    sequence_clean = [char.upper() ___ char __ l..(sequence) __ char.isalpha() and char.upper() __ str_table]
+    r.. "".join(sequence_clean)
 
 
 ___ _str_table_lookup(str_table):
     str_table_split = str_table.splitlines()
     lookup = {}
-    for i in range(len(str_table_split)):
-        __ i in [0, 1]:
+    ___ i __ r..(l..(str_table_split)):
+        __ i __ [0, 1]:
             continue
         row = str_table_split[i].split("\t")
         lookup[row[0].strip()] = row[-1]
-    return lookup
+    r.. lookup
 
 
 ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -61,7 +61,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     e.g. t!t%ttttAACCG --> GCCAATTTTTT
     """
     sequence_clean = _clean_sequence(sequence, str_table)
-    return sequence_clean[::-1]
+    r.. sequence_clean[::-1]
 
 
 ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -72,13 +72,13 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     str_table while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> AAAAAATTGGC
     """
-    sequence_clean = list(_clean_sequence(sequence, str_table))
+    sequence_clean = l..(_clean_sequence(sequence, str_table))
     str_table_lookup = _str_table_lookup(str_table)
 
-    for i in range(len(sequence_clean)):
+    ___ i __ r..(l..(sequence_clean)):
         sequence_clean[i] = str_table_lookup[sequence_clean[i]]
 
-    return "".join(sequence_clean)
+    r.. "".join(sequence_clean)
 
 
 ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
@@ -90,7 +90,7 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     e.g. t!t%ttttAACCG --> CGGTTAAAAAA
     """
     sequence_complement = complement(sequence, str_table)
-    return sequence_complement[::-1]
+    r.. sequence_complement[::-1]
 
 
 #if __name__ == "__main__":

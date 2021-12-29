@@ -1,8 +1,8 @@
-import pytest
+_______ pytest
 
-from Previous.friends import friends_teams
+____ Previous.friends _______ friends_teams
 
-friends = 'Bob Dante Julian Martin'.split()
+friends = 'Bob Dante Julian Martin'.s..
 
 
 @pytest.mark.parametrize('test_input,expected', [
@@ -24,12 +24,12 @@ friends = 'Bob Dante Julian Martin'.split()
 ])
 ___ test_team_of_two_order_does_not_matter(test_input, expected):
     """First test lists all combos"""
-    combos = list(friends_teams(friends, team_size=2, order_does_matter=False))
-    assert len(combos) == 6
+    combos = l..(friends_teams(friends, team_size=2, order_does_matter=False))
+    ... l..(combos) __ 6
     __ expected:
-        assert test_input in combos
-    else:
-        assert test_input not in combos
+        ... test_input __ combos
+    ____:
+        ... test_input n.. __ combos
 
 
 @pytest.mark.parametrize('test_input,expected', [
@@ -43,9 +43,9 @@ ___ test_team_of_two_order_does_not_matter(test_input, expected):
 ])
 ___ test_team_of_two_order_does_matter(test_input, expected):
     """From here on just test a subset of combos"""
-    combos = list(friends_teams(friends, team_size=2, order_does_matter=True))
-    assert len(combos) == 12
-    assert test_input in combos
+    combos = l..(friends_teams(friends, team_size=2, order_does_matter=True))
+    ... l..(combos) __ 12
+    ... test_input __ combos
 
 
 @pytest.mark.parametrize('test_input,expected', [
@@ -60,12 +60,12 @@ ___ test_team_of_two_order_does_matter(test_input, expected):
     (('Dante', 'Dante', 'Martin'), False),
 ])
 ___ test_team_of_three_order_does_not_matter(test_input, expected):
-    combos = list(friends_teams(friends, team_size=3, order_does_matter=False))
-    assert len(combos) == 4
+    combos = l..(friends_teams(friends, team_size=3, order_does_matter=False))
+    ... l..(combos) __ 4
     __ expected:
-        assert test_input in combos
-    else:
-        assert test_input not in combos
+        ... test_input __ combos
+    ____:
+        ... test_input n.. __ combos
 
 
 @pytest.mark.parametrize('test_input,expected', [
@@ -78,6 +78,6 @@ ___ test_team_of_three_order_does_not_matter(test_input, expected):
     (('Julian', 'Martin', 'Dante'), True),
 ])
 ___ test_team_of_three_order_does_matter(test_input, expected):
-    combos = list(friends_teams(friends, team_size=3, order_does_matter=True))
-    assert len(combos) == 24
-    assert test_input in combos
+    combos = l..(friends_teams(friends, team_size=3, order_does_matter=True))
+    ... l..(combos) __ 24
+    ... test_input __ combos

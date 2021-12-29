@@ -26,7 +26,7 @@ Note:
 1 <= A.length = A[0].length <= 100
 A[i][j] == 0 or A[i][j] == 1
 """
-from typing import List
+____ typing _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
@@ -41,45 +41,45 @@ class Solution:
 
         BFS grow from 1 component
         """
-        m, n = len(A), len(A[0])
+        m, n = l..(A), l..(A[0])
         # coloring
-        colors = [[None for _ in range(n)] for _ in range(m)]
+        colors = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         color = 0
-        for i in range(m):
-            for j in range(n):
-                __ A[i][j] == 1 and colors[i][j] is None:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ A[i][j] __ 1 and colors[i][j] __ N..
                     self.dfs(A, i, j, colors, color)
                     color += 1
-        assert color == 2
+        ... color __ 2
 
         # BFS
         step = 0
-        q = []
-        visited = [[False for _ in range(n)] for _ in range(m)]
-        for i in range(m):
-            for j in range(n):
-                __ colors[i][j] == 0:
+        q    # list
+        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ colors[i][j] __ 0:
                     visited[i][j] = True
-                    q.append((i, j))
+                    q.a..((i, j))
 
         while q:
-            cur_q = []
-            for i, j in q:
-                for I, J in self.nbr(A, i, j):
-                    __ not visited[I][J]:
-                        __ colors[I][J] == None:
+            cur_q    # list
+            ___ i, j __ q:
+                ___ I, J __ self.nbr(A, i, j):
+                    __ n.. visited[I][J]:
+                        __ colors[I][J] __ N..
                             visited[I][J] = True   # pre-check, dedup
-                            cur_q.append((I, J))
-                        elif colors[I][J] == 1:
-                            return step
+                            cur_q.a..((I, J))
+                        ____ colors[I][J] __ 1:
+                            r.. step
             step += 1
             q = cur_q
 
         raise
 
     ___ nbr(self, A, i, j):
-        m, n = len(A), len(A[0])
-        for di, dj in dirs:
+        m, n = l..(A), l..(A[0])
+        ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n:
@@ -87,10 +87,10 @@ class Solution:
 
     ___ dfs(self, A, i, j, colors, color):
         colors[i][j] = color
-        for I, J in self.nbr(A, i, j):
-            __ colors[I][J] is None and A[I][J] == 1:
+        ___ I, J __ self.nbr(A, i, j):
+            __ colors[I][J] __ N.. and A[I][J] __ 1:
                 self.dfs(A, I, J, colors, color)
 
 
-__ __name__ == "__main__":
-    assert Solution().shortestBridge([[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]) == 1
+__ __name__ __ "__main__":
+    ... Solution().shortestBridge([[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]) __ 1

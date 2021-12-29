@@ -27,14 +27,14 @@ class Solution:
         :return: a list of lists of integer
         """
         S.sort()
-        result = []
+        result    # list
         self.generate_subsets(S, [], result)
-        return result
+        r.. result
 
     ___ generate_subsets(self, S, current, result):
-        result.append(current)
-        for ind, val in enumerate(S):
+        result.a..(current)
+        ___ ind, val __ enumerate(S):
             self.generate_subsets(S[ind+1:], current+[val], result)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().subsets([1, 2, 3])

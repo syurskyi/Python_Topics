@@ -6,14 +6,14 @@ Created on Mar 15, 2017
 
 class Solution(object):
     ___ nthSuperUglyNumber(self, n, primes):
-        times = [0]*len(primes)
+        times = [0]*l..(primes)
         res = [1]
-        for _ in range(n-1):
+        ___ _ __ r..(n-1):
             minVal = float('inf')
-            for i, p in zip(times, primes):
-                minVal = min(minVal, res[i]*p)
-            res.append(minVal)
-            for i in range(len(times)):
-                __ minVal == res[times[i]]*primes[i]:
+            ___ i, p __ zip(times, primes):
+                minVal = m..(minVal, res[i]*p)
+            res.a..(minVal)
+            ___ i __ r..(l..(times)):
+                __ minVal __ res[times[i]]*primes[i]:
                     times[i] += 1
-        return res[-1]
+        r.. res[-1]

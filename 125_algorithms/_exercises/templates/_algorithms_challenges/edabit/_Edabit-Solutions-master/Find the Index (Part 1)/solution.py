@@ -1,5 +1,5 @@
 ___ search(lst, item):
-    __ lst.count(item) == 0:
-        return -1
-    else:
-        return lst.index(item)
+    __ lst.c.. item) __ 0:
+        r.. -1
+    ____:
+        r.. lst.index(item)

@@ -1,6 +1,6 @@
-import sqlite3
-from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple, Union
+_______ sqlite3
+____ enum _______ Enum
+____ typing _______ Any, Dict, List, Optional, Tuple, Union
 
 
 class SQLiteType(Enum):
@@ -17,7 +17,7 @@ class SQLiteType(Enum):
         SQLiteType.INTEGER.value is int.
     """
 
-    NULL = None
+    NULL = N..
     INTEGER = int
     REAL = float
     TEXT = str
@@ -51,15 +51,15 @@ class DB:
 
     ___ __init__(self, location: Optional[str] = ":memory:"):
         self.location = location
-        self.cursor = None
-        self.connection = None
+        self.cursor = N..
+        self.connection = N..
         self.table_schemas = {}
 
     ___ __enter__(self):
         self.connection = sqlite3.connect(self.location)
         self.cursor = self.connection.cursor()
 
-        return self
+        r.. self
 
     ___ __exit__(self, exc_type, exc_value, traceback):
         self.connection.close()
@@ -88,14 +88,14 @@ class DB:
         Raises:
             SchemaError: If the given primary key is not part of the schema.
         """
-        schema_new = []
-        for item in schema:
+        schema_new    # list
+        ___ item __ schema:
             item_type = item[1].name
             x = f"{item[0]} {item_type}"
-            schema_new.append(x)
+            schema_new.a..(x)
         schema_new = ', '.join(schema_new)
         cur = self.connection.cursor()
-        return cur.execute(f"CREATE TABLE {table} ({schema_new})")
+        r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
     ___ delete(self, table: str, target: Tuple[str, Any]):
         """Deletes rows from the table.
@@ -109,11 +109,11 @@ class DB:
         """
         column = ""
         element = ""
-        for item in target:
+        ___ item __ target:
             column = item[0]
             element = item[1]
         cur = self.connection.cursor()
-        return cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
+        r.. cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
 
     ___ insert(self, table: str, values: List[Tuple]):
         """Inserts one or multiple new records into the database.
@@ -144,15 +144,15 @@ class DB:
                 if there are more values than columns for the given table.
         """
         cur = self.connection.cursor()
-        __ type(values) == list:
+        __ type(values) __ l..:
             values = values[0]
-        return cur.execute(f"INSERT INTO {table} VALUES{values}")
+        r.. cur.execute(f"INSERT INTO {table} VALUES{values}")
 
     ___ select(
             self,
             table: str,
-            columns: Optional[List[str]] = None,
-            target: Optional[Tuple[str, Optional[str], Any]] = None,
+            columns: Optional[List[str]] = N..,
+            target: Optional[Tuple[str, Optional[str], Any]] = N..,
     ) -> List[Tuple]:
         """Selects records from the database.
 
@@ -172,17 +172,17 @@ class DB:
             list: The output returned from the sql command
         """
         cur = self.connection.cursor()
-        __ columns is None and target is None:
-            return cur.execute(f"SELECT * FROM {table}")
-        elif target is None and columns:
-            return cur.execute(f"SELECT {columns} FROM {table}")
-        else:
-            __ len(target) == 2:  # no operator specified
+        __ columns __ N.. and target __ N..
+            r.. cur.execute(f"SELECT * FROM {table}")
+        ____ target __ N.. and columns:
+            r.. cur.execute(f"SELECT {columns} FROM {table}")
+        ____:
+            __ l..(target) __ 2:  # no operator specified
                 (column_name, value) = target
-                return cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} = {value}")
-            elif len(target) == 3:  # operator specified
+                r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} = {value}")
+            ____ l..(target) __ 3:  # operator specified
                 (column_name, operator, value) = target
-                return cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} {operator} {value}")
+                r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} {operator} {value}")
 
     ___ update(self, table: str, new_value: Tuple[str, Any], target: Tuple[str, Any]):
         """Update a record in the database.
@@ -194,7 +194,7 @@ class DB:
             target (tuple): The row/record to modify. Example ("year", 1991)
         """
         cur = self.connection.cursor()
-        return cur.execute(f"UPDATE {table} SET {target}={new_value}")
+        r.. cur.execute(f"UPDATE {table} SET {target}={new_value}")
 
     @property
     ___ num_transactions(self) -> int:

@@ -10,27 +10,27 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        __ n <= 0: return []
-        res = []
+        __ n <= 0: r.. []
+        res    # list
         self.dfs(n, n, '', res)
-        return res
+        r.. res
     
     ___ dfs(self, left, right, curr, res):
-        __ left == 0 and right == 0:
-            res.append(curr)
+        __ left __ 0 and right __ 0:
+            res.a..(curr)
         __ left > right:
-            return
+            r..
         __ left > 0:
             self.dfs(left-1, right, curr+'(', res)
         __ right > 0:
             self.dfs(left, right-1, curr+')', res)
     
     ___ test(self):
-        for n in range(4):
+        ___ n __ r..(4):
             print('n: %s' % n)
             result = self.generateParenthesis(n)
             print('result: %s' % result)
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

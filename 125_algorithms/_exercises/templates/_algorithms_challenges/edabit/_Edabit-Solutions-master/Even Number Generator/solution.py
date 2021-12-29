@@ -1,11 +1,11 @@
 ___ find_even_nums(num):
     __ num < 2:
-        return []
+        r.. []
     index = 2
-    output = []
+    output    # list
     while index <= num:
-        __ index % 2 == 0:
-            output.append(index)
+        __ index % 2 __ 0:
+            output.a..(index)
         index = index + 1
 
-    return output
+    r.. output

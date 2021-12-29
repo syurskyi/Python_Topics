@@ -44,7 +44,7 @@ Note:
 1 <= S.length <= 200
 S contains only digits.
 """
-from typing import List
+____ typing _______ List
 
 
 MAX = 2 ** 31 - 1
@@ -59,19 +59,19 @@ class Solution:
         2^31 - 1 is length 10
         brute force
         """
-        l = len(S)
-        for i in range(1, l + 1):
+        l = l..(S)
+        ___ i __ r..(1, l + 1):
             num_str = S[:i]
-            __ len(num_str) > 1 and num_str.startswith("0"):
+            __ l..(num_str) > 1 and num_str.startswith("0"):
                 continue
 
             num = int(num_str)
             __ num > MAX:
                 break
 
-            for j in range(i + 1, l + 1):
+            ___ j __ r..(i + 1, l + 1):
                 num2_str = S[i:j]
-                __ len(num2_str) > 1 and num2_str.startswith("0"):
+                __ l..(num2_str) > 1 and num2_str.startswith("0"):
                     continue
 
                 num2 = int(num2_str)
@@ -86,18 +86,18 @@ class Solution:
                         break
 
                     nxt_str = str(nxt)
-                    __ S[k:k+len(nxt_str)] == nxt_str:
-                        k = k + len(nxt_str)
-                        ret.append(nxt)
-                    else:
+                    __ S[k:k+l..(nxt_str)] __ nxt_str:
+                        k = k + l..(nxt_str)
+                        ret.a..(nxt)
+                    ____:
                         break
-                else:
-                    __ k == l and len(ret) >= 3:
-                        return ret
+                ____:
+                    __ k __ l and l..(ret) >= 3:
+                        r.. ret
 
-        return []
+        r.. []
 
 
-__ __name__ == "__main__":
-    assert Solution().splitIntoFibonacci("123456579") == [123,456,579]
-    assert Solution().splitIntoFibonacci("01123581321345589") == [0,1,1,2,3,5,8,13,21,34,55,89]
+__ __name__ __ "__main__":
+    ... Solution().splitIntoFibonacci("123456579") __ [123,456,579]
+    ... Solution().splitIntoFibonacci("01123581321345589") __ [0,1,1,2,3,5,8,13,21,34,55,89]

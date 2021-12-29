@@ -1,7 +1,7 @@
-answers = []
-for i in input().split():
+answers    # list
+___ i __ input().s.. :
     c = bin(int(i))
-    __ not c.count("1") % 2:
-        answers.append(chr(int(i) % 128))
+    __ n.. c.c.. "1") % 2:
+        answers.a..(chr(int(i) % 128))
 
 print(''.join(answers))

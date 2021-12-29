@@ -15,8 +15,8 @@ class Solution:
     @return: A ListNode
     """
     ___ partition(self, head, x):
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         left_dummy = left_tail = ListNode(-1)
         right_dummy = right_tail = ListNode(-1)
@@ -26,10 +26,10 @@ class Solution:
             __ head.val < x:
                 left_tail.next = node
                 left_tail = node
-            else:
+            ____:
                 right_tail.next = node
                 right_tail = node
             head = head.next
 
         left_tail.next = right_dummy.next
-        return left_dummy.next
+        r.. left_dummy.next

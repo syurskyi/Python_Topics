@@ -12,21 +12,21 @@ class Solution(object):
         """
         nums.sort()
         res = float('inf')
-        n = len(nums)
-        for i in range(n-2):
+        n = l..(nums)
+        ___ i __ r..(n-2):
             j, k = i+1, n-1
             while j < k:
                 tmp = nums[i]+nums[j]+nums[k]
                 diff = abs(tmp-target)
                 __ diff < abs(res-target):
                     res = tmp
-                __ tmp == target:
-                    return target
-                elif tmp > target:
+                __ tmp __ target:
+                    r.. target
+                ____ tmp > target:
                     k -= 1
-                else:
+                ____:
                     j += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -35,12 +35,12 @@ class Solution(object):
                 1,
             ],
         ]
-        for nums, target in testCases:
+        ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
             result = self.threeSumClosest(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -13,8 +13,8 @@ The os module is your friend here, but you also might want to check out glob. Ha
 # https://stackoverflow.com/questions/6591931/getting-file-size-in-python
 # https://www.programiz.com/python-programming/methods/built-in/filter
 # https://realpython.com/python-filter-function/
-import os
-import glob
+_______ os
+_______ glob
 
 ONE_KB = 1024
 
@@ -23,17 +23,17 @@ ___ get_files_implementation_1(dirname, size_in_kb):
 
     # os.listdir return both directories and files, so it has to be filtered
     # list comprehension
-    files = [f for f in os.listdir(dirname) __ os.path.isfile(os.path.join(dirname, f))]
+    files = [f ___ f __ os.listdir(dirname) __ os.path.isfile(os.path.join(dirname, f))]
     # list comprehension
-    files_over_limit = [f for f in files __ (os.path.getsize(os.path.join(dirname,f))) / ONE_KB >= size_in_kb]
+    files_over_limit = [f ___ f __ files __ (os.path.getsize(os.path.join(dirname,f))) / ONE_KB >= size_in_kb]
 
-    return files_over_limit
+    r.. files_over_limit
 
 ___ get_files_implementation_2(dirname, size_in_kb):
 
     files_and_dirs = glob.glob("{dirname}/*".format(dirname=dirname))
-    files = [f for f in files_and_dirs __ os.path.isfile(f)]
-    files_over_limit = [f for f in files __ (os.path.getsize(f) / ONE_KB) >= size_in_kb]
-    return files_over_limit
+    files = [f ___ f __ files_and_dirs __ os.path.isfile(f)]
+    files_over_limit = [f ___ f __ files __ (os.path.getsize(f) / ONE_KB) >= size_in_kb]
+    r.. files_over_limit
 
 print(get_files_implementation_2("C:\\totalcmd", 5))

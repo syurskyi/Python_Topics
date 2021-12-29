@@ -24,8 +24,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -34,13 +34,13 @@ class Solution:
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
 
         self.invertTree_recur(root.left)
         self.invertTree_recur(root.right)
         root.left, root.right = root.right, root.left
-        return root
+        r.. root
 
     ___ invertTree(self, root):
         """
@@ -49,24 +49,24 @@ class Solution:
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
 
-        stk = []  # [L, R]
-        post = []  # [cur, R, L]
+        stk    # list  # [L, R]
+        post    # list  # [cur, R, L]
 
-        stk.append(root)
-        cur = None
+        stk.a..(root)
+        cur = N..
         while stk:
             cur = stk.pop()
-            post.append(cur)
+            post.a..(cur)
             __ cur.left:
-                stk.append(cur.left)
+                stk.a..(cur.left)
             __ cur.right:
-                stk.append(cur.right)
+                stk.a..(cur.right)
 
         while post:
             cur = post.pop()
             cur.left, cur.right = cur.right, cur.left
 
-        return cur
+        r.. cur

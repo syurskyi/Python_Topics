@@ -4,12 +4,12 @@ class Solution:
         :type s: str
         :rtype: str
         """
-        __ not s:
-            return ''
+        __ n.. s:
+            r.. ''
 
         start = size = 0
 
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             _start, _size = self.check_palindrome(s, i, i)
 
             __ _size > size:
@@ -22,13 +22,13 @@ class Solution:
                 size = _size
                 start = _start
 
-        return s[start:start + size]
+        r.. s[start:start + size]
 
     ___ check_palindrome(self, s, left, right):
-        n = len(s)
+        n = l..(s)
 
-        while left >= 0 and right < n and s[left] == s[right]:
+        while left >= 0 and right < n and s[left] __ s[right]:
             left -= 1
             right += 1
 
-        return left + 1, right - left - 1
+        r.. left + 1, right - left - 1

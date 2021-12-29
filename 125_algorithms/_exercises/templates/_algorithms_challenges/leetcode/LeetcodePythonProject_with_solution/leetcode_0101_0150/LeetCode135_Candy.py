@@ -10,25 +10,25 @@ class Solution(object):
         :type ratings: List[int]
         :rtype: int
         """
-        n = len(ratings)
+        n = l..(ratings)
         left = [0]*n
         left[0] = 1
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             __ ratings[i] > ratings[i-1]:
                 left[i] = left[i-1]+1
-            else:
+            ____:
                 left[i] = 1
         right = [0]*n
         right[-1] = 1
-        for i in range(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1):
             __ ratings[i] > ratings[i+1]:
                 right[i] = right[i+1]+1
-            else:
+            ____:
                 right[i] = 1
         res = 0
-        for i in range(n):
+        ___ i __ r..(n):
             res += max(left[i], right[i])
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -37,11 +37,11 @@ class Solution(object):
             [1,3,2,2,1],
             [1, 2, 3, 1, 3, 3, 2],
         ]
-        for ratings in testCases:
+        ___ ratings __ testCases:
             print('ratings: %s' % (ratings))
             result = self.candy(ratings)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

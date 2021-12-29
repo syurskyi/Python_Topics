@@ -1,5 +1,5 @@
-import textwrap
-import itertools
+_______ textwrap
+_______ itertools
 
 COL_WIDTH = 20
 
@@ -13,35 +13,35 @@ ___ text_to_columns(text):
 
 
     paragraphs = text.split('\n\n')
-    number_of_columns = len(paragraphs)
+    number_of_columns = l..(paragraphs)
 
-    l = [] 
-    for paragraph in paragraphs:
+    l    # list
+    ___ paragraph __ paragraphs:
         paragraph = paragraph.strip()
         r = textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=True)
-        l.append(r)
+        l.a..(r)
     
     
     
 
-    result = []
-    for p in itertools.zip_longest(*l,fillvalue=''):
+    result    # list
+    ___ p __ itertools.zip_longest(*l,fillvalue=''):
         
-        line = []
-        for value in p:
-            line.append(f"{value:<25}")
+        line    # list
+        ___ value __ p:
+            line.a..(f"{value:<25}")
 
             #result.append(f"{value:<25}",end='')
             #print(f"{value:<25}",end='')
         #print()
 
-        result.append(''.join(line))
+        result.a..(''.join(line))
 
     
-    return '\n'.join(result)
+    r.. '\n'.join(result)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     text = """My house is small but cosy.

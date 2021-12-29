@@ -16,8 +16,8 @@ __author__ = 'Daniel'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -28,15 +28,15 @@ class Solution:
         :rtype: int
         """
         l = self.cnt(root.left)
-        __ l+1 == k:
-            return root.val
-        elif l+1 < k:
-            return self.kthSmallest(root.right, k-(l+1))
-        else:
-            return self.kthSmallest(root.left, k)
+        __ l+1 __ k:
+            r.. root.val
+        ____ l+1 < k:
+            r.. self.kthSmallest(root.right, k-(l+1))
+        ____:
+            r.. self.kthSmallest(root.left, k)
 
     ___ cnt(self, root):
-        __ not root:
-            return 0
+        __ n.. root:
+            r.. 0
 
-        return 1+self.cnt(root.left)+self.cnt(root.right)
+        r.. 1+self.cnt(root.left)+self.cnt(root.right)

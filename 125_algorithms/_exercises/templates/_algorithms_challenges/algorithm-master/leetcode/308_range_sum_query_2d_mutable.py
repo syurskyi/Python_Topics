@@ -11,15 +11,15 @@ class NumMatrix:
         """
         :type matrix: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return
+        __ n.. matrix o. n.. matrix[0]:
+            r..
 
-        m, n = len(matrix), len(matrix[0])
-        self.bits = [[0] * (n + 1) for _ in range(m + 1)]  # bits
-        self.incr = [[0] * (n + 1) for _ in range(m + 1)]  # increments
+        m, n = l..(matrix), l..(matrix[0])
+        self.bits = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
+        self.incr = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
 
-        for x in range(m):
-            for y in range(n):
+        ___ x __ r..(m):
+            ___ y __ r..(n):
                 self.update(x, y, matrix[x][y])
 
     ___ update(self, x, y, val):
@@ -35,7 +35,7 @@ class NumMatrix:
         delta = val - self.incr[i][j]
         self.incr[i][j] = val
 
-        m, n = len(self.incr), len(self.incr[0])
+        m, n = l..(self.incr), l..(self.incr[0])
 
         while i < m:
             j = y + 1
@@ -52,14 +52,14 @@ class NumMatrix:
         :type y2: int
         :rtype: int
         """
-        return sum((
-            self.sum(x2 + 1, y2 + 1),
-            - self.sum(x1, y2 + 1),
-            - self.sum(x2 + 1, y1),
-            self.sum(x1, y1),
+        r.. s..((
+            self.s..(x2 + 1, y2 + 1),
+            - self.s..(x1, y2 + 1),
+            - self.s..(x2 + 1, y1),
+            self.s..(x1, y1),
         ))
 
-    ___ sum(self, x, y):
+    ___ s..(self, x, y):
         res = 0
         i = x
         j = y
@@ -71,4 +71,4 @@ class NumMatrix:
                 j -= (j & -j)
             i -= (i & -i)
 
-        return res
+        r.. res

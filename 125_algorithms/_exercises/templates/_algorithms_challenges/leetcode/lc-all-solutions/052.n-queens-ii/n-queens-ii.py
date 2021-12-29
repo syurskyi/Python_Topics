@@ -6,20 +6,20 @@ class Solution(object):
     """
 
     ___ dfs(path, n):
-      __ len(path) == n:
-        return 1
+      __ l..(path) __ n:
+        r.. 1
       res = 0
-      for i in range(n):
-        __ i not in path and isValidQueen(path, i):
-          path.append(i)
+      ___ i __ r..(n):
+        __ i n.. __ path and isValidQueen(path, i):
+          path.a..(i)
           res += dfs(path, n)
           path.pop()
-      return res
+      r.. res
 
     ___ isValidQueen(path, k):
-      for i in range(len(path)):
-        __ abs(k - path[i]) == abs(len(path) - i):
-          return False
-      return True
+      ___ i __ r..(l..(path)):
+        __ abs(k - path[i]) __ abs(l..(path) - i):
+          r.. False
+      r.. True
 
-    return dfs([], n)
+    r.. dfs([], n)

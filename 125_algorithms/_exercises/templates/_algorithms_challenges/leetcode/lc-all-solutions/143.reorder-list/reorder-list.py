@@ -12,25 +12,25 @@ class Solution(object):
     """
 
     ___ reverse(root):
-      pre = None
+      pre = N..
       cur = root
       while cur:
         next = cur.next
         cur.next = pre
         pre = cur
         cur = next
-      return pre
+      r.. pre
 
-    __ not head or not head.next:
-      return
+    __ n.. head o. n.. head.next:
+      r..
     slow = fast = head
-    pre = None
+    pre = N..
     while fast and fast.next:
       pre = slow
       slow = slow.next
       fast = fast.next.next
     __ pre:
-      pre.next = None
+      pre.next = N..
     newHead = reverse(slow)
     ret = dummy = ListNode(-1)
     p1 = head

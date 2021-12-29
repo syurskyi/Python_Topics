@@ -11,16 +11,16 @@ class Solution(object):
         :type stations: List[List[int]]
         :rtype: int
         """
-        import heapq
-        h = []
+        _______ heapq
+        h    # list
         res = i = 0
         cur = startFuel
         while cur < target:
-            while i < len(stations) and stations[i][0] <= cur:
+            while i < l..(stations) and stations[i][0] <= cur:
                 heapq.heappush(h, -stations[i][1])
                 i += 1
-            __ not h:
-                return -1
+            __ n.. h:
+                r.. -1
             cur += -heapq.heappop(h)
             res += 1
-        return res
+        r.. res

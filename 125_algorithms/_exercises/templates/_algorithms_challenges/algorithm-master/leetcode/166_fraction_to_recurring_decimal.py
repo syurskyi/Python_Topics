@@ -5,38 +5,38 @@ class Solution:
         :type b: int
         :rtype: str
         """
-        __ not b:
-            return ''
-        __ not a:
-            return '0'
+        __ n.. b:
+            r.. ''
+        __ n.. a:
+            r.. '0'
 
-        ans = []
+        ans    # list
         __ a ^ b < 0:
-            ans.append('-')
+            ans.a..('-')
 
         __ a < 0:
             a = -a
         __ b < 0:
             b = -b
 
-        ans.append(str(a // b))
+        ans.a..(str(a // b))
 
         a %= b
-        __ a == 0:
-            return ''.join(ans)
+        __ a __ 0:
+            r.. ''.join(ans)
 
-        ans.append('.')
-        D = {a: len(ans)}  # the index of first occurrence of `a`
+        ans.a..('.')
+        D = {a: l..(ans)}  # the index of first occurrence of `a`
         while a:
             a *= 10
-            ans.append(str(a // b))
+            ans.a..(str(a // b))
             a %= b
 
-            __ a in D:
+            __ a __ D:
                 ans.insert(D[a], '(')
-                ans.append(')')
+                ans.a..(')')
                 break
 
-            D[a] = len(ans)
+            D[a] = l..(ans)
 
-        return ''.join(ans)
+        r.. ''.join(ans)

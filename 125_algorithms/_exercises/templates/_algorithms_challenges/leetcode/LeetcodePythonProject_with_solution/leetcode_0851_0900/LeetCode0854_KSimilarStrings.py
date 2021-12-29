@@ -11,34 +11,34 @@ class Solution(object):
         :rtype: int
         """
         a, b = A, B
-        __ a == b:
-            return 0
+        __ a __ b:
+            r.. 0
         q = [a]
         hashset = set([a])
         res = 0
         while q:
             res += 1
-            size = len(q)
-            for _ in range(size):
+            size = l..(q)
+            ___ _ __ r..(size):
                 s = q.pop(0)
                 i = 0
-                while s[i] == b[i]:
+                while s[i] __ b[i]:
                     i += 1
-                for j in range(i+1, len(s)):
-                    __ s[j] == b[j] or s[i] != b[j]:
+                ___ j __ r..(i+1, l..(s)):
+                    __ s[j] __ b[j] o. s[i] != b[j]:
                         continue
                     tmp = self.swap(s, i, j)
-                    __ tmp == b:
-                        return res
-                    __ tmp not in hashset:
+                    __ tmp __ b:
+                        r.. res
+                    __ tmp n.. __ hashset:
                         hashset.add(tmp)
-                        q.append(tmp)
-        return res
+                        q.a..(tmp)
+        r.. res
     
     ___ swap(self, s, i, j):
-        l = list(s)
+        l = l..(s)
         l[i], l[j] = l[j], l[i]
-        return ''.join(l)
+        r.. ''.join(l)
     
     ___ test(self):
         testCases = [
@@ -63,10 +63,10 @@ class Solution(object):
                 'abccab',
             ],
         ]
-        for a, b in testCases:
+        ___ a, b __ testCases:
             res = self.kSimilarity(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

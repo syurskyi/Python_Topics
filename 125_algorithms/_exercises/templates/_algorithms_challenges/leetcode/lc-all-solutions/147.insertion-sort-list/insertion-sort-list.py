@@ -15,4 +15,4 @@ class Solution(object):
       cur.next = new.next
       new.next = p.next
       p.next = new
-    return dummy.next
+    r.. dummy.next

@@ -1,8 +1,8 @@
 ___ is_plural(word):
-    __ word[-1] == "s":
-        return True
-    else:
-        return False
+    __ word[-1] __ "s":
+        r.. True
+    ____:
+        r.. False
 
 
 ___ test():

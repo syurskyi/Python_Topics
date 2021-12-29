@@ -7,4 +7,4 @@ class Solution(object):
     """
     while m < n:
       n = n & n - 1
-    return n
+    r.. n

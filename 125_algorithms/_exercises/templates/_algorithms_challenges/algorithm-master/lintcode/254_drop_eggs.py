@@ -27,15 +27,15 @@ class Solution:
     """
     ___ dropEggs(self, n):
         __ n <= 0:
-            return 0
+            r.. 0
 
         _sum = 0
-        for i in range(n):
+        ___ i __ r..(n):
             _sum += i
             __ _sum >= n:
-                return i
+                r.. i
 
-        return n
+        r.. n
 
 
 """
@@ -47,7 +47,7 @@ x(x + 1) / 2 >= n
 
 so `x` can start from `sqrt(2n)`
 """
-from math import sqrt
+____ math _______ sqrt
 
 
 class Solution:
@@ -57,10 +57,10 @@ class Solution:
     """
     ___ dropEggs(self, n):
         __ n <= 0:
-            return 0
+            r.. 0
 
         x = int(sqrt(2 * n))
         while x * (x + 1) // 2 < n:
             x += 1
 
-        return x
+        r.. x

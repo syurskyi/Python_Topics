@@ -2,8 +2,8 @@
 # Score: 40
 
 
-n, number, k = int(input()), input().split().count('a'), int(input())
+n, number, k = int(input()), input().s.. .c.. 'a'), int(input())
 not_a = 1
-for i in range(k):
+___ i __ r..(k):
     not_a = not_a * (n - number - i) / (n - i)
 print(1-not_a)

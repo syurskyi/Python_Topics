@@ -30,8 +30,8 @@ You may assume all numbers in the input are non-negative integers.
 The length of Profits array and Capital array will not exceed 50,000.
 The answer is guaranteed to fit in a 32-bit signed integer.
 """
-from typing import List
-import heapq
+____ typing _______ List
+_______ heapq
 
 
 class Solution:
@@ -44,11 +44,11 @@ class Solution:
 
         O(N logN) + O(N log N)
         """
-        capital_q = list(zip(Capital, Profits))
-        profit_q = []
+        capital_q = l..(zip(Capital, Profits))
+        profit_q    # list
         heapq.heapify(capital_q)
         capital = W
-        for _ in range(k):
+        ___ _ __ r..(k):
             while capital_q and capital_q[0][0] <= capital:
                 _, pro = heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro))
@@ -56,10 +56,10 @@ class Solution:
             __ profit_q:
                 _, pro = heapq.heappop(profit_q)
                 capital += pro
-            else:
+            ____:
                 break
 
-        return capital
+        r.. capital
 
     ___ findMaximizedCapital_TLE(self, k: int, W: int, Profits: List[int], Capital: List[int]) -> int:
         """
@@ -76,19 +76,19 @@ class Solution:
         O(k * N)
         """
         capital = W
-        n = len(Profits)
-        visited = [False for _ in range(n)]
-        for _ in range(k):
+        n = l..(Profits)
+        visited = [False ___ _ __ r..(n)]
+        ___ _ __ r..(k):
             maxa = 0
             maxa_i = 0
-            for i in range(n):
-                __ not visited[i] and Profits[i] >= maxa and Capital[i] <= capital:
+            ___ i __ r..(n):
+                __ n.. visited[i] and Profits[i] >= maxa and Capital[i] <= capital:
                     maxa = Profits[i]
                     maxa_i = i
             __ maxa > 0:
                 capital += maxa
                 visited[maxa_i] = True
-            else:
+            ____:
                 break
 
-        return capital
+        r.. capital

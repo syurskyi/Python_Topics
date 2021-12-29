@@ -1,10 +1,10 @@
-from datetime import datetime, date, timedelta
+____ datetime _______ datetime, date, timedelta
 
 
 ___ get_mothers_day_date(year):
     """Given the passed in year int, return the date Mother's Day
        is celebrated assuming it's the 2nd Sunday of May."""
-    may = (datetime(year, 5, k) for k in range(1, 32))
-    sundays = filter(lambda x: x.weekday() == 6, may)
+    may = (datetime(year, 5, k) ___ k __ r..(1, 32))
+    sundays = filter(l.... x: x.weekday() __ 6, may)
     next(sundays)
-    return next(sundays).date()
+    r.. next(sundays).date()

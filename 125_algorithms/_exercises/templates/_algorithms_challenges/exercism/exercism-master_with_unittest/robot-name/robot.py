@@ -1,5 +1,5 @@
-import string
-import random
+_______ string
+_______ random
 
 
 class Robot:
@@ -12,10 +12,10 @@ class Robot:
 
     ___ generate_name(self):
         random.seed()
-        return self.random_prefix(2) + self.random_suffix(3)
+        r.. self.random_prefix(2) + self.random_suffix(3)
 
     ___ random_prefix(self, n):
-        return ''.join(random.sample(string.ascii_uppercase, n))
+        r.. ''.join(random.sample(string.ascii_uppercase, n))
 
     ___ random_suffix(self, n):
-        return ''.join(random.sample(string.digits, n))
+        r.. ''.join(random.sample(string.digits, n))

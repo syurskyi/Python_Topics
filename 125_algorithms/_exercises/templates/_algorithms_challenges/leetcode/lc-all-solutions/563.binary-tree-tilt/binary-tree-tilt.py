@@ -13,12 +13,12 @@ class Solution(object):
     """
 
     ___ dfs(root):
-      __ not root:
-        return 0, 0  # sum, tilt sum
+      __ n.. root:
+        r.. 0, 0  # sum, tilt sum
 
       leftSum, leftTilt = dfs(root.left)
       rightSum, rightTilt = dfs(root.right)
 
-      return leftSum + root.val + rightSum, abs(leftSum - rightSum) + leftTilt + rightTilt
+      r.. leftSum + root.val + rightSum, abs(leftSum - rightSum) + leftTilt + rightTilt
 
-    return dfs(root)[1]
+    r.. dfs(root)[1]

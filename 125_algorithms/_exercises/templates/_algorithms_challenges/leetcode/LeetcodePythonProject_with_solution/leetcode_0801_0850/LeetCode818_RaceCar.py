@@ -12,28 +12,28 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        __ target in self.hashmap: return self.hashmap[target]
+        __ target __ self.hashmap: r.. self.hashmap[target]
         # Number of bits necessary to represent self in binary.
         n = target.bit_length()
-        __ 2**n-1 == target:
+        __ 2**n-1 __ target:
             self.hashmap[target] = n
-        else:
+        ____:
             self.hashmap[target] = self.racecar(2**n-1-target)+n+1
-            for m in range(n-1):
-                self.hashmap[target] = min(self.hashmap[target],\
+            ___ m __ r..(n-1):
+                self.hashmap[target] = m..(self.hashmap[target],\
                             self.racecar(target-2**(n-1)+2**m)+n+m+1)
-        return self.hashmap[target]
+        r.. self.hashmap[target]
     
     ___ test(self):
         testCases = [
             3,
             6,
         ]
-        for target in testCases:
+        ___ target __ testCases:
             print('target: %s' % target)
             result = self.racecar(target)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

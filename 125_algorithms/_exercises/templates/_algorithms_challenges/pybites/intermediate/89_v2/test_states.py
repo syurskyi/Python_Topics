@@ -1,4 +1,4 @@
-from states import (get_every_nth_state, get_state_abbrev,
+____ states _______ (get_every_nth_state, get_state_abbrev,
                     get_longest_state, combine_state_names_and_abbreviations,
                     states, us_state_abbrev, NOT_FOUND)
 
@@ -6,23 +6,23 @@ from states import (get_every_nth_state, get_state_abbrev,
 ___ test_get_every_nth_state():
     expected = ['Massachusetts', 'Missouri', 'Hawaii',
                 'Vermont', 'Delaware']
-    assert list(get_every_nth_state()) == expected
+    ... l..(get_every_nth_state()) __ expected
     expected = ['Missouri', 'Vermont']
-    assert list(get_every_nth_state(n=20)) == expected
+    ... l..(get_every_nth_state(n=20)) __ expected
 
 
 ___ test_get_state_abbrev():
-    assert get_state_abbrev('Illinois') == 'IL'
-    assert get_state_abbrev('North Dakota') == 'ND'
-    assert get_state_abbrev('bogus') == NOT_FOUND
+    ... get_state_abbrev('Illinois') __ 'IL'
+    ... get_state_abbrev('North Dakota') __ 'ND'
+    ... get_state_abbrev('bogus') __ NOT_FOUND
 
 
 ___ test_get_longest_state():
     # depending the direction of the sort (reversed or not)
     # both North and South Carolina are correct
     possible_answers = ('North Carolina', 'South Carolina')
-    assert get_longest_state(us_state_abbrev) in possible_answers
-    assert get_longest_state(states) in possible_answers
+    ... get_longest_state(us_state_abbrev) __ possible_answers
+    ... get_longest_state(states) __ possible_answers
 
 
 ___ test_combine_state_names_and_abbreviations():
@@ -30,4 +30,4 @@ ___ test_combine_state_names_and_abbreviations():
                 'South Dakota', 'Tennessee', 'Texas', 'Utah',
                 'Vermont', 'Virginia', 'Washington', 'West Virginia',
                 'Wisconsin', 'Wyoming']
-    assert combine_state_names_and_abbreviations() == expected
+    ... combine_state_names_and_abbreviations() __ expected

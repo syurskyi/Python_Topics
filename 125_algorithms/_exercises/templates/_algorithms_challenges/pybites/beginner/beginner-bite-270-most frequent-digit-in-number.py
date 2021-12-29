@@ -24,13 +24,13 @@ ___ freq_digit(num: int) -> int:
 
     dict_num = {}
     num_str = str(num)
-    for num in num_str:
+    ___ num __ num_str:
         try:
             dict_num[num] += 1
         except:
             dict_num[num] = 1
-    m = max(dict_num, key=lambda key: dict_num[key])
-    return int(m)
+    m = max(dict_num, key=l.... key: dict_num[key])
+    r.. int(m)
 
 
 print(freq_digit(748791789189717891789))

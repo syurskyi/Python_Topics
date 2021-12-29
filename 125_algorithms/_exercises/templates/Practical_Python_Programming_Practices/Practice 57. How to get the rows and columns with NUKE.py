@@ -1,32 +1,32 @@
-from random import random
+____ random _______ random
 
 matrix  []
 
-for i in range(6):
+___ i __ r..(6):
     row  []
-    for j in range(6):
-        row.append(i..(random()*10))
-    matrix.append(row)
+    ___ j __ r..(6):
+        row.a..(i..(random()*10))
+    matrix.a..(row)
 
-for row in matrix:
+___ row __ matrix:
     print(row)
 
 rmaxi  0
 rid  0
 i  0
 
-for row in matrix:
-    __ sum(row) > rmaxi:
-        rmaxi  sum(row)
+___ row __ matrix:
+    __ s..(row) > rmaxi:
+        rmaxi  s..(row)
         rid  i
     i + 1
 print(rid, '=', rmaxi)
 
 cmaxi  0
 cid  0
-for i in range(6):
+___ i __ r..(6):
     sumcol  0
-    for j in range(6):
+    ___ j __ r..(6):
         sumcol + matrix[j][i]
     __ sumcol > cmaxi:
         cmaxi  sumcol

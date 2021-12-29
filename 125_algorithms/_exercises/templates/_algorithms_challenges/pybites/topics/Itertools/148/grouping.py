@@ -1,4 +1,4 @@
-from itertools import groupby
+____ itertools _______ groupby
 
 cars = [
     # need mock data? -> https://www.mockaroo.com == awesome
@@ -25,11 +25,11 @@ ___ group_cars_by_manufacturer(cars):
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    key_func = lambda x: x[0]
+    key_func = l.... x: x[0]
 
-    for key, group in groupby(sorted(cars), key_func):
+    ___ key, group __ groupby(s..(cars), key_func):
         print(key.upper())
-        for model in list(group):
+        ___ model __ l..(group):
             print(f'- {model[1]}')
         print()
 

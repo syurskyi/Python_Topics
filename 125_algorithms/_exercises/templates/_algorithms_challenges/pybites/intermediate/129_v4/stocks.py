@@ -1,5 +1,5 @@
-import requests
-from collections import Counter
+_______ requests
+____ collections _______ Counter
 
 STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
@@ -18,42 +18,42 @@ ___ _cap_str_to_mln_float(cap):
        - if 'B', strip it off and multiple by 1,000 and return
          value as float"""
 
-    __ 'n/a' in cap:
+    __ 'n/a' __ cap:
         value = 0
-    else:
+    ____:
         unit = cap[-1]
         cap = cap[1:-1]
         value = float(cap)
-        value = value * 1000 __ unit == 'B' else value
+        value = value * 1000 __ unit __ 'B' ____ value
 
-    return value
+    r.. value
 
 
 ___ get_industry_cap(industry):
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    total = sum(map(lambda x: _cap_str_to_mln_float(x['cap']),
-                    filter(lambda x: x['industry'] == industry, data)
+    total = s..(map(l.... x: _cap_str_to_mln_float(x['cap']),
+                    filter(l.... x: x['industry'] __ industry, data)
                     )
                 )
 
-    return round(total, 2)
+    r.. round(total, 2)
 
 
 ___ get_stock_symbol_with_highest_cap():
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    return max(data, key=lambda x: _cap_str_to_mln_float(x['cap']))['symbol']
+    r.. max(data, key=l.... x: _cap_str_to_mln_float(x['cap']))['symbol']
 
 
 ___ get_sectors_with_max_and_min_stocks():
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    min_max = Counter(map(lambda x: x['sector'],
-                          filter(lambda x: x['sector'] != 'n/a', data)
+    min_max = Counter(map(l.... x: x['sector'],
+                          filter(l.... x: x['sector'] != 'n/a', data)
                           )
                       )
     most = min_max.most_common(1)[0][0]
     least = min_max.most_common()[-1][0]
-    return most, least
+    r.. most, least

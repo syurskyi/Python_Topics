@@ -15,21 +15,21 @@ Examples:
 Note: An empty input list [] should return 0.
 """
 
-from typing import List
+____ typing _______ List
 
 # Mialem jeszcze innego pomysla, zeby uzyc joina:
 # s = ('').join(lista)
 # jak zamienic liste intow na liste str?
 # d = [str(x) for x in c]
 ___ minimum_number(digits: List[int]) -> int:
-    __ len(digits) == 0:
-        return 0
+    __ l..(digits) __ 0:
+        r.. 0
     reduced = set(digits)
-    sort = sorted(reduced)
+    sort = s..(reduced)
     r = ""
-    for e in sort:
+    ___ e __ sort:
         r += str(e)
-    return int(r)
+    r.. int(r)
 
 
 print(minimum_number([1,9,5,9,1]))

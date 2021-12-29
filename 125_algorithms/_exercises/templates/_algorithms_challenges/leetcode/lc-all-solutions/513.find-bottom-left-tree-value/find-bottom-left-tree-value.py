@@ -13,10 +13,10 @@ class Solution(object):
     """
 
     ___ dfs(root, h, w):
-      __ not root:
-        return (float("inf"), float("inf"), None)
+      __ n.. root:
+        r.. (float("inf"), float("inf"), N..)
       left = dfs(root.left, h - 1, w - 1)
       right = dfs(root.right, h - 1, w + 1)
-      return min((h, w, root.val), left, right)
+      r.. m..((h, w, root.val), left, right)
 
-    return dfs(root, 0, 0)[2]
+    r.. dfs(root, 0, 0)[2]

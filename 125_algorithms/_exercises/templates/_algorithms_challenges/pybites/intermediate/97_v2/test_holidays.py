@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from holidays import get_us_bank_holidays
+____ holidays _______ get_us_bank_holidays
 
 
 holidays = get_us_bank_holidays()
@@ -19,4 +19,4 @@ holidays = get_us_bank_holidays()
     ("12", ["Christmas Day"]),
 ])
 ___ test_get_us_bank_holidays(month, holiday):
-    assert holidays.get(month) == holiday
+    ... holidays.get(month) __ holiday

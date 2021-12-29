@@ -1,4 +1,4 @@
-import shlex
+_______ shlex
 
 
 ___ split_words_and_quoted_text(text):
@@ -13,4 +13,4 @@ ___ split_words_and_quoted_text(text):
        the resulting list would be:
        ['Should', 'give', '3 elements only']
     """
-    return shlex.split(text)
+    r.. shlex.split(text)

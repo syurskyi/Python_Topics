@@ -27,7 +27,7 @@ Note:
 0 <= A[i] <= 10^6
 It is guaranteed there is at least one way to partition A as described.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -37,35 +37,35 @@ class Solution:
 
         similar to 2 in terms of keyboard stroke count 
         """
-        n = len(A)
-        MX = [-float('inf') for _ in range(n+1)]
-        MI = [float('inf') for _ in range(n+1)]
-        for i in range(n):
+        n = l..(A)
+        MX = [-float('inf') ___ _ __ r..(n+1)]
+        MI = [float('inf') ___ _ __ r..(n+1)]
+        ___ i __ r..(n):
             MX[i+1] = max(M[i], A[i])
-        for i in range(n-1, -1, -1):
-            MI[i] = min(MI[i+1], A[i])
+        ___ i __ r..(n-1, -1, -1):
+            MI[i] = m..(MI[i+1], A[i])
 
-        for l in range(1, n+1):
+        ___ l __ r..(1, n+1):
             __ MX[l] <= MI[l]:
-                return l
+                r.. l
         raise
 
     ___ partitionDisjoint_2(self, A: List[int]) -> int:
         """
         max(left) <= min(right)
         """
-        MX = [0 for _ in A]
-        MI = [0 for _ in A]
+        MX = [0 ___ _ __ A]
+        MI = [0 ___ _ __ A]
         MX[0] = A[0]
         MI[-1] = A[-1]
-        n = len(A)
-        for i in range(1, n):
+        n = l..(A)
+        ___ i __ r..(1, n):
             MX[i] = max(MX[i-1], A[i])
-        for i in range(n-2, -1, -1):
-            MI[i] = min(MI[i+1], A[i])
+        ___ i __ r..(n-2, -1, -1):
+            MI[i] = m..(MI[i+1], A[i])
 
-        for i in range(n-1):
+        ___ i __ r..(n-1):
             __ MX[i] <= MI[i+1]:
-                return i
+                r.. i
 
         raise

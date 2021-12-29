@@ -8,8 +8,8 @@ this in our Parsing Twitter Geo Data and Mocking API Calls by Example article.
 
 Querying APIs is a common need so this should become second nature :) - enjoy!
 """
-import requests
-import json as j
+_______ requests
+_______ json as j
 
 # https://stackoverflow.com/questions/58048879/what-is-the-difference-between-json-method-and-json-loads
 
@@ -37,7 +37,7 @@ ___ get_ip_country(ip_address):
     except ValueError:
         print("Response did not contain a valid JSON")
 
-    return(dzejson['country'])
+    r..(dzejson['country'])
 
 print(get_ip_country_2(ip_address="8.8.8.8"))
 

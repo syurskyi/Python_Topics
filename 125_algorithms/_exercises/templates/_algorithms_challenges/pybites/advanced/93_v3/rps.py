@@ -1,6 +1,6 @@
-from random import choice
+____ random _______ choice
 
-defeated_by = dict(paper='scissors',
+defeated_by = d..(paper='scissors',
                    rock='paper',
                    scissors='rock')
 lose = '{} beats {}, you lose!'
@@ -11,20 +11,20 @@ choices = defeated_by.values()
 
 ___ _get_computer_move():
     """Randomly select a move"""
-    return choice(choices)
+    r.. choice(choices)
 
 
 ___ _get_winner(computer_choice, player_choice):
     """Return above lose/win/tie strings populated with the
        appropriate values (computer vs player)"""
-    __ player_choice not in choices:
-        return 'Invalid choice'
-    __ computer_choice == player_choice:
-        return tie
-    __ player_choice == defeated_by[computer_choice]:
-        return win.format(player_choice, computer_choice)
-    else:
-        return lose.format(computer_choice,player_choice)
+    __ player_choice n.. __ choices:
+        r.. 'Invalid choice'
+    __ computer_choice __ player_choice:
+        r.. tie
+    __ player_choice __ defeated_by[computer_choice]:
+        r.. win.format(player_choice, computer_choice)
+    ____:
+        r.. lose.format(computer_choice,player_choice)
 
 
 ___ game():
@@ -34,7 +34,7 @@ ___ game():
        Check who wins with _get_winner and print its return output."""
     while True:
         player_choice = (yield '')
-        __ player_choice == 'q':
+        __ player_choice __ 'q':
             raise StopIteration
         computer_choice = _get_computer_move()
         print(_get_winner(computer_choice, player_choice))

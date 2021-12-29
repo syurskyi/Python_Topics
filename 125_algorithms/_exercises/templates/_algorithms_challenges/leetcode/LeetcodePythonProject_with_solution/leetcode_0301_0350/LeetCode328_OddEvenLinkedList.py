@@ -8,11 +8,11 @@ Created on Mar 18, 2017
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution(object):
     ___ oddEvenList(self, head):
-        __ not head: return head
+        __ n.. head: r.. head
         node1 = head
         prev1 = head
         head2 = head.next
@@ -26,4 +26,4 @@ class Solution(object):
                 node2.next = node1.next
                 node2 = node2.next
         prev1.next = head2
-        return head
+        r.. head

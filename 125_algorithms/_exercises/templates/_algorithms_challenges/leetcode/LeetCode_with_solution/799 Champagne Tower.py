@@ -45,7 +45,7 @@ Note:
 poured will be in the range of [0, 10 ^ 9].
 query_glass and query_row will be in the range of [0, 99].
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -56,12 +56,12 @@ class Solution:
         glass, keep track of the total amount of champagne that flows through a
         glass.
         """
-        G = defaultdict(lambda: defaultdict(int))
+        G = defaultdict(l....: defaultdict(int))
         G[0][0] = poured
-        for i in range(query_row):
-            for j in range(i+1):  # i + 1 glasses at row i
+        ___ i __ r..(query_row):
+            ___ j __ r..(i+1):  # i + 1 glasses at row i
                 excess = max(0, G[i][j] - 1)
                 G[i+1][j] += excess / 2
                 G[i+1][j+1] += excess / 2
 
-        return min(1, G[query_row][query_glass])
+        r.. m..(1, G[query_row][query_glass])

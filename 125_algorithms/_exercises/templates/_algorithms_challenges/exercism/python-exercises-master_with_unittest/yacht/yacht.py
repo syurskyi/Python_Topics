@@ -1,17 +1,17 @@
 # Score categories
 # Change the values as you see fit
-YACHT = None
-ONES = None
-TWOS = None
-THREES = None
-FOURS = None
-FIVES = None
-SIXES = None
-FULL_HOUSE = None
-FOUR_OF_A_KIND = None
-LITTLE_STRAIGHT = None
-BIG_STRAIGHT = None
-CHOICE = None
+YACHT = N..
+ONES = N..
+TWOS = N..
+THREES = N..
+FOURS = N..
+FIVES = N..
+SIXES = N..
+FULL_HOUSE = N..
+FOUR_OF_A_KIND = N..
+LITTLE_STRAIGHT = N..
+BIG_STRAIGHT = N..
+CHOICE = N..
 
 
 ___ score(dice, category):

@@ -1,4 +1,4 @@
-import calendar
+_______ calendar
 
 ___ get_mothers_day_date(year):
     """Given the passed in year int, return the date Mother's Day
@@ -6,8 +6,8 @@ ___ get_mothers_day_date(year):
     c = calendar.Calendar()
     month = 5
     monthcal = c.monthdatescalendar(year, month)
-    return [day
-            for week in monthcal
-            for day in week
-            __ day.weekday() == calendar.SUNDAY
-            and day.month == month][1]
+    r.. [day
+            ___ week __ monthcal
+            ___ day __ week
+            __ day.weekday() __ calendar.SUNDAY
+            and day.month __ month][1]

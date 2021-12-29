@@ -23,67 +23,67 @@ class Solution(object):
     state = states.init
     decimals = "01234567890"
 
-    for c in s:
-      __ state == states.init:
-        __ c == ".":
+    ___ c __ s:
+      __ state __ states.init:
+        __ c __ ".":
           state = states.nullpoint
-        elif c in decimals:
+        ____ c __ decimals:
           state = states.decimal
-        elif c in ["+", "-"]:
+        ____ c __ ["+", "-"]:
           state = states.sign
-        else:
-          return False
-      elif state == states.sign:
-        __ c in decimals:
+        ____:
+          r.. False
+      ____ state __ states.sign:
+        __ c __ decimals:
           state = states.decimal
-        elif c == ".":
+        ____ c __ ".":
           state = states.nullpoint
-        else:
-          return False
-      elif state == states.esign:
-        __ c not in decimals:
-          return False
+        ____:
+          r.. False
+      ____ state __ states.esign:
+        __ c n.. __ decimals:
+          r.. False
         state = states.afteresign
-      elif state == states.afteresign:
-        __ c not in decimals:
-          return False
-      elif state == states.nullpoint:
-        __ c not in decimals:
-          return False
+      ____ state __ states.afteresign:
+        __ c n.. __ decimals:
+          r.. False
+      ____ state __ states.nullpoint:
+        __ c n.. __ decimals:
+          r.. False
         state = states.decpoint
-      elif state == states.decimal:
-        __ c in decimals:
+      ____ state __ states.decimal:
+        __ c __ decimals:
           continue
-        elif c == "e":
+        ____ c __ "e":
           state = states.e
-        elif c == ".":
+        ____ c __ ".":
           state = states.decpoint
-        else:
-          return False
-      elif state == states.decpoint:
-        __ c in decimals:
+        ____:
+          r.. False
+      ____ state __ states.decpoint:
+        __ c __ decimals:
           state = states.afterdp
-        elif c == "e":
+        ____ c __ "e":
           state = states.e
-        else:
-          return False
-      elif state == states.afterdp:
-        __ c in decimals:
+        ____:
+          r.. False
+      ____ state __ states.afterdp:
+        __ c __ decimals:
           continue
-        elif c == "e":
+        ____ c __ "e":
           state = states.e
-        else:
-          return False
-      elif state == states.e:
-        __ c in decimals:
+        ____:
+          r.. False
+      ____ state __ states.e:
+        __ c __ decimals:
           state = states.aftere
-        elif c in ["+", "-"]:
+        ____ c __ ["+", "-"]:
           state = states.esign
-        else:
-          return False
-      elif state == states.aftere:
-        __ c not in decimals:
-          return False
-      else:
-        return False
-    return state not in [states.init, states.e, states.nullpoint, states.sign, states.esign]
+        ____:
+          r.. False
+      ____ state __ states.aftere:
+        __ c n.. __ decimals:
+          r.. False
+      ____:
+        r.. False
+    r.. state n.. __ [states.init, states.e, states.nullpoint, states.sign, states.esign]

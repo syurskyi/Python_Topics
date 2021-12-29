@@ -19,21 +19,21 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        __ head is None:
-            return None
+        __ head __ N..
+            r.. N..
         current = head
-        last = None
-        while current is not None:
-            __ current.val == val:
-                __ last is not None:
+        last = N..
+        while current __ n.. N..
+            __ current.val __ val:
+                __ last __ n.. N..
                     # Remove `current` node and `last` node is not changed
                     last.next = current.next
-                else:
+                ____:
                     # `current` is the head node
                     # Remove the head node and `last` node is still None
                     head = current.next
-                    last = None
-            else:
+                    last = N..
+            ____:
                 last = current
             current = current.next
-        return head
+        r.. head

@@ -36,9 +36,9 @@ ___ get_every_nth_state(states=states, n=10):
    """Return a list with every nth item (default argument n=10, so every
       10th item) of the states list above (remember: lists keep order)"""
    start = n -1
-   stop = len(states)
+   stop = l..(states)
    step = n
-   return [states[i] for i in range(start, stop, step)]
+   r.. [states[i] ___ i __ r..(start, stop, step)]
 
 
 ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
@@ -48,9 +48,9 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
       If the state is not in the dict, return 'N/A' which we stored
       in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
    try:
-      return us_state_abbrev[state_name]
+      r.. us_state_abbrev[state_name]
    except KeyError:
-      return NOT_FOUND
+      r.. NOT_FOUND
 
 
 ___ get_longest_state(data):
@@ -59,17 +59,17 @@ ___ get_longest_state(data):
       of the string"""
    longest_state_len = 0   
    longest_state = ""
-   __ isinstance(data, list):
-      for state in data:
-         __ len(state) > longest_state_len:
-            longest_state_len = len(state)
+   __ isi..(data, l..):
+      ___ state __ data:
+         __ l..(state) > longest_state_len:
+            longest_state_len = l..(state)
             longest_state = state
-   else:
-      for state in data.keys():
-         __ len(state) > longest_state_len:
-            longest_state_len = len(state)
+   ____:
+      ___ state __ data.keys():
+         __ l..(state) > longest_state_len:
+            longest_state_len = l..(state)
             longest_state = state     
-   return longest_state
+   r.. longest_state
 
 
 ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
@@ -80,9 +80,9 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
       has both sorted, so:
       ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
       (see also test_combine_state_names_and_abbreviations)"""
-   first_10_state_abbrev = sorted([abbrev for abbrev in list(us_state_abbrev.values())[:10]])
-   last_10_states = sorted(states)[-10:]
-   return first_10_state_abbrev + last_10_states
+   first_10_state_abbrev = s..([abbrev ___ abbrev __ l..(us_state_abbrev.values())[:10]])
+   last_10_states = s..(states)[-10:]
+   r.. first_10_state_abbrev + last_10_states
 
 
 # if __name__ == "__main__":

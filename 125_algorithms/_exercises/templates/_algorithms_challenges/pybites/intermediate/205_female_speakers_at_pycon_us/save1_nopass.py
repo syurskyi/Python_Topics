@@ -1,20 +1,20 @@
-from urllib.request import urlretrieve
-from pathlib import Path
+____ urllib.request _______ urlretrieve
+____ pathlib _______ Path
 
-import gender_guesser.detector as gender
-from bs4 import BeautifulSoup as Soup
+_______ gender_guesser.detector as gender
+____ bs4 _______ BeautifulSoup as Soup
 
 TMP = Path('/tmp')
 PYCON_HTML = TMP / "pycon2019.html"
 PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
-__ not PYCON_HTML.exists():
+__ n.. PYCON_HTML.exists():
     urlretrieve(PYCON_PAGE, PYCON_HTML)
 
 
 ___ _get_soup(html=PYCON_HTML):
-    return Soup(html.read_text(encoding="utf-8"), "html.parser")
+    r.. Soup(html.read_text(encoding="utf-8"), "html.parser")
 
 
 ___ get_pycon_speaker_first_names(soup_ N..
@@ -33,7 +33,7 @@ ___ get_percentage_of_female_speakers(first_names):
     pass
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     names = get_pycon_speaker_first_names()
     perc = get_percentage_of_female_speakers(names)
     print(perc)

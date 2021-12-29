@@ -6,17 +6,17 @@ class Solution:
         :rtype: bool
         """
         indeg = [0] * n
-        edges = [[] for _ in range(n)]
+        edges = [[] ___ _ __ r..(n)]
 
-        for c, p in P:
+        ___ c, p __ P:
             indeg[c] += 1
-            edges[p].append(c)
+            edges[p].a..(c)
 
-        queue = [i for i in range(n) __ indeg[i] == 0]
-        for p in queue:
-            for c in edges[p]:
+        queue = [i ___ i __ r..(n) __ indeg[i] __ 0]
+        ___ p __ queue:
+            ___ c __ edges[p]:
                 indeg[c] -= 1
-                __ indeg[c] == 0:
-                    queue.append(c)
+                __ indeg[c] __ 0:
+                    queue.a..(c)
 
-        return len(queue) == n
+        r.. l..(queue) __ n

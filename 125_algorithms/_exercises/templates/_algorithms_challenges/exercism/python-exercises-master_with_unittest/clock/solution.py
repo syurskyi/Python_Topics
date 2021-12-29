@@ -8,17 +8,17 @@ class Clock(object):
         self.cleanup()
 
     ___ __repr__(self):
-        return "%02d:%02d" % (self.hour, self.minute)
+        r.. "%02d:%02d" % (self.hour, self.minute)
 
     ___ __eq__(self, other):
-        return repr(self) == repr(other)
+        r.. repr(self) __ repr(other)
 
     ___ add(self, minutes):
         self.minute += minutes
-        return self.cleanup()
+        r.. self.cleanup()
 
     ___ cleanup(self):
         self.hour += self.minute // 60
         self.hour %= 24
         self.minute %= 60
-        return self
+        r.. self

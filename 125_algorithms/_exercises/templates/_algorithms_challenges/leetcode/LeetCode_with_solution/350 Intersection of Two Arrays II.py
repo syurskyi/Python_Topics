@@ -13,7 +13,7 @@ What if nums1's size is small compared to nums2's size? Which algorithm is bette
 What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the
 memory at once?
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -29,16 +29,16 @@ class Solution(object):
         :rtype: List[int]
         """
         h1, h2 = defaultdict(int), defaultdict(int)
-        for a in nums1:
+        ___ a __ nums1:
             h1[a] += 1
-        for b in nums2:
+        ___ b __ nums2:
             h2[b] += 1
 
-        ret = []
-        for k, v in h1.items():
-            cnt = min(v, h2[k])
+        ret    # list
+        ___ k, v __ h1.items():
+            cnt = m..(v, h2[k])
             ret.extend([k]*cnt)
 
-        return ret
+        r.. ret
 
 

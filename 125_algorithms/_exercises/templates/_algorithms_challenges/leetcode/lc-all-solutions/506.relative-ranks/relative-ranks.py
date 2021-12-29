@@ -4,17 +4,17 @@ class Solution(object):
     :type nums: List[int]
     :rtype: List[str]
     """
-    ans = [""] * len(nums)
-    scores = []
-    for i, num in enumerate(nums):
-      scores.append((num, i))
-    scores.sort(reverse=True)
+    ans = [""] * l..(nums)
+    scores    # list
+    ___ i, num __ enumerate(nums):
+      scores.a..((num, i))
+    scores.sort(r.._T..
     rankTitles = ["Gold Medal", "Silver Medal", "Bronze Medal"]
     rank = 0
-    for _, i in scores:
+    ___ _, i __ scores:
       __ rank > 2:
         ans[i] = str(rank + 1)
-      else:
+      ____:
         ans[i] = rankTitles[rank]
       rank += 1
-    return ans
+    r.. ans

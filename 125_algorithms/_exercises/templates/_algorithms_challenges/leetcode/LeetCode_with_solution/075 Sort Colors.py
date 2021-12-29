@@ -30,22 +30,22 @@ class Solution:
         """
         RED, WHITE, BLUE = 0, 1, 2
         red_end_ptr = -1
-        blue_start_ptr= len(A)
+        blue_start_ptr= l..(A)
 
         i = 0
         while i<blue_start_ptr:
-            __ A[i]==WHITE: # pivot set
+            __ A[i]__WHITE: # pivot set
                 i += 1
-            elif A[i]==RED:
+            ____ A[i]__RED:
                 red_end_ptr+=1
                 A[red_end_ptr], A[i] = A[i], A[red_end_ptr]
                 i += 1
-            else:
+            ____:
                 blue_start_ptr -= 1
                 A[blue_start_ptr], A[i] = A[i], A[blue_start_ptr]
                 # no i+=1, since you need to examine A[i] again
 
         # print A
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().sortColors([1, 2, 0])

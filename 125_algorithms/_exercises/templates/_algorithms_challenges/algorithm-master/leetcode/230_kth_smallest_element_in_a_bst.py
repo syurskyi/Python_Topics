@@ -15,21 +15,21 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
-        stack = []
+        stack    # list
         node = root
 
-        while node or stack:
+        while node o. stack:
             while node:
-                stack.append(node)
+                stack.a..(node)
                 node = node.left
 
             node = stack.pop()
 
             k -= 1
-            __ k == 0:
-                return node.val
+            __ k __ 0:
+                r.. node.val
 
             node = node.right

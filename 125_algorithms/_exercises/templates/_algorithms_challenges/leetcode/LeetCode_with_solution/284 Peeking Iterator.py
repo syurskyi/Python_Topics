@@ -31,7 +31,7 @@ class PeekingIterator(object):
         Initialize your data structure here.
         :type iterator: Iterator
         """
-        self.nxt = None
+        self.nxt = N..
         self.iterator = iterator
 
     ___ peek(self):
@@ -39,21 +39,21 @@ class PeekingIterator(object):
         Returns the next element in the iteration without advancing the iterator.
         :rtype: int
         """
-        __ not self.nxt:
+        __ n.. self.nxt:
             self.nxt = self.iterator.next()
 
-        return self.nxt
+        r.. self.nxt
 
     ___ next(self):
         """
         :rtype: int
         """
         ret = self.peek()
-        self.nxt = None
-        return ret
+        self.nxt = N..
+        r.. ret
 
     ___ hasNext(self):
         """
         :rtype: bool
         """
-        return self.nxt is not None or self.iterator.hasNext()
+        r.. self.nxt __ n.. N.. o. self.iterator.hasNext()

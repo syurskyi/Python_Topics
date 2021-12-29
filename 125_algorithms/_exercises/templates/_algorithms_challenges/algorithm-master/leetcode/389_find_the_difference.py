@@ -8,11 +8,11 @@ class Solution:
         a = ord('a')
         ans = ord(t[-1]) - a
 
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             ans ^= ord(s[i]) - a
             ans ^= ord(t[i]) - a
 
-        return chr(ans + a)
+        r.. chr(ans + a)
 
 
 class Solution:
@@ -22,25 +22,25 @@ class Solution:
         :type t: str
         :rtype: str
         """
-        __ not t:
-            return ''
+        __ n.. t:
+            r.. ''
 
         freq = {}
 
-        for c in s:
-            __ c not in freq:
+        ___ c __ s:
+            __ c n.. __ freq:
                 freq[c] = 0
 
             freq[c] += 1
 
-        for c in t:
-            __ c not in freq:
-                return c
+        ___ c __ t:
+            __ c n.. __ freq:
+                r.. c
 
             freq[c] -= 1
 
-        for c, cnt in freq.items():
+        ___ c, cnt __ freq.items():
             __ cnt:
-                return c
+                r.. c
 
-        return ''
+        r.. ''

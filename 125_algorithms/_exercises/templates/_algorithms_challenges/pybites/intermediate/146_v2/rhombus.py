@@ -24,7 +24,7 @@ ___ gen_rhombus(width):
     
     diff = 2
     j = 1
-    lines = []
+    lines    # list
     while i > 0:
         space_before = (width - i)//2
         spaces = ' ' * space_before
@@ -35,14 +35,14 @@ ___ gen_rhombus(width):
         left_padding += (diff - j)
         i += diff
 
-        __ i == width:
+        __ i __ width:
             diff = -2
             j = -1
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
-    import argparse
+    _______ argparse
 
 
     ap = argparse.ArgumentParser("rhombus generator")

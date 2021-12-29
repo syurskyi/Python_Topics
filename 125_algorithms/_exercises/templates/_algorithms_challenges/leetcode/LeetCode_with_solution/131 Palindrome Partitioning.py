@@ -19,16 +19,16 @@ class Solution:
         :param s: string
         :return: a list of lists of string
         """
-        result = []
+        result    # list
         self.get_partition(s, [], result)
-        return result
+        r.. result
 
     ___ get_partition(self, seq, cur, result):
-        __ not seq:
-            result.append(cur)
+        __ n.. seq:
+            result.a..(cur)
 
         # partition seq
-        for i in xrange(len(seq)):
+        ___ i __ xrange(l..(seq)):
             __ self.is_palindrome(seq[:i+1]):  # otherwise prune
                 self.get_partition(seq[i+1:], cur+[seq[:i+1]], result)
 
@@ -36,7 +36,7 @@ class Solution:
     ___ is_palindrome(self, s):
         # O(n)
         # return s == reversed(s)  # error, need to use ''.join(reversed(s))
-        return s == s[::-1]
+        r.. s __ s[::-1]
 
-__ __name__=="__main__":
-    assert Solution().partition("aab")==[['a', 'a', 'b'], ['aa', 'b']]
+__ __name____"__main__":
+    ... Solution().partition("aab")__[['a', 'a', 'b'], ['aa', 'b']]

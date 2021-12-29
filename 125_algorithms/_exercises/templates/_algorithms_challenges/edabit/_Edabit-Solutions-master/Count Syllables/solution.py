@@ -1,5 +1,5 @@
 ___ number_syllables(word):
-    return word.count("-") + 1
+    r.. word.c.. "-") + 1
 
 
 ___ test():

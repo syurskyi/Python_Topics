@@ -1,6 +1,6 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
-from collections import namedtuple
-import re
+____ collections _______ namedtuple
+_______ re
 
 social_platforms = """Twitter
   Min: 1
@@ -25,11 +25,11 @@ Validator = namedtuple('Validator', 'range regex')
 ___ parse_social_platforms_string():
     """Convert the social_platforms string above into a dict where
        keys = social platformsname and values = validator namedtuples"""
-    result = dict()
+    result = d..()
     plat = re.findall(r'(\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
-    for p in plat:
-        result[p[0]] = Validator(range(int(p[1]), int(p[2])), re.compile(rf'^[{re.sub(r" ", "", p[3])}]*$'))
-    return result
+    ___ p __ plat:
+        result[p[0]] = Validator(r..(int(p[1]), int(p[2])), re.compile(rf'^[{re.sub(r" ", "", p[3])}]*$'))
+    r.. result
 
 
 ___ validate_username(platform, username):
@@ -37,9 +37,9 @@ ___ validate_username(platform, username):
        raise a ValueError if the wrong platform is passed in,
        return True/False if username is valid for entered platform"""
     all_validators = parse_social_platforms_string()
-    __ platform not in all_validators:
+    __ platform n.. __ all_validators:
         raise ValueError
     plat = all_validators[platform]
-    plat_range = len(username) in plat.range
-    plat_match = plat.regex.match(username) is not None
-    return plat_range and plat_match
+    plat_range = l..(username) __ plat.r..
+    plat_match = plat.regex.match(username) __ n.. N..
+    r.. plat_range and plat_match

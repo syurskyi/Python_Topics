@@ -16,11 +16,11 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        return int(
+        r.. int(
             (2*n + 1/4)**(1/2)  - 1/2
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().arrangeCoins(5) == 2
-    assert Solution().arrangeCoins(8) == 3
+__ __name__ __ "__main__":
+    ... Solution().arrangeCoins(5) __ 2
+    ... Solution().arrangeCoins(8) __ 3

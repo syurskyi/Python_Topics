@@ -17,13 +17,13 @@ class Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump(self, A):
-        n = len(A)
-        __ n == 1:
-            return True
+        n = l..(A)
+        __ n __ 1:
+            r.. True
         t = 0  # Number of remaining steps
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             # t is max number of steps that remained if reaching A[i]
             t = max(t, A[i - 1]) - 1
             __ t < 0:
-                return False
-        return True
+                r.. False
+        r.. True

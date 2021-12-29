@@ -10,30 +10,30 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        length = len(citations)
+        length = l..(citations)
         count = [0]*(length+1)
-        for c in citations:
+        ___ c __ citations:
             __ c > length:
                 count[length]+=1
-            else:
+            ____:
                 count[c]+=1
         total = 0
         print('count: %s' % (count))
-        for i in range(length, -1, -1):
+        ___ i __ r..(length, -1, -1):
             total += count[i]
             __ total >= i:
-                return i
-        return 0
+                r.. i
+        r.. 0
     
     ___ test(self):
         testCases = [
             [3, 0, 6, 1, 5],
         ]
-        for citations in testCases:
+        ___ citations __ testCases:
             print('citations: %s' % (citations))
             result = self.hIndex(citations)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -2,7 +2,7 @@
 Validate Sudoku with size `NxN`
 http://www.codewars.com/kata/540afbe2dc9f615d5e000425/train/python
 """
-from math import sqrt
+____ math _______ sqrt
 
 
 class Sudoku(object):
@@ -12,35 +12,35 @@ class Sudoku(object):
         self.block_len = 0
 
     ___ is_valid(self):
-        self.n = len(self.sudoku)
+        self.n = l..(self.sudoku)
         try:
             self.block_len = int(sqrt(self.n))
         except ValueError:
-            return False
-        __ any([len(row) != self.n for row in self.sudoku]):
-            return False
-        return all([self._is_valid_row(i)
+            r.. False
+        __ any([l..(row) != self.n ___ row __ self.sudoku]):
+            r.. False
+        r.. a..([self._is_valid_row(i)
                     and self._is_valid_column(i)
                     and self._is_valid_block(i)
-                    for i in range(self.n)])
+                    ___ i __ r..(self.n)])
 
     ___ _is_valid_row(self, row_num):
-        return self._is_valid_set(set(self.sudoku[row_num]))
+        r.. self._is_valid_set(set(self.sudoku[row_num]))
 
     ___ _is_valid_column(self, column_num):
-        return self._is_valid_set(set([self.sudoku[r][column_num] for r in range(self.n)]))
+        r.. self._is_valid_set(set([self.sudoku[r][column_num] ___ r __ r..(self.n)]))
 
     ___ _is_valid_block(self, block_num):
         block_row_num, block_column_num = divmod(block_num, self.block_len)
         block_row, block_column = block_row_num * self.block_len, block_column_num * self.block_len
         block_set = set()
-        for r in range(block_row, block_row + self.block_len):
-            for c in range(block_column, block_column + self.block_len):
+        ___ r __ r..(block_row, block_row + self.block_len):
+            ___ c __ r..(block_column, block_column + self.block_len):
                 block_set.add(self.sudoku[r][c])
-        return self._is_valid_set(block_set)
+        r.. self._is_valid_set(block_set)
 
     ___ _is_valid_set(self, num_set):
-        return len(num_set) == self.n \
-               and max(num_set) == self.n \
-               and min(num_set) == 1 \
-               and all(type(i) is int for i in num_set)
+        r.. l..(num_set) __ self.n \
+               and max(num_set) __ self.n \
+               and m..(num_set) __ 1 \
+               and a..(type(i) __ int ___ i __ num_set)

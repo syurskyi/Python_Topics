@@ -1,10 +1,10 @@
-from typing import Optional
+____ typing _______ Optional
 
-import numpy as np
+_______ numpy as np
 
 
 ___ convolution2D(
-    image: np.array, kernel: np.array, padding: Optional[int] = None, stride: int = 1
+    image: np.array, kernel: np.array, padding: Optional[int] = N.., stride: int = 1
 ) -> np.array:
     """Calculate the convolution between the input image and a filter, returning the feature map.
 
@@ -20,25 +20,25 @@ ___ convolution2D(
 
     arrays = (image,kernel)
     # assert that both are 2D numpy arrays
-    __ not all(isinstance(array,np.ndarray) for array in arrays):
+    __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays):
         raise TypeError("image and kernel must be numpy arrays of dimension 2")
 
-    __ not all(array.ndim == 2 for array in arrays):
+    __ n.. a..(array.ndim __ 2 ___ array __ arrays):
         raise ValueError("kernel and filter must be size 2")
         
-    is_not_integer = lambda x: not isinstance(x,int) or (isinstance(x,float) and not x.is_integer())
+    is_not_integer = l.... x: n.. isi..(x,int) o. (isi..(x,float) and n.. x.is_integer())
     
     
-    __ not all(array.shape[0] == array.shape[1] for array in arrays):
+    __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):
         raise ValueError("Height must equal width for both kernel and image")
     
 
-    __ not all(np.issubdtype(array.dtype,np.number) for array in arrays):
+    __ n.. a..(np.issubdtype(array.dtype,np.number) ___ array __ arrays):
         raise TypeError("Kernel and image must contain only numeric values")
 
 
 
-    __ kernel.shape[0] % 2 == 0:
+    __ kernel.shape[0] % 2 __ 0:
         raise ValueError("Kernel size must be odd")
 
 
@@ -53,20 +53,20 @@ ___ convolution2D(
 
     
     true_values =[]
-    for value,type_,min_ in zip(values,types,mins):
-        __ value is not None:
+    ___ value,type_,min_ __ zip(values,types,mins):
+        __ value __ n.. N..
             __ is_not_integer(value):
                 raise TypeError(f"{type_} must be integer")
-            __ not value >= min_:
+            __ n.. value >= min_:
                 raise ValueError(f"{type_}, must be greater than zero")
     
 
     stride = int(stride) # inc ase they passed a value like 2.0
 
              
-    __ padding is None:
+    __ padding __ N..
         padding = (kernel.shape[0] - 1)//2
-    else:
+    ____:
         padding = int(padding)
 
 
@@ -86,19 +86,19 @@ ___ convolution2D(
 
     output_row = output_col = 0
 
-    for row in range(0,rows,stride):
+    ___ row __ r..(0,rows,stride):
         __ row + (kernel_size - 1) >= rows:
             break
 
-        for col in range(0,cols,stride):
+        ___ col __ r..(0,cols,stride):
             __ col + (kernel_size - 1) >= cols:
                 break
 
             
             sum_ = 0
-            for row_diff in range(kernel_size):
+            ___ row_diff __ r..(kernel_size):
                 current_row = row + row_diff
-                for col_diff in range(kernel_size):
+                ___ col_diff __ r..(kernel_size):
                     current_col = col + col_diff
 
                     sum_ += image[current_row][current_col] * kernel[row_diff][col_diff]
@@ -112,12 +112,12 @@ ___ convolution2D(
 
 
 
-    return output_array
+    r.. output_array
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     image = np.array([[1, 1, 1, 1, 1],
            [1, 0, 0, 0, 1],
            [1, 0, 0, 0, 1],

@@ -1,12 +1,12 @@
-from datetime import datetime
+____ datetime _______ datetime
 
 
 ___ ontrack_reading(books_goal: int, books_read: int,
-                    day_of_year: int = None) -> bool:
+                    day_of_year: int = N..) -> bool:
 
     days_in_year = 365
     
-    __ day_of_year == None:
+    __ day_of_year __ N..
         day_of_year = datetime.today().timetuple().tm_yday
 
     __ books_goal != books_read and books_read != 0:
@@ -14,12 +14,12 @@ ___ ontrack_reading(books_goal: int, books_read: int,
         remaining_days = days_in_year - day_of_year
 
         __ (books_goal - books_read) * book_per_days < remaining_days :
-            return True
+            r.. True
 
-    __ books_goal == books_read and day_of_year <= days_in_year:
-        return True
+    __ books_goal __ books_read and day_of_year <= days_in_year:
+        r.. True
 
-    return False
+    r.. False
 
 
 # if __name__ == "__main__":

@@ -1,6 +1,6 @@
-from collections import Counter
-import csv
-import requests
+____ collections _______ Counter
+_______ csv
+_______ requests
 
 
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
@@ -10,7 +10,7 @@ FMT_STR = '{tz:21}| {bar}'
 ___ get_csv():
     """Use requests to download the csv and return the
        decoded content"""
-    return requests.get(url=CSV_URL).content.decode()
+    r.. requests.get(url=CSV_URL).content.decode()
 
 
 ___ create_user_bar_chart(content):
@@ -18,8 +18,8 @@ ___ create_user_bar_chart(content):
        and their corresponding member counts in pluses to standard output
     """
     rows = csv.DictReader(content.splitlines())
-    counts = sorted(Counter([r['tz'] for r in rows]).items(),
-                    key=lambda x: x[0])
+    counts = s..(Counter([r['tz'] ___ r __ rows]).items(),
+                    key=l.... x: x[0])
 
-    for c in counts:
+    ___ c __ counts:
         print(FMT_STR.format(tz=c[0], bar='+' * c[1]))

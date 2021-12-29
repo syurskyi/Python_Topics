@@ -32,28 +32,28 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        num_n = None
-        n = len(nums)
+        num_n = N..
+        n = l..(nums)
 
         i = 0
         while i < n:
-            __ nums[i] == n:
+            __ nums[i] __ n:
                 num_n = nums[i]
-                nums[i] = None
+                nums[i] = N..
                 i += 1
 
-            elif nums[i] is not None and nums[i] != i:
+            ____ nums[i] __ n.. N.. and nums[i] != i:
                 j = nums[i]
                 nums[i], nums[j] = nums[j], nums[i]
 
-            else:
+            ____:
                 i += 1
 
-        __ not num_n:
-            return n
+        __ n.. num_n:
+            r.. n
 
-        return nums.index(None)
+        r.. nums.index(N..)
 
 
-__ __name__ == "__main__":
-    assert Solution().missingNumber([2, 0]) == 1
+__ __name__ __ "__main__":
+    ... Solution().missingNumber([2, 0]) __ 1

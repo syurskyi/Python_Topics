@@ -7,19 +7,19 @@ Created on Mar 2, 2017
 class Solution(object):
     ___ validTree(self, n, edges):
         roots = [-1]*n
-        for e in edges:
+        ___ e __ edges:
             root0 = self.findRoot(roots, e[0])
             root1 = self.findRoot(roots, e[1])
             __ root0 != root1:
                 roots[root0] = root1
-            else:
-                return False
-        return len(edges) == n-1
+            ____:
+                r.. False
+        r.. l..(edges) __ n-1
     
     ___ findRoot(self, roots, ind):
         while roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r.. ind
     
     ___ validTreeBFS(self, n, edges):
         """
@@ -28,49 +28,49 @@ class Solution(object):
         :rtype: bool
         """
         hashmap = {}
-        for i in range(n):
-            hashmap[i] = []
-        for edge in edges:
-            hashmap[edge[0]].append(edge[1])
-            hashmap[edge[1]].append(edge[0])
-        queue = []
-        queue.append(0)
+        ___ i __ r..(n):
+            hashmap[i]    # list
+        ___ edge __ edges:
+            hashmap[edge[0]].a..(edge[1])
+            hashmap[edge[1]].a..(edge[0])
+        queue    # list
+        queue.a..(0)
         visited = [False]*n
         while queue:
             top = queue[0]
             queue.pop(0)
             __ visited[top]:
-                return False
+                r.. False
             visited[top] = True
-            for i in hashmap[top]:
-                __ not visited[i]:
-                    queue.append(i)
-        for b in visited:
-            __ not b:
-                return False
-        return True
+            ___ i __ hashmap[top]:
+                __ n.. visited[i]:
+                    queue.a..(i)
+        ___ b __ visited:
+            __ n.. b:
+                r.. False
+        r.. True
     
     ___ validTreeDFS(self, n, edges):
         hashmap = {}
-        for i in range(n):
-            hashmap[i] = []
-        for edge in edges:
-            hashmap[edge[0]].append(edge[1])
-            hashmap[edge[1]].append(edge[0])
+        ___ i __ r..(n):
+            hashmap[i]    # list
+        ___ edge __ edges:
+            hashmap[edge[0]].a..(edge[1])
+            hashmap[edge[1]].a..(edge[0])
         visited = [False]*n
-        __ not self.helper(0, -1, hashmap, visited):
-            return False
-        for b in visited:
-            __ not b: return False
-        return True
+        __ n.. self.helper(0, -1, hashmap, visited):
+            r.. False
+        ___ b __ visited:
+            __ n.. b: r.. False
+        r.. True
     
     ___ helper(self, curr, parent, hashmap, visited):
-        __ visited[curr]: return False
+        __ visited[curr]: r.. False
         visited[curr] = True
-        for i in hashmap[curr]:
-            __ i != parent and not self.helper(i, curr, hashmap, visited):
-                return False
-        return True
+        ___ i __ hashmap[curr]:
+            __ i != parent and n.. self.helper(i, curr, hashmap, visited):
+                r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -87,12 +87,12 @@ class Solution(object):
                 [[0,1],[1,2],[2,0],[3,4],[4,5]],
             ],
         ]
-        for n, edges in testCases:
+        ___ n, edges __ testCases:
             print('n: %s' % (n))
             print('edges: %s' % (edges))
             result = self.validTree(n, edges)
             print('result: %s' % (result))
             print('-='*20+'-')
         
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

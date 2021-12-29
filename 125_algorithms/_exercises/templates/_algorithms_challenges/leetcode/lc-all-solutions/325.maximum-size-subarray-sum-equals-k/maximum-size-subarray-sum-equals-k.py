@@ -8,10 +8,10 @@ class Solution(object):
     d = {0: -1}
     maxLen = 0
     _sum = 0
-    for i in range(0, len(nums)):
+    ___ i __ r..(0, l..(nums)):
       _sum += nums[i]
-      __ _sum not in d:
+      __ _sum n.. __ d:
         d[_sum] = i
-      __ _sum - k in d:
+      __ _sum - k __ d:
         maxLen = max(maxLen, i - d[_sum - k])
-    return maxLen
+    r.. maxLen

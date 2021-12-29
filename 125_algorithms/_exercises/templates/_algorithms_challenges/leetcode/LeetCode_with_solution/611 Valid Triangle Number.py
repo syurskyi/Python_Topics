@@ -16,7 +16,7 @@ Note:
 The length of the given array won't exceed 1000.
 The integers in the given array are in the range of [0, 1000].
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -31,18 +31,18 @@ class Solution:
         """
         ret = 0
         nums.sort()
-        n = len(nums)
-        for k in range(n-1, 1, -1):
+        n = l..(nums)
+        ___ k __ r..(n-1, 1, -1):
             i = 0
             j = k - 1
             while i < j:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += j - i  # move i will always satisfy the constraint
                     j -= 1  # to break
-                else:
+                ____:
                     i += 1  # to satisfy
 
-        return ret
+        r.. ret
 
     ___ triangleNumber_error(self, nums: List[int]) -> int:
         """
@@ -55,8 +55,8 @@ class Solution:
         """
         ret = 0
         nums.sort()
-        n = len(nums)
-        for i in range(n - 2):
+        n = l..(nums)
+        ___ i __ r..(n - 2):
             j = i + 1
             k = n - 1
             while j < k:
@@ -64,10 +64,10 @@ class Solution:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += k - j
                     k -= 1
-                else:
+                ____:
                     j += 1
 
-        return ret
+        r.. ret
 
     ___ triangleNumber_slow(self, nums: List[int]) -> int:
         """
@@ -78,22 +78,22 @@ class Solution:
         """
         cache = {}
         nums.sort()
-        n = len(nums)
+        n = l..(nums)
         ret = 0
-        for i in range(n):
-            for j in range(i + 1, n):
-                __ (i, j) not in cache:
+        ___ i __ r..(n):
+            ___ j __ r..(i + 1, n):
+                __ (i, j) n.. __ cache:
                     cur = 0
-                    for k in range(j + 1, n):
+                    ___ k __ r..(j + 1, n):
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
-                        else:
+                        ____:
                             break
                     cache[(i, j)] = cur
                 ret += cache[(i, j)]
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().triangleNumber([2,2,3,4]) == 3
+__ __name__ __ "__main__":
+    ... Solution().triangleNumber([2,2,3,4]) __ 3

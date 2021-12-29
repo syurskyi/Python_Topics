@@ -8,49 +8,49 @@ class Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ sortList(self, head):
-        __ head is None or head.next is None:
-            return head
+        __ head __ N.. o. head.next __ N..
+            r.. head
         # Find the middle node
         slow = head
         fast = head
         prev = head  # Previous node to slow
-        while fast is not None and fast.next is not None:
+        while fast __ n.. N.. and fast.next __ n.. N..
             prev = slow
             slow = slow.next
             fast = fast.next.next
         # Split into two lists
         left = head
-        right = None
+        right = N..
         __ slow != fast:
-            prev.next = None
+            prev.next = N..
             right = slow
         left = self.sortList(left)
         right = self.sortList(right)
-        return self.merge(left, right)
+        r.. self.merge(left, right)
 
     ___ merge(self, l1, l2):
-        __ l1 is None:
-            return l2
-        __ l2 is None:
-            return l1
-        res = None
+        __ l1 __ N..
+            r.. l2
+        __ l2 __ N..
+            r.. l1
+        res = N..
         end = res
-        while l1 is not None and l2 is not None:
+        while l1 __ n.. N.. and l2 __ n.. N..
             __ l1.val < l2.val:
                 small = l1
                 l1 = l1.next
-            else:
+            ____:
                 small = l2
                 l2 = l2.next
             # First node
-            __ res is None:
+            __ res __ N..
                 res = small
                 end = res
-            else:
+            ____:
                 end.next = small
                 end = end.next
-        __ l1 is not None:
+        __ l1 __ n.. N..
             end.next = l1
-        __ l2 is not None:
+        __ l2 __ n.. N..
             end.next = l2
-        return res
+        r.. res

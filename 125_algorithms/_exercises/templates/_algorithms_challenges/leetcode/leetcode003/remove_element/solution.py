@@ -13,10 +13,10 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         j = 0
-        for i in range(n):
+        ___ i __ r..(n):
             __ nums[i] != val:
                 nums[j] = nums[i]
                 j += 1
-        return j
+        r.. j

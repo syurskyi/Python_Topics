@@ -3,9 +3,9 @@ ___ positive_divide(numerator, denominator):
         output = numerator / denominator        
         __ output < 0:
             raise ValueError
-        __ not isinstance(output, (int, float)):
+        __ n.. isi..(output, (int, float)):
             print('Values must be numbers.')
-        else:
-            return output
+        ____:
+            r.. output
     except ZeroDivisionError:
-        return 0
+        r.. 0

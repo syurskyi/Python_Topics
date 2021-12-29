@@ -9,37 +9,37 @@ class Solution(object):
         :type board: List[List[int]]
         :rtype: int
         """
-        s = ''.join([str(n) for n in board[0]])+''.join([str(n) for n in board[1]])
+        s = ''.join([str(n) ___ n __ board[0]])+''.join([str(n) ___ n __ board[1]])
         visited = set([s])
         target = '123450'
         queue = [s]
         res = 0
         while queue:
-            size = len(queue)
-            for _ in range(size):
+            size = l..(queue)
+            ___ _ __ r..(size):
                 s = queue.pop(0)
-                __ s == target:
-                    return res
+                __ s __ target:
+                    r.. res
                 i = s.index('0')
-                for j in [i+1, i-1, i+3, i-3]:
-                    __ j < 0 or j > 5 or\
-                        (i == 2 and j == 3) or\
-                        (i == 3 and j == 2):
+                ___ j __ [i+1, i-1, i+3, i-3]:
+                    __ j < 0 o. j > 5 o.\
+                        (i __ 2 and j __ 3) o.\
+                        (i __ 3 and j __ 2):
                         continue
-                    arr = list(s)
+                    arr = l..(s)
                     arr[i], arr[j] = arr[j], arr[i]
                     newS = ''.join(arr)
-                    __ newS not in visited:
+                    __ newS n.. __ visited:
                         visited.add(newS)
-                        queue.append(newS)
+                        queue.a..(newS)
             res += 1
-        return -1
+        r.. -1
     
     ___ getZero(self, board):
-        for i in range(2):
-            for j in range(3):
-                __ board[i][j] == 0:
-                    return i, j
+        ___ i __ r..(2):
+            ___ j __ r..(3):
+                __ board[i][j] __ 0:
+                    r.. i, j
     
     ___ test(self):
         testCases = [
@@ -48,12 +48,12 @@ class Solution(object):
             [[4,1,2],[5,0,3]],
             [[3,2,4],[1,5,0]],
         ]
-        for board in testCases:
+        ___ board __ testCases:
             print('board')
-            print('\n'.join([str(row) for row in board]))
+            print('\n'.join([str(row) ___ row __ board]))
             result = self.slidingPuzzle(board)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

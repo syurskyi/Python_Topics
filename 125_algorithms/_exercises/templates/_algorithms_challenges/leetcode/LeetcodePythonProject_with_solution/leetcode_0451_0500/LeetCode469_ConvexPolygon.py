@@ -11,22 +11,22 @@ class Solution(object):
         :rtype: bool
         """
         gotNegative, gotPositive = False, False
-        length = len(points)
-        for i in range(length):
+        length = l..(points)
+        ___ i __ r..(length):
             a = points[i-1]
             b = points[i]
             c = points[(i+1)%length]
             crossProduct = self.crossProductLength(a[0], a[1], b[0], b[1], c[0], c[1])
             __ crossProduct < 0:
                 gotNegative = True
-            elif crossProduct > 0:
+            ____ crossProduct > 0:
                 gotPositive = True
-            __ gotNegative and gotPositive: return False
-        return True
+            __ gotNegative and gotPositive: r.. False
+        r.. True
     
     ___ crossProductLength(self, ax, ay, bx, by, cx, cy):
         bax = ax-bx
         bay = ay-by
         bcx = cx-bx
         bcy = cy-by
-        return (bax*bcy-bay*bcx)
+        r.. (bax*bcy-bay*bcx)

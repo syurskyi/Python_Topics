@@ -5,20 +5,20 @@ class Solution:
     @return: a boolean
     """
     ___ Permutation(self, A, B):
-        __ A is '' and B is '':
-            return True
-        __ not A or not B:
-            return False
+        __ A __ '' and B __ '':
+            r.. True
+        __ n.. A o. n.. B:
+            r.. False
 
         cnts = {}
-        for char in A:
+        ___ char __ A:
             cnts[char] = cnts.get(char, 0) + 1
-        for char in B:
-            __ char not in cnts or cnts[char] == 0:
-                return False
+        ___ char __ B:
+            __ char n.. __ cnts o. cnts[char] __ 0:
+                r.. False
             cnts[char] -= 1
-        for cnt in cnts.values():
+        ___ cnt __ cnts.values():
             __ cnt != 0:
-                return False
+                r.. False
 
-        return True
+        r.. True

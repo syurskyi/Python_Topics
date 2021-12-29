@@ -4,25 +4,25 @@ class Solution:
     @return: An integer indicate the value of maximum difference between two substrings
     """
     ___ maxDiffSubArrays(self, A):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        B = [-1 * num for num in A]
-        Lmin = self.get_sum(B, range(n), factor=-1)
-        Lmax = self.get_sum(A, range(n), factor=1)
-        Rmin = self.get_sum(B, range(n - 1, -1, -1), factor=-1)
-        Rmax = self.get_sum(A, range(n - 1, -1, -1), factor=1)
+        n = l..(A)
+        B = [-1 * num ___ num __ A]
+        Lmin = self.get_sum(B, r..(n), factor=-1)
+        Lmax = self.get_sum(A, r..(n), factor=1)
+        Rmin = self.get_sum(B, r..(n - 1, -1, -1), factor=-1)
+        Rmax = self.get_sum(A, r..(n - 1, -1, -1), factor=1)
 
         ans = float('-inf')
-        for i in range(n - 1):
+        ___ i __ r..(n - 1):
             ans = max(
                 ans,
                 Lmax[i] - Rmin[i + 1],
                 Rmax[i + 1] - Lmin[i]
             )
 
-        return ans
+        r.. ans
 
     ___ get_sum(self, A, scope, factor):
         """
@@ -30,11 +30,11 @@ class Solution:
         factor == -1: min sum
         """
 
-        M = [0] * len(A)
+        M = [0] * l..(A)
         Smax = float('-inf')
         S = Smin = 0
 
-        for i in scope:
+        ___ i __ scope:
             S += A[i]
             __ S - Smin > Smax:
                 Smax = S - Smin
@@ -42,4 +42,4 @@ class Solution:
                 Smin = S
             M[i] = Smax * factor
 
-        return M
+        r.. M

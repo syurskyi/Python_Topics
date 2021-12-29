@@ -1,5 +1,5 @@
-import sys
-import unicodedata
+_______ sys
+_______ unicodedata
 
 
 START_EMOJI_RANGE = 100000  # estimate
@@ -9,9 +9,9 @@ ___ what_means_emoji(emoji):
     """Receives emoji and returns its meaning,
        in case of a TypeError return 'Not found'"""
     try:
-        return unicodedata.name(emoji)
+        r.. unicodedata.name(emoji)
     except TypeError:
-        return 'Not found'
+        r.. 'Not found'
 
 
 ___ _make_emoji_mapping():
@@ -23,14 +23,14 @@ ___ _make_emoji_mapping():
     mapping = {}
 
 
-    for i in range(START_EMOJI_RANGE,sys.maxunicode + 1):
+    ___ i __ r..(START_EMOJI_RANGE,sys.maxunicode + 1):
         try:
             meaning = what_means_emoji(chr(i))
             mapping[chr(i)] = meaning
         except:
             pass
 
-    return mapping
+    r.. mapping
 
 
 
@@ -43,8 +43,8 @@ ___ find_emoji(term):
 
     # ... your turn ...
 
-    for emoji,meaning in emoji_mapping.items():
-        __ term in meaning.lower():
+    ___ emoji,meaning __ emoji_mapping.items():
+        __ term __ meaning.lower():
             print(meaning,emoji)
 
 

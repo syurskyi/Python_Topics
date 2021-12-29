@@ -3,15 +3,15 @@ class Solution:
     # @return a list of lists of integer
     ___ subsets(self, S):
         S.sort()
-        cand = []
-        res = []
+        cand    # list
+        res    # list
         self.subsets_aux(S, cand, res)
-        return res
+        r.. res
 
     ___ subsets_aux(self, S, cand, res):
-        res.append(cand[:])
-        for i, e in enumerate(S):
-            cand.append(S[i])
+        res.a..(cand[:])
+        ___ i, e __ enumerate(S):
+            cand.a..(S[i])
             self.subsets_aux(S[i + 1:], cand, res)
             cand.pop()
 

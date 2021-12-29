@@ -20,47 +20,47 @@ class MiniTwitter:
     @return: a tweet
     """
     ___ postTweet(self, user_id, tweet_text):
-        __ user_id not in self.tweets:
-            self.tweets[user_id] = []
+        __ user_id n.. __ self.tweets:
+            self.tweets[user_id]    # list
 
         self.timestamp += 1
-        self.tweets[user_id].append((
+        self.tweets[user_id].a..((
             self.timestamp,
             Tweet.create(user_id, tweet_text),
         ))
 
-        return self.tweets[user_id][-1][1]
+        r.. self.tweets[user_id][-1][1]
 
     """
     @param: user_id: An integer
     @return: a list of 10 new feeds recently and sort by timeline
     """
     ___ getNewsFeed(self, user_id):
-        res = []
+        res    # list
 
-        __ user_id in self.tweets:
+        __ user_id __ self.tweets:
             res.extend(self.tweets[user_id][-10:])
 
-        __ user_id in self.followings:
-            for follow_id in self.followings[user_id]:
-                __ follow_id in self.tweets:
+        __ user_id __ self.followings:
+            ___ follow_id __ self.followings[user_id]:
+                __ follow_id __ self.tweets:
                     res.extend(self.tweets[follow_id][-10:])
 
-        __ not res:
-            return []
+        __ n.. res:
+            r.. []
 
         res.sort()
-        return [tweet for _, tweet in res[-10:]][::-1]
+        r.. [tweet ___ _, tweet __ res[-10:]][::-1]
 
     """
     @param: user_id: An integer
     @return: a list of 10 new posts recently and sort by timeline
     """
     ___ getTimeline(self, user_id):
-        __ user_id not in self.tweets:
-            return []
+        __ user_id n.. __ self.tweets:
+            r.. []
 
-        return [tweet for _, tweet in self.tweets[user_id][-10:]][::-1]
+        r.. [tweet ___ _, tweet __ self.tweets[user_id][-10:]][::-1]
 
     """
     @param: from_id: An integer
@@ -68,11 +68,11 @@ class MiniTwitter:
     @return: nothing
     """
     ___ follow(self, from_id, to_id):
-        __ from_id not in self.followings:
+        __ from_id n.. __ self.followings:
             self.followings[from_id] = set()
 
-        __ to_id in self.followings[from_id]:
-            return
+        __ to_id __ self.followings[from_id]:
+            r..
 
         self.followings[from_id].add(to_id)
 
@@ -82,10 +82,10 @@ class MiniTwitter:
     @return: nothing
     """
     ___ unfollow(self, from_id, to_id):
-        __ from_id not in self.followings:
-            return
+        __ from_id n.. __ self.followings:
+            r..
 
-        __ to_id not in self.followings[from_id]:
-            return
+        __ to_id n.. __ self.followings[from_id]:
+            r..
 
         self.followings[from_id].discard(to_id)

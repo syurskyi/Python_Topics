@@ -1,12 +1,12 @@
-import pytest
+_______ pytest
 
-from pretty_string import pretty_string
+____ pretty_string _______ pretty_string
 
 
 @pytest.mark.parametrize(
     "input_obj, expected_result",
     [
-        (list(range(10)), "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"),
+        (l..(r..(10)), "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"),
         (
             [["A"] * 11, ["A"] * 12],
             (
@@ -57,4 +57,4 @@ from pretty_string import pretty_string
 )
 ___ test_pretty_str(input_obj, expected_result):
     result = pretty_string(input_obj)
-    assert result == expected_result
+    ... result __ expected_result

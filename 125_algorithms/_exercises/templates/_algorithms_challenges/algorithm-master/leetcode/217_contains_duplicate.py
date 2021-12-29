@@ -4,14 +4,14 @@ class Solution:
         :type A: List[int]
         :rtype: bool
         """
-        __ not A:
-            return False
+        __ n.. A:
+            r.. False
 
         S = set()
 
-        for a in A:
-            __ a in S:
-                return True
+        ___ a __ A:
+            __ a __ S:
+                r.. True
             S.add(a)
 
-        return False
+        r.. False

@@ -10,26 +10,26 @@ class Solution(object):
         :type grid: List[List[str]]
         :rtype: int
         """
-        __ not grid: return 0
-        m, n = len(grid), len(grid[0])
+        __ n.. grid: r.. 0
+        m, n = l..(grid), l..(grid[0])
         res = 0
-        for i in range(m):
-            for j in range(n):
-                __ grid[i][j] == '1':
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ grid[i][j] __ '1':
                     grid[i][j] = '#'
                     res += 1
                     self.bfs(grid, i, j)
-        return res
+        r.. res
     
     ___ bfs(self, grid, i, j):
         queue = [(i, j)]
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         while queue:
             i, j = queue.pop(0)
-            for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1):
-                __ 0 <= x < m and 0 <= y < n and grid[x][y] == '1':
+            ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
+                __ 0 <= x < m and 0 <= y < n and grid[x][y] __ '1':
                     grid[x][y] = '#'
-                    queue.append([x, y])
+                    queue.a..([x, y])
     
     ___ test(self):
         testCases = [
@@ -46,11 +46,11 @@ class Solution(object):
                 '00011',
             ],
         ]
-        for grid in testCases:
-            grid = [list(x) for x in grid]
+        ___ grid __ testCases:
+            grid = [l..(x) ___ x __ grid]
             result = self.numIslands(grid)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

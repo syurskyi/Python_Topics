@@ -18,26 +18,26 @@ class Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        timeline = []
+        timeline    # list
 
-        for interval in intervals:
-            timeline.append((interval.start, True))
-            timeline.append((interval.end, False))
+        ___ interval __ intervals:
+            timeline.a..((interval.start, True))
+            timeline.a..((interval.end, False))
 
         timeline.sort()
 
         cnt = 0
 
-        for time, is_start in timeline:
+        ___ time, is_start __ timeline:
             __ is_start:
                 cnt += 1
-            else:
+            ____:
                 cnt -= 1
 
             __ cnt > 1:
-                return False
+                r.. False
 
-        return True
+        r.. True
 
 
 """
@@ -51,10 +51,10 @@ class Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.sort(key=lambda x: (x.start, x.end))
+        intervals.sort(key=l.... x: (x.start, x.end))
 
-        for i in range(1, len(intervals)):
+        ___ i __ r..(1, l..(intervals)):
             __ intervals[i].start < intervals[i - 1].end:
-                return False
+                r.. False
 
-        return True
+        r.. True

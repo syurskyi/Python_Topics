@@ -6,7 +6,7 @@ class Codec:
     :type longUrl: str
     :rtype: str
     """
-    return longUrl
+    r.. longUrl
 
   ___ decode(self, shortUrl):
     """Decodes a shortened URL to its original URL.
@@ -14,7 +14,7 @@ class Codec:
     :type shortUrl: str
     :rtype: str
     """
-    return shortUrl
+    r.. shortUrl
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

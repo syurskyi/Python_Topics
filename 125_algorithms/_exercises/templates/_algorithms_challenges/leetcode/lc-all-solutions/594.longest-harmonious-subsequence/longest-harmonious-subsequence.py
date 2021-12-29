@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = 0
     d = collections.Counter(nums)
-    for num in nums:
-      __ num + 1 in d:
+    ___ num __ nums:
+      __ num + 1 __ d:
         ans = max(ans, d[num] + d[num + 1])
-    return ans
+    r.. ans

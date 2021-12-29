@@ -6,21 +6,21 @@ class Solution(object):
     """
     s = s.strip()
     sign = 1
-    __ not s:
-      return 0
-    __ s[0] in ["+", "-"]:
-      __ s[0] == "-":
+    __ n.. s:
+      r.. 0
+    __ s[0] __ ["+", "-"]:
+      __ s[0] __ "-":
         sign = -1
       s = s[1:]
     ans = 0
-    for c in s:
+    ___ c __ s:
       __ c.isdigit():
         ans = ans * 10 + int(c)
-      else:
+      ____:
         break
     ans *= sign
     __ ans > 2147483647:
-      return 2147483647
+      r.. 2147483647
     __ ans < -2147483648:
-      return -2147483648
-    return ans
+      r.. -2147483648
+    r.. ans

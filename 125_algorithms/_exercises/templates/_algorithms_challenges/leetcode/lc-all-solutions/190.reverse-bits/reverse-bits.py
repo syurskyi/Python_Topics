@@ -4,9 +4,9 @@ class Solution:
   ___ reverseBits(self, n):
     ans = 0
     mask = 1
-    for _ in range(32):
+    ___ _ __ r..(32):
       ans <<= 1
       __ mask & n:
         ans |= 1
       n >>= 1
-    return ans
+    r.. ans

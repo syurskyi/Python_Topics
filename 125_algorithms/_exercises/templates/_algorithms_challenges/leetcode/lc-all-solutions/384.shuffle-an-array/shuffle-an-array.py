@@ -7,7 +7,7 @@ class Solution(object):
     :type size: int
     """
     self.nums = nums
-    self.reset = lambda: self.nums
+    self.reset = l....: self.nums
 
   ___ shuffle(self):
     """
@@ -15,10 +15,10 @@ class Solution(object):
     :rtype: List[int]
     """
     nums = self.nums + []
-    for i in reversed(range(0, len(nums))):
+    ___ i __ reversed(r..(0, l..(nums))):
       idx = random.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]
-    return nums
+    r.. nums
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)

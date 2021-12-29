@@ -34,22 +34,22 @@ class NumMatrix(object):
         dp F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+mat[i][j]
         :type matrix: List[List[int]]
         """
-        m = len(matrix)
-        __ m == 0:
-            self.F = None
-            return
+        m = l..(matrix)
+        __ m __ 0:
+            self.F = N..
+            r..
 
-        n = len(matrix[0])
-        self.F = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
+        n = l..(matrix[0])
+        self.F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        ___ i __ xrange(1, m+1):
+            ___ j __ xrange(1, n+1):
                 self.F[i][j] = self.F[i-1][j]+self.F[i][j-1]-self.F[i-1][j-1]+matrix[i-1][j-1]
 
     ___ sumRegion(self, row1, col1, row2, col2):
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
         """
-        __ not self.F:
-            return 0
+        __ n.. self.F:
+            r.. 0
 
-        return self.F[row2+1][col2+1] - self.F[row2+1][col1] - self.F[row1][col2+1] + self.F[row1][col1]
+        r.. self.F[row2+1][col2+1] - self.F[row2+1][col1] - self.F[row1][col2+1] + self.F[row1][col1]

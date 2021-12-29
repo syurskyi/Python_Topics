@@ -10,33 +10,33 @@ class Solution(object):
         :type IP: str
         :rtype: str
         """
-        __ ':' in IP and self.checkIP6(IP):
-            return 'IPv6'
-        elif '.' in IP and self.checkIP4(IP):
-            return 'IPv4'
-        return 'Neither'
+        __ ':' __ IP and self.checkIP6(IP):
+            r.. 'IPv6'
+        ____ '.' __ IP and self.checkIP4(IP):
+            r.. 'IPv4'
+        r.. 'Neither'
     
     ___ checkIP4(self, ip):
         arr = ip.split('.')
-        __ len(arr) != 4: return False
-        for elem in arr:
-            __ not elem: return False
-            __ elem.startswith('0') and len(elem) > 1: return False
-            __ not elem.isdigit() or int(elem) > 255:
-                return False
-        return True
+        __ l..(arr) != 4: r.. False
+        ___ elem __ arr:
+            __ n.. elem: r.. False
+            __ elem.startswith('0') and l..(elem) > 1: r.. False
+            __ n.. elem.isdigit() o. int(elem) > 255:
+                r.. False
+        r.. True
     
     ___ checkIP6(self, ip):
         arr = ip.split(':')
-        __ len(arr) != 8: return False
-        digits = set(list('0123456789abcdefABCDEF'))
-        for i, elem in enumerate(arr):
-            __ i > 0 and len(elem) > 4: return False
-            __ i == 0 and len(elem) > 4:
-                __ elem[:len(elem)-4] != '0'*(len(elem)-4):
-                    return False
-            __ not elem: return False
-            for c in elem:
-                __ c not in digits:
-                    return False
-        return True
+        __ l..(arr) != 8: r.. False
+        digits = set(l..('0123456789abcdefABCDEF'))
+        ___ i, elem __ enumerate(arr):
+            __ i > 0 and l..(elem) > 4: r.. False
+            __ i __ 0 and l..(elem) > 4:
+                __ elem[:l..(elem)-4] != '0'*(l..(elem)-4):
+                    r.. False
+            __ n.. elem: r.. False
+            ___ c __ elem:
+                __ c n.. __ digits:
+                    r.. False
+        r.. True

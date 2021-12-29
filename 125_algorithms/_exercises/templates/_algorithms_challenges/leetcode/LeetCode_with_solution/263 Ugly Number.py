@@ -18,9 +18,9 @@ class Solution(object):
         :rtype: bool
         """
         __ num < 1:
-            return False
-        __ num == 1:
-            return True
+            r.. False
+        __ num __ 1:
+            r.. True
 
         ugly = {2, 3, 5}
 
@@ -28,12 +28,12 @@ class Solution(object):
         while prime*prime <= num and num > 1:
             __ num % prime != 0:
                 prime += 1
-            else:
+            ____:
                 num /= prime
-                __ prime not in ugly:
-                    return False
+                __ prime n.. __ ugly:
+                    r.. False
 
-        __ num not in ugly:
-            return False
+        __ num n.. __ ugly:
+            r.. False
 
-        return True
+        r.. True

@@ -6,18 +6,18 @@ Created on Apr 20, 2017
 
 class Solution(object):
     ___ deleteNode(self, root, key):
-        __ not root: return None
-        parent, node = self.findNode(key, root, None)
-        __ not node: return root
-        __ not parent:
-            return self.removeNode(node)
-        else:
+        __ n.. root: r.. N..
+        parent, node = self.findNode(key, root, N..)
+        __ n.. node: r.. root
+        __ n.. parent:
+            r.. self.removeNode(node)
+        ____:
             newNode = self.removeNode(node)
-            __ node == parent.left:
+            __ node __ parent.left:
                 parent.left = newNode
-            else:
+            ____:
                 parent.right = newNode
-            return root
+            r.. root
     
     ___ removeNode(self, node):
         __ node.right:
@@ -27,24 +27,24 @@ class Solution(object):
             while node.left:
                 node = node.left
             node.left = left
-            return newRoot
-        elif node.left:
+            r.. newRoot
+        ____ node.left:
             newRoot = node.left
             right = node.right
             node = newRoot
             while node.right:
                 node = node.right
             node.right = right
-            return newRoot
-        else:
-            return None
+            r.. newRoot
+        ____:
+            r.. N..
     
     ___ findNode(self, key, root, parent):
-        __ not root:
-            return None, None
-        __ root.val == key:
-            return parent, root
-        elif root.val > key:
-            return self.findNode(key, root.left, root)
-        else:
-            return self.findNode(key, root.right, root)
+        __ n.. root:
+            r.. N.., N..
+        __ root.val __ key:
+            r.. parent, root
+        ____ root.val > key:
+            r.. self.findNode(key, root.left, root)
+        ____:
+            r.. self.findNode(key, root.right, root)

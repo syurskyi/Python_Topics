@@ -11,21 +11,21 @@ ___ convert(number: int, base: int = 2) -> str:
     Returns:
         str: The returned value as a string
     """
-    __ (1 < base < 37) and (isinstance(number, int)):
+    __ (1 < base < 37) and (isi..(number, int)):
         base_num = ""
         while number>0:
             dig = int(number%base)
             __ dig<10:
                 base_num += str(dig)
-            else:
+            ____:
                 base_num += chr(ord('A')+dig-10)  #Using uppercase letters
             number //= base
 
         base_num = base_num[::-1]  #To reverse the string
-        return base_num
-    elif not (isinstance(number, int)):
+        r.. base_num
+    ____ n.. (isi..(number, int)):
         raise TypeError
-    else:
+    ____:
         raise ValueError
 
 #print(convert(128, 5))

@@ -4,6 +4,6 @@ ___ is_anagram(word1, word2):
        About anagrams: https://en.wikipedia.org/wiki/Anagram"""
     w1 = word1.lower().replace(' ', '')
     w2 = word2.lower().replace(' ', '')
-    __ len(w1) != len(w2):
-        return False
-    return all(x == y for x, y in zip(sorted(w1.lower()), sorted(w2.lower())))
+    __ l..(w1) != l..(w2):
+        r.. False
+    r.. a..(x __ y ___ x, y __ zip(s..(w1.lower()), s..(w2.lower())))

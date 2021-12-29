@@ -19,12 +19,12 @@ class Vector2D:
 
         :rtype: int
         """
-        ret = None
+        ret = N..
         __ self.hasNext():
             ret = self.vec2d[self.i][self.j]
             self.j += 1
 
-        return ret
+        r.. ret
 
     ___ hasNext(self):
         """
@@ -32,8 +32,8 @@ class Vector2D:
         :rtype: bool
         """
         # update
-        while self.i < len(self.vec2d) and self.j >= len(self.vec2d[self.i]):
+        while self.i < l..(self.vec2d) and self.j >= l..(self.vec2d[self.i]):
             self.i += 1
             self.j = 0
 
-        return self.i < len(self.vec2d) and self.j < len(self.vec2d[self.i])
+        r.. self.i < l..(self.vec2d) and self.j < l..(self.vec2d[self.i])

@@ -1,7 +1,7 @@
-import math
+_______ math
 
-for i in range(int(input())):
-    x1,y1,x2,y2,x3,y3 = list(map(int,input().split()))
+___ i __ r..(int(input())):
+    x1,y1,x2,y2,x3,y3 = l..(map(int,input().split()))
     
     #distance formula
 
@@ -18,7 +18,7 @@ for i in range(int(input())):
     __ (area - int(area)) > 0.5:
         area += 0.5
         area = int(area)
-    else:
+    ____:
         area = int(area)
     area = math.sqrt(area)
     print(area,end=' ')

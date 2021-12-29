@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
@@ -23,8 +23,8 @@ class Solution:
         cur = node
         while cur.next:
             cur.val = cur.next.val
-            __ not cur.next.next:
-                cur.next = None
+            __ n.. cur.next.next:
+                cur.next = N..
                 break
 
             cur = cur.next

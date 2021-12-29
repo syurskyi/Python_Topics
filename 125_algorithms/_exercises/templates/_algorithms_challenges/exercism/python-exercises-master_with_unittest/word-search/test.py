@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from word_search import WordSearch, Point
+____ word_search _______ WordSearch, Point
 
 
 class WordSearchTests(unittest.TestCase):
@@ -80,5 +80,5 @@ class WordSearchTests(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

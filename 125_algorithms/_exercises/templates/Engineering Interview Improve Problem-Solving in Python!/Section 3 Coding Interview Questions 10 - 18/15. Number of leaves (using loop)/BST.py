@@ -15,27 +15,27 @@ class BST:
             __ node.right:
                 #go right
                 self.insert(val, node.right)
-            else:
+            ____:
                 node.right  Node(val) #insert
-        elif val < node.val:
+        ____ val < node.val:
             __ node.left:
                 #go left
                 self.insert(val, node.left)
-            else:
+            ____:
                 node.left  Node(val)
-        else:
+        ____:
             print(val, " Already in tree")
 
     ___ number_of_leaves(self, node):
         __ node.left and node.right:
-            return self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
-        elif node.left:
-            return self.number_of_leaves(node.left)
-        elif node.right:
-            return self.number_of_leaves(node.right)
-        else:
+            r.. self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
+        ____ node.left:
+            r.. self.number_of_leaves(node.left)
+        ____ node.right:
+            r.. self.number_of_leaves(node.right)
+        ____:
             #leave
-            return 1
+            r.. 1
     
     ___ number_of_leaves_i(self):
         leaves  0
@@ -43,27 +43,27 @@ class BST:
         w___ nodes:
             node  nodes[0]
             __ node.left:
-                nodes.append(node.left)
+                nodes.a..(node.left)
             __ node.right:
-                nodes.append(node.right)
-            __ (not node.left) and (not node.right):
+                nodes.a..(node.right)
+            __ (n.. node.left) and (n.. node.right):
                 leaves + 1
             del nodes[0]
-        return leaves
+        r.. leaves
 
     ___ height(self, node):
         __ node.left and node.right:
             print(node.val, " Height of left ", self.height(node.left)," Hegiht of right ", self.height(node.right))
-            return 1 + max(self.height(node.left), self.height(node.right))
-        elif node.left:
+            r.. 1 + max(self.height(node.left), self.height(node.right))
+        ____ node.left:
             #print(node.val, self.height(node.left))
-            return 1 + self.height(node.left)
-        elif node.right:
+            r.. 1 + self.height(node.left)
+        ____ node.right:
             #print(node.val, self.height(node.right))
-            return 1 + self.height(node.right)
-        else:
+            r.. 1 + self.height(node.right)
+        ____:
             #print(node.val)
-            return 1
+            r.. 1
 
     ___ is_identical(self, second_root):
         nodes1  [self.root]
@@ -73,15 +73,15 @@ class BST:
             node2  nodes2[0]
             __ node.val __ node2.val:
                 __ node.left:
-                    nodes1.append(node.left)
+                    nodes1.a..(node.left)
                 __ node.right:
-                    nodes1.append(node.right)
+                    nodes1.a..(node.right)
                 __ node2.left:
-                    nodes2.append(node2.left)
+                    nodes2.a..(node2.left)
                 __ node2.right:
-                    nodes2.append(node2.right)
-            else:
-                return F..
+                    nodes2.a..(node2.right)
+            ____:
+                r.. F..
             del nodes1[0]
             del nodes2[0]
-        return len(nodes1) __ len(nodes2)
+        r.. l..(nodes1) __ l..(nodes2)

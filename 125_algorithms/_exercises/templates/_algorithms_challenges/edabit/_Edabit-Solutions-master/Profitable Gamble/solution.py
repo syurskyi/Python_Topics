@@ -1,5 +1,5 @@
 ___ profitable_gamble(prob, prize, pay):
     __ (prob * prize) > pay:
-        return True
-    else:
-        return False
+        r.. True
+    ____:
+        r.. False

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-from collections import namedtuple
+____ collections _______ namedtuple
 
 __author__ = 'Daniel'
 
@@ -12,12 +12,12 @@ class UnionFind(object):
     """
     ___ __init__(self, rows, cols):
         # hashing will cause TLE; use direct array access instead
-        self.pi = [-1 for _ in xrange(rows*cols)]  # item -> pi
-        self.sz = [-1 for _ in xrange(rows*cols)]  # root -> size
+        self.pi = [-1 ___ _ __ xrange(rows*cols)]  # item -> pi
+        self.sz = [-1 ___ _ __ xrange(rows*cols)]  # root -> size
         self.count = 0
 
     ___ add(self, item):
-        __ self.pi[item] == -1:
+        __ self.pi[item] __ -1:
             self.pi[item] = item
             self.sz[item] = 1
             self.count += 1
@@ -42,7 +42,7 @@ class UnionFind(object):
         __ item != pi:
             self.pi[item] = self._pi(pi)
 
-        return self.pi[item]
+        r.. self.pi[item]
 
 
 Op = namedtuple('Op', 'r c')  # row col
@@ -55,20 +55,20 @@ class Solution:
     ___ numIslands2(self, n, m, operators):
         rows = n
         cols = m
-        unroll = lambda x, y: x*cols + y  # hash will be slower
-        mat = [[0 for _ in xrange(cols)] for _ in xrange(rows)]
+        unroll = l.... x, y: x*cols + y  # hash will be slower
+        mat = [[0 ___ _ __ xrange(cols)] ___ _ __ xrange(rows)]
         uf = UnionFind(rows, cols)
-        ret = []
-        for op in operators:
+        ret    # list
+        ___ op __ operators:
             op = Op(r=op[0], c=op[1])
             uf.add(unroll(op.r, op.c))
             mat[op.r][op.c] = 1
-            for dir in self.dirs:
+            ___ dir __ self.dirs:
                 x1 = op.r+dir[0]
                 y1 = op.c+dir[1]
-                __ 0 <= x1 < rows and 0 <= y1 < cols and mat[x1][y1] == 1:
+                __ 0 <= x1 < rows and 0 <= y1 < cols and mat[x1][y1] __ 1:
                     uf.union(unroll(op.r, op.c), unroll(x1, y1))
 
-            ret.append(uf.count)
+            ret.a..(uf.count)
 
-        return ret
+        r.. ret

@@ -4,12 +4,12 @@ class Solution:
     @return: An integer, the minimum cost to paint all houses
     """
     ___ minCost(self, costs):
-        __ not costs:
-            return 0
+        __ n.. costs:
+            r.. 0
 
         INFINITY = float('inf')
-        m, n = len(costs), len(costs[0])
-        dp = [[0] * n for _ in range(2)]
+        m, n = l..(costs), l..(costs[0])
+        dp = [[0] * n ___ _ __ r..(2)]
 
         """
         i: `i`th house
@@ -17,18 +17,18 @@ class Solution:
         k: the used `k`th color in previous house
         """
         i = j = k = prev = curr = 0
-        for j in range(n):
+        ___ j __ r..(n):
             dp[0][j] = costs[0][j]
-        for i in range(1, m):
+        ___ i __ r..(1, m):
             prev = curr # (i - 1) % 2
             curr = i % 2
-            for j in range(n):
+            ___ j __ r..(n):
                 dp[curr][j] = INFINITY
-                for k in range(n):
+                ___ k __ r..(n):
                     __ k != j and dp[prev][k] + costs[i][j] < dp[curr][j]:
                         dp[curr][j] = dp[prev][k] + costs[i][j]
 
         """
         curr == (m - 1) % 2
         """
-        return min(dp[curr])
+        r.. m..(dp[curr])

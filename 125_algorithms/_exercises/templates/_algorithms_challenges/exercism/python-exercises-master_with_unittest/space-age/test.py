@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from space_age import SpaceAge
+____ space_age _______ SpaceAge
 
 
 class SpaceAgeTest(unittest.TestCase):
@@ -48,5 +48,5 @@ class SpaceAgeTest(unittest.TestCase):
         self.assertEqual(age.on_neptune(), 1.58)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

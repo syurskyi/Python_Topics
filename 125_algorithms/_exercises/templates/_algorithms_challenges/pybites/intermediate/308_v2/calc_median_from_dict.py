@@ -1,4 +1,4 @@
-___ calc_median_from_dict(d: dict) -> float:
+___ calc_median_from_dict(d: d..) -> float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -7,14 +7,14 @@ ___ calc_median_from_dict(d: dict) -> float:
     """
 
 
-    keys = sorted(d.keys())
+    keys = s..(d.keys())
 
-    total_values = sum(d.values())
+    total_values = s..(d.values())
 
     odd = False
-    __ total_values % 2 == 0:
+    __ total_values % 2 __ 0:
         median_count = total_values//2
-    else:
+    ____:
         odd = True
         median_count = total_values//2 + 1
 
@@ -25,12 +25,12 @@ ___ calc_median_from_dict(d: dict) -> float:
 
     s = 0
 
-    for i,key in enumerate(keys):
+    ___ i,key __ enumerate(keys):
         s += d[key]
         __ s >= median_count:
             __ odd:
-                return key
-            return key __ s > median_count else (key + keys[i +1])/2
+                r.. key
+            r.. key __ s > median_count ____ (key + keys[i +1])/2
 
     
 

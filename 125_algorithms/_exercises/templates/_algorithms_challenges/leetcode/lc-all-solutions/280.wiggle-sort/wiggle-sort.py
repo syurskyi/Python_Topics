@@ -1,4 +1,4 @@
-import random
+_______ random
 
 
 class Solution(object):
@@ -7,52 +7,52 @@ class Solution(object):
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ len(nums) <= 2:
+    __ l..(nums) <= 2:
       nums.sort()
-      return
+      r..
     numscopy = nums + []
-    mid = self.quickselect(0, len(nums) - 1, numscopy, len(nums) / 2 - 1)
-    ans = [mid] * len(nums)
+    mid = self.quickselect(0, l..(nums) - 1, numscopy, l..(nums) / 2 - 1)
+    ans = [mid] * l..(nums)
     print
     ans
-    __ len(nums) % 2 == 0:
-      l = len(nums) - 2
+    __ l..(nums) % 2 __ 0:
+      l = l..(nums) - 2
       r = 1
-      for i in range(0, len(nums)):
+      ___ i __ r..(0, l..(nums)):
         __ nums[i] < mid:
           ans[l] = nums[i]
           l -= 2
-        elif nums[i] > mid:
+        ____ nums[i] > mid:
           ans[r] = nums[i]
           r += 2
-    else:
+    ____:
       print
       'here'
       l = 0
-      r = len(nums) - 2
-      for i in range(0, len(nums)):
+      r = l..(nums) - 2
+      ___ i __ r..(0, l..(nums)):
         __ nums[i] < mid:
           ans[l] = nums[i]
           l += 2
-        elif nums[i] > mid:
+        ____ nums[i] > mid:
           ans[r] = nums[i]
           r -= 2
 
-    for i in range(0, len(nums)):
+    ___ i __ r..(0, l..(nums)):
       nums[i] = ans[i]
 
   ___ quickselect(self, start, end, A, k):
-    __ start == end:
-      return A[start]
+    __ start __ end:
+      r.. A[start]
 
     mid = self.partition(start, end, A)
 
-    __ mid == k:
-      return A[k]
-    elif mid > k:
-      return self.quickselect(start, mid - 1, A, k)
-    else:
-      return self.quickselect(mid + 1, end, A, k)
+    __ mid __ k:
+      r.. A[k]
+    ____ mid > k:
+      r.. self.quickselect(start, mid - 1, A, k)
+    ____:
+      r.. self.quickselect(mid + 1, end, A, k)
 
   ___ partition(self, start, end, A):
     left, right = start, end
@@ -65,4 +65,4 @@ class Solution(object):
         left += 1
       A[right] = A[left]
     A[left] = pivot
-    return left
+    r.. left

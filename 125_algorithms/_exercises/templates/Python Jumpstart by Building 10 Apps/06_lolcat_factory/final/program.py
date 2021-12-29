@@ -1,8 +1,8 @@
-import os
-import platform
-import subprocess
+_______ os
+_______ platform
+_______ subprocess
 
-import cat_service
+_______ cat_service
 
 
 ___ main():
@@ -24,17 +24,17 @@ ___ get_or_create_output_folder():
     folder  'cat_pictures'
     full_path  os.path.join(base_folder, folder)
 
-    __ not os.path.exists(full_path) or not os.path.isdir(full_path):
+    __ n.. os.path.exists(full_path) o. n.. os.path.isdir(full_path):
         print('Creating new directory at {}'.format(full_path))
         os.mkdir(full_path)
 
-    return full_path
+    r.. full_path
 
 
 ___ download_cats(folder):
     print('Contacting server to download cats...')
     cat_count  8
-    for i in range(1, cat_count + 1):
+    ___ i __ r..(1, cat_count + 1):
         name  'lolcat_{}'.format(i)
         print('Downloading cat ' + name)
         cat_service.get_cat(folder, name)
@@ -47,11 +47,11 @@ ___ display_cats(folder):
     print('Displaying cats in OS window.')
     __ platform.system() __ 'Darwin':
         subprocess.call(['open', folder])
-    elif platform.system() __ 'Windows':
+    ____ platform.system() __ 'Windows':
         subprocess.call(['explorer', folder])
-    elif platform.system() __ 'Linux':
+    ____ platform.system() __ 'Linux':
         subprocess.call(['xdg-open', folder])
-    else:
+    ____:
         print("We don't support your os: " + platform.system())
 
 

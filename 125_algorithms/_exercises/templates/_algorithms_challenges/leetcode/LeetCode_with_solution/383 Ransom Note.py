@@ -11,7 +11,7 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -25,12 +25,12 @@ class Solution(object):
         """
         d = defaultdict(int)
 
-        for e in magazine:
+        ___ e __ magazine:
             d[e] += 1
 
-        for e in ransomNote:
-            __ d[e] == 0:
-                return False
+        ___ e __ ransomNote:
+            __ d[e] __ 0:
+                r.. False
             d[e] -= 1
 
-        return True
+        r.. True

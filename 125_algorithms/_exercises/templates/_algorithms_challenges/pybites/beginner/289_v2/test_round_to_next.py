@@ -1,8 +1,8 @@
-from random import choice
+____ random _______ choice
 
-import pytest
+_______ pytest
 
-from round_to_next import round_to_next
+____ round_to_next _______ round_to_next
 
 
 @pytest.mark.parametrize('test_input, expected', [
@@ -19,4 +19,4 @@ from round_to_next import round_to_next
                         ((15, choice([3, 5, 15])), 15),
                          ])
 ___ test_round_to_next(test_input, expected):
-    assert round_to_next(*test_input) == expected
+    ... round_to_next(*test_input) __ expected

@@ -38,21 +38,21 @@ relationship between the input and the output.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ tree2str(self, t: TreeNode) -> str:
-        __ not t:
-            return ""
+        __ n.. t:
+            r.. ""
 
         left = self.tree2str(t.left)
         right = self.tree2str(t.right)
         ret = [str(t.val)]
-        __ left or right:
-            ret.append("(" + left + ")")
+        __ left o. right:
+            ret.a..("(" + left + ")")
         __ right:
-            ret.append("(" + right + ")")
+            ret.a..("(" + right + ")")
 
-        return "".join(ret)
+        r.. "".join(ret)

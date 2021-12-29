@@ -13,17 +13,17 @@ class Solution(object):
         :type Capital: List[int]
         :rtype: int
         """
-        import heapq
-        heapCap = []
-        heapPro = []
-        for c, p in zip(Capital, Profits):
+        _______ heapq
+        heapCap    # list
+        heapPro    # list
+        ___ c, p __ zip(Capital, Profits):
             heapq.heappush(heapCap, (c, p))
-        for _ in range(k):
+        ___ _ __ r..(k):
             while heapCap and heapCap[0][0] <= W:
                 c, p = heapq.heappop(heapCap)
                 heapq.heappush(heapPro, (-p, c))
-            __ not heapPro:
+            __ n.. heapPro:
                 break
             p, c = heapq.heappop(heapPro)
             W += -p
-        return W
+        r.. W

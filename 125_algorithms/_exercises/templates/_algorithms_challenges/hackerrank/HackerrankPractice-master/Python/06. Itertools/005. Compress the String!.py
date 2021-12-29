@@ -2,7 +2,7 @@
 # Score: 20
 
 
-from itertools import groupby
+____ itertools _______ groupby
 
 
-print(*[(len(list(c)), int(x)) for x, c in groupby(input())])
+print(*[(l..(l..(c)), int(x)) ___ x, c __ groupby(input())])

@@ -4,45 +4,45 @@ class Solution:
         :type board: List[List[str]]
         :rtype: bool
         """
-        __ not board or not board[0] or len(board) != len(board[0]):
-            return False
+        __ n.. board o. n.. board[0] o. l..(board) != l..(board[0]):
+            r.. False
 
-        n = len(board)
+        n = l..(board)
         EMPTY = '.'
         CANDS = '123456789'
 
-        for x in range(n):
+        ___ x __ r..(n):
             used = set()
 
-            for y in range(n):
-                __ board[x][y] == EMPTY:
+            ___ y __ r..(n):
+                __ board[x][y] __ EMPTY:
                     continue
-                __ board[x][y] not in CANDS:
-                    return False
-                __ board[x][y] in used:
-                    return False
+                __ board[x][y] n.. __ CANDS:
+                    r.. False
+                __ board[x][y] __ used:
+                    r.. False
                 used.add(board[x][y])
 
-        for y in range(n):
+        ___ y __ r..(n):
             used = set()
 
-            for x in range(n):
-                __ board[x][y] == EMPTY:
+            ___ x __ r..(n):
+                __ board[x][y] __ EMPTY:
                     continue
-                __ board[x][y] in used:
-                    return False
+                __ board[x][y] __ used:
+                    r.. False
                 used.add(board[x][y])
 
-        for i in range(3):
-            for j in range(3):
+        ___ i __ r..(3):
+            ___ j __ r..(3):
                 used = set()
 
-                for x in range(i * 3, i * 3 + 3):
-                    for y in range(j * 3, j * 3 + 3):
-                        __ board[x][y] == EMPTY:
+                ___ x __ r..(i * 3, i * 3 + 3):
+                    ___ y __ r..(j * 3, j * 3 + 3):
+                        __ board[x][y] __ EMPTY:
                             continue
-                        __ board[x][y] in used:
-                            return False
+                        __ board[x][y] __ used:
+                            r.. False
                         used.add(board[x][y])
 
-        return True
+        r.. True

@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import diffie_hellman
+_______ diffie_hellman
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -9,17 +9,17 @@ class DiffieHellmanTest(unittest.TestCase):
 
     ___ test_private_key_is_in_range(self):
         primes = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
-        for i in primes:
+        ___ i __ primes:
             self.assertTrue(1 < diffie_hellman.private_key(i) < i)
 
     # Can fail due to randomness, but most likely will not,
     # due to pseudo-randomness and the large number chosen
     ___ test_private_key_is_random(self):
         p = 2147483647
-        private_keys = []
-        for i in range(5):
-            private_keys.append(diffie_hellman.private_key(p))
-        self.assertEqual(len(set(private_keys)), len(private_keys))
+        private_keys    # list
+        ___ i __ r..(5):
+            private_keys.a..(diffie_hellman.private_key(p))
+        self.assertEqual(l..(set(private_keys)), l..(private_keys))
 
     ___ test_can_calculate_public_key_using_private_key(self):
         p = 23
@@ -52,5 +52,5 @@ class DiffieHellmanTest(unittest.TestCase):
         self.assertEqual(secret_a, secret_b)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

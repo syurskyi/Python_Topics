@@ -4,11 +4,11 @@ class Solution(object):
     :type s: str
     :rtype: int
     """
-    pal = [[False for j in range(0, len(s))] for i in range(0, len(s))]
-    dp = [len(s) for _ in range(0, len(s) + 1)]
-    for i in range(0, len(s)):
-      for j in range(0, i + 1):
-        __ (s[i] == s[j]) and ((j + 1 > i - 1) or (pal[i - 1][j + 1])):
+    pal = [[False ___ j __ r..(0, l..(s))] ___ i __ r..(0, l..(s))]
+    dp = [l..(s) ___ _ __ r..(0, l..(s) + 1)]
+    ___ i __ r..(0, l..(s)):
+      ___ j __ r..(0, i + 1):
+        __ (s[i] __ s[j]) and ((j + 1 > i - 1) o. (pal[i - 1][j + 1])):
           pal[i][j] = True
-          dp[i + 1] = min(dp[i + 1], dp[j] + 1) __ j != 0 else 0
-    return dp[-1]
+          dp[i + 1] = m..(dp[i + 1], dp[j] + 1) __ j != 0 ____ 0
+    r.. dp[-1]

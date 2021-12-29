@@ -14,8 +14,8 @@ Note:
 1 <= len(A), len(B) <= 1000
 0 <= A[i], B[i] < 100
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -29,19 +29,19 @@ class Solution:
         F[i][j] be the longest substring ended at A[i-1], B[i-1]
         F[i][j] = F[i-1][j-1] + 1 if A[i-1] == B[i-1] else 0
         """
-        m, n = len(A), len(B)
-        F = defaultdict(lambda: defaultdict(int))
-        for i in range(1, m+1):
-            for j in range(1, n+1):
-                __ A[i-1] == B[j-1]:
+        m, n = l..(A), l..(B)
+        F = defaultdict(l....: defaultdict(int))
+        ___ i __ r..(1, m+1):
+            ___ j __ r..(1, n+1):
+                __ A[i-1] __ B[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
 
-        return max(
+        r.. max(
             F[i][j]
-            for i in range(1, m+1)
-            for j in range(1, n+1)
+            ___ i __ r..(1, m+1)
+            ___ j __ r..(1, n+1)
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().findLength([1,2,3,2,1], [3,2,1,4,7]) == 3
+__ __name__ __ "__main__":
+    ... Solution().findLength([1,2,3,2,1], [3,2,1,4,7]) __ 3

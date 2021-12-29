@@ -37,25 +37,25 @@ class Solution:
         F_new[i][j] can be constructed
         """
         ret = 0
-        F = [[0 for _ in range(n)] for _ in range(m)]
+        F = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
         F[r][c] = 1
-        for _ in range(N):  # epoch
-            F_new = [[0 for _ in range(n)] for _ in range(m)]
-            for i in range(m):
-                for j in range(n):
-                    for di, dj in dirs:
+        ___ _ __ r..(N):  # epoch
+            F_new = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
+            ___ i __ r..(m):
+                ___ j __ r..(n):
+                    ___ di, dj __ dirs:
                         I = i + di
                         J = j + dj
                         __ 0 <= I < m and 0 <= J < n:
                             F_new[I][J] = (F_new[I][J] + F[i][j]) % MOD
-                        else:
+                        ____:
                             ret = (ret + F[i][j]) % MOD
 
             F = F_new
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findPaths(2, 2, 2, 0, 0) == 6
-    assert Solution().findPaths(1, 3, 3, 0, 1) == 12
+__ __name__ __ "__main__":
+    ... Solution().findPaths(2, 2, 2, 0, 0) __ 6
+    ... Solution().findPaths(1, 3, 3, 0, 1) __ 12

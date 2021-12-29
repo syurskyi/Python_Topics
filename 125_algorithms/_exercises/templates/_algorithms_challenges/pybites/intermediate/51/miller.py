@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+____ datetime _______ datetime, timedelta
 
 # https://pythonclock.org/
 PY2_DEATH_DT = datetime(year=2020, month=1, day=1)
@@ -16,7 +16,7 @@ ___ py2_earth_hours_left(start_date=BITE_CREATED_DT):
     # convert seconds to hour
     seconds_to_hour = round(date_diff.seconds / 3600, 2)
    
-    return days_to_hours + seconds_to_hour
+    r.. days_to_hours + seconds_to_hour
 
 
 ___ py2_miller_min_left(start_date=BITE_CREATED_DT):
@@ -33,7 +33,7 @@ ___ py2_miller_min_left(start_date=BITE_CREATED_DT):
     # convert seconds to minutes
     seconds_to_minutes = round(date_diff.seconds / 60, 2)
 
-    return round((days_to_minutes + seconds_to_minutes) / planet_miller_hour, 2)
+    r.. round((days_to_minutes + seconds_to_minutes) / planet_miller_hour, 2)
 
 
 #if __name__ == "__main__":

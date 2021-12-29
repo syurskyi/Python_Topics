@@ -19,16 +19,16 @@ class Solution:
         will eventually meet
         otherwise its a list => at some point there will be no `node.next`
         """
-        __ not head or not head.next:
-            return False
+        __ n.. head o. n.. head.next:
+            r.. False
 
         slow = head
         fast = head.next
         while slow != fast:
-            __ not fast.next or not fast.next.next:
-                return False
+            __ n.. fast.next o. n.. fast.next.next:
+                r.. False
 
             slow = slow.next
             fast = fast.next.next
 
-        return True
+        r.. True

@@ -9,15 +9,15 @@ class Solution:
     # @param root, a tree node
     # @return an integer
     ___ minDepth(self, root):
-        __ root is None:
-            return 0
-        __ root.left is None and root.right is None:
-            return 1
-        elif root.left is None and root.right is not None:
-            return self.minDepth(root.right) + 1
-        elif root.left is not None and root.right is None:
-            return self.minDepth(root.left) + 1
-        else:
+        __ root __ N..
+            r.. 0
+        __ root.left __ N.. and root.right __ N..
+            r.. 1
+        ____ root.left __ N.. and root.right __ n.. N..
+            r.. self.minDepth(root.right) + 1
+        ____ root.left __ n.. N.. and root.right __ N..
+            r.. self.minDepth(root.left) + 1
+        ____:
             left_min = self.minDepth(root.left)
             right_min = self.minDepth(root.right)
-            return min(left_min, right_min) + 1
+            r.. m..(left_min, right_min) + 1

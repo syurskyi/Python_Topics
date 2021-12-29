@@ -9,7 +9,7 @@ Return true because "leetcode" can be segmented as "leet code".
 """
 __author__ = 'Danyang'
 class Solution:
-    ___ wordBreak_TLE(self, s, dict):
+    ___ wordBreak_TLE(self, s, d..):
         """
         TLE
         dfs
@@ -22,24 +22,24 @@ class Solution:
         :return: a boolean
         """
         string_builder = ""
-        __ s=="":
-            return True
+        __ s__"":
+            r.. True
 
         # greedy
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             string_builder += s[i]
-            __ string_builder in dict:
+            __ string_builder __ d..:
                 try:
-                    __ self.wordBreak_TLE(s[i+1:], dict):
-                        return True
-                    else:
+                    __ self.wordBreak_TLE(s[i+1:], d..):
+                        r.. True
+                    ____:
                         continue
                 except IndexError:
-                    return True
+                    r.. True
 
-        return False
+        r.. False
 
-    ___ wordBreak(self, s, dict):
+    ___ wordBreak(self, s, d..):
         """
          __       __________   ___  __    ______   ______   .__   __.      _______.
         |  |     |   ____\  \ /  / |  |  /      | /  __  \  |  \ |  |     /       |
@@ -67,27 +67,27 @@ class Solution:
         :param dict: a set of string
         :return: a boolean
         """
-        dp = [False] * (len(s)+1)
+        dp = [False] * (l..(s)+1)
         dp[0] = True # dummy
 
-        for i in range(len(dp)):  # [0, len(s)+1)
+        ___ i __ r..(l..(dp)):  # [0, len(s)+1)
             # continue from matched condition
             __ dp[i]:
-                for word in dict:
+                ___ word __ d..:
                     try:
                         # trivial
-                        __ dp[i+len(word)]==True:
+                        __ dp[i+l..(word)]__True:
                             continue
 
                         # main
-                        __ s[i:i+len(word)]==word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
-                            dp[i+len(word)] = True  # record the checking
+                        __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
+                            dp[i+l..(word)] = True  # record the checking
                     except IndexError:
                         continue
 
-        return dp[-1]
+        r.. dp[-1]
 
 
 
-__ __name__=="__main__":
-    assert Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"])==True
+__ __name____"__main__":
+    ... Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"])__True

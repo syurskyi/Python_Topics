@@ -12,9 +12,9 @@ class Solution(object):
       while sub_num > 0:
         sq_sum += (sub_num % 10) * (sub_num % 10)
         sub_num /= 10
-      __ sq_sum in record:
-        return False
-      else:
+      __ sq_sum __ record:
+        r.. False
+      ____:
         record[sq_sum] = 1
       n = sq_sum
-    return True
+    r.. True

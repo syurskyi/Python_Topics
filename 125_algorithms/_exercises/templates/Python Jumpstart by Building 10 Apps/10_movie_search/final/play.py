@@ -1,5 +1,5 @@
-import requests
-import collections
+_______ requests
+_______ collections
 
 MovieResult  collections.namedtuple(
     'MovieResult',
@@ -41,9 +41,9 @@ movies_list  movie_data.get('hits')
 
 movies  [
     MovieResult(**md)
-    for md in movies_list
+    ___ md __ movies_list
 ]
 
-print("Found {} movies for search {}".format(len(movies), search))
-for m in movies:
+print("Found {} movies for search {}".format(l..(movies), search))
+___ m __ movies:
     print("{} -- {}".format(m.year, m.title))

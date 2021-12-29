@@ -26,8 +26,8 @@ class Solution:
         """
         targets = set(J)
         ret = 0
-        for c in S:
-            __ c in targets:
+        ___ c __ S:
+            __ c __ targets:
                 ret += 1
 
-        return ret
+        r.. ret

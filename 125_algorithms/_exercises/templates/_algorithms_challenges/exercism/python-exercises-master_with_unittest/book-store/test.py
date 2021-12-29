@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from book_store import calculate_total
+____ book_store _______ calculate_total
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.1
@@ -68,5 +68,5 @@ class BookStoreTests(unittest.TestCase):
             places=2)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

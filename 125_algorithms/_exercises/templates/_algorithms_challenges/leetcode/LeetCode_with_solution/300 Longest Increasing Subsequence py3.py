@@ -16,8 +16,8 @@ return the length.
 Your algorithm should run in O(n2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
 """
-from typing import List
-from bisect import bisect_left
+____ typing _______ List
+____ bisect _______ bisect_left
 
 
 class Solution:
@@ -31,11 +31,11 @@ class Solution:
         For easch position i, the F[i]_old > F[i]_new, but A[j_old] < A[j_new]
 
         """
-        F = [float('inf') for _ in nums]
+        F = [float('inf') ___ _ __ nums]
         l = 0
-        for n in nums:
+        ___ n __ nums:
             i = bisect_left(F, n)  # consider equal elements [2, 2]
             F[i] = n
             l = max(l, i + 1)
 
-        return l
+        r.. l

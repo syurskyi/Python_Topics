@@ -13,7 +13,7 @@ class LogSystem(object):
             'Minute':16,
             'Second':19
             }
-        self.timestamps = []
+        self.timestamps    # list
 
     ___ put(self, id, timestamp):
         """
@@ -21,7 +21,7 @@ class LogSystem(object):
         :type timestamp: str
         :rtype: void
         """
-        self.timestamps.append((id, timestamp))
+        self.timestamps.a..((id, timestamp))
 
     ___ retrieve(self, s, e, gra):
         """
@@ -30,15 +30,15 @@ class LogSystem(object):
         :type gra: str
         :rtype: List[int]
         """
-        res = []
+        res    # list
         idx = self.units[gra]
-        for timestamp in self.timestamps:
+        ___ timestamp __ self.timestamps:
             __ timestamp[1][:idx] >= s[:idx] and\
                 timestamp[1][:idx] <= e[:idx]:
-                res.append(timestamp[0])
-        return res
+                res.a..(timestamp[0])
+        r.. res
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     log = LogSystem()
     log.put(1, "2017:01:01:23:59:59")
     log.put(2, "2017:01:01:22:59:59")

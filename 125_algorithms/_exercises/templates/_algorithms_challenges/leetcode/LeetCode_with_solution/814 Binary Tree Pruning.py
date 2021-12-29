@@ -41,25 +41,25 @@ The value of each node will only be 0 or 1.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from typing import Tuple
+____ typing _______ Tuple
 
 
 class Solution:
     ___ pruneTree(self, root: TreeNode) -> TreeNode:
         root, _ = self.prune(root)
-        return root
+        r.. root
 
     ___ prune(self, node) -> Tuple[TreeNode, bool]:
-        __ not node:
-            return None, False
+        __ n.. node:
+            r.. N.., False
 
         node.left, contain_left = self.prune(node.left)
         node.right, contain_right = self.prune(node.right)
-        __ not contain_left and not contain_right and node.val == 0:
-            return None, False
+        __ n.. contain_left and n.. contain_right and node.val __ 0:
+            r.. N.., False
 
-        return node, True
+        r.. node, True

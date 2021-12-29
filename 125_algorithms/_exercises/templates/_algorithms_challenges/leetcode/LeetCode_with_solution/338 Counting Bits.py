@@ -37,13 +37,13 @@ class Solution(object):
         """
         ret = [0]
         i = 0
-        hi = len(ret)
-        while len(ret) < num + 1:
-            __ i == hi:
+        hi = l..(ret)
+        while l..(ret) < num + 1:
+            __ i __ hi:
                 i = 0
-                hi = len(ret)
+                hi = l..(ret)
 
-            ret.append(1+ret[i])
+            ret.a..(1+ret[i])
             i += 1
 
-        return ret
+        r.. ret

@@ -17,7 +17,7 @@ return 13.
 Note:
 You may assume k is always valid, 1 <= k <= n2.
 """
-import heapq
+_______ heapq
 
 
 __author__ = 'Daniel'
@@ -31,7 +31,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
 
         class Node(object):
             ___ __init__(self, i, j):
@@ -39,28 +39,28 @@ class Solution(object):
                 self.j = j
 
             ___ __cmp__(self, other):
-                return matrix[self.i][self.j] - matrix[other.i][other.j]
+                r.. matrix[self.i][self.j] - matrix[other.i][other.j]
 
             ___ hasnext(self):
-                return self.j+1 < n
+                r.. self.j+1 < n
 
             ___ next(self):
                 __ self.hasnext():
-                    return Node(self.i, self.j + 1)
+                    r.. Node(self.i, self.j + 1)
 
                 raise StopIteration
 
-        h = []
-        for i in xrange(m):
+        h    # list
+        ___ i __ xrange(m):
             heapq.heappush(h, Node(i, 0))
 
-        ret = None
-        for _ in xrange(k):
+        ret = N..
+        ___ _ __ xrange(k):
             ret = heapq.heappop(h)
             __ ret.hasnext():
                 heapq.heappush(h, ret.next())
 
-        return matrix[ret.i][ret.j]
+        r.. matrix[ret.i][ret.j]
 
     ___ kthSmallestError(self, matrix, k):
         """
@@ -68,12 +68,12 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         i = k % n
         j = k - (i * m)
-        return matrix[i][j]
+        r.. matrix[i][j]
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     matrix = [
         [1, 5, 9],
         [10, 11, 13],

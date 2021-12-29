@@ -43,7 +43,7 @@ equations[i][0] and equations[i][3] are lowercase letters
 equations[i][1] is either '=' or '!'
 equations[i][2] is '='
 """
-from typing import List
+____ typing _______ List
 
 
 class DisjointSet:
@@ -54,11 +54,11 @@ class DisjointSet:
         self.pi[self.find(x)] = self.find(y)
 
     ___ find(self, x):
-        __ x not in self.pi:
+        __ x n.. __ self.pi:
             self.pi[x] = x
-        elif self.pi[x] != x:
+        ____ self.pi[x] != x:
             self.pi[x] = self.find(self.pi[x])
-        return self.pi[x]
+        r.. self.pi[x]
 
 class Solution:
     ___ equationsPossible(self, equations: List[str]) -> bool:
@@ -66,18 +66,18 @@ class Solution:
         union find
         """
         ds = DisjointSet()
-        neqs = []  # list of neq
-        for e in equations:
+        neqs    # list  # list of neq
+        ___ e __ equations:
             a = e[0]
             b = e[-1]
             sign = e[1:-1]
-            __ sign == "==":
+            __ sign __ "==":
                 ds.union(a, b)
-            else:
-                neqs.append((a, b))
+            ____:
+                neqs.a..((a, b))
 
-        for a, b in neqs:
-            __ ds.find(a) == ds.find(b):
-                return False
+        ___ a, b __ neqs:
+            __ ds.find(a) __ ds.find(b):
+                r.. False
 
-        return True
+        r.. True

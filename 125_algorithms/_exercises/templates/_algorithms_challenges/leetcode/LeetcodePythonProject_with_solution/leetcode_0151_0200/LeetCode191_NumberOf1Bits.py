@@ -10,20 +10,20 @@ class Solution(object):
         :rtype: int
         """
         count = 0
-        for i in range(32):
-            __ (n >> i)&1 == 1:
+        ___ i __ r..(32):
+            __ (n >> i)&1 __ 1:
                 count+=1
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
             int('00000000000000000000000000001011', 2),
         ]
-        for n in testCases:
+        ___ n __ testCases:
             print('n:      {0:032b}'.format(n))
             result = self.hammingWeight(n)
             print('result: {0:d}'.format(result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

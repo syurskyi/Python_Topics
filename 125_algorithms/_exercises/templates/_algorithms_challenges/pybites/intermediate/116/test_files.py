@@ -1,10 +1,10 @@
-import os
-from pathlib import Path
-from tempfile import TemporaryDirectory
+_______ os
+____ pathlib _______ Path
+____ tempfile _______ TemporaryDirectory
 
-import pytest
+_______ pytest
 
-from files import get_files
+____ files _______ get_files
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 
@@ -18,10 +18,10 @@ TMP = Path(os.getenv("TMP", "/tmp"))
 ])
 ___ test_get_files(byte_sizes, size_in_kb, expected):
     with TemporaryDirectory(dir=TMP) as dirname:
-        for size in byte_sizes:
+        ___ size __ byte_sizes:
             with open(os.path.join(dirname, str(size)), 'wb') as f:
                 f.write(os.urandom(size))
 
-        actual = [os.path.basename(fi) for fi in
+        actual = [os.path.basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]
-        assert sorted(actual) == sorted(expected)
+        ... s..(actual) __ s..(expected)

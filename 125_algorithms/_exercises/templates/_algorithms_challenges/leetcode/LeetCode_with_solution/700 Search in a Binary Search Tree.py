@@ -32,18 +32,18 @@ expected output (serialized tree format) as [], not null.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ searchBST(self, root: TreeNode, val: int) -> TreeNode:
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
 
-        __ root.val == val:
-            return root
-        elif root.val < val:
-            return self.searchBST(root.right, val)
-        else:
-            return self.searchBST(root.left, val)
+        __ root.val __ val:
+            r.. root
+        ____ root.val < val:
+            r.. self.searchBST(root.right, val)
+        ____:
+            r.. self.searchBST(root.left, val)

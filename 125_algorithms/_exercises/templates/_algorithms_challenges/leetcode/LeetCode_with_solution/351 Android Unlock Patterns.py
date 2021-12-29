@@ -10,7 +10,7 @@ class Solution(object):
         Skip matrix
         Encode rule for 2, 4, 6, 8, 5
         """
-        self.skip = [[None for _ in xrange(10)] for _ in xrange(10)]
+        self.skip = [[N.. ___ _ __ xrange(10)] ___ _ __ xrange(10)]
         self.skip[1][3], self.skip[3][1] = 2, 2
         self.skip[1][7], self.skip[7][1] = 4, 4
         self.skip[3][9], self.skip[9][3] = 6, 6
@@ -30,12 +30,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        visited = [False for _ in xrange(10)]
-        return sum(
+        visited = [False ___ _ __ xrange(10)]
+        r.. s..(
             self.dfs(1, visited, remain) * 4 +
             self.dfs(2, visited, remain) * 4 +
             self.dfs(5, visited, remain)
-            for remain in xrange(m, n+1)
+            ___ remain __ xrange(m, n+1)
         )
 
     ___ dfs(self, cur, visited, remain):
@@ -43,24 +43,24 @@ class Solution(object):
         Return the count of combination
         Optimization - memoization
         """
-        __ remain == 1:
-            return 1
+        __ remain __ 1:
+            r.. 1
 
         visited[cur] = True
         ret = 0
-        for nxt in xrange(1, 10):
+        ___ nxt __ xrange(1, 10):
             __ (
-                not visited[nxt] and (
-                    self.skip[cur][nxt] is None or
+                n.. visited[nxt] and (
+                    self.skip[cur][nxt] __ N.. o.
                     visited[self.skip[cur][nxt]]
                 )
             ):
                 ret += self.dfs(nxt, visited, remain - 1)
 
         visited[cur] = False
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().numberOfPatterns(1, 2) == 65
-    assert Solution().numberOfPatterns(1, 3) == 385
+__ __name__ __ "__main__":
+    ... Solution().numberOfPatterns(1, 2) __ 65
+    ... Solution().numberOfPatterns(1, 3) __ 385

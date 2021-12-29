@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 """
 The DNA of all organsims consists of the letters (bases) A, C, T and G. Every organism has a
 different ratio of these bases, known as the GC content. This information can not only give
@@ -26,31 +26,31 @@ ___ calculate_gc_content_1st_solution(sequence):
     bases_dict = {}
     bases = "atgc"
     sequence = sequence.lower()
-    for b in bases:
+    ___ b __ bases:
         bases_dict[b] = False
 
-    for seq in sequence:
+    ___ seq __ sequence:
         bases_dict[seq] = True
         try:
             counts[seq] += 1
         except KeyError:
             counts[seq] = 1
-    for k,v in bases_dict.items():
-        __ v == False:
+    ___ k,v __ bases_dict.items():
+        __ v __ False:
             counts[k] = 0
 
     result = float("{0:.2f}".format(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))
     try:
-        return result
+        r.. result
     except:
-        return 0
+        r.. 0
 
 ___ calculate_gc_content_2nd_solution(sequence):
 
     counts = Counter(sequence.upper())
     gc_content = counts['G'] + counts['C']
     at_content = counts['A'] + counts['T']
-    return round((gc_content / (gc_content + at_content)) * 100, 2)
+    r.. round((gc_content / (gc_content + at_content)) * 100, 2)
 
 
 

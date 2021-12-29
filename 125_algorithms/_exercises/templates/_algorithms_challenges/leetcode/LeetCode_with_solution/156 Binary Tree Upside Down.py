@@ -7,8 +7,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -20,14 +20,14 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root or not root.left:
-            return root
+        __ n.. root o. n.. root.left:
+            r.. root
 
         left, right = root.left, root.right
         root_new = self.upsideDownBinaryTree(root.left)
         left.left, left.right = right, root
-        root.left, root.right = None, None
-        return root_new
+        root.left, root.right = N.., N..
+        r.. root_new
 
 
 class SolutionComplex(object):
@@ -42,11 +42,11 @@ class SolutionComplex(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.traverse(root)
-        return self.root
+        r.. self.root
 
     ___ traverse(self, cur):
         """
@@ -54,12 +54,12 @@ class SolutionComplex(object):
         :param cur:
         :return:
         """
-        __ not cur:
-            return
+        __ n.. cur:
+            r..
 
-        __ not cur.left:
+        __ n.. cur.left:
             self.cur_new.val = cur.val
-            return
+            r..
 
         self.traverse(cur.left)
         __ cur.right: self.cur_new.left = TreeNode(cur.right.val)

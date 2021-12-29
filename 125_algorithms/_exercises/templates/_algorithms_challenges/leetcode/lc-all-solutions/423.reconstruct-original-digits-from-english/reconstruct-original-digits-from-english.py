@@ -10,16 +10,16 @@ class Solution(object):
     :rtype: str
     """
     global nums, feature
-    ans = []
+    ans    # list
     count = {}
-    for c in s:
+    ___ c __ s:
       count[c] = count.get(c, 0) + 1
-    for num in [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
+    ___ num __ [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
       featureNum = count.get(feature[num], 0)
       __ featureNum > 0:
         ans += [str(num)] * featureNum
         word = nums[num]
-        for c in word:
+        ___ c __ word:
           count[c] -= featureNum
     ans.sort()
-    return "".join(ans)
+    r.. "".join(ans)

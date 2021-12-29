@@ -13,27 +13,27 @@ class Solution(object):
         """
         nums.sort()
         res = 0
-        for i in range(len(nums)-2):
-            j, k = i+1, len(nums)-1
+        ___ i __ r..(l..(nums)-2):
+            j, k = i+1, l..(nums)-1
             while j < k:
                 __ nums[i]+nums[j]+nums[k] >= target:
                     k -= 1
-                else:
+                ____:
                     res += k-j
                     j += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
             ([-2, 0, 1, 3], 2),
             ([3, 1, 0, -2], 4),
         ]
-        for nums, target in testCases:
+        ___ nums, target __ testCases:
             print('nums: %s' % (nums))
             print('target: %s' % (target))
             result = self.threeSumSmaller(nums, target)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

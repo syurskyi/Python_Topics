@@ -1,5 +1,5 @@
-from collections import namedtuple
-from datetime import datetime
+____ collections _______ namedtuple
+____ datetime _______ datetime
 
 Transaction = namedtuple('Transaction', 'giver points date')
 Transaction.__new__.__defaults__ = (datetime.now(),)  # http://bit.ly/2rmiUrL
@@ -8,28 +8,28 @@ Transaction.__new__.__defaults__ = (datetime.now(),)  # http://bit.ly/2rmiUrL
 class User:
     ___ __init__(self, name: str):
         self._name = name
-        self._transactions = []
+        self._transactions    # list
 
     ___ __str__(self):
-        return f"{self.name} has a karma of {self.karma} and {self.fans} fan{'s' __ self.fans > 1 else ''}"
+        r.. f"{self.name} has a karma of {self.karma} and {self.fans} fan{'s' __ self.fans > 1 ____ ''}"
 
     ___ __add__(self, other: Transaction):
-        __ not isinstance(other, Transaction):
+        __ n.. isi..(other, Transaction):
             raise TypeError('Can only add a transaction')
-        self._transactions.append(other)
+        self._transactions.a..(other)
 
     @property
     ___ name(self) -> str:
-        return self._name
+        r.. self._name
 
     @property
     ___ fans(self) -> int:
-        return len({x.giver for x in self._transactions})
+        r.. l..({x.giver ___ x __ self._transactions})
 
     @property
-    ___ points(self) -> list:
-        return [x.points for x in self._transactions]
+    ___ points(self) -> l..:
+        r.. [x.points ___ x __ self._transactions]
 
     @property
     ___ karma(self) -> int:
-        return sum(self.points)
+        r.. s..(self.points)

@@ -1,10 +1,10 @@
 ___ to_rna(strand):
     result = ""
 
-    for i in strand:
+    ___ i __ strand:
         result += pairing_for(i)
 
-    return result
+    r.. result
 
 
 ___ pairing_for(nucleobase):
@@ -13,4 +13,4 @@ ___ pairing_for(nucleobase):
                 "A": "U",
                 "T": "A"}
 
-    return pairings[nucleobase]
+    r.. pairings[nucleobase]

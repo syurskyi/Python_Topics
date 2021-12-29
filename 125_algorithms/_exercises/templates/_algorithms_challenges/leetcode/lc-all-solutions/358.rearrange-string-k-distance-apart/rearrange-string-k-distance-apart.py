@@ -6,23 +6,23 @@ class Solution(object):
     :rtype: str
     """
     __ k < 2:
-      return s
+      r.. s
     d = collections.Counter(s)
-    heap = [(-d[key], key) for key in d]
+    heap = [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
-    ans = []
-    while len(ans) < len(s):
-      temp = []
-      for _ in range(k):
-        __ not heap:
-          return ""
+    ans    # list
+    while l..(ans) < l..(s):
+      temp    # list
+      ___ _ __ r..(k):
+        __ n.. heap:
+          r.. ""
         freq, c = heapq.heappop(heap)
         freq += 1
-        ans.append(c)
-        __ len(ans) == len(s):
-          return "".join(ans)
+        ans.a..(c)
+        __ l..(ans) __ l..(s):
+          r.. "".join(ans)
         __ freq < 0:
-          temp.append((freq, c))
-      for freq, c in temp:
+          temp.a..((freq, c))
+      ___ freq, c __ temp:
         heapq.heappush(heap, (freq, c))
-    return "".join(ans)
+    r.. "".join(ans)

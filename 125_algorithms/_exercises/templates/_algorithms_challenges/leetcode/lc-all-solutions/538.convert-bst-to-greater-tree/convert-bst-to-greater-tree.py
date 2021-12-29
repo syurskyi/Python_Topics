@@ -14,10 +14,10 @@ class Solution(object):
     :type root: TreeNode
     :rtype: TreeNode
     """
-    __ not root:
-      return None
+    __ n.. root:
+      r.. N..
     self.convertBST(root.right)
     self.lSum += root.val
     root.val = self.lSum
     self.convertBST(root.left)
-    return root
+    r.. root

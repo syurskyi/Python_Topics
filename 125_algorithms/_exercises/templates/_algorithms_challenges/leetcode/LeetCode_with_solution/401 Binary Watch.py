@@ -36,38 +36,38 @@ class Solution(object):
         :rtype: List[str]
         """
         ___ gen():
-            for hour_n in xrange(min(num, 4)+1):
-                for hour in self.hour(hour_n):
-                    for minute in self.minute(num-hour_n):
+            ___ hour_n __ xrange(m..(num, 4)+1):
+                ___ hour __ self.hour(hour_n):
+                    ___ minute __ self.minute(num-hour_n):
                         hour = str(hour)
                         minute = ('0' + str(minute))[-2:]
                         yield hour + ':' + minute
 
-        return list(gen())
+        r.. l..(gen())
 
     ___ gen(self, n, head, lst, func):
-        __ head == len(lst):
-            yield None
+        __ head __ l..(lst):
+            yield N..
 
-        __ n == 0:
+        __ n __ 0:
             yield 0
 
-        for i in xrange(head, len(lst)):
-            for rest in self.gen(n-1, i+1, lst, func):
-                __ rest is not None:
+        ___ i __ xrange(head, l..(lst)):
+            ___ rest __ self.gen(n-1, i+1, lst, func):
+                __ rest __ n.. N..
                     ret = lst[i]+rest
                     __ func(ret):
                         yield ret
-                    else:
+                    ____:
                         break
 
     ___ hour(self, n):
-        return self.gen(n, 0, self.hours, lambda x: x < 12)
+        r.. self.gen(n, 0, self.hours, l.... x: x < 12)
 
     ___ minute(self, n):
-        return self.gen(n, 0, self.minutes, lambda x: x < 60)
+        r.. self.gen(n, 0, self.minutes, l.... x: x < 60)
 
 
-__ __name__ == "__main__":
-    assert Solution().readBinaryWatch(1) == ['0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
+__ __name__ __ "__main__":
+    ... Solution().readBinaryWatch(1) __ ['0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
                                              '8:00']

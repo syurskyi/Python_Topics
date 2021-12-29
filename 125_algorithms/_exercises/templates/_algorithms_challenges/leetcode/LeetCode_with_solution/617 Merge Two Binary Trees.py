@@ -33,18 +33,18 @@ Note: The merging process must start from the root nodes of both trees.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
-        __ not t1 and not t2:
-            return
+        __ n.. t1 and n.. t2:
+            r..
 
         node = TreeNode(0)
-        node.val += t1 and t1.val or 0
-        node.val += t2 and t2.val or 0
+        node.val += t1 and t1.val o. 0
+        node.val += t2 and t2.val o. 0
         node.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
         node.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
-        return node
+        r.. node

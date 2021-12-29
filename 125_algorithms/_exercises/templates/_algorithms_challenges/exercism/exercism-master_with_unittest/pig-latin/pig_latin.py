@@ -1,4 +1,4 @@
-import string
+_______ string
 
 
 class PigLatinTranslator:
@@ -9,28 +9,28 @@ class PigLatinTranslator:
 
     @classmethod
     ___ translate_phrase(cls, phrase):
-        return ' '.join([cls.translate(word) for word in phrase.split()])
+        r.. ' '.join([cls.translate(word) ___ word __ phrase.s.. ])
 
     @classmethod
     ___ translate(cls, word):
-        __ (word[0] in cls.vowels or
-            word.startswith('yt') or
+        __ (word[0] __ cls.vowels o.
+            word.startswith('yt') o.
                 word.startswith('xr')):
-            return word + 'ay'
-        elif (word.startswith('squ') or
-                word.startswith('sch') or
+            r.. word + 'ay'
+        ____ (word.startswith('squ') o.
+                word.startswith('sch') o.
                 word.startswith('thr')):
-            return word[3:] + word[0:3] + 'ay'
-        elif ((word[0] in cls.consonants and
-                word[1] in cls.consonants) or
+            r.. word[3:] + word[0:3] + 'ay'
+        ____ ((word[0] __ cls.consonants and
+                word[1] __ cls.consonants) o.
                 word.startswith('qu')):
-            return word[2:] + word[0:2] + 'ay'
-        elif (word[0] in cls.consonants):
-            return word[1:] + word[0] + 'ay'
+            r.. word[2:] + word[0:2] + 'ay'
+        ____ (word[0] __ cls.consonants):
+            r.. word[1:] + word[0] + 'ay'
 
 
 ___ translate(phrase):
     print((PigLatinTranslator.alpha))
     print((PigLatinTranslator.vowels))
     print((PigLatinTranslator.consonants))
-    return PigLatinTranslator.translate_phrase(phrase)
+    r.. PigLatinTranslator.translate_phrase(phrase)

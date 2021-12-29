@@ -14,25 +14,25 @@ class Solution(object):
         :param x: int
         :return: int
         """
-        sign = -1 __ x < 0 else 1  # preserve the sign first
+        sign = -1 __ x < 0 ____ 1  # preserve the sign first
         x *= sign
 
         # eliminated leading zero in the reversed integer
         while x:
-            __ x%10 == 0:
+            __ x%10 __ 0:
                 x /= 10
-            else:
+            ____:
                 break
 
         # string manipulation
         x = str(x)
-        lst = list(x)  # list('123') returns ['1', '2', '3']
+        lst = l..(x)  # list('123') returns ['1', '2', '3']
         lst.reverse()
         x = "".join(lst)
         x = int(x)
-        return sign*x
+        r.. sign*x
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().reverse(123)
 

@@ -26,42 +26,42 @@ class Solution:
         :param word: a string
         :return: boolean
         """
-        __ not board:
-            return
+        __ n.. board:
+            r..
         # unpack
         # board = [item[0] for item in board]
 
-        m = len(board)
-        n = len(board[0])
-        visited = [[False for _ in xrange(n)] for _ in xrange(m)]  # avoid loop
-        for i in xrange(m):
-            for j in xrange(n):
-                __ board[i][j]==word[0]:
+        m = l..(board)
+        n = l..(board[0])
+        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]  # avoid loop
+        ___ i __ xrange(m):
+            ___ j __ xrange(n):
+                __ board[i][j]__word[0]:
                     visited[i][j] = True
                     __ self.search(board, i, j, word[1:], visited):
-                        return True
+                        r.. True
                     visited[i][j] = False
-        return False
+        r.. False
 
     ___ search(self, board, pre_row, pre_col, word, visited):
-        __ not word:
-            return True
+        __ n.. word:
+            r.. True
         # searching for word[0]
-        m = len(board)
-        n = len(board[0])
+        m = l..(board)
+        n = l..(board[0])
         next_positions = [(pre_row-1, pre_col), (pre_row+1, pre_col), (pre_row, pre_col-1), (pre_row, pre_col+1)]  # four directions
-        for next_position in next_positions:
+        ___ next_position __ next_positions:
             __ 0<=next_position[0]<m and 0<=next_position[1]<n:  # pre-checking
-                __ visited[next_position[0]][next_position[1]]==False and board[next_position[0]][next_position[1]]==word[0]:
+                __ visited[next_position[0]][next_position[1]]__False and board[next_position[0]][next_position[1]]__word[0]:
                     visited[next_position[0]][next_position[1]] = True
                     __ self.search(board, next_position[0], next_position[1], word[1:], visited):
-                        return True
+                        r.. True
                     visited[next_position[0]][next_position[1]] = False  # restore
-        return False
+        r.. False
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     board = [
         "ABCE",
         "SFCS",

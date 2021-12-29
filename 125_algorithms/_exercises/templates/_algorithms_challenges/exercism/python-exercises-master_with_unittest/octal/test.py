@@ -4,9 +4,9 @@ Implementation note:
 If the string supplied to parse_octal cannot be parsed as an octal number
 your program should raise a ValueError with a meaningful error message.
 """
-import unittest
+_______ unittest
 
-from octal import parse_octal
+____ octal _______ parse_octal
 
 
 class OctalTest(unittest.TestCase):
@@ -41,5 +41,5 @@ class OctalTest(unittest.TestCase):
         self.assertEqual(parse_octal("011"), 9)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

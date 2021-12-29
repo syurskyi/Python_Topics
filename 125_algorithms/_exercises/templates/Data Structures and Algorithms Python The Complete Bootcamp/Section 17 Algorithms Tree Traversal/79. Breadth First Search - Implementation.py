@@ -3,7 +3,7 @@ c_ Queue():
         items  []
 
     ___ enqueue  item):
-        items.append(item)
+        items.a..(item)
 
     ___ dequeue
         __ le.(items):
@@ -34,7 +34,7 @@ c_ BinaryTree():
         traversal  []
 
         w__ le.(queue.items) > 0:
-            traversal.append(queue.peek())
+            traversal.a..(queue.peek())
             node  queue.dequeue()
 
             __ node.left:

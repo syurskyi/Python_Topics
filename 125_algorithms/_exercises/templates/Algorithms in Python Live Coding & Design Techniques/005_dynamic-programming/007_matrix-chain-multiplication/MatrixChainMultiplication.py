@@ -8,7 +8,7 @@ ___ mcm(seq, i, j
     min_ops  sys.maxsize
     ___ k __ ra__(i, j
         ops  mcm(seq, i, k) + mcm(seq, k+1, j) + seq[i-1]*seq[k]*seq[j]
-        min_ops  min(ops, min_ops)
+        min_ops  m..(ops, min_ops)
     r_ min_ops
 
 
@@ -20,7 +20,7 @@ ___ mcm_topdown(seq, i, j, arr
         r_ arr[i][j]
     min_ops  sys.maxsize
     ___ k __ ra__(i, j
-        min_ops  min(min_ops, (mcm_topdown(seq, i, k, arr) + mcm_topdown(seq, k+1, j, arr) + seq[i-1]*seq[k]*seq[j]))
+        min_ops  m..(min_ops, (mcm_topdown(seq, i, k, arr) + mcm_topdown(seq, k+1, j, arr) + seq[i-1]*seq[k]*seq[j]))
     arr[i][j]  min_ops
     r_ arr[i][j]
 
@@ -37,7 +37,7 @@ ___ mcm_bottomup(seq, n
                 continue
             min_ops  sys.maxsize
             ___ k __ ra__(i, j
-                min_ops  min(min_ops, (arr[i][k] + arr[k+1][j] + seq[i - 1] * seq[k] * seq[j]))
+                min_ops  m..(min_ops, (arr[i][k] + arr[k+1][j] + seq[i - 1] * seq[k] * seq[j]))
             arr[i][j]  min_ops
     ___ i __ ra__(n
         ___ j __ ra__(n

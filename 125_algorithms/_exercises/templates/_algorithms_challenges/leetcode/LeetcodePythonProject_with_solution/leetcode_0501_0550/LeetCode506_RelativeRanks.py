@@ -10,19 +10,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[str]
         """
-        result = []
-        sortNums = sorted(nums, reverse=True)
+        result    # list
+        sortNums = s..(nums, r.._T..
         hashmap = {}
-        for i, num in enumerate(sortNums):
+        ___ i, num __ enumerate(sortNums):
             hashmap[num] = i+1
-        for num in nums:
+        ___ num __ nums:
             ind = hashmap[num]
-            __ ind == 1:
-                result.append('Gold Medal')
-            elif ind == 2:
-                result.append('Silver Medal')
-            elif ind == 3:
-                result.append('Bronze Medal')
-            else:
-                result.append(str(ind))
-        return result
+            __ ind __ 1:
+                result.a..('Gold Medal')
+            ____ ind __ 2:
+                result.a..('Silver Medal')
+            ____ ind __ 3:
+                result.a..('Bronze Medal')
+            ____:
+                result.a..(str(ind))
+        r.. result

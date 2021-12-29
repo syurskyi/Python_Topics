@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -7,35 +7,35 @@ class Solution:
         :type recs: List[List[int]]
         :rtype: bool
         """
-        __ not recs:
-            return False
+        __ n.. recs:
+            r.. False
 
         left = bottom = float('inf')
         right = top = float('-inf')
         points = collections.defaultdict(int)
 
-        for l, b, r, t in recs:
-            left = min(left, l)
-            bottom = min(bottom, b)
+        ___ l, b, r, t __ recs:
+            left = m..(left, l)
+            bottom = m..(bottom, b)
             right = max(right, r)
             top = max(top, t)
 
-            for x, y, val in (
+            ___ x, y, val __ (
                 (l, b, 1),
                 (r, b, 2),
                 (r, t, 4),
                 (l, t, 8),
             ):
                 __ points[x, y] & val:
-                    return False
+                    r.. False
                 points[x, y] |= val
 
         __ any(
             # only check the mid-points
-            val not in (3, 6, 9, 12, 15)
-            for (x, y), val in points.items()
-            __ left < x < right or bottom < y < top
+            val n.. __ (3, 6, 9, 12, 15)
+            ___ (x, y), val __ points.items()
+            __ left < x < right o. bottom < y < top
         ):
-            return False
+            r.. False
 
-        return True
+        r.. True

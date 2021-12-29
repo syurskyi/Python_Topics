@@ -4,30 +4,30 @@ class Solution(object):
     :type matrix: List[List[int]]
     :rtype: List[int]
     """
-    __ not matrix:
-      return []
-    ans = []
+    __ n.. matrix:
+      r.. []
+    ans    # list
     directions = [(-1, 1), (1, -1)]
     d = 0
     i = j = 0
-    for _ in range(len(matrix) * len(matrix[0])):
-      ans.append(matrix[i][j])
+    ___ _ __ r..(l..(matrix) * l..(matrix[0])):
+      ans.a..(matrix[i][j])
       di, dj = directions[d]
       i, j = i + di, j + dj
-      __ i < 0 and 0 <= j < len(matrix[0]):
+      __ i < 0 and 0 <= j < l..(matrix[0]):
         i = 0
-      elif i >= len(matrix):
-        i = len(matrix) - 1
+      ____ i >= l..(matrix):
+        i = l..(matrix) - 1
         j -= 2 * dj
-      elif 0 <= i < len(matrix) and j < 0:
+      ____ 0 <= i < l..(matrix) and j < 0:
         j = 0
-      elif 0 <= i < len(matrix) and j >= len(matrix[0]):
-        j = len(matrix[0]) - 1
+      ____ 0 <= i < l..(matrix) and j >= l..(matrix[0]):
+        j = l..(matrix[0]) - 1
         i -= 2 * di
-      elif i < 0 and j >= len(matrix[0]):
+      ____ i < 0 and j >= l..(matrix[0]):
         i = 1
         j -= dj
-      else:
+      ____:
         continue
       d = ~d
-    return ans
+    r.. ans

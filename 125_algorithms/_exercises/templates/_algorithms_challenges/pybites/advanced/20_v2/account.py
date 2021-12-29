@@ -1,22 +1,22 @@
 class Account:
 
     ___ __init__(self):
-        self._transactions = []
+        self._transactions    # list
 
     @property
     ___ balance(self):
-        return sum(self._transactions)
+        r.. s..(self._transactions)
 
     ___ __add__(self, amount):
-        self._transactions.append(amount)
+        self._transactions.a..(amount)
 
     ___ __sub__(self, amount):
-        self._transactions.append(-amount)
+        self._transactions.a..(-amount)
 
     ___ __enter__(self):
-        return self
+        r.. self
 
     ___ __exit__(self, *_):
         while self.balance < 0:
             self._transactions.pop()
-        return self
+        r.. self

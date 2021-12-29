@@ -1,9 +1,9 @@
-import sys
-import threading
-import time
-import unittest
+_______ sys
+_______ threading
+_______ time
+_______ unittest
 
-from bank_account import BankAccount
+____ bank_account _______ BankAccount
 
 
 class BankAccountTest(unittest.TestCase):
@@ -87,7 +87,7 @@ class BankAccountTest(unittest.TestCase):
         self.account.open()
         self.account.deposit(1000)
 
-        for _ in range(10):
+        ___ _ __ r..(10):
             self.adjust_balance_concurrently()
 
     ___ adjust_balance_concurrently(self):
@@ -104,17 +104,17 @@ class BankAccountTest(unittest.TestCase):
             # For Python 2 compatibility
             sys.setcheckinterval(1)
 
-        threads = []
-        for _ in range(1000):
+        threads    # list
+        ___ _ __ r..(1000):
             t = threading.Thread(target=transact)
-            threads.append(t)
+            threads.a..(t)
             t.start()
 
-        for thread in threads:
+        ___ thread __ threads:
             thread.join()
 
         self.assertEqual(self.account.get_balance(), 1000)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

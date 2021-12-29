@@ -1,7 +1,7 @@
 
 # Recursive Approach
 ___ get_edit_dist(str1, str2, m, n
-    __ m __ 0 or n __ 0:
+    __ m __ 0 o. n __ 0:
         r_ ma_(m, n)
 
     ch1  1 + get_edit_dist(str1, str2, m, n - 1)
@@ -13,12 +13,12 @@ ___ get_edit_dist(str1, str2, m, n
         k  1
 
     ch3  k + get_edit_dist(str1, str2, m - 1, n - 1)
-    r_ min(ch1, ch2, ch3)
+    r_ m..(ch1, ch2, ch3)
 
 
 # DP : Top Down Approach
 ___ get_edit_dist_td(str1, str2, m, n, dp
-    __ m __ 0 or n __ 0:
+    __ m __ 0 o. n __ 0:
         r_ ma_(m, n)
 
     __ dp[m-1][n-1] > 0:
@@ -33,7 +33,7 @@ ___ get_edit_dist_td(str1, str2, m, n, dp
         k  1
 
     ch3  k + get_edit_dist_td(str1, str2, m - 1, n - 1, dp)
-    dp[m-1][n-1]  min(ch1, ch2, ch3)
+    dp[m-1][n-1]  m..(ch1, ch2, ch3)
     r_ dp[m-1][n-1]
 
 
@@ -50,7 +50,7 @@ ___ get_edit_dist_bu(str1, str2, m, n
             __ str1[i - 1] __ str2[j - 1]:
                 l_dist[i][j]  l_dist[i - 1][j - 1]
             ____
-                l_dist[i][j]  min(l_dist[i][j - 1], l_dist[i - 1][j], l_dist[i - 1][j - 1]) + 1;
+                l_dist[i][j]  m..(l_dist[i][j - 1], l_dist[i - 1][j], l_dist[i - 1][j - 1]) + 1;
     r_ l_dist[m][n]
 
 
@@ -81,7 +81,7 @@ ___ editDistDP(str1, str2, m, n
             # If last character are different, consider all 
             # possibilities and find minimum 
             ____
-                dp[i][j]  1 + min(dp[i][j-1],        # Insert
+                dp[i][j]  1 + m..(dp[i][j-1],        # Insert
                                    dp[i-1][j],        # Remove 
                                    dp[i-1][j-1])    # Replace 
   

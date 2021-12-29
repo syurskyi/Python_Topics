@@ -9,34 +9,34 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums: return 0
+        __ n.. nums: r.. 0
         hashmap = {}
         degree = 0
         cands = set()
-        for i, num in enumerate(nums):
+        ___ i, num __ enumerate(nums):
             hashmap[num] = hashmap.get(num, [])+[i]
-            __ len(hashmap[num]) > degree:
-                degree = len(hashmap[num])
+            __ l..(hashmap[num]) > degree:
+                degree = l..(hashmap[num])
                 cands = set([num])
-            elif len(hashmap[num]) == degree:
+            ____ l..(hashmap[num]) __ degree:
                 cands.add(num)
         minLen = float('inf')
-        for num in cands:
-            __ len(hashmap[num]) == 1:
-                return 1
-            minLen = min(minLen, hashmap[num][-1]-hashmap[num][0]+1)
-        return minLen
+        ___ num __ cands:
+            __ l..(hashmap[num]) __ 1:
+                r.. 1
+            minLen = m..(minLen, hashmap[num][-1]-hashmap[num][0]+1)
+        r.. minLen
     
     ___ test(self):
         testCases = [
             [1, 2, 2, 3, 1],
             [1, 2, 2, 3, 1, 4, 2],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.findShortestSubArray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

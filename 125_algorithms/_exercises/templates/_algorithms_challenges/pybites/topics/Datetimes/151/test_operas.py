@@ -1,45 +1,45 @@
-import pytest
+_______ pytest
 
-from operas import operas_both_at_premiere
+____ operas _______ operas_both_at_premiere
 
 
 ___ test_wagner_verdi():
     # materializing to list to support generator as return
-    wagner_verdi = list(operas_both_at_premiere("wagner", "verdi"))
-    assert len(wagner_verdi) == 10
-    assert "Otello" not in wagner_verdi
+    wagner_verdi = l..(operas_both_at_premiere("wagner", "verdi"))
+    ... l..(wagner_verdi) __ 10
+    ... "Otello" n.. __ wagner_verdi
 
 
 ___ test_verdi_wagner():
-    verdi_wagner = list(operas_both_at_premiere("verdi", "wagner"))
-    assert len(verdi_wagner) == 11
+    verdi_wagner = l..(operas_both_at_premiere("verdi", "wagner"))
+    ... l..(verdi_wagner) __ 11
 
     # premiere after Wagner's death (composed in 1833)
-    assert "The Fairies" not in verdi_wagner
+    ... "The Fairies" n.. __ verdi_wagner
 
 
 ___ test_beethoven_wagner():
-    beethoven_wagner = list(operas_both_at_premiere("beethoven", "wagner"))
-    assert len(beethoven_wagner) == 0
+    beethoven_wagner = l..(operas_both_at_premiere("beethoven", "wagner"))
+    ... l..(beethoven_wagner) __ 0
 
 
 ___ test_wagner_beethoven():
-    wagner_beethoven = list(operas_both_at_premiere("wagner", "beethoven"))
-    assert len(wagner_beethoven) == 0
+    wagner_beethoven = l..(operas_both_at_premiere("wagner", "beethoven"))
+    ... l..(wagner_beethoven) __ 0
 
 
 ___ test_beethoven_mozart():
-    beethoven_mozart = list(operas_both_at_premiere("beethoven", "mozart"))
-    assert len(beethoven_mozart) == 5
-    assert "Apollo and Hyacinth" not in beethoven_mozart
+    beethoven_mozart = l..(operas_both_at_premiere("beethoven", "mozart"))
+    ... l..(beethoven_mozart) __ 5
+    ... "Apollo and Hyacinth" n.. __ beethoven_mozart
 
 
 ___ test_non_listed_composer():
     with pytest.raises(ValueError):
-        list(operas_both_at_premiere("verdi", "dvorak"))
+        l..(operas_both_at_premiere("verdi", "dvorak"))
 
 
 ___ test_non_listed_guest():
     # a guest must be in the list of composers
     with pytest.raises(ValueError):
-        list(operas_both_at_premiere("dvorak", "verdi"))
+        l..(operas_both_at_premiere("dvorak", "verdi"))

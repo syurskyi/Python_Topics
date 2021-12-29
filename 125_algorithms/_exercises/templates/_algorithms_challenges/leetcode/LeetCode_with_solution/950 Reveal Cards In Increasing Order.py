@@ -39,8 +39,8 @@ Note:
 1 <= A[i] <= 10^6
 A[i] != A[j] for all i != j
 """
-from typing import List
-from collections import deque
+____ typing _______ List
+____ collections _______ deque
 
 
 class Solution:
@@ -59,10 +59,10 @@ class Solution:
         """
         q = deque()
         deck.sort()
-        for i in range(len(deck) - 1, -1, -1):
+        ___ i __ r..(l..(deck) - 1, -1, -1):
             __ q:
                 tail = q.pop()
                 q.appendleft(tail)
             q.appendleft(deck[i])
 
-        return list(q)
+        r.. l..(q)

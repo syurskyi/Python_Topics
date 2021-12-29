@@ -2,16 +2,16 @@ ___ flatten(list_of_lists):
     
 
     
-    new_list = []
+    new_list    # list
     
-    for l in list_of_lists:
-        __ type(l) in (tuple,list):
+    ___ l __ list_of_lists:
+        __ type(l) __ (tuple,l..):
             new_list.extend(flatten(l))
-        else:
-            new_list.append(l)
+        ____:
+            new_list.a..(l)
     
 
-    return new_list
+    r.. new_list
 
 
 

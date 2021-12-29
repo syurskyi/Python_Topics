@@ -1,1 +1,1 @@
-import collections; print (' '.join(sorted([x for x, y in collections.Counter(raw_input().split()).items() __ y > 1])))
+_______ collections; print (' '.join(s..([x ___ x, y __ collections.Counter(raw_input().split()).items() __ y > 1])))

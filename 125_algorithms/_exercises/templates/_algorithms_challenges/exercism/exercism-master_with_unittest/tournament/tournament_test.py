@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from tournament import tally
+____ tournament _______ tally
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.4.0
@@ -113,5 +113,5 @@ class TournamentTest(unittest.TestCase):
         self.assertEqual(tally(results), table)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

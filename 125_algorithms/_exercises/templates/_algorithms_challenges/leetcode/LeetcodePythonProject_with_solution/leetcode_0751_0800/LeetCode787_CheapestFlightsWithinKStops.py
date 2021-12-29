@@ -13,24 +13,24 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        import heapq
+        _______ heapq
         graph = {}
-        for f in flights:
-            __ f[0] not in graph:
+        ___ f __ flights:
+            __ f[0] n.. __ graph:
                 graph[f[0]] = [[f[2], f[1]]]
-            else:
-                graph[f[0]].append([f[2], f[1]])
+            ____:
+                graph[f[0]].a..([f[2], f[1]])
         pq = [[0, K+1, src]]
         while pq:
-            size = len(pq)
-            for _ in range(size):
+            size = l..(pq)
+            ___ _ __ r..(size):
                 curLen, level, node = heapq.heappop(pq)
-                __ node == dst:
-                    return curLen
+                __ node __ dst:
+                    r.. curLen
                 __ level > 0:
-                    for dist, node0 in graph.get(node, []):
+                    ___ dist, node0 __ graph.get(node, []):
                         heapq.heappush(pq, [curLen+dist, level-1, node0])
-        return -1
+        r.. -1
     
     ___ test(self):
         testCases = [
@@ -40,10 +40,10 @@ class Solution(object):
             [4, [[0,3,59],[2,0,83],[2,3,32],[0,2,97],[3,1,16],[1,3,16]], 3, 0, 3],
             [5, [[0,1,5],[1,2,5],[0,3,2],[3,1,2],[1,4,1],[4,2,1]], 0, 2, 2],
         ]
-        for n, flights, src, dst, k in testCases:
+        ___ n, flights, src, dst, k __ testCases:
             result = self.findCheapestPrice(n, flights, src, dst, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

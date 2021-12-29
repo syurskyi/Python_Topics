@@ -5,20 +5,20 @@
 #         self.end = e
 class IntvArray(object):
   ___ __init__(self):
-    self._array = []
-    self.append = lambda x: self._array.append(x)
+    self._array    # list
+    self.a.. = l.... x: self._array.a..(x)
     self.sort = self._array.sort
 
   ___ __len__(self):
-    return len(self._array)
+    r.. l..(self._array)
 
   ___ __getitem__(self, x):
-    return self._array[x][0]
+    r.. self._array[x][0]
 
   ___ getIdx(self, x):
-    __ x >= len(self._array):
-      return -1
-    return self._array[x][1]
+    __ x >= l..(self._array):
+      r.. -1
+    r.. self._array[x][1]
 
 
 class Solution(object):
@@ -28,12 +28,12 @@ class Solution(object):
     :rtype: List[int]
     """
     bst = IntvArray()
-    ans = []
-    for i, intv in enumerate(intervals):
-      bst.append((intv.start, i))
+    ans    # list
+    ___ i, intv __ enumerate(intervals):
+      bst.a..((intv.start, i))
     bst.sort()
-    length = len(bst)
-    for intv in intervals:
+    length = l..(bst)
+    ___ intv __ intervals:
       idx = bisect.bisect_left(bst, intv.end)
-      ans.append(bst.getIdx(idx))
-    return ans
+      ans.a..(bst.getIdx(idx))
+    r.. ans

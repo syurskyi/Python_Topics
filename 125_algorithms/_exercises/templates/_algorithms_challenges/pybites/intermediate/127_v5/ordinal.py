@@ -14,7 +14,7 @@ ___ get_ordinal_suffix(number):
        """
     s_num = str(number)
     units = int(s_num[-1])
-    __ not (10 < int(s_num[-2:]) < 20):
+    __ n.. (10 < int(s_num[-2:]) < 20):
         __ 0 < units < 4:
-            return f'{number}{["st", "nd", "rd"][units - 1]}'
-    return f'{number}th'
+            r.. f'{number}{["st", "nd", "rd"][units - 1]}'
+    r.. f'{number}th'

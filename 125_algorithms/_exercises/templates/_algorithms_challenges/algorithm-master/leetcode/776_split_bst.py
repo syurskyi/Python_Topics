@@ -13,14 +13,14 @@ class Solution:
         :type target: int
         :rtype: List[TreeNode]
         """
-        __ not root:
-            return None, None
+        __ n.. root:
+            r.. N.., N..
 
         __ root.val > target:
             left, right = self.splitBST(root.left, target)
             root.left = right
-            return left, root
-        else:
+            r.. left, root
+        ____:
             left, right = self.splitBST(root.right, target)
             root.right = left
-            return root, right
+            r.. root, right

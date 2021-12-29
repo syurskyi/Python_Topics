@@ -21,22 +21,22 @@ class Solution:
         num.sort()
         min_summation = 0
 
-        for i, val in enumerate(num):
+        ___ i, val __ enumerate(num):
             j = i+1
-            k = len(num)-1
+            k = l..(num)-1
             while j<k:
                 lst = [val, num[j], num[k]]
-                __ min_distance>abs(target-sum(lst)):
-                    min_summation = sum(lst)
-                    __ sum(lst)==target:
-                        return min_summation
+                __ min_distance>abs(target-s..(lst)):
+                    min_summation = s..(lst)
+                    __ s..(lst)__target:
+                        r.. min_summation
                     min_distance = abs(target-min_summation)
-                elif sum(lst)>target:
+                ____ s..(lst)>target:
                     k -= 1
-                else:
+                ____:
                     j += 1
-        return min_summation
+        r.. min_summation
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().threeSumClosest([1, 1, 1, 1], 0)
 

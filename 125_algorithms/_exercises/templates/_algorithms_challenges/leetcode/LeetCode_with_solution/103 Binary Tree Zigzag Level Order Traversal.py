@@ -22,8 +22,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ zigzagLevelOrder(self, root):
@@ -32,25 +32,25 @@ class Solution:
         :param root: a tree node
         :return:  a list of lists of integers
         """
-        __ not root:
-            return []
+        __ n.. root:
+            r.. []
 
-        result = []
+        result    # list
         lst = [root]
         direction = False
         while lst:
             __ direction:
-                result.append([element.val for element in lst])
-            else:
-                result.append([element.val for element in reversed(lst)])
+                result.a..([element.val ___ element __ lst])
+            ____:
+                result.a..([element.val ___ element __ reversed(lst)])
 
-            for i in range(len(lst)):  # evaluation time
+            ___ i __ r..(l..(lst)):  # evaluation time
                 element = lst.pop(0)  # queue 
                 __ element.left:
-                    lst.append(element.left)
+                    lst.a..(element.left)
                 __ element.right:
-                    lst.append(element.right)
-            direction = not direction
-        return result
+                    lst.a..(element.right)
+            direction = n.. direction
+        r.. result
 
 

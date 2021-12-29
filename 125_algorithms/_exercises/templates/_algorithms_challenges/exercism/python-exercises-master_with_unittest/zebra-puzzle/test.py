@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from zebra_puzzle import solution
+____ zebra_puzzle _______ solution
 
 
 class ZebraPuzzleTest(unittest.TestCase):
@@ -10,5 +10,5 @@ class ZebraPuzzleTest(unittest.TestCase):
                           "The Japanese keeps the zebra."))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

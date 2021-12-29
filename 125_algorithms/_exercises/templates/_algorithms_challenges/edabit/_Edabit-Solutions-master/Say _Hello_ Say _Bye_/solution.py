@@ -1,8 +1,8 @@
 ___ say_hello_bye(name, num):
-    __ num == 1:
-        return "Hello " + name.capitalize()
-    else:
-        return "Bye " + name.capitalize()
+    __ num __ 1:
+        r.. "Hello " + name.capitalize()
+    ____:
+        r.. "Bye " + name.capitalize()
 
 
 ___ test():

@@ -13,16 +13,16 @@ class Solution:
         :type intvs: List[Interval]
         :rtype: List[Interval]
         """
-        ans = []
-        __ not intvs:
-            return ans
+        ans    # list
+        __ n.. intvs:
+            r.. ans
 
-        intvs.sort(key=lambda intv: (intv.start, intv.end))
+        intvs.sort(key=l.... intv: (intv.start, intv.end))
 
-        for intv in intvs:
-            __ not ans or intv.start > ans[-1].end:
-                ans.append(intv)
-            elif intv.end > ans[-1].end:
+        ___ intv __ intvs:
+            __ n.. ans o. intv.start > ans[-1].end:
+                ans.a..(intv)
+            ____ intv.end > ans[-1].end:
                 ans[-1].end = intv.end
 
-        return ans
+        r.. ans

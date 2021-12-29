@@ -1,8 +1,8 @@
-from collections import Counter
-from contextlib import contextmanager
-from datetime import date
-from time import time
-import sys
+____ collections _______ Counter
+____ contextlib _______ contextmanager
+____ datetime _______ date
+____ time _______ time
+_______ sys
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
 ALERT_THRESHOLD = 3
@@ -13,11 +13,11 @@ violations = Counter()
 
 ___ get_today():
     """Making it easier to test/mock"""
-    return date.today()
+    r.. date.today()
 
 
 @contextmanager
-___ timeit() -> None:
+___ timeit() -> N..
     start = time()
     try:
         yield

@@ -12,7 +12,7 @@ Note:
 The length of given words won't exceed 500.
 Characters in given words can only be lower-case letters.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -26,21 +26,21 @@ class Solution:
         F[i][j] = F[i-1][j-1] + 1 if word1[i-1] == word2[j-1]
         F[i][j] = max(F[i-1][j], F[i][j-1])
         """
-        F = defaultdict(lambda: defaultdict(int))
-        m = len(word1)
-        n = len(word2)
+        F = defaultdict(l....: defaultdict(int))
+        m = l..(word1)
+        n = l..(word2)
 
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                __ word1[i-1] == word2[j-1]:
+        ___ i __ r..(1, m + 1):
+            ___ j __ r..(1, n + 1):
+                __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
-                else:
+                ____:
                     F[i][j] = max(
                         F[i-1][j],
                         F[i][j-1],
                     )
 
-        return m - F[m][n] + n - F[m][n]
+        r.. m - F[m][n] + n - F[m][n]
 
     ___ minDistance_edit_distance(self, word1: str, word2: str) -> int:
         """
@@ -51,28 +51,28 @@ class Solution:
         F[i][j] = F[i-1][j-1] if word1[i-1] == word2[j-1]
         F[i][j] = min(F[i-1][j] + 1, F[i][j-1] + 1)
         """
-        F = defaultdict(lambda: defaultdict(int))
-        m = len(word1)
-        n = len(word2)
+        F = defaultdict(l....: defaultdict(int))
+        m = l..(word1)
+        n = l..(word2)
 
         # initialization is important
-        for i in range(1, m + 1):
+        ___ i __ r..(1, m + 1):
             F[i][0] = i
-        for j in range(1, n + 1):
+        ___ j __ r..(1, n + 1):
             F[0][j] = j
 
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                __ word1[i-1] == word2[j-1]:
+        ___ i __ r..(1, m + 1):
+            ___ j __ r..(1, n + 1):
+                __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1]
-                else:
-                    F[i][j] = min(
+                ____:
+                    F[i][j] = m..(
                         F[i-1][j] + 1,
                         F[i][j-1] + 1,
                     )
 
-        return F[m][n]
+        r.. F[m][n]
 
 
-__ __name__ == "__main__":
-    assert Solution().minDistance("sea", "eat") == 2
+__ __name__ __ "__main__":
+    ... Solution().minDistance("sea", "eat") __ 2

@@ -1,17 +1,17 @@
-from typing import Dict
+____ typing _______ Dict
 
 
 ___ decompress(string: str, table: Dict[str, str]) -> str:
 
 
-    result = [] 
-    for c in string:
-        __ c in table:
+    result    # list
+    ___ c __ string:
+        __ c __ table:
             result.extend(decompress(table[c],table))
-        else:
-            result.append(c)
+        ____:
+            result.a..(c)
 
-    return ''.join(result)
+    r.. ''.join(result)
 
 
 

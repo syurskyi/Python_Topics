@@ -69,7 +69,7 @@ Note:
 1 <= grid.length == grid[0].length <= 30
 grid[i][j] is either '/', '\', or ' '.
 """
-from typing import List
+____ typing _______ List
 
 
 class DisjointSet:
@@ -86,11 +86,11 @@ class DisjointSet:
 
     ___ find(self, x):
         # LHS self.pi[x]
-        __ x not in self.pi:
+        __ x n.. __ self.pi:
             self.pi[x] = x
         __ self.pi[x] != x:
             self.pi[x] = self.find(self.pi[x])
-        return self.pi[x]
+        r.. self.pi[x]
 
 class Solution:
     ___ regionsBySlashes(self, grid: List[str]) -> int:
@@ -112,16 +112,16 @@ class Solution:
         |\ /|
         |/_\|
         """
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         ds = DisjointSet()
-        T, R, B, L = range(4)  # top, right, bottom, left
-        for i in range(m):
-            for j in range(n):
+        T, R, B, L = r..(4)  # top, right, bottom, left
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 e = grid[i][j]
-                __ e == "/" or e == " ":
+                __ e __ "/" o. e __ " ":
                     ds.union((i, j, B), (i, j, R))
                     ds.union((i, j, T), (i, j, L))
-                __ e == "\\" or e == " ":  # not elif
+                __ e __ "\\" o. e __ " ":  # not elif
                     ds.union((i, j, T), (i, j, R))
                     ds.union((i, j, B), (i, j, L))
                 # nbr
@@ -137,18 +137,18 @@ class Solution:
                 #     ds.union((i, j, R), (i, j+1, L))
 
 
-        return len(set(
+        r.. l..(set(
             ds.find(x)
-            for x in ds.pi.keys()
+            ___ x __ ds.pi.keys()
         ))
 
 
-__ __name__ == "__main__":
-    assert Solution().regionsBySlashes([
+__ __name__ __ "__main__":
+    ... Solution().regionsBySlashes([
           " /",
           "/ "
-        ]) == 2
-    assert Solution().regionsBySlashes([
+        ]) __ 2
+    ... Solution().regionsBySlashes([
           "//",
           "/ "
-        ]) == 3
+        ]) __ 3

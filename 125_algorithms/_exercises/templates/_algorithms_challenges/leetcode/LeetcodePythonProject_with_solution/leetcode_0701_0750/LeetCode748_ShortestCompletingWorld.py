@@ -11,26 +11,26 @@ class Solution(object):
         :rtype: str
         """
         hashmap = {}
-        for c in licensePlate:
-            __ not c.isdigit() and c != ' ':
+        ___ c __ licensePlate:
+            __ n.. c.isdigit() and c != ' ':
                 hashmap[c.lower()] = hashmap.get(c.lower(), 0)+1
         res = ''
         l = float('inf')
-        for word in words:
-            __ len(word) < l:
+        ___ word __ words:
+            __ l..(word) < l:
                 __ self.contains(hashmap, word):
                     res = word
-                    l = len(res)
-        return res
+                    l = l..(res)
+        r.. res
     
     ___ contains(self, hashmap, word):
         hashmap0 = {}
-        for c in word:
+        ___ c __ word:
             hashmap0[c] = hashmap0.get(c, 0)+1
-        for c in hashmap:
+        ___ c __ hashmap:
             __ hashmap[c] > hashmap0.get(c, 0):
-                return False
-        return True
+                r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -47,12 +47,12 @@ class Solution(object):
                 ["suggest","letter","of","husband","easy","education","drug","prevent","writer","old"],
             ],
         ]
-        for licensePlate, words in testCases:
+        ___ licensePlate, words __ testCases:
             print('licensePlate: %s' % licensePlate)
             print('words: %s' % words)
             result = self.shortestCompletingWord(licensePlate, words)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -9,11 +9,11 @@ ___ print_colors():
        - otherwise print the color in lower case."""
     while True:
         color = input("Enter a color or enter 'quit'")
-        __ color == "quit":
+        __ color __ "quit":
             print("bye")
             break
-        elif color in VALID_COLORS:
+        ____ color __ VALID_COLORS:
             print(color.lower())
-        else:
+        ____:
             print("Not a valid color")
         pass

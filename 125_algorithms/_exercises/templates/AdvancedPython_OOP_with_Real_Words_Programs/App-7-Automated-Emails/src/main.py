@@ -21,7 +21,7 @@ w___ T...
     __ datetime.datetime.now().hour __ 13 and datetime.datetime.now().minute __ 28:
         df  pandas.read_excel('people.xlsx')
 
-        for index, row in df.iterrows():
+        ___ index, row __ df.iterrows():
             send_email()
 
     t__.sleep(60)

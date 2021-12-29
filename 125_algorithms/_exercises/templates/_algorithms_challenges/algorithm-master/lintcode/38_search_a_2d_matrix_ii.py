@@ -1,7 +1,7 @@
 """
 Heap
 """
-import heapq
+_______ heapq
 
 
 class Solution:
@@ -12,26 +12,26 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not matrix or not matrix[0]:
-            return ans
+        __ n.. matrix o. n.. matrix[0]:
+            r.. ans
 
-        heap = []
-        m, n = len(matrix), len(matrix[0])
+        heap    # list
+        m, n = l..(matrix), l..(matrix[0])
 
-        for i in range(m):
+        ___ i __ r..(m):
             heapq.heappush(heap, (matrix[i][0], i, 0))
 
         while heap and heap[0][0] <= target:
             num, x, y = heapq.heappop(heap)
 
-            __ num == target:
+            __ num __ target:
                 ans += 1
 
             y += 1
             __ y < n:
                 heapq.heappush(heap, (matrix[x][y], x, y))
 
-        return ans
+        r.. ans
 
 
 """
@@ -55,20 +55,20 @@ class Solution:
         """
         ans = 0
 
-        __ not matrix or not matrix[0]:
-            return ans
+        __ n.. matrix o. n.. matrix[0]:
+            r.. ans
 
-        m, n = len(matrix), len(matrix[0])
+        m, n = l..(matrix), l..(matrix[0])
         x, y = m - 1, 0
 
         while x >= 0 and y < n:
             __ matrix[x][y] < target:
                 y += 1
-            elif matrix[x][y] > target:
+            ____ matrix[x][y] > target:
                 x -= 1
-            else:
+            ____:
                 ans += 1
                 x -= 1
                 y += 1
 
-        return ans
+        r.. ans

@@ -1,5 +1,5 @@
-import string
-import pandas as pd
+_______ string
+_______ pandas as pd
 
 
 ___ basic_series() -> pd.Series:
@@ -7,7 +7,7 @@ ___ basic_series() -> pd.Series:
     Don't worry about the indexes for now.
     The name of the series should be 'Fred'
     """
-    return pd.Series([1, 2, 3, 4, 5], name='Fred')
+    r.. pd.Series([1, 2, 3, 4, 5], name='Fred')
 
 
 ___ float_series() -> pd.Series:
@@ -15,7 +15,7 @@ ___ float_series() -> pd.Series:
     from 0.000 -> 1.000 e.g. 0.000, 0.001, 0.002... 0.999, 1.000
     Don't worry about the indexes or the series name.
     """
-    return pd.Series([x/1000 for x in range(1001)])
+    r.. pd.Series([x/1000 ___ x __ r..(1001)])
 
 ___ alpha_index_series() -> pd.Series:
     """Create a Series with values 1, 2, ... 25, 26 of type int64
@@ -23,13 +23,13 @@ ___ alpha_index_series() -> pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    alphabet = []
-    numbers = []
-    for letter in range(97, 123):
-        alphabet.append(chr(letter))
-    for number in range(1, 27):
-        numbers.append(number)
-    return pd.Series(numbers, index=alphabet)
+    alphabet    # list
+    numbers    # list
+    ___ letter __ r..(97, 123):
+        alphabet.a..(chr(letter))
+    ___ number __ r..(1, 27):
+        numbers.a..(number)
+    r.. pd.Series(numbers, index=alphabet)
 
 
 ___ object_values_series() -> pd.Series:
@@ -38,10 +38,10 @@ ___ object_values_series() -> pd.Series:
     so index 101='A', 102='B' ... 125='Y', 126='Z'
     Don't worry about the series name.
     """
-    alphabet = []
+    alphabet    # list
     numbers =[]
-    for letter in range(65, 91):
-        alphabet.append(chr(letter))
-    for number in range(101, 127):
-        numbers.append(number)
-    return pd.Series(alphabet, index=numbers)
+    ___ letter __ r..(65, 91):
+        alphabet.a..(chr(letter))
+    ___ number __ r..(101, 127):
+        numbers.a..(number)
+    r.. pd.Series(alphabet, index=numbers)

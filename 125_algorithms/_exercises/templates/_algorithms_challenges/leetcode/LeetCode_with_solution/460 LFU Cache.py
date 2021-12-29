@@ -29,8 +29,8 @@ cache.get(1);       // returns -1 (not found)
 cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 """
-from collections import defaultdict, OrderedDict
-DUMMY = None
+____ collections _______ defaultdict, OrderedDict
+DUMMY = N..
 
 
 class LFUCache:
@@ -56,29 +56,29 @@ class LFUCache:
         self.mini = -1  # mini frequency
 
     ___ get(self, key: int) -> int:
-        __ key in self.values:
+        __ key __ self.values:
             val = self.values[key]
             freq_org = self.freqs[key]
             self.freqs[key] += 1
             del self.keys[freq_org][key]
             self.keys[freq_org + 1][key] = DUMMY  # dummy
 
-            __ freq_org == self.mini and len(self.keys[self.mini]) == 0:
+            __ freq_org __ self.mini and l..(self.keys[self.mini]) __ 0:
                 self.mini = freq_org + 1
 
-            return val
-        else:
-            return - 1
+            r.. val
+        ____:
+            r.. - 1
 
-    ___ put(self, key: int, value: int) -> None:
-        __ self.cap == 0:  # trivial
-            return
+    ___ put(self, key: int, value: int) -> N..
+        __ self.cap __ 0:  # trivial
+            r..
 
-        __ key in self.values:
+        __ key __ self.values:
             self.values[key] = value
             self.get(key)  # update
-        else:
-            __ len(self.values) >= self.cap:
+        ____:
+            __ l..(self.values) >= self.cap:
                 evit_key, _ = self.keys[self.mini].popitem(last=False)  # least recent is at head
                 del self.values[evit_key]
                 del self.freqs[evit_key]

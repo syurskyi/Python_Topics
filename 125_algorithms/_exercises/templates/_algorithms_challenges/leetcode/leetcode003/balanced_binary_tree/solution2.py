@@ -18,25 +18,25 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        __ root __ None:
-            return True
-        else:
+        __ root __ N..
+            r.. True
+        ____:
             __ self.height(root) != -1:
-                return True
-            else:
-                return False
+                r.. True
+            ____:
+                r.. False
 
     ___ height(self, root):
         # Return -1 if not balanced
-        __ root __ None:
-            return 0
-        else:
+        __ root __ N..
+            r.. 0
+        ____:
             left_height = self.height(root.left)
             right_height = self.height(root.right)
-            __ left_height == -1 or right_height == -1:
-                return -1
-            else:
+            __ left_height __ -1 o. right_height __ -1:
+                r.. -1
+            ____:
                 __ abs(left_height - right_height) <= 1:
-                    return max(left_height, right_height) + 1
-                else:
-                    return -1
+                    r.. max(left_height, right_height) + 1
+                ____:
+                    r.. -1

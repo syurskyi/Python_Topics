@@ -26,20 +26,20 @@ class LRUCache:
     # @return an integer
     ___ get(self, key):
         self.timestamp += 1
-        __ key in self.cache:
+        __ key __ self.cache:
             self.times[key] = self.timestamp
-            return self.cache[key]
-        return -1
+            r.. self.cache[key]
+        r.. -1
 
     # @param key, an integer
     # @param value, an integer
     # @return nothing
     ___ set(self, key, value):
         self.timestamp += 1
-        __ key in self.cache:
+        __ key __ self.cache:
             self.times[key] = self.timestamp
-        else:
-            __ len(self.cache) >= self.capacity:
+        ____:
+            __ l..(self.cache) >= self.capacity:
                 lru_key = self.get_lru_key()
                 del self.cache[lru_key]
                 del self.times[lru_key]
@@ -48,9 +48,9 @@ class LRUCache:
 
     ___ get_lru_key(self):
         min_time = self.timestamp
-        res = None
-        for key in self.times:
+        res = N..
+        ___ key __ self.times:
             __ self.times[key] <= min_time:
                 res = key
                 min_time = self.times[key]
-        return res
+        r.. res

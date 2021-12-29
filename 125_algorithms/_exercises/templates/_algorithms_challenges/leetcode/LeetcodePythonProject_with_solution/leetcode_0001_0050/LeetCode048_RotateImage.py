@@ -9,10 +9,10 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        import math
-        n = len(matrix)
-        for i in range(n//2):
-            for j in range(int(math.ceil(n/2.0))):
+        _______ math
+        n = l..(matrix)
+        ___ i __ r..(n//2):
+            ___ j __ r..(int(math.ceil(n/2.0))):
                 tmp = matrix[i][j]
                 matrix[i][j] = matrix[n-1-j][i]
                 matrix[n-1-j][i] = matrix[n-1-i][n-1-j]

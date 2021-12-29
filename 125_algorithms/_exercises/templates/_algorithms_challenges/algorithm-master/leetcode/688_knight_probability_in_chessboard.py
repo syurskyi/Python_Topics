@@ -1,4 +1,4 @@
-import collections
+_______ collections
 
 
 class Solution:
@@ -19,12 +19,12 @@ class Solution:
         dp = collections.defaultdict(int)
         dp[r, c] = 1.0
 
-        for _ in range(k):
+        ___ _ __ r..(k):
             nxt = collections.defaultdict(int)
 
-            for x in range(n):
-                for y in range(n):
-                    for dx, dy in (
+            ___ x __ r..(n):
+                ___ y __ r..(n):
+                    ___ dx, dy __ (
                         (-1, -2),
                         ( 1, -2),
                         (-2, -1),
@@ -37,14 +37,14 @@ class Solution:
                         _x = x + dx
                         _y = y + dy
 
-                        __ not (0 <= _x < n and 0 <= _y < n):
+                        __ n.. (0 <= _x < n and 0 <= _y < n):
                             continue
 
                         nxt[_x, _y] += dp[x, y] / 8.0
 
             dp = nxt
 
-        return sum(dp.values())
+        r.. s..(dp.values())
 
 
 class Solution:
@@ -59,8 +59,8 @@ class Solution:
         :type c: int
         :rtype: float
         """
-        __ n == 1 and k == 0:
-            return 1.0
+        __ n __ 1 and k __ 0:
+            r.. 1.0
 
         queue, _queue = [(r, c)], []
         total = 8 ** k
@@ -69,8 +69,8 @@ class Solution:
         while queue and k:
             k -= 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y __ queue:
+                ___ dx, dy __ (
                     (-1, -2),
                     ( 1, -2),
                     (-2, -1),
@@ -83,15 +83,15 @@ class Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ not (0 <= _x < n and 0 <= _y < n):
+                    __ n.. (0 <= _x < n and 0 <= _y < n):
                         continue
 
-                    __ k == 0:
+                    __ k __ 0:
                         valid += 1
 
                     __ k > 0:
-                        _queue.append((_x, _y))
+                        _queue.a..((_x, _y))
 
             queue, _queue = _queue, []
 
-        return valid / total
+        r.. valid / total

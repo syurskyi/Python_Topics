@@ -1,7 +1,7 @@
-import os
-import unittest
+_______ os
+_______ unittest
 
-from grep import grep
+____ grep _______ grep
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -211,5 +211,5 @@ class GrepTest(unittest.TestCase):
                  "-n -l -x -i"), "")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -22,21 +22,21 @@ class Solution:
         :param A: a list of integers
         :return: a boolean
         """
-        length = len(A)
-        dp = [set([index]) for index in range(length)]
+        length = l..(A)
+        dp = [set([index]) ___ index __ r..(length)]
 
-        for ind, val in enumerate(A):
-            __ ind!=0 and len(dp[ind])<2:
+        ___ ind, val __ enumerate(A):
+            __ ind!=0 and l..(dp[ind])<2:
                 continue
 
             # jump forward
-            for i in xrange(ind+1, ind+val+1):
+            ___ i __ xrange(ind+1, ind+val+1):
                 __ i>=length:
                     break
-                for item in dp[ind]:
+                ___ item __ dp[ind]:
                     dp[i].add(item)
 
-        return 0 in dp[-1]
+        r.. 0 __ dp[-1]
 
     ___ canJump_TLE2(self, A):
         """
@@ -49,17 +49,17 @@ class Solution:
         :param A:
         :return:
         """
-        l = len(A)
-        dp = [False for _ in xrange(l+1)]  # last one is dummy
+        l = l..(A)
+        dp = [False ___ _ __ xrange(l+1)]  # last one is dummy
         dp[0] = True
-        for ind, val in enumerate(A):
+        ___ ind, val __ enumerate(A):
             __ dp[ind]:
-                for i in xrange(1, val+1):  # now jumping
+                ___ i __ xrange(1, val+1):  # now jumping
                     __ ind+i<l+1:
                         dp[ind+i] = True
-                    else:
+                    ____:
                         break
-        return dp[-1]
+        r.. dp[-1]
 
     ___ canJump(self, A):
         """
@@ -74,32 +74,32 @@ class Solution:
         :param A: a list of integers
         :return: a boolean
         """
-        l = len(A)
+        l = l..(A)
         # trivial
         __ l<=1:
-            return True
+            r.. True
 
         # dp = [-1]*(l-1)  # normally starting from \phi
-        dp = [-1 for _ in xrange(l)]  # no need dummy here
+        dp = [-1 ___ _ __ xrange(l)]  # no need dummy here
 
         dp[0] = A[0]+0  # reachable index (absolute index)
-        for i in xrange(1, l):
+        ___ i __ xrange(1, l):
             # check terminal condition first
             # able to reach the end index
             __ dp[i-1]>=l-1:  # directly reach the end
-                return True
+                r.. True
 
             # fail to reach current index
             __ dp[i-1]<i:
-                return False
+                r.. False
 
             # transition function
             dp[i] = max(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
 
-        return False
+        r.. False
 
 
 
-__ __name__=="__main__":
-    assert Solution().canJump([2, 3, 1, 1, 4])==True
-    assert Solution().canJump([3, 2, 1, 0, 4])==False
+__ __name____"__main__":
+    ... Solution().canJump([2, 3, 1, 1, 4])__True
+    ... Solution().canJump([3, 2, 1, 0, 4])__False

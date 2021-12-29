@@ -10,13 +10,13 @@ class Solution(object):
     :type head: ListNode
     :rtype: ListNode
     """
-    dummy = ListNode(None)
+    dummy = ListNode(N..)
     dummy.next = head
     p = dummy
 
     while p and p.next:
-      __ p.val == p.next.val:
+      __ p.val __ p.next.val:
         p.next = p.next.next
-      else:
+      ____:
         p = p.next
-    return dummy.next
+    r.. dummy.next

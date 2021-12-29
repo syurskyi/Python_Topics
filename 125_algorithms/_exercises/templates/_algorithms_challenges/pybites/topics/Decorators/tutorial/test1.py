@@ -1,5 +1,5 @@
-from functools import wraps
-from time import time
+____ functools _______ wraps
+____ time _______ time
 
 ___ timer(func):
     @wraps(func)
@@ -8,8 +8,8 @@ ___ timer(func):
         answer = func(*args, **kwargs)
         end = time()
         print(f'Elapsed: {end-start}')
-        return answer
-    return wrapper
+        r.. answer
+    r.. wrapper
 
 ___ tracer(func):
     @wraps(func)
@@ -17,7 +17,7 @@ ___ tracer(func):
         print('Entering...')
         func(*args, **kwargs)
         print('Existing....')
-    return wrapper
+    r.. wrapper
 
 
 @tracer

@@ -4,25 +4,25 @@ class Solution:
         :type words: list[str]
         :rtype: str
         """
-        __ not words:
-            return ''
+        __ n.. words:
+            r.. ''
 
-        ans = []
+        ans    # list
         gotcha = set()
-        max_size = max(len(word) for word in words)
+        max_size = max(l..(word) ___ word __ words)
 
-        for j in range(max_size):
-            for word in words:
-                __ j >= len(word):
+        ___ j __ r..(max_size):
+            ___ word __ words:
+                __ j >= l..(word):
                     continue
 
-                __ word[j] in gotcha:
+                __ word[j] __ gotcha:
                     continue
 
-                ans.append(word[j])
+                ans.a..(word[j])
                 gotcha.add(word[j])
 
-        return ''.join(ans)
+        r.. ''.join(ans)
 
 
 class Solution:
@@ -30,38 +30,38 @@ class Solution:
     REF: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs/2
     """
     ___ alienOrder(self, words):
-        __ not words:
-            return ''
+        __ n.. words:
+            r.. ''
 
-        ans = []
+        ans    # list
         edges = {}
         indeg = {}
 
-        for w in words:
-            for c in w:
+        ___ w __ words:
+            ___ c __ w:
                 indeg[c] = 0
 
-        for i in range(len(words) - 1):
+        ___ i __ r..(l..(words) - 1):
             cur = words[i]
             nxt = words[i + 1]
-            for j in range(min(len(cur), len(nxt))):
-                __ cur[j] == nxt[j]:
+            ___ j __ r..(m..(l..(cur), l..(nxt))):
+                __ cur[j] __ nxt[j]:
                     continue
-                __ cur[j] not in edges:
+                __ cur[j] n.. __ edges:
                     edges[cur[j]] = set()
-                __ nxt[j] not in edges[cur[j]]:
+                __ nxt[j] n.. __ edges[cur[j]]:
                     edges[cur[j]].add(nxt[j])
                     indeg[nxt[j]] = indeg.get(nxt[j], 0) + 1
                 break
 
-        queue = [c for c, deg in indeg.items() __ deg == 0]
-        for c in queue:
-            ans.append(c)
-            __ c not in edges:
+        queue = [c ___ c, deg __ indeg.items() __ deg __ 0]
+        ___ c __ queue:
+            ans.a..(c)
+            __ c n.. __ edges:
                 continue
-            for _c in edges[c]:
+            ___ _c __ edges[c]:
                 indeg[_c] -= 1
-                __ indeg[_c] == 0:
-                    queue.append(_c)
+                __ indeg[_c] __ 0:
+                    queue.a..(_c)
 
-        return ''.join(ans) __ len(ans) == len(indeg) else ''
+        r.. ''.join(ans) __ l..(ans) __ l..(indeg) ____ ''

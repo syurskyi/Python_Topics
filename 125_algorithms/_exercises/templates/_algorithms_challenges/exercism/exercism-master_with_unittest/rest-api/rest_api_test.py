@@ -1,7 +1,7 @@
-import unittest
-import json
+_______ unittest
+_______ json
 
-from rest_api import RestAPI
+____ rest_api _______ RestAPI
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.1
@@ -376,5 +376,5 @@ class RestAPITest(unittest.TestCase):
         self.assertDictEqual(json.loads(response), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

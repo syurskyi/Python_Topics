@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from pythagorean_triplet import triplets_with_sum
+____ pythagorean_triplet _______ triplets_with_sum
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -46,5 +46,5 @@ class PythagoreanTripletTest(unittest.TestCase):
         self.assertEqual(triplets_with_sum(30000), expected)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

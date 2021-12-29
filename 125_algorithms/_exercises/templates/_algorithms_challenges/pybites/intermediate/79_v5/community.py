@@ -1,7 +1,7 @@
-import csv
-from collections import Counter
+_______ csv
+____ collections _______ Counter
 
-import requests
+_______ requests
 
 CSV_URL = 'https://bit.ly/2HiD2i8'
 
@@ -10,7 +10,7 @@ ___ get_csv():
     """Use requests to download the csv and return the
        decoded content"""
     with requests.Session() as session:
-        return session.get(CSV_URL).content.decode('utf-8')
+        r.. session.get(CSV_URL).content.decode('utf-8')
 
 
 ___ create_user_bar_chart(content: str):
@@ -18,8 +18,8 @@ ___ create_user_bar_chart(content: str):
        and their corresponding member counts in pluses (see Bite/tests)"""
     reader = csv.DictReader(content.splitlines())
     counter = Counter()
-    for row in reader:
+    ___ row __ reader:
         counter[row['tz']] += 1
-    l = sorted(counter)
-    for timezone in l:
+    l = s..(counter)
+    ___ timezone __ l:
         print(f'{timezone:25} | {"+" * counter[timezone]}')

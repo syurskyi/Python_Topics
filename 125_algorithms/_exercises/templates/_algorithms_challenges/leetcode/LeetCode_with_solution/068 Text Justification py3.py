@@ -54,7 +54,7 @@ Output:
   "do                  "
 ]
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -64,29 +64,29 @@ class Solution:
 
         Jump and then backtrack
         """
-        ret = []
+        ret    # list
         char_cnt = 0  # char exclude spaces
-        cur_words = []
+        cur_words    # list
 
-        for w in words:
-            cur_words.append(w)
-            char_cnt += len(w)
-            __ char_cnt + len(cur_words) - 1 > maxWidth:
+        ___ w __ words:
+            cur_words.a..(w)
+            char_cnt += l..(w)
+            __ char_cnt + l..(cur_words) - 1 > maxWidth:
                 # break
                 cur_words.pop()
-                char_cnt -= len(w)
-                for i in range(maxWidth - char_cnt):
-                    cur_words[i % max(1, len(cur_words) - 1)] += " "
+                char_cnt -= l..(w)
+                ___ i __ r..(maxWidth - char_cnt):
+                    cur_words[i % max(1, l..(cur_words) - 1)] += " "
 
-                ret.append("".join(cur_words))
+                ret.a..("".join(cur_words))
 
                 cur_words = [w]
-                char_cnt = len(w)
+                char_cnt = l..(w)
 
         # last line
         last = " ".join(cur_words)
-        ret.append(last + " " * (maxWidth - len(last)))
-        return ret
+        ret.a..(last + " " * (maxWidth - l..(last)))
+        r.. ret
 
 
 class Solution2:
@@ -97,32 +97,32 @@ class Solution2:
         Look before jump
         Look before you leap
         """
-        ret = []
+        ret    # list
         char_cnt = 0
-        cur_words = []
+        cur_words    # list
 
-        for w in words:
+        ___ w __ words:
             # len(cur_words) is the space needed with len(cur_words) + 1 words
-            __ char_cnt + len(w) + len(cur_words) > maxWidth:
+            __ char_cnt + l..(w) + l..(cur_words) > maxWidth:
                 # break, move w into the next line
                 # Round robin distribut the spaces except for the last word
-                for i in range(maxWidth - char_cnt):
-                    cur_words[i % max(1, len(cur_words) - 1)] += " "  # insert in between
+                ___ i __ r..(maxWidth - char_cnt):
+                    cur_words[i % max(1, l..(cur_words) - 1)] += " "  # insert in between
                     # len(cur_words) - 1 can be 0
-                ret.append("".join(cur_words))
+                ret.a..("".join(cur_words))
 
-                cur_words = []
+                cur_words    # list
                 char_cnt = 0
 
-            cur_words.append(w)
-            char_cnt += len(w)
+            cur_words.a..(w)
+            char_cnt += l..(w)
 
         # last line
         last = " ".join(cur_words)
-        ret.append(last + " " * (maxWidth - len(last)))
-        return ret
+        ret.a..(last + " " * (maxWidth - l..(last)))
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16) == ["This    is    an","example  of text","justification.  "]
-    assert Solution().fullJustify(["What","must","be","acknowledgment","shall","be"], 16) == ["What   must   be","acknowledgment  ","shall be        "]
+__ __name__ __ "__main__":
+    ... Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16) __ ["This    is    an","example  of text","justification.  "]
+    ... Solution().fullJustify(["What","must","be","acknowledgment","shall","be"], 16) __ ["What   must   be","acknowledgment  ","shall be        "]

@@ -20,9 +20,9 @@ class Solution:
         """
         try:
             float(s)
-            return True
+            r.. True
         except ValueError:
-            return False
+            r.. False
 
     ___ isNumber(self, s):
         """
@@ -53,34 +53,34 @@ class Solution:
             [-1, 8,-1,-1,-1,-1], # 9
         ]
         state = 0
-        for char in s:
-            __ state==-1:
-                return False
-            __ char==" ":
+        ___ char __ s:
+            __ state__-1:
+                r.. False
+            __ char__" ":
                 token = SPACE
-            elif char in ("-", "+"):
+            ____ char __ ("-", "+"):
                 token = SIGN
-            elif char in map(str, range(10)):
+            ____ char __ map(str, r..(10)):
                 token = DIGIT
-            elif char==".":
+            ____ char__".":
                 token = DOT
-            elif char in ("e", "E"):
+            ____ char __ ("e", "E"):
                 token = E
-            else:
+            ____:
                 token = INVALID
 
             state = T[state][token]
-        __ state in (1, 4, 7, 8):  # accept state
-            return True
-        else:
-            return False
+        __ state __ (1, 4, 7, 8):  # accept state
+            r.. True
+        ____:
+            r.. False
 
-__ __name__=="__main__":
-    assert Solution().isNumber(".2e81")==True
-    assert Solution().isNumber("6+1")==False
-    assert Solution().isNumber("1 a")==False
-    assert Solution().isNumber("1e10")==True
-    assert Solution().isNumber(" 0.1")==True
-    assert Solution().isNumber("abc")==False
+__ __name____"__main__":
+    ... Solution().isNumber(".2e81")__True
+    ... Solution().isNumber("6+1")__False
+    ... Solution().isNumber("1 a")__False
+    ... Solution().isNumber("1e10")__True
+    ... Solution().isNumber(" 0.1")__True
+    ... Solution().isNumber("abc")__False
 
 

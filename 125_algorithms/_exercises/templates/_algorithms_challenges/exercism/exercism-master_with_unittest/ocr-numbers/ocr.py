@@ -14,50 +14,50 @@ class Ocr:
                  "8": [" _ ", "|_|", "|_|", "   "],
                  "9": [" _ ", "|_|", " _|", "   "]}
 
-    NUMS = {"".join(value): key for key, value in list(GRID_NUMS.items())}
+    NUMS = {"".join(value): key ___ key, value __ l..(GRID_NUMS.items())}
 
     @classmethod
     ___ numbers(cls, inp):
-        return "".join(map(cls.number, list(
-            zip(*list(map(cls.split_every_three, inp))))))
+        r.. "".join(map(cls.number, l..(
+            zip(*l..(map(cls.split_every_three, inp))))))
 
     @classmethod
     ___ grids(cls, inp):
-        return list(map("".join, list(zip(*list(map(cls.grid, inp))))))
+        r.. l..(map("".join, l..(zip(*l..(map(cls.grid, inp))))))
 
     @classmethod
     ___ number(cls, inp):
-        __ not cls.valid_num(inp):
+        __ n.. cls.valid_num(inp):
             raise ValueError
-        return cls.NUMS.get("".join(inp), cls.UNRECOGNIZED_NUM)
+        r.. cls.NUMS.get("".join(inp), cls.UNRECOGNIZED_NUM)
 
     @classmethod
     ___ grid(cls, inp):
-        __ not cls.valid_grid(inp):
+        __ n.. cls.valid_grid(inp):
             raise ValueError
-        return cls.GRID_NUMS.get(inp)
+        r.. cls.GRID_NUMS.get(inp)
 
     @classmethod
     ___ valid_num(cls, inp):
-        return (all(len(row) == cls.NUM_COLS for row in inp) and
-                len(inp) == cls.NUM_ROWS)
+        r.. (a..(l..(row) __ cls.NUM_COLS ___ row __ inp) and
+                l..(inp) __ cls.NUM_ROWS)
 
     @classmethod
     ___ valid_grid(cls, inp):
-        return all(char in list(cls.GRID_NUMS.keys()) for char in inp)
+        r.. a..(char __ l..(cls.GRID_NUMS.keys()) ___ char __ inp)
 
     @classmethod
     ___ split_every_three(cls, inp):
-        return cls.split(inp, 3)
+        r.. cls.split(inp, 3)
 
     @staticmethod
     ___ split(inp, size):
-        return [inp[start:start + size] for start in range(0, len(inp), size)]
+        r.. [inp[start:start + size] ___ start __ r..(0, l..(inp), size)]
 
 
 ___ number(inp):
-    return Ocr.numbers(inp)
+    r.. Ocr.numbers(inp)
 
 
 ___ grid(inp):
-    return Ocr.grids(inp)
+    r.. Ocr.grids(inp)

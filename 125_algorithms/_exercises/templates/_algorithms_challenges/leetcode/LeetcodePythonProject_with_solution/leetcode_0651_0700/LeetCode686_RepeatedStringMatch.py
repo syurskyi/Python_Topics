@@ -11,13 +11,13 @@ class Solution(object):
         :rtype: int
         """
         s1, s2 = A, B
-        n1, n2 = len(s1), len(s2)
+        n1, n2 = l..(s1), l..(s2)
         k = n2//n1+2
-        __ str(s1*k).count(s2)==0:
-            return -1
-        while k >= 1 and str(s1*k).count(s2)!=0:
+        __ str(s1*k).c.. s2)__0:
+            r.. -1
+        while k >= 1 and str(s1*k).c.. s2)!=0:
             k -= 1
-        return k+1
+        r.. k+1
     
     ___ test(self):
         testCases = [
@@ -26,12 +26,12 @@ class Solution(object):
                 'cdabcdab',
             ]
         ]
-        for A, B in testCases:
+        ___ A, B __ testCases:
             print('A: %s' % A)
             print('B: %s' % B)
             result = self.repeatedStringMatch(A, B)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

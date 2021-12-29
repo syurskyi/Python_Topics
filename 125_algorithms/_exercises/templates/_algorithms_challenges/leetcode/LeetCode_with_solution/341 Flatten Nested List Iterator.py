@@ -28,7 +28,7 @@ class NestedInteger(object):
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        return True
+        r.. True
 
     ___ getInteger(self):
         """
@@ -36,7 +36,7 @@ class NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        return 0
+        r.. 0
 
     ___ getList(self):
         """
@@ -44,7 +44,7 @@ class NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        return []
+        r.. []
 
 
 class NestedIterator(object):
@@ -69,7 +69,7 @@ class NestedIterator(object):
         nl, idx = self.stk[-1]
         nxt = nl[idx].getInteger()
         self.stk[-1][1] = idx + 1  # advance the index
-        return nxt
+        r.. nxt
 
     ___ hasNext(self):
         """
@@ -78,18 +78,18 @@ class NestedIterator(object):
         """
         while self.stk:
             nl, idx = self.stk[-1]
-            __ idx < len(nl):
+            __ idx < l..(nl):
                 ni = nl[idx]
                 __ ni.isInteger():
-                    return True
-                else:
+                    r.. True
+                ____:
                     self.stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
                     nxt_nl = ni.getList()
-                    self.stk.append([nxt_nl, 0])
-            else:
+                    self.stk.a..([nxt_nl, 0])
+            ____:
                 self.stk.pop()
 
-        return False
+        r.. False
 
 
 
@@ -117,7 +117,7 @@ class NestedIteratorVerbose(object):
             idx = self.idx_stk[-1]
             nxt = nl[idx]
             self.idx_stk[-1] = idx + 1
-            return nxt
+            r.. nxt
 
         raise StopIteration()
 
@@ -129,21 +129,21 @@ class NestedIteratorVerbose(object):
         while self.nl_stk:
             nl = self.nl_stk[-1]
             idx = self.idx_stk[-1]
-            __ idx < len(nl):
+            __ idx < l..(nl):
                 ni = nl[idx]
                 __ ni.isInteger():
-                    return True
-                else:
+                    r.. True
+                ____:
                     self.idx_stk[-1] = idx+1
                     nxt_nl = ni.getList()
                     nxt_idx = 0
-                    self.nl_stk.append(nxt_nl)
-                    self.idx_stk.append(nxt_idx)
-            else:
+                    self.nl_stk.a..(nxt_nl)
+                    self.idx_stk.a..(nxt_idx)
+            ____:
                 self.nl_stk.pop()
                 self.idx_stk.pop()
 
-        return False
+        r.. False
 
 
 # Your NestedIterator object will be instantiated and called as such:

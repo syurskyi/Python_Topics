@@ -24,7 +24,7 @@ c_ Graph:
     ___ kruskalAlgo(self
         i, e  0, 0
         ds  dst.DisjointSet(nodes)
-        graph  sorted(graph, keylambda item: item[2])
+        graph  s..(graph, keylambda item: item[2])
         w__ e < V - 1:
             s, d, w  graph[i]
             i + 1

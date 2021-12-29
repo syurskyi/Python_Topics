@@ -1,4 +1,4 @@
-import string
+_______ string
 
 
 class Solution(object):
@@ -9,69 +9,69 @@ class Solution(object):
     """
 
     ___ getTokenStartsAt(start):
-      for i in range(start, len(code)):
-        __ code[i] == ">":
+      ___ i __ r..(start, l..(code)):
+        __ code[i] __ ">":
           break
-      return code[start:i + 1]
+      r.. code[start:i + 1]
 
     ___ isTagsMatched(left, right):
-      return len(left) + 1 == len(right) and left[1:] == right[2:]
+      r.. l..(left) + 1 __ l..(right) and left[1:] __ right[2:]
 
     ___ isClosedTag(tag):
-      return tag[1] == "/"
+      r.. tag[1] __ "/"
 
     ___ isCDATATag(i):
-      return code.startswith("<![CDATA[", i)
+      r.. code.startswith("<![CDATA[", i)
 
     ___ isTag(tag):
-      __ len(tag) < 3:
-        return False
+      __ l..(tag) < 3:
+        r.. False
       __ tag[-1] != ">":
-        return False
+        r.. False
 
       tag = tag[1:-1]
-      __ tag[0] == "/":
+      __ tag[0] __ "/":
         tag = tag[1:]
-      __ not 1 <= len(tag) <= 9:
-        return False
-      for c in tag:
-        __ c not in string.ascii_uppercase:
-          return False
-      return True
+      __ n.. 1 <= l..(tag) <= 9:
+        r.. False
+      ___ c __ tag:
+        __ c n.. __ string.ascii_uppercase:
+          r.. False
+      r.. True
 
     __ code[0] != "<":
-      return False
+      r.. False
     tagLen = 0
-    stack = []
+    stack    # list
     i = 0
-    while i < len(code):
-      __ code[i] == "<":
+    while i < l..(code):
+      __ code[i] __ "<":
         __ isCDATATag(i):
-          __ not stack:
-            return False
-          while i < len(code) - 7 and not code.startswith("]]>", i):
+          __ n.. stack:
+            r.. False
+          while i < l..(code) - 7 and n.. code.startswith("]]>", i):
             i += 1
           __ code.startswith("]]>", i):
             i += 3
             continue
-          else:
-            return False
-        else:
+          ____:
+            r.. False
+        ____:
           token = getTokenStartsAt(i)
-          __ not isTag(token):
-            return False
-          __ not isClosedTag(token):
-            stack.append(token)
-          else:
-            __ not stack:
-              return False
+          __ n.. isTag(token):
+            r.. False
+          __ n.. isClosedTag(token):
+            stack.a..(token)
+          ____:
+            __ n.. stack:
+              r.. False
             __ isTagsMatched(stack[-1], token):
               stack.pop()
-              __ not stack and i + len(token) < len(code):
-                return False
-            else:
-              return False
-          i += len(token)
-      else:
+              __ n.. stack and i + l..(token) < l..(code):
+                r.. False
+            ____:
+              r.. False
+          i += l..(token)
+      ____:
         i += 1
-    return not stack
+    r.. n.. stack

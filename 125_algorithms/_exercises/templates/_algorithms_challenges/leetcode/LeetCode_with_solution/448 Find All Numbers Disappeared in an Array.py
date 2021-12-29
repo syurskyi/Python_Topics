@@ -19,19 +19,19 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        for idx in range(len(A)):
+        ___ idx __ r..(l..(A)):
             while True:
                 target = A[idx] - 1
-                __ idx == target or A[idx] == A[target]:
+                __ idx __ target o. A[idx] __ A[target]:
                     break 
                 A[idx], A[target] = A[target], A[idx]
 
-        missing = []
-        for idx, elm in enumerate(A):
+        missing    # list
+        ___ idx, elm __ enumerate(A):
             __ idx != elm - 1:
-                missing.append(idx + 1)
-        return missing
+                missing.a..(idx + 1)
+        r.. missing
 
 
-__ __name__ == "__main__":
-    assert Solution().findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) == [5, 6]
+__ __name__ __ "__main__":
+    ... Solution().findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) __ [5, 6]

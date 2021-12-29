@@ -11,8 +11,8 @@ class Solution(object):
         """
         hashmap = {}
         hashset = set(A)
-        for j in range(len(A)):
-            for i in range(j):
-                __ A[j]-A[i] < A[i] and A[j]-A[i] in hashset:
+        ___ j __ r..(l..(A)):
+            ___ i __ r..(j):
+                __ A[j]-A[i] < A[i] and A[j]-A[i] __ hashset:
                     hashmap[A[i], A[j]] = hashmap.get((A[j]-A[i], A[i]), 2) + 1
-        return max(hashmap.values() or [0])
+        r.. max(hashmap.values() o. [0])

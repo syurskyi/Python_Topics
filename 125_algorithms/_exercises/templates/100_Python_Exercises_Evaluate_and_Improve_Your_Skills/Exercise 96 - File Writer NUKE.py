@@ -8,5 +8,5 @@ w___ T...
     __ line __ "CLOSE":
         file.close()
         _____
-    else:
+    ____:
         file.write(line + "\n")

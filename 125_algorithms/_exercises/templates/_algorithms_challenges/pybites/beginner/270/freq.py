@@ -1,11 +1,11 @@
 
-from collections import Counter
+____ collections _______ Counter
 
 ___ freq_digit(num: int) -> int:
 
 
 
-    return int(Counter(str(num)).most_common(1)[0][0])
+    r.. int(Counter(str(num)).most_common(1)[0][0])
 
 
 

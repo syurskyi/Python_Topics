@@ -10,17 +10,17 @@ class Solution(object):
         :type H: int
         :rtype: int
         """
-        import math
+        _______ math
         piles.sort()
         l, r = 1, max(piles)
         while l <= r:
             mid = l+(r-l)//2
-            sumVal = sum(math.ceil(float(num)/mid) for num in piles)
+            sumVal = s..(math.ceil(float(num)/mid) ___ num __ piles)
             __ sumVal <= H:
                 r = mid-1
-            else:
+            ____:
                 l = mid+1
-        return l
+        r.. l
     
     ___ test(self):
         testCases = [
@@ -37,13 +37,13 @@ class Solution(object):
                 6,
             ],
         ]
-        for piles, h in testCases:
+        ___ piles, h __ testCases:
             res = self.minEatingSpeed(piles, h)
             print('res: %s' % str(res))
             print('-='*30+'-')
 
-__ __name__ == '__main__':
-    import math
+__ __name__ __ '__main__':
+    _______ math
     print(math.ceil(float(3)/3))
     print(math.ceil(float(4)/3))
     Solution().test()

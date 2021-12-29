@@ -12,18 +12,18 @@ class Solution(object):
         """
         hashmap = {}
         hashset = set()
-        __ len(s) != len(t):
-            return False
-        for c1, c2 in zip(s, t):
-            __ c1 not in hashmap:
-                __ c2 in hashset:
-                    return False
+        __ l..(s) != l..(t):
+            r.. False
+        ___ c1, c2 __ zip(s, t):
+            __ c1 n.. __ hashmap:
+                __ c2 __ hashset:
+                    r.. False
                 hashmap[c1] = c2
                 hashset.add(c2)
-            else:
+            ____:
                 __ hashmap[c1] != c2:
-                    return False
-        return True
+                    r.. False
+        r.. True
     
     ___ isIsomorphic_old(self, s, t):
         """
@@ -31,18 +31,18 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ len(s) != len(t): return False
+        __ l..(s) != l..(t): r.. False
         hashmap1, hashmap2 = {}, {}
-        for c1, c2 in zip(s, t):
-            __ c1 in hashmap1 and\
-            (c2 not in hashmap2 or hashmap1[c1] != c2 or hashmap2[c2] != c1):
-                return False
-            elif c2 in hashmap2 and\
-            (c1 not in hashmap1 or hashmap1[c1] != c2 or hashmap2[c2] != c1):
-                return False
+        ___ c1, c2 __ zip(s, t):
+            __ c1 __ hashmap1 and\
+            (c2 n.. __ hashmap2 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
+                r.. False
+            ____ c2 __ hashmap2 and\
+            (c1 n.. __ hashmap1 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
+                r.. False
             hashmap1[c1] = c2
             hashmap2[c2] = c1
-        return True
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -51,11 +51,11 @@ class Solution(object):
             ('foo', 'bar'),
             ('paper', 'title'),
         ]
-        for s, t in testCases:
+        ___ s, t __ testCases:
             print('s: %s, t: %s' % (s, t))
             result = self.isIsomorphic(s, t)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

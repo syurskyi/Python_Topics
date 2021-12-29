@@ -18,11 +18,11 @@ Example call (look at the tests for more detail):
 Bonus: use a generator to build up the table rows.
 """
 
-import random
+_______ random
 
-names = 'Julian Bob PyBites Dante Martin Rodolfo'.split()
-aliases = 'Pythonista Nerd Coder'.split() * 2
-points = random.sample(range(81, 101), 6)
+names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
+aliases = 'Pythonista Nerd Coder'.s..  * 2
+points = random.sample(r..(81, 101), 6)
 awake = [True, False] * 3
 SEPARATOR = ' | '
 
@@ -30,21 +30,21 @@ SEPARATOR = ' | '
 ### ----------- My solution ---------------------------
 
 ___ my_generate_table(*args):
-    l = []
+    l    # list
     result = zip(*args)
-    for i in result:
+    ___ i __ result:
         s = ""
-        for t in i:
-            __ s == "":
+        ___ t __ i:
+            __ s __ "":
                 s = str(t)
-            else:
+            ____:
                 s = s + " | " + str(t)
-        l.append(s)
-    return l
+        l.a..(s)
+    r.. l
 
 ### ---------- PyBites original solution ---------------
 
 ___ pyb_generate_table(*sequences):
-    for seq in zip(*sequences):
-        seq = [str(val) for val in seq]
+    ___ seq __ zip(*sequences):
+        seq = [str(val) ___ val __ seq]
         yield SEPARATOR.join(seq)

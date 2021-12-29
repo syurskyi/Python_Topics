@@ -7,26 +7,26 @@ Created on Apr 23, 2017
 class Solution(object):
     ___ find132pattern(self, nums):
         s3 = float('-inf')
-        stack = []
-        for i in range(len(nums)-1, -1, -1):
+        stack    # list
+        ___ i __ r..(l..(nums)-1, -1, -1):
             num = nums[i]
             __ num < s3:
-                return True
+                r.. True
             while stack and stack[-1] < num:
                 s3 = stack.pop()
-            stack.append(num)
-        return False
+            stack.a..(num)
+        r.. False
     
     ___ test(self):
         testCases = [
             [3, 1, 4, 2],
             [1, 2, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.find132pattern(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

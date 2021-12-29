@@ -27,8 +27,8 @@ Note: There are at least two nodes in this BST.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -42,17 +42,17 @@ class Solution:
         """
         ret = [float('inf')]  # keep reference
         self.dfs(root, ret)
-        return ret[0]
+        r.. ret[0]
 
     ___ dfs(self, node, ret):
-        __ not node:
-            return None, None
+        __ n.. node:
+            r.. N.., N..
         left_min, left_max = self.dfs(node.left, ret)
         right_min, right_max = self.dfs(node.right, ret)
         __ left_max:
-            ret[0] = min(ret[0], abs(node.val - left_max))
+            ret[0] = m..(ret[0], abs(node.val - left_max))
         __ right_min:
-            ret[0] = min(ret[0], abs(node.val - right_min))
-        left_min = left_min or node.val
-        right_max = right_max or node.val
-        return left_min, right_max
+            ret[0] = m..(ret[0], abs(node.val - right_min))
+        left_min = left_min o. node.val
+        right_max = right_max o. node.val
+        r.. left_min, right_max

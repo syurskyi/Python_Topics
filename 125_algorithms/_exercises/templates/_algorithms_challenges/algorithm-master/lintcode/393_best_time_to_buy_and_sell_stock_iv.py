@@ -5,10 +5,10 @@ class Solution:
     @return: Maximum profit
     """
     ___ maxProfit(self, K, P):
-        __ not K or not P:
-            return 0
+        __ n.. K o. n.. P:
+            r.. 0
 
-        n = len(P)
+        n = l..(P)
 
         """
         if `K >= n`, this problem is just
@@ -17,26 +17,26 @@ class Solution:
         """
         __ K >= n:
             profit = 0
-            for i in range(1, n):
+            ___ i __ r..(1, n):
                 __ P[i] > P[i - 1]:
                     profit += P[i] - P[i - 1]
-            return profit
+            r.. profit
 
         """
         the main concept is in
         `./lintcode/151_best_time_to_buy_and_sell_stock_iii.py`
         """
         STAGE = 2 * K + 1
-        dp = [[0] * STAGE for _ in range(2)]
+        dp = [[0] * STAGE ___ _ __ r..(2)]
 
         i = j = prev = curr = profit = 0
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             prev = curr
             curr = 1 - prev
             profit = P[i] - P[i - 1]
-            for j in range(1, STAGE, 2):
+            ___ j __ r..(1, STAGE, 2):
                 dp[curr][j] = max(dp[prev][j] + profit, dp[prev][j - 1])
-            for j in range(2, STAGE, 2):
+            ___ j __ r..(2, STAGE, 2):
                 dp[curr][j] = max(dp[prev][j], dp[prev][j - 1] + profit)
 
-        return max(dp[curr])
+        r.. max(dp[curr])

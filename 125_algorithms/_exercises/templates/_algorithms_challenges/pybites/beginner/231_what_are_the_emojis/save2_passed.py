@@ -1,8 +1,8 @@
-import re
-from typing import List
+_______ re
+____ typing _______ List
 
 ___ get_emoji_indices(text: str) -> List[int]:
     """Given a text return indices of emoji characters"""
-    return [index
-            for (index, emoji) in enumerate(text)
+    r.. [index
+            ___ (index, emoji) __ enumerate(text)
             __ re.search((r'[^\w\s,]'), emoji)]

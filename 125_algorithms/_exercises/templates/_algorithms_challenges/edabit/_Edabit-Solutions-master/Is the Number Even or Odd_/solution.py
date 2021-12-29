@@ -1,8 +1,8 @@
 ___ isEvenOrOdd(num):
-    __ num % 2 == 0:
-        return "even"
-    else:
-        return "odd"
+    __ num % 2 __ 0:
+        r.. "even"
+    ____:
+        r.. "odd"
 
 
 ___ test():

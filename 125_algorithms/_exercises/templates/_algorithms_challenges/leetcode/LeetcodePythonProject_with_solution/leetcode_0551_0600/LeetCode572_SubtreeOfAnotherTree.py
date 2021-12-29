@@ -7,8 +7,8 @@ Created on Sep 3, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ isSubtree(self, s, t):
@@ -17,20 +17,20 @@ class Solution(object):
         :type t: TreeNode
         :rtype: bool
         """
-        __ not s and not t:
-            return True
-        __ not s:
-            return False
-        return self.isSameTree(s, t) or\
-            self.isSubtree(s.left, t) or\
+        __ n.. s and n.. t:
+            r.. True
+        __ n.. s:
+            r.. False
+        r.. self.isSameTree(s, t) o.\
+            self.isSubtree(s.left, t) o.\
             self.isSubtree(s.right, t)
     
     ___ isSameTree(self, s, t):
-        __ not s and not t:
-            return True
-        __ not s or not t:
-            return False
+        __ n.. s and n.. t:
+            r.. True
+        __ n.. s o. n.. t:
+            r.. False
         __ s.val != t.val:
-            return False
-        return self.isSameTree(s.left, t.left) and\
+            r.. False
+        r.. self.isSameTree(s.left, t.left) and\
             self.isSameTree(s.right, t.right)

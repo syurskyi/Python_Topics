@@ -25,22 +25,22 @@ class Solution(object):
         :param target: an integer
         :return: a boolean
         """
-        __ not mat:
-            return False
+        __ n.. mat:
+            r.. False
 
-        m = len(mat)
-        n = len(mat[0])
+        m = l..(mat)
+        n = l..(mat[0])
 
         # binary search
         lo = 0
         hi = m  # [0, m)
         while lo < hi:
             mid = (lo+hi)/2
-            __ mat[mid][0] == target:
-                return True
-            elif mat[mid][0] < target:
+            __ mat[mid][0] __ target:
+                r.. True
+            ____ mat[mid][0] < target:
                 lo = mid+1
-            else:
+            ____:
                 hi = mid
 
         lst = mat[lo-1]  # <=
@@ -50,15 +50,15 @@ class Solution(object):
         hi = n  # [0, n)
         while lo < hi:
             mid = (lo+hi)/2
-            __ lst[mid] == target:
-                return True
-            elif lst[mid] < target:
+            __ lst[mid] __ target:
+                r.. True
+            ____ lst[mid] < target:
                 lo = mid+1
-            else:
+            ____:
                 hi = mid
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().searchMatrix([[1], [3]], 3) == True
+__ __name__ __ "__main__":
+    ... Solution().searchMatrix([[1], [3]], 3) __ True

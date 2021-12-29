@@ -16,12 +16,12 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 
 ___ permutations(string):
     result = set([string])
-    __ len(string) == 2:
+    __ l..(string) __ 2:
         result.add(string[1] + string[0])
 
-    elif len(string) > 2:
-        for i, c in enumerate(string):
-            for s in permutations(string[:i] + string[i + 1:]):
+    ____ l..(string) > 2:
+        ___ i, c __ enumerate(string):
+            ___ s __ permutations(string[:i] + string[i + 1:]):
                 result.add(c + s)
 
-    return list(result)
+    r.. l..(result)

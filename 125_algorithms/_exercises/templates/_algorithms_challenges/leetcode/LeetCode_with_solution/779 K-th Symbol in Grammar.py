@@ -43,16 +43,16 @@ class Solution:
         0110 1001
         recursive go thorugh the pattern
         """
-        return self.dfs(N, K, True)
+        r.. self.dfs(N, K, True)
 
     ___ dfs(self, N, K, not_flip):
-        __ N == 1:
-            return 0 __ not_flip else 1
+        __ N __ 1:
+            r.. 0 __ not_flip ____ 1
         half_l = 2 ** (N - 1) // 2
         __ K <= half_l:
-            return self.dfs(N - 1, K, not_flip)
-        else:
-            return self.dfs(N - 1, K - half_l, not not_flip)
+            r.. self.dfs(N - 1, K, not_flip)
+        ____:
+            r.. self.dfs(N - 1, K - half_l, n.. not_flip)
 
     ___ kthGrammar_TLE(self, N: int, K: int) -> int:
         """
@@ -67,16 +67,16 @@ class Solution:
         """
         row = 0
         pos = 1
-        for n in range(1, N):
+        ___ n __ r..(1, N):
             row = (row << pos) + (~row & 2 ** pos - 1)
             pos *= 2
 
         ret = row >> pos - K & 1
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().kthGrammar(1, 1) == 0
-    assert Solution().kthGrammar(2, 1) == 0
-    assert Solution().kthGrammar(2, 2) == 1
-    assert Solution().kthGrammar(4, 5) == 1
+__ __name__ __ "__main__":
+    ... Solution().kthGrammar(1, 1) __ 0
+    ... Solution().kthGrammar(2, 1) __ 0
+    ... Solution().kthGrammar(2, 2) __ 1
+    ... Solution().kthGrammar(4, 5) __ 1

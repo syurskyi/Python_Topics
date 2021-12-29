@@ -21,8 +21,8 @@ Both of the given trees will have between 1 and 100 nodes.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -35,23 +35,23 @@ class Solution:
         itr1 = self.dfs(root1)
         itr2 = self.dfs(root2)
         while True:
-            a = next(itr1, None)
-            b = next(itr2, None)
+            a = next(itr1, N..)
+            b = next(itr2, N..)
             __ a != b:
-                return False
-            __ a is None and b is None:
+                r.. False
+            __ a __ N.. and b __ N..
                 break
-        return True
+        r.. True
 
     ___ dfs(self, node):
         stk = [node]
         # pre-order
         while stk:
             cur = stk.pop()
-            __ not cur:
+            __ n.. cur:
                 continue
-            __ not cur.left and not cur.right:
+            __ n.. cur.left and n.. cur.right:
                 yield cur.val
-            else:
-                stk.append(cur.right)
-                stk.append(cur.left)
+            ____:
+                stk.a..(cur.right)
+                stk.a..(cur.left)

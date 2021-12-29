@@ -6,15 +6,15 @@ class Solution:
         :rtype: int
         """
         NOT_FOUND = -1
-        __ haystack is None or needle is None:
-            return NOT_FOUND
-        __ haystack == needle:
-            return 0
+        __ haystack __ N.. o. needle __ N..
+            r.. NOT_FOUND
+        __ haystack __ needle:
+            r.. 0
 
-        m, n = len(haystack), len(needle)
+        m, n = l..(haystack), l..(needle)
 
-        for i in range(m - n + 1):
-            __ haystack[i:i + n] == needle:
-                return i
+        ___ i __ r..(m - n + 1):
+            __ haystack[i:i + n] __ needle:
+                r.. i
 
-        return NOT_FOUND
+        r.. NOT_FOUND

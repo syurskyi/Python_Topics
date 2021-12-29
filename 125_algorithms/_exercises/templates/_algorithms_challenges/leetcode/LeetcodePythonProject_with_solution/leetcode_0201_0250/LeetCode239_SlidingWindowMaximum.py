@@ -11,27 +11,27 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        res = []
-        deque = []
-        for i, num in enumerate(nums):
-            __ deque and deque[0] == i-k:
+        res    # list
+        deque    # list
+        ___ i, num __ enumerate(nums):
+            __ deque and deque[0] __ i-k:
                 deque.pop(0)
             while deque and nums[deque[-1]] < num:
                 deque.pop()
-            deque.append(i)
+            deque.a..(i)
             __ i+1>=k:
-                res.append(nums[deque[0]])
-        return res
+                res.a..(nums[deque[0]])
+        r.. res
     
     ___ test(self):
         testCases = [
             ([1,3,-1,-3,5,3,6,7], 3),
         ]
-        for nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % (nums))
             result = self.maxSlidingWindow(nums, k)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

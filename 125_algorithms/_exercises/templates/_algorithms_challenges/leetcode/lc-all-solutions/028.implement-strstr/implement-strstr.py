@@ -5,18 +5,18 @@ class Solution(object):
     :type needle: str
     :rtype: int
     """
-    __ len(haystack) == len(needle):
-      __ haystack == needle:
-        return 0
-      else:
-        return -1
+    __ l..(haystack) __ l..(needle):
+      __ haystack __ needle:
+        r.. 0
+      ____:
+        r.. -1
 
-    for i in range(0, len(haystack)):
+    ___ i __ r..(0, l..(haystack)):
       k = i
       j = 0
-      while j < len(needle) and k < len(haystack) and haystack[k] == needle[j]:
+      while j < l..(needle) and k < l..(haystack) and haystack[k] __ needle[j]:
         j += 1
         k += 1
-      __ j == len(needle):
-        return i
-    return -1 __ needle else 0
+      __ j __ l..(needle):
+        r.. i
+    r.. -1 __ needle ____ 0

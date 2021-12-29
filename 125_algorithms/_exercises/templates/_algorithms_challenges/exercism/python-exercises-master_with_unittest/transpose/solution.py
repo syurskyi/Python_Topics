@@ -1,6 +1,6 @@
 ___ transpose(input_lines):
     lines = input_lines.split("\n")
-    zipped = map(list,
-                 [line.ljust(len(max(lines, key=len)))
-                  for line in lines])
-    return "\n".join("".join(line) for line in zip(*zipped)).strip()
+    zipped = map(l..,
+                 [line.ljust(l..(max(lines, key=l..)))
+                  ___ line __ lines])
+    r.. "\n".join("".join(line) ___ line __ zip(*zipped)).strip()

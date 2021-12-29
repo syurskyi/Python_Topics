@@ -1,7 +1,7 @@
-from collections import deque
+____ collections _______ deque
 
 
 ___ rotate(string, n):
     string = deque(string)
     string.rotate(-n)
-    return "".join(string)
+    r.. "".join(string)

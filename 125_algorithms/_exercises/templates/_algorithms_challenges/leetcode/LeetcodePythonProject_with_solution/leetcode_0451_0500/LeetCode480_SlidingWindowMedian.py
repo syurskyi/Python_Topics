@@ -3,7 +3,7 @@ Created on Apr 27, 2017
 
 @author: MT
 '''
-import heapq
+_______ heapq
 
 class Solution(object):
     ___ medianSlidingWindow(self, nums, k):
@@ -16,37 +16,37 @@ class Solution(object):
     
     
     ___ medianSlidingWindow_another(self, nums, k):
-        import bisect
-        window = sorted(nums[:k])
-        medians = []
-        for a, b in zip(nums, nums[k:]+[0]):
-            medians.append((window[k/2] + window[~(k/2)]/2.0))
+        _______ bisect
+        window = s..(nums[:k])
+        medians    # list
+        ___ a, b __ zip(nums, nums[k:]+[0]):
+            medians.a..((window[k/2] + window[~(k/2)]/2.0))
             window.remove(a)
             bisect.insort(window, b)
-        return medians
+        r.. medians
     
     
     ___ __init__(self):
-        self.minHeap = []
-        self.maxHeap = []
+        self.minHeap    # list
+        self.maxHeap    # list
     
     ___ getMedian(self):
-        __ not self.maxHeap and not self.minHeap:
-            return 0
-        __ len(self.minHeap) == len(self.maxHeap):
-            return (self.minHeap[0] - self.maxHeap[0])/2.0
-        else:
-            return float(self.minHeap[0])
+        __ n.. self.maxHeap and n.. self.minHeap:
+            r.. 0
+        __ l..(self.minHeap) __ l..(self.maxHeap):
+            r.. (self.minHeap[0] - self.maxHeap[0])/2.0
+        ____:
+            r.. float(self.minHeap[0])
     
     ___ add(self, num):
-        __ not self.maxHeap or num > -self.maxHeap[0]:
+        __ n.. self.maxHeap o. num > -self.maxHeap[0]:
             heapq.heappush(self.minHeap, num)
-        else:
+        ____:
             heapq.heappush(self.maxHeap, -num)
-        __ len(self.maxHeap) > len(self.minHeap):
+        __ l..(self.maxHeap) > l..(self.minHeap):
             val = heapq.heappop(self.maxHeap)
             heapq.heappush(self.minHeap, -val)
-        __ len(self.minHeap) > len(self.maxHeap)+1:
+        __ l..(self.minHeap) > l..(self.maxHeap)+1:
             val = heapq.heappop(self.minHeap)
             heapq.heappush(self.maxHeap, -val)
     
@@ -54,13 +54,13 @@ class Solution(object):
         __ num >= self.getMedian():
             self.minHeap.remove(num)
             heapq.heapify(self.minHeap)
-        else:
+        ____:
             self.maxHeap.remove(-num)
             heapq.heapify(self.maxHeap)
-        __ len(self.maxHeap) > len(self.minHeap):
+        __ l..(self.maxHeap) > l..(self.minHeap):
             val = heapq.heappop(self.maxHeap)
             heapq.heappush(self.minHeap, -val)
-        __ len(self.minHeap) > len(self.maxHeap)+1:
+        __ l..(self.minHeap) > l..(self.maxHeap)+1:
             val = heapq.heappop(self.minHeap)
             heapq.heappush(self.maxHeap, -val)
     
@@ -70,12 +70,12 @@ class Solution(object):
         :type k: int
         :rtype: List[float]
         """
-        n = len(nums) - k + 1
+        n = l..(nums) - k + 1
         result = [0.0]*n
-        for i in range(len(nums)+1):
+        ___ i __ r..(l..(nums)+1):
             __ i >= k:
                 result[i-k] = self.getMedian()
                 self.remove(nums[i-k])
-            __ i < len(nums):
+            __ i < l..(nums):
                 self.add(nums[i])
-        return result
+        r.. result

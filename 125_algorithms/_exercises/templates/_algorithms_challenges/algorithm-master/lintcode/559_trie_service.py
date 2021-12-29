@@ -14,23 +14,23 @@ class TrieService:
     ___ get_root(self):
         # Return root of trie root, and
         # lintcode will print the tree struct.
-        return self.root
+        r.. self.root
 
     # @param {str} word a string
     # @param {int} frequency an integer
     # @return nothing
     ___ insert(self, word, frequency):
-        __ not word or len(word) < 1 \
-                or not frequency:
-            return
+        __ n.. word o. l..(word) < 1 \
+                o. n.. frequency:
+            r..
         parent = self.root
-        for char in word:
-            __ char not in parent.children:
+        ___ char __ word:
+            __ char n.. __ parent.children:
                 parent.children[char] = TrieNode()
             parent = parent.children[char]
 
             # To handle top10
-            parent.top10.append(frequency)
-            parent.top10.sort(reverse=True)
-            __ len(parent.top10) > 10:
+            parent.top10.a..(frequency)
+            parent.top10.sort(r.._T..
+            __ l..(parent.top10) > 10:
                 parent.top10.pop()

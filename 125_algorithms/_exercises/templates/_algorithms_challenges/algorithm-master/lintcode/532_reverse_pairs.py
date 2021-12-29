@@ -4,13 +4,13 @@ class Solution:
     @return: total of reverse pairs
     """
     ___ reversePairs(self, A):
-        n = len(A)
+        n = l..(A)
         tmp = [0] * n
-        return self.merge_sort(A, 0, n - 1, tmp)
+        r.. self.merge_sort(A, 0, n - 1, tmp)
 
     ___ merge_sort(self, A, start, end, tmp):
         __ start >= end:
-            return 0
+            r.. 0
 
         mid = (start + end) // 2
         left, right = start, mid + 1
@@ -23,7 +23,7 @@ class Solution:
                 tmp[i] = A[right]
                 right += 1
                 ans += mid - left + 1
-            else:
+            ____:
                 tmp[i] = A[left]
                 left += 1
             i += 1
@@ -38,7 +38,7 @@ class Solution:
             right += 1
             i += 1
 
-        for i in range(start, end + 1):
+        ___ i __ r..(start, end + 1):
             A[i] = tmp[i]
 
-        return ans
+        r.. ans

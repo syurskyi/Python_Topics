@@ -15,8 +15,8 @@ tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]
 Return ["JFK","ATL","JFK","SFO","ATL","SFO"].
 Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"]. But it is larger in lexical order.
 """
-import heapq
-from collections import defaultdict, deque
+_______ heapq
+____ collections _______ defaultdict, deque
 
 __author__ = 'Daniel'
 
@@ -36,13 +36,13 @@ class Solution(object):
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        G = defaultdict(list)  # every list is a heap
-        for s, e in tickets:
+        G = defaultdict(l..)  # every list is a heap
+        ___ s, e __ tickets:
             heapq.heappush(G[s], e)  # heap lexical order
 
         ret = deque()
         self.dfs(G, 'JFK', ret)
-        return list(ret)
+        r.. l..(ret)
 
     ___ dfs(self, G, cur, ret):
         while G[cur]:
@@ -51,5 +51,5 @@ class Solution(object):
         ret.appendleft(cur)
 
 
-__ __name__ == "__main__":
-    assert Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]) == ['JFK', 'NRT', 'JFK', 'KUL']
+__ __name__ __ "__main__":
+    ... Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]) __ ['JFK', 'NRT', 'JFK', 'KUL']

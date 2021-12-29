@@ -9,5 +9,5 @@ class Solution(object):
         :rtype: bool
         """
         __ n < 1:
-            return False
-        return n & (n - 1) == 0
+            r.. False
+        r.. n & (n - 1) __ 0

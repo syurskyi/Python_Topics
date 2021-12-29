@@ -1,13 +1,13 @@
 class Solution:
     # @return a list of lists of integer
     ___ generateMatrix(self, n):
-        matrix = [[0 for i in range(n)] for j in range(n)]
+        matrix = [[0 ___ i __ r..(n)] ___ j __ r..(n)]
         count = 1
-        for i in range(n / 2):
+        ___ i __ r..(n / 2):
             start = i
             end = n - i - 1
             width = end - start
-            for j in range(start, end):
+            ___ j __ r..(start, end):
                 offset = j - start
                 # Top
                 matrix[start][j] = count + offset
@@ -18,7 +18,7 @@ class Solution:
                 # Left
                 matrix[end - offset][start] = count + 3 * width + offset
             count += 4 * width
-        __ n % 2 == 1:
+        __ n % 2 __ 1:
             mid = n / 2
             matrix[mid][mid] = count
-        return matrix
+        r.. matrix

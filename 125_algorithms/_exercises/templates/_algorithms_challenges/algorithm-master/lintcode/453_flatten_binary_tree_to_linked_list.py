@@ -35,14 +35,14 @@ class Solution:
     @return:
     """
     ___ flatten(self, root):
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         self.flatten(root.left)
         self.flatten(root.right)
 
-        __ not root.left:
-            return
+        __ n.. root.left:
+            r..
 
         node = root.left
 
@@ -51,4 +51,4 @@ class Solution:
 
         node.right = root.right
         root.right = root.left
-        root.left = None
+        root.left = N..

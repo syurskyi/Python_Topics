@@ -1,6 +1,6 @@
 ___ check_payday(date):
     # Enter your code below this line. Don't forget your indents!
-    __ date == "payday":
+    __ date __ "payday":
         print("Time to pay the rent.")
-    else: 
+    ____:
         print("Keep calm and eat two minute noodles.")

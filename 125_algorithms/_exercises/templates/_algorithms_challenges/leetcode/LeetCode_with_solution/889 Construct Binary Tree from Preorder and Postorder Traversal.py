@@ -19,15 +19,15 @@ pre[] and post[] are both permutations of 1, 2, ..., pre.length.
 It is guaranteed an answer exists. If there exists multiple answers, you can
 return any of them.
 """
-from typing import List
+____ typing _______ List
 
 
 # Definition for a binary tree node.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -41,22 +41,22 @@ class Solution:
 
         O(N)
         """
-        stk = []
-        popped = None
+        stk    # list
+        popped = N..
         j = 0
-        for e in pre:
-            stk.append(TreeNode(e))
-            while stk and stk[-1].val == post[j]:
+        ___ e __ pre:
+            stk.a..(TreeNode(e))
+            while stk and stk[-1].val __ post[j]:
                 popped = stk.pop()
                 j += 1
                 __ stk:
-                    __ not stk[-1].left:
+                    __ n.. stk[-1].left:
                         stk[-1].left = popped
-                    else:
+                    ____:
                         stk[-1].right = popped
 
-        assert j == len(post)
-        return popped  # root is the last popped element
+        ... j __ l..(post)
+        r.. popped  # root is the last popped element
 
     ___ constructFromPrePost_complex(self, pre: List[int], post: List[int]) -> TreeNode:
         """
@@ -66,24 +66,24 @@ class Solution:
 
         F(N) = 2 F(N/2) + O(N), then it is O(N logN)
         """
-        __ not pre or not post:
-            return None
+        __ n.. pre o. n.. post:
+            r.. N..
 
         root = TreeNode(pre[0])
-        __ len(pre) == 1:
-            return root
+        __ l..(pre) __ 1:
+            r.. root
 
-        __ pre[1] == post[-2]:
+        __ pre[1] __ post[-2]:
             # multiple answers
-            left = None
+            left = N..
             right = self.constructFromPrePost(pre[1:], post[:-1])
-        else:
+        ____:
             l = 0
-            for a in post:
+            ___ a __ post:
                 l += 1
-                __ a == pre[1]:
+                __ a __ pre[1]:
                     break
-            else:
+            ____:
                 raise
 
             left = self.constructFromPrePost(pre[1:1+l], post[:l])
@@ -91,4 +91,4 @@ class Solution:
 
         root.left = left
         root.right = right
-        return root
+        r.. root

@@ -3,14 +3,14 @@
 
 
 n, k = map(int, input().split())
-prices = sorted(list(map(int, input().split())))
+prices = s..(l..(map(int, input().split())))
 
 count = 0
 total_sum = 0
-for i in prices:
+___ i __ prices:
     total_sum += i
     __ total_sum > k:
         break
-    else:
+    ____:
         count += 1
 print(count)

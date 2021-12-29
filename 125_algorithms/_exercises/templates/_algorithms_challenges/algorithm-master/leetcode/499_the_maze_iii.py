@@ -24,18 +24,18 @@ class Solution:
         """
         NOT_FOUND = 'impossible'
 
-        __ not maze or not maze[0]:
-            return NOT_FOUND
+        __ n.. maze o. n.. maze[0]:
+            r.. NOT_FOUND
 
-        m, n = len(maze), len(maze[0])
+        m, n = l..(maze), l..(maze[0])
         sx, sy = ball
         tx, ty = hole
         queue = [(sx, sy)]
         paths = {(sx, sy): []}
         distance = {(sx, sy): 0}
 
-        for x, y in queue:
-            for dx, dy, dn in (
+        ___ x, y __ queue:
+            ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
             ):
@@ -45,34 +45,34 @@ class Solution:
 
                 while (
                     0 <= _x < m and 0 <= _y < n and
-                    maze[_x][_y] == 0 and
-                    not (_x == tx and _y == ty)
+                    maze[_x][_y] __ 0 and
+                    n.. (_x __ tx and _y __ ty)
                 ):
                     _x += dx
                     _y += dy
                     _step += 1
 
-                __ not (_x == tx and _y == ty):
+                __ n.. (_x __ tx and _y __ ty):
                     _x -= dx
                     _y -= dy
                     _step -= 1
 
-                __ ((_x, _y) in distance and
+                __ ((_x, _y) __ distance and
                     distance[x, y] + _step > distance[_x, _y]):
                     continue
 
-                __ ((_x, _y) in paths and
+                __ ((_x, _y) __ paths and
                     paths[x, y] + [dn] > paths[_x, _y]):
                     continue
 
                 distance[_x, _y] = distance[x, y] + _step
                 paths[_x, _y] = paths[x, y] + [dn]
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
 
-        return ''.join(paths[tx, ty]) __ (tx, ty) in paths else NOT_FOUND
+        r.. ''.join(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
 
 
-import heapq
+_______ heapq
 
 
 class Solution2:
@@ -101,10 +101,10 @@ class Solution2:
         """
         NOT_FOUND = 'impossible'
 
-        __ not maze or not maze[0]:
-            return NOT_FOUND
+        __ n.. maze o. n.. maze[0]:
+            r.. NOT_FOUND
 
-        m, n = len(maze), len(maze[0])
+        m, n = l..(maze), l..(maze[0])
         sx, sy = ball
         tx, ty = hole
         heap = [(sx, sy)]
@@ -114,7 +114,7 @@ class Solution2:
         while heap:
             x, y = heapq.heappop(heap)
 
-            for dx, dy, dn in (
+            ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
             ):
@@ -123,26 +123,26 @@ class Solution2:
 
                 while (
                     0 <= _x < m and 0 <= _y < n and
-                    maze[_x][_y] == 0 and
-                    not (_x == tx and _y == ty)
+                    maze[_x][_y] __ 0 and
+                    n.. (_x __ tx and _y __ ty)
                 ):
                     _x += dx
                     _y += dy
 
-                __ not (_x == tx and _y == ty):
+                __ n.. (_x __ tx and _y __ ty):
                     _x -= dx
                     _y -= dy
 
                 _step = distance[x, y] + abs(_x - x) + abs(_y - y)
 
-                __ (_x, _y) in distance and _step > distance[_x, _y]:
+                __ (_x, _y) __ distance and _step > distance[_x, _y]:
                     continue
 
-                __ (_x, _y) in paths and paths[x, y] + [dn] > paths[_x, _y]:
+                __ (_x, _y) __ paths and paths[x, y] + [dn] > paths[_x, _y]:
                     continue
 
                 distance[_x, _y] = _step
                 paths[_x, _y] = paths[x, y] + [dn]
                 heapq.heappush(heap, (_x, _y))
 
-        return ''.join(paths[tx, ty]) __ (tx, ty) in paths else NOT_FOUND
+        r.. ''.join(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND

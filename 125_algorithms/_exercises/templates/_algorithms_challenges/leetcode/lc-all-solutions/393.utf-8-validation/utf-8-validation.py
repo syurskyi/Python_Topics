@@ -9,25 +9,25 @@ class Solution(object):
     new = True
     followed = 0
     i = 0
-    while i < len(data):
+    while i < l..(data):
       __ new:
         followed = -1
-        for mask in masks:
-          __ (data[i] & mask) in features:
+        ___ mask __ masks:
+          __ (data[i] & mask) __ features:
             followed = features[data[i] & mask]
             break
-        __ followed == -1:
-          return False
-        elif followed != 0:
+        __ followed __ -1:
+          r.. False
+        ____ followed != 0:
           new = False
-        else:
+        ____:
           new = True
-      else:
+      ____:
         __ (data[i] & 0xc0) != 0x80:
-          return False
+          r.. False
         followed -= 1
-        __ followed == 0:
+        __ followed __ 0:
           new = True
       i += 1
 
-    return followed == 0
+    r.. followed __ 0

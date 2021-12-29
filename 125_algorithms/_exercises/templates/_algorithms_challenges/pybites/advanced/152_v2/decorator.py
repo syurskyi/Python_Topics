@@ -19,10 +19,10 @@ ___ strip_range(start, end):
     ___ wrap(func):
         ___ wrapped(text, *args, **kwargs):
             _start = max(start, 0)
-            _end = min(len(text), end) __ end > 0 else 0
+            _end = m..(l..(text), end) __ end > 0 ____ 0
             result = (text[:_start], text[_start:_end], text[_end:])
-            return func(f'{result[0]}{DOT * len(result[1])}{result[2]}')
+            r.. func(f'{result[0]}{DOT * l..(result[1])}{result[2]}')
 
-        return wrapped
+        r.. wrapped
 
-    return wrap
+    r.. wrap

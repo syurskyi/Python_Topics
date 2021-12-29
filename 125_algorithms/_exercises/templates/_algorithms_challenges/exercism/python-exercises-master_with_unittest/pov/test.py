@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from pov import Tree
+____ pov _______ Tree
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.3.0
@@ -211,12 +211,12 @@ class PovTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
     ___ assertTreeEquals(self, result, expected):
         self.assertEqual(result, expected,
                          '{} != {}'.format(result, expected))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

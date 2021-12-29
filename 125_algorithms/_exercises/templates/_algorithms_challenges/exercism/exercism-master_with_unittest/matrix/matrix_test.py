@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from matrix import Matrix
+____ matrix _______ Matrix
 
 
 class MatrixTest(unittest.TestCase):
@@ -29,5 +29,5 @@ class MatrixTest(unittest.TestCase):
         self.assertEqual([1903, 3, 4], matrix.columns[1])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

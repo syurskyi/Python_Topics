@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from ini import ToxIniParser
+____ ini _______ ToxIniParser
 
 cookiecutter = """[tox]
 envlist = py27, py34, py35, py36, pypy, flake8
@@ -332,6 +332,6 @@ ___ test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path):
 
     tip = ToxIniParser(f.resolve())
 
-    assert tip.number_of_sections == num_sections
-    assert sorted(tip.environments) == sorted(envs)
-    assert sorted(tip.base_python_versions) == sorted(base_pys)
+    ... tip.number_of_sections __ num_sections
+    ... s..(tip.environments) __ s..(envs)
+    ... s..(tip.base_python_versions) __ s..(base_pys)

@@ -25,7 +25,7 @@ Note:
 0 <= A[i] < 10000
 A.length is even
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -52,14 +52,14 @@ class Solution:
           a length 4 subarray that begins at a major element will have 2 major
           elements.
         """
-        n = len(A)
-        for i in range(n - 1):
-            for j in range(3):
-                __ A[i] == A[min(n - 1, i + 1 + j)]:
-                    return A[i]
+        n = l..(A)
+        ___ i __ r..(n - 1):
+            ___ j __ r..(3):
+                __ A[i] __ A[m..(n - 1, i + 1 + j)]:
+                    r.. A[i]
 
         raise
 
 
-__ __name__ == "__main__":
-    assert Solution().repeatedNTimes([1,2,3,3]) == 3
+__ __name__ __ "__main__":
+    ... Solution().repeatedNTimes([1,2,3,3]) __ 3

@@ -4,9 +4,9 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    cache = [0] * len(nums)
+    cache = [0] * l..(nums)
     ans = 0
-    for i, start in enumerate(nums):
+    ___ i, start __ enumerate(nums):
       __ cache[i]:
         continue
       p = start
@@ -16,4 +16,4 @@ class Solution(object):
         p = nums[p]
         length += 1
       ans = max(ans, length)
-    return ans
+    r.. ans

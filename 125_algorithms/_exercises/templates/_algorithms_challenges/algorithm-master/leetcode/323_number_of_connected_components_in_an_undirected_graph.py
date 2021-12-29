@@ -24,38 +24,38 @@ class Solution:
         :type edges: list[int]
         :rtype: int
         """
-        __ not n or not edges:
-            return 0
+        __ n.. n o. n.. edges:
+            r.. 0
 
-        nodes = [i for i in range(n)]
+        nodes = [i ___ i __ r..(n)]
 
         ans = n
 
-        for a, b in edges:
+        ___ a, b __ edges:
             __ self.union(nodes, a, b):
                 ans -= 1
 
-        return ans
+        r.. ans
 
     ___ union(self, nodes, a, b):
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        __ _a == _b:
-            return False
+        __ _a __ _b:
+            r.. False
 
         nodes[_b] = _a
-        return True
+        r.. True
 
     ___ find(self, nodes, a):
-        __ a not in nodes:
+        __ a n.. __ nodes:
             nodes[a] = a
-            return a
-        __ nodes[a] == a:
-            return a
+            r.. a
+        __ nodes[a] __ a:
+            r.. a
 
         nodes[a] = self.find(nodes[a])
-        return nodes[a]
+        r.. nodes[a]
 
 
 class Solution2:
@@ -70,37 +70,37 @@ class Solution2:
         """
         ans = 0
 
-        __ not n or not edges:
-            return ans
+        __ n.. n o. n.. edges:
+            r.. ans
 
         adj = {}
 
-        for i in range(n):
+        ___ i __ r..(n):
             adj[i] = set()
 
-        for a, b in edges:
+        ___ a, b __ edges:
             adj[a].add(b)
             adj[b].add(a)
 
         visited = set()
 
-        for i in range(n):
-            __ i in visited:
+        ___ i __ r..(n):
+            __ i __ visited:
                 continue
 
             ans += 1
             self.dfs(i, adj, visited)
 
-        return ans
+        r.. ans
 
     ___ dfs(self, a, adj, visited):
-        __ a not in adj:
-            return
+        __ a n.. __ adj:
+            r..
 
         visited.add(a)
 
-        for b in adj[a]:
-            __ b in visited:
+        ___ b __ adj[a]:
+            __ b __ visited:
                 continue
 
             self.dfs(b, adj, visited)

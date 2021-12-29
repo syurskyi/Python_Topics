@@ -12,41 +12,41 @@ class Solution(object):
         """
         self.MAXCOUNT = 6
         handCount = [0]*26
-        for c in hand:
+        ___ c __ hand:
             handCount[ord(c)-ord('A')] += 1
         res = self.helper(board+'#', handCount)
-        return res __ res != float('inf') else -1
+        r.. res __ res != float('inf') ____ -1
     
     ___ helper(self, s, h):
         s = self.removeConsecutive(s)
-        __ s == '#': return 0
+        __ s __ '#': r.. 0
         res = float('inf')
         i, j = 0, 0
-        while j < len(s):
-            __ s[j] == s[i]:
+        while j < l..(s):
+            __ s[j] __ s[i]:
                 j += 1
                 continue
             need = 3-(j-i)
             __ h[ord(s[i])-ord('A')] >= need:
                 h[ord(s[i])-ord('A')] -= need
-                res = min(res, need+self.helper(s[:i]+s[j:], h))
+                res = m..(res, need+self.helper(s[:i]+s[j:], h))
                 h[ord(s[i])-ord('A')] += need
             i = j
             j += 1
-        return res
+        r.. res
     
     ___ removeConsecutive(self, board):
         i, j = 0, 0
-        while j < len(board):
-            __ board[j] == board[i]:
+        while j < l..(board):
+            __ board[j] __ board[i]:
                 j += 1
                 continue
             __ j-i >= 3:
-                return self.removeConsecutive(board[:i]+board[j:])
-            else:
+                r.. self.removeConsecutive(board[:i]+board[j:])
+            ____:
                 i = j
             j += 1
-        return board
+        r.. board
     
     ___ test(self):
         testCases = [
@@ -67,12 +67,12 @@ class Solution(object):
                 "YRBGB",
             ],
         ]
-        for board, hand in testCases:
+        ___ board, hand __ testCases:
             print('board: %s' % board)
             print('hand: %s' % hand)
             result = self.findMinStep(board, hand)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

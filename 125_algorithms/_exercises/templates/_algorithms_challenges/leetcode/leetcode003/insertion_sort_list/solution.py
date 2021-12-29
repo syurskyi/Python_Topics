@@ -10,25 +10,25 @@ class Solution:
     ___ insertionSortList(self, head):
         h = head  # h is the temporary head node
         # First node of h
-        __ head is not None:
+        __ head __ n.. N..
             head = head.next
-            h.next = None
-        while head is not None:
+            h.next = N..
+        while head __ n.. N..
             next_node = head.next
             # Insertion sort
             current = h
             prev = h
-            while current is not None and head.val > current.val:
+            while current __ n.. N.. and head.val > current.val:
                 prev = current
                 current = current.next
             # head is smaller than the head node of h
             # Insert head to the beginning of h
-            __ prev == current:
+            __ prev __ current:
                 head.next = h
                 h = head
             # Insert head to the middle or end of h
-            else:
+            ____:
                 prev.next = head
                 head.next = current
             head = next_node
-        return h
+        r.. h

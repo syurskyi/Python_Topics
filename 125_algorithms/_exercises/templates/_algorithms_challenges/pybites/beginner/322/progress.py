@@ -1,15 +1,15 @@
-from datetime import datetime
-from freezegun import freeze_time
+____ datetime _______ datetime
+____ freezegun _______ freeze_time
 
 
 ___ ontrack_reading(books_goal: int, books_read: int,
-                    day_of_year: int = None) -> bool:
-    __ day_of_year is None:
+                    day_of_year: int = N..) -> bool:
+    __ day_of_year __ N..
         today = datetime.today()
         first_day = datetime(2021,1,1)
         diff = today - first_day
         day_of_year = diff.days
-    return books_read/books_goal >= day_of_year/365
+    r.. books_read/books_goal >= day_of_year/365
 
 
 

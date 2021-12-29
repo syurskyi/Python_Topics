@@ -6,7 +6,7 @@
 ___ speed_check(speed):
     __ speed > 100:
         print("Please slow down.")
-    elif speed < 80:
+    ____ speed < 80:
         print("Please speed up.")
-    else:
+    ____:
         print("Thanks for driving safely!")

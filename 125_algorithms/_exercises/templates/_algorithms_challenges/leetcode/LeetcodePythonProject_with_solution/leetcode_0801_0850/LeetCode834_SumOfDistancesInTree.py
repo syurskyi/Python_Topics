@@ -11,21 +11,21 @@ class Solution(object):
         :rtype: List[int]
         """
         graph = {}
-        for i in range(N):
+        ___ i __ r..(N):
             graph[i] = set()
-        for i, j in edges:
+        ___ i, j __ edges:
             graph[i].add(j)
             graph[j].add(i)
         res = [0]*N
         count = [0]*N
         self.dfs(0, set(), graph, res, count)
         self.dfs2(0, set(), graph, res, count, N)
-        return res
+        r.. res
     
     ___ dfs(self, root, visited, graph, res, count):
         visited.add(root)
-        for i in graph[root]:
-            __ i not in visited:
+        ___ i __ graph[root]:
+            __ i n.. __ visited:
                 self.dfs(i, visited, graph, res, count)
                 count[root] += count[i]
                 res[root] += res[i]+count[i]
@@ -33,8 +33,8 @@ class Solution(object):
     
     ___ dfs2(self, root, visited, graph, res, count, N):
         visited.add(root)
-        for i in graph[root]:
-            __ i not in visited:
+        ___ i __ graph[root]:
+            __ i n.. __ visited:
                 res[i] = res[root] - count[i] + N - count[i]
                 self.dfs2(i, visited, graph, res, count, N)
     
@@ -49,15 +49,15 @@ class Solution(object):
         """
         n = N
         graph = {}
-        for i in range(n):
-            graph[i] = []
-        for edge in edges:
-            graph[edge[0]].append(edge[1])
-            graph[edge[1]].append(edge[0])
-        res = []
-        for i in range(n):
-            res.append(self.bfs(graph, i))
-        return res
+        ___ i __ r..(n):
+            graph[i]    # list
+        ___ edge __ edges:
+            graph[edge[0]].a..(edge[1])
+            graph[edge[1]].a..(edge[0])
+        res    # list
+        ___ i __ r..(n):
+            res.a..(self.bfs(graph, i))
+        r.. res
     
     ___ bfs(self, graph, i):
         res = 0
@@ -65,16 +65,16 @@ class Solution(object):
         visited = set([i])
         level = 1
         while queue:
-            size = len(queue)
-            for _ in range(size):
+            size = l..(queue)
+            ___ _ __ r..(size):
                 node = queue.pop(0)
-                for node0 in graph[node]:
-                    __ node0 not in visited:
+                ___ node0 __ graph[node]:
+                    __ node0 n.. __ visited:
                         res += level
                         visited.add(node0)
-                        queue.append(node0)
+                        queue.a..(node0)
             level += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -83,12 +83,12 @@ class Solution(object):
                 [[0, 1], [0, 2], [2, 3], [2, 4], [2, 5]],
             ],
         ]
-        for n, edges in testCases:
+        ___ n, edges __ testCases:
             print('n: %s' % n)
             print('edges: %s' % edges)
             result = self.sumOfDistancesInTree(n, edges)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

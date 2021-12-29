@@ -14,12 +14,12 @@ class Solution:
         """
         in place
         """
-        n = len(nums)
+        n = l..(nums)
         k %= n
         temp = nums[:n-k]
-        for i in xrange(n):
+        ___ i __ xrange(n):
             __ i < k:
                 nums[i] = nums[n-k+i]
-            else:
+            ____:
                 nums[i] = temp[i-k]
 

@@ -30,12 +30,12 @@ Therefore, you need to return above trees' root in the form of a list.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class MerkleHash:
@@ -45,10 +45,10 @@ class MerkleHash:
 
     ___ _auto_incr(self):
         self.start_key += 1
-        return self.start_key
+        r.. self.start_key
 
     ___ __call__(self, val):
-        return self.merkle_hash[val]
+        r.. self.merkle_hash[val]
 
 
 class Solution:
@@ -62,24 +62,24 @@ class Solution:
         Assign each subtree a identity/hash
         Chain of hash can uniquely identify a subtree
         """
-        ret = []
+        ret    # list
         self.walk(root, ret)
-        return ret
+        r.. ret
 
     ___ walk(self, cur, ret) -> int:
         """
         return merkle hash id
         """
-        __ not cur:
-            return self.merkle_hash(None)
+        __ n.. cur:
+            r.. self.merkle_hash(N..)
 
         subtree_value = (cur.val, self.walk(cur.left, ret), self.walk(cur.right, ret))
         merkle_hash = self.merkle_hash(subtree_value)
-        __ self.counter[merkle_hash] == 1:
-            ret.append(cur)
+        __ self.counter[merkle_hash] __ 1:
+            ret.a..(cur)
 
         self.counter[merkle_hash] += 1
-        return merkle_hash
+        r.. merkle_hash
 
 
 class Solution2:
@@ -87,9 +87,9 @@ class Solution2:
         """
         Only need to return the root
         """
-        ret = []
+        ret    # list
         self.walk(root, defaultdict(int), ret)
-        return ret
+        r.. ret
 
     ___ walk(self, cur, counter, ret) -> str:
         """
@@ -111,16 +111,16 @@ class Solution2:
 
         complexity: O(N) * O(N) (string concatenation),
         """
-        __ not cur:
-            return "None"
+        __ n.. cur:
+            r.. "None"
 
         cur_key = ",".join([
             self.walk(cur.left, counter, ret),
             self.walk(cur.right, counter, ret),
             str(cur.val),
         ])
-        __ counter[cur_key] == 1:
-            ret.append(cur)
+        __ counter[cur_key] __ 1:
+            ret.a..(cur)
 
         counter[cur_key] += 1
-        return cur_key
+        r.. cur_key

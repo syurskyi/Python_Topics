@@ -1,8 +1,8 @@
-import re
-from collections import namedtuple
+_______ re
+____ collections _______ namedtuple
 
-import requests
-from bs4 import BeautifulSoup
+_______ requests
+____ bs4 _______ BeautifulSoup
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -16,7 +16,7 @@ ___ _create_soup_obj(url):
     """Need utf-8 to properly parse emojis"""
     resp = requests.get(url)
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "html.parser")
+    r.. BeautifulSoup(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5):
@@ -28,12 +28,12 @@ ___ get_top_titles(url, top=5):
 
     article_list = soup.select('span.title')
 
-    articles = []
-    for article in article_list:
+    articles    # list
+    ___ article __ article_list:
         # Nasty hack, knowing the structure of the page:
         stats = article.parent.parent.parent.next_sibling.next_sibling.text
         # Get the number of points and comments, but don't check for plurals… just in case!
         extract = re.search(r'(\d+) point.* (\d+) comment', stats, re.DOTALL)
-        articles.append(Entry(article.text.strip(), int(extract.group(1)), int(extract.group(2))))
+        articles.a..(Entry(article.text.strip(), int(extract.group(1)), int(extract.group(2))))
 
-    return sorted(articles, key=lambda x: -(x.points + x.comments / 1000))[:top]
+    r.. s..(articles, key=l.... x: -(x.points + x.comments / 1000))[:top]

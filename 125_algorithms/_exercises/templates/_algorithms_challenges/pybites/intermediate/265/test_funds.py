@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from funds import max_fund
+____ funds _______ max_fund
 
 
 community = [3, 2, 6,  4, 7,  5, -8, -9, 3,  8,  4, -12, 3, -10, -15,
@@ -24,4 +24,4 @@ extreme = [-1, -2, -3, -4, -5, -1, -2, -3]
     (extreme, (0, 0, 0))
 ])
 ___ test_funds(data, expected):
-    assert max_fund(data) == expected
+    ... max_fund(data) __ expected

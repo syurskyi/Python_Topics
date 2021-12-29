@@ -2,9 +2,9 @@
 
 ___ count_characters(s):
     result  {}
-    for c in s:
+    ___ c __ s:
         result[c]  result.get(c, 0) + 1
-    for key, value in result.items():
+    ___ key, value __ result.items():
         print(key, value)
     #return result
 

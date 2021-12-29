@@ -1,10 +1,10 @@
 ___ get_index_different_char(chars):
     alphanumeric, non_alphanumeric = set(), set()
-    for i, c in enumerate(chars):
+    ___ i, c __ enumerate(chars):
         __ str.isalnum(str(c)):
             alphanumeric.add(i)
-        else:
+        ____:
             non_alphanumeric.add(i)
-    return next(iter(alphanumeric)) \
-        __ len(alphanumeric) == 1 \
-        else next(iter(non_alphanumeric))
+    r.. next(iter(alphanumeric)) \
+        __ l..(alphanumeric) __ 1 \
+        ____ next(iter(non_alphanumeric))

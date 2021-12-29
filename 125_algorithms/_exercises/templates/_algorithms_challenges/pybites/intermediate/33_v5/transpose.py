@@ -13,7 +13,7 @@ ___ transpose(data):
     In: transpose(data)
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
-    __ isinstance(data, dict):
-        data = ((key, value) for key, value in data.items())
-    return zip(*data)
+    __ isi..(data, d..):
+        data = ((key, value) ___ key, value __ data.items())
+    r.. zip(*data)
 

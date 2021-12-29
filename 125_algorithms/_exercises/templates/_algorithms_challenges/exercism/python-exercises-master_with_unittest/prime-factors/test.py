@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from prime_factors import prime_factors
+____ prime_factors _______ prime_factors
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -28,5 +28,5 @@ class PrimeFactorsTest(unittest.TestCase):
         self.assertEqual(prime_factors(93819012551), [11, 9539, 894119])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

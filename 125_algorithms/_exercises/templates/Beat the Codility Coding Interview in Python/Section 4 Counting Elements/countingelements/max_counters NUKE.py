@@ -6,19 +6,19 @@ ___ solution(N, A):
     counters  [0] * N
     start_line  0
     current_max  0
-    for i in A:
+    ___ i __ A:
         x  i - 1
         __ i > N:
             start_line  current_max
-        elif counters[x] < start_line:
+        ____ counters[x] < start_line:
             counters[x]  start_line + 1
-        else:
+        ____:
             counters[x] + 1
         __ i < N and counters[x] > current_max:
             current_max  counters[x]
-    for i in range(0, len(counters)):
+    ___ i __ r..(0, l..(counters)):
         __ counters[i] < start_line:
             counters[i]  start_line
-    return counters
+    r.. counters
 
 print (solution(5, [3, 4, 4, 6, 1, 4, 4]))

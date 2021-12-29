@@ -6,16 +6,16 @@ class Solution(object):
     """
     d = {}
     count = {}
-    for c in s:
+    ___ c __ s:
       d[c] = d.get(c, 0) + 1
       count[c] = count.get(c, 0) + 1
-    stack = []
+    stack    # list
     cache = set()
-    for c in s:
-      __ c not in cache:
+    ___ c __ s:
+      __ c n.. __ cache:
         while stack and stack[-1] > c and d[stack[-1]] > 1 and d[stack[-1]] != 1 and count[stack[-1]] > 0:
           cache.discard(stack.pop())
-        stack.append(c)
+        stack.a..(c)
         cache.add(c)
       count[c] -= 1
-    return "".join(stack)
+    r.. "".join(stack)

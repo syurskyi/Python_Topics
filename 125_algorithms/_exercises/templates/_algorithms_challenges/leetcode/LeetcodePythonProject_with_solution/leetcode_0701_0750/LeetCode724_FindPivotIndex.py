@@ -9,14 +9,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not nums or len(nums) < 3: return -1
-        sumVal = sum(nums)
+        __ n.. nums o. l..(nums) < 3: r.. -1
+        sumVal = s..(nums)
         tmp = 0
-        for i in range(len(nums)):
-            __ tmp == sumVal-tmp-nums[i]:
-                return i
+        ___ i __ r..(l..(nums)):
+            __ tmp __ sumVal-tmp-nums[i]:
+                r.. i
             tmp += nums[i]
-        return -1
+        r.. -1
     
     ___ test(self):
         testCases = [
@@ -24,11 +24,11 @@ class Solution(object):
             [1, 2, 3],
             [-1,-1,-1,0,1,1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.pivotIndex(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

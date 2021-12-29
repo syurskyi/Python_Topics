@@ -6,34 +6,34 @@ class Solution:
         """
         ans = 0
 
-        __ not grid or not grid[0]:
-            return ans
+        __ n.. grid o. n.. grid[0]:
+            r.. ans
 
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
 
-        for x in range(m):
-            for y in range(n):
-                __ grid[x][y] == 1:
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ grid[x][y] __ 1:
                     ans += 1
                     self.dfs(grid, x, y)
 
-        return ans
+        r.. ans
 
     ___ dfs(self, grid, x, y):
-        m, n = len(grid), len(grid[0])
+        m, n = l..(grid), l..(grid[0])
         grid[x][y] = 0
 
-        for dx, dy in (
+        ___ dx, dy __ (
             (0, -1), (0, 1),
             (-1, 0), (1, 0),
         ):
             _x = x + dx
             _y = y + dy
 
-            __ not (
+            __ n.. (
                 0 <= _x < m and
                 0 <= _y < n and
-                grid[_x][_y] == 1
+                grid[_x][_y] __ 1
             ):
                 continue
 

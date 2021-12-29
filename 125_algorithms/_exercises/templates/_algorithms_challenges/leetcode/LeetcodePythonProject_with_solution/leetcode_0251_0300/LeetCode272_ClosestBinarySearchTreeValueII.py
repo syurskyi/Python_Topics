@@ -6,7 +6,7 @@ Created on Mar 5, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -19,35 +19,35 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        stack1, stack2 = [], []
-        res = []
+        stack1, stack2    # list, []
+        res    # list
         self.inOrderReg(root, target, stack1)
         self.inOrderRev(root, target, stack2)
         print('stack1: %s' % stack1)
         print('stack2: %s' % stack2)
-        for _ in range(k):
-            __ not stack1:
-                res.append(stack2.pop())
-            elif not stack2:
-                res.append(stack1.pop())
-            elif abs(stack1[-1]-target) <= abs(stack2[-1]-target):
-                res.append(stack1.pop())
-            else:
-                res.append(stack2.pop())
-        return res
+        ___ _ __ r..(k):
+            __ n.. stack1:
+                res.a..(stack2.pop())
+            ____ n.. stack2:
+                res.a..(stack1.pop())
+            ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target):
+                res.a..(stack1.pop())
+            ____:
+                res.a..(stack2.pop())
+        r.. res
     
     ___ inOrderReg(self, root, target, stack):
-        __ not root: return
+        __ n.. root: r..
         self.inOrderReg(root.left, target, stack)
-        __ root.val > target: return
-        stack.append(root.val)
+        __ root.val > target: r..
+        stack.a..(root.val)
         self.inOrderReg(root.right, target, stack)
     
     ___ inOrderRev(self, root, target, stack):
-        __ not root: return
+        __ n.. root: r..
         self.inOrderRev(root.right, target, stack)
-        __ root.val <= target: return
-        stack.append(root.val)
+        __ root.val <= target: r..
+        stack.a..(root.val)
         self.inOrderRev(root.left, target, stack)
     
     ___ test(self):
@@ -58,5 +58,5 @@ class Solution(object):
         print('result: %s' % (result))
         print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -5,14 +5,14 @@ class Solution(object):
     :rtype: bool
     """
     __ n <= 0:
-      return False
-    while n % 2 == 0 or n % 3 == 0 or n % 5 == 0:
-      __ n % 2 == 0:
+      r.. False
+    while n % 2 __ 0 o. n % 3 __ 0 o. n % 5 __ 0:
+      __ n % 2 __ 0:
         n /= 2
-      __ n % 3 == 0:
+      __ n % 3 __ 0:
         n /= 3
-      __ n % 5 == 0:
+      __ n % 5 __ 0:
         n /= 5
-    __ n == 1:
-      return True
-    return False
+    __ n __ 1:
+      r.. True
+    r.. False

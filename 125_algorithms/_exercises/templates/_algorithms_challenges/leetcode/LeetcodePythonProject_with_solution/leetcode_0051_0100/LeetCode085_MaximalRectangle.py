@@ -10,33 +10,33 @@ class Solution(object):
         :rtype: int
         """
         area = 0
-        __ not matrix or not matrix[0]: return area
-        m, n = len(matrix), len(matrix[0])
-        heights = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m):
-            for j in range(n):
-                __ matrix[i][j] == '0':
+        __ n.. matrix o. n.. matrix[0]: r.. area
+        m, n = l..(matrix), l..(matrix[0])
+        heights = [[0]*(n+1) ___ _ __ r..(m+1)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ matrix[i][j] __ '0':
                     heights[i+1][j] = 0
-                else:
+                ____:
                     heights[i+1][j] = heights[i][j]+1
-        for i in range(m):
+        ___ i __ r..(m):
             area = max(area, self.getArea(heights[i+1]))
-        return area
+        r.. area
     
     ___ getArea(self, heights):
         area = 0
-        __ not heights: return area
-        stack = []
+        __ n.. heights: r.. area
+        stack    # list
         i = 0
-        while i < len(heights):
-            __ not stack or heights[i] >= heights[stack[-1]]:
-                stack.append(i)
+        while i < l..(heights):
+            __ n.. stack o. heights[i] >= heights[stack[-1]]:
+                stack.a..(i)
                 i += 1
-            else:
+            ____:
                 h = heights[stack.pop()]
-                w = i __ not stack else i-stack[-1]-1
+                w = i __ n.. stack ____ i-stack[-1]-1
                 area = max(area, h*w)
-        return area
+        r.. area
     
     ___ test(self):
         testCases = [
@@ -47,10 +47,10 @@ class Solution(object):
                 ["1","0","0","1","0"]
             ],
         ]
-        for matrix in testCases:
+        ___ matrix __ testCases:
             result = self.maximalRectangle(matrix)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

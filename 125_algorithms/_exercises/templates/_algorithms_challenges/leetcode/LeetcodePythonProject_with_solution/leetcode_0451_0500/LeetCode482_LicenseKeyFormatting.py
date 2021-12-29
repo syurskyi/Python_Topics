@@ -13,22 +13,22 @@ class Solution(object):
         """
         res = ''
         count = 0
-        for i in range(len(S)-1, -1, -1):
+        ___ i __ r..(l..(S)-1, -1, -1):
             __ S[i] != '-':
                 res = S[i].upper() + res
                 count += 1
-                __ count > 0 and count % K == 0:
+                __ count > 0 and count % K __ 0:
                     res = '-' + res
-        return res.lstrip('-')
+        r.. res.lstrip('-')
     
     ___ test(self):
         testCases = [
             ('abc-abc', 3),
         ]
-        for s, k in testCases:
+        ___ s, k __ testCases:
             result = self.licenseKeyFormatting(s, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

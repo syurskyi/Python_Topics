@@ -1,5 +1,5 @@
-from datetime import timedelta
-from typing import List
+____ datetime _______ timedelta
+____ typing _______ List
 
 
 ___ get_srt_section_ids(text: str) -> List[int]:
@@ -33,25 +33,25 @@ ___ get_srt_section_ids(text: str) -> List[int]:
     
 
     id_to_speed = {}
-    for section in sections:
+    ___ section __ sections:
         parts = section.split('\n')
 
         id_,times,text = parts
 
         start_time,end_time = times.split('-->')
         
-        tds = []
-        for time in (start_time,end_time):
+        tds    # list
+        ___ time __ (start_time,end_time):
             hours,minutes,seconds = time.split(':')
             hours = int(hours)
             minutes = int(hours)
             seconds = float('.'.join(seconds.split(',')))
             td = timedelta(hours=hours,minutes=minutes,seconds=seconds)
-            tds.append(td)
+            tds.a..(td)
 
 
         time_elapsed = (tds[1] - tds[0]).total_seconds()
-        characters = len(text)
+        characters = l..(text)
 
         characters_per_second = characters/time_elapsed
 
@@ -61,7 +61,7 @@ ___ get_srt_section_ids(text: str) -> List[int]:
 
     
 
-    return sorted(list(id_to_speed.keys()),key=lambda x: id_to_speed[x],reverse=True)
+    r.. s..(l..(id_to_speed.keys()),key=l.... x: id_to_speed[x],r.._T..
 
 
 

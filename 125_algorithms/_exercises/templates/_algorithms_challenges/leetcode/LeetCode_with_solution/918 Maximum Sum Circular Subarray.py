@@ -45,7 +45,7 @@ Note:
 -30000 <= A[i] <= 30000
 1 <= A.length <= 30000
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -59,8 +59,8 @@ class Solution:
         = sum(A) - (Ai+1 + ... + Aj-1)
         """
         ret1 = self.max_subarray(A)
-        ret2 = sum(A) + self.max_subarray([-a for a in A[1:-1]])  # max negative (-1)
-        return max(ret1, ret2)
+        ret2 = s..(A) + self.max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
+        r.. max(ret1, ret2)
 
     ___ max_subarray(self, A) -> int:
         """
@@ -68,20 +68,20 @@ class Solution:
         """
         mx = -float('inf')
         cur = 0
-        for a in A:
+        ___ a __ A:
             cur = a + max(cur, 0)  # RHS cur is the prev
             mx = max(mx, cur)
-        return mx
+        r.. mx
 
     ___ maxSubarraySumCircular_error(self, A: List[int]) -> int:
         """
         keep a cur_sum with index, when negative, go back to 0
         """
-        cur = [0, None]
+        cur = [0, N..]
         mx = -float('inf')
         i = 0
         j = 0
-        n = len(A)
+        n = l..(A)
         while i < n:
             cur[0] += A[i]
             cur[1] = i
@@ -94,4 +94,4 @@ class Solution:
 
             i = j
 
-        return mx
+        r.. mx

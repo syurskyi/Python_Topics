@@ -4,4 +4,4 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    return sum(nums) - len(nums) * min(nums)
+    r.. s..(nums) - l..(nums) * m..(nums)

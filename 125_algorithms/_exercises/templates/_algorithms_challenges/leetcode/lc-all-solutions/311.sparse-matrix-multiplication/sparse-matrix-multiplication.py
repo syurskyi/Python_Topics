@@ -5,12 +5,12 @@ class Solution(object):
     :type B: List[List[int]]
     :rtype: List[List[int]]
     """
-    ret = [[0 for j in range(len(B[0]))] for i in range(len(A))]
+    ret = [[0 ___ j __ r..(l..(B[0]))] ___ i __ r..(l..(A))]
 
-    for i, row in enumerate(A):
-      for k, a in enumerate(row):
+    ___ i, row __ enumerate(A):
+      ___ k, a __ enumerate(row):
         __ a:
-          for j, b in enumerate(B[k]):
+          ___ j, b __ enumerate(B[k]):
             __ b:
               ret[i][j] += a * b
-    return ret
+    r.. ret

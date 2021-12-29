@@ -15,8 +15,8 @@ class Solution(object):
 
     ___ reverse(root, prep, k):
       cur = root
-      pre = None
-      next = None
+      pre = N..
+      next = N..
       while cur and k > 0:
         next = cur.next
         cur.next = pre
@@ -25,18 +25,18 @@ class Solution(object):
         k -= 1
       root.next = next
       prep.next = pre
-      return pre
+      r.. pre
 
     dummy = ListNode(-1)
     dummy.next = head
     k = 1
     p = dummy
-    start = None
+    start = N..
     while p:
-      __ k == m:
+      __ k __ m:
         start = p
-      __ k == n + 1:
+      __ k __ n + 1:
         reverse(start.next, start, n - m + 1)
-        return dummy.next
+        r.. dummy.next
       k += 1
       p = p.next

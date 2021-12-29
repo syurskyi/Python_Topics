@@ -1,9 +1,9 @@
 ___ rotate(string, n):
-    __ n > len(string) or n < (len(string)*-1):
-        n = n % len(string)
-    __ n == 0:
-        return string
-    elif n > 0:
-        return string[n:len(string)] + string[0:n]
-    elif n < 0:
-        return string[n:] + string[0:n]
+    __ n > l..(string) o. n < (l..(string)*-1):
+        n = n % l..(string)
+    __ n __ 0:
+        r.. string
+    ____ n > 0:
+        r.. string[n:l..(string)] + string[0:n]
+    ____ n < 0:
+        r.. string[n:] + string[0:n]

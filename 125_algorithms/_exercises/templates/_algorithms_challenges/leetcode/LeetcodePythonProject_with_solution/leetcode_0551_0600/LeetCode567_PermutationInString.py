@@ -10,36 +10,36 @@ class Solution(object):
         :type s2: str
         :rtype: bool
         """
-        __ not s1: return False
+        __ n.. s1: r.. False
         hashmap = {}
-        for c in s1:
+        ___ c __ s1:
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmap0 = {}
-        for i, c in enumerate(s2):
-            __ c in hashmap:
-                while left < i and c in hashmap0 and hashmap0[c] >= hashmap[c]:
+        ___ i, c __ enumerate(s2):
+            __ c __ hashmap:
+                while left < i and c __ hashmap0 and hashmap0[c] >= hashmap[c]:
                     hashmap0[s2[left]] -= 1
                     left += 1
                 hashmap0[c] = hashmap0.get(c, 0)+1
-                __ len(s1) == i-left+1:
-                    return True
-            else:
+                __ l..(s1) __ i-left+1:
+                    r.. True
+            ____:
                 left = i+1
                 hashmap0 = {}
-        return False
+        r.. False
     
     ___ test(self):
         testCases = [
             ['ab', 'eidbaooo'],
             ['ab', 'eidboaoo'],
         ]
-        for s1, s2 in testCases:
+        ___ s1, s2 __ testCases:
             print('s1: %s' % s1)
             print('s2: %s' % s2)
             result = self.checkInclusion(s1, s2)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

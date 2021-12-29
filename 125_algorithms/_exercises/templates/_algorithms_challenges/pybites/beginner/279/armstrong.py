@@ -1,4 +1,4 @@
-import math
+_______ math
 
 ___ is_armstrong(n: int) -> bool:
     # your code ...
@@ -19,7 +19,7 @@ ___ is_armstrong(n: int) -> bool:
 
     
     
-    return sum_digits == actual_num
+    r.. sum_digits __ actual_num
 
 
 

@@ -1,4 +1,4 @@
-import math
+_______ math
 
 STAR = "+"
 LEAF = "*"
@@ -16,34 +16,34 @@ ___ generate_improved_xmas_tree(rows=10):
 
 
 
-    for row in range(rows):
+    ___ row __ r..(rows):
         leafs = 2 * (row + 1) - 1
         line = f"{LEAF * leafs:^{last_row_size}}"
-        lines.append(line)
+        lines.a..(line)
     
 
-    last_row_size = len(lines[-1])
+    last_row_size = l..(lines[-1])
     
     x = last_row_size/2
     
-    __ int(math.floor(x)) % 2 == 0:
+    __ int(math.floor(x)) % 2 __ 0:
         trunk_width = int(math.ceil(x))
-    else:
+    ____:
         trunk_width = int(math.ceil(x)) + 1
     
 
     trunk = f"{TRUNK * trunk_width:^{last_row_size}}"
-    for _ in range(2):
-        lines.append(trunk)
+    ___ _ __ r..(2):
+        lines.a..(trunk)
 
 
 
-    return '\n'.join(lines)
+    r.. '\n'.join(lines)
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     rows = 50
     print(generate_improved_xmas_tree(rows))

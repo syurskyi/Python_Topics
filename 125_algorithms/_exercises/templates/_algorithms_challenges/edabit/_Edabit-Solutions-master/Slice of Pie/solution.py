@@ -1,10 +1,10 @@
 ___ equal_slices(total, people, each):
-    __ people == 0:
-        return True
+    __ people __ 0:
+        r.. True
     __ people * each <= total:
-        return True
-    else:
-        return False
+        r.. True
+    ____:
+        r.. False
 
 
 ___ test():

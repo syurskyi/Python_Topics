@@ -14,19 +14,19 @@ class Solution(object):
         memoization
         110ms
         """
-        __ s not in self.d:
+        __ s n.. __ self.d:
             flag = False
-            for i in xrange(len(s)-1):
-                __ s[i:i+2] == "++":
-                    __ not self.canWin(s[:i]+"--"+s[i+2:]):
+            ___ i __ xrange(l..(s)-1):
+                __ s[i:i+2] __ "++":
+                    __ n.. self.canWin(s[:i]+"--"+s[i+2:]):
                         flag = True
                         break
             self.d[s] = flag
 
-        return self.d[s]
+        r.. self.d[s]
 
     ___ canWin_oneline(self, s):
-        return any(not self.canWin_oneline(s[:i]+"--"+s[i+2:]) for i in xrange(len(s)-1) __ s[i:i+2] == "++")
+        r.. any(n.. self.canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ xrange(l..(s)-1) __ s[i:i+2] __ "++")
 
     ___ canWin_trivial(self, s):
         """
@@ -34,13 +34,13 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        for i in xrange(len(s)-1):
-            __ s[i:i+2] == "++":
-                __ not self.canWin_trivial(s[:i]+"--"+s[i+2:]):
-                    return True
+        ___ i __ xrange(l..(s)-1):
+            __ s[i:i+2] __ "++":
+                __ n.. self.canWin_trivial(s[:i]+"--"+s[i+2:]):
+                    r.. True
 
-        return False
+        r.. False
 
 
-__ __name__ == "__main__":
-    assert Solution().canWin("+++++") == False
+__ __name__ __ "__main__":
+    ... Solution().canWin("+++++") __ False

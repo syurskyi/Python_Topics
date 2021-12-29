@@ -1,16 +1,16 @@
-import inspect
+_______ i___
 
-import pytest
+_______ pytest
 
-from Previous.helplen import get_len_help_text
+____ Previous.helplen _______ get_len_help_text
 
 
 ___ test_pow():
-    assert get_len_help_text(pow) == 278
+    ... get_len_help_text(pow) __ 278
 
 
 ___ test_max():
-    assert get_len_help_text(max) == 402
+    ... get_len_help_text(max) __ 402
 
 
 ___ test_bad_input():
@@ -25,6 +25,6 @@ ___ test_another_bad_input():
 
 
 ___ test_src():
-    src = inspect.getsource(get_len_help_text)
-    assert 'help' in src
-    assert 'redirect_stdout' in src
+    src = i___.getsource(get_len_help_text)
+    ... 'help' __ src
+    ... 'redirect_stdout' __ src

@@ -24,24 +24,24 @@ class Solution:
     # @return a boolean
     ___ searchMatrix(self, matrix, target):
         row_left = 0
-        row_right = len(matrix) - 1
+        row_right = l..(matrix) - 1
         while row_left <= row_right:
             row_mid = row_left + (row_right - row_left) / 2
             row = matrix[row_mid]
             __ target >= row[0] and target <= row[-1]:
                 left = 0
-                right = len(row) - 1
+                right = l..(row) - 1
                 while left <= right:
                     mid = left + (right - left) / 2
-                    __ target == row[mid]:
-                        return True
-                    elif target < row[mid]:
+                    __ target __ row[mid]:
+                        r.. True
+                    ____ target < row[mid]:
                         right = mid - 1
-                    else:
+                    ____:
                         left = mid + 1
-                return False
-            elif target < row[0]:
+                r.. False
+            ____ target < row[0]:
                 row_right = row_mid - 1
-            else:
+            ____:
                 row_left = row_mid + 1
-        return False
+        r.. False

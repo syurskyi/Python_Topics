@@ -1,31 +1,31 @@
-import pytest
-import pluggy
-import py
+_______ pytest
+_______ pluggy
+_______ py
 
 ___ print_hanging_indents(poem):
     poem = poem.strip()
     whitespace = " "
     prefix = INDENTS*whitespace
     current_line = 0
-    target_poem = []
-    for line in poem.splitlines():
+    target_poem    # list
+    ___ line __ poem.splitlines():
         # adjust counters
         line = line.strip()
-        __ line == "":
+        __ line __ "":
             current_line = 0
             continue
-        else:
+        ____:
             current_line = current_line + 1
         # check the line we're dealing with
-        __ current_line == 0:
+        __ current_line __ 0:
             new = ""
-        elif current_line == 1:
+        ____ current_line __ 1:
             new = line
-        elif current_line > 1:
+        ____ current_line > 1:
             new = prefix + line
-        target_poem.append(new)
+        target_poem.a..(new)
     tar = '\n'.join(target_poem)
-    return tar
+    r.. tar
 
 # part of William Shakespeare's play Hamlet
 shakespeare_unformatted = """
@@ -71,13 +71,13 @@ Remember me when no more day by day
 ___ test_shakespeare_text(capfd):
     print_hanging_indents(shakespeare_unformatted)
     output = capfd.readouterr()[0]
-    assert output.strip() == shakespeare_formatted.strip()
+    ... output.strip() __ shakespeare_formatted.strip()
 
 
 ___ test_rosetti_poem(capfd):
     print_hanging_indents(rosetti_unformatted)
     output = capfd.readouterr()[0]
-    assert output.strip() == rosetti_formatted.strip()
+    ... output.strip() __ rosetti_formatted.strip()
 
 
     test_rosetti_poem()

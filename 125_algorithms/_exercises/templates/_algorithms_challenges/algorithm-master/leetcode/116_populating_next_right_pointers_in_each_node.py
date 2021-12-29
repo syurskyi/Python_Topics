@@ -18,8 +18,8 @@ class Solution:
         :type root: TreeLinkNode
         :rtype: void
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         __ root.left:
             root.left.next = root.right
@@ -42,11 +42,11 @@ class Solution:
         :type root: TreeLinkNode
         :rtype: void
         """
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
         head = root
-        nxt = None
+        nxt = N..
 
         # this loop only for find left
         while head:

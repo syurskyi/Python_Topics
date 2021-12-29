@@ -9,25 +9,25 @@ class Solution:
         """
         ans = 0
 
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
         cands = set(nums)  # dedup
 
-        for a in nums:
-            __ a not in cands:
+        ___ a __ nums:
+            __ a n.. __ cands:
                 continue
 
             cands.discard(a)
             size = 1
             b, c = a - 1, a + 1
 
-            while b in cands:
+            while b __ cands:
                 cands.discard(b)
                 b -= 1
                 size += 1
 
-            while c in cands:
+            while c __ cands:
                 cands.discard(c)
                 c += 1
                 size += 1
@@ -35,7 +35,7 @@ class Solution:
             __ size > ans:
                 ans = size
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -51,23 +51,23 @@ class Solution:
         """
         ans = 0
 
-        __ not nums:
-            return ans
+        __ n.. nums:
+            r.. ans
 
         nums.sort()
 
         size = 1
 
-        for i in range(1, len(nums)):
-            __ nums[i] == nums[i - 1]:
+        ___ i __ r..(1, l..(nums)):
+            __ nums[i] __ nums[i - 1]:
                 continue
 
-            __ nums[i] == nums[i - 1] + 1:
+            __ nums[i] __ nums[i - 1] + 1:
                 size += 1
-            else:
+            ____:
                 size = 1
 
             __ size > ans:
                 ans = size
 
-        return ans __ ans > 0 else size
+        r.. ans __ ans > 0 ____ size

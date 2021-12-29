@@ -1,4 +1,4 @@
-from random import randint
+____ random _______ randint
 
 guess_num  randint(1,100)
 user_input  0
@@ -9,8 +9,8 @@ w___ guess_num ! user_input:
     user_input  i..(input())
     __ user_input < guess_num:
         print("The input number is less")
-    elif user_input > guess_num:
+    ____ user_input > guess_num:
         print("The input number is much")
-    else:
+    ____:
         print("Kudos! The right guess...")
     trial_period + 1

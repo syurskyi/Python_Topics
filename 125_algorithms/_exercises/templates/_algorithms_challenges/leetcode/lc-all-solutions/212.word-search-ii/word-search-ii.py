@@ -10,11 +10,11 @@ class Trie:
 
   ___ addWord(self, word):
     root = self.root
-    for i in range(0, len(word)):
+    ___ i __ r..(0, l..(word)):
       c = word[i]
-      __ c in root.neighbours:
+      __ c __ root.neighbours:
         root = root.neighbours[c]
-      else:
+      ____:
         newnode = TrieNode(c)
         root.neighbours[c] = newnode
         root = root.neighbours[c]
@@ -28,33 +28,33 @@ class Solution:
   ___ findWords(self, board, words):
     # write your code here
     trie = Trie()
-    res = []
-    visited = [[0] * len(board[0]) for i in range(0, len(board))]
+    res    # list
+    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, res, root, path):
-      __ not root:
-        return
+      __ n.. root:
+        r..
 
       __ root.isWord:
-        res.append(path)
+        res.a..(path)
 
-      for direction in directions:
+      ___ direction __ directions:
         ni, nj = i + direction[0], j + direction[1]
-        __ 0 <= ni < len(board) and 0 <= nj < len(board[0]):
+        __ 0 <= ni < l..(board) and 0 <= nj < l..(board[0]):
           c = board[ni][nj]
-          __ visited[ni][nj] == 0:
+          __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
-            dfs(ni, nj, board, visited, res, root.neighbours.get(c, None), path + c)
+            dfs(ni, nj, board, visited, res, root.neighbours.get(c, N..), path + c)
             visited[ni][nj] = 0
 
-    for word in words:
+    ___ word __ words:
       trie.addWord(word)
     root = trie.root
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
+    ___ i __ r..(0, l..(board)):
+      ___ j __ r..(0, l..(board[0])):
         c = board[i][j]
         visited[i][j] = 1
-        dfs(i, j, board, visited, res, root.neighbours.get(c, None), c)
+        dfs(i, j, board, visited, res, root.neighbours.get(c, N..), c)
         visited[i][j] = 0
-    return list(set(res))
+    r.. l..(set(res))

@@ -11,31 +11,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[str]
         """
-        res = []
-        n = len(nums)
+        res    # list
+        n = l..(nums)
         start = -1
         end = -1
-        for i, e in enumerate(nums):
-            __ i == 0:
+        ___ i, e __ enumerate(nums):
+            __ i __ 0:
                 start = 0
                 end = 0
-            else:
+            ____:
                 __ e != nums[i - 1] + 1:
                     r = self.make_range(start, end, nums)
-                    res.append(r)
+                    res.a..(r)
                     start = i
                 end = i
-            __ i == n - 1:
+            __ i __ n - 1:
                 end = i
                 r = self.make_range(start, end, nums)
-                res.append(r)
-        return res
+                res.a..(r)
+        r.. res
 
     ___ make_range(self, start, end, nums):
         __ end > start:
-            return "%d->%d" % (nums[start], nums[end])
-        elif end == start:
-            return "%d" % nums[end]
+            r.. "%d->%d" % (nums[start], nums[end])
+        ____ end __ start:
+            r.. "%d" % nums[end]
 
 
 a1 = [0, 1, 2, 4, 5, 7]

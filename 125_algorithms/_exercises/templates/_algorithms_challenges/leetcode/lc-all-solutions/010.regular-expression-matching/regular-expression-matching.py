@@ -5,16 +5,16 @@ class Solution(object):
     :type p: str
     :rtype: bool
     """
-    dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
+    dp = [[False] * (l..(p) + 1) ___ _ __ r..(l..(s) + 1)]
     dp[0][0] = True
-    for j in range(1, len(p) + 1):
-      __ p[j - 1] == "*":
+    ___ j __ r..(1, l..(p) + 1):
+      __ p[j - 1] __ "*":
         dp[0][j] = dp[0][j - 2]
 
-    for i in range(1, len(s) + 1):
-      for j in range(1, len(p) + 1):
+    ___ i __ r..(1, l..(s) + 1):
+      ___ j __ r..(1, l..(p) + 1):
         __ p[j - 1] != "*":
-          dp[i][j] = dp[i - 1][j - 1] and (s[i - 1] == p[j - 1] or p[j - 1] == ".")
-        else:
-          dp[i][j] = dp[i][j - 2] or dp[i - 1][j] and (p[j - 2] == s[i - 1] or p[j - 2] == ".")
-    return dp[-1][-1]
+          dp[i][j] = dp[i - 1][j - 1] and (s[i - 1] __ p[j - 1] o. p[j - 1] __ ".")
+        ____:
+          dp[i][j] = dp[i][j - 2] o. dp[i - 1][j] and (p[j - 2] __ s[i - 1] o. p[j - 2] __ ".")
+    r.. dp[-1][-1]

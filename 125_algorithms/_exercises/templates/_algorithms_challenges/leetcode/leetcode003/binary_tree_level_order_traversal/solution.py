@@ -31,24 +31,24 @@ class Solution(object):
         :rtype: List[List[int]]
         """
 
-        res = []
-        __ root is None:
-            return res
-        queue = []
-        level = []
-        queue.append(root)
-        queue.append(None)
+        res    # list
+        __ root __ N..
+            r.. res
+        queue    # list
+        level    # list
+        queue.a..(root)
+        queue.a..(N..)
         while queue:
             root = queue.pop(0)
-            __ root is None:
-                res.append(level[:])
-                level = []
+            __ root __ N..
+                res.a..(level[:])
+                level    # list
                 __ queue:
-                    queue.append(None)
-            else:
-                level.append(root.val)
-                __ root.left is not None:
-                    queue.append(root.left)
-                __ root.right is not None:
-                    queue.append(root.right)
-        return res
+                    queue.a..(N..)
+            ____:
+                level.a..(root.val)
+                __ root.left __ n.. N..
+                    queue.a..(root.left)
+                __ root.right __ n.. N..
+                    queue.a..(root.right)
+        r.. res

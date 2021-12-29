@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from rail_fence_cipher import encode, decode
+____ rail_fence_cipher _______ encode, decode
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.1
@@ -34,5 +34,5 @@ class RailFenceTests(unittest.TestCase):
             '112358132134558914423337761098715972584418167651094617711286')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

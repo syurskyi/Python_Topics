@@ -11,25 +11,25 @@ class Solution(object):
         :rtype: List[int]
         """
         s, c = S, C
-        arr = []
-        for i, c0 in enumerate(s):
-            __ c0 == c:
-                arr.append(i)
-        res = []
+        arr    # list
+        ___ i, c0 __ enumerate(s):
+            __ c0 __ c:
+                arr.a..(i)
+        res    # list
         j = 0
-        for i in range(len(s)):
+        ___ i __ r..(l..(s)):
             __ i < arr[j]:
                 val = arr[j]-i
                 __ j > 0:
-                    val = min(val, i-arr[j-1])
-            elif i == arr[j]:
+                    val = m..(val, i-arr[j-1])
+            ____ i __ arr[j]:
                 val = 0
-                __ j < len(arr)-1:
+                __ j < l..(arr)-1:
                     j += 1
-            else:
+            ____:
                 val = i-arr[j]
-            res.append(val)
-        return res
+            res.a..(val)
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -37,12 +37,12 @@ class Solution(object):
                 'loveleetcode', 'e',
             ],
         ]
-        for s, c in testCases:
+        ___ s, c __ testCases:
             print('s: %s' % s)
             print('c: %s' % c)
             result = self.shortestToChar(s, c)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

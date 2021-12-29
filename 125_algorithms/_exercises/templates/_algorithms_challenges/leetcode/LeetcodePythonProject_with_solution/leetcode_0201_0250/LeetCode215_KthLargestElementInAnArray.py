@@ -10,12 +10,12 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        import random
+        _______ random
         random.shuffle(nums)
-        __ k < 1 or not nums:
-            return 0
-        k = len(nums)-k
-        return self.helper(nums, 0, len(nums)-1, k)
+        __ k < 1 o. n.. nums:
+            r.. 0
+        k = l..(nums)-k
+        r.. self.helper(nums, 0, l..(nums)-1, k)
     
     ___ helper(self, nums, i, j, k):
         i0, j0 = i, j
@@ -27,15 +27,15 @@ class Solution(object):
                 j -= 1
             __ i < j:
                 nums[i], nums[j] = nums[j], nums[i]
-            else:
+            ____:
                 break
         nums[i], nums[j0] = nums[j0], nums[i]
-        __ i == k:
-            return nums[i]
-        elif i < k:
-            return self.helper(nums, i+1, j0, k)
-        else:
-            return self.helper(nums, i0, i-1, k)
+        __ i __ k:
+            r.. nums[i]
+        ____ i < k:
+            r.. self.helper(nums, i+1, j0, k)
+        ____:
+            r.. self.helper(nums, i0, i-1, k)
     
     ___ findKthLargestHeap(self, nums, k):
         """
@@ -43,11 +43,11 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        import heapq
+        _______ heapq
         heapq.heapify(nums)
-        for _ in range(len(nums)-k+1):
+        ___ _ __ r..(l..(nums)-k+1):
             result = heapq.heappop(nums)
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -55,7 +55,7 @@ class Solution(object):
             ([3,2,1,5,6,4], 5),
             ([3,3,3,3,3,3], 1),
         ]
-        for nums, k in testCases:
+        ___ nums, k __ testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
             result = self.findKthLargest(nums, k)
@@ -64,5 +64,5 @@ class Solution(object):
             print('resultHeap: %s' % (resultHeap))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

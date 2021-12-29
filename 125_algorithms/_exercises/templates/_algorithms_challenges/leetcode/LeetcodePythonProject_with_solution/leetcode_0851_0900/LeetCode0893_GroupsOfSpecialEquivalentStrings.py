@@ -10,24 +10,24 @@ class Solution(object):
         :rtype: int
         """
         hashset = set()
-        for w in A:
+        ___ w __ A:
             hashset.add(self.getHash(w))
-        return len(hashset)
+        r.. l..(hashset)
     
     ___ getHash(self, word):
         arr = [[0]*26, [0]*26]
-        for i, c in enumerate(word):
+        ___ i, c __ enumerate(word):
             arr[i%2][ord(c)-ord('a')] += 1
-        return '|'.join([','.join(str(num) for num in arr0) for arr0 in arr])
+        r.. '|'.join([','.join(str(num) ___ num __ arr0) ___ arr0 __ arr])
     
     ___ test(self):
         testCases = [
             ["abcd","cdab","cbad","xyzz","zzxy","zzyx"],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             res = self.numSpecialEquivGroups(arr)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

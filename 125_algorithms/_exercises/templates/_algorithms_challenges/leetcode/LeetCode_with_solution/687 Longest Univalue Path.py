@@ -38,8 +38,8 @@ tree is not more than 1000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -48,21 +48,21 @@ class Solution:
 
     ___ longestUnivaluePath(self, root: TreeNode) -> int:
         self.find(root)
-        return self.ret
+        r.. self.ret
 
     ___ find(self, node):
         """
         the longest path ended at node
         """
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         left = self.find(node.left)
         right = self.find(node.right)
-        left_path = left + 1 __ node.left and node.left.val == node.val else 0
-        right_path = right + 1 __ node.right and node.right.val == node.val else 0
+        left_path = left + 1 __ node.left and node.left.val __ node.val ____ 0
+        right_path = right + 1 __ node.right and node.right.val __ node.val ____ 0
         self.ret = max(self.ret, left_path + right_path)
-        return max(left_path, right_path)
+        r.. max(left_path, right_path)
 
 
 class Solution_error:
@@ -71,27 +71,27 @@ class Solution_error:
 
     ___ longestUnivaluePath(self, root: TreeNode) -> int:
         self.find(root)
-        return self.ret
+        r.. self.ret
 
     ___ find(self, node):
         """
         the longest path ended at node
         """
-        __ not node:
-            return 0
+        __ n.. node:
+            r.. 0
 
         left = self.find(node.left)
         right = self.find(node.right)
         cur = 1  # node.val
         path = 1
-        __ left and node.left.val == node.val:
+        __ left and node.left.val __ node.val:
             path += left
             cur = left + 1
 
-        __ right and node.right.val == node.val:
+        __ right and node.right.val __ node.val:
             path += right
             __ right > left:
                 cur = right + 1
 
         self.ret = max(self.ret, path - 1)
-        return cur
+        r.. cur

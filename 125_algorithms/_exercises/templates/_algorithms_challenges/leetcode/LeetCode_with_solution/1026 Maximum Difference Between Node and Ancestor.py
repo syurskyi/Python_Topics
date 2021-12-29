@@ -28,8 +28,8 @@ Each node will have value between 0 and 100000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -41,19 +41,19 @@ class Solution:
         dfs return min and max
         """
         self.dfs(root)
-        return self.ret
+        r.. self.ret
 
     ___ dfs(self, node):
-        __ not node:
-            return float("inf"), -float("inf")
+        __ n.. node:
+            r.. float("inf"), -float("inf")
 
         lmin, lmax = self.dfs(node.left)
         rmin, rmax = self.dfs(node.right)
-        mini = min(lmin, rmin)
+        mini = m..(lmin, rmin)
         maxa = max(lmax, rmax)
         __ mini != float("inf"):
             self.ret = max(self.ret, abs(mini - node.val))
         __ maxa != -float("inf"):
             self.ret = max(self.ret, abs(maxa - node.val))
 
-        return min(mini, node.val), max(maxa, node.val)
+        r.. m..(mini, node.val), max(maxa, node.val)

@@ -7,27 +7,27 @@ Created on Apr 11, 2017
 class Solution(object):
     ___ thirdMax(self, nums):
         first, second, third = float('-inf'), float('-inf'), float('-inf')
-        for num in nums:
+        ___ num __ nums:
             __ num > first:
                 third = second
                 second = first
                 first = num
-            elif first > num > second:
+            ____ first > num > second:
                 third = second
                 second = num
-            elif second > num > third:
+            ____ second > num > third:
                 third = num
-        return third __ third != float('-inf') else first
+        r.. third __ third != float('-inf') ____ first
     
     ___ test(self):
         testCases = [
             [2, 2, 3, 1],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.thirdMax(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

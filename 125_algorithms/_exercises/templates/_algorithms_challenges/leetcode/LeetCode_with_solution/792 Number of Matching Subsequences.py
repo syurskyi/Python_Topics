@@ -17,8 +17,8 @@ The length of S will be in the range of [1, 50000].
 The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -29,18 +29,18 @@ class Solution:
 
         HashMap + Iterator
         """
-        itrs_m = defaultdict(list)
-        for w in words:
-            itrs_m[w[0]].append(
+        itrs_m = defaultdict(l..)
+        ___ w __ words:
+            itrs_m[w[0]].a..(
                 iter(w[1:])
             )
-        for a in S:
+        ___ a __ S:
             itrs = itrs_m.pop(a, [])
-            for itr in itrs:
-                v = next(itr, None)
-                itrs_m[v].append(itr)
+            ___ itr __ itrs:
+                v = next(itr, N..)
+                itrs_m[v].a..(itr)
 
-        return len(itrs_m[None])
+        r.. l..(itrs_m[N..])
 
     ___ numMatchingSubseq_TLE(self, S: str, words: List[str]) -> int:
         """
@@ -52,18 +52,18 @@ class Solution:
         go through all words parallel
         O(|S| |Words|)
         """
-        I = [0 for _ in words]
-        for a in S:
-            for wi, i in enumerate(I):
-                __ i < len(words[wi]) and words[wi][i] == a:
+        I = [0 ___ _ __ words]
+        ___ a __ S:
+            ___ wi, i __ enumerate(I):
+                __ i < l..(words[wi]) and words[wi][i] __ a:
                     I[wi] += 1
 
-        return sum(
+        r.. s..(
             1
-            for wi, i in enumerate(I)
-            __ i == len(words[wi])
+            ___ wi, i __ enumerate(I)
+            __ i __ l..(words[wi])
         )
 
 
-__ __name__ == "__main__":
-    assert Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) == 3
+__ __name__ __ "__main__":
+    ... Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) __ 3

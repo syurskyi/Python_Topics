@@ -3,7 +3,7 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-import itertools
+_______ itertools
 
 class Solution(object):
     ___ numSimilarGroups(self, A):
@@ -11,40 +11,40 @@ class Solution(object):
         :type A: List[str]
         :rtype: int
         """
-        arr = list(set(A))
-        parents = {x: x for x in arr}
-        n, m = len(arr), len(arr[0])
+        arr = l..(set(A))
+        parents = {x: x ___ x __ arr}
+        n, m = l..(arr), l..(arr[0])
         self.count = n
         
         ___ find(x):
             __ x != parents[x]:
                 parents[x] = find(parents[x])
-            return parents[x]
+            r.. parents[x]
         
         ___ union(x, y):
             x, y = find(x), find(y)
             __ x != y:
                 parents[x] = y
                 self.count -= 1
-                return True
-            return False
+                r.. True
+            r.. False
         
         ___ similar(x, y):
-            return sum(i != j for i, j in zip(x, y)) == 2
+            r.. s..(i != j ___ i, j __ zip(x, y)) __ 2
         
         ## Solution part ##
         __ n < m:
-            for x, y in itertools.combinations(arr, 2):
+            ___ x, y __ itertools.combinations(arr, 2):
                 __ similar(x, y):
                     union(x, y)
-        else:
-            for x in arr:
-                for i, j in itertools.combinations(range(m), 2):
+        ____:
+            ___ x __ arr:
+                ___ i, j __ itertools.combinations(r..(m), 2):
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]
-                    __ y in parents:
+                    __ y __ parents:
                         union(x, y)
         
-        return self.count
+        r.. self.count
     
     ___ test(self):
         testCases = [
@@ -53,11 +53,11 @@ class Solution(object):
             ["blw","bwl","wlb"],
             ["nmiwx","mniwx","wminx","mnixw","xnmwi"],
         ]
-        for strs in testCases:
+        ___ strs __ testCases:
             print('strs: %s' % strs)
             result = self.numSimilarGroups(strs)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,7 +1,7 @@
-import unittest
+_______ unittest
 
-import yacht
-from yacht import score
+_______ yacht
+____ yacht _______ score
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
@@ -89,5 +89,5 @@ class YachtTest(unittest.TestCase):
         self.assertEqual(score([2, 2, 2, 2, 2], yacht.CHOICE), 10)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

@@ -4,16 +4,16 @@ letters  0
 
 fp  "C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"
 
-for line in open(fp):
+___ line __ open(fp):
     lines + 1
-    letters + len(line)
+    letters + l..(line)
 
     pos  'out'
-    for letter in line:
+    ___ letter __ line:
         __ letter ! ' ' and pos __ 'out':
             words + 1
             pos  'in'
-        elif letter __ ' ':
+        ____ letter __ ' ':
             pos  'out'
 print("Lines: ",lines)
 print("Words: ",words)

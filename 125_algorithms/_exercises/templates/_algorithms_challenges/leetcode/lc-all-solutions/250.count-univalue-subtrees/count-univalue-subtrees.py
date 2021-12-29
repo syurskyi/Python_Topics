@@ -14,16 +14,16 @@ class Solution(object):
     self.count = 0
 
     ___ dfs(root, pv):
-      __ not root:
-        return True
+      __ n.. root:
+        r.. True
       left = dfs(root.left, root.val)
       right = dfs(root.right, root.val)
       __ left and right:
         self.count += 1
-        __ root.val == pv:
-          return True
-      return False
+        __ root.val __ pv:
+          r.. True
+      r.. False
 
     __ root:
       dfs(root, root.val)
-    return self.count
+    r.. self.count

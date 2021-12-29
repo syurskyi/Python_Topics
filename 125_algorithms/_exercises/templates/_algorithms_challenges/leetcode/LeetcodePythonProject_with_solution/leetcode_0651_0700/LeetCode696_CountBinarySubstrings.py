@@ -9,23 +9,23 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        __ not s: return 0
+        __ n.. s: r.. 0
         res = 0
         i = 0
         ind = i
-        while i+1 < len(s) and s[i+1] == s[ind]:
+        while i+1 < l..(s) and s[i+1] __ s[ind]:
             i += 1
         prev = i+1-ind
         i += 1
-        while i < len(s):
+        while i < l..(s):
             ind = i
-            while i+1 < len(s) and s[i+1] == s[ind]:
+            while i+1 < l..(s) and s[i+1] __ s[ind]:
                 i += 1
             curr = i+1-ind
-            res += min(curr, prev)
+            res += m..(curr, prev)
             prev = curr
             i += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -33,11 +33,11 @@ class Solution(object):
 #             '10101',
             "00100",
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.countBinarySubstrings(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

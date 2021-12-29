@@ -6,20 +6,20 @@ class Solution(object):
     """
 
     ___ dfs(start, nums, path, res, visited):
-      res.append(path + [])
+      res.a..(path + [])
 
-      for i in range(start, len(nums)):
-        __ start != i and nums[i] == nums[i - 1]:
+      ___ i __ r..(start, l..(nums)):
+        __ start != i and nums[i] __ nums[i - 1]:
           continue
-        __ i not in visited:
+        __ i n.. __ visited:
           visited[i] = 1
-          path.append(nums[i])
+          path.a..(nums[i])
           dfs(i + 1, nums, path, res, visited)
           path.pop()
           del visited[i]
 
     nums.sort()
-    res = []
+    res    # list
     visited = {}
     dfs(0, nums, [], res, visited)
-    return res
+    r.. res

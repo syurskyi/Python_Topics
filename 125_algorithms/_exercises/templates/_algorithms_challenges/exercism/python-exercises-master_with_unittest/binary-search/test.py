@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from binary_search import binary_search
+____ binary_search _______ binary_search
 
 
 class BinarySearchTests(unittest.TestCase):
@@ -40,5 +40,5 @@ class BinarySearchTests(unittest.TestCase):
         self.assertRaises(ValueError, binary_search, [], 1)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

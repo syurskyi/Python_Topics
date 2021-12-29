@@ -40,17 +40,17 @@ ___ get_person_age(name):
     n = str(name).lower()
     print(n)
     try:
-        return group3[n]
+        r.. group3[n]
     except:
         print("trying group2...")
     try:
-        return group2[n]
+        r.. group2[n]
     except:
         print("trying group1...")
     try:
-        return group1[n]
+        r.. group1[n]
     except:
-        return NOT_FOUND
+        r.. NOT_FOUND
 
 print(get_person_age("bob"))
 

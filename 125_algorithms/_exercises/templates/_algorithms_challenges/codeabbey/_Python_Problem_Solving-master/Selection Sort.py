@@ -1,9 +1,9 @@
 d = int(input())
-a = list(map(int,input().split()))
+a = l..(map(int,input().split()))
 
-while len(a)!= 1:
+while l..(a)!= 1:
     max = 0
-    for i in range(len(a)):
+    ___ i __ r..(l..(a)):
         __ a[i] > max:
             max = a[i]
     ind = a.index(max)

@@ -4,33 +4,33 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return []
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
 
-        m, n = len(matrix), len(matrix[0])
-        ans = [[float('inf')] * n for _ in range(m)]
-        queue = []
+        m, n = l..(matrix), l..(matrix[0])
+        ans = [[float('inf')] * n ___ _ __ r..(m)]
+        queue    # list
 
-        for x in range(m):
-            for y in range(n):
-                __ matrix[x][y] == 0:
+        ___ x __ r..(m):
+            ___ y __ r..(n):
+                __ matrix[x][y] __ 0:
                     ans[x][y] = 0
-                    queue.append((x, y))
+                    queue.a..((x, y))
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y __ queue:
+            ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
             ):
                 _x = x + dx
                 _y = y + dy
 
-                __ not (0 <= _x < m and 0 <= _y < n):
+                __ n.. (0 <= _x < m and 0 <= _y < n):
                     continue
                 __ ans[_x][_y] < ans[x][y] + 1:
                     continue
 
                 ans[_x][_y] = ans[x][y] + 1
-                queue.append((_x, _y))
+                queue.a..((_x, _y))
 
-        return ans
+        r.. ans

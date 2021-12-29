@@ -15,12 +15,12 @@ Output: 1->4->3->2->5->NULL
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
     ___ reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
-        prev = None
+        prev = N..
         cur = head
 
         l = 1
@@ -46,8 +46,8 @@ class Solution:
 
         __ m != 1:  # leftend is None
             leftend.next = prev
-        else:
+        ____:
             head = prev
 
         rightend.next = cur
-        return head
+        r.. head

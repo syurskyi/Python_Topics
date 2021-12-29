@@ -1,6 +1,6 @@
-from collections import Counter, namedtuple
-import os
-import urllib.request
+____ collections _______ Counter, namedtuple
+_______ os
+_______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -10,7 +10,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.split()
+IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 Stats = namedtuple('Stats', 'user challenge')
 
@@ -40,9 +40,9 @@ ___ gen_files(tempfile=tempfile):
     """
     
     with open(tempfile,'r') as f:
-        for line in f:
+        ___ line __ f:
             name,is_dir = line.split(',')
-            __ is_dir == "True\n":
+            __ is_dir __ "True\n":
                 yield name.lower()
 
 
@@ -62,7 +62,7 @@ ___ diehard_pybites(files_ N..
 
     Stats(user='clamytoe', challenge=('01', 7))
     """
-    __ files is None:
+    __ files __ N..
         files = gen_files()
     
     
@@ -71,9 +71,9 @@ ___ diehard_pybites(files_ N..
 
     # your code
 
-    for file in files:
+    ___ file __ files:
         challenge,name = file.split('/')
-        __ name in IGNORE:
+        __ name __ IGNORE:
             continue
         users[name] += 1
         popular_challenges[challenge] += 1
@@ -83,7 +83,7 @@ ___ diehard_pybites(files_ N..
     top_challenge = popular_challenges.most_common(1)[0]
 
 
-    return Stats(most_popular_user,top_challenge)
+    r.. Stats(most_popular_user,top_challenge)
 
 
 

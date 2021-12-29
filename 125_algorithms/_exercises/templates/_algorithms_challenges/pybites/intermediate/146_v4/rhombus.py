@@ -17,10 +17,10 @@ ___ gen_rhombus(width):
           *
     """
     # define a function that produces the correct num *'s
-    x = range(-(width // 2), width // 2 + 1)
-    for k in x:
+    x = r..(-(width // 2), width // 2 + 1)
+    ___ k __ x:
         stars = STAR * (width - 2*abs(k))
-        pad = ' ' * ((width - len(stars)) //2)
+        pad = ' ' * ((width - l..(stars)) //2)
         yield pad + stars + pad
 
 

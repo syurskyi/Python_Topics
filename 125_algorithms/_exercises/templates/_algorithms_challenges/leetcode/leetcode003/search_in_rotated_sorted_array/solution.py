@@ -17,21 +17,21 @@ class Solution(object):
         :rtype: int
         """
         left = 0
-        right = len(nums) - 1
+        right = l..(nums) - 1
         while left <= right:
             mid = left + (right - left) / 2
-            __ target == nums[mid]:
-                return mid
+            __ target __ nums[mid]:
+                r.. mid
             # Left part is sorted
-            elif nums[mid] > nums[right]:
+            ____ nums[mid] > nums[right]:
                 __ target < nums[mid] and target >= nums[left]:
                     right = mid - 1
-                else:
+                ____:
                     left = mid + 1
             # Right part is sorted
-            else:
+            ____:
                 __ target > nums[mid] and target <= nums[right]:
                     left = mid + 1
-                else:
+                ____:
                     right = mid - 1
-        return -1
+        r.. -1

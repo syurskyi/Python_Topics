@@ -9,7 +9,7 @@ Show Company Tags
 Show Tags
 Show Similar Problems
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 __author__ = 'Daniel'
 
@@ -27,21 +27,21 @@ class Solution(object):
         st = 0  # start
         counter = defaultdict(int)
         maxa = 0
-        for idx, val in enumerate(s):
-            __ counter[val] == 0:
+        ___ idx, val __ enumerate(s):
+            __ counter[val] __ 0:
                 k -= 1
 
             counter[val] += 1
             while k < 0:
                 counter[s[st]] -= 1
-                __ counter[s[st]] == 0:
+                __ counter[s[st]] __ 0:
                     k += 1
                 st += 1
 
             maxa = max(maxa, idx - st + 1)
 
-        return maxa
+        r.. maxa
 
 
-__ __name__ == "__main__":
-    assert Solution().lengthOfLongestSubstringKDistinct("eceba", 2) == 3
+__ __name__ __ "__main__":
+    ... Solution().lengthOfLongestSubstringKDistinct("eceba", 2) __ 3

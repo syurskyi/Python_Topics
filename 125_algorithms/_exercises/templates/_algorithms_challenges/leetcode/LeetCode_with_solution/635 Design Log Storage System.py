@@ -33,7 +33,7 @@ There will be at most 300 operations of Put or Retrieve.
 Year ranges from [2000,2017]. Hour ranges from [00,23].
 Output for Retrieve has no order required.
 """
-import bisect
+_______ bisect
 
 
 class LogSystem:
@@ -42,9 +42,9 @@ class LogSystem:
         BST - TreeMap (java)
         binary search using time stamp
         """
-        self.lst = []
+        self.lst    # list
 
-    ___ put(self, id: int, timestamp: str) -> None:
+    ___ put(self, id: int, timestamp: str) -> N..
         bisect.insort(self.lst, (timestamp, id))
 
     ___ retrieve(self, s: str, e: str, gra: str) -> List[int]:
@@ -67,7 +67,7 @@ class LogSystem:
         e = e[:pre] + hi[pre:]
         i = bisect.bisect_left(self.lst, (s, 0))
         j = bisect.bisect_right(self.lst, (e, float("inf")))
-        return [id for _, id in self.lst[i:j]]
+        r.. [id ___ _, id __ self.lst[i:j]]
 
 
 # Your LogSystem object will be instantiated and called as such:

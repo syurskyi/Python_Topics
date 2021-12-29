@@ -6,14 +6,14 @@ class Solution(object):
         """
         prevSet = set()
         uniqSet = set()
-        for num in A:
+        ___ num __ A:
             currSet = set()
             prevSet.add(0)
-            for num1 in prevSet:
+            ___ num1 __ prevSet:
                 currSet.add(num | num1)
                 uniqSet.add(num | num1)
             prevSet = currSet
-        return len(uniqSet)
+        r.. l..(uniqSet)
 
     ___ test(self):
         testCases = [
@@ -21,11 +21,11 @@ class Solution(object):
             # [1, 1, 2],
             [1, 2, 4],
         ]
-        for arr in testCases:
+        ___ arr __ testCases:
             res = self.subarrayBitwiseORs(arr)
             print('res: %s' % res)
             print('-='*30+'-')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

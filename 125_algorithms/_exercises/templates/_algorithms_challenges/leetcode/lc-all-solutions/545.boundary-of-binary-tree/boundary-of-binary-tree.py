@@ -11,32 +11,32 @@ class Solution(object):
     :type root: TreeNode
     :rtype: List[int]
     """
-    __ not root:
-      return []
+    __ n.. root:
+      r.. []
 
     ___ dfsLeft(root, res):
-      __ not root or (not root.left and not root.right):
-        return
-      res.append(root.val)
+      __ n.. root o. (n.. root.left and n.. root.right):
+        r..
+      res.a..(root.val)
       __ root.left:
         dfsLeft(root.left, res)
-      else:
+      ____:
         dfsLeft(root.right, res)
 
     ___ dfsRight(root, res):
-      __ not root or (not root.left and not root.right):
-        return
+      __ n.. root o. (n.. root.left and n.. root.right):
+        r..
       __ root.right:
         dfsRight(root.right, res)
-      else:
+      ____:
         dfsRight(root.left, res)
-      res.append(root.val)
+      res.a..(root.val)
 
     ___ dfsLeaves(root, res, mid):
-      __ not root:
-        return
-      __ not root.left and not root.right and root != mid:
-        res.append(root.val)
+      __ n.. root:
+        r..
+      __ n.. root.left and n.. root.right and root != mid:
+        res.a..(root.val)
       dfsLeaves(root.left, res, mid)
       dfsLeaves(root.right, res, mid)
 
@@ -44,4 +44,4 @@ class Solution(object):
     dfsLeft(root.left, res)
     dfsLeaves(root, res, root)
     dfsRight(root.right, res)
-    return res
+    r.. res

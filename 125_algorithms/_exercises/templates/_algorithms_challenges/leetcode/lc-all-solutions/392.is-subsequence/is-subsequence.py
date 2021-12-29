@@ -5,13 +5,13 @@ class Solution(object):
     :type t: str
     :rtype: bool
     """
-    d = collections.defaultdict(list)
-    for i, c in enumerate(t):
-      d[c].append(i)
+    d = collections.defaultdict(l..)
+    ___ i, c __ enumerate(t):
+      d[c].a..(i)
     start = 0
-    for c in s:
+    ___ c __ s:
       idx = bisect.bisect_left(d[c], start)
-      __ len(d[c]) == 0 or idx >= len(d[c]):
-        return False
+      __ l..(d[c]) __ 0 o. idx >= l..(d[c]):
+        r.. False
       start = d[c][idx] + 1
-    return True
+    r.. True

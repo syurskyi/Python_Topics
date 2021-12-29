@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from class_rosters import class_rosters
+____ class_rosters _______ class_rosters
 
 full = """
 17409,"Matheson, Rick",,,,,,,,,,
@@ -40,4 +40,4 @@ ___ test_class_rosters(content, expected, tmp_path):
     csvfile = tmp_path / "content"
     csvfile.write_text(content.lstrip())
     actual = class_rosters(csvfile)
-    assert actual == expected
+    ... actual __ expected

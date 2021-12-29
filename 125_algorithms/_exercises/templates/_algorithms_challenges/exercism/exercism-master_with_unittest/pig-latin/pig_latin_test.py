@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from pig_latin import translate
+____ pig_latin _______ translate
 
 
 class PigLatinTests(unittest.TestCase):
@@ -50,5 +50,5 @@ class PigLatinTests(unittest.TestCase):
         self.assertEqual("xrayay", translate("xray"))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

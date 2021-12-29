@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from frequency import major_n_minor
+____ frequency _______ major_n_minor
 
 
 @pytest.mark.parametrize("data, expected", [
@@ -12,4 +12,4 @@ from frequency import major_n_minor
     ([9, 0, 5, 7, 8, 8, 9, 0, 5, 9, 9, 5], (9, 7)),
 ])
 ___ test_frequency(data, expected):
-    assert major_n_minor(data) == expected
+    ... major_n_minor(data) __ expected

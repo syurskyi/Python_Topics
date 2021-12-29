@@ -10,15 +10,15 @@ class NumMatrix:
         """
         :type matrix: List[List[int]]
         """
-        __ not matrix or not matrix[0]:
-            return
+        __ n.. matrix o. n.. matrix[0]:
+            r..
 
-        m, n = len(matrix), len(matrix[0])
-        self.prefix_sum = [[0] * (n + 1) for _ in range(m + 1)]
+        m, n = l..(matrix), l..(matrix[0])
+        self.prefix_sum = [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
-        for x in range(1, m + 1):
-            for y in range(1, n + 1):
-                self.prefix_sum[x][y] = sum((
+        ___ x __ r..(1, m + 1):
+            ___ y __ r..(1, n + 1):
+                self.prefix_sum[x][y] = s..((
                     self.prefix_sum[x - 1][y],
                     self.prefix_sum[x][y - 1],
                     - self.prefix_sum[x - 1][y - 1],
@@ -33,17 +33,17 @@ class NumMatrix:
         :type y2: int
         :rtype: int
         """
-        __ not all((
+        __ n.. a..((
             self.prefix_sum,
             self.prefix_sum[0],
-            0 <= x1 < len(self.prefix_sum),
-            0 <= x2 + 1 < len(self.prefix_sum),
-            0 <= y1 < len(self.prefix_sum[0]),
-            0 <= y2 + 1 < len(self.prefix_sum[0]),
+            0 <= x1 < l..(self.prefix_sum),
+            0 <= x2 + 1 < l..(self.prefix_sum),
+            0 <= y1 < l..(self.prefix_sum[0]),
+            0 <= y2 + 1 < l..(self.prefix_sum[0]),
         )):
-            return 0
+            r.. 0
 
-        return sum((
+        r.. s..((
             self.prefix_sum[x2 + 1][y2 + 1],
             - self.prefix_sum[x2 + 1][y1],
             - self.prefix_sum[x1][y2 + 1],

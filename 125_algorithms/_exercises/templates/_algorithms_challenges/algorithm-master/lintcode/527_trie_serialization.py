@@ -30,12 +30,12 @@ class Solution:
         >
     '''
     ___ serialize(self, root):
-        __ not root:
-            return ''
+        __ n.. root:
+            r.. ''
         data = ''
-        for key, node in root.children.items():
+        ___ key, node __ root.children.items():
             data += key + self.serialize(node)
-        return '<%s>' % data
+        r.. '<%s>' % data
 
     '''
     @param data: A string serialized by your serialize method.
@@ -46,20 +46,20 @@ class Solution:
     "serialize" method.
     '''
     ___ deserialize(self, data):
-        __ not data \
-                or data[0] != '<' \
-                or data[-1] != '>' \
-                or len(data) < 1:
-            return
+        __ n.. data \
+                o. data[0] != '<' \
+                o. data[-1] != '>' \
+                o. l..(data) < 1:
+            r..
         root = TrieNode()
         current = root
-        queue = []
-        for char in data:
-            __ char == '<':
-                queue.append(current)
-            elif char == '>':
+        queue    # list
+        ___ char __ data:
+            __ char __ '<':
+                queue.a..(current)
+            ____ char __ '>':
                 queue.pop()
-            else:
+            ____:
                 current = TrieNode()
                 queue[-1].children[char] = current
-        return root
+        r.. root

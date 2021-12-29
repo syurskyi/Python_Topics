@@ -28,8 +28,8 @@ Input: A = [9,9,9,9,9,9,9,9,9,9], K = 1
 Output: [1,0,0,0,0,0,0,0,0,0,0]
 Explanation: 9999999999 + 1 = 10000000000
 """
-from typing import List
-from collections import deque
+____ typing _______ List
+____ collections _______ deque
 
 
 class Solution:
@@ -38,7 +38,7 @@ class Solution:
         carry
         """
         carry = K
-        for i in range(len(A)-1, -1, -1):
+        ___ i __ r..(l..(A)-1, -1, -1):
             A[i] += carry
             carry = A[i] // 10
             A[i] %= 10
@@ -48,4 +48,4 @@ class Solution:
             head.appendleft(carry % 10)
             carry //= 10
 
-        return list(head) + A
+        r.. l..(head) + A

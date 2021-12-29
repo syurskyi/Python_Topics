@@ -5,11 +5,11 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        __ not n:
-            return ans
+        __ n.. n:
+            r.. ans
 
         while n != 0:
             n = n & (n - 1)
             ans += 1
 
-        return ans
+        r.. ans

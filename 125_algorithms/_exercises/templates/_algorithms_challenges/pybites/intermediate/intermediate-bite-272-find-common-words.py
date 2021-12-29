@@ -14,7 +14,7 @@ T = ['We', 'are', 'what', 'we', 'repeatedly', 'do', 'is', 'not', 'an', 'act']
 Result = ['do', 'not']
 """
 
-from typing import List
+____ typing _______ List
 
 
 ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
@@ -26,11 +26,11 @@ ___ common_words(sentence1: List[str], sentence2: List[str]) -> List[str]:
             If there are duplicate words in the results, just choose one word.
             Returned words should be sorted by word's length.
     """
-    lower_s1 = [e.lower() for e in sentence1 ]
-    lower_s2 = [e.lower() for e in sentence2 ]
-    result = list(set(lower_s1) & set(lower_s2))
+    lower_s1 = [e.lower() ___ e __ sentence1 ]
+    lower_s2 = [e.lower() ___ e __ sentence2 ]
+    result = l..(set(lower_s1) & set(lower_s2))
 
-    return sorted(result, key=len)
+    r.. s..(result, key=l..)
 
 """
 Approach:

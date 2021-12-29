@@ -1,8 +1,8 @@
 # Rhyme found in http://www.pitt.edu/~dash/type2035.html
 
-import unittest
+_______ unittest
 
-from house import rhyme, verse
+____ house _______ rhyme, verse
 
 
 class VerseTest(unittest.TestCase):
@@ -125,5 +125,5 @@ class VerseTest(unittest.TestCase):
         self.assertEqual(expected, rhyme())
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

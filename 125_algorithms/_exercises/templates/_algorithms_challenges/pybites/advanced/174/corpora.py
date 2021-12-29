@@ -1,8 +1,8 @@
-import re
-from collections import Counter
-from dataclasses import dataclass, field
-from string import punctuation
-from typing import List, Set, Tuple
+_______ re
+____ collections _______ Counter
+____ dataclasses _______ dataclass, field
+____ string _______ punctuation
+____ typing _______ List, Set, Tuple
 
 STOPWORDS: set = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
@@ -42,7 +42,7 @@ class Corpora:
     txt: str
     count: int = 5
     tag: str = '#'
-    extra: List[str] = field(default_factory=list)
+    extra: List[str] = field(default_factory=l..)
     stopwords: Set[str] = field(init=False)
 
     ___ __post_init__(self):
@@ -59,10 +59,10 @@ class Corpora:
         :param txt: Corpus of text
         :return: cleaned up corpus
         """
-        text = ''.join(c for c in self.txt.lower() __ c not in punctuation)
-        for x in self.extra:
+        text = ''.join(c ___ c __ self.txt.lower() __ c n.. __ punctuation)
+        ___ x __ self.extra:
             text = re.sub(x, ' ', text)
-        return text
+        r.. text
 
     @property
     ___ metrics(self) -> List[Tuple[str, int]]:
@@ -74,13 +74,13 @@ class Corpora:
 
         :return: List of tuples, i.e. ("word", count)
         """
-        wordlist = [word for word in self.cleaned.split() __ not word in self.stopwords]
+        wordlist = [word ___ word __ self.cleaned.s..  __ n.. word __ self.stopwords]
         metrics = Counter(wordlist)
 
-        return metrics.most_common(self.count)
+        r.. metrics.most_common(self.count)
 
     @property
-    ___ graph(self) -> None:
+    ___ graph(self) -> N..
         """Generates a textual graph of the words
 
         * Prints out the words along with a "tag" bar graph, defaults to using
@@ -105,6 +105,6 @@ class Corpora:
         :param metrics: List of tuples with word counts
         :return: None
         """
-        for m in self.metrics:
+        ___ m __ self.metrics:
             print(f'{m[0]:>10} {self.tag * m[1]}')
-        return None
+        r.. N..

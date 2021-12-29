@@ -15,7 +15,7 @@ nums: [1,2,4,8]
 
 Result: [1,2,4,8]
 """
-from collections import deque
+____ collections _______ deque
 
 __author__ = 'Daniel'
 
@@ -32,22 +32,22 @@ class Solution(object):
         :type A: List[int]
         :rtype: List[int]
         """
-        __ not A: return []
+        __ n.. A: r.. []
 
         F = {}
         pi = {}
         A.sort()
-        for i in xrange(len(A)):
+        ___ i __ xrange(l..(A)):
             F[i] = 1
             pi[i] = i
-            for j in xrange(i):
-                __ A[i] % A[j] == 0:
+            ___ j __ xrange(i):
+                __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]
                         pi[i] = j
 
         max_i, max_v = 0, 1
-        for k, v in F.items():
+        ___ k, v __ F.items():
             __ v > max_v:
                 max_i, max_v = k, v
 
@@ -58,8 +58,8 @@ class Solution(object):
             cur = pi[cur]
             ret.appendleft(A[cur])
 
-        return list(ret)
+        r.. l..(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().largestDivisibleSubset([1, 2, 4, 8]) == [1, 2, 4, 8]
+__ __name__ __ "__main__":
+    ... Solution().largestDivisibleSubset([1, 2, 4, 8]) __ [1, 2, 4, 8]

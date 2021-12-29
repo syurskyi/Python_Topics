@@ -1,10 +1,10 @@
-from datetime import date
-import os
-from pathlib import Path
-import pickle
-from typing import Sequence, NamedTuple
-from urllib.request import urlretrieve
-import time
+____ datetime _______ date
+_______ os
+____ pathlib _______ Path
+_______ pickle
+____ typing _______ Sequence, NamedTuple
+____ urllib.request _______ urlretrieve
+_______ time
 
 
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -29,11 +29,11 @@ ___ download_pickle_file():
 ___ deserialize(pkl_file: Path = PICKLE_INFILE) -> Sequence[NamedTuple]:
     """Load the list of namedtuples from the pickle file passed in"""
     input_file = open(pkl_file, "rb")
-    return pickle.load(input_file)
+    r.. pickle.load(input_file)
 
 
 ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
-              data: Sequence[NamedTuple] = None) -> None:
+              data: Sequence[NamedTuple] = N..) -> N..
     """Save the data passed in to the pickle file passed in"""
     #if data is None:
     #    data = deserialize()

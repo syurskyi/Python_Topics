@@ -1,5 +1,5 @@
-import string
-import re
+_______ string
+_______ re
 
 
 ___ extract_non_ascii_words(text):
@@ -8,13 +8,13 @@ ___ extract_non_ascii_words(text):
     punctuation = string.punctuation
     digits = string.digits
 
-    results = []
+    results    # list
 
     # for word in re.findall(r'\b[^\W\d]+\b', text, flags=re.UNICODE):
-    for word in text.split():
-        __ any([c in punctuation or c in digits for c in word]):
+    ___ word __ text.s.. :
+        __ any([c __ punctuation o. c __ digits ___ c __ word]):
             continue
-        __ not all([c in ascii for c in word]):
-            results.append(word)
+        __ n.. a..([c __ ascii ___ c __ word]):
+            results.a..(word)
 
-    return results
+    r.. results

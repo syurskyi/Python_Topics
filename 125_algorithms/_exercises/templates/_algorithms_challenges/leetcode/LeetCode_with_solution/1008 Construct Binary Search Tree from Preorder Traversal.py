@@ -17,15 +17,15 @@ Note:
 1 <= preorder.length <= 100
 The values of preorder are distinct.
 """
-from typing import List
+____ typing _______ List
 
 
 # Definition for a binary tree node.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -46,20 +46,20 @@ class Solution:
         """
         root = TreeNode(preorder[0])
         stk = [root]
-        for a in preorder[1:]:
+        ___ a __ preorder[1:]:
             node = TreeNode(a)
             __ a < stk[-1].val:  # len(stk) always >= 1
                 stk[-1].left = node
-            else:
-                while len(stk) >= 2 and stk[-2].val < a:
+            ____:
+                while l..(stk) >= 2 and stk[-2].val < a:
                     stk.pop()
 
                 stk[-1].right = node
                 stk.pop()
 
-            stk.append(node)
+            stk.a..(node)
 
-        return root
+        r.. root
 
     ___ bstFromPreorder(self, preorder: List[int]) -> TreeNode:
         """
@@ -68,14 +68,14 @@ class Solution:
         """
         root = TreeNode(preorder[0])
         stk = [root]
-        for a in preorder[1:]:
+        ___ a __ preorder[1:]:
             node = TreeNode(a)
             __ a < stk[-1].val:
                 stk[-1].left = node
-            else:
+            ____:
                 while stk and stk[-1].val < a:
                     pi = stk.pop()
                 pi.right = node
-            stk.append(node)
+            stk.a..(node)
             
-        return root
+        r.. root

@@ -11,18 +11,18 @@ class Solution(object):
         :rtype: str
         """
         s = S
-        n = len(shifts)
-        for i in range(n-2, -1, -1):
+        n = l..(shifts)
+        ___ i __ r..(n-2, -1, -1):
             shifts[i] += shifts[i+1]
-        return ''.join(chr((ord(c)-97+num) % 26 + 97) for c, num in zip(s, shifts))
+        r.. ''.join(chr((ord(c)-97+num) % 26 + 97) ___ c, num __ zip(s, shifts))
     
     ___ test(self):
         testCases = [
             ['abc', [3, 5, 9]],
         ]
-        for s, shifts in testCases:
+        ___ s, shifts __ testCases:
             result = self.shiftingLetters(s, shifts)
             print('result: %s' % result)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

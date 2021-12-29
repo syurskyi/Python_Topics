@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta
-import re
+____ datetime _______ datetime, timedelta
+_______ re
 
 NOW = datetime(year=2019, month=2, day=6,
                hour=22, minute=0, second=0)
@@ -23,25 +23,25 @@ ___ add_todo(delay_time: str, task: str,
     """
 
 
-    values = delay_time.split()
+    values = delay_time.s.. 
 
     days = seconds = minutes = hours = 0 
-    for value in values:
-        v = int(value) __ value[-1].isdigit() else int(value[:-1])
-        __ value[-1].isdigit() or value[-1] == 's':
+    ___ value __ values:
+        v = int(value) __ value[-1].isdigit() ____ int(value[:-1])
+        __ value[-1].isdigit() o. value[-1] __ 's':
             seconds = v
-        elif value[-1] == 'd':
+        ____ value[-1] __ 'd':
             days = v
-        elif value[-1] == 'h':
+        ____ value[-1] __ 'h':
             hours = v
-        elif value[-1] == 'm':
+        ____ value[-1] __ 'm':
             minutes = v 
 
     
     time = start_time + timedelta(hours=hours,seconds=seconds,minutes=minutes,days=days)
 
 
-    return f"{task} @ {time.strftime('%Y-%m-%d %H:%M:%S')}"
+    r.. f"{task} @ {time.strftime('%Y-%m-%d %H:%M:%S')}"
 
 
 

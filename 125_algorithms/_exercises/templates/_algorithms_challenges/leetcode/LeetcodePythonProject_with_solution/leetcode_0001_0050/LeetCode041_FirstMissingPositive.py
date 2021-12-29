@@ -9,12 +9,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         dp = [0]*n
-        for num in nums:
+        ___ num __ nums:
             __ 0 <= num-1 < n:
                 dp[num-1] += 1
-        for i, val in enumerate(dp):
-            __ val == 0:
-                return i+1
-        return len(nums)+1
+        ___ i, val __ enumerate(dp):
+            __ val __ 0:
+                r.. i+1
+        r.. l..(nums)+1

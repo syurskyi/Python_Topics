@@ -7,16 +7,16 @@ class Solution:
     @return: the minimum number in the array
     """
     ___ findMin(self, A):
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
         _min = A[0]
-        for i in range(1, len(A)):
+        ___ i __ r..(1, l..(A)):
             __ A[i] < _min:
                 _min = A[i]
                 break
 
-        return _min
+        r.. _min
 
 
 """
@@ -32,20 +32,20 @@ class Solution:
         all chilren before the pivot are great than or equal the child at end
         all chilren after the pivot are less than or equal the child at end
         """
-        __ not A:
-            return -1
+        __ n.. A:
+            r.. -1
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
         while left + 1 < right:
             mid = (left + right) // 2
-            __ A[mid] == A[right]:
+            __ A[mid] __ A[right]:
                 # means it's ok to remove the end child
                 right -= 1
-            elif A[mid] < A[right]:
+            ____ A[mid] < A[right]:
                 # mid at the right side of pivot
                 right = mid
-            else:
+            ____:
                 # mid at the left side of pivot
                 left = mid
 
-        return A[left] __ A[left] < A[right] else A[right]
+        r.. A[left] __ A[left] < A[right] ____ A[right]

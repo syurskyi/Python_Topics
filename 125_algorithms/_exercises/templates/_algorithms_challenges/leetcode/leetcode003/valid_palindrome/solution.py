@@ -20,19 +20,19 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        __ not s:
-            return True
+        __ n.. s:
+            r.. True
         left = 0
-        right = len(s) - 1
+        right = l..(s) - 1
         while left < right:
             __ s[left].isalnum() and s[right].isalnum():
                 __ s[left].lower() != s[right].lower():
-                    return False
+                    r.. False
                 left += 1
                 right -= 1
-            else:
-                __ not s[left].isalnum():
+            ____:
+                __ n.. s[left].isalnum():
                     left += 1
-                __ not s[right].isalnum():
+                __ n.. s[right].isalnum():
                     right -= 1
-        return True
+        r.. True

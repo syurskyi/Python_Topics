@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-from random import randint
+____ random _______ randint
 
 
 class Solution:
@@ -25,12 +25,12 @@ class Solution:
         i = 0
 
         while node:
-            __ randint(0, i) == i:
+            __ randint(0, i) __ i:
                 res = node
             node = node.next
             i += 1
 
-        return res.val
+        r.. res.val
 
 
 # Your Solution object will be instantiated and called as such:

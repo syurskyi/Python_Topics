@@ -11,20 +11,20 @@ class Solution(object):
         :type x: int
         :rtype: List[int]
         """
-        import bisect, heapq
+        _______ bisect, heapq
         ind = bisect.bisect_left(arr, x)
-        __ ind == 0:
-            return arr[:k]
-        __ ind == len(arr):
-            return arr[-k:]
-        heap = []
-        for i in range(max(0, ind-k), min(len(arr), ind+k)):
+        __ ind __ 0:
+            r.. arr[:k]
+        __ ind __ l..(arr):
+            r.. arr[-k:]
+        heap    # list
+        ___ i __ r..(max(0, ind-k), m..(l..(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
-        res = []
-        for _ in range(k):
-            res.append(heapq.heappop(heap)[1])
-        return sorted(res)
+        res    # list
+        ___ _ __ r..(k):
+            res.a..(heapq.heappop(heap)[1])
+        r.. s..(res)
     
     ___ test(self):
         testCases = [
@@ -44,7 +44,7 @@ class Solution(object):
                 9,
             ],
         ]
-        for arr, k, x in testCases:
+        ___ arr, k, x __ testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             print('x: %s' % x)
@@ -52,5 +52,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

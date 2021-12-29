@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from allergies import Allergies
+____ allergies _______ Allergies
 
 
 class AllergiesTests(unittest.TestCase):
@@ -28,14 +28,14 @@ class AllergiesTests(unittest.TestCase):
 
     ___ test_allergic_to_everything(self):
         self.assertEqual(
-            sorted(('eggs peanuts shellfish strawberries tomatoes '
+            s..(('eggs peanuts shellfish strawberries tomatoes '
                     'chocolate pollen cats').split()),
-            sorted(Allergies(255).lst))
+            s..(Allergies(255).lst))
 
     # @unittest.skip('Extra Credit: Passes with a specific type of solution')
     ___ test_ignore_non_allergen_score_parts(self):
         self.assertEqual(['eggs'], Allergies(257).lst)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

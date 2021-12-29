@@ -34,11 +34,11 @@ Every value of a given or inserted node is between 0 and 5000.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from collections import deque
+____ collections _______ deque
 
 
 class CBTInserter:
@@ -55,33 +55,33 @@ class CBTInserter:
         self.root = root
         q = [root]  # can also use deque
         while q:
-            cur_q = []
-            for e in q:
+            cur_q    # list
+            ___ e __ q:
                 __ e.left:
-                    cur_q.append(e.left)
+                    cur_q.a..(e.left)
                 __ e.right:
-                    cur_q.append(e.right)
-                __ not e.left or not e.right:
+                    cur_q.a..(e.right)
+                __ n.. e.left o. n.. e.right:
                     # non-full node
-                    self.candidates.append(e)
+                    self.candidates.a..(e)
             q = cur_q
 
     ___ insert(self, v: int) -> int:
         pi = self.candidates[0]
         node = TreeNode(v)
-        __ not pi.left:
+        __ n.. pi.left:
             pi.left = node
-        else:
+        ____:
             pi.right = node
 
         __ pi.left and pi.right:
             self.candidates.popleft()
 
-        self.candidates.append(node)
-        return pi.val
+        self.candidates.a..(node)
+        r.. pi.val
 
     ___ get_root(self) -> TreeNode:
-        return self.root
+        r.. self.root
 
 
 # Your CBTInserter object will be instantiated and called as such:

@@ -1,4 +1,4 @@
-from collections import deque
+____ collections _______ deque
 
 
 class Solution(object):
@@ -7,31 +7,31 @@ class Solution(object):
     :type nums: List[List[int]]
     :rtype: List[int]
     """
-    k = len(nums)
+    k = l..(nums)
     d = collections.defaultdict(int)
-    tuples = []
+    tuples    # list
 
-    for i in range(len(nums)):
-      for num in nums[i]:
-        tuples.append((num, i))
+    ___ i __ r..(l..(nums)):
+      ___ num __ nums[i]:
+        tuples.a..((num, i))
 
     tuples.sort()
-    length = len(tuples)
+    length = l..(tuples)
     left = tuples[0][0]
     right = tuples[-1][0]
     deq = deque([])
-    for i in range(length):
+    ___ i __ r..(length):
       num, no = tuples[i]
-      deq.append(tuples[i])
+      deq.a..(tuples[i])
       d[no] += 1
-      while len(deq) > 1 and d[deq[0][1]] > 1:
+      while l..(deq) > 1 and d[deq[0][1]] > 1:
         _num, _no = deq.popleft()
         d[_no] -= 1
-        __ d[_no] == 0:
+        __ d[_no] __ 0:
           del d[_no]
-      __ len(d) == k:
+      __ l..(d) __ k:
         l, r = deq[0][0], deq[-1][0]
         __ r - l < right - left:
           left = l
           right = r
-    return (left, right)
+    r.. (left, right)

@@ -12,27 +12,27 @@ class Solution(object):
         :type destination: List[int]
         :rtype: int
         """
-        import heapq
-        __ not maze or not maze[0]: return -1
-        m, n = len(maze), len(maze[0])
-        heap = []
+        _______ heapq
+        __ n.. maze o. n.. maze[0]: r.. -1
+        m, n = l..(maze), l..(maze[0])
+        heap    # list
         heapq.heappush(heap, (0, start[0], start[1]))
-        visited = [[False]*n for _ in range(m)]
+        visited = [[False]*n ___ _ __ r..(m)]
         while heap:
             currDist, i, j = heapq.heappop(heap)
-            __ i == destination[0] and j == destination[1]:
-                return currDist
+            __ i __ destination[0] and j __ destination[1]:
+                r.. currDist
             visited[i][j] = True
-            for x, y, dist in self.getNextSteps(maze, i, j):
-                __ not visited[x][y]:
+            ___ x, y, dist __ self.getNextSteps(maze, i, j):
+                __ n.. visited[x][y]:
                     heapq.heappush(heap, (currDist+dist, x, y))
-        return -1
+        r.. -1
     
     ___ getNextSteps(self, maze, i, j):
-        m, n = len(maze), len(maze[0])
+        m, n = l..(maze), l..(maze[0])
         steps = set()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)
-        for dir in dirs:
+        ___ dir __ dirs:
             x, y = i, j
             dist = 0
             while 0 <= x+dir[0] < m and 0 <= y+dir[1] < n and\
@@ -40,6 +40,6 @@ class Solution(object):
                 x += dir[0]
                 y += dir[1]
                 dist += 1
-            __ x != i or y != j:
+            __ x != i o. y != j:
                 steps.add((x, y, dist))
-        return list(steps)
+        r.. l..(steps)

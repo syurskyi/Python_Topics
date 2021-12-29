@@ -1,24 +1,24 @@
-from random import randint
+____ random _______ randint
 
 row  5
 matrix  []
 
-for i in range(row):
+___ i __ r..(row):
     myrow  []
-    for j in range(row):
-        myrow.append(randint(1,100))
+    ___ j __ r..(row):
+        myrow.a..(randint(1,100))
         print("%4d" % myrow[j], end' ')
-    matrix.append(myrow)
+    matrix.a..(myrow)
     print()
 print()
 
-for i in range(row):
+___ i __ r..(row):
     x  matrix[i][i]
     matrix[i][i]  matrix[i][row-1-i]
     matrix[i][row-1-i]  x
 
-for i in matrix:
-    for j in i:
+___ i __ matrix:
+    ___ j __ i:
         print("%4d" % j, end' ')
     print()
 

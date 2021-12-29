@@ -8,8 +8,8 @@ Created on Feb 11, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ upsideDownBinaryTree(self, root):
@@ -17,11 +17,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ not root: return root
-        stack = []
+        __ n.. root: r.. root
+        stack    # list
         node = root
         while node:
-            stack.append(node)
+            stack.a..(node)
             node = node.left
         root = stack.pop()
         node = root
@@ -30,13 +30,13 @@ class Solution(object):
             right = newNode.right
             node.left = right
             node.right = newNode
-            newNode.left = None
-            newNode.right = None
+            newNode.left = N..
+            newNode.right = N..
             node = newNode
-        return root
+        r.. root
     
     ___ test(self):
         pass
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

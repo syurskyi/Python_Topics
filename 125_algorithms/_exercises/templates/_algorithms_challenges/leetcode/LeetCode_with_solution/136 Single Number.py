@@ -32,7 +32,7 @@ class Solution:
         :return: int
         """
         storage = 0
-        for element in A:
+        ___ element __ A:
             storage ^= element # XOR
 
-        return storage
+        r.. storage

@@ -1,11 +1,11 @@
-import memory_profiler as mem_profile
-import random
-import time
+_______ memory_profiler as mem_profile
+_______ random
+_______ time
 
 
 ___ function_1():
     with open("sample_file.txt") as infile:
-        for line in infile:
+        ___ line __ infile:
             print(line.strip())
 
 ___ function_2():
@@ -13,16 +13,16 @@ ___ function_2():
     with open("sample_file.txt") as infile:
         print(type(infile))
         data = infile.readlines()
-        for line in data:
+        ___ line __ data:
             print(line.strip())
 
 ___ function_3():
     with open("sample_file.txt") as infile:
-        return (word for word in infile.readline())
+        r.. (word ___ word __ infile.readline())
 ___ gen():
 
     with open("sample_file.txt") as infile:
-        for line in infile:
+        ___ line __ infile:
             yield line
 
 #for i in gen():
@@ -31,5 +31,5 @@ ___ gen():
 print(f'Memory (Before): {mem_profile.memory_usage()}')
 
 g = function_3()
-for word in g:
+___ word __ g:
     print(word)

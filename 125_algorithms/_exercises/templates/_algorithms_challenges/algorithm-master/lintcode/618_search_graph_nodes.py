@@ -24,16 +24,16 @@ class Solution:
     @return {UndirectedGraphNode} a node
     """
     ___ searchNode(self, graph, values, node, target):
-        __ not graph:
-            return
+        __ n.. graph:
+            r..
 
         queue = [node]
-        visited = {_node: False for _node in graph}
+        visited = {_node: False ___ _node __ graph}
 
-        for _node in queue:
+        ___ _node __ queue:
             visited[_node] = True
-            __ values[_node] == target:
-                return _node
-            for _neighbor in _node.neighbors:
-                __ not visited[_neighbor]:
-                    queue.append(_neighbor)
+            __ values[_node] __ target:
+                r.. _node
+            ___ _neighbor __ _node.neighbors:
+                __ n.. visited[_neighbor]:
+                    queue.a..(_neighbor)

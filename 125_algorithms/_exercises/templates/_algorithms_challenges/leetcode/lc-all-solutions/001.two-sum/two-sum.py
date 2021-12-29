@@ -6,9 +6,9 @@ class Solution(object):
     :rtype: List[int]
     """
     d = {}
-    for i, num in enumerate(nums):
-      __ target - num in d:
-        return [d[target - num], i]
+    ___ i, num __ enumerate(nums):
+      __ target - num __ d:
+        r.. [d[target - num], i]
       d[num] = i
     # no special case handling because it's assumed that it has only one solution
 

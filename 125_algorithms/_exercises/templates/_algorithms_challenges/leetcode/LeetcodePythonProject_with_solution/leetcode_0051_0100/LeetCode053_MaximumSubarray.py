@@ -10,14 +10,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = l..(nums)
         dp = [0]*n
         dp[0] = nums[0]
         maxVal = dp[0]
-        for i in range(1, n):
+        ___ i __ r..(1, n):
             dp[i] = max(nums[i], dp[i-1]+nums[i])
             maxVal = max(maxVal, dp[i])
-        return maxVal
+        r.. maxVal
     
     ___ maxSubArrayDAC(self, nums):
         """
@@ -31,11 +31,11 @@ class Solution(object):
         testCases = [
             [-2,1,-3,4,-1,2,1,-5,4],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % (nums))
             result = self.maxSubArray(nums)
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,4 +1,4 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 Member = namedtuple("Member",'name since_days karma_points bitecoin_earned')
 
 
@@ -19,11 +19,11 @@ ___ transpose(data):
     """
 
 
-    __ type(data) == dict:
-        return [tuple(data.keys()),tuple(data.values())]
-    elif type(data) == list:
+    __ type(data) __ d..:
+        r.. [tuple(data.keys()),tuple(data.values())]
+    ____ type(data) __ l..:
         
-        return [z for z in zip(*(tuple(d) for d in data))]
+        r.. [z ___ z __ zip(*(tuple(d) ___ d __ data))]
 
 
 
@@ -31,7 +31,7 @@ ___ transpose(data):
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     data = [Member(name='Bob', since_days=60, karma_points=60,
                    bitecoin_earned=56),

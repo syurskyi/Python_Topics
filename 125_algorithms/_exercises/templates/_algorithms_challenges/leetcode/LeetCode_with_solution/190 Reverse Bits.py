@@ -14,10 +14,10 @@ class Solution:
         """
         ret = 0
         BITS = 32
-        for i in xrange(BITS):
+        ___ i __ xrange(BITS):
             ret += n&1
-            __ i == BITS-1: break
+            __ i __ BITS-1: break
             ret <<= 1
             n >>= 1
 
-        return ret
+        r.. ret

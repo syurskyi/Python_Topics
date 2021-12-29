@@ -9,47 +9,47 @@ class Solution(object):
     """
 
     ___ f(x):
-      return a * (x ** 2) + b * x + c
+      r.. a * (x ** 2) + b * x + c
 
-    __ a == 0:
+    __ a __ 0:
       __ b >= 0:
-        return [f(x) for x in nums]
-      else:
-        return [f(x) for x in reversed(nums)]
+        r.. [f(x) ___ x __ nums]
+      ____:
+        r.. [f(x) ___ x __ reversed(nums)]
 
     mid = (-1.0) * b / (2.0 * a)
-    up, down = [], []
+    up, down    # list, []
 
     __ a >= 0:
-      for num in nums:
+      ___ num __ nums:
         __ num >= mid:
-          up.append(f(num))
-        else:
-          down.append(f(num))
+          up.a..(f(num))
+        ____:
+          down.a..(f(num))
       down.reverse()
-    else:
-      for num in nums:
+    ____:
+      ___ num __ nums:
         __ num >= mid:
-          down.append(f(num))
-        else:
-          up.append(f(num))
+          down.a..(f(num))
+        ____:
+          up.a..(f(num))
       down.reverse()
 
-    res = []
+    res    # list
     upIdx = 0
     downIdx = 0
-    while upIdx < len(up) and downIdx < len(down):
+    while upIdx < l..(up) and downIdx < l..(down):
       upTop = up[upIdx]
       downTop = down[downIdx]
 
       __ upTop < downTop:
-        res.append(upTop)
+        res.a..(upTop)
         upIdx += 1
-      else:
-        res.append(downTop)
+      ____:
+        res.a..(downTop)
         downIdx += 1
-    __ upIdx < len(up):
-      res.extend(up[upIdx:len(up)])
-    __ downIdx < len(down):
-      res.extend(down[downIdx:len(down)])
-    return res
+    __ upIdx < l..(up):
+      res.extend(up[upIdx:l..(up)])
+    __ downIdx < l..(down):
+      res.extend(down[downIdx:l..(down)])
+    r.. res

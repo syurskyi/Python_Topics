@@ -1,5 +1,5 @@
-from datetime import date, datetime, timedelta
-import calendar
+____ datetime _______ date, datetime, timedelta
+_______ calendar
 
 
 PYBITES_BORN = datetime(year=2016, month=12, day=19)
@@ -11,7 +11,7 @@ ___ looping_100days(datetime):
     end_date = date(2020, 12, 19)
     """Making cardinal numbers"""
     day = int(datetime.day)
-    suffix = ['th', 'st', 'nd', 'rd', 'th'][min(day % 10, 4)]
+    suffix = ['th', 'st', 'nd', 'rd', 'th'][m..(day % 10, 4)]
     __ 11 <= (day % 100) <= 13:
         suffix = 'th'
     while start_date <= end_date:
@@ -26,10 +26,10 @@ ___ gen_special_pybites_dates(datetime):
     year = datetime.year
     """Making cardinal numbers"""
     day = int(datetime.day)
-    suffix = ['th', 'st', 'nd', 'rd', 'th'][min(day % 10, 4)]
+    suffix = ['th', 'st', 'nd', 'rd', 'th'][m..(day % 10, 4)]
     __ 11 <= (day % 100) <= 13:
         suffix = 'th'
     """Printing out same date but different years from 2016 to 2020"""
-    for year in range(2016, 2021):
+    ___ year __ r..(2016, 2021):
         print(f"{str(day) + suffix} of {month} {year}")
-        return looping_100days(datetime)
+        r.. looping_100days(datetime)

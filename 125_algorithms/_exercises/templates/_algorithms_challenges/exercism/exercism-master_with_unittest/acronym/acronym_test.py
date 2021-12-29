@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from acronym import abbreviate
+____ acronym _______ abbreviate
 
 
 class AcronymTest(unittest.TestCase):
@@ -25,5 +25,5 @@ class AcronymTest(unittest.TestCase):
                          abbreviate('Complementary metal-oxide semiconductor'))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

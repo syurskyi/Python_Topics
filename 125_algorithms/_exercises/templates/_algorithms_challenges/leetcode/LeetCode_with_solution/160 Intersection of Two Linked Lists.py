@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution:
@@ -46,14 +46,14 @@ class Solution:
 
         cur_a = headA
         cur_b = headB
-        for i in xrange(l_b-l_a):
+        ___ i __ xrange(l_b-l_a):
             cur_b = cur_b.next
 
         while cur_a != cur_b:
             cur_a = cur_a.next
             cur_b = cur_b.next
 
-        return cur_a
+        r.. cur_a
 
     ___ _get_len(self, head):
         n = 0
@@ -62,4 +62,4 @@ class Solution:
             n += 1
             cur = cur.next
 
-        return n
+        r.. n

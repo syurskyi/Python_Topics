@@ -1,14 +1,14 @@
-import re
+_______ re
 
 ___ split_words_and_quoted_text(text):
     m = re.search(r'"(.*?)"', text)
-    m_list = [w for w in m.group(1).split()]
-    l = []
-    for word in text.replace('"', '').split():
-        __ word not in m_list:
-            l.append(word)
-        else:
-            __ m.group() not in l:
-                l.append(m.group())
-    output = [entry.replace('"', '') for entry in l]
-    return output
+    m_list = [w ___ w __ m.group(1).s.. ]
+    l    # list
+    ___ word __ text.replace('"', '').s.. :
+        __ word n.. __ m_list:
+            l.a..(word)
+        ____:
+            __ m.group() n.. __ l:
+                l.a..(m.group())
+    output = [entry.replace('"', '') ___ entry __ l]
+    r.. output

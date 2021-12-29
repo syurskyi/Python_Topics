@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from armstrong_numbers import is_armstrong
+____ armstrong_numbers _______ is_armstrong
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -32,5 +32,5 @@ class ArmstrongNumbersTest(unittest.TestCase):
         self.assertIs(is_armstrong(9926314), False)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

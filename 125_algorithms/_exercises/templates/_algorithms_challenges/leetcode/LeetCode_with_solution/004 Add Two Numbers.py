@@ -12,11 +12,11 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
     ___ __repr__(self):
         # for debugging
-        return repr(self.val)
+        r.. repr(self.val)
 
 
 class Solution:
@@ -35,12 +35,12 @@ class Solution:
         cur1 = l1
         cur2 = l2
         cur = result_head
-        while cur1 or cur2:
+        while cur1 o. cur2:
             cur.val = cur.val+self.addNode(cur1, cur2)
             __ cur.val < 10:
-                __ cur1 and cur1.next or cur2 and cur2.next:  # next node
+                __ cur1 and cur1.next o. cur2 and cur2.next:  # next node
                     cur.next = ListNode(0)
-            else:
+            ____:
                 cur.val -= 10
                 cur.next = ListNode(1)
 
@@ -50,7 +50,7 @@ class Solution:
                 cur2 = cur2.next
             cur = cur.next
 
-        return result_head
+        r.. result_head
 
     ___ addNode(self, node1, node2):
         """
@@ -60,20 +60,20 @@ class Solution:
         :param node2: ListNode
         :return: integer, summation
         """
-        __ not node1 and not node2:
+        __ n.. node1 and n.. node2:
             raise Exception("two nodes are None")
-        __ not node1:
-            return node2.val
-        __ not node2:
-            return node1.val
-        return node1.val+node2.val
+        __ n.. node1:
+            r.. node2.val
+        __ n.. node2:
+            r.. node1.val
+        r.. node1.val+node2.val
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     l1s = [ListNode(1)]
     l2s = [ListNode(9), ListNode(9)]
-    for i in range(len(l1s)-1):
+    ___ i __ r..(l..(l1s)-1):
         l1s[i].next = l1s[i+1]
-    for i in range(len(l2s)-1):
+    ___ i __ r..(l..(l2s)-1):
         l2s[i].next = l2s[i+1]
     Solution().addTwoNumbers(l1s[0], l2s[0])

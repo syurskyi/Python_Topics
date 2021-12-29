@@ -1,26 +1,26 @@
-import string
+_______ string
 
-PUNCTUATION_CHARS = list(string.punctuation)
+PUNCTUATION_CHARS = l..(string.punctuation)
 
 used_passwords = set("PassWord@1 PyBit$s9".split())
 
 
 ___ validate_password(password: str) -> bool:
-    __ not (6 <= len(password) <= 12):
-        return False
-    __ password in used_passwords:
-        return False
+    __ n.. (6 <= l..(password) <= 12):
+        r.. False
+    __ password __ used_passwords:
+        r.. False
     digits = lcase = ucase = punc = 0
-    for c in password:
+    ___ c __ password:
         __ c.isdigit():
             digits += 1
-        elif c.islower():
+        ____ c.islower():
             lcase += 1
-        elif c.isupper():
+        ____ c.isupper():
             ucase += 1
-        elif c in PUNCTUATION_CHARS:
+        ____ c __ PUNCTUATION_CHARS:
             punc += 1
     __ digits > 0 and lcase > 1 and ucase > 0 and punc > 0:
         used_passwords.add(password)
-        return True
-    return False
+        r.. True
+    r.. False

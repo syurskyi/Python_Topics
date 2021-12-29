@@ -1,31 +1,31 @@
-import datetime
+_______ datetime
 
-import pytest
+_______ pytest
 
-from high_low_temps import STATION
-from high_low_temps import high_low_record_breakers_for_2015 as hl_2015
+____ high_low_temps _______ STATION
+____ high_low_temps _______ high_low_record_breakers_for_2015 as hl_2015
 
 
 @pytest.fixture(scope="module")
 ___ high_low():
-    return hl_2015()
+    r.. hl_2015()
 
 
 ___ test_for_correct_return_of_hl_2015(high_low):
-    assert len(high_low) == 2
-    assert isinstance(high_low[0], STATION)
-    assert isinstance(high_low[1], STATION)
+    ... l..(high_low) __ 2
+    ... isi..(high_low[0], STATION)
+    ... isi..(high_low[1], STATION)
 
 
 ___ test_high_hl_2015(high_low):
     high = high_low[0]
-    assert high.ID == "USW00014853"
-    assert high.Date == datetime.date(2015, 7, 29)
-    assert high.Value == 36.1
+    ... high.ID __ "USW00014853"
+    ... high.Date __ datetime.date(2015, 7, 29)
+    ... high.Value __ 36.1
 
 
 ___ test_low_hl_2015(high_low):
     low = high_low[1]
-    assert low.ID == "USW00094889"
-    assert low.Date == datetime.date(2015, 2, 20)
-    assert low.Value == -34.3
+    ... low.ID __ "USW00094889"
+    ... low.Date __ datetime.date(2015, 2, 20)
+    ... low.Value __ -34.3

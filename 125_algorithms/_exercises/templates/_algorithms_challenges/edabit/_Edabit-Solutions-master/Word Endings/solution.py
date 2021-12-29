@@ -1,8 +1,8 @@
 ___ add_ending(lst, ending):
     index = 0
-    output = []
-    while index <len(lst):
+    output    # list
+    while index <l..(lst):
       s = lst[index] + ending
-      output.append(s)
+      output.a..(s)
       index += 1
-    return output
+    r.. output

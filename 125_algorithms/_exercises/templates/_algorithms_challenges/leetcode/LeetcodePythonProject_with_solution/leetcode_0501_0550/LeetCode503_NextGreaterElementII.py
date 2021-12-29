@@ -10,29 +10,29 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        res = []
-        n = len(nums)
-        stack = list(range(n-1, -1, -1))
-        for i in range(n-1, -1, -1):
+        res    # list
+        n = l..(nums)
+        stack = l..(r..(n-1, -1, -1))
+        ___ i __ r..(n-1, -1, -1):
             while stack and nums[stack[-1]] <= nums[i]:
                 stack.pop()
             __ stack:
                 res.insert(0, nums[stack[-1]])
-            else:
+            ____:
                 res.insert(0, -1)
-            stack.append(i)
-        return res
+            stack.a..(i)
+        r.. res
     
     ___ test(self):
         testCases = [
 #             [1, 2, 1],
             [1, 6, 2, 7, 4, 5],
         ]
-        for nums in testCases:
+        ___ nums __ testCases:
             print('nums: %s' % nums)
             result = self.nextGreaterElements(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

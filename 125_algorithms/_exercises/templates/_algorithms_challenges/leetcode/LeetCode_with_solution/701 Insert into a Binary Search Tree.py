@@ -38,20 +38,20 @@ This tree is also valid:
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
     ___ insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
-        __ not root:
-            return TreeNode(val)
+        __ n.. root:
+            r.. TreeNode(val)
 
         __ root.val < val:
             root.right = self.insertIntoBST(root.right, val)
-        elif root.val > val:
+        ____ root.val > val:
             root.left = self.insertIntoBST(root.left, val)
-        else:
+        ____:
             raise
 
-        return root
+        r.. root

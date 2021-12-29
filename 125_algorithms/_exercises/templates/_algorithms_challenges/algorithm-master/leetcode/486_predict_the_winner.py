@@ -9,20 +9,20 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        __ not nums:
-            return False
+        __ n.. nums:
+            r.. False
 
-        n = len(nums)
+        n = l..(nums)
         dp = [0] * n
 
-        for i in range(n - 1, -1, -1):
-            for j in range(i + 1, n):
+        ___ i __ r..(n - 1, -1, -1):
+            ___ j __ r..(i + 1, n):
                 dp[j] = max(
                     nums[i] - dp[j],
                     nums[j] - dp[j - 1]
                 )
 
-        return dp[n - 1] >= 0
+        r.. dp[n - 1] >= 0
 
 
 """
@@ -36,17 +36,17 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        __ not nums:
-            return False
+        __ n.. nums:
+            r.. False
 
-        n = len(nums)
-        dp = [[0] * n for _ in range(n)]
+        n = l..(nums)
+        dp = [[0] * n ___ _ __ r..(n)]
 
-        for i in range(n - 1, -1, -1):
-            for j in range(i + 1, n):
+        ___ i __ r..(n - 1, -1, -1):
+            ___ j __ r..(i + 1, n):
                 dp[i][j] = max(
                     nums[i] - dp[i + 1][j],
                     nums[j] - dp[i][j - 1]
                 )
 
-        return dp[0][n - 1] >= 0
+        r.. dp[0][n - 1] >= 0

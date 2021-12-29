@@ -6,18 +6,18 @@ __author__ = 'Danyang'
 
 class Solution(object):
     ___ longestCommonPrefix(self, strs):
-        __ not strs: return ""
-        l = min(map(len, strs))
+        __ n.. strs: r.. ""
+        l = m..(map(l.., strs))
         i = 0
         while i < l:
             char = strs[0][i]
-            for s in strs:
+            ___ s __ strs:
                 __ s[i] != char:
-                    return strs[0][:i]
+                    r.. strs[0][:i]
 
             i += 1
 
-        return strs[0][:i]
+        r.. strs[0][:i]
 
     ___ longestCommonPrefixComplex(self, strs):
         """
@@ -26,14 +26,14 @@ class Solution(object):
         :return: string, prefix
         """
         # checking, otherwise: ValueError: min() arg is an empty sequence
-        __ not strs:
-            return ""
+        __ n.. strs:
+            r.. ""
 
-        n = len(strs)
+        n = l..(strs)
 
         str_builder = ""
-        min_len = min(len(string) for string in strs)
-        for i in range(min_len):
+        min_len = m..(l..(string) ___ string __ strs)
+        ___ i __ r..(min_len):
             char = strs[0][i]
 
             j = 0
@@ -44,14 +44,14 @@ class Solution(object):
                 except IndexError:
                     break
 
-            __ j == n:
+            __ j __ n:
                 str_builder += char
-            else:
+            ____:
                 break
 
-        return str_builder
+        r.. str_builder
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     strs = ["abc", "abcd"]
     print Solution().longestCommonPrefix(strs)

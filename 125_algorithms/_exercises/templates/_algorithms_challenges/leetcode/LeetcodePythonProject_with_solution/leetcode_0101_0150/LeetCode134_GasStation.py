@@ -12,16 +12,16 @@ class Solution(object):
         :rtype: int
         """
         sumRemaining, sumVal, start = 0, 0, 0
-        for i, (g, c) in enumerate(zip(gas, cost)):
+        ___ i, (g, c) __ enumerate(zip(gas, cost)):
             remain = g-c
             __ sumRemaining >= 0:
                 sumRemaining += remain
-            else:
+            ____:
                 sumRemaining = remain
                 start = i
             sumVal += remain
         __ sumVal >= 0:
-            return start
-        else:
-            return -1
+            r.. start
+        ____:
+            r.. -1
     

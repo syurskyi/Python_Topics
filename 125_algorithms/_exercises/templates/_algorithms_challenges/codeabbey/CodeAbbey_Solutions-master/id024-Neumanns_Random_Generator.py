@@ -1,8 +1,8 @@
 # Python 3.4.3
 
 ___ neumanns(inputs):
-    answer = []
-    for num in [int(x) for x in input().split()]:
+    answer    # list
+    ___ num __ [int(x) ___ x __ input().s.. ]:
         loop_count = 0
         new_num = num * num
         temp = ''
@@ -14,15 +14,15 @@ ___ neumanns(inputs):
                 new_num = int(new_num) * int(new_num)
                 
             new_num = str(new_num)
-            while len(new_num) < 8:
+            while l..(new_num) < 8:
                 new_num = '0' + new_num
             new_num = new_num[2:-2]
 
             loop_count += 1
-            __ new_num in repeats:
+            __ new_num __ repeats:
                 no_repition = False
                 
-            repeats.append(new_num)
-        answer.append(str(loop_count))
+            repeats.a..(new_num)
+        answer.a..(str(loop_count))
     print(' '.join(answer))
 neumanns(input()) # This is input() is required to be wasted. Please ignore.

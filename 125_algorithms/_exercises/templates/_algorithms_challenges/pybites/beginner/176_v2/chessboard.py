@@ -1,4 +1,4 @@
-from itertools import cycle
+____ itertools _______ cycle
 WHITE, BLACK = ' ', '#'
 
 
@@ -11,20 +11,20 @@ ___ create_chessboard(size=8):
     c2 = cycle(f"{BLACK}{WHITE}")
 
     c = c1
-    for row in range(size):
-        for col in range(size):
+    ___ row __ r..(size):
+        ___ col __ r..(size):
             print(next(c),end='')
         print()
         
 
         __ c __ c1:
             c = c2
-        else:
+        ____:
             c = c1
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
 
     create_chessboard()

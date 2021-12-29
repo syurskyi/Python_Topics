@@ -44,8 +44,8 @@ Note:
 2 <= K <= 30
 1 <= stones[i] <= 100
 """
-from typing import List
-from functools import lru_cache
+____ typing _______ List
+____ functools _______ lru_cache
 
 
 class Solution:
@@ -82,37 +82,37 @@ class Solution:
         since the mid goes through the middle in the i, j.
         Use memoization rather than dp
         """
-        N = len(stones)
+        N = l..(stones)
         sums = [0]
-        for s in stones:
-            sums.append(sums[-1] + s)
+        ___ s __ stones:
+            sums.a..(sums[-1] + s)
 
-        @lru_cache(None)
+        @lru_cache(N..)
         ___ F(i, j, m):
-            __ i >= j or m < 1:
-                return float("inf")
+            __ i >= j o. m < 1:
+                r.. float("inf")
 
             n = j - i
             __ (n - m) % (K - 1) != 0:
-                return float("inf")
+                r.. float("inf")
 
-            __ j == i + 1:
-                __ m == 1:
-                    return 0
-                return float("inf")
+            __ j __ i + 1:
+                __ m __ 1:
+                    r.. 0
+                r.. float("inf")
 
-            __ m == 1:
-                return F(i, j, K) + sums[j] - sums[i]
+            __ m __ 1:
+                r.. F(i, j, K) + sums[j] - sums[i]
 
-            ret = min(
+            ret = m..(
                 F(i, mid, 1) + F(mid, j, m - 1)
-                for mid in range(i + 1, j, K - 1)
+                ___ mid __ r..(i + 1, j, K - 1)
             )
-            return ret
+            r.. ret
 
         ret = F(0, N, 1)
-        return ret __ ret != float("inf") else -1
+        r.. ret __ ret != float("inf") ____ -1
 
 
-__ __name__ == "__main__":
-    assert Solution().mergeStones([3,5,1,2,6], 3) == 25
+__ __name__ __ "__main__":
+    ... Solution().mergeStones([3,5,1,2,6], 3) __ 25

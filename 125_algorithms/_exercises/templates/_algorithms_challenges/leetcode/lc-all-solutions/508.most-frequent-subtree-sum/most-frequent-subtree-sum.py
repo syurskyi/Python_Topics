@@ -13,22 +13,22 @@ class Solution(object):
     """
 
     ___ helper(root, d):
-      __ not root:
-        return 0
+      __ n.. root:
+        r.. 0
       left = helper(root.left, d)
       right = helper(root.right, d)
       subtreeSum = left + right + root.val
       d[subtreeSum] = d.get(subtreeSum, 0) + 1
-      return subtreeSum
+      r.. subtreeSum
 
     d = {}
     helper(root, d)
     mostFreq = 0
-    ans = []
-    for key in d:
+    ans    # list
+    ___ key __ d:
       __ d[key] > mostFreq:
         mostFreq = d[key]
         ans = [key]
-      elif d[key] == mostFreq:
-        ans.append(key)
-    return ans
+      ____ d[key] __ mostFreq:
+        ans.a..(key)
+    r.. ans

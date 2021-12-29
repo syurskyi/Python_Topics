@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta
-import re
+____ datetime _______ datetime, timedelta
+_______ re
 
 NOW = datetime(year=2019, month=2, day=6,
                hour=22, minute=0, second=0)
@@ -25,23 +25,23 @@ ___ add_todo(delay_time: str, task: str,
     days, hours, minutes, seconds = 0, 0, 0, 0
 
     #if delay_time.find(" ") > 0:
-    for unit in delay_time.split(" "):
+    ___ unit __ delay_time.split(" "):
         last_char = unit[-1]
-        __ last_char == "d":
+        __ last_char __ "d":
             days = int(unit[:-1])
-        elif last_char == "h":
+        ____ last_char __ "h":
             hours = int(unit[:-1])
-        elif last_char == "m":
+        ____ last_char __ "m":
             minutes = int(unit[:-1])
-        elif last_char == "s":
+        ____ last_char __ "s":
             seconds = int(unit[:-1])
-        elif last_char.isdigit():
+        ____ last_char.isdigit():
             seconds = int(unit)
-        else:
+        ____:
             continue
         
-    return f"{task} @ {start_time + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)}"
+    r.. f"{task} @ {start_time + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)}"
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print(add_todo("30", "test"))

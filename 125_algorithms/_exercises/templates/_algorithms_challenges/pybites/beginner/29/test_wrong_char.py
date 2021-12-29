@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from wrong_char import get_index_different_char
+____ wrong_char _______ get_index_different_char
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -8,10 +8,10 @@ from wrong_char import get_index_different_char
     (['.', '{', ' ^', '%', 'a'], 4),
     ([1, '=', 3, 4, 5, 'A', 'b', 'a', 'b', 'c'], 1),
     (['=', '=', '', '/', '/', 9, ':', ';', '?', '¡'], 5),
-    (list(range(1, 9)) + ['}'] + list('abcde'), 8),
+    (l..(r..(1, 9)) + ['}'] + l..('abcde'), 8),
     ([2, '.', ',', '!'], 0),
 ])
 ___ test_wrong_char(arg, expected):
     error = (f"get_index_different_char({arg}) should "
              f"return index {expected}")
-    assert get_index_different_char(arg) == expected, error
+    ... get_index_different_char(arg) __ expected, error

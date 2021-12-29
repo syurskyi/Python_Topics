@@ -7,28 +7,28 @@ ___ encode_single(n):
     n >>= 7
 
     while n > 0:
-        bytes.append(n & SEVENBITSMASK | EIGHTBITMASK)
+        bytes.a..(n & SEVENBITSMASK | EIGHTBITMASK)
         n >>= 7
 
-    return bytes[::-1]
+    r.. bytes[::-1]
 
 
 ___ encode(numbers):
-    return sum((encode_single(n) for n in numbers), [])
+    r.. s..((encode_single(n) ___ n __ numbers), [])
 
 
 ___ decode(bytes):
-    values = []
+    values    # list
     n = 0
 
-    for i, byte in enumerate(bytes):
+    ___ i, byte __ enumerate(bytes):
         n <<= 7
         n += (byte & SEVENBITSMASK)
 
-        __ byte & EIGHTBITMASK == 0:
-            values.append(n)
+        __ byte & EIGHTBITMASK __ 0:
+            values.a..(n)
             n = 0
-        elif i == len(bytes) - 1:
+        ____ i __ l..(bytes) - 1:
             raise ValueError('incomplete byte sequence')
 
-    return values
+    r.. values

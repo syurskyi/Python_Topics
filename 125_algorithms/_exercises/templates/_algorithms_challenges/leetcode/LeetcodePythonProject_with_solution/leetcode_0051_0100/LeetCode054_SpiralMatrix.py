@@ -10,39 +10,39 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        __ not matrix:
-            return matrix
-        m = len(matrix)
-        n = len(matrix[0])
-        result = []
+        __ n.. matrix:
+            r.. matrix
+        m = l..(matrix)
+        n = l..(matrix[0])
+        result    # list
         
         top, down, left, right = 0, m-1, 0, n-1
         
         while top <= down and left <= right:
-            __ top == down:
-                for i in range(left, right+1):
-                    result.append(matrix[top][i])
+            __ top __ down:
+                ___ i __ r..(left, right+1):
+                    result.a..(matrix[top][i])
                 break
               
-            __ left == right:
-                for i in range(top, down+1):
-                    result.append(matrix[i][left])
+            __ left __ right:
+                ___ i __ r..(top, down+1):
+                    result.a..(matrix[i][left])
                 break
                 
-            for i in range(left, right+1):
-                result.append(matrix[top][i])
+            ___ i __ r..(left, right+1):
+                result.a..(matrix[top][i])
             top += 1
-            for i in range(top, down+1):
-                result.append(matrix[i][right])
+            ___ i __ r..(top, down+1):
+                result.a..(matrix[i][right])
             right-=1
-            for i in range(right, left-1, -1):
-                result.append(matrix[down][i])
+            ___ i __ r..(right, left-1, -1):
+                result.a..(matrix[down][i])
             down-=1
-            for i in range(down, top-1, -1):
-                result.append(matrix[i][left])
+            ___ i __ r..(down, top-1, -1):
+                result.a..(matrix[i][left])
             left+=1
         
-        return result
+        r.. result
     
     ___ test(self):
         matrixes = [
@@ -71,11 +71,11 @@ class Solution(object):
             ],
         ]
         
-        for matrix in matrixes:
+        ___ matrix __ matrixes:
             print(matrix)
             result = self.spiralOrder(matrix)
             print(result)
             print('-='*15+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

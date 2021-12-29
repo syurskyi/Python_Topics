@@ -17,8 +17,8 @@ The encoded string should be as compact as possible.
 class TreeNode(object):
   ___ __init__(self, x):
       self.val = x
-      self.left = None
-      self.right = None
+      self.left = N..
+      self.right = N..
 
 
 class Codec:
@@ -41,16 +41,16 @@ class Codec:
         :rtype: str
         """
         ___ traverse(root, ret):
-            __ not root:
-                return
+            __ n.. root:
+                r..
 
-            ret.append(root.val)
+            ret.a..(root.val)
             traverse(root.left, ret)
             traverse(root.right, ret)
 
-        ret = []
+        ret    # list
         traverse(root, ret)
-        return self.DELIMITER.join(map(str, ret))
+        r.. self.DELIMITER.join(map(str, ret))
 
     ___ deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -59,28 +59,28 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        __ not data:
-            return
+        __ n.. data:
+            r..
             
-        lst = list(map(int, data.split(self.DELIMITER)))
+        lst = l..(map(int, data.split(self.DELIMITER)))
         root = TreeNode(lst[0])
         ___ insert(root, val):
             # need to keep the parent
             __ val < root.val:
-                __ not root.left:
+                __ n.. root.left:
                     root.left = TreeNode(val)
-                else:
+                ____:
                     insert(root.left, val)
-            else:
-                __ not root.right:
+            ____:
+                __ n.. root.right:
                     root.right = TreeNode(val)
-                else:
+                ____:
                     insert(root.right, val)
 
-        for a in lst[1:]:
+        ___ a __ lst[1:]:
             insert(root, a)
 
-        return root
+        r.. root
 
 
 # Your Codec object will be instantiated and called as such:

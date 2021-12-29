@@ -31,10 +31,10 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
     ___ __repr__(self):
-        return repr(self.val)
+        r.. repr(self.val)
 
 class Solution:
     ___ flatten_data_structure(self, root):
@@ -44,18 +44,18 @@ class Solution:
         :return: nothing, do it in place
         """
         # trivial
-        __ not root:
-            return
+        __ n.. root:
+            r..
 
-        lst = []
+        lst    # list
         self.dfs_traverse(root, lst)
         lst = lst[1:] # exclude root
 
-        root.left = None
+        root.left = N..
         cur = root
-        for node in lst:
-            node.left = None
-            node.right = None
+        ___ node __ lst:
+            node.left = N..
+            node.right = N..
             cur.right = node
             cur = cur.right
 
@@ -64,9 +64,9 @@ class Solution:
         """
         pre_order traverse
         """
-        __ not root:
-            return
-        lst.append(root)
+        __ n.. root:
+            r..
+        lst.a..(root)
         self.dfs_traverse(root.left, lst)
         self.dfs_traverse(root.right, lst)
 
@@ -82,8 +82,8 @@ class Solution:
         :param root:
         :return:
         """
-        __ not root:
-            return None
+        __ n.. root:
+            r.. N..
 
 
         left_last = self.get_last(root.left)
@@ -95,13 +95,13 @@ class Solution:
         # while left_last and left_last.right:
         #     left_last = left_last.right
 
-        root.left = None
+        root.left = N..
         __ left:
             root.right = left
             left_last.right = right
-        else:
+        ____:
             root.right = right
-        return root
+        r.. root
 
     ___ get_last(self, root):
         """
@@ -109,16 +109,16 @@ class Solution:
         :param root:
         :return:
         """
-        __ not root:
-            return None
-        __ not root.left and not root.right:
-            return root
+        __ n.. root:
+            r.. N..
+        __ n.. root.left and n.. root.right:
+            r.. root
         __ root.right:
-            return self.get_last(root.right)
-        else:
-            return self.get_last(root.left)
+            r.. self.get_last(root.right)
+        ____:
+            r.. self.get_last(root.left)
 
-__ __name__=="__main__":
+__ __name____"__main__":
     node1 = TreeNode(1)
     node2 = TreeNode(2)
     node1.left = node2

@@ -7,8 +7,8 @@ ___ generate_xmas_tree(rows=10):
       *****"""
    star = "*"
    max_length = rows * 2 -1
-   levels = [((row * 2 -1) * star).center(max_length) for row in range(1, rows +1)]
-   return "\n".join(levels)
+   levels = [((row * 2 -1) * star).center(max_length) ___ row __ r..(1, rows +1)]
+   r.. "\n".join(levels)
 
 
 # if __name__ == "__main__":

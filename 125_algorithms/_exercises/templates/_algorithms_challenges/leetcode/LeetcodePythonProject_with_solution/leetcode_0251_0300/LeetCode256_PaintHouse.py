@@ -10,9 +10,9 @@ class Solution(object):
         :type costs: List[List[int]]
         :rtype: int
         """
-        __ not costs: return 0
-        for i in range(1, len(costs)):
-            costs[i][0] += min(costs[i-1][1], costs[i-1][2])
-            costs[i][1] += min(costs[i-1][0], costs[i-1][2])
-            costs[i][2] += min(costs[i-1][0], costs[i-1][1])
-        return min(costs[-1])
+        __ n.. costs: r.. 0
+        ___ i __ r..(1, l..(costs)):
+            costs[i][0] += m..(costs[i-1][1], costs[i-1][2])
+            costs[i][1] += m..(costs[i-1][0], costs[i-1][2])
+            costs[i][2] += m..(costs[i-1][0], costs[i-1][1])
+        r.. m..(costs[-1])

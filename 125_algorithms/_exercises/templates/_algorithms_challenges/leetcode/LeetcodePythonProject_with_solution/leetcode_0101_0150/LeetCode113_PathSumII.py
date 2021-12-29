@@ -6,7 +6,7 @@ Created on Feb 1, 2017
 
 # Definition for a binary tree node.
 class TreeNode(object):
-    ___ __init__(self, x, left=None, right_ N..
+    ___ __init__(self, x, left=N.., right_ N..
         self.val = x
         self.left = left
         self.right = right
@@ -18,25 +18,25 @@ class Solution(object):
         :type sumVal: int
         :rtype: List[List[int]]
         """
-        result = []
-        __ not root:
-            return result
+        result    # list
+        __ n.. root:
+            r.. result
         elem = [root.val]
         self.dfs(result, elem, root, sumVal-root.val)
-        return result
+        r.. result
     
     ___ dfs(self, result, elem, root, sumVal):
-        __ not root:
-            return
-        __ sumVal == 0 and not root.left and not root.right:
-            result.append(list(elem))
-            return
+        __ n.. root:
+            r..
+        __ sumVal __ 0 and n.. root.left and n.. root.right:
+            result.a..(l..(elem))
+            r..
         __ root.left:
-            elem.append(root.left.val)
+            elem.a..(root.left.val)
             self.dfs(result, elem, root.left, sumVal-root.left.val)
             elem.pop()
         __ root.right:
-            elem.append(root.right.val)
+            elem.a..(root.right.val)
             self.dfs(result, elem, root.right, sumVal-root.right.val)
             elem.pop()
     
@@ -46,5 +46,5 @@ class Solution(object):
         result = self.pathSum(root, sumVal)
         print('result: %s' % (result))
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -12,16 +12,16 @@ class Solution(object):
         :type word2: str
         :rtype: int
         """
-        minLen = len(words)
-        for i, word in enumerate(words):
-            __ word in (word1, word2):
-                target = word1 __ word == word2 else word2
+        minLen = l..(words)
+        ___ i, word __ enumerate(words):
+            __ word __ (word1, word2):
+                target = word1 __ word __ word2 ____ word2
                 j = i+1
-                while j < len(words):
-                    __ words[j] == target:
-                        minLen = min(minLen, j-i)
+                while j < l..(words):
+                    __ words[j] __ target:
+                        minLen = m..(minLen, j-i)
                     j+=1
-        return minLen
+        r.. minLen
     
     ___ test(self):
         testCases = [
@@ -31,7 +31,7 @@ class Solution(object):
                 "b",
             )
         ]
-        for words, word1, word2 in testCases:
+        ___ words, word1, word2 __ testCases:
             print('words: %s' % words)
             print('word1: %s' % word1)
             print('word2: %s' % word2)
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

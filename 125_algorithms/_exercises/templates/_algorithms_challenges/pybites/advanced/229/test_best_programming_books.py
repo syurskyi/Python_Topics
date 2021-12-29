@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from best_programming_books import Book, display_books, load_data
+____ best_programming_books _______ Book, display_books, load_data
 
 
 @pytest.fixture(scope="session")
@@ -10,15 +10,15 @@ ___ dummy_book():
     year = 2017
     rank = 1
     rating = 5
-    return Book(title, author, year, rank, rating)
+    r.. Book(title, author, year, rank, rating)
 
 
 @pytest.fixture(scope="session")
 ___ python_books():
     data = load_data()
-    __ isinstance(data, list):
-        return data
-    return list(data)
+    __ isi..(data, l..):
+        r.. data
+    r.. l..(data)
 
 
 ___ test_book_class_incorrectly():
@@ -27,25 +27,25 @@ ___ test_book_class_incorrectly():
 
 
 ___ test_book_class(dummy_book):
-    assert dummy_book.title == "Python Testing with pytest"
-    assert dummy_book.author == "Okken, Brian"
-    assert dummy_book.year == 2017
-    assert dummy_book.rank == 1
-    assert dummy_book.rating == 5
+    ... dummy_book.title __ "Python Testing with pytest"
+    ... dummy_book.author __ "Okken, Brian"
+    ... dummy_book.year __ 2017
+    ... dummy_book.rank __ 1
+    ... dummy_book.rating __ 5
 
 
 ___ test_book_class_str(dummy_book):
     actual = str(dummy_book)
     expected = ("[001] Python Testing with pytest (2017)"
                 "\n      Okken, Brian 5.0")
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_load_data(python_books):
-    assert len(python_books) == 36
-    assert python_books[0].author == "Bader, Dan"
-    assert python_books[-1].title == "Python for Tweens and Teens"
-    assert python_books[10].rating == 4.66
+    ... l..(python_books) __ 36
+    ... python_books[0].author __ "Bader, Dan"
+    ... python_books[-1].title __ "Python for Tweens and Teens"
+    ... python_books[10].rating __ 4.66
 
 
 @pytest.mark.parametrize(
@@ -76,7 +76,7 @@ ___ test_load_data(python_books):
 ___ test_display_books(python_books, index, expected, capfd):
     display_books(python_books, year=2017)
     output = capfd.readouterr()[0].splitlines()
-    assert output[index] == expected
+    ... output[index] __ expected
 
 
 @pytest.mark.parametrize(
@@ -85,4 +85,4 @@ ___ test_display_books(python_books, index, expected, capfd):
 ___ test_display_books_plus(python_books, limit, expected, capfd):
     display_books(python_books, limit=limit)
     output = capfd.readouterr()[0].splitlines()
-    assert len(output) == expected
+    ... l..(output) __ expected

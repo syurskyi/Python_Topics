@@ -1,7 +1,7 @@
-from datetime import datetime, timedelta
-import os
-import re
-import urllib.request
+____ datetime _______ datetime, timedelta
+_______ os
+_______ re
+_______ urllib.request
 
 # getting the data
 COURSE_TIMES = os.path.join(
@@ -28,7 +28,7 @@ ___ get_all_timestamps():
     with open(COURSE_TIMES, 'r') as f:
         text = f.read()
 
-    return re.findall(r'\d*:*\d*:\d{2}', text, flags=re.MULTILINE)
+    r.. re.findall(r'\d*:*\d*:\d{2}', text, flags=re.MULTILINE)
 
 
 ___ calc_total_course_duration(timestamps):
@@ -37,7 +37,7 @@ ___ calc_total_course_duration(timestamps):
     ref = datetime(2021, 1, 1)
     cum = ref
 
-    for time in timestamps:
+    ___ time __ timestamps:
         minutes, seconds = map(int, time.split(':'))
         cum += timedelta(minutes=minutes, seconds=seconds)
 
@@ -45,4 +45,4 @@ ___ calc_total_course_duration(timestamps):
     hours, seconds = dt_sec // 3600, dt_sec % 3600
     minutes, seconds = seconds // 60, seconds % 60
 
-    return f'{hours}:{minutes}:{seconds}'
+    r.. f'{hours}:{minutes}:{seconds}'

@@ -34,8 +34,8 @@ Each string of prices prices[i] represents a real number which is between 0 and
 1000 and has exactly 3 decimal places.
 target is between 0 and 1000000.
 """
-from typing import List
-import math
+____ typing _______ List
+_______ math
 
 
 class Solution:
@@ -45,24 +45,24 @@ class Solution:
 
         floor all, sort by floor error inverse, make the adjustment
         """
-        A = list(map(float, prices))
-        f_sum = sum(map(math.floor, A))
-        c_sum = sum(map(math.ceil, A))
-        __ not f_sum <= target <= c_sum:
-            return "-1"
+        A = l..(map(float, prices))
+        f_sum = s..(map(math.floor, A))
+        c_sum = s..(map(math.ceil, A))
+        __ n.. f_sum <= target <= c_sum:
+            r.. "-1"
 
         errors = [
             e - math.floor(e)
-            for e in A
+            ___ e __ A
         ]
-        errors.sort(reverse=True)
+        errors.sort(r.._T..
         ret = 0
         remain = target - f_sum
-        for err in errors:
+        ___ err __ errors:
             __ remain > 0:
                 ret += 1 - err
                 remain -= 1
-            else:
+            ____:
                 ret += err
 
-        return f'{ret:.{3}f}'
+        r.. f'{ret:.{3}f}'

@@ -1,7 +1,7 @@
-from collections import namedtuple
-from bs4 import BeautifulSoup
-import requests
-import re
+____ collections _______ namedtuple
+____ bs4 _______ BeautifulSoup
+_______ requests
+_______ re
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -15,7 +15,7 @@ ___ _create_soup_obj(url):
     """Need utf-8 to properly parse emojis"""
     resp = requests.get(url)
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "html.parser")
+    r.. BeautifulSoup(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5):
@@ -25,21 +25,21 @@ ___ get_top_titles(url, top=5):
     """
     soup = _create_soup_obj(url)
     titles = soup.findAll('span', {'class': 'title'})
-    title_list = [entry.get_text().strip() for entry in titles]
-    point_list = []
-    comment_list = []
+    title_list = [entry.get_text().strip() ___ entry __ titles]
+    point_list    # list
+    comment_list    # list
 
-    for entry in soup.findAll('span', attrs={'class': 'smaller'}):
+    ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}):
         entry = entry.get_text().strip()
         points = re.search(r'(\d*) points', entry)
         comments = re.search(r'(\d*) comments', entry)
         __ points:
-            point_list.append(int(points.group(1)))
+            point_list.a..(int(points.group(1)))
         __ comments:
-            comment_list.append(int(comments.group(1)))
+            comment_list.a..(int(comments.group(1)))
 
-    output = []
-    for entry in zip(title_list, point_list, comment_list):
-        output.append(Entry(title=entry[0], points=entry[1], comments=entry[2]))
+    output    # list
+    ___ entry __ zip(title_list, point_list, comment_list):
+        output.a..(Entry(title=entry[0], points=entry[1], comments=entry[2]))
 
-    return sorted(output, key=lambda x: (x.points, x.comments), reverse=True)[:top]
+    r.. s..(output, key=l.... x: (x.points, x.comments), r.._T..[:top]

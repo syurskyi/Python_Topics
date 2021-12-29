@@ -29,13 +29,13 @@ class Solution:
         """
         m = {}
         mapped = set()  # case "ab", "aa"
-        for i in xrange(len(s)):
-            __ s[i] not in m and t[i] not in mapped:
+        ___ i __ xrange(l..(s)):
+            __ s[i] n.. __ m and t[i] n.. __ mapped:
                 m[s[i]] = t[i]
                 mapped.add(t[i])
-            elif s[i] in m and m[s[i]] == t[i]:
+            ____ s[i] __ m and m[s[i]] __ t[i]:
                 pass
-            else:
-                return False
+            ____:
+                r.. False
 
-        return True
+        r.. True

@@ -18,8 +18,8 @@ Examples:
 See the TESTS tab for more details
 '''
 
-import string
-from enum import Enum
+_______ string
+____ enum _______ Enum
 
 
 class State(Enum):
@@ -28,13 +28,13 @@ class State(Enum):
 
 ___ get_index_different_char(chars):
     index = 1
-    __ chars[0] in string.ascii_letters or string.digits:
+    __ chars[0] __ string.ascii_letters o. string.digits:
         state = State.ALPHANUMERIC
-    else:
+    ____:
         state = State.NON_ALPHANUMERIC
-    for c in chars[1:]:
-        __ c in (string.ascii_letters or string.digits) and state == State.ALPHANUMERIC:
+    ___ c __ chars[1:]:
+        __ c __ (string.ascii_letters o. string.digits) and state __ State.ALPHANUMERIC:
             continue
-        __ c in (string.ascii_letters or string.digits) and state == State.NON_ALPHANUMERIC:
+        __ c __ (string.ascii_letters o. string.digits) and state __ State.NON_ALPHANUMERIC:
 
 

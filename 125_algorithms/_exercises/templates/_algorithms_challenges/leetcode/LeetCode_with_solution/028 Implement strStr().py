@@ -14,12 +14,12 @@ class Solution:
         :param needle: str
         :return: str or None
         """
-        l_hay = len(haystack)
-        l_ndl = len(needle)
-        for i in xrange(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
-            __ haystack[i:i+l_ndl]==needle:
-                return haystack[i:]
-        return None
+        l_hay = l..(haystack)
+        l_ndl = l..(needle)
+        ___ i __ xrange(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
+            __ haystack[i:i+l_ndl]__needle:
+                r.. haystack[i:]
+        r.. N..
 
     ___ strStr(self, haystack, needle):
         """
@@ -30,31 +30,31 @@ class Solution:
         :param needle:
         :return:
         """
-        ln = len(needle)
-        lh = len(haystack)
-        __ ln==0:
-            return haystack
-        __ ln==1:
+        ln = l..(needle)
+        lh = l..(haystack)
+        __ ln__0:
+            r.. haystack
+        __ ln__1:
             try:
                 index = haystack.index(needle)
-                return haystack[index:]
+                r.. haystack[index:]
             except ValueError:
-                return None
+                r.. N..
 
         # construct T
-        T = [0 for _ in xrange(ln)]
+        T = [0 ___ _ __ xrange(ln)]
         T[0] = -1
         T[1] = 0
         pos = 2
         cnd = 0
         while pos<ln:
-            __ needle[pos-1]==needle[cnd]:  # pos-1 rather than pos
+            __ needle[pos-1]__needle[cnd]:  # pos-1 rather than pos
                 cnd += 1
                 T[pos] = cnd
                 pos += 1
-            elif T[cnd]!=-1:
+            ____ T[cnd]!=-1:
                 cnd = T[cnd]
-            else:
+            ____:
                 cnd = 0
                 T[pos] = cnd
                 pos += 1
@@ -63,26 +63,26 @@ class Solution:
         i = 0
         m = 0
         while m+i<lh:
-            __ needle[i]==haystack[m+i]:
+            __ needle[i]__haystack[m+i]:
                 i += 1
-                __ i==ln:
-                    return haystack[m:]
-            else:
+                __ i__ln:
+                    r.. haystack[m:]
+            ____:
                 __ T[i]!=-1:
                     m = m+i-T[i]
                     i = T[i]
-                else:
+                ____:
                     m += 1
                     i = 0
 
-        return None
+        r.. N..
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     needle = "ABCDABD"
     haystack = "ABC ABCDAB ABCDABCDABDE"
     needle = "aaa"
     haystack = "aaa"
     solution = Solution()
-    assert solution.strStr_brute_force(haystack, needle)==solution.strStr(haystack, needle)
+    ... solution.strStr_brute_force(haystack, needle)__solution.strStr(haystack, needle)
 

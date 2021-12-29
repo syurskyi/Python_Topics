@@ -46,24 +46,24 @@ ___ print_hanging_indents(poem):
     whitespace = " "
     prefix = INDENTS*whitespace
     current_line_cnt = 0
-    target_poem = []
-    for line in poem.splitlines():
+    target_poem    # list
+    ___ line __ poem.splitlines():
         # trim current line
         current_line = line.lstrip()
         # adjust counters
-        __ line == "":
+        __ line __ "":
             current_line_cnt = 0
             continue
-        else:
+        ____:
             current_line_cnt += 1
         # check the line we're dealing with
-        __ current_line_cnt == 0:
+        __ current_line_cnt __ 0:
             line_to_be_inserted = ""
-        elif current_line_cnt == 1:
+        ____ current_line_cnt __ 1:
             line_to_be_inserted = current_line
-        elif current_line_cnt > 1:
+        ____ current_line_cnt > 1:
             line_to_be_inserted = prefix + current_line
-        target_poem.append(line_to_be_inserted)
+        target_poem.a..(line_to_be_inserted)
     result = '\n'.join(target_poem)
     print(result)
 

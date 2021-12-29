@@ -7,16 +7,16 @@ target = [0, 1, 2]
 
 
 ___ solution(arr):
-    min_arr = min(arr)
-    results = [0] * len(target) # array for results with each target
-    for item in arr:
-        for i in target:
+    min_arr = m..(arr)
+    results = [0] * l..(target) # array for results with each target
+    ___ item __ arr:
+        ___ i __ target:
             gap = item - min_arr + i
             results[i] += gap // 5 + (gap%5) // 2 + (gap%5)%2
-    return min(results)
+    r.. m..(results)
 
 
-for t in range(int(input())):
+___ t __ r..(int(input())):
     input()
-    items = list(map(int, input().split()))
+    items = l..(map(int, input().split()))
     print(solution(items))

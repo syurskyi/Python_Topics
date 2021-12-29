@@ -17,13 +17,13 @@ class AutocompleteSystem(object):
         :type sentences: List[str]
         :type times: List[int]
         """
-        self.root = TreeNode(None)
+        self.root = TreeNode(N..)
         self.node = self.root
         self.s = ''
-        for s, count in zip(sentences, times):
+        ___ s, count __ zip(sentences, times):
             node = self.root
-            for c in s:
-                __ c not in node.children:
+            ___ c __ s:
+                __ c n.. __ node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
@@ -35,37 +35,37 @@ class AutocompleteSystem(object):
         :type c: str
         :rtype: List[str]
         """
-        __ c == '#':
-            res = []
+        __ c __ '#':
+            res    # list
             self.node = self.root
             self.addCandidate(self.s)
             self.s = ''
-            return res
-        else:
+            r.. res
+        ____:
             self.s += c
-            __ self.node and c in self.node.children:
+            __ self.node and c __ self.node.children:
                 node = self.node.children[c]
                 self.node = node
                 candidates = node.candidates
-                res = [(-count, s) for s, count in candidates.items()]
+                res = [(-count, s) ___ s, count __ candidates.items()]
                 res.sort()
                 res = res[:3]
-                return [s for count, s in res]
-            else:
-                self.node = None
-                return []
+                r.. [s ___ count, s __ res]
+            ____:
+                self.node = N..
+                r.. []
     
     ___ addCandidate(self, s):
         node = self.root
-        for c in s:
-            __ c not in node.children:
+        ___ c __ s:
+            __ c n.. __ node.children:
                 newNode = TreeNode(c)
                 node.children[c] = newNode
             node = node.children[c]
             node.candidates[s] = node.candidates.get(s, 0)+1
         node.isLeaf = True
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 #     autoSys = AutocompleteSystem(["i love you", "island","ironman", "i love leetcode"], [5,3,2,2])
 #     print(autoSys.input('i'))
 #     print(autoSys.input(' '))

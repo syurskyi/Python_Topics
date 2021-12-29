@@ -4,5 +4,5 @@ my_cars = {'Nissan': 2004, 'Jeep': 2013, 'Mazda': 2016, 'Toyota': 2015}
 
 # Write your for loop within this function
 ___ print_cars(my_cars):
-    for Make, Year in my_cars.items():
+    ___ Make, Year __ my_cars.items():
         print(f"{Make}: {Year}")

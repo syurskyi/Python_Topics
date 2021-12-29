@@ -4,24 +4,24 @@ class Solution:
         :type digits: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not digits:
-            return ans
+        __ n.. digits:
+            r.. ans
 
         carry = 1
 
-        for i in range(len(digits) - 1, -1, -1):
+        ___ i __ r..(l..(digits) - 1, -1, -1):
             carry += digits[i]
-            ans.append(carry % 10)
+            ans.a..(carry % 10)
             carry //= 10
 
         __ carry:
-            ans.append(carry)
+            ans.a..(carry)
 
         ans.reverse()
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -30,21 +30,21 @@ class Solution:
         :type digits: List[int]
         :rtype: List[int]
         """
-        __ not digits:
-            return []
+        __ n.. digits:
+            r.. []
 
         carry = 0
         digits[-1] += 1
 
-        for i in range(len(digits) - 1, -1, -1):
+        ___ i __ r..(l..(digits) - 1, -1, -1):
             carry += digits[i]
             digits[i] = carry % 10
             carry //= 10
 
         __ carry:
-            digits.append(carry)
+            digits.a..(carry)
 
-            for i in range(len(digits) - 1, 0, -1):
+            ___ i __ r..(l..(digits) - 1, 0, -1):
                 digits[i], digits[i - 1] = digits[i - 1], digits[i]
 
-        return digits
+        r.. digits

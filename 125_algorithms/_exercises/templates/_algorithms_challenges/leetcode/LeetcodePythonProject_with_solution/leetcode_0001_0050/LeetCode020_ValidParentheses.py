@@ -9,28 +9,28 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        stack = []
-        for c in s:
-            __ c in ['(', '{', '[']:
-                stack.append(c)
-            else:
-                __  (c == ')' and stack and stack[-1]=='(') or\
-                    (c == ']' and stack and stack[-1]=='[') or\
-                    (c == '}' and stack and stack[-1]=='{'):
+        stack    # list
+        ___ c __ s:
+            __ c __ ['(', '{', '[']:
+                stack.a..(c)
+            ____:
+                __  (c __ ')' and stack and stack[-1]__'(') o.\
+                    (c __ ']' and stack and stack[-1]__'[') o.\
+                    (c __ '}' and stack and stack[-1]__'{'):
                     stack.pop()
-                else:
-                    return False
-        return stack == []
+                ____:
+                    r.. False
+        r.. stack __ []
     
     ___ test(self):
         testCases = [
             '(){}[]',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.isValid(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

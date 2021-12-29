@@ -33,8 +33,8 @@ class Solution(object):
         :type b: List[int]
         :rtype: int
         """
-        __ not b:
-            return 1
+        __ n.. b:
+            r.. 1
         s = 1
         lsd = b.pop()  # list significant digit
         s *= (a % C) ** lsd
@@ -42,9 +42,9 @@ class Solution(object):
         rest = self.superPow(a, b)
         s *= rest ** 10
         s %= C
-        return s
+        r.. s
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().superPow(2, [1, 0])
 
 

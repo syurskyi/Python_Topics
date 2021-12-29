@@ -22,28 +22,28 @@ class Solution(object):
         :type triangle: List[List[int]]
         :rtype: int
         """
-        n = len(triangle)
+        n = l..(triangle)
         m = 0
-        res = None
-        for i, row in enumerate(triangle):
-            m = len(row)
+        res = N..
+        ___ i, row __ enumerate(triangle):
+            m = l..(row)
             __ i > 0:
-                for j, col in enumerate(row):
+                ___ j, col __ enumerate(row):
                     __ 0 < j < m - 1:
-                        triangle[i][j] += min(triangle[i - 1][j - 1],
+                        triangle[i][j] += m..(triangle[i - 1][j - 1],
                                               triangle[i - 1][j])
-                    elif j == 0:
+                    ____ j __ 0:
                         triangle[i][j] += triangle[i - 1][j]
                     # j == m - 1
-                    else:
+                    ____:
                         triangle[i][j] += triangle[i - 1][j - 1]
-            __ i == n - 1:
-                for col in row:
-                    __ res is None:
+            __ i __ n - 1:
+                ___ col __ row:
+                    __ res __ N..
                         res = col
-                    else:
-                        res = min(col, res)
-        return res
+                    ____:
+                        res = m..(col, res)
+        r.. res
 
 
 a1 = [

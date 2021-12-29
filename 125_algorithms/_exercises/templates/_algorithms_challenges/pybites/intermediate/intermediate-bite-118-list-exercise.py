@@ -1,4 +1,4 @@
-from collections import namedtuple
+____ collections _______ namedtuple
 
 """
 First idea was to go through the list and build a dictionary holding:
@@ -87,19 +87,19 @@ ___ get_duplicate_indices(words):
     index = 0
     # Tuples are immutable!!!
     # MyPair = namedtuple('MyPair', 'index count')
-    result = []
-    for word in words:
+    result    # list
+    ___ word __ words:
         try:
             mp = stats[word]
             mp['count'] += 1
         except KeyError:
-            mp = dict()
+            mp = d..()
             mp['index'] = index
             mp['count'] = 1
             stats[word] = mp
         index += 1
     print(stats)
-    for k, v in stats.values():
+    ___ k, v __ stats.values():
         print(k)
         print(v)
 
@@ -108,7 +108,7 @@ ___ get_duplicate_indices(words):
 #            result.append(v['index'])
 
     print(result)
-    return(result)
+    r..(result)
 
 
 print(get_duplicate_indices(['is', 'it', 'true', 'or', 'is', 'it', 'not?']))

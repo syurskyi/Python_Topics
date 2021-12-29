@@ -6,21 +6,21 @@ class Solution(object):
     :rtype: str
     """
     carry = 0
-    i = len(num1) - 1
-    j = len(num2) - 1
+    i = l..(num1) - 1
+    j = l..(num2) - 1
     ans = ""
-    for k in reversed(range(0, max(len(num1), len(num2)))):
-      a = int(num1[i]) __ i >= 0 else 0
-      b = int(num2[j]) __ j >= 0 else 0
+    ___ k __ reversed(r..(0, max(l..(num1), l..(num2)))):
+      a = int(num1[i]) __ i >= 0 ____ 0
+      b = int(num2[j]) __ j >= 0 ____ 0
       i, j = i - 1, j - 1
       c = carry
       carry = 0
-      sum = a + b + c
-      __ sum >= 10:
+      s.. = a + b + c
+      __ s.. >= 10:
         carry = 1
-        ans += str(sum - 10)
-      else:
-        ans += str(sum)
-    __ carry == 1:
+        ans += str(s.. - 10)
+      ____:
+        ans += str(s..)
+    __ carry __ 1:
       ans += "1"
-    return ans[::-1]
+    r.. ans[::-1]

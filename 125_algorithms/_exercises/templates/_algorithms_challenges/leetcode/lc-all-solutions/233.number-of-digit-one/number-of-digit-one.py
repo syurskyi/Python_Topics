@@ -10,9 +10,9 @@ class Solution(object):
       r = (n / m) % 10
       __ r > 1:
         ones += m
-      elif r == 1:
+      ____ r __ 1:
         ones += n % m + 1
 
       ones += (n / (m * 10)) * m
       m *= 10
-    return ones
+    r.. ones

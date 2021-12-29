@@ -45,10 +45,10 @@ class Solution:
             s += k
 
         delta = s - target
-        __ delta % 2 == 0:
-            return k
-        else:  # delta is odd
-            __ (k + 1) % 2 == 1:
-                return k + 1
-            else:
-                return k + 2
+        __ delta % 2 __ 0:
+            r.. k
+        ____:  # delta is odd
+            __ (k + 1) % 2 __ 1:
+                r.. k + 1
+            ____:
+                r.. k + 2

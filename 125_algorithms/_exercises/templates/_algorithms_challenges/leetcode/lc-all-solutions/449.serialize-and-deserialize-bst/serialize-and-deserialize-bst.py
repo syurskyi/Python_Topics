@@ -13,18 +13,18 @@ class Codec:
     :rtype: str
     """
     stack = [(1, root)]
-    ans = []
+    ans    # list
     while stack:
       pc, node = stack.pop()
-      __ not node:
+      __ n.. node:
         continue
-      __ pc == 0:
-        ans.append(str(node.val))
-      else:
-        stack.append((1, node.right))
-        stack.append((1, node.left))
-        stack.append((0, node))
-    return ",".join(ans)
+      __ pc __ 0:
+        ans.a..(str(node.val))
+      ____:
+        stack.a..((1, node.right))
+        stack.a..((1, node.left))
+        stack.a..((0, node))
+    r.. ",".join(ans)
 
   ___ deserialize(self, data):
     """Decodes your encoded data to tree.
@@ -32,14 +32,14 @@ class Codec:
     :type data: str
     :rtype: TreeNode
     """
-    __ not data:
-      return None
+    __ n.. data:
+      r.. N..
     vals = data.split(",")
     preOrder = map(int, vals)
-    inOrder = sorted(preOrder)
+    inOrder = s..(preOrder)
     self.preIdx = 0
     d = {}
-    for i in range(0, len(inOrder)):
+    ___ i __ r..(0, l..(inOrder)):
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d):
@@ -50,9 +50,9 @@ class Codec:
         midPos = d[rootVal]
         root.left = helper(preOrder, start, midPos - 1, inOrder, d)
         root.right = helper(preOrder, midPos + 1, end, inOrder, d)
-        return root
+        r.. root
 
-    return helper(preOrder, 0, len(inOrder) - 1, inOrder, d)
+    r.. helper(preOrder, 0, l..(inOrder) - 1, inOrder, d)
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

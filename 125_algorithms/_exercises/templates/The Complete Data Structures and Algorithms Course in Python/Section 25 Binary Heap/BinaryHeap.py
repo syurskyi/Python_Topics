@@ -27,7 +27,7 @@ ___ levelOrderTraversal(rootNode
             print(rootNode.customList[i])
 
 ___ heapifyTreeInsert(rootNode, index, heapType
-    parentIndex  in.(index/2)
+    parentIndex  __.(index/2)
     __ index < 1:
         r_
     __ heapType __ "Min":

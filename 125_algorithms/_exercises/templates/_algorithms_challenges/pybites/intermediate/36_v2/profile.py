@@ -6,7 +6,7 @@ ___ get_profile(name,age,*args,**kwargs):
 
 
 
-    __ len(args) > 5:
+    __ l..(args) > 5:
         raise ValueError("at most 5 sports")
 
     
@@ -14,13 +14,13 @@ ___ get_profile(name,age,*args,**kwargs):
     result =  {'name': name,'age': age}
 
     __ args:
-        result['sports'] = sorted(args)
+        result['sports'] = s..(args)
 
 
     __ kwargs:
         result['awards'] = kwargs
 
-    return result            
+    r.. result
 
 
 

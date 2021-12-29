@@ -27,5 +27,5 @@ class Solution:
             m >>= 1
             n >>= 1
 
-        return n << pos  # or m << pos
+        r.. n << pos  # or m << pos
 

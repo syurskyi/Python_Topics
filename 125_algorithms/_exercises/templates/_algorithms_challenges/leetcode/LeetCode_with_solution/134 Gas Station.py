@@ -39,26 +39,26 @@ class Solution:
         :param cost: a list of integers, cost[i] from i to i+1
         :return: an integer
         """
-        length = len(gas)
+        length = l..(gas)
 
         # gas difference
-        diff = [gas[i]-cost[i] for i in xrange(length)]
+        diff = [gas[i]-cost[i] ___ i __ xrange(length)]
 
         # find whether can cover one cycle
         # starting from arbitrary point
-        __ sum(diff)<0:
-            return -1
+        __ s..(diff)<0:
+            r.. -1
 
         # find the starting index
         start_index = 0
         sum_before = 0
-        for ind, val in enumerate(diff):  # O(N), rather than brutal force O(N^2)
+        ___ ind, val __ enumerate(diff):  # O(N), rather than brutal force O(N^2)
             sum_before += val
             __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
                 start_index = ind+1
                 sum_before = 0
 
-        return start_index
+        r.. start_index
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().canCompleteCircuit([5], [4])

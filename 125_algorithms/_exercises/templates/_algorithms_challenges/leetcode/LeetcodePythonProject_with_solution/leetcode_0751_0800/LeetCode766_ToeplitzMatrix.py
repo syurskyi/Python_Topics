@@ -9,22 +9,22 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: bool
         """
-        m, n = len(matrix), len(matrix[0])
-        for i in range(m-1, 0, -1):
+        m, n = l..(matrix), l..(matrix[0])
+        ___ i __ r..(m-1, 0, -1):
             val = matrix[i][0]
-            for k in range(1, n):
-                __ i+k >= m or k >= n:
+            ___ k __ r..(1, n):
+                __ i+k >= m o. k >= n:
                     break
                 __ matrix[i+k][k] != val:
-                    return False
-        for j in range(n):
+                    r.. False
+        ___ j __ r..(n):
             val = matrix[0][j]
-            for k in range(1, m):
-                __ j+k >= n or k >= m:
+            ___ k __ r..(1, m):
+                __ j+k >= n o. k >= m:
                     break
                 __ matrix[k][j+k] != val:
-                    return False
-        return True
+                    r.. False
+        r.. True
     
     ___ test(self):
         testCases = [
@@ -38,10 +38,10 @@ class Solution(object):
                 [2,2]
             ],
         ]
-        for matrix in testCases:
+        ___ matrix __ testCases:
             result = self.isToeplitzMatrix(matrix)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

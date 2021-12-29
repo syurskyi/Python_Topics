@@ -44,15 +44,15 @@ class Solution:
         Iterate the string reversely. When encountering "#", count, and skip
         the chars based on skip count.
         """
-        return self.make_stk(S) == self.make_stk(T)
+        r.. self.make_stk(S) __ self.make_stk(T)
 
     ___ make_stk(self, S):
-        stk = []
-        for s in S:
-            __ s == "#":
+        stk    # list
+        ___ s __ S:
+            __ s __ "#":
                 __ stk:
                     stk.pop()
-            else:
-                stk.append(s)
+            ____:
+                stk.a..(s)
 
-        return stk
+        r.. stk

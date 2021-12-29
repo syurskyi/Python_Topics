@@ -17,7 +17,7 @@ class HitCounter(object):
     time, hit = self.q[idx]
     __ time != timestamp:
       self.q[idx] = timestamp, 1
-    else:
+    ____:
       self.q[idx] = time, hit + 1
 
   ___ getHits(self, timestamp):
@@ -28,11 +28,11 @@ class HitCounter(object):
     :rtype: int
     """
     ans = 0
-    for i in range(0, len(self.q)):
+    ___ i __ r..(0, l..(self.q)):
       time, hit = self.q[i]
       __ timestamp - time < 300:
         ans += hit
-    return ans
+    r.. ans
 
 # Your HitCounter object will be instantiated and called as such:
 # obj = HitCounter()

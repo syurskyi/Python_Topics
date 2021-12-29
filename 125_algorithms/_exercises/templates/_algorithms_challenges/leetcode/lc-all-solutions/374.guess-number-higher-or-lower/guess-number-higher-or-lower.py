@@ -13,10 +13,10 @@ class Solution(object):
     while l < r:
       m = l + (r - l) / 2
       g = guess(m)
-      __ g == -1:
+      __ g __ -1:
         r = m - 1
-      elif g == 1:
+      ____ g __ 1:
         l = m + 1
-      else:
-        return m
-    return l
+      ____:
+        r.. m
+    r.. l

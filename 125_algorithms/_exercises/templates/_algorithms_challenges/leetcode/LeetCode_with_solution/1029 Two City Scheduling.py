@@ -39,18 +39,18 @@ class Solution:
 
         a - b: incremental cost of flying A instead of B
         """
-        A = [(a - b, a, b) for a, b in costs]
+        A = [(a - b, a, b) ___ a, b __ costs]
         A.sort()
         ret = 0
-        remain = len(A) // 2
-        for _, a, b in A:
+        remain = l..(A) // 2
+        ___ _, a, b __ A:
             __ remain > 0:
                 ret += a
                 remain -= 1
-            else:
+            ____:
                 ret += b
 
-        return ret
+        r.. ret
 
     ___ twoCitySchedCost_error(self, costs: List[List[int]]) -> int:
         """
@@ -60,17 +60,17 @@ class Solution:
 
         Error in the abs of difference
         """
-        A = [(abs(a - b), a, b) for a, b in costs]
-        A.sort(reverse=True)
+        A = [(abs(a - b), a, b) ___ a, b __ costs]
+        A.sort(r.._T..
         ret = 0
-        remain = len(A) // 2
-        for _, a, b in A:
+        remain = l..(A) // 2
+        ___ _, a, b __ A:
             __ a > b:
                 ret += b
-            elif remain > 0:
+            ____ remain > 0:
                 ret += a
                 remain -= 1
-            else:
+            ____:
                 ret += b
 
-        return ret
+        r.. ret

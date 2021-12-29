@@ -1,14 +1,14 @@
-import csv
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
-import pandas as pd
+_______ csv
+_______ os
+____ pathlib _______ Path
+____ urllib.request _______ urlretrieve
+_______ pandas as pd
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 tmp = Path(os.getenv("TMP", "/tmp"))
 stats = tmp / 'bites.csv'
 
-__ not stats.exists():
+__ n.. stats.exists():
     urlretrieve(data, stats)
 
 
@@ -23,7 +23,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
     bites.Difficulty = pd.to_numeric(bites.Difficulty,errors='coerce')
 
 
-    return list(bites.nlargest(N,'Difficulty')['Bite'].str.extract(r'(\d+)',expand=False))
+    r.. l..(bites.nlargest(N,'Difficulty')['Bite'].str.extract(r'(\d+)',expand=False))
 
 
 
@@ -31,6 +31,6 @@ ___ get_most_complex_bites(N=10, stats=stats):
 
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     res = get_most_complex_bites()
     print(res)

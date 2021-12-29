@@ -5,24 +5,24 @@ class Solution:
     @return: whether s2 is a scrambled string of s1
     """
     ___ isScramble(self, s1, s2):
-        __ not s1 or not s2 or len(s1) != len(s2):
-            return False
+        __ n.. s1 o. n.. s2 o. l..(s1) != l..(s2):
+            r.. False
 
-        n = len(s1)
+        n = l..(s1)
 
         """
         `dp[i][j][k]` means the substring in `s1` (start: `i`, len: `k`)
         could be transformed into the substring in `s2` (start: `j`, len: `k`)
         """
-        dp = [[[False] * (n + 1) for _ in range(n)] for _ in range(n)]
+        dp = [[[False] * (n + 1) ___ _ __ r..(n)] ___ _ __ r..(n)]
 
-        for i in range(n):
-            for j in range(n):
-                dp[i][j][1] = (s1[i] == s2[j])
+        ___ i __ r..(n):
+            ___ j __ r..(n):
+                dp[i][j][1] = (s1[i] __ s2[j])
 
-        for k in range(2, n + 1):
+        ___ k __ r..(2, n + 1):
 
-            for i in range(n):
+            ___ i __ r..(n):
                 """
                 allow: i < n - k + 1 => i <= n - k
                 disallow: i > n - k
@@ -30,11 +30,11 @@ class Solution:
                 __ i + k > n:
                     continue
 
-                for j in range(n):
+                ___ j __ r..(n):
                     __ j + k > n:
                         continue
 
-                    for l in range(1, k):
+                    ___ l __ r..(1, k):
                         """
                         If its already calculated and possible to transform
                         """
@@ -74,4 +74,4 @@ class Solution:
                         __ dp[i][j + k - l][l] and dp[i + l][j][k - l]:
                             dp[i][j][k] = True
 
-        return dp[0][0][n]
+        r.. dp[0][0][n]

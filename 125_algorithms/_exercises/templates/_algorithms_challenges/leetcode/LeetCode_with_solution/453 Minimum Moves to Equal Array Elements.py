@@ -16,9 +16,9 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        mini = min(nums)
-        return sum(map(lambda e: e - mini, nums))
+        mini = m..(nums)
+        r.. s..(map(l.... e: e - mini, nums))
 
 
-__ __name__ == "__main__":
-    assert Solution().minMoves([1, 2, 3]) == 3
+__ __name__ __ "__main__":
+    ... Solution().minMoves([1, 2, 3]) __ 3

@@ -12,12 +12,12 @@ ___ last_digit(n1, n2):
             0 : [0]
     }
     n1 %= 10
-    __ n2 == 0:
-        return 1
-    elif n1 in (1,5,6,0):
-        return n1
-    else:
-        return res[n1][n2%len(res[n1]) - 1]
+    __ n2 __ 0:
+        r.. 1
+    ____ n1 __ (1,5,6,0):
+        r.. n1
+    ____:
+        r.. res[n1][n2%l..(res[n1]) - 1]
 
-for i in range(0,5):
+___ i __ r..(0,5):
     print(last_digit(34,i))    

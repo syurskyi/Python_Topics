@@ -1,5 +1,5 @@
-import string
-from collections import deque
+_______ string
+____ collections _______ deque
 
 
 class Solution(object):
@@ -12,24 +12,24 @@ class Solution(object):
     """
 
     ___ getNbrs(src, dest, wordList):
-      res = []
-      for c in string.ascii_lowercase:
-        for i in range(0, len(src)):
+      res    # list
+      ___ c __ string.ascii_lowercase:
+        ___ i __ r..(0, l..(src)):
           newWord = src[:i] + c + src[i + 1:]
-          __ newWord == src:
+          __ newWord __ src:
             continue
-          __ newWord in wordList or newWord == dest:
+          __ newWord __ wordList o. newWord __ dest:
             yield newWord
 
     queue = deque([beginWord])
     length = 0
     while queue:
       length += 1
-      for k in range(0, len(queue)):
+      ___ k __ r..(0, l..(queue)):
         top = queue.popleft()
-        for nbr in getNbrs(top, endWord, wordList):
+        ___ nbr __ getNbrs(top, endWord, wordList):
           wordList.remove(nbr)
-          __ nbr == endWord:
-            return length + 1
-          queue.append(nbr)
-    return 0
+          __ nbr __ endWord:
+            r.. length + 1
+          queue.a..(nbr)
+    r.. 0

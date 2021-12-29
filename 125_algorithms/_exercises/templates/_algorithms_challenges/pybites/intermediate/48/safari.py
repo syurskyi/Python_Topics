@@ -1,5 +1,5 @@
-import os
-import urllib.request
+_______ os
+_______ urllib.request
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
@@ -17,37 +17,37 @@ ___ create_chart():
 
     with open(SAFARI_LOGS) as file:
         safari_logs = file.readlines()
-        for i in range(len(safari_logs)):
+        ___ i __ r..(l..(safari_logs)):
             previous = safari_logs[i -1]
             current = safari_logs[i]
-            __ "sending to slack channel" in current:
-                __ current[:5] not in slack_frequency:
+            __ "sending to slack channel" __ current:
+                __ current[:5] n.. __ slack_frequency:
                     slack_frequency[current[:5]] = [1]
-                    __ 'Python' in previous:
-                        slack_frequency[current[:5]].append(slack_frequency[current[:5]][0]) 
-                else:
+                    __ 'Python' __ previous:
+                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
+                ____:
                     slack_frequency[current[:5]][0] += 1
-                    __ 'Python' in previous:
-                        slack_frequency[current[:5]].append(slack_frequency[current[:5]][0])
+                    __ 'Python' __ previous:
+                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
 
-    for key, value in slack_frequency.items():
+    ___ key, value __ slack_frequency.items():
 
         bar = ""
-        __ len(value) == 1:
-            for i in range(1, value[0] +1):
+        __ l..(value) __ 1:
+            ___ i __ r..(1, value[0] +1):
                 bar += "."
             print(key, bar)
-        else:
+        ____:
             j = 1
-            for i in range(1, value[0] +1):
-                snake_num = len(value) -1
+            ___ i __ r..(1, value[0] +1):
+                snake_num = l..(value) -1
                 __ j <= snake_num:
                     snake_value_at_i = value[j]
 
-                __ i == snake_value_at_i:
+                __ i __ snake_value_at_i:
                     bar += "🐍"
                     j += 1
-                else:
+                ____:
                     bar += "."
         
             print(key, bar)

@@ -1,15 +1,15 @@
-import pytest
+_______ pytest
 
-from Previous.validate import int_args
+____ Previous.validate _______ int_args
 
 
 @int_args
 ___ sum_numbers(*numbers):
-    return sum(numbers)
+    r.. s..(numbers)
 
 
 ___ test_valid_args():
-    assert sum_numbers(1, 2, 3) == 6
+    ... sum_numbers(1, 2, 3) __ 6
 
 
 ___ test_invalid_type_str():

@@ -1,4 +1,4 @@
-import string
+_______ string
 
 
 class Solution(object):
@@ -9,13 +9,13 @@ class Solution(object):
     """
     ud = set(string.uppercase)
     ld = set(string.lowercase)
-    n = len(word)
+    n = l..(word)
     cap = 0
-    for c in word:
-      __ c in ud:
+    ___ c __ word:
+      __ c __ ud:
         cap += 1
-    __ cap == n:
-      return True
-    __ cap == 1 and word[0] in ud:
-      return True
-    return False __ cap > 0 else True
+    __ cap __ n:
+      r.. True
+    __ cap __ 1 and word[0] __ ud:
+      r.. True
+    r.. False __ cap > 0 ____ True

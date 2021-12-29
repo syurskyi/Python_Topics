@@ -4,33 +4,33 @@ Created on Sep 7, 2017
 @author: MT
 '''
 class Solution(object):
-    ___ addBoldTag(self, s, dict):
+    ___ addBoldTag(self, s, d..):
         """
         :type s: str
         :type dict: List[str]
         :rtype: str
         """
-        dict.sort(key=len, reverse=True)
-        n = len(s)
+        d...sort(key=l.., r.._T..
+        n = l..(s)
         res = ''
         maxLen = -1
         started = False
-        for i in range(n):
-            for word in dict:
-                __ i+len(word) <= n and s[i:i+len(word)] == word:
-                    maxLen = max(maxLen, i+len(word))
+        ___ i __ r..(n):
+            ___ word __ d..:
+                __ i+l..(word) <= n and s[i:i+l..(word)] __ word:
+                    maxLen = max(maxLen, i+l..(word))
                     break
-            __ maxLen > i and not started:
+            __ maxLen > i and n.. started:
                 res += '<b>'+s[i]
                 started = True
-            elif maxLen == i:
+            ____ maxLen __ i:
                 res += '</b>'+s[i]
                 started = False
-            else:
+            ____:
                 res += s[i]
-        __ maxLen == len(s):
+        __ maxLen __ l..(s):
             res += '</b>'
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -47,12 +47,12 @@ class Solution(object):
                 [],
             ],
         ]
-        for s, d in testCases:
+        ___ s, d __ testCases:
             print('s: %s' % s)
             print('d: %s' % d)
             result = self.addBoldTag(s, d)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

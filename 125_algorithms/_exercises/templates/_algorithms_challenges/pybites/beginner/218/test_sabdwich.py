@@ -1,4 +1,4 @@
-from sandwich import sandwich
+____ sandwich _______ sandwich
 
 SANDWICH_BACON = """=== Upper bread slice ===
 bacon / lettuce / tomato
@@ -19,11 +19,11 @@ ___ test_bacon_sandwich(capfd):
     ingredients = ['bacon', 'lettuce', 'tomato']
     add_ingredients(ingredients)
     actual = capfd.readouterr()[0]
-    assert actual == SANDWICH_BACON
+    ... actual __ SANDWICH_BACON
 
 
 ___ test_fried_egg_sandwich(capfd):
     ingredients = ['fried egg', 'tomato', 'cucumber']
     add_ingredients(ingredients)
     actual = capfd.readouterr()[0]
-    assert actual == SANDWICH_EGG
+    ... actual __ SANDWICH_EGG

@@ -17,12 +17,12 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
+        n = l..(s)
         i = n - 1
         while i >= 0 and s[i].isspace():
             i -= 1
         res = 0
-        while i >= 0 and not s[i].isspace():
+        while i >= 0 and n.. s[i].isspace():
             res += 1
             i -= 1
-        return res
+        r.. res

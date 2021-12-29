@@ -1,13 +1,13 @@
-from datetime import datetime
+____ datetime _______ datetime
 
-import pytest
+_______ pytest
 
-from dates import _get_dates, convert_to_datetime, get_month_most_posts
+____ dates _______ _get_dates, convert_to_datetime, get_month_most_posts
 
 
 @pytest.fixture(scope="module")
 ___ dates():
-    return _get_dates()
+    r.. _get_dates()
 
 
 @pytest.mark.parametrize("date_str, expected", [
@@ -20,18 +20,18 @@ ___ dates():
 ___ test_convert_to_datetime(date_str, expected):
     dt = convert_to_datetime(date_str)
     # support tz aware datetimes
-    assert dt.replace(tzinfo=None) == expected.replace(tzinfo=None)
+    ... dt.replace(tzinfo=N..) __ expected.replace(tzinfo=N..)
 
 
 ___ test_get_month_most_posts(dates):
-    converted_dates = [convert_to_datetime(d) for d in dates]
-    assert get_month_most_posts(converted_dates) == '2017-01'
+    converted_dates = [convert_to_datetime(d) ___ d __ dates]
+    ... get_month_most_posts(converted_dates) __ '2017-01'
 
 
 ___ test_get_month_most_posts_more_in_2018(dates):
     # make Jan 2018 > Jan 2017
-    for _ in range(25):
-        dates.append('Sun, 07 Jan 2018 12:00:00 +0100')
+    ___ _ __ r..(25):
+        dates.a..('Sun, 07 Jan 2018 12:00:00 +0100')
 
-    converted_dates = [convert_to_datetime(d) for d in dates]
-    assert get_month_most_posts(converted_dates) == '2018-01'
+    converted_dates = [convert_to_datetime(d) ___ d __ dates]
+    ... get_month_most_posts(converted_dates) __ '2018-01'

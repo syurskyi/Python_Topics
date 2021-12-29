@@ -1,13 +1,13 @@
 ___ fibDiv(tests):
-    numbers = raw_input().split()
-    answer = []
+    numbers = raw_input().s.. 
+    answer    # list
     
-    for test in range(tests):
+    ___ test __ r..(tests):
         a,b,c = 0,1,0
-        for count in range(int(max(numbers))):
+        ___ count __ r..(int(max(numbers))):
             c = a + b
-            __ c % int(numbers[test]) == 0:
-                answer.append(str(count+2))
+            __ c % int(numbers[test]) __ 0:
+                answer.a..(str(count+2))
                 break
             a = b
             b = c

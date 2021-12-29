@@ -12,7 +12,7 @@ __author__ = 'Danyang'
 class ListNode:
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 class Solution:
     ___ swapPairs(self, head):
@@ -38,4 +38,4 @@ class Solution:
 
             pre = pre.next.next
 
-        return dummy.next
+        r.. dummy.next

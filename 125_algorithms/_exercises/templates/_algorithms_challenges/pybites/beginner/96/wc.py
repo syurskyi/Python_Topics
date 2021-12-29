@@ -6,14 +6,14 @@ ___ wc(file_):
     #filepath = tmp_path / file_
     file = open(file_)
     lines = file.read()
-    return str(len(lines.splitlines()))+"\t"+str(len(lines.replace("\n", " ").split()))+"\t"+str(len(lines.replace("\n", " ")))+"\t"+str(file_)
+    r.. str(l..(lines.splitlines()))+"\t"+str(l..(lines.replace("\n", " ").split()))+"\t"+str(l..(lines.replace("\n", " ")))+"\t"+str(file_)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # make it work from cli like original unix wc
-    import sys
+    _______ sys
     output = wc(sys.argv[1])
-    counts = ' '.join(output.split()[:3])
+    counts = ' '.join(output.s.. [:3])
     print(counts)
-    __ sys.argv[1] in output:
+    __ sys.argv[1] __ output:
         print("yes")

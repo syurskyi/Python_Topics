@@ -6,14 +6,14 @@ class Solution(object):
     :type preorder: List[int]
     :rtype: bool
     """
-    __ len(preorder) <= 1:
-      return True
-    stack, lastElem = [preorder[0]], None
-    for i in range(1, len(preorder)):
+    __ l..(preorder) <= 1:
+      r.. True
+    stack, lastElem = [preorder[0]], N..
+    ___ i __ r..(1, l..(preorder)):
       __ lastElem > preorder[i]:
-        return False
-      while len(stack) > 0 and preorder[i] > stack[-1]:
+        r.. False
+      while l..(stack) > 0 and preorder[i] > stack[-1]:
         lastElem = stack.pop()
-      stack.append(preorder[i])
+      stack.a..(preorder[i])
 
-    return True
+    r.. True

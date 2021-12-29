@@ -28,4 +28,4 @@ class Solution(object):
     while p:
       p.next = p = copy.next
       copy.next = copy = p and p.next
-    return chead
+    r.. chead

@@ -22,17 +22,17 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        __ num == 1: return True
+        __ num __ 1: r.. True
         lo = 1
         hi = num/2 + 1
         while lo < hi:
             mid = (lo + hi) / 2
             midsq = mid**2
-            __ midsq == num:
-                return True
-            elif midsq < num:
+            __ midsq __ num:
+                r.. True
+            ____ midsq < num:
                 lo = mid + 1
-            else:
+            ____:
                 hi = mid
 
-        return False
+        r.. False

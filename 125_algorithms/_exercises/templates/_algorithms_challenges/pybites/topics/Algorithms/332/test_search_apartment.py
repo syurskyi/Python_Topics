@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from search_apartment import search_apartment
+____ search_apartment _______ search_apartment
 
 
 @pytest.mark.parametrize(
@@ -21,4 +21,4 @@ from search_apartment import search_apartment
     ],
 )
 ___ test_search_apartment(buildings, direction, expected):
-    assert search_apartment(buildings, direction) == expected
+    ... search_apartment(buildings, direction) __ expected

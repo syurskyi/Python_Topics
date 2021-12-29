@@ -20,13 +20,13 @@ c_ Graph:
         edgeNum0
         visited[0]T..
         w__ edgeNum<vertexNum-1:
-            min  sys.maxsize
+            m..  sys.maxsize
             ___ i __ ra__(vertexNum
                 __ visited[i]:
                     ___ j __ ra__(vertexNum
                         __ ((no. visited[j]) a__ edges[i][j]
-                            __ min > edges[i][j]:
-                                min  edges[i][j]
+                            __ m.. > edges[i][j]:
+                                m..  edges[i][j]
                                 s  i
                                 d  j
             MST.ap..([nodes[s], nodes[d], edges[s][d]])

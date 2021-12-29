@@ -1,6 +1,6 @@
-from threading import Thread
-from Queue import Queue
-from urlparse import urlparse
+____ threading _______ Thread
+____ Queue _______ Queue
+____ urlparse _______ urlparse
 
 queue = Queue()
 results = {}
@@ -10,11 +10,11 @@ class CrawlerThread(Thread):
         global queue, results
         while True:
             url = queue.get()
-            __ url not in results \
+            __ url n.. __ results \
                 and urlparse(url).hostname.endswith("wikipedia.org"):
                 results[url] = True
                 urls = HtmlHelper.parseUrls(url)
-                for url in urls:
+                ___ url __ urls:
                     queue.put(url)
             queue.task_done()
 
@@ -29,16 +29,16 @@ class Solution:
     ___ crawler(self, url):
         # Write your code here
         global queue, results
-        thread_pools = []
-        for i in xrange(10):
-            thread_pools.append(CrawlerThread())
+        thread_pools    # list
+        ___ i __ xrange(10):
+            thread_pools.a..(CrawlerThread())
             thread_pools[i].setDaemon(True)
             thread_pools[i].start()
 
         queue.put(url)
 
         queue.join()
-        rt = []
-        for key, value in results.items():
-            rt.append(key)
-        return rt
+        rt    # list
+        ___ key, value __ results.items():
+            rt.a..(key)
+        r.. rt

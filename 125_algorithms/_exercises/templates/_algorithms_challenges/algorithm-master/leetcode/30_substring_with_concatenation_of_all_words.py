@@ -5,23 +5,23 @@ class Solution:
         :type S: List[str]
         :rtype: List[int]
         """
-        ans = []
-        __ not s or not S or len(s) < len(S) * len(S[0]):
-            return ans
+        ans    # list
+        __ n.. s o. n.. S o. l..(s) < l..(S) * l..(S[0]):
+            r.. ans
 
-        n, m, k = len(s), len(S), len(S[0])
+        n, m, k = l..(s), l..(S), l..(S[0])
         F = {}
-        for c in S:
+        ___ c __ S:
             F[c] = F.get(c, 0) + 1
 
-        for start in range(k):
+        ___ start __ r..(k):
             _F = {}
             cnt = 0
             left = start
 
-            for right in range(start, n - k + 1, k):
+            ___ right __ r..(start, n - k + 1, k):
                 sr = s[right:right + k]
-                __ sr not in F:
+                __ sr n.. __ F:
                     _F = {}
                     cnt = 0
                     left = right + k
@@ -32,16 +32,16 @@ class Solution:
                     cnt += 1
                 while _F[sr] > F[sr]:
                     sl = s[left:left + k]
-                    __ _F[sl] == F[sl]:
+                    __ _F[sl] __ F[sl]:
                         cnt -= 1
                     _F[sl] -= 1
                     left += k
 
-                __ cnt == m:
-                    ans.append(left)
+                __ cnt __ m:
+                    ans.a..(left)
                     sl = s[left:left + k]
                     cnt -= 1
                     _F[sl] -= 1
                     left += k
 
-        return ans
+        r.. ans

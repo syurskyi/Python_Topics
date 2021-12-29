@@ -9,20 +9,20 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        arr = list(str(num))
+        arr = l..(str(num))
         hashmap = {}
-        for i, c in enumerate(arr):
+        ___ i, c __ enumerate(arr):
             hashmap[c] = i
         flag = False
-        for i, c in enumerate(arr):
-            for c0 in '9876543210':
+        ___ i, c __ enumerate(arr):
+            ___ c0 __ '9876543210':
                 __ c0 > c and hashmap.get(c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = True
                     break
             __ flag:
                 break
-        return int(''.join(arr))
+        r.. int(''.join(arr))
     
     ___ test(self):
         testCases = [
@@ -30,11 +30,11 @@ class Solution(object):
             9973,
             98368,
         ]
-        for num in testCases:
+        ___ num __ testCases:
             print('num: %s' % num)
             result = self.maximumSwap(num)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,21 +1,21 @@
-from typing import List  # not needed when we upgrade to 3.9
-import math
+____ typing _______ List  # not needed when we upgrade to 3.9
+_______ math
 
-___ print_names_to_columns(names: List[str], cols: int = 2) -> None:
-
-    
-    rows = int(math.ceil(len(names) / cols))
+___ print_names_to_columns(names: List[str], cols: int = 2) -> N..
 
     
-    for row in range(rows):
-        for col in range(cols):
+    rows = int(math.ceil(l..(names) / cols))
+
+    
+    ___ row __ r..(rows):
+        ___ col __ r..(cols):
             index = row * cols + col
             try:
                 name  = names[index]
             except IndexError:
                 break
             print(f'| {name:<10}',end='')
-        else:
+        ____:
             print()
             continue
         break
@@ -25,10 +25,10 @@ ___ print_names_to_columns(names: List[str], cols: int = 2) -> None:
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     
 
-    names =  "Bob Julian Tim Sara Eva Ana Jake Maria".split()
+    names =  "Bob Julian Tim Sara Eva Ana Jake Maria".s..
 
     print_names_to_columns(names,cols=3)
 

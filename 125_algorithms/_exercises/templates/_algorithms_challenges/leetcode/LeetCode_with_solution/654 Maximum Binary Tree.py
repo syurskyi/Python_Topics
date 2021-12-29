@@ -31,12 +31,12 @@ The size of the given array will be in the range [1,1000].
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
-from typing import List
-import heapq
+____ typing _______ List
+_______ heapq
 
 
 class Solution:
@@ -47,8 +47,8 @@ class Solution:
         the cur is the stk[-1]'s right
         the cur's left is elements to its left not in monotonic stack
         """
-        stk = []
-        for n in nums:
+        stk    # list
+        ___ n __ nums:
             cur = TreeNode(n)
             while stk and stk[-1].val < cur.val:
                 left = stk.pop()
@@ -57,9 +57,9 @@ class Solution:
             __ stk:
                 stk[-1].right = cur
 
-            stk.append(cur)
+            stk.a..(cur)
 
-        return stk[0]
+        r.. stk[0]
 
 class Solution_heap:
     ___ constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
@@ -67,31 +67,31 @@ class Solution_heap:
         heap O(n lgn)
         insert by index O(n lgn)
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        h = [(-v, v) for v in nums]
+        h = [(-v, v) ___ v __ nums]
         idx = {
             v: i
-            for i, v in enumerate(nums)
+            ___ i, v __ enumerate(nums)
         }
         heapq.heapify(h)
-        root = None
+        root = N..
         while h:
             _, m = heapq.heappop(h)
             root = self.insert(root, m, idx)
 
-        return root
+        r.. root
 
     ___ insert(self, node, m, idx):
-        __ not node:
-            return TreeNode(m)
+        __ n.. node:
+            r.. TreeNode(m)
 
         __ idx[m] < idx[node.val]:
             node.left = self.insert(node.left, m, idx)
-        elif idx[m] > idx[node.val]:
+        ____ idx[m] > idx[node.val]:
             node.right = self.insert(node.right, m, idx)
-        else:
+        ____:
             raise
 
-        return node
+        r.. node

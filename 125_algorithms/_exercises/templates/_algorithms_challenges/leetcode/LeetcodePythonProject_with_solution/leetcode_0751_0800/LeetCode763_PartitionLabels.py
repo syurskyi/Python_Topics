@@ -11,33 +11,33 @@ class Solution(object):
         """
         s = S
         hashmap = {}
-        res = []
-        for i, c in enumerate(s):
-            __ c not in hashmap:
+        res    # list
+        ___ i, c __ enumerate(s):
+            __ c n.. __ hashmap:
                 hashmap[c] = [i, i]
-            else:
+            ____:
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
-        for i, c in enumerate(s):
+        ___ i, c __ enumerate(s):
             __ i > maxLen:
-                res.append(maxLen-left+1)
+                res.a..(maxLen-left+1)
                 left = i
                 maxLen = hashmap[c][1]
-            else:
+            ____:
                 maxLen = max(maxLen, hashmap[c][1])
-        res.append(len(s)-left)
-        return res
+        res.a..(l..(s)-left)
+        r.. res
     
     ___ test(self):
         testCases = [
             'ababcbacadefegdehijhklij',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.partitionLabels(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

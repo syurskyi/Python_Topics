@@ -32,24 +32,24 @@ Note:
 A.length is even
 -100000 <= A[i] <= 100000
 """
-from typing import List
-from collections import Counter
+____ typing _______ List
+____ collections _______ Counter
 
 
 class Solution:
     ___ canReorderDoubled(self, A: List[int]) -> bool:
         A.sort(key=abs)
         counter = Counter(A)
-        for a in A:
-            __ counter[a] == 0:
+        ___ a __ A:
+            __ counter[a] __ 0:
                 continue
-            __ counter[2*a] == 0:
-                return False
+            __ counter[2*a] __ 0:
+                r.. False
 
             counter[a] -= 1
             counter[2*a] -= 1
 
-        return True
+        r.. True
 
     ___ canReorderDoubled_positive_negative(self, A: List[int]) -> bool:
         """
@@ -57,24 +57,24 @@ class Solution:
         """
         A.sort()
         counter = Counter(A)
-        for a in A:
-            __ counter[a] == 0:
+        ___ a __ A:
+            __ counter[a] __ 0:
                 continue
             counter[a] -= 1
             __ a > 0:
                 target = 2 * a
-            elif a % 2 != 0:
-                return False
-            else:
+            ____ a % 2 != 0:
+                r.. False
+            ____:
                 target = a // 2
 
             __ counter[target] > 0:
                 counter[target] -= 1
-            else:
-                return False
+            ____:
+                r.. False
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().canReorderDoubled([4,-2,2,-4]) == True
+__ __name__ __ "__main__":
+    ... Solution().canReorderDoubled([4,-2,2,-4]) __ True

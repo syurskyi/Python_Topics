@@ -3,11 +3,11 @@
 
 
 n = int(input())
-for _ in range(n):
+___ _ __ r..(n):
     __, k = map(int, input().split())
-    a = sorted(list(map(int, input().split())))
-    b = sorted(list(map(int, input().split())), reverse=True)
-    __ all([a[i] + b[i] >= k for i in range(len(a))]):
+    a = s..(l..(map(int, input().split())))
+    b = s..(l..(map(int, input().split())), r.._T..
+    __ a..([a[i] + b[i] >= k ___ i __ r..(l..(a))]):
         print('YES')
-    else:
+    ____:
         print('NO')

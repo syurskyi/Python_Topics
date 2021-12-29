@@ -1,4 +1,4 @@
-from collections import Counter
+____ collections _______ Counter
 
 ___ calculate_gc_content(sequence):
     """
@@ -7,5 +7,5 @@ ___ calculate_gc_content(sequence):
     """
     sequence_amount = Counter(sequence)
     GC_amount = sequence_amount['g'] + sequence_amount['c']
-    total_amount = sum(Counter(sequence).values())
-    return round((GC_amount / total_amount) * 100, 2)
+    total_amount = s..(Counter(sequence).values())
+    r.. round((GC_amount / total_amount) * 100, 2)

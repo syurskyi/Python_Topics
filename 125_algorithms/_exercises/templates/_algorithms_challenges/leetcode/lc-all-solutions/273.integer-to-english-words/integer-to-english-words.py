@@ -12,35 +12,35 @@ class Solution(object):
     :rtype: str
     """
     global units, tenToTwenty, tens, digit
-    ans = []
+    ans    # list
 
     ___ getNum(number):
       global units, tenToTwenty, tens, digit
       divider = 1000
-      ans = []
+      ans    # list
       h = number / 100
       __ h != 0:
-        ans.append(digit[h] + " Hundred")
+        ans.a..(digit[h] + " Hundred")
       number = number % 100
-      __ number in tenToTwenty:
-        ans.append(tenToTwenty[number])
-      else:
+      __ number __ tenToTwenty:
+        ans.a..(tenToTwenty[number])
+      ____:
         t = number / 10
         __ t != 0:
-          ans.append(tens[t])
+          ans.a..(tens[t])
         number = number % 10
         d = number
         __ d != 0:
-          ans.append(digit[d])
-      return " ".join(ans)
+          ans.a..(digit[d])
+      r.. " ".join(ans)
 
     divider = 1000000000
     while num > 0:
       res = num / divider
       __ res != 0:
-        ans.append(getNum(res) + units[divider])
+        ans.a..(getNum(res) + units[divider])
       num = num % divider
       divider /= 1000
-    __ not ans:
-      return "Zero"
-    return " ".join(ans)
+    __ n.. ans:
+      r.. "Zero"
+    r.. " ".join(ans)

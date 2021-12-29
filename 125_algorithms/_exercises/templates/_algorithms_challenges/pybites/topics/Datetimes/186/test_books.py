@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from books import get_number_books_read
+____ books _______ get_number_books_read
 
 
 @pytest.mark.parametrize("goal, date_str, expected", [
@@ -10,13 +10,13 @@ from books import get_number_books_read
     (100, 'Sunday, March 18th, 2019', 23),
     (100, 'Sunday, March 25th, 2019', 25),
     (100, '2019-04-02', 26),
-    (52, None, 11),
-    (100, None, 21),
+    (52, N.., 11),
+    (100, N.., 21),
     (100, '11-20-2019', 90),
     (100, '5/20/2019', 40),
 ])
 ___ test_get_number_books_read(goal, date_str, expected):
-    assert get_number_books_read(goal, date_str) == expected
+    ... get_number_books_read(goal, date_str) __ expected
 
 
 ___ test_not_positive_goal_exception():

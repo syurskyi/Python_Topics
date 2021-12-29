@@ -17,23 +17,23 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        ln = list(str(1))
-        for i in range(1, n):
-            tn = []
+        ln = l..(str(1))
+        ___ i __ r..(1, n):
+            tn    # list
             count = 1
-            prev = None
-            for c in ln:
-                __ prev == c:
+            prev = N..
+            ___ c __ ln:
+                __ prev __ c:
                     count += 1
-                __ prev is not None and prev != c:
-                    tn.append(str(count))
-                    tn.append(str(prev))
+                __ prev __ n.. N.. and prev != c:
+                    tn.a..(str(count))
+                    tn.a..(str(prev))
                     count = 1
                 prev = c
-            tn.append(str(count))
-            tn.append(str(prev))
+            tn.a..(str(count))
+            tn.a..(str(prev))
             ln = tn
-        return ''.join(ln)
+        r.. ''.join(ln)
 
 
 s = Solution()

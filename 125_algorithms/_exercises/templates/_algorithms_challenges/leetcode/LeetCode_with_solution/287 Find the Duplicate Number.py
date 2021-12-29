@@ -31,7 +31,7 @@ class Solution(object):
         while True:
             f = nums[nums[f]]
             s = nums[s]
-            __ f == s:
+            __ f __ s:
                 break
 
         t = 0
@@ -39,9 +39,9 @@ class Solution(object):
             t = nums[t]
             s = nums[s]
 
-        return t
+        r.. t
 
 
-__ __name__ == "__main__":
-    assert Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) == 5
+__ __name__ __ "__main__":
+    ... Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) __ 5
 

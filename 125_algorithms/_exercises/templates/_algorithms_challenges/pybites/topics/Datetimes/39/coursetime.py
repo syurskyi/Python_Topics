@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
-from http.client import SEE_OTHER
-import os
-import re
-import urllib.request
+____ datetime _______ datetime, timedelta
+____ http.client _______ SEE_OTHER
+_______ os
+_______ re
+_______ urllib.request
 
 # getting the data
 COURSE_TIMES = os.path.join(
@@ -28,16 +28,16 @@ ___ get_all_timestamps():
     """
     with open(COURSE_TIMES) as f:
         lines = f.readlines()
-        lines = [line.rstrip() for line in lines __ ')' in line]
-    return [line.split('(')[1].split(')')[0] for line in lines]
+        lines = [line.rstrip() ___ line __ lines __ ')' __ line]
+    r.. [line.split('(')[1].split(')')[0] ___ line __ lines]
 
 ___ calc_total_course_duration(timestamps):
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     total_duration = datetime.strptime('00:00', "%M:%S")
-    for each_time in timestamps:
-        min, sec = each_time.split(':')
-        total_duration = total_duration + timedelta(minutes=int(min), seconds=int(sec))
-    return datetime.strftime(total_duration, "%H:%M:%S")
+    ___ each_time __ timestamps:
+        m.., sec = each_time.split(':')
+        total_duration = total_duration + timedelta(minutes=int(m..), seconds=int(sec))
+    r.. datetime.strftime(total_duration, "%H:%M:%S")
 
 print(calc_total_course_duration(get_all_timestamps()))

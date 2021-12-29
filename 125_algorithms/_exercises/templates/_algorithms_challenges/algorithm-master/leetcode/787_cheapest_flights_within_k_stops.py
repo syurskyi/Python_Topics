@@ -12,12 +12,12 @@ class Solution:
         costs = [float('inf')] * n
         min_cost[src] = costs[src] = 0
 
-        for _ in range(K + 1):
-            for u, v, cost in flights:
-                costs[v] = min(costs[v], min_cost[u] + cost)
+        ___ _ __ r..(K + 1):
+            ___ u, v, cost __ flights:
+                costs[v] = m..(costs[v], min_cost[u] + cost)
             min_cost = costs
 
-        return costs[dst] __ costs[dst] < float('inf') else -1
+        r.. costs[dst] __ costs[dst] < float('inf') ____ -1
 
 
 class Solution:
@@ -30,29 +30,29 @@ class Solution:
         :type K: int
         :rtype: int
         """
-        __ src == dst:
-            return 0
+        __ src __ dst:
+            r.. 0
 
         INF = float('inf')
 
         """
         `dp[i][k]` means the cost when the end is `i` with `k` stop
         """
-        dp = [[INF] * (K + 1) for _ in range(n)]
+        dp = [[INF] * (K + 1) ___ _ __ r..(n)]
         dp[src][0] = 0
 
-        for start, end, cost in flights:
-            __ start == src and cost < dp[end][0]:
+        ___ start, end, cost __ flights:
+            __ start __ src and cost < dp[end][0]:
                 dp[end][0] = cost
 
-        for k in range(1, K + 1):
-            for i in range(n):
+        ___ k __ r..(1, K + 1):
+            ___ i __ r..(n):
                 dp[i][k] = dp[i][k - 1]
 
-            for start, end, cost in flights:
-                dp[end][k] = min(
+            ___ start, end, cost __ flights:
+                dp[end][k] = m..(
                     dp[end][k],
                     dp[start][k - 1] + cost
                 )
 
-        return dp[dst][K] __ dp[dst][K] < INF else -1
+        r.. dp[dst][K] __ dp[dst][K] < INF ____ -1

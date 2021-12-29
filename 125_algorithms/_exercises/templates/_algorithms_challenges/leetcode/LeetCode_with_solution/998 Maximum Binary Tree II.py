@@ -41,8 +41,8 @@ Explanation: A = [2,1,5,3], B = [2,1,5,3,4]
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -55,13 +55,13 @@ class Solution:
         Go through the example one by one.
         Need to maintain the parent relationship -> return the sub-root
         """
-        __ not root:
-            return TreeNode(val)
+        __ n.. root:
+            r.. TreeNode(val)
 
         __ val > root.val:
             node = TreeNode(val)
             node.left = root
-            return node
+            r.. node
 
         root.right = self.insertIntoMaxTree(root.right, val)
-        return root
+        r.. root

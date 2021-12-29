@@ -18,22 +18,22 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ len(s) != len(t):
-            return False
+        __ l..(s) != l..(t):
+            r.. False
         d = {}
-        for c in s:
-            __ c in d:
+        ___ c __ s:
+            __ c __ d:
                 d[c] += 1
-            else:
+            ____:
                 d[c] = 1
-        for c in t:
-            __ c not in d:
-                return False
-            else:
+        ___ c __ t:
+            __ c n.. __ d:
+                r.. False
+            ____:
                 d[c] -= 1
             __ d[c] < 0:
-                return False
-        return True
+                r.. False
+        r.. True
 
 
 s = Solution()

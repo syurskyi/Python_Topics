@@ -31,18 +31,18 @@ class Solution:
         z = 0
         d = {0: 0}  # diff for nums[:l]
         ret = 0
-        for i, e in enumerate(nums):
-            __ e == 1:
+        ___ i, e __ enumerate(nums):
+            __ e __ 1:
                 o += 1
-            else:
+            ____:
                 z += 1
             diff = o - z
-            __ diff in d:
+            __ diff __ d:
                 ret = max(ret, i + 1 - d[diff])
-            else:
+            ____:
                 d[diff] = i + 1
 
-        return ret
+        r.. ret
 
     ___ findMaxLength_error(self, nums):
         """
@@ -51,11 +51,11 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        F = [0 for _ in range(n+1)]
-        for i in range(n):
+        n = l..(nums)
+        F = [0 ___ _ __ r..(n+1)]
+        ___ i __ r..(n):
             F[i+1] = F[i]
-            __ nums[i] == 0:
+            __ nums[i] __ 0:
                 F[i+1] += 1
 
         i = 0
@@ -63,20 +63,20 @@ class Solution:
         while i < j:
             count = F[j] - F[i]
             l = j - i
-            __ count * 2 == l:
+            __ count * 2 __ l:
                 print(l)
-                return l
-            elif count * 2 < l:
-                __ nums[i] == 1:
+                r.. l
+            ____ count * 2 < l:
+                __ nums[i] __ 1:
                     i += 1
-                else:
+                ____:
                     j -= 1
-            else:
-                __ nums[i] == 0:
+            ____:
+                __ nums[i] __ 0:
                     i += 1
-                else:
+                ____:
                     j -= 1
-        return 0
+        r.. 0
 
 
     ___ findMaxLength_TLE(self, nums):
@@ -88,22 +88,22 @@ class Solution:
         :rtype: int
         """
         F = [0]
-        n = len(nums)
-        for e in nums:
-            __ e == 0:
-                F.append(F[-1] + 1)
-            else:
-                F.append(F[-1])
+        n = l..(nums)
+        ___ e __ nums:
+            __ e __ 0:
+                F.a..(F[-1] + 1)
+            ____:
+                F.a..(F[-1])
 
         ret = 0
-        for i in range(n):
-            for j in range(i+1, n+1):
-                __ (F[j] - F[i]) * 2 == j - i:
+        ___ i __ r..(n):
+            ___ j __ r..(i+1, n+1):
+                __ (F[j] - F[i]) * 2 __ j - i:
                     ret = max(ret, j - i)
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().findMaxLength([0, 1, 0]) == 2
-    assert Solution().findMaxLength([0,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,1,0,1,0,0,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,1,0,1,1,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,1,0,0,0,1,1]) == 68
+__ __name__ __ "__main__":
+    ... Solution().findMaxLength([0, 1, 0]) __ 2
+    ... Solution().findMaxLength([0,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,1,0,1,0,0,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,1,0,1,1,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,1,0,0,0,1,1]) __ 68

@@ -16,27 +16,27 @@ class Solution(object):
         :type wordDict: Set[str]
         :rtype: bool
         """
-        n = len(s)
-        t = [None for i in range(n)]
-        return self.word_break_aux(s, wordDict, n - 1, t)
+        n = l..(s)
+        t = [N.. ___ i __ r..(n)]
+        r.. self.word_break_aux(s, wordDict, n - 1, t)
 
     ___ word_break_aux(self, s, wordDict, i, t):
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        __ s[:i + 1] in wordDict:
-            return True
-        elif t[i] is not None:
-            return t[i]
-        else:
-            for j in range(i):
-                __ (self.word_break_aux(s, wordDict, j, t) is True
-                        and s[j + 1:i + 1] in wordDict):
+        __ s[:i + 1] __ wordDict:
+            r.. True
+        ____ t[i] __ n.. N..
+            r.. t[i]
+        ____:
+            ___ j __ r..(i):
+                __ (self.word_break_aux(s, wordDict, j, t) __ True
+                        and s[j + 1:i + 1] __ wordDict):
                     t[i] = True
-                    return True
-            else:
+                    r.. True
+            ____:
                 t[i] = False
-                return False
+                r.. False
 
 
 s = Solution()

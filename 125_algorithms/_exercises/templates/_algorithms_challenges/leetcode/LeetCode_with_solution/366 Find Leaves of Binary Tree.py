@@ -8,8 +8,8 @@ __author__ = 'Daniel'
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution(object):
@@ -23,20 +23,20 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        leaves = []
+        leaves    # list
         self.dfs(root, leaves)
-        return leaves
+        r.. leaves
 
     ___ dfs(self, node, leaves):
         """
         :return: height of of a node
         """
-        __ not node:
-            return -1  # leaves index start from 0
+        __ n.. node:
+            r.. -1  # leaves index start from 0
 
         height = 1 + max(self.dfs(node.left, leaves), self.dfs(node.right, leaves))
-        __ height >= len(leaves):
-            leaves.append([])  # grow
+        __ height >= l..(leaves):
+            leaves.a..([])  # grow
 
-        leaves[height].append(node.val)
-        return height
+        leaves[height].a..(node.val)
+        r.. height

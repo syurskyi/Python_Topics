@@ -1,87 +1,87 @@
-import inspect
+_______ i___
 
-import pytest
+_______ pytest
 
-from person import Person, Father, Mother, Child
+____ person _______ Person, Father, Mother, Child
 
 
 @pytest.fixture
 ___ person():
-    return Person()
+    r.. Person()
 
 
 @pytest.fixture
 ___ dad():
-    return Father()
+    r.. Father()
 
 
 @pytest.fixture
 ___ mom():
-    return Mother()
+    r.. Mother()
 
 
 @pytest.fixture
 ___ child():
-    return Child()
+    r.. Child()
 
 
 ___ test_string_repr_person(person):
-    assert str(person) == 'I am a person'
+    ... str(person) __ 'I am a person'
 
 
 ___ test_string_repr_dad(dad):
-    assert str(dad) == 'I am a person and cool daddy'
+    ... str(dad) __ 'I am a person and cool daddy'
 
 
 ___ test_string_repr_mom(mom):
-    assert str(mom) == 'I am a person and awesome mom'
+    ... str(mom) __ 'I am a person and awesome mom'
 
 
 ___ test_string_repr_child(child):
-    assert str(child) == 'I am the coolest kid'
+    ... str(child) __ 'I am the coolest kid'
 
 
 ___ test_mro_of_person():
-    assert Person.__mro__ == (Person, object)
+    ... Person.__mro__ __ (Person, object)
 
 
 ___ test_mro_of_dad():
-    assert Father.__mro__ == (Father, Person, object)
+    ... Father.__mro__ __ (Father, Person, object)
 
 
 ___ test_mro_of_mom():
-    assert Mother.__mro__ == (Mother, Person, object)
+    ... Mother.__mro__ __ (Mother, Person, object)
 
 
 ___ test_mro_of_child():
-    assert Child.__mro__ == (Child, Father, Mother, Person, object)
+    ... Child.__mro__ __ (Child, Father, Mother, Person, object)
 
 
 ___ test_subclass_person():
-    assert issubclass(Person, object)
+    ... issubclass(Person, object)
 
 
 ___ test_subclass_dad():
-    assert issubclass(Father, Person)
-    assert issubclass(Father, object)
+    ... issubclass(Father, Person)
+    ... issubclass(Father, object)
 
 
 ___ test_subclass_mom():
-    assert issubclass(Mother, Person)
-    assert issubclass(Mother, object)
+    ... issubclass(Mother, Person)
+    ... issubclass(Mother, object)
 
 
 ___ test_subclass_child():
-    assert issubclass(Child, Father)
-    assert issubclass(Child, Mother)
-    assert issubclass(Child, Person)
-    assert issubclass(Child, object)
+    ... issubclass(Child, Father)
+    ... issubclass(Child, Mother)
+    ... issubclass(Child, Person)
+    ... issubclass(Child, object)
 
 
 ___ test_use_inheritance():
     # dry code!
     # should not duplicate substr in subclass
     substr = 'I am a person'
-    for src in (inspect.getsource(Father),
-                inspect.getsource(Mother)):
-        assert substr not in src
+    ___ src __ (i___.getsource(Father),
+                i___.getsource(Mother)):
+        ... substr n.. __ src

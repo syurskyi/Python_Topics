@@ -4,13 +4,13 @@ class Solution(object):
     :type grid: List[List[int]]
     :rtype: int
     """
-    iList, jList, ppl = [], [], []
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        __ grid[i][j] == 1:
-          ppl.append((i, j))
-          iList.append(i)
-          jList.append(j)
+    iList, jList, ppl    # list, [], []
+    ___ i __ r..(0, l..(grid)):
+      ___ j __ r..(0, l..(grid[0])):
+        __ grid[i][j] __ 1:
+          ppl.a..((i, j))
+          iList.a..(i)
+          jList.a..(j)
     jList.sort()
-    m = (iList[len(iList) / 2], jList[len(jList) / 2])
-    return sum(map(lambda p: abs(p[1] - m[1]) + abs(p[0] - m[0]), ppl))
+    m = (iList[l..(iList) / 2], jList[l..(jList) / 2])
+    r.. s..(map(l.... p: abs(p[1] - m[1]) + abs(p[0] - m[0]), ppl))

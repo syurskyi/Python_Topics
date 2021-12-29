@@ -20,11 +20,11 @@ class Solution:
         :type n: int
         :rtype: str
         """
-        sb = []  # string builder
+        sb    # list  # string builder
         while n:
             n -= 1  # there is not 0 representation in excel title
-            sb.append(chr(ord("A")+n%26))
+            sb.a..(chr(ord("A")+n%26))
             n /= 26
 
-        return "".join(reversed(sb))
+        r.. "".join(reversed(sb))
 

@@ -1,2 +1,2 @@
-___ sum_numbers(numbers_ N..
-    return sum(numbers __ numbers is not None else range(101))
+# ___ sum_numbers numbers_ N..
+#     r.. s.. ? __ ? __ n.. N.. ____ r.. 101

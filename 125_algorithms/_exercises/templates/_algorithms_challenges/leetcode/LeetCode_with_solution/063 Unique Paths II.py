@@ -25,39 +25,39 @@ class Solution:
         :param obstacleGrid:  a list of lists of integers
         :return: integer
         """
-        m = len(obstacleGrid)
-        n = len(obstacleGrid[0])
+        m = l..(obstacleGrid)
+        n = l..(obstacleGrid[0])
 
         # trivial
-        __ obstacleGrid[0][0]==1 or obstacleGrid[m-1][n-1]==1:
-            return 0
+        __ obstacleGrid[0][0]__1 o. obstacleGrid[m-1][n-1]__1:
+            r.. 0
 
-        path = [[0 for _ in range(n)] for _ in range(m)]  # possible to optimize by [[0 for _ in range(n+1)]]
+        path = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]  # possible to optimize by [[0 for _ in range(n+1)]]
         path[0][0] = 1 # start
 
         # path[i][j] = path[i-1][j] + path[i][j-1]
-        for i in range(m):
-            for j in range(n):
-                __ i==0 and j==0:
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ i__0 and j__0:
                     continue
-                __ i==0:
-                    path[i][j] = path[i][j-1] __ obstacleGrid[i][j-1]==0 else 0
-                elif j==0:
-                    path[i][j] = path[i-1][j] __ obstacleGrid[i-1][j]==0 else 0
-                else:
-                    __ obstacleGrid[i][j-1]==0 and obstacleGrid[i-1][j]==0:
+                __ i__0:
+                    path[i][j] = path[i][j-1] __ obstacleGrid[i][j-1]__0 ____ 0
+                ____ j__0:
+                    path[i][j] = path[i-1][j] __ obstacleGrid[i-1][j]__0 ____ 0
+                ____:
+                    __ obstacleGrid[i][j-1]__0 and obstacleGrid[i-1][j]__0:
                         path[i][j] = path[i-1][j]+path[i][j-1]
-                    elif obstacleGrid[i][j-1]==0:
+                    ____ obstacleGrid[i][j-1]__0:
                         path[i][j] = path[i][j-1]
-                    elif obstacleGrid[i-1][j]==0:
+                    ____ obstacleGrid[i-1][j]__0:
                         path[i][j] = path[i-1][j]
-                    else:
+                    ____:
                         path[i][j]=0
 
 
-        return path[m-1][n-1]
+        r.. path[m-1][n-1]
 
-__ __name__=="__main__":
+__ __name____"__main__":
     grid = [[0, 0], [1, 1], [0, 0]]
-    assert Solution().uniquePathsWithObstacles(grid)==0
+    ... Solution().uniquePathsWithObstacles(grid)__0
 

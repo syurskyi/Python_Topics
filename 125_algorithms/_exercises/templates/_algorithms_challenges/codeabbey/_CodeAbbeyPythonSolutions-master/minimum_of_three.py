@@ -1,16 +1,16 @@
 amount_values = int(input())
-results = []
+results    # list
 
 ___ get_min(values):
-    min = values[0]
-    for i in values:
-        __(i < min):
-            min = i
+    m.. = values[0]
+    ___ i __ values:
+        __(i < m..):
+            m.. = i
         
-    return min
+    r.. m..
 
-for i in range(amount_values):
-    values = list(map(int, input().split()))
-    results.append(get_min(values))
+___ i __ r..(amount_values):
+    values = l..(map(int, input().split()))
+    results.a..(get_min(values))
 
 print(*results)

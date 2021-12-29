@@ -10,22 +10,22 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
-        m, n = len(s), len(p)
-        dp = [[False]*(n+1) for _ in range(m+1)]
+        m, n = l..(s), l..(p)
+        dp = [[False]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = True
-        for j in range(n):
-            __ p[j] == '*' and dp[0][j-1]:
+        ___ j __ r..(n):
+            __ p[j] __ '*' and dp[0][j-1]:
                 dp[0][j+1] = True
-        for i in range(m):
-            for j in range(n):
-                __ s[i] == p[j] or p[j] == '.':
+        ___ i __ r..(m):
+            ___ j __ r..(n):
+                __ s[i] __ p[j] o. p[j] __ '.':
                     dp[i+1][j+1] = dp[i][j]
-                elif p[j] == '*':
-                    __ p[j-1] == '.' or s[i] == p[j-1]:
-                        dp[i+1][j+1] = dp[i][j+1] or dp[i+1][j-1]
-                    else:
+                ____ p[j] __ '*':
+                    __ p[j-1] __ '.' o. s[i] __ p[j-1]:
+                        dp[i+1][j+1] = dp[i][j+1] o. dp[i+1][j-1]
+                    ____:
                         dp[i+1][j+1] = dp[i+1][j-1]
-        return dp[-1][-1]
+        r.. dp[-1][-1]
     
     ___ test(self):
         testCases = [
@@ -35,12 +35,12 @@ class Solution(object):
             ['aab', 'c*a*b'],
             ['mississippi', 'mis*is*p*.'],
         ]
-        for s, p in testCases:
+        ___ s, p __ testCases:
             print('s: %s' % s)
             print('p: %s' % p)
             result = self.isMatch(s, p)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

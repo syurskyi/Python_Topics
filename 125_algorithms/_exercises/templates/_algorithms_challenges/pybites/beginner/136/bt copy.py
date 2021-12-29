@@ -11,7 +11,7 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-from enum import Enum
+____ enum _______ Enum
 
 
 class Bloodtype(Enum):
@@ -46,34 +46,34 @@ ___ check_bt(donor, recipient):
         bool: True for compatability, False otherwise.
     """
 
-    __ type(donor) is int and (donor < 0 or donor > 7):
+    __ type(donor) __ int and (donor < 0 o. donor > 7):
         raise ValueError
-    elif type(donor) is float:
+    ____ type(donor) __ float:
         raise TypeError
-    elif type(donor) is str:
-        __ donor in blood_type_text:
+    ____ type(donor) __ str:
+        __ donor __ blood_type_text:
             donor = blood_type_text[donor].value
-        else:
+        ____:
             raise ValueError
-    elif type(donor) is Bloodtype:
+    ____ type(donor) __ Bloodtype:
         donor = donor.value
 
     
-    __ type(recipient) is int and (recipient < 0 or recipient > 7):
+    __ type(recipient) __ int and (recipient < 0 o. recipient > 7):
         raise ValueError
-    elif type(recipient) is float:
+    ____ type(recipient) __ float:
         raise TypeError
-    elif type(recipient) is str:
-        __ recipient in blood_type_text:
+    ____ type(recipient) __ str:
+        __ recipient __ blood_type_text:
             recipient = blood_type_text[recipient].value
-        else:
+        ____:
             raise ValueError
-    elif type(recipient) is Bloodtype:
+    ____ type(recipient) __ Bloodtype:
         recipient = recipient.value
 
     print(donor, recipient)
     temp = _particular_antigen_comp(donor, recipient)
-    return not len([n for n in temp __ n < 0 ])
+    r.. n.. l..([n ___ n __ temp __ n < 0 ])
 
 
 
@@ -92,7 +92,7 @@ ___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     _particular_antigen_comp(2, 5) -> (1, -1, 1)   B+ cannot donate to A+
     _particular_antigen_comp(7, 0) -> (-1, -1, -1) AB+ cannot donate to 0-
     """
-    return (
+    r.. (
         ((recipient // 4) % 2) - ((donor // 4) % 2),
         ((recipient // 2) % 2) - ((donor // 2) % 2),
         (recipient % 2) - (donor % 2),

@@ -14,10 +14,10 @@ class Solution:
         :param n: integer
         :return: a list of lists of string
         """
-        result = []
-        current = [[0 for _ in xrange(n)] for _ in xrange(n)]
+        result    # list
+        current = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
         self.backtrack(0, current, result)
-        return len(result)
+        r.. l..(result)
 
     ___ backtrack(self, queen_index, current, result):
         """
@@ -27,47 +27,47 @@ class Solution:
         :param result: list of 2D matrix
         :return: Nothing
         """
-        n = len(current)
-        __ queen_index==n:
-            result.append(current)
-            return
+        n = l..(current)
+        __ queen_index__n:
+            result.a..(current)
+            r..
 
-        for i in xrange(n):
-            __ current[queen_index][i]==INVALID:
+        ___ i __ xrange(n):
+            __ current[queen_index][i]__INVALID:
                 continue
 
             # place the queen
-            new_config = [list(element) for element in current]  # new copy
+            new_config = [l..(element) ___ element __ current]  # new copy
             new_config[queen_index][i] = QUEEN
 
             # config
-            for m in xrange(n):
+            ___ m __ xrange(n):
                 # col
-                __ new_config[m][i]==DEFAULT:
+                __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID
                     # row
-                __ new_config[queen_index][m]==DEFAULT:
+                __ new_config[queen_index][m]__DEFAULT:
                     new_config[queen_index][m] = INVALID
 
                 # diagonal
                 row = queen_index+m
                 col = i+m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i-m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i+m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index+m
                 col = i-m
-                __ 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
+                __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
             self.backtrack(queen_index+1, new_config, result)
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().totalNQueens(4)

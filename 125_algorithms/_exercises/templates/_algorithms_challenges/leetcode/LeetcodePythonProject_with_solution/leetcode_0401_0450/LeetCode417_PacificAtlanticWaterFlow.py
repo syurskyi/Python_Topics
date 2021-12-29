@@ -10,27 +10,27 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ not matrix or not matrix[0]: return []
-        m, n = len(matrix), len(matrix[0])
-        pacific = [[False]*n for _ in range(m)]
-        atlantic = [[False]*n for _ in range(m)]
-        for i in range(m):
+        __ n.. matrix o. n.. matrix[0]: r.. []
+        m, n = l..(matrix), l..(matrix[0])
+        pacific = [[False]*n ___ _ __ r..(m)]
+        atlantic = [[False]*n ___ _ __ r..(m)]
+        ___ i __ r..(m):
             self.dfs(matrix, i, 0, pacific)
             self.dfs(matrix, i, n-1, atlantic)
-        for j in range(n):
+        ___ j __ r..(n):
             self.dfs(matrix, 0, j, pacific)
             self.dfs(matrix, m-1, j, atlantic)
-        result = []
-        for i in range(m):
-            for j in range(n):
+        result    # list
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 __ pacific[i][j] and atlantic[i][j]:
-                    result.append([i, j])
-        return result
+                    result.a..([i, j])
+        r.. result
     
     ___ dfs(self, matrix, i, j, visited):
         visited[i][j] = True
-        m, n = len(matrix), len(matrix[0])
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+        m, n = l..(matrix), l..(matrix[0])
+        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
             __ 0 <= x < m and 0 <= y < n and\
-                not visited[x][y] and matrix[x][y] >= matrix[i][j]:
+                n.. visited[x][y] and matrix[x][y] >= matrix[i][j]:
                 self.dfs(matrix, x, y, visited)

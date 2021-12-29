@@ -28,39 +28,39 @@ class Solution:
         :type time: str
         :rtype: str
         """
-        __ not (
-            time and len(time) == 5 and time[2] == ':' and
+        __ n.. (
+            time and l..(time) __ 5 and time[2] __ ':' and
             0 <= int(time[:2]) < 24 and 0 <= int(time[3:]) < 60
         ):
-            return ''
+            r.. ''
 
-        times = [int(t) for t in time __ t != ':']
-        digits = []
+        times = [int(t) ___ t __ time __ t != ':']
+        digits    # list
 
-        for a in sorted(times):
-            __ digits and a == digits[-1]:
+        ___ a __ s..(times):
+            __ digits and a __ digits[-1]:
                 continue
 
-            digits.append(a)
+            digits.a..(a)
 
-        ids = [digits.index(t) for t in times]
+        ids = [digits.index(t) ___ t __ times]
         ids[-1] += 1
 
-        while not self.is_valid(ids, digits):
+        while n.. self.is_valid(ids, digits):
             ids[-1] += 1
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
-        return '{}:{}'.format(
-            '0' + str(h) __ h < 10 else str(h),
-            '0' + str(m) __ m < 10 else str(m)
+        r.. '{}:{}'.format(
+            '0' + str(h) __ h < 10 ____ str(h),
+            '0' + str(m) __ m < 10 ____ str(m)
         )
 
     ___ is_valid(self, ids, digits):
-        n = len(digits)
+        n = l..(digits)
         carry = 0
-        i = len(ids) - 1
+        i = l..(ids) - 1
 
         while i >= 0:
             carry += ids[i]
@@ -69,13 +69,13 @@ class Solution:
             i -= 1
 
         __ carry:
-            ids[:] = [0] * len(ids)
-            return True
+            ids[:] = [0] * l..(ids)
+            r.. True
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
         __ 0 <= h < 24 and 0 <= m < 60:
-            return True
+            r.. True
 
-        return False
+        r.. False

@@ -1,4 +1,4 @@
-NODE, EDGE, ATTR = range(3)
+NODE, EDGE, ATTR = r..(3)
 
 
 class Node(object):
@@ -7,7 +7,7 @@ class Node(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        return self.name == other.name and self.attrs == other.attrs
+        r.. self.name __ other.name and self.attrs __ other.attrs
 
 
 class Edge(object):
@@ -17,36 +17,36 @@ class Edge(object):
         self.attrs = attrs
 
     ___ __eq__(self, other):
-        return (self.src == other.src and
-                self.dst == other.dst and
-                self.attrs == other.attrs)
+        r.. (self.src __ other.src and
+                self.dst __ other.dst and
+                self.attrs __ other.attrs)
 
 
 class Graph(object):
     ___ __init__(self, data=[]):
-        self.nodes = []
-        self.edges = []
+        self.nodes    # list
+        self.edges    # list
         self.attrs = {}
 
-        __ not isinstance(data, list):
+        __ n.. isi..(data, l..):
             raise TypeError("Graph data malformed")
 
-        for item in data:
-            __ len(item) < 3:
+        ___ item __ data:
+            __ l..(item) < 3:
                 raise TypeError("Graph item incomplete")
 
             type_ = item[0]
-            __ type_ == ATTR:
-                __ len(item) != 3:
+            __ type_ __ ATTR:
+                __ l..(item) != 3:
                     raise ValueError("ATTR malformed")
                 self.attrs[item[1]] = item[2]
-            elif type_ == NODE:
-                __ len(item) != 3:
+            ____ type_ __ NODE:
+                __ l..(item) != 3:
                     raise ValueError("NODE malformed")
-                self.nodes.append(Node(item[1], item[2]))
-            elif type_ == EDGE:
-                __ len(item) != 4:
+                self.nodes.a..(Node(item[1], item[2]))
+            ____ type_ __ EDGE:
+                __ l..(item) != 4:
                     raise ValueError("EDGE malformed")
-                self.edges.append(Edge(item[1], item[2], item[3]))
-            else:
+                self.edges.a..(Edge(item[1], item[2], item[3]))
+            ____:
                 raise ValueError("Unknown item {}".format(item[0]))

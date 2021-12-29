@@ -1,5 +1,5 @@
-import datetime as td
-from dateutil.parser import parse
+_______ datetime as td
+____ dateutil.parser _______ parse
 MAC1 = """
 reboot    ~                         Wed Apr 10 22:39
 reboot    ~                         Wed Mar 27 16:24
@@ -29,10 +29,10 @@ ___ calc_max_uptime(reboots):
     lines = reboots.splitlines()
 
     
-    previous_date = None
-    max_date = None
+    previous_date = N..
+    max_date = N..
     max_diff = float("-inf")
-    for line in lines:
+    ___ line __ lines:
         __ line:
             _,date = line.split('~')
             date = parse(date)
@@ -46,7 +46,7 @@ ___ calc_max_uptime(reboots):
 
     
 
-    return max_diff,max_date.strftime("%Y-%m-%d")
+    r.. max_diff,max_date.strftime("%Y-%m-%d")
 
 
 

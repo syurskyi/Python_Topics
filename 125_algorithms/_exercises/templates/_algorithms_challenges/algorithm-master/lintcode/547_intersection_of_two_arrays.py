@@ -5,19 +5,19 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not a or not b:
-            return ans
+        __ n.. a o. n.. b:
+            r.. ans
 
         s = set(a)
         t = set(b)
 
-        for x in s:
-            __ x in t:
-                ans.append(x)
+        ___ x __ s:
+            __ x __ t:
+                ans.a..(x)
 
-        return ans
+        r.. ans
 
 
 class Solution:
@@ -27,26 +27,26 @@ class Solution:
         :type b: List[int]
         :rtype: List[int]
         """
-        ans = []
+        ans    # list
 
-        __ not a or not b:
-            return ans
+        __ n.. a o. n.. b:
+            r.. ans
 
         a.sort()
         b.sort()
 
-        m, n = len(a), len(b)
+        m, n = l..(a), l..(b)
         i = j = 0
 
         while i < m and j < n:
-            __ a[i] == b[j]:
-                __ not ans or a[i] != ans[-1]:
-                    ans.append(a[i])
+            __ a[i] __ b[j]:
+                __ n.. ans o. a[i] != ans[-1]:
+                    ans.a..(a[i])
                 i += 1
                 j += 1
-            elif a[i] < b[j]:
+            ____ a[i] < b[j]:
                 i += 1
-            else:
+            ____:
                 j += 1
 
-        return ans
+        r.. ans

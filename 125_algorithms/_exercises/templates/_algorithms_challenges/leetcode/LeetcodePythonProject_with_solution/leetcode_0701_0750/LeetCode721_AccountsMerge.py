@@ -12,29 +12,29 @@ class Solution(object):
         owner = {}
         parents = {}
         unions = {}
-        for a in accounts:
-            for i in range(1, len(a)):
+        ___ a __ accounts:
+            ___ i __ r..(1, l..(a)):
                 parents[a[i]] = a[i]
                 owner[a[i]] = a[0]
-        for a in accounts:
+        ___ a __ accounts:
             p = self.find(a[1], parents)
-            for i in range(2, len(a)):
+            ___ i __ r..(2, l..(a)):
                 parents[self.find(a[i], parents)] = p
-        for a in accounts:
+        ___ a __ accounts:
             p = self.find(a[1], parents)
-            __ p not in unions:
+            __ p n.. __ unions:
                 unions[p] = set()
-            for i in range(1, len(a)):
+            ___ i __ r..(1, l..(a)):
                 unions[p].add(a[i])
-        res = []
-        for p in unions:
-            emails = sorted(list(unions[p]))
+        res    # list
+        ___ p __ unions:
+            emails = s..(l..(unions[p]))
             emails.insert(0, owner[p])
-            res.append(emails)
-        return res
+            res.a..(emails)
+        r.. res
     
     ___ find(self, s, hashmap):
-        return s __ hashmap[s] == s else self.find(hashmap[s], hashmap)
+        r.. s __ hashmap[s] __ s ____ self.find(hashmap[s], hashmap)
     
     ___ test(self):
         testCases = [
@@ -52,13 +52,13 @@ class Solution(object):
                 ["David","David4@m.co","David1@m.co","David3@m.co"],
             ],
         ]
-        for accounts in testCases:
+        ___ accounts __ testCases:
             print('accounts:')
-            print('\n'.join([str(row) for row in accounts]))
+            print('\n'.join([str(row) ___ row __ accounts]))
             result = self.accountsMerge(accounts)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row __ result]))
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

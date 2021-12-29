@@ -7,19 +7,19 @@ CODONS = {'AUG': "Methionine", 'UUU': "Phenylalanine",
 
 
 ___ of_codon(codon):
-    __ codon not in CODONS:
+    __ codon n.. __ CODONS:
         raise ValueError('Invalid codon: %s' % codon)
-    return CODONS[codon]
+    r.. CODONS[codon]
 
 
 ___ of_rna(strand):
-    proteins = []
-    for codon in map(of_codon, _chunkstring(strand, 3)):
-        __ codon == 'STOP':
+    proteins    # list
+    ___ codon __ map(of_codon, _chunkstring(strand, 3)):
+        __ codon __ 'STOP':
             break
-        proteins.append(codon)
-    return proteins
+        proteins.a..(codon)
+    r.. proteins
 
 
 ___ _chunkstring(string, n):
-    return (string[i:n + i] for i in range(0, len(string), n))
+    r.. (string[i:n + i] ___ i __ r..(0, l..(string), n))

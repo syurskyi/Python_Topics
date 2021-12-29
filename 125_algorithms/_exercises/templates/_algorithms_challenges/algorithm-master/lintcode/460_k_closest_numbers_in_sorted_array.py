@@ -6,10 +6,10 @@ class Solution:
     @return: an integer array
     """
     ___ kClosestNumbers(self, A, target, k):
-        __ not A:
-            return []
+        __ n.. A:
+            r.. []
 
-        n = len(A)
+        n = l..(A)
 
         """
         if `b` in `A`:
@@ -24,7 +24,7 @@ class Solution:
             mid = left + (right - left) // 2
             __ A[mid] <= target:
                 left = mid
-            else:
+            ____:
                 right = mid
 
         """
@@ -38,18 +38,18 @@ class Solution:
         append first if that `num` is more closer `target`
         """
         ans = [0] * k
-        for i in range(k):
+        ___ i __ r..(k):
             __ left < 0:
                 ans[i] = A[right]
                 right += 1
-            elif right >= n:
+            ____ right >= n:
                 ans[i] = A[left]
                 left -= 1
-            elif A[right] - target < target - A[left]:
+            ____ A[right] - target < target - A[left]:
                 ans[i] = A[right]
                 right += 1
-            else:
+            ____:
                 ans[i] = A[left]
                 left -= 1
 
-        return ans
+        r.. ans

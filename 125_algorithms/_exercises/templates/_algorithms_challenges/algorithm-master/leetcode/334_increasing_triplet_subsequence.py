@@ -4,17 +4,17 @@ class Solution:
         :type A: List[int]
         :rtype: bool
         """
-        __ not A:
-            return False
+        __ n.. A:
+            r.. False
 
         a = b = float('inf')
 
-        for x in A:
+        ___ x __ A:
             __ x <= a:
                 a = x
-            elif x <= b:
+            ____ x <= b:
                 b = x
-            else:
-                return True
+            ____:
+                r.. True
 
-        return False
+        r.. False

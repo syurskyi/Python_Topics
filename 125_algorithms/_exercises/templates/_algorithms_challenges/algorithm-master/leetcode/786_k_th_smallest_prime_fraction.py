@@ -10,7 +10,7 @@ example: [1, 2, 5, 7]
 5  ...
 7  ...
 """
-from heapq import heappush, heappop
+____ heapq _______ heappush, heappop
 
 
 class Solution:
@@ -20,15 +20,15 @@ class Solution:
         :type K: int
         :rtype: List[int]
         """
-        heap = []
-        n = len(A)
+        heap    # list
+        n = l..(A)
 
         A.sort()
 
-        for i in range(n):
+        ___ i __ r..(n):
             heappush(heap, (A[i]/A[-1], i, n - 1))
 
-        for _ in range(K - 1):
+        ___ _ __ r..(K - 1):
             _, i, j = heappop(heap)
 
             j -= 1
@@ -36,4 +36,4 @@ class Solution:
                 heappush(heap, (A[i]/A[j], i, j))
 
         _, i, j = heappop(heap)
-        return [A[i], A[j]]
+        r.. [A[i], A[j]]

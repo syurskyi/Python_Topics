@@ -1,7 +1,7 @@
-import os
-from collections import Counter
-import urllib.request
-import xml.etree.ElementTree as ET
+_______ os
+____ collections _______ Counter
+_______ urllib.request
+_______ xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -14,7 +14,7 @@ urllib.request.urlretrieve(
 with open(tempfile) as f:
     content = f.read().lower()
     root = ET.fromstring(content)
-    categories = [category.text for category in root.iter("category")]
+    categories = [category.text ___ category __ root.iter("category")]
 
 
 ___ get_pybites_top_tags(n=10):
@@ -22,6 +22,6 @@ ___ get_pybites_top_tags(n=10):
        data already loaded into the content variable"""
     tags = Counter()
     tags.update(categories)
-    return tags.most_common()[:n]
+    r.. tags.most_common()[:n]
 
 #print(get_pybites_top_tags())

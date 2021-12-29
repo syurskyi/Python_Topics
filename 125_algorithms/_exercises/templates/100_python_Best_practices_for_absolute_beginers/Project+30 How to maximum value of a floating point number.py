@@ -8,10 +8,10 @@ x  float(input("Insert floating point numbers only: "))
 y  str(x)
 maxi  -1
 
-for i in range(len(y)):
+___ i __ r..(l..(y)):
     __ y[i] __ '.':
         continue
-    elif maxi < i..(y[i]):
+    ____ maxi < i..(y[i]):
         maxi  i..(y[i])
 
 print("The maximum element is = ",maxi)

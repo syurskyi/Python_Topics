@@ -11,32 +11,32 @@ class Solution(object):
 
     ___ valid(nums, mid, k):
       minSum = preSums = sums = 0
-      for i in range(k):
+      ___ i __ r..(k):
         sums += nums[i] - mid
       __ sums >= 0:
-        return True
-      for i in range(k, len(nums)):
+        r.. True
+      ___ i __ r..(k, l..(nums)):
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
-        minSum = min(minSum, preSums)
+        minSum = m..(minSum, preSums)
         __ sums - minSum >= 0:
-          return True
-      return False
+          r.. True
+      r.. False
 
-    lo = min(nums)
+    lo = m..(nums)
     hi = max(nums)
     while hi - lo > 1e-5:
       mid = (hi + lo) / 2.
       __ valid(nums, mid, k):
         lo = mid
-      else:
+      ____:
         hi = mid
-    return lo
+    r.. lo
 
   # have to use this hack to pass OJ
   ___ findMaxAverage(self, nums, k):
-    import numpy as np
-    lo, hi = min(nums), max(nums)
+    _______ numpy as np
+    lo, hi = m..(nums), max(nums)
     nums = np.array([0] + nums)
     while hi - lo > 1e-5:
       mid = nums[0] = (lo + hi) / 2.
@@ -44,6 +44,6 @@ class Solution(object):
       mins = np.minimum.accumulate(sums)
       __ (sums[k:] - mins[:-k]).max() > 0:
         lo = mid
-      else:
+      ____:
         hi = mid
-    return lo
+    r.. lo

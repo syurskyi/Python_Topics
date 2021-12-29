@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from bowling import BowlingGame
+____ bowling _______ BowlingGame
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
@@ -8,11 +8,11 @@ from bowling import BowlingGame
 class BowlingTest(unittest.TestCase):
 
     ___ roll(self, rolls):
-        [self.game.roll(roll) for roll in rolls]
+        [self.game.roll(roll) ___ roll __ rolls]
 
     ___ roll_and_score(self, rolls):
         self.roll(rolls)
-        return self.game.score()
+        r.. self.game.score()
 
     ___ test_should_be_able_to_score_a_game_with_all_zeros(self):
         rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -222,8 +222,8 @@ class BowlingTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

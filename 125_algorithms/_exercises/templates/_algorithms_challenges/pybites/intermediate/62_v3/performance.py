@@ -1,7 +1,7 @@
-from functools import wraps
-from time import time
-from typing import Deque, List, Set, Generator
-from collections import deque
+____ functools _______ wraps
+____ time _______ time
+____ typing _______ Deque, List, Set, Generator
+____ collections _______ deque
 
 
 ___ timing(f):
@@ -15,70 +15,70 @@ ___ timing(f):
         end = time()
         duration = end - start
         print(f'Elapsed time {f.__name__}: {duration}')
-        return duration, result
-    return wrapper
+        r.. duration, result
+    r.. wrapper
 
 
 @timing
 ___ contains(sequence: List[int], num: int) -> bool:
-    for n in sequence:
-        __ n == num:
-            return True
-    return False
+    ___ n __ sequence:
+        __ n __ num:
+            r.. True
+    r.. False
 
 
 @timing
 ___ contains_fast(sequence: Set[int], num: int) -> bool:
-    return num in sequence
+    r.. num __ sequence
 
 
 @timing
 ___ ordered_list_max(sequence: List[int]) -> int:
-    return max(sequence)
+    r.. max(sequence)
 
 
 @timing
 ___ ordered_list_max_fast(sequence: List[int]) -> int:
-    return sequence[-1]
+    r.. sequence[-1]
 
 
 @timing
 ___ list_concat(sequence: List[str]) -> str:
     bigstr = ''
-    for i in sequence:
+    ___ i __ sequence:
         bigstr += str(i)
-    return bigstr
+    r.. bigstr
 
 
 @timing
 ___ list_concat_fast(sequence: List[str]) -> str:
 
-    return ''.join(sequence)
+    r.. ''.join(sequence)
 
 
 @timing
 ___ list_inserts(n: int) -> List[int]:
-    lst = []
-    for i in range(n):
+    lst    # list
+    ___ i __ r..(n):
         lst.insert(0, i)
-    return lst
+    r.. lst
 
 
 @timing
 ___ list_inserts_fast(n: int) -> Deque[int]:
     queue = deque()
-    for i in range(n):
+    ___ i __ r..(n):
         queue.appendleft(i)
-    return list(queue)
+    r.. l..(queue)
 
 
 
 @timing
 ___ list_creation(n: int) -> List[int]:
-    lst = []
-    for i in range(n):
-        lst.append(i)
-    return lst
+    lst    # list
+    ___ i __ r..(n):
+        lst.a..(i)
+    r.. lst
 
 
 
@@ -86,7 +86,7 @@ ___ list_creation(n: int) -> List[int]:
 ___ list_creation_fast(n: int):
     
 
-    return list(range(n))
+    r.. l..(r..(n))
 
 
 

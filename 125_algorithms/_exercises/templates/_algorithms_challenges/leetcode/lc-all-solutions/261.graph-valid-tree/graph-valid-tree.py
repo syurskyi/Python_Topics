@@ -7,26 +7,26 @@ class Solution:
 
     ___ dfs(root, graph, visited, parent):
       visited[root] = 1
-      for nbr in graph.get(root, []):
-        __ nbr == parent:
+      ___ nbr __ graph.get(root, []):
+        __ nbr __ parent:
           continue
-        elif visited[nbr] != 0:
-          return False
-        __ not dfs(nbr, graph, visited, root):
-          return False
+        ____ visited[nbr] != 0:
+          r.. False
+        __ n.. dfs(nbr, graph, visited, root):
+          r.. False
       visited[root] = 2
       self.nodeVisited += 1
-      return True
+      r.. True
 
-    visited = [0 for _ in range(n)]
+    visited = [0 ___ _ __ r..(n)]
     graph = {}
     self.nodeVisited = 0
-    for edge in edges:
+    ___ edge __ edges:
       start, end = edge[0], edge[1]
       graph[start] = graph.get(start, []) + [end]
       graph[end] = graph.get(end, []) + [start]
 
-    __ dfs(0, graph, visited, -1) and self.nodeVisited == n:
-      return True
-    else:
-      return False
+    __ dfs(0, graph, visited, -1) and self.nodeVisited __ n:
+      r.. True
+    ____:
+      r.. False

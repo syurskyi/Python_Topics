@@ -21,8 +21,8 @@ kthLargest.add(4);   // returns 8
 Note:
 You may assume that nums' length ≥ k-1 and k ≥ 1.
 """
-from typing import List
-import heapq
+____ typing _______ List
+_______ heapq
 
 
 class KthLargest:
@@ -32,17 +32,17 @@ class KthLargest:
         heap
         min-heap, since we want the head be the k-th largest
         """
-        self.h = []
+        self.h    # list
         self.k = k
-        for n in nums:
+        ___ n __ nums:
             self.add(n)
 
     ___ add(self, val: int) -> int:
         heapq.heappush(self.h, val)
-        __ len(self.h) > self.k:
+        __ l..(self.h) > self.k:
             heapq.heappop(self.h)
 
-        return self.h[0]
+        r.. self.h[0]
 
 
 

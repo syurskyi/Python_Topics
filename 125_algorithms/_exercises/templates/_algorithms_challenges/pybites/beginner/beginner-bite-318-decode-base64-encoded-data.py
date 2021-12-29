@@ -32,8 +32,8 @@ We generated the data for this exercise using Mockaroo service,
 an excellent service to quickly get realistic fake data.
 """
 
-import base64
-import csv
+_______ base64
+_______ csv
 
 ___ encode():
     input = """first_name,last_name,credit_card
@@ -60,11 +60,11 @@ Jaclin,Tonge,3549852104724527"""
     inp = bytes.decode(decoded, 'ascii')
     print(type(inp))
     result = csv.reader(inp.splitlines())
-    result = list(result)
+    result = l..(result)
     r = result[1:]
-    end = []
-    for e in r:
-        end.append(e[2])
+    end    # list
+    ___ e __ r:
+        end.a..(e[2])
     print(end)
 
 

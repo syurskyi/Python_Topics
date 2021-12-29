@@ -3,10 +3,10 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-import heapq
+_______ heapq
 
 # overwrite the comparison function, so the node can be comparable
-ListNode.__lt__ = lambda x, y: (x.val < y.val)
+ListNode.__lt__ = l.... x, y: (x.val < y.val)
 
 class Solution(object):
   ___ mergeKLists(self, lists):
@@ -14,11 +14,11 @@ class Solution(object):
     :type lists: List[ListNode]
     :rtype: ListNode
     """
-    heap = []
+    heap    # list
     p = dummy = ListNode(-1)
-    for i in range(0, len(lists)):
+    ___ i __ r..(0, l..(lists)):
       node = lists[i]
-      __ not node:
+      __ n.. node:
         continue
       heapq.heappush(heap, node)
 
@@ -29,4 +29,4 @@ class Solution(object):
       __ node.next:
         node = node.next
         heapq.heappush(heap, node)
-    return dummy.next
+    r.. dummy.next

@@ -13,8 +13,8 @@ Output: 5
 Explanation: The longest harmonious subsequence is [3,2,2,2,3].
 Note: The length of the input array will not exceed 20,000.
 """
-from typing import List
-from collections import defaultdict
+____ typing _______ List
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -23,12 +23,12 @@ class Solution:
         counter and iterate
         """
         counter = defaultdict(int)
-        for n in nums:
+        ___ n __ nums:
             counter[n] += 1
 
         ret = 0
-        for k, v in counter.items():
-            __ k + 1 in counter:
+        ___ k, v __ counter.items():
+            __ k + 1 __ counter:
                 ret = max(ret, v + counter[k + 1])
 
-        return ret
+        r.. ret

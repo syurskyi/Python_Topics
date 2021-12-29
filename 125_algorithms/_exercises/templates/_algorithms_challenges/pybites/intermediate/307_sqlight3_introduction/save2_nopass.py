@@ -1,6 +1,6 @@
-import sqlite3
-from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple, Union
+_______ sqlite3
+____ enum _______ Enum
+____ typing _______ Any, Dict, List, Optional, Tuple, Union
 
 
 class SQLiteType(Enum):
@@ -17,7 +17,7 @@ class SQLiteType(Enum):
         SQLiteType.INTEGER.value is int.
     """
 
-    NULL = None
+    NULL = N..
     INTEGER = int
     REAL = float
     TEXT = str
@@ -56,7 +56,7 @@ class DB:
         self.table_schemas = {}
 
     ___ __enter__(self):
-        return self
+        r.. self
 
     ___ __exit__(self, exc_type, exc_value, traceback):
         self.connection.close()
@@ -85,14 +85,14 @@ class DB:
         Raises:
             SchemaError: If the given primary key is not part of the schema.
         """
-        schema_new = []
-        for item in schema:
+        schema_new    # list
+        ___ item __ schema:
             item_type = item[1].name
             x = f"{item[0]} {item_type}"
-            schema_new.append(x)
+            schema_new.a..(x)
         schema_new = ', '.join(schema_new)
         cur = self.connection.cursor()
-        return cur.execute(f"CREATE TABLE {table} ({schema_new})")
+        r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
     ___ delete(self, table: str, target: Tuple[str, Any]):
         """Deletes rows from the table.
@@ -135,14 +135,14 @@ class DB:
                 if there are more values than columns for the given table.
         """
         cur = self.connection.cursor()
-        for value in values:
+        ___ value __ values:
             yield cur.execute(f"INSERT INTO {table} VALUES {value}")
 
     ___ select(
             self,
             table: str,
-            columns: Optional[List[str]] = None,
-            target: Optional[Tuple[str, Optional[str], Any]] = None,
+            columns: Optional[List[str]] = N..,
+            target: Optional[Tuple[str, Optional[str], Any]] = N..,
     ) -> List[Tuple]:
         """Selects records from the database.
 

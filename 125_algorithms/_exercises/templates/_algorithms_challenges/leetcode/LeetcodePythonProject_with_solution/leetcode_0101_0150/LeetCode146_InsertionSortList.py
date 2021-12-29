@@ -25,14 +25,14 @@ class Solution(object):
             head.next = node.next
             node.next = head
             head = tmp
-        return dummy.next
+        r.. dummy.next
     
     ___ test(self):
         testCases = [
             ListNode(3, ListNode(2, ListNode(5, ListNode(-1)))),
             ListNode(2, ListNode(1, ListNode(-3))),
         ]
-        for head in testCases:
+        ___ head __ testCases:
             node = self.insertionSortList(head)
             while node:
                 print('%s, ' % node.val, end='')
@@ -40,5 +40,5 @@ class Solution(object):
             print()
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

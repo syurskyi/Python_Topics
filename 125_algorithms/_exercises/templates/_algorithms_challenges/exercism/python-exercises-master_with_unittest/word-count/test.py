@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from word_count import word_count
+____ word_count _______ word_count
 
 
 class WordCountTests(unittest.TestCase):
@@ -38,7 +38,7 @@ class WordCountTests(unittest.TestCase):
     ___ test_mixed_case(self):
         self.assertEqual(
             [2, 3],
-            sorted(list(word_count('go Go GO Stop stop').values()))
+            s..(l..(word_count('go Go GO Stop stop').values()))
         )
 
     ___ test_multiple_spaces(self):
@@ -70,5 +70,5 @@ class WordCountTests(unittest.TestCase):
         )
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

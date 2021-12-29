@@ -13,19 +13,19 @@ class Solution:
     @return: True if this Binary tree is Balanced, or false.
     """
     ___ isBalanced(self, root):
-        return self._divide_conquer(root)[0]
+        r.. self._divide_conquer(root)[0]
 
     ___ _divide_conquer(self, node):
-        __ not node:
-            return True, 0
+        __ n.. node:
+            r.. True, 0
 
         is_balanced_left, maxdepth_left = self._divide_conquer(node.left)
-        __ not is_balanced_left:
-            return False, 0
+        __ n.. is_balanced_left:
+            r.. False, 0
 
         is_balanced_right, maxdepth_right = self._divide_conquer(node.right)
-        __ not is_balanced_right:
-            return False, 0
+        __ n.. is_balanced_right:
+            r.. False, 0
 
-        return abs(maxdepth_left - maxdepth_right) <= 1, \
+        r.. abs(maxdepth_left - maxdepth_right) <= 1, \
             max(maxdepth_left, maxdepth_right) + 1

@@ -1,11 +1,11 @@
-import csv
-import random
-import re
-import string
+_______ csv
+_______ random
+_______ re
+_______ string
 
-import pytest
+_______ pytest
 
-from cls import get_classes
+____ cls _______ get_classes
 
 # note that since 3.8 there is no OrderedDict here anymore
 csv_classes = [
@@ -25,4 +25,4 @@ string_classes = ['Formatter', 'Template']
 ])
 ___ test_cls(mod, expected):
     actual = get_classes(mod)
-    assert sorted(actual) == sorted(expected)
+    ... s..(actual) __ s..(expected)

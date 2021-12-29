@@ -9,52 +9,52 @@ class Solution(object):
         :type board: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n = len(board), len(board[0])
-        res = [[0]*n for _ in range(m)]
+        m, n = l..(board), l..(board[0])
+        res = [[0]*n ___ _ __ r..(m)]
         while True:
             changed = False
-            for i in range(m):
-                for j in range(n):
-                    changed = self.bfs(board, i, j) or changed
-            __ not changed:
+            ___ i __ r..(m):
+                ___ j __ r..(n):
+                    changed = self.bfs(board, i, j) o. changed
+            __ n.. changed:
                 res = board
                 break
             self.convert(res, board)
             board = res
-        return res
+        r.. res
     
     ___ bfs(self, board, i, j):
-        __ board[i][j] == 0: return False
-        m, n = len(board), len(board[0])
+        __ board[i][j] __ 0: r.. False
+        m, n = l..(board), l..(board[0])
         val = abs(board[i][j])
         changed = False
-        __ i+2 < m and val == abs(board[i+1][j]) == abs(board[i+2][j]):
-            for i0 in range(i+1, m):
-                __ abs(board[i0][j]) == val:
+        __ i+2 < m and val __ abs(board[i+1][j]) __ abs(board[i+2][j]):
+            ___ i0 __ r..(i+1, m):
+                __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
-                else:
+                ____:
                     break
             changed = True
-        __ j+2 < n and val == abs(board[i][j+1]) == abs(board[i][j+2]):
-            for j0 in range(j+1, n):
-                __ abs(board[i][j0]) == val:
+        __ j+2 < n and val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
+            ___ j0 __ r..(j+1, n):
+                __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
-                else:
+                ____:
                     break
             changed = True
         __ changed:
             board[i][j] = -val
-        return changed
+        r.. changed
     
     ___ convert(self, res, board):
-        m, n = len(res), len(res[0])
-        for j in range(n):
+        m, n = l..(res), l..(res[0])
+        ___ j __ r..(n):
             i0 = m-1
-            for i in range(m-1, -1, -1):
+            ___ i __ r..(m-1, -1, -1):
                 __ board[i][j] > 0:
                     res[i0][j] = board[i][j]
                     i0 -= 1
-            for i in range(i0, -1, -1):
+            ___ i __ r..(i0, -1, -1):
                 res[i][j] = 0
     
     ___ test(self):
@@ -75,13 +75,13 @@ class Solution(object):
                 [4,5,5,4,5],[5,1,4,2,5],[4,3,1,2,2],[4,5,4,4,5],[3,3,1,1,3],
             ],
         ]
-        for board in testCases:
+        ___ board __ testCases:
             print('board:')
-            print('\n'.join([str(row) for row in board]))
+            print('\n'.join([str(row) ___ row __ board]))
             result = self.candyCrush(board)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row __ result]))
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

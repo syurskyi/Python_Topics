@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from say import say
+____ say _______ say
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
@@ -72,5 +72,5 @@ class SayTest(unittest.TestCase):
             say(-1)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

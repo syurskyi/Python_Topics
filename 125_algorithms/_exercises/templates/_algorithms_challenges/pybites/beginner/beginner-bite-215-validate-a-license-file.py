@@ -28,7 +28,7 @@ It was fairly easy, I only had to review regexp syntax here:
 https://www.debuggex.com/cheatsheet/regex/python
 """
 
-import re
+_______ re
 
 
 ___ validate_license(key: str) -> bool:
@@ -36,9 +36,9 @@ ___ validate_license(key: str) -> bool:
        (e.g. PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4)
     """
     __(re.match(r"^PB-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}$", key)):
-        return True
-    else:
-        return False
+        r.. True
+    ____:
+        r.. False
 
 print(validate_license("PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"))
 print(validate_license("vogus"))

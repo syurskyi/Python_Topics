@@ -10,22 +10,22 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[str]
         """
-        set1 = set(list('qwertyuiop'))
-        set2 = set(list('asdfghjkl'))
-        set3 = set(list('zxcvbnm'))
+        set1 = set(l..('qwertyuiop'))
+        set2 = set(l..('asdfghjkl'))
+        set3 = set(l..('zxcvbnm'))
         sets = (set1, set2, set3)
-        result = []
-        for word in words:
+        result    # list
+        ___ word __ words:
             ind = -1
             valid = True
-            for c in word:
-                for i, set0 in enumerate(sets):
-                    __ c.lower() in set0:
-                        __ ind == -1:
+            ___ c __ word:
+                ___ i, set0 __ enumerate(sets):
+                    __ c.lower() __ set0:
+                        __ ind __ -1:
                             ind = i
-                        elif i != ind:
+                        ____ i != ind:
                             valid = False
                         break
             __ valid:
-                result.append(word)
-        return result
+                result.a..(word)
+        r.. result

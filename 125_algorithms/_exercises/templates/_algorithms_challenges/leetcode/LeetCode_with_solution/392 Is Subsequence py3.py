@@ -27,8 +27,8 @@ would you change your code?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases
 """
-from bisect import bisect_left
-from collections import defaultdict
+____ bisect _______ bisect_left
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -36,24 +36,24 @@ class Solution:
         """
         Subsequence - Binary search
         """
-        char_pos = defaultdict(list)
-        for p, c in enumerate(t):
-            char_pos[c].append(p)
+        char_pos = defaultdict(l..)
+        ___ p, c __ enumerate(t):
+            char_pos[c].a..(p)
             # the list is naturally sorted
 
         lo_po = -1
-        for c in s:
-            __ c not in char_pos:
-                return False
+        ___ c __ s:
+            __ c n.. __ char_pos:
+                r.. False
             pos = char_pos[c]
             i = bisect_left(pos, lo_po)
-            __ i == len(pos):
-                return False
+            __ i __ l..(pos):
+                r.. False
             lo_po = pos[i] + 1  # pitfall
 
-        return True
+        r.. True
 
 
-__ __name__ == "__main__":
-    assert Solution().isSubsequence("abc", "ahbgdc") == True
-    assert Solution().isSubsequence("acb", "ahbgdc") == False
+__ __name__ __ "__main__":
+    ... Solution().isSubsequence("abc", "ahbgdc") __ True
+    ... Solution().isSubsequence("acb", "ahbgdc") __ False

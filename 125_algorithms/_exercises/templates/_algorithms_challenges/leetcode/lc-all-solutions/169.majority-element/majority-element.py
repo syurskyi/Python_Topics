@@ -1,3 +1,3 @@
 class Solution(object):
   ___ majorityElement(self, num):
-    return sorted(num)[len(num) / 2]
+    r.. s..(num)[l..(num) / 2]

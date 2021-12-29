@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta
-from typing import List
+____ datetime _______ datetime, timedelta
+____ typing _______ List
 
 
 ___ get_srt_section_ids(text: str) -> List[int]:
@@ -26,13 +26,13 @@ ___ get_srt_section_ids(text: str) -> List[int]:
 
       You can ignore milliseconds for this exercise.
    """
-   sections_raw = [word.strip() for word in text.strip().split("\n") __ word != ""]
-   sections_clean = [sections_raw[i-3:i] for i in range(3, len(sections_raw) +1, 3)]
+   sections_raw = [word.strip() ___ word __ text.strip().split("\n") __ word != ""]
+   sections_clean = [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
    sections_ranking = {}
 
-   for section in sections_clean:
+   ___ section __ sections_clean:
       start, stop = section[1].split(" --> ")
-      total_chars = len(section[2])
+      total_chars = l..(section[2])
       start_h, start_m, start_s = start.split(":")
       stop_h, stop_m, stop_s = stop.split(":")
       start = timedelta(hours=int(start_h), minutes=int(start_m), seconds=int(start_s[:2]))
@@ -40,10 +40,10 @@ ___ get_srt_section_ids(text: str) -> List[int]:
       time_delta = stop - start
       sections_ranking[int(section[0])] = total_chars / time_delta.seconds
 
-   return sorted(sections_ranking, key=sections_ranking.get, reverse=True)
+   r.. s..(sections_ranking, key=sections_ranking.get, r.._T..
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    text1 = """
    1
    00:00:00,498 --> 00:00:02,827

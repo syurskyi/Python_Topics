@@ -5,20 +5,20 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        ans = []
+        ans    # list
 
-        __ not nums or len(nums) < 4 or target is None:
-            return ans
+        __ n.. nums o. l..(nums) < 4 o. target __ N..
+            r.. ans
 
-        n = len(nums)
+        n = l..(nums)
         nums.sort()
 
-        for a in range(n - 3):
-            __ a > 0 and nums[a] == nums[a - 1]:
+        ___ a __ r..(n - 3):
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
-            for b in range(a + 1, n - 2):
-                __ b > a + 1 and nums[b] == nums[b - 1]:
+            ___ b __ r..(a + 1, n - 2):
+                __ b > a + 1 and nums[b] __ nums[b - 1]:
                     continue
 
                 c, d = b + 1, n - 1
@@ -26,17 +26,17 @@ class Solution:
                 while c < d:
                     total = nums[a] + nums[b] + nums[c] + nums[d]
 
-                    __ total == target:
-                        ans.append([nums[a], nums[b], nums[c], nums[d]])
+                    __ total __ target:
+                        ans.a..([nums[a], nums[b], nums[c], nums[d]])
                         c += 1
                         d -= 1
-                        while c < d and nums[c] == nums[c - 1]:
+                        while c < d and nums[c] __ nums[c - 1]:
                             c += 1
-                        while c < d and nums[d] == nums[d + 1]:
+                        while c < d and nums[d] __ nums[d + 1]:
                             d -= 1
-                    elif total < target:
+                    ____ total < target:
                         c += 1
-                    else:
+                    ____:
                         d -= 1
 
-        return ans
+        r.. ans

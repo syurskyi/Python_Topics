@@ -1,6 +1,6 @@
-import os
-import urllib.request
-from collections import Counter
+_______ os
+_______ urllib.request
+____ collections _______ Counter
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")
@@ -17,19 +17,19 @@ urllib.request.urlretrieve(
 
 
 ___ get_harry_most_common_word():
-    common_word = []
+    common_word    # list
     with open(stopwords_file) as f:
-        stopwords_list = [word.strip() for word in f.readlines()]
+        stopwords_list = [word.strip() ___ word __ f.readlines()]
         #print(stopwords_list)
     with open(harry_text, encoding='utf8') as f:
-        for lines in f:
-            for word in lines.split():
+        ___ lines __ f:
+            ___ word __ lines.s.. :
                 #print(word)
-                word_to_test = "".join(letter.lower() for letter in word __ letter.isalnum())
+                word_to_test = "".join(letter.lower() ___ letter __ word __ letter.isalnum())
                 #print(word1)
-                __ word_to_test and word_to_test not in stopwords_list :
-                    common_word.append(word_to_test)
-    return Counter(common_word).most_common(1)[0]
+                __ word_to_test and word_to_test n.. __ stopwords_list :
+                    common_word.a..(word_to_test)
+    r.. Counter(common_word).most_common(1)[0]
 
 get_harry_most_common_word()
 #print(get_harry_most_common_word())

@@ -1,17 +1,17 @@
-import string
+_______ string
 
-import pytest
+_______ pytest
 
-from spelling import suggest_word, load_words
+____ spelling _______ suggest_word, load_words
 
 
 @pytest.fixture(scope='module')
 ___ a_words():
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
-    return {word for word in words
-            __ word.startswith('a') and len(word) > 1
-            and word[1] in string.ascii_letters[:13]}
+    r.. {word ___ word __ words
+            __ word.startswith('a') and l..(word) > 1
+            and word[1] __ string.ascii_letters[:13]}
 
 
 @pytest.mark.parametrize("word, expected", [
@@ -25,4 +25,4 @@ ___ a_words():
     ('accidentaly', 'accidentally'),
 ])
 ___ test_suggest_word(word, expected, a_words):
-    assert suggest_word(word, words=a_words) == expected
+    ... suggest_word(word, words=a_words) __ expected

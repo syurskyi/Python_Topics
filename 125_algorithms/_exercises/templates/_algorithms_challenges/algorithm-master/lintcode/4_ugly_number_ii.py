@@ -14,13 +14,13 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        __ not n:
-            return 0
+        __ n.. n:
+            r.. 0
 
         ans = [1]
         i2 = i3 = i5 = 0
 
-        for _ in range(1, n):
+        ___ _ __ r..(1, n):
             while ans[i2] * 2 <= ans[-1]:
                 i2 += 1
             while ans[i3] * 3 <= ans[-1]:
@@ -28,10 +28,10 @@ class Solution:
             while ans[i5] * 5 <= ans[-1]:
                 i5 += 1
 
-            ans.append(min((
+            ans.a..(m..((
                 ans[i2] * 2,
                 ans[i3] * 3,
                 ans[i5] * 5,
             )))
 
-        return ans[-1]
+        r.. ans[-1]

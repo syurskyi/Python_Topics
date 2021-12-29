@@ -44,18 +44,18 @@ class Solution(object):
         stk = preorder.split(',')
         child_cnt = 0
         while stk:
-            __ stk[-1] == '#':
+            __ stk[-1] __ '#':
                 stk.pop()
                 child_cnt += 1
-            else:
+            ____:
                 child_cnt -= 2
                 __ child_cnt < 0:
-                    return False
+                    r.. False
 
                 stk.pop()
                 child_cnt += 1
 
-        return not stk and child_cnt == 1
+        r.. n.. stk and child_cnt __ 1
 
     ___ isValidSerializationSpace(self, preorder):
         """
@@ -63,23 +63,23 @@ class Solution(object):
         :rtype: bool
         """
         stk = preorder.split(',')
-        child_stk = []
+        child_stk    # list
         while stk:
-            __ stk[-1] == '#':
-                child_stk.append(stk.pop())  # a counter is enough
-            else:
+            __ stk[-1] __ '#':
+                child_stk.a..(stk.pop())  # a counter is enough
+            ____:
                 try:
                     child_stk.pop()
                     child_stk.pop()
                     stk.pop()
-                    child_stk.append('#')
+                    child_stk.a..('#')
                 except IndexError:
-                    return False
+                    r.. False
 
-        return not stk and len(child_stk) == 1
+        r.. n.. stk and l..(child_stk) __ 1
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#")
 
 

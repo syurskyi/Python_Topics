@@ -12,15 +12,15 @@ class Solution(object):
         s = S
         res = set()
         self.helper(s, 0, '', res)
-        return list(res)
+        r.. l..(res)
     
     ___ helper(self, s, i, curr, res):
-        __ i == len(s):
+        __ i __ l..(s):
             res.add(curr)
-            return
+            r..
         __ s[i].isdigit():
             self.helper(s, i+1, curr+s[i], res)
-        else:
+        ____:
             self.helper(s, i+1, curr+s[i].upper(), res)
             self.helper(s, i+1, curr+s[i].lower(), res)
     
@@ -30,11 +30,11 @@ class Solution(object):
             "3z4",
             "12345",
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.letterCasePermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

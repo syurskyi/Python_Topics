@@ -15,13 +15,13 @@ class Solution(object):
         m = {0: -1}  # initial condition, sum -> idx
         maxa = 0
         s = 0
-        for i in xrange(len(A)):
+        ___ i __ xrange(l..(A)):
             s += A[i]
             t = s - k  # s - t = k
-            __ t in m:
+            __ t __ m:
                 maxa = max(maxa, i - m[t])
 
-            __ s not in m:
+            __ s n.. __ m:
                 m[s] = i
 
-        return maxa
+        r.. maxa

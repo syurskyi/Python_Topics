@@ -19,21 +19,21 @@ class Solution(object):
         :rtype: List[int]
         Space: O(n)
         """
-        n = len(nums)
+        n = l..(nums)
         # left[i] is the product to the left of i (nums[0..i - 1])
-        left = [1 for i in range(n)]
+        left = [1 ___ i __ r..(n)]
         # right[i] is the product to the right of i (nums[i + 1..-1])
-        right = [1 for i in range(n)]
-        for i in range(1, n):
+        right = [1 ___ i __ r..(n)]
+        ___ i __ r..(1, n):
             # i ranges from 1 to n - 1
             # j ranges from n - 2 to 0
             j = n - 1 - i
             left[i] = left[i - 1] * nums[i - 1]
             right[j] = right[j + 1] * nums[j + 1]
-        res = [1 for i in range(n)]
-        for i in range(n):
+        res = [1 ___ i __ r..(n)]
+        ___ i __ r..(n):
             res[i] = left[i] * right[i]
-        return res
+        r.. res
 
 
 a0 = [0, 0]

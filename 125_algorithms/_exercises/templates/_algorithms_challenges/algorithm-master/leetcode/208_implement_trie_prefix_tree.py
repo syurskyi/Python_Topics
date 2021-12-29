@@ -14,12 +14,12 @@ class Trie:
         :type word: str
         :rtype: void
         """
-        __ not word:
-            return
+        __ n.. word:
+            r..
 
         node = self.trie
-        for char in word:
-            __ char not in node.children:
+        ___ char __ word:
+            __ char n.. __ node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.end_at = word
@@ -30,15 +30,15 @@ class Trie:
         :type word: str
         :rtype: bool
         """
-        __ not word:
-            return False
+        __ n.. word:
+            r.. False
 
         node = self.trie
-        for char in word:
-            __ char not in node.children:
-                return False
+        ___ char __ word:
+            __ char n.. __ node.children:
+                r.. False
             node = node.children[char]
-        return node.end_at == word
+        r.. node.end_at __ word
 
     ___ startsWith(self, prefix):
         """
@@ -46,15 +46,15 @@ class Trie:
         :type prefix: str
         :rtype: bool
         """
-        __ not prefix:
-            return False
+        __ n.. prefix:
+            r.. False
 
         node = self.trie
-        for char in prefix:
-            __ char not in node.children:
-                return False
+        ___ char __ prefix:
+            __ char n.. __ node.children:
+                r.. False
             node = node.children[char]
-        return True
+        r.. True
 
 
 # Your Trie object will be instantiated and called as such:

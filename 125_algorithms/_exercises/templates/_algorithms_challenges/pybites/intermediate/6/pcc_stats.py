@@ -1,6 +1,6 @@
-from collections import Counter, namedtuple
-import os
-import urllib.request
+____ collections _______ Counter, namedtuple
+_______ os
+_______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -10,7 +10,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.split()
+IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 Stats = namedtuple('Stats', 'user challenge')
 
@@ -39,9 +39,9 @@ ___ gen_files(tempfile=tempfile):
     with open(tempfile) as file:
         data = file.readlines()
 
-        for row in data:
+        ___ row __ data:
             current = row.strip("\n").split(",")
-            __ current[1] == 'True':
+            __ current[1] __ 'True':
                 yield current[0].lower()
 
 
@@ -56,22 +56,22 @@ ___ diehard_pybites(files_ N..
 
     Stats(user='clamytoe', challenge=('01', 7))
     """
-    __ files is None:
+    __ files __ N..
         files = gen_files()
 
     users = Counter()
     popular_challenges = Counter()
 
     # your code
-    for row in files:
+    ___ row __ files:
         challenge, user = row.split("/")
-        __ user in IGNORE:
+        __ user __ IGNORE:
             continue
-        else:
+        ____:
             users.update([user])
             popular_challenges.update([challenge])
 
-    return Stats(users.most_common()[0][0], (popular_challenges.most_common()[0][0], popular_challenges.most_common()[0][1]))
+    r.. Stats(users.most_common()[0][0], (popular_challenges.most_common()[0][0], popular_challenges.most_common()[0][1]))
 
 
 # if __name__ == "__main__":

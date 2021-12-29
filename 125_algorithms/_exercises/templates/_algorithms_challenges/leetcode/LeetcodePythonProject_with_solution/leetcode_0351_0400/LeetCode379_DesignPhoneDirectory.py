@@ -6,22 +6,22 @@ Created on Apr 1, 2017
 
 class PhoneDirectory(object):
     ___ __init__(self, maxNumbers):
-        self.availableNums = set(range(maxNumbers))
+        self.availableNums = set(r..(maxNumbers))
         self.usedNums = set()
     
     ___ get(self):
         __ self.availableNums:
             num = self.availableNums.pop()
             self.usedNums.add(num)
-            return num
-        else:
-            return -1
+            r.. num
+        ____:
+            r.. -1
     
     ___ check(self, number):
-        return bool(number in self.availableNums)
+        r.. bool(number __ self.availableNums)
     
     ___ release(self, number):
-        __ number in self.usedNums:
+        __ number __ self.usedNums:
             self.usedNums.remove(number)
         self.availableNums.add(number)
     

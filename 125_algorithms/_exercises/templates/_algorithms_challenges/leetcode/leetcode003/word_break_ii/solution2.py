@@ -18,30 +18,30 @@ class Solution(object):
         :type wordDict: Set[str]
         :rtype: bool
         """
-        n = len(s)
-        t = [None for i in range(n)]
+        n = l..(s)
+        t = [N.. ___ i __ r..(n)]
         res = self.word_break_aux(s, wordDict, n - 1, t)
-        return res
+        r.. res
 
     ___ word_break_aux(self, s, wordDict, i, t):
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        __ s[:i + 1] in wordDict:
+        __ s[:i + 1] __ wordDict:
             t[i] = [s[:i + 1]]
-            return t[i]
-        elif t[i] __ not None:
-            return t[i]
-        else:
-            res = []
-            for j in range(i):
+            r.. t[i]
+        ____ t[i] __ n.. N..
+            r.. t[i]
+        ____:
+            res    # list
+            ___ j __ r..(i):
                 rest = self.word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
-                __ rest and word in wordDict:
-                    for r in rest:
-                        res.append(r + ' ' + word)
+                __ rest and word __ wordDict:
+                    ___ r __ rest:
+                        res.a..(r + ' ' + word)
             t[i] = res
-            return t[i]
+            r.. t[i]
 
 
 s1 = "catsanddog"

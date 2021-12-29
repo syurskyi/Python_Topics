@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools _______ wraps
 
 
 DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
@@ -21,13 +21,13 @@ ___ strip_range(start, end):
     ___ decorator_replace(fun):
         @wraps(fun)
         ___ wrapper_replace(*args, **kwargs):
-            output = list(fun(*args, **kwargs))
-            this_end = end __ end < len(output) else len(output)
-            this_end = this_end __ this_end > 0 else 0
-            this_start = start __ start >= 0 else 0
+            output = l..(fun(*args, **kwargs))
+            this_end = end __ end < l..(output) ____ l..(output)
+            this_end = this_end __ this_end > 0 ____ 0
+            this_start = start __ start >= 0 ____ 0
 
-            for k in range(this_start, this_end):
+            ___ k __ r..(this_start, this_end):
                 output[k] = '.'
-            return ''.join(output)
-        return wrapper_replace
-    return decorator_replace
+            r.. ''.join(output)
+        r.. wrapper_replace
+    r.. decorator_replace

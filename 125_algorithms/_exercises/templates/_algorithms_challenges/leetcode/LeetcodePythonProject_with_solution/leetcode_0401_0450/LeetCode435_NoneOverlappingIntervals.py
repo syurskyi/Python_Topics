@@ -12,16 +12,16 @@ class Interval(object):
 
 class Solution(object):
     ___ eraseOverlapIntervals(self, intervals):
-        __ not intervals: return 0
-        intervals.sort(key=lambda x: (x.end, x.start))
+        __ n.. intervals: r.. 0
+        intervals.sort(key=l.... x: (x.end, x.start))
         maxLen = intervals[0].end
         count = 0
-        for i in range(1, len(intervals)):
+        ___ i __ r..(1, l..(intervals)):
             __ intervals[i].start >= maxLen:
                 maxLen = intervals[i].end
-            else:
+            ____:
                 count += 1
-        return count
+        r.. count
     
     ___ test(self):
         testCases = [
@@ -29,12 +29,12 @@ class Solution(object):
             [[1, 2], [1, 2], [1, 2]],
             [[1, 2], [2, 3]],
         ]
-        for intervals in testCases:
+        ___ intervals __ testCases:
             print('intervals: %s' % intervals)
-            intervals = [Interval(interval[0], interval[1]) for interval in intervals]
+            intervals = [Interval(interval[0], interval[1]) ___ interval __ intervals]
             result = self.eraseOverlapIntervals(intervals)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

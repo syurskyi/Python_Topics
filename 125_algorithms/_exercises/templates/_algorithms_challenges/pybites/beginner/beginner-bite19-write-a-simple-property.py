@@ -23,8 +23,8 @@ def test_promo_not_expired():
 
 """
 
-from datetime import datetime
-from datetime import timedelta
+____ datetime _______ datetime
+____ datetime _______ timedelta
 NOW = datetime.now()
 
 
@@ -36,7 +36,7 @@ class Promo:
 
     @property
     ___ expired(self):
-        return datetime.now() > self.expires
+        r.. datetime.now() > self.expires
 
 p = Promo('blackfriday', NOW + timedelta(days=5))
 

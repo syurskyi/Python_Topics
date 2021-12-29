@@ -46,7 +46,7 @@ Note:
 1 <= A.length <= 100
 1 <= A[i].length <= 100
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -59,19 +59,19 @@ class Solution:
 
         handle equal case [aa, ab, aa]
         """
-        m, n = len(A), len(A[0])
-        lt = [False for i in range(m)]
+        m, n = l..(A), l..(A[0])
+        lt = [False ___ i __ r..(m)]
         deleted = 0
-        for j in range(n):
-            for i in range(m-1):
+        ___ j __ r..(n):
+            ___ i __ r..(m-1):
                 __ lt[i]:
                     continue
                 __ A[i][j] > A[i+1][j]:
                     deleted += 1
                     break
-            else:  # not deleted
+            ____:  # not deleted
                 # handle equal case
-                for i in range(m-1):
-                    lt[i] = lt[i] or A[i][j] < A[i+1][j]
+                ___ i __ r..(m-1):
+                    lt[i] = lt[i] o. A[i][j] < A[i+1][j]
 
-        return deleted
+        r.. deleted

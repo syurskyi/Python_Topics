@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from grains import (
+____ grains _______ (
     on_square,
     total_after,
 )
@@ -54,5 +54,5 @@ class GrainsTest(unittest.TestCase):
             total_after(65)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

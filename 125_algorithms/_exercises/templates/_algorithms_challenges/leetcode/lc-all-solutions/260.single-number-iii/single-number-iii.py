@@ -5,15 +5,15 @@ class Solution(object):
     :rtype: List[int]
     """
     xor = 0
-    for num in nums:
+    ___ num __ nums:
       xor ^= num
 
     xor = xor & -xor
     a, b = 0, 0
-    for num in nums:
+    ___ num __ nums:
       __ num & xor:
         a ^= num
-      else:
+      ____:
         b ^= num
 
-    return a, b
+    r.. a, b

@@ -7,22 +7,22 @@
 class Solution:
     # @return a ListNode
     ___ removeNthFromEnd(self, head, n):
-        __ head is None:
-            return None
-        elif n == 0:
-            return head
-        else:
+        __ head __ N..
+            r.. N..
+        ____ n __ 0:
+            r.. head
+        ____:
             q = p = pp = head  # `pp` is the node preceding `p`
-            while q is not None:
+            while q __ n.. N..
                 __ n <= 0:
                     pp = p
                     p = p.next
                 q = q.next
                 n -= 1
             # Remove the head node
-            __ pp is p:
+            __ pp __ p:
                 head = pp.next
-            else:
+            ____:
                 pp.next = p.next
                 # Free p
-            return head
+            r.. head

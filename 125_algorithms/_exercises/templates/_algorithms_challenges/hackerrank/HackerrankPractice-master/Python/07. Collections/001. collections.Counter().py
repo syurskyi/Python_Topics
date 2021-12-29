@@ -2,7 +2,7 @@
 # Score: 10
 
 
-import collections
+_______ collections
 
 
 number_of_shoes = int(input())
@@ -10,7 +10,7 @@ sizes_in_stock = collections.Counter(map(int, input().split()))
 
 total_revenue = 0
 
-for _ in range(int(input())):
+___ _ __ r..(int(input())):
     size, price = map(int, input().split())
     __ sizes_in_stock[size]:
         total_revenue += price

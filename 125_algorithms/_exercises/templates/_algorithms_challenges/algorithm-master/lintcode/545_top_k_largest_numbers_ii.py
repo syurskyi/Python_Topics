@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+____ heapq _______ heappop, heappush
 
 
 class Solution:
@@ -7,7 +7,7 @@ class Solution:
     """
     ___ __init__(self, k):
         self.k = k
-        self.tops = []
+        self.tops    # list
 
     """
     @param: num: Number to be added
@@ -18,11 +18,11 @@ class Solution:
         # the incoming num will stay in tops
         heappush(self.tops, num)
 
-        __ len(self.tops) > self.k:
+        __ l..(self.tops) > self.k:
             heappop(self.tops)
 
     """
     @return: Top k element
     """
     ___ topk(self):
-        return sorted(self.tops, reverse=True)
+        r.. s..(self.tops, r.._T..

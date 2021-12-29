@@ -19,7 +19,7 @@ __author__ = 'Daniel'
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution(object):
@@ -28,8 +28,8 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         ptr = head  # end of odd position
         pre = head  # don't move the first
@@ -37,9 +37,9 @@ class Solution(object):
         while pre and pre.next:
             cur = pre.next
             cnt += 1
-            __ cnt % 2 == 0:
+            __ cnt % 2 __ 0:
                 pre = pre.next
-            else:
+            ____:
                 start = ptr.next
                 nxt = cur.next
 
@@ -49,7 +49,7 @@ class Solution(object):
 
                 ptr = ptr.next
 
-        return head
+        r.. head
 
     ___ oddEvenListError(self, head):
         """
@@ -57,8 +57,8 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        __ not head:
-            return
+        __ n.. head:
+            r..
 
         ptr = head  # end of first parity
         parity = ptr.val % 2
@@ -68,7 +68,7 @@ class Solution(object):
             cur = pre.next
             __ cur.val % 2 != parity:
                 pre = pre.next
-            else:
+            ____:
                 start = ptr.next
                 nxt = cur.next
 
@@ -78,4 +78,4 @@ class Solution(object):
 
                 ptr = ptr.next
 
-        return head
+        r.. head

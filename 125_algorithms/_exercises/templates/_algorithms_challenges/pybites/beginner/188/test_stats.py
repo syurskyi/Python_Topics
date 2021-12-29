@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from stats import get_all_line_counts, create_stats_report
+____ stats _______ get_all_line_counts, create_stats_report
 
 EXPECTED_OUTPUT = """
 Basic statistics:
@@ -22,19 +22,19 @@ Estimated variance for sample:
 
 @pytest.fixture
 ___ report():
-    return create_stats_report()
+    r.. create_stats_report()
 
 
 ___ test_get_all_line_counts():
-    counts = list(get_all_line_counts())
+    counts = l..(get_all_line_counts())
     # total number of test files / bites
-    assert len(counts) == 186
+    ... l..(counts) __ 186
     # all elements should be ints
-    assert all(isinstance(c, int) for c in counts)
+    ... a..(isi..(c, int) ___ c __ counts)
     # total lines of test code written
-    assert sum(counts) == 8135
+    ... s..(counts) __ 8135
 
 
 @pytest.mark.parametrize("line", EXPECTED_OUTPUT.strip().splitlines())
 ___ test_create_stats_report(report, line):
-    assert line in report
+    ... line __ report

@@ -17,14 +17,14 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
+        n = l..(s)
         i = n - 1
         res = 0
         while i >= 0:
             __ s[i] != ' ':
                 res += 1
-            else:
+            ____:
                 __ res != 0:
                     break
             i -= 1
-        return res
+        r.. res

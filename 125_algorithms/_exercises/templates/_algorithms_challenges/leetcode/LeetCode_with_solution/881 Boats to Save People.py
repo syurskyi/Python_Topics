@@ -29,8 +29,8 @@ Note:
 1 <= people.length <= 50000
 1 <= people[i] <= limit <= 30000
 """
-from typing import List
-from collections import deque
+____ typing _______ List
+____ collections _______ deque
 
 
 class Solution:
@@ -39,11 +39,11 @@ class Solution:
         sort + gready
         """
         ret = 0
-        q = deque(sorted(people))
+        q = deque(s..(people))
         while q:
             tail = q.pop()
             ret += 1
             __ q and q[0] + tail <= limit:
                 q.popleft()
 
-        return ret
+        r.. ret

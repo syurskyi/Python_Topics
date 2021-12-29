@@ -4,29 +4,29 @@ class Solution:
     @return: an integer
     """
     ___ numDecodings(self, s):
-        __ not s or s == '0':
-            return 0
+        __ n.. s o. s __ '0':
+            r.. 0
 
-        n = len(s)
+        n = l..(s)
         MOD = 10 ** 9 + 7
 
         dp = [0] * (n + 1)
         dp[0] = 1
 
-        __ s[0] == '*':
+        __ s[0] __ '*':
             dp[1] = 9  # 9 * dp[0]
-        elif s[0] != '0':
+        ____ s[0] != '0':
             dp[1] = 1  # dp[0]
 
-        for i in range(2, n + 1):
-            __ s[i - 1] == '*':
+        ___ i __ r..(2, n + 1):
+            __ s[i - 1] __ '*':
                 dp[i] += 9 * dp[i - 1]
 
-                __ s[i - 2] == '*':
+                __ s[i - 2] __ '*':
                     dp[i] += 15 * dp[i - 2]
-                elif s[i - 2] == '1':
+                ____ s[i - 2] __ '1':
                     dp[i] += 9 * dp[i - 2]
-                elif s[i - 2] == '2':
+                ____ s[i - 2] __ '2':
                     dp[i] += 6 * dp[i - 2]
 
                 dp[i] %= MOD
@@ -35,14 +35,14 @@ class Solution:
             __ s[i - 1] != '0':
                 dp[i] += dp[i - 1]
 
-            __ s[i - 2] == '*':
+            __ s[i - 2] __ '*':
                 __ int(s[i - 1]) <= 6:
                     dp[i] += 2 * dp[i - 2]
-                else:
+                ____:
                     dp[i] += dp[i - 2]
-            elif 10 <= int(s[i - 2:i]) <= 26:
+            ____ 10 <= int(s[i - 2:i]) <= 26:
                 dp[i] += dp[i - 2]
 
             dp[i] %= MOD
 
-        return dp[n]
+        r.. dp[n]

@@ -24,22 +24,22 @@ class Solution:
         :return: a list of lists of integers
         """
         candidates.sort()
-        result = []
+        result    # list
         self.get_combination(target, candidates, [], result)
-        return result
+        r.. result
 
     ___ get_combination(self, target, candidates, current, result):
-        __ not candidates or sum(current)>target:
-            return
-        __ sum(current)==target:
-            result.append(current)
-            return
+        __ n.. candidates o. s..(current)>target:
+            r..
+        __ s..(current)__target:
+            result.a..(current)
+            r..
 
         # add one of from the candidates
-        for ind, val in enumerate(candidates):
+        ___ ind, val __ enumerate(candidates):
             self.get_combination(target, candidates[ind:], current+[val], result)  # candidates[ind:] since possible repeat
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     print Solution().combinationSum([2,3,6,7], 7)

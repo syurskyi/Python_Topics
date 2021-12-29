@@ -15,35 +15,35 @@ class Solution:
         :param A: a list of integers
         :return: an integer
         """
-        length = len(A)
+        length = l..(A)
         __ length<=2:
-            return length
+            r.. length
 
         closed_ptr = 0
         duplicate_count = 0
         open_ptr = closed_ptr+1
         while open_ptr<length:
-            __ A[closed_ptr]==A[open_ptr]:
+            __ A[closed_ptr]__A[open_ptr]:
                 __ duplicate_count>=1:
                     # find next non-duplicate
                     try:
-                        while A[closed_ptr]==A[open_ptr]:
+                        while A[closed_ptr]__A[open_ptr]:
                             open_ptr+=1
                         duplicate_count = 0
                     except IndexError:
                         break
 
                 # one duplicate
-                else:
+                ____:
                     duplicate_count +=1
-            else:
+            ____:
                 duplicate_count = 0
 
             A[closed_ptr+1] = A[open_ptr]
             closed_ptr += 1
             open_ptr += 1
 
-        return closed_ptr+1  # length
+        r.. closed_ptr+1  # length
 
     ___ removeDuplicates(self, A):
         """
@@ -51,29 +51,29 @@ class Solution:
         :param A: a list of integers
         :return: an integer
         """
-        length = len(A)
+        length = l..(A)
         __ length<=2:
-            return length
+            r.. length
 
         close_ptr = 0
         duplicate_once = False  # flag
-        for open_ptr in range(close_ptr+1, length):
+        ___ open_ptr __ r..(close_ptr+1, length):
             __ A[close_ptr]!=A[open_ptr]:  # found non-duplicate
                 duplicate_once = False
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
-            elif not duplicate_once:  # found duplicate, but not duplicated before
+            ____ n.. duplicate_once:  # found duplicate, but not duplicated before
                 duplicate_once = True
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
-            else:  # found duplicate, and duplicated before, continue searching
+            ____:  # found duplicate, and duplicated before, continue searching
                 continue  # find next non-duplicate
 
-        return close_ptr+1
+        r.. close_ptr+1
 
 
 
 
 
-__ __name__=="__main__":
+__ __name____"__main__":
     Solution().removeDuplicates([1, 1, 2, 2])

@@ -1,4 +1,4 @@
-from datetime import timedelta
+____ datetime _______ timedelta
 
 
 ___ get_missing_dates(dates):
@@ -10,15 +10,15 @@ ___ get_missing_dates(dates):
 
        See the Bite description and tests for example outputs.
     """
-    first, last = min(dates), max(dates)
+    first, last = m..(dates), max(dates)
     diff = (last - first).days
 
-    missing = list()
+    missing = l..()
 
-    for k in range(1, diff + 1):
+    ___ k __ r..(1, diff + 1):
         chk_date = first + timedelta(days=k)
 
-        __ chk_date not in dates:
-            missing.append(chk_date)
+        __ chk_date n.. __ dates:
+            missing.a..(chk_date)
 
-    return missing
+    r.. missing

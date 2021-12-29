@@ -4,15 +4,15 @@ class Solution(object):
     :type nums: List[int]
     :rtype: List[int]
     """
-    ans = []
-    for i in range(0, len(nums)):
+    ans    # list
+    ___ i __ r..(0, l..(nums)):
       idx = abs(nums[i]) - 1
-      nums[idx] = -nums[idx] __ nums[idx] > 0 else nums[idx]
+      nums[idx] = -nums[idx] __ nums[idx] > 0 ____ nums[idx]
 
-    for i in range(0, len(nums)):
+    ___ i __ r..(0, l..(nums)):
       __ nums[i] > 0:
-        ans.append(i + 1)
+        ans.a..(i + 1)
 
-    for i in range(0, len(nums)):
-      nums[idx] = -nums[idx] __ nums[idx] < 0 else nums[idx]
-    return ans
+    ___ i __ r..(0, l..(nums)):
+      nums[idx] = -nums[idx] __ nums[idx] < 0 ____ nums[idx]
+    r.. ans

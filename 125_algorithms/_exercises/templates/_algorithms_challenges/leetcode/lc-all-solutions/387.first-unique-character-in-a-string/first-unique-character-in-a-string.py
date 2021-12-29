@@ -5,11 +5,11 @@ class Solution(object):
     :rtype: int
     """
     letters = [0] * 26
-    for c in s:
+    ___ c __ s:
       ci = ord(c) - ord('a')
       letters[ci] += 1
-    for i in range(0, len(s)):
+    ___ i __ r..(0, l..(s)):
       ci = ord(s[i]) - ord('a')
-      __ letters[ci] == 1:
-        return i
-    return -1
+      __ letters[ci] __ 1:
+        r.. i
+    r.. -1

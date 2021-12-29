@@ -10,16 +10,16 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        i, j = 0, len(s)-1
+        i, j = 0, l..(s)-1
         while j >= 0:
-            __ s[i] == s[j]:
+            __ s[i] __ s[j]:
                 i += 1
             j -= 1
-        __ i == len(s):
-            return s
+        __ i __ l..(s):
+            r.. s
         mid = s[:i]
         suffix = s[i:]
-        return suffix[::-1]+self.shortestPalindrome(mid)+suffix
+        r.. suffix[::-1]+self.shortestPalindrome(mid)+suffix
     
     ___ test(self):
         testCases = [
@@ -27,11 +27,11 @@ class Solution(object):
             'abcd',
             'aacecabccaa',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % (s))
             result = self.shortestPalindrome(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

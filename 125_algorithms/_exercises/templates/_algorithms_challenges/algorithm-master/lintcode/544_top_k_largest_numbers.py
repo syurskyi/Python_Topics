@@ -1,4 +1,4 @@
-from heapq import heappush, heappop
+____ heapq _______ heappush, heappop
 
 
 class Solution:
@@ -11,16 +11,16 @@ class Solution:
         """
         min heap (normal case in heapq, max heap needs to times -1)
         """
-        __ not nums:
-            return
+        __ n.. nums:
+            r..
 
-        ans = []
-        for num in nums:
+        ans    # list
+        ___ num __ nums:
             heappush(ans, num)
 
-            __ len(ans) > k:
+            __ l..(ans) > k:
                 heappop(ans)
 
-        ans.sort(reverse=True)
+        ans.sort(r.._T..
 
-        return ans
+        r.. ans

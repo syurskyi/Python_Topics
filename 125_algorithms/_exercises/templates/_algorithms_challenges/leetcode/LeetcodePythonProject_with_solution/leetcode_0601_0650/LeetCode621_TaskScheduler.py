@@ -11,13 +11,13 @@ class Solution(object):
         :rtype: int
         """
         arr = [0]*26
-        for t in tasks:
+        ___ t __ tasks:
             arr[ord(t)-ord('A')] += 1
         arr.sort()
         i = 25
-        while i >= 0 and arr[i]==arr[-1]:
+        while i >= 0 and arr[i]__arr[-1]:
             i -= 1
-        return max(len(tasks), (arr[-1]-1)*(n+1)+25-i)
+        r.. max(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     
     ___ leastInterval_own(self, tasks, n):
         """
@@ -25,37 +25,37 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        import heapq
+        _______ heapq
         hashmap = {}
-        for task in tasks:
+        ___ task __ tasks:
             hashmap[task] = hashmap.get(task, 0)+1
-        heap = []
-        for c, count in hashmap.items():
+        heap    # list
+        ___ c, count __ hashmap.items():
             heapq.heappush(heap, (-count, c))
         res = 0
-        queue = []
+        queue    # list
         while heap:
             count, c = heapq.heappop(heap)
-            queue.append((-count, c))
-            __ len(queue) > n:
-                res += len(queue)
+            queue.a..((-count, c))
+            __ l..(queue) > n:
+                res += l..(queue)
                 while queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c))
-            __ not heap:
-                count0 = len(queue)
+            __ n.. heap:
+                count0 = l..(queue)
                 while queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c))
-                __ not heap:
+                __ n.. heap:
                     res += count0
-                else:
+                ____:
                     res += n+1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -68,7 +68,7 @@ class Solution(object):
                 2,
             ],
         ]
-        for tasks, n in testCases:
+        ___ tasks, n __ testCases:
             print('tasks: %s' % tasks)
             print('n: %s' % n)
             result = self.leastInterval(tasks, n)
@@ -77,5 +77,5 @@ class Solution(object):
             print('result2: %s' % result2)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

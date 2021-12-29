@@ -5,5 +5,5 @@ class Solution(object):
     :rtype: int
     """
     nums.sort()
-    mid = nums[len(nums) / 2]
-    return sum(abs(num - mid) for num in nums)
+    mid = nums[l..(nums) / 2]
+    r.. s..(abs(num - mid) ___ num __ nums)

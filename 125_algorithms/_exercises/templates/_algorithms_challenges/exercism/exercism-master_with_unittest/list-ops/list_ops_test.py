@@ -1,8 +1,8 @@
-import unittest
-import operator
-import pytest
+_______ unittest
+_______ operator
+_______ pytest
 
-import list_ops
+_______ list_ops
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.3.0
@@ -11,13 +11,13 @@ class ListOpsTest(unittest.TestCase):
 
     # test for append
     ___ test_append_empty_lists(self):
-        self.assertEqual(list_ops.append([], []), [])
+        self.assertEqual(list_ops.a..([], []), [])
 
     ___ test_append_empty_list_to_list(self):
-        self.assertEqual(list_ops.append([], [1, 2, 3, 4]), [1, 2, 3, 4])
+        self.assertEqual(list_ops.a..([], [1, 2, 3, 4]), [1, 2, 3, 4])
 
     ___ test_append_nonempty_lists(self):
-        self.assertEqual(list_ops.append([1, 2], [2, 3, 4, 5]),
+        self.assertEqual(list_ops.a..([1, 2], [2, 3, 4, 5]),
                          [1, 2, 2, 3, 4, 5])
 
     # tests for concat
@@ -35,11 +35,11 @@ class ListOpsTest(unittest.TestCase):
 
     # tests for filter_clone
     ___ test_filter_empty_list(self):
-        self.assertEqual(list_ops.filter_clone(lambda x: x % 2 == 1, []), [])
+        self.assertEqual(list_ops.filter_clone(l.... x: x % 2 __ 1, []), [])
 
     ___ test_filter_nonempty_list(self):
         self.assertEqual(
-            list_ops.filter_clone(lambda x: x % 2 == 1, [1, 2, 3, 4, 5]),
+            list_ops.filter_clone(l.... x: x % 2 __ 1, [1, 2, 3, 4, 5]),
             [1, 3, 5])
 
     # tests for length
@@ -51,10 +51,10 @@ class ListOpsTest(unittest.TestCase):
 
     # tests for map_clone
     ___ test_map_empty_list(self):
-        self.assertEqual(list_ops.map_clone(lambda x: x + 1, []), [])
+        self.assertEqual(list_ops.map_clone(l.... x: x + 1, []), [])
 
     ___ test_map_nonempty_list(self):
-        self.assertEqual(list_ops.map_clone(lambda x: x + 1, [1, 3, 5, 7]),
+        self.assertEqual(list_ops.map_clone(l.... x: x + 1, [1, 3, 5, 7]),
                          [2, 4, 6, 8])
 
     # tests for foldl
@@ -97,5 +97,5 @@ class ListOpsTest(unittest.TestCase):
             list_ops.reverse(["xyz", 4.0, "cat", 1]), [1, "cat", 4.0, "xyz"])
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

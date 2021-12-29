@@ -6,14 +6,14 @@ class Solution(object):
     :rtype: List[int]
     """
     d = {}
-    ans = [-1] * len(findNums)
-    for i, num in enumerate(findNums):
+    ans = [-1] * l..(findNums)
+    ___ i, num __ enumerate(findNums):
       d[num] = i
-    stack = []
-    for num in nums:
+    stack    # list
+    ___ num __ nums:
       while stack and stack[-1] < num:
         top = stack.pop()
-        __ top in d:
+        __ top __ d:
           ans[d[top]] = num
-      stack.append(num)
-    return ans
+      stack.a..(num)
+    r.. ans

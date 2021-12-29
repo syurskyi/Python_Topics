@@ -8,8 +8,8 @@ Created on Feb 1, 2017
 class TreeNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution(object):
     ___ minDepth(self, root):
@@ -17,13 +17,13 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        __ not root:
-            return 0
-        __ not root.left and not root.right:
-            return 1
-        elif root.left and root.right:
-            return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
-        elif root.left and not root.right:
-            return self.minDepth(root.left) + 1
-        else:
-            return self.minDepth(root.right) + 1
+        __ n.. root:
+            r.. 0
+        __ n.. root.left and n.. root.right:
+            r.. 1
+        ____ root.left and root.right:
+            r.. m..(self.minDepth(root.left), self.minDepth(root.right)) + 1
+        ____ root.left and n.. root.right:
+            r.. self.minDepth(root.left) + 1
+        ____:
+            r.. self.minDepth(root.right) + 1

@@ -22,17 +22,17 @@ class WordFilter(object):
         self.buildTree(self.root2, words, True)
     
     ___ buildTree(self, root, words, reverse):
-        for i0, word in enumerate(words):
+        ___ i0, word __ enumerate(words):
             __ reverse:
                 word = word[::-1]
             node = root
             node.candidates.add(i0)
-            for i, c in enumerate(word):
-                __ c not in node.children:
+            ___ i, c __ enumerate(word):
+                __ c n.. __ node.children:
                     node.children[c] = TreeNode('')
                 node = node.children[c]
                 node.candidates.add(i0)
-                __ i == len(word)-1:
+                __ i __ l..(word)-1:
                     node.isLeaf = True
     
     ___ f(self, prefix, suffix):
@@ -44,22 +44,22 @@ class WordFilter(object):
         cand1 = self.helper(self.root1, prefix)
         cand2 = self.helper(self.root2, suffix[::-1])
         res = -1
-        for i in cand1:
-            __ i in cand2:
+        ___ i __ cand1:
+            __ i __ cand2:
                 res = max(res, i)
-        return res
+        r.. res
     
     ___ helper(self, root, word):
-        __ not word:
-            return root.candidates
-        for i, c in enumerate(word):
-            __ c not in root.children:
-                return set()
+        __ n.. word:
+            r.. root.candidates
+        ___ i, c __ enumerate(word):
+            __ c n.. __ root.children:
+                r.. set()
             root = root.children[c]
-            __ i == len(word)-1:
-                return root.candidates
+            __ i __ l..(word)-1:
+                r.. root.candidates
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     wordFilter = WordFilter(["abbbababbb","baaabbabbb","abababbaaa","abbbbbbbba","bbbaabbbaa","ababbaabaa","baaaaabbbb","babbabbabb","ababaababb","bbabbababa"])
     res = wordFilter.f("","abaa")
     print('res: %s' % res)

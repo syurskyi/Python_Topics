@@ -1,13 +1,13 @@
-import pytest
+_______ pytest
 
-from divide import positive_divide
+____ divide _______ positive_divide
 
 
 ___ test_positive_divide_good_values():
-    assert positive_divide(1, 2) == 0.5
-    assert positive_divide(1, 0) == 0
-    assert positive_divide(-1, -2) == 0.5
-    assert positive_divide(1.5, 2) == 0.75
+    ... positive_divide(1, 2) __ 0.5
+    ... positive_divide(1, 0) __ 0
+    ... positive_divide(-1, -2) __ 0.5
+    ... positive_divide(1.5, 2) __ 0.75
 
 
 ___ test_positive_divide_exceptions():

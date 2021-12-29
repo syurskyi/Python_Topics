@@ -5,16 +5,16 @@ ___ get_checksum(values):
     result = 0
     seed = 113
 
-    for i in values:
+    ___ i __ values:
         result = (result + i) * seed
         __(result > limit):
             result = result % limit
 
-    return result
+    r.. result
 
-values = list(map(int, input().split()))
+values = l..(map(int, input().split()))
 
-__ __name__ == "__get_checksum__":
+__ __name__ __ "__get_checksum__":
     get_checksum(values)
 
 print(get_checksum(values))

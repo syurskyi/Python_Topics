@@ -1,4 +1,4 @@
-from lintcode import ListNode
+____ lintcode _______ ListNode
 
 
 class Stack:
@@ -20,21 +20,21 @@ class Stack:
     """
     ___ pop(self):
         __ self.isEmpty():
-            return
+            r..
         node = self.tail
         self.tail = node.pre
-        self.tail.nxt = node.pre = None
+        self.tail.nxt = node.pre = N..
 
     """
     @return: An integer
     """
     ___ top(self):
         __ self.isEmpty():
-            return
-        return self.tail.val
+            r..
+        r.. self.tail.val
 
     """
     @return: True if the stack is empty
     """
     ___ isEmpty(self):
-        return self.dummy is self.tail
+        r.. self.dummy __ self.tail

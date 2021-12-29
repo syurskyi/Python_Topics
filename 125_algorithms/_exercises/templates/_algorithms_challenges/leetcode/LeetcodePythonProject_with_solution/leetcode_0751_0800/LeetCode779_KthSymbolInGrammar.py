@@ -10,14 +10,14 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        __ N == 1:
-            return 0
-        __ K%2 == 0:
+        __ N __ 1:
+            r.. 0
+        __ K%2 __ 0:
             prev = self.kthGrammar(N-1, K/2)
-            return 1 __ prev == 0 else 0
-        else:
+            r.. 1 __ prev __ 0 ____ 0
+        ____:
             prev = self.kthGrammar(N-1, (K+1)/2)
-            return 0 __ prev == 0 else 1
+            r.. 0 __ prev __ 0 ____ 1
     
     ___ test(self):
         testCases = [
@@ -27,12 +27,12 @@ class Solution(object):
             [4, 5],
             [30, 434991989],
         ]
-        for n, k in testCases:
+        ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.kthGrammar(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

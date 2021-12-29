@@ -4,27 +4,27 @@ ___ get_weekdays(calendar_output):
     
 
     mapping = {}
-    for i,line in enumerate(calendar_output.strip().splitlines()):
-        __ i == 0:
+    ___ i,line __ enumerate(calendar_output.strip().splitlines()):
+        __ i __ 0:
             continue
-        elif i == 1:
-            days_length = len(line)
-            days = line.split()
-        else:
-            numbers = [int(line[i:i+2]) __ not line[i:i+2].isspace() else 0 for i in range(0,len(line) - 1,3)]
+        ____ i __ 1:
+            days_length = l..(line)
+            days = line.s..
+        ____:
+            numbers = [int(line[i:i+2]) __ n.. line[i:i+2].isspace() ____ 0 ___ i __ r..(0,l..(line) - 1,3)]
             print(numbers)
 
 
-            for day,number in zip(days,numbers):
+            ___ day,number __ zip(days,numbers):
                 __ number != 0:
                     mapping[number] = day
 
-    return mapping
+    r.. mapping
 
 
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     april_1981 = """     April 1981
 Su Mo Tu We Th Fr Sa
           1  2  3  4

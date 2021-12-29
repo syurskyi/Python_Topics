@@ -1,8 +1,8 @@
-from collections import Counter
-import re
-import os
-from urllib.request import urlretrieve
-from dateutil.parser import parse
+____ collections _______ Counter
+_______ re
+_______ os
+____ urllib.request _______ urlretrieve
+____ dateutil.parser _______ parse
 
 commits = os.path.join(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
@@ -14,7 +14,7 @@ urlretrieve(
 YEAR_MONTH = '{y}-{m:02d}'
 
 
-___ _parse_line(line: str) -> dict:
+___ _parse_line(line: str) -> d..:
     """returns a line with the key of date type and value of add/del"""
     d_str, all_changes = line.split(' | ')
     date = parse(re.sub(r'Date:[ ]+', '', d_str)).date()
@@ -22,13 +22,13 @@ ___ _parse_line(line: str) -> dict:
     # add insertions and deletions
     insertions = re.findall(r'([0-9]+) insertions', all_changes)
     deletions = re.findall(r'([0-9]+) deletions', all_changes)
-    changes = int(insertions[0]) __ insertions else 0
-    changes += int(deletions[0]) __ deletions else 0
-    return {'date': date, 'changes': changes}
+    changes = int(insertions[0]) __ insertions ____ 0
+    changes += int(deletions[0]) __ deletions ____ 0
+    r.. {'date': date, 'changes': changes}
 
 
 ___ get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = None) -> (str, str):
+                                  year: int = N..) -> (str, str):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -40,12 +40,12 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
     """
     commits = Counter()
     with open(commit_log) as f:
-        for line in f:
+        ___ line __ f:
             dat = _parse_line(line)
-            __ dat['date'].year == year or year is None:
+            __ dat['date'].year __ year o. year __ N..
                 commits.update({dat['date'].strftime('%Y-%m'): dat['changes']})
 
     max = commits.most_common(1)[0][0]
-    min = commits.most_common()[-1][0]
+    m.. = commits.most_common()[-1][0]
 
-    return min, max
+    r.. m.., max

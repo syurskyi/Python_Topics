@@ -7,17 +7,17 @@ Created on Apr 20, 2017
 class Solution(object):
     ___ frequencySort(self, s):
         hashmap = {}
-        for c in s:
+        ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
-        bucket = [[] for _ in range(len(s)+1)]
-        for c, count in hashmap.items():
-            bucket[count].append(c)
+        bucket = [[] ___ _ __ r..(l..(s)+1)]
+        ___ c, count __ hashmap.items():
+            bucket[count].a..(c)
         result = ''
-        for i in range(len(bucket)-1, -1, -1):
+        ___ i __ r..(l..(bucket)-1, -1, -1):
             while bucket[i]:
                 c = bucket[i].pop()
                 result += c*(i)
-        return result
+        r.. result
     
     ___ test(self):
         testCases = [
@@ -26,13 +26,13 @@ class Solution(object):
             'cccaaa',
             'Aabb',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             print('s: %s' % s)
             result = self.frequencySort(s)
             print('result: %s' % result)
             print('-='*20+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
 

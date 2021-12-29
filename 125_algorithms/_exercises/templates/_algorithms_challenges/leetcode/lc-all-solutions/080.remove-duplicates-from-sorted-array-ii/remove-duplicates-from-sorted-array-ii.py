@@ -4,18 +4,18 @@ class Solution(object):
     :type nums: List[int]
     :rtype: int
     """
-    __ len(nums) <= 2:
-      return len(nums)
+    __ l..(nums) <= 2:
+      r.. l..(nums)
     cnt = 0
     j = 1
-    for i in range(1, len(nums)):
-      __ nums[i] == nums[i - 1]:
+    ___ i __ r..(1, l..(nums)):
+      __ nums[i] __ nums[i - 1]:
         cnt += 1
         __ cnt < 2:
           nums[j] = nums[i]
           j += 1
-      else:
+      ____:
         nums[j] = nums[i]
         j += 1
         cnt = 0
-    return j
+    r.. j

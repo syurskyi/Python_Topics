@@ -19,14 +19,14 @@ class Solution(object):
         while p.left:
           p = p.left
         p.left = root.left
-      __ root is pre.left:
-        pre.left = root.right or root.left
-      __ root is pre.right:
-        pre.right = root.right or root.left
-      root.left = None
+      __ root __ pre.left:
+        pre.left = root.right o. root.left
+      __ root __ pre.right:
+        pre.right = root.right o. root.left
+      root.left = N..
 
-    __ not root:
-      return root
+    __ n.. root:
+      r.. root
     pre = dummy = TreeNode(float("inf"))
     dummy.left = root
     p = dummy
@@ -34,10 +34,10 @@ class Solution(object):
       __ key > p.val:
         pre = p
         p = p.right
-      elif key < p.val:
+      ____ key < p.val:
         pre = p
         p = p.left
-      else:
+      ____:
         delete(p, pre)
         break
-    return dummy.left
+    r.. dummy.left

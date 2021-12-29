@@ -6,33 +6,33 @@ class Solution:
     @return: Return true if the symbol string can be generated, otherwise return false.
     """
     ___ canBeGenerated(self, S, start, end):
-        __ not start:
+        __ n.. start:
             start = ''
 
         N = {}
 
-        for s in S:
+        ___ s __ S:
             cur, nxt = s.split(' -> ')
-            __ cur not in N:
+            __ cur n.. __ N:
                 N[cur] = set()
             N[cur].add(nxt)
 
-        return self.dfs(N, end, start)
+        r.. self.dfs(N, end, start)
 
     ___ dfs(self, N, end, s):
-        __ len(s) > len(end):
-            return False
-        __ s == end:
-            return True
+        __ l..(s) > l..(end):
+            r.. False
+        __ s __ end:
+            r.. True
 
-        for i in range(len(s)):
-            __ (not ord('A') <= ord(s[i]) <= ord('Z') or
-                s[i] not in N):
+        ___ i __ r..(l..(s)):
+            __ (n.. ord('A') <= ord(s[i]) <= ord('Z') o.
+                s[i] n.. __ N):
                 continue
 
-            for _s in N[s[i]]:
+            ___ _s __ N[s[i]]:
                 res = self.dfs(N, end, s[:i] + _s + s[i + 1:])
                 __ res:
-                    return True
+                    r.. True
 
-        return False
+        r.. False

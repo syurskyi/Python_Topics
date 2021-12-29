@@ -1,6 +1,6 @@
-from enum import Enum
-from datetime import datetime
-from collections import Counter
+____ enum _______ Enum
+____ datetime _______ datetime
+____ collections _______ Counter
 
 
 class DateFormat(Enum):
@@ -19,10 +19,10 @@ class DateFormat(Enum):
         2. for val=n an explicit format string for a given enum member value
         """
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
-        __ val is None:
-            return d_parse_formats
-        __ 0 <= val <= len(d_parse_formats):
-            return d_parse_formats[val]
+        __ val __ N..
+            r.. d_parse_formats
+        __ 0 <= val <= l..(d_parse_formats):
+            r.. d_parse_formats[val]
         raise ValueError
 
 
@@ -40,16 +40,16 @@ ___ _maybe_DateFormats(date_str):
     a possible date format for the input date_str
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
-    maybe_formats = []
-    for idx, d_parse_fmt in enumerate(d_parse_formats):
+    maybe_formats    # list
+    ___ idx, d_parse_fmt __ enumerate(d_parse_formats):
         try:
             _parsed_date = datetime.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
-            maybe_formats.append(DateFormat(idx))
+            maybe_formats.a..(DateFormat(idx))
         except ValueError:
             pass
-    __ len(maybe_formats) == 0:
-        maybe_formats.append(DateFormat.NONPARSABLE)
-    return maybe_formats
+    __ l..(maybe_formats) __ 0:
+        maybe_formats.a..(DateFormat.NONPARSABLE)
+    r.. maybe_formats
 
 
 ___ get_dates(dates):
@@ -66,33 +66,33 @@ ___ get_dates(dates):
     format_counts = Counter()
     date_formats_to_try = DateFormat.get_d_parse_formats()
     # complete this method
-    for date in dates:
+    ___ date __ dates:
         found = False
-        for i,date_format in enumerate(date_formats_to_try):
+        ___ i,date_format __ enumerate(date_formats_to_try):
             try:
                 datetime.strptime(date,date_format)
                 format_counts[date_format] += 1
                 found = True
             except:
                 pass
-        __ not found:
+        __ n.. found:
             format_counts[DateFormat.NONPARSABLE] += 1
 
 
     max_frequency,max_count = format_counts.most_common(1)[0]
 
-    __ max_frequency == DateFormat.NONPARSABLE or sum(value == max_count for key,value in format_counts.items() __ key != DateFormat.NONPARSABLE) >= 2:
+    __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.items() __ key != DateFormat.NONPARSABLE) >= 2:
         raise InfDateFmtError
 
-    result = [] 
-    for date in dates:
+    result    # list
+    ___ date __ dates:
         try:
             date = datetime.strptime(date,max_frequency).strftime("%Y-%m-%d")
-            result.append(date)
+            result.a..(date)
         except:
-            result.append("Invalid")
+            result.a..("Invalid")
 
-    return result
+    r.. result
 
 
 

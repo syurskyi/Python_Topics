@@ -5,22 +5,22 @@ class Solution(object):
     :rtype: str
     """
     left, right = equation.split("=")
-    left = filter(lambda x: x, left.replace("+", "#P").replace("-", "#M").split("#"))
-    right = filter(lambda x: x, right.replace("+", "#M").replace("-", "#P").split("#"))
-    left[0] = "P" + left[0] __ left[0][0] not in ["P", "M"] else left[0]
-    right[0] = "M" + right[0] __ right[0][0] not in ["P", "M"] else right[0]
+    left = filter(l.... x: x, left.replace("+", "#P").replace("-", "#M").split("#"))
+    right = filter(l.... x: x, right.replace("+", "#M").replace("-", "#P").split("#"))
+    left[0] = "P" + left[0] __ left[0][0] n.. __ ["P", "M"] ____ left[0]
+    right[0] = "M" + right[0] __ right[0][0] n.. __ ["P", "M"] ____ right[0]
     left += right
     a = b = 0
-    for param in left:
+    ___ param __ left:
       param = param.replace("P", "+").replace("M", "-")
-      __ param[-1] == "x":
+      __ param[-1] __ "x":
         k = 1
-        __ len(param) > 2:
+        __ l..(param) > 2:
           k = int(param[1:-1])
-        __ param[0] == "-":
+        __ param[0] __ "-":
           a -= k
-        else:
+        ____:
           a += k
-      else:
+      ____:
         b -= int(param)
-    return "x={0}".format(str(b / a)) __ a else "No solution" __ b else "Infinite solutions"
+    r.. "x={0}".format(str(b / a)) __ a ____ "No solution" __ b ____ "Infinite solutions"

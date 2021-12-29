@@ -4,20 +4,20 @@ ___ get_pass_and_swap_number(array):
     passed = 0
     swapped = 0
 
-    n = len(array)
-    for i in range(n):
+    n = l..(array)
+    ___ i __ r..(n):
         previous_swap = swapped
-        for j in range(n-i-1):
+        ___ j __ r..(n-i-1):
             __(array[j] > array[j+1]):
                 swapped += 1
                 array[j], array[j+1] = array[j+1], array[j]
         passed += 1
 
-        __(previous_swap == swapped):
+        __(previous_swap __ swapped):
             break  
     
 
     print (passed, swapped)
 
-array = list(map(int, input().split()))
+array = l..(map(int, input().split()))
 get_pass_and_swap_number(array)

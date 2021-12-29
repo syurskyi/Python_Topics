@@ -10,17 +10,17 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        n = len(citations)
+        n = l..(citations)
         count = [0]*(n+1)
-        for c in citations:
+        ___ c __ citations:
             __ c >= n:
                 count[n] += 1
-            else:
+            ____:
                 count[c] += 1
         res = 0
         sumVal = 0
-        for i in range(n, -1, -1):
+        ___ i __ r..(n, -1, -1):
             sumVal += count[i]
             __ sumVal >= i:
-                return i
-        return res
+                r.. i
+        r.. res

@@ -12,9 +12,9 @@ class Solution:
         :param n: integer
         :return: list of string
         """
-        result = []
+        result    # list
         self.generateParenthesisDfs(result, "", n, n)
-        return result
+        r.. result
 
     ___ generateParenthesisDfs(self, result, cur, left, right):
         """
@@ -25,9 +25,9 @@ class Solution:
         :param left: number of left parenthesis remaining
         :param right: number of right parenthesis remaining
         """
-        __ left == 0 and right == 0:
-            result.append(cur)
-            return
+        __ left __ 0 and right __ 0:
+            result.a..(cur)
+            r..
 
         # add left parenthesis
         __ left > 0:
@@ -37,5 +37,5 @@ class Solution:
             self.generateParenthesisDfs(result, cur + ")", left, right - 1)
 
 
-__ __name__=="__main__":
-    assert Solution().generateParenthesis(3)==['((()))', '(()())', '(())()', '()(())', '()()()']
+__ __name____"__main__":
+    ... Solution().generateParenthesis(3)__['((()))', '(()())', '(())()', '()(())', '()()()']

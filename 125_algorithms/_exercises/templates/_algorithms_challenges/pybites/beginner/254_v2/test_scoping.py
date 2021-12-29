@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from scoping import sum_numbers
+____ scoping _______ sum_numbers
 
 
 @pytest.mark.parametrize("arg, ret, hundreds_value", [
@@ -12,6 +12,6 @@ from scoping import sum_numbers
     ([1140, 150, 160], 1450, 20),
 ])
 ___ test_sum_numbers(arg, ret, hundreds_value):
-    assert sum_numbers(arg) == ret
-    from scoping import num_hundreds
-    assert num_hundreds == hundreds_value
+    ... sum_numbers(arg) __ ret
+    ____ scoping _______ num_hundreds
+    ... num_hundreds __ hundreds_value

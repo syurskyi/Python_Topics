@@ -1,4 +1,4 @@
-from python_news import get_top_titles, Entry
+____ python_news _______ get_top_titles, Entry
 
 homepage = ("https://bites-data.s3.us-east-2.amazonaws.com/"
             "news.python.sc/index.html")
@@ -20,7 +20,7 @@ ___ test_homepage():
         Entry(title='Python 3.8 is out (www.python.org)',
               points=9, comments=0),
     ]
-    assert actual == expected
+    ... actual __ expected
 
 
 ___ test_page2():
@@ -32,4 +32,4 @@ ___ test_page2():
                      'written in Python/Django (github.com)'),
               points=3, comments=1),
     ]
-    assert actual == expected
+    ... actual __ expected

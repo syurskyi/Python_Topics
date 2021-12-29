@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from crypto_square import encode
+____ crypto_square _______ encode
 
 
 class CryptoSquareTest(unittest.TestCase):
@@ -26,5 +26,5 @@ class CryptoSquareTest(unittest.TestCase):
         self.assertEqual(ciph, encode(msg))
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

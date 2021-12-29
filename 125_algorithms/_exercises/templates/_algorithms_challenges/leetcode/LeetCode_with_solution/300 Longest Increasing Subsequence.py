@@ -10,7 +10,7 @@ Your algorithm should run in O(n2) complexity.
 
 Follow up: Could you improve it to O(n log n) time complexity?
 """
-import bisect
+_______ bisect
 
 __author__ = 'Daniel'
 
@@ -22,32 +22,32 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        MIN = [-1 for _ in xrange(n+1)]
+        n = l..(A)
+        MIN = [-1 ___ _ __ xrange(n+1)]
         k = 1
         MIN[k] = A[0]  # store value rather than index
-        for v in A[1:]:
+        ___ v __ A[1:]:
             idx = bisect.bisect_left(MIN, v, 1, k+1)
             MIN[idx] = v
-            k += 1 __ idx == k+1 else 0
+            k += 1 __ idx __ k+1 ____ 0
 
-        return k
+        r.. k
 
     ___ bin_search(self, M, A, t, lo=0, hi_ N..
-        __ not hi: hi = len(M)
+        __ n.. hi: hi = l..(M)
         while lo < hi:
             m = (lo+hi)/2
-            __ A[M[m]] == t:
-                return m
-            elif A[M[m]] < t:
+            __ A[M[m]] __ t:
+                r.. m
+            ____ A[M[m]] < t:
                 lo = m + 1
-            else:
+            ____:
                 hi = m
 
-        return lo
+        r.. lo
 
     ___ lengthOfLIS_output_all(self, A):
         """
@@ -57,38 +57,38 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        MIN = [-1 for _ in xrange(n+1)]
-        RET = [-1 for _ in xrange(n)]
+        n = l..(A)
+        MIN = [-1 ___ _ __ xrange(n+1)]
+        RET = [-1 ___ _ __ xrange(n)]
         l = 1
         MIN[l] = 0
-        for i in xrange(1, n):
+        ___ i __ xrange(1, n):
             __ A[i] > A[MIN[l]]:
                 l += 1
                 MIN[l] = i
 
                 RET[i] = MIN[l-1]  # (optional)
-            else:
+            ____:
                 j = self.bin_search(MIN, A, A[i], 1, l+1)
                 MIN[j] = i
 
-                RET[i] = MIN[j-1] __ j-1 >= 1 else -1  # (optional)
+                RET[i] = MIN[j-1] __ j-1 >= 1 ____ -1  # (optional)
 
         # build the LIS (optional)
         cur = MIN[l]
-        ret = []
+        ret    # list
         while True:
-            ret.append(A[cur])
-            __ RET[cur] == -1: break
+            ret.a..(A[cur])
+            __ RET[cur] __ -1: break
             cur = RET[cur]
 
         ret = ret[::-1]
         print ret
 
-        return l
+        r.. l
 
     ___ lengthOfLIS_dp(self, A):
         """
@@ -103,21 +103,21 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        n = len(A)
-        F = [1 for _ in xrange(n)]
+        n = l..(A)
+        F = [1 ___ _ __ xrange(n)]
         maxa = 1
-        for i in xrange(1, n):
+        ___ i __ xrange(1, n):
             F[i] = max(
-                F[j] + 1 __ A[i] > A[j] else 1
-                for j in xrange(i)
+                F[j] + 1 __ A[i] > A[j] ____ 1
+                ___ j __ xrange(i)
             )
             maxa = max(maxa, F[i])
 
-        return maxa
+        r.. maxa
 
 
-__ __name__ == "__main__":
-    assert Solution().lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4
+__ __name__ __ "__main__":
+    ... Solution().lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) __ 4

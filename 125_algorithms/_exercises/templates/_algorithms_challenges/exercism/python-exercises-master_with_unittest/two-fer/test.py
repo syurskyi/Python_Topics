@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-import two_fer
+_______ two_fer
 
 
 class Two_Fer_test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Two_Fer_test(unittest.TestCase):
         self.assertEqual(two_fer.two_fer("Bob"), "One for Bob, one for me.")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

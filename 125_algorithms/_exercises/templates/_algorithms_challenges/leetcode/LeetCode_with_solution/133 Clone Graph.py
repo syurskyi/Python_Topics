@@ -27,9 +27,9 @@ __author__ = 'Danyang'
 class UndirectedGraphNode:
     ___ __init__(self, x):
         self.label = x
-        self.neighbors = []
+        self.neighbors    # list
     ___ __repr__(self):
-        return repr(self.label)
+        r.. repr(self.label)
 
 class Solution:
     ___ cloneGraph_TLE(self, node):
@@ -38,7 +38,7 @@ class Solution:
         :param node: UndirectedGraphNode
         :return: UndirectedGraphNode
         """
-        return self.clone_graph_visited(node, set())
+        r.. self.clone_graph_visited(node, set())
 
     ___ clone_graph_visited(self, node, visited_set):
         """
@@ -48,16 +48,16 @@ class Solution:
         :param visited_set:
         :return:
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
         visited_set.add(node)
-        neighbors_cloned = [self.clone_graph_visited(neighbor, set(visited_set)) for neighbor in node.neighbors __ neighbor not in visited_set]
+        neighbors_cloned = [self.clone_graph_visited(neighbor, set(visited_set)) ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
         node_cloned = UndirectedGraphNode(node.label)
-        for neighbor_cloned in neighbors_cloned:
-            __ neighbor_cloned not in visited_set:
-                neighbor_cloned.neighbors.append(node_cloned)
+        ___ neighbor_cloned __ neighbors_cloned:
+            __ neighbor_cloned n.. __ visited_set:
+                neighbor_cloned.neighbors.a..(node_cloned)
         node_cloned.neighbors = neighbors_cloned
-        return node_cloned
+        r.. node_cloned
 
     ___ cloneGraph(self, node):
         """
@@ -70,8 +70,8 @@ class Solution:
         :param node: UndirectedGraphNode
         :return: UndirectedGraphNode
         """
-        __ not node:
-            return
+        __ n.. node:
+            r..
 
         original2copy = {} # dict  #!important
         q = [node]  # queue of nodes whose the neighbors are to be copied
@@ -80,25 +80,25 @@ class Solution:
         original2copy[node] = clone
         while q:
             cur = q.pop()
-            for neighbor in cur.neighbors:
-                __ neighbor in original2copy:  # already copied
-                    original2copy[cur].neighbors.append(original2copy[neighbor])
-                else:
-                    q.append(neighbor)
+            ___ neighbor __ cur.neighbors:
+                __ neighbor __ original2copy:  # already copied
+                    original2copy[cur].neighbors.a..(original2copy[neighbor])
+                ____:
+                    q.a..(neighbor)
                     clone_neighbor = UndirectedGraphNode(neighbor.label)
                     original2copy[neighbor] = clone_neighbor
-                    original2copy[cur].neighbors.append(original2copy[neighbor])
+                    original2copy[cur].neighbors.a..(original2copy[neighbor])
 
-        return original2copy[node]
+        r.. original2copy[node]
 
 
-__ __name__=="__main__":
-    lst = [UndirectedGraphNode(i+1) for i in range(3)]
-    for item in lst:
-        item.neighbors = list(lst)
+__ __name____"__main__":
+    lst = [UndirectedGraphNode(i+1) ___ i __ r..(3)]
+    ___ item __ lst:
+        item.neighbors = l..(lst)
         item.neighbors.remove(item)
     cloned = Solution().cloneGraph(lst[0])
-    assert cloned.neighbors[0].label in (2, 3)
-    assert cloned.neighbors[1].label in (2, 3)
+    ... cloned.neighbors[0].label __ (2, 3)
+    ... cloned.neighbors[1].label __ (2, 3)
 
 

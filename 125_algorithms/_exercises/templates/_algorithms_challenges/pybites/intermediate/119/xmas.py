@@ -7,10 +7,10 @@ ___ generate_xmas_tree(rows=10):
        *****"""
     #return_str = ''
     return_str = f"{' '*(rows-1)}*"
-    for i in range(2, rows+1):
+    ___ i __ r..(2, rows+1):
         return_str += '\n'
         return_str += f"{' '*(rows-i)}{'*'*i}{'*'*(i-1)}" 
-    return return_str
+    r.. return_str
 
 
 #generate_xmas_tree(20)

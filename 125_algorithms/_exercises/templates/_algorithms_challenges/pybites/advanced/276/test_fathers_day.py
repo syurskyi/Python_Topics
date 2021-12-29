@@ -1,4 +1,4 @@
-from fathers_day import get_father_days, generate_father_day_planning
+____ fathers_day _______ get_father_days, generate_father_day_planning
 
 CALENDAR_OUTPUT = """February 23
 - Russia
@@ -62,31 +62,31 @@ November 8
 
 ___ test_get_father_days_default():
     father_days = get_father_days()
-    assert len(father_days) == 12
-    number_countries = sum(len(val) for val in father_days.values())
-    assert number_countries == 35
-    assert father_days['June 14'] == ['U.S.', 'Canada', 'U.K.']
-    assert father_days['March 19'] == [
+    ... l..(father_days) __ 12
+    number_countries = s..(l..(val) ___ val __ father_days.values())
+    ... number_countries __ 35
+    ... father_days['June 14'] __ ['U.S.', 'Canada', 'U.K.']
+    ... father_days['March 19'] __ [
         'Andora', 'Bolivia', 'Honduras', 'Italy',
         'Liechtenstein', 'Portugal', 'Spain']
-    assert father_days['June 23'] == ['Nicaragua', 'Poland']
-    assert father_days['August 9'] == ['Samoa', 'Brazil']
-    assert father_days['June 7'] == ['Austria', 'Belgium']
-    assert father_days['May 21'] == ['Germany']
+    ... father_days['June 23'] __ ['Nicaragua', 'Poland']
+    ... father_days['August 9'] __ ['Samoa', 'Brazil']
+    ... father_days['June 7'] __ ['Austria', 'Belgium']
+    ... father_days['May 21'] __ ['Germany']
 
 
 ___ test_get_father_days_other_years():
     father_days = get_father_days(year=2021)
     # changing dates
-    assert father_days['June 20'] == ['U.S.', 'Canada', 'U.K.']
-    assert father_days['August 8'] == ['Samoa', 'Brazil']
-    assert father_days['May 13'] == ['Germany']
-    assert father_days['June 13'] == ['Austria', 'Belgium']
+    ... father_days['June 20'] __ ['U.S.', 'Canada', 'U.K.']
+    ... father_days['August 8'] __ ['Samoa', 'Brazil']
+    ... father_days['May 13'] __ ['Germany']
+    ... father_days['June 13'] __ ['Austria', 'Belgium']
     father_days = get_father_days(year=2022)
-    assert father_days['May 26'] == ['Germany']
-    assert father_days['June 12'] == ['Austria', 'Belgium']
+    ... father_days['May 26'] __ ['Germany']
+    ... father_days['June 12'] __ ['Austria', 'Belgium']
     # remains the same
-    assert father_days['March 19'] == [
+    ... father_days['March 19'] __ [
         'Andora', 'Bolivia', 'Honduras', 'Italy',
         'Liechtenstein', 'Portugal', 'Spain']
 
@@ -94,4 +94,4 @@ ___ test_get_father_days_other_years():
 ___ test_generate_father_day_planning(capfd):
     generate_father_day_planning()
     actual = capfd.readouterr()[0]
-    assert actual.strip() == CALENDAR_OUTPUT
+    ... actual.strip() __ CALENDAR_OUTPUT

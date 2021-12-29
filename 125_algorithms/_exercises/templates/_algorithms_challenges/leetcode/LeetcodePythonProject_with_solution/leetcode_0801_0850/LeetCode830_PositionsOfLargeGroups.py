@@ -10,14 +10,14 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         s = S
-        res = []
+        res    # list
         left = 0
-        for i in range(len(s)+1):
-            __ i == len(s) or s[i] != s[left]:
+        ___ i __ r..(l..(s)+1):
+            __ i __ l..(s) o. s[i] != s[left]:
                 __ i-left >= 3:
-                    res.append([left, i-1])
+                    res.a..([left, i-1])
                 left = i
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -26,10 +26,10 @@ class Solution(object):
             'abc',
             'abcdddeeeeaabbbcd',
         ]
-        for s in testCases:
+        ___ s __ testCases:
             result = self.largeGroupPositions(s)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

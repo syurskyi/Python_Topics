@@ -3,9 +3,9 @@
 
 
 n, m = map(int, input().split())
-coins = list(map(int, input().split()))
+coins = l..(map(int, input().split()))
 ans = [1] + [0] * n
-for i in range(m):
-    for j in range(coins[i], n + 1):
+___ i __ r..(m):
+    ___ j __ r..(coins[i], n + 1):
         ans[j] += ans[j - coins[i]]
 print(ans[-1])

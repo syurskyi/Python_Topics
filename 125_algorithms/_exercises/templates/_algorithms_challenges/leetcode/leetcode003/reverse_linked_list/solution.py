@@ -12,7 +12,7 @@ implement both?
 class ListNode(object):
     ___ __init__(self, x):
         self.val = x
-        self.next = None
+        self.next = N..
 
 
 class Solution(object):
@@ -23,19 +23,19 @@ class Solution(object):
 
         Iterative
         """
-        res = None
-        while head is not None:
+        res = N..
+        while head __ n.. N..
             next_node = head.next
             # First node encountered
-            __ res is None:
+            __ res __ N..
                 res = head
-                res.next = None
-            else:
+                res.next = N..
+            ____:
                 # Insert to the head of `res`
                 head.next = res
                 res = head
             head = next_node
-        return res
+        r.. res
 
 
 n1 = ListNode(1)

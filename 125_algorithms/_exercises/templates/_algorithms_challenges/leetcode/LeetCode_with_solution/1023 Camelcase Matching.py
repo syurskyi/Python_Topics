@@ -38,34 +38,34 @@ Note:
 1 <= pattern.length <= 100
 All strings consists only of lower and upper case English letters.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
     ___ camelMatch(self, queries: List[str], pattern: str) -> List[bool]:
-        ret = []
-        for q in queries:
-            ret.append(self.match(q, pattern))
+        ret    # list
+        ___ q __ queries:
+            ret.a..(self.match(q, pattern))
             
-        return ret
+        r.. ret
 
     ___ match(self, q, p):
         i = 0
         j = 0
-        while i < len(q) and j < len(p):
-            __ q[i] == p[j]:
+        while i < l..(q) and j < l..(p):
+            __ q[i] __ p[j]:
                 i += 1
                 j += 1
-            elif q[i].islower():
+            ____ q[i].islower():
                 i += 1
-            else:
+            ____:
                 break
 
-        while i < len(q) and q[i].islower():
+        while i < l..(q) and q[i].islower():
             i += 1
 
-        return i == len(q) and j == len(p)
+        r.. i __ l..(q) and j __ l..(p)
 
 
-__ __name__ == "__main__":
-    assert Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") == [True, False, True, False, False]
+__ __name__ __ "__main__":
+    ... Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") __ [True, False, True, False, False]

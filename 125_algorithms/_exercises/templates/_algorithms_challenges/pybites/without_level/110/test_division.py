@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from division import divide_numbers
+____ division _______ divide_numbers
 
 
 @pytest.mark.parametrize("numerator, denominator, expected", [
@@ -13,7 +13,7 @@ from division import divide_numbers
     (1, 2.9, 0.5),
 ])
 ___ test_divide_numbers_good_inputs(numerator, denominator, expected):
-    assert divide_numbers(numerator, denominator) == expected
+    ... divide_numbers(numerator, denominator) __ expected
 
 
 @pytest.mark.parametrize("numerator, denominator", [
@@ -29,4 +29,4 @@ ___ test_divide_numbers_raises_value_error(numerator, denominator):
 
 
 ___ test_divide_by_zero_does_not_raise_zero_division_exception():
-    assert divide_numbers(10, 0) == 0
+    ... divide_numbers(10, 0) __ 0

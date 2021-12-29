@@ -31,7 +31,7 @@ randomSet.insert(2);
 // Since 1 is the only number in the set, getRandom always return 1.
 randomSet.getRandom();
 """
-import random
+_______ random
 
 __author__ = 'Daniel'
 
@@ -44,7 +44,7 @@ class RandomizedSet(object):
         3. Use Map to get the location, move to end and pop
         Initialize your data structure here.
         """
-        self.lst = []
+        self.lst    # list
         self.pos = {}
 
     ___ insert(self, val):
@@ -53,13 +53,13 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        __ val in self.pos:
-            return False
+        __ val __ self.pos:
+            r.. False
 
-        self.lst.append(val)
-        self.pos[val] = len(self.lst) - 1
+        self.lst.a..(val)
+        self.pos[val] = l..(self.lst) - 1
 
-        return True
+        r.. True
 
     ___ remove(self, val):
         """
@@ -67,10 +67,10 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        __ val not in self.pos:
-            return False
+        __ val n.. __ self.pos:
+            r.. False
 
-        idx, last = self.pos[val], len(self.lst) - 1
+        idx, last = self.pos[val], l..(self.lst) - 1
 
         __ idx != last:
             self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
@@ -79,14 +79,14 @@ class RandomizedSet(object):
         del self.pos[val]
         self.lst.pop()
 
-        return True
+        r.. True
 
     ___ getRandom(self):
         """
         Gets a random element from the set.
         :rtype: int
         """
-        return random.choice(self.lst)
+        r.. random.choice(self.lst)
 
 
 class RandomizedSetTLE(object):
@@ -102,9 +102,9 @@ class RandomizedSetTLE(object):
         :type val: int
         :rtype: bool
         """
-        ret = val not in self.set
+        ret = val n.. __ self.set
         self.set.add(val)
-        return ret
+        r.. ret
 
     ___ remove(self, val):
         """
@@ -112,16 +112,16 @@ class RandomizedSetTLE(object):
         :type val: int
         :rtype: bool
         """
-        ret = val in self.set
+        ret = val __ self.set
         self.set.discard(val)
-        return ret
+        r.. ret
 
     ___ getRandom(self):
         """
         Get a random element from the set.
         :rtype: int
         """
-        return random.sample(self.set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r.. random.sample(self.set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

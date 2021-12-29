@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from linked_list import LinkedList
+____ linked_list _______ LinkedList
 
 
 class LinkedListTest(unittest.TestCase):
@@ -49,11 +49,11 @@ class LinkedListTest(unittest.TestCase):
         lst = LinkedList()
         lst.push(10)
         lst.push(20)
-        self.assertEqual(len(lst), 2)
+        self.assertEqual(l..(lst), 2)
         lst.shift()
-        self.assertEqual(len(lst), 1)
+        self.assertEqual(l..(lst), 1)
         lst.pop()
-        self.assertEqual(len(lst), 0)
+        self.assertEqual(l..(lst), 0)
 
     @unittest.skip("extra-credit")
     ___ test_iterator(self):
@@ -65,5 +65,5 @@ class LinkedListTest(unittest.TestCase):
         self.assertEqual(next(iterator), 20)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

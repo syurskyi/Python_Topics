@@ -2,7 +2,7 @@
 """
 Given a string, sort it in decreasing order based on the frequency of characters.
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution(object):
@@ -15,21 +15,21 @@ class Solution(object):
         :rtype: str
         """
         counter = defaultdict(int)
-        for c in s:
+        ___ c __ s:
             counter[c] += 1
 
-        bucket = {count: [] for count in range(1, len(s)+1)}
-        for k, v in counter.items():
-            bucket[v].append(k)
+        bucket = {count: [] ___ count __ r..(1, l..(s)+1)}
+        ___ k, v __ counter.items():
+            bucket[v].a..(k)
 
-        ret = []
-        for count in reversed(range(1, len(s) + 1)):
+        ret    # list
+        ___ count __ reversed(r..(1, l..(s) + 1)):
             __ bucket[count]:
-                for c in bucket[count]:
-                    ret.append(c * count)
+                ___ c __ bucket[count]:
+                    ret.a..(c * count)
 
-        return "".join(ret)
+        r.. "".join(ret)
 
 
-__ __name__ == "__main__":
-    assert Solution().frequencySort("tree") == "eetr"
+__ __name__ __ "__main__":
+    ... Solution().frequencySort("tree") __ "eetr"

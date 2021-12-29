@@ -5,19 +5,19 @@ class Solution:
         :type guess: str
         :rtype: str
         """
-        __ not secret or not guess or len(secret) != len(guess):
-            return ''
+        __ n.. secret o. n.. guess o. l..(secret) != l..(guess):
+            r.. ''
 
         TMPL = '{}A{}B'
         bulls = 0
         cows = 0
         cnts = [0] * 10
 
-        for i in range(len(secret)):
+        ___ i __ r..(l..(secret)):
             s = ord(secret[i]) - ord('0')
             g = ord(guess[i]) - ord('0')
 
-            __ s == g:
+            __ s __ g:
                 bulls += 1
                 continue
 
@@ -29,7 +29,7 @@ class Solution:
             __ cnts[g] >= 0:
                 cows += 1
 
-        return TMPL.format(bulls, cows)
+        r.. TMPL.format(bulls, cows)
 
 
 class Solution:
@@ -39,8 +39,8 @@ class Solution:
         :type guess: str
         :rtype: str
         """
-        __ not secret or not guess or len(secret) != len(guess):
-            return ''
+        __ n.. secret o. n.. guess o. l..(secret) != l..(guess):
+            r.. ''
 
         TMPL = '{}A{}B'
         bulls = 0
@@ -48,14 +48,14 @@ class Solution:
         cnt_s = [0] * 10
         cnt_g = [0] * 10
 
-        for i in range(len(secret)):
-            __ secret[i] == guess[i]:
+        ___ i __ r..(l..(secret)):
+            __ secret[i] __ guess[i]:
                 bulls += 1
-            else:
+            ____:
                 cnt_s[int(secret[i])] += 1
                 cnt_g[int(guess[i])] += 1
 
-        for i in range(10):
-            cows += min(cnt_s[i], cnt_g[i])
+        ___ i __ r..(10):
+            cows += m..(cnt_s[i], cnt_g[i])
 
-        return TMPL.format(bulls, cows)
+        r.. TMPL.format(bulls, cows)

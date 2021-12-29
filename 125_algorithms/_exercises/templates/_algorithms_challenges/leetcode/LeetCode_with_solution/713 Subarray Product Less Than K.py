@@ -18,7 +18,7 @@ Note:
 0 < nums[i] < 1000.
 0 <= k < 10^6.
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -30,7 +30,7 @@ class Solution:
         i = 0
         ret = 0
         p = 1
-        for j in range(len(nums)):
+        ___ j __ r..(l..(nums)):
             p *= nums[j]
             while p >= k and i <= j:
                 p //= nums[i]
@@ -39,4 +39,4 @@ class Solution:
             ret += j - i + 1  # count attribute
             # if i > j, i can only be j + 1
 
-        return ret
+        r.. ret

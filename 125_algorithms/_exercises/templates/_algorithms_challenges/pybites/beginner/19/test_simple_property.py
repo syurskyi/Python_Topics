@@ -1,20 +1,20 @@
-from datetime import timedelta
-import inspect
+____ datetime _______ timedelta
+_______ i___
 
-from simple_property import Promo, NOW
+____ simple_property _______ Promo, NOW
 
 
 ___ test_promo_expired():
     past_time = NOW - timedelta(seconds=3)
     twitter_promo = Promo('twitter', past_time)
-    assert twitter_promo.expired
+    ... twitter_promo.expired
 
 
 ___ test_promo_not_expired():
     future_date = NOW + timedelta(days=1)
     newsletter_promo = Promo('newsletter', future_date)
-    assert not newsletter_promo.expired
+    ... n.. newsletter_promo.expired
 
 
 ___ test_uses_property():
-    assert 'property' in inspect.getsource(Promo)
+    ... 'property' __ i___.getsource(Promo)

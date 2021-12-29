@@ -4,19 +4,19 @@ class Solution(object):
     :type grid: List[List[int]]
     :rtype: int
     """
-    __ len(grid) == 0:
-      return 0
-    dp = [0 for _ in range(0, len(grid[0]))]
+    __ l..(grid) __ 0:
+      r.. 0
+    dp = [0 ___ _ __ r..(0, l..(grid[0]))]
     dp[0] = grid[0][0]
 
-    for j in range(1, len(grid[0])):
+    ___ j __ r..(1, l..(grid[0])):
       dp[j] = dp[j - 1] + grid[0][j]
 
-    for i in range(1, len(grid)):
+    ___ i __ r..(1, l..(grid)):
       pre = dp[0] + grid[i][0]
-      for j in range(1, len(grid[0])):
-        dp[j] = min(dp[j], pre) + grid[i][j]
+      ___ j __ r..(1, l..(grid[0])):
+        dp[j] = m..(dp[j], pre) + grid[i][j]
         pre = dp[j]
       dp[0] += grid[i][0]
 
-    return dp[-1]
+    r.. dp[-1]

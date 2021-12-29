@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from password import password_complexity
+____ password _______ password_complexity
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -31,4 +31,4 @@ from password import password_complexity
     ('@$@$@$@$@$', 3),
 ])
 ___ test_password_complexity(arg, expected):
-    assert password_complexity(arg) == expected
+    ... password_complexity(arg) __ expected

@@ -35,9 +35,9 @@ class ShapeFactory:
     # @param {string} shapeType a string
     # @return {Shape} Get object of type Shape
     ___ getShape(self, shapeType):
-        __ shapeType == 'Triangle':
-            return Triangle()
-        __ shapeType == 'Rectangle':
-            return Rectangle()
-        __ shapeType == 'Square':
-            return Square()
+        __ shapeType __ 'Triangle':
+            r.. Triangle()
+        __ shapeType __ 'Rectangle':
+            r.. Rectangle()
+        __ shapeType __ 'Square':
+            r.. Square()

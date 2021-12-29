@@ -1,9 +1,9 @@
-import string
+_______ string
 
-import pytest
-import pandas as pd
+_______ pytest
+_______ pandas as pd
 
-import series as se
+_______ series as se
 
 file_name = "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
 df = pd.read_csv(file_name)
@@ -12,31 +12,31 @@ df = pd.read_csv(file_name)
 @pytest.fixture()
 ___ sepal_length_series():
     """Returns the Sepal Length Series from the Iris DataFrame"""
-    return df.sepal_length.sort_values().reset_index(drop=True)
+    r.. df.sepal_length.sort_values().reset_index(drop=True)
 
 
 @pytest.fixture()
 ___ int_series_vsmall():
     """Returns a pandas Series containing ints"""
-    return pd.Series(range(1, 6))
+    r.. pd.Series(r..(1, 6))
 
 
 @pytest.fixture()
 ___ int_series_small():
     """Returns a pandas Series containing ints"""
-    return pd.Series(range(10))
+    r.. pd.Series(r..(10))
 
 
 @pytest.fixture()
 ___ int_series_vsmall_offset_index():
     """Returns a pandas Series containing ints"""
-    return pd.Series(range(0, 10, 2), index=range(0, 10, 2))
+    r.. pd.Series(r..(0, 10, 2), index=r..(0, 10, 2))
 
 
 @pytest.fixture()
 ___ letters_series():
     """Returns a pandas Series containing all lower case letters"""
-    return pd.Series(list(string.ascii_lowercase))
+    r.. pd.Series(l..(string.ascii_lowercase))
 
 
 @pytest.mark.parametrize(
@@ -57,9 +57,9 @@ ___ letters_series():
     ],
 )
 ___ test_series_simple_math(int_series_small, arg, expected):
-    assert all(
-        expected[idx] == val
-        for idx, val in enumerate(
+    ... a..(
+        expected[idx] __ val
+        ___ idx, val __ enumerate(
             se.series_simple_math(int_series_small, arg[0], arg[1])
         )
     )
@@ -80,9 +80,9 @@ ___ test_complex_series_maths(
     result = se.complex_series_maths(
         int_series_vsmall, int_series_vsmall_offset_index, arg
     )
-    result = ",".join(str(n) for n in result)
-    expected = ",".join(str(n) for n in expected)
-    assert result == expected
+    result = ",".join(str(n) ___ n __ result)
+    expected = ",".join(str(n) ___ n __ expected)
+    ... result __ expected
 
 
 @pytest.mark.parametrize(
@@ -154,19 +154,19 @@ ___ test_complex_series_maths(
 )
 ___ test_create_series_mask(letters_series, arg, expected):
     result = se.create_series_mask(letters_series, arg)
-    assert all([result[idx] == exp for idx, exp in enumerate(expected)])
-    assert all(l in arg for l in letters_series[result])
+    ... a..([result[idx] __ exp ___ idx, exp __ enumerate(expected)])
+    ... a..(l __ arg ___ l __ letters_series[result])
 
 
 ___ test_custom_series_function(sepal_length_series):
     result = se.custom_series_function(sepal_length_series, 0.1)
-    assert len(result) == 51
-    assert round(result.mean(), 4) == 5.6725
-    assert max(result.index) == 149 and max(result.values) == 7.9
-    assert min(result.index) == 0 and min(result.values) == 4.3
-    assert result[82] == 5.9
-    assert result.iloc[10] == 5.0
-    assert result.iloc[11] == 5.1
-    assert result.iloc[20] == 5.7
-    assert result.iloc[37] == 5.9
-    assert result.iloc[38] == 6.4
+    ... l..(result) __ 51
+    ... round(result.mean(), 4) __ 5.6725
+    ... max(result.index) __ 149 and max(result.values) __ 7.9
+    ... m..(result.index) __ 0 and m..(result.values) __ 4.3
+    ... result[82] __ 5.9
+    ... result.iloc[10] __ 5.0
+    ... result.iloc[11] __ 5.1
+    ... result.iloc[20] __ 5.7
+    ... result.iloc[37] __ 5.9
+    ... result.iloc[38] __ 6.4

@@ -12,6 +12,6 @@ class Solution:
         :rtype: bool
         """
         __ n <= 0:
-            return False
+            r.. False
 
-        return n & (n-1) == 0
+        r.. n & (n-1) __ 0

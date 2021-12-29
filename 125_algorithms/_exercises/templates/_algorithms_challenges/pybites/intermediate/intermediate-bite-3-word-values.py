@@ -14,8 +14,8 @@ With these two pieces in place, write a third function that takes a list
 of words and returns the word with the highest value.
 Look at the TESTS tab to see what your code needs to pass. Enjoy!
 """
-import os
-import urllib.request
+_______ os
+_______ urllib.request
 
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
@@ -28,51 +28,51 @@ urllib.request.urlretrieve(f'{S3}{DICT}', DICTIONARY)
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score for score, letters in scrabble_scores
-                 for letter in letters.split()}
+LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+                 ___ letter __ letters.s.. }
 
 # start coding
 
 ___ load_words_v1():
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
-    l = []
+    l    # list
     with open(DICTIONARY) as file:
-        for line in file:
-            l.append(line.strip())
-    return l
+        ___ line __ file:
+            l.a..(line.strip())
+    r.. l
 
 ___ load_words_v2():
 
     with open(DICTIONARY) as file:
-        return [word.strip() for word in file.read().split()]
+        r.. [word.strip() ___ word __ file.read().s.. ]
 
 ___ calc_word_value_v1(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
     value = 0
-    for char in word.upper():
+    ___ char __ word.upper():
         try:
             value += LETTER_SCORES[char]
         except:
             value = 0
-    return value
+    r.. value
 
 ___ calc_word_value_v2(word):
-    return sum(LETTER_SCORES.get(char.upper(), 0) for char in word)
+    r.. s..(LETTER_SCORES.get(char.upper(), 0) ___ char __ word)
 
 
 ___ max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
     max = ()
-    for word in words:
+    ___ word __ words:
         value = calc_word_value(word)
-        __ max == ():
+        __ max __ ():
             max = (word, value)
-        else:
+        ____:
             __ value > max[1]:
                 max = (word, value)
-    return max[0]
+    r.. max[0]
 
 ___ max_word_value_v2(words):
-    return max(words, key=calc_word_value)
+    r.. max(words, key=calc_word_value)
 
 print(max_word_value(['zime', 'fgrtgtrtvv']))

@@ -1,8 +1,8 @@
-import pytest
+_______ pytest
 
-from Bio.Data.CodonTable import TranslationError
+____ Bio.Data.CodonTable _______ TranslationError
 
-from translate_cds import translate_cds
+____ translate_cds _______ translate_cds
 
 # Note on Bio.Seq table ids: These can be found in the
 # Seq.CodonTable.ambiguous_generic_by_name variable
@@ -88,8 +88,8 @@ ___ test_translate_cds(cds, table, expected):
     Test if returned protein sequence and type are correct
     """
     result = translate_cds(cds, table)
-    assert isinstance(result, str)
-    assert result.upper() == expected
+    ... isi..(result, str)
+    ... result.upper() __ expected
 
 
 @pytest.mark.parametrize(

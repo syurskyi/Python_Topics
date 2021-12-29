@@ -18,13 +18,13 @@ ___ gen_rhombus(width):
     """
     
     stars =[]
-    for line in range(width + 1):
-        stars.append(line * '*')
+    ___ line __ r..(width + 1):
+        stars.a..(line * '*')
 
     count = 0
-    for line in stars:
-        __ count % 1 == 0:
+    ___ line __ stars:
+        __ count % 1 __ 0:
             stars.remove(line)
             count += 1
 
-    return stars + list(reversed(stars))[1:]
+    r.. stars + l..(reversed(stars))[1:]

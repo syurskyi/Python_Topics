@@ -24,7 +24,7 @@ class Solution(object):
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
             prev.next = ListNode(tmpVal)
             l1 = l1.next
@@ -35,7 +35,7 @@ class Solution(object):
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
             prev.next = ListNode(tmpVal)
             l1 = l1.next
@@ -45,11 +45,11 @@ class Solution(object):
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            else:
+            ____:
                 carry = 0
             prev.next = ListNode(tmpVal)
             l2 = l2.next
             prev = prev.next
         __ carry:
             prev.next = ListNode(1)
-        return dummy.next
+        r.. dummy.next

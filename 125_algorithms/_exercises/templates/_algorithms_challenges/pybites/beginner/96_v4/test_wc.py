@@ -1,8 +1,8 @@
-import re
+_______ re
 
-import pytest
+_______ pytest
 
-from Previous.wc import wc
+____ Previous.wc _______ wc
 
 lines = [b'Hello world',
          b'Keep calm and code in Python',
@@ -21,6 +21,6 @@ ___ test_wc(some_text, expected, tmp_path):
     # replace tabs / multiple spaces by single space
     output = re.sub(r'\t|\s+', ' ', output)
 
-    assert expected in output
+    ... expected __ output
     # file with/without path allowed
-    assert f.name in output
+    ... f.name __ output

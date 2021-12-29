@@ -1,6 +1,6 @@
-import unittest
+_______ unittest
 
-from sgf_parsing import parse, SgfTree
+____ sgf_parsing _______ parse, SgfTree
 
 
 class SgfParsingTest(unittest.TestCase):
@@ -87,8 +87,8 @@ class SgfParsingTest(unittest.TestCase):
             self.assertRaisesRegex = self.assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+        r.. self.assertRaisesRegex(exception, r".+")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

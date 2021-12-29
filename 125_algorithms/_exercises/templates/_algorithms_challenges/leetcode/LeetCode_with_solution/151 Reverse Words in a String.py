@@ -25,6 +25,6 @@ class Solution:
         :param s: a string
         :return: a string
         """
-        words_lst = s.split()  # not s.split(" ")
+        words_lst = s.s..   # not s.split(" ")
         words_lst = reversed(words_lst)
-        return ' '.join(words_lst)
+        r.. ' '.join(words_lst)

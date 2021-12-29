@@ -16,15 +16,15 @@ is 11. Hence return [3, 14.5, 11].
 Note:
 The range of node's value is in the range of 32-bit signed integer.
 """
-from typing import List
+____ typing _______ List
 
 
 # Definition for a binary tree node.
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -32,22 +32,22 @@ class Solution:
         """
         BFS
         """
-        ret = []
-        __ not root:
-            return ret
+        ret    # list
+        __ n.. root:
+            r.. ret
 
         q = [root]
         while q:
-            n = len(q)
-            avg = sum(map(lambda node: node.val, q)) / n
-            ret.append(avg)
-            cur_q = []
-            for node in q:
+            n = l..(q)
+            avg = s..(map(l.... node: node.val, q)) / n
+            ret.a..(avg)
+            cur_q    # list
+            ___ node __ q:
                 __ node.left:
-                    cur_q.append(node.left)
+                    cur_q.a..(node.left)
                 __ node.right:
-                    cur_q.append(node.right)
+                    cur_q.a..(node.right)
 
             q = cur_q
 
-        return ret
+        r.. ret

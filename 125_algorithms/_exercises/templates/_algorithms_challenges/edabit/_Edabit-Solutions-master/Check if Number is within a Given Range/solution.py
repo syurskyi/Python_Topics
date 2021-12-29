@@ -1,11 +1,11 @@
 ___ is_in_range(n, r):
-    for i in r:
-        __ i == "min":
+    ___ i __ r:
+        __ i __ "min":
             s = i
-        else:
-            i == "max"
+        ____:
+            i __ "max"
             b = i
     __ n >= r[s] and n <= r[b]:
-            return True
-    else:
-        return False
+            r.. True
+    ____:
+        r.. False

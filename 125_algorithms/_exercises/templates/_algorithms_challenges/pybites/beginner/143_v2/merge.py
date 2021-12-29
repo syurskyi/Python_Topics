@@ -14,11 +14,11 @@ ___ get_person_age(name):
     try:
         name = name.lower()
     except:
-        return "Not found"
+        r.. "Not found"
 
-    for group in (group3,group2,group1):
-        __ name in group:
-            return group[name]
+    ___ group __ (group3,group2,group1):
+        __ name __ group:
+            r.. group[name]
 
 
-    return "Not found"
+    r.. "Not found"

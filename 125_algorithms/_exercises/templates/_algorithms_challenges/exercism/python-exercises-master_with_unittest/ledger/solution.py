@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
+____ datetime _______ datetime
 
 ROW_FMT = u'{{:<{1}}} | {{:<{2}}} | {{:{0}{3}}}'
 
 
 ___ truncate(s, length=25):
-    __ len(s) <= length:
-        return s
-    return s[:length - 3] + '...'
+    __ l..(s) <= length:
+        r.. s
+    r.. s[:length - 3] + '...'
 
 
 class LCInfo(object):
     ___ __init__(self, locale, currency, columns):
         self.columns = columns
-        __ locale == 'en_US':
+        __ locale __ 'en_US':
             headers = ['Date', 'Description', 'Change']
             self.datefmt = '{0.month:02}/{0.day:02}/{0.year:04}'
             self.cur_fmt = u'{}{}{}{}'
@@ -21,7 +21,7 @@ class LCInfo(object):
             self.trail_neg = ')'
             self.thousands = ','
             self.decimal = '.'
-        elif locale == 'nl_NL':
+        ____ locale __ 'nl_NL':
             headers = ['Datum', 'Omschrijving', 'Verandering']
             self.datefmt = '{0.day:02}-{0.month:02}-{0.year:04}'
             self.cur_fmt = u'{1} {0}{2}{3}'
@@ -38,28 +38,28 @@ class LCInfo(object):
 
     ___ number(self, n):
         n_int, n_float = divmod(abs(n), 100)
-        n_int_parts = []
+        n_int_parts    # list
         while n_int > 0:
             n_int, x = divmod(n_int, 1000)
             n_int_parts.insert(0, str(x))
-        return '{}{}{:02}'.format(
-            self.thousands.join(n_int_parts) or '0',
+        r.. '{}{}{:02}'.format(
+            self.thousands.join(n_int_parts) o. '0',
             self.decimal,
             n_float,
         )
 
     ___ currency(self, change):
-        return self.cur_fmt.format(
-            self.lead_neg __ change < 0 else '',
+        r.. self.cur_fmt.format(
+            self.lead_neg __ change < 0 ____ '',
             self.cur_symbol,
             self.number(change),
-            self.trail_neg __ change < 0 else ' ',
+            self.trail_neg __ change < 0 ____ ' ',
         )
 
     ___ entry(self, entry):
         date, change, desc = entry
         fmt = ROW_FMT.format('>', *self.columns)
-        return fmt.format(
+        r.. fmt.format(
             self.datefmt.format(date),
             truncate(desc),
             self.currency(change),
@@ -67,12 +67,12 @@ class LCInfo(object):
 
     ___ table(self, entries):
         lines = [self.headers]
-        lines.extend(map(self.entry, sorted(entries)))
-        return '\n'.join(lines)
+        lines.extend(map(self.entry, s..(entries)))
+        r.. '\n'.join(lines)
 
 
 ___ create_entry(date, description, change):
-    return (
+    r.. (
         datetime.strptime(date, '%Y-%m-%d'),
         change,
         description
@@ -82,4 +82,4 @@ ___ create_entry(date, description, change):
 ___ format_entries(currency, locale, entries):
     columns = (10, 25, 13)
     lcinfo = LCInfo(locale, currency, columns)
-    return lcinfo.table(entries)
+    r.. lcinfo.table(entries)

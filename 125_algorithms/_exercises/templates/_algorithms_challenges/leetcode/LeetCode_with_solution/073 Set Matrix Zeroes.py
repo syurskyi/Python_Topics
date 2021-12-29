@@ -19,26 +19,26 @@ class Solution:
         :param matrix: a list of lists of integers
         :return: NOTHING, MODIFY matrix IN PLACE.
         """
-        __ not matrix:
-            return
+        __ n.. matrix:
+            r..
 
-        m = len(matrix)
-        n = len(matrix[0])
+        m = l..(matrix)
+        n = l..(matrix[0])
 
-        for row in xrange(m):
-            for col in xrange(n):
-                __ matrix[row][col]==0:
+        ___ row __ xrange(m):
+            ___ col __ xrange(n):
+                __ matrix[row][col]__0:
                     matrix[0][col]=0  # previously scanned, safe to modify
                     matrix[row][0]=0  # previously scanned, safe to modify
 
-        for row in xrange(m):
-            __ matrix[row][0]==0:
-                for col in xrange(n):
+        ___ row __ xrange(m):
+            __ matrix[row][0]__0:
+                ___ col __ xrange(n):
                     matrix[row][col] = 0
 
-        for col in xrange(n):
-            __ matrix[0][col]==0:
-                for row in xrange(m):
+        ___ col __ xrange(n):
+            __ matrix[0][col]__0:
+                ___ row __ xrange(m):
                     matrix[row][col] = 0
 
 
@@ -49,43 +49,43 @@ class Solution:
         :param matrix: a list of lists of integers
         :return: NOTHING, MODIFY matrix IN PLACE.
         """
-        __ not matrix:
-            return
+        __ n.. matrix:
+            r..
 
-        m = len(matrix)
-        n = len(matrix[0])
+        m = l..(matrix)
+        n = l..(matrix[0])
 
         # special treatment for row and col 
         clear_first_row = False
         clear_first_col = False
-        for row in xrange(m):
-            __ matrix[row][0]==0:
+        ___ row __ xrange(m):
+            __ matrix[row][0]__0:
                 clear_first_col = True
-        for col in xrange(n):
-            __ matrix[0][col]==0:
+        ___ col __ xrange(n):
+            __ matrix[0][col]__0:
                 clear_first_row = True
 
-        for row in xrange(1, m):
-            for col in xrange(1, n):
-                __ matrix[row][col]==0:
+        ___ row __ xrange(1, m):
+            ___ col __ xrange(1, n):
+                __ matrix[row][col]__0:
                     matrix[0][col] = 0  # previously scanned, safe to modify
                     matrix[row][0] = 0  # previously scanned, safe to modify
 
-        for row in xrange(1, m):  # avoid 0 at (0, 0) affect the entire matrix
-            __ matrix[row][0]==0:
-                for col in xrange(n):
+        ___ row __ xrange(1, m):  # avoid 0 at (0, 0) affect the entire matrix
+            __ matrix[row][0]__0:
+                ___ col __ xrange(n):
                     matrix[row][col] = 0
 
-        for col in xrange(1, n):  # avoid 0 at (0, 0) affect the entire matrix
-            __ matrix[0][col]==0:
-                for row in xrange(m):
+        ___ col __ xrange(1, n):  # avoid 0 at (0, 0) affect the entire matrix
+            __ matrix[0][col]__0:
+                ___ row __ xrange(m):
                     matrix[row][col] = 0
 
         __ clear_first_row:
-            for col in xrange(n):
+            ___ col __ xrange(n):
                 matrix[0][col] = 0
         __ clear_first_col:
-            for row in xrange(m):
+            ___ row __ xrange(m):
                 matrix[row][0] = 0
 
 

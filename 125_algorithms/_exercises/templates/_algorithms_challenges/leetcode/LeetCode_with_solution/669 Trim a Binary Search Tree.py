@@ -44,8 +44,8 @@ Output:
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 
 class Solution:
@@ -53,17 +53,17 @@ class Solution:
         """
         post-order traverse
         """
-        return self.walk(root, L, R)
+        r.. self.walk(root, L, R)
 
     ___ walk(self, node, L, R):
-        __ not node:
-            return None
+        __ n.. node:
+            r.. N..
 
         node.left = self.walk(node.left, L, R)
         node.right = self.walk(node.right, L, R)
         __ node.val < L:
-            return node.right
-        elif node.val > R:
-            return node.left
-        else:
-            return node
+            r.. node.right
+        ____ node.val > R:
+            r.. node.left
+        ____:
+            r.. node

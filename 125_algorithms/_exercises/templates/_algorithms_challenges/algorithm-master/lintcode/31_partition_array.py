@@ -5,10 +5,10 @@ class Solution:
     @return: The index after partition
     """
     ___ partitionArray(self, A, k):
-        __ not A:
-            return 0
+        __ n.. A:
+            r.. 0
 
-        left, right = 0, len(A) - 1
+        left, right = 0, l..(A) - 1
 
         while left <= right:
             while left <= right and A[left] < k:
@@ -21,4 +21,4 @@ class Solution:
                 left += 1
                 right -= 1
 
-        return left
+        r.. left

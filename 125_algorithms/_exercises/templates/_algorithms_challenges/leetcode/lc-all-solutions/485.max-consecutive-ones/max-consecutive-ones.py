@@ -6,10 +6,10 @@ class Solution(object):
     """
     ans = 0
     count = 0
-    for num in nums:
-      __ num == 1:
+    ___ num __ nums:
+      __ num __ 1:
         count += 1
-      else:
+      ____:
         count = 0
       ans = max(ans, count)
-    return ans
+    r.. ans

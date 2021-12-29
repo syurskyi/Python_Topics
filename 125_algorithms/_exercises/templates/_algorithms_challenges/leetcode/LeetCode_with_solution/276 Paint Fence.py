@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 class Solution(object):
     ___ numWays_oneliner(self, n, k):
-        return 0 __ n < 1 else sum(reduce(lambda F, i: [(k-1)*(F[0]+F[1]), F[0]], xrange(1, n), [k, 0]))
+        r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], xrange(1, n), [k, 0]))
 
     ___ numWays(self, n, k):
         """
@@ -25,14 +25,14 @@ class Solution(object):
         :rtype: int
         """
         __ n < 1:
-            return 0
+            r.. 0
 
         num_diff = k
         num_same = 0
-        for _ in xrange(1, n):
+        ___ _ __ xrange(1, n):
             num_diff, num_same = (k-1)*(num_diff+num_same), num_diff
 
-        return num_diff+num_same
+        r.. num_diff+num_same
 
     ___ numWays_MLE2(self, n, k):
         """
@@ -43,36 +43,36 @@ class Solution(object):
         :rtype: int
         """
         __ n < 1:
-            return 0
+            r.. 0
 
-        F = [[[0 for _ in xrange(k)] for _ in xrange(k)] for _ in xrange(2)]
+        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(2)]
         EMPTY = 0
 
-        for j0 in xrange(k):
+        ___ j0 __ xrange(k):
             F[1][j0][EMPTY] = 1
 
-        for i in xrange(2, n+1):
-            for j0 in xrange(k):
-                for j1 in xrange(k):
+        ___ i __ xrange(2, n+1):
+            ___ j0 __ xrange(k):
+                ___ j1 __ xrange(k):
                     F[i%2][j0][j1] = 0
 
-            for j0 in xrange(k):
-                for j1 in xrange(k):
-                    for j2 in xrange(k):
-                        __ i == 2:
+            ___ j0 __ xrange(k):
+                ___ j1 __ xrange(k):
+                    ___ j2 __ xrange(k):
+                        __ i __ 2:
                             F[i%2][j0][j1] = F[(i-1)%2][j1][EMPTY]
 
-                        elif j1 == j2 and j0 != j1:
+                        ____ j1 __ j2 and j0 != j1:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
-                        elif j1 != j2:
+                        ____ j1 != j2:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
 
         ret = 0
-        for j0 in xrange(k):
-            for j1 in xrange(k):
+        ___ j0 __ xrange(k):
+            ___ j1 __ xrange(k):
                 ret += F[n%2][j0][j1]
 
-        return ret
+        r.. ret
 
     ___ numWays_MLE(self, n, k):
         """
@@ -83,35 +83,35 @@ class Solution(object):
         :rtype: int
         """
         __ n < 1:
-            return 0
+            r.. 0
 
-        F = [[[0 for _ in xrange(k)] for _ in xrange(k)] for _ in xrange(n+1)]
+        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(n+1)]
         EMPTY = 0
 
-        for j0 in xrange(k):
+        ___ j0 __ xrange(k):
             F[1][j0][EMPTY] = 1
 
-        for i in xrange(2, n+1):
-            for j0 in xrange(k):
-                for j1 in xrange(k):
-                    for j2 in xrange(k):
-                        __ i == 2:
+        ___ i __ xrange(2, n+1):
+            ___ j0 __ xrange(k):
+                ___ j1 __ xrange(k):
+                    ___ j2 __ xrange(k):
+                        __ i __ 2:
                             F[i][j0][j1] = F[i-1][j1][EMPTY]
 
-                        elif j1 == j2 and j0 != j1:
+                        ____ j1 __ j2 and j0 != j1:
                             F[i][j0][j1] += F[i-1][j1][j2]
-                        elif j1 != j2:
+                        ____ j1 != j2:
                             F[i][j0][j1] += F[i-1][j1][j2]
 
         ret = 0
-        for j0 in xrange(k):
-            for j1 in xrange(k):
+        ___ j0 __ xrange(k):
+            ___ j1 __ xrange(k):
                 ret += F[n][j0][j1]
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().numWays(3, 2) == 6
+__ __name__ __ "__main__":
+    ... Solution().numWays(3, 2) __ 6
 
 

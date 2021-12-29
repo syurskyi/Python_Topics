@@ -12,24 +12,24 @@ class Solution(object):
     """
 
     ___ reverse(cur):
-      pre = None
+      pre = N..
       while cur:
         tmp = cur.next
         cur.next = pre
         pre = cur
         cur = tmp
-      return pre
+      r.. pre
 
     p = head = reverse(head)
     carry = 1
-    pre = None
+    pre = N..
     while p:
       val = (p.val + carry) % 10
-      carry = 1 __ val < p.val else 0
+      carry = 1 __ val < p.val ____ 0
       p.val = val
       pre = p
       p = p.next
 
-    __ carry == 1:
+    __ carry __ 1:
       pre.next = ListNode(1)
-    return reverse(head)
+    r.. reverse(head)

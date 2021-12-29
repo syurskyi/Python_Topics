@@ -11,33 +11,33 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        import heapq
+        _______ heapq
         path = {}
-        for time in times:
+        ___ time __ times:
             sourceMap = path.get(time[0], {})
-            __ time[1] not in sourceMap or sourceMap[time[1]] > time[2]:
+            __ time[1] n.. __ sourceMap o. sourceMap[time[1]] > time[2]:
                 sourceMap[time[1]] = time[2]
             path[time[0]] = sourceMap
         
         distanceMap = {K:0}
-        heap = []
+        heap    # list
         heapq.heappush(heap, [0, K])
         maxVal = -1
         while heap:
             d, node = heapq.heappop(heap)
-            __ node in distanceMap and distanceMap[node] < d:
+            __ node __ distanceMap and distanceMap[node] < d:
                 continue
-            __ node in path:
-                for node0 in path[node]:
+            __ node __ path:
+                ___ node0 __ path[node]:
                     absDist = d+path[node][node0]
-                    __ node0 in distanceMap and distanceMap[node0] <= absDist:
+                    __ node0 __ distanceMap and distanceMap[node0] <= absDist:
                         continue
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])
-        for val in distanceMap.values():
+        ___ val __ distanceMap.values():
             __ val > maxVal:
                 maxVal = val
-        return maxVal __ len(distanceMap) == N else -1
+        r.. maxVal __ l..(distanceMap) __ N ____ -1
     
     ___ test(self):
         testCases = [
@@ -52,10 +52,10 @@ class Solution(object):
                 1,
             ],
         ]
-        for times, N, K in testCases:
+        ___ times, N, K __ testCases:
             result = self.networkDelayTime(times, N, K)
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

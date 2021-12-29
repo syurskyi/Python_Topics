@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+____ heapq _______ heappop, heappush
 
 
 class Solution:
@@ -7,21 +7,21 @@ class Solution:
     @return: a sorted array
     """
     ___ mergekSortedArrays(self, G):
-        ans = []
-        __ not G:
-            return ans
+        ans    # list
+        __ n.. G:
+            r.. ans
 
-        heap = []
-        for i in range(len(G)):
-            __ not G[i]:
+        heap    # list
+        ___ i __ r..(l..(G)):
+            __ n.. G[i]:
                 continue
 
             heappush(heap, (G[i][0], i, 0))
 
         while heap:
             num, x, y = heappop(heap)
-            ans.append(num)
-            __ y + 1 < len(G[x]):
+            ans.a..(num)
+            __ y + 1 < l..(G[x]):
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
-        return ans
+        r.. ans

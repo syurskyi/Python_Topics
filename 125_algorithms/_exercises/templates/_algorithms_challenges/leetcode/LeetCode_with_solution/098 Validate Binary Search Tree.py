@@ -13,8 +13,8 @@ __author__ = 'Danyang'
 class TreeNode:
     ___ __init__(self, x):
         self.val = x
-        self.left = None
-        self.right = None
+        self.left = N..
+        self.right = N..
 
 class Solution:
     ___ isValidBST(self, root):
@@ -26,23 +26,23 @@ class Solution:
         :param root: a tree node
         :return: boolean
         """
-        __ not root:
-            return True
+        __ n.. root:
+            r.. True
 
-        __ not self.isValidBST(root.left):
-            return False
-        __ not self.isValidBST(root.right):
-            return False
+        __ n.. self.isValidBST(root.left):
+            r.. False
+        __ n.. self.isValidBST(root.right):
+            r.. False
 
         __ root.left:
-            __ not self.get_largest(root.left) < root.val:
-                return False
+            __ n.. self.get_largest(root.left) < root.val:
+                r.. False
         __ root.right:
-            __ not root.val < self.get_smallest(root.right):
-                return False
+            __ n.. root.val < self.get_smallest(root.right):
+                r.. False
 
 
-        return True
+        r.. True
 
     ___ get_largest(self, root):
         """
@@ -50,9 +50,9 @@ class Solution:
         :param root: TreeNode
         :return: integer
         """
-        __ not root.right:
-            return root.val
-        return self.get_largest(root.right)
+        __ n.. root.right:
+            r.. root.val
+        r.. self.get_largest(root.right)
 
     ___ get_smallest(self, root):
         """
@@ -60,9 +60,9 @@ class Solution:
         :param root: TreeNode
         :return: integer
         """
-        __ not root.left:
-            return root.val
-        return self.get_smallest(root.left)
+        __ n.. root.left:
+            r.. root.val
+        r.. self.get_smallest(root.left)
 
 
 

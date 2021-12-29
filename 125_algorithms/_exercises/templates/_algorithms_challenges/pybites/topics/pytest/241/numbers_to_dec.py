@@ -1,4 +1,4 @@
-from typing import List
+____ typing _______ List
 
 
 ___ list_to_decimal(nums: List[int]) -> int:
@@ -12,13 +12,13 @@ ___ list_to_decimal(nums: List[int]) -> int:
         1,     3  ,  4  , 5
         1000's, 100's, 10's, 1's
     """
-    for num in nums:
-        __ isinstance(num, bool) or not isinstance(num, int):
+    ___ num __ nums:
+        __ isi..(num, bool) o. n.. isi..(num, int):
             raise TypeError
-        elif not num in range(0, 10):
+        ____ n.. num __ r..(0, 10):
             raise ValueError
 
-    return int(''.join(map(str, nums)))
+    r.. int(''.join(map(str, nums)))
 
 
 #print(list_to_decimal([1,2,10,4]))

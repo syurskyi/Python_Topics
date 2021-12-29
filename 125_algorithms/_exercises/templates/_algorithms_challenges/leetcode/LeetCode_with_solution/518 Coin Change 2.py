@@ -25,7 +25,7 @@ Example 3:
 Input: amount = 10, coins = [10]
 Output: 1
 """
-from collections import defaultdict
+____ collections _______ defaultdict
 
 
 class Solution:
@@ -42,17 +42,17 @@ class Solution:
         :type coins: List[int]
         :rtype: int
         """
-        F = defaultdict(lambda: defaultdict(int))
-        n = len(coins)
-        for l in range(n + 1):
+        F = defaultdict(l....: defaultdict(int))
+        n = l..(coins)
+        ___ l __ r..(n + 1):
             F[0][l] = 1   # trivial case
              # why not start from 0, because we need to handle trivial case F[0][0]
 
-        for a in range(1, amount + 1):
-            for l in range(1, n + 1):
+        ___ a __ r..(1, amount + 1):
+            ___ l __ r..(1, n + 1):
                 F[a][l] = F[a][l-1] + F[a - coins[l-1]][l]
 
-        return F[amount][n]
+        r.. F[amount][n]
 
 
     ___ change_TLE(self, amount, coins):
@@ -67,21 +67,21 @@ class Solution:
         :type coins: List[int]
         :rtype: int
         """
-        __ amount == 0:
-            return 1
+        __ amount __ 0:
+            r.. 1
 
         coins.sort()
-        n = len(coins)
-        F = defaultdict(lambda: defaultdict(int))
-        for i in range(n):
+        n = l..(coins)
+        F = defaultdict(l....: defaultdict(int))
+        ___ i __ r..(n):
             F[coins[i]][i] = 1
 
-        for a in range(1, amount + 1):
-            for i in range(n):
-                for j in range(i + 1):
+        ___ a __ r..(1, amount + 1):
+            ___ i __ r..(n):
+                ___ j __ r..(i + 1):
                     F[a][i] += F[a - coins[i]][j]
 
-        return sum(F[amount].values())
+        r.. s..(F[amount].values())
 
     ___ change_error(self, amount, coins):
         """
@@ -96,14 +96,14 @@ class Solution:
         :rtype: int
         """
         F = {0: 1}
-        for a in range(1, amount + 1):
+        ___ a __ r..(1, amount + 1):
             F[a] = 0
-            for c in coins:
-                __ a - c in F:
+            ___ c __ coins:
+                __ a - c __ F:
                     F[a] += F[a - c]
 
-        return F[amount]
+        r.. F[amount]
 
 
-__ __name__ == "__main__":
-    assert Solution().change(5, [1, 2, 5]) == 4
+__ __name__ __ "__main__":
+    ... Solution().change(5, [1, 2, 5]) __ 4

@@ -1,5 +1,5 @@
 HTML_SPACE = '&nbsp;'
-import math
+_______ math
 
 
 ___ prefill_with_character(value, column_length=4, fill_char=HTML_SPACE):
@@ -12,10 +12,10 @@ ___ prefill_with_character(value, column_length=4, fill_char=HTML_SPACE):
     spaces = column_length - digits
 
     __ spaces > 0:
-        return f"{fill_char * spaces}{value}"
+        r.. f"{fill_char * spaces}{value}"
 
 
-    return str(value)
+    r.. str(value)
 
 
 

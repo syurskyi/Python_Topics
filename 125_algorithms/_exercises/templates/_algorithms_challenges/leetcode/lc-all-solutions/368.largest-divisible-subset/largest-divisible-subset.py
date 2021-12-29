@@ -4,17 +4,17 @@ class Solution(object):
     :type nums: List[int]
     :rtype: List[int]
     """
-    __ len(nums) < 2:
-      return nums
-    ans = []
+    __ l..(nums) < 2:
+      r.. nums
+    ans    # list
     nums.sort()
-    dp = [1] * len(nums)
-    path = [-1] * len(nums)
+    dp = [1] * l..(nums)
+    path = [-1] * l..(nums)
     finalMaxLen, finalMaxLenIdx = -1, -1
-    for i in range(1, len(nums)):
+    ___ i __ r..(1, l..(nums)):
       maxLen, maxLenIdx = -1, -1
-      for j in range(0, i):
-        __ nums[i] % nums[j] == 0:
+      ___ j __ r..(0, i):
+        __ nums[i] % nums[j] __ 0:
           __ dp[j] >= maxLen:
             maxLen = dp[j]
             maxLenIdx = j
@@ -25,6 +25,6 @@ class Solution(object):
         finalMaxLenIdx = i
 
     while finalMaxLenIdx != -1:
-      ans.append(nums[finalMaxLenIdx])
+      ans.a..(nums[finalMaxLenIdx])
       finalMaxLenIdx = path[finalMaxLenIdx]
-    return ans
+    r.. ans

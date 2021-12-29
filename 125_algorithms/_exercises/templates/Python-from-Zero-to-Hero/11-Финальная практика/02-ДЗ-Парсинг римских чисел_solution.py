@@ -4,15 +4,15 @@
 # In[ ]:
 
 
-romans  dict(I1, V5, X10, L50, C100, D500, M1000)
+romans  d..(I1, V5, X10, L50, C100, D500, M1000)
 ___ parse_roman(arabic):
     result  0
-    for i, c in enumerate(arabic):
-        __ i+1<len(arabic) and romans[arabic[i]] < romans[arabic[i+1]]:
+    ___ i, c __ enumerate(arabic):
+        __ i+1<l..(arabic) and romans[arabic[i]] < romans[arabic[i+1]]:
             result-romans[arabic[i]]
-        else:
+        ____:
             result+romans[arabic[i]]
-    return result
+    r.. result
 
 
 # In[ ]:

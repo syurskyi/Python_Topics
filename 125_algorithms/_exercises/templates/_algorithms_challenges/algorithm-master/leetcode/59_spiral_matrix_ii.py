@@ -4,29 +4,29 @@ class Solution:
         :type n: int
         :rtype: List[List[int]]
         """
-        __ not n or n < 1:
-            return []
-        __ n == 1:
-            return [[1]]
+        __ n.. n o. n < 1:
+            r.. []
+        __ n __ 1:
+            r.. [[1]]
 
-        ans = [[0] * n for _ in range(n)]
+        ans = [[0] * n ___ _ __ r..(n)]
         delta = (
             (0, 1), (1, 0),
             (0, -1), (-1, 0),
         )
         x = y = turn = 0
 
-        for i in range(1, n * n + 1):
+        ___ i __ r..(1, n * n + 1):
             ans[x][y] = i
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            __ not (0 <= _x < n and 0 <= _y < n) or ans[_x][_y] != 0:
-                turn = (turn + 1) % len(delta)
+            __ n.. (0 <= _x < n and 0 <= _y < n) o. ans[_x][_y] != 0:
+                turn = (turn + 1) % l..(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]
 
             x = _x
             y = _y
 
-        return ans
+        r.. ans

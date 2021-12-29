@@ -4,20 +4,20 @@ class Solution(object):
     :type words: List[str]
     :rtype: List[List[int]]
     """
-    ans = []
+    ans    # list
     d = {}
-    for i, word in enumerate(words):
+    ___ i, word __ enumerate(words):
       d[word] = i
 
-    for i, word in enumerate(words):
-      __ word == "":
-        ans.extend([(i, j) for j in range(len(words)) __ i != j and words[j] == words[j][::-1]])
+    ___ i, word __ enumerate(words):
+      __ word __ "":
+        ans.extend([(i, j) ___ j __ r..(l..(words)) __ i != j and words[j] __ words[j][::-1]])
         continue
-      for j in range(len(word)):
+      ___ j __ r..(l..(word)):
         left = word[:j]
         right = word[j:]
-        __ right == right[::-1] and left[::-1] in d and d[left[::-1]] != i:
-          ans.append((i, d[left[::-1]]))
-        __ left == left[::-1] and right[::-1] in d and d[right[::-1]] != i:
-          ans.append((d[right[::-1]], i))
-    return ans
+        __ right __ right[::-1] and left[::-1] __ d and d[left[::-1]] != i:
+          ans.a..((i, d[left[::-1]]))
+        __ left __ left[::-1] and right[::-1] __ d and d[right[::-1]] != i:
+          ans.a..((d[right[::-1]], i))
+    r.. ans

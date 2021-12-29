@@ -17,25 +17,25 @@ class Solution(object):
 
         DFS
         """
-        __ node is None:
-            return None
+        __ node __ N..
+            r.. N..
         self.visited = set()
         cloned_node = UndirectedGraphNode(node.label)
         self.d = {node: cloned_node}
         self.visit(node)
-        return self.d[node]
+        r.. self.d[node]
 
     ___ visit(self, node):
-        __ node not in self.visited:
+        __ node n.. __ self.visited:
             self.visited.add(node)
             cloned_node = self.d[node]
-            cloned_neighbors = []
-            for neighbor in node.neighbors:
-                __ neighbor not in self.d:
+            cloned_neighbors    # list
+            ___ neighbor __ node.neighbors:
+                __ neighbor n.. __ self.d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     self.d[neighbor] = cloned_neighbor
-                else:
+                ____:
                     cloned_neighbor = self.d[neighbor]
-                cloned_neighbors.append(cloned_neighbor)
+                cloned_neighbors.a..(cloned_neighbor)
                 self.visit(neighbor)
             cloned_node.neighbors = cloned_neighbors

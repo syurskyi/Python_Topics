@@ -65,7 +65,7 @@ mines[i] will be length 2 and consist of integers in the range [0, N-1].
 (Additionally, programs submitted in C, C++, or C# will be judged with a
 slightly smaller time limit.)
 """
-from typing import List
+____ typing _______ List
 
 
 class Solution:
@@ -74,32 +74,32 @@ class Solution:
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self
         """
-        G = [[1 for _ in range(N)] for _ in range(N)]
-        for i, j in mines:
+        G = [[1 ___ _ __ r..(N)] ___ _ __ r..(N)]
+        ___ i, j __ mines:
             G[i][j] = 0
 
-        F = [[[G[i][j] for _ in range(4)] for j in range(N)] for i in range(N)]
-        for i in range(N):
-            for j in range(N):
-                __ j - 1 >= 0 and G[i][j] == 1:
+        F = [[[G[i][j] ___ _ __ r..(4)] ___ j __ r..(N)] ___ i __ r..(N)]
+        ___ i __ r..(N):
+            ___ j __ r..(N):
+                __ j - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][0] = F[i][j-1][0] + 1
-                __ i - 1 >= 0 and G[i][j] == 1:
+                __ i - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][1] = F[i-1][j][1] + 1
 
-        for i in range(N-1, -1, -1):
-            for j in range(N-1, -1, -1):
-                __ j + 1 < N and G[i][j] == 1:
+        ___ i __ r..(N-1, -1, -1):
+            ___ j __ r..(N-1, -1, -1):
+                __ j + 1 < N and G[i][j] __ 1:
                     F[i][j][2] = F[i][j+1][2] + 1
-                __ i + 1 < N and G[i][j] == 1:
+                __ i + 1 < N and G[i][j] __ 1:
                     F[i][j][3] = F[i+1][j][3] + 1
 
         ret = 0
-        for i in range(N):
-            for j in range(N):
-                ret = max(ret, min(F[i][j]))
+        ___ i __ r..(N):
+            ___ j __ r..(N):
+                ret = max(ret, m..(F[i][j]))
 
-        return ret
+        r.. ret
 
 
-__ __name__ == "__main__":
-    assert Solution().orderOfLargestPlusSign(5, [[4, 2]]) == 2
+__ __name__ __ "__main__":
+    ... Solution().orderOfLargestPlusSign(5, [[4, 2]]) __ 2

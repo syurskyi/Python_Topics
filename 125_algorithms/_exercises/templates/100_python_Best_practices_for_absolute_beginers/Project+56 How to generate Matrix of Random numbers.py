@@ -1,15 +1,15 @@
-from random import randint
+____ random _______ randint
 
 row  6
 col  6
 x  []
 
-for i in range(row):
+___ i __ r..(row):
     y  []
-    for j in range(col):
-        y.append(randint(1,100))
-    x.append(y)
-for i in x:
-    for j in i:
+    ___ j __ r..(col):
+        y.a..(randint(1,100))
+    x.a..(y)
+___ i __ x:
+    ___ j __ i:
         print("%3d" % j, end' ')
     print()

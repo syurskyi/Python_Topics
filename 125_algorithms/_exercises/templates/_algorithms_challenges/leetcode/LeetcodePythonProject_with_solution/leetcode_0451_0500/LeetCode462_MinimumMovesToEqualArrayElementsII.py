@@ -6,12 +6,12 @@ Created on Apr 23, 2017
 
 class Solution(object):
     ___ minMoves2(self, nums):
-        __ not nums: return 0
+        __ n.. nums: r.. 0
         nums.sort()
-        left, right = 0, len(nums)-1
+        left, right = 0, l..(nums)-1
         count = 0
         while left < right:
             count += nums[right]-nums[left]
             left += 1
             right -= 1
-        return count
+        r.. count

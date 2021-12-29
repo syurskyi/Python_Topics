@@ -9,17 +9,17 @@ class Solution(object):
         :type M: List[List[int]]
         :rtype: List[List[int]]
         """
-        import math
+        _______ math
         matrix = M
-        __ not matrix or not matrix[0]:
-            return []
-        m, n = len(matrix), len(matrix[0])
-        res = [[0]*n for _ in range(m)]
-        for i in range(m):
-            for j in range(n):
+        __ n.. matrix o. n.. matrix[0]:
+            r.. []
+        m, n = l..(matrix), l..(matrix[0])
+        res = [[0]*n ___ _ __ r..(m)]
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 count = float(matrix[i][j])
                 num = 1.0
-                for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
+                ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1):
                     __ 0 <= x < m and 0 <= y < n:
                         __ matrix[x][y] != 0:
@@ -27,7 +27,7 @@ class Solution(object):
                         num += 1
                 tmp = int(math.floor(count/num))
                 res[i][j] = tmp
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -47,13 +47,13 @@ class Solution(object):
                 [14,15,16],
             ]
         ]
-        for matrix in testCases:
+        ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.join([str(row) for row in matrix]))
+            print('\n'.join([str(row) ___ row __ matrix]))
             result = self.imageSmoother(matrix)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row __ result]))
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

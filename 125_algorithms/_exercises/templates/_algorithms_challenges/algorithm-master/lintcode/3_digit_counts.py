@@ -6,17 +6,17 @@ class Solution:
     """
     ___ digitCounts(self, k, n):
         ans = 0
-        for i in range(n + 1):
-            ans += self.count(k, i)
-        return ans
+        ___ i __ r..(n + 1):
+            ans += self.c.. k, i)
+        r.. ans
 
-    ___ count(self, k, a):
-        __ k == a == 0:
-            return 1
+    ___ c.. self, k, a):
+        __ k __ a __ 0:
+            r.. 1
 
         cnt = 0
         while a:
-            __ a % 10 == k:
+            __ a % 10 __ k:
                 cnt += 1
             a //= 10
-        return cnt
+        r.. cnt

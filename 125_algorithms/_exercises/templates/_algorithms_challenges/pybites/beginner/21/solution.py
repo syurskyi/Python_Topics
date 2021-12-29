@@ -1,4 +1,4 @@
-from itertools import chain
+____ itertools _______ chain
 
 cars = {
     'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],
@@ -12,12 +12,12 @@ cars = {
 ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models
        (original order)"""
-    return ', '.join(cars['Jeep'])
+    r.. ', '.join(cars['Jeep'])
 
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    return [models[0] for models in cars.values()]
+    r.. [models[0] ___ models __ cars.values()]
 
 
 ___ get_all_matching_models(cars=cars, grep='trail'):
@@ -26,14 +26,14 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
        sort the resulting sequence alphabetically"""
     grep = grep.lower()
     # flatten list of lists (less obvious way: "sum(cars.values(), [])")
-    models = list(chain.from_iterable(cars.values()))
-    matching_models = [model for model in models
-                       __ grep in model.lower()]
-    return sorted(matching_models)
+    models = l..(chain.from_iterable(cars.values()))
+    matching_models = [model ___ model __ models
+                       __ grep __ model.lower()]
+    r.. s..(matching_models)
 
 
 ___ sort_car_models(cars=cars):
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
-    return {manufacturer: sorted(models) for
-            manufacturer, models in cars.items()}
+    r.. {manufacturer: s..(models) ___
+            manufacturer, models __ cars.items()}

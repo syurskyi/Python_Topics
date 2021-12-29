@@ -5,28 +5,28 @@ class Solution:
         :type prerequisites: list[list[int]]
         :rtype: list[int]
         """
-        ans = []
+        ans    # list
 
-        __ not n:
-            return ans
+        __ n.. n:
+            r.. ans
 
         indeg = [0] * n
-        edges = [[] for _ in range(n)]
+        edges = [[] ___ _ __ r..(n)]
 
-        for c, p in prerequisites:
+        ___ c, p __ prerequisites:
             indeg[c] += 1
-            edges[p].append(c)
+            edges[p].a..(c)
 
-        queue = [c for c in range(n) __ indeg[c] == 0]
+        queue = [c ___ c __ r..(n) __ indeg[c] __ 0]
 
-        for p in queue:
-            for c in edges[p]:
+        ___ p __ queue:
+            ___ c __ edges[p]:
                 indeg[c] -= 1
 
-                __ indeg[c] == 0:
-                    queue.append(c)
+                __ indeg[c] __ 0:
+                    queue.a..(c)
 
-        __ len(queue) != n:
-            return []
+        __ l..(queue) != n:
+            r.. []
 
-        return queue
+        r.. queue

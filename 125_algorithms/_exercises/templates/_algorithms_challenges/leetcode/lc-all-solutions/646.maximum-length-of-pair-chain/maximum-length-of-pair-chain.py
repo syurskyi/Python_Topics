@@ -4,11 +4,11 @@ class Solution(object):
     :type pairs: List[List[int]]
     :rtype: int
     """
-    tails = []
-    for start, end in sorted(pairs):
+    tails    # list
+    ___ start, end __ s..(pairs):
       idx = bisect.bisect_left(tails, start)
-      __ idx == len(tails):
-        tails.append(end)
-      else:
-        tails[idx] = min(tails[idx], end)
-    return len(tails)
+      __ idx __ l..(tails):
+        tails.a..(end)
+      ____:
+        tails[idx] = m..(tails[idx], end)
+    r.. l..(tails)

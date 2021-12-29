@@ -10,11 +10,11 @@ class Solution(object):
         :type B: List[int]
         :rtype: List[int]
         """
-        import heapq
-        arrA = sorted(A)
-        n = len(arrA)
-        h = []
-        for i, b in enumerate(B):
+        _______ heapq
+        arrA = s..(A)
+        n = l..(arrA)
+        h    # list
+        ___ i, b __ enumerate(B):
             heapq.heappush(h, [-b, i])
         l, r = 0, n-1
         res = [0]*n
@@ -25,10 +25,10 @@ class Solution(object):
             __ arrA[r] > val:
                 res[idx] = arrA[r]
                 r -= 1
-            else:
+            ____:
                 res[idx] = arrA[l]
                 l += 1
-        return res
+        r.. res
     
     ___ test(self):
         testCases = [
@@ -41,10 +41,10 @@ class Solution(object):
                 [13,25,32,11],
             ],
         ]
-        for a, b in testCases:
+        ___ a, b __ testCases:
             res = self.advantageCount(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

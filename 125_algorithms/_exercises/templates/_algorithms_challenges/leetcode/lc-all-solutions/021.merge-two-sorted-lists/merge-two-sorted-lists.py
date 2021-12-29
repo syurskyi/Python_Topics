@@ -16,7 +16,7 @@ class Solution(object):
       __ l1.val < l2.val:
         head.next = l1
         l1 = l1.next
-      else:
+      ____:
         head.next = l2
         l2 = l2.next
       head = head.next
@@ -24,4 +24,4 @@ class Solution(object):
       head.next = l1
     __ l2:
       head.next = l2
-    return dummy.next
+    r.. dummy.next

@@ -1,25 +1,25 @@
-from palindrome import load_dictionary, is_palindrome, get_longest_palindrome
+____ palindrome _______ load_dictionary, is_palindrome, get_longest_palindrome
 
 
 ___ test_is_palidrome():
-    assert is_palindrome('Aibohphobia')
-    assert is_palindrome('Avid diva')
-    assert is_palindrome('Avid diva. ')
-    assert is_palindrome('A Toyota’s a Toyota.')
-    assert is_palindrome('A man, a plan, a canal: Panama')
-    assert is_palindrome("No 'x' in 'Nixon'")
-    assert is_palindrome('malayalam')
+    ... is_palindrome('Aibohphobia')
+    ... is_palindrome('Avid diva')
+    ... is_palindrome('Avid diva. ')
+    ... is_palindrome('A Toyota’s a Toyota.')
+    ... is_palindrome('A man, a plan, a canal: Panama')
+    ... is_palindrome("No 'x' in 'Nixon'")
+    ... is_palindrome('malayalam')
 
-    assert not is_palindrome('PyBites')
-    assert not is_palindrome('malayalan')
-    assert not is_palindrome('toyota')
-    assert not is_palindrome('palindrome')
+    ... n.. is_palindrome('PyBites')
+    ... n.. is_palindrome('malayalan')
+    ... n.. is_palindrome('toyota')
+    ... n.. is_palindrome('palindrome')
 
 
 ___ test_get_longest_palindrome():
     words = load_dictionary()
-    assert get_longest_palindrome() == 'malayalam'
+    ... get_longest_palindrome() __ 'malayalam'
 
     new_longest = 'A car, a man, a maraca.'
-    words = list(words) + [new_longest]
-    assert get_longest_palindrome(words) == new_longest
+    words = l..(words) + [new_longest]
+    ... get_longest_palindrome(words) __ new_longest

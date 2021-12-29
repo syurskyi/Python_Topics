@@ -14,7 +14,7 @@ class Solution(object):
       __ nums1[m] > nums2[n]:
         nums1[end] = nums1[m]
         m -= 1
-      else:
+      ____:
         nums1[end] = nums2[n]
         n -= 1
       end -= 1

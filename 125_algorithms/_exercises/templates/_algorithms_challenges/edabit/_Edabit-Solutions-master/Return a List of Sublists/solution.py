@@ -1,10 +1,10 @@
 ___ matrix(x, y, z):
-    lst = []
-    for i in range(x):
-        lst.append([])
-    for q in lst:
-        for a in range(y):
-            q.append(z)
-    return lst
+    lst    # list
+    ___ i __ r..(x):
+        lst.a..([])
+    ___ q __ lst:
+        ___ a __ r..(y):
+            q.a..(z)
+    r.. lst
 
 

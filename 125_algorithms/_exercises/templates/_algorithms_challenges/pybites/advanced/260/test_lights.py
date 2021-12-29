@@ -1,6 +1,6 @@
-import pytest
+_______ pytest
 
-from lights import LightsGrid
+____ lights _______ LightsGrid
 
 
 @pytest.mark.parametrize(
@@ -45,7 +45,7 @@ from lights import LightsGrid
 ___ test_turn_on_lights(arg, expected):
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
 
 
 @pytest.mark.parametrize(
@@ -85,7 +85,7 @@ ___ test_turn_on_lights(arg, expected):
 ___ test_turn_off_lights(arg, expected):
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
 
 
 @pytest.mark.parametrize(
@@ -112,7 +112,7 @@ ___ test_turn_off_lights(arg, expected):
 ___ test_toggle_lights(arg, expected):
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
 
 
 @pytest.mark.parametrize(
@@ -148,7 +148,7 @@ ___ test_toggle_lights(arg, expected):
 ___ test_turn_up_lights(arg, expected):
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
 
 
 @pytest.mark.parametrize(
@@ -178,7 +178,7 @@ ___ test_turn_up_lights(arg, expected):
 ___ test_turn_down_lights(arg, expected):
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
 
 
 @pytest.mark.parametrize(
@@ -205,4 +205,4 @@ ___ test_turn_down_lights(arg, expected):
 ___ test_example_with_bite(arg, expected):
     lights = LightsGrid(5, arg)
     lights.follow_instructions()
-    assert lights.lights_intensity == expected
+    ... lights.lights_intensity __ expected
