@@ -63,7 +63,7 @@ c_ Solution:
         visited.add((x, y))
 
         __ node.end_of __ n.. N..
-            next_words.a..(path[:])
+            next_words.a..(path | )
             ans = max(ans, cnt + 1)
         ____:
             ___ dx, dy __ (

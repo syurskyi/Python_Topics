@@ -12,7 +12,7 @@ c_ Handshake:
 
     ___ commands_for_num(self, num):
         __ testBit(num, 4):
-            r.. l..(reversed(unreversed_commands(num)))
+            r.. l..(r..(unreversed_commands(num)))
         r.. unreversed_commands(num)
 
     ___ unreversed_commands(self, num):

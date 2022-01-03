@@ -58,7 +58,7 @@ c_ Solution:
                 ret.a..(cur.val)
             ____:
                 visited.add(cur)
-                ___ c __ reversed(cur.children):
+                ___ c __ r..(cur.children):
                     stk.a..(c)
 
         r.. ret

@@ -37,7 +37,7 @@ c_ Solution:
         components = [1, 4, 5, 9, 10, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
 
         # starting from the largest
-        ___ component __ reversed(components):  # reversed
+        ___ component __ r..(components):  # reversed
             w.... num >= component:
                 string_builder.a..(int2roman[component])
                 num -= component

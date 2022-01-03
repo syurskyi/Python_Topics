@@ -67,7 +67,7 @@ ___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) -> N.
         2015  608473.83  50706.152500   97237.42
         2016  733947.03  61162.252500  118447.83
     """
-    df = df.copy()
+    df = df.c..
     df['year'] = df.month.dt.year
     s = df.groupby(['year']).agg({'sales': stats}).__str__().s..('\n')[1:]
     print('\n'.j..(s))
@@ -107,7 +107,7 @@ ___ yearly_report(df: pd.DataFrame, year: int) -> N..
     """
     __ year n.. __ df.month.dt.year.unique():
         raise ValueError(f'The year {year} is not included in the report!')
-    df = df.copy()
+    df = df.c..
     df['year'] = df.month.dt.year
     df['month'] = df.month.dt.month
     df = df.groupby('year').get_group(year).set_index('month')

@@ -1,4 +1,4 @@
-____ copy _______ deepcopy
+____ copy _______ d..
 c_ Matrix(object):
 
     ___ - , values):
@@ -45,7 +45,7 @@ c_ Matrix(object):
 
         result = self @ other
 
-        values = deepcopy(result.values)
+        values = d..(result.values)
 
 
         r.. self

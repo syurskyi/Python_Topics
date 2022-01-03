@@ -9,7 +9,7 @@ c_ Solution(object):
     i = l..(num1) - 1
     j = l..(num2) - 1
     ans = ""
-    ___ k __ reversed(r..(0, max(l..(num1), l..(num2)))):
+    ___ k __ r..(r..(0, max(l..(num1), l..(num2)))):
       a = int(num1[i]) __ i >= 0 ____ 0
       b = int(num2[j]) __ j >= 0 ____ 0
       i, j = i - 1, j - 1

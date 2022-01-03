@@ -37,7 +37,7 @@ ___ run_event_loop():
 
 ___ list_entries(data):
     print('Your journal entries: ')
-    entries  reversed(data)
+    entries  r..(data)
     ___ idx, entry __ e..(entries):
         print('* [{}] {}'.f..(idx + 1, entry))
 

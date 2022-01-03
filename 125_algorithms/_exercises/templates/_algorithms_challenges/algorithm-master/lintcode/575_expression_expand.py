@@ -21,7 +21,7 @@ c_ Solution:
                 w.... stack a.. isi..(stack[-1], s..):
                     part.a..(stack.pop())
                 cnt = int(stack.pop()) __ stack ____ 1
-                stack.a..(cnt * ''.j..(reversed(part)))
+                stack.a..(cnt * ''.j..(r..(part)))
             ____:
                 stack.a..(c)
 

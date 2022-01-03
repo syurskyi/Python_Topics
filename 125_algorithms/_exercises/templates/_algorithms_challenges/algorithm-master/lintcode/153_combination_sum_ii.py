@@ -15,7 +15,7 @@ c_ Solution:
 
     ___ dfs(self, A, start, remaining, ans, path):
         __ remaining __ 0:
-            ans.a..(path[:])
+            ans.a..(path | )
             r..
 
         ___ i __ r..(start, l..(A)):

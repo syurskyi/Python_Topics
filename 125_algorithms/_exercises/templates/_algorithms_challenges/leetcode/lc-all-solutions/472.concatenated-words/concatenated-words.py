@@ -11,7 +11,7 @@ c_ Solution(object):
       dp = [F..] * (l..(word) + 1)
       dp[0] = T..
       ___ i __ r..(1, l..(word) + 1):
-        ___ j __ reversed(r..(0, i)):
+        ___ j __ r..(r..(0, i)):
           __ n.. dp[j]:
             continue
           __ word[j:i] __ cands:

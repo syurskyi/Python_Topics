@@ -42,7 +42,7 @@ c_ Solution:
             __ direction:
                 result.a..([element.val ___ element __ lst])
             ____:
-                result.a..([element.val ___ element __ reversed(lst)])
+                result.a..([element.val ___ element __ r..(lst)])
 
             ___ i __ r..(l..(lst)):  # evaluation time
                 element = lst.pop(0)  # queue 

@@ -23,7 +23,7 @@ c_ Solution:
         ____ root.left __ N.. a.. root.right __ N..
             __ root.val __ s..:
                 one.a..(root.val)
-                res.a..(one[:])
+                res.a..(one | )
                 one.pop()
         ____:
             one.a..(root.val)

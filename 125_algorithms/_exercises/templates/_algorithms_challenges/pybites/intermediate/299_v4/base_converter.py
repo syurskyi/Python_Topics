@@ -26,4 +26,4 @@ ___ convert(number: int, base: int = 2) -> s..:
 
     digits = l..(map(digit_map, digits))
 
-    r.. ''.j..(reversed(digits))
+    r.. ''.j..(r..(digits))

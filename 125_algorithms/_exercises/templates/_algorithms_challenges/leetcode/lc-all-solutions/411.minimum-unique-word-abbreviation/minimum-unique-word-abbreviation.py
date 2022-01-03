@@ -9,7 +9,7 @@ c_ Solution(object):
     ___ dfs(w, start, res):
       res.a..(w)
       ___ i __ r..(start, l..(w)):
-        ___ l __ reversed(r..(1, l..(w) - i + 1)):
+        ___ l __ r..(r..(1, l..(w) - i + 1)):
           dfs(w[:i] + [s..(l)] + w[i + l:], i + 2, res)
 
     ___ match(src, dest):

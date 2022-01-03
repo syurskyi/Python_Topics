@@ -15,7 +15,7 @@ c_ Solution:
         r.. ans
 
     ___ dfs(self, A, start, ans, subset):
-        ans.a..(subset[:])
+        ans.a..(subset | )
 
         __ start >= l..(A):
             r..

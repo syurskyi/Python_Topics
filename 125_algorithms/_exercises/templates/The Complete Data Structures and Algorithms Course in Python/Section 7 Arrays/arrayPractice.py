@@ -81,7 +81,7 @@ print("Step 14")
 
 # 16. Slice Elements from an array
 print("Step 16")
-print(my_array[:])
+print(my_array | )
 
 
 

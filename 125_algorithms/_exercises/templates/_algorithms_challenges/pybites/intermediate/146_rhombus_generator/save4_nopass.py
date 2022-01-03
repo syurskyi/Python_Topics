@@ -27,4 +27,4 @@ ___ gen_rhombus(width):
             stars.remove(line)
             count += 1
 
-    r.. stars + l..(reversed(stars))[1:]
+    r.. stars + l..(r..(stars))[1:]

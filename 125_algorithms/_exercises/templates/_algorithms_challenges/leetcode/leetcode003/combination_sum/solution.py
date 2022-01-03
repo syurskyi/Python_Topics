@@ -13,7 +13,7 @@ c_ Solution:
         __ target < 0:
             r..
         ____ target __ 0:
-            res.a..(cand[:])
+            res.a..(cand | )
         ____:
             ___ i, c __ e..(candidates):
                 cand.a..(c)

@@ -45,5 +45,5 @@ c_ Solution(object):
                 __ root.right __ n.. N..
                     queue.a..(root.right)
                 level.a..(root.val)
-            res.a..(level[:])
+            res.a..(level | )
         r.. res

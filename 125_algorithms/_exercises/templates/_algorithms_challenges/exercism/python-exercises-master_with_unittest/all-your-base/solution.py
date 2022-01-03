@@ -1,5 +1,5 @@
 ___ from_digits(digits, base):
-    r.. s..(n * base ** i ___ i, n __ e..(reversed(digits)))
+    r.. s..(n * base ** i ___ i, n __ e..(r..(digits)))
 
 
 ___ to_digits(number, base_to):

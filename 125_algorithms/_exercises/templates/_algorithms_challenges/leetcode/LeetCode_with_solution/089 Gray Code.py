@@ -57,7 +57,7 @@ c_ Solution:
 
         ___ num_of_bit __ r..(2, n+1):
             msb = 1<<num_of_bit-1
-            ___ element __ reversed(result):
+            ___ element __ r..(result):
                 result.a..(msb+element)
 
         r.. result

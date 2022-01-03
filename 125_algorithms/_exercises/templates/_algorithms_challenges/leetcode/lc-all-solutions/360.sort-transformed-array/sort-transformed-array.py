@@ -15,7 +15,7 @@ c_ Solution(object):
       __ b >= 0:
         r.. [f(x) ___ x __ nums]
       ____:
-        r.. [f(x) ___ x __ reversed(nums)]
+        r.. [f(x) ___ x __ r..(nums)]
 
     mid = (-1.0) * b / (2.0 * a)
     up, down    # list, []

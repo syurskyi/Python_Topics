@@ -1,6 +1,6 @@
 ___ song(first, last=0):
     verses = ''
-    ___ number __ reversed(r..(last, first + 1)):
+    ___ number __ r..(r..(last, first + 1)):
         verses += verse(number) + '\n'
 
     r.. verses

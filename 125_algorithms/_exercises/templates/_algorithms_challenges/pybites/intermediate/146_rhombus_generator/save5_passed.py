@@ -29,4 +29,4 @@ ___ gen_rhombus(width):
 
     output = [line.center(l..(stars[-1]), ' ') ___ line __ stars]
 
-    r.. output + l..(reversed(output))[1:]
+    r.. output + l..(r..(output))[1:]

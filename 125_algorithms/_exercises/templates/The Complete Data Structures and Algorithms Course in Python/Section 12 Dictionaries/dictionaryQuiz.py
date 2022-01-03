@@ -141,7 +141,7 @@ ___ _ __ s..(d..
 # Q-9. What will be the output of the following code snippet?
 
 rec  {"Name" : "Python", "Age":"20"}
-r  rec.copy()
+r  rec.c..
 print(id(r) __ id(rec))
 # A. True
 # B. False

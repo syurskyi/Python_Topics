@@ -1,6 +1,6 @@
 ___ countdown1():
     """Write a generator that counts from 100 to 1"""
-    ___ i __ reversed(r..(1,101)):
+    ___ i __ r..(r..(1,101)):
         y.. i
 
 

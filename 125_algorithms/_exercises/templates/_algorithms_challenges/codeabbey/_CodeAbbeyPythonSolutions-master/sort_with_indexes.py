@@ -2,7 +2,7 @@ amount_values = int(input())
 results    # list
 
 ___ get_sorting_indexes(array):
-    sorted_array = array.copy()
+    sorted_array = array.c..
     n = l..(array)
     ___ i __ r..(n):
         ___ j __ r..(n-i-1):

@@ -15,7 +15,7 @@ c_ Solution(object):
     ans = float("-inf")
     ___ i __ r..(1, n):
       lMax[i] = max(lMax[i - 1], maxArray[i])
-    ___ i __ reversed(r..(0, n - 1)):
+    ___ i __ r..(r..(0, n - 1)):
       rMax[i] = max(rMax[i + 1], maxArray[i])
     ___ i __ r..(n):
       __ 0 < i < n - 1:

@@ -37,7 +37,7 @@ c_ Solution:
 
         remaining -= node.val
         __ remaining __ 0:
-            ans.a..(path[:])
+            ans.a..(path | )
 
         __ node.parent a.. node.parent __ n.. start:
             find_path(node.parent, node, remaining, ans, path)

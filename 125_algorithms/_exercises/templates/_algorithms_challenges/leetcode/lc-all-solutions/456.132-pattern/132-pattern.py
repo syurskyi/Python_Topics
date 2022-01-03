@@ -6,7 +6,7 @@ c_ Solution(object):
     """
     ak = float("-inf")
     stack    # list
-    ___ num __ reversed(nums):
+    ___ num __ r..(nums):
       __ ak > num:
         r.. T..
       w.... stack a.. stack[-1] < num:

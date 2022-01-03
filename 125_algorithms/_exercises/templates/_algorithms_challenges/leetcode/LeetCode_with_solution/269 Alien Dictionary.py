@@ -59,7 +59,7 @@ c_ Solution(object):
                 __ n.. topo_dfs(V, v, visited, pathset, ret):
                     r.. ""
 
-        r.. "".j..(reversed(ret))
+        r.. "".j..(r..(ret))
 
     ___ construct_graph(self, words):
         V = defaultdict(l..)

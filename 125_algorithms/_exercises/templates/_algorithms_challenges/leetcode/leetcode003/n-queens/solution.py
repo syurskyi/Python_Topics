@@ -11,7 +11,7 @@ c_ Solution:
         sol    # list  # One solution (list of strings)
         row = ['.' ___ i __ columns]
         ___ c __ columns:
-            new_row = row[:]
+            new_row = row |
             new_row[c] = 'Q'
             sol.a..(''.j..(new_row))
         r.. sol

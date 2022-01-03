@@ -31,7 +31,7 @@ c_ Solution:
         path.a..(node.val)
 
         __ n.. node.left a.. n.. node.right a.. remaining __ node.val:
-            ans.a..(path[:])
+            ans.a..(path | )
         ____:
             dfs(node.left, remaining - node.val, ans, path)
             dfs(node.right, remaining - node.val, ans, path)

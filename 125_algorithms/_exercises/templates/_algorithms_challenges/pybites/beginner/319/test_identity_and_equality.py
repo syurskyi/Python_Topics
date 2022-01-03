@@ -15,7 +15,7 @@ c_ NewList(l..):
 # A bunch of lists to test
 l1 = [["gas", "electro", "hybrid"], "200 PS", "radio"]
 l2 = l1
-l3 = l1.copy()
+l3 = l1.c..
 l4 = l1[0]
 l5 = [l4, "digital radio"]
 l6 = [l1[0], "digital radio"]
@@ -49,7 +49,7 @@ ___ test_car_age(days, expected):
     [
         ([], [], T..),  # Empty
         (l1, l2, T..),  # same instance
-        (l1, l1[:], T..),  # full copy
+        (l1, l1 | , T..),  # full copy
         (l1, l3, T..),  # full copy
         (l5, l6, T..),  # Two identical short lists
         (l5[0], l6[0], T..),  # First element of short lists (same instances)

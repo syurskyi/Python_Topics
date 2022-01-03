@@ -1,4 +1,4 @@
-____ copy _______ deepcopy
+____ copy _______ d..
 
 _______ pytest
 
@@ -22,7 +22,7 @@ ___ test_load_pycon_data(videos):
 ___ test_get_most_popular_talks_by_views(videos):
     # as sort might be used in place, or any other list manipulation
     # let's make sure we work with a copy of the module fixture
-    videos_copy = deepcopy(videos)
+    videos_copy = d..(videos)
     expected = ['T-TwcmT6Rcw', 'GBQAKldqgZs', 'ms29ZPUKxbU',
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA']
     vids = l..(get_most_popular_talks_by_views(videos_copy))
@@ -32,7 +32,7 @@ ___ test_get_most_popular_talks_by_views(videos):
 
 ___ test_get_most_popular_talks_by_like_ratio(videos):
     # same here: let's use a local copy of videos
-    videos_copy = deepcopy(videos)
+    videos_copy = d..(videos)
     vids = l..(get_most_popular_talks_by_like_ratio(videos_copy))
     expected = ['8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ']

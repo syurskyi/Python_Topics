@@ -15,7 +15,7 @@ c_ Solution(object):
     :rtype: List[int]
     """
     nums = nums + []
-    ___ i __ reversed(r..(0, l..(nums))):
+    ___ i __ r..(r..(0, l..(nums))):
       idx = random.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]
     r.. nums

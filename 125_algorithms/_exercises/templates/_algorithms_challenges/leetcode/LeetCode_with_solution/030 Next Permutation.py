@@ -29,11 +29,11 @@ c_ Solution:
         partition_num_index = 0
         change_num_index = 0
 
-        ___ i __ reversed(xrange(1, length)):
+        ___ i __ r..(xrange(1, length)):
             __ num[i]>num[i-1]:
                 partition_num_index = i-1
                 break
-        ___ i __ reversed(xrange(1, length)):
+        ___ i __ r..(xrange(1, length)):
             __ num[i]>num[partition_num_index]:
                 change_num_index = i
                 break
@@ -44,7 +44,7 @@ c_ Solution:
             # If such arrangement is not possible, to lowest possible order (ie, sorted in ascending order).
             num.reverse()
         ____:
-            num[partition_num_index+1:] = reversed(num[partition_num_index+1:])
+            num[partition_num_index+1:] = r..(num[partition_num_index+1:])
         r.. num
 
 

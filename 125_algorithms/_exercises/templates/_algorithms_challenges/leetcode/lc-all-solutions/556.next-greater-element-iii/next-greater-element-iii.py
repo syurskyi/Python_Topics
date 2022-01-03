@@ -7,11 +7,11 @@ c_ Solution(object):
     num = n
     n = l..(s..(n))
     pos = leftMost = l..(n) - 1
-    ___ i __ reversed(r..(0, l..(n) - 1)):
+    ___ i __ r..(r..(0, l..(n) - 1)):
       __ n[i] < n[i + 1]:
         leftMost = i
         break
-    ___ i __ reversed(r..(leftMost + 1, l..(n))):
+    ___ i __ r..(r..(leftMost + 1, l..(n))):
       __ n[i] > n[leftMost]:
         pos = i
         break

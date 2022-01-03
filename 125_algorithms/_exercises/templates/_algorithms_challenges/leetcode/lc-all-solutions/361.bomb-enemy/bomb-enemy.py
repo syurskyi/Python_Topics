@@ -21,8 +21,8 @@ c_ Solution(object):
           dpCol[i + 1][j + 1] += 1
 
     maxKilled = 0
-    ___ i __ reversed(r..(0, l..(grid))):
-      ___ j __ reversed(r..(0, l..(grid[0]))):
+    ___ i __ r..(r..(0, l..(grid))):
+      ___ j __ r..(r..(0, l..(grid[0]))):
         __ grid[i][j] __ "W":
           continue
         dpRow[i + 1][j + 1] = max(dpRow[i + 1][j + 1], dpRow[i + 1][j + 2])

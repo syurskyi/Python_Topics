@@ -17,7 +17,7 @@ ___ calculate_total(books, price_so_far=0.):
 
     ___ i __ r..(l..(groups)):
 
-        remaining_books = books[:]
+        remaining_books = books |
 
         ___ v __ groups[:i + 1]:
             remaining_books.remove(v)

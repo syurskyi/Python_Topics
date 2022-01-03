@@ -8,7 +8,7 @@ ___ solveJosephus(specifics):
         __ l..(people) __ 1:
             print(people[0]) # Pyschologically scarred Winner!
             s.. = T..
-        ___ person __ people[:]: #Make copy of iterating list
+        ___ person __ people | : #Make copy of iterating list
             positionCounter += 1
             __ positionCounter __ killPosition:
                 people.remove(person)

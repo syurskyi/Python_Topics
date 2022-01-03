@@ -12,6 +12,6 @@ c_ Solution(object):
     ___ k, v __ d.i..:
       buf[v] = buf.get(v, "") + k * v
     ans = ""
-    ___ i __ reversed(r..(0, l..(s))):
+    ___ i __ r..(r..(0, l..(s))):
       ans += buf.get(i, "")
     r.. ans

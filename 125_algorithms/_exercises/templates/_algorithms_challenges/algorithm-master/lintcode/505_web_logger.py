@@ -1,7 +1,7 @@
 c_ WebLogger:
     ___ - ):
         dummy    # list
-        dummy[:] = [dummy, dummy, -1]
+        dummy |  = [dummy, dummy, -1]
         dummy = dummy
         size = 0
 

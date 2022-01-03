@@ -3,11 +3,11 @@ Conway's Game of Life - Unlimited Edition
 http://www.codewars.com/kata/52423db9add6f6fc39000354/train/python
 """
 
-____ copy _______ deepcopy
+____ copy _______ d..
 
 
 ___ get_generation(cells, generations):
-    origin = deepcopy(cells)
+    origin = d..(cells)
     __ generations __ 0:
         r.. origin
     __ generations > 1:
@@ -19,7 +19,7 @@ ___ get_generation(cells, generations):
     origin.insert(0, [0] * l..(origin[0]))
     origin.a..([0] * l..(origin[0]))
 
-    result = deepcopy(origin)
+    result = d..(origin)
     ___ r __ r..(l..(origin)):
         ___ c __ r..(l..(origin[0])):
             neighbours = get_living_neighbours(origin, r, c)

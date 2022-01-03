@@ -8,7 +8,7 @@ c_ Luhn:
 
     ___ addends
         r.. [addend(idx, int(val)) ___ idx, val __
-                e..(reversed(s..(number)))]
+                e..(r..(s..(number)))]
 
     ___ addend(self, idx, val):
         r.. subtract_nine(idx, double_every_other(idx, val))

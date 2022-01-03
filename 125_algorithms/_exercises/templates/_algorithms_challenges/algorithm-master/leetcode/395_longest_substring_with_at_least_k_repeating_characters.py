@@ -13,7 +13,7 @@ c_ Solution:
         _F = d...f..(s, 0)
 
         ___ m __ r..(1, l..(_F) + 1):
-            F = _F.copy()
+            F = _F.c..
             left = right = 0
             kind = valid = 0
 

@@ -41,7 +41,7 @@ c_ Solution(object):
         s = s..(A)
 
         cur = s..(idx * val ___ idx, val __ e..(A))
-        ___ r __ reversed(A):
+        ___ r __ r..(A):
             cur = cur + s - n * r
             gmax = max(gmax, cur)
 

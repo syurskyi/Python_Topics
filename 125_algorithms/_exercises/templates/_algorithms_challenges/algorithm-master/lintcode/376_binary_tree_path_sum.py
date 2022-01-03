@@ -26,7 +26,7 @@ c_ Solution:
 
         remaining -= node.val
         __ remaining __ 0 a.. n.. node.left a.. n.. node.right:
-            ans.a..(path[:])
+            ans.a..(path | )
 
         dfs(node.left, remaining, ans, path)
         dfs(node.right, remaining, ans, path)

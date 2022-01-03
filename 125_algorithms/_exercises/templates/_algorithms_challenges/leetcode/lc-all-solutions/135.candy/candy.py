@@ -11,7 +11,7 @@ c_ Solution(object):
       __ ratings[i] > ratings[i - 1]:
         left[i] = left[i - 1] + 1
     ans = left[-1]
-    ___ i __ reversed(r..(0, n - 1)):
+    ___ i __ r..(r..(0, n - 1)):
       __ ratings[i] > ratings[i + 1]:
         left[i] = max(left[i], left[i + 1] + 1)
       ans += left[i]

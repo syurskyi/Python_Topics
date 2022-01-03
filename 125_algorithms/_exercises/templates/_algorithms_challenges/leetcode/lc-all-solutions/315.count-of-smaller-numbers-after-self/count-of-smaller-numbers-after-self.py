@@ -9,7 +9,7 @@ c_ Solution(object):
     """
     ans    # list
     bst    # list
-    ___ num __ reversed(nums):
+    ___ num __ r..(nums):
       idx = bisect.bisect_left(bst, num)
       ans.a..(idx)
       bisect.insort(bst, num)

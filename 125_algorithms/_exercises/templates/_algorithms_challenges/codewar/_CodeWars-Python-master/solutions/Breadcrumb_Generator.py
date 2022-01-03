@@ -72,7 +72,7 @@ ___ get_element_name(element):
             break
 
     __ l..(element) > 30:
-        ___ i, c __ reversed(l..(e..(acronyms))):
+        ___ i, c __ r..(l..(e..(acronyms))):
             __ c __ ignore_words:
                 acronyms.pop(i)
         r.. ''.j..([s[0].upper() ___ s __ acronyms])

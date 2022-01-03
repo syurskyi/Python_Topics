@@ -26,5 +26,5 @@ c_ Solution:
             sb.a..(chr(ord("A")+n%26))
             n /= 26
 
-        r.. "".j..(reversed(sb))
+        r.. "".j..(r..(sb))
 

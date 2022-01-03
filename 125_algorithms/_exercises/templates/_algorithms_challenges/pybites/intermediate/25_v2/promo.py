@@ -26,8 +26,8 @@ c_ Promo:
 
     ___ - ):
         # updated Bite to make local copies (avoid globals!)
-        all_bites = BITES.copy()
-        bites_done = BITES_DONE.copy()
+        all_bites = BITES.c..
+        bites_done = BITES_DONE.c..
     
 
     $

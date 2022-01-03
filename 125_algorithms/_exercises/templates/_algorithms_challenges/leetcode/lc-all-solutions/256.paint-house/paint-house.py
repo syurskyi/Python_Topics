@@ -7,7 +7,7 @@ c_ Solution(object):
     __ n.. costs:
       r.. 0
     dp = [0] * (l..(costs[0]))
-    dp[:] = costs[0]
+    dp |  = costs[0]
     ___ i __ r..(1, l..(costs)):
       d0 = d1 = d2 = 0
       ___ j __ r..(0, 3):

@@ -47,6 +47,6 @@ c_ Solution:
             _sum = S[i + k] - S[i] + S[left + k] - S[left] + S[right + k] - S[right]
             __ _sum > max_sum:
                 max_sum = _sum
-                ans[:] = left, i, right
+                ans |  = left, i, right
 
         r.. ans

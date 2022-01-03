@@ -25,7 +25,7 @@ c_ LinkedList(object):
     ___ pop
         pass
 
-    ___ reversed
+    ___ r..
         pass
 
 

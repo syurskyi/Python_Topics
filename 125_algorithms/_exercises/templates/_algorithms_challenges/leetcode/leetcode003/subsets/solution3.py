@@ -9,7 +9,7 @@ c_ Solution:
         r.. res
 
     ___ subsets_aux(self, S, cand, res):
-        res.a..(cand[:])
+        res.a..(cand | )
         ___ i, e __ e..(S):
             cand.a..(S[i])
             subsets_aux(S[i + 1:], cand, res)

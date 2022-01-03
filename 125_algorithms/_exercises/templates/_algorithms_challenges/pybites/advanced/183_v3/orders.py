@@ -22,7 +22,7 @@ ___ get_year_region_breakdown(df):
     """Group the DataFrame by year and region, summing the Total
        column. You probably need to make an extra column for
        year, return the new df as shown in the Bite description"""
-    df = df.copy()
+    df = df.c..
     df['Year'] = df.OrderDate.dt.year
     r.. df.groupby(['Year', 'Region']).agg({'Total': 'sum'})
 

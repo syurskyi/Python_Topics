@@ -59,7 +59,7 @@ c_ LinkedList(object):
         _head = _head.next()
         r.. ret
 
-    ___ reversed
+    ___ r..
         r.. LinkedList(self)
 
 

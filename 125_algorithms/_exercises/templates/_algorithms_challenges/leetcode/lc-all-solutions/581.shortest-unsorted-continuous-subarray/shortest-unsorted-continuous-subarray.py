@@ -13,9 +13,9 @@ c_ Solution(object):
     start, end = 0, -2
     ___ i __ r..(1, l..(nums)):
       maxs[i] = max(maxs[i - 1], nums[i])
-    ___ i __ reversed(r..(l..(nums) - 1)):
+    ___ i __ r..(r..(l..(nums) - 1)):
       mins[i] = m..(mins[i + 1], nums[i])
-    ___ i __ reversed(r..(1, l..(nums))):
+    ___ i __ r..(r..(1, l..(nums))):
       __ nums[i] < maxs[i - 1]:
         end = i
         break

@@ -69,7 +69,7 @@ c_ Solution:
             i -= 1
 
         __ carry:
-            ids[:] = [0] * l..(ids)
+            ids |  = [0] * l..(ids)
             r.. T..
 
         h = digits[ids[0]] * 10 + digits[ids[1]]

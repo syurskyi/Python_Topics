@@ -8,4 +8,4 @@ c_ Solution:
         __ n.. s:
             r.. ''
 
-        r.. ' '.j..(reversed(s.s..()))
+        r.. ' '.j..(r..(s.s..()))

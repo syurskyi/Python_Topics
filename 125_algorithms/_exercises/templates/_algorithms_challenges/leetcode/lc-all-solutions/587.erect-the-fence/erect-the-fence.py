@@ -24,7 +24,7 @@ c_ Solution(object):
         lower.pop()
       lower.a..(point)
 
-    ___ point __ reversed(points):
+    ___ point __ r..(points):
       w.... l..(upper) >= 2 a.. direction(upper[-2], upper[-1], point) < 0:
         upper.pop()
       upper.a..(point)

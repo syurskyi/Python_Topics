@@ -35,7 +35,7 @@ c_ Solution(object):
         
         # Reversely and the block of each hits and get count of newly add bricks
         res = [0]*l..(hits)
-        ___ k __ reversed(r..(l..(hits))):
+        ___ k __ r..(r..(l..(hits))):
             i, j = hits[k]
             grid[i][j] += 1
             __ grid[i][j] __ 1 a.. is_connected(i, j):

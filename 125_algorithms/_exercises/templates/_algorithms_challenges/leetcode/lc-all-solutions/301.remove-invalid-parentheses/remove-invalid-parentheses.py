@@ -40,7 +40,7 @@ c_ Solution(object):
         prepLeft += s[i]
 
     prepRight = ""
-    ___ i __ reversed(r..(0, l..(prepLeft))):
+    ___ i __ r..(r..(0, l..(prepLeft))):
       __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
         break

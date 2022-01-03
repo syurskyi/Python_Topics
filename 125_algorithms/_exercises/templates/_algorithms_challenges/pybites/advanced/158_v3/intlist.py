@@ -15,7 +15,7 @@ c_ IntList(l..):
         r.. numbers
 
     ___ _elements
-        r.. [int(i) ___ i __ super().copy()]
+        r.. [int(i) ___ i __ super().c..]
 
     $
     ___ mean

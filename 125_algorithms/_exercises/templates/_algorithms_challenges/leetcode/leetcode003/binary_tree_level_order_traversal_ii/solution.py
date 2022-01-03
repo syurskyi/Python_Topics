@@ -40,7 +40,7 @@ c_ Solution(object):
         w.... queue:
             root = queue.pop(0)
             __ root __ N..
-                stack.a..(level[:])
+                stack.a..(level | )
                 level    # list
                 __ queue:
                     queue.a..(N..)

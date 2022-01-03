@@ -24,7 +24,7 @@ c_ Roman:
     @classmethod
     ___ get_components(cls, arabic):
         components    # list
-        ___ key __ reversed(s..(cls.NUMERALS.keys())):
+        ___ key __ r..(s..(cls.NUMERALS.keys())):
             w.... arabic >= key:
                 arabic -= key
                 components.a..(key)

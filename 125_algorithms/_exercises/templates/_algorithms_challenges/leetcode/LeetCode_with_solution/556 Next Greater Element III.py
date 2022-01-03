@@ -44,7 +44,7 @@ c_ Solution:
             j -= 1
 
         seq[i], seq[j] = seq[j], seq[i]
-        seq[i+1:] = reversed(seq[i+1:])
+        seq[i+1:] = r..(seq[i+1:])
         ret = int("".j..(seq))
         __ ret <= 1 << 31 - 1:
             r.. ret

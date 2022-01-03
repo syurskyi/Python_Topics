@@ -6,7 +6,7 @@ c_ Solution:
         """
         :type nums: List[int]
         """
-        origin = nums[:]
+        origin = nums |
         nums = nums
 
     ___ reset
@@ -14,7 +14,7 @@ c_ Solution:
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        nums = origin[:]
+        nums = origin |
         r.. nums
 
     ___ shuffle

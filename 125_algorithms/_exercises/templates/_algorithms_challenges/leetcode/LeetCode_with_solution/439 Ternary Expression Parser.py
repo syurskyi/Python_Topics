@@ -10,7 +10,7 @@ c_ Solution:
         stk from right to left parsing, including the operand and operator
         """
         stk    # list
-        ___ c __ reversed(expression):
+        ___ c __ r..(expression):
             __ stk a.. stk[-1] __ "?":
                 stk.pop()  # ?
                 first = stk.pop()

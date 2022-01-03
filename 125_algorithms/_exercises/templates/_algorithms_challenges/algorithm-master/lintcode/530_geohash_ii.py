@@ -52,7 +52,7 @@ c_ GeoHash:
                 bins.a..(0)
             val_in_oct = val_in_oct >> 1
 
-        r.. reversed(bins)
+        r.. r..(bins)
 
     ___ get_base32_list
         base32_list = [s..(i) ___ i __ r..(10)]

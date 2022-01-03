@@ -34,7 +34,7 @@ c_ Solution(object):
       __ num __ 1:
         ans = m..(ans, int("".j..(s..(path))))
         r.. T..
-      ___ i __ reversed(r..(2, 10)):
+      ___ i __ r..(r..(2, 10)):
         __ num % i __ 0:
           path.a..(s..(i))
           __ dfs(num / i, path):

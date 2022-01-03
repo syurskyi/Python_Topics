@@ -102,7 +102,7 @@ c_ Solution(object):
 
         result    # list
         array = r..(1, n+1)
-        ___ i __ reversed(xrange(1, n)):
+        ___ i __ r..(xrange(1, n)):
             index = k/factorial
             result.a..(array[index])
             array = array[:index]+array[index+1:]

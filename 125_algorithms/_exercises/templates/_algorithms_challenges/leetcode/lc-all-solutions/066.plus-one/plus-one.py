@@ -5,7 +5,7 @@ c_ Solution(object):
     :rtype: List[int]
     """
     carry = 1
-    ___ i __ reversed(r..(0, l..(digits))):
+    ___ i __ r..(r..(0, l..(digits))):
       digit = (digits[i] + carry) % 10
       carry = 1 __ digit < digits[i] ____ 0
       digits[i] = digit

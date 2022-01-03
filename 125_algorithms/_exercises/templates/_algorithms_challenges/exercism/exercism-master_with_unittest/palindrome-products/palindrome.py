@@ -30,7 +30,7 @@ c_ Palindromes:
 
     @staticmethod
     ___ is_palindrome(num):
-        r.. s..(num) __ ''.j..(reversed(s..(num)))
+        r.. s..(num) __ ''.j..(r..(s..(num)))
 
 
 ___ smallest_palindrome(max_factor, min_factor=0):

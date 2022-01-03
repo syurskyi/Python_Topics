@@ -28,7 +28,7 @@ c_ Solution:
 
         right_max = 0
         # for ind, val in enumerate(reversed(A)):  # ind incorrect
-        ___ ind, val __ reversed(l..(e..(A))):
+        ___ ind, val __ r..(l..(e..(A))):
             right_max = max(right_max, val)
             right_maxs[ind] = right_max
 

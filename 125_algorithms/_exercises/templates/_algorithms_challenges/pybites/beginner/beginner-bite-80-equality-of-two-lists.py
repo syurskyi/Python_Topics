@@ -56,7 +56,7 @@ ___ check_equality_solution2(list1, list2):
 
 l = ['1']
 a = [1, 2, 2, 3, 4]
-b = a[:] + [1, 3, 4, 4]
+b = a |  + [1, 3, 4, 4]
 print(check_equality(l,l))
 print(check_equality(['1', '2', '3'], ['1', '2', '3']))
 print(check_equality(['1', '3', '2'], ['1', '2', '3']))

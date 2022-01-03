@@ -42,7 +42,7 @@ c_ Solution:
             # reverse
             temp = cur_lst[-1].next
             pre.next = cur_lst[-1]
-            ___ i __ reversed(xrange(k)):
+            ___ i __ r..(xrange(k)):
                 __ i__0:
                     cur_lst[i].next = temp
                 ____:

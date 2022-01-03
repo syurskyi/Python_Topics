@@ -107,7 +107,7 @@ c_ Solution_dfs:
             __ k n.. __ visited:
                 circle = dfs(G, k, N.., set([k]), [k], visited)
                 __ circle:
-                    ___ p, q __ reversed(edges):
+                    ___ p, q __ r..(edges):
                         __ p __ circle a.. q __ circle:
                             r.. [p, q]
 

@@ -20,7 +20,7 @@ You will be tested on having the same output, making it work with another start 
 
 
 ___ countdown_for(start=10):
-    ___ i __ reversed(r..(1, start + 1)):
+    ___ i __ r..(r..(1, start + 1)):
         print(i)
     print('time is up')
 

@@ -66,7 +66,7 @@ c_ Solution:
             ret.a..(dic[s%4])
             s >>= 2
 
-        r.. "".j..(reversed(ret))
+        r.. "".j..(r..(ret))
 
     ___ mapping(self, a):
         dic = {

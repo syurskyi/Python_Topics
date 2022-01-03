@@ -51,7 +51,7 @@ c_ Solution:
 
     ___ dfs(self, word, B, next_words, distance, ans, path):
         __ word __ B:
-            ans.a..(path[:])
+            ans.a..(path | )
             r..
 
         ___ _word __ get_next_word(word, next_words):

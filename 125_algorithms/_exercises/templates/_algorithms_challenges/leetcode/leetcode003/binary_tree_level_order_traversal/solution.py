@@ -41,7 +41,7 @@ c_ Solution(object):
         w.... queue:
             root = queue.pop(0)
             __ root __ N..
-                res.a..(level[:])
+                res.a..(level | )
                 level    # list
                 __ queue:
                     queue.a..(N..)

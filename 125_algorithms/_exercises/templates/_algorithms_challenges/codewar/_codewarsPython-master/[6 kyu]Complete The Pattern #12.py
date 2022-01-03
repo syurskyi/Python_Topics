@@ -6,7 +6,7 @@ ___ pattern(n):
     res    # list
     pattern = [' '] * ( 2 * n -1)
     ___ i __ r..(1,n):
-        temp = pattern[:]
+        temp = pattern |
         temp[i-1] = temp[-i] = s..(i%10)
         res.a..(''.j..(temp))
     pattern[n-1] = s..(n%10)

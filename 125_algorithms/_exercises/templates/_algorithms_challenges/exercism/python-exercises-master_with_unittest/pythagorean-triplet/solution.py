@@ -11,7 +11,7 @@ ___ primitive_triplets(nbr):
     args = [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers))]
     a = [reduce(mul, p) ___ p __ product(*args)]
     a.s..()
-    factors = [(m, n) ___ m, n __ z..(reversed(a), a) __ m > n]
+    factors = [(m, n) ___ m, n __ z..(r..(a), a) __ m > n]
     ts = set()
     ___ m, n __ factors:
         ts.update([tuple(s..([nbr, m * m - n * n, m * m + n * n]))])

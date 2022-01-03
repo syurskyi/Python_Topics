@@ -26,5 +26,5 @@ c_ Solution:
         :return: a string
         """
         words_lst = s.s..   # not s.split(" ")
-        words_lst = reversed(words_lst)
+        words_lst = r..(words_lst)
         r.. ' '.j..(words_lst)

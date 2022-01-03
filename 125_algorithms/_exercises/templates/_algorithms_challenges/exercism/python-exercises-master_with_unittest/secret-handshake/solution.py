@@ -19,7 +19,7 @@ ___ code(seq):
         r.. '0'
     s = find_subseq(seq)
     __ n.. s:
-        s = ['1'] + find_subseq(reversed(seq))
+        s = ['1'] + find_subseq(r..(seq))
     r.. "".j..(s)
 
 

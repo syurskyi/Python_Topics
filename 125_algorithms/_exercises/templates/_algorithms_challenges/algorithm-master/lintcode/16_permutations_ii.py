@@ -20,7 +20,7 @@ c_ Solution:
 
     ___ dfs(self, nums, ans, path):
         __ n.. nums:
-            ans.a..(path[:])
+            ans.a..(path | )
             r..
 
         ___ i __ r..(l..(nums)):
@@ -61,7 +61,7 @@ c_ Solution:
 
     ___ dfs(self, nums, visited, ans, path):
         __ l..(path) __ l..(nums):
-            ans.a..(path[:])
+            ans.a..(path | )
             r..
 
         ___ i __ r..(l..(nums)):

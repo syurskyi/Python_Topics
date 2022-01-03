@@ -24,7 +24,7 @@ c_ Solution:
     ___ dfs(self, words, n, ans, path):
         __ (l..(path) __ n a..
             is_valid(path)):
-            ans.a..(path[:])
+            ans.a..(path | )
             r..
 
         __ l..(path) >= n:

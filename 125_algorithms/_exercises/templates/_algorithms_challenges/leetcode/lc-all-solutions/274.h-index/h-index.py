@@ -13,7 +13,7 @@ c_ Solution(object):
         dp[c] += 1
 
     total = 0
-    ___ i __ reversed(r..(1, l..(dp))):
+    ___ i __ r..(r..(1, l..(dp))):
       total += dp[i]
       __ total >= i:
         r.. i

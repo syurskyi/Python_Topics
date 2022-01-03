@@ -21,7 +21,7 @@ c_ Solution(object):
 
     ans = 0
     dp = [[0] * l..(matrix[0]) ___ _ __ r..(0, l..(matrix))]
-    ___ i __ reversed(r..(0, l..(matrix))):
+    ___ i __ r..(r..(0, l..(matrix))):
       __ i __ l..(matrix) - 1:
         dp[i] = [int(h) ___ h __ matrix[i]]
       ____:

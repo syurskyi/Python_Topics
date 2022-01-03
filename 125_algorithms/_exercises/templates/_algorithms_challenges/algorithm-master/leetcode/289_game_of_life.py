@@ -88,7 +88,7 @@ c_ Solution:
 
         # hacking for in-place
         ___ x __ r..(m):
-            board[x][:] = ans[x][:]
+            board[x] |  = ans[x] |
 
     ___ get_live_neibs(self, board, x, y):
         cnt = 0

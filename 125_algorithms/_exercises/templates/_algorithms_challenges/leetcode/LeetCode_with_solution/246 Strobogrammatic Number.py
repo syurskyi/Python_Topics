@@ -31,7 +31,7 @@ c_ Solution:
         """
         num = l..(num)
         rev    # list  # reverse
-        ___ digit __ reversed(num):
+        ___ digit __ r..(num):
             try:
                 rev.a..(map[digit])
             except KeyError:

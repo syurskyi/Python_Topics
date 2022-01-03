@@ -35,7 +35,7 @@ c_ Solution(object):
         dp = [1] * l..(line)
         pre = line[-1]
         count = 1
-        ___ i __ reversed(r..(l..(line) - 1)):
+        ___ i __ r..(r..(l..(line) - 1)):
           __ line[i] __ pre:
             count += 1
           ____:

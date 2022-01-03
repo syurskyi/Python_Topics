@@ -34,7 +34,7 @@ c_ Solution:
         w.... stk:
             cur = stk.pop()
             ret.a..(cur.val)
-            ___ c __ reversed(cur.children):
+            ___ c __ r..(cur.children):
                 stk.a..(c)
 
         r.. ret

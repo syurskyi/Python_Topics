@@ -40,4 +40,4 @@ c_ Solution:
             ___ y __ r..(n):
                 ans[y][n - 1 - x] = matrix[x][y]
 
-        matrix[:] = ans[:]
+        matrix |  = ans |

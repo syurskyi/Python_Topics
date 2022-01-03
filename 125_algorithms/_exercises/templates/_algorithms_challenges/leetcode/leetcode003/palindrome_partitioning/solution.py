@@ -9,7 +9,7 @@ c_ Solution:
 
     ___ partition_aux(self, s, cand, res):
         __ n.. s:
-            res.a..(cand[:])
+            res.a..(cand | )
         ____:
             ___ i, e __ e..(s):
                 __ is_palindrome(s[:i + 1]):

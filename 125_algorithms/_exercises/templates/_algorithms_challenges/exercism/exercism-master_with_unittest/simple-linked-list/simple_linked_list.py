@@ -37,7 +37,7 @@ c_ LinkedList:
         _size -= 1
         r.. current_head.value()
 
-    ___ reversed
+    ___ r..
         r.. LinkedList(self)
 
     ___ __iter__

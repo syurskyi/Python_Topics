@@ -51,7 +51,7 @@ ___ decode(short_url: s..) -> int:
     """Decodes the Base62 string into a Base10 integer"""
 
     value = 0
-    ___ i,character __ e..(reversed(short_url),0):
+    ___ i,character __ e..(r..(short_url),0):
         value += BASE**i * CODEX.index(character)
 
 

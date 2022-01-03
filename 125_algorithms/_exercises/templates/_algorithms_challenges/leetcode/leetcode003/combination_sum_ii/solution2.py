@@ -11,7 +11,7 @@ c_ Solution:
 
     ___ combination_sum_aux(self, candidates, target, cand, res):
         __ target __ 0:
-            res.a..(cand[:])
+            res.a..(cand | )
         ____:
             prev = N..
             ___ i, c __ e..(candidates):
